@@ -34,17 +34,17 @@ the **affine group** of Euclidean space, with the translations $\mathbb{R}^n$ as
 **Definition.** Let $F \subseteq \mathbb{R}^n$ be a figure. Its **symmetry group** is
 
 $$
-\operatorname{Sym}(F) = \{\varphi \in E(n) : \varphi(F) = F\},
+\operatorname{sym}(F) = \{\varphi \in E(n) : \varphi(F) = F\},
 $$
 
-a subgroup of $E(n)$; its elements are the symmetries of $F$, and $\operatorname{Sym}(F)$ acts on $F$.
+a subgroup of $E(n)$; its elements are the symmetries of $F$, and $\operatorname{sym}(F)$ acts on $F$.
 
-**Theorem.** If $F$ is bounded and nonempty then $\operatorname{Sym}(F)$ is finite, and it fixes a point: there is $c \in \mathbb{R}^n$ with $\varphi(c) = c$ for every $\varphi \in \operatorname{Sym}(F)$. Consequently every finite subgroup of $E(n)$ is conjugate to a subgroup of $O(n)$, and the finite subgroups of $E(n)$ are exactly the conjugates of the finite subgroups of $O(n)$.
+**Theorem.** If $F$ is bounded and nonempty then $\operatorname{sym}(F)$ is finite, and it fixes a point: there is $c \in \mathbb{R}^n$ with $\varphi(c) = c$ for every $\varphi \in \operatorname{sym}(F)$. Consequently every finite subgroup of $E(n)$ is conjugate to a subgroup of $O(n)$, and the finite subgroups of $E(n)$ are exactly the conjugates of the finite subgroups of $O(n)$.
 
 **Proof.** If $F$ is bounded, its diameter $D < \infty$ is attained by a pair of points, and the group acts faithfully on the finite set of the pairs at distance $D$; the group is therefore finite. For the fixed point, choose $x \in \mathbb{R}^n$ and let
 
 $$
-c = \frac{1}{|\operatorname{Sym}(F)|}\sum_{\varphi} \varphi(x);
+c = \frac{1}{|\operatorname{sym}(F)|}\sum_{\varphi} \varphi(x);
 $$
 
 then for $\psi$ in the group, $\psi(c) = \frac{1}{|\Gamma|}\sum_\varphi \psi\varphi(x) = c$, since $\varphi \mapsto \psi\varphi$ permutes the group. The fixed point gives a translate of the group into $O(n)$ by conjugating with the translation $x \mapsto x - c$.
@@ -109,7 +109,7 @@ $$
 L = \Bigl\{\sum_{i} m_i b_i : m_i \in \mathbb{Z}\Bigr\} ;
 $$
 
-the vectors $b_i$ are a **basis**, the integer matrix of the change of basis between two bases has determinant $\pm 1$, and the lattice is discrete, of rank $n$, with $\mathbb{R}^n / L$ a torus. The **point group** of a lattice is its symmetry group $\operatorname{Sym}(L) \leq O(n)$, the finite subgroup of the orthogonal transformations preserving $L$.
+the vectors $b_i$ are a **basis**, the integer matrix of the change of basis between two bases has determinant $\pm 1$, and the lattice is discrete, of rank $n$, with $\mathbb{R}^n / L$ a torus. The **point group** of a lattice is its symmetry group $\operatorname{sym}(L) \leq O(n)$, the finite subgroup of the orthogonal transformations preserving $L$.
 
 **Definition.** A **crystallographic group** in dimension $n$ is a subgroup $\Gamma \leq E(n)$ that is discrete as a subgroup of $E(n)$ and cocompact, that is, the quotient $\mathbb{R}^n/\Gamma$ is compact. Its **translation subgroup** is $T_\Gamma = \Gamma \cap \mathbb{R}^n$, its **point group** is the image $P = \ell(\Gamma) \leq O(n)$ of $\Gamma$ under the linear-part homomorphism, and the sequence
 
@@ -176,7 +176,7 @@ A lattice in $\mathbb{R}^n$ is a discrete subgroup of full rank; a crystallograp
 |---|---|
 | $E(n) = \mathbb{R}^n \rtimes O(n)$ | Euclidean isometry group; $x \mapsto Ax + b$ |
 | $\ell(A,b) = A$ | Linear part; homomorphism onto $O(n)$ |
-| $\operatorname{Sym}(F)$ | Symmetry group of the figure $F$ |
+| $\operatorname{sym}(F)$ | Symmetry group of the figure $F$ |
 | $C_n$, $D_n$ | Cyclic and dihedral groups; rosette and point groups |
 | $T$, $O$, $I$ | Tetrahedral, octahedral, icosahedral rotation groups; orders $12$, $24$, $60$ |
 | $T_d$, $O_h$, $I_h$ | Full symmetry groups of the Platonic solids; orders $24$, $48$, $120$ |

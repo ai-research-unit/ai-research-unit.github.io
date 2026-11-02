@@ -100,18 +100,18 @@ so two cyclotomic fields intersect in $\mathbb{Q}$ exactly when $m$ and $n$ are 
 **Theorem.** Let $K = \mathbb{Q}(\zeta_n)$. Then $K/\mathbb{Q}$ is a Galois extension with
 
 $$
-\boxed{\;\operatorname{Gal}(K/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times\;},
+\boxed{\;\operatorname{gal}(K/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times\;},
 $$
 
-the isomorphism sending $k \in (\mathbb{Z}/n\mathbb{Z})^\times$ to the automorphism $\sigma_k$ determined by $\sigma_k(\zeta_n) = \zeta_n^k$. In particular $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ is abelian of order $\varphi(n)$, and its exponent divides $\lambda(n)$, the exponent of $(\mathbb{Z}/n\mathbb{Z})^\times$.
+the isomorphism sending $k \in (\mathbb{Z}/n\mathbb{Z})^\times$ to the automorphism $\sigma_k$ determined by $\sigma_k(\zeta_n) = \zeta_n^k$. In particular $\operatorname{gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ is abelian of order $\varphi(n)$, and its exponent divides $\lambda(n)$, the exponent of $(\mathbb{Z}/n\mathbb{Z})^\times$.
 
-**Proof.** $K$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$, hence normal; $x^n-1$ is separable over $\mathbb{Q}$ since $\operatorname{char}\mathbb{Q} = 0$, so $K/\mathbb{Q}$ is Galois. Every $\sigma \in \operatorname{Gal}(K/\mathbb{Q})$ sends $\zeta_n$ to another root of $\Phi_n$, that is, to $\zeta_n^k$ for a unique $k \in (\mathbb{Z}/n\mathbb{Z})^\times$; conversely, since $\Phi_n$ is irreducible, for each such $k$ there is a $\mathbb{Q}$-automorphism of $K$ sending $\zeta_n$ to $\zeta_n^k$. The map $k \mapsto \sigma_k$ is a group homomorphism $(\mathbb{Z}/n\mathbb{Z})^\times \to \operatorname{Gal}(K/\mathbb{Q})$ and a bijection, hence an isomorphism.
+**Proof.** $K$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$, hence normal; $x^n-1$ is separable over $\mathbb{Q}$ since $\operatorname{char}\mathbb{Q} = 0$, so $K/\mathbb{Q}$ is Galois. Every $\sigma \in \operatorname{gal}(K/\mathbb{Q})$ sends $\zeta_n$ to another root of $\Phi_n$, that is, to $\zeta_n^k$ for a unique $k \in (\mathbb{Z}/n\mathbb{Z})^\times$; conversely, since $\Phi_n$ is irreducible, for each such $k$ there is a $\mathbb{Q}$-automorphism of $K$ sending $\zeta_n$ to $\zeta_n^k$. The map $k \mapsto \sigma_k$ is a group homomorphism $(\mathbb{Z}/n\mathbb{Z})^\times \to \operatorname{gal}(K/\mathbb{Q})$ and a bijection, hence an isomorphism.
 
 **Corollary.** When $(\mathbb{Z}/n\mathbb{Z})^\times$ is cyclic, $K$ has exactly one subfield of each degree dividing $\varphi(n)$; in particular it has exactly $\tau(\varphi(n))$ subfields, where $\tau$ is the divisor-counting function. For $n$ a prime $p$ the group $(\mathbb{Z}/p\mathbb{Z})^\times$ is cyclic of order $p-1$, and the subfields of $\mathbb{Q}(\zeta_p)$ correspond bijectively to the divisors of $p-1$.
 
 **Proof.** The subgroups of a cyclic group of order $m$ correspond to the divisors of $m$, one of each order; the Galois correspondence of *Galois Theory* turns this into the statement about subfields.
 
-**Example.** For $n = 4$, $K = \mathbb{Q}(i)$ and $\operatorname{Gal}(K/\mathbb{Q}) = \{1, \sigma\}$ with $\sigma(i) = -i$, the complex conjugation; the fixed field of the whole group is $\mathbb{Q}$ and the unique proper subfield over which $K$ is quadratic is $\mathbb{Q}$ itself in degree $1$.
+**Example.** For $n = 4$, $K = \mathbb{Q}(i)$ and $\operatorname{gal}(K/\mathbb{Q}) = \{1, \sigma\}$ with $\sigma(i) = -i$, the complex conjugation; the fixed field of the whole group is $\mathbb{Q}$ and the unique proper subfield over which $K$ is quadratic is $\mathbb{Q}$ itself in degree $1$.
 
 **Example.** For $n = 8$, $\zeta_8 = (1+i)/\sqrt2$ and $K = \mathbb{Q}(i, \sqrt2)$, of degree $4$ over $\mathbb{Q}$ with group $(\mathbb{Z}/8\mathbb{Z})^\times \cong \mathbb{Z}/2 \times \mathbb{Z}/2$. The three quadratic subfields are $\mathbb{Q}(i)$, $\mathbb{Q}(\sqrt2)$ and $\mathbb{Q}(\sqrt{-2})$.
 
@@ -217,7 +217,7 @@ Each such quotient is a unit of $\mathbb{Z}[\zeta_n]$. When $n$ is not a prime p
 
 **Definition.** For $n \geq 3$ the **maximal real subfield** of $\mathbb{Q}(\zeta_n)$ is $K^+ = \mathbb{Q}(\zeta_n + \zeta_n^{-1})$, the fixed field of complex conjugation.
 
-**Theorem.** $K^+$ is a real field, $[K^+ : \mathbb{Q}] = \varphi(n)/2$, and $\operatorname{Gal}(K^+/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times / \{\pm 1\}$. The field $K = \mathbb{Q}(\zeta_n)$ is a quadratic extension of $K^+$, and $\mathcal{O}_{K^+} = \mathbb{Z}[\zeta_n + \zeta_n^{-1}]$.
+**Theorem.** $K^+$ is a real field, $[K^+ : \mathbb{Q}] = \varphi(n)/2$, and $\operatorname{gal}(K^+/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times / \{\pm 1\}$. The field $K = \mathbb{Q}(\zeta_n)$ is a quadratic extension of $K^+$, and $\mathcal{O}_{K^+} = \mathbb{Z}[\zeta_n + \zeta_n^{-1}]$.
 
 **Proof.** Complex conjugation is the automorphism $\sigma_{-1}$, of order $2$; its fixed field is $K^+$, which consists of the elements invariant under $\zeta \mapsto \zeta^{-1}$, and $\zeta + \zeta^{-1}$ generates it because the conjugates $\zeta^k + \zeta^{-k}$ are distinct on the classes modulo $\pm1$ and separate the elements of the fixed field. The degree formula and the group statement follow from the Galois correspondence. The ring of integers statement is proved by the same Kronecker argument applied to the real subfield, using the relation $x^2 - (\zeta+\zeta^{-1})x + 1 = 0$.
 
@@ -225,7 +225,7 @@ Each such quotient is a unit of $\mathbb{Z}[\zeta_n]$. When $n$ is not a prime p
 
 ## Summary
 
-For $n \geq 1$ the $n$-th cyclotomic polynomial $\Phi_n(x) = \prod (x - \zeta_n^k)$, the product over the primitive $n$-th roots of unity, is monic with integer coefficients of degree $\varphi(n)$, satisfies $x^n - 1 = \prod_{d \mid n} \Phi_d(x)$, and is irreducible over $\mathbb{Q}$; hence $\mathbb{Q}(\zeta_n)$ has degree $\varphi(n)$ over $\mathbb{Q}$. The extension $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois, abelian, with $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$ acting by $\zeta_n \mapsto \zeta_n^k$, so the subfields of $\mathbb{Q}(\zeta_n)$ correspond to the subgroups of $(\mathbb{Z}/n\mathbb{Z})^\times$. For an odd prime $p$ the unique quadratic subfield is $\mathbb{Q}(\sqrt{p^\ast})$ with $p^\ast = (-1)^{(p-1)/2}p$, exhibited by the Gauss sum $g^2 = p^\ast$; the comparison of the Galois action on $g$ with the action of the Frobenius at a prime $q \neq p$ yields the quadratic reciprocity law.
+For $n \geq 1$ the $n$-th cyclotomic polynomial $\Phi_n(x) = \prod (x - \zeta_n^k)$, the product over the primitive $n$-th roots of unity, is monic with integer coefficients of degree $\varphi(n)$, satisfies $x^n - 1 = \prod_{d \mid n} \Phi_d(x)$, and is irreducible over $\mathbb{Q}$; hence $\mathbb{Q}(\zeta_n)$ has degree $\varphi(n)$ over $\mathbb{Q}$. The extension $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois, abelian, with $\operatorname{gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$ acting by $\zeta_n \mapsto \zeta_n^k$, so the subfields of $\mathbb{Q}(\zeta_n)$ correspond to the subgroups of $(\mathbb{Z}/n\mathbb{Z})^\times$. For an odd prime $p$ the unique quadratic subfield is $\mathbb{Q}(\sqrt{p^\ast})$ with $p^\ast = (-1)^{(p-1)/2}p$, exhibited by the Gauss sum $g^2 = p^\ast$; the comparison of the Galois action on $g$ with the action of the Frobenius at a prime $q \neq p$ yields the quadratic reciprocity law.
 
 The ring of integers of $\mathbb{Q}(\zeta_n)$ is $\mathbb{Z}[\zeta_n]$, which is therefore a Dedekind doma, and the ramified primes are exactly the divisors of $n$. When $n = p^v$ the prime $p$ is totally ramified, $p = (1-\zeta_{p^v})^{\varphi(p^v)}$ up to units, and $\operatorname{N}(1-\zeta_{p^v}) = p$; when $p \nmid n$ the prime $p$ is unramified and splits into $\varphi(n)/f$ primes of residue degree $f$, where $f$ is the order of $p$ modulo $n$. Cyclotomic units are the quotients $(\zeta_n^a-1)/(\zeta_n^b-1)$; they form a subgroup of the unit group, whose rank is determined by Dirichlet's unit theorem. The maximal real subfield $\mathbb{Q}(\zeta_n + \zeta_n^{-1})$ has degree $\varphi(n)/2$ over $\mathbb{Q}$ and is the fixed field of complex conjugation. The constructibility of the regular $n$-gon, a statement about ruler and compass in the plane, is deferred to Part II, where the plane is available; the Kronecker–Weber theorem, that every abelian extension of $\mathbb{Q}$ is a subfield of a cyclotomic one, is proved.
 
@@ -239,7 +239,7 @@ The ring of integers of $\mathbb{Q}(\zeta_n)$ is $\mathbb{Z}[\zeta_n]$, which is
 | $\varphi$ | Euler totient function |
 | $\mathbb{Q}(\zeta_n)$ | The $n$-th cyclotomic field, of degree $\varphi(n)$ over $\mathbb{Q}$ |
 | $\sigma_k$ | Automorphism $\zeta_n \mapsto \zeta_n^k$ |
-| $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ | $\cong (\mathbb{Z}/n\mathbb{Z})^\times$ |
+| $\operatorname{gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q})$ | $\cong (\mathbb{Z}/n\mathbb{Z})^\times$ |
 | $\lambda(n)$ | Exponent of $(\mathbb{Z}/n\mathbb{Z})^\times$ |
 | $p^\ast$ | $(-1)^{(p-1)/2}p$ |
 | $g$ | Quadratic Gauss sum $\sum_k (k/p)\zeta_p^k$, with $g^2 = p^\ast$ |

@@ -95,7 +95,7 @@ Its trace is $2$, its determinant is $-1$, and its eigenvalues are $1$ with mult
 
 **Proof.** Applying $F$ twice returns $x\otimes y$, so $F^{2}=I$. The matrix of $F$ in the lexicographic basis is symmetric: the entry at $((i,j),(k,l))$ is $\delta_{il}\delta_{jk}$, symmetric in the two pairs. A real symmetric involution is self-adjoint, hence unitary. The trace is the number of basis vectors fixed by $F$, namely $f_1\otimes g_1$ and $f_2\otimes g_2$, so $\operatorname{tr}F=2$. The eigenvalues are $\pm1$; from $\operatorname{tr}F=2$ and $\operatorname{tr}F^{2}=4$ the multiplicities are three and one, and the determinant is $1^{3}(-1)=-1$.
 
-**The eigenspaces.** On $\mathbb{C}^2\otimes \mathbb{C}^2$ the $+1$ eigenspace of $F$ is $\operatorname{Sym}^{2}\mathbb{C}^{2}$, of dimension $3$; the $-1$ eigenspace is $\Lambda^{2}\mathbb{C}^{2}$, of dimension $1$. On the algebra, the automorphism $\sigma$ has a fixed space of dimension $10$ and an anti-fixed space of dimension $6$: the two dimensions add to $16$, and the fixed space is the subalgebra $M_3\oplus\mathbb{C}$ computed below.
+**The eigenspaces.** On $\mathbb{C}^2\otimes \mathbb{C}^2$ the $+1$ eigenspace of $F$ is $\operatorname{sym}^{2}\mathbb{C}^{2}$, of dimension $3$; the $-1$ eigenspace is $\Lambda^{2}\mathbb{C}^{2}$, of dimension $1$. On the algebra, the automorphism $\sigma$ has a fixed space of dimension $10$ and an anti-fixed space of dimension $6$: the two dimensions add to $16$, and the fixed space is the subalgebra $M_3\oplus\mathbb{C}$ computed below.
 
 **The swap.** Let $\sigma(X)=FXF$. Then $\sigma$ is an automorphism of $M_4$ of order two, and
 
@@ -149,7 +149,7 @@ The two factors are the left multiplications $L_a$ and the right multiplications
 
 ## Summary
 
-$M_4(\mathbb{C})$ is $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ by the Kronecker product. The two factors $M_2\otimes I$ and $I\otimes M_2$ commute, generate the algebra, meet in the scalars, and are mutual commutants. The flip $F(x\otimes y)=y\otimes x$ is a symmetric unitary involution of trace $2$ and determinant $-1$, with eigenspaces $\operatorname{Sym}^{2}\mathbb{C}^{2}$ of dimension $3$ and $\Lambda^{2}\mathbb{C}^{2}$ of dimension $1$; its conjugation is the swap of the factors, an inner automorphism whose fixed algebra is $M_3\oplus\mathbb{C}$ of dimension $10$ and whose anti-fixed space has dimension $6$. The factorisation is the complex split case of the Brauer statement $[M_2][M_2]=[M_4]=1$, and it is the algebra side of $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
+$M_4(\mathbb{C})$ is $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ by the Kronecker product. The two factors $M_2\otimes I$ and $I\otimes M_2$ commute, generate the algebra, meet in the scalars, and are mutual commutants. The flip $F(x\otimes y)=y\otimes x$ is a symmetric unitary involution of trace $2$ and determinant $-1$, with eigenspaces $\operatorname{sym}^{2}\mathbb{C}^{2}$ of dimension $3$ and $\Lambda^{2}\mathbb{C}^{2}$ of dimension $1$; its conjugation is the swap of the factors, an inner automorphism whose fixed algebra is $M_3\oplus\mathbb{C}$ of dimension $10$ and whose anti-fixed space has dimension $6$. The factorisation is the complex split case of the Brauer statement $[M_2][M_2]=[M_4]=1$, and it is the algebra side of $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
 
 | Quantity | Value |
 |---|---|
@@ -159,7 +159,7 @@ $M_4(\mathbb{C})$ is $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ by the Kronecker p
 | $\dim(M_2\otimes I)\cap(I\otimes M_2)$ | $1$ |
 | $\operatorname{tr}F$ | $2$ |
 | $\det F$ | $-1$ |
-| $\dim\operatorname{Sym}^2$ | $10$ |
+| $\dim\operatorname{sym}^2$ | $10$ |
 | $\dim\Lambda^2$ | $6$ |
 | $\dim M_4^{\sigma}$ | $10$ |
 | $M_4^{\sigma}$ | $M_3(\mathbb{C})\oplus\mathbb{C}$ |

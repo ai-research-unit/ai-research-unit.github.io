@@ -105,8 +105,8 @@ The criterion of this article is the projector criterion, and it says that in th
 
 | structure | what the projector criterion gives |
 |---|---|
-| GPA | the theorem: every idempotent gives a projector, and the Peirce calculus follows |
-| GQA | the criterion: the projectors exist, are indexed by the plain idempotents, and the product disowns them |
+| gpa | the theorem: every idempotent gives a projector, and the Peirce calculus follows |
+| gqa | the criterion: the projectors exist, are indexed by the plain idempotents, and the product disowns them |
 | the ten remaining | isolated projectors, no indexed family and no decomposition |
 
 The isolation makes the specificity exact. The quaternionic product is not the plain product with one property removed; it is the structure in which the operator theory of the plain product survives entirely and the element theory of the plain product is carried by the wrong elements. The two halves of the block — the element classes of *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, *Zero Divisors of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, and the operator theory of this article and of *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* — are the two readings of that one sentence.

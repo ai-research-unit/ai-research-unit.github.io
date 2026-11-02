@@ -169,7 +169,7 @@ The rank-one row is the full Peirce decomposition seen from one line: $1$ for th
 
 **Not every Peirce element is a spinor.** The corner $A_{kl}$ is one-dimensional, and every nonzero element of it is a map of rank one between two lines. Calling such an element a spinor would make every matrix unit a spinor, which is false. A spinor, where the word applies, is a vector of the carrier module of the principal $\mathfrak{sl}_2$; it is not an element of a Peirce corner.
 
-**The carrier is not a corner.** For $n=2$ the carrier is $\mathbb{C}^{2}$, isomorphic to a minimal left ideal; for $n\ge3$ the carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$, of dimension $n$, and it is not isomorphic to any Peirce corner. The corner $A_{kl}$ has dimension $1$ for every $n$; the carrier has dimension $n$. They never coincide in dimension for $n\ge2$.
+**The carrier is not a corner.** For $n=2$ the carrier is $\mathbb{C}^{2}$, isomorphic to a minimal left ideal; for $n\ge3$ the carrier is $\mathbb{C}^{n}=\operatorname{sym}^{n-1}(\mathbb{C}^{2})$, of dimension $n$, and it is not isomorphic to any Peirce corner. The corner $A_{kl}$ has dimension $1$ for every $n$; the carrier has dimension $n$. They never coincide in dimension for $n\ge2$.
 
 ## Summary
 

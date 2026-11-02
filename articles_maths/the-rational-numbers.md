@@ -115,7 +115,7 @@ Conversely each such $\mathbb{Z}_S$ is a subring of $\mathbb{Q}$ containing $\ma
 
 **(c)** $\mathbb{Q}$ is not algebraically closed: the polynomial $x^2 - 2$ has no rational root.
 
-**(d)** The algebraic closure of $\mathbb{Q}$ is the field $\overline{\mathbb{Q}}$ of algebraic numbers, which is countable; $\mathbb{Q}$ has extensions of every finite degree, and its absolute Galois group $\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ is a large profinite group.
+**(d)** The algebraic closure of $\mathbb{Q}$ is the field $\overline{\mathbb{Q}}$ of algebraic numbers, which is countable; $\mathbb{Q}$ has extensions of every finite degree, and its absolute Galois group $\operatorname{gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ is a large profinite group.
 
 **(e)** $\mathbb{Q}$ is a perfect field, and every finite extension of $\mathbb{Q}$ is separable.
 
@@ -157,7 +157,7 @@ The square classes $\mathbb{Q}^\times/(\mathbb{Q}^\times)^2$ form a vector space
 **Theorem.** Let $\zeta_n$ be a primitive $n$-th root of unity. Then $\mathbb{Q}(\zeta_n)$ is the splitting field of $x^n - 1$ over $\mathbb{Q}$, it has degree $\varphi(n)$ over $\mathbb{Q}$, and
 
 $$
-\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times ,
+\operatorname{gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times ,
 $$
 
 so $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is an abelian Galois extension. The cyclotomic fields, as $n$ varies, generate the maximal abelian extension of $\mathbb{Q}$: every finite abelian extension of $\mathbb{Q}$ is contained in some $\mathbb{Q}(\zeta_n)$, by the Kronecker–Weber theorem.
@@ -252,7 +252,7 @@ Every finite extension of $\mathbb{Q}$ is separable and simple, so it is $\mathb
 | $\mathbb{R}$, $\mathbb{Q}_p$ | The completions of $\mathbb{Q}$ |
 | $\operatorname{tr.deg}$ | Transcendence degree |
 | $\operatorname{Aut}(\mathbb{Q})$ | Automorphism group, trivial |
-| $\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ | Absolute Galois group of $\mathbb{Q}$ |
+| $\operatorname{gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ | Absolute Galois group of $\mathbb{Q}$ |
 | $\operatorname{End}(\mathbb{Q})$, $\operatorname{Der}(\mathbb{Q})$ | Unital endomorphisms $\{\mathrm{id}\}$, all homomorphisms $\{0,\mathrm{id}\}$, derivations $0$ |
 | $(r,s) \sim (r',s')$ | Equivalence relation defining $\mathbb{Q}$ |
 | $(\mathbb{Q}^\times)^2$ | Squares, defining the square classes $\mathbb{Q}^\times/(\mathbb{Q}^\times)^2$ |

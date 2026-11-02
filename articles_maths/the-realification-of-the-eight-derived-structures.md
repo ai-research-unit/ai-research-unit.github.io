@@ -8,7 +8,7 @@ The construction of the realification is not repeated here: the realification of
 
 Every structure below is read over $\mathbb{R}$ on the eight-dimensional real space $\mathbb{R}^8$ of basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, and $\mathbb{C}_{\mathbb{B}}$ is the centre.
 
-## The Symmetric Plain Algebra (SPA)
+## The Symmetric Plain Algebra (spa)
 
 ### The Realified Form
 
@@ -34,7 +34,7 @@ L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\circ\tilde Q_2,\qquad R_{\tilde Q_1}:
 $$
 and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*. Because the second slot is $\mathbb{C}_{\mathbb{B}}$-linear, the left multiplication is $\mathbb{C}_{\mathbb{B}}$-linear as well, and its real trace is twice the real part of its complex trace, $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1})=8\operatorname{Re}\mathrm{Sc}(\tilde Q_1)$.
 
-## The Symmetric Plain Sesqualgebra (SPS)
+## The Symmetric Plain Sesqualgebra (sps)
 
 ### The Realified Form
 
@@ -86,9 +86,9 @@ $$
 $$
 the extra coset conjugate-linear: the complex automorphisms are the elements of $G_H$ fixing $e_t$ (*The Multiplication Operators of the Symmetric Plain Sesqualgebra*), and the passage to $\mathbb{R}$ adds the Galois twist of $\mathbb{C}/\mathbb{R}$.
 
-**The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\mathrm{SQA}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*:
+**The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\mathrm{sqa}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*:
 $$
-\tilde Q_1\star\tilde Q_2=\mathrm{SQA}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}),
+\tilde Q_1\star\tilde Q_2=\mathrm{sqa}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}),
 $$
 because on the real quaternions the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ agrees with the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ and the vector part of the quaternionic product is antisymmetric, hence killed by the symmetrisation. Over $\mathbb{C}$ the two structures are distinct on the whole space; the real reading makes them meet on a real form, and the coincidence is a statement of the real reading and not of the products.
 
@@ -98,7 +98,7 @@ because on the real quaternions the Hermitian form $\langle\cdot,\cdot\rangle_{*
 
 Two statements of the real reading are specific to the block. The product read over $\mathbb{R}$ is an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in which conjugate-commutativity still holds and the square is the central element $\langle\tilde Q_1,\tilde Q_1\rangle_{*}e_t=\lVert\tilde Q_1\rVert_E^{2}e_t$, real and positive off the origin; associativity fails at the triple $(\vec e_x,\vec e_x,e_t)$, the Jordan identity fails with the witness $x=y=\vec e_x$, and there is no unit. Every ring-theoretic property is unchanged: the idempotents stay $\{0,e_t\}$, the nilpotents stay the vector subspace $\mathrm{Vect}(\mathbb{B})=\{Q_{1t}=0\}$ of index three, the zero divisors stay the complement of the origin, and the root of $-1$ stays absent. The second slot is $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, so the left multiplications anticommute with $J$, $L_{\tilde Q_1}J=-JL_{\tilde Q_1}$, and carry the block shape $\begin{pmatrix}A&B\\ B&-A\end{pmatrix}$, while the right multiplications commute, $R_{\tilde Q_1}J=JR_{\tilde Q_1}$, and carry the shape $\begin{pmatrix}A&-B\\ B&A\end{pmatrix}$; the block is the instance in which the two shapes are carried by the two halves of one operator family.
 
-## The Symmetric Quaternionic Algebra (SQA)
+## The Symmetric Quaternionic Algebra (sqa)
 
 ### The Realified Form
 
@@ -159,7 +159,7 @@ $$
 $$
 is kept inside itself, because $e_t$ pairs to zero with the two other generators and those two are isotropic and pair to zero with each other, so every product of two of the three generators is $0$ or in $\mathbb{R}e_t$; its real dimension is three, and it has no complex counterpart. The staying inside and the leaving of the six remarkable subspaces are tabulated in *Remarkable Subspaces under the Symmetric Quaternionic Algebra*.
 
-**The coincidence on the real part.** On the real subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ the symmetric quaternionic product and the symmetric plain sesquilinear product agree, $\mathrm{SQA}=\mathrm{SPS}$, because on real elements the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ equals the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$; off that subspace they differ. The twelve operations of the complex space therefore collapse to ten on the real part, and the block is not distinguished there from the row $\mathrm{SPS}$ (*Introduction to the Symmetric Quaternionic Algebra*, §*The Placement Among the Twelve*; *Introduction to the Symmetric Plain Sesqualgebra*).
+**The coincidence on the real part.** On the real subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ the symmetric quaternionic product and the symmetric plain sesquilinear product agree, $\mathrm{sqa}=\mathrm{sps}$, because on real elements the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ equals the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$; off that subspace they differ. The twelve operations of the complex space therefore collapse to ten on the real part, and the block is not distinguished there from the row $\mathrm{sps}$ (*Introduction to the Symmetric Quaternionic Algebra*, §*The Placement Among the Twelve*; *Introduction to the Symmetric Plain Sesqualgebra*).
 
 **The trace factor.** The complex trace of the multiplication is the scalar part $Q_{6t}$ and the real trace is $2\operatorname{Re}Q_{6t}$; the factor two is the doubling of the realification, and the absence of the factors four and eight that the regular representation of the plain algebra carries is the rank-one nature of the block, a feature that the real reading shows and the complex reading hides.
 
@@ -173,7 +173,7 @@ is kept inside itself, because $e_t$ pairs to zero with the two other generators
 
 **The second slot.** Read over $\mathbb{R}$ the second slot remains $\mathbb{C}_{\mathbb{B}}$-linear, $L_\lambda J=JL_\lambda$ for a central $\lambda$, so the block is an algebra over $\mathbb{R}$ as it is over $\mathbb{C}$; no sesqualgebra appears, the only automorphism of $\mathbb{R}$ being the identity. In the real basis the matrix of the multiplication has the commuting block shape $\left(\begin{smallmatrix}A&-B\\ B&A\end{smallmatrix}\right)$.
 
-## The Symmetric Quaternionic Sesqualgebra (SQS)
+## The Symmetric Quaternionic Sesqualgebra (sqs)
 
 ### The Realified Form
 
@@ -229,7 +229,7 @@ so the group of $\mathbb{R}$-algebra automorphisms of the block contains the Kle
 
 **The real subalgebras.** Over $\mathbb{C}$ a subalgebra is a complex subspace, of even real dimension; over $\mathbb{R}$ there are others. The real quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ and the Hermitian subspace $\mathbb{M}_{+}=\mathbb{R}e_t+\mathbb{R}i\vec e_x+\mathbb{R}i\vec e_y+\mathbb{R}i\vec e_z$ are four-dimensional real subalgebras of the block — two of the three closed subspaces of *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra* — and neither is a complex subspace: the complex span of each is the whole block. The real line $\mathbb{R}e_t$ is a one-dimensional unital subalgebra inside the centre $\mathbb{C}e_t$, and the complex reading, whose subalgebras have even real dimension, has no subalgebra of dimension one.
 
-## The Antisymmetric Plain Algebra (APA)
+## The Antisymmetric Plain Algebra (apa)
 
 ### The Forms the Block Carries over $\mathbb{R}$
 
@@ -340,7 +340,7 @@ $$
 $$
 the shape that commutes with $J=\begin{pmatrix}0&-\mathrm{I}\\\mathrm{I}&0\end{pmatrix}$.
 
-## The Antisymmetric Plain Sesqualgebra (APS)
+## The Antisymmetric Plain Sesqualgebra (aps)
 
 ### The Realified Form
 
@@ -354,7 +354,7 @@ L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\circ\tilde Q_2,\qquad R_{\tilde Q_1}:
 $$
 and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*. Because the second slot is $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, the left multiplication is $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, so it anticommutes with $J$, has the block shape $\begin{pmatrix}A&B\\ B&-A\end{pmatrix}$ and has vanishing real trace, the two diagonal blocks being opposite; it is $\mathbb{R}$-linear and not $\mathbb{C}$-linear, which is the point of the real reading. The right multiplication by $e_t$ is of the other kind, $\mathbb{C}$-linear, and equals the projection onto the vector subspace, $R_{e_t}=P_{\operatorname{Vect}}$, the defining identity of the block.
 
-## The Antisymmetric Quaternionic Algebra (AQA)
+## The Antisymmetric Quaternionic Algebra (aqa)
 
 ### The Forms the Block Carries over $\mathbb{R}$
 
@@ -429,7 +429,7 @@ $$
 $$
 It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and composing it with the $\mathbb{C}$-linear automorphism group (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, §*The Automorphism Group and the Structure Group*) gives the conjugate-linear coset $\bar{\cdot}\,\mathrm{Aut}_{\mathbb{C}}$ of the real automorphism group, which the complex reading does not see. The natural conjugation is not an automorphism of the block: at $(\vec e_x,\vec e_y)$ it gives ${}^{\natural}(\vec e_x\diamond \vec e_y)=\vec e_z$ while ${}^{\natural}\vec e_x\diamond{}^{\natural}\vec e_y=-\vec e_z$; the block reads its real automorphisms through the coefficientwise conjugation and not through the natural one.
 
-## The Antisymmetric Quaternionic Sesqualgebra (AQS)
+## The Antisymmetric Quaternionic Sesqualgebra (aqs)
 
 ### The Realified Form
 
@@ -473,11 +473,11 @@ $$
 $$
 of real dimension four, the block coincides with the antisymmetric plain algebra: for two real vector parts the conjugation is the identity, so
 $$
-\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{APA}(\tilde Q_1,\tilde Q_2),
+\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{apa}(\tilde Q_1,\tilde Q_2),
 $$
 the ordinary cross product of the real vector parts. The coincidence holds because the conjugation of a real vector is the identity, and it disappears as soon as one argument leaves $\mathbb{H}_{\mathbb{B}}$ for a direction in $i\mathbb{R}^{3}$.
 
-**The count of ten.** The coincidence, with its symmetric companion — the symmetric quaternionic product coinciding with the symmetric plain sesquilinear product on $\mathbb{H}_{\mathbb{B}}$ — is the reason the comment of *Symmetric and Antisymmetric Decomposition of the Four General Products* records a **count of ten**. On the four-dimensional real part the twelve operations reduce to ten, because the pair $(\mathrm{AQS},\mathrm{APA})$ and the pair $(\mathrm{SQA},\mathrm{SPS})$ each collapse to one operation there, the remaining eight staying distinct. The caution of the corpus applies: a computation restricted to the real part can hide the obstruction that separates the two members of a coincident pair, and twelve distinct operations require the full eight-dimensional real space.
+**The count of ten.** The coincidence, with its symmetric companion — the symmetric quaternionic product coinciding with the symmetric plain sesquilinear product on $\mathbb{H}_{\mathbb{B}}$ — is the reason the comment of *Symmetric and Antisymmetric Decomposition of the Four General Products* records a **count of ten**. On the four-dimensional real part the twelve operations reduce to ten, because the pair $(\mathrm{aqs},\mathrm{apa})$ and the pair $(\mathrm{sqa},\mathrm{sps})$ each collapse to one operation there, the remaining eight staying distinct. The caution of the corpus applies: a computation restricted to the real part can hide the obstruction that separates the two members of a coincident pair, and twelve distinct operations require the full eight-dimensional real space.
 
 **Proposition (the closure criterion).** A real subspace $W$ of $\mathbb{R}^8$ is a subalgebra of the block exactly when $\tilde Q_1\diamond\tilde Q_2\in W$ for all $\tilde Q_1,\tilde Q_2\in W$. Every value of the block lies in the vector subspace, so the condition reads
 $$
@@ -598,4 +598,4 @@ Both operators vanish in real trace; for a non-central element both have real ra
 $$
 \kappa_{\mathbb{R}}(\tilde Q_1,\tilde Q_2)=\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=-2\operatorname{Re}(\vec Q_1,\overline{\vec Q_2}),\qquad \operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=2\,\kappa_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
-is real symmetric of rank $6$ and signature $(0,6)$, negative semidefinite with radical the centre, while the element trace form $\mathrm{Tr}(\tilde Q_1\diamond\tilde Q_2)$ vanishes identically. On the quaternion subspace the block coincides with the antisymmetric plain algebra, and the collapse of the pair $(\mathrm{AQS},\mathrm{APA})$ there is part of the count of ten of the twelve operations.
+is real symmetric of rank $6$ and signature $(0,6)$, negative semidefinite with radical the centre, while the element trace form $\mathrm{Tr}(\tilde Q_1\diamond\tilde Q_2)$ vanishes identically. On the quaternion subspace the block coincides with the antisymmetric plain algebra, and the collapse of the pair $(\mathrm{aqs},\mathrm{apa})$ there is part of the count of ten of the twelve operations.

@@ -88,7 +88,7 @@ and the product is the ordinary block product. The blocks $A_{ij}$ are the four 
 
 **Theorem.** The compression $A_{11}=PM_4P$ is isomorphic to $\mathbb{C}$ with unit $P$, by $PAP\mapsto a$ in the standard form. The compression $A_{22}=QM_4Q$ is isomorphic to $M_3(\mathbb{C})$ with unit $Q$, by $QAQ\mapsto D$.
 
-**Proof.** The map $PAP\mapsto a$ is a homomorphism because $(PAP)(PBP)=P(APA)PB P$ reduces in the standard form to the product of the scalars; it is bijective onto $\mathbb{C}$ because $a$ is arbitrary. The second map is the restriction of $QAQ$ to $\operatorname{im}Q$, which is an isomorphism onto $\operatorname{End}(\operatorname{im}Q)\cong M_3(\mathbb{C})$ by the argument of *The $M_2$ Corner of $M_3(\mathbb{C})$*. In both cases the unit of the corner is the idempotent, $P$ or $Q$, and not the ambient unit $I$.
+**Proof.** The map $PAP\mapsto a$ is a homomorphism because $(PAP)(PBP)=P(apa)PB P$ reduces in the standard form to the product of the scalars; it is bijective onto $\mathbb{C}$ because $a$ is arbitrary. The second map is the restriction of $QAQ$ to $\operatorname{im}Q$, which is an isomorphism onto $\operatorname{End}(\operatorname{im}Q)\cong M_3(\mathbb{C})$ by the argument of *The $M_2$ Corner of $M_3(\mathbb{C})$*. In both cases the unit of the corner is the idempotent, $P$ or $Q$, and not the ambient unit $I$.
 
 **The corner is not an ideal.** $A_{11}\oplus A_{22}$ is a subalgebra of dimension $10$ with unit $P+Q=I$, but it is not a two-sided ideal: $A_{12}$ and $A_{21}$ carry elements out of it. The algebra $M_4$ is simple and has no nontrivial two-sided ideals; the split is a decomposition of the carrier and of the multiplication table, not a direct sum of ideals.
 

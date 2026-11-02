@@ -70,7 +70,7 @@ Let $\sigma = \mathrm{id}_A$. Then $u^* = u$, the group $\mathrm{U}(A,\mathrm{id
 
 ### The Transpose on a Matrix Algebra
 
-Let $A = M_n(k)$ with the transpose, $X^* = X^{\mathsf{T}}$, and $2 \neq 0$. Then $\mathrm{U}(A) = \{X \in GL_n(k) : X^{\mathsf{T}}X = 1\} = O_n(k)$ is the orthogonal group of the standard symmetric form; the skew part is the space of the alternating matrices, the self-adjoint part the space of the symmetric matrices, and the decomposition $M_n = \mathrm{Sym}\oplus \mathrm{Alt}$ is the one of *Involutive Algebras*. The form that makes $O_n(k)$ the orthogonal group, and its classification among the symmetric and the alternating forms, belong to *Hilbert Algebras*.
+Let $A = M_n(k)$ with the transpose, $X^* = X^{\mathsf{T}}$, and $2 \neq 0$. Then $\mathrm{U}(A) = \{X \in GL_n(k) : X^{\mathsf{T}}X = 1\} = O_n(k)$ is the orthogonal group of the standard symmetric form; the skew part is the space of the alternating matrices, the self-adjoint part the space of the symmetric matrices, and the decomposition $M_n = \mathrm{sym}\oplus \mathrm{Alt}$ is the one of *Involutive Algebras*. The form that makes $O_n(k)$ the orthogonal group, and its classification among the symmetric and the alternating forms, belong to *Hilbert Algebras*.
 
 ### The Inversion on a Group Algebra
 

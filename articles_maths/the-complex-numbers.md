@@ -89,7 +89,7 @@ $$
 
 for $Q \neq 0$. It is the unique nontrivial $\mathbb{R}$-automorphism of $\mathbb{C}$:
 
-$$ \boxed{\;\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \operatorname{Gal}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}\;}.
+$$ \boxed{\;\operatorname{Aut}_{\mathbb{R}}(\mathbb{C}) = \operatorname{gal}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}\;}.
 $$
 
 **Proof.** The identities are immediate from the multiplication formula. An $\mathbb{R}$-automorphism $\sigma$ satisfies $\sigma(i)^2 = \sigma(-1) = -1$, so $\sigma(i) = \pm i$, and $\sigma$ is determined by $\sigma(i)$ because $\{1,i\}$ is an $\mathbb{R}$-basis; hence there are at most two, and conjugation is a nontrivial one.
@@ -135,7 +135,7 @@ Every automorphism of $\mathbb{C}$ fixes $\mathbb{Q}$ and preserves the set of a
 
 **Proof sketch.** Any $\sigma \in \operatorname{Aut}(\mathbb{C})$ fixes $\mathbb{Q}$ and permutes the algebraic numbers $\overline{\mathbb{Q}}$, since it carries roots of a polynomial over $\mathbb{Q}$ to roots of the same polynomial. The group is large: a transcendence basis of $\mathbb{C}$ over $\overline{\mathbb{Q}}$ has cardinality $2^{\aleph_0}$, and the associated field is the function field in $2^{\aleph_0}$ indeterminates over $\overline{\mathbb{Q}}$, whose automorphism group is already large; the extension of these automorphisms to $\mathbb{C}$ gives the stated cardinality. A continuous automorphism is the identity on $\mathbb{Q}$ and hence, by continuity, on the closure $\mathbb{R}$, so it is an $\mathbb{R}$-automorphism and equals the identity or conjugation.
 
-**Remark.** The existence of discontinuous automorphisms of $\mathbb{C}$ uses the axiom of choice, through the choice of a transcendence basis and the extension of its permutations; without the axiom of choice it is consistent that every automorphism of $\mathbb{C}$ is continuous, and hence that the identity and conjugation are the only automorphisms. This is why the arithmetic of $\mathbb{C}$ is studied through the topological field structure and through the Galois theory of $\overline{\mathbb{Q}}$, rather than through $\operatorname{Aut}(\mathbb{C})$; the absolute Galois group $\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ is the object of *Ring and Field Automorphisms* and of algebraic number theory.
+**Remark.** The existence of discontinuous automorphisms of $\mathbb{C}$ uses the axiom of choice, through the choice of a transcendence basis and the extension of its permutations; without the axiom of choice it is consistent that every automorphism of $\mathbb{C}$ is continuous, and hence that the identity and conjugation are the only automorphisms. This is why the arithmetic of $\mathbb{C}$ is studied through the topological field structure and through the Galois theory of $\overline{\mathbb{Q}}$, rather than through $\operatorname{Aut}(\mathbb{C})$; the absolute Galois group $\operatorname{gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ is the object of *Ring and Field Automorphisms* and of algebraic number theory.
 
 ## Roots of Unity and Cyclotomic Structure
 
@@ -248,7 +248,7 @@ $$
 
 $\mathbb{C} = \mathbb{R}[x]/(x^2+1) = \mathbb{R}(i)$ is the quadratic extension of $\mathbb{R}$ obtained by adjoining a square root of $-1$, with $\{1,i\}$ as an $\mathbb{R}$-basis, characteristic $0$ and prime field $\mathbb{Q}$. It is algebraically closed, by the fundamental theorem of algebra, and is the algebraic closure of $\mathbb{R}$, with no proper algebraic extension and with every polynomial of degree $n$ factorising into $n$ linear factors. It admits no ordering, being non-formally-real because $-1 = i^2$ is a square, and it is therefore not real closed; the passage from $\mathbb{R}$ to $\mathbb{C}$ trades orderability for algebraic closedness.
 
-Conjugation $Q \mapsto \bar Q$ is the unique nontrivial $\mathbb{R}$-automorphism, with $\operatorname{Gal}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$ and fixed field $\mathbb{R}$; the norm $\langle Q\rangle_{*} = Q\bar Q$ is multiplicative, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$. Every element outside $\mathbb{R}$ has minimal polynomial $x^2 - T(Q)x + \langle Q\rangle_{*}$ over $\mathbb{R}$. The roots of unity form the group $\mu \cong \mathbb{Q}/\mathbb{Z}$, and $\mathbb{C}$ contains every cyclotomic field and every algebraic extension of $\mathbb{Q}$. As a field, $\mathbb{C}$ has $2^{2^{\aleph_0}}$ automorphisms, of which only the identity and conjugation are continuous; it is the unique algebraically closed field of characteristic $0$ and cardinality $2^{\aleph_0}$ up to isomorphism, and it is isomorphic as an abstract field, but not as a topological or valued field, to the completed algebraic closure of $\mathbb{Q}_p$.
+Conjugation $Q \mapsto \bar Q$ is the unique nontrivial $\mathbb{R}$-automorphism, with $\operatorname{gal}(\mathbb{C}/\mathbb{R}) \cong \mathbb{Z}/2\mathbb{Z}$ and fixed field $\mathbb{R}$; the norm $\langle Q\rangle_{*} = Q\bar Q$ is multiplicative, and $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$. Every element outside $\mathbb{R}$ has minimal polynomial $x^2 - T(Q)x + \langle Q\rangle_{*}$ over $\mathbb{R}$. The roots of unity form the group $\mu \cong \mathbb{Q}/\mathbb{Z}$, and $\mathbb{C}$ contains every cyclotomic field and every algebraic extension of $\mathbb{Q}$. As a field, $\mathbb{C}$ has $2^{2^{\aleph_0}}$ automorphisms, of which only the identity and conjugation are continuous; it is the unique algebraically closed field of characteristic $0$ and cardinality $2^{\aleph_0}$ up to isomorphism, and it is isomorphic as an abstract field, but not as a topological or valued field, to the completed algebraic closure of $\mathbb{Q}_p$.
 
 Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domain for the norm $q^2+q'^2$, hence a unique factorization domain; this yields the description of the primes of $\mathbb{Z}[i]$, with $p \equiv 3 \pmod 4$ inert, $p \equiv 1 \pmod 4$ split and $2$ ramified, and gives Fermat's criterion for an integer to be a sum of two squares. The rational function field $\mathbb{C}(t)$ has automorphism group $\operatorname{Aut}(\mathbb{C}(t)/\mathbb{C}) \cong \operatorname{PGL}_2(\mathbb{C})$ acting by fractional linear substitutions, with finite subgroups the cyclic, dihedral and polyhedral groups, and $\mathbb{C}(t)$ is an example of a field that is neither algebraically closed nor real closed but whose algebraic closure is, as an abstract field, isomorphic to $\mathbb{C}$.
 
@@ -262,7 +262,7 @@ Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domai
 | Real closed | no |
 | Cardinality | $2^{\aleph_0}$ |
 | $\operatorname{tr.deg}_{\mathbb{Q}} \mathbb{C}$ | $2^{\aleph_0}$ |
-| $\operatorname{Gal}(\mathbb{C}/\mathbb{R})$ | $\mathbb{Z}/2\mathbb{Z}$ |
+| $\operatorname{gal}(\mathbb{C}/\mathbb{R})$ | $\mathbb{Z}/2\mathbb{Z}$ |
 | $\operatorname{Aut}(\mathbb{C})$ | $2^{2^{\aleph_0}}$; only id and conjugation continuous |
 | Roots of unity | $\mu \cong \mathbb{Q}/\mathbb{Z}$ |
 | Norm | $\langle Q\rangle_{*} = Q\bar Q$, multiplicative |
@@ -281,7 +281,7 @@ Inside $\mathbb{C}$ the Gaussian integers $\mathbb{Z}[i]$ form a Euclidean domai
 | $\langle Q\rangle_{*} = Q\bar Q$ | Norm of the quadratic extension |
 | $T(Q) = Q + \bar Q$ | Trace of the quadratic extension |
 | $\mu_n$, $\mu$ | $n$-th roots of unity, all roots of unity |
-| $\operatorname{Gal}(\mathbb{C}/\mathbb{R})$ | $\mathbb{Z}/2\mathbb{Z}$ |
+| $\operatorname{gal}(\mathbb{C}/\mathbb{R})$ | $\mathbb{Z}/2\mathbb{Z}$ |
 | $\operatorname{Aut}(\mathbb{C})$ | Full automorphism group, of cardinality $2^{2^{\aleph_0}}$ |
 | $\overline{\mathbb{Q}}$, $\mathbb{C}_p$ | Algebraic numbers; completed algebraic closure of $\mathbb{Q}_p$ |
 | $\operatorname{Frac}$ | Field of fractions, $\operatorname{Frac}(\mathbb{Z}[i]) = \mathbb{Q}(i)$ |

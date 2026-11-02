@@ -111,7 +111,7 @@ the group of invertible matrices under $\mathsf{M}_2$, of real dimension $8$, wi
 
 Physically the unit group is the whole linear group of the framework: $GL_2(\mathbb{C})$ is the group of invertible biquaternions, its centre $\mathbb{C}^{\times}$ is the complex phase that every conjugation ignores and the norm only sees through its modulus, and the unit-norm subgroup is the Lorentz group of the preceding sections.
 
-**Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1,\lambda_2)\in\mathbb{Z}^2$ with $\lambda_1\geq\lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1-\lambda_2}(\mathbb{C}^2)\otimes(\det)^{\lambda_2}$, of dimension $\lambda_1-\lambda_2+1$, with central character $z\mapsto z^{\lambda_1+\lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2s=\lambda_1-\lambda_2\geq0$, that is, the irreducible $V_s$ below with spin $s\in\tfrac12\mathbb{Z}_{\geq0}$.
+**Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1,\lambda_2)\in\mathbb{Z}^2$ with $\lambda_1\geq\lambda_2$; the irreducible one is $\operatorname{sym}^{\lambda_1-\lambda_2}(\mathbb{C}^2)\otimes(\det)^{\lambda_2}$, of dimension $\lambda_1-\lambda_2+1$, with central character $z\mapsto z^{\lambda_1+\lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2s=\lambda_1-\lambda_2\geq0$, that is, the irreducible $V_s$ below with spin $s\in\tfrac12\mathbb{Z}_{\geq0}$.
 
 ## Boosts Do Not Close: The Composition Law
 
@@ -254,7 +254,7 @@ Two remarks belong here.
 
 A finite-dimensional representation of the Lorentz group is a continuous homomorphism $SO^+(1,3)\to GL(V)$, or equivalently — because every such representation lifts — a representation of the double cover $SL(2,\mathbb{C})$ that is trivial on $\{\pm e_t\}$ (see the next section). Complex representations of the compact subgroup $SU(2)$ are completely reducible, and the same holds for $SL(2,\mathbb{C})$; so it suffices to describe the irreducible ones.
 
-**The label $(m,n)$.** Let $V_s$ denote the irreducible $\mathrm{SU}(2)$-module of dimension $2s+1$, $s\in\tfrac12\mathbb{Z}_{\geq0}$, i.e. the symmetric power $\operatorname{Sym}^{2s}(\mathbb{C}^2)$ in the matrix realisation. The finite-dimensional irreducible representations of $SL(2,\mathbb{C})$ are the outer tensor products
+**The label $(m,n)$.** Let $V_s$ denote the irreducible $\mathrm{SU}(2)$-module of dimension $2s+1$, $s\in\tfrac12\mathbb{Z}_{\geq0}$, i.e. the symmetric power $\operatorname{sym}^{2s}(\mathbb{C}^2)$ in the matrix realisation. The finite-dimensional irreducible representations of $SL(2,\mathbb{C})$ are the outer tensor products
 $$
 (m,n)=V_m\boxtimes V_n,\qquad m,n\in\tfrac12\mathbb{Z}_{\geq0},
 \qquad
@@ -297,7 +297,7 @@ $$
 $$
 of dimension $1+3+3+9=16=4\times4$.
 
-**Polynomial representations and the $*$-unitary trick.** The finite-dimensional irreducibles of the complex group are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) ones: the matrix entries are polynomial in the entries of the group element, and such representations are the symmetric powers $V_s=\operatorname{Sym}^{2s}(\mathbb{C}^2)$ of the defining module, of highest weight $2s$ and spin $s$. Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories, the **$*$-unitary trick**,
+**Polynomial representations and the $*$-unitary trick.** The finite-dimensional irreducibles of the complex group are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) ones: the matrix entries are polynomial in the entries of the group element, and such representations are the symmetric powers $V_s=\operatorname{sym}^{2s}(\mathbb{C}^2)$ of the defining module, of highest weight $2s$ and spin $s$. Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories, the **$*$-unitary trick**,
 $$
 \left\{\text{f.d. polynomial representations of }SL(2,\mathbb{C})\right\}\simeq\left\{\text{f.d. }{}^{*}\text{-unitary representations of }SU(2)\right\},
 $$

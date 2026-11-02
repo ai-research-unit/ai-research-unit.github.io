@@ -92,12 +92,12 @@ where $K_c^{\mathbb{C}}$ is the complex filled Julia set of $z\mapsto z^2+c$. He
 **Proposition (the symmetry group).** The fractal $J_{\tilde Q_1}$ is invariant under the product of the symmetry groups of the two quaternion factors and under the swap,
 
 $$
-\mathrm{Sym}(J_{\tilde Q_1})\supset \mathrm{Sym}(J_{\tilde Q_{1+}})\times\mathrm{Sym}(J_{\tilde Q_{1-}})\rtimes\mathbb{Z}/2 ,
+\mathrm{sym}(J_{\tilde Q_1})\supset \mathrm{sym}(J_{\tilde Q_{1+}})\times\mathrm{sym}(J_{\tilde Q_{1-}})\rtimes\mathbb{Z}/2 ,
 $$
 
 and for a $\mathbb{D}$-scalar parameter the symmetry is the full product of the quaternion symmetries of the two factors together with the swap.
 
-**Proof.** The group $\mathrm{Sym}(J_+)\times\mathrm{Sym}(J_-)$ acts componentwise and preserves the product; the swap exchanges the factors and maps $K_+\times K_-$ to $K_-\times K_+$, which is the filled Julia set of the swapped parameter, so it preserves $J_{\tilde Q_1}$ when the parameter is exchanged accordingly, and for a $\mathbb{D}$-scalar parameter it preserves the set outright.
+**Proof.** The group $\mathrm{sym}(J_+)\times\mathrm{sym}(J_-)$ acts componentwise and preserves the product; the swap exchanges the factors and maps $K_+\times K_-$ to $K_-\times K_+$, which is the filled Julia set of the swapped parameter, so it preserves $J_{\tilde Q_1}$ when the parameter is exchanged accordingly, and for a $\mathbb{D}$-scalar parameter it preserves the set outright.
 
 **Remark (contrast with the biquaternion symmetry).** The biquaternion fractal has only the diagonal symmetry of the conjugations, because the idempotents are not central and the two halves cannot be rotated independently (*The Slices of the Biquaternion Julia Sets*, §*The Conjugation Symmetries of the Slices*). The split-biquaternion fractal has the full product symmetry. **The centrality of the idempotents enlarges the symmetry from the diagonal to the product, and the fractal reflects it.**
 
@@ -121,7 +121,7 @@ The split-biquaternion Julia set is the boundary of the product of two quaternio
 | $K_c^{\mathbb{C}}$ | the complex filled Julia set of $z\mapsto z^2+c$ |
 | $[-2,\tfrac14]$ | the real (and quaternion, on the real line) connectedness interval |
 | $\lambda=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ | the split-complex scalar parameter |
-| $\mathrm{Sym}(J_{\tilde Q_1})$ | the symmetry group of the fractal |
+| $\mathrm{sym}(J_{\tilde Q_1})$ | the symmetry group of the fractal |
 
 ## Further Reading
 

@@ -30,7 +30,7 @@ The companion articles supply the pieces:
 A neutral atom with magnetic moment $\vec\mu = \gamma\vec S$ placed in a magnetic field $\vec B$ has potential energy
 
 $$
-V_{\mathrm{pot}} = -\vec\mu\cdot\vec B = -\gamma\,\vec S\cdot\vec B,
+V^{\mathrm{pot}} = -\vec\mu\cdot\vec B = -\gamma\,\vec S\cdot\vec B,
 $$
 
 where $\gamma$ is the gyromagnetic ratio and $\vec S$ the spin operator. If the field is directed along $z$ with a gradient along the same direction,
@@ -42,7 +42,7 @@ $$
 then the force on the atom along $z$ is the negative gradient of the potential,
 
 $$
-F_z = -\frac{\partial V_{\mathrm{pot}}}{\partial z} = \gamma\,\frac{\partial B}{\partial z}\,S_z = \gamma (dB/dz)\,S_z .
+F_z = -\frac{\partial V^{\mathrm{pot}}}{\partial z} = \gamma\,\frac{\partial B}{\partial z}\,S_z = \gamma (dB/dz)\,S_z .
 $$
 
 Strictly, a field of the form $\vec B = B(z)\vec u_z$ alone is not a static magnetic field: $\nabla\cdot\vec B = 0$ requires $\partial B_z/\partial z = -\partial B_x/\partial x - \partial B_y/\partial y$, so a longitudinal gradient must be accompanied by transverse components, which make the direction of the local field depend on position. Across the width of the beam in the Stern–Gerlach geometry those components are small, and the standard treatment retains $F_z = \gamma (dB/dz) S_z$ for the deflection; the same idealisation is made here.
@@ -79,7 +79,7 @@ $$
 \tilde{S}_k = \frac{\hbar}{2}\,i \vec e_k \in \mathbb{M}_+, \qquad k = 1,2,3,
 $$
 
-which under the isomorphism $e_t \mapsto I$, $\vec e_j \mapsto -i_{\mathrm{mat}}\sigma_j$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) map to $\tfrac{\hbar}{2}\sigma_k$. The Hamiltonian of the atom in the field $\vec B = B(z)\vec u_z$ is the Hermitian element
+which under the isomorphism $e_t \mapsto I$, $\vec e_j \mapsto -i^{\mathrm{mat}}\sigma_j$ (where $i^{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) map to $\tfrac{\hbar}{2}\sigma_k$. The Hamiltonian of the atom in the field $\vec B = B(z)\vec u_z$ is the Hermitian element
 
 $$
 \tilde{H} = -\gamma B(z)\,\tilde{S}_3 = -\frac{\hbar\gamma B(z)}{2}\,i \vec e_z \in \mathbb{M}_+ .
@@ -270,7 +270,7 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard physics, transcribed.** The magnetic coupling $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$, the force $F_z = \mu_z (dB/dz)$, the deflection formula, the two-spot pattern, the $\cos^2(\theta/2)$ law and the three-magnet coherence experiment are all standard. None of them depends on the biquaternion structure beyond the identification of the spin observable with a Hermitian element of $\mathbb{M}_+$.
+**Standard physics, transcribed.** The magnetic coupling $V^{\mathrm{pot}} = -\vec\mu\cdot\vec B$, the force $F_z = \mu_z (dB/dz)$, the deflection formula, the two-spot pattern, the $\cos^2(\theta/2)$ law and the three-magnet coherence experiment are all standard. None of them depends on the biquaternion structure beyond the identification of the spin observable with a Hermitian element of $\mathbb{M}_+$.
 
 **What the biquaternion notation provides.**
 

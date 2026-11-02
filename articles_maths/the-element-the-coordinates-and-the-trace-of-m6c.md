@@ -249,7 +249,7 @@ $$
 **Corollary (the symmetric–alternating split).**
 
 $$
-M_6(\mathbb{C})=\operatorname{Sym}^2(\mathbb{C}^6)\oplus\Lambda^2(\mathbb{C}^6),
+M_6(\mathbb{C})=\operatorname{sym}^2(\mathbb{C}^6)\oplus\Lambda^2(\mathbb{C}^6),
 \qquad
 36=21+15,
 $$
@@ -257,7 +257,7 @@ $$
 with
 
 $$
-\operatorname{Sym}^2=\{A:A^{\mathsf T}=A\},\qquad
+\operatorname{sym}^2=\{A:A^{\mathsf T}=A\},\qquad
 \Lambda^2=\{A:A^{\mathsf T}=-A\}.
 $$
 
@@ -488,7 +488,7 @@ The trace pairing is symmetric, nondegenerate and invariant; it identifies the a
 The element is a linear map $x\mapsto Ax$ and a bilinear form $b_A(x,y)=x^{\mathsf T}Ay$. The symmetric and alternating parts give
 
 $$
-M_6=\operatorname{Sym}^2\oplus\Lambda^2,
+M_6=\operatorname{sym}^2\oplus\Lambda^2,
 \qquad
 36=21+15,
 $$

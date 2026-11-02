@@ -61,7 +61,7 @@ So isomorphic involutions have fixed parts of the same size, which is the first 
 
 ### The construction recalled
 
-**Proposition.** Let $\langle\cdot,\cdot\rangle$ be a non-degenerate reflexive $\sigma$-sesquilinear pairing on $M$ for which the adjoint of every endomorphism exists. Then $f \mapsto f^{*}$ is an involution of $E$ in the sense of an $R$-linear anti-automorphism of order two, and $\operatorname{Fix}({}^{*})=\operatorname{Sym}(M)$ is the set of self-adjoint operators.
+**Proposition.** Let $\langle\cdot,\cdot\rangle$ be a non-degenerate reflexive $\sigma$-sesquilinear pairing on $M$ for which the adjoint of every endomorphism exists. Then $f \mapsto f^{*}$ is an involution of $E$ in the sense of an $R$-linear anti-automorphism of order two, and $\operatorname{Fix}({}^{*})=\operatorname{sym}(M)$ is the set of self-adjoint operators.
 
 *Proof.* This is *The Involution on the Endomorphism Ring of a Module*.
 
@@ -90,7 +90,7 @@ The identity involution of a commutative $E$ is not a pairing involution in gene
 **Theorem.** Let $\theta$ be a pairing involution. Then
 
 $$
-\boxed{\;\operatorname{Fix}(\theta)=\operatorname{Sym}(M)\;}
+\boxed{\;\operatorname{Fix}(\theta)=\operatorname{sym}(M)\;}
 $$
 
 is an $R$-submodule closed under the Jordan product $f\bullet g=\frac12(fg+gf)$ and under the square, and containing the identity. It is a unital special Jordan subalgebra of $E$.
@@ -170,7 +170,7 @@ An involution of $E=\operatorname{End}_A(M)$ is an $R$-linear anti-automorphism 
 | $\operatorname{Fix}(\theta)$ | the fixed part, $\{f : \theta(f)=f\}$ |
 | $\operatorname{Ad}_u\theta$ | inner conjugation, $f\mapsto u\theta(f)u^{-1}$ |
 | $f^{*}$ | the adjoint of a pairing, a pairing involution |
-| $\operatorname{Sym}(M)$, $\operatorname{Skew}(M)$ | fixed parts of ${}^{*}$ and of $-{}^{*}$ |
+| $\operatorname{sym}(M)$, $\operatorname{Skew}(M)$ | fixed parts of ${}^{*}$ and of $-{}^{*}$ |
 | first kind, second kind | the restriction of $\theta$ to $Z(E)$ is the identity or not |
 | $J$ | the Gram matrix of the alternating form on $k^2$ |
 | adjointable | arising as the adjoint of a non-degenerate reflexive pairing |

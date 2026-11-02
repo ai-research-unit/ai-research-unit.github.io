@@ -16,7 +16,7 @@ C(P)=PMP\oplus PMQ
 $$
 of a rank-one idempotent $P$, and identifies the module that carries the principal $\mathfrak{sl}_2$.
 
-The article is the module-theoretic companion of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*. The Peirce decomposition is a decomposition of the algebra into lines; the present article is about the modules over the algebra, which are different objects. In particular, a minimal left ideal is a three-dimensional module, not a one-dimensional Peirce line, and it is not a spinor. For $n=3$ the carrier is the highest-weight-$1$ module $\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$; only the case $n=2$ has a two-dimensional spinorial module. The distinction is stated once here and used throughout the category.
+The article is the module-theoretic companion of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*. The Peirce decomposition is a decomposition of the algebra into lines; the present article is about the modules over the algebra, which are different objects. In particular, a minimal left ideal is a three-dimensional module, not a one-dimensional Peirce line, and it is not a spinor. For $n=3$ the carrier is the highest-weight-$1$ module $\mathbb{C}^{3}=\operatorname{sym}^{2}(\mathbb{C}^{2})$; only the case $n=2$ has a two-dimensional spinorial module. The distinction is stated once here and used throughout the category.
 
 The construction is root-first. The idempotents $P_{1},P_{2},P_{3}$ are those of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the frame $E_{ij}$ and the gauge are those of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$* and *The Two-Parameter Gauge of $M_3(\mathbb{C})$*.
 
@@ -196,7 +196,7 @@ $$
 J_{+}e_{2}=\sqrt2 e_{1},\quad J_{+}e_{3}=\sqrt2 e_{2},\quad
 J_{-}e_{1}=\sqrt2 e_{2},\quad J_{-}e_{2}=\sqrt2 e_{3}.
 $$
-It is the highest-weight-$1$ module $\operatorname{Sym}^{2}(\mathbb{C}^{2})$, of dimension $3=2\cdot1+1$.
+It is the highest-weight-$1$ module $\operatorname{sym}^{2}(\mathbb{C}^{2})$, of dimension $3=2\cdot1+1$.
 
 **The identification with the symmetric square.** Let $x,y$ be a basis of $\mathbb{C}^{2}$ and put
 $$
@@ -236,7 +236,7 @@ C(P)=PMP\oplus PMQ,\qquad \dim_{\mathbb{C}}=1+2=3,
 $$
 the minimal right ideal $PM_{3}$; its dual is the left ideal $M_{3}P=PMP\oplus QMP$, also of dimension $1+2=3$.
 
-The carrier of the principal $\mathfrak{sl}_2$ is $M_{3}P_{1}\cong\mathbb{C}^{3}$, with weights $1,0,-1$ and ladder coefficients $\sqrt2$; it is the highest-weight-$1$ module $\operatorname{Sym}^{2}(\mathbb{C}^{2})$. There are no spinors for $n=3$: the simple module is three-dimensional, and only $n=2$ has a two-dimensional spinorial module.
+The carrier of the principal $\mathfrak{sl}_2$ is $M_{3}P_{1}\cong\mathbb{C}^{3}$, with weights $1,0,-1$ and ladder coefficients $\sqrt2$; it is the highest-weight-$1$ module $\operatorname{sym}^{2}(\mathbb{C}^{2})$. There are no spinors for $n=3$: the simple module is three-dimensional, and only $n=2$ has a two-dimensional spinorial module.
 
 | Quantity | Value for $M_{3}(\mathbb{C})$ |
 |---|---|
@@ -259,7 +259,7 @@ The carrier of the principal $\mathfrak{sl}_2$ is $M_{3}P_{1}\cong\mathbb{C}^{3}
 | $M_{3}P=PMP\oplus QMP$ | the dual left carrier |
 | $E_{ij}\leftrightarrow e_{i}\otimes e_{j}^{*}$ | the tensor decomposition of the algebra |
 | $E_{kl}$ | the non-canonical exchange $M_{3}P_{k}\to M_{3}P_{l}$ |
-| $\operatorname{Sym}^{2}(\mathbb{C}^{2})$ | the highest-weight-$1$ carrier |
+| $\operatorname{sym}^{2}(\mathbb{C}^{2})$ | the highest-weight-$1$ carrier |
 | $J_{3},J_{\pm}$ | the principal $\mathfrak{sl}_{2}$ |
 
 ## Further Reading

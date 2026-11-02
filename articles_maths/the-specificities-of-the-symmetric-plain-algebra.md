@@ -188,18 +188,18 @@ One law separates the block from the other eleven structures, and it is stated h
 
 | structure | commutative | Jordan identity | witness of the failure |
 |---|---|---|---|
-| GPA | no | yes (associative) | $\vec e_x\vec e_y=\vec e_z$ against $\vec e_y\vec e_x=-\vec e_z$ |
-| SPA | **yes** | **yes** | — (the criterion) |
-| APA | no | yes (vacuous) | $\vec e_x\wedge \vec e_y=\vec e_z$ against $\vec e_y\wedge \vec e_x=-\vec e_z$ |
-| GQA | no | yes | $e_t\circ \vec e_x=\vec e_x$ against $\vec e_x\circ e_t=-\vec e_x$ |
-| SQA | yes | no | $(x^{\circ2}\circ x)\circ x=0$ against $x^{\circ2}\circ(x\circ x)=e_t$ |
-| AQA | no | yes (vacuous) | $e_t\circ \vec e_x=\vec e_x$ against $\vec e_x\circ e_t=-\vec e_x$ |
-| GPS | no | no | $e_t\circ \vec e_x=-\vec e_x$ against $\vec e_x\circ e_t=\vec e_x$ |
-| SPS | conjugate | no | $(x^{\circ2}\circ x)\circ x=0$ against $x^{\circ2}\circ(x\circ x)=e_t$ |
-| APS | no | no | $e_t\circ \vec e_x=-\vec e_x$ against $\vec e_x\circ e_t=\vec e_x$ |
-| GQS | no | no | $e_t\circ i\vec e_x=i\vec e_x$ against $i\vec e_x\circ e_t=-i\vec e_x$ |
-| SQS | conjugate | no | $(x^{\circ2}\circ x)\circ x=-e_t$ against $x^{\circ2}\circ(x\circ x)=e_t$ |
-| AQS | no | no | $\vec e_x\circ \vec e_y=\vec e_z$ against $\vec e_y\circ \vec e_x=-\vec e_z$ |
+| gpa | no | yes (associative) | $\vec e_x\vec e_y=\vec e_z$ against $\vec e_y\vec e_x=-\vec e_z$ |
+| spa | **yes** | **yes** | — (the criterion) |
+| apa | no | yes (vacuous) | $\vec e_x\wedge \vec e_y=\vec e_z$ against $\vec e_y\wedge \vec e_x=-\vec e_z$ |
+| gqa | no | yes | $e_t\circ \vec e_x=\vec e_x$ against $\vec e_x\circ e_t=-\vec e_x$ |
+| sqa | yes | no | $(x^{\circ2}\circ x)\circ x=0$ against $x^{\circ2}\circ(x\circ x)=e_t$ |
+| aqa | no | yes (vacuous) | $e_t\circ \vec e_x=\vec e_x$ against $\vec e_x\circ e_t=-\vec e_x$ |
+| gps | no | no | $e_t\circ \vec e_x=-\vec e_x$ against $\vec e_x\circ e_t=\vec e_x$ |
+| sps | conjugate | no | $(x^{\circ2}\circ x)\circ x=0$ against $x^{\circ2}\circ(x\circ x)=e_t$ |
+| aps | no | no | $e_t\circ \vec e_x=-\vec e_x$ against $\vec e_x\circ e_t=\vec e_x$ |
+| gqs | no | no | $e_t\circ i\vec e_x=i\vec e_x$ against $i\vec e_x\circ e_t=-i\vec e_x$ |
+| sqs | conjugate | no | $(x^{\circ2}\circ x)\circ x=-e_t$ against $x^{\circ2}\circ(x\circ x)=e_t$ |
+| aqs | no | no | $\vec e_x\circ \vec e_y=\vec e_z$ against $\vec e_y\circ \vec e_x=-\vec e_z$ |
 
 Two fine points, kept because they are about the law and not about the list. The Jordan identity **alone** does not isolate the block: it holds at every element of the associative general plain product, at every element of the general quaternionic product, whose square is central, and vacuously at every element of the two alternating antisymmetrisations. What excludes those four is the **commutativity** clause, and it is the conjunction that the definition names. So the correct exclusive statement is that no other structure is a Jordan product, and not that no other structure satisfies the identity.
 
@@ -222,7 +222,7 @@ The symmetric plain product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\til
 | $T(\tilde Q)=2Q_t$, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the generic trace and the generic norm |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the Jordan inverse, the algebra inverse |
 | $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the isotropic cone, the origin and the zero-divisor cone |
-| $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| $\mathrm{gpa}\dots\mathrm{aqs}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 
 ## Further Reading
 

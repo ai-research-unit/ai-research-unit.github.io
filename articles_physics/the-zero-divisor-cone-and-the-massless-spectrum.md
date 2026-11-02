@@ -291,7 +291,7 @@ The cone also has a canonical two-factor decomposition, which the four-factor wo
 | $-m^2c^2$ | the mass-shell level of the four-momentum norm |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units |
 | $\tilde P=i\frac{E}{c}\,e_t+\vec p$; $\tilde P=i\,\xi\xi^{\dagger}$ on the cone | the material four-momentum; a null momentum is an imaginary multiple of a rank-one projector |
-| $\mathrm{GPA}$, $\mathrm{GPS}$ | the plain algebra and the plain sesqualgebra |
+| $\mathrm{gpa}$, $\mathrm{gps}$ | the plain algebra and the plain sesqualgebra |
 
 ## Further Reading
 

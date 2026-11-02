@@ -62,7 +62,7 @@ the **Hochschild Poincaré duality**: the Hochschild cohomology in degree $i$ is
 
 **Corollary.** A $d$-CY algebra satisfies $\dim_kHH^i(A,A) = \dim_kHH_{d-i}(A,A)$ in each degree, when these dimensions are finite; in particular the Hochschild homology and cohomology of a CY algebra have the same total dimension and their Betti numbers are palindromic about $d/2$.
 
-**Example (the polynomial algebra).** Let $A = \operatorname{Sym}(V) = k[x_1,\dots,x_n]$ with $\dim_kV = n$. The Hochschild–Kostant–Rosenberg theorem gives
+**Example (the polynomial algebra).** Let $A = \operatorname{sym}(V) = k[x_1,\dots,x_n]$ with $\dim_kV = n$. The Hochschild–Kostant–Rosenberg theorem gives
 
 $$
 HH^i(A,A) \cong \wedge^i\operatorname{Der}_k(A), \qquad HH_i(A,A)\cong\Omega^i_{A/k},
@@ -102,7 +102,7 @@ be the **Jacobian algebra** of the pair $(Q,W)$, where $\partial/\partial\alpha$
 
 *Proof (outline).* The Koszul complex identifies the derived categories of graded $A$-modules and graded $A^!$-modules, and the Koszul dual is $\operatorname{Ext}^\bullet_A(k,k)$; the diagonal bimodule of $A$ corresponds under the equivalence to the diagonal bimodule of $A^!$, and the self-duality of the one with shift $d$ corresponds to the self-duality of the other with the same shift, because the equivalence is compatible with the shift and with the duality functors. The precise comparison is the content of the Koszul duality for Hochschild (co)homology recorded in *Koszul Duality*; the Hochschild duality of the previous section is then transferred verbatim.
 
-**Corollary.** Let $V$ be a finite-dimensional vector space of dimension $n$. Then $\operatorname{Sym}(V)$ is $n$-CY and $\Lambda(V^*)$ is $n$-CY, consistently with $\operatorname{Sym}(V)^! = \Lambda(V^*)$; the transfer is the Koszul-dual form of the fact that the polynomial algebra and the exterior algebra have the same dimension in the Calabi–Yau sense. More generally, the $m$-deformations of a Koszul CY algebra along a Poisson bracket are again CY for the same dimension when the deformation is defined, since the Koszul dual deforms compatibly.
+**Corollary.** Let $V$ be a finite-dimensional vector space of dimension $n$. Then $\operatorname{sym}(V)$ is $n$-CY and $\Lambda(V^*)$ is $n$-CY, consistently with $\operatorname{sym}(V)^! = \Lambda(V^*)$; the transfer is the Koszul-dual form of the fact that the polynomial algebra and the exterior algebra have the same dimension in the Calabi–Yau sense. More generally, the $m$-deformations of a Koszul CY algebra along a Poisson bracket are again CY for the same dimension when the deformation is defined, since the Koszul dual deforms compatibly.
 
 **Example (the case of dimension two and the quantum plane).** The quantum plane $k_q[x,y]$ of *Quantum Groups*, with $yx = qxy$, is homologically smooth and graded-proper, and it is $2$-CY; its Koszul dual, the quantum exterior algebra with $x^{*2} = y^{*2} = 0$ and $x^*y^* = -m\,y^*x^*$, is $2$-CY by the theorem. The example is the simplest noncommutative deformation of a Koszul Calabi–Yau algebra, and it shows that the Calabi–Yau condition survives a deformation along a Poisson bracket of the kind considered in *Deformation Quantization*.
 

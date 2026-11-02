@@ -101,10 +101,10 @@ $$
 and a state vector of it is written
 
 $$
-|A\rangle = \bigl(\tau^{l\bar l},\ \mathrm{Sym}^{(k,r)},\ \mathrm{Cl}_{n,m},\ S_{(n+m)/2},\ C^{a,b,c,d,e,f,g},\ \dots\bigr),
+|A\rangle = \bigl(\tau^{l\bar l},\ \mathrm{sym}^{(k,r)},\ \mathrm{Cl}_{n,m},\ S_{(n+m)/2},\ C^{a,b,c,d,e,f,g},\ \dots\bigr),
 $$
 
-the entries being the Lorentz representation $\tau^{l\bar l}$ that fixes the spin $s=|l-\bar l|$, the symmetric representation space $\mathrm{Sym}^{(k,r)}$ of degree $(k+1)(r+1)=(2l+1)(2\bar l+1)$, the Clifford algebra $\mathrm{Cl}_{n,m}$ associated with the representation, its spin space $S_{(n+m)/2}$, and the $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group of the discrete operations of the companion CPT article. The **main object** defining a vector is the representation $\tau^{l\bar l}$; the Clifford algebra, the spin space and the discrete group belong to the spinor structure and are attached to it.
+the entries being the Lorentz representation $\tau^{l\bar l}$ that fixes the spin $s=|l-\bar l|$, the symmetric representation space $\mathrm{sym}^{(k,r)}$ of degree $(k+1)(r+1)=(2l+1)(2\bar l+1)$, the Clifford algebra $\mathrm{Cl}_{n,m}$ associated with the representation, its spin space $S_{(n+m)/2}$, and the $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group of the discrete operations of the companion CPT article. The **main object** defining a vector is the representation $\tau^{l\bar l}$; the Clifford algebra, the spin space and the discrete group belong to the spinor structure and are attached to it.
 
 The charge takes the three values $\{-1,0,\bar0\}$: the values $\pm1$ are the charged particles, carried by the complex representations; the value $0$ is the neutral particle with a distinct antiparticle, carried by the real representations of the quaternionic division ring; and the value $\bar0$ is the **truly neutral** particle, carried by the real representations of the real division ring. This trichotomy is the subject of the companion *Charge Conjugation and the Division Ring*, and the present section takes it as the labelling of the charge factor. A supermultiplet is then a set of vectors of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ sharing a Lorentz representation and a Clifford algebra and differing in the charge projection.
 
@@ -141,7 +141,7 @@ The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is w
 **Established, and recomputed.**
 
 - The spin multiplet is $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$ and the charge multiplet is $\mathcal{H}_Q^m\otimes\mathcal{H}_\infty$; the spin triplet's fundamental members are $\tau^{1,0}$, $\tau^{1/2,1/2}$ and $\tau^{0,1}$, with spins $+1,0,-1$, and the spin doublet's is $\tau^{1/2,0}\oplus\tau^{0,1/2}$, with spins $\pm\frac12$. These are the tensor-product decompositions and are checkable in the corpus's representation ring.
-- The degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals $(2l+1)(2\bar l+1)$ for $\tau^{l\bar l}$ with $k=2l$, $r=2\bar l$, so the vector label's two entries carry the same number.
+- The degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)$ equals $(2l+1)(2\bar l+1)$ for $\tau^{l\bar l}$ with $k=2l$, $r=2\bar l$, so the vector label's two entries carry the same number.
 - A symmetry of rays is $*$-unitary or antiunitary, and the two possibilities exist exactly over $\mathbb{C}$; this is Wigner's theorem and the field-automorphism argument, both standard.
 
 **Transcribed, not derived.**
@@ -180,7 +180,7 @@ The framework's relation to this is a relation of one factor. The spin factor is
 | $\mathcal{H}_S^{\,2s+1}$, $\mathcal{H}_Q^{m}$ | Finite-dimensional spin and charge spaces |
 | $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ | Spin–charge Hilbert space |
 | $s=\lvert l-\bar l\rvert$ | Spin of the Lorentz representation |
-| $\mathrm{Sym}^{(k,r)}$, degree $(k+1)(r+1)$ | Symmetric representation space of $\tau^{l\bar l}$, $k=2l$, $r=2\bar l$ |
+| $\mathrm{sym}^{(k,r)}$, degree $(k+1)(r+1)$ | Symmetric representation space of $\tau^{l\bar l}$, $k=2l$, $r=2\bar l$ |
 | $\mathrm{Cl}_{n,m}$, $S_{(n+m)/2}$ | Associated Clifford algebra and spin space |
 | $Ϙ=+1,0,\bar0$ | Charged, neutral, truly neutral charge states |
 | $T_{gh}=\omega(g,h)T_gT_h$ | Ray (projective) representation of the symmetry group |

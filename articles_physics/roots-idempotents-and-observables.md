@@ -121,10 +121,10 @@ The equation is relative to the product, so the twelve structures carry twelve r
 
 | structure | roots of $+1$ | idempotents | reading |
 | --- | --- | --- | --- |
-| GPA, composition | $\pm e_t$, the purely imaginary roots and the non-Hermitian roots | the trivial pair and the halving image of every nontrivial root | the involutions and the idempotents |
-| GPS, probability | the $*$-unitary group $\mathrm{U}(2)$ | the trivial pair and the Hermitian states | the reversible symmetries of the pairing |
-| GQA, causality | the quadric $C=+1$, with $C=\langle\tilde\Xi\rangle_{\natural}$ | the trivial pair only | on $\mathbb{M}_-$, the spacelike unit shell of the interval |
-| GQS, gauge | the slope family $c(\vec u+it)$ with $\lvert\vec u\rvert=1$, $\lvert t\rvert>1$ and $(t^2-1)\lvert c\rvert^2=1$, and the central circle $\lvert a\rvert^2=1$ | the trivial pair and the displaced family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ | its idempotents are units of the algebra, hence reversible |
+| gpa, composition | $\pm e_t$, the purely imaginary roots and the non-Hermitian roots | the trivial pair and the halving image of every nontrivial root | the involutions and the idempotents |
+| gps, probability | the $*$-unitary group $\mathrm{U}(2)$ | the trivial pair and the Hermitian states | the reversible symmetries of the pairing |
+| gqa, causality | the quadric $C=+1$, with $C=\langle\tilde\Xi\rangle_{\natural}$ | the trivial pair only | on $\mathbb{M}_-$, the spacelike unit shell of the interval |
+| gqs, gauge | the slope family $c(\vec u+it)$ with $\lvert\vec u\rvert=1$, $\lvert t\rvert>1$ and $(t^2-1)\lvert c\rvert^2=1$, and the central circle $\lvert a\rvert^2=1$ | the trivial pair and the displaced family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ | its idempotents are units of the algebra, hence reversible |
 | the four brackets | none | the origin only | an infinitesimal transformation has no involution and no state |
 
 The pattern is the one used throughout this article. **The composition band carries the largest family of idempotents**, because every root of its $+1$ gives one; the physical states are the Hermitian members of that family. **The probability band carries the $*$-unitary symmetries**, because its root of $+1$ is the $*$-unitary group and its idempotents are the pure states. **The interval band and the brackets carry no nontrivial state**, because their square is not the plain square and their $+1$ is a shell or nothing. The gauge band is the exception on the other side: its idempotents are units of the algebra, so an idempotent of that band is reversible, unlike a pure state of the probability band. The complementation $e_t-\tilde\Pi$ falls outside the gauge family, so the complete-pair reading does not carry over to it. A root of $+1$ is therefore a statement about a band; a pure state needs a Hermitian idempotent, and only some bands supply one.
@@ -166,7 +166,7 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 | $\mathbb{M}_\pm$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\operatorname{Sc}$, $\operatorname{Tr}=2\operatorname{Sc}$ | the scalar part and the trace |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
-| $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$ | the plain algebra, the plain sesqualgebra, the quaternionic algebra and the quaternionic sesqualgebra |
+| $\mathrm{gpa}$, $\mathrm{gps}$, $\mathrm{gqa}$, $\mathrm{gqs}$ | the plain algebra, the plain sesqualgebra, the quaternionic algebra and the quaternionic sesqualgebra |
 | $S^2$ | the real unit sphere of the parameter $\tilde\xi$ |
 
 ## Further Reading

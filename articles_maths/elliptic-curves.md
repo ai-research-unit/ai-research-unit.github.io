@@ -96,7 +96,7 @@ and $y(2P) = \lambda(x - x(2P)) - y = \frac{27}{10}\left(3 - \frac{129}{100}\rig
 
 **Theorem (structure of the torsion).** Let $E$ be an elliptic curve over $K$ and $n \geq 1$.
 
-**(a)** If $\operatorname{char} K = 0$, or if $\operatorname{char} K = p > 0$ with $p \nmid n$, then $E[n] = \{P \in E(\bar K) : nP = O\} \cong (\mathbb{Z}/n\mathbb{Z})^2$ as abelian groups, and the action of $\operatorname{Gal}(\bar K/K)$ on $E[n]$ is a homomorphism $\operatorname{Gal}(\bar K/K) \to \operatorname{GL}_2(\mathbb{Z}/n\mathbb{Z})$.
+**(a)** If $\operatorname{char} K = 0$, or if $\operatorname{char} K = p > 0$ with $p \nmid n$, then $E[n] = \{P \in E(\bar K) : nP = O\} \cong (\mathbb{Z}/n\mathbb{Z})^2$ as abelian groups, and the action of $\operatorname{gal}(\bar K/K)$ on $E[n]$ is a homomorphism $\operatorname{gal}(\bar K/K) \to \operatorname{GL}_2(\mathbb{Z}/n\mathbb{Z})$.
 
 **(b)** If $\operatorname{char} K = p > 0$ then $E[p] \cong \mathbb{Z}/p\mathbb{Z}$ — the **ordinary** case — or $E[p] = 0$ — the **supersingular** case.
 
@@ -116,7 +116,7 @@ and $y(2P) = \lambda(x - x(2P)) - y = \frac{27}{10}\left(3 - \frac{129}{100}\rig
 
 **(b)** $\operatorname{End}(E)$ has no zero divisors, is free of finite rank over $\mathbb{Z}$, and $\operatorname{End}(E)\otimes\mathbb{Q}$ is of one of the following forms: $\mathbb{Q}$; an imaginary quadratic field; or, when $\operatorname{char} K = p > 0$, a four-dimensional central division algebra over $\mathbb{Q}$ (the quaternion case, treated in *Division Algebras*, in the algebra layer).
 
-**(c)** The multiplication-by-$n$ endomorphism $[n]$ has degree $n^2$ and $\ker[n] = E[n]$, and the **Tate module** $T_\ell(E) = \varprojlim_n E[\ell^n]$, an inverse limit of finite groups taken algebraically, is a free $\mathbb{Z}_\ell$-module of rank $2$ on which $\operatorname{Gal}(\bar K/K)$ acts $\mathbb{Z}_\ell$-linearly, and $\operatorname{End}(E)\otimes\mathbb{Z}_\ell \hookrightarrow \operatorname{End}_{\mathbb{Z}_\ell}(T_\ell(E))$.
+**(c)** The multiplication-by-$n$ endomorphism $[n]$ has degree $n^2$ and $\ker[n] = E[n]$, and the **Tate module** $T_\ell(E) = \varprojlim_n E[\ell^n]$, an inverse limit of finite groups taken algebraically, is a free $\mathbb{Z}_\ell$-module of rank $2$ on which $\operatorname{gal}(\bar K/K)$ acts $\mathbb{Z}_\ell$-linearly, and $\operatorname{End}(E)\otimes\mathbb{Z}_\ell \hookrightarrow \operatorname{End}_{\mathbb{Z}_\ell}(T_\ell(E))$.
 
 **Proof sketch.** (a) The dual isogeny is constructed by summing the pullbacks of the divisor classes, or by using the fact that the isogeny is a group homomorphism and the dual is the group-theoretic inverse up to degree; the identity $\hat\phi\phi = [\deg\phi]$ follows from the degree formula for a composition. (b) A nonzero endomorphism is surjective and hence has finite kernel; the rank is at most $4$ because an endomorphism of a one-dimensional group is determined up to a scalar by its action on $T_\ell$, which is a $2$-dimensional $\mathbb{Z}_\ell$-module. (c) The Tate module is the algebraic inverse limit of the $\ell^n$-torsion, and the rank statement is the structure theorem for $E[\ell^n]$. The Tate modules taken as topological objects, the $\ell$-adic representations as objects of functional analysis, and the completed endomorphism rings belong to Part II, where the completion is available.
 

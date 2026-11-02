@@ -216,19 +216,19 @@ for some $r \in A$; now $\frac{df}{dx}(a_{n-1}) \equiv \frac{df}{dx}(a_0) \bmod 
 
 The completion assembles the graded pieces of the symmetric algebra into a power series algebra whose associated graded algebra is the symmetric algebra again.
 
-**Theorem.** Let $M$ be a free $R$-module of rank $n$ and let $S = \operatorname{Sym}(M) = \bigoplus_{k\geq0}\operatorname{Sym}^k(M)$, graded, with augmentation ideal $\mathrm{M} = \bigoplus_{k\geq1}\operatorname{Sym}^k(M)$. Then
+**Theorem.** Let $M$ be a free $R$-module of rank $n$ and let $S = \operatorname{sym}(M) = \bigoplus_{k\geq0}\operatorname{sym}^k(M)$, graded, with augmentation ideal $\mathrm{M} = \bigoplus_{k\geq1}\operatorname{sym}^k(M)$. Then
 
 $$
-\operatorname{gr}_{\mathrm{M}} S = \bigoplus_{k\geq0}\mathrm{M}^k/\mathrm{M}^{k+1} \cong \operatorname{Sym}(M),
+\operatorname{gr}_{\mathrm{M}} S = \bigoplus_{k\geq0}\mathrm{M}^k/\mathrm{M}^{k+1} \cong \operatorname{sym}(M),
 $$
 
 and the $\mathrm{M}$-adic completion of $S$ is
 
 $$
-\boxed{\;\hat S \cong \prod_{k\geq0}\operatorname{Sym}^k(M)\;}.
+\boxed{\;\hat S \cong \prod_{k\geq0}\operatorname{sym}^k(M)\;}.
 $$
 
-*Proof.* The associated graded of a polynomial algebra in $n$ variables is the polynomial algebra again, since $\mathrm{M}^k/\mathrm{M}^{k+1}$ is the module of homogeneous polynomials of degree $k$, isomorphic to $\operatorname{Sym}^k(M)$; this is the general fact that $\operatorname{gr}$ of the symmetric algebra of a free module is the symmetric algebra. The completion consists of the coherent sequences of truncations, and a coherent sequence is exactly a formal sum $\sum_{k\geq0} s_k$ with $s_k \in \operatorname{Sym}^k(M)$, that is, an element of the product $\prod_k\operatorname{Sym}^k(M)$.
+*Proof.* The associated graded of a polynomial algebra in $n$ variables is the polynomial algebra again, since $\mathrm{M}^k/\mathrm{M}^{k+1}$ is the module of homogeneous polynomials of degree $k$, isomorphic to $\operatorname{sym}^k(M)$; this is the general fact that $\operatorname{gr}$ of the symmetric algebra of a free module is the symmetric algebra. The completion consists of the coherent sequences of truncations, and a coherent sequence is exactly a formal sum $\sum_{k\geq0} s_k$ with $s_k \in \operatorname{sym}^k(M)$, that is, an element of the product $\prod_k\operatorname{sym}^k(M)$.
 
 Thus the passage from the symmetric algebra to its completion replaces the direct sum by the product, allowing arbitrary infinite homogeneous components. The algebra $R[[x_1,\ldots,x_n]]$ is the completion $\hat S$ in the case $M = R^n$, and its associated graded algebra is $R[x_1,\ldots,x_n]$ again: the completion does not change the graded pieces, only the way they are assembled.
 
@@ -240,7 +240,7 @@ $$
 f = \sum_{a \in \mathbb{N}^n} \frac{1}{a!}\,\partial^a f(0)\, x^a, \qquad a! = a_1!\cdots a_n!,
 $$
 
-where $\partial^a f(0)$ denotes the iterated formal derivative evaluated at the origin; the formula is the definition of the derivatives read backwards: the iterated derivative $\partial^a f(0)$ is $a_1!\cdots a_n!$ times the coefficient of $x^a$. The linear part of $f$ is the element of $\operatorname{Hom}_R(\mathrm{M}/\mathrm{M}^2, R)$ with components $\partial f/\partial x_1(0), \ldots, \partial f/\partial x_n(0)$; the cotangent space is $\mathrm{M}/\mathrm{M}^2 \cong \operatorname{Sym}^1(M) \cong R^n$, and its dual $(\mathrm{M}/\mathrm{M}^2)^*$, the algebraic tangent space (a name for this dual module only, no manifold is meant), is the module of $R$-derivations of $R[[x_1,\ldots,x_n]]$ at the origin. The formal inverse function theorem is the statement that an invertible linear part lifts to an invertible series.
+where $\partial^a f(0)$ denotes the iterated formal derivative evaluated at the origin; the formula is the definition of the derivatives read backwards: the iterated derivative $\partial^a f(0)$ is $a_1!\cdots a_n!$ times the coefficient of $x^a$. The linear part of $f$ is the element of $\operatorname{Hom}_R(\mathrm{M}/\mathrm{M}^2, R)$ with components $\partial f/\partial x_1(0), \ldots, \partial f/\partial x_n(0)$; the cotangent space is $\mathrm{M}/\mathrm{M}^2 \cong \operatorname{sym}^1(M) \cong R^n$, and its dual $(\mathrm{M}/\mathrm{M}^2)^*$, the algebraic tangent space (a name for this dual module only, no manifold is meant), is the module of $R$-derivations of $R[[x_1,\ldots,x_n]]$ at the origin. The formal inverse function theorem is the statement that an invertible linear part lifts to an invertible series.
 
 **Remark.** In characteristic zero the Taylor formula identifies $R[[x_1,\ldots,x_n]]$ with the completed divided-power algebra, and the natural divided powers $\gamma_k(x) = x^k/k!$ are the coefficients of the exponential; the divided-power algebra of *Divided Powers* is the correct substitute in small characteristic, where the factorials are not invertible. The completion, the symmetric algebra and the divided-power algebra therefore agree in characteristic zero and diverge in small characteristic, exactly as in the uncompleted case.
 
@@ -252,7 +252,7 @@ $$
 R[x_1,\ldots,x_n]^{\wedge}_{\mathrm{M}} = \varprojlim_k R[x_1,\ldots,x_n]/\mathrm{M}^k \cong R[[x_1,\ldots,x_n]], \qquad \mathrm{M} = (x_1,\ldots,x_n),
 $$
 
-where completion takes the inverse limit of the quotient algebras $A/I^k$. The filtration is the order filtration, $\mathrm{M}^k$ is the set of series of order at least $k$, and the algebra is complete for the $\mathrm{M}$-adic filtration. A series is a unit exactly when its constant term is a unit, by the geometric series; substitution is defined for series with zero constant term. The formal inverse function theorem states that an $n$-tuple $F$ with $F(0) = 0$ and invertible Jacobian $J = (\partial F_i/\partial x_j)(0)$ has a unique two-sided compositional inverse, and it is proved by the Newton step $G \mapsto L(x - N(G))$, which gains one order on the $\mathrm{M}$-adic filtration. Completion converts the direct-sum symmetric algebra $\operatorname{Sym}(M)$ into the product $\prod_k \operatorname{Sym}^k(M)$, leaves the associated graded algebra unchanged, and in characteristic zero agrees with the Taylor expansion and with the completed divided-power algebra. In small characteristic the divided powers provide the correct substitute.
+where completion takes the inverse limit of the quotient algebras $A/I^k$. The filtration is the order filtration, $\mathrm{M}^k$ is the set of series of order at least $k$, and the algebra is complete for the $\mathrm{M}$-adic filtration. A series is a unit exactly when its constant term is a unit, by the geometric series; substitution is defined for series with zero constant term. The formal inverse function theorem states that an $n$-tuple $F$ with $F(0) = 0$ and invertible Jacobian $J = (\partial F_i/\partial x_j)(0)$ has a unique two-sided compositional inverse, and it is proved by the Newton step $G \mapsto L(x - N(G))$, which gains one order on the $\mathrm{M}$-adic filtration. Completion converts the direct-sum symmetric algebra $\operatorname{sym}(M)$ into the product $\prod_k \operatorname{sym}^k(M)$, leaves the associated graded algebra unchanged, and in characteristic zero agrees with the Taylor expansion and with the completed divided-power algebra. In small characteristic the divided powers provide the correct substitute.
 
 ## Summary of Notation
 

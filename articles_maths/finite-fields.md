@@ -159,7 +159,7 @@ $$
 \mathbb{F}_4 = \{0, 1, \omega, \omega + 1\} = \{0, 1, \omega, \omega^2\}, \qquad \omega^3 = 1,
 $$
 
-and $\omega$ is primitive. The Frobenius map is $\varphi(\omega) = \omega^2 = \omega + 1$, so $\operatorname{Gal}(\mathbb{F}_4/\mathbb{F}_2) = \{1, \varphi\} \cong \mathbb{Z}/2\mathbb{Z}$. The only irreducible quadratic over $\mathbb{F}_2$ is $x^2+x+1$, consistent with $\varphi(3)/2 = 1$.
+and $\omega$ is primitive. The Frobenius map is $\varphi(\omega) = \omega^2 = \omega + 1$, so $\operatorname{gal}(\mathbb{F}_4/\mathbb{F}_2) = \{1, \varphi\} \cong \mathbb{Z}/2\mathbb{Z}$. The only irreducible quadratic over $\mathbb{F}_2$ is $x^2+x+1$, consistent with $\varphi(3)/2 = 1$.
 
 **Example ($\mathbb{F}_8$).** The polynomial $x^3 + x + 1$ is irreducible over $\mathbb{F}_2$. Put $\mathbb{F}_8 = \mathbb{F}_2[x]/(x^3+x+1)$ and let $\alpha$ be the class of $x$, so $\alpha^3 = \alpha + 1$. Then the powers of $\alpha$ enumerate the nonzero elements:
 

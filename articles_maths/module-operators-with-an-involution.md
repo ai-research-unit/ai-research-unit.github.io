@@ -22,10 +22,10 @@ An operator $f \in E$ is therefore an element of an involutive algebra, and the 
 **Definition.** An operator $f \in E$ is **self-adjoint** when $f^{*}=f$, **skew-adjoint** when $f^{*}=-f$, and **unitary** when $f^{*}f=ff^{*}=\mathrm{id}$. Write
 
 $$
-\operatorname{Sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}, \qquad \mathrm{U}(M)=\{f : f^{*}f=ff^{*}=\mathrm{id}\}.
+\operatorname{sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}, \qquad \mathrm{U}(M)=\{f : f^{*}f=ff^{*}=\mathrm{id}\}.
 $$
 
-**Proposition.** $\operatorname{Sym}(M)$ and $\operatorname{Skew}(M)$ are $R$-submodules with $\operatorname{Sym}(M)\cap\operatorname{Skew}(M)=0$ and $E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M)$; the map $f \mapsto \frac12(f+f^{*})$ is the projection onto the first summand. $\mathrm{U}(M)$ is a subgroup of $E^{\times}$.
+**Proposition.** $\operatorname{sym}(M)$ and $\operatorname{Skew}(M)$ are $R$-submodules with $\operatorname{sym}(M)\cap\operatorname{Skew}(M)=0$ and $E=\operatorname{sym}(M)\oplus\operatorname{Skew}(M)$; the map $f \mapsto \frac12(f+f^{*})$ is the projection onto the first summand. $\mathrm{U}(M)$ is a subgroup of $E^{\times}$.
 
 *Proof.* The decomposition, the projection formula and the group property are *The Involution on the Endomorphism Ring of a Module*.
 
@@ -41,11 +41,11 @@ $$
 
 so that $f=\operatorname{Re}f+\operatorname{Im}f$ and $(\operatorname{Re}f)^{*}=\operatorname{Re}f$, $(\operatorname{Im}f)^{*}=-\operatorname{Im}f$.
 
-**Proposition.** The assignment $f \mapsto (\operatorname{Re}f,\operatorname{Im}f)$ is an $R$-linear isomorphism $E \to \operatorname{Sym}(M)\oplus\operatorname{Skew}(M)$, natural in $f$, and $\operatorname{Re}f=f$ exactly for self-adjoint $f$ while $\operatorname{Im}f=f$ exactly for skew-adjoint $f$.
+**Proposition.** The assignment $f \mapsto (\operatorname{Re}f,\operatorname{Im}f)$ is an $R$-linear isomorphism $E \to \operatorname{sym}(M)\oplus\operatorname{Skew}(M)$, natural in $f$, and $\operatorname{Re}f=f$ exactly for self-adjoint $f$ while $\operatorname{Im}f=f$ exactly for skew-adjoint $f$.
 
 *Proof.* The map is $R$-linear because ${}^{*}$ is, it is injective because its composite with the sum is the identity, and its image is contained in the direct sum; dimensions (or the projection formula) give the isomorphism. The last clauses are the definitions.
 
-This is the operator-level form of the decomposition of an involutive algebra into its symmetric and antisymmetric parts; no order structure is attached to $\operatorname{Sym}(M)$, because positivity needs a norm and belongs to Part II.
+This is the operator-level form of the decomposition of an involutive algebra into its symmetric and antisymmetric parts; no order structure is attached to $\operatorname{sym}(M)$, because positivity needs a norm and belongs to Part II.
 
 ### Products of self-adjoint operators
 
@@ -122,7 +122,7 @@ The classification of the orbits of self-adjoint operators requires invariants (
 **Proposition.** For every $f \in E$,
 
 $$
-\boxed{\;f+f^{*} \in \operatorname{Sym}(M), \qquad f-f^{*} \in \operatorname{Skew}(M), \qquad f f^{*} \in \operatorname{Sym}(M), \qquad f^{*} f \in \operatorname{Sym}(M)\;} .
+\boxed{\;f+f^{*} \in \operatorname{sym}(M), \qquad f-f^{*} \in \operatorname{Skew}(M), \qquad f f^{*} \in \operatorname{sym}(M), \qquad f^{*} f \in \operatorname{sym}(M)\;} .
 $$
 
 Moreover $f$ is self-adjoint if and only if $f=f^{*}$, and $f$ is skew-adjoint if and only if $f=-f^{*}$.
@@ -160,7 +160,7 @@ On a module with a non-degenerate reflexive pairing, the endomorphism ring is an
 | $(A,\sigma)$ | involutive $R$-algebra |
 | $M$, $\langle\cdot,\cdot\rangle$ | module with non-degenerate reflexive σ-sesquilinear pairing |
 | $(E,{}^{*})$ | involutive algebra of operators, $E=\operatorname{End}_A(M)$ |
-| $\operatorname{Sym}(M)$ | self-adjoint operators, $f^{*}=f$ |
+| $\operatorname{sym}(M)$ | self-adjoint operators, $f^{*}=f$ |
 | $\operatorname{Skew}(M)$ | skew-adjoint operators, $f^{*}=-f$ |
 | $\operatorname{Re}f$, $\operatorname{Im}f$ | $\frac12(f+f^{*})$ and $\frac12(f-f^{*})$ |
 | $\mathrm{U}(M)$ | unitary group, $u^{*}u=uu^{*}=\mathrm{id}$ |

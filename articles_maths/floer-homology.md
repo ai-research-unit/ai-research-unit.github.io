@@ -129,7 +129,7 @@ $$
 
 ## Heegaard Floer Homology and Contact Homology
 
-**Definition.** Let $Y$ be a closed oriented three-manifold with a Heegaard splitting $Y = H_0\cup_\Sigma H_1$ along a surface $\Sigma$ of genus $g$, and let $\mathrm{Sym}^g(\Sigma)$ be the $g$-fold symmetric product with its symplectic form. The **Heegaard Floer complex** $\widehat{CF}(Y)$ is the Lagrangian Floer complex of the two tori $\mathbb{T}_\alpha,\mathbb{T}_\beta\subseteq\mathrm{Sym}^g(\Sigma)$ determined by the two handlebodies, with the holomorphic curves counted in the symmetric product; its homology $\widehat{HF}(Y)$ — and the refined versions $HF^+$, $HF^-$, $HF^\infty$ — are invariants of $Y$.
+**Definition.** Let $Y$ be a closed oriented three-manifold with a Heegaard splitting $Y = H_0\cup_\Sigma H_1$ along a surface $\Sigma$ of genus $g$, and let $\mathrm{sym}^g(\Sigma)$ be the $g$-fold symmetric product with its symplectic form. The **Heegaard Floer complex** $\widehat{CF}(Y)$ is the Lagrangian Floer complex of the two tori $\mathbb{T}_\alpha,\mathbb{T}_\beta\subseteq\mathrm{sym}^g(\Sigma)$ determined by the two handlebodies, with the holomorphic curves counted in the symmetric product; its homology $\widehat{HF}(Y)$ — and the refined versions $HF^+$, $HF^-$, $HF^\infty$ — are invariants of $Y$.
 
 **Theorem (Ozsváth–Szabó).** The Heegaard Floer homology $\widehat{HF}(Y)$ is an invariant of the closed oriented three-manifold $Y$, independent of the Heegaard splitting and of the auxiliary almost complex structure; it is isomorphic to the Seiberg–Witten Floer homology of $Y$, and it satisfies the surgery exact triangle
 

@@ -191,4 +191,4 @@ Cartan's formula $\mathcal{L}_X = d\iota_X + \iota_Xd$ expresses it through the 
 - Michael Spivak, *A Comprehensive Introduction to Differential Geometry*, vol. I (Publish or Perish, 3rd ed. 1999), for the Lie derivative defined by the flow and its naturality.
 - Shigeyuki Morita, *Geometry of Differential Forms* (American Mathematical Society, 2001), for the interior product, Cartan's formula and the identities among $d$, $\iota_X$ and $\mathcal{L}_X$.
 - Frank W. Warner, *Foundations of Differentiable Manifolds and Lie Groups* (Springer, 1983), for the Lie derivative on tensor fields and the representation $[\mathcal{L}_X,\mathcal{L}_Y]=\mathcal{L}_{[X,Y]}$.
-- Sigmundur Gudmundsson, *An Introduction to Riemannian Geometry* (Lund, 2020), for the Killing-field identity $\mathcal{L}_Xg=2\,\mathrm{Sym}\,\nabla X$, cited for the forward reference to Part IV.
+- Sigmundur Gudmundsson, *An Introduction to Riemannian Geometry* (Lund, 2020), for the Killing-field identity $\mathcal{L}_Xg=2\,\mathrm{sym}\,\nabla X$, cited for the forward reference to Part IV.

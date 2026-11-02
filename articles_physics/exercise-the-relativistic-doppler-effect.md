@@ -24,7 +24,7 @@ Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $
 
 **Statement.** (a) Write $\tilde P$ and show that light has $\langle\tilde P\rangle_{\natural} = 0$. (b) Define the phase of the plane wave and show that it is invariant under a rotor conjugation. (c) Show that an observer of four-velocity $\tilde{V}$ measures the frequency
 $$
-\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right),
+\omega^{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right),
 $$
 and check the formula both in the observer's rest frame and in the source frame.
 
@@ -88,7 +88,7 @@ $$
 $$
 using $\vec k_0\cdot\vec v_b = (\omega_0/c)v_b\cos\theta = \omega_0\beta\cos\theta$. Therefore
 $$
-\boxed{\;\omega_{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right)
+\boxed{\;\omega^{\mathrm{obs}} = -\,\mathrm{Sc}\!\left(\tilde P\tilde{V}^{\natural}\right)
 = \gamma\,\omega_0\left(1 - \beta\cos\theta\right)\;}
 $$
 The frequency measured by an observer is thus an invariant contraction of the wave four-vector with the observer's four-velocity. This is the general Doppler formula, obtained without choosing a frame and without composing a boost; Problem 2 obtains the same result from the rotor, and the agreement is a check on the boost-direction convention.
@@ -296,7 +296,7 @@ The first-order term $-\beta\cos\theta$ is the classical Doppler shift. The lead
 
 The following are left to the reader; none is fully worked out above, and the last four are applications that the parents do not treat.
 
-1. **The invariant formula for arbitrary direction.** Verify $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$ directly for $\theta$ chosen so that $\cos\theta = \beta$, and show that it reproduces $\omega_0/\gamma$. Then verify it is invariant under a second boost applied to both $\tilde P$ and $\tilde{V}$.
+1. **The invariant formula for arbitrary direction.** Verify $\omega^{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$ directly for $\theta$ chosen so that $\cos\theta = \beta$, and show that it reproduces $\omega_0/\gamma$. Then verify it is invariant under a second boost applied to both $\tilde P$ and $\tilde{V}$.
 
 2. **Closest approach and the retarded time.** A source moves uniformly with velocity $v\vec u_x$ past an observer at the origin, at impact parameter $b$. The light received at the moment the source is at the point of closest approach was emitted earlier, from a retarded position; the light emitted from the point of closest approach is received later. Show that the two reception conventions give the two transverse results: the light received when the source is at the point of closest approach is *blueshifted* by $\omega_2 = \gamma\omega_0$ (case A), while the light showing the source at its apparent closest position is *redshifted* by $\omega_2 = \omega_0/\gamma$ (case B). This is the retarded-time resolution of the apparent paradox of Problem 4(c), and it is the reason the Ives–Stilwell source is placed on a circle rather than in linear motion.
 
@@ -304,9 +304,9 @@ The following are left to the reader; none is fully worked out above, and the la
 
 4. **Apparent superluminal motion.** Show that a source moving at small angle $\Theta$ to the line of sight — $\Theta$ the angle between the source velocity and the direction from the source to the observer, the same line-of-sight angle as in further problem 5 — has apparent transverse speed
 $$
-v_{\mathrm{app}} = \frac{\beta c\sin\Theta}{1-\beta\cos\Theta} ,
+v^{\mathrm{app}} = \frac{\beta c\sin\Theta}{1-\beta\cos\Theta} ,
 $$
-and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad this gives $v_{\mathrm{app}} = 6.61\,c$.)
+and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad this gives $v^{\mathrm{app}} = 6.61\,c$.)
 
 5. **The CMB dipole.** An observer moving with velocity $\vec v_b$ through an isotropic blackbody of temperature $T$ sees, in the direction making angle $\Theta$ with $\vec v_b$ (the angle to the line of sight, not to the propagation direction), a blackbody of temperature $T_2 = T\,/\left[\gamma(1-\beta\cos\Theta)\right]$. Expand for small $\beta$ and identify the dipole and quadrupole terms. Why is the observed CMB dipole usually attributed to the observer's motion rather than to a property of the source? (Note that at $\Theta = \pi/2$ this is the case-B redshift $T_2 = T/\gamma$; the apparently conflicting statement that a ray perpendicular to the motion in the *source* frame is blueshifted refers to the source-frame propagation angle, which aberration relates to $\Theta$.)
 
@@ -316,7 +316,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 1. **Four-wavevector.** $\tilde P = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde P\tilde{R}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'$ is invariant under rotor conjugation.
 
-2. **Frequency invariant.** An observer of four-velocity $\tilde{V}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
+2. **Frequency invariant.** An observer of four-velocity $\tilde{V}$ measures $\omega^{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 
 3. **General Doppler formula.** Under the boost rotor $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$, with $\tanh\psi = v_b/c$, the four-wavevector transforms by $\tilde P_2 = \tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*}$ and $\omega_2 = \gamma\omega_0(1-\beta\cos\theta)$, where $\theta$ is the source-frame angle between $\vec v_b$ and the propagation direction. The transformed wavevector is again null.
 

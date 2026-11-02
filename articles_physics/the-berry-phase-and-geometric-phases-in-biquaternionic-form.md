@@ -57,7 +57,7 @@ $$
 \qquad \vec R \in \mathbb{R}^3 ,
 $$
 
-which under the isomorphism $e_t \mapsto I$, $\vec e_\mu \mapsto -i_{\mathrm{mat}}\sigma_\mu$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) maps to the standard spin Hamiltonian $\tfrac12\vec R\cdot\boldsymbol{\sigma}$. Its spectral decomposition is the one inherited from the parent article,
+which under the isomorphism $e_t \mapsto I$, $\vec e_\mu \mapsto -i^{\mathrm{mat}}\sigma_\mu$ (where $i^{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) maps to the standard spin Hamiltonian $\tfrac12\vec R\cdot\boldsymbol{\sigma}$. Its spectral decomposition is the one inherited from the parent article,
 
 $$
 \tilde{H} = \tfrac{R}{2}\,\tilde\Pi_1(\vec u_R) - \tfrac{R}{2}\,\tilde\Pi_2(\vec u_R) ,

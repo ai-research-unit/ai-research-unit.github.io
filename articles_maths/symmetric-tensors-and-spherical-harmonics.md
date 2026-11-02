@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is the second application of the category, and it identifies the symmetric powers of *Symmetric Powers* with the harmonic layers of the polynomial algebra. The symmetric-tensor statements hold over a field $F$ of characteristic $0$, so that all factorials are invertible and the symmetric power is the module of invariants; the polynomial algebra is that of *The Symmetric Algebra of a Module*, and the symmetric powers are its graded pieces $\operatorname{Sym}^k$.
+This article is the second application of the category, and it identifies the symmetric powers of *Symmetric Powers* with the harmonic layers of the polynomial algebra. The symmetric-tensor statements hold over a field $F$ of characteristic $0$, so that all factorials are invertible and the symmetric power is the module of invariants; the polynomial algebra is that of *The Symmetric Algebra of a Module*, and the symmetric powers are its graded pieces $\operatorname{sym}^k$.
 
 Let $V = \mathbb{R}^n$ with its standard inner product and let $P_k$ be the space of homogeneous polynomials of degree $k$ in $x_1, \ldots, x_n$. The **Laplacian** $\Delta = \sum_i \partial^2/\partial x_i^2$ maps $P_k$ to $P_{k-2}$, and the **harmonic polynomials** of degree $k$ are
 
@@ -18,24 +18,24 @@ The article defines symmetric tensors and their contraction with the metric, dev
 
 ### Symmetric Powers and Symmetric Tensors
 
-Let $V$ be a finite-dimensional vector space over a field $F$ of characteristic $0$ and let $V^*$ be its dual. By *Symmetric Powers*, the $k$-fold symmetric power $\operatorname{Sym}^k(V^*)$ is the quotient of the $k$-fold tensor power $(V^*)^{\otimes k}$ by the subspace spanned by the tensors $\varphi_1 \otimes \cdots \otimes \varphi_k - \varphi_{\sigma(1)}\otimes\cdots\otimes\varphi_{\sigma(k)}$ for $\sigma$ in the symmetric group $S_k$. An element of $\operatorname{Sym}^k(V^*)$ is a **symmetric tensor** of rank $k$, that is, a $k$-linear form $\varphi : V^k \to F$ invariant under permutation of its arguments. In characteristic $0$ the symmetric power is canonically the module of $S_k$-invariant elements of $(V^*)^{\otimes k}$, so this use of the term agrees with the invariants that *Symmetric Powers* calls symmetric tensors in the strict sense.
+Let $V$ be a finite-dimensional vector space over a field $F$ of characteristic $0$ and let $V^*$ be its dual. By *Symmetric Powers*, the $k$-fold symmetric power $\operatorname{sym}^k(V^*)$ is the quotient of the $k$-fold tensor power $(V^*)^{\otimes k}$ by the subspace spanned by the tensors $\varphi_1 \otimes \cdots \otimes \varphi_k - \varphi_{\sigma(1)}\otimes\cdots\otimes\varphi_{\sigma(k)}$ for $\sigma$ in the symmetric group $S_k$. An element of $\operatorname{sym}^k(V^*)$ is a **symmetric tensor** of rank $k$, that is, a $k$-linear form $\varphi : V^k \to F$ invariant under permutation of its arguments. In characteristic $0$ the symmetric power is canonically the module of $S_k$-invariant elements of $(V^*)^{\otimes k}$, so this use of the term agrees with the invariants that *Symmetric Powers* calls symmetric tensors in the strict sense.
 
-**Proposition.** If $V$ has basis $e_1, \ldots, e_n$ with dual basis $\check e_1, \ldots, \check e_n$ defined by $\check e_i(e_j) = \delta_{ij}$, then the products $\check e_{i_1}\cdots \check e_{i_k}$ with $i_1 \leq \cdots \leq i_k$ are a basis of $\operatorname{Sym}^k(V^*)$. Hence
+**Proposition.** If $V$ has basis $e_1, \ldots, e_n$ with dual basis $\check e_1, \ldots, \check e_n$ defined by $\check e_i(e_j) = \delta_{ij}$, then the products $\check e_{i_1}\cdots \check e_{i_k}$ with $i_1 \leq \cdots \leq i_k$ are a basis of $\operatorname{sym}^k(V^*)$. Hence
 
 $$
-\dim \operatorname{Sym}^k(V^*) = \binom{n+k-1}{k}.
+\dim \operatorname{sym}^k(V^*) = \binom{n+k-1}{k}.
 $$
 
-*Proof.* The monomials in the $\check e_i$ of degree $k$ span the symmetric power under the multiplication $\operatorname{Sym}^i\times\operatorname{Sym}^j\to\operatorname{Sym}^{i+j}$, and the commutative law identifies all orderings of the factors; the nondecreasing multi-indices parametrise the distinct monomials. Independence follows by evaluating on the symmetric tensors $e_{i_1}\cdots e_{i_k}$, whose coordinates are $\delta$-symbols.
+*Proof.* The monomials in the $\check e_i$ of degree $k$ span the symmetric power under the multiplication $\operatorname{sym}^i\times\operatorname{sym}^j\to\operatorname{sym}^{i+j}$, and the commutative law identifies all orderings of the factors; the nondecreasing multi-indices parametrise the distinct monomials. Independence follows by evaluating on the symmetric tensors $e_{i_1}\cdots e_{i_k}$, whose coordinates are $\delta$-symbols.
 
-**Example.** $\operatorname{Sym}^2(V^*)$ has dimension $\binom{n+1}{2}$ and is the space of quadratic forms; its basis is $\check e_i\check e_j$ for $i\leq j$. The space $\operatorname{Sym}^k(V^*)$ is canonically the space $P_k$ of homogeneous polynomials of degree $k$ in the coordinate functions, and this identification is used throughout.
+**Example.** $\operatorname{sym}^2(V^*)$ has dimension $\binom{n+1}{2}$ and is the space of quadratic forms; its basis is $\check e_i\check e_j$ for $i\leq j$. The space $\operatorname{sym}^k(V^*)$ is canonically the space $P_k$ of homogeneous polynomials of degree $k$ in the coordinate functions, and this identification is used throughout.
 
 ### Symmetric Tensors under the Orthogonal Group
 
-Assume $F = \mathbb{R}$ and let $V = \mathbb{R}^n$ carry the standard positive definite inner product $g$, with $g_{ij} = \delta_{ij}$. The **orthogonal group** $O(n)$ acts on $\operatorname{Sym}^k(V^*)$ by $(g\varphi)(v_1,\ldots,v_k) = \varphi(g^{-1}v_1,\ldots,g^{-1}v_k)$, and this action determines the structure of the layer. Inside $\operatorname{Sym}^k(V^*)$ sits the image of the **contraction** with the metric,
+Assume $F = \mathbb{R}$ and let $V = \mathbb{R}^n$ carry the standard positive definite inner product $g$, with $g_{ij} = \delta_{ij}$. The **orthogonal group** $O(n)$ acts on $\operatorname{sym}^k(V^*)$ by $(g\varphi)(v_1,\ldots,v_k) = \varphi(g^{-1}v_1,\ldots,g^{-1}v_k)$, and this action determines the structure of the layer. Inside $\operatorname{sym}^k(V^*)$ sits the image of the **contraction** with the metric,
 
 $$
-\operatorname{Sym}^{k-2}(V^*) \longrightarrow \operatorname{Sym}^k(V^*), \qquad \varphi \longmapsto g\,\varphi,
+\operatorname{sym}^{k-2}(V^*) \longrightarrow \operatorname{sym}^k(V^*), \qquad \varphi \longmapsto g\,\varphi,
 $$
 
 which lowers the rank by two by summing over a pair of indices with the metric and its inverse. The **trace-free** or **harmonic** symmetric tensors are the kernel of a dual contraction; when the metric is the identity the contraction is the Laplacian and the trace-free tensors are exactly the harmonic polynomials defined below.
@@ -226,7 +226,7 @@ by telescoping, with the second term omitted for $K = 0$. For $n = 3$ this dimen
 
 The harmonic layers and the trace-free symmetric tensors are the same object, read through the metric.
 
-**Theorem.** Under the identification of $P_k$ with $\operatorname{Sym}^k(V^*)$, the harmonic polynomials of degree $k$ correspond exactly to the symmetric tensors of rank $k$ that are trace-free with respect to $g$, and the trace-free symmetric tensors of rank $k$ form a subspace of dimension $\dim\mathcal{H}_k$.
+**Theorem.** Under the identification of $P_k$ with $\operatorname{sym}^k(V^*)$, the harmonic polynomials of degree $k$ correspond exactly to the symmetric tensors of rank $k$ that are trace-free with respect to $g$, and the trace-free symmetric tensors of rank $k$ form a subspace of dimension $\dim\mathcal{H}_k$.
 
 *Proof.* The Laplacian on polynomials corresponds to the metric contraction on symmetric tensors: with the standard form, $\Delta$ is the contraction of two indices by $\delta_{ij}$, so $\Delta f = 0$ is exactly the trace-free condition. The dimensions agree by the formula above.
 
@@ -234,7 +234,7 @@ The harmonic layers and the trace-free symmetric tensors are the same object, re
 
 ## Summary
 
-Let $V = \mathbb{R}^n$ with its standard inner product. The symmetric tensors of rank $k$ on $V^*$ are the symmetric powers $\operatorname{Sym}^k(V^*)$, of dimension $\binom{n+k-1}{k}$, and they are the homogeneous polynomials of degree $k$. The Laplacian $\Delta : P_k \to P_{k-2}$ defines the harmonic polynomials $\mathcal{H}_k = \ker\Delta$, and the fundamental decomposition is
+Let $V = \mathbb{R}^n$ with its standard inner product. The symmetric tensors of rank $k$ on $V^*$ are the symmetric powers $\operatorname{sym}^k(V^*)$, of dimension $\binom{n+k-1}{k}$, and they are the homogeneous polynomials of degree $k$. The Laplacian $\Delta : P_k \to P_{k-2}$ defines the harmonic polynomials $\mathcal{H}_k = \ker\Delta$, and the fundamental decomposition is
 
 $$
 P_k = \mathcal{H}_k \oplus r^2 P_{k-2}, \qquad P_k = \bigoplus_{j=0}^{\lfloor k/2\rfloor} r^{2j}\mathcal{H}_{k-2j},
@@ -256,7 +256,7 @@ equal to $2k+1$ for $n=3$ and to $(k+1)^2$ for $n=4$, and the harmonic layers ar
 | $V = \mathbb{R}^n$, $V^*$ | Euclidean space and its dual |
 | $e_1, \ldots, e_n$; $\check e_1, \ldots, \check e_n$ | Basis of $V$ and its dual basis, $\check e_i(e_j) = \delta_{ij}$ |
 | $g$, $g_{ij} = \delta_{ij}$ | Standard positive definite inner product |
-| $\operatorname{Sym}^k(V^*)$ | Symmetric tensors of rank $k$, dimension $\binom{n+k-1}{k}$ |
+| $\operatorname{sym}^k(V^*)$ | Symmetric tensors of rank $k$, dimension $\binom{n+k-1}{k}$ |
 | $P_k$ | Homogeneous polynomials of degree $k$ |
 | $\Delta = \sum_i\partial^2/\partial x_i^2$ | Laplacian, $P_k \to P_{k-2}$ |
 | $\mathcal{H}_k = \ker\Delta \cap P_k$ | Harmonic polynomials of degree $k$ |

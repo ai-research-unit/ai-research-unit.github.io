@@ -95,7 +95,7 @@ by the invariance of the Haar measure; the operators of the symmetry group on th
 
 **Example (the finite case).** Let $G$ be a finite group acting by permutations on a finite set $X$, and let $V$ be the permutation module with the invariant inner product that makes the standard basis orthonormal. The unitary operators of the form are the permutation matrices of $S_X$, the symmetry group embeds in them, and the commutant is the centraliser algebra of the permutation representation, *Representations of Groups*. The unitary operators commuting with the action are exactly the block-scalar matrices of the decomposition into orbits.
 
-**Example (the Euclidean case).** Let $V = \mathbb{R}^n$ with the Euclidean form; the unitary group is $O(n)$, the maximal symmetry group of the form, and a figure $F$ has the symmetry group $\operatorname{Sym}(F) \leq O(n)$. The unitary operators of the group are the finite or discrete subgroups of $O(n)$ that fix $F$, and the unitary operators commuting with $\operatorname{Sym}(F)$ are the rotations about the axes the figure does not distinguish, *Symmetry, Point and Crystallographic Groups*.
+**Example (the Euclidean case).** Let $V = \mathbb{R}^n$ with the Euclidean form; the unitary group is $O(n)$, the maximal symmetry group of the form, and a figure $F$ has the symmetry group $\operatorname{sym}(F) \leq O(n)$. The unitary operators of the group are the finite or discrete subgroups of $O(n)$ that fix $F$, and the unitary operators commuting with $\operatorname{sym}(F)$ are the rotations about the axes the figure does not distinguish, *Symmetry, Point and Crystallographic Groups*.
 
 **Example (the regular representation of a compact group).** Let $G$ be compact and $V = L^2(G)$; the regular representation is unitary, and its decomposition into irreducibles is the Peter–Weyl theorem. The unitary operators of the group are the translations and their limits, and the unitary operators commuting with the whole regular representation are the operators of convolution by the central functions, *Analysis on Compact Groups*.
 
@@ -118,7 +118,7 @@ The unitary group $\mathrm{U}(V,h) = \{T : T^{*} = T^{-1}\}$ of a form is the ma
 | $\widehat{G}$ | the unitary dual; the irreducible unitary representations |
 | $\lambda$, $\rho$ | the left and right regular representations on $L^2(G)$ |
 | $\lambda(g)^{*} = \lambda(g^{-1})$ | the adjoint of a translation is the inverse translation |
-| $\operatorname{Sym}(F)$ | the symmetry group of a figure, a subgroup of $O(n)$ |
+| $\operatorname{sym}(F)$ | the symmetry group of a figure, a subgroup of $O(n)$ |
 
 ## Further Reading
 

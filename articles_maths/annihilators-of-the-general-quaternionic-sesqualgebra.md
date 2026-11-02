@@ -157,7 +157,7 @@ meeting of the two involution signs is exactly what makes the two sides two agai
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquimultiplication, the operation $\mathrm{GQS}$, the product with both involution signs |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquimultiplication, the operation $\mathrm{gqs}$, the product with both involution signs |
 | $A_\star(\tilde Q_1),B_\star(\tilde Q_1)$ | the left and the right annihilator of $\tilde Q_1$ in the block, distinct on the cone |
 | $\langle\tilde Q_1^{\natural}\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1^{\natural}\tilde Q_2=0\}$ | the plain left annihilator of $\tilde Q_1^{\natural}$, whose star is the left annihilator of the block |
 | $\langle\tilde Q_1^{\natural}\rangle_{\natural*}^{*}$ | the left annihilator of the block, the star of the plain annihilator |

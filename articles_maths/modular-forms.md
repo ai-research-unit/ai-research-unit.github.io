@@ -304,7 +304,7 @@ $$
 
 **Theorem (Eichler–Shimura).** For a congruence subgroup $\Gamma$ and $k\geq2$ there is an isomorphism, compatible with the Hecke action,
 $$
-S_k(\Gamma)\ \cong\ H^1(X_\Gamma,\ \operatorname{Sym}^{k-2}\mathcal{V}),
+S_k(\Gamma)\ \cong\ H^1(X_\Gamma,\ \operatorname{sym}^{k-2}\mathcal{V}),
 $$
 where $\mathcal{V}$ is the local system attached to the standard representation of $\Gamma$ and the cohomology is the de Rham cohomology of the modular curve with coefficients in the corresponding local system; for $k=2$ this is the statement that $S_2(\Gamma)$ is the space of holomorphic differentials of the first kind on $X_\Gamma$, so that $\dim S_2(\Gamma) = g(\Gamma)$, and $H^1(X_\Gamma,\mathbb{C})$ is the direct sum of $S_2$ and its complex conjugate.
 
@@ -316,7 +316,7 @@ where $\mathcal{V}$ is the local system attached to the standard representation 
 
 **Theorem (Deligne).** Let $f$ be a normalised newform of weight $k$ and level $N$ with coefficients in a number field $E$. For every prime $\lambda$ of $E$ there is a continuous representation
 $$
-\rho_{f,\lambda}:\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to GL_2(E_\lambda),
+\rho_{f,\lambda}:\operatorname{gal}(\overline{\mathbb{Q}}/\mathbb{Q})\to GL_2(E_\lambda),
 $$
 unramified outside $N$ and $\lambda$, such that the characteristic polynomial of the Frobenius at an unramified prime $p$ is $X^2-a_pX+\langle p\rangle p^{k-1}$, and the eigenvalues of the Frobenius have absolute value $p^{(k-1)/2}$ at every unramified prime. The representation is irreducible and its determinant is the product of the cyclotomic character with the $(k-1)$-st power of $\langle\cdot\rangle$.
 

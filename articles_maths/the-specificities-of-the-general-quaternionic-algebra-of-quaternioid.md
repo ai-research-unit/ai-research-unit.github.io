@@ -82,9 +82,9 @@ so the conjugation carries the product to the mirror product and back, and the t
 
 | structure | product | character |
 |---|---|---|
-| symmetric plain (SPA) | $\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ | commutative, Jordan, no unit, zero divisors |
-| antisymmetric plain (APA) | $\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)$ | alternating, Lie, no unit |
-| general quaternionic (GQA) | $\tilde q_1^{\natural}\tilde q_2$ | not associative, left unit only, division |
+| symmetric plain (spa) | $\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ | commutative, Jordan, no unit, zero divisors |
+| antisymmetric plain (apa) | $\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)$ | alternating, Lie, no unit |
+| general quaternionic (gqa) | $\tilde q_1^{\natural}\tilde q_2$ | not associative, left unit only, division |
 
 **Remark.** The table is the chapter's, and the articles that own it are *The 6 Products of the Quaternioid Real Space* and *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; it is reproduced here for the relation only.
 

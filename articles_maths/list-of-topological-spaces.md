@@ -98,7 +98,7 @@ One family of spaces is separated out because it is totally disconnected, and th
 | the Cantor set $\{0,1\}^{\mathbb{N}}$, $2^{\mathbb{N}}$ | compact, metrisable, perfect, totally disconnected; uncountable, and homeomorphic to $\mathbb{Z}_p$ | *Descriptive Set Theory*; *Continuum Theory* |
 | the Baire space $\mathbb{N}^{\mathbb{N}}$ | completely metrisable and zero-dimensional, hence totally disconnected; not compact; homeomorphic to the irrational numbers | *Baire Spaces and Category*; *Descriptive Set Theory* |
 | a profinite group $\varprojlim G_i$ | compact Hausdorff and totally disconnected; metrisable exactly when the inverse system has a countable cofinal subsystem | *Profinite Groups and the Krull Topology* |
-| the Galois group $G_K = \operatorname{Gal}(\overline K/K)$ | compact totally disconnected for the Krull topology; metrisable for a countable field | *Galois Theory*; *Galois Cohomology* |
+| the Galois group $G_K = \operatorname{gal}(\overline K/K)$ | compact totally disconnected for the Krull topology; metrisable for a countable field | *Galois Theory*; *Galois Cohomology* |
 | the Stone space of a Boolean algebra | compact, totally disconnected, Hausdorff; the spectral space of the algebra | *Boolean Rings and Stone Duality* |
 | $\beta\mathbb{N}$ | compact Hausdorff and extremally disconnected; not first countable at a free ultrafilter, hence not metrisable | *Nets, Filters and Convergence*; *Metrisation and Separation Axioms* |
 | the solenoid $\varprojlim S^1$ | compact and connected, dense image of $\mathbb{R}$; not path connected and not locally connected | *Abelian Topological Groups*; *Pontryagin Duality* |

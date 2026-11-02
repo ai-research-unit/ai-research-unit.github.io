@@ -306,7 +306,7 @@ The fifth part of the exercise is a warning as much as a computation. The phrase
 Consider the equal mixture of the two Bell idempotents $\tilde\Pi_{\Phi^+}$ and $\tilde\Pi_{\Phi^-}$,
 
 $$
-\tilde{Ϛ}_{\mathrm{mix}}=\tfrac12 \tilde\Pi_{\Phi^+}+\tfrac12 \tilde\Pi_{\Phi^-}.
+\tilde{Ϛ}^{\mathrm{mix}}=\tfrac12 \tilde\Pi_{\Phi^+}+\tfrac12 \tilde\Pi_{\Phi^-}.
 $$
 
 Its partial trace is $\tfrac12 e_t$ on each factor, since every Bell idempotent has $\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$ and the partial trace is linear. Hence
@@ -318,7 +318,7 @@ $$
 So the partial-trace entropy is maximal. But the joint state is **separable**. Using $\tilde\Pi_{\Phi^\pm}=\tfrac14(e_t\otimes e_t\mp \vec e_x\otimes \vec e_x\pm \vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$, the mixture is
 
 $$
-\tilde{Ϛ}_{\mathrm{mix}}=\tfrac14\left(e_t\otimes e_t-\vec e_z\otimes \vec e_z\right)
+\tilde{Ϛ}^{\mathrm{mix}}=\tfrac14\left(e_t\otimes e_t-\vec e_z\otimes \vec e_z\right)
 =\tfrac12\,\tilde\Pi_1\otimes \tilde\Pi_1
 +\tfrac12\,\tilde\Pi_2\otimes \tilde\Pi_2,
 $$

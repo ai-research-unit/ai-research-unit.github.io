@@ -10,7 +10,7 @@ $$
 =-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
 $$
 
-the antisymmetric half of the general plain sesquilinear product, the operation $\mathrm{APS}$ of *Introduction to the Antisymmetric Plain Sesqualgebra*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
+the antisymmetric half of the general plain sesquilinear product, the operation $\mathrm{aps}$ of *Introduction to the Antisymmetric Plain Sesqualgebra*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
 
 A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
 
@@ -126,7 +126,7 @@ The antisymmetric plain sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\operatorname
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | the antisymmetric plain sesqualgebra, the operation $\mathrm{APS}$ |
+| $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | the antisymmetric plain sesqualgebra, the operation $\mathrm{aps}$ |
 | $\tilde Q_1\tilde Q_2^{*}$ | the parent general plain sesquilinear product |
 | $\tilde Q_1\diamond e_t=\vec Q_1$, $e_t\diamond\tilde Q=-\overline{\vec Q}$ | the two one-sided actions of $e_t$ |
 | $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$ | the scalar part of the block vanishes identically |

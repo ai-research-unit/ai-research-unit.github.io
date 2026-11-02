@@ -44,7 +44,7 @@ The symmetric, exterior and Clifford algebras are quotients of $T(V)$ by homogen
 | Algebra | The property it has | Introduced in |
 |---|---|---|
 | $R[x_1,\dots,x_n]$, the polynomial algebra | commutative and associative | *Polynomial Algebras* |
-| $\operatorname{Sym}(V)$, the symmetric algebra | the commutative associative quotient of $T(V)$ by the commutators | *The Symmetric Algebra of a Module* |
+| $\operatorname{sym}(V)$, the symmetric algebra | the commutative associative quotient of $T(V)$ by the commutators | *The Symmetric Algebra of a Module* |
 | $\Lambda(V)$, the exterior algebra | the graded-commutative associative quotient by $v \otimes v$ | *The Exterior Algebra* |
 | $\mathrm{Cl}(V,\mathfrak{Q})$, the Clifford algebra | the associative quotient by $v \otimes v - \mathfrak{Q}(v)$ | *Clifford Algebras* |
 | $A_1(k) = k\langle x,y\rangle/(xy - yx - 1)$, the Weyl algebra | associative, a domain, and not a quotient by homogeneous relations | *Non-Commutative Domains*, §The Weyl Algebra |
@@ -80,7 +80,7 @@ The universal enveloping algebra is the associative algebra attached to a non-as
 | The universal property of $\mathrm{U}(\mathrm{G})$ | every $R$-linear $\varphi : \mathrm{G} \to A$ into an associative $R$-algebra with $\varphi([x,y]) = \varphi(x)\varphi(y) - \varphi(y)\varphi(x)$ factors uniquely through $\mathrm{G} \to \mathrm{U}(\mathrm{G})$ | *Universal Enveloping Algebras* |
 | The commutator algebra $A_{\mathrm{Lie}}$ | the Lie algebra with bracket $[a,b] = ab - ba$ attached to an associative algebra $A$; not associative | *Universal Enveloping Algebras* |
 | The adjunction | $U$ is the left adjoint of the functor attaching to an associative algebra its commutator Lie algebra $A_{\mathrm{Lie}}$ | *Universal Enveloping Algebras* |
-| The Poincaré–Birkhoff–Witt theorem | the ordered monomials in a basis of $\mathrm{G}$ form a basis of $\mathrm{U}(\mathrm{G})$, and $\mathrm{gr}\,\mathrm{U}(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G})$ | *Universal Enveloping Algebras* |
+| The Poincaré–Birkhoff–Witt theorem | the ordered monomials in a basis of $\mathrm{G}$ form a basis of $\mathrm{U}(\mathrm{G})$, and $\mathrm{gr}\,\mathrm{U}(\mathrm{G}) \cong \operatorname{sym}(\mathrm{G})$ | *Universal Enveloping Algebras* |
 
 The enveloping algebra is associative by construction, and it is the reason a representation of a Lie algebra is a module over an associative algebra. The Lie algebra itself is the canonical non-example, and it is recorded in the last section with the other algebras that fail associativity.
 
@@ -128,7 +128,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $[x,y,z] = (xy)z - x(yz)$ | The associator, a trilinear function vanishing exactly on the associative algebras |
 | $T(V)$, $R\langle x_1,\dots,x_n\rangle$ | The tensor algebra and the free algebra |
-| $\operatorname{Sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,\mathfrak{Q})$ | The symmetric, exterior and Clifford algebras |
+| $\operatorname{sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,\mathfrak{Q})$ | The symmetric, exterior and Clifford algebras |
 | $A_1(k)$ | The Weyl algebra $k\langle x,y\rangle/(yx - xy - 1)$ |
 | $k[G]$, $kQ$ | The group algebra and the path algebra of a quiver |
 | $M_n(R)$, $E_{ij}$, $I_n$ | The matrix algebra, its matrix units and identity matrix |

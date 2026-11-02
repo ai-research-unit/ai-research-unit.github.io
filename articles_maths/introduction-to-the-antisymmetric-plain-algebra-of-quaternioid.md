@@ -14,7 +14,7 @@ $$
 
 the cross product of the two vector parts. The space $\mathbb{H}$ with this operation is written
 $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block, the operation named
-$\mathrm{APA}$ in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
+$\mathrm{apa}$ in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real
 scalars, but $\times$ is a different multiplication from $\tilde q_1\tilde q_2$: it is alternating, it
@@ -48,7 +48,7 @@ $$
 
 It is the **antisymmetrisation** of the general plain bilinear product $\tilde q_1\tilde q_2$, the
 operation called the antisymmetric part of the product in *The Symmetric and Antisymmetric Parts of
-an Algebra Product*, and the operation named $\mathrm{APA}$ in *The Algebraic Structures over the
+an Algebra Product*, and the operation named $\mathrm{apa}$ in *The Algebraic Structures over the
 Quaternioid $\mathbb{R}$ Space*. The space $\mathbb{H}$ with the product $\times$ is written
 $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block.
 
@@ -199,7 +199,7 @@ only the symmetric half, so the block carries no square of its own. Among the co
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde q_1\times\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde q_1\times\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$ | the antisymmetric plain multiplication, the operation $\mathrm{apa}$ |
 | $\mathbb{H}^{\times}$ | the quaternion space with the antisymmetric plain product |
 | $\vec q_1\times\vec q_2$ | the vector product of the vector parts |
 | $[\tilde q_1,\tilde q_2]=\tilde q_1\tilde q_2-\tilde q_2\tilde q_1=2(\tilde q_1\times\tilde q_2)$ | the commutator of the plain product, twice the operation |

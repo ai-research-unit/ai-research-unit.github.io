@@ -174,7 +174,7 @@ $$
 \Theta_{ij} = ϙ_p\left(3d_ia_j + 3d_ja_i - 2(\vec d\cdot\vec a)\,\delta_{ij}\right),
 $$
 
-verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishing trace. The quadrupole is thus built from **products of two vectors**, $d_i a_j + d_j a_i$; the symmetric traceless part of such a product is exactly what the quaternion product of two vectors discards. Each individual dipole is a vector and an algebra element, and the quadrupole is a bilinear object over that same vector part, living in $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$ rather than in $\mathbb{B}$. The two-dipole picture is the physical face of the algebraic statement of the preceding article: the algebra can hold each of the two dipoles separately, and it cannot hold the quadrupole that their product forms. Whether the pole strength $ϙ_p$ is a charge, as in the electromagnetic setting of the preceding article, or a mass, as in the gravitational setting used here, is immaterial to the decomposition, since only the kernel enters it.
+verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishing trace. The quadrupole is thus built from **products of two vectors**, $d_i a_j + d_j a_i$; the symmetric traceless part of such a product is exactly what the quaternion product of two vectors discards. Each individual dipole is a vector and an algebra element, and the quadrupole is a bilinear object over that same vector part, living in $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ rather than in $\mathbb{B}$. The two-dipole picture is the physical face of the algebraic statement of the preceding article: the algebra can hold each of the two dipoles separately, and it cannot hold the quadrupole that their product forms. Whether the pole strength $ϙ_p$ is a charge, as in the electromagnetic setting of the preceding article, or a mass, as in the gravitational setting used here, is immaterial to the decomposition, since only the kernel enters it.
 
 ## The Rotating Ellipsoid and the $2\Omega$ Oscillation
 
@@ -324,7 +324,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\lambda_1, \lambda_2, \lambda_3$ | Principal values of the body-frame quadrupole, $\sum_i\lambda_i = 0$ |
 | $\Theta_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ | Quadrupole of a homogeneous ellipsoid |
 | $\epsilon_{ij}$ | Traceless symmetric strain |
-| $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |
+| $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ (Wigner's $D$) |
 | $\Omega$ | Angular speed of rigid rotation |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t+\vec\nabla$ | Biquaternionic gradient |

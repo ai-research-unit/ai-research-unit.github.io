@@ -39,13 +39,13 @@ and in the types $(n,m)$ of $T$ and $(r,s)$ of $S$ the type of the product is $(
 **Definition.** The **flip** is the linear map $\tau : E \otimes F \to F \otimes E$ determined by $\tau(x \otimes y) = y \otimes x$; on $E \otimes E$ it is an involution of $E \otimes E$, and the **symmetric part** and the **antisymmetric part** are
 
 $$
-\mathrm{Sym}^{2}(E) = \ker(\tau - \mathrm{id}), \qquad \Lambda^{2}(E) = \ker(\tau + \mathrm{id}) .
+\mathrm{sym}^{2}(E) = \ker(\tau - \mathrm{id}), \qquad \Lambda^{2}(E) = \ker(\tau + \mathrm{id}) .
 $$
 
 **Proposition (the flip is continuous and extends).** The flip is continuous for the projective and the injective topologies, it extends to a continuous involution $\widehat{\tau}$ of each of the completions $E \widehat{\otimes}_\pi F$ and $E \widehat{\otimes}_\varepsilon F$, and when $2$ is invertible the completions decompose as
 
 $$
-E \widehat{\otimes}_\bullet E = \overline{\mathrm{Sym}^{2}(E)} \oplus \overline{\Lambda^{2}(E)} ,
+E \widehat{\otimes}_\bullet E = \overline{\mathrm{sym}^{2}(E)} \oplus \overline{\Lambda^{2}(E)} ,
 $$
 
 the closures being taken in the completion.
@@ -58,7 +58,7 @@ $$
 \boxed{\;(\theta \otimes \theta)\,\tau = \tau\,(\theta \otimes \theta)\;} ,
 $$
 
-so the symmetric and antisymmetric parts are $\theta \otimes \theta$-stable; on $\mathrm{Sym}^{2}(E)$ the fixed part is $\mathrm{Sym}^{2}(E_{+}) \oplus \mathrm{Sym}^{2}(E_{-})$ and on $\Lambda^{2}(E)$ it is $\Lambda^{2}(E_{+}) \oplus \Lambda^{2}(E_{-})$, the cross terms $E_{+} \otimes E_{-}$ lying in the negated part.
+so the symmetric and antisymmetric parts are $\theta \otimes \theta$-stable; on $\mathrm{sym}^{2}(E)$ the fixed part is $\mathrm{sym}^{2}(E_{+}) \oplus \mathrm{sym}^{2}(E_{-})$ and on $\Lambda^{2}(E)$ it is $\Lambda^{2}(E_{+}) \oplus \Lambda^{2}(E_{-})$, the cross terms $E_{+} \otimes E_{-}$ lying in the negated part.
 
 **Proof.** $(\theta \otimes \theta)\tau(x \otimes y) = \theta y \otimes \theta x = \tau(\theta x \otimes \theta y) = \tau(\theta \otimes \theta)(x \otimes y)$, so the two commute; hence $\ker(\tau \mp \mathrm{id})$ is preserved. On a symmetrised product $x_{+}\otimes x_{+}' + x_{+}' \otimes x_{+}$ with both factors in $E_{+}$ the involution is the identity, and likewise for $E_{-}$; a cross term $x_{+}\otimes x_{-} + x_{-}\otimes x_{+}$ is sent to its negative, since $\theta x_{\pm} = \pm x_{\pm}$.
 
@@ -104,7 +104,7 @@ Two continuous involutions of the factors of a topological tensor product induce
 | $(E\otimes F)^{+} = (E_{+}\otimes F_{+})\oplus(E_{-}\otimes F_{-})$ | Fixed part of the product |
 | $(E\otimes F)^{-} = (E_{+}\otimes F_{-})\oplus(E_{-}\otimes F_{+})$ | Negated part of the product |
 | $\tau(x \otimes y) = y \otimes x$ | Flip |
-| $\mathrm{Sym}^{2}(E)$, $\Lambda^{2}(E)$ | Symmetric and antisymmetric parts, $\ker(\tau \mp \mathrm{id})$ |
+| $\mathrm{sym}^{2}(E)$, $\Lambda^{2}(E)$ | Symmetric and antisymmetric parts, $\ker(\tau \mp \mathrm{id})$ |
 | $E \widehat{\otimes}_\pi F$, $E \widehat{\otimes}_\varepsilon F$ | Projective and injective completions |
 
 ## Further Reading

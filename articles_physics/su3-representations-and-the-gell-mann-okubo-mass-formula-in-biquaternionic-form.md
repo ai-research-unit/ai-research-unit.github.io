@@ -101,7 +101,7 @@ For example $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=N(0,3)=10$, $N(2,2)=27$, $N(0,6)=N(6
 The eightfold way's octets sit on the adjoint representation $(1,1)$. On the subgroup $\mathrm{SU}(2)\subset\mathrm{SU}(3)$ the adjoint representation is reducible, and its reduction is
 
 $$
-\mathrm{Sym}_0^{(1,1)} = \Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0,
+\mathrm{sym}_0^{(1,1)} = \Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0,
 $$
 
 where $\Phi_3$ is an isospin **triplet**, $\Phi_2$ and $\Phi_2^*$ are a **doublet** and its conjugate, and $\Phi_0$ is a **singlet**: dimensions $3+2+2+1=8$. The baryon octet $F_{1/2}$ therefore reduces to
@@ -220,7 +220,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 - The degree formula $N(n,m)=\frac12(n+1)(m+1)(n+m+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$.
 - The admissibility condition $n-m\equiv0\pmod3$ and the resulting degree list $1,8,10,27,28,35,\dots$; consistent with the table.
-- The octet reduction $\mathrm{Sym}_0^{(1,1)}=\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, dimensions $3+2+2+1=8$.
+- The octet reduction $\mathrm{sym}_0^{(1,1)}=\Phi_3\oplus\Phi_2\oplus\Phi_2^*\oplus\Phi_0$, dimensions $3+2+2+1=8$.
 - The Gell-Mann–Okubo relation $m_\Xi+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $2270.1$ MeV, a $0.58\%$ discrepancy.
 
 **Transcribed, not derived.**

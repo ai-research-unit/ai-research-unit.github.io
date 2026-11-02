@@ -123,7 +123,7 @@ Then $r_{\tilde Q_3}$ is an isometry of the general plain sesquilinear form, but
 
 The three pin-and-spin articles of the corpus read the same question on three forms, and the answers differ on every row.
 
-| | Plain bilinear (GPA) | Quaternionic bilinear (GQA) | Plain sesquilinear (GPS) |
+| | Plain bilinear (gpa) | Quaternionic bilinear (gqa) | Plain sesquilinear (gps) |
 |---|---|---|---|
 | Form | $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, symmetric bilinear | $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, symmetric bilinear | $\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_4)$, Hermitian positive definite |
 | Isometry condition of $\Theta$ | vacuous (every unit) | $\langle\tilde Q\rangle_{\natural}=\pm1$ | $\tilde Q^{*}\tilde Q=e_{t}$ |

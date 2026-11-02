@@ -203,7 +203,7 @@ $\overline{\vec Q_2}=\vec Q_2$, so $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1
 For $\tilde Q_1=e_t$, $\tilde Q_2=ie_t$ one has $\langle\cdot,\cdot\rangle_{\natural}=i$ and $H=1\cdot\overline{i}= -i$, which differ.
 
 **Remark (the collapse with the other central operation on the real part).** The coincidence is the form-level
-statement that $\mathrm{SQA}=\mathrm{SPS}$ on the real part, which is one of the two collapses of the twelve
+statement that $\mathrm{sqa}=\mathrm{sps}$ on the real part, which is one of the two collapses of the twelve
 to ten recorded in *Symmetric and Antisymmetric Decomposition of the Four General Products*. The symmetric part
 of the plain sesquilinear product has the coefficient $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$,
 which is $\langle\cdot,\cdot\rangle_{\natural}$ precisely when the coefficients are real; over $\mathbb{C}$ the two operations differ, and
@@ -225,7 +225,7 @@ and the trace of a left multiplication is the scalar part, $\operatorname{Tr}(L^
 form is **not** invariant under the product, the two sides of $\langle\tilde Q_1\star\tilde Q_2,\tilde Q_3\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\star\tilde Q_3\rangle_{\natural}$
 being $1$ and $0$ at $\vec e_x,\vec e_x,e_t$, which is the form-theoretic face of the failure of the Jordan identity.
 On the real elements the form coincides with the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, which is the form-level statement of the
-collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
+collapse $\mathrm{sqa}=\mathrm{sps}$ on the real part.
 
 ## Summary of Notation
 

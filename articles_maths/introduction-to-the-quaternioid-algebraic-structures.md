@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The real quaternions $\mathbb{H}$ are a division algebra, and that algebra is the subject of the *Quaternions* category, entered at *Introduction to the Quaternion Algebra*. This category treats another question about the same carrier. Beyond the algebra product $\tilde q_1\tilde q_2$ the space $\mathbb{R}^4$ carries the products built from it and from the conjugation: the symmetrisation $\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$, the antisymmetrisation $\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)$, and the product $\tilde q_1^{\natural}\tilde q_2$ with the conjugation read in the first slot. Their algebras are the **symmetric plain algebra** ($\mathrm{SPA}$), the **antisymmetric plain algebra** ($\mathrm{APA}$) and the **general quaternionic algebra** ($\mathrm{GQA}$). These three are the structures of the category, and the articles below read their basic properties, their element theory and their operators.
+The real quaternions $\mathbb{H}$ are a division algebra, and that algebra is the subject of the *Quaternions* category, entered at *Introduction to the Quaternion Algebra*. This category treats another question about the same carrier. Beyond the algebra product $\tilde q_1\tilde q_2$ the space $\mathbb{R}^4$ carries the products built from it and from the conjugation: the symmetrisation $\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$, the antisymmetrisation $\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)$, and the product $\tilde q_1^{\natural}\tilde q_2$ with the conjugation read in the first slot. Their algebras are the **symmetric plain algebra** ($\mathrm{spa}$), the **antisymmetric plain algebra** ($\mathrm{apa}$) and the **general quaternionic algebra** ($\mathrm{gqa}$). These three are the structures of the category, and the articles below read their basic properties, their element theory and their operators.
 
 ## Conventions
 
@@ -40,9 +40,9 @@ $$
 
 | Structure | Product | Nature |
 |---|---|---|
-| symmetric plain algebra (SPA) | $\tilde q_1\bullet\tilde q_2$ | commutative Jordan algebra, unital, not associative |
-| antisymmetric plain algebra (APA) | $\tilde q_1\wedge\tilde q_2$ | alternating Lie algebra, no unit |
-| general quaternionic algebra (GQA) | $\tilde q_1^{\natural}\tilde q_2$ | left-unital, non-associative |
+| symmetric plain algebra (spa) | $\tilde q_1\bullet\tilde q_2$ | commutative Jordan algebra, unital, not associative |
+| antisymmetric plain algebra (apa) | $\tilde q_1\wedge\tilde q_2$ | alternating Lie algebra, no unit |
+| general quaternionic algebra (gqa) | $\tilde q_1^{\natural}\tilde q_2$ | left-unital, non-associative |
 
 **Theorem (the laws).** The antisymmetric plain algebra is the only one of the three that satisfies the Jacobi identity, and it is a Lie algebra; the symmetric plain algebra is commutative and satisfies the Jordan identity but not associativity; the general quaternionic algebra has the left unit $e_t$ alone and satisfies neither associativity nor the Jordan identity. Only the general quaternionic structure is free of zero divisors: the symmetric plain product vanishes at two anticommuting pure quaternions, such as $\vec e_x$ and $\vec e_y$, and the antisymmetric product vanishes at every element against itself.
 
@@ -74,9 +74,9 @@ The companion products carry two forms, $\langle\cdot,\cdot\rangle$ of signature
 
 | Structure | Product | Form | Algebraic norm |
 |---|---|---|---|
-| SPA | $\tilde q_1\bullet\tilde q_2$ | $\langle\tilde q_1,\tilde q_2\rangle = q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ | $\langle\tilde q\rangle = q_t^2-\lvert\vec q\rvert^2$, indefinite |
-| APA | $\tilde q_1\wedge\tilde q_2$ | vanishing (antisymmetric) | vanishing |
-| GQA | $\tilde q_1^{\natural}\tilde q_2$ | $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = q_{1t}q_{2t}+(\vec q_1,\vec q_2)$ | $\langle\tilde q\rangle_{\natural} = q_t^2+\lvert\vec q\rvert^2$, definite |
+| spa | $\tilde q_1\bullet\tilde q_2$ | $\langle\tilde q_1,\tilde q_2\rangle = q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ | $\langle\tilde q\rangle = q_t^2-\lvert\vec q\rvert^2$, indefinite |
+| apa | $\tilde q_1\wedge\tilde q_2$ | vanishing (antisymmetric) | vanishing |
+| gqa | $\tilde q_1^{\natural}\tilde q_2$ | $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = q_{1t}q_{2t}+(\vec q_1,\vec q_2)$ | $\langle\tilde q\rangle_{\natural} = q_t^2+\lvert\vec q\rvert^2$, definite |
 
 ## Summary of Notation
 
@@ -86,7 +86,7 @@ The companion products carry two forms, $\langle\cdot,\cdot\rangle$ of signature
 | $\tilde q^{\natural}$ | quaternion conjugation, $\vec e_k^{\natural} = -\vec e_k$ |
 | $\tilde q_1\tilde q_2$ | the algebra product, of the *Quaternions* category |
 | $\tilde q_1\bullet\tilde q_2$, $\tilde q_1\wedge\tilde q_2$, $\tilde q_1^{\natural}\tilde q_2$ | the three companion products |
-| SPA, APA, GQA | the three structures |
+| spa, apa, gqa | the three structures |
 | $\langle\tilde q_1,\tilde q_2\rangle$, $\langle\tilde q_1,\tilde q_2\rangle_{\natural}$ | the plain form and the quaternion form |
 | $\langle\tilde q\rangle$, $\langle\tilde q\rangle_{\natural}$ | the plain and quaternion algebraic norms |
 | $\operatorname{diag}(1,-1,-1,-1)$, $\mathrm I_4$ | Gram matrices of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ |

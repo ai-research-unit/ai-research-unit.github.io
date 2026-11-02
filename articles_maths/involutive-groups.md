@@ -30,7 +30,7 @@ An involution of $G$ is exactly an isomorphism $G \to G^{\mathrm{opp}}$ of order
 
 ### Anti-automorphisms and Automorphisms
 
-**Proposition.** The composition of two anti-automorphisms is an automorphism, and the composition of an automorphism with an anti-automorphism is an anti-automorphism. Hence $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$ is a subgroup of $\operatorname{Sym}(G)$, written $\operatorname{Aut}^*(G)$, in which $\operatorname{Aut}(G)$ has index two and $\operatorname{Anti}(G)$ is a coset.
+**Proposition.** The composition of two anti-automorphisms is an automorphism, and the composition of an automorphism with an anti-automorphism is an anti-automorphism. Hence $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$ is a subgroup of $\operatorname{sym}(G)$, written $\operatorname{Aut}^*(G)$, in which $\operatorname{Aut}(G)$ has index two and $\operatorname{Anti}(G)$ is a coset.
 
 **Proof.** If $\sigma, \tau$ are anti-automorphisms then $\sigma\tau(ab) = \sigma(\tau(b)\tau(a)) = \sigma(\tau(a))\sigma(\tau(b)) = \sigma\tau(a)\,\sigma\tau(b)$, so $\sigma\tau \in \operatorname{Aut}(G)$; the remaining statements are the same computation in the other two orders. The set is closed under composition, contains $\mathrm{id}$, and is a subset of the bijections of $G$; each element is invertible with inverse of the same kind, so it is a subgroup.
 
@@ -304,7 +304,7 @@ An involution of a group is an anti-automorphism of order two. Every group has t
 | $\iota$ | the inversion $\iota(g) = g^{-1}$, the canonical involution of every group |
 | $G^{\mathrm{opp}}$ | the opposite group, with $a \cdot^{\mathrm{opp}} b = ba$ |
 | $\operatorname{Anti}(G)$ | the set of anti-automorphisms of $G$; a coset of $\operatorname{Aut}(G)$ in $\operatorname{Aut}^*(G)$ |
-| $\operatorname{Aut}^*(G)$ | $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$, a subgroup of $\operatorname{Sym}(G)$ |
+| $\operatorname{Aut}^*(G)$ | $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$, a subgroup of $\operatorname{sym}(G)$ |
 | $\alpha = \sigma\iota$ | the involutive automorphism associated with $\sigma$ |
 | $G^\sigma$ | the fixed set $\{g : \sigma(g) = g\}$ |
 | $I(\sigma)$ | the inverted set $\{g : \sigma(g) = g^{-1}\} = G^{\sigma\iota}$ |

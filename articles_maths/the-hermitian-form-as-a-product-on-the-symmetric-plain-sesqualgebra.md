@@ -131,7 +131,7 @@ the quaternion form of the symmetric quaternionic block; off the real subspace t
 
 *Proof.* For real coordinates $\overline{Q_{2,\mu}} = Q_{2,\mu}$, so $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_\mu Q_{1,\mu} Q_{2,\mu} = Q_{1t}Q_{2t} + (\vec Q_1,\vec Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; the form $\langle\cdot,\cdot\rangle_{\natural}$ is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*. For $\tilde Q_1 = \tilde Q_2 = ie_t$ one has $H = 1$ and $N = -1$, so the two differ off the real subspace.
 
-**Corollary (the shared real part).** The two central blocks, the symmetric quaternionic and the symmetric plain sesquilinear, agree on the real elements and differ on the imaginary ones; in the table of the twelve the coincidence is recorded as $\mathrm{SQA} = \mathrm{SPS}$ on the real part. The bridge is the visible form of the two forms being the real and the complex reading of one pairing, the bilinear $\langle\cdot,\cdot\rangle_{\natural}$ and the sesquilinear $\langle\cdot,\cdot\rangle_{*}$.
+**Corollary (the shared real part).** The two central blocks, the symmetric quaternionic and the symmetric plain sesquilinear, agree on the real elements and differ on the imaginary ones; in the table of the twelve the coincidence is recorded as $\mathrm{sqa} = \mathrm{sps}$ on the real part. The bridge is the visible form of the two forms being the real and the complex reading of one pairing, the bilinear $\langle\cdot,\cdot\rangle_{\natural}$ and the sesquilinear $\langle\cdot,\cdot\rangle_{*}$.
 
 ## Worked Examples
 
@@ -170,5 +170,5 @@ The symmetric plain sesqualgebra is the Hermitian form $\langle\tilde Q_1,\tilde
 - [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the module-theoretic reading of the same form.
 - [The Trace Form and the Invariance of the Symmetric Plain Algebra](the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra.html), the sibling whose trace form is invariant, for the comparison.
 - [The Quaternion Form as a Product on the Symmetric Quaternionic Algebra](the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural}$ and the bridge.
-- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four forms of the space and the coincidence $\mathrm{SQA} = \mathrm{SPS}$ on the real part.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four forms of the space and the coincidence $\mathrm{sqa} = \mathrm{sps}$ on the real part.
 - [Remarkable Subspaces under the Symmetric Plain Sesqualgebra](remarkable-subspaces-under-the-symmetric-plain-sesqualgebra.html), for the remarkable subspaces under the product.

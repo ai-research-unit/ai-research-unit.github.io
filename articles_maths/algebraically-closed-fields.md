@@ -42,7 +42,7 @@ This article defines algebraically closed fields, records their elementary prope
 
 **(c)** $K$ is the unique algebraic extension of itself, and every finite extension of $K$ is trivial.
 
-**(d)** $K$ has no nontrivial Galois extension, so $\operatorname{Gal}(\overline{K}/K) = 1$ for an algebraic closure $\overline{K}$ of $K$.
+**(d)** $K$ has no nontrivial Galois extension, so $\operatorname{gal}(\overline{K}/K) = 1$ for an algebraic closure $\overline{K}$ of $K$.
 
 **(e)** Every field homomorphism of $K$ into an algebraically closed field $L$ extends to an embedding of any algebraic extension of $K$ into $L$.
 
@@ -144,7 +144,7 @@ For a general field $F$ the same construction is carried out by transfinite recu
 
 **Corollary (classification by cardinality and degree).** Fix a characteristic. Since $\lvert K \rvert = \max\{\aleph_0, \operatorname{tr.deg}_k K\}$ for an algebraically closed field $K$ with prime field $k$, the isomorphism classes of algebraically closed fields of the given characteristic correspond exactly to the possible values of the transcendence degree $\kappa$: for $\kappa$ infinite, $\lvert K \rvert = \kappa$, so all algebraically closed fields of the given characteristic and of an uncountable cardinal $\lambda$ are isomorphic, and they all have $\operatorname{tr.deg} = \lambda$. For countable fields the transcendence degree can be any element of $\{0, 1, 2, \dots\} \cup \{\aleph_0\}$, so there are countably many isomorphism classes of countable algebraically closed fields of a fixed characteristic, one for each degree; the class of degree $0$ is $\overline{\mathbb{Q}}$ in characteristic $0$ and $\overline{\mathbb{F}_p}$ in characteristic $p$.
 
-**Remark (structure of the algebraic closure).** The algebraic closure $\overline{F}$ of a field $F$ has the same cardinality as $F$ when $F$ is infinite, and is countable when $F$ is finite; its transcendence degree over $F$ is $0$, and $\overline{F}$ is unique. The absolute Galois group $\operatorname{Gal}(\overline{F}/F)$, studied in *Ring and Field Automorphisms*, carries the arithmetic content that the isomorphism class of $\overline{F}$ alone does not see.
+**Remark (structure of the algebraic closure).** The algebraic closure $\overline{F}$ of a field $F$ has the same cardinality as $F$ when $F$ is infinite, and is countable when $F$ is finite; its transcendence degree over $F$ is $0$, and $\overline{F}$ is unique. The absolute Galois group $\operatorname{gal}(\overline{F}/F)$, studied in *Ring and Field Automorphisms*, carries the arithmetic content that the isomorphism class of $\overline{F}$ alone does not see.
 
 ---
 
@@ -203,7 +203,7 @@ $\mathbb{C}$ is algebraically closed, by the fundamental theorem of algebra; the
 | $\overline{\mathbb{F}_p}$ | Algebraic closure of $\mathbb{F}_p$ |
 | $\mathbb{C}(t)$, $\mathbb{F}_p(t)$ | Rational function fields |
 | $\operatorname{tr.deg}_F K$ | Transcendence degree of $K$ over $F$ |
-| $\operatorname{Gal}(L/K)$ | Galois group |
+| $\operatorname{gal}(L/K)$ | Galois group |
 | $F(i)$ | Quadratic extension by a square root of $-1$ |
 | $\mathrm{ACF}_0$, $\mathrm{ACF}_p$ | First-order theory of algebraically closed fields of the given characteristic |
 | $K[x]$ | Polynomial ring in one variable |

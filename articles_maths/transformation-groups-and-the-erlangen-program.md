@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article stands in *Geometry and Manifolds*, immediately after *Homogeneous Spaces*, and it introduces Klein's principle: a geometry is the study of the invariants of a transformation group. The two ingredients are Part II objects and are already available. The homogeneous space $G/H$ belongs to *Homogeneous Spaces*, above, and is cited rather than reintroduced; the Lie group $G$ and its closed subgroups belong to *Lie Groups*, above; and the hierarchy of symmetry groups, $\operatorname{Sym}(X)$ and $\operatorname{Aut}(X)$ and the automorphism groups of structures on $X$, belongs to Part I, in *Transformation Groups*, and is likewise cited. What this article adds is the principle that organises the classical geometries: the passage from a group to the geometry of its invariants, and the pair $(G,H)$ whose coset space is the space of the geometry.
+This article stands in *Geometry and Manifolds*, immediately after *Homogeneous Spaces*, and it introduces Klein's principle: a geometry is the study of the invariants of a transformation group. The two ingredients are Part II objects and are already available. The homogeneous space $G/H$ belongs to *Homogeneous Spaces*, above, and is cited rather than reintroduced; the Lie group $G$ and its closed subgroups belong to *Lie Groups*, above; and the hierarchy of symmetry groups, $\operatorname{sym}(X)$ and $\operatorname{Aut}(X)$ and the automorphism groups of structures on $X$, belongs to Part I, in *Transformation Groups*, and is likewise cited. What this article adds is the principle that organises the classical geometries: the passage from a group to the geometry of its invariants, and the pair $(G,H)$ whose coset space is the space of the geometry.
 
 It does not construct $G/H$ again, and it does not develop the structure theory of Lie groups; it reads the classical geometries through the pairs that define them, states the correspondence between a geometry and its automorphism group, and records the limits of the principle. The geometries of constant curvature, and the sphere and the hyperbolic space that carry them, are *Euclidean Geometry*, *Spherical Geometry* and *Hyperbolic Geometry*, earlier in this category.
 
@@ -34,7 +34,7 @@ has kernel the largest normal subgroup of $G$ contained in $H$. In particular th
 **Remark.** The principle supplies a map in the other direction as well. Given a space $X$ with a notion of structure, the geometry of $X$ is studied through the group $\operatorname{Aut}(X)$ of the transformations preserving the structure, and the hierarchy
 
 $$
-\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots
+\operatorname{sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots
 $$
 
 of Part I, in *Transformation Groups*, records the specialisations: a set has only the symmetric group, a space with more structure has the smaller group that preserves it, and the Klein geometries are the case in which the group acts transitively and the structure is recovered from the pair.
@@ -93,7 +93,7 @@ A Klein geometry is a pair $(G,H)$, with $G$ a Lie group and $H$ a closed subgro
 | $H$ | A closed subgroup, the isotropy subgroup of a Klein geometry |
 | $G/H$ | The homogeneous space of *Homogeneous Spaces*, the space of the geometry |
 | Klein geometry | The pair $(G,H)$ together with $G/H$; two words, never hyphenated |
-| $\operatorname{Sym}(X)$, $\operatorname{Aut}(X)$ | The symmetry and automorphism groups of a structure, as in Part I's *Transformation Groups* |
+| $\operatorname{sym}(X)$, $\operatorname{Aut}(X)$ | The symmetry and automorphism groups of a structure, as in Part I's *Transformation Groups* |
 | $N_G(H)/H$ | The automorphisms of the Klein geometry commuting with $G$ |
 | $E(n) = \mathbb{R}^n \rtimes O(n)$ | The Euclidean group |
 | $O(n+1)$, $O(n,1)$, $PGL(n+1,\mathbb{R})$, $PSL(2,\mathbb{C})$ | The groups of the spherical, hyperbolic, projective and Möbius geometries |

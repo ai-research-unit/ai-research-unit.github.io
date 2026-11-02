@@ -66,7 +66,7 @@ $$
 
 ## Divisors and Linear Systems
 
-**Definition.** A **divisor** on a nonsingular projective curve $C$ over $K$ is a finite formal sum $D = \sum_{P} n_P P$ of points of $\bar C$ with integral coefficients, invariant under $\operatorname{Gal}(\bar K/K)$, and the **degree** is $\deg D = \sum n_P[K(P):K]$, the sum of the coefficients weighted by the degree of the point. The **principal divisor** of a rational function $f \in K(C)^\times$ is
+**Definition.** A **divisor** on a nonsingular projective curve $C$ over $K$ is a finite formal sum $D = \sum_{P} n_P P$ of points of $\bar C$ with integral coefficients, invariant under $\operatorname{gal}(\bar K/K)$, and the **degree** is $\deg D = \sum n_P[K(P):K]$, the sum of the coefficients weighted by the degree of the point. The **principal divisor** of a rational function $f \in K(C)^\times$ is
 
 $$
 \operatorname{div}(f) = \sum_P v_P(f) P,

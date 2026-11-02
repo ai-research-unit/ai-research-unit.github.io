@@ -93,10 +93,10 @@ $$
 
 which is symmetric and positive semidefinite, and is the natural metric of the family. When the family is obtained by measuring a state that depends on the parameter, the information measures how much the measurement reveals about the parameter.
 
-The **Cramér–Rao bound** is the statement that an unbiased estimator $\theta_{\mathrm{est}}$ built from $m$ independent samples has variance bounded by the reciprocal of the information,
+The **Cramér–Rao bound** is the statement that an unbiased estimator $\theta^{\mathrm{est}}$ built from $m$ independent samples has variance bounded by the reciprocal of the information,
 
 $$
-\mathrm{Var}\!\left(\theta_{\mathrm{est}}\right) \ge \frac{1}{m\,F(\theta)} .
+\mathrm{Var}\!\left(\theta^{\mathrm{est}}\right) \ge \frac{1}{m\,F(\theta)} .
 $$
 
 A large Fisher information means a sharply determined parameter; a divergent Fisher information means asymptotic exactness.

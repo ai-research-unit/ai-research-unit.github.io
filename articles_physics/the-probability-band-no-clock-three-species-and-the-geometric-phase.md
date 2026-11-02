@@ -494,7 +494,7 @@ The three grades of coefficient reality are the complex, central and real specie
 ## Further Reading
 
 - [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the place of the band among the four products.
-- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the GPS and GQA structures, their products, their roots and their nilpotents.
+- [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the gps and gqa structures, their products, their roots and their nilpotents.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the trace-one slice.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the purity and the linear entropy.
 - [Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html), for the half-solid-angle rule.

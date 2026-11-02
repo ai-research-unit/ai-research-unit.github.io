@@ -68,9 +68,9 @@ $$
 
 | family | members | right law | left law |
 |---|---|---|---|
-| general | GPA, GQA, **GPS**, GQS | reversed, none, **forward**, none | forward, reversed, none, none |
-| symmetric | SPA, SQA, SPS, SQS | none | none |
-| antisymmetric | APA, AQA, APS, AQS | none | none |
+| general | gpa, gqa, **gps**, gqs | reversed, none, **forward**, none | forward, reversed, none, none |
+| symmetric | spa, sqa, sps, sqs | none | none |
+| antisymmetric | apa, aqa, aps, aqs | none | none |
 
 Only three of the twelve carry a one-sided law, each on one side: the plain product (forward on the left, reversed on the right), the general quaternionic product (reversed, on the left) and the block (forward, on the right). The block is the unique one whose law is on the right and in the forward order, and the reason is that its twist sits in the second slot alone and is an anti-automorphism: the conjugation reverses the order of the plain product, and that reversal, read on the right multiplications, undoes the reversal of the plain composition. In the nine others neither side closes, because a derived part mixes the two slots or because a product conjugates a slot. The left multiplications of the block close nowhere either, because the twist is in the slot a left multiplication reads: $L^{\star}_{\tilde Q}L^{\star}_{\tilde Q_2}=L_{\tilde Q}\eta L_{\tilde Q_2}\eta=L_{\tilde Q}R_{\tilde Q_2^{*}}$, a **mixed** operator of the two independent parameters $\tilde Q,\tilde Q_2$, a two-sided operator only in the diagonal case $\tilde Q_2=\lambda\tilde Q^{*}$ (*Mixed Inner Conjugation on the General Plain Sesqualgebra*).
 

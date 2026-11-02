@@ -77,7 +77,7 @@ $$
 \boxed{\;\varphi\bigl(\chi(x)\bigr) = \chi\bigl(\varphi(x)\bigr)\;},
 $$
 
-so $\varphi$ induces a permutation of the set $\operatorname{Cl}(G)$ of conjugacy classes, and the assignment $\operatorname{Aut}(G)\to\operatorname{Sym}(\operatorname{Cl}(G))$ is an action.
+so $\varphi$ induces a permutation of the set $\operatorname{Cl}(G)$ of conjugacy classes, and the assignment $\operatorname{Aut}(G)\to\operatorname{sym}(\operatorname{Cl}(G))$ is an action.
 
 **Proof.** For $g\in G$, $\varphi(gxg^{-1}) = \varphi(g)\varphi(x)\varphi(g)^{-1}$, so the image of the class of $x$ is the class of $\varphi(x)$. The assignment is compatible with composition and sends the identity to the identity, hence is an action in the sense of *Transformation Groups*.
 

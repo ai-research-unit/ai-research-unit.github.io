@@ -48,11 +48,11 @@ $$
 \lVert m\rVert = \sup\{\lvert \mathfrak{Q}(v)\rvert : \lVert v\rVert\le 1\},
 $$
 
-and the **operator norm** of a continuous bilinear form is $\lVert B\rVert = \sup\{\lvert B(x,y)\rvert : \lVert x\rVert\le1,\ \lVert y\rVert\le1\}$. The set of continuous quadratic forms on $V$ is written $\mathfrak{Q}(V)$ and the set of continuous symmetric bilinear forms $\operatorname{Sym}(V)$.
+and the **operator norm** of a continuous bilinear form is $\lVert B\rVert = \sup\{\lvert B(x,y)\rvert : \lVert x\rVert\le1,\ \lVert y\rVert\le1\}$. The set of continuous quadratic forms on $V$ is written $\mathfrak{Q}(V)$ and the set of continuous symmetric bilinear forms $\operatorname{sym}(V)$.
 
 These are the norms of *Normed and Banach Spaces*, read on the forms; the supremum is finite exactly when the form is bounded, and by *Bounded Operators on a Topological Vector Space* a quadratic form on a normed space is continuous if and only if it is bounded. The norm of a form is a topological datum, and no norm is imposed on the algebra: this article carries no length on the elements beyond the one that $V$ already had.
 
-**Theorem (polarisation is an isometric isomorphism).** Let $V$ be a normed space over $\mathbb{R}$. Recall that $B$ is the polar form of $m$ and $\mathfrak{Q}(x)=B(x,x)$. The map $m\mapsto B$ is a linear isomorphism $\mathfrak{Q}(V)\to\operatorname{Sym}(V)$ and
+**Theorem (polarisation is an isometric isomorphism).** Let $V$ be a normed space over $\mathbb{R}$. Recall that $B$ is the polar form of $m$ and $\mathfrak{Q}(x)=B(x,x)$. The map $m\mapsto B$ is a linear isomorphism $\mathfrak{Q}(V)\to\operatorname{sym}(V)$ and
 
 $$
 \boxed{\;\lVert m\rVert = \lVert B\rVert\;} .
@@ -72,9 +72,9 @@ $$
 
 using $\lVert u\pm v\rVert^{2}+\lVert u\mp v\rVert^{2}=2\lVert u\rVert^{2}+2\lVert v\rVert^{2}$. Taking the supremum over the unit ball gives $\lVert B\rVert\le\lVert m\rVert$.
 
-**Corollary (completeness).** The spaces $\mathfrak{Q}(V)$ and $\operatorname{Sym}(V)$ are isometric, and $\mathfrak{Q}(V)$ is complete when $V$ is a Banach space: a uniform limit of continuous quadratic forms is a quadratic form, the algebraic identities passing to the limit because the field is complete.
+**Corollary (completeness).** The spaces $\mathfrak{Q}(V)$ and $\operatorname{sym}(V)$ are isometric, and $\mathfrak{Q}(V)$ is complete when $V$ is a Banach space: a uniform limit of continuous quadratic forms is a quadratic form, the algebraic identities passing to the limit because the field is complete.
 
-*Proof.* The isometry is the theorem, so the two are complete together. A bounded bilinear form on a Banach space $V$ is a continuous bilinear map, and the space of continuous bilinear maps $V\times V\to\mathbb{R}$ is complete for the operator norm by *Bounded Operators on a Topological Vector Space*, §*The Space of Continuous Operators*; the symmetric ones form a closed subspace, so $\operatorname{Sym}(V)$ is complete, and so is $\mathfrak{Q}(V)$. A uniform limit of quadratic forms is quadratic because each of the three defining properties is a closed condition.
+*Proof.* The isometry is the theorem, so the two are complete together. A bounded bilinear form on a Banach space $V$ is a continuous bilinear map, and the space of continuous bilinear maps $V\times V\to\mathbb{R}$ is complete for the operator norm by *Bounded Operators on a Topological Vector Space*, §*The Space of Continuous Operators*; the symmetric ones form a closed subspace, so $\operatorname{sym}(V)$ is complete, and so is $\mathfrak{Q}(V)$. A uniform limit of quadratic forms is quadratic because each of the three defining properties is a closed condition.
 
 **Remark (the complex case).** Over $\mathbb{C}$ the same computation applies to symmetric complex bilinear forms and complex-valued quadratic forms, and the polarisation is again an isometry. What is **not** obtained this way is the positive definite Hermitian form, whose conjugate slot and positivity make it a sesquilinear object of the category *Topology on Sesqualgebras with a degree-2 form*; over $\mathbb{C}$ the quadratic form $\mathfrak{Q}(v)=\lVert v\rVert^{2}$ is not a complex quadratic form in the present sense, and the norm is owned by *Topology on Linear Spaces*. The two layers are distinguished by the slot, exactly as *Topology on Sesqualgebras* distinguishes the two products.
 
@@ -84,11 +84,11 @@ using $\lVert u\pm v\rVert^{2}+\lVert u\mp v\rVert^{2}=2\lVert u\rVert^{2}+2\lVe
 
 *Proof.* The first statement is the definition of the uniform norm as a uniform convergence on the unit ball, and the second follows from the first by fixing $v$. For the last clause, positivity and definiteness are inequalities with a strict reversal of sign and are not given by linear conditions; whether they are closed or open is studied below, and the answer depends on the dimension.
 
-**Theorem (the non-degenerate forms and the signature).** Let $V=\mathbb{R}^{n}$ with its Euclidean topology, let $\operatorname{Sym}_{n}(\mathbb{R})$ be the space of symmetric matrices with the operator norm, and let $m$ be the quadratic form of the symmetric matrix $G$. Then the set of non-degenerate forms is open, and the signature is locally constant on it. Consequently the forms of a given signature form an open set, and the number of signatures is the number of connected components of the open set of non-degenerate forms.
+**Theorem (the non-degenerate forms and the signature).** Let $V=\mathbb{R}^{n}$ with its Euclidean topology, let $\operatorname{sym}_{n}(\mathbb{R})$ be the space of symmetric matrices with the operator norm, and let $m$ be the quadratic form of the symmetric matrix $G$. Then the set of non-degenerate forms is open, and the signature is locally constant on it. Consequently the forms of a given signature form an open set, and the number of signatures is the number of connected components of the open set of non-degenerate forms.
 
 *Proof.* The determinant $\det G$ is a polynomial, hence continuous, in the entries, so the set $\{\det G\neq0\}$ is open and its complement, the singular forms, is closed. On that open set the eigenvalues of $G$, which depend continuously on $G$ by *The Spectra of Self-Adjoint Operators of the Form*, never vanish, so each eigenvalue has a constant sign in a neighbourhood, and the signature $(n,m,n-n-m)$ is therefore locally constant. A locally constant integer-valued function on the open set is constant on each connected component, and different signatures define disjoint open sets.
 
-**Corollary (the definite forms).** The positive definite forms are one of those components, open in $\operatorname{Sym}_{n}(\mathbb{R})$, and the negative definite forms another; a form on the boundary of the positive cone has a zero eigenvalue and is degenerate.
+**Corollary (the definite forms).** The positive definite forms are one of those components, open in $\operatorname{sym}_{n}(\mathbb{R})$, and the negative definite forms another; a form on the boundary of the positive cone has a zero eigenvalue and is degenerate.
 
 *Proof.* Positive definiteness is the signature $(n,0,0)$, which is locally constant by the theorem, so it is open; the same for the negative signature. A form with a zero eigenvalue is degenerate by the criterion of the radical in the diagonal basis, and lies in the closed complement of the open set of non-degenerate forms.
 
@@ -120,7 +120,7 @@ The corollary is the topological form of Sylvester's law of inertia: the classif
 
 A **continuous quadratic form** on a topological module is a quadratic form in the algebraic sense that is also a continuous map; its polar form is then continuous, by the polarisation identity, so the quadratic form is the primitive datum of the layer and the symmetric bilinear form its derived one. The **radical** is closed when the base and the module are Hausdorff, and it is a subspace of $V$, not to be confused with the closure of zero of the Clifford algebra, which is an ideal; the radical controls the nilpotent factor of the algebra and the reduction to the non-degenerate case.
 
-Over a normed space the **uniform norm** of a quadratic form and the **operator norm** of its polar form are the same number, so polarisation is an isometric isomorphism $\mathfrak{Q}(V)\to\operatorname{Sym}(V)$; both spaces are complete when $V$ is a Banach space and the base is complete, and the evaluation is continuous. The **non-degenerate forms** on $\mathbb{R}^{n}$ are open, the **signature** is locally constant there, and the definite forms are the signature $(n,0,0)$ and $(0,n,0)$ components of that open set; the classification of Sylvester is therefore a partition into finitely many open and closed pieces, and no continuous path changes the signature.
+Over a normed space the **uniform norm** of a quadratic form and the **operator norm** of its polar form are the same number, so polarisation is an isometric isomorphism $\mathfrak{Q}(V)\to\operatorname{sym}(V)$; both spaces are complete when $V$ is a Banach space and the base is complete, and the evaluation is continuous. The **non-degenerate forms** on $\mathbb{R}^{n}$ are open, the **signature** is locally constant there, and the definite forms are the signature $(n,0,0)$ and $(0,n,0)$ components of that open set; the classification of Sylvester is therefore a partition into finitely many open and closed pieces, and no continuous path changes the signature.
 
 An **isometry** is a linear map preserving $m$, and preserving $m$ is equivalent to preserving the polar form; in finite dimension every linear map is continuous and the algebraic isometry group is the whole story, while in infinite dimension the continuous isometries are a closed subgroup of the space of continuous linear maps and are the object of *The Topological Orthogonal Group and the Spin Group*. The Hermitian form of a complex base with a conjugate slot is a different object, sesquilinear and owned by *Topology on Sesqualgebras with a degree-2 form*, and the positive norm itself is owned by *Topology on Linear Spaces*.
 
@@ -133,7 +133,7 @@ An **isometry** is a linear map preserving $m$, and preserving $m$ is equivalent
 | $m$ | a continuous quadratic form, $\mathfrak{Q}(\lambda v)=\lambda^{2}q(v)$ |
 | $B(x,y)=\tfrac12(\mathfrak{Q}(x+y)-\mathfrak{Q}(x)-\mathfrak{Q}(y))$ | the polar form, continuous, symmetric, with $\mathfrak{Q}(x)=B(x,x)$ |
 | $\operatorname{rad}(m)$ | the radical, closed in a Hausdorff module |
-| $\mathfrak{Q}(V)$, $\operatorname{Sym}(V)$ | the continuous quadratic forms and continuous symmetric bilinear forms |
+| $\mathfrak{Q}(V)$, $\operatorname{sym}(V)$ | the continuous quadratic forms and continuous symmetric bilinear forms |
 | $\lVert m\rVert$, $\lVert B\rVert$ | the uniform norm and the operator norm, with $\lVert m\rVert=\lVert B\rVert$ |
 | $m\mapsto B$ | the isometric isomorphism of polarisation |
 | $\mathrm{O}(V,\mathfrak{Q})$, $\mathrm{SO}(V,\mathfrak{Q})$ | the isometry group and its determinant-one part |

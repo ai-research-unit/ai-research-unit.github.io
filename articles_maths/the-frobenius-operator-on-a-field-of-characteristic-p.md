@@ -74,9 +74,9 @@ $$
 
 ### The finite case and the Galois group
 
-**Theorem (the Frobenius generates $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)$).** For the finite field $\mathbb{F}_{p^n}$, the Frobenius operator $\varphi$ is an automorphism of order $n$, and
+**Theorem (the Frobenius generates $\operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)$).** For the finite field $\mathbb{F}_{p^n}$, the Frobenius operator $\varphi$ is an automorphism of order $n$, and
 $$
-\boxed{\;\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n\;} .
+\boxed{\;\operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n\;} .
 $$
 Its fixed field is $\mathbb{F}_p$, and $\varphi^n = \mathrm{id}$ on $\mathbb{F}_{p^n}$.
 
@@ -102,7 +102,7 @@ Hence $F^p \subseteq F^{D}$ for every derivation $D$, and if $F$ is perfect ever
 
 In a field $F$ of characteristic $p$ the Frobenius operator $\varphi(x) = x^p$ is multiplicative and, because the binomial coefficients $\binom{p}{k}$ vanish modulo $p$, additive; it is therefore a unital ring endomorphism of $F$, the freshman's dream $(x+y)^p = x^p+y^p$ being the additivity. In characteristic $0$ the coefficients do not vanish, the expansion does not collapse, and the power map is not additive: this is the failure that distinguishes the two characteristics. In a noncommutative ring of characteristic $p$ the map is a homomorphism only on commuting elements, and the fields of the article are commutative.
 
-The Frobenius is injective with image the subfield $F^p$; it is an automorphism exactly when $F$ is perfect, and otherwise it is a bijection onto the proper subfield $F^p$ with $F/F^p$ purely inseparable. Its fixed field is the prime field $\mathbb{F}_p$, the roots of $X^p - X$. On the finite field $\mathbb{F}_{p^n}$ it is an automorphism of order $n$ generating $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n$. Every derivation of $F$ annihilates $F^p$, so on a perfect field there are no nonzero derivations; the Frobenius and the derivations are the two characteristic-$p$ operators, and the image of the one is the zero set of the other.
+The Frobenius is injective with image the subfield $F^p$; it is an automorphism exactly when $F$ is perfect, and otherwise it is a bijection onto the proper subfield $F^p$ with $F/F^p$ purely inseparable. Its fixed field is the prime field $\mathbb{F}_p$, the roots of $X^p - X$. On the finite field $\mathbb{F}_{p^n}$ it is an automorphism of order $n$ generating $\operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n$. Every derivation of $F$ annihilates $F^p$, so on a perfect field there are no nonzero derivations; the Frobenius and the derivations are the two characteristic-$p$ operators, and the image of the one is the zero set of the other.
 
 ## Summary of Notation
 
@@ -117,7 +117,7 @@ The Frobenius is injective with image the subfield $F^p$; it is an automorphism 
 | $F = F^p$ | Perfect field; $\varphi$ is an automorphism |
 | $[\mathbb{F}_p(t) : \mathbb{F}_p(t^p)] = p$ | The standard imperfect example |
 | $F^\varphi = \mathbb{F}_p$ | Fixed field of $\varphi$ |
-| $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle\varphi\rangle \cong \mathbb{Z}/n$ | Finite-field Galois group |
+| $\operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle\varphi\rangle \cong \mathbb{Z}/n$ | Finite-field Galois group |
 | $D(x^p) = 0$, $F^p \subseteq F^D$ | Derivations kill the Frobenius image |
 | $\partial/\partial t$ on $\mathbb{F}_p(t)$ | Nonzero derivation, zero on $F^p$ |
 

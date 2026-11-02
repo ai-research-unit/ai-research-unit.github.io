@@ -73,7 +73,7 @@ $$
 
 **Corollary (the orbit types).**
 
-- The **semisimple orbits** are the conjugacy classes of diagonalizable matrices; they are parameterized by the eigenvalue multiset, an element of $\operatorname{Sym}^6(\mathbb{C})$.
+- The **semisimple orbits** are the conjugacy classes of diagonalizable matrices; they are parameterized by the eigenvalue multiset, an element of $\operatorname{sym}^6(\mathbb{C})$.
 - The **nilpotent orbits** are the conjugacy classes of nilpotent matrices; they are parameterized by the partitions of $6$.
 - A general orbit is the product of a semisimple orbit and a nilpotent orbit in each generalized eigenspace.
 

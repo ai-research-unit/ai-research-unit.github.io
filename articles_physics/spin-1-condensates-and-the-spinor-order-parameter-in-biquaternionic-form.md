@@ -246,7 +246,7 @@ The division of labour in the preceding sections can be tabulated.
 
 | Ingredient of the spin-one condensate | Status in the framework |
 |---|---|
-| Three-component spinor, unit normalisation | vector in $\mathrm{Sym}^2V$; the triplet of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
+| Three-component spinor, unit normalisation | vector in $\mathrm{sym}^2V$; the triplet of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
 | Spin-one operators, $\vec F^2=2I$ | restrictions of $\tilde S_k^{(1)}+\tilde S_k^{(2)}$ |
 | Phase symmetry $\mathrm{U}(1)$ | multiplication by the centre $\exp(i\alpha)e_t$ of $\mathbb{B}$ |
 | Spin symmetry $SU(2)$ | the adjoint action on the triplet |
@@ -263,7 +263,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 
 ## Summary
 
-- The order parameter of a spin-one condensate is a unit spinor $\vec\zeta\in\mathbb{C}^3$ carrying the three spin projections, invariant under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; in the framework it is a vector in the symmetric square $\mathrm{Sym}^2V$ of the defining module, realised as the triplet sector of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ selected by $\tilde\Pi_{\mathrm{sym}}$, with components $(c_{\uparrow\uparrow},\sqrt2c_{\uparrow\downarrow},c_{\downarrow\downarrow})$.
+- The order parameter of a spin-one condensate is a unit spinor $\vec\zeta\in\mathbb{C}^3$ carrying the three spin projections, invariant under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; in the framework it is a vector in the symmetric square $\mathrm{sym}^2V$ of the defining module, realised as the triplet sector of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ selected by $\tilde\Pi_{\mathrm{sym}}$, with components $(c_{\uparrow\uparrow},\sqrt2c_{\uparrow\downarrow},c_{\downarrow\downarrow})$.
 - The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $\exp(i\alpha)e_t$, and the spin rotation is the adjoint action on the triplet.
 - The standard mean-field energy is a function of the spinor only through the three invariants $\lvert\langle\vec F\rangle\rvert^2$, $\langle F_z\rangle$ and $\langle F_z^2\rangle$. In the framework these are the rank-one tensor expectation, the quadratic $F_z^2$ expectation, and the $z$-component of the magnetic order; the alignment was verified to be $\langle F_z^2\rangle=\tfrac23+n_3/\sqrt3-n_8/3$ on random pure states, and the magnetic order components are $s_1=\sqrt{2/3}(n_1+n_6)$, $s_2=\sqrt{2/3}(n_2+n_7)$, $s_3=n_3/\sqrt3+n_8$.
 - The nematic (quadrupolar) order parameter is the traceless symmetric tensor $\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac23\delta_{ij}$; for the polar state along $\vec u$ it is $\tfrac13\delta_{ij}-\vec u_i\vec u_j$, invariant under $\vec u\to-\vec u$. The polar state $\vec\zeta=(0,1,0)^T$ has $\langle\vec F\rangle=0$ and $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$, both verified.

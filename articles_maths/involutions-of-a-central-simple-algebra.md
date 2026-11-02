@@ -11,14 +11,14 @@ This article treats the kind, the two types of the first kind, the reduction of 
 
 **Definition.** An involution $\sigma$ of $A$ is of the **first kind** when $\sigma(z) = z$ for every $z \in Z(A) = F$, and of the **second kind** when its restriction to $F$ is a nontrivial automorphism of order two.
 
-**Proposition.** If $\sigma$ is of the second kind then $F$ is a quadratic extension of its fixed field $F^\sigma$; the involution is $\varsigma$-semilinear with $\varsigma = \sigma|_F$, and the pair $(A,\sigma)$ is a form of the pair over $F^\sigma$ obtained by the descent along the quadratic extension. If $\sigma$ is of the first kind then it is $F$-linear, and $A$ is the sum of the symmetric and the skew parts, $A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)$.
+**Proposition.** If $\sigma$ is of the second kind then $F$ is a quadratic extension of its fixed field $F^\sigma$; the involution is $\varsigma$-semilinear with $\varsigma = \sigma|_F$, and the pair $(A,\sigma)$ is a form of the pair over $F^\sigma$ obtained by the descent along the quadratic extension. If $\sigma$ is of the first kind then it is $F$-linear, and $A$ is the sum of the symmetric and the skew parts, $A = \mathrm{sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)$.
 
 **Proof.** An order-two automorphism of a field has fixed field of index two when it is nontrivial, by the quadratic-extension theorem of *Involutive Rings*; the semilinearity of $\sigma$ over the fixed field is *Rings with a Semilinear Involution*; and the eigenspace decomposition is the same theorem applied to the $F$-linear order-two map $\sigma$.
 
 **Theorem (the two types of the first kind).** A first-kind involution $\sigma$ of $A$ is of **orthogonal type** or of **symplectic type**; the type is determined by
 
 $$
-\boxed{\;\dim_F \mathrm{Sym}(A,\sigma) = \tfrac12 n(n+1) \quad \text{(orthogonal)}, \qquad \dim_F \mathrm{Sym}(A,\sigma) = \tfrac12 n(n-1) \quad \text{(symplectic)}\;},
+\boxed{\;\dim_F \mathrm{sym}(A,\sigma) = \tfrac12 n(n+1) \quad \text{(orthogonal)}, \qquad \dim_F \mathrm{sym}(A,\sigma) = \tfrac12 n(n-1) \quad \text{(symplectic)}\;},
 $$
 
 where $n$ is the degree of $A$ over $F$ in the sense of *Central Simple Algebras and the Brauer Group*; an orthogonal involution has a symmetric unit and a family of orthogonal symmetric idempotents summing to $1$, a symplectic one has neither, and a symplectic involution exists only when $n$ is even.
@@ -51,7 +51,7 @@ Under this condition $\sigma$ is of the same kind as $\tau$; it is of the **same
 
 ## Examples
 
-**(a) The matrix algebra.** For $A = M_n(F)$ the first-kind involutions are the transpose and the symplectic involution, with $\dim\mathrm{Sym} = \tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$, and the second-kind ones exist when $F$ has an involution $\varsigma$ and are the conjugate transposes of *Matrix Rings with an Involution*.
+**(a) The matrix algebra.** For $A = M_n(F)$ the first-kind involutions are the transpose and the symplectic involution, with $\dim\mathrm{sym} = \tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$, and the second-kind ones exist when $F$ has an involution $\varsigma$ and are the conjugate transposes of *Matrix Rings with an Involution*.
 
 **(b) The quaternion algebra.** For the quaternion algebra $A = \mathbb{H}(F)$ over a field $F$ of characteristic not two and the conjugation $\sigma$, the involution is of the first kind; the symmetric part is $F$ and the skew part is the trace-zero subspace of dimension three, so for $n = 2$ the conjugation is of orthogonal type, in agreement with $\tfrac12\cdot 2\cdot 3 = 3$; the quaternion algebras are the central simple algebras of degree two that are not split.
 
@@ -71,7 +71,7 @@ An involution of a central simple $F$-algebra is of the **first kind** when it f
 | $n$ | Degree of $A$ over $F$ |
 | $\sigma$ | Involution of $A$ |
 | first kind, second kind | Fixes $F$, or acts on $F$ by a nontrivial order-two automorphism |
-| $\mathrm{Sym},\mathrm{Skew}$ | Eigenspaces of a first-kind involution, $2$ invertible |
+| $\mathrm{sym},\mathrm{Skew}$ | Eigenspaces of a first-kind involution, $2$ invertible |
 | $\tfrac12 n(n+1)$, $\tfrac12 n(n-1)$ | Dimensions of the symmetric part, orthogonal and symplectic types |
 | $\sigma = \operatorname{inn}_u\circ\tau$ | Any two involutions with the same centre restriction |
 | $\tau(u)u \in F$ | Condition for the conjugate to be an involution |

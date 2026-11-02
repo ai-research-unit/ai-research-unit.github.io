@@ -355,8 +355,8 @@ R^{\mathrm{axf}}(\tilde Q)=S\,R(\tilde Q)\,S^{-1}.
 $$
 On the four units,
 $$
-L_{e_\mu}=S^{-1}L_{e_\mu}^{\mathrm{axf}}S,\qquad
-R_{e_\mu}=S^{-1}R_{e_\mu}^{\mathrm{axf}}S .
+L_{e_\mu}=S^{-1}L^{\mathrm{axf}}_{e_\mu}S,\qquad
+R_{e_\mu}=S^{-1}R^{\mathrm{axf}}_{e_\mu}S .
 $$
 The coordinate columns change by
 $$

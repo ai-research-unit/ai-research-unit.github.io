@@ -119,7 +119,7 @@ the radical is a property of the space.
 
 $$ \boxed{\; [\tilde Q_1,\tilde Q_2]_{\star} = \tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1 = 0 \;}, $$
 
-so the operation has no derived Lie structure: the derived operation of $\mathrm{SQA}$ is the zero operation
+so the operation has no derived Lie structure: the derived operation of $\mathrm{sqa}$ is the zero operation
 on the whole space. The derived object of the operation is therefore the one-dimensional algebra
 $\mathbb{C}e_t=\mathbb{C}_{\mathbb{B}}$, with the multiplication of $\mathbb{C}$.
 
@@ -222,6 +222,6 @@ contain no nonzero isotropic element.
 - [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) and [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the two idempotents and for the square-zero elements.
 - [The Symmetrised Quaternionic Product and the Hermitian Subspace](the-symmetrised-quaternionic-product-and-the-hermitian-subspace.html), for the centrality and the coefficient in full.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) and [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its polarisation and the isotropic cone.
-- [Idempotents](idempotents.html), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{SQA}$.
+- [Idempotents](idempotents.html), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{sqa}$.
 - [Remarkable Subspaces under the Symmetric Quaternionic Algebra](remarkable-subspaces-under-the-symmetric-quaternionic-algebra.html), for the isotropic elements on each subspace.
 - [The Multiplication Operators of the Symmetric Quaternionic Algebra](the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html), for the operators $L^{\star}_{\tilde Q_4}$ in full.

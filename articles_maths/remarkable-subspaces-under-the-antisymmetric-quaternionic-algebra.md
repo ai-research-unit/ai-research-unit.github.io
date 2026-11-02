@@ -109,7 +109,7 @@ The remarkable subspaces read the antisymmetric quaternionic multiplication as f
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\diamond\tilde Q_2=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde Q_1\diamond\tilde Q_2=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{aqa}$ |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, on which the operation vanishes |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, closed, the image, the isotropic cone of the form |
 | $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | the quaternion subspace, closed, the even part of the grading |

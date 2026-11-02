@@ -215,7 +215,7 @@ obtained by choosing a place $v_0$ and sending $x$ to $(x \cdot c(x)^{-1}, \lver
 **Theorem (statement of the idelic reciprocity law).** Let $K$ be a global field. There is a continuous homomorphism
 
 $$
-\boxed{\;\operatorname{rec}_K : C_K = \mathbb{I}_K/K^\times \longrightarrow \operatorname{Gal}(K^{\mathrm{ab}}/K)\;},
+\boxed{\;\operatorname{rec}_K : C_K = \mathbb{I}_K/K^\times \longrightarrow \operatorname{gal}(K^{\mathrm{ab}}/K)\;},
 $$
 
 the **global reciprocity map**, whose kernel is the connected component of the identity in the number field case and the closure of the image of the norm subgroups in general, and which induces a bijection between the open subgroups of $C_K$ of finite index and the finite abelian extensions of $K$, sending an extension $L/K$ to the quotient $C_K / N_{L/K}(C_L)$.

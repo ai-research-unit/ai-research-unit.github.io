@@ -12,9 +12,9 @@ The article treats the space of forms and the orbit decomposition, the locally c
 
 ## The Space of Forms and its Orbits
 
-**Definition.** Let $\Omega_{n}$ be the set of non-degenerate symmetric bilinear forms on $F^{n}$, a subset of the space $\operatorname{Sym}_{n}$ of all symmetric forms, and let $GL_{n}(F)$ act by $B\mapsto B\circ(T\times T)$.
+**Definition.** Let $\Omega_{n}$ be the set of non-degenerate symmetric bilinear forms on $F^{n}$, a subset of the space $\operatorname{sym}_{n}$ of all symmetric forms, and let $GL_{n}(F)$ act by $B\mapsto B\circ(T\times T)$.
 
-**Proposition (the space of forms is open and the action is continuous).** The set $\Omega_{n}$ is open in $\operatorname{Sym}_{n}$, the action of $GL_{n}(F)$ on $\Omega_{n}$ is continuous, and the orbit of a form is its isometry class.
+**Proposition (the space of forms is open and the action is continuous).** The set $\Omega_{n}$ is open in $\operatorname{sym}_{n}$, the action of $GL_{n}(F)$ on $\Omega_{n}$ is continuous, and the orbit of a form is its isometry class.
 
 *Proof.* A symmetric form is non-degenerate exactly when the determinant of its matrix is nonzero, and the determinant is a continuous function of the coefficients; hence $\Omega_{n}$ is the complement of a closed set. The action is a polynomial map in the entries of $T$ and of the matrix of $B$, hence continuous, and two forms lie in the same orbit exactly when one is carried to the other by a change of basis, which is an isometry.
 
@@ -108,7 +108,7 @@ What the article owns is the topology of the space of forms and the local consta
 
 | symbol | meaning |
 |---|---|
-| $\Omega_{n}\subseteq\operatorname{Sym}_{n}$ | the open set of non-degenerate forms on $F^{n}$ |
+| $\Omega_{n}\subseteq\operatorname{sym}_{n}$ | the open set of non-degenerate forms on $F^{n}$ |
 | $(n,m)$, $\operatorname{sign}=n-m$ | the signature, the orbit label, locally constant |
 | $\Delta$, $\dim$ | the discriminant and the dimension, discrete homomorphisms |
 | $GL_{n}(\mathbb{R})/\mathrm{O}(n,m)$ | the homogeneous space of one signature class |

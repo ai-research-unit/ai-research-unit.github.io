@@ -72,19 +72,19 @@ $$ \boxed{\; \langle\tilde Q_1\star\tilde Q_2,\tilde Q_2\rangle_{\natural*}\neq0
 
 | family | $\langle\tilde Q_1\star\tilde Q_2,\tilde Q_2\rangle_{\natural*}$ | the witness |
 |---|---|---|
-| GPA | $2i$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y+i\vec e_z$ |
-| GQA | $2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
-| APA | $-2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
-| AQA | $2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
-| SPA | $-2$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
-| SQA, SPS | $1$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
-| APS | $-1$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
-| GPS, GQS, SQS | $1$ | $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$ |
-| **AQS** | $0$ at every pair | the law holds |
+| gpa | $2i$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y+i\vec e_z$ |
+| gqa | $2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
+| apa | $-2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
+| aqa | $2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
+| spa | $-2$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
+| sqa, sps | $1$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
+| aps | $-1$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
+| gps, gqs, sqs | $1$ | $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$ |
+| **aqs** | $0$ at every pair | the law holds |
 
-The eleven failures separate by where the failure enters. Four fail already on the vector subspace: the two products of the bilinear rows, $\mathrm{GPA}$ and $\mathrm{GQA}$, whose second slot is not conjugated, together with their antisymmetric parts $\mathrm{APA}$ and $\mathrm{AQA}$. For these four the value on two pure vectors carries the cross product $\vec Q_1\times\vec Q_2$ **without** the conjugation of the second argument, while the pairing is read against the conjugate of that argument, so the orthogonality of the cross product is not the orthogonality the form asks for. The other seven fail only off the vector subspace, at pairs in which at least one argument has a nonzero scalar coordinate: the four symmetric halves, whose value on two pure vectors is central, and the antisymmetric plain sesqualgebra $\mathrm{APS}$ with the two general sesquilinear products $\mathrm{GPS}$ and $\mathrm{GQS}$, whose value on two pure vectors is carried by the conjugate cross product. The block is the one product whose value is the cross product with the conjugate of the second argument, and the conjugation of the second slot of the block and the conjugation of the second slot of the form act in the same direction on the same entry.
+The eleven failures separate by where the failure enters. Four fail already on the vector subspace: the two products of the bilinear rows, $\mathrm{gpa}$ and $\mathrm{gqa}$, whose second slot is not conjugated, together with their antisymmetric parts $\mathrm{apa}$ and $\mathrm{aqa}$. For these four the value on two pure vectors carries the cross product $\vec Q_1\times\vec Q_2$ **without** the conjugation of the second argument, while the pairing is read against the conjugate of that argument, so the orthogonality of the cross product is not the orthogonality the form asks for. The other seven fail only off the vector subspace, at pairs in which at least one argument has a nonzero scalar coordinate: the four symmetric halves, whose value on two pure vectors is central, and the antisymmetric plain sesqualgebra $\mathrm{aps}$ with the two general sesquilinear products $\mathrm{gps}$ and $\mathrm{gqs}$, whose value on two pure vectors is carried by the conjugate cross product. The block is the one product whose value is the cross product with the conjugate of the second argument, and the conjugation of the second slot of the block and the conjugation of the second slot of the form act in the same direction on the same entry.
 
-**Remark (the criterion is the law on the whole space).** Restricted to the pairs of pure vectors the law holds for $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$, $\mathrm{GPS}$, $\mathrm{APS}$, $\mathrm{GQS}$ and the block, and fails for $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{APA}$ and $\mathrm{AQA}$. It holds for the four symmetric halves because on pure arguments their values are central, and a central value is orthogonal to every pure vector in a form that reads the scalar coordinate with the sign $+1$; it holds for $\mathrm{GPS}$, $\mathrm{APS}$, $\mathrm{GQS}$ and the block because the values on pure arguments are carried by the conjugate cross product, whose second entry is exactly the argument the form reads. The block is therefore not distinguished by the restriction, and the criterion is the law on the whole space, where it is alone.
+**Remark (the criterion is the law on the whole space).** Restricted to the pairs of pure vectors the law holds for $\mathrm{spa}$, $\mathrm{sqa}$, $\mathrm{sps}$, $\mathrm{sqs}$, $\mathrm{gps}$, $\mathrm{aps}$, $\mathrm{gqs}$ and the block, and fails for $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{apa}$ and $\mathrm{aqa}$. It holds for the four symmetric halves because on pure arguments their values are central, and a central value is orthogonal to every pure vector in a form that reads the scalar coordinate with the sign $+1$; it holds for $\mathrm{gps}$, $\mathrm{aps}$, $\mathrm{gqs}$ and the block because the values on pure arguments are carried by the conjugate cross product, whose second entry is exactly the argument the form reads. The block is therefore not distinguished by the restriction, and the criterion is the law on the whole space, where it is alone.
 
 ## What the Law Delivers
 
@@ -122,10 +122,10 @@ The block is the product of the twelve that is $\langle\cdot,\cdot\rangle_{\natu
 | $\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}=-\langle\tilde Q_1\diamond\tilde Q_3,\tilde Q_2\rangle_{\natural*}$ | the alternating character of the induced form |
 | $L_{\tilde Q_1}^{\dagger}=-L_{\tilde Q_1}$ | the skew-adjointness of the left multiplication |
 | $(\vec A,\vec B)=\sum_\mu A_\mu B_\mu$ | the complex bilinear dot product |
-| $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y+i\vec e_z$ | the witness for GPA |
-| $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ | the witness for GQA, APA and AQA |
-| $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ | the witness for SPA, SQA, SPS and APS |
-| $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$ | the witness for GPS, GQS and SQS |
+| $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y+i\vec e_z$ | the witness for gpa |
+| $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ | the witness for gqa, apa and aqa |
+| $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ | the witness for spa, sqa, sps and aps |
+| $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$ | the witness for gps, gqs and sqs |
 
 ## Further Reading
 

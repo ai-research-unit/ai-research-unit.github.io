@@ -48,10 +48,10 @@ $$
 \underbrace{\bar S_2\otimes\cdots\otimes\bar S_2}_{r}
 $$
 
-with $2^{k+r}$ components. Using the symmetry under permutations of the indices within each group, a spintensor can be taken **symmetric**, and the space $\mathrm{Sym}^{(k,r)}$ of symmetric spintensors has dimension
+with $2^{k+r}$ components. Using the symmetry under permutations of the indices within each group, a spintensor can be taken **symmetric**, and the space $\mathrm{sym}^{(k,r)}$ of symmetric spintensors has dimension
 
 $$
-\dim\mathrm{Sym}^{(k,r)} = (k+1)(r+1),
+\dim\mathrm{sym}^{(k,r)} = (k+1)(r+1),
 $$
 
 the **degree** of the representation $\tau^{l\bar l}$. This is the number that the mass formula uses: because $l=k/2$ and $\bar l=r/2$, the degree is $(2l+1)(2\bar l+1)$, and $\mathrm{SL}(2,\mathbb{C})$ has representations of every degree.
@@ -216,7 +216,7 @@ Third, the **equations** themselves are the corpus's Dirac-Maxwell package in th
 
 **Established, and recomputed.**
 
-- The spintensor degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals the representation degree $(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$; for the proton's chain member $60\times59=3540$.
+- The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)$ equals the representation degree $(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$; for the proton's chain member $60\times59=3540$.
 - The determinant factorisation $D(p)=D(s^2)$, the relation $m_i=\mu_0\lambda_i$ (and $m_i=\mu_0\lambda_i\bar\lambda_i$ for $\tau^{l\bar l}$), and the $\pm$ pairing of the eigenvalues of $\Gamma_0$; reproduced in outline.
 - The bivector metric's $(3,3)$ signature, matching the six-dimensional Lorentz parameter space's boost/rotation split.
 - The Dirac-limit generators reducing to the Pauli matrices at $c_{\frac12,\frac12}=2$; reproduced from the printed matrices.
@@ -258,7 +258,7 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 |---|---|
 | $s_{\alpha_1\dots\alpha_k\bar\alpha_1\dots\bar\alpha_r}$ | Spintensor of the representation $\tau^{l\bar l}$ |
 | $l=k/2$, $\bar l=r/2$ | Lorentz labels from the numbers of unbarred/barred indices |
-| $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ | Degree of the representation |
+| $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)$ | Degree of the representation |
 | $s=\lvert l-\bar l\rvert$ | Generalised spin of the field type $(l,\bar l)\oplus(\bar l,l)$ |
 | $\Gamma(p)$, $\Gamma_0$ | Momentum-contracted generator matrix and its time part |
 | $D(p)=\det(\Gamma(p)+mE)$ | Determinant whose roots are the masses |

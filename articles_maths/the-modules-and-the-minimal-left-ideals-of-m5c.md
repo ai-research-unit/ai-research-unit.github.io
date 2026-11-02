@@ -245,7 +245,7 @@ For $n=2$, the algebra $M_2(\mathbb{C})\cong\mathbb{B}$ has a two-dimensional si
 
 ### No Spinors at $M_5$
 
-**Theorem.** The simple module of $M_5$ is the carrier $V=\mathbb{C}^5$, of highest weight $2$. There is no spinor module at $n=5$: the carrier is the symmetric fourth power $\operatorname{Sym}^4(\mathbb{C}^2)$, and its weights are the integers $2,1,0,-1,-2$.
+**Theorem.** The simple module of $M_5$ is the carrier $V=\mathbb{C}^5$, of highest weight $2$. There is no spinor module at $n=5$: the carrier is the symmetric fourth power $\operatorname{sym}^4(\mathbb{C}^2)$, and its weights are the integers $2,1,0,-1,-2$.
 
 **Proof.** The identification of the carrier with the symmetric power is the standard $\mathfrak{sl}_2$ computation; the weights are integers, so no half-integer weight occurs. The simple module is unique up to isomorphism and is $V$.
 

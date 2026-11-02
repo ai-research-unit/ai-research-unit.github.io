@@ -142,12 +142,12 @@ The family of specificities articles states, for each block, one law that the bl
 
 | family | structures | commutative | central values | the scalar law |
 |---|---|---|---|---|
-| the four general products | GPA, GQA, GPS, GQS | no | no | no |
-| the symmetric parts | SPA | yes | no | no |
-| | **SQA** | **yes** | **yes** | **yes** |
-| | SPS | no | yes | no |
-| | SQS | no | no | no |
-| the antisymmetric parts | APA, AQA, APS, AQS | no | no | no |
+| the four general products | gpa, gqa, gps, gqs | no | no | no |
+| the symmetric parts | spa | yes | no | no |
+| | **sqa** | **yes** | **yes** | **yes** |
+| | sps | no | yes | no |
+| | sqs | no | no | no |
+| the antisymmetric parts | apa, aqa, aps, aqs | no | no | no |
 
 The operator reading of the law, $L^{\circ}_{\tilde Q_1}L^{\circ}_{\tilde Q_3}=\ell(\tilde Q_1)L^{\circ}_{\tilde Q_3}$ with $\ell$ depending on the first factor alone, fails for the other eleven as well. The three bilinear structures away from the block that carry a one-sided unit — the plain product, the general quaternionic product and the symmetric plain product — fail at $\tilde Q_3=e_t$, where $L^{\circ}_{e_t}$ is the identity, so a law of that form would make $L^{\circ}_{\tilde Q_1}$ a scalar multiple of the identity, which it is not. The two alternating products carry no unit and fail the reading at the pair $(\tilde Q_1,\tilde Q_3)=(\vec e_x,\vec e_x)$, where the two sides are not proportional. The six sesquilinear structures fail by parity: their left multiplication is conjugate-linear in its argument while a composite is $\mathbb{C}$-linear, so a linear operator equal to a conjugate-linear one vanishes, and the composite is not always zero. The block satisfies the reading with $\ell(\tilde Q_1)=X_t$ by §*The Operator Identity*.
 

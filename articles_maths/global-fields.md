@@ -127,12 +127,12 @@ Thus $d = 1$ or $2$ gives the genus $0$ (a conic), $d = 3$ or $4$ gives genus $1
 **Theorem (Artin reciprocity for global fields).** Let $L/K$ be a finite abelian extension of global fields. There is a modulus $\mathrm{M}$ of $K$, a formal product of a divisor supported on the ramified places and the archimedean places in the number-field case, such that the Artin map of *Class Field Theory*
 
 $$
-\boxed{\;\left(\frac{L/K}{\cdot}\right) : I_K^{\mathrm{M}} \longrightarrow \operatorname{Gal}(L/K), \qquad \mathrm{A} \longmapsto \left(\frac{L/K}{\mathrm{A}}\right)\;},
+\boxed{\;\left(\frac{L/K}{\cdot}\right) : I_K^{\mathrm{M}} \longrightarrow \operatorname{gal}(L/K), \qquad \mathrm{A} \longmapsto \left(\frac{L/K}{\mathrm{A}}\right)\;},
 $$
 
 is a surjective homomorphism with kernel $P_\mathrm{M}\operatorname{N}_{L/K}(I_L^{\mathrm{M}})$; it induces an isomorphism of the ray class group $\operatorname{Cl}_\mathrm{M}(K)$ modulo the norm group with the Galois group, and the map $H \mapsto L_H$ from congruence subgroups to abelian extensions is a bijection with the extension theorem of Takagi. Every statement in *Class Field Theory* holds verbatim for function fields, with the single modification that the archimedean part of the modulus is absent.
 
-**Theorem (Chebotarev, infinitude form).** Let $L/K$ be a finite Galois extension of global fields and $C$ a conjugacy class of $\operatorname{Gal}(L/K)$. Then there are infinitely many places $\mathrm{p}$ of $K$, unramified in $L$, whose Frobenius conjugacy class is $C$.
+**Theorem (Chebotarev, infinitude form).** Let $L/K$ be a finite Galois extension of global fields and $C$ a conjugacy class of $\operatorname{gal}(L/K)$. Then there are infinitely many places $\mathrm{p}$ of $K$, unramified in $L$, whose Frobenius conjugacy class is $C$.
 
 **Example.** For a function field the reciprocity law specialises to the theory of the jacobian and of the Hilbert class field of the curve: for $L = K(\alpha)$ with $\alpha^m = x \in K^\times$ and $\mu_m \subseteq K$, Kummer theory of *Kummer Theory* describes the extension and the Artin symbol is given by the $m$-th power residue symbol $\left(\frac{x}{\mathrm{p}}\right)_m = x^{(\operatorname{N}\mathrm{p}-1)/m} \bmod \mathrm{p}$, exactly as for number fields. The reciprocity law for the power residue symbol is the statement that $\prod_{\mathrm{p}} \left(\frac{x}{\mathrm{p}}\right)_m = 1$ over the places of $K$, which is the multiplicative product formula in disguise.
 

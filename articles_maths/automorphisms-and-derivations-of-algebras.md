@@ -127,7 +127,7 @@ $$
 \sigma \cdot (\lambda \otimes a) = \sigma(\lambda) \otimes a
 $$
 
-on $L \otimes_K A$. If $L/K$ is a finite Galois extension, this gives an action of $\operatorname{Gal}(L/K) = \operatorname{Aut}_K(L)$ by $K$-algebra automorphisms of $L \otimes_K A$, and the fixed points are the image of $1 \otimes A$. This is the way a Galois group acts on an algebra obtained by extension of scalars, and it is the algebraic input to Galois descent.
+on $L \otimes_K A$. If $L/K$ is a finite Galois extension, this gives an action of $\operatorname{gal}(L/K) = \operatorname{Aut}_K(L)$ by $K$-algebra automorphisms of $L \otimes_K A$, and the fixed points are the image of $1 \otimes A$. This is the way a Galois group acts on an algebra obtained by extension of scalars, and it is the algebraic input to Galois descent.
 
 ## Derivations
 

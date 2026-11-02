@@ -79,7 +79,7 @@ The similarity classes of central simple algebras form an abelian group under th
 | Similarity $A \sim B$ | $A \otimes_F M_m(F) \cong B \otimes_F M_n(F)$ for some $m, n$; equivalent to $D_A \cong D_B$ | *Central Simple Algebras and the Brauer Group* |
 | The division algebra representative of $[A]$ | the unique representative of the class that is a division algebra, up to isomorphism | *Central Simple Algebras and the Brauer Group* |
 | The Brauer group $\operatorname{Br}(F)$ | similarity classes under $\otimes_F$, identity $[F]$, inverse $[A^{\mathrm{opp}}]$; abelian | *Central Simple Algebras and the Brauer Group* |
-| The relative Brauer group $\operatorname{Br}(L/F)$ | the classes split by $L$, isomorphic to $H^2(G, L^\times)$ for $G = \operatorname{Gal}(L/F)$ | *Central Simple Algebras and the Brauer Group* |
+| The relative Brauer group $\operatorname{Br}(L/F)$ | the classes split by $L$, isomorphic to $H^2(G, L^\times)$ for $G = \operatorname{gal}(L/F)$ | *Central Simple Algebras and the Brauer Group* |
 | A crossed product | the central simple algebra attached to a factor set of a finite Galois extension | *Central Simple Algebras and the Brauer Group* |
 | The cyclic algebra $(\chi,a) = (L/F,\sigma,a)$ | $z^n = a$, $z\ell = \sigma(\ell)z$; the explicit crossed product over a cyclic extension | *Central Simple Algebras and the Brauer Group* |
 

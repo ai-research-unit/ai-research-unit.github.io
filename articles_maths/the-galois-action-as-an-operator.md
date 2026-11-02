@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A variety $X$ defined over a field $k$ acquires, after the base is extended to a Galois extension $L/k$, a symmetry that $X$ itself does not carry: the Galois group $G = \operatorname{Gal}(L/k)$ acts on the base-changed variety $X_L = X\times_kL$ over $k$, on its points with values in $L$-algebras, on its structure sheaf, and on the cohomology of its sheaves. The action is elementary to write down and surprisingly delicate to use, because it is $k$-linear but **not** $L$-linear: it permutes the coefficients of a function or a cohomology class, so it is a semilinear operator rather than an endomorphism of the layer of *Operators on a Variety*. This article fixes the action, proves its basic properties, and separates the two objects it produces — a genuine action by automorphisms of $X_L$, and a **semilinear** action on the $L$-vector spaces attached to $X_L$.
+A variety $X$ defined over a field $k$ acquires, after the base is extended to a Galois extension $L/k$, a symmetry that $X$ itself does not carry: the Galois group $G = \operatorname{gal}(L/k)$ acts on the base-changed variety $X_L = X\times_kL$ over $k$, on its points with values in $L$-algebras, on its structure sheaf, and on the cohomology of its sheaves. The action is elementary to write down and surprisingly delicate to use, because it is $k$-linear but **not** $L$-linear: it permutes the coefficients of a function or a cohomology class, so it is a semilinear operator rather than an endomorphism of the layer of *Operators on a Variety*. This article fixes the action, proves its basic properties, and separates the two objects it produces — a genuine action by automorphisms of $X_L$, and a **semilinear** action on the $L$-vector spaces attached to $X_L$.
 
 The article is the second of the `- Operator Theory` group. Its neighbours read the same layer through other operators: *Operators on a Variety* fixes the layer and the conjugation action of an automorphism on it, *The Frobenius Operator* is the Galois action in the arithmetic case of a finite field, where the group has a canonical generator, and *The Galois Action on the Cohomology* reads the action on cohomology classes and their invariants. The descent theory of the base field — the structure that the invariants recover — is the subject of *Real Structures on Varieties and Galois Descent*, a `- * Theory` article of this batch, and the general descent formalism is Part I's *Descent Theory*.
 
@@ -49,7 +49,7 @@ $$
 
 *Proof.* A $k$-point is an $L$-point that is already defined over $k$, and $\operatorname{Spec}\sigma$ fixes every $k$-morphism, so $X(k)\subseteq X(L)^G$. Conversely let $X = \operatorname{Spec}A$ be affine and let $P$ correspond to the $k$-algebra homomorphism $\varphi : A\to L$. That $P$ is fixed by $\sigma$ says $\sigma\circ\varphi = \varphi$, that is $\varphi(a) = \sigma(\varphi(a))$ for all $a$ and all $\sigma$, so $\varphi$ takes values in $L^G = k$ and is a $k$-homomorphism $A\to k$, which is a $k$-point. The general case follows by covering $X$ with affine charts, the condition being local.
 
-**Corollary.** For $X$ of finite type over $k$ and $L = \bar k$ the separable closure, the action of $G = \operatorname{Gal}(\bar k/k)$ on the geometric points $X(\bar k)$ has fixed set $X(k)$; in particular the $k$-points are recovered from the geometric points by taking invariants, which is the elementary case of Galois descent.
+**Corollary.** For $X$ of finite type over $k$ and $L = \bar k$ the separable closure, the action of $G = \operatorname{gal}(\bar k/k)$ on the geometric points $X(\bar k)$ has fixed set $X(k)$; in particular the $k$-points are recovered from the geometric points by taking invariants, which is the elementary case of Galois descent.
 
 ## The Action on Functions and on the Structure Sheaf
 
@@ -119,7 +119,7 @@ For a Galois extension $L/k$ with group $G$, the base change $X_L = X\times_kL$ 
 
 | Symbol | Meaning |
 |---|---|
-| $k$, $L$, $G=\operatorname{Gal}(L/k)$ | base field; Galois extension; Galois group |
+| $k$, $L$, $G=\operatorname{gal}(L/k)$ | base field; Galois extension; Galois group |
 | $X$, $X_L=X\times_kL$ | variety over $k$ and its base change |
 | $\sigma_X=\operatorname{id}_X\times_k\operatorname{Spec}\sigma$ | the automorphism of $X_L$ induced by $\sigma$ |
 | $X(L)$, $\sigma\cdot P=P\circ\operatorname{Spec}\sigma$ | $L$-points and the left action on them |

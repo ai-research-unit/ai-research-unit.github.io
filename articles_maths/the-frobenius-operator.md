@@ -57,7 +57,7 @@ Hence $\pi$ is a morphism of $X$ over $k = \mathbb{F}_q$, and it is the operator
 
 *Proof.* The identity $\lambda^q = \lambda$ for $\lambda\in\mathbb{F}_q$ is the statement that $\mathbb{F}_q$ is the fixed field of the Frobenius (Part I's *Finite Fields* and *The Frobenius Automorphism of a Finite Field*); the displayed computation then shows that $\pi^*$ commutes with the $k$-scalars, which is what it means for $\pi$ to be a $k$-morphism.
 
-**Example ($\mathbb{F}_{q^n}$ and Frobenius powers).** For the field $k = \mathbb{F}_q$ itself, $X = \operatorname{Spec}\mathbb{F}_q$, the $q$-power Frobenius satisfies $\pi^* = \mathrm{id}$ on $\mathbb{F}_q$, so $\pi = \mathrm{id}$, while the absolute Frobenius is the field automorphism $x\mapsto x^p$, of order $a$. On $X = \operatorname{Spec}\mathbb{F}_{q^n}$ the $q$-power Frobenius generates the cyclic group $\operatorname{Gal}(\mathbb{F}_{q^n}/\mathbb{F}_q)$ of order $n$; this is the operator-level form of the statement of *Finite Fields* that a finite field is its own splitting field for the polynomials $x^{q^n}-x$.
+**Example ($\mathbb{F}_{q^n}$ and Frobenius powers).** For the field $k = \mathbb{F}_q$ itself, $X = \operatorname{Spec}\mathbb{F}_q$, the $q$-power Frobenius satisfies $\pi^* = \mathrm{id}$ on $\mathbb{F}_q$, so $\pi = \mathrm{id}$, while the absolute Frobenius is the field automorphism $x\mapsto x^p$, of order $a$. On $X = \operatorname{Spec}\mathbb{F}_{q^n}$ the $q$-power Frobenius generates the cyclic group $\operatorname{gal}(\mathbb{F}_{q^n}/\mathbb{F}_q)$ of order $n$; this is the operator-level form of the statement of *Finite Fields* that a finite field is its own splitting field for the polynomials $x^{q^n}-x$.
 
 ## Fixed Points
 

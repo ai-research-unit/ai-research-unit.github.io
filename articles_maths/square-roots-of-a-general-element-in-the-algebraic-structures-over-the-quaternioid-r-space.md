@@ -13,7 +13,7 @@ and the **root set** of the value is the set of its roots. The value is general 
 **The three companion structures.** Beside the algebra product of the *Quaternions* category, the space carries the three companion structures of this category, so the general value poses three questions besides the algebra one; this article answers the three once. The three are named in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*:
 
 $$
-\mathrm{SPA} , \qquad \mathrm{APA} , \qquad \mathrm{GQA} ,
+\mathrm{spa} , \qquad \mathrm{apa} , \qquad \mathrm{gqa} ,
 $$
 
 the **symmetric plain algebra** of the Jordan product, the **antisymmetric plain algebra** of the cross product and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde q$. Every table of the article follows this order.
@@ -50,15 +50,15 @@ The two products exchange their sets of values, and the exchange is one sign. Th
 
 The square of a structure is its operation read at the two equal arguments, and each of the three carries a root problem of its own. The algebra product is read above; the two other companion structures are its symmetrisation and antisymmetrisation, and all three are read here, one by one.
 
-### $\mathrm{GQA}$, the general quaternionic algebra
+### $\mathrm{gqa}$, the general quaternionic algebra
 
 The product is $\tilde\xi^{\natural}\tilde q$ and its square is the central element $\langle\tilde\xi\rangle_{\natural}e_t$, so the equation is the single real equation $\langle\tilde\xi\rangle_{\natural}=\lambda$. A root exists exactly for a non-negative $\lambda$: the origin alone at $0$ and the sphere of radius $\sqrt\lambda$, of real dimension three, at a positive value; the negative values have none. The product and its class are *Introduction to the General Quaternionic Algebra*.
 
-### $\mathrm{SPA}$, the symmetric plain algebra
+### $\mathrm{spa}$, the symmetric plain algebra
 
 The product is the symmetrisation $\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, which is commutative, and its square is the plain square. The root set of every real $\lambda$ is therefore the plain root set, element for element: the two central roots $\pm\sqrt\lambda\,e_t$ at a positive value, the origin at $0$, and the sphere of radius $\sqrt{-\lambda}$ in the vector subspace, of real dimension two, at a negative value. The product and its class are *Introduction to the Symmetric Plain Algebra*.
 
-### $\mathrm{APA}$, the antisymmetric plain algebra
+### $\mathrm{apa}$, the antisymmetric plain algebra
 
 The product is the antisymmetrisation $\tfrac12(\tilde\xi\tilde q-\tilde q\tilde\xi)$: it is the cross product $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, which is alternating, so its square vanishes identically and the equation reads $0=\lambda e_t$. The root of $0$ is every element of the space, and no other value has a root. The product and its class are *Introduction to the Antisymmetric Plain Algebra*.
 
@@ -72,9 +72,9 @@ The three root sets of the central value $\lambda e_t$ are collected below. The 
 
 | the structure | the square | $\lambda<0$ | $\lambda=0$ | $\lambda>0$ |
 |---|---|---|---|---|
-| $\mathrm{GQA}$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | none | the origin alone | the sphere $N=\lambda$, real dimension $3$ |
-| $\mathrm{SPA}$ | $\tilde\xi^{2}$ | the sphere $\lvert\vec\xi\rvert^{2}=-\lambda$ in the vector subspace, real dimension $2$ | the origin alone | the pair $\pm\sqrt\lambda\,e_t$ |
-| $\mathrm{APA}$ | $0$ | none | the whole space | none |
+| $\mathrm{gqa}$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | none | the origin alone | the sphere $N=\lambda$, real dimension $3$ |
+| $\mathrm{spa}$ | $\tilde\xi^{2}$ | the sphere $\lvert\vec\xi\rvert^{2}=-\lambda$ in the vector subspace, real dimension $2$ | the origin alone | the pair $\pm\sqrt\lambda\,e_t$ |
+| $\mathrm{apa}$ | $0$ | none | the whole space | none |
 
 **Theorem (a root of $0$ exists for all three).** A root of $0$ exists for every one of the three companion structures, and it is the only central value with a root for the antisymmetric plain structure. The root sets of the remaining values are governed by the table: the symmetric plain structure reads every real value and the general quaternionic structure reads the non-negative values alone, and the two put their sphere on opposite sides of $0$, the sphere of the symmetric plain structure at a negative value and that of the general quaternionic structure at a positive one. The algebra product reads every real value as well, as owned by the *Quaternions* category.
 
@@ -90,7 +90,7 @@ The three root sets of the central value $\lambda e_t$ are collected below. The 
 
 The existence of a root separates the three companion structures into three classes, and the classes are read in the table of §*The Three Root Sets at a General Value*.
 
-**Theorem (the three existence classes).** Among the three companion structures of the quaternion space the central-value root problem has a root of every real $\lambda$ for the **symmetric plain** structure $\mathrm{SPA}$; of every real $\lambda\geq0$ and of no negative one for the **general quaternionic** structure $\mathrm{GQA}$; and of $\lambda=0$ alone for the **antisymmetric plain** structure $\mathrm{APA}$. The algebra product has a root of every real $\lambda$, as owned by the *Quaternions* category.
+**Theorem (the three existence classes).** Among the three companion structures of the quaternion space the central-value root problem has a root of every real $\lambda$ for the **symmetric plain** structure $\mathrm{spa}$; of every real $\lambda\geq0$ and of no negative one for the **general quaternionic** structure $\mathrm{gqa}$; and of $\lambda=0$ alone for the **antisymmetric plain** structure $\mathrm{apa}$. The algebra product has a root of every real $\lambda$, as owned by the *Quaternions* category.
 
 *Proof.* The plain square is the plain form times $e_t$ on the central line and the negative of the Euclidean square on the vector subspace, so it reaches every real value, at the vector subspace for the negative ones and on the central line for the positive ones; the quaternionic square is the quaternion form, a sum of four squares, so it reaches the non-negative values alone; and the square of the antisymmetric plain structure vanishes identically, so $\lambda=0$ is the only value it can read.
 
@@ -109,8 +109,8 @@ The value $0$ is the row $\lambda=0$ of each equation, and it is the value every
 
 | the structure | the roots of $0$ | real dimension |
 |---|---|---|
-| $\mathrm{GQA}$, $\mathrm{SPA}$ | the origin alone | $0$ |
-| $\mathrm{APA}$ | the whole space | $4$ |
+| $\mathrm{gqa}$, $\mathrm{spa}$ | the origin alone | $0$ |
+| $\mathrm{apa}$ | the whole space | $4$ |
 
 The antisymmetric plain structure reaches the value $0$ by vanishing, and its root of $0$ is the space itself; the two others reach it at the origin alone, because the plain square vanishes over $\mathbb{R}$ only at the origin and the quaternion form is positive definite.
 
@@ -145,7 +145,7 @@ The root of the central value $\lambda e_t$ in a structure is the element whose 
 
 The plain square has a root of every real value: the two central roots $\pm\sqrt\lambda\,e_t$ at a positive value, the origin at $0$, and the sphere of radius $\sqrt{-\lambda}$ in the vector subspace, of real dimension two, at a negative value. The quaternion square has a root exactly of the non-negative values: the origin at $0$ and the sphere of radius $\sqrt\lambda$, of real dimension three, at a positive value. The two squares exchange their spheres through the one sign that separates the plain form $\langle\cdot,\cdot\rangle$ from the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$.
 
-The root of $0$ exists for all three companion structures, and it is the origin for the two whose square vanishes only there and the whole space for the antisymmetric plain structure, whose square vanishes identically. Read among the three companion structures the existence question has three answers: a root of every real $\lambda$ for the symmetric plain structure $\mathrm{SPA}$; a root of every real $\lambda\geq0$ and of no negative one for the general quaternionic structure $\mathrm{GQA}$; and a root of $0$ alone for the antisymmetric plain structure $\mathrm{APA}$. The algebra product has a root of every real $\lambda$, as owned by the *Quaternions* category. The scaling by $\mu$ carries the root set of $\lambda$ to the root set of $\mu^{2}\lambda$, the plain sphere at the negative values being one sphere in different sizes and the roots of $1$ being the pair $\pm e_t$.
+The root of $0$ exists for all three companion structures, and it is the origin for the two whose square vanishes only there and the whole space for the antisymmetric plain structure, whose square vanishes identically. Read among the three companion structures the existence question has three answers: a root of every real $\lambda$ for the symmetric plain structure $\mathrm{spa}$; a root of every real $\lambda\geq0$ and of no negative one for the general quaternionic structure $\mathrm{gqa}$; and a root of $0$ alone for the antisymmetric plain structure $\mathrm{apa}$. The algebra product has a root of every real $\lambda$, as owned by the *Quaternions* category. The scaling by $\mu$ carries the root set of $\lambda$ to the root set of $\mu^{2}\lambda$, the plain sphere at the negative values being one sphere in different sizes and the roots of $1$ being the pair $\pm e_t$.
 
 ## Summary of Notation
 
@@ -156,7 +156,7 @@ The root of $0$ exists for all three companion structures, and it is the origin 
 | $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
 | $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of the general quaternionic product |
 | $\vec\xi=\sum_k\xi_k\vec e_k$ | the vector part, the home of the sphere of the plain square |
-| $\mathrm{SPA},\mathrm{APA},\mathrm{GQA}$ | the three companion structures of the space |
+| $\mathrm{spa},\mathrm{apa},\mathrm{gqa}$ | the three companion structures of the space |
 
 ## Further Reading
 

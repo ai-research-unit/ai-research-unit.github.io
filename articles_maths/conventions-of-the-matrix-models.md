@@ -213,7 +213,7 @@ The same values hold for $R$, because transposition and the permutation $\mathsf
 
 **The explicit matrices are written in the canonical frame.** The model articles display $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ in the canonical Peirce frame. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display $C_{\Pi}(I_2\otimes\mathsf{M}_2)C_{\Pi}^{-1}$, with the Peirce change $C_{\Pi}$. The articles whose subject is the transpose dictionary use the coefficient basis, because quaternion conjugation is transposition there, and each declares it. An article that uses another frame declares it; an entry is read only with the frame that produced it.
 
-**A frame other than the canonical one is labelled on the family.** Write $L^{\mathrm{axf}}(\tilde Q)$ and $L^{\mathrm{axf}}_\mu$ for the coefficient basis read as the axis-free basis, where the three vector directions enter by one rule and none is singled out, and $L^{P}(\tilde Q)$ and $L^{P}_\mu$ for the standard Peirce frame; the label is a name in lowercase roman letters, like $\mathrm{opp}$ and $\mathrm{fop}$, not an exponent.
+**A frame other than the canonical one is labelled on the family.** Write $L^{\mathrm{axf}}(\tilde Q)$ and $L^{\mathrm{axf}}_{e_\mu}$ for the coefficient basis read as the axis-free basis, where the three vector directions enter by one rule and none is singled out, and $L^{P}(\tilde Q)$ and $L^{P}_{e_\mu}$ for the standard Peirce frame; the label is a name in lowercase roman letters, like $\mathrm{opp}$ and $\mathrm{fop}$, not an exponent.
 
 **The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes $M_4(\mathbb{C})_L$ is read as $M_4(\mathbb{C})_{\mathbb{B}_L}$, and one that writes $M_4(\mathbb{C})_R$ as $M_4(\mathbb{C})_{\mathbb{B}_R}$. The same rule governs the matrices: a bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the superscript $L$ or $R$.
 
@@ -274,7 +274,7 @@ so the frame is visible in the formula.
 
 ## The $M_4(\mathbb{C})$ Axis-Free Representation
 
-**A second frame, and its label.** The corpus displays the regular matrices in two frames, and this article keeps to the canonical Peirce frame, where the left matrix is $I_2\otimes\mathsf M_2(\tilde Q)$; the other is the axis-free frame, the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ read without singling out one of the three vector directions, in contrast with the Peirce frame, whose root $\vec\Xi=i\vec e_z$ is a chosen direction. Its label is $\mathrm{axf}$, a name in roman letters and not an exponent: the left matrix of $\tilde Q$ is $L^{\mathrm{axf}}(\tilde Q)$, the left matrix of the unit $e_\mu$ is $L_\mu^{\mathrm{axf}}$, and $L_x^{\mathrm{axf}}$ is read as the matrix of $\vec e_x$, never as the $x$-th power of an operator.
+**A second frame, and its label.** The corpus displays the regular matrices in two frames, and this article keeps to the canonical Peirce frame, where the left matrix is $I_2\otimes\mathsf M_2(\tilde Q)$; the other is the axis-free frame, the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ read without singling out one of the three vector directions, in contrast with the Peirce frame, whose root $\vec\Xi=i\vec e_z$ is a chosen direction. Its label is $\mathrm{axf}$, a name in roman letters and not an exponent: the left matrix of $\tilde Q$ is $L^{\mathrm{axf}}(\tilde Q)$, the left matrix of the unit $e_\mu$ is $L^{\mathrm{axf}}_{e_\mu}$, and $L^{\mathrm{axf}}_{\vec e_x}$ is read as the matrix of $\vec e_x$, never as the $x$-th power of an operator.
 
 **The left matrix.** The columns are the coordinate columns of $\tilde Qe_\mu$,
 $$
@@ -298,7 +298,7 @@ Q_z&Q_y&-Q_x&Q_t
 $$
 The scalar direction occupies the diagonal and the three vector directions enter by one rule, one signed coefficient into each of the three remaining columns. No coefficient is singled out by its position; the two displays differ only in the signs of the six vector entries, which is the difference between a left and a right multiplication.
 
-**The eight units are real.** The four left matrices $L_\mu^{\mathrm{axf}}$ and the four right matrices $R_\mu^{\mathrm{axf}}$ of the units are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$. A general element is a complex combination of them and is not one. The same holds for the sixteen products $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, which are real, of determinant $1$ and of Hilbert–Schmidt norm two, and mutually orthogonal.
+**The eight units are real.** The four left matrices $L^{\mathrm{axf}}_{e_\mu}$ and the four right matrices $R^{\mathrm{axf}}_{e_\mu}$ of the units are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$. A general element is a complex combination of them and is not one. The same holds for the sixteen products $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$, which are real, of determinant $1$ and of Hilbert–Schmidt norm two, and mutually orthogonal.
 
 **The stitch.** Quaternion conjugation is transposition in this frame,
 $$
@@ -364,7 +364,7 @@ The **axis-free frame** is the second display of the same operators, the coeffic
 | $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
 | $L_{e_\mu}=\mathsf M_4^{L}(e_\mu)$, $R_{e_\mu}=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$ |
 | $L_{e_\mu}R_{e_\nu}$ | The sixteen basis matrices; $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$, $L_{\vec e_j}R_{\vec e_k}$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $L^{\mathrm{axf}}(\tilde Q)$, $L_\mu^{\mathrm{axf}}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
+| $L^{\mathrm{axf}}(\tilde Q)$, $L^{\mathrm{axf}}_{e_\mu}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
 | $C_{\Pi}$ | The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, written $S$ in the article of the frame |
 | $\mathsf C_\mu,\mathsf C_5$ | The five cells of the canonical frame, $\mathsf C_0=iL_{e_t}R_{\vec e_x}$, $\mathsf C_1=iL_{\vec e_x}R_{\vec e_y}$, $\mathsf C_2=iL_{\vec e_y}R_{\vec e_y}$, $\mathsf C_3=iL_{\vec e_z}R_{\vec e_y}$, $\mathsf C_5=-iL_{e_t}R_{\vec e_z}$ |
 | $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$, $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$ |

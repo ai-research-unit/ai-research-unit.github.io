@@ -14,10 +14,10 @@ The algebra carries **four general products** — one to each of the four choice
 
 | The general product | Its symmetric part | Its antisymmetric part |
 |---|---|---|
-| The general plain bilinear product ($\mathrm{GPA}$) | The symmetric plain bilinear product ($\mathrm{SPA}$) | The antisymmetric plain bilinear product ($\mathrm{APA}$) |
-| The general quaternionic bilinear product ($\mathrm{GQA}$) | The symmetric quaternionic bilinear product ($\mathrm{SQA}$) | The antisymmetric quaternionic bilinear product ($\mathrm{AQA}$) |
-| The general plain sesquilinear product ($\mathrm{GPS}$) | The symmetric plain sesquilinear product ($\mathrm{SPS}$) | The antisymmetric plain sesquilinear product ($\mathrm{APS}$) |
-| The general quaternionic sesquilinear product ($\mathrm{GQS}$) | The symmetric quaternionic sesquilinear product ($\mathrm{SQS}$) | The antisymmetric quaternionic sesquilinear product ($\mathrm{AQS}$) |
+| The general plain bilinear product ($\mathrm{gpa}$) | The symmetric plain bilinear product ($\mathrm{spa}$) | The antisymmetric plain bilinear product ($\mathrm{apa}$) |
+| The general quaternionic bilinear product ($\mathrm{gqa}$) | The symmetric quaternionic bilinear product ($\mathrm{sqa}$) | The antisymmetric quaternionic bilinear product ($\mathrm{aqa}$) |
+| The general plain sesquilinear product ($\mathrm{gps}$) | The symmetric plain sesquilinear product ($\mathrm{sps}$) | The antisymmetric plain sesquilinear product ($\mathrm{aps}$) |
+| The general quaternionic sesquilinear product ($\mathrm{gqs}$) | The symmetric quaternionic sesquilinear product ($\mathrm{sqs}$) | The antisymmetric quaternionic sesquilinear product ($\mathrm{aqs}$) |
 
 **The code is read letter by letter.** The first letter says which of the three operations of a row — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one, whose first slot is read as it stands, and $\mathrm Q$ the quaternionic one, whose first slot carries ${}^{\natural}$; and the third says the family — $\mathrm A$ the **algebra** over $\mathbb{C}$, whose three products are $\mathbb{C}$-bilinear, and $\mathrm S$ the **sesqualgebra** over $(\mathbb{C},\bar{\cdot})$, whose three products are sesquilinear. The four general products are the multiplications of the four general structures of the band; the eight parts are the symmetric and antisymmetric products beside them; and the twelve codes together name the twelve algebraic structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
@@ -120,7 +120,7 @@ whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the we
 
 The products themselves — their coordinates, their laws, their units and their images — are *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the grid of the four general products is *The Four General Products: Composition, Probability, Causality, Gauge*.
 
-**The same code on the reduced biquaternion space.** The construction is not special to $\mathbb{B}$. On the commutative algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions, equivalently the tessarines or the double-complex numbers — the same four general products exist, $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$, and each splits into a symmetric and an antisymmetric part by the two exchanges. Because the algebra is **commutative**, four of the twelve codes name no new operation there: $\mathrm{SPA} = \mathrm{GPA}$ and $\mathrm{SQS} = \mathrm{GQS}$, while $\mathrm{APA} = 0$ and $\mathrm{AQS} = 0$. The space therefore carries **eight distinct algebraic structures** — $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and the four live halves $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$ — and the twelve slots, the four that collapse and the eight that remain are *The Four Products, Their Forms and Their Algebraic Norms* and *The Specificities of the General Plain Algebra of the Reduced Biquaternions* of the mathematical corpus. The letter $\mathrm Q$ keeps its sense there — the first slot read through ${}_{\mathrm{ts}}$, the tessarine conjugation $j\mapsto-j$ (and $ij\mapsto-ij$) — as in the band above.
+**The same code on the reduced biquaternion space.** The construction is not special to $\mathbb{B}$. On the commutative algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions, equivalently the tessarines or the double-complex numbers — the same four general products exist, $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{gps}$ and $\mathrm{gqs}$, and each splits into a symmetric and an antisymmetric part by the two exchanges. Because the algebra is **commutative**, four of the twelve codes name no new operation there: $\mathrm{spa} = \mathrm{gpa}$ and $\mathrm{sqs} = \mathrm{gqs}$, while $\mathrm{apa} = 0$ and $\mathrm{aqs} = 0$. The space therefore carries **eight distinct algebraic structures** — $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{gps}$, $\mathrm{gqs}$ and the four live halves $\mathrm{sqa}$, $\mathrm{aqa}$, $\mathrm{sps}$, $\mathrm{aps}$ — and the twelve slots, the four that collapse and the eight that remain are *The Four Products, Their Forms and Their Algebraic Norms* and *The Specificities of the General Plain Algebra of the Reduced Biquaternions* of the mathematical corpus. The letter $\mathrm Q$ keeps its sense there — the first slot read through ${}_{\mathrm{ts}}$, the tessarine conjugation $j\mapsto-j$ (and $ij\mapsto-ij$) — as in the band above.
 
 ## The Involutions and the Four Forms
 
@@ -307,7 +307,7 @@ Throughout the series a signature is written $(n,m)$ with the **positive** direc
 
 ## Summary
 
-The twelve products are one construction. Two slots, each read plain or through its conjugation, give four general products; the exchange of the two arguments within the class of the product gives a symmetric and an antisymmetric part to each. The codes GPA, GQA, GPS and GQS name the general products, SPA, SQA, SPS and SQS their symmetric parts, and APA, AQA, APS and AQS their antisymmetric parts. The symmetric product is the bullet and the antisymmetric the wedge, and the general product is their sum. The bare interchange of the two arguments is not the class-preserving exchange, so the two antisymmetrisations are not one operation; on the reduced biquaternion space four of the twelve codes name no new operation.
+The twelve products are one construction. Two slots, each read plain or through its conjugation, give four general products; the exchange of the two arguments within the class of the product gives a symmetric and an antisymmetric part to each. The codes gpa, gqa, gps and gqs name the general products, spa, sqa, sps and sqs their symmetric parts, and apa, aqa, aps and aqs their antisymmetric parts. The symmetric product is the bullet and the antisymmetric the wedge, and the general product is their sum. The bare interchange of the two arguments is not the class-preserving exchange, so the two antisymmetrisations are not one operation; on the reduced biquaternion space four of the twelve codes name no new operation.
 
 The four forms are the four maps read on two arguments. The identity gives the plain bilinear form $B$, the natural sign the quaternionic form $N$, the star the Hermitian form $H$ and the flat sign the Krein form $K$, with the signature convention and the pairwise sign rule that make the table consistent. Each lower layer has its own table, and where a mark degenerates the brackets collapse two and two rather than becoming a different convention.
 
@@ -317,9 +317,9 @@ The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_
 
 | Symbol | Meaning |
 |---|---|
-| GPA, GQA, GPS, GQS | The four general products: plain bilinear, quaternionic bilinear, plain sesquilinear, quaternionic sesquilinear |
-| SPA, SQA, SPS, SQS | Their symmetric parts |
-| APA, AQA, APS, AQS | Their antisymmetric parts |
+| gpa, gqa, gps, gqs | The four general products: plain bilinear, quaternionic bilinear, plain sesquilinear, quaternionic sesquilinear |
+| spa, sqa, sps, sqs | Their symmetric parts |
+| apa, aqa, aps, aqs | Their antisymmetric parts |
 | $\tilde Q_1\bullet\tilde Q_2$ | The symmetric product, the half-sum of the two orders |
 | $\tilde Q_1\wedge\tilde Q_2$ | The antisymmetric product, the half-difference; on differential forms the same glyph is the exterior product |
 | $B$, $N$, $H$, $K$ | The four forms: plain, quaternionic, Hermitian, Krein |

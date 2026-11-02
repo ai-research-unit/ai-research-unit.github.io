@@ -108,11 +108,11 @@ Several groups are attached to objects rather than presented: the ideal class gr
 | $E(K)$ | the group law on an elliptic curve; abelian, finitely generated over a number field by Mordell–Weil | *Elliptic Curves* |
 | $K_0(R)$, $K_1(R)$ | the Grothendieck group of projective modules and the determinant group | *K-Theory of Rings* |
 | $\mathcal{O}_K^\times$ | the unit group of a ring of integers, finitely generated abelian by Dirichlet's theorem | *Algebraic Number Theory* |
-| Galois group $\operatorname{Gal}(L/K)$ | the automorphisms of $L$ fixing $K$; of order $[L:K]$ when the extension is finite and Galois | *Galois Theory* |
+| Galois group $\operatorname{gal}(L/K)$ | the automorphisms of $L$ fixing $K$; of order $[L:K]$ when the extension is finite and Galois | *Galois Theory* |
 | Absolute Galois group $G_K$ | the Galois group of a separable closure, profinite | *Profinite Groups and the Krull Topology* |
 | Profinite group | an inverse limit of finite groups, compact and totally disconnected | *Profinite Groups and the Krull Topology* |
 | $\hat{\mathbb{Z}}$ | the profinite completion of $\mathbb{Z}$, $\prod_p \mathbb{Z}_p$ | *Profinite Groups and the Krull Topology* |
-| Non-example: $\operatorname{Gal}(L/K)$ for a non-Galois extension | the automorphism group fails to have order $[L:K]$: the extension is not normal or not separable | *Galois Theory* |
+| Non-example: $\operatorname{gal}(L/K)$ for a non-Galois extension | the automorphism group fails to have order $[L:K]$: the extension is not normal or not separable | *Galois Theory* |
 
 ## Summary
 
@@ -133,7 +133,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $\operatorname{Aff}(V)$ | affine group $V \rtimes GL(V)$ |
 | $R^\times$ | group of units |
 | $\operatorname{Cl}(K)$, $\operatorname{Br}(F)$, $E(K)$, $K_0$, $K_1$ | class group, Brauer group, elliptic-curve group, K-groups |
-| $\operatorname{Gal}(L/K)$, $G_K$ | Galois group and absolute Galois group |
+| $\operatorname{gal}(L/K)$, $G_K$ | Galois group and absolute Galois group |
 | $Z(G)$, $[G,G]$, $G^{\mathrm{ab}}$ | centre, derived subgroup, abelianisation |
 | $\mathbb{M}$, $\mathbb{B}$ | Monster and Baby Monster |
 

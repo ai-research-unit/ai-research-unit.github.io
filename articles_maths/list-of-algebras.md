@@ -64,10 +64,10 @@ The tensor algebra $T(V)$ is the free associative algebra on a vector space, and
 |---|---|---|
 | Tensor algebra $T(V)$ | infinite-dimensional; the free associative algebra on $V$ | *Tensor Powers and the Free Algebra* |
 | Free algebra | infinite-dimensional for $\dim V \geq 1$; the non-commutative polynomial algebra | *Tensor Powers and the Free Algebra* |
-| Symmetric algebra $\operatorname{Sym}(V)$ | the polynomial algebra on $\dim V$ generators; centre the whole algebra | *The Symmetric Algebra of a Module* |
+| Symmetric algebra $\operatorname{sym}(V)$ | the polynomial algebra on $\dim V$ generators; centre the whole algebra | *The Symmetric Algebra of a Module* |
 | Exterior algebra $\Lambda(V)$ | dimension $2^{\dim V}$; graded-commutative; not commutative for $\dim V \geq 2$ | *The Exterior Algebra* |
 | Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *Clifford Algebras* |
-| Universal enveloping algebra $\mathrm{U}(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathrm{G})$ | *Representations of Lie Algebras* |
+| Universal enveloping algebra $\mathrm{U}(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{sym}(\mathrm{G})$ | *Representations of Lie Algebras* |
 | Weyl algebra $A_1$ | infinite-dimensional; centre $k$; the algebra of polynomial differential operators, with $yx - xy = 1$ | *Quotients of the Tensor Algebra* |
 | Quotients giving the number systems | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{H}$ as quotients of $T(V)$ | *Quotients of the Tensor Algebra* |
 | Clifford algebras in finite dimensions | the real Clifford algebras of dimension $2^n$, with their centre and periodicity | *Clifford Algebras in Finite Dimensions* |
@@ -98,7 +98,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 
 | Symbol | Meaning |
 |---|---|
-| $T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$ | tensor, symmetric and exterior algebras |
+| $T(V)$, $\operatorname{sym}(V)$, $\Lambda(V)$ | tensor, symmetric and exterior algebras |
 | $\mathrm{Cl}(V,\mathfrak{Q})$ | Clifford algebra of a quadratic form |
 | $\mathrm{U}(\mathrm{G})$ | universal enveloping algebra of a Lie algebra |
 | $A_1$ | the Weyl algebra, $yx - xy = 1$ |

@@ -42,12 +42,12 @@ identifies a $k$-linear map with the linear map obtained by fixing the first arg
 **Definition.** When $X_1=\cdots=X_k=X$, the **symmetrisation** of $A \in \mathcal L^k(X;Y)$ is
 
 $$
-\operatorname{Sym}(A)(x_1,\dots,x_k)=\frac1{k!}\sum_{\sigma \in S_k}A(x_{\sigma(1)},\dots,x_{\sigma(k)}),
+\operatorname{sym}(A)(x_1,\dots,x_k)=\frac1{k!}\sum_{\sigma \in S_k}A(x_{\sigma(1)},\dots,x_{\sigma(k)}),
 $$
 
-and $A$ is **symmetric** if $A=\operatorname{Sym}(A)$. The subspace $\mathcal L^k_{\mathrm{sym}}(X;Y)$ of symmetric bounded $k$-linear maps is closed in $\mathcal L^k(X;Y)$.
+and $A$ is **symmetric** if $A=\operatorname{sym}(A)$. The subspace $\mathcal L^k_{\mathrm{sym}}(X;Y)$ of symmetric bounded $k$-linear maps is closed in $\mathcal L^k(X;Y)$.
 
-The symmetrisation generalises to $k$ arguments the formula $\operatorname{Sym}(A)(x_1,x_2)=\tfrac12\bigl(A(x_1,x_2)+A(x_2,x_1)\bigr)$ for bilinear forms, whose fixed points are the symmetric ones, and it will be used to symmetrise ordinary iterated derivatives.
+The symmetrisation generalises to $k$ arguments the formula $\operatorname{sym}(A)(x_1,x_2)=\tfrac12\bigl(A(x_1,x_2)+A(x_2,x_1)\bigr)$ for bilinear forms, whose fixed points are the symmetric ones, and it will be used to symmetrise ordinary iterated derivatives.
 
 ### The Telescoping Identity
 
@@ -320,7 +320,7 @@ Higher derivatives are bounded symmetric multilinear maps $D^kf(x) \in \mathcal 
 | $B(X,Y)$ | bounded linear maps |
 | $\mathcal L(X_1,\dots,X_k;Y)$, $\mathcal L^k(X;Y)$ | bounded multilinear maps |
 | $\|A\|$ | norm of a multilinear map |
-| $\operatorname{Sym}(A)$, $\mathcal L^k_{\mathrm{sym}}$ | symmetrisation and symmetric multilinear maps |
+| $\operatorname{sym}(A)$, $\mathcal L^k_{\mathrm{sym}}$ | symmetrisation and symmetric multilinear maps |
 | $Df(x)$ | Fréchet derivative |
 | $D^kf(x)$ | $k$-th derivative, a symmetric $k$-linear map |
 | $C^k(\Omega,Y)$, smooth | classes of differentiability |

@@ -149,11 +149,11 @@ $\operatorname{End}(\mathcal{A})$.
 ### The Automorphism Group and Its Action
 
 Because $\operatorname{Aut}(\mathcal{A})$ is a group of bijections of $A$, it is a subgroup of the
-symmetric group $\operatorname{Sym}(A)$, the group of all bijections of $A$ under composition. The
+symmetric group $\operatorname{sym}(A)$, the group of all bijections of $A$ under composition. The
 inclusion
 
 $$
-\boxed{\;\operatorname{Aut}(\mathcal{A}) \;\leq\; \operatorname{Sym}(A)\;}
+\boxed{\;\operatorname{Aut}(\mathcal{A}) \;\leq\; \operatorname{sym}(A)\;}
 $$
 
 is the precise sense in which the automorphism group measures the symmetry of the structure: it is
@@ -189,16 +189,16 @@ orbits.
 
 **Example.** For a set $A$ with no relations, every function $A \to A$ is an endomorphism, so
 $\operatorname{End}(\mathcal{A})$ is the full transformation monoid $A^A$ and
-$\operatorname{Aut}(\mathcal{A}) = \operatorname{Sym}(A)$. For $|A| = n$ this gives $n^n$
+$\operatorname{Aut}(\mathcal{A}) = \operatorname{sym}(A)$. For $|A| = n$ this gives $n^n$
 endomorphisms and $n!$ automorphisms, and the orbit of every element is the whole of $A$: a set with
 no structure has no invariant partition.
 
 **Example.** For the complete graph $K_n$, whose edge relation $E$ is the relation $\neq$ on an
 $n$-element set, a map $f$ is an endomorphism exactly when $x \neq y$ implies $f(x) \neq f(y)$,
 that is, exactly when $f$ is injective. So $\operatorname{End}(K_n)$ is the monoid of injective maps
-of an $n$-element set, and $\operatorname{Aut}(K_n) = \operatorname{Sym}(A)$. For the graph with the
+of an $n$-element set, and $\operatorname{Aut}(K_n) = \operatorname{sym}(A)$. For the graph with the
 empty edge relation the condition is vacuous, so every map is an endomorphism, and the automorphism
-group is again $\operatorname{Sym}(A)$; the two structures have the same automorphism group and
+group is again $\operatorname{sym}(A)$; the two structures have the same automorphism group and
 different endomorphism monoids, which shows that the automorphism group alone does not recover the
 structure.
 
@@ -356,7 +356,7 @@ homomorphisms while irreflexivity and antisymmetry are reflected by strong ones.
 | isomorphism, $\mathcal{A} \cong \mathcal{B}$ | Bijective strong homomorphism |
 | $\operatorname{End}(\mathcal{A})$ | Monoid of endomorphisms of $\mathcal{A}$ |
 | $\operatorname{Aut}(\mathcal{A})$ | Automorphism group, the group of units of $\operatorname{End}(\mathcal{A})$ |
-| $\operatorname{Sym}(A)$ | Group of all bijections of $A$; $\operatorname{Aut}(\mathcal{A}) \leq \operatorname{Sym}(A)$ |
+| $\operatorname{sym}(A)$ | Group of all bijections of $A$; $\operatorname{Aut}(\mathcal{A}) \leq \operatorname{sym}(A)$ |
 | $G \cdot x$, $G_x$ | Orbit and stabiliser of $x$ under $G = \operatorname{Aut}(\mathcal{A})$ |
 | $\ker f$ | Kernel of a homomorphism, $\{(x,y) : f(x) = f(y)\}$ |
 | congruence $\theta$ | Equivalence relation compatible with every $R_i$ |

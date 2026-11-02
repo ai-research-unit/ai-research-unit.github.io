@@ -253,7 +253,7 @@ $$
 \int_{U(3)}|\operatorname{tr}U|^{4}\,dU=2 .
 $$
 
-**Proof.** The functions $U\mapsto\operatorname{tr}U$ and $U\mapsto\overline{\operatorname{tr}U}$ are the character of the standard representation and its conjugate. By the orthogonality of irreducible characters, the integral of $|\operatorname{tr}U|^{2}$ is $1$. For the fourth moment, $(\operatorname{tr}U)^{2}=\chi_{\operatorname{Sym}^{2}}+\chi_{\wedge^{2}}$, the sum of the characters of the symmetric square (highest weight $(2,0,0)$, dimension $6$) and the exterior square (highest weight $(1,1,0)$, dimension $3$). These two representations are irreducible and inequivalent, so orthogonality gives $1^{2}+1^{2}=2$.
+**Proof.** The functions $U\mapsto\operatorname{tr}U$ and $U\mapsto\overline{\operatorname{tr}U}$ are the character of the standard representation and its conjugate. By the orthogonality of irreducible characters, the integral of $|\operatorname{tr}U|^{2}$ is $1$. For the fourth moment, $(\operatorname{tr}U)^{2}=\chi_{\operatorname{sym}^{2}}+\chi_{\wedge^{2}}$, the sum of the characters of the symmetric square (highest weight $(2,0,0)$, dimension $6$) and the exterior square (highest weight $(1,1,0)$, dimension $3$). These two representations are irreducible and inequivalent, so orthogonality gives $1^{2}+1^{2}=2$.
 
 ## The Exponential and the Logarithm as Analytic Maps
 

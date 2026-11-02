@@ -9,7 +9,7 @@ $$
 =\vec Q_1\times\overline{\vec Q},
 $$
 
-scalar part zero and vector part the cross product of the vector part of the first argument with the **conjugate** of the vector part of the second. The operation is the operation named $\mathrm{AQS}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; it is the only one of the twelve whose value is a single cross-product term with the second argument conjugated, with neither a scalar part nor a mixed term, and its second slot carries the Hermitian conjugation, as do the second slots of the five other sesquilinear operations of the two sesqualgebra rows.
+scalar part zero and vector part the cross product of the vector part of the first argument with the **conjugate** of the vector part of the second. The operation is the operation named $\mathrm{aqs}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; it is the only one of the twelve whose value is a single cross-product term with the second argument conjugated, with neither a scalar part nor a mixed term, and its second slot carries the Hermitian conjugation, as do the second slots of the five other sesquilinear operations of the two sesqualgebra rows.
 
 The reading is one of the twelve operations of the corpus; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, the product it splits is *Introduction to the General Quaternionic Sesqualgebra*, the sesquilinear obstruction behind its failing law is *Lie Algebras of Sesqualgebras*, and the block that reads the symmetric half is *Introduction to the Symmetric Quaternionic Sesqualgebra*. This article owns the block as a multiplication: the rule, the class, the conjugate-alternation, the pure-vector image, the absence of a unit, the sixteen products of the basis, the non-vanishing diagonal, the failure of the Jacobi identity, and the placement of the block among the twelve. The diagonal and the conjugate cross product are developed in *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the pairing with the Krein form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; the remarkable subspaces are *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*; the operators are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; and the two matrix models are *Introduction to the Symmetric Quaternionic Sesqualgebra*. The element theory of the block is the cycle *Norm and Invertibility in the Antisymmetric Quaternionic Sesqualgebra*, *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *Idempotents of the Antisymmetric Quaternionic Sesqualgebra* and *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*, and its closing criterion, with the verdict on the eleven other structures, is *The Specificities of the Antisymmetric Quaternionic Sesqualgebra*.
 
@@ -23,7 +23,7 @@ $$
 \tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr).
 $$
 
-It is the **antisymmetric part** of the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ under the class-preserving exchange, the operation named $\mathrm{AQS}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The space $\mathbb{B}$ with the product $\diamond$ is the **antisymmetric quaternionic sesqualgebra** of the block. The decomposition is the one of the general theory: the class-preserving exchange fixes the two halves, so no choice of notation enters the rule.
+It is the **antisymmetric part** of the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ under the class-preserving exchange, the operation named $\mathrm{aqs}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The space $\mathbb{B}$ with the product $\diamond$ is the **antisymmetric quaternionic sesqualgebra** of the block. The decomposition is the one of the general theory: the class-preserving exchange fixes the two halves, so no choice of notation enters the rule.
 
 ### The Scalar–Vector and Coordinate Forms
 
@@ -117,7 +117,7 @@ so that at $\tilde Q=\vec e_x+i\vec e_y$ the value is $-2i\vec e_z$.
 
 *Proof.* The rule with $\tilde Q_1=\tilde Q_2$; and $\vec Q_2\times\overline{\vec Q_2}=(\vec a+i\vec b)\times(\vec a-i\vec b)=-i\,\vec a\times\vec b+i\,\vec b\times\vec a=-2i\,\vec a\times\vec b$, the two real cross products cancelling. At $\tilde Q_2=\vec e_x+i\vec e_y$ one has $\vec a=\vec e_x$, $\vec b=\vec e_y$ and $\vec a\times\vec b=\vec e_z$.
 
-**Remark (the diagonal against the plain block).** The diagonal of $\mathrm{AQS}$ is the **vector part of the square** in the sense of the conjugate half-difference: $\tilde Q\diamond\tilde Q=\tfrac12\bigl(\tilde Q^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde Q^{*}}\,\bigr)$, the imaginary half of the square $\tilde Q^{\natural}\tilde Q^{*}$ of the general quaternionic sesquilinear product, whose theory is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*. This is the bridge to the square article, and it is exact: the block is the conjugate half-difference of the two orders of the square, and it is not the vector part of the value $\tilde Q^{\natural}\tilde Q^{*}$ itself, which differs from the diagonal off the elements whose square has a real scalar part and a purely imaginary vector part.
+**Remark (the diagonal against the plain block).** The diagonal of $\mathrm{aqs}$ is the **vector part of the square** in the sense of the conjugate half-difference: $\tilde Q\diamond\tilde Q=\tfrac12\bigl(\tilde Q^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde Q^{*}}\,\bigr)$, the imaginary half of the square $\tilde Q^{\natural}\tilde Q^{*}$ of the general quaternionic sesquilinear product, whose theory is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*. This is the bridge to the square article, and it is exact: the block is the conjugate half-difference of the two orders of the square, and it is not the vector part of the value $\tilde Q^{\natural}\tilde Q^{*}$ itself, which differs from the diagonal off the elements whose square has a real scalar part and a purely imaginary vector part.
 
 **Proposition (the diagonal vanishes exactly on the cone of the diagonal).** The diagonal vanishes at $\tilde Q$ exactly when $\vec Q$ is a complex multiple of a real vector; the set of such $\tilde Q$ is the cone $\tilde Q\diamond\tilde Q=0$, of six real dimensions, the scalar coordinate being free and the vector part running over a cone of four real dimensions in the vector subspace, and the theory of that cone is *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*.
 
@@ -147,14 +147,14 @@ the triple $(\tilde Q_1,\tilde Q_2,\tilde{Q}_3)=(\vec e_x,\vec e_x,i\vec e_y)$ g
 
 $$
 \boxed{\;
-\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{APA}(\tilde Q_1,\tilde Q_2)
+\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{apa}(\tilde Q_1,\tilde Q_2)
 \qquad(\tilde Q_1,\tilde Q_2\ \text{real})
 \;}.
 $$
 
 *Proof.* A real vector is its own conjugate, so the rule reduces to $\vec Q_1\times\vec Q$.
 
-**Remark (the failure is invisible on the real forms).** The coincidence is the whole reason the failure of the Jacobi identity cannot be witnessed on real elements: there the block is the Lie product $\mathrm{APA}$, whose Jacobi identity holds, and the failure appears only once the conjugate of the second argument differs from the argument. The distinction between $\mathrm{APA}$ and $\mathrm{AQS}$ is the conjugate on the second slot, and it is exactly the distinction that the twelve collapse on the real part, where $\mathrm{APA}=\mathrm{AQS}$.
+**Remark (the failure is invisible on the real forms).** The coincidence is the whole reason the failure of the Jacobi identity cannot be witnessed on real elements: there the block is the Lie product $\mathrm{apa}$, whose Jacobi identity holds, and the failure appears only once the conjugate of the second argument differs from the argument. The distinction between $\mathrm{apa}$ and $\mathrm{aqs}$ is the conjugate on the second slot, and it is exactly the distinction that the twelve collapse on the real part, where $\mathrm{apa}=\mathrm{aqs}$.
 
 ### The Consequence
 
@@ -164,7 +164,7 @@ The failure of the Jacobi identity is the obstruction of *Lie Algebras of Sesqua
 
 ## The Reconstruction and the Twelve
 
-### The Reconstruction $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$
+### The Reconstruction $\mathrm{gqs}=\mathrm{sqs}+\mathrm{aqs}$
 
 **Theorem.** The quaternionic sesquilinear product is the sum of its two parts:
 
@@ -172,7 +172,7 @@ $$
 \tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\diamond_{\!+}\tilde Q_2+\tilde Q_1\diamond\tilde Q_2,
 $$
 
-where $\tilde Q_1\diamond_{\!+}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}\,\bigr)$ is the symmetric part $\mathrm{SQS}$ and $\tilde Q_1\diamond\tilde Q_2$ is the block.
+where $\tilde Q_1\diamond_{\!+}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}\,\bigr)$ is the symmetric part $\mathrm{sqs}$ and $\tilde Q_1\diamond\tilde Q_2$ is the block.
 
 *Proof.* The half-sum and the half-difference of the value and the conjugate of the swapped value are the two parts of the general construction, and they add to the value; the second is the rule of this article.
 
@@ -180,16 +180,16 @@ The pair is the unique decomposition of the product into a conjugate-symmetric a
 
 ### The Placement among the Twelve
 
-The name $\mathrm{AQS}$ is read with the code of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*: the first letter $\mathrm A$ says that the operation is the antisymmetric part of the row; the second letter $\mathrm Q$ says that the row is the quaternionic product $\tilde Q_1^{\natural}\tilde Q_2$; and the third letter $\mathrm S$ says that the class is that of the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$, whose second slot is conjugate-linear.
+The name $\mathrm{aqs}$ is read with the code of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*: the first letter $\mathrm A$ says that the operation is the antisymmetric part of the row; the second letter $\mathrm Q$ says that the row is the quaternionic product $\tilde Q_1^{\natural}\tilde Q_2$; and the third letter $\mathrm S$ says that the class is that of the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$, whose second slot is conjugate-linear.
 
 | the row | general | symmetric | antisymmetric |
 |---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ |
-| the quaternionic algebra | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
-| the plain sesqualgebra | $\mathrm{GPS}$ | $\mathrm{SPS}$ | $\mathrm{APS}$ |
-| the quaternionic sesqualgebra | $\mathrm{GQS}$ | $\mathrm{SQS}$ | $\mathrm{AQS}$ |
+| the plain algebra | $\mathrm{gpa}$ | $\mathrm{spa}$ | $\mathrm{apa}$ |
+| the quaternionic algebra | $\mathrm{gqa}$ | $\mathrm{sqa}$ | $\mathrm{aqa}$ |
+| the plain sesqualgebra | $\mathrm{gps}$ | $\mathrm{sps}$ | $\mathrm{aps}$ |
+| the quaternionic sesqualgebra | $\mathrm{gqs}$ | $\mathrm{sqs}$ | $\mathrm{aqs}$ |
 
-**Remark (the place of the block).** The block is conjugate-linear in its second slot, pure-vector-valued, has no unit, and fails the Jacobi identity; its diagonal does not vanish and its image is the vector subspace. Of the twelve operations it is the only one whose value is the conjugate cross product alone, and on the real part it falls together with $\mathrm{APA}$. The names of the twelve are owned by *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and their laws by *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the general construction of the parts by *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
+**Remark (the place of the block).** The block is conjugate-linear in its second slot, pure-vector-valued, has no unit, and fails the Jacobi identity; its diagonal does not vanish and its image is the vector subspace. Of the twelve operations it is the only one whose value is the conjugate cross product alone, and on the real part it falls together with $\mathrm{apa}$. The names of the twelve are owned by *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and their laws by *Symmetric and Antisymmetric Decomposition of the Four General Products*, and the general construction of the parts by *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
 
 ## Summary
 
@@ -199,7 +199,7 @@ $$
 \tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2},
 $$
 
-the conjugate cross product, the only operation of the twelve whose value is a single cross-product term with the second argument conjugated. It is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-alternating, pure-vector-valued with image $\mathrm{Vect}(\mathbb{B})$, and has no unit. Its diagonal does not vanish, $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}=-2i\,\vec a\times\vec b$ at $\vec Q=\vec a+i\vec b$, and it is $-2i\vec e_z$ at $\vec e_x+i\vec e_y$. The Jacobi identity fails, with the witness $(\vec e_x,\vec e_x,i\vec e_y)$ whose declared cyclic sum is $-2i\vec e_y$; the witness needs a complex element, and on the real elements the block coincides with $\mathrm{APA}$, so the failure is invisible there. The product reconstructs as $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$, the half-sum and the half-difference of the two orders of the square of the quaternionic sesquilinear product.
+the conjugate cross product, the only operation of the twelve whose value is a single cross-product term with the second argument conjugated. It is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-alternating, pure-vector-valued with image $\mathrm{Vect}(\mathbb{B})$, and has no unit. Its diagonal does not vanish, $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}=-2i\,\vec a\times\vec b$ at $\vec Q=\vec a+i\vec b$, and it is $-2i\vec e_z$ at $\vec e_x+i\vec e_y$. The Jacobi identity fails, with the witness $(\vec e_x,\vec e_x,i\vec e_y)$ whose declared cyclic sum is $-2i\vec e_y$; the witness needs a complex element, and on the real elements the block coincides with $\mathrm{apa}$, so the failure is invisible there. The product reconstructs as $\mathrm{gqs}=\mathrm{sqs}+\mathrm{aqs}$, the half-sum and the half-difference of the two orders of the square of the quaternionic sesquilinear product.
 
 ## Summary of Notation
 
@@ -207,12 +207,12 @@ the conjugate cross product, the only operation of the twelve whose value is a s
 |---|---|
 | $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural})$ | the conjugate cross product, the multiplication of the block |
 | $\mathbb{B}$ with $\diamond$ | the biquaternion space with the conjugate cross product |
-| $\mathrm{AQS}$ | the name of the operation among the twelve |
+| $\mathrm{aqs}$ | the name of the operation among the twelve |
 | $\vec Q_1\times\overline{\vec Q}$ | the scalar–vector rule of the block |
 | $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ | the diagonal, non-vanishing in general |
 | $(\vec e_x,\vec e_x,i\vec e_y)\mapsto-2i\vec e_y$ | the Jacobi witness |
-| $\mathrm{APA}=\vec Q_1\times\vec Q$ | the real coincidence of the block |
-| $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$ | the reconstruction of the quaternionic sesquilinear product |
+| $\mathrm{apa}=\vec Q_1\times\vec Q$ | the real coincidence of the block |
+| $\mathrm{gqs}=\mathrm{sqs}+\mathrm{aqs}$ | the reconstruction of the quaternionic sesquilinear product |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the Krein form of the block's pairing |
 
 ## Further Reading

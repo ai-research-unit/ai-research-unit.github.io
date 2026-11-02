@@ -208,7 +208,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal A_\nu-\partial/\partial Q_\nu\,\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$ | Its components; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological (instanton) charge, $Ϙ\in\mathbb Z$ |
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form; $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |
-| $\eta(0)$, $h$ | Eta invariant and boundary zero-mode count (APS) |
+| $\eta(0)$, $h$ | Eta invariant and boundary zero-mode count (aps) |
 | $I_2=\vec E\cdot\vec B$ | Framework's second invariant; index density in the abelian case |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, orientation density, $\epsilon_{0123}=+1$; all-low, height carries no sign |
 | $\langle\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$ | Biquaternion norm; rank-two, single-slot, does not supply $\mathrm{Tr}(F\wedge F)$ |

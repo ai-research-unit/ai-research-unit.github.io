@@ -249,7 +249,7 @@ $$
 
 is a compact smooth submanifold of $M_n(\mathbb{R})$ of dimension $n(n-1)/2$, and the special orthogonal group $SO(n) = \{A \in O(n) : \det A = 1\}$ is a submanifold of the same dimension.
 
-**Proof.** Consider $F : M_n(\mathbb{R}) \to \operatorname{Sym}_n(\mathbb{R})$, $F(A) = A^T A$, where $\operatorname{Sym}_n$ is the space of symmetric matrices, of dimension $n(n+1)/2$. Its differential at $A$ is $dF_A(H) = A^T H + H^T A$. For $A \in O(n)$, this map is surjective: given a symmetric $S$, take $H = \frac{1}{2} A S$, then $A^T H + H^T A = \frac{1}{2}S + \frac{1}{2}S = S$. Hence $I$ is a regular value, and $O(n) = F^{-1}(I)$ is a submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$. It is bounded in $M_n(\mathbb{R})$ and closed, hence compact; $SO(n)$ is a union of components, cut out by the condition $\det = 1$.
+**Proof.** Consider $F : M_n(\mathbb{R}) \to \operatorname{sym}_n(\mathbb{R})$, $F(A) = A^T A$, where $\operatorname{sym}_n$ is the space of symmetric matrices, of dimension $n(n+1)/2$. Its differential at $A$ is $dF_A(H) = A^T H + H^T A$. For $A \in O(n)$, this map is surjective: given a symmetric $S$, take $H = \frac{1}{2} A S$, then $A^T H + H^T A = \frac{1}{2}S + \frac{1}{2}S = S$. Hence $I$ is a regular value, and $O(n) = F^{-1}(I)$ is a submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$. It is bounded in $M_n(\mathbb{R})$ and closed, hence compact; $SO(n)$ is a union of components, cut out by the condition $\det = 1$.
 
 **Theorem.** The unitary group $\mathrm{U}(n)$ is a smooth submanifold of $M_n(\mathbb{C}) \cong \mathbb{R}^{2n^2}$ of real dimension $n^2$, and the special unitary group $SU(n)$ has real dimension $n^2 - 1$.
 

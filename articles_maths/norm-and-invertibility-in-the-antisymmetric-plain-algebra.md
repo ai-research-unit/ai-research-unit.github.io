@@ -98,7 +98,7 @@ The antisymmetric plain multiplication $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\time
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$ | the antisymmetric plain multiplication, the operation $\mathrm{apa}$ |
 | $\tilde Q_1\tilde Q_2$ | the parent general plain bilinear product, associative and unital |
 | $\mathrm{Sc}(\tilde Q_1\wedge\tilde Q_2)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\wedge}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |

@@ -20,8 +20,8 @@ The article proceeds as follows. A section states why the time slicing fails, in
 
 The construction of the kernel is the one of *The Path Integral in Biquaternionic Form*: divide the time $T$ into $N$ steps of length $\varepsilon=T/N$, use the short-time kernel
 $$
-K_\varepsilon(x_{\mathrm{src}}\,\vec e_x+y_{\mathrm{src}}\,\vec e_y+z_{\mathrm{src}}\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{3/2}
-\exp\Big[\frac{i}{\hbar}\Big(\frac{m|x_{\mathrm{src}}\,\vec e_x+y_{\mathrm{src}}\,\vec e_y+z_{\mathrm{src}}\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
+K_\varepsilon(x^{\mathrm{src}}\,\vec e_x+y^{\mathrm{src}}\,\vec e_y+z^{\mathrm{src}}\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{3/2}
+\exp\Big[\frac{i}{\hbar}\Big(\frac{m|x^{\mathrm{src}}\,\vec e_x+y^{\mathrm{src}}\,\vec e_y+z^{\mathrm{src}}\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon\,V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\Big)\Big]+O(\varepsilon^2),
 $$
 and take the limit $N\to\infty$ of the product with the intermediate positions integrated.
 

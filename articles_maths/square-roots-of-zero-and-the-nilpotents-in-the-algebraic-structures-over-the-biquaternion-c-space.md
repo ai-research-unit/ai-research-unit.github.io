@@ -14,9 +14,9 @@ and the **root set** of the value is the set of the solutions of the equation. T
 
 | the operation | the plain algebra | the plain sesqualgebra | the quaternionic algebra | the quaternionic sesqualgebra |
 |---|---|---|---|---|
-| the general | $\mathrm{GPA}$ | $\mathrm{GPS}$ | $\mathrm{GQA}$ | $\mathrm{GQS}$ |
-| the symmetric | $\mathrm{SPA}$ | $\mathrm{SPS}$ | $\mathrm{SQA}$ | $\mathrm{SQS}$ |
-| the antisymmetric | $\mathrm{APA}$ | $\mathrm{APS}$ | $\mathrm{AQA}$ | $\mathrm{AQS}$ |
+| the general | $\mathrm{gpa}$ | $\mathrm{gps}$ | $\mathrm{gqa}$ | $\mathrm{gqs}$ |
+| the symmetric | $\mathrm{spa}$ | $\mathrm{sps}$ | $\mathrm{sqa}$ | $\mathrm{sqs}$ |
+| the antisymmetric | $\mathrm{apa}$ | $\mathrm{aps}$ | $\mathrm{aqa}$ | $\mathrm{aqs}$ |
 
 and every table of the article follows the new order: the four general structures first, then their four symmetric parts, then their four antisymmetric parts; and inside each group the plain algebra, then the plain sesqualgebra, then the quaternionic algebra, then the quaternionic sesqualgebra.
 
@@ -90,51 +90,51 @@ The value $0$ is therefore the value at which the roots of the plain product sto
 
 The twelve root sets of $0$ are read one by one, each quoted from the article that owns it. The product, the square and the root set are named for each, and the two structures with the same square have the same root set.
 
-### $\mathrm{GPA}$, the general plain algebra
+### $\mathrm{gpa}$, the general plain algebra
 
 The product is $\tilde\Xi\tilde Q_2$, and its square is the plain square. The root set of $0$ is the pure isotropic cone $\{Q_t=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four, the component of the cone singled out by the vanishing of the scalar part; its non-zero members are the nilpotents of the algebra, and they are a strict part of its zero-divisor set, the cone beyond the pure part being made of the complex multiples of the non-trivial idempotents. The article is *Nilpotents*.
 
-### $\mathrm{GPS}$, the general plain sesqualgebra
+### $\mathrm{gps}$, the general plain sesqualgebra
 
 The product is $\tilde\Xi\tilde Q_2^{*}$, and its square is the Hermitian element $\tilde\Xi\tilde\Xi^{*}$, of scalar part $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$. The equation of the value $0$ forces every coordinate to vanish, so the root set of $0$ is the origin alone; the zero-divisor set of the structure is the whole punctured space, so the square detects no zero divisor there at all. The article is *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*.
 
-### $\mathrm{GQA}$, the general quaternionic algebra
+### $\mathrm{gqa}$, the general quaternionic algebra
 
 The product is $\tilde\Xi^{\natural}\tilde Q_2$, and its square is the central square $C(\tilde\Xi)e_t$; the equation of the value $0$ is the vanishing of the central square, and the root set of $0$ is the whole cone $\mathcal{N}$, of real dimension six, which is also the whole zero-divisor set of the algebra together with the origin. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
 
-### $\mathrm{GQS}$, the general quaternionic sesqualgebra
+### $\mathrm{gqs}$, the general quaternionic sesqualgebra
 
 The product is $\tilde\Xi^{\natural}\tilde Q_2^{*}$, and its square has scalar part the Krein value $\Delta(\tilde\Xi)$. The equation of the value $0$ is the square-zero family $c(\vec u\pm i)$ over the real unit vectors, the slope family at $\lvert t\rvert=1$, a proper subfamily of the cone cut out by $\overline{\tilde Q}\tilde Q=0$; it is of real dimension four and contains the element $e_t+i\vec e_x$. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
-### $\mathrm{SPA}$, the symmetric plain algebra
+### $\mathrm{spa}$, the symmetric plain algebra
 
-The product is the Jordan product $\tilde\Xi\bullet\tilde Q_2=\tfrac12(\tilde\Xi\tilde Q_2+\tilde Q_2\tilde\Xi)$, whose square is the plain square, so the root set of $0$ is the pure isotropic cone, element for element that of $\mathrm{GPA}$. The zero-divisor set of the structure is larger than that of $\mathrm{GPA}$, so the square detects the cone only in part there. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the Jordan product $\tilde\Xi\bullet\tilde Q_2=\tfrac12(\tilde\Xi\tilde Q_2+\tilde Q_2\tilde\Xi)$, whose square is the plain square, so the root set of $0$ is the pure isotropic cone, element for element that of $\mathrm{gpa}$. The zero-divisor set of the structure is larger than that of $\mathrm{gpa}$, so the square detects the cone only in part there. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{SPS}$, the symmetric plain sesqualgebra
+### $\mathrm{sps}$, the symmetric plain sesqualgebra
 
 The product is the symmetrisation $\tfrac12(\tilde\Xi\tilde Q_2^{*}+\overline{\tilde Q_2\tilde\Xi^{*}})$, whose value is central, and its square is $\langle\tilde\Xi\rangle_{*}e_t$, a real and non-negative central value. The root set of $0$ is the origin alone, for the same definiteness. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{SQA}$, the symmetric quaternionic algebra
+### $\mathrm{sqa}$, the symmetric quaternionic algebra
 
-The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde\Xi)=C(\tilde\Xi,\tilde Q_2)e_t$, whose value is central, and its square is the central square; the root set of $0$ is the whole cone, as for $\mathrm{GQA}$. The zero-divisor set of the structure is the whole punctured space, so the square detects only the cone there. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde\Xi)=C(\tilde\Xi,\tilde Q_2)e_t$, whose value is central, and its square is the central square; the root set of $0$ is the whole cone, as for $\mathrm{gqa}$. The zero-divisor set of the structure is the whole punctured space, so the square detects only the cone there. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra
+### $\mathrm{sqs}$, the symmetric quaternionic sesqualgebra
 
-The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde\Xi^{*}})$, and its square is the coefficientwise real part of the unsplit square, a real element. The root set of $0$ is the cone $\alpha(e_t+\tilde\Xi)$ over the real unit vectors, the same subfamily of the cone as that of $\mathrm{GQS}$, of real dimension four, containing no pure element. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde\Xi^{*}})$, and its square is the coefficientwise real part of the unsplit square, a real element. The root set of $0$ is the cone $\alpha(e_t+\tilde\Xi)$ over the real unit vectors, the same subfamily of the cone as that of $\mathrm{gqs}$, of real dimension four, containing no pure element. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{APA}$, the antisymmetric plain algebra
+### $\mathrm{apa}$, the antisymmetric plain algebra
 
 The product is the commutator $\tilde\Xi\wedge\tilde Q_2=\vec\Xi\times\vec Q_2$, alternating, so its square vanishes identically. The root set of $0$ is the whole space and every element is a root of $0$; the zero-divisor set is the punctured space, so the two coincide on the non-zero elements. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{APS}$, the antisymmetric plain sesqualgebra
+### $\mathrm{aps}$, the antisymmetric plain sesqualgebra
 
 The product is the antisymmetrisation $\tfrac12(\tilde\Xi\tilde Q_2^{*}-\overline{\tilde Q_2\tilde\Xi^{*}})$, whose values are pure elements, so the square of an element is the pure part of its Hermitian square; the equation of the value $0$ is the centrality of the Hermitian square, $\tilde Q\tilde Q^{*}$ central, and the root set of $0$ is the subfamily the centrality cuts out, a complex cone on the real unit sphere of the quaternion subspace, of real dimension five. It is not inside the cone: it contains the unit $e_t$, which lies off the cone, and the cone meets it at the origin alone. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{AQA}$, the antisymmetric quaternionic algebra
+### $\mathrm{aqa}$, the antisymmetric quaternionic algebra
 
 The product is the commutator $\tilde\Xi\wedge^{\natural}\tilde Q_2=\tfrac12(\tilde\Xi^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde\Xi)$, alternating, so its square vanishes identically. The root set of $0$ is the whole space, the punctured space being the zero-divisor set. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra
+### $\mathrm{aqs}$, the antisymmetric quaternionic sesqualgebra
 
 The product is the antisymmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde\Xi^{*}})$, whose values are pure elements; the equation of the value $0$ is the vanishing of the coefficientwise imaginary part of the Hermitian square, and the root set of $0$ is the set of the elements whose vector part is a complex multiple of a real direction, a cone of real dimension six with a free scalar coordinate. It is not inside the cone and it meets the cone: it contains the unit $e_t$, which lies off the cone, and the element $e_t+i\vec e_x$, which lies on it. The article is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
@@ -154,15 +154,15 @@ the least such $k$ being the **index of nilpotency**, and an element of index tw
 
 The root set of $0$ of a structure is the set of its square-zero elements, the origin included, so the comparison of the twelve root sets of $0$ of §*The Twelve Structures and the Roots of Zero* is the comparison of the twelve square-zero sets.
 
-**Theorem (the twelve square-zero sets).** Among the twelve structures the square-zero set is the pure isotropic cone for $\mathrm{GPA}$ and $\mathrm{SPA}$; the origin alone for $\mathrm{GPS}$ and $\mathrm{SPS}$; the whole cone $\mathcal{N}$ for $\mathrm{GQA}$ and $\mathrm{SQA}$; the proper subfamily $\overline{\tilde Q}\tilde Q=0$ of the cone for $\mathrm{GQS}$ and $\mathrm{SQS}$; the subfamily the centrality of the Hermitian square cuts out for $\mathrm{APS}$; the subfamily the vanishing of its coefficientwise imaginary part cuts out for $\mathrm{AQS}$; and the whole space for $\mathrm{APA}$ and $\mathrm{AQA}$.
+**Theorem (the twelve square-zero sets).** Among the twelve structures the square-zero set is the pure isotropic cone for $\mathrm{gpa}$ and $\mathrm{spa}$; the origin alone for $\mathrm{gps}$ and $\mathrm{sps}$; the whole cone $\mathcal{N}$ for $\mathrm{gqa}$ and $\mathrm{sqa}$; the proper subfamily $\overline{\tilde Q}\tilde Q=0$ of the cone for $\mathrm{gqs}$ and $\mathrm{sqs}$; the subfamily the centrality of the Hermitian square cuts out for $\mathrm{aps}$; the subfamily the vanishing of its coefficientwise imaginary part cuts out for $\mathrm{aqs}$; and the whole space for $\mathrm{apa}$ and $\mathrm{aqa}$.
 
-*Proof.* The plain square is that of §*The Four Sets of the Four General Products* for $\mathrm{SPA}$, and the central square for $\mathrm{SQA}$, so the two symmetric bilinear structures inherit the sets of their general partners. For the sesquilinear pairs the symmetric parts are the central forms, so their square-zero sets are those of the general structures at the two equal arguments, which is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* for the fourth product. The two alternating structures are the whole space by definition, and the two definite sesquilinear structures are the origin alone by the definiteness of their scalar part.
+*Proof.* The plain square is that of §*The Four Sets of the Four General Products* for $\mathrm{spa}$, and the central square for $\mathrm{sqa}$, so the two symmetric bilinear structures inherit the sets of their general partners. For the sesquilinear pairs the symmetric parts are the central forms, so their square-zero sets are those of the general structures at the two equal arguments, which is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* for the fourth product. The two alternating structures are the whole space by definition, and the two definite sesquilinear structures are the origin alone by the definiteness of their scalar part.
 
 The twelve sets read the ways a square operator can be too large, too small, or outside the cone. The two alternating squares are the whole space, because they vanish identically; the two **central** squares are the whole cone, because the central square is the vanishing of the norm; the two **plain** squares are the pure isotropic cone, one component of the cone singled out by the vanishing of the scalar part. The two **fourth** squares are a proper subfamily of the cone, cut out by the one-sided equation $\overline{\tilde Q}\tilde Q=0$, and the two **symmetric sesquilinear** squares are the origin alone, their scalar part being definite. The two **antisymmetric sesquilinear** squares are the two sets that lie outside the cone, the centrality of the Hermitian square for one, the vanishing of its coefficientwise imaginary part for the other, and those two are the sets of §*The Twelve Structures and the Roots of Zero* that are neither inside the cone nor disjoint from it.
 
 ### Where the Square Detects the Zero Divisors
 
-**Proposition (where the square detects the zero divisors).** The root set of $0$ of a structure and its zero-divisor set agree on the non-zero elements exactly for $\mathrm{APA}$, $\mathrm{AQA}$ and $\mathrm{GQA}$: for the two alternating structures, whose zero-divisor set is the whole punctured space and whose square vanishes identically, and for the natural product, whose square is the central square and whose zero-divisor set is the cone. Every other structure has a square-zero set strictly smaller than its zero-divisor set, and the four of them that carry a square of an antisymmetric sesquilinear structure or of a definite sesquilinear structure see their zero divisors in a part that either crosses the cone or misses it entirely (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
+**Proposition (where the square detects the zero divisors).** The root set of $0$ of a structure and its zero-divisor set agree on the non-zero elements exactly for $\mathrm{apa}$, $\mathrm{aqa}$ and $\mathrm{gqa}$: for the two alternating structures, whose zero-divisor set is the whole punctured space and whose square vanishes identically, and for the natural product, whose square is the central square and whose zero-divisor set is the cone. Every other structure has a square-zero set strictly smaller than its zero-divisor set, and the four of them that carry a square of an antisymmetric sesquilinear structure or of a definite sesquilinear structure see their zero divisors in a part that either crosses the cone or misses it entirely (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
 The remark is the sharpest form of the warning that the square is not the norm. The square-zero elements are the zero divisors the square can see, and the square sees all of them only when it vanishes identically or is the central square. The plain product sees its pure nilpotents and misses the complex multiples of its non-trivial idempotents; the general plain sesquilinear product and the general quaternionic sesquilinear product miss the cone entirely or in part; and the two structures of a definite square, whose square is the best behaved of the twelve, see none of the zero divisors they have.
 
@@ -174,18 +174,18 @@ The three tables below collect the root sets of $0$, the four sets of the genera
 
 | the family | the structure | the square | the root set of $0$ |
 |---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\tilde\Xi^{2}$ | the pure isotropic cone $Q_t=0$, $(\vec Q,\vec Q)=0$, real dimension $4$ |
-| the plain sesqualgebra | $\mathrm{GPS}$ | $\tilde\Xi\tilde\Xi^{*}$ | the origin alone |
-| the quaternionic algebra | $\mathrm{GQA}$ | $C(\tilde\Xi)e_t$ | the cone $\mathcal{N}$, real dimension $6$ |
-| the quaternionic sesqualgebra | $\mathrm{GQS}$ | of scalar part $\Delta$ | the family $\overline{\tilde Q}\tilde Q=0$, real dimension $4$ |
-| the plain algebra | $\mathrm{SPA}$ | $\tilde\Xi^{2}$ | the pure isotropic cone, the set of $\mathrm{GPA}$ |
-| the plain sesqualgebra | $\mathrm{SPS}$ | $\langle\tilde\Xi\rangle_{*}e_t$ | the origin alone |
-| the quaternionic algebra | $\mathrm{SQA}$ | $C(\tilde\Xi)e_t$ | the cone $\mathcal{N}$, real dimension $6$ |
-| the quaternionic sesqualgebra | $\mathrm{SQS}$ | the coefficientwise real part | the cone $\alpha(e_t+\tilde\Xi)$, real dimension $4$ |
-| the plain algebra | $\mathrm{APA}$ | $0$ | the whole space |
-| the plain sesqualgebra | $\mathrm{APS}$ | a pure element | the elements with $\tilde Q\tilde Q^{*}$ central, real dimension $5$ |
-| the quaternionic algebra | $\mathrm{AQA}$ | $0$ | the whole space |
-| the quaternionic sesqualgebra | $\mathrm{AQS}$ | a pure element | the elements of real dimension $6$ whose vector part is a complex multiple of a real direction |
+| the plain algebra | $\mathrm{gpa}$ | $\tilde\Xi^{2}$ | the pure isotropic cone $Q_t=0$, $(\vec Q,\vec Q)=0$, real dimension $4$ |
+| the plain sesqualgebra | $\mathrm{gps}$ | $\tilde\Xi\tilde\Xi^{*}$ | the origin alone |
+| the quaternionic algebra | $\mathrm{gqa}$ | $C(\tilde\Xi)e_t$ | the cone $\mathcal{N}$, real dimension $6$ |
+| the quaternionic sesqualgebra | $\mathrm{gqs}$ | of scalar part $\Delta$ | the family $\overline{\tilde Q}\tilde Q=0$, real dimension $4$ |
+| the plain algebra | $\mathrm{spa}$ | $\tilde\Xi^{2}$ | the pure isotropic cone, the set of $\mathrm{gpa}$ |
+| the plain sesqualgebra | $\mathrm{sps}$ | $\langle\tilde\Xi\rangle_{*}e_t$ | the origin alone |
+| the quaternionic algebra | $\mathrm{sqa}$ | $C(\tilde\Xi)e_t$ | the cone $\mathcal{N}$, real dimension $6$ |
+| the quaternionic sesqualgebra | $\mathrm{sqs}$ | the coefficientwise real part | the cone $\alpha(e_t+\tilde\Xi)$, real dimension $4$ |
+| the plain algebra | $\mathrm{apa}$ | $0$ | the whole space |
+| the plain sesqualgebra | $\mathrm{aps}$ | a pure element | the elements with $\tilde Q\tilde Q^{*}$ central, real dimension $5$ |
+| the quaternionic algebra | $\mathrm{aqa}$ | $0$ | the whole space |
+| the quaternionic sesqualgebra | $\mathrm{aqs}$ | a pure element | the elements of real dimension $6$ whose vector part is a complex multiple of a real direction |
 
 Read against the whole space, the table has three kinds of entry: the whole space for the two alternating structures, whose square vanishes; the origin alone for the two definite sesquilinear structures, whose square is definite; and a genuine cone in the other eight rows, the cone being the whole cone for the two central squares, its pure part for the two plain squares, the subfamily $\overline{\tilde Q}\tilde Q=0$ for the two fourth squares, and the two crossing subfamilies for the two antisymmetric sesquilinear squares.
 
@@ -193,10 +193,10 @@ Read against the whole space, the table has three kinds of entry: the whole spac
 
 | the product | the root set of $0$ | the real dimension | a witness |
 |---|---|---|---|
-| $\mathrm{GPA}$, $\tilde\Xi\tilde Q_2$ | the pure isotropic cone | $4$ | $\vec e_x+i\vec e_y$ |
-| $\mathrm{GPS}$, $\tilde\Xi\tilde Q_2^{*}$ | the origin | $0$ | none |
-| $\mathrm{GQA}$, $\tilde\Xi^{\natural}\tilde Q_2$ | the cone $\mathcal{N}$ | $6$ | $e_t+i\vec e_x$ |
-| $\mathrm{GQS}$, $\tilde\Xi^{\natural}\tilde Q_2^{*}$ | the subfamily $\overline{\tilde Q}\tilde Q=0$ | $4$ | $e_t+i\vec e_x$ |
+| $\mathrm{gpa}$, $\tilde\Xi\tilde Q_2$ | the pure isotropic cone | $4$ | $\vec e_x+i\vec e_y$ |
+| $\mathrm{gps}$, $\tilde\Xi\tilde Q_2^{*}$ | the origin | $0$ | none |
+| $\mathrm{gqa}$, $\tilde\Xi^{\natural}\tilde Q_2$ | the cone $\mathcal{N}$ | $6$ | $e_t+i\vec e_x$ |
+| $\mathrm{gqs}$, $\tilde\Xi^{\natural}\tilde Q_2^{*}$ | the subfamily $\overline{\tilde Q}\tilde Q=0$ | $4$ | $e_t+i\vec e_x$ |
 
 The four sets are ordered by the two chains of §*The Order of the Four Sets*, and no one of them is empty, which is the presence common to the twelve structures of the space: the value $0$ is the only value at which all twelve have a root.
 
@@ -219,7 +219,7 @@ The two families are disjoint except at the shared origin, and both are needed f
 
 The root of the central value $\lambda e_t$ in a structure is the solution of the equation $\tilde\Xi\star\tilde\Xi=\lambda e_t$, and this article reads the value $0$, the only value every one of the twelve structures reaches. For the four general products the root sets of $0$ are four sets: the pure isotropic cone $Q_t=0$, $(\vec Q,\vec Q)=0$, of real dimension four, which is the nilpotent cone of the plain product; the origin alone for the general plain sesquilinear product, whose square has the definite scalar part $H$; the whole cone $\mathcal{N}=\{C=0\}$, of real dimension six, for the natural product; and the subfamily $\overline{\tilde Q}\tilde Q=0$ of the cone, of real dimension four, for the general quaternionic sesquilinear product. The four are ordered by $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$ and $Z_3\subsetneq Z_4\subsetneq Z_2$, with $Z_1$ and $Z_4$ incomparable and meeting at the origin, and each is a complex cone with the origin as its apex.
 
-Among the twelve structures the square-zero set is the pure isotropic cone for $\mathrm{GPA}$ and $\mathrm{SPA}$, the origin alone for $\mathrm{GPS}$ and $\mathrm{SPS}$, the whole cone for $\mathrm{GQA}$ and $\mathrm{SQA}$, the subfamily $\overline{\tilde Q}\tilde Q=0$ of the cone for $\mathrm{GQS}$ and $\mathrm{SQS}$, for the two antisymmetric sesquilinear structures two subfamilies, one each, that lie outside the cone: the elements whose Hermitian square is central for $\mathrm{APS}$, with the origin its only element of the cone, and the elements whose Hermitian square has vanishing coefficientwise imaginary part for $\mathrm{AQS}$, which contains the unit $e_t$ off the cone and the element $e_t+i\vec e_x$ on it, and the whole space for the two alternating structures $\mathrm{APA}$ and $\mathrm{AQA}$. The non-zero roots of $0$ are the zero divisors of the algebra, and the square detects the zero-divisor set whole only for the two alternating structures and the natural product.
+Among the twelve structures the square-zero set is the pure isotropic cone for $\mathrm{gpa}$ and $\mathrm{spa}$, the origin alone for $\mathrm{gps}$ and $\mathrm{sps}$, the whole cone for $\mathrm{gqa}$ and $\mathrm{sqa}$, the subfamily $\overline{\tilde Q}\tilde Q=0$ of the cone for $\mathrm{gqs}$ and $\mathrm{sqs}$, for the two antisymmetric sesquilinear structures two subfamilies, one each, that lie outside the cone: the elements whose Hermitian square is central for $\mathrm{aps}$, with the origin its only element of the cone, and the elements whose Hermitian square has vanishing coefficientwise imaginary part for $\mathrm{aqs}$, which contains the unit $e_t$ off the cone and the element $e_t+i\vec e_x$ on it, and the whole space for the two alternating structures $\mathrm{apa}$ and $\mathrm{aqa}$. The non-zero roots of $0$ are the zero divisors of the algebra, and the square detects the zero-divisor set whole only for the two alternating structures and the natural product.
 
 The nilpotents are the non-zero square-zero elements, that is the nilpotents of index two. Self-annihilation, $\tilde Q\star\tilde Q=0$ exactly when $\tilde Q$ lies in its own annihilator, holds in each of the four general products; the converse that fails is the cone for the fourth product, the element $ie_t+\vec e_x+\vec e_y+i\vec e_z$ lying in the cone and not in the set. The root set of $0$ is the only root set the scaling does not move, and it is the cone of the square: the whole space where the square vanishes, the whole cone where the square is the central square, one component of the cone where the square is the plain square, and the origin alone where the square is definite.
 
@@ -236,7 +236,7 @@ The nilpotents are the non-zero square-zero elements, that is the nilpotents of 
 | $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvert\Xi_\mu\rvert^{2}$ | the Krein value, the scalar part of the fourth product's square |
 | $\tilde\Upsilon\star\tilde\Upsilon=0$, $\tilde\Upsilon\neq0$ | a square-zero element, or nilpotent of index two, of the product at hand |
 | $A_\star(\tilde Q)$, $B_\star(\tilde Q)$ | the left and right annihilators of $\tilde Q$ in the product at hand |
-| $\mathrm{GPA},\dots,\mathrm{AQS}$ | the twelve structures of the space, the four general products and their eight parts |
+| $\mathrm{gpa},\dots,\mathrm{aqs}$ | the twelve structures of the space, the four general products and their eight parts |
 
 ## Further Reading
 

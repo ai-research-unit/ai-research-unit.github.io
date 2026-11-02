@@ -80,7 +80,7 @@ which extends to a biholomorphism of a neighbourhood of the base point with $c(0
 **Theorem (the Siegel upper half-plane).** For $G = Sp(n,\mathbb{R})$ the cone is the cone of the positive definite symmetric matrices, the tube domain is the Siegel upper half-plane
 
 $$
-\boxed{\;\mathcal{H}_n = \bigl\{Z\in\operatorname{Sym}_n(\mathbb{C}) : \operatorname{Im}Z>0\bigr\}\;} ,
+\boxed{\;\mathcal{H}_n = \bigl\{Z\in\operatorname{sym}_n(\mathbb{C}) : \operatorname{Im}Z>0\bigr\}\;} ,
 $$
 
 and the group acts by the fractional linear transformations $Z\mapsto (AZ+B)(CZ+D)^{-1}$; the bounded realisation is the corresponding bounded symmetric domain of rank $n$.

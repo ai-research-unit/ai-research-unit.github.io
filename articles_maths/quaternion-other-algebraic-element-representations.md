@@ -23,7 +23,7 @@ $$
 
 *Proof.* The action is a representation because $\operatorname{Mat}$ is multiplicative, and it is faithful because $\operatorname{Mat}$ is injective. For a unit $u$, $\operatorname{Mat}(u)$ is $*$-unitary by *Quaternion 2x2 Matrix Element Representation*, so the restriction is a $*$-unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ lies in $M_2(\mathbb{C})$, the complex span of $\operatorname{Mat}(\mathbb{H})$, and the algebra acts transitively on non-zero vectors.
 
-**Proposition.** The spinor representation is the fundamental representation of $Sp(1)$ and is the source of the double cover $Sp(1)\to SO(3)$: the adjoint (three-dimensional) representation is the symmetric square of the spinor representation, and the tensor square decomposes as $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathrm{Sym}^2\oplus\Lambda^2$, of dimensions three and one.
+**Proposition.** The spinor representation is the fundamental representation of $Sp(1)$ and is the source of the double cover $Sp(1)\to SO(3)$: the adjoint (three-dimensional) representation is the symmetric square of the spinor representation, and the tensor square decomposes as $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathrm{sym}^2\oplus\Lambda^2$, of dimensions three and one.
 
 *Proof.* The twofold symmetric square of the defining representation of $SU(2)$ is the three-dimensional irreducible representation, which is the adjoint representation on $\operatorname{Im}\mathbb{H}$; the alternating square is one-dimensional and trivial because the invariant antisymmetric form $\epsilon = i\sigma_2$ exists.
 
@@ -100,7 +100,7 @@ The regular module of $\mathbb{H}$ is simple, with endomorphism ring $\mathbb{H}
 | $\operatorname{Mat} : \mathbb{H}\to M_2(\mathbb{C})$ | Matrix realization, used for the spinor action |
 | $\tilde q\cdot v = \operatorname{Mat}(\tilde q)v$, $v\in\mathbb{C}^2$ | Spinor representation |
 | $Sp(1)\cong SU(2)$ | Unit quaternions, the spin group |
-| $\mathrm{Sym}^2,\Lambda^2$ | Symmetric and alternating squares of the spinor module |
+| $\mathrm{sym}^2,\Lambda^2$ | Symmetric and alternating squares of the spinor module |
 | $\mathrm{Cl}(V,\tilde q)$, $\mathrm{Cl}_{p,\tilde q}$, $\mathrm{Cl}^0$ | Clifford algebra, real signature form, even part |
 | $\mathbb{H}\cong\mathrm{Cl}_{0,2}\cong\mathrm{Cl}^0_{0,3}$ | Clifford identifications |
 | $\mathrm{Cl}^0_{3,0}\cong M_2(\mathbb{R})$ | The other real form, not isomorphic to $\mathbb{H}$ |

@@ -32,7 +32,7 @@ The vector subspace is the complex span of $\vec e_x,\vec e_y,\vec e_z$, with re
 
 The quaternion subspace is the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$, of real coefficients. The block is **stable** on it: two real vector parts have a real cross product, which lies in $\mathbb{H}_{\mathbb{B}}\cap\mathrm{Vect}(\mathbb{B})$, the real vector directions. On this subspace the block is the ordinary cross product of the real vector parts,
 
-$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{APA}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}) \;}, $$
+$$ \boxed{\; \tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{apa}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}) \;}, $$
 
 the real coincidence of the block, and its image is the three real dimensions of the real vector directions. The diagonal is **identically zero**, a real vector being its own conjugate.
 
@@ -89,7 +89,7 @@ that is, exactly when the vector part of one is a complex multiple of the conjug
 
 ## Summary
 
-On the remarkable subspaces the block vanishes identically on the centre, has its image in the vector subspace, and is stable on the centre, the vector subspace, the quaternion subspace and the anti-Hermitian subspace, failing closure on the anti-quaternion subspace and the Hermitian subspace; the reason is that the value of two imaginary vector parts is a real vector, which leaves the two subspaces whose vector directions are imaginary. On the quaternion and the anti-Hermitian subspaces the block is the ordinary cross product of the real vector parts, the real coincidence with $\mathrm{APA}$. The diagonal is identically zero on the centre and on the four four-dimensional subspaces, and is not identically zero on the vector subspace, where it vanishes exactly on the complex multiples of the real directions. The value of two elements vanishes exactly when their vector parts are conjugate-linearly dependent, so the annihilator of an element is a complex plane through the origin, the centre together with a complex line, unless the element is central, and the block has no unit.
+On the remarkable subspaces the block vanishes identically on the centre, has its image in the vector subspace, and is stable on the centre, the vector subspace, the quaternion subspace and the anti-Hermitian subspace, failing closure on the anti-quaternion subspace and the Hermitian subspace; the reason is that the value of two imaginary vector parts is a real vector, which leaves the two subspaces whose vector directions are imaginary. On the quaternion and the anti-Hermitian subspaces the block is the ordinary cross product of the real vector parts, the real coincidence with $\mathrm{apa}$. The diagonal is identically zero on the centre and on the four four-dimensional subspaces, and is not identically zero on the vector subspace, where it vanishes exactly on the complex multiples of the real directions. The value of two elements vanishes exactly when their vector parts are conjugate-linearly dependent, so the annihilator of an element is a complex plane through the origin, the centre together with a complex line, unless the element is central, and the block has no unit.
 
 ## Summary of Notation
 

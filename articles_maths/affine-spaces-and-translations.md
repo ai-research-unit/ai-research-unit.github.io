@@ -63,7 +63,7 @@ $$
 t_v:\mathbb{A} \longrightarrow \mathbb{A}, \qquad t_v(a)=a+v .
 $$
 
-**Proposition.** (i) $t_0=\operatorname{id}_{\mathbb{A}}$ and $t_v \circ t_w=t_{v+w}$, so $v \mapsto t_v$ is an injective homomorphism $(V,+) \to \operatorname{Sym}(\mathbb{A})$; the image $T(\mathbb{A})=\{t_v\}$ is the **translation group**, isomorphic to $(V,+)$ and normal in the group of all affine automorphisms.
+**Proposition.** (i) $t_0=\operatorname{id}_{\mathbb{A}}$ and $t_v \circ t_w=t_{v+w}$, so $v \mapsto t_v$ is an injective homomorphism $(V,+) \to \operatorname{sym}(\mathbb{A})$; the image $T(\mathbb{A})=\{t_v\}$ is the **translation group**, isomorphic to $(V,+)$ and normal in the group of all affine automorphisms.
 
 (ii) For $v \neq 0$, the translation $t_v$ has no fixed point.
 

@@ -81,7 +81,7 @@ and the fixed locus is a projective space over the fixed field $K$ of the same d
 
 **Proof.** Two real forms of $V$ of the same dimension are isomorphic as $K$-vector spaces, and an isomorphism extends to an $L$-linear automorphism carrying one real structure to the other, so the first-kind structures are conjugate; for the second kind the same argument applies to the quaternion modules. The stabiliser is the group of the $K$-linear automorphisms of the real form, which is the fixed subgroup of the involution on $PGL(V)$, and it is a real form in the sense of the Galois descent. The statement is the Galois descent of the projective group, in *Real Forms and the Descent of an Algebra*.
 
-**Remark (the Galois cohomology).** The real forms of the projective space are the elements of the first Galois cohomology set $H^1(\operatorname{Gal}(L/K), PGL_{n+1}(L))$, and the theorem above is the statement that the two kinds of structure correspond to the two classes of the cohomology for the quadratic extension; the real forms of the classical groups are the same computation for the other groups, and they are *Real Forms of a Complex Lie Group and the Cartan Involution* of Part III and the theory of the classical groups. The article keeps the projective case and names the general theory.
+**Remark (the Galois cohomology).** The real forms of the projective space are the elements of the first Galois cohomology set $H^1(\operatorname{gal}(L/K), PGL_{n+1}(L))$, and the theorem above is the statement that the two kinds of structure correspond to the two classes of the cohomology for the quadratic extension; the real forms of the classical groups are the same computation for the other groups, and they are *Real Forms of a Complex Lie Group and the Cartan Involution* of Part III and the theory of the classical groups. The article keeps the projective case and names the general theory.
 
 ## The Fixed Subgroup and the Operator Group
 
@@ -117,7 +117,7 @@ A real structure on an $L$-vector space $V$ over a quadratic extension is an ant
 | $\mathbb{P}(V)^{[\sigma]} = \mathbb{P}(V^\sigma)$ | Real points |
 | $\mathbb{P}^n(\mathbb{R})$ | Real points of the standard structure on $\mathbb{P}^n(\mathbb{C})$ |
 | $PGL(V)^{[\sigma]} = PGL(V^\sigma)$ | Fixed subgroup, the real projective group |
-| $H^1(\operatorname{Gal}(L/K), PGL(V))$ | Galois cohomology classifying the real forms |
+| $H^1(\operatorname{gal}(L/K), PGL(V))$ | Galois cohomology classifying the real forms |
 
 ## Further Reading
 

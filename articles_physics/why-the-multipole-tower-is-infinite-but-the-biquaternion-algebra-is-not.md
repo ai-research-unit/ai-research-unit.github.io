@@ -153,12 +153,12 @@ The tower is real, so it must live somewhere. There are five equivalent descript
 **(ii) The symmetric traceless tensor powers.** The order-$l$ moment is a symmetric traceless rank-$l$ tensor over the vector part,
 
 $$
-\operatorname{Sym}^l_0(D^{(1)}) \cong D^{(l)} ,
+\operatorname{sym}^l_0(D^{(1)}) \cong D^{(l)} ,
 \qquad
-\dim_{\mathbb{C}}\operatorname{Sym}^l_0(D^{(1)}) = 2l+1 ,
+\dim_{\mathbb{C}}\operatorname{sym}^l_0(D^{(1)}) = 2l+1 ,
 $$
 
-which for $l = 2$ is the $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$ of the quadrupole. The tower is the collection of all these tensor powers, and the space they span is infinite-dimensional. The algebra $\mathbb{B}$ is the $l\leq1$ part of this collection; the higher powers live outside it.
+which for $l = 2$ is the $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ of the quadrupole. The tower is the collection of all these tensor powers, and the space they span is infinite-dimensional. The algebra $\mathbb{B}$ is the $l\leq1$ part of this collection; the higher powers live outside it.
 
 **(iii) The universal enveloping algebra.** The rotation generators $\tilde S_1, \tilde S_2, \tilde S_3$ (equivalently, the algebra elements $\vec e_k$ with their commutators) generate the universal enveloping algebra $U(\mathrm{SU}(2))$, whose elements are the polynomials in the generators. By the Poincaré–Birkhoff–Witt theorem it has a basis of ordered monomials and is **infinite-dimensional**, and it carries every irreducible representation $D^{(l)}$, because each $D^{(l)}$ is generated from a highest-weight vector by repeated application of the lowering generator. The enveloping algebra is an algebra — not merely a function space — that does contain the whole tower as its finite-dimensional modules, and it is exactly the enlargement the multipole series calls for. It is infinite-dimensional, and it must be.
 
@@ -255,7 +255,7 @@ The multipole tower is infinite and the biquaternion algebra is finite, and ther
 
 As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its centre is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \chi_0+\chi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\vec\nabla\vec\nabla = -\Delta\,e_t$, so the composition of two derivatives also keeps only the trace.
 
-The tower lives in the function space, in the symmetric traceless tensor powers $\operatorname{Sym}^l_0(D^{(1)})\cong D^{(l)}$, in the harmonic polynomials $r^lY_{lm}$, in the differential-operator algebra, and in the universal enveloping algebra $U(\mathrm{SU}(2))$, all infinite-dimensional; and the multipole moments are functionals of the source, not elements of the value algebra. A general no-go statement follows by dimension counting: no finite-dimensional complex algebra on which the rotation group acts by automorphisms can contain $D^{(l)}$ for all $l$ as subquotients of its rotation module, because a finite-dimensional module has only finitely many composition factors and the $D^{(l)}$ are pairwise non-isomorphic. Enlarging the algebra buys finitely many higher orders and no more — $M_3(\mathbb{C})$ contains $D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ but costs the two-dimensional spinor module — and only an infinite-dimensional algebra carries the whole tower.
+The tower lives in the function space, in the symmetric traceless tensor powers $\operatorname{sym}^l_0(D^{(1)})\cong D^{(l)}$, in the harmonic polynomials $r^lY_{lm}$, in the differential-operator algebra, and in the universal enveloping algebra $U(\mathrm{SU}(2))$, all infinite-dimensional; and the multipole moments are functionals of the source, not elements of the value algebra. A general no-go statement follows by dimension counting: no finite-dimensional complex algebra on which the rotation group acts by automorphisms can contain $D^{(l)}$ for all $l$ as subquotients of its rotation module, because a finite-dimensional module has only finitely many composition factors and the $D^{(l)}$ are pairwise non-isomorphic. Enlarging the algebra buys finitely many higher orders and no more — $M_3(\mathbb{C})$ contains $D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ but costs the two-dimensional spinor module — and only an infinite-dimensional algebra carries the whole tower.
 
 The finite algebra is finite because it is the local value space; the tower is infinite because the theory is a field theory. The quadrupole is not an algebra element because it is a feature of the field's angular map and not of the algebra of its values.
 
@@ -272,7 +272,7 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ |
 | $D^{(l)}$ | Irreducible rotation representation, $\dim_{\mathbb{C}} D^{(l)} = 2l+1$ (Wigner's $D$) |
 | $L^2(S^2) = \bigoplus_l D^{(l)}$ | Angular function space (infinite-dimensional) |
-| $\operatorname{Sym}^l_0(D^{(1)})\cong D^{(l)}$ | Symmetric traceless $l$-th power of the vector part |
+| $\operatorname{sym}^l_0(D^{(1)})\cong D^{(l)}$ | Symmetric traceless $l$-th power of the vector part |
 | $r^lY_{lm}$ | Solid harmonics: the harmonic polynomials of degree $l$ |
 | $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ | Clebsch–Gordan decomposition |
 | $\vec\nabla\vec\nabla = -\Delta\,e_t$ | The truncated second gradient |

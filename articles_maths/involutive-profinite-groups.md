@@ -45,7 +45,7 @@ the limits taken over the stable $N$, and the fixed subgroup of the limit is the
 
 ## Galois-Theoretic Examples
 
-**Example (complex conjugation at a real place).** Let $K$ be a field with an order-two element $\tau$ of its absolute Galois group $G_K = \operatorname{Gal}(\bar K/K)$, the case of complex conjugation at a real place. The inner automorphism $c_\tau$ is a continuous involution of the profinite group $G_K$, and its fixed subgroup is the centraliser $C_{G_K}(\tau)$, which under the Galois correspondence is the decomposition group of the place; the closed subgroup $C_{G_K}(\tau)$ is the Galois group of the corresponding residue extension, and it is open exactly when the place is discrete with finite residue field.
+**Example (complex conjugation at a real place).** Let $K$ be a field with an order-two element $\tau$ of its absolute Galois group $G_K = \operatorname{gal}(\bar K/K)$, the case of complex conjugation at a real place. The inner automorphism $c_\tau$ is a continuous involution of the profinite group $G_K$, and its fixed subgroup is the centraliser $C_{G_K}(\tau)$, which under the Galois correspondence is the decomposition group of the place; the closed subgroup $C_{G_K}(\tau)$ is the Galois group of the corresponding residue extension, and it is open exactly when the place is discrete with finite residue field.
 
 **Proof.** The centraliser of an element of order two is closed because it is the fixed set of the continuous automorphism $c_\tau$; under the Galois correspondence a closed subgroup corresponds to an intermediate extension of $\bar K/K$, and the identification with the decomposition group is the standard dictionary of valuation theory, which Part I's Galois theory supplies.
 
@@ -74,7 +74,7 @@ A continuous involution of a profinite group is exactly a compatible system of i
 | $G^\sigma \cong \varprojlim_N (G/N)^\sigma$ | the fixed set as the limit of the finite fixed sets |
 | $H = G^\alpha = I(\sigma)$ | the closed fixed subgroup |
 | $[G:H]$ | the index; $H$ is open iff the index is finite |
-| $G_K = \operatorname{Gal}(\bar K/K)$ | an absolute Galois group, profinite |
+| $G_K = \operatorname{gal}(\bar K/K)$ | an absolute Galois group, profinite |
 | $C_{G_K}(\tau)$ | the centraliser of an order-two element, the decomposition group |
 | $c_\tau\iota$ | the anti-involution attached to complex conjugation |
 | $\hat\Gamma$ | the profinite completion of an abstract group $\Gamma$ |

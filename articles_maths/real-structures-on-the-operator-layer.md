@@ -15,7 +15,7 @@ Throughout $L/k$ is a finite Galois extension with group $G$, $X$ is a variety o
 
 **Definition.** The **operator layer** of $X_L$ is the sheaf of algebras $\mathcal{D}_{X_L}$ of the differential operators of *The Sheaf of Differential Operators*, with the multiplication the composition, the unit the identity, and the order filtration $\mathcal{D}^m$. When only the zeroth order is used it is the structure sheaf $\mathcal{D}^0 = \mathcal{O}_{X_L}$, with the multiplication operators of *Operators on a Variety*; when only the first order is used it is $\mathcal{O}_{X_L}\oplus\mathcal{T}_{X_L}$, with the derivations.
 
-**Proposition (the operator layer of the structure sheaf).** The layer $\mathcal{D}_{X_L}$ is generated over $\mathcal{O}_{X_L}$ by the derivations $\mathcal{T}_{X_L}$, with the relations of *The Sheaf of Differential Operators*; its associated graded is $\operatorname{gr}\mathcal{D}_{X_L}\cong\operatorname{Sym}_{\mathcal{O}_{X_L}}\mathcal{T}_{X_L}$, and the order filtration is preserved by every algebra automorphism that preserves $\mathcal{O}_{X_L}$ and $\mathcal{T}_{X_L}$.
+**Proposition (the operator layer of the structure sheaf).** The layer $\mathcal{D}_{X_L}$ is generated over $\mathcal{O}_{X_L}$ by the derivations $\mathcal{T}_{X_L}$, with the relations of *The Sheaf of Differential Operators*; its associated graded is $\operatorname{gr}\mathcal{D}_{X_L}\cong\operatorname{sym}_{\mathcal{O}_{X_L}}\mathcal{T}_{X_L}$, and the order filtration is preserved by every algebra automorphism that preserves $\mathcal{O}_{X_L}$ and $\mathcal{T}_{X_L}$.
 
 *Proof.* The generation and the isomorphism of the graded algebra are those of *The Sheaf of Differential Operators*; an algebra automorphism preserving the functions and the derivations preserves the order, hence the filtration and the graded algebra.
 
@@ -78,7 +78,7 @@ $$
 
 *Proof.* An operator on $X_L$ that is fixed by every $\sigma\in G$ is an operator whose coefficients are fixed, hence defined over $k$; the sheaf of the fixed operators is the descent of $\mathcal{D}_{X_L}$ along the base change, by the descent of the module category and of the algebra structure of Part I's *Descent Theory* and *Real Forms and the Descent of an Algebra*. On an affine chart the statement is that the $G$-invariants of the Weyl-type algebra $A\otimes_kL$ are $A$, computed from the coefficients by the fixed-point theorem of *The Galois Action as an Operator*.
 
-**Corollary (the fixed derivations and the fixed differential operators).** The fixed derivations are the derivations of $X$, $\mathcal{T}_{X_L}^G = \mathcal{T}_X$, and the fixed differential operators of order at most $m$ are $\mathcal{D}_X^m$; the fixed part of the operator layer is a $\mathcal{D}_X$-algebra, and the associated graded of the fixed part is $\operatorname{Sym}_{\mathcal{O}_X}\mathcal{T}_X$.
+**Corollary (the fixed derivations and the fixed differential operators).** The fixed derivations are the derivations of $X$, $\mathcal{T}_{X_L}^G = \mathcal{T}_X$, and the fixed differential operators of order at most $m$ are $\mathcal{D}_X^m$; the fixed part of the operator layer is a $\mathcal{D}_X$-algebra, and the associated graded of the fixed part is $\operatorname{sym}_{\mathcal{O}_X}\mathcal{T}_X$.
 
 *Proof.* The derivations are the first-order operators and the fixed ones are the derivations defined over $k$ by the theorem; the order filtration restricts to the fixed part because the conjugation preserves it, and the associated graded is computed from the fixed functions and the fixed derivations.
 
@@ -118,7 +118,7 @@ so $(\mathrm{ad}_\sigma T)^{*} = \mathrm{ad}_\sigma(T^{*})$ by the uniqueness of
 
 ## Summary
 
-The **operator layer** of $X_L$ is the sheaf of algebras $\mathcal{D}_{X_L}$ of the differential operators, with the order filtration and the associated graded $\operatorname{Sym}_{\mathcal{O}}\mathcal{T}$. A **real structure** on it is a semilinear action of the Galois group by algebra automorphisms, realised by the geometric involution through the conjugation
+The **operator layer** of $X_L$ is the sheaf of algebras $\mathcal{D}_{X_L}$ of the differential operators, with the order filtration and the associated graded $\operatorname{sym}_{\mathcal{O}}\mathcal{T}$. A **real structure** on it is a semilinear action of the Galois group by algebra automorphisms, realised by the geometric involution through the conjugation
 $$
 \mathrm{ad}_\sigma(T) = \sigma^\sharp\circ T\circ(\sigma^\sharp)^{-1},
 $$
@@ -133,7 +133,7 @@ so the fixed derivations are the derivations of $X$. The conjugation is an **aut
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{D}_{X_L}$ | the operator layer: the sheaf of the differential operators |
-| $\operatorname{gr}\mathcal{D}\cong\operatorname{Sym}_{\mathcal{O}}\mathcal{T}$ | the associated graded; the symbol |
+| $\operatorname{gr}\mathcal{D}\cong\operatorname{sym}_{\mathcal{O}}\mathcal{T}$ | the associated graded; the symbol |
 | $\mathrm{ad}_\sigma(T)=\sigma^\sharp T(\sigma^\sharp)^{-1}$ | the conjugation by the geometric involution |
 | $\mathrm{ad}_\sigma(ST)=\mathrm{ad}_\sigma(S)\mathrm{ad}_\sigma(T)$ | the conjugation is an algebra automorphism |
 | $\mathrm{ad}_\sigma(fT)=\sigma(f)\mathrm{ad}_\sigma(T)$ | semilinearity over the structure sheaf |

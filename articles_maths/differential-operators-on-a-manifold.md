@@ -63,7 +63,7 @@ where $\xi^\alpha = \xi_1^{\alpha_1}\cdots\xi_n^{\alpha_n}$. This is the **princ
 **Proposition.** The expression $\sigma_k(P)(x,\xi)$ is independent of the chart and the frames, so the principal symbol is a smooth section
 
 $$
-\sigma_k(P) \in \Gamma\!\left(\operatorname{Sym}^k TM \otimes \operatorname{Hom}(E,F)\right),
+\sigma_k(P) \in \Gamma\!\left(\operatorname{sym}^k TM \otimes \operatorname{Hom}(E,F)\right),
 $$
 
 equivalently a smooth family of linear maps $\sigma_k(P)(x,\xi) : E_x \to F_x$ polynomial of degree $k$ in $\xi \in T^*_xM$. For $k = 0$ it is $P$ itself, read fibrewise; for every $k$ it depends on $P$ only through its part of order exactly $k$, so $\sigma_k$ is constant on the affine subspace $\{P + D^{k-1}(E,F)\}$.

@@ -301,7 +301,7 @@ The conventions below are those used throughout the corpus.
 | $G$; $R$; $k$, $F$; $V$; $M$; $A$ | A group; a ring; a field; a vector space; a module; an algebra |
 | $\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$ | Lie algebras |
 | $\mathrm{M}, \mathrm{P}$ | Ideals and prime ideals |
-| $\operatorname{Sym}(X), \operatorname{Aut}(X)$ | The symmetric group of a set; the automorphism group of a structure |
+| $\operatorname{sym}(X), \operatorname{Aut}(X)$ | The symmetric group of a set; the automorphism group of a structure |
 | $\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$ | Endomorphisms, derivations, inner and outer automorphisms |
 | $GL, SL, PGL, O, SO, U, SU, Sp$ | The classical groups |
 | $T(V), S(V), \Lambda(V), Cl(V,\mathfrak{Q})$ | Tensor, symmetric, exterior and Clifford algebras |

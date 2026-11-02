@@ -54,46 +54,46 @@ The four parents are stated first, in their four jobs; their two halves are then
 
 | the parent | the product | the square | the word | the unit |
 | --- | --- | --- | --- | --- |
-| $\mathrm{GPA}$ | $\tilde Q_1\tilde Q_2$ | $\tilde Q^{2}$ | composition | $e_t$ on both sides |
-| $\mathrm{GPS}$ | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q\tilde Q^{*}$, Hermitian and rank-bearing | probability | $e_t$ on the right alone |
-| $\mathrm{GQA}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde Q\rangle_{\natural}e_t$, central and signed | causality | $e_t$ on the left alone |
-| $\mathrm{GQS}$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the Krein value, indefinite | gauge | none |
+| $\mathrm{gpa}$ | $\tilde Q_1\tilde Q_2$ | $\tilde Q^{2}$ | composition | $e_t$ on both sides |
+| $\mathrm{gps}$ | $\tilde Q_1\tilde Q_2^{*}$ | $\tilde Q\tilde Q^{*}$, Hermitian and rank-bearing | probability | $e_t$ on the right alone |
+| $\mathrm{gqa}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde Q\rangle_{\natural}e_t$, central and signed | causality | $e_t$ on the left alone |
+| $\mathrm{gqs}$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the Krein value, indefinite | gauge | none |
 
-The general plain sesqualgebra $\mathrm{GPS}$ has the positive definite Hermitian form as its scalar part, and its square is the rank-bearing operator $\tilde Q\tilde Q^{*}$: it is the band of the state and the observable. The general quaternionic algebra $\mathrm{GQA}$ has the interval as its central square, and its null set is the causal cone: it is the band of the four-vector. The general quaternionic sesqualgebra $\mathrm{GQS}$ has the indefinite Krein form, whose isometry group is $\mathrm{U}(1,3)$ over $\mathbb{C}$ and $O(2,6)$ over $\mathbb{R}$: it is the band of admissible internal frames.
+The general plain sesqualgebra $\mathrm{gps}$ has the positive definite Hermitian form as its scalar part, and its square is the rank-bearing operator $\tilde Q\tilde Q^{*}$: it is the band of the state and the observable. The general quaternionic algebra $\mathrm{gqa}$ has the interval as its central square, and its null set is the causal cone: it is the band of the four-vector. The general quaternionic sesqualgebra $\mathrm{gqs}$ has the indefinite Krein form, whose isometry group is $\mathrm{U}(1,3)$ over $\mathbb{C}$ and $O(2,6)$ over $\mathbb{R}$: it is the band of admissible internal frames.
 
 | the structure | the parent | the product | the values | the word |
 | --- | --- | --- | --- | --- |
-| $\mathrm{SPA}$ | $\mathrm{GPA}$ | $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | the whole space | commutativity |
-| $\mathrm{SPS}$ | $\mathrm{GPS}$ | $\tfrac12(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}})$ | the centre | positivity |
-| $\mathrm{SQA}$ | $\mathrm{GQA}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | the centre | coupling |
-| $\mathrm{SQS}$ | $\mathrm{GQS}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | no remarkable subspace | metric |
-| $\mathrm{APA}$ | $\mathrm{GPA}$ | $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | the vector subspace | rotation |
-| $\mathrm{APS}$ | $\mathrm{GPS}$ | $\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}})$ | the vector subspace | phase |
-| $\mathrm{AQA}$ | $\mathrm{GQA}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | the vector subspace | obstruction |
-| $\mathrm{AQS}$ | $\mathrm{GQS}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | the vector subspace | polarisation |
+| $\mathrm{spa}$ | $\mathrm{gpa}$ | $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | the whole space | commutativity |
+| $\mathrm{sps}$ | $\mathrm{gps}$ | $\tfrac12(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}})$ | the centre | positivity |
+| $\mathrm{sqa}$ | $\mathrm{gqa}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | the centre | coupling |
+| $\mathrm{sqs}$ | $\mathrm{gqs}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | no remarkable subspace | metric |
+| $\mathrm{apa}$ | $\mathrm{gpa}$ | $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | the vector subspace | rotation |
+| $\mathrm{aps}$ | $\mathrm{gps}$ | $\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}})$ | the vector subspace | phase |
+| $\mathrm{aqa}$ | $\mathrm{gqa}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | the vector subspace | obstruction |
+| $\mathrm{aqs}$ | $\mathrm{gqs}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | the vector subspace | polarisation |
 
 The four words of the symmetric half and the four words of the antisymmetric half are the thread of the article. The symmetric half keeps the scalar part of the parent and loses the direction; the antisymmetric half keeps the direction and loses the scalar part. The physical difference between measuring and generating is that loss.
 
 ### The Two Laws
 
-Of the eight derived structures exactly two carry the product of a classical nonassociative algebra: $\mathrm{SPA}$ is a Jordan product and $\mathrm{APA}$ is a Lie product. The other six fail the identity of their kind, and each failure is witnessed on a single triple or a single element.
+Of the eight derived structures exactly two carry the product of a classical nonassociative algebra: $\mathrm{spa}$ is a Jordan product and $\mathrm{apa}$ is a Lie product. The other six fail the identity of their kind, and each failure is witnessed on a single triple or a single element.
 
 | the structure | the identity | the witness | the failure |
 | --- | --- | --- | --- |
-| $\mathrm{SPA}$ | Jordan | — | holds |
-| $\mathrm{SPS}$ | Jordan | $x=y=\vec e_x$ | the sides are $0$ and $e_t$ |
-| $\mathrm{SQA}$ | Jordan | $x=y=\vec e_x$ | the sides are $0$ and $e_t$ |
-| $\mathrm{SQS}$ | Jordan | $x=y=\vec e_x$ | the sides are $-e_t$ and $e_t$ |
-| $\mathrm{APA}$ | Jacobi | — | holds |
-| $\mathrm{APS}$ | Jacobi | $(e_t,\vec e_x,\vec e_y)$ | $\vec e_z$ |
-| $\mathrm{AQA}$ | Jacobi | $(e_t,\vec e_x,\vec e_y)$ | $-\vec e_z$ |
-| $\mathrm{AQS}$ | Jacobi | $(\vec e_x,\vec e_x,i\vec e_y)$ | $-2i\vec e_y$ |
+| $\mathrm{spa}$ | Jordan | — | holds |
+| $\mathrm{sps}$ | Jordan | $x=y=\vec e_x$ | the sides are $0$ and $e_t$ |
+| $\mathrm{sqa}$ | Jordan | $x=y=\vec e_x$ | the sides are $0$ and $e_t$ |
+| $\mathrm{sqs}$ | Jordan | $x=y=\vec e_x$ | the sides are $-e_t$ and $e_t$ |
+| $\mathrm{apa}$ | Jacobi | — | holds |
+| $\mathrm{aps}$ | Jacobi | $(e_t,\vec e_x,\vec e_y)$ | $\vec e_z$ |
+| $\mathrm{aqa}$ | Jacobi | $(e_t,\vec e_x,\vec e_y)$ | $-\vec e_z$ |
+| $\mathrm{aqs}$ | Jacobi | $(\vec e_x,\vec e_x,i\vec e_y)$ | $-2i\vec e_y$ |
 
 The last column of the three Jacobi rows is the cyclic sum of the bracket on the triple, and the two sides of the Jordan rows are $(x^{2}\bullet x)\bullet x$ and $x^{2}\bullet(x\bullet x)$.
 
 The three Jordan failures have one algebraic shape: in the non-associative symmetrisations the square of the pure vector $\vec e_x$ is central, so the iteration of the product has already forgotten the direction before the identity can compare the two orders. Physically a coupling with a central square is not an algebra of observables: a number cannot remember the direction it came from, and measuring the coupling twice does not reproduce the coupling of the square.
 
-The three Jacobi failures have three different reasons. For $\mathrm{AQA}$ the culprit is the non-associativity of the quaternionic product it comes from: the natural conjugation in one slot breaks the associativity that the Jacobi identity of a commutator needs. For $\mathrm{APS}$ and $\mathrm{AQS}$ the culprit is the sesquilinear obstruction: the antisymmetrisation of a sesquilinear product is a Lie bracket only after the collapse of the two involutions, and a genuine sesqualgebra forbids that collapse. The failure is a statement about the sesquilinear pairing and not about a real subspace.
+The three Jacobi failures have three different reasons. For $\mathrm{aqa}$ the culprit is the non-associativity of the quaternionic product it comes from: the natural conjugation in one slot breaks the associativity that the Jacobi identity of a commutator needs. For $\mathrm{aps}$ and $\mathrm{aqs}$ the culprit is the sesquilinear obstruction: the antisymmetrisation of a sesquilinear product is a Lie bracket only after the collapse of the two involutions, and a genuine sesqualgebra forbids that collapse. The failure is a statement about the sesquilinear pairing and not about a real subspace.
 
 The pattern of the table is the pattern of the four words. Composition has an order-free part that is a Jordan algebra and an order-sensitive part that is a Lie algebra, because the plain product is associative. Probability, causality and gauge have neither: their symmetric halves are couplings that forget the direction, and their antisymmetric halves are brackets that do not close.
 
@@ -103,18 +103,18 @@ The pattern of the table is the pattern of the four words. Composition has an or
 
 | the structure | the parent | the values | the form | the identity | the unit |
 | --- | --- | --- | --- | --- | --- |
-| $\mathrm{GPA}$ | — | the whole space | $\langle\cdot,\cdot\rangle$ | associative | $e_t$ on both sides |
-| $\mathrm{GQA}$ | — | the whole space | $\langle\cdot,\cdot\rangle_{\natural}$ | none, non-associative | $e_t$ on the left alone |
-| $\mathrm{GPS}$ | — | the whole space | $\langle\cdot,\cdot\rangle_{*}$ | none, sesquilinear | $e_t$ on the right alone |
-| $\mathrm{GQS}$ | — | the whole space | $\langle\cdot,\cdot\rangle_{\natural*}$ | none, sesquilinear | none |
-| $\mathrm{SPA}$ | $\mathrm{GPA}$ | the whole space | $\langle\cdot,\cdot\rangle$ | Jordan | $e_t$ on both sides |
-| $\mathrm{SQA}$ | $\mathrm{GQA}$ | the centre | $\langle\cdot,\cdot\rangle_{\natural}$ | fails Jordan | none |
-| $\mathrm{SPS}$ | $\mathrm{GPS}$ | the centre | $\langle\cdot,\cdot\rangle_{*}$ | fails Jordan | none |
-| $\mathrm{SQS}$ | $\mathrm{GQS}$ | no remarkable subspace | $\langle\cdot,\cdot\rangle_{\natural*}$ | fails Jordan | none |
-| $\mathrm{APA}$ | $\mathrm{GPA}$ | the vector subspace | $0$ | Lie | none |
-| $\mathrm{APS}$ | $\mathrm{GPS}$ | the vector subspace | $0$ | fails Jacobi | none |
-| $\mathrm{AQA}$ | $\mathrm{GQA}$ | the vector subspace | $0$ | fails Jacobi | none |
-| $\mathrm{AQS}$ | $\mathrm{GQS}$ | the vector subspace | $0$ | fails Jacobi | none |
+| $\mathrm{gpa}$ | — | the whole space | $\langle\cdot,\cdot\rangle$ | associative | $e_t$ on both sides |
+| $\mathrm{gqa}$ | — | the whole space | $\langle\cdot,\cdot\rangle_{\natural}$ | none, non-associative | $e_t$ on the left alone |
+| $\mathrm{gps}$ | — | the whole space | $\langle\cdot,\cdot\rangle_{*}$ | none, sesquilinear | $e_t$ on the right alone |
+| $\mathrm{gqs}$ | — | the whole space | $\langle\cdot,\cdot\rangle_{\natural*}$ | none, sesquilinear | none |
+| $\mathrm{spa}$ | $\mathrm{gpa}$ | the whole space | $\langle\cdot,\cdot\rangle$ | Jordan | $e_t$ on both sides |
+| $\mathrm{sqa}$ | $\mathrm{gqa}$ | the centre | $\langle\cdot,\cdot\rangle_{\natural}$ | fails Jordan | none |
+| $\mathrm{sps}$ | $\mathrm{gps}$ | the centre | $\langle\cdot,\cdot\rangle_{*}$ | fails Jordan | none |
+| $\mathrm{sqs}$ | $\mathrm{gqs}$ | no remarkable subspace | $\langle\cdot,\cdot\rangle_{\natural*}$ | fails Jordan | none |
+| $\mathrm{apa}$ | $\mathrm{gpa}$ | the vector subspace | $0$ | Lie | none |
+| $\mathrm{aps}$ | $\mathrm{gps}$ | the vector subspace | $0$ | fails Jacobi | none |
+| $\mathrm{aqa}$ | $\mathrm{gqa}$ | the vector subspace | $0$ | fails Jacobi | none |
+| $\mathrm{aqs}$ | $\mathrm{gqs}$ | the vector subspace | $0$ | fails Jacobi | none |
 
 Read by column, the table gives the three divisions of the twelve: the family (four parents, four symmetric parts, four antisymmetric parts), the value (the whole space, the centre, the vector subspace, or no remarkable subspace) and the law (only the plain pair carries a classical algebra). Read by row, it gives the one exact coincidence: a parent and its symmetric part share the form. The unit is shared only for the plain pair, because the symmetrisation of a twisted product replaces the unit by a conjugation. The antisymmetric part shares neither.
 
@@ -130,7 +130,7 @@ Read by product, the twelve fall into four columns of three. Each column is one 
 | quantity (symmetric) | the signed Euclidean overlap | the expectation value | the Minkowski inner product, whose diagonal is the interval | the indefinite calibration, i.e. the Krein form |
 | order or phase (antisymmetric) | the rotation axis | the interference | the boost obstruction, the bracket that fails | the polarisation direction |
 
-The two classical structures sit in the composition column as the two halves that close: $\mathrm{SPA}$ in the quantity row, where the Jordan product is the observables' product, and $\mathrm{APA}$ in the order row, where the Lie bracket is the rotation. No other cell is a classical algebra, and that scarcity is the table's point: the twelve are not twelve equivalent structures, but four jobs each with a quantity half and an order half, of which only the two halves of the composition column are classical.
+The two classical structures sit in the composition column as the two halves that close: $\mathrm{spa}$ in the quantity row, where the Jordan product is the observables' product, and $\mathrm{apa}$ in the order row, where the Lie bracket is the rotation. No other cell is a classical algebra, and that scarcity is the table's point: the twelve are not twelve equivalent structures, but four jobs each with a quantity half and an order half, of which only the two halves of the composition column are classical.
 
 **The boundary.** The four-column table is a reading of the same twelve products, not a theorem that the columns are independent or that the assignment of jobs is forced. The operation, quantity and order entries are the framework's names; the products and the identities are the algebra's.
 
@@ -142,13 +142,13 @@ A zero divisor is a nonzero element with a nonzero annihilating partner. It is a
 
 | the group | the structures | the zero-divisor set | the reason |
 | --- | --- | --- | --- |
-| the four general products | $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$ | $\mathcal{N}\setminus\{0\}$ | the conjugation in one or both slots is a bijection and does not move the norm |
-| the two symmetric structures | $\mathrm{SPA}$, $\mathrm{SQS}$ | $(\{Q_t=0\}\cup\mathcal{N})\setminus\{0\}$ | the symmetrisation also annihilates the pure elements |
-| the six scalar-valued or antisymmetric structures | $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ | $\mathbb{B}\setminus\{0\}$ | the value is a number or a pure direction, so the map cannot be injective |
+| the four general products | $\mathrm{gpa}$, $\mathrm{gps}$, $\mathrm{gqa}$, $\mathrm{gqs}$ | $\mathcal{N}\setminus\{0\}$ | the conjugation in one or both slots is a bijection and does not move the norm |
+| the two symmetric structures | $\mathrm{spa}$, $\mathrm{sqs}$ | $(\{Q_t=0\}\cup\mathcal{N})\setminus\{0\}$ | the symmetrisation also annihilates the pure elements |
+| the six scalar-valued or antisymmetric structures | $\mathrm{sps}$, $\mathrm{sqa}$, $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$, $\mathrm{aqs}$ | $\mathbb{B}\setminus\{0\}$ | the value is a number or a pure direction, so the map cannot be injective |
 
 The **cone** is the common zero set of the quaternion norm, $\mathcal{N}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}$, a complex cone of complex dimension three and real dimension six. It lies in every one of the twelve sets, so no band is free of degeneracy. The **nilpotent cone** is its pure part, of real dimension four, and it is strictly smaller than the cone: a zero divisor need not be nilpotent.
 
-The enlargement of $\mathrm{SPA}$ and $\mathrm{SQS}$ is physical. A pure element, one with $Q_t=0$, kills the plane of operations orthogonal to it, and it does so whether or not it is lightlike. The cleanest witness is a unit: $\vec e_x$ has norm $1$ and is invertible in the algebra, yet $\vec e_x\bullet\vec e_y=0$ for the Jordan product. The classical equivalence *zero divisor if and only if not a unit* therefore fails, and an invertible element can fail to compose symmetrically.
+The enlargement of $\mathrm{spa}$ and $\mathrm{sqs}$ is physical. A pure element, one with $Q_t=0$, kills the plane of operations orthogonal to it, and it does so whether or not it is lightlike. The cleanest witness is a unit: $\vec e_x$ has norm $1$ and is invertible in the algebra, yet $\vec e_x\bullet\vec e_y=0$ for the Jordan product. The classical equivalence *zero divisor if and only if not a unit* therefore fails, and an invertible element can fail to compose symmetrically.
 
 The whole space of the other six is the algebraic form of their irreversibility. A scalar coupling returns a number, and a number has no inverse. A bracket returns a direction and not an operation, so it is an infinitesimal transformation and not something to be undone. Neither kind has a unit to invert.
 
@@ -170,15 +170,15 @@ The annihilator of an element is the set of partners it kills. It is the kernel 
 
 | the group | the annihilator | the two sides |
 | --- | --- | --- |
-| the four general products | $\{0\}$ off the cone; a complex plane on it | differ for $\mathrm{GPA}$ and $\mathrm{GQS}$, equal for $\mathrm{GPS}$ and $\mathrm{GQA}$ |
-| $\mathrm{SPA}$, $\mathrm{SQS}$ | $\{0\}$ off the cone; the line $\mathbb{C}\tilde Q^{\natural}$ or $\mathbb{C}\tilde Q^{*}$ on it; a plane at a pure element | equal |
-| $\mathrm{SPS}$, $\mathrm{SQA}$ | the hyperplane $\langle\tilde Q,\tilde Q_1\rangle_{*}=0$ or $\langle\tilde Q,\tilde Q_1\rangle_{\natural}=0$ | equal |
-| $\mathrm{APA}$, $\mathrm{AQS}$ | $\mathbb{C}e_t\oplus\mathbb{C}\vec Q$, or its conjugate; the whole space at a central element | equal |
-| $\mathrm{APS}$, $\mathrm{AQA}$ | a line off the cone, a plane on it; the centre at a central element | equal |
+| the four general products | $\{0\}$ off the cone; a complex plane on it | differ for $\mathrm{gpa}$ and $\mathrm{gqs}$, equal for $\mathrm{gps}$ and $\mathrm{gqa}$ |
+| $\mathrm{spa}$, $\mathrm{sqs}$ | $\{0\}$ off the cone; the line $\mathbb{C}\tilde Q^{\natural}$ or $\mathbb{C}\tilde Q^{*}$ on it; a plane at a pure element | equal |
+| $\mathrm{sps}$, $\mathrm{sqa}$ | the hyperplane $\langle\tilde Q,\tilde Q_1\rangle_{*}=0$ or $\langle\tilde Q,\tilde Q_1\rangle_{\natural}=0$ | equal |
+| $\mathrm{apa}$, $\mathrm{aqs}$ | $\mathbb{C}e_t\oplus\mathbb{C}\vec Q$, or its conjugate; the whole space at a central element | equal |
+| $\mathrm{aps}$, $\mathrm{aqa}$ | a line off the cone, a plane on it; the centre at a central element | equal |
 
 The two sides differ for exactly two structures, the plain composition and the gauge coupling: that is the **chirality of the internal action**. The sharpest instance is the photon. For the null momentum $\tilde P=2i(E/c)\tilde\Pi_-$, with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the left multiplication kills $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, because $\tilde\Pi_-\tilde\Pi_+=0$. A massless momentum of one chirality annihilates the opposite chiral state, which is the algebraic form of the statement that a massless fermion has only one helicity.
 
-For the two scalar-valued structures every nonzero element has a hyperplane as its annihilator: a number destroys one complex dimension. For the two brackets $\mathrm{APA}$ and $\mathrm{AQS}$, a nonzero central element kills the whole algebra: those brackets are blind to the centre. That centre is the framework's **classical sector**, the home of the $c$-number parameters such as $\hbar$, $c$, a mass and a coupling.
+For the two scalar-valued structures every nonzero element has a hyperplane as its annihilator: a number destroys one complex dimension. For the two brackets $\mathrm{apa}$ and $\mathrm{aqs}$, a nonzero central element kills the whole algebra: those brackets are blind to the centre. That centre is the framework's **classical sector**, the home of the $c$-number parameters such as $\hbar$, $c$, a mass and a coupling.
 
 The kernel has four physical names for one object. It is the **zero-mode space** of the index theorem, the space of solutions the Dirac operator cannot see; the **GNS null space**, the directions that the state functional sends to zero; the **no-cloning obstruction**, the set of inputs a copying map would have to merge; and the **BRST closed space**, whose quotient by the image is the physical cohomology. The four names are four processes, and the annihilator is the same algebraic set in each.
 
@@ -190,16 +190,16 @@ The kernel can be structural rather than a constraint. The Bianchi identity says
 
 A root of a central value $\lambda$ in one of the twelve structures is an element whose square in that product is the value, $\tilde\Xi\star\tilde\Xi=\lambda e_t$. The root problem asks which elements realise a given value. It is the inverse of the square map, and the square map is the band's way of producing a number from an operation: the plain square produces a polar scale and a direction, the central square produces the interval, the Hermitian square produces a probability weight, and the fourth square produces the indefinite gauge value.
 
-Two squares do most of the grouping. The **plain square** $\tilde\Xi^{2}$ belongs to $\mathrm{GPA}$ and $\mathrm{SPA}$; the **central square** $\tilde\Xi^{\natural}\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t$ belongs to $\mathrm{GQA}$ and $\mathrm{SQA}$. The sesquilinear bands have two squares of their own: the **Hermitian square** $\tilde\Xi\tilde\Xi^{*}$, positive semidefinite and rank-bearing, and the **fourth square** $\tilde\Xi^{\natural}\tilde\Xi^{*}$, the indefinite gauge value. The symmetric quaternionic sesqualgebra is the exception: its square is the Hermitian part of the fourth square, a real element whose root sets are those of a symmetrised coupling. The four antisymmetric structures have no square of their own beyond the zero or pure value: an antisymmetrisation kills the scalar part, so a bracket cannot realise a nonzero central value at all.
+Two squares do most of the grouping. The **plain square** $\tilde\Xi^{2}$ belongs to $\mathrm{gpa}$ and $\mathrm{spa}$; the **central square** $\tilde\Xi^{\natural}\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t$ belongs to $\mathrm{gqa}$ and $\mathrm{sqa}$. The sesquilinear bands have two squares of their own: the **Hermitian square** $\tilde\Xi\tilde\Xi^{*}$, positive semidefinite and rank-bearing, and the **fourth square** $\tilde\Xi^{\natural}\tilde\Xi^{*}$, the indefinite gauge value. The symmetric quaternionic sesqualgebra is the exception: its square is the Hermitian part of the fourth square, a real element whose root sets are those of a symmetrised coupling. The four antisymmetric structures have no square of their own beyond the zero or pure value: an antisymmetrisation kills the scalar part, so a bracket cannot realise a nonzero central value at all.
 
 For a general complex value $\lambda$ the twelve structures fall into four classes.
 
 | the class | the structures | the values that have a root |
 | --- | --- | --- |
-| bilateral | $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{SPA}$, $\mathrm{SQA}$ | every complex $\lambda$ |
-| indefinite sesquilinear | $\mathrm{GQS}$, $\mathrm{SQS}$ | every real $\lambda$ |
-| definite sesquilinear | $\mathrm{GPS}$, $\mathrm{SPS}$ | every real $\lambda\geq0$ |
-| antisymmetric | $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ | $\lambda=0$ alone |
+| bilateral | $\mathrm{gpa}$, $\mathrm{gqa}$, $\mathrm{spa}$, $\mathrm{sqa}$ | every complex $\lambda$ |
+| indefinite sesquilinear | $\mathrm{gqs}$, $\mathrm{sqs}$ | every real $\lambda$ |
+| definite sesquilinear | $\mathrm{gps}$, $\mathrm{sps}$ | every real $\lambda\geq0$ |
+| antisymmetric | $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$, $\mathrm{aqs}$ | $\lambda=0$ alone |
 
 The classes are physical. The bilateral structures read every value, phase and amplitude together: the composition and causality bands can produce any complex value. The probability band admits only non-negative values, because a probability weight is non-negative, and it has the origin alone at $0$, because no nonzero amplitude squares to nothing. The gauge band produces the Krein interval, which is real by construction. The brackets produce a pure or vanishing object, so only $0$ is readable.
 
@@ -219,7 +219,7 @@ which is a bijection between the roots of $+1$ and the idempotents. An idempoten
 
 A nonzero root of $0$ is a **nilpotent of index two**, written $\tilde\Upsilon$: a square-zero element. It kills itself, so it is an element of its own annihilator, and physically it is an infinitesimal object of which two successive applications give nothing. The lightlike displacement is the pure member. Nilpotency is also Pauli exclusion: the one-mode fermionic ladder is a pair of nilpotents $a,a^{\dagger}$ with $a^{2}=(a^{\dagger})^{2}=0$ and $\{a,a^{\dagger}\}=e_t$, whose product is the vacuum idempotent. The BRST charge and the supercharge are the odd members, and the supercharge is nilpotent only on the massless shell.
 
-A root of $-1$ is a **complex structure**: a phase, a clock, a half-turn, the Kramers sign. It is deduced from a root of $+1$ by multiplication by the central imaginary in the six bilinear structures, and the mechanism is not universal. The two definite sesquilinear structures and the four brackets have no root of $-1$; the two indefinite sesquilinear structures have one, and in $\mathrm{SQS}$ the witness $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ lies on the cone. The physical interpretations of $-1$ belong to the articles on the phase and the clock.
+A root of $-1$ is a **complex structure**: a phase, a clock, a half-turn, the Kramers sign. It is deduced from a root of $+1$ by multiplication by the central imaginary in the six bilinear structures, and the mechanism is not universal. The two definite sesquilinear structures and the four brackets have no root of $-1$; the two indefinite sesquilinear structures have one, and in $\mathrm{sqs}$ the witness $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ lies on the cone. The physical interpretations of $-1$ belong to the articles on the phase and the clock.
 
 The root sets of $0$ are the sharpest contrast with the zero-divisor sets. The four general products share one zero-divisor set, the cone, but their root sets are different: the plain band has the origin together with the pure null cone, the probability band has the origin alone, the interval band has the whole cone, and the gauge band has the slopes $\lvert t\rvert=1$ of its causal classes. Degeneracy is common across the bands, while factorisation is band-specific.
 
@@ -235,23 +235,23 @@ The sign is also why the retired single-field mass equation fails. Its solutions
 
 The algebra proves the split, the eight products, the two identities, the six witnesses, the twelve degeneracy sets, the twelve kernels and the four root classes. It does not prove that the eight words are the only interpretations of the structures, nor that the four jobs are the only assignment of the four parents.
 
-Three boundaries follow. The symmetric parts are not, in general, Jordan algebras: only $\mathrm{SPA}$ is one, and calling $\mathrm{SPS}$ or $\mathrm{SQS}$ a Jordan algebra would erase the witnesses. The antisymmetric parts are not, in general, Lie algebras: only $\mathrm{APA}$ is one, and the Jacobi failures are the content of the words *phase*, *obstruction* and *polarisation*. The reconstruction $G=S+A$ is exact as a decomposition of the product and does not make the parent a direct sum of two algebras.
+Three boundaries follow. The symmetric parts are not, in general, Jordan algebras: only $\mathrm{spa}$ is one, and calling $\mathrm{sps}$ or $\mathrm{sqs}$ a Jordan algebra would erase the witnesses. The antisymmetric parts are not, in general, Lie algebras: only $\mathrm{apa}$ is one, and the Jacobi failures are the content of the words *phase*, *obstruction* and *polarisation*. The reconstruction $G=S+A$ is exact as a decomposition of the product and does not make the parent a direct sum of two algebras.
 
 The degeneracy, the kernel and the root are sets of the algebra. Their identification with a light cone, a loss of information or a mass shell is a reading, and the reading names the band and the process. The algebra supplies the set, its dimension and its shape; the physics supplies the object.
 
 ## Summary
 
-The four general products split into eight derived structures, and the split is a split of each product into an order-free half and an order-sensitive half. The symmetric half keeps the value of the parent and carries the four forms; the antisymmetric half keeps the direction and carries the zero form. Of the eight, only $\mathrm{SPA}$ is a Jordan product and only $\mathrm{APA}$ is a Lie product, because only the plain parent is associative. The other six fail the identity of their kind, with the witnesses $\vec e_x$ for the three Jordan failures and the triples $(e_t,\vec e_x,\vec e_y)$ and $(\vec e_x,\vec e_x,i\vec e_y)$ for the three Jacobi failures.
+The four general products split into eight derived structures, and the split is a split of each product into an order-free half and an order-sensitive half. The symmetric half keeps the value of the parent and carries the four forms; the antisymmetric half keeps the direction and carries the zero form. Of the eight, only $\mathrm{spa}$ is a Jordan product and only $\mathrm{apa}$ is a Lie product, because only the plain parent is associative. The other six fail the identity of their kind, with the witnesses $\vec e_x$ for the three Jordan failures and the triples $(e_t,\vec e_x,\vec e_y)$ and $(\vec e_x,\vec e_x,i\vec e_y)$ for the three Jacobi failures.
 
-The twelve compared give three divisions: the family, the values and the law. Read by product, they fall into four columns of three, one column for each job, with the operation, the quantity and the order or phase in the three rows. The degeneracy has one wall and three sets: the cone for the four general products, the cone together with the pure elements for $\mathrm{SPA}$ and $\mathrm{SQS}$, and the whole punctured space for the other six. The kernel is trivial off the cone and grows on it; it is a hyperplane for the scalar-valued structures, a centraliser for the rotation bracket, and it differs on its two sides only for the plain product and the gauge coupling. The root problem separates the twelve into four existence classes: every value for the four bilateral structures, every real value for the two indefinite sesquilinear structures, every non-negative real value for the two definite sesquilinear structures, and $0$ alone for the four brackets.
+The twelve compared give three divisions: the family, the values and the law. Read by product, they fall into four columns of three, one column for each job, with the operation, the quantity and the order or phase in the three rows. The degeneracy has one wall and three sets: the cone for the four general products, the cone together with the pure elements for $\mathrm{spa}$ and $\mathrm{sqs}$, and the whole punctured space for the other six. The kernel is trivial off the cone and grows on it; it is a hyperplane for the scalar-valued structures, a centraliser for the rotation bracket, and it differs on its two sides only for the plain product and the gauge coupling. The root problem separates the twelve into four existence classes: every value for the four bilateral structures, every real value for the two indefinite sesquilinear structures, every non-negative real value for the two definite sesquilinear structures, and $0$ alone for the four brackets.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$ | the four general parents: composition, probability, causality, gauge |
-| $\mathrm{SPA}$, $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{SQS}$ | their symmetric parts: commutativity, positivity, coupling, metric |
-| $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ | their antisymmetric parts: rotation, phase, obstruction, polarisation |
+| $\mathrm{gpa}$, $\mathrm{gps}$, $\mathrm{gqa}$, $\mathrm{gqs}$ | the four general parents: composition, probability, causality, gauge |
+| $\mathrm{spa}$, $\mathrm{sps}$, $\mathrm{sqa}$, $\mathrm{sqs}$ | their symmetric parts: commutativity, positivity, coupling, metric |
+| $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$, $\mathrm{aqs}$ | their antisymmetric parts: rotation, phase, obstruction, polarisation |
 | $S(x,y)$, $A(x,y)$ | the symmetric and antisymmetric parts of a product |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the plain, Hermitian, quaternion and Krein forms |
 | $\mathcal{N}$ | the zero-divisor cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ |

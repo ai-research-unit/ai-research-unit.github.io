@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The action of a group on itself by left translation is the action that realises the group: read as a permutation action it is faithful, so it embeds the group into the symmetric group of its own underlying set, and read through the group algebra it linearises to the regular representation. This article treats that single action as the canonical realisation, isolating the two consequences — the canonical embedding $G\hookrightarrow\operatorname{Sym}(G)$, which is Cayley's theorem, and the linearisation of the action that is the regular representation. The action of the product group on $G$, its kernel and its restrictions are *The Action of a Group on Itself*; the translation operators for themselves are *Left and Right Multiplication in a Group*; the algebra of the linearised action is *Group Algebras*; and the general theory of actions, the coset actions, the kernels and the orbit decomposition are *Transformation Groups*.
+The action of a group on itself by left translation is the action that realises the group: read as a permutation action it is faithful, so it embeds the group into the symmetric group of its own underlying set, and read through the group algebra it linearises to the regular representation. This article treats that single action as the canonical realisation, isolating the two consequences — the canonical embedding $G\hookrightarrow\operatorname{sym}(G)$, which is Cayley's theorem, and the linearisation of the action that is the regular representation. The action of the product group on $G$, its kernel and its restrictions are *The Action of a Group on Itself*; the translation operators for themselves are *Left and Right Multiplication in a Group*; the algebra of the linearised action is *Group Algebras*; and the general theory of actions, the coset actions, the kernels and the orbit decomposition are *Transformation Groups*.
 
 The article assumes the elementary theory of groups from *Groups*, the definition of an action, the permutation representation, faithfulness, the orbit–stabiliser theorem and Cayley's theorem from *Transformation Groups*, and the group algebra with its left regular representation from *Group Algebras*. It uses no distance, no norm and no form.
 
@@ -22,7 +22,7 @@ $$
 **Proposition (the permutation representation).** The permutation representation of the Cayley action is
 
 $$
-\boxed{\;\rho_L : G \longrightarrow \operatorname{Sym}(G), \qquad \rho_L(a)(x) = ax\;} ,
+\boxed{\;\rho_L : G \longrightarrow \operatorname{sym}(G), \qquad \rho_L(a)(x) = ax\;} ,
 $$
 
 a homomorphism; and it is injective.
@@ -33,13 +33,13 @@ The injectivity is the triviality of the kernel of the action: the kernel is the
 
 ## The Canonical Embedding
 
-**Theorem (Cayley).** The Cayley action embeds $G$ as a subgroup of $\operatorname{Sym}(G)$; explicitly $\rho_L$ is an isomorphism of $G$ onto the subgroup $L(G)=\{L_a:a\in G\}$. If $G$ is finite of order $n$, composing with a labelling of $G$ by $\{1,\dots,n\}$ gives an embedding $G\hookrightarrow S_n$.
+**Theorem (Cayley).** The Cayley action embeds $G$ as a subgroup of $\operatorname{sym}(G)$; explicitly $\rho_L$ is an isomorphism of $G$ onto the subgroup $L(G)=\{L_a:a\in G\}$. If $G$ is finite of order $n$, composing with a labelling of $G$ by $\{1,\dots,n\}$ gives an embedding $G\hookrightarrow S_n$.
 
-**Proof.** The map $\rho_L$ is an injective homomorphism by the propositions above, so it is an isomorphism onto its image, and the image is $L(G)$. A labelling of $G$ is a bijection $G\to\{1,\dots,n\}$, which induces an isomorphism $\operatorname{Sym}(G)\to S_n$ by *Transformation Groups*.
+**Proof.** The map $\rho_L$ is an injective homomorphism by the propositions above, so it is an isomorphism onto its image, and the image is $L(G)$. A labelling of $G$ is a bijection $G\to\{1,\dots,n\}$, which induces an isomorphism $\operatorname{sym}(G)\to S_n$ by *Transformation Groups*.
 
 The embedding is canonical in the sense that it uses no labelling of the elements: it is defined by the group law alone. A labelling is needed only to compare the image with the standard symmetric group $S_n$. This is the precise sense in which an abstract group is a transformation group of its own underlying set, and it is the reason a statement about groups that can be phrased in terms of permutations may be proved by passing to the symmetric group.
 
-**Remark (the left regular subgroup).** The image $L(G)$ is the **left regular subgroup** of $\operatorname{Sym}(G)$. The right translations form a second copy $R(G)$, commuting with $L(G)$, and the two meet in the central translations; the details are *Left and Right Multiplication in a Group*. The Cayley action is the one-sided member of the family of actions of $G$ on itself, and the two-sided member, with its kernel the diagonal centre, is *The Action of a Group on Itself*.
+**Remark (the left regular subgroup).** The image $L(G)$ is the **left regular subgroup** of $\operatorname{sym}(G)$. The right translations form a second copy $R(G)$, commuting with $L(G)$, and the two meet in the central translations; the details are *Left and Right Multiplication in a Group*. The Cayley action is the one-sided member of the family of actions of $G$ on itself, and the two-sided member, with its kernel the diagonal centre, is *The Action of a Group on Itself*.
 
 ## The Linearisation
 
@@ -65,7 +65,7 @@ the $k$-linear extension of the left translations $L_a$ to the group algebra.
 
 ## Summary
 
-The **Cayley action** is the left translation action of $G$ on its own underlying set. It is free and transitive, hence sharply transitive, and its permutation representation $\rho_L:a\mapsto L_a$ is injective, so its kernel is trivial. Cayley's theorem is the resulting isomorphism of $G$ onto the left regular subgroup $L(G)\leq\operatorname{Sym}(G)$, and, after a labelling of the $n$ elements, an embedding $G\hookrightarrow S_n$ for finite $G$. The embedding is canonical: it uses the group law and no labelling.
+The **Cayley action** is the left translation action of $G$ on its own underlying set. It is free and transitive, hence sharply transitive, and its permutation representation $\rho_L:a\mapsto L_a$ is injective, so its kernel is trivial. Cayley's theorem is the resulting isomorphism of $G$ onto the left regular subgroup $L(G)\leq\operatorname{sym}(G)$, and, after a labelling of the $n$ elements, an embedding $G\hookrightarrow S_n$ for finite $G$. The embedding is canonical: it uses the group law and no labelling.
 
 The linearisation of the Cayley action is the **left regular representation** $\lambda(x)(y)=xy$, an injective algebra homomorphism of $k[G]$ into its endomorphism algebra; its restriction to $G$ is the linear extension of $\rho_L$. The Cayley action is the member $H=\{e\}$ of the family of coset actions $G/H$, whose kernel is the core of $H$, and its two cautions are its large degree and its freedom, which forgets the structure of the group.
 
@@ -77,7 +77,7 @@ The linearisation of the Cayley action is the **left regular representation** $\
 | free | no non-identity element fixes a point |
 | sharply transitive | free and transitive, so all point stabilisers trivial |
 | $\rho_L(a)=L_a$ | permutation representation of the Cayley action, injective |
-| $L(G)=\{L_a:a\in G\}$ | the left regular subgroup of $\operatorname{Sym}(G)$, isomorphic to $G$ |
+| $L(G)=\{L_a:a\in G\}$ | the left regular subgroup of $\operatorname{sym}(G)$, isomorphic to $G$ |
 | $G\hookrightarrow S_n$ | Cayley's embedding for a finite group of order $n$ |
 | $\lambda(x)(y)=xy$ | the left regular representation, the linearisation of the action |
 | core of $H$ | $\bigcap_{a\in G}aHa^{-1}$, the kernel of the action on $G/H$ |

@@ -17,7 +17,7 @@ A homeomorphism group is the group of all self-homeomorphisms of a topological s
 |---|---|---|
 | $\operatorname{Homeo}(X)$ | the group of all homeomorphisms $X \to X$, the $C^0$-ambient group | *Diffeomorphism Groups* |
 | $\operatorname{Aut}(X)$ | the group of automorphisms of a structure on a set $X$, of which $\operatorname{Homeo}(X)$ is the topological case | *Transformation Groups* |
-| $\operatorname{Sym}(X)$ | the group of all bijections, the automorphism group of a bare set | *Transformation Groups* |
+| $\operatorname{sym}(X)$ | the group of all bijections, the automorphism group of a bare set | *Transformation Groups* |
 | the symplectic homeomorphism group | the $C^0$-closure of $\operatorname{Ham}(M,\omega)$ in $\operatorname{Homeo}(M)$, a closed subgroup that is not a Lie group | *Diffeomorphism Groups*, §The $C^0$-Closure and the Rigidity |
 | $\operatorname{Homeo}_0(S,\partial S)$ | the homeomorphisms of a surface isotopic to the identity relative to the boundary | *Mapping Class Groups* |
 
@@ -121,7 +121,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\operatorname{Mod}(S)$, $\operatorname{Mod}^{\pm}(S)$, $\mathcal{I}(S)$ | Mapping class group, extended mapping class group, Torelli group |
 | $T_a$, $\mathcal{C}(S)$ | Dehn twist; curve complex |
 | $B_n$ | Braid group $= \operatorname{Mod}(D^2,n)$ |
-| $\operatorname{Aut}(X)$, $\operatorname{Inn}(G)$, $\operatorname{Sym}(X)$ | Automorphism group of a structure; inner automorphisms; symmetric group |
+| $\operatorname{Aut}(X)$, $\operatorname{Inn}(G)$, $\operatorname{sym}(X)$ | Automorphism group of a structure; inner automorphisms; symmetric group |
 | $V$, $F$, $T$ | Thompson groups (planned article) |
 | $\mathbb{Z}$, $\mathbb{R}$ | The standard number systems of the corpus |
 | $\operatorname{Isom}(M,g)$ | Isometry group of a metric, a Lie group by Myers–Steenrod |

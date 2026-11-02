@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article lists the transformation groups of the corpus — the groups that are realised as the transformations of a set carrying a structure — together with the structure each preserves and the article that introduces it. The umbrella notion is that of *Transformation Groups*: a group acts on a set $X$ through a homomorphism $\rho : G \to \operatorname{Sym}(X)$, the action is faithful when that homomorphism is injective, and an automorphism group $\operatorname{Aut}(X)$ is the subgroup of $\operatorname{Sym}(X)$ preserving whatever structure $X$ carries. The list is the entry point for the families that the rest of the category develops: the linear, classical, projective, affine, Euclidean, isometry, Möbius, conformal, symplectic, discrete and automorphism families, each of which is a catalogue of its own.
+This article lists the transformation groups of the corpus — the groups that are realised as the transformations of a set carrying a structure — together with the structure each preserves and the article that introduces it. The umbrella notion is that of *Transformation Groups*: a group acts on a set $X$ through a homomorphism $\rho : G \to \operatorname{sym}(X)$, the action is faithful when that homomorphism is injective, and an automorphism group $\operatorname{Aut}(X)$ is the subgroup of $\operatorname{sym}(X)$ preserving whatever structure $X$ carries. The list is the entry point for the families that the rest of the category develops: the linear, classical, projective, affine, Euclidean, isometry, Möbius, conformal, symplectic, discrete and automorphism families, each of which is a catalogue of its own.
 
 Every entry points to the article that introduces the group or the action. The article introduces nothing and proves nothing: it records what each group preserves, and it neither restates a definition nor gives a proof.
 
@@ -11,16 +11,16 @@ The article records examples and non-examples side by side. Beside the groups th
 
 ## The Transformations of a Set and the Hierarchy of Automorphisms
 
-The hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots$ records that a transformation group is determined by what it is required to preserve: each layer of structure cuts down the group.
+The hierarchy $\operatorname{sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots$ records that a transformation group is determined by what it is required to preserve: each layer of structure cuts down the group.
 
 | Object | The property it has | Introduced in |
 |---|---|---|
-| the symmetric group $\operatorname{Sym}(X)$ | the group of all bijections of a bare set; the largest transformation group of $X$ | *Transformation Groups* |
-| the symmetric group $S_n$ | $\operatorname{Sym}(\{1,\ldots,n\})$, of order $n!$ | *Transformation Groups*; *Groups* |
-| an action $G \times X \to X$, $a\cdot x$ | a homomorphism $\rho : G \to \operatorname{Sym}(X)$; the realisation of an abstract group by transformations | *Transformation Groups*; *Group Actions and Structure* |
-| a faithful action | $\ker\rho = 1$; the group is a subgroup of $\operatorname{Sym}(X)$ | *Transformation Groups* |
+| the symmetric group $\operatorname{sym}(X)$ | the group of all bijections of a bare set; the largest transformation group of $X$ | *Transformation Groups* |
+| the symmetric group $S_n$ | $\operatorname{sym}(\{1,\ldots,n\})$, of order $n!$ | *Transformation Groups*; *Groups* |
+| an action $G \times X \to X$, $a\cdot x$ | a homomorphism $\rho : G \to \operatorname{sym}(X)$; the realisation of an abstract group by transformations | *Transformation Groups*; *Group Actions and Structure* |
+| a faithful action | $\ker\rho = 1$; the group is a subgroup of $\operatorname{sym}(X)$ | *Transformation Groups* |
 | the orbit and the stabiliser | $\operatorname{Orb}(x)$ and $\operatorname{Stab}(x)$, with the orbit–stabiliser theorem and $G/H$ for a transitive action | *Group Actions and Structure*; *Transformation Groups* |
-| Cayley's embedding $G \hookrightarrow \operatorname{Sym}(G)$ | the left regular action; every group is a transformation group of itself | *Transformation Groups* |
+| Cayley's embedding $G \hookrightarrow \operatorname{sym}(G)$ | the left regular action; every group is a transformation group of itself | *Transformation Groups* |
 | the automorphism group $\operatorname{Aut}(X)$ | the transformations preserving the structure on $X$; $\operatorname{Aut}(X) = \operatorname{End}(X)^\times$ | *Transformation Groups* |
 | the inner automorphisms $\operatorname{Inn}(G)$ | the conjugations $x \mapsto gxg^{-1}$; $\operatorname{Inn}(G) \cong G/Z(G)$ | *Transformation Groups*; *List of Automorphism Groups* |
 | the automorphism group $\operatorname{Aut}(G)$ of a group | the transformations preserving the group operation, with $\operatorname{Out}(G) = \operatorname{Aut}(G)/\operatorname{Inn}(G)$ | *List of Automorphism Groups* |
@@ -50,7 +50,7 @@ Each family is the transformation group of a space with a definite structure, an
 | the birational group $\operatorname{Bir}(X)$ | the birational equivalence of a variety | *Algebraic Geometry* |
 | a Lie group acting on itself | the left translations; the group as a homogeneous space of itself | *Lie Groups*; *Homogeneous Spaces* |
 | the Thompson groups $F$, $T$, $V$ | the piecewise-linear homeomorphisms of the interval, the circle and the Cantor set | *Thompson Groups and the Cantor Set* |
-| the Galois group $\operatorname{Gal}(L/K)$ | the field automorphisms fixing $K$; the transformation group of a field extension | *Galois Theory*; *List of Automorphism Groups* |
+| the Galois group $\operatorname{gal}(L/K)$ | the field automorphisms fixing $K$; the transformation group of a field extension | *Galois Theory*; *List of Automorphism Groups* |
 
 ## The Erlangen Program and the Klein Geometries
 
@@ -69,7 +69,7 @@ Klein's principle reads a geometry as the study of the invariants of a transform
 
 ## The Constructions on an Action
 
-An action is a homomorphism $G \to \operatorname{Sym}(X)$, and the constructions of the group theory of actions are the transformations of the group into $\operatorname{Sym}(X)$ and of the set into its orbits.
+An action is a homomorphism $G \to \operatorname{sym}(X)$, and the constructions of the group theory of actions are the transformations of the group into $\operatorname{sym}(X)$ and of the set into its orbits.
 
 | Object or construction | The property it has | Introduced in |
 |---|---|---|
@@ -107,7 +107,7 @@ Objects that a reader may expect in a list of transformation groups, and does no
 
 ## Summary
 
-This article has listed the transformation groups of the corpus: the transformations of a bare set and the hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X)$, with the actions, orbits, stabilisers and automorphism groups of a group, a ring, an algebra and a module; the families in which the category is developed — the linear, classical, projective, affine, Euclidean, isometry, Möbius, conformal, symplectic, discrete, homeomorphism and automorphism families, each with the structure it preserves; and the Erlangen program, which reads a geometry as the invariants of a transformation group and presents it as a Klein geometry $G/H$. Beside the examples stand the non-examples: the unfaithful action on projective space, the trivial action, the isometry group of a general Riemannian manifold, the structure group of a bundle, and the mapping class group acting on the curve complex. The list introduces and proves nothing; it is the entry point of the geometric-group family of the corpus.
+This article has listed the transformation groups of the corpus: the transformations of a bare set and the hierarchy $\operatorname{sym}(X) \supset \operatorname{Aut}(X)$, with the actions, orbits, stabilisers and automorphism groups of a group, a ring, an algebra and a module; the families in which the category is developed — the linear, classical, projective, affine, Euclidean, isometry, Möbius, conformal, symplectic, discrete, homeomorphism and automorphism families, each with the structure it preserves; and the Erlangen program, which reads a geometry as the invariants of a transformation group and presents it as a Klein geometry $G/H$. Beside the examples stand the non-examples: the unfaithful action on projective space, the trivial action, the isometry group of a general Riemannian manifold, the structure group of a bundle, and the mapping class group acting on the curve complex. The list introduces and proves nothing; it is the entry point of the geometric-group family of the corpus.
 
 ## Summary of Notation
 
@@ -115,9 +115,9 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 
 | Symbol | Meaning |
 |---|---|
-| $\operatorname{Sym}(X)$, $S_n$ | the symmetric group of a set; the symmetric group on $n$ letters |
+| $\operatorname{sym}(X)$, $S_n$ | the symmetric group of a set; the symmetric group on $n$ letters |
 | $\operatorname{Aut}(X)$, $\operatorname{End}(X)$ | the automorphism group and the endomorphism monoid of a structure |
-| $\rho : G \to \operatorname{Sym}(X)$ | the permutation representation of an action; $\ker\rho = 1$ when faithful |
+| $\rho : G \to \operatorname{sym}(X)$ | the permutation representation of an action; $\ker\rho = 1$ when faithful |
 | $\operatorname{Orb}(x)$, $\operatorname{Stab}(x)$, $G/H$ | orbit, stabiliser and coset space of a transitive action |
 | $\operatorname{Aut}(G)$, $\operatorname{Inn}(G)$, $\operatorname{Out}(G)$ | the automorphism, inner and outer groups of a group |
 | $E(n)$, $\operatorname{Aff}(n)$, $\operatorname{Sim}(n)$ | the Euclidean, affine and similarity groups |

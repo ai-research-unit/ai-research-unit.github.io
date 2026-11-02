@@ -23,7 +23,7 @@ The companion articles supply the pieces:
 
 ### The Magnetic Coupling
 
-A magnetic dipole $\vec\mu$ in a field $\vec B$ has energy $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$. For a spin-1/2 with $\vec\mu = \gamma\vec S$, the coupling is the Hermitian element
+A magnetic dipole $\vec\mu$ in a field $\vec B$ has energy $V^{\mathrm{pot}} = -\vec\mu\cdot\vec B$. For a spin-1/2 with $\vec\mu = \gamma\vec S$, the coupling is the Hermitian element
 
 $$
 \tilde{H}_Z = -\gamma\,\vec B\cdot\tilde S = -\gamma B\,\tilde{S}(\vec u)
@@ -99,7 +99,7 @@ which is non-zero precisely when the transverse coupling is not parallel to the 
 
 ### The Electric Coupling
 
-An electric dipole $\vec d$ in a field $\vec E$ has energy $V_{\mathrm{pot}} = -\vec d\cdot\vec E$, giving the Hermitian coupling
+An electric dipole $\vec d$ in a field $\vec E$ has energy $V^{\mathrm{pot}} = -\vec d\cdot\vec E$, giving the Hermitian coupling
 
 $$
 \tilde{H}_S = -\vec d\cdot\vec E = -E\,d\,i\vec e_x
@@ -216,7 +216,7 @@ The reason the magnetic coupling is diagonal is that the two spin states carry d
 
 ### Conventions of Sign
 
-The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$ and $V_{\mathrm{pot}} = -\vec d\cdot\vec E$. In the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, the spin magnetic moment is taken along the spin, $\vec\mu = \gamma\vec S$, so that $\tilde{H}_Z = -\gamma B\tilde{S}_3 = -\tfrac{\hbar\omega_L}{2}i\vec e_z$ with $\omega_L = \gamma B$. A negative gyromagnetic ratio (the electron) reverses the ordering of the two levels but not the structure; the algebra treats the sign of $\gamma$ as external data.
+The signs in the two couplings follow from $V^{\mathrm{pot}} = -\vec\mu\cdot\vec B$ and $V^{\mathrm{pot}} = -\vec d\cdot\vec E$. In the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, the spin magnetic moment is taken along the spin, $\vec\mu = \gamma\vec S$, so that $\tilde{H}_Z = -\gamma B\tilde{S}_3 = -\tfrac{\hbar\omega_L}{2}i\vec e_z$ with $\omega_L = \gamma B$. A negative gyromagnetic ratio (the electron) reverses the ordering of the two levels but not the structure; the algebra treats the sign of $\gamma$ as external data.
 
 ## What the Algebra Adds and What It Does Not
 

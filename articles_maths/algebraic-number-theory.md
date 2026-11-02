@@ -199,7 +199,7 @@ a fractional ideal of $L$ containing $\mathcal{O}_L$; its inverse $\mathrm{D}_{L
 
 **Proof sketch.** (a) The trace pairing $L \times L \to K$, $(x,y) \mapsto \operatorname{Tr}_{L/K}(xy)$, is nondegenerate, and its behaviour modulo $\mathrm{P}$ is governed by the residue extension; the pairing is nondegenerate on $\mathcal{O}_L/\mathrm{P}$ exactly when the residue extension is separable with the same degree as the field extension, which by the fundamental identity means $e = 1$. (b) Norms of prime ideals are prime powers, so the prime divisors are the same. (c) If $e = 1$ then the different is coprime to $\mathrm{P}$ by (a), so it is the unit ideal above $\mathrm{p}$.
 
-**Theorem (conductor–discriminant formula).** Let $L/K$ be a finite abelian extension and let $\widehat{G}$ be the group of irreducible characters of $G = \operatorname{Gal}(L/K)$. Then
+**Theorem (conductor–discriminant formula).** Let $L/K$ be a finite abelian extension and let $\widehat{G}$ be the group of irreducible characters of $G = \operatorname{gal}(L/K)$. Then
 
 $$
 \boxed{\;\mathrm{d}_{L/K} = \prod_{\chi \in \widehat G} \mathrm{F}(\chi)\;},

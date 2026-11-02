@@ -227,7 +227,7 @@ so that the antisymmetric tensor is **pure** integer spin. This is the algebraic
 The representation theory of the spinor module supplies a second description of the same split, which will be used again in the final article. The symmetric square of the defining module $S$ is
 
 $$
-\mathrm{Sym}^2(S) \cong (1,0), \qquad \dim_{\mathbb{C}}\mathrm{Sym}^2(S) = 3,
+\mathrm{sym}^2(S) \cong (1,0), \qquad \dim_{\mathbb{C}}\mathrm{sym}^2(S) = 3,
 $$
 
 and the symmetric square of the conjugate module is $(0,1)$. The self-dual half of the field strength is therefore a symmetric two-spinor, and the anti-self-dual half is a symmetric two-spinor of the conjugate type. The carrier of the split is the symmetric square of the defining module, which is a representation of the Lorentz group but **not** a module over $\mathbb{B}$ — a point taken up in the closing section.
@@ -285,7 +285,7 @@ $$
 
 that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec N$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec N$ carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec N^* = \vec E-ic\vec B$ carried by $\bar{\tilde{F}}$, on which $\star = +i$.
 
-The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{Sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{Sym}^2(\bar{S})\cong(0,1)$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\vec E+ic\vec B$ carries helicity $+1$ and $\vec E-ic\vec B$ helicity $-1$. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
+The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{sym}^2(\bar{S})\cong(0,1)$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\vec E+ic\vec B$ carries helicity $+1$ and $\vec E-ic\vec B$ helicity $-1$. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
 
 ## Summary of Notation
 
@@ -306,7 +306,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $\star$ | Hodge dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$, $\star\tilde{F}=-i\tilde{F}$ |
 | $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ | Projectors onto the self-dual ($\star=-i$) and anti-self-dual ($\star=+i$) halves |
 | $(1,0)$, $(0,1)$ | The two three-dimensional complex Lorentz representations |
-| $S$ | Defining (spinor) module, $\mathrm{Sym}^2(S)\cong(1,0)$ |
+| $S$ | Defining (spinor) module, $\mathrm{sym}^2(S)\cong(1,0)$ |
 | $\tilde{U}\in SL(2,\mathbb{C})$ | Lorentz rotor, $\tilde{U}\tilde{U}^{\natural}=e_t$ |
 
 ## Further Reading

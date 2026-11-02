@@ -156,10 +156,10 @@ This also identifies what a three-level system is *for* in the framework. A spin
 The three-dimensional representation exists as an irreducible summand of the tensor square of the defining module. The Clebsch–Gordan rule of the companion article gives
 
 $$
-\boxed{\;V\otimes V\;\cong\;\mathrm{Sym}^2V\;\oplus\;\Lambda^2V,\qquad 4=3+1\;},
+\boxed{\;V\otimes V\;\cong\;\mathrm{sym}^2V\;\oplus\;\Lambda^2V,\qquad 4=3+1\;},
 $$
 
-the three-dimensional symmetric square being the adjoint representation of $\mathrm{SU}(2)$ and the one-dimensional alternating square the scalar, spanned by the invariant alternating form. The qutrit is $\mathrm{Sym}^2V$, realised in the framework by the triplet of the two-spin problem.
+the three-dimensional symmetric square being the adjoint representation of $\mathrm{SU}(2)$ and the one-dimensional alternating square the scalar, spanned by the invariant alternating form. The qutrit is $\mathrm{sym}^2V$, realised in the framework by the triplet of the two-spin problem.
 
 In the framework the tensor square is $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$, the module is $V\otimes V$ with the four basis states of the companion problem on two spin-$\tfrac12$ particles, and the two summands are the triplet and the singlet. The projector onto the qutrit sector is
 
@@ -173,10 +173,10 @@ $$
 \tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
-which act on $\mathrm{Sym}^2V$ irreducibly and annihilate $\Lambda^2V$. The ladder behaves as a three-level ladder should: the raising operator restricted to the symmetric sector is the spin-one raising operator,
+which act on $\mathrm{sym}^2V$ irreducibly and annihilate $\Lambda^2V$. The ladder behaves as a three-level ladder should: the raising operator restricted to the symmetric sector is the spin-one raising operator,
 
 $$
-\left(\tilde S_+^{(1)}+\tilde S_+^{(2)}\right)\Big|_{\mathrm{Sym}^2V}=\hbar\, J_+
+\left(\tilde S_+^{(1)}+\tilde S_+^{(2)}\right)\Big|_{\mathrm{sym}^2V}=\hbar\, J_+
 $$
 
 with the standard matrix elements $J_+|1,0\rangle=\sqrt2\hbar\,|1,1\rangle$ and $J_+|1,-1\rangle=\sqrt2\hbar\,|1,0\rangle$; this was verified by restricting the four-dimensional operator to the symmetric basis. The first obstruction is thus bypassed at the cost of one factor: the two-level algebra, applied twice.
@@ -199,7 +199,7 @@ The ledger between the algebra and the tensor square can be drawn item by item. 
 
 | Qutrit ingredient | Where it lives |
 |---|---|
-| Three orthonormal levels | the triplet sector $\mathrm{Sym}^2V\subset V\otimes V$ |
+| Three orthonormal levels | the triplet sector $\mathrm{sym}^2V\subset V\otimes V$ |
 | The three spectral projectors $E_{mm}$ | symmetric elements of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$, selected by $P_{\mathrm{sym}}$ |
 | Raising and lowering $\tilde S_\pm$ ($\tilde S_+^3=0$) | $\tilde S_\pm^{(1)}+\tilde S_\pm^{(2)}$ restricted to the sector |
 | The spin vector $\langle\vec F\rangle$ | the adjoint action of $\mathbb{B}$ on the traceless part |
@@ -219,7 +219,7 @@ The **physical interpretation** of the spectator statement is worth stating once
 The pattern is general. The irreducible representation of highest weight $n$ is the symmetric power
 
 $$
-\mathrm{Sym}^nV,\qquad \dim_{\mathbb{C}}\mathrm{Sym}^nV=n+1 ,
+\mathrm{sym}^nV,\qquad \dim_{\mathbb{C}}\mathrm{sym}^nV=n+1 ,
 $$
 
 that is, the spin-$s$ multiplet $V_s$ with $s=n/2$, as recorded in the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, and it appears as a summand of the $n$-fold tensor power, with multiplicities given by the ballot numbers. Since a single factor of the algebra carries only two levels, the counting is:
@@ -228,17 +228,17 @@ that is, the spin-$s$ multiplet $V_s$ with $s=n/2$, as recorded in the companion
 |---|---|---|---|
 | $0$ | $1$ | $\Lambda^2V$ (singlet) | $2$ |
 | $\tfrac12$ | $2$ | $V$ (the defining module) | $1$ |
-| $1$ | $3$ | $\mathrm{Sym}^2V$ (qutrit) | $2$ |
+| $1$ | $3$ | $\mathrm{sym}^2V$ (qutrit) | $2$ |
 | $\tfrac32$ | $4$ | the highest summand of $V^{\otimes3}$ | $3$ |
-| $s$ | $2s+1$ | $\mathrm{Sym}^{2s}V$ | $2s$ |
+| $s$ | $2s+1$ | $\mathrm{sym}^{2s}V$ | $2s$ |
 
-The cost is linear in the number of levels minus one. The $\tfrac32$ case requires three factors and is instructive: $V^{\otimes3}\cong\mathrm{Sym}^3V\oplus 2V$, so the four-dimensional multiplet appears together with two unwanted doublets, and the projection is onto a sector of a sector. For a spin-one system the projection is clean — one singlet out — and for that reason spin one is the first case in which the framework's higher-spin construction is genuinely useful, and the last in which it is uncomplicated.
+The cost is linear in the number of levels minus one. The $\tfrac32$ case requires three factors and is instructive: $V^{\otimes3}\cong\mathrm{sym}^3V\oplus 2V$, so the four-dimensional multiplet appears together with two unwanted doublets, and the projection is onto a sector of a sector. For a spin-one system the projection is clean — one singlet out — and for that reason spin one is the first case in which the framework's higher-spin construction is genuinely useful, and the last in which it is uncomplicated.
 
 ## What the Algebra's Virtues Become
 
 The qubit's most characteristic results are properties of $\mathsf{M}_2$ rather than of quantum theory in general, and each of them degrades in a way that can be stated exactly.
 
-| Structure | Qubit, from $\mathbb{B}=M_2(\mathbb{C})$ | Qutrit, in $\mathrm{Sym}^2V$ |
+| Structure | Qubit, from $\mathbb{B}=M_2(\mathbb{C})$ | Qutrit, in $\mathrm{sym}^2V$ |
 |---|---|---|
 | Number of levels | $2$, the module dimension | $3$, a summand of the tensor square |
 | Biquaternion norm | $\langle\tilde H\rangle_{\natural}=\det\tilde H$, a quadratic form of signature $(1,3)$ | the determinant of a $3\times3$ matrix, a cubic |
@@ -262,9 +262,9 @@ Three-level systems are outside the biquaternion algebra as modules, and inside 
 - **Idempotent ceiling.** At most two orthogonal idempotents of $\mathbb{B}$ can sum to the identity, so a three-outcome projective measurement is impossible in the algebra; three-outcome POVMs exist, but they are not sharp.
 - **The adjoint representation.** The traceless part $W$ carries spin one under the adjoint action, but $\mathrm{ad}_{xy}\neq\mathrm{ad}_x\mathrm{ad}_y$: explicitly $\mathrm{ad}_{i\vec e_x}^2(i\vec e_y)=+4i\vec e_y\neq0=\mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)$. The three-dimensional space is a module of the Lie algebra $\mathfrak{su}(2)$ and of the group $SU(2)$, not of the algebra $\mathbb{B}$; all derivations are inner and $\mathrm{Der}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$.
 - **The absent dynamical algebra.** $\dim_{\mathbb{R}}\mathbb{M}_+=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $\mathrm{U}(3)$ only through the tensor square.
-- **The construction.** $V\otimes V\cong\mathrm{Sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{Sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{Sym}^2V}=\hbar J_+$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
+- **The construction.** $V\otimes V\cong\mathrm{sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{sym}^2V}=\hbar J_+$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
 - **The cost.** One extra level that must be projected out, an algebra that grows from $M_2(\mathbb{C})$ to $M_4(\mathbb{C})$, and a state space whose positivity is no longer a quadratic cone condition.
-- **General counting.** $\mathrm{Sym}^nV$ has dimension $n+1$; spin $s$ requires $2s$ factors, so the cost in factors is linear in the number of levels minus one.
+- **General counting.** $\mathrm{sym}^nV$ has dimension $n+1$; spin $s$ requires $2s$ factors, so the cost in factors is linear in the number of levels minus one.
 
 ## Summary of Notation
 
@@ -279,8 +279,8 @@ Three-level systems are outside the biquaternion algebra as modules, and inside 
 | $S_+$, $\tilde S_+$ | Raising operator; $S_+^2=0$ |
 | $J_+$ | Spin-one raising operator; $J_+^3=0$, $J_+^2\neq0$ |
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Triplet and singlet projectors of $\mathbb{B}\otimes\mathbb{B}$ |
-| $\mathrm{Sym}^2V$, $\Lambda^2V$ | Symmetric and antisymmetric squares; dimensions $3$ and $1$ |
-| $\mathrm{Sym}^nV$ | Symmetric $n$-th power of the defining module, dimension $n+1$ |
+| $\mathrm{sym}^2V$, $\Lambda^2V$ | Symmetric and antisymmetric squares; dimensions $3$ and $1$ |
+| $\mathrm{sym}^nV$ | Symmetric $n$-th power of the defining module, dimension $n+1$ |
 | $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ | Spin-one operators of the tensor square |
 | $M_3(\mathbb{C})$ | Qutrit observable algebra, real dimension $18$ |
 

@@ -40,7 +40,7 @@ where $V^*\otimes_k V^*$ is identified with the dual of $V\otimes_k V$; equivale
 **Example (the symmetric algebra and the exterior algebra).** Let $V$ be of dimension $n$ and let
 
 $$
-A = \operatorname{Sym}(V) = T(V)/(v\otimes w - w\otimes v)
+A = \operatorname{sym}(V) = T(V)/(v\otimes w - w\otimes v)
 $$
 
 with $R = \Lambda^2V \subseteq V\otimes V$ spanned by the antisymmetric tensors. Then $R^\perp = S^2V^* \subseteq V^*\otimes V^*$ is the space of symmetric tensors, and
@@ -49,7 +49,7 @@ $$
 A^! = T(V^*)/(S^2V^*) = \Lambda(V^*) ,
 $$
 
-the exterior algebra of the dual space. Conversely the dual of $\Lambda(V)$ is $\operatorname{Sym}(V^*)$. This pair is the source of the terminology: the Koszul dual of the symmetric algebra is the exterior algebra, and vice versa.
+the exterior algebra of the dual space. Conversely the dual of $\Lambda(V)$ is $\operatorname{sym}(V^*)$. This pair is the source of the terminology: the Koszul dual of the symmetric algebra is the exterior algebra, and vice versa.
 
 **Example (the tensor algebra and the trivial algebra).** With $R = 0$ the algebra is $T(V)$; then $R^\perp = V^*\otimes V^*$, so $A^! = T(V^*)/(V^*\otimes V^*) = k$. Conversely the dual of $k$ (presented with $R = V\otimes V$) is $T(V^*)$, so $k$ and $T(V)$ are Koszul dual. The duality therefore pairs the free algebra with the trivial algebra, which is the extreme case of the pairing between "no relations" and "all relations".
 
@@ -121,25 +121,25 @@ $$
 
 *Proof.* The Euler characteristic of the Koszul complex, which is a resolution of $k$ when $A$ is Koszul, gives $\sum_n(-1)^n\dim_k(A\otimes_k(A^!_n)^*)\,t^n = \dim_k k = 1$ if the internal degree is tracked; substituting the Hilbert series evaluates the alternating sum.
 
-**Example.** For $A = \operatorname{Sym}(V)$ with $\dim V = n$, $\mathrm{Hilb}_A(t) = (1-t)^{-n}$ and $\mathrm{Hilb}_{A^!}(t) = (1+t)^n$, so $\mathrm{Hilb}_A(t)\mathrm{Hilb}_{A^!}(-t) = (1-t)^{-n}(1-t)^n = 1$. For the quantum plane and its dual of the preceding example the same identity holds, with $(1-t)^{-2}$ and $(1-t)^{2}$. For $A = k[x]/(x^2)$ it reads $(1+t)\cdot(1+t)^{-1} = 1$, again true, and $A^! = k[x]$ in this case. The identity is a necessary condition for Koszulity and is the quickest numerical test; it is not sufficient in general, and the full criterion is the vanishing of $\operatorname{Tor}$ in the off-diagonal bidegrees.
+**Example.** For $A = \operatorname{sym}(V)$ with $\dim V = n$, $\mathrm{Hilb}_A(t) = (1-t)^{-n}$ and $\mathrm{Hilb}_{A^!}(t) = (1+t)^n$, so $\mathrm{Hilb}_A(t)\mathrm{Hilb}_{A^!}(-t) = (1-t)^{-n}(1-t)^n = 1$. For the quantum plane and its dual of the preceding example the same identity holds, with $(1-t)^{-2}$ and $(1-t)^{2}$. For $A = k[x]/(x^2)$ it reads $(1+t)\cdot(1+t)^{-1} = 1$, again true, and $A^! = k[x]$ in this case. The identity is a necessary condition for Koszulity and is the quickest numerical test; it is not sufficient in general, and the full criterion is the vanishing of $\operatorname{Tor}$ in the off-diagonal bidegrees.
 
 ### Sufficient conditions and examples
 
 **Theorem (standard).** The following quadratic algebras are Koszul:
 
-1. the symmetric algebra $\operatorname{Sym}(V)$ with $\operatorname{Sym}(V)^! = \Lambda(V^*)$, and the exterior algebra $\Lambda(V)$ with $\Lambda(V)^! = \operatorname{Sym}(V^*)$, for every finite-dimensional $V$;
+1. the symmetric algebra $\operatorname{sym}(V)$ with $\operatorname{sym}(V)^! = \Lambda(V^*)$, and the exterior algebra $\Lambda(V)$ with $\Lambda(V)^! = \operatorname{sym}(V^*)$, for every finite-dimensional $V$;
 2. the free algebra $T(V)$ with $T(V)^! = k$, and $k$ with $k^! = T(V^*)$;
 3. the quantum affine space $k_m[x_1,\dots,x_n]$ with relations $x_jx_i = m_{ij}x_ix_j$ for $m$ not a root of unity, whose Koszul dual is the quantum exterior algebra on the dual generators; for $n = 2$ this is the pair computed above;
 4. every algebra that admits a **PBW basis** with respect to a degree-compatible monomial order and whose leading monomials are quadratic, in the sense that the monomials not divisible by a leading monomial of a relation form a basis: such algebras are Koszul, and the family includes the quantum affine spaces of item 3 and the $m$-Weyl algebras;
 5. the **skew group ring** $A\# G$ of a Koszul algebra $A$ by a finite group $G$ acting by graded algebra automorphisms preserving the space of generators, in the sense of the crossed products of *Crossed Products*.
 
-**Example (Koszul duality of the symmetric and the exterior algebra).** The algebra $A = \operatorname{Sym}(V)$ and its dual $\Lambda(V^*)$ form the model pair. Its Koszul complex is the classical Koszul complex of the polynomial algebra,
+**Example (Koszul duality of the symmetric and the exterior algebra).** The algebra $A = \operatorname{sym}(V)$ and its dual $\Lambda(V^*)$ form the model pair. Its Koszul complex is the classical Koszul complex of the polynomial algebra,
 
 $$
 0 \to A\otimes_k \Lambda^n(V) \to A\otimes_k\Lambda^{n-1}(V)\to\cdots\to A\otimes_k\Lambda^1(V) \to A \to k \to 0,
 $$
 
-with $n = \dim V$, and the exactness of this complex — the statement that the Koszul complex of a regular sequence is a resolution, the algebraic content of the theorem that the polynomial algebra is Cohen–Macaulay — is exactly the Koszulity of $\operatorname{Sym}(V)$. This is the origin of the name.
+with $n = \dim V$, and the exactness of this complex — the statement that the Koszul complex of a regular sequence is a resolution, the algebraic content of the theorem that the polynomial algebra is Cohen–Macaulay — is exactly the Koszulity of $\operatorname{sym}(V)$. This is the origin of the name.
 
 **Example (a non-Koszul quadratic algebra).** The algebra $A = k[x,y]/(xy)$ has $\mathrm{Hilb}_A(t) = (1+t)/(1-t)$, while its quadratic dual has $\dim_k A^!_2 = 4 - \dim_k R^\perp$ with $\dim_k R^\perp = 3$, so $\dim_kA^!_2 = 1$; the required identity would force $\dim_kA^!_2 = 2$, so the numerical test fails and $A$ is not Koszul. The algebra is a monomial quadratic algebra whose Koszulity is decided by the criterion of Backelin and Fröberg for monomial algebras, and the failure reflects the presence of the zerodivisor $x$: the algebra is the quotient of the polynomial algebra by a non-regular element.
 
@@ -161,13 +161,13 @@ implemented by the functors $\operatorname{RHom}_A(-,k)$ and $\operatorname{RHom
 
 **Corollary.** For a Koszul algebra the algebra $A$ is determined up to isomorphism by $A^!$ and conversely; in particular Koszul duality is an involution on the class of Koszul algebras.
 
-**Example.** For $A = \operatorname{Sym}(V)$ and $A^! = \Lambda(V^*)$, the duality says that graded modules over the polynomial algebra are equivalent to graded modules over the exterior algebra, with the roles of projective and injective objects exchanged. The **Bernstein–Gelfand–Gelfand correspondence** is the geometric case: for a vector space $V$ the equivalence relates coherent sheaves on the projective space $\mathbb{P}(V)$ to finitely generated graded modules over the exterior algebra, the singularity category of the polynomial ring and the stable module category of the exterior algebra being equivalent. The projective space and the corresponding geometric categories belong to Part II, where the geometry is available; only the algebraic statement is recorded here.
+**Example.** For $A = \operatorname{sym}(V)$ and $A^! = \Lambda(V^*)$, the duality says that graded modules over the polynomial algebra are equivalent to graded modules over the exterior algebra, with the roles of projective and injective objects exchanged. The **Bernstein–Gelfand–Gelfand correspondence** is the geometric case: for a vector space $V$ the equivalence relates coherent sheaves on the projective space $\mathbb{P}(V)$ to finitely generated graded modules over the exterior algebra, the singularity category of the polynomial ring and the stable module category of the exterior algebra being equivalent. The projective space and the corresponding geometric categories belong to Part II, where the geometry is available; only the algebraic statement is recorded here.
 
 ### The operadic and homological formulations
 
 **Definition.** A **quadratic operad** $\mathcal{O}$ is an operad generated by operations in arity $2$ with relations in arity $3$ quadratic in the generators, so that $\mathcal{O}$ has a **Koszul dual** operad $\mathcal{O}^!$ defined by the orthogonal complement of the space of relations with respect to the natural pairing on the operation spaces. An operad is **Koszul** if its Koszul complex is a resolution.
 
-**Theorem (standard).** The associative operad $\mathcal{A}ss$ and the operad of (graded) commutative algebras $\mathcal{C}om$ are Koszul dual, and the operad $\mathcal{L}ie$ is Koszul and self-dual up to the suspension $\mathcal{L}ie^! = \mathcal{C}om$ with a degree shift: exactly, $\mathcal{A}ss^! = \mathcal{A}ss$ up to a shift and $\mathcal{C}om^! = \mathcal{L}ie$, which is the operadic form of the duality between $\operatorname{Sym}(V)$ and $\Lambda(V)$, between the commutative and the Lie structures. The operadic Koszulity is verified by the same criterion: the Koszul complex of a quadratic operad is a resolution exactly when the operad's homology is concentrated in the expected bidegrees. The theory of operads is developed in *Operads*, and the homotopy-coherent generalisations — the $A_\infty$- and $L_\infty$-operads, which are the Koszul resolutions of the associative and the Lie operads — are the subject in the menu.
+**Theorem (standard).** The associative operad $\mathcal{A}ss$ and the operad of (graded) commutative algebras $\mathcal{C}om$ are Koszul dual, and the operad $\mathcal{L}ie$ is Koszul and self-dual up to the suspension $\mathcal{L}ie^! = \mathcal{C}om$ with a degree shift: exactly, $\mathcal{A}ss^! = \mathcal{A}ss$ up to a shift and $\mathcal{C}om^! = \mathcal{L}ie$, which is the operadic form of the duality between $\operatorname{sym}(V)$ and $\Lambda(V)$, between the commutative and the Lie structures. The operadic Koszulity is verified by the same criterion: the Koszul complex of a quadratic operad is a resolution exactly when the operad's homology is concentrated in the expected bidegrees. The theory of operads is developed in *Operads*, and the homotopy-coherent generalisations — the $A_\infty$- and $L_\infty$-operads, which are the Koszul resolutions of the associative and the Lie operads — are the subject in the menu.
 
 **Theorem (standard).** Let $A$ be a Koszul algebra with Koszul dual $A^!$. Then the Hochschild cohomology of $A$ is computed by a complex built from the Koszul resolution, and there are duality statements relating the Hochschild theories of $A$ and of $A^!$ with a degree shift: for a Koszul algebra the Hochschild cohomology $HH^\bullet(A,A)$ is the $E_2$-page of a spectral sequence converging to the Hochschild cohomology of $A^!$, and in the graded-complete setting the Hochschild homology of $A$ is dual to the Hochschild cohomology of $A^!$ with a shift of degree,
 
@@ -179,21 +179,21 @@ so that the Hochschild theories of a Koszul algebra and of its dual determine on
 
 ## Koszul Duality and the Symmetric and Exterior Algebras of this Part
 
-The duality of the article is the algebraic statement that completes the pairing of the two symmetric-side and antisymmetric-side constructions of this Part. The symmetric algebra $\operatorname{Sym}(V)$ and the exterior algebra $\Lambda(V)$ are Koszul dual, and the same is true of the symmetric and divided power algebras in the graded-complete setting. This is the precise sense in which the symmetric and the antisymmetric constructions are dual to each other at the level of algebras, and it explains why the two families run through the corpus in parallel: the polynomial algebra and the Grassmann algebra are not merely analogous, they are exchanged by a duality.
+The duality of the article is the algebraic statement that completes the pairing of the two symmetric-side and antisymmetric-side constructions of this Part. The symmetric algebra $\operatorname{sym}(V)$ and the exterior algebra $\Lambda(V)$ are Koszul dual, and the same is true of the symmetric and divided power algebras in the graded-complete setting. This is the precise sense in which the symmetric and the antisymmetric constructions are dual to each other at the level of algebras, and it explains why the two families run through the corpus in parallel: the polynomial algebra and the Grassmann algebra are not merely analogous, they are exchanged by a duality.
 
 **Proposition.** Let $V$ be finite-dimensional. Then:
 
-1. $\operatorname{Sym}(V)$ is Koszul with $\operatorname{Sym}(V)^! = \Lambda(V^*)$;
-2. $\Lambda(V)$ is Koszul with $\Lambda(V)^! = \operatorname{Sym}(V^*)$;
-3. the divided power algebra $\Gamma(V)$ is Koszul with $\Gamma(V)^! = \Lambda(V^*)$ in the graded-complete setting, the divided powers being the graded-complete dual of the symmetric powers; the two algebras $\operatorname{Sym}(V)$ and $\Gamma(V)$ consequently share the same Koszul dual, which is the algebraic statement of the mutual duality of the symmetric and divided power algebras.
+1. $\operatorname{sym}(V)$ is Koszul with $\operatorname{sym}(V)^! = \Lambda(V^*)$;
+2. $\Lambda(V)$ is Koszul with $\Lambda(V)^! = \operatorname{sym}(V^*)$;
+3. the divided power algebra $\Gamma(V)$ is Koszul with $\Gamma(V)^! = \Lambda(V^*)$ in the graded-complete setting, the divided powers being the graded-complete dual of the symmetric powers; the two algebras $\operatorname{sym}(V)$ and $\Gamma(V)$ consequently share the same Koszul dual, which is the algebraic statement of the mutual duality of the symmetric and divided power algebras.
 
 *Proof.* Statements 1 and 2 are the model examples computed above. Statement 3 follows from the Hilbert-series identity on the graded pieces, $\dim_k\Gamma_n(V) = \dim_kS^n(V^*)$, together with the resolution criterion; it is the statement that the symmetric and divided power algebras are the two graded-complete forms of the Koszul resolution and have the exterior algebra as their common dual.
 
 ## Summary
 
-A **quadratic algebra** is $A = A(V,R) = T(V)/(R)$ with $R \subseteq V\otimes_k V$ homogeneous of degree $2$, and its **Koszul dual** is $A^! = T(V^*)/(R^\perp)$, the quadratic algebra determined by the orthogonal complement of the relations; the construction is an inclusion-reversing involution on quadratic algebras, so $(A^!)^! \cong A$. The model examples are $\operatorname{Sym}(V)^! = \Lambda(V^*)$ and $\Lambda(V)^! = \operatorname{Sym}(V^*)$, together with $T(V)^! = k$ and $k^! = T(V^*)$; the Koszul dual of the quantum plane is the quantum exterior algebra with relations $x^{*2} = y^{*2} = 0$ and $x^*y^* = -m\,y^*x^*$. The **Koszul complex** $K(A)$ is the complex of graded free $A$-modules with $K(A)_n = A\otimes_k(A^!_n)^*$ and differential the derivative with respect to the generators, and $A$ is **Koszul** when $K(A)$ is a resolution of the trivial module, equivalently when $\operatorname{Ext}^{i,j}_A(k,k) = 0$ for $i \neq j$; then $A^! \cong \operatorname{Ext}^{\bullet,\bullet}_A(k,k)$ with the Yoneda product, $A^!$ is again Koszul, and the Hilbert series satisfy $\mathrm{Hilb}_A(t)\mathrm{Hilb}_{A^!}(-t) = 1$.
+A **quadratic algebra** is $A = A(V,R) = T(V)/(R)$ with $R \subseteq V\otimes_k V$ homogeneous of degree $2$, and its **Koszul dual** is $A^! = T(V^*)/(R^\perp)$, the quadratic algebra determined by the orthogonal complement of the relations; the construction is an inclusion-reversing involution on quadratic algebras, so $(A^!)^! \cong A$. The model examples are $\operatorname{sym}(V)^! = \Lambda(V^*)$ and $\Lambda(V)^! = \operatorname{sym}(V^*)$, together with $T(V)^! = k$ and $k^! = T(V^*)$; the Koszul dual of the quantum plane is the quantum exterior algebra with relations $x^{*2} = y^{*2} = 0$ and $x^*y^* = -m\,y^*x^*$. The **Koszul complex** $K(A)$ is the complex of graded free $A$-modules with $K(A)_n = A\otimes_k(A^!_n)^*$ and differential the derivative with respect to the generators, and $A$ is **Koszul** when $K(A)$ is a resolution of the trivial module, equivalently when $\operatorname{Ext}^{i,j}_A(k,k) = 0$ for $i \neq j$; then $A^! \cong \operatorname{Ext}^{\bullet,\bullet}_A(k,k)$ with the Yoneda product, $A^!$ is again Koszul, and the Hilbert series satisfy $\mathrm{Hilb}_A(t)\mathrm{Hilb}_{A^!}(-t) = 1$.
 
-The **Koszul duality theorem** states that for Koszul $A$ the bounded derived category of finitely generated graded $A$-modules is equivalent to that of $A^!$ with the opposite variance, realised by $\operatorname{RHom}_A(-,k)$ and by the tilting object $K(A)$ whose endomorphism algebra is $A^!$; the algebraic cases are the BGG correspondence and the exchange of $\operatorname{Sym}(V)$ with $\Lambda(V^*)$, and the geometric statements — projective spaces, singularity categories and coherent sheaves — belong to Part II. The operadic version pairs the operads $\mathcal{C}om$ and $\mathcal{L}ie$, up to a shift, identifies $\mathcal{A}ss$ with its dual, and the homotopy-coherent form of the resulting resolutions is not covered here. The duality completes the pairing of the symmetric side and the antisymmetric side of this Part: the symmetric algebra and the exterior algebra, and their divided-power and symmetric-power forms, are exchanged by Koszul duality, and the Hochschild theories of an algebra and of its Koszul dual are related by a Poincaré-type duality.
+The **Koszul duality theorem** states that for Koszul $A$ the bounded derived category of finitely generated graded $A$-modules is equivalent to that of $A^!$ with the opposite variance, realised by $\operatorname{RHom}_A(-,k)$ and by the tilting object $K(A)$ whose endomorphism algebra is $A^!$; the algebraic cases are the BGG correspondence and the exchange of $\operatorname{sym}(V)$ with $\Lambda(V^*)$, and the geometric statements — projective spaces, singularity categories and coherent sheaves — belong to Part II. The operadic version pairs the operads $\mathcal{C}om$ and $\mathcal{L}ie$, up to a shift, identifies $\mathcal{A}ss$ with its dual, and the homotopy-coherent form of the resulting resolutions is not covered here. The duality completes the pairing of the symmetric side and the antisymmetric side of this Part: the symmetric algebra and the exterior algebra, and their divided-power and symmetric-power forms, are exchanged by Koszul duality, and the Hochschild theories of an algebra and of its Koszul dual are related by a Poincaré-type duality.
 
 ## Summary of Notation
 
@@ -212,7 +212,7 @@ The **Koszul duality theorem** states that for Koszul $A$ the bounded derived ca
 | $\operatorname{grmod}A$, $D^{\mathrm{b}}$ | graded modules, bounded derived category |
 | $\mathcal{O}^!$ | Koszul dual of a quadratic operad |
 | $\mathcal{A}ss$, $\mathcal{C}om$, $\mathcal{L}ie$ | associative, commutative, Lie operads |
-| $\operatorname{Sym}(V)$, $\Lambda(V)$, $\Gamma(V)$ | symmetric, exterior, divided power algebras |
+| $\operatorname{sym}(V)$, $\Lambda(V)$, $\Gamma(V)$ | symmetric, exterior, divided power algebras |
 | $k_q[x,y]$ | quantum plane, $yx = qxy$ |
 
 

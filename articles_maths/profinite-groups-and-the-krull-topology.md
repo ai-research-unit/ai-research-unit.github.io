@@ -97,62 +97,62 @@ $$
 
 with the product topology. Then $G$ is compact, Hausdorff and totally disconnected, hence profinite; its open subgroups are the preimages of the subgroups of the finite subproducts $\prod_{i \in F} \mathbb{Z}/2\mathbb{Z}$ with $F$ finite; there are $|I|$ of them, since there are $|I|$ finite subsets $F$ and only finitely many subgroups of each finite subproduct, while the kernels of the coordinate projections already give $|I|$ distinct open subgroups. Hence there are uncountably many open subgroups, the group is not second countable, and it carries no metric inducing its topology: **the Krull topology of a large Galois group is not induced by any distance on the group.** The same argument applies to $\mathbb{Z}_p^{\,I}$ for uncountable $I$ and to the absolute Galois group of a field with uncountably many finite Galois extensions.
 
-**Remark.** Metrisability is nevertheless the common case in arithmetic: the absolute Galois group $\operatorname{Gal}(\bar{\mathbb{Q}}/\mathbb{Q})$ of the rationals has countably many open subgroups — the finite extensions of $\mathbb{Q}$ are countable — and is therefore second countable and metrisable, even though it is not finitely generated as a profinite group; its abelianisation $\hat{\mathbb{Z}}^\times = \prod_p \mathbb{Z}_p^\times$ is not finitely generated. The topological statements of Galois theory are usually made for a general, possibly non-metrisable, extension, and the distinction is precisely the countability of the lattice of open subgroups.
+**Remark.** Metrisability is nevertheless the common case in arithmetic: the absolute Galois group $\operatorname{gal}(\bar{\mathbb{Q}}/\mathbb{Q})$ of the rationals has countably many open subgroups — the finite extensions of $\mathbb{Q}$ are countable — and is therefore second countable and metrisable, even though it is not finitely generated as a profinite group; its abelianisation $\hat{\mathbb{Z}}^\times = \prod_p \mathbb{Z}_p^\times$ is not finitely generated. The topological statements of Galois theory are usually made for a general, possibly non-metrisable, extension, and the distinction is precisely the countability of the lattice of open subgroups.
 
 ## The Krull Topology
 
 ### The Topology on a Galois Group
 
-Let $L/K$ be a Galois extension, possibly infinite, and let $\operatorname{Gal}(L/K)$ be its group of $K$-automorphisms. For each finite Galois subextension $M/K$ with $K \subseteq M \subseteq L$, restriction gives a homomorphism
+Let $L/K$ be a Galois extension, possibly infinite, and let $\operatorname{gal}(L/K)$ be its group of $K$-automorphisms. For each finite Galois subextension $M/K$ with $K \subseteq M \subseteq L$, restriction gives a homomorphism
 
 $$
-\operatorname{Gal}(L/K) \longrightarrow \operatorname{Gal}(M/K),
+\operatorname{gal}(L/K) \longrightarrow \operatorname{gal}(M/K),
 $$
 
 and the finite Galois subextensions form a directed set under inclusion.
 
-**Definition.** The **Krull topology** on $\operatorname{Gal}(L/K)$ is the coarsest topology for which all the restriction maps $\operatorname{Gal}(L/K) \to \operatorname{Gal}(M/K)$ to finite Galois subextensions are continuous, the finite groups $\operatorname{Gal}(M/K)$ carrying the discrete topology. A basis of neighbourhoods of the identity is the family
+**Definition.** The **Krull topology** on $\operatorname{gal}(L/K)$ is the coarsest topology for which all the restriction maps $\operatorname{gal}(L/K) \to \operatorname{gal}(M/K)$ to finite Galois subextensions are continuous, the finite groups $\operatorname{gal}(M/K)$ carrying the discrete topology. A basis of neighbourhoods of the identity is the family
 
 $$
-\operatorname{Gal}(L/M) = \{\sigma \in \operatorname{Gal}(L/K) : \sigma|_M = \mathrm{id}_M\}, \qquad M/K \text{ finite Galois}.
+\operatorname{gal}(L/M) = \{\sigma \in \operatorname{gal}(L/K) : \sigma|_M = \mathrm{id}_M\}, \qquad M/K \text{ finite Galois}.
 $$
 
-**Theorem.** With the Krull topology, $\operatorname{Gal}(L/K)$ is a profinite group:
+**Theorem.** With the Krull topology, $\operatorname{gal}(L/K)$ is a profinite group:
 
 $$
-\boxed{\;\operatorname{Gal}(L/K) \cong \varprojlim_{M/K \text{ finite Galois}} \operatorname{Gal}(M/K)\;},
+\boxed{\;\operatorname{gal}(L/K) \cong \varprojlim_{M/K \text{ finite Galois}} \operatorname{gal}(M/K)\;},
 $$
 
-the isomorphism carrying $\sigma$ to the family $(\sigma|_M)_M$. Consequently $\operatorname{Gal}(L/K)$ is compact, Hausdorff and totally disconnected, and its open subgroups are the subgroups $\operatorname{Gal}(L/M)$ for finite Galois $M/K$.
+the isomorphism carrying $\sigma$ to the family $(\sigma|_M)_M$. Consequently $\operatorname{gal}(L/K)$ is compact, Hausdorff and totally disconnected, and its open subgroups are the subgroups $\operatorname{gal}(L/M)$ for finite Galois $M/K$.
 
-**Proof.** The restriction maps are compatible: if $M \subseteq M'$ then the restriction $\operatorname{Gal}(M'/K) \to \operatorname{Gal}(M/K)$ composes correctly, so there is a homomorphism to the inverse limit. It is injective because an automorphism of $L$ fixing every finite Galois subextension fixes $L$, every element of $L$ lying in such a subextension. It is surjective because a compatible family of automorphisms of the finite Galois subextensions extends to a $K$-automorphism of the union $L$: the family is consistent on overlaps by compatibility, and defines an automorphism of the union. The map is continuous with continuous inverse by the definition of the Krull topology as the inverse limit topology. The description of the open subgroups is the theorem on open subgroups applied to the inverse system.
+**Proof.** The restriction maps are compatible: if $M \subseteq M'$ then the restriction $\operatorname{gal}(M'/K) \to \operatorname{gal}(M/K)$ composes correctly, so there is a homomorphism to the inverse limit. It is injective because an automorphism of $L$ fixing every finite Galois subextension fixes $L$, every element of $L$ lying in such a subextension. It is surjective because a compatible family of automorphisms of the finite Galois subextensions extends to a $K$-automorphism of the union $L$: the family is consistent on overlaps by compatibility, and defines an automorphism of the union. The map is continuous with continuous inverse by the definition of the Krull topology as the inverse limit topology. The description of the open subgroups is the theorem on open subgroups applied to the inverse system.
 
 ### The Fundamental Theorem of Galois Theory
 
 The point of the topology is that it makes the Galois correspondence exact.
 
-**Theorem (Krull).** Let $L/K$ be a Galois extension with group $G = \operatorname{Gal}(L/K)$ carrying the Krull topology. The assignments
+**Theorem (Krull).** Let $L/K$ be a Galois extension with group $G = \operatorname{gal}(L/K)$ carrying the Krull topology. The assignments
 
 $$
-\boxed{\;M \longmapsto \operatorname{Gal}(L/M), \qquad H \longmapsto L^H\;},
+\boxed{\;M \longmapsto \operatorname{gal}(L/M), \qquad H \longmapsto L^H\;},
 $$
 
 are mutually inverse bijections between the intermediate fields $K \subseteq M \subseteq L$ and the **closed** subgroups $H \subseteq G$. Under the bijection:
 
-**(a)** $M/K$ is finite if and only if $\operatorname{Gal}(L/M)$ is open, and then $[M : K] = [G : \operatorname{Gal}(L/M)]$;
+**(a)** $M/K$ is finite if and only if $\operatorname{gal}(L/M)$ is open, and then $[M : K] = [G : \operatorname{gal}(L/M)]$;
 
-**(b)** $M/K$ is Galois if and only if $\operatorname{Gal}(L/M)$ is a closed normal subgroup, and then $\operatorname{Gal}(M/K) \cong G/\operatorname{Gal}(L/M)$;
+**(b)** $M/K$ is Galois if and only if $\operatorname{gal}(L/M)$ is a closed normal subgroup, and then $\operatorname{gal}(M/K) \cong G/\operatorname{gal}(L/M)$;
 
 **(c)** the finite subextensions correspond exactly to the open subgroups, and the normal open subgroups correspond to the finite Galois subextensions;
 
-**(d)** an intermediate field $M$ with $L/M$ Galois corresponds to a closed subgroup, and $M = L^H$ for $H = \operatorname{Gal}(L/M)$.
+**(d)** an intermediate field $M$ with $L/M$ Galois corresponds to a closed subgroup, and $M = L^H$ for $H = \operatorname{gal}(L/M)$.
 
-**Proof.** The standard argument of *Galois Theory* establishes the bijection between intermediate fields and subgroups of $G$ in the finite case, and the infinite case is the statement that the correspondence is continuous for the Krull topology: the fixed field of a subgroup $H$ equals the fixed field of its closure, because an element fixed by $H$ is fixed by the closure of $H$ acting continuously on $L$ carrying the discrete topology on its elements, so the bijection is between fields and closed subgroups. The index and normality statements are the finite Galois theory applied to each finite Galois subextension, together with the description of the open subgroups above: $\operatorname{Gal}(L/M)$ is open exactly when it contains $\operatorname{Gal}(L/M')$ for some finite Galois $M'$, which is exactly the statement that $M$ is contained in a finite Galois extension $M'$ of $K$, and then $[M : K] \leq [M' : K]$ is finite.
+**Proof.** The standard argument of *Galois Theory* establishes the bijection between intermediate fields and subgroups of $G$ in the finite case, and the infinite case is the statement that the correspondence is continuous for the Krull topology: the fixed field of a subgroup $H$ equals the fixed field of its closure, because an element fixed by $H$ is fixed by the closure of $H$ acting continuously on $L$ carrying the discrete topology on its elements, so the bijection is between fields and closed subgroups. The index and normality statements are the finite Galois theory applied to each finite Galois subextension, together with the description of the open subgroups above: $\operatorname{gal}(L/M)$ is open exactly when it contains $\operatorname{gal}(L/M')$ for some finite Galois $M'$, which is exactly the statement that $M$ is contained in a finite Galois extension $M'$ of $K$, and then $[M : K] \leq [M' : K]$ is finite.
 
-**Example.** For $L = \bar{\mathbb{F}}_p$ and $K = \mathbb{F}_p$, the finite Galois subextensions are the fields $\mathbb{F}_{p^n}$, and the Frobenius automorphism $\mathrm{Fr} : x \mapsto x^p$ has image generating each $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n\mathbb{Z}$. Hence
+**Example.** For $L = \bar{\mathbb{F}}_p$ and $K = \mathbb{F}_p$, the finite Galois subextensions are the fields $\mathbb{F}_{p^n}$, and the Frobenius automorphism $\mathrm{Fr} : x \mapsto x^p$ has image generating each $\operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n\mathbb{Z}$. Hence
 
 $$
-\operatorname{Gal}(\bar{\mathbb{F}}_p/\mathbb{F}_p) \cong \varprojlim_n \mathbb{Z}/n\mathbb{Z} = \hat{\mathbb{Z}} = \prod_q \mathbb{Z}_q,
+\operatorname{gal}(\bar{\mathbb{F}}_p/\mathbb{F}_p) \cong \varprojlim_n \mathbb{Z}/n\mathbb{Z} = \hat{\mathbb{Z}} = \prod_q \mathbb{Z}_q,
 $$
 
 topologically generated by the Frobenius, and its closed subgroups are the subgroups $m\hat{\mathbb{Z}}$, each of index $m$ and corresponding to the finite extension $\mathbb{F}_{p^m}$; every closed subgroup of $\hat{\mathbb{Z}}$ has finite index and is therefore open.
@@ -205,7 +205,7 @@ The map $\iota_G$ is injective precisely when $G$ is residually finite.
 
 A profinite group is an inverse limit of finite groups, equivalently a compact Hausdorff totally disconnected topological group; the class is closed under closed subgroups, quotients by closed normal subgroups, products and inverse limits, and a surjection of profinite groups has a continuous section. Its open subgroups are exactly its closed finite-index subgroups and form a neighbourhood base at the identity; every open subgroup contains an open normal subgroup, and a profinite group is recovered from its finite quotients. The topology is metrisable exactly when there are countably many open subgroups, so it is induced by no distance for $\prod_{i \in I} \mathbb{Z}/2\mathbb{Z}$ with $I$ uncountable; the absolute Galois group of a field with uncountably many finite Galois extensions is the standard arithmetic instance.
 
-The Krull topology on a Galois group is the inverse-limit topology over the finite Galois subextensions, and it makes the fundamental theorem of Galois theory a bijection between intermediate fields and *closed* subgroups; open subgroups correspond to finite subextensions and open normal subgroups to finite Galois subextensions. The principal arithmetic examples are $\operatorname{Gal}(\bar{\mathbb{F}}_p/\mathbb{F}_p) \cong \hat{\mathbb{Z}}$ and $\operatorname{Gal}(\mathbb{Q}(\zeta_{p^\infty})/\mathbb{Q}) \cong \mathbb{Z}_p^\times$. Every abstract group has a profinite completion, left adjoint to the forgetful functor and injective exactly for residually finite groups; for $\mathbb{Z}$ it is $\hat{\mathbb{Z}} = \prod_p \mathbb{Z}_p$. Pro-$p$ groups carry Sylow theory, the Frattini subgroup and the rank $d = \dim G/\Phi(G)$ governing topological generation. Integration over a profinite group and its $L^{n}$ theory are Part III.
+The Krull topology on a Galois group is the inverse-limit topology over the finite Galois subextensions, and it makes the fundamental theorem of Galois theory a bijection between intermediate fields and *closed* subgroups; open subgroups correspond to finite subextensions and open normal subgroups to finite Galois subextensions. The principal arithmetic examples are $\operatorname{gal}(\bar{\mathbb{F}}_p/\mathbb{F}_p) \cong \hat{\mathbb{Z}}$ and $\operatorname{gal}(\mathbb{Q}(\zeta_{p^\infty})/\mathbb{Q}) \cong \mathbb{Z}_p^\times$. Every abstract group has a profinite completion, left adjoint to the forgetful functor and injective exactly for residually finite groups; for $\mathbb{Z}$ it is $\hat{\mathbb{Z}} = \prod_p \mathbb{Z}_p$. Pro-$p$ groups carry Sylow theory, the Frattini subgroup and the rank $d = \dim G/\Phi(G)$ governing topological generation. Integration over a profinite group and its $L^{n}$ theory are Part III.
 
 ## Summary of Notation
 
@@ -218,10 +218,10 @@ The Krull topology on a Galois group is the inverse-limit topology over the fini
 | $G/N$ | Finite quotient, discrete |
 | $\hat G^{\mathrm{pf}}$ | Profinite completion of an abstract group $G$ |
 | $\mathbb{Z}_p$, $\hat{\mathbb{Z}}$ | $p$-adic integers; $\hat{\mathbb{Z}} = \prod_p \mathbb{Z}_p$ |
-| $\operatorname{Gal}(L/K)$ | Galois group of an extension, with the Krull topology |
-| $\operatorname{Gal}(L/M)$, $M/K$ finite Galois | Basic neighbourhood of the identity in the Krull topology |
+| $\operatorname{gal}(L/K)$ | Galois group of an extension, with the Krull topology |
+| $\operatorname{gal}(L/M)$, $M/K$ finite Galois | Basic neighbourhood of the identity in the Krull topology |
 | $L^H$ | Fixed field of a closed subgroup $H$ |
-| $\mathrm{Fr}$ | Frobenius automorphism, topological generator of $\operatorname{Gal}(\bar{\mathbb{F}}_p/\mathbb{F}_p)$ |
+| $\mathrm{Fr}$ | Frobenius automorphism, topological generator of $\operatorname{gal}(\bar{\mathbb{F}}_p/\mathbb{F}_p)$ |
 | pro-$p$ group | Projective limit of finite $p$-groups |
 | $\Phi(G)$ | Frattini subgroup: intersection of the maximal open subgroups |
 | $d = \dim_{\mathbb{F}_p} G/\Phi(G)$ | Rank; minimal number of topological generators |

@@ -6,7 +6,7 @@ The Galois group of a field extension acts on everything built from the field: o
 
 Two computations govern everything. Hilbert's theorem 90, in its multiplicative form $H^1(K,\overline K^\times) = 0$, is the statement that every element of norm $1$ in a cyclic extension is a ratio of a conjugate; in cohomological form it kills the first cohomology of the multiplicative group and makes the Kummer isomorphism $H^1(K,\mu_n) \cong K^\times/(K^\times)^n$ immediate from the exact sequence $1 \to \mu_n \to \overline K^\times \xrightarrow{n} \overline K^\times \to 1$. The second computation, $H^2(K,\overline K^\times)$, identifies the second cohomology of the multiplicative group with the Brauer group, whose local and global structure is the content of class field theory.
 
-This article develops the cohomology of a Galois group, the low-degree interpretations, the exact sequences of restriction, inflation and corestriction, Shapiro's lemma, Hilbert's theorem 90 in both forms, the cohomological reformulation of Kummer theory, and the cohomological dimension with the values it takes for algebraically closed fields, finite fields, local fields and number fields. Throughout, $K$ is a field, $\overline K$ a separable algebraic closure, and $G_K = \operatorname{Gal}(\overline K/K)$ the absolute Galois group; for a finite Galois extension $L/K$ we write $G = \operatorname{Gal}(L/K)$. Coefficients are abelian groups $A$ with an action of the relevant Galois group, and the general theory of the cohomology groups $H^n(G,A)$, of the standard resolution, of the long exact sequence and of the restriction and corestriction maps is that of *Group Cohomology*; this article cites it and applies it. Root-of-unity groups and cyclotomic fields are from *Cyclotomic Fields*, Kummer extensions and the Kummer pairing from *Kummer Theory*, and the ideal theory of number fields from *Dedekind Domains and Ideal Class Groups*. The local and global reciprocity laws are the subject of both.
+This article develops the cohomology of a Galois group, the low-degree interpretations, the exact sequences of restriction, inflation and corestriction, Shapiro's lemma, Hilbert's theorem 90 in both forms, the cohomological reformulation of Kummer theory, and the cohomological dimension with the values it takes for algebraically closed fields, finite fields, local fields and number fields. Throughout, $K$ is a field, $\overline K$ a separable algebraic closure, and $G_K = \operatorname{gal}(\overline K/K)$ the absolute Galois group; for a finite Galois extension $L/K$ we write $G = \operatorname{gal}(L/K)$. Coefficients are abelian groups $A$ with an action of the relevant Galois group, and the general theory of the cohomology groups $H^n(G,A)$, of the standard resolution, of the long exact sequence and of the restriction and corestriction maps is that of *Group Cohomology*; this article cites it and applies it. Root-of-unity groups and cyclotomic fields are from *Cyclotomic Fields*, Kummer extensions and the Kummer pairing from *Kummer Theory*, and the ideal theory of number fields from *Dedekind Domains and Ideal Class Groups*. The local and global reciprocity laws are the subject of both.
 
 ---
 
@@ -20,17 +20,17 @@ $$
 A^G = \{a \in A : ga = a \text{ for all } g \in G\}, \qquad A_G = A / \langle ga - a : g \in G,\ a \in A\rangle .
 $$
 
-**Definition.** For a Galois extension $L/K$, a **Galois coefficient group** is an abelian $G$-group $A$ with $G = \operatorname{Gal}(L/K)$. For the absolute Galois group, a coefficient group is an abelian group together with an action of $G_K$.
+**Definition.** For a Galois extension $L/K$, a **Galois coefficient group** is an abelian $G$-group $A$ with $G = \operatorname{gal}(L/K)$. For the absolute Galois group, a coefficient group is an abelian group together with an action of $G_K$.
 
 The examples that matter are the additive group $L$ with trivial twisting, the multiplicative group $L^\times$, the group $\mu_n = \mu_n(L)$ of $n$-th roots of unity with the natural action $\sigma \cdot \zeta = \sigma(\zeta)$, the integers $\mathbb{Z}$ with trivial action, and $\mathbb{Z}/n\mathbb{Z}$ with trivial action or with the action through roots of unity.
 
 **Definition.** Let $L/K$ be a Galois extension and $A$ a Galois coefficient group. The **Galois cohomology groups** are
 
 $$
-H^n(L/K, A) = H^n(\operatorname{Gal}(L/K), A), \qquad H^n(K, A) = H^n(G_K, A),
+H^n(L/K, A) = H^n(\operatorname{gal}(L/K), A), \qquad H^n(K, A) = H^n(G_K, A),
 $$
 
-the second with the convention that $H^n(G_K,A)$ is the direct limit $\varinjlim_M H^n(\operatorname{Gal}(M/K), A^{\operatorname{Gal}(\overline K/M)})$ over the finite Galois extensions $M/K$ contained in $\overline K$; this is the algebraic description of $H^n$ of an inverse limit of finite groups, and it agrees with the cochain definition of *Group Cohomology* because every cochain of the inverse limit factors through a finite quotient.
+the second with the convention that $H^n(G_K,A)$ is the direct limit $\varinjlim_M H^n(\operatorname{gal}(M/K), A^{\operatorname{gal}(\overline K/M)})$ over the finite Galois extensions $M/K$ contained in $\overline K$; this is the algebraic description of $H^n$ of an inverse limit of finite groups, and it agrees with the cochain definition of *Group Cohomology* because every cochain of the inverse limit factors through a finite quotient.
 
 **Remark.** For $L/K$ a *finite* Galois extension the group $H^n(L/K,A)$ is the ordinary cohomology of the finite group $G$ with coefficients in $A$, as in *Group Cohomology*; the direct limit convention is needed only because $G_K$ is an inverse limit of finite groups and is not itself finite. Concretely, an element of $H^n(G_K,A)$ is represented by a cochain on some finite quotient and two representatives are equal when they agree on a smaller quotient.
 
@@ -48,7 +48,7 @@ the second with the convention that $H^n(G_K,A)$ is the direct limit $\varinjlim
 
 **Proof.** (a) is the definition of the zeroth cohomology. (b) is the standard identification: a $1$-cochain is a map $G \to A$, the cocycle condition $\partial f = 0$ is exactly $f(gh) = f(g) + g f(h)$, and the $1$-coboundaries are the principal crossed homomorphisms. (c) is immediate from (b) with trivial action. (d) is the classical classification of extensions: given an extension one chooses a section $s : G \to E$ and the failure of $s$ to be a homomorphism is a $2$-cocycle; changing the section by an element of $A$ changes it by a coboundary.
 
-**Example (the absolute Galois group of a finite field).** Let $K = \mathbb{F}_q$. Then $\overline K = \overline{\mathbb{F}_q}$ and $G_K$ is the inverse limit of the groups $\operatorname{Gal}(\mathbb{F}_{q^n}/\mathbb{F}_q) \cong \mathbb{Z}/n\mathbb{Z}$ under the natural compatible maps, which we may write $\widehat{\mathbb{Z}}$; it is generated in the natural sense by the Frobenius. It is abelian, and $H^1(G_K, A) = \operatorname{Hom}(G_K, A)$ for trivial coefficients.
+**Example (the absolute Galois group of a finite field).** Let $K = \mathbb{F}_q$. Then $\overline K = \overline{\mathbb{F}_q}$ and $G_K$ is the inverse limit of the groups $\operatorname{gal}(\mathbb{F}_{q^n}/\mathbb{F}_q) \cong \mathbb{Z}/n\mathbb{Z}$ under the natural compatible maps, which we may write $\widehat{\mathbb{Z}}$; it is generated in the natural sense by the Frobenius. It is abelian, and $H^1(G_K, A) = \operatorname{Hom}(G_K, A)$ for trivial coefficients.
 
 **Example (the absolute Galois group of a real closed field).** For $K = \mathbb{R}$, $\overline K = \mathbb{C}$ and $G_K = \mathbb{Z}/2\mathbb{Z}$ with the nontrivial element acting by complex conjugation. Hence $H^n(\mathbb{R}, A) = H^n(\mathbb{Z}/2\mathbb{Z}, A)$, which by the periodicity of the cohomology of a cyclic group is $2$-periodic: $H^{2i}(\mathbb{R},A) = A^{\mathbb{Z}/2}/\{\text{norms}\}$ and $H^{2i+1}(\mathbb{R}, A) = \{a \in A : \operatorname{Tr}(a) = 0\}/(\sigma-1)A$, for the action of complex conjugation.
 
@@ -62,7 +62,7 @@ the second with the convention that $H^n(G_K,A)$ is the direct limit $\varinjlim
 
 ### Functoriality
 
-**Proposition.** Galois cohomology is a functor in both variables. A homomorphism of coefficient groups $\varphi : A \to A'$ compatible with the actions induces $H^n(G,A) \to H^n(G,A')$; an inclusion of Galois groups $H \subseteq G = \operatorname{Gal}(L/K)$ with $H = \operatorname{Gal}(L/M)$, $M/K$ Galois, gives the **restriction** map
+**Proposition.** Galois cohomology is a functor in both variables. A homomorphism of coefficient groups $\varphi : A \to A'$ compatible with the actions induces $H^n(G,A) \to H^n(G,A')$; an inclusion of Galois groups $H \subseteq G = \operatorname{gal}(L/K)$ with $H = \operatorname{gal}(L/M)$, $M/K$ Galois, gives the **restriction** map
 
 $$
 \operatorname{res} : H^n(G,A) \to H^n(H,A),
@@ -88,7 +88,7 @@ which is natural in the coefficient sequence.
 
 **Proof.** The short exact sequence of coefficient groups becomes a short exact sequence of cochain complexes after applying $\operatorname{Hom}(\mathbb{Z}[G\text{-free resolution}], -)$; the zig-zag lemma produces the connecting homomorphism $\delta$ and the long exact sequence. This is the fundamental theorem of *Group Cohomology*.
 
-**Theorem (inflation–restriction).** Let $L/K$ be Galois, $M/K$ a Galois subextension with $K \subseteq M \subseteq L$, $H = \operatorname{Gal}(L/M) \trianglelefteq G = \operatorname{Gal}(L/K)$ and $Q = G/H = \operatorname{Gal}(M/K)$. For an abelian $G$-group $A$ there is an exact sequence
+**Theorem (inflation–restriction).** Let $L/K$ be Galois, $M/K$ a Galois subextension with $K \subseteq M \subseteq L$, $H = \operatorname{gal}(L/M) \trianglelefteq G = \operatorname{gal}(L/K)$ and $Q = G/H = \operatorname{gal}(M/K)$. For an abelian $G$-group $A$ there is an exact sequence
 
 $$
 0 \to H^1(Q, A^H) \xrightarrow{\inf} H^1(G,A) \xrightarrow{\operatorname{res}} H^1(H,A)^{Q} \xrightarrow{\operatorname{tg}} H^2(Q,A^H) \xrightarrow{\inf} H^2(G,A),
@@ -196,7 +196,7 @@ $$
 \operatorname{Hom}(G_K,\mu_n) \cong K^\times/(K^\times)^n .
 $$
 
-Taking the quotient of $G_K$ by the closure of the commutator subgroup and restricting to quotients of exponent dividing $n$, the dual statement is exactly the Kummer correspondence of *Kummer Theory*: the abelian extensions of $K$ of exponent dividing $n$ correspond to the subgroups of $K^\times/(K^\times)^n$, and the Kummer pairing is the evaluation of the two dual finite abelian groups. The finite quotients of $G_K$ of exponent dividing $n$ are $\operatorname{Gal}(K(\Delta^{1/n})/K)$ for the subgroups $\Delta \supseteq (K^\times)^n$, and the identification of the Galois group with the character group $\operatorname{Hom}(\Delta/(K^\times)^n, \mu_n)$ is the pairing $\sigma(\alpha)/\alpha$ of that article.
+Taking the quotient of $G_K$ by the closure of the commutator subgroup and restricting to quotients of exponent dividing $n$, the dual statement is exactly the Kummer correspondence of *Kummer Theory*: the abelian extensions of $K$ of exponent dividing $n$ correspond to the subgroups of $K^\times/(K^\times)^n$, and the Kummer pairing is the evaluation of the two dual finite abelian groups. The finite quotients of $G_K$ of exponent dividing $n$ are $\operatorname{gal}(K(\Delta^{1/n})/K)$ for the subgroups $\Delta \supseteq (K^\times)^n$, and the identification of the Galois group with the character group $\operatorname{Hom}(\Delta/(K^\times)^n, \mu_n)$ is the pairing $\sigma(\alpha)/\alpha$ of that article.
 
 **Example ($\mathbb{Q}$).** For $K = \mathbb{Q}$ and $n = 2$, $\mu_2(\mathbb{Q}) = \{\pm1\}$ and $H^1(\mathbb{Q},\mu_2) \cong \mathbb{Q}^\times/(\mathbb{Q}^\times)^2$, which is the group of square classes; the corresponding exponent-$2$ abelian extensions are the multiquadratic fields, as in *Kummer Theory*.
 
@@ -228,7 +228,7 @@ so the image of $\delta$ is the kernel of multiplication by $n$ on $H^2(K,\overl
 
 ## Cohomological Dimension
 
-**Definition.** Let $G$ be a group. The **cohomological dimension** $\operatorname{cd}(G)$ is the least $n \geq 0$ with $H^i(G,A) = 0$ for all $i > n$ and all abelian $G$-groups $A$, if such an $n$ exists. For a field $K$ one writes $\operatorname{cd}(K) = \operatorname{cd}(G_K)$, and for a finite extension $L/K$ the cohomology is that of $\operatorname{Gal}(\overline K/L)$, so that $\operatorname{cd}$ is a property of the absolute Galois group.
+**Definition.** Let $G$ be a group. The **cohomological dimension** $\operatorname{cd}(G)$ is the least $n \geq 0$ with $H^i(G,A) = 0$ for all $i > n$ and all abelian $G$-groups $A$, if such an $n$ exists. For a field $K$ one writes $\operatorname{cd}(K) = \operatorname{cd}(G_K)$, and for a finite extension $L/K$ the cohomology is that of $\operatorname{gal}(\overline K/L)$, so that $\operatorname{cd}$ is a property of the absolute Galois group.
 
 **Theorem.** Let $K$ be a field.
 
@@ -272,8 +272,8 @@ Hilbert's theorem 90, in the multiplicative form $H^1(L/K,L^\times) = 0$ and the
 |---|---|
 | $K$, $L$ | Field, and a Galois extension field |
 | $\overline K$ | Separable algebraic closure of $K$ |
-| $G_K$ | Absolute Galois group $\operatorname{Gal}(\overline K/K)$ |
-| $G = \operatorname{Gal}(L/K)$ | Galois group of a finite Galois extension |
+| $G_K$ | Absolute Galois group $\operatorname{gal}(\overline K/K)$ |
+| $G = \operatorname{gal}(L/K)$ | Galois group of a finite Galois extension |
 | $A$, $B$, $C$ | Abelian groups with a $G$-action (coefficient groups) |
 | $A^G$, $A_G$ | Invariants, coinvariants |
 | $H^n(G,A)$, $H^n(L/K,A)$, $H^n(K,A)$ | Cohomology groups; the last a direct limit over finite subextensions |

@@ -17,7 +17,7 @@ A **free object** is the solution of a universal arrow from a set to a forgetful
 | Free abelian group | the universal abelian group on a set, with rank as its invariant | *Infinite Abelian Groups* |
 | Free module $R^{(I)}$ | the universal $R$-module on a set, with basis the inserted elements | *Direct Sums, Free Modules and Rank* |
 | Free algebra $T(V)$ | the universal associative algebra on a module, the tensor algebra | *Tensor Powers and the Free Algebra* |
-| Free commutative algebra $\operatorname{Sym}(V)$ | the universal commutative algebra on a module, the symmetric algebra | *The Symmetric Algebra of a Module* |
+| Free commutative algebra $\operatorname{sym}(V)$ | the universal commutative algebra on a module, the symmetric algebra | *The Symmetric Algebra of a Module* |
 | Polynomial algebra $R[x_1,\dots,x_n]$ | the free commutative $R$-algebra on $n$ generators | *Polynomial Rings and Rational Functions* |
 | Free product $G_1 * G_2$ | the coproduct of groups, the universal group receiving both factors | *Generators, Presentations and Free Products* |
 | Free product of algebras $A \sqcup B$ | the coproduct of associative algebras | *Tensor Products of Algebras* |
@@ -68,8 +68,8 @@ The **tensor product** is the universal object representing the bilinear maps; o
 | Tensor product of algebras $A \otimes_R B$ | the universal algebra receiving two commuting images | *Tensor Products of Algebras* |
 | Bimodule tensor $M_A \otimes_A {}_A N$ | the balanced product over a non-commutative ring, forcing centrality | *The Balanced Product over an Algebra* |
 | Tensor power $V^{\otimes n}$ | the universal object for the $n$-multilinear maps | *Tensor Powers and the Free Algebra* |
-| Symmetric power $\operatorname{Sym}^n M$ | the universal object for the symmetric $n$-multilinear maps | *Symmetric Powers* |
-| Symmetric algebra $\operatorname{Sym}(M)$ | the quotient of the tensor algebra by $x \otimes y - y \otimes x$ | *The Symmetric Algebra of a Module* |
+| Symmetric power $\operatorname{sym}^n M$ | the universal object for the symmetric $n$-multilinear maps | *Symmetric Powers* |
+| Symmetric algebra $\operatorname{sym}(M)$ | the quotient of the tensor algebra by $x \otimes y - y \otimes x$ | *The Symmetric Algebra of a Module* |
 | Exterior power $\Lambda^n M$ | the universal object for the alternating $n$-multilinear maps | *Exterior Powers* |
 | Exterior algebra $\Lambda(M)$ | the quotient of the tensor algebra by $x \otimes x$ | *The Exterior Algebra* |
 | Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ | the quotient of $T(V)$ by $x \otimes x - \mathfrak{Q}(x)$ | *Clifford Algebras* |
@@ -118,8 +118,8 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $F(X)$ | free group on a set $X$ |
 | $R^{(I)}$, $R^n$ | free module on the index set $I$ |
 | $\mathbb{Z}$, $\mathbb{R}$, $\mathbb{C}$ | the integers, the reals, the complex numbers |
-| $T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,\mathfrak{Q})$ | tensor, symmetric, exterior and Clifford algebras |
-| $V^{\otimes n}$, $\operatorname{Sym}^n M$, $\Lambda^n M$ | tensor, symmetric and exterior powers |
+| $T(V)$, $\operatorname{sym}(V)$, $\Lambda(V)$, $\mathrm{Cl}(V,\mathfrak{Q})$ | tensor, symmetric, exterior and Clifford algebras |
+| $V^{\otimes n}$, $\operatorname{sym}^n M$, $\Lambda^n M$ | tensor, symmetric and exterior powers |
 | $M \otimes_R N$ | balanced product over $R$ |
 | $A \sqcup B$, $A \otimes_C B$ | free product and pushout of algebras |
 | $S^{-1}R$, $S^{-1}M$ | localizations of a ring and of a module |

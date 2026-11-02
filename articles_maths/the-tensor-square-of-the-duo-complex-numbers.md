@@ -4,7 +4,7 @@
 
 This article treats the tensor square $V\otimes V$ of the duo-complex numbers. The square has complex dimension $4$, and it decomposes canonically into the symmetric square and the alternating square,
 $$
-V\otimes V=\operatorname{Sym}^2V\oplus\Lambda^2V,\qquad 4=3+1.
+V\otimes V=\operatorname{sym}^2V\oplus\Lambda^2V,\qquad 4=3+1.
 $$
 The article computes the two summands, identifies the square with the endomorphism algebra once a bilinear form is chosen, defines the twisted product that makes the square an algebra, and reads the decomposition under the classical groups.
 
@@ -29,7 +29,7 @@ $$
 
 **Definition.** The **symmetric square** is the fixed space
 $$
-\operatorname{Sym}^2V=\{x:\tau x=x\},
+\operatorname{sym}^2V=\{x:\tau x=x\},
 $$
 and the **alternating square** is the anti-fixed space
 $$
@@ -38,7 +38,7 @@ $$
 
 **Theorem (the decomposition).** The tensor square decomposes canonically as
 $$
-V\otimes V=\operatorname{Sym}^2V\oplus\Lambda^2V,
+V\otimes V=\operatorname{sym}^2V\oplus\Lambda^2V,
 $$
 with dimensions $3$ and $1$ over $\mathbb{C}$, and $6$ and $2$ over $\mathbb{R}$.
 
@@ -54,15 +54,15 @@ and a basis of the alternating square is $e_1\wedge e_2=e_1\otimes e_2-e_2\otime
 
 **The symmetric square has dimension $3$; after a basis it is the space of binary quadratic forms, and the rank-one elements form the Veronese conic in the projective plane.**
 
-**Definition.** The **symmetric product** of two vectors is $u\odot v=\tfrac12(u\otimes v+v\otimes u)$, an element of $\operatorname{Sym}^2V$.
+**Definition.** The **symmetric product** of two vectors is $u\odot v=\tfrac12(u\otimes v+v\otimes u)$, an element of $\operatorname{sym}^2V$.
 
-**Proposition (the dimension and the basis).** $\operatorname{Sym}^2V$ has dimension $3$, with basis $e_1\odot e_1$, $e_1\odot e_2$, $e_2\odot e_2$.
+**Proposition (the dimension and the basis).** $\operatorname{sym}^2V$ has dimension $3$, with basis $e_1\odot e_1$, $e_1\odot e_2$, $e_2\odot e_2$.
 
 *Proof.* The three vectors are fixed by $\tau$ and independent. A fixed tensor $\sum_{ij}c_{ij}e_i\otimes e_j$ satisfies $c_{ij}=c_{ji}$, so it is determined by the three coefficients $c_{11},c_{12},c_{22}$.
 
 **Proposition (binary quadratic forms).** After the choice of the basis, the symmetric square is identified with the space of homogeneous polynomials of degree $2$ in two variables,
 $$
-\operatorname{Sym}^2V\cong\{aQ_{\blacktriangle}^2+bQ_{\blacktriangle}Q_{\blacktriangledown}+cQ_{\blacktriangledown}^2:a,b,c\in\mathbb{C}\},
+\operatorname{sym}^2V\cong\{aQ_{\blacktriangle}^2+bQ_{\blacktriangle}Q_{\blacktriangledown}+cQ_{\blacktriangledown}^2:a,b,c\in\mathbb{C}\},
 $$
 of dimension $3$.
 
@@ -70,11 +70,11 @@ of dimension $3$.
 
 **Definition.** The **Veronese map** is
 $$
-\nu:\mathbb{P}(V)\longrightarrow\mathbb{P}(\operatorname{Sym}^2V),\qquad[Q]\longmapsto[Q\odot Q].
+\nu:\mathbb{P}(V)\longrightarrow\mathbb{P}(\operatorname{sym}^2V),\qquad[Q]\longmapsto[Q\odot Q].
 $$
-Its image is the **Veronese conic** in $\mathbb{CP}^2=\mathbb{P}(\operatorname{Sym}^2V)$.
+Its image is the **Veronese conic** in $\mathbb{CP}^2=\mathbb{P}(\operatorname{sym}^2V)$.
 
-**Proposition (the rank stratification).** An element of $\operatorname{Sym}^2V$ has rank $2$, $1$ or $0$ as a symmetric form. The rank-$1$ elements are exactly the squares $Q\odot Q$ of nonzero vectors, and their projectivisation is the Veronese conic; the rank-$0$ element is $0$.
+**Proposition (the rank stratification).** An element of $\operatorname{sym}^2V$ has rank $2$, $1$ or $0$ as a symmetric form. The rank-$1$ elements are exactly the squares $Q\odot Q$ of nonzero vectors, and their projectivisation is the Veronese conic; the rank-$0$ element is $0$.
 
 *Proof.* In a basis, the element is a symmetric bilinear form on $V^{*}$; its rank is the rank of the symmetric matrix. A rank-one symmetric matrix is $QQ^{T}$ for a nonzero vector $Q$, that is $Q\odot Q$; the rank-zero element is the zero matrix. The image of $\nu$ is the set of the classes of the rank-one elements, which is a conic because it is the zero set of the discriminant $b^2-4ac$, an irreducible quadratic.
 
@@ -121,7 +121,7 @@ $$
 
 *Proof.* The form is nondegenerate, so $F^{\flat}$ is an isomorphism; the second map is the canonical isomorphism above. The composite sends $u\otimes v$ to $u\otimes F(v,\cdot)$, that is to the map $w\mapsto F(v,w)u$.
 
-**Corollary (the two summands).** For $F$ symmetric, the isomorphism sends $\operatorname{Sym}^2V$ onto the symmetric endomorphisms with respect to $F$, of dimension $3$, and $\Lambda^2V$ onto the skew endomorphisms, of dimension $1$.
+**Corollary (the two summands).** For $F$ symmetric, the isomorphism sends $\operatorname{sym}^2V$ onto the symmetric endomorphisms with respect to $F$, of dimension $3$, and $\Lambda^2V$ onto the skew endomorphisms, of dimension $1$.
 
 *Proof.* The adjoint of the map $\Phi(u\otimes v):w\mapsto F(v,w)u$ with respect to $F$ is $\Phi(v\otimes u)$, because
 $$
@@ -188,15 +188,15 @@ the product $AC=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ is not symmetric. The alte
 
 **Theorem (the Clebsch–Gordan decomposition).** As representations of $\mathrm{SL}_2(\mathbb{C})$,
 $$
-V\otimes V\cong\operatorname{Sym}^2V\oplus\Lambda^2V\cong\operatorname{Sym}^2V\oplus\mathbb{C},
+V\otimes V\cong\operatorname{sym}^2V\oplus\Lambda^2V\cong\operatorname{sym}^2V\oplus\mathbb{C},
 $$
-where $\operatorname{Sym}^2V$ is irreducible of dimension $3$ and $\Lambda^2V$ is the trivial representation. As representations of $\mathrm{GL}_2(\mathbb{C})$, the second summand is the character $g\mapsto\det g$, and the first is irreducible of dimension $3$.
+where $\operatorname{sym}^2V$ is irreducible of dimension $3$ and $\Lambda^2V$ is the trivial representation. As representations of $\mathrm{GL}_2(\mathbb{C})$, the second summand is the character $g\mapsto\det g$, and the first is irreducible of dimension $3$.
 
 *Proof.* The group acts on the square by $g(u\otimes v)=gu\otimes gv$ and preserves the swap, hence preserves the two summands. The alternating square is one-dimensional and $g$ acts on it by $\det g$, which is trivial on $\mathrm{SL}_2$. The symmetric square is irreducible: its highest-weight vector is $e_1\odot e_1$, of weight $2$, and the three vectors $e_1\odot e_1$, $e_1\odot e_2$, $e_2\odot e_2$ form a chain under the lowering operator, so no proper subrepresentation exists.
 
 **Remark (the same decomposition in three languages).** The decomposition $2\otimes2=3\oplus1$ is read as the Clebsch–Gordan series of $\mathfrak{sl}_2$, as the decomposition of the tensor square of the spinor of $\mathrm{SU}(2)$ into the vector and the scalar, and as the decomposition of the square of the defining representation of $\mathrm{GL}_2$. **The three readings are the same theorem**, and the dimension count $4=3+1$ is the same count in each.
 
-| Group | $V$ | $\operatorname{Sym}^2V$ | $\Lambda^2V$ |
+| Group | $V$ | $\operatorname{sym}^2V$ | $\Lambda^2V$ |
 |---|---|---|---|
 | $\mathrm{SL}_2(\mathbb{C})$ | defining, dimension $2$ | irreducible, dimension $3$ | trivial, dimension $1$ |
 | $\mathrm{GL}_2(\mathbb{C})$ | defining, dimension $2$ | irreducible, dimension $3$ | the determinant character |
@@ -217,7 +217,7 @@ The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\
 |---|---|
 | $V\otimes V$ | the tensor square, complex dimension $4$ |
 | $\tau(u\otimes v)=v\otimes u$ | the swap, an involution |
-| $\operatorname{Sym}^2V$ | the symmetric square, the fixed space of $\tau$, dimension $3$ |
+| $\operatorname{sym}^2V$ | the symmetric square, the fixed space of $\tau$, dimension $3$ |
 | $\Lambda^2V$ | the alternating square, the anti-fixed space of $\tau$, dimension $1$ |
 | $u\odot v=\tfrac12(u\otimes v+v\otimes u)$ | the symmetric product |
 | $u\wedge v=u\otimes v-v\otimes u$ | the alternating product |

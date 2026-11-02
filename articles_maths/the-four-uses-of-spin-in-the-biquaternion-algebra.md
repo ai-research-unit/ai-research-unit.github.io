@@ -211,7 +211,7 @@ $$
 of dimensions $1$, $2$ and $4$. The invariant form identifies $S^*$ with $S$, so $S\otimes S\cong\operatorname{End}_{\mathbb{C}}(S)$; under $G$ it splits as
 
 $$
-S\otimes S=\Lambda^2S\oplus\operatorname{Sym}^2S\cong\mathbf{1}\oplus\mathbf{3}.
+S\otimes S=\Lambda^2S\oplus\operatorname{sym}^2S\cong\mathbf{1}\oplus\mathbf{3}.
 $$
 
 The trivial summand is $\Lambda^2S$; under the identification $S\otimes S\cong\operatorname{End}(S)$ its spanning vector is the identity endomorphism. The traceless symmetric part is the adjoint. The dimensions $1,2,3$ are therefore those of the degree-$0$ object, the degree-$1$ object, and the traceless part of the degree-$2$ object.

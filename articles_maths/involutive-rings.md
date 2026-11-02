@@ -97,13 +97,13 @@ and its elements are the **symmetric** elements; an element with $\sigma(a) = -a
 **Definition.** Let $\sigma$ be an involution of $A$ and let $2$ be invertible in $A$. The **symmetric** and **skew** elements are
 
 $$
-\mathrm{Sym}(A,\sigma) = \{a \in A : \sigma(a) = a\} = A^\sigma, \qquad \mathrm{Skew}(A,\sigma) = \{a \in A : \sigma(a) = -a\}.
+\mathrm{sym}(A,\sigma) = \{a \in A : \sigma(a) = a\} = A^\sigma, \qquad \mathrm{Skew}(A,\sigma) = \{a \in A : \sigma(a) = -a\}.
 $$
 
 **Proposition.** Let $2$ be invertible in $A$. For $a \in A$ put $a_+ = \tfrac12(a+\sigma(a))$ and $a_- = \tfrac12(a-\sigma(a))$. Then $a_+$ is symmetric, $a_-$ is skew, and $a = a_+ + a_-$. The sum
 
 $$
-\boxed{\;A = \mathrm{Sym}(A,\sigma) \oplus \mathrm{Skew}(A,\sigma)\;}
+\boxed{\;A = \mathrm{sym}(A,\sigma) \oplus \mathrm{Skew}(A,\sigma)\;}
 $$
 
 is direct, and the two summands are the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$.
@@ -138,7 +138,7 @@ $$
 \pi : A \to A, \qquad \pi(a) = \tfrac12(a+\sigma(a)),
 $$
 
-is an idempotent endomorphism of the additive group of $A$ with image $\mathrm{Sym}(A,\sigma)$ and kernel $\mathrm{Skew}(A,\sigma)$; it is multiplicative exactly when $\sigma(xy) = \sigma(x)\sigma(y)$ for all $x, y$, that is, exactly when the involution is also a ring homomorphism, which holds for the trivial involution of every ring and for every involution of a commutative ring.
+is an idempotent endomorphism of the additive group of $A$ with image $\mathrm{sym}(A,\sigma)$ and kernel $\mathrm{Skew}(A,\sigma)$; it is multiplicative exactly when $\sigma(xy) = \sigma(x)\sigma(y)$ for all $x, y$, that is, exactly when the involution is also a ring homomorphism, which holds for the trivial involution of every ring and for every involution of a commutative ring.
 
 **Proof.** $\pi$ is additive, $\pi(1) = 1$, $\pi^2 = \pi$, and $\pi(a)$ is fixed, so the image is $A^\sigma$; the kernel is the set of $a$ with $a+\sigma(a) = 0$, that is $\mathrm{Skew}(A,\sigma)$. For multiplicativity one would need $\sigma(xy) = \sigma(x)\sigma(y)$, which is the additional requirement that the anti-automorphism be an automorphism.
 
@@ -232,7 +232,7 @@ The **correspondence** of ideals is equivariant: the $\sigma$-ideals of $A$ cont
 
 ### Involutions as Automorphisms
 
-From here $R$ is a **commutative ring with identity** $1 \neq 0$ and $\sigma$ is an involution. Because $R = R^{\mathrm{opp}}$, the anti-multiplicativity of the definition is the equation $\sigma(ab) = \sigma(a)\sigma(b)$ itself, so $\sigma$ is an automorphism of $R$ of order dividing two, the fixed set $R^\sigma$ is a **subring**, and the grading of the next section is available. Everything in the general part applies: $\mathrm{Sym}(R,\sigma) = R^\sigma$ and $\mathrm{Skew}(R,\sigma) = R^-$.
+From here $R$ is a **commutative ring with identity** $1 \neq 0$ and $\sigma$ is an involution. Because $R = R^{\mathrm{opp}}$, the anti-multiplicativity of the definition is the equation $\sigma(ab) = \sigma(a)\sigma(b)$ itself, so $\sigma$ is an automorphism of $R$ of order dividing two, the fixed set $R^\sigma$ is a **subring**, and the grading of the next section is available. Everything in the general part applies: $\mathrm{sym}(R,\sigma) = R^\sigma$ and $\mathrm{Skew}(R,\sigma) = R^-$.
 
 ### The Fixed Subring and the Symmetric–Skew Decomposition
 
@@ -449,7 +449,7 @@ Each item is a statement of the general part that fails without commutativity, w
 
 An involution is an anti-automorphism of order two; the definition needs no commutativity, and it is the same datum as a bijection $A \to A^{\mathrm{opp}}$ of order two, so a ring with an involution is isomorphic to its opposite ring. The opposite ring of a commutative ring is the ring itself, and there the involution is an automorphism of order dividing two, so the commutative case is a second theory of the same datum and not a specialisation of the general one.
 
-In general the fixed set $A^\sigma$ is an additive subgroup containing $1$ and closed under the involution, and it is a subring exactly when its elements commute pairwise; the symmetric and skew elements are the eigenspaces of $\sigma$ when $2$ is invertible, with $A = \mathrm{Sym} \oplus \mathrm{Skew}$, but the product of two skew elements need not be symmetric, and in $M_3$ with the transpose it is neither symmetric nor skew. The conjugate products $x\sigma(x)$ and $\sigma(x)x$ are symmetric but differ in general, the multiplicative law is $(xy)\sigma(xy) = x\,(y\sigma(y))\,\sigma(x)$, the conjugate sum satisfies $xy+\sigma(y)\sigma(x)$ with no symmetry, and the quadratic relation $a^2-(a+\sigma(a))a+\sigma(a)a = 0$ has coefficients in $A^\sigma$ but gives no integrality because $A^\sigma$ need not be central. A $\sigma$-ideal is an ideal with $\sigma(I) = I$; the $\sigma$-prime ideals are those for which a product of $\sigma$-ideals inside forces a factor inside, every prime $\sigma$-ideal is $\sigma$-prime, the condition $aAb^{*} \neq 0$ is a sufficient elementwise criterion for $\sigma$-primality but not a characterisation, and the converse of the ideal-theoretic implication fails: $M_n(F) \times M_n(F)$ with the swap involution is $\sigma$-prime and not prime, and $(x^2+1)$ in $\mathbb{C}[x]$ with the coefficientwise conjugation is a $\sigma$-prime ideal that is not prime. An involution passes to a quotient by a $\sigma$-ideal, where the fixed set of the quotient can be strictly larger than the image of the fixed set, and to a product, where the swap makes the $\sigma$-ideals the $I \times I$.
+In general the fixed set $A^\sigma$ is an additive subgroup containing $1$ and closed under the involution, and it is a subring exactly when its elements commute pairwise; the symmetric and skew elements are the eigenspaces of $\sigma$ when $2$ is invertible, with $A = \mathrm{sym} \oplus \mathrm{Skew}$, but the product of two skew elements need not be symmetric, and in $M_3$ with the transpose it is neither symmetric nor skew. The conjugate products $x\sigma(x)$ and $\sigma(x)x$ are symmetric but differ in general, the multiplicative law is $(xy)\sigma(xy) = x\,(y\sigma(y))\,\sigma(x)$, the conjugate sum satisfies $xy+\sigma(y)\sigma(x)$ with no symmetry, and the quadratic relation $a^2-(a+\sigma(a))a+\sigma(a)a = 0$ has coefficients in $A^\sigma$ but gives no integrality because $A^\sigma$ need not be central. A $\sigma$-ideal is an ideal with $\sigma(I) = I$; the $\sigma$-prime ideals are those for which a product of $\sigma$-ideals inside forces a factor inside, every prime $\sigma$-ideal is $\sigma$-prime, the condition $aAb^{*} \neq 0$ is a sufficient elementwise criterion for $\sigma$-primality but not a characterisation, and the converse of the ideal-theoretic implication fails: $M_n(F) \times M_n(F)$ with the swap involution is $\sigma$-prime and not prime, and $(x^2+1)$ in $\mathbb{C}[x]$ with the coefficientwise conjugation is a $\sigma$-prime ideal that is not prime. An involution passes to a quotient by a $\sigma$-ideal, where the fixed set of the quotient can be strictly larger than the image of the fixed set, and to a product, where the swap makes the $\sigma$-ideals the $I \times I$.
 
 In the commutative case the fixed set is the subring $R^\sigma$, the ring is $\mathbb{Z}/2\mathbb{Z}$-graded by the eigenspaces when $2$ is invertible, and the conjugate product is multiplicative and the conjugate sum is symmetric, so that every element satisfies the monic quadratic $X^2-(x+\sigma(x))X+x\sigma(x)=0$ with coefficients in $R^\sigma$ and $R$ is integral over $R^\sigma$; the square $(x-\sigma(x))^2$ is a fixed element. Affine involutions of $R[x]$ are classified by $a\sigma(a) = 1$ and $\sigma(a)b+\sigma(b) = 0$, with fixed subrings $R^\sigma[x]$ and $R^\sigma[x^2]+R^-x$ for the two basic cases; an involution on a $\sigma$-stable localization has fixed subring the localization of the fixed subring, and $\operatorname{Frac}(R)^\sigma = \operatorname{Frac}(R^\sigma)$ for a domain. A field with a nontrivial involution is a quadratic Galois extension of its fixed field, quadratic in characteristic not two and Artin–Schreier in characteristic two, and no nontrivial involution of an ordered field preserves the order. The fixed subring is not a rung of the divisibility chain: $k[x^2,xy,y^2]$ is not a unique factorisation domain although $k[x,y]$ is, and $\mathbb{Z}[\sqrt{-5}]$ is not one although its fixed ring $\mathbb{Z}$ is.
 
@@ -460,7 +460,7 @@ In the commutative case the fixed set is the subring $R^\sigma$, the ring is $\m
 | $(A,\sigma)$ | Involutive ring; $A$ a ring with $1 \neq 0$, $\sigma$ an involution |
 | $A^{\mathrm{opp}}$ | Opposite ring, same additive group with $a \cdot b = ba$ |
 | $A^\sigma$ | Fixed set $\{a : \sigma(a) = a\}$; a subring in the commutative case |
-| $\mathrm{Sym}(A,\sigma)$, $\mathrm{Skew}(A,\sigma)$ | Symmetric and skew elements, the eigenspaces of $\sigma$ |
+| $\mathrm{sym}(A,\sigma)$, $\mathrm{Skew}(A,\sigma)$ | Symmetric and skew elements, the eigenspaces of $\sigma$ |
 | $a_+, a_-$ | $\tfrac12(a+\sigma(a))$ and $\tfrac12(a-\sigma(a))$ |
 | $a\sigma(a)$, $\sigma(a)a$ | The two conjugate products; equal on a commutative ring |
 | $a+\sigma(a)$ | The conjugate sum of $a$ |

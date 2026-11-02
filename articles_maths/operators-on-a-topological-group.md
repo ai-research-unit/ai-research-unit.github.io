@@ -47,7 +47,7 @@ $$
 
 with kernel the anti-diagonal copy of the centre, $\ker\pi = \{(z,z^{-1}) : z \in Z(G)\}$. Hence $L(G)R(G) \cong (G\times G)/Z(G)$.
 
-**Proof.** The composition laws $L_aL_b = L_{ab}$ and $R_bR_c = R_{cb}$, the commutation $L_aR_b = R_bL_a$ and the kernel computation are the abstract statements of *Left and Right Multiplication in a Group*; the only new ingredient is that each of these operators is a homeomorphism, by the theorem above, so the subgroup lies in $\operatorname{Homeo}(G)$ and not merely in $\operatorname{Sym}(G)$.
+**Proof.** The composition laws $L_aL_b = L_{ab}$ and $R_bR_c = R_{cb}$, the commutation $L_aR_b = R_bL_a$ and the kernel computation are the abstract statements of *Left and Right Multiplication in a Group*; the only new ingredient is that each of these operators is a homeomorphism, by the theorem above, so the subgroup lies in $\operatorname{Homeo}(G)$ and not merely in $\operatorname{sym}(G)$.
 
 **Corollary.** $L(G) \cap R(G) = L(Z(G)) = R(Z(G))$, the subgroup of the central translations, which is the image of $Z(G)$ and is a normal subgroup of $L(G)R(G)$.
 
@@ -61,7 +61,7 @@ $$
 G \times G \longrightarrow G, \qquad (g, x) \mapsto gx ,
 $$
 
-whose associated permutation representation is $g \mapsto L_g : G \to \operatorname{Homeo}(G) \subseteq \operatorname{Sym}(G)$.
+whose associated permutation representation is $g \mapsto L_g : G \to \operatorname{Homeo}(G) \subseteq \operatorname{sym}(G)$.
 
 **Theorem.** The action by translation is continuous, free and transitive: it is continuous as a map $G\times G\to G$; the only $g$ with $gx = x$ for some $x$ is $g = e$; and for any $x, y$ there is a unique $g$ with $gx = y$, namely $g = yx^{-1}$. Consequently the map $g \mapsto L_g$ is an isomorphism of $G$ onto $L(G)$ whose inverse is $L_g \mapsto g = L_g(e)$.
 

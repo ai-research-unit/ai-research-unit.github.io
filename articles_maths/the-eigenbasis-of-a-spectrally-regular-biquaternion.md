@@ -308,12 +308,12 @@ On this locus the gauge does not exist, and none can be built from the element: 
 
 The locus has real codimension two: $\vec Q=c\,n_0$ has the four real parameters of $(c,n_0)\in\mathbb{C}\times S^2$ in the six real dimensions of $\vec Q$. It contains the Hermitian elements, where $\vec A=0$ and $\vec C$ is real, and the anti-Hermitian ones, where $\vec C=0$ and $\vec A$ is real.
 
-**Remark (what $\mathrm{Vect}(\tilde Q\tilde Q^*)$ contains).** The antisymmetric part of the plain sesquilinear product, $\mathrm{APS}$, and that of the quaternionic sesquilinear product, $\mathrm{AQS}$, are the two codes of *Symmetric and Antisymmetric Decomposition of the Four General Products* whose values at the diagonal do not vanish. At $(\tilde Q,\tilde Q)$ they are
+**Remark (what $\mathrm{Vect}(\tilde Q\tilde Q^*)$ contains).** The antisymmetric part of the plain sesquilinear product, $\mathrm{aps}$, and that of the quaternionic sesquilinear product, $\mathrm{aqs}$, are the two codes of *Symmetric and Antisymmetric Decomposition of the Four General Products* whose values at the diagonal do not vanish. At $(\tilde Q,\tilde Q)$ they are
 
 $$
-\mathrm{APS}(\tilde Q,\tilde Q)=\mathrm{Vect}(\tilde Q\tilde Q^*)
+\mathrm{aps}(\tilde Q,\tilde Q)=\mathrm{Vect}(\tilde Q\tilde Q^*)
 =2i\,\mathrm{Im}\bigl(\overline{Q}_t\vec Q\bigr)-\Omega,\qquad
-\mathrm{AQS}(\tilde Q,\tilde Q)=\Omega .
+\mathrm{aqs}(\tilde Q,\tilde Q)=\Omega .
 $$
 
 The term $2i\,\mathrm{Im}(\overline{Q}_t\vec Q)$ lies in the real plane spanned by $\vec A$ and $\vec C$, and $\Omega$ is orthogonal to that plane. The normal component of $\mathrm{Vect}(\tilde Q\tilde Q^*)$ is therefore $-\Omega$: it contains the gauge direction, and $\Omega$ is that direction. The scalar $Q_t$ moves the component inside the plane and leaves the normal one unchanged, which is why the gauge depends on $\vec Q$ alone.
@@ -876,7 +876,7 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, the spectral discriminant |
 | $B$ | a fixed square root of $B^2$ |
 | $\vec\Xi=-i\vec Q/B$ | the root, a pure square root of $e_t$ |
-| $\Omega=\tfrac12(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*)$ | the antisymmetric sesquilinear square, $\vec Q\times\overline{\vec Q}=\mathrm{AQS}(\tilde Q,\tilde Q)$ |
+| $\Omega=\tfrac12(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*)$ | the antisymmetric sesquilinear square, $\vec Q\times\overline{\vec Q}=\mathrm{aqs}(\tilde Q,\tilde Q)$ |
 | $n=i\Omega/|\Omega|$ | the real unit normal, the gauge direction off the normal locus |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
 | $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ | the spectral idempotents |
@@ -904,7 +904,7 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the gauge of the general Peirce basis and its torsor.
-- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the codes $\mathrm{APS}$ and $\mathrm{AQS}$ and the values of the two sesquilinear antisymmetric parts at the diagonal.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the codes $\mathrm{aps}$ and $\mathrm{aqs}$ and the values of the two sesquilinear antisymmetric parts at the diagonal.
 - [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), for the identification of the minimal left ideals with the spinor spaces and the two Peirce copies.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.

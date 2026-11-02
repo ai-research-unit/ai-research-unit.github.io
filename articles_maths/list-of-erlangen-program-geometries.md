@@ -23,7 +23,7 @@ The principle states that a geometry is the study of the invariants of a transfo
 | the coset space $G/H$ | a transitive $G$-set, the homogeneous form of a geometry | *Transformation Groups*; *Homogeneous Spaces* |
 | a measure-preserving transformation group | a group of automorphisms of a measure space, whose invariant is the measure | *Ergodic Theory* |
 
-The ideal of the principle is that every geometric notion is a notion invariant under the group and conversely that every invariant of the group has a geometric meaning. The two classical cases at the extremes are the symmetric group $\operatorname{Sym}(X)$, under which no nontrivial structure is invariant, and the full group of all homeomorphisms of a manifold, under which only the topological invariants are invariant; the geometries of the list are the intermediate cases in which a form, a distance or a conformal or projective structure is preserved.
+The ideal of the principle is that every geometric notion is a notion invariant under the group and conversely that every invariant of the group has a geometric meaning. The two classical cases at the extremes are the symmetric group $\operatorname{sym}(X)$, under which no nontrivial structure is invariant, and the full group of all homeomorphisms of a manifold, under which only the topological invariants are invariant; the geometries of the list are the intermediate cases in which a form, a distance or a conformal or projective structure is preserved.
 
 ## The Correspondence between a Geometry and its Automorphism Group
 
@@ -37,7 +37,7 @@ Each geometry of the list carries a group, and the geometry is recovered from th
 | the group of a geometry | the automorphism group of the structure, recovered as $\operatorname{Aut}(X, \text{structure})$ | *Transformation Groups* |
 | the linear model of a geometry | the isotropy representation at a point, a linear representation of $H$ | *Homogeneous Spaces* |
 
-The correspondence is exact when the geometry is homogeneous and the automorphism group is the full structure-preserving group: the space is the coset space, the stabiliser is the isotropy subgroup, and the local geometry is the isotropy representation. The hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots$ of the transformation-group article is the ordering of the geometries from the weakest to the strongest structure.
+The correspondence is exact when the geometry is homogeneous and the automorphism group is the full structure-preserving group: the space is the coset space, the stabiliser is the isotropy subgroup, and the local geometry is the isotropy representation. The hierarchy $\operatorname{sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots$ of the transformation-group article is the ordering of the geometries from the weakest to the strongest structure.
 
 ## The Classical Geometries as Instances
 
@@ -110,7 +110,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 
 | Symbol | Meaning |
 |---|---|
-| $\operatorname{Sym}(X)$, $\operatorname{Aut}(X)$ | Symmetric group, automorphism group of a structure |
+| $\operatorname{sym}(X)$, $\operatorname{Aut}(X)$ | Symmetric group, automorphism group of a structure |
 | $\operatorname{Orb}(x)$, $\operatorname{Stab}(x)$, $G/H$ | Orbit, stabiliser, coset space of a transitive action |
 | $E(n)$ | The Euclidean isometry group, $\mathbb{R}^n\rtimes O(n)$ |
 | $GL(n,\mathbb{K})$, $PGL(n+1,\mathbb{K})$ | General linear and projective linear groups |

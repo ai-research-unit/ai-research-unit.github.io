@@ -53,11 +53,11 @@ and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each cas
 
 **Proof.** This is the additive decomposition of *Involutive Rings* applied to the three involutions; the two summands are fixed or negated by the involution because it is additive of order two, and the decomposition is direct because the involution has no nonzero element on which it is both $\mathrm{id}$ and $-\mathrm{id}$ when $2$ is invertible.
 
-**Example (the symmetric and skew sets of the transpose).** For $n = 2$ and $R$ a field with $2 \neq 0$, a symmetric matrix is $\begin{pmatrix} a & b \\ b & d\end{pmatrix}$ and a skew-symmetric matrix is $\begin{pmatrix} 0 & c \\ -c & 0\end{pmatrix}$, so $\dim \mathrm{Sym} = 3$ and $\dim \mathrm{Skew} = 1$, in agreement with $n(n+1)/2 = 3$ and $n(n-1)/2 = 1$.
+**Example (the symmetric and skew sets of the transpose).** For $n = 2$ and $R$ a field with $2 \neq 0$, a symmetric matrix is $\begin{pmatrix} a & b \\ b & d\end{pmatrix}$ and a skew-symmetric matrix is $\begin{pmatrix} 0 & c \\ -c & 0\end{pmatrix}$, so $\dim \mathrm{sym} = 3$ and $\dim \mathrm{Skew} = 1$, in agreement with $n(n+1)/2 = 3$ and $n(n-1)/2 = 1$.
 
 **Example (Hermitian and skew-Hermitian).** Over $\mathbb{C}$ with the conjugation the $\sigma$-Hermitian matrices are the Hermitian ones, $X^{*} = X$, and the $\sigma$-skew-Hermitian matrices satisfy $X^{*} = -X$, so the skew-Hermitian matrices are $i$ times the Hermitian ones. The fixed set is not a complex subspace but a real one, because the involution is not complex-linear.
 
-**Example (the symplectic symmetric matrices).** For $n = 2$ and $J = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$ the $\tau$-symmetric matrices are those with $JX$ skew-symmetric, that is, $X = \begin{pmatrix} a & b \\ c & -a\end{pmatrix}$, so $\dim \mathrm{Sym}$ is $3$, the same value as for the transpose in dimension $2$; the two involutions are nevertheless inequivalent, because in higher even dimension the dimensions $\tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$ differ.
+**Example (the symplectic symmetric matrices).** For $n = 2$ and $J = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$ the $\tau$-symmetric matrices are those with $JX$ skew-symmetric, that is, $X = \begin{pmatrix} a & b \\ c & -a\end{pmatrix}$, so $\dim \mathrm{sym}$ is $3$, the same value as for the transpose in dimension $2$; the two involutions are nevertheless inequivalent, because in higher even dimension the dimensions $\tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$ differ.
 
 ## The Classification of the Involutions of M_n(R)
 
@@ -78,7 +78,7 @@ and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each cas
 **Theorem (the separating invariant).** The dimension of the symmetric part of a first-kind involution of $M_n(F)$ is
 
 $$
-\boxed{\;\dim_F \mathrm{Sym}(M_n(F),\sigma) =
+\boxed{\;\dim_F \mathrm{sym}(M_n(F),\sigma) =
 \begin{cases}
 \tfrac12 n(n+1) & \text{transpose type},\\[2pt]
 \tfrac12 n(n-1) & \text{symplectic type}.
@@ -120,7 +120,7 @@ An involution is of the **first kind** when it fixes the centre and of the **sec
 | $\tau(X) = X^{\tau} = J^{-1}X^{\mathrm t}J$ | Symplectic involution |
 | $J$, with $J^{\mathrm t} = -J$, $J^2 = -1$ | The matrix twisting the symplectic involution; even $n$ |
 | $JX$ skew-symmetric | Equivalent form of $\tau$-symmetry |
-| $\mathrm{Sym}$, $\mathrm{Skew}$ | Symmetric and skew matrices, the eigenspaces |
+| $\mathrm{sym}$, $\mathrm{Skew}$ | Symmetric and skew matrices, the eigenspaces |
 | $\tfrac12 n(n+1)$, $\tfrac12 n(n-1)$ | Dimensions of the symmetric part in the two types |
 | $U^{*}U = 1$ | Unitary matrices, the units fixed by the twisted action |
 | first kind, second kind | Involution fixing the centre, or acting on it by a nontrivial order-two automorphism |

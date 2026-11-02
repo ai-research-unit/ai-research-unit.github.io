@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Galois theory is the exact correspondence between the intermediate fields of a field extension and the subgroups of its automorphism group. For a finite extension $K/F$ the automorphisms of $K$ fixing $F$ form a group $\operatorname{Gal}(K/F)$, and when the extension is normal and separable this group detects the entire lattice of intermediate fields: subfields correspond to subgroups, degrees to indices, and Galois subextensions to normal subgroups. The correspondence converts questions about fields into questions about groups, and it is in this form that it settles the classical problem of solving a polynomial by radicals.
+Galois theory is the exact correspondence between the intermediate fields of a field extension and the subgroups of its automorphism group. For a finite extension $K/F$ the automorphisms of $K$ fixing $F$ form a group $\operatorname{gal}(K/F)$, and when the extension is normal and separable this group detects the entire lattice of intermediate fields: subfields correspond to subgroups, degrees to indices, and Galois subextensions to normal subgroups. The correspondence converts questions about fields into questions about groups, and it is in this form that it settles the classical problem of solving a polynomial by radicals.
 
 This article defines Galois extensions, proves the fundamental theorem, computes Galois groups of splitting fields, and derives the theorem that a polynomial is solvable by radicals exactly when its Galois group is a solvable group, together with the Abel–Ruffini theorem that the general quintic is not. The prerequisites are *Field Extensions* and *Splitting Fields and Algebraic Closure* for degrees, normal and separable extensions, and the count of embeddings; the group theory of solvable groups is cited from *Groups*. The standing hypothesis is that $K/F$ is a field extension and, where finite, that $\overline{F}$ is an algebraic closure of $F$ containing $K$.
 
@@ -19,7 +19,7 @@ For finite extensions the first definition unwinds into a single counting condit
 **Definition.** Let $K/F$ be a field extension. The **Galois group** of the extension is
 
 $$
-\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K) = \{\sigma : K \to K \text{ a field automorphism with } \sigma\vert_F = \mathrm{id}\}.
+\operatorname{gal}(K/F) = \operatorname{Aut}_F(K) = \{\sigma : K \to K \text{ a field automorphism with } \sigma\vert_F = \mathrm{id}\}.
 $$
 
 It is a group under composition, and it acts on $K$ by $\sigma \cdot x = \sigma(x)$.
@@ -28,17 +28,17 @@ It is a group under composition, and it acts on $K$ by $\sigma \cdot x = \sigma(
 
 **(a)** $K/F$ is Galois;
 
-**(b)** $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$;
+**(b)** $\lvert \operatorname{gal}(K/F) \rvert = [K:F]$;
 
 **(c)** $K$ is the splitting field over $F$ of a separable polynomial in $F[x]$;
 
-**(d)** $F$ is the fixed field of $\operatorname{Gal}(K/F)$, that is, $K^{\operatorname{Gal}(K/F)} = F$.
+**(d)** $F$ is the fixed field of $\operatorname{gal}(K/F)$, that is, $K^{\operatorname{gal}(K/F)} = F$.
 
-**Proof sketch.** (a) $\Leftrightarrow$ (b): by the counting theorem of *Splitting Fields and Algebraic Closure*, the number of $F$-embeddings $K \to \overline{F}$ is at most $[K:F]$, with equality exactly when $K/F$ is separable; and if $K/F$ is normal every such embedding has image $K$, hence is an automorphism of $K$. So for normal separable $K/F$ one gets $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, and conversely equality forces every embedding to land in $K$, which is normality, and forces $K/F$ separable.
+**Proof sketch.** (a) $\Leftrightarrow$ (b): by the counting theorem of *Splitting Fields and Algebraic Closure*, the number of $F$-embeddings $K \to \overline{F}$ is at most $[K:F]$, with equality exactly when $K/F$ is separable; and if $K/F$ is normal every such embedding has image $K$, hence is an automorphism of $K$. So for normal separable $K/F$ one gets $\lvert \operatorname{gal}(K/F) \rvert = [K:F]$, and conversely equality forces every embedding to land in $K$, which is normality, and forces $K/F$ separable.
 
 (a) $\Leftrightarrow$ (c): a finite normal extension is the splitting field of a single polynomial by *Splitting Fields and Algebraic Closure*, and separability passes to that polynomial; conversely a splitting field of a separable polynomial is normal and separable.
 
-(c) $\Rightarrow$ (d): $K^{\operatorname{Gal}(K/F)}$ contains $F$; since $K$ splits a separable polynomial over $F$, the extension $K/K^{\operatorname{Gal}(K/F)}$ is separable and normal with Galois group $\operatorname{Gal}(K/F)$ by restriction, and the theorem below shows $[K:K^{\operatorname{Gal}(K/F)}] = \lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, hence $K^{\operatorname{Gal}(K/F)} = F$ by the tower law. (d) $\Rightarrow$ (b): put $H = \operatorname{Gal}(K/F)$, a finite group, since the elements of $H$ are distinct $F$-embeddings of $K$ into $\overline{F}$ and there are at most $[K:F]$ of them. Artin's lemma gives $[K:K^H] \leq \lvert H \rvert$, while the elements of $H$ are distinct $K^H$-embeddings of $K$ into $\overline{F}$, so the counting theorem gives $\lvert H \rvert \leq [K:K^H]$; hence $[K:K^H] = \lvert H \rvert$, and when $K^H = F$ this reads $[K:F] = \lvert \operatorname{Gal}(K/F) \rvert$, which is (b). (b) $\Rightarrow$ (a) is the first equivalence.
+(c) $\Rightarrow$ (d): $K^{\operatorname{gal}(K/F)}$ contains $F$; since $K$ splits a separable polynomial over $F$, the extension $K/K^{\operatorname{gal}(K/F)}$ is separable and normal with Galois group $\operatorname{gal}(K/F)$ by restriction, and the theorem below shows $[K:K^{\operatorname{gal}(K/F)}] = \lvert \operatorname{gal}(K/F) \rvert = [K:F]$, hence $K^{\operatorname{gal}(K/F)} = F$ by the tower law. (d) $\Rightarrow$ (b): put $H = \operatorname{gal}(K/F)$, a finite group, since the elements of $H$ are distinct $F$-embeddings of $K$ into $\overline{F}$ and there are at most $[K:F]$ of them. Artin's lemma gives $[K:K^H] \leq \lvert H \rvert$, while the elements of $H$ are distinct $K^H$-embeddings of $K$ into $\overline{F}$, so the counting theorem gives $\lvert H \rvert \leq [K:K^H]$; hence $[K:K^H] = \lvert H \rvert$, and when $K^H = F$ this reads $[K:F] = \lvert \operatorname{gal}(K/F) \rvert$, which is (b). (b) $\Rightarrow$ (a) is the first equivalence.
 
 ### Examples
 
@@ -60,7 +60,7 @@ It is a group under composition, and it acts on $K$ by $\sigma \cdot x = \sigma(
 
 ### The Correspondence between Subgroups and Subfields
 
-Let $K/F$ be a finite Galois extension with group $G = \operatorname{Gal}(K/F)$. For an intermediate field $E$, $F \subseteq E \subseteq K$, the extension $K/E$ is again Galois, and restriction gives an injective homomorphism of $\operatorname{Gal}(K/E)$ into $G$; its image is a subgroup, which we identify with it. For a subgroup $H \leq G$, the **fixed field** is
+Let $K/F$ be a finite Galois extension with group $G = \operatorname{gal}(K/F)$. For an intermediate field $E$, $F \subseteq E \subseteq K$, the extension $K/E$ is again Galois, and restriction gives an injective homomorphism of $\operatorname{gal}(K/E)$ into $G$; its image is a subgroup, which we identify with it. For a subgroup $H \leq G$, the **fixed field** is
 
 $$
 K^H = \{x \in K : \sigma(x) = x \text{ for all } \sigma \in H\}.
@@ -86,22 +86,22 @@ $$
 
 has $n$ equations in $n+1$ unknowns, so it has a nonzero solution $(y_j)$ in $K$; choosing one with the fewest nonzero entries and normalizing so that one entry is $1$ gives a contradiction with the linear independence of the $x_j$ over $K^H$ after applying an automorphism. This is the standard determinant argument.
 
-**Lemma (fixed-field theorem).** Let $K/F$ be a finite Galois extension with group $G$. Then $K^G = F$, and for every subgroup $H \leq G$ the extension $K/K^H$ is Galois with $\operatorname{Gal}(K/K^H) = H$. In particular $[K:K^H] = \lvert H \rvert$.
+**Lemma (fixed-field theorem).** Let $K/F$ be a finite Galois extension with group $G$. Then $K^G = F$, and for every subgroup $H \leq G$ the extension $K/K^H$ is Galois with $\operatorname{gal}(K/K^H) = H$. In particular $[K:K^H] = \lvert H \rvert$.
 
-**Proof.** The extension $K/F$ is a splitting field of a separable polynomial $f \in F[x]$. By Artin's lemma, $[K:K^H] \leq \lvert H \rvert$. On the other hand $K/K^H$ is normal and separable (it is generated over $K^H$ by the roots of the same separable polynomial $f$), so by the counting theorem $\lvert \operatorname{Gal}(K/K^H) \rvert = [K:K^H]$. Since $H \leq \operatorname{Gal}(K/K^H)$ by definition of the fixed field, we get
+**Proof.** The extension $K/F$ is a splitting field of a separable polynomial $f \in F[x]$. By Artin's lemma, $[K:K^H] \leq \lvert H \rvert$. On the other hand $K/K^H$ is normal and separable (it is generated over $K^H$ by the roots of the same separable polynomial $f$), so by the counting theorem $\lvert \operatorname{gal}(K/K^H) \rvert = [K:K^H]$. Since $H \leq \operatorname{gal}(K/K^H)$ by definition of the fixed field, we get
 
 $$
-\lvert H \rvert \leq \lvert \operatorname{Gal}(K/K^H) \rvert = [K:K^H] \leq \lvert H \rvert,
+\lvert H \rvert \leq \lvert \operatorname{gal}(K/K^H) \rvert = [K:K^H] \leq \lvert H \rvert,
 $$
 
-so equality holds throughout and $\operatorname{Gal}(K/K^H) = H$. Taking $H = G$ gives $[K:K^G] = \lvert G \rvert = [K:F]$, hence $K^G = F$ by the tower law.
+so equality holds throughout and $\operatorname{gal}(K/K^H) = H$. Taking $H = G$ gives $[K:K^G] = \lvert G \rvert = [K:F]$, hence $K^G = F$ by the tower law.
 
 ### The Fundamental Theorem
 
-**Theorem (fundamental theorem of Galois theory).** Let $K/F$ be a finite Galois extension with group $G = \operatorname{Gal}(K/F)$. The maps
+**Theorem (fundamental theorem of Galois theory).** Let $K/F$ be a finite Galois extension with group $G = \operatorname{gal}(K/F)$. The maps
 
 $$
-\boxed{\;E \longmapsto \operatorname{Gal}(K/E), \qquad H \longmapsto K^H\;}
+\boxed{\;E \longmapsto \operatorname{gal}(K/E), \qquad H \longmapsto K^H\;}
 $$
 
 are inverse bijections between the set of intermediate fields $F \subseteq E \subseteq K$ and the set of subgroups $H \leq G$. They reverse inclusions. For a subgroup $H$ with fixed field $E = K^H$:
@@ -111,23 +111,23 @@ are inverse bijections between the set of intermediate fields $F \subseteq E \su
 **(b)** $E/F$ is normal, hence Galois, if and only if $H \trianglelefteq G$, and then the restriction map gives an isomorphism
 
 $$
-\operatorname{Gal}(E/F) \cong G/H;
+\operatorname{gal}(E/F) \cong G/H;
 $$
 
 **(c)** the extension $E/F$ is always separable, and the subextensions of $K/E$ correspond to the subgroups of $H$.
 
-**Proof.** The maps are mutually inverse: if $E$ is intermediate then $K/E$ is Galois and $K^{\operatorname{Gal}(K/E)} = E$ by the fixed-field theorem applied to $K/E$; if $H$ is a subgroup then $\operatorname{Gal}(K/K^H) = H$ by the same theorem. Both implications use that $K/K^H$ and $K/E$ are Galois whenever $K/F$ is. Since $E_1 \subseteq E_2$ implies $\operatorname{Gal}(K/E_2) \subseteq \operatorname{Gal}(K/E_1)$, and $H_1 \leq H_2$ implies $K^{H_2} \subseteq K^{H_1}$, the bijection reverses inclusions.
+**Proof.** The maps are mutually inverse: if $E$ is intermediate then $K/E$ is Galois and $K^{\operatorname{gal}(K/E)} = E$ by the fixed-field theorem applied to $K/E$; if $H$ is a subgroup then $\operatorname{gal}(K/K^H) = H$ by the same theorem. Both implications use that $K/K^H$ and $K/E$ are Galois whenever $K/F$ is. Since $E_1 \subseteq E_2$ implies $\operatorname{gal}(K/E_2) \subseteq \operatorname{gal}(K/E_1)$, and $H_1 \leq H_2$ implies $K^{H_2} \subseteq K^{H_1}$, the bijection reverses inclusions.
 
 (a) is the fixed-field theorem for $[K:E] = \lvert H \rvert$, and then the tower law gives $[E:F] = [K:F]/[K:E] = \lvert G \rvert/\lvert H \rvert = [G:H]$.
 
-(b) If $H \trianglelefteq G$, then for $\sigma \in G$ and $x \in E = K^H$ one has $h(\sigma x) = \sigma (\sigma^{-1} h \sigma) x = \sigma x$ for $h \in H$, using $\sigma^{-1} h\sigma \in H$; so $\sigma(E) = E$. Restriction therefore defines a homomorphism $G \to \operatorname{Gal}(E/F)$ with kernel $H$, and its image has order $[G:H] = [E:F]$; since $\lvert \operatorname{Gal}(E/F) \rvert \leq [E:F]$ with equality when $E/F$ is separable, and $E/F$ is separable, the image is all of $\operatorname{Gal}(E/F)$ and $G/H \cong \operatorname{Gal}(E/F)$. Conversely, if $E/F$ is normal, then for $\sigma \in G$ and $x \in E$ the element $\sigma x$ is the image of $x$ under an $F$-embedding and hence lies in $E$; so restriction is defined, $H$ is the kernel of a homomorphism, and $H \trianglelefteq G$.
+(b) If $H \trianglelefteq G$, then for $\sigma \in G$ and $x \in E = K^H$ one has $h(\sigma x) = \sigma (\sigma^{-1} h \sigma) x = \sigma x$ for $h \in H$, using $\sigma^{-1} h\sigma \in H$; so $\sigma(E) = E$. Restriction therefore defines a homomorphism $G \to \operatorname{gal}(E/F)$ with kernel $H$, and its image has order $[G:H] = [E:F]$; since $\lvert \operatorname{gal}(E/F) \rvert \leq [E:F]$ with equality when $E/F$ is separable, and $E/F$ is separable, the image is all of $\operatorname{gal}(E/F)$ and $G/H \cong \operatorname{gal}(E/F)$. Conversely, if $E/F$ is normal, then for $\sigma \in G$ and $x \in E$ the element $\sigma x$ is the image of $x$ under an $F$-embedding and hence lies in $E$; so restriction is defined, $H$ is the kernel of a homomorphism, and $H \trianglelefteq G$.
 
 (c) Separability of $E/F$ follows from separability of $K/F$. The final statement is induced by the bijection applied to the Galois extension $K/E$ with group $H$.
 
-**Corollary (degree-index duality).** Intermediate fields $F \subseteq E_1 \subseteq E_2 \subseteq K$ correspond to subgroups $\operatorname{Gal}(K/E_2) \leq \operatorname{Gal}(K/E_1) \leq G$, and
+**Corollary (degree-index duality).** Intermediate fields $F \subseteq E_1 \subseteq E_2 \subseteq K$ correspond to subgroups $\operatorname{gal}(K/E_2) \leq \operatorname{gal}(K/E_1) \leq G$, and
 
 $$
-\boxed{\;[E_2:E_1] = [\operatorname{Gal}(K/E_1) : \operatorname{Gal}(K/E_2)]\;}.
+\boxed{\;[E_2:E_1] = [\operatorname{gal}(K/E_1) : \operatorname{gal}(K/E_2)]\;}.
 $$
 
 ---
@@ -139,7 +139,7 @@ $$
 **Definition.** Let $f \in F[x]$ be a nonconstant separable polynomial with splitting field $K$ over $F$. The **Galois group of $f$** is
 
 $$
-G_f = \operatorname{Gal}(K/F),
+G_f = \operatorname{gal}(K/F),
 $$
 
 considered up to conjugacy in the symmetric group on the roots.
@@ -173,12 +173,12 @@ Then $G_f \subseteq A_n$ if and only if $\Delta(f)$ is a square in $F$.
 **Example (cyclotomic).** Let $f = x^n - 1$ over $\mathbb{Q}$, with roots the $n$-th roots of unity and splitting field $\mathbb{Q}(\zeta_n)$. Every automorphism sends $\zeta_n \mapsto \zeta_n^k$ for a unique $k$ with $\gcd(k,n) = 1$, and every such $k$ occurs — this is the standard irreducibility of the cyclotomic polynomial, proved for $n = p$ prime by Eisenstein's criterion in *Unique Factorisation Domains* — so
 
 $$
-\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
+\operatorname{gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times,
 $$
 
 a group of order $\varphi(n)$, where $\varphi$ is the Euler totient. For $n = p$ a prime this group is cyclic of order $p - 1$.
 
-**Example (finite fields).** For $f = x^{p^n} - x$ over $\mathbb{F}_p$, the splitting field is $\mathbb{F}_{p^n}$ and $G_f = \operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n\mathbb{Z}$ by *Finite Fields*.
+**Example (finite fields).** For $f = x^{p^n} - x$ over $\mathbb{F}_p$, the splitting field is $\mathbb{F}_{p^n}$ and $G_f = \operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n\mathbb{Z}$ by *Finite Fields*.
 
 ---
 
@@ -194,7 +194,7 @@ $$
 
 such that $K_i = K_{i-1}(\alpha_i)$ with $\alpha_i^{n_i} \in K_{i-1}$ for some integer $n_i \geq 1$. A polynomial $f \in F[x]$ is **solvable by radicals** if its splitting field is contained in a radical extension of $F$.
 
-**Theorem.** Let $F$ have characteristic $0$ and let $K/F$ be a finite Galois extension. If $K/F$ is radical, then $G = \operatorname{Gal}(K/F)$ is a solvable group.
+**Theorem.** Let $F$ have characteristic $0$ and let $K/F$ be a finite Galois extension. If $K/F$ is radical, then $G = \operatorname{gal}(K/F)$ is a solvable group.
 
 **Proof sketch.** Enlarge $F$ to a field containing enough roots of unity; this does not change the group-theoretic content of the argument. For a single step $K_{i-1} \subseteq K_i = K_{i-1}(\alpha_i)$ with $\alpha_i^{n} = a \in K_{i-1}$, the minimal polynomial of $\alpha_i$ divides $x^n - a$ whose roots are $\alpha_i \zeta$ for $\zeta^n = 1$; if the $n$-th roots of unity lie in $K_{i-1}$, this polynomial is separable and splits in $K_i$, so $K_i/K_{i-1}$ is Galois with a group embedding in $\mathbb{Z}/n\mathbb{Z}$ by $\alpha_i \mapsto \alpha_i \zeta$. Applying the tower and passing to the Galois closure of $K/F$ exhibits $G$ with a subnormal series whose factors are abelian, that is, $G$ is solvable.
 
@@ -234,13 +234,13 @@ be the general polynomial, whose roots are algebraically independent over $\math
 
 ## Summary
 
-A Galois extension is an algebraic, normal, separable extension; for finite extensions this is equivalent to $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, to being the splitting field of a separable polynomial, and to $F$ being the fixed field of the Galois group. The fundamental theorem of Galois theory sets up an inclusion-reversing bijection between the intermediate fields of a finite Galois extension $K/F$ and the subgroups of $G = \operatorname{Gal}(K/F)$, with $E \mapsto \operatorname{Gal}(K/E)$ and $H \mapsto K^H$; under it $[K:E] = \lvert H \rvert$ and $[E:F] = [G:H]$, and the subextension $E/F$ is Galois exactly when $H \trianglelefteq G$, in which case $\operatorname{Gal}(E/F) \cong G/H$.
+A Galois extension is an algebraic, normal, separable extension; for finite extensions this is equivalent to $\lvert \operatorname{gal}(K/F) \rvert = [K:F]$, to being the splitting field of a separable polynomial, and to $F$ being the fixed field of the Galois group. The fundamental theorem of Galois theory sets up an inclusion-reversing bijection between the intermediate fields of a finite Galois extension $K/F$ and the subgroups of $G = \operatorname{gal}(K/F)$, with $E \mapsto \operatorname{gal}(K/E)$ and $H \mapsto K^H$; under it $[K:E] = \lvert H \rvert$ and $[E:F] = [G:H]$, and the subextension $E/F$ is Galois exactly when $H \trianglelefteq G$, in which case $\operatorname{gal}(E/F) \cong G/H$.
 
 The Galois group of a separable polynomial of degree $n$ embeds in $S_n$ by its action on the roots, and in characteristic $\neq 2$ its intersection with $A_n$ is detected by whether the discriminant is a square, and the standard computations are $G_{x^2+bx+c}$ of order $1$ or $2$, $G_{x^3-2} = S_3$, $G_{x^3-3x+1} = \mathbb{Z}/3$, $G_{x^4-10x^2+1} = (\mathbb{Z}/2)^2$, $G_{x^4-2}$ dihedral of order $8$, $G_{x^n-1} = (\mathbb{Z}/n)^\times$, and $G_{x^{p^n}-x} = \mathbb{Z}/n$.
 
 A polynomial is solvable by radicals over a field of characteristic $0$ exactly when its Galois group is solvable, since radical extensions have solvable groups with abelian factors among roots of unity, and conversely a solvable group yields a radical extension. Since $S_n$ is not solvable for $n \geq 5$, the general quintic and every polynomial with group $S_5$, such as $x^5 - x - 1$, is not solvable by radicals.
 
-| Extension $K/F$ | $[K:F]$ | $\operatorname{Gal}(K/F)$ | Galois |
+| Extension $K/F$ | $[K:F]$ | $\operatorname{gal}(K/F)$ | Galois |
 |---|---|---|---|
 | $\mathbb{C}/\mathbb{R}$ | $2$ | $\mathbb{Z}/2$ | yes |
 | $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ | $2$ | $\mathbb{Z}/2$ | yes |
@@ -258,8 +258,8 @@ A polynomial is solvable by radicals over a field of characteristic $0$ exactly 
 | $K/F$ | Field extension, $K$ over $F$ |
 | $[K:F]$ | Degree, $\dim_F K$ |
 | $\operatorname{char} F$ | Characteristic of the field $F$ |
-| $\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K)$ | Galois group, $F$-automorphisms of $K$ |
-| $K^H$ | Fixed field of a subgroup $H \leq \operatorname{Gal}(K/F)$ |
+| $\operatorname{gal}(K/F) = \operatorname{Aut}_F(K)$ | Galois group, $F$-automorphisms of $K$ |
+| $K^H$ | Fixed field of a subgroup $H \leq \operatorname{gal}(K/F)$ |
 | $G_f$ | Galois group of a separable polynomial $f$ |
 | $S_n$, $A_n$ | Symmetric and alternating groups |
 | $\Delta(f)$ | Discriminant $\prod_{i<j}(\alpha_i - \alpha_j)^2$ |

@@ -55,7 +55,7 @@ named the **general plain bilinear form** and the **Hermitian form**; their **al
 
 ## The General Plain Sesqualgebra and the Ternary Product
 
-**Definition.** The **general plain sesqualgebra (GPS)** over $\mathbb{D}$ is the pair $(\mathbb{D}, \star)$ with the sesquilinear product $Q_1\star Q_2 = Q_1\bar Q_2$.
+**Definition.** The **general plain sesqualgebra (gps)** over $\mathbb{D}$ is the pair $(\mathbb{D}, \star)$ with the sesquilinear product $Q_1\star Q_2 = Q_1\bar Q_2$.
 
 **Theorem.** The associator of $\star$ is $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3 - Q_3)$, nonzero but confined to the anti-self-adjoint part of the third slot; its **ternary product** $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ is symmetric in the outer slots, Hermitian-symmetric, $\overline{\{Q_1,Q_2,Q_3\}} = \{\bar Q_1,\bar Q_2,\bar Q_3\}$, and satisfies the Jordan triple identity, so that the structure is a **$J^{*}$-algebra** (a Jordan triple with an involution).
 
@@ -98,7 +98,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | Structure | Object | Carrier | What it is |
 |---|---|---|---|
 | Ring | $\mathbb{D}$ | $\mathbb{D}_{\mathbb{R}}$ | the product $Q_1Q_2$, $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ |
-| General plain sesqualgebra (GPS) | $(\mathbb{D},\star)$ | $\mathbb{D}_{\mathbb{R}}$ | the product $Q_1\bar Q_2$ |
+| General plain sesqualgebra (gps) | $(\mathbb{D},\star)$ | $\mathbb{D}_{\mathbb{R}}$ | the product $Q_1\bar Q_2$ |
 | Two products | — | $\mathbb{D}_{\mathbb{R}}$ | $Q_1Q_2$, $Q_1\bar Q_2$ |
 | Two forms | $B, H$ | $\mathbb{D}_{\mathbb{R}}$ | $Q_1Q_2$, $Q_1\bar Q_2$ as forms, Gram $[1]$ |
 | Two algebraic norms | $\langle Q_1\rangle, \langle Q_1\rangle_{*}$ | $\mathbb{D}$ | $Q_1^2$ anisotropic; $q_1^2-q'^2_1$ indefinite |
@@ -118,7 +118,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | $Q_1Q_2$, $Q_1\bar Q_2$ | the two products |
 | $\langle Q_1,Q_2\rangle = Q_1Q_2$, $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$ | the two forms |
 | $\langle Q_1\rangle = Q_1^2$, $\langle Q_1\rangle_{*} = \langle Q_1\rangle_{\natural*} = q_1^2-q'^2_1$ | the two algebraic norms |
-| $Q_1\star Q_2 = Q_1\bar Q_2$ | the sesquilinear product of the GPS |
+| $Q_1\star Q_2 = Q_1\bar Q_2$ | the sesquilinear product of the gps |
 | $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ | the ternary product, $J^{*}$-algebra |
 | $\mathbb{R}_{\mathbb{D}}$, $j\mathbb{R}_{\mathbb{D}}$ | real and split imaginary axes |
 | $\mathsf M_2(Q_1) = q_1I + q'_1J$ | the hyperbolic matrix model |
@@ -129,7 +129,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 - [The Split-Complexoid as a Vector Space over $\mathbb{R}$](the-split-complexoid-as-a-vector-space-over-r.html), [Split-Complexoid Subspaces](split-complexoid-subspaces.html) and [Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid](decompositions-and-comparison-of-the-remarkable-subspaces-of-the-split-complexoid.html), for the real reading of the carrier, the involution and its two blocks.
 - [The Two Products of the Split-Complexoid Space](the-two-products-of-the-split-complexoid-space.html), [Relations and Comparison Between the Two Products of the Split-Complexoid Space](relations-and-comparison-between-the-two-products-of-the-split-complexoid-space.html) and [The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.html), for the two products, their comparison, and their forms and algebraic norms.
 - [Remarkable Subspaces and the Two Products of the Split-Complexoid Space](remarkable-subspaces-and-the-two-products-of-the-split-complexoid-space.html) and [Remarkable Subspaces of the Split-Complexoid and the Two Forms](remarkable-subspaces-of-the-split-complexoid-and-the-two-forms.html), for the products and the forms read on the distinguished subspaces.
-- [The Sesquilinear Product of the Split-Complexoid Space](the-sesquilinear-product-of-the-split-complexoid-space.html) and [The Hermitian Form and the Cone of the Split-Complexoid Algebra](the-hermitian-form-and-the-cone-of-the-split-complexoid-algebra.html), for the GPS, the ternarisation and the indefinite cone.
+- [The Sesquilinear Product of the Split-Complexoid Space](the-sesquilinear-product-of-the-split-complexoid-space.html) and [The Hermitian Form and the Cone of the Split-Complexoid Algebra](the-hermitian-form-and-the-cone-of-the-split-complexoid-algebra.html), for the gps, the ternarisation and the indefinite cone.
 - [The Matrix Element Representations of the Split-Complexoid](the-matrix-element-representations-of-the-split-complexoid.html) and [The Realification and the Effect of the Change of Scalars on the Split-Complexoid](the-realification-and-the-effect-of-the-change-of-scalars-on-the-split-complexoid.html), for the two matrix models and the two scalar readings.
 - [Introduction to the Complexoid Algebraic Structures](introduction-to-the-complexoid-algebraic-structures.html), for the complex rung of the same ladder, where the carrier is a field and the Hermitian form is definite.
 - [Hermitian Forms over Algebras and Norms](hermitian-forms-over-algebras-and-norms.html), [The Norm Defined by a Form](the-norm-defined-by-a-form.html), [Jordan Triples with an Involution](jordan-triples-with-an-involution.html) and *Algebraic J*-Algebras, for the general theory of a sesqualgebra, of a ternary product and of an algebraic norm.

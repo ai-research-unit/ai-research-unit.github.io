@@ -46,7 +46,7 @@ form a basis of $\mathrm{U}(\mathrm{G})$ over $K$. In particular the natural map
 **Definition.** The **filtration** of $\mathrm{U}(\mathrm{G})$ by degree assigns to $U_n(\mathrm{G})$ the span of products of at most $n$ elements of $\mathrm{G}$. The Poincaré–Birkhoff–Witt theorem is equivalent to the statement that the associated graded algebra is the symmetric algebra,
 
 $$
-\operatorname{gr} \mathrm{U}(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G}),
+\operatorname{gr} \mathrm{U}(\mathrm{G}) \cong \operatorname{sym}(\mathrm{G}),
 $$
 
 the symmetric algebra of the vector space $\mathrm{G}$, which belongs to the category on symmetric algebras.
@@ -299,7 +299,7 @@ with $\lambda = n\omega$ and $(\omega, \omega) = 1/8$ for the Killing form of $\
 
 ## Summary
 
-For a finite-dimensional semisimple Lie algebra over an algebraically closed field of characteristic zero, the finite-dimensional representations are completely reducible, so they are direct sums of irreducibles. Representations are modules over the universal enveloping algebra $\mathrm{U}(\mathrm{G}) = T(\mathrm{G})/(xy - yx - [x,y])$, whose monomials in a basis form a basis by the Poincaré–Birkhoff–Witt theorem and whose associated graded algebra is the symmetric algebra $\operatorname{Sym}(\mathrm{G})$. Every finite-dimensional module is a weight module with finite-dimensional weight spaces, the weights lie in the weight lattice $P$ and are stable under the Weyl group.
+For a finite-dimensional semisimple Lie algebra over an algebraically closed field of characteristic zero, the finite-dimensional representations are completely reducible, so they are direct sums of irreducibles. Representations are modules over the universal enveloping algebra $\mathrm{U}(\mathrm{G}) = T(\mathrm{G})/(xy - yx - [x,y])$, whose monomials in a basis form a basis by the Poincaré–Birkhoff–Witt theorem and whose associated graded algebra is the symmetric algebra $\operatorname{sym}(\mathrm{G})$. Every finite-dimensional module is a weight module with finite-dimensional weight spaces, the weights lie in the weight lattice $P$ and are stable under the Weyl group.
 
 The irreducible finite-dimensional modules are exactly the modules $V(\lambda)$ with $\lambda$ a dominant integral weight, $V(\lambda)$ being the unique irreducible quotient of the Verma module $M(\lambda) = \mathrm{U}(\mathrm{G})\otimes_{\mathrm{U}(\mathrm{B})}K_\lambda$. For $\mathrm{SL}(2)$ the irreducibles are $V_n$ of dimension $n+1$, with the explicit action of $e, f, h$, and the tensor products decompose by the Clebsch–Gordan rule. In general the characters are given by the Weyl character formula, the dimensions by the Weyl dimension formula, and the weight multiplicities by the Kostant multiplicity formula; the Casimir element is a central element of $\mathrm{U}(\mathrm{G})$ acting on $V(\lambda)$ by the scalar $(\lambda, \lambda + 2\rho)$, and by the theorem of Harish-Chandra the centre of $\mathrm{U}(\mathrm{G})$ is a polynomial algebra on $r = \operatorname{rank}\mathrm{G}$ generators, of which the Casimir element is the degree-two member.
 
@@ -312,7 +312,7 @@ The irreducible finite-dimensional modules are exactly the modules $V(\lambda)$ 
 | $\mathrm{H}, \mathrm{N}_\pm, \mathrm{B} = \mathrm{H}\oplus\mathrm{N}_+$ | Cartan, nilpotent, and Borel subalgebras |
 | $\Phi, \Phi^+, \Pi, W$ | Root system, positive roots, simple roots, Weyl group |
 | $\mathrm{U}(\mathrm{G})$ | Universal enveloping algebra, $T(\mathrm{G})/(xy - yx - [x,y])$ |
-| $\operatorname{gr} \mathrm{U}(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G})$ | Associated graded algebra; Poincaré–Birkhoff–Witt |
+| $\operatorname{gr} \mathrm{U}(\mathrm{G}) \cong \operatorname{sym}(\mathrm{G})$ | Associated graded algebra; Poincaré–Birkhoff–Witt |
 | $V_\lambda$, $m_V(\lambda)$ | Weight space and its dimension, the multiplicity of $\lambda$ |
 | $P, Q$ | Weight lattice and root lattice, $Q = \mathbb{Z}\Phi \subseteq P$ |
 | $\omega_i$ | Fundamental weights, $\langle\omega_i, \alpha_j^\vee\rangle = \delta_{ij}$ |

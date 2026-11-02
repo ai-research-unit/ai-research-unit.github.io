@@ -35,9 +35,9 @@ $$
 It is symmetric, $\Theta_{ij} = \Theta_{ji}$, and traceless, $\Theta_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The tracelessness is not an extra assumption: the trace part is an $l=0$ contribution at the same $r^{-3}$ order, carries no quadrupole information, and is removed by the traceless definition. The five independent components are the representation $D^{(2)}$ of the rotation group, and it is useful to write them in the symmetric-traceless form the definition suggests:
 
 $$
-\Theta_{ij} \in \operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
+\Theta_{ij} \in \operatorname{sym}^2_0(D^{(1)}) \cong D^{(2)} ,
 \qquad
-\dim_{\mathbb{C}} \operatorname{Sym}^2_0(D^{(1)}) = 5 .
+\dim_{\mathbb{C}} \operatorname{sym}^2_0(D^{(1)}) = 5 .
 $$
 
 The quadrupole contributes to the potential of the source at the order $r^{-3}$,

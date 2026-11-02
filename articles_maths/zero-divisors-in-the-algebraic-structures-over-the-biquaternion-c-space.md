@@ -8,9 +8,9 @@ Let $\star$ be a product on the biquaternion algebra $\mathbb{B}$. A nonzero $\t
 
 | the operation | the plain algebra | the plain sesqualgebra | the quaternionic algebra | the quaternionic sesqualgebra |
 |---|---|---|---|---|
-| the general | $\mathrm{GPA}$ | $\mathrm{GPS}$ | $\mathrm{GQA}$ | $\mathrm{GQS}$ |
-| the symmetric | $\mathrm{SPA}$ | $\mathrm{SPS}$ | $\mathrm{SQA}$ | $\mathrm{SQS}$ |
-| the antisymmetric | $\mathrm{APA}$ | $\mathrm{APS}$ | $\mathrm{AQA}$ | $\mathrm{AQS}$ |
+| the general | $\mathrm{gpa}$ | $\mathrm{gps}$ | $\mathrm{gqa}$ | $\mathrm{gqs}$ |
+| the symmetric | $\mathrm{spa}$ | $\mathrm{sps}$ | $\mathrm{sqa}$ | $\mathrm{sqs}$ |
+| the antisymmetric | $\mathrm{apa}$ | $\mathrm{aps}$ | $\mathrm{aqa}$ | $\mathrm{aqs}$ |
 
 and every table of the article follows the new order: the four general structures first, then their four symmetric parts, then their four antisymmetric parts; and inside each group the plain algebra, then the plain sesqualgebra, then the quaternionic algebra, then the quaternionic sesqualgebra.
 
@@ -40,17 +40,17 @@ So an element is a unit exactly when it lies off the cone, and a zero divisor ex
 
 The four general products split into the twelve structures through the class-preserving exchange (*Symmetric and Antisymmetric Decomposition of the Four General Products*). A zero divisor names its product, so each of the twelve carries a zero-divisor set of its own; the table of §*Results* records them, one family to a block and, inside a block, the general structure first, the product written by its defining formula.
 
-**Theorem (the cone is the mark of the four general products).** Among the twelve structures the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$ exactly for the four general structures $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$ and $\mathrm{GQS}$, and for no other. The eight derived sets are strictly larger: the six antisymmetric and scalar-valued symmetric structures $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$ have the whole punctured space, and the two remaining symmetric structures $\mathrm{SPA}$ and $\mathrm{SQS}$ have the enlarged set $(\{Q_{2t}=0\}\cup\mathcal{N})\setminus\{0\}$.
+**Theorem (the cone is the mark of the four general products).** Among the twelve structures the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$ exactly for the four general structures $\mathrm{gpa}$, $\mathrm{gps}$, $\mathrm{gqa}$ and $\mathrm{gqs}$, and for no other. The eight derived sets are strictly larger: the six antisymmetric and scalar-valued symmetric structures $\mathrm{sps}$, $\mathrm{sqa}$, $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$ and $\mathrm{aqs}$ have the whole punctured space, and the two remaining symmetric structures $\mathrm{spa}$ and $\mathrm{sqs}$ have the enlarged set $(\{Q_{2t}=0\}\cup\mathcal{N})\setminus\{0\}$.
 
 The twelve structures are read one by one below; each names the product, its zero-divisor set and the reason. The four general rows are read together in §*Results*.
 
 **Corollary (the cone is the common core).** The punctured cone $\mathcal{N}\setminus\{0\}$ is contained in the zero-divisor set of each of the twelve structures, and it is equal to the set of exactly four of them, the four general products.
 
-*Proof.* Every row of the table of §*Results* contains the cone: the four general rows equal it, the rows of $\mathrm{SPA}$ and $\mathrm{SQS}$ contain it by their second clause, and the remaining six rows are the whole punctured space.
+*Proof.* Every row of the table of §*Results* contains the cone: the four general rows equal it, the rows of $\mathrm{spa}$ and $\mathrm{sqs}$ contain it by their second clause, and the remaining six rows are the whole punctured space.
 
-Two consequences follow. First, because the cone lies in every set, an element of vanishing norm admits an annihilating factor in all twelve products, and the cone is the largest subset on which the twelve agree; the converse fails, since the derived sets are strictly larger. Second, the ring-theoretic picture breaks on the derived structures: the unit $\vec e_x$, whose norm is $1$, is a zero divisor of $\mathrm{SPA}$ and of $\mathrm{SQS}$, because $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x \vec e_y+\vec e_y \vec e_x)=0$ for the Jordan product and $\vec e_x\star \vec e_y=0$ for the symmetric quaternionic sesquilinear product, and it is invertible in the algebra. A zero divisor need not be a non-unit unless the product has a two-sided unit.
+Two consequences follow. First, because the cone lies in every set, an element of vanishing norm admits an annihilating factor in all twelve products, and the cone is the largest subset on which the twelve agree; the converse fails, since the derived sets are strictly larger. Second, the ring-theoretic picture breaks on the derived structures: the unit $\vec e_x$, whose norm is $1$, is a zero divisor of $\mathrm{spa}$ and of $\mathrm{sqs}$, because $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x \vec e_y+\vec e_y \vec e_x)=0$ for the Jordan product and $\vec e_x\star \vec e_y=0$ for the symmetric quaternionic sesquilinear product, and it is invertible in the algebra. A zero divisor need not be a non-unit unless the product has a two-sided unit.
 
-### $\mathrm{GPA}$, the general plain algebra
+### $\mathrm{gpa}$, the general plain algebra
 
 The product is $\tilde Q_1\tilde Q_2$, its conjugate is $\tilde Q_1^{\natural}$, and the form of the product is
 
@@ -70,7 +70,7 @@ and its scalar is the norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1
 
 The units are the elements off the cone, $\mathbb{B}^{\times}=\{\tilde Q_1:\mathrm{Norm}(\tilde Q_1)\neq0\}$, and this is the one structure of the twelve whose invertible elements form a genuine group, with the two-sided unit $e_t$ and the two-sided inverse $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\mathrm{Norm}(\tilde Q_1)$; the complement of the zero-divisor set is that group together with the origin, $\mathbb{B}\setminus(\mathcal{N}\setminus\{0\})=\mathbb{B}^{\times}\cup\{0\}$.
 
-### $\mathrm{GPS}$, the general plain sesqualgebra
+### $\mathrm{gps}$, the general plain sesqualgebra
 
 The product is $\tilde Q_1\tilde Q_2^{*}$, its conjugate is $\tilde Q_1^{*}$, and the form of the product is
 
@@ -80,11 +80,11 @@ $$
 
 The norm is the form at the two equal arguments, $\langle\tilde Q_1\rangle_{*}=\mathrm{Form}(\tilde Q_1,\tilde Q_1)=\mathrm{Sc}(\tilde Q_1\tilde Q_1^{*})=|Q_{1t}|^{2}+|\vec Q_1|^{2}$, definite.
 
-**The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The definite norm $\langle\cdot\rangle_{*}$ vanishes at the origin alone and cuts no cone. Then $\tilde Q_1\tilde Q_2^{*}$ is the plain product, whose form is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ and whose scalar at the two equal arguments is the quaternionic norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$, since $\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\tilde Q_1^{\natural}=\mathrm{Norm}(\tilde Q_1)e_t=0$ on the cone.
+**The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The definite norm $\langle\cdot\rangle_{*}$ vanishes at the origin alone and cuts no cone. Then $\tilde Q_1\tilde Q_2^{*}$ is the plain product, whose form is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ and whose scalar at the two equal arguments is the quaternionic norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (gpa)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$, since $\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\tilde Q_1^{\natural}=\mathrm{Norm}(\tilde Q_1)e_t=0$ on the cone.
 
 The element $e_t$ is a right unit alone, $e_t\star\tilde Q_2=\tilde Q_2^{*}$, and an element off the cone has the two-sided solution $(\tilde Q_1^{-1})^{*}$ of the inverse equations; the invertible elements are the complement of the cone and, the product being non-associative, they form no group.
 
-### $\mathrm{GQA}$, the general quaternionic algebra
+### $\mathrm{gqa}$, the general quaternionic algebra
 
 The product is $\tilde Q_1^{\natural}\tilde Q_2$, its conjugate is $\tilde Q_1^{\natural}$, and the form of the product is
 
@@ -92,13 +92,13 @@ $$
 \mathrm{Form}(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2) .
 $$
 
-The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mathrm{Form}(\tilde Q_1,\tilde Q_1)$, the scalar of the central element $\tilde Q_1^{\natural}\tilde Q_1$ of §*The General Plain Algebra (GPA)*, $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$; the natural conjugation sends $\vec Q_1$ to $-\vec Q_1$, so $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$. Here the norm is the criterion.
+The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mathrm{Form}(\tilde Q_1,\tilde Q_1)$, the scalar of the central element $\tilde Q_1^{\natural}\tilde Q_1$ of §*The General Plain Algebra (gpa)*, $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$; the natural conjugation sends $\vec Q_1$ to $-\vec Q_1$, so $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$. Here the norm is the criterion.
 
-**The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The cone is the quadric $\mathcal{N}$ of §*The General Plain Algebra (GPA)*. If $\mathrm{Norm}(\tilde Q_1)=0$ the partner $\tilde Q_2=\tilde Q_1^{\natural}$ annihilates, since $\tilde Q_1^{\natural}\tilde Q_1^{\natural}=\mathrm{Norm}(\tilde Q_1^{\natural})e_t=0$; conversely, multiplying $\tilde Q_1^{\natural}\tilde Q_2=0$ on the left by $\tilde Q_1$ gives $\mathrm{Norm}(\tilde Q_1)\tilde Q_2=0$.
+**The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The cone is the quadric $\mathcal{N}$ of §*The General Plain Algebra (gpa)*. If $\mathrm{Norm}(\tilde Q_1)=0$ the partner $\tilde Q_2=\tilde Q_1^{\natural}$ annihilates, since $\tilde Q_1^{\natural}\tilde Q_1^{\natural}=\mathrm{Norm}(\tilde Q_1^{\natural})e_t=0$; conversely, multiplying $\tilde Q_1^{\natural}\tilde Q_2=0$ on the left by $\tilde Q_1$ gives $\mathrm{Norm}(\tilde Q_1)\tilde Q_2=0$.
 
 The element $e_t$ is a left unit alone, and an element off the cone has the two-sided solution $(\tilde Q_1^{-1})^{\natural}$ of the inverse equations; the invertible elements are the complement of the cone, and since the product is not associative they form no group.
 
-### $\mathrm{GQS}$, the general quaternionic sesqualgebra
+### $\mathrm{gqs}$, the general quaternionic sesqualgebra
 
 The product is $\tilde Q_1^{\natural}\tilde Q_2^{*}$, its conjugates are $\natural$ and $*$, and the form of the product is
 
@@ -108,11 +108,11 @@ $$
 
 The norm is the form at the two equal arguments, $\langle\tilde Q_1\rangle_{\natural*}=\mathrm{Form}(\tilde Q_1,\tilde Q_1)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_1^{*})=|Q_{1t}|^{2}-|\vec Q_1|^{2}$, indefinite.
 
-**The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The indefinite norm $\langle\cdot\rangle_{\natural*}$ vanishes on a real cone of its own, distinct from $\mathcal{N}$. Then $\tilde Q_1^{\natural}\tilde Q_2^{*}$ is the plain product of $\tilde Q_1^{\natural}$, whose form is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and whose scalar at the two equal arguments is $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$.
+**The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The indefinite norm $\langle\cdot\rangle_{\natural*}$ vanishes on a real cone of its own, distinct from $\mathcal{N}$. Then $\tilde Q_1^{\natural}\tilde Q_2^{*}$ is the plain product of $\tilde Q_1^{\natural}$, whose form is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and whose scalar at the two equal arguments is $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$ of §*The General Plain Algebra (gpa)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$.
 
 There is no unit on either side, and an element off the cone has the two-sided solution $(\tilde Q_1^{-1})^{\natural*}$ of the inverse equations; the elements off the cone satisfy both inverse equations, but they form no group, and the structure carries no unit.
 
-### $\mathrm{SPA}$, the symmetric plain algebra
+### $\mathrm{spa}$, the symmetric plain algebra
 
 The product is the Jordan product $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$, the symmetrisation of the plain product, so its form is the same,
 
@@ -120,7 +120,7 @@ $$
 \mathrm{Form}(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2) ,
 $$
 
-The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mathrm{Form}(\tilde Q_1,\tilde Q_1)$, the quaternionic norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (GPA)*.
+The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mathrm{Form}(\tilde Q_1,\tilde Q_1)$, the quaternionic norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (gpa)*.
 
 **The zero-divisor set is the enlarged set**
 
@@ -130,9 +130,9 @@ Read the Jordan product from the quaternion table, $\tilde Q_1\circ\tilde Q_2=Q_
 
 The plane $Q_{1t}=0$ of the pure elements is a second family beside the cone.
 
-The unit $e_t$ is two-sided, as for $\mathrm{GPA}$, and the invertible elements are again the elements of non-vanishing norm; but the product is not associative, so they form no group, and the complement of the zero-divisor set, $\{Q_{1t}\neq0,\ \mathrm{Norm}(\tilde Q_1)\neq0\}\cup\{0\}$, is not the invertible set: the pure element $\vec e_x$ is a zero divisor and invertible at once, $\vec e_x\bullet(-\vec e_x)=e_t$, the failure of *zero divisor if and only if non-unit*.
+The unit $e_t$ is two-sided, as for $\mathrm{gpa}$, and the invertible elements are again the elements of non-vanishing norm; but the product is not associative, so they form no group, and the complement of the zero-divisor set, $\{Q_{1t}\neq0,\ \mathrm{Norm}(\tilde Q_1)\neq0\}\cup\{0\}$, is not the invertible set: the pure element $\vec e_x$ is a zero divisor and invertible at once, $\vec e_x\bullet(-\vec e_x)=e_t$, the failure of *zero divisor if and only if non-unit*.
 
-### $\mathrm{SPS}$, the symmetric plain sesqualgebra
+### $\mathrm{sps}$, the symmetric plain sesqualgebra
 
 The product is $\tfrac12(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}})$, central, and the form of the product is
 
@@ -146,7 +146,7 @@ The norm is the form at the two equal arguments, $\langle\tilde Q_1\rangle_{*}=\
 
 There is no unit, the values lying in the centre, so there is no group of units and the complement of the zero-divisor set, the whole punctured space, is the origin alone.
 
-### $\mathrm{SQA}$, the symmetric quaternionic algebra
+### $\mathrm{sqa}$, the symmetric quaternionic algebra
 
 The product is $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$, central, and the form of the product is
 
@@ -160,7 +160,7 @@ The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mat
 
 There is no unit — the values lie in the centre and $e_t$ acts as $\langle e_t,\tilde Q_2\rangle_{\natural}e_t=Q_{2t}e_t$, not as an identity — so there is no group of units and the complement of the zero-divisor set, the whole punctured space, is the origin alone.
 
-### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra
+### $\mathrm{sqs}$, the symmetric quaternionic sesqualgebra
 
 The product is $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$, central, and the form of the product is
 
@@ -176,11 +176,11 @@ $$
 \tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}).
 $$
 
-By §*The Symmetric Plain Algebra (SPA)* the criterion is read on $\tilde Q_1^{\natural}$: the natural conjugation leaves $Q_{1t}$ unchanged and $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$, so the condition is $Q_{1t}=0$ or $Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}=0$, (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
+By §*The Symmetric Plain Algebra (spa)* the criterion is read on $\tilde Q_1^{\natural}$: the natural conjugation leaves $Q_{1t}$ unchanged and $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$, so the condition is $Q_{1t}=0$ or $Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}=0$, (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
 There is no unit, both symmetrised terms conjugating a factor, so $e_t$ acts as $\tilde Q_2^{*}$ on one side and $\tilde Q_2^{\natural}$ on the other; the complement of the enlarged zero-divisor set is $\{Q_{1t}\neq0,\ \mathrm{Norm}(\tilde Q_1)\neq0\}\cup\{0\}$, which is no group of units.
 
-### $\mathrm{APA}$, the antisymmetric plain algebra
+### $\mathrm{apa}$, the antisymmetric plain algebra
 
 The product is the commutator $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$. It is alternating, so at the two equal arguments it vanishes, $\tilde Q_1\star\tilde Q_1=\tfrac12(\tilde Q_1\tilde Q_1-\tilde Q_1\tilde Q_1)=0$; there is no form there and no norm.
 
@@ -188,7 +188,7 @@ The product is the commutator $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_
 
 There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set — the whole punctured space — is the origin alone.
 
-### $\mathrm{APS}$, the antisymmetric plain sesqualgebra
+### $\mathrm{aps}$, the antisymmetric plain sesqualgebra
 
 The product is $\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}})=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$. At the two equal arguments it gives the vector part of $\tilde Q_1\tilde Q_1^{*}$, not a scalar; there is no norm.
 
@@ -196,7 +196,7 @@ The product is $\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1
 
 There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set is the origin alone.
 
-### $\mathrm{AQA}$, the antisymmetric quaternionic algebra
+### $\mathrm{aqa}$, the antisymmetric quaternionic algebra
 
 The product is the commutator $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$. It is alternating, $\tilde Q_1\star\tilde Q_1=\tfrac12(\tilde Q_1^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde Q_1)=0$, so at the two equal arguments there is no form and no norm.
 
@@ -204,7 +204,7 @@ The product is the commutator $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q
 
 There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set is the origin alone.
 
-### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra
+### $\mathrm{aqs}$, the antisymmetric quaternionic sesqualgebra
 
 The product is $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})=\vec Q_1\times\overline{\vec Q_2}$. At the two equal arguments it gives $\vec Q_1\times\overline{\vec Q_1}$, a pure vector; there is no norm.
 
@@ -222,20 +222,20 @@ Read against the cone $\mathcal{N}$ and against the whole space, the twelve sets
 
 | family | structure | the product | the zero-divisor set |
 |---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\tilde Q_1\tilde Q_2$ | $\mathcal{N}\setminus\{0\}$ |
-| the plain sesqualgebra | $\mathrm{GPS}$ | $\tilde Q_1\tilde Q_2^{*}$ | $\mathcal{N}\setminus\{0\}$ |
-| the quaternionic algebra | $\mathrm{GQA}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\mathcal{N}\setminus\{0\}$ |
-| the quaternionic sesqualgebra | $\mathrm{GQS}$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\mathcal{N}\setminus\{0\}$ |
-| the plain algebra | $\mathrm{SPA}$ | $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | $(\{Q_{1t}=0\}\cup\mathcal{N})\setminus\{0\}$ |
-| the plain sesqualgebra | $\mathrm{SPS}$ | $\tfrac12(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ |
-| the quaternionic algebra | $\mathrm{SQA}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ |
-| the quaternionic sesqualgebra | $\mathrm{SQS}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | $(\{Q_{1t}=0\}\cup\mathcal{N})\setminus\{0\}$ |
-| the plain algebra | $\mathrm{APA}$ | $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ |
-| the plain sesqualgebra | $\mathrm{APS}$ | $\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ |
-| the quaternionic algebra | $\mathrm{AQA}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ |
-| the quaternionic sesqualgebra | $\mathrm{AQS}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ |
+| the plain algebra | $\mathrm{gpa}$ | $\tilde Q_1\tilde Q_2$ | $\mathcal{N}\setminus\{0\}$ |
+| the plain sesqualgebra | $\mathrm{gps}$ | $\tilde Q_1\tilde Q_2^{*}$ | $\mathcal{N}\setminus\{0\}$ |
+| the quaternionic algebra | $\mathrm{gqa}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\mathcal{N}\setminus\{0\}$ |
+| the quaternionic sesqualgebra | $\mathrm{gqs}$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\mathcal{N}\setminus\{0\}$ |
+| the plain algebra | $\mathrm{spa}$ | $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | $(\{Q_{1t}=0\}\cup\mathcal{N})\setminus\{0\}$ |
+| the plain sesqualgebra | $\mathrm{sps}$ | $\tfrac12(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ |
+| the quaternionic algebra | $\mathrm{sqa}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ |
+| the quaternionic sesqualgebra | $\mathrm{sqs}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | $(\{Q_{1t}=0\}\cup\mathcal{N})\setminus\{0\}$ |
+| the plain algebra | $\mathrm{apa}$ | $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ |
+| the plain sesqualgebra | $\mathrm{aps}$ | $\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ |
+| the quaternionic algebra | $\mathrm{aqa}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ |
+| the quaternionic sesqualgebra | $\mathrm{aqs}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ |
 
-The four general products have one and the same set, the punctured cone. The six structures $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$ have the whole punctured space. The two remaining symmetric structures $\mathrm{SPA}$ and $\mathrm{SQS}$ have the enlarged set $(\{Q_{2t}=0\}\cup\mathcal{N})\setminus\{0\}$. The cone is therefore the zero-divisor set of exactly four of the twelve structures, and it is contained in all twelve, so that it is the common core of the twelve. The theorem below and §*The Twelve Structures and the Cone* prove the table, and the sections that follow read its consequences.
+The four general products have one and the same set, the punctured cone. The six structures $\mathrm{sps}$, $\mathrm{sqa}$, $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$ and $\mathrm{aqs}$ have the whole punctured space. The two remaining symmetric structures $\mathrm{spa}$ and $\mathrm{sqs}$ have the enlarged set $(\{Q_{2t}=0\}\cup\mathcal{N})\setminus\{0\}$. The cone is therefore the zero-divisor set of exactly four of the twelve structures, and it is contained in all twelve, so that it is the common core of the twelve. The theorem below and §*The Twelve Structures and the Cone* prove the table, and the sections that follow read its consequences.
 
 ### The Four General Products Coincide
 
@@ -249,10 +249,10 @@ The four conditions are thus one condition, and the reason is structural. Each g
 
 | product | left condition | right condition | the set |
 |---|---|---|---|
-| $\mathrm{GPA}$, $\tilde Q_1\tilde Q_2$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathcal{N}\setminus\{0\}$ |
-| $\mathrm{GPS}$, $\tilde Q_1\tilde Q_2^{*}$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathcal{N}\setminus\{0\}$ |
-| $\mathrm{GQA}$, $\tilde Q_1^{\natural}\tilde Q_2$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathcal{N}\setminus\{0\}$ |
-| $\mathrm{GQS}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathcal{N}\setminus\{0\}$ |
+| $\mathrm{gpa}$, $\tilde Q_1\tilde Q_2$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathcal{N}\setminus\{0\}$ |
+| $\mathrm{gps}$, $\tilde Q_1\tilde Q_2^{*}$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathcal{N}\setminus\{0\}$ |
+| $\mathrm{gqa}$, $\tilde Q_1^{\natural}\tilde Q_2$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathcal{N}\setminus\{0\}$ |
+| $\mathrm{gqs}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathrm{Norm}(\tilde Q_1)=0$ | $\mathcal{N}\setminus\{0\}$ |
 
 The four rows are identical, and that is the theorem. **The word is *coincide*, not *independent*.** The zero divisor is defined by an equation that names a product, so the notion belongs to the product and the four products are four definitions, not one. What the theorem says is that in the biquaternion algebra the four definitions select one and the same subset of $\mathbb{B}$; it does not say that they must, and it does not extend to the eight derived structures of §*The Twelve Structures and the Cone*.
 
@@ -332,7 +332,7 @@ A zero divisor is defined by an equation that names a product, so the twelve pro
 
 The common set is the zero-divisor set $\mathcal{N}\setminus\{0\}$, a complex cone with apex at the origin, smooth away from the apex, of complex dimension three and real dimension six, whose nonzero members are the rank-one elements of the matrix model and whose left ideals are the minimal left ideals. Its complement is the group of units together with the origin, and it splits by the scalar part into the pure family of the nilpotents, of real dimension four, and the non-pure family of the complex multiples of the nontrivial idempotents, which fills the cone in real dimension six.
 
-The annihilators of a fixed element of the cone, two complex planes per product, are *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the square-zero sets are *Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The cone is the zero-divisor set of the four general products alone: the four antisymmetric structures and the two scalar-valued symmetric structures $\mathrm{SPS}$ and $\mathrm{SQA}$ have the whole punctured space, and $\mathrm{SPA}$ and $\mathrm{SQS}$ have $(\{Q_{2t}=0\}\cup\mathcal{N})\setminus\{0\}$. The cone is contained in all twelve sets and is the largest subset on which they agree. What a product does not change is the detection of the units: an element off the cone is invertible, and the one-sided inverse equations replace the classical equivalence for the three products that have no two-sided unit.
+The annihilators of a fixed element of the cone, two complex planes per product, are *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the square-zero sets are *Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The cone is the zero-divisor set of the four general products alone: the four antisymmetric structures and the two scalar-valued symmetric structures $\mathrm{sps}$ and $\mathrm{sqa}$ have the whole punctured space, and $\mathrm{spa}$ and $\mathrm{sqs}$ have $(\{Q_{2t}=0\}\cup\mathcal{N})\setminus\{0\}$. The cone is contained in all twelve sets and is the largest subset on which they agree. What a product does not change is the detection of the units: an element off the cone is invertible, and the one-sided inverse equations replace the classical equivalence for the three products that have no two-sided unit.
 
 Beyond the grid the same set is one of four null sets. The bilinear form $\langle\cdot,\cdot\rangle$ has a complex cone of real dimension six different from $\mathcal{N}$, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ has the origin alone, and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ has the Krein cone of real dimension seven; on the remarkable subspaces the cone drops from real dimension six to four on the vector subspace and to three on the quaternion subspace and on the sectors, carried at every stage by the indefinite forms. As a topological space the cone is contractible with the apex as its only singular point, its link over $S^{7}_{E}$ is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_y\cong\mathbb{Z}$ against the link $S^{2}\sqcup S^{2}$ of its Lorentzian slice, and its projectivisation is the Segre quadric. Its complement is the unit group $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$; its isotropic lines are the Peirce lines, the doubly null lines, and the cone meets the Krein null set in their union; its level-set companion is the real hyperboloid of the Hermitian form. These statements name no product, and they are the content of §*The Cone in the Wider Mathematics*.
 
@@ -355,7 +355,7 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | the general plain bilinear form, whose isotropic cone is not $\mathcal{N}$ |
 | $\langle\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_1^{*})$ | the general plain sesquilinear algebraic norm, definite |
 | $\langle\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_1^{*})$ | the general quaternionic sesquilinear algebraic norm, indefinite |
-| $\mathrm{GPA},\dots,\mathrm{AQS}$ | the twelve structures of the space: the four general products and their eight symmetric and antisymmetric parts |
+| $\mathrm{gpa},\dots,\mathrm{aqs}$ | the twelve structures of the space: the four general products and their eight symmetric and antisymmetric parts |
 
 ## Further Reading
 
@@ -372,8 +372,8 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the isomorphism and the singular matrices.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general plain bilinear form and its isotropic cone.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the subspaces, the pure cone and the non-pure families.
-- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the criterion $Q_{2t}=0$ or $\mathrm{Norm}(\tilde Q_2)=0$ of the enlarged set of $\mathrm{SPA}$.
-- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same criterion of the enlarged set of $\mathrm{SQS}$ and its two families.
+- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the criterion $Q_{2t}=0$ or $\mathrm{Norm}(\tilde Q_2)=0$ of the enlarged set of $\mathrm{spa}$.
+- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the same criterion of the enlarged set of $\mathrm{sqs}$ and its two families.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the two scalar-valued symmetric structures whose zero-divisor set is the whole punctured space.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four alternating structures whose zero-divisor set is the whole punctured space.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the natural product's criterion and the coincidence of its two annihilators.

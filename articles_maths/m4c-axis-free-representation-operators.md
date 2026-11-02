@@ -10,7 +10,7 @@
 - A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy $\mathbb{B}_L=\{L^{\mathrm{axf}}(\tilde Q)\}$, and the right matrices fill the four-dimensional copy $\mathbb{B}_R=\{R^{\mathrm{axf}}(\tilde P)\}$. These are the two subsets of the axis-free basis article, and their intersection is the scalars.
 - A two-sided operator is a product $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$. The products fill a seven-dimensional cone in $M_4(\mathbb{C})$, not a subspace, and they are exactly the matrices whose coefficient matrix has rank at most one.
 
-**The matrix side.** The sixteen products $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. In the axis-free basis every one of them is a real signed permutation matrix: four nonzero entries, one in each row and each column, every entry $0$, $+1$ or $-1$. The real span of the sixteen is $M_4(\mathbb{R})$, so the axis-free basis is the frame in which the real structure of the operator algebra is visible. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$ in complex projective space. The article records these constructions, and closes with the open questions.
+**The matrix side.** The sixteen products $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. In the axis-free basis every one of them is a real signed permutation matrix: four nonzero entries, one in each row and each column, every entry $0$, $+1$ or $-1$. The real span of the sixteen is $M_4(\mathbb{R})$, so the axis-free basis is the frame in which the real structure of the operator algebra is visible. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$ in complex projective space. The article records these constructions, and closes with the open questions.
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
@@ -74,13 +74,13 @@ and it is an isomorphism of algebras. The left matrix is $L^{\mathrm{axf}}(\tild
 $$
 \mathbb{B}_L=\{L^{\mathrm{axf}}(\tilde Q):\tilde Q\in\mathbb{B}\}.
 $$
-It is a four-dimensional complex subalgebra of $M_4(\mathbb{C})$, isomorphic to $\mathbb{B}$, and its unit is $\mathrm I_4$. The map $\tilde Q\mapsto L^{\mathrm{axf}}(\tilde Q)$ is injective, so the four matrices $L_\mu^{\mathrm{axf}}$ are a basis of it.
+It is a four-dimensional complex subalgebra of $M_4(\mathbb{C})$, isomorphic to $\mathbb{B}$, and its unit is $\mathrm I_4$. The map $\tilde Q\mapsto L^{\mathrm{axf}}(\tilde Q)$ is injective, so the four matrices $L^{\mathrm{axf}}_{e_\mu}$ are a basis of it.
 
 **The right copy.** The right multiplications fill
 $$
 \mathbb{B}_R=\{R^{\mathrm{axf}}(\tilde P):\tilde P\in\mathbb{B}\}.
 $$
-It is a four-dimensional complex subalgebra, isomorphic to the opposite algebra $\mathbb{B}^{\mathrm{opp}}$, the same vector space with the reversed product, and its unit is $\mathrm I_4$. The map $\tilde P\mapsto R^{\mathrm{axf}}(\tilde P)$ is injective, so the four matrices $R_\nu^{\mathrm{axf}}$ are a basis of it.
+It is a four-dimensional complex subalgebra, isomorphic to the opposite algebra $\mathbb{B}^{\mathrm{opp}}$, the same vector space with the reversed product, and its unit is $\mathrm I_4$. The map $\tilde P\mapsto R^{\mathrm{axf}}(\tilde P)$ is injective, so the four matrices $R^{\mathrm{axf}}_{e_\nu}$ are a basis of it.
 
 **The two copies are different.** $\mathbb{B}_L$ and $\mathbb{B}_R$ are two different four-dimensional subspaces of $M_4(\mathbb{C})$, not two bases of one space. The axis-free basis displays them as the two families of matrices below.
 
@@ -90,11 +90,11 @@ It is a four-dimensional complex subalgebra, isomorphic to the opposite algebra 
 $$
 L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)(X)=\tilde QX\tilde P.
 $$
-The two factors commute, so $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)=R^{\mathrm{axf}}(\tilde P)L^{\mathrm{axf}}(\tilde Q)$ as well. The pair $(\tilde Q,\tilde P)$ has eight complex parameters, and the scaling $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$ leaves the operator unchanged, so the image has seven effective parameters. The image is a cone, not a subspace. It is exactly the set of matrices whose coefficient matrix $c(M)$, the matrix of coordinates in the basis $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, has rank at most one, by the criterion of §*The Criterion for a Single Product*.
+The two factors commute, so $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)=R^{\mathrm{axf}}(\tilde P)L^{\mathrm{axf}}(\tilde Q)$ as well. The pair $(\tilde Q,\tilde P)$ has eight complex parameters, and the scaling $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$ leaves the operator unchanged, so the image has seven effective parameters. The image is a cone, not a subspace. It is exactly the set of matrices whose coefficient matrix $c(M)$, the matrix of coordinates in the basis $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$, has rank at most one, by the criterion of §*The Criterion for a Single Product*.
 
 ### The Table of Levels
 
-**The table.** The three levels and the two one-sided copies are collected in one table. The coefficient matrix $c(M)$ is the matrix of coordinates of $M$ in the sixteen-dimensional basis $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$; its formula is in §*The Coefficient Matrix $c(M)$*. The intersection of the one-sided copies is the scalar line $\mathbb{C}\cdot\mathrm I_4$, by §*The Intersection of the Two Copies*.
+**The table.** The three levels and the two one-sided copies are collected in one table. The coefficient matrix $c(M)$ is the matrix of coordinates of $M$ in the sixteen-dimensional basis $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$; its formula is in §*The Coefficient Matrix $c(M)$*. The intersection of the one-sided copies is the scalar line $\mathbb{C}\cdot\mathrm I_4$, by §*The Intersection of the Two Copies*.
 
 | Level | Operator | Subset of $M_4(\mathbb{C})$ | Complex dimension | Test |
 |---|---|---|---|---|
@@ -134,24 +134,24 @@ with the eigenvalues $Q_t\pm iB$, each twice, where $B^2=Q_x^2+Q_y^2+Q_z^2$; see
 
 ### The Four Left Matrices
 
-**The display.** With $L_\mu^{\mathrm{axf}}=L^{\mathrm{axf}}(e_\mu)$,
+**The display.** With $L^{\mathrm{axf}}_{e_\mu}=L^{\mathrm{axf}}(e_\mu)$,
 $$
-L_t^{\mathrm{axf}}=\mathrm I_4,\qquad
-L_x^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+L^{\mathrm{axf}}_{e_t}=\mathrm I_4,\qquad
+L^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
 $$
 $$
-L_y^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_z^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+L^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 Each is a real signed permutation matrix. Each has determinant $1$; the identity has trace $4$, and the three vector matrices have trace $0$. The four are linearly independent and span $\mathbb{B}_L$: they are a basis of the left copy.
 
 **The products.** The left matrices follow the order of the units:
 $$
-(L_x^{\mathrm{axf}})^2=(L_y^{\mathrm{axf}})^2=(L_z^{\mathrm{axf}})^2=-\mathrm I_4,\qquad
-L_x^{\mathrm{axf}}L_y^{\mathrm{axf}}=L_z^{\mathrm{axf}},\qquad
-L_y^{\mathrm{axf}}L_x^{\mathrm{axf}}=-L_z^{\mathrm{axf}}.
+(L^{\mathrm{axf}}_{\vec e_x})^2=(L^{\mathrm{axf}}_{\vec e_y})^2=(L^{\mathrm{axf}}_{\vec e_z})^2=-\mathrm I_4,\qquad
+L^{\mathrm{axf}}_{\vec e_x}L^{\mathrm{axf}}_{\vec e_y}=L^{\mathrm{axf}}_{\vec e_z},\qquad
+L^{\mathrm{axf}}_{\vec e_y}L^{\mathrm{axf}}_{\vec e_x}=-L^{\mathrm{axf}}_{\vec e_z}.
 $$
-The set of the four matrices together with their negatives is the quaternion group of order eight. A complex linear combination need not be invertible: $L_x^{\mathrm{axf}}+iL_z^{\mathrm{axf}}$ has rank $2$, for example. The algebra is simple and has zero divisors, and the invertibility of each basis matrix does not extend to the span.
+The set of the four matrices together with their negatives is the quaternion group of order eight. A complex linear combination need not be invertible: $L^{\mathrm{axf}}_{\vec e_x}+iL^{\mathrm{axf}}_{\vec e_z}$ has rank $2$, for example. The algebra is simple and has zero divisors, and the invertibility of each basis matrix does not extend to the span.
 
 ### The Right Copy
 
@@ -177,20 +177,20 @@ The invariants are the same: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{
 
 ### The Four Right Matrices
 
-**The display.** With $R_\nu^{\mathrm{axf}}=R^{\mathrm{axf}}(e_\nu)$,
+**The display.** With $R^{\mathrm{axf}}_{e_\nu}=R^{\mathrm{axf}}(e_\nu)$,
 $$
-R_t^{\mathrm{axf}}=\mathrm I_4,\qquad
-R_x^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+R^{\mathrm{axf}}_{e_t}=\mathrm I_4,\qquad
+R^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
 $$
 $$
-R_y^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-R_z^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+R^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+R^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 Each is a real signed permutation matrix, of determinant $1$ and trace $4\delta_{\nu t}$; the four are a basis of $\mathbb{B}_R$. The right products reverse the order:
 $$
-(R_x^{\mathrm{axf}})^2=(R_y^{\mathrm{axf}})^2=(R_z^{\mathrm{axf}})^2=-\mathrm I_4,\qquad
-R_x^{\mathrm{axf}}R_y^{\mathrm{axf}}=-R_z^{\mathrm{axf}},\qquad
-R_y^{\mathrm{axf}}R_x^{\mathrm{axf}}=R_z^{\mathrm{axf}}.
+(R^{\mathrm{axf}}_{\vec e_x})^2=(R^{\mathrm{axf}}_{\vec e_y})^2=(R^{\mathrm{axf}}_{\vec e_z})^2=-\mathrm I_4,\qquad
+R^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_y}=-R^{\mathrm{axf}}_{\vec e_z},\qquad
+R^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_x}=R^{\mathrm{axf}}_{\vec e_z}.
 $$
 The set of the four together with their negatives is again the quaternion group.
 
@@ -228,73 +228,73 @@ $$
 
 **The mutual commutants.** The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy. The inclusion $\mathbb{B}_L\subseteq\mathbb{B}_R'$ is the commutation law. The reverse inclusion is the double commutant theorem: the commutant of $\mathbb{B}_L$ is four-dimensional and contains $\mathbb{B}_R$, so the two coincide. The intersection is the centre of each copy.
 
-## The Sixteen Matrices $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$
+## The Sixteen Matrices $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$
 
 ### The Table in Four Families
 
 **Definition.** For $\mu,\nu\in\{t,x,y,z\}$ put
 $$
-L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}},\qquad
-L_\mu^{\mathrm{axf}}=L^{\mathrm{axf}}(e_\mu),\qquad
-R_\nu^{\mathrm{axf}}=R^{\mathrm{axf}}(e_\nu).
+L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu},\qquad
+L^{\mathrm{axf}}_{e_\mu}=L^{\mathrm{axf}}(e_\mu),\qquad
+R^{\mathrm{axf}}_{e_\nu}=R^{\mathrm{axf}}(e_\nu).
 $$
-The matrix $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ is the matrix of $X\mapsto e_\mu Xe_\nu$. A general two-sided operator is the linear combination
+The matrix $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ is the matrix of $X\mapsto e_\mu Xe_\nu$. A general two-sided operator is the linear combination
 $$
-L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)=\sum_{\mu,\nu}Q_\mu P_\nu\,L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}.
+L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)=\sum_{\mu,\nu}Q_\mu P_\nu\,L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}.
 $$
 
 **The table.** The sixteen matrices fall into four families.
 
-| $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ | $\nu=t$ | $\nu=x$ | $\nu=y$ | $\nu=z$ |
+| $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ | $\nu=t$ | $\nu=x$ | $\nu=y$ | $\nu=z$ |
 |---|---|---|---|---|
-| $\mu=t$ | $L_tR_t^{\mathrm{axf}}=\mathrm I_4$ | $L_tR_x^{\mathrm{axf}}=R_x^{\mathrm{axf}}$ | $L_tR_y^{\mathrm{axf}}=R_y^{\mathrm{axf}}$ | $L_tR_z^{\mathrm{axf}}=R_z^{\mathrm{axf}}$ |
-| $\mu=x$ | $L_xR_t^{\mathrm{axf}}=L_x^{\mathrm{axf}}$ | $L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}$ | $L_x^{\mathrm{axf}}R_y^{\mathrm{axf}}$ | $L_x^{\mathrm{axf}}R_z^{\mathrm{axf}}$ |
-| $\mu=y$ | $L_yR_t^{\mathrm{axf}}=L_y^{\mathrm{axf}}$ | $L_y^{\mathrm{axf}}R_x^{\mathrm{axf}}$ | $L_y^{\mathrm{axf}}R_y^{\mathrm{axf}}$ | $L_y^{\mathrm{axf}}R_z^{\mathrm{axf}}$ |
-| $\mu=z$ | $L_zR_t^{\mathrm{axf}}=L_z^{\mathrm{axf}}$ | $L_z^{\mathrm{axf}}R_x^{\mathrm{axf}}$ | $L_z^{\mathrm{axf}}R_y^{\mathrm{axf}}$ | $L_z^{\mathrm{axf}}R_z^{\mathrm{axf}}$ |
+| $\mu=t$ | $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}=\mathrm I_4$ | $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{\vec e_x}=R^{\mathrm{axf}}_{\vec e_x}$ | $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{\vec e_y}=R^{\mathrm{axf}}_{\vec e_y}$ | $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{\vec e_z}=R^{\mathrm{axf}}_{\vec e_z}$ |
+| $\mu=x$ | $L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{e_t}=L^{\mathrm{axf}}_{\vec e_x}$ | $L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}$ | $L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_y}$ | $L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_z}$ |
+| $\mu=y$ | $L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{e_t}=L^{\mathrm{axf}}_{\vec e_y}$ | $L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_x}$ | $L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_y}$ | $L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_z}$ |
+| $\mu=z$ | $L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{e_t}=L^{\mathrm{axf}}_{\vec e_z}$ | $L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{\vec e_x}$ | $L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{\vec e_y}$ | $L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{\vec e_z}$ |
 
-The first row is the right family, the first column the left family, the diagonal entry $L_tR_t^{\mathrm{axf}}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde P}$*.
+The first row is the right family, the first column the left family, the diagonal entry $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde P}$*.
 
 ### The Sixteen, Entry by Entry
 
 **The display.** In the axis-free basis, grouped by the left index $\mu$,
 $$
-L_tR_t^{\mathrm{axf}}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_tR_x^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
 $$
 $$
-L_tR_y^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-L_tR_z^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},
+L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},
 $$
 $$
-L_xR_t^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
 $$
 $$
-L_x^{\mathrm{axf}}R_y^{\mathrm{axf}}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad
-L_x^{\mathrm{axf}}R_z^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},
+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},
 $$
 $$
-L_yR_t^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_y^{\mathrm{axf}}R_x^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{e_t}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-L_y^{\mathrm{axf}}R_y^{\mathrm{axf}}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
-L_y^{\mathrm{axf}}R_z^{\mathrm{axf}}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},
+L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},
 $$
 $$
-L_zR_t^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad
-L_z^{\mathrm{axf}}R_x^{\mathrm{axf}}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
+L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{e_t}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
 $$
 $$
-L_z^{\mathrm{axf}}R_y^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
-L_z^{\mathrm{axf}}R_z^{\mathrm{axf}}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
-**The pattern.** Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$. No entry is imaginary: the axis-free basis makes the sixteen products real. The first row and the first column are the four right and the four left matrices; the nine remaining entries are the genuinely two-sided cells. A cell with exactly one index equal to $t$ is skew-symmetric; a cell with both indices equal to $t$ or with neither equal to $t$ is symmetric. The display is the matrix form of the sixteen products $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ of *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, read in the axis-free basis.
+**The pattern.** Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$. No entry is imaginary: the axis-free basis makes the sixteen products real. The first row and the first column are the four right and the four left matrices; the nine remaining entries are the genuinely two-sided cells. A cell with exactly one index equal to $t$ is skew-symmetric; a cell with both indices equal to $t$ or with neither equal to $t$ is symmetric. The display is the matrix form of the sixteen products $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ of *Matrix Representations Conventions*, §*The 4×4 Regular Representation*, read in the axis-free basis.
 
 **One entry.** The table gives, for example,
 $$
-L_x^{\mathrm{axf}}R_y^{\mathrm{axf}}=
+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_y}=
 \begin{pmatrix}
 0&0&0&1\\
 0&0&-1&0\\
@@ -312,16 +312,16 @@ The first column is the coordinate column of $\vec e_x\vec e_y=\vec e_z$, and th
 
 **Composition.** The product of two basis matrices is a signed basis matrix:
 $$
-L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}L_{\mu^{-1}\rho}R_{\sigma\nu^{-1}}^{\mathrm{axf}}
-=L_{e_\mu e_\rho}R_{\ e_\sigma e_\nu}^{\mathrm{axf}}
-=\varepsilon\varepsilon'\,L_{\mu'}^{\mathrm{axf}}R_{\nu'}^{\mathrm{axf}},
+L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}L^{\mathrm{axf}}_{e_{\mu^{-1}}e_\rho}R^{\mathrm{axf}}_{e_\sigma e_{\nu^{-1}}}
+=L^{\mathrm{axf}}_{e_\mu e_\rho}R^{\mathrm{axf}}_{e_\sigma e_\nu}
+=\varepsilon\varepsilon'\,L^{\mathrm{axf}}_{e_{\mu'}}R^{\mathrm{axf}}_{e_{\nu'}},
 $$
 where $e_\mu e_\rho=\varepsilon e_{\mu'}$ and $e_\sigma e_\nu=\varepsilon' e_{\nu'}$, with $\varepsilon,\varepsilon'\in\{\pm1\}$. For general parameters,
 $$
 L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)L^{\mathrm{axf}}(\tilde R)R^{\mathrm{axf}}(\tilde S)
 =L^{\mathrm{axf}}(\tilde Q\tilde R)R^{\mathrm{axf}}(\ \tilde S\tilde P).
 $$
-The sixteen are closed under multiplication up to sign, with unit $L_tR_t^{\mathrm{axf}}=\mathrm I_4$; they are not a group, because $-L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ is not one of the sixteen. The full product family contains the signs, since $-L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}=L_{-\tilde e_\mu}R_{\tilde e_\nu}^{\mathrm{axf}}$.
+The sixteen are closed under multiplication up to sign, with unit $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}=\mathrm I_4$; they are not a group, because $-L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ is not one of the sixteen. The full product family contains the signs, since $-L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}=L^{\mathrm{axf}}_{-\tilde e_\mu}R^{\mathrm{axf}}_{\tilde e_\nu}$.
 
 **Trace and determinant.** For $\tilde Q,\tilde P$ with $\langle\tilde Q\rangle_{\natural}\langle\tilde P\rangle_{\natural}\neq0$,
 $$
@@ -332,12 +332,12 @@ $$
 \bigl(L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)\bigr)^{-1}
 =L^{\mathrm{axf}}(\tilde Q^{-1})R^{\mathrm{axf}}(\tilde P^{-1}).
 $$
-*Proof.* The trace is bilinear in the pair, and only $L_tR_t^{\mathrm{axf}}$ has nonzero trace, equal to $4$; hence the trace is $4Q_tP_t$. The determinant is multiplicative, and $\det L^{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$ and $\det R^{\mathrm{axf}}(\tilde P)=\langle\tilde P\rangle_{\natural}^2$. The inverse is the inverse of each factor.
+*Proof.* The trace is bilinear in the pair, and only $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}$ has nonzero trace, equal to $4$; hence the trace is $4Q_tP_t$. The determinant is multiplicative, and $\det L^{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$ and $\det R^{\mathrm{axf}}(\tilde P)=\langle\tilde P\rangle_{\natural}^2$. The inverse is the inverse of each factor.
 
-**The basis values.** Every basis matrix is invertible, of determinant $1$ and rank $4$; the trace is $4$ only for $L_tR_t^{\mathrm{axf}}$ and $0$ for the other fifteen. The basis consists of units, but its span does not: for example
+**The basis values.** Every basis matrix is invertible, of determinant $1$ and rank $4$; the trace is $4$ only for $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}$ and $0$ for the other fifteen. The basis consists of units, but its span does not: for example
 $$
-L_tR_t^{\mathrm{axf}}+L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}
-=\mathrm I_4+L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}
+L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}
+=\mathrm I_4+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}
 =\operatorname{diag}(0,0,2,2)
 $$
 has rank two. A basis of invertible matrices does not make the algebra a division algebra; the algebra is $M_4(\mathbb{C})$ and has many zero divisors.
@@ -346,25 +346,25 @@ has rank two. A basis of invertible matrices does not make the algebra a divisio
 
 **Theorem (orthogonality).** For the Hilbert–Schmidt inner product $\langle A,B\rangle_{\mathrm{HS}}=\operatorname{Tr}(A^{\dagger}B)$,
 $$
-\operatorname{Tr}\bigl((L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}})^{\dagger}L_{\mu^{-1}\rho}R_{\sigma\nu^{-1}}^{\mathrm{axf}}\bigr)
+\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\dagger}L^{\mathrm{axf}}_{e_{\mu^{-1}}e_\rho}R^{\mathrm{axf}}_{e_\sigma e_{\nu^{-1}}}\bigr)
 =4\,\delta_{\mu\rho}\,\delta_{\nu\sigma}.
 $$
 The sixteen basis matrices are orthogonal, each of Hilbert–Schmidt norm $2$. Because the matrices are real, the dagger is the transpose.
 
 *Proof.* Transposition reverses the two indices through the inverse units:
 $$
-(L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}})^{\mathsf T}=L_{\mu^{-1}}R_{\nu^{-1}}^{\mathrm{axf}},
+(L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}=L^{\mathrm{axf}}_{e_{\mu^{-1}}}R^{\mathrm{axf}}_{e_{\nu^{-1}}},
 $$
 where $e_\mu^{-1}=e_t$ for $\mu=t$ and $e_\mu^{-1}=-e_\mu$ for $\mu=x,y,z$. The composition law then gives
 $$
-(L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}})^{\mathsf T}L_{\mu^{-1}\rho}R_{\ \sigma\nu^{-1}}^{\mathrm{axf}}
-=\varepsilon\varepsilon'\,L_{\mu'}^{\mathrm{axf}}R_{\nu'}^{\mathrm{axf}}.
+(L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}L^{\mathrm{axf}}_{e_{\mu^{-1}}e_\rho}R^{\mathrm{axf}}_{e_\sigma e_{\nu^{-1}}}
+=\varepsilon\varepsilon'\,L^{\mathrm{axf}}_{e_{\mu'}}R^{\mathrm{axf}}_{e_{\nu'}}.
 $$
-The trace of $L_{\mu'}^{\mathrm{axf}}R_{\nu'}^{\mathrm{axf}}$ is $4$ exactly when $\mu'=\nu'=t$ and $0$ otherwise. The condition $\mu^{-1}\rho=t$ is $\rho=\mu$, and the condition $\sigma\nu^{-1}=t$ is $\sigma=\nu$; in that case the two signs are $+1$. Hence the inner product is $4$ exactly when $\mu=\rho$ and $\nu=\sigma$, and $0$ otherwise.
+The trace of $L^{\mathrm{axf}}_{e_{\mu'}}R^{\mathrm{axf}}_{e_{\nu'}}$ is $4$ exactly when $\mu'=\nu'=t$ and $0$ otherwise. The condition $\mu^{-1}\rho=t$ is $\rho=\mu$, and the condition $\sigma\nu^{-1}=t$ is $\sigma=\nu$; in that case the two signs are $+1$. Hence the inner product is $4$ exactly when $\mu=\rho$ and $\nu=\sigma$, and $0$ otherwise.
 
-**The coefficient formula.** If $M=\sum c_{\mu\nu}L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, then orthogonality gives
+**The coefficient formula.** If $M=\sum c_{\mu\nu}L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$, then orthogonality gives
 $$
-c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}})^{\mathsf T}M\bigr).
+c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}M\bigr).
 $$
 The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself. It is the coordinate chart used in §*The Cone of Products*.
 
@@ -451,12 +451,12 @@ of rank one, while each one-sided factor has rank two.
 
 **Definition.** By §*Orthogonality*, every $M\in M_4(\mathbb{C})$ has a unique expansion
 $$
-M=\sum_{\mu,\nu}c_{\mu\nu}L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}.
+M=\sum_{\mu,\nu}c_{\mu\nu}L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}.
 $$
 The $4\times4$ matrix $c(M)=(c_{\mu\nu})$ is the **coefficient matrix** of $M$. Orthogonality gives it directly:
 $$
 c(M)_{\mu\nu}
-=\tfrac14\operatorname{Tr}\bigl((L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}})^{\mathsf T}M\bigr).
+=\tfrac14\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}M\bigr).
 $$
 The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself.
 
@@ -464,11 +464,11 @@ The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself
 
 **The expansion of a product.** If $M=L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$, then
 $$
-M=\sum_{\mu,\nu}Q_\mu P_\nu\,L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}},
+M=\sum_{\mu,\nu}Q_\mu P_\nu\,L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu},
 $$
 so $c(M)=[Q][P]^{\mathsf T}$. The coefficient matrix of a product is a rank-one matrix, and every rank-one matrix arises this way. This is the source of the criterion of §*The Criterion for a Single Product*.
 
-**The coefficient matrix is not the matrix.** The notation is easy to confuse and the two objects must be kept apart. The matrix $M$ is the $4\times4$ matrix of an endomorphism in the axis-free basis; the coefficient matrix $c(M)$ is the $4\times4$ array of its coordinates in the sixteen-dimensional basis $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$. The map $c$ is linear and bijective, not an algebra map.
+**The coefficient matrix is not the matrix.** The notation is easy to confuse and the two objects must be kept apart. The matrix $M$ is the $4\times4$ matrix of an endomorphism in the axis-free basis; the coefficient matrix $c(M)$ is the $4\times4$ array of its coordinates in the sixteen-dimensional basis $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$. The map $c$ is linear and bijective, not an algebra map.
 
 ### The Factorization Map
 
@@ -555,7 +555,7 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 
 *Proof.* The first equivalence is §*The Coefficient Matrix $c(M)$*. The second is the rank-one criterion: a matrix is $[Q][P]^{\mathsf T}$ exactly when it has rank at most one, and the zero matrix is the case $Q=0$ or $P=0$.
 
-**The cone.** The product set is the closed algebraic cone $\{M:\operatorname{rank}c(M)\le1\}$, cut out by the minors of order two of $c(M)$. Its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension six; the cone has complex dimension seven in the complex sixteen-dimensional algebra. It is closed under multiplication and under inverses on its invertible part, and it is not a subspace: $L_tR_t^{\mathrm{axf}}+L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}$ is not a product, because its coefficient matrix is $\operatorname{diag}(1,1,0,0)$ of rank two.
+**The cone.** The product set is the closed algebraic cone $\{M:\operatorname{rank}c(M)\le1\}$, cut out by the minors of order two of $c(M)$. Its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension six; the cone has complex dimension seven in the complex sixteen-dimensional algebra. It is closed under multiplication and under inverses on its invertible part, and it is not a subspace: $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}$ is not a product, because its coefficient matrix is $\operatorname{diag}(1,1,0,0)$ of rank two.
 
 **The parametrisation.** The map $(\tilde Q,\tilde P)\mapsto L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$ is bilinear and surjective onto the cone. Its fibre over a nonzero product is the scaling orbit $(\lambda\tilde Q,\lambda^{-1}\tilde P)$ of §*The Factorization Map*; the cone has complex dimension $8-1=7$. The kernel and the image of the Hermitian sandwich are a different question, treated in Part V.
 
@@ -563,18 +563,18 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 
 **The two ranks.** The matrix rank and the length are different invariants of the same matrix. The matrix rank of a product lies in $\{0,1,2,4\}$ by §*The Rank of a Product*, and it is four exactly when both parameters are units. The length is the coefficient rank, which can be four while the matrix rank is one. Neither invariant determines the other.
 
-**The examples.** The matrix unit $E_{11}$ has matrix rank one and coefficient rank four; the product $L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(e_t+e_y)$ has matrix rank four and coefficient rank one; the product $L^{\mathrm{axf}}(e_t+i\vec e_z)R^{\mathrm{axf}}(e_t+i\vec e_z)$ has matrix rank one and coefficient rank one; the matrix $L_tR_t^{\mathrm{axf}}+L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}$ has matrix rank two and coefficient rank two.
+**The examples.** The matrix unit $E_{11}$ has matrix rank one and coefficient rank four; the product $L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(e_t+e_y)$ has matrix rank four and coefficient rank one; the product $L^{\mathrm{axf}}(e_t+i\vec e_z)R^{\mathrm{axf}}(e_t+i\vec e_z)$ has matrix rank one and coefficient rank one; the matrix $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}$ has matrix rank two and coefficient rank two.
 
 | $M$ | $\operatorname{rank}M$ | $\operatorname{rank}c(M)$ | $\ell(M)$ | decomposition |
 |---|---|---|---|---|
 | $L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(e_t+e_y)$ | $4$ | $1$ | $1$ | by construction |
 | $L^{\mathrm{axf}}(e_t+i\vec e_z)R^{\mathrm{axf}}(e_t+i\vec e_z)$ | $1$ | $1$ | $1$ | by construction |
 | $R^{\mathrm{axf}}(e_t+i\vec e_z)$ | $2$ | $1$ | $1$ | $L^{\mathrm{axf}}(e_t)R^{\mathrm{axf}}(e_t+i\vec e_z)$ |
-| $L_tR_t^{\mathrm{axf}}+L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}$ | $2$ | $2$ | $2$ | $L_tR_t^{\mathrm{axf}}+L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}$ |
-| $E_{11}$ | $1$ | $4$ | $4$ | $\tfrac14(L_tR_t^{\mathrm{axf}}-L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}-L_y^{\mathrm{axf}}R_y^{\mathrm{axf}}-L_z^{\mathrm{axf}}R_z^{\mathrm{axf}})$ |
+| $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}$ | $2$ | $2$ | $2$ | $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}$ |
+| $E_{11}$ | $1$ | $4$ | $4$ | $\tfrac14(L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}-L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}-L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_y}-L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{\vec e_z})$ |
 | generic $M$ | $4$ | $4$ | $4$ | four terms, none removable |
 
-**How to decide.** Compute the sixteen numbers $\tfrac14\operatorname{Tr}((L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}})^{\mathsf T}M)$ and form $c$. If $\operatorname{rank}c=1$, take $[Q]$ to be a nonzero column of $c$; choose a nonzero entry $Q_i$ of that column and take $[P]^{\mathsf T}$ to be the $i$-th row of $c$ divided by $Q_i$. If $\operatorname{rank}c=r>1$, a rank factorization $c=UV$ gives the $r$ terms. No test on $\operatorname{rank}M$ alone decides the question.
+**How to decide.** Compute the sixteen numbers $\tfrac14\operatorname{Tr}((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}M)$ and form $c$. If $\operatorname{rank}c=1$, take $[Q]$ to be a nonzero column of $c$; choose a nonzero entry $Q_i$ of that column and take $[P]^{\mathsf T}$ to be the $i$-th row of $c$ divided by $Q_i$. If $\operatorname{rank}c=r>1$, a rank factorization $c=UV$ gives the $r$ terms. No test on $\operatorname{rank}M$ alone decides the question.
 
 ### The Two One-Sided Boundaries
 
@@ -604,7 +604,7 @@ c(E_{11})=\frac14
 $$
 It has rank four, so $E_{11}$ is not a single product. The expansion is
 $$
-E_{11}=\frac14\bigl(L_tR_t^{\mathrm{axf}}-L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}-L_y^{\mathrm{axf}}R_y^{\mathrm{axf}}-L_z^{\mathrm{axf}}R_z^{\mathrm{axf}}\bigr),
+E_{11}=\frac14\bigl(L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}-L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}-L^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_y}-L^{\mathrm{axf}}_{\vec e_z}R^{\mathrm{axf}}_{\vec e_z}\bigr),
 $$
 which is a sum of four products. The four coefficient terms are the four diagonal entries of $c(E_{11})$, and no sum of fewer than four rank-one matrices can produce $c(E_{11})$.
 
@@ -740,7 +740,7 @@ $$
 \tilde QX\bigl(e_t-\tilde P\tilde Q\bigr)Y\tilde P=0
 \quad\text{for all }X,Y.
 $$
-Put $\tilde R=e_t-\tilde P\tilde Q$. If $\tilde R\neq0$, the products $X\tilde RY$ span the two-sided ideal generated by $\tilde R$, which is the whole algebra because $\mathbb{B}$ is simple. Then $\tilde Q\tilde Z\tilde P=0$ for all $\tilde Z$. The map $(\tilde Q,\tilde P)\mapsto L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$ is bilinear and sends the sixteen basis pairs to the basis $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, so it is injective: $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)=0$ forces $\tilde Q=0$ or $\tilde P=0$, against the nonzero hypothesis. Hence $\tilde R=0$ and $\tilde P\tilde Q=e_t$. The converse is immediate.
+Put $\tilde R=e_t-\tilde P\tilde Q$. If $\tilde R\neq0$, the products $X\tilde RY$ span the two-sided ideal generated by $\tilde R$, which is the whole algebra because $\mathbb{B}$ is simple. Then $\tilde Q\tilde Z\tilde P=0$ for all $\tilde Z$. The map $(\tilde Q,\tilde P)\mapsto L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$ is bilinear and sends the sixteen basis pairs to the basis $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$, so it is injective: $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)=0$ forces $\tilde Q=0$ or $\tilde P=0$, against the nonzero hypothesis. Hence $\tilde R=0$ and $\tilde P\tilde Q=e_t$. The converse is immediate.
 
 ### No Pin Group
 
@@ -769,7 +769,7 @@ $$
 \tilde Q\otimes\tilde P^{\mathrm{opp}}
 \longmapsto L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)
 $$
-is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ map to the sixteen matrices $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, which are a basis; the isomorphism is the generation theorem in algebra form.
+is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ map to the sixteen matrices $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$, which are a basis; the isomorphism is the generation theorem in algebra form.
 
 ### The Pure Tensors
 
@@ -777,7 +777,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 
 ### The Real Slice
 
-**The real form.** All sixteen matrices $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ are real, and their real span is $M_4(\mathbb{R})$. For real parameters $\tilde Q,\tilde P$ with real coefficients, the operator $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$ is real, and its coefficient matrix is real of rank at most one. The real products form the real Segre cone, of real dimension seven, inside the complex cone. The real slice is the intersection of the complex cone with $M_4(\mathbb{R})$, and every real matrix in it has a real factorisation: a real rank-one coefficient matrix has a real nonzero column and a real nonzero row.
+**The real form.** All sixteen matrices $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ are real, and their real span is $M_4(\mathbb{R})$. For real parameters $\tilde Q,\tilde P$ with real coefficients, the operator $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$ is real, and its coefficient matrix is real of rank at most one. The real products form the real Segre cone, of real dimension seven, inside the complex cone. The real slice is the intersection of the complex cone with $M_4(\mathbb{R})$, and every real matrix in it has a real factorisation: a real rank-one coefficient matrix has a real nonzero column and a real nonzero row.
 
 **The length over the reals.** For a real matrix $M$, the coefficient matrix $c(M)$ is real, and its rank over $\mathbb{R}$ equals its rank over $\mathbb{C}$. Hence the least number of real products summing to $M$ equals the least number of complex products. The length is the same over the two fields.
 
@@ -796,7 +796,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 **It does not give.**
 - Additivity: the set is not a subspace, and the sum of two products is generally not a product.
 - Universality: not every matrix is a single product; four products may be needed, and four are always enough.
-- A division algebra: the basis matrices are invertible, but the span has zero divisors, for example $L_tR_t^{\mathrm{axf}}+L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}$ of rank two.
+- A division algebra: the basis matrices are invertible, but the span has zero divisors, for example $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}$ of rank two.
 - A pin group: the quadratic form $\operatorname{Sc}(\tilde Q^2)$ is not multiplicative, and the isometry group of the family is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, with no nonzero skew-adjoint sector.
 
 ## Open Questions
@@ -814,9 +814,9 @@ The operators on the biquaternion algebra sit at three levels. Every endomorphis
 
 The left matrix is the structure-constant display with $Q_t$ on the diagonal and the three vector coefficients in the off-diagonal positions; the right matrix differs by the signs of the stitch $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$, with $D=\operatorname{diag}(1,-1,-1,-1)$. The four left matrices and the four right matrices are real signed permutations, each family a basis of its copy.
 
-The sixteen products $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ are real signed permutations and an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. They compose up to sign with the second slot reversed, their trace is $4Q_tP_t$, and their determinant is $\langle Q\rangle_{\natural}^2\langle P\rangle_{\natural}^2$. Every basis matrix is a unit of determinant one and rank four; the span is not a division algebra, since $L_tR_t^{\mathrm{axf}}+L_x^{\mathrm{axf}}R_x^{\mathrm{axf}}=\operatorname{diag}(0,0,2,2)$ has rank two. The first row of the table is the right family, the first column the left family, and the nine remaining cells are genuinely two-sided.
+The sixteen products $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ are real signed permutations and an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. They compose up to sign with the second slot reversed, their trace is $4Q_tP_t$, and their determinant is $\langle Q\rangle_{\natural}^2\langle P\rangle_{\natural}^2$. Every basis matrix is a unit of determinant one and rank four; the span is not a division algebra, since $L^{\mathrm{axf}}_{e_t}R^{\mathrm{axf}}_{e_t}+L^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_x}=\operatorname{diag}(0,0,2,2)$ has rank two. The first row of the table is the right family, the first column the left family, and the nine remaining cells are genuinely two-sided.
 
-The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dimensional basis $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, computed by $c_{\mu\nu}=\frac14\operatorname{Tr}((L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}})^{\mathsf T}M)$. It is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not the matrix $M$. The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition $\operatorname{rank}c(M)\le1$.
+The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dimensional basis $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$, computed by $c_{\mu\nu}=\frac14\operatorname{Tr}((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}M)$. It is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not the matrix $M$. The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition $\operatorname{rank}c(M)\le1$.
 
 The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for a unit, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are units, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(e_t+e_y)$ has matrix rank four and length one. All sixteen units have length four. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, which has the same rank, and a change of the display alone leaves $c$ unchanged, so the length belongs to the operator and not to the array that displays it.
 
@@ -835,11 +835,11 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $L^{\mathrm{axf}}(\tilde Q)$ | left matrix, $X\mapsto\tilde QX$ |
 | $R^{\mathrm{axf}}(\tilde Q)$ | right matrix, $X\mapsto X\tilde Q$ |
 | $\mathbb{B}_L,\mathbb{B}_R$ | the left and right copies in $M_4(\mathbb{C})$ |
-| $L_\mu^{\mathrm{axf}},R_\nu^{\mathrm{axf}}$ | the four basis matrices of each copy |
+| $L^{\mathrm{axf}}_{e_\mu},R^{\mathrm{axf}}_{e_\nu}$ | the four basis matrices of each copy |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | the switch, $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ |
 | $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$ | two-sided operator, $X\mapsto\tilde QX\tilde P$ |
-| $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ | the sixteen basis matrices |
-| $c(M)$ | coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}})^{\mathsf T}M)$ |
+| $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ | the sixteen basis matrices |
+| $c(M)$ | coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}M)$ |
 | $\ell(M)$ | length, the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $\Phi(\tilde Q,\tilde P)=L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$ | factorisation map |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the squared vector part |

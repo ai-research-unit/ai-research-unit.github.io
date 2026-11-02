@@ -114,16 +114,16 @@ $$
 \;}.
 $$
 
-Each copy of $\mathbb{H}^{\times}$ is the product of the abelian factor $\mathbb{R}_{>0}$ and the compact factor $SU(2)$, so its irreducible finite-dimensional continuous representations are the tensor products $\chi \otimes \sigma$ of a continuous character $\chi(a) = a^{\lambda}$ of $\mathbb{R}_{>0}$, $\lambda \in \mathbb{C}$, and an irreducible representation $\sigma = \mathrm{Sym}^{n}(\mathbb{C}^2)$ of $SU(2)$ of spin $n/2$. The irreducible finite-dimensional continuous representations of the unit group are therefore indexed by a pair of a character exponent and a spin for each factor, with
+Each copy of $\mathbb{H}^{\times}$ is the product of the abelian factor $\mathbb{R}_{>0}$ and the compact factor $SU(2)$, so its irreducible finite-dimensional continuous representations are the tensor products $\chi \otimes \sigma$ of a continuous character $\chi(a) = a^{\lambda}$ of $\mathbb{R}_{>0}$, $\lambda \in \mathbb{C}$, and an irreducible representation $\sigma = \mathrm{sym}^{n}(\mathbb{C}^2)$ of $SU(2)$ of spin $n/2$. The irreducible finite-dimensional continuous representations of the unit group are therefore indexed by a pair of a character exponent and a spin for each factor, with
 
 $$
-\rho = \left(\chi_{\lambda_1} \otimes \mathrm{Sym}^{n_1}(\mathbb{C}^2)\right) \boxtimes \left(\chi_{\lambda_2} \otimes \mathrm{Sym}^{n_2}(\mathbb{C}^2)\right) .
+\rho = \left(\chi_{\lambda_1} \otimes \mathrm{sym}^{n_1}(\mathbb{C}^2)\right) \boxtimes \left(\chi_{\lambda_2} \otimes \mathrm{sym}^{n_2}(\mathbb{C}^2)\right) .
 $$
 
 Restricting to the representations that are trivial on the two positive rays, equivalently to the finite-dimensional representations of the compact part $S^3 \times S^3 = \mathrm{Spin}(4)$, the exponents are zero and the classification is by a pair $(n_1, n_2)$ of non-negative integers, with
 
 $$
-\rho_{(n_1,n_2)} = \mathrm{Sym}^{n_1}(\mathbb{C}^2) \boxtimes \mathrm{Sym}^{n_2}(\mathbb{C}^2) , \qquad \dim_{\mathbb{C}} = (n_1+1)(n_2+1) .
+\rho_{(n_1,n_2)} = \mathrm{sym}^{n_1}(\mathbb{C}^2) \boxtimes \mathrm{sym}^{n_2}(\mathbb{C}^2) , \qquad \dim_{\mathbb{C}} = (n_1+1)(n_2+1) .
 $$
 
 The two positive rays are also the reason the unit group is non-compact and its representations need not be $*$-unitary; the whole classification is that of the Lie group $(\mathbb{R}_{>0} \times SU(2))^2$, whose compact part is $SU(2) \times SU(2)$.
@@ -148,7 +148,7 @@ The tensor products that are defined are those of the unit-group representations
 
 ## The Relation to the Representation Theory of the Biquaternions
 
-The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, with a single simple module $\mathbb{C}^2$, division ring $\mathbb{C}$, and regular representation of dimension $4$ over $\mathbb{C}$; its unit group is essentially $SL(2,\mathbb{C})$, whose finite-dimensional representations are the symmetric powers $\mathrm{Sym}^n(\mathbb{C}^2)$. The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$, with two simple modules, division ring $\mathbb{H}$, regular representation of dimension $8$ over $\mathbb{R}$, and unit group $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$. The correspondence is by the idempotent decomposition: each biquaternion representation is transported to a pair of quaternionic representations through the Peirce decomposition, and the passage
+The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, with a single simple module $\mathbb{C}^2$, division ring $\mathbb{C}$, and regular representation of dimension $4$ over $\mathbb{C}$; its unit group is essentially $SL(2,\mathbb{C})$, whose finite-dimensional representations are the symmetric powers $\mathrm{sym}^n(\mathbb{C}^2)$. The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$, with two simple modules, division ring $\mathbb{H}$, regular representation of dimension $8$ over $\mathbb{R}$, and unit group $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$. The correspondence is by the idempotent decomposition: each biquaternion representation is transported to a pair of quaternionic representations through the Peirce decomposition, and the passage
 
 $$
 \mathbb{B} \longleftrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \mathbb{C} \longleftrightarrow \mathbb{H}

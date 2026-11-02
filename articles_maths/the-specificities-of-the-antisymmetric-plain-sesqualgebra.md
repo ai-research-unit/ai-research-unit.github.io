@@ -40,7 +40,7 @@ L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2,
 R^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_2\star\tilde Q_1,
 $$
 
-and the superscript is dropped for the product in force. The **projection onto the vector subspace** is $P_{\operatorname{Vect}}$, the map $\tilde Q_1\mapsto\operatorname{Vect}\tilde Q_1$ removing the scalar part, and the **projection onto the centre** is $P_{\mathbb{C}_{\mathbb{B}}}$, the map $\tilde Q_1\mapsto\operatorname{Sc}(\tilde Q_1)e_t$ keeping it. The centre is $\mathbb{C}_{\mathbb{B}}$, the vector subspace is $\operatorname{Vect}(\mathbb{B})$, and the two meet at the origin. The **twelve** are $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+and the superscript is dropped for the product in force. The **projection onto the vector subspace** is $P_{\operatorname{Vect}}$, the map $\tilde Q_1\mapsto\operatorname{Vect}\tilde Q_1$ removing the scalar part, and the **projection onto the centre** is $P_{\mathbb{C}_{\mathbb{B}}}$, the map $\tilde Q_1\mapsto\operatorname{Sc}(\tilde Q_1)e_t$ keeping it. The centre is $\mathbb{C}_{\mathbb{B}}$, the vector subspace is $\operatorname{Vect}(\mathbb{B})$, and the two meet at the origin. The **twelve** are $\mathrm{gpa}$, $\mathrm{spa}$, $\mathrm{apa}$, $\mathrm{gqa}$, $\mathrm{sqa}$, $\mathrm{aqa}$, $\mathrm{gps}$, $\mathrm{sps}$, $\mathrm{aps}$, $\mathrm{gqs}$, $\mathrm{sqs}$, $\mathrm{aqs}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Governing Identity
 
@@ -106,18 +106,18 @@ The criterion is therefore an **operator criterion**: the splitting is realised 
 
 The criterion is tested on each of the twelve structures by computing the right multiplication by the ambient unit.
 
-**Theorem (the block is the only one).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, $\mathrm{APS}$ is the only one for which $R^{\star}_{e_t}=P_{\operatorname{Vect}}$; and it is the only one in which any element has right multiplication equal to $P_{\operatorname{Vect}}$.
+**Theorem (the block is the only one).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, $\mathrm{aps}$ is the only one for which $R^{\star}_{e_t}=P_{\operatorname{Vect}}$; and it is the only one in which any element has right multiplication equal to $P_{\operatorname{Vect}}$.
 
 *Proof.* The table computes $R^{\star}_{e_t}$ family by family. For the second statement: if $R^{\star}_{\tilde Q_1}=P_{\operatorname{Vect}}$ then the operator is a projector, and the projector classification of §*The Projector Classification* leaves the two elements $0$ and $e_t$, of which only $e_t$ gives $P_{\operatorname{Vect}}$.
 
 | the action of $R^{\star}_{e_t}$ | the structures |
 |---|---|
-| the identity | GPA, SPA, GPS |
-| the natural conjugation | GQA, GQS, SQS |
-| the projection onto the centre | SQA, SPS |
-| the zero operator | APA, AQS |
-| minus the projection onto the vector subspace | AQA |
-| **the projection onto the vector subspace** | **APS** |
+| the identity | gpa, spa, gps |
+| the natural conjugation | gqa, gqs, sqs |
+| the projection onto the centre | sqa, sps |
+| the zero operator | apa, aqs |
+| minus the projection onto the vector subspace | aqa |
+| **the projection onto the vector subspace** | **aps** |
 
 The rows are the three operations that generate the twelve. The general products and their symmetric parts act by the identity, by the natural conjugation or by the projection onto the centre; the antisymmetric parts act by zero or by plus or minus the projection onto the vector subspace, because the antisymmetrisation kills the scalar part of the value; and the block is the row in which the sign is $+1$ and no conjugation is applied. The block alone carries the conjugation in the second slot **and** the antisymmetrisation, so that $\tilde Q_1\diamond e_t=\operatorname{Vect}(\tilde Q_1e_t^{*})=\operatorname{Vect}\tilde Q_1$ retains the vector part of $\tilde Q_1$; this is the exact meaning of the trailing $\mathrm S$ of the code.
 
@@ -131,7 +131,7 @@ The criteria of the twin articles are not the criterion of the block, and the bl
 
 $$ \boxed{\; \tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2} \;}, $$
 
-and of the twelve structures exactly two are conjugate-alternating, the block and the quaternionic sesquilinear antisymmetrisation $\mathrm{AQS}=\vec Q_1\times\overline{\vec Q_2}$. The law isolates the pair and not the block, and the criterion $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ separates the pair: $\mathrm{AQS}$ has $R^{\mathrm{AQS}}_{e_t}=0$ while the block has $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$. **The distinction between the two conjugate-alternating structures is exactly the nonvanishing of the square**: the diagonal of the block, $\tilde Q_1\diamond\tilde Q_1=\operatorname{Vect}(\tilde Q_1\tilde Q_1^{*})$, is the Hermitian square and is generally nonzero, while the diagonal of $\mathrm{AQS}$, $\vec Q_1\times\overline{\vec Q_1}$, vanishes on the elements whose two real parts are linearly dependent. This is the reading of the root of $0$ in *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*.
+and of the twelve structures exactly two are conjugate-alternating, the block and the quaternionic sesquilinear antisymmetrisation $\mathrm{aqs}=\vec Q_1\times\overline{\vec Q_2}$. The law isolates the pair and not the block, and the criterion $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ separates the pair: $\mathrm{aqs}$ has $R^{\mathrm{aqs}}_{e_t}=0$ while the block has $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$. **The distinction between the two conjugate-alternating structures is exactly the nonvanishing of the square**: the diagonal of the block, $\tilde Q_1\diamond\tilde Q_1=\operatorname{Vect}(\tilde Q_1\tilde Q_1^{*})$, is the Hermitian square and is generally nonzero, while the diagonal of $\mathrm{aqs}$, $\vec Q_1\times\overline{\vec Q_1}$, vanishes on the elements whose two real parts are linearly dependent. This is the reading of the root of $0$ in *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*.
 
 ## What the Criterion Delivers
 
@@ -148,9 +148,9 @@ The identity $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$, with the projector cl
 
 The criterion is sharp and it has one neighbour on each side.
 
-**The antisymmetric quaternionic algebra.** $\mathrm{AQA}$ realises the splitting by its left multiplication, $L^{\mathrm{AQA}}_{e_t}=P_{\operatorname{Vect}}$, and by its right multiplication it acts by $-P_{\operatorname{Vect}}$; it is the left twin of the block, and its operator layer is *Introduction to the Antisymmetric Quaternionic Algebra* together with *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, the article of its own specificities being outside the register of the present menu. The block is the right twin, and the two together say that the splitting $\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$ is realised by a single element in exactly two of the twelve structures, on opposite sides.
+**The antisymmetric quaternionic algebra.** $\mathrm{aqa}$ realises the splitting by its left multiplication, $L^{\mathrm{aqa}}_{e_t}=P_{\operatorname{Vect}}$, and by its right multiplication it acts by $-P_{\operatorname{Vect}}$; it is the left twin of the block, and its operator layer is *Introduction to the Antisymmetric Quaternionic Algebra* together with *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, the article of its own specificities being outside the register of the present menu. The block is the right twin, and the two together say that the splitting $\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$ is realised by a single element in exactly two of the twelve structures, on opposite sides.
 
-**The conjugate-commutative structures.** $\mathrm{SPS}$ and $\mathrm{SQS}$ are conjugate-commutative, and their right multiplication by $e_t$ is the projection onto the centre for $\mathrm{SPS}$ and the natural conjugation for $\mathrm{SQS}$; the projection onto the vector subspace, which is the image of the block, and the projection onto the centre, which is the image of the symmetric plain sesquilinear product, are the two projections the pair realises, on opposite subspaces. The two are the extreme rows of the splitting: **the antisymmetrisation keeps the vector part and loses the scalar part, and the symmetrisation does the converse.**
+**The conjugate-commutative structures.** $\mathrm{sps}$ and $\mathrm{sqs}$ are conjugate-commutative, and their right multiplication by $e_t$ is the projection onto the centre for $\mathrm{sps}$ and the natural conjugation for $\mathrm{sqs}$; the projection onto the vector subspace, which is the image of the block, and the projection onto the centre, which is the image of the symmetric plain sesquilinear product, are the two projections the pair realises, on opposite subspaces. The two are the extreme rows of the splitting: **the antisymmetrisation keeps the vector part and loses the scalar part, and the symmetrisation does the converse.**
 
 **The open question.** Whether the identity $R^{\star}_{\tilde Q_1}=P_{\operatorname{Vect}}$ for some element $\tilde Q_1$ of one of the other eleven can occur after a rescaling of the product, or after a change of basis that does not preserve the involution, is a question of the classification of the twelve and is left to the author. In the basis and the products as fixed, the answer is no, and the isolation of §*The Isolation among the Twelve* is the evidence.
 
@@ -164,9 +164,9 @@ R^{\diamond}_{e_t}=P_{\operatorname{Vect}},
 \tilde Q_1\diamond e_t=\operatorname{Vect}\tilde Q_1,
 $$
 
-the right multiplication by the ambient unit is the projection onto the vector subspace along the centre, while the left multiplication is its conjugate. Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* the block is the only one that realises the splitting $\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$ on the right by a single element, and no other structure has any element whose right multiplication is $P_{\operatorname{Vect}}$; $\mathrm{AQA}$ realises the splitting on the left and is the twin.
+the right multiplication by the ambient unit is the projection onto the vector subspace along the centre, while the left multiplication is its conjugate. Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* the block is the only one that realises the splitting $\mathbb{B}=\operatorname{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$ on the right by a single element, and no other structure has any element whose right multiplication is $P_{\operatorname{Vect}}$; $\mathrm{aqa}$ realises the splitting on the left and is the twin.
 
-The identity is equivalent to the projector classification of the block: a right multiplication is a projector exactly for the elements $0$ and $e_t$, the second being the projection onto the vector subspace and the first the zero operator. The companion law, conjugate-alternation, isolates the block together with $\mathrm{AQS}$, and the projection criterion separates the pair. Each Common Theory article of the block — the absence of the unit and the inverse, the unique idempotent, the absent roots of $\pm1$, the thin nilpotents and the full zero-divisor set — is a consequence of the one identity.
+The identity is equivalent to the projector classification of the block: a right multiplication is a projector exactly for the elements $0$ and $e_t$, the second being the projection onto the vector subspace and the first the zero operator. The companion law, conjugate-alternation, isolates the block together with $\mathrm{aqs}$, and the projection criterion separates the pair. Each Common Theory article of the block — the absence of the unit and the inverse, the unique idempotent, the absent roots of $\pm1$, the thin nilpotents and the full zero-divisor set — is a consequence of the one identity.
 
 ## Summary of Notation
 
@@ -179,7 +179,7 @@ The identity is equivalent to the projector classification of the block: a right
 | $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ | the criterion, the splitting realised on the right |
 | $L^{\diamond}_{e_t}=-\overline{\cdot}\circ P_{\operatorname{Vect}}$ | the left multiplication by the ambient unit |
 | $\tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2}$ | the companion law, conjugate-alternation |
-| $\mathrm{APS}$, $\mathrm{AQS}$, $\mathrm{AQA}$ | the block, its conjugate-alternating sibling and its left twin |
+| $\mathrm{aps}$, $\mathrm{aqs}$, $\mathrm{aqa}$ | the block, its conjugate-alternating sibling and its left twin |
 
 ## Further Reading
 

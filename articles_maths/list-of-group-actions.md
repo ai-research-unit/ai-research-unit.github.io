@@ -8,17 +8,17 @@ Every entry points to the article that introduces the action. This article is a 
 
 ## Actions on Sets
 
-An **action** of $G$ on a set $X$ is a homomorphism $\rho : G \to \operatorname{Sym}(X)$; the **orbit** of a point is its equivalence class under the action, the **stabiliser** is the subgroup fixing it, and the orbit–stabiliser theorem relates the two to the order of the group. The action is **faithful** when the kernel of $\rho$ is trivial; the left regular action shows every group embeds in a symmetric group, which is Cayley's theorem.
+An **action** of $G$ on a set $X$ is a homomorphism $\rho : G \to \operatorname{sym}(X)$; the **orbit** of a point is its equivalence class under the action, the **stabiliser** is the subgroup fixing it, and the orbit–stabiliser theorem relates the two to the order of the group. The action is **faithful** when the kernel of $\rho$ is trivial; the left regular action shows every group embeds in a symmetric group, which is Cayley's theorem.
 
 | Action | Orbit, stabiliser and representation | Introduced in |
 |---|---|---|
-| Left regular action of $G$ on itself | one orbit $G$; stabiliser trivial; the regular permutation representation, giving Cayley's embedding $G \hookrightarrow \operatorname{Sym}(G)$ | *Transformation Groups* |
+| Left regular action of $G$ on itself | one orbit $G$; stabiliser trivial; the regular permutation representation, giving Cayley's embedding $G \hookrightarrow \operatorname{sym}(G)$ | *Transformation Groups* |
 | Conjugation action of $G$ on itself | orbits the conjugacy classes; stabiliser $C_G(g)$, the centraliser; the permutation representation on conjugacy classes | *Group Actions and Structure* |
 | Action of $G$ on the cosets $G/H$ | one orbit; stabiliser a conjugate of $H$; a transitive $G$-set | *Transformation Groups* |
 | Action of $G$ on its subgroups by conjugation | orbits the conjugacy classes of subgroups; stabiliser the normaliser $N_G(H)$ | *Group Actions and Structure* |
 | Action of $G$ on the power set of a $G$-set | orbits the sets of $k$-subsets; the induced permutation representation | *Transformation Groups* |
 | Action of $G$ on itself by left multiplication, a monoid action | the monoid of endomorphisms; $\operatorname{Aut}(X) = \operatorname{End}(X)^\times$ for a structure $X$ | *Transformation Groups* |
-| Permutation representation | the homomorphism $\rho : G \to \operatorname{Sym}(X)$; faithful exactly when $\ker\rho = 1$ | *Transformation Groups* |
+| Permutation representation | the homomorphism $\rho : G \to \operatorname{sym}(X)$; faithful exactly when $\ker\rho = 1$ | *Transformation Groups* |
 | Non-example: the trivial action of a nontrivial group | fails faithfulness: the kernel is the whole group | *Transformation Groups* |
 | Non-example: the action of $S_n$ on $\{1,\dots,n\}$ for $n \geq 3$ | fails to be regular: the stabiliser of a point has order $(n-1)!$, not $1$ | *Transformation Groups* |
 
@@ -46,7 +46,7 @@ An action of $G$ on a vector space by linear maps is a **representation** of $G$
 | Action of $GL(V)$ on the lines and Grassmannians | the orbits are the Grassmannians; the stabilisers the parabolic subgroups | *The General Linear Group* |
 | Regular representation of $G$ on $F[G]$ | $G$ acts on the group algebra; the character is $\chi_{\mathrm{reg}}(e) = |G|$ | *Group Algebras* |
 | Permutation representation of a $G$-set | the linearisation of an action on a set; the character counts fixed points | *Representations of Groups* |
-| Tensor, dual, symmetric and exterior powers | the representations $V \otimes W$, $V^*$, $\operatorname{Sym}^n V$ and $\Lambda^n V$ | *Representations of Groups* |
+| Tensor, dual, symmetric and exterior powers | the representations $V \otimes W$, $V^*$, $\operatorname{sym}^n V$ and $\Lambda^n V$ | *Representations of Groups* |
 | Adjoint action of a Lie algebra on itself | orbits the coadjoint orbits; the representation $\operatorname{ad} : \mathrm{G} \to \mathrm{GL}(\mathrm{G})$ | *Lie Algebras* |
 | Weight decomposition | the action of a Cartan subalgebra; the weights and the highest weight | *Representations of Lie Algebras* |
 | Schur–Weyl action of $S_n \times GL(V)$ on $V^{\otimes n}$ | orbits and stabilisers described by Young diagrams; the decomposition into Schur functors | *Schur–Weyl Duality* |
@@ -61,7 +61,7 @@ A group acts on an algebra by **automorphisms**, and the subalgebra it fixes is 
 |---|---|---|
 | Action of $\operatorname{Aut}(R)$ on a ring $R$ | the fixed subring and the invariant centre; the transformation group of the ring | *Ring and Field Automorphisms* |
 | Inner action $x \mapsto uxu^{-1}$ by a unit | the orbit is the conjugacy class; the action is by an inner automorphism | *Ring and Field Automorphisms* |
-| Galois action of $\operatorname{Gal}(L/K)$ on $L$ | the fixed field is $K$; the orbit of an element has size the degree of its minimal polynomial | *Galois Theory* |
+| Galois action of $\operatorname{gal}(L/K)$ on $L$ | the fixed field is $K$; the orbit of an element has size the degree of its minimal polynomial | *Galois Theory* |
 | Action of $G$ on a polynomial ring by graded automorphisms | the invariant ring $R^G$; the Molien series computes the graded dimensions | *Invariant Theory* |
 | Crossed product $A \# G$ | the algebra built from a group action, with the action as twisted multiplication | *Crossed Products* |
 | Action of $G$ on an algebra by automorphisms | the orbits of the automorphism group; the fixed subalgebra | *Automorphisms and Derivations of Algebras* |
@@ -104,16 +104,16 @@ The article denotes its actions by name; the symbols appearing in the tables are
 
 | Symbol | Meaning |
 |---|---|
-| $\operatorname{Sym}(X)$, $S_n$ | symmetric group on a set, on $n$ letters |
-| $\rho : G \to \operatorname{Sym}(X)$ | permutation representation of an action |
+| $\operatorname{sym}(X)$, $S_n$ | symmetric group on a set, on $n$ letters |
+| $\rho : G \to \operatorname{sym}(X)$ | permutation representation of an action |
 | $\operatorname{Orb}(x)$, $\operatorname{Stab}(x)$ | orbit and stabiliser |
 | $C_G(g)$, $Z(G)$, $N_G(H)$ | centraliser, centre, normaliser |
 | $\operatorname{Syl}_p(G)$, $n_p$ | Sylow $p$-subgroups and their number |
 | $F[G]$, $\chi_V$, $\operatorname{Rep}_F(G)$ | group algebra, character, representation category |
-| $V \otimes W$, $V^*$, $\operatorname{Sym}^n V$, $\Lambda^n V$ | tensor, dual, symmetric and exterior power representations |
+| $V \otimes W$, $V^*$, $\operatorname{sym}^n V$, $\Lambda^n V$ | tensor, dual, symmetric and exterior power representations |
 | $\operatorname{ad}$ | adjoint representation of a Lie algebra |
 | $R^G$ | ring of invariants |
-| $\operatorname{Gal}(L/K)$ | Galois group of a field extension |
+| $\operatorname{gal}(L/K)$ | Galois group of a field extension |
 | $\operatorname{Aut}(R)$, $\operatorname{Inn}(G)$ | automorphism group; inner automorphisms |
 | $\mathbb{F}_p$, $\mathbb{F}_q$ | finite fields |
 

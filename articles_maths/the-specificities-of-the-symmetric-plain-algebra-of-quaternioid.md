@@ -52,7 +52,7 @@ with both terms nonzero.
 
 **Remark (the two readings of the menu's formal reality).** The outline of the block puts "the formal reality of $\mathbb{H}$ as a Jordan algebra" among the properties. The statement is correct read on the **natural involution** — the algebra $\mathbb{H}$ with its conjugation is formally real, its self-adjoint part being the scalar line — and it is the definiteness of the generic norm that it produces; the statement is **false** read on the **product with the identity involution**, where the witness $\vec e_x^2+e_t^2=0$ stands. **The two readings differ, and the article states both**: the block is a special Jordan algebra with a formally real natural involution and a definite generic norm, but its underlying product is not formally real. The self-adjoint part being one-dimensional, the involution formal reality is the least informative of the two, and the definiteness of the norm is the operative property.
 
-**Remark (which operation carries the sum-of-squares condition of the product).** The sum-of-squares condition for the product is met by the **general quaternionic** product, whose square is $|\tilde q|^2e_t$ and is non-negative; but it is not a commutative Jordan product, $\mathrm{GQA}$ being non-commutative, so it does not carry the formal reality of a Jordan algebra. The **Euclidean spin factor** $JSpin_4\cong H_2(\mathbb{C})$, the degree-two formally real *Jordan* algebra on this space, is $\mathbb{R}\oplus\mathbb{R}^3$ with the product
+**Remark (which operation carries the sum-of-squares condition of the product).** The sum-of-squares condition for the product is met by the **general quaternionic** product, whose square is $|\tilde q|^2e_t$ and is non-negative; but it is not a commutative Jordan product, $\mathrm{gqa}$ being non-commutative, so it does not carry the formal reality of a Jordan algebra. The **Euclidean spin factor** $JSpin_4\cong H_2(\mathbb{C})$, the degree-two formally real *Jordan* algebra on this space, is $\mathbb{R}\oplus\mathbb{R}^3$ with the product
 
 $$
 (a\cdot e_t+\vec q_a)\bullet'(b\cdot e_t+\vec v)=(ab+\vec q_a\cdot\vec v)e_t+(a\vec v+b\vec q_a),
@@ -131,9 +131,9 @@ of real dimension three in the algebra.
 
 **Theorem.** Among the companion products of *The 6 Products of the Quaternioid Real Space*, the symmetric plain product is the unique one that is **commutative, unital and Jordan**, and it is the unique one whose algebra is a commutative unital Jordan algebra.
 
-*Proof.* The algebra product $\tilde q_1\tilde q_2$ is associative and unital but not commutative; the antisymmetric plain product $\mathrm{APA}$ is alternating, has no unit and is not commutative; the general quaternionic product $\mathrm{GQA}$ is not commutative and only left unital. So $\mathrm{SPA}$ is the only one of the companion products with all three properties. **The three properties single out the block, but they do not make its product formally real**: the block is a Jordan algebra whose underlying product is not formally real, and the operation whose square is non-negative, $\mathrm{GQA}$, is not a commutative Jordan product.
+*Proof.* The algebra product $\tilde q_1\tilde q_2$ is associative and unital but not commutative; the antisymmetric plain product $\mathrm{apa}$ is alternating, has no unit and is not commutative; the general quaternionic product $\mathrm{gqa}$ is not commutative and only left unital. So $\mathrm{spa}$ is the only one of the companion products with all three properties. **The three properties single out the block, but they do not make its product formally real**: the block is a Jordan algebra whose underlying product is not formally real, and the operation whose square is non-negative, $\mathrm{gqa}$, is not a commutative Jordan product.
 
-**Remark (the three generating operations).** The isolation is read off three operations and no more: **commutativity** separates the block from the algebra product and the general quaternionic product; the **unit** separates it from the structures without a two-sided unit; and the **Jordan identity** completes the criterion. The three together single out $\mathrm{SPA}$; each alone fails to.
+**Remark (the three generating operations).** The isolation is read off three operations and no more: **commutativity** separates the block from the algebra product and the general quaternionic product; the **unit** separates it from the structures without a two-sided unit; and the **Jordan identity** completes the criterion. The three together single out $\mathrm{spa}$; each alone fails to.
 
 ## Summary
 
@@ -150,7 +150,7 @@ The symmetric plain algebra of $\mathbb{H}$ is a commutative unital special Jord
 | $\{0,e_t\}$ | the idempotents |
 | $\{0\}$ | the nilpotents and the square-zero elements |
 | $q_t^2=\lvert\vec q\rvert^2$ | the isotropic cone of the quadratic trace |
-| the companion products | $\mathrm{SPA},\mathrm{APA},\mathrm{GQA}$ |
+| the companion products | $\mathrm{spa},\mathrm{apa},\mathrm{gqa}$ |
 
 ## Further Reading
 

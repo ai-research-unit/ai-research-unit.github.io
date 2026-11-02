@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric algebra $A = \operatorname{Sym}(M)$ of a free module of finite rank carries the **trace form**, the coefficient pairing $\langle u,v\rangle$ that reads off the diagonal term of the product; in a basis $x_1,\dots,x_n$ with the dual differential operators $\partial/\partial x_1,\dots,\partial/\partial x_n$ it is the **apolar pairing** $\langle u,v\rangle = v(\partial)u|_{0}$. With respect to it every operator has an adjoint, and the article computes the adjoints of the **multiplication operators** of the symmetric algebra. The result is that the adjoint of the multiplication by $x_i$ is the derivative $\partial/\partial x_i$,
+The symmetric algebra $A = \operatorname{sym}(M)$ of a free module of finite rank carries the **trace form**, the coefficient pairing $\langle u,v\rangle$ that reads off the diagonal term of the product; in a basis $x_1,\dots,x_n$ with the dual differential operators $\partial/\partial x_1,\dots,\partial/\partial x_n$ it is the **apolar pairing** $\langle u,v\rangle = v(\partial)u|_{0}$. With respect to it every operator has an adjoint, and the article computes the adjoints of the **multiplication operators** of the symmetric algebra. The result is that the adjoint of the multiplication by $x_i$ is the derivative $\partial/\partial x_i$,
 
 $$
 \langle x_i u, v\rangle = \langle u, \partial/\partial x_i v\rangle ,
@@ -10,13 +10,13 @@ $$
 
 so the adjoint of a multiplication is a **differential operator with constant coefficients**, the polarisation operator $P_u = u(\partial)$ of *The Polarisation Operator*, and not another multiplication; consequently the only self-adjoint multiplications are the **scalar** ones. This is the specific behaviour of the trace form, and it is the reason the polarisation operator enters the operator theory of the symmetric algebra: the multiplications and the polarisation operators are mutual adjoints, and the involution they define on the endomorphism algebra is the transpose.
 
-The article defines the trace form, proves that it is symmetric, non-degenerate and graded, computes the adjoint of a multiplication as the polarisation operator, identifies the self-adjoint multiplications as the scalar ones, and describes the induced transpose involution on the endomorphisms of the symmetric algebra with its self-adjoint part and its unitary group. It compares the result with the multiplication operators of *Involutions of the Multiplication Operators*, *Adjoints in a Commutative Involutive Algebra* and *The Involution on the Multiplication Operators*, where the pairing is $\sigma$-sesquilinear and the adjoint of $L_a$ is again a multiplication; the difference is exactly the difference between the trace form and a sesquilinear form, and the article marks it. The article assumes *The Symmetric Algebra of a Module with an Involution* and *The Symmetric and Exterior Powers* for the algebra and its grading, *The Polarisation Operator* for $P_u$ and its properties, *The Adjoint of an Endomorphism* for the adjoint with respect to a pairing, and *Involutive Algebras* for the involution of the endomorphism algebra. The signed variants are *The Signed Adjoint Sandwich*, *The Signed Adjoint of the Reflection* and *The Signed Adjoint of the Left Multiplication*, later in this group. Throughout, $R$ is a commutative ring with identity in which all the factorials are invertible (for instance a field of characteristic zero), $M$ is a free $R$-module of rank $n$ with basis $x_1,\dots,x_n$, $A = \operatorname{Sym}(M)$ is its symmetric algebra, $\partial/\partial x_i$ is the derivative dual to $x_i$, and $\langle\cdot,\cdot\rangle$ is the trace form; no norm, distance, positivity or operator spectrum occurs.
+The article defines the trace form, proves that it is symmetric, non-degenerate and graded, computes the adjoint of a multiplication as the polarisation operator, identifies the self-adjoint multiplications as the scalar ones, and describes the induced transpose involution on the endomorphisms of the symmetric algebra with its self-adjoint part and its unitary group. It compares the result with the multiplication operators of *Involutions of the Multiplication Operators*, *Adjoints in a Commutative Involutive Algebra* and *The Involution on the Multiplication Operators*, where the pairing is $\sigma$-sesquilinear and the adjoint of $L_a$ is again a multiplication; the difference is exactly the difference between the trace form and a sesquilinear form, and the article marks it. The article assumes *The Symmetric Algebra of a Module with an Involution* and *The Symmetric and Exterior Powers* for the algebra and its grading, *The Polarisation Operator* for $P_u$ and its properties, *The Adjoint of an Endomorphism* for the adjoint with respect to a pairing, and *Involutive Algebras* for the involution of the endomorphism algebra. The signed variants are *The Signed Adjoint Sandwich*, *The Signed Adjoint of the Reflection* and *The Signed Adjoint of the Left Multiplication*, later in this group. Throughout, $R$ is a commutative ring with identity in which all the factorials are invertible (for instance a field of characteristic zero), $M$ is a free $R$-module of rank $n$ with basis $x_1,\dots,x_n$, $A = \operatorname{sym}(M)$ is its symmetric algebra, $\partial/\partial x_i$ is the derivative dual to $x_i$, and $\langle\cdot,\cdot\rangle$ is the trace form; no norm, distance, positivity or operator spectrum occurs.
 
 ## The Symmetric Algebra of a Module and the Trace Form
 
 ### The Trace Form
 
-**Definition.** The **trace form** on $A = \operatorname{Sym}(M)$ is the $R$-bilinear map
+**Definition.** The **trace form** on $A = \operatorname{sym}(M)$ is the $R$-bilinear map
 
 $$
 \langle\cdot,\cdot\rangle : A\times A\to R, \qquad \langle u,v\rangle = \bigl(v(\partial)\,u\bigr)\big|_{x=0},
@@ -28,7 +28,7 @@ $$
 \langle x^{a}, x^{b}\rangle = a!\,\delta_{a,b}, \qquad a! = a_1!\cdots a_n! .
 $$
 
-**Theorem.** The trace form is $R$-bilinear, symmetric, non-degenerate and graded: $\langle \operatorname{Sym}^k(M), \operatorname{Sym}^j(M)\rangle = 0$ for $k\ne j$, and on $\operatorname{Sym}^k(M)$ it is a non-degenerate pairing.
+**Theorem.** The trace form is $R$-bilinear, symmetric, non-degenerate and graded: $\langle \operatorname{sym}^k(M), \operatorname{sym}^j(M)\rangle = 0$ for $k\ne j$, and on $\operatorname{sym}^k(M)$ it is a non-degenerate pairing.
 
 *Proof.* Bilinearity is the bilinearity of the coefficient extraction; symmetry is the commutativity of the differential operators with constant coefficients, $\partial^a\partial^b = \partial^{a+b} = \partial^b\partial^a$; the monomial formula is immediate; the pairing is diagonal in the monomial bases with the invertible coefficients $a!$, hence non-degenerate on each finite free homogeneous piece and graded.
 
@@ -84,13 +84,13 @@ $$
 
 ## Summary
 
-The **trace form** on the symmetric algebra $A = \operatorname{Sym}(M)$ of a free module of finite rank is the apolar pairing $\langle u,v\rangle = v(\partial)u|_{0}$, symmetric, non-degenerate and graded. With respect to it the adjoint of the multiplication by a generator is the derivative, $L_{x_i}^{\dagger} = \partial/\partial x_i$, and the adjoint of a general multiplication is the **polarisation operator**, $L_u^{\dagger} = u(\partial) = P_u$; the multiplication and the polarisation operator are mutual adjoints, and the polarisation operators commute as the differential operators with constant coefficients do. The only **self-adjoint** multiplications are the **scalar** ones, because the multiplication raises the degree and the polarisation operator lowers it. The assignment $F\mapsto F^{\dagger}$ is the **transpose involution** of the endomorphism algebra, whose self-adjoint operators form a Jordan algebra, whose skew-adjoint operators form a Lie algebra and whose unitary operators form a group. The trace form thus differs from the $\sigma$-sesquilinear pairings of the preceding articles, where the adjoint of $L_a$ is the multiplication $L_{\sigma(a)}$. No norm, distance, positivity or operator spectrum occurs.
+The **trace form** on the symmetric algebra $A = \operatorname{sym}(M)$ of a free module of finite rank is the apolar pairing $\langle u,v\rangle = v(\partial)u|_{0}$, symmetric, non-degenerate and graded. With respect to it the adjoint of the multiplication by a generator is the derivative, $L_{x_i}^{\dagger} = \partial/\partial x_i$, and the adjoint of a general multiplication is the **polarisation operator**, $L_u^{\dagger} = u(\partial) = P_u$; the multiplication and the polarisation operator are mutual adjoints, and the polarisation operators commute as the differential operators with constant coefficients do. The only **self-adjoint** multiplications are the **scalar** ones, because the multiplication raises the degree and the polarisation operator lowers it. The assignment $F\mapsto F^{\dagger}$ is the **transpose involution** of the endomorphism algebra, whose self-adjoint operators form a Jordan algebra, whose skew-adjoint operators form a Lie algebra and whose unitary operators form a group. The trace form thus differs from the $\sigma$-sesquilinear pairings of the preceding articles, where the adjoint of $L_a$ is the multiplication $L_{\sigma(a)}$. No norm, distance, positivity or operator spectrum occurs.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $A = \operatorname{Sym}(M)$, $M$ free of rank $n$ | Symmetric algebra |
+| $A = \operatorname{sym}(M)$, $M$ free of rank $n$ | Symmetric algebra |
 | $\langle u,v\rangle = v(\partial)u|_{0}$ | Trace form (apolar pairing) |
 | $\langle x^a,x^b\rangle = a!\,\delta_{a,b}$ | Value on the monomials |
 | $L_{x_i}^{\dagger} = \partial/\partial x_i$ | Adjoint of a generator multiplication |

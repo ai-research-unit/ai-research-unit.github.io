@@ -48,7 +48,7 @@ The last identity is the bridge between the involution of the algebra and the in
 **Definition.** An endomorphism $f \in E$ is **self-adjoint** when $f^{*}=f$ and **skew-adjoint** when $f^{*}=-f$. The **symmetric part** and the **skew part** of $E$ are
 
 $$
-\operatorname{Sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}.
+\operatorname{sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}.
 $$
 
 Both are $R$-submodules of $E$.
@@ -56,7 +56,7 @@ Both are $R$-submodules of $E$.
 **Theorem.** If $2$ is invertible in $R$, then
 
 $$
-\boxed{\;E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*})\;},
+\boxed{\;E=\operatorname{sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*})\;},
 $$
 
 and the two summands have intersection $0$.
@@ -73,7 +73,7 @@ $$
 \boxed{\;f \bullet g=\tfrac12(fg+gf)\;},
 $$
 
-and under the square $f \mapsto f^{2}$; it contains the identity. Hence $\operatorname{Sym}(M)$ is a unital Jordan subalgebra of $E$, and it is a **special** Jordan algebra.
+and under the square $f \mapsto f^{2}$; it contains the identity. Hence $\operatorname{sym}(M)$ is a unital Jordan subalgebra of $E$, and it is a **special** Jordan algebra.
 
 *Proof.* If $f^{*}=f$ and $g^{*}=g$ then $(fg+gf)^{*}=g^{*}f^{*}+f^{*}g^{*}=gf+fg=fg+gf$, so $(f\bullet g)^{*}=f\bullet g$; taking $g=f$ gives $f^{2}$ self-adjoint; the identity is self-adjoint.
 
@@ -205,7 +205,7 @@ A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M
 | $M$, $\langle\cdot,\cdot\rangle$ | module and non-degenerate reflexive σ-sesquilinear pairing |
 | $E=\operatorname{End}_A(M)$ | the endomorphism ring |
 | $f^{*}$ | the adjoint, $\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle$ |
-| $\operatorname{Sym}(M)$, $\operatorname{Skew}(M)$ | self-adjoint and skew-adjoint endomorphisms |
+| $\operatorname{sym}(M)$, $\operatorname{Skew}(M)$ | self-adjoint and skew-adjoint endomorphisms |
 | $f\bullet g=\frac12(fg+gf)$ | the Jordan product on the self-adjoint part |
 | $\mathrm{U}(M)=\{u : u^{*}u=uu^{*}=\mathrm{id}\}$ | the unitary group |
 | $\langle u(m),u(n)\rangle=\langle m,n\rangle$ | the isometry characterisation of unitarity |

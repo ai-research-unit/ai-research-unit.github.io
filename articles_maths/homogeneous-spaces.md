@@ -27,7 +27,7 @@ is a well-defined $G$-equivariant bijection. In particular, if the action is tra
 
 **Proof.** If $gG_x = g'G_x$ then $g^{-1}g' \in G_x$, so $g\cdot x = g'\cdot x$; this is well definedness. It is injective because $g\cdot x = g'\cdot x$ gives $g^{-1}g' \in G_x$; it is surjective by transitivity; and it is equivariant by construction.
 
-**Definition.** The action is **free** if every stabiliser is trivial, **effective** (or faithful) if the homomorphism $G \to \operatorname{Sym}(X)$ is injective, and **properly discontinuous** if every point has a neighbourhood $\Omega$ with $g \Omega \cap \Omega \neq \emptyset$ for only finitely many $g$.
+**Definition.** The action is **free** if every stabiliser is trivial, **effective** (or faithful) if the homomorphism $G \to \operatorname{sym}(X)$ is injective, and **properly discontinuous** if every point has a neighbourhood $\Omega$ with $g \Omega \cap \Omega \neq \emptyset$ for only finitely many $g$.
 
 **Theorem.** For a topological group $G$ acting continuously on a topological space $X$, if $H$ is a closed subgroup then $G/H$ with the quotient topology is Hausdorff, the projection $G \to G/H$ is open, and the action map $G \times G/H \to G/H$, $(g, g'H) \mapsto gg'H$, is continuous; if $H$ is normal, $G/H$ is a topological group.
 

@@ -39,7 +39,7 @@ $$
 **Theorem (topological splitting).** Let $V$ be a normed space over $\mathbb{R}$ and let $\operatorname{Bil}(V)$ carry the operator norm. The symmetrisation and the antisymmetrisation are continuous linear projections, they commute, and
 
 $$
-\boxed{\;\operatorname{Bil}(V) = \operatorname{Sym}(V)\oplus\operatorname{Alt}(V)\;}
+\boxed{\;\operatorname{Bil}(V) = \operatorname{sym}(V)\oplus\operatorname{Alt}(V)\;}
 $$
 
 is a topological direct sum, the norm of each projection being $1$. The polar forms of the quadratic forms are exactly the symmetric summand, and the summand of the alternating forms is the object of this article.
@@ -146,7 +146,7 @@ A **continuous Poisson bracket** on a commutative topological algebra is a conti
 | $\omega^{\flat}:V\to V^{*}$ | the contraction, continuous, of kernel the radical |
 | $\operatorname{rad}(\omega)$ | the radical, closed in a Hausdorff module |
 | $B^{\mathrm{s}}$, $B^{\mathrm{a}}$ | the symmetrisation and the antisymmetrisation, continuous projections of norm one |
-| $\operatorname{Sym}(V)\oplus\operatorname{Alt}(V)$ | the topological splitting of the bilinear forms |
+| $\operatorname{sym}(V)\oplus\operatorname{Alt}(V)$ | the topological splitting of the bilinear forms |
 | rank, $\operatorname{Pf}(\Omega)$ | the lower semicontinuous rank; the Pfaffian, with $\operatorname{Pf}^{2}=\det$ |
 | $\mathrm{Sp}(V,\omega)$, $\mathrm{SL}(V)$ | the closed symplectic group, contained in the special linear group |
 | $M\oplus M'$ | the hyperbolic module, with $\omega=g(x)-f(y)$ |

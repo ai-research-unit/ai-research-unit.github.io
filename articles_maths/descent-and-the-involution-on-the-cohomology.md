@@ -35,7 +35,7 @@ the fixed part of the cohomology of the sheaf is the cohomology of its descended
 
 *Proof.* The transfer of *Cohomology with an Involution* gives the statements for a finite group: the composite $q^*\rho$ is multiplication by the order of the group on the invariant part, invertible when the order is invertible in the coefficients, and it is the identity in the standard cases over a field of characteristic zero; the map $q^*$ from the quotient to the invariants is the isomorphism in those cases. The general descent is that of *Equivariant Sheaves and Descent*.
 
-**Theorem (the Galois form).** Let $\Gamma=\operatorname{Gal}(K/k)$ act semilinearly on the sheaf $\mathcal{F}$ over $X_K$, as in *Galois Descent for Sheaves*, and let $\mathcal{F}^{\Gamma}$ be the fixed sheaf over $X$. Then
+**Theorem (the Galois form).** Let $\Gamma=\operatorname{gal}(K/k)$ act semilinearly on the sheaf $\mathcal{F}$ over $X_K$, as in *Galois Descent for Sheaves*, and let $\mathcal{F}^{\Gamma}$ be the fixed sheaf over $X$. Then
 
 $$
 \boxed{\;H^*(X,\mathcal{F}^{\Gamma})\;\xrightarrow{\ \cong\ }\;H^*(X_K,\mathcal{F})^{\Gamma}\;},
@@ -107,7 +107,7 @@ The passage from the invariants of the cohomology to the cohomology of the desce
 
 | Symbol | Meaning |
 |---|---|
-| $G$, $\Gamma$ | descent group; Galois group $\operatorname{Gal}(K/k)$ in the semilinear case |
+| $G$, $\Gamma$ | descent group; Galois group $\operatorname{gal}(K/k)$ in the semilinear case |
 | $\gamma^*=H^*(\gamma,\varphi_{\gamma})$ | action on the cohomology; commutes with the cup product |
 | $H^*(X,\mathcal{F})^{G}$, $H^*(X,\mathcal{F})^{\theta}$ | fixed part of the cohomology; invariant cohomology |
 | $H^*(X/G,\mathcal{F}^{G})\cong H^*(X,\mathcal{F})^{G}$ | descent isomorphism; fixed part $=$ cohomology of the descended sheaf |

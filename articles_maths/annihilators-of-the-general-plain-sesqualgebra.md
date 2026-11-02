@@ -150,7 +150,7 @@ parent into one plane.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the general plain sesquimultiplication, the operation $\mathrm{GPS}$, the plain product with the star in the second slot |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the general plain sesquimultiplication, the operation $\mathrm{gps}$, the plain product with the star in the second slot |
 | $A_\star(\tilde Q_1),B_\star(\tilde Q_1)$ | the left and the right annihilator, equal by the conjugate-alternation |
 | $\langle\tilde Q_1\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1\tilde Q_2=0\}$ | the plain left annihilator, the parent's object |
 | $\langle\tilde Q_1\rangle_{\natural*}^{*}$ | the common annihilator of the block, the conjugate of the plain annihilator |

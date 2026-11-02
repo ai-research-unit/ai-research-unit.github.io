@@ -34,7 +34,7 @@ A commutative $R$-algebra $A$ is **free on a set $X$** if there is a map $\iota 
 
 *Proof.* Given $\phi : X \to B$, define the homomorphism on monomials by $x_{i_1}^{a_1}\cdots x_{i_k}^{a_k} \mapsto \phi(x_{i_1})^{a_1}\cdots \phi(x_{i_k})^{a_k}$ and extend $R$-linearly. This is well defined because the commutative law makes monomials a basis indexed by finitely supported families of exponents and the order of factors irrelevant; it is a homomorphism because $B$ is commutative and associative; and it is unique because $X$ generates $R[X]$ as an algebra.
 
-By *The Symmetric Algebra of a Module*, the symmetric algebra of a free module of rank $n$ is $R[x_1, \ldots, x_n]$; more generally $\operatorname{Sym}(M) = \bigoplus_{n\geq0}\operatorname{Sym}^n(M)$ is the free commutative algebra on a basis of $M$ when $M$ is free. The free commutative algebra is therefore not a new object but the symmetric algebra.
+By *The Symmetric Algebra of a Module*, the symmetric algebra of a free module of rank $n$ is $R[x_1, \ldots, x_n]$; more generally $\operatorname{sym}(M) = \bigoplus_{n\geq0}\operatorname{sym}^n(M)$ is the free commutative algebra on a basis of $M$ when $M$ is free. The free commutative algebra is therefore not a new object but the symmetric algebra.
 
 **Proposition.** Every commutative $R$-algebra is a quotient of a polynomial algebra; that is, $A \cong R[x_s : s \in X]/\mathrm{A}$ for some set $X$ and some ideal $\mathrm{A}$.
 
@@ -77,10 +77,10 @@ For associative algebras that are not commutative the tensor product is still an
 **Example.** For $A = R[x]$ and $B = R[y]$ one has $R[x]\otimes_R R[y] \cong R[x,y]$: the coproduct of two polynomial algebras in one variable is the polynomial algebra in two variables. More generally
 
 $$
-\operatorname{Sym}(M) \otimes_R \operatorname{Sym}(N) \cong \operatorname{Sym}(M \oplus N),
+\operatorname{sym}(M) \otimes_R \operatorname{sym}(N) \cong \operatorname{sym}(M \oplus N),
 $$
 
-which is the compatibility of the symmetric algebra with direct sums noted in *The Symmetric Algebra of a Module*, now read as the statement that $\operatorname{Sym}$ takes direct sums to coproducts.
+which is the compatibility of the symmetric algebra with direct sums noted in *The Symmetric Algebra of a Module*, now read as the statement that $\operatorname{sym}$ takes direct sums to coproducts.
 
 ## The Polynomial Algebra Revisited
 
@@ -92,9 +92,9 @@ A **presentation** of a commutative $R$-algebra is an isomorphism $A \cong R[x_s
 
 ### Grading and the Symmetric Algebra
 
-$\operatorname{Sym}(M)$ is graded, $\operatorname{Sym}(M) = \bigoplus_{n\geq0}\operatorname{Sym}^n(M)$ with $\operatorname{Sym}^n$ the symmetric powers of *Symmetric Powers*, and the product maps $\operatorname{Sym}^m \times \operatorname{Sym}^n \to \operatorname{Sym}^{m+n}$. The polynomial algebra is the free graded commutative algebra in the sense that homomorphisms of algebras respect the grading when the generators are assigned degrees; for degree-one generators $x_1, \ldots, x_n$ the component $\operatorname{Sym}^k$ of total degree $k$ has rank $\binom{n+k-1}{k}$, the number of monomials of degree $k$.
+$\operatorname{sym}(M)$ is graded, $\operatorname{sym}(M) = \bigoplus_{n\geq0}\operatorname{sym}^n(M)$ with $\operatorname{sym}^n$ the symmetric powers of *Symmetric Powers*, and the product maps $\operatorname{sym}^m \times \operatorname{sym}^n \to \operatorname{sym}^{m+n}$. The polynomial algebra is the free graded commutative algebra in the sense that homomorphisms of algebras respect the grading when the generators are assigned degrees; for degree-one generators $x_1, \ldots, x_n$ the component $\operatorname{sym}^k$ of total degree $k$ has rank $\binom{n+k-1}{k}$, the number of monomials of degree $k$.
 
-**Proposition.** $\operatorname{rank}_R \operatorname{Sym}^k(R^n) = \binom{n+k-1}{k}$, the dimension when $R$ is a field.
+**Proposition.** $\operatorname{rank}_R \operatorname{sym}^k(R^n) = \binom{n+k-1}{k}$, the dimension when $R$ is a field.
 
 *Proof.* A monomial $x_1^{a_1}\cdots x_n^{a_n}$ of total degree $k$ corresponds to a weak composition $a_1 + \cdots + a_n = k$ with $a_i \geq 0$; the number of such compositions is the number of ways to place $n - 1$ separators among $k$ identical objects, namely $\binom{n+k-1}{n-1} = \binom{n+k-1}{k}$.
 
@@ -254,8 +254,8 @@ A **commutative $R$-algebra** is an associative, commutative, unital $R$-algebra
 | $\mathsf{CAlg}_R$ | Category of commutative $R$-algebras |
 | $A \otimes_R B$ | Tensor product, the coproduct in $\mathsf{CAlg}_R$ |
 | $R[X] = R[x_s : s \in X]$ | Free commutative algebra on $X$ |
-| $\operatorname{Sym}(M)$ | Symmetric algebra, free commutative algebra on $M$ |
-| $\operatorname{Sym}^k(M)$ | $k$-th symmetric power |
+| $\operatorname{sym}(M)$ | Symmetric algebra, free commutative algebra on $M$ |
+| $\operatorname{sym}^k(M)$ | $k$-th symmetric power |
 | $\mathrm{P}$, $\mathrm{M}$ | Prime ideal, maximal ideal |
 | $\operatorname{Spec} A$ | Spectrum: set of prime ideals |
 | $\operatorname{MaxSpec} A$ | Set of maximal ideals (closed points) |

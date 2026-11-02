@@ -45,7 +45,7 @@ named the **general plain bilinear form** and the **Hermitian form**; their **al
 
 ## The General Plain Sesqualgebra and the Ternary Product
 
-**Definition.** The **general plain sesqualgebra (GPS)** over $\mathbb{C}$ is the pair $(\mathbb{C}, \star)$ with the sesquilinear product $Q_1\star Q_2 = Q_1\bar Q_2$.
+**Definition.** The **general plain sesqualgebra (gps)** over $\mathbb{C}$ is the pair $(\mathbb{C}, \star)$ with the sesquilinear product $Q_1\star Q_2 = Q_1\bar Q_2$.
 
 **Theorem.** The associator of $\star$ is $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3 - Q_3)$, nonzero but confined to the anti-self-adjoint part of the third slot; its **ternary product** $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ is symmetric in the outer slots, Hermitian-symmetric, $\overline{\{Q_1,Q_2,Q_3\}} = \{\bar Q_1,\bar Q_2,\bar Q_3\}$, and satisfies the Jordan triple identity, so that the structure is a **$J^{*}$-algebra** (a Jordan triple with an involution).
 
@@ -84,7 +84,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | Structure | Object | Carrier | What it is |
 |---|---|---|---|
 | Field | $\mathbb{C}$ | $\mathbb{C}_{\mathbb{R}}$ | the product $Q_1Q_2$ |
-| General plain sesqualgebra (GPS) | $(\mathbb{C},\star)$ | $\mathbb{C}_{\mathbb{R}}$ | the product $Q_1\bar Q_2$ |
+| General plain sesqualgebra (gps) | $(\mathbb{C},\star)$ | $\mathbb{C}_{\mathbb{R}}$ | the product $Q_1\bar Q_2$ |
 | Two products | — | $\mathbb{C}_{\mathbb{R}}$ | $Q_1Q_2$, $Q_1\bar Q_2$ |
 | Two forms | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$ | $\mathbb{C}_{\mathbb{R}}$ | $Q_1Q_2$, $Q_1\bar Q_2$ as forms, Gram $[1]$ |
 | Two algebraic norms | $\langle Q_1\rangle, \langle Q_1\rangle_{*}$ | $\mathbb{C}$ | $Q_1^2$ anisotropic; $\lvert Q_1\rvert^2$ definite |
@@ -103,7 +103,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | $Q_1Q_2$, $Q_1\bar Q_2$ | the two products |
 | $\langle Q_1,Q_2\rangle = Q_1Q_2$, $\langle Q_1,Q_2\rangle_{*} = Q_1\bar Q_2$ | the two forms |
 | $\langle Q_1\rangle = Q_1^2$, $\langle Q_1\rangle_{*} = \lvert Q_1\rvert^2$ | the two algebraic norms |
-| $Q_1\star Q_2 = Q_1\bar Q_2$ | the sesquilinear product of the GPS |
+| $Q_1\star Q_2 = Q_1\bar Q_2$ | the sesquilinear product of the gps |
 | $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ | the ternary product, $J^{*}$-algebra |
 | $\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}}$ | real and imaginary axes |
 | $\mathsf M_2(Q_1) = q_1I + q'_1J$ | the Cayley matrix model |
@@ -113,7 +113,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 - [The Complex Numbers ($\mathbb{C}$)](the-complex-numbers.html), for the field itself: construction, algebraic closedness, conjugation, norm and trace, and the roots of unity.
 - [The Complexoid as a Vector Space over $\mathbb{R}$](the-complexoid-as-a-vector-space-over-r.html), *Complexoid Subspaces* and *Decompositions and Comparison of the Remarkable Subspaces of the Complexoid*, for the real and complex readings of the carrier, the involution and its two blocks.
 - [The Two Products of the Complexoid Space](the-two-products-of-the-complexoid-space.html), *Relations and Comparison Between the Two Products* and [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.html), for the two products, their comparison, and their forms and algebraic norms.
-- [The Sesquilinear Product of the Complexoid Space](the-sesquilinear-product-of-the-complexoid-space.html) and [The Hermitian Form and the Positivity of the Complexoid Algebra](the-hermitian-form-and-the-positivity-of-the-complexoid-algebra.html), for the GPS, the ternarisation and the positivity of the form.
+- [The Sesquilinear Product of the Complexoid Space](the-sesquilinear-product-of-the-complexoid-space.html) and [The Hermitian Form and the Positivity of the Complexoid Algebra](the-hermitian-form-and-the-positivity-of-the-complexoid-algebra.html), for the gps, the ternarisation and the positivity of the form.
 - *The Ternary Product of the Complexoid Space*, for the ternary operation in full.
 - [The Matrix Element Representations of the Complexoid](the-matrix-element-representations-of-the-complexoid.html), for the two matrix models and their commutants.
 - [Jordan Triples with an Involution](jordan-triples-with-an-involution.html), *Algebraic J\*-Algebras*, *Hermitian Forms over Algebras and Norms* and *The Norm Defined by a Form*, for the general theory of a sesqualgebra, of a ternary product and of an algebraic norm.

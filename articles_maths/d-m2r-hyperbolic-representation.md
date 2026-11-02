@@ -390,7 +390,7 @@ $$
 spanned by the split form. So
 
 $$
-\operatorname{Sym}_2(\mathbb{R})=M_2(\mathbb{D})\oplus\mathbb{R}g,
+\operatorname{sym}_2(\mathbb{R})=M_2(\mathbb{D})\oplus\mathbb{R}g,
 $$
 
 and the complement is exactly the matrix of the norm. The ambient then splits as

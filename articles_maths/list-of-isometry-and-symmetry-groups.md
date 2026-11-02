@@ -21,7 +21,7 @@ The isometry group is introduced for an arbitrary distance space and then refine
 | the Myers–Steenrod theorem | the isometries of a Riemannian manifold are smooth, so its isometry group is a Lie group | *Riemannian Geometry*; *Metric Geometry* |
 | the isometry group of a homogeneous space | a space $G/H$ with $G$-invariant metric has $\operatorname{Isom}(X) \supseteq G$; the model spaces are symmetric spaces $G/O(2)$ | *Non-Euclidean Geometry*; *Symmetric Spaces* |
 | the trichotomy of the model geometries | $E(2) = \mathbb{R}^2 \rtimes O(2)$, $O(3)$ and $\operatorname{PSL}(2,\mathbb{R})\rtimes\mathbb{Z}/2$, all of dimension three | *Non-Euclidean Geometry*; *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* |
-| the isometry group of a discrete space | every bijection is an isometry; $\operatorname{Isom}(X) = \operatorname{Sym}(X)$ when the distance separates the points | *Metric, Uniform and Complete Spaces* |
+| the isometry group of a discrete space | every bijection is an isometry; $\operatorname{Isom}(X) = \operatorname{sym}(X)$ when the distance separates the points | *Metric, Uniform and Complete Spaces* |
 | the isometry group as a transformation group | $\operatorname{Isom}(X)$ acting on $X$, with the action faithful and the orbit the metric class of a point | *Transformation Groups*; *Group Actions and Structure* |
 
 ## The Three Model Geometries
@@ -45,7 +45,7 @@ A crystallographic group is a discrete subgroup of a Euclidean isometry group wi
 
 | Object or statement | The content | Introduced in |
 |---|---|---|
-| the symmetry group of a figure | $\operatorname{Sym}(F) = \{g \in E(n) : gF = F\}$; a group under composition | *Symmetry, Point and Crystallographic Groups* |
+| the symmetry group of a figure | $\operatorname{sym}(F) = \{g \in E(n) : gF = F\}$; a group under composition | *Symmetry, Point and Crystallographic Groups* |
 | a finite symmetry group fixes a point | a bounded figure has a finite symmetry group conjugate to a finite subgroup of $O(n)$ | *Symmetry, Point and Crystallographic Groups*; *Finite Groups and Symmetry* |
 | the point group $P = \ell(\Gamma)$ | the finite image of a crystallographic group in $O(n)$ | *Symmetry, Point and Crystallographic Groups* |
 | the translation subgroup $T_\Gamma$ | $\Gamma \cap \mathbb{R}^n$, a lattice of rank $n$; its basis $b_1,\ldots,b_n$ | *Symmetry, Point and Crystallographic Groups* |
@@ -78,7 +78,7 @@ The finite symmetry groups are the finite subgroups of the orthogonal group: the
 
 | Object | Why the expected statement fails | Introduced in |
 |---|---|---|
-| the isometry group of a general metric space | it need not be a Lie group and need not act transitively; a space with a discrete metric has $\operatorname{Isom}(X) = \operatorname{Sym}(X)$ | *Metric Geometry*; *Metric, Uniform and Complete Spaces* |
+| the isometry group of a general metric space | it need not be a Lie group and need not act transitively; a space with a discrete metric has $\operatorname{Isom}(X) = \operatorname{sym}(X)$ | *Metric Geometry*; *Metric, Uniform and Complete Spaces* |
 | the isometry group of the hyperbolic space | $O(n,1)$ is non-compact and has four components; its identity component is the relevant group, unlike the compact $O(n+1)$ | *Hyperbolic Geometry*; *Pseudo-Riemannian and Lorentzian Geometry* |
 | the orientation-preserving hyperbolic isometry group | $\operatorname{PSL}(2,\mathbb{R})$ is only the index-two part of $\operatorname{Isom}(\mathbb{H}^2) = \operatorname{PGL}(2,\mathbb{R})$ | *Hyperbolic Geometry*; *Möbius and Lie Sphere Geometry* |
 | the symmetry group of a periodic figure | it does not fix a point and is infinite; only the symmetry group of a bounded figure is finite and conjugate to a subgroup of $O(n)$ | *Symmetry, Point and Crystallographic Groups* |
@@ -98,7 +98,7 @@ Objects that a reader may expect in a list of isometry and symmetry groups, and 
 
 ## Summary
 
-This article has listed the isometry and symmetry groups of the corpus: the isometry group $\operatorname{Isom}(X)$ of a metric space with its compact-open topology, the Myers–Steenrod theorem that it is a Lie group for a Riemannian manifold, and its identification with $\operatorname{Sym}(X)$ in the discrete case; the isometry groups of the three model geometries, $\operatorname{Isom}(\mathbb{R}^n) = E(n)$, $\operatorname{Isom}(S^n) = O(n+1)$ and $\operatorname{Isom}(\mathbb{H}^n) = O(n,1)$, with the hyperbolic case read through $\operatorname{PGL}(2,\mathbb{R})$ and $\operatorname{PGL}(2,\mathbb{C})$; the crystallographic, wallpaper and frieze groups with the point group, the lattice, the crystallographic restriction and the Bieberbach theorems; and the symmetry groups of the regular polygons and the Platonic solids, with the polyhedral groups $T$, $O$, $I$ and their binary covers. Beside the examples stand the non-examples: the general metric space whose isometry group need not be a Lie group, the non-compact hyperbolic group and its orientation-preserving part, the periodic figure whose symmetry group is infinite, and the forbidden lattice rotations. The list introduces and proves nothing; it is the index of the isometry and symmetry groups of the corpus.
+This article has listed the isometry and symmetry groups of the corpus: the isometry group $\operatorname{Isom}(X)$ of a metric space with its compact-open topology, the Myers–Steenrod theorem that it is a Lie group for a Riemannian manifold, and its identification with $\operatorname{sym}(X)$ in the discrete case; the isometry groups of the three model geometries, $\operatorname{Isom}(\mathbb{R}^n) = E(n)$, $\operatorname{Isom}(S^n) = O(n+1)$ and $\operatorname{Isom}(\mathbb{H}^n) = O(n,1)$, with the hyperbolic case read through $\operatorname{PGL}(2,\mathbb{R})$ and $\operatorname{PGL}(2,\mathbb{C})$; the crystallographic, wallpaper and frieze groups with the point group, the lattice, the crystallographic restriction and the Bieberbach theorems; and the symmetry groups of the regular polygons and the Platonic solids, with the polyhedral groups $T$, $O$, $I$ and their binary covers. Beside the examples stand the non-examples: the general metric space whose isometry group need not be a Lie group, the non-compact hyperbolic group and its orientation-preserving part, the periodic figure whose symmetry group is infinite, and the forbidden lattice rotations. The list introduces and proves nothing; it is the index of the isometry and symmetry groups of the corpus.
 
 ## Summary of Notation
 
@@ -108,7 +108,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $X$, $d(x,y)$ | a metric space, its distance |
 | $\operatorname{Isom}(X)$ | the isometry group, with the compact-open topology |
-| $\operatorname{Sym}(F)$, $\operatorname{Sym}(X)$ | the symmetry group of a figure, of a set |
+| $\operatorname{sym}(F)$, $\operatorname{sym}(X)$ | the symmetry group of a figure, of a set |
 | $E(n) = \mathbb{R}^n \rtimes O(n)$ | the Euclidean isometry group |
 | $S^n_R$, $O(n+1)$, $SO(n+1)$ | the round sphere, its isometry group and the orientation-preserving part |
 | $\mathbb{H}^n$, $O(n,1)$ | hyperbolic space, its isometry group; the Lorentz-type group |

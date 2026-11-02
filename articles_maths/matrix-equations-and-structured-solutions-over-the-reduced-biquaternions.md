@@ -167,7 +167,7 @@ The following identities were checked by recomputation on random matrices of at 
 - The four encodings $\mathsf E_T,\mathsf E_{ST},\mathsf E_H,\mathsf E_C$ reproduce their structures, the condition $\mathrm{vec}(X)=\mathsf E_L\xi_L$ holds, and each has full column rank, in each case for $n=3,4,5$.
 - The constrained least squares equivalence: for the four classical structures the stacked real system $\begin{pmatrix}Q_1\\ Q_2\end{pmatrix}x=e$ and the direct constrained problem have the same minimiser.
 - The structured solution: the solution of the theorem is minimal among random structured perturbations, and the normal equations $\mathsf C^{\dagger}(\mathsf C\xi-\mathrm{vec}(E))=0$ hold elementwise.
-- The partition formula of Cline for the pseudoinverse of the stacked matrix, and the Penrose equations $APA=A$ and $PAP=P$.
+- The partition formula of Cline for the pseudoinverse of the stacked matrix, and the Penrose equations $apa=A$ and $PAP=P$.
 - The PDIEP: with the full set of eigenpairs of a symmetric Toeplitz matrix the framework recovers the matrix.
 
 ## Summary

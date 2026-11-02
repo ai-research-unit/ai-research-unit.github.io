@@ -206,8 +206,8 @@ The theorem is the structure theorem of the subject, and its proof is operadic a
 
 The same formality machinery applies to the deformations of the enveloping algebra and to the Hopf-algebraic deformations of *Quantum Groups*. The relevant statements are:
 
-- the enveloping algebra $\mathrm{U}(\mathrm{G})$ of a Lie algebra is the quotient of a deformation of $\operatorname{Sym}(\mathrm{G})$ by the linear Poisson bracket determined by the Lie bracket, by the symmetrisation map;
-- the deformation of $\operatorname{Sym}(\mathrm{G})$ by that bracket, with the **campbell–Hausdorff**-type star product, gives a deformation whose associated graded is the symmetric algebra;
+- the enveloping algebra $\mathrm{U}(\mathrm{G})$ of a Lie algebra is the quotient of a deformation of $\operatorname{sym}(\mathrm{G})$ by the linear Poisson bracket determined by the Lie bracket, by the symmetrisation map;
+- the deformation of $\operatorname{sym}(\mathrm{G})$ by that bracket, with the **campbell–Hausdorff**-type star product, gives a deformation whose associated graded is the symmetric algebra;
 - a deformation of a Hopf algebra is a deformation of the underlying algebra together with deformed coproduct and antipode, and the first-order term of the coproduct deformation is a **coboundary Poisson structure** on the Hopf algebra; Drinfeld's classification of deformations of $\mathrm{U}(\mathrm{G})$ and the theory of quantum groups at generic $q$ are the resulting statements, and they are treated in *Quantum Groups*.
 
 **Theorem (Drinfeld, standard).** The formal deformations of $\mathrm{U}(\mathrm{G})$ as a Hopf algebra over $k[[h]]$ are classified by the second cohomology of $\mathrm{G}$ with coefficients in $\wedge^2\mathrm{G}$, equivalently by the **quasi-Lie bialgebra** structures on $\mathrm{G}$; for $\mathrm{G}$ semisimple there is a unique nontrivial deformation up to equivalence and up to the choice of the symmetric invariant element used in the normalisation, and it is $U_h(\mathrm{G})$.

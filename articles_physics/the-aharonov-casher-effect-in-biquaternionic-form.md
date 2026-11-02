@@ -95,7 +95,7 @@ evaluated in the state through the Hermitian form $\langle\tilde{Ϛ},\mathcal{A}
 If the dipole is transported adiabatically, the spin follows the instantaneous eigenstate of the effective Zeeman Hamiltonian $-\vec\mu\cdot\vec B_2$, and the acquired phase is the Berry phase of the effective-field loop. That phase is
 
 $$
-\gamma_{\mathrm{geo}} = -\frac{1}{2}\,\Omega_{\mathrm{sgn}},
+\gamma^{\mathrm{geo}} = -\frac{1}{2}\,\Omega_{\mathrm{sgn}},
 $$
 
 one half the oriented solid angle traced by the direction of $\vec B_2$ on the Bloch sphere. The AC integral above and this solid-angle expression agree in the adiabatic limit; the AC form is the more primitive one, since it does not require adiabaticity to be defined, while the solid-angle form exposes the geometry.
@@ -172,7 +172,7 @@ $$
 \phi_{HMW} = \frac{1}{\hbar}\oint\left(\vec B\times\vec d\right)\cdot d\vec r.
 $$
 
-The coupling is to the **motional electric field** $\vec E_{\mathrm{mot}} = \vec v\times\vec B$ seen by the dipole in its own rest frame. The asymmetry with the AC case is the asymmetry of the Lorentz field transformation in SI: the motional magnetic field is $\vec v\times\vec E/c^2$, while the motional electric field is $\vec v\times\vec B$, so the magnetic-dipole coupling carries the $1/c^2$ and the electric-dipole coupling does not.
+The coupling is to the **motional electric field** $\vec E^{\mathrm{mot}} = \vec v\times\vec B$ seen by the dipole in its own rest frame. The asymmetry with the AC case is the asymmetry of the Lorentz field transformation in SI: the motional magnetic field is $\vec v\times\vec E/c^2$, while the motional electric field is $\vec v\times\vec B$, so the magnetic-dipole coupling carries the $1/c^2$ and the electric-dipole coupling does not.
 
 The three effects — AB, AC and HMW — form the electric–magnetic dual triangle: charge is dual to magnetic flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. In the biquaternion framework all three are integrals of $\mathbb{M}_+$-valued or central connections; the spin-1/2 content is the AC case, and the HMW case couples to the electric dipole, which for a bare spin-1/2 vanishes by parity, as the treatment of the Zeeman and Stark effects records.
 

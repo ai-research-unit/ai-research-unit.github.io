@@ -163,7 +163,7 @@ A boost is a point of velocity space, and a path of boosts is a path in it; the 
 $$
 \boxed{\ \alpha = \pi-(A+B+C)\ } ,
 $$
-the angle defect of the geodesic triangle of velocity space whose three side lengths are $a$, $b$ and $\rho$; equivalently, since the curvature is $-1$, $\alpha$ is the **hyperbolic area** of that triangle. In physical units the angle is the area divided by $c^2$, $\alpha = A_{\mathrm{hyp}}/c^2$.
+the angle defect of the geodesic triangle of velocity space whose three side lengths are $a$, $b$ and $\rho$; equivalently, since the curvature is $-1$, $\alpha$ is the **hyperbolic area** of that triangle. In physical units the angle is the area divided by $c^2$, $\alpha = A^{\mathrm{hyp}}/c^2$.
 
 The triangle is the **rapidity triangle** of the loop: its sides are the three rapidities, and its existence is the triangle inequality of the geometry, $\rho<a+b$. The proposition says that the whole of the rotation produced by a closed path of boosts is measured by the hyperbolic area the three rapidities span, which is the Gauss–Bonnet theorem for the boost connection.
 
@@ -245,7 +245,7 @@ The composition of two boosts is the trigonometry of geodesic triangles. The rap
 | $\cosh\rho = \cosh a\cosh b+\cos\theta\sinh a\sinh b$ | Composition law of two boosts (spherical type) |
 | $\cosh\frac{d}{c} = \cosh\psi_1\cosh\psi_2-\cos\theta\sinh\psi_1\sinh\psi_2$ | Relative velocity (hyperbolic law of cosines) |
 | $c\mapsto ic$ | Sommerfeld interchange of the hyperbolic and spherical representations |
-| $\alpha = \pi-(A+B+C) = A_{\mathrm{hyp}}/c^2$ | Wigner angle = hyperbolic area of the rapidity triangle |
+| $\alpha = \pi-(A+B+C) = A^{\mathrm{hyp}}/c^2$ | Wigner angle = hyperbolic area of the rapidity triangle |
 | $\alpha = \frac{ab}{2}-\frac{ab(a^2+b^2)}{24}+\cdots$ | Small-loop expansion; the Euclidean area is the leading term |
 | $\lvert\vec v\rvert = c$, $\langle\tilde{Q}\rangle_{\natural} = 0$ | Boundary at infinity = light cone = zero-divisor cone |
 

@@ -4,7 +4,7 @@
 
 A **regular rooted tree** is the tree whose vertices are the finite words in a finite alphabet $X$, the empty word $\varnothing$ being the root and the word $vx$ being the child of $v$ reached by the letter $x$. Every vertex $v$ carries a subtree $\mathcal{T}_v$ rooted at it, and $\mathcal{T}_v$ is isomorphic to the whole tree $\mathcal{T}$ by the map $vw \mapsto w$. An **automorphism** of the tree is a bijection of the vertices fixing the root and preserving adjacency, hence preserving the level of a vertex; the group of them is written $\operatorname{Aut}(\mathcal{T})$.
 
-Such an automorphism $g$ acts on the subtree $\mathcal{T}_v$ by carrying it isomorphically onto the subtree $\mathcal{T}_{g(v)}$, and once the two subtrees are read as copies of $\mathcal{T}$ the action becomes an automorphism of $\mathcal{T}$, the **section** $g|_v$. A subgroup $G \leq \operatorname{Aut}(\mathcal{T})$ is **self-similar** if the section of every element of $G$ at every vertex is again an element of $G$. The condition is a closure property, and it says that the group reproduces itself inside every subtree: the image of $G$ under the section at $v$ lies in $G$, so that $G$ acts on the subtree $\mathcal{T}_v$ through its own automorphisms. Written as a recursion, an element is determined by its permutation of the first level and its one section per letter, and the self-similar group therefore embeds in its own wreath product, $G \hookrightarrow G \wr \operatorname{Sym}(X)$.
+Such an automorphism $g$ acts on the subtree $\mathcal{T}_v$ by carrying it isomorphically onto the subtree $\mathcal{T}_{g(v)}$, and once the two subtrees are read as copies of $\mathcal{T}$ the action becomes an automorphism of $\mathcal{T}$, the **section** $g|_v$. A subgroup $G \leq \operatorname{Aut}(\mathcal{T})$ is **self-similar** if the section of every element of $G$ at every vertex is again an element of $G$. The condition is a closure property, and it says that the group reproduces itself inside every subtree: the image of $G$ under the section at $v$ lies in $G$, so that $G$ acts on the subtree $\mathcal{T}_v$ through its own automorphisms. Written as a recursion, an element is determined by its permutation of the first level and its one section per letter, and the self-similar group therefore embeds in its own wreath product, $G \hookrightarrow G \wr \operatorname{sym}(X)$.
 
 The article develops the tree and its boundary, the automorphisms and their sections, the wreath recursion and the portrait of an element, the definition of a self-similar action and the equivalent formulations, the level-transitive, self-replicating and recurrent actions, the standard examples — the adding machine, the infinite dihedral group, the Grigorchuk group, the lamplighter group, the groups of the Sierpiński gasket and the Gupta–Sidki groups — and the branch and weakly branch groups with their rigid stabilizers. It states which of these groups are torsion, amenable or just infinite, and it records the growth of the Grigorchuk group, which is the intermediate-growth example of *Geometric Group Theory*.
 
@@ -72,7 +72,7 @@ $$
 
 **Proof.** For every word $w$, $(gh)(vw) = g(h(vw)) = g\bigl(h(v)\,h|_v(w)\bigr) = g(h(v))\,g|_{h(v)}(h|_v(w))$, and the left side is $(gh)(v)\,(gh)|_v(w) = g(h(v))\,(gh)|_v(w)$; comparing gives the identity.
 
-**Definition (the root permutation and the recursion).** Write $\sigma(g) \in \operatorname{Sym}(X)$ for the permutation of the letters that $g$ induces on the first level, $\sigma(g)(x) = g(x)$. Then
+**Definition (the root permutation and the recursion).** Write $\sigma(g) \in \operatorname{sym}(X)$ for the permutation of the letters that $g$ induces on the first level, $\sigma(g)(x) = g(x)$. Then
 
 $$
 g(xw) = \sigma(g)(x)\cdot g|_x(w) \qquad \text{for every } x \in X,\ w \in X^*,
@@ -92,7 +92,7 @@ $$
 
 **Example (the identity and the root swap).** The identity has $\sigma = \mathrm{id}$ and all sections equal to the identity. The automorphism $\varepsilon$ with $\sigma(\varepsilon)$ the transposition of the two letters of a binary alphabet and all sections the identity interchanges the two halves of the tree and is an involution: $\varepsilon^2 = \mathrm{id}$.
 
-**Definition (portrait).** Let $\alpha_v = \sigma(g|_v) \in \operatorname{Sym}(X)$ be the permutation induced by the section at $v$. The family $(\alpha_v)_{v \in X^*}$ is the **portrait** of $g$; it determines $g$, since the action on an infinite word is read letter by letter,
+**Definition (portrait).** Let $\alpha_v = \sigma(g|_v) \in \operatorname{sym}(X)$ be the permutation induced by the section at $v$. The family $(\alpha_v)_{v \in X^*}$ is the **portrait** of $g$; it determines $g$, since the action on an infinite word is read letter by letter,
 
 $$
 (a_1a_2a_3\cdots)^{\,g} = \alpha_{\varnothing}(a_1)\,\alpha_{a_1}(a_2)\,\alpha_{a_1a_2}(a_3)\cdots,
@@ -113,7 +113,7 @@ and conversely every labelling of $X^*$ by permutations is the portrait of exact
 **Theorem (the wreath recursion).** Let $G \leq \operatorname{Aut}(\mathcal{T})$ be self-similar. The map
 
 $$
-G \to G \wr \operatorname{Sym}(X) = G^{X} \rtimes \operatorname{Sym}(X), \qquad g \mapsto \bigl((g|_x)_{x \in X}, \sigma(g)\bigr),
+G \to G \wr \operatorname{sym}(X) = G^{X} \rtimes \operatorname{sym}(X), \qquad g \mapsto \bigl((g|_x)_{x \in X}, \sigma(g)\bigr),
 $$
 
 is an injective group homomorphism, so that $G$ embeds in its own permutational wreath product. Iterating the recursion one has, for every $n$, an embedding
@@ -124,7 +124,7 @@ $$
 
 where the finite group $\operatorname{Aut}(\mathcal{T}_n)$ acts on the level $X^n$.
 
-**Proof.** The multiplication rules of the sections and of the root permutation are exactly the multiplication in the semidirect product $G^{X} \rtimes \operatorname{Sym}(X)$, with $\operatorname{Sym}(X)$ acting on the $d$ coordinates $G$; injectivity holds because an element with all sections trivial and trivial root permutation acts trivially, which is read on the portraits. The iterated statement follows by applying the recursion to the sections, which are again elements of $G$.
+**Proof.** The multiplication rules of the sections and of the root permutation are exactly the multiplication in the semidirect product $G^{X} \rtimes \operatorname{sym}(X)$, with $\operatorname{sym}(X)$ acting on the $d$ coordinates $G$; injectivity holds because an element with all sections trivial and trivial root permutation acts trivially, which is read on the portraits. The iterated statement follows by applying the recursion to the sections, which are again elements of $G$.
 
 The wreath product is that of *Infinite Groups*. The recursion is what the name records: a self-similar group is a subgroup of its own wreath product, and the elements of $G$ are obtained from the elements in the subtrees by the same rule that defines the group.
 
@@ -280,7 +280,7 @@ The **level-$n$ rigid stabiliser** is the subgroup $\operatorname{Rist}_G(n)$ ge
 
 ## Summary
 
-A regular rooted tree on an alphabet $X$ has for vertices the finite words in $X$, and an automorphism of it is determined by a permutation of the first level and one section at each letter, the **wreath recursion** $g = (g|_0,\dots,g|_{d-1})\,\sigma(g)$. The sections multiply by $(gh)|_v = g|_{h(v)}h|_v$, and the portrait of an automorphism is the labelling of the tree by the permutations of its sections; with the inverse limit topology $\operatorname{Aut}(\mathcal{T})$ is a profinite group acting on the Cantor space $X^{\omega}$ of infinite words. A subgroup $G$ is **self-similar** when the section of every element at every vertex lies in $G$, which is exactly the condition that $G$ embeds in its own permutational wreath product $G \wr \operatorname{Sym}(X)$; the action is level-transitive when it is transitive on each level, recurrent when the virtual endomorphisms $\varphi_x(g) = g|_x$ are onto, and self-replicating when the sections at a vertex fill the whole group. A level-transitive recurrent self-similar group is a **fractal group**.
+A regular rooted tree on an alphabet $X$ has for vertices the finite words in $X$, and an automorphism of it is determined by a permutation of the first level and one section at each letter, the **wreath recursion** $g = (g|_0,\dots,g|_{d-1})\,\sigma(g)$. The sections multiply by $(gh)|_v = g|_{h(v)}h|_v$, and the portrait of an automorphism is the labelling of the tree by the permutations of its sections; with the inverse limit topology $\operatorname{Aut}(\mathcal{T})$ is a profinite group acting on the Cantor space $X^{\omega}$ of infinite words. A subgroup $G$ is **self-similar** when the section of every element at every vertex lies in $G$, which is exactly the condition that $G$ embeds in its own permutational wreath product $G \wr \operatorname{sym}(X)$; the action is level-transitive when it is transitive on each level, recurrent when the virtual endomorphisms $\varphi_x(g) = g|_x$ are onto, and self-replicating when the sections at a vertex fill the whole group. A level-transitive recurrent self-similar group is a **fractal group**.
 
 The examples are the adding machine $\langle a\rangle \cong \mathbb{Z}$, whose power $a^k$ fixes the level $n$ exactly when $2^n$ divides $k$; the infinite dihedral group $\langle t, b\rangle$, generated by two involutions whose product has infinite order; the Grigorchuk group $G = \langle a, b, c, d\rangle$ with $a^2 = b^2 = c^2 = d^2 = 1$ and $bc = d$, $bd = c$, $cd = b$, a branch, just infinite, amenable but not elementary amenable torsion group of intermediate growth, whose volume growth satisfies $\lim_{n}\log\log v(n)/\log n = \log2/\log\lambda_0 \approx 0.7674$ with $\lambda_0$ the positive root of $X^3-X^2-2X-4$; the lamplighter group $(\mathbb{Z}/2)^{\mathbb{Z}} \rtimes \mathbb{Z}$, self-similar and level-transitive but not contracting; the group of the Sierpiński gasket, generated by three involutions on the ternary tree; and the Gupta–Sidki groups, the torsion groups that establish the Burnside counterexamples.
 
@@ -301,7 +301,7 @@ A level-transitive group is **weakly branch** when no rigid stabiliser is trivia
 | $(gh)\|_v = g\|_{h(v)}h\|_v$ | The multiplication rule of the sections |
 | $\sigma(g)$, $\alpha_v$ | The root permutation of $g$; the portrait permutation at $v$ |
 | $g = (g\|_0,\dots,g\|_{d-1})\,\sigma(g)$ | The wreath recursion |
-| $G \hookrightarrow G \wr \operatorname{Sym}(X)$ | A self-similar group is a subgroup of its own wreath product |
+| $G \hookrightarrow G \wr \operatorname{sym}(X)$ | A self-similar group is a subgroup of its own wreath product |
 | $\operatorname{St}(x)$, $\operatorname{St}_n$ | The stabiliser of the vertex $x$ and of the level $n$ |
 | $\varphi_x(g) = g\|_x$ | The virtual endomorphism at $x$; the action is recurrent when it is onto |
 | self-replicating | For all $x,y,h$ there is $g$ with $g(x) = y$ and $g\|_x = h$ |

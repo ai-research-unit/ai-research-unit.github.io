@@ -251,7 +251,7 @@ Two functions are equal when they have the same domain, the same codomain and th
 
 **Proof.** For each $x$, both sides of the associativity identity evaluate to $h(g(f(x)))$, so the two functions agree at every point. The identities are immediate from the definitions.
 
-Associativity makes the set of functions $X \to X$ under composition a monoid, whose invertible elements are the symmetric group $\operatorname{Sym}(X)$. Composition is not commutative in general: on $X = \{1,2\}$ the transposition and the constant map do not commute.
+Associativity makes the set of functions $X \to X$ under composition a monoid, whose invertible elements are the symmetric group $\operatorname{sym}(X)$. Composition is not commutative in general: on $X = \{1,2\}$ the transposition and the constant map do not commute.
 
 ### Injective, Surjective and Bijective Functions
 

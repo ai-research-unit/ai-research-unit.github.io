@@ -11,7 +11,7 @@ The action-theoretic definitions and the notion of a transformation group are as
 
 ### Orbits, Stabilisers, and the Orbit–Stabiliser Theorem
 
-An action of a group $G$ on a set $X$ is a map $G \times X \to X$, $(a, x) \mapsto a \cdot x$, with $e \cdot x = x$ and $(ab) \cdot x = a \cdot (b \cdot x)$; equivalently, a homomorphism $\rho : G \to \operatorname{Sym}(X)$. The orbit and stabiliser of $x \in X$ are
+An action of a group $G$ on a set $X$ is a map $G \times X \to X$, $(a, x) \mapsto a \cdot x$, with $e \cdot x = x$ and $(ab) \cdot x = a \cdot (b \cdot x)$; equivalently, a homomorphism $\rho : G \to \operatorname{sym}(X)$. The orbit and stabiliser of $x \in X$ are
 
 $$
 \operatorname{Orb}(x) = \{a \cdot x : a \in G\}, \qquad \operatorname{Stab}(x) = \{a \in G : a \cdot x = x\}.
@@ -45,7 +45,7 @@ expresses the size of a $G$-set as a sum of divisors of $|G|$. Second, if $G$ ac
 
 **Example.** The action of $S_4$ on the six two-element subsets of $\{1,2,3,4\}$ is transitive, and the stabiliser of $\{1,2\}$ has order $4$, so $6 = 24/4$, in accordance with *Groups*, §11.
 
-**Example.** Let $H \leq G$ and let $G$ act on $G/H$ by left translation. The action is transitive and the stabiliser of the coset $H$ is $H$ itself. The kernel of the action is the **core** $\bigcap_{a \in G} a H a^{-1}$, the largest subgroup of $H$ normal in $G$; thus $G/\operatorname{core}(H)$ embeds in $\operatorname{Sym}(G/H)$.
+**Example.** Let $H \leq G$ and let $G$ act on $G/H$ by left translation. The action is transitive and the stabiliser of the coset $H$ is $H$ itself. The kernel of the action is the **core** $\bigcap_{a \in G} a H a^{-1}$, the largest subgroup of $H$ normal in $G$; thus $G/\operatorname{core}(H)$ embeds in $\operatorname{sym}(G/H)$.
 
 ### The Conjugation Action and the Class Equation
 

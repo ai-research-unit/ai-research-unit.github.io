@@ -8,15 +8,15 @@
 $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu\in\mathbb{C},
 $$
-and the entries of its regular matrices are these coefficients with the signs of the multiplication table. The other articles call $\mathcal{E}$ the coefficient basis. This article calls the frame the axis-free basis, because no one of the three vector directions is singled out in it, and writes $L_\mu^{\mathrm{axf}}$ and $R_\mu^{\mathrm{axf}}$ for the matrices of the four units. The superscript $\mathrm{axf}$ is a label, not an exponent: $L_x^{\mathrm{axf}}$ is the left matrix of $\vec e_x$ in the axis-free basis, and its square is written $(L_x^{\mathrm{axf}})^2$.
+and the entries of its regular matrices are these coefficients with the signs of the multiplication table. The other articles call $\mathcal{E}$ the coefficient basis. This article calls the frame the axis-free basis, because no one of the three vector directions is singled out in it, and writes $L^{\mathrm{axf}}_{e_\mu}$ and $R^{\mathrm{axf}}_{e_\mu}$ for the matrices of the four units. The superscript $\mathrm{axf}$ is a label, not an exponent: $L^{\mathrm{axf}}_{\vec e_x}$ is the left matrix of $\vec e_x$ in the axis-free basis, and its square is written $(L^{\mathrm{axf}}_{\vec e_x})^2$.
 
 **The algebra.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.
 
-**The result in one line.** The four left matrices $L_\mu^{\mathrm{axf}}$ are signed permutations and form a basis of the left copy $\mathbb{B}_L$; the four right matrices $R_\mu^{\mathrm{axf}}$ are signed permutations and form a basis of the right copy $\mathbb{B}_R$. The left matrix of a general element is displayed below. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.
+**The result in one line.** The four left matrices $L^{\mathrm{axf}}_{e_\mu}$ are signed permutations and form a basis of the left copy $\mathbb{B}_L$; the four right matrices $R^{\mathrm{axf}}_{e_\mu}$ are signed permutations and form a basis of the right copy $\mathbb{B}_R$. The left matrix of a general element is displayed below. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.
 
 **The two copies.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.
 
-**The one idea that is not in the two lists above.** The sixteen products $L^{\mathrm{axf}}_\mu R^{\mathrm{axf}}_\nu$ are a basis of the whole algebra $M_4(\mathbb{C})$, so an arbitrary endomorphism has a coordinate matrix $c(M)$ in that basis. The products are exactly the matrices of coefficient rank one, the least number of products summing to a matrix is $\operatorname{rank}c(M)$, and a change of the algebra basis carries $c$ to a congruence, so the rank and the length are properties of the operator rather than of the frame. §*The Coefficient Matrix and the Length* follows that chain, and its punchline is negative: the same array can display two operators of different length, and $E_{11}$ is the example.
+**The one idea that is not in the two lists above.** The sixteen products $L^{\mathrm{axf}}_{e_\mu} R^{\mathrm{axf}}_{e_\nu}$ are a basis of the whole algebra $M_4(\mathbb{C})$, so an arbitrary endomorphism has a coordinate matrix $c(M)$ in that basis. The products are exactly the matrices of coefficient rank one, the least number of products summing to a matrix is $\operatorname{rank}c(M)$, and a change of the algebra basis carries $c$ to a congruence, so the rank and the length are properties of the operator rather than of the frame. §*The Coefficient Matrix and the Length* follows that chain, and its punchline is negative: the same array can display two operators of different length, and $E_{11}$ is the example.
 
 **Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the axis-free basis. The six subspaces as matrix conditions, in the same basis, are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions*. The same element in the standard Peirce frame is *$M_4(\mathbb{C})$ Standard Peirce Representation*.
 
@@ -30,7 +30,7 @@ It is the basis of the structure constants: the product of two basis elements is
 
 **Why the name.** The name records the property of the frame: the three vector units $\vec e_x,\vec e_y,\vec e_z$ each square to $-e_t$ and together generate the vector subspace, and the basis lists them without choosing one of them as a direction. It contrasts with the standard Peirce frame, whose root $\vec\Xi=i\vec e_z$ is built on the $z$ direction. The label $\mathrm{axf}$ is the same word in three roman letters, lowercase like the other frame labels of the corpus.
 
-**The two copies.** The axis-free basis is a basis of the algebra $\mathbb{B}$. Left multiplication by $\tilde Q$ is an operator on $\mathbb{B}$, and its matrix in the axis-free basis is the left matrix $L^{\mathrm{axf}}(\tilde Q)$. Right multiplication is another operator on the same space, and its matrix is the right matrix $R^{\mathrm{axf}}(\tilde Q)$. The images of the four basis elements under $\rho_L$ are the four matrices $L_\mu^{\mathrm{axf}}$; the images under $\rho_R$ are the four matrices $R_\mu^{\mathrm{axf}}$. Each family is a basis of its copy because $\rho_L$ and $\rho_R$ are injective and the four $e_\mu$ are a basis.
+**The two copies.** The axis-free basis is a basis of the algebra $\mathbb{B}$. Left multiplication by $\tilde Q$ is an operator on $\mathbb{B}$, and its matrix in the axis-free basis is the left matrix $L^{\mathrm{axf}}(\tilde Q)$. Right multiplication is another operator on the same space, and its matrix is the right matrix $R^{\mathrm{axf}}(\tilde Q)$. The images of the four basis elements under $\rho_L$ are the four matrices $L^{\mathrm{axf}}_{e_\mu}$; the images under $\rho_R$ are the four matrices $R^{\mathrm{axf}}_{e_\mu}$. Each family is a basis of its copy because $\rho_L$ and $\rho_R$ are injective and the four $e_\mu$ are a basis.
 
 ### No Direction Is Privileged
 
@@ -115,51 +115,51 @@ $$
 $$
 The matrix unit $E_{11}$ has rank one; it is not the left matrix of any element, and neither is any other matrix of rank one or three. A general $4\times4$ matrix is an endomorphism of the carrier, not an element of the algebra.
 
-**What is lost.** Every quantitative statement of this article is a statement about the four-dimensional image: the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$, the doubled eigenvalues and the six rows of matrix conditions hold there and fail on a general matrix. A reader who meets $M_4(\mathbb{C})$ in the operators articles meets all sixteen dimensions at once, and the twelve transverse ones belong to an endomorphism rather than to an element. The distance is measured below: a general matrix is a sum of at most four products $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, and the number needed is its length (§*The Coefficient Matrix and the Length*).
+**What is lost.** Every quantitative statement of this article is a statement about the four-dimensional image: the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$, the doubled eigenvalues and the six rows of matrix conditions hold there and fail on a general matrix. A reader who meets $M_4(\mathbb{C})$ in the operators articles meets all sixteen dimensions at once, and the twelve transverse ones belong to an endomorphism rather than to an element. The distance is measured below: a general matrix is a sum of at most four products $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$, and the number needed is its length (§*The Coefficient Matrix and the Length*).
 
 ## The L and R Bases
 
-**The left basis.** The four matrices $L_\mu^{\mathrm{axf}}=L^{\mathrm{axf}}(e_\mu)$ are
+**The left basis.** The four matrices $L^{\mathrm{axf}}_{e_\mu}=L^{\mathrm{axf}}(e_\mu)$ are
 $$
-L_t^{\mathrm{axf}}=\mathrm I_4,\qquad
-L_x^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+L^{\mathrm{axf}}_{e_t}=\mathrm I_4,\qquad
+L^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
 $$
 $$
-L_y^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_z^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+L^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 Each is a signed permutation matrix. Each has determinant $1$; the identity has trace $4$, and the three vector matrices have trace $0$. Since $\rho_L$ is injective and the four units are a basis of $\mathbb{B}$, the four matrices are linearly independent and span $\mathbb{B}_L$: they are a basis of the left copy.
 
-**The right basis.** The four matrices $R_\mu^{\mathrm{axf}}=R^{\mathrm{axf}}(e_\mu)$ are
+**The right basis.** The four matrices $R^{\mathrm{axf}}_{e_\mu}=R^{\mathrm{axf}}(e_\mu)$ are
 $$
-R_t^{\mathrm{axf}}=\mathrm I_4,\qquad
-R_x^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+R^{\mathrm{axf}}_{e_t}=\mathrm I_4,\qquad
+R^{\mathrm{axf}}_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
 $$
 $$
-R_y^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-R_z^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+R^{\mathrm{axf}}_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+R^{\mathrm{axf}}_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 Each is a signed permutation matrix, of determinant $1$ and trace $4\delta_{\mu t}$; the four are a basis of $\mathbb{B}_R$. The two bases are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$, not two bases of one space.
 
 **The product of two basis matrices.** Write the two orders of the quaternion product as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ and $e_\nu e_\mu=\varepsilon' e_{\nu\mu}$, with $\varepsilon,\varepsilon'=\pm1$ and $e_{\mu\nu},e_{\nu\mu}$ units. Then
 $$
-L_\mu^{\mathrm{axf}}L_\nu^{\mathrm{axf}}=\varepsilon L_{\mu\nu}^{\mathrm{axf}},\qquad
-R_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}=\varepsilon' R_{\nu\mu}^{\mathrm{axf}}.
+L^{\mathrm{axf}}_{e_\mu}L^{\mathrm{axf}}_{e_\nu}=\varepsilon L^{\mathrm{axf}}_{e_\mu e_\nu},\qquad
+R^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}=\varepsilon' R^{\mathrm{axf}}_{e_\nu e_\mu}.
 $$
 The left product follows the order of the units; the right product reverses it, because $R_aR_b=R_{ba}$. For example,
 $$
-(L_x^{\mathrm{axf}})^2=(R_x^{\mathrm{axf}})^2=-\mathrm I_4,\qquad
-L_x^{\mathrm{axf}}L_y^{\mathrm{axf}}=L_z^{\mathrm{axf}},\qquad
-L_y^{\mathrm{axf}}L_x^{\mathrm{axf}}=-L_z^{\mathrm{axf}},
+(L^{\mathrm{axf}}_{\vec e_x})^2=(R^{\mathrm{axf}}_{\vec e_x})^2=-\mathrm I_4,\qquad
+L^{\mathrm{axf}}_{\vec e_x}L^{\mathrm{axf}}_{\vec e_y}=L^{\mathrm{axf}}_{\vec e_z},\qquad
+L^{\mathrm{axf}}_{\vec e_y}L^{\mathrm{axf}}_{\vec e_x}=-L^{\mathrm{axf}}_{\vec e_z},
 $$
-and on the right $R_x^{\mathrm{axf}}R_y^{\mathrm{axf}}=-R_z^{\mathrm{axf}}$, $R_y^{\mathrm{axf}}R_x^{\mathrm{axf}}=R_z^{\mathrm{axf}}$. The basis is closed under products up to sign, and the signs are the signs of the multiplication table. The products $L_\mu^{\mathrm{axf}}L_\nu^{\mathrm{axf}}$ and $R_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ need not be distinct; the set of the four left matrices together with their negatives is the quaternion group of order eight, and the same holds for the right matrices.
+and on the right $R^{\mathrm{axf}}_{\vec e_x}R^{\mathrm{axf}}_{\vec e_y}=-R^{\mathrm{axf}}_{\vec e_z}$, $R^{\mathrm{axf}}_{\vec e_y}R^{\mathrm{axf}}_{\vec e_x}=R^{\mathrm{axf}}_{\vec e_z}$. The basis is closed under products up to sign, and the signs are the signs of the multiplication table. The products $L^{\mathrm{axf}}_{e_\mu}L^{\mathrm{axf}}_{e_\nu}$ and $R^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ need not be distinct; the set of the four left matrices together with their negatives is the quaternion group of order eight, and the same holds for the right matrices.
 
 **Trace and determinant of a basis matrix.** Every basis matrix is invertible, with
 $$
-\det L_\mu^{\mathrm{axf}}=\det R_\mu^{\mathrm{axf}}=1,\qquad
-\operatorname{Tr}L_\mu^{\mathrm{axf}}=\operatorname{Tr}R_\mu^{\mathrm{axf}}=4\delta_{\mu t}.
+\det L^{\mathrm{axf}}_{e_\mu}=\det R^{\mathrm{axf}}_{e_\mu}=1,\qquad
+\operatorname{Tr}L^{\mathrm{axf}}_{e_\mu}=\operatorname{Tr}R^{\mathrm{axf}}_{e_\mu}=4\delta_{\mu t}.
 $$
-A sum of basis matrices need not be invertible: $L_x^{\mathrm{axf}}+R_x^{\mathrm{axf}}$ has rank $2$, for instance. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
+A sum of basis matrices need not be invertible: $L^{\mathrm{axf}}_{\vec e_x}+R^{\mathrm{axf}}_{\vec e_x}$ has rank $2$, for instance. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
 
 ## The Stitch Between the Left and the Right
 
@@ -245,7 +245,7 @@ R^{\mathrm{axf}}(\tilde Q)_{\mu\nu}=s_\mu s_\nu\,L^{\mathrm{axf}}(\tilde Q^{\nat
 =D\,L^{\mathrm{axf}}(\tilde Q^{\natural})\,D .
 $$
 
-**The stitch on the bases.** On the four units, $R_\mu^{\mathrm{axf}}=D(L_\mu^{\mathrm{axf}})^{\mathsf T}D$. Applying the formula twice returns $L^{\mathrm{axf}}(\tilde Q)$, because $D^2=\mathrm I_4$ and transposition is an involution. The stitch preserves the trace and the determinant, since neither transposition nor conjugation by a fixed matrix changes them:
+**The stitch on the bases.** On the four units, $R^{\mathrm{axf}}_{e_\mu}=D(L^{\mathrm{axf}}_{e_\mu})^{\mathsf T}D$. Applying the formula twice returns $L^{\mathrm{axf}}(\tilde Q)$, because $D^2=\mathrm I_4$ and transposition is an involution. The stitch preserves the trace and the determinant, since neither transposition nor conjugation by a fixed matrix changes them:
 $$
 \operatorname{Tr}R^{\mathrm{axf}}(\tilde Q)=\operatorname{Tr}L^{\mathrm{axf}}(\tilde Q),\qquad
 \det R^{\mathrm{axf}}(\tilde Q)=\det L^{\mathrm{axf}}(\tilde Q).
@@ -296,8 +296,8 @@ R^{P}(\tilde Q)=S^{-1}R^{\mathrm{axf}}(\tilde Q)S.
 $$
 On the four units,
 $$
-L_\mu^{\mathrm{axf}}=S\,L_\mu^{P}S^{-1},\qquad
-R_\mu^{\mathrm{axf}}=S\,R_\mu^{P}S^{-1}.
+L^{\mathrm{axf}}_{e_\mu}=S\,L^{P}_{e_\mu}S^{-1},\qquad
+R^{\mathrm{axf}}_{e_\mu}=S\,R^{P}_{e_\mu}S^{-1}.
 $$
 The coordinate columns change by
 $$
@@ -309,15 +309,15 @@ where $q_e=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ and $p=(P_+,X_+,X_-,P_-)^{\mathsf T}$ 
 
 ## The Coefficient Matrix and the Length
 
-**The sixteen products.** The sixteen products are $L^{\mathrm{axf}}_\mu R^{\mathrm{axf}}_\nu$. The sixteen are the signed permutation matrices of §*The Product*, and they are an orthogonal basis of $M_4(\mathbb{C})$:
+**The sixteen products.** The sixteen products are $L^{\mathrm{axf}}_{e_\mu} R^{\mathrm{axf}}_{e_\nu}$. The sixteen are the signed permutation matrices of §*The Product*, and they are an orthogonal basis of $M_4(\mathbb{C})$:
 $$
-\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu})^{\mathsf T}L^{\mathrm{axf}}_{\rho}R^{\mathrm{axf}}_{\sigma}\bigr)
+\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}L^{\mathrm{axf}}_{e_\rho}R^{\mathrm{axf}}_{e_\sigma}\bigr)
 =4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 The transpose suffices because the sixteen are real. Hence every matrix has a unique expansion
 $$
-M=\sum_{\mu,\nu}c_{\mu\nu}L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu},\qquad
-c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu})^{\mathsf T}M\bigr).
+M=\sum_{\mu,\nu}c_{\mu\nu}L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu},\qquad
+c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}M\bigr).
 $$
 The array $c(M)=(c_{\mu\nu})$ is the **coefficient matrix** of $M$. It is not the matrix: $M$ is the display of an endomorphism in the frame, $c(M)$ is the array of that endomorphism's coordinates in the sixteen-dimensional basis. The map $c$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not an algebra map.
 
@@ -327,13 +327,13 @@ $$
 $$
 the values are $0,1,2,3,4$, and $\ell(M)=4$ exactly when $\det c(M)\neq0$.
 
-**Why the question arises.** The left side of that identity never mentions a basis: a product is $\tilde Q X\tilde P$ on the algebra, and a sum of products is a sum of operators. The right side does. The coefficient matrix is computed from the sixteen $L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu}$, which are built from the four *basis elements* $e_\mu$, so another basis of $\mathbb{B}$ produces another array for the same $M$. Two bases must return the same rank, or the length would be a property of the frame and not of the operator. This frame is the one in which the question is sharpest, because the sixteen products are also the matrices of $M_4(\mathbb{R})$ and the frame is chosen for the real structure, not for the length.
+**Why the question arises.** The left side of that identity never mentions a basis: a product is $\tilde Q X\tilde P$ on the algebra, and a sum of products is a sum of operators. The right side does. The coefficient matrix is computed from the sixteen $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$, which are built from the four *basis elements* $e_\mu$, so another basis of $\mathbb{B}$ produces another array for the same $M$. Two bases must return the same rank, or the length would be a property of the frame and not of the operator. This frame is the one in which the question is sharpest, because the sixteen products are also the matrices of $M_4(\mathbb{R})$ and the frame is chosen for the real structure, not for the length.
 
 ### The Change of Frame Is a Congruence
 
 **The change.** Let $f_\alpha=\sum_\mu C_{\mu\alpha}e_\mu$ be another basis of $\mathbb{B}$, with $C$ invertible, and put $B_{\alpha\beta}=L(f_\alpha)R(f_\beta)$.
 
-**Proposition.** (i) $B_{\alpha\beta}=\sum_{\mu\nu}C_{\mu\alpha}C_{\nu\beta}L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu}$. (ii) If $c'$ is the coefficient matrix of $M$ in the basis $B$, then
+**Proposition.** (i) $B_{\alpha\beta}=\sum_{\mu\nu}C_{\mu\alpha}C_{\nu\beta}L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$. (ii) If $c'$ is the coefficient matrix of $M$ in the basis $B$, then
 $$
 c'(M)=C^{-1}c(M)\,C^{-\mathsf T}.
 $$
@@ -341,17 +341,17 @@ $$
 
 *Proof.* (i) $L$ and $R$ are linear in the element, so $L(f_\alpha)=\sum_\mu C_{\mu\alpha}L(e_\mu)$ and $R(f_\beta)=\sum_\nu C_{\nu\beta}R(e_\nu)$. (ii) Expand the same $M$ in the two bases and substitute (i):
 $$
-\sum_{\mu\nu}c_{\mu\nu}L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu}
+\sum_{\mu\nu}c_{\mu\nu}L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}
 =\sum_{\alpha\beta}c'_{\alpha\beta}B_{\alpha\beta}
-=\sum_{\mu\nu}\Bigl(\sum_{\alpha\beta}C_{\mu\alpha}c'_{\alpha\beta}C_{\nu\beta}\Bigr)L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu},
+=\sum_{\mu\nu}\Bigl(\sum_{\alpha\beta}C_{\mu\alpha}c'_{\alpha\beta}C_{\nu\beta}\Bigr)L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu},
 $$
 so $c=Cc'C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det C\neq0$, and multiplication on the left and on the right by invertible matrices preserves the rank.
 
-**Only the determinant is used.** The change of this article is $S$ of §*The Switch Between the Two Representations*, and it is not orthogonal: $S^{\dagger}S=\tfrac12\mathrm I_4$ and $\det S=-\tfrac14$. None of this enters the proof. The orthogonality of the $L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu}$ is what makes $\tfrac14\operatorname{Tr}(T^{\mathsf T}M)$ an extraction formula in *this* frame; it plays no part in the invariance.
+**Only the determinant is used.** The change of this article is $S$ of §*The Switch Between the Two Representations*, and it is not orthogonal: $S^{\dagger}S=\tfrac12\mathrm I_4$ and $\det S=-\tfrac14$. None of this enters the proof. The orthogonality of the $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ is what makes $\tfrac14\operatorname{Tr}(T^{\mathsf T}M)$ an extraction formula in *this* frame; it plays no part in the invariance.
 
 **The two displays of the corpus.** The Peirce operators are built from the same four units $e_\mu$, in the same order, so the abstract basis is common and only the display moves:
 $$
-L_{\mu}R_{\nu}=S^{-1}L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu}S,\qquad
+L_{e_\mu}R_{e_\nu}=S^{-1}L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}S,\qquad
 M^{P}=S^{-1}M^{\mathrm{axf}}S .
 $$
 The coefficient matrix is therefore literally unchanged, and the two operator articles compute one number. The congruence answers a different question: what happens when the sixteen are built from another basis of *elements*, for instance from the four Peirce elements themselves. That basis is not orthogonal, so the extraction formula no longer applies to it and the dual basis must be used; the rank, and with it the length, is unchanged by (iii).
@@ -371,14 +371,14 @@ The worked case $E_{11}$ is therefore typical, and the sixteen units are the arr
 **The proof.** Since $\operatorname{Tr}(A^{\mathsf T}E_{ij})=A_{ij}$ for every $A$,
 $$
 c(E_{ij})_{\mu\nu}
-=\tfrac14\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu})^{\mathsf T}E_{ij}\bigr)
-=\tfrac14\,(L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu})_{ij},
+=\tfrac14\operatorname{Tr}\bigl((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}E_{ij}\bigr)
+=\tfrac14\,(L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})_{ij},
 $$
-so $c(E_{ij})$ is a quarter of the array $W$ whose $(\mu,\nu)$ entry is the $(i,j)$ entry of $L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu}$. Now
+so $c(E_{ij})$ is a quarter of the array $W$ whose $(\mu,\nu)$ entry is the $(i,j)$ entry of $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$. Now
 $$
-W_{\mu\nu}=\sum_k (L^{\mathrm{axf}}_\mu)_{ik}(R^{\mathrm{axf}}_\nu)_{kj}.
+W_{\mu\nu}=\sum_k (L^{\mathrm{axf}}_{e_\mu})_{ik}(R^{\mathrm{axf}}_{e_\nu})_{kj}.
 $$
-Multiplication by a unit permutes the axis-free basis up to sign, so for fixed $i$ the nonzero entries of the four matrices $L^{\mathrm{axf}}_\mu$ in row $i$ stand in four different columns: there is exactly one $k=k(\mu)$ with $(L^{\mathrm{axf}}_\mu)_{ik}\neq0$, and $\mu\mapsto k(\mu)$ is a bijection. For the same reason, for fixed $j$ there is exactly one $k=k'(\nu)$ with $(R^{\mathrm{axf}}_\nu)_{kj}\neq0$, and $\nu\mapsto k'(\nu)$ is a bijection. Hence $W_{\mu\nu}\neq0$ exactly when $k(\mu)=k'(\nu)$, and then $W_{\mu\nu}=\pm1$. So $W$ has one nonzero entry in each row and each column, of modulus one, and $\det W=\pm1$. Therefore $\operatorname{rank}c(E_{ij})=4$ and $\ell(E_{ij})=4$.
+Multiplication by a unit permutes the axis-free basis up to sign, so for fixed $i$ the nonzero entries of the four matrices $L^{\mathrm{axf}}_{e_\mu}$ in row $i$ stand in four different columns: there is exactly one $k=k(\mu)$ with $(L^{\mathrm{axf}}_{e_\mu})_{ik}\neq0$, and $\mu\mapsto k(\mu)$ is a bijection. For the same reason, for fixed $j$ there is exactly one $k=k'(\nu)$ with $(R^{\mathrm{axf}}_{e_\nu})_{kj}\neq0$, and $\nu\mapsto k'(\nu)$ is a bijection. Hence $W_{\mu\nu}\neq0$ exactly when $k(\mu)=k'(\nu)$, and then $W_{\mu\nu}=\pm1$. So $W$ has one nonzero entry in each row and each column, of modulus one, and $\det W=\pm1$. Therefore $\operatorname{rank}c(E_{ij})=4$ and $\ell(E_{ij})=4$.
 
 **The table.**
 
@@ -418,7 +418,7 @@ L^{\mathrm{axf}}(\tilde Q_1)R^{\mathrm{axf}}(\tilde Q_2)=R^{\mathrm{axf}}(\tilde
 $$
 The identity is the associativity of the product, read on the two sides. It says that the left copy and the right copy are mutual commutants inside the ambient matrix algebra.
 
-**The product of a left and a right basis matrix.** The products $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$ are again signed permutations, and the product of two such matrices is a signed permutation. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
+**The product of a left and a right basis matrix.** The products $L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ are again signed permutations, and the product of two such matrices is a signed permutation. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
 
 ## The Trace
 
@@ -430,10 +430,10 @@ The trace is the sum of the four diagonal entries, each equal to $Q_t$; the fact
 
 **The trace of a basis matrix.** On the basis,
 $$
-\operatorname{Tr}L_t^{\mathrm{axf}}=\operatorname{Tr}R_t^{\mathrm{axf}}=4,\qquad
-\operatorname{Tr}L_x^{\mathrm{axf}}=\operatorname{Tr}L_y^{\mathrm{axf}}=\operatorname{Tr}L_z^{\mathrm{axf}}=0,
+\operatorname{Tr}L^{\mathrm{axf}}_{e_t}=\operatorname{Tr}R^{\mathrm{axf}}_{e_t}=4,\qquad
+\operatorname{Tr}L^{\mathrm{axf}}_{\vec e_x}=\operatorname{Tr}L^{\mathrm{axf}}_{\vec e_y}=\operatorname{Tr}L^{\mathrm{axf}}_{\vec e_z}=0,
 \qquad
-\operatorname{Tr}R_x^{\mathrm{axf}}=\operatorname{Tr}R_y^{\mathrm{axf}}=\operatorname{Tr}R_z^{\mathrm{axf}}=0.
+\operatorname{Tr}R^{\mathrm{axf}}_{\vec e_x}=\operatorname{Tr}R^{\mathrm{axf}}_{\vec e_y}=\operatorname{Tr}R^{\mathrm{axf}}_{\vec e_z}=0.
 $$
 The trace is $\mathbb{C}$-linear and additive. It is not multiplicative; the trace of a product is not the product of the traces.
 
@@ -473,9 +473,9 @@ and the same identity holds for $R^{\mathrm{axf}}$. The determinant is the multi
 
 **The basis determinants.** Every basis matrix has determinant $1$:
 $$
-\det L_\mu^{\mathrm{axf}}=\det R_\mu^{\mathrm{axf}}=1\qquad(\mu=t,x,y,z).
+\det L^{\mathrm{axf}}_{e_\mu}=\det R^{\mathrm{axf}}_{e_\mu}=1\qquad(\mu=t,x,y,z).
 $$
-The determinant of a sum is not the sum of the determinants; a sum of two invertible matrices can be singular, as $L_x^{\mathrm{axf}}+R_x^{\mathrm{axf}}$ shows.
+The determinant of a sum is not the sum of the determinants; a sum of two invertible matrices can be singular, as $L^{\mathrm{axf}}_{\vec e_x}+R^{\mathrm{axf}}_{\vec e_x}$ shows.
 
 **The invertibility and the rank.** The following are equivalent: $\tilde Q$ is invertible; $\langle\tilde Q\rangle_{\natural}\neq0$; $\mathsf M_2(\tilde Q)$ is invertible; $L^{\mathrm{axf}}(\tilde Q)$ is invertible; $R^{\mathrm{axf}}(\tilde Q)$ is invertible. When $\langle\tilde Q\rangle_{\natural}=0$, the rank of the regular matrix is $0$, $2$ or $4$, never $1$ or $3$, because the matrix is two equal copies of the $2\times2$ image. The rank is twice the rank of $\mathsf M_2(\tilde Q)$.
 
@@ -583,7 +583,7 @@ Q_y&Q_z&0&-Q_x\\
 Q_z&-Q_y&Q_x&0
 \end{pmatrix}.
 $$
-The matrix is traceless and skew-symmetric, $M^{\mathsf T}=-M$. The image is the complex span of $L_x^{\mathrm{axf}},L_y^{\mathrm{axf}},L_z^{\mathrm{axf}}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to skew-symmetry, because the transpose is quaternion conjugation and $\tilde Q^{\natural}=-\tilde Q$ exactly when $Q_t=0$. The image is closed under the commutator and not under the product.
+The matrix is traceless and skew-symmetric, $M^{\mathsf T}=-M$. The image is the complex span of $L^{\mathrm{axf}}_{\vec e_x},L^{\mathrm{axf}}_{\vec e_y},L^{\mathrm{axf}}_{\vec e_z}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to skew-symmetry, because the transpose is quaternion conjugation and $\tilde Q^{\natural}=-\tilde Q$ exactly when $Q_t=0$. The image is closed under the commutator and not under the product.
 
 ### The Quaternion Subspace
 
@@ -641,11 +641,11 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 
 ## Summary
 
-The axis-free basis is the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; the three vector units enter the left and right matrices by one rule, and no direction is privileged. The four left matrices $L_\mu^{\mathrm{axf}}$ and the four right matrices $R_\mu^{\mathrm{axf}}$ are signed permutations and form bases of the left and right copies. The left matrix of a general element is the coefficient display with the signs of the multiplication table; the right matrix is obtained from it by transposition and the sign matrix $D$. The product is multiplicative on the left, anti-multiplicative on the right, and the two families commute.
+The axis-free basis is the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; the three vector units enter the left and right matrices by one rule, and no direction is privileged. The four left matrices $L^{\mathrm{axf}}_{e_\mu}$ and the four right matrices $R^{\mathrm{axf}}_{e_\mu}$ are signed permutations and form bases of the left and right copies. The left matrix of a general element is the coefficient display with the signs of the multiplication table; the right matrix is obtained from it by transposition and the sign matrix $D$. The product is multiplicative on the left, anti-multiplicative on the right, and the two families commute.
 
 The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $Q_t\pm iB$, each twice. The stitch between the two matrices is $R^{\mathrm{axf}}(\tilde Q)=D L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}D$, with $D$ the switch matrix displayed in §*The Stitch Between the Left and the Right*. The switch from the Peirce frame to the axis-free basis is $L^{\mathrm{axf}}=S L^{P}S^{-1}$, $R^{\mathrm{axf}}=S R^{P}S^{-1}$, with $\det S=-\tfrac14$. The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian and anti-Hermitian matrices of the image, of real dimensions $2,6,4,4,4,4$, with the traces and determinants of the table. The image is four-dimensional inside the sixteen of $M_4(\mathbb{C})$, most of the ambient matrix is not an element, and the four norms are the four quarter-traces of the words in the regular matrix.
 
-The sixteen products $L^{\mathrm{axf}}_\mu R^{\mathrm{axf}}_\nu$ are an orthogonal basis of $M_4(\mathbb{C})$, and the coefficient matrix $c(M)$ collects the coordinates of a matrix in that basis. The length is the least number of products summing to a matrix, and it equals $\operatorname{rank}c(M)$. The coefficient matrix depends on the frame and its rank does not: a change of the algebra basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, a congruence. So the length belongs to the operator and not to the array that displays it, and the sixteen matrix units all have length four here while the same sixteen arrays have length one in the Peirce frame.
+The sixteen products $L^{\mathrm{axf}}_{e_\mu} R^{\mathrm{axf}}_{e_\nu}$ are an orthogonal basis of $M_4(\mathbb{C})$, and the coefficient matrix $c(M)$ collects the coordinates of a matrix in that basis. The length is the least number of products summing to a matrix, and it equals $\operatorname{rank}c(M)$. The coefficient matrix depends on the frame and its rank does not: a change of the algebra basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, a congruence. So the length belongs to the operator and not to the array that displays it, and the sixteen matrix units all have length four here while the same sixteen arrays have length one in the Peirce frame.
 
 ## Summary of Notation
 
@@ -655,7 +655,7 @@ The sixteen products $L^{\mathrm{axf}}_\mu R^{\mathrm{axf}}_\nu$ are an orthogon
 | $\mathrm{axf}$ | the label of the frame, on the family: $L^{\mathrm{axf}}$, $R^{\mathrm{axf}}$, $T^{\mathrm{axf}}_{\mu\nu}$ |
 | $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ | the standard Peirce frame, built from $\vec\Xi=i\vec e_z$ |
 | $\vec\Xi=i\vec e_z$ | the root, $\vec\Xi^2=e_t$ |
-| $L_\mu^{\mathrm{axf}}$, $R_\mu^{\mathrm{axf}}$ | the left and right matrices of the four units |
+| $L^{\mathrm{axf}}_{e_\mu}$, $R^{\mathrm{axf}}_{e_\mu}$ | the left and right matrices of the four units |
 | $L^{\mathrm{axf}}(\tilde Q)$, $R^{\mathrm{axf}}(\tilde Q)$ | the left and right matrices of $\tilde Q$ |
 | $D$, entries $(1,-1,-1,-1)$ on the diagonal | the switch matrix, quaternion conjugation in the axis-free basis |
 | $S$ | the change matrix, columns the frame vectors in the axis-free basis |
@@ -665,8 +665,8 @@ The sixteen products $L^{\mathrm{axf}}_\mu R^{\mathrm{axf}}_\nu$ are an orthogon
 | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 | $B^2$ | $Q_x^2+Q_y^2+Q_z^2$ |
 | $q_\mu$, $q'_\mu$ | the real and imaginary parts of $Q_\mu$ |
-| $L^{\mathrm{axf}}_\mu R^{\mathrm{axf}}_\nu$ | the sixteen products, an orthogonal basis of $M_4(\mathbb{C})$ of norm two |
-| $c(M)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{Tr}((L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu})^{\mathsf T}M)$ |
+| $L^{\mathrm{axf}}_{e_\mu} R^{\mathrm{axf}}_{e_\nu}$ | the sixteen products, an orthogonal basis of $M_4(\mathbb{C})$ of norm two |
+| $c(M)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{Tr}((L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu})^{\mathsf T}M)$ |
 | $\ell(M)$ | the length, the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $C$, $B_{\alpha\beta}$ | a change of algebra basis, $f_\alpha=\sum_\mu C_{\mu\alpha}e_\mu$, and the products $L(f_\alpha)R(f_\beta)$ |
 

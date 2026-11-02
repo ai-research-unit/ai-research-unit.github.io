@@ -21,7 +21,7 @@ $$
 because $(i\vec e_j)(i\vec e_k) = i^2\vec e_j \vec e_k = -\vec e_j \vec e_k$ and the quaternion units anticommute for $j\neq k$ while $\vec e_k^2 = -e_t$ gives $(i\vec e_k)^2 = -\vec e_k^2 = +e_t$. They therefore generate a three-dimensional positive-definite Clifford algebra. That algebra is all of $\mathbb{B}$, as the corpus records, and the four-dimensional real space
 
 $$
-\mathrm{APS} \;=\; \mathrm{span}_\mathbb{R}\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\} \;=\; \left\{p_te_t + i(p_x\vec e_x + p_y\vec e_y + p_z\vec e_z) \;:\; p_\mu \in \mathbb{R}\right\}
+\mathrm{aps} \;=\; \mathrm{span}_\mathbb{R}\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\} \;=\; \left\{p_te_t + i(p_x\vec e_x + p_y\vec e_y + p_z\vec e_z) \;:\; p_\mu \in \mathbb{R}\right\}
 $$
 
 is its **paravector space**. It is exactly the Hermitian subspace
@@ -203,7 +203,7 @@ The algebra of physical space, $\mathrm{Cl}_{3,0}$, is the Hermitian subspace $\
 | $\mathbb{B}$, $e_t = 1, \vec e_k$ | Biquaternion algebra, quaternion basis with $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $i\vec e_k$, $k=x,y,z$ | The three vector generators of the algebra of physical space, $(i\vec e_j)(i\vec e_k) + (i\vec e_k)(i\vec e_j) = 2\delta_{jk}e_t$ |
-| $\mathrm{APS} = \mathrm{span}\{e_t,i\vec e_k\} = \mathbb{M}_+$ | Paravector space |
+| $\mathrm{aps} = \mathrm{span}\{e_t,i\vec e_k\} = \mathbb{M}_+$ | Paravector space |
 | $p = p_t + \vec p$ | Paravector (spacetime vector), $p_t,\vec p$ real |
 | $\bar p = p_t - \vec p$ | Clifford conjugate $=$ quaternion conjugate $=$ Hermitian conjugate on $\mathbb{M}_+$ |
 | $p\bar p = p_t^2 - \vec p^2$ | Minkowski interval |

@@ -58,7 +58,7 @@ $$
 
 ### The conductor-discriminant formula
 
-**Theorem (conductor-discriminant formula).** For an abelian extension $L/K$ with Galois group $\operatorname{Gal}(L/K)$ and group of characters $\widehat G$,
+**Theorem (conductor-discriminant formula).** For an abelian extension $L/K$ with Galois group $\operatorname{gal}(L/K)$ and group of characters $\widehat G$,
 $$
 \boxed{\;\mathfrak{d}_{L/K}=\prod_{\chi\in\widehat G}\mathfrak{f}(\chi),\qquad \operatorname{disc}(L/K)=\prod_{\chi}\operatorname{disc}(\chi)\;},
 $$

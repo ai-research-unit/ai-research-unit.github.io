@@ -87,7 +87,7 @@ with $S^5=\{W\in\mathbb{C}^3:\lVert W\rVert_E=1\}$, is a bijection. Hence $\math
 
 **Theorem (the Witt index).** The Witt index is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. Every maximal totally isotropic complex subspace is a line, and $\mathbb{C}(e_t+\vec e_x)$ is one; a maximal totally isotropic real subspace is the plane
 $$
-\mathbb{W}_{\mathrm{iso}}=\operatorname{span}_{\mathbb{R}}\{e_t+\vec e_x,\ i(e_t+\vec e_x)\}.
+\mathbb{W}^{\mathrm{iso}}=\operatorname{span}_{\mathbb{R}}\{e_t+\vec e_x,\ i(e_t+\vec e_x)\}.
 $$
 Every totally isotropic subspace is contained in a maximal one, and $\mathrm{U}(1,3)$ acts transitively on the maximal ones.
 
@@ -99,7 +99,7 @@ $$
 $$
 and they attain the bounds. Witt's extension theorem gives the extension property and the transitivity.
 
-**Remark (the real planes).** Every real totally isotropic plane is the realification of a complex isotropic line. A real plane that is not complex would complexify to a complex totally isotropic plane of dimension two, beyond the Witt index one. The maximal real plane $\mathbb{W}_{\mathrm{iso}}$ is not a Peirce line: it is a real plane and not a complex line, and it contains $e_t+\vec e_x$, of algebraic norm $2$.
+**Remark (the real planes).** Every real totally isotropic plane is the realification of a complex isotropic line. A real plane that is not complex would complexify to a complex totally isotropic plane of dimension two, beyond the Witt index one. The maximal real plane $\mathbb{W}^{\mathrm{iso}}$ is not a Peirce line: it is a real plane and not a complex line, and it contains $e_t+\vec e_x$, of algebraic norm $2$.
 
 ## The Two Strata
 

@@ -11,7 +11,7 @@ $$
 $$
 
 whose rule, multiplication table and axioms are *Introduction to the General Quaternionic
-Sesqualgebra of Biquaternions*, and whose two halves, $\mathrm{SQS}$ and $\mathrm{AQS}$, are *The
+Sesqualgebra of Biquaternions*, and whose two halves, $\mathrm{sqs}$ and $\mathrm{aqs}$, are *The
 Symmetric and Antisymmetric Parts of a Sesqualgebra Product*.
 
 A zero divisor is defined **by a product**, so the set belongs to the product and not to the space.
@@ -19,7 +19,7 @@ The article states the definition for a general product $\star$ (quoted from *De
 Study of the Algebraic Structures*), fixes the product of the block, gives the criterion and the
 two families, describes the set, and then compares the set with the sets of the other three general
 products: the four sets **coincide**, and that is a theorem quoted, not a licence to transfer a
-classification. The finer structure of the GQS set, its square-zero subfamily and its non-pure
+classification. The finer structure of the gqs set, its square-zero subfamily and its non-pure
 members, is the point of the article and is owned by *Nilpotents of the General Quaternionic
 Sesqualgebra*; the position of the set in the remarkable subspaces is *Remarkable Subspaces under
 the General Quaternionic Sesqualgebra of Biquaternions*.
@@ -82,7 +82,7 @@ $C(\tilde Q^{*}) = \overline{C(\tilde Q)}$ vanishes exactly when $C(\tilde Q)$ d
 conditions are one, which is the statement.
 
 The criterion is the same equation as for the plain product, and the coincidence is the subject of
-the comparison below. What the GQS criterion does **not** inherit is the reading of the criterion:
+the comparison below. What the gqs criterion does **not** inherit is the reading of the criterion:
 an element of $C = 0$ whose scalar part vanishes is a nilpotent of the plain algebra, while here
 the square of a zero divisor need not vanish at all.
 
@@ -140,7 +140,7 @@ $Q_x = i$, $Q_y = Q_z = 0$, so $C = 1 - 1 = 0$, and it is a zero divisor with no
 Its square vanishes, as the cited article records, so the non-pure family is not the complement of
 the square-zero family.
 
-This is the point at which the GQS set departs from the plain one. In the plain algebra the pure
+This is the point at which the gqs set departs from the plain one. In the plain algebra the pure
 family is exactly the nonzero nilpotents and the non-pure family is the part of the cone with
 non-vanishing scalar part; here the square-zero elements are **non-pure**, so the two splittings,
 the one by the scalar part and the one by the vanishing of the square, cut across each other. The
@@ -200,7 +200,7 @@ the General Quaternionic Sesqualgebra*. The predicate coincides, the square does
 **Every nonzero element with $\tilde Q\star\tilde Q=0$ is a zero divisor of $\star$, and the square-zero elements form a proper subfamily of the zero-divisor set, of real dimension four, lying in the non-pure family; in the plain algebra the square-zero elements are instead the pure zero divisors.**
 
 The relation between the two families of this article and the nilpotents of the block is the one
-place where the GQS zero-divisor theory says something the plain theory does not.
+place where the gqs zero-divisor theory says something the plain theory does not.
 
 **Theorem (the square-zero elements are zero divisors).** Every nonzero element with
 $\tilde Q\star\tilde Q = 0$ is a zero divisor of $\star$, and the square-zero elements form a
@@ -211,11 +211,11 @@ $\tilde Q_2 = \tilde Q$. The identification with the family $c(\vec u + i)$, its
 non-purity are *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 **Corollary (the contrast with the plain product).** In the plain algebra the square-zero elements
-are the pure zero divisors and the non-pure zero divisors have non-vanishing square; in the GQS the
+are the pure zero divisors and the non-pure zero divisors have non-vanishing square; in the gqs the
 square-zero elements are non-pure and a pure zero divisor, such as $\vec e_x + i\vec e_y$, has nonzero
 square.
 
-**Proof.** The plain statement is *Nilpotents of the General Plain Algebra*; the GQS statement is
+**Proof.** The plain statement is *Nilpotents of the General Plain Algebra*; the gqs statement is
 the example of §*The Criterion* and the previous theorem.
 
 So the two products agree on **which** elements are zero divisors and disagree on **how** a zero

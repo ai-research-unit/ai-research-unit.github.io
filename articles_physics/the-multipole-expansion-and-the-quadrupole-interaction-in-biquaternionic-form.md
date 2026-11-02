@@ -324,8 +324,8 @@ The weight spectrum confirms that nothing else can be present. For a rotation ab
 The quadrupole is a symmetric traceless tensor over the vector part, and the natural algebraic home is the **symmetric traceless square** of $D^{(1)}$,
 
 $$
-\boxed{\;\operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
-\qquad \dim_{\mathbb{C}}\operatorname{Sym}^2_0(D^{(1)}) = 5\;},
+\boxed{\;\operatorname{sym}^2_0(D^{(1)}) \cong D^{(2)} ,
+\qquad \dim_{\mathbb{C}}\operatorname{sym}^2_0(D^{(1)}) = 5\;},
 $$
 
 which is a subspace of the tensor square $D^{(1)}\otimes D^{(1)}$ — equivalently of $\mathbb{B}\otimes\mathbb{B}$ — and not a subspace of $\mathbb{B}$. In coordinate terms, a quadrupole is the traceless part of a symmetric bilinear form $\mathcal{Q}(\vec u,\vec v)$ on the vector part. This is the precise sense in which the quadrupole is *outside* the algebra: it is a tensor built from two vectors, not a single element.
@@ -345,7 +345,7 @@ The algebra is a **value algebra** of finite dimension, and it carries exactly t
 
 The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A} = i\phi/c\,e_t + \vec A\in\mathbb{M}_-$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.
 
-The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
+The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E)$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
 
 The quadrupole **interaction** is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial Q_i\partial Q_j\,\Phi(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.
 
@@ -373,7 +373,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\rho$ | Charge density, the corpus convention for the bare $\rho$ |
 | $\mathcal{Q}_{lm}, ϙ, \vec p, \mathcal{Q}_{ij}$ | Spherical, monopole, dipole and quadrupole moments |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ (Wigner's $D$) |
-| $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |
+| $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |
 | $Y_{lm}, P_l$ | Spherical harmonics and Legendre polynomials |
 
 ## Further Reading
