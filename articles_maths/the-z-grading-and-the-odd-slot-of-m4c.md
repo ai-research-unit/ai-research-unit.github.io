@@ -99,12 +99,12 @@ for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The twist $\theta$ is the reflection of the 
 
 **The theorem.** Each $L_{e_\mu} R_{e_\nu}$ is exactly one Clifford basis element up to a scalar $\pm1$ or $\pm i$. The table gives the element and its grade; the element is written in the frame $v_\mu$.
 
-| $L_{e_\mu} R_{e_\nu}$ | $\nu=t$ | $\nu=x$ | $\nu=y$ | $\nu=z$ |
+| $L_{e_\mu} R_{e_\nu}$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
-| $\mu=t$ | $I$ (0) | $-iv_{0}$ (1) | $iv_{123}$ (3) | $i\omega$ (4) |
-| $\mu=x$ | $v_{23}$ (2) | $-iv_{023}$ (3) | $-iv_{1}$ (1) | $v_{01}$ (2) |
-| $\mu=y$ | $-v_{13}$ (2) | $iv_{013}$ (3) | $-iv_{2}$ (1) | $v_{02}$ (2) |
-| $\mu=z$ | $v_{12}$ (2) | $-iv_{012}$ (3) | $-iv_{3}$ (1) | $v_{03}$ (2) |
+| $e_t$ | $I$ (0) | $-iv_{0}$ (1) | $iv_{123}$ (3) | $i\omega$ (4) |
+| $\vec e_x$ | $v_{23}$ (2) | $-iv_{023}$ (3) | $-iv_{1}$ (1) | $v_{01}$ (2) |
+| $\vec e_y$ | $-v_{13}$ (2) | $iv_{013}$ (3) | $-iv_{2}$ (1) | $v_{02}$ (2) |
+| $\vec e_z$ | $v_{12}$ (2) | $-iv_{012}$ (3) | $-iv_{3}$ (1) | $v_{03}$ (2) |
 
 **The verification.** The table follows from the definitions $L_{e_\mu}(x)=e_\mu x$, $R_{e_\nu}(x)=xe_\nu$, the multiplication table of the biquaternion units, and the correspondence
 $$

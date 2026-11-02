@@ -100,7 +100,7 @@ $$
 L_{\vec e_y}=\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
 L_{\vec e_z}=\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
 $$
-and a general element is $L(\tilde Q)=Q_tL_t+Q_xL_x+Q_yL_y+Q_zL_z$. In the Pauli form $L_{e_t}=\mathrm I_2\otimes\mathrm I_2$ and $L_{\vec e_k}=-i\,\mathrm I_2\otimes\sigma_k$.
+and a general element is $L(\tilde Q)=Q_tL_{e_t}+Q_xL_{\vec e_x}+Q_yL_{\vec e_y}+Q_zL_{\vec e_z}$. In the Pauli form $L_{e_t}=\mathrm I_2\otimes\mathrm I_2$ and $L_{\vec e_k}=-i\,\mathrm I_2\otimes\sigma_k$.
 
 **The right copy.** The right matrix is
 $$
@@ -164,14 +164,14 @@ $$
 
 **The table.** The sixteen matrices fall into four families.
 
-| $L_{e_\mu}R_{e_\nu}$ | $\nu=t$ | $\nu=x$ | $\nu=y$ | $\nu=z$ |
+| $L_{e_\mu}R_{e_\nu}$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
-| $\mu=t$ | $L_{e_t}R_{e_t}=\mathrm I_4$ | $L_{e_t}R_{\vec e_x}=R_{\vec e_x}$ | $L_{e_t}R_{\vec e_y}=R_{\vec e_y}$ | $L_{e_t}R_{\vec e_z}=R_{\vec e_z}$ |
-| $\mu=x$ | $L_{\vec e_x}R_{e_t}=L_{\vec e_x}$ | $L_{\vec e_x}R_{\vec e_x}$ | $L_{\vec e_x}R_{\vec e_y}$ | $L_{\vec e_x}R_{\vec e_z}$ |
-| $\mu=y$ | $L_{\vec e_y}R_{e_t}=L_{\vec e_y}$ | $L_{\vec e_y}R_{\vec e_x}$ | $L_{\vec e_y}R_{\vec e_y}$ | $L_{\vec e_y}R_{\vec e_z}$ |
-| $\mu=z$ | $L_{\vec e_z}R_{e_t}=L_{\vec e_z}$ | $L_{\vec e_z}R_{\vec e_x}$ | $L_{\vec e_z}R_{\vec e_y}$ | $L_{\vec e_z}R_{\vec e_z}$ |
+| $e_t$ | $L_{e_t}R_{e_t}=\mathrm I_4$ | $L_{e_t}R_{\vec e_x}=R_{\vec e_x}$ | $L_{e_t}R_{\vec e_y}=R_{\vec e_y}$ | $L_{e_t}R_{\vec e_z}=R_{\vec e_z}$ |
+| $\vec e_x$ | $L_{\vec e_x}R_{e_t}=L_{\vec e_x}$ | $L_{\vec e_x}R_{\vec e_x}$ | $L_{\vec e_x}R_{\vec e_y}$ | $L_{\vec e_x}R_{\vec e_z}$ |
+| $\vec e_y$ | $L_{\vec e_y}R_{e_t}=L_{\vec e_y}$ | $L_{\vec e_y}R_{\vec e_x}$ | $L_{\vec e_y}R_{\vec e_y}$ | $L_{\vec e_y}R_{\vec e_z}$ |
+| $\vec e_z$ | $L_{\vec e_z}R_{e_t}=L_{\vec e_z}$ | $L_{\vec e_z}R_{\vec e_x}$ | $L_{\vec e_z}R_{\vec e_y}$ | $L_{\vec e_z}R_{\vec e_z}$ |
 
-The first row is the right family, the first column the left family, the diagonal entry $L_{e_t}R_{e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde P}$*.
+Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{e_t}R_{e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of *Two-Sided Operators on the Biquaternion Algebra*, §*The Operator $L_{\tilde Q}R_{\tilde P}$*.
 
 ### The Sixteen, Entry by Entry
 

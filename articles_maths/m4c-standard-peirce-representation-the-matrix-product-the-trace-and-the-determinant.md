@@ -355,8 +355,8 @@ R^{\mathrm{axf}}(\tilde Q)=S\,R(\tilde Q)\,S^{-1}.
 $$
 On the four units,
 $$
-L_{e_\mu}=S^{-1}L^{\mathrm{axf}}_{e_\mu}S,\qquad
-R_{e_\mu}=S^{-1}R^{\mathrm{axf}}_{e_\mu}S .
+L_{e_\mu}=S^{-1}L_{e_\mu}^{\mathrm{axf}}S,\qquad
+R_{e_\mu}=S^{-1}R_{e_\mu}^{\mathrm{axf}}S .
 $$
 The coordinate columns change by
 $$
@@ -410,7 +410,7 @@ so $c=Cc'C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det C\neq
 
 **The two displays of the corpus.** The operators of the corpus in the axis-free basis are built from the same four units $e_\mu$, in the same order, so the abstract basis is common and only the display moves:
 $$
-L^{\mathrm{axf}}_{\mu}R^{\mathrm{axf}}_{\nu}=S\,L_{e_\mu}R_{e_\nu}S^{-1},\qquad
+L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}=S\,L_{e_\mu}R_{e_\nu}S^{-1},\qquad
 M^{\mathrm{axf}}=S\,MS^{-1}.
 $$
 The coefficient matrix is therefore literally unchanged, and the two operator articles compute one number. The congruence answers a different question: what happens when the sixteen are built from another basis of *elements*, for instance from the four Peirce elements themselves. That basis is not orthogonal, so the extraction $\tfrac14\operatorname{Tr}(T^{\dagger}M)$ no longer applies to it and the dual basis must be used; the rank, and with it the length, is unchanged by (iii).
