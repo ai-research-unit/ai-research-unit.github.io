@@ -89,13 +89,11 @@
 <p>On a four-manifold with a spin structure and a gauge bundle in a representation $R$ of the structure group, the twisted Dirac operator is</p>
 <p><strong>Frame.</strong> Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial Q_\mu$.</p>
 <p>$$
-\mathcal{D}_R \;=\; C_\mu D_\mu ,
-\qquad
-C_0=iL_{e_t}R_{\vec e_x},\quad C_k=iL_{\vec e_k}R_{\vec e_y} ,
+\mathcal{D}_R \;=\; iL_{e_\mu}R_{e_{\nu(\mu)}} D_\mu ,
 \qquad
 D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu^{R} ,
 $$</p>
-<p>with $C_\mu$ the frame cells acting by $\psi\mapsto i\,e_\mu\psi\,e_{\nu(\mu)}$, where $\nu(t)=x$ and $\nu(k)=y$, satisfying $\{C_\mu,C_\nu\}=2g_{\mu\nu}$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality $\psi\mapsto -i\psi\vec e_z$ into the positive and negative chirality zero-mode spaces,</p>
+<p>with $iL_{e_\mu}R_{e_{\nu(\mu)}}$ the frame cell of the coordinate $Q_\mu$, acting by $\psi\mapsto i\,e_\mu\psi\,e_{\nu(\mu)}$, where $\nu(t)=x$ and $\nu(k)=y$, satisfying $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality $\psi\mapsto -i\psi\vec e_z$ into the positive and negative chirality zero-mode spaces,</p>
 <p>$$
 \ker\mathcal{D}_R \;=\; \ker^+\!\mathcal{D}_R \oplus \ker^-\!\mathcal{D}_R ,
 \qquad
@@ -162,7 +160,7 @@ $$</p>
 I_2=\vec E\cdot\vec B ,
 $$</p>
 <p>so the abelian index density is the framework's own invariant $I_2$ up to a constant. This is the affirmative half of the story: for the abelian sector the index and the charge are written in the invariant calculus the framework already possesses.</p>
-<h2 id="a-worked-case-the-abelian-index-and-the-charge-math60-zero-modes">A Worked Case: the Abelian Index and the Charge-$n$ Zero Modes</h2>
+<h2 id="a-worked-case-the-abelian-index-and-the-charge-math61-zero-modes">A Worked Case: the Abelian Index and the Charge-$n$ Zero Modes</h2>
 <p>The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $\mathrm{U}(1)$ gauge field whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em> is the case $n=1$. The twisted Dirac index is</p>
 <p>$$
 \mathrm{ind}\,\mathcal{D}_n=\int_{S^2}\mathrm{ch}(L)\wedge\mathrm{A}(TS^2)=\int_{S^2}c_1(L)=n ,
@@ -175,7 +173,7 @@ $$</p>
 m=0,1,\dots,n-1 ,
 $$</p>
 <p>in the case $n>0$, whose covariant constancy follows from the curvature being proportional to the area form. There are exactly $n$ of them, matching the index, and for $n=1$ the single mode is the constant section allowed in the patch where the connection is regular. The counting is standard — it is the degeneracy of the lowest Landau level of a charge-$n$ particle on the sphere — and the framework's contribution is the identification of the bundle and its connection with the Hopf data already computed. The key structural point is that the abelian index is written entirely in the framework's own objects: the bundle is the Hopf bundle, the charge is $c_1$, and the field is the charged biquaternionic spinor.</p>
-<h2 id="the-index-and-the-instanton-moduli-math81-adjoint-modes">The Index and the Instanton Moduli: $4k$ Adjoint Modes</h2>
+<h2 id="the-index-and-the-instanton-moduli-math82-adjoint-modes">The Index and the Instanton Moduli: $4k$ Adjoint Modes</h2>
 <p>The index of the adjoint Dirac operator has a second interpretation that ties this article to the instanton data. For a self-dual background of charge $k$ in the adjoint representation,</p>
 <p>$$
 n_+=4k ,
@@ -233,7 +231,7 @@ $$</p>
 <td>d'Alembertian (series convention)</td>
 </tr>
 <tr>
-<td>$\mathcal{D}_R=C_\mu D_\mu$, $C_0=iL_{e_t}R_{\vec e_x}$, $C_k=iL_{\vec e_k}R_{\vec e_y}$</td>
+<td>$\mathcal{D}_R=iL_{e_\mu}R_{e_{\nu(\mu)}}D_\mu$</td>
 <td>Twisted Dirac operator in representation $R$, in frame cells</td>
 </tr>
 <tr>

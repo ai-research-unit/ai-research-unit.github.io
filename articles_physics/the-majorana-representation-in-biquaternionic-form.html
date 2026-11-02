@@ -106,7 +106,7 @@ $$</p>
 <p>the standard inverse stereographic projection. The unit vector $\vec u_x$ is the Bloch vector of the state, and the idempotent is $\tfrac12(e_t+i\vec u_x)$. For the north pole $\zeta = 0$ and $\vec u_x = \vec u_z$; for the south pole $\zeta = \infty$ and $\vec u_x = -\vec u_z$; for the equator $|\zeta| = 1$ and $\vec u_x$ lies in the equatorial plane. The inverse map is $\zeta = \exp(i\phi)\tan(\theta/2)$ with $\theta$, $\phi$ the polar angles of $\vec u_x$.</p>
 <p>The relation was checked numerically: for $(\theta,\phi) = (0.7,0.3)$, $(2.1,1.4)$, $(0.5,2.0)$ the vector reconstructed from $\zeta$ equals $(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ to machine precision.</p>
 <h3 id="the-two-to-one-map">The Two-to-One Map</h3>
-<p>The passage from spinor to star discards the overall phase: $\psi\mapsto \exp(i\alpha)\psi$ leaves $\zeta$ unchanged, hence leaves $\vec u_x$ and the idempotent unchanged. This is the same loss that the geometric-phase articles record: the idempotent carries no phase. The star is therefore blind to the geometric phase, and a closed loop of the star — a closed curve of the Bloch vector — leaves the state in the same idempotent while the spinor returns with the phase $-\tfrac12\Omega_{\mathrm{sgn}}$. The Majorana star is the shadow of the spinor on the sphere, and the phase is what the shadow does not record.</p>
+<p>The passage from spinor to star discards the overall phase: $\psi\mapsto \exp(i\alpha)\psi$ leaves $\zeta$ unchanged, hence leaves $\vec u_x$ and the idempotent unchanged. This is the same loss that the geometric-phase articles record: the idempotent carries no phase. The star is therefore blind to the geometric phase, and a closed loop of the star — a closed curve of the Bloch vector — leaves the state in the same idempotent while the spinor returns with the phase $-\tfrac12\Omega^{\mathrm{sgn}}$. The Majorana star is the shadow of the spinor on the sphere, and the phase is what the shadow does not record.</p>
 <h2 id="the-majorana-polynomial">The Majorana Polynomial</h2>
 <h3 id="the-general-construction">The General Construction</h3>
 <p>For spin $s$ the state $|\psi\rangle = \sum_{s_z=-s}^{s}c_m|s,s_z\rangle$ is represented by the degree-$2s$ polynomial</p>
@@ -169,7 +169,7 @@ $$</p>
 \mathcal{A} = -\frac{|\zeta|^2}{1+|\zeta|^2}\,d\phi
 = -\sin^2\frac{\theta}{2}\,d\phi ,
 $$</p>
-<p>which is the expression of the preceding articles in the coordinate $\zeta = \tan(\theta/2)\exp(i\phi)$. Its integral around a loop of the star gives the geometric phase $-\tfrac12\Omega_{\mathrm{sgn}}$. The star moves on the sphere, and the phase is the holonomy of the spinor that projects to it.</p>
+<p>which is the expression of the preceding articles in the coordinate $\zeta = \tan(\theta/2)\exp(i\phi)$. Its integral around a loop of the star gives the geometric phase $-\tfrac12\Omega^{\mathrm{sgn}}$. The star moves on the sphere, and the phase is the holonomy of the spinor that projects to it.</p>
 <h3 id="what-the-star-cannot-see">What the Star Cannot See</h3>
 <p>Because the star is the idempotent's axis, it cannot see the phase; the connection is defined on the spinor, not on the star. The Majorana representation is thus a representation of the state space as a configuration space of points, and it is precisely the geometric phase that it discards. The two pictures — the constellation on the sphere and the spinor with its holonomy — are the two levels of the double cover: the sphere of stars below, the spinor above.</p>
 <h3 id="the-state-module-and-the-idempotent">The State Module and the Idempotent</h3>
@@ -313,7 +313,7 @@ $$</p>
 <td>Berry connection in stereographic coordinates</td>
 </tr>
 <tr>
-<td>$-\tfrac12\Omega_{\mathrm{sgn}}$</td>
+<td>$-\tfrac12\Omega^{\mathrm{sgn}}$</td>
 <td>Geometric phase discarded by the star map</td>
 </tr>
 <tr>
