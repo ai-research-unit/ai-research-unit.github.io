@@ -276,7 +276,7 @@ $$
 L_{\vec e_z}R_{\vec e_y}=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
 L_{\vec e_z}R_{\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$</p>
-<p>Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $(L_{e_\mu}R_{e_\nu})^{\mathrm{coef}}=C_{\Pi}\,L_{e_\mu}R_{e_\nu}\,C_{\Pi}^{-1}$.</p>
+<p>Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $(L_{e_\mu}R_{e_\nu})^{\mathrm{axf}}=C_{\Pi}\,L_{e_\mu}R_{e_\nu}\,C_{\Pi}^{-1}$.</p>
 <p><strong>The invariants.</strong> With $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$, the block form gives
 $$
 \det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},\qquad
@@ -355,6 +355,58 @@ $$
 \sum_\mu \mathsf C_\mu p_\mu=i\bigl(L_{e_t}R_xp_t+L_{\vec e_x}R_yp_x+L_{\vec e_y}R_yp_y+L_{\vec e_z}R_yp_z\bigr),
 $$
 so the frame is visible in the formula.</p>
+<h2 id="the-math238-axis-free-representation">The $M_4(\mathbb{C})$ Axis-Free Representation</h2>
+<p><strong>A second frame, and its label.</strong> The corpus displays the regular matrices in two frames, and this article keeps to the canonical Peirce frame, where the left matrix is $I_2\otimes\mathsf M_2(\tilde Q)$; the other is the axis-free frame, the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ read without singling out one of the three vector directions, in contrast with the Peirce frame, whose root $\vec\Xi=i\vec e_z$ is a chosen direction. Its label is $\mathrm{axf}$, a name in roman letters and not an exponent: the left matrix of $\tilde Q$ is $L^{\mathrm{axf}}(\tilde Q)$, the left matrix of the unit $e_\mu$ is $L_\mu^{\mathrm{axf}}$, and $L_x^{\mathrm{axf}}$ is read as the matrix of $\vec e_x$, never as the $x$-th power of an operator.</p>
+<p><strong>The left matrix.</strong> The columns are the coordinate columns of $\tilde Qe_\mu$,
+$$
+L^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&Q_t
+\end{pmatrix},
+$$
+and the right matrix, whose columns are the coordinate columns of $e_\mu\tilde Q$, is
+$$
+R^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&Q_z&-Q_y\\
+Q_y&-Q_z&Q_t&Q_x\\
+Q_z&Q_y&-Q_x&Q_t
+\end{pmatrix}.
+$$
+The scalar direction occupies the diagonal and the three vector directions enter by one rule, one signed coefficient into each of the three remaining columns. No coefficient is singled out by its position; the two displays differ only in the signs of the six vector entries, which is the difference between a left and a right multiplication.</p>
+<p><strong>The eight units are real.</strong> The four left matrices $L_\mu^{\mathrm{axf}}$ and the four right matrices $R_\mu^{\mathrm{axf}}$ of the units are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$. A general element is a complex combination of them and is not one. The same holds for the sixteen products $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, which are real, of determinant $1$ and of Hilbert–Schmidt norm two, and mutually orthogonal.</p>
+<p><strong>The stitch.</strong> Quaternion conjugation is transposition in this frame,
+$$
+R^{\mathrm{axf}}(\tilde Q)=D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,\qquad
+D=\operatorname{diag}(1,-1,-1,-1),
+$$
+and $D$ is also the Gram matrix of the plain product $\operatorname{Sc}(XY)$ here, because $\operatorname{Sc}(e_\mu e_\nu)$ is $+1$ on $e_t$ and $-1$ on the three vector units. The transpose dictionary and the sign vector $\varepsilon$ of the products are the same array.</p>
+<p><strong>The change of frame.</strong> The two displays are one operator in two bases,
+$$
+L^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L(\tilde Q)\,C_{\Pi}^{-1},\qquad
+R^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R(\tilde Q)\,C_{\Pi}^{-1},
+$$
+with $C_{\Pi}$ the Peirce change of §<em>The frame is not the object</em>, whose columns are the four frame vectors in the axis-free basis,
+$$
+C_{\Pi}=\frac12
+\begin{pmatrix}
+1&0&0&1\\
+0&i&i&0\\
+0&1&-1&0\\
+i&0&0&-i
+\end{pmatrix},
+\qquad
+\det C_{\Pi}=-\tfrac14,\qquad
+C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4,\qquad
+C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}.
+$$
+The determinant is the normalisation of the frame vectors and not an invariant of the algebra. The article that computes the frame writes $S$ for $C_{\Pi}$ and gives it these four columns.</p>
+<p><strong>The invariants are the operator's.</strong> The trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2$ in this frame as in the canonical one, because $C_{\Pi}$ carries one to the other. A value read from an entry is a value of the frame; a value read from the trace, the determinant or a rank is a value of the operator.</p>
+<p><strong>What the frame buys and what it costs.</strong> It buys the transpose dictionary: quaternion conjugation is transposition, so $M^{\natural}=M^{\mathsf T}$ entry by entry, and the eight unit matrices are real signed permutations, so a condition on an entry is a condition on a coefficient. It costs the block: no $2\times2$ block appears, no Peirce idempotent is visible, and the sixteen products are all of one kind, so no five of them are singled out. The two articles of the frame are <a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the matrices, the product, the trace, the determinant and the six subspaces as conditions on $M$, and <a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, for the operators, the sixteen cells and the coefficient matrix.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>$2\times2$ isomorphism</strong> $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.</p>
 <p>The <strong>$4\times4$ regular representation</strong> is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.</p>
@@ -363,6 +415,7 @@ so the frame is visible in the formula.</p>
 <p>The <strong>four left matrices</strong> $L_{e_\mu}=\mathsf{M}_4^{L}(e_\mu)$ and the <strong>four right matrices</strong> $R_{e_\nu}=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$.</p>
 <p>The <strong>sixteen basis matrices</strong> are the products $L_{e_\mu}R_{e_\nu}$, in four families: $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$ and $L_{\vec e_j}R_{\vec e_k}$. They are written entry by entry in the canonical frame, and the grade table reads each of them as a unit coefficient times a product of the five frame cells.</p>
 <p>The <strong>Clifford structure</strong> is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators of the canonical frame are the cells $\mathsf C_0=iL_{e_t}R_{\vec e_x}$, $\mathsf C_1=iL_{\vec e_x}R_{\vec e_y}$, $\mathsf C_2=iL_{\vec e_y}R_{\vec e_y}$, $\mathsf C_3=iL_{\vec e_z}R_{\vec e_y}$ and $\mathsf C_5=-iL_{e_t}R_{\vec e_z}$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$.</p>
+<p>The <strong>axis-free frame</strong> is the second display of the same operators, the coefficient basis with no vector direction singled out, labelled $\mathrm{axf}$. Its left matrix has the coefficients of $\tilde Q$ on the diagonal and the three vector directions entering by one rule, its eight unit matrices are real signed permutations of determinant $1$, and its stitch is $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ with the $D$ that is also the Gram matrix of the plain product. The change from the canonical frame is $C_{\Pi}$, of determinant $-\tfrac14$, and the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ are the same in both frames.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -413,6 +466,14 @@ so the frame is visible in the formula.</p>
 <td>The sixteen basis matrices; $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$, $L_{\vec e_j}R_{\vec e_k}$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$</td>
 </tr>
 <tr>
+<td>$L^{\mathrm{axf}}(\tilde Q)$, $L_\mu^{\mathrm{axf}}$</td>
+<td>The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$</td>
+</tr>
+<tr>
+<td>$C_{\Pi}$</td>
+<td>The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, written $S$ in the article of the frame</td>
+</tr>
+<tr>
 <td>$\mathsf C_\mu,\mathsf C_5$</td>
 <td>The five cells of the canonical frame, $\mathsf C_0=iL_{e_t}R_{\vec e_x}$, $\mathsf C_1=iL_{\vec e_x}R_{\vec e_y}$, $\mathsf C_2=iL_{\vec e_y}R_{\vec e_y}$, $\mathsf C_3=iL_{\vec e_z}R_{\vec e_y}$, $\mathsf C_5=-iL_{e_t}R_{\vec e_z}$</td>
 </tr>
@@ -430,6 +491,7 @@ so the frame is visible in the formula.</p>
 <ul>
 <li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.</li>
 <li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.</li>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a> and <a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, for the same operators in the coefficient basis read axis-free.</li>
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the sixteen cells, the frame and the proof of the cell table.</li>
 <li><a href="../articles_physics/conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a>, for the comparison with the even subalgebra and the five-cell frame.</li>
 </ul>

@@ -70,8 +70,8 @@
       <div class="article-body">
         <h1 id="index-notation-and-corpus-conventions"><strong>Index, Notation and Corpus Conventions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article closes the series with the marks that are read on a glyph rather than on the object: the superscript tokens, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the eight companions, whose glyphs it indexes.</p>
-<p>The superscripts come first because they are two tokens and nothing else; the subscripts next, because their rule depends on the derivation convention fixed in <em>Operator and Calculus Conventions</em>. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.</p>
+<p>This article closes the series with the marks that are read on a glyph rather than on the object: the superscript tokens and the labels they carry, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the eight companions, whose glyphs it indexes.</p>
+<p>The superscripts come first because the tokens are two and their labels are an index of three letters; the subscripts next, because their rule depends on the derivation convention fixed in <em>Operator and Calculus Conventions</em>. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.</p>
 <p>The article is the last of the nine and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of <em>Algebra and Element Conventions</em> collects the glyphs of the algebra.</p>
 <h2 id="the-upper-and-low-marks">The Upper and Low Marks</h2>
 <p><strong>These rules are real, and partial.</strong> They fix the marks of the common uses and they bind wherever they apply. They do not cover every use: a mark that falls outside them is governed by the section that fixes it, and a stricter rule stated in the corpus overrides them — the derivation convention of <em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>, the Fock and opposite tokens of §<em>The Superscripts</em>, and the forms of §<em>The Subscripts</em>.</p>
@@ -80,7 +80,8 @@
 <li>a power, $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$, $2^{k/2-1}$;</li>
 <li>a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;</li>
 <li>a transposition, $L^T$, $\psi^T$;</li>
-<li>a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{Sym}^l$, $\Lambda^kTM$ (degree).</li>
+<li>a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{Sym}^l$, $\Lambda^kTM$ (degree);</li>
+<li>a label naming the object, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$, and the rest of §<em>The Three-Letter Labels</em>.</li>
 </ul>
 <p><strong>A low mark is the exclusive carrier of those things:</strong></p>
 <ul>
@@ -90,9 +91,10 @@
 <li>a sign symbol, $\delta_{ij}$, $\varepsilon_{ijk}$, $\eta_{ij}$;</li>
 <li>a gauge, colour, isospin or spin index, $T_a$, $G_a$, $\sigma_z$;</li>
 <li>a connection or curvature component, $\Gamma_k$, $R_{ij}$, $\omega_i$, $g_{ij}$;</li>
-<li>a differential, $dx_i$.</li>
+<li>a differential, $dx_i$;</li>
+<li>a label naming a part or a role, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, with the labels of §<em>The Three-Letter Labels</em> read in the two slots.</li>
 </ul>
-<p><strong>The lists rule on these uses, not on the names.</strong> A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is.</p>
+<p><strong>The lists rule on these uses, not on the names.</strong> A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is. A label is a name of that kind, and the slot says what it names: on the caret it names the object the glyph denotes, $\mathbb{B}^{\mathrm{opp}}$, $a^{\mathrm{fop}}$, $L^{\mathrm{axf}}$, and low it names a part or a role of that object, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, and it is then a subscript label.</p>
 <h2 id="the-superscripts">The Superscripts</h2>
 <p>Two superscript tokens run beside the marks of the elements and the marks of the conjugations, on the glyphs of elements and algebras, and neither is to be read for the other:</p>
 <div class="table-scroll"><table>
@@ -126,8 +128,243 @@ $$</p>
 <p><strong>It combines with the dagger, the mark first.</strong> The dagger is the general adjoint (<em>Operator and Calculus Conventions</em>, §<em>The Operators</em>). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.</p>
 <p><strong>The opposite algebra carries a different token.</strong> The <strong>opposite algebra</strong>, whose multiplication is reversed, $a\cdot b=ba$, carries the superscript $\mathrm{opp}$ — $A^{\mathrm{opp}}$, $\mathbb{B}^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$ — and it is the <strong>algebra name</strong> that takes the mark; the Fock token $\mathrm{fop}$ marks a Fock-operator glyph. The two meanings are separated by the token itself and not by context.</p>
 <p><strong>The two-letter form $\mathrm{op}$ is forbidden.</strong> It differs from $\mathrm{opp}$ by one letter, at the size a superscript is set, and a page carrying both would be undecidable at reading speed. It is therefore not a token of the corpus in any sense. In particular it does not mark the operator norm: the norm is written $\lVert A\rVert$ bare, and the norms it is compared with carry their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$, so that the unmarked bar is the operator norm by default and never by elimination. It does not mark an operator either: an operator glyph is the element's glyph, and the explicit form is written where the letter is taken, as in the gradient $\tilde\nabla$ and the momentum $-i\hbar\nabla$.</p>
+<p><strong>A caret carries a label as it carries a power.</strong> Beyond the two tokens, the caret is the slot where the corpus names a variant of its object, in upright roman letters: $\mathbb{B}^{\mathrm{opp}}$, $a^{\mathrm{fop}}$, $L^{\mathrm{axf}}$, $\partial^{\mathrm{nil}}$, $\pi_1^{\mathrm{orb}}$. Italic is a power and upright is a name, so the two are told apart at sight, and a label is never read as an exponent: $L_x^{\mathrm{axf}}$ is the matrix of $\vec e_x$ in the axis-free frame and not the $x$-th power of an operator. <strong>The label is three lowercase letters by default</strong>, and for the reason that forbids $\mathrm{op}$ beside $\mathrm{opp}$ — one letter out of three, at the size a superscript is set, does not separate two meanings; a fourth letter is admitted where three do not carry the word, $\mathrm{lift}$, $\mathrm{dual}$, $\mathrm{deph}$, $\mathrm{refl}$, and the shorthands $\mathrm{fn}$ and $\mathrm{spin}$ of §<em>Summary of Notation</em> are of the same kind. The table below is the index of the three-letter labels of the corpus.</p>
+<h3 id="the-three-letter-labels">The Three-Letter Labels</h3>
+<p>The table is an index of labels and not a list of tokens: a label names an object, a construction, a frame or a variant of one, the article that introduces it fixes what it abbreviates, and a label enters the table with that article. <strong>Every label is written in lowercase.</strong> The caret is set at superscript size, where the case of a three-letter word is not read reliably, so a capitalised variant beside a lowercase one would be undecidable at reading speed; the rule is the one that forbids the two-letter $\mathrm{op}$ beside $\mathrm{opp}$, applied to case instead of to length.</p>
+<p>Two kinds of token stand outside the table and are not labels. An <strong>operator name</strong> set in the superscript keeps its own capitalisation, $\operatorname{Sym}$ on a divided-power structure and $\operatorname{Gal}$ on the fixed field $K^{\operatorname{Gal}(K/F)}$, because it is the glyph of an operator and not a label read on an object. The <strong>twelve names of the algebraic structures</strong> keep their capitals under a stricter rule stated in the corpus: $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$, $\mathrm{SPA}$, $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{SQS}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ are codes whose three letters are the initials of the words — general, symmetric, antisymmetric, plain, quaternionic, algebra, sesqualgebra — and the code is fixed in <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{adj}$</td>
+<td>the adjugate matrix</td>
+</tr>
+<tr>
+<td>$\mathrm{alg}$</td>
+<td>the algebraic left multiplication</td>
+</tr>
+<tr>
+<td>$\mathrm{arc}$</td>
+<td>the arc-length parametrisation of a curve</td>
+</tr>
+<tr>
+<td>$\mathrm{aut}$</td>
+<td>the automorphism attached to a triple isomorphism</td>
+</tr>
+<tr>
+<td>$\mathrm{avg}$</td>
+<td>the group average of a projection</td>
+</tr>
+<tr>
+<td>$\mathrm{axf}$</td>
+<td>the axis-free frame</td>
+</tr>
+<tr>
+<td>$\mathrm{can}$</td>
+<td>the canonical energy–momentum tensor</td>
+</tr>
+<tr>
+<td>$\mathrm{cop}$</td>
+<td>the coproduct of a Hopf algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{cov}$</td>
+<td>the universal cover here, the covariant fundamental solution there</td>
+</tr>
+<tr>
+<td>$\mathrm{cts}$</td>
+<td>the continuous dual</td>
+</tr>
+<tr>
+<td>$\mathrm{def}$</td>
+<td>the deformation stratum</td>
+</tr>
+<tr>
+<td>$\mathrm{dif}$</td>
+<td>the difference, or antisymmetrised, product</td>
+</tr>
+<tr>
+<td>$\mathrm{epr}$</td>
+<td>the value of the EPR steering parameter</td>
+</tr>
+<tr>
+<td>$\mathrm{exp}$</td>
+<td>the experimental value</td>
+</tr>
+<tr>
+<td>$\mathrm{ext}$</td>
+<td>the extended affine Weyl group</td>
+</tr>
+<tr>
+<td>$\mathrm{fat}$</td>
+<td>the fat Cantor set</td>
+</tr>
+<tr>
+<td>$\mathrm{fin}$</td>
+<td>the non-Archimedean places</td>
+</tr>
+<tr>
+<td>$\mathrm{fix}$</td>
+<td>the fixed points of the involution</td>
+</tr>
+<tr>
+<td>$\mathrm{fop}$</td>
+<td>the Fock operator</td>
+</tr>
+<tr>
+<td>$\mathrm{har}$</td>
+<td>the harmonic Fischer projection</td>
+</tr>
+<tr>
+<td>$\mathrm{imp}$</td>
+<td>the improvement term of the tensor</td>
+</tr>
+<tr>
+<td>$\mathrm{inc}$</td>
+<td>the incident field</td>
+</tr>
+<tr>
+<td>$\mathrm{ind}$</td>
+<td>the induced character</td>
+</tr>
+<tr>
+<td>$\mathrm{inv}$</td>
+<td>the invariant measure</td>
+</tr>
+<tr>
+<td>$\mathrm{lcm}$</td>
+<td>the least common multiple</td>
+</tr>
+<tr>
+<td>$\mathrm{lin}$</td>
+<td>the linearisation</td>
+</tr>
+<tr>
+<td>$\mathrm{lor}$</td>
+<td>the Lorentz object, the group or the Green function</td>
+</tr>
+<tr>
+<td>$\mathrm{mhv}$</td>
+<td>the MHV amplitude</td>
+</tr>
+<tr>
+<td>$\mathrm{mod}$</td>
+<td>the modified Lagrangian here, the modular Hamiltonian there</td>
+</tr>
+<tr>
+<td>$\mathrm{mon}$</td>
+<td>the monogenic Fischer operator</td>
+</tr>
+<tr>
+<td>$\mathrm{new}$</td>
+<td>the new subspace</td>
+</tr>
+<tr>
+<td>$\mathrm{nil}$</td>
+<td>the nilpotent direction</td>
+</tr>
+<tr>
+<td>$\mathrm{odd}$</td>
+<td>the odd part of a graded algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{old}$</td>
+<td>the old subspace</td>
+</tr>
+<tr>
+<td>$\mathrm{opp}$</td>
+<td>the opposite algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{orb}$</td>
+<td>the orbifold group here, the orbital part there</td>
+</tr>
+<tr>
+<td>$\mathrm{out}$</td>
+<td>the outgoing solution</td>
+</tr>
+<tr>
+<td>$\mathrm{per}$</td>
+<td>the periodic cyclic complex</td>
+</tr>
+<tr>
+<td>$\mathrm{pol}$</td>
+<td>the polarisation vector</td>
+</tr>
+<tr>
+<td>$\mathrm{pre}$</td>
+<td>the presheaf</td>
+</tr>
+<tr>
+<td>$\mathrm{red}$</td>
+<td>the reduced object</td>
+</tr>
+<tr>
+<td>$\mathrm{reg}$</td>
+<td>the regularised object</td>
+</tr>
+<tr>
+<td>$\mathrm{rel}$</td>
+<td>the relative transfer</td>
+</tr>
+<tr>
+<td>$\mathrm{rep}$</td>
+<td>the representing function</td>
+</tr>
+<tr>
+<td>$\mathrm{res}$</td>
+<td>the residual part; the residue field</td>
+</tr>
+<tr>
+<td>$\mathrm{ret}$</td>
+<td>the retarded field</td>
+</tr>
+<tr>
+<td>$\mathrm{rev}$</td>
+<td>the reversed process</td>
+</tr>
+<tr>
+<td>$\mathrm{set}$</td>
+<td>the underlying set of a structure</td>
+</tr>
+<tr>
+<td>$\mathrm{sgn}$</td>
+<td>the sign</td>
+</tr>
+<tr>
+<td>$\mathrm{str}$</td>
+<td>the structure group</td>
+</tr>
+<tr>
+<td>$\mathrm{sub}$</td>
+<td>the submultiplicative seminorm</td>
+</tr>
+<tr>
+<td>$\mathrm{sym}$</td>
+<td>the symmetrised form</td>
+</tr>
+<tr>
+<td>$\mathrm{top}$</td>
+<td>the top degree</td>
+</tr>
+<tr>
+<td>$\mathrm{tot}$</td>
+<td>the total tensor</td>
+</tr>
+<tr>
+<td>$\mathrm{wkb}$</td>
+<td>the WKB approximation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A label is read in its slot.</strong> The word is the same in the two slots and the slot says what it names: the caret names the object the glyph denotes and the low mark a part or a role of it, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, and §<em>The Subscripts</em> rules on the low slot. The vocabulary is not private to a slot either: $\mathrm{orb}$ and $\mathrm{cov}$ name one object in the mathematical corpus and another in the physical one, $\mathrm{res}$ already names two within the mathematics, the residual part and the residue field, and the article that writes a label says which object it names.</p>
 <h2 id="the-subscripts">The Subscripts</h2>
-<p>A subscript is written with the underscore, <code>_</code>, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.</p>
+<p>A subscript is written with the underscore, <code>_</code>, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone. A subscript label is written in the upright roman of the caret labels, and the two lists are read together (§<em>The Three-Letter Labels</em>).</p>
 <p><strong>A subscript is never a partial derivative.</strong> The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in <em>Operator and Calculus Conventions</em>, §<em>Conventions for Derivation</em>.</p>
 <p><strong>A coefficient carries a letter index and an element a number.</strong> In the quaternionic layers a coefficient is indexed by the direction it multiplies, $Q_x$ and $q_x$, and an element that is counted carries a number on its tilde, $\tilde Q_1, \tilde Q_2$. In the commutative layers, which have no direction, both the element and its coefficients carry the number of the element, $Q_1 = q_1 + iq'_1$. The two indices are of different kinds, a letter against a number, so a coefficient index is never read as the number of an element, nor the reverse.</p>
 <p><strong>It is allowed to add subscripts when several elements of the same kind are used.</strong> The permission covers the units, the roots, the idempotents and the nilpotents as well as the general elements: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.</p>
@@ -253,7 +490,7 @@ ${}_{\~{n}}$, ${}_{\H{n}}$, ${}_{\vec{n}}$</p>
 <li>A malformed formula is rendered in red on the page rather than reported as an error, so mathematics is checked by eye and not by the absence of a warning.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>Two <strong>superscript tokens</strong> run beside the marks of the elements: $\mathrm{fop}$ marks a Fock operator, an operator on the Fock space and not an element of the algebra, and $\mathrm{opp}$ marks the opposite algebra, whose product is reversed. The two are not read for one another: $\mathrm{fop}$ is written on a glyph, $\mathrm{opp}$ on an algebra name. The Fock mark combines with the dagger, the mark first, $a^{\mathrm{fop}\dagger}$, and the dagger alone never marks a glyph as an operator. Two further upright superscripts, $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element, name objects outside the algebra. No index is raised anywhere in the corpus: every index is written low, and a contraction is a form.</p>
+<p>Two <strong>superscript tokens</strong> run beside the marks of the elements: $\mathrm{fop}$ marks a Fock operator, an operator on the Fock space and not an element of the algebra, and $\mathrm{opp}$ marks the opposite algebra, whose product is reversed. The two are not read for one another: $\mathrm{fop}$ is written on a glyph, $\mathrm{opp}$ on an algebra name. The Fock mark combines with the dagger, the mark first, $a^{\mathrm{fop}\dagger}$, and the dagger alone never marks a glyph as an operator. Two further upright superscripts, $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element, name objects outside the algebra. No index is raised anywhere in the corpus: every index is written low, and a contraction is a form. The caret also carries the corpus's <strong>labels</strong>, upright roman names of three lowercase letters by default — $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$ — indexed in §<em>The Three-Letter Labels</em>; a label names the object the glyph denotes when it is written on the caret, and a part or a role of that object when it is written low, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$.</p>
 <p>A <strong>subscript</strong> is written with the underscore and takes a single token: one character bare, two or more in braces. It counts when it only distinguishes occurrences and names when it is a role label; a role-labelled element carries its label in its coefficients. The admitted forms are a digit, a letter, two indices, a sign, an upright word and a grouped expression, and the slot takes any KaTeX expression beyond them. A subscript is never a partial derivative. An <strong>angular-momentum total</strong> takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the total generator carries the role subscript and then the vector index, $\tilde S_{\mathrm{tot},k}$; the orbital part is $L_k$ here and $\tilde L_k$ in the physical corpus.</p>
 <p>The <strong>working conventions of the corpus</strong> are these. Every article is registered in exactly one menu, <code>maths.md</code> or <code>physics.md</code>, with a comment that outlines it, and a leading <code>+</code> marks a planned article. A category of Parts I to IV lists its articles in the four groups Theory, Operator Theory, <code>*</code> Theory and <code>*</code> Operator Theory, and <code>- Applications</code> closes it. The article files are <code>articles_maths/&lt;slug&gt;.md</code> and <code>articles_physics/&lt;slug&gt;.md</code>, and every article follows the skeleton Introduction, thematic sections, Summary, Summary of Notation, Further Reading.</p>
 <p>The <strong>category numbers</strong> count the categories of the parts in menu order; the front matter is not counted. Since a number shifts when a category is inserted or split, an article addresses a category by name, and the name is the stable thing. The letter $\iota$ is not used in Part VI, where a comparison with a Clifford algebra is written by its values or as the Clifford image, an interior product as a pairing and an inner automorphism in words. The <strong>typography</strong> is KaTeX on the page: inline mathematics between single dollars and never across a line break, display mathematics between double dollars on lines of their own, tables in Markdown and never as a LaTeX array, and a malformed formula rendered in red rather than reported.</p>
@@ -273,6 +510,10 @@ ${}_{\~{n}}$, ${}_{\H{n}}$, ${}_{\vec{n}}$</p>
 <tr>
 <td>$^{\mathrm{opp}}$</td>
 <td>The opposite algebra, the algebra with the reversed product; the two-letter $\mathrm{op}$ is not a token</td>
+</tr>
+<tr>
+<td>$\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$</td>
+<td>The three-letter labels of a construction, a frame or a variant of an object; the full index is §<em>The Three-Letter Labels</em></td>
 </tr>
 <tr>
 <td>$^{\mathrm{fn}}$</td>
