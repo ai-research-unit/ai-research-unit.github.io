@@ -236,8 +236,8 @@ The $2\times2$ realization keeps the two conjugations apart, the natural conjuga
 - Nicolas Bourbaki, *Algebra I, Chapters 1–3* (Springer, 1998), for the structure of $M_2(\mathbb{C})$ and its involutions.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the classification of the involutions of a matrix algebra and the orthosymplectic forms.
 - Barry Simon, *Representations of Finite and Compact Groups* (American Mathematical Society, 1996), for the conjugacy classes of $\mathrm{U}(2)$ and the orbits of the $*$-unitary group.
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the realization and its first properties
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the further reading of the isomorphism
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the realization and its first properties
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the further reading of the isomorphism
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra and its Gram matrix
 - [The General Quaternionic Sesqualgebra in the $4\times4$ Left Regular Representation](the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.html), for the companion reading of the group
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restriction theory of the form

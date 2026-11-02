@@ -93,8 +93,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html)
 - [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html)
 - [Matrix Representations Conventions](../articles_maths/conventions-of-the-matrix-models.html)
-- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html)
-- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html)
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html)
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html)
 - [The Square of an Element](../articles_maths/the-square-of-an-element.html)
 - [Zero Divisors and Units](../articles_maths/zero-divisors-and-units.html)
 
@@ -103,7 +103,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Nilpotents](../articles_maths/nilpotents.html)
 - [Idempotents](../articles_maths/idempotents.html)
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
-- [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html)
+- [The Peirce Basis of the Biquaternion Algebra](../articles_maths/the-peircaxis-free basis-of-the-biquaternion-algebra.html)
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
 
@@ -142,7 +142,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html)
 - [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
 
-- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html)
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html)
 
 #### Algebra with the H Norm
 

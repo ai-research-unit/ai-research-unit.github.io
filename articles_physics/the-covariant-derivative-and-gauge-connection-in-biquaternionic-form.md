@@ -343,7 +343,7 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 | $\sum_\mu D_\mu^2 = \mathrm{Sc}(\bar D D)$ | Covariant d'Alembertian |
 | $\bar D D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ | Covariant square identity |
 | $\bar{e}_t = e_t, \bar{e}_\mu = -\vec e_\mu$ | Conjugate basis |
-| $iR_{e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{e_k}R_{e_y}$, $L_{a}R_{b}$ | Frame cells, $L_a$ and $R_b$ the left and right multiplications |
+| $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $L_{a}R_{b}$ | Frame cells, $L_a$ and $R_b$ the left and right multiplications |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |
 

@@ -14,7 +14,7 @@ Five problems are worked:
 
 **On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses ($\beta$, $\boldsymbol\alpha$, $O$, $S_1$), although it does identify the Pauli Hamiltonian and the spin term as $\mathbb M_+$ observables. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.
 
-The five frame cells are $iR_{e_x}=iL_{e_t}R_{\vec e_x}$ and $iL_{e_k}R_{e_y}$, with $L_{a}R_{b}\psi=a\psi b$ the two-sided multiplication. The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. In the Dirac basis, where the timelike cell is diagonal, the two operators of the Hamiltonian take their standard matrices, the odd $\beta=iR_{e_x}$ and the even $\alpha_k=iR_{e_x}\,iL_{e_k}R_{e_y}$,
+The five frame cells are $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$ the two-sided multiplication. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. In the Dirac basis, where the timelike cell is diagonal, the two operators of the Hamiltonian take their standard matrices, the odd $\beta=iR_{\vec e_x}$ and the even $\alpha_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}$,
 
 $$\beta=\begin{pmatrix} I_2&0\\0&-I_2\end{pmatrix},\qquad
 \alpha_k=\begin{pmatrix} 0&\sigma_k\\ \sigma_k&0\end{pmatrix}.
@@ -33,7 +33,7 @@ The Clifford metric $g$ is carried by the generators; it is the negative of the 
 $$
 i\hbar\,\partial/\partial t'\,\psi=H\psi,\qquad
 H=c\,\boldsymbol\alpha\cdot\vec\pi+\beta mc^2+ϙ\phi_0,
-\qquad \alpha_k=iR_{e_x}\,iL_{e_k}R_{e_y}=\begin{pmatrix}0&\sigma_k\\ \sigma_k&0\end{pmatrix}.
+\qquad \alpha_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}=\begin{pmatrix}0&\sigma_k\\ \sigma_k&0\end{pmatrix}.
 $$
 
 Write $H=\beta mc^2+O+E$ with
@@ -302,7 +302,7 @@ Every term of the reduced, two-component Hamiltonian is Hermitian, hence every t
 
 *Step 3: what does not land in $\mathbb M_+$.* Three classes of object in the reduction do not.
 
-1. **The Clifford-odd operators.** The mass term $\beta mc^2$ contains $\beta=iR_{e_x}$, and the generator $S_1=-\frac{i}{2mc^2}\beta O$ contains $\beta O$. Both $\beta$ and $\beta O$ are odd products of the frame cells, whereas $\mathbb B\cong\mathrm{Cl}^+_{1,3}$ is the *even* subalgebra. They therefore have no representative in $\mathbb B$ at all, and a fortiori none in either $\mathbb M_\pm$. This is why the four-component Hamiltonian is not an element of $\mathbb B$ and why a transformation is needed before the biquaternion identification can be made: the Foldy–Wouthuysen transformation is exactly the operation that removes the Clifford-odd part and leaves an element of $\mathbb M_+$.
+1. **The Clifford-odd operators.** The mass term $\beta mc^2$ contains $\beta=iR_{\vec e_x}$, and the generator $S_1=-\frac{i}{2mc^2}\beta O$ contains $\beta O$. Both $\beta$ and $\beta O$ are odd products of the frame cells, whereas $\mathbb B\cong\mathrm{Cl}^+_{1,3}$ is the *even* subalgebra. They therefore have no representative in $\mathbb B$ at all, and a fortiori none in either $\mathbb M_\pm$. This is why the four-component Hamiltonian is not an element of $\mathbb B$ and why a transformation is needed before the biquaternion identification can be made: the Foldy–Wouthuysen transformation is exactly the operation that removes the Clifford-odd part and leaves an element of $\mathbb M_+$.
 
 2. **The anti-Hermitian generator.** $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb M_-$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb M_-$. It is not itself in $\mathbb M_-$, because it is built from the Clifford-odd element $\beta O$. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $\beta$, the $\mathbb M_\pm$ grading is by ${}^{*}$. Thus the odd operator $O=c\boldsymbol\alpha\cdot\vec\pi$ is Foldy–Wouthuysen-odd but Clifford-even and Hermitian, so as a biquaternion it lies in $\mathbb M_+$; while $\beta O$ is Foldy–Wouthuysen-odd, Clifford-odd and anti-Hermitian, and lies in neither $\mathbb B$ nor $\mathbb M_\pm$. The identification of "odd" with "not in $\mathbb M_+$" is incorrect.
 
@@ -349,8 +349,8 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ | Quaternion basis |
 | $\mathbb M_+,\mathbb M_-$ | Hermitian / anti-Hermitian subspaces |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\sigma_k\leftrightarrow i\vec e_k$ | Isomorphism, Pauli matrices |
-| $iR_{e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{e_k}R_{e_y}$, $L_{a}R_{b}\psi=a\psi b$ | Frame cells in the mostly-minus convention; $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4$ |
-| $\beta=iR_{e_x}$, $\alpha_k=iR_{e_x}\,iL_{e_k}R_{e_y}$ | Dirac-basis matrices, the cells read with the timelike one diagonal |
+| $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $L_{a}R_{b}\psi=a\psi b$ | Frame cells in the mostly-minus convention; $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4$ |
+| $\beta=iR_{\vec e_x}$, $\alpha_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}$ | Dirac-basis matrices, the cells read with the timelike one diagonal |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric; $g=-\eta$ |
 | $\vec\pi=p-ϙ\vec A$ | Kinetic momentum |
 | $\vec B=\nabla\times\vec A$, $\vec E$ | Magnetic, electric fields |

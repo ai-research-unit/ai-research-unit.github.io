@@ -27,7 +27,7 @@ On a four-manifold with a spin structure and a gauge bundle in a representation 
 $$
 \mathcal{D}_R \;=\; C_\mu D_\mu ,
 \qquad
-C_0=iL_{e_t}R_{e_x},\quad C_k=iL_{e_k}R_{e_y} ,
+C_0=iL_{e_t}R_{\vec e_x},\quad C_k=iL_{\vec e_k}R_{\vec e_y} ,
 \qquad
 D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu^{R} ,
 $$
@@ -195,7 +195,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
 | $\tilde\nabla=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; Dirac operator |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
-| $\mathcal{D}_R=C_\mu D_\mu$, $C_0=iL_{e_t}R_{e_x}$, $C_k=iL_{e_k}R_{e_y}$ | Twisted Dirac operator in representation $R$, in frame cells |
+| $\mathcal{D}_R=C_\mu D_\mu$, $C_0=iL_{e_t}R_{\vec e_x}$, $C_k=iL_{\vec e_k}R_{\vec e_y}$ | Twisted Dirac operator in representation $R$, in frame cells |
 | $\psi\mapsto-i\psi\vec e_z$ | Chirality; $\ker\mathcal{D}_R=\ker^+\oplus\ker^-$ |
 | $n_\pm$ | Dimensions of the positive/negative chirality zero-mode spaces |
 | $\mathrm{ind}\,\mathcal{D}_R=n_+-n_-$ | Index of the Dirac operator |
@@ -233,7 +233,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z} .
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

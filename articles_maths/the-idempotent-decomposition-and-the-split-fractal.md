@@ -111,6 +111,6 @@ The Peirce decomposition of a biquaternion with respect to a primitive idempoten
 
 - [Idempotents](idempotents.html), for the idempotents, their classification and the standard pair.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition used here.
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the matrix model and the identification of the components with the entries.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix model and the identification of the components with the entries.
 - [The Slices of the Biquaternion Julia Sets](the-slices-of-the-biquaternion-julia-sets.html), for the placement of the split fractal among the slices.
 - [The Clifford Decomposition of the Split-Biquaternion Fractals](the-clifford-decomposition-of-the-split-biquaternion-fractals.html), for the central-idempotent contrast.

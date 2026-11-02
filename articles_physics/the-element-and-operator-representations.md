@@ -15,9 +15,9 @@ The operator side is stated once, here. An element acts in three ways: left mult
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The coefficient space and the norm | [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html) |
-| The algebra isomorphism $\mathsf{M}_2$, the trace, the determinant, the sectors and the ideals | [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html) |
-| The left regular matrix, its determinant $N^2$, its trace $4Q_t$ and its block decomposition | [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html) |
-| The right regular matrix and its relation to the left one | [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html) |
+| The algebra isomorphism $\mathsf{M}_2$, the trace, the determinant, the sectors and the ideals | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
+| The left regular matrix, its determinant $N^2$, its trace $4Q_t$ and its block decomposition | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
+| The right regular matrix and its relation to the left one | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | The congruence, the two-sided maps and the enveloping operator algebra | [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html) |
 | The sandwich, its spectrum, determinant, trace and rank | [The Hermitian Sandwich: Definition and Multiplicativity](../articles_maths/the-hermitian-sandwich-definition-and-multiplicativity.html), for the matrix, the determinant, the trace and the rank; [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), §*The Spectrum of the Sandwich*, for the spectrum, and §*The Vanishing of the Modulus*, for the rank |
 | The module structure and the Hilbert structure of the spinor space | [Modules over the Biquaternion Algebra](../articles_maths/the-category-of-modules.html) |
@@ -413,8 +413,8 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 
 ## Further Reading
 
-- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html), for the isomorphism, the trace, the determinant and the ideals.
-- [The $M_4(\mathbb{C})$ e-basis Representation](../articles_maths/m4c-e-basis-representation.html), for the regular matrix, its block form and the right matrix.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html), for the isomorphism, the trace, the determinant and the ideals.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html), for the regular matrix, its block form and the right matrix.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the one-sided and two-sided maps, the congruence and the enveloping algebra.
 - [The Left Regular Operators on the Biquaternion Algebra](../articles_maths/the-left-regular-operators-on-the-biquaternion-algebra.html), for the left kernel, the image and the rank.
 - [The Right Regular Operators on the Biquaternion Algebra](../articles_maths/the-right-regular-operators-on-the-biquaternion-algebra.html), for the right kernel, the image and the exchange.

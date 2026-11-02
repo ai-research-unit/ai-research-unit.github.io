@@ -27,7 +27,7 @@ The article is organized as follows. The field, its constraint, and the conseque
 The field is written on the frame cells of the algebra. A cell is a pair of multipliers, $L_{a}R_{b}\psi=a\psi b$, with $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ and identity $I_4=L_{e_t}R_{e_t}$; the frame cells are
 
 $$
-C_0=iL_{e_t}R_{e_x},\qquad C_k=iL_{e_k}R_{e_y},\quad k=1,2,3,
+C_0=iL_{e_t}R_{\vec e_x},\qquad C_k=iL_{\vec e_k}R_{\vec e_y},\quad k=1,2,3,
 $$
 
 elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and not of $\mathbb{B}$, with total antisymmetrizations $C_{\mu\nu}=\tfrac12[C_\mu,C_\nu]$ and $C_{\mu\nu\rho}=\tfrac1{3!}\sum_{\mathrm{perms}}\pm C_\mu C_\nu C_\rho$. The frame is a coordinate choice, not a second algebra. The Rarita–Schwinger field satisfies the field equation
@@ -267,7 +267,7 @@ In the biquaternion framework the field is the tensor product of the material ve
 |---|---|
 | $\psi_\mu$ | Rarita–Schwinger vector-spinor; material vector index $\mu$, spinor index suppressed |
 | $L_{a}R_{b}\psi=a\psi b$, $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ | A cell: one left and one right multiplier; the identity cell is $I_4=L_{e_t}R_{e_t}$ |
-| $C_0=iL_{e_t}R_{e_x}$, $C_k=iL_{e_k}R_{e_y}$, $C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4$ | Frame cells, a coordinate choice in the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$; $C_{\mu\nu}$ and $C_{\mu\nu\rho}$ are the total antisymmetrizations |
+| $C_0=iL_{e_t}R_{\vec e_x}$, $C_k=iL_{\vec e_k}R_{\vec e_y}$, $C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4$ | Frame cells, a coordinate choice in the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$; $C_{\mu\nu}$ and $C_{\mu\nu\rho}$ are the total antisymmetrizations |
 | $(i\sum_\nu C_{\nu}\partial/\partial x_\nu-m)\psi_\mu=0$ | Rarita–Schwinger field equation |
 | $\sum_\mu C_\mu\psi_\mu=0$ | Irreducibility constraint; removes the $\left(\tfrac12\right)$ component |
 | $\sum_\mu p_\mu\psi_\mu=0$ | Transversality; follows from the constraint and the field equation |

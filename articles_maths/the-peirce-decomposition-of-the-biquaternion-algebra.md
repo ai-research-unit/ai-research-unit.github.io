@@ -219,7 +219,7 @@ A nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ of two idempotents
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the units, the product table, the centre and simplicity.
 - [Idempotents](idempotents.html), for the classification of the idempotents and the standard pair.
-- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the choice of an element in each line and the gauge.
+- [The Peirce Basis of the Biquaternion Algebra](the-peircaxis-free basis-of-the-biquaternion-algebra.html), for the choice of an element in each line and the gauge.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the elements of the two spinor spaces.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general family.
 - [Complementary Idempotents and the Peirce Decomposition](complementary-idempotents-and-the-peirce-decomposition.html), for the complement and the general corner rule.

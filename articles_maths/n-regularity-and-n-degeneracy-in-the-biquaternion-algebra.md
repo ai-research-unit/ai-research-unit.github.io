@@ -269,7 +269,7 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the norm and its axioms.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of an algebraic norm and the separation of the four.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce factorisation of the strata.
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the isomorphism $\mathsf M_2$, the determinant, the trace, the rank-one elements and the contraction of their factors.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the isomorphism $\mathsf M_2$, the determinant, the trace, the rank-one elements and the contraction of their factors.
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the topology of $\mathbb{B}^{\times}$, its maximal compact subgroup and its homotopy.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the zero-divisor set and its criterion for the general quaternionic product.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the comparison of the zero-divisor sets of the twelve products.

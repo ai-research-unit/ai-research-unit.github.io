@@ -14,7 +14,7 @@ What the framework does **not** supply is equally definite, and follows from the
 
 The article is organised as follows. The next section explains why a self-interaction is cubic and how geometry produces one. A section states the Thirring and Soler models. A section gives the Einstein–Cartan torsion route and the Hehl–Datta equation. A section lists the local bilinears and the channel each model uses. A section gives the biquaternion interpretation. A short section records the verified two-dimensional relations. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. Two families of cells are used. The **generator cells** are $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$; they satisfy the Clifford relations $\left(iR_{e_x}\right)^2 = L_{e_t}R_{e_t}$, $\left(iL_{e_k}R_{e_y}\right)^2 = -L_{e_t}R_{e_t}$ and $\{iR_{e_x},iL_{e_k}R_{e_y}\} = 0$, which is $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. The **axial cells** are $c^{(5)}_0 = L_{e_t}R_{e_y}$ and $c^{(5)}_k = -L_{e_k}R_{e_x}$, and $c^{(5)}_\mu$ is the product $iL_{e_\mu}R_{e_{\nu(\mu)}}$ times the chirality cell $-iL_{e_t}R_{e_z}$. The chirality has square $L_{e_t}R_{e_t}$, and the Dirac adjoint is $\bar\psi = i\psi^\dagger L_{e_t}R_{e_x}$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $\vec e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the spinor equations below are the representatives in which the literature models are defined, and the biquaternionic transcription of each interaction is the open point.
+The conventions are those of the companion articles. Two families of cells are used. The **generator cells** are $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{\vec e_k}R_{e_y}$; they satisfy the Clifford relations $\left(iR_{e_x}\right)^2 = L_{e_t}R_{e_t}$, $\left(iL_{\vec e_k}R_{e_y}\right)^2 = -L_{e_t}R_{e_t}$ and $\{iR_{e_x},iL_{\vec e_k}R_{e_y}\} = 0$, which is $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. The **axial cells** are $c^{(5)}_0 = L_{e_t}R_{e_y}$ and $c^{(5)}_k = -L_{\vec e_k}R_{e_x}$, and $c^{(5)}_\mu$ is the product $iL_{e_\mu}R_{e_{\nu(\mu)}}$ times the chirality cell $-iL_{e_t}R_{e_z}$. The chirality has square $L_{e_t}R_{e_t}$, and the Dirac adjoint is $\bar\psi = i\psi^\dagger L_{e_t}R_{e_x}$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $\vec e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the spinor equations below are the representatives in which the literature models are defined, and the biquaternionic transcription of each interaction is the open point.
 
 ## Why the Dirac Equation Becomes Nonlinear
 
@@ -67,11 +67,11 @@ Recently, exact solutions of the Soler model in closed form have been found, whi
 The geometric route of the earlier section gives the equation
 
 $$
-\boxed{\;-\Big(\left(\nabla_t\psi\right)e_x + \sum_k e_k\left(\nabla_k\psi\right)e_y\Big) - m\psi
+\boxed{\;-\Big(\left(\nabla_t\psi\right)e_x + \sum_k \vec e_k\left(\nabla_k\psi\right)e_y\Big) - m\psi
 + \frac{3\kappa}{8}\sum_\mu A_\mu\,c^{(5)}_\mu\psi = 0\;},
 $$
 
-in which the kinetic operator is written in cells, $i\,iL_{e_\mu}R_{e_{\nu(\mu)}}\nabla_\mu\psi = -\left(\left(\nabla_t\psi\right)e_x + \sum_k e_k\left(\nabla_k\psi\right)e_y\right)$. Here $\nabla_\mu$ is the general-relativistic covariant derivative of a spinor, $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant, and the interaction is the axial-axial contact term produced by the torsion of the spinor's own spin. The coefficient $3\kappa/8$ is fixed by the geometry, not chosen. The cubic term becomes significant only at densities of order $m^2/\kappa$, which are far outside laboratory matter; the interaction is a high-density effect.
+in which the kinetic operator is written in cells, $i\,iL_{e_\mu}R_{e_{\nu(\mu)}}\nabla_\mu\psi = -\left(\left(\nabla_t\psi\right)e_x + \sum_k \vec e_k\left(\nabla_k\psi\right)e_y\right)$. Here $\nabla_\mu$ is the general-relativistic covariant derivative of a spinor, $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant, and the interaction is the axial-axial contact term produced by the torsion of the spinor's own spin. The coefficient $3\kappa/8$ is fixed by the geometry, not chosen. The cubic term becomes significant only at densities of order $m^2/\kappa$, which are far outside laboratory matter; the interaction is a high-density effect.
 
 If the torsion is allowed to propagate rather than to be eliminated algebraically, the same nonlinear structure survives with the coefficient replaced by a term involving the spinor–torsion coupling $X$ and the torsion mass $M$, of the form $-X^2/M^2$. With the natural sign this self-interaction is **repulsive**, as in the Nambu–Jona-Lasinio model, and its scale is set by the torsion mass. The two routes — a non-propagating torsion fixed by gravity, and a propagating torsion with its own mass — therefore give the same axial-axial channel with different coefficients, which is the reason the channel is regarded as the generic one rather than a special choice.
 
@@ -89,7 +89,7 @@ A single Dirac field has five types of local bilinear, classified by their Loren
 | $A_\mu = \bar\psi\,c^{(5)}_\mu\psi$ | Axial vector | four-vector | odd |
 | $T_{\mu\nu} = \bar\psi\sigma_{\mu\nu}\psi$ | Tensor | antisymmetric rank 2 | even |
 
-Each is quadratic in the field, and $\sigma_{\mu\nu} = \tfrac{i}{2}\left[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\right]$ is the antisymmetric product of two generator cells, with $\sigma_{0k}\psi = i\,e_k\,\psi\,e_z$ and $\sigma_{jk}\psi = i\,e_j e_k\,\psi$. A local quartic interaction without derivatives is a Lorentz-covariant product of two of them, and only a few combinations are independent because the Fierz identities relate them.
+Each is quadratic in the field, and $\sigma_{\mu\nu} = \tfrac{i}{2}\left[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\right]$ is the antisymmetric product of two generator cells, with $\sigma_{0k}\psi = i\,\vec e_k\,\psi\,e_z$ and $\sigma_{jk}\psi = i\,e_j \vec e_k\,\psi$. A local quartic interaction without derivatives is a Lorentz-covariant product of two of them, and only a few combinations are independent because the Fierz identities relate them.
 
 ### Which channel each model uses
 
@@ -156,15 +156,15 @@ The biquaternion interpretation places the channels. The scalar density is the m
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_k^2 = -e_t$, central $i$ |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided cell; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, identity $L_{e_t}R_{e_t}$ |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cells: $iR_{e_x} = iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ |
-| $c^{(5)}_\mu$ | Axial cells: $c^{(5)}_0 = L_{e_t}R_{e_y}$, $c^{(5)}_k = -L_{e_k}R_{e_x}$ |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cells: $iR_{e_x} = iL_{e_t}R_{e_x}$, $iL_{\vec e_k}R_{e_y}$ |
+| $c^{(5)}_\mu$ | Axial cells: $c^{(5)}_0 = L_{e_t}R_{e_y}$, $c^{(5)}_k = -L_{\vec e_k}R_{e_x}$ |
 | $\bar\psi = i\psi^\dagger L_{e_t}R_{e_x}$ | Dirac adjoint (carries the Clifford-odd cell $iL_{e_t}R_{e_x}$) |
 | $-iL_{e_t}R_{e_z}$ | Chirality cell; its square is the identity cell $L_{e_t}R_{e_t}$ |
 | $S = \bar\psi\psi$ | Scalar density (mass channel) |
 | $P = \bar\psi\,\psi\,e_z$ | Pseudoscalar density |
 | $V_\mu = \bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$ | Vector current (material sector in the framework) |
 | $A_\mu = \bar\psi\,c^{(5)}_\mu\psi$ | Axial current (channel broken by the mass) |
-| $T_{\mu\nu} = \bar\psi\sigma_{\mu\nu}\psi$ | Tensor bilinear; $\sigma_{0k}\psi = i e_k\psi e_z$, $\sigma_{jk}\psi = i e_j e_k\psi$ |
+| $T_{\mu\nu} = \bar\psi\sigma_{\mu\nu}\psi$ | Tensor bilinear; $\sigma_{0k}\psi = i \vec e_k\psi e_z$, $\sigma_{jk}\psi = i e_j \vec e_k\psi$ |
 | $\varepsilon_\mu = g_{\mu\mu}$ | Signature sign of the index $\mu$ |
 | $g$ | Self-coupling of the Thirring and Soler models |
 | $\kappa = 8\pi G/c^4$ | Einstein gravitational constant |

@@ -12,14 +12,14 @@ $$
 
 This article asks what the framework supplies for the condensate. The answer is a short chain of algebraic facts and one large missing physical input, and it is stated at the outset in the corpus's three categories.
 
-- **Established, and recomputed below.** The massless biquaternion equation $\tilde{\nabla}\tilde{\Psi}=0$ carries the axial symmetry $\tilde{\Psi}\mapsto \exp(i\alpha\,-iR_{e_z})\tilde{\Psi}$, and the massive linear chiral pair breaks it: the vector central phase $\exp(i\alpha)$ passes through the mass, the axial phase does not, and the axial current obeys $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu} = 2im\bar{\psi}\,-iR_{e_z}\psi$. A condensate $\langle\bar{\Psi}\Psi\rangle$ is the vacuum expectation of exactly the bilinear that the mass term multiplies, so a nonzero condensate is a dynamically generated coefficient of the *same* linear chiral pair — not of the algebra's antilinear real structure $\flat$, which is a different object.
+- **Established, and recomputed below.** The massless biquaternion equation $\tilde{\nabla}\tilde{\Psi}=0$ carries the axial symmetry $\tilde{\Psi}\mapsto \exp(i\alpha\,-iR_{\vec e_z})\tilde{\Psi}$, and the massive linear chiral pair breaks it: the vector central phase $\exp(i\alpha)$ passes through the mass, the axial phase does not, and the axial current obeys $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu} = 2im\bar{\psi}\,-iR_{\vec e_z}\psi$. A condensate $\langle\bar{\Psi}\Psi\rangle$ is the vacuum expectation of exactly the bilinear that the mass term multiplies, so a nonzero condensate is a dynamically generated coefficient of the *same* linear chiral pair — not of the algebra's antilinear real structure $\flat$, which is a different object.
 - **Established, and recomputed below.** The bilinear $\bar{\Psi}\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ is chirality-odd, Lorentz-invariant and parity-even; its vacuum expectation is a **central** (scalar) element of $\mathbb{B}$, it is the carrier of the linear chiral mass, and it is what the framework's off-diagonal mass coupling is a coefficient of. The counting of broken generators, $N_f^2-1$ for $N_f$ massless flavours, is the standard one and is reproduced.
 - **Standard, transcribed.** The Nambu–Jona-Lasinio gap equation, the critical coupling $G_c$, the mean-field condensate, and the Goldstone counting are textbook. They are stated here in the framework's notation because they are what a dynamical condensate is, and the article verifies the one numerical relation it quotes.
 - **Gap, left visible.** The framework has **no colour group and no strong gauge dynamics**: the compact gauge algebra inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of real dimension four, every $\mathbb{B}$-module has even complex dimension, and $SU(3)$ is absent. A QCD-like condensate therefore cannot be *derived* in the framework. The framework supplies the algebraic identity of the condensate with the coefficient of its linear chiral pair; the scale, and the interaction that produces it, are empirical input.
 
 The article is organised as follows. A section fixes the chiral symmetry of the linear mass term and its axial current. A section shows that the condensate is the order parameter and identifies it algebraically. A section transcribes the gap equation and verifies its numbers. A section gives the biquaternion interpretation. A section records the Goldstone counting and where the pion is treated. A closing section separates what the framework supplies, transcribes, and does not supply.
 
-With $L_{a}R_{b}\psi=a\psi b$ the two-sided cell, the four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. The chirality cell $-iR_{e_z}$ acts as $-1$ on $\psi_L$ and $+1$ on $\psi_R$ in the chiral block basis, and the spacetime metric of the $ict'$ gradient is $\eta=-g$. The five cells generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $\vec e_x\mapsto\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}$, $\vec e_y\mapsto\,iL_{e_z}R_{e_y}\,iL_{e_x}R_{e_y}$, $\vec e_z\mapsto\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}$ and $i\mapsto\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}$, so that $-iR_{e_z}=i\omega$. The Dirac adjoint is $\bar\psi=\psi^{*}\,iR_{e_x}$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
+With $L_{a}R_{b}\psi=a\psi b$ the two-sided cell, the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. The chirality cell $-iR_{\vec e_z}$ acts as $-1$ on $\psi_L$ and $+1$ on $\psi_R$ in the chiral block basis, and the spacetime metric of the $ict'$ gradient is $\eta=-g$. The five cells generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $\vec e_x\mapsto\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$, $\vec e_y\mapsto\,iL_{\vec e_z}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}$, $\vec e_z\mapsto\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}$ and $i\mapsto\omega=iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$, so that $-iR_{\vec e_z}=i\omega$. The Dirac adjoint is $\bar\psi=\psi^{*}\,iR_{\vec e_x}$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
 
 The framework results used here are those of the companion articles:
 
@@ -40,14 +40,14 @@ $$
 is multiplication by the central element $\exp(i\alpha)\in\mathbb{C}_{\mathbb{B}}$; it rotates the two chiralities together. The **axial** phase
 
 $$
-A:\ \psi\ \longmapsto\ \exp(i\alpha\,-iR_{e_z})\psi ,
+A:\ \psi\ \longmapsto\ \exp(i\alpha\,-iR_{\vec e_z})\psi ,
 \qquad\text{equivalently}\qquad
 \psi_L\longmapsto \exp(-i\alpha)\psi_L ,\quad \psi_R\longmapsto \exp(+i\alpha)\psi_R ,
 $$
 
 rotates them oppositely. In the biquaternion statement of the companion article on chiral fermions, the two halves are the left-handed module $S$ and its conjugate $\bar{S}$, and the axial phase is the relative phase of the two.
 
-Both are symmetries of the massless equation, because $-iR_{e_z}$ anticommutes with every generator, $\{-iR_{e_z},iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$, and therefore commutes with the kinetic operator $\mathbb{D}$; the two transformations may be applied independently. Equivalently, the massless theory has the flavour-chiral symmetry
+Both are symmetries of the massless equation, because $-iR_{\vec e_z}$ anticommutes with every generator, $\{-iR_{\vec e_z},iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$, and therefore commutes with the kinetic operator $\mathbb{D}$; the two transformations may be applied independently. Equivalently, the massless theory has the flavour-chiral symmetry
 
 $$
 \mathrm{U}(1)_V\times \mathrm{U}(1)_A ,
@@ -68,7 +68,7 @@ whose module representative is $(\mathbb{D}-m)\psi=0$. The two phase transformat
 $$
 V:\ \exp(i\alpha)\ \text{central, passes through } m \ \Longrightarrow\ \text{conserved};
 \qquad
-A:\ \exp(i\alpha\,-iR_{e_z})\ \text{does not} \ \Longrightarrow\ \text{broken by } m .
+A:\ \exp(i\alpha\,-iR_{\vec e_z})\ \text{does not} \ \Longrightarrow\ \text{broken by } m .
 $$
 
 This is the framework form of the standard fact that a Dirac mass breaks the axial symmetry while preserving the vector one. It is also the statement recorded in the companion articles on Noether's theorem and on chiral fermions, and it fixes what a condensate can do: a nonzero vacuum value of a chirality-odd bilinear will break $\mathrm{U}(1)_A$ and nothing else at this level.
@@ -76,13 +76,13 @@ This is the framework form of the standard fact that a Dirac mass breaks the axi
 **The axial current.** For the module representative the axial current is
 
 $$
-j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi ,
+j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi ,
 $$
 
 and its divergence is the textbook anomaly-free identity for a massive free field,
 
 $$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\,-iR_{e_z}\psi ,
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\,-iR_{\vec e_z}\psi ,
 $$
 
 which vanishes exactly when $m=0$. The mass is the sole explicit breaking, and the identity is exact at the classical level. The quantum correction to it — the axial anomaly, which adds a term even at $m=0$ — is the subject of the companion articles; here it is noted only for completeness, and the *spontaneous* breaking that a condensate produces is a separate phenomenon from that anomaly.
@@ -90,9 +90,9 @@ which vanishes exactly when $m=0$. The mass is the sole explicit breaking, and t
 **Two symmetries, two currents.** For later use we record the vector and axial bilinears:
 
 $$
-j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi , \qquad j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi ,
+j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi , \qquad j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi ,
 \qquad
-\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0 , \qquad \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\,-iR_{e_z}\psi .
+\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0 , \qquad \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\,-iR_{\vec e_z}\psi .
 $$
 
 The scalar bilinear $S=\bar{\psi}\psi$ is the one that will acquire a vacuum expectation value.
@@ -102,16 +102,16 @@ The scalar bilinear $S=\bar{\psi}\psi$ is the one that will acquire a vacuum exp
 **The bilinear.** In the block basis of the Conventions the scalar bilinear is
 
 $$
-\bar{\Psi}\Psi = \Psi^{*}\,iR_{e_x}\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L ,
+\bar{\Psi}\Psi = \Psi^{*}\,iR_{\vec e_x}\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L ,
 $$
 
 the **Dirac mass bilinear**. It is off-diagonal in the chiral blocks, it is a Lorentz scalar and parity-even, and under the axial transformation it is not invariant:
 
 $$
-A:\ \bar{\Psi}\Psi\ \longmapsto\ \cos(2\alpha)\,\bar{\Psi}\Psi+\sin(2\alpha)\,i\bar{\Psi}\,-iR_{e_z}\Psi ,
+A:\ \bar{\Psi}\Psi\ \longmapsto\ \cos(2\alpha)\,\bar{\Psi}\Psi+\sin(2\alpha)\,i\bar{\Psi}\,-iR_{\vec e_z}\Psi ,
 $$
 
-using $\exp(2i\alpha\,-iR_{e_z})=\cos(2\alpha)+i\sin(2\alpha)-iR_{e_z}$ and $(-iR_{e_z})^{2}=I_4$. The scalar bilinear therefore rotates into the pseudoscalar bilinear $i\bar{\Psi}\,-iR_{e_z}\Psi$: the pair $(\bar{\Psi}\Psi,\,i\bar{\Psi}\,-iR_{e_z}\Psi)$ carries the two-dimensional rotation of the axial group, exactly as a two-component order parameter should.
+using $\exp(2i\alpha\,-iR_{\vec e_z})=\cos(2\alpha)+i\sin(2\alpha)-iR_{\vec e_z}$ and $(-iR_{\vec e_z})^{2}=I_4$. The scalar bilinear therefore rotates into the pseudoscalar bilinear $i\bar{\Psi}\,-iR_{\vec e_z}\Psi$: the pair $(\bar{\Psi}\Psi,\,i\bar{\Psi}\,-iR_{\vec e_z}\Psi)$ carries the two-dimensional rotation of the axial group, exactly as a two-component order parameter should.
 
 **The order parameter.** A **chiral condensate** is a nonzero vacuum expectation value
 
@@ -138,10 +138,10 @@ with $G$ the coupling of the four-fermion interaction that produces the condensa
 **The model.** The standard mean-field model of a dynamical fermion mass is the Nambu–Jona-Lasinio (NJL) Lagrangian, a four-fermion interaction
 
 $$
-\mathcal{L} = \bar{\psi}\big(\mathbb{D}\big)\psi + G\left[(\bar{\psi}\psi)^2+(\bar{\psi}i\,-iR_{e_z}\psi)^2\right],
+\mathcal{L} = \bar{\psi}\big(\mathbb{D}\big)\psi + G\left[(\bar{\psi}\psi)^2+(\bar{\psi}i\,-iR_{\vec e_z}\psi)^2\right],
 $$
 
-in which $G$ has mass dimension $-2$. The interaction is chirally invariant: the combination $(\bar{\psi}\psi)^2+(\bar{\psi}i\,-iR_{e_z}\psi)^2$ is the invariant of the axial rotation noted above, because the pair $(\bar{\psi}\psi,\,i\bar{\psi}\,-iR_{e_z}\psi)$ rotates as a two-vector. The framework carries the same structure: the four-fermion interaction pairs the bilinears, and it does not need the algebra beyond the chiral pairing that the bilinears already are.
+in which $G$ has mass dimension $-2$. The interaction is chirally invariant: the combination $(\bar{\psi}\psi)^2+(\bar{\psi}i\,-iR_{\vec e_z}\psi)^2$ is the invariant of the axial rotation noted above, because the pair $(\bar{\psi}\psi,\,i\bar{\psi}\,-iR_{\vec e_z}\psi)$ rotates as a two-vector. The framework carries the same structure: the four-fermion interaction pairs the bilinears, and it does not need the algebra beyond the chiral pairing that the bilinears already are.
 
 **The mean-field mass.** Linearising the interaction about the condensate replaces the four-fermion term by a mass term with
 
@@ -232,7 +232,7 @@ is exactly the gap equation, so the two descriptions — self-consistent mass an
 Four statements, in decreasing order of strength.
 
 - **The condensate is the coefficient of the framework's mass.** The linear chiral pair couples $\tilde{\Psi}_L$ and $\tilde{\Psi}_R$ with the coefficient $m$; the bilinear $\bar{\Psi}\Psi$ is that coupling's expectation; and the mean-field relation $m=-2G\langle\bar{\Psi}\Psi\rangle$ makes the identification exact at the level of the equation. The framework does not merely "host" the condensate; the off-diagonal mass coupling *is* the object whose coefficient the condensate supplies.
-- **The broken symmetry is the axial one, and the framework's mass breaks it explicitly.** The central phase passes through the linear chiral pair and is conserved; the axial phase does not and is broken. A condensate reproduces the same breaking pattern spontaneously, and the axial current identity $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu}=2im\bar{\psi}\,-iR_{e_z}\psi$ is the framework's statement of it. Neither the identity nor the pattern is special to the biquaternion algebra; what the algebra supplies is the sector placement of the bilinears — the scalar condensate in the centre, the pseudoscalar partner beside it — and the identification of the condensate with the central scalar coefficient.
+- **The broken symmetry is the axial one, and the framework's mass breaks it explicitly.** The central phase passes through the linear chiral pair and is conserved; the axial phase does not and is broken. A condensate reproduces the same breaking pattern spontaneously, and the axial current identity $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu}=2im\bar{\psi}\,-iR_{\vec e_z}\psi$ is the framework's statement of it. Neither the identity nor the pattern is special to the biquaternion algebra; what the algebra supplies is the sector placement of the bilinears — the scalar condensate in the centre, the pseudoscalar partner beside it — and the identification of the condensate with the central scalar coefficient.
 - **The order parameter is a central scalar.** As an algebra element the condensate sits on the real scalar direction $\mathbb{R}e_t\subset\mathbb{C}_{\mathbb{B}}$. That is the framework's way of saying it is a Lorentz scalar and vector-neutral, and it is exact.
 - **The second kind of mass is not involved.** The condensate is a chiral pairing, so it is linear and built on the chiral off-diagonal coupling; it is not the antilinear self-pairing built on $\flat$. The framework's two-mass distinction, established in the companion on antilinear structure, is what keeps the two from being conflated here.
 
@@ -246,7 +246,7 @@ $$
 N_{\mathrm{Goldstone}} = 2(N_f^2-1)-(N_f^2-1)=N_f^2-1 ,
 $$
 
-which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldstone modes are pseudoscalars: they are the pseudoscalar partner $i\bar{\Psi}\,-iR_{e_z}\Psi$ rotated by the broken axial generators, and the counting is standard. The Goldstone theorem itself is standard, and the framework transcribes it in the same way it transcribes the gap equation.
+which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldstone modes are pseudoscalars: they are the pseudoscalar partner $i\bar{\Psi}\,-iR_{\vec e_z}\Psi$ rotated by the broken axial generators, and the counting is standard. The Goldstone theorem itself is standard, and the framework transcribes it in the same way it transcribes the gap equation.
 
 **Where the pion is treated.** The Goldstone modes of this breaking are spin-$0$ objects, and their effective description — the chiral Lagrangian, the nonlinear sigma model, the pion, and the relation of the Goldstone decay constant to the condensate — belongs to the spin-$0$ subcategory of this series and is not developed here. This article stops where the fermion sector stops: the order parameter, the broken symmetry, and the identification of the condensate with the coefficient of the linear chiral pair. The Gell-Mann–Oakes–Renner relation, which ties the pion mass to the explicit quark masses and the condensate, is likewise a spin-$0$ statement and is used here only as a consistency check on the size of the condensate, not derived.
 
@@ -268,7 +268,7 @@ $$
 \boxed{\;\langle\bar{\Psi}\Psi\rangle = \langle\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L\rangle\;} ,
 $$
 
-and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ breaks. The massless equation $\tilde{\nabla}\tilde{\Psi}=0$ carries both the vector and the axial phase; the mass term preserves the vector central phase and breaks the axial one, with $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu}=2im\bar{\psi}\,-iR_{e_z}\psi$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\bar{\Psi}\Psi\rangle$. The order parameter is a central scalar and is not the antilinear pairing built on the algebra's real structure $\flat$.
+and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ breaks. The massless equation $\tilde{\nabla}\tilde{\Psi}=0$ carries both the vector and the axial phase; the mass term preserves the vector central phase and breaks the axial one, with $\sum_\mu\varepsilon_\mu\,\partial/\partial Q_\mu\,j_{5\mu}=2im\bar{\psi}\,-iR_{\vec e_z}\psi$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\bar{\Psi}\Psi\rangle$. The order parameter is a central scalar and is not the antilinear pairing built on the algebra's real structure $\flat$.
 
 The standard mean-field account was verified. With $N_c$ colours and cutoff $\Lambda$ the gap equation is $1=4N_cG\,I_1(m)$, the critical coupling is $G_c=\pi^2/(N_c\Lambda^2)$, and for $N_c=3$, $\Lambda=0.65$ GeV, and a constituent mass $m=0.3$ GeV the condensate is $-(247\ \mathrm{MeV})^3$ — the accepted order of magnitude. The Goldstone count is $N_f^2-1$, giving three pions for $N_f=2$ and eight modes for $N_f=3$; the spin-$0$ effective description of those modes belongs to another subcategory and is not developed here.
 
@@ -288,14 +288,14 @@ The framework supplies the carrier of the condensate, the broken-symmetry patter
 | $\tilde{\nabla}\tilde{\Psi}=0$ | Massless biquaternion Dirac equation |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Linear chiral mass pair (canonical form) |
 | $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\Delta=S\oplus\bar{S}$ | Weyl, conjugate Weyl, and Dirac modules |
-| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $-iL_{e_t}R_{e_z}$ | Frame cells; $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ |
-| $\bar{\psi}=\psi^{*}\,iR_{e_x}$ | Dirac adjoint; carries the frame cell $iR_{e_x}$ |
-| $-iL_{e_t}R_{e_z}=i\omega$, $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}$ | Chirality cell; the volume element under the Clifford isomorphism |
-| $P_L=\tfrac12(I_4iR_{e_z})$, $P_R=\tfrac12(I_4-iR_{e_z})$ | Chiral projectors |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | Frame cells; $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ |
+| $\bar{\psi}=\psi^{*}\,iR_{\vec e_x}$ | Dirac adjoint; carries the frame cell $iR_{\vec e_x}$ |
+| $-iL_{e_t}R_{\vec e_z}=i\omega$, $\omega=iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$ | Chirality cell; the volume element under the Clifford isomorphism |
+| $P_L=\tfrac12(I_4iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chiral projectors |
 | $\bar{\Psi}\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ | Chirality-odd scalar bilinear; the condensate's carrier |
-| $i\bar{\Psi}\,-iR_{e_z}\Psi$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
-| $j_\mu=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, $j_{5\mu}=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi$ | Vector and axial currents |
-| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\,-iR_{e_z}\psi$ | Axial divergence (explicit breaking by $m$) |
+| $i\bar{\Psi}\,-iR_{\vec e_z}\Psi$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
+| $j_\mu=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, $j_{5\mu}=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi$ | Vector and axial currents |
+| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\,-iR_{\vec e_z}\psi$ | Axial divergence (explicit breaking by $m$) |
 | $\langle\bar{\Psi}\Psi\rangle=-v^3$ | Chiral condensate, the order parameter |
 | $m=-2G\langle\bar{\psi}\psi\rangle$ | Mean-field relation between mass and condensate |
 | $G$, $G_c=\pi^2/(N_c\Lambda^2)$ | Four-fermion coupling and critical coupling |

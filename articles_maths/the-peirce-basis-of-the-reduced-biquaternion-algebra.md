@@ -97,4 +97,4 @@ The Peirce basis of the reduced biquaternion algebra is the pair $\{\Pi_{+},\Pi_
 
 - [The Peirce Decomposition of the Reduced Biquaternion Algebra](the-peirce-decomposition-of-the-reduced-biquaternion-algebra.html), for the lines and their multiplication.
 - [Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-reduced-biquaternion-algebra.html), for the degenerate spinor.
-- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the nondegenerate case and the gauge.
+- [The Peirce Basis in $n$ Dimensions](the-peircaxis-free basis-in-n-dimensions.html), for the nondegenerate case and the gauge.

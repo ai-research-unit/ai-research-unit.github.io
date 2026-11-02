@@ -191,6 +191,6 @@ The three statements — the law, the rank trichotomy and the criterion — are 
 - [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the matrix of a general operator and the units.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the other side and the exchange.
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the $2\times2$ model, the determinant and the norm.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the $2\times2$ model, the determinant and the norm.
 - [Norm and Unitary Conventions](conventions-of-the-norms-and-the-unitary-convention.html), for the norm and the invertibility criterion.
 - [Operator Family Conventions](conventions-of-the-operator-families.html), for the letter $L$, the slots and the set names.

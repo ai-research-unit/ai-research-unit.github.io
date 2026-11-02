@@ -26,7 +26,7 @@ $$
 +b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and its adjoint is obtained by Hermitian conjugation and multiplication by the cell $C_0$. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $C_\mu$ for the frame cells, $C_0=iL_{e_t}R_{e_x}$ and $C_k=iL_{e_k}R_{e_y}$ for $k=1,2,3$, so that $\{C_\mu,C_\nu\}=2g_{\mu\nu}\mathbf{1}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$ and $\mathbf{1}=L_{e_t}R_{e_t}$ the identity cell; the frame is written once in the appendix. The mode operators obey
+with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and its adjoint is obtained by Hermitian conjugation and multiplication by the cell $C_0$. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $C_\mu$ for the frame cells, $C_0=iL_{e_t}R_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$, so that $\{C_\mu,C_\nu\}=2g_{\mu\nu}\mathbf{1}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$ and $\mathbf{1}=L_{e_t}R_{e_t}$ the identity cell; the frame is written once in the appendix. The mode operators obey
 
 $$
 \{a_r^{\mathrm{fop}}(\vec p),a_s^{\mathrm{fop}\dagger}(\vec k)\}
@@ -228,7 +228,7 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Biquaternion Dirac field and its anti-Hermitian conjugate |
 | $\psi$, $\bar\psi=\psi^\dagger C_0$ | Spinor-module representative and its adjoint |
-| $C_\mu$, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $\mathbf{1}=L_{e_t}R_{e_t}$ | Frame cells, $C_0=iL_{e_t}R_{e_x}$ and $C_k=iL_{e_k}R_{e_y}$; the identity cell; and the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $C_\mu$, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $\mathbf{1}=L_{e_t}R_{e_t}$ | Frame cells, $C_0=iL_{e_t}R_{\vec e_x}$ and $C_k=iL_{\vec e_k}R_{\vec e_y}$; the identity cell; and the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | Spacetime metric of the $ict'$ gradient |
 | $p_\mu=(E,\vec p)$, $C_{\mu} p_{\mu}=C_0E-\sum_k C_k p_k$ | Four-momentum and its contraction |
 | $\psi^{\mathrm{fop}}$, $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Quantized field; particle and antiparticle modes |
@@ -262,7 +262,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z} .
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

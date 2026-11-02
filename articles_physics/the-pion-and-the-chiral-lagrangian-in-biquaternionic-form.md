@@ -252,12 +252,12 @@ $$
 
 the standard isovector current of the pion triplet. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
 
-**The axial current and its divergence.** The axial current is the Noether current of the broken directions. Its nature is fixed not by the algebra but by the anomaly: in the underlying theory it is the quark axial current, with the generator cells $iR_{e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{e_k}R_{e_y}=iL_{\vec e_k}R_{\vec e_y}$ and the chirality cell $-iR_{e_z}=-iL_{e_t}R_{\vec e_z}$, where $L_X\psi=X\psi$ and $R_X\psi=\psi X$ for $X\in\mathbb{B}$,
+**The axial current and its divergence.** The axial current is the Noether current of the broken directions. Its nature is fixed not by the algebra but by the anomaly: in the underlying theory it is the quark axial current, with the generator cells $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}=iL_{\vec e_k}R_{\vec e_y}$ and the chirality cell $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, where $L_X\psi=X\psi$ and $R_X\psi=\psi X$ for $X\in\mathbb{B}$,
 
 $$
-j_{5\mu a} = \bar q\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\frac{\tau_a}{2}q ,
+j_{5\mu a} = \bar q\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}\frac{\tau_a}{2}q ,
 \qquad
-\langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural} = \frac{m_u+m_d}{2}\,i\bar q\,-iR_{e_z}\tau_a q ,
+\langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural} = \frac{m_u+m_d}{2}\,i\bar q\,-iR_{\vec e_z}\tau_a q ,
 $$
 
 and at the level of the chiral Lagrangian the divergence is proportional to the pion field itself,
@@ -363,7 +363,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $B_0 = -\langle\bar qq\rangle/f_\pi^2$ | Condensate scale parameter |
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu a}$, $j_{5\mu a}$ | Isospin (vector) and axial currents |
-| $iR_{e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{e_k}R_{e_y}=iL_{\vec e_k}R_{\vec e_y}$, $-iR_{e_z}=-iL_{e_t}R_{\vec e_z}$ | Generator cells of the coordinates and the chirality cell; $L_X\psi=X\psi$, $R_X\psi=\psi X$ for $X\in\mathbb{B}$ |
+| $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}=iL_{\vec e_k}R_{\vec e_y}$, $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$ | Generator cells of the coordinates and the chirality cell; $L_X\psi=X\psi$, $R_X\psi=\psi X$ for $X\in\mathbb{B}$ |
 | $\langle0\vert j_{5\mu a}(0)\vert\pi_b(p)\rangle = if_\pi p_\mu\delta_{ab}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural} = f_\pi m_\pi^2\pi_a$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |

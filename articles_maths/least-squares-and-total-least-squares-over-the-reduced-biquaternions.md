@@ -441,4 +441,4 @@ The three approximation problems over the reduced biquaternion algebra — least
 - [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum and the singular values of the algebra.
 - [Compact Operators](compact-operators.html), for the singular values and the Schatten classes.
 - [Quaternion Augmented Statistics](quaternion-augmented-statistics.html), for the least squares problem in the non-commutative quaternion statistics.
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the non-commutative companion of the matrix dictionary.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the non-commutative companion of the matrix dictionary.

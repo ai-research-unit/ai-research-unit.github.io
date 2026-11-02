@@ -22,7 +22,7 @@ T_+=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-
 $$
 has matrix $A^{\mathsf T}$ in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The two matrices are transposes, and the transpose is the stitch. The two actions live on two different planes, so there is no statement that $A$ and $A^{\mathsf T}$ commute.
 
-**What is kept and what is lost.** The root, the two idempotents, the Peirce frame, the two ideals, the left and right matrices, the stitch, the product, the trace, the determinant and the six subspaces all compress. The e-basis switch of the $4\times4$ article does not: the $2\times2$ model is already the matrix-unit frame, so the surviving switch is the identity. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch are invisible on one block; the swap only exchanges the two nilpotent labels. The commutation of the two $4\times4$ families and the mixed trace $4Q_{1t}Q_{2t}$ do not compress, because they are statements about the two tensor factors at once.
+**What is kept and what is lost.** The root, the two idempotents, the Peirce frame, the two ideals, the left and right matrices, the stitch, the product, the trace, the determinant and the six subspaces all compress. The axis-free basis switch of the $4\times4$ article does not: the $2\times2$ model is already the matrix-unit frame, so the surviving switch is the identity. The sign matrix of the axis-free basis stitch and the swap matrix of the Peirce stitch are invisible on one block; the swap only exchanges the two nilpotent labels. The commutation of the two $4\times4$ families and the mixed trace $4Q_{1t}Q_{2t}$ do not compress, because they are statements about the two tensor factors at once.
 
 **The algebra.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.
 
@@ -321,7 +321,7 @@ The map $\varrho$ is an anti-automorphism, not an automorphism, and it is not th
 $$
 R(\tilde Q)=\mathsf P\,L(\tilde Q)^{\mathsf T}\mathsf P,
 $$
-with $\mathsf P$ the swap of the two nilpotents. The compression keeps one block from each tensor factor. On that block the swap $\mathsf P$ exchanges the two nilpotent labels, and the two labels index the row and the column of the block; the block of the stitched matrix is therefore the transpose of the block of $L$. The sign matrix of the e-basis stitch and the swap matrix of the Peirce stitch have no separate $2\times2$ image: the e-basis display is not compressed, and the swap acts on the tensor factors, of which the block keeps one at a time. The only trace of the swap is the exchange $X_+\leftrightarrow X_-$.
+with $\mathsf P$ the swap of the two nilpotents. The compression keeps one block from each tensor factor. On that block the swap $\mathsf P$ exchanges the two nilpotent labels, and the two labels index the row and the column of the block; the block of the stitched matrix is therefore the transpose of the block of $L$. The sign matrix of the axis-free basis stitch and the swap matrix of the Peirce stitch have no separate $2\times2$ image: the axis-free basis display is not compressed, and the swap acts on the tensor factors, of which the block keeps one at a time. The only trace of the swap is the exchange $X_+\leftrightarrow X_-$.
 
 ## The Compression and the Switch
 
@@ -376,7 +376,7 @@ $$
 $$
 The factors $2$ and the square are the only changes from the $2\times2$ invariants.
 
-**No e-basis switch remains.** The $4\times4$ article has a change matrix $S$ between the Peirce frame and the e-basis,
+**No axis-free basis switch remains.** The $4\times4$ article has a change matrix $S$ between the Peirce frame and the axis-free basis,
 $$
 S=\frac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
 \qquad
@@ -626,7 +626,7 @@ $$
 $$
 because a diagonal matrix commutes with a diagonal matrix. The scalar $\lambda$ cancels from $\mathsf C_Q^{-1}A\mathsf C_Q$, so the freedom is the two parameters of $D$.
 
-**Not the frame change of this article.** The matrix $\mathsf C_Q$ is not the change between the e-basis and the Peirce frame of §*The Peirce Basis and the Two Orders*; that change is fixed by the algebra, while $\mathsf C_Q$ moves inside the element. The first is a change of basis of the algebra, the second a change of basis adapted to one element, and only the second depends on $\tilde Q$.
+**Not the frame change of this article.** The matrix $\mathsf C_Q$ is not the change between the axis-free basis and the Peirce frame of §*The Peirce Basis and the Two Orders*; that change is fixed by the algebra, while $\mathsf C_Q$ moves inside the element. The first is a change of basis of the algebra, the second a change of basis adapted to one element, and only the second depends on $\tilde Q$.
 
 ## The Adjugate and the Inverse
 
@@ -655,7 +655,7 @@ and it preserves the determinant at this size, $\det(\operatorname{adj}A)=\det A
 $$
 \operatorname{adj}(\operatorname{adj}A)=A .
 $$
-This is a property of the entry size. At the regular size the adjugate has degree three and the iteration is $\operatorname{adj}(\operatorname{adj}M)=\langle\tilde Q\rangle_{\natural}^4M$, as in the doubling rule of *$M_4(\mathbb{C})$ e-basis Representation*, §*The Determinant*.
+This is a property of the entry size. At the regular size the adjugate has degree three and the iteration is $\operatorname{adj}(\operatorname{adj}M)=\langle\tilde Q\rangle_{\natural}^4M$, as in the doubling rule of *$M_4(\mathbb{C})$ Axis-Free Representation*, §*The Determinant*.
 
 **The inverse.** For $\langle\tilde Q\rangle_{\natural}\neq0$,
 $$
@@ -796,7 +796,7 @@ The $2\times2$ Standard Peirce representation is the compression of the $4\times
 
 The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
 
-The compression keeps the product, the trace, the determinant and the six subspaces. The normal forms of this article are entry-size statements: the spectral projectors $\rho_\pm$ and the diagonalising matrix $\mathsf C_Q$ of the element, the adjugate and the inverse, and the four norms, each of them the $2\times2$ form of a $4\times4$ object. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The e-basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
+The compression keeps the product, the trace, the determinant and the six subspaces. The normal forms of this article are entry-size statements: the spectral projectors $\rho_\pm$ and the diagonalising matrix $\mathsf C_Q$ of the element, the adjugate and the inverse, and the four norms, each of them the $2\times2$ form of a $4\times4$ object. The left product is multiplicative, the right product is anti-multiplicative, the trace is $2Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}$, and the eigenvalues are $Q_t\pm iB$, each once. The $4\times4$ quantities are the doubled ones: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, each eigenvalue twice, rank twice. The axis-free basis switch does not compress: the $2\times2$ model is already the matrix-unit frame, and the switch is the identity. The only surviving exchange is the swap of the two nilpotents, which is what makes the right block the transpose of the left.
 
 ## Summary of Notation
 
@@ -830,9 +830,9 @@ The compression keeps the product, the trace, the determinant and the six subspa
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the uncompressed representation, the two blocks, the stitch and the e-basis switch.
+- [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the uncompressed representation, the two blocks, the stitch and the axis-free basis switch.
 - [$M_2(\mathbb{C})$ Standard Peirce Representation : Operators](m2c-standard-peirce-representation-operators.html), for the operators on the algebra, the one-matrix and pair descriptions, and the Kronecker display.
-- [$M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the same element in the e-basis.
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the same element in the axis-free basis.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the coefficient form of the element and the four conjugations.
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and the three splits.

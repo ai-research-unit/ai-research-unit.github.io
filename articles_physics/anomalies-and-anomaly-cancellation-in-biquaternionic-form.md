@@ -16,7 +16,7 @@ This article treats both in the biquaternion framework. The framework's contribu
 
 The article is organised as follows. A section states the anomaly as a quantum failure of a classical symmetry. A section gives the axial anomaly and its biquaternion density. A section sets out the triangle coefficient and computes the group factors. A section states the gauge cancellation conditions and verifies them on the Standard Model spectrum. A section proves the framework's own gauge structure anomaly-free. A closing section separates what is supplied, transcribed, and missing.
 
-The two-sided cells act by $L_{a}R_{b}\psi=a\psi b$. The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
+The two-sided cells act by $L_{a}R_{b}\psi=a\psi b$. The four cells $iR_{e_x}$ and $iL_{\vec e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix.
 
 With $-iR_{e_z}=i\omega$ and $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_t}R_{e_z}$ the volume cell. For the abelian anomaly we use the field strength $\tilde{\mathcal{F}}=\tilde\nabla\tilde A$, the totally antisymmetric symbol with $\epsilon_{0123}=+1$, and the components $F_{ti}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$; for the non-abelian factor we use $\mathcal{A}_\mu\in\mathrm{SU}(2)$ and $\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$, with $\kappa=ϙ/\hbar$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
 
@@ -264,7 +264,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the vector-like abelian factor |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian, series convention |
-| $iR_{e_x},\dots,iL_{e_z}R_{e_y}$, $-iR_{e_z}$ | Frame cells: $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $-iL_{e_t}R_{e_z}$; $L_{a}R_{b}\psi=a\psi b$ |
+| $iR_{e_x},\dots,iL_{e_z}R_{e_y}$, $-iR_{e_z}$ | Frame cells: $iL_{e_t}R_{e_x}$, $iL_{\vec e_k}R_{e_y}$, $-iL_{e_t}R_{e_z}$; $L_{a}R_{b}\psi=a\psi b$ |
 | $\Delta=S\oplus\bar{S}$, $-iR_{e_z}=\mathrm{diag}(-I_2,I_2)$ | Dirac module and chirality cell |
 | $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-i\,-iR_{e_z}$ | Volume cell; $-iR_{e_z}=i\omega$ |
 | $\mathrm{tr}(-iR_{e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\,iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$ | The Clifford trace behind the anomaly |

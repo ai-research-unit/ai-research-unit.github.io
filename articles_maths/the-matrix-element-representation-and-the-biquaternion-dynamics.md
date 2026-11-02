@@ -142,7 +142,7 @@ The matrix model conjugates the biquaternion quadratic family to the polynomial 
 
 ## Further Reading
 
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html) and [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the isomorphism, the trace and the determinant in matrix form.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html) and [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the isomorphism, the trace and the determinant in matrix form.
 - [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family, the eigenvalue reduction and the critical set.
 - [The Category of Modules](the-category-of-modules.html), for the regular representation and the doubling of the spectrum.
 - [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the cone that the leading part of the matrix family is not proper over.

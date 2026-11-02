@@ -20,11 +20,11 @@ The article is organized as follows. The next section fixes the three notions an
 For the form of the Clifford algebra we use the **cell frame**
 
 $$
-iL_{e_t}R_{e_x},\qquad
-iL_{e_k}R_{e_y},\qquad k=1,2,3,
+iL_{e_t}R_{\vec e_x},\qquad
+iL_{\vec e_k}R_{\vec e_y},\qquad k=1,2,3,
 $$
 
-with $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_{a}R_{b}$; with **signature** $g=\mathrm{diag}(+,-,-,-)$ the generators satisfy $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g$, and the chirality operator is $\Gamma=-iL_{e_t}R_{e_z}$, which is $-1$ on the left-handed half $S$ and $+1$ on the right-handed half $\bar S$. This is the frame and signature of the read-list chirality article; the Clifford relations, the chirality operator and the projectors are all recomputed in it below. We record that the signature and the frame must be stated together, because the explicit form of charge conjugation depends on both. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
+with $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_{a}R_{b}$; with **signature** $g=\mathrm{diag}(+,-,-,-)$ the generators satisfy $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g$, and the chirality operator is $\Gamma=-iL_{e_t}R_{\vec e_z}$, which is $-1$ on the left-handed half $S$ and $+1$ on the right-handed half $\bar S$. This is the frame and signature of the read-list chirality article; the Clifford relations, the chirality operator and the projectors are all recomputed in it below. We record that the signature and the frame must be stated together, because the explicit form of charge conjugation depends on both. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
 
 ## Dirac, Weyl and Majorana: The Three Notions
 
@@ -54,13 +54,13 @@ Charge conjugation is a **conjugate-linear** map on the Dirac module. In four di
 $$
 \psi^{c} \;=\; C\,\bar{\psi}^{\,T},
 \qquad
-\bar{\psi} \;=\; \psi^{\dagger}\,iR_{e_x} ,
+\bar{\psi} \;=\; \psi^{\dagger}\,iR_{\vec e_x} ,
 $$
 
 and the cell is fixed by the requirement that the kinetic term be preserved,
 
 $$
-C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x},\qquad C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y}.
+C\,(iR_{\vec e_x})^{T}C^{-1}=-\,iR_{\vec e_x},\qquad C\,(iL_{\vec e_k}R_{\vec e_y})^{T}C^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}.
 $$
 
 The transpose, not the inverse or the conjugate, appears because $C$ is the cell of a bilinear pairing on the module. Two features of this definition must be stated before it is used, and they are the two traps of the subject.
@@ -68,17 +68,17 @@ The transpose, not the inverse or the conjugate, appears because $C$ is the cell
 **The cell is frame-dependent, and the reality condition is frame-dependent in form.** A linear change of frame $S$ sends $C\mapsto SCS^{T}$, so the explicit cell changes with the frame even though the map it defines does not. In the cell frame of the Conventions, with $g=\mathrm{diag}(+,-,-,-)$, the choice
 
 $$
-C \;=\; L_{e_t}R_{e_x} \;=\; -i\,iR_{e_x}
+C \;=\; L_{e_t}R_{\vec e_x} \;=\; -i\,iR_{\vec e_x}
 $$
 
-is real and antisymmetric, $C^{T}=-C$, with $C^2=-L_{e_t}R_{e_t}$ and $C^{\dagger}=C^{-1}$, and it satisfies $C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x}$ and $C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y}$ for $\mu=0,1,2,3$. The same map written in another frame has the cell $SCS^{T}$, which is a different cell. The existence of a charge-conjugation operation is a statement about the signature, not about the frame; its form is a statement about the frame. A calculation that fixes a sign by comparing "$C$" across two papers that use different generator frames is comparing two different cells.
+is real and antisymmetric, $C^{T}=-C$, with $C^2=-L_{e_t}R_{e_t}$ and $C^{\dagger}=C^{-1}$, and it satisfies $C\,(iR_{\vec e_x})^{T}C^{-1}=-\,iR_{\vec e_x}$ and $C\,(iL_{\vec e_k}R_{\vec e_y})^{T}C^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$ for $\mu=0,1,2,3$. The same map written in another frame has the cell $SCS^{T}$, which is a different cell. The existence of a charge-conjugation operation is a statement about the signature, not about the frame; its form is a statement about the frame. A calculation that fixes a sign by comparing "$C$" across two papers that use different generator frames is comparing two different cells.
 
-**The map is antilinear, and it is the antilinear map — not $C$ — that is the real structure.** Writing $\bar{\psi}^{\,T}=(iR_{e_x})^{T}\psi^{*}$ gives
+**The map is antilinear, and it is the antilinear map — not $C$ — that is the real structure.** Writing $\bar{\psi}^{\,T}=(iR_{\vec e_x})^{T}\psi^{*}$ gives
 
 $$
 \psi^{c} \;=\; K\,\psi^{*},
 \qquad
-K \;=\; C\,(iR_{e_x})^{T} \;=\; i\,L_{e_t}R_{e_t},
+K \;=\; C\,(iR_{\vec e_x})^{T} \;=\; i\,L_{e_t}R_{e_t},
 \qquad
 K K^{*} \;=\; L_{e_t}R_{e_t} .
 $$
@@ -88,10 +88,10 @@ The relation $KK^{*}=L_{e_t}R_{e_t}$ is the statement that $\mathcal{C}:\psi\map
 The consistency of this real structure with the Dirac operator is a second, independent condition. It is
 
 $$
-\boxed{\;K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x},\qquad K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}\;}
+\boxed{\;K\,(iR_{\vec e_x})^{*}K^{-1}=-\,iR_{\vec e_x},\qquad K\,(iL_{\vec e_k}R_{\vec e_y})^{*}K^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}\;}
 $$
 
-which holds for $\mu=0,1,2,3$ in the cell frame: a generator is one factor of $i$ times a cell with real entries, so its coefficient conjugate is its negative. Because $\mathcal{C}$ is conjugate-linear, this is what makes $\mathcal{C}$ commute with the kinetic operator: for a constant cell $M$, $\mathcal{C}(M\psi)=K M^{*}\psi^{*}$, so $\mathcal{C}(\mathbb{D}\,\psi)=\mathbb{D}\,(\mathcal{C}\psi)$ if and only if $K\,(i\,iR_{e_x})^{*}K^{-1}=i\,iR_{e_x}$ and $K\,(i\,iL_{e_k}R_{e_y})^{*}K^{-1}=i\,iL_{e_k}R_{e_y}$, which is exactly the displayed condition. In words: **charge conjugation commutes with the massless Dirac operator and anticommutes with the Clifford generators**. This is the property that makes the Majorana constraint consistent with the wave equation, and it is verified independently of any statement about a mass.
+which holds for $\mu=0,1,2,3$ in the cell frame: a generator is one factor of $i$ times a cell with real entries, so its coefficient conjugate is its negative. Because $\mathcal{C}$ is conjugate-linear, this is what makes $\mathcal{C}$ commute with the kinetic operator: for a constant cell $M$, $\mathcal{C}(M\psi)=K M^{*}\psi^{*}$, so $\mathcal{C}(\mathbb{D}\,\psi)=\mathbb{D}\,(\mathcal{C}\psi)$ if and only if $K\,(i\,iR_{\vec e_x})^{*}K^{-1}=i\,iR_{\vec e_x}$ and $K\,(i\,iL_{\vec e_k}R_{\vec e_y})^{*}K^{-1}=i\,iL_{\vec e_k}R_{\vec e_y}$, which is exactly the displayed condition. In words: **charge conjugation commutes with the massless Dirac operator and anticommutes with the Clifford generators**. This is the property that makes the Majorana constraint consistent with the wave equation, and it is verified independently of any statement about a mass.
 
 **Chiral halves, and the exchange between them.** The charge conjugation anticommutes with $\Gamma$, so in chiral blocks it is off-diagonal: it maps the left-handed half to the right-handed half and back. In particular it does not preserve the chirality projectors, $P_{\mp}\,\mathcal{C}=\mathcal{C}\,P_{\pm}$ with $P_{\pm}=\tfrac12(L_{e_t}R_{e_t}\pm\Gamma)$. The Majorana condition $\psi^{c}=\psi$ is therefore a single relation between the two halves, not two independent real conditions; in the native form it is the one equation
 
@@ -105,11 +105,11 @@ We collect the verified statements of this section in a table. Each entry was ch
 
 | Statement | Verification |
 |---|---|
-| $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g$, $\Gamma=-iR_{e_z}$, $\Gamma^2=L_{e_t}R_{e_t}$ | all $16$ commutators and anticommutators, exact |
-| $C^{T}=-C$, $C^2=-L_{e_t}R_{e_t}$, $C^\dagger=C^{-1}$ | exact, $C=L_{e_t}R_{e_x}$ |
-| $C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x}$ and $C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y}$ | all $\mu=0,1,2,3$ |
-| $K=C\,(iR_{e_x})^{T}=i\,L_{e_t}R_{e_t}$, $KK^{*}=L_{e_t}R_{e_t}$ | exact |
-| $K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x}$ and $K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}$ | all $\mu=0,1,2,3$ |
+| $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g$, $\Gamma=-iR_{\vec e_z}$, $\Gamma^2=L_{e_t}R_{e_t}$ | all $16$ commutators and anticommutators, exact |
+| $C^{T}=-C$, $C^2=-L_{e_t}R_{e_t}$, $C^\dagger=C^{-1}$ | exact, $C=L_{e_t}R_{\vec e_x}$ |
+| $C\,(iR_{\vec e_x})^{T}C^{-1}=-\,iR_{\vec e_x}$ and $C\,(iL_{\vec e_k}R_{\vec e_y})^{T}C^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$ | all $\mu=0,1,2,3$ |
+| $K=C\,(iR_{\vec e_x})^{T}=i\,L_{e_t}R_{e_t}$, $KK^{*}=L_{e_t}R_{e_t}$ | exact |
+| $K\,(iR_{\vec e_x})^{*}K^{-1}=-\,iR_{\vec e_x}$ and $K\,(iL_{\vec e_k}R_{\vec e_y})^{*}K^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$ | all $\mu=0,1,2,3$ |
 | $\psi^{c}=K\psi^{*}$, $(\psi^{c})^{c}=\psi$ | all components |
 | $\mathcal{C}$ exchanges $S$ and $\bar{S}$ | $\Gamma$-anticommutation of $\mathcal{C}$ |
 | $\dim_{\mathbb{R}}\{\psi:\psi^{c}=\psi\}=4$ | $\psi_L$ free, $\psi_R$ determined by $\psi=i\psi^{*}$ |
@@ -148,17 +148,17 @@ $$
 \mathbb{D}\,\left(\psi-\psi^{c}\right) \;=\; -\,m\left(\psi-\psi^{c}\right),
 $$
 
-so the deviation $\chi=\psi-\psi^{c}$ satisfies the same form of equation as the field itself, and the subspace $\chi=0$ is preserved by the evolution. A field that is self-conjugate at one time stays self-conjugate; the constraint is consistent with the massive equation, not merely imposed on it. This is the point requested of every displayed identity: the consistency is checked by applying the real structure and using the anticommutation of $\mathcal{C}$ with the generators, and it does not hold for a generic conjugate-linear map — it uses the verified identity $K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x}$ and $K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}$.
+so the deviation $\chi=\psi-\psi^{c}$ satisfies the same form of equation as the field itself, and the subspace $\chi=0$ is preserved by the evolution. A field that is self-conjugate at one time stays self-conjugate; the constraint is consistent with the massive equation, not merely imposed on it. This is the point requested of every displayed identity: the consistency is checked by applying the real structure and using the anticommutation of $\mathcal{C}$ with the generators, and it does not hold for a generic conjugate-linear map — it uses the verified identity $K\,(iR_{\vec e_x})^{*}K^{-1}=-\,iR_{\vec e_x}$ and $K\,(iL_{\vec e_k}R_{\vec e_y})^{*}K^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$.
 
-**A massive solution exists.** Nothing in the consistency argument forces $m=0$. The mode functions make that explicit. With $p_\mu=(E,\vec p)$, $E=\sqrt{\vec p^2+m^2}$ and $iR_{e_x}E-\sum_k iL_{e_k}R_{e_y}p_k$, a positive-frequency Dirac spinor $w(p)$ solves $(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m)w=0$, and its charge conjugate $v(p)=w^{c}(p)$ solves $(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)v=0$. The two are both nonzero for $m>0$, and $\bar{w}w$ is nonzero for $m>0$ (the normalisation is the one of the companion quantisation article). The mass-shell condition is $p^2=m^2$, unchanged from the Dirac case. So the Majorana restriction does not trivialise the spectrum: a massive plane wave exists for every $m>0$. What the restriction removes is not the mass but half the degrees of freedom.
+**A massive solution exists.** Nothing in the consistency argument forces $m=0$. The mode functions make that explicit. With $p_\mu=(E,\vec p)$, $E=\sqrt{\vec p^2+m^2}$ and $iR_{\vec e_x}E-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k$, a positive-frequency Dirac spinor $w(p)$ solves $(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}-m)w=0$, and its charge conjugate $v(p)=w^{c}(p)$ solves $(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}+m)v=0$. The two are both nonzero for $m>0$, and $\bar{w}w$ is nonzero for $m>0$ (the normalisation is the one of the companion quantisation article). The mass-shell condition is $p^2=m^2$, unchanged from the Dirac case. So the Majorana restriction does not trivialise the spectrum: a massive plane wave exists for every $m>0$. What the restriction removes is not the mass but half the degrees of freedom.
 
 **Which bilinears survive, and which vanish.** The physical statements are about the field, whose components anticommute. Writing the four components of the field as Grassmann variables and imposing the Majorana condition $\psi=i\psi^{*}$, one finds the following, each computed exactly in the cell frame.
 
 | Bilinear | Grassmann Majorana field | Status |
 |---|---|---|
 | $\bar{\psi}\psi$ | nonzero | scalar mass term **permitted** |
-| $j_0=\bar{\psi}\,iR_{e_x}\psi$ and $j_k=\bar{\psi}\,iL_{e_k}R_{e_y}\psi$ | $0$ for all $\mu$ | vector current **forbidden** |
-| $j_0=\bar{\psi}\,iR_{e_x}\Gamma\psi$ and $j_k=\bar{\psi}\,iL_{e_k}R_{e_y}\Gamma\psi$ | nonzero | axial current permitted |
+| $j_0=\bar{\psi}\,iR_{\vec e_x}\psi$ and $j_k=\bar{\psi}\,iL_{\vec e_k}R_{\vec e_y}\psi$ | $0$ for all $\mu$ | vector current **forbidden** |
+| $j_0=\bar{\psi}\,iR_{\vec e_x}\Gamma\psi$ and $j_k=\bar{\psi}\,iL_{\vec e_k}R_{\vec e_y}\Gamma\psi$ | nonzero | axial current permitted |
 | $\psi^{T}C\psi$ | nonzero | the Majorana mass invariant |
 
 The vanishing of the vector current is the statement that a self-conjugate field carries no fermion number; the surviving scalar and axial bilinears are what a Majorana field can couple to. Both properties follow from the same anticommutation: for the vector current the charge-conjugation flip of the bilinear and the self-conjugacy of the field combine to give $j_\mu=-j_\mu$; for the scalar the two contributions add rather than cancel.
@@ -258,7 +258,7 @@ The reason the neutrino appears in this article at all is that it is the fermion
 | The Majorana component count $\dim_{\mathbb{R}}=4$ and the exchange of the chiral halves | **Supplied** |
 | Existence of Majorana and non-existence of Majorana–Weyl in $(1,3)$ | **Transcribed** from *Real Spinors and Reality Conditions with Inner Conjugation*, which takes the real structure to commute with the full Clifford action, under which $(1,3)$ is symplectic Majorana |
 | The explicit charge-conjugation cell $C$, its frame dependence, and the exchange of the chiral halves | **Transcribed**; frame and signature stated |
-| Consistency of the constraint with the massive equation | **Supplied** (through the verified $K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x}$ and $K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}$) |
+| Consistency of the constraint with the massive equation | **Supplied** (through the verified $K\,(iR_{\vec e_x})^{*}K^{-1}=-\,iR_{\vec e_x}$ and $K\,(iL_{\vec e_k}R_{\vec e_y})^{*}K^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$) |
 | The bilinear physics: no vector current, mass and axial current permitted | **Supplied at the level of the anticommuting field**; not visible in a commuting c-number spinor |
 | A chiral gauge group, and the left-handedness of the neutrino | **Not supplied**; empirical input, transcribed |
 | The material/informational split as the Majorana reality condition | **Not supplied**; it obstructs, as shown above |
@@ -298,7 +298,7 @@ None of this is derived by the framework. The hyperboloid models are a standard-
 
 A Dirac fermion is an arbitrary element of $\Delta=S\oplus\bar{S}$, with independent chiral halves and eight real components. A Weyl fermion is an element of one half, chiral and — while its chirality is protected — massless. A Majorana fermion is a fixed point of a conjugate-linear real structure $\mathcal{C}$ on $\Delta$ with $\mathcal{C}^2=1$, with four real components, no vector current, and a permitted mass. In the Lorentzian signature $(1,3)$ Majorana spinors exist and Majorana–Weyl spinors do not, because the real structure that makes a spinor Majorana exchanges the two chiral halves instead of preserving them.
 
-The charge conjugation of the Dirac module was constructed explicitly in the cell frame with $g=\mathrm{diag}(+,-,-,-)$: the cell $C=L_{e_t}R_{e_x}$ satisfies $C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x}$ and $C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y}$ and defines an antilinear involution $\psi^{c}=K\psi^{*}$, $K=C\,(iR_{e_x})^{T}=i$, with $KK^{*}=L_{e_t}R_{e_t}$ and $K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x}$ and $K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}$. The last identity is what makes the Majorana constraint $\psi^{c}=\psi$ consistent with the massive equation $\mathbb{D}\,\psi=m\psi^{c}$, rather than merely imposed on it: the constraint is propagated, and a massive plane wave exists for every $m>0$. The vector current vanishes for a self-conjugate Grassmann field and the scalar and axial bilinears survive; those statements are properties of the anticommuting field, and a commuting c-number computation gives the opposite pattern.
+The charge conjugation of the Dirac module was constructed explicitly in the cell frame with $g=\mathrm{diag}(+,-,-,-)$: the cell $C=L_{e_t}R_{\vec e_x}$ satisfies $C\,(iR_{\vec e_x})^{T}C^{-1}=-\,iR_{\vec e_x}$ and $C\,(iL_{\vec e_k}R_{\vec e_y})^{T}C^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$ and defines an antilinear involution $\psi^{c}=K\psi^{*}$, $K=C\,(iR_{\vec e_x})^{T}=i$, with $KK^{*}=L_{e_t}R_{e_t}$ and $K\,(iR_{\vec e_x})^{*}K^{-1}=-\,iR_{\vec e_x}$ and $K\,(iL_{\vec e_k}R_{\vec e_y})^{*}K^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$. The last identity is what makes the Majorana constraint $\psi^{c}=\psi$ consistent with the massive equation $\mathbb{D}\,\psi=m\psi^{c}$, rather than merely imposed on it: the constraint is propagated, and a massive plane wave exists for every $m>0$. The vector current vanishes for a self-conjugate Grassmann field and the scalar and axial bilinears survive; those statements are properties of the anticommuting field, and a commuting c-number computation gives the opposite pattern.
 
 In the biquaternion framework the charge conjugation is the real structure carried by the **coefficient complex conjugation** $\bar{\cdot}$, the only one of the algebra's conjugations that is a conjugate-linear automorphism, with fixed points $\mathbb{H}_{\mathbb{B}}$; the Hermitian conjugate and the real structure $\flat$ are order-reversing and cannot serve as module real structures. The material/informational split is the algebra's decomposition by ${}^{*}$, and although $\mathbb{M}_-$ is the four-real-dimensional fixed space of the real structure $\flat$ and superficially matches the Majorana count, the Dirac operator does not preserve it ($\vec e_x\in\mathbb{M}_-$ but $\vec e_x \vec e_x=-e_t\in\mathbb{M}_+$). The sector split therefore obstructs the reality condition and cannot be used as it stands; the Majorana real form lives on the spinor module, not on a subspace of the algebra. Finally, the left-handedness of the neutrino under the weak interaction is empirical input, the real structure $\flat$ carries a genuinely antilinear Majorana-type pairing that is compatible with but does not derive a Majorana neutrino, while the parent's own mass term is linear and conserves fermion number; the mass value and its consequences are outside the algebra.
 
@@ -321,17 +321,17 @@ Separately from this particle interpretation, the Majorana pair has a **geometri
 | $\bar{S} = (0,\tfrac12)$ | Right-handed Weyl spinor module (conjugate) |
 | $\Delta = S\oplus\bar{S}$ | Dirac spinor module, $\dim_{\mathbb{C}}\Delta=4$ |
 | $\psi_L\in S,\ \psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
-| $\Gamma = -iL_{e_t}R_{e_z}$ | Chirality operator; $-1$ on $S$, $+1$ on $\bar{S}$ |
-| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ | Generator cells; $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g$ |
+| $\Gamma = -iL_{e_t}R_{\vec e_z}$ | Chirality operator; $-1$ on $S$, $+1$ on $\bar{S}$ |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ | Generator cells; $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g$ |
 | $L_a,R_b$, $L_{a}R_{b}$ | $L_a\psi=a\psi$, $R_b\psi=\psi b$; $L_{a}R_{b}\psi=a\psi b$ |
 | $g=\mathrm{diag}(+,-,-,-)$ | Clifford signature |
-| $C = L_{e_t}R_{e_x}=-i\,iR_{e_x}$ | Charge-conjugation cell, $C^{T}=-C$, $C^2=-L_{e_t}R_{e_t}$ |
-| $K = C\,(iR_{e_x})^{T} = i\,L_{e_t}R_{e_t}$ | The real structure on spinors; $KK^{*}=L_{e_t}R_{e_t}$ |
+| $C = L_{e_t}R_{\vec e_x}=-i\,iR_{\vec e_x}$ | Charge-conjugation cell, $C^{T}=-C$, $C^2=-L_{e_t}R_{e_t}$ |
+| $K = C\,(iR_{\vec e_x})^{T} = i\,L_{e_t}R_{e_t}$ | The real structure on spinors; $KK^{*}=L_{e_t}R_{e_t}$ |
 | $\mathcal{C}:\psi\mapsto K\psi^{*}$ | Charge conjugation as an antilinear involution |
 | $\psi^{c} = \mathcal{C}\psi$ | Charge conjugate; $\psi^{c}=\psi$ defines Majorana |
 | $\psi=i\psi^{*}$ | Majorana condition |
 | $\mathbb{D}\,\psi=m\psi^{c}$ | Majorana equation |
-| $j_0=\bar{\psi}\,iR_{e_x}\psi$ and $j_k=\bar{\psi}\,iL_{e_k}R_{e_y}\psi$, $\bar{\psi}\psi$, $j_0=\bar{\psi}\,iR_{e_x}\Gamma\psi$ and $j_k=\bar{\psi}\,iL_{e_k}R_{e_y}\Gamma\psi$ | Vector, scalar and axial bilinears |
+| $j_0=\bar{\psi}\,iR_{\vec e_x}\psi$ and $j_k=\bar{\psi}\,iL_{\vec e_k}R_{\vec e_y}\psi$, $\bar{\psi}\psi$, $j_0=\bar{\psi}\,iR_{\vec e_x}\Gamma\psi$ and $j_k=\bar{\psi}\,iL_{\vec e_k}R_{\vec e_y}\Gamma\psi$ | Vector, scalar and axial bilinears |
 | $S C S^{T}$ | Charge-conjugation cell under a linear change of frame $S$ |
 | $\dim_{\mathbb{R}}\{\psi:\psi^{c}=\psi\}=4$ | Majorana component count |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

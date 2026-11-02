@@ -129,5 +129,5 @@ A complete family of $3$ nonzero idempotents in $M_3(\mathbb{C})$ has rank one a
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the algebra and its matrix units.
 - [Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the projectors of the root.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the flag and the orbits.
-- [The Peirce Basis of $M_3(\mathbb{C})$](the-peirce-basis-of-m3c.html), for the selection of the units and the gauge.
+- [The Peirce Basis of $M_3(\mathbb{C})$](the-peircaxis-free basis-of-m3c.html), for the selection of the units and the gauge.
 - [Spinors as Peirce Coordinates in $M_3(\mathbb{C})$](spinors-as-peirce-coordinates-in-m3c.html), for the columns of the array.

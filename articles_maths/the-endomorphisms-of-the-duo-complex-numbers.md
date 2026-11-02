@@ -170,7 +170,7 @@ The conjugate-linear maps form a complex vector space of dimension $4$ and real 
 - [The Realification of $\mathbb{C}^2$](the-realification-of-the-duo-complex-numbers.html), for the splitting of the real endomorphisms and the matrix form $T(Q)=AQ+B\overline{Q}$.
 - [The Tensor Square of $\mathbb{C}^2$](the-tensor-square-of-the-duo-complex-numbers.html), the next article, for $V\otimes V$ and its relation to the endomorphism algebra.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-the-duo-complex-numbers.html), for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the matrix computations of the product, the trace and the determinant.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix computations of the product, the trace and the determinant.
 - [The Centraliser](the-centraliser.html), for the centraliser of a single matrix and the bicommutant.
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the groups and the determinant.
 - [The Möbius Transformation as an Operator](the-mobius-transformation-as-an-operator.html), for the action on $\mathbb{CP}^1$.

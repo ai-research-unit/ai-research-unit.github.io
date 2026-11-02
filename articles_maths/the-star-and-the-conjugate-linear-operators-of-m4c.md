@@ -275,7 +275,7 @@ and the carrier remains $\mathbb{B}$.
 **Theorem (the coefficient-frame dictionary).** In the same algebra, put
 $$
 G_0=iL_{e_t}R_{e_x},\qquad
-G_k=iL_{e_k}R_{e_y}\quad(k=1,2,3),
+G_k=iL_{\vec e_k}R_{e_y}\quad(k=1,2,3),
 \qquad
 G_5=-iL_{e_t}R_{e_z}.
 $$
@@ -290,25 +290,25 @@ $$
 $$
 The square of $G_k$ is
 $$
-(G_k)^2=i^2\,L_{e_k}R_{e_y}L_{e_k}R_{e_y}=(-1)\,L_{e_ke_k}R_{e_ye_y}=(-1)(-I)=-I .
+(G_k)^2=i^2\,L_{\vec e_k}R_{e_y}L_{\vec e_k}R_{e_y}=(-1)\,L_{e_ke_k}R_{e_ye_y}=(-1)(-I)=-I .
 $$
 The mixed anticommutator is
 $$
 G_0G_k+G_kG_0
-=-\bigl(L_{e_t}R_{e_x}L_{e_k}R_{e_y}+L_{e_k}R_{e_y}L_{e_t}R_{e_x}\bigr)
-=-\bigl(L_{e_k}R_{e_-z}+L_{e_k}R_{e_z}\bigr)=0,
+=-\bigl(L_{e_t}R_{e_x}L_{\vec e_k}R_{e_y}+L_{\vec e_k}R_{e_y}L_{e_t}R_{e_x}\bigr)
+=-\bigl(L_{\vec e_k}R_{e_-z}+L_{\vec e_k}R_{e_z}\bigr)=0,
 $$
 and for $j\neq k$,
 $$
 G_jG_k+G_kG_j
-=-\bigl(L_{e_j}R_{e_y}L_{e_k}R_{e_y}+L_{e_k}R_{e_y}L_{e_j}R_{e_y}\bigr)
-=-\bigl(-L_{e_j}R_{e_k}-L_{e_k}R_{e_j}\bigr)=0 .
+=-\bigl(L_{\vec e_j}R_{e_y}L_{\vec e_k}R_{e_y}+L_{\vec e_k}R_{e_y}L_{\vec e_j}R_{e_y}\bigr)
+=-\bigl(-L_{\vec e_j}R_{\vec e_k}-L_{\vec e_k}R_{\vec e_j}\bigr)=0 .
 $$
 The anticommutators with $G_5$ are
 $$
 G_5G_0+G_0G_5=L_{e_t}R_{e_-y}+L_{e_t}R_{e_y}=0,
 \qquad
-G_5G_k+G_kG_5=L_{e_k}R_{e_x}-L_{e_k}R_{e_x}=0 .
+G_5G_k+G_kG_5=L_{\vec e_k}R_{e_x}-L_{\vec e_k}R_{e_x}=0 .
 $$
 The product identity is the cell computation
 $$
@@ -326,7 +326,7 @@ of complex dimension eight, not the four-dimensional left factor $L(\mathbb{B})$
 | feature | real-linear dictionary | complex-linear dictionary |
 |---|---|---|
 | time generator | $\bar{\cdot}$ (antilinear) | $G_0=iL_{e_t}R_{e_x}$ (linear) |
-| spatial generator | $\bar{\cdot}L_{-i e_k}$ (antilinear) | $G_k=iL_{e_k}R_{e_y}$ (linear) |
+| spatial generator | $\bar{\cdot}L_{-i e_k}$ (antilinear) | $G_k=iL_{\vec e_k}R_{e_y}$ (linear) |
 | chirality | $A_5=R_{-i e_z}$ (linear) | $G_5=-iL_{e_t}R_{e_z}$ (linear) |
 | product of the four | $iI$ | $-iG_5$ |
 | even part | $L(\mathbb{B})\cong\mathbb{B}$ | $M_2\oplus M_2$ |
@@ -366,7 +366,7 @@ $$
 with $(A_0)^2=I$, $(A_k)^2=-I$, $\{A_\mu,A_\nu\}=2g_{\mu\nu}I$, and $\{A_5,A_\mu\}=0$. The product of the four is $iI$; the even part is $L(\mathbb{B})\cong\mathbb{B}$, and the odd part is the conjugate-linear family. The complex-linear frame is the five cells
 $$
 G_0=iL_{e_t}R_{e_x},\qquad
-G_k=iL_{e_k}R_{e_y},\qquad
+G_k=iL_{\vec e_k}R_{e_y},\qquad
 G_5=-iL_{e_t}R_{e_z},
 $$
 with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The two dictionaries are different realizations on the same carrier, one antilinear and one linear; the first is the operation-level form of the odd sector, the second is the coefficient-frame matrix form.
@@ -386,7 +386,7 @@ with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The
 | $S_aS_b$ | $L_{b}R_{a^{*}}$ |
 | real frame | $A_0=\bar{\cdot}$, $A_k=\bar{\cdot}L_{-i e_k}$, $A_5=R_{-i e_z}$ |
 | real volume element | $A_0A_1A_2A_3=iI$ |
-| complex frame | $G_0=iL_{e_t}R_{e_x}$, $G_k=iL_{e_k}R_{e_y}$, $G_5=-iL_{e_t}R_{e_z}$ |
+| complex frame | $G_0=iL_{e_t}R_{e_x}$, $G_k=iL_{\vec e_k}R_{e_y}$, $G_5=-iL_{e_t}R_{e_z}$ |
 | complex volume element | $G_5=iG_0G_1G_2G_3$ |
 
 ## Summary of Notation
@@ -431,7 +431,7 @@ $$
 for the real-linear frame, and
 $$
 \gamma_0=iL_{e_t}R_{e_x},\quad
-\gamma_k=iL_{e_k}R_{e_y},\quad
+\gamma_k=iL_{\vec e_k}R_{e_y},\quad
 \gamma_5=-iL_{e_t}R_{e_z}
 $$
 for the complex-linear frame, with $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ in the latter.

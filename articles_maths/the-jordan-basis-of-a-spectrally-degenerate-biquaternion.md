@@ -768,6 +768,6 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the vanishing modulus and the partial isometry
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the independence of the two cones
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its coordinates and its conjugations
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the matrix model, the determinant and the trace
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix model, the determinant and the trace
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and its truncated form
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).

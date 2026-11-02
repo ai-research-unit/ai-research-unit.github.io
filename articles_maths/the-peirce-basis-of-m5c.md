@@ -123,4 +123,4 @@ A Peirce basis of $M_5(\mathbb{C})$ is a choice $E_{kl}\in A_{kl}$ with $E_{kl}E
 - [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the lines and the rule.
 - [Spinors as Peirce Coordinates in $M_5(\mathbb{C})$](spinors-as-peirce-coordinates-in-m5c.html), for the columns of the array.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the simple nilpotents and the same torus.
-- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the general statement.
+- [The Peirce Basis in $n$ Dimensions](the-peircaxis-free basis-in-n-dimensions.html), for the general statement.

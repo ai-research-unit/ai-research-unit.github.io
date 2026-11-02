@@ -8,7 +8,7 @@ The first two sections give the element and its three readings: the scalar-vecto
 
 The four conjugations are defined here and used throughout the block. Their group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions*; the subspaces themselves are *Subspaces and Decompositions*.
 
-Nothing in this article pairs two different elements and takes a scalar part. The hyperbolic basis of the plain scalar part is a form statement and is filed with the plain product, after the forms; the matrices of the two models are *$M_2(\mathbb{C})$ Standard Peirce Representation* and *$M_4(\mathbb{C})$ e-basis Representation*.
+Nothing in this article pairs two different elements and takes a scalar part. The hyperbolic basis of the plain scalar part is a form statement and is filed with the plain product, after the forms; the matrices of the two models are *$M_2(\mathbb{C})$ Standard Peirce Representation* and *$M_4(\mathbb{C})$ Axis-Free Representation*.
 
 ## The Element and Its Coordinates
 

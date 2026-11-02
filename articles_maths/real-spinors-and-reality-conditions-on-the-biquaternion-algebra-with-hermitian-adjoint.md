@@ -84,7 +84,7 @@ $$
 
 one has $a^2=b^2=+I$, $c^2=-I$ and pairwise anticommutation, so $a,b,c$ generate a representation of $\mathrm{Cl}_{2,1}$; the module carries the real structure $J(s)=\bar s$ with $J^2=+1$.
 
-**Remark (the trap: the two readings differ by the central $i$).** The two Clifford structures on one basis differ by the central $i$: since $i$ acts on $S$ as the complex structure, $c(ie_k)=i\,c(e_k)$. A reality structure commuting with $c(ie_k)$ would therefore have to **anticommute** with $c(e_k)$, because an antilinear map reverses $i$: $Ji=-iJ$. So the complex type of $\mathrm{Cl}_{3,0}$ and the quaternionic type of $\mathrm{Cl}_{0,3}$ are two statements about the same matrices and the same basis, and silently switching from $c(ie_k)=\sigma_k$ to $c(e_k)=-i\sigma_k$ inverts the reality type. The corpus fixes the first reading in this article and writes the same action in the $e_k$ basis in *$M_4(\mathbb{C})$ e-basis Representation*; this is the three-dimensional instance of the competing labelling flagged in the Clifford dictionary, and it is the error the present article exists to prevent.
+**Remark (the trap: the two readings differ by the central $i$).** The two Clifford structures on one basis differ by the central $i$: since $i$ acts on $S$ as the complex structure, $c(ie_k)=i\,c(e_k)$. A reality structure commuting with $c(ie_k)$ would therefore have to **anticommute** with $c(e_k)$, because an antilinear map reverses $i$: $Ji=-iJ$. So the complex type of $\mathrm{Cl}_{3,0}$ and the quaternionic type of $\mathrm{Cl}_{0,3}$ are two statements about the same matrices and the same basis, and silently switching from $c(ie_k)=\sigma_k$ to $c(e_k)=-i\sigma_k$ inverts the reality type. The corpus fixes the first reading in this article and writes the same action in the $e_k$ basis in *$M_4(\mathbb{C})$ Axis-Free Representation*; this is the three-dimensional instance of the competing labelling flagged in the Clifford dictionary, and it is the error the present article exists to prevent.
 
 ## The Ambient Four-Dimensional Cases and the Normalisation
 
@@ -166,7 +166,7 @@ The gammas are the generators $\gamma_k=ie_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3
 
 On the Peirce carrier the generator is a left multiplication, a cell with a trivial right multiplier,
 $$
-\gamma_k=L_{ie_k}R_{e_t}=iL_{e_k},\qquad c(\gamma_k)=\sigma_k ,
+\gamma_k=L_{ie_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k)=\sigma_k ,
 $$
 and the volume element is the central element $\omega=\gamma_1\gamma_2\gamma_3=(ie_x)(ie_y)(ie_z)=ie_t$, with $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{e_t}=L_a$.
 

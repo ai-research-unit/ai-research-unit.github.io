@@ -145,7 +145,7 @@ The two cases differ in exactly one place: whether the amputation operator is ce
 
 **Scalar case: block diagonality.** For a scalar biquaternion field the mass-shell operator $\mathcal{M}(\tilde P)$ is central, the external wavefunctions are central-phase plane waves with module-valued amplitudes, and the amputation commutes with the sector projections. The reduction's kinematics is therefore block diagonal with respect to the sector split: the amputation acts on each sector's part of a correlation function independently, and the sector parts are related by the central $i$ rather than being independent fields. This is the LSZ counterpart of the block-diagonal quadratic form of the functional integral and the effective action. Its content is a component count: the biquaternion scalar's four real components per sector enter the reduction separately, and the algebra fixes the split. It is **not** a statement that a biquaternion scalar is a multiplicity of complex scalars, for the reason the functional-integral and harmonic-oscillator articles give.
 
-**Spinor case: no factorization.** For a spinor field the amputation operator is $\mathcal{D}(p)-m$, where $\mathcal{D}(p)=iL_{e_t}R_{e_x}E-i(L_{e_x}R_{e_y}p_x+L_{e_y}R_{e_y}p_y+L_{e_z}R_{e_y}p_z)$ is the mass-shell cell, with $\mathcal{D}^2=\Box$; it is not central, it acts on the spinor module, and it mixes the two chiralities through the mass. The external legs are the spinors $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ of the propagator article, with the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\mathcal{D}(p)+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\mathcal{D}(p)-m$; the reduction reads
+**Spinor case: no factorization.** For a spinor field the amputation operator is $\mathcal{D}(p)-m$, where $\mathcal{D}(p)=iL_{e_t}R_{\vec e_x}E-i(L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)$ is the mass-shell cell, with $\mathcal{D}^2=\Box$; it is not central, it acts on the spinor module, and it mixes the two chiralities through the mass. The external legs are the spinors $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ of the propagator article, with the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\mathcal{D}(p)+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\mathcal{D}(p)-m$; the reduction reads
 $$
 \langle f|S|i\rangle_{\text{spinor}}
 = \Big[\prod_{\text{legs}}\int d^4x_j\,\exp(\pm ip_j\cdot x_j)\Big]
@@ -260,7 +260,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $Z=\lim_{p^2\to m^2}(m^2-p^2)D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
 | $\langle f\lvert S\rvert i\rangle$ | S-matrix element from the reduction |
 | $\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{R}))=\exp(\,ip\cdot x)$ | Central-phase plane wave (external leg) |
-| $\mathcal{D}(p)=iL_{e_t}R_{e_x}E-i(L_{e_x}R_{e_y}p_x+L_{e_y}R_{e_y}p_y+L_{e_z}R_{e_y}p_z)$ | Spinor mass-shell operator |
+| $\mathcal{D}(p)=iL_{e_t}R_{\vec e_x}E-i(L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)$ | Spinor mass-shell operator |
 | $\tilde Q_{\mathrm{amp}}$ | Constant biquaternion amplitude of the central-phase plane wave; a bound element of $\mathbb{B}$ with a complex scalar part, hence the majuscule |
 | $w^{(r)},v^{(r)}$ | External spinors; $\sum_r w^{(r)}\bar w^{(r)}=\mathcal{D}(p)+m$ |
 | $Z=Z_-+Z_+$ | Scalar-sector splitting of the residue (sum) |
@@ -289,7 +289,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell.
 
 $$
-\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z}.
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
 $$
 
-The mass-shell operator is the sum of four cells, $\mathcal{D}(p)=iL_{e_t}R_{e_x}E-i(L_{e_x}R_{e_y}p_x+L_{e_y}R_{e_y}p_y+L_{e_z}R_{e_y}p_z)$. The spin sums are the same cell plus or minus the mass, and the mass is the identity cell, not a fifth generator. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The mass-shell operator is the sum of four cells, $\mathcal{D}(p)=iL_{e_t}R_{\vec e_x}E-i(L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)$. The spin sums are the same cell plus or minus the mass, and the mass is the identity cell, not a fifth generator. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.

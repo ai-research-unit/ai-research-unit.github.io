@@ -164,5 +164,5 @@ A complete family of $n$ idempotents in $M_{n}(\mathbb{C})$ has rank one at each
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for idempotents, ranks and spectral projectors.
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the projectors used in §*The Family from a Root of $1$*.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the coarse splits and the corner recursion.
-- [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the choice of one element per line.
+- [The Peirce Basis in $n$ Dimensions](the-peircaxis-free basis-in-n-dimensions.html), for the choice of one element per line.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the rows of the coordinate array.

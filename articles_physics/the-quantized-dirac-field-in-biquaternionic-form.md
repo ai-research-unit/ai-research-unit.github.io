@@ -43,17 +43,17 @@ $$
 =(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q),
 $$
 
-all others vanishing. The adjoint field is the Hermitian conjugate followed by the Clifford-odd timelike cell $iR_{e_x}$ of the reference frame, $iR_{e_x}\psi=i\,e_t\,\psi\,e_x$, with the spatial cells $iL_{e_k}R_{e_y}\psi=i\,\vec e_k\,\psi\,e_y$,
+all others vanishing. The adjoint field is the Hermitian conjugate followed by the Clifford-odd timelike cell $iR_{\vec e_x}$ of the reference frame, $iR_{\vec e_x}\psi=i\,e_t\,\psi\,\vec e_x$, with the spatial cells $iL_{\vec e_k}R_{\vec e_y}\psi=i\,\vec e_k\,\psi\,\vec e_y$,
 
 $$
-\bar{\psi^{\mathrm{fop}}}(x)=\psi^{\mathrm{fop}\dagger}(x)iR_{e_x},
+\bar{\psi^{\mathrm{fop}}}(x)=\psi^{\mathrm{fop}\dagger}(x)iR_{\vec e_x},
 \qquad
 \psi^{\mathrm{fop}\dagger}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\sum_{r}\Big[a^{\mathrm{fop}\dagger}_r(\vec p)\,\bar w^{(r)}(\vec p)\,iR_{e_x}\,\exp(+ip\cdot x)
-+b^{\mathrm{fop}}_r(\vec p)\,\bar v^{(r)}(\vec p)\,iR_{e_x}\,\exp(-ip\cdot x)\Big],
+\sum_{r}\Big[a^{\mathrm{fop}\dagger}_r(\vec p)\,\bar w^{(r)}(\vec p)\,iR_{\vec e_x}\,\exp(+ip\cdot x)
++b^{\mathrm{fop}}_r(\vec p)\,\bar v^{(r)}(\vec p)\,iR_{\vec e_x}\,\exp(-ip\cdot x)\Big],
 $$
 
-and it is $\psi^{\mathrm{fop}\dagger}$ that belongs to the module written in the dual; the factor $iR_{e_x}$ is the Clifford-odd cell that makes $\bar{\psi^{\mathrm{fop}}}\psi^{\mathrm{fop}}$ a Lorentz scalar. This is the same odd/even distinction that the minimal-coupling companion records: the Dirac adjoint, and therefore the current, is not an inner operation of $\mathbb{B}$.
+and it is $\psi^{\mathrm{fop}\dagger}$ that belongs to the module written in the dual; the factor $iR_{\vec e_x}$ is the Clifford-odd cell that makes $\bar{\psi^{\mathrm{fop}}}\psi^{\mathrm{fop}}$ a Lorentz scalar. This is the same odd/even distinction that the minimal-coupling companion records: the Dirac adjoint, and therefore the current, is not an inner operation of $\mathbb{B}$.
 
 ### The Conjugations of the Field
 
@@ -147,8 +147,8 @@ so that for one mode the mode algebra, the spin ladder, and the parity element a
 The canonical energy–momentum and charge of the quantized field are
 
 $$
-H=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}\big(-i\,iR_{e_x}\,iL_{e_k}R_{e_y}\nabla_k+m\,iR_{e_x}\big)\psi^{\mathrm{fop}}\!:
-=\int d^3x\,:\!\bar{\psi^{\mathrm{fop}}}\big(-i\,iL_{e_k}R_{e_y}\nabla_k+m\big)\psi^{\mathrm{fop}}\!:,
+H=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}\big(-i\,iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}\nabla_k+m\,iR_{\vec e_x}\big)\psi^{\mathrm{fop}}\!:
+=\int d^3x\,:\!\bar{\psi^{\mathrm{fop}}}\big(-i\,iL_{\vec e_k}R_{\vec e_y}\nabla_k+m\big)\psi^{\mathrm{fop}}\!:,
 \qquad
 P^{\mathrm{fop}}=\int d^3x\,:\!\psi^{\mathrm{fop}\dagger}(-i\nabla)\psi^{\mathrm{fop}}\!:,
 \qquad
@@ -230,7 +230,7 @@ with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$, and complex
 
 Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
-In biquaternion terms, $J_\mu$ is the spinor-module representative of an operator-valued material-sector element $i\tilde\Psi^{\mathrm{fop}}\tilde\Psi^{\mathrm{fop}{*}}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd cell $iR_{e_x}$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
+In biquaternion terms, $J_\mu$ is the spinor-module representative of an operator-valued material-sector element $i\tilde\Psi^{\mathrm{fop}}\tilde\Psi^{\mathrm{fop}{*}}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd cell $iR_{\vec e_x}$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
 
 ### Spin
 
@@ -269,7 +269,7 @@ $$
 with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion,
 
 $$
-[\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)]=iR_{e_x}\big(m-i\,iL_{e_k}R_{e_y}\nabla_{\vec\Delta,k}\big)F(\vec\Delta),
+[\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)]=iR_{\vec e_x}\big(m-i\,iL_{\vec e_k}R_{\vec e_y}\nabla_{\vec\Delta,k}\big)F(\vec\Delta),
 \qquad
 F(\vec\Delta)=\frac{m}{2\pi^2|\vec\Delta|}K_1\!\big(m|\vec\Delta|\big),
 $$
@@ -279,8 +279,8 @@ a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0
 **The biquaternion form.** Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is
 
 $$
-S_F(p)=\frac{i(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)}{p^2-m^2+i\epsilon}
-=-\frac{i(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
+S_F(p)=\frac{i(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}+m)}{p^2-m^2+i\epsilon}
+=-\frac{i(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
 $$
 
 The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $ict'$ axis of the material sector. The operator field's two-point function is thus a module-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
@@ -300,7 +300,7 @@ The denominator is the deformed mass-shell scalar, and the deformation $-i\epsil
 
 - **The intrinsic operator field.** Whether a genuinely $\mathbb{B}$-valued field $\tilde\Psi^{\mathrm{fop}}$, quantized with a $\mathbb{B}$-intrinsic Lagrangian and paired with the trace, gives a theory inequivalent to the module transcription, is not settled. The parent leaves it open and this article does not close it.
 - **The grading on the field.** The parity grading is realized in $\mathbb{B}$ only for one mode; for the field it is external, by the dimension count. Whether some enlarged structure carries it inside is open.
-- **The current.** The physical current needs the Clifford-odd cell $iR_{e_x}$, outside $\mathbb{B}$; whether a biquaternion-natural current exists on a restricted module is open, as the minimal-coupling companion states.
+- **The current.** The physical current needs the Clifford-odd cell $iR_{\vec e_x}$, outside $\mathbb{B}$; whether a biquaternion-natural current exists on a restricted module is open, as the minimal-coupling companion states.
 - **Empirical content.** Whether the quantized field in biquaternion form differs from the standard one in any observable is the framework's standing open question, and nothing here changes it.
 
 ## Companion Articles
@@ -322,7 +322,7 @@ so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2
 
 The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $iH e_t+P^{\mathrm{fop}}_k\vec e_k\in\mathcal{A}\otimes\mathbb{M}_-$ and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and both frequency branches to $1.1\times10^{-10}$.
 
-The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
+The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
 ## Summary of Notation
 
@@ -337,8 +337,8 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\,\partial/\partial Q_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\tilde\Psi^{\mathrm{fop}}$ | Operator-valued biquaternion field ($\mathcal{A}\otimes\mathbb{B}$ transcription) |
-| $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\,iR_{e_x}$ | Module-valued quantized field and its adjoint |
-| $iR_{e_x}\psi=i\,e_t\,\psi\,e_x$, $iL_{e_k}R_{e_y}\psi=i\,\vec e_k\,\psi\,e_y$ | Cells of the reference frame, acting on the spinor module |
+| $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\,iR_{\vec e_x}$ | Module-valued quantized field and its adjoint |
+| $iR_{\vec e_x}\psi=i\,e_t\,\psi\,\vec e_x$, $iL_{\vec e_k}R_{\vec e_y}\psi=i\,\vec e_k\,\psi\,\vec e_y$ | Cells of the reference frame, acting on the spinor module |
 | $S=\mathbb{C}^2$ | Spinor module, the unique simple left $\mathbb{B}$-module |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix realization (algebra isomorphism onto $M_2(\mathbb{C})$); $S$ is its defining representation |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Plane-wave spinors (solutions article) |
@@ -353,7 +353,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric ($c$-number part of the commutator's vacuum expectation) |
 | $F(\vec\Delta)=\frac{m}{2\pi^2\lvert\vec\Delta\rvert}K_1(m\lvert\vec\Delta\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
-| $S_F(p)=-\frac{i(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude |
+| $S_F(p)=-\frac{i(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude |
 | $\tilde P=iE\,e_t+\vec p$, $\tilde P\tilde P^{\natural}=-p^2$ | Wave biquaternion and mass shell |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form |
 

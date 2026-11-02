@@ -395,7 +395,7 @@ Every element of the norm-one group except $-e_t$ is a product of two non-trivia
 - [The Spectrum](the-spectrum.html), for the characteristic polynomial, the discriminant, the cone and the similarity classification.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the place of the defective elements in them.
 - [$M_2(\mathbb{C})$ Standard Peirce Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the matrix model, the basis images and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$.
-- [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t$ and $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t$ and $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the pure nilpotents and the nilpotent stratum.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the defective elements, their Jordan form and their centraliser.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, the conjugation and the remarkable subspaces.

@@ -68,8 +68,8 @@ so it commutes with $\Gamma$ and with each $P_{L,R}$. Chirality is therefore a L
 Take the mostly-minus counterpart of the parent's block generators, writing $iL_{e_\mu}R_{e_{\nu(\mu)}}$ for the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$,
 
 $$
-iR_{e_x} = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
-iL_{e_k}R_{e_y} = \begin{pmatrix}0 & \sigma_k\\ -\sigma_k & 0\end{pmatrix},
+iR_{\vec e_x} = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
+iL_{\vec e_k}R_{\vec e_y} = \begin{pmatrix}0 & \sigma_k\\ -\sigma_k & 0\end{pmatrix},
 $$
 
 satisfying $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}} + iL_{e_\nu}R_{e_{\nu(\nu)}} iL_{e_\mu}R_{e_{\nu(\mu)}} = 2g_{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; in the chiral basis it reads, after collecting the two blocks,
@@ -376,7 +376,7 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\Gamma
 | $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z),\; \tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$ | Primitive orthogonal idempotents |
 | $\Gamma = \operatorname{diag}(-I_2,I_2)$ | Chirality operator on $\Delta$ |
 | $P_L = \tfrac12(I_4-\Gamma),\; P_R = \tfrac12(I_4+\Gamma)$ | Chiral projectors |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cell of the coordinate $x_\mu$; $iR_{e_x},iL_{e_k}R_{e_y}$ are the block matrices of Problem 2 |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cell of the coordinate $x_\mu$; $iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y}$ are the block matrices of Problem 2 |
 | $\psi_L\in S$, $\psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |

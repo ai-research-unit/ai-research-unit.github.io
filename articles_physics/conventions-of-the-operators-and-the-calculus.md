@@ -23,7 +23,7 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it.
 
-**The basis operators.** The four units are written in the subscript, $L_{e_\mu}$ and $R_{e_\mu}$, and nowhere else: the short form $L_\mu$ is not used in this corpus. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $L_{e_\mu}R_{e_\nu}$ are the matrix basis and the cell table of *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*; five of the sixteen are the frame cells up to the factor $i$: $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$, $iL_{e_y}R_{e_y}$, $iL_{e_z}R_{e_y}$, $-iL_{e_t}R_{e_z}$.
+**The basis operators.** The four units are written in the subscript, $L_{e_\mu}$ and $R_{e_\mu}$, and nowhere else: the short form $L_\mu$ is not used in this corpus. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $L_{e_\mu}R_{e_\nu}$ are the matrix basis and the cell table of *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*; five of the sixteen are the frame cells up to the factor $i$: $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$.
 
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 

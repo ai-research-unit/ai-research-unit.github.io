@@ -6,7 +6,7 @@ A non-normal element still has a spectral decomposition. What it loses is the or
 
 The standard language for this situation is **biorthogonal quantum mechanics**. The right eigenvectors of the element and the left eigenvectors of the same element form two bases that are dual to each other, not two orthonormal bases. The spectral projectors are built from one right vector and one left vector, and the probability rule uses the left pairing. When the element is normal, the two bases coincide, the projectors become Hermitian, and the rule reduces to the Born rule.
 
-This article reads that structure in the biquaternion algebra. The spectral decomposition and the normality criterion are those of *The Biquaternion Eigenvalue Decomposition*. The left and right eigenvalue problem is that of *The Biquaternion Eigenvalue Decomposition*. The article owns the reading and its limits; it proves no spectral theorem.
+This article reads that structure in the biquaternion algebra. The spectral decomposition, the normality criterion and the left and right eigenvalue problems are those of *The Biquaternion Eigenvalue Decomposition*. The article owns the reading and its limits; it proves no spectral theorem.
 
 ## The Results It Uses
 
@@ -254,8 +254,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 
 ## Further Reading
 
-- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, the eigenprojections and the normality criterion.
-- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the left and right eigenvalue problems and the spectral theorem.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, the eigenprojections, the normality criterion, the left and right eigenvalue problems and the spectral theorem.
 - [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the matrix model used throughout.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the degenerate limit of the two bases.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian state space and the Born rule.
