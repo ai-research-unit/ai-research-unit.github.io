@@ -7,7 +7,7 @@ The Feynman path integral writes the transition amplitude of a quantum system as
 $$
 K(x_f,t'_f;x_i,t'_i)=\int\mathcal{D}x(t')\;\exp(iS[x]/\hbar),
 \qquad
-S[x]=\int_{t'_i}^{t'_f}L(x,dx/dt')\,dt',
+S[x]=\int_{t'_i}^{t'_f}\mathrm{Lag}(x,dx/dt')\,dt',
 $$
 
 in which every path from $(x_i,t'_i)$ to $(x_f,t'_f)$ contributes the phase $\exp(iS[x]/\hbar)$. The sum is formal: it is defined as a limit of finite-dimensional oscillatory integrals, and its convergence is governed by the same $i\epsilon$ prescription that the companion article *The Feynman Propagator in Biquaternionic Form* treats in momentum space.
@@ -101,14 +101,14 @@ $$
 \exp(iS/\hbar)\,\big(\exp(iS/\hbar)\big)^\dagger=e_t.
 $$
 
-It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
+It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
 
 $$
 \exp(iS/\hbar)\,\overline{\big(\exp(iS/\hbar)\big)}=\exp(2iS/\hbar)\neq e_t
 \qquad\text{unless } S/\hbar\in\pi\mathbb{Z}.
 $$
 
-So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
+So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
 
 ### Consequences of centrality
 
@@ -126,7 +126,7 @@ so the global phase of a single path is unobservable, and the Born probabilities
 
 ### The sector chain
 
-The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the **material sector** $\mathbb{M}_-$; the phase itself is an element of the **centre** $\mathbb{C}_{\mathbb{B}}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}=\psi\psi^\dagger$, is an element of the **informational sector** $\mathbb{M}_+$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int L\,dt'$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.
+The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the **material sector** $\mathbb{M}_-$; the phase itself is an element of the **centre** $\mathbb{C}_{\mathbb{B}}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}=\psi\psi^\dagger$, is an element of the **informational sector** $\mathbb{M}_+$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int \mathrm{Lag}\,dt'$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.
 
 That chain is a structural interpretation of the algebra, not a derivation of anything. The algebra does not say that the action *must* be a real scalar; it says that if the action is a real scalar, its phase is central and its exponent lies in $\mathbb{M}_-$.
 
@@ -137,7 +137,7 @@ The phase could be written with any root of $-1$ in place of $i$. The alternativ
 **The generator need not be anti-Hermitian.** Taking $J\tilde{H}$ in place of $i\tilde{H}$ changes the generator of the flow from $-i\tilde{H}/\hbar$ (anti-Hermitian, hence norm-preserving) to $-J\tilde{H}/\hbar$, which is anti-Hermitian only if $J$ commutes with $\tilde{H}$. With $J=\vec e_z$ and $\tilde{H}=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
 $$J\tilde{H}=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
 which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-t'J\tilde{H}/\hbar)$ is then not $*$-unitary; at $t'=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
-$$\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
+$$\tilde U_{\mathrm{Lor}}^{*}\tilde U_{\mathrm{Lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a $*$-unitary evolution.
 
 **The phase is not a global phase.** Even where a fixed non-central root gives a $*$-unitary one-parameter group — as $J=\vec e_z$ does — the phase it produces is not shared by the two spin components. Under the isomorphism $\vec e_\mu\mapsto-i\sigma_\mu$ of the companion articles, the phase $\exp(\vec e_z\theta)$ maps to
@@ -191,10 +191,10 @@ $$
 \tfrac12 m\left(dx/dt'\right)^{2}=\tfrac12 m\Big(i\frac{dx}{d\tau}\Big)^2=-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2,
 $$
 
-so the Lagrangian becomes $L=-\tfrac12 m(dx/d\tau)^2-V$, and
+so the Lagrangian becomes $\mathrm{Lag}=-\tfrac12 m(dx/d\tau)^2-V$, and
 
 $$
-S=\int dt'\,L=\int(-i\,d\tau)\Big[-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2-V\Big]
+S=\int dt'\,\mathrm{Lag}=\int(-i\,d\tau)\Big[-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2-V\Big]
 =i\int d\tau\Big[\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2+V\Big]=i\,S_E,
 $$
 
@@ -360,7 +360,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $\mathbb{M}_+$ | Hermitian (informational) sector; home of the state $\tilde{Ϛ}=\psi\psi^\dagger$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace; image of the Wick rotation |
 | $K(x_f,t'_f;x_i,t'_i)$ | Transition amplitude (propagator), central: $K=\mathcal{K}e_t$ |
-| $S[x]=\int L\,dt'$ | Action; real scalar |
+| $S[x]=\int \mathrm{Lag}\,dt'$ | Action; real scalar |
 | $\exp(iS/\hbar)$ | Path phase; central $*$-unitary element of $\mathbb{C}_{\mathbb{B}}$ |
 | $ie_t$ | Generator of the phase; exchanges the sectors, $i\mathbb{M}_\pm=\mathbb{M}_\mp$ |
 | $K_\varepsilon(x_{\mathrm f},x)$ | Single-step kernel; phase $=\frac{i}{\hbar}\big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon V\big)$ |

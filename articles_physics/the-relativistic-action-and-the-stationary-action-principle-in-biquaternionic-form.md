@@ -81,8 +81,8 @@ $$
 with $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the four-position biquaternion. With $d\tilde{R} = (ic\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt')\,dt'$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
 $$
 \boxed{\;
-S = -mc^2\int\frac{dt'}{\gamma} = \int L\,dt' , \qquad
-L = -mc^2\sqrt{1 - \frac{\vec v^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}}\;},
+S = -mc^2\int\frac{dt'}{\gamma} = \int \mathrm{Lag}\,dt' , \qquad
+\mathrm{Lag} = -mc^2\sqrt{1 - \frac{\vec v^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}}\;},
 $$
 as the companion *Relativistic Mechanics in Biquaternionic Form* records. The reduction from the invariant to the standard Lagrangian was checked at three velocities, the two expressions agreeing to six decimal places in each case. The integrand is built from the biquaternion norm of the displacement, which is what makes the action a Lorentz scalar: a rotor acts on $d\tilde{R}$ and its conjugate in the same way, and $\langle d\tilde{R}\rangle_{\natural}$ is invariant.
 
@@ -129,7 +129,7 @@ with $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu
 
 ### The canonical four-momentum and the mass shell
 
-The momentum conjugate to $\tilde{R}$ is $\tilde{P} = \partial L/\partial\left(d\tilde{R}/d\tau\right) = m\tilde{V}$, so that
+The momentum conjugate to $\tilde{R}$ is $\tilde{P} = \partial \mathrm{Lag}/\partial\left(d\tilde{R}/d\tau\right) = m\tilde{V}$, so that
 $$
 \tilde{P} = m\tilde{V} = m\gamma\bigl(ic\,e_t + \vec v\bigr) = i\,\frac{E}{c}\,e_t + \vec p ,
 \qquad
@@ -300,7 +300,7 @@ The relativistic action of the framework is a real scalar functional, $S = \int\
 The particle action is
 $$
 S = -mc\int\sqrt{-\,\langle d\tilde{R}\rangle_{\natural}} = -mc^2\int\frac{dt'}{\gamma} ,
-\qquad L = -mc^2\sqrt{1-\vec v^2/c^2} ,
+\qquad \mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2} ,
 $$
 whose four-velocity obeys $\langle\tilde{V}\rangle_{\natural} = \langle\tilde{V},\tilde{V}\rangle_{\natural} = -c^2$ and whose canonical momentum obeys the mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$; the reduction to the standard Lagrangian was checked at three velocities, the worldline stationarity by a discrete functional derivative, and the mass shell to machine precision. Coupling to an external potential gives the Lorentz force in component form, $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$; the index-free biquaternion product form of that force remains the open question flagged by the companion article on relativistic mechanics.
 
@@ -321,7 +321,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $\delta S = 0$ | Stationary-action principle; variations vanish on the boundary |
 | $\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,\overline{d\tilde{R}}$ | Biquaternion norm of the displacement |
 | $S = -mc\int\sqrt{-\langle d\tilde{R}\rangle_{\natural}}$ | Free relativistic particle action |
-| $L = -mc^2\sqrt{1-\vec v^2/c^2}$ | Standard relativistic Lagrangian |
+| $\mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2}$ | Standard relativistic Lagrangian |
 | $\tilde{V} = d\tilde{R}/d\tau$, $\langle\tilde{V}\rangle_{\natural} = -c^2$ | Four-velocity and its normalisation |
 | $\tilde{P} = m\tilde{V}$, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Four-momentum and the mass shell |
 | $\tilde{A} = i(\phi/c)e_t + \vec A$ | External four-potential |

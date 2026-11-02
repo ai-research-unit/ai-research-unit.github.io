@@ -136,7 +136,7 @@ Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range 
 
 The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\psi_\theta\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$. Equivalently, $\sigma_k\mapsto i \vec e_k$.
 
-For the state $|\psi_\theta\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $R_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, with $\sigma_t=I_2$ and $\mu,\nu\in\{t,x,y,z\}$, are
+For the state $|\psi_\theta\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, with $\sigma_t=I_2$ and $\mu,\nu\in\{t,x,y,z\}$, are
 
 $$
 R_{tt}=1,\qquad R_{tz}=R_{zt}=\cos 2\theta,\qquad R_{zz}=1,
@@ -145,7 +145,7 @@ $$
 R_{xx}=\sin 2\theta,\qquad R_{yy}=-\sin 2\theta,
 $$
 
-and all other $R_{\mu\nu}$ vanish. The entries are recomputed directly: the diagonal weights give $R_{tz}=R_{zt}=\cos^2\theta-\sin^2\theta=\cos2\theta$ and $R_{zz}=\cos^2\theta+\sin^2\theta=1$; the only off-diagonal coherence is $\langle\uparrow\uparrow|\psi_\theta\rangle\langle\psi_\theta|\downarrow\downarrow\rangle$, which produces $R_{xx}=\sin2\theta$ via $\sigma_1\otimes\sigma_1$ and $R_{yy}=-\sin2\theta$ via $\sigma_2\otimes\sigma_2$. Translating $\sigma_\mu\otimes\sigma_\nu\mapsto(ie_\mu)\otimes(ie_\nu)$ (with $ie_t\mapsto e_t$) gives
+and all other $\mathrm{Ric}_{\mu\nu}$ vanish. The entries are recomputed directly: the diagonal weights give $R_{tz}=R_{zt}=\cos^2\theta-\sin^2\theta=\cos2\theta$ and $R_{zz}=\cos^2\theta+\sin^2\theta=1$; the only off-diagonal coherence is $\langle\uparrow\uparrow|\psi_\theta\rangle\langle\psi_\theta|\downarrow\downarrow\rangle$, which produces $R_{xx}=\sin2\theta$ via $\sigma_1\otimes\sigma_1$ and $R_{yy}=-\sin2\theta$ via $\sigma_2\otimes\sigma_2$. Translating $\sigma_\mu\otimes\sigma_\nu\mapsto(ie_\mu)\otimes(ie_\nu)$ (with $ie_t\mapsto e_t$) gives
 
 $$
 \tilde\Pi_\theta=\tfrac14\Bigl(e_t\otimes e_t-\vec e_z\otimes \vec e_z

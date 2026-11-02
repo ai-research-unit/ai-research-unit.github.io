@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has been read, in the companion articles, in two ways. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) identifies the anti-Hermitian subspace $\mathbb{M}_-$ with Minkowski space: the four-vectors of relativistic physics live in $\mathbb{M}_-$, and the Lorentz group acts on them by the **Hermitian sandwich** with $\tilde U_{\mathrm L}$, the unit-norm biquaternion that implements the Lorentz transformation,
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has been read, in the companion articles, in two ways. The article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) identifies the anti-Hermitian subspace $\mathbb{M}_-$ with Minkowski space: the four-vectors of relativistic physics live in $\mathbb{M}_-$, and the Lorentz group acts on them by the **Hermitian sandwich** with $\tilde U_{\mathrm{Lor}}$, the unit-norm biquaternion that implements the Lorentz transformation,
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*}.
+\tilde{Q} \;\longmapsto\; \tilde U_{\mathrm{Lor}}\,\tilde{Q}\,\tilde U_{\mathrm{Lor}}^{*}.
 $$
 
 The article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) identifies the Hermitian subspace $\mathbb{M}_+$ with the observables of a two-state system, whose products generate its operator algebra. Both accounts rest on a more primitive representation-theoretic fact: $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, so it has a two-dimensional complex module, and the Lorentz group acts on that module by **multiplication**. This module is the **spinor module**. It is the subject of the present article.
@@ -164,19 +164,19 @@ $$
 
 is the **right-handed Weyl spinor** module. These are the two **chiral halves**.
 
-Concretely, both modules are carried by $\mathbb{C}^2$, but with different actions. If $\tilde U_{\mathrm L}\in SL(2,\mathbb{C})$ and $g = \mathsf{M}_2(\tilde U_{\mathrm L})$, then
+Concretely, both modules are carried by $\mathbb{C}^2$, but with different actions. If $\tilde U_{\mathrm{Lor}}\in SL(2,\mathbb{C})$ and $g = \mathsf{M}_2(\tilde U_{\mathrm{Lor}})$, then
 
 $$
 \text{left-handed:}\quad \psi \;\longmapsto\; g\,\psi,
 \qquad\qquad
-\text{right-handed:}\quad \chi \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm L}^{*})\,\chi,
+\text{right-handed:}\quad \chi \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm{Lor}}^{*})\,\chi,
 $$
 
-where $\tilde U_{\mathrm L}^{*}$ is the complex conjugate of the biquaternion (conjugation of its four coefficients). The second action is the conjugate of the first: since $\tilde U_{\mathrm L}\mapsto\tilde U_{\mathrm L}^{*}$ is an automorphism of $SL(2,\mathbb{C})$, the assignment is a genuine representation, and it is equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$ (the two differ by conjugation with the invariant tensor $\epsilon$ introduced below). The chiral halves are exchanged by parity, and they are **not isomorphic** as complex representations of $SL(2,\mathbb{C})$.
+where $\tilde U_{\mathrm{Lor}}^{*}$ is the complex conjugate of the biquaternion (conjugation of its four coefficients). The second action is the conjugate of the first: since $\tilde U_{\mathrm{Lor}}\mapsto\tilde U_{\mathrm{Lor}}^{*}$ is an automorphism of $SL(2,\mathbb{C})$, the assignment is a genuine representation, and it is equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$ (the two differ by conjugation with the invariant tensor $\epsilon$ introduced below). The chiral halves are exchanged by parity, and they are **not isomorphic** as complex representations of $SL(2,\mathbb{C})$.
 
 Two cautions belong here, because they are often blurred.
 
-**First, the two halves are not the two minimal left ideals.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ as left $\mathbb{B}$-modules: left multiplication by $\tilde U_{\mathrm L}$ acts by the **same** defining representation on each. The chirality distinction is therefore *not* visible to the complex algebra $\mathbb{B}$ alone, which is simple and has a single simple module. It becomes visible only when the real structure — complex conjugation — is taken into account, or when the algebra is complexified.
+**First, the two halves are not the two minimal left ideals.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ as left $\mathbb{B}$-modules: left multiplication by $\tilde U_{\mathrm{Lor}}$ acts by the **same** defining representation on each. The chirality distinction is therefore *not* visible to the complex algebra $\mathbb{B}$ alone, which is simple and has a single simple module. It becomes visible only when the real structure — complex conjugation — is taken into account, or when the algebra is complexified.
 
 **Second, the chiral splitting appears in the complexification.** As a real algebra, the complexification of $\mathbb{B}$ splits:
 
@@ -192,14 +192,14 @@ $$
 \boxed{\;\Delta = S \oplus \bar{S} = \left(\tfrac{1}{2},0\right)\oplus\left(0,\tfrac{1}{2}\right), \qquad \dim_{\mathbb{C}}\Delta = 4\;},
 $$
 
-on which $SL(2,\mathbb{C})$ acts block-diagonally by $g\oplus\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)$, the second block being the inverse conjugate transpose of the first. Its four complex components are the four components of the Dirac spinor, and its two blocks are the left- and right-handed Weyl spinors. A biquaternion, regarded as a $2\times2$ matrix, may be read as a pair of column spinors, which is the sense in which the algebra itself displays a pair of Weyl spinors; the two columns are two copies of $S$, and it is the pairing of $S$ with its conjugate that constitutes the Dirac module.
+on which $SL(2,\mathbb{C})$ acts block-diagonally by $g\oplus\mathsf{M}_2\big((\tilde U_{\mathrm{Lor}}^{*})^{\natural}\big)$, the second block being the inverse conjugate transpose of the first. Its four complex components are the four components of the Dirac spinor, and its two blocks are the left- and right-handed Weyl spinors. A biquaternion, regarded as a $2\times2$ matrix, may be read as a pair of column spinors, which is the sense in which the algebra itself displays a pair of Weyl spinors; the two columns are two copies of $S$, and it is the pairing of $S$ with its conjugate that constitutes the Dirac module.
 
 ## The Unit-Norm Biquaternions and the Double Cover
 
 The group that acts is the group of **unit-norm biquaternions**,
 
 $$
-SL(2,\mathbb{C}) \;=\; \{\tilde U_{\mathrm L}\in\mathbb{B} : \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t\},
+SL(2,\mathbb{C}) \;=\; \{\tilde U_{\mathrm{Lor}}\in\mathbb{B} : \tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural} = e_t\},
 $$
 
 which under $\mathsf{M}_2$ is exactly $\{g\in GL_2(\mathbb{C}) : \det g = 1\}$, because the biquaternion norm is the determinant. It is a simply connected complex Lie group of complex dimension $3$ (real dimension $6$), with Lie algebra $\mathrm{SL}(2,\mathbb{C})$, the traceless $2\times2$ complex matrices.
@@ -210,7 +210,7 @@ The subgroups relevant to the series sit inside it as follows:
 |---|---|---|
 | Pure boost $\tilde U_{\mathrm b} = \cosh\frac{\xi}{2} + i\sinh\frac{\xi}{2}\vec u_{\mathrm b}$ | Hermitian, unit norm | $\mathbb{M}_+$ |
 | Pure rotation $\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Real quaternion, unit norm | $\mathbb{H}_{\mathbb{B}}$ |
-| General $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Unit norm | $\mathbb{B}$ |
+| General $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | Unit norm | $\mathbb{B}$ |
 
 Pure boosts satisfy $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$; they do not form a subgroup (the product of two non-collinear boosts is a boost plus a rotation). Pure rotations form the subgroup $SU(2) = SL(2,\mathbb{C})\cap \mathrm{U}(2)$.
 
@@ -218,7 +218,7 @@ The action on the four-vector space is the Hermitian sandwich
 
 $$
 \pi:\; SL(2,\mathbb{C}) \longrightarrow SO^{+}(1,3), \qquad
-\pi(\tilde U_{\mathrm L}):\; \tilde{Q} \;\longmapsto\; \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*}, \qquad \tilde{Q}\in\mathbb{M}_-.
+\pi(\tilde U_{\mathrm{Lor}}):\; \tilde{Q} \;\longmapsto\; \tilde U_{\mathrm{Lor}}\,\tilde{Q}\,\tilde U_{\mathrm{Lor}}^{*}, \qquad \tilde{Q}\in\mathbb{M}_-.
 $$
 
 It is well defined (the image of an anti-Hermitian element is anti-Hermitian), it preserves the biquaternion norm, and it is a group homomorphism. Its kernel is
@@ -227,7 +227,7 @@ $$
 \ker\pi = \{\pm e_t\} \cong \mathbb{Z}/2\mathbb{Z},
 $$
 
-since $-e_t$ is central, $(-\tilde U_{\mathrm L})\tilde{Q}(-\tilde U_{\mathrm L})^{*} = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ for every $\tilde{Q}$ (the two signs cancel). Hence $\pi$ is **two-to-one** onto the proper orthochronous Lorentz group,
+since $-e_t$ is central, $(-\tilde U_{\mathrm{Lor}})\tilde{Q}(-\tilde U_{\mathrm{Lor}})^{*} = \tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*}$ for every $\tilde{Q}$ (the two signs cancel). Hence $\pi$ is **two-to-one** onto the proper orthochronous Lorentz group,
 
 $$
 SO^{+}(1,3) \;\cong\; SL(2,\mathbb{C})/\{\pm e_t\},
@@ -241,7 +241,7 @@ $$
 \mathsf{M}_2(-e_t) = -I_2,
 $$
 
-so $\pm\tilde U_{\mathrm L}$ act differently on every spinor. The defining representation therefore does **not** descend to $SO^{+}(1,3)$: it is a genuine representation of the double cover. This is the exact sense in which the spinor action and the four-vector action differ by the double cover.
+so $\pm\tilde U_{\mathrm{Lor}}$ act differently on every spinor. The defining representation therefore does **not** descend to $SO^{+}(1,3)$: it is a genuine representation of the double cover. This is the exact sense in which the spinor action and the four-vector action differ by the double cover.
 
 ## The Lorentz Action on the Spinor Module
 
@@ -250,14 +250,14 @@ so $\pm\tilde U_{\mathrm L}$ act differently on every spinor. The defining repre
 The Lorentz group acts on the spinor module by **left multiplication**:
 
 $$
-\boxed{\;\psi \;\longmapsto\; \tilde U_{\mathrm L}\,\psi \;=\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
-\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S\;}.
+\boxed{\;\psi \;\longmapsto\; \tilde U_{\mathrm{Lor}}\,\psi \;=\; \mathsf{M}_2(\tilde U_{\mathrm{Lor}})\,\psi,
+\qquad \tilde U_{\mathrm{Lor}}\in SL(2,\mathbb{C}),\quad \psi\in S\;}.
 $$
 
-Equivalently, in the ideal model, $\psi\in\mathbb{B}\tilde\Pi_+$ is sent to $\tilde U_{\mathrm L}\psi\in\mathbb{B}\tilde\Pi_+$; the ideal is stable because $\mathbb{B}(\mathbb{B}\tilde\Pi_+)\subseteq\mathbb{B}\tilde\Pi_+$. The action is $\mathbb{C}$-linear, and it is a group action:
+Equivalently, in the ideal model, $\psi\in\mathbb{B}\tilde\Pi_+$ is sent to $\tilde U_{\mathrm{Lor}}\psi\in\mathbb{B}\tilde\Pi_+$; the ideal is stable because $\mathbb{B}(\mathbb{B}\tilde\Pi_+)\subseteq\mathbb{B}\tilde\Pi_+$. The action is $\mathbb{C}$-linear, and it is a group action:
 
 $$
-\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\psi) = (\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\psi.
+\tilde U_{\mathrm{Lor},2}(\tilde U_{\mathrm{Lor},1}\psi) = (\tilde U_{\mathrm{Lor},2}\tilde U_{\mathrm{Lor},1})\psi.
 $$
 
 No two-sided action appears. This is the defining feature of the spinor representation.
@@ -336,7 +336,7 @@ It is invariant exactly when $g^{*}g = I_2$, i.e. on the compact subgroup $SU(2)
 
 ### The Mixed Pairing
 
-There is, however, an invariant pairing between the two chiral halves. Let $\psi\in S$ transform as $\psi\mapsto g\psi$ and let $\chi\in\bar{S}$ transform as $\chi\mapsto\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)\chi$. Then the sesquilinear pairing
+There is, however, an invariant pairing between the two chiral halves. Let $\psi\in S$ transform as $\psi\mapsto g\psi$ and let $\chi\in\bar{S}$ transform as $\chi\mapsto\mathsf{M}_2\big((\tilde U_{\mathrm{Lor}}^{*})^{\natural}\big)\chi$. Then the sesquilinear pairing
 
 $$
 \mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi
@@ -345,13 +345,13 @@ $$
 is invariant. Indeed,
 
 $$
-b\big(g\psi,\, \mathsf{M}_2((\tilde U_{\mathrm L}^{*})^{\natural})\chi\big)
-= \psi^{\dagger}\, \mathsf{M}_2(\tilde U_{\mathrm L})^{\dagger}\,\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big)\,\chi
-= \psi^{\dagger}\,\mathsf{M}_2\!\left(\tilde U_{\mathrm L}^{*}(\tilde U_{\mathrm L}^{*})^{\natural}\right)\chi
+b\big(g\psi,\, \mathsf{M}_2((\tilde U_{\mathrm{Lor}}^{*})^{\natural})\chi\big)
+= \psi^{\dagger}\, \mathsf{M}_2(\tilde U_{\mathrm{Lor}})^{\dagger}\,\mathsf{M}_2\big((\tilde U_{\mathrm{Lor}}^{*})^{\natural}\big)\,\chi
+= \psi^{\dagger}\,\mathsf{M}_2\!\left(\tilde U_{\mathrm{Lor}}^{*}(\tilde U_{\mathrm{Lor}}^{*})^{\natural}\right)\chi
 = \psi^{\dagger}\chi,
 $$
 
-because $\tilde U_{\mathrm L}^{*}(\tilde U_{\mathrm L}^{*})^{\natural} = e_t$ for a unit-norm biquaternion, so that $\mathsf{M}_2\big((\tilde U_{\mathrm L}^{*})^{\natural}\big) = (\mathsf{M}_2(\tilde U_{\mathrm L})^{\dagger})^{-1}$ is the inverse conjugate transpose of $g$. The half that carries the pair is therefore the dual of the conjugate, and not the conjugate itself: with $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$ the product $\psi^{\dagger}\chi$ is not invariant, because $\mathsf{M}_2(\tilde U_{\mathrm L}^{*})$ is the conjugate transpose and squares to $e_t$ only on the compact subgroup. This mixed pairing is the invariant scalar bilinear of the Dirac spinor; it pairs a left-handed spinor with a right-handed one.
+because $\tilde U_{\mathrm{Lor}}^{*}(\tilde U_{\mathrm{Lor}}^{*})^{\natural} = e_t$ for a unit-norm biquaternion, so that $\mathsf{M}_2\big((\tilde U_{\mathrm{Lor}}^{*})^{\natural}\big) = (\mathsf{M}_2(\tilde U_{\mathrm{Lor}})^{\dagger})^{-1}$ is the inverse conjugate transpose of $g$. The half that carries the pair is therefore the dual of the conjugate, and not the conjugate itself: with $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm{Lor}}^{*})\chi$ the product $\psi^{\dagger}\chi$ is not invariant, because $\mathsf{M}_2(\tilde U_{\mathrm{Lor}}^{*})$ is the conjugate transpose and squares to $e_t$ only on the compact subgroup. This mixed pairing is the invariant scalar bilinear of the Dirac spinor; it pairs a left-handed spinor with a right-handed one.
 
 ### The Spinor-to-Vector Map
 
@@ -391,7 +391,7 @@ The transformation laws are collected in the following table.
 |---|---|---|---|
 | $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ | $S\times S\to\mathbb{C}$ | invariant | $g^{T}\epsilon g = \epsilon$ |
 | $h(\psi,\phi) = \psi^{\dagger}\phi$ | $S\times S\to\mathbb{C}$ | $\psi^{\dagger}g^{*}g\,\phi$ | invariant iff $g\in SU(2)$ |
-| $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ | $S\times\bar{S}\to\mathbb{C}$ | invariant | $\tilde U_{\mathrm L}^{*}(\tilde U_{\mathrm L}^{*})^{\natural}=e_t$ |
+| $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ | $S\times\bar{S}\to\mathbb{C}$ | invariant | $\tilde U_{\mathrm{Lor}}^{*}(\tilde U_{\mathrm{Lor}}^{*})^{\natural}=e_t$ |
 | $\tilde{Q} = u\,v^{\dagger}$ | $S\times\bar{S}\to\mathbb{B}$ | $g\,\tilde{Q}\,g^{*}$ | equivariant |
 | $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$ | $S\times\bar{S}\to\mathbb{M}_+$ | $g\,H\,g^{*}$ | Hermitian; four-vector is $iH$ |
 
@@ -437,25 +437,25 @@ It is worth stating the contrast in one place, since it is the conceptual centre
 
 | Feature | Four-vector action on $\mathbb{M}_-$ | Spinor action on $S$ |
 |---|---|---|
-| Formula | $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ | $\psi\mapsto\tilde U_{\mathrm L}\psi$ |
-| Number of factors of $\tilde U_{\mathrm L}$ | two (quadratic) | one (linear) |
+| Formula | $\tilde{Q}\mapsto\tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*}$ | $\psi\mapsto\tilde U_{\mathrm{Lor}}\psi$ |
+| Number of factors of $\tilde U_{\mathrm{Lor}}$ | two (quadratic) | one (linear) |
 | Kernel of the action | $\{\pm e_t\}$ | $\{e_t\}$ |
 | Image group | $SO^{+}(1,3)$ | $SL(2,\mathbb{C})$ |
 | Action of $-e_t$ | $+\mathrm{id}$ | $-\mathrm{id}$ |
 | Descends to the Lorentz group? | yes | no |
 
-The two actions do not "differ by the double cover" in the sense that one is a cover of the other; rather, the four-vector action **factors through** the double cover while the spinor action does not. The conjugate parameter $\tilde U_{\mathrm L}$ and $-\tilde U_{\mathrm L}$ describe the same Lorentz transformation of every four-vector, but opposite transformations of every spinor. For this reason the spinor representation is the representation of the **double cover** $SL(2,\mathbb{C})$, and the sign of the spinor is a genuine degree of freedom that no four-vector can see. The relation between the two actions is the bilinear map $\tilde{Q} = u v^{\dagger}$ of the preceding section: the four-vector is a *pair* of spinors, and the two one-sided actions on the pair combine into the two-sided action on their product.
+The two actions do not "differ by the double cover" in the sense that one is a cover of the other; rather, the four-vector action **factors through** the double cover while the spinor action does not. The conjugate parameter $\tilde U_{\mathrm{Lor}}$ and $-\tilde U_{\mathrm{Lor}}$ describe the same Lorentz transformation of every four-vector, but opposite transformations of every spinor. For this reason the spinor representation is the representation of the **double cover** $SL(2,\mathbb{C})$, and the sign of the spinor is a genuine degree of freedom that no four-vector can see. The relation between the two actions is the bilinear map $\tilde{Q} = u v^{\dagger}$ of the preceding section: the four-vector is a *pair* of spinors, and the two one-sided actions on the pair combine into the two-sided action on their product.
 
-A concrete illustration is the composition of two transformations. If $\tilde U_{\mathrm L,1}$ and $\tilde U_{\mathrm L,2}$ are rotors, then on four-vectors
+A concrete illustration is the composition of two transformations. If $\tilde U_{\mathrm{Lor},1}$ and $\tilde U_{\mathrm{Lor},2}$ are rotors, then on four-vectors
 
 $$
-\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\tilde{Q}\tilde U_{\mathrm L,1}^{*})\tilde U_{\mathrm L,2}^{*} = (\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\tilde{Q}(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})^{*},
+\tilde U_{\mathrm{Lor},2}(\tilde U_{\mathrm{Lor},1}\tilde{Q}\tilde U_{\mathrm{Lor},1}^{*})\tilde U_{\mathrm{Lor},2}^{*} = (\tilde U_{\mathrm{Lor},2}\tilde U_{\mathrm{Lor},1})\tilde{Q}(\tilde U_{\mathrm{Lor},2}\tilde U_{\mathrm{Lor},1})^{*},
 $$
 
 while on spinors
 
 $$
-\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\psi) = (\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\psi.
+\tilde U_{\mathrm{Lor},2}(\tilde U_{\mathrm{Lor},1}\psi) = (\tilde U_{\mathrm{Lor},2}\tilde U_{\mathrm{Lor},1})\psi.
 $$
 
 Both compose by multiplication of the rotors; the difference is only that the four-vector formula has a pair of rotors, and hence a sign that cancels, while the spinor formula has one, and hence a sign that does not.
@@ -476,7 +476,7 @@ $$
 \operatorname{Spin}(1,3) \;\cong\; SL(2,\mathbb{C}) \;\subset\; \mathbb{B} \;\subset\; \mathrm{Cl}_{1,3}.
 $$
 
-Two distinct actions are then visible in the Clifford picture. The spin group acts on the spinor module by left multiplication — one-sided, because a Clifford module is a module and the action is linear. The same group acts on the vector space $W\subset\mathrm{Cl}_{1,3}$ (spanned by the odd generators) by a **two-sided action** — multiplied on the left by $\tilde U_{\mathrm L}$ and on the right by its Clifford adjoint, because a vector is an element of the algebra and not a module element. In the read-list conventions the Clifford adjoint is the biquaternion dagger, so the action is the Hermitian sandwich $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$. The vector representation is the tensor product of the spinor representation with its conjugate in the sense of the preceding section; the even subalgebra is exactly the algebra generated by the bivectors, and the bivectors are the Lie algebra of the spin group.
+Two distinct actions are then visible in the Clifford picture. The spin group acts on the spinor module by left multiplication — one-sided, because a Clifford module is a module and the action is linear. The same group acts on the vector space $W\subset\mathrm{Cl}_{1,3}$ (spanned by the odd generators) by a **two-sided action** — multiplied on the left by $\tilde U_{\mathrm{Lor}}$ and on the right by its Clifford adjoint, because a vector is an element of the algebra and not a module element. In the read-list conventions the Clifford adjoint is the biquaternion dagger, so the action is the Hermitian sandwich $\tilde{Q}\mapsto\tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*}$. The vector representation is the tensor product of the spinor representation with its conjugate in the sense of the preceding section; the even subalgebra is exactly the algebra generated by the bivectors, and the bivectors are the Lie algebra of the spin group.
 
 This correspondence between the biquaternion algebra and the even Clifford subalgebra is the algebraic origin of the whole structure. It explains at once:
 
@@ -511,11 +511,11 @@ The **left-handed Weyl spinor** is the defining module $(\tfrac12,0)$; the **rig
 The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^{+}(1,3)$. It acts on the spinor module by
 
 $$
-\psi \longmapsto \tilde U_{\mathrm L}\psi,
-\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S,
+\psi \longmapsto \tilde U_{\mathrm{Lor}}\psi,
+\qquad \tilde U_{\mathrm{Lor}}\in SL(2,\mathbb{C}),\quad \psi\in S,
 $$
 
-with $\pm\tilde U_{\mathrm L}$ acting differently ($-e_t$ acts as $-\mathrm{id}$). The four-vector action of the companion articles, $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ on $\mathbb{M}_-$, is recovered from the Hermitian part of the spinor bilinear, $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$, which transforms as $gHg^{\dagger}$ and whose four-vector image is $iH$. The spinor action is faithful and does not descend to the Lorentz group; the four-vector action has kernel $\{\pm e_t\}$ and does. This is the double cover, seen from the module side.
+with $\pm\tilde U_{\mathrm{Lor}}$ acting differently ($-e_t$ acts as $-\mathrm{id}$). The four-vector action of the companion articles, $\tilde{Q}\mapsto\tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*}$ on $\mathbb{M}_-$, is recovered from the Hermitian part of the spinor bilinear, $H = \tfrac{1}{2}(uv^{\dagger}+vu^{\dagger})$, which transforms as $gHg^{\dagger}$ and whose four-vector image is $iH$. The spinor action is faithful and does not descend to the Lorentz group; the four-vector action has kernel $\{\pm e_t\}$ and does. This is the double cover, seen from the module side.
 
 The spinor module carries three bilinear structures and one equivariant bilinear map: the symplectic form $\varepsilon$ (invariant, and the source of self-duality $S^{*}\cong S$), the Hermitian form $h$ (invariant only on the compact subgroup $SU(2)$), the mixed pairing $b:S\times\bar{S}\to\mathbb{C}$ (invariant, the Dirac scalar bilinear), and the outer product $S\times\bar{S}\to\mathbb{B}$, whose Hermitian part $H$ carries the vector representation. A fourth pairing, the indefinite $[u|v]=u^{\dagger}\sigma_3v$ of signature $(1,1)$, is invariant exactly under the subgroup $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ that fixes a space-like direction, and its bilinears model the sphere $S^2$ and the two hyperboloids $H^\pm$, $H^{sl}$ of three-dimensional Minkowski space on the module; under the symplectic form $\omega$ they close into $\mathfrak{so}(1,2)\cong\mathfrak{su}(1,1)$.
 
@@ -536,10 +536,10 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $\Delta = S\oplus\bar{S}$ | Dirac spinor module, $\dim_{\mathbb{C}}\Delta=4$ |
 | $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z),\ \tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Primitive orthogonal idempotents, $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ |
 | $\vec\Upsilon_x = \tfrac12(i\vec e_x-\vec e_y),\ \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)=\vec e_y\tilde\Pi_+$ | Matrix units $E_{12},E_{21}$; basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$ of $S$ |
-| $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L}:\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
+| $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{Lor}}:\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t\}$ | Unit-norm biquaternions, double cover of $SO^{+}(1,3)$ |
 | $\tilde U_{\mathrm b} = \cosh\frac{\xi}{2}+i\sinh\frac{\xi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (in $\mathbb{H}_{\mathbb{B}}$) |
-| $\psi\mapsto\tilde U_{\mathrm L}\psi$ | Lorentz action on the spinor module |
+| $\psi\mapsto\tilde U_{\mathrm{Lor}}\psi$ | Lorentz action on the spinor module |
 | $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$ | Invariant symplectic pairing on $S$ |
 | $h(\psi,\phi)=\psi^{\dagger}\phi$ | Hermitian form (invariant on $SU(2)$) |
 | $\mathfrak{b}(\psi,\chi)=\psi^{\dagger}\chi$ | Invariant pairing $S\times\bar{S}\to\mathbb{C}$ |

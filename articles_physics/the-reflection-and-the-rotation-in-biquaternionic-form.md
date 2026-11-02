@@ -18,18 +18,18 @@ A single element of a matrix algebra is at once a **point** and an **operator**.
 
 The biquaternion algebra inherits this doubling, and the series uses it constantly:
 
-- A **Lorentz rotor** $\tilde U_{\mathrm L}$ with $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. It is also an operator: it acts on four-vectors by the rotor conjugation, and on spinors by left multiplication.
+- A **Lorentz rotor** $\tilde U_{\mathrm{Lor}}$ with $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = 1$ is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. It is also an operator: it acts on four-vectors by the rotor conjugation, and on spinors by left multiplication.
 - A **generator** $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is a point of the odd part — a four-vector, one of the four legs of spacetime — and it is also an operator on the spinor module. The four are the cells $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$, $iL_{e_y}R_{e_y}$, $iL_{e_z}R_{e_y}$.
 
 For the rotors the doubling is familiar and the two interpretations are both two-sided or both one-sided. For the generators it is not, and the reason is the grading. The even elements act on the spinor module *preserving* its two chiral halves, because they commute with the chirality operator; the odd elements act *exchanging* them, because they anticommute with it. So an even element and an odd element, both points of the same algebra and both operators on the same module, do qualitatively different things. The remainder of this article is the elaboration of that sentence.
 
-The two actions on a four-vector are worth naming explicitly, since both are used below. For $\tilde U_{\mathrm L}$ even with $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$, the rotor conjugation
+The two actions on a four-vector are worth naming explicitly, since both are used below. For $\tilde U_{\mathrm{Lor}}$ even with $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = 1$, the rotor conjugation
 
 $$
-\tilde{Q} \mapsto \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}
+\tilde{Q} \mapsto \tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*}
 $$
 
-implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and the action reduces to $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the sandwich $x\mapsto\Lambda x\Lambda^{\mathrm{Cl}}$ by $\Lambda$, the Clifford image of $\tilde U_{\mathrm L}$, where $\Lambda^{\mathrm{Cl}}$ is the Clifford image of the Hermitian conjugate $\tilde U_{\mathrm L}^{*}$. It is the conjugation by $\Lambda$ only on the $*$-unitary slice, where that conjugate is the inverse.
+implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and the action reduces to $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the sandwich $x\mapsto\Lambda x\Lambda^{\mathrm{Cl}}$ by $\Lambda$, the Clifford image of $\tilde U_{\mathrm{Lor}}$, where $\Lambda^{\mathrm{Cl}}$ is the Clifford image of the Hermitian conjugate $\tilde U_{\mathrm{Lor}}^{*}$. It is the conjugation by $\Lambda$ only on the $*$-unitary slice, where that conjugate is the inverse.
 
 The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative. They lie in the odd part of $\mathrm{Cl}_{1,3}$ and act on vectors by the two-sided map of the Pin group,
 
@@ -154,7 +154,7 @@ With the grading in hand, the two spaces can be described, and they are not of t
 **The rotations.** The rotors are the unit-norm biquaternions,
 
 $$
-SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L}\in\mathbb{B} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = 1\},
+SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{Lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = 1\},
 $$
 
 a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $\vec e_\mu$ and $i\vec e_\mu$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on spinors in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
@@ -219,13 +219,13 @@ What anti-linearity does **not** change is the chirality behaviour. Chirality is
 
 The classical theorem gives an upper bound of four reflections in four dimensions. The sharper question — given a rotation, how many reflections does it take — has a clean answer, and it separates the simple Lorentz transformations from the generic ones.
 
-A product of two reflections is an element $\tilde U_{\mathrm L} = uv$ with $u$ and $v$ unit vectors. The criterion is algebraic. The product $u\tilde U_{\mathrm L}$ has a grade-$1$ and a grade-$3$ part, and the grade-$3$ part is *linear* in $u$. So the condition that $u\tilde U_{\mathrm L}$ be a pure vector — that is, that $\tilde U_{\mathrm L}$ be $u$ times a vector — is a system of four linear equations in the four components of $u$, with a $4\times4$ matrix $M$ built from the bivector part of $\tilde U_{\mathrm L}$:
+A product of two reflections is an element $\tilde U_{\mathrm{Lor}} = uv$ with $u$ and $v$ unit vectors. The criterion is algebraic. The product $u\tilde U_{\mathrm{Lor}}$ has a grade-$1$ and a grade-$3$ part, and the grade-$3$ part is *linear* in $u$. So the condition that $u\tilde U_{\mathrm{Lor}}$ be a pure vector — that is, that $\tilde U_{\mathrm{Lor}}$ be $u$ times a vector — is a system of four linear equations in the four components of $u$, with a $4\times4$ matrix $M$ built from the bivector part of $\tilde U_{\mathrm{Lor}}$:
 
 $$
-\tilde U_{\mathrm L} = uv \ \text{for unit vectors}\ u,v \quad\Longleftrightarrow\quad M\cdot u = 0 \ \text{has a nonzero solution} \quad\Longleftrightarrow\quad \det M = 0 .
+\tilde U_{\mathrm{Lor}} = uv \ \text{for unit vectors}\ u,v \quad\Longleftrightarrow\quad M\cdot u = 0 \ \text{has a nonzero solution} \quad\Longleftrightarrow\quad \det M = 0 .
 $$
 
-Geometrically the criterion is that **$\tilde U_{\mathrm L}$ fixes a two-dimensional subspace pointwise**, since a product of two reflections is the identity on the plane orthogonal to the span of $u$ and $v$. The two forms of the criterion agree: the determinant vanished exactly when the fixed subspace had dimension $2$.
+Geometrically the criterion is that **$\tilde U_{\mathrm{Lor}}$ fixes a two-dimensional subspace pointwise**, since a product of two reflections is the identity on the plane orthogonal to the span of $u$ and $v$. The two forms of the criterion agree: the determinant vanished exactly when the fixed subspace had dimension $2$.
 
 | transformation | $\lvert\det M\rvert$ | fixed subspace | reflections needed |
 |---|---|---|---|
@@ -356,11 +356,11 @@ The claims of this article, in order.
 | Reversal | Reversing the Clifford image of $\tilde{Q}$ gives the image of $\tilde{Q}^{\natural}$; Clifford reversal is quaternion conjugation |
 | Hermitian conjugation | The image of $\tilde{Q}^{*}$ is $iR_{e_x}$ times the reversed image of $\tilde{Q}$, times $iR_{e_x}$ |
 | Frame conjugation | Conjugating the image of $\tilde{Q}$ by $iR_{e_x}$ gives the image of $\tilde{Q}^*$ |
-| $\tilde U_{\mathrm L}$, $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
-| $\tilde{Q}_2 = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $\tilde U_{\mathrm{Lor}}$, $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
+| $\tilde{Q}_2 = \tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $\mathbb{M}_+$ | Hermitian sector; its image is the identity together with the timelike bivectors (boosts) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion sector; its image is the identity together with the spacelike bivectors (spatial rotations) |
-| $\det M$ | Two-reflection criterion: $\det M = 0$ iff $\tilde U_{\mathrm L}$ fixes a plane |
+| $\det M$ | Two-reflection criterion: $\det M = 0$ iff $\tilde U_{\mathrm{Lor}}$ fixes a plane |
 | $\det = (-1)^{k}(-1)^{\text{anti}}$ | Reflection parity of a module map, linear or anti-linear |
 | $\mathsf{P}$ | Parity reflection; exchanges the two chiral halves |
 

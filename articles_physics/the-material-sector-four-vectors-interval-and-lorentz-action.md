@@ -91,16 +91,16 @@ The first is negative definite of signature $(0,4)$, the second is the interval 
 
 ### The Lorentz Action
 
-Let $\tilde U_{\mathrm L}\in\mathbb{B}$ have unit quaternionic norm, $\langle\tilde U_{\mathrm L}\rangle_{\natural}=\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The map
+Let $\tilde U_{\mathrm{Lor}}\in\mathbb{B}$ have unit quaternionic norm, $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural}=\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t$. The map
 
 $$
-\tilde Q\longmapsto\tilde Q_2=\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}
+\tilde Q\longmapsto\tilde Q_2=\tilde U_{\mathrm{Lor}}\tilde Q\tilde U_{\mathrm{Lor}}^{*}
 $$
 
-carries $\mathbb{M}_-$ into itself and preserves the norm, $\langle\tilde Q_2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$. It is a group action, $(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\tilde Q(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})^{*}=\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\tilde Q\tilde U_{\mathrm L,1}^{*})\tilde U_{\mathrm L,2}^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. Every unit-norm biquaternion is a boost times a rotation,
+carries $\mathbb{M}_-$ into itself and preserves the norm, $\langle\tilde Q_2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$. It is a group action, $(\tilde U_{\mathrm{Lor},2}\tilde U_{\mathrm{Lor},1})\tilde Q(\tilde U_{\mathrm{Lor},2}\tilde U_{\mathrm{Lor},1})^{*}=\tilde U_{\mathrm{Lor},2}(\tilde U_{\mathrm{Lor},1}\tilde Q\tilde U_{\mathrm{Lor},1}^{*})\tilde U_{\mathrm{Lor},2}^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. Every unit-norm biquaternion is a boost times a rotation,
 
 $$
-\boxed{\;\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;},
+\boxed{\;\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;},
 $$
 
 with the boost factor on the left. A pure boost is the Hermitian positive unit-norm element
@@ -115,7 +115,7 @@ $$
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}.
 $$
 
-The positivity of $\tilde U_{\mathrm b}$ removes the sign ambiguity: $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ are both Hermitian of unit norm, and only the positive one is the boost factor. The letter $\tilde U_{\mathrm L}$ names the general Lorentz rotor, $\tilde U_{\mathrm b}$ the boost factor and $\tilde u_{\mathrm r}$ the rotation factor. The sector is a **representation space** of the Lorentz group, and the rotor acts on it from outside: a boost rotor lies in $\mathbb{M}_+$, a rotation rotor in $\mathbb{H}_{\mathbb{B}}$, and only a general rotor uses the whole algebra.
+The positivity of $\tilde U_{\mathrm b}$ removes the sign ambiguity: $\tilde U_{\mathrm b}$ and $-\tilde U_{\mathrm b}$ are both Hermitian of unit norm, and only the positive one is the boost factor. The letter $\tilde U_{\mathrm{Lor}}$ names the general Lorentz rotor, $\tilde U_{\mathrm b}$ the boost factor and $\tilde u_{\mathrm r}$ the rotation factor. The sector is a **representation space** of the Lorentz group, and the rotor acts on it from outside: a boost rotor lies in $\mathbb{M}_+$, a rotation rotor in $\mathbb{H}_{\mathbb{B}}$, and only a general rotor uses the whole algebra.
 
 ## Interpretations
 
@@ -205,11 +205,11 @@ The same cone is the boundary of the positive cone of the informational sector. 
 
 ### The Lorentz Group Acts by Rotor Conjugation
 
-The action $\tilde Q\mapsto\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}$ is the Lorentz action on the sector. The boost factor $\tilde U_{\mathrm b}$ is Hermitian positive, the rotation factor $\tilde u_{\mathrm r}$ is a real quaternion, and a general rotor $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is a unit-norm biquaternion. The action preserves the sector and the norm, and it is the reason the sector is a representation space rather than a group: the group acts on it from outside.
+The action $\tilde Q\mapsto\tilde U_{\mathrm{Lor}}\tilde Q\tilde U_{\mathrm{Lor}}^{*}$ is the Lorentz action on the sector. The boost factor $\tilde U_{\mathrm b}$ is Hermitian positive, the rotation factor $\tilde u_{\mathrm r}$ is a real quaternion, and a general rotor $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is a unit-norm biquaternion. The action preserves the sector and the norm, and it is the reason the sector is a representation space rather than a group: the group acts on it from outside.
 
-The norm condition is $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, which is the condition of $SL(2,\mathbb{C})$. It is not the same as the matrix-unitary condition $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*}=e_t$, which defines $U(2)$ and preserves the trace of a state. A boost satisfies the first and not the second; a rotation satisfies both. The distinction is the reason the Lorentz action on four-vectors and the evolution of states are two different actions of two different slices of the same algebra.
+The norm condition is $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t$, which is the condition of $SL(2,\mathbb{C})$. It is not the same as the matrix-unitary condition $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{*}=e_t$, which defines $U(2)$ and preserves the trace of a state. A boost satisfies the first and not the second; a rotation satisfies both. The distinction is the reason the Lorentz action on four-vectors and the evolution of states are two different actions of two different slices of the same algebra.
 
-The rotor is defined up to a sign: $\tilde U_{\mathrm L}$ and $-\tilde U_{\mathrm L}$ induce the same action on the sector, because the sign cancels between the two factors. This is the double cover of the Lorentz group by $SL(2,\mathbb{C})$, read on the sector.
+The rotor is defined up to a sign: $\tilde U_{\mathrm{Lor}}$ and $-\tilde U_{\mathrm{Lor}}$ induce the same action on the sector, because the sign cancels between the two factors. This is the double cover of the Lorentz group by $SL(2,\mathbb{C})$, read on the sector.
 
 **The boundary.** Rotor conjugation is the action; the article does not derive the Lorentz group from the algebra. The choice of the proper orthochronous component is a choice of the physical transformation group, and the sign ambiguity is unobservable on the sector.
 
@@ -278,8 +278,8 @@ The article interprets the kinematics of the sector: the events, the four-vector
 - The four forms are real on the sector: the interval, its negative, the Euclidean square and its negative; the sector carries no scalar area pairing.
 - The seven four-vectors of relativistic physics are the elements of the sector, with the imaginary scalar part as the time component.
 - The two eigenvalues of the four-momentum are $i(E/c\pm\lvert\vec p\rvert)$; they are the Doppler pair, and their product is the norm $-m^2c^2$.
-- The Lorentz group acts by rotor conjugation, with the general rotor $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a unit-norm biquaternion, the boost factor $\tilde U_{\mathrm b}$ Hermitian positive in $\mathbb{M}_+$, and the rotation factor $\tilde u_{\mathrm r}$ a real quaternion in $\mathbb{H}_{\mathbb{B}}$.
-- The boost factor is positive definite, so the word $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is unique; the opposite order, $\tilde U_{\mathrm L}=\tilde u_{\mathrm r}B_{\mathrm{right}}$, uses a different boost $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and the same rotation.
+- The Lorentz group acts by rotor conjugation, with the general rotor $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a unit-norm biquaternion, the boost factor $\tilde U_{\mathrm b}$ Hermitian positive in $\mathbb{M}_+$, and the rotation factor $\tilde u_{\mathrm r}$ a real quaternion in $\mathbb{H}_{\mathbb{B}}$.
+- The boost factor is positive definite, so the word $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is unique; the opposite order, $\tilde U_{\mathrm{Lor}}=\tilde u_{\mathrm r}B_{\mathrm{right}}$, uses a different boost $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and the same rotation.
 - The commutator is twice the cross product of the spatial parts, with the time direction central; the sector is a Lie algebra for the compact part, the spatial rotations together with the central phase.
 - The sign of the interval is the product of the signs of the factors, and it is data of the embedding: a change of local complex structure moves it, while the mass is read off the modulus of the norm.
 - The sector is the acted-upon side of the action of the informational sector, and it owns no non-trivial idempotent.
@@ -293,11 +293,11 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{M}_-$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse, defined off the cone |
-| $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the general Lorentz rotor, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ |
+| $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the general Lorentz rotor, $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t$ |
 | $\tilde U_{\mathrm b}$ | the Hermitian positive boost factor |
 | $\tilde u_{\mathrm r}$ | the unit real quaternion rotation factor |
 | $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the boost factor of the opposite, rotation-first, word |
-| $\tilde Q_2=\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}$ | the Lorentz action by rotor conjugation |
+| $\tilde Q_2=\tilde U_{\mathrm{Lor}}\tilde Q\tilde U_{\mathrm{Lor}}^{*}$ | the Lorentz action by rotor conjugation |
 | $[\tilde Q_1,\tilde Q_2]=2\vec q\times\vec r$ | the commutator on the sector |
 | $\langle\cdot,\cdot\rangle_{\natural}$ | the quaternionic form, the interval |
 | $\langle\cdot,\cdot\rangle_{*}$ | the Hermitian form, the Euclidean square |

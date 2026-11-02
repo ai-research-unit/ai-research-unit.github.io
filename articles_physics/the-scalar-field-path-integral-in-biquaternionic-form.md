@@ -38,10 +38,10 @@ with real eigenvalues for the real field and complex eigenvalues for the complex
 $$
 \langle\phi_f,t'_f|\phi_i,t'_i\rangle
 =\int_{\phi(t'_i)=\phi_i}^{\phi(t'_f)=\phi_f}\mathcal{D}\phi\;
-\exp\left(\frac{i}{\hbar}\int_{t'_i}^{t'_f}\!dt'\,L[\phi,\partial\phi/\partial t']\right),
+\exp\left(\frac{i}{\hbar}\int_{t'_i}^{t'_f}\!dt'\,\mathrm{Lag}[\phi,\partial\phi/\partial t']\right),
 $$
 
-with $L=\int d^3x\,\mathcal{L}$; the phase-space form is obtained by inserting also the momentum completeness relation, and integrating out the momentum returns the Lagrangian form above. The boundary values $\phi_i,\phi_f$ are held fixed, and the measure is the formal product of Lebesgue measures at each time slice, $\mathcal{D}\phi=\prod_t d\phi(t')$, made meaningful by a lattice regulator as in the finite-dimensional Gaussian below.
+with $\mathrm{Lag}=\int d^3x\,\mathcal{L}$; the phase-space form is obtained by inserting also the momentum completeness relation, and integrating out the momentum returns the Lagrangian form above. The boundary values $\phi_i,\phi_f$ are held fixed, and the measure is the formal product of Lebesgue measures at each time slice, $\mathcal{D}\phi=\prod_t d\phi(t')$, made meaningful by a lattice regulator as in the finite-dimensional Gaussian below.
 
 In the framework's notation the field is central-valued and the weight is a central phase,
 
@@ -254,7 +254,7 @@ whose expansion in powers of $\lambda$ is the standard perturbative series, and 
 
 Two structural comments complete the picture.
 
-**The loop expansion is the expansion in $\hbar$.** Restoring $\hbar$, the weight is $\exp(iS/\hbar)$, the propagator carries a factor $\hbar$, and a diagram with $L$ loops carries $\hbar^{L-1}$; the semiclassical expansion of the previous section is thus the loop expansion, and the effective action $\Gamma[\phi]$, the Legendre transform of $W=\ln Z$, is the generating functional of the one-particle-irreducible vertices. The general theory of the effective action, of its renormalization and of its convexity belongs to the companion article *The Generating Functional and the Effective Action in Biquaternionic Form* and is not derived here; what is specific to the scalar sector is that every term is a central scalar functional.
+**The loop expansion is the expansion in $\hbar$.** Restoring $\hbar$, the weight is $\exp(iS/\hbar)$, the propagator carries a factor $\hbar$, and a diagram with $\mathrm{Lag}$ loops carries $\hbar^{L-1}$; the semiclassical expansion of the previous section is thus the loop expansion, and the effective action $\Gamma[\phi]$, the Legendre transform of $W=\ln Z$, is the generating functional of the one-particle-irreducible vertices. The general theory of the effective action, of its renormalization and of its convexity belongs to the companion article *The Generating Functional and the Effective Action in Biquaternionic Form* and is not derived here; what is specific to the scalar sector is that every term is a central scalar functional.
 
 **The bosonic gap persists diagrammatically.** The perturbative expansion is an expansion of the functional integral on the imported module; the mode algebra is the standard CCR algebra, and the algebra $\mathbb{B}$ contributes only the central-valuedness of the fields, sources, propagators and vertices. There is no diagrammatic object native to $\mathbb{B}$; the trace argument that forbids a bosonic mode in the algebra forbids equally any attempt to read the diagrammatic expansion as an algebraic identity inside it.
 

@@ -91,7 +91,7 @@ K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+
 + O(\varepsilon^2).
 $$
 
-The short-time kernel is central. Its phase is $(i/\hbar)$ times the short-time Lagrangian action $L\varepsilon = \frac{m|\vec\Delta|^2}{2\varepsilon^2}\varepsilon - V\varepsilon$, and its prefactor is built from the central $i$, the central real numbers $m,\hbar,\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
+The short-time kernel is central. Its phase is $(i/\hbar)$ times the short-time Lagrangian action $\mathrm{Lag}\varepsilon = \frac{m|\vec\Delta|^2}{2\varepsilon^2}\varepsilon - V\varepsilon$, and its prefactor is built from the central $i$, the central real numbers $m,\hbar,\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
 
 ### The Trotter product and the measure
 
@@ -112,7 +112,7 @@ K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t';x_i\,\vec e_x+y_i\,\vec e_y+z_i\,
 \exp\left[\frac{i}{\hbar}\sum_{k=0}^{N-1}\left(\frac{m|x_{k+1}\,\vec e_x+y_{k+1}\,\vec e_y+z_{k+1}\,\vec e_z-(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)\right)\right]e_t,
 $$
 
-with $\varepsilon=t'/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^{t'} L\,d\tau$ and the multiple integral becomes the formal path integral
+with $\varepsilon=t'/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^{t'} \mathrm{Lag}\,d\tau$ and the multiple integral becomes the formal path integral
 
 $$
 \boxed{\;K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t';x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,0)
@@ -349,9 +349,9 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$ | Central Hamiltonian |
 | $\tilde Q(t')=\exp(-iHt'/\hbar)$ | Evolution operator; central $*$-unitary, semigroup |
 | $K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)=Ke_t$ | Position kernel; central |
-| $K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(L\varepsilon)$ |
+| $K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(\mathrm{Lag}\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |
-| $S[x,y,z]=\int L\,dt'$ | Action; real scalar |
+| $S[x,y,z]=\int \mathrm{Lag}\,dt'$ | Action; real scalar |
 | $K_0=(m/2\pi i\hbar t')^{3/2}\exp(im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2\hbar t')$ | Free kernel |
 | $K_\omega$ | Oscillator kernel; poles at $\omega t'=n\pi$ |
 | $S_{\mathrm{cl}}=\frac{m\omega}{2\sin\omega t'}[(x^2+x_0^2)\cos\omega t'-2xx_0]$ | Oscillator classical action |

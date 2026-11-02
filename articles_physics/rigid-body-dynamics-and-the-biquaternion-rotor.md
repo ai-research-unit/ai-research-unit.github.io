@@ -275,7 +275,7 @@ where the labels $(1,2,3)$ refer to the body axes and the assignment of the angl
 Adding gravity to a symmetric top whose centre of mass is displaced along the symmetry axis gives the **Lagrange top**. With the symmetry axis at polar angle $\theta$ and the potential $Mgl\cos\theta$, the Lagrangian in Euler angles is
 
 $$
-L=\tfrac12 I_\perp\!\left(\left(d\theta/dt'\right)^{2}+\left(d\phi/dt'\right)^{2}\sin^2\theta\right)
+\mathrm{Lag}=\tfrac12 I_\perp\!\left(\left(d\theta/dt'\right)^{2}+\left(d\phi/dt'\right)^{2}\sin^2\theta\right)
 +\tfrac12 I_3\!\left(d\psi/dt'+d\phi/dt'\cos\theta\right)^2
 -Mgl\cos\theta .
 $$

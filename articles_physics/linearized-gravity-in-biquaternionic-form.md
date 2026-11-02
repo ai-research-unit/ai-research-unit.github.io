@@ -74,16 +74,16 @@ $$
 and the Riemann tensor is
 
 $$
-R_{\mu\nu\rho\sigma} = \tfrac{1}{2}\left(\partial^2/\partial x_\nu\partial x_\rho h_{\mu\sigma} + \partial^2/\partial x_\mu\partial x_\sigma h_{\nu\rho} - \partial^2/\partial x_\mu\partial x_\rho h_{\nu\sigma} - \partial^2/\partial x_\nu\partial x_\sigma h_{\mu\rho}\right).
+\mathrm{Riem}_{\mu\nu\rho\sigma} = \tfrac{1}{2}\left(\partial^2/\partial x_\nu\partial x_\rho h_{\mu\sigma} + \partial^2/\partial x_\mu\partial x_\sigma h_{\nu\rho} - \partial^2/\partial x_\mu\partial x_\rho h_{\nu\sigma} - \partial^2/\partial x_\nu\partial x_\sigma h_{\mu\rho}\right).
 $$
 
 Contraction gives the linearized Ricci tensor,
 
 $$
-R_{\mu\nu} = \tfrac{1}{2}\left(\partial/\partial x_\mu\,\sum_\lambda\partial/\partial x_\lambda h_{\lambda\nu} + \partial/\partial x_\nu\,\sum_\lambda\partial/\partial x_\lambda h_{\lambda\mu} - \Box h_{\mu\nu} - \partial^2/\partial x_\mu\partial x_\nu h\right), \qquad h = \sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu},
+\mathrm{Ric}_{\mu\nu} = \tfrac{1}{2}\left(\partial/\partial x_\mu\,\sum_\lambda\partial/\partial x_\lambda h_{\lambda\nu} + \partial/\partial x_\nu\,\sum_\lambda\partial/\partial x_\lambda h_{\lambda\mu} - \Box h_{\mu\nu} - \partial^2/\partial x_\mu\partial x_\nu h\right), \qquad h = \sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu},
 $$
 
-and the Ricci scalar is $R = \sum_{\mu,\nu}\eta_{\mu\nu}R_{\mu\nu} = \sum_{\mu,\lambda}\partial^2/\partial x_\mu\partial x_\lambda h_{\lambda\mu} - \Box h$. The Riemann tensor is gauge invariant, and so therefore are $R_{\mu\nu}$ and $R$: they are constructed from the metric, which the relabelling does not change.
+and the Ricci scalar is $\mathrm{Ric} = \sum_{\mu,\nu}\eta_{\mu\nu}\mathrm{Ric}_{\mu\nu} = \sum_{\mu,\lambda}\partial^2/\partial x_\mu\partial x_\lambda h_{\lambda\mu} - \Box h$. The Riemann tensor is gauge invariant, and so therefore are $\mathrm{Ric}_{\mu\nu}$ and $\mathrm{Ric}$: they are constructed from the metric, which the relabelling does not change.
 
 ### The Trace-Reversal and the Field Equation
 
@@ -96,7 +96,7 @@ $$
 so that the operation is an involution up to sign: $h_{\mu\nu} = \bar{h}_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}\bar{h}$. In terms of $\bar{h}_{\mu\nu}$ the linearized Einstein tensor takes the compact form
 
 $$
-G_{\mu\nu} = R_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}R = \tfrac{1}{2}\left(\partial/\partial x_\mu\,\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\nu} + \partial/\partial x_\nu\,\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\mu} - \Box\bar{h}_{\mu\nu} - \eta_{\mu\nu}\sum_{\rho,\sigma}\partial^2/\partial x_\rho\partial x_\sigma\bar{h}_{\rho\sigma}\right).
+G_{\mu\nu} = \mathrm{Ric}_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}\mathrm{Ric} = \tfrac{1}{2}\left(\partial/\partial x_\mu\,\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\nu} + \partial/\partial x_\nu\,\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\mu} - \Box\bar{h}_{\mu\nu} - \eta_{\mu\nu}\sum_{\rho,\sigma}\partial^2/\partial x_\rho\partial x_\sigma\bar{h}_{\rho\sigma}\right).
 $$
 
 The **harmonic gauge** is the condition
@@ -117,7 +117,7 @@ $$
 \Box\bar{h}_{\mu\nu} = 0 .
 $$
 
-The harmonic condition is preserved by the residual gauge transformations with $\Box\xi_\nu = 0$, exactly as the Lorenz condition of electromagnetism is preserved by residual gauge functions with $\Box\Gamma = 0$. The analogy with electromagnetism is close: $\bar{h}_{\mu\nu}$ plays the role of the potential, $R_{\mu\nu\rho\sigma}$ the role of the field strength, and the harmonic condition the role of the Lorenz gauge. It is not exact, and the differences are the subject of the rest of the article.
+The harmonic condition is preserved by the residual gauge transformations with $\Box\xi_\nu = 0$, exactly as the Lorenz condition of electromagnetism is preserved by residual gauge functions with $\Box\Gamma = 0$. The analogy with electromagnetism is close: $\bar{h}_{\mu\nu}$ plays the role of the potential, $\mathrm{Riem}_{\mu\nu\rho\sigma}$ the role of the field strength, and the harmonic condition the role of the Lorenz gauge. It is not exact, and the differences are the subject of the rest of the article.
 
 ### The Plane Wave
 
@@ -127,7 +127,7 @@ $$
 h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x_\lambda), \qquad \sum_{\mu,\nu}\eta_{\mu\nu}k_\mu k_\nu = 0,
 $$
 
-with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $\sum_\mu k_\mu A_{\mu\nu} = 0$ and $\sum_{\mu,\nu}\eta_{\mu\nu}A_{\mu\nu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (ct', x, y, z)$, so that the phase is $\omega(z/c - t')$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $R_{\mu\nu} = 0$, while $R_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
+with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $\sum_\mu k_\mu A_{\mu\nu} = 0$ and $\sum_{\mu,\nu}\eta_{\mu\nu}A_{\mu\nu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (ct', x, y, z)$, so that the phase is $\omega(z/c - t')$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\mu\nu} = 0$, while $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
 
 This is the theory that the framework's frame route will now be asked to contain.
 
@@ -277,19 +277,19 @@ There is a second, smaller point carried by the frame language. The local Lorent
 
 ## The Gauge-Invariant Field Strength
 
-The field strength of the linearized graviton is the linearized Riemann tensor, and its defining property is gauge invariance. Under $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\xi_\nu - \partial/\partial x_\nu\,\xi_\mu$ each of the four terms of $R_{\mu\nu\rho\sigma}$ is replaced by two terms, and the eight resulting third-derivative terms cancel in pairs. For example, the term $-\partial^3/\partial x_\nu\partial x_\rho\partial x_\mu\,\xi_\sigma$ produced by $\partial^2/\partial x_\nu\partial x_\rho h_{\mu\sigma}$ cancels the term $+\partial^3/\partial x_\mu\partial x_\rho\partial x_\nu\,\xi_\sigma$ produced by $-\partial^2/\partial x_\mu\partial x_\rho h_{\nu\sigma}$, because the two differ only by the order of the three derivatives. The other three components of $\xi$ cancel the same way, and the result is $\delta R_{\mu\nu\rho\sigma} = 0$. This was also checked numerically on a randomly generated $h$ and a randomly generated smooth $\xi$, with the four-index tensor agreeing before and after the gauge transformation to the accuracy of the finite differences.
+The field strength of the linearized graviton is the linearized Riemann tensor, and its defining property is gauge invariance. Under $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\xi_\nu - \partial/\partial x_\nu\,\xi_\mu$ each of the four terms of $\mathrm{Riem}_{\mu\nu\rho\sigma}$ is replaced by two terms, and the eight resulting third-derivative terms cancel in pairs. For example, the term $-\partial^3/\partial x_\nu\partial x_\rho\partial x_\mu\,\xi_\sigma$ produced by $\partial^2/\partial x_\nu\partial x_\rho h_{\mu\sigma}$ cancels the term $+\partial^3/\partial x_\mu\partial x_\rho\partial x_\nu\,\xi_\sigma$ produced by $-\partial^2/\partial x_\mu\partial x_\rho h_{\nu\sigma}$, because the two differ only by the order of the three derivatives. The other three components of $\xi$ cancel the same way, and the result is $\delta \mathrm{Riem}_{\mu\nu\rho\sigma} = 0$. This was also checked numerically on a randomly generated $h$ and a randomly generated smooth $\xi$, with the four-index tensor agreeing before and after the gauge transformation to the accuracy of the finite differences.
 
 The field strength is therefore gauge invariant, exactly as the electromagnetic $F_{\mu\nu} = \partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu$ is. It is also further from the algebra than $h$ is. The Riemann tensor has four indices; in four dimensions it has twenty independent components, and it is not a biquaternion, not a material four-vector, and not a rank-two object of any kind. The framework cannot hold it as a single element.
 
 What the framework can do is hold its **bivector structure index by index**. For each antisymmetric pair $(\mu,\nu)$ on the base, the second pair $(\rho,\sigma)$ is antisymmetric and can be contracted with the basis to give an element of the Lie subspace,
 
 $$
-\tilde Q_{3\mu\nu} = \tfrac{1}{2}\sum_{\rho,\sigma} R_{\mu\nu\rho\sigma}\,\bar{\varepsilon}_\rho\varepsilon_\sigma .
+\tilde Q_{3\mu\nu} = \tfrac{1}{2}\sum_{\rho,\sigma} \mathrm{Riem}_{\mu\nu\rho\sigma}\,\bar{\varepsilon}_\rho\varepsilon_\sigma .
 $$
 
 Because antisymmetrization in $\rho\sigma$ is antisymmetrization in the product of two material basis vectors, each $\tilde Q_{3\mu\nu}$ is a complex pure vector, hence an element of the six-dimensional bivector subspace that the parent article identifies with $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$. The gravitational field strength is thus a **Lie-algebra-valued two-form** on the manifold, and every value it takes sits inside $\mathbb{B}$. This is the exact structural analogue of the electromagnetic field strength: the gauge article records that the electromagnetic $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is a single bivector, the curvature of an abelian connection, while the gravitational $\tilde Q_{3\mu\nu}$ is a bivector-valued two-form, the curvature of a connection valued in the non-abelian Lorentz Lie algebra. The identification of $\tilde Q_{3\mu\nu}$ with the curvature of the torsion-free spin connection is the standard tetrad identification, and the parent article records that metric compatibility and the vanishing of torsion are conditions the algebra does not select. The algebra supplies the home for each bivector value; it does not supply the object, because the object is built from $h$, which is not in the algebra.
 
-The propagating, gauge-invariant content of the curvature is its **Weyl part**, the ten-component tensor obtained from $R_{\mu\nu\rho\sigma}$ by removing the Ricci and scalar traces. In vacuum the two coincide, because the Ricci part vanishes, and the propagating degrees of freedom are in the Weyl tensor. Its encoding in the biquaternion framework — through the self-dual and anti-self-dual bivectors, or through the five complex Newman–Penrose scalars $\Psi_0, \dots, \Psi_4$ — is a separate problem, and it is not attempted here; it is recorded among the open questions.
+The propagating, gauge-invariant content of the curvature is its **Weyl part**, the ten-component tensor obtained from $\mathrm{Riem}_{\mu\nu\rho\sigma}$ by removing the Ricci and scalar traces. In vacuum the two coincide, because the Ricci part vanishes, and the propagating degrees of freedom are in the Weyl tensor. Its encoding in the biquaternion framework — through the self-dual and anti-self-dual bivectors, or through the five complex Newman–Penrose scalars $\Psi_0, \dots, \Psi_4$ — is a separate problem, and it is not attempted here; it is recorded among the open questions.
 
 ## The Field Equation and the Trace-Reversal Step
 
@@ -347,10 +347,10 @@ $$
 with the other off-diagonal components zero. The wave vector is null, $\sum_{\mu,\nu}\eta_{\mu\nu}k_\mu k_\nu = 0$, and the amplitude is transverse, $\sum_\mu k_\mu A_{\mu\nu} = 0$, and traceless, $\sum_{\mu,\nu}\eta_{\mu\nu}A_{\mu\nu} = 0$. A direct computation gives
 
 $$
-R_{\mu\nu} = 0, \qquad R_{\mu\nu\rho\sigma} \ne 0,
+\mathrm{Ric}_{\mu\nu} = 0, \qquad \mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0,
 $$
 
-with, for example, $R_{0101} = -R_{0202} \ne 0$ while $R_{0303} = 0$. The curvature is nonzero, so the wave is not pure gauge; the Ricci tensor vanishes, so it solves the vacuum equation. This was checked numerically for both a plus-polarization amplitude ($A_{11} = -A_{22}$) and the corresponding cross-polarization amplitude ($A_{12} = A_{21}$), with the same qualitative result in each case: the Ricci tensor vanishes and the Riemann tensor does not.
+with, for example, $\mathrm{Riem}_{0101} = -\mathrm{Riem}_{0202} \ne 0$ while $\mathrm{Riem}_{0303} = 0$. The curvature is nonzero, so the wave is not pure gauge; the Ricci tensor vanishes, so it solves the vacuum equation. This was checked numerically for both a plus-polarization amplitude ($A_{11} = -A_{22}$) and the corresponding cross-polarization amplitude ($A_{12} = A_{21}$), with the same qualitative result in each case: the Ricci tensor vanishes and the Riemann tensor does not.
 
 The two independent amplitudes are the two polarizations of the linear theory. In the framework's variables they are carried entirely by the **traceless part** of $\delta\tilde{E}_\mu$; the trace part of the frame perturbation carries only the trace $h$, and, by the result of the section above, the trace is the only thing the natural single-biquaternion packaging can see. So the two propagating degrees of freedom of the graviton are precisely the components that a single biquaternion cannot represent. This is the clearest statement of the article's structural finding: the framework carries the graviton as a frame perturbation, and the algebra element into which one might try to compress it retains only the trace, which is not propagating in vacuum.
 
@@ -419,9 +419,9 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $iR_{e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{e_k}R_{e_y}$, $L_{a}R_{b}$ | Frame cells, $L_a$ and $R_b$ the left and right multiplications |
 | $\tilde Q_{\mathrm d} \in \mathbb{M}_-$ | Gauge four-vector, $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial x_\mu\,\tilde Q_{\mathrm d}$ |
 | $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\xi_\nu - \partial/\partial x_\nu\,\xi_\mu$, $\xi_\nu = \langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | Linearized gauge transformation |
-| $R_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |
-| $R_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Ricci tensor and Einstein tensor |
-| $\tilde Q_{3\mu\nu} = \tfrac12\sum_{\rho\sigma}R_{\mu\nu\rho\sigma}\bar{\varepsilon}_\rho\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
+| $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |
+| $\mathrm{Ric}_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Ricci tensor and Einstein tensor |
+| $\tilde Q_{3\mu\nu} = \tfrac12\sum_{\rho\sigma}\mathrm{Riem}_{\mu\nu\rho\sigma}\bar{\varepsilon}_\rho\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
 | $\sum_\lambda\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0$ | Harmonic gauge |
 | $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ | Linearized Einstein equation |
 | $A_{\mu\nu}$, plus/cross | Plane-wave amplitude; the two polarizations |

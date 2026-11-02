@@ -110,23 +110,23 @@ Two features of $\mathcal{Z}$ are used below. First, it is the common boundary o
 
 ### Invariance of the Biquaternion Norm
 
-The Lorentz group acts on the material sector by rotor conjugation with the Lorentz rotor $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\tilde U_{\mathrm b}$ is the Hermitian positive boost and $\tilde u_{\mathrm r}$ the rotation,
+The Lorentz group acts on the material sector by rotor conjugation with the Lorentz rotor $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\tilde U_{\mathrm b}$ is the Hermitian positive boost and $\tilde u_{\mathrm r}$ the rotation,
 
 $$
-\tilde{R} \;\longmapsto\; \tilde{R}_2 = \tilde U_{\mathrm L}\,\tilde{R}\,\tilde U_{\mathrm L}^{*},
+\tilde{R} \;\longmapsto\; \tilde{R}_2 = \tilde U_{\mathrm{Lor}}\,\tilde{R}\,\tilde U_{\mathrm{Lor}}^{*},
 \qquad
-\tilde U_{\mathrm L} \in \mathbb{B}, \quad \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t,
+\tilde U_{\mathrm{Lor}} \in \mathbb{B}, \quad \tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural} = e_t,
 $$
 
-as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $\langle\tilde{Q}_1\tilde Q_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and complex conjugation supplies $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}^*$. Hence
+as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $\langle\tilde{Q}_1\tilde Q_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and complex conjugation supplies $\langle\tilde U_{\mathrm{Lor}}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm{Lor}}\rangle_{\natural}^*$. Hence
 
 $$
-\boxed{\;\langle\tilde{R}_2\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural} \, \langle\tilde{R}\rangle_{\natural} \, \langle\tilde U_{\mathrm L}^{*}\rangle_{\natural}
-= \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}\rangle_{\natural}^*
+\boxed{\;\langle\tilde{R}_2\rangle_{\natural} = \langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} \, \langle\tilde{R}\rangle_{\natural} \, \langle\tilde U_{\mathrm{Lor}}^{*}\rangle_{\natural}
+= \langle\tilde U_{\mathrm{Lor}}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}\,\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural}^*
 = \langle\tilde{R}\rangle_{\natural}\;}
 $$
 
-because $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$ as a coefficient, that is $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ in $\mathbb{C}$. The interval is invariant, and with it the sign of the interval. A rotor cannot map a timelike displacement to a spacelike one, or a null displacement to a non-null one; the three causal classes are invariant under every Lorentz transformation. This is the algebraic form of the statement that the light cone is preserved, and it is the first sense in which the cone is a barrier: the group of allowed changes of frame cannot move a displacement across it.
+because $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = e_t$ as a coefficient, that is $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = 1$ in $\mathbb{C}$. The interval is invariant, and with it the sign of the interval. A rotor cannot map a timelike displacement to a spacelike one, or a null displacement to a non-null one; the three causal classes are invariant under every Lorentz transformation. This is the algebraic form of the statement that the light cone is preserved, and it is the first sense in which the cone is a barrier: the group of allowed changes of frame cannot move a displacement across it.
 
 ### The Three Regions Are Orbits
 
@@ -329,15 +329,15 @@ $$
 p \preceq q \quad\Longleftrightarrow\quad f(p) \preceq f(q),
 $$
 
-is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde{R} \mapsto \tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$ with $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$, and the translation is the addition of a fixed displacement $\tilde R_{\mathrm d} \in \mathbb{M}_-$:
+is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde{R} \mapsto \tilde U_{\mathrm{Lor}}\tilde{R}\tilde U_{\mathrm{Lor}}^{*}$ with $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = e_t$, and the translation is the addition of a fixed displacement $\tilde R_{\mathrm d} \in \mathbb{M}_-$:
 
 $$
-\tilde{R} \;\longmapsto\; \tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*} + \tilde R_{\mathrm d}.
+\tilde{R} \;\longmapsto\; \tilde U_{\mathrm{Lor}}\tilde{R}\tilde U_{\mathrm{Lor}}^{*} + \tilde R_{\mathrm d}.
 $$
 
 The theorem says that the cone, together with the time orientation, determines the allowed transformations up to these operations. Nothing beyond the causal order is needed to recover the kinematics of the frame changes; the barrier is not only preserved by the relativity group, it characterizes it.
 
-Within the full Lorentz group, the proper orthochronous component is the one realized by the rotor conjugation with $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$, namely $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$. This is the identity component, and it is the component that preserves the distinction between future and past: a composition of boosts and spatial rotations maps a future-directed timelike displacement to a future-directed timelike displacement, never to a past-directed one. The discrete transformations that exchange the sheets — time reversal and the combined parity–time reversal — are not rotor conjugations, and in the biquaternion interpretation they are not elements of the connected group at all. The immediate physical consequence is that a process built from continuous changes of frame cannot reverse a causal arrow, and the two timelike components of the complement of $\mathcal{Z}$, though related by an inadmissible reflection, are not connected by any allowed motion.
+Within the full Lorentz group, the proper orthochronous component is the one realized by the rotor conjugation with $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = e_t$, namely $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$. This is the identity component, and it is the component that preserves the distinction between future and past: a composition of boosts and spatial rotations maps a future-directed timelike displacement to a future-directed timelike displacement, never to a past-directed one. The discrete transformations that exchange the sheets — time reversal and the combined parity–time reversal — are not rotor conjugations, and in the biquaternion interpretation they are not elements of the connected group at all. The immediate physical consequence is that a process built from continuous changes of frame cannot reverse a causal arrow, and the two timelike components of the complement of $\mathcal{Z}$, though related by an inadmissible reflection, are not connected by any allowed motion.
 
 ## The Barrier in Information-Theoretic Form
 
@@ -385,7 +385,7 @@ The causal structure of the material sector $\mathbb{M}_-$ is the structure of t
 
 2. **The causal order.** The relation $p \preceq q$, defined by $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ with $\Delta t' \ge 0$, is a partial order. Transitivity follows from the triangle inequality: a sum of future-directed nonspacelike displacements is future-directed nonspacelike, with equality in $\langle\cdot\rangle_{\natural}$ only for null segments that are parallel and equally oriented.
 
-3. **Invariance.** The biquaternion norm is invariant under the rotor conjugation, $\langle\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$ for $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$, so the causal classes are invariant, and the invariant strata — the two sheets of the null cone, the two timelike sheets of a fixed biquaternion norm, and the spacelike region of that biquaternion norm — are the orbits of the restricted Lorentz group.
+3. **Invariance.** The biquaternion norm is invariant under the rotor conjugation, $\langle\tilde U_{\mathrm{Lor}}\tilde{R}\tilde U_{\mathrm{Lor}}^{*}\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$ for $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = e_t$, so the causal classes are invariant, and the invariant strata — the two sheets of the null cone, the two timelike sheets of a fixed biquaternion norm, and the spacelike region of that biquaternion norm — are the orbits of the restricted Lorentz group.
 
 4. **The topological barrier.** The complement of the cone has three connected components, and $\langle\cdot\rangle_{\natural}$ can change sign along a continuous path only at the cone. A continuous causal process therefore reaches the elsewhere only by leaving the cone.
 
@@ -419,7 +419,7 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $p \preceq q$ | Causal order: $\langle\tilde{Q}_{qp}\rangle_{\natural}\le 0$ and $\Delta t'\ge 0$ |
 | $J^+(p)$, $J^-(p)$, $E(p)$ | Causal future, causal past, and elsewhere of $p$ |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=e_t$ | Boost rotor (unit-norm biquaternion) |
-| $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$ | Rotor conjugation |
+| $\tilde{R}\mapsto\tilde U_{\mathrm{Lor}}\tilde{R}\tilde U_{\mathrm{Lor}}^{*}$ | Rotor conjugation |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Four-velocity |
 | $\beta = |\vec v|/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\psi$, $\tanh\psi=\beta$ | Rapidity |

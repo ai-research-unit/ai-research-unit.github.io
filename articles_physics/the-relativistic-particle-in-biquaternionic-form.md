@@ -162,14 +162,14 @@ which is the subject of the penultimate section.
 A Lorentz transformation acts on the material sector by **rotor conjugation**,
 
 $$
-\tilde{R}\ \longmapsto\ \tilde U_{\mathrm L}\,\tilde{R}\,\tilde U_{\mathrm L}^{*},
+\tilde{R}\ \longmapsto\ \tilde U_{\mathrm{Lor}}\,\tilde{R}\,\tilde U_{\mathrm{Lor}}^{*},
 \qquad
-\tilde U_{\mathrm L}\in\mathbb{B},
+\tilde U_{\mathrm{Lor}}\in\mathbb{B},
 \qquad
-\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t,
+\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural} = e_t,
 $$
 
-with $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
+with $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
 
 $$
 \tilde U_{\mathrm b}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
@@ -212,21 +212,21 @@ $$
 The sign is fixed by the requirement that a free particle move forward in time with positive energy, and the square root is real on a causal worldline by the definition of the proper time. In terms of the coordinate velocity the Lagrangian is
 
 $$
-L(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma} .
+\mathrm{Lag}(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma} .
 $$
 
 The canonical momentum conjugate to $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the vector part of the four-momentum,
 
 $$
-\frac{\partial L}{\partial\vec v}
+\frac{\partial \mathrm{Lag}}{\partial\vec v}
 = -mc^2\cdot\frac{-\vec v/c^2}{\sqrt{1-\vec v^2/c^2}}
 = \gamma m\vec v = \vec p,
 $$
 
-so the free Lagrangian's canonical momentum is the physical momentum. Its Legendre transform is the free energy $E = \vec p\cdot\vec v - L = \gamma mc^2$, and the equation of motion is the vanishing of the Euler–Lagrange derivative,
+so the free Lagrangian's canonical momentum is the physical momentum. Its Legendre transform is the free energy $E = \vec p\cdot\vec v - \mathrm{Lag} = \gamma mc^2$, and the equation of motion is the vanishing of the Euler–Lagrange derivative,
 
 $$
-\frac{d}{dt'}\frac{\partial L}{\partial\vec v} - \left(\frac{\partial L}{\partial x}\vec e_x+\frac{\partial L}{\partial y}\vec e_y+\frac{\partial L}{\partial z}\vec e_z\right) = \frac{d\vec p}{dt'} = 0 ,
+\frac{d}{dt'}\frac{\partial \mathrm{Lag}}{\partial\vec v} - \left(\frac{\partial \mathrm{Lag}}{\partial x}\vec e_x+\frac{\partial \mathrm{Lag}}{\partial y}\vec e_y+\frac{\partial \mathrm{Lag}}{\partial z}\vec e_z\right) = \frac{d\vec p}{dt'} = 0 ,
 $$
 
 so the free four-momentum $\tilde{P} = m\tilde{V}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,
@@ -283,7 +283,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 
 **Supplied by the algebra.** The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $\langle\cdot\rangle_{\natural}$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{M}_-$; the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is a level set of the algebra's own form.
 
-**Transcribed from standard physics.** The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $L = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.
+**Transcribed from standard physics.** The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $\mathrm{Lag} = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.
 
 **Interpretation.** The interpretation of $\mathbb{M}_-$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles *Introduction to the Biquaternion Universe* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.
 
@@ -343,7 +343,7 @@ $$
 S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
 = -mc^2\int\frac{dt'}{\gamma},
 \qquad
-L(\vec v) = -\frac{mc^2}{\gamma},
+\mathrm{Lag}(\vec v) = -\frac{mc^2}{\gamma},
 $$
 
 whose canonical momentum is $\vec p = \gamma m\vec v$ and whose equation of motion is $\tilde{P} = \mathrm{const}$. The non-relativistic limit gives $\tilde{V} = ic\,e_t + \vec v$, $E = mc^2 + \vec p^2/2m$ and $\langle\tilde{P}\rangle_{\natural} = -m^2c^2 + O(v^4/c^2)$.
@@ -369,8 +369,8 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $E = \gamma mc^2$, $\vec p = \gamma m\vec v$ | Energy and momentum |
 | $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Mass-shell relation |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ | Boost rotor, in $\mathbb{M}_+$ |
-| $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
-| $S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$, $L = -mc^2/\gamma$ | Free action and Lagrangian |
+| $\tilde{R}\mapsto\tilde U_{\mathrm{Lor}}\tilde{R}\tilde U_{\mathrm{Lor}}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$, $\mathrm{Lag} = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

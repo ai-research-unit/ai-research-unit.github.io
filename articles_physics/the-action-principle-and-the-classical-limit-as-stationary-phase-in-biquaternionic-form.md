@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Two statements are joined in this article. The first is the **action principle**: the physical trajectory of a classical system is the trajectory at which the action $S=\int L\,dt'$ is stationary, and the stationarity condition is the Euler–Lagrange equation. The second is the **classical limit as stationary phase**: when a sum over trajectories is weighted by the phase $\exp(iS/\hbar)$, the sum is dominated, as $\hbar\to0$, by the trajectories near the stationary ones, so that the classical paths are exactly the critical points of the action. The first statement is the classical theory; the second is the statement that the classical theory is the critical-point theory of an oscillatory integral.
+Two statements are joined in this article. The first is the **action principle**: the physical trajectory of a classical system is the trajectory at which the action $S=\int \mathrm{Lag}\,dt'$ is stationary, and the stationarity condition is the Euler–Lagrange equation. The second is the **classical limit as stationary phase**: when a sum over trajectories is weighted by the phase $\exp(iS/\hbar)$, the sum is dominated, as $\hbar\to0$, by the trajectories near the stationary ones, so that the classical paths are exactly the critical points of the action. The first statement is the classical theory; the second is the statement that the classical theory is the critical-point theory of an oscillatory integral.
 
 This article develops both in the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The second statement is not a quantisation. An oscillatory integral with a real phase and a large parameter is a classical object, and its asymptotic evaluation is a theorem of analysis (the stationary-phase lemma of Kelvin, developed by many hands). What the classical limit adds is an identification: the critical-point equations of the action are the equations of motion. This article stays on that side of the line. No state space, no operators, and no commutator appear; the symbol $\hbar$ enters only as the inverse scale of the phase, as the parameter of an asymptotic expansion, and nowhere as a quantum of action attributed to a physical system. The companion articles of the sibling quantum category own the quantisation; here the phase is a bookkeeping device for a classical sum.
 
@@ -11,7 +11,7 @@ The biquaternion algebra contributes two things to the discussion.
 1. **The action is central-valued.** For a real-quaternion configuration the Lagrangian is central, so the action is a complex scalar and its phase is unambiguous. There is no ordering question in the exponent, and the stationary-phase construction applies directly.
 2. **The rotor action and its geodesic principle.** For a rotor-valued configuration — a path in the group of unit real quaternions — the action built from the biquaternion norm of the velocity is the energy of a geodesic on the group, and the classical path is a one-parameter subgroup. This is the first place where the algebra's noncommutativity produces the classical equations rather than merely expressing them, and it is the bridge to the rigid-body article.
 
-The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial L/\partial\left(d\tilde q/dt'\right)$, the phase-space biquaternion is $\tilde Q_3=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde q_3^{\natural}\tilde q_4)=\sum_\mu q_{3\mu} q_{4\mu}$. The rotor is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, and it acts by conjugation $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$.
+The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)$, the phase-space biquaternion is $\tilde Q_3=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde q_3^{\natural}\tilde q_4)=\sum_\mu q_{3\mu} q_{4\mu}$. The rotor is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, and it acts by conjugation $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$.
 
 The companion articles used below are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the action, the Euler–Lagrange equation, the Legendre transform, and the phase-space biquaternion.
@@ -23,13 +23,13 @@ The companion articles used below are:
 
 ### The Configuration-Space Action
 
-For a real-quaternion configuration $\tilde q(t')$ of a system with Lagrangian $L(\tilde q,d\tilde q/dt',t')$, the action is the central-valued functional
+For a real-quaternion configuration $\tilde q(t')$ of a system with Lagrangian $\mathrm{Lag}(\tilde q,d\tilde q/dt',t')$, the action is the central-valued functional
 
 $$
-S[\tilde q]=\int_{t'_1}^{t'_2}L(\tilde q,d\tilde q/dt',t')\,dt' .
+S[\tilde q]=\int_{t'_1}^{t'_2}\mathrm{Lag}(\tilde q,d\tilde q/dt',t')\,dt' .
 $$
 
-Because $L$ takes values in the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase $\exp(iS/\hbar)$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
+Because $\mathrm{Lag}$ takes values in the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase $\exp(iS/\hbar)$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
 
 ### The Domain of the Principle: Discrete and Continuous
 
@@ -56,35 +56,35 @@ $$
 
 whose Euler–Lagrange equation is $d^2q/d{t'}^2+\gamma\,dq/dt'+\omega_0^2q=0$, verified to $1.3\times10^{-9}$ along the damped motion. The price is that $L_t$ is neither $T-V$ nor invariant under time translation, so the quantity it would call the energy is not conserved. The plain framework can be made to hold, but it stops being one in which energy means what it meant.
 
-**Herglotz's principle** is the systematic alternative, and it changes what the action *is* rather than adding a term to it. The action is defined not by the integral $\int L\,dt'$ but as the solution of the differential equation
+**Herglotz's principle** is the systematic alternative, and it changes what the action *is* rather than adding a term to it. The action is defined not by the integral $\int \mathrm{Lag}\,dt'$ but as the solution of the differential equation
 
 $$
-\left(dS/dt'\right)(t')=L(t',\tilde q,d\tilde q/dt',S),\qquad S(t'_0)=S_0 ,
+\left(dS/dt'\right)(t')=\mathrm{Lag}(t',\tilde q,d\tilde q/dt',S),\qquad S(t'_0)=S_0 ,
 $$
 
 so that the Lagrangian may depend on the action, and the requirement is that this $S$ be stationary. The stationarity condition is the **Euler–Lagrange–Herglotz equation**
 
 $$
-\frac{d}{dt'}\frac{\partial L}{\partial\left(d\tilde q/dt'\right)}-\frac{\partial L}{\partial\tilde q}
-=\frac{\partial L}{\partial S}\,\frac{\partial L}{\partial\left(d\tilde q/dt'\right)},
+\frac{d}{dt'}\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)}-\frac{\partial \mathrm{Lag}}{\partial\tilde q}
+=\frac{\partial \mathrm{Lag}}{\partial S}\,\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)},
 $$
 
-whose right-hand side carries the dissipation and which returns the Euler–Lagrange equation of this article when $\partial L/\partial S=0$. The damped oscillator is the standard illustration: with
+whose right-hand side carries the dissipation and which returns the Euler–Lagrange equation of this article when $\partial \mathrm{Lag}/\partial S=0$. The damped oscillator is the standard illustration: with
 
 $$
-L=\tfrac12\left(dq/dt'\right)^{2}-\tfrac12\omega_0^2q^2-\gamma S,\qquad \,dS/dt'=L ,
+\mathrm{Lag}=\tfrac12\left(dq/dt'\right)^{2}-\tfrac12\omega_0^2q^2-\gamma S,\qquad \,dS/dt'=\mathrm{Lag} ,
 $$
 
-the equation of motion is $d^2q/d{t'}^2+\gamma\,dq/dt'+\omega_0^2q=0$, matching the analytic damped solution to $1.7\times10^{-14}$, while the same $L$ evaluated on the *undamped* motion leaves a residual of $0.30$. The $S$-dependence is what produces the damping, and the check separates the two motions rather than confirming both.
+the equation of motion is $d^2q/d{t'}^2+\gamma\,dq/dt'+\omega_0^2q=0$, matching the analytic damped solution to $1.7\times10^{-14}$, while the same $\mathrm{Lag}$ evaluated on the *undamped* motion leaves a residual of $0.30$. The $S$-dependence is what produces the damping, and the check separates the two motions rather than confirming both.
 
-**What replaces the energy.** Dissipation does not remove the conservation law; it weights it. For a time-translation symmetry the conserved quantity acquires the exponential of $\int\partial L/\partial S$,
+**What replaces the energy.** Dissipation does not remove the conservation law; it weights it. For a time-translation symmetry the conserved quantity acquires the exponential of $\int\partial \mathrm{Lag}/\partial S$,
 
 $$
-\exp(\gamma t')\left(L-dq/dt'\,\frac{\partial L}{\partial\left(dq/dt'\right)}\right)
+\exp(\gamma t')\left(\mathrm{Lag}-dq/dt'\,\frac{\partial \mathrm{Lag}}{\partial\left(dq/dt'\right)}\right)
 =-\exp(\gamma t')\left(\tfrac12\left(dq/dt'\right)^{2}+\tfrac12\omega_0^2q^2+\gamma S\right),
 $$
 
-which for the damped oscillator is conserved to $3.0\times10^{-14}$ while the plain energy $\tfrac12\left(dq/dt'\right)^{2}+\tfrac12\omega_0^2q^2$ decays from $0.500$ to $0.075$. In Hamiltonian form the same structure is a **contact** Hamiltonian system on the extended space $(\tilde q,\tilde p,S)$. The momentum and Hamiltonian are the usual Legendre data, $p_i=\partial L/\partial\left(dq_{i}/dt'\right)$ and $H=\sum_ip_i\,dq_{i}/dt'-L$, and the equations
+which for the damped oscillator is conserved to $3.0\times10^{-14}$ while the plain energy $\tfrac12\left(dq/dt'\right)^{2}+\tfrac12\omega_0^2q^2$ decays from $0.500$ to $0.075$. In Hamiltonian form the same structure is a **contact** Hamiltonian system on the extended space $(\tilde q,\tilde p,S)$. The momentum and Hamiltonian are the usual Legendre data, $p_i=\partial \mathrm{Lag}/\partial\left(dq_{i}/dt'\right)$ and $H=\sum_ip_i\,dq_{i}/dt'-\mathrm{Lag}$, and the equations
 
 $$
 dq_{i}/dt'=\frac{\partial H}{\partial p_i},\qquad
@@ -92,24 +92,24 @@ dq_{i}/dt'=\frac{\partial H}{\partial p_i},\qquad
 \,dS/dt'=\sum_ip_i\frac{\partial H}{\partial p_i}-H
 $$
 
-reduce to Hamilton's equations when $\partial H/\partial S=0$; for the damped oscillator $H=\tfrac12p^2+\tfrac12\omega_0^2q^2+\gamma S$ reproduces the damped motion to $1.3\times10^{-11}$. Since $L$ is central-valued, so is $S$, and the extended space is the configuration and momentum biquaternions with one central coordinate adjoined: the algebra accommodates the construction without enlargement. The class covered is wider than damping — $d^2q/d{t'}^2+f(q)\left(dq/dt'\right)^{2}+g(t')dq/dt'+h(q)=0$ is the Euler–Lagrange–Herglotz equation of $L=\tfrac12\left(dq/dt'\right)^{2}-[2f(q)dq/dt'+g(t')]S-U(q)$ for the $U$ solving $dU/dq+2fU=h$, verified to $1.3\times10^{-15}$, with the Lane–Emden equation among its special cases. Herglotz's principle is the variational formulation of the non-conservative equations, not a workaround for them.
+reduce to Hamilton's equations when $\partial H/\partial S=0$; for the damped oscillator $H=\tfrac12p^2+\tfrac12\omega_0^2q^2+\gamma S$ reproduces the damped motion to $1.3\times10^{-11}$. Since $\mathrm{Lag}$ is central-valued, so is $S$, and the extended space is the configuration and momentum biquaternions with one central coordinate adjoined: the algebra accommodates the construction without enlargement. The class covered is wider than damping — $d^2q/d{t'}^2+f(q)\left(dq/dt'\right)^{2}+g(t')dq/dt'+h(q)=0$ is the Euler–Lagrange–Herglotz equation of $\mathrm{Lag}=\tfrac12\left(dq/dt'\right)^{2}-[2f(q)dq/dt'+g(t')]S-U(q)$ for the $U$ solving $dU/dq+2fU=h$, verified to $1.3\times10^{-15}$, with the Lane–Emden equation among its special cases. Herglotz's principle is the variational formulation of the non-conservative equations, not a workaround for them.
 
 ### The First Variation and the Boundary Term
 
 The first variation of $S$, with the gradient notation of the preceding article, is
 
 $$
-\delta S=\int_{t'_1}^{t'_2}\mathrm{Sc}\!\left[\left(\partial L/\partial\tilde q-\frac{d}{dt'}\partial L/\partial\left(d\tilde q/dt'\right)\right)^{\natural}\,\delta\tilde q\right]dt'
-+\left[\mathrm{Sc}\!\left((\partial L/\partial\left(d\tilde q/dt'\right))^{\natural}\,\delta\tilde q\right)\right]_{t'_1}^{t'_2}.
+\delta S=\int_{t'_1}^{t'_2}\mathrm{Sc}\!\left[\left(\partial \mathrm{Lag}/\partial\tilde q-\frac{d}{dt'}\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)\right)^{\natural}\,\delta\tilde q\right]dt'
++\left[\mathrm{Sc}\!\left((\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right))^{\natural}\,\delta\tilde q\right)\right]_{t'_1}^{t'_2}.
 $$
 
 The bulk term vanishes for an arbitrary variation if and only if the **Euler–Lagrange equation** holds,
 
 $$
-\boxed{\;\frac{d}{dt'}\frac{\partial L}{\partial\left(d\tilde q/dt'\right)}-\frac{\partial L}{\partial\tilde q}=0\;},
+\boxed{\;\frac{d}{dt'}\frac{\partial \mathrm{Lag}}{\partial\left(d\tilde q/dt'\right)}-\frac{\partial \mathrm{Lag}}{\partial\tilde q}=0\;},
 $$
 
-which is the four real equations of the preceding article. The boundary term is the part that does not vanish when the endpoints are free. Writing $\tilde p=\partial L/\partial\left(d\tilde q/dt'\right)$, it is
+which is the four real equations of the preceding article. The boundary term is the part that does not vanish when the endpoints are free. Writing $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)$, it is
 
 $$
 \delta S_{\text{bdry}}=\left[\mathrm{Sc}\!\left(\tilde p^{\natural}\,\delta\tilde q\right)\right]_{t'_1}^{t'_2}
@@ -165,7 +165,7 @@ $$
 \frac{d}{dt'}\left[\mathrm{Sc}\!\left(\tilde p^{\natural}\,Q\right)-\Lambda\right]=0 .
 $$
 
-The conserved charge is read off the boundary term. For time translation, $Q=d\tilde q/dt'$ and $\Lambda=L$, giving the energy $H=\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-L$. For a configuration-space rotation with generator $\vec G$, $Q=[\vec G,\tilde q]$ and $\Lambda=0$, giving
+The conserved charge is read off the boundary term. For time translation, $Q=d\tilde q/dt'$ and $\Lambda=\mathrm{Lag}$, giving the energy $H=\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-\mathrm{Lag}$. For a configuration-space rotation with generator $\vec G$, $Q=[\vec G,\tilde q]$ and $\Lambda=0$, giving
 
 $$
 \mathrm{Sc}\!\left(\tilde p^{\natural}\,[\vec G,\tilde q]\right)=2\,\mathrm{Sc}\!\left(\vec G^{\natural}\,\tilde q\,\tilde p\right)=2\,\vec G\cdot\vec L ,
@@ -189,7 +189,7 @@ $$
 \delta^2S=\int\left\langle\delta\tilde q,\;\mathcal{J}\,\delta\tilde q\right\rangle dt' ,
 $$
 
-and $\mathcal{J}$ is the **Jacobi operator** of the problem. For a Lagrangian quadratic in the velocities, $L=\tfrac12 m \langle\,d\tilde q/dt'\rangle_{\natural}-V(\tilde q)$, the Jacobi operator is
+and $\mathcal{J}$ is the **Jacobi operator** of the problem. For a Lagrangian quadratic in the velocities, $\mathrm{Lag}=\tfrac12 m \langle\,d\tilde q/dt'\rangle_{\natural}-V(\tilde q)$, the Jacobi operator is
 
 $$
 \mathcal{J}\delta\tilde q=-m\,d^2(\delta\tilde q)/d{t'}^2-\frac{d^2V}{d\tilde q^2}(\tilde q)\,\delta\tilde q ,
@@ -348,11 +348,11 @@ The **characteristic function** $\mathcal{W}(\tilde q)$ of a time-independent pr
 
 The action principle and the classical limit as stationary phase take the following form in the biquaternion algebra.
 
-- The action $S[\tilde q]=\int L\,dt'$ is central-valued for a real-quaternion configuration, so its phase is unambiguous.
+- The action $S[\tilde q]=\int \mathrm{Lag}\,dt'$ is central-valued for a real-quaternion configuration, so its phase is unambiguous.
 - The principle is not restricted to finitely many coordinates: for a continuum the Lagrangian becomes a density and the Euler–Lagrange equations become field equations.
-- A non-conservative load cannot enter a potential, so no $T-V$ Lagrangian contains it and the plain form fails. The principle is then extended by virtual work, or replaced by **Herglotz's principle**, whose action solves $dS/dt'=L$ and whose Euler–Lagrange–Herglotz equation carries the dissipative term; the energy is replaced by a weighted conserved quantity, and the Hamiltonian form becomes a contact system on $(\tilde q,\tilde p,S)$.
+- A non-conservative load cannot enter a potential, so no $T-V$ Lagrangian contains it and the plain form fails. The principle is then extended by virtual work, or replaced by **Herglotz's principle**, whose action solves $dS/dt'=\mathrm{Lag}$ and whose Euler–Lagrange–Herglotz equation carries the dissipative term; the energy is replaced by a weighted conserved quantity, and the Hamiltonian form becomes a contact system on $(\tilde q,\tilde p,S)$.
 - The geodesic flow of the biquaternion-norm metric is a Hamiltonian flow, with Hamiltonian $H=\langle\tilde p\rangle_{\natural}/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.
-- Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt'}\partial L/\partial\left(d\tilde q/dt'\right)-\partial L/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.
+- Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt'}\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)-\partial \mathrm{Lag}/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dt'$ has Hamilton's equations as its critical-point equations.
 - The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/d{t'}^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\xi/d{t'}^2+\frac{d^2V}{d\tilde q^2}\,\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
 - The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt'\rangle_{\natural}dt'$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/d{t'}^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(t')=\tilde u(0)\exp(+\tfrac12\vec\omega_bt')$: the free rigid body's motion.
@@ -365,10 +365,10 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 
 | Symbol | Meaning |
 |---|---|
-| $S[\tilde q]=\int L\,dt'$ | Action (central-valued); in Herglotz's form it solves $dS/dt'=L$ and is state-dependent |
+| $S[\tilde q]=\int \mathrm{Lag}\,dt'$ | Action (central-valued); in Herglotz's form it solves $dS/dt'=\mathrm{Lag}$ and is state-dependent |
 | $\omega_0$, $\gamma$ | Oscillator frequency and damping coefficient |
 | $\mathcal{L}$, $u$, $\rho$, $\mathcal{T}$ | Lagrangian density; string displacement, density and tension of the continuum example |
-| $\tilde p=\partial L/\partial\left(d\tilde q/dt'\right)$ | Conjugate momentum |
+| $\tilde p=\partial \mathrm{Lag}/\partial\left(d\tilde q/dt'\right)$ | Conjugate momentum |
 | $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ | Symplectic potential (boundary term) |
 | $S_{\mathrm{ps}}=\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt')-H]dt'$ | Phase-space action |
 | $\delta^2S$ | Second variation |

@@ -339,7 +339,7 @@ $$
 The two Green's functions of the shifted operators are then obtained by applying the first-order operator to $g_\gamma$: the source gives
 
 $$
-\boxed{\;G^{\mathrm L}_\gamma(\lambda,z) = (D_3+L_{iz\gamma}-k)\,g_\gamma(\lambda,z)\;}
+\boxed{\;G^{\mathrm{Lor}}_\gamma(\lambda,z) = (D_3+L_{iz\gamma}-k)\,g_\gamma(\lambda,z)\;}
 $$
 
 for the left-multiplication case, obtained from $(D_3+L_{iz\gamma}-k)(D_3+L_{iz\gamma}+k) = -\Delta-2iz\gamma\cdot\nabla-\lambda^2$ with $\lambda^2=k^2-z^2$, and a **different** Faddeev Green's function
@@ -354,7 +354,7 @@ $$
 \lVert g_\gamma(\lambda,z)\rVert_{(L^{2,s}\to H^{\alpha,s})} \le C\,(\lambda+\lvert z\rvert)^{\alpha} .
 $$
 
-This last estimate is printed with the *opposite* dependence on $\lambda+\lvert z\rvert$ from the proposition above it — increasing where the earlier bound decreases — and the two ranges of $\alpha$ do not coincide. As printed, the second is not a smoothing estimate and the first is; the discrepancy is recorded here and in the companion `.context`, and the reciprocal is to be checked against Isozaki's paper before either bound is relied on. The theorem's preamble speaks of the two $G^{\mathrm L}_\gamma$ and $G^{\mathrm R}_\gamma$ while its three items are printed with $g_\gamma$, one more instance of the chapter's loose use of the two symbols; the bounds are meant for the Green's functions of the shifted operators, which is how they are read here. The chapter's closing sentence draws the conclusion of the whole construction: with Faddeev's Green's function the inverse problem can be attacked, and its solution $u$ may be assumed to have the structure $u=\exp(ik\cdot x)b$, which is the appropriate setting for optical coherence tomography.
+This last estimate is printed with the *opposite* dependence on $\lambda+\lvert z\rvert$ from the proposition above it — increasing where the earlier bound decreases — and the two ranges of $\alpha$ do not coincide. As printed, the second is not a smoothing estimate and the first is; the discrepancy is recorded here and in the companion `.context`, and the reciprocal is to be checked against Isozaki's paper before either bound is relied on. The theorem's preamble speaks of the two $G^{\mathrm{Lor}}_\gamma$ and $G^{\mathrm R}_\gamma$ while its three items are printed with $g_\gamma$, one more instance of the chapter's loose use of the two symbols; the bounds are meant for the Green's functions of the shifted operators, which is how they are read here. The chapter's closing sentence draws the conclusion of the whole construction: with Faddeev's Green's function the inverse problem can be attacked, and its solution $u$ may be assumed to have the structure $u=\exp(ik\cdot x)b$, which is the appropriate setting for optical coherence tomography.
 
 ## What the Source Establishes, Transcribes, and Does Not
 
@@ -369,7 +369,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 - The radiation condition of Proposition 7.3 in both forms, and the additional decay hypothesis in the zero-divisor case.
 - The Lippmann–Schwinger equation (8.5) and its equivalence with the differential problem.
 - The weak-singularity bounds, the compactness they give, the unique continuation principle and the uniqueness theorem.
-- Faddeev's decomposition, the Green's operator $g_\gamma$, Isozaki's bounds and the two Green's functions $G^{\mathrm L}_\gamma$ and $G^{\mathrm R}_\gamma$.
+- Faddeev's decomposition, the Green's operator $g_\gamma$, Isozaki's bounds and the two Green's functions $G^{\mathrm{Lor}}_\gamma$ and $G^{\mathrm R}_\gamma$.
 
 **Established, in the sense that it was recomputed here.**
 
@@ -427,7 +427,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | $L^{2,s}$, $H^{\alpha,s}$ | Weighted $L^2$ and weighted Sobolev spaces of the compactness and the bounds |
 | $k=\eta+t\gamma$, $\lambda^2=k^2-t^2$ | Faddeev's decomposition of the wave vector along a unit direction $\gamma$ |
 | $g_\gamma(\lambda,z)$ | Faddeev's Green's operator; symbol $(\xi^2+2z\gamma\cdot\xi-\lambda^2)^{-1}$, $z\in\mathbb{C}_+$ |
-| $G^{\mathrm L}_\gamma(\lambda,z)$, $G^{\mathrm R}_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
+| $G^{\mathrm{Lor}}_\gamma(\lambda,z)$, $G^{\mathrm R}_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
 
 ## Further Reading
 
