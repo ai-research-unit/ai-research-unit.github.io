@@ -342,12 +342,12 @@ $$
 the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict'$, the pair $(q_0, q_k) = (ict', x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm{Lor}}$, the components transform as
 
 $$
-q_{2\mu} = \sum_{\nu} L_{\mu\nu}\, q_{\nu},
+q_{2\mu} = \sum_{\nu} \Lambda_{\mu\nu}\, q_{\nu},
 \qquad
-L_{\mu\nu} = \mathrm{Sc}\!\left(\hat{\mathcal E}_\mu\,\tilde U_{\mathrm{Lor}}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm{Lor}}^{*}\right),
+\Lambda_{\mu\nu} = \mathrm{Sc}\!\left(\hat{\mathcal E}_\mu\,\tilde U_{\mathrm{Lor}}\,\mathcal{E}_{\nu}\,\tilde U_{\mathrm{Lor}}^{*}\right),
 $$
 
-and the matrix $L_{\mu\nu}$ is the ordinary Lorentz transformation matrix in the basis.
+and the matrix $\Lambda_{\mu\nu}$ is the ordinary Lorentz transformation matrix in the basis, the same one the opening line calls $\Lambda_{\mu\nu}$.
 
 This is the sense in which the framework "raises and lowers no indices": the metric sits in the coefficients and in the dual basis, and the transformation law is a matrix multiplication without a metric tensor in sight. The reciprocal basis is the device that makes the component formula look ordinary while the geometry stays in the algebra.
 
