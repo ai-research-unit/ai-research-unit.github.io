@@ -32,21 +32,21 @@ The framework results used here are those of the companion articles:
 
 $$
 \mathcal{L}_{W} \supset \frac{g}{\sqrt2}\,W^+_\mu\,
-\bar{\mathrm u}_{iL}\,iL_{e_\mu}R_{e_{\nu(\mu)}} V_{ij}\,d_{jL} + \text{h.c.},
+\bar{\mathrm u}_{iL}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} V_{ij}\,d_{jL} + \text{h.c.},
 \qquad \boxed{\;V = X_u^\dagger X_d\;},
 $$
 
-where the frame cells are $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$, with $L_{a}R_{b}\psi=a\psi b$ on the Dirac module, and $X_u$ and $X_d$ diagonalise the up- and down-type mass matrices. In the framework the mass matrices are flavour operators, $M_u=I_\Delta\otimes M_u^{\mathcal{F}}$ and $M_d=I_\Delta\otimes M_d^{\mathcal{F}}$, with the module factor common and the flavour factor carrying the generation dependence; the diagonalising matrices are $*$-unitary operators on $\mathcal{F}$, and $V$ is their relative rotation. The whole construction lives on $\mathcal{F}$.
+where the frame cells are $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$ on the Dirac module, and $X_u$ and $X_d$ diagonalise the up- and down-type mass matrices. In the framework the mass matrices are flavour operators, $M_u=I_\Delta\otimes M_u^{\mathcal{F}}$ and $M_d=I_\Delta\otimes M_d^{\mathcal{F}}$, with the module factor common and the flavour factor carrying the generation dependence; the diagonalising matrices are $*$-unitary operators on $\mathcal{F}$, and $V$ is their relative rotation. The whole construction lives on $\mathcal{F}$.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 **The tensor form.** The interaction vertex is therefore
 
 $$
-I_\Delta\otimes\big(iL_{e_\mu}R_{e_{\nu(\mu)}} P_L\,V\big)
+I_\Delta\otimes\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L\,V\big)
 $$
 
-on $\Delta\otimes\mathcal{F}$, where $P_L=\tfrac12(I_4iR_{e_z})$ is the left projector with $-iL_{e_t}R_{e_z}$ the chirality cell, i.e. the framework's Lorentz-and-chirality structure on the module factor times the mixing operator on the flavour factor. The framework supplies the first factor exactly — the $iL_{e_\mu}R_{e_{\nu(\mu)}} P_L$ vertex of the charged current is the module's structure — and the second factor is an arbitrary $*$-unitary operator: gauge invariance requires only $V\in \mathrm{U}(N_g)$, not any particular $V$. The requirement of unitarity is the framework's, because the flavour rotation must preserve the norm on $\mathcal{F}$; the pattern of $V$ is not.
+on $\Delta\otimes\mathcal{F}$, where $P_L=\tfrac12(I_4iR_{\vec e_z})$ is the left projector with $-iL_{e_t}R_{\vec e_z}$ the chirality cell, i.e. the framework's Lorentz-and-chirality structure on the module factor times the mixing operator on the flavour factor. The framework supplies the first factor exactly — the $iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L$ vertex of the charged current is the module's structure — and the second factor is an arbitrary $*$-unitary operator: gauge invariance requires only $V\in \mathrm{U}(N_g)$, not any particular $V$. The requirement of unitarity is the framework's, because the flavour rotation must preserve the norm on $\mathcal{F}$; the pattern of $V$ is not.
 
 **Why the mixing is a basis change.** The CKM matrix is a change of basis in flavour space, not a new interaction. In the framework this is transparent: the gauge interactions are $I_\Delta\otimes I_{\mathcal{F}}$ times the module structure, i.e. they are **generation-universal**, and the mixing arises only because the mass matrices, which are $I_\Delta\otimes M^{\mathcal{F}}$, are not diagonal in the same flavour basis. The framework's gauge sector is flavour-blind; the flavour structure is created by the mass matrices. This is the algebraic form of the Glashow–Iliopoulos–Maiani mechanism: flavour-changing neutral currents are absent because the gauge vertex is $I_{\mathcal{F}}$ in flavour space.
 
@@ -280,7 +280,7 @@ The four contraction sums are frame statements, because a cell's square is. In t
 
 ## Summary
 
-The CKM matrix is a $*$-unitary operator on the framework's generation (multiplicity) factor, acting on $\Delta\otimes\mathbb{C}^{N_g}$ as $I_\Delta\otimes V$, and arising from the mismatch of the up- and down-type mass matrices, $V=X_u^\dagger X_d$, both of which are flavour-factor operators while the module factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current vertex is $I_\Delta\otimes(iL_{e_\mu}R_{e_{\nu(\mu)}} P_LV)$, and the neutral currents carry $I_{\mathcal{F}}$ and are flavour-diagonal. The parameter count is that of $\mathrm{U}(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
+The CKM matrix is a $*$-unitary operator on the framework's generation (multiplicity) factor, acting on $\Delta\otimes\mathbb{C}^{N_g}$ as $I_\Delta\otimes V$, and arising from the mismatch of the up- and down-type mass matrices, $V=X_u^\dagger X_d$, both of which are flavour-factor operators while the module factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current vertex is $I_\Delta\otimes(iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_LV)$, and the neutral currents carry $I_{\mathcal{F}}$ and are flavour-diagonal. The parameter count is that of $\mathrm{U}(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
 
 The framework's definite structural contribution is the location of the phase. The algebra acting on the multi-generation space is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ with centre $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}\cong\mathbb{C}$, a single generation-blind central phase; a phase that distinguishes generations therefore cannot be central and must sit in the flavour factor $I_\Delta\otimes M_{N_g}(\mathbb{C})$. The framework's own central phases are CP-even in the flavour sense, and all quark-sector CP violation is a statement about the matrix on $\mathbb{C}^{N_g}$. The Jarlskog invariant, $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$, is the minimal rephasing-invariant measure of the CP violation and is proportional to the imaginary part of the determinant of the commutator of the two mass-matrix products; the recomputation with the standard parameters gave $J=3.08\times10^{-5}$, unitarity of the reconstructed matrix to machine precision, $\sin2\beta=0.707$, $\beta\simeq22.5^\circ$, and $\gamma\simeq65.4^\circ$. The framework places all of this on the flavour factor and supplies none of the values.
 
@@ -291,14 +291,14 @@ The framework's definite structural contribution is the location of the phase. T
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_-,\mathbb{M}_+,\mathbb{C}_{\mathbb{B}}$ | Material, informational sectors; centre |
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
-| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
-| $-iL_{e_t}R_{e_z}$, $P_L=\tfrac12(I_4iR_{e_z})$ | Chirality cell; left projector |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
+| $-iL_{e_t}R_{\vec e_z}$, $P_L=\tfrac12(I_4iR_{\vec e_z})$ | Chirality cell; left projector |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
 | $I_\Delta\otimes V$, $V\in \mathrm{U}(N_g)$ | The CKM matrix as a flavour-factor operator |
 | $M_u^{\mathcal{F}},M_d^{\mathcal{F}}$ | Up- and down-type mass matrices on $\mathcal{F}$ |
 | $V=X_u^\dagger X_d$ | CKM matrix from the diagonalisations |
-| $I_\Delta\otimes(iL_{e_\mu}R_{e_{\nu(\mu)}} P_LV)$ | Charged-current vertex |
+| $I_\Delta\otimes(iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_LV)$ | Charged-current vertex |
 | $I_\Delta\otimes I_{\mathcal{F}}$ | Gauge vertices; flavour universality (GIM) |
 | $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}$ | Centre of the multiplied algebra; generation-blind |
 | $\tfrac12N_g(N_g-1)$, $\tfrac12(N_g-1)(N_g-2)$ | Mixing angles; CP-violating phases |

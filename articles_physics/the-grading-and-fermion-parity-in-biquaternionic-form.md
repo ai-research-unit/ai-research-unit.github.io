@@ -31,9 +31,9 @@ $$
 \text{odd}\cdot\text{odd}=\text{even},
 $$
 
-that is, the parity of a product is the sum of the parities. The generator cells $iL_{e_\mu}R_{e_{\nu(\mu)}}$ are odd; the bivectors $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$ and the volume element are even; the square $(iL_{e_\mu}R_{e_{\nu(\mu)}})^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
+that is, the parity of a product is the sum of the parities. The generator cells $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ are odd; the bivectors $iL_{e_\mu}R_{\vec e_{\nu(\mu)}} iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$ and the volume element are even; the square $(iL_{e_\mu}R_{\vec e_{\nu(\mu)}})^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a Clifford algebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector, and this is why the parity sign of the next but one section is invisible in it.
 
@@ -90,7 +90,7 @@ $$
 
 With the dictionary $i\mapsto-\Omega$, the same statement reads: the grade involution is the conjugation by the central scalar imaginary.
 
-**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every generator, since moving $iL_{\vec e_j}R_{\vec e_y}$ past the monomial $\Omega$ costs the sign $(-1)^{3}$; a monomial $x=iL_{e_{\mu_1}}R_{e_{\nu(\mu_1)}}\cdots iL_{e_{\mu_k}}R_{e_{\nu(\mu_k)}}$ therefore satisfies $\Omega x=(-1)^{k}x\Omega$, and $\Omega^{-1}$ exists because $\Omega^2=-1\neq0$. On the even slot $\lvert x\rvert$ is even and the conjugation is the identity.
+**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every generator, since moving $iL_{\vec e_j}R_{\vec e_y}$ past the monomial $\Omega$ costs the sign $(-1)^{3}$; a monomial $x=iL_{e_{\mu_1}}R_{\vec e_{\nu(\mu_1)}}\cdots iL_{e_{\mu_k}}R_{\vec e_{\nu(\mu_k)}}$ therefore satisfies $\Omega x=(-1)^{k}x\Omega$, and $\Omega^{-1}$ exists because $\Omega^2=-1\neq0$. On the even slot $\lvert x\rvert$ is even and the conjugation is the identity.
 
 **Remark (the sign is a scalar, not a factor of the operator).** The grade involution acts on the element, $\alpha(x)=\varepsilon_x x$, and $\varepsilon_x=\pm1$. It therefore never multiplies a sandwich: multiplying the parameter by $\varepsilon_x$ multiplies the sandwich by the same scalar, and on the algebra $\varepsilon_x=+1$ identically. The parity is a property of the parameter, which the operator may report as a sign, and not a second operator.
 
@@ -145,7 +145,7 @@ verified for all four generators and on even samples: the form on the fermionic 
 
 The odd slot is where the parity sign is visible, and the simplest odd elements are the generators, which are the vectors of Minkowski space. The Hermitian interpretation of the reflection count is therefore a statement about the action of the Hermitian sandwich on them.
 
-**Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $iL_{e_\mu}R_{e_{\nu(\mu)}}^{*}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$, so that the odd slot is where it differs from the reversion: on the vectors the two differ by the sign, and the corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ is exactly this statement. Read as arrays, the cells carry their own adjoint, which is the dagger and not the star, $(iR_{\vec e_x})^{\dagger}=+iR_{\vec e_x}$, $(iL_{\vec e_k}R_{\vec e_y})^{\dagger}=-iL_{\vec e_k}R_{\vec e_y}$ and $(-iR_{\vec e_z})^{\dagger}=-iR_{\vec e_z}$, the two marks being related by $x^{*}=S\,x^{\dagger}\,S^{-1}$ with $S=-iL_{e_t}R_{\vec e_y}$.
+**Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}^{*}=-iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, so that the odd slot is where it differs from the reversion: on the vectors the two differ by the sign, and the corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ is exactly this statement. Read as arrays, the cells carry their own adjoint, which is the dagger and not the star, $(iR_{\vec e_x})^{\dagger}=+iR_{\vec e_x}$, $(iL_{\vec e_k}R_{\vec e_y})^{\dagger}=-iL_{\vec e_k}R_{\vec e_y}$ and $(-iR_{\vec e_z})^{\dagger}=-iR_{\vec e_z}$, the two marks being related by $x^{*}=S\,x^{\dagger}\,S^{-1}$ with $S=-iL_{e_t}R_{\vec e_y}$.
 
 **Proposition (the vector identity).** Let $a,v$ be vectors of the Minkowski space of the envelope, with $q$ the quadratic form, $B$ its polar form, $a^2=q(a)$ and $av+va=2B(a,v)$, and let $\rho_a(v)=v-2B(a,v)a/q(a)$ be the reflection. Then
 
@@ -258,7 +258,7 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | The graded ambient algebra; $\mathrm{Cl}^0=\mathbb{B}$ |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ odd, $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$ even | Generator cells fermionic, bivectors bosonic |
+| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ odd, $iL_{e_\mu}R_{\vec e_{\nu(\mu)}} iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$ even | Generator cells fermionic, bivectors bosonic |
 | $x^{*}=\sigma(\alpha(x^{r}))$ | The Hermitian dagger; even, anti-involution |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Fixed and anti-fixed loci of the dagger; informational and material sectors |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | The eigen-decomposition of the dagger; not an algebra grading |

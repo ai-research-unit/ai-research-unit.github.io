@@ -4,13 +4,13 @@
 
 The companion articles of the relativistic quantum series build the biquaternion Dirac algebra and use it: *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, fixes the comparison between the biquaternions and the even Clifford algebra; *The Spinor Module in Biquaternionic Form and Its Lorentz Action* constructs the module on which the algebra acts; *Exercise: Chirality and the Weyl Spinors* develops the chiral projectors. This article is about a structure that all three use but none names: the **grading of the Dirac algebra by reflection parity**, and the identification of one element — the timelike frame cell $iL_{e_t}R_{\vec e_x}$, where $L_{a}R_{b}$ is the cell that multiplies on the left by $a$ and on the right by $b$, $L_{a}R_{b}\psi=a\psi b$ — as the hinge on which the whole structure turns.
 
-The subject is the following observation, made precise. The biquaternion algebra $\mathbb{B}$ is isomorphic to the **even** part of the Clifford algebra $\mathrm{Cl}_{1,3}$. Its elements include the Lorentz rotors, which act on four-vectors by conjugation; and its elements are at the same time the points of the rotation group. The generators $iL_{e_\mu}R_{e_{\nu(\mu)}}$, by contrast, are **odd**: not one of them is a left multiplication of $\mathbb{B}$, they lie outside the even part, and they are not rotors. They act on spinors and they **exchange the two chiralities**. The odd/even split of the Clifford algebra is therefore not a bookkeeping device. It is the split between the transformations that *turn* and the transformations that *reflect*, and chirality — the property that separates the two Weyl spinors — is precisely what the odd part changes and the even part preserves.
+The subject is the following observation, made precise. The biquaternion algebra $\mathbb{B}$ is isomorphic to the **even** part of the Clifford algebra $\mathrm{Cl}_{1,3}$. Its elements include the Lorentz rotors, which act on four-vectors by conjugation; and its elements are at the same time the points of the rotation group. The generators $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, by contrast, are **odd**: not one of them is a left multiplication of $\mathbb{B}$, they lie outside the even part, and they are not rotors. They act on spinors and they **exchange the two chiralities**. The odd/even split of the Clifford algebra is therefore not a bookkeeping device. It is the split between the transformations that *turn* and the transformations that *reflect*, and chirality — the property that separates the two Weyl spinors — is precisely what the odd part changes and the even part preserves.
 
 The article is organized as follows. The first section reconciles the two ways a single element of the algebra is used — as an object and as an operator. The second establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. The third introduces the frame cell $iR_{\vec e_x}$ and shows that the Clifford metric is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. The fourth shows that conjugation by $iR_{\vec e_x}$ is complex conjugation on $\mathbb{B}$, so that the frame, the sector swap, and the reflection are one operator. The fifth and sixth give the spaces of rotations and of reflections, and answer the question of how many reflections a given Lorentz transformation needs. The last two sections draw the consequence for chirality and explain why the Pauli algebra cannot carry it.
 
 The conventions are those of the series: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$; the scalar imaginary $i$; the sectors $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$; the Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ of the generators; and the dictionary of the conventions article, under which each $\vec e_\mu$ reads as a spacelike bivector, the cell $L_{e_\mu}R_{e_t}$, $e_t\mapsto L_{e_t}R_{e_t}$, and $i\mapsto L_{e_t}R_{\vec e_z}$, the cell of $-\omega$ with $\omega = -L_{e_t}R_{\vec e_z}$ the pseudoscalar. No convention is changed here.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 ## One Algebra, Read Twice
 
@@ -18,18 +18,18 @@ A single element of a matrix algebra is at once a **point** and an **operator**.
 
 The biquaternion algebra inherits this doubling, and the series uses it constantly:
 
-- A **Lorentz rotor** $\tilde U_{\mathrm{lor}}$ with $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$ is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. It is also an operator: it acts on four-vectors by the rotor conjugation, and on spinors by left multiplication.
-- A **generator** $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is a point of the odd part — a four-vector, one of the four legs of spacetime — and it is also an operator on the spinor module. The four are the cells $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$.
+- A **Lorentz rotor** $\tilde U^{\mathrm{lor}}$ with $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1$ is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. It is also an operator: it acts on four-vectors by the rotor conjugation, and on spinors by left multiplication.
+- A **generator** $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is a point of the odd part — a four-vector, one of the four legs of spacetime — and it is also an operator on the spinor module. The four are the cells $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$.
 
 For the rotors the doubling is familiar and the two interpretations are both two-sided or both one-sided. For the generators it is not, and the reason is the grading. The even elements act on the spinor module *preserving* its two chiral halves, because they commute with the chirality operator; the odd elements act *exchanging* them, because they anticommute with it. So an even element and an odd element, both points of the same algebra and both operators on the same module, do qualitatively different things. The remainder of this article is the elaboration of that sentence.
 
-The two actions on a four-vector are worth naming explicitly, since both are used below. For $\tilde U_{\mathrm{lor}}$ even with $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$, the rotor conjugation
+The two actions on a four-vector are worth naming explicitly, since both are used below. For $\tilde U^{\mathrm{lor}}$ even with $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1$, the rotor conjugation
 
 $$
-\tilde{Q} \mapsto \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}^{*}
+\tilde{Q} \mapsto \tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}
 $$
 
-implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and the action reduces to $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the sandwich $x\mapsto\Lambda x\Lambda^{\mathrm{Cl}}$ by $\Lambda$, the Clifford image of $\tilde U_{\mathrm{lor}}$, where $\Lambda^{\mathrm{Cl}}$ is the Clifford image of the Hermitian conjugate $\tilde U_{\mathrm{lor}}^{*}$. It is the conjugation by $\Lambda$ only on the $*$-unitary slice, where that conjugate is the inverse.
+implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and the action reduces to $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the sandwich $x\mapsto\Lambda x\Lambda^{\mathrm{Cl}}$ by $\Lambda$, the Clifford image of $\tilde U^{\mathrm{lor}}$, where $\Lambda^{\mathrm{Cl}}$ is the Clifford image of the Hermitian conjugate $\tilde U^{\mathrm{lor}}{}^{*}$. It is the conjugation by $\Lambda$ only on the $*$-unitary slice, where that conjugate is the inverse.
 
 The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative. They lie in the odd part of $\mathrm{Cl}_{1,3}$ and act on vectors by the two-sided map of the Pin group,
 
@@ -51,7 +51,7 @@ $$
 \boxed{\;\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+} \oplus \mathrm{Cl}_{1,3}^{-}\;}.
 $$
 
-The even part is spanned by the identity, the six bivectors, and the pseudoscalar; the odd part by the four vectors and the four trivectors. An even element is a product of an even number of vectors — that is, of an even number of reflections — and an odd element of an odd number. In the cells the split is carried by the right multiplier: the even part is the span of the cells whose right multiplier lies in $\mathrm{span}\{e_t,\vec e_z\}$, the odd part the span of those whose right multiplier lies in $\mathrm{span}\{e_x,\vec e_y\}$. The biquaternion algebra is the even part,
+The even part is spanned by the identity, the six bivectors, and the pseudoscalar; the odd part by the four vectors and the four trivectors. An even element is a product of an even number of vectors — that is, of an even number of reflections — and an odd element of an odd number. In the cells the split is carried by the right multiplier: the even part is the span of the cells whose right multiplier lies in $\mathrm{span}\{e_t,\vec e_z\}$, the odd part the span of those whose right multiplier lies in $\mathrm{span}\{\vec e_x,\vec e_y\}$. The biquaternion algebra is the even part,
 
 $$
 \mathbb{B} \cong \mathrm{Cl}_{1,3}^{+}(\mathbb{R}),
@@ -64,7 +64,7 @@ The identification is verified directly in the explicit representation. For $40$
 | element | reflection count | determinant of the vector action | in $\mathbb{B}$? |
 |---|---|---|---|
 | even unit element $\Lambda$ (rotor) | even ($0$, $2$ or $4$) | $+1$ | yes |
-| odd unit element $u$ (a generator $iL_{e_\mu}R_{e_{\nu(\mu)}}$ or a trivector) | odd | $-1$ | no |
+| odd unit element $u$ (a generator $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ or a trivector) | odd | $-1$ | no |
 
 The geometric content of the even part is also known: the Lie algebra of the rotation group is generated by the bivectors, and the bivectors are precisely the products of two reflections. So the two halves of the Clifford algebra correspond to the two classes of orthogonal transformations, and the correspondence is an identity.
 
@@ -73,7 +73,7 @@ The geometric content of the even part is also known: the Lie algebra of the rot
 The odd part is reached from the even part by a frame, and the frame is the timelike generator. Every vector is
 
 $$
-x_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} = i\big(x_tL_{e_t}R_{\vec e_x}+x_xL_{\vec e_x}R_{\vec e_y}+x_yL_{\vec e_y}R_{\vec e_y}+x_zL_{\vec e_z}R_{\vec e_y}\big) = iR_{\vec e_x}\,(\text{image of }w), \qquad w \in \mathbb{M}_+ ,
+x_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}} = i\big(x_tL_{e_t}R_{\vec e_x}+x_xL_{\vec e_x}R_{\vec e_y}+x_yL_{\vec e_y}R_{\vec e_y}+x_zL_{\vec e_z}R_{\vec e_y}\big) = iR_{\vec e_x}\,(\text{image of }w), \qquad w \in \mathbb{M}_+ ,
 $$
 
 with all coefficients positive; every trivector is $iR_{\vec e_x}$ times the image of $w_2\in\mathbb{M}_-$. The correspondence is coefficient by coefficient:
@@ -112,7 +112,7 @@ The Clifford metric of the generators is not an independent convention laid on t
 The same fact appears in the vector square. For $w = x_te_t + ix_x\vec e_x + ix_y\vec e_y + ix_z\vec e_z \in \mathbb{M}_+$,
 
 $$
-\left(x_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\right)^2 = \langle w\rangle_{\natural}\,L_{e_t}R_{e_t} = \left(x_t^2 - x_x^2 - x_y^2 - x_z^2\right)L_{e_t}R_{e_t} ,
+\left(x_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\right)^2 = \langle w\rangle_{\natural}\,L_{e_t}R_{e_t} = \left(x_t^2 - x_x^2 - x_y^2 - x_z^2\right)L_{e_t}R_{e_t} ,
 $$
 
 with no relative sign between the Clifford square and the biquaternion norm. The absence of that sign is the signature $g$ showing through.
@@ -154,7 +154,7 @@ With the grading in hand, the two spaces can be described, and they are not of t
 **The rotations.** The rotors are the unit-norm biquaternions,
 
 $$
-SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1\},
+SL(2,\mathbb{C}) = \{\tilde U^{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1\},
 $$
 
 a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $\vec e_\mu$ and $i\vec e_\mu$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on spinors in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
@@ -209,7 +209,7 @@ so the two columns are exchanged: an **even** internal matrix gives a reflection
 | $T$ | $-L_{\vec e_y}R_{e_t}$ | even | anti-linear | $-1$ | reflection |
 | $C$ | not a cell of this frame | odd | anti-linear | $+1$ | proper |
 
-The third row's matrix is not a cell, and the notation must not be read as one. The charge-conjugation intertwiner of this frame is the cell $L_{e_t}R_{\vec e_x}$, which satisfies $L_{e_t}R_{\vec e_x}\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{T}L_{e_t}R_{\vec e_x}^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ and has the same odd grade; the representative whose determinant the table records is the companion's, taken in its block realization of the generators, and the two are related by the change of realization rather than by an equality of cells.
+The third row's matrix is not a cell, and the notation must not be read as one. The charge-conjugation intertwiner of this frame is the cell $L_{e_t}R_{\vec e_x}$, which satisfies $L_{e_t}R_{\vec e_x}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}^{T}L_{e_t}R_{\vec e_x}^{-1}=-iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and has the same odd grade; the representative whose determinant the table records is the companion's, taken in its block realization of the generators, and the two are related by the change of realization rather than by an equality of cells.
 
 This is why $T$ is a reflection whose internal matrix is an **even** element — the real quaternion $-\vec e_y$ of that article, the cell $-L_{\vec e_y}R_{e_t}$ — while $C$ is a proper transformation carried by an **odd** one. Neither fact is visible from the grade alone, and both are recorded here so that the grade assignments of the CPT article are not read against the rule of this one.
 
@@ -219,13 +219,13 @@ What anti-linearity does **not** change is the chirality behaviour. Chirality is
 
 The classical theorem gives an upper bound of four reflections in four dimensions. The sharper question — given a rotation, how many reflections does it take — has a clean answer, and it separates the simple Lorentz transformations from the generic ones.
 
-A product of two reflections is an element $\tilde U_{\mathrm{lor}} = uv$ with $u$ and $v$ unit vectors. The criterion is algebraic. The product $u\tilde U_{\mathrm{lor}}$ has a grade-$1$ and a grade-$3$ part, and the grade-$3$ part is *linear* in $u$. So the condition that $u\tilde U_{\mathrm{lor}}$ be a pure vector — that is, that $\tilde U_{\mathrm{lor}}$ be $u$ times a vector — is a system of four linear equations in the four components of $u$, with a $4\times4$ matrix $M$ built from the bivector part of $\tilde U_{\mathrm{lor}}$:
+A product of two reflections is an element $\tilde U^{\mathrm{lor}} = uv$ with $u$ and $v$ unit vectors. The criterion is algebraic. The product $u\tilde U^{\mathrm{lor}}$ has a grade-$1$ and a grade-$3$ part, and the grade-$3$ part is *linear* in $u$. So the condition that $u\tilde U^{\mathrm{lor}}$ be a pure vector — that is, that $\tilde U^{\mathrm{lor}}$ be $u$ times a vector — is a system of four linear equations in the four components of $u$, with a $4\times4$ matrix $M$ built from the bivector part of $\tilde U^{\mathrm{lor}}$:
 
 $$
-\tilde U_{\mathrm{lor}} = uv \ \text{for unit vectors}\ u,v \quad\Longleftrightarrow\quad M\cdot u = 0 \ \text{has a nonzero solution} \quad\Longleftrightarrow\quad \det M = 0 .
+\tilde U^{\mathrm{lor}} = uv \ \text{for unit vectors}\ u,v \quad\Longleftrightarrow\quad M\cdot u = 0 \ \text{has a nonzero solution} \quad\Longleftrightarrow\quad \det M = 0 .
 $$
 
-Geometrically the criterion is that **$\tilde U_{\mathrm{lor}}$ fixes a two-dimensional subspace pointwise**, since a product of two reflections is the identity on the plane orthogonal to the span of $u$ and $v$. The two forms of the criterion agree: the determinant vanished exactly when the fixed subspace had dimension $2$.
+Geometrically the criterion is that **$\tilde U^{\mathrm{lor}}$ fixes a two-dimensional subspace pointwise**, since a product of two reflections is the identity on the plane orthogonal to the span of $u$ and $v$. The two forms of the criterion agree: the determinant vanished exactly when the fixed subspace had dimension $2$.
 
 | transformation | $\lvert\det M\rvert$ | fixed subspace | reflections needed |
 |---|---|---|---|
@@ -260,13 +260,13 @@ $$
 with $\omega = iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y} = -L_{e_t}R_{\vec e_z}$ the pseudoscalar and $i_{\mathrm{Cl}}$ the unit of the complexification; its projectors are the central idempotents $\frac{1}{2}(1\pm -iR_{\vec e_z})$, of rank $2$ each, and $-iR_{\vec e_z}$ is minus the Clifford image of $i_{\mathrm{Cl}}i$. The relation to the frame is the anticommutation
 
 $$
--iR_{\vec e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}} = -\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z} ,
+-iR_{\vec e_z}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} = -\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,-iR_{\vec e_z} ,
 $$
 
 from which the whole chirality behaviour follows. Every **even** element commutes with $-iR_{\vec e_z}$, so an even element maps each chiral half into itself; every **odd** element anticommutes with it — vectors and trivectors alike, hence every odd element — so an odd element exchanges the halves:
 
 $$
-\boxed{\;iL_{e_\mu}R_{e_{\nu(\mu)}} \tilde\Pi_R = \tilde\Pi_L\,iL_{e_\mu}R_{e_{\nu(\mu)}}\;}.
+\boxed{\;iL_{e_\mu}R_{\vec e_{\nu(\mu)}} \tilde\Pi_R = \tilde\Pi_L\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\;}.
 $$
 
 Combine this with the grading of the second section and the statement is: **rotations preserve chirality, reflections reverse it.** A rotation cannot change which chiral half a spinor belongs to, and a reflection always does. Chirality is not an extra label attached to the spinor; it is the eigenvalue of the operator that tells the two halves of the algebra apart, and only the odd half moves it.
@@ -360,7 +360,7 @@ The four contraction sums are frame statements, because a cell's square is. In t
 
 The claims of this article, in order.
 
-1. **One algebra, two interpretations.** The biquaternion algebra is a matrix algebra, so each element is at once a point of a transformation group and an operator. The rotors are the even instances; the generator $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the odd one, and the even and odd instances act on the spinor module in opposite ways.
+1. **One algebra, two interpretations.** The biquaternion algebra is a matrix algebra, so each element is at once a point of a transformation group and an operator. The rotors are the even instances; the generator $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the odd one, and the even and odd instances act on the spinor module in opposite ways.
 
 2. **The grading is the reflection count.** By Cartan–Dieudonné, an orthogonal transformation is a product of reflections and its determinant is $(-1)^{\text{count}}$. The split $\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+}\oplus\mathrm{Cl}_{1,3}^{-}$ is that parity.
 
@@ -385,7 +385,7 @@ The claims of this article, in order.
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict'$ metric of the material coordinates |
 | $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\psi = a\psi b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | The canonical frame cells: $iR_{\vec e_x} = iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$ |
+| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | The canonical frame cells: $iR_{\vec e_x} = iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$ |
 | $\omega = iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y} = -L_{e_t}R_{\vec e_z}$ | Pseudoscalar, $\omega^2 = -I_4$ |
 | $-iR_{\vec e_z} = i_{\mathrm{Cl}}\omega = -iL_{e_t}R_{\vec e_z}$ | Chirality cell, $(-iR_{\vec e_z})^{2} = I_4$ |
 | $\tilde\Pi_{L,R} = \tfrac12(1\pm -iR_{\vec e_z})$ | Chirality projectors, rank $2$ |
@@ -394,11 +394,11 @@ The claims of this article, in order.
 | Reversal | Reversing the Clifford image of $\tilde{Q}$ gives the image of $\tilde{Q}^{\natural}$; Clifford reversal is quaternion conjugation |
 | Hermitian conjugation | The image of $\tilde{Q}^{*}$ is $iR_{\vec e_x}$ times the reversed image of $\tilde{Q}$, times $iR_{\vec e_x}$ |
 | Frame conjugation | Conjugating the image of $\tilde{Q}$ by $iR_{\vec e_x}$ gives the image of $\tilde{Q}^*$ |
-| $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
-| $\tilde{Q}_2 = \tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $\tilde U^{\mathrm{lor}}$, $\langle\tilde U^{\mathrm{lor}}\rangle_{\natural} = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
+| $\tilde{Q}_2 = \tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $\mathbb{M}_+$ | Hermitian sector; its image is the identity together with the timelike bivectors (boosts) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion sector; its image is the identity together with the spacelike bivectors (spatial rotations) |
-| $\det M$ | Two-reflection criterion: $\det M = 0$ iff $\tilde U_{\mathrm{lor}}$ fixes a plane |
+| $\det M$ | Two-reflection criterion: $\det M = 0$ iff $\tilde U^{\mathrm{lor}}$ fixes a plane |
 | $\det = (-1)^{k}(-1)^{\text{anti}}$ | Reflection parity of a module map, linear or anti-linear |
 | $\mathsf{P}$ | Parity reflection; exchanges the two chiral halves |
 

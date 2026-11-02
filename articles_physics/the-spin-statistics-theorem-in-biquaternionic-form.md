@@ -119,7 +119,7 @@ $$
 +b^{\mathrm{fop}\dagger}_r(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $\psi^{\mathrm{fop}\dagger}$ the adjoint and the parents' spinors. Write $L_{a}R_{b}\psi=a\psi b$ for the two-sided multiplier and $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ for the cells of the reference frame, the frame listed in the Gamma section; they obey $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$. The parents' spin sums then read $\sum_r w^{(r)}\bar w^{(r)}=p_\mu\,iL_{e_\mu}R_{e_{\nu(\mu)}}+m$ and $\sum_r v^{(r)}\bar v^{(r)}=p_\mu\,iL_{e_\mu}R_{e_{\nu(\mu)}}-m$, hence
+with $\psi^{\mathrm{fop}\dagger}$ the adjoint and the parents' spinors. Write $L_{a}R_{b}\psi=a\psi b$ for the two-sided multiplier and $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ for the cells of the reference frame, the frame listed in the Gamma section; they obey $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$. The parents' spin sums then read $\sum_r w^{(r)}\bar w^{(r)}=p_\mu\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}+m$ and $\sum_r v^{(r)}\bar v^{(r)}=p_\mu\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}-m$, hence
 
 $$
 \sum_r w^{(r)}w^{(r){}^{*}}=E_{\vec p}I_4+m\,iR_{\vec e_x}+iR_{\vec e_x}\sum_k iL_{\vec e_k}R_{\vec e_y} p_k,\qquad
@@ -129,7 +129,7 @@ $$
 The field is a spinor-module field; the biquaternion content is the module on which it is built and the notation, and the mode algebra is imposed. Two choices are available. The **Fermi choice** is
 $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$, and likewise for $b^{\mathrm{fop}}$, with all other brackets vanishing; the **Bose choice** replaces the braces by brackets.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 **The anticommutator (Fermi choice).** At equal times $x_0=y_0$ the two branches enter with opposite phases, and with $\theta=\vec p\cdot\vec\Delta$, $\vec\Delta=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y$ (the sign of $\theta$ is fixed by the mode-expansion convention and drops out of the anticommutator, only $\cos\theta$ surviving there),
 
@@ -320,7 +320,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Single-mode number operator (idempotent) |
 | $(-1)^F=i\vec e_z=e_t-2\tilde\Pi_-=2\tilde S_z/\hbar$ | Fermion parity; Hermitian involution in $\mathbb{M}_+$ |
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$ | Fermionic mode relation; failure of the bosonic relation |
-| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $L_{a}R_{b}\psi=a\psi b$ | Cells of the reference frame; $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t}$, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $L_{a}R_{b}\psi=a\psi b$ | Cells of the reference frame; $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t}$, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\nabla_k=\partial/\partial\Delta_k$ | Gradient with respect to the spatial separation |
 | $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\,iR_{\vec e_x}$ | Quantized spinor-module field and its Dirac adjoint |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_r(\vec p)$ | Annihilation and antiparticle creation operators |

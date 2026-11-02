@@ -34,7 +34,7 @@ $$
 \vec B(t') = B_0\,\vec u_z + B_1\left(\cos\omega t'\,\vec u_x - \sin\omega t'\,\vec u_y\right)
 $$
 
-has the Hamiltonian $H(t') = -\vec\mu\cdot\vec B(t')$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde S = \tfrac{\hbar}{2}i e_k$ along $e_k$, and the Hamiltonian is the Hermitian element
+has the Hamiltonian $H(t') = -\vec\mu\cdot\vec B(t')$ with $\vec\mu = \gamma\vec S$. In the biquaternion algebra the spin operator is $\tilde S = \tfrac{\hbar}{2}i \vec e_k$ along $\vec e_k$, and the Hamiltonian is the Hermitian element
 
 $$
 \tilde{H}(t') = -\frac{\hbar\omega_0}{2}\,i\vec e_z

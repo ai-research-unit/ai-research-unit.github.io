@@ -80,7 +80,7 @@ $$
 Z_{ab} = \sum_H (-1)^{h(h-1)/2}\,(c_H)^T_{ab}\, dx_H ,
 $$
 
-in which $c_H$ is the product of the generator cells indexed by $H$ and $h$ is the degree of $H$. The generator cells are $c_0=iL_{e_t}R_{e_x}$ and $c_k=iL_{e_k}R_{e_y}$, with $L_{a}R_{b}\psi=a\psi b$, and $c_H$ is a single cell up to a phase in $\{1,-1,i,-i\}$. The matrix $Z$ is constructed so that
+in which $c_H$ is the product of the generator cells indexed by $H$ and $h$ is the degree of $H$. The generator cells are $c_0=iL_{e_t}R_{\vec e_x}$ and $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$, and $c_H$ is a single cell up to a phase in $\{1,-1,i,-i\}$. The matrix $Z$ is constructed so that
 
 $$
 dx_\mu \vee Z = c_\mu^T Z ,
@@ -180,7 +180,7 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_
 | $\square$ | Laplace–de Rham (Laplace–Beltrami) operator |
 | $dx_\mu\vee dx_\nu = dx_\mu\wedge dx_\nu+\delta_{\mu\nu}$ | Clifford product on forms |
 | $Z_{ab}$ | Basis change to four Dirac copies |
-| $c_\mu$ | Generator cells $c_0=iL_{e_t}R_{e_x}$, $c_k=iL_{e_k}R_{e_y}$, with $L_{a}R_{b}\psi=a\psi b$ |
+| $c_\mu$ | Generator cells $c_0=iL_{e_t}R_{\vec e_x}$, $c_k=iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$ |
 | $c_H$ | Product of the generator cells indexed by $H$; one cell up to a phase |
 | $\mathrm{SO}(2,4)$ | Internal symmetry mixing the four copies |
 | $A = e\sum_\mu A_\mu dx_\mu$ | Abelian gauge potential, minimally coupled |

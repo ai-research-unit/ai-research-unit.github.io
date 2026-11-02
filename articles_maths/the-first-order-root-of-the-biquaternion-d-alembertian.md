@@ -487,10 +487,10 @@ The table classifies the carriers on which the constant-coefficient Clifford ans
 
 ## The Freedom of the Frame
 
-The Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$ has a unique irreducible module up to isomorphism, so any two frames of the root are related by an invertible matrix, with $iL_{e_\mu}R_{e_{\nu(\mu)}}$ the generator cell of the coordinate $x_\mu$ and $\nu(t)=x$, $\nu(k)=y$:
+The Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$ has a unique irreducible module up to isomorphism, so any two frames of the root are related by an invertible matrix, with $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ the generator cell of the coordinate $x_\mu$ and $\nu(t)=x$, $\nu(k)=y$:
 
 $$
-iL_{e_\mu}R_{e_{\nu(\mu)}}'=S\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,S^{-1},\qquad B'=SBS^{-1},\qquad S\in GL_4(\mathbb{C}).
+iL_{e_\mu}R_{\vec e_{\nu(\mu)}}'=S\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,S^{-1},\qquad B'=SBS^{-1},\qquad S\in GL_4(\mathbb{C}).
 $$
 
 The biquaternion structure does not select a canonical matrix frame. It selects the decomposition $\mathbb{B}=S_+\oplus S_-$, the exchange $u=i\vec e_x$, and the grading $G=R_{i\vec e_z}$; the adapted basis and the identification of the two summands with $S$ are choices. The physics twin, *The First-Order Root of the Biquaternion Klein–Gordon Operator*, writes another frame of the same algebra, the cells $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iL_{e_t}R_{\vec e_z}$, related to the frame above by a similarity. The volume element is canonical up to the sign of the orientation of the four generators, and the two signs of $c$ give the same operator up to the exchange $-iR_{\vec e_z}\mapsto\,iR_{\vec e_z}$. The root is unique up to similarity, not canonical.

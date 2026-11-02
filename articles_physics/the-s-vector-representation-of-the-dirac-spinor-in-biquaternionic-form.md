@@ -147,7 +147,7 @@ $$
 \qquad \vec u_x\vec u_y = -\vec u_y\vec u_x = \vec u_z \ \ (\text{cyclic})\;}.
 $$
 
-These are exactly the relations of the biquaternion algebra: $e_k^2 = +e_t$ in the $e$-basis, and $e_x e_y = i e_z$ (since $e_\nu = i\vec u_{\nu}$ is the matrix of $i\vec e_\nu$, and $\vec u_{\nu}^2 = -I$). The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred "time" direction of the algebra.
+These are exactly the relations of the biquaternion algebra: $\vec e_k^2 = +e_t$ in the $e$-basis, and $\vec e_x \vec e_y = i \vec e_z$ (since $e_\nu = i\vec u_{\nu}$ is the matrix of $i\vec e_\nu$, and $\vec u_{\nu}^2 = -I$). The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred "time" direction of the algebra.
 
 ## The Semi-Spinors as Real Four-Vectors
 

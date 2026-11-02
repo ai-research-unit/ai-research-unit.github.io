@@ -49,7 +49,7 @@ $$
 
 are subgroups isomorphic to the quaternion group $Q_8$.
 
-**Proof.** The left multiplications satisfy $L_{e_x}^{2}=L_{e_y}^{2}=L_{e_z}^{2}=-I$ and $L_{e_x}L_{e_y}=-L_{e_y}L_{e_x}$; with $L_{e_z}=L_{e_x}L_{e_y}$ up to the orientation sign, the eight elements $\{\pm I,\pm L_{e_x},\pm L_{e_y},\pm L_{e_z}\}$ are the quaternion group: one element of order two, six of order four, and the multiplication of $Q_8$. The same holds on the right.
+**Proof.** The left multiplications satisfy $L_{\vec e_x}^{2}=L_{\vec e_y}^{2}=L_{\vec e_z}^{2}=-I$ and $L_{\vec e_x}L_{\vec e_y}=-L_{\vec e_y}L_{\vec e_x}$; with $L_{\vec e_z}=L_{\vec e_x}L_{\vec e_y}$ up to the orientation sign, the eight elements $\{\pm I,\pm L_{\vec e_x},\pm L_{\vec e_y},\pm L_{\vec e_z}\}$ are the quaternion group: one element of order two, six of order four, and the multiplication of $Q_8$. The same holds on the right.
 
 **The central product.** The two subgroups commute elementwise,
 
@@ -77,7 +77,7 @@ $$
 [L_{e_\mu},R_{e_\nu}]=L_{e_\mu} R_{e_\nu} L_{e_\mu}^{-1}R_{e_\nu}^{-1}=I,
 $$
 
-and the nontrivial commutators come from within each $Q_8$: $[L_{e_x},L_{e_y}]=-I$ and $[R_{e_x},R_{e_y}]=-I$.
+and the nontrivial commutators come from within each $Q_8$: $[L_{\vec e_x},L_{\vec e_y}]=-I$ and $[R_{\vec e_x},R_{\vec e_y}]=-I$.
 
 ## The Centre and the Exponent
 
@@ -93,7 +93,7 @@ $$
 g^{2}=L_{e_\mu}^{2}R_{e_\nu}^{2}=\pm I,
 $$
 
-because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_{e_x}$ and $R_{e_x}$ have order four, because their squares are $-I\ne I$.
+because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_{\vec e_x}$ and $R_{\vec e_x}$ have order four, because their squares are $-I\ne I$.
 
 **The order count.** The elements of order two are $-I$ and the eighteen products $L_{e_\mu} R_{e_\nu}$ with both $\mu\ne t$ and $\nu\ne t$, taken with both signs: $2+18=20$ elements satisfy $g^{2}=I$, of which nineteen have order exactly two. The remaining twelve elements, with exactly one index equal to $t$, have order four.
 
@@ -112,7 +112,7 @@ because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_{e_x}$ an
 
 **Theorem.** $G$ is extraspecial of order $2^{1+4}$: its centre has order $2$, its quotient by the centre is elementary abelian of order $16$, and its derived subgroup is the centre.
 
-**Proof.** The centre is $\{\pm I\}$ and the quotient is elementary abelian, which is the definition. The derived subgroup is contained in the centre because the quotient is abelian, and contains $-I$ because $[L_{e_x},L_{e_y}]=-I$; hence $G'=\{\pm I\}$.
+**Proof.** The centre is $\{\pm I\}$ and the quotient is elementary abelian, which is the definition. The derived subgroup is contained in the centre because the quotient is abelian, and contains $-I$ because $[L_{\vec e_x},L_{\vec e_y}]=-I$; hence $G'=\{\pm I\}$.
 
 **The commutator form.** Define
 
@@ -124,13 +124,13 @@ $$
 
 **Proof.** The commutator depends only on the classes because the centre is central, and it is alternating because $[x,x]=I$; bilinearity is the identity $[xy,z]=[x,z]\,[y,z]$ in a class-two group. If $x\{\pm I\}$ is in the radical, then $[x,y]=I$ for all $y$, so $x$ is central and the class is the identity.
 
-**The type.** The nondegenerate alternating form on a four-dimensional symplectic space over $\mathbb{F}_2$ has a symplectic basis $e_1,f_1,e_2,f_2$ with $b(e_i,f_i)=1$ and all other pairings zero; the group is the extraspecial group of that form, of order $2^{1+4}$.
+**The type.** The nondegenerate alternating form on a four-dimensional symplectic space over $\mathbb{F}_2$ has a symplectic basis $e_1,f_1,e_2,f_2$ with $b(\vec e_i,f_i)=1$ and all other pairings zero; the group is the extraspecial group of that form, of order $2^{1+4}$.
 
 ## The Abelian Subgroups
 
-**Proposition.** The subgroup $\langle L_{e_x},R_{e_x}\rangle$ is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.
+**Proposition.** The subgroup $\langle L_{\vec e_x},R_{\vec e_x}\rangle$ is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.
 
-**Proof.** $L_{e_x}$ and $R_{e_x}$ commute, $L_{e_x}$ has order four, and $L_{e_x}R_{e_x}$ has order two, because $(L_{e_x}R_{e_x})^{2}=L_{e_x}^{2}R_{e_x}^{2}=(-I)(-I)=I$. Every element of the subgroup is $L_{e_x}^{a}(L_{e_x}R_{e_x})^{b}$ with $a\in\{0,1,2,3\}$ and $b\in\{0,1\}$, and these eight elements are distinct; the subgroup is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.
+**Proof.** $L_{\vec e_x}$ and $R_{\vec e_x}$ commute, $L_{\vec e_x}$ has order four, and $L_{\vec e_x}R_{\vec e_x}$ has order two, because $(L_{\vec e_x}R_{\vec e_x})^{2}=L_{\vec e_x}^{2}R_{\vec e_x}^{2}=(-I)(-I)=I$. Every element of the subgroup is $L_{\vec e_x}^{a}(L_{\vec e_x}R_{\vec e_x})^{b}$ with $a\in\{0,1,2,3\}$ and $b\in\{0,1\}$, and these eight elements are distinct; the subgroup is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.
 
 **The maximal abelian subgroups.** Every abelian subgroup $A$ has $A\cap\{\pm I\}$ of order at most two, and its image in $G/\{\pm I\}$ is a totally isotropic subspace for the commutator form, of dimension at most two. Hence $|A|\le 2\cdot4=8$, and the bound is attained. The maximal abelian subgroups are therefore the inverse images of the maximal totally isotropic planes of $G/\{\pm I\}$, of order $8$.
 

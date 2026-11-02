@@ -757,7 +757,7 @@
 <!-- the on-shell current and its two pieces; the convection and spin terms; the proof from the two Dirac equations and the generator-product split; the parent identity; the momentum-space form; the physical reading and the Pauli moment behind $g=2$; the massless generalisation and the spin current; the Belinfante–Rosenfeld relative, the factor of two and the angular momentum; the biquaternion reading, the central-versus-bivector split and the informational sector; what the framework does not supply. -->
 
 <a href="articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a>
-<!-- six problems: the spinors at rest and at general momentum; covariant normalisation and orthogonality; the spin sums; the massless limit and helicity–chirality locking; the gamma-matrix algebra and a change of basis; the biquaternionic mass-shell condition. -->
+<!-- seven problems: the spinors at rest and at general momentum; covariant normalisation and orthogonality; the spin sums; the massless limit and helicity–chirality locking; the gamma-matrix algebra and a change of basis; the biquaternionic mass-shell condition; the helicity blocks and the block determinant. -->
 
 <a href="articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a>
 <!-- seven problems: the chiral projectors; the two Weyl halves and the mass term; a boost and a rotation of each half; the invariant symplectic pairing; the spinor bilinear and the four-vector; the double cover on a concrete rotation; the spinor action and rotor conjugation. -->

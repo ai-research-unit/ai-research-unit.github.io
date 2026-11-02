@@ -189,13 +189,13 @@ where $\sigma^{(\varphi,\omega)}$ is the **Connes cocycle** flow relating the mo
 Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_\varphi\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
 $$
 \Delta_{\omega,\varphi}\big(\tilde Q_2\big)
-=e^{-\tilde K_{\mathrm{mod},\omega}}\,\tilde Q_2\,e^{\tilde K_{\mathrm{mod},\varphi}},
+=e^{-\tilde K^{\mathrm{mod}}_{\omega}}\,\tilde Q_2\,e^{\tilde K^{\mathrm{mod}}_{\varphi}},
 \qquad
 \log\Delta_{\omega,\varphi}\big(\tilde Q_2\big)
 =\log\tilde{Ϛ}_\omega\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_\varphi
-=\tilde Q_2\,\tilde{K}_{\mathrm{mod},\varphi}-\tilde{K}_{\mathrm{mod},\omega}\,\tilde Q_2,
+=\tilde Q_2\,\tilde{K}^{\mathrm{mod}}_{\varphi}-\tilde{K}^{\mathrm{mod}}_{\omega}\,\tilde Q_2,
 \qquad
-\tilde{K}_{\mathrm{mod},\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{M}_+,\qquad \tilde{K}_{\mathrm{mod},\varphi}=-\log\tilde{Ϛ}_\varphi\in\mathbb{M}_+ .
+\tilde{K}^{\mathrm{mod}}_{\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{M}_+,\qquad \tilde{K}^{\mathrm{mod}}_{\varphi}=-\log\tilde{Ϛ}_\varphi\in\mathbb{M}_+ .
 $$
 Araki's formula evaluated on $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$ then returns
 $$

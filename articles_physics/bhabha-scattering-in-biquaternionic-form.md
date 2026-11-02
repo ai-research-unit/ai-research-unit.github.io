@@ -40,13 +40,13 @@ The two tree-level diagrams contribute
 
 $$
 \boxed{\;
-\mathcal M = -e^2\left(\bar v_k iL_{e_\mu}R_{e_{\nu(\mu)}} v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2} iL_{e_\mu}R_{e_{\nu(\mu)}} w_p\right)
-\;+\; e^2\left(\bar v_k iL_{e_\nu}R_{e_{\nu(\nu)}} w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2} iL_{e_\nu}R_{e_{\nu(\nu)}} v_{k_2}\right)\;},
+\mathcal M = -e^2\left(\bar v_k iL_{e_\mu}R_{\vec e_{\nu(\mu)}} v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2} iL_{e_\mu}R_{\vec e_{\nu(\mu)}} w_p\right)
+\;+\; e^2\left(\bar v_k iL_{e_\nu}R_{\vec e_{\nu(\nu)}} w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2} iL_{e_\nu}R_{\vec e_{\nu(\nu)}} v_{k_2}\right)\;},
 $$
 
-where the $iL_{e_\mu}R_{e_{\nu(\mu)}}$ are the canonical frame's cells, $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ for $k=1,2,3$. Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$, so each vertex is one two-sided multiplier and each spinor contraction is that cell between the two external states. The first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. **The relative sign between the two diagrams is negative**, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.
+where the $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ are the canonical frame's cells, $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$. Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$, so each vertex is one two-sided multiplier and each spinor contraction is that cell between the two external states. The first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. **The relative sign between the two diagrams is negative**, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 ## The Cross Section
 
@@ -166,7 +166,7 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $d\sigma/d(\cos\theta)$ | Leading-order spin-averaged cross section |
 | $\alpha$ | Fine-structure constant |
 | $\tilde J\in\mathbb M_-$ | Framework's material-sector current |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Cells of the canonical frame; $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ |
+| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | Cells of the canonical frame; $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
 
 ## Further Reading

@@ -22,7 +22,7 @@ $$
 
 the **pseudoscalar**, which satisfies $\omega^2=-1$, and the source sets $i\equiv\omega$: the "$i$" of its electric–magnetic notation $F=\vec E+i\vec B$ is therefore the **duality operator**, the module representative of the corpus's central imaginary unit, and not a second imaginary number. Every $\exp(\omega\beta)$ below is the exponential of that cell, that is, a duality rotation.
 
-The source's fixed bivector, the product $\gamma_2\gamma_1=-\vec e_z$, is the **spin plane**, the role played in the corpus's Dirac–Hestenes equation $\nabla\psi\,\omega\sigma_3$ by the fixed bivector $\omega\sigma_3$, and it multiplies the spinor on the **right** as it does there. The cell for that right multiplication is $R_{-\vec e_z}$, which is the volume element $\omega$ displayed just above: the spin plane and the duality generator of this article are the same cell.
+The source's fixed bivector is $-\vec e_z$, the product of its second generator with its first, and it is the **spin plane**: the role played in the corpus's Dirac–Hestenes equation $\nabla\psi\,\omega\sigma_3$ by the fixed bivector $\omega\sigma_3$, and it multiplies the spinor on the **right** as it does there. The cell for that right multiplication is $R_{-\vec e_z}$, which is the volume element $\omega$ displayed just above: the spin plane and the duality generator of this article are the same cell.
 
 The even subalgebra $C\ell^+(M)$, in which the spinor $\psi$ lives, is the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary. The source's route is nevertheless the **Clifford-bundle** one, and the corpus records it as a different technical road to the same structural equivalences, cross-referencing rather than merging.
 
@@ -120,7 +120,7 @@ $$
 \end{aligned}
 $$
 
-with $\lambda$ and $\kappa$ the two real scalars built from the bivector $\Omega=\sum_\mu g_{\mu\mu}\,v_\mu\Omega_\mu$. The source prints the spin-plane factor as the pair of frame cells $iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}$, which is the Gamma section's spelling of the generator product $\gamma_2\gamma_1$; that product is the single bivector $-\vec e_z$, and because it multiplies the spinor on the right, its cell is $R_{-\vec e_z}$, the volume element $\omega$ of the introduction. The source also writes the coefficient pair as $\Lambda$ and $K$ once the phase is factored; one spelling, $\lambda$ and $\kappa$, is kept here.
+with $\lambda$ and $\kappa$ the two real scalars built from the bivector $\Omega=\sum_\mu g_{\mu\mu}\,v_\mu\Omega_\mu$. The source prints the spin-plane factor as the pair of frame cells $iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_x}R_{\vec e_y}$, the Gamma section's spelling of the generator product that is its fixed bivector. Composed, the pair is $L_{-\vec e_z}$: left multiplication by the single bivector $-\vec e_z$, not the right multiplication $R_{-\vec e_z}=\omega$ of the introduction, and the two carry the same bivector on opposite sides. The wave equation below applies the bivector on the right, as the source does, so every display below uses $\omega=R_{-\vec e_z}$; only that side anticommutes with the spin cell $iR_{\vec e_x}$, which is what the linearisation rests on. The source also writes the coefficient pair as $\Lambda$ and $K$ once the phase is factored; one spelling, $\lambda$ and $\kappa$, is kept here.
 
 Two facts carry the linearisation. The phase cell $\exp(\omega\beta)$ is a function of $-\vec e_z$, so it commutes with the spin-plane cell and with its own half-rotation. It **anticommutes** with the spin cell $iR_{\vec e_x}$, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$:
 
@@ -205,9 +205,9 @@ $$
 
 that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The mechanism is the parity split: the source shows that $\psi^\uparrow$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi^\uparrow_+ + g\omega B\psi^\uparrow_+=0$ and $\partial\psi^\uparrow_- - g\omega B\psi^\uparrow_-=0$, so that a single $\psi^\uparrow$ coupled to a potential describes a particle of charge $+g$ and a particle of charge $-g$ — which the source reads as a pair of opposite charges. A word is needed here on why the source writes **one** Dirac equation where the corpus writes **two**. The corpus's equation is the chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$ and $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$: the left and the right multiplications are separate operators, one per side, and the mass term is what couples the two chiralities. The source works with a single operator on a spinor that carries both chiralities, and its equation is the **massless** member of the pair, where the two sides decouple and the chirality labels may be dropped. The two presentations agree on the massless content and diverge as soon as a mass is present, which is why the spinorial equation of the previous section carries two scalar coefficients rather than one.
 
-This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form of the non-linear equation is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 F\,iL_{e_\mu}R_{e_{\nu(\mu)}} F$.
+This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form of the non-linear equation is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 F\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} F$.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 ## Status, Contrasts, and Boundaries
 
@@ -266,10 +266,10 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 | $C\ell(M)$ | Clifford bundle of differential forms over Minkowski spacetime |
 | $C\ell^+(M)$ | Its even subalgebra; the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Metric; the corpus's frame-cell convention |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Frame cells, $iR_{\vec e_x}=R_{i\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}=L_{i\vec e_k}R_{\vec e_y}$ |
+| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | Frame cells, $iR_{\vec e_x}=R_{i\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}=L_{i\vec e_k}R_{\vec e_y}$ |
 | $L_a$, $R_b$ | Left and right multiplication of a spinor, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
 | $\omega=iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}=R_{-\vec e_z}$ | Volume element, the pseudoscalar; $\omega^2=-1$; the source's "$i$", which the corpus identifies with its central imaginary unit |
-| $\gamma_2\gamma_1=-\vec e_z$ | Fixed spin-plane bivector, multiplying the spinor on the right; its cell is $R_{-\vec e_z}=\omega$ |
+| $\gamma_2\gamma_1=-\vec e_z$ | Fixed spin-plane bivector; the product of the two cells is $L_{-\vec e_z}$, and the right multiplication the source applies is $R_{-\vec e_z}=\omega$ |
 | $\partial=iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k$ | Dirac operator, a cell acting on the spinor; $\delta$ the coderivative, $d$ the exterior derivative |
 | $F$, $F_0$, $F_e$, $F^\uparrow$ | Field 2-form; the stationary subluminal solution; the electron field; the positive-parity field |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
@@ -282,7 +282,7 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 | $\beta$ | Takabayasi (Yvon–Takabayasi) angle; $0,\pi$ electron/positron, $\pi/2,3\pi/2$ muon/antimuon |
 | $j$, $g$, $J=J_e-\omega J_m$ | Vector current, axial current, total current with electric and magnetic parts |
 | $\Lambda_\pm,\ \Lambda_\beta$ | Energy projectors $\tfrac12\psi(1\pm i\vec e_x)$, the minimal right ideals of the even subalgebra; the one-parameter family of the source and its collapse |
-| $S=-\tfrac12\psi\vec e_z\psi^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12 F\,iL_{e_\mu}R_{e_{\nu(\mu)}} F$ the Maxwell energy–momentum |
+| $S=-\tfrac12\psi\vec e_z\psi^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12 F\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} F$ the Maxwell energy–momentum |
 | $\lambda,\kappa$ | Scalar coefficients of the spinorial Maxwell equation; the source's $\Lambda$ and $K$ are the same pair after the phase is factored |
 
 ## Further Reading

@@ -169,11 +169,11 @@ $$
 \Bigl(\tfrac{59}{2},29\Bigr)\longleftrightarrow\Bigl(29,\tfrac{59}{2}\Bigr)\ \longrightarrow\ \cdots
 $$
 
-The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, a linear superposition of the two spin states $\pm\frac12$, which is the **electron** and satisfies the Dirac equation in the algebra's own action form, with $e_t^2=1$ and $e_x^2=e_y^2=e_z^2=-1$,
+The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, a linear superposition of the two spin states $\pm\frac12$, which is the **electron** and satisfies the Dirac equation in the algebra's own action form, with $e_t^2=1$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-1$,
 
 $$
-\boxed{\;i\,e_t\frac{\partial\psi}{\partial x_0}e_x
-+i\sum_{k=1}^{3}e_k\frac{\partial\psi}{\partial x_k}e_y
+\boxed{\;i\,e_t\frac{\partial\psi}{\partial x_0}\vec e_x
++i\sum_{k=1}^{3}\vec e_k\frac{\partial\psi}{\partial x_k}\vec e_y
 +m_e\psi = 0\;}.
 $$
 

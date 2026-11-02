@@ -20,7 +20,7 @@ The eight cases cover the identity, the two pure rotors, the pure scale, the sca
 | Pure scale | $2e_t$ | the scale alone, no rotor |
 | Scale and rotor | $3e_t+4\vec e_x$ | one axis, one exponential |
 | Orthogonal axes | $\vec e_z=\vec e_x\vec e_y$ | a product word, defect $1$ |
-| Non-parallel axes | $\frac{-\vec e_t+\vec e_z}{\sqrt2}$ | a product at $45^\circ$, defect $1/\sqrt2$ |
+| Non-parallel axes | $\frac{-e_t+\vec e_z}{\sqrt2}$ | a product at $45^\circ$, defect $1/\sqrt2$ |
 | Generic | $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ | a non-unit with all four coordinates nonzero |
 
 The norm is written in full throughout,
@@ -464,7 +464,7 @@ with determinant $1$ and eigenvalues $\pm i$. This is the quaternion analogue of
 
 ### Case 7: Non-Parallel Axes
 
-**Coordinates.** For $\tilde q=\frac{-\vec e_t+\vec e_z}{\sqrt2}$,
+**Coordinates.** For $\tilde q=\frac{-e_t+\vec e_z}{\sqrt2}$,
 
 $$
 q_t=-\frac{1}{\sqrt2},
@@ -483,7 +483,7 @@ r=1,
 \qquad
 \theta=\arccos\Bigl(-\frac{1}{\sqrt2}\Bigr)=\frac{3\pi}{4}=2.3561944902,
 \qquad
-\tilde u_{\mathrm r}=\frac{-\vec e_t+\vec e_z}{\sqrt2},
+\tilde u_{\mathrm r}=\frac{-e_t+\vec e_z}{\sqrt2},
 \qquad
 \vec n=\vec e_z.
 $$
@@ -495,7 +495,7 @@ The rotation angle is $2\theta=3\pi/2$.
 $$ \boxed{\; \tilde q=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr)
 \exp\Bigl(\frac{\pi}{2}\frac{\vec e_x+\vec e_y}{\sqrt2}\Bigr)
 =\vec e_x\frac{\vec e_x+\vec e_y}{\sqrt2}
-=\frac{-\vec e_t+\vec e_z}{\sqrt2} \;} .$$
+=\frac{-e_t+\vec e_z}{\sqrt2} \;} .$$
 
 The formal exponent is the sum
 
@@ -513,7 +513,7 @@ $$
 which misses the product by $1/\sqrt2=0.7071067812$ in the largest coefficient. The defect is $D(\tilde h)=1/\sqrt2$. The true polar word is the single exponential
 
 $$
-\tilde q=\exp\Bigl(\frac{3\pi}{4}\vec e_z\Bigr)=\frac{-\vec e_t+\vec e_z}{\sqrt2},
+\tilde q=\exp\Bigl(\frac{3\pi}{4}\vec e_z\Bigr)=\frac{-e_t+\vec e_z}{\sqrt2},
 $$
 
 with logarithm $\log\tilde q=\frac{3\pi}{4}\vec e_z$ and error $1.1\times10^{-16}$. The matrix is
@@ -642,7 +642,7 @@ which is not $e_t$. The kernel is not a subgroup. The fibre over a non-real elem
 | $4$ | $2e_t$ | $2$ | $0$ | $2$ | $0$ | — | $0$ |
 | $5$ | $3e_t+4\vec e_x$ | $3$ | $16$ | $5$ | $\arccos\frac35$ | $\vec e_x$ | $2\arccos\frac35$ |
 | $6$ | $\vec e_z$ | $0$ | $1$ | $1$ | $\pi/2$ | $\vec e_z$ | $\pi$ |
-| $7$ | $\frac{-\vec e_t+\vec e_z}{\sqrt2}$ | $-\frac{1}{\sqrt2}$ | $\frac12$ | $1$ | $3\pi/4$ | $\vec e_z$ | $3\pi/2$ |
+| $7$ | $\frac{-e_t+\vec e_z}{\sqrt2}$ | $-\frac{1}{\sqrt2}$ | $\frac12$ | $1$ | $3\pi/4$ | $\vec e_z$ | $3\pi/2$ |
 | $8$ | $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ | $1$ | $29$ | $\sqrt{30}$ | $\arccos\frac{1}{\sqrt{30}}$ | $\frac{2\vec e_x+3\vec e_y+4\vec e_z}{\sqrt{29}}$ | $2\arccos\frac{1}{\sqrt{30}}$ |
 
 ### The Factors
@@ -655,7 +655,7 @@ which is not $e_t$. The kernel is not a subgroup. The fibre over a non-real elem
 | $4$ | $2$ | $e_t$ | — | $0$ |
 | $5$ | $5$ | $\frac{3e_t+4\vec e_x}{5}$ | $\vec e_x$ | $1.8545904360$ |
 | $6$ | $1$ | $\vec e_z$ | $\vec e_z$ | $\pi$ |
-| $7$ | $1$ | $\frac{-\vec e_t+\vec e_z}{\sqrt2}$ | $\vec e_z$ | $3\pi/2$ |
+| $7$ | $1$ | $\frac{-e_t+\vec e_z}{\sqrt2}$ | $\vec e_z$ | $3\pi/2$ |
 | $8$ | $\sqrt{30}$ | $\frac{e_t+2\vec e_x+3\vec e_y+4\vec e_z}{\sqrt{30}}$ | $\frac{2\vec e_x+3\vec e_y+4\vec e_z}{\sqrt{29}}$ | $2.7743846330$ |
 
 ### The Reconstruction Table

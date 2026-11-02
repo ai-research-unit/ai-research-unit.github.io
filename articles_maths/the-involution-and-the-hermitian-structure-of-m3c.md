@@ -181,11 +181,11 @@ is skew-Hermitian, $K^{*}=-K$; its eigenvalues are $i$ times the eigenvalues of 
 
 The first is a real algebra; the second and third are real Lie algebras; the fourth is a real vector space, not closed under multiplication. The $*$-unitary group $U(3)$ is the compact real form of $GL_{3}(\mathbb{C})$, and $SU(3)$ is the compact real form of $SL_{3}(\mathbb{C})$.
 
-**The biquaternion comparison.** The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a quadratic form with nonzero isotropic vectors. For example, in the basis $e_{t},e_{x},e_{y},e_{z}$,
+**The biquaternion comparison.** The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a quadratic form with nonzero isotropic vectors. For example, in the basis $e_{t},\vec e_{x},\vec e_{y},\vec e_{z}$,
 $$
-(e_{t}+ie_{x})(e_{t}-ie_{x})=e_{t}^{2}+e_{x}^{2}=1-1=0,
+(e_{t}+i\vec e_{x})(e_{t}-i\vec e_{x})=e_{t}^{2}+\vec e_{x}^{2}=1-1=0,
 $$
-so the vector $e_{t}+ie_{x}$ is nonzero and isotropic. The null cone of $\mathbb{B}$ is a genuine cone with a nonzero link, and the zero divisors of $\mathbb{B}$ are exactly the isotropic vectors for the form.
+so the vector $e_{t}+i\vec e_{x}$ is nonzero and isotropic. The null cone of $\mathbb{B}$ is a genuine cone with a nonzero link, and the zero divisors of $\mathbb{B}$ are exactly the isotropic vectors for the form.
 
 In $M_{3}(\mathbb{C})$ with the Hermitian trace form, no such vector exists: $\langle A,A\rangle=0$ implies $A=0$. The zero divisors of $M_{3}$ (the singular matrices) are not the isotropic vectors of the form; the determinant is not the norm. The singular set
 $$

@@ -6,7 +6,7 @@ The Clifford algebra of a four-dimensional space has sixteen basis elements, and
 
 The biquaternion algebra is the even part. Its product sees the parity and nothing finer: the product of two even elements is even, and the split of the even part into scalars, bivectors and pseudoscalars is not visible in the multiplication table of $\mathbb{B}$ alone. The odd slot is worse: it is a copy of $\mathbb{B}$, of real dimension eight, and the product of two odd elements is even, but the split of the odd slot into four vectors and four trivectors is not a submodule split. Left multiplication by an even element mixes the two.
 
-The sixteen two-sided operators $L_{e_\mu} R_{e_\nu}$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $L_{e_t}R_{e_x},L_{e_x}R_{e_y},L_{e_y}R_{e_y},L_{e_z}R_{e_y}$, a staircase, not a row or a column. The frame is the choice of that staircase.
+The sixteen two-sided operators $L_{e_\mu} R_{e_\nu}$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $L_{e_t}R_{\vec e_x},L_{\vec e_x}R_{\vec e_y},L_{\vec e_y}R_{\vec e_y},L_{\vec e_z}R_{\vec e_y}$, a staircase, not a row or a column. The frame is the choice of that staircase.
 
 The body writes the abstract Clifford frame as $v_0,v_1,v_2,v_3$, with $v_0^2=1$ and $v_k^2=-1$, and the frame elements as cells. The gamma notation for the same objects is collected in the Gamma section. The two-sided basis is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*; the even slot and the odd slot are *Biquaternion Versors and the Orthogonal Group*; the traces that read the scalar and pseudoscalar coordinates are *The Vector and the Axial Traces of $M_4(\mathbb{C})$*.
 
@@ -108,7 +108,7 @@ for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The twist $\theta$ is the reflection of the 
 
 **The verification.** The table follows from the definitions $L_{e_\mu}(x)=e_\mu x$, $R_{e_\nu}(x)=xe_\nu$, the multiplication table of the biquaternion units, and the correspondence
 $$
-e_t\mapsto I,\quad e_x\mapsto v_{2}v_{3},\quad e_y\mapsto v_{3}v_{1},\quad e_z\mapsto v_{1}v_{2},\quad i\mapsto i\omega.
+e_t\mapsto I,\quad \vec e_x\mapsto v_{2}v_{3},\quad \vec e_y\mapsto v_{3}v_{1},\quad \vec e_z\mapsto v_{1}v_{2},\quad i\mapsto i\omega.
 $$
 Each product $e_\mu x e_\nu$ is a signed basis element, and the scalar $i$ is the pseudoscalar. The signs are those of the quaternion multiplication table; a direct computation gives the sixteen entries.
 
@@ -120,24 +120,24 @@ The counts are the dimensions of the exterior algebra; the table is a bijection 
 
 **The five cells of the frame.** The frame is the five entries
 $$
-iL_{e_t}R_{e_x},\qquad
-iL_{e_x}R_{e_y},\qquad
-iL_{e_y}R_{e_y},\qquad
-iL_{e_z}R_{e_y},\qquad
--iL_{e_t}R_{e_z}.
+iL_{e_t}R_{\vec e_x},\qquad
+iL_{\vec e_x}R_{\vec e_y},\qquad
+iL_{\vec e_y}R_{\vec e_y},\qquad
+iL_{\vec e_z}R_{\vec e_y},\qquad
+-iL_{e_t}R_{\vec e_z}.
 $$
 The first four have grade 1; the last has grade 4. The four vectors are the staircase
 $$
-L_{e_t}R_{e_x},\ L_{e_x}R_{e_y},\ L_{e_y}R_{e_y},\ L_{e_z}R_{e_y},
+L_{e_t}R_{\vec e_x},\ L_{\vec e_x}R_{\vec e_y},\ L_{\vec e_y}R_{\vec e_y},\ L_{\vec e_z}R_{\vec e_y},
 $$
 not a row and not a column. This is the exact sense in which the frame is a choice, not a property of the index pair.
 
 **The Hodge pairs in the table.** The four vector entries are paired with the four trivector entries:
 $$
-L_{e_t}R_{e_x}\leftrightarrow L_{e_t}R_{e_y},\qquad
-L_{e_x}R_{e_y}\leftrightarrow L_{e_x}R_{e_x},\qquad
-L_{e_y}R_{e_y}\leftrightarrow L_{e_y}R_{e_x},\qquad
-L_{e_z}R_{e_y}\leftrightarrow L_{e_z}R_{e_x}.
+L_{e_t}R_{\vec e_x}\leftrightarrow L_{e_t}R_{\vec e_y},\qquad
+L_{\vec e_x}R_{\vec e_y}\leftrightarrow L_{\vec e_x}R_{\vec e_x},\qquad
+L_{\vec e_y}R_{\vec e_y}\leftrightarrow L_{\vec e_y}R_{\vec e_x},\qquad
+L_{\vec e_z}R_{\vec e_y}\leftrightarrow L_{\vec e_z}R_{\vec e_x}.
 $$
 Each pair is one Hodge pair $(v_\mu,v_{\nu\rho\sigma})$. The pattern is the frame written twice: the vector entry and its trivector partner differ by the exchange of the second index and the sign of the scalar $i$.
 
@@ -152,15 +152,15 @@ Each pair is one Hodge pair $(v_\mu,v_{\nu\rho\sigma})$. The pattern is the fram
 **The odd slot as an operation.** The odd elements are not in $\mathbb{B}$; as operations on $\mathbb{B}$ they are the bar and the conjugate-linear left multiplications,
 $$
 \bar{\cdot},\qquad
-\bar{\cdot}\,L_{-i e_k},
+\bar{\cdot}\,L_{-i \vec e_k},
 $$
 in the real-linear dictionary. The grade of the operation is recovered from the frame, not from the biquaternion product. The operation-level statement is *The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$*.
 
 **The two dictionaries.** The complex-linear dictionary reads the same five cells as one-sided and two-sided operators,
 $$
-iL_{e_t}R_{e_x}=R_{i e_x},\qquad
-iL_{i e_k}R_{e_y},\qquad
--iL_{e_t}R_{e_z}=R_{-i e_z},
+iL_{e_t}R_{\vec e_x}=R_{i \vec e_x},\qquad
+iL_{i \vec e_k}R_{\vec e_y},\qquad
+-iL_{e_t}R_{\vec e_z}=R_{-i \vec e_z},
 $$
 up to the scalar $i$; its even part is the complexified even Clifford algebra $M_2\oplus M_2$, not the left factor $\mathbb{B}$. The real-linear dictionary has the left factor as its even part. The grade table is the same in both, because it is a table of the same sixteen two-sided operators against the same abstract Clifford basis; the difference is which operators represent the frame, not the grades.
 
@@ -177,7 +177,7 @@ up to the scalar $i$; its even part is the complexified even Clifford algebra $M
 The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the cells.
 
 $$
-\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z},
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z},
 $$
 
 with $\gamma_\mu=v_\mu$ and $\gamma_5=i\omega$ in the matrix representation.
@@ -192,7 +192,7 @@ y & -\gamma_{13} & i\gamma_{013} & -i\gamma_2 & \gamma_{02}\\
 z & \gamma_{12} & -i\gamma_{012} & -i\gamma_3 & \gamma_{03}
 \end{array}
 $$
-with the correspondence $e_t\mapsto I$, $e_x\mapsto\gamma_2\gamma_3$, $e_y\mapsto\gamma_3\gamma_1$, $e_z\mapsto\gamma_1\gamma_2$ and $i\mapsto i\gamma_5$.
+with the correspondence $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2\gamma_3$, $\vec e_y\mapsto\gamma_3\gamma_1$, $\vec e_z\mapsto\gamma_1\gamma_2$ and $i\mapsto i\gamma_5$.
 
 Over $\mathbb{R}$ the dictionary is complex-linear: the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -208,7 +208,7 @@ y & 2 & 3 & 1 & 2\\
 z & 2 & 3 & 1 & 2
 \end{array}
 $$
-and the five cells of the frame are $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$, $iL_{e_y}R_{e_y}$, $iL_{e_z}R_{e_y}$ and $-iL_{e_t}R_{e_z}$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.
+and the five cells of the frame are $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$ and $-iL_{e_t}R_{\vec e_z}$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.
 
 | quantity | value |
 |---|---|
@@ -217,12 +217,12 @@ and the five cells of the frame are $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$, $iL_{e
 | grade dimensions | $1,4,6,4,1$ |
 | odd slot | $V\oplus\Lambda^3V$, $4+4$ |
 | Hodge pairs | $(v_0,v_{123})$, $(v_1,v_{023})$, $(v_2,v_{013})$, $(v_3,v_{012})$ |
-| five cells | $iL_{e_t}R_{e_x},iL_{e_x}R_{e_y},iL_{e_y}R_{e_y},iL_{e_z}R_{e_y},-iL_{e_t}R_{e_z}$ |
+| five cells | $iL_{e_t}R_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y},-iL_{e_t}R_{\vec e_z}$ |
 | scalar | $L_{e_t}R_{e_t}=I$ |
-| pseudoscalar | $L_{e_t}R_{e_z}$ up to $-i$ |
-| vectors | $L_{e_t}R_{e_x},L_{e_x}R_{e_y},L_{e_y}R_{e_y},L_{e_z}R_{e_y}$ |
-| trivectors | $L_{e_t}R_{e_y},L_{e_x}R_{e_x},L_{e_y}R_{e_x},L_{e_z}R_{e_x}$ |
-| bivectors | $L_{e_x}R_{e_t},L_{e_x}R_{e_z},L_{e_y}R_{e_t},L_{e_y}R_{e_z},L_{e_z}R_{e_t},L_{e_z}R_{e_z}$ |
+| pseudoscalar | $L_{e_t}R_{\vec e_z}$ up to $-i$ |
+| vectors | $L_{e_t}R_{\vec e_x},L_{\vec e_x}R_{\vec e_y},L_{\vec e_y}R_{\vec e_y},L_{\vec e_z}R_{\vec e_y}$ |
+| trivectors | $L_{e_t}R_{\vec e_y},L_{\vec e_x}R_{\vec e_x},L_{\vec e_y}R_{\vec e_x},L_{\vec e_z}R_{\vec e_x}$ |
+| bivectors | $L_{\vec e_x}R_{e_t},L_{\vec e_x}R_{\vec e_z},L_{\vec e_y}R_{e_t},L_{\vec e_y}R_{\vec e_z},L_{\vec e_z}R_{e_t},L_{\vec e_z}R_{\vec e_z}$ |
 
 ## Summary of Notation
 
@@ -246,7 +246,7 @@ and the five cells of the frame are $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$, $iL_{e
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_{e_\mu} R_{e_\nu}$ and their multiplication table.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for $L_a$, $R_a$ and $L_{a}R_{b}$.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the even and odd slots of the envelope.
-- [The Vector and the Axial Traces of $M_4(\mathbb{C})$](the-vector-and-the-axial-traces-of-m4c.html), for the two coordinates $L_{e_t}R_{e_t}$ and $L_{e_t}R_{e_z}$ that the traces read.
+- [The Vector and the Axial Traces of $M_4(\mathbb{C})$](the-vector-and-the-axial-traces-of-m4c.html), for the two coordinates $L_{e_t}R_{e_t}$ and $L_{e_t}R_{\vec e_z}$ that the traces read.
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the operation-level form of the odd generators.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chirality and its relation to the pseudoscalar.
 - [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Frame*.

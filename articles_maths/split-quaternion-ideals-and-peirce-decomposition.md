@@ -111,7 +111,7 @@ whose summands are the **Peirce spaces**. The corner $eAe$ is a subalgebra with 
 **A complete orthogonal family.** If $\{e_1, \dots, e_n\}$ is complete and pairwise orthogonal, the same expansion gives
 
 $$
-A = \bigoplus_{i,j=1}^{n} e_i A e_j, \qquad (e_i A e_j)(e_k A e_l) \subseteq \delta_{jk}\, e_i A e_l .
+A = \bigoplus_{i,j=1}^{n} e_i A e_j, \qquad (e_i A e_j)(\vec e_k A e_l) \subseteq \delta_{jk}\, e_i A e_l .
 $$
 
 Each diagonal corner $e_i A e_i$ is an algebra with identity $e_i$, and each off-diagonal piece is a bimodule over the corresponding corners.

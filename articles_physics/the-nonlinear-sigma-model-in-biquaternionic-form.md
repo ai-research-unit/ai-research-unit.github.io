@@ -79,7 +79,7 @@ $$
 \phi_2 = \theta ,
 $$
 
-the kinetic term is canonical, $\mathcal{L}_\text{kin} = \frac12[(\partial h)^2 + (\partial\theta)^2]$, and the potential depends on the modulus alone, so the angular field $\theta$ is exactly flat. Below the radial mass the field $h$ may be integrated out; because every non-derivative coupling of $\theta$ involves $h$, the resulting Lagrangian for $\theta$ alone contains only derivatives, and its lowest-order term is
+the kinetic term is canonical, $\mathcal{L}^{\mathrm{kin}} = \frac12[(\partial h)^2 + (\partial\theta)^2]$, and the potential depends on the modulus alone, so the angular field $\theta$ is exactly flat. Below the radial mass the field $h$ may be integrated out; because every non-derivative coupling of $\theta$ involves $h$, the resulting Lagrangian for $\theta$ alone contains only derivatives, and its lowest-order term is
 
 $$
 \mathcal{L}_\text{eff} = \frac12\left[(\partial/\partial t'\theta)^2 - (\nabla\theta)^2\right] + \cdots

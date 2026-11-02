@@ -135,10 +135,10 @@ where $S_F$ is the propagator amplitude of the companion article in configuratio
 
 ### The Biquaternion Form of the Kernel
 
-Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, and the frame cells $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, contracted as $iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu=iR_{e_x}E-i\sum_kL_{e_k}R_{e_y}p_k$, the momentum-space kernel is
+Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, and the frame cells $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, contracted as $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}p_\mu=iR_{\vec e_x}E-i\sum_kL_{\vec e_k}R_{\vec e_y}p_k$, the momentum-space kernel is
 
 $$
-S_F(p)=-\frac{i(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
+S_F(p)=-\frac{i(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}p_\mu+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$
 
 the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict'$ axis of the material sector:
@@ -253,7 +253,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z} .
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
@@ -266,7 +266,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The phase is central and lies in $\mathbb{M}_-$ along the $ict'$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
 
-The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$.
+The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}p_\mu+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$.
 
 For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\psi\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ offers the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\psi(\tau+\beta)=-\psi(\tau)$, verified to nine decimals and equivalent to $\omega_n=(2n+1)\pi/\beta$.
 
@@ -286,8 +286,8 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[\bar\eta M^{-1}\eta]$ | Free generating functional |
 | $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu=iR_{e_x}E-i\sum_kL_{e_k}R_{e_y}p_k$ | Frame cells and the four-momentum contraction |
-| $S_F(p)=-\frac{i(iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
+| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}p_\mu=iR_{\vec e_x}E-i\sum_kL_{\vec e_k}R_{\vec e_y}p_k$ | Frame cells and the four-momentum contraction |
+| $S_F(p)=-\frac{i(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}p_\mu+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
 | $\int d\psi_{2N}\cdots d\psi_1\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; source of the field-to-conjugate pairing |
 | $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($ict'$ direction becomes real) |

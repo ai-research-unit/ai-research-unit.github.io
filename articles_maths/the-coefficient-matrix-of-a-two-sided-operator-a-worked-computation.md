@@ -48,19 +48,19 @@ $$
 \qquad c_{tt}=1 .
 $$
 
-**$L_{e_x}R_{e_x}=\operatorname{diag}(-1,-1,1,1)$.** The signs are $-,-,+,+$:
+**$L_{\vec e_x}R_{\vec e_x}=\operatorname{diag}(-1,-1,1,1)$.** The signs are $-,-,+,+$:
 $$
-\operatorname{tr}(L_{e_x}R_{e_x}^{\mathsf T}M)=-1-1+1+1=0,
+\operatorname{tr}(L_{\vec e_x}R_{\vec e_x}^{\mathsf T}M)=-1-1+1+1=0,
 \qquad c_{xx}=0 .
 $$
 
-**$L_{e_y}R_{e_y}=\operatorname{diag}(-1,1,-1,1)$:**
+**$L_{\vec e_y}R_{\vec e_y}=\operatorname{diag}(-1,1,-1,1)$:**
 $$
 -1+1-1+1=0,
 \qquad c_{yy}=0 .
 $$
 
-**$L_{e_z}R_{e_z}=\operatorname{diag}(-1,1,1,-1)$:**
+**$L_{\vec e_z}R_{\vec e_z}=\operatorname{diag}(-1,1,1,-1)$:**
 $$
 -1+1+1-1=0,
 \qquad c_{zz}=0 .
@@ -70,16 +70,16 @@ $$
 
 ### Two full matrix products
 
-**The matrix $L_{e_x}R_{e_t}$.** Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=-1$, $(4,3)=+1$:
+**The matrix $L_{\vec e_x}R_{e_t}$.** Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=-1$, $(4,3)=+1$:
 $$
-L_{e_x}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+L_{\vec e_x}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
 \qquad
-L_{e_x}R_{e_t}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}.
+L_{\vec e_x}R_{e_t}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}.
 $$
 
-**The product, row by row.** Row $1$ of $L_{e_x}R_{e_t}^{\mathsf T}$ is $(0,1,0,0)$, so the first row of the product is row $2$ of $M$. Row $2$ is $(-1,0,0,0)$, so the second row is minus row $1$ of $M$. Row $3$ is $(0,0,0,1)$, so the third row is row $4$ of $M$. Row $4$ is $(0,0,-1,0)$, so the fourth row is minus row $3$ of $M$:
+**The product, row by row.** Row $1$ of $L_{\vec e_x}R_{e_t}^{\mathsf T}$ is $(0,1,0,0)$, so the first row of the product is row $2$ of $M$. Row $2$ is $(-1,0,0,0)$, so the second row is minus row $1$ of $M$. Row $3$ is $(0,0,0,1)$, so the third row is row $4$ of $M$. Row $4$ is $(0,0,-1,0)$, so the fourth row is minus row $3$ of $M$:
 $$
-L_{e_x}R_{e_t}^{\mathsf T}M=
+L_{\vec e_x}R_{e_t}^{\mathsf T}M=
 \begin{pmatrix}
 0&1&0&0\\
 -1&-2&0&0\\
@@ -92,21 +92,21 @@ $$
 c_{xt}=\tfrac14(-4)=-1 .
 $$
 
-**The dot-product check.** The signed positions of $L_{e_x}R_{e_t}$ give
+**The dot-product check.** The signed positions of $L_{\vec e_x}R_{e_t}$ give
 $$
 (-1)M_{12}+(+1)M_{21}+(-1)M_{34}+(+1)M_{43}
 =-2+0-2+0=-4 .
 $$
 
-**The matrix $L_{e_t}R_{e_x}$.** Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=+1$, $(4,3)=-1$:
+**The matrix $L_{e_t}R_{\vec e_x}$.** Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=+1$, $(4,3)=-1$:
 $$
-L_{e_t}R_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+L_{e_t}R_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
 \qquad
-L_{e_t}R_{e_x}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
+L_{e_t}R_{\vec e_x}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
 $$
 The product is
 $$
-L_{e_t}R_{e_x}^{\mathsf T}M=
+L_{e_t}R_{\vec e_x}^{\mathsf T}M=
 \begin{pmatrix}
 0&1&0&0\\
 -1&-2&0&0\\
@@ -119,7 +119,7 @@ $$
 c_{tx}=0 .
 $$
 
-**The trap.** The two matrices agree in the first two rows and differ in the last two, and the two coefficients are different: $c_{xt}=-1$ and $c_{tx}=0$. A computation that prints $L_{e_t}R_{e_x}$ and transposes $L_{e_x}R_{e_t}$ returns $c_{tx}=-1$, transposes the coefficient matrix, and then fails at the reconstruction. The labels are not symmetric.
+**The trap.** The two matrices agree in the first two rows and differ in the last two, and the two coefficients are different: $c_{xt}=-1$ and $c_{tx}=0$. A computation that prints $L_{e_t}R_{\vec e_x}$ and transposes $L_{\vec e_x}R_{e_t}$ returns $c_{tx}=-1$, transposes the coefficient matrix, and then fails at the reconstruction. The labels are not symmetric.
 
 ### The ten remaining off-diagonal matrices
 
@@ -127,18 +127,18 @@ $$
 
 | Matrix | Signed positions | Sum | Coefficient |
 |---|---|---|---|
-| $L_{e_t}R_{e_y}$ | $(1,3){-}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){+}1$ | $0$ | $0$ |
-| $L_{e_t}R_{e_z}$ | $(1,4){-}1$, $(2,3){+}1$, $(3,2){-}1$, $(4,1){+}1$ | $0$ | $0$ |
-| $L_{e_y}R_{e_t}$ | $(1,3){-}1$, $(2,4){+}1$, $(3,1){+}1$, $(4,2){-}1$ | $0$ | $0$ |
-| $L_{e_z}R_{e_t}$ | $(1,4){-}1$, $(2,3){-}1$, $(3,2){+}1$, $(4,1){+}1$ | $0$ | $0$ |
-| $L_{e_x}R_{e_y}$ | $(1,4){+}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){+}1$ | $0$ | $0$ |
-| $L_{e_x}R_{e_z}$ | $(1,3){-}1$, $(2,4){-}1$, $(3,1){-}1$, $(4,2){-}1$ | $0$ | $0$ |
-| $L_{e_y}R_{e_x}$ | $(1,4){-}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){-}1$ | $0$ | $0$ |
-| $L_{e_y}R_{e_z}$ | $(1,2){+}1$, $(2,1){+}1$, $(3,4){-}1$, $(4,3){-}1$ | $+2+0-2+0=0$ | $0$ |
-| $L_{e_z}R_{e_x}$ | $(1,3){+}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){-}1$ | $0$ | $0$ |
-| $L_{e_z}R_{e_y}$ | $(1,2){-}1$, $(2,1){-}1$, $(3,4){-}1$, $(4,3){-}1$ | $-2-0-2-0=-4$ | $-1$ |
+| $L_{e_t}R_{\vec e_y}$ | $(1,3){-}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){+}1$ | $0$ | $0$ |
+| $L_{e_t}R_{\vec e_z}$ | $(1,4){-}1$, $(2,3){+}1$, $(3,2){-}1$, $(4,1){+}1$ | $0$ | $0$ |
+| $L_{\vec e_y}R_{e_t}$ | $(1,3){-}1$, $(2,4){+}1$, $(3,1){+}1$, $(4,2){-}1$ | $0$ | $0$ |
+| $L_{\vec e_z}R_{e_t}$ | $(1,4){-}1$, $(2,3){-}1$, $(3,2){+}1$, $(4,1){+}1$ | $0$ | $0$ |
+| $L_{\vec e_x}R_{\vec e_y}$ | $(1,4){+}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){+}1$ | $0$ | $0$ |
+| $L_{\vec e_x}R_{\vec e_z}$ | $(1,3){-}1$, $(2,4){-}1$, $(3,1){-}1$, $(4,2){-}1$ | $0$ | $0$ |
+| $L_{\vec e_y}R_{\vec e_x}$ | $(1,4){-}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){-}1$ | $0$ | $0$ |
+| $L_{\vec e_y}R_{\vec e_z}$ | $(1,2){+}1$, $(2,1){+}1$, $(3,4){-}1$, $(4,3){-}1$ | $+2+0-2+0=0$ | $0$ |
+| $L_{\vec e_z}R_{\vec e_x}$ | $(1,3){+}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){-}1$ | $0$ | $0$ |
+| $L_{\vec e_z}R_{\vec e_y}$ | $(1,2){-}1$, $(2,1){-}1$, $(3,4){-}1$, $(4,3){-}1$ | $-2-0-2-0=-4$ | $-1$ |
 
-**The two cancellations.** $L_{e_y}R_{e_z}$ and $L_{e_z}R_{e_y}$ are the only off-diagonal matrices whose signed positions meet nonzero entries of $M$, and they meet the same two entries with opposite signs. The sum is $+2-2=0$ for $L_{e_y}R_{e_z}$ and $-2-2=-4$ for $L_{e_z}R_{e_y}$. The cancellation in $L_{e_y}R_{e_z}$ is not an accident of this matrix: it is the sign difference between $L$ and $R$ on the same pair of indices.
+**The two cancellations.** $L_{\vec e_y}R_{\vec e_z}$ and $L_{\vec e_z}R_{\vec e_y}$ are the only off-diagonal matrices whose signed positions meet nonzero entries of $M$, and they meet the same two entries with opposite signs. The sum is $+2-2=0$ for $L_{\vec e_y}R_{\vec e_z}$ and $-2-2=-4$ for $L_{\vec e_z}R_{\vec e_y}$. The cancellation in $L_{\vec e_y}R_{\vec e_z}$ is not an accident of this matrix: it is the sign difference between $L$ and $R$ on the same pair of indices.
 
 ### The coefficient matrix
 
@@ -177,16 +177,16 @@ $$
 
 **The expansion.** Since the only nonzero coefficients are $c_{tt}=1$, $c_{xt}=-1$ and $c_{zy}=-1$,
 $$
-M=L_{e_t}R_{e_t}-L_{e_x}R_{e_t}-L_{e_z}R_{e_y}.
+M=L_{e_t}R_{e_t}-L_{\vec e_x}R_{e_t}-L_{\vec e_z}R_{\vec e_y}.
 $$
 
 **The three matrices.**
 $$
 L_{e_t}R_{e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
 \qquad
--L_{e_x}R_{e_t}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+-L_{\vec e_x}R_{e_t}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
 \qquad
--L_{e_z}R_{e_y}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
+-L_{\vec e_z}R_{\vec e_y}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
 $$
 
 **The row sums.**
@@ -200,9 +200,9 @@ $$
 $$
 Each row is the row of $M$. The reconstruction is correct.
 
-**The wrong reconstruction.** With the transposed coefficient matrix one would write $M=L_{e_t}R_{e_t}-L_{e_t}R_{e_x}-L_{e_z}R_{e_y}$. The first two rows still agree, but the third and fourth do not:
+**The wrong reconstruction.** With the transposed coefficient matrix one would write $M=L_{e_t}R_{e_t}-L_{e_t}R_{\vec e_x}-L_{\vec e_z}R_{\vec e_y}$. The first two rows still agree, but the third and fourth do not:
 $$
-L_{e_t}R_{e_t}-L_{e_t}R_{e_x}-L_{e_z}R_{e_y}
+L_{e_t}R_{e_t}-L_{e_t}R_{\vec e_x}-L_{\vec e_z}R_{\vec e_y}
 =\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&0\\0&0&2&1\end{pmatrix},
 $$
 which is not $M$. The two entries $M_{34}=2$ and $M_{43}=0$ are exchanged. This is the visible cost of the index slip.
@@ -211,38 +211,38 @@ which is not $M$. The two entries $M_{34}=2$ and $M_{43}=0$ are exchanged. This 
 
 **Split by rows.** The coefficient matrix is
 $$
-c(M)=e_t\,(1,0,0,0)+e_x\,(-1,0,0,0)+e_z\,(0,0,-1,0).
+c(M)=e_t\,(1,0,0,0)+\vec e_x\,(-1,0,0,0)+\vec e_z\,(0,0,-1,0).
 $$
 The first two terms share the right vector $(1,0,0,0)$, so
 $$
-c(M)=(e_t-e_x)\,(1,0,0,0)+e_z\,(0,0,-1,0).
+c(M)=(e_t-\vec e_x)\,(1,0,0,0)+\vec e_z\,(0,0,-1,0).
 $$
 
 **Read the two products.**
 $$
-a_1=e_t-e_x,\quad b_1=e_t,\qquad
-a_2=e_z,\quad b_2=-e_y .
+a_1=e_t-\vec e_x,\quad b_1=e_t,\qquad
+a_2=\vec e_z,\quad b_2=-\vec e_y .
 $$
 Hence
 $$
-M=L_{e_t-e_x}R_{e_t}+L_{e_z}R_{-e_y}
-=L_{e_t-e_x}-L_{e_z}R_{e_y}
-=L_{e_t}R_{e_t}-L_{e_x}R_{e_t}-L_{e_z}R_{e_y}.
+M=L_{e_t-\vec e_x}R_{e_t}+L_{\vec e_z}R_{-\vec e_y}
+=L_{e_t-\vec e_x}-L_{\vec e_z}R_{\vec e_y}
+=L_{e_t}R_{e_t}-L_{\vec e_x}R_{e_t}-L_{\vec e_z}R_{\vec e_y}.
 $$
 
 **The two matrices.**
 $$
-L_{e_t-e_x}=\mathrm{I}_4-L_{e_x}=
+L_{e_t-\vec e_x}=\mathrm{I}_4-L_{\vec e_x}=
 \begin{pmatrix}1&1&0&0\\-1&1&0&0\\0&0&1&1\\0&0&-1&1\end{pmatrix},
 \qquad
--L_{e_z}R_{e_y}=-L_{e_z}R_{e_y}=
+-L_{\vec e_z}R_{\vec e_y}=-L_{\vec e_z}R_{\vec e_y}=
 \begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
 $$
 Their sum is $M$.
 
 **Why two is the minimum.** The coefficient matrix has rank $2$. A single product would give a coefficient matrix of rank one. So no single two-sided operator equals $M$, and length $2$ is exact.
 
-**The two products are rank four.** Each of $L_{e_t-e_x}$ and $L_{e_z}R_{e_y}$ is an invertible matrix. The sum of two invertible matrices can be singular or not; here it is invertible. The length counts the terms, not the rank of the terms.
+**The two products are rank four.** Each of $L_{e_t-\vec e_x}$ and $L_{\vec e_z}R_{\vec e_y}$ is an invertible matrix. The sum of two invertible matrices can be singular or not; here it is invertible. The length counts the terms, not the rank of the terms.
 
 ## Ordinary Rank Is Not Length
 
@@ -292,24 +292,24 @@ $$
 | length | $2$ |
 | ordinary rank | $4$ |
 | determinant | $1$ |
-| minimal decomposition | $M=L_{e_t-e_x}R_{e_t}-L_{e_z}R_{e_y}=L_{e_t}R_{e_t}-L_{e_x}R_{e_t}-L_{e_z}R_{e_y}$ |
+| minimal decomposition | $M=L_{e_t-\vec e_x}R_{e_t}-L_{\vec e_z}R_{\vec e_y}=L_{e_t}R_{e_t}-L_{\vec e_x}R_{e_t}-L_{\vec e_z}R_{\vec e_y}$ |
 
 **The punchline.** The ordinary rank is $4$, the maximal value, and the length is $2$. Ordinary rank gives no information about length; coefficient rank does.
 
-**The two traps.** The index order is not symmetric: $c_{xt}=-1$ and $c_{tx}=0$, and a transposed coefficient matrix reconstructs a different matrix. The row split is not the column split: the terms combine as $(e_t-e_x)(1,0,0,0)+e_z(0,0,-1,0)$, not as $e_t(1,-1,0,0)+e_z(0,0,-1,0)$.
+**The two traps.** The index order is not symmetric: $c_{xt}=-1$ and $c_{tx}=0$, and a transposed coefficient matrix reconstructs a different matrix. The row split is not the column split: the terms combine as $(e_t-\vec e_x)(1,0,0,0)+\vec e_z(0,0,-1,0)$, not as $e_t(1,-1,0,0)+\vec e_z(0,0,-1,0)$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $e_t,e_x,e_y,e_z$ | the coefficient basis of $\mathbb{B}$, with $e_t=1$ and $e_x^2=e_y^2=e_z^2=-e_t$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the coefficient basis of $\mathbb{B}$, with $e_t=1$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ |
 | $L_a$ | left multiplication $x\mapsto ax$ |
 | $R_b$ | right multiplication $x\mapsto xb$ |
 | $L_{e_\mu}R_{e_\nu}$ | $L_{e_\mu}R_{e_\nu}$, the sixteen basis matrices |
 | $c_{\mu\nu}(A)$ | $\tfrac14\operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}A)$ |
 | $c(A)$ | the $4\times4$ coefficient matrix |
 | $\ell(A)$ | the length, $\operatorname{rank}c(A)$ |
-| $L_{e_x}R_{e_t}^{\mathsf T}$ | the transpose, equal to $L_{e_x}R_{e_t}^{*}$ because the matrix is real |
+| $L_{\vec e_x}R_{e_t}^{\mathsf T}$ | the transpose, equal to $L_{\vec e_x}R_{e_t}^{*}$ because the matrix is real |
 
 ## Further Reading
 

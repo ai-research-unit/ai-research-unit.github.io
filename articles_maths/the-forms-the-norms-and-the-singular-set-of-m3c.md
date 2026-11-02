@@ -215,11 +215,11 @@ $$
 $$
 The determinant vanishes on a hypersurface of real codimension two; the trace form vanishes only at the origin. The singular set is not the set of isotropic vectors of the form.
 
-**The biquaternion null cone.** The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has a quadratic form with nonzero isotropic vectors. In the basis $e_{t},e_{x},e_{y},e_{z}$,
+**The biquaternion null cone.** The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has a quadratic form with nonzero isotropic vectors. In the basis $e_{t},\vec e_{x},\vec e_{y},\vec e_{z}$,
 $$
 Q(z)=z_{t}^{2}+z_{x}^{2}+z_{y}^{2}+z_{z}^{2},
 \qquad
-Q(e_{t}+ie_{x})=1-1=0.
+Q(e_{t}+i\vec e_{x})=1-1=0.
 $$
 The null cone
 $$

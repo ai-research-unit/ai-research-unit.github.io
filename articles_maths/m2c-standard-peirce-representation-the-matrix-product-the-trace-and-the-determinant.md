@@ -309,7 +309,7 @@ $$
 $$
 so the two matrices of the same element have the same invariants.
 
-**The element-level reading.** The transpose is the image of the anti-automorphism $\varrho$ of $\mathbb{B}$ that fixes $e_t,e_x,e_z$ and negates $e_y$:
+**The element-level reading.** The transpose is the image of the anti-automorphism $\varrho$ of $\mathbb{B}$ that fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$:
 $$
 \varrho(Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z)
 =Q_te_t+Q_x\vec e_x-Q_y\vec e_y+Q_z\vec e_z,\qquad
@@ -818,7 +818,7 @@ The compression keeps the product, the trace, the determinant and the six subspa
 | $L(\tilde Q)=A$, $R(\tilde Q)=A^{\mathsf T}$ | the left and right matrices |
 | $\mathsf M_2(e_\mu)$ | the images of the four units: $\mathrm I_2$ and $-i\sigma_k$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices, $\mathsf M_2(\vec e_k)=-i\sigma_k$ |
-| $\varrho$ | the anti-automorphism fixing $e_t,e_x,e_z$ and negating $e_y$ |
+| $\varrho$ | the anti-automorphism fixing $e_t,\vec e_x,\vec e_z$ and negating $\vec e_y$ |
 | $\Theta$ | the matrix transpose, $\Theta(A)=A^{\mathsf T}$ |
 | $\iota_L,\iota_R$ | the inflations $\mathrm I_2\otimes A$ and $\mathrm I_2\otimes B$ |
 | $\kappa_L,\kappa_R$ | the compressions, the inverses of $\iota_L,\iota_R$ on the copies |

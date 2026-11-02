@@ -176,7 +176,7 @@ evaluated at the retarded time $t'_r=t'-R/c$. The formula is the scalar counterp
 The stress–energy tensor of the central scalar field is that of a real scalar field, computed in the companion article *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*. Its energy density is
 
 $$
-L_tR_t=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0 ,
+T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0 ,
 $$
 
 positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{M}_-$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
@@ -347,7 +347,7 @@ $$
 \tilde{\Phi}=\frac{gQ}{4\pi r}\,e_t .
 $$
 
-The static field's energy density is $L_tR_t=\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.
+The static field's energy density is $T_{tt}=\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.
 
 A test source of coupling $g_{\mathrm t}$ has the central potential energy
 
@@ -378,7 +378,7 @@ The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{\Phi}=gQ\exp(-\mu r)/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\mu=0$ |
 | $\vec\beta$, $R$, $t'_r$ | Source velocity over $c$, retarded distance, retarded time |
-| $L_tR_t=\tfrac12\left(\partial\phi/\partial t'\right)^{2}/c^2+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2$ | Energy density, positive |
+| $T_{tt}=\tfrac12\left(\partial\phi/\partial t'\right)^{2}/c^2+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-\mu r)/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
 | $\vec F=-\nabla E=g_{\mathrm t}\,\nabla\phi=g_{\mathrm t}\,(d\phi/dr)\,\vec u_r$ | Central force on the test source (inward) |

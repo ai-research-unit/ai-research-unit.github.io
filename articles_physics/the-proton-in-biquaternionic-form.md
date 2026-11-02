@@ -190,7 +190,7 @@ The table sorts the proton's properties by the status they have in the framework
 | Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
 | Mass term is off-diagonal in chirality; real structure acts $+1/-1$ on $\mathbb{M}_\mp$ | Derived | linear chiral pair; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$; Weyl decomposition |
 | Vector-like charge operator $Ϙ=ϙI_4$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$ |
-| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, with $iL_{e_\mu}R_{e_{\nu(\mu)}}$ the generator cells |
+| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$, with $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ the generator cells |
 | Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathrm{SU}(2)$ generators have imaginary/half-integer spectra |
 | Charge value $ϙ_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
 | $|ϙ_p|=|ϙ_e|$, opposite signs | Outside | no framework structure; independent parameters |
@@ -206,7 +206,7 @@ The table sorts the proton's properties by the status they have in the framework
 
 1. **Is the charge value derivable at all?** The framework's charge operator carries $+1$ for the proton and $0$ for the neutron, but no principle of the algebra selects those values. Is there a framework-internal quantisation condition — an anomaly, a topological constraint, or a compactness condition on the central $\mathrm{U}(1)$ — that would fix $ϙ$ to integers, or to the specific integer $+1$ for the proton? None is known, and none is proposed here.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 2. **Is there any relation between $ϙ_p$ and $ϙ_e$?** The measured equality $|ϙ_p|=|ϙ_e|$ and the opposite signs are not explained. In the framework the proton and electron are independent fields in the same module, with independent couplings; nothing ties them.
 
@@ -296,7 +296,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $m_p$ | Proton mass (a parameter) |
 | $L_{a}R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms |
 | $-iL_{e_t}R_{\vec e_z}=P_R-P_L=\mathrm{diag}(-I_2,I_2)$ | Chirality cell, $-iR_{\vec e_z}\psi=-i\,e_t\psi \vec e_z$, $(-iR_{\vec e_z})^{2}=I_4$ |
-| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ | Generator cells; $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}+iL_{e_\nu}R_{e_{\nu(\nu)}} iL_{e_\mu}R_{e_{\nu(\mu)}}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ | Generator cells; $iL_{e_\mu}R_{\vec e_{\nu(\mu)}} iL_{e_\nu}R_{\vec e_{\nu(\nu)}}+iL_{e_\nu}R_{\vec e_{\nu(\nu)}} iL_{e_\mu}R_{\vec e_{\nu(\mu)}}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ |
 | $P_L=\tfrac12(I_4iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chiral projectors |
 | $Ϙ=ϙ_LP_L+ϙ_RP_R$ | Charge operator on $\Delta$ |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); massive field forces $ϙ_L=ϙ_R$ |

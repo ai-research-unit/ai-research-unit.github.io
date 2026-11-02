@@ -20,7 +20,7 @@ $$
 e_t \mapsto I_2, \qquad \vec e_\mu \mapsto -i\sigma_\mu, \qquad i \mapsto i I_2,
 $$
 
-so that $i \vec e_\mu \leftrightarrow \sigma_\mu$. The five generators are five cells, defined by their action on the state, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its generators are the $i\,iL_{e_\mu}R_{e_{\nu(\mu)}}$ of the paragraph below. Write $L_{a}R_{b}$, so that $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the frame is
+so that $i \vec e_\mu \leftrightarrow \sigma_\mu$. The five generators are five cells, defined by their action on the state, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its generators are the $i\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ of the paragraph below. Write $L_{a}R_{b}$, so that $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the frame is
 
 $$
 iR_{\vec e_x}\psi = i\,e_t\,\psi\,\vec e_x, \qquad
@@ -31,23 +31,23 @@ $$
 that is, $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$. The squares follow from the quaternion table and $i^2=-1$, $(iL_{e_t}R_{\vec e_x})^2=L_{e_t}R_{e_t}$ and $(iL_{\vec e_k}R_{\vec e_y})^2=-L_{e_t}R_{e_t}$, and the mixed products anticommute because the right factors $\vec e_x$ and $\vec e_y$ anticommute while $e_t$ commutes with every unit; hence
 
 $$
-\{iL_{e_\mu}R_{e_{\nu(\mu)}}, iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
+\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}}, iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
 the metric sign being the convention noted in the companion article. This frame is the **chiral (Weyl) representation**: the chirality $-iR_{\vec e_z}$ acts as $-1$ on the left Peirce plane $\mathbb{B}\tilde\Pi_+$ and as $+1$ on the right plane $\mathbb{B}\tilde\Pi_-$, where $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, and $-iL_{e_t}R_{\vec e_z}$, so the upper two-component block is left-handed and the lower is right-handed. We also use the **Dirac basis**, obtained by a $*$-unitary change of basis, in which $iR_{\vec e_x}$ is diagonal, $+1$ on the upper two-component part and $-1$ on the lower, and the two chiralities are mixed; the non-relativistic limit is simplest there. In the sections that construct the solutions we use natural units $\hbar = c = 1$; the dimensionally explicit forms are given where they carry physical meaning, namely in the mass-shell relation and in the Pauli equation.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 The two metric symbols used in this article must not be interchanged. The Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ belongs to the generators, through the anticommutator; the spacetime metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of the companion articles belongs to the $ict'$ gradient, through $\Box$. They are the negatives of one another, and that relative sign is exactly the freedom the companion article flags as convention. The reconciliation is that the massless equation squares to
 
 $$
--iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\,\partial^2/\partial Q_\mu\partial Q_\nu
+-iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\,\partial^2/\partial Q_\mu\partial Q_\nu
 = -\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
 = \sum_{\mu,\nu}\eta_{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
 = \Box,
 $$
 
-so the same $\Box$ results whichever way the sign is assigned, the antisymmetric part of $iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}$ dropping out because the derivatives commute. With the Clifford metric fixed at $g$, the contraction of a four-momentum, with components $p_\mu = (E,-\vec p)$, is the momentum cell
+so the same $\Box$ results whichever way the sign is assigned, the antisymmetric part of $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$ dropping out because the derivatives commute. With the Clifford metric fixed at $g$, the contraction of a four-momentum, with components $p_\mu = (E,-\vec p)$, is the momentum cell
 
 $$
 \bigl(iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k}\bigr) = iR_{\vec e_x} E - \sum_k iL_{\vec e_k}R_{\vec e_y} p_k = E\,R_{i\vec e_x} - p_k\,L_{i\vec e_k}R_{\vec e_y},
@@ -55,7 +55,7 @@ $$
 
 since $e_t$ is the unit, the left factor $L_{e_t}$ of $iR_{\vec e_x}$ is the identity.
 
-A reader who prefers instead to attach $\eta$ to the generators must take the mostly-plus frame $i\,iL_{e_\mu}R_{e_{\nu(\mu)}}$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\sum_\mu i\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
+A reader who prefers instead to attach $\eta$ to the generators must take the mostly-plus frame $i\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\sum_\mu i\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
 
 ## The Dirac field and its two bases
 
@@ -217,7 +217,7 @@ These are the algebraic statement that the four solutions at fixed momentum form
 The **conserved current** of the Dirac field is
 
 $$
-j_\mu = \langle\psi,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi\rangle_{\mathrm D}, \qquad \sum_\mu\partial/\partial Q_\mu j_\mu = 0,
+j_\mu = \langle\psi,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi\rangle_{\mathrm D}, \qquad \sum_\mu\partial/\partial Q_\mu j_\mu = 0,
 $$
 
 with $j_0= \psi^\dagger\psi \ge 0$ and real spatial components. In the series' notation, the current is the four-vector biquaternion
@@ -238,9 +238,9 @@ From a spinor and its adjoint one forms the standard bilinears, classified by th
 |---|---|
 | $\bar{\psi}\psi$ | scalar |
 | $i\,\bar{\psi}\,-iR_{\vec e_z}\psi$ | pseudoscalar |
-| $\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$ | four-vector |
-| $\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi$ | axial four-vector (pseudovector) |
-| $\bar{\psi}\sigma_{\mu\nu}\psi$, $\ \sigma_{\mu\nu} = \tfrac{i}{2}[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}]$ | antisymmetric rank-two tensor |
+| $\bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$ | four-vector |
+| $\bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi$ | axial four-vector (pseudovector) |
+| $\bar{\psi}\sigma_{\mu\nu}\psi$, $\ \sigma_{\mu\nu} = \tfrac{i}{2}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$ | antisymmetric rank-two tensor |
 
 The pseudoscalar is written with the explicit factor of $i$ because, in the convention used here, $\bar{\psi}\,-iR_{\vec e_z}\psi$ is purely imaginary and $i\bar{\psi}\,-iR_{\vec e_z}\psi$ is real. The vector bilinear is the conserved current of the preceding section; the tensor bilinear governs the spin contribution to the current and, as shown below, the magnetic moment.
 
@@ -294,7 +294,7 @@ which is exactly the idempotent $\tilde\Pi_1(\vec u)$ of the informational secto
 The vector bilinear admits the standard Gordon decomposition,
 
 $$
-\bar{w}(p_2)iL_{e_\mu}R_{e_{\nu(\mu)}} w(p) = \bar{w}(p_2)\left[ \frac{(p+p_2)_\mu}{2m} + \frac{i\sum_\nu\sigma_{\mu\nu}(p_2-p)_\nu}{2m} \right] w(p),
+\bar{w}(p_2)iL_{e_\mu}R_{\vec e_{\nu(\mu)}} w(p) = \bar{w}(p_2)\left[ \frac{(p+p_2)_\mu}{2m} + \frac{i\sum_\nu\sigma_{\mu\nu}(p_2-p)_\nu}{2m} \right] w(p),
 $$
 
 which splits the current into a **convection** part, proportional to $(p+p_2)_\mu$, and a **spin** part, proportional to the momentum transfer $(p_2-p)_\nu$ and to the tensor bilinear. The convection term is the orbital current of a charged particle; the spin term is the source of the magnetic coupling, and its coefficient $1/2m$ is what fixes the gyromagnetic factor at the tree level, as the next section shows. (The sign of the spin term depends on the convention chosen for $\sigma_{\mu\nu}$ and for the metric; the identity is standard in the convention stated.)
@@ -429,14 +429,14 @@ with $\vec u$ the Bloch vector of the spin. The Pauli Hamiltonian is a Hermitian
 Setting $m = 0$ decouples the two chiral components. In the chiral basis the Dirac equation becomes the pair of **Weyl equations**
 
 $$
-\boxed{\;i\hbar\,\partial/\partial t'\psi_R = c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_R, \qquad
-i\hbar\,\partial/\partial t'\psi_L = -\,c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_L\;},
+\boxed{\;i\hbar\,\partial/\partial t'\psi_R = c\,\boldsymbol{\sigma}\cdot\vec p\,\psi_R, \qquad
+i\hbar\,\partial/\partial t'\psi_L = -\,c\,\boldsymbol{\sigma}\cdot\vec p\,\psi_L\;},
 $$
 
 or, in covariant form, $\sum_\mu\sigma_\mu\partial/\partial Q_\mu\,\psi_R = 0$ and $\sum_\mu\bar{\sigma}_\mu\partial/\partial Q_\mu\,\psi_L = 0$ with the usual $\sigma_\mu = (I,\boldsymbol{\sigma})$, $\bar{\sigma}_\mu = (I,-\boldsymbol{\sigma})$ up to the metric convention. Each equation has a two-dimensional solution space, and each helicity is locked to a chirality: the right-handed field has positive helicity, the left-handed field negative helicity. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors
 
 $$
-P_L = \tfrac{1}{2}(1 - -iR_{\vec e_z}) = R_{\tilde\Pi_+}, \qquad P_R = \tfrac{1}{2}(1 + -iR_{\vec e_z}) = R_{\tilde\Pi_-}
+P_L = \tfrac{1}{2}\bigl(1 - (-iR_{\vec e_z})\bigr) = R_{\tilde\Pi_+}, \qquad P_R = \tfrac{1}{2}\bigl(1 + (-iR_{\vec e_z})\bigr) = R_{\tilde\Pi_-}
 $$
 
 select the two components, and the biquaternion algebra contains their algebraic counterparts as the central idempotents of the complexified even Clifford algebra discussed in the companion article. The Weyl spinors are thus the $m \to 0$ limit of the solutions constructed above, and the biquaternionic Dirac operator reduces in that limit to the pair of Weyl operators.
@@ -514,13 +514,13 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 | $-iL_{e_t}R_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$ | Chirality; $-1$ on $\mathbb{B}\tilde\Pi_+$, $+1$ on $\mathbb{B}\tilde\Pi_-$ |
 | $\tilde\Pi_\pm = \tfrac12(e_t\pm i\vec e_z)$ | Peirce idempotents; $P_{L,R}=R_{\tilde\Pi_\pm}$ |
 | $\boldsymbol{\alpha}_k = iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y} = L_{\vec e_k}R_{\vec e_z}$ | Velocity operator of the non-relativistic limit |
-| $\sigma_{\mu\nu} = \tfrac{i}{2}[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}]$ | Antisymmetric product of two generators; operator of the tensor bilinear |
+| $\sigma_{\mu\nu} = \tfrac{i}{2}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}]$ | Antisymmetric product of two generators; operator of the tensor bilinear |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators; note $g = -\eta$ |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\bar{\psi}\phi = \langle\psi,\phi\rangle_{\mathrm D} = \psi_L^\dagger\phi_R+\psi_R^\dagger\phi_L$ | Dirac adjoint, the Hermitian pairing twisted by $iR_{\vec e_x}$ |
 | $w^{(r)}(\vec p),\, v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
 | $p_\mu = (E,-\vec p)$, $iR_{\vec e_x}p_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}p_{k} = iR_{\vec e_x}E - \sum_k iL_{\vec e_k}R_{\vec e_y}p_k$ | Four-momentum and its momentum cell |
-| $j_\mu = \langle\psi,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi\rangle_{\mathrm D}$ | Conserved Dirac current |
+| $j_\mu = \langle\psi,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi\rangle_{\mathrm D}$ | Conserved Dirac current |
 | $\tilde{J} = ic\,j_0e_t + \vec j \in \mathbb{M}_-$ | Current as a material-sector biquaternion |
 | $\rho = \psi\psi^\dagger \mapsto \tfrac{1}{2}(e_t + i\vec u)$ | Spin bilinear as an $\mathbb{M}_+$ idempotent |
 | $ϙ$ | Charge of the field under minimal coupling |

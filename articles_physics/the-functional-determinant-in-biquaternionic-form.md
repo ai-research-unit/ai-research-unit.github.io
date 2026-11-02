@@ -98,10 +98,10 @@ confirming the second. The eigenvalues of $\mathsf{M}_2(\tilde Q)$ are $1.520333
 
 The determinant's function in the formalism is to normalize the Gaussian integral, and its one-loop role follows from the same computation.
 
-**The Gaussian.** For a quadratic action $S[\tilde\Phi]=\tfrac12\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle$ the functional-integral article gives
+**The Gaussian.** For a quadratic action $S[\tilde\Phi]=\tfrac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle$ the functional-integral article gives
 $$
-\int\mathcal{D}\tilde\Phi\;\exp(-\frac12\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle)
-= \big(\det K_{\mathrm{kin}}\big)^{-1/2},
+\int\mathcal{D}\tilde\Phi\;\exp(-\frac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle)
+= \big(\det K^{\mathrm{kin}}\big)^{-1/2},
 $$
 the determinant taken on the module. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing); the determinant is taken over the module's components per mode, so the module's dimension enters as the size of the determinant. The power to which the determinant is raised is a convention of real-versus-complex counting and is fixed with the reality of the field; the algebra fixes the module on which the determinant is taken, not the power.
 
@@ -115,7 +115,7 @@ $$
 $$
 where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
 
-**The free case.** For the free biquaternion scalar, $S^{(2)}=K_{\mathrm{kin}}$ is central and mode-diagonal, and
+**The free case.** For the free biquaternion scalar, $S^{(2)}=K^{\mathrm{kin}}$ is central and mode-diagonal, and
 $$
 \Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde P\tilde P^{\natural}+m^2\big)^2
 = \sum_{\text{modes}}\log\big(k_E^2+m^2\big)
@@ -254,7 +254,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\delta\tilde\Phi$ | Fluctuation about the classical field, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi$ |
 | $\det S^{(2)}$, $\mathrm{Tr}\log S^{(2)}$ | Functional determinant; one-loop action |
 | $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
-| $(\det K_{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
+| $(\det K^{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $K(t')=\mathrm{Tr}\,\exp(-t'S^{(2)})$, $K\sim(4\pi t')^{-d/2}\sum a_n {t'}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |

@@ -125,9 +125,9 @@ and these three identities are the only coincidences among the twelve on the com
 
 *Proof.* The symmetric part of the general quaternionic bilinear product is the quaternion form read as a product, $\tilde Q_1\bullet_{\natural}\tilde Q_2(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, which is central; its vector part is zero. Hence $V(\tilde Q_1^{\natural}\tilde Q_2)=V(\tilde Q_1\bullet_{\natural}\tilde Q_2)+V(\tilde Q_1\wedge_{\natural}\tilde Q_2)=V(\tilde Q_1\wedge_{\natural}\tilde Q_2)$. The symmetric part of the general plain sesquilinear product is the Hermitian form read as a product, $\tilde Q_1\bullet_{*}\tilde Q_2(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$, which is central; hence $V(\tilde Q_1\tilde Q_2^{*})=V(\tilde Q_1\wedge_{*}\tilde Q_2)$. The two central products themselves have zero vector part. The nine classes are separated by the three pairs in the next table.
 
-**Theorem (the separation).** The nine values in the table are pairwise distinct, and the three pairs $(\vec e_t,\vec e_x)$, $(\vec e_x,\vec e_y)$ and $(\vec e_x,i\vec e_y)$ separate them.
+**Theorem (the separation).** The nine values in the table are pairwise distinct, and the three pairs $(e_t,\vec e_x)$, $(\vec e_x,\vec e_y)$ and $(\vec e_x,i\vec e_y)$ separate them.
 
-| distinct vector part | products | $(\vec e_t,\vec e_x)$ | $(\vec e_x,\vec e_y)$ | $(\vec e_x,i\vec e_y)$ |
+| distinct vector part | products | $(e_t,\vec e_x)$ | $(\vec e_x,\vec e_y)$ | $(\vec e_x,i\vec e_y)$ |
 |---|---|---|---|---|
 | $\tilde Q_1\tilde Q_2$ | $\tilde Q_1\tilde Q_2$ | $\vec e_x$ | $\vec e_z$ | $i\vec e_z$ |
 | $\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $\vec e_x$ | $-\vec e_z$ | $-i\vec e_z$ |
@@ -153,7 +153,7 @@ $$
 V(\tilde Q_1\tilde Q_2)=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2.
 $$
 
-It is $\mathbb{C}$-bilinear and neither symmetric nor alternating: its symmetric part is $V(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ and its alternating part is $V(\tilde Q_1\wedge\tilde Q_2)=\vec Q_1\times\vec Q_2$, so $V(\tilde Q_1\tilde Q_2)=V(\tilde Q_1\bullet\tilde Q_2)+V(\tilde Q_1\wedge\tilde Q_2)$. Its diagonal is $2Q_t\vec Q$, which vanishes exactly on the union of the centre and the vector subspace; it is the vector part of the square computed in *The Square of an Element*. Its image is all of $\mathrm{Vect}(\mathbb{B})$, since at $\tilde Q_1=\vec e_t$ and $\tilde Q_2=\vec w$ it is $\vec w$. On pure vectors it is the cross product $\vec Q_1\times\vec Q_2$. Its scalar part is the plain form $P$. When one argument is central, only the mixed term of the other survives, and the vector part is a complex multiple of the other vector part.
+It is $\mathbb{C}$-bilinear and neither symmetric nor alternating: its symmetric part is $V(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ and its alternating part is $V(\tilde Q_1\wedge\tilde Q_2)=\vec Q_1\times\vec Q_2$, so $V(\tilde Q_1\tilde Q_2)=V(\tilde Q_1\bullet\tilde Q_2)+V(\tilde Q_1\wedge\tilde Q_2)$. Its diagonal is $2Q_t\vec Q$, which vanishes exactly on the union of the centre and the vector subspace; it is the vector part of the square computed in *The Square of an Element*. Its image is all of $\mathrm{Vect}(\mathbb{B})$, since at $\tilde Q_1=e_t$ and $\tilde Q_2=\vec w$ it is $\vec w$. On pure vectors it is the cross product $\vec Q_1\times\vec Q_2$. Its scalar part is the plain form $P$. When one argument is central, only the mixed term of the other survives, and the vector part is a complex multiple of the other vector part.
 
 ### The General Quaternionic Bilinear Product
 
@@ -301,7 +301,7 @@ $$
 V(\tilde Q_1\wedge_{\natural}\tilde Q_2)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
 $$
 
-It is alternating, and it equals $V(\tilde Q_1^{\natural}\tilde Q_2)$ because the symmetric part $\tilde Q_1\bullet_{\natural}\tilde Q_2$ is central. Its diagonal is zero, its image is all of $\mathrm{Vect}(\mathbb{B})$, and on pure vectors it is $-\vec Q_1\times\vec Q_2$. Its scalar part is zero. It fails the Jacobi identity at $(\vec e_t,\vec e_x,\vec e_y)$ with cyclic sum $-\vec e_z$, as *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* records. It is the antisymmetric part of the quaternionic bilinear product.
+It is alternating, and it equals $V(\tilde Q_1^{\natural}\tilde Q_2)$ because the symmetric part $\tilde Q_1\bullet_{\natural}\tilde Q_2$ is central. Its diagonal is zero, its image is all of $\mathrm{Vect}(\mathbb{B})$, and on pure vectors it is $-\vec Q_1\times\vec Q_2$. Its scalar part is zero. It fails the Jacobi identity at $(e_t,\vec e_x,\vec e_y)$ with cyclic sum $-\vec e_z$, as *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* records. It is the antisymmetric part of the quaternionic bilinear product.
 
 ### The Antisymmetric Plain Sesquilinear Product
 
@@ -311,7 +311,7 @@ $$
 V(\tilde Q_1\wedge_{*}\tilde Q_2)=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
 $$
 
-It is conjugate-alternating, and it equals $V(\tilde Q_1\tilde Q_2^{*})$ because the symmetric part $\tilde Q_1\bullet_{*}\tilde Q_2$ is central. Its diagonal is the vector part of $\tilde Q\tilde Q^{*}$, a purely imaginary vector; its image is all of $\mathrm{Vect}(\mathbb{B})$; on pure vectors it is $-\vec Q_1\times\overline{\vec Q_2}$. Its scalar part is zero. It fails the Jacobi identity at $(\vec e_t,\vec e_x,\vec e_y)$ with cyclic sum $\vec e_z$ and at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, as *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* records. It is the antisymmetric part of the general plain sesquilinear product.
+It is conjugate-alternating, and it equals $V(\tilde Q_1\tilde Q_2^{*})$ because the symmetric part $\tilde Q_1\bullet_{*}\tilde Q_2$ is central. Its diagonal is the vector part of $\tilde Q\tilde Q^{*}$, a purely imaginary vector; its image is all of $\mathrm{Vect}(\mathbb{B})$; on pure vectors it is $-\vec Q_1\times\overline{\vec Q_2}$. Its scalar part is zero. It fails the Jacobi identity at $(e_t,\vec e_x,\vec e_y)$ with cyclic sum $\vec e_z$ and at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, as *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* records. It is the antisymmetric part of the general plain sesquilinear product.
 
 ### The Antisymmetric Quaternionic Sesquilinear Product
 

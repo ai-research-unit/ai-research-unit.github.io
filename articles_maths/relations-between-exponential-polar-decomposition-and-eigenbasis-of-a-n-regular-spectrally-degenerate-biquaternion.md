@@ -154,7 +154,7 @@ $$
 \qquad
 \vec u_{\mathrm b}=\frac{\vec e_y+\vec e_z}{\sqrt2},
 \qquad
-\vec u_{\mathrm r}=\frac{\vec e_t+\vec e_x}{\sqrt2},
+\vec u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2},
 $$
 
 and the polar factors are

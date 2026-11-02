@@ -125,17 +125,17 @@ The modulus is the eigenvalue data of *The Spectrum*, §*The Spectral Criterion*
 The second factor is the whole non-central part of the polar word, the boost and the rotor multiplied,
 
 $$
-\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec U\Theta) = \frac{\tilde{Q}}{\Rho} ,
-\qquad \tilde U_{\mathrm{lor}}\,\tilde U_{\mathrm{lor}}^{\natural} = e_t .
+\tilde U^{\mathrm{lor}} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec U\Theta) = \frac{\tilde{Q}}{\Rho} ,
+\qquad \tilde U^{\mathrm{lor}}\,\tilde U^{\mathrm{lor}}{}^{\natural} = e_t .
 $$
 
-It is a boost of rapidity $\psi$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U_{\mathrm{lor}}$ is the **Lorentz transformation**: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the bilinear sandwich of the physics articles is this factor, written $\tilde U$ there.
+It is a boost of rapidity $\psi$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U^{\mathrm{lor}}$ is the **Lorentz transformation**: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the bilinear sandwich of the physics articles is this factor, written $\tilde U$ there.
 
 | aspect | value |
 |---|---|
-| formula | $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\exp(\vec U\Theta)=\tilde Q/\Rho$ |
+| formula | $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\exp(\vec U\Theta)=\tilde Q/\Rho$ |
 | kind | unit-norm element, the Lorentz transformation |
-| norm | $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}^{\natural}=e_t$ |
+| norm | $\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural}=e_t$ |
 | constituents | the boost of rapidity $\psi$ about $\vec u_{\mathrm b}$ and the rotor of angle $\theta$ about $\vec u_{\mathrm r}$ |
 | exponent | $\Theta\vec U$, a complex multiple of a root of $-e_t$ |
 | role | the second factor, the whole non-central part of the word |
@@ -161,7 +161,7 @@ $$
 \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_- ,
 $$
 
-with $\lambda_\pm=\Rho\exp(\pm i\Theta)$. The basis is therefore an eigenbasis of the operator $L_{\tilde Q}$, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The second factor of the pairing is the same operator stripped of the modulus: since $\Rho$ is central, $L_{\tilde U_{\mathrm{lor}}}=\Rho^{-1}L_{\tilde Q}$ is diagonal in the same basis, with the values $(\exp(i\Theta),\exp(i\Theta),\exp(-i\Theta),\exp(-i\Theta))$. The Hamilton modulus is thus the common factor of the two eigenvalues, $\lambda_\pm=\Rho\exp(\pm i\Theta)$, of $L_{\tilde Q}$, and the Hamilton angle is half the difference of their logarithms: the pairing is the polar form of the spectrum.
+with $\lambda_\pm=\Rho\exp(\pm i\Theta)$. The basis is therefore an eigenbasis of the operator $L_{\tilde Q}$, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The second factor of the pairing is the same operator stripped of the modulus: since $\Rho$ is central, $L_{\tilde U^{\mathrm{lor}}}=\Rho^{-1}L_{\tilde Q}$ is diagonal in the same basis, with the values $(\exp(i\Theta),\exp(i\Theta),\exp(-i\Theta),\exp(-i\Theta))$. The Hamilton modulus is thus the common factor of the two eigenvalues, $\lambda_\pm=\Rho\exp(\pm i\Theta)$, of $L_{\tilde Q}$, and the Hamilton angle is half the difference of their logarithms: the pairing is the polar form of the spectrum.
 
 **The two spinor spaces.** The two Peirce carriers, which here are the minimal left ideals,
 
@@ -185,7 +185,7 @@ the two spinor spaces are the two columns, and
 
 $$
 \mathsf M_2^Q(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-),\qquad
-\mathsf M_2^Q(\tilde U_{\mathrm{lor}})=\operatorname{diag}\bigl(\exp(i\Theta),\exp(-i\Theta)\bigr).
+\mathsf M_2^Q(\tilde U^{\mathrm{lor}})=\operatorname{diag}\bigl(\exp(i\Theta),\exp(-i\Theta)\bigr).
 $$
 
 Both columns are acted on by the same diagonal matrix, which is the matrix form of the statement that $L_{\tilde Q}$ preserves each left ideal and has the same spectrum on each. The pairing of this article is the scalar reading of that diagonal.
@@ -446,7 +446,7 @@ $$
 The central part of the exponent is fixed at $\tfrac{i\pi}{2}e_t$, and the two-factor part is the last two factors of the word multiplied by the real half-turn. These are the statements of the cited article, §*The Idempotent Exponential Form of a Root*; they are recorded here because the extracted product is the second factor of the Hamilton pairing of the root: with $\Rho=i$ on the norm $-e_t$ family,
 
 $$
-\tilde U_{\mathrm{lor}}=\frac{\tilde\Xi}{\Rho}=-i\tilde\Xi=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\tilde U^{\mathrm{lor}}=\frac{\tilde\Xi}{\Rho}=-i\tilde\Xi=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 
 ### The Hermitian Roots
@@ -596,7 +596,7 @@ $$
 \Theta = 0.551850513+0.307926415i , \qquad \vec U = \bigl(0.636163468-0.308495063i\bigr)\vec e_x+\bigl(0.878459065+0.191155095i\bigr)\vec e_y-\bigl(0.117212379+0.241709650i\bigr)\vec e_z ,
 $$
 
-so that $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cos\Theta\,e_t+\sin\Theta\,\vec U$, and the exponent $\Theta\vec U$ is a complex multiple of a root of $-e_t$ whose difference from $\mathcal H+\mathcal R$ has $e_z$-component $0.169760320$ in magnitude, against $0.169705627$ for half the bracket: away from the aligned line the leading Baker–Campbell–Hausdorff term accounts for the gap along the bracket.
+so that $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cos\Theta\,e_t+\sin\Theta\,\vec U$, and the exponent $\Theta\vec U$ is a complex multiple of a root of $-e_t$ whose difference from $\mathcal H+\mathcal R$ has $\vec e_z$-component $0.169760320$ in magnitude, against $0.169705627$ for half the bracket: away from the aligned line the leading Baker–Campbell–Hausdorff term accounts for the gap along the bracket.
 
 ## Summary
 
@@ -638,7 +638,7 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\psi}{2}\vec u_{
 | $\tilde{Q} = r \exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
 | $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real rotor |
 | $\tilde{Q} = \Rho\exp(\vec U\Theta)$ | the Hamilton representation, the root pairing |
-| $\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the second factor, the Lorentz transformation |
+| $\tilde U^{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the second factor, the Lorentz transformation |
 | $\Rho = r\exp(i\alpha) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ | the Hamilton modulus, the complex modulus of the polar decomposition |
 | $\vec U = \vec Q/B$ | the Hamilton axis, the root of $-1$ parallel to the vector part |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ on $\mathbb{B}$; $L_{\tilde Q}$ is diagonal in the eigenbasis, $R_{\tilde Q}$ has the left ideals $S_\pm$ as eigenspaces |

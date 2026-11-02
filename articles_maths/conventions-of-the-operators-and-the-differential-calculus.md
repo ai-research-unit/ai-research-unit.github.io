@@ -311,7 +311,7 @@ $$
 in which the conjugate stands on the first factor and no absolute value is taken; the two derivatives in $Q_t$ are imaginary on the material sector, so that scalar part is $-\lvert\partial\phi/\partial q'_t\rvert^2+\lvert\nabla\phi\rvert^2$, and the kinetic term the series writes is
 
 $$
-\mathcal L_{\mathrm{kin}}=-\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\bigr]=\Bigl|\frac{\partial\phi}{\partial q'_t}\Bigr|^2-\lvert\nabla\phi\rvert^2 ,
+\mathcal L^{\mathrm{kin}}=-\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\bigr]=\Bigl|\frac{\partial\phi}{\partial q'_t}\Bigr|^2-\lvert\nabla\phi\rvert^2 ,
 $$
 
 the kinetic density of the Klein–Gordon article (*Hamiltonian Field Theory in Biquaternionic Form*). **On the material sector** the form itself is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial q'_t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$.

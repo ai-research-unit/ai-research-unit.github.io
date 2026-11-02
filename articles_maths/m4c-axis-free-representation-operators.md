@@ -563,11 +563,11 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 
 **The two ranks.** The matrix rank and the length are different invariants of the same matrix. The matrix rank of a product lies in $\{0,1,2,4\}$ by §*The Rank of a Product*, and it is four exactly when both parameters are units. The length is the coefficient rank, which can be four while the matrix rank is one. Neither invariant determines the other.
 
-**The examples.** The matrix unit $E_{11}$ has matrix rank one and coefficient rank four; the product $L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(e_t+e_y)$ has matrix rank four and coefficient rank one; the product $L^{\mathrm{axf}}(e_t+i\vec e_z)R^{\mathrm{axf}}(e_t+i\vec e_z)$ has matrix rank one and coefficient rank one; the matrix $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ has matrix rank two and coefficient rank two.
+**The examples.** The matrix unit $E_{11}$ has matrix rank one and coefficient rank four; the product $L^{\mathrm{axf}}(e_t+\vec e_x)R^{\mathrm{axf}}(e_t+\vec e_y)$ has matrix rank four and coefficient rank one; the product $L^{\mathrm{axf}}(e_t+i\vec e_z)R^{\mathrm{axf}}(e_t+i\vec e_z)$ has matrix rank one and coefficient rank one; the matrix $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ has matrix rank two and coefficient rank two.
 
 | $M$ | $\operatorname{rank}M$ | $\operatorname{rank}c(M)$ | $\ell(M)$ | decomposition |
 |---|---|---|---|---|
-| $L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(e_t+e_y)$ | $4$ | $1$ | $1$ | by construction |
+| $L^{\mathrm{axf}}(e_t+\vec e_x)R^{\mathrm{axf}}(e_t+\vec e_y)$ | $4$ | $1$ | $1$ | by construction |
 | $L^{\mathrm{axf}}(e_t+i\vec e_z)R^{\mathrm{axf}}(e_t+i\vec e_z)$ | $1$ | $1$ | $1$ | by construction |
 | $R^{\mathrm{axf}}(e_t+i\vec e_z)$ | $2$ | $1$ | $1$ | $L^{\mathrm{axf}}(e_t)R^{\mathrm{axf}}(e_t+i\vec e_z)$ |
 | $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ | $2$ | $2$ | $2$ | $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ |
@@ -621,8 +621,8 @@ The matrix rank of $E_{11}$ is one, and its length is four.
 
 **A single product for contrast.** The product
 $$
-L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(\ e_t+e_y)
-=L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(e_t+e_y)
+L^{\mathrm{axf}}(e_t+\vec e_x)R^{\mathrm{axf}}(\ e_t+\vec e_y)
+=L^{\mathrm{axf}}(e_t+\vec e_x)R^{\mathrm{axf}}(e_t+\vec e_y)
 =
 \begin{pmatrix}
 1&-1&-1&1\\
@@ -818,7 +818,7 @@ The sixteen products $L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$ are real
 
 The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dimensional basis $L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$, computed by $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}})^{\mathsf T}M)$. It is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not the matrix $M$. The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition $\operatorname{rank}c(M)\le1$.
 
-The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for a unit, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are units, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $L^{\mathrm{axf}}(e_t+e_x)R^{\mathrm{axf}}(e_t+e_y)$ has matrix rank four and length one. All sixteen units have length four. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, which has the same rank, and a change of the display alone leaves $c$ unchanged, so the length belongs to the operator and not to the array that displays it.
+The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for a unit, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are units, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $L^{\mathrm{axf}}(e_t+\vec e_x)R^{\mathrm{axf}}(e_t+\vec e_y)$ has matrix rank four and length one. All sixteen units have length four. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, which has the same rank, and a change of the display alone leaves $c$ unchanged, so the length belongs to the operator and not to the array that displays it.
 
 The plain adjoint swaps the two parameters, and the type criteria are $\tilde P=\lambda\tilde Q$ for self-adjoint, $\tilde P\tilde Q=\pm e_t$ for isometry and $\tilde P\tilde Q=e_t$ for multiplicative. The isometry group is $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, and it is not a pin group.
 

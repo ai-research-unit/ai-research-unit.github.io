@@ -67,11 +67,11 @@ The two parent articles meet precisely here.
 
 **What the modular-theory article supplied.** It built the Tomita operator of the finite-dimensional algebra, identified it with Hermitian conjugation, and obtained the polar decomposition
 $$
-\Delta(\tilde Q_1)=e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_1\,e^{\tilde K_{\mathrm{mod}}},\qquad
-J(\tilde Q_1)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde Q_1^{*}e^{\tilde K_{\mathrm{mod}}/2},\qquad
-\sigma_s(\tilde Q_1)=e^{-is\tilde K_{\mathrm{mod}}}\tilde Q_1\,e^{is\tilde K_{\mathrm{mod}}},
+\Delta(\tilde Q_1)=e^{-\tilde K^{\mathrm{mod}}}\,\tilde Q_1\,e^{\tilde K^{\mathrm{mod}}},\qquad
+J(\tilde Q_1)=e^{-\tilde K^{\mathrm{mod}}/2}\tilde Q_1^{*}e^{\tilde K^{\mathrm{mod}}/2},\qquad
+\sigma_s(\tilde Q_1)=e^{-is\tilde K^{\mathrm{mod}}}\tilde Q_1\,e^{is\tilde K^{\mathrm{mod}}},
 $$
-with $\tilde{Ϛ}\in\mathbb{M}_+$ a faithful state and $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$. It also recorded the gap that this construction leaves: the finite-dimensional flow is **inner**, and the framework supplies a family of states but no dynamics that selects one. The abstract flow $\sigma_s$ is what the present article identifies with the boost.
+with $\tilde{Ϛ}\in\mathbb{M}_+$ a faithful state and $\tilde{K}^{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$. It also recorded the gap that this construction leaves: the finite-dimensional flow is **inner**, and the framework supplies a family of states but no dynamics that selects one. The abstract flow $\sigma_s$ is what the present article identifies with the boost.
 
 **What the Unruh article supplied.** It computed the massless two-point function along an accelerated orbit, found that it is periodic in imaginary proper time with period $\beta=2\pi/a$, and read off the Unruh temperature $T=\hbar a/(2\pi c k_B)$. The computation is exact only if the flow along which the correlation function is evaluated is the modular flow. That is the Bisognano–Wichmann theorem. The Unruh article imported it and labelled it as imported; this article states it and checks its two halves inside the framework.
 
@@ -175,7 +175,7 @@ J^2=1,\qquad J\Delta J\Delta=1,\qquad J\,M(W_R)\,J=M(W_L)=M(W_R)_{\mathrm c} .
 $$
 The last is wedge duality. In the finite-dimensional model of the modular-theory article, with $\tilde{Ϛ}\in\mathbb{M}_+$ faithful, the explicit form is
 $$
-J(\tilde Q_1)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde Q_1^{*}e^{\tilde K_{\mathrm{mod}}/2},
+J(\tilde Q_1)=e^{-\tilde K^{\mathrm{mod}}/2}\tilde Q_1^{*}e^{\tilde K^{\mathrm{mod}}/2},
 $$
 and the four identities
 $$
@@ -208,7 +208,7 @@ The question posed for this article is whether the biquaternion framework's boos
 
 *Unitarity.* The modular flow is $*$-unitary: $\Delta^{is}=\exp(-2\pi isK_{\mathrm{boost}})$ satisfies $\Delta^{is}(\Delta^{is})^\dagger=1$. The finite-dimensional boost rotor is Hermitian, $\tilde U_{\mathrm b}(\psi)^{*}=\tilde U_{\mathrm b}(\psi)$, with $\tilde U_{\mathrm b}(\psi)^2=\exp(\psi G_1)\neq e_t$ for $\psi\neq0$, so it is not $*$-unitary implementing a symmetry of the finite-dimensional Hilbert space. This is the familiar statement that the Lorentz group, being noncompact, has no nontrivial finite-dimensional $*$-unitary representation; the $*$-unitary implementation of the boost exists only on the field-theoretic Hilbert space, not inside $\mathbb{B}$.
 
-*Inner versus two-sided.* In finite dimension the modular flow is inner, $\sigma_s(\tilde Q_1)=e^{-is\tilde K_{\mathrm{mod}}}\tilde Q_1\,e^{is\tilde K_{\mathrm{mod}}}=\exp(-isK)\tilde Q_1 \exp(isK)$, whose generator on the algebra is the **commutator** $-i[K,\cdot]$. The geometric boost on $\mathbb{M}_-$ is the **two-sided** action with generator the anticommutator $\tfrac12(G_1\cdot+\cdot G_1)$. On the boost plane the commutator vanishes, $-i[G_1,\tilde{Q}]=0$ for $\tilde{Q}=iq'_te_t+q_x\vec e_x$, while the two-sided action moves $q'_t,q_x$ precisely as the boost; and off the boost plane the commutator generates a rotation in the $(\vec e_y,\vec e_z)$ plane. So the finite-dimensional inner flow cannot be the geometric boost on the material sector. This is the exact sense in which the model verifies the generator but not the flow.
+*Inner versus two-sided.* In finite dimension the modular flow is inner, $\sigma_s(\tilde Q_1)=e^{-is\tilde K^{\mathrm{mod}}}\tilde Q_1\,e^{is\tilde K^{\mathrm{mod}}}=\exp(-isK)\tilde Q_1 \exp(isK)$, whose generator on the algebra is the **commutator** $-i[K,\cdot]$. The geometric boost on $\mathbb{M}_-$ is the **two-sided** action with generator the anticommutator $\tfrac12(G_1\cdot+\cdot G_1)$. On the boost plane the commutator vanishes, $-i[G_1,\tilde{Q}]=0$ for $\tilde{Q}=iq'_te_t+q_x\vec e_x$, while the two-sided action moves $q'_t,q_x$ precisely as the boost; and off the boost plane the commutator generates a rotation in the $(\vec e_y,\vec e_z)$ plane. So the finite-dimensional inner flow cannot be the geometric boost on the material sector. This is the exact sense in which the model verifies the generator but not the flow.
 
 *State selection.* The theorem identifies $\Delta$ with the boost for the **vacuum**. The framework's modular theory requires a faithful state and does not select one: the distinguished tracial state $\tilde{Ϛ}=\tfrac12e_t$ gives the trivial flow. For the boost-thermal state $\tilde{Ϛ}\propto \exp(-\beta G_1)$ the modular Hamiltonian is
 $$

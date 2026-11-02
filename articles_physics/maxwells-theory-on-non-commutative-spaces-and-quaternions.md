@@ -24,7 +24,7 @@ First, and most important, **"non-commutative" here does not mean the non-commut
 
 Second, the deformation is of the **Moyal** type — an algebra deformation, $\theta_{\mu\nu}$ a fixed background. It is not the **C-space** programme of Clifford-valued coordinates, which deforms the arena differently; the corpus holds that programme separately and the two must be compared, not merged. The mathematical side of the Moyal deformation is the star product of *Deformation Quantization*, and the classical limit that the corpus's *Similitudes between the Poisson Bracket and the Quantum Commutator* develops is the undeformed limit here.
 
-Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it'$, the corpus writes $\tilde R = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
+Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it'$, the corpus writes $\tilde R = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $\vec e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
 
 ## The Non-Commutative Arena
 
@@ -307,7 +307,7 @@ $$
 
 which shows the non-linearity in one line: the correction is quadratic in the Riemann–Silberstein vector $\vec v$ and its conjugate. The spin-tensor is defined through the potential by $F = -\nabla A$ with $A = A_\mu\tau_\mu$, which reproduces $F_{\mu\nu}=\partial/\partial x_\mu A_\nu - \partial/\partial x_\nu A_\mu$. The source notes that Eq. (45) "is equivalent to the quaternion form as the quaternion algebra can be realized through the Pauli matrices", and that at $\theta_{\mu\nu}=0$ it becomes the quaternion form of the standard Maxwell equations that the corpus records in *Maxwell's Equations in the Biquaternionic Formulation*. This is the sense in which the paper is about quaternions: the algebra gives the compact form and nothing else.
 
-The transformation properties close the section. Under $X_{\mathrm{lor}} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm{lor}} = L^+\nabla L$, $F_{\mathrm{lor}} = L^{-1}FL$, $J_{\mathrm{lor}} = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\theta$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The Gamma section realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $e_k=i\tau_k$, with $e_4^2=1$ and $e_k^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm{lor}} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
+The transformation properties close the section. Under $X^{\mathrm{lor}} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla^{\mathrm{lor}} = L^+\nabla L$, $F^{\mathrm{lor}} = L^{-1}FL$, $J^{\mathrm{lor}} = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\theta$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The Gamma section realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $\vec e_k=i\tau_k$, with $e_4^2=1$ and $\vec e_k^2=-1$, and records the biquaternion Lorentz transformation $x^{\mathrm{lor}} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
 
 ## Status, Contrasts, and Boundaries
 
@@ -358,7 +358,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $\mathcal E,\vec P$ | Deformed energy density and momentum density; $P_\mu=(\vec P,i\mathcal E)$ |
 | $T^{\mathrm{can}}_{\mu\nu}$, $T^{\mathrm{sym}}_{\mu\nu}$ | Canonical (conservative) and symmetric (not conserved on the deformed arena) stress tensors |
 | $T_\mu{}_\mu$ | Classical trace anomaly, $\propto(\vec\theta\cdot\vec B)(\vec E^2-\vec B^2)-2(\vec\theta\cdot\vec E)(\vec E\cdot\vec B)$; doubles for the symmetric tensor |
-| $\tau_\mu=(\tau_k,\tau_4)$, $\tau_4=i\tau_0$ | Pauli matrices realising the quaternion units; $e_4=\tau_0$, $e_k=i\tau_k$ |
+| $\tau_\mu=(\tau_k,\tau_4)$, $\tau_4=i\tau_0$ | Pauli matrices realising the quaternion units; $e_4=\tau_0$, $\vec e_k=i\tau_k$ |
 | $F=f_\mu\tau_\mu$, $G=g_m\tau_m$ | Spin-tensor (quaternion) field and correction; $f_k=D_k+iB_k$, $g_m=d_m+ih_m$ |
 
 ## Further Reading

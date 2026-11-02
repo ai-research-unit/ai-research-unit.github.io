@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The biquaternion Klein–Gordon operator has a first-order root, but it has no single one. Squaring a first-order operator to the central scalar $\Box-\mu^2$ needs four mutually anticommuting generators with $(iR_{\vec e_x})^2=+1$ and $(iL_{\vec e_k}R_{\vec e_y})^2=-1$, the Lorentz signature; the biquaternion algebra supplies the three spatial ones, and the fourth needs a second factor. That factor doubles the minimal module to four complex dimensions. Write $iL_{e_\mu}R_{e_{\nu(\mu)}}$ for the four generators and $-iR_{\vec e_z}$ for their volume element. With a pseudoscalar mass the single square exists; with the physical scalar mass only a factorisation exists, and the physical equation is one factor of it. The root therefore lives in the two-sided algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while $\Box$ itself remains central.
+The biquaternion Klein–Gordon operator has a first-order root, but it has no single one. Squaring a first-order operator to the central scalar $\Box-\mu^2$ needs four mutually anticommuting generators with $(iR_{\vec e_x})^2=+1$ and $(iL_{\vec e_k}R_{\vec e_y})^2=-1$, the Lorentz signature; the biquaternion algebra supplies the three spatial ones, and the fourth needs a second factor. That factor doubles the minimal module to four complex dimensions. Write $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ for the four generators and $-iR_{\vec e_z}$ for their volume element. With a pseudoscalar mass the single square exists; with the physical scalar mass only a factorisation exists, and the physical equation is one factor of it. The root therefore lives in the two-sided algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while $\Box$ itself remains central.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 The equation is
 
@@ -20,9 +20,9 @@ There are two inequivalent senses of "first-order root", and the article treats 
 
 Three results:
 
-- **The root acts on four complex components.** The derivative part of a first-order operator $i\bigl(iR_{\vec e_x}\partial/\partial Q_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial Q_k\bigr)+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $iL_{e_\mu}R_{e_{\nu(\mu)}}$ mutually anticommute with $(iR_{\vec e_x})^2=+1$ and $(iL_{\vec e_k}R_{\vec e_y})^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
+- **The root acts on four complex components.** The derivative part of a first-order operator $i\bigl(iR_{\vec e_x}\partial/\partial Q_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial Q_k\bigr)+B$, with the Lorentz generators, squares to the scalar $\Box I$ exactly when the four $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ mutually anticommute with $(iR_{\vec e_x})^2=+1$ and $(iL_{\vec e_k}R_{\vec e_y})^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
 - **The algebra supplies three of the four.** The three $\vec e_k$ supply the spatial Clifford system inside $\mathbb{B}$. No fourth element of $\mathbb{B}$ anticommutes with all three, so the fourth acts on a second factor. In the regular picture that factor is the right copy $\mathbb{B}_R$, and the root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
-- **The mass term is constrained.** The condition $\{B,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$ forces $B=c\,-iR_{\vec e_z}$ with $c=\pm i\mu$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
+- **The mass term is constrained.** The condition $\{B,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}=0$ forces $B=c\,-iR_{\vec e_z}$ with $c=\pm i\mu$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
 
 The Clifford classification is standard. The identification of its generators with cells of the two-sided algebra is the corpus's dictionary, and the mass dichotomy read as the reason for the chiral pair is the synthesis offered here. Nothing in the article predicts a mass or a coupling.
 
@@ -108,9 +108,9 @@ In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec 
 Let
 
 $$
-D=i\,iL_{e_\mu}R_{e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu}+B=i\,iR_{\vec e_x}\frac{1}{c}\frac{\partial}{\partial t'}+i\,iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}+B,
+D=i\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu}+B=i\,iR_{\vec e_x}\frac{1}{c}\frac{\partial}{\partial t'}+i\,iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}+B,
 \qquad
-iL_{e_\mu}R_{e_{\nu(\mu)}},B\in M_n(\mathbb{C})\ \text{constant}.
+iL_{e_\mu}R_{\vec e_{\nu(\mu)}},B\in M_n(\mathbb{C})\ \text{constant}.
 $$
 
 This is the most general first-order operator with constant coefficients and no derivative term beyond the first order. The matrices are constant because the classification below is a classification of the algebraic form; position-dependent coefficients are a separate problem, taken up in §*What the Root Does Not Carry*.
@@ -122,7 +122,7 @@ Because the partial derivatives commute, the quadratic term symmetrizes:
 $$
 D^2
 =-\sum_{\mu,\nu}g_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}
-+i\{iL_{e_\mu}R_{e_{\nu(\mu)}},B\}\frac{\partial}{\partial x_\mu}
++i\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},B\}\frac{\partial}{\partial x_\mu}
 +B^2 .
 $$
 
@@ -149,7 +149,7 @@ The signs are those of $\Box$ in the $x$ coordinates, where the metric is $g=\ma
 
 ### The Clifford algebra
 
-Four generators with $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. The algebra is simple, so every nonzero representation is faithful, and its smallest module is $\mathbb{C}^4$. A representation on $\mathbb{C}^2$ would be a two-dimensional module for $M_4(\mathbb{C})$, which does not exist. Hence
+Four generators with $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. The algebra is simple, so every nonzero representation is faithful, and its smallest module is $\mathbb{C}^4$. A representation on $\mathbb{C}^2$ would be a two-dimensional module for $M_4(\mathbb{C})$, which does not exist. Hence
 
 $$
 n\ge 4,
@@ -157,7 +157,7 @@ $$
 
 and $n=4$ is both minimal and realised. The real dimension of the minimal module is eight, the same as the real dimension of $\mathbb{B}$.
 
-The counting can be seen without naming the algebra. Four anticommuting matrices in $M_n(\mathbb{C})$ generate, together with their products, $16$ linearly independent matrices: the identity, the four generators, the six products $iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}$ with $\mu<\nu$, the four products $iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}$, and $-iR_{\vec e_z}$. Sixteen independent matrices require $n^2\ge16$, hence $n\ge4$. The bound is attained by the five cell generators below.
+The counting can be seen without naming the algebra. Four anticommuting matrices in $M_n(\mathbb{C})$ generate, together with their products, $16$ linearly independent matrices: the identity, the four generators, the six products $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$ with $\mu<\nu$, the four products $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,-iR_{\vec e_z}$, and $-iR_{\vec e_z}$. Sixteen independent matrices require $n^2\ge16$, hence $n\ge4$. The bound is attained by the five cell generators below.
 
 The minimal realisation is explicit, and it uses both sides of the algebra. With $L_{a}R_{b}$,
 
@@ -258,10 +258,10 @@ The real dimension count is consistent. The module $\mathbb{C}^4$ has real dimen
 The second root condition is
 
 $$
-\{B,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0\quad\text{for all }\mu .
+\{B,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}=0\quad\text{for all }\mu .
 $$
 
-The anticommutant of the four generators is one-dimensional. If $B$ anticommutes with every $iL_{e_\mu}R_{e_{\nu(\mu)}}$, then $B\,-iR_{\vec e_z}$ commutes with every $iL_{e_\mu}R_{e_{\nu(\mu)}}$. The four generate $M_4(\mathbb{C})$, whose commutant is $\mathbb{C}I$, so $B\,-iR_{\vec e_z}=cI$ and $B=c\,-iR_{\vec e_z}$.
+The anticommutant of the four generators is one-dimensional. If $B$ anticommutes with every $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, then $B\,-iR_{\vec e_z}$ commutes with every $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$. The four generate $M_4(\mathbb{C})$, whose commutant is $\mathbb{C}I$, so $B\,-iR_{\vec e_z}=cI$ and $B=c\,-iR_{\vec e_z}$.
 
 The third condition then gives
 
@@ -276,7 +276,7 @@ So the single-square roots are
 $$
 \mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\,-iR_{\vec e_z},
 \qquad
-\mathsf D=i\,iL_{e_\mu}R_{e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu},
+\mathsf D=i\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu},
 \qquad
 \mathsf D_{\mathrm{ps},\pm}^2=\left(\Box-\mu^2\right)I .
 $$
@@ -306,7 +306,7 @@ The term is parity-odd. A parity-odd mass is not the mass of the Dirac equation,
 The physical mass is a scalar: it multiplies the identity and commutes with every generator. It fails the second condition,
 
 $$
-\{\mu I,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=2\mu\,iL_{e_\mu}R_{e_{\nu(\mu)}}\neq0,
+\{\mu I,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}=2\mu\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\neq0,
 $$
 
 so no single operator of the form $\mathsf D+B$ with a scalar mass squares to the Klein–Gordon operator. Each factor alone carries a first-order remainder:
@@ -402,8 +402,8 @@ The identities were recomputed before they were written. The cell frame was buil
 
 | Check | Result |
 |---|---|
-| $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}-2g_{\mu\nu}I$ | $0$ (exact) |
-| $(-iR_{\vec e_z})^{2}-I$ and $\{-iR_{\vec e_z},iL_{e_\mu}R_{e_{\nu(\mu)}}\}$ | $0$ (exact) |
+| $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}-2g_{\mu\nu}I$ | $0$ (exact) |
+| $(-iR_{\vec e_z})^{2}-I$ and $\{-iR_{\vec e_z},iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}$ | $0$ (exact) |
 | $-iR_{\vec e_z}-i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$ | $0$ (exact) |
 | Tensor form satisfies the same Clifford relations | $0$ (exact) |
 | Anticommutant of all four generators is one-dimensional | rank $15$, nullity $1$ |
@@ -471,7 +471,7 @@ The four contraction sums are frame statements, because a cell's square is. In t
 
 The first-order root of the biquaternion Klein–Gordon operator exists, and its size is fixed by the norm form. The root acts on a module of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose minimal module is $\mathbb{C}^4$. The biquaternion algebra supplies the three spatial generators $\vec e_x,\vec e_y,\vec e_z$, and no fourth; the fourth (time) generator acts on the multiplicity factor and, in the regular picture, is the right multiplication $R_{i\vec e_x}$, which lies in the commutant $\mathbb{B}_R$. The root therefore lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while the Klein–Gordon operator itself remains central.
 
-The mass term is constrained by $\{B,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$. The only single-operator solution is $B=\pm i\mu\,-iR_{\vec e_z}$, a pseudoscalar mass. A scalar mass commutes with the generators, so no single operator with a scalar mass squares to Klein–Gordon; the scalar mass admits only the factorisation $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}$, which is the corpus's chiral pair. The physical mass is the scalar one, so the physical first-order equation is one factor of that factorisation.
+The mass term is constrained by $\{B,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}=0$. The only single-operator solution is $B=\pm i\mu\,-iR_{\vec e_z}$, a pseudoscalar mass. A scalar mass commutes with the generators, so no single operator with a scalar mass squares to Klein–Gordon; the scalar mass admits only the factorisation $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}$, which is the corpus's chiral pair. The physical mass is the scalar one, so the physical first-order equation is one factor of that factorisation.
 
 The scalar Klein–Gordon field, taken as a central scalar, has no first-order root. The results are a classification of form: no mass, no coupling, and no dynamics are predicted. The open questions are the gauged, curved, position-dependent, and real-structure extensions.
 
@@ -493,7 +493,7 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 | $\tilde K=\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Corpus four-wavevector |
 | $\tilde K_{\mathrm s}=i\tilde K$ | Symbol of the gradient; $K_\mu$ its components |
 | $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generators of the root, $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I$ |
+| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | Generators of the root, $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}I$ |
 | $-iL_{e_t}R_{\vec e_z}$ | Pseudoscalar generator, $-iL_{e_t}R_{\vec e_z}=\rho(\chi)$ |
 | $\mathsf D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I$ |
 | $iR_{\vec e_x}k_{0}-\sum_k iL_{\vec e_k}R_{\vec e_y}k_{k}$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |

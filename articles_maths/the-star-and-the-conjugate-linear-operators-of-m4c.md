@@ -12,13 +12,13 @@ The article belongs to the $M_4(\mathbb{C})$ category and uses its conventions t
 
 **The element.** Write
 $$
-b=b_0\,e_t+b_1\,e_x+b_2\,e_y+b_3\,e_z,\qquad b_\mu\in\mathbb{C},
+b=b_0\,e_t+b_1\,\vec e_x+b_2\,\vec e_y+b_3\,\vec e_z,\qquad b_\mu\in\mathbb{C},
 $$
-with $e_t=1$ and $e_x^2=e_y^2=e_z^2=-1$, $e_xe_y=e_z$, $e_ye_z=e_x$, $e_ze_x=e_y$.
+with $e_t=1$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-1$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$.
 
 **The coefficient conjugation.** The **bar** is
 $$
-\bar b=\bar b_0\,e_t+\bar b_1\,e_x+\bar b_2\,e_y+\bar b_3\,e_z .
+\bar b=\bar b_0\,e_t+\bar b_1\,\vec e_x+\bar b_2\,\vec e_y+\bar b_3\,\vec e_z .
 $$
 It is $\mathbb{R}$-linear and $\mathbb{C}$-antilinear, involutive, and multiplicative:
 $$
@@ -28,17 +28,17 @@ It fixes the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and anti-fixes i
 
 **The quaternion conjugation.** The **natural** conjugation is
 $$
-b^{\natural}=b_0\,e_t-b_1\,e_x-b_2\,e_y-b_3\,e_z .
+b^{\natural}=b_0\,e_t-b_1\,\vec e_x-b_2\,\vec e_y-b_3\,\vec e_z .
 $$
 It is $\mathbb{C}$-linear and involutive, and it is an antiautomorphism:
 $$
 (ab)^{\natural}=b^{\natural}a^{\natural}.
 $$
-It fixes the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and anti-fixes the vector subspace $\operatorname{Vect}(\mathbb{B})=\mathbb{C}e_x\oplus\mathbb{C}e_y\oplus\mathbb{C}e_z$.
+It fixes the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and anti-fixes the vector subspace $\operatorname{Vect}(\mathbb{B})=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$.
 
 **The star.** The **star** is the composite
 $$
-b^{*}=\overline{b^{\natural}}=\bar b_0\,e_t-\bar b_1\,e_x-\bar b_2\,e_y-\bar b_3\,e_z .
+b^{*}=\overline{b^{\natural}}=\bar b_0\,e_t-\bar b_1\,\vec e_x-\bar b_2\,\vec e_y-\bar b_3\,\vec e_z .
 $$
 It is $\mathbb{C}$-antilinear, involutive, and an antiautomorphism:
 $$
@@ -73,7 +73,7 @@ $$
 
 **The real basis.** Read $\mathbb{B}$ as the real vector space $\mathbb{R}^8$ with the basis
 $$
-(1,i,\ e_x,i e_x,\ e_y,i e_y,\ e_z,i e_z).
+(1,i,\ \vec e_x,i \vec e_x,\ \vec e_y,i \vec e_y,\ \vec e_z,i \vec e_z).
 $$
 In this basis every real-linear map is an $8\times8$ real matrix.
 
@@ -87,7 +87,7 @@ $$
 $$
 The eigenvalues are $+1$ with multiplicity four (the real quaternion subspace) and $-1$ with multiplicity four (its imaginary multiple).
 
-**The natural conjugation.** In the complex coefficient basis $(e_t,e_x,e_y,e_z)$ it is the diagonal matrix
+**The natural conjugation.** In the complex coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ it is the diagonal matrix
 $$
 D=\operatorname{diag}(1,-1,-1,-1).
 $$
@@ -121,15 +121,15 @@ $$
 
 **The natural conjugation in the two-sided basis.** The linear map $D$ is a genuine element of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and it has a short expansion in the two-sided basis:
 $$
-\boxed{\;{}^{\natural}=-\tfrac12\bigl(L_{e_t}R_{e_t}+L_{e_x}R_{e_x}+L_{e_y}R_{e_y}+L_{e_z}R_{e_z}\bigr)\;}
+\boxed{\;{}^{\natural}=-\tfrac12\bigl(L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}+L_{\vec e_y}R_{\vec e_y}+L_{\vec e_z}R_{\vec e_z}\bigr)\;}
 $$
 where $L_{e_\mu} R_{e_\nu}$ and $L_{e_t}R_{e_t}=I$.
 
-**Proof.** The four matrices are diagonal in the basis $(e_t,e_x,e_y,e_z)$. The matrix $L_{e_t}R_{e_t}=I$ is the identity. The matrix $L_{e_x}R_{e_x}$ is conjugation by $e_x$: on $e_t$ it gives $e_xe_te_x=e_x^2=-e_t$, on $e_x$ it gives $e_x^3=-e_x$, and on $e_y,e_z$ it gives $+e_y,+e_z$. Hence $L_{e_x}R_{e_x}=\operatorname{diag}(-1,-1,1,1)$. Similarly $L_{e_y}R_{e_y}=\operatorname{diag}(-1,1,-1,1)$ and $L_{e_z}R_{e_z}=\operatorname{diag}(-1,1,1,-1)$. The sum is $\operatorname{diag}(-2,2,2,2)$, and $-\tfrac12$ times it is $\operatorname{diag}(1,-1,-1,-1)=D$.
+**Proof.** The four matrices are diagonal in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The matrix $L_{e_t}R_{e_t}=I$ is the identity. The matrix $L_{\vec e_x}R_{\vec e_x}$ is conjugation by $\vec e_x$: on $e_t$ it gives $\vec e_xe_t\vec e_x=\vec e_x^2=-e_t$, on $\vec e_x$ it gives $\vec e_x^3=-\vec e_x$, and on $\vec e_y,\vec e_z$ it gives $+\vec e_y,+\vec e_z$. Hence $L_{\vec e_x}R_{\vec e_x}=\operatorname{diag}(-1,-1,1,1)$. Similarly $L_{\vec e_y}R_{\vec e_y}=\operatorname{diag}(-1,1,-1,1)$ and $L_{\vec e_z}R_{\vec e_z}=\operatorname{diag}(-1,1,1,-1)$. The sum is $\operatorname{diag}(-2,2,2,2)$, and $-\tfrac12$ times it is $\operatorname{diag}(1,-1,-1,-1)=D$.
 
 **Consequence.** The star has the expansion
 $$
-b^{*}=-\tfrac12\bigl(L_{e_t}R_{e_t}+L_{e_x}R_{e_x}+L_{e_y}R_{e_y}+L_{e_z}R_{e_z}\bigr)(\bar b).
+b^{*}=-\tfrac12\bigl(L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}+L_{\vec e_y}R_{\vec e_y}+L_{\vec e_z}R_{\vec e_z}\bigr)(\bar b).
 $$
 The star is therefore **not** in the complex span of the $L_{e_\mu} R_{e_\nu}$: it is the linear operator $D$ applied after the fixed coefficient conjugation. The phrase "the matrix of the star in the two-sided basis" has this precise meaning: the star has no $4\times4$ complex matrix, its linear part has the four-term expansion above, and the conjugation is the fixed real structure.
 
@@ -224,36 +224,36 @@ The operators $A_0,A_k$ are conjugate-linear; $A_5$ is linear. They act on $\mat
 **Proof.** The square of the bar is the identity. For the spacelike generators, use the fact that the bar is an **automorphism**, so $\bar{\cdot}\circ L_a\circ\bar{\cdot}=L_{\bar a}$:
 $$
 (A_k)^2
-=\bar{\cdot}L_{-i e_k}\bar{\cdot}L_{-i e_k}
-=L_{\overline{-i e_k}}L_{-i e_k}
-=L_{i e_k}L_{-i e_k}
-=L_{e_k^2}
+=\bar{\cdot}L_{-i \vec e_k}\bar{\cdot}L_{-i \vec e_k}
+=L_{\overline{-i \vec e_k}}L_{-i \vec e_k}
+=L_{i \vec e_k}L_{-i \vec e_k}
+=L_{\vec e_k^2}
 =L_{-1}=-I .
 $$
 For $j\neq k$,
 $$
 A_jA_k+A_kA_j
-=L_{e_j}L_{e_k}+L_{e_k}L_{e_j}=0,
+=L_{\vec e_j}L_{\vec e_k}+L_{\vec e_k}L_{\vec e_j}=0,
 $$
-because $e_j,e_k$ anticommute. The mixed anticommutator with $A_0$ is
+because $\vec e_j,\vec e_k$ anticommute. The mixed anticommutator with $A_0$ is
 $$
-\bar{\cdot}\bigl((-i e_k)\bar x\bigr)+(-i e_k)\bar{\cdot}\bar x
-=\overline{(-i e_k)\bar x}+(-i e_k)x
+\bar{\cdot}\bigl((-i \vec e_k)\bar x\bigr)+(-i \vec e_k)\bar{\cdot}\bar x
+=\overline{(-i \vec e_k)\bar x}+(-i \vec e_k)x
 =i e_kx-i e_kx=0 .
 $$
-Finally $A_5$ is right multiplication by $-i e_z$, so its square is $R_{(-i e_z)^2}=R_{-e_z^2}=I$, and it anticommutes with each $A_\mu$ because $L$ and $R$ commute and the multipliers anticommute up to the scalar.
+Finally $A_5$ is right multiplication by $-i \vec e_z$, so its square is $R_{(-i \vec e_z)^2}=R_{-\vec e_z^2}=I$, and it anticommutes with each $A_\mu$ because $L$ and $R$ commute and the multipliers anticommute up to the scalar.
 
 **The volume element.** In this dictionary the product of the four generators is central:
 $$
 A_0A_1A_2A_3=iI .
 $$
-The volume element of the real Clifford module is the central imaginary $i$, not an independent chirality. The operator $A_5$ is a separate right multiplication by $-i e_z$; it is the grading of the Dirac module, not the product of the four generators. This is the exact sense in which the real module has a volume element and a chirality that are different operators.
+The volume element of the real Clifford module is the central imaginary $i$, not an independent chirality. The operator $A_5$ is a separate right multiplication by $-i \vec e_z$; it is the grading of the Dirac module, not the product of the four generators. This is the exact sense in which the real module has a volume element and a chirality that are different operators.
 
 **The even part.** The even products of the generators are left multiplications:
 $$
-A_0A_k=\bar{\cdot}\,\bar{\cdot}L_{-i e_k}=L_{-i e_k},
+A_0A_k=\bar{\cdot}\,\bar{\cdot}L_{-i \vec e_k}=L_{-i \vec e_k},
 \qquad
-A_jA_k=L_{e_j}L_{e_k},
+A_jA_k=L_{\vec e_j}L_{\vec e_k},
 \qquad
 A_5A_\mu=-A_\mu A_5 .
 $$
@@ -267,16 +267,16 @@ $$
 $$
 and the carrier remains $\mathbb{B}$.
 
-**The chirality action.** The operator $A_5=R_{-i e_z}$ commutes with every left multiplication and anticommutes with every $A_\mu$. Its eigenspaces are the two chiral halves of the bimodule; on the left regular module it is a right multiplication, which is the algebraic reason the chirality is not in the left factor.
+**The chirality action.** The operator $A_5=R_{-i \vec e_z}$ commutes with every left multiplication and anticommutes with every $A_\mu$. Its eigenspaces are the two chiral halves of the bimodule; on the left regular module it is a right multiplication, which is the algebraic reason the chirality is not in the left factor.
 
 ## The Complex-Linear Dictionary
 
 **Theorem (the coefficient-frame dictionary).** In the same algebra, put
 $$
-G_0=iL_{e_t}R_{e_x},\qquad
-G_k=iL_{\vec e_k}R_{e_y}\quad(k=1,2,3),
+G_0=iL_{e_t}R_{\vec e_x},\qquad
+G_k=iL_{\vec e_k}R_{\vec e_y}\quad(k=1,2,3),
 \qquad
-G_5=-iL_{e_t}R_{e_z}.
+G_5=-iL_{e_t}R_{\vec e_z}.
 $$
 These are $\mathbb{C}$-linear, they are five elements of the two-sided basis, and they satisfy the same Clifford relations, with
 $$
@@ -285,33 +285,33 @@ $$
 
 **Proof.** The square of $G_0$ is
 $$
-(G_0)^2=i^2\,L_{e_t}R_{e_x}L_{e_t}R_{e_x}=(-1)\,L_{e_t}L_{e_t}R_{e_x}R_{e_x}=(-1)(-I)=I .
+(G_0)^2=i^2\,L_{e_t}R_{\vec e_x}L_{e_t}R_{\vec e_x}=(-1)\,L_{e_t}L_{e_t}R_{\vec e_x}R_{\vec e_x}=(-1)(-I)=I .
 $$
 The square of $G_k$ is
 $$
-(G_k)^2=i^2\,L_{\vec e_k}R_{e_y}L_{\vec e_k}R_{e_y}=(-1)\,L_{\vec e_k}L_{\vec e_k}R_{e_y}R_{e_y}=(-1)(-I)(-I)=-I .
+(G_k)^2=i^2\,L_{\vec e_k}R_{\vec e_y}L_{\vec e_k}R_{\vec e_y}=(-1)\,L_{\vec e_k}L_{\vec e_k}R_{\vec e_y}R_{\vec e_y}=(-1)(-I)(-I)=-I .
 $$
 The mixed anticommutator is
 $$
 G_0G_k+G_kG_0
-=-\bigl(L_{e_t}R_{e_x}L_{\vec e_k}R_{e_y}+L_{\vec e_k}R_{e_y}L_{e_t}R_{e_x}\bigr)
-=-\bigl(L_{\vec e_k}R_{e_-z}+L_{\vec e_k}R_{e_z}\bigr)=0,
+=-\bigl(L_{e_t}R_{\vec e_x}L_{\vec e_k}R_{\vec e_y}+L_{\vec e_k}R_{\vec e_y}L_{e_t}R_{\vec e_x}\bigr)
+=-\bigl(L_{\vec e_k}R_{e_-z}+L_{\vec e_k}R_{\vec e_z}\bigr)=0,
 $$
 and for $j\neq k$,
 $$
 G_jG_k+G_kG_j
-=-\bigl(L_{\vec e_j}R_{e_y}L_{\vec e_k}R_{e_y}+L_{\vec e_k}R_{e_y}L_{\vec e_j}R_{e_y}\bigr)
+=-\bigl(L_{\vec e_j}R_{\vec e_y}L_{\vec e_k}R_{\vec e_y}+L_{\vec e_k}R_{\vec e_y}L_{\vec e_j}R_{\vec e_y}\bigr)
 =-\bigl(-L_{\vec e_j}R_{\vec e_k}-L_{\vec e_k}R_{\vec e_j}\bigr)=0 .
 $$
 The anticommutators with $G_5$ are
 $$
-G_5G_0+G_0G_5=L_{e_t}R_{e_-y}+L_{e_t}R_{e_y}=0,
+G_5G_0+G_0G_5=L_{e_t}R_{e_-y}+L_{e_t}R_{\vec e_y}=0,
 \qquad
-G_5G_k+G_kG_5=L_{\vec e_k}R_{e_x}-L_{\vec e_k}R_{e_x}=0 .
+G_5G_k+G_kG_5=L_{\vec e_k}R_{\vec e_x}-L_{\vec e_k}R_{\vec e_x}=0 .
 $$
 The product identity is the cell computation
 $$
-G_0G_1G_2G_3=L_{e_t}R_{e_x}L_{e_x}R_{e_y}L_{\vec e_y}R_{\vec e_y}L_{\vec e_z}R_{\vec e_y}=-L_{e_t}R_{e_z}=-iG_5 . \qquad\square
+G_0G_1G_2G_3=L_{e_t}R_{\vec e_x}L_{\vec e_x}R_{\vec e_y}L_{\vec e_y}R_{\vec e_y}L_{\vec e_z}R_{\vec e_y}=-L_{e_t}R_{\vec e_z}=-iG_5 . \qquad\square
 $$
 
 **The even part.** The even products of this dictionary generate the **complexified** even Clifford algebra
@@ -324,9 +324,9 @@ of complex dimension eight, not the four-dimensional left factor $L(\mathbb{B})$
 
 | feature | real-linear dictionary | complex-linear dictionary |
 |---|---|---|
-| time generator | $\bar{\cdot}$ (antilinear) | $G_0=iL_{e_t}R_{e_x}$ (linear) |
-| spatial generator | $\bar{\cdot}L_{-i e_k}$ (antilinear) | $G_k=iL_{\vec e_k}R_{e_y}$ (linear) |
-| chirality | $A_5=R_{-i e_z}$ (linear) | $G_5=-iL_{e_t}R_{e_z}$ (linear) |
+| time generator | $\bar{\cdot}$ (antilinear) | $G_0=iL_{e_t}R_{\vec e_x}$ (linear) |
+| spatial generator | $\bar{\cdot}L_{-i \vec e_k}$ (antilinear) | $G_k=iL_{\vec e_k}R_{\vec e_y}$ (linear) |
+| chirality | $A_5=R_{-i \vec e_z}$ (linear) | $G_5=-iL_{e_t}R_{\vec e_z}$ (linear) |
 | product of the four | $iI$ | $-iG_5$ |
 | even part | $L(\mathbb{B})\cong\mathbb{B}$ | $M_2\oplus M_2$ |
 | odd part | $\bar{\cdot}L(\mathbb{B})$ | the off-diagonal block |
@@ -336,7 +336,7 @@ of complex dimension eight, not the four-dimensional left factor $L(\mathbb{B})$
 
 ## The Star and the Adjoint
 
-**The Dirac adjoint.** The Dirac adjoint of a spinor is $\bar\psi=\psi^{*}G_0$, with $G_0=iL_{e_t}R_{e_x}$ the time generator of the complex frame. In the operator dictionary the two factors are the star (the algebra involution on the spinor) and the time generator (the odd operation). The star is not the generator; the generator is the bar in the real frame, and the cell $iL_{e_t}R_{e_x}$ in the complex frame. The composite is the adjoint.
+**The Dirac adjoint.** The Dirac adjoint of a spinor is $\bar\psi=\psi^{*}G_0$, with $G_0=iL_{e_t}R_{\vec e_x}$ the time generator of the complex frame. In the operator dictionary the two factors are the star (the algebra involution on the spinor) and the time generator (the odd operation). The star is not the generator; the generator is the bar in the real frame, and the cell $iL_{e_t}R_{\vec e_x}$ in the complex frame. The composite is the adjoint.
 
 **The Hermitian form.** The Hermitian form on $\mathbb{B}$ is
 $$
@@ -352,14 +352,14 @@ The gammas are the five generators of the two frames above, written as matrices;
 
 $$
 \gamma_0=\bar{\cdot},\quad
-\gamma_k=\bar{\cdot}L_{-i e_k},\quad
-\gamma_5=R_{-i e_z}
+\gamma_k=\bar{\cdot}L_{-i \vec e_k},\quad
+\gamma_5=R_{-i \vec e_z}
 $$
 for the real-linear frame, and
 $$
-\gamma_0=iL_{e_t}R_{e_x},\quad
-\gamma_k=iL_{\vec e_k}R_{e_y},\quad
-\gamma_5=-iL_{e_t}R_{e_z}
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad
+\gamma_k=iL_{\vec e_k}R_{\vec e_y},\quad
+\gamma_5=-iL_{e_t}R_{\vec e_z}
 $$
 for the complex-linear frame, with $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ in the latter.
 
@@ -369,7 +369,7 @@ The difference between the frames is the difference between the bar and the cell
 
 The biquaternion algebra carries three involutions: the bar (antilinear automorphism, fixed space $\mathbb{H}_{\mathbb{B}}$), the natural conjugation (linear antiautomorphism, fixed space $\mathbb{C}_{\mathbb{B}}$) and the star (antilinear antiautomorphism, fixed space $\mathbb{M}_+$). The star is the composite of the bar and the natural conjugation. In the real basis the bar is $J=\operatorname{diag}(J_2,J_2,J_2,J_2)$ and the star is $S=D_8J$; both have trace zero and determinant one. In the complex coefficient basis the natural conjugation is $D=\operatorname{diag}(1,-1,-1,-1)$, and it has the two-sided expansion
 $$
-{}^{\natural}=-\tfrac12(L_{e_t}R_{e_t}+L_{e_x}R_{e_x}+L_{e_y}R_{e_y}+L_{e_z}R_{e_z}).
+{}^{\natural}=-\tfrac12(L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}+L_{\vec e_y}R_{\vec e_y}+L_{\vec e_z}R_{\vec e_z}).
 $$
 The star is therefore the antilinear map $b\mapsto D\bar b$; it has no $4\times4$ complex matrix, and it lies in the antilinear half of the real endomorphism algebra.
 
@@ -383,28 +383,28 @@ A_5=R_{-i\vec e_z},
 $$
 with $(A_0)^2=I$, $(A_k)^2=-I$, $\{A_\mu,A_\nu\}=2g_{\mu\nu}I$, and $\{A_5,A_\mu\}=0$. The product of the four is $iI$; the even part is $L(\mathbb{B})\cong\mathbb{B}$, and the odd part is the conjugate-linear family. The complex-linear frame is the five cells
 $$
-G_0=iL_{e_t}R_{e_x},\qquad
-G_k=iL_{\vec e_k}R_{e_y},\qquad
-G_5=-iL_{e_t}R_{e_z},
+G_0=iL_{e_t}R_{\vec e_x},\qquad
+G_k=iL_{\vec e_k}R_{\vec e_y},\qquad
+G_5=-iL_{e_t}R_{\vec e_z},
 $$
 with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The two dictionaries are different realizations on the same carrier, one antilinear and one linear; the first is the operation-level form of the odd sector, the second is the coefficient-frame matrix form.
 
 | object | value |
 |---|---|
 | bar | $\bar b=\sum\bar b_\mu e_\mu$, antilinear automorphism |
-| natural | $b^{\natural}=b_0e_t-\sum_{k}b_ke_k$, linear antiautomorphism |
-| star | $b^{*}=\bar b_0e_t-\sum_k\bar b_ke_k$, antilinear antiautomorphism |
+| natural | $b^{\natural}=b_0e_t-\sum_{k}b_k\vec e_k$, linear antiautomorphism |
+| star | $b^{*}=\bar b_0e_t-\sum_k\bar b_k\vec e_k$, antilinear antiautomorphism |
 | bar matrix | $J=\operatorname{diag}(J_2,J_2,J_2,J_2)$, $\operatorname{tr}J=0$, $\det J=1$ |
 | natural matrix | $D=\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{tr}D=-2$, $\det D=1$ |
 | star matrix | $S=D_8J$, $\operatorname{tr}S=0$, $\det S=1$ |
-| natural in the cell basis | $-\tfrac12(L_{e_t}R_{e_t}+L_{e_x}R_{e_x}+L_{e_y}R_{e_y}+L_{e_z}R_{e_z})$ |
+| natural in the cell basis | $-\tfrac12(L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}+L_{\vec e_y}R_{\vec e_y}+L_{\vec e_z}R_{\vec e_z})$ |
 | $C_b$ | $L_{\bar b}\bar{\cdot}$ |
 | $C_aC_b$ | $L_{\bar a b}$ |
 | $C'_aC'_b$ | $L_{a\bar b}$ |
 | $S_aS_b$ | $L_{b}R_{a^{*}}$ |
-| real frame | $A_0=\bar{\cdot}$, $A_k=\bar{\cdot}L_{-i e_k}$, $A_5=R_{-i e_z}$ |
+| real frame | $A_0=\bar{\cdot}$, $A_k=\bar{\cdot}L_{-i \vec e_k}$, $A_5=R_{-i \vec e_z}$ |
 | real volume element | $A_0A_1A_2A_3=iI$ |
-| complex frame | $G_0=iL_{e_t}R_{e_x}$, $G_k=iL_{\vec e_k}R_{e_y}$, $G_5=-iL_{e_t}R_{e_z}$ |
+| complex frame | $G_0=iL_{e_t}R_{\vec e_x}$, $G_k=iL_{\vec e_k}R_{\vec e_y}$, $G_5=-iL_{e_t}R_{\vec e_z}$ |
 | complex volume element | $G_5=iG_0G_1G_2G_3$ |
 
 ## Summary of Notation
@@ -412,7 +412,7 @@ with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-| $e_t,e_x,e_y,e_z$ | the biquaternion units, $e_x^2=e_y^2=e_z^2=-1$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the biquaternion units, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-1$ |
 | $\bar b$ | the coefficient conjugation of $b$ |
 | $b^{\natural}$ | the quaternion conjugation of $b$ |
 | $b^{*}$ | the star, $\overline{b^{\natural}}$ |

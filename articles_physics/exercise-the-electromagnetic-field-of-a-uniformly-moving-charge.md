@@ -44,7 +44,7 @@ $$
 \qquad
 \tanh\psi_b = \frac{v_b}{c},
 $$
-**carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde U_{\vec v_b}(ic\,e_t)\tilde U_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde U_{\mathrm{lor}}\tilde{F}\tilde U_{\mathrm{lor}}^{*}$, where $\tilde U_{\mathrm{lor}}$ is a general Lorentz rotor; that is the parent's Problem 5 and we use its result.
+**carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde U_{\vec v_b}(ic\,e_t)\tilde U_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde U^{\mathrm{lor}}\tilde{F}\tilde U^{\mathrm{lor}}{}^{*}$, where $\tilde U^{\mathrm{lor}}$ is a general Lorentz rotor; that is the parent's Problem 5 and we use its result.
 
 **New notation for this exercise.** Since the uniform case is naturally organized around the charge's *present* position, write the **present separation**
 $$
@@ -286,7 +286,7 @@ $$
 $$
 whose velocity is $-c\tanh\psi_b\,\vec u = -\vec v_b$. So the rotor built with $+\vec v_b$ carries the lab to the frame moving with $+\vec v_b$; a particle at rest in the lab appears in that frame to move with $-\vec v_b$.
 
-**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}^{*}$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
+**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
 $$
 \tilde{F}_2 = \tilde U^{\natural}_{\vec v_b}\,\tilde{F}\,\tilde U_{\vec v_b}
 = \tilde U_{\vec v_b}^{-1}\tilde{F}\,\tilde U_{\vec v_b}

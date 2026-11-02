@@ -211,7 +211,7 @@ reduce to a conformal map of vectors. For Minkowski space the entries live in $\
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_0:\tilde{Q}\mapsto i\,e_t\tilde{Q}e_x,\quad \gamma_1:\tilde{Q}\mapsto i\,e_x\tilde{Q}e_y,\quad \gamma_2:\tilde{Q}\mapsto i\,e_y\tilde{Q}e_y,\quad \gamma_3:\tilde{Q}\mapsto i\,e_z\tilde{Q}e_y,\quad \gamma_5:\tilde{Q}\mapsto -i\,e_t\tilde{Q}e_z .
+\gamma_0:\tilde{Q}\mapsto i\,e_t\tilde{Q}\vec e_x,\quad \gamma_1:\tilde{Q}\mapsto i\,\vec e_x\tilde{Q}\vec e_y,\quad \gamma_2:\tilde{Q}\mapsto i\,\vec e_y\tilde{Q}\vec e_y,\quad \gamma_3:\tilde{Q}\mapsto i\,\vec e_z\tilde{Q}\vec e_y,\quad \gamma_5:\tilde{Q}\mapsto -i\,e_t\tilde{Q}\vec e_z .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

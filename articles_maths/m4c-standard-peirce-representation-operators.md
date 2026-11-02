@@ -329,7 +329,7 @@ $$
 $$
 The mass term is $-mL_tR_t$. For a momentum $p$, the same operator reads
 $$
-D(p)=i\bigl(L_{e_t}R_xp_t+L_{\vec e_x}R_yp_x+L_{\vec e_y}R_yp_y+L_{\vec e_z}R_yp_z\bigr),
+D(p)=i\bigl((L_{e_t}R_{\vec e_x}p_t+L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)\bigr),
 $$
 so the frame is visible in the formula: another pair $(\beta,\delta)$ replaces the four cells by four single products spread over several cells. This is the matrix Dirac operator of the frame; it is not the biquaternionic gradient $\tilde\nabla$, which is a left multiplication. The dictionary relates the two; it does not identify them as operators on the same carrier.
 
@@ -471,7 +471,7 @@ with $u_i$ the $i$-th standard column, has $\operatorname{rank}M_1=1$ and coeffi
 | $M$ | $\operatorname{rank}M$ | $\operatorname{rank}c(M)$ | $\ell(M)$ | decomposition |
 |---|---|---|---|---|
 | $L_{e_t}R_{e_t}+L_{e_t}R_{\vec e_z}$ | $4$ | $1$ | $1$ | $L_{e_t}R_{e_t+\vec e_z}$ |
-| $P_+$ | $2$ | $1$ | $1$ | $L_{e_t/2}R_{e_t-ie_z}$ |
+| $P_+$ | $2$ | $1$ | $1$ | $L_{e_t/2}R_{e_t-i\vec e_z}$ |
 | $L_{\tilde Q}R_{\tilde P}$ with $\tilde Q,\tilde P\neq0$ and $\langle\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}=0$ | $1$ | $1$ | $1$ | by construction |
 | $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ | $2$ | $2$ | $2$ | $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ |
 | $M_1=(u_2+u_3)(u_2+u_3)^{\mathsf T}$ | $1$ | $4$ | $4$ | $\tfrac12(L_{e_t}R_{e_t}-L_{\vec e_x}R_{\vec e_x}+L_{\vec e_y}R_{\vec e_y}+L_{\vec e_z}R_{\vec e_z})$ |
@@ -717,7 +717,7 @@ $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=iL_{e_t}R_{\beta\delta}.
 $$
 
-*Proof.* $(\gamma_0)^2=-R(\delta^2)=\mathrm I_4$; $(\gamma_k)^2=-L(\vec e_k^2)R(\beta^2)=-\mathrm I_4$; $\gamma_0\gamma_k+\gamma_k\gamma_0=-L(\vec e_k)(R(\delta\beta)+R(\beta\delta))=0$; $\gamma_j\gamma_k+\gamma_k\gamma_j=-L(e_je_k+e_ke_j)R(\beta^2)=0$. For the pseudoscalar, the left factor is $L(e_te_xe_ye_z)=L(-e_t)$ and the right factor is $R(\beta^3\delta)=R(-\beta\delta)$; the two signs cancel, so the product is $L_{e_t}R_{\beta\delta}$.
+*Proof.* $(\gamma_0)^2=-R(\delta^2)=\mathrm I_4$; $(\gamma_k)^2=-L(\vec e_k^2)R(\beta^2)=-\mathrm I_4$; $\gamma_0\gamma_k+\gamma_k\gamma_0=-L(\vec e_k)(R(\delta\beta)+R(\beta\delta))=0$; $\gamma_j\gamma_k+\gamma_k\gamma_j=-L(\vec e_j\vec e_k+\vec e_k\vec e_j)R(\beta^2)=0$. For the pseudoscalar, the left factor is $L(e_t\vec e_x\vec e_y\vec e_z)=L(-e_t)$ and the right factor is $R(\beta^3\delta)=R(-\beta\delta)$; the two signs cancel, so the product is $L_{e_t}R_{\beta\delta}$.
 
 ### The sixteen products of the frame
 

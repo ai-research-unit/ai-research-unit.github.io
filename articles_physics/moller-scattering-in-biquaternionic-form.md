@@ -12,7 +12,7 @@ The article is organised as follows. The next section sets up the two diagrams, 
 
 ### Kinematics
 
-Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $p_{i0}\,iR_{e_x}-\sum_k p_{ik}\,iL_{e_k}R_{e_y}=m$ on shell, $m = m_e$. The the generator cell are the canonical frame's cells, $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ for $k=1,2,3$. Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$. The **Mandelstam variables** are
+Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $p_{i0}\,iR_{\vec e_x}-\sum_k p_{ik}\,iL_{\vec e_k}R_{\vec e_y}=m$ on shell, $m = m_e$. The the generator cell are the canonical frame's cells, $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$. Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$. The **Mandelstam variables** are
 
 $$
 s = (p_1+p_2)^2 = (p_3+p_4)^2,
@@ -50,13 +50,13 @@ $$
 The $t$-channel diagram contributes
 
 $$
-i\mathcal M_t = \frac{(-ie)^2(-i)}{t}\Bigl[\bar w(p_3)iR_{e_x}w(p_1)\,\bar w(p_4)iR_{e_x}w(p_2)-\sum_k\bar w(p_3)iL_{e_k}R_{e_y}w(p_1)\,\bar w(p_4)iL_{e_k}R_{e_y}w(p_2)\Bigr],
+i\mathcal M_t = \frac{(-ie)^2(-i)}{t}\Bigl[\bar w(p_3)iR_{\vec e_x}w(p_1)\,\bar w(p_4)iR_{\vec e_x}w(p_2)-\sum_k\bar w(p_3)iL_{\vec e_k}R_{\vec e_y}w(p_1)\,\bar w(p_4)iL_{\vec e_k}R_{\vec e_y}w(p_2)\Bigr],
 $$
 
 and the $u$-channel diagram, obtained by exchanging the two final electrons, contributes
 
 $$
-i\mathcal M_u = \frac{(-ie)^2(-i)}{u}\Bigl[\bar w(p_3)iR_{e_x}w(p_2)\,\bar w(p_4)iR_{e_x}w(p_1)-\sum_k\bar w(p_3)iL_{e_k}R_{e_y}w(p_2)\,\bar w(p_4)iL_{e_k}R_{e_y}w(p_1)\Bigr].
+i\mathcal M_u = \frac{(-ie)^2(-i)}{u}\Bigl[\bar w(p_3)iR_{\vec e_x}w(p_2)\,\bar w(p_4)iR_{\vec e_x}w(p_1)-\sum_k\bar w(p_3)iL_{\vec e_k}R_{\vec e_y}w(p_2)\,\bar w(p_4)iL_{\vec e_k}R_{\vec e_y}w(p_1)\Bigr].
 $$
 
 Because the two final states differ only by the exchange of identical fermions, the amplitudes are combined with a relative minus sign,
@@ -70,16 +70,16 @@ the **Pauli exchange sign**. This single sign is the whole of the interference s
 
 ## The Spin-Summed Matrix Element
 
-Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives, with $D(p):=p_0\,iR_{e_x}-\sum_k p_k\,iL_{e_k}R_{e_y}+m\,L_{e_t}R_{e_t}$ the cell of the momentum shell,
+Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives, with $D(p):=p_0\,iR_{\vec e_x}-\sum_k p_k\,iL_{\vec e_k}R_{\vec e_y}+m\,L_{e_t}R_{e_t}$ the cell of the momentum shell,
 
 $$
-\frac14\sum_{\mathrm{spins}}|\mathcal M|^2 = \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_4)]
+\frac14\sum_{\mathrm{spins}}|\mathcal M|^2 = \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_4)]
 $$
 $$
-\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_4)]
+\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_4)]
 $$
 $$
-\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[D(p_3)iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_4)iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}}] \Big\},
+\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[D(p_3)iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_4)iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}] \Big\},
 $$
 
 using the spin sum $\sum_s w_s(p)\bar w_s(p) = D(p)$ and the Gamma section's trace identity, the trace of four generators is $4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
@@ -91,7 +91,7 @@ $$
 
 Each of the three terms has the same anatomy: the two trace factors are the two electron **currents** contracted with each other through the photon propagator's $1/t$ or $1/u$, and the cross term is the interference, with the minus sign of exchange explicit in the coefficient $-\tfrac{2}{tu}$.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 ## The Cross Section and Its Limits
 
@@ -222,8 +222,8 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $G_{\mathrm F}$ | Fermi constant |
 | $\tilde J\in\mathbb M_-$ | Framework's conserved material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
-| the generator cell | Cells of the canonical frame; $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ |
-| $D(p)=p_0\,iR_{e_x}-\sum_k p_k\,iL_{e_k}R_{e_y}+m\,L_{e_t}R_{e_t}$ | Cell of the momentum shell |
+| the generator cell | Cells of the canonical frame; $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ |
+| $D(p)=p_0\,iR_{\vec e_x}-\sum_k p_k\,iL_{\vec e_k}R_{\vec e_y}+m\,L_{e_t}R_{e_t}$ | Cell of the momentum shell |
 
 ## Further Reading
 

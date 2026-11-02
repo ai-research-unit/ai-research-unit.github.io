@@ -162,14 +162,14 @@ which is the subject of the penultimate section.
 A Lorentz transformation acts on the material sector by **rotor conjugation**,
 
 $$
-\tilde{R}\ \longmapsto\ \tilde U_{\mathrm{lor}}\,\tilde{R}\,\tilde U_{\mathrm{lor}}^{*},
+\tilde{R}\ \longmapsto\ \tilde U^{\mathrm{lor}}\,\tilde{R}\,\tilde U^{\mathrm{lor}}{}^{*},
 \qquad
-\tilde U_{\mathrm{lor}}\in\mathbb{B},
+\tilde U^{\mathrm{lor}}\in\mathbb{B},
 \qquad
-\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}^{\natural} = e_t,
+\tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t,
 $$
 
-with $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
+with $\tilde U^{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
 
 $$
 \tilde U_{\mathrm b}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
@@ -369,7 +369,7 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $E = \gamma mc^2$, $\vec p = \gamma m\vec v$ | Energy and momentum |
 | $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Mass-shell relation |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ | Boost rotor, in $\mathbb{M}_+$ |
-| $\tilde{R}\mapsto\tilde U_{\mathrm{lor}}\tilde{R}\tilde U_{\mathrm{lor}}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $\tilde{R}\mapsto\tilde U^{\mathrm{lor}}\tilde{R}\tilde U^{\mathrm{lor}}{}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$, $\mathrm{Lag} = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

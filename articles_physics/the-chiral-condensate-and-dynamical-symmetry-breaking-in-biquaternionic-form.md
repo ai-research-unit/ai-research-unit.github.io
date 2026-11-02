@@ -47,7 +47,7 @@ $$
 
 rotates them oppositely. In the biquaternion statement of the companion article on chiral fermions, the two halves are the left-handed module $S$ and its conjugate $\bar{S}$, and the axial phase is the relative phase of the two.
 
-Both are symmetries of the massless equation, because $-iR_{\vec e_z}$ anticommutes with every generator, $\{-iR_{\vec e_z},iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$, and therefore commutes with the kinetic operator $\mathbb{D}$; the two transformations may be applied independently. Equivalently, the massless theory has the flavour-chiral symmetry
+Both are symmetries of the massless equation, because $-iR_{\vec e_z}$ anticommutes with every generator, $\{-iR_{\vec e_z},iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}=0$, and therefore commutes with the kinetic operator $\mathbb{D}$; the two transformations may be applied independently. Equivalently, the massless theory has the flavour-chiral symmetry
 
 $$
 \mathrm{U}(1)_V\times \mathrm{U}(1)_A ,
@@ -55,7 +55,7 @@ $$
 
 and with $N_f$ massless flavours it enlarges to $SU(N_f)_L\times SU(N_f)_R\times \mathrm{U}(1)_V$.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 **The mass term and which phase it breaks.** The massive linear chiral pair is
 
@@ -76,7 +76,7 @@ This is the framework form of the standard fact that a Dirac mass breaks the axi
 **The axial current.** For the module representative the axial current is
 
 $$
-j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi ,
+j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi ,
 $$
 
 and its divergence is the textbook anomaly-free identity for a massive free field,
@@ -90,7 +90,7 @@ which vanishes exactly when $m=0$. The mass is the sole explicit breaking, and t
 **Two symmetries, two currents.** For later use we record the vector and axial bilinears:
 
 $$
-j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi , \qquad j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi ,
+j_\mu = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi , \qquad j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi ,
 \qquad
 \langle\tilde\nabla,\tilde J\rangle_{\natural} = 0 , \qquad \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\,-iR_{\vec e_z}\psi .
 $$
@@ -332,7 +332,7 @@ The framework supplies the carrier of the condensate, the broken-symmetry patter
 | $P_L=\tfrac12(I_4iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chiral projectors |
 | $\bar{\Psi}\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ | Chirality-odd scalar bilinear; the condensate's carrier |
 | $i\bar{\Psi}\,-iR_{\vec e_z}\Psi$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
-| $j_\mu=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, $j_{5\mu}=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi$ | Vector and axial currents |
+| $j_\mu=\bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$, $j_{5\mu}=\bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,-iR_{\vec e_z}\psi$ | Vector and axial currents |
 | $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\,-iR_{\vec e_z}\psi$ | Axial divergence (explicit breaking by $m$) |
 | $\langle\bar{\Psi}\Psi\rangle=-v^3$ | Chiral condensate, the order parameter |
 | $m=-2G\langle\bar{\psi}\psi\rangle$ | Mean-field relation between mass and condensate |

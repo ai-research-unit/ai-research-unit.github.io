@@ -264,7 +264,7 @@ $$
 \Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p_\mu=(E_{\vec p},\vec p),
 $$
 
-and the normal-ordered electric charge, from $j_\mu=\bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$ with $j_0=\psi^\dagger\psi$, is
+and the normal-ordered electric charge, from $j_\mu=\bar\psi\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$ with $j_0=\psi^\dagger\psi$, is
 
 $$
 :\!Ϙ^{\mathrm{fop}}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
@@ -273,7 +273,7 @@ $$
 
 so that particles and antiparticles carry opposite charge, as they must. All three expressions are the standard ones; their derivation uses only the parent article's spinor relations.
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 The status of $E_0$ deserves one cautionary sentence. Its divergence is an ultraviolet feature of the free field, removed by the conventional normal-ordering prescription, and nothing in the biquaternion structure as used here changes that. Whether the biquaternion framework offers a distinguished or geometrically meaningful regularization of the vacuum energy is an open question, and we do not claim one.
 
@@ -445,7 +445,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\,iR_{\vec e_x}$ | Dirac spinor (spinor module) and its adjoint |
 | $iR_{\vec e_x}\psi=i\,e_t\,\psi\,\vec e_x$, $iL_{\vec e_k}R_{\vec e_y}\psi=i\,\vec e_k\,\psi\,\vec e_y$ | Cells of the reference frame, acting on the spinor module |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $iL_{e_\mu}R_{e_{\nu(\mu)}}$; $g=-\eta$ |
+| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$; $g=-\eta$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |

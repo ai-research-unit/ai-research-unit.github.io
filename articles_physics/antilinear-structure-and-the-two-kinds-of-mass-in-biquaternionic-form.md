@@ -162,12 +162,12 @@ A single equation with a single field and a single mass term can realise the sec
 
 This is the section on which the retired equation's diagnosis turns, and it separates two objects that the word "conjugation" hides.
 
-The framework calls $\flat$ the algebra's **real structure**. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the spinor module and calls it a real structure too. Both are antilinear, both are involutions up to sign, and both pair an object with its own conjugate. They are nevertheless **different maps on different spaces**, and neither may stand in for the other. Write $L_{a}R_{b}$ for the two-sided cell, $L_{a}R_{b}\tilde\Psi=a\tilde\Psi b$, and $iL_{e_\mu}R_{e_{\nu(\mu)}}=iL_{e_\mu}R_{e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$, for the generator cell of the coordinate $x_\mu$:
+The framework calls $\flat$ the algebra's **real structure**. The neutrino companion constructs charge conjugation $\mathcal{C}$ on the spinor module and calls it a real structure too. Both are antilinear, both are involutions up to sign, and both pair an object with its own conjugate. They are nevertheless **different maps on different spaces**, and neither may stand in for the other. Write $L_{a}R_{b}$ for the two-sided cell, $L_{a}R_{b}\tilde\Psi=a\tilde\Psi b$, and $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$, for the generator cell of the coordinate $x_\mu$:
 
 | | algebra real structure $\flat$ | module charge conjugation $\mathcal{C}$ |
 |---|---|---|
 | acts on | the algebra $\mathbb{B}$, real dim $8$ | the spinor module $\Delta$, real dim $8$ |
-| defined by | the generators: $\vec e_k\mapsto -\vec e_k$, $i\mapsto -i$, with a sign | the Clifford relation $\mathcal{C}^{-1}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\mathcal{C} = -iL_{e_\mu}R_{e_{\nu(\mu)}}^{T}$, carried by the cell $C=L_{e_t}R_{\vec e_x}$ |
+| defined by | the generators: $\vec e_k\mapsto -\vec e_k$, $i\mapsto -i$, with a sign | the Clifford relation $\mathcal{C}^{-1}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\mathcal{C} = -iL_{e_\mu}R_{\vec e_{\nu(\mu)}}^{T}$, carried by the cell $C=L_{e_t}R_{\vec e_x}$ |
 | fixed space | $\mathbb{M}_-$, the anti-Hermitian sector, real dim $4$ | the Majorana spinor space, real dim $4$ |
 | commutes with the kinetic operator | **no** | **yes**, up to a sign |
 | exchanges the chiral halves | no — it preserves the $\mathbb{M}_\pm$ split | yes |
@@ -391,7 +391,7 @@ The four contraction sums are frame statements, because a cell's square is. In t
 | $\mathcal{C}$, $\psi^{c} = \mathcal{C}\bar{\psi}^{T}$ | Charge conjugation on the module; the Majorana reality condition |
 | $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged spinor is one on which that factor acts non-trivially |
 | $\Delta = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
-| $L_{a}R_{b}\tilde\Psi = a\tilde\Psi b$; $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Two-sided cell; the generator cell of the coordinate $x_\mu$ |
+| $L_{a}R_{b}\tilde\Psi = a\tilde\Psi b$; $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | Two-sided cell; the generator cell of the coordinate $x_\mu$ |
 | $m_D$, $m_M$ | Dirac and Majorana masses |
 | $\flat$ acts $+$ on $\mathbb{M}_-$, $-$ on $\mathbb{M}_+$ | The sector sign; the same convention as the material identification |
 

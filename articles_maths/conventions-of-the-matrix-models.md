@@ -237,7 +237,7 @@ Each is a unit multiple of a cell; the left factor is a unit and the right facto
 
 **The Clifford relations.** They satisfy
 $$
-\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4,\qquad
+\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4,\qquad
 (iL_{\vec e_k}R_{\vec e_y})^2=-I_4,\qquad
 -iR_{\vec e_z}=i\,(iR_{\vec e_x})(iL_{\vec e_x}R_{\vec e_y})(iL_{\vec e_y}R_{\vec e_y})(iL_{\vec e_z}R_{\vec e_y}),
 $$
@@ -261,14 +261,14 @@ Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The fr
 
 **The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
 A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
-A derivative contraction is $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial x_\mu$ with $x_0=q'_t$,
+A derivative contraction is $i\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$ with $x_0=q'_t$,
 in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
-If the $\mathbb{B}$ frame is used, it is written $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame cells $iR_{\vec e_x}$ and $-L_{\vec e_k}R_{\vec e_y}$,
-and never with the cells of the $\mathbb{M}_-$ frame: the mixed form $i\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\partial/\partial Q_\mu$ belongs to neither frame.
+If the $\mathbb{B}$ frame is used, it is written $\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame cells $iR_{\vec e_x}$ and $-L_{\vec e_k}R_{\vec e_y}$,
+and never with the cells of the $\mathbb{M}_-$ frame: the mixed form $i\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial Q_\mu$ belongs to neither frame.
 No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
 In the canonical frame the momentum contraction is a cell sum,
 $$
-\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}p_\mu=i\bigl(L_{e_t}R_xp_t+L_{\vec e_x}R_yp_x+L_{\vec e_y}R_yp_y+L_{\vec e_z}R_yp_z\bigr),
+\sum_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}p_\mu=i\bigl((L_{e_t}R_{\vec e_x}p_t+L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)\bigr),
 $$
 so the frame is visible in the formula.
 
@@ -386,7 +386,7 @@ Each row reads $L_{e_\mu}R_{e_\nu}$ as a unit coefficient times the $\gamma$-pro
 
 **The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ reads in gammas as $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$ of the body.
 
-**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}R_xp_t+L_{\vec e_x}R_yp_x+L_{\vec e_y}R_yp_y+L_{\vec e_z}R_yp_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
+**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i((L_{e_t}R_{\vec e_x}p_t+L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z))$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
 
 Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -426,7 +426,7 @@ The **four left matrices** $L_{e_\mu}=\mathsf{M}_4^{L}(e_\mu)$ and the **four ri
 
 The **sixteen basis matrices** are the products $L_{e_\mu}R_{e_\nu}$, in four families: $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$ and $L_{\vec e_j}R_{\vec e_k}$. They are written entry by entry in the canonical frame, and the grade table reads each of them as a unit coefficient times a product of the five frame cells.
 
-The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame cells of the canonical frame are $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{e_y}R_{\vec e_y}$, $iL_{e_z}R_{\vec e_y}$ and $-iL_{e_t}R_{\vec e_z}$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$.
+The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame cells of the canonical frame are $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$ and $-iL_{e_t}R_{\vec e_z}$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$.
 
 The **axis-free frame** is the second display of the same operators, the coefficient basis with no vector direction singled out, labelled $\mathrm{axf}$. Its left matrix has the coefficients of $\tilde Q$ on the diagonal and the three vector directions entering by one rule, its eight unit matrices are real signed permutations of determinant $1$, and its stitch is $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ with the $D$ that is also the Gram matrix of the plain product. The change from the canonical frame is $C_{\Pi}$, of determinant $-\tfrac14$, and the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ are the same in both frames.
 
@@ -446,7 +446,7 @@ The **axis-free frame** is the second display of the same operators, the coeffic
 | $L_{e_\mu}R_{e_\nu}$ | The sixteen basis matrices; $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$, $L_{\vec e_j}R_{\vec e_k}$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
 | $L^{\mathrm{axf}}(\tilde Q)$, $L_{e_\mu}^{\mathrm{axf}}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
 | $C_{\Pi}$ | The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, written $S$ in the article of the frame |
-| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{e_y}R_{\vec e_y}$, $iL_{e_z}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The five cells of the canonical frame, timelike, three spatial, chirality |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$, $iL_{\vec e_z}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The five cells of the canonical frame, timelike, three spatial, chirality |
 | $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}R_{e_t}$, $\iota_{\mathrm{Cl}}(i)=L_{e_t}R_{\vec e_z}$ |
 | $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the frame |
 

@@ -4,13 +4,13 @@
 
 The Dirac equation is the relativistic wave equation for spin-$\frac{1}{2}$ particles. It was discovered by Paul Dirac in 1928 as an attempt to reconcile quantum physics with special relativity, and it predicted the existence of antimatter. It is one of the foundational equations of quantum field theory, and it is the equation that governs electrons, quarks, and all fermions.
 
-The Dirac equation is usually written with matrices. In the biquaternion algebra it needs none. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^2=-e_t$, and the gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$. The gradient and its quaternion conjugate $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$ satisfy $\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\Box$, the central scalar d'Alembertian. The first-order dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi}=0$. No matrix, no Clifford generator and no choice of frame enters the equation.
+The Dirac equation is usually written with matrices. In the biquaternion algebra it needs none. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^2=-e_t$, and the gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$. The gradient and its quaternion conjugate $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$ satisfy $\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\Box$, the central scalar d'Alembertian. The first-order dynamics is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$. At $m=0$ the pair decouples into the two one-sided equations $\tilde{\nabla}\tilde{\Psi}_R=0$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=0$, one for each chirality; the single equation $\tilde{\nabla}\tilde{\Psi}=0$ is the right-handed member. No matrix, no Clifford generator and no choice of frame enters the equation.
 
-This article develops the biquaternionic formulation of the Dirac equation. The gradient $\tilde{\nabla}$ is the Dirac operator of the algebra: it is first order, it acts on the algebra by left multiplication, and it squares to the scalar d'Alembertian through its conjugate. The equation is the chiral pair on the two halves of the algebra, and each half obeys the Klein–Gordon equation.
+This article develops the biquaternionic formulation of the Dirac equation. The gradient $\tilde{\nabla}$ is the Dirac operator of the algebra: it is first order, it acts on the algebra by left multiplication, and it squares to the scalar d'Alembertian through its conjugate. The equation is the chiral pair on the two halves of the algebra, and each half obeys the Klein–Gordon equation. A second, **two-sided** form of the same equation — Kravchenko's dictionary, in which the spatial derivative acts from the left and the mass term from the right — is developed in *An Explicit Dictionary with Conjugation in the Mass Term*; the two forms are compared in *The One-Sided and the Two-Sided Equation*.
 
-The article is organized as follows. First the units and the gradient are defined, then the biquaternionic Dirac equation is stated and solved. The article closes with the relativistic kinematics (four-velocity, four-momentum, mass-shell relation), the relation to the Maxwell equation, the plane-wave solutions, and the mass term.
+The article is organized as follows. First the units and the gradient are defined, then the algebra is related to $\mathrm{Cl}_{1,3}$ and the dictionary is stated. The biquaternionic Dirac equation is stated and solved, first for plane waves and then in spherical and cylindrical coordinates. The article closes with the relativistic kinematics, the relation to the Maxwell equation, the potentials, and the algebra discussion.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and the scalar imaginary is $i$. The Minkowski metric has signature $(-,+,+,+)$, so that $\partial^2/\partial Q_t^2 = -c^{-2}\,\partial^2/\partial {t'}^2$. Throughout this article, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and the scalar imaginary is $i$. The Minkowski metric has signature $(-,+,+,+)$, so that $\partial^2/\partial Q_t^2 = -c^{-2}\,\partial^2/\partial {t'}^2$. Throughout this article, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ is reserved for particle and frame velocities. A squared three-vector such as $\vec v^2$ or $\vec p^2$ is the Euclidean square, $v_x^2+v_y^2+v_z^2$, not the quaternion square, which is its negative.
 
 ## The Gradient and the Equation
 
@@ -48,21 +48,23 @@ $$
 \;}
 $$
 
-for a field of mass $m$, in the natural units $\hbar=c=1$ used throughout, and the single equation
+for a field of mass $m$, in the natural units $\hbar=c=1$ of this section. At $m=0$ the pair decouples into two one-sided equations, one for each chirality:
 
 $$
-\tilde{\nabla}\tilde{\Psi} = 0
+\tilde{\nabla}\tilde{\Psi}_R = 0,
+\qquad
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L = 0 .
 $$
 
-for $m=0$. Each member is first order, both are linear in the field, and the mass couples the two chiral halves. Applying $\tilde{\nabla}^{\natural}$ to the first member and using the second gives
+A field with a single chirality obeys one of them. The right-handed equation $\tilde{\nabla}\tilde{\Psi}_R=0$ is the one written $\tilde{\nabla}\tilde{\Psi}=0$ in the massless sections below, and the left-handed equation is its quaternion conjugate. Each member is first order, both are linear in the field, and the mass couples the two chiral halves. Applying $\tilde{\nabla}^{\natural}$ to the first member and using the second gives
 
 $$
-\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{\Psi}_R = m^2\tilde{\Psi}_R,
+\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{\Psi}_R = \Box\tilde{\Psi}_R = m\,\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m^2\tilde{\Psi}_R,
 \qquad\text{that is}\qquad
-\left(\Box - m^2\right)\tilde{\Psi}_R = 0,
+\left(\Box - m^2\right)\tilde{\Psi}_R = 0
 $$
 
-and symmetrically for $\tilde{\Psi}_L$. So each chiral half obeys the Klein–Gordon equation, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ is the central scalar. The factorisation is the one the algebra supplies; no matrix square is used and no Clifford metric enters.
+in these units; with $\hbar$ and $c$ restored the operator is $\Box-m^2c^2/\hbar^2$. The same holds for $\tilde{\Psi}_L$. So each chiral half obeys the Klein–Gordon equation, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ is the central scalar. The factorisation is the one the algebra supplies; no matrix square is used and no Clifford metric enters.
 
 ### Spinors and the Lorentz Group
 
@@ -120,11 +122,11 @@ which is the statement that the timelike generator squares to $+L_{e_t}R_{e_t}$ 
 
 $$
 \{iL_{e_t}R_{\vec e_x},iL_{e_t}R_{\vec e_x}\}=2L_{e_t}R_{e_t},\qquad
-\{iL_{\vec e_k}R_{\vec e_y},iL_{e_l}R_{\vec e_y}\}=-2\delta_{kl}L_{e_t}R_{e_t},\qquad
+\{iL_{\vec e_k}R_{\vec e_y},iL_{\vec e_l}R_{\vec e_y}\}=-2\delta_{kl}L_{e_t}R_{e_t},\qquad
 \{iL_{e_t}R_{\vec e_x},iL_{\vec e_k}R_{\vec e_y}\}=0,
 $$
 
-and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. With $g = \mathrm{diag}(+1,-1,-1,-1)$ this is the Clifford form $\{\cdot,\cdot\}=2g$ of the metric, as declared in the introduction and in the section above. The overall sign of the metric is a convention: multiplying the frame by $i$ flips the sign of $g$ and leaves the Clifford algebra unchanged, so the mostly-plus set is $i$ times the frame used here.
+and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. With $g = \mathrm{diag}(+1,-1,-1,-1)$ this is the Clifford form $\{\cdot,\cdot\}=2g$ in the cell frame. This is the opposite of the $(-,+,+,+)$ convention of the introduction, which is the metric of the gradient. The overall sign of the metric is a convention: multiplying the frame by $i$ flips the sign of $g$ and leaves the Clifford algebra unchanged, so $i$ times the frame used here carries the $(-,+,+,+)$ metric.
 
 **A change of basis.** These generators are not the standard review's: the timelike generator $iL_{e_t}R_{\vec e_x}$ is off-diagonal on the Dirac module, while the standard review takes the timelike generator diagonal. The two sets are related by a unitary change of basis, and the chirality cell $-iL_{e_t}R_{\vec e_z}$ is diagonal only in the present one. The biquaternion construction uses this frame because it is the one in which the chirality cell is the matrix of the central sign $\chi$ of the chiral grading.
 
@@ -159,60 +161,74 @@ The route to the algebra used so far is the framework's own: the biquaternion fi
 **The dictionary.** On the field side the dictionary pairs the four Clifford generators with the four operators the algebra offers: the three spatial generators act by left multiplication by the imaginary units, the timelike generator by complex conjugation, and the central imaginary acts on the right,
 
 $$
-A(i\Phi) = -A(\Phi)\,i_3 .
+A(i\Phi) = -A(\Phi)\,\vec e_z .
 $$
 
-The rule displayed is the statement that $A$ is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: the scalar imaginary is carried to a right multiplication through $i_3$, with the minus sign that the conjugation supplies. Under it the Dirac equation becomes the single biquaternionic equation
+The rule displayed is the statement that $A$ is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: the scalar imaginary is carried to a right multiplication through the third spatial unit, with the minus sign that the conjugation supplies.
+
+Two normalizations of the spatial derivative are needed below, and they must not be run together. The source writes the spatial Dirac operator without the central factor,
 
 $$
-\mathcal{N}F := \left(i\partial/\partial Q_t + D - m\,i\,C M_{i_3}\right)F = 0, \qquad D = i\sum_{\mu=1}^{3} \vec e_\mu\partial/\partial Q_\mu ,
+D_3 := \sum_{k=1}^{3} \vec e_k\,\partial/\partial Q_k,
+\qquad
+D_3^2 = -\Delta ,
 $$
 
-where $C$ is componentwise complex conjugation and $M_{i_3}$ is right multiplication by $i_3$; following the source, $i_1,i_2,i_3$ denote the quaternion units — the $\vec e_x,\vec e_y,\vec e_z$ of this article — alongside the scalar imaginary $i$.
+with real quaternion coefficients. The corpus's operator of *Biquaternion Regular Functions* is $D:=iD_3$, with $D^2=\Delta$; it is the operator of the shifted theory, and it differs from $D_3$ by the fixed central imaginary. The dictionary and the factorised operator below are written with $D_3$, because that is the normalization in which the mass term of the factorised operator is real. In it the Dirac equation becomes the single biquaternionic equation
+
+$$
+\mathcal{N}F := \left(i\frac{\partial}{\partial t'} + D_3 - m\,i\,C M_{\vec e_z}\right)F = 0,
+$$
+
+where $C$ is componentwise complex conjugation and $M_{\vec e_z}$ is right multiplication by $\vec e_z$. Following the source, $i_1,i_2,i_3$ denote the quaternion units; this article writes them $\vec e_x,\vec e_y,\vec e_z$ in the formulas and keeps the source's $i_k$ only in the quoted identities below. The product $i\,i_k$ is the scalar imaginary times a quaternion unit, not a square: $i^2=-1$, while $(i\,i_k)^2=i^2i_k^2=+1$.
 
 **The generators, one by one.** The source states the dictionary on the whole Clifford basis and not only on the timelike generator, and it is those further entries that fix the spatial assignment. On the field side it is given in components,
 
 $$
-A(\Phi) = \bigl(\mathrm{Re}\,\Phi_0 + i\,\mathrm{Im}\,\Phi_2\bigr)i_0
-+ \bigl(\mathrm{Im}\,\Phi_1 - i\,\mathrm{Re}\,\Phi_3\bigr)i_1
-- \bigl(\mathrm{Re}\,\Phi_1 + i\,\mathrm{Im}\,\Phi_3\bigr)i_2
-- \bigl(\mathrm{Im}\,\Phi_0 - i\,\mathrm{Re}\,\Phi_2\bigr)i_3 ,
+A(\Phi) = \bigl(\mathrm{Re}\,\Phi_0 + i\,\mathrm{Im}\,\Phi_2\bigr)e_t
++ \bigl(\mathrm{Im}\,\Phi_1 - i\,\mathrm{Re}\,\Phi_3\bigr)\vec e_x
+- \bigl(\mathrm{Re}\,\Phi_1 + i\,\mathrm{Im}\,\Phi_3\bigr)\vec e_y
+- \bigl(\mathrm{Im}\,\Phi_0 - i\,\mathrm{Re}\,\Phi_2\bigr)\vec e_z ,
 $$
 
-with $i_0 = 1$: the eight real coordinates $\mathrm{Re}\,\Phi_\mu,\mathrm{Im}\,\Phi_\mu$ are carried to eight independent real coordinates, which is the sense in which $A$ is a real-linear **bijection** of $\mathbb{C}^4$ onto $\mathbb{B}$. On the generators it reads
+with $e_t = 1$: the eight real coordinates $\mathrm{Re}\,\Phi_\mu,\mathrm{Im}\,\Phi_\mu$ are carried to eight independent real coordinates, which is the sense in which $A$ is a real-linear **bijection** of $\mathbb{C}^4$ onto $\mathbb{B}$. On the generators it reads
 
 $$
-A\bigl(L_{\vec e_x}R_{\vec e_z}\Phi\bigr) = -i\,i_1A(\Phi), \qquad
-A\bigl(L_{\vec e_y}R_{\vec e_z}\Phi\bigr) = -i\,i_2A(\Phi), \qquad
-A\bigl(L_{\vec e_z}R_{\vec e_z}\Phi\bigr) = +i\,i_3A(\Phi),
+\begin{aligned}
+A\bigl(L_{\vec e_x}R_{\vec e_z}\Phi\bigr) &= -i\,\vec e_x\,A(\Phi),\\[2pt]
+A\bigl(L_{\vec e_y}R_{\vec e_z}\Phi\bigr) &= -i\,\vec e_y\,A(\Phi),\\[2pt]
+A\bigl(L_{\vec e_z}R_{\vec e_z}\Phi\bigr) &= +i\,\vec e_z\,A(\Phi),
+\end{aligned}
 $$
 
+and, for the volume element,
+
 $$
-A\bigl(iL_{e_t}R_{\vec e_z}\Phi\bigr) = -i\,A(\Phi)\,i_3 ,
+A\bigl(iL_{e_t}R_{\vec e_z}\Phi\bigr) = -i\,A(\Phi)\,\vec e_z .
 $$
 
-the three timelike-spacelike cells on the first line and the source's volume element $iL_{e_t}R_{\vec e_z}$ on the second.
+The three cells of the first display are the timelike-spacelike bivectors; the second display is the source's volume element $iL_{e_t}R_{\vec e_z}$.
 
-Each of the three bivector entries is a left multiplication by a unit of the algebra composed with the scalar imaginary, so the spatial generators are complex-linear and the timelike generator alone is antilinear; the entry for the volume element is a **right** multiplication, on the side and through the unit that the mass term of $\mathcal{N}$ already carries. The signs of the three bivectors are not uniform — two take $-i$ and the third $+i$ — and the exception falls on the third axis, the unit $i_3$ of the mass term. That pattern is a property of the definition of $A$ and not of the Clifford relations, which do not distinguish the three spatial directions among themselves: the dictionary singles out the third axis on its own, and it is the same axis that the mass term couples to from the right.
+Each of the three bivector entries is a left multiplication by a unit of the algebra composed with the scalar imaginary, so the three bivector images are complex-linear. The timelike Clifford generator is the only antilinear entry: its image is the complex conjugation $C$. The volume element is a third kind of entry — a **right** multiplication, on the side and through the unit that the mass term of $\mathcal{N}$ already carries. The signs of the three bivectors are not uniform — two take $-i$ and the third $+i$ — and the exception falls on the third axis, the unit $\vec e_z$ of the mass term. That pattern is a property of the definition of $A$ and not of the Clifford relations, which do not distinguish the three spatial directions among themselves: the dictionary singles out the third axis on its own, and it is the same axis that the mass term couples to from the right.
 
-**The chirality sign.** The source's volume element is the negative of the corpus's: it takes $iL_{e_t}R_{\vec e_z}$, whereas the representative of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ in the frame of *Chirality and the Central Sign* below is the chirality cell $-iL_{e_t}R_{\vec e_z}$. In the corpus's convention the last identity above therefore reads $A(-iL_{e_t}R_{\vec e_z}\Phi) = +iA(\Phi)\,i_3$, and the sign has to be carried along whenever the two are compared. The entry is a dictionary identity, not the definition of chirality: the dictionary's volume element acts by a right multiplication through the unit $i_3$, whereas $\chi$ is central and acts on $\Delta$ as $\operatorname{diag}(-I_2,I_2)$. What does not depend on the sign is the structure the entry states: the volume element of the dictionary acts by a right multiplication, exactly as the mass term does, and not by a left multiplication like the three spatial generators.
+**The chirality sign.** The source's volume element is the negative of the corpus's: it takes $iL_{e_t}R_{\vec e_z}$, whereas the representative of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ in the frame of *Chirality and the Central Sign* below is the chirality cell $-iL_{e_t}R_{\vec e_z}$. In the corpus's convention the last identity above therefore reads $A(-iL_{e_t}R_{\vec e_z}\Phi) = +iA(\Phi)\,\vec e_z$, and the sign has to be carried along whenever the two are compared. The entry is a dictionary identity, not the definition of chirality: the dictionary's volume element acts by a right multiplication through the unit $\vec e_z$, whereas $\chi$ is central and acts on $\Delta$ as $\operatorname{diag}(-I_2,I_2)$. What does not depend on the sign is the structure the entry states: the volume element of the dictionary acts by a right multiplication, exactly as the mass term does, and not by a left multiplication like the three spatial generators.
 
-**Which conjugation.** The $C$ of the dictionary is the algebra's **complex conjugation** $\bar{\cdot}$, not the algebra's real structure $\flat$. They are different maps with different fixed spaces — $\bar{\cdot}$ fixes the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, $\flat$ fixes the material sector $\mathbb{M}_-$ — and the corpus keeps them apart (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and the convention remark of *The Massive Case* above). The distinction has teeth here, because the dictionary's mass term is antilinear and the framework has already found that not every antilinear mass term is admissible. The retired single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^{\flat}$ fails on the dispersion, whereas the Lanczos form $\tilde{\nabla}D = mD^{*}i\vec{\nu}$ of *The Lanczos Route* is exact. Kravchenko's mass term is of the second kind: its conjugation is $\bar{\cdot}$, and it is accompanied by a right multiplication by a spatial direction, its $M_{i_3}$ standing where the Lanczos unit vector $\vec{\nu}$ stands. The corpus reads the two as one structure — a conjugation together with a direction, rather than the algebra's real structure — and the dictionary is the second explicit instance of it.
+**Which conjugation.** The $C$ of the dictionary is the algebra's **complex conjugation** $\bar{\cdot}$, not the algebra's real structure $\flat$. They are different maps with different fixed spaces — $\bar{\cdot}$ fixes the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, $\flat$ fixes the material sector $\mathbb{M}_-$ — and the corpus keeps them apart (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and the convention remark of *The Massive Case* above). The distinction has teeth here, because the dictionary's mass term is antilinear and the framework has already found that not every antilinear mass term is admissible. The retired single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^{\flat}$ fails on the dispersion, whereas the Lanczos form $\tilde{\nabla}D = mD^{*}i\vec{\nu}$ of *The Lanczos Route* is exact. Kravchenko's mass term is of the second kind: its conjugation is $\bar{\cdot}$, and it is accompanied by a right multiplication by a spatial direction, its $M_{\vec e_z}$ standing where the Lanczos unit vector $\vec{\nu}$ stands. The corpus reads the two as one structure — a conjugation together with a direction, rather than the algebra's real structure — and the dictionary is the second explicit instance of it.
 
-**The price, and its refund.** Because $C$ is antilinear, $\mathcal{N}$ is not left multiplication by an element of the algebra, so the Cauchy kernel, the Teodorescu transform and the boundary-value theory do not apply to it as it stands. The conjugation is removed by factoring $\mathcal{N}$ into two complex-linear equations and changing variable; the time-harmonic amplitude then obeys a **shifted** equation with a biquaternionic parameter, $D_\alpha\tilde{p} = 0$, treated in *Biquaternion Regular Functions* and used in *Confinement and the Loss of Partonic Information in Biquaternionic Form*. The conjugation is thus the cost of shrinking a four-component spinor to a single biquaternion, and it is refunded whenever the boundary-value theory is what is wanted.
+**The price, and its refund.** Because $C$ is antilinear, $\mathcal{N}$ is not left multiplication by an element of the algebra, so the Cauchy kernel, the Teodorescu transform and the boundary-value theory do not apply to it as it stands. The conjugation is removed by factoring $\mathcal{N}$ into two complex-linear equations and changing variable; the time-harmonic amplitude then obeys a **shifted** equation with a biquaternionic parameter, $D_{3,\alpha}\tilde{p} = 0$ in the source's normalization $D_{3,\alpha}=D_3+M_\alpha$ — the corpus's $D_\alpha=D+M_\alpha$ of *Biquaternion Regular Functions*, with $D=iD_3$ — used in *Confinement and the Loss of Partonic Information in Biquaternionic Form*. The conjugation is thus the cost of shrinking a four-component spinor to a single biquaternion, and it is refunded whenever the boundary-value theory is what is wanted.
 
 ### The Conjugation-Free Operator, Its Reality, and the Involutive Symmetry
 
 The dictionary above pays for its compactness with the conjugation: $\mathcal{N}$ carries $C$, and that is what obstructs the Cauchy theory. The same source takes the conjugation off the operator and puts it into the change of variable. With $M_a$ the right multiplication $f\mapsto f a$, and with the complementary idempotents
 
 $$
-P_k^{\pm} := \tfrac12 M_{(1 \pm i\,i_k)}, \qquad k = 1,2,3 ,
+P_k^{\pm} := \tfrac12 M_{(1 \pm i\,\vec e_k)}, \qquad k = 1,2,3 ,
 $$
 
 the operator
 
 $$
-R := P_1^{+}\bigl(i\partial/\partial t' + D\bigr) + P_1^{-}\bigl(-i\partial/\partial t' + D\bigr) - m\,M_{i_2}
+R := P_1^{+}\bigl(i\partial/\partial t' + D_3\bigr) + P_1^{-}\bigl(-i\partial/\partial t' + D_3\bigr) - m\,M_{\vec e_y}
 $$
 
 is related to $\mathcal{N}$ by
@@ -223,13 +239,15 @@ $$
 
 where $u^{\pm}$ are built from the same idempotents and the same conjugation. The conjugation has not been removed, only moved: it now sits in the two factors that surround the operator, and the operator itself is free of it.
 
-**The reality of $R$, recomputed.** The two projectors collapse, because $P_1^{+}+P_1^{-}=1$ and $P_1^{+}-P_1^{-}=i\,i_1$. Their definitions therefore give
+**The reality of $R$, recomputed.** The two projectors collapse, because $P_1^{+}+P_1^{-}=1$ and $P_1^{+}-P_1^{-}=i\,\vec e_x$. Their definitions therefore give
 
 $$
-R = D - \partial/\partial t' M_{i_1} - m\,M_{i_2} ,
+R = D_3 + i\frac{\partial}{\partial t'}\bigl(P_1^{+}-P_1^{-}\bigr) - m\,M_{\vec e_y}
+= D_3 + i\frac{\partial}{\partial t'}\,(i\,\vec e_x) - m\,M_{\vec e_y}
+= D_3 - \frac{\partial}{\partial t'}M_{\vec e_x} - m\,M_{\vec e_y} ,
 $$
 
-whose coefficients are the three quaternion units and the right multiplications by $i_1$ and $i_2$ — all real quaternions, and no central imaginary. The collapse was checked here on the multiplication table, in this right-multiplication interpretation of $P_k^{\pm}$ and in the left-multiplication one; both give an operator with coefficients in $\mathbb{H}$. So $R$ contains **no complex conjugation**, and that is the property the 2003 paper names when it calls the quaternionic Dirac operator **real**.
+where the step $i\cdot i=-1$ is the only place the scalar imaginary enters, and it cancels. The coefficients are the three quaternion units of $D_3$ and the right multiplications by $\vec e_x$ and $\vec e_y$ — all real quaternions, and no central imaginary. The collapse was checked here on the multiplication table, in this right-multiplication interpretation of $P_k^{\pm}$ and in the left-multiplication one; both give an operator with coefficients in $\mathbb{H}$. So $R$ contains **no complex conjugation**, and that is the property the 2003 paper names when it calls the quaternionic Dirac operator **real**.
 
 **Real and imaginary parts are separately solutions.** Since no coefficient of $R$ carries the central imaginary, $R$ commutes with the dictionary's complex conjugation,
 
@@ -248,11 +266,11 @@ One quaternionic solution therefore carries two Dirac solutions. This doubling i
 **The current, and the modulus.** For a real $F$ the quaternionic conjugate of the equation is the equation of the conjugate field, and from the pair the paper derives the conservation law
 
 $$
-\partial/\partial t'|F|^2 = -\hbar\bigl[(DF^{\dagger})F + F^{*}(DF)\bigr],
-\qquad |F|^2 := F\bar{F},
+\partial/\partial t'|F|^2 = -\hbar\bigl[(D_3F^{\dagger})F + F^{*}(D_3F)\bigr],
+\qquad |F|^2 := \langle F\rangle_{*} = \sum_{\mu=0}^{3}|F_\mu|^2,
 $$
 
-which is the quaternionic form of the current-conservation equation of the Dirac field. The modulus that appears in it is not an independent object: the dictionary carries it to the Dirac density, $|F|^2 = |\Phi|^2 = \sum_\mu|\Phi_\mu|^2$, so that the algebraic norm of the biquaternionic field *is* the probability density of the spinor. That is the paper's Remark 2, and it is the same norm that the corpus reads as the biquaternion norm $\langle\cdot\rangle_{\natural}$ in the kinematic sections above — here computed on the real representative of the solution.
+which is the quaternionic form of the current-conservation equation of the Dirac field. The modulus that appears in it is not an independent object: the dictionary carries it to the Dirac density, $|F|^2 = |\Phi|^2 = \sum_\mu|\Phi_\mu|^2$, so that the Hermitian norm of the biquaternionic field *is* the probability density of the spinor. That is the paper's Remark 2, and it is the Hermitian norm $\langle\cdot\rangle_{*}$, not the quaternionic norm $\langle\cdot\rangle_{\natural}$: the quaternionic norm vanishes on the zero-divisor cone and cannot be a probability density. Here the Hermitian norm is computed on the real representative of the solution.
 
 **The involutive symmetry.** Carried back through the dictionary, the splitting becomes a symmetry of the Dirac equation: if $\Phi$ solves the Dirac equation, then $A^{-1}[\mathrm{Re}\,F]$ solves it again. The paper states that second solution in the Dirac matrices as
 
@@ -262,7 +280,22 @@ $$
 
 $Z_c$ being componentwise complex conjugation. Since $iZ_c$ is antilinear with $(iZ_c)^2 = 1$, the map is an **involution**: applying it twice returns the spinor. The paper records that such a symmetry had been obtained before by other methods (Niederle and Nikitin, 1997), and it claims the route rather than the result — the reality of the conjugation-free operator is what produces the symmetry here.
 
-**What is quoted, and what is verified.** The factors $u^{\pm}$ of the factorisation $\mathcal{N} = u^{+}Ru^{-}$, and with them the explicit action of $A^{-1}$ on $\mathrm{Re}\,F$, stand in the source in formulas the scan does not resolve; they are quoted, not reproduced. The operator $R$, its collapse to $D-\partial/\partial t' M_{i_1}-mM_{i_2}$, the commutation of $R$ with complex conjugation, and the involution property $(iZ_c)^2=1$ are legible, and all four are verified here.
+**What is quoted, and what is verified.** The factors $u^{\pm}$ of the factorisation $\mathcal{N} = u^{+}Ru^{-}$, and with them the explicit action of $A^{-1}$ on $\mathrm{Re}\,F$, stand in the source in formulas the scan does not resolve; they are quoted, not reproduced. The operator $R$, its collapse to $D_3-\partial/\partial t' M_{\vec e_x}-mM_{\vec e_y}$, the commutation of $R$ with complex conjugation, and the involution property $(iZ_c)^2=1$ are legible, and all four are verified here.
+
+### The One-Sided and the Two-Sided Equation
+
+The article now carries two equations, and they must not be read as one. The corpus's own equation is **one-sided**: it is the chiral pair in which the gradient acts by left multiplication on the field in $\Delta$, and the mass is the off-diagonal pairing of the two chiral halves. Kravchenko's equation is **two-sided**: it is a single equation on $\mathbb{B}$ in which the spatial derivative acts by left multiplication, the mass term acts by right multiplication through $\vec e_z$, and the complex conjugation $C$ supplies the antilinear part. The two are related by the dictionary $A$, but they are not the same operator, and the table separates them.
+
+| | One-sided equation | Two-sided equation |
+|---|---|---|
+| Equation | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal{N}F=(i\partial/\partial t'+D_3-miCM_{\vec e_z})F=0$ |
+| Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left by $D_3$, right by $\vec e_z$ in the mass term, and the antilinear $C$ |
+| Field | $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R\in\Delta=S\oplus S^{\mathrm c}$ | $F\in\mathbb{B}$ |
+| Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-miCM_{\vec e_z}$: a conjugation together with a direction |
+| Chirality | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the volume cell, represented by $\gamma_5=-iL_{e_t}R_{\vec e_z}$ up to the source's sign |
+| Use | the corpus's formulation and its kinematics | the dictionary, the Cauchy theory and the integral representation |
+
+The dictionary is therefore not a second definition of the same equation. It is a change of representation that makes the equation two-sided, and the price of the change is the conjugation in the mass term. The one-sided pair is the definition; the two-sided equation is the form in which the analytic machinery acts.
 
 ### The Harmonic Spinor Field: Two Projections, and the Helicity Reading
 
@@ -272,12 +305,12 @@ $$
 F(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = P_+f(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,\exp(i\omega t') + P_-f(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,\exp(-i\omega t'),
 $$
 
-where the $P_\pm$ are the two projectors of the shifted-operator theory — $P_\pm = (2\gamma)^{-1}M(\gamma\pm\alpha)$, right multiplication by the complementary idempotents, with the parameter split as in the algebra lemma of *Biquaternion Regular Functions* — and $f$ is a solution of the shifted amplitude equation $D_\alpha f = 0$. The pair of signs of the frequency and the pair of projectors are the same pairing: each half of the field is a projected shifted equation.
+where the $P_\pm$ are the two projectors of the shifted-operator theory — $P_\pm = (2\gamma)^{-1}M(\gamma\pm\alpha)$, right multiplication by the complementary idempotents, with the parameter split as in the algebra lemma of *Biquaternion Regular Functions* — and $f$ is a solution of the shifted amplitude equation $D_{3,\alpha} f = 0$, where $D_{3,\alpha}=D_3+M_\alpha$. The pair of signs of the frequency and the pair of projectors are the same pairing: each half of the field is a projected shifted equation.
 
 **The interpretation the source attaches to it.** The source states that its projectors are *closely related to particle helicity*, and on that interpretation the two projected halves of the harmonic field are the two helicity components, the component $P_+F$ being the **neutrino** and $P_-F$ the **antineutrino**. In the massless case the equation they come from is
 
 $$
-i\partial/\partial t'F + DF = 0,
+i\partial/\partial t'F + D_3F = 0,
 $$
 
 which for a field equal to its own conjugate is a known reformulation of the vacuum Maxwell equations, attributed by the source to Imaeda [1976]. The algebra thus supplies, in one object, the two helicities as the two minimal left ideals of the shifted pair — which is the framework's own statement (*The Biquaternion Vacuum as a Minimal Idempotent*) that a helicity state is a rank-one Hermitian idempotent of the algebra, here with the parameter's direction in place of the vacuum's.
@@ -289,10 +322,10 @@ which for a field equal to its own conjugate is a known reformulation of the vac
 Removing the conjugation is what buys the analytic theory back, and for the harmonic spinor field the source's announcement states what is bought. The time-harmonic amplitude obeys the first-order equation
 
 $$
-D_\alpha f = 0,\qquad \alpha=-i\omega\,\vec e_x ,
+D_{3,\alpha} f = 0,\qquad \alpha=-i\omega\,\vec e_x ,
 $$
 
-the shifted equation of the algebra. The source writes the same amplitude equation in its matrix form, with an operator it calls $D_\omega$; the dictionary carries that operator to this one, so the kernel is the same space. The source derives its spinor results in this massless case — the case it calls the neutrino — while the massive parameter $\alpha = -(i\omega \vec e_x + m \vec e_y)$ is the one carried by the boundary-value treatment of the bag in *Confinement and the Loss of Partonic Information in Biquaternionic Form*. The Cauchy-type operator of the algebra transfers to the spinor equation by conjugation with the dictionary,
+where $D_{3,\alpha}=D_3+M_\alpha$ and $M_\alpha$ is right multiplication by $\alpha$; this is the shifted equation in the source's normalization. The corpus's *Biquaternion Regular Functions* writes it with $D=iD_3$, where the same equation reads $D_{i\alpha}f=0$. The source writes the same amplitude equation in its matrix form, with an operator it calls $D_\omega$; the dictionary carries that operator to this one, so the kernel is the same space. The source derives its spinor results in this massless case — the case it calls the neutrino — while the massive parameter $\alpha = -(i\omega \vec e_x + m \vec e_y)$ is the one carried by the boundary-value treatment of the bag in *Confinement and the Loss of Partonic Information in Biquaternionic Form*. The Cauchy-type operator of the algebra transfers to the spinor equation by conjugation with the dictionary,
 
 $$
 K_\omega := A^{-1} K A ,
@@ -319,7 +352,7 @@ $$
 On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ the representation is
 
 $$
-\rho(i)=\operatorname{diag}(iI_2,-iI_2),\qquad \rho(\tilde\Xi_{\mathrm{ad}})=iI_4,\qquad \rho(\chi)=\operatorname{diag}(-I_2,I_2).
+\rho(i)=\operatorname{diag}(iI_2,-iI_2),\qquad \rho(\tilde\Xi_{\mathrm{ad}})=\operatorname{diag}(iI_2,-iI_2),\qquad \rho(\chi)=\operatorname{diag}(-I_2,I_2).
 $$
 
 The chiral projectors are
@@ -434,13 +467,7 @@ These kinematic relations are the biquaternion form of standard relativistic mec
 
 ### Statement
 
-Let $\tilde{\Psi}$ be a field with values in the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$, and let $\tilde{\nabla}$ be the biquaternionic gradient. The **biquaternionic Dirac equation** for a massless field is
-
-$$
-\boxed{\;\tilde{\nabla}\tilde{\Psi} = 0\;}.
-$$
-
-For a field of mass $m$ the equation is **linear** in $\tilde{\Psi}$ and **off-diagonal in chirality**. Writing the field as a pair of chiral components, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ with $\tilde{\Psi}_L\in S$ and $\tilde{\Psi}_R\in S^{\mathrm{c}}$, the massive equation is the pair
+The equation is the chiral pair of *The Equation in the Algebra*. Let $\tilde{\Psi}$ be a field with values in the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$, written as a pair of chiral components $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R$ with $\tilde{\Psi}_L\in S$ and $\tilde{\Psi}_R\in S^{\mathrm{c}}$. For a field of mass $m$ the **biquaternionic Dirac equation** is
 
 $$
 \boxed{\;
@@ -448,36 +475,36 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R &= m\tilde{\Psi}_L,\\[4pt]
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L &= m\tilde{\Psi}_R.
 \end{aligned}
-\;}.
+\;}
 $$
 
-Applying $\tilde{\nabla}^{\natural}$ to the first equation and using the second, together with $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Box$, gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and likewise for $\tilde{\Psi}_L$; the pair therefore implies the Klein–Gordon equation for each chirality. The two lines are equalities in the underlying real vector space: the mass is the off-diagonal pairing between $S$ and $S^{\mathrm{c}}$, not a $\mathbb{B}$-linear operator. On the spinor module the same statement is the pair equation $(\mathbb{D} - mc/\hbar)\psi = 0$, with $\psi = (\psi_L, \psi_R)$ the pair of Weyl spinors and $\mathbb{D}$ the pair operator.
+It is **linear** in $\tilde{\Psi}$ and **off-diagonal in chirality**. At $m=0$ it decouples into two one-sided equations,
+
+$$
+\tilde{\nabla}\tilde{\Psi}_R=0,
+\qquad
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L=0,
+$$
+
+one for each chirality; a field with a single chirality obeys one of them. The two lines are equalities in the underlying real vector space: the mass is the off-diagonal pairing between $S$ and $S^{\mathrm{c}}$, not a $\mathbb{B}$-linear operator. The Klein–Gordon consequence for each chiral half is derived in *The Equation in the Algebra*. On the spinor module the same statement is the pair equation $(\mathbb{D} - mc/\hbar)\psi = 0$, with $\psi = (\psi_L, \psi_R)$ the pair of Weyl spinors and $\mathbb{D}$ the pair operator.
 
 A **single-string form** of the same pair is recorded in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*. Writing the wave function in the light-cone coordinates and using that article's outer and inner products, the chiral pair becomes one expression, $F^- \odot \bar D + D \otimes F^+ = im\overset{\curvearrowleft}{F}$, in which the two products carry the two chiralities and the cyclic conjugation $\overset{\curvearrowleft}{\phantom{x}}$ carries the mass term. The equivalence of that expression with the Weyl system is verified row by row there. The pair above remains the definitional home of the biquaternionic Dirac equation; the single-string form is a repackaging in a different product, not a different equation.
 
-The mass term is the term that breaks the exact correspondence between the biquaternionic Dirac equation and the biquaternionic Maxwell equation. It is linear in the field, the biquaternion transcription of the mass term $m\psi$ of the matrix Dirac equation.
-
 ### The Massless Case
 
-The massless biquaternionic Dirac equation $\tilde{\nabla}\tilde{\Psi} = 0$ is identical in form to the **homogeneous biquaternion Maxwell equation** for the field-strength biquaternion $\tilde{F}$. The two equations have the same form:
+For a single chirality the massless equation is one-sided. The right-handed equation $\tilde{\nabla}\tilde{\Psi}_R=0$ is identical in form to the **homogeneous biquaternion Maxwell equation** for the field-strength biquaternion $\tilde{F}$:
 
 $$
-\tilde{\nabla}\tilde{\Psi} = 0 \quad \text{(massless Dirac)}, \qquad \tilde{\nabla}\tilde{F} = 0 \quad \text{(source-free Maxwell)}.
+\tilde{\nabla}\tilde{\Psi}_R = 0 \quad \text{(right-handed Dirac)}, \qquad \tilde{\nabla}\tilde{F} = 0 \quad \text{(source-free Maxwell)}.
 $$
 
-The solutions are also the same in form: the kernel of the biquaternionic gradient consists of plane waves, spherical waves, and cylindrical waves (as in the companion article on Maxwell). The **physical interpretation** differs: $\tilde{\Psi}$ is a fermion field (spin-$\frac{1}{2}$), and $\tilde{F}$ is a boson field (spin-1).
+The left-handed equation is the quaternion conjugate, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=0$; it has the same form with $\tilde{\nabla}^{\natural}$ in place of $\tilde{\nabla}$. The full massless Dirac field is the pair of the two, not the single equation. The solutions are also the same in form: the kernel of the biquaternionic gradient consists of plane waves, spherical waves, and cylindrical waves (as in the companion article on Maxwell). The **physical interpretation** differs: $\tilde{\Psi}$ is a fermion field (spin-$\frac{1}{2}$), and $\tilde{F}$ is a boson field (spin-1).
 
 The structural identity of the two equations is the algebraic content of the statement that the biquaternion algebra is the same for both. The difference is not in the operator but in the representation: the Maxwell field-strength biquaternion lives in the vector part of the algebra, and the Dirac field lives in the module $\Delta=S\oplus S^{\mathrm{c}}$, whose two components are the pair of Weyl spinors.
 
 ### The Massive Case
 
-The massive biquaternionic Dirac equation is the chiral pair
-
-$$
-\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
-$$
-
-The mass term is **linear** in the field and **off-diagonal** between the two chiral halves $S$ and $S^{\mathrm{c}}$: it is the biquaternion transcription of the mass term $m\psi$ of the matrix Dirac equation, and it is what couples the left- and right-handed Weyl spinors.
+The massive equation is the chiral pair boxed in *Statement*. The mass term is **linear** in the field and **off-diagonal** between the two chiral halves $S$ and $S^{\mathrm{c}}$: it is the biquaternion transcription of the mass term $m\psi$ of the matrix Dirac equation, and it is what couples the left- and right-handed Weyl spinors.
 
 The coupling has to be off-diagonal. Left multiplication by an element of $\mathbb{B}_{\mathbb{R}}$ *preserves* each chiral half — both $S$ and $S^{\mathrm{c}}$ are $\mathbb{B}_{\mathbb{R}}$-modules — so no left multiplication relates them. The mass is the off-diagonal pairing $\beta:S\times S^{\mathrm{c}}\to\mathbb{C}$ of *Chirality: The Conjugate Pair*, equivalently the operator $D_m=\begin{pmatrix}0&m\\ \bar m&0\end{pmatrix}$ on $\Delta$. It is not an endomorphism of the $\mathbb{B}_{\mathbb{R}}$-module $\Delta$; it is the pairing that identifies the two halves, and that is why it can couple them. The Peirce nilpotent $R_{\vec\Upsilon_x}:S_+\to S_-$ is a different object: it is $\mathbb{B}$-linear, flips the Peirce index, and leaves the chirality unchanged. The mass is not the Peirce nilpotent. This is the structural reason why the Dirac field is a section of $S\oplus S^{\mathrm{c}}$, not an element of $\mathbb{B}$ alone.
 
@@ -505,25 +532,19 @@ The convention is worth a remark, because the more familiar one takes the *Hermi
 
 The map $\flat$ is the algebra's **real structure**, and its shape is that of a charge-conjugation (Majorana) pairing: it relates the field to its own conjugate. It is *not* the mass term. A coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\Psi}^\flat$ rather than relating two independent chiralities, and because $\flat$ is antilinear such a coupling is not invariant under the continuous central phase — precisely the two differences between a Majorana-type pairing and an ordinary Dirac mass. The single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ is a real-linear equation of that type; it is a different equation from the one studied here, and its central-phase plane waves sit on the *spacelike* locus, not on the physical mass shell. The map $\flat$ is retained in the framework for what it is genuinely for — conjugation, the $\mathbb{M}_\pm$ split, the trace and bilinear pairings, and the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino, and the CPT theorem develop. In the present article $\flat$ is used only for conjugation, never as the mass.
 
-**The associated Klein–Gordon equation.** Applying $\tilde{\nabla}^{\natural}$ to the first of the pair and substituting the second gives
+**The associated Klein–Gordon equation.** Applying $\tilde{\nabla}^{\natural}$ to the first member of the pair and substituting the second gives $\Box\tilde{\Psi}_R=m^2\tilde{\Psi}_R$, and likewise for $\tilde{\Psi}_L$. With $\hbar$ and $c$ restored, each chiral component satisfies
 
 $$
-\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{\Psi}_R = \Box\tilde{\Psi}_R = m\,\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m^2\tilde{\Psi}_R ,
+\left(\Box - \frac{m^2c^2}{\hbar^2}\right)\tilde{\Psi}_{L,R} = 0 ,
 $$
 
-and likewise for $\tilde{\Psi}_L$, so each chiral component satisfies the **Klein–Gordon equation**
-
-$$
-\left(\Box - m^2\right)\tilde{\Psi} = 0 ,
-$$
-
-in agreement with the companion article on the Klein–Gordon equation, whose operator is $\Box - m^2c^2/\hbar^2$. This is the biquaternion form of the statement that the square of the first-order operator is the Klein–Gordon operator.
+in agreement with the companion article on the Klein–Gordon equation. This is the biquaternion form of the statement that the square of the first-order operator is the Klein–Gordon operator.
 
 ## Plane-Wave Solutions
 
-### The Massless Case
+### Massless Plane Waves
 
-Plane-wave solutions of the massless biquaternionic Dirac equation are
+Plane-wave solutions of the right-handed massless equation are
 
 $$
 \boxed{\;\tilde{\Psi}(\tilde{R}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{R}^{\natural}\right)/\hbar\right)
@@ -542,11 +563,11 @@ $$
 \tilde P\tilde\Psi_0/\hbar = 0,
 $$
 
-i.e., the polarization biquaternion $\tilde{\Psi}_0$ is annihilated by the wave biquaternion $\tilde{P}/\hbar$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, the two helicities.
+i.e., the polarization biquaternion $\tilde{\Psi}_0$ is annihilated by the wave biquaternion $\tilde{P}/\hbar$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, the two spin states of the Weyl spinor of this chirality. The two chiralities are the two helicities, so the full massless field is the pair of this equation and its conjugate.
 
-Nonzero solutions of $\tilde P\tilde\Psi_0/\hbar = 0$ exist only when $\tilde{P}/\hbar$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{P}/\hbar$ is null: $\tilde{P}\tilde{P}^{\natural}/\hbar^{2} = 0$, equivalently $k_0^2 = \|\vec k\|^2$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, corresponding to the two spin states of a massless fermion; for non-null $\tilde{P}/\hbar$ the kernel is trivial. This matches the two-component structure of the Weyl spinor.
+Nonzero solutions of $\tilde P\tilde\Psi_0/\hbar = 0$ exist only when $\tilde{P}/\hbar$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{P}/\hbar$ is null: $\tilde{P}\tilde{P}^{\natural}/\hbar^{2} = 0$, equivalently $k_0^2 = \|\vec k\|^2$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, the two spin states of the Weyl spinor of this chirality; for non-null $\tilde{P}/\hbar$ the kernel is trivial. This matches the two-component structure of the Weyl spinor.
 
-### The Massive Case
+### Massive Plane Waves
 
 For the massive equation a single central-phase plane wave,
 
@@ -563,7 +584,7 @@ $$
 Eliminating $\tilde{\Psi}_0^L$ gives
 
 $$
-\frac{\tilde{P}\tilde{P}^{\natural}}{\hbar^{2}}\,\tilde{\Psi}_0^R = -m^2\,\tilde{\Psi}_0^R ,
+\frac{\tilde{P}\tilde{P}^{\natural}}{\hbar^{2}}\,\tilde{\Psi}_0^R = -\frac{m^2c^2}{\hbar^2}\,\tilde{\Psi}_0^R ,
 $$
 
 so a nonzero solution requires the **mass-shell condition**
@@ -623,22 +644,22 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 
 ### Structural Identity
 
-The massless biquaternionic Dirac equation and the homogeneous biquaternion Maxwell equation have the same form:
+The **right-handed** massless biquaternionic Dirac equation and the homogeneous biquaternion Maxwell equation have the same form:
 
 $$
-\tilde{\nabla}\tilde{\Psi} = 0.
+\tilde{\nabla}\tilde{\Psi}_R = 0 .
 $$
 
-The difference is the interpretation of the field $\tilde{\Psi}$:
+The left-handed equation has the conjugate form, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = 0$, which is the same equation for the conjugate field. The difference is the interpretation of the field:
 
-- In the Maxwell case, $\tilde{\Psi}$ is the field-strength biquaternion $\tilde{F}$, which lives in the vector part of the algebra and describes the electromagnetic field.
-- In the Dirac case, $\tilde{\Psi}$ is the fermion field, which lives in the full algebra and describes the spin-$\frac{1}{2}$ particle.
+- In the Maxwell case, the field is the field-strength biquaternion $\tilde{F}$, which lives in the vector part of the algebra and describes the electromagnetic field.
+- In the Dirac case, the field is the right-handed fermion field $\tilde{\Psi}_R$, which takes values in the chiral half $S^{\mathrm{c}}$ of the Dirac module and describes the spin-$\frac{1}{2}$ particle.
 
 The structural identity is the algebraic content of the statement that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$. The two fields differ in the **representation** of the algebra: the photon field lives in the vector representation (spin-1), and the electron field lives in the spinor representation (spin-$\frac{1}{2}$).
 
 ### The Mass Term
 
-The **mass term** is the term that distinguishes the massive Dirac equation from the massless case, and it does not appear in the Maxwell equation. In the biquaternion formulation it is the linear, chirality-off-diagonal pairing of the pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ of the section *The Massive Case*; on the spinor module it is the term $m\psi$ of the matrix Dirac equation, which couples the left- and right-handed Weyl spinors. The coupling is the off-diagonal pairing $\beta$, not a right multiplication. In the Standard Model the mass term arises from the **Higgs mechanism**: the fermion couples to the Higgs field, and the coupling generates an effective mass term.
+The **mass term** is the term that distinguishes the massive Dirac equation from the massless case, and it does not appear in the Maxwell equation. In the biquaternion formulation it is the linear, chirality-off-diagonal pairing of the pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ of the section *The Massive Case*; on the spinor module it is the term $m\psi$ of the matrix Dirac equation, which couples the left- and right-handed Weyl spinors. In the corpus's one-sided formulation the coupling is the off-diagonal pairing $\beta$, not a right multiplication; the two-sided dictionary carries the same pairing as the right multiplication $M_{\vec e_z}$, and the two are one mass term in two representations. In the Standard Model the mass term arises from the **Higgs mechanism**: the fermion couples to the Higgs field, and the coupling generates an effective mass term.
 
 The biquaternion framework does not derive the Higgs mechanism; it simply provides a compact notation for the mass term once the mechanism is assumed. The conjugation $\flat$ is a separate object — the algebra's real structure, discussed in the section *The Massive Case* — and is not the mass term.
 
@@ -658,7 +679,7 @@ $$
 \vec{\nu} := \frac{\mathrm{grad}\sqrt{\epsilon}}{\sqrt{\epsilon}}, \quad \vec{\nu}_2 := \frac{\mathrm{grad}\sqrt{\mu}}{\sqrt{\mu}} ,
 $$
 
-which is the **carrier identity** of *Electromagnetism in Media — The Local Complex Structure at Work*, read in the static case, where no time coordinate is present and the operator is the Moisil–Theodorescu operator $D$ alone. The Dirac side has the same shape: the massive equation with an electric potential, and separately with a scalar potential, becomes after the dictionary a first-order equation whose only position dependence is a coefficient multiplying one basis direction, as recorded in *The Dirac Operator with Potentials in Quaternionic Form* above. Matching the two shapes, the 2003 paper concludes that a solution of the Dirac equation with an electric or a scalar potential is a solution of the static Maxwell system of an isotropic inhomogeneous medium, the medium being the potential read as a parameter:
+which is the **carrier identity** of *Electromagnetism in Media — The Local Complex Structure at Work*, read in the static case, where no time coordinate is present and the operator is the Moisil–Theodorescu operator $D$ alone, in the corpus's normalization $D=iD_3$. The Dirac side has the same shape: the massive equation with an electric potential, and separately with a scalar potential, becomes after the dictionary a first-order equation whose only position dependence is a coefficient multiplying one basis direction, as recorded in *The Dirac Operator with Potentials in Quaternionic Form* above. Matching the two shapes, the 2003 paper concludes that a solution of the Dirac equation with an electric or a scalar potential is a solution of the static Maxwell system of an isotropic inhomogeneous medium, the medium being the potential read as a parameter:
 
 $$
 \epsilon = \exp(\,2G(x_1)), \qquad G(x_1) = \int g(x_1)\,dx_1 ,
@@ -670,10 +691,16 @@ with $g$ the Dirac potential. The identification is a statement about **coeffici
 
 ### The Mass Shell as the Condition on the Dirac–Maxwell Correspondence
 
-The time-harmonic comparison is the paper's last section, and its conclusion is a condition rather than an identity. Let the massive quaternionic equation be read on a time-harmonic field, as in the harmonic-spinor subsection above: the amplitude obeys the shifted equation $D_\alpha f = 0$ at the parameter $\alpha = i\omega i_1 + mi_2$, and the massless case of the same equation is the vacuum Maxwell equation. The time-harmonic Maxwell field of a homogeneous isotropic medium is likewise a pair of Beltrami fields, and the projection identity that relates the two pairs,
+The time-harmonic comparison is the paper's last section, and its conclusion is a condition rather than an identity. Let the massive quaternionic equation be read on a time-harmonic field, as in the harmonic-spinor subsection above. There the frequency is the Dirac frequency; write it $\omega_D$, and write $E=\hbar\omega_D$ for the particle energy. The amplitude obeys the shifted equation $D_{3,\alpha}f=0$ at the parameter
 
 $$
-\bigl(D + M_\alpha\bigr) = P^{+}\bigl(D + M_k\bigr) + P^{-}\bigl(D - M_k\bigr),
+\alpha = -\left(i\,\frac{E}{\hbar c}\,\vec e_x + \frac{mc}{\hbar}\,\vec e_y\right),
+$$
+
+and the massless case of the same equation is the vacuum Maxwell equation. The time-harmonic Maxwell field of a homogeneous isotropic medium is likewise a pair of Beltrami fields, with its own frequency $\omega$ and wave number $k=\omega\sqrt{\epsilon\mu}=\omega/c$, and the projection identity that relates the two pairs,
+
+$$
+\bigl(D_3 + M_\alpha\bigr) = P^{+}\bigl(D_3 + M_k\bigr) + P^{-}\bigl(D_3 - M_k\bigr),
 \qquad
 P^{\pm} := \tfrac12 M_{(1 \pm \alpha/k)} ,
 $$
@@ -681,18 +708,28 @@ $$
 holds in both directions **if and only if** the Maxwell wave number and the Dirac parameter agree,
 
 $$
-k^2 = \alpha^2, \qquad k := \omega\sqrt{\epsilon\mu} .
+k^2 = \alpha^2 .
 $$
 
-The parameter is the one the corpus already carries, and its square is computed at once: $\alpha^2 = (i\omega i_1 + mi_2)^2 = \omega^2 - m^2$, a central scalar. The condition is therefore
+The parameter's square is central, because the two units anticommute:
 
 $$
-\boxed{\;k^2 = \omega^2 - m^2, \qquad \text{equivalently} \qquad \omega^2 = k^2 + m^2\;},
+\alpha^2 = \frac{E^2}{\hbar^2c^2} - \frac{m^2c^2}{\hbar^2} .
 $$
 
-which is the **mass shell** in the corpus's natural units and, with $\hbar$ and $c$ restored and the Planck and de Broglie relations used, the relativistic dispersion relation $E^2 = p^2c^2 + m^2c^4$. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell. The same interpretation is why the massless (neutrino) case of the harmonic-spinor subsection needs no condition at all: at $m = 0$ the parameter is $\alpha = i\omega i_1$ with $\alpha^2 = \omega^2$, and $k^2 = \alpha^2$ becomes the vacuum null-wave relation $\omega = k$ — the case the source calls the neutrino, and the one the corpus records as Imaeda's vacuum Maxwell equation.
+The condition is therefore
 
-**What is quoted.** The source's intermediate equations, which restore $c$ and $\hbar$ at a different point of the reduction, are quoted as its own; the printed power of $c$ in them could not be read from the scan. The two statements used above — the condition $k^2 = \alpha^2$ and the value $\alpha^2 = \omega^2 - m^2$ — are legible, and the mass-shell interpretation follows from them.
+$$
+\boxed{\;\frac{\omega^2}{c^2} = \frac{E^2}{\hbar^2c^2} - \frac{m^2c^2}{\hbar^2}
+\quad\Longleftrightarrow\quad
+E^2 = \hbar^2\omega^2 + m^2c^4\;},
+$$
+
+which, with the de Broglie relation $\hbar\omega=pc$ for the Maxwell wave number, is the relativistic dispersion relation $E^2=p^2c^2+m^2c^4$. In the natural units $\hbar=c=1$ of this section it reads $E^2=\omega^2+m^2$, equivalently $k^2=E^2-m^2$ at $k=\omega=p$. The paper draws attention to the agreement — the condition on which its Dirac–Maxwell equivalence rests is the same relation that defines the particle's mass — and the corpus records it as what ties the parametric statements together: the parameter that makes the shifted equation solvable is the parameter that puts the field on shell.
+
+The same interpretation is why the massless (neutrino) case of the harmonic-spinor subsection needs no condition at all: at $m=0$ the parameter is $\alpha=-(iE/(\hbar c))\,\vec e_x$ with $\alpha^2=E^2/(\hbar^2c^2)$, and $k^2=\alpha^2$ becomes $\omega^2=E^2/\hbar^2$, i.e., $\omega=\omega_D$ — the two frequencies coincide, the vacuum null-wave relation $\omega=k$, the case the source calls the neutrino, and the one the corpus records as Imaeda's vacuum Maxwell equation.
+
+**What is quoted.** The source's intermediate equations, which restore $c$ and $\hbar$ at a different point of the reduction, are quoted as its own; the printed power of $c$ in them could not be read from the scan. The two statements used above — the condition $k^2=\alpha^2$ and the central value of $\alpha^2$ in terms of the energy and the mass — are legible, and the mass-shell interpretation follows from them.
 
 ### The Lanczos Route: Maxwell with Feedback
 
@@ -704,7 +741,7 @@ $$
 
 comparing it with the biquaternion Maxwell equation $\tilde{\nabla}\tilde{F} = -4\pi\tilde{J}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde Q_2$ acts back on the object that generates it, with the strength $mc/\hbar$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde{\nabla}$, a square root of $\Box$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
 
-The corpus's chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ is the same equation written in the other useful way: it displays the spinor split into the two chiral halves $S$ and $S^{\mathrm{c}}$ — not the two Peirce carriers, which are copies of $S$ — but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by the idempotent superposition
+The corpus's chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ is the same equation in the chiral variables — the second member carries $\tilde{\nabla}^{\natural}$ because the left-handed field is the conjugate of the Lanczos $\tilde Q_2$ — and it displays the spinor split into the two chiral halves $S$ and $S^{\mathrm{c}}$ — not the two Peirce carriers, which are copies of $S$ — but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by the idempotent superposition
 
 $$
 D = \tilde Q_1\tilde\Pi + \tilde Q_2^{*}\bar{\tilde\Pi},
@@ -722,27 +759,27 @@ is strictly equivalent to Dirac's equation. The unit vector on the right is the 
 
 ## The Dirac Operator with Potentials in Quaternionic Form
 
-Every equation of this article so far is free. The standard Dirac potentials — the **electric** (the time component of a four-vector), the **magnetic** (its spatial part), the **scalar**, and the **pseudoscalar** — are usually attached one at a time in the Clifford-matrix formalism, each changing the operator differently. Kravchenko's monograph attaches all four in one place, and the result is a statement about the algebra rather than about the potentials. The free quaternionic operator and the free classical Dirac operator are related by **one constant linear transformation** — a change of basis; the monograph's Lemma 3 — and the *same* transformation, together with one permutation of the index labels, carries each of the four potentials into the corresponding quaternionic operator. The four potentials therefore do not enlarge the formalism. Each is an explicit coefficient function multiplying one of the algebra's basis directions, and the quaternionic Dirac equation with any one of them is the same first-order equation with a different coefficient.
+The Dirac equations of this article so far are free. The standard Dirac potentials — the **electric** (the time component of a four-vector), the **magnetic** (its spatial part), the **scalar**, and the **pseudoscalar** — are usually attached one at a time in the Clifford-matrix formalism, each changing the operator differently. Kravchenko's monograph attaches all four in one place, and the result is a statement about the algebra rather than about the potentials. The free quaternionic operator and the free classical Dirac operator are related by **one constant linear transformation** — a change of basis; the monograph's Lemma 3 — and the *same* transformation, together with one permutation of the index labels, carries each of the four potentials into the corresponding quaternionic operator. The four potentials therefore do not enlarge the formalism. Each is an explicit coefficient function multiplying one of the algebra's basis directions, and the quaternionic Dirac equation with any one of them is the same first-order equation with a different coefficient.
 
-The four directions are the four the algebra distinguishes. The scalar potential multiplies the identity $e_t$; the pseudoscalar potential multiplies the scalar imaginary $i$, which is the algebra's image of the volume cell $-L_{e_t}R_{\vec e_z}$ under the dictionary above; the electric potential multiplies the timelike direction; and the magnetic potential enters through the spatial vector $\sum_\mu A_\mu \vec e_\mu$. This is the same fourfold list that Gürsey reads as the degenerate cases of the Lanczos system, and here it is the list of the algebra's carrier directions for a *coupling* rather than for a field.
+The four directions are the four the algebra distinguishes. The scalar potential multiplies the identity $e_t$; the pseudoscalar potential multiplies the scalar imaginary $i$, the algebra's central pseudoscalar; the electric potential multiplies the timelike direction; and the magnetic potential enters through the spatial vector $\sum_\mu A_\mu \vec e_\mu$. This is the same fourfold list that Gürsey reads as the degenerate cases of the Lanczos system, and here it is the list of the algebra's carrier directions for a *coupling* rather than for a field.
 
-**The pseudoscalar potential.** Of the four, the pseudoscalar case is the one that reaches machinery the corpus already has. It is the coupling of the field to $i$ — the $\chi$-type, chirality-sensitive coupling (the chirality-cell type in the cell dictionary), not the minimal coupling of the companion article, which uses the four-vector direction. For a time-harmonic field the pseudoscalar-potential equation reduces to
+**The pseudoscalar potential.** Of the four, the pseudoscalar case is the one that reaches machinery the corpus already has. It is the coupling of the field to $i$ — the $\chi$-type, chirality-sensitive coupling (the chirality-cell type in the cell dictionary), not the minimal coupling of the companion article, which uses the four-vector direction. Write $\vec x:=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ for the position vector. For a time-harmonic field the pseudoscalar-potential equation reduces to
 
 $$
-\bigl(D + \varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)I + M\bigr)f(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = 0,
+\bigl(D + \varphi(\vec x)I + M\bigr)f(\vec x) = 0,
 $$
 
-where $\varphi$ is the potential, $I$ the identity of the algebra, and $M$ the constant frequency–mass shift; the only position dependence in the whole operator is the scalar coefficient $\varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. That is exactly the corpus's shifted operator $D_\alpha = D + M_\alpha$ of *Biquaternion Regular Functions*, with the parameter no longer a constant but a function of position. The pseudoscalar-potential Dirac equation is therefore a shifted-operator equation, and the shift is the potential.
+where $\varphi$ is the potential, $I$ the identity of the algebra, and $M$ the constant frequency–mass shift; the only position dependence in the whole operator is the scalar coefficient $\varphi(\vec x)$. That is exactly the corpus's shifted operator $D_\alpha = D + M_\alpha$ of *Biquaternion Regular Functions*, with the parameter no longer a constant but a function of position. The pseudoscalar-potential Dirac equation is therefore a shifted-operator equation, and the shift is the potential.
 
 **The splitting.** The reduction is the monograph's Theorem 15. Let the constant biquaternion $\omega$ carry the frequency and the mass, so that $\omega^2 = \beta^2$, and suppose $\omega^2$ is not a zero divisor. Then the pseudoscalar equation is equivalent to a **pair** of scalar-coefficient equations,
 
 $$
-\bigl(D + (\varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + \beta)I\bigr)f_+ = 0,
+\bigl(D + (\varphi(\vec x) + \beta)I\bigr)f_+ = 0,
 \qquad
-\bigl(D + (\varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \beta)I\bigr)f_- = 0,
+\bigl(D + (\varphi(\vec x) - \beta)I\bigr)f_- = 0,
 $$
 
-the two components $f_\pm$ being the projections of $f$ by the projectors $P_\pm$ that the shifted-operator theory supplies. Each of the two is an equation of the form $(D + \alpha(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))u = 0$ with a **scalar** coefficient. That equation is the subject of the monograph's §4.1.5, and the corpus already carries its solution: the **zero-divisor device** recorded in *Maxwell's Equations in Chiral Media*, in which a solution of the eikonal equation $(\nabla\chi)^2 = \alpha^2$ conjugates $D + \alpha$ into $D + \mathcal{Q}_+$ with $\mathcal{Q}_+ = \nabla\chi$ a zero divisor, and the solutions are built from the exponentials $\exp(\pm i\Theta)$ of the accumulated phase and analytic transverse functions. The chain therefore closes inside the corpus: pseudoscalar-potential Dirac equation $\to$ shifted operator with a scalar coefficient $\to$ eikonal conjugation by a zero divisor $\to$ explicit solutions. The exceptional case, $\omega^2$ a zero divisor (an isotropic $\omega$), is separate; the monograph handles it with a one-variable ansatz, because the projectors $P_\pm$ degenerate there.
+the two components $f_\pm$ being the projections of $f$ by the projectors $P_\pm$ that the shifted-operator theory supplies. Each of the two is an equation of the form $(D + \alpha(\vec x))u = 0$ with a **scalar** coefficient. That equation is the subject of the monograph's §4.1.5, and the corpus already carries its solution: the **zero-divisor device** recorded in *Maxwell's Equations in Chiral Media*, in which a solution of the eikonal equation $(\nabla\chi)^2 = \alpha^2$ conjugates $D + \alpha$ into $D + \mathcal{Q}_+$ with $\mathcal{Q}_+ = \nabla\chi$ a zero divisor, and the solutions are built from the exponentials $\exp(\pm i\Theta)$ of the accumulated phase and analytic transverse functions. The chain therefore closes inside the corpus: pseudoscalar-potential Dirac equation $\to$ shifted operator with a scalar coefficient $\to$ eikonal conjugation by a zero divisor $\to$ explicit solutions. The exceptional case, $\omega^2$ a zero divisor (an isotropic $\omega$), is separate; the monograph handles it with a one-variable ansatz, because the projectors $P_\pm$ degenerate there.
 
 **What this does and does not add.** It adds the observation that the chirality-sensitive Dirac coupling is not new machinery: it is the shifted operator the corpus already possesses, read at a position-dependent parameter, and the corpus's zero-divisor device solves it. It does not supply solutions for the electric potential — the monograph reaches that case by the same conjugation, but the corpus treats electromagnetic coupling separately in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — and it claims no new physics: the coupling list is standard, and it is surveyed in the encyclopaedic compendium the monograph cites for the classification of exact Dirac solutions up to the late 1980s, now recorded in the Further Reading below.
 
@@ -809,42 +846,46 @@ These questions are open.
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+\begin{aligned}
+\gamma_0 &= iL_{e_t}R_{\vec e_x}, &\gamma_1 &= iL_{\vec e_x}R_{\vec e_y},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}R_{\vec e_y}, &\gamma_3 &= iL_{\vec e_z}R_{\vec e_y},\\[2pt]
+\gamma_5 &= -iL_{e_t}R_{\vec e_z}.
+\end{aligned}
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The cell dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 
-The Dirac equation in biquaternionic form is the equation
-
-$$
-\tilde{\nabla}\tilde{\Psi} = 0
-$$
-
-in the massless case, and the chiral pair
+The Dirac equation in biquaternionic form is the chiral pair
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R
 $$
 
-for mass $m$, where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is the spinor field with one component in each chiral half, $\tilde{\Psi}_L\in S$ and $\tilde{\Psi}_R\in S^{\mathrm{c}}$, and the mass term is the linear off-diagonal pairing. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of $\mathbb{B}[j]$; the chirality cell $-iL_{e_t}R_{\vec e_z}$ is its representative. The massless equation has the same form as the source-free biquaternion Maxwell equation. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to its even subalgebra. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
+for mass $m$, where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is the spinor field with one component in each chiral half, $\tilde{\Psi}_L\in S$ and $\tilde{\Psi}_R\in S^{\mathrm{c}}$, and the mass term is the linear off-diagonal pairing. At $m=0$ the pair decouples into the two one-sided equations
+
+$$
+\tilde{\nabla}\tilde{\Psi}_R=0, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=0,
+$$
+
+one for each chirality; the single equation $\tilde{\nabla}\tilde{\Psi}=0$ is the right-handed member. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of $\mathbb{B}[j]$; the chirality cell $-iL_{e_t}R_{\vec e_z}$ is its representative. The right-handed massless equation has the same form as the source-free biquaternion Maxwell equation; the left-handed equation is its conjugate. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to the even subalgebra of $\mathrm{Cl}_{1,3}$. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
 
 The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{R} = ict'\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural}$.
 
-The plane-wave solutions of the massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ with $\tilde P\tilde\Psi_0/\hbar = 0$ (nonzero solutions only for null $\tilde{P}/\hbar$), giving the two spin states of a massless fermion. The massive plane waves satisfy the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
+The plane-wave solutions of the right-handed massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ with $\tilde P\tilde\Psi_0/\hbar = 0$ (nonzero solutions only for null $\tilde{P}/\hbar$), giving the two spin states of the Weyl spinor; the left-handed equation has the conjugate plane waves, and the two chiralities are the two helicities. The massive plane waves satisfy the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
 
 The spherical and cylindrical solutions are constructed by the methods of Clifford analysis, via the monogenic completion of harmonic functions. They describe the angular momentum states of the fermion field and the waveguide modes, respectively.
 
 The biquaternion framework provides a compact and unified language for the Maxwell and Dirac equations, but it does not by itself derive the mass term or the electroweak structure. Those require additional physics beyond the algebraic framework.
 
-There is also an explicit **dictionary** from the four-component bispinors onto the algebra, due to Kravchenko (1995). It is real-linear and not complex-linear: the spatial Dirac generators become left multiplication by the imaginary units, the timelike generator becomes the algebra's **complex conjugation** $\bar{\cdot}$, and the central imaginary acts on the right. The Dirac equation thereby becomes the single biquaternionic equation $\mathcal{N}F := (i\partial/\partial Q_t + D - m\,i\,C M_{i_3})F = 0$, whose mass term carries the conjugation — the same complex conjugation, and the same coupling to a spatial direction, that the Lanczos route displays in $\tilde{\nabla}D = mD^{*}i\vec{\nu}$. The conjugation is the algebra's $\bar{\cdot}$ and not its real structure $\flat$; that distinction is what makes the dictionary consistent, since the retired $\flat$-based single-field mass term is the one that fails on the dispersion. The conjugation is removed by a change of variable, after which the time-harmonic amplitude obeys a shifted equation with a biquaternionic parameter — and that same conjugation-undone form carries the **integral representation of the harmonic spinor field**, with the Cauchy-type operator $K_\omega=A^{-1}KA$ and the Cauchy integral formula, Plemelj–Sokhotski formulas and boundary-value criterion that go with it.
+There is also an explicit **dictionary** from the four-component bispinors onto the algebra, due to Kravchenko (1995). It is real-linear and not complex-linear: the spatial Dirac generators become left multiplication by the imaginary units, the timelike generator becomes the algebra's **complex conjugation** $\bar{\cdot}$, and the central imaginary acts on the right. The Dirac equation thereby becomes the single biquaternionic equation $\mathcal{N}F := (i\partial/\partial t' + D_3 - m\,i\,C M_{\vec e_z})F = 0$, whose mass term carries the conjugation — the same complex conjugation, and the same coupling to a spatial direction, that the Lanczos route displays in $\tilde{\nabla}D = mD^{*}i\vec{\nu}$. The conjugation is the algebra's $\bar{\cdot}$ and not its real structure $\flat$; that distinction is what makes the dictionary consistent, since the retired $\flat$-based single-field mass term is the one that fails on the dispersion. The conjugation is removed by a change of variable, after which the time-harmonic amplitude obeys a shifted equation with a biquaternionic parameter — and that same conjugation-undone form carries the **integral representation of the harmonic spinor field**, with the Cauchy-type operator $K_\omega=A^{-1}KA$ and the Cauchy integral formula, Plemelj–Sokhotski formulas and boundary-value criterion that go with it.
 
-The same construction has two consequences that belong to the equation rather than to its function theory. Removing the conjugation from the operator is possible: the operator is conjugate to $R = D-\partial/\partial t'M_{i_1}-mM_{i_2}$, whose coefficients are real quaternions and therefore carry no complex conjugation. Such an $R$ is **real**, and its reality means that the real and imaginary parts of any solution are separately solutions — one quaternionic solution gives two Dirac solutions, and the map $\Phi \mapsto iZ_c\Phi$ it produces is an involution. And the same dictionary relates the massive Dirac equation with an electric or scalar potential to the static sourceless Maxwell system of an inhomogeneous medium, $\epsilon = \exp(2G)$ with $dG/dx_1 = g$; while on time-harmonic fields the Dirac field and the Maxwell field of a homogeneous medium share their projection identity exactly when $k^2 = \alpha^2$, the mass shell.
+The same construction has two consequences that belong to the equation rather than to its function theory. Removing the conjugation from the operator is possible: the operator is conjugate to $R = D_3-\partial/\partial t'M_{\vec e_x}-mM_{\vec e_y}$, whose coefficients are real quaternions and therefore carry no complex conjugation. Such an $R$ is **real**, and its reality means that the real and imaginary parts of any solution are separately solutions — one quaternionic solution gives two Dirac solutions, and the map $\Phi \mapsto iZ_c\Phi$ it produces is an involution. And the same dictionary relates the massive Dirac equation with an electric or scalar potential to the static sourceless Maxwell system of an inhomogeneous medium, $\epsilon = \exp(2G)$ with $dG/dx_1 = g$; while on time-harmonic fields the Dirac field and the Maxwell field of a homogeneous medium share their projection identity exactly when $k^2 = \alpha^2$, the mass shell.
 
 ## Summary of Notation
 
@@ -855,7 +896,7 @@ The same construction has two consequences that belong to the equation rather th
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Chirality, the central sign of the double; $\chi^2=e_t$; its representative on $\Delta$ is the chirality cell $-iL_{e_t}R_{\vec e_z}$ |
-| $i_1,i_2,i_3$ | The source's symbols for the quaternion units of the dictionary, the $\vec e_x,\vec e_y,\vec e_z$ above; the scalar imaginary is its $i$ as here |
+| $i_1,i_2,i_3$ | The source's symbols for the quaternion units $\vec e_x,\vec e_y,\vec e_z$; the scalar imaginary is its $i$ as here |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\vec v$ | Particle three-velocity |
@@ -870,21 +911,24 @@ The same construction has two consequences that belong to the equation rather th
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $A$ | Real-linear bijection from bispinors to biquaternion-valued functions (the explicit dictionary) |
 | $C$, also written $\bar{\cdot}$ | Componentwise complex conjugation; the timelike generator of that dictionary |
-| $\mathcal{N} = i\partial/\partial Q_t + D - m\,i\,C M_{i_3}$ | Biquaternionic Dirac operator with the conjugation in the mass term |
-| $P_k^{\pm} = \tfrac12 M_{(1\pm i\,i_k)}$ | Complementary projectors (right multiplications) of the source's factorisation $\mathcal{N}=u^{+}Ru^{-}$ |
-| $R = P_1^{+}(i\partial/\partial t'+D)+P_1^{-}(-i\partial/\partial t'+D)-m\,M_{i_2} = D-\partial/\partial t'M_{i_1}-m\,M_{i_2}$ | The conjugation-free operator of the same source; *real*, with coefficients in $\mathbb{H}$, so $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ |
+| $D_3 = \sum_{k=1}^{3}\vec e_k\,\partial/\partial Q_k$ | The source's spatial Dirac operator, $D_3^2=-\Delta$, with real quaternion coefficients |
+| $D = iD_3$ | The corpus's spatial operator of *Biquaternion Regular Functions*, $D^2=\Delta$; the operator of the shifted theory |
+| $\mathcal{N} = i\partial/\partial t' + D_3 - m\,i\,C M_{\vec e_z}$ | Biquaternionic Dirac operator with the conjugation in the mass term |
+| $P_k^{\pm} = \tfrac12 M_{(1\pm i\,\vec e_k)}$ | Complementary projectors (right multiplications) of the source's factorisation $\mathcal{N}=u^{+}Ru^{-}$ |
+| $R = P_1^{+}(i\partial/\partial t'+D_3)+P_1^{-}(-i\partial/\partial t'+D_3)-m\,M_{\vec e_y} = D_3-\partial/\partial t'M_{\vec e_x}-m\,M_{\vec e_y}$ | The conjugation-free operator of the same source; *real*, with coefficients in $\mathbb{H}$, so $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ |
 | $\Phi_{\mathrm{inv}} = iZ_c\Phi$ | The involutive symmetry of the Dirac equation that the reality of $R$ produces; $(iZ_c)^2=1$ |
 | $\epsilon = \exp(2G)$, $\vec{\nu} = \mathrm{grad}\,G$ | The Dirac potential $g=dG/dx_1$ read as the inhomogeneity of a static Maxwell medium |
-| $k = \omega\sqrt{\epsilon\mu}$ | Maxwell wave number; the Dirac–Maxwell correspondence holds iff $k^2=\omega^2-m^2$ |
-| $D_\alpha\tilde{p} = 0$ | Shifted equation for the time-harmonic amplitude once $C$ is removed |
+| $k = \omega\sqrt{\epsilon\mu}$ | Maxwell wave number; the Dirac–Maxwell correspondence holds iff $k^2=\alpha^2$, equivalently $E^2=\hbar^2\omega^2+m^2c^4$ |
+| $D_{3,\alpha}\tilde{p} = 0$, $D_{3,\alpha}=D_3+M_\alpha$ | Shifted equation for the time-harmonic amplitude once $C$ is removed, in the source's normalization |
 | $\varphi$ | Scalar (pseudoscalar-potential) coefficient of the shifted Dirac operator |
 | $P_\pm$ | Right multiplication by the complementary null idempotents $\tfrac12(1\pm\alpha/\gamma)$; they split the pseudoscalar-potential equation into two scalar-coefficient equations, and they are the two helicity projectors of the time-harmonic field |
-| $D_\alpha$, $\alpha=-i\omega\,\vec e_x$ | Shifted amplitude operator of the massless harmonic spinor field |
+| $D_{3,\alpha}$, $\alpha=-i\omega\,\vec e_x$ | Shifted amplitude operator of the massless harmonic spinor field, in the source's normalization |
 | $K_\omega = A^{-1} K A$ | Its Cauchy-type operator; the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion $\psi = K_\omega\psi$ on $\Gamma$ hold for it |
 | $\tilde{P}/\hbar$ | Wave biquaternion |
 | $K_\mu$ | Unit complex four-vector carrying the mass term, $m\bar\Psi\Psi=\bar\Psi(iK_t\,e_t\Psi \vec e_x+i\sum_k K_k\,\vec e_k\Psi \vec e_y)$; $K_\mu=p_\mu/m$ on shell, $\sum_\mu\varepsilon_\mu K_\mu K_\mu=1$ |
 | $B_\mu, N_\mu$ | The two real four-vectors of the semi-spinors, $\Psi_1=-\sum_{\mu,\nu}B_\mu g_{\mu\nu}e_\nu v e_\bullet$, $\Psi_2=-\sum_{\mu,\nu}N_\mu g_{\mu\nu}e_\nu u e_\bullet$, with $e_\bullet=\vec e_x$ on the timelike index and $\vec e_y$ on the spatial ones |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector, the vector representation of the same spinor |
+| $|F|^2 = \langle F\rangle_{*} = \sum_\mu|F_\mu|^2$ | Hermitian norm of the biquaternion field; the Dirac probability density under the dictionary |
 | $m$ | Fermion mass |
 
 ## Further Reading
@@ -898,7 +942,7 @@ The same construction has two consequences that belong to the equation rather th
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the spinor formulation of the Dirac equation.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the monogenic functions and the Clifford-analytic technique.
 - L. A. Alexeyeva, "Differential algebra of biquaternions. Dirac equation and its generalized solutions," *Progress in Analysis, Proceedings of the 8th Congress of the ISAAC* (Moscow, 2013), pp. 153–161, for the biquaternion formulation of the Dirac equation.
-- V. V. Kravchenko, "On a Biquaternionic Bag Model," *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for the explicit real-linear dictionary from the four-component bispinors onto the biquaternions, with the timelike generator realized by complex conjugation — the images of the spatial generators, not readable from this source alone, are stated in the Doklady note of the next entry; for the biquaternionic Dirac operator $i\partial/\partial Q_t + D - miCM_{i_3}$ whose mass term carries the conjugation; for the removal of the conjugation by a change of variable, realised as the factorisation $\mathcal{N}=u^{+}Ru^{-}$ with the conjugation-free operator $R=P_1^{+}(i\partial/\partial t'+D)+P_1^{-}(-i\partial/\partial t'+D)-mM_{i_2}=D-\partial/\partial t'M_{i_1}-mM_{i_2}$; and for the projectors $P_k^{\pm}=\tfrac12 M_{(1\pm i i_k)}$ of that factorisation.
+- V. V. Kravchenko, "On a Biquaternionic Bag Model," *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for the explicit real-linear dictionary from the four-component bispinors onto the biquaternions, with the timelike generator realized by complex conjugation — the images of the spatial generators, not readable from this source alone, are stated in the Doklady note of the next entry; for the biquaternionic Dirac operator $i\partial/\partial Q_t + D - miCM_{i_3}$, the source's $D$ being the $D_3$ of this article, whose mass term carries the conjugation; for the removal of the conjugation by a change of variable, realised as the factorisation $\mathcal{N}=u^{+}Ru^{-}$ with the conjugation-free operator $R=P_1^{+}(i\partial/\partial t'+D)+P_1^{-}(-i\partial/\partial t'+D)-mM_{i_2}=D-\partial/\partial t'M_{i_1}-mM_{i_2}$; and for the projectors $P_k^{\pm}=\tfrac12 M_{(1\pm i i_k)}$ of that factorisation.
 - V. V. Kravchenko, "Quaternion-Valued Integral Representations of the Harmonic Electromagnetic and Spinor Fields," *Doklady Mathematics* **51** (1995), no. 2, 287–289 (translated from *Doklady Akademii Nauk* **341** (1995), no. 5, 603–605), for the dictionary of the preceding entry as a real-linear bijection with the mass term carrying complex conjugation, and for that dictionary in full — the components of $A$, and the images of the three timelike bivectors, $A(L_{\vec e_x}R_{\vec e_z}\Phi)=-i\,i_1A(\Phi)$, $A(L_{\vec e_y}R_{\vec e_z}\Phi)=-i\,i_2A(\Phi)$, $A(L_{\vec e_z}R_{\vec e_z}\Phi)=+i\,i_3A(\Phi)$, with the volume element carried by a right multiplication through $i_3$; for the bijection between the solutions of the Dirac equation and the solutions of the quaternionic equation $i\partial/\partial t'F+DF-\mathrm{Im}(F)\,i=0$; for the time-harmonic field $F = P_+f(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(i\omega t')+P_-f(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(-i\omega t')$ with the two projectors $P_\pm$ and the helicity interpretation of the two components; for the massless case $i\partial/\partial t'F+DF=0$, attributed there to Imaeda; and for the spinor-side integral representation recorded in the section *The Integral Representation of the Harmonic Spinor Field* — the amplitude operator $D_\omega\psi = -\omega\,e_t\psi \vec e_x+i\sum_{k=1}^{3}\vec e_k\,(\partial\psi/\partial Q_k)\,\vec e_y$, the Cauchy-type operator $K_\omega = A^{-1}KA$, and the three results that follow for it: the Cauchy integral formula, the Plemelj–Sokhotski formulas, and the boundary-value criterion $\psi = K_\omega\psi$ on $\Gamma$. The same note is the source of the unifying statement that one parametric system, at different values of its parameter, is the time-harmonic Maxwell system and the time-harmonic Dirac system; that statement is recorded in the companion *The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral*.
 - K. Imaeda, "A new formulation of classical electrodynamics," *Il Nuovo Cimento B* **32** (1976) 138–162, for the quaternionic vacuum Maxwell equation $i\partial/\partial t'F+DF=0$, the equation the dictionary reduces to at vanishing mass.
 - V. V. Kravchenko and M. V. Shapiro, *Integral Representations for Spatial Models of Mathematical Physics* (Pitman Research Notes in Mathematics 351, Addison-Wesley Longman, 1996), for the shifted operator $D_\alpha$ and its boundary-value theory, which is where the conjugated equation is taken once the conjugation has been removed.
@@ -907,7 +951,7 @@ The same construction has two consequences that belong to the equation rather th
 - A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the interpretation of Lanczos's system as Maxwell's equation with feedback, for the spin-quantization-axis form $\tilde{\nabla}D=mD^{*}i\vec{\nu}$ of the Dirac–Lanczos equation, and for the complex-conjugation origin of the fermionic character.
 - A. Gsponer and J.-P. Hurni, "Lanczos's Equation to Replace Dirac's Equation?", *Proceedings of the Cornelius Lanczos International Centenary Conference* (SIAM, 1994) 509–512 (arXiv:hep-ph/0112317), for Lanczos's coupled system as "Maxwell's equations with feed-back" and for the second route to Dirac's equation, the reduction by requiring the two fields to be singular quaternions, attributed there to J. Blaton, *Zeitschrift für Physik* **95** (1935) 337–354. Recorded as a claim: four pages, no derivation exhibited, and the title is a question; the arXiv version carries a *Note added in 1996* withdrawing the authors' charge-quantisation mechanism, which is recorded in *The Standard Model under the Biquaternion Framework — A Research Agenda*.
 - V. V. Kravchenko, *Applied Quaternionic Analysis* (Research and Exposition in Mathematics 28, Heldermann, 2003), §§4.2.1–4.2.2.1, for the four standard Dirac potentials — electric, scalar, pseudoscalar, magnetic — in quaternionic form, for the single constant transformation that relates the classical and quaternionic Dirac operators with potentials, and for the reduction of the pseudoscalar-potential equation to a pair of scalar-coefficient equations.
-- V. V. Kravchenko and M. P. Ramirez Tachiquin, "On a quaternionic reformulation of the Dirac equation and its relationship with Maxwell's system," *Bulletin de la Société des Sciences et des Lettres de Łódź* **53** (2003) 101–114, for the **reality** of the conjugation-free quaternionic Dirac operator — $R = D-\partial/\partial t'M_{i_1}-mM_{i_2}$, with coefficients in the real quaternion algebra, hence $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ — and for the **involutive symmetry** $\Phi_{\mathrm{inv}}=iZ_c\Phi$ that follows, the symmetry itself attributed there to J. Niederle and A. G. Nikitin, "Involutive symmetries, supersymmetries and reductions of the Dirac equation," *J. Phys. A: Math. Gen.* **30** (1997) 999–1010; for the correspondence between the massive Dirac equation with an electric or a scalar potential and the static sourceless Maxwell system of an isotropic inhomogeneous medium, with the permittivity $\epsilon=\exp(2G(x_1))$, $dG/dx_1=g$; for the condition $k^2=\alpha^2$ under which the massive Dirac field and the time-harmonic Maxwell field share the same projection identity, that condition being the mass shell; and for the quaternionic current-conservation equation $\partial/\partial t'|F|^2 = -\hbar[(DF^{\dagger})F+F^{*}(DF)]$ with the identity $|F|^2=|\Phi|^2$ of the biquaternion modulus and the Dirac density. The paper's factors $u^{\pm}$ of the factorisation $\mathcal{N}=u^{+}Ru^{-}$ and its explicit action of $A^{-1}$ on $\mathrm{Re}\,F$ are quoted, not reproduced: the available copy is a scan without a text layer.
+- V. V. Kravchenko and M. P. Ramirez Tachiquin, "On a quaternionic reformulation of the Dirac equation and its relationship with Maxwell's system," *Bulletin de la Société des Sciences et des Lettres de Łódź* **53** (2003) 101–114, for the **reality** of the conjugation-free quaternionic Dirac operator — $R = D-\partial/\partial t'M_{i_1}-mM_{i_2}$, the source's $D$ being the $D_3$ of this article, with coefficients in the real quaternion algebra, hence $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ — and for the **involutive symmetry** $\Phi_{\mathrm{inv}}=iZ_c\Phi$ that follows, the symmetry itself attributed there to J. Niederle and A. G. Nikitin, "Involutive symmetries, supersymmetries and reductions of the Dirac equation," *J. Phys. A: Math. Gen.* **30** (1997) 999–1010; for the correspondence between the massive Dirac equation with an electric or a scalar potential and the static sourceless Maxwell system of an isotropic inhomogeneous medium, with the permittivity $\epsilon=\exp(2G(x_1))$, $dG/dx_1=g$; for the condition $k^2=\alpha^2$ under which the massive Dirac field and the time-harmonic Maxwell field share the same projection identity, that condition being the mass shell; and for the quaternionic current-conservation equation $\partial/\partial t'|F|^2 = -\hbar[(DF^{\dagger})F+F^{*}(DF)]$ with the identity $|F|^2=|\Phi|^2$ of the biquaternion modulus and the Dirac density. The paper's factors $u^{\pm}$ of the factorisation $\mathcal{N}=u^{+}Ru^{-}$ and its explicit action of $A^{-1}$ on $\mathrm{Re}\,F$ are quoted, not reproduced: the available copy is a scan without a text layer.
 - V. G. Bagrov and D. M. Gitman, *Exact Solutions of Relativistic Wave Equations* (Kluwer, Dordrecht, 1990), for the encyclopaedic compendium and review of the known exact solutions of the Dirac equation up to the late 1980s.
 - Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the interpretation of the mass term as a coupling $\bar\Psi(iK_t\,e_t\Psi \vec e_x+i\sum_k K_k\,\vec e_k\Psi \vec e_y)$ to a unit vector, hence as a non-integrable phase; and for the vector representation of the spinor built on it, recorded in the companion *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*.
 - Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the same interpretation in the order-$\ell$ ding language, and for the parent-action duality recorded in *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.

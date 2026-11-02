@@ -387,7 +387,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$ | Quaternion basis |
 | $\mathbb M_+,\mathbb M_-$ | Hermitian / anti-Hermitian subspaces |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\sigma_k\leftrightarrow i\vec e_k$ | Isomorphism, Pauli matrices |
-| $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $L_{a}R_{b}\psi=a\psi b$ | Frame cells in the mostly-minus convention; $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4$ |
+| $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $L_{a}R_{b}\psi=a\psi b$ | Frame cells in the mostly-minus convention; $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4$ |
 | $\beta=iR_{\vec e_x}$, $\alpha_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}$ | Dirac-basis matrices, the cells read with the timelike one diagonal |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric; $g=-\eta$ |
 | $\vec\pi=p-ϙ\vec A$ | Kinetic momentum |
@@ -410,4 +410,4 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the fine structure and the hydrogen spectrum.
 - The companion articles of this series: [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, and [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html).
 
-Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.

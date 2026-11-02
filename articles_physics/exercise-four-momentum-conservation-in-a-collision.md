@@ -60,15 +60,15 @@ $$
 $$
 which is the invariance of the total invariant mass (Problem 2). This consequence is strictly weaker than the law: equality of the total norms fixes one number, while four-momentum conservation fixes four. Two final configurations with the same total invariant mass but different total three-momentum can both satisfy the norm condition, and at most one of them conserves four-momentum. (For a $2\to2$ elastic collision at fixed $s$, all COM scattering angles share the same $s$ and the same $t+u$, but only the value of $\theta^*$ determines the split $t,u$; see Problem 2.) The conservation law is thus a linear constraint on $\mathbb{M}_-$-valued data, and it must be imposed as such.
 
-**Solution (c).** *Lorentz rotor.* Apply the same rotor conjugation to every four-momentum, with a fixed unit-norm $\tilde U_{\mathrm{lor}}$. The conjugation is real-linear on $\mathbb{M}_-$ and distributive over addition, so
+**Solution (c).** *Lorentz rotor.* Apply the same rotor conjugation to every four-momentum, with a fixed unit-norm $\tilde U^{\mathrm{lor}}$. The conjugation is real-linear on $\mathbb{M}_-$ and distributive over addition, so
 $$
 \tilde{P}_{\rm in,2} - \tilde{P}_{\rm out,2}
-= \sum_a \tilde U_{\mathrm{lor}}\tilde{P}_a\tilde U_{\mathrm{lor}}^{*} - \sum_f \tilde U_{\mathrm{lor}}\tilde{P}_f\tilde U_{\mathrm{lor}}^{*}
-= \tilde U_{\mathrm{lor}}\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right)\tilde U_{\mathrm{lor}}^{*} .
+= \sum_a \tilde U^{\mathrm{lor}}\tilde{P}_a\tilde U^{\mathrm{lor}}{}^{*} - \sum_f \tilde U^{\mathrm{lor}}\tilde{P}_f\tilde U^{\mathrm{lor}}{}^{*}
+= \tilde U^{\mathrm{lor}}\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right)\tilde U^{\mathrm{lor}}{}^{*} .
 $$
 If the difference in the first frame vanishes, the difference in the second frame, $\mathcal O_2$, vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the *element* $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{M}_-$, which transforms as a whole.
 
-*Translation.* A Poincaré translation $(\tilde U_{\mathrm{lor}},\tilde{R}_0)$ acts on the four-position by $\tilde{R}\mapsto\tilde U_{\mathrm{lor}}\tilde{R}\tilde U_{\mathrm{lor}}^{*}+\tilde{R}_0$. The four-momentum of a free body is built from its four-velocity, $d\tilde{R}/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
+*Translation.* A Poincaré translation $(\tilde U^{\mathrm{lor}},\tilde{R}_0)$ acts on the four-position by $\tilde{R}\mapsto\tilde U^{\mathrm{lor}}\tilde{R}\tilde U^{\mathrm{lor}}{}^{*}+\tilde{R}_0$. The four-momentum of a free body is built from its four-velocity, $d\tilde{R}/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
 
 **Solution (d).** Take two equal masses $m_1 = m_2 = m$, units $c = 1$, and a projectile of total energy $E_1 = 3m$ striking the target at rest, with the collision elastic. The laboratory four-momenta are
 $$
@@ -399,7 +399,7 @@ We have worked four-momentum conservation for a collision as an application of t
 | $\tilde{V}_a = \gamma_a(ic\,e_t+\vec v_a)$ | Four-velocity, $\langle\tilde{V}_a\rangle_{\natural}=-c^2$ |
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$ | Boost biquaternion, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural}=e_t$ |
-| $(\tilde U_{\mathrm{lor}},\tilde{R}_0)$ | Poincaré transformation, $\tilde{R}\mapsto\tilde U_{\mathrm{lor}}\tilde{R}\tilde U_{\mathrm{lor}}^{*}+\tilde{R}_0$ |
+| $(\tilde U^{\mathrm{lor}},\tilde{R}_0)$ | Poincaré transformation, $\tilde{R}\mapsto\tilde U^{\mathrm{lor}}\tilde{R}\tilde U^{\mathrm{lor}}{}^{*}+\tilde{R}_0$ |
 | $\tilde U_{\rm CM} = \sqrt{-\frac{ic}{W}\tilde{P}^{\natural}}$ | Boost biquaternion, laboratory to COM frame |
 | $\tilde U^{\natural}_{\rm CM}$ | Quaternion conjugate, COM frame to laboratory |
 | $s,t,u$ | Mandelstam invariants, $s=-c^2\langle\tilde{P}_1+\tilde{P}_2\rangle_{\natural}$, etc. |

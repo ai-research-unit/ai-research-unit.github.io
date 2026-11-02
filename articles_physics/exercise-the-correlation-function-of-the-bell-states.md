@@ -211,7 +211,7 @@ Multiplying the three equations and using $\epsilon_j^2 = 1$ gives $\epsilon_1\e
 *Trace.* The trace is
 
 $$
-\mathrm{Tr}(\tilde\Pi_\epsilon) = \frac{1}{4}\sum_{j\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(e_j)^2 = \frac{1}{4}\cdot 4 = 1,
+\mathrm{Tr}(\tilde\Pi_\epsilon) = \frac{1}{4}\sum_{j\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(\vec e_j)^2 = \frac{1}{4}\cdot 4 = 1,
 $$
 
 because $\mathrm{Tr}_\mathbb{B}(e_t) = 2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_j) = 0$ for $j \in \{x,y,z\}$.
