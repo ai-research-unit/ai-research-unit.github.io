@@ -228,6 +228,7 @@ $$</p>
 +d_1v^{(1)}(\vec p_2)\exp(+ip_2\cdot x),
 $$</p>
 <p>with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$, and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $1.1\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.8\times10^{-10}$. A single plane wave would have tested only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.</p>
+<p>Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
 <p>In biquaternion terms, $J_\mu$ is the spinor-module representative of an operator-valued material-sector element $i\tilde\Psi^{\mathrm{fop}}\tilde\Psi^{\mathrm{fop}{*}}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is <em>not</em> conserved, and that the physical current needs the Clifford-odd cell $iR_{e_x}$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.</p>
 <h3 id="spin">Spin</h3>
 <p>The spin operator is the spatial integral of the bilinear with the spin matrix $\Sigma_k=\mathrm{diag}(\sigma_k,\sigma_k)$,</p>
@@ -436,6 +437,27 @@ $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
+<p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.</p>
       </div>
     </main>
   </div>

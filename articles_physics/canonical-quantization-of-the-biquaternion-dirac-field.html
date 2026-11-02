@@ -245,12 +245,13 @@ $$</p>
 :\!P^{\mathrm{fop}}_\mu\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}\,p_\mu
 \Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p_\mu=(E_{\vec p},\vec p),
 $$</p>
-<p>and the normal-ordered electric charge, from $j_\mu=\bar\psiiL_{e_\mu}R_{e_{\nu(\mu)}}\psi$ with $j_0=\psi^\dagger\psi$, is</p>
+<p>and the normal-ordered electric charge, from $j_\mu=\bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$ with $j_0=\psi^\dagger\psi$, is</p>
 <p>$$
 :\!Ϙ^{\mathrm{fop}}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
 \Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r-b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),
 $$</p>
 <p>so that particles and antiparticles carry opposite charge, as they must. All three expressions are the standard ones; their derivation uses only the parent article's spinor relations.</p>
+<p>Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
 <p>The status of $E_0$ deserves one cautionary sentence. Its divergence is an ultraviolet feature of the free field, removed by the conventional normal-ordering prescription, and nothing in the biquaternion structure as used here changes that. Whether the biquaternion framework offers a distinguished or geometrically meaningful regularization of the vacuum energy is an open question, and we do not claim one.</p>
 <h2 id="spin-and-statistics">Spin and Statistics</h2>
 <p>The anticommutation relations are not a convention; they are selected. The three reasons given in Section 3 — boundedness of the energy, microcausality, and positivity of the norm — are all consequences of one structural fact: the one-particle states of the field transform in the <strong>spinor representation</strong> of the Lorentz group, and the biquaternion algebra realizes that representation on its module. For a field of half-integer spin the representation is double-valued: a rotation by $2\pi$ is the identity in the vector representation but minus the identity in the spinor representation, and only a rotation by $4\pi$ returns the spinor to itself. It is this two-valuedness, together with the requirement that the local observables be built from bilinears, that forces the anticommutator: the commutator of two spinor fields fails to vanish at spacelike separation, while the anticommutator does.</p>
@@ -475,6 +476,27 @@ $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
+<p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.</p>
       </div>
     </main>
   </div>

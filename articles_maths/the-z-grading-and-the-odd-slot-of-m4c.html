@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The Clifford algebra of a four-dimensional space has sixteen basis elements, and they are usually grouped by <strong>grade</strong>: one scalar, four vectors, six bivectors, four trivectors, one pseudoscalar. The grouping is the visible form of the $\mathbb{Z}$-grading of the exterior algebra. The Clifford algebra itself is not $\mathbb{Z}$-graded: the product of two vectors has a scalar part and a bivector part, so the grade is not additive on the product. What the Clifford algebra has is a $\mathbb{Z}$-<strong>filtration</strong>, whose associated graded algebra is the exterior algebra; the parity is the only grading that survives on the algebra itself.</p>
 <p>The biquaternion algebra is the even part. Its product sees the parity and nothing finer: the product of two even elements is even, and the split of the even part into scalars, bivectors and pseudoscalars is not visible in the multiplication table of $\mathbb{B}$ alone. The odd slot is worse: it is a copy of $\mathbb{B}$, of real dimension eight, and the product of two odd elements is even, but the split of the odd slot into four vectors and four trivectors is not a submodule split. Left multiplication by an even element mixes the two.</p>
-<p>The sixteen two-sided operators $L_\muR_\nu=L_\mu R_\nu$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $L_tR_x,L_xR_y,L_yR_y,L_zR_y$, a staircase, not a row or a column. The frame is the choice of that staircase.</p>
+<p>The sixteen two-sided operators $L_\mu R_\nu$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $L_tR_x,L_xR_y,L_yR_y,L_zR_y$, a staircase, not a row or a column. The frame is the choice of that staircase.</p>
 <p>The body writes the abstract Clifford frame as $v_0,v_1,v_2,v_3$, with $v_0^2=1$ and $v_k^2=-1$, and the frame elements as cells. The gamma notation for the same objects is collected in the appendix. The two-sided basis is <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>; the even slot and the odd slot are <em>Biquaternion Versors and the Orthogonal Group</em>; the traces that read the scalar and pseudoscalar coordinates are <em>The Vector and the Axial Traces of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-two-gradings">The Two Gradings</h2>
 <p><strong>The parity grading.</strong> The Clifford algebra is
@@ -183,11 +183,11 @@ $$
 $$
 for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The twist $\theta$ is the reflection of the bivectors that the vector $u$ defines; it is not the identity on the whole of $\mathbb{B}$, because an even element need not commute with $u$. The twisted rule is the multiplication of the Clifford algebra written over its even part. The product of two odd elements is even, and the product of an even and an odd element is odd; this is the parity grading in operation form.</p>
 <h2 id="the-sixteen-two-sided-operators">The Sixteen Two-Sided Operators</h2>
-<p><strong>The theorem.</strong> Each $L_\muR_\nu=L_\mu R_\nu$ is exactly one Clifford basis element up to a scalar $\pm1$ or $\pm i$. The table gives the element and its grade; the element is written in the frame $v_\mu$.</p>
+<p><strong>The theorem.</strong> Each $L_\mu R_\nu$ is exactly one Clifford basis element up to a scalar $\pm1$ or $\pm i$. The table gives the element and its grade; the element is written in the frame $v_\mu$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>$L_\muR_\nu$</th>
+<th>$L_\mu R_\nu$</th>
 <th>$\nu=t$</th>
 <th>$\nu=x$</th>
 <th>$\nu=y$</th>
@@ -275,7 +275,7 @@ $$
 up to the scalar $i$; its even part is the complexified even Clifford algebra $M_2\oplus M_2$, not the left factor $\mathbb{B}$. The real-linear dictionary has the left factor as its even part. The grade table is the same in both, because it is a table of the same sixteen two-sided operators against the same abstract Clifford basis; the difference is which operators represent the frame, not the grades.</p>
 <h2 id="the-frame-dependence">The Frame Dependence</h2>
 <p><strong>The canonical part.</strong> The filtration and the parity are canonical: they are defined by the Clifford algebra and the vector space $V$, with no choice of frame. The dimensions $1,4,6,4,1$ are canonical.</p>
-<p><strong>The frame part.</strong> The assignment of a grade to a particular $L_\muR_\nu$ is frame-dependent. A different frame $\tilde v_\mu=Uv_\mu U^{-1}$ gives a different five-element subset of the sixteen two-sided operators and a different staircase of vectors. The grade of the Clifford element is canonical; its expression in the two-sided basis is not.</p>
+<p><strong>The frame part.</strong> The assignment of a grade to a particular $L_\mu R_\nu$ is frame-dependent. A different frame $\tilde v_\mu=Uv_\mu U^{-1}$ gives a different five-element subset of the sixteen two-sided operators and a different staircase of vectors. The grade of the Clifford element is canonical; its expression in the two-sided basis is not.</p>
 <p><strong>The invariant statement.</strong> The correct invariant statement is: the sixteen two-sided operators are a Clifford basis up to scalars; the five cells are a frame inside it; the grade table is the matrix of the change of basis between the two-sided basis and the Clifford basis. The table above is one such matrix, for the frame of the corpus.</p>
 <h2 id="summary">Summary</h2>
 <p>The Clifford algebra of four dimensions is $\mathbb{Z}$-filtered, with associated graded $\Lambda^{\bullet}V$ of dimensions $1,4,6,4,1$; it is $\mathbb{Z}/2$-graded by parity, and that is the only grading on the algebra itself. The even part is $\mathbb{B}$; the odd part is a copy of $\mathbb{B}$ of real dimension eight, split as four vectors plus four trivectors. The split is not a $\mathbb{B}$-submodule split; it is recovered from the frame by Hodge duality. The sixteen two-sided operators are exactly the sixteen Clifford basis elements up to $\pm1,\pm i$, with the grade table
@@ -381,7 +381,7 @@ and the five cells of the frame are $iL_tR_x$, $iL_xR_y$, $iL_yR_y$, $iL_zR_y$ a
 <td>the pseudoscalar, $v_0v_1v_2v_3$</td>
 </tr>
 <tr>
-<td>$L_\muR_\nu$</td>
+<td>$L_\mu R_\nu$</td>
 <td>the two-sided operator $L_\mu R_\nu$</td>
 </tr>
 <tr>
@@ -401,7 +401,7 @@ and the five cells of the frame are $iL_tR_x$, $iL_xR_y$, $iL_yR_y$, $iL_zR_y$ a
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the five gammas, the Clifford basis and the set.</li>
-<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen $L_\muR_\nu$ and their multiplication table.</li>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen $L_\mu R_\nu$ and their multiplication table.</li>
 <li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for $L_a$, $R_a$ and $L_{a}R_{b}$.</li>
 <li><a href="biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a>, for the even and odd slots of the envelope.</li>
 <li><a href="the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M_4(\mathbb{C})$</a>, for the two coordinates $L_tR_t$ and $L_tR_z$ that the traces read.</li>
