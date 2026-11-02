@@ -8,7 +8,7 @@ The article has one job. It gives the geometry of a **connection with torsion** 
 
 One warning belongs in the introduction, because a reader who has seen an external construction may expect the opposite. There is a claim in the literature that the torsion of spacetime *is* the commutator of the quaternionic units, and that the tetrad and the contorsion are bilinear composites of a biquaternionic spinor, so that geometry emerges from matter. That construction is recorded and tested separately, in *Matter Makes Space — An External Construction from Quaternionic Spinors*, where the parts that do not reproduce are listed. Nothing in this article depends on it. Here the torsion is an independent tensor field, exactly as in the standard Einstein–Cartan–Sciama–Kibble programme, and the algebra's role is only that its Lie subspace can carry the connection.
 
-**Index convention.** Every display is all-low. In the three-index objects $\Gamma_{\lambda\mu\nu}$, $T_{\lambda\mu\nu}$, $K_{\lambda\mu\nu}$ and $\sigma_{\lambda\mu\nu}$ the first index is the output and the last two are the inputs, in that order; $R_{\lambda\mu\nu\rho}$ reads the output first and then the three inputs. In the mixed frame-and-world objects $e_{a\mu}$ and $\omega_{ab\mu}$ the frame slot comes first. A repeated label is summed, with the sign vector $\varepsilon$ where the contraction is the metric one.
+**Index convention.** Every display is all-low. In the three-index objects $\Gamma_{\lambda\mu\nu}$, $T_{\lambda\mu\nu}$, $K_{\lambda\mu\nu}$ and $\sigma_{\lambda\mu\nu}$ the first index is the output and the last two are the inputs, in that order; $\mathrm{Riem}_{\lambda\mu\nu\rho}$ reads the output first and then the three inputs. In the mixed frame-and-world objects $e_{a\mu}$ and $\omega_{ab\mu}$ the frame slot comes first. A repeated label is summed, with the sign vector $\varepsilon$ where the contraction is the metric one.
 
 ## The Torsion Tensor
 
@@ -160,7 +160,7 @@ $$
 
 defines a geometry whose curvature vanishes identically and whose torsion is nonzero. Its two exact properties, both confirmed above, are worth stating in the general form in which they are used.
 
-**Zero curvature is an identity.** $R_{\lambda\mu\nu\rho}(\Gamma) = 0$ for every tetrad, because the connection is the pullback of a flat connection along a frame. The check is exact; no small-curvature approximation is involved.
+**Zero curvature is an identity.** $\mathrm{Riem}_{\lambda\mu\nu\rho}(\Gamma) = 0$ for every tetrad, because the connection is the pullback of a flat connection along a frame. The check is exact; no small-curvature approximation is involved.
 
 **Torsion is the contorsion of the metric connection.** In the **Weitzenböck gauge** the full spin connection is set to zero, $\omega_{ab\mu} = 0$, so the tetrad postulate forces the Levi-Civita part and the contorsion to cancel,
 

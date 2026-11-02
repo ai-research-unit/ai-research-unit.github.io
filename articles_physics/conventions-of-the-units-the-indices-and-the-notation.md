@@ -57,7 +57,7 @@ The order is from the physical to the typographical. The SI units come first, wi
 - a frame or basis vector, a gamma, $\vec e_i$, $\gamma_i$;
 - a sign symbol, $\delta_{ij}$, $\varepsilon_{ijk}$, $\eta_{ij}$;
 - a gauge, colour, isospin or spin index, $T_a$, $G_a$, $\sigma_z$;
-- a connection or curvature component, $\Gamma_k$, $R_{ij}$, $\omega_i$, $g_{ij}$;
+- a connection or curvature component, $\Gamma_k$, $\mathrm{Ric}_{ij}$, $\omega_i$, $g_{ij}$;
 - a differential, $dx_i$.
 
 **The lists rule on these uses, not on the names.** A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is.

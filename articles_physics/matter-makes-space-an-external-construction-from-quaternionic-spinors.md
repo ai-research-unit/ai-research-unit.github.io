@@ -73,7 +73,7 @@ The vector current of the $a$-th generator, the bilinear of $\bar\psi$, that gen
 **The constrained action does not constrain.** The master action of Section 5,
 
 $$
-S = \int d^4x\, e\left[\frac{1}{2\kappa}\exp(a){}_\mu \exp(b){}_\nu R_{\mu\nu ab}(e,K) + \bar\Psi\bigl(i\,\Gamma \exp(a){}_\mu D_\mu(e,K)\Psi - m\bar\Psi\Psi\bigr) + L_{\text{constr}}\right] ,
+S = \int d^4x\, e\left[\frac{1}{2\kappa}\exp(a){}_\mu \exp(b){}_\nu \mathrm{Riem}_{\mu\nu ab}(e,K) + \bar\Psi\bigl(i\,\Gamma \exp(a){}_\mu D_\mu(e,K)\Psi - m\bar\Psi\Psi\bigr) + L_{\text{constr}}\right] ,
 $$
 
 with $\Gamma$ the $a$-th generator, adds the constraint Lagrangian
@@ -92,7 +92,7 @@ in the source's own notation, which is a factor $2\kappa = 16\pi G$ rather than 
 
 ## The Teleparallel Sector
 
-Section 9.1 adds a Lagrange multiplier $\Theta_{\mu\nu ab}$ enforcing $R_{\mu\nu ab}(\omega) = 0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\mu ab} = 0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K_{\mu ab} = -\omega_{\mu ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection $\Gamma_\lambda{}_{\mu\nu} = e_a{}_\lambda\partial/\partial x_\mu \exp(a){}_\nu$ is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
+Section 9.1 adds a Lagrange multiplier $\Theta_{\mu\nu ab}$ enforcing $\mathrm{Riem}_{\mu\nu ab}(\omega) = 0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\mu ab} = 0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K_{\mu ab} = -\omega_{\mu ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection $\Gamma_\lambda{}_{\mu\nu} = e_a{}_\lambda\partial/\partial x_\mu \exp(a){}_\nu$ is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
 
 What is *not* correct is what the source puts into that identity. The contrapositive of the teleparallel gauge condition is that the contorsion — hence, through Eq. (6), the spinor bilinear $\kappa$ times the spinor trace of $\bar\Psi$, the $a$-th generator, the $b$-th generator and $\partial/\partial x_\mu\Psi$ — must equal $-\omega_{\mu ab}(e)$ of the *composite* tetrad. That is an over-determined differential equation on $\Psi$, not a consequence of anything, since the composite tetrad of Eq. (4) vanishes on the free solutions and takes no values at all in the case where the constraint is to be imposed. The teleparallel section therefore rests on the same composite that fails above.
 
@@ -128,7 +128,7 @@ Two further objections are independent of the sign. The equation $\tfrac12[q_\mu
 
 ## Torsion Waves and the Entropy Current
 
-Section 11 derives a wave equation for the torsion, $\Box T_{\lambda\mu\nu} = 0$, by acting twice with the covariant derivative on the Dirac equation and imposing the teleparallel condition $R_{\mu\nu ab} = 0$. It then introduces the pseudo-vector
+Section 11 derives a wave equation for the torsion, $\Box T_{\lambda\mu\nu} = 0$, by acting twice with the covariant derivative on the Dirac equation and imposing the teleparallel condition $\mathrm{Riem}_{\mu\nu ab} = 0$. It then introduces the pseudo-vector
 
 $$
 J_{S\mu} = \alpha\,\epsilon_{\mu\nu\rho\sigma} T_{\nu\rho\sigma} , \qquad \alpha = \frac{1}{3\cdot 8\pi G} ,

@@ -166,8 +166,8 @@ Two further avenues belong to this item and would also settle it, in weaker sens
 **Two candidate densities from an external source, and its own verdict on each.** The frame-free construction recorded in *Curved Spacetime and the Biquaternion Framework* writes the identity
 
 $$
-R_\mu{}_{\nu\rho\sigma}(\Gamma) = -\left\langle s_\mu,\ \Omega_{\rho\sigma}s_\nu + s_\nu\bar\Omega_{\rho\sigma}^*\right\rangle ,
-\qquad R_\mu{}_{\nu\rho\sigma}(\Gamma) = \left\langle s_\mu, [\nabla_\rho,\nabla_\sigma]s_\nu\right\rangle ,
+\mathrm{Riem}_{\mu\nu\rho\sigma}(\Gamma) = -\left\langle s_\mu,\ \Omega_{\rho\sigma}s_\nu + s_\nu\bar\Omega_{\rho\sigma}^*\right\rangle ,
+\qquad \mathrm{Riem}_{\mu\nu\rho\sigma}(\Gamma) = \left\langle s_\mu, [\nabla_\rho,\nabla_\sigma]s_\nu\right\rangle ,
 $$
 
 and proposes, in a list of its own unsettled issues, two functionals for the density this section asks for. The first is the Einstein–Hilbert analogue,
