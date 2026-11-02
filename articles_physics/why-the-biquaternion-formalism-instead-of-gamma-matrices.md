@@ -42,11 +42,11 @@ No symbol for the operator is needed when the operator is not the subject. This 
 
 **The frame is not canonical.** For a fixed metric, every frame is $S\gamma_\mu S^{-1}$ for some invertible $S$, and the frames over that metric form a homogeneous space under $GL_4(\mathbb{C})$. Physics chooses one frame. An equation that names $\gamma_0$ names the choice, and a reader who does not know the choice cannot tell a frame convention from an algebraic fact.
 
-**The frame chosen by the corpus is one of a family.** For any orthogonal pair $(\beta,\delta)$ of spatial units,
+**The frame chosen by the corpus is one of a family.** In the reference frame, whose spatial pair is $(e_y,e_x)$,
 $$
-\gamma_0=iL_tR_\delta,\qquad \gamma_k=iL_{e_k}R_\beta,\qquad \gamma_5=iL_{t}R_{\beta\delta},
+\gamma_0=iL_{e_t}R_{e_x},\qquad \gamma_k=iL_{e_k}R_{e_y},\qquad \gamma_5=iL_{e_t}R_{e_y e_x},
 $$
-and the Clifford relations hold for every pair. The reference frame is $(\beta,\delta)=(e_y,e_x)$. A change of pair changes which cells represent the generators and preserves the Clifford relations and the algebra; it is a change of frame, not a change of the algebra. In the gamma notation the same statement is written $S\gamma_\mu S^{-1}$, and the freedom is easy to mistake for a symmetry of the physics.
+and the Clifford relations hold. Any other orthogonal pair of spatial units gives another frame by the same construction; a change of pair changes which cells represent the generators and preserves the Clifford relations and the algebra. It is a change of frame, not a change of the algebra. In the gamma notation the same statement is written $S\gamma_\mu S^{-1}$, and the freedom is easy to mistake for a symmetry of the physics.
 
 **The metric is already in the units.** In $\mathbb{B}$ the signature is carried by $e_t^2=\mathbf 1$ and $e_k^2=-\mathbf 1$. The Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathbf 1$ restates that signature as a second datum, and a frame is a choice of representatives for that datum. The frame adds no structure the multiplication lacks; it adds a coordinate on that structure.
 
@@ -66,11 +66,11 @@ A generic element has $\ell=4$, and the set $\det c(M)\neq0$ is open and dense.
 
 **A concrete failure.** The sum
 $$
-L_tR_t+L_xR_x
+L_{e_t}R_{e_t}+L_{e_x}R_{e_x}
 $$
 has coefficient matrix $\operatorname{diag}(1,1,0,0)$, of rank two. It is not a single product, and no change of frame by a decomposable $S$ makes it one: such a change acts on $c(M)$ by an invertible left and right multiplication and preserves its rank. A formalism that makes the generic matrix the primitive has no place to mark the rank-one subset that the physics uses; the cell form writes the same operator as a sum of two terms and leaves it there.
 
-**Two ranks, independent.** The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(L_tR_t-iL_tR_z)$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.
+**Two ranks, independent.** The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(L_{e_t}R_{e_t}-iL_{e_t}R_{e_z})$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.
 
 **The physics uses few terms.** The chiral projector is one term. The Dirac operator, worked in the next section, has length two: the three spatial terms share a right multiplier and combine into one. The four-term display is a display, not a property of the operator. The operators displayed in the corpus sit at low length; the generic element is not one of them. The gamma frame makes the coefficient vector the object; the biquaternion reading makes the pair the object.
 
@@ -82,7 +82,7 @@ D\psi=\gamma_0\partial_t\psi+\gamma_1\partial_x\psi+\gamma_2\partial_y\psi+\gamm
 $$
 with
 $$
-\gamma_0=iL_tR_x,\qquad \gamma_1=iL_xR_y,\qquad \gamma_2=iL_yR_y,\qquad \gamma_3=iL_zR_y,\qquad \gamma_5=-iL_tR_z.
+\gamma_0=iL_{e_t}R_{e_x},\qquad \gamma_1=iL_{e_x}R_{e_y},\qquad \gamma_2=iL_{e_y}R_{e_y},\qquad \gamma_3=iL_{e_z}R_{e_y},\qquad \gamma_5=-iL_{e_t}R_{e_z}.
 $$
 Four fixed operators and four derivatives. The display does not show a pair of multipliers, and it does not show that the three spatial terms share a right multiplier.
 
@@ -108,7 +108,7 @@ because $\gamma_0^2=1$, $\gamma_k^2=-1$, and distinct gammas anticommute. The ce
 
 **The mass.** The mass term is one cell, and in this frame that cell is the identity:
 $$
-m\,L_tR_t\psi=m\,e_t\psi e_t=m\psi,
+m\,L_{e_t}R_{e_t}\psi=m\,e_t\psi e_t=m\psi,
 $$
 because $e_t$ is central. In the gamma display the same term is $m\psi$, which is $m\gamma_0^2$, not a sixth gamma. The five-name list does not name the identity as a cell; the cell list does. This is the concrete case of the point above: the cell form names the mass block, the gamma form leaves it as the identity.
 
@@ -116,10 +116,10 @@ because $e_t$ is central. In the gamma display the same term is $m\psi$, which i
 
 | operator | cell display | length |
 |---|---|---|
-| mass | $mL_tR_t$ | 1 |
-| chirality | $-iL_tR_z$ | 1 |
-| chiral projector $P_+$ | $\tfrac12L_{e_t}R_{\,e_t-i e_z}$ | 1 |
-| Dirac, minimal | $iL_{t}R_{x}\partial_t+iL_{\nabla}R_{e_y}$ | 2 |
+| mass | $mL_{e_t}R_{e_t}$ | 1 |
+| chirality | $-iL_{e_t}R_{e_z}$ | 1 |
+| chiral projector $P_+$ | $\tfrac12L_{e_t}R_{e_t-i e_z}$ | 1 |
+| Dirac, minimal | $iL_{e_t}R_{e_x}\partial_t+iL_{\nabla}R_{e_y}$ | 2 |
 | Dirac, expanded | four cells | 2 |
 | generic element | — | 4 |
 
@@ -133,7 +133,7 @@ The length is the number of products in the minimal sum, not the number of cells
 
 **Chirality separates cleanly.** In the reference frame the chirality is the single cell
 $$
-\Gamma=-iL_tR_z=-iL_tR_z,\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
+\Gamma=-iL_{e_t}R_{e_z},\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
 $$
 and the projectors are read as actions,
 $$
@@ -149,7 +149,7 @@ It is an operator on the module, not multiplication by an element of $\mathbb{B}
 
 **One frame in every formula.** The reference dictionary ties time to $e_x$ and the three spatial directions to $e_y$:
 $$
-\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z.
+\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z}.
 $$
 The pair $(e_y,e_x)$ is a choice. A formula written in it is a formula about that choice as much as about the operator, and the gamma notation gives the reader no mark that separates the two.
 
@@ -194,7 +194,7 @@ The rules that follow from the above are short.
 - **Never compress a sum into one symbol.** A sum is a single product only when $\operatorname{rank}c\le1$, and the test is silent, not displayed.
 - **Keep the coefficient matrix out of the page.** It is a diagnostic of the isomorphism, not a datum of the physics.
 - **No arrays, no columns, no Kronecker products** in a physical formula. The algebra is four-dimensional and the action is written on it.
-- **The frame is named once.** A change of frame is a change of the pair $(\beta,\delta)$ and is stated where it occurs.
+- **The frame is named once.** A change of frame is a change of the pair of spatial units and is stated where it occurs.
 - **The gamma form goes to one closing appendix.** One display, the dictionary, the real-form caveat, no derivation. The body does not carry it, except in an article whose subject is the comparison, as this one.
 
 ## Where the Gamma Formalism Remains the Right Tool
@@ -231,7 +231,7 @@ The rules that follow from the above are short.
 | what is a spinor? | a column in a chosen basis | an element of $\mathbb{B}$ |
 | what is chirality? | $\gamma_5$, one symbol for two roles | a cell $\Gamma$ and the central sign $\chi$ |
 | what is the metric? | a tensor in the Clifford relation | the squares $e_t^2=1$, $e_k^2=-1$ |
-| what is a frame? | $S\gamma_\mu S^{-1}$, unmarked | the pair $(\beta,\delta)$, named |
+| what is a frame? | $S\gamma_\mu S^{-1}$, unmarked | the pair of spatial units, named |
 | where does it live? | the body in the literature; the appendix in the corpus | the body |
 
 **The one-sentence answer.** The gamma frame is a correct coordinate on the algebra, and the biquaternion form is the algebra's own action; the corpus writes the action because the physics supplies a pair of multipliers and a sum of a few terms, not the generic element.
@@ -247,10 +247,10 @@ The rules that follow from the above are short.
 | $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ | composition, with the second slot reversed |
 | $c(M)$ | the coefficient matrix of $M$ in the cell basis; a diagnostic, not a datum |
 | $\ell(M)=\operatorname{rank}c(M)$ | the length, the least number of products in a sum |
-| $\Gamma=-iL_tR_z$ | the chirality in the reference frame, $\Gamma^2=1$ |
+| $\Gamma=-iL_{e_t}R_{e_z}$ | the chirality in the reference frame, $\Gamma^2=1$ |
 | $P_\pm=\tfrac12(1\pm\Gamma)$ | the chiral projectors |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the central sign, $\chi^2=e_t$; an operator, not multiplication by an element of $\mathbb{B}$ |
-| $(\beta,\delta)$ | the orthogonal pair of spatial units that fixes the frame |
+| the spatial pair | the orthogonal pair of units that fixes the frame |
 | $\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$ | the gamma frame, named in this article's exposition and in each article's appendix |
 
 ## Further Reading
