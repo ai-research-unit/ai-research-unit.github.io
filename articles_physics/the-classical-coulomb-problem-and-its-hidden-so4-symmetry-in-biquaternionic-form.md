@@ -178,7 +178,7 @@ $$
 \left[\tfrac{i\vec e_\mu}{2},\tfrac{i\vec e_\nu}{2}\right] = -\epsilon_{\mu\nu\lambda}\tfrac{\vec e_\lambda}{2} ;
 $$
 
-and the six operators $L_k, R_k$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$, with $[L_i,L_j] = 2\epsilon_{ijk}L_k$, $[R_i,R_j] = -2\epsilon_{ijk}R_k$, $[L_i,R_j] = 0$ and $\sum_kL_k^2 = \sum_kR_k^2 = -3\,e_t$. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $s(s+1)$ at $s = \tfrac12$.
+and the six operators $L_{\vec e_k}, R_{\vec e_k}$ of left and right multiplication were confirmed antisymmetric on $\mathbb{H}$, with $[L_{\vec e_i},L_{\vec e_j}] = 2\epsilon_{ijk}L_{\vec e_k}$, $[R_{\vec e_i},R_{\vec e_j}] = -2\epsilon_{ijk}R_{\vec e_k}$, $[L_{\vec e_i},R_{\vec e_j}] = 0$ and $\sum_kL_{\vec e_k}^2 = \sum_kR_{\vec e_k}^2 = -3\,e_t$. The last identity is the statement of equal Casimirs, and its value divided by the square of the generator normalization gives $\tfrac34$, that is $s(s+1)$ at $s = \tfrac12$.
 
 ## The Classical Origin of the Degeneracy
 
@@ -245,18 +245,18 @@ The biquaternion algebra contains the following objects of the Coulomb problem.
 There is one place where a six-dimensional rotation algebra arises from the algebra alone, and recording it fixes the boundary exactly. Left and right multiplication by the unit real quaternions are isometries of $\mathbb{H} \cong \mathbb{R}^4$, and the six operators
 
 $$
-L_k : q \mapsto \vec e_k q, \qquad R_k : q \mapsto q\vec e_k
+L_{\vec e_k} : q \mapsto \vec e_k q, \qquad R_{\vec e_k} : q \mapsto q\vec e_k
 $$
 
 are antisymmetric there. They close as
 
 $$
-[L_i,L_j] = 2\epsilon_{ijk}L_k, \qquad [R_i,R_j] = -2\epsilon_{ijk}R_k, \qquad [L_i,R_j] = 0 ,
+[L_{\vec e_i},L_{\vec e_j}] = 2\epsilon_{ijk}L_{\vec e_k}, \qquad [R_{\vec e_i},R_{\vec e_j}] = -2\epsilon_{ijk}R_{\vec e_k}, \qquad [L_{\vec e_i},R_{\vec e_j}] = 0 ,
 $$
 
-so that $\operatorname{span}\{L_1,L_2,L_3,R_1,R_2,R_3\}$ is six-dimensional and is $\mathrm{SU}(2)\oplus\mathrm{SU}(2) \cong \mathrm{SO}(4)$: the rotations of the four-dimensional space on which the algebra acts. This is the sense in which the algebra does carry an $\mathrm{SO}(4)$ — as the symmetry of its own module structure. It is not a commutator subalgebra, and it acts on the algebra rather than on the phase space, so it does not supply the hidden symmetry of the Coulomb problem.
+so that $\operatorname{span}\{L_{\vec e_x},L_{\vec e_y},L_{\vec e_z},R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}$ is six-dimensional and is $\mathrm{SU}(2)\oplus\mathrm{SU}(2) \cong \mathrm{SO}(4)$: the rotations of the four-dimensional space on which the algebra acts. This is the sense in which the algebra does carry an $\mathrm{SO}(4)$ — as the symmetry of its own module structure. It is not a commutator subalgebra, and it acts on the algebra rather than on the phase space, so it does not supply the hidden symmetry of the Coulomb problem.
 
-Under this action $\mathbb{B}$ is a single balanced representation. Its two Casimirs are equal, $\sum_kL_k^2 = \sum_kR_k^2 = -3\,e_t$ on $\mathbb{H}$ — the balance condition that the bound-state multiplicity requires — and its complex dimension is four, the value of $n^2$ at $n = 2$. The lowest shell of the degeneracy therefore has an image in the algebra, as the balanced $(\tfrac12,\tfrac12)$; the shells $n \geq 3$, of dimensions $9, 16, \dots$, have none, because the self-action of a four-dimensional algebra carries only one balanced representation. The boundary is consequently sharper than a dimension count: the algebra is not foreign to the symmetry — it carries the symmetry's lowest carrier, with the balance the multiplicity needs — but it cannot carry the tower, and it does not derive the dynamics that selects the inverse-square force. Whether the matching at $n = 2$ has dynamical content is not established here, and the degeneracy's algebraic origin remains the open question it was.
+Under this action $\mathbb{B}$ is a single balanced representation. Its two Casimirs are equal, $\sum_kL_{\vec e_k}^2 = \sum_kR_{\vec e_k}^2 = -3\,e_t$ on $\mathbb{H}$ — the balance condition that the bound-state multiplicity requires — and its complex dimension is four, the value of $n^2$ at $n = 2$. The lowest shell of the degeneracy therefore has an image in the algebra, as the balanced $(\tfrac12,\tfrac12)$; the shells $n \geq 3$, of dimensions $9, 16, \dots$, have none, because the self-action of a four-dimensional algebra carries only one balanced representation. The boundary is consequently sharper than a dimension count: the algebra is not foreign to the symmetry — it carries the symmetry's lowest carrier, with the balance the multiplicity needs — but it cannot carry the tower, and it does not derive the dynamics that selects the inverse-square force. Whether the matching at $n = 2$ has dynamical content is not established here, and the degeneracy's algebraic origin remains the open question it was.
 
 ### What the Algebra Does Not Contain
 
