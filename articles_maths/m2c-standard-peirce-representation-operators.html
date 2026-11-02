@@ -81,7 +81,7 @@
 <p>The first two bullets are the one-sided operators; the third is the two-sided operator.</p>
 <p><strong>Why one matrix per side.</strong> A $2\times2$ matrix has four complex entries. A left multiplication is determined by its value on the unit, $L_A(\mathrm I_2)=A$, so the element and its left operator carry the same four numbers. A right multiplication is determined by $R_B(\mathrm I_2)=B$. A two-sided operator has seven effective complex parameters, more than the four of one $2\times2$ matrix, and no single $2\times2$ matrix records both sides: $A$ acts on the left and $B$ acts on the right.</p>
 <p><strong>The result in one line.</strong> On $M_2(\mathbb{C})$, a one-sided operator is one matrix, a two-sided operator is a pair of matrices, unique up to scaling when the operator is nonzero, and a general endomorphism is a sum of at most four pairs; the $4\times4$ matrix of the pair is the Kronecker product $B^{\mathsf T}\otimes A$.</p>
-<p><strong>Boundaries.</strong> The frame, the two blocks, the compression and the algebra model are <em>$M_2(\mathbb{C})$ Standard Peirce Representation</em>. The uncompressed operators are <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>; the same operators in the e-basis are <em>$M_4(\mathbb{C})$ e-basis Representation : Operators</em>. The matrix units and the two Peirce planes are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>. The abstract family is <em>Two-Sided Operators on the Biquaternion Algebra</em>. The Hermitian sandwich is Part V and is not treated here.</p>
+<p><strong>Boundaries.</strong> The frame, the two blocks, the compression and the algebra model are <em>$M_2(\mathbb{C})$ Standard Peirce Representation</em>. The uncompressed operators are <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>; the same operators in the axis-free basis are <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em>. The matrix units and the two Peirce planes are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>. The abstract family is <em>Two-Sided Operators on the Biquaternion Algebra</em>. The Hermitian sandwich is Part V and is not treated here.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is
 $$
 \mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),\qquad
@@ -255,20 +255,20 @@ $$
 by the mixed-product property. It is the operator.</p>
 <p><strong>The Kronecker product of the $2\times2$ matrices.</strong> The same matrix is the Kronecker product $B^{\mathsf T}\otimes A$ of the two $2\times2$ matrices. This is the display that the Peirce frame makes possible: the element is already a matrix, and the operator is built from the two element matrices.</p>
 <p><strong>The Kronecker product of the $4\times4$ matrices.</strong> The Kronecker product $(\mathrm I_2\otimes A)\otimes(B^{\mathsf T}\otimes\mathrm I_2)$ is $16\times16$, acts on the tensor square of the carrier, and is not the operator. The distinction is the one drawn in <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>, §<em>The Kronecker Question</em>: the ordinary product is the operator, the Kronecker product of the two $2\times2$ matrices is its display, and the Kronecker product of the two $4\times4$ matrices is a different operator on a different space.</p>
-<p><strong>The frame dependence.</strong> The display $B^{\mathsf T}\otimes A$ is a property of the Peirce frame. In the e-basis the same operator is a sum of sixteen signed-permutation cells, and no $2\times2$ block appears; the pair survives, but the frame does not display it. The two articles read the same operator in the two frames, and the pair is the invariant.</p>
+<p><strong>The frame dependence.</strong> The display $B^{\mathsf T}\otimes A$ is a property of the Peirce frame. In the axis-free basis the same operator is a sum of sixteen signed-permutation cells, and no $2\times2$ block appears; the pair survives, but the frame does not display it. The two articles read the same operator in the two frames, and the pair is the invariant.</p>
 <h3 id="the-coefficient-matrix">The Coefficient Matrix</h3>
-<p><strong>The expansion.</strong> The sixteen products $L_{\mu}R_{\nu}=L_\mu R_\nu$ are an orthogonal basis of $M_4(\mathbb{C})$ for the Hilbert–Schmidt inner product, and every matrix has a unique expansion $M=\sum c_{\mu\nu}L_{\mu}R_{\nu}$. The matrix $c(M)$ is the coefficient matrix. The definition and the length theorem are in the $4\times4$ operators article.</p>
+<p><strong>The expansion.</strong> The sixteen products $L_{e_\mu}R_{e_\nu}$ are an orthogonal basis of $M_4(\mathbb{C})$ for the Hilbert–Schmidt inner product, and every matrix has a unique expansion $M=\sum c_{\mu\nu}L_{e_\mu}R_{e_\nu}$. The matrix $c(M)$ is the coefficient matrix. The definition and the length theorem are in the $4\times4$ operators article.</p>
 <p><strong>The coefficient matrix of a pair.</strong> If $A=\sum_\mu Q_\mu\mathsf M_2(e_\mu)$ and $B=\sum_\nu P_\nu\mathsf M_2(e_\nu)$, then
 $$
 [L_AR_B]_{\mathcal{P}}=B^{\mathsf T}\otimes A
-=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{\mu}R_{\nu},
+=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
 $$
 so
 $$
 c(L_AR_B)=[Q][P]^{\mathsf T},
 $$
 the outer product of the two coefficient columns. It has rank at most one; conversely every rank-one coefficient matrix is such an outer product and gives a pair. The pair picture and the coefficient picture are the same statement, one in $2\times2$ matrices and one in the $4\times4$ coefficient matrix.</p>
-<p><strong>The two $4\times4$ matrices.</strong> The coefficient matrix $c(L_AR_B)$ and the operator matrix $[L_AR_B]_{\mathcal{P}}$ are both $4\times4$, and they are different objects. The first is the matrix of the tensor in the basis $L_{\mu}R_{\nu}$; the second is the matrix of the operator on the carrier. The first has rank at most one, and rank one when the operator is nonzero; the second has rank $\operatorname{rank}A\cdot\operatorname{rank}B$.</p>
+<p><strong>The two $4\times4$ matrices.</strong> The coefficient matrix $c(L_AR_B)$ and the operator matrix $[L_AR_B]_{\mathcal{P}}$ are both $4\times4$, and they are different objects. The first is the matrix of the tensor in the basis $L_{e_\mu}R_{e_\nu}$; the second is the matrix of the operator on the carrier. The first has rank at most one, and rank one when the operator is nonzero; the second has rank $\operatorname{rank}A\cdot\operatorname{rank}B$.</p>
 <p><strong>The length.</strong> By the length theorem, the least number of pairs summing to $M$ is $\operatorname{rank}c(M)$. The pair set is the cone $\operatorname{rank}c\le1$; its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The length is $\ell(M)=\operatorname{rank}c(M)$, and the general endomorphism needs up to four pairs, the subject of §<em>The General Endomorphism</em>.</p>
 <h2 id="the-rank-and-the-invariants">The Rank and the Invariants</h2>
 <h3 id="the-rank-formula">The Rank Formula</h3>
@@ -485,7 +485,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 <td>the quaternionic norm, $\det A$</td>
 </tr>
 <tr>
-<td>$L_{\mu}R_{\nu}=L_\mu R_\nu$</td>
+<td>$L_{e_\mu}R_{e_\nu}$</td>
 <td>the sixteen basis products</td>
 </tr>
 <tr>
@@ -494,7 +494,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 </tr>
 <tr>
 <td>$c(M)$</td>
-<td>the coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{\mu}R_{\nu})^{\dagger}M)$</td>
+<td>the coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{e_\mu}R_{e_\nu})^{\dagger}M)$</td>
 </tr>
 <tr>
 <td>$\ell(M)=\operatorname{rank}c(M)$</td>
@@ -514,7 +514,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 <ul>
 <li><a href="m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Standard Peirce Representation</a>, for the frame, the compression and the two blocks.</li>
 <li><a href="m4c-standard-peirce-representation-operators.html">$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</a>, for the uncompressed operators, the sixteen products and the coefficient matrix.</li>
-<li><a href="m4c-e-basis-representation-operators.html">$M_4(\mathbb{C})$ e-basis Representation : Operators</a>, for the same operators in the basis where no $2\times2$ block appears.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, for the same operators in the basis where no $2\times2$ block appears.</li>
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the abstract family, the generation theorem, the composition and the adjoint.</li>
 <li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.</li>
 <li><a href="conventions-of-the-matrix-models.html">Matrix Representations Conventions</a>, for the fixed model and the conventions of the matrix models.</li>

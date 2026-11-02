@@ -110,9 +110,9 @@ $$</p>
 <p><em>Proof.</em> Quoted as standard. The derivative of the Ricci tensor is computed from the derivative of the connection, itself a difference of Christoffel symbols; the result is the displayed operator, in which the zeroth-order terms are quadratic in the curvature, as they must be by scaling.</p>
 <p><strong>Theorem (evolution of the Riemann tensor).</strong> Along a Ricci flow,</p>
 <p>$$
-\frac{\partial \mathrm{Rm}}{\partial t} = \Delta \mathrm{Rm} + \mathrm{Rm}*\mathrm{Rm} ,
+\frac{\partial \mathrm{Riem}}{\partial t} = \Delta \mathrm{Riem} + \mathrm{Riem}*\mathrm{Riem} ,
 $$</p>
-<p>where $\mathrm{Rm}*\mathrm{Rm}$ denotes a universal bilinear combination of the curvature tensor with itself.</p>
+<p>where $\mathrm{Riem}*\mathrm{Riem}$ denotes a universal bilinear combination of the curvature tensor with itself.</p>
 <p><em>Proof.</em> Quoted as standard. The computation is the tensor analogue of the preceding one and its result is commonly summarised in the schematic form displayed, the exact coefficients being irrelevant for the maximum-principle arguments that use only the positivity of the quadratic terms in a suitable sense.</p>
 <p><strong>Corollary (the maximum principle for the scalar curvature).</strong> Along a Ricci flow on a compact manifold,</p>
 <p>$$
@@ -120,7 +120,7 @@ R(x,t)\ge\min_{M}R(\cdot,0) \qquad \text{for all } (x,t),
 $$</p>
 <p>and if $R(\cdot,0)\ge0$ then $R(\cdot,t)\ge0$ for all $t$; more generally a lower bound $R\ge-c$ is preserved.</p>
 <p><em>Proof.</em> The evolution equation gives $\partial/\partial t\,R\ge\Delta R$, a differential inequality of parabolic type. Given $\varepsilon>0$, the function $R_\varepsilon = R+\varepsilon t$ satisfies $\partial/\partial t\,R_\varepsilon\ge\Delta R_\varepsilon+\varepsilon$, so its minimum over $M\times[0,T']$ cannot be attained in the interior: at an interior minimum, $\partial/\partial t\,R_\varepsilon\le0$ and $\Delta R_\varepsilon\ge0$, whereas the inequality gives $\partial/\partial t\,R_\varepsilon\ge\varepsilon>0$. Hence the minimum is attained on the parabolic boundary, and letting $\varepsilon\to0$ gives the claim; the preservation of a lower bound $-c$ follows by applying the same argument to $R+c$.</p>
-<p><strong>Remark (the maximum principle for systems).</strong> The maximum principle for a scalar quantity is immediate; for the full curvature tensor it requires a <strong>pinching</strong> condition, because the reaction term $\mathrm{Rm}*\mathrm{Rm}$ does not preserve an arbitrary positivity cone. The Hamilton–Ivey estimate, which bounds the curvature of a three-dimensional Ricci flow below by $-C/(t_0-t)$ for a curvature singularity at $t_0$, is the sharp example: the reaction term is controlled by a positivity cone chosen so that the quadratic terms act in the favourable direction.</p>
+<p><strong>Remark (the maximum principle for systems).</strong> The maximum principle for a scalar quantity is immediate; for the full curvature tensor it requires a <strong>pinching</strong> condition, because the reaction term $\mathrm{Riem}*\mathrm{Riem}$ does not preserve an arbitrary positivity cone. The Hamilton–Ivey estimate, which bounds the curvature of a three-dimensional Ricci flow below by $-C/(t_0-t)$ for a curvature singularity at $t_0$, is the sharp example: the reaction term is controlled by a positivity cone chosen so that the quadratic terms act in the favourable direction.</p>
 <h2 id="exact-solutions-solitons-and-the-flow-in-model-cases">Exact Solutions, Solitons and the Flow in Model Cases</h2>
 <p><strong>Definition.</strong> A <strong>Ricci soliton</strong> is a Riemannian metric $g$ satisfying</p>
 <p>$$
@@ -132,7 +132,7 @@ $$</p>
 <p><strong>Example (the cigar and the Bryant soliton).</strong> On $\mathbb{R}^2$ the metric $g=\frac{dx^2+dy^2}{1+r^2}$, $r^2=x^2+y^2$, is a complete steady Ricci soliton, the <strong>cigar soliton</strong>, rotationally symmetric and asymptotic to a cylinder at infinity; its curvature decays but its injectivity radius does not grow, and it is the model of a steady singularity. In dimension three the analogous complete rotationally symmetric steady soliton is the <strong>Bryant soliton</strong>, unique up to scaling, asymptotic to a cylinder at infinity and with curvature decaying as $1/s$ in the distance $s$. The two examples are the standard steady solitons, and they show that a complete soliton need not be compact.</p>
 <p><strong>Example (the Gaussian soliton).</strong> On $\mathbb{R}^n$ the flat metric with the vector field $X=\frac12x\cdot\nabla$ satisfies $R_{ij}+\nabla_iX_j+\nabla_jX_i=g_{ij}$, so the <strong>Gaussian soliton</strong> is a shrinking soliton; the corresponding self-similar solution of the flow is the rescaled flat metric. The example shows that a soliton need not have positive curvature and that the vector field, not the curvature, may carry the self-similarity; with the opposite sign of the vector field the same flat metric is an expanding soliton, which exhibits the dependence of the soliton type on the sign of $\lambda$.</p>
 <h2 id="singularities-and-monotonicity">Singularities and Monotonicity</h2>
-<p><strong>Definition.</strong> A solution $g(t)$ on a maximal interval $[0,T)$ is <strong>singular at $T$</strong> if $T<\infty$ and the curvature is unbounded as $t\to T^-$. The singularity is <strong>Type I</strong> if $\sup_M|\mathrm{Rm}|(x,t)\le C/(T-t)$ and <strong>Type II</strong> otherwise. A singularity is <strong>necklike</strong> if, after parabolic rescaling about a sequence of points, the solution converges to a cylinder $\mathbb{R}\times S^{n-1}$.</p>
+<p><strong>Definition.</strong> A solution $g(t)$ on a maximal interval $[0,T)$ is <strong>singular at $T$</strong> if $T<\infty$ and the curvature is unbounded as $t\to T^-$. The singularity is <strong>Type I</strong> if $\sup_M|\mathrm{Riem}|(x,t)\le C/(T-t)$ and <strong>Type II</strong> otherwise. A singularity is <strong>necklike</strong> if, after parabolic rescaling about a sequence of points, the solution converges to a cylinder $\mathbb{R}\times S^{n-1}$.</p>
 <p><strong>Theorem (Hamilton–Ivey).</strong> Along a Ricci flow on a compact three-manifold that becomes singular at $T<\infty$, the minimum of the sectional curvature satisfies</p>
 <p>$$
 \lambda_{\min}(x,t)\ge -\frac{C}{T-t}
@@ -156,7 +156,7 @@ $$</p>
 <p><em>Proof.</em> Quoted as standard (Hamilton's compactness theorem, in the form given by Perelman). The curvature bounds give local derivative bounds by the parabolic regularity theory, the injectivity-radius bound prevents collapse, and the Arzelà–Ascoli diagonal argument in a sequence of balls gives a smooth limit after passing to a subsequence; the limit solves the flow because the equation is closed under smooth convergence.</p>
 <p><strong>Remark (solitons as singularity models).</strong> The blow-up limits of the preceding theorem are ancient solutions — solutions defined for all negative time with a curvature bound — and the classification of ancient solutions in low dimension yields solitons as models. In dimension three the shrinking solitons are the round sphere, the shrinking cylinder and their quotients, and the singularity models are their blow-ups; the monotonicity of the entropy identifies the solitons as the equality cases, so that the analytic criterion and the geometric classification agree.</p>
 <h2 id="summary">Summary</h2>
-<p>Ricci flow is the evolution $\partial/\partial t\,g_{ij}=-2R_{ij}$ of a Riemannian metric, a weakly parabolic quasilinear equation whose degeneracy is the diffeomorphism invariance and whose short-time existence is obtained by the DeTurck gauge trick; the solution is unique and maximal until the curvature blows up. The volume evolves by $\partial/\partial t\mathrm{Vol}=-\int R\,dV$, the scalar curvature by $\partial/\partial t\,R=\Delta R+2|R_{ij}|^2$, the Ricci tensor by the Lichnerowicz Laplacian $\partial/\partial t\,R_{ij}=\Delta R_{ij}+2\sum_{k,l,a,b}(g^{-1})_{ka}(g^{-1})_{lb}R_{ikjl}R_{ab}-2\sum_{k,l}(g^{-1})_{kl}R_{ik}R_{lj}$, and the Riemann tensor by $\partial/\partial t\mathrm{Rm}=\Delta\mathrm{Rm}+\mathrm{Rm}*\mathrm{Rm}$; the scalar equation is a reaction-diffusion equation, and the maximum principle preserves lower bounds on $R$ and, under pinching hypotheses, on the full curvature. Einstein metrics solve the flow homothetically, with the round sphere shrinking to extinction, the flat torus stationary and the hyperbolic metric expanding; the cigar, Bryant and Gaussian solitons are the complete self-similar solutions and the shrinking solitons are the equality cases of the monotone entropy functionals $\mathcal{F}$ and $\mathcal{W}$, whose monotonicity, together with the no-local-collapsing theorem, controls the blow-up of singularities. Positively Ricci curved compact three-manifolds converge under the normalised flow to constant curvature, and the compactness of noncollapsed flows makes the singular limits ancient solutions classified by solitons.</p>
+<p>Ricci flow is the evolution $\partial/\partial t\,g_{ij}=-2R_{ij}$ of a Riemannian metric, a weakly parabolic quasilinear equation whose degeneracy is the diffeomorphism invariance and whose short-time existence is obtained by the DeTurck gauge trick; the solution is unique and maximal until the curvature blows up. The volume evolves by $\partial/\partial t\mathrm{Vol}=-\int R\,dV$, the scalar curvature by $\partial/\partial t\,R=\Delta R+2|R_{ij}|^2$, the Ricci tensor by the Lichnerowicz Laplacian $\partial/\partial t\,R_{ij}=\Delta R_{ij}+2\sum_{k,l,a,b}(g^{-1})_{ka}(g^{-1})_{lb}R_{ikjl}R_{ab}-2\sum_{k,l}(g^{-1})_{kl}R_{ik}R_{lj}$, and the Riemann tensor by $\partial/\partial t\mathrm{Riem}=\Delta\mathrm{Riem}+\mathrm{Riem}*\mathrm{Riem}$; the scalar equation is a reaction-diffusion equation, and the maximum principle preserves lower bounds on $R$ and, under pinching hypotheses, on the full curvature. Einstein metrics solve the flow homothetically, with the round sphere shrinking to extinction, the flat torus stationary and the hyperbolic metric expanding; the cigar, Bryant and Gaussian solitons are the complete self-similar solutions and the shrinking solitons are the equality cases of the monotone entropy functionals $\mathcal{F}$ and $\mathcal{W}$, whose monotonicity, together with the no-local-collapsing theorem, controls the blow-up of singularities. Positively Ricci curved compact three-manifolds converge under the normalised flow to constant curvature, and the compactness of noncollapsed flows makes the singular limits ancient solutions classified by solitons.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -171,7 +171,7 @@ $$</p>
 <td>Evolving Riemannian metric</td>
 </tr>
 <tr>
-<td>$R_{ij}$, $R$, $\mathrm{Rm}$</td>
+<td>$R_{ij}$, $R$, $\mathrm{Riem}$</td>
 <td>Ricci, scalar and Riemann curvature tensors</td>
 </tr>
 <tr>
@@ -191,7 +191,7 @@ $$</p>
 <td>Laplace–Beltrami operator; Lichnerowicz Laplacian</td>
 </tr>
 <tr>
-<td>$\mathrm{Rm}*\mathrm{Rm}$</td>
+<td>$\mathrm{Riem}*\mathrm{Riem}$</td>
 <td>Quadratic curvature combination in the curvature evolution</td>
 </tr>
 <tr>
@@ -199,7 +199,7 @@ $$</p>
 <td>Soliton vector field and constant; steady, shrinking, expanding</td>
 </tr>
 <tr>
-<td>$T$, $|\mathrm{Rm}|$</td>
+<td>$T$, $|\mathrm{Riem}|$</td>
 <td>Singular time and curvature norm; Type I condition</td>
 </tr>
 <tr>
