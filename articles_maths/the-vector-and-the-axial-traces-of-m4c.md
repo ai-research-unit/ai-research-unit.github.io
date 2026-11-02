@@ -55,7 +55,7 @@ $$
 \operatorname{tr}\mathsf{M}_4(a)=4a_0,\qquad
 \operatorname{tr}\bigl((-iL_tR_z)\mathsf{M}_4(a)\bigr)=0,
 $$
-because the trace pairing is orthogonal on the sixteen cells, $\operatorname{tr}(L_\muR_\nuT_{\rho\sigma})=4\,g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\sigma}$, so the functional $\operatorname{tr}\bigl((-iL_tR_z)\,\cdot\bigr)$ reads only the $L_tR_z$ coordinate, and $\mathsf{M}_4(a)$ has none.
+because the trace pairing is orthogonal on the sixteen cells, $\operatorname{tr}(L_\mu R_\nu T_{\rho\sigma})=4\,g_{\mu\mu}g_{\nu\nu}\delta_{\mu\rho}\delta_{\nu\sigma}$, so the functional $\operatorname{tr}\bigl((-iL_tR_z)\,\cdot\bigr)$ reads only the $L_tR_z$ coordinate, and $\mathsf{M}_4(a)$ has none.
 
 **The imaginary part.** For the imaginary quaternion $ia'$,
 $$
@@ -126,17 +126,17 @@ $$
 
 **The trace functionals on $M_4(\mathbb{C})$.** On the two-sided basis,
 $$
-\operatorname{tr}(L_\muR_\nu)=4\delta_{\mu t}\delta_{\nu t},
+\operatorname{tr}(L_\mu R_\nu)=4\delta_{\mu t}\delta_{\nu t},
 \qquad
-\operatorname{tr}\bigl((-iL_tR_z)L_\muR_\nu\bigr)=4i\,\delta_{\mu t}\delta_{\nu z},
+\operatorname{tr}\bigl((-iL_tR_z)L_\mu R_\nu\bigr)=4i\,\delta_{\mu t}\delta_{\nu z},
 $$
-because $L_tR_t=I$, $L_tR_z$ is the pseudoscalar cell, and every other $L_\muR_\nu$ is a vector, bivector or trivector product.
+because $L_tR_t=I$, $L_tR_z$ is the pseudoscalar cell, and every other $L_\mu R_\nu$ is a vector, bivector or trivector product.
 
 **Proof.** The table of *The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$* gives $L_tR_t=I$, the pseudoscalar $L_tR_z$, and the other fourteen as vectors, bivectors or trivectors. The trace of every graded cell other than $I$ and $L_tR_z$ is zero, and $L_tR_z$ times a vector, bivector or trivector is again one of those. Only $I$ and $L_tR_z$ survive: $\operatorname{tr}I=4$ and $\operatorname{tr}\bigl((-iL_tR_z)L_tR_z\bigr)=4i$. $\square$
 
 **The reading on the basis.** For
 $$
-A=\sum_{\mu,\nu}c_{\mu\nu}L_\muR_\nu,
+A=\sum_{\mu,\nu}c_{\mu\nu}L_\mu R_\nu,
 $$
 the two traces are
 $$
@@ -211,7 +211,7 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra |
 | $\mathsf{M}_4$ | the real-linear Clifford embedding $\mathbb{B}\to\mathrm{Cl}^{+}(1,3)$ |
-| $L_\muR_\nu$ | the two-sided cells $L_\mu R_\nu$; $L_tR_t=I$ and $L_tR_z$ the pseudoscalar cell |
+| $L_\mu R_\nu$ | the two-sided cells $L_\mu R_\nu$; $L_tR_t=I$ and $L_tR_z$ the pseudoscalar cell |
 | $P_\pm$ | the chiral projectors $\tfrac12(I\mp iL_tR_z)$ |
 | $\operatorname{Tr}_{\Delta}$ | the vector trace $\operatorname{tr}\mathsf{M}_4(\cdot)$ |
 | $\operatorname{Tr}_{\Delta,5}$ | the axial trace $\operatorname{tr}((-iL_tR_z)\mathsf{M}_4(\cdot))$ |
@@ -221,7 +221,7 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 ## Further Reading
 
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame cells and the Clifford basis.
-- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_\muR_\nu$ and their product table.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_\mu R_\nu$ and their product table.
 - [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the table $L_tR_t=I$, the pseudoscalar cell $L_tR_z$ and the grades of the other fourteen.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the projectors $P_\pm$ and the chiral blocks.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the trace form and the Hermitian structure.

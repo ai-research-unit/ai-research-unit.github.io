@@ -30,6 +30,8 @@ $$
 
 which is the property that distinguishes it from the inner automorphisms implementing $P$ and $T$. The map is the algebra-level form of the module operation $C[\psi]=\eta_C\psi^{*}$, with $\Pi$ the algebra-level charge-conjugation matrix and $\eta_C=i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ its module representative up to a phase; because $\Pi$ is determined only up to a nonzero scalar, the phase of $\eta_C$ is free, exactly as the CPT article's explicit verification found.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 ### The Action on Spinors
 
 On spinors the pseudoautomorphism acts through the antisymmetric symbol. If $\xi_{\alpha}$ is a spinor of the fundamental representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, the conjugated spinor is
@@ -104,7 +106,7 @@ The interpretation is not a derivation, and it does not add a new field content 
 
 **Established, and recomputed.**
 
-- The charge-conjugation pseudoautomorphism is $\bar{A}=\Pi A^{*}\Pi^{-1}$, conjugate-linear, with $\PiiL_{e_\mu}R_{e_{\nu(\mu)}}\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$; it is not an automorphism of the real form, and this is the algebra-level form of the CPT article's finding that $C$'s internal matrix is odd.
+- The charge-conjugation pseudoautomorphism is $\bar{A}=\Pi A^{*}\Pi^{-1}$, conjugate-linear, with $\Pi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$; it is not an automorphism of the real form, and this is the algebra-level form of the CPT article's finding that $C$'s internal matrix is odd.
 - The twice-conjugated spinor is $\bar{\bar{\xi}}_{\alpha}=\pm\xi_{\alpha}$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ on the quaternionic algebra the sign is $+1$, so $C^{2}=1$. This is the spinor-structure expression of the standard requirement.
 - Over a real division ring the matrix is $\Pi\propto I$ and the pseudoautomorphism is the identity; the corresponding particles are truly neutral. The three charge classes $+1$, $0$, $\bar{0}$ are respectively the complex representations, the real quaternionic representations, and the real representations of real type.
 
@@ -145,7 +147,7 @@ The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$ | Biquaternion algebra, the complex Clifford algebra of dimension two |
 | $\mathrm{Cl}_{n,m}$, $n=p+q$ | Real Clifford algebra; $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
 | $K$ | Division ring of $\mathrm{Cl}_{n,m}$: $\mathbb{R}$ if $p-q\equiv0,2$, $\mathbb{H}$ if $p-q\equiv4,6\pmod 8$ |
-| $\Pi$ | Charge-conjugation matrix; $\PiiL_{e_\mu}R_{e_{\nu(\mu)}}\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$, fixed only up to a scalar |
+| $\Pi$ | Charge-conjugation matrix; $\Pi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\Pi^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$, fixed only up to a scalar |
 | $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ | Generators of the cell frame, $(iR_{e_x})^{2}=L_{e_t}R_{e_t}$, $(iL_{e_k}R_{e_y})^{2}=-L_{e_t}R_{e_t}$ |
 | $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}$ | One-sided multipliers and two-sided cells; $L_{a}R_{b}\psi=a\psi b$, $i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ |
 | $\bar{\xi}_{\bar\alpha}=\sum_\alpha\Pi_{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
@@ -180,3 +182,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

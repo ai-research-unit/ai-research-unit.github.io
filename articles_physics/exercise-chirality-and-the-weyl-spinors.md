@@ -65,7 +65,7 @@ so it commutes with $\Gamma$ and with each $P_{L,R}$. Chirality is therefore a L
 
 ## Problem 2: The Two Weyl Halves and the Mass Term
 
-Take the mostly-minus counterpart of the parent's block generators, writing $iL_{e_\mu}R_{e_{\nu(\mu)}}=iL_{e_\mu}R_{e_{\nu(\mu)}}$ for the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$,
+Take the mostly-minus counterpart of the parent's block generators, writing $iL_{e_\mu}R_{e_{\nu(\mu)}}$ for the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$,
 
 $$
 iR_{e_x} = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
@@ -376,7 +376,7 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\Gamma
 | $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z),\; \tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$ | Primitive orthogonal idempotents |
 | $\Gamma = \operatorname{diag}(-I_2,I_2)$ | Chirality operator on $\Delta$ |
 | $P_L = \tfrac12(I_4-\Gamma),\; P_R = \tfrac12(I_4+\Gamma)$ | Chiral projectors |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}} = iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cell of the coordinate $x_\mu$; $iR_{e_x},iL_{e_k}R_{e_y}$ are the block matrices of Problem 2 |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cell of the coordinate $x_\mu$; $iR_{e_x},iL_{e_k}R_{e_y}$ are the block matrices of Problem 2 |
 | $\psi_L\in S$, $\psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
 | $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
@@ -410,3 +410,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

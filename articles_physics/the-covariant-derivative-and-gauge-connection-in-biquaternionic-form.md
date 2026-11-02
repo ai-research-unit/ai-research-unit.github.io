@@ -267,7 +267,9 @@ The word "connection" is used in the framework for two different objects, and co
 
 The connection of this article is **one-sided**: $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
 
-The distinction has a consequence the corpus had not recorded, and an external source names it. For an internal gauge force — this article's abelian case, and the non-abelian case it opens onto — the substitution $\partial/\partial Q_\mu \to D_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the internal generators commute with the frame cell $iL_{e_a}R_{e_{\nu(a)}}$. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term $\{iL_{e_a}R_{e_{\nu(a)}},S_{cd}\}$ between the frame cell and the Lorentz generator $S_{cd}=\tfrac14[iL_{e_c}R_{e_{\nu(c)}},iL_{e_d}R_{e_{\nu(d)}}]$, which the substituted equation does not have, because $[iL_{e_c}R_{e_{\nu(c)}},S_{ab}] = V_{abd}iL_{e_d}R_{e_{\nu(d)}}$ rather than vanishing. J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and reads it as a tension with the equivalence principle; the construction is recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*. It is the sharpest available answer to the question this section raises: the one-sided central connection of this article is exactly the case in which localization is unambiguous, and the two-sided gravitational connection is exactly the case in which it is not.
+The distinction has a consequence the corpus had not recorded, and an external source names it. For an internal gauge force — this article's abelian case, and the non-abelian case it opens onto — the substitution $\partial/\partial Q_\mu \to D_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the internal generators commute with the frame cell $iL_{e_a}R_{e_{\nu(a)}}$. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term $\{iL_{e_a}R_{e_{\nu(a)}},S_{cd}\}$ between the frame cell and the Lorentz generator $S_{cd}=\tfrac14[iL_{e_c}R_{e_{\nu(c)}},iL_{e_d}R_{e_{\nu(d)}}]$, which the substituted equation does not have, because $[iL_{e_c}R_{e_{\nu(c)}},S_{ab}] = V_{abd}\,iL_{e_d}R_{e_{\nu(d)}}$ rather than vanishing. J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and reads it as a tension with the equivalence principle; the construction is recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*. It is the sharpest available answer to the question this section raises: the one-sided central connection of this article is exactly the case in which localization is unambiguous, and the two-sided gravitational connection is exactly the case in which it is not.
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
 
 A second external source goes further and puts the two objects into one. J. Fredsted (arXiv:0811.1357v4 [math-ph], 2009) constructs a formalism on a biquaternionic basis $s_\mu \in \mathbb{M}_-$ with the metric $g_{\mu\nu} = \langle s_\mu, s_\nu\rangle$ and a **single** connection $\omega_\mu \in \mathbb{C}\otimes\mathbb{H}$ subject only to $\mathrm{Sc}(\omega_\mu + \bar{\omega}_\mu^*) = 0$; the imaginary-scalar part of $\omega_\mu$ is a local $\mathrm{U}(1)$ and its vector part is the Lorentz connection, so the two connections of this section are two parts of one algebra-valued object. The corpus records the construction — it is the same frame route the curved-spacetime article builds, reached from the other end — but does not adopt it, and continues to assert no relation between its central $\mathrm{U}(1)$ connection and its traceless gravitational connection. What the external construction shows is that the two are not forbidden to be one; what the corpus lacks is any reason to identify them.
 
@@ -376,3 +378,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

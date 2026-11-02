@@ -12,6 +12,8 @@ $$
 
 where $-iL_{e_t}R_{e_z}$ is the chirality cell, $\sigma_{\mu\nu}=\tfrac{i}{2}[iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}]$ is the bivector of two frame generators, and $L_{a}R_{b}$ with $L_a\psi=a\psi$ and $R_b\psi=\psi b$; the five cells $iR_{e_x},\dots,iL_{e_z}R_{e_y},-iR_{e_z}$ are fixed below. So the particle gains an energy in an electric field that depends on the orientation of its spin. The EDM is the coefficient $d$; it has the dimensions of $e\cdot\mathrm{length}$ and it is the canonical **CP-odd** observable of a spin-$\tfrac12$ system. Its measurement is a search for physics beyond the Standard Model, and its present bounds are among the tightest in particle physics.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 The biquaternion framework makes a structural statement about the EDM operator that is the subject of this article. The insertion $\sigma_{\mu\nu}\,-iR_{e_z}$ is **anti-Hermitian** in the field components that couple to $\vec E$, and it therefore belongs to the framework's material, anti-Hermitian sector $\mathbb{M}_-$; the magnetic-moment insertion $\sigma_{\mu\nu}$, which couples to $\vec B$, is Hermitian and belongs to the informational sector $\mathbb{M}_+$. The two are Hodge duals of each other, and the Hermiticity flips under the duality. The article establishes this and states what it does and does not buy.
 
 - **Established, and recomputed below.** The Hermiticity of the insertions, the Hodge duality $\sigma_{\mu\nu}\,-iR_{e_z}=\tfrac{i}{2}\epsilon_{\mu\nu\rho\sigma}\sigma^{\rho\sigma}$, and the resulting sector placement. The $\vec E$-coupling insertion $\sigma_{0k}\,-iR_{e_z}$ is anti-Hermitian (recomputed), hence material; the $\vec B$-coupling insertion $\sigma_{ij}$ is Hermitian, hence informational. The EDM Lagrangian is Hermitian because the explicit $i$ compensates the anti-Hermiticity, and that $i$ is the framework's marker of the CP-odd coefficient.
@@ -140,8 +142,8 @@ the stated nonrelativistic limit. The chain is a derivation of the limit from th
 **The bilinears and their transformation.** The four insertion families fall into two parity classes, and the classes determine the discrete symmetries of the observables. The bilinears
 
 $$
-\text{(vector)}\ \bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\psi,\quad
-\text{(axial)}\ \bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi,\quad
+\text{(vector)}\ \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi,\quad
+\text{(axial)}\ \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi,\quad
 \text{(tensor)}\ \bar{\psi}\sigma_{\mu\nu}\psi,\quad
 \text{(pseudotensor)}\ \bar{\psi}\sigma_{\mu\nu}\,-iR_{e_z}\psi
 $$
@@ -150,7 +152,7 @@ transform under $\mathbf{P}$ and $\mathbf{T}$ in the standard way, and the elect
 
 | Observable | Bilinear | $\mathbf{P}$ | $\mathbf{T}$ | $\mathbf{CP}$ | Insertion |
 |---|---|---|---|---|---|
-| Charge | $\bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$ ($\mu=0$) | even | even | — | $iR_{e_x}$ (Hermitian) |
+| Charge | $\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$ ($\mu=0$) | even | even | — | $iR_{e_x}$ (Hermitian) |
 | Magnetic moment | $\bar{\psi}\sigma_{ij}\psi$ | even | even | even | $\sigma_{ij}$ (Hermitian) |
 | EDM | $\bar{\psi}\sigma_{0k}\,-iR_{e_z}\psi$ | odd | odd | odd | $\sigma_{0k}\,-iR_{e_z}$ (anti-Hermitian) |
 | CP-odd "magnetic" | $\bar{\psi}\sigma_{ij}\,-iR_{e_z}\psi$ | odd | odd | odd | $\sigma_{ij}\,-iR_{e_z}$ (Hermitian) |
@@ -315,3 +317,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

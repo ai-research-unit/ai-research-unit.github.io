@@ -35,6 +35,8 @@ L_{e_x}R_{e_z} = iR_{e_x}\,iL_{e_x}R_{e_y} ,
 $$
 and the chiral projectors $\tilde\Pi_{L,R}=\tfrac12(L_{e_t}R_{e_t}\pm L_{e_x}R_{e_z})$ project onto the two components; on the two-dimensional module each has trace $1$, while on the four-dimensional carrier the same cells have trace $2$, the carrier carrying each half twice. Two facts are worth recording, because the two-dimensional mass term rests on both. First, the chirality cell is an involution, $(L_{e_x}R_{e_z})^2=+L_{e_t}R_{e_t}$, and so is the four-dimensional chirality, the reference-frame cell $-iL_{e_t}R_{e_z}$ of the appendix, whose square is the same $+L_{e_t}R_{e_t}$: the two dimensions do not differ in the square of the chirality. They differ in the bare product of the frame's generators. In two dimensions $iR_{e_x}\,iL_{e_x}R_{e_y}=L_{e_x}R_{e_z}$ squares to $+L_{e_t}R_{e_t}$, while in four $iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_t}R_{e_z}$, the volume cell, squares to $-L_{e_t}R_{e_t}$, and the $i$ that the literature attaches to the four-dimensional chirality is what turns that product into an involution. Second, the real structure of the reduction is the coefficient conjugation $C\psi=\bar\psi$, which acts on the cells coefficientwise: it commutes with the chirality cell $L_{e_x}R_{e_z}$ and anticommutes with the generators $iL_{e_\mu}R_{e_{\nu(\mu)}}$, so $C$ preserves each chiral half. In four dimensions $C$ anticommutes with $-iL_{e_t}R_{e_z}$, so it exchanges the halves and a real spinor is the sum of a half and its conjugate, a **Majorana** spinor and not a **Majorana–Weyl** one, the exclusion *The Neutrino and Majorana Fermions in Biquaternionic Form* states. Both facts were verified on the cells and are quoted in the established list below. This is the fermionic side's true content, and the bosonic side must match it.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 **The boson.** The boson is a single real scalar field $\phi(x)$, whose exponentiated field $\exp(2i\sqrt{\pi}\phi)$ is, in the framework's terms, a **central** object: the exponent carries the central $i$, and a central scalar commutes with every element of $\mathbb{B}$. The boson's stress tensor is a central scalar, and its free action
 $$
 S_{\mathrm{b}} = -\frac{1}{2}\int d^2x\;\sum_\mu\partial/\partial Q_\mu\phi\,\partial/\partial Q_\mu\phi
@@ -61,7 +63,7 @@ The boxed pair is the dictionary itself: the first entry is the current correspo
 
 **The dictionary in the framework's notation.** The two bilinears are module objects traced into the centre:
 $$
-\bar\psi iL_{e_\mu}R_{e_{\nu(\mu)}}\psi = \mathrm{Sc}\big(\tilde\Psi^{\natural}iL_{e_\mu}R_{e_{\nu(\mu)}}\tilde\Psi\big) ,
+\bar\psi iL_{e_\mu}R_{e_{\nu(\mu)}}\psi = \mathrm{Sc}\big(\tilde\Psi^{\natural}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\tilde\Psi\big) ,
 \qquad
 \bar\psi\psi = \mathrm{Sc}\big(\tilde\Psi^{\natural}\tilde\Psi\big),
 $$
@@ -237,7 +239,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; extracts central scalars from bilinears |
 | $g=\mathrm{diag}(+1,-1)$ | Two-dimensional level-3 Clifford metric |
 | $L_{a}R_{b}\psi=a\psi b$ | Two-sided cell; the identity is $L_{e_t}R_{e_t}$ |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cells, $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}=iL_{e_x}R_{e_y}$ |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cells, $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$ |
 | $L_{e_x}R_{e_z}=iR_{e_x}\,iL_{e_x}R_{e_y}$ | Chirality cell; $(L_{e_x}R_{e_z})^2=+L_{e_t}R_{e_t}$, even under $C$ |
 | $-iL_{e_t}R_{e_z}$ | Chirality cell in four dimensions; $(L_{e_t}R_{e_z})^2=+L_{e_t}R_{e_t}$, odd under $C$ |
 | $iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_t}R_{e_z}$ | Volume cell of the frame; its square is $-L_{e_t}R_{e_t}$ |
@@ -266,7 +268,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 
 ## Appendix — The Gamma Formulation
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{e_t}R_{e_x}=iR_{e_x}$ and $\gamma_1=iL_{e_x}R_{e_y}=iL_{e_x}R_{e_y}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the cell $L_{e_x}R_{e_z}$, not the four-dimensional $\gamma_5$.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{e_t}R_{e_x}=iR_{e_x}$ and $\gamma_1=iL_{e_x}R_{e_y}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the cell $L_{e_x}R_{e_z}$, not the four-dimensional $\gamma_5$.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
@@ -279,3 +281,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

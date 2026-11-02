@@ -6,7 +6,7 @@ The Dirac equation describes particles and antiparticles on the same footing, an
 
 The transformation is worth a biquaternion article for a structural reason. The biquaternionic Dirac equation is written as a **chiral pair**: the mass couples $\tilde{\Psi}_L$ to $\tilde{\Psi}_R$, and the two chiral halves carry the two minimal left ideals of $\mathbb{B}$. The FW transformation, by contrast, separates **positive from negative frequency**, and the two pieces into which it splits the field are not the two chiralities. The article therefore has to keep two gradings apart: the chirality grading, in which the mass is off-diagonal and the biquaternion pair is written, and the frame grading fixed by the timelike generator, in which the FW transformation works and the mass is diagonal. Conflating the two is the standard way to misread either. Making the distinction explicit is the biquaternion content of the transformation.
 
-The scope is the transformation itself, its generator, its free-particle closed form, the mean position operator it defines, and the interpretation of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*; the relativistic qubit and the informational interpretation belong to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise and are only summarised here. The conventions are the series conventions: $\Box = \partial^2/\partial Q_t^2 + \Delta$, the five frame generators are the cells $L_{a}R_{b}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_{a}R_{b}\psi = a\psi b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ and $L_{e_t}R_{e_t}$ the identity, defined by $iR_{e_x}\psi = i\,e_t\,\psi\,e_x$, $iL_{e_k}R_{e_y}\psi = i\,\vec e_k\,\psi\,e_y$, $-iR_{e_z}\psi = -i\,e_t\,\psi\,e_z$, that is $iR_{e_x} = iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y} = iL_{e_k}R_{e_y}$, $-iR_{e_z} = -iL_{e_t}R_{e_z}$; they satisfy $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(iR_{e_x})^2 = L_{e_t}R_{e_t}$, and the chiral mass pair is
+The scope is the transformation itself, its generator, its free-particle closed form, the mean position operator it defines, and the interpretation of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*; the relativistic qubit and the informational interpretation belong to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise and are only summarised here. The conventions are the series conventions: $\Box = \partial^2/\partial Q_t^2 + \Delta$, the five frame generators are the cells $L_{a}R_{b}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_{a}R_{b}\psi = a\psi b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ and $L_{e_t}R_{e_t}$ the identity, defined by $iR_{e_x}\psi = i\,e_t\,\psi\,e_x$, $iL_{e_k}R_{e_y}\psi = i\,\vec e_k\,\psi\,e_y$, $-iR_{e_z}\psi = -i\,e_t\,\psi\,e_z$, that is $iR_{e_x} = iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $-iR_{e_z} = -iL_{e_t}R_{e_z}$; they satisfy $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(iR_{e_x})^2 = L_{e_t}R_{e_t}$, and the chiral mass pair is
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
@@ -15,6 +15,8 @@ $$
 ## The Dirac Hamiltonian and the Odd/Even Split
 
 The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\bigl(iR_{e_x}D_{0}-\sum_k iL_{e_k}R_{e_y}D_{k}\bigr) - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial x_\mu - iqA_\mu/\hbar$ of the parent article, in the $\mathbb{M}_-$ frame — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $iR_{e_x}$, and set $\alpha_k = iR_{e_x}\,iL_{e_k}R_{e_y} = L_{\vec e_k}R_{\vec e_z}$, $\beta = iR_{e_x}$. The result is
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
 
 $$
 i\hbar\partial/\partial t'\psi = H\psi, \qquad
@@ -293,3 +295,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

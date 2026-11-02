@@ -4,6 +4,8 @@
 
 The biquaternion Klein–Gordon operator has a first-order root, but it has no single one. Squaring a first-order operator to the central scalar $\Box-\mu^2$ needs four mutually anticommuting generators with $(iR_{e_x})^2=+1$ and $(iL_{e_k}R_{e_y})^2=-1$, the Lorentz signature; the biquaternion algebra supplies the three spatial ones, and the fourth needs a second factor. That factor doubles the minimal module to four complex dimensions. Write $iL_{e_\mu}R_{e_{\nu(\mu)}}$ for the four generators and $-iR_{e_z}$ for their volume element. With a pseudoscalar mass the single square exists; with the physical scalar mass only a factorisation exists, and the physical equation is one factor of it. The root therefore lives in the two-sided algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while $\Box$ itself remains central.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 The equation is
 
 $$
@@ -106,7 +108,7 @@ In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec 
 Let
 
 $$
-D=iiL_{e_\mu}R_{e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu}+B=i\,iR_{e_x}\frac{1}{c}\frac{\partial}{\partial t'}+i\,iL_{e_k}R_{e_y}\frac{\partial}{\partial x_k}+B,
+D=i\,iL_{e_\mu}R_{e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu}+B=i\,iR_{e_x}\frac{1}{c}\frac{\partial}{\partial t'}+i\,iL_{e_k}R_{e_y}\frac{\partial}{\partial x_k}+B,
 \qquad
 iL_{e_\mu}R_{e_{\nu(\mu)}},B\in M_n(\mathbb{C})\ \text{constant}.
 $$
@@ -155,20 +157,20 @@ $$
 
 and $n=4$ is both minimal and realised. The real dimension of the minimal module is eight, the same as the real dimension of $\mathbb{B}$.
 
-The counting can be seen without naming the algebra. Four anticommuting matrices in $M_n(\mathbb{C})$ generate, together with their products, $16$ linearly independent matrices: the identity, the four generators, the six products $iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}$ with $\mu<\nu$, the four products $iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}$, and $-iR_{e_z}$. Sixteen independent matrices require $n^2\ge16$, hence $n\ge4$. The bound is attained by the five cell generators below.
+The counting can be seen without naming the algebra. Four anticommuting matrices in $M_n(\mathbb{C})$ generate, together with their products, $16$ linearly independent matrices: the identity, the four generators, the six products $iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}$ with $\mu<\nu$, the four products $iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}$, and $-iR_{e_z}$. Sixteen independent matrices require $n^2\ge16$, hence $n\ge4$. The bound is attained by the five cell generators below.
 
 The minimal realisation is explicit, and it uses both sides of the algebra. With $L_{a}R_{b}$,
 
 $$
 iL_{e_t}R_{e_x},
 \qquad
-iL_{e_x}R_{e_y}=iL_{e_x}R_{e_y},
+iL_{e_x}R_{e_y},
 \qquad
-iL_{e_y}R_{e_y}=iL_{e_y}R_{e_y},
+iL_{e_y}R_{e_y},
 \qquad
-iL_{e_z}R_{e_y}=iL_{e_z}R_{e_y},
+iL_{e_z}R_{e_y},
 \qquad
--iL_{e_t}R_{e_z}=-iL_{e_t}R_{e_z},
+-iL_{e_t}R_{e_z},
 $$
 
 and the split of each cell between the two sides is
@@ -245,7 +247,7 @@ $$
 \mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong M_4(\mathbb{C}).
 $$
 
-The three space generators are cells that use both sides, $iL_{e_k}R_{e_y}=iL_{e_k}R_{e_y}$, and the anticommutator with $iR_{e_x}$ comes from the right factors, $R_{e_y}R_{e_x}=-R_{e_x}R_{e_y}$.
+The three space generators are cells that use both sides, $iL_{e_k}R_{e_y}$, and the anticommutator with $iR_{e_x}$ comes from the right factors, $R_{e_y}R_{e_x}=-R_{e_x}R_{e_y}$.
 
 The real dimension count is consistent. The module $\mathbb{C}^4$ has real dimension eight, the same as $\mathbb{B}$. The root does not enlarge the field space relative to a biquaternion field; it changes the module structure. Relative to a single complex scalar, of course, it is a fourfold complex enlargement.
 
@@ -274,7 +276,7 @@ So the single-square roots are
 $$
 \mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\,-iR_{e_z},
 \qquad
-\mathsf D=iiL_{e_\mu}R_{e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu},
+\mathsf D=i\,iL_{e_\mu}R_{e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu},
 \qquad
 \mathsf D_{\mathrm{ps},\pm}^2=\left(\Box-\mu^2\right)I .
 $$
@@ -304,7 +306,7 @@ The term is parity-odd. A parity-odd mass is not the mass of the Dirac equation,
 The physical mass is a scalar: it multiplies the identity and commutes with every generator. It fails the second condition,
 
 $$
-\{\mu I,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=2\muiL_{e_\mu}R_{e_{\nu(\mu)}}\neq0,
+\{\mu I,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=2\mu\,iL_{e_\mu}R_{e_{\nu(\mu)}}\neq0,
 $$
 
 so no single operator of the form $\mathsf D+B$ with a scalar mass squares to the Klein–Gordon operator. Each factor alone carries a first-order remainder:
@@ -467,9 +469,9 @@ The scalar Klein–Gordon field, taken as a central scalar, has no first-order r
 The gammas are the five cells of the body, written as matrices:
 $$
 \gamma_0=iL_{e_t}R_{e_x},\qquad
-\gamma_1=iL_{e_x}R_{e_y}=iL_{e_x}R_{e_y},\qquad
-\gamma_2=iL_{e_y}R_{e_y}=iL_{e_y}R_{e_y},\qquad
-\gamma_3=iL_{e_z}R_{e_y}=iL_{e_z}R_{e_y},\qquad
+\gamma_1=iL_{e_x}R_{e_y},\qquad
+\gamma_2=iL_{e_y}R_{e_y},\qquad
+\gamma_3=iL_{e_z}R_{e_y},\qquad
 \gamma_5=-iL_{e_t}R_{e_z}.
 $$
 They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $(\gamma_0)^2=+I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.
@@ -491,3 +493,25 @@ $$
 with $B=c\gamma_5$ the only single-square mass and $c=\pm i\mu$.
 
 The numerical checks of §*Verification* are stated in the same symbols: $\{\gamma_\mu,\gamma_\nu\}-2g_{\mu\nu}I$, $\gamma_5^2-I$, $\{\gamma_5,\gamma_\mu\}$, $\gamma_5-i\gamma_0\gamma_1\gamma_2\gamma_3$ and $(\sum_\mu \gamma_\mu k_\mu)^2-g_{\mu\nu}k_\mu k_\nu I$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

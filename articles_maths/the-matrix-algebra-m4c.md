@@ -335,7 +335,7 @@ M_n(\mathbb{C})\otimes_\mathbb{C}M_n(\mathbb{C})^{\mathrm{opp}}\cong\operatornam
 $$
 because the images of the matrix-unit basis of the tensor product are the matrix units of $\operatorname{End}_{\mathbb{C}}(M_n(\mathbb{C}))$.
 
-**The case $n=2$.** With $\mathbb{B}\cong M_2(\mathbb{C})$ this gives $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. In the coefficient basis the images are the sixteen $L_\muR_\nu=L_\mu R_\nu$; they are not the matrix units, and every $E_{ij}$ is a sum of four of them. The construction reaches the square orders $n^2$ and, in the two-factor form, the products $mn$: it gives $M_4$ and $M_9$, and $M_6$ from $M_2$ and $M_3$, but not $M_3$ or $M_5$. It is one construction of the algebra, not a definition, and it chooses no gamma set: no five of the sixteen cells $L_\muR_\nu$ are singled out up to $i$. The full account, with the sixteen matrices, the multiplication tables and the coefficient formula, is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*.
+**The case $n=2$.** With $\mathbb{B}\cong M_2(\mathbb{C})$ this gives $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. In the coefficient basis the images are the sixteen $L_\mu R_\nu$; they are not the matrix units, and every $E_{ij}$ is a sum of four of them. The construction reaches the square orders $n^2$ and, in the two-factor form, the products $mn$: it gives $M_4$ and $M_9$, and $M_6$ from $M_2$ and $M_3$, but not $M_3$ or $M_5$. It is one construction of the algebra, not a definition, and it chooses no gamma set: no five of the sixteen cells $L_\mu R_\nu$ are singled out up to $i$. The full account, with the sixteen matrices, the multiplication tables and the coefficient formula, is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*.
 
 ## Summary
 
@@ -388,9 +388,9 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the determinant, the characteristic polynomial, the singular values and the polar decomposition.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $GL_4$, $SL_4$, $U(4)$ and their Lie algebras.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.
-- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen matrices $L_\muR_\nu$, their product tables, the coefficient formula and the length.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen matrices $L_\mu R_\nu$, their product tables, the coefficient formula and the length.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices $L_\muR_\nu$, the gamma set and the product question.
+- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices $L_\mu R_\nu$, the gamma set and the product question.
 - [The $M_4(\mathbb{C})$ e-basis Representation](m4c-e-basis-representation.html), for the four-dimensional regular model and its different trace and determinant.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that produces the idempotents.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the full algebra.

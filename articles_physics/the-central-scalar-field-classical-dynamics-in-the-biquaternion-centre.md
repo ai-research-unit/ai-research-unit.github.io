@@ -179,7 +179,7 @@ $$
 L_tR_t=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0 ,
 $$
 
-positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial L_\muR_\nu/\partial x_\mu=0$ on shell, in the $\mathbb{M}_-$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
+positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{M}_-$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
 
 ### The Energy of the Static Field
 

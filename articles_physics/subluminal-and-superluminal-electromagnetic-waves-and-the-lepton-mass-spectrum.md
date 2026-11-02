@@ -166,7 +166,9 @@ $$
 \boxed{\;\partial F^\uparrow = -\omega J_m\;}
 $$
 
-that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The mechanism is the parity split: the source shows that $\psi^\uparrow$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi^\uparrow_+ + g\omega B\psi^\uparrow_+=0$ and $\partial\psi^\uparrow_- - g\omega B\psi^\uparrow_-=0$, so that a single $\psi^\uparrow$ coupled to a potential describes a particle of charge $+g$ and a particle of charge $-g$ — which the source reads as a pair of opposite charges. This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form of the non-linear equation is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 FiL_{e_\mu}R_{e_{\nu(\mu)}} F$.
+that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The mechanism is the parity split: the source shows that $\psi^\uparrow$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi^\uparrow_+ + g\omega B\psi^\uparrow_+=0$ and $\partial\psi^\uparrow_- - g\omega B\psi^\uparrow_-=0$, so that a single $\psi^\uparrow$ coupled to a potential describes a particle of charge $+g$ and a particle of charge $-g$ — which the source reads as a pair of opposite charges. This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form of the non-linear equation is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 F\,iL_{e_\mu}R_{e_{\nu(\mu)}} F$.
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
 
 ## Status, Contrasts, and Boundaries
 
@@ -201,7 +203,7 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 | $\beta$ | Takabayasi (Yvon–Takabayasi) angle; $0,\pi$ electron/positron, $\pi/2,3\pi/2$ muon/antimuon |
 | $j$, $g$, $J=J_e-\omega J_m$ | Vector current, axial current, total current with electric and magnetic parts |
 | $\Lambda_\pm,\ \Lambda_\beta$ | Energy projector $\tfrac12(\psi\pm\,iR_{e_x}\psi\,iR_{e_x})$; one-parameter projector family |
-| $S=-\tfrac12\psi\vec e_z\psi^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12 FiL_{e_\mu}R_{e_{\nu(\mu)}} F$ the Maxwell energy–momentum |
+| $S=-\tfrac12\psi\vec e_z\psi^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12 F\,iL_{e_\mu}R_{e_{\nu(\mu)}} F$ the Maxwell energy–momentum |
 | $\lambda,\kappa,\Lambda,K$ | Scalar coefficients of the spinorial Maxwell and non-linear equations |
 
 ## Further Reading
@@ -231,3 +233,25 @@ $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central gr
 The article's frame is the source's: its volume element, the product $\gamma_0\gamma_1\gamma_2\gamma_3$, is the pseudoscalar $\omega=-i\gamma_5$ of this dictionary, the symbol the body writes; its fixed bivector is $\gamma_2\gamma_1=-\vec e_z$, the source's $\gamma_{21}$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

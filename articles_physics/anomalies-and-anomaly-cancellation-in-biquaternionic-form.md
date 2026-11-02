@@ -36,16 +36,18 @@ The framework results used here are those of the companion articles:
 **The biquaternion entry point.** The framework's contribution is the identity of the Clifford trace over the module that produces the anomaly. In the frame of the appendix the trace is
 
 $$
-\mathrm{tr}\big(-iR_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}iL_{e_\rho}R_{e_{\nu(\rho)}}iL_{e_\sigma}R_{e_{\nu(\sigma)}}\big) = -4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}\big(-iR_{e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\,iL_{e_\sigma}R_{e_{\nu(\sigma)}}\big) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 \qquad
 \mathrm{tr}\big(-iR_{e_z}\,iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}\big) = -4i ,
 $$
 
 which was recomputed for all $4!=24$ permutations: the trace vanishes unless the four indices are distinct, and then it is $-4i$ times the sign of the permutation, with $\epsilon_{0123}=+1$. Every anomaly coefficient in the article is this single number multiplied by the appropriate trace of gauge generators.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 ## The Axial Anomaly
 
-**The result.** For a massless Dirac fermion of electric charge $e$ in four dimensions, the axial current $j_{5\mu}=\bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi$ satisfies
+**The result.** For a massless Dirac fermion of electric charge $e$ in four dimensions, the axial current $j_{5\mu}=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi$ satisfies
 
 $$
 \boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2im\,\bar{\psi}\,-iR_{e_z}\psi \;+\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;},
@@ -214,7 +216,7 @@ with one factor of each left- and each right-handed field. The operator has the 
 
 ## The Traces Involved, and the One That Is Not
 
-**Two traces, and only two.** Every anomaly coefficient in this article is a product of two independent traces: the **Clifford trace** over the four-dimensional Dirac module, which supplies the $\epsilon_{\mu\nu\rho\sigma}$ through $\mathrm{tr}(-iR_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}iL_{e_\rho}R_{e_{\nu(\rho)}}iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$, and the **gauge trace** over the representation, which supplies $A_{abc}=\mathrm{Tr}[T_a\{T_b,T_c\}]$. In the abelian case the second is the cubic charge sum. The two are computed separately because they act on different indices, and the anomaly is their product.
+**Two traces, and only two.** Every anomaly coefficient in this article is a product of two independent traces: the **Clifford trace** over the four-dimensional Dirac module, which supplies the $\epsilon_{\mu\nu\rho\sigma}$ through $\mathrm{tr}(-iR_{e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\,iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$, and the **gauge trace** over the representation, which supplies $A_{abc}=\mathrm{Tr}[T_a\{T_b,T_c\}]$. In the abelian case the second is the cubic charge sum. The two are computed separately because they act on different indices, and the anomaly is their product.
 
 **The chiral trace is a difference of Weyl traces.** In the block decomposition $\Delta=S\oplus\bar{S}$ with $-iR_{e_z}=\mathrm{diag}(-I_2,I_2)$, a trace with a chirality insertion splits:
 
@@ -230,7 +232,7 @@ so the chirality-weighted trace is the **difference** of the two Weyl traces. Fo
 
 | Item | Status |
 |---|---|
-| The Clifford trace underlying every anomaly, $\mathrm{tr}(-iR_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}iL_{e_\rho}R_{e_{\nu(\rho)}}iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$ | **Supplied**, recomputed for all permutations |
+| The Clifford trace underlying every anomaly, $\mathrm{tr}(-iR_{e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\,iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$ | **Supplied**, recomputed for all permutations |
 | The identification $-iR_{e_z}=i\omega$ with the volume cell | **Supplied** by the Clifford isomorphism |
 | The axial anomaly density as the framework's invariant $I_2=\vec E\cdot\vec B$ | **Supplied** (with the instanton article's normalization); the coefficient is standard |
 | The exactness of the anomaly coefficient (Adler–Bardeen) | **Transcribed**; the index-theoretic reason belongs to the general gauge apparatus |
@@ -248,7 +250,7 @@ $$
 \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\,-iR_{e_z}\psi + \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
-and the anomalous density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The Clifford identity behind every anomaly, $\mathrm{tr}(-iR_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}iL_{e_\rho}R_{e_{\nu(\rho)}}iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$, and the identification $-iR_{e_z}=i\omega$ of the chirality cell with the volume cell, are supplied by the framework's Clifford structure and were recomputed.
+and the anomalous density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The Clifford identity behind every anomaly, $\mathrm{tr}(-iR_{e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\,iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$, and the identification $-iR_{e_z}=i\omega$ of the chirality cell with the volume cell, are supplied by the framework's Clifford structure and were recomputed.
 
 The gauge anomaly is the triangle coefficient $\mathrm{Tr}[T_a\{T_b,T_c\}]$, and its vanishing is a consistency condition on the chiral spectrum. The article verified the Standard Model's four conditions — $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$, and the colour sum — exactly, for one generation, with a left-minus-right sign convention; the cubic sum cancels by a genuine left–right conspiracy rather than per field. The conditions constrain the hypercharges and colour assignments but not the number of generations, since each generation contributes a zero.
 
@@ -265,9 +267,9 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $iR_{e_x},\dots,iL_{e_z}R_{e_y}$, $-iR_{e_z}$ | Frame cells: $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $-iL_{e_t}R_{e_z}$; $L_{a}R_{b}\psi=a\psi b$ |
 | $\Delta=S\oplus\bar{S}$, $-iR_{e_z}=\mathrm{diag}(-I_2,I_2)$ | Dirac module and chirality cell |
 | $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-i\,-iR_{e_z}$ | Volume cell; $-iR_{e_z}=i\omega$ |
-| $\mathrm{tr}(-iR_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}iL_{e_\rho}R_{e_{\nu(\rho)}}iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$ | The Clifford trace behind the anomaly |
+| $\mathrm{tr}(-iR_{e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\,iL_{e_\sigma}R_{e_{\nu(\sigma)}})=-4i\epsilon_{\mu\nu\rho\sigma}$ | The Clifford trace behind the anomaly |
 | $\epsilon_{\mu\nu\rho\sigma}$, $\epsilon_{0123}=+1$ | Totally antisymmetric symbol |
-| $j_{5\mu}=\bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi$ | Axial current |
+| $j_{5\mu}=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi$ | Axial current |
 | $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\,-iR_{e_z}\psi+\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ) |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
@@ -308,3 +310,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

@@ -12,7 +12,7 @@ $$
 
 with the Hermitian adjoint on the right and no second factor. The parity enters as the **sign character** $\varepsilon_x=(-1)^{\lvert x\rvert}$ of a homogeneous element, a scalar, and not as a factor of the operator. Two consequences follow at once and are used below. Every element of $\mathbb{B}$ is even, so $\varepsilon_x=+1$ on the algebra and every computation of the series is a computation with the unsigned sandwich. The signed operators of the maths corpus are maps on the full $\mathrm{Cl}_{1,3}$; on the even slot they reduce to $\Theta_x$, which is why the physics never needs them.
 
-The generators are written as cells of the biquaternion algebra acting on itself on both sides. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_{a}R_{b}$, the four generator cells are $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}=iL_{e_x}R_{e_y}$, $iL_{e_y}R_{e_y}=iL_{e_y}R_{e_y}$, $iL_{e_z}R_{e_y}=iL_{e_z}R_{e_y}$, and the chirality cell is $-iL_{e_t}R_{e_z}$.
+The generators are written as cells of the biquaternion algebra acting on itself on both sides. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_{a}R_{b}$, the four generator cells are $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$, $iL_{e_y}R_{e_y}$, $iL_{e_z}R_{e_y}$, and the chirality cell is $-iL_{e_t}R_{e_z}$.
 
 Three facts organise the article. The first is that the dagger is **even**: it preserves the parity, so the grading is a symmetry of the Hermitian structure, and the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the corpus are its fixed and anti-fixed loci. The second is that the parity is a **scalar sign**, $\alpha(x)=\varepsilon_x x$, and that it is invisible on the algebra, because every element of $\mathbb{B}$ is even. The third is that the twist is a conjugation, by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$; it sits on the element and never on the operator, so the sandwich is the only operator the physics uses.
 
@@ -32,6 +32,8 @@ $$
 $$
 
 that is, the parity of a product is the sum of the parities. The generator cells $iL_{e_\mu}R_{e_{\nu(\mu)}}$ are odd; the bivectors $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$ and the volume element are even; the square $(iL_{e_\mu}R_{e_{\nu(\mu)}})^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a Clifford algebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector, and this is why the parity sign of the next but one section is invisible in it.
 
@@ -88,7 +90,7 @@ $$
 
 With the dictionary $i\mapsto-\Omega$, the same statement reads: the grade involution is the conjugation by the central scalar imaginary.
 
-**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every generator, since moving $iL_{e_j}R_{e_y}$ past the monomial $\Omega$ costs the sign $(-1)^{3}$; a monomial $x=iL_{e_\mu}R_{e_{\nu(\mu)}}_1}\cdots iL_{e_\mu}R_{e_{\nu(\mu)}}_k}$ therefore satisfies $\Omega x=(-1)^{k}x\Omega$, and $\Omega^{-1}$ exists because $\Omega^2=-1\neq0$. On the even slot $\lvert x\rvert$ is even and the conjugation is the identity.
+**Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every generator, since moving $iL_{e_j}R_{e_y}$ past the monomial $\Omega$ costs the sign $(-1)^{3}$; a monomial $x=iL_{e_{\mu_1}}R_{e_{\nu(\mu_1)}}\cdots iL_{e_{\mu_k}}R_{e_{\nu(\mu_k)}}$ therefore satisfies $\Omega x=(-1)^{k}x\Omega$, and $\Omega^{-1}$ exists because $\Omega^2=-1\neq0$. On the even slot $\lvert x\rvert$ is even and the conjugation is the identity.
 
 **Remark (the sign is a scalar, not a factor of the operator).** The grade involution acts on the element, $\alpha(x)=\varepsilon_x x$, and $\varepsilon_x=\pm1$. It therefore never multiplies a sandwich: multiplying the parameter by $\varepsilon_x$ multiplies the sandwich by the same scalar, and on the algebra $\varepsilon_x=+1$ identically. The parity is a property of the parameter, which the operator may report as a sign, and not a second operator.
 
@@ -153,7 +155,7 @@ $$
 
 *Proof.* $\Theta_a(v)=a\,v\,a^{*}=a\,v\,(-a)=-a\,v\,a=-2B(a,v)\,a+a^{2}v=q(a)\,v-2B(a,v)\,a=q(a)\,\rho_a(v)$, using $a^{*}=-a$ on the vectors and $a^{2}=q(a)$.
 
-**Corollary (which reflection carries which sign).** The timelike generator has $q(iR_{e_x})=+1$ and satisfies $\Theta_{iR_{e_x}=\rho_{iR_{e_x}$ exactly, while the spatial generators, $(iL_{e_k}R_{e_y})^{2}=-1$, satisfy $\Theta_{iL_{e_k}R_{e_y}=-\rho_{iL_{e_k}R_{e_y}$. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the next section, where two odd steps compose to a rotation.
+**Corollary (which reflection carries which sign).** The timelike generator has $q(iR_{e_x})=+1$ and satisfies $\Theta_{iR_{e_x}}=\rho_{iR_{e_x}}$ exactly, while the spatial generators, $(iL_{e_k}R_{e_y})^{2}=-1$, satisfy $\Theta_{iL_{e_k}R_{e_y}}=-\rho_{iL_{e_k}R_{e_y}}$. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the next section, where two odd steps compose to a rotation.
 
 **Remark (the same statement on the algebra).** The algebra has a Euclidean Clifford structure of its own, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, with vectors the Hermitian elements $i\vec e_k$ of the informational sector; there the vector identity reads $\Theta_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
 
@@ -195,11 +197,11 @@ Let $x=i\vec e_x$, a boost, with $\langle x\rangle_{\natural}=-1$ and $x^{*}=x$.
 
 ### Two Fermionic Steps Compose to a Bosonic One
 
-The generators $iL_{e_x}R_{e_y}$ and $iL_{e_y}R_{e_y}$ are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, $\Theta_{iL_{e_x}R_{e_y}=-\rho_{iL_{e_x}R_{e_y}$ and $\Theta_{iL_{e_y}R_{e_y}=-\rho_{iL_{e_y}R_{e_y}$, because $q(iL_{e_k}R_{e_y})=-1$; the two minus signs multiply to $+1$ in the composite,
+The generators $iL_{e_x}R_{e_y}$ and $iL_{e_y}R_{e_y}$ are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, $\Theta_{iL_{e_x}R_{e_y}}=-\rho_{iL_{e_x}R_{e_y}}$ and $\Theta_{iL_{e_y}R_{e_y}}=-\rho_{iL_{e_y}R_{e_y}}$, because $q(iL_{e_k}R_{e_y})=-1$; the two minus signs multiply to $+1$ in the composite,
 
 $$
-\Theta_{iL_{e_x}R_{e_y}\circ\Theta_{iL_{e_y}R_{e_y}
-=\Theta_{iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}
+\Theta_{iL_{e_x}R_{e_y}}\circ\Theta_{iL_{e_y}R_{e_y}}
+=\Theta_{iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}}
 =\Theta_{\vec e_z},
 $$
 
@@ -254,3 +256,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

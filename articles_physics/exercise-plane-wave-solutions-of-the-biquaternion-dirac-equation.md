@@ -30,6 +30,8 @@ The arrays of the five, in the chiral basis and in the Dirac basis, are in the a
 
 The time generator carries the temporal unit $e_t$; the space generators carry $i\vec e_k$, the spatial unit times $i$; that factor turns the anti-Hermitian $\vec e_k$ into the Hermitian $\sigma_k$. The index $\mu$ of $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the coordinate index, $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator paired with $\partial/\partial x_\mu$ in the $\mathbb{M}_-$ frame, and the entry is the corresponding cell coefficient. The derivative is with respect to $x_\mu=(t',x,y,z)$, not $Q_\mu$; the $\mathbb{B}$-frame coefficients are $iR_{e_x}$ and $i\,iL_{e_k}R_{e_y}$. That is the precise sense in which the generators align with the coordinates.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 The Dirac basis is reached by right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, the change of basis of Problem 5. There
 $$
 (iR_{e_x})^{d}=R_{i\vec e_z},\qquad
@@ -708,3 +710,25 @@ $$
 \gamma_5=R_{-i\vec e_z}=-iL_tR_z,
 $$
 with $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ and $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

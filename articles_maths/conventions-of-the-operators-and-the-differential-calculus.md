@@ -27,7 +27,7 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it. In $L_{\tilde Q_1}R_{\tilde Q_2}$ the subscripts are positional: the first is the left multiplier and the second the right multiplier, while the argument occupies the third slot.
 
-**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $L_\muR_\nu=L_\mu R_\nu$ are the matrix basis and the cell table of *Matrix Representations Conventions*, §*The Clifford Structure*; the gamma set is five of them up to $i$, $\gamma_0=iL_tR_x$, $\gamma_1=iL_xR_y$, $\gamma_2=iL_yR_y$, $\gamma_3=iL_zR_y$, $\gamma_5=-iL_tR_z$.
+**The basis operators.** For the four units write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$. The right family is read from the left one by the exchange $\mathsf S$ of the two mixed Peirce units, $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, and the sixteen two-sided operators $L_\mu R_\nu$ are the matrix basis and the cell table of *Matrix Representations Conventions*, §*The Clifford Structure*; the gamma set is five of them up to $i$, $\gamma_0=iL_tR_x$, $\gamma_1=iL_xR_y$, $\gamma_2=iL_yR_y$, $\gamma_3=iL_zR_y$, $\gamma_5=-iL_tR_z$.
 
 **The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
 

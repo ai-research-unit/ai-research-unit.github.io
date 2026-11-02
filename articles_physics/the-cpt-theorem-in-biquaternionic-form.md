@@ -21,10 +21,10 @@ The division between what is established and what is only transcribed is kept ex
 - **Gap, left visible.** The framework does not fix a $\mathbb{B}$-intrinsic form of $C$ and $P$: their internal matrices are odd Clifford elements, outside $\mathbb{B}$, so they are operations of the Clifford algebra or of the module, not inner operations of the biquaternion algebra. Whether they admit a $\mathbb{B}$-intrinsic realization is unbuilt. Separately, the parent's mass term is the linear chiral pair of the Dirac article, whose spinor representative is the massive Dirac equation verified above to be $C$-invariant; the algebra's anti-linear object is the real structure $\flat=-{}^{*}$, a separate Majorana-type pairing, and whether $C$ is a symmetry of the single-field equation built on $\flat$ is the open reading developed in the neutrino companion.
 
 We use the **cell frame** of the canonical-quantization and spin–statistics articles. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and the two-sided cell $L_{a}R_{b}$, so that $L_{a}R_{b}\psi=a\psi b$, the four generators are
-The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. The set is unitarily equivalent to the Dirac basis used for the non-relativistic limit. It is the generator set of the $\mathbb{M}_-$ frame, and every derivative in a cell display below is with respect to $x_\mu=(t',x,y,z)$. The $\mathbb{B}$-frame set is $iR_{e_x}$, $i\,iL_{e_k}R_{e_y}$ with $Q_t=ict'$; the two are not mixed. the spacetime metric of the $ict'$ gradient is $\eta=-g$. The chirality operator and the volume element are
+The four cells $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the appendix. The set is unitarily equivalent to the Dirac basis used for the non-relativistic limit. It is the generator set of the $\mathbb{M}_-$ frame, and every derivative in a cell display below is with respect to $x_\mu=(t',x,y,z)$. The $\mathbb{B}$-frame set is $iR_{e_x}$, $i\,iL_{e_k}R_{e_y}$ with $Q_t=ict'$; the two are not mixed. The spacetime metric of the $ict'$ gradient is $\eta=-g$. The chirality operator and the volume element are
 $$
 -iR_{e_z}=i\,\omega=-iL_{e_t}R_{e_z},\qquad
-\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_t}R_{e_z}=-i\,-iR_{e_z},
+\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_t}R_{e_z}=-i\,(-iR_{e_z}),
 $$
 and the framework identifies $\omega$ with the image of the scalar imaginary under $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$, so that $-iR_{e_z}=i\omega$. Neither cell is diagonal in the cell frame; in the chiral basis they are $-iR_{e_z}=\mathrm{diag}(-I_2,I_2)$ and $\omega=\mathrm{diag}(iI_2,-iI_2)$, and every diagonal form written below is in that basis. A Dirac spinor is written in chiral blocks as $\psi=(\psi_L,\psi_R)^{T}$ with $\psi_L\in S$ and $\psi_R\in\bar{S}$. We work in natural units $\hbar=c=1$ except in the mass-shell relation, and borrow the plane-wave spinors $w^{(r)}(\vec p),v^{(r)}(\vec p)$ and the spin sums of the solutions article unchanged.
 
@@ -32,11 +32,13 @@ and the framework identifies $\omega$ with the image of the scalar imaginary und
 
 Three different structures are in play, and the article's first task is to keep them apart.
 
-**The Clifford algebra and its even part.** The sixteen products of the four generator cells span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$; the sixteen two-sided cells $L_{a}R_{b}$ are a different set of operators, spanning the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ of the same real dimension, and the two are not isomorphic. The **even subalgebra of $\mathrm{Cl}_{1,3}$** is spanned by the identity, the six bivectors $iL_{e_\mu}R_{e_{\nu(\mu)}}iL_{e_\nu}R_{e_{\nu(\nu)}}$, and the volume element $\omega$, and is isomorphic to $\mathbb{B}$; the biquaternion units correspond to spatial bivectors by
+**The Clifford algebra and its even part.** The sixteen products of the four generator cells span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$; the sixteen two-sided cells $L_{a}R_{b}$ are a different set of operators, spanning the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ of the same real dimension, and the two are not isomorphic. The **even subalgebra of $\mathrm{Cl}_{1,3}$** is spanned by the identity, the six bivectors $iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}$, and the volume element $\omega$, and is isomorphic to $\mathbb{B}$; the biquaternion units correspond to spatial bivectors by
 $$
 \vec e_x\mapsto\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y},\qquad \vec e_y\mapsto\,iL_{e_z}R_{e_y}\,iL_{e_x}R_{e_y},\qquad \vec e_z\mapsto\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y},
 $$
 and the scalar imaginary to the volume element $\omega$ — the corpus's identification, which belongs to this isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ and is not a statement about the matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ used elsewhere in this article. (The ordering in the last entry is fixed by the metric $g=\mathrm{diag}(+1,-1,-1,-1)$ used here, under which $(iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y})(iL_{e_z}R_{e_y}\,iL_{e_x}R_{e_y})=iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}$; the parent Dirac article's opposite metric reverses the sign of the third bivector. What matters below is only that the map is a homomorphism, and with this ordering it is one, with each image squaring to $-e_t$.) The **odd part** — the span of the individual generators $iL_{e_\mu}R_{e_{\nu(\mu)}}$ — is *not* contained in $\mathbb{B}$. This matters below: an even element acts on the Dirac module block-diagonally, preserving each chiral half, while an odd element acts off-diagonally and **exchanges the two chiral halves**. The chirality operator $-iR_{e_z}$ anticommutes with every generator and hence commutes with every even element; it is a Lorentz-invariant label.
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
 
 **The three conjugations of the algebra.** They are distinct maps, and they behave differently on the sectors and on the scalar imaginary:
 
@@ -72,11 +74,11 @@ $$
 Then
 $$
 (\mathbb{D}-m)\,C[\psi]
-=\eta_C\Big(i\,\eta_C^{-1}iL_{e_\mu}R_{e_{\nu(\mu)}}\eta_C\,\partial/\partial x_\mu-m\Big)\psi^{*},
+=\eta_C\Big(i\,\eta_C^{-1}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\eta_C\,\partial/\partial x_\mu-m\Big)\psi^{*},
 $$
-while the complex conjugate of the Dirac equation is $(-iiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\partial/\partial x_\mu-m)\psi^{*}=0$. The two agree, so that $C[\psi]$ solves the equation, precisely when
+while the complex conjugate of the Dirac equation is $(-i\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\partial/\partial x_\mu-m)\psi^{*}=0$. The two agree, so that $C[\psi]$ solves the equation, precisely when
 $$
-\eta_C^{-1}iL_{e_\mu}R_{e_{\nu(\mu)}}\eta_C=-iL_{e_\mu}R_{e_{\nu(\mu)}}^{*},\qquad\text{equivalently}\qquad \eta_CiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}} .
+\eta_C^{-1}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\eta_C=-iL_{e_\mu}R_{e_{\nu(\mu)}}^{*},\qquad\text{equivalently}\qquad \eta_C\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}} .
 $$
 The internal matrix $\eta_C=i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ satisfies the identity (the central $i$ is inert in it). Since $\eta_C$ is odd, $C$ anticommutes with $-iR_{e_z}$: charge conjugation flips chirality. And since $\psi^{*}$ enters, $C$ is anti-linear.
 
@@ -152,7 +154,7 @@ each with the corresponding $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with both fre
 
 The individual checks are worth a word each, because they test different parts of the structure.
 
-- **$C$.** The identity $\eta_CiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)\chi$,
+- **$C$.** The identity $\eta_C\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)\chi$,
   $$
   \eta_C\,w^{*}=i\,iL_{e_y}R_{e_y}(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k})^{\ast}+m)\chi^{*}=i(-\bigl(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\bigr)+m)iL_{e_y}R_{e_y}\chi^{*}
   =-i\,(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m)\,iL_{e_y}R_{e_y}\chi^{*},
@@ -267,7 +269,7 @@ the **complex conjugation** of the algebra element followed by the inner automor
 
 - The CPT theorem itself, and the hypotheses (locality, Hermiticity, Lorentz invariance, positivity, spin–statistics) that prove it.
 - The internal factors and phases of $C$ and $T$, which are the standard Clifford-algebra objects; the free-field computation is the standard one expressed in the framework's module and notation.
-- The intertwiners, which are the standard relations $\eta_CiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ and their analogues.
+- The intertwiners, which are the standard relations $\eta_C\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ and their analogues.
 - The **Clifford classification** of the operations: $P$ as the grade involution, $T$ as the reversion, $PT$ as the Clifford conjugation, $C$ as the charge-conjugation pseudoautomorphism, and the group $\{1,P,T,PT,C,CP,CT,CPT\}\cong\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ that they generate. The classification is a statement about the intrinsic maps of $\mathrm{Cl}_{n,m}$; the passage from those maps to the module intertwiners $\eta_P,\eta_T$ is representation theory that this article does not carry out.
 
 **Gap, left visible.**
@@ -325,7 +327,7 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | $-iR_{e_z}=i\omega=-iL_{e_t}R_{e_z}$, $\omega=iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_t}R_{e_z}$ | Chirality operator and volume element; $\eta_{CPT}=i\omega=-iR_{e_z}$ |
 | $P_{L,R}=\tfrac12(L_{e_t}R_{e_t}\mp\,-iR_{e_z})$ | Chiral projectors |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (solutions article) |
-| $C[\psi]=\eta_C\psi^{*}$, $\eta_C=i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ | Charge conjugation (anti-linear, odd); $\eta_CiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ |
+| $C[\psi]=\eta_C\psi^{*}$, $\eta_C=i\,iL_{e_y}R_{e_y}=-L_{e_y}R_{e_y}$ | Charge conjugation (anti-linear, odd); $\eta_C\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\eta_C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ |
 | $P[\psi]=\eta_P\psi(t',-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, $\eta_P=iL_{e_t}R_{e_x}$ | Parity (linear, odd); $\eta_P^{-1}\,iR_{e_x}\eta_P=iR_{e_x}$, $\eta_P^{-1}\,iL_{e_k}R_{e_y}\eta_P=-iL_{e_k}R_{e_y}$ |
 | $T[\psi]=\eta_T\psi^{*}(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, $\eta_T=iL_{e_x}R_{e_y}\,iL_{e_z}R_{e_y}=-L_{e_y}R_{e_t}=-\vec e_y$ | Time reversal (anti-unitary, even); $\eta_T$ is a left multiplication |
 | $\Theta=C\circ P\circ T$ | CPT composition; $\Theta[\psi](x)=\eta_{CPT}\psi(-x)$ |
@@ -363,3 +365,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

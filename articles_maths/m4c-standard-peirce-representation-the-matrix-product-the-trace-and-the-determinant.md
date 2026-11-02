@@ -25,7 +25,7 @@ The root chooses the direction $z$. This is the price of the construction, and i
 
 The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.
 
-**The one idea that is not in the two lists above.** The sixteen products $T_{\mu\nu}=L_\mu R_\nu$ are a basis of the whole algebra $M_4(\mathbb{C})$, not only of the two copies, so every endomorphism has a coordinate matrix $c(M)$ in that basis. The product set is cut out by the rank of $c$, the least number of products summing to a matrix is $\operatorname{rank}c(M)$, and the rank survives a change of the algebra basis because $c$ transforms by a congruence. The content of §*The Coefficient Matrix and the Length* is that chain, and its punchline is negative: the same array can display two operators of different length, so the length belongs to the operator and not to the display.
+**The one idea that is not in the two lists above.** The sixteen products $L_{\mu}R_{\nu}$ are a basis of the whole algebra $M_4(\mathbb{C})$, not only of the two copies, so every endomorphism has a coordinate matrix $c(M)$ in that basis. The product set is cut out by the rank of $c$, the least number of products summing to a matrix is $\operatorname{rank}c(M)$, and the rank survives a change of the algebra basis because $c$ transforms by a congruence. The content of §*The Coefficient Matrix and the Length* is that chain, and its punchline is negative: the same array can display two operators of different length, so the length belongs to the operator and not to the display.
 
 **Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the standard Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ e-basis Representation*; the frame is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, and the six subspaces as matrix conditions are *$M_4(\mathbb{C})_{\mathbb{B}_L}$ Representation : The Six Subspaces as Matrix Conditions*.
 
@@ -368,15 +368,15 @@ where $q_e=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ and $p=(P_+,X_+,X_-,P_-)^{\mathsf T}$ 
 
 ## The Coefficient Matrix and the Length
 
-**The sixteen products.** Write $T_{\mu\nu}=L_\mu R_\nu$. The sixteen are the monomial matrices of §*The Product*, and they are an orthogonal basis of $M_4(\mathbb{C})$:
+**The sixteen products.** Write $L_{\mu}R_{\nu}$. The sixteen are the monomial matrices of §*The Product*, and they are an orthogonal basis of $M_4(\mathbb{C})$:
 $$
-\operatorname{Tr}\bigl((T_{\mu\nu})^{\dagger}T_{\rho\sigma}\bigr)
+\operatorname{Tr}\bigl((L_{\mu}R_{\nu})^{\dagger}L_{\rho}R_{\sigma}\bigr)
 =4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 Hence every matrix has a unique expansion
 $$
-M=\sum_{\mu,\nu}c_{\mu\nu}T_{\mu\nu},\qquad
-c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((T_{\mu\nu})^{\dagger}M\bigr).
+M=\sum_{\mu,\nu}c_{\mu\nu}L_{\mu}R_{\nu},\qquad
+c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((L_{\mu}R_{\nu})^{\dagger}M\bigr).
 $$
 The array $c(M)=(c_{\mu\nu})$ is the **coefficient matrix** of $M$. It is not the matrix: $M$ is the display of an endomorphism in the frame, $c(M)$ is the array of that endomorphism's coordinates in the sixteen-dimensional basis. The map $c$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not an algebra map.
 
@@ -386,13 +386,13 @@ $$
 $$
 the values are $0,1,2,3,4$, and $\ell(M)=4$ exactly when $\det c(M)\neq0$.
 
-**Why the question arises.** The left side of that identity never mentions a basis: a product is $\tilde Q X\tilde P$ on the algebra, and a sum of products is a sum of operators. The right side does. The coefficient matrix is computed from the sixteen $T_{\mu\nu}$, which are built from the four *basis elements* $e_\mu$, so a different basis of $\mathbb{B}$ produces a different array for the same $M$. Two bases must return the same rank, or the length would be a property of the frame and not of the operator. The reason they do is a congruence.
+**Why the question arises.** The left side of that identity never mentions a basis: a product is $\tilde Q X\tilde P$ on the algebra, and a sum of products is a sum of operators. The right side does. The coefficient matrix is computed from the sixteen $L_{\mu}R_{\nu}$, which are built from the four *basis elements* $e_\mu$, so a different basis of $\mathbb{B}$ produces a different array for the same $M$. Two bases must return the same rank, or the length would be a property of the frame and not of the operator. The reason they do is a congruence.
 
 ### The Change of Frame Is a Congruence
 
 **The change.** Let $f_\alpha=\sum_\mu C_{\mu\alpha}e_\mu$ be another basis of $\mathbb{B}$, with $C$ invertible, and put $B_{\alpha\beta}=L(f_\alpha)R(f_\beta)$.
 
-**Proposition.** (i) $B_{\alpha\beta}=\sum_{\mu\nu}C_{\mu\alpha}C_{\nu\beta}T_{\mu\nu}$. (ii) If $c'$ is the coefficient matrix of $M$ in the basis $B$, then
+**Proposition.** (i) $B_{\alpha\beta}=\sum_{\mu\nu}C_{\mu\alpha}C_{\nu\beta}L_{\mu}R_{\nu}$. (ii) If $c'$ is the coefficient matrix of $M$ in the basis $B$, then
 $$
 c'(M)=C^{-1}c(M)\,C^{-\mathsf T}.
 $$
@@ -400,9 +400,9 @@ $$
 
 *Proof.* (i) $L$ and $R$ are linear in the element, so $L(f_\alpha)=\sum_\mu C_{\mu\alpha}L(e_\mu)$ and $R(f_\beta)=\sum_\nu C_{\nu\beta}R(e_\nu)$. (ii) Expand the same $M$ in the two bases and substitute (i):
 $$
-\sum_{\mu\nu}c_{\mu\nu}T_{\mu\nu}
+\sum_{\mu\nu}c_{\mu\nu}L_{\mu}R_{\nu}
 =\sum_{\alpha\beta}c'_{\alpha\beta}B_{\alpha\beta}
-=\sum_{\mu\nu}\Bigl(\sum_{\alpha\beta}C_{\mu\alpha}c'_{\alpha\beta}C_{\nu\beta}\Bigr)T_{\mu\nu},
+=\sum_{\mu\nu}\Bigl(\sum_{\alpha\beta}C_{\mu\alpha}c'_{\alpha\beta}C_{\nu\beta}\Bigr)L_{\mu}R_{\nu},
 $$
 so $c=Cc'C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det C\neq0$, and multiplication on the left and on the right by invertible matrices preserves the rank.
 
@@ -410,7 +410,7 @@ so $c=Cc'C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det C\neq
 
 **The two displays of the corpus.** The operators of the corpus in the e-basis are built from the same four units $e_\mu$, in the same order, so the abstract basis is common and only the display moves:
 $$
-T^{e}_{\mu\nu}=S\,T_{\mu\nu}S^{-1},\qquad
+T^{e}_{\mu\nu}=S\,L_{\mu}R_{\nu}S^{-1},\qquad
 M^{e}=S\,MS^{-1}.
 $$
 The coefficient matrix is therefore literally unchanged, and the two operator articles compute one number. The congruence answers a different question: what happens when the sixteen are built from another basis of *elements*, for instance from the four Peirce elements themselves. That basis is not orthogonal, so the extraction $\tfrac14\operatorname{Tr}(T^{\dagger}M)$ no longer applies to it and the dual basis must be used; the rank, and with it the length, is unchanged by (iii).
@@ -427,7 +427,7 @@ $$
 $$
 The worked case $E_{11}$ of the operators article is therefore typical, and the sixteen units are the shortest matrices of their size class rather than the longest.
 
-**The table.** Each row gives $\tilde Q$ and $\tilde P$ by their coefficient columns $[Q]$ and $[P]$ in $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and reads $E_{ij}=T_{\tilde Q,\tilde P}$.
+**The table.** Each row gives $\tilde Q$ and $\tilde P$ by their coefficient columns $[Q]$ and $[P]$ in $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and reads $E_{ij}=L_{\tilde Q}R_{\tilde P}$.
 
 | $ij$ | $[Q]$ | $[P]$ |
 |---|---|---|
@@ -450,7 +450,7 @@ The worked case $E_{11}$ of the operators article is therefore typical, and the 
 
 **The check.** The coefficient matrix of the right side is $[Q][P]^{\mathsf T}$, of rank one, and the expansion in the sixteen is unique, so each row is proved by the product it displays. The names are also visible in the compression: every factor above has $\mathsf M_2$ a scalar multiple of a matrix unit, so each product has one nonzero entry, and the entry sits where the row says.
 
-**Two controls.** The identity has length one, because $\mathrm I_4=L(e_t)=T_{e_t,e_t}$ is a single product; and $\ell(E_{11})=1$, which matches the worked case. The value one is the minimum, so the sixteen units lie on the cone of products, and in this frame the coordinate axes are as close to that cone as four independent directions can be.
+**Two controls.** The identity has length one, because $\mathrm I_4=L(e_t)=L_{e_t}R_{e_t}$ is a single product; and $\ell(E_{11})=1$, which matches the worked case. The value one is the minimum, so the sixteen units lie on the cone of products, and in this frame the coordinate axes are as close to that cone as four independent directions can be.
 
 **The other frame.** In the e-basis the same sixteen arrays have length four, not one. The arrays name different operators, and §*The Change of Frame Is a Congruence* is the reason both counts are right. There the products are signed permutations and the units are maximally long; here the products are monomial too, and every unit is a product. A monomial display therefore decides nothing about the length: only the position of the coordinate axes relative to the cone does.
 
@@ -664,7 +664,7 @@ The left matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and the right matri
 
 The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $Q_t\pm iB$, each twice. The six subspaces are the scalar, traceless, quaternion-shaped, anti-quaternion-shaped, Hermitian and anti-Hermitian matrices of the image, of real dimensions $2,6,4,4,4,4$, with the traces and determinants of the table.
 
-The sixteen products $T_{\mu\nu}=L_\mu R_\nu$ are an orthogonal basis of $M_4(\mathbb{C})$, and the coefficient matrix $c(M)$ collects the coordinates of a matrix in that basis. The length is the least number of products summing to a matrix, and it equals $\operatorname{rank}c(M)$. The coefficient matrix depends on the frame and its rank does not: a change of the algebra basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, a congruence. So the length belongs to the operator and not to the array that displays it, and the sixteen matrix units all have length one here while the same sixteen arrays have length four in the e-basis.
+The sixteen products $L_{\mu}R_{\nu}$ are an orthogonal basis of $M_4(\mathbb{C})$, and the coefficient matrix $c(M)$ collects the coordinates of a matrix in that basis. The length is the least number of products summing to a matrix, and it equals $\operatorname{rank}c(M)$. The coefficient matrix depends on the frame and its rank does not: a change of the algebra basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, a congruence. So the length belongs to the operator and not to the array that displays it, and the sixteen matrix units all have length one here while the same sixteen arrays have length four in the e-basis.
 
 ## Summary of Notation
 
@@ -684,8 +684,8 @@ The sixteen products $T_{\mu\nu}=L_\mu R_\nu$ are an orthogonal basis of $M_4(\m
 | $\langle X,Y\rangle_*=\operatorname{Sc}(XY^{*})$ | the Hermitian form on $\mathbb{B}$ |
 | $B^2$ | $Q_x^2+Q_y^2+Q_z^2$ |
 | $q_\mu$, $q'_\mu$ | the real and imaginary parts of $Q_\mu$ |
-| $T_{\mu\nu}=L_\mu R_\nu$ | the sixteen products, an orthogonal basis of $M_4(\mathbb{C})$ of norm two |
-| $c(M)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{Tr}((T_{\mu\nu})^{\dagger}M)$ |
+| $L_{\mu}R_{\nu}$ | the sixteen products, an orthogonal basis of $M_4(\mathbb{C})$ of norm two |
+| $c(M)$ | the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{Tr}((L_{\mu}R_{\nu})^{\dagger}M)$ |
 | $\ell(M)$ | the length, the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $C$, $B_{\alpha\beta}$ | a change of algebra basis, $f_\alpha=\sum_\mu C_{\mu\alpha}e_\mu$, and the products $L(f_\alpha)R(f_\beta)$ |
 

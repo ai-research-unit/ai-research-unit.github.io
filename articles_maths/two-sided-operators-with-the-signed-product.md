@@ -35,7 +35,7 @@ It is the sandwich by the pair $(a,b)$ composed with the grade involution on the
 **Proposition (the composition laws).** For all $a,b,c,d$
 
 $$
-\boxed{\;T^{\alpha}_{a,b}\circ T^{\alpha}_{c,d} = L_{a\}R_{\alpha(c),\ \alpha(d)\,b},
+\boxed{\;T^{\alpha}_{a,b}\circ T^{\alpha}_{c,d} = L_{a}R_{\alpha(c),\ \alpha(d)\,b},
 \qquad
 T^{\alpha}_{a,b}\circ L_{c}R_{d} = T^{\alpha}_{a\,\alpha(c),\ \alpha(d)\,b},
 \qquad

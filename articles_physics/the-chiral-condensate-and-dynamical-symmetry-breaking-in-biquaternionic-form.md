@@ -55,6 +55,8 @@ $$
 
 and with $N_f$ massless flavours it enlarges to $SU(N_f)_L\times SU(N_f)_R\times \mathrm{U}(1)_V$.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 **The mass term and which phase it breaks.** The massive linear chiral pair is
 
 $$
@@ -74,7 +76,7 @@ This is the framework form of the standard fact that a Dirac mass breaks the axi
 **The axial current.** For the module representative the axial current is
 
 $$
-j_{5\mu} = \bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi ,
+j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi ,
 $$
 
 and its divergence is the textbook anomaly-free identity for a massive free field,
@@ -88,7 +90,7 @@ which vanishes exactly when $m=0$. The mass is the sole explicit breaking, and t
 **Two symmetries, two currents.** For later use we record the vector and axial bilinears:
 
 $$
-j_\mu = \bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\psi , \qquad j_{5\mu} = \bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi ,
+j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi , \qquad j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi ,
 \qquad
 \langle\tilde\nabla,\tilde J\rangle_{\natural} = 0 , \qquad \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2im\,\bar{\psi}\,-iR_{e_z}\psi .
 $$
@@ -292,7 +294,7 @@ The framework supplies the carrier of the condensate, the broken-symmetry patter
 | $P_L=\tfrac12(I_4iR_{e_z})$, $P_R=\tfrac12(I_4-iR_{e_z})$ | Chiral projectors |
 | $\bar{\Psi}\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ | Chirality-odd scalar bilinear; the condensate's carrier |
 | $i\bar{\Psi}\,-iR_{e_z}\Psi$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
-| $j_\mu=\bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, $j_{5\mu}=\bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi$ | Vector and axial currents |
+| $j_\mu=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, $j_{5\mu}=\bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\psi$ | Vector and axial currents |
 | $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=2im\bar{\psi}\,-iR_{e_z}\psi$ | Axial divergence (explicit breaking by $m$) |
 | $\langle\bar{\Psi}\Psi\rangle=-v^3$ | Chiral condensate, the order parameter |
 | $m=-2G\langle\bar{\psi}\psi\rangle$ | Mean-field relation between mass and condensate |
@@ -332,3 +334,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

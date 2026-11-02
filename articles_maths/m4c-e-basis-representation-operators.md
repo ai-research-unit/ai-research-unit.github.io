@@ -313,7 +313,7 @@ The first column is the coordinate column of $\vec e_x\vec e_y=\vec e_z$, and th
 
 **Composition.** The product of two basis matrices is a signed basis matrix:
 $$
-L_\mu^{e}R_\nu^{e}L_{\mu^{-1}\rho}R_{
+L_\mu^{e}R_\nu^{e}L_{\mu^{-1}\rho}R_{\sigma\nu^{-1}}^{e}
 =L_{e_\mu e_\rho}R_{\ e_\sigma e_\nu}^{e}
 =\varepsilon\varepsilon'\,T_{\mu'\nu'}^{e},
 $$
@@ -347,7 +347,7 @@ has rank two. A basis of invertible matrices does not make the algebra a divisio
 
 **Theorem (orthogonality).** For the Hilbert–Schmidt inner product $\langle A,B\rangle_{\mathrm{HS}}=\operatorname{Tr}(A^{\dagger}B)$,
 $$
-\operatorname{Tr}\bigl((L_\mu^{e}R_\nu^{e})^{\dagger}L_{\mu^{-1}\rho}R_{\bigr)
+\operatorname{Tr}\bigl((L_\mu^{e}R_\nu^{e})^{\dagger}L_{\mu^{-1}\rho}R_{\sigma\nu^{-1}}^{e}\bigr)
 =4\,\delta_{\mu\rho}\,\delta_{\nu\sigma}.
 $$
 The sixteen basis matrices are orthogonal, each of Hilbert–Schmidt norm $2$. Because the matrices are real, the dagger is the transpose.

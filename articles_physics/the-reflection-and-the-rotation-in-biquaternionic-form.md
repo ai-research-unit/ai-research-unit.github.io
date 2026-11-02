@@ -6,6 +6,8 @@ The companion articles of the relativistic quantum series build the biquaternion
 
 The subject is the following observation, made precise. The biquaternion algebra $\mathbb{B}$ is isomorphic to the **even** part of the Clifford algebra $\mathrm{Cl}_{1,3}$. Its elements include the Lorentz rotors, which act on four-vectors by conjugation; and its elements are at the same time the points of the rotation group. The generators $iL_{e_\mu}R_{e_{\nu(\mu)}}$, by contrast, are **odd**: not one of them is a left multiplication of $\mathbb{B}$, they lie outside the even part, and they are not rotors. They act on spinors and they **exchange the two chiralities**. The odd/even split of the Clifford algebra is therefore not a bookkeeping device. It is the split between the transformations that *turn* and the transformations that *reflect*, and chirality — the property that separates the two Weyl spinors — is precisely what the odd part changes and the even part preserves.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 The article is organized as follows. The first section reconciles the two ways a single element of the algebra is used — as an object and as an operator. The second establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. The third introduces the frame cell $iR_{e_x}$ and shows that the Clifford metric is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. The fourth shows that conjugation by $iR_{e_x}$ is complex conjugation on $\mathbb{B}$, so that the frame, the sector swap, and the reflection are one operator. The fifth and sixth give the spaces of rotations and of reflections, and answer the question of how many reflections a given Lorentz transformation needs. The last two sections draw the consequence for chirality and explain why the Pauli algebra cannot carry it.
 
 The conventions are those of the series: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$; the scalar imaginary $i$; the sectors $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$; the Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ of the generators; and the dictionary of the conventions article, under which each $\vec e_\mu$ reads as a spacelike bivector, the cell $L_{e_\mu}R_{e_t}$, $e_t\mapsto L_{e_t}R_{e_t}$, and $i\mapsto L_{e_t}R_{e_z}$, the cell of $-\omega$ with $\omega = -L_{e_t}R_{e_z}$ the pseudoscalar. No convention is changed here.
@@ -17,7 +19,7 @@ A single element of a matrix algebra is at once a **point** and an **operator**.
 The biquaternion algebra inherits this doubling, and the series uses it constantly:
 
 - A **Lorentz rotor** $\tilde U_{\mathrm L}$ with $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ is a point of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. It is also an operator: it acts on four-vectors by the rotor conjugation, and on spinors by left multiplication.
-- A **generator** $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is a point of the odd part — a four-vector, one of the four legs of spacetime — and it is also an operator on the spinor module. The four are the cells $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}=iL_{e_x}R_{e_y}$, $iL_{e_y}R_{e_y}=iL_{e_y}R_{e_y}$, $iL_{e_z}R_{e_y}=iL_{e_z}R_{e_y}$.
+- A **generator** $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is a point of the odd part — a four-vector, one of the four legs of spacetime — and it is also an operator on the spinor module. The four are the cells $iL_{e_t}R_{e_x}$, $iL_{e_x}R_{e_y}$, $iL_{e_y}R_{e_y}$, $iL_{e_z}R_{e_y}$.
 
 For the rotors the doubling is familiar and the two interpretations are both two-sided or both one-sided. For the generators it is not, and the reason is the grading. The even elements act on the spinor module *preserving* its two chiral halves, because they commute with the chirality operator; the odd elements act *exchanging* them, because they anticommute with it. So an even element and an odd element, both points of the same algebra and both operators on the same module, do qualitatively different things. The remainder of this article is the elaboration of that sentence.
 
@@ -172,7 +174,7 @@ $$
 u = iR_{e_x}\,(\text{image of }w), \qquad w\in\mathbb{M}_+, \quad \langle w\rangle_{\natural} = \pm 1 ,
 $$
 
-the timelike normals for $\langle w\rangle_{\natural} = +1$ and the spacelike ones for $\langle w\rangle_{\natural} = -1$. The canonical reflection is the frame itself, $iR_{e_x} = iR_{e_x}$ times the image of $e_t$: its normal is the identity $e_t$ of $\mathbb{B}$.
+the timelike normals for $\langle w\rangle_{\natural} = +1$ and the spacelike ones for $\langle w\rangle_{\natural} = -1$. The canonical reflection is the time generator itself, $iR_{e_x}=iL_{e_t}R_{e_x}$, times the image of $e_t$: its normal is the identity $e_t$ of $\mathbb{B}$.
 
 The reflections do **not** form a group, and this is the sharp difference from the rotations. Multiplying two reflections gives an even element — a rotation — so the set of reflections is a single coset of the rotation group, not closed under multiplication. Its dimension is $3$, the dimension of the unit quadric, against the $6$ of the rotations. The two together form the Pin group,
 
@@ -207,7 +209,7 @@ so the two columns are exchanged: an **even** internal matrix gives a reflection
 | $T$ | $-L_{e_y}R_{e_t}$ | even | anti-linear | $-1$ | reflection |
 | $C$ | not a cell of this frame | odd | anti-linear | $+1$ | proper |
 
-The third row's matrix is not a cell, and the notation must not be read as one. The charge-conjugation intertwiner of this frame is the cell $L_{e_t}R_{e_x}$, which satisfies $L_{e_t}R_{e_x}iL_{e_\mu}R_{e_{\nu(\mu)}}^{T}L_{e_t}R_{e_x}^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ and has the same odd grade; the representative whose determinant the table records is the companion's, taken in its block realization of the generators, and the two are related by the change of realization rather than by an equality of cells.
+The third row's matrix is not a cell, and the notation must not be read as one. The charge-conjugation intertwiner of this frame is the cell $L_{e_t}R_{e_x}$, which satisfies $L_{e_t}R_{e_x}\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{T}L_{e_t}R_{e_x}^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ and has the same odd grade; the representative whose determinant the table records is the companion's, taken in its block realization of the generators, and the two are related by the change of realization rather than by an equality of cells.
 
 This is why $T$ is a reflection whose internal matrix is an **even** element — the real quaternion $-\vec e_y$ of that article, the cell $-L_{e_y}R_{e_t}$ — while $C$ is a proper transformation carried by an **odd** one. Neither fact is visible from the grade alone, and both are recorded here so that the grade assignments of the CPT article are not read against the rule of this one.
 
@@ -345,7 +347,7 @@ The claims of this article, in order.
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict'$ metric of the material coordinates |
 | $L_{a}R_{b}$ | Left multiplication $L_a$ and right multiplication $R_b$: $L_{a}R_{b}\psi = a\psi b$, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | The canonical frame cells: $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y} = iL_{e_k}R_{e_y}$ for $k=1,2,3$ |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | The canonical frame cells: $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ for $k=1,2,3$ |
 | $\omega = iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y} = -L_{e_t}R_{e_z}$ | Pseudoscalar, $\omega^2 = -I_4$ |
 | $-iR_{e_z} = i_{\mathrm{Cl}}\omega = -iL_{e_t}R_{e_z}$ | Chirality cell, $(-iR_{e_z})^{2} = I_4$ |
 | $\tilde\Pi_{L,R} = \tfrac12(1\pm -iR_{e_z})$ | Chirality projectors, rank $2$ |
@@ -384,3 +386,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

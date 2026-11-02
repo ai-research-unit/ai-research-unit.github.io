@@ -97,7 +97,9 @@ A qualification recorded in that article is carried here because it bears on hyp
 
 ### The mass term and the real structure
 
-The framework's Dirac equation carries the **linear chiral mass pair** $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field; what the mass breaks is the axial symmetry, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\bar\psi\,-iR_{e_z}\,\psi$, with $j_{5\mu}=\bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\,\psi$ ($iL_{e_\mu}R_{e_{\nu(\mu)}}$ the generator cell, $iR_{e_x}=iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}=iL_{e_k}R_{e_y}$), which vanishes only at $m=0$. The algebra's anti-linear object is the **real structure** $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$, order-reversing with a sign and swapping the two chiral ideals; a coupling built on it pairs the field with its conjugate. Whether the framework intends such a **Majorana-type** conjugate pairing, or whether its real structure only supplies the real-form expression of an ordinary **Dirac** mass, is not settled in the read list, and for that separate coupling the two readings differ on whether a conserved fermion number exists at all. This is inherited as an open item, and it is the pivot on which the scalar-sector question turns: a Majorana-type coupling needs no scalar doublet, whereas the linear Dirac mass for a chiral fermion needs a compensating field carrying the charge difference $ϙ_L-ϙ_R$ (the negative of the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$ the mass bilinear acquires).
+The framework's Dirac equation carries the **linear chiral mass pair** $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field; what the mass breaks is the axial symmetry, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\bar\psi\,-iR_{e_z}\,\psi$, with $j_{5\mu}=\bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,-iR_{e_z}\,\psi$ ($iL_{e_\mu}R_{e_{\nu(\mu)}}$ the generator cell, $iR_{e_x}=iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$), which vanishes only at $m=0$. The algebra's anti-linear object is the **real structure** $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$, order-reversing with a sign and swapping the two chiral ideals; a coupling built on it pairs the field with its conjugate. Whether the framework intends such a **Majorana-type** conjugate pairing, or whether its real structure only supplies the real-form expression of an ordinary **Dirac** mass, is not settled in the read list, and for that separate coupling the two readings differ on whether a conserved fermion number exists at all. This is inherited as an open item, and it is the pivot on which the scalar-sector question turns: a Majorana-type coupling needs no scalar doublet, whereas the linear Dirac mass for a chiral fermion needs a compensating field carrying the charge difference $ϙ_L-ϙ_R$ (the negative of the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$ the mass bilinear acquires).
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
 
 ## The Chiral-Fermion Obstacle: an Algebra Is Not a Chiral Gauge Theory
 
@@ -282,3 +284,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

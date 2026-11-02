@@ -24,6 +24,8 @@ $$
 
 Minimal coupling replaces $\vec p$ by $\vec p - ϙ\vec A$; the added term is a vector potential and enters the Hamiltonian through $\boldsymbol\alpha\cdot\vec A$. The oscillator substitution is different in three ways, and each matters.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 **It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with $\boldsymbol\alpha$, the product $\boldsymbol\alpha\cdot(\beta\vec r) = (\boldsymbol\alpha\beta)\cdot\vec r = -(\beta\boldsymbol\alpha)\cdot\vec r$ is frame-**odd**: it is a spacelike Clifford vector contracted with the position, in the same grading class as the kinetic term $\boldsymbol\alpha\cdot\vec p$ and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the resulting square is again central.
 
 **It is imaginary, and it is Hermitian.** The coefficient is $i$, not a real coupling: a gauge interaction adds the real, Hermitian $ϙ\vec A$ to $\vec p$, whereas the substitution multiplies the position by $im\omega$, so that the imaginary coefficient comes paired with the cell operator $\boldsymbol\alpha\beta$, which is itself anti-Hermitian. The product is Hermitian all the same. Writing $\beta = iL_{e_t}R_{\vec e_x}$ and $\alpha_k = L_{\vec e_k}R_{\vec e_z}$ gives $\alpha_k\beta = -iL_{\vec e_k}R_{\vec e_y}$, and that cell is anti-Hermitian, $(iL_{\vec e_k}R_{\vec e_y})^\dagger = -iL_{\vec e_k}R_{\vec e_y}$, since $(L_{a}R_{b})^\dagger = L_{a^*}R_{b^*}$ and the units satisfy $e_k^* = -e_k$, $e_y^* = -e_y$; the added operator is therefore $-icm\omega(\boldsymbol\alpha\beta)\cdot\vec r = +icm\omega\sum_k(iL_{\vec e_k}R_{\vec e_y})x_k$, and $i$ times an anti-Hermitian operator is Hermitian. What the imaginary coefficient signals is not a complex deformation — the oscillator Hamiltonian is Hermitian and its spectrum real — but a term that is frame-odd, linear in the position and matrix-valued, which a gauge potential cannot produce.
@@ -315,3 +317,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

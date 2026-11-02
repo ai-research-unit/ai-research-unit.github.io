@@ -72,7 +72,7 @@ Thus $T_a$ is a homomorphism **twisted by $\alpha$** on the right.
 **Proposition.** For all $a, b \in A$,
 
 $$
-\boxed{\;T_a \circ T_b = L_{a\,\alpha(b)}, \qquad T_a \circ L_b = L_{a\}R_{\alpha(b)}, \qquad L_b \circ T_a = T_{ba}\;} .
+\boxed{\;T_a \circ T_b = L_{a\,\alpha(b)}, \qquad T_a \circ L_b = L_{a}R_{\alpha(b)}, \qquad L_b \circ T_a = T_{ba}\;} .
 $$
 
 **Proof.** $T_a(T_b(x)) = a\alpha(b\alpha(x)) = a\alpha(b)\alpha^2(x) = a\alpha(b)\,x = L_{a\alpha(b)}(x)$. Next, $T_a(L_b(x)) = a\alpha(bx) = a\alpha(b)\alpha(x) = T_{a\alpha(b)}(x)$. Finally, $L_b(T_a(x)) = b\,a\,\alpha(x) = T_{ba}(x)$.

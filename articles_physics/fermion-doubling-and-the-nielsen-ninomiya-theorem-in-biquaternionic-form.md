@@ -28,6 +28,8 @@ $$
 
 and the lattice below discretizes $S^E_F$. In the lattice sections the index $\mu=1,\dots,4$ labels the four Euclidean directions, the fourth temporal, so that $iR_{e_x}$ and $-L_{e_k}R_{e_y}$ for $k=1,2,3$; the Euclidean chirality is $iR_{e_z}$. The doubling theorem is a statement about the symbol and does not depend on the signature.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 
 $$
@@ -37,7 +39,7 @@ $$
 The naive action is then
 
 $$
-S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)\frac{\psi_{n+\vec u_\mu}-\psi_{n-\vec u_\mu}}{2a} + m\psi_n\right),
+S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\,iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)\frac{\psi_{n+\vec u_\mu}-\psi_{n-\vec u_\mu}}{2a} + m\psi_n\right),
 $$
 
 which reduces to $S^E_F$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
@@ -47,7 +49,7 @@ which reduces to $S^E_F$ as $a\to0$. It therefore looks like a theory of a singl
 The lattice propagator following from this action is
 
 $$
-\boxed{\;S(p) = \frac{m - i\,a^{-1}\sum_\muiL_{e_\mu}R_{e_{\nu(\mu)}}(Q)\sin(p_\mu a)}{m^2 + a^{-2}\sum_\mu\sin^2(p_\mu a)}\;}.
+\boxed{\;S(p) = \frac{m - i\,a^{-1}\sum_\mu\,iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)\sin(p_\mu a)}{m^2 + a^{-2}\sum_\mu\sin^2(p_\mu a)}\;}.
 $$
 
 The kinetic denominator vanishes at $m=0$ when $\sin(p_\mu a) = 0$ for every $\mu$, that is, at the points
@@ -75,7 +77,7 @@ $$
 \qquad
 \bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,\exp(in\cdot\pi_A),
 \qquad
-S_0 = L_{e_t}R_{e_t},\quad S_\nu = iR_{e_z}iL_{e_\nu}R_{e_{\nu(\nu)}}(Q)\;},
+S_0 = L_{e_t}R_{e_t},\quad S_\nu = iR_{e_z}\,iL_{e_\nu}R_{e_{\nu(\nu)}}(Q)\;},
 $$
 
 with $S_A$ the product of the $S_\nu$ over the indices in $A$. Fourier transforming shows that this shifts the momentum by $\pi_A$ and flips the signs of a subset of the four frame generators, $(-L_{e_x}R_{e_y},-L_{e_y}R_{e_y},-L_{e_z}R_{e_y},R_{e_x})\to(\pm(-L_{e_x}R_{e_y}),\pm(-L_{e_y}R_{e_y}),\pm(-L_{e_z}R_{e_y}),\pm R_{e_x})$, which is still a representation of the Dirac algebra. The transformation therefore exchanges the tastes; since it is a symmetry of the action, the tastes are physically indistinguishable. In an interacting theory they cannot even be ignored, because momentum is conserved only modulo $2\pi/a$: two $\pi_t$-taste fermions can scatter through a highly virtual gauge boson into two $\pi_x$-taste fermions.
@@ -91,7 +93,7 @@ The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubli
 - **hermiticity**, $F(x)^\dagger = F(-x)$;
 - a **local, quantized, exactly conserved charge**.
 
-The theorem also has a Euclidean form for an action $S=\sum_{x,y,\mu}\bar\psi(x)iiL_{e_\mu}R_{e_{\nu(\mu)}}(Q)F_\mu(x,y)P_R\psi(y)$ under translation invariance, hermiticity ($F_\mu(-x)=F_\mu(x)^*$) and locality. A general version extends the statement to *all* regularization schemes: no regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of left- and right-handed Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. One consequence is that the Standard Model cannot be put on a lattice without violating one of these conditions; another is that a chirally invariant regularization makes the chiral anomaly vanish, which is wrong. The theorem does not say *how many* doublers appear — only that at least one partner is forced. When chiral fermions do not exist — odd dimensions — the theorem is vacuous, since there is no chirality operator anticommuting with all the frame generators.
+The theorem also has a Euclidean form for an action $S=\sum_{x,y,\mu}\bar\psi(x)i\,iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)F_\mu(x,y)P_R\psi(y)$ under translation invariance, hermiticity ($F_\mu(-x)=F_\mu(x)^*$) and locality. A general version extends the statement to *all* regularization schemes: no regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of left- and right-handed Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. One consequence is that the Standard Model cannot be put on a lattice without violating one of these conditions; another is that a chirally invariant regularization makes the chiral anomaly vanish, which is wrong. The theorem does not say *how many* doublers appear — only that at least one partner is forced. When chiral fermions do not exist — odd dimensions — the theorem is vacuous, since there is no chirality operator anticommuting with all the frame generators.
 
 ### The proof idea
 
@@ -156,7 +158,7 @@ The framework supplies a continuum equation and a multivector structure whose na
 
 ## Summary
 
-Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, are related by the taste-exchange symmetry $S_\nu = iR_{e_z}iL_{e_\nu}R_{e_{\nu(\nu)}}(Q)$, and are physically indistinguishable, so an interacting lattice theory cannot ignore them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of left- and right-handed species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — violates one hypothesis of the theorem.
+Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, are related by the taste-exchange symmetry $S_\nu = iR_{e_z}\,iL_{e_\nu}R_{e_{\nu(\nu)}}(Q)$, and are physically indistinguishable, so an interacting lattice theory cannot ignore them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of left- and right-handed species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — violates one hypothesis of the theorem.
 
 The biquaternion framework does not evade the obstruction. The doubling argument uses only locality, hermiticity, translation invariance and the oddness of the massless symbol, all of which the discretized biquaternion gradient shares; the algebra is not a lattice and supplies no alternative difference operator. The one positive structural point is that the framework's multivector field places its natural discretization with the **Dirac–Kähler** equation, whose simplicial form is the **staggered fermion** formulation — a mitigation, not a solution. Two index-theoretic facts reach the framework as companions: the anomalous half-integer quantum Hall effect of graphene and the harmonic-form zero modes of the Dirac–Kähler operator.
 
@@ -171,7 +173,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 | $iL_{e_\mu}R_{e_{\nu(\mu)}}(Q)$ | $\mathbb{B}$-frame generators, $iR_{e_x}$, $-L_{e_k}R_{e_y}$ |
 | $iR_{e_z}$ | Euclidean chirality, $iR_{e_x}\,(-L_{e_x}R_{e_y})\,(-L_{e_y}R_{e_y})\,(-L_{e_z}R_{e_y})=iR_{e_z}$ |
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |
-| $S_\nu = iR_{e_z}iL_{e_\nu}R_{e_{\nu(\nu)}}(Q)$ | Taste-exchange generators, $S_A$ the corresponding products |
+| $S_\nu = iR_{e_z}\,iL_{e_\nu}R_{e_{\nu(\nu)}}(Q)$ | Taste-exchange generators, $S_A$ the corresponding products |
 | $S(p)$ | Naive lattice propagator |
 | $\omega(\vec p)$ | Lattice dispersion relation |
 | $F(x,y)$, $F_\mu(k)$ | Lattice kernel and its Fourier transform (vector field on the zone) |
@@ -207,3 +209,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

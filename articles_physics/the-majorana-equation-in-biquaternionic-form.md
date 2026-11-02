@@ -10,7 +10,7 @@ What no companion article yet does is treat the **equation itself**: the three s
 
 The presentation is split three ways, as in the companions.
 
-- **Established, and recomputed below.** In the cell frame with $g=\mathrm{diag}(+,-,-,-)$, the charge-conjugation cell $C=L_{e_t}R_{e_x}$ is real, antisymmetric, $C^{T}=-C$ and $C^{2}=-L_{e_t}R_{e_t}$, and $C\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{T}C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ for all four $\mu$. The antilinear map $\mathcal{C}\psi=C\bar\psi^{T}=i\psi^{*}$ is a real structure, $\mathcal{C}^{2}=1$, whose central scalar is $K=i$ with $K K^{*}=L_{e_t}R_{e_t}$, and it anticommutes with each generator, $\mathcal{C}(iL_{e_\mu}R_{e_{\nu(\mu)}}\psi)=-iL_{e_\mu}R_{e_{\nu(\mu)}}\mathcal{C}\psi$, for all four $\mu$. It commutes with the kinetic operator $\mathbb{D}$. Its eigenspaces for the eigenvalues $\pm1$ are each of **real dimension four** and span the module. Both eigenspaces are on the mass shell, $(\Box-m^{2})\psi=0$; on the $+1$ eigenspace the Majorana equation is the Dirac equation, and on the $-1$ eigenspace it is the Dirac equation with the opposite sign of the mass term. The two-component Weyl operators satisfy $W_{R}W_{L}=\Box$, so the left- and right-handed Weyl operators are the two square roots of the d'Alembertian. In the opposite signature the Clifford algebra $\mathrm{Cl}_{3,1}$ is the real matrix algebra $M_4(\mathbb{R})$, and a representation with **all generators real** exists; that is the real form of the equation.
+- **Established, and recomputed below.** In the cell frame with $g=\mathrm{diag}(+,-,-,-)$, the charge-conjugation cell $C=L_{e_t}R_{e_x}$ is real, antisymmetric, $C^{T}=-C$ and $C^{2}=-L_{e_t}R_{e_t}$, and $C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x}$ and $C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y}$ for all four $\mu$. The antilinear map $\mathcal{C}\psi=C\bar\psi^{T}=i\psi^{*}$ is a real structure, $\mathcal{C}^{2}=1$, whose central scalar is $K=i$ with $K K^{*}=L_{e_t}R_{e_t}$, and it anticommutes with each generator, $\mathcal{C}(g\psi)=-g\,\mathcal{C}\psi$ for each of the four generators, for all four $\mu$. It commutes with the kinetic operator $\mathbb{D}$. Its eigenspaces for the eigenvalues $\pm1$ are each of **real dimension four** and span the module. Both eigenspaces are on the mass shell, $(\Box-m^{2})\psi=0$; on the $+1$ eigenspace the Majorana equation is the Dirac equation, and on the $-1$ eigenspace it is the Dirac equation with the opposite sign of the mass term. The two-component Weyl operators satisfy $W_{R}W_{L}=\Box$, so the left- and right-handed Weyl operators are the two square roots of the d'Alembertian. In the opposite signature the Clifford algebra $\mathrm{Cl}_{3,1}$ is the real matrix algebra $M_4(\mathbb{R})$, and a representation with **all generators real** exists; that is the real form of the equation.
 - **Transcribed, and cited.** The module-level construction of $\mathcal{C}$, the exchange of the chiral halves, the identification of $\bar{\cdot}$ as the charge conjugation, the fixed space of real dimension four, and the vanishing of the vector current are the content of the neutrino article and are used here, not rebuilt.
 - **Not supplied.** The functional-analytic content of the two-component square root identity in the continuum, the observability of the neutrino's Majorana nature, the Majorana phases and the lepton-number-violating rates, and any selection principle that would make one fermion Majorana rather than Dirac, are outside the algebra.
 
@@ -23,7 +23,7 @@ iL_{e_t}R_{e_x},\qquad
 iL_{e_k}R_{e_y},\qquad k=1,2,3,
 $$
 
-with $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_{a}R_{b}$; with $g=\mathrm{diag}(+,-,-,-)$ the generators satisfy $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t}$. The chirality operator is $\Gamma=-iL_{e_t}R_{e_z}$, which is $-1$ on the left-handed half $S$ and $+1$ on the right-handed half $\bar S$. The Dirac module is $\Delta=S\oplus\bar S$, a Dirac spinor is $\Psi=(\psi_L,\psi_R)^{T}$, and the charge conjugation is $\psi^{c}=C\bar\psi^{T}=i\psi^{*}$. The d'Alembertian is the series convention
+with $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_{a}R_{b}$; with $g=\mathrm{diag}(+,-,-,-)$ the generators satisfy $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g$. The chirality operator is $\Gamma=-iL_{e_t}R_{e_z}$, which is $-1$ on the left-handed half $S$ and $+1$ on the right-handed half $\bar S$. The Dirac module is $\Delta=S\oplus\bar S$, a Dirac spinor is $\Psi=(\psi_L,\psi_R)^{T}$, and the charge conjugation is $\psi^{c}=C\bar\psi^{T}=i\psi^{*}$. The d'Alembertian is the series convention
 
 $$
 \Box=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2,
@@ -55,7 +55,7 @@ $$
 and it is **real**. The definition is fixed by the requirement that the kinetic term be preserved,
 
 $$
-C\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{T}\,C^{-1}\;=\;-\,iL_{e_\mu}R_{e_{\nu(\mu)}},
+C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x},\qquad C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y},
 $$
 
 and the cell has the properties that make it a charge conjugation: $C^{T}=-C$, $C^{2}=-L_{e_t}R_{e_t}$, $C^{\dagger}=C^{-1}$. All of these were checked in the cell frame, on all four values of $\mu$ where a $\mu$ appears.
@@ -73,19 +73,18 @@ and the central scalar $K$ satisfies
 $$
 K\,K^{*}\;=\;L_{e_t}R_{e_t},
 \qquad
-K\,iL_{e_\mu}R_{e_{\nu(\mu)}}^{*}\,K^{-1}\;=\;-\,iL_{e_\mu}R_{e_{\nu(\mu)}}\quad(\mu=0,1,2,3).
+K\,(iR_{e_x})^{*}\,K^{-1}\;=\;-\,iR_{e_x},\qquad K\,(iL_{e_k}R_{e_y})^{*}\,K^{-1}\;=\;-\,iL_{e_k}R_{e_y}.
 $$
 
 The first relation is the statement that $\mathcal{C}:\psi\mapsto K\psi^{*}$ is an **involution**, $\mathcal{C}^{2}=1$, and the second is what makes it commute with the kinetic operator: a generator is one factor of $i$ times a cell with real entries, so its coefficient conjugate is its negative. Because $\mathcal{C}$ is conjugate-linear, commuting with $\mathbb{D}$ is exactly the displayed condition:
 
 $$
 \mathcal{C}\!\left(\mathbb{D}\psi\right)
-=\;K\,(iiL_{e_\mu}R_{e_{\nu(\mu)}})^{*}\,\partial/\partial Q_\mu\psi^{*}
 =\;\mathbb{D}\!\left(K\psi^{*}\right)
 =\;\mathbb{D}\,\mathcal{C}\psi ,
 $$
 
-using $K(iiL_{e_\mu}R_{e_{\nu(\mu)}})^{*}K^{-1}=iiL_{e_\mu}R_{e_{\nu(\mu)}}$, which is the second relation. This is the same verified identity the neutrino article records, and it is the whole reason the constraint is consistent with the equation: applying $\mathcal{C}$ to $\mathbb{D}\psi=m\psi^{c}$ returns the same equation with $\psi$ and $\psi^{c}$ interchanged, so the deviation $\psi-\psi^{c}$ is preserved by the evolution and a field self-conjugate at one time stays self-conjugate.
+using $K\,(i\,iR_{e_x})^{*}K^{-1}=i\,iR_{e_x}$ and $K\,(i\,iL_{e_k}R_{e_y})^{*}K^{-1}=i\,iL_{e_k}R_{e_y}$, which is the second relation. This is the same verified identity the neutrino article records, and it is the whole reason the constraint is consistent with the equation: applying $\mathcal{C}$ to $\mathbb{D}\psi=m\psi^{c}$ returns the same equation with $\psi$ and $\psi^{c}$ interchanged, so the deviation $\psi-\psi^{c}$ is preserved by the evolution and a field self-conjugate at one time stays self-conjugate.
 
 **On the fixed space it is the Dirac equation.** If $\psi$ satisfies the Majorana equation and the constraint $\psi^{c}=\psi$, then $\mathbb{D}\psi=m\psi$, which is the massive Dirac equation. Conversely the massive Dirac equation restricted to the fixed space implies the Majorana equation. The two equations are therefore the same equation on the Majorana sector and different equations off it; the content is the consistency of the constraint, which is a computation and was performed above.
 
@@ -202,9 +201,9 @@ which satisfies $\psi^{c}=\psi$ and the Dirac equation when $u$ does. This is th
 
 | Item | Status |
 |---|---|
-| The charge-conjugation cell $C=L_{e_t}R_{e_x}$: real, $C^{T}=-C$, $C^{2}=-L_{e_t}R_{e_t}$, $CiL_{e_\mu}R_{e_{\nu(\mu)}}^{T}C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ | **Supplied**, recomputed in the cell frame on all $\mu$ |
-| The antilinear real structure $\mathcal{C}\psi=K\psi^{*}$: $K=i$, $KK^{*}=L_{e_t}R_{e_t}$, $\mathcal{C}^{2}=1$, $KiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}K^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ | **Supplied**, recomputed on all $\mu$ |
-| $\mathcal{C}$ commutes with the kinetic operator, so the constraint is consistent with the massive equation | **Supplied** (through $KiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}K^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$) |
+| The charge-conjugation cell $C=L_{e_t}R_{e_x}$: real, $C^{T}=-C$, $C^{2}=-L_{e_t}R_{e_t}$, $C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x}$ and $C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y}$ | **Supplied**, recomputed in the cell frame on all $\mu$ |
+| The antilinear real structure $\mathcal{C}\psi=K\psi^{*}$: $K=i$, $KK^{*}=L_{e_t}R_{e_t}$, $\mathcal{C}^{2}=1$, $K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x}$ and $K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}$ | **Supplied**, recomputed on all $\mu$ |
+| $\mathcal{C}$ commutes with the kinetic operator, so the constraint is consistent with the massive equation | **Supplied** (through $K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x}$ and $K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}$) |
 | The spectral split into two real four-dimensional eigenspaces, Majorana and ELKO | **Supplied**, recomputed by elimination |
 | Both eigenspaces on the mass shell, $(\Box-m^{2})\psi=0$ | **Supplied** (from the involution and the Clifford square) |
 | The two-component Weyl operators with $W_RW_L=\Box$ | **Supplied**, recomputed on all sixteen pairs |
@@ -230,21 +229,21 @@ which satisfies $\psi^{c}=\psi$ and the Dirac equation when $u$ does. This is th
 
 ## Summary
 
-The Majorana equation is the relativistic wave equation of a spin-$\tfrac12$ field equal to its own charge conjugate, and it is the Dirac equation with the mass term pairing the field with its conjugate instead of with the other chiral half. In the cell frame with $g=\mathrm{diag}(+,-,-,-)$ its three standard forms were written and shown to agree. The charge-conjugate form uses the real cell $C=L_{e_t}R_{e_x}$, for which $C^{T}=-C$, $C^{2}=-L_{e_t}R_{e_t}$, $CiL_{e_\mu}R_{e_{\nu(\mu)}}^{T}C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ on all $\mu$, and the antilinear map $\mathcal{C}\psi=K\psi^{*}$ with the central scalar $K=C\,(iR_{e_x})^{T}=i$ satisfies $KK^{*}=1$ and $KiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}K^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$; this is the real structure, and it commutes with the kinetic operator, which is what makes the constraint $\psi^{c}=\psi$ consistent with the massive equation and reduces it to the Dirac equation on the fixed space. The real form uses the real representation of $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, which was exhibited as four real cells with all generators real and purely real solutions; the corpus's mostly-minus algebra is quaternionic, and the antilinear $\mathcal{C}$ is what replaces the real form there. The two-component form is the Weyl operator with the antilinear mass term $m\epsilon(\,\cdot\,)^{*}$, and the two Weyl operators satisfy $W_RW_L=\Box$, which is the precise sense in which they are square roots of the Klein–Gordon operator. The charge-conjugation operator is an involution whose two eigenspaces are each of real dimension four: the $+1$ space is the Majorana sector, on which the equation is Dirac, and the $-1$ space is the ELKO companion, on which the equation has the opposite sign of the mass and is not Dirac. Both are on the mass shell, $(\Box-m^{2})\psi=0$, and both were obtained by elimination. A self-conjugate field carries one Weyl spinor rather than two, no vector current, and no fermion number; whether a given fermion is Majorana, and the neutrino mass and phases, are outside the algebra.
+The Majorana equation is the relativistic wave equation of a spin-$\tfrac12$ field equal to its own charge conjugate, and it is the Dirac equation with the mass term pairing the field with its conjugate instead of with the other chiral half. In the cell frame with $g=\mathrm{diag}(+,-,-,-)$ its three standard forms were written and shown to agree. The charge-conjugate form uses the real cell $C=L_{e_t}R_{e_x}$, for which $C^{T}=-C$, $C^{2}=-L_{e_t}R_{e_t}$, $C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x}$ and $C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y}$ on all $\mu$, and the antilinear map $\mathcal{C}\psi=K\psi^{*}$ with the central scalar $K=C\,(iR_{e_x})^{T}=i$ satisfies $KK^{*}=1$ and $K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x}$ and $K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}$; this is the real structure, and it commutes with the kinetic operator, which is what makes the constraint $\psi^{c}=\psi$ consistent with the massive equation and reduces it to the Dirac equation on the fixed space. The real form uses the real representation of $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, which was exhibited as four real cells with all generators real and purely real solutions; the corpus's mostly-minus algebra is quaternionic, and the antilinear $\mathcal{C}$ is what replaces the real form there. The two-component form is the Weyl operator with the antilinear mass term $m\epsilon(\,\cdot\,)^{*}$, and the two Weyl operators satisfy $W_RW_L=\Box$, which is the precise sense in which they are square roots of the Klein–Gordon operator. The charge-conjugation operator is an involution whose two eigenspaces are each of real dimension four: the $+1$ space is the Majorana sector, on which the equation is Dirac, and the $-1$ space is the ELKO companion, on which the equation has the opposite sign of the mass and is not Dirac. Both are on the mass shell, $(\Box-m^{2})\psi=0$, and both were obtained by elimination. A self-conjugate field carries one Weyl spinor rather than two, no vector current, and no fermion number; whether a given fermion is Majorana, and the neutrino mass and phases, are outside the algebra.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $\Gamma=-iL_{e_t}R_{e_z}$ | Generator cells and chirality operator; $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\}=2g_{\mu\nu}L_{e_t}R_{e_t}$ |
+| $iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$, $\Gamma=-iL_{e_t}R_{e_z}$ | Generator cells and chirality operator; $iR_{e_x}$ and $iL_{e_k}R_{e_y}$ carry the Clifford relations of $g$ |
 | $L_a,R_b$, $L_{a}R_{b}$ | $L_a\psi=a\psi$, $R_b\psi=\psi b$; $L_{a}R_{b}\psi=a\psi b$ |
 | $\mathbb{D}\psi=m\psi^{c}$ | The Majorana equation |
 | $\psi^{c}=C\bar\psi^{T}=i\psi^{*}$ | Charge-conjugate spinor |
 | $C=L_{e_t}R_{e_x}=-i\,iR_{e_x}$ | Charge-conjugation cell; real, $C^{T}=-C$, $C^{2}=-L_{e_t}R_{e_t}$ |
-| $CiL_{e_\mu}R_{e_{\nu(\mu)}}^{T}C^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Preservation of the kinetic term |
+| $C\,(iR_{e_x})^{T}C^{-1}=-\,iR_{e_x}$ and $C\,(iL_{e_k}R_{e_y})^{T}C^{-1}=-\,iL_{e_k}R_{e_y}$ | Preservation of the kinetic term |
 | $\mathcal{C}\psi=K\psi^{*}$ | The antilinear real structure |
 | $K=C\,(iR_{e_x})^{T}=i\,L_{e_t}R_{e_t}$ | Central scalar of the real structure; $KK^{*}=L_{e_t}R_{e_t}$ |
-| $KiL_{e_\mu}R_{e_{\nu(\mu)}}^{*}K^{-1}=-iL_{e_\mu}R_{e_{\nu(\mu)}}$ | $\mathcal{C}$ commutes with $\mathbb{D}$ |
+| $K\,(iR_{e_x})^{*}K^{-1}=-\,iR_{e_x}$ and $K\,(iL_{e_k}R_{e_y})^{*}K^{-1}=-\,iL_{e_k}R_{e_y}$ | $\mathcal{C}$ commutes with $\mathbb{D}$ |
 | $\psi^{c}=+\psi$ | Majorana condition; the $+1$ eigenspace, real dimension four |
 | $\psi^{c}=-\psi$ | ELKO condition; the $-1$ eigenspace, real dimension four |
 | $\mathbb{D}\psi=-m\psi$ | Sign-flipped equation of the ELKO sector |
@@ -284,3 +283,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

@@ -6,13 +6,15 @@ A **nonlinear Dirac equation** is a Dirac equation with a self-interaction term.
 
 Two models dominate the literature and stand for the two non-axial channels. The **Thirring model** (Thirring 1958) is a $1+1$-dimensional theory whose interaction is the square of the vector current, $\left(\bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi\right)^2$, with $iL_{e_\mu}R_{e_{\nu(\mu)}}$ the generator cell of the conventions below; it is exactly solvable and is the field-theory side of the bosonisation correspondence with the sine-Gordon model. The **Soler model** (Soler 1970) is a $3+1$-dimensional theory whose interaction is the square of the scalar bilinear, $\left(\bar\psi\psi\right)^2$; it is the mean-field relative of the Nambu–Jona-Lasinio four-fermion interaction, and it is the model in which exact closed-form solutions have been found.
 
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
+
 This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the fermion bilinears they use, and gives the biquaternion interpretation. The framework's contribution is a **placement of the channels**: each quartic interaction is built from one of the local bilinears — the scalar density $S = \bar\psi\psi$, the vector current $V_\mu = \bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, the axial current $A_\mu = \bar\psi\,c^{(5)}_\mu\psi$ — and each of these has a definite place in the framework's structure. $S$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. $V_\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. $A_\mu$ is the axial current, and the framework's linear mass is precisely what breaks its conservation; an axial-axial self-interaction is therefore a coupling in the channel conjugate to the mass. A quartic interaction is also **bosonic**: it is even in the fermion field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.
 
 What the framework does **not** supply is equally definite, and follows from the minimal-coupling article. Every one of the bilinears above is a spinor-module object: the Dirac adjoint $\bar\psi = i\psi^\dagger L_{e_t}R_{e_x}$ carries the Clifford-odd cell $iL_{e_t}R_{e_x}$ — $L_{a}R_{b}$ is the two-sided multiplication, $L_{a}R_{b}\psi = a\psi b$ — and the axial cells are the generator cells times the chirality cell $-iL_{e_t}R_{e_z}$; none of these is in the left copy $\mathbb{B}_L$, because each is a two-sided cell of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$. The framework names the channels and places them in its sectors; it does not derive the self-interaction from a product in the algebra, and it adds no solution, coupling or prediction of its own.
 
 The article is organised as follows. The next section explains why a self-interaction is cubic and how geometry produces one. A section states the Thirring and Soler models. A section gives the Einstein–Cartan torsion route and the Hehl–Datta equation. A section lists the local bilinears and the channel each model uses. A section gives the biquaternion interpretation. A short section records the verified two-dimensional relations. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. Two families of cells are used. The **generator cells** are $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y} = iL_{e_k}R_{e_y}$; they satisfy the Clifford relations $\left(iR_{e_x}\right)^2 = L_{e_t}R_{e_t}$, $\left(iL_{e_k}R_{e_y}\right)^2 = -L_{e_t}R_{e_t}$ and $\{iR_{e_x},iL_{e_k}R_{e_y}\} = 0$, which is $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. The **axial cells** are $c^{(5)}_0 = L_{e_t}R_{e_y}$ and $c^{(5)}_k = -L_{e_k}R_{e_x}$, and $c^{(5)}_\mu$ is the product $iL_{e_\mu}R_{e_{\nu(\mu)}}$ times the chirality cell $-iL_{e_t}R_{e_z}$. The chirality has square $L_{e_t}R_{e_t}$, and the Dirac adjoint is $\bar\psi = i\psi^\dagger L_{e_t}R_{e_x}$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $\vec e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the spinor equations below are the representatives in which the literature models are defined, and the biquaternionic transcription of each interaction is the open point.
+The conventions are those of the companion articles. Two families of cells are used. The **generator cells** are $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$; they satisfy the Clifford relations $\left(iR_{e_x}\right)^2 = L_{e_t}R_{e_t}$, $\left(iL_{e_k}R_{e_y}\right)^2 = -L_{e_t}R_{e_t}$ and $\{iR_{e_x},iL_{e_k}R_{e_y}\} = 0$, which is $\{iL_{e_\mu}R_{e_{\nu(\mu)}},iL_{e_\nu}R_{e_{\nu(\nu)}}\} = 2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g = \mathrm{diag}(+1,-1,-1,-1)$. The **axial cells** are $c^{(5)}_0 = L_{e_t}R_{e_y}$ and $c^{(5)}_k = -L_{e_k}R_{e_x}$, and $c^{(5)}_\mu$ is the product $iL_{e_\mu}R_{e_{\nu(\mu)}}$ times the chirality cell $-iL_{e_t}R_{e_z}$. The chirality has square $L_{e_t}R_{e_t}$, and the Dirac adjoint is $\bar\psi = i\psi^\dagger L_{e_t}R_{e_x}$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $\vec e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; the spinor equations below are the representatives in which the literature models are defined, and the biquaternionic transcription of each interaction is the open point.
 
 ## Why the Dirac Equation Becomes Nonlinear
 
@@ -43,7 +45,7 @@ $$
 - \frac{g}{2}\left(\bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi\right)\left(\bar\psi\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi\right)\;},
 $$
 
-with $\psi = \left(\psi_+, \psi_-\right)$ a two-component spinor, $\mathbb{D}$ the pair operator of the companion conventions article, $g$ the coupling, $m$ the mass, and $iL_{e_\mu}R_{e_{\nu(\mu)}}$ the two-dimensional generator cells, $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_x}R_{e_y} = iL_{e_x}R_{e_y}$. There is only one independent local quartic interaction in two dimensions: the spinor has four real components and the Pauli principle, together with the Fierz rearrangement identities of the two-dimensional Clifford algebra, makes the quartic terms equivalent. The vector-vector and axial-axial combinations are related by the two-dimensional Hodge duality of the currents, so a single coupling $g$ covers the model.
+with $\psi = \left(\psi_+, \psi_-\right)$ a two-component spinor, $\mathbb{D}$ the pair operator of the companion conventions article, $g$ the coupling, $m$ the mass, and $iL_{e_\mu}R_{e_{\nu(\mu)}}$ the two-dimensional generator cells, $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_x}R_{e_y}$. There is only one independent local quartic interaction in two dimensions: the spinor has four real components and the Pauli principle, together with the Fierz rearrangement identities of the two-dimensional Clifford algebra, makes the quartic terms equivalent. The vector-vector and axial-axial combinations are related by the two-dimensional Hodge duality of the currents, so a single coupling $g$ covers the model.
 
 The **massless** Thirring model is exactly solvable: the multipoint correlation functions are known in closed form (Johnson; Hagen; Klaiber), and the theory satisfies the Osterwalder–Schrader axioms, so it is a genuine quantum field theory and not merely a Lagrangian. The **massive** model is solvable by the Bethe ansatz, which gives the exact mass spectrum and scattering matrix; multi-particle production cancels on shell. The massive Thirring model is exactly equivalent to the quantum **sine-Gordon** model, with the fundamental fermions of the one corresponding to the solitons of the other — the Coleman–Mandelstam equivalence, which the companion article on bosonisation develops in the framework's notation.
 
@@ -154,7 +156,7 @@ The biquaternion interpretation places the channels. The scalar density is the m
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_k^2 = -e_t$, central $i$ |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided cell; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, identity $L_{e_t}R_{e_t}$ |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cells: $iR_{e_x} = iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y} = iL_{e_k}R_{e_y}$ |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$ | Generator cells: $iR_{e_x} = iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$ |
 | $c^{(5)}_\mu$ | Axial cells: $c^{(5)}_0 = L_{e_t}R_{e_y}$, $c^{(5)}_k = -L_{e_k}R_{e_x}$ |
 | $\bar\psi = i\psi^\dagger L_{e_t}R_{e_x}$ | Dirac adjoint (carries the Clifford-odd cell $iL_{e_t}R_{e_x}$) |
 | $-iL_{e_t}R_{e_z}$ | Chirality cell; its square is the identity cell $L_{e_t}R_{e_t}$ |
@@ -198,3 +200,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

@@ -235,7 +235,9 @@ $$
 
 satisfies $\tilde{\nabla}\tilde{\Psi} = \tilde{\nabla}\tilde{\nabla}^{\natural}\phi = \Box\phi = 0$, so it is a genuine solution of the massless equation. On such a solution, with $\phi$ built from superposed plane waves so that no accidental cancellation is available, the divergence $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_{\Psi})$ is not zero; the computation gives values of order $10^2$ at generic points, for either sign of the bilinear. The naive biquaternion product is therefore **not** the conserved electromagnetic current of the Dirac field.
 
-**Why, and what the current is instead.** The reason is representation-theoretic. The conserved current of the Dirac field is the spinor-module bilinear $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,\psi$ with the **Dirac adjoint** $\bar{\psi} = \psi^\dagger iR_{e_x}$; here the $iL_{e_\mu}R_{e_{\nu(\mu)}}$ are the generator cells, $L_{a}R_{b}\psi = a\psi b$, $iR_{e_x} = iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y} = iL_{e_k}R_{e_y}$. The factor $iR_{e_x}$ is Clifford-**odd**; it is not in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$, and it is exactly the extra ingredient that the biquaternion formulation needs to recover the four-component Dirac spinor from its pair of Weyl spinors. A bilinear formed only from $\tilde{\Psi}$ and $\tilde{\Psi}^{*}$ inside $\mathbb{B}$ cannot supply it. The physical current therefore lies partly **outside** the algebra, and the pure-biquaternion form of the interaction current is not given by the naive product. That the electron's current is nevertheless an $\mathbb{M}_-$ four-vector — $\tilde J_{\Psi} = ic\,j_0e_t + \vec j$ with $j_0= \psi^\dagger\psi$ — is a statement about the spinor-module transcription, not about a product in $\mathbb{B}$.
+**Why, and what the current is instead.** The reason is representation-theoretic. The conserved current of the Dirac field is the spinor-module bilinear $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,\psi$ with the **Dirac adjoint** $\bar{\psi} = \psi^\dagger iR_{e_x}$; here the $iL_{e_\mu}R_{e_{\nu(\mu)}}$ are the generator cells, $L_{a}R_{b}\psi = a\psi b$, $iR_{e_x} = iL_{e_t}R_{e_x}$, $iL_{e_k}R_{e_y}$. The factor $iR_{e_x}$ is Clifford-**odd**; it is not in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$, and it is exactly the extra ingredient that the biquaternion formulation needs to recover the four-component Dirac spinor from its pair of Weyl spinors. A bilinear formed only from $\tilde{\Psi}$ and $\tilde{\Psi}^{*}$ inside $\mathbb{B}$ cannot supply it. The physical current therefore lies partly **outside** the algebra, and the pure-biquaternion form of the interaction current is not given by the naive product. That the electron's current is nevertheless an $\mathbb{M}_-$ four-vector — $\tilde J_{\Psi} = ic\,j_0e_t + \vec j$ with $j_0= \psi^\dagger\psi$ — is a statement about the spinor-module transcription, not about a product in $\mathbb{B}$.
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
 
 This is the same representation question as the left/right action of the previous sections, met from the current side. The parent Dirac article's open question flags the representation conventions; this article records that they are not idle. The biquaternion form of the conserved current, and the sense in which the sourced Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is fed by the Dirac field, remain open.
 
@@ -273,7 +275,7 @@ $$
 \boxed{\;\left(\mathbb{D}_A - \frac{mc}{\hbar}\right)\psi = 0, \qquad \mathbb{D}_A = \mathbb{D}\big|_{\partial/\partial Q_\mu\to D_\mu},\quad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\;},
 $$
 
-**provided the mass term is the linear Dirac mass** $m\psi$. With the linear mass the equation is gauge covariant in the standard way, the conserved current is the spinor-module bilinear $j_\mu = \bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, and the standard consequences — the tree-level gyromagnetic factor $g = 2$, the correct non-relativistic limit, the magnetic moment — follow by the computations of the companion articles on the electron and on the solutions and non-relativistic limit. Those results are not repeated here; the point for this article is that they are obtained with a **linear** mass term, which is exactly the form the parent's biquaternion equation carries, so the transcription and the standard treatment agree on the massive sector as well as on the massless one.
+**provided the mass term is the linear Dirac mass** $m\psi$. With the linear mass the equation is gauge covariant in the standard way, the conserved current is the spinor-module bilinear $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, and the standard consequences — the tree-level gyromagnetic factor $g = 2$, the correct non-relativistic limit, the magnetic moment — follow by the computations of the companion articles on the electron and on the solutions and non-relativistic limit. Those results are not repeated here; the point for this article is that they are obtained with a **linear** mass term, which is exactly the form the parent's biquaternion equation carries, so the transcription and the standard treatment agree on the massive sector as well as on the massless one.
 
 The transcription carries the representation conventions that the parent Dirac article explicitly left open — the identification of the biquaternion units with the Clifford generators, the placement of the two chiralities in the algebra, and the role of the Dirac adjoint. This article does not fix them. What it fixes is the biquaternion form of the coupling itself: the covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ acting by left multiplication, the component operators $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$, and the coupled equation $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$.
 
@@ -332,7 +334,7 @@ with the interaction term $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ that the loca
 
 The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{\Psi}_2 = \exp(iϙ\Gamma/\hbar)\tilde{\Psi}$ and $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, one has $D_2\tilde{\Psi}_2 = \lambda D\tilde{\Psi}$, and the parent's linear mass term acquires the same factor $\lambda$, so $D\tilde{\Psi}_R = m\tilde{\Psi}_L$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass. The biquaternion form of the statement that a Majorana-type mass term — built on the antilinear real structure $\flat$ — is incompatible with a gauged continuous $\mathrm{U}(1)$ is given in the companion articles on the neutrino and on chirality; the standard linear Dirac mass, which is the parent's form, does not have that obstruction, and on the spinor module the standard minimal coupling is recovered.
 
-The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is not conserved on solutions of the massless equation; the physical current is the spinor-module bilinear $j_\mu = \bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, whose Dirac adjoint uses the Clifford-odd $iR_{e_x}$ outside $\mathbb{B}$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the axial symmetry of the massive sector.
+The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is not conserved on solutions of the massless equation; the physical current is the spinor-module bilinear $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, whose Dirac adjoint uses the Clifford-odd $iR_{e_x}$ outside $\mathbb{B}$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the axial symmetry of the massive sector.
 
 One external result is recorded on the source side, and it is not a development of the framework: the identity of A. I. Arbab (arXiv:1708.06230v2), by which the mixed invariant of the two coupled field strengths is fixed by the pairing of the potential with the four-current. It is a constraint following from that source's own four equations, verified exactly here, and its other claims are not adopted. It is recorded because it has the shape that Open Question 4 asks for, and because the corpus has no statement of that shape.
 
@@ -342,7 +344,7 @@ One external result is recorded on the source side, and it is not a development 
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
-| $iL_{e_\mu}R_{e_{\nu(\mu)}}$, $L_{a}R_{b}\psi = a\psi b$ | Generator cells; $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y} = iL_{e_k}R_{e_y}$ |
+| $iL_{e_\mu}R_{e_{\nu(\mu)}}$, $L_{a}R_{b}\psi = a\psi b$ | Generator cells; $iR_{e_x} = iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
@@ -362,7 +364,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ | Interaction term |
 | $\exp(2iϙ\Gamma/\hbar)$ | Phase that an antilinear (Majorana-type) mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
 | $\tilde J_{\Psi} = i\tilde{\Psi}\tilde{\Psi}^{*}$ | Naive bilinear; gauge invariant, in $\mathbb{M}_-$, **not conserved** |
-| $j_\mu = \bar{\psi}iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, $\bar{\psi} = \psi^\dagger iR_{e_x}$ | Spinor-module conserved current (involves the Clifford-odd $iR_{e_x}$) |
+| $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$, $\bar{\psi} = \psi^\dagger iR_{e_x}$ | Spinor-module conserved current (involves the Clifford-odd $iR_{e_x}$) |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $\sqrt{\mu}\,\tilde J$ |
 | $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ | Biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
@@ -399,3 +401,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.

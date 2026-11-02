@@ -206,7 +206,9 @@ with the exact expansion $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu} + \langle \del
 
 The construction above is pure geometry: it linearizes the frame and reads the metric perturbation off it. Where matter attaches to that frame, the parent article's attachment is the one-sided covariant derivative on the spinor module, $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$, with $\vec\Gamma_\mu$ the spin connection. An external source shows that this attachment has two inequivalent forms, and the difference is not a higher-order subtlety here.
 
-For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term $\{iL_{e_a}R_{e_{\nu(a)}},S_{cd}\}$ between the frame cell and the Lorentz generator $S_{cd}=\tfrac14[iL_{e_c}R_{e_{\nu(c)}},iL_{e_d}R_{e_{\nu(d)}}]$, which the substituted equation does not, because $[iL_{e_c}R_{e_{\nu(c)}},S_{ab}] = V_{abd}iL_{e_d}R_{e_{\nu(d)}}$ rather than vanishing (J. Fredsted, arXiv:1906.12200v3 [physics.gen-ph], 2019; recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*). Both the frame perturbation $\delta\tilde{E}_\mu$ and the spin connection $\vec\Gamma_\mu$ are **first order** in the perturbation of this article, and the discrepancy is linear in the connection, so it is first order as well: it does not disappear as the perturbation is taken small. A linearized system that couples a Dirac field to $h_{\mu\nu}$ therefore has to say which of the two forms it linearizes, and the corpus's own curved Dirac equation is the substituted one.
+For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term $\{iL_{e_a}R_{e_{\nu(a)}},S_{cd}\}$ between the frame cell and the Lorentz generator $S_{cd}=\tfrac14[iL_{e_c}R_{e_{\nu(c)}},iL_{e_d}R_{e_{\nu(d)}}]$, which the substituted equation does not, because $[iL_{e_c}R_{e_{\nu(c)}},S_{ab}] = V_{abd}\,iL_{e_d}R_{e_{\nu(d)}}$ rather than vanishing (J. Fredsted, arXiv:1906.12200v3 [physics.gen-ph], 2019; recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*). Both the frame perturbation $\delta\tilde{E}_\mu$ and the spin connection $\vec\Gamma_\mu$ are **first order** in the perturbation of this article, and the discrepancy is linear in the connection, so it is first order as well: it does not disappear as the perturbation is taken small. A linearized system that couples a Dirac field to $h_{\mu\nu}$ therefore has to say which of the two forms it linearizes, and the corpus's own curved Dirac equation is the substituted one.
+
+Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$: $\nu(t)=x$ and $\nu(k)=y$, so that the time direction is carried by $iR_{e_x}=iL_{e_t}R_{e_x}$ and the three space directions by $iL_{e_k}R_{e_y}$ with $k=1,2,3$.
 
 This is recorded as an external caution and is not resolved here. Nothing constructed in this article changes, because the construction above contains no matter coupling at all; what changes is the interpretation of the article's own gap list, where "a derivation of the coupling to matter" has to be strengthened — the coupling is not merely underived, it is not unique in the standard formulation.
 
@@ -453,3 +455,25 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+(\gamma_k)^2=-I_4,\qquad
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+$$
+[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
+[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+$$
+\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+$$
+The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
