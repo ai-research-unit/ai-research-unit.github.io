@@ -41,7 +41,7 @@ In $L_{\tilde Q}R_{\tilde P}$ the first subscript is the left multiplier and the
 
 ### The Index of a Basis Operator
 
-A Greek index on $L$ or $R$ is the index of a basis element: $L_\mu=L_{e_\mu}$ and $R_\nu=R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_\mu=\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the index names the element and never a matrix entry, so $L_\mu$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_4^{L}(e_\mu)$.
+A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the subscript names the element and never a matrix entry, so $L_{e_\mu}$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_4^{L}(e_\mu)$.
 
 ## The Names of the Sets
 
@@ -169,7 +169,7 @@ The four adjoints of the four pairings of *Product and Form Conventions* are wri
 
 ## Summary
 
-The four families are written $L$, $R$, $LR$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The two subscripts of $L$ and $R$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index is the index of a basis element, $L_\mu=L_{e_\mu}$, $R_\nu=R_{e_\nu}$, and $L_\mu R_\nu$ is read in that order, the first index belonging to the left slot, and it never names a matrix entry.
+The four families are written $L$, $R$, $LR$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The two subscripts of $L$ and $R$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index inside the subscript names a basis element, $L_{e_\mu}$ and $R_{e_\nu}$, and $L_{e_\mu}R_{e_\nu}$ is read in that order, the first index belonging to the left slot, and it never names a matrix entry.
 
 The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR\ast}(\mathbb{B})$, named from the four families, with the ambient written $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. A named family's matrix carries the family's letters in the superscript, $\mathsf M_4^{L}$, $\mathsf M_4^{R}$, $\mathsf M_4^{LR}$ and $\mathsf M_4^{LR\ast}$; a general operator's matrix is written with the bracket $[F]_{\mathcal{B}}$. The names assert no dimension, no closure, no inclusion and no properness, and a name of two letters is one name, not a sum of sets.
 
@@ -184,7 +184,7 @@ The strata are labelled by two bits, the norm first and the square of the vector
 | $L_{\tilde Q}$, $R_{\tilde P}$ | The left and the right multiplier |
 | $L_{\tilde Q}R_{\tilde P}$ | The two-sided operator, left multiplier first |
 | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The sandwich, with one free slot |
-| $L_\mu$, $R_\nu$, $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. T$, $\Theta_\mu$ | The basis operators, $L_\mu=L_{e_\mu}$ and $L_\mu R_\nu$, read in that order, the first index belonging to the left slot. T=L_\mu R_\nu$ |
+| $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. T$, $\Theta_{e_\mu}$ | The basis operators, $L_{e_\mu}$ and $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. T=L_{e_\mu}R_{e_\nu}$ |
 | $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | The ambient operator space |
 | $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$ | The sets of the left and the right multipliers |
 | $\operatorname{End}_{LR}(\mathbb{B})$, $\operatorname{End}_{LR\ast}(\mathbb{B})$ | The sets of the two-sided operators and of the sandwiches |
