@@ -273,6 +273,16 @@ $$</p>
 <p><strong>Empirical content.</strong> As everywhere, whether any of this yields a prediction distinguishing the framework from standard higher-spin theory. The transcription given here does not.</p>
 </li>
 </ol>
+<h2 id="the-gamma-formulation">The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$</p>
+<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p>In the gamma basis of the Gamma section the frame cell $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is $\gamma_\mu$, the antisymmetrized pair is $\gamma_{\mu\nu}$ and the antisymmetrized triple is $\gamma_{\mu\nu\rho}$, with $L_{a}R_{b}$.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
 <p>The Rarita–Schwinger field is a vector-spinor $\psi_\mu$ satisfying $(i\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}}\partial/\partial x_\nu-m)\psi_\mu=0$ and the irreducibility constraint $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}}\psi_\mu=0$. Contracting the field equation with $iL_{e_\mu}R_{e_{\nu(\mu)}}$ and using $iL_{e_\mu}R_{e_{\nu(\mu)}} \sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}=2p_\mu-\sum_\rho iL_{e_\rho}R_{e_{\nu(\rho)}} p_{\rho}iL_{e_\mu}R_{e_{\nu(\mu)}}$ gives the transversality condition $\sum_\mu p_\mu\psi_\mu=0$, so the constraint and the field equation together imply transversality; this was verified with explicit frame cells. The constraint is imposed by the projector $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14 iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$, which is idempotent and annihilates the trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.</p>
 <p>The gauge structure differs between the two mass regimes. For $m=0$ the field has the gauge symmetry $\psi_\mu\mapsto\psi_\mu+\partial/\partial x_\mu\,\epsilon$ with a spinor parameter, the constraints are first class, the trace gauge fixing requires Faddeev–Popov spinor ghosts, and the physical states are the two helicities $\pm\tfrac32$. For $m\neq0$ the gauge symmetry is absent, the constraints are second class, the quantization uses the Dirac bracket, and the physical states are the four helicities $\pm\tfrac32,\pm\tfrac12$. The canonical quantization gives a fermionic mode expansion with four polarizations, anticommutators $\{a_r,a_s^\dagger\}=(2\pi)^3\delta_{rs}\delta^{(3)}$, and a completeness relation whose transverse projector is built from the same Clifford structure.</p>
@@ -372,16 +382,6 @@ $$</p>
 <li>Stanley Deser, J. H. Kay and K. S. Stelle, "Renormalizability Properties of Supergravity," <em>Physical Review Letters</em> <strong>38</strong> (1977) 527–530, for the consistency of the spin-$\tfrac32$ field coupled to gravity.</li>
 <li>G. Velo and D. Zwanziger, "Propagation and Quantization of Rarita–Schwinger Waves in an External Electromagnetic Potential," <em>Physical Review</em> <strong>186</strong> (1969) 1337–1341, for the loss of the constraint and the superluminal modes in a background.</li>
 </ul>
-<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
-<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
-<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
-<p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$</p>
-<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>In the gamma basis of the appendix the frame cell $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is $\gamma_\mu$, the antisymmetrized pair is $\gamma_{\mu\nu}$ and the antisymmetrized triple is $\gamma_{\mu\nu\rho}$, with $L_{a}R_{b}$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
-<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>

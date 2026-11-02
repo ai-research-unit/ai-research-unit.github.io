@@ -105,15 +105,15 @@ $$</p>
 <p><strong>Corollary (why the sign sits in the operator).</strong> The sign of the super-adjoint is placed on the operator, so that the super-adjoint is plainly multiplicative, $(TS)^{\star} = S^{\star}T^{\star}$. The alternative convention of the super-symmetric literature puts the Koszul sign in the product rule, $(TS)^{\circ} = (-1)^{|S||T|}S^{\circ}T^{\circ}$ with an unsigned adjoint; that convention is consistent only for a pairing carrying the same sign, and with the even form used here it fails already on two odd operators, for which $S^{*}T^{*}\neq -S^{*}T^{*}$. Only the first convention is used, because it is the one under which the signed family of the corpus is an adjoint of the ordinary one.</p>
 <p><strong>Proposition (the graded commutator under the ordinary adjoint).</strong> For graded $S,T$,</p>
 <p>$$
-[S,T\}^{*} = -\,(-1)^{|S||T|}\,[S^{*},T^{*}\} ,
+[S,T]^{*} = -\,(-1)^{|S||T|}\,[S^{*},T^{*}] ,
 $$</p>
 <p>so the adjoint reverses the graded commutator and picks up the Koszul sign in doing so.</p>
-<p><strong>Proof.</strong> $[S,T\}^{*} = (ST)^{*}-(-1)^{|S||T|}(TS)^{*} = T^{*}S^{*}-(-1)^{|S||T|}S^{*}T^{*}$, while $[S^{*},T^{*}\} = S^{*}T^{*}-(-1)^{|S||T|}T^{*}S^{*}$ with $|S^{*}| = |S|$ and $|T^{*}| = |T|$; multiplying the second by $-(-1)^{|S||T|}$ and using $(-1)^{2|S||T|} = 1$ gives the first.</p>
+<p><strong>Proof.</strong> $[S,T]^{*} = (ST)^{*}-(-1)^{|S||T|}(TS)^{*} = T^{*}S^{*}-(-1)^{|S||T|}S^{*}T^{*}$, while $[S^{*},T^{*}] = S^{*}T^{*}-(-1)^{|S||T|}T^{*}S^{*}$ with $|S^{*}| = |S|$ and $|T^{*}| = |T|$; multiplying the second by $-(-1)^{|S||T|}$ and using $(-1)^{2|S||T|} = 1$ gives the first.</p>
 <p><strong>Proposition (the super-adjoint of the graded commutator).</strong> For graded $S,T$,</p>
 <p>$$
-\boxed{\;[S,T\}^{\star} = -\,(-1)^{|S||T|}\,[S^{\star},T^{\star}\}\;} .
+\boxed{\;[S,T]^{\star} = -\,(-1)^{|S||T|}\,[S^{\star},T^{\star}]\;} .
 $$</p>
-<p><strong>Proof.</strong> By the previous proposition $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$, and $[S^{\star},T^{\star}\} = (-1)^{|S|+|T|}[S^{*},T^{*}\}$ because $S^{\star} = (-1)^{|S|}S^{*}$ is a scalar multiple of $S^{*}$; multiplying the first identity by $(-1)^{|S|+|T|}$ and substituting the second gives the display.</p>
+<p><strong>Proof.</strong> By the previous proposition $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$, and $[S^{\star},T^{\star}] = (-1)^{|S|+|T|}[S^{*},T^{*}]$ because $S^{\star} = (-1)^{|S|}S^{*}$ is a scalar multiple of $S^{*}$; multiplying the first identity by $(-1)^{|S|+|T|}$ and substituting the second gives the display.</p>
 <p><strong>Definition.</strong> A graded operator is <strong>self-adjoint</strong> when $T^{*} = T$ and <strong>super-self-adjoint</strong> when $T^{\star} = T$, that is when $T^{*} = (-1)^{|T|}T$.</p>
 <p><strong>Proposition (the two self-adjointness conditions).</strong> An even operator is self-adjoint exactly when it is super-self-adjoint; an odd operator is self-adjoint exactly when it is anti-super-self-adjoint, $T^{\star} = -T$. So on the odd part the two adjoint operations differ by the global sign.</p>
 <p><strong>Proof.</strong> For $|T| = 0$ the two statements coincide; for $|T| = 1$, $T^{\star} = -T^{*}$ and the two conditions are opposite.</p>
@@ -160,7 +160,7 @@ $$</p>
 <p>$$
 (TS)^{*} = T^{*}S^{*} , \qquad (TS)^{\star} = S^{\star}T^{\star} , \qquad T^{\star} = (-1)^{|T|}T^{*} ,
 $$</p>
-<p>with the <strong>super-adjoint</strong> $T^{\star}$ satisfying $T^{\star\star} = T$; the adjoint reverses the graded commutator with the Koszul sign, $[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$, and the super-adjoint reverses it with the same Koszul sign, $[S,T\}^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}\}$. On the regular representation the super-adjoint is the signed family of the corpus,</p>
+<p>with the <strong>super-adjoint</strong> $T^{\star}$ satisfying $T^{\star\star} = T$; the adjoint reverses the graded commutator with the Koszul sign, $[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$, and the super-adjoint reverses it with the same Koszul sign, $[S,T]^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}]$. On the regular representation the super-adjoint is the signed family of the corpus,</p>
 <p>$$
 L_x^{\star} = \Lambda^{\alpha}_{x^{\dagger}} , \qquad R_x^{\star} = \mathrm{P}^{\alpha}_{x^{\dagger}} , \qquad \Theta_x^{\star} = \Theta^{\alpha}_{x^{\dagger}} ,
 $$</p>
@@ -191,11 +191,11 @@ $$</p>
 <td>Multiplicativity of the super-adjoint</td>
 </tr>
 <tr>
-<td>$[S,T\}^{*} = -(-1)^{|S||T|}[S^{*},T^{*}\}$</td>
+<td>$[S,T]^{*} = -(-1)^{|S||T|}[S^{*},T^{*}]$</td>
 <td>Graded commutator under the adjoint</td>
 </tr>
 <tr>
-<td>$[S,T\}^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}\}$</td>
+<td>$[S,T]^{\star} = -(-1)^{|S||T|}[S^{\star},T^{\star}]$</td>
 <td>Graded commutator under the super-adjoint</td>
 </tr>
 <tr>

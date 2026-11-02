@@ -92,10 +92,10 @@ $$</p>
 P_k^{2}=P_k,\qquad P_kP_l=0\ (k\ne l),\qquad \sum_{k=1}^{n}P_k=I,
 $$</p>
 <p>and $HP_k=\zeta_kP_k$. Conversely, if a family with these properties is given, then $H=\sum_k\zeta_kP_k$ and the $P_k$ are recovered from $H$ by the formula above.</p>
-<p><em>Proof.</em> On the eigenspace of $\zeta_m$, every factor $(H-\zeta_lI)/(\zeta_k-\zeta_l)$ with $l\ne k$ acts as $(\zeta_m-\zeta_l)/(\zeta_k-\zeta_l)$; the product is $1$ when $m=k$ and $0$ otherwise, because one factor has numerator $0$ when $m=l\ne k$. Hence $P_k$ acts as the identity on the eigenspace of $\zeta_k$ and as $0$ on the others. The three properties and $HP_k=\zeta_kP_k$ follow. For the converse, $\sum_k\zeta_kP_k$ acts as $\zeta_m$ on the eigenspace of $P_m$, hence equals $H$, and the interpolation formula applied to that $H$ returns $P_k$. $\square$</p>
+<p><em>Proof.</em> On the eigenspace of $\zeta_m$, every factor $(H-\zeta_lI)/(\zeta_k-\zeta_l)$ with $l\ne k$ acts as $(\zeta_m-\zeta_l)/(\zeta_k-\zeta_l)$; the product is $1$ when $m=k$ and $0$ otherwise, because one factor has numerator $0$ when $m=l\ne k$. Hence $P_k$ acts as the identity on the eigenspace of $\zeta_k$ and as $0$ on the others. The three properties and $HP_k=\zeta_kP_k$ follow. For the converse, $\sum_k\zeta_kP_k$ acts as $\zeta_m$ on the eigenspace of $P_m$, hence equals $H$, and the interpolation formula applied to that $H$ returns $P_k$.</p>
 <p><strong>The projectors are canonical.</strong> They are polynomials in $H$ with coefficients depending only on $n$, so they are fixed by $H$ alone. In particular they do not depend on any choice of basis, on any gauge, or on any second element.</p>
 <p><strong>Idempotents, not nilpotents.</strong> Each $P_k$ satisfies $P_k^{2}=P_k$ and $P_k\ne0$; the rank of $P_k$ is $1$ because the eigenvalue $\zeta_k$ is simple. The $P_k$ are the primitive idempotents of the frame. The nilpotents $E_{k,k+1}$ of <em>The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</em> are different objects: they square to $0$, they are not polynomials in $H$, and they carry the gauge.</p>
-<h2 id="the-math86-grading">The $\mathbb{Z}/n$ Grading</h2>
+<h2 id="the-math85-grading">The $\mathbb{Z}/n$ Grading</h2>
 <p><strong>Conjugation by $H$ grades the algebra by the $n$-th roots of unity.</strong> For $X\in M_n(\mathbb{C})$ put</p>
 <p>$$
 \operatorname{Ad}_H(X)=HXH^{-1}.
@@ -108,7 +108,7 @@ $$</p>
 <p>$$
 M^{(r)}M^{(s)}\subseteq M^{(r+s)}.
 $$</p>
-<p><em>Proof.</em> The operator $\operatorname{Ad}_H$ is diagonalisable, so the eigenspaces span and intersect only at $0$. If $X\in M^{(r)}$ and $Y\in M^{(s)}$ then $\operatorname{Ad}_H(XY)=\operatorname{Ad}_H(X)\operatorname{Ad}_H(Y)=\zeta^{r+s}XY$. $\square$</p>
+<p><em>Proof.</em> The operator $\operatorname{Ad}_H$ is diagonalisable, so the eigenspaces span and intersect only at $0$. If $X\in M^{(r)}$ and $Y\in M^{(s)}$ then $\operatorname{Ad}_H(XY)=\operatorname{Ad}_H(X)\operatorname{Ad}_H(Y)=\zeta^{r+s}XY$.</p>
 <p><strong>The graded pieces in Peirce form.</strong> Since $H P_k=\zeta_kP_k$ and $P_kH=\zeta_kP_k$, an element $X\in P_kM_nP_l$ satisfies</p>
 <p>$$
 \operatorname{Ad}_H(X)=HXH^{-1}=\zeta_k\zeta_l^{-1}X=\zeta^{k-l}X.
@@ -139,7 +139,7 @@ $$</p>
 (n^{2}-1)-n(n-1)=n-1,
 $$</p>
 <p>is the gauge of <em>The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</em>: one complex parameter per simple nilpotent. For $n=2$ the root contributes $4$ real dimensions and the gauge $2$, which is the six-dimensional basis of the biquaternion frame.</p>
-<h2 id="the-root-of-math161-and-the-biquaternion-case">The Root of $+1$ and the Biquaternion Case</h2>
+<h2 id="the-root-of-math159-and-the-biquaternion-case">The Root of $+1$ and the Biquaternion Case</h2>
 <p><strong>At $n=2$ the construction is the biquaternion frame.</strong> The roots are $+1$ and $-1$, and</p>
 <p>$$
 P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2},\qquad H=P_{+}-P_{-}.

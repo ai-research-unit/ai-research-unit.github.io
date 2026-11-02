@@ -407,7 +407,7 @@ The first column is the coordinate column of $\vec e_x\vec e_y=\vec e_z$, and th
 <h3 id="composition-trace-determinant">Composition, Trace, Determinant</h3>
 <p><strong>Composition.</strong> The product of two basis matrices is a signed basis matrix:
 $$
-L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}L_{e_{\mu^{-1}}e_\rho}^{\mathrm{axf}}R_{e_\sigma e_{\nu^{-1}}}^{\mathrm{axf}}
+L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}L_{e_\rho}^{\mathrm{axf}}R_{e_\sigma}^{\mathrm{axf}}
 =\varepsilon\varepsilon'\,L_{e_{\mu'}}^{\mathrm{axf}}R_{e_{\nu'}}^{\mathrm{axf}},
 $$
 where $e_\mu e_\rho=\varepsilon e_{\mu'}$ and $e_\sigma e_\nu=\varepsilon' e_{\nu'}$, with $\varepsilon,\varepsilon'\in\{\pm1\}$. For general parameters,
@@ -436,7 +436,7 @@ has rank two. A basis of invertible matrices does not make the algebra a divisio
 <h3 id="orthogonality">Orthogonality</h3>
 <p><strong>Theorem (orthogonality).</strong> For the Hilbert–Schmidt inner product $\langle A,B\rangle_{\mathrm{HS}}=\operatorname{Tr}(A^{\dagger}B)$,
 $$
-\operatorname{Tr}\bigl((L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}})^{\dagger}L_{e_{\mu^{-1}}e_\rho}^{\mathrm{axf}}R_{e_\sigma e_{\nu^{-1}}}^{\mathrm{axf}}\bigr)
+\operatorname{Tr}\bigl((L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}})^{\dagger}L_{e_\rho}^{\mathrm{axf}}R_{e_\sigma}^{\mathrm{axf}}\bigr)
 =4\,\delta_{\mu\rho}\,\delta_{\nu\sigma}.
 $$
 The sixteen basis matrices are orthogonal, each of Hilbert–Schmidt norm $2$. Because the matrices are real, the dagger is the transpose.</p>
@@ -446,8 +446,9 @@ $$
 $$
 where $e_\mu^{-1}=e_t$ for $\mu=t$ and $e_\mu^{-1}=-e_\mu$ for $\mu=x,y,z$. The composition law then gives
 $$
-(L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}})^{\mathsf T}L_{e_{\mu^{-1}}e_\rho}^{\mathrm{axf}}R_{e_\sigma e_{\nu^{-1}}}^{\mathrm{axf}}
-=\varepsilon\varepsilon'\,L_{e_{\mu'}}^{\mathrm{axf}}R_{e_{\nu'}}^{\mathrm{axf}}.
+(L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}})^{\mathsf T}L_{e_\rho}^{\mathrm{axf}}R_{e_\sigma}^{\mathrm{axf}}
+=L_{e_{\mu^{-1}}}^{\mathrm{axf}}R_{e_{\nu^{-1}}}^{\mathrm{axf}}L_{e_\rho}^{\mathrm{axf}}R_{e_\sigma}^{\mathrm{axf}}
+=\varepsilon\varepsilon'\,L_{e_{\mu'}}^{\mathrm{axf}}R_{e_{\nu'}}^{\mathrm{axf}},
 $$
 The trace of $L_{e_{\mu'}}^{\mathrm{axf}}R_{e_{\nu'}}^{\mathrm{axf}}$ is $4$ exactly when $\mu'=\nu'=t$ and $0$ otherwise. The condition $\mu^{-1}\rho=t$ is $\rho=\mu$, and the condition $\sigma\nu^{-1}=t$ is $\sigma=\nu$; in that case the two signs are $+1$. Hence the inner product is $4$ exactly when $\mu=\rho$ and $\nu=\sigma$, and $0$ otherwise.</p>
 <p><strong>The coefficient formula.</strong> If $M=\sum c_{\mu\nu}L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$, then orthogonality gives

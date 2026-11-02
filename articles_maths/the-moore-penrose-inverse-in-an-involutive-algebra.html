@@ -89,7 +89,7 @@ $$</p>
 <p>$$
 aA=pA,\qquad Aa=Aq,\qquad a=pa=aq,\qquad a^{+}=qa^{+}p .
 $$</p>
-<p><em>Proof.</em> The first equation of the definition gives $a=aa^{+}a=pa$, and the second gives $p^{2}=aa^{+}aa^{+}=a(a^{+}aa^{+})=aa^{+}=p$; the third gives $p^{*}=p$. Hence $p$ is a projection and $a=pa\in pA$, so $aA\subseteq pA$; conversely $p=aa^{+}\in aA$, so $pA\subseteq aA$ and the two right ideals are equal. The same computation with $a$ and $a^{+}$ exchanged gives $q^{2}=q=q^{*}$ and $Aa=Aq$. Then $a^{+}=a^{+}aa^{+}=qa^{+}$ and $a^{+}=a^{+}aa^{+}=a^{+}p$, so $a^{+}=qa^{+}p$. $\square$</p>
+<p><em>Proof.</em> The first equation of the definition gives $a=aa^{+}a=pa$, and the second gives $p^{2}=aa^{+}aa^{+}=a(a^{+}aa^{+})=aa^{+}=p$; the third gives $p^{*}=p$. Hence $p$ is a projection and $a=pa\in pA$, so $aA\subseteq pA$; conversely $p=aa^{+}\in aA$, so $pA\subseteq aA$ and the two right ideals are equal. The same computation with $a$ and $a^{+}$ exchanged gives $q^{2}=q=q^{*}$ and $Aa=Aq$. Then $a^{+}=a^{+}aa^{+}=qa^{+}$ and $a^{+}=a^{+}aa^{+}=a^{+}p$, so $a^{+}=qa^{+}p$.</p>
 <p><strong>Remark (what the inverse reads).</strong> Let $\ker a=\{x:ax=0\}$ and $\ker a^{+}=\{x:a^{+}x=0\}$, right ideals. The lemma gives</p>
 <p>$$
 \ker a=(1-q)A,\qquad \ker a^{+}=(1-p)A,
@@ -97,13 +97,13 @@ $$</p>
 <p>because $ax=0$ is equivalent to $qx=a^{+}ax=0$, and symmetrically. The element $a$ maps $qA$ bijectively onto $pA$, with inverse $a^{+}$, and $a^{+}$ is zero on the complementary ideal $(1-p)A$. The four conditions are therefore a statement about one isomorphism of right ideals and two complementary projections, and nothing more.</p>
 <h2 id="uniqueness">Uniqueness</h2>
 <p><strong>Lemma (the projection of an ideal).</strong> Let $p$ and $q$ be projections. If $pA=qA$, then $p=q$.</p>
-<p><em>Proof.</em> From $pA=qA$ one has $p\in qA$, so $p=qx$ for some $x$, and $qp=q^{2}x=qx=p$. Symmetrically $q\in pA$ gives $pq=q$. Starring the first identity, $p=p^{*}=(qp)^{*}=p^{*}q^{*}=pq=q$. $\square$</p>
+<p><em>Proof.</em> From $pA=qA$ one has $p\in qA$, so $p=qx$ for some $x$, and $qp=q^{2}x=qx=p$. Symmetrically $q\in pA$ gives $pq=q$. Starring the first identity, $p=p^{*}=(qp)^{*}=p^{*}q^{*}=pq=q$.</p>
 <p><strong>Theorem (uniqueness).</strong> An element of $A$ has at most one Moore–Penrose inverse.</p>
 <p><em>Proof.</em> Let $a^{+}$ and $b$ both satisfy the four conditions for $a$. By the lemma of §<em>The Four Conditions</em>, the products $p=aa^{+}$ and $q=a^{+}a$ generate $aA$ and $Aa$, and so do $ab$ and $ba$. The lemma above gives $ab=p$ and $ba=q$. Therefore</p>
 <p>$$
 b=bab=b\bigl(aa^{+}a\bigr)b=(ba)a^{+}(ab)=qa^{+}p=a^{+},
 $$</p>
-<p>the last equality by the lemma of §<em>The Four Conditions</em>. $\square$</p>
+<p>the last equality by the lemma of §<em>The Four Conditions</em>.</p>
 <p>The uniqueness is algebraic and uses neither a basis nor a norm. It also shows that the two projections are part of the data of $a$ alone: they are the projections that generate its two ideals, and no choice is made.</p>
 <h2 id="existence">Existence</h2>
 <p>Existence is a condition on the two ideals, and it can fail.</p>
@@ -118,14 +118,14 @@ $$</p>
 <p>$$
 aba=pa=a,\qquad bab=qb=b,
 $$</p>
-<p>and the two products $ab=p$ and $ba=q$ are projections, so all four Penrose equations hold. $\square$</p>
+<p>and the two products $ab=p$ and $ba=q$ are projections, so all four Penrose equations hold.</p>
 <p>The proof also shows what the inverse is: the inverse of the isomorphism $a:qA\to pA$, extended by zero. Nothing else enters, and no positivity is used.</p>
 <p><strong>Corollary (the units).</strong> If $a$ is invertible, then $a^{+}=a^{-1}$, with $p=q=1$.</p>
-<p><em>Proof.</em> Take $p=q=1$; the restriction $a:A\to A$ is bijective. $\square$</p>
+<p><em>Proof.</em> Take $p=q=1$; the restriction $a:A\to A$ is bijective.</p>
 <p><strong>Corollary (the projections).</strong> If $p$ is a projection, then $p^{+}=p$.</p>
-<p><em>Proof.</em> Take $p=q$ in the criterion; $p$ is the identity on $pA$. $\square$</p>
+<p><em>Proof.</em> Take $p=q$ in the criterion; $p$ is the identity on $pA$.</p>
 <p><strong>Corollary (matrix algebras).</strong> In $M_{n}(\mathbb{C})$ with the conjugate transpose, every element has a Moore–Penrose inverse.</p>
-<p><em>Proof.</em> Let $p$ be the orthogonal projection onto the column space of $a$ and $q$ the orthogonal projection onto the row space. Both are projections of the algebra, $aA=pA$ and $Aa=Aq$, and $\ker a$ is the orthogonal complement of the row space, so $a$ is injective on $qA$. The criterion applies; the closed form is in <em>The Moore–Penrose Inverse of a Matrix</em>, which also treats the rectangular case, where the inverse leaves the algebra of square matrices. $\square$</p>
+<p><em>Proof.</em> Let $p$ be the orthogonal projection onto the column space of $a$ and $q$ the orthogonal projection onto the row space. Both are projections of the algebra, $aA=pA$ and $Aa=Aq$, and $\ker a$ is the orthogonal complement of the row space, so $a$ is injective on $qA$. The criterion applies; the closed form is in <em>The Moore–Penrose Inverse of a Matrix</em>, which also treats the rectangular case, where the inverse leaves the algebra of square matrices.</p>
 <p><strong>Remark (existence is not automatic).</strong> Let $A=\mathbb{C}[x]/(x^{2})$ with the identity involution, and $a=x$. Then $a^{2}=0$, and for every $b=u+vx$,</p>
 <p>$$
 aba=x(u+vx)x=ux^{2}+vx^{3}=0\neq x,
@@ -155,7 +155,7 @@ $$</p>
 <p>$$
 bxb=(a^{+})^{*}\bigl(a^{+}aa^{*}(a^{+})^{*}\bigr)a^{+}=(a^{+})^{*}(a^{+}a)(a^{+}a)^{*}a^{+}=(a^{+})^{*}a^{+}=b,
 $$</p>
-<p>and $xb=aa^{*}(a^{+})^{*}a^{+}=a(a^{+}a)a^{+}=aa^{+}$ and $bx=(a^{+})^{*}(a^{+}a)a^{*}=((a^{+})^{*}a^{*})^{2}=(aa^{+})^{2}=aa^{+}$ are projections. Hence $b=x^{+}$. The fourth identity follows from the third applied to $a^{*}$, with the second used to remove the stars. Finally $(a^{*}a)^{+}a^{*}=a^{+}(a^{+})^{*}a^{*}=a^{+}aa^{+}=a^{+}$, and symmetrically $a^{*}(aa^{*})^{+}=a^{+}$. $\square$</p>
+<p>and $xb=aa^{*}(a^{+})^{*}a^{+}=a(a^{+}a)a^{+}=aa^{+}$ and $bx=(a^{+})^{*}(a^{+}a)a^{*}=((a^{+})^{*}a^{*})^{2}=(aa^{+})^{2}=aa^{+}$ are projections. Hence $b=x^{+}$. The fourth identity follows from the third applied to $a^{*}$, with the second used to remove the stars. Finally $(a^{*}a)^{+}a^{*}=a^{+}(a^{+})^{*}a^{*}=a^{+}aa^{+}=a^{+}$, and symmetrically $a^{*}(aa^{*})^{+}=a^{+}$.</p>
 <p><strong>Proposition (unitary factors).</strong> If $u$ is unitary, $u^{*}u=uu^{*}=1$, then</p>
 <p>$$
 (ua)^{+}=a^{+}u^{*},\qquad (au)^{+}=u^{*}a^{+}.
@@ -165,7 +165,7 @@ $$</p>
 ua\,a^{+}u^{*}\,ua=uaa^{+}a=ua,\qquad
 a^{+}u^{*}\,ua\,a^{+}u^{*}=a^{+}aa^{+}u^{*}=a^{+}u^{*},
 $$</p>
-<p>and the two products are $uaa^{+}u^{*}$, which is the conjugate of the projection $aa^{+}$ by the unitary $u$, and $a^{+}a$, which is a projection. The second identity is the first applied to $a^{*}$ and conjugated. $\square$</p>
+<p>and the two products are $uaa^{+}u^{*}$, which is the conjugate of the projection $aa^{+}$ by the unitary $u$, and $a^{+}a$, which is a projection. The second identity is the first applied to $a^{*}$ and conjugated.</p>
 <p><strong>Remark (the product rule fails).</strong> The identity $(ab)^{+}=b^{+}a^{+}$ does not hold in general. In $M_{2}(\mathbb{C})$, take</p>
 <p>$$
 a=\begin{pmatrix}1&1\end{pmatrix},\qquad b=\begin{pmatrix}1\\0\end{pmatrix}.

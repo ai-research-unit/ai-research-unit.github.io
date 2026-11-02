@@ -297,9 +297,9 @@ $$</p>
 <p>An element $\tilde H\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde H$.</p>
 <p>The identification is exact: $\mathbb M_+$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,</p>
 <p>$$
-\operatorname{Tr}\bigl(\mathsf M_2(\tilde\varrho)\mathsf M_2(\tilde H)\bigr)=2\langle\tilde\varrho,\tilde H\rangle_{*}=h_t+\vec r\cdot\vec h ,
+\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde H)\bigr)=2\langle\tilde{Ϛ},\tilde H\rangle_{*}=h_t+\vec r\cdot\vec h ,
 $$</p>
-<p>for the state $\tilde\varrho=\tfrac12(e_t+i\vec r)$ of trace one.</p>
+<p>for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.</p>
 <p>The boundary is that the word <em>observable</em> uses the involution ${}^{*}$, which belongs to the real structure of $\mathbb B$. The complex isomorphism alone does not single out $\mathbb M_+$: it carries $\mathbb M_+$ and $\mathbb M_-$ to two complementary subspaces of the same complex algebra, and the choice between them is physical.</p>
 <h3 id="the-three-directions-are-the-three-spin-axes">The Three Directions Are the Three Spin Axes</h3>
 <p>A traceless Hermitian element is $\tilde H=i\vec h$ with $\vec h\in\mathbb R^3$, and its matrix is $\vec h\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator</p>
@@ -311,24 +311,24 @@ $$</p>
 <h3 id="the-state-is-the-positive-trace-one-matrix">The State Is the Positive Trace-One Matrix</h3>
 <p>A state is a Hermitian element of trace one whose matrix is positive semidefinite:</p>
 <p>$$
-\tilde\varrho=\tfrac12(e_t+i\vec r),
+\tilde{Ϛ}=\tfrac12(e_t+i\vec r),
 \qquad
-\rho=\mathsf M_2(\tilde\varrho)=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr),
+\rho=\mathsf M_2(\tilde{Ϛ})=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr),
 \qquad
 \lvert\vec r\rvert\le1 .
 $$</p>
 <p>The trace-one condition is the normalisation, the positivity is $\lvert\vec r\rvert\le1$, and the purity is the boundary $\lvert\vec r\rvert=1$. The state space is the Bloch ball, the pure states are its boundary and the maximally mixed state is its centre.</p>
 <p>The determinant of the state matrix is</p>
 <p>$$
-\det\mathsf M_2(\tilde\varrho)=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
+\det\mathsf M_2(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
 $$</p>
 <p>the product of the two eigenvalues $\tfrac12(1\pm\lvert\vec r\rvert)$. On the ball it is the radial gap to the pure boundary: it vanishes on the sphere and is maximal at the centre.</p>
 <h3 id="purity-entropy-and-the-zero-divisor">Purity, Entropy and the Zero Divisor</h3>
 <p>Three quantities read off the same determinant:</p>
 <p>$$
-\operatorname{Tr}(\tilde\varrho^{2})=1-2\det\mathsf M_2(\tilde\varrho),
+\operatorname{Tr}(\tilde{Ϛ}^{2})=1-2\det\mathsf M_2(\tilde{Ϛ}),
 \qquad
-S_L=1-\operatorname{Tr}(\tilde\varrho^{2})=2\det\mathsf M_2(\tilde\varrho).
+S_L=1-\operatorname{Tr}(\tilde{Ϛ}^{2})=2\det\mathsf M_2(\tilde{Ϛ}).
 $$</p>
 <p>The first is the purity; the second is the linear entropy. At the centre the determinant is $\tfrac14$, the purity $\tfrac12$ and the linear entropy $\tfrac12$. On the sphere the determinant vanishes, the purity is one and the entropy is zero.</p>
 <div class="table-scroll"><table>
@@ -377,7 +377,7 @@ $$</p>
 $$</p>
 <p>The norm of an amplitude is real and non-negative. The state inherits the singular values and loses the phase: with $\tilde Q_{\mathrm n}=\tilde Q_H/\sqrt{\sigma_1^{2}+\sigma_2^{2}}$, the state is $\tilde Q_{\mathrm n}^{2}$, its eigenvalues are $p_i=\sigma_i^{2}/(\sigma_1^{2}+\sigma_2^{2})$, and its determinant is</p>
 <p>$$
-\det\mathsf M_2(\tilde\varrho_Q)=\frac{\sigma_1^{2}\sigma_2^{2}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}\in\left[0,\tfrac14\right].
+\det\mathsf M_2(\tilde{Ϛ}_Q)=\frac{\sigma_1^{2}\sigma_2^{2}}{(\sigma_1^{2}+\sigma_2^{2})^{2}}\in\left[0,\tfrac14\right].
 $$</p>
 <p>The mixedness is the spread of the singular values. The boundary is that the singular values are not the moduli of the eigenvalues for a non-normal element; only for a normal element do the two coincide.</p>
 <h2 id="the-phase-fibre">The Phase Fibre</h2>
@@ -419,7 +419,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathsf M_2(\tilde\varrho)$</td>
+<td>$\mathsf M_2(\tilde{Ϛ})$</td>
 <td>$\tfrac14(1-r^{2})$</td>
 <td>$\tfrac12(1\pm r)$</td>
 <td>mixedness; the purity is affine in the determinant</td>
@@ -500,15 +500,15 @@ $$</p>
 <td>the sandwich; $\det=\lvert N\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$</td>
 </tr>
 <tr>
-<td>$\tilde\varrho=\tfrac12(e_t+i\vec r)$</td>
+<td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$</td>
 <td>a trace-one state of the Bloch ball</td>
 </tr>
 <tr>
-<td>$\det\mathsf M_2(\tilde\varrho)=\tfrac14(1-r^{2})$</td>
+<td>$\det\mathsf M_2(\tilde{Ϛ})=\tfrac14(1-r^{2})$</td>
 <td>the mixedness</td>
 </tr>
 <tr>
-<td>$S_L=2\det\mathsf M_2(\tilde\varrho)$</td>
+<td>$S_L=2\det\mathsf M_2(\tilde{Ϛ})$</td>
 <td>the linear entropy</td>
 </tr>
 <tr>

@@ -162,6 +162,15 @@ $$</p>
 <p><strong>Example (the round sphere).</strong> On $S^{n}$ with the round metric the operator is self-adjoint with $\tau D\tau^{-1}=-D$, so its spectrum is symmetric; the square is the Lichnerowicz Laplacian with the constant positive scalar curvature, and the vanishing theorem gives the absence of harmonic spinors; the adjoint of $D^{+}$ is $D^{-}$ and the index is zero.</p>
 <p><strong>Example (a $K3$ surface).</strong> On a $K3$ surface the operator is self-adjoint with index $\hat A[K3]=2$; the kernels of $D^{+}$ and $D^{-}$ have dimensions differing by $2$, and the spectral symmetry pairs the nonzero eigenvalues. The twisted operator $D_{E}$ has index $\int\hat A\operatorname{ch}(E)$; with $E$ the trivial bundle the untwisted value $2$ is recovered.</p>
 <p><strong>Example (the twisted operator and the vanishing).</strong> For a line bundle $L$ of negative degree over a Riemann surface of genus $g$ the twisted operator has vanishing kernel, and its index is by Riemann–Roch the Euler characteristic $\deg L+1-g$; the adjoint's kernel is therefore of dimension $g-1-\deg L$. The example shows the chiral asymmetry of the two kernels and the role of the adjoint in computing the index.</p>
+<h2 id="the-gamma-formulation">The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$</p>
+<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>Cauchy–Riemann operator</strong> $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ of a spin manifold, classically the <strong>Dirac operator</strong>, is <strong>formally self-adjoint</strong>, $D^{*}=D$, because the Clifford multiplication is skew-adjoint for the spinor metric and the spin connection is compatible with it, and the divergence vanishes on a closed manifold; it is self-adjoint as an unbounded operator with discrete real spectrum, orthogonal eigenspinors and $D^{2}\geq0$. In even dimensions the chirality makes the operator odd, splitting it into the <strong>mutually adjoint</strong> halves $(D^{+})^{*}=D^{-}$, with $\operatorname{coker}D^{+}=\ker D^{-}$ and index $\operatorname{ind}D^{+}=\operatorname{tr}(\tau\mid\ker D)=\int_M\hat A(TM)$; the spectrum is symmetric about the origin and the index is carried by the chiral zero modes alone. The <strong>twisted operator</strong> $D_{E}$ is self-adjoint with the same identities, the index $\int_M\hat A\operatorname{ch}(E)$ and the Weitzenböck square $\mathcal{R}^{E}=\tfrac14\operatorname{scal}+c(F^{E})$; the <strong>Lichnerowicz formula</strong> $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ is self-adjoint and gives the Bochner identity and the vanishing theorem for positive scalar curvature. The differential-geometric adjoint is the curved form of the algebraic <strong>Hermitian structure</strong> of <em>Dirac Operators with Hermitian Adjoint</em> and <em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em>: the spinor adjoint is the metric identification giving the $L^{2}$ inner product, the Dirac adjoint is the invariant pairing $\bar\psi\psi$ with the inserted vector, and the operator is self-adjoint for the module form in both cases.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -224,15 +233,6 @@ $$</p>
 <li>André Lichnerowicz, "Spineurs harmoniques," <em>Comptes Rendus de l'Académie des Sciences</em> <strong>257</strong> (1963), 7–9, for the formula $D^{2}=\nabla^{*}\nabla+\tfrac14\operatorname{scal}$ and the vanishing of the harmonic spinors.</li>
 <li>John Roe, <em>Elliptic Operators, Topology and Asymptotic Methods</em>, Pitman Research Notes in Mathematics 179 (Longman, 1988), for the differential-geometric adjoints, the domains and the elliptic theory.</li>
 </ul>
-<h2 id="appendix-the-gamma-formulation">Appendix — The Gamma Formulation</h2>
-<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
-<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
-<p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
-$$</p>
-<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
-<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
       </div>
     </main>
   </div>
