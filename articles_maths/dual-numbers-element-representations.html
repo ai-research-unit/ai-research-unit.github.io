@@ -105,9 +105,9 @@ $$</p>
 <h3 id="the-regular-representation">The Regular Representation</h3>
 <p>The <strong>regular representation</strong> of $\mathbb{D}'$ is $\mathbb{D}'$ acting on itself by left multiplication:</p>
 <p>$$
-\rho_{\mathrm{reg}}(Q_1) Q_2 = Q_1 Q_2, \qquad Q_1, Q_2 \in \mathbb{D}'.
+\rho^{\mathrm{reg}}(Q_1) Q_2 = Q_1 Q_2, \qquad Q_1, Q_2 \in \mathbb{D}'.
 $$</p>
-<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho_{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho_{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $q + \varepsilon q'$ to $q \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.</p>
+<p>This is the representation $\rho^{\mathrm{reg}} : \mathbb{D}' \to \operatorname{End}_R(\mathbb{D}')$ given by $\rho^{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{D}'$ on a free $R$-module of rank two. The nilpotent $E = \rho^{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $q + \varepsilon q'$ to $q \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.</p>
 <h3 id="the-trivial-representation">The Trivial Representation</h3>
 <p>The <strong>trivial representation</strong> (or <strong>augmentation representation</strong>) is the one-dimensional representation on $R$ defined by</p>
 <p>$$
@@ -181,7 +181,7 @@ $$</p>
 <p>$$
 R(\mathbb{D}') \cong \mathbb{Z} \oplus \mathbb{Z},
 $$</p>
-<p>with generators $[\rho_{\mathrm{triv}}]$ and $[\rho_{\mathrm{reg}}]$, corresponding to the trivial representation and the regular representation.</p>
+<p>with generators $[\rho_{\mathrm{triv}}]$ and $[\rho^{\mathrm{reg}}]$, corresponding to the trivial representation and the regular representation.</p>
 <h3 id="ring-structure">Ring Structure</h3>
 <p>The product in $R(\mathbb{D}')$ is given by the tensor product of representations:</p>
 <p>$$
@@ -216,7 +216,7 @@ $$</p>
 <p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$.</p>
 <p><strong>Duality is exact.</strong> It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.</p>
 <p><strong>The dual of the trivial representation is the trivial representation.</strong> $\rho_{\mathrm{triv}}^* \cong \rho_{\mathrm{triv}}$.</p>
-<p><strong>The dual of the regular representation is the regular representation.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
+<p><strong>The dual of the regular representation is the regular representation.</strong> $\rho^{\mathrm{reg}}{}^* \cong \rho^{\mathrm{reg}}$.</p>
 <p>So duality acts trivially on the set of indecomposable representations.</p>
 <h2 id="homomorphisms">Homomorphisms</h2>
 <h3 id="definition_3">Definition</h3>
@@ -246,7 +246,7 @@ $$</p>
 <h3 id="the-standard-non-split-extension">The Standard Non-Split Extension</h3>
 <p>The fundamental non-split extension is</p>
 <p>$$
-0 \to \rho_{\mathrm{triv}} \to \rho_{\mathrm{reg}} \to \rho_{\mathrm{triv}} \to 0,
+0 \to \rho_{\mathrm{triv}} \to \rho^{\mathrm{reg}} \to \rho_{\mathrm{triv}} \to 0,
 $$</p>
 <p>where the first map is the inclusion of $\ker E$ and the second is the quotient by $\operatorname{im} E$. This sequence does not split, because the regular representation is not the direct sum of two copies of the trivial representation.</p>
 <p>The extension class of this sequence is the generator of $\operatorname{Ext}^1_{\mathbb{D}'}(\rho_{\mathrm{triv}}, \rho_{\mathrm{triv}}) \cong R$. This is the algebraic content of the nilpotence of $\varepsilon$: the extension is non-trivial precisely because $\varepsilon^2 = 0$ but $\varepsilon \neq 0$.</p>
@@ -300,7 +300,7 @@ $$</p>
 <td>Square-zero endomorphism</td>
 </tr>
 <tr>
-<td>$\rho_{\mathrm{reg}}$</td>
+<td>$\rho^{\mathrm{reg}}$</td>
 <td>Regular representation</td>
 </tr>
 <tr>

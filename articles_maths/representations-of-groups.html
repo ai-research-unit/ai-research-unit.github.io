@@ -170,15 +170,15 @@ $$</p>
 <h2 id="the-regular-representation_1">The Regular Representation</h2>
 <p>Let $G$ be finite and let $F=\mathbb{C}$. The character of the left regular representation is</p>
 <p>$$
-\chi_{\mathrm{reg}}(g)=\begin{cases} |G|, & g=1,\\ 0, & g \neq 1,\end{cases}
+\chi^{\mathrm{reg}}(g)=\begin{cases} |G|, & g=1,\\ 0, & g \neq 1,\end{cases}
 $$</p>
 <p>because the matrix of left multiplication by $g$ in the basis $G$ is a permutation matrix with no fixed point for $g\neq1$, and the number of fixed points is $|G|\delta_{g,1}$. Its decomposition follows by computing multiplicities:</p>
 <p>$$
-\langle \chi_{\mathrm{reg}}, \chi_i \rangle_G=\frac{1}{|G|}|G|\,\overline{\chi_i(1)}=d_i,
+\langle \chi^{\mathrm{reg}}, \chi_i \rangle_G=\frac{1}{|G|}|G|\,\overline{\chi_i(1)}=d_i,
 $$</p>
 <p>so that</p>
 <p>$$
-F[G] \cong \bigoplus_{i=1}^{r} V_i^{\oplus d_i}, \qquad \chi_{\mathrm{reg}}=\sum_{i=1}^{r} d_i\chi_i.
+F[G] \cong \bigoplus_{i=1}^{r} V_i^{\oplus d_i}, \qquad \chi^{\mathrm{reg}}=\sum_{i=1}^{r} d_i\chi_i.
 $$</p>
 <p>Evaluating at $1$ gives the dimension identity $\sum_i d_i^2=|G|$ of §Complete Reducibility. The regular representation therefore contains every irreducible exactly as many times as its degree, and it is the representation-theoretic embodiment of the group algebra; its endomorphism ring is $(F[G])^{\mathrm{opp}}\cong F[G]$, by the theorem on the regular module of <em>Modules over an Algebra</em>, and the Wedderburn decomposition of the group algebra is read off from the isotypic decomposition of the regular module.</p>
 <h2 id="tensor-products-and-clebschgordan">Tensor Products and Clebsch–Gordan</h2>
@@ -261,7 +261,7 @@ $$</p>
 \mathbb{C}[Q_8] \cong \mathbb{C}^4 \oplus M_2(\mathbb{C}),
 $$</p>
 <p>with five irreducible characters of degrees $1,1,1,1,2$ and $\sum_i d_i^2=8=|Q_8|$. Over $\mathbb{R}$ the two-dimensional factor is replaced by the division algebra $\mathbb{H}$, as in <em>Morita Equivalence</em>; the contrast between $\mathbb{C}$ and $\mathbb{R}$ here is not pursued further.</p>
-<p><strong>(c) The regular representation of a finite cyclic group.</strong> For $G=\mathbb{Z}/n\mathbb{Z}$ the regular representation is $\mathbb{C}[G]$ acting on itself; its character is $n$ at the identity and $0$ elsewhere, and its decomposition $\bigoplus_\zeta V_\zeta$ has each one-dimensional character with multiplicity $1$, matching $\chi_{\mathrm{reg}}=\sum_\zeta\zeta$.</p>
+<p><strong>(c) The regular representation of a finite cyclic group.</strong> For $G=\mathbb{Z}/n\mathbb{Z}$ the regular representation is $\mathbb{C}[G]$ acting on itself; its character is $n$ at the identity and $0$ elsewhere, and its decomposition $\bigoplus_\zeta V_\zeta$ has each one-dimensional character with multiplicity $1$, matching $\chi^{\mathrm{reg}}=\sum_\zeta\zeta$.</p>
 <p><strong>(d) Semidirect products.</strong> For a semidirect product $G=N\rtimes H$ with $N$ normal, the irreducible representations are constructed by Clifford theory from the orbits of $H$ on the irreducibles of $N$ and the projective representations of the inertia groups; the group algebra is Morita equivalent to a crossed product of $F[N]$ by $H$, and the simple modules and their endomorphism division rings are computed from that equivalence. This is the standard application of <em>Morita Equivalence</em> to group representations and is treated in the sources cited below.</p>
 <h2 id="summary">Summary</h2>
 <p>A representation of a group $G$ over a field $F$ is a group homomorphism $G\to GL_F(V)$, equivalently a left module over the group algebra $F[G]$, and the two notions form equivalent categories. Submodules, quotients, direct sums, duality and tensor products of representations are the corresponding module constructions, the tensor product existing because $F[G]$ is a Hopf algebra with comultiplication $\Delta(g)=g\otimes g$. When $G$ is finite and $\operatorname{char} F$ does not divide $|G|$, Maschke's theorem makes $F[G]$ semisimple and every representation completely reducible; the Wedderburn–Artin theorem then writes $F[G]\cong\prod_i M_{n_i}(D_i)$, with $|G|=\sum_i n_i^2\dim_F D_i$, and over an algebraically closed field of characteristic zero this is $|G|=\sum_i d_i^2$ with the number of factors equal to the number of conjugacy classes.</p>
@@ -344,7 +344,7 @@ $$</p>
 <td>representation ring</td>
 </tr>
 <tr>
-<td>$\chi_{\mathrm{reg}}$</td>
+<td>$\chi^{\mathrm{reg}}$</td>
 <td>character of the regular representation</td>
 </tr>
 <tr>

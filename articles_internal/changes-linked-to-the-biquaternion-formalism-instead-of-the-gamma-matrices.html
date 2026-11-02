@@ -117,8 +117,8 @@
 </tr>
 </tbody>
 </table></div>
-<p><strong>The refusal.</strong> The objection computes the rank of a single left factor, $\operatorname{rank}L_Q=2\operatorname{rank}\mathsf M_2(Q)$, and applies it to the cell. A cell multiplies both sides, $T_{Q,P}=\mathsf M_2(P)^{\mathrm T}\otimes\mathsf M_2(Q)$, and the rank of a Kronecker product is the product of the ranks, so $\operatorname{rank}T_{Q,P}=\operatorname{rank}\mathsf M_2(Q)\cdot\operatorname{rank}\mathsf M_2(P)$. The nine rank pairs give exactly $\{0,1,2,4\}$; the value one occurs whenever both factors have rank one. The set $\{0,2,4\}$ is right for $L_Q$ and wrong for the cell. Item 2 of §5 now carries the computation and names the confusion as the trap, because it is the mistake a reader will make.</p>
-<p><strong>The second round.</strong> The revision that answered the first review then wrote that the coefficient rank and the matrix rank "are the same number" for a cell. That is false, and item 1 of the same section was the counterexample: $T_{e_t,e_t}$ has length one and matrix rank four. The sentence came from attaching a computation of the matrix rank to a claim about the coefficient rank. Both directions of the independence are now exhibited, and §7 carries the rows.</p>
+<p><strong>The refusal.</strong> The objection computes the rank of a single left factor, $\operatorname{rank}L_Q=2\operatorname{rank}\mathsf M_2(Q)$, and applies it to the cell. A cell multiplies both sides, $L_{Q}R_{P}=\mathsf M_2(P)^{\mathrm T}\otimes\mathsf M_2(Q)$, and the rank of a Kronecker product is the product of the ranks, so $\operatorname{rank}L_{Q}R_{P}=\operatorname{rank}\mathsf M_2(Q)\cdot\operatorname{rank}\mathsf M_2(P)$. The nine rank pairs give exactly $\{0,1,2,4\}$; the value one occurs whenever both factors have rank one. The set $\{0,2,4\}$ is right for $L_Q$ and wrong for the cell. Item 2 of §5 now carries the computation and names the confusion as the trap, because it is the mistake a reader will make.</p>
+<p><strong>The second round.</strong> The revision that answered the first review then wrote that the coefficient rank and the matrix rank "are the same number" for a cell. That is false, and item 1 of the same section was the counterexample: $L_{e_t}R_{e_t}$ has length one and matrix rank four. The sentence came from attaching a computation of the matrix rank to a claim about the coefficient rank. Both directions of the independence are now exhibited, and §7 carries the rows.</p>
 <p>The two claims the reviews singled out as the payoff, §4.2 and §4.4, were rechecked and left unaltered.</p>
 <h2 id="1-the-state-of-the-withdrawal">1. The state of the withdrawal</h2>
 <p>The physics corpus holds 404 articles. Ninety-one of them carry the closing appendix <code>## Appendix — The Gamma Formulation</code>. The other 313 never wrote a gamma generator in the first place — most of them are classical, thermodynamic or algebraic — so the absence of an appendix there is not an unfinished migration.</p>
@@ -127,58 +127,59 @@
 <li><em>Why the Biquaternion Formalism Instead of Gamma Matrices</em>, whose subject is the comparison, and which therefore displays the five cells next to the five gammas.</li>
 <li><em>Conventions of the Frames</em>, which names the frames $\gamma_\mu[\mathbb{B}]$ and $\gamma_\mu[\mathbb{M}_-]$ because a frame is its subject. It carries no appendix, and it should not: it is the one article where the frame is the datum.</li>
 </ul>
-<p>One stray stood outside this design, and it has since been repaired. In <em>Thomson and Compton Scattering: the Biquaternion Polarization Algebra</em>, the body wrote the spin sum of the Dirac trace as $\sum_s \xi_s\bar{\xi}_s = \gamma_\mu p_\mu + m$, in a file with no appendix. The gamma there was neither an exception nor a coordinate; it was a leftover, and it was the only body in the corpus still in column language. The article was rewritten to the corpus form: the sum is now the cell $D(p)=\mathsf C_\mu p_\mu+m\,T_{e_t,e_t}$, the spin-resolved sum is $D_s(p)=\tfrac12 D(p)(1+\mathsf C_5\mathsf C_\mu s_\mu)$, and the article carries the standard closing appendix. The old citation was also wrong — the spin sums live in <em>Solutions and the Non-Relativistic Limit</em>, not in <em>The Dirac Equation in Biquaternionic Form</em> — and the object was called a projector without the normalisation that makes it one.</p>
+<p>One stray stood outside this design, and it has since been repaired. In <em>Thomson and Compton Scattering: the Biquaternion Polarization Algebra</em>, the body wrote the spin sum of the Dirac trace as $\sum_s \xi_s\bar{\xi}_s = \gamma_\mu p_\mu + m$, in a file with no appendix. The gamma there was neither an exception nor a coordinate; it was a leftover, and it was the only body in the corpus still in column language. The article was rewritten to the corpus form: the sum is now the cell $D(p)=iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu+m\,L_{e_t}R_{e_t}$, the spin-resolved sum is $D_s(p)=\tfrac12 D(p)(1+-iL_{e_t}R_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}} s_\mu)$, and the article carries the standard closing appendix. The old citation was also wrong — the spin sums live in <em>Solutions and the Non-Relativistic Limit</em>, not in <em>The Dirac Equation in Biquaternionic Form</em> — and the object was called a projector without the normalisation that makes it one.</p>
 <p>The remaining bodies that carry the letter write another quantity. In <em>Dirac Matter: Graphene, Dirac Cones and Topological Insulators</em> the $\gamma_0\approx2.8$ eV is the nearest-neighbour hopping; in <em>Causality and the Light Cone</em>, <em>Velocity Space as Hyperbolic Geometry</em>, <em>Paravectors and the Geometry of Spacetime</em> and <em>Noether's Theorem</em> the $\gamma_1,\gamma_2,\gamma_{\mathrm{rel}}$ are Lorentz factors; in <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula</em> the $\gamma_2$ is a mass-formula coefficient. These are homonyms of the generator, not uses of it, and no appendix is owed for them.</p>
 <p>The vocabulary the rewrite spread is the measure of its reach: 43 articles now state the chiral pair explicitly, 87 speak of a two-sided operator, 169 of chirality, 86 of the central sign $\chi$, and 70 of the Peirce decomposition. The rewrite did not touch only the Dirac articles; it spread a distinction into every article that touches a spinor.</p>
 <h2 id="2-the-dictionary-stated-once">2. The dictionary, stated once</h2>
-<p>The five generators are cells, $T_{a,b}=L_aR_b$:</p>
+<p>The five frame cells are written as their two multipliers, with $\nu(t)=x$ and $\nu(k)=y$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>generator</th>
 <th>cell</th>
+<th>value</th>
 <th>left multiplier</th>
 <th>right multiplier</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\mathsf C_0$</td>
-<td>$iT_{e_t,e_x}$</td>
+<td>$iL_{e_t}R_{\vec e_x}$</td>
+<td>$iR_{\vec e_x}$</td>
 <td>$i e_t$ (central)</td>
-<td>$e_x$</td>
+<td>$\vec e_x$</td>
 </tr>
 <tr>
-<td>$\mathsf C_1$</td>
-<td>$iT_{e_x,e_y}$</td>
-<td>$e_x$</td>
-<td>$e_y$</td>
+<td>$iL_{e_\vec e_x}R_{\vec e_y}$</td>
+<td>$iL_{\vec e_x}R_{\vec e_y}$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$\mathsf C_2$</td>
-<td>$iT_{e_y,e_y}$</td>
-<td>$e_y$</td>
-<td>$e_y$</td>
+<td>$iL_{e_\vec e_y}R_{\vec e_y}$</td>
+<td>$iL_{\vec e_y}R_{\vec e_y}$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$\mathsf C_3$</td>
-<td>$iT_{e_z,e_y}$</td>
-<td>$e_z$</td>
-<td>$e_y$</td>
+<td>$iL_{e_\vec e_z}R_{\vec e_y}$</td>
+<td>$iL_{\vec e_z}R_{\vec e_y}$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$\mathsf C_5$</td>
-<td>$-iT_{e_t,e_z}$</td>
+<td>$-iL_{e_t}R_{\vec e_z}$</td>
+<td>$-iR_{\vec e_z}$</td>
 <td>$-i e_t$ (central)</td>
-<td>$e_z$</td>
+<td>$\vec e_z$</td>
 </tr>
 </tbody>
 </table></div>
-<p>Two rows of the table — the timelike generator and the chirality — have a central left multiplier, and that is the source of the first two results below. The list also misses an object: the identity is the cell $T_{e_t,e_t}$, and the mass multiplies it.</p>
+<p>No single letter names a cell: the cell is its two multipliers, $L_{a}R_{b}\psi=a\psi b$.
+Two rows of the table — the timelike cell and the chirality cell — have a central left multiplier, and that is the source of the first two results below. The list also misses an object: the identity is the cell $L_{e_t}R_{e_t}$, and the mass multiplies it.</p>
 <h2 id="3-five-things-that-became-visible">3. Five things that became visible</h2>
 <h3 id="31-chirality-is-a-right-multiplication">3.1 Chirality is a right multiplication</h3>
 <p>$$
-\Gamma=-iT_{e_t,e_z}=-i\,R_{e_z},\qquad \Gamma^2=e_t,\qquad \{\Gamma,\mathsf C_\mu\}=0 .
+\Gamma=-iL_{e_t}R_{e_z}=-i\,R_{e_z},\qquad \Gamma^2=e_t,\qquad \{\Gamma,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0 .
 $$</p>
 <p>Written as a cell, chirality acts only after the field. It has no left multiplier. Verified: the residual of $\Gamma+iR_{e_z}$ is $0$, and $\Gamma$ anticommutes with all four generators to residual $0$.</p>
 <p>The sharper statement is a negative one. No element $a\in\mathbb{B}$ has $L_a=\Gamma$. Fitting $\Gamma$ against the four-dimensional space $\{L_a\}$ leaves a residue of $1$ in one entry, so $\Gamma$ is not a left multiplication at all. Chirality is therefore not something the algebra does to a field from the left; it is something done to the field from the right. In gamma notation the distinction has no name, because $\gamma_5$ acts on a column, and a column has one side only.</p>
@@ -195,35 +196,35 @@ $$</p>
 <tbody>
 <tr>
 <td>mass</td>
-<td>$mT_{e_t,e_t}=m\,\mathbf{1}$</td>
+<td>$mL_{e_t}R_{e_t}=m\,\mathbf{1}$</td>
 <td>neither (the centre)</td>
 </tr>
 <tr>
-<td>timelike generator $\mathsf C_0$</td>
-<td>$iT_{e_t,e_x}=R_{i e_x}$</td>
+<td>timelike cell</td>
+<td>$iL_{e_t}R_{e_x}=iR_{e_x}$</td>
 <td>right only</td>
 </tr>
 <tr>
-<td>chirality $\Gamma=\mathsf C_5$</td>
-<td>$-iT_{e_t,e_z}=-iR_{e_z}$</td>
+<td>chirality cell</td>
+<td>$-iL_{e_t}R_{e_z}=-iR_{e_z}$</td>
 <td>right only</td>
 </tr>
 <tr>
-<td>spatial generators $\mathsf C_k$</td>
-<td>$iT_{e_k,e_y}$</td>
+<td>spatial cells</td>
+<td>$iL_{e_\vec e_k}R_{e_y}$</td>
 <td>both</td>
 </tr>
 </tbody>
 </table></div>
-<p>The reason is structural and not a feature of the reference frame. A cell whose left multiplier is central is a multiple of a right multiplication: $T_{\lambda e_t,b}=\lambda R_b$. The timelike generator and the chirality both have $e_t$ on the left, up to the central $i$, so both are one-sided in every frame. The spatial generators have $\vec e_k$ on the left, which is not central, so they are genuinely two-sided, and the anticommutator $\{\mathsf C_0,\mathsf C_k\}=0$ comes entirely from the right factors, $R_{e_y}R_{e_x}=-R_{e_x}R_{e_y}$.</p>
-<p>The one-sidedness of $\mathsf C_0$ and $\gamma_5$ was checked in three frame pairs, $(\beta,\delta)=(\vec e_y,\vec e_x)$, $(\vec e_x,\vec e_y)$, $(\vec e_z,\vec e_x)$, with residual $0$ in each, together with the Clifford relations, also residual $0$ in each. The spatial generators fail the same test with residual $2$, as they must.</p>
+<p>The reason is structural and not a feature of the reference frame. A cell whose left multiplier is central is a multiple of a right multiplication: $L_{\lambda e_t}R_{b}=\lambda R_b$. The timelike cell and the chirality cell both have $e_t$ on the left, up to the central $i$, so both are one-sided in every frame. The spatial cells have $\vec e_k$ on the left, which is not central, so they are genuinely two-sided, and the anticommutator $\{iL_{e_t}R_{e_x},iL_{e_\vec e_k}R_{e_y}\}=0$ comes entirely from the right factors, $R_{e_y}R_{e_x}=-R_{e_x}R_{e_y}$.</p>
+<p>The one-sidedness of $iL_{e_t}R_{e_x}$ and $\gamma_5$ was checked in three frame pairs, $(\beta,\delta)=(\vec e_y,\vec e_x)$, $(\vec e_x,\vec e_y)$, $(\vec e_z,\vec e_x)$, with residual $0$ in each, together with the Clifford relations, also residual $0$ in each. The spatial cells fail the same test with residual $2$, as they must.</p>
 <p>Read as physics, the table says that time and chirality are properties of the <em>second</em> side, space is a property of the <em>pair</em> of sides, and the mass is central. This is the same content as the corpus's statement that the fourth Clifford direction <em>is</em> the second side, seen from the other end: the fourth direction is one-sided for the same reason the chirality is.</p>
 <h3 id="33-the-mass-is-the-identity-cell-and-the-gamma-list-cannot-name-it">3.3 The mass is the identity cell, and the gamma list cannot name it</h3>
 <p>$$
-m\,T_{e_t,e_t}\psi=m\,e_t\psi e_t=m\psi .
+m\,L_{e_t}R_{e_t}\psi=m\,e_t\psi e_t=m\psi .
 $$</p>
 <p>The gamma list names five of the sixteen basis elements and leaves the scalar unnamed. The mass is exactly the unnamed one. In the gamma display the same term is $m\psi=m\gamma_0^2$, which is a product of two gammas, not a sixth gamma, and the reader is left with the impression that the mass is the absence of an operator.</p>
-<p>The cell list names it, and the naming has a consequence. The mass is central, so it commutes with every generator; a scalar mass therefore cannot appear as a single root of the d'Alembertian, and this is the origin of the duplication in §4.</p>
+<p>The cell list names it, and the naming has a consequence. The mass is central, so it commutes with every cell; a scalar mass therefore cannot appear as a single root of the d'Alembertian, and this is the origin of the duplication in §4.</p>
 <h3 id="34-hodge-duality-is-the-central-imaginary">3.4 Hodge duality is the central imaginary</h3>
 <p>$$
 \star\tilde F=-i\tilde F .
@@ -233,11 +234,11 @@ $$</p>
 <h3 id="35-the-edm-insertion-is-minus-a-material-vector">3.5 The EDM insertion is minus a material vector</h3>
 <p>The electric-dipole insertion is anti-Hermitian and its magnetic partner is Hermitian:</p>
 <p>$$
-\sigma_{0k}\mathsf C_5\ \text{anti-Hermitian},\qquad \sigma_{ij}\ \text{Hermitian},
+\sigma_{0k}-iL_{e_t}R_{e_z}\ \text{anti-Hermitian},\qquad \sigma_{ij}\ \text{Hermitian},
 $$</p>
 <p>both to residual $0$ over all pairs. The identity behind the placement is exact:</p>
 <p>$$
-\sigma_{0k}\mathsf C_5=i\,\mathbf{1}\otimes\sigma_k=-\mathsf M_2(\vec e_k),
+\sigma_{0k}-iL_{e_t}R_{e_z}=i\,\mathbf{1}\otimes\sigma_k=-\mathsf M_2(\vec e_k),
 $$</p>
 <p>on the spinor slot, for $k=1,2,3$, residual $0$. So the CP-odd insertion <em>is</em> a vector of the material sector, with a minus sign, and the explicit $i$ that makes the Lagrangian Hermitian is the marker of that sector rather than a convention.</p>
 <p>The gain is that "the EDM operator is anti-Hermitian" becomes "the EDM operator is (minus) a spatial direction". The first is a property of a matrix; the second is a property of the algebra.</p>
@@ -252,9 +253,9 @@ $$</p>
 <p>The duplication is not confined to the free equation. The same split appears in the covariant derivative, in the adjoint equation, in the axial current, and in the plane-wave solutions, and 43 articles now state the pair in this form.</p>
 <h3 id="42-why-the-scalar-mass-forces-a-pair">4.2 Why the scalar mass forces a pair</h3>
 <p>This is the strongest single result the rewrite exposed, and it is in <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em>.</p>
-<p>A first-order operator $\mathsf D+B$ squares to $\Box-\mu^2$ only if $\{B,\mathsf C_\mu\}=0$ for all $\mu$. The anticommutant of the four generators is one-dimensional, and the only element in it is $\mathsf C_5$:</p>
+<p>A first-order operator $\mathsf D+B$ squares to $\Box-\mu^2$ only if $\{B,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$ for all $\mu$. The anticommutant of the four cells is one-dimensional, and the only element in it is $-iL_{e_t}R_{e_z}$:</p>
 <p>$$
-B=c\,\mathsf C_5,\qquad B^2=c^2=-\mu^2,\qquad c=\pm i\mu .
+B=c\,(-iL_{e_t}R_{e_z}),\qquad B^2=c^2=-\mu^2,\qquad c=\pm i\mu .
 $$</p>
 <p>So a <strong>single</strong> root exists, but the mass it carries is a <strong>pseudoscalar</strong> mass, parity-odd, diagonal in chirality, and not the mass of the Standard Model. The <strong>scalar</strong> mass commutes with the generators instead of anticommuting, so no single operator of the form $\mathsf D+\mu$ squares to the wave operator. What exists is the factorisation</p>
 <p>$$
@@ -269,7 +270,7 @@ $$</p>
 <li><strong>The Lorentz action separates under boosts and coincides under rotations.</strong> A boost rotor has an imaginary vector part, so the two halves transform by inverse matrices; a rotation rotor is a real quaternion, so they transform alike. In gamma notation the two statements are one statement about $\gamma_5$ commuting with the Lorentz generators.</li>
 <li><strong>The double cover becomes a kernel statement.</strong> The sign cancels on a four-vector because the four-vector is bilinear, and it does not cancel on a spinor. One factor of $g$ versus two. The duplication is what makes the two actions different in kind.</li>
 </ul>
-<h3 id="44-three-objects-that-the-gamma-notation-calls-math107">4.4 Three objects that the gamma notation calls $\gamma_5$</h3>
+<h3 id="44-three-objects-that-the-gamma-notation-calls-math106">4.4 Three objects that the gamma notation calls $\gamma_5$</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -284,14 +285,14 @@ $$</p>
 <tr>
 <td>grading of the Dirac module</td>
 <td>$\gamma_5$</td>
-<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$, represented by $-iT_{e_t,e_z}$</td>
+<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$, represented by $-iL_{e_t}R_{e_z}$</td>
 <td>central in $\mathbb{C}\otimes\mathbb{B}$</td>
 <td>$e_t$</td>
 </tr>
 <tr>
 <td>chirality cell of the frame</td>
 <td>$\gamma_5$</td>
-<td>$\Gamma=-iT_{e_t,e_z}=-iR_{e_z}$</td>
+<td>$\Gamma=-iL_{e_t}R_{e_z}=-iR_{e_z}$</td>
 <td>the cell in the reference frame</td>
 <td>$e_t$</td>
 </tr>
@@ -310,19 +311,19 @@ $$</p>
 <p>Eight items, in decreasing order of how far they are from what the gamma notation suggests.</p>
 <ol>
 <li>
-<p><strong>The identity is a single product of full matrix rank.</strong> $T_{e_t,e_t}$ has length one and matrix rank four. The intuition "one cell, low rank" is wrong in the only case that matters, the mass.</p>
+<p><strong>The identity is a single product of full matrix rank.</strong> $L_{e_t}R_{e_t}$ has length one and matrix rank four. The intuition "one cell, low rank" is wrong in the only case that matters, the mass.</p>
 </li>
 <li>
 <p><strong>No cell has matrix rank three, and the two ranks are independent quantities.</strong> Three numbers are in play, and they must be kept apart.</p>
 <ul>
 <li><strong>Length</strong>, the coefficient rank $\ell(M)=\operatorname{rank}c(M)$ of the element in the sixteen-product basis. It is one for a single product, whatever that product is, and it runs over $\{0,1,2,3,4\}$ in general, because a sum of three products with independent coefficients has length three.</li>
-<li><strong>Matrix rank</strong>, the rank of the $4\times4$ matrix of $M$ on the regular module. For a cell, $T_{Q,P}$ acts as $\mathsf M_2(P)^{\mathrm T}\otimes\mathsf M_2(Q)$, and the rank of a Kronecker product is the product of the ranks, so $\operatorname{rank}T_{Q,P}=\operatorname{rank}\mathsf M_2(Q)\cdot\operatorname{rank}\mathsf M_2(P)\in\{0,1,2,4\}$. Three is impossible for the matrix rank of a cell.</li>
+<li><strong>Matrix rank</strong>, the rank of the $4\times4$ matrix of $M$ on the regular module. For a cell, $L_{Q}R_{P}$ acts as $\mathsf M_2(P)^{\mathrm T}\otimes\mathsf M_2(Q)$, and the rank of a Kronecker product is the product of the ranks, so $\operatorname{rank}L_{Q}R_{P}=\operatorname{rank}\mathsf M_2(Q)\cdot\operatorname{rank}\mathsf M_2(P)\in\{0,1,2,4\}$. Three is impossible for the matrix rank of a cell.</li>
 <li><strong>The trap</strong>, a single left factor: $\operatorname{rank}L_Q=2\operatorname{rank}\mathsf M_2(Q)$, so the range $\{0,2,4\}$ — correct for $L_Q$ — is wrong for the cell, because the right factor multiplies the rank rather than contributing a second factor of two.</li>
 </ul>
-<p>The two numbers are independent in both directions, and <em>Why the Biquaternion Formalism Instead of Gamma Matrices</em> says so in one line with the same example: the chiral projector $P_+=\tfrac12(T_{e_t,e_t}-iT_{e_t,e_z})$ has matrix rank two and length one, and a rank-one matrix can have length four. Both were recomputed. The mass is a second instance of the first direction, $T_{e_t,e_t}$ having length one and matrix rank four. The reverse — matrix rank one, length four — is any rank-one $4\times4$ matrix drawn at random on $\mathbb{C}^4$, which is not a single product in the sixteen-basis. Neither number is a proxy for the other, and a statement about one says nothing about the other.</p>
+<p>The two numbers are independent in both directions, and <em>Why the Biquaternion Formalism Instead of Gamma Matrices</em> says so in one line with the same example: the chiral projector $P_+=\tfrac12(L_{e_t}R_{e_t}-iL_{e_t}R_{e_z})$ has matrix rank two and length one, and a rank-one matrix can have length four. Both were recomputed. The mass is a second instance of the first direction, $L_{e_t}R_{e_t}$ having length one and matrix rank four. The reverse — matrix rank one, length four — is any rank-one $4\times4$ matrix drawn at random on $\mathbb{C}^4$, which is not a single product in the sixteen-basis. Neither number is a proxy for the other, and a statement about one says nothing about the other.</p>
 </li>
 <li>
-<p><strong>A dull-looking operator is outside the cone.</strong> $T_{e_t,e_t}+T_{e_x,e_x}$ has length two and matrix rank two, and is not a single product; no decomposable frame change makes it one, since multiplying by single products on both sides leaves the length at two, checked on one hundred such products. A sum of two ordinary cells is a genuinely different object, and the gamma form has no way to say so.</p>
+<p><strong>A dull-looking operator is outside the cone.</strong> $L_{e_t}R_{e_t}+L_{e_x}R_{e_x}$ has length two and matrix rank two, and is not a single product; no decomposable frame change makes it one, since multiplying by single products on both sides leaves the length at two, checked on one hundred such products. A sum of two ordinary cells is a genuinely different object, and the gamma form has no way to say so.</p>
 </li>
 <li>
 <p><strong>The fourth direction is the second side.</strong> Time is not a fourth quaternion unit; it is a right multiplication. This is why no element of $\mathbb{B}$ anticommutes with all three $\vec e_k$, and why the first-order root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ rather than in $\mathbb{B}$.</p>
@@ -344,7 +345,7 @@ $$</p>
 <p>Three weak points, stated plainly.</p>
 <p><strong>The central phase has two readings and the corpus has not chosen.</strong> If the biquaternion field is identified with the regular module $S\oplus S$, a central phase acts vector-like, equally on both halves. If it is identified with the Dirac module $S\oplus S^{\mathrm c}$, the same phase acts axially, with $ϙ_R=-ϙ_L$. The passage between the two is the real structure. This "two-$i$" question decides whether the framework's abelian factor is vector-like or axial, and at least three articles record it as open. Through the hypercharge assignment it also decides whether the framework can carry the observed chiral fermion content, so it is the one open item with empirical consequences. It is the one place where the duplication of §4 produces an ambiguity rather than a result.</p>
 <p><strong>The Peirce split is easy to mistake for the chiral split.</strong> $S\oplus S$ and $S\oplus S^{\mathrm c}$ are the same real dimension and different modules, and several articles must say repeatedly that the Peirce idempotents do not project onto chirality. The rewrite made the distinction nameable; it did not make it automatic.</p>
-<p><strong>The real forms are not covered by the dictionary.</strong> Over $\mathbb{C}$ the dictionary is exact. Over $\mathbb{R}$ the generators span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ while the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. Every appendix states this, and any article that uses a real structure must restate it locally.</p>
+<p><strong>The real forms are not covered by the dictionary.</strong> Over $\mathbb{C}$ the dictionary is exact. Over $\mathbb{R}$ the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ while the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. Every appendix states this, and any article that uses a real structure must restate it locally.</p>
 <p>And the one bookkeeping item has been closed: the Thomson article was rewritten to the cell form, and the last gamma in a body is gone.</p>
 <h2 id="7-verification-log">7. Verification log</h2>
 <p>Recomputed with the fixed matrix model $\mathsf M_2(e_t)=I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, $\mathsf M_2(i)=iI_2$, on the four-dimensional regular module.</p>
@@ -365,15 +366,15 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\mathsf C_5^2=\mathbf 1$</td>
+<td>$(-iL_{e_t}R_{e_z})^2=\mathbf 1$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\mathsf C_5$ anticommutes with the four generators</td>
+<td>$-iL_{e_t}R_{e_z}$ anticommutes with the four cells</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\Gamma=\mathsf C_5=-iR_{e_z}$</td>
+<td>$\Gamma=-iL_{e_t}R_{e_z}=-iR_{e_z}$</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -381,7 +382,7 @@ $$</p>
 <td>best fit off by $1$</td>
 </tr>
 <tr>
-<td>$\mathsf C_0$ is a pure right multiplication</td>
+<td>$iL_{e_t}R_{e_x}$ is a pure right multiplication</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -389,7 +390,7 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\mathsf C_k$ is not a pure right multiplication</td>
+<td>$iL_{e_k}R_{e_y}$ is not a pure right multiplication</td>
 <td>$2$</td>
 </tr>
 <tr>
@@ -401,7 +402,7 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\operatorname{rank}(T_{e_t,e_t})=\operatorname{rank}\mathbf 1=4$, length $1$</td>
+<td>$\operatorname{rank}(L_{e_t}R_{e_t})=\operatorname{rank}\mathbf 1=4$, length $1$</td>
 <td>exact</td>
 </tr>
 <tr>
@@ -425,23 +426,23 @@ $$</p>
 <td>residual $9\times10^{-16}$</td>
 </tr>
 <tr>
-<td>the chiral projector $P_+=\tfrac12(T_{e_t,e_t}-iT_{e_t,e_z})$: matrix rank $2$, length $1$</td>
+<td>the chiral projector $P_+=\tfrac12(L_{e_t}R_{e_t}-iL_{e_t}R_{e_z})$: matrix rank $2$, length $1$</td>
 <td>exact</td>
 </tr>
 <tr>
-<td>length of $T_{e_t,e_t}+T_{e_x,e_x}$ after $100$ frame products $XMY$</td>
+<td>length of $L_{e_t}R_{e_t}+L_{e_x}R_{e_x}$ after $100$ frame products $XMY$</td>
 <td>stays $2$</td>
 </tr>
 <tr>
-<td>$T_{e_t,e_t}+T_{e_x,e_x}$: eigenvalues $0,0,2,2$</td>
+<td>$L_{e_t}R_{e_t}+L_{e_x}R_{e_x}$: eigenvalues $0,0,2,2$</td>
 <td>matrix rank $2$, length $2$</td>
 </tr>
 <tr>
-<td>$T_{Q,P}=\mathsf M_2(P)^{\mathrm T}\otimes\mathsf M_2(Q)$ on the regular module</td>
+<td>$L_{Q}R_{P}=\mathsf M_2(P)^{\mathrm T}\otimes\mathsf M_2(Q)$ on the regular module</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\operatorname{rank}(T_{Q,P})=\operatorname{rank}\mathsf M_2(Q)\cdot\operatorname{rank}\mathsf M_2(P)\in\{0,1,2,4\}$, nine rank pairs</td>
+<td>$\operatorname{rank}(L_{Q}R_{P})=\operatorname{rank}\mathsf M_2(Q)\cdot\operatorname{rank}\mathsf M_2(P)\in\{0,1,2,4\}$, nine rank pairs</td>
 <td>exact</td>
 </tr>
 <tr>
@@ -449,7 +450,7 @@ $$</p>
 <td>exact</td>
 </tr>
 <tr>
-<td>$\operatorname{rank}(T_{e_t,e_t}+T_{e_x,e_x})=2$</td>
+<td>$\operatorname{rank}(L_{e_t}R_{e_t}+L_{e_x}R_{e_x})=2$</td>
 <td>exact</td>
 </tr>
 <tr>
@@ -457,15 +458,15 @@ $$</p>
 <td>exact</td>
 </tr>
 <tr>
-<td>$\sigma_{0k}\mathsf C_5$ anti-Hermitian, all $k$</td>
+<td>$\sigma_{0k}-iL_{e_t}R_{e_z}$ anti-Hermitian, all $k$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\sigma_{ij}\mathsf C_5$ Hermitian, all $i<j$</td>
+<td>$\sigma_{ij}-iL_{e_t}R_{e_z}$ Hermitian, all $i<j$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\sigma_{0k}\mathsf C_5=-\mathsf M_2(\vec e_k)$ on the spinor slot</td>
+<td>$\sigma_{0k}-iL_{e_t}R_{e_z}=-\mathsf M_2(\vec e_k)$ on the spinor slot</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -481,7 +482,7 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$D_{+}+D_{-}=D(p)$ and $\tfrac{1}{2m}\bigl(D(p)+m\,T_{e_t,e_t}-\mathsf C_\mu p_\mu\bigr)=1$</td>
+<td>$D_{+}+D_{-}=D(p)$ and $\tfrac{1}{2m}\bigl(D(p)+m\,L_{e_t}R_{e_t}-iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu\bigr)=1$</td>
 <td>$0$</td>
 </tr>
 </tbody>
@@ -489,9 +490,9 @@ $$</p>
 <h2 id="8-open-questions">8. Open questions</h2>
 <ul>
 <li><strong>Does the vector-like reading survive the axial one?</strong> The two-$i$ question above, and the only open item that gates a programme rather than a paragraph. Deciding which module the field inhabits fixes whether the abelian factor is vector-like or axial, which fixes the hypercharge assignment, which decides whether the framework can reproduce the observed chiral fermion content at all. It is a modelling decision with empirical consequences, so it is left to the author and not settled here by preference.</li>
-<li><strong>Is the pseudoscalar root physical anywhere?</strong> The single root $\mathsf D\pm i\mu\mathsf C_5$ is parity-odd and is not the Dirac mass. If the framework has a natural home for a pseudoscalar mass, the corpus has not named it.</li>
+<li><strong>Is the pseudoscalar root physical anywhere?</strong> The single root $\mathsf D\pm i\mu-iL_{e_t}R_{e_z}$ is parity-odd and is not the Dirac mass. If the framework has a natural home for a pseudoscalar mass, the corpus has not named it.</li>
 <li><strong>Can the three $\gamma_5$ roles be separated in the appendix too?</strong> The appendices say "$\gamma_5$" once, distinguish the cell from the central grading in one sentence, and never mention the Peirce copy sign $P$. A reader who consults only the appendix sees two objects where there are three.</li>
-<li><strong>Is the spin-resolved cell used anywhere else?</strong> The Thomson article now states $D_s(p)=\tfrac12 D(p)(1+\mathsf C_5\mathsf C_\mu s_\mu)$, verified as a pair of orthogonal rank-one cells. No other article states it, although Møller, Bhabha and the polarized cross-sections all need it; propagating it is the obvious next step.</li>
+<li><strong>Is the spin-resolved cell used anywhere else?</strong> The Thomson article now states $D_s(p)=\tfrac12 D(p)(1+-iL_{e_t}R_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}} s_\mu)$, verified as a pair of orthogonal rank-one cells. No other article states it, although Møller, Bhabha and the polarized cross-sections all need it; propagating it is the obvious next step.</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The withdrawal of the gamma frame changed more than the notation.</p>
