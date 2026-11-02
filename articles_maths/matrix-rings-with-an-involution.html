@@ -98,9 +98,9 @@ $$
 $$
 and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each case the symmetric and the skew matrices are the eigenspaces of the involution for $+1$ and $-1$, and the fixed set is the symmetric one.</p>
 <p><strong>Proof.</strong> This is the additive decomposition of <em>Involutive Rings</em> applied to the three involutions; the two summands are fixed or negated by the involution because it is additive of order two, and the decomposition is direct because the involution has no nonzero element on which it is both $\mathrm{id}$ and $-\mathrm{id}$ when $2$ is invertible.</p>
-<p><strong>Example (the symmetric and skew sets of the transpose).</strong> For $n = 2$ and $R$ a field with $2 \neq 0$, a symmetric matrix is $\begin{pmatrix} a & b \\ b & d\end{pmatrix}$ and a skew-symmetric matrix is $\begin{pmatrix} 0 & c \\ -c & 0\end{pmatrix}$, so $\dim \mathrm{Sym} = 3$ and $\dim \mathrm{Skew} = 1$, in agreement with $n(n+1)/2 = 3$ and $n(n-1)/2 = 1$.</p>
+<p><strong>Example (the symmetric and skew sets of the transpose).</strong> For $n = 2$ and $R$ a field with $2 \neq 0$, a symmetric matrix is $\begin{pmatrix} a & b \\ b & d\end{pmatrix}$ and a skew-symmetric matrix is $\begin{pmatrix} 0 & c \\ -c & 0\end{pmatrix}$, so $\dim \mathrm{sym} = 3$ and $\dim \mathrm{Skew} = 1$, in agreement with $n(n+1)/2 = 3$ and $n(n-1)/2 = 1$.</p>
 <p><strong>Example (Hermitian and skew-Hermitian).</strong> Over $\mathbb{C}$ with the conjugation the $\sigma$-Hermitian matrices are the Hermitian ones, $X^{*} = X$, and the $\sigma$-skew-Hermitian matrices satisfy $X^{*} = -X$, so the skew-Hermitian matrices are $i$ times the Hermitian ones. The fixed set is not a complex subspace but a real one, because the involution is not complex-linear.</p>
-<p><strong>Example (the symplectic symmetric matrices).</strong> For $n = 2$ and $J = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$ the $\tau$-symmetric matrices are those with $JX$ skew-symmetric, that is, $X = \begin{pmatrix} a & b \\ c & -a\end{pmatrix}$, so $\dim \mathrm{Sym}$ is $3$, the same value as for the transpose in dimension $2$; the two involutions are nevertheless inequivalent, because in higher even dimension the dimensions $\tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$ differ.</p>
+<p><strong>Example (the symplectic symmetric matrices).</strong> For $n = 2$ and $J = \begin{pmatrix} 0 & 1 \\ -1 & 0\end{pmatrix}$ the $\tau$-symmetric matrices are those with $JX$ skew-symmetric, that is, $X = \begin{pmatrix} a & b \\ c & -a\end{pmatrix}$, so $\dim \mathrm{sym}$ is $3$, the same value as for the transpose in dimension $2$; the two involutions are nevertheless inequivalent, because in higher even dimension the dimensions $\tfrac12 n(n+1)$ and $\tfrac12 n(n-1)$ differ.</p>
 <h2 id="the-classification-of-the-involutions-of-m_nr">The Classification of the Involutions of M_n(R)</h2>
 <h3 id="first-and-second-kind">First and Second Kind</h3>
 <p><strong>Definition.</strong> An involution $\sigma$ of an $F$-algebra $A$ is of the <strong>first kind</strong> when it fixes the centre elementwise, $\sigma(z) = z$ for all $z \in Z(A)$, and of the <strong>second kind</strong> (or of the <strong>second kind, unitary</strong>) when it acts on the centre by a nontrivial automorphism of order two. For $A = M_n(F)$ with $F$ a field, the centre is $F$ and the first-kind involutions are those fixing $F$; a second-kind involution exists only when $F$ has an automorphism $\sigma_0$ of order two, and is then the composition of a first-kind involution with the coefficientwise $\sigma_0$.</p>
@@ -111,7 +111,7 @@ and the same with $X^{\mathrm t}$ replaced by $X^{*}$ or $X^{\tau}$. In each cas
 <p><strong>Proof.</strong> The transpose has the $n$ matrix units $e_{ii}$ as orthogonal symmetric idempotents summing to $1$. The symplectic involution fixes no such family: its symmetric idempotents have even rank, because for a $\tau$-symmetric idempotent $E$ the matrix $JE$ is skew-symmetric and $JE = J E^2 = (JE)E$, forcing $\operatorname{tr}(JE) = 0$ and hence $\operatorname{rank} E$ even; so a sum of orthogonal symmetric idempotents equal to $1$ would have even trace $n$, which excludes odd $n$ and, for even $n$, would need $n$ summands of even rank at least $2$, which is impossible. The two types are inequivalent by the dimension of the symmetric part (next paragraph).</p>
 <p><strong>Theorem (the separating invariant).</strong> The dimension of the symmetric part of a first-kind involution of $M_n(F)$ is</p>
 <p>$$
-\boxed{\;\dim_F \mathrm{Sym}(M_n(F),\sigma) =
+\boxed{\;\dim_F \mathrm{sym}(M_n(F),\sigma) =
 \begin{cases}
 \tfrac12 n(n+1) & \text{transpose type},\\[2pt]
 \tfrac12 n(n-1) & \text{symplectic type}.
@@ -174,7 +174,7 @@ $$</p>
 <td>Equivalent form of $\tau$-symmetry</td>
 </tr>
 <tr>
-<td>$\mathrm{Sym}$, $\mathrm{Skew}$</td>
+<td>$\mathrm{sym}$, $\mathrm{Skew}$</td>
 <td>Symmetric and skew matrices, the eigenspaces</td>
 </tr>
 <tr>

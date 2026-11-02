@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-galois-action-as-an-operator"><strong>The Galois Action as an Operator</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A variety $X$ defined over a field $k$ acquires, after the base is extended to a Galois extension $L/k$, a symmetry that $X$ itself does not carry: the Galois group $G = \operatorname{Gal}(L/k)$ acts on the base-changed variety $X_L = X\times_kL$ over $k$, on its points with values in $L$-algebras, on its structure sheaf, and on the cohomology of its sheaves. The action is elementary to write down and surprisingly delicate to use, because it is $k$-linear but <strong>not</strong> $L$-linear: it permutes the coefficients of a function or a cohomology class, so it is a semilinear operator rather than an endomorphism of the layer of <em>Operators on a Variety</em>. This article fixes the action, proves its basic properties, and separates the two objects it produces — a genuine action by automorphisms of $X_L$, and a <strong>semilinear</strong> action on the $L$-vector spaces attached to $X_L$.</p>
+<p>A variety $X$ defined over a field $k$ acquires, after the base is extended to a Galois extension $L/k$, a symmetry that $X$ itself does not carry: the Galois group $G = \operatorname{gal}(L/k)$ acts on the base-changed variety $X_L = X\times_kL$ over $k$, on its points with values in $L$-algebras, on its structure sheaf, and on the cohomology of its sheaves. The action is elementary to write down and surprisingly delicate to use, because it is $k$-linear but <strong>not</strong> $L$-linear: it permutes the coefficients of a function or a cohomology class, so it is a semilinear operator rather than an endomorphism of the layer of <em>Operators on a Variety</em>. This article fixes the action, proves its basic properties, and separates the two objects it produces — a genuine action by automorphisms of $X_L$, and a <strong>semilinear</strong> action on the $L$-vector spaces attached to $X_L$.</p>
 <p>The article is the second of the <code>- Operator Theory</code> group. Its neighbours read the same layer through other operators: <em>Operators on a Variety</em> fixes the layer and the conjugation action of an automorphism on it, <em>The Frobenius Operator</em> is the Galois action in the arithmetic case of a finite field, where the group has a canonical generator, and <em>The Galois Action on the Cohomology</em> reads the action on cohomology classes and their invariants. The descent theory of the base field — the structure that the invariants recover — is the subject of <em>Real Structures on Varieties and Galois Descent</em>, a <code>- * Theory</code> article of this batch, and the general descent formalism is Part I's <em>Descent Theory</em>.</p>
 <p>Throughout $k$ is a field, $L/k$ is a Galois extension with group $G$, and $X$ is a variety over $k$; the finite case $[L:k]<\infty$ is the one in which every statement is elementary, and the infinite case is cited from the descent theory as needed. The base change is written $X_L = X\times_k\operatorname{Spec}L$ and its structure sheaf $\mathcal{O}_{X_L}$.</p>
 <h2 id="the-action-on-the-base-change">The Action on the Base Change</h2>
@@ -102,7 +102,7 @@ $$
 \boxed{\;X(L)^G = X(k)\;}.
 $$</p>
 <p><em>Proof.</em> A $k$-point is an $L$-point that is already defined over $k$, and $\operatorname{Spec}\sigma$ fixes every $k$-morphism, so $X(k)\subseteq X(L)^G$. Conversely let $X = \operatorname{Spec}A$ be affine and let $P$ correspond to the $k$-algebra homomorphism $\varphi : A\to L$. That $P$ is fixed by $\sigma$ says $\sigma\circ\varphi = \varphi$, that is $\varphi(a) = \sigma(\varphi(a))$ for all $a$ and all $\sigma$, so $\varphi$ takes values in $L^G = k$ and is a $k$-homomorphism $A\to k$, which is a $k$-point. The general case follows by covering $X$ with affine charts, the condition being local.</p>
-<p><strong>Corollary.</strong> For $X$ of finite type over $k$ and $L = \bar k$ the separable closure, the action of $G = \operatorname{Gal}(\bar k/k)$ on the geometric points $X(\bar k)$ has fixed set $X(k)$; in particular the $k$-points are recovered from the geometric points by taking invariants, which is the elementary case of Galois descent.</p>
+<p><strong>Corollary.</strong> For $X$ of finite type over $k$ and $L = \bar k$ the separable closure, the action of $G = \operatorname{gal}(\bar k/k)$ on the geometric points $X(\bar k)$ has fixed set $X(k)$; in particular the $k$-points are recovered from the geometric points by taking invariants, which is the elementary case of Galois descent.</p>
 <h2 id="the-action-on-functions-and-on-the-structure-sheaf">The Action on Functions and on the Structure Sheaf</h2>
 <p><strong>Definition.</strong> For an open $\Omega\subseteq X_L$ and a function $f\in\mathcal{O}_{X_L}(\Omega)$, the <strong>translate</strong> of $f$ by $\sigma$ is the function on $\sigma_X^{-1}(\Omega)$ defined by
 $$
@@ -158,7 +158,7 @@ and on the vector fields by pushforward. The fixed part of this action is genera
 </thead>
 <tbody>
 <tr>
-<td>$k$, $L$, $G=\operatorname{Gal}(L/k)$</td>
+<td>$k$, $L$, $G=\operatorname{gal}(L/k)$</td>
 <td>base field; Galois extension; Galois group</td>
 </tr>
 <tr>

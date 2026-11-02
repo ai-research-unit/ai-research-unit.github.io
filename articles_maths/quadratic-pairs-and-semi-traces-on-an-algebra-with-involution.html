@@ -77,11 +77,11 @@
 <h3 id="the-symmetric-and-the-skew-elements">The Symmetric and the Skew Elements</h3>
 <p><strong>Definition.</strong> For an algebra $A$ with an involution $\sigma$ the <strong>symmetric</strong> and the <strong>skew</strong> elements are the kernels</p>
 <p>$$
-\mathrm{Sym}(A,\sigma) = \ker(\mathrm{id}-\sigma) = \{x : \sigma(x) = x\}, \qquad \mathrm{Skew}(A,\sigma) = \ker(\mathrm{id}+\sigma) = \{x : \sigma(x) = -x\}.
+\mathrm{sym}(A,\sigma) = \ker(\mathrm{id}-\sigma) = \{x : \sigma(x) = x\}, \qquad \mathrm{Skew}(A,\sigma) = \ker(\mathrm{id}+\sigma) = \{x : \sigma(x) = -x\}.
 $$</p>
 <p><strong>Proposition.</strong> Both are additive subgroups of $A$ containing the central scalars fixed by $\sigma$, and</p>
 <p>$$
-\boxed{\;A = \mathrm{Sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)\;}
+\boxed{\;A = \mathrm{sym}(A,\sigma)\oplus\mathrm{Skew}(A,\sigma)\;}
 $$</p>
 <p>when two is invertible in $R$; in characteristic two the two subgroups coincide and the decomposition fails.</p>
 <p><em>Proof.</em> The two subgroups are kernels of additive maps; the decomposition is the eigenspace decomposition of the order-two map $\sigma$, $x = \tfrac12(x+\sigma(x))+\tfrac12(x-\sigma(x))$, and an element in both satisfies $2x = 0$; in characteristic two the conditions $\sigma(x) = x$ and $\sigma(x) = -x$ are one and the same.</p>
@@ -91,19 +91,19 @@ $$</p>
 <p>$$
 \mathrm{Alt}(A,\sigma) = \operatorname{im}(\mathrm{id}-\sigma) = \{x-\sigma(x)\}, \qquad \mathrm{Symd}(A,\sigma) = \operatorname{im}(\mathrm{id}+\sigma) = \{x+\sigma(x)\}.
 $$</p>
-<p><strong>Proposition (containment).</strong> $\mathrm{Alt}(A,\sigma)\subseteq\mathrm{Skew}(A,\sigma)$ and $\mathrm{Symd}(A,\sigma)\subseteq\mathrm{Sym}(A,\sigma)$.</p>
+<p><strong>Proposition (containment).</strong> $\mathrm{Alt}(A,\sigma)\subseteq\mathrm{Skew}(A,\sigma)$ and $\mathrm{Symd}(A,\sigma)\subseteq\mathrm{sym}(A,\sigma)$.</p>
 <p><em>Proof.</em> For the first, $(\mathrm{id}+\sigma)(x-\sigma(x)) = x-\sigma(x)+\sigma(x)-x = 0$, so an alternating element is skew; the second is the computation $\sigma(x+\sigma(x)) = \sigma(x)+x$.</p>
 <p><strong>Proposition (the four are two).</strong> If two is invertible in $R$ then</p>
 <p>$$
-\boxed{\;\mathrm{Alt}(A,\sigma) = \mathrm{Skew}(A,\sigma), \qquad \mathrm{Symd}(A,\sigma) = \mathrm{Sym}(A,\sigma):\;}
+\boxed{\;\mathrm{Alt}(A,\sigma) = \mathrm{Skew}(A,\sigma), \qquad \mathrm{Symd}(A,\sigma) = \mathrm{sym}(A,\sigma):\;}
 $$</p>
 <p>every skew element is alternating and every symmetric element symmetrized.</p>
-<p><em>Proof.</em> The containments are the previous proposition. Conversely $x \in \mathrm{Skew}$ has $x = \tfrac12(x-\sigma(x))$ and $x \in \mathrm{Sym}$ has $x = \tfrac12(x+\sigma(x))$, and the halves exist by hypothesis.</p>
+<p><em>Proof.</em> The containments are the previous proposition. Conversely $x \in \mathrm{Skew}$ has $x = \tfrac12(x-\sigma(x))$ and $x \in \mathrm{sym}$ has $x = \tfrac12(x+\sigma(x))$, and the halves exist by hypothesis.</p>
 <p><strong>Remark (why the images are the covariant objects).</strong> A symmetric element is one that the involution fixes, and a symmetrized element is one of the form $x+\sigma(x)$. The two definitions agree when two is invertible, but they are different data over a general base, and the difference is exactly what the semi-trace of the next section consumes. The letters $\mathrm{Alt}$ and $\mathrm{Symd}$ name the two image submodules here; $\mathrm{Alt}$ is not the antisymmetrisation map of <em>The Filtration and the Associated Graded Algebra</em>, which carries the same letters in the Clifford theory.</p>
 <h3 id="the-collapse-in-characteristic-two">The Collapse in Characteristic Two</h3>
 <p><strong>Proposition.</strong> In characteristic two the four submodules coalesce in pairs,</p>
 <p>$$
-\mathrm{Sym}(A,\sigma) = \mathrm{Skew}(A,\sigma), \qquad \mathrm{Symd}(A,\sigma) = \mathrm{Alt}(A,\sigma),
+\mathrm{sym}(A,\sigma) = \mathrm{Skew}(A,\sigma), \qquad \mathrm{Symd}(A,\sigma) = \mathrm{Alt}(A,\sigma),
 $$</p>
 <p>so that they form the single chain $\mathrm{Alt}(A,\sigma)\subseteq\mathrm{Skew}(A,\sigma)$, whose inclusion may be proper.</p>
 <p><em>Proof.</em> The conditions $\sigma(x) = x$ and $\sigma(x) = -x$ are the same since $-1 = 1$; and for the images, $x+\sigma(x) = x-\sigma(x)$ for the same reason, so the two image submodules coincide as well. The containment of the alternating in the skew is the proposition above, and the properness is witnessed on a matrix algebra in the examples below.</p>
@@ -126,14 +126,14 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathrm{Sym}(A,\sigma)$</td>
+<td>$\mathrm{sym}(A,\sigma)$</td>
 <td>$\ker(\mathrm{id}-\sigma)$, the fixed elements</td>
 <td>$=\mathrm{Skew}(A,\sigma)$</td>
 </tr>
 <tr>
 <td>$\mathrm{Skew}(A,\sigma)$</td>
 <td>$\ker(\mathrm{id}+\sigma)$, the anti-fixed elements</td>
-<td>$=\mathrm{Sym}(A,\sigma)$</td>
+<td>$=\mathrm{sym}(A,\sigma)$</td>
 </tr>
 <tr>
 <td>$\mathrm{Alt}(A,\sigma)$</td>
@@ -142,31 +142,31 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Symd}(A,\sigma)$</td>
-<td>$=\mathrm{Sym}(A,\sigma)$</td>
+<td>$=\mathrm{sym}(A,\sigma)$</td>
 <td>$=\mathrm{Alt}(A,\sigma)$</td>
 </tr>
 <tr>
 <td>$A$</td>
-<td>$\mathrm{Sym}\oplus\mathrm{Skew}$</td>
+<td>$\mathrm{sym}\oplus\mathrm{Skew}$</td>
 <td>no decomposition</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="the-semi-trace-and-the-quadratic-pair">The Semi-Trace and the Quadratic Pair</h2>
 <h3 id="the-definition">The Definition</h3>
-<p><strong>Definition.</strong> Let $A$ be an Azumaya $R$-algebra with an involution $\sigma$. A <strong>semi-trace</strong> for $\sigma$ is an $R$-module map $f : \mathrm{Sym}(A,\sigma) \to R$ with</p>
+<p><strong>Definition.</strong> Let $A$ be an Azumaya $R$-algebra with an involution $\sigma$. A <strong>semi-trace</strong> for $\sigma$ is an $R$-module map $f : \mathrm{sym}(A,\sigma) \to R$ with</p>
 <p>$$
 f\bigl(a+\sigma(a)\bigr) = \operatorname{Trd}(a) \qquad \text{for every } a \in A .
 $$</p>
 <p>A <strong>quadratic pair</strong> on $A$ is an involution $\sigma$ together with a semi-trace $f$ for it, and the tuple $(A,\sigma,f)$ is a <strong>quadratic triple</strong>. The reduced trace used here is the one of <em>Central Simple Algebras and the Brauer Group</em>, and it satisfies $\operatorname{Trd}(\sigma(a)) = \operatorname{Trd}(a)$ for an involution of the first kind.</p>
-<p><strong>Remark (the condition sits on the symmetrized elements).</strong> The element $a+\sigma(a)$ is symmetric, so the constraint is imposed on $f$ at the symmetrized elements alone; a semi-trace is a map defined on the whole of $\mathrm{Sym}(A,\sigma)$ whose restriction to $\mathrm{Symd}(A,\sigma)$ is prescribed by the reduced trace. The definition is therefore designed for the case in which the two submodules differ, and it is then a genuine condition on $f$; when two is invertible the two submodules agree and the condition determines $f$ outright, as the next proposition shows.</p>
+<p><strong>Remark (the condition sits on the symmetrized elements).</strong> The element $a+\sigma(a)$ is symmetric, so the constraint is imposed on $f$ at the symmetrized elements alone; a semi-trace is a map defined on the whole of $\mathrm{sym}(A,\sigma)$ whose restriction to $\mathrm{Symd}(A,\sigma)$ is prescribed by the reduced trace. The definition is therefore designed for the case in which the two submodules differ, and it is then a genuine condition on $f$; when two is invertible the two submodules agree and the condition determines $f$ outright, as the next proposition shows.</p>
 <h3 id="the-case-of-two-invertible">The Case of Two Invertible</h3>
 <p><strong>Proposition.</strong> Let two be invertible in $R$. Then</p>
 <p>$$
-f = \tfrac12\operatorname{Trd}\big|_{\mathrm{Sym}(A,\sigma)}
+f = \tfrac12\operatorname{Trd}\big|_{\mathrm{sym}(A,\sigma)}
 $$</p>
 <p>is a semi-trace, and it is the only one. The quadratic pairs on $A$ are therefore in bijection with the involutions of orthogonal type, and the notion adds nothing to <em>Involutions of a Central Simple Algebra</em>.</p>
-<p><em>Proof.</em> Since $\mathrm{Symd}(A,\sigma) = \mathrm{Sym}(A,\sigma)$, the constraint of the definition applies at every element of the domain. For an element $a+\sigma(a)$,</p>
+<p><em>Proof.</em> Since $\mathrm{Symd}(A,\sigma) = \mathrm{sym}(A,\sigma)$, the constraint of the definition applies at every element of the domain. For an element $a+\sigma(a)$,</p>
 <p>$$
 f\bigl(a+\sigma(a)\bigr) = \tfrac12\operatorname{Trd}\bigl(a+\sigma(a)\bigr) = \tfrac12\bigl(\operatorname{Trd}(a)+\operatorname{Trd}(\sigma(a))\bigr) = \operatorname{Trd}(a),
 $$</p>
@@ -176,14 +176,14 @@ $$</p>
 <p><strong>Definition.</strong> An involution $\sigma$ is <strong>locally quadratic</strong> when the unit is a symmetrized element, $1_A \in \mathrm{Symd}(A,\sigma)$.</p>
 <p><strong>Theorem (the classification of the semi-traces).</strong> The semi-traces for $\sigma$ are in bijection with the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\xi(\lambda) = 1_A$, the semi-trace attached to $\lambda$ being</p>
 <p>$$
-\boxed{\;f_\lambda(s) = \operatorname{Trd}(\ell\,s), \qquad s \in \mathrm{Sym}(A,\sigma)\;},
+\boxed{\;f_\lambda(s) = \operatorname{Trd}(\ell\,s), \qquad s \in \mathrm{sym}(A,\sigma)\;},
 $$</p>
 <p>for any lift $\ell$ of $\lambda$ in $A$. In particular a semi-trace exists exactly when $\sigma$ is locally quadratic.</p>
 <p><em>Proof (of the construction and of the well-definedness).</em> Let $\ell$ lift $\lambda$ with $\xi(\lambda) = 1_A$, that is $\ell+\sigma(\ell) = 1_A$. For $a \in A$,</p>
 <p>$$
 f_\ell\bigl(a+\sigma(a)\bigr) = \operatorname{Trd}\bigl(\ell a\bigr)+\operatorname{Trd}\bigl(\ell\,\sigma(a)\bigr) = \operatorname{Trd}\bigl((\ell+\sigma(\ell))a\bigr) = \operatorname{Trd}(a),
 $$</p>
-<p>the middle step using $\operatorname{Trd}(xy) = \operatorname{Trd}(yx)$ and the invariance of the reduced trace under $\sigma$ in the form $\operatorname{Trd}(\ell\,\sigma(a)) = \operatorname{Trd}(\sigma(\ell)\,a)$. So $f_\ell$ is a semi-trace. For the dependence on the lift, let $\ell' = \ell+y$ with $y = a-\sigma(a) \in \mathrm{Alt}(A,\sigma)$; then for $s \in \mathrm{Sym}(A,\sigma)$,</p>
+<p>the middle step using $\operatorname{Trd}(xy) = \operatorname{Trd}(yx)$ and the invariance of the reduced trace under $\sigma$ in the form $\operatorname{Trd}(\ell\,\sigma(a)) = \operatorname{Trd}(\sigma(\ell)\,a)$. So $f_\ell$ is a semi-trace. For the dependence on the lift, let $\ell' = \ell+y$ with $y = a-\sigma(a) \in \mathrm{Alt}(A,\sigma)$; then for $s \in \mathrm{sym}(A,\sigma)$,</p>
 <p>$$
 \operatorname{Trd}(y s) = \operatorname{Trd}(a s)-\operatorname{Trd}(\sigma(a) s) = \operatorname{Trd}(a s)-\operatorname{Trd}(s a) = 0,
 $$</p>
@@ -202,7 +202,7 @@ $$</p>
 <p>$$
 \psi(a) = \operatorname{Trd}(a)\,1_A-a .
 $$</p>
-<p><strong>Proposition.</strong> $\psi$ is an involution of $A$, it fixes the scalars and negates the traceless part; over a field with two invertible it is the conjugation of the quaternion algebra, and it is of symplectic type, with $\mathrm{Sym}(A,\psi)$ the scalars of dimension one.</p>
+<p><strong>Proposition.</strong> $\psi$ is an involution of $A$, it fixes the scalars and negates the traceless part; over a field with two invertible it is the conjugation of the quaternion algebra, and it is of symplectic type, with $\mathrm{sym}(A,\psi)$ the scalars of dimension one.</p>
 <p><em>Proof.</em> Squaring, $\psi(\psi(a)) = \operatorname{Trd}(\psi(a))1_A-\psi(a)$, and $\operatorname{Trd}(\psi(a)) = \operatorname{Trd}(a)$, since $\operatorname{Trd}(1_A) = 2$ for a degree-two algebra; hence $\psi(\psi(a)) = a$. For the anti-multiplicativity, an element of a degree-two algebra satisfies the reduced characteristic identity</p>
 <p>$$
 a^2-\operatorname{Trd}(a)\,a+\operatorname{Nrd}(a)\,1_A = 0,
@@ -211,7 +211,7 @@ $$</p>
 <p>$$
 ab+ba = \operatorname{Trd}(a)\,b+\operatorname{Trd}(b)\,a+\operatorname{Trd}(ab)\,1_A-\operatorname{Trd}(a)\operatorname{Trd}(b)\,1_A .
 $$</p>
-<p>Expanding $\psi(a)\psi(b) = (\operatorname{Trd}(a)1_A-a)(\operatorname{Trd}(b)1_A-b)$ and substituting the linearisation gives $\psi(a)\psi(b) = \operatorname{Trd}(ab)1_A-ba = \psi(ba)$, so $\psi$ is an anti-automorphism. A scalar $\lambda$ gives $\psi(\lambda) = 2\lambda-\lambda = \lambda$, and a traceless element is negated. Over a field with two invertible, $\psi(a) = a$ forces $2a = \operatorname{Trd}(a)1_A$, hence $a$ scalar, so $\mathrm{Sym}(A,\psi)$ has dimension one, which is $\tfrac12\cdot 2\cdot(2-1)$ and therefore the symplectic type.</p>
+<p>Expanding $\psi(a)\psi(b) = (\operatorname{Trd}(a)1_A-a)(\operatorname{Trd}(b)1_A-b)$ and substituting the linearisation gives $\psi(a)\psi(b) = \operatorname{Trd}(ab)1_A-ba = \psi(ba)$, so $\psi$ is an anti-automorphism. A scalar $\lambda$ gives $\psi(\lambda) = 2\lambda-\lambda = \lambda$, and a traceless element is negated. Over a field with two invertible, $\psi(a) = a$ forces $2a = \operatorname{Trd}(a)1_A$, hence $a$ scalar, so $\mathrm{sym}(A,\psi)$ has dimension one, which is $\tfrac12\cdot 2\cdot(2-1)$ and therefore the symplectic type.</p>
 <p><strong>Remark (the characteristic-two case).</strong> In characteristic two the formula is still an involution and an anti-automorphism, and the symmetrized elements are the image of the map $a \mapsto \operatorname{Trd}(a)1_A$, which is the scalar line and contains the unit; the involution <strong>is</strong> locally quadratic. Its semi-traces are the maps $f(s) = \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$, which exist because the reduced trace of a degree-two algebra is not identically zero in characteristic two, even though $\operatorname{Trd}(1_A) = 2 = 0$ there. On $M_2(\mathbb{F}_2)$ with the involution $\psi(X) = \operatorname{tr}(X)I-X$ one may take $\ell = E_{11}$, and $f(s) = \operatorname{tr}(E_{11}s)$ is a semi-trace. The pair therefore exists, whereas the transpose's does not.</p>
 <h3 id="the-degree-four-case-two-quaternion-algebras">The Degree-Four Case: Two Quaternion Algebras</h3>
 <p>Let $F$ be a field with two invertible, let $Q_1$, $Q_2$ be quaternion $F$-algebras with their canonical involutions $\psi_1$, $\psi_2$ of the previous example, and let</p>
@@ -220,7 +220,7 @@ A = Q_1\otimes_F Q_2, \qquad \sigma = \psi_1\otimes\psi_2 .
 $$</p>
 <p>The algebra $A$ is the <strong>biquaternion algebra</strong> of <em>Division Algebras</em>, sixteen-dimensional over $F$ and of degree four, and $\sigma$ is an involution of it. The symmetric elements of a tensor product of involutions are computed parity by parity, a pair of even elements and a pair of odd ones contributing a symmetric product and a mixed pair a skew one, so that</p>
 <p>$$
-\mathrm{Sym}(A,\sigma) = \mathrm{Sym}(Q_1,\psi_1)\otimes\mathrm{Sym}(Q_2,\psi_2)\oplus\mathrm{Skew}(Q_1,\psi_1)\otimes\mathrm{Skew}(Q_2,\psi_2),
+\mathrm{sym}(A,\sigma) = \mathrm{sym}(Q_1,\psi_1)\otimes\mathrm{sym}(Q_2,\psi_2)\oplus\mathrm{Skew}(Q_1,\psi_1)\otimes\mathrm{Skew}(Q_2,\psi_2),
 $$</p>
 <p>of dimension $1\cdot 1+3\cdot 3 = 10$, which is $\tfrac12\cdot 4\cdot 5$: the involution $\sigma$ is of <strong>orthogonal type</strong>, and $(A,\sigma,\tfrac12\operatorname{Trd})$ is a quadratic triple of degree four. The pair is the one carried by the biquaternion algebra in the relative deformation theorem of the closing section.</p>
 <p><strong>Remark (the two senses of biquaternion).</strong> The algebra of this example is the biquaternion algebra of the arithmetic literature, the tensor product of two quaternion algebras over one field, of degree four; it is not the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ of the Biquaternions category, which has degree two over $\mathbb{C}$ and carries the involution of the preceding example. The collision of the two names is recorded in <em>Division Algebras</em>, and the two algebras share only the factor $\mathbb{H}$ over $\mathbb{R}$.</p>
@@ -257,7 +257,7 @@ $$</p>
 <p>The counterpoint of the whole construction is the question of what happens when the pair is forgotten. Let $A$ be an Azumaya algebra over a scheme and let $(A,\sigma,f)$ be a quadratic triple on it; one compares the deformations of the triple with those of the underlying Azumaya algebra $A$, and the triple is <strong>relatively unobstructed</strong> when it deforms as soon as the algebra does. The answer of Mackall and Ruether is two-sided. If two is a global unit, or if the degree of $A$ is two, then the triple is relatively unobstructed: every deformation of $A$ extends to one of $(A,\sigma,f)$, so that in the two exceptional cases of the theorem the semi-trace adds no obstruction to the deformation theory. In characteristic two, with neither hypothesis, the two behaviours separate: on an <strong>Igusa surface</strong>, a surface in characteristic two whose Picard scheme is not reduced, there is a biquaternion algebra $Q'\otimes P'$ with a quadratic pair such that the underlying Azumaya algebra deforms and the quadratic triple does not. The example is the one constructed in the degree-four case above, and its obstruction is inherited from a line bundle on the surface whose deformations are obstructed.</p>
 <p><strong>Remark (the boundary).</strong> The deformation functors, the tangent-obstruction theory and the comparison of the deformations of the triple with those of the algebra are the subject of <em>Deformation Theory</em>; the Igusa surface, its Picard scheme and the cohomology of its sheaves are Part II, where they are <em>Sheaves in Algebraic Geometry</em> and the geometry of surfaces; and the algebra construction of the example is the degree-four case of the examples above. Nothing of the scheme-theoretic theory is used in the algebraic part of this article.</p>
 <h2 id="summary">Summary</h2>
-<p>Over a base in which two is invertible the involutions of a central simple algebra are classified by the dimension of the symmetric part, and the alternating elements are the skew ones and the symmetrized elements the symmetric ones; in characteristic two the symmetric and the skew elements coincide, the alternating and the symmetrized ones coincide, and the two collapses destroy the type and the eigenspace decomposition at once. The repair is the <strong>semi-trace</strong>, an $R$-module map $f : \mathrm{Sym}(A,\sigma) \to R$ with $f(a+\sigma(a)) = \operatorname{Trd}(a)$, and the resulting <strong>quadratic pair</strong> $(\sigma,f)$ and <strong>quadratic triple</strong> $(A,\sigma,f)$. When two is invertible the semi-trace is forced to be $\tfrac12\operatorname{Trd}$ and the pair is the involution; over a general base the semi-traces are classified by the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\xi(\lambda) = 1_A$, they exist exactly when the unit is a symmetrized element, and the involution is then called locally quadratic. The matrix transpose is orthogonal over a field with two invertible but carries no semi-trace over $\mathbb{F}_2$, since its symmetrized elements miss the unit; the canonical involution $a \mapsto \operatorname{Trd}(a)1_A-a$ of a quaternion algebra is symplectic over a field with two invertible and locally quadratic in characteristic two, where its semi-traces are the maps $s \mapsto \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$; and the involution $\psi_1\otimes\psi_2$ of a tensor product of two quaternion algebras is orthogonal of degree four, with a symmetric part of dimension ten, which is the degree-four case of the theory. The submodules carry three cohomological obstructions, the strong, the intermediate and the weak, chained in characteristic two and living in the cohomology of sheaves; the intermediate one is new and vanishes exactly when the extension of the Lie algebra $\mathfrak{pgo}_{(A,\sigma,f)}$ by the scalars splits. Finally, a quadratic triple is relatively unobstructed when two is a unit or the degree is two, and in characteristic two the relative obstruction exists, on the biquaternion algebra of an Igusa surface.</p>
+<p>Over a base in which two is invertible the involutions of a central simple algebra are classified by the dimension of the symmetric part, and the alternating elements are the skew ones and the symmetrized elements the symmetric ones; in characteristic two the symmetric and the skew elements coincide, the alternating and the symmetrized ones coincide, and the two collapses destroy the type and the eigenspace decomposition at once. The repair is the <strong>semi-trace</strong>, an $R$-module map $f : \mathrm{sym}(A,\sigma) \to R$ with $f(a+\sigma(a)) = \operatorname{Trd}(a)$, and the resulting <strong>quadratic pair</strong> $(\sigma,f)$ and <strong>quadratic triple</strong> $(A,\sigma,f)$. When two is invertible the semi-trace is forced to be $\tfrac12\operatorname{Trd}$ and the pair is the involution; over a general base the semi-traces are classified by the elements $\lambda \in A/\mathrm{Alt}(A,\sigma)$ with $\xi(\lambda) = 1_A$, they exist exactly when the unit is a symmetrized element, and the involution is then called locally quadratic. The matrix transpose is orthogonal over a field with two invertible but carries no semi-trace over $\mathbb{F}_2$, since its symmetrized elements miss the unit; the canonical involution $a \mapsto \operatorname{Trd}(a)1_A-a$ of a quaternion algebra is symplectic over a field with two invertible and locally quadratic in characteristic two, where its semi-traces are the maps $s \mapsto \operatorname{Trd}(\ell s)$ with $\operatorname{Trd}(\ell) = 1$; and the involution $\psi_1\otimes\psi_2$ of a tensor product of two quaternion algebras is orthogonal of degree four, with a symmetric part of dimension ten, which is the degree-four case of the theory. The submodules carry three cohomological obstructions, the strong, the intermediate and the weak, chained in characteristic two and living in the cohomology of sheaves; the intermediate one is new and vanishes exactly when the extension of the Lie algebra $\mathfrak{pgo}_{(A,\sigma,f)}$ by the scalars splits. Finally, a quadratic triple is relatively unobstructed when two is a unit or the degree is two, and in characteristic two the relative obstruction exists, on the biquaternion algebra of an Igusa surface.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -276,7 +276,7 @@ $$</p>
 <td>The reduced trace, invariant under $\sigma$</td>
 </tr>
 <tr>
-<td>$\mathrm{Sym}(A,\sigma)$</td>
+<td>$\mathrm{sym}(A,\sigma)$</td>
 <td>Fixed elements, $\ker(\mathrm{id}-\sigma)$</td>
 </tr>
 <tr>
@@ -292,19 +292,19 @@ $$</p>
 <td>Symmetrized elements, $\operatorname{im}(\mathrm{id}+\sigma)$</td>
 </tr>
 <tr>
-<td>$\mathrm{Alt}\subseteq\mathrm{Skew}$, $\mathrm{Symd}\subseteq\mathrm{Sym}$</td>
+<td>$\mathrm{Alt}\subseteq\mathrm{Skew}$, $\mathrm{Symd}\subseteq\mathrm{sym}$</td>
 <td>The containments, over any base</td>
 </tr>
 <tr>
-<td>$\mathrm{Alt}=\mathrm{Skew}$, $\mathrm{Symd}=\mathrm{Sym}$</td>
+<td>$\mathrm{Alt}=\mathrm{Skew}$, $\mathrm{Symd}=\mathrm{sym}$</td>
 <td>The equalities, two invertible</td>
 </tr>
 <tr>
-<td>$\mathrm{Sym}=\mathrm{Skew}$, $\mathrm{Symd}=\mathrm{Alt}$</td>
+<td>$\mathrm{sym}=\mathrm{Skew}$, $\mathrm{Symd}=\mathrm{Alt}$</td>
 <td>The collapses, characteristic two</td>
 </tr>
 <tr>
-<td>$f : \mathrm{Sym}(A,\sigma) \to R$</td>
+<td>$f : \mathrm{sym}(A,\sigma) \to R$</td>
 <td>A semi-trace, $f(a+\sigma(a)) = \operatorname{Trd}(a)$</td>
 </tr>
 <tr>

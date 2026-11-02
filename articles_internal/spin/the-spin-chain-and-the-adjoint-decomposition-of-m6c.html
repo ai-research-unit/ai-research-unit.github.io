@@ -172,7 +172,7 @@ $$</p>
 v_r\longmapsto\binom{5}{r-1}^{1/2}x^{6-r}y^{r-1},
 \qquad r=1,\dots,6,
 $$</p>
-<p>is an isomorphism of $\mathfrak{sl}_2$-modules $\mathbb{C}^6\to\operatorname{Sym}^5(\mathbb{C}^2)$.</p>
+<p>is an isomorphism of $\mathfrak{sl}_2$-modules $\mathbb{C}^6\to\operatorname{sym}^5(\mathbb{C}^2)$.</p>
 <p><strong>Proof.</strong> The monomials $x^{6-r}y^{r-1}$, $r=1,\dots,6$, are a basis of the binary forms of degree five, and the scalar normalisation is invertible, so the map is a linear isomorphism. On the monomials,</p>
 <p>$$
 J_3\,x^{6-r}y^{r-1}=\left(\tfrac{6-r-(r-1)}{2}\right)x^{6-r}y^{r-1}
@@ -185,8 +185,8 @@ J_-\,x^{6-r}y^{r-1}=(6-r)x^{5-r}y^r,
 J_+\,x^{6-r}y^{r-1}=(r-1)x^{7-r}y^{r-2},
 $$</p>
 <p>and after the normalisation the coefficients are $\sqrt{(r-1)(7-r)}$ and $\sqrt{r(6-r)}$, the coefficients of the frame. So the map intertwines the three generators.</p>
-<p><strong>Corollary.</strong> The carrier is $\operatorname{Sym}^5(\mathbb{C}^2)$, the spin-$\tfrac52$ module, and its highest weight vector is $v_1\leftrightarrow x^5$.</p>
-<p><strong>Proof.</strong> The highest weight vector of $\operatorname{Sym}^5$ is $x^5$, annihilated by $J_+$ and of weight $\tfrac52$; the map sends $v_1$ to $x^5$.</p>
+<p><strong>Corollary.</strong> The carrier is $\operatorname{sym}^5(\mathbb{C}^2)$, the spin-$\tfrac52$ module, and its highest weight vector is $v_1\leftrightarrow x^5$.</p>
+<p><strong>Proof.</strong> The highest weight vector of $\operatorname{sym}^5$ is $x^5$, annihilated by $J_+$ and of weight $\tfrac52$; the map sends $v_1$ to $x^5$.</p>
 <h3 id="the-weights">The Weights</h3>
 <p><strong>Proposition.</strong> The weights of $J_3$ on the carrier are $\tfrac52,\tfrac32,\tfrac12,-\tfrac12,-\tfrac32,-\tfrac52$, each with multiplicity one. The weights of $\operatorname{ad}_{J_3}$ on $M_6(\mathbb{C})$ are the integers $-5,-4,\dots,5$, and the weight space of weight $w$ is</p>
 <p>$$
@@ -242,7 +242,7 @@ M_6(\mathbb{C})=\bigoplus_{s=0}^{5}V_{(s)},
 \qquad
 \dim V_{(s)}=2s+1,
 \qquad
-V_{(s)}\cong\operatorname{Sym}^{2s}(\mathbb{C}^2).
+V_{(s)}\cong\operatorname{sym}^{2s}(\mathbb{C}^2).
 $$</p>
 <p><strong>Proof.</strong> The lowers of a highest weight vector of weight $s$ have weights $s,s-1,\dots,-s$; the chain has $2s+1$ terms and the last is killed by $\operatorname{ad}_{J_-}$, so the span has dimension $2s+1$ and is the irreducible module of spin $s$. The dimensions sum to $\sum_{s=0}^{5}(2s+1)=36$, which is $\dim M_6(\mathbb{C})$. The sum is direct: the modules have distinct Casimir eigenvalues $s(s+1)$, and generalized eigenspaces of a single operator for distinct eigenvalues are independent. So the sum is the whole algebra.</p>
 <p><strong>Corollary (the Casimir eigenvalues).</strong> On $V_{(s)}$ the Casimir acts by $s(s+1)$, and the eigenvalues and multiplicities on the adjoint module are</p>
@@ -299,7 +299,7 @@ $$</p>
 \qquad
 [m]_q=\frac{q^{m/2}-q^{-m/2}}{q^{1/2}-q^{-1/2}},
 $$</p>
-<p>is the $q$-integer form of the Clebsch–Gordan decomposition $\operatorname{Sym}^5\otimes\operatorname{Sym}^5{}^*\cong\bigoplus_{s=0}^{5}\operatorname{Sym}^{2s}$; the coefficient of $q^s$ in the right-hand side is the number of summands of spin at least $s$, which is one for each $s=0,\dots,5$.</p>
+<p>is the $q$-integer form of the Clebsch–Gordan decomposition $\operatorname{sym}^5\otimes\operatorname{sym}^5{}^*\cong\bigoplus_{s=0}^{5}\operatorname{sym}^{2s}$; the coefficient of $q^s$ in the right-hand side is the number of summands of spin at least $s$, which is one for each $s=0,\dots,5$.</p>
 <p><strong>Corollary.</strong> The multiplicity of the spin-$s$ module in the adjoint is one for every $s=0,\dots,5$, and there is no other summand.</p>
 <p><strong>Proof.</strong> The coefficient of $q^s$ in $\sum_i[2i+1]_q$ is the number of $i\ge s$, namely $6-s$; it is also the dimension $6-\lvert s\rvert$ of the weight space $W_s$. The multiplicity of the highest weight $q^s$ is the difference between the coefficients of $q^s$ and $q^{s+1}$ (with the coefficient of $q^6$ equal to zero), namely $(6-s)-(5-s)=1$. So each spin occurs once.</p>
 <h3 id="the-peirce-table-of-the-decomposition">The Peirce Table of the Decomposition</h3>
@@ -381,7 +381,7 @@ $$</p>
 $$</p>
 <p>Then $J_3$ preserves the two summands, while $J_+$ and $J_-$ exchange them. Neither summand is stable under the whole $\mathfrak{sl}_2$, and the carrier is irreducible across the split.</p>
 <p><strong>Proof.</strong> The eigenvalues of $\Gamma$ are $+1$ on the odd-indexed vectors and $-1$ on the even-indexed ones. $J_3$ is diagonal, so it preserves each eigenspace. $J_+$ sends $v_{2r}$ to a multiple of $v_{2r-1}$ and $v_{2r+1}$ to a multiple of $v_{2r}$, so it exchanges the two; $J_-$ does the same in the other direction.</p>
-<p><strong>Remark (the dimension of the halves).</strong> Each chiral half has dimension three. It is not a spin-$\tfrac12$ module: the spin-$\tfrac12$ of $\mathfrak{su}_2$ is two-dimensional. The correct statement is this. The centraliser of $\Gamma$ is $M_3\oplus M_3$, and each half is the defining three-dimensional module of its $M_3$. Inside that $M_3$, the Peirce $\mathfrak{su}_2$ of a rank-one idempotent of the $M_3$ acts on the half as the spin-$1$ (adjoint) module, the symmetric square $\operatorname{Sym}^2(\mathbb{C}^2)$ of the spin-$\tfrac12$. The spin-$\tfrac12$ module itself is two-dimensional; it is the carrier of the biquaternion case $n=2$, §<em>The Comparison with $n=2$</em>.</p>
+<p><strong>Remark (the dimension of the halves).</strong> Each chiral half has dimension three. It is not a spin-$\tfrac12$ module: the spin-$\tfrac12$ of $\mathfrak{su}_2$ is two-dimensional. The correct statement is this. The centraliser of $\Gamma$ is $M_3\oplus M_3$, and each half is the defining three-dimensional module of its $M_3$. Inside that $M_3$, the Peirce $\mathfrak{su}_2$ of a rank-one idempotent of the $M_3$ acts on the half as the spin-$1$ (adjoint) module, the symmetric square $\operatorname{sym}^2(\mathbb{C}^2)$ of the spin-$\tfrac12$. The spin-$\tfrac12$ module itself is two-dimensional; it is the carrier of the biquaternion case $n=2$, §<em>The Comparison with $n=2$</em>.</p>
 <h2 id="the-comparison-with-math308">The Comparison with $n=2$</h2>
 <p><strong>The biquaternion case.</strong> For $M_2(\mathbb{C})$ the same construction gives</p>
 <p>$$
@@ -393,7 +393,7 @@ J_-=E_{21},
 \qquad
 C=\tfrac34I_2,
 $$</p>
-<p>the spin-$\tfrac12$ carrier $\mathbb{C}^2=\operatorname{Sym}^1(\mathbb{C}^2)$, with the single ladder coefficient $1$.</p>
+<p>the spin-$\tfrac12$ carrier $\mathbb{C}^2=\operatorname{sym}^1(\mathbb{C}^2)$, with the single ladder coefficient $1$.</p>
 <p><strong>Proposition.</strong> For $n=2$ the adjoint decomposition is</p>
 <p>$$
 M_2(\mathbb{C})=V_{(0)}\oplus V_{(1)},
@@ -402,9 +402,9 @@ M_2(\mathbb{C})=V_{(0)}\oplus V_{(1)},
 $$</p>
 <p>that is $1+3=4$.</p>
 <p><strong>Proof.</strong> $V_{(0)}$ is spanned by $I_2$ and $V_{(1)}$ by $E_{12},J_3,E_{21}$, the three traceless matrices.</p>
-<p><strong>The pattern.</strong> For $M_n(\mathbb{C})$ with the principal chain, the carrier is $\operatorname{Sym}^{n-1}(\mathbb{C}^2)$ and the adjoint decomposes as</p>
+<p><strong>The pattern.</strong> For $M_n(\mathbb{C})$ with the principal chain, the carrier is $\operatorname{sym}^{n-1}(\mathbb{C}^2)$ and the adjoint decomposes as</p>
 <p>$$
-M_n(\mathbb{C})\cong\bigoplus_{s=0}^{n-1}\operatorname{Sym}^{2s}(\mathbb{C}^2),
+M_n(\mathbb{C})\cong\bigoplus_{s=0}^{n-1}\operatorname{sym}^{2s}(\mathbb{C}^2),
 \qquad
 \sum_{s=0}^{n-1}(2s+1)=n^2 .
 $$</p>
@@ -418,9 +418,9 @@ J_3=\operatorname{diag}\!\left(\tfrac52,\tfrac32,\tfrac12,-\tfrac12,-\tfrac32,-\
 \qquad
 J_+=\sum_{k=1}^{5}\sqrt{k(6-k)}E_{k,k+1},
 $$</p>
-<p>with $[J_3,J_\pm]=\pm J_\pm$ and $[J_+,J_-]=2J_3$. The carrier is $\operatorname{Sym}^5(\mathbb{C}^2)$, of spin $\tfrac52$, with ladder coefficients $\sqrt5,\sqrt8,3,\sqrt8,\sqrt5$ and Casimir $\tfrac{35}{4}I_6$.</p>
+<p>with $[J_3,J_\pm]=\pm J_\pm$ and $[J_+,J_-]=2J_3$. The carrier is $\operatorname{sym}^5(\mathbb{C}^2)$, of spin $\tfrac52$, with ladder coefficients $\sqrt5,\sqrt8,3,\sqrt8,\sqrt5$ and Casimir $\tfrac{35}{4}I_6$.</p>
 <p>$$
-\boxed{\ M_6(\mathbb{C})\cong\bigoplus_{s=0}^{5}\operatorname{Sym}^{2s}(\mathbb{C}^2),\qquad 1+3+5+7+9+11=36 .\ }
+\boxed{\ M_6(\mathbb{C})\cong\bigoplus_{s=0}^{5}\operatorname{sym}^{2s}(\mathbb{C}^2),\qquad 1+3+5+7+9+11=36 .\ }
 $$</p>
 <p>The Peirce line $A_{kl}$ is the weight line $l-k$. The chirality $\Gamma$ commutes with $J_3$ and anticommutes with $J_\pm$, so the two chiral halves are preserved by the Cartan and exchanged by the ladder: the chain is irreducible and mixes chirality.</p>
 <div class="table-scroll"><table>
@@ -433,7 +433,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Carrier</td>
-<td>$\mathbb{C}^6=\operatorname{Sym}^5(\mathbb{C}^2)$, spin $\tfrac52$</td>
+<td>$\mathbb{C}^6=\operatorname{sym}^5(\mathbb{C}^2)$, spin $\tfrac52$</td>
 </tr>
 <tr>
 <td>Ladder</td>

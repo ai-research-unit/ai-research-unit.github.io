@@ -119,12 +119,12 @@ $$</p>
 <h2 id="collineations-and-the-fundamental-theorem">Collineations and the Fundamental Theorem</h2>
 <p><strong>Definition.</strong> A <strong>semilinear</strong> map $T : V \to V$ is an additive bijection for which there is a field automorphism $\sigma$ of $K$ with $T(\lambda v) = \sigma(\lambda)T(v)$, and it induces a collineation, again written $[T]$, of the projective space. The group of the semilinear invertible maps modulo the scalars is</p>
 <p>$$
-P\Gamma L(V) = PGL(V) \rtimes \operatorname{Gal}(K) ,
+P\Gamma L(V) = PGL(V) \rtimes \operatorname{gal}(K) ,
 $$</p>
 <p>the <strong>projective semilinear group</strong>, where the field automorphisms act on the classes of the linear maps by their action on the scalars.</p>
 <p><strong>Theorem (the fundamental theorem of projective geometry).</strong> Let $\dim V \geq 3$ and let $f$ be a collineation of $\mathbb{P}(V)$; then $f$ is induced by a semilinear bijection of $V$, unique up to a scalar, so</p>
 <p>$$
-\boxed{\;\operatorname{Aut}(\mathbb{P}(V)) = P\Gamma L(V) = PGL(V) \rtimes \operatorname{Gal}(K)\;} .
+\boxed{\;\operatorname{Aut}(\mathbb{P}(V)) = P\Gamma L(V) = PGL(V) \rtimes \operatorname{gal}(K)\;} .
 $$</p>
 <p>For $\dim V = 2$ the statement that a bijection of the line preserving the collinearity is semilinear is false, and the cross ratio, not the semilinearity, is then the invariant.</p>
 <p><strong>Proof sketch.</strong> A collineation carries lines to lines and preserves the incidence and the dimension, and the value of a coordinate is described by a function on $K$ which is additive and multiplicative because the collineation preserves the projective additions and multiplications; the function is the values of a field automorphism, and the map is semilinear. The classical argument uses the theorem of Desargues in dimension at least two, and it is in <em>Projective Geometry</em>.</p>
@@ -167,7 +167,7 @@ $$</p>
 <p><strong>Proof.</strong> The class of $T$ is trivial exactly when $T$ is a scalar, so the order is the least such $k$; the eigenvector decomposition of $T$ over an algebraically closed field describes the fixed points, and an involution has eigenvalues $\pm 1$ up to a common scalar, giving either two fixed points or the unipotent case.</p>
 <p><strong>Remark (the harmonic involution).</strong> On the projective line the involution with two fixed points is the <strong>harmonic homology</strong>, and the involution $z \mapsto 1/z$ fixes $\pm 1$ and exchanges $0$ and $\infty$; the cross ratio of the four points $a, b, z, z'$ at a fixed value characterises the involution. The involutions of the projective line are the boundary form of the reflections of the hyperbolic plane and the inversions of the Möbius geometry, and they are treated as operators in <em>The Möbius Transformation as an Operator</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The operators of a projective space $\mathbb{P}(V)$ are the collineations, and by the fundamental theorem they are the semilinear maps up to scalars, so the operator group is $P\Gamma L(V) = PGL(V) \rtimes \operatorname{Gal}(K)$ in dimension at least two, and its linear part is the projective general linear group $PGL(V) = GL(V)/K^\times$, the quotient of the invertible linear maps by the scalars, with the central extension $1 \to K^\times \to GL(V) \to PGL(V) \to 1$. The projective special linear group $PSL(V)$ is the image of the determinant-one group, of index the power classes. The two-sided reading of the operator group is the left and right translation and the sandwich $\Theta_{[A],[B]}([T]) = [A][T][B]$, whose one-parameter part is the inner automorphism group; the group acts simply transitively on the projective frames, so a transformation is determined by $n^2+2n$ parameters. In dimension one the operators are the fractional linear transformations, $PGL(2,K)$ acts sharply triply transitively, and the cross ratio is the complete invariant of the quadruples. An operator preserves a projective quadric exactly when it preserves the polar form up to a scalar, so the group of a nondegenerate quadric is the projective orthogonal group $PO(V,\mathfrak{Q})$, and the involutions and the order of a projectivity are read from the powers of the class in the projective group.</p>
+<p>The operators of a projective space $\mathbb{P}(V)$ are the collineations, and by the fundamental theorem they are the semilinear maps up to scalars, so the operator group is $P\Gamma L(V) = PGL(V) \rtimes \operatorname{gal}(K)$ in dimension at least two, and its linear part is the projective general linear group $PGL(V) = GL(V)/K^\times$, the quotient of the invertible linear maps by the scalars, with the central extension $1 \to K^\times \to GL(V) \to PGL(V) \to 1$. The projective special linear group $PSL(V)$ is the image of the determinant-one group, of index the power classes. The two-sided reading of the operator group is the left and right translation and the sandwich $\Theta_{[A],[B]}([T]) = [A][T][B]$, whose one-parameter part is the inner automorphism group; the group acts simply transitively on the projective frames, so a transformation is determined by $n^2+2n$ parameters. In dimension one the operators are the fractional linear transformations, $PGL(2,K)$ acts sharply triply transitively, and the cross ratio is the complete invariant of the quadruples. An operator preserves a projective quadric exactly when it preserves the polar form up to a scalar, so the group of a nondegenerate quadric is the projective orthogonal group $PO(V,\mathfrak{Q})$, and the involutions and the order of a projectivity are read from the powers of the class in the projective group.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -206,7 +206,7 @@ $$</p>
 <td>Projective special linear group, the image of $SL(V)$</td>
 </tr>
 <tr>
-<td>$P\Gamma L(V) = PGL(V)\rtimes\operatorname{Gal}(K)$</td>
+<td>$P\Gamma L(V) = PGL(V)\rtimes\operatorname{gal}(K)$</td>
 <td>Collineation group; the operators in dimension at least two</td>
 </tr>
 <tr>

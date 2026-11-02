@@ -90,7 +90,7 @@
 <p><strong>(a)</strong> $K$ is infinite.</p>
 <p><strong>(b)</strong> $K$ is perfect, and if $\operatorname{char} K = p > 0$ the Frobenius endomorphism $x \mapsto x^p$ is an automorphism of $K$.</p>
 <p><strong>(c)</strong> $K$ is the unique algebraic extension of itself, and every finite extension of $K$ is trivial.</p>
-<p><strong>(d)</strong> $K$ has no nontrivial Galois extension, so $\operatorname{Gal}(\overline{K}/K) = 1$ for an algebraic closure $\overline{K}$ of $K$.</p>
+<p><strong>(d)</strong> $K$ has no nontrivial Galois extension, so $\operatorname{gal}(\overline{K}/K) = 1$ for an algebraic closure $\overline{K}$ of $K$.</p>
 <p><strong>(e)</strong> Every field homomorphism of $K$ into an algebraically closed field $L$ extends to an embedding of any algebraic extension of $K$ into $L$.</p>
 <p><strong>Proof.</strong> (a) If $K$ were finite it would have $q$ elements and the polynomial $x^q - x + 1$ would have no root in $K$, since $a^q = a$ for all $a \in K^\times$ and for $0$; contradiction. (b) In characteristic $p$ the polynomial $x^p - a$ has a root for every $a$, so Frobenius is surjective; hence $K$ is perfect. (c) is (d) of the previous theorem. (d) A Galois extension is algebraic, hence trivial. (e) is the isomorphism extension theorem of <em>Splitting Fields and Algebraic Closure</em> applied inside the algebraic closure of $L$.</p>
 <h3 id="examples">Examples</h3>
@@ -192,7 +192,7 @@ $$</p>
 <p><strong>Theorem (Steinitz).</strong> Two algebraically closed fields are isomorphic if and only if they have the same characteristic and the same transcendence degree over their common prime field. More explicitly, if $k$ is a prime field (so $k = \mathbb{Q}$ or $k = \mathbb{F}_p$) and $K$ is an algebraically closed field of characteristic $\operatorname{char} k$ with $\operatorname{tr.deg}_k K = \kappa$, then $K$ is isomorphic to an algebraic closure of the purely transcendental extension $k(t_\alpha : \alpha < \kappa)$ in $\kappa$ indeterminates.</p>
 <p><strong>Proof sketch.</strong> Given algebraically closed fields $K, K'$ with the same characteristic and transcendence degrees $\kappa = \kappa'$, choose transcendence bases $\{t_\alpha\}$, $\{t'_\alpha\}$ indexed by $\kappa$ and extend the isomorphism of prime fields by $t_\alpha \mapsto t'_\alpha$; this is an isomorphism of $k(\{t_\alpha\})$ onto $k(\{t'_\alpha\})$, both purely transcendental extensions of $k$ with the same transcendence basis. This embedding lies in algebraic extensions $K$ and $K'$, and the isomorphism-extension argument of the uniqueness theorem extends it to $K \to K'$. The converse is immediate because characteristic and transcendence degree are isomorphism invariants.</p>
 <p><strong>Corollary (classification by cardinality and degree).</strong> Fix a characteristic. Since $\lvert K \rvert = \max\{\aleph_0, \operatorname{tr.deg}_k K\}$ for an algebraically closed field $K$ with prime field $k$, the isomorphism classes of algebraically closed fields of the given characteristic correspond exactly to the possible values of the transcendence degree $\kappa$: for $\kappa$ infinite, $\lvert K \rvert = \kappa$, so all algebraically closed fields of the given characteristic and of an uncountable cardinal $\lambda$ are isomorphic, and they all have $\operatorname{tr.deg} = \lambda$. For countable fields the transcendence degree can be any element of $\{0, 1, 2, \dots\} \cup \{\aleph_0\}$, so there are countably many isomorphism classes of countable algebraically closed fields of a fixed characteristic, one for each degree; the class of degree $0$ is $\overline{\mathbb{Q}}$ in characteristic $0$ and $\overline{\mathbb{F}_p}$ in characteristic $p$.</p>
-<p><strong>Remark (structure of the algebraic closure).</strong> The algebraic closure $\overline{F}$ of a field $F$ has the same cardinality as $F$ when $F$ is infinite, and is countable when $F$ is finite; its transcendence degree over $F$ is $0$, and $\overline{F}$ is unique. The absolute Galois group $\operatorname{Gal}(\overline{F}/F)$, studied in <em>Ring and Field Automorphisms</em>, carries the arithmetic content that the isomorphism class of $\overline{F}$ alone does not see.</p>
+<p><strong>Remark (structure of the algebraic closure).</strong> The algebraic closure $\overline{F}$ of a field $F$ has the same cardinality as $F$ when $F$ is infinite, and is countable when $F$ is finite; its transcendence degree over $F$ is $0$, and $\overline{F}$ is unique. The absolute Galois group $\operatorname{gal}(\overline{F}/F)$, studied in <em>Ring and Field Automorphisms</em>, carries the arithmetic content that the isomorphism class of $\overline{F}$ alone does not see.</p>
 <hr />
 <h2 id="the-lefschetz-principle">The Lefschetz Principle</h2>
 <h3 id="statement">Statement</h3>
@@ -313,7 +313,7 @@ $$</p>
 <td>Transcendence degree of $K$ over $F$</td>
 </tr>
 <tr>
-<td>$\operatorname{Gal}(L/K)$</td>
+<td>$\operatorname{gal}(L/K)$</td>
 <td>Galois group</td>
 </tr>
 <tr>

@@ -93,10 +93,10 @@ $$</p>
 <p><em>Proof.</em> Boundedness gives, by the telescoping lemma below, $\|A(x_1,\dots,x_k)-A(x_1',\dots,x_k')\|\le\|A\|\sum_j\|x_j-x_j'\|\prod_{i\neq j}\max(\|x_i\|,\|x_i'\|)$, so $A$ is continuous; conversely continuity at $0$ gives a ball on which $A$ is bounded by $1$, and homogeneity of each argument extends the bound to all of the product. The norm axioms and the identification are immediate from the definitions, and completeness is the completeness of $\langle X_1,\cdot\rangle$ iterated, by <em>Normed and Banach Spaces</em>.</p>
 <p><strong>Definition.</strong> When $X_1=\cdots=X_k=X$, the <strong>symmetrisation</strong> of $A \in \mathcal L^k(X;Y)$ is</p>
 <p>$$
-\operatorname{Sym}(A)(x_1,\dots,x_k)=\frac1{k!}\sum_{\sigma \in S_k}A(x_{\sigma(1)},\dots,x_{\sigma(k)}),
+\operatorname{sym}(A)(x_1,\dots,x_k)=\frac1{k!}\sum_{\sigma \in S_k}A(x_{\sigma(1)},\dots,x_{\sigma(k)}),
 $$</p>
-<p>and $A$ is <strong>symmetric</strong> if $A=\operatorname{Sym}(A)$. The subspace $\mathcal L^k_{\mathrm{sym}}(X;Y)$ of symmetric bounded $k$-linear maps is closed in $\mathcal L^k(X;Y)$.</p>
-<p>The symmetrisation generalises to $k$ arguments the formula $\operatorname{Sym}(A)(x_1,x_2)=\tfrac12\bigl(A(x_1,x_2)+A(x_2,x_1)\bigr)$ for bilinear forms, whose fixed points are the symmetric ones, and it will be used to symmetrise ordinary iterated derivatives.</p>
+<p>and $A$ is <strong>symmetric</strong> if $A=\operatorname{sym}(A)$. The subspace $\mathcal L^k_{\mathrm{sym}}(X;Y)$ of symmetric bounded $k$-linear maps is closed in $\mathcal L^k(X;Y)$.</p>
+<p>The symmetrisation generalises to $k$ arguments the formula $\operatorname{sym}(A)(x_1,x_2)=\tfrac12\bigl(A(x_1,x_2)+A(x_2,x_1)\bigr)$ for bilinear forms, whose fixed points are the symmetric ones, and it will be used to symmetrise ordinary iterated derivatives.</p>
 <h3 id="the-telescoping-identity">The Telescoping Identity</h3>
 <p>The basic estimate behind the chain rule and Taylor's theorem is the following identity, which converts a difference of products into a sum of products of differences.</p>
 <p><strong>Lemma (telescoping).</strong> For a $k$-linear $A$ and arbitrary vectors,</p>
@@ -279,7 +279,7 @@ $$</p>
 <td>norm of a multilinear map</td>
 </tr>
 <tr>
-<td>$\operatorname{Sym}(A)$, $\mathcal L^k_{\mathrm{sym}}$</td>
+<td>$\operatorname{sym}(A)$, $\mathcal L^k_{\mathrm{sym}}$</td>
 <td>symmetrisation and symmetric multilinear maps</td>
 </tr>
 <tr>

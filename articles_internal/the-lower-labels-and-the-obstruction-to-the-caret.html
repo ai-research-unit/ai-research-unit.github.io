@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lower Labels and the Obstruction to the Caret — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lower-labels-and-the-obstruction-to-the-caret"><strong>The Lower Labels and the Obstruction to the Caret</strong></h1>
+<h2 id="introduction-the-question">Introduction: The Question</h2>
+<p>The corpus now writes every label of three letters in lowercase and puts the label of an object on the caret, $\mathbb{B}^{\mathrm{opp}}$, $L_x^{\mathrm{axf}}$, $E_0^{\mathrm{wkb}}$. The question of this note is the one that follows: the low slot still holds three-letter upright words, and can they be moved up?</p>
+<p>The census says no for most of them. A three-letter upright word follows a low mark 4,493 times, in 115 distinct words, spread over the mathematical, the physical and the internal corpus. Fifteen of them were moved, 74 occurrences, and they are now on the caret and in the table of <em>Index, Notation and Corpus Conventions</em>, §<em>The Three-Letter Labels</em>. The other hundred stayed, and this note says why, category by category.</p>
+<p>The census counts a word of exactly three letters written upright, in $\mathrm{}$, $\operatorname{}$ or $\text{}$, immediately after a low mark. It reads the mathematical, the physical and the internal articles, counts occurrences and not distinct words, and leaves this note out of its own count.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Words</th>
+<th>Occurrences</th>
+<th>Movable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the indexed label</td>
+<td>16</td>
+<td>3,109</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the part and the role</td>
+<td>35</td>
+<td>412</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the word already on the caret</td>
+<td>25</td>
+<td>642</td>
+<td>21 of 25, at a cost</td>
+</tr>
+<tr>
+<td>the code of the twelve structures</td>
+<td>12</td>
+<td>146</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the capital</td>
+<td>27</td>
+<td>184</td>
+<td>yes, and it is a defect</td>
+</tr>
+<tr>
+<td><strong>the whole residue</strong></td>
+<td><strong>115</strong></td>
+<td><strong>4,493</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>The five categories are not five degrees of difficulty. One is an obstruction of notation, two are obstructions of meaning, one is a matter of convention alone, and one is the case rule.</p>
+<h2 id="the-indexed-label">The Indexed Label</h2>
+<p>This is the largest family and the hardest. Sixteen words carry 3,109 occurrences, and 933 of them stand in a field of two parts, the label and an index: $s_{\mathrm{tot},z}$, $\tilde{K}_{\mathrm{mod},W}$, $\tilde H_{\mathrm{pos},l}$, $K_{\mathrm{rad}\,\mu}$.</p>
+<p><strong>Why it cannot rise.</strong> The low slot takes a comma-separated list, so a label and an index share one field and one size. The caret takes one field. Move the label up and the index is left behind: $\tilde S^{\mathrm{tot}}{}_{,k}$, with an empty base and a comma that has nothing to separate. The form is legal TeX and unreadable at reading size. It also breaks the rule that a mark has one job, since the low slot would then hold a bare index with no label to belong to, and the reader could no longer tell an index from a label without looking up the table.</p>
+<p><strong>What it would cost.</strong> 933 rewrites, every one of them introducing a form the conventions do not otherwise admit, and a second exception in §<em>The Subscripts</em>, which would have to say that a low slot may hold an index whose label is above.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Count</th>
+<th>Written on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{tot}$</td>
+<td>1044</td>
+<td>$s$, $S$, $\tilde S$, $P$, $M$, $E$, $\phi$, $\psi$, $\mu$</td>
+</tr>
+<tr>
+<td>$\mathrm{lor}$</td>
+<td>960</td>
+<td>$U$, $\tilde U$, $F$, $J$, $X$, $\tilde Q$, $\nabla$, $\phi$</td>
+</tr>
+<tr>
+<td>$\mathrm{mod}$</td>
+<td>332</td>
+<td>$\tilde K$, $K$</td>
+</tr>
+<tr>
+<td>$\mathrm{kin}$</td>
+<td>129</td>
+<td>$K$, $\tilde P$, $\mathcal L$, $E$, $p$, $T$</td>
+</tr>
+<tr>
+<td>$\mathrm{eff}$</td>
+<td>126</td>
+<td>$V$, $J$, $B$, $u$, $\psi$, $\omega$, $\hbar$, $\Omega$, $\mathcal L$, $\theta$</td>
+</tr>
+<tr>
+<td>$\mathrm{out}$</td>
+<td>124</td>
+<td>$r$, $\varepsilon$, $\omega$, $u$, $E$, $I$, $p$, $\tilde P$, $\tilde{Ϛ}$</td>
+</tr>
+<tr>
+<td>$\mathrm{can}$</td>
+<td>89</td>
+<td>$P$, $p$, $T$, $E$</td>
+</tr>
+<tr>
+<td>$\mathrm{sym}$</td>
+<td>86</td>
+<td>$\tilde\Pi$, $P$, $\mathcal L$, $f$, $T$</td>
+</tr>
+<tr>
+<td>$\mathrm{pos}$</td>
+<td>62</td>
+<td>$H$, $F$, $Q$, $R$</td>
+</tr>
+<tr>
+<td>$\mathrm{fin}$</td>
+<td>60</td>
+<td>$s$, $\mathcal P$</td>
+</tr>
+<tr>
+<td>$\mathrm{osc}$</td>
+<td>31</td>
+<td>$\tilde Q$, $H$</td>
+</tr>
+<tr>
+<td>$\mathrm{rec}$</td>
+<td>28</td>
+<td>$e$, $\omega$</td>
+</tr>
+<tr>
+<td>$\mathrm{ext}$</td>
+<td>15</td>
+<td>$u$, $C$, $W$</td>
+</tr>
+<tr>
+<td>$\mathrm{alt}$</td>
+<td>10</td>
+<td>$\epsilon$, $\gamma$</td>
+</tr>
+<tr>
+<td>$\mathrm{rad}$</td>
+<td>8</td>
+<td>$K$, $\omega$</td>
+</tr>
+<tr>
+<td>$\mathrm{div}$</td>
+<td>5</td>
+<td>$\kappa$, $N$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two of these are worse than indexed. $\mathrm{mod}$ holds the modular Hamiltonian $\tilde K_{\mathrm{mod},W}$ and also the modified Lagrangian $L^{\mathrm{mod}}$, so the word is in both slots already. $\mathrm{sym}$ holds a symmetric subspace, $\mathcal L^k_{\mathrm{sym}}(X;Y)$, and the symmetrised part $f^{\mathrm{sym}}$.</p>
+<h2 id="the-part-and-the-role">The Part and the Role</h2>
+<p>Thirty-five words, 412 occurrences. The glyph is a complete object and the low word names a piece of it: the interaction action $S_{\mathrm{int}}$, the nuclear norm $\lVert A\rVert_{\mathrm{nuc}}$, the torsion submodule $M_{\mathrm{tor}}$, the character of the regular representation $\chi_{\mathrm{reg}}$, the vacuum energy $E_{\mathrm{vac}}$.</p>
+<p><strong>Why it cannot rise.</strong> The two slots say different things, and the difference is not typographic. The low slot binds to the glyph and reads <em>of</em>: $\chi_{\mathrm{reg}}$ is the character <strong>of</strong> the regular representation, a character that is otherwise unremarkable. The caret asserts and reads <em>is</em>: $f^{\mathrm{sym}}$ in this corpus is the symmetrised object itself, $f^{\mathrm{sym}} = \tfrac12(f(x,y)+f(y,x))$. Moved up, $\chi^{\mathrm{reg}}$ would claim that the character is regular, which is a different mathematical statement and, in most of these cases, a false one.</p>
+<p>The same argument reaches the operator names that sit low because a bar or a sum takes the low slot: the restriction $T|_{\mathrm{Fix}(\sigma)}$, the column space $\Pi_{\operatorname{col}A}$, the cyclic sum $\sum_{\mathrm{cyc}}$. Here the word is an operator with an argument, and the low slot belongs to the bar or the summation sign, not to the word.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Count</th>
+<th>Written on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{loc}$</td>
+<td>68</td>
+<td>$f$, $L^1$, $c$, $T$, $H^1$</td>
+</tr>
+<tr>
+<td>$\mathrm{int}$</td>
+<td>60</td>
+<td>$U$, $S$, $\mathcal L$, $H$</td>
+</tr>
+<tr>
+<td>$\mathrm{adv}$</td>
+<td>32</td>
+<td>$G$, $\tilde{\mathcal L}$, $\ldots$</td>
+</tr>
+<tr>
+<td>$\mathrm{tor}$</td>
+<td>26</td>
+<td>$M$, $G$</td>
+</tr>
+<tr>
+<td>$\mathrm{vac}$</td>
+<td>25</td>
+<td>$\mathcal M$, $E$, $\theta$, $\rho$, $\ldots$</td>
+</tr>
+<tr>
+<td>$\mathrm{nuc}$</td>
+<td>23</td>
+<td>$\lVert T\rVert$, $\lVert A\rVert$</td>
+</tr>
+<tr>
+<td>$\mathrm{rot}$</td>
+<td>22</td>
+<td>$a$, $g$, $w$, $S$, $M$, $\mu$, $\tilde{Ϛ}$</td>
+</tr>
+<tr>
+<td>$\mathrm{sup}$</td>
+<td>21</td>
+<td>$\lvert f\rvert$, $\lVert\cdot\rVert$</td>
+</tr>
+<tr>
+<td>$\mathrm{std}$</td>
+<td>17</td>
+<td>$V$, $\chi$</td>
+</tr>
+<tr>
+<td>$\mathrm{der}$</td>
+<td>16</td>
+<td>$\operatorname{Inn}$, $\operatorname{Out}$</td>
+</tr>
+<tr>
+<td>$\mathrm{acc}$</td>
+<td>12</td>
+<td>$I$</td>
+</tr>
+<tr>
+<td>$\mathrm{ran}$</td>
+<td>11</td>
+<td>$P$</td>
+</tr>
+<tr>
+<td>$\mathrm{coh}$</td>
+<td>8</td>
+<td>$\rho$</td>
+</tr>
+<tr>
+<td>$\mathrm{cas}$</td>
+<td>7</td>
+<td>$E$</td>
+</tr>
+<tr>
+<td>$\mathrm{cyc}$</td>
+<td>6</td>
+<td>$\sum$, $p$</td>
+</tr>
+<tr>
+<td>$\mathrm{ess}$</td>
+<td>5</td>
+<td>$r$, $\sigma$</td>
+</tr>
+<tr>
+<td>$\mathrm{vec}$</td>
+<td>5</td>
+<td>$G$, $[\ldots]$</td>
+</tr>
+<tr>
+<td>$\mathrm{aux}$</td>
+<td>5</td>
+<td>$S$</td>
+</tr>
+<tr>
+<td>$\mathrm{grp}$</td>
+<td>4</td>
+<td>$L$</td>
+</tr>
+<tr>
+<td>$\mathrm{day}$</td>
+<td>4</td>
+<td>$T$</td>
+</tr>
+<tr>
+<td>$\mathrm{hor}$</td>
+<td>4</td>
+<td>$A$</td>
+</tr>
+<tr>
+<td>$\mathrm{ord}$</td>
+<td>3</td>
+<td>$L$</td>
+</tr>
+<tr>
+<td>$\mathrm{lex}$</td>
+<td>3</td>
+<td>$\succ$</td>
+</tr>
+<tr>
+<td>$\mathrm{raw}$</td>
+<td>3</td>
+<td>$H$</td>
+</tr>
+<tr>
+<td>$\mathrm{atm}$</td>
+<td>3</td>
+<td>$m^2$</td>
+</tr>
+<tr>
+<td>$\mathrm{dil}$</td>
+<td>2</td>
+<td>$D$</td>
+</tr>
+<tr>
+<td>$\mathrm{col}$</td>
+<td>2</td>
+<td>$\Pi$</td>
+</tr>
+<tr>
+<td>$\mathrm{row}$</td>
+<td>2</td>
+<td>$\Pi$</td>
+</tr>
+<tr>
+<td>$\mathrm{bil}$</td>
+<td>2</td>
+<td>$\langle\cdot,\cdot\rangle$</td>
+</tr>
+<tr>
+<td>$\mathrm{mom}$</td>
+<td>2</td>
+<td>$\tilde V$</td>
+</tr>
+<tr>
+<td>$\mathrm{end}$</td>
+<td>2</td>
+<td>$x$</td>
+</tr>
+<tr>
+<td>$\mathrm{exc}$</td>
+<td>2</td>
+<td>$N^{\mathrm{fop}}$, $\ldots$</td>
+</tr>
+<tr>
+<td>$\mathrm{opt}$</td>
+<td>2</td>
+<td>$\chi t'$</td>
+</tr>
+<tr>
+<td>$\mathrm{sol}$</td>
+<td>2</td>
+<td>$m^2$</td>
+</tr>
+<tr>
+<td>$\mathrm{neg}$</td>
+<td>1</td>
+<td>$Q$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-word-already-on-the-caret">The Word Already on the Caret</h2>
+<p>Twenty-five words, 642 occurrences, and each of them already names something on the caret. The caret holds 75 distinct three-letter words and the low slot 115, and 37 words sit in both. Twenty-five of the 37 are this family; the other twelve are the codes, and they are counted in their own section.</p>
+<p><strong>Why it cannot simply rise.</strong> Merging two vocabularies needs every word to mean one thing. Most of these do: $\mathrm{ret}$ low is the retarded kernel and $\mathrm{ret}$ high is the retarded field, and both are the same word for the same regime. But four do not, and a merge would silently weld two meanings:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Word</th>
+<th>In the low slot</th>
+<th>On the caret</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{mod}$</td>
+<td>the modular Hamiltonian, $\tilde K_{\mathrm{mod},W}$</td>
+<td>the modified Lagrangian, $L^{\mathrm{mod}}$</td>
+</tr>
+<tr>
+<td>$\mathrm{reg}$</td>
+<td>the regular representation, $\chi_{\mathrm{reg}}$</td>
+<td>the regularised kernel, $G_R^{\mathrm{reg}}$</td>
+</tr>
+<tr>
+<td>$\mathrm{sym}$</td>
+<td>a symmetric subspace, $\mathcal L^k_{\mathrm{sym}}$</td>
+<td>the symmetrised part, $f^{\mathrm{sym}}$</td>
+</tr>
+<tr>
+<td>$\mathrm{opp}$</td>
+<td>a product written on the reversed algebra, $a\cdot_{\mathrm{opp}}b$</td>
+<td>the opposite algebra, $\mathbb{B}^{\mathrm{opp}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>$\mathrm{reg}$ is the sharpest. Two regulars, one of representation theory and one of regularisation, would differ only by the height of the word, at the size where the reader can least afford it. That is the same failure the corpus already forbids for $\mathrm{op}$ beside $\mathrm{opp}$, now with the slot as the only separator.</p>
+<p><strong>The rest of the family</strong> migrates cleanly and is left only because it is harmless where it is: $\mathrm{red}$ 82, $\mathrm{top}$ 57, $\mathrm{alg}$ 50, $\mathrm{rel}$ 40, $\mathrm{inv}$ 33, $\mathrm{odd}$ 27, $\mathrm{sgn}$ 24, $\mathrm{fix}$ 19, $\mathrm{lin}$ 17, $\mathrm{nil}$ 11, $\mathrm{per}$ 11, $\mathrm{def}$ 11, $\mathrm{wkb}$ 10, $\mathrm{orb}$ 6, $\mathrm{rep}$ 4, $\mathrm{exp}$ 4, $\mathrm{adj}$ 4, $\mathrm{pol}$ 3, $\mathrm{new}$ 2, $\mathrm{rev}$ 2, $\mathrm{lab}$ 2, $\mathrm{imp}$ 1.</p>
+<h2 id="the-code-of-the-twelve-structures">The Code of the Twelve Structures</h2>
+<p>Twelve words, 146 occurrences: $\mathrm{gpa}$, $\mathrm{gps}$, $\mathrm{gqa}$, $\mathrm{gqs}$, $\mathrm{spa}$, $\mathrm{sps}$, $\mathrm{sqa}$, $\mathrm{sqs}$, $\mathrm{apa}$, $\mathrm{aps}$, $\mathrm{aqa}$, $\mathrm{aqs}$.</p>
+<p><strong>Why they stayed, and why that is a choice and not an obstruction.</strong> These are movable. Nothing in the notation stops $V_{\mathrm{gpa}}$ from becoming $V^{\mathrm{gpa}}$. They stay low for two reasons. The first is that the twelve occur in tables and comparisons where they are read as one column of short names, not as marks on a glyph, and the low slot keeps the column aligned. The second is that the code names the multiplication, $\cdot_{\mathrm{gpa}}$, and the multiplication is a part of the expression rather than a variant of the object.</p>
+<p>The cost of moving them is 146 rewrites, and the benefit is one fewer exception in §<em>The Subscripts</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Count</th>
+<th>Written on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{gqs}$</td>
+<td>21</td>
+<td>$V$, $\overline V$</td>
+</tr>
+<tr>
+<td>$\mathrm{gpa}$</td>
+<td>20</td>
+<td>$V$</td>
+</tr>
+<tr>
+<td>$\mathrm{gqa}$</td>
+<td>18</td>
+<td>$V$</td>
+</tr>
+<tr>
+<td>$\mathrm{gps}$</td>
+<td>18</td>
+<td>$V$, $\overline V$</td>
+</tr>
+<tr>
+<td>$\mathrm{spa}$</td>
+<td>12</td>
+<td>$V$</td>
+</tr>
+<tr>
+<td>$\mathrm{sqs}$</td>
+<td>11</td>
+<td>$V$, $\overline V$</td>
+</tr>
+<tr>
+<td>$\mathrm{aqa}$</td>
+<td>10</td>
+<td>$V$, $\diamond$</td>
+</tr>
+<tr>
+<td>$\mathrm{aps}$</td>
+<td>9</td>
+<td>$V$</td>
+</tr>
+<tr>
+<td>$\mathrm{apa}$</td>
+<td>9</td>
+<td>$V$</td>
+</tr>
+<tr>
+<td>$\mathrm{aqs}$</td>
+<td>8</td>
+<td>$V$, $\diamond$</td>
+</tr>
+<tr>
+<td>$\mathrm{sqa}$</td>
+<td>5</td>
+<td>$V$</td>
+</tr>
+<tr>
+<td>$\mathrm{sps}$</td>
+<td>5</td>
+<td>$V$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-capital">The Capital</h2>
+<p>Twenty-seven words, 184 occurrences, and every one of them breaks the lowercase rule stated in §<em>The Three-Letter Labels</em>: $\mathrm{Had}$ 50, $\mathrm{Irr}$ 27, $\mathrm{IPC}$ 12, $\mathrm{Lie}$ 10, $\mathrm{Fix}$ 10, $\mathrm{CPC}$ 8, $\mathrm{Vir}$ 7, $\mathrm{GUT}$ 6, $\mathrm{EDM}$ 5, $\mathrm{CAR}$ 5, $\mathrm{Spf}$ 4, $\mathrm{Inn}$ 4, $\mathrm{CTP}$ 4, $\mathrm{End}$ 3, $\mathrm{Spa}$ 3, $\mathrm{Aut}$ 3, $\mathrm{Cor}$ 3, $\mathrm{QCD}$ 3, $\mathrm{DCB}$ 3, $\mathrm{Dir}$ 3, $\mathrm{Hom}$ 2, $\mathrm{Ind}$ 2, $\mathrm{Ric}$ 2, $\mathrm{PSh}$ 2, $\mathrm{Aff}$ 1, $\mathrm{Har}$ 1, $\mathrm{RGB}$ 1.</p>
+<p><strong>Why they are hard to move.</strong> The capital is the acronym. $\mathrm{Lie}$, $\mathrm{Vir}$, $\mathrm{Ric}$ are names of people; $\mathrm{QCD}$, $\mathrm{GUT}$, $\mathrm{EDM}$, $\mathrm{CAR}$, $\mathrm{CTP}$, $\mathrm{IPC}$, $\mathrm{CPC}$, $\mathrm{DCB}$, $\mathrm{RGB}$ are initialisms of a phrase; $\mathrm{End}$, $\mathrm{Hom}$, $\mathrm{Aut}$, $\mathrm{Inn}$, $\mathrm{Spf}$, $\mathrm{PSh}$, $\mathrm{Fix}$ are standard operators whose capital is part of how they are recognised. Lowercasing them and lifting them to the caret is two changes at once, and the lowercase form loses the acronym: $\mathrm{qcd}$ no longer shows which words it abbreviates.</p>
+<p>Four of them are not labels at all, and are the clearest case in the family. $\mathrm{Fix}$ is an operator with an argument, written low after a restriction bar, $f|_{\mathrm{Fix}(\Sigma)}$. $\mathrm{IPC}$ and $\mathrm{CPC}$ name the calculus a turnstile belongs to, $\vdash_{\mathrm{IPC}}$, and the turnstile takes the low slot. $\mathrm{PSh}$ names a category of sheaves as the argument of a functor, $\operatorname{Hom}_{\mathrm{PSh}}(\mathcal F,\ldots)$. None of them names a variant of the glyph.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Had}$</td>
+<td>50</td>
+</tr>
+<tr>
+<td>$\mathrm{Irr}$</td>
+<td>27</td>
+</tr>
+<tr>
+<td>$\mathrm{IPC}$</td>
+<td>12</td>
+</tr>
+<tr>
+<td>$\mathrm{Lie}$</td>
+<td>10</td>
+</tr>
+<tr>
+<td>$\mathrm{Fix}$</td>
+<td>10</td>
+</tr>
+<tr>
+<td>$\mathrm{CPC}$</td>
+<td>8</td>
+</tr>
+<tr>
+<td>$\mathrm{Vir}$</td>
+<td>7</td>
+</tr>
+<tr>
+<td>$\mathrm{GUT}$</td>
+<td>6</td>
+</tr>
+<tr>
+<td>$\mathrm{EDM}$</td>
+<td>5</td>
+</tr>
+<tr>
+<td>$\mathrm{CAR}$</td>
+<td>5</td>
+</tr>
+<tr>
+<td>$\mathrm{Spf}$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>$\mathrm{Inn}$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>$\mathrm{CTP}$</td>
+<td>4</td>
+</tr>
+<tr>
+<td>$\mathrm{End}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathrm{Spa}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathrm{Aut}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathrm{Cor}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathrm{QCD}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathrm{DCB}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathrm{Dir}$</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathrm{Hom}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\mathrm{Ind}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\mathrm{Ric}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\mathrm{PSh}$</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\mathrm{Aff}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\mathrm{Har}$</td>
+<td>1</td>
+</tr>
+<tr>
+<td>$\mathrm{RGB}$</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-made-the-fifteen-safe">What Made the Fifteen Safe</h2>
+<p>The fifteen that moved are the ones that passed five tests, and the tests are worth stating because they are the rule the corpus will want for the next case.</p>
+<ol>
+<li><strong>Plain glyph.</strong> The word hung on a single letter or a single accented letter, $W_{\mathrm{aff}}$, $V_{\mathrm{pot}}$, $y_{\mathrm{hom}}$. No bar, no norm, no summation sign, no restriction bar was in the way.</li>
+<li><strong>No index.</strong> Nothing followed the word inside its field. $W_{\mathrm{aff}}$ has no $W_{\mathrm{aff},k}$ beside it.</li>
+<li><strong>No caret twin.</strong> The word held no meaning on the caret before the move, so no merge was needed.</li>
+<li><strong>Not a code.</strong> It was not one of the twelve names of the algebraic structures.</li>
+<li><strong>Already lowercase.</strong> No case was changed by the move, so the move was a change of height and nothing else.</li>
+</ol>
+<p>The fifteen are $\mathrm{aff}$, $\mathrm{amp}$, $\mathrm{app}$, $\mathrm{est}$, $\mathrm{geo}$, $\mathrm{hom}$, $\mathrm{hyp}$, $\mathrm{iso}$, $\mathrm{lab}$, $\mathrm{mat}$, $\mathrm{mix}$, $\mathrm{mot}$, $\mathrm{obs}$, $\mathrm{pot}$, $\mathrm{src}$. Each names the whole object and not a part of it: the affine Weyl group, the potential energy, the geometric phase, the laboratory frame, the observed frequency. The test that admits them is the test that rejects the hundred, and the failure in each rejected family is one of the five.</p>
+<h2 id="what-the-four-failures-cost">What the Four Failures Cost</h2>
+<p>The failures are not equal, and the cost of forcing them is easy to state.</p>
+<ul>
+<li><strong>The indexed label</strong> would put an index in a slot with no label above it: $\tilde S^{\mathrm{tot}}{}_{,k}$. 930 occurrences, and a new exception in §<em>The Subscripts</em>.</li>
+<li><strong>The part and the role</strong> would reverse the sense of the mark: $\chi^{\mathrm{reg}}$ for a character that is not regular, $S^{\mathrm{int}}$ for an action that is not interaction. 412 occurrences, and the reading rule of §<em>The Subscripts</em> would have to be withdrawn.</li>
+<li><strong>The caret twin</strong> would weld two meanings into one word in four cases, $\mathrm{mod}$, $\mathrm{reg}$, $\mathrm{sym}$, $\mathrm{opp}$, at 540 occurrences between them.</li>
+<li><strong>The code</strong> would move cleanly, at 146 rewrites and no loss.</li>
+<li><strong>The capital</strong> would move cleanly if the case rule were relaxed for initialisms, and would break the rule if it were not.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The residue of the caret patch is 115 words and 4,493 occurrences. Fifteen words and 74 occurrences moved, and they are in the index table. The other hundred stay low for five reasons, and only one of them is typographic: an index that has nowhere to go, a part that would become a claim about the whole, a twin already on the caret, a code that belongs to a column, and an acronym that loses its words when lowered.</p>
+<p>The rule that follows is the one already written in §<em>The Three-Letter Labels</em>, read in the other direction. A label that names the object goes on the caret. A label that names a part, an index, an operator or an acronym stays low. The caret is not the only home for a name, and the corpus is the better for saying so once.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/conventions-of-the-indices-the-notation-and-the-corpus.html">Index, Notation and Corpus Conventions</a>, §<em>The Three-Letter Labels</em>, for the table of the seventy labels and the rule that every one of them is lowercase.</li>
+<li><a href="../articles_physics/conventions-of-the-units-the-indices-and-the-notation.html">The Units, the Indices and the Notation</a>, for the physical side of the same rule.</li>
+<li><a href="the-up-and-low-proportions-of-the-physics-corpus.html">The Up and Low Proportions of the Physics Corpus</a>, for the earlier census of the upper and the lower marks, family by family.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

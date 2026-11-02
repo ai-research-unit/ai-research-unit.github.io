@@ -93,7 +93,7 @@
 \boxed{\;\pi : G\times G \longrightarrow \operatorname{Homeo}(G), \qquad \pi(a,b) = L_aR_b\;} ,
 $$</p>
 <p>with kernel the anti-diagonal copy of the centre, $\ker\pi = \{(z,z^{-1}) : z \in Z(G)\}$. Hence $L(G)R(G) \cong (G\times G)/Z(G)$.</p>
-<p><strong>Proof.</strong> The composition laws $L_aL_b = L_{ab}$ and $R_bR_c = R_{cb}$, the commutation $L_aR_b = R_bL_a$ and the kernel computation are the abstract statements of <em>Left and Right Multiplication in a Group</em>; the only new ingredient is that each of these operators is a homeomorphism, by the theorem above, so the subgroup lies in $\operatorname{Homeo}(G)$ and not merely in $\operatorname{Sym}(G)$.</p>
+<p><strong>Proof.</strong> The composition laws $L_aL_b = L_{ab}$ and $R_bR_c = R_{cb}$, the commutation $L_aR_b = R_bL_a$ and the kernel computation are the abstract statements of <em>Left and Right Multiplication in a Group</em>; the only new ingredient is that each of these operators is a homeomorphism, by the theorem above, so the subgroup lies in $\operatorname{Homeo}(G)$ and not merely in $\operatorname{sym}(G)$.</p>
 <p><strong>Corollary.</strong> $L(G) \cap R(G) = L(Z(G)) = R(Z(G))$, the subgroup of the central translations, which is the image of $Z(G)$ and is a normal subgroup of $L(G)R(G)$.</p>
 <p><strong>Proof.</strong> If $L_a = R_b$ then $ax = xb$ for all $x$, so $a = b$ and $a \in Z(G)$; conversely a central $z$ gives $L_z = R_z$. Normality follows because $L(G)$ and $R(G)$ commute.</p>
 <h3 id="the-action-by-translation">The Action by Translation</h3>
@@ -101,7 +101,7 @@ $$</p>
 <p>$$
 G \times G \longrightarrow G, \qquad (g, x) \mapsto gx ,
 $$</p>
-<p>whose associated permutation representation is $g \mapsto L_g : G \to \operatorname{Homeo}(G) \subseteq \operatorname{Sym}(G)$.</p>
+<p>whose associated permutation representation is $g \mapsto L_g : G \to \operatorname{Homeo}(G) \subseteq \operatorname{sym}(G)$.</p>
 <p><strong>Theorem.</strong> The action by translation is continuous, free and transitive: it is continuous as a map $G\times G\to G$; the only $g$ with $gx = x$ for some $x$ is $g = e$; and for any $x, y$ there is a unique $g$ with $gx = y$, namely $g = yx^{-1}$. Consequently the map $g \mapsto L_g$ is an isomorphism of $G$ onto $L(G)$ whose inverse is $L_g \mapsto g = L_g(e)$.</p>
 <p><strong>Proof.</strong> Continuity of the action is the continuity of multiplication in $G\times G$. Freeness: $gx = x$ gives $g = e$ on multiplying by $x^{-1}$. Transitivity: $g = yx^{-1}$ works and is unique. The map $g\mapsto L_g$ is an injective homomorphism because $L_g = L_h$ forces $g = ge = L_g(e) = L_h(e) = h$.</p>
 <p>The action is not merely transitive but <strong>sharply</strong> transitive, and this is the topological content of the statement that the group is recovered from its left regular image: the orbit map at $e$ is a homeomorphism, so the abstract isomorphism $G \cong L(G)$ is a homeomorphism when $L(G)$ carries the compact-open topology and the two-sided action is continuous.</p>

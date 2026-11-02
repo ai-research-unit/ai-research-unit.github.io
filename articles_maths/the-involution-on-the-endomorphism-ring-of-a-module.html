@@ -96,12 +96,12 @@ $$</p>
 <h3 id="definition-and-decomposition">Definition and decomposition</h3>
 <p><strong>Definition.</strong> An endomorphism $f \in E$ is <strong>self-adjoint</strong> when $f^{*}=f$ and <strong>skew-adjoint</strong> when $f^{*}=-f$. The <strong>symmetric part</strong> and the <strong>skew part</strong> of $E$ are</p>
 <p>$$
-\operatorname{Sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}.
+\operatorname{sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}.
 $$</p>
 <p>Both are $R$-submodules of $E$.</p>
 <p><strong>Theorem.</strong> If $2$ is invertible in $R$, then</p>
 <p>$$
-\boxed{\;E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*})\;},
+\boxed{\;E=\operatorname{sym}(M)\oplus\operatorname{Skew}(M), \qquad f=\tfrac12(f+f^{*})+\tfrac12(f-f^{*})\;},
 $$</p>
 <p>and the two summands have intersection $0$.</p>
 <p><em>Proof.</em> The displayed decomposition writes $f$ as the sum of a self-adjoint and a skew-adjoint element because ${}^{*}$ is $R$-linear and of order two; if $f$ is both, then $f=-f$ and $2f=0$, so $f=0$ when $2$ is invertible.</p>
@@ -111,7 +111,7 @@ $$</p>
 <p>$$
 \boxed{\;f \bullet g=\tfrac12(fg+gf)\;},
 $$</p>
-<p>and under the square $f \mapsto f^{2}$; it contains the identity. Hence $\operatorname{Sym}(M)$ is a unital Jordan subalgebra of $E$, and it is a <strong>special</strong> Jordan algebra.</p>
+<p>and under the square $f \mapsto f^{2}$; it contains the identity. Hence $\operatorname{sym}(M)$ is a unital Jordan subalgebra of $E$, and it is a <strong>special</strong> Jordan algebra.</p>
 <p><em>Proof.</em> If $f^{*}=f$ and $g^{*}=g$ then $(fg+gf)^{*}=g^{*}f^{*}+f^{*}g^{*}=gf+fg=fg+gf$, so $(f\bullet g)^{*}=f\bullet g$; taking $g=f$ gives $f^{2}$ self-adjoint; the identity is self-adjoint.</p>
 <p>The symmetric part of an involutive algebra with this Jordan product is treated in <em>Involutive Algebras</em>, which owns the general theory of the involutions and their symmetric elements.</p>
 <h3 id="the-matrix-description">The matrix description</h3>
@@ -205,7 +205,7 @@ $$</p>
 <td>the adjoint, $\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle$</td>
 </tr>
 <tr>
-<td>$\operatorname{Sym}(M)$, $\operatorname{Skew}(M)$</td>
+<td>$\operatorname{sym}(M)$, $\operatorname{Skew}(M)$</td>
 <td>self-adjoint and skew-adjoint endomorphisms</td>
 </tr>
 <tr>

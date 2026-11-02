@@ -74,7 +74,7 @@
 <p>The action-theoretic definitions and the notion of a transformation group are as in the companion article <em>Transformation Groups</em>, and the notation of <em>Groups</em> is kept throughout: $\operatorname{Orb}(x)$ and $\operatorname{Stab}(x)$ for the orbit and stabiliser, $C_G(x)$ for the centraliser, $Z(G)$ for the centre, $[G,G]$ for the commutator subgroup and $G^{\mathrm{ab}} = G/[G,G]$ for the abelianization, $N_G(H)$ for the normaliser. Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$, and $F$, $K$ fields; when a numerical invariant such as the order of a group is used, the group is assumed finite and this is said. No physics is invoked. The combinatorial companionbeing, takes up the constructions of groups and the descriptions of them by generators and relations.</p>
 <h2 id="actions-and-the-orbit-decomposition">Actions and the Orbit Decomposition</h2>
 <h3 id="orbits-stabilisers-and-the-orbitstabiliser-theorem">Orbits, Stabilisers, and the Orbit–Stabiliser Theorem</h3>
-<p>An action of a group $G$ on a set $X$ is a map $G \times X \to X$, $(a, x) \mapsto a \cdot x$, with $e \cdot x = x$ and $(ab) \cdot x = a \cdot (b \cdot x)$; equivalently, a homomorphism $\rho : G \to \operatorname{Sym}(X)$. The orbit and stabiliser of $x \in X$ are</p>
+<p>An action of a group $G$ on a set $X$ is a map $G \times X \to X$, $(a, x) \mapsto a \cdot x$, with $e \cdot x = x$ and $(ab) \cdot x = a \cdot (b \cdot x)$; equivalently, a homomorphism $\rho : G \to \operatorname{sym}(X)$. The orbit and stabiliser of $x \in X$ are</p>
 <p>$$
 \operatorname{Orb}(x) = \{a \cdot x : a \in G\}, \qquad \operatorname{Stab}(x) = \{a \in G : a \cdot x = x\}.
 $$</p>
@@ -95,7 +95,7 @@ $$</p>
 $$</p>
 <p>expresses the size of a $G$-set as a sum of divisors of $|G|$. Second, if $G$ acts transitively on $X$, then $X$ is isomorphic to the coset $G$-set $G/H$ for $H = \operatorname{Stab}(x)$, and so the transitive $G$-sets are classified up to isomorphism by the conjugacy classes of subgroups of $G$.</p>
 <p><strong>Example.</strong> The action of $S_4$ on the six two-element subsets of $\{1,2,3,4\}$ is transitive, and the stabiliser of $\{1,2\}$ has order $4$, so $6 = 24/4$, in accordance with <em>Groups</em>, §11.</p>
-<p><strong>Example.</strong> Let $H \leq G$ and let $G$ act on $G/H$ by left translation. The action is transitive and the stabiliser of the coset $H$ is $H$ itself. The kernel of the action is the <strong>core</strong> $\bigcap_{a \in G} a H a^{-1}$, the largest subgroup of $H$ normal in $G$; thus $G/\operatorname{core}(H)$ embeds in $\operatorname{Sym}(G/H)$.</p>
+<p><strong>Example.</strong> Let $H \leq G$ and let $G$ act on $G/H$ by left translation. The action is transitive and the stabiliser of the coset $H$ is $H$ itself. The kernel of the action is the <strong>core</strong> $\bigcap_{a \in G} a H a^{-1}$, the largest subgroup of $H$ normal in $G$; thus $G/\operatorname{core}(H)$ embeds in $\operatorname{sym}(G/H)$.</p>
 <h3 id="the-conjugation-action-and-the-class-equation">The Conjugation Action and the Class Equation</h3>
 <p>The action of $G$ on itself by conjugation, $a \cdot x = a x a^{-1}$, has for orbits the <strong>conjugacy classes</strong>, and the stabiliser of $x$ is the <strong>centraliser</strong></p>
 <p>$$

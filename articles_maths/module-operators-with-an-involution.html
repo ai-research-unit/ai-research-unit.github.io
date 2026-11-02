@@ -80,9 +80,9 @@
 <h3 id="elementary-classes">Elementary classes</h3>
 <p><strong>Definition.</strong> An operator $f \in E$ is <strong>self-adjoint</strong> when $f^{*}=f$, <strong>skew-adjoint</strong> when $f^{*}=-f$, and <strong>unitary</strong> when $f^{*}f=ff^{*}=\mathrm{id}$. Write</p>
 <p>$$
-\operatorname{Sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}, \qquad \mathrm{U}(M)=\{f : f^{*}f=ff^{*}=\mathrm{id}\}.
+\operatorname{sym}(M)=\{f : f^{*}=f\}, \qquad \operatorname{Skew}(M)=\{f : f^{*}=-f\}, \qquad \mathrm{U}(M)=\{f : f^{*}f=ff^{*}=\mathrm{id}\}.
 $$</p>
-<p><strong>Proposition.</strong> $\operatorname{Sym}(M)$ and $\operatorname{Skew}(M)$ are $R$-submodules with $\operatorname{Sym}(M)\cap\operatorname{Skew}(M)=0$ and $E=\operatorname{Sym}(M)\oplus\operatorname{Skew}(M)$; the map $f \mapsto \frac12(f+f^{*})$ is the projection onto the first summand. $\mathrm{U}(M)$ is a subgroup of $E^{\times}$.</p>
+<p><strong>Proposition.</strong> $\operatorname{sym}(M)$ and $\operatorname{Skew}(M)$ are $R$-submodules with $\operatorname{sym}(M)\cap\operatorname{Skew}(M)=0$ and $E=\operatorname{sym}(M)\oplus\operatorname{Skew}(M)$; the map $f \mapsto \frac12(f+f^{*})$ is the projection onto the first summand. $\mathrm{U}(M)$ is a subgroup of $E^{\times}$.</p>
 <p><em>Proof.</em> The decomposition, the projection formula and the group property are <em>The Involution on the Endomorphism Ring of a Module</em>.</p>
 <h2 id="self-adjoint-operators">Self-Adjoint Operators</h2>
 <h3 id="the-real-and-the-imaginary-part">The real and the imaginary part</h3>
@@ -91,9 +91,9 @@ $$</p>
 \operatorname{Re}f=\tfrac12(f+f^{*}), \qquad \operatorname{Im}f=\tfrac12(f-f^{*}),
 $$</p>
 <p>so that $f=\operatorname{Re}f+\operatorname{Im}f$ and $(\operatorname{Re}f)^{*}=\operatorname{Re}f$, $(\operatorname{Im}f)^{*}=-\operatorname{Im}f$.</p>
-<p><strong>Proposition.</strong> The assignment $f \mapsto (\operatorname{Re}f,\operatorname{Im}f)$ is an $R$-linear isomorphism $E \to \operatorname{Sym}(M)\oplus\operatorname{Skew}(M)$, natural in $f$, and $\operatorname{Re}f=f$ exactly for self-adjoint $f$ while $\operatorname{Im}f=f$ exactly for skew-adjoint $f$.</p>
+<p><strong>Proposition.</strong> The assignment $f \mapsto (\operatorname{Re}f,\operatorname{Im}f)$ is an $R$-linear isomorphism $E \to \operatorname{sym}(M)\oplus\operatorname{Skew}(M)$, natural in $f$, and $\operatorname{Re}f=f$ exactly for self-adjoint $f$ while $\operatorname{Im}f=f$ exactly for skew-adjoint $f$.</p>
 <p><em>Proof.</em> The map is $R$-linear because ${}^{*}$ is, it is injective because its composite with the sum is the identity, and its image is contained in the direct sum; dimensions (or the projection formula) give the isomorphism. The last clauses are the definitions.</p>
-<p>This is the operator-level form of the decomposition of an involutive algebra into its symmetric and antisymmetric parts; no order structure is attached to $\operatorname{Sym}(M)$, because positivity needs a norm and belongs to Part II.</p>
+<p>This is the operator-level form of the decomposition of an involutive algebra into its symmetric and antisymmetric parts; no order structure is attached to $\operatorname{sym}(M)$, because positivity needs a norm and belongs to Part II.</p>
 <h3 id="products-of-self-adjoint-operators">Products of self-adjoint operators</h3>
 <p><strong>Theorem.</strong> Let $f$ and $g$ be self-adjoint. Then $fg$ is self-adjoint if and only if $f$ and $g$ commute; $fg+gf$ and $fgf$ are self-adjoint always; and $f^{2}$ is self-adjoint.</p>
 <p><em>Proof.</em> $(fg)^{*}=g^{*}f^{*}=gf$, so $fg$ is self-adjoint exactly when $gf=fg$. For the sum, $(fg+gf)^{*}=gf+fg=fg+gf$; for the product $fgf$, $(fgf)^{*}=f^{*}g^{*}f^{*}=fgf$; and $f^{2}$ is the case $g=f$.</p>
@@ -135,7 +135,7 @@ $$</p>
 <h3 id="the-involution-and-a-single-operator">The involution and a single operator</h3>
 <p><strong>Proposition.</strong> For every $f \in E$,</p>
 <p>$$
-\boxed{\;f+f^{*} \in \operatorname{Sym}(M), \qquad f-f^{*} \in \operatorname{Skew}(M), \qquad f f^{*} \in \operatorname{Sym}(M), \qquad f^{*} f \in \operatorname{Sym}(M)\;} .
+\boxed{\;f+f^{*} \in \operatorname{sym}(M), \qquad f-f^{*} \in \operatorname{Skew}(M), \qquad f f^{*} \in \operatorname{sym}(M), \qquad f^{*} f \in \operatorname{sym}(M)\;} .
 $$</p>
 <p>Moreover $f$ is self-adjoint if and only if $f=f^{*}$, and $f$ is skew-adjoint if and only if $f=-f^{*}$.</p>
 <p><em>Proof.</em> $(f+f^{*})^{*}=f^{*}+f$; $(f-f^{*})^{*}=f^{*}-f=-(f-f^{*})$; the products are the self-adjoint squares.</p>
@@ -173,7 +173,7 @@ $$</p>
 <td>involutive algebra of operators, $E=\operatorname{End}_A(M)$</td>
 </tr>
 <tr>
-<td>$\operatorname{Sym}(M)$</td>
+<td>$\operatorname{sym}(M)$</td>
 <td>self-adjoint operators, $f^{*}=f$</td>
 </tr>
 <tr>

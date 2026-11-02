@@ -87,7 +87,7 @@ $$</p>
 <p>A commutative $R$-algebra $A$ is <strong>free on a set $X$</strong> if there is a map $\iota : X \to A$ such that every map $X \to B$ into a commutative $R$-algebra $B$ extends uniquely to an $R$-algebra homomorphism $A \to B$. The free commutative algebra on $X$ exists and is the polynomial algebra.</p>
 <p><strong>Theorem.</strong> The polynomial algebra $R[X] = R[x_s : s \in X]$ is the free commutative $R$-algebra on $X$. If $X$ is finite of cardinality $n$, then $R[X] = R[x_1, \ldots, x_n]$.</p>
 <p><em>Proof.</em> Given $\phi : X \to B$, define the homomorphism on monomials by $x_{i_1}^{a_1}\cdots x_{i_k}^{a_k} \mapsto \phi(x_{i_1})^{a_1}\cdots \phi(x_{i_k})^{a_k}$ and extend $R$-linearly. This is well defined because the commutative law makes monomials a basis indexed by finitely supported families of exponents and the order of factors irrelevant; it is a homomorphism because $B$ is commutative and associative; and it is unique because $X$ generates $R[X]$ as an algebra.</p>
-<p>By <em>The Symmetric Algebra of a Module</em>, the symmetric algebra of a free module of rank $n$ is $R[x_1, \ldots, x_n]$; more generally $\operatorname{Sym}(M) = \bigoplus_{n\geq0}\operatorname{Sym}^n(M)$ is the free commutative algebra on a basis of $M$ when $M$ is free. The free commutative algebra is therefore not a new object but the symmetric algebra.</p>
+<p>By <em>The Symmetric Algebra of a Module</em>, the symmetric algebra of a free module of rank $n$ is $R[x_1, \ldots, x_n]$; more generally $\operatorname{sym}(M) = \bigoplus_{n\geq0}\operatorname{sym}^n(M)$ is the free commutative algebra on a basis of $M$ when $M$ is free. The free commutative algebra is therefore not a new object but the symmetric algebra.</p>
 <p><strong>Proposition.</strong> Every commutative $R$-algebra is a quotient of a polynomial algebra; that is, $A \cong R[x_s : s \in X]/\mathrm{A}$ for some set $X$ and some ideal $\mathrm{A}$.</p>
 <p><em>Proof.</em> Choose a generating set $X$ of $A$ as an $R$-algebra, for instance a set of module generators; the universal property gives a surjection $R[X] \to A$, and its kernel is an ideal.</p>
 <h2 id="the-coproduct-tensor-product">The Coproduct: Tensor Product</h2>
@@ -112,16 +112,16 @@ $$</p>
 <p>For associative algebras that are not commutative the tensor product is still an associative algebra with the product $(a\otimes b)(a'\otimes b') = aa'\otimes bb'$, but it is not a coproduct. The obstruction is visible in the proof above: the verification that the induced map respects multiplication used $f(a')h(b) = h(b)f(a')$, which fails if $C$ is non-commutative and the images overlap. The coproduct in the category of all associative algebras is instead the <strong>free product</strong> $A * B$, the quotient of the free algebra on the disjoint union of the underlying sets by the relations of $A$ and of $B$, which is generally much larger than $A\otimes_R B$. The commutative hypothesis therefore converts the tensor product from a mere construction into the universal combination of two algebras.</p>
 <p><strong>Example.</strong> For $A = R[x]$ and $B = R[y]$ one has $R[x]\otimes_R R[y] \cong R[x,y]$: the coproduct of two polynomial algebras in one variable is the polynomial algebra in two variables. More generally</p>
 <p>$$
-\operatorname{Sym}(M) \otimes_R \operatorname{Sym}(N) \cong \operatorname{Sym}(M \oplus N),
+\operatorname{sym}(M) \otimes_R \operatorname{sym}(N) \cong \operatorname{sym}(M \oplus N),
 $$</p>
-<p>which is the compatibility of the symmetric algebra with direct sums noted in <em>The Symmetric Algebra of a Module</em>, now read as the statement that $\operatorname{Sym}$ takes direct sums to coproducts.</p>
+<p>which is the compatibility of the symmetric algebra with direct sums noted in <em>The Symmetric Algebra of a Module</em>, now read as the statement that $\operatorname{sym}$ takes direct sums to coproducts.</p>
 <h2 id="the-polynomial-algebra-revisited">The Polynomial Algebra Revisited</h2>
 <h3 id="generators-and-relations">Generators and Relations</h3>
 <p>A <strong>presentation</strong> of a commutative $R$-algebra is an isomorphism $A \cong R[x_s : s \in X]/(f_j)$ for a set of generators $x_s$ and a set of relations $f_j \in R[x_s : s\in X]$. The category admits presentations freely: every algebra has one, by the proposition above, and a homomorphism out of a presented algebra is a map of generators satisfying the relations. This is the practical meaning of freeness: homomorphisms are determined by images of generators, and only the relations must be checked.</p>
 <p><strong>Example.</strong> $R[x]/(f)$ for $f \in R[x]$ monic of degree $n$ is a free $R$-module of rank $n$ with basis $1, x, \ldots, x^{n-1}$; this is the division-algorithm description inherited from <em>Rings</em>. For $f$ not monic the quotient need not be free: $\mathbb{Z}[x]/(2x-1) \cong \mathbb{Z}[\tfrac12]$ is not a free $\mathbb{Z}$-module.</p>
 <h3 id="grading-and-the-symmetric-algebra">Grading and the Symmetric Algebra</h3>
-<p>$\operatorname{Sym}(M)$ is graded, $\operatorname{Sym}(M) = \bigoplus_{n\geq0}\operatorname{Sym}^n(M)$ with $\operatorname{Sym}^n$ the symmetric powers of <em>Symmetric Powers</em>, and the product maps $\operatorname{Sym}^m \times \operatorname{Sym}^n \to \operatorname{Sym}^{m+n}$. The polynomial algebra is the free graded commutative algebra in the sense that homomorphisms of algebras respect the grading when the generators are assigned degrees; for degree-one generators $x_1, \ldots, x_n$ the component $\operatorname{Sym}^k$ of total degree $k$ has rank $\binom{n+k-1}{k}$, the number of monomials of degree $k$.</p>
-<p><strong>Proposition.</strong> $\operatorname{rank}_R \operatorname{Sym}^k(R^n) = \binom{n+k-1}{k}$, the dimension when $R$ is a field.</p>
+<p>$\operatorname{sym}(M)$ is graded, $\operatorname{sym}(M) = \bigoplus_{n\geq0}\operatorname{sym}^n(M)$ with $\operatorname{sym}^n$ the symmetric powers of <em>Symmetric Powers</em>, and the product maps $\operatorname{sym}^m \times \operatorname{sym}^n \to \operatorname{sym}^{m+n}$. The polynomial algebra is the free graded commutative algebra in the sense that homomorphisms of algebras respect the grading when the generators are assigned degrees; for degree-one generators $x_1, \ldots, x_n$ the component $\operatorname{sym}^k$ of total degree $k$ has rank $\binom{n+k-1}{k}$, the number of monomials of degree $k$.</p>
+<p><strong>Proposition.</strong> $\operatorname{rank}_R \operatorname{sym}^k(R^n) = \binom{n+k-1}{k}$, the dimension when $R$ is a field.</p>
 <p><em>Proof.</em> A monomial $x_1^{a_1}\cdots x_n^{a_n}$ of total degree $k$ corresponds to a weak composition $a_1 + \cdots + a_n = k$ with $a_i \geq 0$; the number of such compositions is the number of ways to place $n - 1$ separators among $k$ identical objects, namely $\binom{n+k-1}{n-1} = \binom{n+k-1}{k}$.</p>
 <h2 id="constructions">Constructions</h2>
 <h3 id="quotients-and-ideals">Quotients and Ideals</h3>
@@ -234,11 +234,11 @@ $$</p>
 <td>Free commutative algebra on $X$</td>
 </tr>
 <tr>
-<td>$\operatorname{Sym}(M)$</td>
+<td>$\operatorname{sym}(M)$</td>
 <td>Symmetric algebra, free commutative algebra on $M$</td>
 </tr>
 <tr>
-<td>$\operatorname{Sym}^k(M)$</td>
+<td>$\operatorname{sym}^k(M)$</td>
 <td>$k$-th symmetric power</td>
 </tr>
 <tr>

@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-spin-chain-and-the-adjoint-decomposition-of-math0"><strong>The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The carrier of the category $M_4(\mathbb{C})$ is $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$, the spin-$\tfrac32$ module of $\mathfrak{sl}_2(\mathbb{C})$, and the adjoint representation of that $\mathfrak{sl}_2$ on the algebra decomposes as $1+3+5+7$.</strong> The chain of simple nilpotents $E_{12},E_{23},E_{34}$ is the weight chain of the carrier, and the coefficients of the ladder operators are $\sqrt3,2,\sqrt3$. The decomposition is the Clebsch–Gordan decomposition of $\mathbb{C}^4\otimes(\mathbb{C}^4)^*$.</p>
+<p><strong>The carrier of the category $M_4(\mathbb{C})$ is $\mathbb{C}^4=\operatorname{sym}^3(\mathbb{C}^2)$, the spin-$\tfrac32$ module of $\mathfrak{sl}_2(\mathbb{C})$, and the adjoint representation of that $\mathfrak{sl}_2$ on the algebra decomposes as $1+3+5+7$.</strong> The chain of simple nilpotents $E_{12},E_{23},E_{34}$ is the weight chain of the carrier, and the coefficients of the ladder operators are $\sqrt3,2,\sqrt3$. The decomposition is the Clebsch–Gordan decomposition of $\mathbb{C}^4\otimes(\mathbb{C}^4)^*$.</p>
 <p>The article defines the three generators $J_3,J_+,J_-$, proves the commutation relations and the ladder coefficients, identifies the carrier with the symmetric cube, computes the weights of the sixteen matrix units, and decomposes the adjoint representation into four irreducible modules with highest weight vectors $E_{14}$, $E_{13}+E_{24}$, $J_+$ and $I$. It also states precisely how the Peirce chain mixes the two chiralities, and how it differs from the chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of <em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</em>.</p>
 <p>The root and the idempotents are <em>Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</em>; the Peirce lines are <em>The Peirce Decomposition of $M_4(\mathbb{C})$</em>; the frame and the simple nilpotents are <em>The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$</em>; the chirality is <em>The Two Chiralities of $M_4(\mathbb{C})$</em>. The representation theory of $\mathfrak{sl}_2$ is <em>Representations of Lie Algebras</em>.</p>
 <h2 id="the-carrier-and-the-generators">The Carrier and the Generators</h2>
@@ -148,7 +148,7 @@ $$</p>
 <p><strong>Proof.</strong> Let $W\subseteq\mathbb{C}^4$ be a nonzero invariant subspace. Because $J_3$ is diagonalizable on $W$, the space $W$ contains a weight vector. Let $m$ be the maximal weight occurring in $W$, and let $w\ne0$ be a vector of weight $m$. If $m<\tfrac32$, then $J_+w$ is a nonzero vector of weight $m+1$ in $W$ (the ladder coefficients are nonzero for $m<\tfrac32$), contradicting maximality. Hence $m=\tfrac32$, and $w$ is a multiple of $e_1$. Applying $J_-$ repeatedly gives nonzero multiples of $e_2,e_3,e_4$, so $W=\mathbb{C}^4$. The representation is irreducible.</p>
 <p><strong>Corollary.</strong> The carrier is the unique irreducible representation of dimension $4$, namely the spin-$\tfrac32$ module. Every nonzero vector generates it.</p>
 <h2 id="the-symmetric-cube">The Symmetric Cube</h2>
-<p><strong>Theorem.</strong> The carrier is isomorphic to $\operatorname{Sym}^3(\mathbb{C}^2)$.</p>
+<p><strong>Theorem.</strong> The carrier is isomorphic to $\operatorname{sym}^3(\mathbb{C}^2)$.</p>
 <p><strong>Proof.</strong> Let $x,y$ be a basis of $\mathbb{C}^2$, and let $\mathfrak{sl}_2$ act on homogeneous polynomials of degree $3$ by</p>
 <p>$$
 J_3=\frac12\left(x\frac{\partial}{\partial x}-y\frac{\partial}{\partial y}\right),\qquad
@@ -159,7 +159,7 @@ $$</p>
 <p>$$
 e_1=x^3,\qquad e_2=\sqrt3\,x^2y,\qquad e_3=\sqrt3\,xy^2,\qquad e_4=y^3
 $$</p>
-<p>are a basis of $\operatorname{Sym}^3(\mathbb{C}^2)$, and the action is</p>
+<p>are a basis of $\operatorname{sym}^3(\mathbb{C}^2)$, and the action is</p>
 <p>$$
 J_3e_1=\frac32e_1,\quad J_3e_2=\frac12e_2,\quad J_3e_3=-\frac12e_3,\quad J_3e_4=-\frac32e_4,
 $$</p>
@@ -168,7 +168,7 @@ J_+e_2=\sqrt3\,e_1,\quad J_+e_3=2\,e_2,\quad J_+e_4=\sqrt3\,e_3,
 $$</p>
 <p>which is the action of §<em>The Weights and the Ladder</em>. The two representations have the same dimension and the same ladder, so they are isomorphic.</p>
 <p><strong>The normalization.</strong> The factor $\sqrt3$ on $x^2y$ and $xy^2$ is the normalization that makes $J_+$ and $J_-$ transpose to each other. Without it, the ladder coefficients would be $1,2,3$ in the raising direction and $3,2,1$ in the lowering direction; the symmetric normalization is the one in which the two directions have the same coefficients and the representation is self-dual.</p>
-<p><strong>The general pattern.</strong> For $M_n(\mathbb{C})$ the carrier is $\mathbb{C}^n=\operatorname{Sym}^{n-1}(\mathbb{C}^2)$, the spin-$\frac{n-1}{2}$ module. For $n=4$ the spin is $\tfrac32$; for $n=2$ it is $\tfrac12$; for $n=3$ it is $1$. The dimension of the spin-$s$ module is $2s+1=n$. This is the reason the carrier dimension and the matrix size agree.</p>
+<p><strong>The general pattern.</strong> For $M_n(\mathbb{C})$ the carrier is $\mathbb{C}^n=\operatorname{sym}^{n-1}(\mathbb{C}^2)$, the spin-$\frac{n-1}{2}$ module. For $n=4$ the spin is $\tfrac32$; for $n=2$ it is $\tfrac12$; for $n=3$ it is $1$. The dimension of the spin-$s$ module is $2s+1=n$. This is the reason the carrier dimension and the matrix size agree.</p>
 <h2 id="the-adjoint-representation">The Adjoint Representation</h2>
 <p><strong>Definition.</strong> The <strong>adjoint representation</strong> of $\mathfrak{sl}_2$ on $M_4(\mathbb{C})$ is</p>
 <p>$$
@@ -314,7 +314,7 @@ J_+e_2=\sqrt3\,e_1,\qquad J_+e_4=\sqrt3\,e_3,
 $$</p>
 <p>and $e_2,e_4$ have chirality $-1$ while $e_1,e_3$ have chirality $+1$. The operator $J_+$ changes the chirality; $J_-$ changes it back. The carrier is irreducible under the Peirce $\mathfrak{sl}_2$, so there is no proper invariant subspace that is one chirality. The chain is a spin-$\tfrac32$ chain that runs through both chiralities, not a pair of independent spin-$\tfrac12$ chains.</p>
 <p><strong>The chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ is different.</strong> The traceless block-diagonal subalgebra that commutes with $\Gamma$ is $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ acting on the two planes $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$. It is six-dimensional, and each chirality is a spin-$\tfrac12$ module for one of its two factors. The full centraliser of $\Gamma$ in $\mathfrak{sl}_4$ is spanned by this algebra and $\Gamma$, of dimension $7$; the chiral algebra is the six-dimensional traceless part. The Peirce $\mathfrak{sl}_2$ is three-dimensional and irreducible; it is not contained in the chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, because its raising and lowering operators are odd with respect to $\Gamma$. The two chains are different structures on the same carrier. The precise comparison, with the branching rules, is <em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</em>.</p>
-<p><strong>The $n=2$ case.</strong> For the biquaternion algebra $M_2(\mathbb{C})$ the carrier is $\mathbb{C}^2=\operatorname{Sym}^1(\mathbb{C}^2)$, the spin-$\tfrac12$ module. The generators are</p>
+<p><strong>The $n=2$ case.</strong> For the biquaternion algebra $M_2(\mathbb{C})$ the carrier is $\mathbb{C}^2=\operatorname{sym}^1(\mathbb{C}^2)$, the spin-$\tfrac12$ module. The generators are</p>
 <p>$$
 J_3=\operatorname{diag}\left(\frac12,-\frac12\right),\qquad
 J_+=E_{12},\qquad
@@ -325,7 +325,7 @@ $$</p>
 M_2(\mathbb{C})=\mathcal{V}_0\oplus\mathcal{V}_1,\qquad 1+3=4,
 $$</p>
 <p>with highest weight vectors $I$ (weight $0$) and $E_{12}$ (weight $1$). The spin chain has two steps; the Peirce chain has one nilpotent. The pattern $1+3+5+\cdots+(2n-1)=n^2$ begins at $n=2$ with $1+3=4$ and at $n=4$ with $1+3+5+7=16$.</p>
-<p><strong>The general pattern.</strong> For $M_n(\mathbb{C})$ the carrier is $\operatorname{Sym}^{n-1}(\mathbb{C}^2)$, of spin $\frac{n-1}{2}$, and the adjoint decomposes as</p>
+<p><strong>The general pattern.</strong> For $M_n(\mathbb{C})$ the carrier is $\operatorname{sym}^{n-1}(\mathbb{C}^2)$, of spin $\frac{n-1}{2}$, and the adjoint decomposes as</p>
 <p>$$
 M_n(\mathbb{C})=\bigoplus_{k=0}^{n-1}\mathcal{V}_k,\qquad
 \dim_\mathbb{C}=\sum_{k=0}^{n-1}(2k+1)=n^2 .
@@ -350,7 +350,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Carrier $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$</td>
+<td>Carrier $\mathbb{C}^4=\operatorname{sym}^3(\mathbb{C}^2)$</td>
 <td>$4$</td>
 </tr>
 <tr>
@@ -429,7 +429,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for the representation theory of $\mathfrak{sl}_2$ and the Clebsch–Gordan decomposition.</li>
-<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the symmetric powers $\operatorname{Sym}^{n-1}(\mathbb{C}^2)$ and their weights.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the symmetric powers $\operatorname{sym}^{n-1}(\mathbb{C}^2)$ and their weights.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the matrix units and the commutator.</li>
 <li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</a>, for the root and the chirality involution.</li>
 <li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the corners that the matrix units span.</li>

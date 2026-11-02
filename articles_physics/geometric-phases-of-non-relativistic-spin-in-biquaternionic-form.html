@@ -75,7 +75,7 @@
 <p>The findings are stated in advance.</p>
 <ol>
 <li><strong>The geometric phase is a holonomy of the spinor, not a property of the idempotent.</strong> The instantaneous state $\tilde\Pi_{1,2}(\vec u_x)$ contains no phase information; the phase is carried by the spinor and is removed by the idempotent. This is the structural fact the Berry article records for the adiabatic connection, and it holds unchanged for the AA phase.</li>
-<li><strong>For spin-1/2 the geometric phase is one half the oriented solid angle, with a sign:</strong> $\gamma_{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}$, where $\Omega_{\mathrm{sgn}}$ is the solid angle subtended by the closed curve, counted positive for the orientation given by the right-hand rule about the curve.</li>
+<li><strong>For spin-1/2 the geometric phase is one half the oriented solid angle, with a sign:</strong> $\gamma^{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}$, where $\Omega_{\mathrm{sgn}}$ is the solid angle subtended by the closed curve, counted positive for the orientation given by the right-hand rule about the curve.</li>
 <li><strong>The AA phase is exact for a precessing spin.</strong> A spin prepared along $\vec u_y$ and left in a fixed field along $\vec u_x$ has a Bloch vector that precesses on a cone of half-angle $\theta_0$; over one period the AA phase is $\tfrac12$ of the unsigned solid angle of the cap, with the sign fixed by the sense of precession. This is computed exactly below, with no adiabatic approximation.</li>
 <li><strong>The spinor is double-valued.</strong> A full $2\pi$ rotation of the spin returns the idempotent but sends the spinor to its negative; only after $4\pi$ does the spinor return. The geometric phase of the equator loop is the cleanest instance: the phase is $\pi$ after one period, a sign change, and $2\pi$ (i.e. the identity) after two.</li>
 <li><strong>The holonomy is a rotor.</strong> The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{u} = \exp(-\frac{1}{2}\Phi\,\vec u_x)$, where $\Phi$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.</li>
@@ -119,7 +119,7 @@ $$</p>
 <h3 id="the-solid-angle-formula">The Solid-Angle Formula</h3>
 <p>For a spin-1/2 whose Bloch vector traces a closed curve $\mathcal{C}$ on the unit sphere, the geometric phase is</p>
 <p>$$
-\boxed{\;\gamma_{\mathrm{geo}} = -\frac{1}{2}\,\Omega_{\mathrm{sgn}}(\mathcal{C})\;}
+\boxed{\;\gamma^{\mathrm{geo}} = -\frac{1}{2}\,\Omega_{\mathrm{sgn}}(\mathcal{C})\;}
 $$</p>
 <p>where $\Omega_{\mathrm{sgn}}(\mathcal{C})$ is the <strong>oriented</strong> solid angle of the curve, counted positive when the curve is traversed in the sense given by the right-hand rule about the outward normal of the cap it bounds. For a latitude circle at polar angle $\theta_0$, the unsigned solid angle of the cap is</p>
 <p>$$
@@ -156,7 +156,7 @@ $$</p>
 \boxed{\;\gamma_{AA} = \pi - \pi\cos\theta_0 = \pi(1-\cos\theta_0) = \frac{\Omega}{2}\;},
 \qquad \Omega = 2\pi(1-\cos\theta_0).
 $$</p>
-<p>The traversal here is clockwise as seen from $+\vec u_z$ (the corpus Larmor sense), so $\Omega_{\mathrm{sgn}} = -\Omega$ and the general formula gives $\gamma_{\mathrm{geo}} = -\tfrac12(-\Omega) = +\tfrac{\Omega}{2}$, in exact agreement. The result was verified numerically for $\theta_0 = 0.3, 0.9, 1.57, 2.4, 3.0$; in every case $\gamma_{AA}\equiv +\Omega/2\pmod{2\pi}$, with the continuous branch passing through $0$ at $\theta_0 = 0$ and at $\theta_0 = \pi$ as it must.</p>
+<p>The traversal here is clockwise as seen from $+\vec u_z$ (the corpus Larmor sense), so $\Omega_{\mathrm{sgn}} = -\Omega$ and the general formula gives $\gamma^{\mathrm{geo}} = -\tfrac12(-\Omega) = +\tfrac{\Omega}{2}$, in exact agreement. The result was verified numerically for $\theta_0 = 0.3, 0.9, 1.57, 2.4, 3.0$; in every case $\gamma_{AA}\equiv +\Omega/2\pmod{2\pi}$, with the continuous branch passing through $0$ at $\theta_0 = 0$ and at $\theta_0 = \pi$ as it must.</p>
 <p>Two limits make the formula transparent. At $\theta_0\to0$ the state is the eigenstate along the field and does not precess; the curve degenerates to a point, $\Omega\to0$, and the geometric phase vanishes. At $\theta_0\to\pi$ the state is again an eigenstate (the opposite one), the curve again degenerates, and $\Omega\to4\pi$, so $\gamma_{AA}\to2\pi\equiv0$. The geometric phase is largest at the equator, where it is $\pi$: the spinor changes sign after a full precession at $\theta_0 = \pi/2$.</p>
 <h3 id="the-math79-periodicity">The $4\pi$ Periodicity</h3>
 <p>The sign change $\psi(T) = -\psi(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,</p>
@@ -186,7 +186,7 @@ $$</p>
 <li>the <strong>rotor</strong> $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, which rotates the Bloch vector and is observable through the orientation of the state;</li>
 <li>the <strong>central phase</strong> $\exp(i\alpha)\in\mathbb{C}_{\mathbb{B}}$, which multiplies the spinor and is observable only through interference with another amplitude.</li>
 </ul>
-<p>The AA phase is the statement that the spinor phase and the geometry of the loop are locked together for a spin-1/2: the geometric phase is one half of the oriented solid angle swept by the Bloch vector, $\gamma_{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}$. For the equator loop the swept solid angle has magnitude $2\pi$ and the phase is $\pi$ — one half of the full turn of the vector, which is why the spinor returns only to minus itself after one period. In general the relation between the geometric phase and the holonomy is a lift of an $SO(3)$ element to $SU(2)$, and the factor $\tfrac12$ is the statement that the lift is two-to-one.</p>
+<p>The AA phase is the statement that the spinor phase and the geometry of the loop are locked together for a spin-1/2: the geometric phase is one half of the oriented solid angle swept by the Bloch vector, $\gamma^{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}$. For the equator loop the swept solid angle has magnitude $2\pi$ and the phase is $\pi$ — one half of the full turn of the vector, which is why the spinor returns only to minus itself after one period. In general the relation between the geometric phase and the holonomy is a lift of an $SO(3)$ element to $SU(2)$, and the factor $\tfrac12$ is the statement that the lift is two-to-one.</p>
 <h3 id="gauge-freedom-and-the-pancharatnam-connection">Gauge Freedom and the Pancharatnam Connection</h3>
 <p>The AA phase is defined for a cyclic evolution, but the geometric phase can be extended to non-cyclic paths by the <strong>Pancharatnam connection</strong>: for two non-orthogonal states $|\psi_1\rangle$, $|\psi_2\rangle$, the relative phase is $\arg\langle\psi_1|\psi_2\rangle$, and the geometric phase of a sequence is the total Pancharatnam phase minus the dynamical phases. In the algebra the Pancharatnam connection is again the Hermitian form, read through the trace,</p>
 <p>$$
@@ -249,7 +249,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>For non-relativistic spin-1/2, a closed evolution of the Bloch vector around a curve $\mathcal{C}$ returns the state but not the spinor, and the spinor acquires the geometric phase</p>
 <p>$$
-\gamma_{\mathrm{geo}} = -\frac{1}{2}\,\Omega_{\mathrm{sgn}}(\mathcal{C}),
+\gamma^{\mathrm{geo}} = -\frac{1}{2}\,\Omega_{\mathrm{sgn}}(\mathcal{C}),
 $$</p>
 <p>one half the oriented solid angle of the curve, negative for the orientation given by the right-hand rule. For a latitude circle at polar angle $\theta_0$ the unsigned solid angle is $\Omega = 2\pi(1-\cos\theta_0)$.</p>
 <p>The <strong>Aharonov–Anandan phase</strong> is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \phi_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'$, with all quantities expressed through the Hermitian form, read through the trace. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is</p>
@@ -317,7 +317,7 @@ $$</p>
 <td>Berry connection (cited from the Berry article)</td>
 </tr>
 <tr>
-<td>$\gamma_{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}(\mathcal{C})$</td>
+<td>$\gamma^{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}(\mathcal{C})$</td>
 <td>Solid-angle formula for spin-1/2</td>
 </tr>
 <tr>

@@ -168,42 +168,42 @@ $$</p>
 <p><strong>Proof.</strong> If $\sigma$ fixes $r$ and $s$ for all $\sigma \in G$, it fixes $r \pm s$ and $rs$, and fixes $1$; every automorphism fixes the prime subring since it fixes $1$. The inclusion reversal is immediate.</p>
 <p><strong>Theorem (Artin).</strong> Let $K$ be a field and $G$ a finite subgroup of $\operatorname{Aut}(K)$. Then $K/K^G$ is a Galois extension of degree $\lvert G \rvert$ and</p>
 <p>$$
-\boxed{\;\operatorname{Gal}(K/K^G) = G, \qquad [K : K^G] = \lvert G \rvert\;}.
+\boxed{\;\operatorname{gal}(K/K^G) = G, \qquad [K : K^G] = \lvert G \rvert\;}.
 $$</p>
 <p><strong>Proof.</strong> Artin's lemma gives $[K:K^G] \leq \lvert G \rvert < \infty$, so $K/K^G$ is finite, and then $\lvert \operatorname{Aut}(K/K^G) \rvert \leq [K:K^G]$, since this is the number of $K^G$-embeddings of $K$ into an algebraic closure. Also every $\sigma \in G$ fixes $K^G$ by definition, so $G \leq \operatorname{Aut}(K/K^G)$ and $\lvert G \rvert \leq \lvert \operatorname{Aut}(K/K^G) \rvert$. Chaining,</p>
 <p>$$
 \lvert G \rvert \leq \lvert \operatorname{Aut}(K/K^G) \rvert \leq [K:K^G] \leq \lvert G \rvert,
 $$</p>
-<p>so equality holds throughout; thus $\lvert \operatorname{Aut}(K/K^G) \rvert = [K:K^G]$ and $K/K^G$ is Galois by the characterization of <em>Galois Theory</em>, and $\operatorname{Gal}(K/K^G) = \operatorname{Aut}(K/K^G)$ equals $G$ because both have order $\lvert G \rvert$.</p>
+<p>so equality holds throughout; thus $\lvert \operatorname{Aut}(K/K^G) \rvert = [K:K^G]$ and $K/K^G$ is Galois by the characterization of <em>Galois Theory</em>, and $\operatorname{gal}(K/K^G) = \operatorname{Aut}(K/K^G)$ equals $G$ because both have order $\lvert G \rvert$.</p>
 <hr />
 <h2 id="automorphisms-of-extensions">Automorphisms of Extensions</h2>
 <h3 id="relative-automorphisms">Relative Automorphisms</h3>
 <p><strong>Definition.</strong> For a field extension $K/F$ the <strong>relative automorphism group</strong> is</p>
 <p>$$
-\operatorname{Gal}(K/F) = \operatorname{Aut}_F(K) = \{\sigma \in \operatorname{Aut}(K) : \sigma\vert_F = \mathrm{id}\}.
+\operatorname{gal}(K/F) = \operatorname{Aut}_F(K) = \{\sigma \in \operatorname{Aut}(K) : \sigma\vert_F = \mathrm{id}\}.
 $$</p>
-<p>The group $\operatorname{Aut}(K) = \operatorname{Aut}_{\mathbb{Z}}(K)$ of all automorphisms of $K$ is the <strong>absolute</strong> automorphism group, as opposed to the relative group $\operatorname{Gal}(K/F)$.</p>
+<p>The group $\operatorname{Aut}(K) = \operatorname{Aut}_{\mathbb{Z}}(K)$ of all automorphisms of $K$ is the <strong>absolute</strong> automorphism group, as opposed to the relative group $\operatorname{gal}(K/F)$.</p>
 <p><strong>Proposition.</strong> Let $K = F(\alpha)$ be algebraic with minimal polynomial $m_\alpha$ over $F$. Then $\sigma \mapsto \sigma(\alpha)$ is a bijection from $\operatorname{Aut}_F(F(\alpha))$ onto the set of roots of $m_\alpha$ lying in $F(\alpha)$; if $m_\alpha$ splits in $F(\alpha)$ with distinct roots, so that the root set has $\deg m_\alpha$ elements, the automorphism group has order $\deg m_\alpha$.</p>
 <p><strong>Proof.</strong> An $F$-automorphism $\sigma$ is determined by $\sigma(\alpha)$, which must be a root of $m_\alpha$; conversely every root of $m_\alpha$ in $F(\alpha)$ defines an $F$-embedding $F(\alpha) \to F(\alpha)$, which is an automorphism because the extension is finite-dimensional over $F$.</p>
 <p><strong>Example.</strong> For $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ the minimal polynomial $x^2 - 2$ splits in $\mathbb{Q}(\sqrt2)$, so the automorphism group has order $2$. For $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ the minimal polynomial $x^3 - 2$ has only one root in the field, so the group is trivial, even though the extension is not Galois and $\lvert \operatorname{Aut} \rvert < [K:F]$.</p>
-<p><strong>Example.</strong> For the cyclotomic field $\mathbb{Q}(\zeta_n)$, every automorphism sends $\zeta_n \mapsto \zeta_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in <em>Unique Factorisation Domains</em> and standard in general.</p>
+<p><strong>Example.</strong> For the cyclotomic field $\mathbb{Q}(\zeta_n)$, every automorphism sends $\zeta_n \mapsto \zeta_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in <em>Unique Factorisation Domains</em> and standard in general.</p>
 <h3 id="termination-of-the-correspondence-for-finite-extensions">Termination of the Correspondence for Finite Extensions</h3>
-<p>Let $K/F$ be a finite extension and let $E = K^{\operatorname{Gal}(K/F)}$ be the fixed field of all $F$-automorphisms. Then $E \supseteq F$ and $\operatorname{Gal}(K/E) = \operatorname{Gal}(K/F)$. The extension $K/F$ is Galois exactly when $E = F$; in general $E$ is the smallest intermediate subfield over which $K$ is Galois, since $K/E$ is Galois by Artin's theorem and any intermediate field $L$ with $K/L$ Galois satisfies $L \supseteq K^{\operatorname{Gal}(K/F)} = E$; and $K/F$ is Galois if and only if $F$ is the fixed field of its own automorphism group.</p>
+<p>Let $K/F$ be a finite extension and let $E = K^{\operatorname{gal}(K/F)}$ be the fixed field of all $F$-automorphisms. Then $E \supseteq F$ and $\operatorname{gal}(K/E) = \operatorname{gal}(K/F)$. The extension $K/F$ is Galois exactly when $E = F$; in general $E$ is the smallest intermediate subfield over which $K$ is Galois, since $K/E$ is Galois by Artin's theorem and any intermediate field $L$ with $K/L$ Galois satisfies $L \supseteq K^{\operatorname{gal}(K/F)} = E$; and $K/F$ is Galois if and only if $F$ is the fixed field of its own automorphism group.</p>
 <p><strong>Example.</strong> For $K = \mathbb{Q}(\sqrt[3]{2})$ the group is trivial, so the fixed field is $K$ itself, and the Galois part of the extension is the trivial subextension $\mathbb{Q}/\mathbb{Q}$.</p>
 <hr />
 <h2 id="frobenius-and-arithmetic-automorphisms">Frobenius and Arithmetic Automorphisms</h2>
 <h3 id="the-frobenius-automorphism">The Frobenius Automorphism</h3>
-<p><strong>Theorem.</strong> Let $K$ have characteristic $p > 0$. The <strong>Frobenius map</strong> $\varphi(x) = x^p$ is an injective endomorphism of $K$; it is an automorphism exactly when $K$ is perfect. In particular $\varphi \in \operatorname{Aut}(\mathbb{F}_{p^n})$ has order $n$, and $\operatorname{Aut}(\mathbb{F}_{p^n}) = \operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n$.</p>
+<p><strong>Theorem.</strong> Let $K$ have characteristic $p > 0$. The <strong>Frobenius map</strong> $\varphi(x) = x^p$ is an injective endomorphism of $K$; it is an automorphism exactly when $K$ is perfect. In particular $\varphi \in \operatorname{Aut}(\mathbb{F}_{p^n})$ has order $n$, and $\operatorname{Aut}(\mathbb{F}_{p^n}) = \operatorname{gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) = \langle \varphi \rangle \cong \mathbb{Z}/n$.</p>
 <p><strong>Proof.</strong> The freshman's dream gives additivity, multiplicativity is immediate, and the kernel is trivial. Surjectivity of $\varphi$ is exactly the perfectness criterion of <em>Splitting Fields and Algebraic Closure</em>; it holds for every finite field since an injective self-map of a finite set is bijective, and for every algebraically closed field. The order computation on $\mathbb{F}_{p^n}$ and the identification with the full automorphism group are from <em>Finite Fields</em> and <em>Galois Theory</em>.</p>
-<p><strong>Remark (absolute Galois group).</strong> The automorphism group $\operatorname{Gal}(\overline{F}/F) = \operatorname{Aut}_F(\overline{F})$ is the <strong>absolute Galois group</strong> of $F$. It is a profinite group and it is the basic invariant of the arithmetic of $F$; for $F = \mathbb{F}_p$ it is the profinite completion $\widehat{\mathbb{Z}}$, topologically generated by the Frobenius, while for $F = \mathbb{Q}$ it is a large group about which much is known and much is not. The structure of absolute Galois groups belongs to algebraic number theory ; only the finite-field case is elementary.</p>
+<p><strong>Remark (absolute Galois group).</strong> The automorphism group $\operatorname{gal}(\overline{F}/F) = \operatorname{Aut}_F(\overline{F})$ is the <strong>absolute Galois group</strong> of $F$. It is a profinite group and it is the basic invariant of the arithmetic of $F$; for $F = \mathbb{F}_p$ it is the profinite completion $\widehat{\mathbb{Z}}$, topologically generated by the Frobenius, while for $F = \mathbb{Q}$ it is a large group about which much is known and much is not. The structure of absolute Galois groups belongs to algebraic number theory ; only the finite-field case is elementary.</p>
 <h3 id="order-based-automorphisms">Order-Based Automorphisms</h3>
 <p><strong>Definition.</strong> An automorphism $\sigma$ of a ring with $\sigma^2 = \mathrm{id}$ is an <strong>involution</strong>. More generally the order of $\sigma$ is the least $n \geq 1$ with $\sigma^n = \mathrm{id}$.</p>
-<p><strong>Proposition (involutions and quadratic subextensions).</strong> Let $K/F$ be a finite Galois extension with group of order divisible by $2$, and let $\sigma \in \operatorname{Gal}(K/F)$ have order $2$. Then the fixed field $K^{\langle\sigma\rangle}$ is an intermediate field with</p>
+<p><strong>Proposition (involutions and quadratic subextensions).</strong> Let $K/F$ be a finite Galois extension with group of order divisible by $2$, and let $\sigma \in \operatorname{gal}(K/F)$ have order $2$. Then the fixed field $K^{\langle\sigma\rangle}$ is an intermediate field with</p>
 <p>$$
 \boxed{\;[K : K^{\langle\sigma\rangle}] = 2, \qquad [K^{\langle\sigma\rangle} : F] = \frac{[K:F]}{2}\;}.
 $$</p>
 <p>When $[K:F] = 2$ this fixed field is $F$ itself, and if in addition $\operatorname{char} F \neq 2$ then $K = F(\sqrt{a})$ for a nonsquare $a \in F$.</p>
-<p><strong>Proof.</strong> The first identity is the fundamental theorem applied to the subgroup of order $2$, and the second follows from the tower law. If $[K:F] = 2$ then $\sigma$ generates $\operatorname{Gal}(K/F)$, so $K^{\langle\sigma\rangle}$ is the fixed field of the full Galois group, namely $F$; in characteristic different from $2$ every quadratic extension is obtained by adjoining a square root of a nonsquare in the base field (the usual completion-of-the-square argument).</p>
+<p><strong>Proof.</strong> The first identity is the fundamental theorem applied to the subgroup of order $2$, and the second follows from the tower law. If $[K:F] = 2$ then $\sigma$ generates $\operatorname{gal}(K/F)$, so $K^{\langle\sigma\rangle}$ is the fixed field of the full Galois group, namely $F$; in characteristic different from $2$ every quadratic extension is obtained by adjoining a square root of a nonsquare in the base field (the usual completion-of-the-square argument).</p>
 <p><strong>Example.</strong> The complex conjugation $\sigma(z) = \bar z$ is an involution of $\mathbb{C}$ with fixed field $\mathbb{R}$; the field extension $\mathbb{R}(i)/\mathbb{R}$ is quadratic, adjoining a root of $x^2 + 1$. On $\mathbb{F}_{p^n}$ with $n$ even, the involution $\varphi^{n/2}$ has fixed field $\mathbb{F}_{p^{n/2}}$, and the extension $\mathbb{F}_{p^n}/\mathbb{F}_{p^{n/2}}$ is quadratic.</p>
 <p><strong>Example.</strong> The Galois group of $\mathbb{Q}(\zeta_n)$ contains the involution $\zeta_n \mapsto \zeta_n^{-1}$, whose fixed field $\mathbb{Q}(\zeta_n + \zeta_n^{-1})$ is the <strong>maximal real subfield</strong> of the cyclotomic field, of index $2$.</p>
 <hr />
@@ -219,7 +219,7 @@ $$</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <p>The automorphisms of a unital ring form a group $\operatorname{Aut}(R)$ that preserves units, zero divisors, idempotents, nilpotents, characteristic, ideals, and prime and maximal ideals, and that acts on the lattice of ideals; for a domain it embeds in $\operatorname{Aut}(\operatorname{Frac}(R))$. For a commutative ring the inner automorphism group is trivial, $\operatorname{Inn}(R) = 1$, since conjugation by a unit is the identity there; for a general ring the automorphisms induced by conjugation by units are the <strong>inner</strong> automorphisms, and they form a normal subgroup $\operatorname{Inn}(R) \cong R^\times/Z(R)^\times$ of $\operatorname{Aut}(R)$.</p>
-<p>For a field $K$ and a subgroup $G \leq \operatorname{Aut}(K)$, the fixed field $K^G$ is a subfield, the map $G \mapsto K^G$ reverses inclusions, and Artin's lemma gives $[K:K^G] \leq \lvert G \rvert$ for finite $G$. A finite extension $K/F$ is Galois exactly when $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, and then $F$ is the fixed field of the relative automorphism group; an $F$-automorphism of a simple extension $F(\alpha)$ is determined by the image of $\alpha$, which must be a root of $m_\alpha$ lying in the field. In positive characteristic the Frobenius map $x \mapsto x^p$ is an automorphism of $K$ exactly when $K$ is perfect, and on $\mathbb{F}_{p^n}$ it generates the cyclic automorphism group of order $n$.</p>
+<p>For a field $K$ and a subgroup $G \leq \operatorname{Aut}(K)$, the fixed field $K^G$ is a subfield, the map $G \mapsto K^G$ reverses inclusions, and Artin's lemma gives $[K:K^G] \leq \lvert G \rvert$ for finite $G$. A finite extension $K/F$ is Galois exactly when $\lvert \operatorname{gal}(K/F) \rvert = [K:F]$, and then $F$ is the fixed field of the relative automorphism group; an $F$-automorphism of a simple extension $F(\alpha)$ is determined by the image of $\alpha$, which must be a root of $m_\alpha$ lying in the field. In positive characteristic the Frobenius map $x \mapsto x^p$ is an automorphism of $K$ exactly when $K$ is perfect, and on $\mathbb{F}_{p^n}$ it generates the cyclic automorphism group of order $n$.</p>
 <p>Anti-automorphisms reverse multiplication; complex conjugation is the standard involutive example in the commutative case, where it coincides with an automorphism, and the matrix transpose is the standard genuinely noncommutative one. The rigidity of the automorphisms of a central simple algebra is treated in the algebra layer.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -304,14 +304,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\widehat{\mathbb{Z}}$</td>
-<td>Profinite completion of $\mathbb{Z}$, $\operatorname{Gal}(\overline{\mathbb{F}_p}/\mathbb{F}_p)$</td>
+<td>Profinite completion of $\mathbb{Z}$, $\operatorname{gal}(\overline{\mathbb{F}_p}/\mathbb{F}_p)$</td>
 </tr>
 <tr>
 <td>$\operatorname{Aut}(R)$</td>
 <td>Group of unital ring automorphisms of $R$</td>
 </tr>
 <tr>
-<td>$\operatorname{Aut}_F(K) = \operatorname{Gal}(K/F)$</td>
+<td>$\operatorname{Aut}_F(K) = \operatorname{gal}(K/F)$</td>
 <td>$F$-automorphisms of $K$, the Galois group</td>
 </tr>
 <tr>
@@ -335,7 +335,7 @@ $$</p>
 <td>Frobenius map</td>
 </tr>
 <tr>
-<td>$\operatorname{Gal}(\overline{F}/F)$</td>
+<td>$\operatorname{gal}(\overline{F}/F)$</td>
 <td>Absolute Galois group</td>
 </tr>
 <tr>

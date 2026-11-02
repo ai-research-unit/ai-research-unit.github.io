@@ -93,7 +93,7 @@ $$</p>
 <p><strong>Theorem.</strong> $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ have the same Gram matrix $[1]$ in the basis $1$ and are separated by their symmetry alone, $\langle\cdot,\cdot\rangle$ symmetric and $\langle\cdot,\cdot\rangle_{*}$ conjugate-symmetric. Their algebraic norms are $\langle Q_1\rangle = Q_1^2$, complex-valued and anisotropic, and $\langle Q_1\rangle_{*} = \lvert Q_1\rvert^2 = q_1^2 + q'^2_1$, real-valued and positive definite. <strong>Both are multiplicative</strong>, and $\langle\cdot,\cdot\rangle_{*}$ alone is definite.</p>
 <p><strong>Proof.</strong> The Gram matrix is $[\langle 1,1\rangle] = [1]$ and $[\langle 1,1\rangle_{*}] = [1]$. Symmetry of $\langle\cdot,\cdot\rangle$ is commutativity of the field; conjugate-symmetry $\langle Q_1,Q_2\rangle_{*} = \overline{\langle Q_2,Q_1\rangle_{*}}$ is conjugate-commutativity. The forms are $\langle Q_1\rangle = (q_1+iq'_1)^2$, which vanishes only at $Q_1 = 0$ over $\mathbb{C}$ but takes complex values and is anisotropic over $\mathbb{R}$, and $\langle Q_1\rangle_{*} = Q_1\bar Q_1 = q_1^2+q'^2_1 \geq 0$, zero only at the origin. Multiplicativity is $\langle Q_1Q_2\rangle = Q_1^2Q_2^2$ and $\langle Q_1Q_2\rangle_{*} = Q_1\bar Q_1Q_2\bar Q_2 = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. That the complex space is the <strong>degenerate base</strong> of the general four-form construction, where the four forms $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{\natural}, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural*}$ collapse to the two settings of the second slot with $\langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural*}$, is <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>.</p>
 <h2 id="the-general-plain-sesqualgebra-and-the-ternary-product">The General Plain Sesqualgebra and the Ternary Product</h2>
-<p><strong>Definition.</strong> The <strong>general plain sesqualgebra (GPS)</strong> over $\mathbb{C}$ is the pair $(\mathbb{C}, \star)$ with the sesquilinear product $Q_1\star Q_2 = Q_1\bar Q_2$.</p>
+<p><strong>Definition.</strong> The <strong>general plain sesqualgebra (gps)</strong> over $\mathbb{C}$ is the pair $(\mathbb{C}, \star)$ with the sesquilinear product $Q_1\star Q_2 = Q_1\bar Q_2$.</p>
 <p><strong>Theorem.</strong> The associator of $\star$ is $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3 - Q_3)$, nonzero but confined to the anti-self-adjoint part of the third slot; its <strong>ternary product</strong> $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ is symmetric in the outer slots, Hermitian-symmetric, $\overline{\{Q_1,Q_2,Q_3\}} = \{\bar Q_1,\bar Q_2,\bar Q_3\}$, and satisfies the Jordan triple identity, so that the structure is a <strong>$J^{*}$-algebra</strong> (a Jordan triple with an involution).</p>
 <p><strong>Proof.</strong> The associator is $[Q_1,Q_2,Q_3] = (Q_1\bar Q_2)\bar Q_3 - Q_1\overline{(Q_2\bar Q_3)} = Q_1\bar Q_2\bar Q_3 - Q_1\bar Q_2 Q_3 = Q_1\bar Q_2(\bar Q_3 - Q_3)$, which vanishes exactly when $Q_3$ is real, that is, on the self-adjoint part of the third slot. Outer symmetry is $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3 = Q_3\bar Q_2Q_1 = \{Q_3,Q_2,Q_1\}$ by commutativity, and Hermitian symmetry follows by conjugating the three entries. The Jordan triple identity is checked directly and was verified on random complex triples; it is the axiom of <em>Jordan Triples with an Involution</em> and <em>Algebraic J*-Algebras</em>. The article is <em>The Ternary Product of the Complexoid Space</em>, and the positivity of the associated Hermitian form is <em>The Hermitian Form and the Positivity of the Complexoid Algebra</em>.</p>
 <h2 id="the-remarkable-subspaces">The Remarkable Subspaces</h2>
@@ -128,7 +128,7 @@ $$</p>
 <td>the product $Q_1Q_2$</td>
 </tr>
 <tr>
-<td>General plain sesqualgebra (GPS)</td>
+<td>General plain sesqualgebra (gps)</td>
 <td>$(\mathbb{C},\star)$</td>
 <td>$\mathbb{C}_{\mathbb{R}}$</td>
 <td>the product $Q_1\bar Q_2$</td>
@@ -212,7 +212,7 @@ $$</p>
 </tr>
 <tr>
 <td>$Q_1\star Q_2 = Q_1\bar Q_2$</td>
-<td>the sesquilinear product of the GPS</td>
+<td>the sesquilinear product of the gps</td>
 </tr>
 <tr>
 <td>$\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$</td>
@@ -233,7 +233,7 @@ $$</p>
 <li><a href="the-complex-numbers.html">The Complex Numbers ($\mathbb{C}$)</a>, for the field itself: construction, algebraic closedness, conjugation, norm and trace, and the roots of unity.</li>
 <li><a href="the-complexoid-as-a-vector-space-over-r.html">The Complexoid as a Vector Space over $\mathbb{R}$</a>, <em>Complexoid Subspaces</em> and <em>Decompositions and Comparison of the Remarkable Subspaces of the Complexoid</em>, for the real and complex readings of the carrier, the involution and its two blocks.</li>
 <li><a href="the-two-products-of-the-complexoid-space.html">The Two Products of the Complexoid Space</a>, <em>Relations and Comparison Between the Two Products</em> and <a href="the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.html">The Two Forms and the Two Algebraic Norms of the Complexoid Space</a>, for the two products, their comparison, and their forms and algebraic norms.</li>
-<li><a href="the-sesquilinear-product-of-the-complexoid-space.html">The Sesquilinear Product of the Complexoid Space</a> and <a href="the-hermitian-form-and-the-positivity-of-the-complexoid-algebra.html">The Hermitian Form and the Positivity of the Complexoid Algebra</a>, for the GPS, the ternarisation and the positivity of the form.</li>
+<li><a href="the-sesquilinear-product-of-the-complexoid-space.html">The Sesquilinear Product of the Complexoid Space</a> and <a href="the-hermitian-form-and-the-positivity-of-the-complexoid-algebra.html">The Hermitian Form and the Positivity of the Complexoid Algebra</a>, for the gps, the ternarisation and the positivity of the form.</li>
 <li><em>The Ternary Product of the Complexoid Space</em>, for the ternary operation in full.</li>
 <li><a href="the-matrix-element-representations-of-the-complexoid.html">The Matrix Element Representations of the Complexoid</a>, for the two matrix models and their commutants.</li>
 <li><a href="jordan-triples-with-an-involution.html">Jordan Triples with an Involution</a>, <em>Algebraic J*-Algebras</em>, <em>Hermitian Forms over Algebras and Norms</em> and <em>The Norm Defined by a Form</em>, for the general theory of a sesqualgebra, of a ternary product and of an algebraic norm.</li>

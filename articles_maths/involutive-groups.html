@@ -85,7 +85,7 @@ $$</p>
 <p>An involution of $G$ is exactly an isomorphism $G \to G^{\mathrm{opp}}$ of order two, and the inversion $\iota(g) = g^{-1}$ is such an isomorphism: $\iota(ab) = (ab)^{-1} = b^{-1}a^{-1} = \iota(a)\cdot^{\mathrm{opp}}\iota(b)$. The map $\iota$ is an involution of $G$, and it exhibits the isomorphism $G \cong G^{\mathrm{opp}}$ explicitly by a formula that needs no choice.</p>
 <p><strong>Remark.</strong> The contrast with rings is sharp. For a ring the existence of an anti-automorphism is a genuine condition, and the involution is the certificate that the ring is isomorphic to its opposite ring; for a group the inversion supplies the certificate for every group at once. What is informative in the group case is the set of involutions and the structure each of them defines, not the bare existence.</p>
 <h3 id="anti-automorphisms-and-automorphisms">Anti-automorphisms and Automorphisms</h3>
-<p><strong>Proposition.</strong> The composition of two anti-automorphisms is an automorphism, and the composition of an automorphism with an anti-automorphism is an anti-automorphism. Hence $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$ is a subgroup of $\operatorname{Sym}(G)$, written $\operatorname{Aut}^*(G)$, in which $\operatorname{Aut}(G)$ has index two and $\operatorname{Anti}(G)$ is a coset.</p>
+<p><strong>Proposition.</strong> The composition of two anti-automorphisms is an automorphism, and the composition of an automorphism with an anti-automorphism is an anti-automorphism. Hence $\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$ is a subgroup of $\operatorname{sym}(G)$, written $\operatorname{Aut}^*(G)$, in which $\operatorname{Aut}(G)$ has index two and $\operatorname{Anti}(G)$ is a coset.</p>
 <p><strong>Proof.</strong> If $\sigma, \tau$ are anti-automorphisms then $\sigma\tau(ab) = \sigma(\tau(b)\tau(a)) = \sigma(\tau(a))\sigma(\tau(b)) = \sigma\tau(a)\,\sigma\tau(b)$, so $\sigma\tau \in \operatorname{Aut}(G)$; the remaining statements are the same computation in the other two orders. The set is closed under composition, contains $\mathrm{id}$, and is a subset of the bijections of $G$; each element is invertible with inverse of the same kind, so it is a subgroup.</p>
 <p><strong>Proposition.</strong> The inversion is central in $\operatorname{Aut}^*(G)$: it commutes with every automorphism and with every anti-automorphism. Consequently $\operatorname{Anti}(G) = \iota \operatorname{Aut}(G) = \operatorname{Aut}(G)\iota$ and $\lvert \operatorname{Anti}(G) \rvert = \lvert \operatorname{Aut}(G) \rvert$.</p>
 <p><strong>Proof.</strong> Every homomorphism or anti-homomorphism $\varphi : G \to G$ satisfies $\varphi(g^{-1}) = \varphi(g)^{-1}$, since $\varphi(g)\varphi(g^{-1}) = \varphi(e) = e$ by multiplicativity or anti-multiplicativity and the inverse is unique; this is the commutation $\varphi\iota = \iota\varphi$. Multiplying the coset statement by $\iota$ gives the equality, and left multiplication by $\iota$ is a bijection $\operatorname{Aut}(G) \to \operatorname{Anti}(G)$.</p>
@@ -337,7 +337,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{Aut}^*(G)$</td>
-<td>$\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$, a subgroup of $\operatorname{Sym}(G)$</td>
+<td>$\operatorname{Aut}(G) \cup \operatorname{Anti}(G)$, a subgroup of $\operatorname{sym}(G)$</td>
 </tr>
 <tr>
 <td>$\alpha = \sigma\iota$</td>

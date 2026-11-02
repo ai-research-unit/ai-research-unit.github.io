@@ -91,11 +91,11 @@ $$</p>
 <h2 id="the-flip-and-the-symmetric-and-antisymmetric-parts">The Flip and the Symmetric and Antisymmetric Parts</h2>
 <p><strong>Definition.</strong> The <strong>flip</strong> is the linear map $\tau : E \otimes F \to F \otimes E$ determined by $\tau(x \otimes y) = y \otimes x$; on $E \otimes E$ it is an involution of $E \otimes E$, and the <strong>symmetric part</strong> and the <strong>antisymmetric part</strong> are</p>
 <p>$$
-\mathrm{Sym}^{2}(E) = \ker(\tau - \mathrm{id}), \qquad \Lambda^{2}(E) = \ker(\tau + \mathrm{id}) .
+\mathrm{sym}^{2}(E) = \ker(\tau - \mathrm{id}), \qquad \Lambda^{2}(E) = \ker(\tau + \mathrm{id}) .
 $$</p>
 <p><strong>Proposition (the flip is continuous and extends).</strong> The flip is continuous for the projective and the injective topologies, it extends to a continuous involution $\widehat{\tau}$ of each of the completions $E \widehat{\otimes}_\pi F$ and $E \widehat{\otimes}_\varepsilon F$, and when $2$ is invertible the completions decompose as</p>
 <p>$$
-E \widehat{\otimes}_\bullet E = \overline{\mathrm{Sym}^{2}(E)} \oplus \overline{\Lambda^{2}(E)} ,
+E \widehat{\otimes}_\bullet E = \overline{\mathrm{sym}^{2}(E)} \oplus \overline{\Lambda^{2}(E)} ,
 $$</p>
 <p>the closures being taken in the completion.</p>
 <p><strong>Proof.</strong> The flip is the canonical isomorphism of <em>Topological Tensor Products</em>, continuous for both topologies, and its square is the identity; the averaging maps $\frac12(\mathrm{id}\pm\tau)$ are continuous linear projections when $2$ is invertible, and the completion of a topological direct sum is the direct sum of the closures.</p>
@@ -103,7 +103,7 @@ $$</p>
 <p>$$
 \boxed{\;(\theta \otimes \theta)\,\tau = \tau\,(\theta \otimes \theta)\;} ,
 $$</p>
-<p>so the symmetric and antisymmetric parts are $\theta \otimes \theta$-stable; on $\mathrm{Sym}^{2}(E)$ the fixed part is $\mathrm{Sym}^{2}(E_{+}) \oplus \mathrm{Sym}^{2}(E_{-})$ and on $\Lambda^{2}(E)$ it is $\Lambda^{2}(E_{+}) \oplus \Lambda^{2}(E_{-})$, the cross terms $E_{+} \otimes E_{-}$ lying in the negated part.</p>
+<p>so the symmetric and antisymmetric parts are $\theta \otimes \theta$-stable; on $\mathrm{sym}^{2}(E)$ the fixed part is $\mathrm{sym}^{2}(E_{+}) \oplus \mathrm{sym}^{2}(E_{-})$ and on $\Lambda^{2}(E)$ it is $\Lambda^{2}(E_{+}) \oplus \Lambda^{2}(E_{-})$, the cross terms $E_{+} \otimes E_{-}$ lying in the negated part.</p>
 <p><strong>Proof.</strong> $(\theta \otimes \theta)\tau(x \otimes y) = \theta y \otimes \theta x = \tau(\theta x \otimes \theta y) = \tau(\theta \otimes \theta)(x \otimes y)$, so the two commute; hence $\ker(\tau \mp \mathrm{id})$ is preserved. On a symmetrised product $x_{+}\otimes x_{+}' + x_{+}' \otimes x_{+}$ with both factors in $E_{+}$ the involution is the identity, and likewise for $E_{-}$; a cross term $x_{+}\otimes x_{-} + x_{-}\otimes x_{+}$ is sent to its negative, since $\theta x_{\pm} = \pm x_{\pm}$.</p>
 <p><strong>Corollary (the involution on the symmetric and the antisymmetric tensor powers).</strong> The induced involution restricts to involutions of the symmetric and the antisymmetric square, of the same kind, and their fixed and negated parts are those of the restrictions; over $\mathbb{K} = \mathbb{C}$ with an antilinear involution the restricted involutions are antilinear with the same signature, computed over $\mathbb{R}$.</p>
 <p><strong>Proof.</strong> A restriction of an involution to a stable subspace is an involution, and the kind and the signature are inherited from the theorem, the scalar involution acting as before.</p>
@@ -160,7 +160,7 @@ $$</p>
 <td>Flip</td>
 </tr>
 <tr>
-<td>$\mathrm{Sym}^{2}(E)$, $\Lambda^{2}(E)$</td>
+<td>$\mathrm{sym}^{2}(E)$, $\Lambda^{2}(E)$</td>
 <td>Symmetric and antisymmetric parts, $\ker(\tau \mp \mathrm{id})$</td>
 </tr>
 <tr>
