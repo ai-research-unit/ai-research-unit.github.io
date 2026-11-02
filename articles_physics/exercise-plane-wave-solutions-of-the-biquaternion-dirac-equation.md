@@ -231,7 +231,7 @@ in the Dirac basis. The two pairs are the same equation in the two bases.
 
 **Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The metric of the spacetime gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the Clifford metric of the generators is $g=-\eta$. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r)\dagger}\xi^{(s)}=\delta_{rs}$; $\chi_\pm$ are the helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\,\chi_\pm=\pm\chi_\pm$, with $\vec u_p=\vec p/|\vec p|$. The Hermitian conjugate $^*$ is the coefficient conjugation composed with the quaternion conjugation, $\tilde Q^*=\overline{\tilde Q^\natural}$, and under the matrix representation $\mathsf{M}_2$ it is the conjugate transpose.
 
-The six problems are: **(1)** the spinors at rest and at general momentum; **(2)** the covariant normalisation and the orthogonality; **(3)** the spin sums; **(4)** the massless limit and the helicity–chirality locking; **(5)** the algebra of the generators and the change of basis; **(6)** the biquaternionic mass shell.
+The seven problems are: **(1)** the spinors at rest and at general momentum; **(2)** the covariant normalisation and the orthogonality; **(3)** the spin sums; **(4)** the massless limit and the helicity–chirality locking; **(5)** the algebra of the generators and the change of basis; **(6)** the biquaternionic mass shell; **(7)** the helicity blocks and the block determinant.
 
 ## Problem 1: The spinors at rest and at general momentum
 
@@ -549,9 +549,74 @@ Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadrat
 
 The two roots $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two spin labels within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $|\vec p|=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde P/\hbar\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to the digits shown.
 
+## Problem 7: The helicity blocks and the block determinant
+
+**Statement.** Show that the momentum-space Dirac operator commutes with the helicity operator and splits into two $2\times2$ blocks, compute the determinant of each block, and read the mass shell as the vanishing of a block determinant.
+
+**Solution.** Write the symbol and the operator as
+
+$$
+S(p)=E\,R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y},\qquad \mathcal D(p)=S(p)-m\,\mathrm I .
+$$
+
+**The symbol squares to the interval.** From the Clifford relations of Problem 5, $\mathsf C_0^2=\mathrm I$ and $\mathsf C_k^2=-\mathrm I$, and the four cells anticommute, so the cross terms cancel and
+
+$$
+S(p)^2=p^2\,\mathrm I,\qquad p^2=E^2-\vec p^{\,2}.
+$$
+
+**The helicity grading.** For $\vec p\neq0$ put
+
+$$
+\Xi=-i\,\frac{\vec p}{|\vec p|},\qquad \Xi^2=e_t ,
+$$
+
+so that $L_\Xi$ has eigenvalues $\pm1$, each twice. The symbol commutes with it. The time term is a right multiplication and commutes with every left multiplication; the space terms contribute
+
+$$
+-\sum_k p_k\,[L_{i\vec e_k},\Xi]\,R_{\vec e_y}=-L_{i[\vec p\cdot\vec e,\Xi]}\,R_{\vec e_y}=0,
+$$
+
+because $\Xi$ is parallel to $\vec p\cdot\vec e$ and the two commute. The mass is a scalar, so it commutes too. Hence $\mathcal D(p)$ is block diagonal in the eigenbasis of $L_\Xi$, with two $2\times2$ blocks, one per helicity.
+
+**The block determinant.** A block $S_\pm$ obeys $S_\pm^2=p^2\,\mathrm I_2$ and is not a multiple of the identity (its off-diagonal entries are not zero), so its two eigenvalues are $\pm\sqrt{p^2}$ and
+
+$$
+\det\bigl(S_\pm-m\,\mathrm I_2\bigr)=\bigl(\sqrt{p^2}-m\bigr)\bigl(-\sqrt{p^2}-m\bigr)=m^2-p^2=\tilde P\tilde P^{\natural}+m^2,
+$$
+
+using $\tilde P\tilde P^{\natural}=-p^2$ of Problem 6. Equivalently, with $\lambda_\pm=i\bigl(E\mp|\vec p|\bigr)$ the two eigenvalues of $L_{\tilde P}$, $\lambda_+\lambda_-=\tilde P\tilde P^{\natural}$ and the block determinant is $\lambda_+\lambda_-+m^2$. The mass multiplies the block, it does not square into it, so the determinant of the whole symbol is the product of the two block determinants,
+
+$$
+\boxed{\;\det\mathcal D(p)=\bigl(m^2-p^2\bigr)^2\;},
+$$
+
+the square of the Klein–Gordon symbol. The two blocks carry the same pair of eigenvalues: they are isospectral, so the block determinant is the only frame-independent datum a single block has.
+
+**The mass shell is the vanishing of a block determinant.** Each block determinant is $m^2-p^2$, so the symbol is singular exactly when $p^2=m^2$. At that momentum each block has a one-dimensional kernel: two zero modes, one per helicity, and these are the two spin states of the particle. Off the shell each block is invertible and the propagator is the inverse of the pair.
+
+**Worked case, $\vec p\parallel\vec e_z$.** With $B=|\vec p|$ and the helicity basis ordered block by block, the symbol is
+
+$$
+\mathcal D=\begin{pmatrix}
+-m & -i(E+B) & 0 & 0\\
+i(E-B) & -m & 0 & 0\\
+0 & 0 & -m & -i(E+B)\\
+0 & 0 & i(E-B) & -m
+\end{pmatrix},
+$$
+
+the two blocks identical, each with determinant $m^2-(E+B)(E-B)=m^2-p^2$ and eigenvalues $-(m+\sqrt{p^2})$ and $m-\sqrt{p^2}$. For $m=1.3$, $E=2$, $B=0.9$: $p^2=3.19$, each block determinant $-1.5$, each block spectrum $\{-3.086057,\,0.486057\}$, total determinant $2.25=(m^2-p^2)^2$.
+
+**Worked case, on the shell.** For $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$ the energy is $E=\sqrt{m^2+\vec p^{\,2}}=1.774824$. Each block determinant is zero, each block spectrum is $\{-2m,\,0\}=\{-2.6,\,0\}$, and the whole symbol has rank two, with a one-dimensional kernel per helicity.
+
+**Numerical check.** The identities were recomputed on 100 random real four-momenta: the largest off-block entry $1.1\times10^{-15}$; the block determinant against $m^2-p^2$ $1.8\times10^{-14}$; the two block spectra against each other $1.0\times10^{-14}$; $S(p)^2$ against $p^2\,\mathrm I$ $7.6\times10^{-15}$; $\lambda_+\lambda_-$ against $\tilde P\tilde P^{\natural}$ $1.6\times10^{-14}$; the total determinant against $(m^2-p^2)^2$ $2.3\times10^{-13}$.
+
+**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity blocks with equal spectra and unequal contents. The entries of a block depend on the choice of basis inside an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the operator $\Xi$ is undefined: the symbol is $E R_{i\vec e_x}-m$, the spin label is the fixed Peirce index and not the helicity, and the block decomposition is that of Problem 5. For a spacelike momentum $p^2<0$ the two eigenvalues $\pm\sqrt{p^2}$ are imaginary and the block determinant $m^2+|p^2|$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the determinant identity still holds, but the massless block $S_\pm$ is nilpotent there and the massive block keeps the determinant $m^2$: this is the exceptional case of the massless wall.
+
 ## Summary
 
-The six problems test the parent's plane-wave solutions and confirm them in the algebra.
+The seven problems test the parent's plane-wave solutions and confirm them in the algebra.
 
 1. **The spinors.** In the chiral basis, $\tilde w_\pm=\sqrt{E\mp|\vec p|}\,\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\,\Psi_-(\chi_\pm)$ and $\tilde v_\pm=-\sqrt{E\mp|\vec p|}\,\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\,\Psi_-(\chi_\pm)$; in the Dirac basis, $\tilde w^{(r)}=\sqrt{E+m}\,\Psi_+(\xi^{(r)})+\sqrt{E-m}\,\Psi_-(\boldsymbol\sigma\cdot\vec u_p\,\xi^{(r)})$ and $\tilde v^{(r)}=\sqrt{E-m}\,\Psi_+(\boldsymbol\sigma\cdot\vec u_p\,\eta^{(r)})+\sqrt{E+m}\,\Psi_-(\eta^{(r)})$. At rest the positive-frequency amplitude has equal Peirce coordinates and the negative-frequency amplitude opposite ones; in the Dirac basis each sits in a single Peirce component.
 2. **Normalisation.** The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$; the Hermitian products are $2E$.
@@ -559,6 +624,7 @@ The six problems test the parent's plane-wave solutions and confirm them in the 
 4. **Massless limit.** Each helicity eigenstate becomes a single Peirce component, with positive helicity right-handed and negative helicity left-handed; the mass term is the only coupling of the two components.
 5. **Generators.** The Clifford algebra is the multiplication table: $\mathsf C_0=R_{i\vec e_x}$, $\mathsf C_k=L_{i\vec e_k}R_{\vec e_y}$, $\mathsf C_5=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $\mathsf C_0$ to $R_{i\vec e_z}$ and leaves $\mathsf C_k$ unchanged; the Lorentz generators are $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$.
 6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
+7. **Helicity blocks.** The symbol squares to the interval, $S(p)^2=p^2\,\mathrm I$, and commutes with $L_\Xi$, $\Xi=-i\vec p/|\vec p|$, so it splits into two $2\times2$ blocks of determinant $m^2-p^2=\lambda_+\lambda_-+m^2$; the blocks are isospectral, $\det\mathcal D(p)=(m^2-p^2)^2$, and the mass shell is the vanishing of each block determinant, with a one-dimensional kernel per helicity.
 
 Two objects are needed by the exercise and are not displayed in the parent: the chiral negative-frequency spinors $\tilde v_\pm$ (Problem 1) and the change-of-basis biquaternion $\tilde W$ (Problem 5). The constructions above reproduce the parent's stated results.
 
@@ -582,6 +648,11 @@ Two objects are needed by the exercise and are not displayed in the parent: the 
 | $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$, $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$ | Lorentz generators |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion |
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Mass-shell condition |
+| $p^2=E^2-\vec p^{\,2}$ | Interval of the four-momentum, $\hbar=c=1$ |
+| $S(p)=E R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$, $\mathcal D(p)=S(p)-m$ | Massless symbol and massive symbol |
+| $\Xi=-i\vec p/\lvert\vec p\rvert$ | Helicity element, $\Xi^2=e_t$; $L_\Xi$ grades the symbol into two blocks |
+| $\lambda_\pm=i(E\mp\lvert\vec p\rvert)$ | Eigenvalues of $L_{\tilde P}$; $\lambda_+\lambda_-=\tilde P\tilde P^{\natural}$ |
+| $\det\mathcal D(p)=(m^2-p^2)^2$ | Block determinant $m^2-p^2$ per helicity, squared in the symbol |
 
 ## Further Reading
 

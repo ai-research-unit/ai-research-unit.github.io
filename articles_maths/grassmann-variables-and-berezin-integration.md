@@ -63,15 +63,15 @@ $$
 
 where the hat denotes omission and the sum is over the positions at which $\theta_i$ occurs.
 
-**Definition.** The **right derivative** $\dfrac{\overleftarrow{\partial}}{\partial\theta_i}$ is defined by bringing the $\theta_i$ to the end of the monomial and removing it, with the sign of the transpositions used.
+**Definition.** The **right derivative**, written with a superscript $R$ because it is a second operator and not a side of an action, $\dfrac{\partial^{R}}{\partial\theta_i}$ is defined by bringing the $\theta_i$ to the end of the monomial and removing it, with the sign of the transpositions used.
 
 **Proposition.** For a monomial of degree $k$,
 
 $$
-\frac{\overleftarrow{\partial}}{\partial\theta_i} = (-1)^{k-1}\, \frac{\partial}{\partial\theta_i}.
+\frac{\partial^{R}}{\partial\theta_i} = (-1)^{k-1}\, \frac{\partial}{\partial\theta_i}.
 $$
 
-Consequently the two derivatives agree on monomials of odd degree and differ by a sign on monomials of even degree, and for a general element $f$ one has $\overleftarrow{\partial}/\partial\theta_i\,f = \sum_k (-1)^{k-1} (\partial/\partial\theta_i\,f)_k$ where $(\partial/\partial\theta_i\,f)_k$ is the degree-$k$ component of $\partial/\partial\theta_i\,f$.
+Consequently the two derivatives agree on monomials of odd degree and differ by a sign on monomials of even degree, and for a general element $f$ one has $\partial^{R}/\partial\theta_i\,f = \sum_k (-1)^{k-1} (\partial/\partial\theta_i\,f)_k$ where $(\partial/\partial\theta_i\,f)_k$ is the degree-$k$ component of $\partial/\partial\theta_i\,f$.
 
 **Proof.** In a monomial of degree $k$ containing $\theta_i$ at position $j$, its removal by the left derivative gives the sign $(-1)^{j-1}$ and its removal by the right derivative gives the sign $(-1)^{k-j}$, since $\theta_i$ must pass the $k-j$ factors to its right. The ratio is $(-1)^{k-j-j+1} = (-1)^{k+1} = (-1)^{k-1}$.
 
@@ -265,7 +265,7 @@ The Gaussian integral over odd variables gives the Pfaffian, $\int \exp(\frac12\
 | $\Lambda(\theta_1, \ldots, \theta_n)$ | Grassmann algebra, the exterior algebra on the odd generators |
 | $\theta_I$, $I = \{i_1 < \cdots < i_k\}$ | Squarefree monomial; basis of $\Lambda(V)$, rank $2^n$ |
 | $c_{\{1,\ldots,n\}}$ | Top coefficient of $f(\theta) = \sum_I c_I\theta_I$ |
-| $\dfrac{\partial}{\partial\theta_i}$, $\dfrac{\overleftarrow{\partial}}{\partial\theta_i}$ | Left and right derivatives; differ by $(-1)^{k-1}$ in degree $k$ |
+| $\dfrac{\partial}{\partial\theta_i}$, $\dfrac{\partial^{R}}{\partial\theta_i}$ | Left and right derivatives; differ by $(-1)^{k-1}$ in degree $k$ |
 | $\int f\, d\theta = c_{\{1,\ldots,n\}} = \partial/\partial\theta_n\cdots\partial/\partial\theta_1 f$ | Berezin integral |
 | $\int f(\theta+\eta)\,d\theta = \int f(\theta)\,d\theta$ | Translation invariance for a constant odd shift $\eta$ |
 | $\theta = N\eta \Rightarrow \int f\,d\theta = \det(N)^{-1}\int f(N\eta)\,d\eta$ | Berezinian change of variables; Jacobian factor is an inverse determinant |

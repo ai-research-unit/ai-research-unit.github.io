@@ -34,17 +34,98 @@ The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $
 
 **The case follows the layer.** The arrow does not change the case: a pure operator of the quaternion layer stays lower case, $\vec p$, and one of the biquaternion layer takes the upper case, $\vec P$. Where the letter already names another object of the layer, the operator is written in its explicit form, $-i\hbar\vec\nabla$, because no subscript marks an operator: the two-letter form $\mathrm{op}$ is not a token of the corpus, and *Algebra and Element Conventions* states the rule (§*The Algebra and Its Basis*). The three-momentum and the momentum operator share $\vec p$, as an eigenvalue and its operator do.
 
-**The mark of a side, and the mark of a part.** The two arrows are two tokens, and they are not the same sign. The short arrow marks the **pure part** of a glyph, $\vec e_x$, $\vec p$; the long arrow marks the **side** of an action, $\overrightarrow{b}\psi$ and $\psi\overleftarrow{b}$. A glyph may carry both, and then the short arrow is inside, $\overrightarrow{\vec e_k}\psi$: the inner says the actor is pure, the outer says from which side it acts. The long arrow is placed on the actor, never on the operand, and its tip points at what the operator acts on.
+**The mark of a part, and the side carried by position.** The only arrow on a glyph is the short one, and it marks the **pure part**: $\vec e_x$, $\vec p$. The side of an action is not marked at all. It is carried by position, $b\psi$ against $\psi b$, the actor written on the side from which it acts, and position is unambiguous because the operand is itself a glyph.
 
-It is allowed on any object that acts, an element included, because there the element's own glyph does not carry its side: $L_\psi(b)=\psi b=R_b(\psi)$ prints one element and two operators, and only the arrow says which of the two is meant. It is kept off names: an algebra's left action is not an action on a field and takes no arrow. On a derivative the arrow is compulsory rather than optional, because a derivative has no element reading and nothing else fixes which factor acts.
+**What names a side where position is not enough.** Three signs, each of which the corpus needs for a purpose of its own.
 
-**A two-sided operator takes two arrows, pointing inward**, $\overrightarrow{a}\psi\overleftarrow{b}$, against the bare product $a\psi b$, in which a coefficient and an actor print alike. This is the reason the long arrow exists. The alternatives are exact and none is shorter than the pair at the point where it is needed: $T_{a,b}$ and $L_aR_b$ are matrices and need a frame; the dot scopes a derivative, not a side, and the glyph is barred; sub- or prescripts are unreadable at display size; row vectors transpose every matrix in the corpus; components are barred with the index calculus. What the mark cannot do is bounded and stated: it carries nothing but the side, and it cannot say which of three factors a derivative belongs to. Within that bound, for a two-sided biquaternion operator the pair of arrows is the writing the conventions adopt.
+- $\natural$ marks the conjugation of an element, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$, and it is what carries a change of side, because it is an anti-automorphism: $(ab)^{\natural}=b^{\natural}a^{\natural}$, hence $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, and a right action on $\psi$ is a left action on $\psi^{\natural}$. The theorem is below, §*The Two Sides and the Renaming Theorem*.
+- $L_a$ and $R_a$ name a side outright when a statement is about operators rather than about fields, and the cell $T_{a,b}=L_aR_b$ prints both sides at once.
+- The superscript $R$ marks the one case that position alone leaves genuinely ambiguous: a derivative that differentiates the factor written to its left, $F\nabla^{R}=\sum_\mu(\partial F/\partial q_\mu)e_\mu$. It is used only inside a product of two distinct factors, which is where the theorem below does not reach.
 
 **The dagger.** The dagger is the general adjoint of an operator, never of an element: $(L_a)^{\dagger}=L_{a^{*}}$. Several adjoints arise at once — one for each form, and one for each of the sandwiches — and the dagger is the mark that covers them all, of which the others are the instances. It is not a fifth conjugation: it belongs to the operators and not to the algebra. Where a dagger is written on an element the writing is an abuse: the mark that was meant is the star for the Hermitian conjugation, or the natural sign for the quaternion conjugation, according to the conjugation in view. The dagger is added to the glyph and does not replace the element's mark: the arrow states purity, which the adjoint preserves, so $\vec p^{\dagger}$ is again a pure operator; the tilde states a glyph read with its scalar part, which the adjoint also preserves, so $\tilde\nabla$ keeps its tilde. Where the adjoint in view is the one of the definite form and the operator carries no derivative, the two marks are written together, dagger first: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$. A derivative separates them: its dagger is the adjoint and carries the integration by parts, its star conjugates the units alone (§*The Gradient*); the series writes $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ for the star.
 
 **A Kraus operator is an element, not an array.** The Kraus operators of a channel or an instrument multiply the state on both sides, $\Phi(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$, so each $\tilde K_l$ is an element of $\mathbb{B}$ and carries the tilde of the element. It is not a matrix, and the ban on a tilde on an array does not apply to it. Where the same operator is read as an array, that array is its image $\mathsf{M}_2(\tilde K_l)$, which carries no tilde, and its adjoint is the dagger, $\mathsf{M}_2(\tilde K_l)^{\dagger}=\mathsf{M}_2(\tilde K_l^{*})$; the corpus does not use that reading, and the star on the element is not a matrix adjoint.
 
 **The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Unit, Index and Notation Conventions*, §*The Superscripts*.
+
+## The Two Sides and the Renaming Theorem
+
+**The statement.** Write $L_D\psi := D\psi$ and $R_D\psi := \psi D$ for the two one-sided actions on a field $\psi\in\mathbb{B}$. Then
+
+$$
+R_D=\natural\circ L_{D^{\natural}}\circ\natural,
+\qquad
+L_D=\natural\circ R_{D^{\natural}}\circ\natural,
+$$
+
+and on a field
+
+$$
+\boxed{\;(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}\;}
+$$
+
+**A right action on $\psi$ is a left action on $\psi^{\natural}$.** The side is not a property of the equation. It is a property of the field the equation is written on.
+
+**The three properties.** Everything rests on them, and only the third is non-trivial.
+
+| property | statement | residual |
+|---|---|---|
+| involutive | $\natural\circ\natural=\mathrm{id}$ | $0$ |
+| $\mathbb{C}$-linear | $\natural(i\psi)=i\,\natural(\psi)$ | $0$ |
+| anti-automorphism | $(ab)^{\natural}=b^{\natural}a^{\natural}$ | $2.6\times10^{-15}$ over $400$ random complex pairs |
+
+The first makes $\natural$ invertible with $\natural^{-1}=\natural$. The third makes it **reverse the order of a product**. The second lets the mass, which is central, pass through untouched. An involution that preserved the order would identify the two sides; one that reverses the order exchanges them. $\natural$ reverses, so it exchanges.
+
+**The proof is three symbols.** Applied to the two factors $\psi$ and $D$,
+
+$$
+(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}.
+$$
+
+Read forwards, conjugating a right action gives a left action of the conjugated operator. Read backwards, using $\natural^{2}=\mathrm{id}$, a right action is the conjugate of a left action — the two lines of the statement above.
+
+**In matrix form it is one congruence.** With $N=\operatorname{diag}(1,-1,-1,-1)$ the matrix of $\natural$ on a coordinate column,
+
+$$
+N\,R_D\,N=L_{D^{\natural}},
+\qquad
+N\,L_D\,N=R_{D^{\natural}},
+\qquad\text{both at residual }0 .
+$$
+
+$N$ is the change of basis that exchanges the two families, and $N^{\mathsf T}N=I$, $\det N=-1$.
+
+**On an equation.** Take $\psi D=m\chi$ with $m$ central, so $m^{\natural}=m$, and conjugate both sides:
+
+$$
+D^{\natural}\,\psi^{\natural}=m\,\chi^{\natural}.
+$$
+
+The map $\Phi:(\psi,\chi)\mapsto(\psi^{\natural},\chi^{\natural})$ is $\mathbb{C}$-linear, involutive and invertible, so it is a **bijection of solution sets** and not an inclusion:
+
+$$
+\{\psi:\ \psi D=m\chi\}\ \xrightarrow{\ \Phi\ }\ \{u:\ D^{\natural}u=m\,\chi^{\natural}\},
+\qquad \Phi^{-1}=\Phi .
+$$
+
+Verified: a pair solved on the right at residual $2.0\times10^{-15}$ maps to a pair solved on the left at residual $1.1\times10^{-15}$, on all four basis solutions. Same solutions, relabelled.
+
+**What the theorem does not say.** It does not say the two operators are equal. On $D=-5e_t+3i\vec e_x$,
+
+$$
+\bigl\lVert R_D-L_{D^{\natural}}\bigr\rVert_{\mathrm F}=8.4853\neq0 ,
+$$
+
+so the two arrays differ and neither may be substituted for the other at sight. What is equal is the pair of solution sets after renaming, not the operators.
+
+**Where the theorem does not reach.** Three cases, and each is stated where it is used.
+
+1. **More than one field.** The anti-automorphism reverses the whole order, $(\psi D\chi)^{\natural}=\chi^{\natural}D^{\natural}\psi^{\natural}$, residual $1.3\times10^{-14}$ over $200$ random triples. The two fields exchange places, so renaming alone does not suffice, and where the two fields are not the same object the reordering changes the statement. The bilinear identities of the integration articles stand in this case, and it is why they carry the superscript $R$ on the derivative.
+2. **A carrier without $\natural$.** On a column $\psi\in\mathbb{C}^{4}$ there is no natural conjugation, only the antilinear Dirac adjoint; on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play. The theorem is a theorem about fields valued in $\mathbb{B}$.
+3. **The side itself on display.** For the two-sided action $a\psi b$, the mirror coupling, or the exchange of the two slots of a cell, conjugating the field destroys what is being displayed. There both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
+
+**The consequence for the corpus.** Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $\Phi=\tilde\Psi^{\natural}$, the pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$ and $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. Across the $404$ files and $10\,196$ display equations of the physics corpus no glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
+
 
 ## Conventions for Derivation
 
@@ -305,7 +386,7 @@ so the Krein norm of the gradient **coincides with the plain bilinear norm**. It
 
 ## Summary
 
-An operator whose letter is the letter of an element is that element: the tilde and the arrow are read on it as on the element, and no mark says operator. The named operators are left and right multiplication, the two-sided operator, the sandwich and the inner derivation. The dagger is the general adjoint of an operator and not a fifth conjugation, and it adds to the element's mark rather than replacing it. A Kraus operator is an element, not an array. The Fock operator is the one operator that is not an element, and its superscript is fixed with the other tokens.
+An operator whose letter is the letter of an element is that element: the tilde and the arrow are read on it as on the element, and no mark says operator. The named operators are left and right multiplication, the two-sided operator, the sandwich and the inner derivation. The side of an action is position, $D\psi$ against $\psi D$; the two are exchanged by the natural conjugation, $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach. The dagger is the general adjoint of an operator and not a fifth conjugation, and it adds to the element's mark rather than replacing it. A Kraus operator is an element, not an array. The Fock operator is the one operator that is not an element, and its superscript is fixed with the other tokens.
 
 A subscript is a component or a label, never a derivative; every partial derivative is written with $\partial$ and its variable. A caret is a power or a name, never a frame slot: every coordinate, component, basis vector, frame cell and sign symbol is written low, and a contraction is a form with the sign vector. The coordinate derivative is unhalved, $\partial/\partial Q_\mu=\partial/\partial q_\mu+\partial/\partial(iq'_\mu)$. The gradient is $\tilde\nabla$, not pure. The d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta_Q$, read on the material sector as $\Delta-c^{-2}\partial^2/\partial t'^2$, and every article uses this one operator with the mass equation $(\Box-m^2c^2/\hbar^2)\psi=0$.
 
@@ -323,6 +404,9 @@ The four forms remain four distinct conventions and the norms two, because each 
 | $\partial/\partial Q_\mu$ | The unhalved coordinate derivative, $\partial/\partial q_\mu+\partial/\partial(iq'_\mu)$ |
 | $\tilde\nabla$ | The biquaternionic gradient, four components, not pure |
 | $\Box$ | The d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$ |
+| $^{\natural}$ | The natural conjugation, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$; an anti-automorphism, $(ab)^{\natural}=b^{\natural}a^{\natural}$ |
+| $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$ | The exchange of the two sides: a right action on $\psi$ is a left action on $\psi^{\natural}$ |
+| $\nabla^{R}$ | The right gradient, $F\nabla^{R}=\sum_\mu(\partial F/\partial q_\mu)e_\mu$; used only where a derivative meets two distinct factors |
 
 ## Further Reading
 

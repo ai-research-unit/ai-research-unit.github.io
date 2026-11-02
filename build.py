@@ -28,9 +28,9 @@ COLLECTIONS = [
     # Reference area. Drafts here build like the public collections — each md
     # gets its own page, subfolders mirror into the deploy tree — but only the
     # entries listed in maths.md are reachable from the menus. Marked optional so
-    # an empty folder is not a warning, and recursive so articles_reserve/matrix/
+    # an empty folder is not a warning, and recursive so articles_internal/matrix/
     # can hold a nested archive.
-    {"name": "reserve", "src": SRC / "articles_reserve", "deploy": DEPLOY / "articles_reserve",
+    {"name": "internal", "src": SRC / "articles_internal", "deploy": DEPLOY / "articles_internal",
      "optional": True, "recursive": True},
 ]
 
@@ -316,7 +316,7 @@ ROOT_PAGES = [
 def ordered_collections():
     # Physics before maths. build_order only controls build sequence; COLLECTIONS
     # keeps its own order because the nav links are derived from it.
-    build_order = ["physics", "maths", "reserve"]
+    build_order = ["physics", "maths", "internal"]
     return sorted(COLLECTIONS, key=lambda c: build_order.index(c["name"]))
 
 

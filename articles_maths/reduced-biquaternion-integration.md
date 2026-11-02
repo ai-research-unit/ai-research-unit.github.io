@@ -34,7 +34,7 @@ $$
 
 *Proof.* The scalar divergence theorem applied to each of the four real coordinates of $f$ gives the first display; the product rule $\partial(fh)/\partial x_\nu=(\partial f/\partial x_\nu)h+f\partial h/\partial x_\nu$ holds because the algebra is **commutative** and the derivative is a derivation, and integrating the product rule and applying the divergence theorem gives the second display.
 
-**Corollary (no side bookkeeping).** Since the multiplication is commutative, the two displays above hold without any distinction between a left and a right gradient, in contrast with the split biquaternion case, where transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$.
+**Corollary (no side bookkeeping).** Since the multiplication is commutative, the two displays above hold without any distinction between a left and a right gradient, in contrast with the split biquaternion case, where transposing the gradient off a product requires the right gradient $\nabla^{R}$.
 
 *Proof.* The product rule and the divergence theorem are identities in the commutative algebra, and no ordering convention is needed.
 

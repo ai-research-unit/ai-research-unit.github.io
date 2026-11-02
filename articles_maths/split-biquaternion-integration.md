@@ -122,13 +122,13 @@ where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial 
 **Theorem (integration by parts for the gradient).** Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and write
 
 $$
-F^{\mathrm{fn}}\overleftarrow{\nabla} = \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F^{\mathrm{fn}}) e_\mu
+F^{\mathrm{fn}}\nabla^{R} = \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F^{\mathrm{fn}}) e_\mu
 $$
 
 for the **right gradient** of $F^{\mathrm{fn}}$. Then
 
 $$
-\int_\Omega F^{\mathrm{fn}} (\tilde{\nabla}G^{\mathrm{fn}}) \, dV = \int_{\partial \Omega} F^{\mathrm{fn}} \tilde u_{\mathrm n} G^{\mathrm{fn}} \, dS - \int_\Omega (F^{\mathrm{fn}}\overleftarrow{\nabla}) G^{\mathrm{fn}} \, dV,
+\int_\Omega F^{\mathrm{fn}} (\tilde{\nabla}G^{\mathrm{fn}}) \, dV = \int_{\partial \Omega} F^{\mathrm{fn}} \tilde u_{\mathrm n} G^{\mathrm{fn}} \, dS - \int_\Omega (F^{\mathrm{fn}}\nabla^{R}) G^{\mathrm{fn}} \, dV,
 $$
 
 and equivalently
@@ -141,7 +141,7 @@ where $\tilde u_{\mathrm n} = \sum_\mu n_\mu e_\mu$ is the split-biquaternion-va
 
 **Proof.** The Leibniz rule for the gradient gives $\tilde{\nabla}(F^{\mathrm{fn}}G^{\mathrm{fn}}) = (\tilde{\nabla}F^{\mathrm{fn}})G^{\mathrm{fn}} + \sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$, and the divergence theorem applied to the product $F^{\mathrm{fn}}G^{\mathrm{fn}}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}}$ and sum over $\mu$.
 
-**Remark (the non-commutative correction).** The transposition that moves the derivative off $G^{\mathrm{fn}}$ while leaving $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ in the volume term is **false for a non-central** $F^{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$ equals $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ only when $F^{\mathrm{fn}}$ commutes with every unit $e_\mu$. The right gradient $\overleftarrow{\nabla}$ is the transposition that removes the restriction.
+**Remark (the non-commutative correction).** The transposition that moves the derivative off $G^{\mathrm{fn}}$ while leaving $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ in the volume term is **false for a non-central** $F^{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$ equals $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ only when $F^{\mathrm{fn}}$ commutes with every unit $e_\mu$. The right gradient $\nabla^{R}$ is the transposition that removes the restriction.
 
 ## The Divergence Theorem
 
@@ -513,7 +513,7 @@ The following questions are not answered in this article and are left for later 
 
 ## Summary
 
-The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
+The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\nabla^{R}$ after the function it differentiates, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
 
 The **fundamental solution** of the gradient operator is $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, the distributional identity established above.
 

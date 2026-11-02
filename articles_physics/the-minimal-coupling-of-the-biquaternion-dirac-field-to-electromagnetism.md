@@ -115,14 +115,16 @@ with $\partial/\partial Q_t = -(i/c)\,\partial/\partial t'$ and $\partial/\parti
 
 **Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ with the phase $\lambda = \exp(iϙ\Gamma/\hbar)$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial Q_\mu \to \partial/\partial Q_\mu - iϙA_\mu/\hbar$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
 
-**Left action and right action.** The prescription above acts on the left. The algebra also admits a mirror construction, with the derivative taken on the right and the connection inserted on the right:
+**Left action only, and the mirror written without an arrow.** Every coupling used in this article acts on the left. The mirror construction — derivative and connection both inserted on the right — is not a second prescription: it is the same one applied to the conjugate field. With the natural conjugation $\natural$ and $\Phi := \tilde\Psi^{\natural}$,
 
 $$
-\tilde{\Psi}\overleftarrow{\tilde{\nabla}} + \frac{iϙ}{\hbar}\,\tilde{\Psi}\,\tilde{A},
-\qquad \tilde{\Psi}\overleftarrow{\tilde{\nabla}} := \sum_\mu (\partial/\partial Q_\mu\,\tilde{\Psi})\,e_\mu .
+\bigl(\tilde\Psi\tilde D\bigr)^{\natural} = \tilde D^{\natural}\,\tilde\Psi^{\natural}
+= \Bigl(\tilde\nabla^{\natural} + \tfrac{i\varrho}{\hbar}\tilde A^{\natural}\Bigr)\Phi ,
 $$
 
-Both constructions are gauge covariant (verified below). What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right. The two consistent constructions correspond to the two ways the algebra can act on the field, and the choice between them is a choice of **matter representation**: on which module, and from which side, the Dirac field sits. The gauge principle article records this as an open question, and this article does not resolve it; it states the left-action form, which is the one the gauge principle produces, and records the right-action mirror as the alternative.
+so the right-action equation on $\tilde\Psi$ is a left-action equation on $\Phi$. Nothing needs a right arrow: the side is given by position, and $\natural$ is what changes it.
+
+Both constructions are gauge covariant (verified below), and they must be, being the same construction seen through $\natural$. What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right, which is not the $\natural$-image of anything. The two consistent constructions correspond to the two ways the algebra can act on the field, and the choice between them is a choice of **matter representation**: on which module, and from which side, the Dirac field sits. The gauge principle article records this as an open question, and this article does not resolve it; it states the left-action form, which is the one the gauge principle produces, and records the right-action mirror as the alternative.
 
 ## Gauge Covariance of the Coupled Equation
 

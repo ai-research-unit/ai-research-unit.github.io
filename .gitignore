@@ -17,7 +17,7 @@ __pycache__/
 # Internal review work - confidential, never published, never committed
 .openhands/
 _reserve/
-articles_reserve/
+articles_internal/
 REVIEW-PLAN*
 BRAINSTORMING.md
 *.context

@@ -36,17 +36,98 @@ The tilde sits in the subscript because it belongs to the element, not to the op
 
 The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $e_t$ term carries $\partial/\partial Q_t$, while $\nabla$ is pure. The case follows the layer: a pure operator of the quaternion layer stays lower case, $\vec p$, and one of the biquaternion layer takes the upper case, $\vec P$; where the letter already names another object of the layer, a subscript or the explicit form $-i\hbar\vec\nabla$ fixes the operator.
 
-**The mark of a side, and the mark of a part.** The two arrows are two tokens, and they are not the same sign. The short arrow marks the **pure part** of a glyph, $\vec e_x$, $\vec p$; the long arrow marks the **side** of an action, $\overrightarrow{b}\psi$ and $\psi\overleftarrow{b}$. A glyph may carry both, and then the short arrow is inside, $\overrightarrow{\vec e_k}\psi$: the inner says the actor is pure, the outer says from which side it acts. The long arrow is placed on the actor, never on the operand, and its tip points at what the operator acts on.
+**The mark of a part, and the side carried by position.** The only arrow on a glyph is the short one, and it marks the **pure part**: $\vec e_x$, $\vec p$. The side of an action is not marked at all. It is carried by position, $b\psi$ against $\psi b$, the actor written on the side from which it acts, and position is unambiguous because the operand is itself a glyph.
 
-It is allowed on any object that acts, an element included, because there the element's own glyph does not carry its side: $L_\psi(b)=\psi b=R_b(\psi)$ prints one element and two operators, and only the arrow says which of the two is meant. It is kept off names: an algebra's left action is not an action on a field and takes no arrow. On a derivative the arrow is compulsory rather than optional, because a derivative has no element reading and nothing else fixes which factor acts.
+**What names a side where position is not enough.** Three signs, each of which the corpus needs for a purpose of its own.
 
-**A two-sided operator takes two arrows, pointing inward**, $\overrightarrow{a}\psi\overleftarrow{b}$, against the bare product $a\psi b$, in which a coefficient and an actor print alike. This is the reason the long arrow exists. The alternatives are exact and none is shorter than the pair at the point where it is needed: $T_{a,b}$ and $L_aR_b$ are matrices and need a frame; the dot scopes a derivative, not a side, and the glyph is barred; sub- or prescripts are unreadable at display size; row vectors transpose every matrix in the corpus; components are barred with the index calculus. What the mark cannot do is bounded and stated: it carries nothing but the side, and it cannot say which of three factors a derivative belongs to. Within that bound, for a two-sided biquaternion operator the pair of arrows is the writing the conventions adopt.
+- $\natural$ marks the conjugation of an element, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$, and it is what carries a change of side, because it is an anti-automorphism: $(ab)^{\natural}=b^{\natural}a^{\natural}$, hence $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, and a right action on $\psi$ is a left action on $\psi^{\natural}$. The theorem is below, §*The Two Sides and the Renaming Theorem*.
+- $L_a$ and $R_a$ name a side outright when a statement is about operators rather than about fields, and the cell $T_{a,b}=L_aR_b$ prints both sides at once.
+- The superscript $R$ marks the one case that position alone leaves genuinely ambiguous: a derivative that differentiates the factor written to its left, $F\nabla^{R}=\sum_\mu(\partial F/\partial q_\mu)e_\mu$. It is used only inside a product of two distinct factors, which is where the theorem below does not reach.
 
 **The dagger.** The dagger is the general adjoint of an operator, never of an element: $(L_a)^{\dagger}=L_{a^{*}}$. Several adjoints arise at once — one for each form, and one for each of the sandwiches — and the dagger is the mark that covers them all, of which the others are the instances. It is not a fifth conjugation: it belongs to the operators and not to the algebra. Where a dagger is written on an element the writing is an abuse: the mark that was meant is the star for the Hermitian conjugation, or the natural sign for the quaternion conjugation, according to the conjugation in view. The dagger is added to the glyph and does not replace the element's mark: the arrow states purity, which the adjoint preserves; the tilde states a glyph read with its scalar part, which the adjoint also preserves. Where the adjoint in view is the formal algebraic one of the definite form, the two marks are written together, dagger first: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ and $\tilde\nabla^{\dagger}=\tilde\nabla^{*}=\tilde\nabla^{\natural}$. The identification is formal: the $L^2$ adjoint of a derivative carries the sign of the integration by parts, and it is not the dagger of this convention.
 
 **An operator written as an array carries no tilde.** The element rule above governs an operator that acts on the algebra by multiplication, because such an operator is the element. An operator written as a linear map on a coordinate column, as a matrix in the $2\times2$ image, or as a regular matrix $\mathsf{M}_4^{L}$, is an array: it carries no tilde, its elements keep theirs inside the argument, $\mathsf{M}_2(\tilde Q)$, and its adjoint is the dagger and not the star. A Kraus operator, where the physics corpus uses one, is written in the element reading, $\tilde K_l\in\mathbb{B}$, because it multiplies the state on both sides; its matrix image $\mathsf{M}_2(\tilde K_l)$ carries no tilde.
 
 **The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in *Index, Notation and Corpus Conventions*, §*The Superscripts*.
+
+## The Two Sides and the Renaming Theorem
+
+**The statement.** Write $L_D\psi := D\psi$ and $R_D\psi := \psi D$ for the two one-sided actions on a field $\psi\in\mathbb{B}$. Then
+
+$$
+R_D=\natural\circ L_{D^{\natural}}\circ\natural,
+\qquad
+L_D=\natural\circ R_{D^{\natural}}\circ\natural,
+$$
+
+and on a field
+
+$$
+\boxed{\;(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}\;}
+$$
+
+**A right action on $\psi$ is a left action on $\psi^{\natural}$.** The side is not a property of the equation. It is a property of the field the equation is written on.
+
+**The three properties.** Everything rests on them, and only the third is non-trivial.
+
+| property | statement | residual |
+|---|---|---|
+| involutive | $\natural\circ\natural=\mathrm{id}$ | $0$ |
+| $\mathbb{C}$-linear | $\natural(i\psi)=i\,\natural(\psi)$ | $0$ |
+| anti-automorphism | $(ab)^{\natural}=b^{\natural}a^{\natural}$ | $2.6\times10^{-15}$ over $400$ random complex pairs |
+
+The first makes $\natural$ invertible with $\natural^{-1}=\natural$. The third makes it **reverse the order of a product**. The second lets the mass, which is central, pass through untouched. An involution that preserved the order would identify the two sides; one that reverses the order exchanges them. $\natural$ reverses, so it exchanges.
+
+**The proof is three symbols.** Applied to the two factors $\psi$ and $D$,
+
+$$
+(\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}.
+$$
+
+Read forwards, conjugating a right action gives a left action of the conjugated operator. Read backwards, using $\natural^{2}=\mathrm{id}$, a right action is the conjugate of a left action — the two lines of the statement above.
+
+**In matrix form it is one congruence.** With $N=\operatorname{diag}(1,-1,-1,-1)$ the matrix of $\natural$ on a coordinate column,
+
+$$
+N\,R_D\,N=L_{D^{\natural}},
+\qquad
+N\,L_D\,N=R_{D^{\natural}},
+\qquad\text{both at residual }0 .
+$$
+
+$N$ is the change of basis that exchanges the two families, and $N^{\mathsf T}N=I$, $\det N=-1$.
+
+**On an equation.** Take $\psi D=m\chi$ with $m$ central, so $m^{\natural}=m$, and conjugate both sides:
+
+$$
+D^{\natural}\,\psi^{\natural}=m\,\chi^{\natural}.
+$$
+
+The map $\Phi:(\psi,\chi)\mapsto(\psi^{\natural},\chi^{\natural})$ is $\mathbb{C}$-linear, involutive and invertible, so it is a **bijection of solution sets** and not an inclusion:
+
+$$
+\{\psi:\ \psi D=m\chi\}\ \xrightarrow{\ \Phi\ }\ \{u:\ D^{\natural}u=m\,\chi^{\natural}\},
+\qquad \Phi^{-1}=\Phi .
+$$
+
+Verified: a pair solved on the right at residual $2.0\times10^{-15}$ maps to a pair solved on the left at residual $1.1\times10^{-15}$, on all four basis solutions. Same solutions, relabelled.
+
+**What the theorem does not say.** It does not say the two operators are equal. On $D=-5e_t+3i\vec e_x$,
+
+$$
+\bigl\lVert R_D-L_{D^{\natural}}\bigr\rVert_{\mathrm F}=8.4853\neq0 ,
+$$
+
+so the two arrays differ and neither may be substituted for the other at sight. What is equal is the pair of solution sets after renaming, not the operators.
+
+**Where the theorem does not reach.** Three cases, and each is stated where it is used.
+
+1. **More than one field.** The anti-automorphism reverses the whole order, $(\psi D\chi)^{\natural}=\chi^{\natural}D^{\natural}\psi^{\natural}$, residual $1.3\times10^{-14}$ over $200$ random triples. The two fields exchange places, so renaming alone does not suffice, and where the two fields are not the same object the reordering changes the statement. The bilinear identities of the integration articles stand in this case, and it is why they carry the superscript $R$ on the derivative.
+2. **A carrier without $\natural$.** On a column $\psi\in\mathbb{C}^{4}$ there is no natural conjugation, only the antilinear Dirac adjoint; on a space of functions of two variables, as in a star product, $\natural$ is not the involution in play. The theorem is a theorem about fields valued in $\mathbb{B}$.
+3. **The side itself on display.** For the two-sided action $a\psi b$, the mirror coupling, or the exchange of the two slots of a cell, conjugating the field destroys what is being displayed. There both factors stay in place and the side is named by position, or by $L_a$ and $R_a$.
+
+**The consequence for the corpus.** Every equation that acts on a single biquaternion field is written on the left. The ones that would read as acting on the right are the same equations on the conjugate field, and the chiral pair is the instance: with $\Phi=\tilde\Psi^{\natural}$, the pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$ and $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ is complete as written, both equations acting from the left, and $\natural$ is what separates them. Across the $404$ files and $10\,196$ display equations of the physics corpus no glyph names a side: the side is position, the conjugation is $\natural$, and the exchange is $N$.
+
 
 ## Conventions for Derivation
 
@@ -285,7 +366,7 @@ so the Krein norm of the gradient **coincides with the plain bilinear norm**. It
 
 ## Summary
 
-An operator acting by multiplication **is** the element it multiplies by, so its glyph is the glyph of that element and the marks are read on it as on the element. The named operators take an upright capital and carry the element in the subscript: left multiplication $L_{\tilde Q}$, right multiplication $R_{\tilde Q}$, the two-sided $T_{\tilde Q_1,\tilde Q_2}$, the sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$, the inner derivation $\operatorname{ad}_{\tilde Q}$ and the automorphism $\operatorname{Ad}_{\tilde Q}$. The sandwich with no qualifier is the bilinear one, and it is quadratic in $\tilde Q$, not bilinear.
+An operator acting by multiplication **is** the element it multiplies by, so its glyph is the glyph of that element and the marks are read on it as on the element. The named operators take an upright capital and carry the element in the subscript: left multiplication $L_{\tilde Q}$, right multiplication $R_{\tilde Q}$, the two-sided $T_{\tilde Q_1,\tilde Q_2}$, the sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$, the inner derivation $\operatorname{ad}_{\tilde Q}$ and the automorphism $\operatorname{Ad}_{\tilde Q}$. The sandwich with no qualifier is the bilinear one, and it is quadratic in $\tilde Q$, not bilinear. The side of an action is position, $D\psi$ against $\psi D$; the two are exchanged by the natural conjugation, $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach.
 
 The **dagger** is the general adjoint of an operator, never of an element, and it is not a fifth conjugation: several adjoints arise at once, one for each form and one for each sandwich, and the dagger is the mark that covers them all. An operator written as an array — a linear map on a coordinate column, a matrix in the $2\times2$ image or a regular matrix — carries no tilde. The **Fock exception** is the one mark that says a glyph is an operator and not an element of the algebra, and its superscript $\mathrm{fop}$ is fixed in *Index, Notation and Corpus Conventions*.
 
@@ -309,6 +390,9 @@ The four products are read on the gradient: the plain bilinear product holds the
 | $\nabla=\sum_k\,\vec e_k\,\partial/\partial Q_k$ | The pure spatial gradient |
 | $\Box=\langle\tilde\nabla\rangle_{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
 | $\mathrm{fop}$ | The Fock-operator mark, the one exception to the element rule |
+| $^{\natural}$ | The natural conjugation, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$; an anti-automorphism, $(ab)^{\natural}=b^{\natural}a^{\natural}$ |
+| $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$ | The exchange of the two sides: a right action on $\psi$ is a left action on $\psi^{\natural}$ |
+| $\nabla^{R}$ | The right gradient, $F\nabla^{R}=\sum_\mu(\partial F/\partial q_\mu)e_\mu$; used only where a derivative meets two distinct factors |
 
 ## Further Reading
 

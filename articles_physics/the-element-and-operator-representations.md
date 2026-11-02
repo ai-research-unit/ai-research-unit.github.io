@@ -309,7 +309,7 @@ $$
 
 In block form, the two diagonal corners are the **populations** and the two off-diagonal corners are the **coherences**. Hermitian conjugation fixes the populations and exchanges the coherences. The Peirce decomposition is the operator-level form of the state/observable split: the idempotent is the two-outcome observable, with eigenvalues $0$ and $1$, and the four corners are the four ways an element can sit relative to it.
 
-The left multiplication by $\tilde\Pi$ keeps the first row and kills the second; the right multiplication by $\tilde\Pi$ keeps the first column and kills the second. The minimal left ideals are the column supports, and left multiplication preserves them. The right multiplication by the nilpotent moves between them. That is the structural reason the mass coupling is a right action: the left action preserves each column ideal, and the right action is the one that can carry an element from one to the other.
+The left multiplication by $\tilde\Pi$ keeps the first row and kills the second; the right multiplication by $\tilde\Pi$ keeps the first column and kills the second. The minimal left ideals are the column supports, and left multiplication preserves them. Right multiplication moves between them: the unit $i\vec e_x$ swaps them both ways, the nilpotent $\vec\Upsilon_x$ only one way. That is the structural reason the mass coupling is a right action: the left action preserves each column ideal, and the right action is the one that can carry an element from one to the other.
 
 ## Physical Readings
 
@@ -317,7 +317,13 @@ The left multiplication by $\tilde\Pi$ keeps the first row and kills the second;
 
 **The double cover.** The norm-one group is $\mathrm{SL}(2,\mathbb{C})=\mathrm{Spin}(1,3)$, and it covers the proper orthochronous Lorentz group two-to-one with kernel $\{\pm \mathrm{I}_2\}$. A rotation through $2\pi$ gives $-\mathrm{I}_2$ and a rotation through $4\pi$ gives $\mathrm{I}_2$. The sign is the sign of the spinor, and it is the discrete difference between the spinor picture and the four-vector picture.
 
-**The mass coupling.** Left multiplication preserves each column chirality, so a mass term that couples the two column chiralities cannot be a left multiplication. It is a right multiplication by a nilpotent element, which maps one minimal left ideal onto the other and annihilates the second. In the $4\times4$ picture this is the off-diagonal block that the left regular matrix does not have; in the $2\times2$ picture it is the right action that the column picture does not show.
+**The mass coupling.** Left multiplication preserves each column chirality, so a mass term that couples the two column chiralities cannot be a left multiplication. It is a right multiplication, and the element is a **unit**, the column swap
+
+$$
+J=i\vec e_x,\qquad J^2=e_t,\qquad \mathsf M_2(J)=\sigma_1,\qquad R_J(\tilde Q)=\tilde QJ,
+$$
+
+so that $R_J$ exchanges the two columns and $R_J^2=\mathrm I$. The element has to be a unit because the mass is a bijection between the columns, one coefficient per chirality in each direction. A nilpotent cannot serve: $\mathsf M_2(\vec\Upsilon_x)=E_{12}$, so $R_{\vec\Upsilon_x}$ has rank two, carries the first column into the second and annihilates the second, and cannot carry a coefficient back. That map is the one-way copy flip, not the mass. In the $4\times4$ picture the mass is the off-diagonal block that the left regular matrix does not have; in the $2\times2$ picture it is the right action that the column picture does not show.
 
 **The central phase.** A central phase is a scalar matrix. It multiplies the element matrix, it multiplies the determinant by $\lambda^2$, and it disappears from the sandwich. The element picture sees the phase; the operator picture does not. This is why the polar word carries the phase and the sandwich does not.
 
@@ -333,7 +339,7 @@ The left multiplication by $\tilde\Pi$ keeps the first row and kills the second;
 
 **The monoid is the process–state split.** The acting maps compose; the reversible ones are the units off the cone, and they form a group. The states are the idempotents, which are fixed points and not maps of the same kind. The cone is the boundary between the reversible and the irreversible. The monoid is not a $C^{*}$-algebra, and a kernel is not a measurement.
 
-**The Peirce corners are the state/observable split.** The diagonal corners are the populations and the off-diagonal corners the coherences. Left multiplication preserves the column ideals; right multiplication by the nilpotent moves between them. That is the operator-level reason the mass coupling is a right action.
+**The Peirce corners are the state/observable split.** The diagonal corners are the populations and the off-diagonal corners the coherences. Left multiplication preserves the column ideals; right multiplication moves between them, and the mass is the right multiplication by the column-swap unit $i\vec e_x$, not by a nilpotent. That is the operator-level reason the mass coupling is a right action.
 
 ## The Correspondence Table
 
@@ -370,7 +376,7 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 - The four coefficients carry one material and one informational coordinate each; the scalar coefficient carries the two times.
 - The $2\times2$ matrix has trace $2Q_t$ and determinant $N$; it is the spinor picture and the smallest carrier of the state.
 - The $4\times4$ left regular matrix has determinant $N^2$ and trace $4Q_t$; it is the spinor picture taken twice, with the two blocks the two column chiralities.
-- Left multiplication preserves the column chiralities; right multiplication by a nilpotent moves between them, which is why the mass term is a right action.
+- Left multiplication preserves the column chiralities; right multiplication moves between them, and the mass is the right multiplication by the column-swap unit $i\vec e_x$, not by a nilpotent.
 - The sandwich is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but quadratic and phase-blind; as an assignment it has kernel the central phase circle on the unit group.
 - The $2\times2$ congruence preserves rank and scales the determinant by $|N|^2$ off the cone; on the cone it collapses to a rank-one line.
 - The $4\times4$ operator has eigenvalues $\lambda_i\bar\lambda_j$, determinant $|N|^4$, trace $4|Q_t|^2$ and rank $(\operatorname{rank}\mathsf{M}_2)^2$.

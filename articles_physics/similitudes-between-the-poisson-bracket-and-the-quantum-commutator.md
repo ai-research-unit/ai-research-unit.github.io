@@ -221,9 +221,9 @@ The positive content left after the homomorphism is abandoned is that the quantu
 $$
 f\star g = \exp\!\left(\frac{i\hbar}{2}\Lambda\right) fg,
 \qquad
-\Lambda = \sum_{i}\left(\overleftarrow{\partial/\partial q_i}\,\overrightarrow{\partial/\partial p_i} - \overleftarrow{\partial/\partial p_i}\,\overrightarrow{\partial/\partial q_i}\right),
+\Lambda[f,g] = \sum_{i}\left(\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial p_i} - \frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q_i}\right),
 $$
-where the arrows indicate on which factor each derivative acts. The star product is associative and noncommutative, and to first order in $\hbar$ it is
+where $\Lambda$ is written as a bidifferential operator: it takes two functions and differentiates the first in one slot and the second in the other, so no mark of a side is needed — the arguments say which factor each derivative acts on. Equivalently, on a product with $\Lambda$ written between the two factors, $\Lambda$ carries the derivative of each slot with it, and the two slots are named by the arguments rather than by an arrow. The star product is associative and noncommutative, and to first order in $\hbar$ it is
 $$
 f\star g = fg + \frac{i\hbar}{2}\{f,g\} + O(\hbar^2).
 $$
