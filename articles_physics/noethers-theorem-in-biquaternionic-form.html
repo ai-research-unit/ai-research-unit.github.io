@@ -97,7 +97,7 @@ S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}},
 $$</p>
 <p>Because $d\tilde{R}\,d\tilde{R}^{\natural} = -c^2d{t'}^2 +dx^2+dy^2+dz^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt'/\gamma$, and the Lagrangian in the coordinate time $t'$ is</p>
 <p>$$
-L(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma},
+\mathrm{Lag}(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma},
 \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$</p>
 <p><strong>The field.</strong> The relativistic scalar field of the framework is the complex biquaternion field $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$, with $\phi$ a complex scalar function. Its action is $S[\tilde{\Phi}] = \int \mathcal{L}\,d^4x$ with the real Lagrangian density</p>
@@ -171,16 +171,16 @@ $$</p>
 $$</p>
 <p>is a symmetry of the action. The Noether charges are the momentum conjugate to $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and the energy conjugate to $t'$; computing the first from the Lagrangian,</p>
 <p>$$
-\vec p = \frac{\partial L}{\partial\vec v} = \gamma m\vec v,
+\vec p = \frac{\partial \mathrm{Lag}}{\partial\vec v} = \gamma m\vec v,
 \qquad
-E = \vec p\cdot\vec v - L = \gamma mc^2,
+E = \vec p\cdot\vec v - \mathrm{Lag} = \gamma mc^2,
 $$</p>
 <p>and combining them into the four-momentum,</p>
 <p>$$
 \boxed{\ \tilde{P} = m\tilde{V} = i\frac{E}{c}\,e_t + \vec p\ }
 \qquad (\tilde{V} = \gamma(ic\,e_t + \vec v)).
 $$</p>
-<p>The mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $d\tilde{P}/d\tau = 0$, because $L$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\vec p = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde U = \cosh(\psi/2) + i\sinh(\psi/2)\vec e_x$ with $\psi = 1.2$: the biquaternion norm is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.</p>
+<p>The mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $d\tilde{P}/d\tau = 0$, because $\mathrm{Lag}$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\vec p = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde U = \cosh(\psi/2) + i\sinh(\psi/2)\vec e_x$ with $\psi = 1.2$: the biquaternion norm is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.</p>
 <p><strong>The conservation law for a system, stated correctly.</strong> For an isolated system of bodies $a$ the conserved object is the <strong>total</strong> four-momentum, and the correct statement is</p>
 <p>$$
 \boxed{\;\tilde{P}_{\mathrm{tot}} = \sum_a \tilde{P}_a,
@@ -339,7 +339,7 @@ $$</p>
 <td>Free-particle action</td>
 </tr>
 <tr>
-<td>$L = -mc^2\sqrt{1-\vec v^2/c^2}$</td>
+<td>$\mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2}$</td>
 <td>Free-particle Lagrangian</td>
 </tr>
 <tr>

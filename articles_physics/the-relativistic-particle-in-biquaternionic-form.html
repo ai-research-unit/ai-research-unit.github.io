@@ -181,13 +181,13 @@ $$</p>
 <h2 id="composition-of-velocities">Composition of Velocities</h2>
 <p>A Lorentz transformation acts on the material sector by <strong>rotor conjugation</strong>,</p>
 <p>$$
-\tilde{R}\ \longmapsto\ \tilde U_{\mathrm L}\,\tilde{R}\,\tilde U_{\mathrm L}^{*},
+\tilde{R}\ \longmapsto\ \tilde U_{\mathrm{Lor}}\,\tilde{R}\,\tilde U_{\mathrm{Lor}}^{*},
 \qquad
-\tilde U_{\mathrm L}\in\mathbb{B},
+\tilde U_{\mathrm{Lor}}\in\mathbb{B},
 \qquad
-\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t,
+\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural} = e_t,
 $$</p>
-<p>with $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a <strong>pure boost</strong> the rotor is Hermitian and lives in $\mathbb{M}_+$,</p>
+<p>with $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a <strong>pure boost</strong> the rotor is Hermitian and lives in $\mathbb{M}_+$,</p>
 <p>$$
 \tilde U_{\mathrm b}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
 \qquad
@@ -217,17 +217,17 @@ $$</p>
 $$</p>
 <p>The sign is fixed by the requirement that a free particle move forward in time with positive energy, and the square root is real on a causal worldline by the definition of the proper time. In terms of the coordinate velocity the Lagrangian is</p>
 <p>$$
-L(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma} .
+\mathrm{Lag}(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma} .
 $$</p>
 <p>The canonical momentum conjugate to $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the vector part of the four-momentum,</p>
 <p>$$
-\frac{\partial L}{\partial\vec v}
+\frac{\partial \mathrm{Lag}}{\partial\vec v}
 = -mc^2\cdot\frac{-\vec v/c^2}{\sqrt{1-\vec v^2/c^2}}
 = \gamma m\vec v = \vec p,
 $$</p>
-<p>so the free Lagrangian's canonical momentum is the physical momentum. Its Legendre transform is the free energy $E = \vec p\cdot\vec v - L = \gamma mc^2$, and the equation of motion is the vanishing of the Euler–Lagrange derivative,</p>
+<p>so the free Lagrangian's canonical momentum is the physical momentum. Its Legendre transform is the free energy $E = \vec p\cdot\vec v - \mathrm{Lag} = \gamma mc^2$, and the equation of motion is the vanishing of the Euler–Lagrange derivative,</p>
 <p>$$
-\frac{d}{dt'}\frac{\partial L}{\partial\vec v} - \left(\frac{\partial L}{\partial x}\vec e_x+\frac{\partial L}{\partial y}\vec e_y+\frac{\partial L}{\partial z}\vec e_z\right) = \frac{d\vec p}{dt'} = 0 ,
+\frac{d}{dt'}\frac{\partial \mathrm{Lag}}{\partial\vec v} - \left(\frac{\partial \mathrm{Lag}}{\partial x}\vec e_x+\frac{\partial \mathrm{Lag}}{\partial y}\vec e_y+\frac{\partial \mathrm{Lag}}{\partial z}\vec e_z\right) = \frac{d\vec p}{dt'} = 0 ,
 $$</p>
 <p>so the free four-momentum $\tilde{P} = m\tilde{V}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,</p>
 <p>$$
@@ -265,7 +265,7 @@ $$</p>
 <p>The leading corrections cancel because the mass shell is an exact relation: the kinetic energy $\tfrac12 m\vec v^2$ in $E$ and the momentum $\vec p = m\vec v$ are the two halves of the same invariant. The biquaternion norm does not vanish in the non-relativistic limit — the particle stays well inside the cone, at an invariant distance $m^2c^2$ from the apex — and the non-relativistic theory is in this sense the interior approximation of the relativistic one. It is the same comparison the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em> draws from the momentum-space side.</p>
 <h2 id="what-the-algebra-supplies-and-what-it-transcribes">What the Algebra Supplies and What It Transcribes</h2>
 <p><strong>Supplied by the algebra.</strong> The identification of the interval with the biquaternion norm, and therefore the identity of the causal trichotomy with the sign of $\langle\cdot\rangle_{\natural}$; the placement of the worldline, the four-velocity and the four-momentum in the material sector $\mathbb{M}_-$; the normalization $\langle\tilde{V}\rangle_{\natural} = -c^2$ as an algebraic unit condition rather than a separate postulate; and the packaging of the velocity and the frame transformation in a single rotor. The mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is a level set of the algebra's own form.</p>
-<p><strong>Transcribed from standard physics.</strong> The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $L = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.</p>
+<p><strong>Transcribed from standard physics.</strong> The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $\mathrm{Lag} = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.</p>
 <p><strong>Interpretation.</strong> The interpretation of $\mathbb{M}_-$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles <em>Introduction to the Biquaternion Universe</em> and <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
@@ -321,7 +321,7 @@ $$</p>
 S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
 = -mc^2\int\frac{dt'}{\gamma},
 \qquad
-L(\vec v) = -\frac{mc^2}{\gamma},
+\mathrm{Lag}(\vec v) = -\frac{mc^2}{\gamma},
 $$</p>
 <p>whose canonical momentum is $\vec p = \gamma m\vec v$ and whose equation of motion is $\tilde{P} = \mathrm{const}$. The non-relativistic limit gives $\tilde{V} = ic\,e_t + \vec v$, $E = mc^2 + \vec p^2/2m$ and $\langle\tilde{P}\rangle_{\natural} = -m^2c^2 + O(v^4/c^2)$.</p>
 <p>The interval is the biquaternion norm, the mass shell is its level set, the causal trichotomy is its sign, and the frame transformation is a rotor conjugation; the rest is standard relativistic mechanics transcribed into the algebra.</p>
@@ -395,11 +395,11 @@ $$</p>
 <td>Boost rotor, in $\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>$\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$</td>
+<td>$\tilde{R}\mapsto\tilde U_{\mathrm{Lor}}\tilde{R}\tilde U_{\mathrm{Lor}}^{*}$</td>
 <td>Rotor conjugation on $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$, $L = -mc^2/\gamma$</td>
+<td>$S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$, $\mathrm{Lag} = -mc^2/\gamma$</td>
 <td>Free action and Lagrangian</td>
 </tr>
 <tr>

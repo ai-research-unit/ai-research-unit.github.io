@@ -134,8 +134,8 @@ $$
 with $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the four-position biquaternion. With $d\tilde{R} = (ic\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt')\,dt'$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
 $$
 \boxed{\;
-S = -mc^2\int\frac{dt'}{\gamma} = \int L\,dt' , \qquad
-L = -mc^2\sqrt{1 - \frac{\vec v^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}}\;},
+S = -mc^2\int\frac{dt'}{\gamma} = \int \mathrm{Lag}\,dt' , \qquad
+\mathrm{Lag} = -mc^2\sqrt{1 - \frac{\vec v^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}}\;},
 $$
 as the companion <em>Relativistic Mechanics in Biquaternionic Form</em> records. The reduction from the invariant to the standard Lagrangian was checked at three velocities, the two expressions agreeing to six decimal places in each case. The integrand is built from the biquaternion norm of the displacement, which is what makes the action a Lorentz scalar: a rotor acts on $d\tilde{R}$ and its conjugate in the same way, and $\langle d\tilde{R}\rangle_{\natural}$ is invariant.</p>
 <h3 id="the-worldline-and-the-four-velocity">The worldline and the four-velocity</h3>
@@ -174,7 +174,7 @@ m\,\frac{du_\mu}{d\tau} = ϙ\sum_\nu F_{\mu\nu}v_\nu ,
 $$
 with $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ the field tensor. The component form is standard and is transcribed rather than re-derived. The <strong>index-free biquaternion product</strong> expression of the same force is a different matter: the companion <em>Relativistic Mechanics in Biquaternionic Form</em> records that the four-force is a material-sector element built from the field strength and the four-velocity, but that its explicit form as a product in $\mathbb{B}$ involves the representation theory of the algebra in the even subalgebra and is left open. This article respects that boundary: the action route gives the component equation, and the biquaternion product form is not asserted here.</p>
 <h3 id="the-canonical-four-momentum-and-the-mass-shell">The canonical four-momentum and the mass shell</h3>
-<p>The momentum conjugate to $\tilde{R}$ is $\tilde{P} = \partial L/\partial\left(d\tilde{R}/d\tau\right) = m\tilde{V}$, so that
+<p>The momentum conjugate to $\tilde{R}$ is $\tilde{P} = \partial \mathrm{Lag}/\partial\left(d\tilde{R}/d\tau\right) = m\tilde{V}$, so that
 $$
 \tilde{P} = m\tilde{V} = m\gamma\bigl(ic\,e_t + \vec v\bigr) = i\,\frac{E}{c}\,e_t + \vec p ,
 \qquad
@@ -311,7 +311,7 @@ and the conserved angular momenta follow by the Noether article. The transport l
 <p>The particle action is
 $$
 S = -mc\int\sqrt{-\,\langle d\tilde{R}\rangle_{\natural}} = -mc^2\int\frac{dt'}{\gamma} ,
-\qquad L = -mc^2\sqrt{1-\vec v^2/c^2} ,
+\qquad \mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2} ,
 $$
 whose four-velocity obeys $\langle\tilde{V}\rangle_{\natural} = \langle\tilde{V},\tilde{V}\rangle_{\natural} = -c^2$ and whose canonical momentum obeys the mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$; the reduction to the standard Lagrangian was checked at three velocities, the worldline stationarity by a discrete functional derivative, and the mass shell to machine precision. Coupling to an external potential gives the Lorentz force in component form, $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$; the index-free biquaternion product form of that force remains the open question flagged by the companion article on relativistic mechanics.</p>
 <p>The field action is
@@ -347,7 +347,7 @@ whose Euler–Lagrange equation is $(\Box - \mu^2)\tilde{\Phi} = 0$ with $\Box =
 <td>Free relativistic particle action</td>
 </tr>
 <tr>
-<td>$L = -mc^2\sqrt{1-\vec v^2/c^2}$</td>
+<td>$\mathrm{Lag} = -mc^2\sqrt{1-\vec v^2/c^2}$</td>
 <td>Standard relativistic Lagrangian</td>
 </tr>
 <tr>

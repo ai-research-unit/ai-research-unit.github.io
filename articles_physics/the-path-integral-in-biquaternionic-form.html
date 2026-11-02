@@ -74,7 +74,7 @@
 <p>$$
 K(x_f,t'_f;x_i,t'_i)=\int\mathcal{D}x(t')\;\exp(iS[x]/\hbar),
 \qquad
-S[x]=\int_{t'_i}^{t'_f}L(x,dx/dt')\,dt',
+S[x]=\int_{t'_i}^{t'_f}\mathrm{Lag}(x,dx/dt')\,dt',
 $$</p>
 <p>in which every path from $(x_i,t'_i)$ to $(x_f,t'_f)$ contributes the phase $\exp(iS[x]/\hbar)$. The sum is formal: it is defined as a limit of finite-dimensional oscillatory integrals, and its convergence is governed by the same $i\epsilon$ prescription that the companion article <em>The Feynman Propagator in Biquaternionic Form</em> treats in momentum space.</p>
 <p>This article asks of the phase the question that the read-list articles have already asked twice. The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains a unique <strong>central</strong> root of $-1$ up to sign — the scalar imaginary $i$ — and it also contains <strong>real non-central</strong> roots: the unit pure real quaternions $\vec u$ that name spin directions, of which the quaternion units $\vec e_x,\vec e_y,\vec e_z$ are the coordinate cases. The companion article <em>The Schrödinger Equation in Biquaternionic Form</em> settled which of these is the $i$ of the state-vector equation, and showed that a non-central root breaks norm preservation. The companion article <em>The Feynman Propagator in Biquaternionic Form</em> settled where the $i\epsilon$ lives — along the $ict'$ axis of the material sector $\mathbb{M}_-$ — and argued that the algebra names that axis without choosing its orientation. The companion article <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> settled that $t'\mapsto-i\tau$ is, in this framework, the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary time coefficient as a real one. The path integral's phase is the object on which all three of these results bear at once.</p>
@@ -134,12 +134,12 @@ $$</p>
 <p>$$
 \exp(iS/\hbar)\,\big(\exp(iS/\hbar)\big)^\dagger=e_t.
 $$</p>
-<p>It is <strong>not</strong>, however, a <strong>unit-norm</strong> element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,</p>
+<p>It is <strong>not</strong>, however, a <strong>unit-norm</strong> element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,</p>
 <p>$$
 \exp(iS/\hbar)\,\overline{\big(\exp(iS/\hbar)\big)}=\exp(2iS/\hbar)\neq e_t
 \qquad\text{unless } S/\hbar\in\pi\mathbb{Z}.
 $$</p>
-<p>So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.</p>
+<p>So the phase is a $*$-unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.</p>
 <h3 id="consequences-of-centrality">Consequences of centrality</h3>
 <p>Because each phase factor is central, it commutes with every element of $\mathbb{B}$. Three consequences are immediate.</p>
 <ol>
@@ -158,14 +158,14 @@ so the global phase of a single path is unobservable, and the Born probabilities
 </li>
 </ol>
 <h3 id="the-sector-chain">The sector chain</h3>
-<p>The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the <strong>material sector</strong> $\mathbb{M}_-$; the phase itself is an element of the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}=\psi\psi^\dagger$, is an element of the <strong>informational sector</strong> $\mathbb{M}_+$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int L\,dt'$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.</p>
+<p>The three facts above arrange themselves into a chain that is worth stating separately, and labelling for what it is. The exponent of the phase is an element of the <strong>material sector</strong> $\mathbb{M}_-$; the phase itself is an element of the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}$; the amplitude it produces is central; and the state built from the amplitude, $\tilde{Ϛ}=\psi\psi^\dagger$, is an element of the <strong>informational sector</strong> $\mathbb{M}_+$. The path integral's phase is thus the point at which a quantity defined along a material-sector trajectory (the action, $\int \mathrm{Lag}\,dt'$) is converted, through the central complex structure, into an amplitude that yields an informational-sector state.</p>
 <p>That chain is a structural interpretation of the algebra, not a derivation of anything. The algebra does not say that the action <em>must</em> be a real scalar; it says that if the action is a real scalar, its phase is central and its exponent lies in $\mathbb{M}_-$.</p>
 <h2 id="why-the-central-imaginary-and-not-a-quaternion-unit">Why the Central Imaginary, and Not a Quaternion Unit</h2>
 <p>The phase could be written with any root of $-1$ in place of $i$. The alternatives among the real roots are the non-central ones: the unit pure real quaternions $\vec u$, of which the quaternion units $\vec e_\mu$ are the coordinate cases. Writing the phase with such a root $J$ gives, per path, the element $\exp(JS/\hbar)$, a unit real quaternion when $J=\vec u$; and the three reasons the Schrödinger article gave for rejecting $J$ in the state-vector equation apply here as well.</p>
 <p><strong>The generator need not be anti-Hermitian.</strong> Taking $J\tilde{H}$ in place of $i\tilde{H}$ changes the generator of the flow from $-i\tilde{H}/\hbar$ (anti-Hermitian, hence norm-preserving) to $-J\tilde{H}/\hbar$, which is anti-Hermitian only if $J$ commutes with $\tilde{H}$. With $J=\vec e_z$ and $\tilde{H}=i\vec e_x$ one has, using $\vec e_z \vec e_x=\vec e_y$,
 $$J\tilde{H}=\vec e_z(i\vec e_x)=i\,\vec e_y,$$
 which is Hermitian, not anti-Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$. The flow $\exp(-t'J\tilde{H}/\hbar)$ is then not $*$-unitary; at $t'=\pi\hbar/2$ its exponent is $-\tfrac{i\pi}{2}\vec e_y$ and
-$$\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
+$$\tilde U_{\mathrm{Lor}}^{*}\tilde U_{\mathrm{Lor}}=\exp(-i\pi \vec e_y)=\cosh(\pi)\,e_t-i\sinh(\pi)\,\vec e_y\neq e_t,$$
 so the norm is not preserved. A path integral built on this phase would not reproduce a $*$-unitary evolution.</p>
 <p><strong>The phase is not a global phase.</strong> Even where a fixed non-central root gives a $*$-unitary one-parameter group — as $J=\vec e_z$ does — the phase it produces is not shared by the two spin components. Under the isomorphism $\vec e_\mu\mapsto-i\sigma_\mu$ of the companion articles, the phase $\exp(\vec e_z\theta)$ maps to
 $$\exp(\vec e_z\theta)\;\longmapsto\;\cos\theta\,I_2-i\sin\theta\,\sigma_3=\operatorname{diag}\!\big(\exp(-i\theta),\,\exp(+i\theta)\big),$$
@@ -200,9 +200,9 @@ $$</p>
 <p>$$
 \tfrac12 m\left(dx/dt'\right)^{2}=\tfrac12 m\Big(i\frac{dx}{d\tau}\Big)^2=-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2,
 $$</p>
-<p>so the Lagrangian becomes $L=-\tfrac12 m(dx/d\tau)^2-V$, and</p>
+<p>so the Lagrangian becomes $\mathrm{Lag}=-\tfrac12 m(dx/d\tau)^2-V$, and</p>
 <p>$$
-S=\int dt'\,L=\int(-i\,d\tau)\Big[-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2-V\Big]
+S=\int dt'\,\mathrm{Lag}=\int(-i\,d\tau)\Big[-\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2-V\Big]
 =i\int d\tau\Big[\tfrac12 m\Big(\frac{dx}{d\tau}\Big)^2+V\Big]=i\,S_E,
 $$</p>
 <p>where $S_E$ is the Euclidean action. The phase therefore becomes</p>
@@ -349,7 +349,7 @@ one factor of the square root of the metric determinant per spatial slice. This 
 <td>Transition amplitude (propagator), central: $K=\mathcal{K}e_t$</td>
 </tr>
 <tr>
-<td>$S[x]=\int L\,dt'$</td>
+<td>$S[x]=\int \mathrm{Lag}\,dt'$</td>
 <td>Action; real scalar</td>
 </tr>
 <tr>
