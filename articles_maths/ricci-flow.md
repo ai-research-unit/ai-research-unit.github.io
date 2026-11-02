@@ -70,10 +70,10 @@ where the operator $\Delta_L$ is the **Lichnerowicz Laplacian** acting on symmet
 **Theorem (evolution of the Riemann tensor).** Along a Ricci flow,
 
 $$
-\frac{\partial \mathrm{Rm}}{\partial t} = \Delta \mathrm{Rm} + \mathrm{Rm}*\mathrm{Rm} ,
+\frac{\partial \mathrm{Riem}}{\partial t} = \Delta \mathrm{Riem} + \mathrm{Riem}*\mathrm{Riem} ,
 $$
 
-where $\mathrm{Rm}*\mathrm{Rm}$ denotes a universal bilinear combination of the curvature tensor with itself.
+where $\mathrm{Riem}*\mathrm{Riem}$ denotes a universal bilinear combination of the curvature tensor with itself.
 
 *Proof.* Quoted as standard. The computation is the tensor analogue of the preceding one and its result is commonly summarised in the schematic form displayed, the exact coefficients being irrelevant for the maximum-principle arguments that use only the positivity of the quadratic terms in a suitable sense.
 
@@ -87,7 +87,7 @@ and if $R(\cdot,0)\ge0$ then $R(\cdot,t)\ge0$ for all $t$; more generally a lowe
 
 *Proof.* The evolution equation gives $\partial/\partial t\,R\ge\Delta R$, a differential inequality of parabolic type. Given $\varepsilon>0$, the function $R_\varepsilon = R+\varepsilon t$ satisfies $\partial/\partial t\,R_\varepsilon\ge\Delta R_\varepsilon+\varepsilon$, so its minimum over $M\times[0,T']$ cannot be attained in the interior: at an interior minimum, $\partial/\partial t\,R_\varepsilon\le0$ and $\Delta R_\varepsilon\ge0$, whereas the inequality gives $\partial/\partial t\,R_\varepsilon\ge\varepsilon>0$. Hence the minimum is attained on the parabolic boundary, and letting $\varepsilon\to0$ gives the claim; the preservation of a lower bound $-c$ follows by applying the same argument to $R+c$.
 
-**Remark (the maximum principle for systems).** The maximum principle for a scalar quantity is immediate; for the full curvature tensor it requires a **pinching** condition, because the reaction term $\mathrm{Rm}*\mathrm{Rm}$ does not preserve an arbitrary positivity cone. The Hamilton–Ivey estimate, which bounds the curvature of a three-dimensional Ricci flow below by $-C/(t_0-t)$ for a curvature singularity at $t_0$, is the sharp example: the reaction term is controlled by a positivity cone chosen so that the quadratic terms act in the favourable direction.
+**Remark (the maximum principle for systems).** The maximum principle for a scalar quantity is immediate; for the full curvature tensor it requires a **pinching** condition, because the reaction term $\mathrm{Riem}*\mathrm{Riem}$ does not preserve an arbitrary positivity cone. The Hamilton–Ivey estimate, which bounds the curvature of a three-dimensional Ricci flow below by $-C/(t_0-t)$ for a curvature singularity at $t_0$, is the sharp example: the reaction term is controlled by a positivity cone chosen so that the quadratic terms act in the favourable direction.
 
 ## Exact Solutions, Solitons and the Flow in Model Cases
 
@@ -109,7 +109,7 @@ for a complete vector field $X$ and a constant $\lambda$. The soliton is **stead
 
 ## Singularities and Monotonicity
 
-**Definition.** A solution $g(t)$ on a maximal interval $[0,T)$ is **singular at $T$** if $T<\infty$ and the curvature is unbounded as $t\to T^-$. The singularity is **Type I** if $\sup_M|\mathrm{Rm}|(x,t)\le C/(T-t)$ and **Type II** otherwise. A singularity is **necklike** if, after parabolic rescaling about a sequence of points, the solution converges to a cylinder $\mathbb{R}\times S^{n-1}$.
+**Definition.** A solution $g(t)$ on a maximal interval $[0,T)$ is **singular at $T$** if $T<\infty$ and the curvature is unbounded as $t\to T^-$. The singularity is **Type I** if $\sup_M|\mathrm{Riem}|(x,t)\le C/(T-t)$ and **Type II** otherwise. A singularity is **necklike** if, after parabolic rescaling about a sequence of points, the solution converges to a cylinder $\mathbb{R}\times S^{n-1}$.
 
 **Theorem (Hamilton–Ivey).** Along a Ricci flow on a compact three-manifold that becomes singular at $T<\infty$, the minimum of the sectional curvature satisfies
 
@@ -152,21 +152,21 @@ are monotone along the coupled flow $\partial/\partial t\,g=-2R_{ij}$, $\partial
 
 ## Summary
 
-Ricci flow is the evolution $\partial/\partial t\,g_{ij}=-2R_{ij}$ of a Riemannian metric, a weakly parabolic quasilinear equation whose degeneracy is the diffeomorphism invariance and whose short-time existence is obtained by the DeTurck gauge trick; the solution is unique and maximal until the curvature blows up. The volume evolves by $\partial/\partial t\mathrm{Vol}=-\int R\,dV$, the scalar curvature by $\partial/\partial t\,R=\Delta R+2|R_{ij}|^2$, the Ricci tensor by the Lichnerowicz Laplacian $\partial/\partial t\,R_{ij}=\Delta R_{ij}+2\sum_{k,l,a,b}(g^{-1})_{ka}(g^{-1})_{lb}R_{ikjl}R_{ab}-2\sum_{k,l}(g^{-1})_{kl}R_{ik}R_{lj}$, and the Riemann tensor by $\partial/\partial t\mathrm{Rm}=\Delta\mathrm{Rm}+\mathrm{Rm}*\mathrm{Rm}$; the scalar equation is a reaction-diffusion equation, and the maximum principle preserves lower bounds on $R$ and, under pinching hypotheses, on the full curvature. Einstein metrics solve the flow homothetically, with the round sphere shrinking to extinction, the flat torus stationary and the hyperbolic metric expanding; the cigar, Bryant and Gaussian solitons are the complete self-similar solutions and the shrinking solitons are the equality cases of the monotone entropy functionals $\mathcal{F}$ and $\mathcal{W}$, whose monotonicity, together with the no-local-collapsing theorem, controls the blow-up of singularities. Positively Ricci curved compact three-manifolds converge under the normalised flow to constant curvature, and the compactness of noncollapsed flows makes the singular limits ancient solutions classified by solitons.
+Ricci flow is the evolution $\partial/\partial t\,g_{ij}=-2R_{ij}$ of a Riemannian metric, a weakly parabolic quasilinear equation whose degeneracy is the diffeomorphism invariance and whose short-time existence is obtained by the DeTurck gauge trick; the solution is unique and maximal until the curvature blows up. The volume evolves by $\partial/\partial t\mathrm{Vol}=-\int R\,dV$, the scalar curvature by $\partial/\partial t\,R=\Delta R+2|R_{ij}|^2$, the Ricci tensor by the Lichnerowicz Laplacian $\partial/\partial t\,R_{ij}=\Delta R_{ij}+2\sum_{k,l,a,b}(g^{-1})_{ka}(g^{-1})_{lb}R_{ikjl}R_{ab}-2\sum_{k,l}(g^{-1})_{kl}R_{ik}R_{lj}$, and the Riemann tensor by $\partial/\partial t\mathrm{Riem}=\Delta\mathrm{Riem}+\mathrm{Riem}*\mathrm{Riem}$; the scalar equation is a reaction-diffusion equation, and the maximum principle preserves lower bounds on $R$ and, under pinching hypotheses, on the full curvature. Einstein metrics solve the flow homothetically, with the round sphere shrinking to extinction, the flat torus stationary and the hyperbolic metric expanding; the cigar, Bryant and Gaussian solitons are the complete self-similar solutions and the shrinking solitons are the equality cases of the monotone entropy functionals $\mathcal{F}$ and $\mathcal{W}$, whose monotonicity, together with the no-local-collapsing theorem, controls the blow-up of singularities. Positively Ricci curved compact three-manifolds converge under the normalised flow to constant curvature, and the compactness of noncollapsed flows makes the singular limits ancient solutions classified by solitons.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $g(t)$, $g_{ij}$ | Evolving Riemannian metric |
-| $R_{ij}$, $R$, $\mathrm{Rm}$ | Ricci, scalar and Riemann curvature tensors |
+| $R_{ij}$, $R$, $\mathrm{Riem}$ | Ricci, scalar and Riemann curvature tensors |
 | $\partial/\partial t\,g=-2R_{ij}$ | Ricci flow equation |
 | $\bar R$ | Average scalar curvature of the normalised flow |
 | $\mathrm{Vol}(M,g)$ | Volume, with $\partial/\partial t\mathrm{Vol}=-\int R\,dV$ |
 | $\Delta$, $\Delta_L$ | Laplace–Beltrami operator; Lichnerowicz Laplacian |
-| $\mathrm{Rm}*\mathrm{Rm}$ | Quadratic curvature combination in the curvature evolution |
+| $\mathrm{Riem}*\mathrm{Riem}$ | Quadratic curvature combination in the curvature evolution |
 | $X$, $\lambda$ | Soliton vector field and constant; steady, shrinking, expanding |
-| $T$, $|\mathrm{Rm}|$ | Singular time and curvature norm; Type I condition |
+| $T$, $|\mathrm{Riem}|$ | Singular time and curvature norm; Type I condition |
 | $\mathcal{F}$, $\mathcal{W}$, $\tau$ | Perelman entropy functionals and the scale parameter |
 | $\kappa$-noncollapsed | No local collapsing at scale $r$ with constant $\kappa$ |
 | Cheeger–Gromov | Pointed convergence of metric spaces and of flows |
