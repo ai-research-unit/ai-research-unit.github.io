@@ -125,19 +125,19 @@ $$</p>
 <h3 id="the-vector-case">The Vector Case</h3>
 <p><strong>Theorem (integration by parts for the gradient).</strong> Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be continuously differentiable biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and write</p>
 <p>$$
-F^{\mathrm{fn}}\overleftarrow{\nabla} = \sum_{\mu\in\{t,x,y,z\}} \left(\frac{\partial F^{\mathrm{fn}}}{\partial q_\mu}\right) e_\mu
+F^{\mathrm{fn}}\nabla^{R} = \sum_{\mu\in\{t,x,y,z\}} \left(\frac{\partial F^{\mathrm{fn}}}{\partial q_\mu}\right) e_\mu
 $$</p>
 <p>for the <strong>right gradient</strong> of $F^{\mathrm{fn}}$. Then</p>
 <p>$$
-\int_\Omega F^{\mathrm{fn}} (\tilde{\nabla}G^{\mathrm{fn}}) \, dV = \int_{\partial \Omega} F^{\mathrm{fn}} \tilde u_{\mathrm n} G^{\mathrm{fn}} \, dS - \int_\Omega (F^{\mathrm{fn}}\overleftarrow{\nabla}) G^{\mathrm{fn}} \, dV,
+\int_\Omega F^{\mathrm{fn}} (\tilde{\nabla}G^{\mathrm{fn}}) \, dV = \int_{\partial \Omega} F^{\mathrm{fn}} \tilde u_{\mathrm n} G^{\mathrm{fn}} \, dS - \int_\Omega (F^{\mathrm{fn}}\nabla^{R}) G^{\mathrm{fn}} \, dV,
 $$</p>
 <p>and equivalently</p>
 <p>$$
 \int_\Omega (\tilde{\nabla}F^{\mathrm{fn}}) G^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F^{\mathrm{fn}} G^{\mathrm{fn}} \, dS - \int_\Omega \sum_{\mu\in\{t,x,y,z\}} e_\mu F^{\mathrm{fn}} \left(\frac{\partial G^{\mathrm{fn}}}{\partial q_\mu}\right) dV,
 $$</p>
 <p>where $\tilde u_{\mathrm n} = \sum_\mu n_\mu e_\mu$ is the biquaternion-valued outward unit normal.</p>
-<p><strong>Proof.</strong> The Leibniz rule for the gradient gives $\tilde{\nabla}(F^{\mathrm{fn}}G^{\mathrm{fn}}) = (\tilde{\nabla}F^{\mathrm{fn}})G^{\mathrm{fn}} + \sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$, and the divergence theorem applied to the product $F^{\mathrm{fn}}G^{\mathrm{fn}}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}}$ and sum over $\mu$: the volume integrand is $\sum_\mu \partial/\partial q_\mu(F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}}) = (F^{\mathrm{fn}}\overleftarrow{\nabla})G^{\mathrm{fn}} + F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$, and the boundary integrand is $\sum_\mu n_\mu F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}} = F^{\mathrm{fn}}\tilde u_{\mathrm n}G^{\mathrm{fn}}$.</p>
-<p><strong>Remark (the non-commutative correction).</strong> The transposition that moves the derivative off $G^{\mathrm{fn}}$ while leaving $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ in the volume term is <strong>false for a non-central</strong> $F^{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$ equals $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ only when $F^{\mathrm{fn}}$ commutes with every unit $e_\mu$. The right gradient $\overleftarrow{\nabla}$ is the transposition that removes the restriction, and all the forms coincide when $F^{\mathrm{fn}}$ is a real scalar multiple of $e_t$, which is the scalar case above and the case of the classical formula in <em>Quaternion Integration</em>.</p>
+<p><strong>Proof.</strong> The Leibniz rule for the gradient gives $\tilde{\nabla}(F^{\mathrm{fn}}G^{\mathrm{fn}}) = (\tilde{\nabla}F^{\mathrm{fn}})G^{\mathrm{fn}} + \sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$, and the divergence theorem applied to the product $F^{\mathrm{fn}}G^{\mathrm{fn}}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}}$ and sum over $\mu$: the volume integrand is $\sum_\mu \partial/\partial q_\mu(F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}}) = (F^{\mathrm{fn}}\nabla^{R})G^{\mathrm{fn}} + F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$, and the boundary integrand is $\sum_\mu n_\mu F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}} = F^{\mathrm{fn}}\tilde u_{\mathrm n}G^{\mathrm{fn}}$.</p>
+<p><strong>Remark (the non-commutative correction).</strong> The transposition that moves the derivative off $G^{\mathrm{fn}}$ while leaving $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ in the volume term is <strong>false for a non-central</strong> $F^{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$ equals $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ only when $F^{\mathrm{fn}}$ commutes with every unit $e_\mu$. The right gradient $\nabla^{R}$ is the transposition that removes the restriction, and all the forms coincide when $F^{\mathrm{fn}}$ is a real scalar multiple of $e_t$, which is the scalar case above and the case of the classical formula in <em>Quaternion Integration</em>.</p>
 <h2 id="the-divergence-theorem">The Divergence Theorem</h2>
 <p><strong>Theorem (divergence theorem).</strong> Let $F^{\mathrm{fn}}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then</p>
 <p>$$
@@ -374,7 +374,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$, and the commutative-looking forms hold only for central fields; the identities are stated in the forms that hold for general biquaternion-valued fields.</p>
+<p>The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\nabla^{R}$ after the function it differentiates, and the commutative-looking forms hold only for central fields; the identities are stated in the forms that hold for general biquaternion-valued fields.</p>
 <p>The <strong>fundamental solution</strong> of the gradient operator on $\mathbb{H}_{\mathbb{B}}$ is $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} G^{\mathrm{fn}} = 0$ away from the origin and $\tilde{\nabla} G^{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ in the sense of distributions. The fundamental solution of the second-order operator $\Box$ is the central function $G_\Box = -e_t/(4\pi^2\|\tilde{Q}\|_E^2)$.</p>
 <p>The <strong>Green formula for $\Box$</strong> and its <strong>representation formula</strong> express a biquaternion-valued function at an interior point by the volume integral of its $\Box$ against $G_\Box$ together with a surface integral of its boundary values and normal derivative; when $\Box \varphi = 0$ the volume term drops out and the interior value is carried by the boundary alone. For the wave operator this is the biquaternionic <strong>Kirchhoff–Green representation</strong>, the analogue of the classical Kirchhoff and Green formulas.</p>
 <p>The <strong>Cauchy integral formula</strong> expresses the value of a continuously differentiable function at an interior point in terms of its boundary values and the volume integral of its gradient. For functions satisfying $\tilde{\nabla}F^{\mathrm{fn}} = 0$ (the biquaternion analogue of the Cauchy–Riemann equations), the volume integral vanishes and the value at the interior point is given entirely by the boundary values.</p>
@@ -411,7 +411,7 @@ $$</p>
 <td>Biquaternionic gradient (Cauchy–Riemann operator)</td>
 </tr>
 <tr>
-<td>$F^{\mathrm{fn}}\overleftarrow{\nabla} = \sum_\mu (\partial F^{\mathrm{fn}}/\partial q_\mu) e_\mu$</td>
+<td>$F^{\mathrm{fn}}\nabla^{R} = \sum_\mu (\partial F^{\mathrm{fn}}/\partial q_\mu) e_\mu$</td>
 <td>Right gradient of $F^{\mathrm{fn}}$</td>
 </tr>
 <tr>

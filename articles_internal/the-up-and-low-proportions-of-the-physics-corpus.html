@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Up and Low Proportions of the Physics Corpus — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-up-and-low-proportions-of-the-physics-corpus"><strong>The Up and Low Proportions of the Physics Corpus</strong></h1>
+<h2 id="introduction-the-rule">Introduction: The Rule</h2>
+<p>Validated caret carries:</p>
+<ul>
+<li>a power, $e^\lambda$, $2^k$, $(-1)^k$, $2^n$;</li>
+<li>a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;</li>
+<li>a transposition, $L^T$, $\psi^T$;</li>
+<li>a construction, $\mathbb{B}^\times$, $\mathbb{B}^{\otimes n}$, $S^{\otimes n}$.</li>
+</ul>
+<p>Validated low signs are:</p>
+<ul>
+<li>a numeric count, $Q_1$, $M_2$;</li>
+<li>a coordinate or a field component, $x_\mu$, $A_\mu$;
+  a basis vector or a gamma, $\vec e_i$, $\gamma_i$;</li>
+<li>a sign symbol, $\varepsilon_{ijk}$;</li>
+<li>a colour, gauge or spin index, $T_a$, $G_a$, $\sigma_z$.</li>
+</ul>
+<p>Everything else is non-validated.</p>
+<p>The unvalidated upper marks fall into seven families.</p>
+<ul>
+<li><strong>Sign and sector labels</strong>: $O^{+}$, $\Phi^{+}$, $\Psi^{-}$, $D^{-}$, $\nabla^{+}$, $\Psi^{+}$, $\Phi^{-}$, $\nabla^{-}$, $D^{+}$, $G^{R}$, $M_4^{L}$, $\mathsf{M}_4^{L}$, $G^{+}$, $B^{+}$, $S^{+}$, $\pi^{+}$, $G^{+-}$, $F^{-}$, $J^{+}$, $F^{+}$, $W^{+}$, $G^{++}$, $G^{--}$, $S^{-}$, $W^{-}$, $\Gamma^{+}$, $\mathsf{M}_4^{R}$, $j^{R}$, $M_4^{R}$, $\pi^{-}$, $W^{\wedge}$, $\mathrm{Spin}^{+}$, $G^{-+}$, $K^{+}$, $N_k^{-}$, $\Omega^{-}$, $\mathcal{N}^{+}$, $\psi^{\uparrow}$, $A^{+}$, $G^{\vee}$, $J^{-}$, $K_H^{+}$, $N_k^{+}$, $\mathcal{B}^{+}$, $\tilde{\Psi}_0^{R}$, $P_1^{+}$, $P_1^{-}$, $Q_H^{+}$, $T_3^{R}$, $\mathcal{B}^{-}$, $\mathcal{P}^{+}$, $\tilde{F}^{+}$, $\tilde{\Psi}_0^{L}$, $\vec{\tilde S}^{+}$, $\vec{\tilde S}^{-}$, $j^{L}$, $u^{+}$, $u^{-}$, $\ell_{1,3}^{+}$, $\mathcal{N}^{-}$, $\mathcal{P}^{-}$, $\mu^{+}$, $\phi^{+}$, $b_k^{L}$, $b_k^{R}$, $G^{R/A}$, $L^{+}$, $\ell^{+}$, $b^{+}$, $f^{+}$, $h^{\vee}$, $y_j^{-}$, $E^{+}$, $F^{\uparrow}$, $M^{+}$, $M^{-}$, $N_j^{+}$, $P^{+}$, $P^{-}$, $S_F^{L}$, $\Pi^{+}$, $\Sigma^{+}$, $\Sigma^{-}$, $\ker^{+}$, $\ker^{-}$, $\mu^{-}$, $\tilde{A}^{+}$, $\tilde{F}^{-}$, $\varepsilon^{+}$, $b^{-}$, $F_H^{+}$, $J^{R}$, $K^{-}$, $N_j^{-}$, $N_l^{+}$, $N_l^{-}$, $Q^{+}$, $Q^{-}$, $V_0^{+}$, $\G^{-+}$, $\Gamma^{-}$, $\Pi^{-}$, $\Psi_0^{L}$, $\Psi_0^{R}$, $\Xi^{-}$, $\breve{F}^{-}$, $\mu^{R}$, $f^{-}$.</li>
+<li><strong>Parenthesised labels</strong>: $S^{(\mathrm{adj})}$, $w^{(r)}$, $D^{(l)}$, $v^{(r)}$, $T^{(k)}$, $X^{(n)}$, $\mathcal{Q}^{(lab)}$, $\Pi_i^{(b)}$, $\xi^{(r)}$, $\alpha^{(i)}$, $\mathcal{Q}^{(b)}$, $m^{(s)}$, $v^{(s)}$, $w^{(r){}^{*}}$, $\eta^{(r)}$, $\Pi_B^{(j)}$, $\epsilon^{(r)}$, $\mathrm{Sym}^{(k,r)}$, $v^{(r){}^{*}}$, $G^{(\mu)}$, $S^{(\mathrm{adj})\,2}$, $w^{(s)}$, $\Pi_A^{(i)}$, $Q_A^{(k)}$, $a^{(\alpha)}$, $p_i^{(b)}$, $\bar{w}^{(r)}$, $\chi^{(r)}$, $\epsilon^{(r)*}$, $\epsilon_i^{(\lambda)}$, $\epsilon_j^{(\lambda)}$, $\mathcal{D}^{(k)}$, $\psi^{(r)}$, $\tilde{F}^{(+)}$, $\tilde{F}^{(-)}$, $e_z^{(\text{mode})}$, $g^{(\mp)}$, $Q_A^{(k){}^{*}}$, $S^{(a)}$, $S^{(s)}$, $\bar{v}^{(r)}$, $\delta^{(d)}$, $\epsilon^{(s)}$, $\mathcal{A}^{(-)}$, $\xi^{(r)\dagger}$, $\xi^{(s)}$, $D^{(l_i)}$, $S_k^{(a)}$, $\Gamma^{(n)}$, $\Pi_B^{(H)}$, $\Pi_B^{(V)}$, $\beta^{(j)}$, $\eta^{(r){}^{*}}$, $\eta^{(s)}$, $\mathcal{F}^{(+)}$, $\mathcal{F}^{(-)}$, $\pm^{(a)}$, $\pm^{(k)}$, $\psi_n^{(m)}$, $\sigma^{(\varphi,\omega)}$, $\tilde{Ϛ}_A^{(k)}$, $\xi^{(r){}^{*}}$, $a_i^{(\alpha)}$, $f_n^{(m)}$, $p_s^{(k)}$, $v^{(s){}^{*}}$, $w^{(r)*}$, $w^{(s){}^{*}}$.</li>
+<li><strong>Upright names</strong>: $\Phi^{\mathrm{deph}}$, $F^{\mathrm{dual}}$, $S^{\mathrm{c}}$, $g^{\mathrm{J}}$, $u^{\mathrm{sc}}$, $g^{\rm Q}$, $u^{\mathrm{inc}}$, $\phi^{\mathrm{fop}(-)}$, $K_1^{\rm thr}$, $\phi^{\mathrm{fop}(+)}$, $\tilde{P}_a^{\rm CM}$, $\psi^{\mathrm{c}}$, $h_{ij}^{\mathrm{TT}}$, $G^{\mathrm L}$, $G^{\mathrm R}$, $\Phi^{\mathrm{fop}{*}}$, $\epsilon^{\mathrm{gr}}$, $\mu^{\mathrm{gr}}$, $\phi^{\mathrm{fop}{}(-){}^{*}}$, $\tilde{Ϛ}_1^{\mathrm{prod}}$, $A^{\mathrm{cl}}$, $A^{\mathrm{rev}}$, $B_n^{\mathrm{ab}}$, $E_1^{\rm thr}$, $E_C^{\text{present}}$, $J^{\mathrm{reg}}$, $K_{\rm beam}^{\rm thr}$, $T^{\mathrm{can}}$, $Z_1^{\mathrm{cl}}$, $\Sigma_{10}^{\mathrm{J}}$, $\Sigma_{10}^{\mathrm{s}}$, $\Theta_{ij}^{\mathrm{TT}}$, $\mathbb{B}^{\mathrm e}$, $\mu^{\text{corpus}}$, $\mu^{\text{source}}$, $\pi^{\text{mass}}$, $\psi^{\mathrm{fop}*}$, $\tilde{P}^{\rm CM}$, $\varepsilon^{\mathrm{fop}(r)}$, $u_{\vec k}^{\mathrm{out}}$, $A_n^{\mathrm{MHV}}$, $E_{\rm beam}^{\rm thr}$, $F^{\mathrm{em}}$, $M_k^{\text{physical}}$, $T_{\mu\nu}^{\mathrm{matter}}$, $T_{\mu\nu}^{\rm BR}$, $T_{\mu\nu}^{\rm canonical}$, $\Lambda^{\mathrm{Cl}}$, $\omega_c^{\mathrm{s}}$, $\phi^{\mathrm{fop}(+)\dagger}$, $\phi^{\mathrm{fop}(-)\dagger}$, $\phi^{\mathrm{fop}{}(+){}^{*}}$, $\psi^{\mathrm{rev}}$, $\tilde{P}_1^{\rm CM}$, $\tilde{P}_2^{\rm CM}$, $\varepsilon^{\mathrm{fop}(+)}$, $\varepsilon^{\mathrm{fop}(-)}$, $\varepsilon^{\mathrm{fop}(\lambda)}$, $\zeta^{\mathrm{pol}}$, $\zeta_{\vec u}^{\mathrm{pol}}$, $a_e^{\text{exp}}$, $u_{\vec k}^{\mathrm{in}}$, $E_0^{\mathrm{D}}$, $E_0^{\mathrm{WKB}}$, $E_1^{\mathrm{WKB}}$, $E_2^{\mathrm{WKB}}$, $E_3^{\mathrm{WKB}}$, $E_C^{\text{ret}}$, $G^{\mathrm{pf}}$, $G_R^{\mathrm{reg}}$, $P^{\mathrm{fop}\mu}$, $P^{\rm CM}$, $S^{\mathrm c}$, $S_{\max}^{\mathrm{EPR}}$, $T^{\mathrm{sym}\,\mu}$, $T^{\mathrm{sym}}$, $T_{\mu\nu}^{\mathrm{coef}}$, $T_{\mu\nu}^{\mathrm{em}}$, $T_{\mu\nu}^{\mathrm{tot}}$, $\Psi^{\mathrm{fop}{*}}$, $\omega_Z^{\text{rest}}$, $\omega_c^{\mathrm s}$, $\phi^{\mathrm{fop}{}\mathcal{C}}$, $\psi^{\mathrm{opp}}$, $\theta^{\rm eff}$, $\theta^{\text{ab}}$, $\tilde{\Psi}^{\text{tr}}$, $\varepsilon^{\mathrm{fop}( r)}$, $\varepsilon^{\mathrm{fop}(\lambda_{\mathrm{out}})}$, $a^{\mathrm{fop},\mathrm{in}}$, $a^{\mathrm{fop},\mathrm{out}}$, $b^{\mathrm{fop},\mathrm{in}^{*}}$, $f^{\mathrm{ax}}$, $g^{\rm Bures}$.</li>
+<li><strong>Grade labels</strong>: $\mathrm{Cl}_{1,3}^{+}$, $\mathrm{Cl}^{1}$, $\mathrm{Cl}^{+}$, $\mathrm{Cl}^{0}$, $K^{0}$, $\mathrm{Cl}^{i}$, $\mathrm{Cl}_{1,3}^{-}$, $\mathrm{Cl}^{i+j}$, $\mathrm{Cl}^{j}$, $\mathrm{Cl}^{k}$, $\mathrm{Cl}^{-}$.</li>
+<li><strong>Single-letter indices</strong>: $\psi^{c}$, $\varepsilon^{r}$, $G^{K}$, $G^{A}$, $\mathrm{Spin}^{c}$, $Y_l^{m}$, $\mathrm{Sym}^{n}$, $\tilde{A}^{\Gamma}$, $H^{s}$, $\nu_R^{c}$, $A^{i}$, $\Lambda^{n}$, $\omega^{A}$, $\rho_A^{n}$, $\lambda_i^{n}$, $C^{k}$, $\sigma^{H}$, $A^{l}$, $G^{n}$, $N_{ab}^{c}$, $\Omega^{\Delta}$, $z^{n}$, $C^{N}$, $G^{c}$, $S^{\omega}$, $\delta^{i}$, $\mathbb{C}^{d}$, $\operatorname{Sym}^{l}$, $\phi^{H}$, $d^{d}$, $A^{k}$, $D^{i}$, $S^{E}$, $S^{u}$, $Z_1^{n}$, $\G^{A}$, $\chi^{r}$, $\lambda^{a}$, $\mathbb{R}^{n}$, $\omega^{E}$, $\rangle_{\natural}^{\Delta}$, $\sigma^{E}$, $\xi^{\alpha}$, $k^{l}$, $q^{A}$, $r^{l}$, $F^{H}$, $G^{a}$, $H^{n}$, $L^{p}$, $N_R^{c}$, $P_n^{m}$, $Q^{n}$, $X^{r}$, $\Lambda^{l}$, $\Pi^{E}$, $\Pi^{H}$, $\Pi^{c}$, $\gamma_5^{d}$, $\mathbb{C}^{N}$, $\mathbb{C}^{n}$, $\mathcal{H}_Q^{m}$, $\omega^{n}$, $\operatorname{Ind}_P^{G}$, $\partial^{E}$, $\psi_L^{c}$, $\tau^{m}$, $\varphi^{s}$, $\vec{\mathcal E}^{m}$, $e_k^{b}$, $j^{E}$, $k^{n}$, $u^{c}$, $w^{s}$, $x^{r}$, $F^{E}$, $H^{\alpha}$, $J^{m}$, $L^{c}$, $M^{\alpha}$, $M_4^{\sigma}$, $Q^{t}$, $Q^{x}$, $Q^{y}$, $Q^{z}$, $Q_1^{b}$, $Q_1^{n}$, $Q_3^{a}$, $Q_t^{n}$, $S_0^{A}$, $S_0^{B}$, $Y_2^{m}$, $Z^{k}$, $\Lambda^{d}$, $\Lambda^{m}$, $\Omega^{c}$, $\Pi_1^{A}$, $\Pi_2^{A}$, $\Upsilon^{n}$, $\alpha^{n}$, $\delta^{l}$, $\delta^{n}$, $\lambda_i^{\alpha}$, $\mathbb{B}^{\sigma}$, $\mathbb{H}^{n}$, $\mathcal{H}_Q^{N}$, $\mu^{\epsilon}$, $\mu{}^{\alpha}$, $\nabla^{\sigma}$, $\psi^{\omega}$, $\sigma_{t'}^{\omega}$, $\varphi^{n}$, $\vec{\mathcal H}^{m}$, $\xi^{B}$, $\xi^{C}$, $a^{i}$, $d^{n}$, $j^{H}$, $j^{x}$, $r^{n}$, $s^{n}$, $u^{m}$, $u^{s}$, $w^{c}$.</li>
+<li><strong>Multi-letter indices</strong>: $H^{sl}$, $\delta^{rs}$, $S^{cd}$, $\Delta^{is}$, $G^{ab}$, $K^{ab}$, $S^{ab}$, $V^{ab}$, $\omega^{ab}$, $R^{ab}$, $\Lambda^{ab}$, $\mu{}^{ab}$, $C^{ab}$, $T^{kt}$, $T^{tk}$, $\Theta^{ab}$, $\gamma_5^{FW}$.</li>
+<li><strong>Compound labels</strong>: $\Delta^{it'}$, $\tau^{l\bar l}$, $M^{\vec{\alpha}}$, $\mathbb{C}^{N_g}$, $Y_l^{l_z}$, $\tilde{Ϛ}^{it'}$, $\Delta^{-it'}$, $\tilde{Ϛ}^{-it'}$, $\mathcal{A}^{\tilde U}$, $\omega_b^{\parallel}$, $\phi^{\,*}$, $S^{\perp_B}$, $\Delta^{it'*}$, $\tilde{F}^{\sim}$, $\tilde{Ϛ}^{\,it'}$, $\mathcal{B}^{\bullet}$, $x^{A\bar A}$, $M_d^{\mathcal{F}}$, $M_u^{\mathcal{F}}$, $\Delta^{-is}$, $A^{\sim}$, $H^{\alpha,s}$, $M^{\vec{\alpha}_f}$, $S^{\oplus k}$, $Y_l^{m*}$, $\tilde{A}^{\sim}$, $\tilde{\Psi}^{\,\bullet}$, $V^{\oplus k}$, $Y_l^{s_{\mathrm{tot},z}+\frac12}$, $Y_l^{s_{\mathrm{tot},z}-\frac12}$, $\lambda_n^{-s}$, $\mathbb{B}^{n\times m}$, $r_2^{\,l}$, $v^{\perp}$, $E_3^{*\max}$, $M^{\mathcal{F}}$, $S^{\perp}$, $S^{u,c}$, $T^{\approx}$, $\Lambda^{\bar l}$, $\Lambda^{l\bar l}$, $\bar{R}^{\,\natural}$, $\bar{\psi}^{\,T}$, $\lambda^{-\Delta}$, $\mathcal{B}^{\bigstar\bigstar}$, $\mathcal{B}^{\bigstar}$, $\nu_R^{c\,T}$, $\omega_b^{\perp}$, $\phi^{+*}$, $\phi^{H_G}$, $\varepsilon^{r*}$, $z^{\,s+s_z}$, $B^{\sim}$, $C^{a,b,c,d,e,f,g}$, $F^{+\bigstar}$, $G_R^{\,\mathrm{reg}}$, $H^{\alpha\beta}$, $J^{*n}$, $J^{\sim}$, $L_{\tilde Q}^{\approx}$, $M^{\vec\alpha}$, $M^{\vec{\epsilon}}$, $M^{\vec{\mu}}$, $M_d^{\mathcal{F}{}^{*}}$, $M_u^{\mathcal{F}{}^{*}}$, $M_{12}^{\max}$, $M_{12}^{\min}$, $Q^{\star k}$, $T^{N_t}$, $T^{\alpha t}$, $U_{\mathrm L}^{-{}^{*}}$, $X^{\perp}$, $Y_k^{s_{\mathrm{tot},z}+\frac12}$, $Y_k^{s_{\mathrm{tot},z}-\frac12}$, $Y_{-k}^{s_{\mathrm{tot},z}+\frac12}$, $Y_{-k}^{s_{\mathrm{tot},z}-\frac12}$, $\Lambda^{m+n}$, $\Pi^{\alpha\bar{\alpha}}$, $\Pi^{\bar\alpha\alpha}$, $\Pi^{\bar{\alpha}\alpha}$, $\Pi^{\beta\bar{\alpha}}$, $\Pi_{1,2}^{\vec u}$, $\alpha{}^{\bar\beta}$, $\bar{\tilde F}^{\,*}$, $\bar{\xi}^{\,\bar\alpha}$, $\bar{\xi}^{\,\bar{\alpha}}$, $\chi^{r*}$, $\delta^{\,n+m}$, $\delta^{\,n}$, $\delta^{n+m}$, $\lambda^{-s}$, $\lambda_i^{\bar\alpha}$, $\mathbb{R}^{n,m}$, $\mathcal{A}_{\mu}^{\tilde U}$, $\mathcal{D}^{s_+}$, $\mathcal{D}^{s_-}$, $\mathrm{Sym}^{2s_{\mathrm R}}$, $\omega^{it'}$, $\pi^{\bar\beta}$, $\psi^{\perp}$, $\psi_0^{\perp}$, $\psi_1^{\perp}$, $\rangle_{\natural}^{-\Delta}$, $\rho^{\,l}$, $\sigma_{t'}^{\varphi,\omega}$, $\tau^{s,s}$, $\tilde{U}^{-{}^{*}}$, $\varepsilon^{s*}$, $\varphi^{**}$, $\varphi^{-it'}$, $m^{-s}$, $r^{-n}$, $u_r^{\!\top}$, $x^{\,*}$, $z^{\,m}$, $z^{s+s_z}$.</li>
+</ul>
+<p>The unvalidated lower marks fall into seven families.</p>
+<ul>
+<li><strong>Rotor, boost and rotation labels</strong>: $U_{\mathrm L}$, $U_{\mathrm b}$, $u_{\mathrm r}$, $u_{\mathrm b}$, $\Xi_{\mathrm{ad}}$, $\mathbb{B}_{\mathrm{r}}$, $K_{\mathrm{boost}}$, $a_{\text{rot}}$, $w_{\rm rot}$, $U_{\rm rot}$, $\mu_{\rm rot}$, $\tilde{\nabla}_{\mathrm{Ad}}$, $g_{\text{boost}}$, $F_{\mathrm L}$, $U_{\mathrm r}$, $\ltimes_{\mathrm{Ad}}$, $g_{\text{rot}}$, $S_{\mathrm{rot}}$, $S_{\rm rot}$, $\Phi_{\mathrm{Ad}}$, $\tilde{G}_{\mathrm{Ad}}$, $\tilde{Q}_{\mathrm L}$, $\tilde{Q}_{\mathrm{Ad}}$, $(\ldots)_{\text{rot}}$, $J_{\mathrm L}$, $M_{\mathrm{rot}}$, $S_{\mathrm{b}}$, $X_{\mathrm L}$, $\cdot_{\mathrm{opp}}$, $\nabla_{\mathrm L}$, $\phi_{\mathrm{L}}$, $\sum_{\text{L}}$, $\tilde{\Phi}_{\mathrm{L}}$, $\tilde{Ϛ}_{\mathrm{rot}}$, $x_{\mathrm L}$.</li>
+<li><strong>Totals, counts and completion labels</strong>: $s_{\mathrm{tot}}$, $S_{\mathrm{tot}}$, $s_{\mathrm{fin}}$, $I_{\mathrm{acc}}$, $\ldots_{\mathrm{tot}}$, $W_{\rm net}$, $\mu_{\mathrm{per}}$, $\phi_{\mathrm{tot}}$, $M_{\rm tot}$, $Q_{\mathrm{amp}}$, $\tilde{P}_{\mathrm{tot}}$, $\prod_{\text{legs}}$, $E_{\rm tot}$, $\Pi_{\mathrm{prod}}$, $\pm_{\mathrm{tot}}$, $v_{\mathrm{tot}}$, $N_{\mathrm{pairs}}$, $P_{\rm tot}$, $\mathcal{L}_{\text{part}}$, $H_{\text{raw}}$, $\Box_{\mathrm{corpus}}$, $\int_{\text{orbits}}$, $\mu_{\mathrm{tot}}$, $\psi_{\mathrm{tot}}$, $\sum_{\text{complete pairings}}$, $(\ldots)_{\text{columns}}$, $P_{\mathrm{tot}}$, $T_{\mu\nu}_{\mathrm{tot}}$, $\int_{\text{per}}$, $\max_{\text{measurements}}$, $\prod_{\text{all legs}}$, $\prod_{\text{entries in column }3}$, $\prod_{\text{entries in row }i}$, $\prod_{\text{pairs}}$, $\sum_{\text{complete contractions}}$, $\sum_{\text{double contractions}}$, $\sum_{\text{internal indices}}$, $\sum_{\text{single contractions}}$, $\theta_{\rm max}$, $\underbrace{h_te_t}_{\text{rank }0}$, $\underbrace{i v_ke_k}_{\text{rank }1}$, $\vec{\tilde S}^{\pm}_{\mathrm{tot}}$, $a_{\text{measured}}$.</li>
+<li><strong>Regime, boundary and asymptotic labels</strong>: $\Phi_{\mathrm{cl}}$, $G_{\mathrm{ret}}$, $S_{\mathrm{cl}}$, $U_{\mathrm{int}}$, $G_{\mathrm{adv}}$, $0_{\mathrm{in}}$, $\tilde{\mathcal L}_{\mathrm{ret}}$, $c_{\mathrm{loc}}$, $K_{\mathrm{ret}}$, $r_{\mathrm{out}}$, $V_{\text{eff}}$, $W_{\rm ext}$, $J_{\mathrm{eff}}$, $S_{\mathrm{int}}$, $\ldots_{\mathrm{out}}$, $\tilde{P}_{\rm in}$, $\ldots_{\mathrm{ret}}$, $\omega_{\mathrm{out}}$, $0_{\mathrm{out}}$, $V_{\mathrm{eff}}$, $\theta_{\text{eff}}$, $\varepsilon_{\mathrm{out}}$, $\psi_{\mathrm{small}}$, $B_{\rm eff}$, $\omega_{\mathrm{eff}}$, $\psi_{\mathrm{eff}}$, $\psi_{\mathrm{large}}$, $\tilde{P}_{\rm out}$, $\gamma_{\mathrm{geo}}$, $\ldots_{\mathrm{adv}}$, $\ldots_{\text{vac}}$, $\rho_{\mathrm{coh}}$, $\tilde{Ϛ}_{\mathrm{out}}$, $\Omega_{\mathrm{eff}}$, $\tilde{Ϛ}_{\text{out}}$, $M_{\rm out}$, $\chi_{\mathrm{in}}$, $\phi_{\mathrm{cl}}$, $\rho_{\mathrm{ret}}$, $\theta_{\mathrm{bdry}}$, $a_{\text{in}}$, $h_{\mathrm{eff}}$, $u_{\mathrm{eff}}$, $B_{\mathrm{eff}}$, $\mathcal{L}_{\mathrm{int}}$, $\mathcal{S}_{\rm env}$, $\tilde{Ϛ}_{\mathrm{in}}$, $p_{\mathrm{out}}$, $x_{\mathrm{cl}}$, $A_{\mathrm{hor}}$, $J_{\mathrm{ret}}$, $S_{\rm env}$, $T_{\mathrm{loc}}$, $\chi_{\mathrm{out}}$, $\ldots_{\text{on shell}}$, $u_{\mathrm{in}}$, $u_{\mathrm{out}}$, $E_{\text{vac}}$, $P_{\rm bound}$, $S_{\text{bdry}}$, $V_{\mathrm{out}}$, $\hbar_{\mathrm{eff}}$, $\int_{\text{antiperiodic}}$, $\int_{\text{periodic}}$, $\ldots_{\mathrm{vac}}$, $\ldots_{\text{ret}}$, $\mathcal{L}_{\mathrm{eff}}$, $\mathcal{M}_{\text{vac}}$, $\omega_{\rm body}$, $\rangle_{\mathrm{out}}$, $\sum_{\mathrm{in}}$, $\sum_{\mathrm{out}}$, $\tilde{J}_{\mathrm{eff}}$, $(\ldots)_{\mathrm{cl}}$, $(\ldots)_{\text{in}}$, $E_{\mathrm{out}}$, $E_{\rm env}$, $G_{\text{ret}}$, $H^1_{\mathrm{loc}}$, $H_{\rm large}$, $H_{\text{int}}$, $I_{\mathrm{out}}$, $J_{\mathrm{in}}$, $J_{\mathrm{out}}$, $L_{\text{int}}$, $P_{\rm free}$, $\int_{\text{shell}}$, $\lambda_{\mathrm{out}}$, $\lambda_{\text{eff}}$, $\ldots_{\text{static}}$, $\omega_{\mathrm{in}}$, $\rangle_{\mathrm{vac}}$, $\rho_{\mathrm{continuum}}$, $\theta_{\mathrm{vac}}$, $\tilde{P}_{\mathrm{in}}$, $\tilde{P}_{\mathrm{out}}$, $\tilde{Ϛ}_{\text{vac}}$, $j_{\rm bound}$, $k_{\mathrm{out}}$, $m^2_{\mathrm{sol}}$, $p_{\mathrm{in}}$, $r_{\text{in}}$, $x_{\mathrm{end}}$, $x_{\mathrm{start}}$.</li>
+<li><strong>Scheme, construction and qualifier labels</strong>: $\tilde{K}_{\mathrm{mod}}$, $J_{\mathrm{eg}}$, $K_{\mathrm{kin}}$, $K_{\mathrm{mod}}$, $\Pi_{\mathrm{sym}}$, $\Pi_{\mathrm{singlet}}$, $Q_{\mathrm{Had}}$, $\Omega_{\mathrm{LT}}$, $\Pi_{\mathrm{asym}}$, $P_{\mathrm{can}}$, $J_{\mathrm{ex}}$, $\tilde{P}_{\mathrm{kin}}$, $[\ldots]_{\mathrm{gr}}$, $\Omega_{\mathrm{sgn}}$, $i_{\mathrm{Cl}}$, $G_{\mathrm{inv}}$, $p_{\mathrm{can}}$, $S_{\mathrm{YM}}$, $S_{\mathrm{lin}}$, $\mathcal{V}_{\text}$, $d_{\mathrm{FS}}$, $\Omega_{\mathrm{CS}}$, $\mathcal{A}_{\mathrm{tr}}$, $E_{\mathrm{can}}$, $G_{\mathrm{SM}}$, $Q_{\mathrm{AB}}$, $\Pi_{\mathrm{nil}}$, $\Sigma_{\mathrm{nc}}$, $s^2_{\mathrm{FS}}$, $P_{\mathrm{sym}}$, $Q_{\mathrm{BC}}$, $S_{\rm vec}$, $\sum_{\text{Weyl}}$, $v_{\mathrm}$, $G^{(\mu)}_{\mathrm{inv}}$, $H_{\mathrm{nc}}$, $J_{\mathrm{CS}}$, $O_{\mathrm{cc}}$, $Q_{\mathrm{ph}}$, $V_{\text}$, $\mathrm{ReTr}_{\text{spinor}}$, $E_{\mathrm{EM}}$, $S_{\mathrm{gh}}$, $\ldots_{\text{module}}$, $\mathcal{L}_{\mathrm{gauge}}$, $A_{\mathrm{WKB}}$, $F_{\mathrm{EM}}$, $G_{\mathrm{GUT}}$, $H_{\mathrm{NR}}$, $Q_{\mathrm{ba}}$, $S_{\mathrm{ps}}$, $W_{\rm erase}$, $\mathcal{L}_{\text}$, $\mathcal{S}_{\rm cg}$, $\theta_{\mathrm{Hannay}}$, $(\ldots)_{\mathrm{phase}}$, $(\ldots)_{\mathrm{spin}}$, $E_{\mathrm{cas}}$, $E_{\text{field}}$, $F_{\mathrm{el}}$, $Q_{\mathrm{BRST}}$, $S_{\mathrm{gf}}$, $S_{\text{aux}}$, $W_{\mathrm{corr}}$, $\Omega_{\mathrm{CAR}}$, $\Phi_{\mathrm{St}}$, $\mathcal{H}_{\mathrm{phys}}$, $\mathcal{L}_{\mathrm{EDM}}$, $\mathcal{L}_{\mathrm{gf}}$, $\mathcal{V}_{\mathrm{field}}$, $\omega_{\mathrm{obs}}$, $\prod_{\text{modes}}$, $\sum_{\text{modes}}$, $\tilde{Ϛ}_{\mathrm{spin}}$, $i_{\mathrm{mat}}$, $n_{\mathrm{NG}}$, $r_{\mathrm{red}}$, $u_{\mathrm r2}$, $A_{\mathrm{PV}}$, $E_{\text{fs}}$, $G_{\mathrm{ch}}$, $K_{\rm beam}$, $M_{\mathrm{FM}}$, $M_{\mathrm{polar}}$, $N_{\mathrm{mode}}$, $Q_{\mathrm{em}}$, $S_{\mathrm{Maxwell}}$, $S_{\mathrm{em}}$, $T_{\text{day}}$, $X_{\mathrm{PMNS}}$, $Z_{\text{boson}}$, $Z_{\text{fermion}}$, $\Phi_{\mathrm{inv}}$, $\delta_{\mathrm{CP}}$, $\ldots_{\mathrm{gh}=0}$, $\mathcal{L}_{\mathrm{Maxwell}}$, $\mathcal{L}_{\mathrm{gh}}$, $\mathcal{L}_{\mathrm{kin}}$, $\mathcal{V}_{\mathrm{CTP}}$, $\sum_{\text{doublets}}$, $\tilde{\nabla}_{\mathrm{stat}}$, $c_{\text{Dirac}}$, $c_{\text{boson}}$, $d_{\rm FR}$, $h_{\rm KS}$, $(\ldots)_{\mathrm{diag}}$, $(\ldots)_{\text{AP}}$, $A_{\mathrm{hyp}}$, $E_{\mathrm{Dir}}$, $E_{\mathrm{Zeeman}}$, $E_{\rm SO}$, $E_{\rm beam}$, $E_{\rm exact}$, $E_{\rm kin}$, $E_{\text{singlet}}$, $E_{\text{triplet}}$, $F_{\text{Cor}}$, $F_{\text{cf}}$, $G_{\mathrm{vec}}$, $H_{\mathrm{DCB}}$, $H_{\mathrm{osc}}$, $H_{\text{field}}$, $J_{\mathrm{CP}}$, $L_{\text{constr}}$, $P_{\mathrm{succ}}$, $S_{\mathrm{CS}}$, $S_{\mathrm{QCD}}$, $S_{\rm info}$, $S_{\text{parent}}$, $T_{\mu\nu}_{\mathrm{matter}}$, $\Delta_{\mathrm{vV}}$, $\Omega_{\text{enclosed}}$, $\Phi_{\mathrm{in/out}}$, $\Phi_{\text{boson}}$, $\Pi_{\mathrm{other}}$, $\Psi_{\text{fermion}}$, $\Theta_{\mathrm{cm}}$, $\int_{\text{enclosed}}$, $\kappa_{\mathrm{div}}$, $\ldots_{\mathrm{HS}}$, $\ldots_{\mathrm{Sym}^2V}$, $\ldots_{\mathrm{ts}}$, $\ldots_{\text{one loop}}$, $\ldots_{\text{one mode}}$, $\mathbb{C}^2_{\mathrm{mult}}$, $\mathcal{D}_{\text{adjoint}}$, $\mathcal{F}_{\text{even}}$, $\mathcal{F}_{\text{odd}}$, $\mathcal{S}_{\rm info}$, $\mathrm{Lk}_{\text{single}}$, $\pi_{\mathrm{tr}}$, $\rangle_{\mathrm{ts}*}$, $\rangle_{\mathrm{ts}}$, $\rho_{\text{mass}}$, $\sum_{\text{colour}}$, $\theta_{\mathrm{est}}$, $\tilde{P}^{\natural}_{\mathrm{kin}}$, $\tilde{Ϛ}_{\mathrm{mix}}$, $\tilde{Ϛ}_{\mathrm{pol}}$, $m^2_{\mathrm{atm}}$, $r_{\mathrm{cg}}$, $s^2_{\mathrm{Bures}}$, $v_{\mathrm{app}}$, $x_{\mathrm{src}}$, $y_{\mathrm{src}}$, $z_{\mathrm{src}}$, $(\ldots)_{\mathrm{em}}$, $(\ldots)_{\text{sym}}$, $(\ldots)_{\text{traceless}}$, $2_{\mathrm{spin}}$, $2_{\mathrm{sublattice}}$, $2_{\mathrm{valley}}$, $C^2_{\rm chir}$, $C^2_{\rm spin}$, $E_{\mathrm{Fock}}$, $E_{\mathrm{kin}}$, $E_{\mathrm{mot}}$, $E_{\mathrm}$, $H^n_{\mathrm{Tate}}$, $H_{\mathrm{Pauli}}$, $H_{\text{ferm}}$, $H_{\text{spin}}$, $J_{\mathrm{gf}}$, $J_{\mathrm{gh}}$, $K_{\mathrm{ball}}$, $L_{\mathrm{kin}}$, $L_{\text{space}}$, $N_{\mathrm{Goldstone}}$, $N_{\mathrm{gh}}$, $N_{\text{baryon}}$, $P_{\mathrm{asym}}$, $P_{\text{circ}}$, $P_{\text{lin}}$, $R_{\mathrm{el}}$, $S_{\mathrm{Regge}}$, $S_{\mathrm{spec}}$, $S_{\text{matter}}$, $T_{\mathrm{WKB}}$, $T_{\mathrm{exact}}$, $T_{\mathrm{kin}}$, $T_{\mu\nu}_{\mathrm{can}}$, $T_{\mu\nu}_{\mathrm{em}}$, $T_{\mu\nu}_{\mathrm{imp}}$, $U_{\rm mag}$, $Z_{\mathrm{saddle}}$, $[\ldots]_{\mathrm{cas}}$, $[\ldots]_{\mathrm{vec}}$, $\Delta_{\text{SR}}$, $\Gamma^{(4)}_{\text{1-loop}}$, $\Gamma_{\mathrm{inv}}$, $\Gamma_{\mathrm{theor}}$, $\Pi_{\mathrm{triv}}$, $\Psi_{\mathrm{II}}$, $\Sigma_{\mathrm{II}}$, $\chi_{\mathrm{in/out}}$, $\chi_{\text{top}}$, $\circ{}_{\mathrm{ts}}$, $\epsilon_{\mathrm{alt}}$, $\gamma_{\mathrm{Berry}}$, $\gamma_{\rm conv}$, $\gamma_{\text{spinor}}$, $\int_{\text{b.c.}}$, $\int_{\text{paths via slit }j}$, $\ldots_{\mathrm{div}=0}$, $\ldots_{\mathrm{exc}}$, $\ldots_{\mathrm{opt}}$, $\ldots_{\rm NR}$, $\ldots_{\rm exact}$, $\ldots_{\rm vec}$, $\ldots_{\text{abelian curl}}$, $\ldots_{\text{adjoint-valued curvature: two-sided}}$, $\ldots_{\text{algebra commutator}}$, $\ldots_{\text{c-number}}$, $\ldots_{\text{exp}}$, $\ldots_{\text{leading}}$, $\ldots_{\text{matter field: one-sided (left)}}$, $\ldots_{\text{scalar}}$, $\ldots_{\text{spin }0}$, $\ldots_{\text{spin }1}$, $\ldots_{\text{vector}}$, $\ldots_{\text}$, $\mathcal{A}_{\text{rep}}$, $\mathcal{D}_{\text{defining}}$, $\mathcal{E}_{\mathrm{uniform}}$, $\mathcal{F}_{\text{field}}$, $\mathcal{H}_{\mathrm{tr}}$, $\mathcal{L}_{\mathrm{'t Hooft}}$, $\mathcal{L}_{\mathrm{cc}}$, $\mathcal{L}_{\mathrm{mass}}$, $\mathcal{L}_{\mathrm{nc}}$, $\mathcal{L}_{\text{Dirac}}$, $\mathcal{L}_{\text{Majorana}}$, $\mathcal{L}_{\text{first order}}$, $\mathcal{S}_{\rm th}$, $\mathrm{Lk}_{\text{double}}$, $\mu_{\rm Dirac}$, $\mu_{\rm Weyl}$, $\omega_{\mathrm{rec}}$, $\omega_{\mathrm{tr}}$, $\prod_{\text{all nine entries}}$, $\psi_{\mathrm{WKB}}$, $\rangle_{\mathrm{tr}}$, $\rangle_{\text{spinor}}$, $\sum_{\mathrm{colour}}$, $\sum_{\mathrm{perms}}$, $\sum_{\mathrm{spins}}$, $\sum_{\text{pairings } \pi}$, $\tau_{\text{space}}$, $\theta^{\rm eff}_{\rm lept}$, $\tilde{A}_{\text{rep}}$, $\tilde{F}_{\text{EM}}$, $\tilde{Ϛ}_{\rm cg}$, $\tilde{Ϛ}_{\text{tr}}$, $\underbrace{\bigl(c_1c_2+s_1s_2\,\vec u_x\cdot\vec u_y\bigr) + i\bigl(c_1s_2\,\vec u_y+s_1c_2\,\vec u_x\bigr)}_{\text{Hermitian part}}$, $\underbrace{\exp(-\beta h_t)\cosh(\beta|\vec h|)}_{\text{scalar}}$, $\underbrace{\exp(-\beta h_t)\sinh(\beta|\vec h|)}_{\text{coefficient}}$, $\underbrace{c\,\boldsymbol\alpha\cdot\vec\pi}_{\textstyle O}$, $\underbrace{i\,\varpi\,e_t}_{\text{anti-Hermitian}}$, $\underbrace{s_1s_2\,\vec u_x\times\vec u_y}_{\text{anti-Hermitian part}}$, $\underbrace{x\,e_t}_{\text{Hermitian}}$, $\underbrace{ϙA_0}_{\textstyle\mathcal{E}}$, $a^{\natural}_{\mathrm{tr}}$, $a_{\text{framework}}$, $c_{\mathrm{Dirac}}$, $c_{\mathrm{boson}}$, $c_{\text{Majorana}}$, $m_{\text{exp}}$, $m_{\text{th}}$, $p_{\mathrm{kin}}$, $v_{\mathrm{ph}}$.</li>
+<li><strong>Object names</strong>: $\tilde{K}_{\mathrm{f}}$, $Q_{\mathrm f}$, $Q_{\mathrm A}$, $Q_{\mathrm H}$, $Q_{\mathrm{f}t}$, $Q_{\mathrm d}$, $Q_{\mathrm n}$, $g_{\mathrm Y}$, $\Box_{\text{s}}$, $V_{\mathrm p}$, $u_{\mathrm s}$, $J_{\mathrm q}$, $j_{\mathrm n}$, $A_{\mathrm u}$, $E_{\mathrm D}$, $T_{\mathrm H}$, $U_{\mathrm n}$, $B_{\mathrm D}$, $\rangle_{\mathrm D}$, $n_{\mathrm B}$, $s_{\mathrm R}$, $\Pi_{\mathrm f}$, $\tilde{Q}_{\mathrm H}$, $G_{\mathrm{S}}$, $H_{\mathrm D}$, $K_{\mathrm s}$, $N_{\mathrm D}$, $\Delta_{\mathrm{A}}$, $\tilde{Q}_{\mathrm A}$, $M_{\mathrm c}$, $\tilde{H}_{\mathrm{H}}$, $F_{\mathrm D}$, $H_{\mathrm{c}}$, $Q_{\mathrm p}$, $D_{\mathrm s}$, $Q_{\mathrm B}$, $Q_{\mathrm{f}\mu}$, $\mathbb{H}_{\mathrm{s}}$, $g_{\mathrm D}$, $S_{\mathrm{E}}$, $\mathcal{L}_{\mathrm{H}}$, $\mathcal{L}_{\mathrm{S}}$, $w_{\mathrm{U}(1)}$, $(\ldots)_{\mathrm c}$, $S_{\mathrm P}$, $U_{\mathrm{p}}$, $\Pi_{\mathrm i}$, $\psi_{\mathrm c}$, $\tilde{A}_{\mathrm g}$, $n_{\mathrm F}$, $K_{\mathrm f}$, $Z_{\mathrm s}$, $\eta_{\mathrm s}$, $\psi_{\mathrm u}$, $\theta_{\mathrm W}$, $u_{\mathrm p}$, $u_{\mathrm q}$, $x_{\mathrm f}$, $E_{\rm D}$, $O_{\mathrm c}$, $Q_{\mathrm{p}}$, $R_{\mathrm d}$, $\Omega_{\mathrm{T}}$, $\Pi_{\mathrm{p}}$, $\nabla_{\mathrm{E}}$, $\rVert_{\mathrm F}$, $B_{\mathrm d}$, $E_{\mathrm d}$, $E_{\mathrm n}$, $G_{\mathrm F}$, $G_{\mathrm{c}}$, $H_{\mathrm n}$, $J_{\mathrm{e}}$, $J_{\mathrm{m}}$, $T_{\mathrm i}$, $T_{\mathrm m}$, $T_{\mathrm{m}}$, $\Omega_{\mathrm E}$, $\Omega_{\mathrm{F}}$, $\Pi_{\mathrm p}$, $\Pi_{\mathrm q}$, $\Pi_{\mathrm{c}}$, $\alpha_{\mathrm H}$, $\beta_{\mathrm f}$, $\mathcal{L}_{\mathrm{M}}$, $\mu_{\mathrm m}$, $\omega_{\mathrm S}$, $\phi_{\mathrm e}$, $\rho_{\mathrm n}$, $\tilde{\Sigma}_{\mathrm{O}}$, $s^2_{\mathrm E}$, $S_{\mathrm D}$, $S_{\mathrm{P}k}$, $T_{\mathrm{i}}$, $W_{\mathrm D}$, $X_{\mathrm{i}}$, $X_{\mathrm{m}}$, $\Psi_{\mathrm{I}}$, $\Sigma_{\mathrm O}$, $\gamma_{\mathrm D}$, $\mathbb{A}_{\mathrm c}$, $\mathbb{B}_{\mathrm c}$, $\mathbb{S}_{\mathrm c}$, $\mathcal{A}_{\mathrm c}$, $\mathcal{L}_{\mathrm{P}}$, $\mathsf{J}_{\mathrm D}$, $\mathsf{J}_{\mathrm R}$, $\omega_{\mathrm{S}}$, $\rho_{\mathrm{B}}$, $\sigma_{\mu\nu}_{\mathrm D}$, $\sum_{\text{R}}$, $\tilde{F}_{\mathrm g}$, $m_{\mathrm u}$.</li>
+<li><strong>Frame, reference and direction labels</strong>: $B_{\mathrm{right}}$, $U_{\rm CM}$, $H_{\mathrm{pos}}$, $\psi_{\rm rel}$, $v_{\rm rel}$, $U^{\natural}_{\rm CM}$, $g_{\mathrm t}$, $v_{\mathrm{rel}}$, $\gamma_{\mathrm{rel}}$, $\Pi_{\mathrm x}$, $\Pi_{\mathrm z}$, $\mathbb{C}^2_{\mathrm{br}}$, $m_{\text{rel}}$, $E_{\mathrm{CM}}$, $F_{\rm gas}$, $P_{\text{mech}}$, $V_{\mathrm{pot}}$, $\gamma_{\mathrm{Panch}}$, $\gamma_{\rm rel}$, $\sigma_{\mathrm{KN}}$, $E_{\mathrm{grav}}$, $\Delta_{\mathrm{PJ}}$, $F_{\mathrm{pos}}$, $S_{\rm gas}$, $\tilde{V}_{\mathrm{lab}}$, $(\ldots)_{\text{grav}}$, $E_{\text{rest}}$, $V_{\rm CM}$, $\ldots_{\text{tangential}}$, $A_{\text{rel}}$, $E_{\mathrm{rest}}$, $R_{\mathrm{pos}}$, $U_{\text{lab}\to\text{mov}}$, $\ldots_{\rm rest}$, $\rho_{\mathrm{grav}}$, $\sum_{\text{left-handed}}$, $\sum_{\text{right-handed}}$, $\tilde{V}_{\mathrm{mom}}$, $\underbrace{4}_{\text{tetrad directions}}$.</li>
+<li><strong>Labels that carry a coordinate</strong>: $s_{\mathrm{tot},z}$, $U_{\mathrm L,2}$, $S_{\mathrm{tot},k}$, $U_{\mathrm b,1}$, $U_{\mathrm L,1}$, $U_{\mathrm b,2}$, $S_{\mathrm{tot},3}$, $S_{\mathrm{tot},\pm}$, $s_{\mathrm{fin},z}$, $S_{\mathrm{tot},i}$, $S_{\mathrm{tot},j}$, $\tilde{K}_{\mathrm{mod},W}$, $S_{\mathrm{tot},+}$, $S_{\mathrm{tot},\alpha}$, $S_{\mathrm{tot},-}$, $U_{\mathrm L,\tilde{V}}$, $F_{\mathrm g,\mu\nu}$, $J_{\mathrm{CS},\mu}$, $S_{\mathrm{tot},1}$, $S_{\mathrm{tot},2}$, $\mathcal{A}_{\mathrm g,\mu}$, $H_{\mathrm{pos},y}$, $Q_{\mathrm{p},y}$, $H_{\mathrm{pos},l}$, $U_{\mathrm{p},l}$, $\tilde{K}_{\mathrm{f},2}$, $\tilde{K}_{\mathrm{mod},V}$, $S_{\mathrm{tot},\perp}$, $U_{\mathrm L,\tilde{V}_2}$, $D_{\mathrm{ps},\pm}$, $\tilde{K}_{\mathrm{f},a}$, $\tilde{Q}_{\mathrm{osc},1}$, $\tilde{Q}_{\mathrm{osc},2}$, $\tilde{Q}_{\mathrm{osc},3}$, $S_{\mathrm{tot},\beta}$, $D_{\mathrm{sc},+}$, $D_{\mathrm{sc},-}$, $J_{\mathrm{eg},2}$, $J_{\mathrm{eg},k}$, $K_{\mathrm{rad}\,\mu}$, $S^{+}_{\mathrm{tot},i}$, $S^{-}_{\mathrm{tot},j}$, $S_{\rm th,env}$, $\tilde{K}_{\mathrm{f},1}$, $J_{\mathrm{eg},l}$, $J_{\mathrm{eg},nm}$, $P_{\mathrm{can},\mu}$, $U_{\mathrm L,\vec v}$, $\Phi_{\mathrm{cl},+}$, $\Phi_{\mathrm{cl},-}$, $p_{\mathrm{can},y}$, $p_{\mathrm{can},z}$, $D_{\mathrm g,\mu}$, $D_{\mathrm{sc},\pm}$, $P_{\mathrm{kin},\mu}$, $U_{\mathrm{int,rev}}$, $V_{\mathrm p,BA}$, $V_{\mathrm p,CB}$, $\gamma_{\mathrm{alt}\,\mu}$, $\omega_{\mathrm{in},\vec k}$, $\omega_{\mathrm{out},\vec k}$, $D_{\mathrm{ps},+}$, $J_{\mathrm{gf},\nu a}$, $J_{\mathrm{gh},\nu a}$, $K_{\mathrm{kin},\pm}$, $K_{\mathrm{mod},0}$, $P_{\mathrm{can},2}$, $S^{+}_{\mathrm{tot},j}$, $S^{+}_{\mathrm{tot},k}$, $S^{-}_{\mathrm{tot},i}$, $S^{-}_{\mathrm{tot},k}$, $S_{\mathrm{tot},\mp}$, $U_{\mathrm L,\tilde V}$, $U_{\mathrm L,\tilde{V}_{\mathrm{out}}}$, $U_{\mathrm b,x}$, $U_{\mathrm b,y}$, $U_{\mathrm{int,inv}}$, $V_{\mathrm p,CA}$, $\Phi_{\mathrm{cl},1}$, $\Phi_{\mathrm{cl},2}$, $\Phi_{\mathrm{cl},\pm}$, $\int_{\mathrm{SL}(2,\mathbb{C})}$, $\tilde{K}_{\mathrm{mod},\omega}$, $\tilde{K}_{\mathrm{mod},\varphi}$, $\tilde{Ϛ}_{\text{out},1}$, $p_{\mathrm{can},k}$, $u_{\mathrm b,2}$, $A_{\mathrm u,2}$, $A_{\mathrm u,\nu}$, $D_{\mathrm{ps},-}$, $F_{\mathrm g,tx}$, $F_{\mathrm g,xz}$, $H_{\mathrm{pos},0}$, $H_{\mathrm{pos},1}$, $J_{\mathrm{eg},00^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = \omega\left(j_0(\omega r) + j_1(\omega r)\,\vec u_x\right), \qquad \vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},}$, $J_{\mathrm{eg},00^{\,1}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = -\,\omega\,j_1(\omega r)\,r_{,1} + \omega\left(j_0(\omega r)\,\vec e_x + j_1(\omega r)\left(r_{,3}\vec e_y - r_{,2}\vec e_z\right)\right), \qquad r_{,k} = \frac{x_k}{r},}$, $J_{\mathrm{eg},00^{\,\hat e}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = -\,\omega\,j_1(\omega r)\left(\hat e, \vec u_x\right) + \omega\left(j_0(\omega r)\,\hat e - j_1(\omega r)\left[\hat e, \vec u_x\right]\right),}$, $J_{\mathrm{eg},0}$, $K_{\mathrm f,a}$, $K_{\mathrm{mod},\omega}$, $K_{\mathrm{mod},\varphi}$, $K_{\mathrm{ret,FD}}$, $P_{\mathrm{can},0}$, $P_{\mathrm{can},k}$, $Q_{\mathrm f,\mu}$, $S^{\pm}_{\mathrm{tot},i}$, $S^{\pm}_{\mathrm{tot},j}$, $S^{\pm}_{\mathrm{tot},k}$, $S_{\mathrm{tot},\mu}$, $S_{\mathrm{tot},z}$, $U_{\mathrm L,\tilde V_2}$, $U_{\mathrm L,k}$, $U_{\mathrm b,2\leftarrow1}$, $U_{\mathrm{p},0}$, $U_{\mathrm{p},1}$, $V_{\mathrm p,1}$, $V_{\mathrm p,2}$, $V_{\mathrm p,\mathrm{tot}}$, $[\ldots]_{\mathrm{sym},\,\mathrm{traceless}}$, $\ldots_{\mathrm{span}\{\varepsilon_+,\varepsilon_-\}}$, $\ldots_{\text{spacelike planes}\;\in\,\mathbb{M}_-}$, $\ldots_{\text{timelike planes}\;\in\,\mathbb{M}_+}$, $\mathcal{A}_{\mathrm g,0}$, $\mathcal{A}_{\mathrm g,k}$, $\tilde{K}_{\mathrm{mod},L}$, $\tilde{K}_{\mathrm{mod},R}$, $\tilde{P}_{\mathrm{kin},2}$, $\tilde{P}_{\rm in,2}$, $\tilde{P}_{\rm out,2}$, $\tilde{Q}_{\mathrm{osc},\nu}$, $\tilde{Ϛ}_{\mathrm{spin},i}$, $\underbrace{2}_{\mathrm{U}(2),\ \text{framework}}$, $\underbrace{6}_{\text{real dim } \mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}}$, $f_{\text{ext}\,\mu}$, $h_{\mathrm{eff},k}$, $s_{\mathrm{tot,II},z}$, $s_{\mathrm{tot,II}}$, $u_{\mathrm r,1}$, $u_{\mathrm r,2}$.</li>
+</ul>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Non-validated upper expressions</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/introduction-to-the-biquaternion-universe.html"><em>Introduction to the Biquaternion Universe</em></a></td>
+<td>$O^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/a-brief-history-of-biquaternions-in-physics.html"><em>A Brief History of Biquaternions in Physics</em></a></td>
+<td>$A^{\sim}$ (1), $B^{+}$ (1), $B^{\sim}$ (1), $J^{\sim}$ (1), $O^{+}$ (1)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-computational-cost-of-biquaternion-arithmetic.html"><em>The Computational Cost of Biquaternion Arithmetic</em></a></td>
+<td>$M^{+}$ (2), $M^{-}$ (2), $\mathbb{B}^{n\times m}$ (2)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html"><em>What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</em></a></td>
+<td>$G^{\vee}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-empirical-status-of-the-biquaternion-framework.html"><em>The Empirical Status of the Biquaternion Framework</em></a></td>
+<td>$O^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conventions-in-the-biquaternion-universe.html"><em>Algebra and Element Conventions</em></a></td>
+<td>$T^{(k)}$ (2), $F^{\mathrm{dual}}$ (1), $G^{\mathrm{pf}}$ (1), $H^{n}$ (1), $\Delta^{-it'}$ (1), $\Delta^{it'}$ (1), $\mathsf{M}_4^{L}$ (1), $f^{\mathrm{ax}}$ (1)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conventions-of-the-matrix-models.html"><em>Matrix Representations Conventions</em></a></td>
+<td>$\mathsf{M}_4^{L}$ (11), $\mathsf{M}_4^{R}$ (5), $M_4^{L}$ (4), $M_4^{R}$ (4), $T_{\mu\nu}^{\mathrm{coef}}$ (1), $\mathbb{B}^{n\times m}$ (1)</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conventions-of-the-operators-and-the-calculus.html"><em>Operator and Calculus Conventions</em></a></td>
+<td>$K^{0}$ (1), $M_4^{\sigma}$ (1), $\mathbb{B}^{\sigma}$ (1), $\mathrm{Cl}^{i}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/roots-idempotents-and-quantum-information.html"><em>Roots, Idempotents and Quantum Information</em></a></td>
+<td>$\Phi^{+}$ (1), $\Pi_i^{(b)}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html"><em>The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</em></a></td>
+<td>$\mathrm{Cl}^{1}$ (8), $\mathrm{Cl}^{0}$ (7)</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-and-the-three-elementary-carriers.html"><em>Spin and the Three Elementary Carriers</em></a></td>
+<td>$S^{\mathrm{c}}$ (11), $S^{\perp_B}$ (7), $S^{\perp}$ (2), $S^{(\mathrm{adj})}$ (1), $W^{+}$ (1), $W^{-}$ (1), $\Omega^{-}$ (1)</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-physical-interpretation-of-chirality.html"><em>Biquaternion Physical Interpretation of Chirality</em></a></td>
+<td>$S^{\mathrm{c}}$ (19)</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-probability-band-no-clock-three-species-and-the-geometric-phase.html"><em>The Probability Band: No Clock, Three Species and the Geometric Phase</em></a></td>
+<td>$Q^{\star k}$ (1), $Q^{n}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html"><em>The General Polar Decomposition, the Amplitude and the Operator-to-State Map</em></a></td>
+<td>$Q_H^{+}$ (3)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-decomposition-and-its-three-pairings.html"><em>The Polar Decomposition and Its Three Pairings</em></a></td>
+<td>$Q_H^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html"><em>The Hamilton Pairing: Mass as Modulus and the Complex Angle</em></a></td>
+<td>$O^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-zero-divisor-cone-and-the-massless-spectrum.html"><em>The Zero-Divisor Cone and the Massless Spectrum</em></a></td>
+<td>$Q_H^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html"><em>The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point</em></a></td>
+<td>$\Sigma_{10}^{\mathrm{J}}$ (3), $\Sigma_{10}^{\mathrm{s}}$ (3), $Q^{n}$ (1), $Q_t^{n}$ (1)</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html"><em>The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder</em></a></td>
+<td>$\Upsilon^{n}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-krein-form-and-the-indefinite-structure.html"><em>The Krein Form and the Indefinite Structure</em></a></td>
+<td>$O^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-element-and-operator-representations.html"><em>Element and Operator Representations: The Three Actions</em></a></td>
+<td>$\mathsf{M}_4^{L}$ (9), $\mathsf{M}_4^{R}$ (5), $T^{\approx}$ (2), $L_{\tilde Q}^{\approx}$ (1), $M_4^{L}$ (1), $Q^{t}$ (1), $Q^{x}$ (1), $Q^{y}$ (1), $Q^{z}$ (1)</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pauli-correspondence-and-the-matrix-image.html"><em>The Pauli Correspondence and the Matrix Image</em></a></td>
+<td>$M_4^{L}$ (8), $M_4^{R}$ (1)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unit-group-the-cone-and-the-orders.html"><em>The Unit Group, the Cone and the Orders</em></a></td>
+<td>$O^{+}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/derivatives-fields-and-transforms.html"><em>Derivatives, Fields and Transforms</em></a></td>
+<td>$M_4^{L}$ (3), $\mathbb{R}^{n}$ (2)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unitary-group-gauge-phase-and-the-double-cover.html"><em>The Unitary Group: Gauge, Phase and the Double Cover</em></a></td>
+<td>$O^{+}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frames-rotations-and-the-lorentz-group.html"><em>Frames, Rotations and the Lorentz Group</em></a></td>
+<td>$O^{+}$ (10), $v^{\perp}$ (3)</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html"><em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em></a></td>
+<td>$H^{sl}$ (4)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html"><em>Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</em></a></td>
+<td>$Q_1^{b}$ (1), $Q_3^{a}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html"><em>Angular Momentum and Spin in Biquaternionic Form</em></a></td>
+<td>$Y_l^{l_z}$ (5)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.html"><em>The Determination of the Possible Spins in Biquaternionic Form</em></a></td>
+<td>$S^{(\mathrm{adj})}$ (14), $S^{(\mathrm{adj})\,2}$ (2), $S^{\mathrm c}$ (1)</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.html"><em>The Quantum–Classical Divide in the Biquaternion Framework</em></a></td>
+<td>$\Pi_B^{(j)}$ (8), $\Pi_A^{(i)}$ (5), $Q_A^{(k)}$ (4), $Q_A^{(k){}^{*}}$ (2), $\Pi_B^{(H)}$ (1), $\Pi_B^{(V)}$ (1)</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.html"><em>Fundamental and Derived Elements in the Biquaternion Framework</em></a></td>
+<td>$Q_1^{n}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation.html"><em>The Biquaternion Framework and the Canonical Commutation Relation: Independence, Not a Defect</em></a></td>
+<td>$\mathbb{C}^{N}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/excitation-mode-function-and-the-informational-sector.html"><em>Excitation, Mode Function, and the Informational Sector</em></a></td>
+<td>$w^{(r)}$ (6), $v^{(r)}$ (5)</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-measurement-problem-in-algebraic-form.html"><em>The Measurement Problem in Algebraic Form</em></a></td>
+<td>$\Phi^{\mathrm{deph}}$ (9)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/one-dimensional-scattering-in-biquaternionic-form.html"><em>One-Dimensional Scattering in Biquaternionic Form</em></a></td>
+<td>$V_0^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html"><em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em></a></td>
+<td>$H^{n}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html"><em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em></a></td>
+<td>$E_0^{\mathrm{WKB}}$ (1), $E_1^{\mathrm{WKB}}$ (1), $E_2^{\mathrm{WKB}}$ (1), $E_3^{\mathrm{WKB}}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-path-integral-in-biquaternionic-form.html"><em>The Schrödinger Path Integral in Biquaternionic Form</em></a></td>
+<td>$\omega^{E}$ (3)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html"><em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em></a></td>
+<td>$Y_l^{l_z}$ (8), $\rho^{\,l}$ (1)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/coulomb-scattering-and-rutherfords-formula-in-biquaternionic-form.html"><em>Coulomb Scattering and Rutherford's Formula in Biquaternionic Form</em></a></td>
+<td>$z^{n}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/landau-levels-in-biquaternionic-form.html"><em>Landau Levels in Biquaternionic Form</em></a></td>
+<td>$\omega_c^{\mathrm{s}}$ (2), $\omega_c^{\mathrm s}$ (1), $z^{\,m}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/squeezing-beyond-the-biquaternion-algebra.html"><em>Squeezing Beyond the Biquaternion Algebra</em></a></td>
+<td>$\mathbb{H}^{n}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html"><em>Spin-1/2 Quantum Physics in Biquaternionic Form</em></a></td>
+<td>$O^{+}$ (1), $\Pi_{1,2}^{\vec u}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-two-spins-in-the-singlet-state.html"><em>Exercise: Two Spins in the Singlet State</em></a></td>
+<td>$\Psi^{-}$ (7)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html"><em>The Berry Phase and Geometric Phases in Biquaternionic Form</em></a></td>
+<td>$\mathcal{A}^{(-)}$ (2), $\mathcal{F}^{(+)}$ (1), $\mathcal{F}^{(-)}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-representation-in-biquaternionic-form.html"><em>The Majorana Representation in Biquaternionic Form</em></a></td>
+<td>$z^{\,s+s_z}$ (2), $z^{s+s_z}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html"><em>Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</em></a></td>
+<td>$\alpha^{(i)}$ (11), $\beta^{(j)}$ (1)</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/two-spin-half-particles-in-biquaternionic-form.html"><em>Two Spin-Half Particles in Biquaternionic Form</em></a></td>
+<td>$S^{(a)}$ (2), $S_k^{(a)}$ (1), $\Psi^{+}$ (1), $\pm^{(a)}$ (1)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wigner-eckart-theorem-and-tensor-operators-in-biquaternionic-form.html"><em>The Wigner–Eckart Theorem and Tensor Operators in Biquaternionic Form</em></a></td>
+<td>$T^{(k)}$ (27), $S^{(\mathrm{adj})}$ (5), $\mathcal{D}^{(k)}$ (3)</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-generalized-bloch-ball-for-spin-1-in-the-biquaternion-framework.html"><em>The Generalized Bloch Ball for Spin 1 in the Biquaternion Framework</em></a></td>
+<td>$S^{(\mathrm{adj})}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.html"><em>The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra</em></a></td>
+<td>$\mathrm{Sym}^{n}$ (4), $V^{\oplus k}$ (3)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-1-condensates-and-the-spinor-order-parameter-in-biquaternionic-form.html"><em>Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form</em></a></td>
+<td>$\zeta^{\mathrm{pol}}$ (2), $\zeta_{\vec u}^{\mathrm{pol}}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/povms-and-the-positive-cone-in-biquaternionic-form.html"><em>POVMs and the Positive Cone in Biquaternionic Form</em></a></td>
+<td>$\mathbb{C}^{d}$ (2), $\psi^{\perp}$ (1), $\psi_0^{\perp}$ (1), $\psi_1^{\perp}$ (1)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.html"><em>Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</em></a></td>
+<td>$a^{(\alpha)}$ (4), $\Pi_1^{A}$ (1), $\Pi_2^{A}$ (1), $a_i^{(\alpha)}$ (1)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/mutually-unbiased-bases-and-the-biquaternion-algebra.html"><em>Mutually Unbiased Bases and the Biquaternion Algebra</em></a></td>
+<td>$\Pi_i^{(b)}$ (11), $p_i^{(b)}$ (4), $\Phi^{+}$ (1), $\pm^{(k)}$ (1), $p_s^{(k)}$ (1)</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html"><em>The Bell Basis as the Idempotent Basis of B⊗B</em></a></td>
+<td>$\Phi^{+}$ (10), $\Psi^{-}$ (5), $\Phi^{-}$ (4), $\Psi^{+}$ (4)</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-correlation-function-of-the-bell-states.html"><em>Exercise: The Correlation Function of the Bell States</em></a></td>
+<td>$\Psi^{-}$ (9), $\Phi^{+}$ (8), $\Phi^{-}$ (8), $\Psi^{+}$ (8)</td>
+<td style="text-align: right;">33</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/entangled-subsystems-in-the-biquaternion-framework.html"><em>Entangled Subsystems in the Biquaternion Framework</em></a></td>
+<td>$\Psi^{-}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-reduced-state-of-an-entangled-subsystem.html"><em>Exercise: The Reduced State of an Entangled Subsystem</em></a></td>
+<td>$\Psi^{-}$ (6), $\tilde{Ϛ}_1^{\mathrm{prod}}$ (4)</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-entanglement-entropy-and-the-partial-trace.html"><em>Exercise: Entanglement Entropy and the Partial Trace</em></a></td>
+<td>$\Phi^{+}$ (9), $\Phi^{-}$ (4), $\Psi^{+}$ (1)</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bell-inequality-for-continuous-variables-in-biquaternionic-form.html"><em>The Bell Inequality for Continuous Variables in Biquaternionic Form</em></a></td>
+<td>$S_{\max}^{\mathrm{EPR}}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-chsh-inequality-and-tsirelsons-bound.html"><em>Exercise: The CHSH Inequality and Tsirelson's Bound</em></a></td>
+<td>$\Psi^{-}$ (7), $\Phi^{+}$ (3), $\Phi^{-}$ (2), $\Psi^{+}$ (2)</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-discord-and-correlations-beyond-entanglement-in-biquaternionic-form.html"><em>Quantum Discord and Correlations Beyond Entanglement in Biquaternionic Form</em></a></td>
+<td>$\tilde{Ϛ}_A^{(k)}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/decoherence-as-idempotent-projection.html"><em>Decoherence as Idempotent Projection</em></a></td>
+<td>$\Phi^{\mathrm{deph}}$ (40), $\Psi^{-}$ (5), $\Psi^{+}$ (1)</td>
+<td style="text-align: right;">46</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-channels-and-the-reversible-irreversible-dichotomy.html"><em>Quantum Channels and the Reversible/Irreversible Dichotomy</em></a></td>
+<td>$\Phi^{\mathrm{deph}}$ (8)</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-quantum-channels-and-dephasing-in-m.html"><em>Exercise: Quantum Channels and Dephasing in M₊</em></a></td>
+<td>$\Phi^{\mathrm{deph}}$ (9)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html"><em>The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</em></a></td>
+<td>$K_H^{+}$ (6), $\Pi^{+}$ (1)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-teleportation-in-biquaternionic-form.html"><em>Quantum Teleportation in Biquaternionic Form</em></a></td>
+<td>$\Phi^{+}$ (35), $\Psi^{-}$ (7), $\Phi^{-}$ (6), $\Psi^{+}$ (6)</td>
+<td style="text-align: right;">54</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/superdense-coding-in-biquaternionic-form.html"><em>Superdense Coding in Biquaternionic Form</em></a></td>
+<td>$\Phi^{+}$ (20), $\Phi^{-}$ (5), $\Psi^{+}$ (5), $\Psi^{-}$ (5)</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gates-and-circuits-in-biquaternionic-form.html"><em>Quantum Gates and Circuits in Biquaternionic Form</em></a></td>
+<td>$\Phi^{\mathrm{deph}}$ (2), $\Phi^{+}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-action-principle-and-the-classical-limit-as-stationary-phase-in-biquaternionic-form.html"><em>The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form</em></a></td>
+<td>$\lambda_n^{-s}$ (1), $m^{-s}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/rigid-body-dynamics-and-the-biquaternion-rotor.html"><em>Rigid-Body Dynamics and the Biquaternion Rotor</em></a></td>
+<td>$e_k^{b}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hannays-angles-and-the-classical-geometric-phase-in-biquaternionic-form.html"><em>Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</em></a></td>
+<td>$\omega_b^{\parallel}$ (8), $\omega_b^{\perp}$ (2)</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html"><em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em></a></td>
+<td>$S_0^{A}$ (1), $S_0^{B}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/central-forces-and-the-classical-kepler-problem-in-biquaternionic-form.html"><em>Central Forces and the Classical Kepler Problem in Biquaternionic Form</em></a></td>
+<td>$r^{n}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html"><em>The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form</em></a></td>
+<td>$S^{+}$ (9), $S^{-}$ (9), $\vec{\tilde S}^{+}$ (5), $\vec{\tilde S}^{-}$ (5), $\mathcal{D}^{s_+}$ (1), $\mathcal{D}^{s_-}$ (1)</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.html"><em>The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form</em></a></td>
+<td>$D^{(l)}$ (14), $Y_l^{m}$ (3), $S^{(\mathrm{adj})}$ (1), $Y_2^{m}$ (1), $Y_l^{m*}$ (1), $r_2^{\,l}$ (1)</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-vibrating-ellipsoid-and-higher-multipole-oscillations-in-biquaternionic-form.html"><em>The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form</em></a></td>
+<td>$\mathcal{Q}^{(lab)}$ (13), $\mathcal{Q}^{(b)}$ (11), $D^{(l)}$ (5)</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/why-the-multipole-tower-is-infinite-but-the-biquaternion-algebra-is-not.html"><em>Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not</em></a></td>
+<td>$D^{(l)}$ (31), $\operatorname{Sym}^{l}$ (4), $r^{l}$ (3), $D^{(l_i)}$ (1), $r_2^{\,l}$ (1)</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fisher-information-and-the-biquaternion-norm.html"><em>Fisher Information and the Biquaternion Norm</em></a></td>
+<td>$g^{\rm Q}$ (11), $g^{\rm Bures}$ (1), $u_r^{\!\top}$ (1)</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-biquaternionic-form.html"><em>Maxwell's Equations in the Biquaternionic Formulation</em></a></td>
+<td>$\tilde{F}^{\sim}$ (4), $\tilde{A}^{\sim}$ (1), $\tilde{F}^{+}$ (1)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html"><em>Exercise: The Electromagnetic Energy–Momentum Tensor</em></a></td>
+<td>$\bar{\tilde F}^{\,*}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-field-strength-biquaternion-and-its-invariants.html"><em>The Field-Strength Biquaternion and Its Invariants</em></a></td>
+<td>$F_H^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html"><em>Electromagnetism in Media — The Local Complex Structure at Work</em></a></td>
+<td>$M^{\vec{\alpha}}$ (24), $X^{(n)}$ (14), $M^{\vec{\alpha}_f}$ (4), $g^{(\mp)}$ (3), $\omega^{n}$ (2), $M^{\alpha}$ (1), $M^{\vec\alpha}$ (1), $M^{\vec{\epsilon}}$ (1), $M^{\vec{\mu}}$ (1)</td>
+<td style="text-align: right;">51</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-effective-optical-metric-of-the-local-complex-structure.html"><em>The Effective Optical Metric of the Local Complex Structure</em></a></td>
+<td>$g^{\mathrm{J}}$ (9)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html"><em>Maxwell's Theory on Non-Commutative Spaces and Quaternions</em></a></td>
+<td>$L^{+}$ (3), $T^{\mathrm{can}}$ (3), $G^{+}$ (2), $\tau^{m}$ (2), $T^{\mathrm{sym}\,\mu}$ (1), $T^{\mathrm{sym}}$ (1)</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html"><em>Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</em></a></td>
+<td>$H^{s}$ (12), $\Omega^{-}$ (6), $\epsilon^{\mathrm{gr}}$ (4), $\mu^{\mathrm{gr}}$ (4), $y_j^{-}$ (3), $\vec{\mathcal E}^{m}$ (2), $\Gamma^{+}$ (1), $\Gamma^{-}$ (1), $\Omega^{c}$ (1), $\vec{\mathcal H}^{m}$ (1), $u^{s}$ (1)</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-force-in-biquaternion-form.html"><em>The Lorentz Force in Biquaternion Form</em></a></td>
+<td>$\tilde{F}^{(+)}$ (3), $\tilde{F}^{(-)}$ (3), $\ell_{1,3}^{+}$ (1)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/shock-electromagnetic-waves.html"><em>Shock Electromagnetic Waves</em></a></td>
+<td>$\nabla^{+}$ (4), $D^{+}$ (2), $\tilde{F}^{+}$ (2), $\tilde{F}^{-}$ (2), $D^{-}$ (1)</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/nonlinear-maxwell-equations-in-biquaternionic-form.html"><em>Nonlinear Maxwell Equations in Biquaternionic Form</em></a></td>
+<td>$\mu^{\text{corpus}}$ (3), $\mu^{\text{source}}$ (3), $T^{\alpha t}$ (1)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-and-self-quantized-charge.html"><em>The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</em></a></td>
+<td>$g^{\mathrm{J}}$ (19), $G^{n}$ (5), $f^{+}$ (3), $\xi^{B}$ (1), $\xi^{C}$ (1), $f^{-}$ (1)</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html"><em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em></a></td>
+<td>$D^{-}$ (42), $D^{+}$ (19), $\sigma^{H}$ (6), $\sigma^{E}$ (3), $F^{H}$ (2), $\Pi^{E}$ (2), $\Pi^{H}$ (2), $j^{E}$ (2), $F^{E}$ (1), $\nabla^{+}$ (1), $j^{H}$ (1)</td>
+<td style="text-align: right;">81</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/harmonic-elementary-particles-and-the-periodic-system-of-atoms.html"><em>Harmonic Elementary Particles and the Periodic System of Atoms</em></a></td>
+<td>$P_n^{m}$ (2), $z^{n}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ether-and-photons-in-the-electro-gravimagnetic-programme.html"><em>The Ether and Photons in the Electro-Gravimagnetic Programme</em></a></td>
+<td>$\nabla^{+}$ (11), $\nabla^{-}$ (9)</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-and-the-lepton-mass-spectrum.html"><em>Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</em></a></td>
+<td>$\psi^{\uparrow}$ (7), $\psi^{\mathrm{c}}$ (6), $\ell^{+}$ (3), $F^{\uparrow}$ (2)</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.html"><em>Radiation from Accelerated Charges in Biquaternionic Form</em></a></td>
+<td>$B^{+}$ (11)</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html"><em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em></a></td>
+<td>$O^{+}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.html"><em>The Lorentz Transformation as a Biquaternionic Rotation</em></a></td>
+<td>$O^{+}$ (5), $U_{\mathrm L}^{-{}^{*}}$ (1), $\mathrm{Cl}_{1,3}^{+}$ (1)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html"><em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em></a></td>
+<td>$O^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html"><em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em></a></td>
+<td>$\phi^{H}$ (4), $\bar{R}^{\,\natural}$ (2), $\phi^{H_G}$ (2)</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html"><em>The Lorentz Group in Biquaternionic Form — Structure and Representations †</em></a></td>
+<td>$O^{+}$ (13), $H^{sl}$ (5), $N_k^{-}$ (5), $N_k^{+}$ (4), $N_j^{+}$ (2), $\operatorname{Ind}_P^{G}$ (2), $N_j^{-}$ (1), $N_l^{+}$ (1), $N_l^{-}$ (1), $\mathrm{Cl}_{1,3}^{+}$ (1), $u^{m}$ (1)</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-poincare-group-and-the-biquaternion-frame.html"><em>The Poincaré Group and the Biquaternion Frame</em></a></td>
+<td>$O^{+}$ (9)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-four-momentum-conservation-in-a-collision.html"><em>Exercise: Four-Momentum Conservation in a Collision</em></a></td>
+<td>$K_1^{\rm thr}$ (8), $E_1^{\rm thr}$ (3), $K_{\rm beam}^{\rm thr}$ (3), $E_{\rm beam}^{\rm thr}$ (2)</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html"><em>The Spinor Representation of the Lorentz Group in Biquaternionic Form</em></a></td>
+<td>$O^{+}$ (3), $N_k^{+}$ (2), $N_k^{-}$ (2)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html"><em>The Conformal Group in Biquaternionic Form</em></a></td>
+<td>$O^{+}$ (4), $\mathrm{Cl}^{+}$ (4), $\mathbb{R}^{n,m}$ (1), $\mathrm{Cl}^{-}$ (1)</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/twistor-theory-and-biquaternions.html"><em>Twistor Theory and Biquaternions</em></a></td>
+<td>$O^{+}$ (3), $S^{\omega}$ (3), $\Psi^{+}$ (3), $\nabla^{+}$ (2), $\Psi^{-}$ (1), $\nabla^{-}$ (1), $\psi^{\omega}$ (1)</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.html"><em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em></a></td>
+<td>$E_C^{\text{present}}$ (3), $E_C^{\text{ret}}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-two-body-problem-in-biquaternionic-form.html"><em>The Relativistic Two-Body Problem in Biquaternionic Form</em></a></td>
+<td>$\tilde{P}^{\rm CM}$ (3), $\tilde{P}_a^{\rm CM}$ (3), $P^{\rm CM}$ (1), $\tilde{P}_1^{\rm CM}$ (1), $\tilde{P}_2^{\rm CM}$ (1)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-relativistic-kinematics-of-a-two-body-decay.html"><em>Exercise: The Relativistic Kinematics of a Two-Body Decay</em></a></td>
+<td>$\pi^{+}$ (16), $\pi^{-}$ (8), $K^{+}$ (6), $\tilde{P}_a^{\rm CM}$ (4), $\mu^{+}$ (3), $E_3^{*\max}$ (2), $M_{12}^{\max}$ (1), $M_{12}^{\min}$ (1), $\tilde{P}_1^{\rm CM}$ (1), $\tilde{P}_2^{\rm CM}$ (1)</td>
+<td style="text-align: right;">43</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html"><em>The Biquaternion D'Alembertian and Its Green's Functions</em></a></td>
+<td>$D^{+}$ (6), $D^{-}$ (6), $G^{(\mu)}$ (6), $\nabla^{+}$ (4), $\nabla^{-}$ (4), $\delta^{(d)}$ (2), $K^{0}$ (1), $\tilde{U}^{-{}^{*}}$ (1)</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html"><em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em></a></td>
+<td>$\nabla^{+}$ (11), $\nabla^{-}$ (10), $\varphi^{s}$ (2), $\nabla^{\sigma}$ (1)</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html"><em>Conformal Invariance and the Massless Limit in Biquaternionic Form</em></a></td>
+<td>$\Omega^{\Delta}$ (5), $O^{+}$ (3), $\rangle_{\natural}^{\Delta}$ (3), $\lambda^{-\Delta}$ (2), $G^{(\mu)}$ (1), $\rangle_{\natural}^{-\Delta}$ (1)</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html"><em>Thomson and Compton Scattering: The Biquaternion Polarization Algebra</em></a></td>
+<td>$\varepsilon^{\mathrm{fop}(\lambda)}$ (2), $\varepsilon^{\mathrm{fop}(\lambda_{\mathrm{out}})}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/moller-scattering-in-biquaternionic-form.html"><em>Møller Scattering in Biquaternionic Form</em></a></td>
+<td>$w^{s}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html"><em>The Klein–Gordon Equation in Biquaternionic Form</em></a></td>
+<td>$\nabla^{+}$ (3), $\nabla^{-}$ (3)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html"><em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em></a></td>
+<td>$M_4^{L}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html"><em>The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</em></a></td>
+<td>$G_R^{\,\mathrm{reg}}$ (1), $G_R^{\mathrm{reg}}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html"><em>The Dirac Equation in Biquaternionic Form</em></a></td>
+<td>$S^{\mathrm{c}}$ (18), $P_1^{+}$ (5), $P_1^{-}$ (5), $u^{+}$ (5), $u^{-}$ (5), $\mathrm{Cl}_{1,3}^{+}$ (4), $\tilde{\Psi}_0^{R}$ (4), $\tilde{\Psi}_0^{L}$ (3), $F^{+}$ (1), $F^{-}$ (1), $P^{+}$ (1), $P^{-}$ (1), $\Psi_0^{L}$ (1), $\Psi_0^{R}$ (1), $\mathrm{Cl}^{+}$ (1)</td>
+<td style="text-align: right;">56</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html"><em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em></a></td>
+<td>$F^{+}$ (9), $F^{-}$ (9), $\mathcal{B}^{+}$ (6), $\mathcal{B}^{\bullet}$ (6), $\mathcal{B}^{-}$ (5), $\mathcal{P}^{+}$ (5), $\mathcal{P}^{-}$ (4), $\mathcal{B}^{\bigstar\bigstar}$ (2), $\mathcal{B}^{\bigstar}$ (2), $F^{+\bigstar}$ (1), $P^{+}$ (1), $P^{-}$ (1), $Q^{+}$ (1), $Q^{-}$ (1), $\breve{F}^{-}$ (1)</td>
+<td style="text-align: right;">54</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html"><em>The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</em></a></td>
+<td>$\psi^{\mathrm{rev}}$ (2), $\Gamma^{+}$ (1), $\mathrm{Cl}_{1,3}^{+}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html"><em>The Daviau Map and the Space Clifford Formulation of the Dirac Equation</em></a></td>
+<td>$\varphi^{**}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html"><em>Parra's Four Options of the Dirac Equation and the Discrete Symmetries</em></a></td>
+<td>$\Gamma^{+}$ (8), $\mathrm{Cl}^{+}$ (1), $\mathrm{Cl}_{1,3}^{+}$ (1), $\mathrm{Spin}^{c}$ (1)</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html"><em>The Reflection and the Rotation in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}_{1,3}^{+}$ (4), $\mathrm{Cl}_{1,3}^{-}$ (3), $\Lambda^{\mathrm{Cl}}$ (2), $O^{+}$ (1)</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html"><em>The Spinor Module in Biquaternionic Form and Its Lorentz Action †</em></a></td>
+<td>$O^{+}$ (6), $H^{sl}$ (5), $\mathrm{Cl}_{1,3}^{+}$ (4)</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html"><em>The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</em></a></td>
+<td>$\mu^{+}$ (1), $\mu^{-}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html"><em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit †</em></a></td>
+<td>$v^{(r)}$ (6), $w^{(r)}$ (6), $v^{(s)}$ (4), $\bar{w}^{(r)}$ (3), $\eta^{(r)}$ (3), $\xi^{(r)}$ (3), $\bar{v}^{(r)}$ (2), $\tilde{\Psi}_0^{L}$ (2), $\tilde{\Psi}_0^{R}$ (2), $w^{(r){}^{*}}$ (2), $w^{(s)}$ (2), $\eta^{(r){}^{*}}$ (1), $\eta^{(s)}$ (1), $\xi^{(r){}^{*}}$ (1), $\xi^{(s)}$ (1), $v^{(r){}^{*}}$ (1)</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-in-biquaternionic-form.html"><em>The Gordon Decomposition of the Dirac Current in Biquaternionic Form</em></a></td>
+<td>$T_{\mu\nu}^{\rm BR}$ (2), $T_{\mu\nu}^{\rm canonical}$ (2), $\ell_{1,3}^{+}$ (1)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html"><em>Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</em></a></td>
+<td>$\xi^{(r)}$ (8), $w^{(r)}$ (7), $v^{(r)}$ (6), $M_4^{L}$ (5), $\eta^{(r)}$ (5), $M_4^{R}$ (4), $\delta^{rs}$ (3), $v^{(s)}$ (3), $\gamma_5^{d}$ (2), $\xi^{(r)\dagger}$ (2), $\xi^{(s)}$ (1), $w^{(r)*}$ (1), $w^{(s)}$ (1)</td>
+<td style="text-align: right;">48</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html"><em>Exercise: Chirality and the Weyl Spinors</em></a></td>
+<td>$O^{+}$ (6), $F^{+}$ (1), $F^{-}$ (1)</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html"><em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Spin}^{c}$ (16), $\psi^{c}$ (4), $\tilde{\Psi}^{\,\bullet}$ (4), $\psi_L^{c}$ (1)</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html"><em>Klein–Gordon from the Dirac Square in Biquaternionic Form</em></a></td>
+<td>$v^{(r)}$ (2), $w^{(r)}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html"><em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em></a></td>
+<td>$S^{ab}$ (1), $S^{cd}$ (1), $V^{ab}$ (1), $\ell_{1,3}^{+}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html"><em>The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</em></a></td>
+<td>$\ell_{1,3}^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html"><em>The Electron in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}^{+}$ (1), $v^{(r)}$ (1), $w^{(r)}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html"><em>The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</em></a></td>
+<td>$\mathrm{Cl}^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html"><em>Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</em></a></td>
+<td>$Y_l^{s_{\mathrm{tot},z}+\frac12}$ (3), $Y_l^{s_{\mathrm{tot},z}-\frac12}$ (3), $Y_k^{s_{\mathrm{tot},z}+\frac12}$ (1), $Y_k^{s_{\mathrm{tot},z}-\frac12}$ (1), $Y_{-k}^{s_{\mathrm{tot},z}+\frac12}$ (1), $Y_{-k}^{s_{\mathrm{tot},z}-\frac12}$ (1)</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html"><em>Exercise: The Non-Relativistic Limit and the Pauli Equation</em></a></td>
+<td>$\mathrm{Cl}^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html"><em>The Foldy–Wouthuysen Transformation in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}_{1,3}^{+}$ (2), $\gamma_5^{FW}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html"><em>Zitterbewegung in Biquaternionic Form</em></a></td>
+<td>$\chi^{(r)}$ (3), $\psi^{(r)}$ (3), $\mathrm{Cl}^{+}$ (2), $\eta^{(r)}$ (1), $\omega_Z^{\text{rest}}$ (1), $\xi^{(r)}$ (1)</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html"><em>The Klein Paradox in Biquaternionic Form</em></a></td>
+<td>$j^{x}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html"><em>The Dirac Path Integral in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}_{1,3}^{+}$ (4)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html"><em>Supersymmetric Quantum Physics in the Biquaternion Framework</em></a></td>
+<td>$\mathrm{Cl}_{1,3}^{+}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html"><em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em></a></td>
+<td>$\tilde{A}^{\sim}$ (3), $\tilde{F}^{\sim}$ (3), $\tilde{A}^{+}$ (2), $\tilde{F}^{+}$ (2)</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html"><em>The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</em></a></td>
+<td>$\mathbb{B}^{\mathrm e}$ (3), $\mu{}^{\alpha}$ (1), $\tilde{\Psi}^{\text{tr}}$ (1)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html"><em>Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half</em></a></td>
+<td>$S^{\oplus k}$ (4), $\mathrm{Cl}_{1,3}^{+}$ (1), $\mathrm{Sym}^{2s_{\mathrm R}}$ (1)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-qubit-in-biquaternionic-form.html"><em>The Relativistic Qubit in Biquaternionic Form</em></a></td>
+<td>$O^{+}$ (3)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html"><em>Velocity Space as Hyperbolic Geometry in Biquaternionic Form</em></a></td>
+<td>$X^{\perp}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.html"><em>The Lorentz Group as Biquaternion Norm Automorphisms</em></a></td>
+<td>$O^{+}$ (14), $\mathcal{N}^{+}$ (7), $\mathcal{N}^{-}$ (4)</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html"><em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em></a></td>
+<td>$O^{+}$ (20)</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html"><em>Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</em></a></td>
+<td>$T_{\mu\nu}^{\mathrm{matter}}$ (2), $T^{kt}$ (1), $T^{tk}$ (1), $T_{\mu\nu}^{\mathrm{em}}$ (1), $T_{\mu\nu}^{\mathrm{tot}}$ (1)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/hamiltonian-field-theory-in-biquaternionic-form.html"><em>Hamiltonian Field Theory in Biquaternionic Form</em></a></td>
+<td>$\phi^{\,*}$ (8)</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-central-force-problem-in-biquaternionic-form.html"><em>The Relativistic Central Force Problem in Biquaternionic Form</em></a></td>
+<td>$r^{-n}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.html"><em>Thomas Precession as a Biquaternion Rotor Effect</em></a></td>
+<td>$O^{+}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html"><em>The Relativistic Quadrupole in Biquaternionic Form</em></a></td>
+<td>$D^{(l)}$ (3)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html"><em>Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</em></a></td>
+<td>$D^{(l)}$ (12), $k^{l}$ (3), $k^{n}$ (2), $Y_l^{m*}$ (1), $r_2^{\,l}$ (1)</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html"><em>Causality and the Light Cone as an Information Barrier in Biquaternionic Form</em></a></td>
+<td>$J^{+}$ (8), $J^{-}$ (6), $O^{+}$ (3)</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html"><em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em></a></td>
+<td>$v^{(r)}$ (1), $w^{(r)}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-grading-and-fermion-parity-in-biquaternionic-form.html"><em>The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}^{1}$ (7), $\mathrm{Cl}^{0}$ (5), $\mathrm{Cl}^{+}$ (3), $\mathrm{Cl}^{k}$ (2), $x^{r}$ (2), $\mathrm{Cl}^{i+j}$ (1), $\mathrm{Cl}^{i}$ (1), $\mathrm{Cl}^{j}$ (1), $e_z^{(\text{mode})}$ (1)</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html"><em>The Superalgebra Reading and the Odd Extension in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}^{1}$ (10), $\mathrm{Cl}^{0}$ (3), $X^{r}$ (2), $\mathrm{Cl}^{i+j}$ (1), $\mathrm{Cl}^{i}$ (1), $\mathrm{Cl}^{j}$ (1), $e_z^{(\text{mode})}$ (1)</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hermitian-gns-construction-in-the-biquaternion-framework.html"><em>The Hermitian GNS Construction in the Biquaternion Framework</em></a></td>
+<td>$G^{\vee}$ (5)</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html"><em>The Functional Integral in Biquaternionic Form</em></a></td>
+<td>$b^{+}$ (3), $b^{-}$ (2), $\mathbb{C}^{n}$ (1), $\mathbb{R}^{n}$ (1), $\mu^{-}$ (1), $d^{n}$ (1)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html"><em>The Generating Functional and the Effective Action in Biquaternionic Form</em></a></td>
+<td>$\Gamma^{(n)}$ (1), $\delta^{n}$ (1), $s^{n}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html"><em>The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</em></a></td>
+<td>$S^{\mathrm{c}}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-determinant-in-biquaternionic-form.html"><em>The Functional Determinant in Biquaternionic Form</em></a></td>
+<td>$\lambda_n^{-s}$ (2), $\lambda^{-s}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html"><em>The S-Matrix in Biquaternionic Form</em></a></td>
+<td>$v^{(r)}$ (1), $w^{(r)}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-helicity-formalism-and-biquaternions.html"><em>The Spinor-Helicity Formalism and Biquaternions</em></a></td>
+<td>$A_n^{\mathrm{MHV}}$ (2), $\alpha{}^{\bar\beta}$ (1), $\lambda_i^{\alpha}$ (1), $\lambda_i^{\bar\alpha}$ (1), $\pi^{\bar\beta}$ (1)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html"><em>The LSZ Reduction Formula in Biquaternionic Form</em></a></td>
+<td>$w^{(r)}$ (11), $v^{(r)}$ (6), $J^{\mathrm{reg}}$ (3), $\delta^{\,n}$ (1)</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/scattering-for-the-quaternionic-dirac-operator.html"><em>Scattering for the Quaternionic Dirac Operator: The Lippmann–Schwinger Equation, the Radiation Condition and Faddeev's Green's Function</em></a></td>
+<td>$u^{\mathrm{sc}}$ (12), $u^{\mathrm{inc}}$ (11), $G^{\mathrm L}$ (4), $G^{\mathrm R}$ (4), $G^{c}$ (4), $H^{\alpha,s}$ (4), $L^{p}$ (2), $H^{\alpha}$ (1)</td>
+<td style="text-align: right;">42</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html"><em>The Spin–Statistics Theorem in Biquaternionic Form</em></a></td>
+<td>$w^{(r)}$ (8), $v^{(r)}$ (7), $w^{(r){}^{*}}$ (4), $v^{(r){}^{*}}$ (3), $O^{+}$ (2)</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html"><em>The CPT Theorem in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}_{1,3}^{+}$ (4), $A^{\mathrm{rev}}$ (3), $A^{\sim}$ (3), $v^{(r)}$ (2), $w^{(r)}$ (2)</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html"><em>Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Spin}^{+}$ (6), $K^{0}$ (5), $\xi^{\alpha}$ (3), $\Pi^{\alpha\bar{\alpha}}$ (1), $\Pi^{\bar\alpha\alpha}$ (1), $\Pi^{\bar{\alpha}\alpha}$ (1), $\Pi^{\beta\bar{\alpha}}$ (1), $\bar{\xi}^{\,\bar\alpha}$ (1), $\bar{\xi}^{\,\bar{\alpha}}$ (1)</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html"><em>The Matsubara Thermal Formalism in Biquaternionic Form</em></a></td>
+<td>$G^{R/A}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unruh-effect-in-biquaternionic-form.html"><em>The Unruh Effect in Biquaternionic Form</em></a></td>
+<td>$W^{\wedge}$ (8), $\Delta^{-is}$ (1), $\Delta^{is}$ (1)</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-keldysh-formalism-in-biquaternionic-form.html"><em>The Schwinger–Keldysh Formalism in Biquaternionic Form</em></a></td>
+<td>$G^{R}$ (24), $G^{K}$ (21), $G^{A}$ (20), $G^{+-}$ (14), $G^{++}$ (11), $G^{--}$ (11), $G^{-+}$ (7), $G^{ab}$ (4), $\G^{A}$ (3), $G^{R/A}$ (2), $\G^{-+}$ (1)</td>
+<td style="text-align: right;">118</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-renormalization-group-in-biquaternionic-form.html"><em>The Renormalization Group in Biquaternionic Form</em></a></td>
+<td>$\mu^{\epsilon}$ (1), $d^{d}$ (1)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html"><em>The Trace Anomaly in Biquaternionic Form</em></a></td>
+<td>$d^{d}$ (3)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html"><em>Bosonization in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html"><em>The Spectral Triple of the Biquaternion Algebra</em></a></td>
+<td>$S^{\mathrm{c}}$ (13), $\Lambda^{d}$ (1)</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-scalar-field-in-biquaternionic-form.html"><em>The Quantized Scalar Field in Biquaternionic Form</em></a></td>
+<td>$\phi^{\mathrm{fop}(+)}$ (6), $\phi^{\mathrm{fop}(-)}$ (6), $\Phi^{\mathrm{fop}{*}}$ (2), $\phi^{\mathrm{fop}(+)\dagger}$ (2), $\phi^{\mathrm{fop}(-)\dagger}$ (2), $\phi^{\mathrm{fop}{}\mathcal{C}}$ (1)</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-fock-space-in-biquaternionic-form.html"><em>The Scalar Fock Space in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Sym}^{n}$ (9), $\phi^{\mathrm{fop}(-)}$ (4), $\phi^{\mathrm{fop}{}(-){}^{*}}$ (4), $\mathbb{C}^{d}$ (2), $\phi^{\mathrm{fop}(+)}$ (2), $\phi^{\mathrm{fop}{}(+){}^{*}}$ (2), $z^{n}$ (2), $\alpha^{n}$ (1)</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/scalar-pair-creation-in-biquaternionic-form.html"><em>Scalar Pair Creation in Biquaternionic Form</em></a></td>
+<td>$u_{\vec k}^{\mathrm{out}}$ (3), $u_{\vec k}^{\mathrm{in}}$ (2), $a^{\mathrm{fop},\mathrm{in}}$ (1), $a^{\mathrm{fop},\mathrm{out}}$ (1), $b^{\mathrm{fop},\mathrm{in}^{*}}$ (1)</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html"><em>The Scalar Field Path Integral in Biquaternionic Form</em></a></td>
+<td>$J^{*n}$ (1), $J^{m}$ (1), $\delta^{\,n+m}$ (1), $\delta^{n+m}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/goldstones-theorem-in-biquaternionic-form.html"><em>Goldstone's Theorem in Biquaternionic Form</em></a></td>
+<td>$\Phi^{\mathrm{fop}{*}}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html"><em>Canonical Quantization of the Biquaternion Dirac Field</em></a></td>
+<td>$v^{(r)}$ (10), $w^{(r)}$ (10), $v^{(r){}^{*}}$ (4), $w^{(r){}^{*}}$ (4), $\delta^{rs}$ (3), $v^{(s)}$ (2), $w^{(s)}$ (2), $v^{(s){}^{*}}$ (1), $w^{(s){}^{*}}$ (1)</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html"><em>The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form</em></a></td>
+<td>$v^{(r)}$ (2), $w^{(r)}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html"><em>The Quantized Dirac Field in Biquaternionic Form</em></a></td>
+<td>$v^{(r)}$ (4), $w^{(r)}$ (4), $\psi^{\mathrm{fop}*}$ (3), $P^{\mathrm{fop}\mu}$ (1), $\Psi^{\mathrm{fop}{*}}$ (1), $\mathrm{Cl}^{+}$ (1)</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html"><em>The Fermionic Fock Space in Biquaternionic Form</em></a></td>
+<td>$\Lambda^{n}$ (9), $\Lambda^{m+n}$ (1), $\Lambda^{m}$ (1), $e_z^{(\text{mode})}$ (1), $w^{(r)}$ (1)</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html"><em>The Feynman Propagator in Biquaternionic Form</em></a></td>
+<td>$v^{(r)}$ (8), $w^{(r)}$ (8), $\delta^{rs}$ (2), $v^{(s)}$ (1), $w^{(s)}$ (1)</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html"><em>Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</em></a></td>
+<td>$S^{E}$ (3), $S_F^{L}$ (2), $\partial^{E}$ (2)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html"><em>The Jordan–Wigner Transformation in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html"><em>The Anomalous Magnetic Moment in Biquaternionic Form</em></a></td>
+<td>$a_e^{\text{exp}}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html"><em>Canonical Quantization of the Biquaternion Maxwell Field</em></a></td>
+<td>$\epsilon^{(r)}$ (3), $\epsilon_i^{(\lambda)}$ (3), $\epsilon_j^{(\lambda)}$ (3), $\epsilon^{(r)*}$ (1), $\epsilon^{(s)}$ (1)</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-photon-in-biquaternionic-form.html"><em>The Photon in Biquaternionic Form</em></a></td>
+<td>$\epsilon^{(r)}$ (3), $\varepsilon^{\mathrm{fop}(r)}$ (3), $\varepsilon^{\mathrm{fop}(+)}$ (2), $\varepsilon^{\mathrm{fop}(-)}$ (2), $\epsilon^{(r)*}$ (1), $\epsilon^{(s)}$ (1), $\varepsilon^{\mathrm{fop}( r)}$ (1)</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.html"><em>The Vacuum State and the Casimir Effect in Biquaternionic Form</em></a></td>
+<td>$\epsilon^{(r)}$ (2), $E_0^{\mathrm{D}}$ (1), $\epsilon^{(r)*}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html"><em>Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</em></a></td>
+<td>$S^{(\mathrm{adj})}$ (83), $S^{(\mathrm{adj})\,2}$ (4), $\chi^{r}$ (3), $S^{(s)}$ (2), $\varepsilon^{r}$ (2), $\chi^{r*}$ (1), $\mathbb{C}^{n}$ (1)</td>
+<td style="text-align: right;">96</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-field-path-integral-in-biquaternionic-form.html"><em>The Gauge Field Path Integral in Biquaternionic Form</em></a></td>
+<td>$\tilde{A}^{\Gamma}$ (13)</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html"><em>Canonical Quantization of the Biquaternion Rarita–Schwinger Field</em></a></td>
+<td>$C^{ab}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.html"><em>Canonical Quantization of the Biquaternion Graviton Field</em></a></td>
+<td>$\varepsilon^{+}$ (2), $h_{ij}^{\mathrm{TT}}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html"><em>Anyons and Braid Statistics in Biquaternionic Form</em></a></td>
+<td>$N_{ab}^{c}$ (5), $B_n^{\mathrm{ab}}$ (3), $\varphi^{n}$ (1)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/relative-entropy-and-the-biquaternion-framework.html"><em>Relative Entropy and the Biquaternion Framework</em></a></td>
+<td>$\omega^{it'}$ (1), $\sigma^{(\varphi,\omega)}$ (1), $\sigma_{t'}^{\varphi,\omega}$ (1), $\varphi^{-it'}$ (1)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/strong-subadditivity-in-the-biquaternion-framework.html"><em>Strong Subadditivity in the Biquaternion Framework</em></a></td>
+<td>$b_k^{L}$ (4), $b_k^{R}$ (4)</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-reh-schlieder-theorem-under-the-biquaternion-framework.html"><em>The Reeh–Schlieder Theorem under the Biquaternion Framework</em></a></td>
+<td>$\tilde{Ϛ}^{-it'}$ (2), $\tilde{Ϛ}^{\,it'}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html"><em>The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework</em></a></td>
+<td>$\Delta^{it'}$ (8), $\Delta^{it'*}$ (7), $\tilde{Ϛ}^{it'}$ (7)</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thermal-time-and-the-modular-flow-in-the-biquaternion-framework.html"><em>Thermal Time and the Modular Flow in the Biquaternion Framework</em></a></td>
+<td>$\tilde{Ϛ}^{-it'}$ (6), $\tilde{Ϛ}^{\,it'}$ (5), $\Delta^{-it'}$ (3), $\Delta^{it'}$ (3), $\tilde{Ϛ}^{it'}$ (3), $\sigma_{t'}^{\omega}$ (1)</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html"><em>The Bisognano–Wichmann Theorem under the Biquaternion Framework</em></a></td>
+<td>$\Delta^{is}$ (7), $\Delta^{-is}$ (4)</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/entanglement-entropy-and-the-replica-trick-in-biquaternionic-form.html"><em>Entanglement Entropy and the Replica Trick in Biquaternionic Form</em></a></td>
+<td>$\rho_A^{n}$ (8), $\lambda_i^{n}$ (7), $Z_1^{n}$ (3)</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.html"><em>The Area Law of Entanglement Entropy in Biquaternionic Form</em></a></td>
+<td>$\Phi^{+}$ (6)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html"><em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em></a></td>
+<td>$S^{ab}$ (1), $S^{cd}$ (1), $V^{ab}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html"><em>The Index Theorem and the Zero-Mode Count in Biquaternionic Form</em></a></td>
+<td>$\ker^{+}$ (2), $\ker^{-}$ (2), $\mu^{R}$ (1), $\psi_n^{(m)}$ (1), $f_n^{(m)}$ (1)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-adhm-construction-and-biquaternion-instanton-data.html"><em>The ADHM Construction and Biquaternion Instanton Data</em></a></td>
+<td>$C^{k}$ (6), $C^{N}$ (4), $h^{\vee}$ (3), $F^{-}$ (2), $M_k^{\text{physical}}$ (2), $F^{+}$ (1)</td>
+<td style="text-align: right;">18</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html"><em>The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</em></a></td>
+<td>$A^{\mathrm{cl}}$ (3), $Z_1^{\mathrm{cl}}$ (3)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html"><em>Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</em></a></td>
+<td>$F^{\mathrm{dual}}$ (31)</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html"><em>The Theta Parameter and Strong CP in Biquaternionic Form</em></a></td>
+<td>$F^{\mathrm{dual}}$ (19), $\theta^{\text{ab}}$ (1)</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html"><em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em></a></td>
+<td>$x^{\,*}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html"><em>The Standard Model under the Biquaternion Framework — A Research Agenda</em></a></td>
+<td>$A^{+}$ (2), $B^{+}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html"><em>The Higgs Mechanism in Biquaternionic Form</em></a></td>
+<td>$A^{+}$ (2), $B^{+}$ (2), $E^{+}$ (2)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html"><em>The Nonlinear Sigma Model in Biquaternionic Form</em></a></td>
+<td>$j^{R}$ (10), $j^{L}$ (5), $J^{R}$ (1)</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html"><em>The Pion and the Chiral Lagrangian in Biquaternionic Form</em></a></td>
+<td>$\pi^{\text{mass}}$ (3)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html"><em>Custodial Symmetry and the Rho Parameter in Biquaternionic Form</em></a></td>
+<td>$T_3^{R}$ (5), $\phi^{+}$ (3), $\phi^{+*}$ (2)</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html"><em>The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</em></a></td>
+<td>$F^{\mathrm{dual}}$ (12)</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html"><em>The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</em></a></td>
+<td>$\mathrm{Cl}_{1,3}^{+}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html"><em>The Neutrino and Majorana Fermions in Biquaternionic Form</em></a></td>
+<td>$\psi^{c}$ (35), $H^{sl}$ (2), $\bar{\psi}^{\,T}$ (2), $\psi_L^{c}$ (1), $w^{c}$ (1)</td>
+<td style="text-align: right;">41</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html"><em>The Majorana Equation in Biquaternionic Form</em></a></td>
+<td>$\psi^{c}$ (24), $\mathrm{Spin}^{c}$ (2), $u^{c}$ (2)</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html"><em>The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</em></a></td>
+<td>$\nu_R^{c}$ (11), $\psi^{c}$ (3), $N_R^{c}$ (2), $\nu_R^{c\,T}$ (2), $L^{c}$ (1)</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html"><em>The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</em></a></td>
+<td>$G^{a}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html"><em>The Proton in Biquaternionic Form</em></a></td>
+<td>$A^{+}$ (2), $B^{+}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html"><em>The Number of Generations and the Biquaternion Algebra</em></a></td>
+<td>$\mathbb{C}^{N_g}$ (12)</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-particle-roster-of-the-complex-octonionic-chain-algebra.html"><em>The Particle Roster of the Complex Octonionic Chain Algebra</em></a></td>
+<td>$S^{u}$ (3), $S^{u,c}$ (2), $\Pi^{c}$ (2)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html"><em>Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</em></a></td>
+<td>$W^{+}$ (2), $W^{-}$ (2)</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html"><em>The CKM Matrix and CP Violation in Biquaternionic Form</em></a></td>
+<td>$\mathbb{C}^{N_g}$ (8), $M_d^{\mathcal{F}}$ (5), $M_u^{\mathcal{F}}$ (5), $M^{\mathcal{F}}$ (2), $M_d^{\mathcal{F}{}^{*}}$ (1), $M_u^{\mathcal{F}{}^{*}}$ (1), $W^{+}$ (1)</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-mass-formula-and-the-particle-spectrum-in-biquaternionic-form.html"><em>The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</em></a></td>
+<td>$\tau^{l\bar l}$ (14), $m^{(s)}$ (6), $\mathrm{Spin}^{+}$ (2), $\Sigma^{+}$ (1), $\Sigma^{-}$ (1), $\tau^{s,s}$ (1)</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html"><em>Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</em></a></td>
+<td>$\tau^{l\bar l}$ (11), $\mathrm{Sym}^{(k,r)}$ (4), $\Lambda^{\bar l}$ (2), $\Lambda^{l\bar l}$ (2), $\Lambda^{l}$ (2), $m^{(s)}$ (2)</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html"><em>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</em></a></td>
+<td>$\tau^{l\bar l}$ (7), $\mathrm{Sym}^{(k,r)}$ (4), $\mathcal{H}_Q^{m}$ (2), $C^{a,b,c,d,e,f,g}$ (1), $\mathcal{H}_Q^{N}$ (1)</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html"><em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em></a></td>
+<td>$A^{i}$ (10), $A^{l}$ (5), $\delta^{i}$ (4), $A^{k}$ (3), $D^{i}$ (3), $K^{0}$ (2), $m^{(s)}$ (2), $H^{\alpha\beta}$ (1), $K^{+}$ (1), $K^{-}$ (1), $Z^{k}$ (1), $\Sigma^{+}$ (1), $\Sigma^{-}$ (1), $\Xi^{-}$ (1), $\delta^{l}$ (1), $\pi^{+}$ (1), $\pi^{-}$ (1), $\tau^{l\bar l}$ (1), $a^{i}$ (1)</td>
+<td style="text-align: right;">41</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html"><em>The Yang–Mills Equation in Biquaternionic Form</em></a></td>
+<td>$F^{\mathrm{em}}$ (2), $\nabla^{+}$ (2), $\nabla^{-}$ (2), $S^{\omega}$ (1)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html"><em>The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</em></a></td>
+<td>$\mathcal{A}^{\tilde U}$ (8), $\mathcal{A}_{\mu}^{\tilde U}$ (1)</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html"><em>Lattice Gauge Theory and the Biquaternion Path Integral</em></a></td>
+<td>$T^{N_t}$ (1)</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html"><em>The W and Z Bosons in Biquaternionic Form</em></a></td>
+<td>$S^{(\mathrm{adj})}$ (8), $W^{+}$ (8), $W^{-}$ (7), $J^{+}$ (5), $\varepsilon^{r}$ (4), $\phi^{+}$ (1), $\theta^{\rm eff}$ (1)</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html"><em>The Stueckelberg Mechanism in Biquaternionic Form</em></a></td>
+<td>$\varepsilon^{r}$ (2)</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html"><em>Confinement and the Loss of Partonic Information in Biquaternionic Form</em></a></td>
+<td>$S^{+}$ (8), $S^{-}$ (2), $\Pi^{+}$ (1), $\Pi^{-}$ (1)</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html"><em>Curved Spacetime and the Biquaternion Framework</em></a></td>
+<td>$G^{+}$ (4), $O^{+}$ (2)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html"><em>Linearized Gravity in Biquaternionic Form</em></a></td>
+<td>$S^{ab}$ (1), $S^{cd}$ (1), $V^{ab}$ (1)</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gravitational-waves-in-biquaternionic-form.html"><em>Gravitational Waves in Biquaternionic Form</em></a></td>
+<td>$\Theta_{ij}^{\mathrm{TT}}$ (3), $h_{ij}^{\mathrm{TT}}$ (3)</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html"><em>Quantum Gravity under the Biquaternion Framework — A Research Agenda</em></a></td>
+<td>$H^{sl}$ (3), $\Delta^{-it'}$ (2), $\Delta^{it'}$ (2)</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html"><em>The Biquaternion Basis of a Unified-Field Fibre Bundle</em></a></td>
+<td>$G^{+}$ (14), $\mathrm{Cl}^{0}$ (1), $\mathrm{Cl}^{1}$ (1)</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html"><em>The Modular Hamiltonian in Biquaternionic Form</em></a></td>
+<td>$\Delta^{it'}$ (20), $\Delta^{-it'}$ (5), $\tilde{Ϛ}^{it'}$ (3), $\tilde{Ϛ}^{-it'}$ (2)</td>
+<td style="text-align: right;">30</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

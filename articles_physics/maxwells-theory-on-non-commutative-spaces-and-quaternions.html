@@ -257,9 +257,13 @@ $$</p>
 <h2 id="the-spin-tensor-quaternion-form">The Spin-Tensor (Quaternion) Form</h2>
 <p>The paper's title promises quaternions, and the last section supplies them. Multiplying the source-free equation by $i$ and adding it to the sourced one, and using the Pauli-matrix identity, the whole system collapses into a single matrix equation,</p>
 <p>$$
-\boxed{\;\nabla F + \tfrac12\left(\nabla G + G^+\overleftarrow{\nabla}\right) = -J\;},
+\boxed{\;\nabla F + \tfrac12\left(\nabla G + \bigl(\nabla^{\natural}\bar G\bigr)^{\natural}\right) = -J\;},
 $$</p>
-<p>where $\nabla = \tau_\mu\partial/\partial x_\mu$, $F = f_\mu\tau_\mu$ with $f_k = D_k+iB_k$ and $f_4=0$, $G = g_m\tau_m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau_\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. The complex vector $\vec g = \vec d + i\vec h$ has the compact form</p>
+<p>where $\nabla = \tau_\mu\partial/\partial x_\mu$, $F = f_\mu\tau_\mu$ with $f_k = D_k+iB_k$ and $f_4=0$, $G = g_m\tau_m$ with $g_m = d_m + ih_m$, $J = J_\mu\tau_\mu$ with $J_4=i\rho$, and $G^+$ is the Hermitian conjugate. <strong>The third term is the paper's right-derivative term, $G^+$ with the derivative taken on its right and then the frame on the right.</strong> By the anti-automorphism of $\natural$, $(G^+)^{\natural}=\bar G$ and $(ab)^{\natural}=b^{\natural}a^{\natural}$, so that right derivative equals a left derivative on $\bar G$, followed by $\natural$:</p>
+<p>$$
+\sum_\mu \bigl(\partial_\mu G^+\bigr)\tau_\mu = \Bigl(\sum_\mu \tau_\mu^{\natural}\,\partial_\mu\bar G\Bigr)^{\natural},
+$$</p>
+<p>with $\tau_\mu^{\natural}$ the units of the conjugate frame. The order matters — $\sum_\mu(\partial_\mu G^+)\tau_\mu\neq\sum_\mu\tau_\mu(\partial_\mu G^+)$ — and the display above fixes it without needing a mark of its own. The complex vector $\vec g = \vec d + i\vec h$ has the compact form</p>
 <p>$$
 \vec g = i(\vec\theta\cdot\vec v^*)\vec v - \frac{i}{2}\vec\theta(\vec v^*)^2,
 \qquad

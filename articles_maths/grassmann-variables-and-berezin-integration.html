@@ -105,12 +105,12 @@ $$</p>
 \frac{\partial}{\partial\theta_i}\bigl(\theta_{i_1}\cdots\theta_{i_k}\bigr) = \sum_{j=1}^{k} (-1)^{j-1}\, \delta_{i, i_j}\, \theta_{i_1}\cdots\widehat{\theta_{i_j}}\cdots\theta_{i_k},
 $$</p>
 <p>where the hat denotes omission and the sum is over the positions at which $\theta_i$ occurs.</p>
-<p><strong>Definition.</strong> The <strong>right derivative</strong> $\dfrac{\overleftarrow{\partial}}{\partial\theta_i}$ is defined by bringing the $\theta_i$ to the end of the monomial and removing it, with the sign of the transpositions used.</p>
+<p><strong>Definition.</strong> The <strong>right derivative</strong>, written with a superscript $R$ because it is a second operator and not a side of an action, $\dfrac{\partial^{R}}{\partial\theta_i}$ is defined by bringing the $\theta_i$ to the end of the monomial and removing it, with the sign of the transpositions used.</p>
 <p><strong>Proposition.</strong> For a monomial of degree $k$,</p>
 <p>$$
-\frac{\overleftarrow{\partial}}{\partial\theta_i} = (-1)^{k-1}\, \frac{\partial}{\partial\theta_i}.
+\frac{\partial^{R}}{\partial\theta_i} = (-1)^{k-1}\, \frac{\partial}{\partial\theta_i}.
 $$</p>
-<p>Consequently the two derivatives agree on monomials of odd degree and differ by a sign on monomials of even degree, and for a general element $f$ one has $\overleftarrow{\partial}/\partial\theta_i\,f = \sum_k (-1)^{k-1} (\partial/\partial\theta_i\,f)_k$ where $(\partial/\partial\theta_i\,f)_k$ is the degree-$k$ component of $\partial/\partial\theta_i\,f$.</p>
+<p>Consequently the two derivatives agree on monomials of odd degree and differ by a sign on monomials of even degree, and for a general element $f$ one has $\partial^{R}/\partial\theta_i\,f = \sum_k (-1)^{k-1} (\partial/\partial\theta_i\,f)_k$ where $(\partial/\partial\theta_i\,f)_k$ is the degree-$k$ component of $\partial/\partial\theta_i\,f$.</p>
 <p><strong>Proof.</strong> In a monomial of degree $k$ containing $\theta_i$ at position $j$, its removal by the left derivative gives the sign $(-1)^{j-1}$ and its removal by the right derivative gives the sign $(-1)^{k-j}$, since $\theta_i$ must pass the $k-j$ factors to its right. The ratio is $(-1)^{k-j-j+1} = (-1)^{k+1} = (-1)^{k-1}$.</p>
 <h3 id="properties-of-the-derivatives">Properties of the Derivatives</h3>
 <p><strong>Proposition.</strong> The left derivatives satisfy the following.</p>
@@ -251,7 +251,7 @@ $$</p>
 <td>Top coefficient of $f(\theta) = \sum_I c_I\theta_I$</td>
 </tr>
 <tr>
-<td>$\dfrac{\partial}{\partial\theta_i}$, $\dfrac{\overleftarrow{\partial}}{\partial\theta_i}$</td>
+<td>$\dfrac{\partial}{\partial\theta_i}$, $\dfrac{\partial^{R}}{\partial\theta_i}$</td>
 <td>Left and right derivatives; differ by $(-1)^{k-1}$ in degree $k$</td>
 </tr>
 <tr>

@@ -260,9 +260,9 @@ The right side is the Weyl image of $4qp$, since $\widehat{4qp}=4\cdot\tfrac12(q
 $$
 f\star g = \exp\!\left(\frac{i\hbar}{2}\Lambda\right) fg,
 \qquad
-\Lambda = \sum_{i}\left(\overleftarrow{\partial/\partial q_i}\,\overrightarrow{\partial/\partial p_i} - \overleftarrow{\partial/\partial p_i}\,\overrightarrow{\partial/\partial q_i}\right),
+\Lambda[f,g] = \sum_{i}\left(\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial p_i} - \frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q_i}\right),
 $$
-where the arrows indicate on which factor each derivative acts. The star product is associative and noncommutative, and to first order in $\hbar$ it is
+where $\Lambda$ is written as a bidifferential operator: it takes two functions and differentiates the first in one slot and the second in the other, so no mark of a side is needed — the arguments say which factor each derivative acts on. Equivalently, on a product with $\Lambda$ written between the two factors, $\Lambda$ carries the derivative of each slot with it, and the two slots are named by the arguments rather than by an arrow. The star product is associative and noncommutative, and to first order in $\hbar$ it is
 $$
 f\star g = fg + \frac{i\hbar}{2}\{f,g\} + O(\hbar^2).
 $$
@@ -297,7 +297,7 @@ $$
 \text{commutative pointwise product} \;\longrightarrow\; \text{star product}
 $$
 is a <em>deformation</em> in the technical sense: the product changes, the underlying space does not, and the change is controlled by $\hbar$. What does <strong>not</strong> happen is an isomorphism: the Poisson algebra and the commutator algebra are not isomorphic as algebras, and the failure is exactly the ordering obstruction of the previous section. The deformation is the honest replacement for the isomorphism the notation suggests.</p>
-<h2 id="the-math160-limit">The $\hbar\to0$ Limit</h2>
+<h2 id="the-math163-limit">The $\hbar\to0$ Limit</h2>
 <p>The phrase "$\hbar\to0$" needs care, because $\hbar$ is a dimensionful constant and is not small or large in itself, and because the operators depend on $\hbar$.</p>
 <p><strong>The limit of the normalized bracket.</strong> In the position representation $p_j=-i\hbar\partial/\partial q_j$ depends on $\hbar$, so the operators $f$ do too. The commutator is of order $\hbar$, and the normalized quantity $(1/i\hbar)[f,g]$ has a finite limit in the following sense: for polynomial observables and Weyl quantization,
 $$
