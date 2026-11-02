@@ -304,11 +304,11 @@ $Z_c$ being componentwise complex conjugation. Since $iZ_c$ is antilinear with $
 
 ### The One-Sided and the Two-Sided Equation
 
-The article now carries two equations, and they must not be read as one. The corpus's own equation is **one-sided**: it is the chiral pair in which the gradient acts by left multiplication on the field in $\Delta$, and the mass is the off-diagonal pairing of the two chiral halves. Kravchenko's equation is **two-sided**: it is a single equation on $\mathbb{B}$ in which the spatial derivative acts by left multiplication, the mass term acts by right multiplication through $\vec e_z$, and the complex conjugation $C$ supplies the antilinear part. The two are related by the dictionary $A$, but they are not the same operator, and the table separates them.
+The article now carries two equations, and they must not be read as one. The corpus's own equation is **one-sided**: it is the chiral pair in which the gradient acts by left multiplication on the field in $\Delta$, and the mass is the off-diagonal pairing of the two chiral halves. Kravchenko's equation is **two-sided**: it is a single equation on $\mathbb{B}$ in which the time derivative and the spatial gradient act by left multiplication, the mass term acts by right multiplication through $\vec e_z$, and the componentwise conjugation supplies the antilinear part. The two are related by the dictionary $A$, but they are not the same operator, and the table separates them.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z=0$, that is $-\tilde\nabla^\natural F-mi\,\overline{F}\,\vec e_z=0$ |
+| Equation | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z=0$, that is $-\tilde\nabla^\natural F-mi\,\overline{F}\,\vec e_z=0$ in natural units |
 | Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left by $i\partial/\partial t'$ and $D_3$, right by $\vec e_z$ in the mass term, and the antilinear bar |
 | Field | $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R\in\Delta=S\oplus S^{\mathrm c}$ | $F\in\mathbb{B}$ |
 | Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-mi\,\overline{F}\,\vec e_z$: a conjugation together with a direction |
@@ -930,7 +930,7 @@ The same construction has two consequences that belong to the equation rather th
 | $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ | Spinor field, one component per chiral half: $\tilde{\Psi}_L\in S$, $\tilde{\Psi}_R\in S^{\mathrm{c}}$ |
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $A$ | Real-linear bijection from bispinors to biquaternion-valued functions (the explicit dictionary) |
-| $C$, also written $\bar{\cdot}$ | Componentwise complex conjugation; the timelike generator of that dictionary |
+| $\bar{\cdot}$, written $C$ by the source | Componentwise complex conjugation, $Q_\mu\mapsto\bar Q_\mu$ on the coefficients: an automorphism, $\mathbb{C}$-antilinear and not an anti-automorphism; the timelike generator of that dictionary |
 | $D_3 = \sum_{k=1}^{3}\vec e_k\,\partial/\partial Q_k$ | The source's spatial Dirac operator, $D_3^2=-\Delta$, with real quaternion coefficients |
 | $D = iD_3$ | The corpus's spatial operator of *Biquaternion Regular Functions*, $D^2=\Delta$; the operator of the shifted theory |
 | $\mathcal{N} = i\partial/\partial t' + D_3 - m\,i\,M_{\vec e_z}C$ | Biquaternionic Dirac operator with the conjugation in the mass term; read on the material sector, its free part is $-\tilde\nabla^{\natural}$ in natural units |
@@ -939,7 +939,7 @@ The same construction has two consequences that belong to the equation rather th
 | $\Phi_{\mathrm{inv}} = iZ_c\Phi$ | The involutive symmetry of the Dirac equation that the reality of $R$ produces; $(iZ_c)^2=1$ |
 | $\epsilon = \exp(2G)$, $\vec{\nu} = \mathrm{grad}\,G$ | The Dirac potential $g=dG/dx_1$ read as the inhomogeneity of a static Maxwell medium |
 | $k = \omega\sqrt{\epsilon\mu}$ | Maxwell wave number; the Dirac–Maxwell correspondence holds iff $k^2=\alpha^2$, equivalently $E^2=\hbar^2\omega^2+m^2c^4$ |
-| $D_{3,\alpha}\tilde{p} = 0$, $D_{3,\alpha}=D_3+M_\alpha$ | Shifted equation for the time-harmonic amplitude once $C$ is removed, in the source's normalization |
+| $D_{3,\alpha}\tilde{p} = 0$, $D_{3,\alpha}=D_3+M_\alpha$ | Shifted equation for the time-harmonic amplitude once the conjugation is removed, in the source's normalization |
 | $\varphi$ | Scalar (pseudoscalar-potential) coefficient of the shifted Dirac operator |
 | $P_\pm$ | Right multiplication by the complementary null idempotents $\tfrac12(1\pm\alpha/\gamma)$; they split the pseudoscalar-potential equation into two scalar-coefficient equations, and they are the two helicity projectors of the time-harmonic field |
 | $D_{3,\alpha}$, $\alpha=-i\omega\,\vec e_x$ | Shifted amplitude operator of the massless harmonic spinor field, in the source's normalization |

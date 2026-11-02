@@ -62,7 +62,7 @@ The framework's charge operator is the module operator of *Chiral Fermions in th
 $$
 Ϙ=ϙ_LP_L+ϙ_RP_R,
 \qquad
-P_L=\tfrac12\left(I_4iR_{\vec e_z}\right),\quad P_R=\tfrac12\left(I_4-iR_{\vec e_z}\right),
+P_L=\tfrac12\left(I_4+iR_{\vec e_z}\right),\quad P_R=\tfrac12\left(I_4-iR_{\vec e_z}\right),
 \qquad -iL_{e_t}R_{\vec e_z}=\mathrm{diag}(-I_2,I_2),
 $$
 
@@ -297,7 +297,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $L_{a}R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms |
 | $-iL_{e_t}R_{\vec e_z}=P_R-P_L=\mathrm{diag}(-I_2,I_2)$ | Chirality cell, $-iR_{\vec e_z}\psi=-i\,e_t\psi \vec e_z$, $(-iR_{\vec e_z})^{2}=I_4$ |
 | $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ | Generator cells; $iL_{e_\mu}R_{\vec e_{\nu(\mu)}} iL_{e_\nu}R_{\vec e_{\nu(\nu)}}+iL_{e_\nu}R_{\vec e_{\nu(\nu)}} iL_{e_\mu}R_{\vec e_{\nu(\mu)}}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ |
-| $P_L=\tfrac12(I_4iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chiral projectors |
+| $P_L=\tfrac12(I_4+iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chiral projectors |
 | $Ϙ=ϙ_LP_L+ϙ_RP_R$ | Charge operator on $\Delta$ |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); massive field forces $ϙ_L=ϙ_R$ |
 | $ϙ_p=+1$ | Proton charge eigenvalue (inserted, not derived) |

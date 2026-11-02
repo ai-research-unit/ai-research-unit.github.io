@@ -126,7 +126,7 @@ $$
 \qquad
 J^+_\mu=\sum_{\text{doublets}}\bar\psi_{\mathrm u}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L\psi_{d},
 $$
-with $P_L=\tfrac12(I_4iR_{\vec e_z})$ the left projector, the frame cells $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ and the chirality cell $-iL_{e_t}R_{\vec e_z}$ acting on the Dirac module by $L_{a}R_{b}\psi=a\psi b$, and the sum running over the lepton and quark doublets with the appropriate quark mixing matrix. The neutral current interaction is
+with $P_L=\tfrac12(I_4+iR_{\vec e_z})$ the left projector, the frame cells $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ and the chirality cell $-iL_{e_t}R_{\vec e_z}$ acting on the Dirac module by $L_{a}R_{b}\psi=a\psi b$, and the sum running over the lepton and quark doublets with the appropriate quark mixing matrix. The neutral current interaction is
 $$
 \mathcal{L}_{\mathrm{nc}}=-\frac{g}{\cos\theta_W}\sum_\mu Z_\mu J_{Z\mu} ,
 \qquad
@@ -304,7 +304,7 @@ The charged current is chiral, $J^{+}_\mu=\bar\psi_{\mathrm u}\,iL_{e_\mu}R_{\ve
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; abelian factor |
 | $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | Frame and chirality cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
-| $P_L=\tfrac12(I_4iR_{\vec e_z})$ | Left projector |
+| $P_L=\tfrac12(I_4+iR_{\vec e_z})$ | Left projector |
 | $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Compact factor, real dimension four |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra |
 | $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$, $T_a=\tfrac12e_a$ | Commutator and generators |

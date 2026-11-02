@@ -79,7 +79,7 @@ For the purposes of this agenda, the construction is the **general machinery of 
 
 The read-list article *Chiral Fermions in the Biquaternion Framework* establishes the following, and this agenda inherits it without change.
 
-The Dirac module is $\Delta = S\oplus\bar{S}$; the chirality operator is the cell $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, where $L_X\psi=X\psi$ and $R_X\psi=\psi X$ for $X\in\mathbb{B}$, so that $-iR_{\vec e_z}\psi = -i\,e_t\psi \vec e_z$; its representative on $\Delta$ is $\mathrm{diag}(-I_2,I_2)$, with $(-iR_{\vec e_z})^{2} = I_4$, and the projectors $P_L = \tfrac12(I_4iR_{\vec e_z})$, $P_R = \tfrac12(I_4-iR_{\vec e_z})$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $-iR_{\vec e_z}$ anticommutes with the generators and commutes with every even product. The Dirac mass bilinear $\bar\Psi\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.
+The Dirac module is $\Delta = S\oplus\bar{S}$; the chirality operator is the cell $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, where $L_X\psi=X\psi$ and $R_X\psi=\psi X$ for $X\in\mathbb{B}$, so that $-iR_{\vec e_z}\psi = -i\,e_t\psi \vec e_z$; its representative on $\Delta$ is $\mathrm{diag}(-I_2,I_2)$, with $(-iR_{\vec e_z})^{2} = I_4$, and the projectors $P_L = \tfrac12(I_4+iR_{\vec e_z})$, $P_R = \tfrac12(I_4-iR_{\vec e_z})$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $-iR_{\vec e_z}$ anticommutes with the generators and commutes with every even product. The Dirac mass bilinear $\bar\Psi\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.
 
 On the module, a chiral abelian gauge symmetry with independent charges is consistent: with
 
@@ -270,7 +270,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 | $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ | Non-abelian curvature; adjoint law |
 | $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$ | Matrix realization |
 | $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\Delta=S\oplus\bar{S}$ | Weyl modules and Dirac module |
-| $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, $P_L=\tfrac12(I_4iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chirality cell and projectors |
+| $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, $P_L=\tfrac12(I_4+iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chirality cell and projectors |
 | $\bar\Psi\Psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R$, selection rule $ϙ_L=ϙ_R$ | Chirality-odd mass bilinear; chiral charge operator |
 | $\varepsilon=\bigl(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\bigr)$, $\varepsilon g^{*}\varepsilon^{-1}=g$ | Pseudoreality intertwiner: $2\cong\bar{2}$ for $SU(2)$ |
 | $\mathrm{End}(\Delta)$ | Module endomorphisms; the home a chiral gauge connection would need |

@@ -179,7 +179,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$ | Dirac module; unique simple left module |
 | $L_{a}R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms; $-iL_{e_t}R_{\vec e_z}$ |
 | $-iR_{\vec e_z} = -iL_{e_t}R_{\vec e_z} = P_R-P_L = \mathrm{diag}(-I_2,I_2)$ | Chirality cell, $-iR_{\vec e_z}\psi=-i\,e_t\psi \vec e_z$, $(-iR_{\vec e_z})^{2}=I_4$ |
-| $P_L = \tfrac12(I_4iR_{\vec e_z})$, $P_R = \tfrac12(I_4-iR_{\vec e_z})$ | Chiral projectors |
+| $P_L = \tfrac12(I_4+iR_{\vec e_z})$, $P_R = \tfrac12(I_4-iR_{\vec e_z})$ | Chiral projectors |
 | $Ϙ = ϙ_LP_L+ϙ_RP_R = \mathrm{diag}(ϙ_L,ϙ_L,ϙ_R,ϙ_R)$ | Charge operator on the module; $ϙ_L,ϙ_R$ unfixed parameters |
 | $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |

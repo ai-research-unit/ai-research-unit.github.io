@@ -46,7 +46,7 @@ $$
 I_\Delta\otimes\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L\,V\big)
 $$
 
-on $\Delta\otimes\mathcal{F}$, where $P_L=\tfrac12(I_4iR_{\vec e_z})$ is the left projector with $-iL_{e_t}R_{\vec e_z}$ the chirality cell, i.e. the framework's Lorentz-and-chirality structure on the module factor times the mixing operator on the flavour factor. The framework supplies the first factor exactly — the $iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L$ vertex of the charged current is the module's structure — and the second factor is an arbitrary $*$-unitary operator: gauge invariance requires only $V\in \mathrm{U}(N_g)$, not any particular $V$. The requirement of unitarity is the framework's, because the flavour rotation must preserve the norm on $\mathcal{F}$; the pattern of $V$ is not.
+on $\Delta\otimes\mathcal{F}$, where $P_L=\tfrac12(I_4+iR_{\vec e_z})$ is the left projector with $-iL_{e_t}R_{\vec e_z}$ the chirality cell, i.e. the framework's Lorentz-and-chirality structure on the module factor times the mixing operator on the flavour factor. The framework supplies the first factor exactly — the $iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L$ vertex of the charged current is the module's structure — and the second factor is an arbitrary $*$-unitary operator: gauge invariance requires only $V\in \mathrm{U}(N_g)$, not any particular $V$. The requirement of unitarity is the framework's, because the flavour rotation must preserve the norm on $\mathcal{F}$; the pattern of $V$ is not.
 
 **Why the mixing is a basis change.** The CKM matrix is a change of basis in flavour space, not a new interaction. In the framework this is transparent: the gauge interactions are $I_\Delta\otimes I_{\mathcal{F}}$ times the module structure, i.e. they are **generation-universal**, and the mixing arises only because the mass matrices, which are $I_\Delta\otimes M^{\mathcal{F}}$, are not diagonal in the same flavour basis. The framework's gauge sector is flavour-blind; the flavour structure is created by the mass matrices. This is the algebraic form of the Glashow–Iliopoulos–Maiani mechanism: flavour-changing neutral currents are absent because the gauge vertex is $I_{\mathcal{F}}$ in flavour space.
 
@@ -292,7 +292,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\mathbb{M}_-,\mathbb{M}_+,\mathbb{C}_{\mathbb{B}}$ | Material, informational sectors; centre |
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
 | $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
-| $-iL_{e_t}R_{\vec e_z}$, $P_L=\tfrac12(I_4iR_{\vec e_z})$ | Chirality cell; left projector |
+| $-iL_{e_t}R_{\vec e_z}$, $P_L=\tfrac12(I_4+iR_{\vec e_z})$ | Chirality cell; left projector |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
 | $I_\Delta\otimes V$, $V\in \mathrm{U}(N_g)$ | The CKM matrix as a flavour-factor operator |
