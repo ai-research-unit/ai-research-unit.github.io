@@ -151,7 +151,7 @@ The algebra is thus the canonical oscillator algebra in the centre, and the stan
 The uniform field admits a second conserved structure. In the symmetric gauge $\vec A=\frac12\vec B\times\vec r=\frac{B}{2}(-y,x,0)$ the Hamiltonian is invariant under rotations about the field axis, so the canonical angular momentum
 
 $$
-L_z=(\vec r\times p)_z
+L_z^{\mathrm{orb}}=(\vec r\times p)_z
 $$
 
 is conserved, and it is central. The transverse problem has two independent oscillator structures: the **cyclotron** ladder, built from $\tilde\pi_x$ and $\tilde\pi_y$, which raises the energy by $\hbar\omega_c$, and the **guiding-centre** ladder, built from the centre-of-orbit coordinates
@@ -170,7 +170,7 @@ $$
 
 whose right-hand side is a central **area**: the flux count of the fifth section is the statement that this area is the phase-space cell of one state. The two algebras are the same central oscillator algebra; the first is the energy, the second is the degeneracy.
 
-In the biquaternion interpretation $L_z$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_z=m\hbar$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
+In the biquaternion interpretation $L_z^{\mathrm{orb}}$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_z^{\mathrm{orb}}=m\hbar$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
 
 The lowest Landau level is especially transparent in this gauge. Writing $z=x+iy$, the states
 
@@ -180,7 +180,7 @@ $$
 m=0,1,2,\dots,
 $$
 
-all have energy $\frac12\hbar\omega_c$ and angular momentum $L_z=m\hbar$, so the degeneracy of the lowest level is exhibited as the infinite tower of angular momenta. That these states have the lowest energy was verified numerically: applying the symmetric-gauge Hamiltonian $\frac{1}{2m}(\tilde\pi_x^2+\tilde\pi_y^2)$ to $\psi_{0,m}$ for $m=0,1,2$ by finite differences gave $\frac12\hbar\omega_c\psi_{0,m}$ with relative residual below $2\times10^{-8}$ at the sampled points. The tower has infinitely many members in the plane, but in a finite sample of area $A$ the normalisability of the Gaussian factor cuts it off at the flux count of the fifth section. The higher Landau levels are obtained by applying $a^\dagger$ to these states, which raises the energy and mixes the angular momenta within the fixed degeneracy.
+all have energy $\frac12\hbar\omega_c$ and angular momentum $L_z^{\mathrm{orb}}=m\hbar$, so the degeneracy of the lowest level is exhibited as the infinite tower of angular momenta. That these states have the lowest energy was verified numerically: applying the symmetric-gauge Hamiltonian $\frac{1}{2m}(\tilde\pi_x^2+\tilde\pi_y^2)$ to $\psi_{0,m}$ for $m=0,1,2$ by finite differences gave $\frac12\hbar\omega_c\psi_{0,m}$ with relative residual below $2\times10^{-8}$ at the sampled points. The tower has infinitely many members in the plane, but in a finite sample of area $A$ the normalisability of the Gaussian factor cuts it off at the flux count of the fifth section. The higher Landau levels are obtained by applying $a^\dagger$ to these states, which raises the energy and mixes the angular momenta within the fixed degeneracy.
 
 ### The classical orbit and the magnetic length
 
@@ -270,7 +270,7 @@ $$
 E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m}
 $$
 
-and the wave functions $\psi_{n,k}=\exp(i(ky+k_zz))H_n((x-x_0)/\ell_B)\exp(-(x-x_0)^2/2\ell_B^2)\chi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_z$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.
+and the wave functions $\psi_{n,k}=\exp(i(ky+k_zz))H_n((x-x_0)/\ell_B)\exp(-(x-x_0)^2/2\ell_B^2)\chi$; the oscillator equation was verified numerically for $n=0,\dots,3$ with residuals of order $10^{-8}$. The symmetric gauge exhibits the conserved central angular momentum $L_z^{\mathrm{orb}}$ and the guiding-centre ladder, and the classical picture is the cyclotron orbit of radius $v_\perp/\omega_c$.
 
 Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flux quanta $\Phi_0=hc/|ϙ|$ through the area, verified by direct counting against $AB/\Phi_0=15.92$ at $L_x=L_y=10$, $B=1$. The degeneracy and the spacing both come from the central canonical commutator with effective Planck constant $\hbar ϙB/c$. Because the particle has spin 0, there is no Zeeman term and no splitting of the levels; the module contributes no internal states. The framework supplies the centrality of the field-strength commutator, the spectator module, and the two central ladders; it does not supply the Landau wave functions or the flux count, and it adds no prediction distinguishing the reformulation from scalar Landau-level quantum physics.
 
@@ -293,7 +293,7 @@ Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flu
 | $E_n=\hbar\omega_c(n+\tfrac12)+\hbar^2k_z^2/2m$ | Landau spectrum |
 | $H_n$ | Hermite polynomials |
 | $a,a^\dagger$ | Central cyclotron ladder operators, $[a,a^\dagger]=e_t$ |
-| $L_z$ | Conserved central angular momentum (symmetric gauge) |
+| $L_z^{\mathrm{orb}}$ | Conserved central angular momentum (symmetric gauge) |
 | $R_k$ | Guiding-centre operators; commute with $H$ |
 | $\Phi_0=hc/\lvert ϙ\rvert$ | Magnetic flux quantum |
 | $N_\phi=AB/\Phi_0$ | Landau-level degeneracy |

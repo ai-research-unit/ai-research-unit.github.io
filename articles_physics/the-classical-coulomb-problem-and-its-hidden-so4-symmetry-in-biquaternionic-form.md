@@ -73,7 +73,7 @@ whose agreement with experiment established the nuclear model of the atom. The f
 The centrality of the force conserves the angular momentum,
 
 $$
-\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p], \qquad \{L_i, H\} = 0 ,
+\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p], \qquad \{L_i^{\mathrm{orb}}, H\} = 0 ,
 $$
 
 with $H = p^2/(2m) - \kappa/r$ the Hamiltonian. The conservation was derived in the preceding article as $d\vec L/dt' = \tfrac12[\vec r,\vec F] = 0$, and it holds for every central force.
@@ -111,7 +111,7 @@ and on a fixed energy shell $E$ the second is a relation among the squares. The 
 The Poisson brackets of the six generators close on themselves:
 
 $$
-\boxed{\;\{L_i, L_j\} = \epsilon_{ijk}L_k, \qquad \{L_i, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_k\;}.
+\boxed{\;\{L_i^{\mathrm{orb}}, L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}}, A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i, A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}\;}.
 $$
 
 The first is the angular-momentum algebra; the second says that $\vec A$ transforms as a vector under rotations; the third is the new relation, and its coefficient depends on the energy. All three were verified by numerical differentiation of the phase-space functions at several representative bound phase-space points, with the maximum deviation from the stated right-hand sides of order $10^{-11}$.
@@ -126,7 +126,7 @@ $$
 \vec D = \frac{\vec A}{\sqrt{-2mE}} ,
 $$
 
-so that $\{D_i, D_j\} = \epsilon_{ijk}L_k$ and $\{L_i, D_j\} = \epsilon_{ijk}D_k$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define
+so that $\{D_i, D_j\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ and $\{L_i^{\mathrm{orb}}, D_j\} = \epsilon_{ijk}D_k$. The six generators $\vec L, \vec D$ then form two commuting copies of $\mathrm{SU}(2)$. Define
 
 $$
 \vec{\tilde S}^{\pm}_{\mathrm{tot}} = \frac{1}{2}\left(\vec L \pm \vec D\right) .
@@ -151,12 +151,12 @@ where the last equality uses $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$. For the repres
 For $E > 0$ the third bracket changes sign. Defining $\vec D = \vec A/\sqrt{2mE}$ gives
 
 $$
-\{D_i, D_j\} = -\epsilon_{ijk}L_k, \qquad \{L_i, D_j\} = \epsilon_{ijk}D_k ,
+\{D_i, D_j\} = -\epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}}, D_j\} = \epsilon_{ijk}D_k ,
 $$
 
 which is the algebra $\mathrm{SO}(3,1)$ of the Lorentz group in three space dimensions. Its Casimirs are $\vec L\cdot\vec D$ and $L^2 - D^2$, and the representations are the infinite-dimensional ones of the non-compact group; this is the algebraic reflection of the fact that the unbound orbits are hyperbolas with a continuous family of scattering angles.
 
-At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\vec D = \vec A$ the brackets become $\{D_i,D_j\}=0$ and $\{L_i,D_j\} = \epsilon_{ijk}D_k$. This is the algebra of the Euclidean group $E(3)$: the $\vec L$ generate rotations and the $\vec A$ generate translations. The three cases are collected below.
+At the threshold $E = 0$ the coefficient in the third bracket vanishes, $\{A_i,A_j\} = 0$, and with $\vec D = \vec A$ the brackets become $\{D_i,D_j\}=0$ and $\{L_i^{\mathrm{orb}},D_j\} = \epsilon_{ijk}D_k$. This is the algebra of the Euclidean group $E(3)$: the $\vec L$ generate rotations and the $\vec A$ generate translations. The three cases are collected below.
 
 | Energy | Rescaled vector | Algebra | Group |
 |---|---|---|---|
@@ -168,7 +168,7 @@ The bound case is the one that bears on the hydrogen spectrum, and it is the cas
 
 ### Numerical Checks
 
-The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_i,L_j\} = \epsilon_{ijk}L_k$, $\{L_i,A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_k$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S^{\pm}_{\mathrm{tot},i},\tilde S^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
+The bracket algebra was verified by central-difference evaluation of the Poisson brackets of the six generators at several representative bound phase-space points; the figures quoted are for the point with $m = \kappa = 1$ and $E = -0.446714$, and the identities reproduce at every bound point tested. The brackets $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$, $\{L_i^{\mathrm{orb}},A_j\} = \epsilon_{ijk}A_k$ and $\{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}$ were all confirmed to a maximum deviation of order $10^{-11}$; the rescaled bracket $\{D_i,D_j\} = \epsilon_{ijk}L_k^{\mathrm{orb}}$ was confirmed to the same accuracy; and the two $\mathrm{SU}(2)$ relations $\{\tilde S^{\pm}_{\mathrm{tot},i},\tilde S^{\pm}_{\mathrm{tot},j}\} = \epsilon_{ijk}\tilde S^{\pm}_{\mathrm{tot},k}$ and $\{\tilde S^{+}_{\mathrm{tot},i},\tilde S^{-}_{\mathrm{tot},j}\} = 0$ were confirmed to order $10^{-11}$. The two Casimirs were found equal to eight decimal places, both equal to $0.27982080$, in agreement with $m\kappa^2/(8|E|)$; and the identities $\vec L\cdot\vec A = 0$ and $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ were confirmed to machine precision.
 
 The algebra statements of the closing sections were checked at the same time, in explicit complex-matrix form using the isomorphism $\vec e_\mu \mapsto -i\sigma_\mu$, $i \mapsto iI_2$ of $\mathbb{B}$ with $M_2(\mathbb{C})$. The material sector was confirmed closed under the commutator, with $[\mathbb{M}_+,\mathbb{M}_+] \subseteq \mathbb{M}_-$ and every element of $[\mathbb{M}_-,\mathbb{M}_-]$ again anti-Hermitian; the traceless part was confirmed to close exactly on
 
@@ -281,7 +281,7 @@ The particle is structureless and carries no intrinsic magnetic moment; its orbi
 The inverse-square law conserves, besides the angular momentum $\vec L = \tfrac12[\vec r,\vec p]$, the Runge–Lenz vector $\vec A = \vec p\times\vec L-m\kappa\vec u_r$ with $|\vec A| = m|\kappa|e$. The six generators close under the Poisson bracket:
 
 $$
-\{L_i,L_j\} = \epsilon_{ijk}L_k, \qquad \{L_i,A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k .
+\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\} = \epsilon_{ijk}L_k^{\mathrm{orb}}, \qquad \{L_i^{\mathrm{orb}},A_j\} = \epsilon_{ijk}A_k, \qquad \{A_i,A_j\} = -2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}} .
 $$
 
 Rescaling by the energy produces the hidden symmetry: for $E<0$, with $\vec D = \vec A/\sqrt{-2mE}$ and $\vec{\tilde S}^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$, the generators satisfy
@@ -317,9 +317,9 @@ The framework supplies the real three-space in which all six generators take the
 | $\vec A = \vec p\times\vec L - m\kappa\vec u_r$ | Runge–Lenz vector |
 | $|\vec A| = m|\kappa|e$; $\vec A\cdot\vec L = 0$ | Magnitude and orthogonality |
 | $|\vec A|^2 = m^2\kappa^2 + 2mEL^2$ | Magnitude identity |
-| $\{L_i,L_j\}=\epsilon_{ijk}L_k$ | Angular-momentum bracket |
-| $\{L_i,A_j\}=\epsilon_{ijk}A_k$ | Vector transformation of $\vec A$ |
-| $\{A_i,A_j\}=-2mE\,\epsilon_{ijk}L_k$ | Energy-dependent bracket |
+| $\{L_i^{\mathrm{orb}},L_j^{\mathrm{orb}}\}=\epsilon_{ijk}L_k^{\mathrm{orb}}$ | Angular-momentum bracket |
+| $\{L_i^{\mathrm{orb}},A_j\}=\epsilon_{ijk}A_k$ | Vector transformation of $\vec A$ |
+| $\{A_i,A_j\}=-2mE\,\epsilon_{ijk}L_k^{\mathrm{orb}}$ | Energy-dependent bracket |
 | $\vec D = \vec A/\sqrt{-2mE}$ $(E<0)$ | Rescaled generator |
 | $\vec{\tilde S}^\pm_{\mathrm{tot}} = \tfrac12(\vec L\pm\vec D)$ | $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$ generators |
 | $(\vec{\tilde S}^\pm_{\mathrm{tot}})^2 = m\kappa^2/(8|E|)$ | Equal Casimirs |
