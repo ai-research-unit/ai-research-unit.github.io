@@ -104,69 +104,69 @@
 <p><strong>The article.</strong> §<em>The Starting Point</em> fixes the algebra and its carrier. §<em>The Two One-Sided Operators</em> displays $L_a$ and $R_b$. §<em>The Method</em> states and proves the construction. §<em>The Sixteen Matrices</em> displays the result and its invariants. §<em>The Group of Order Thirty-Two</em> proves the closure. §<em>Multiplication</em> gives the two tables. §<em>Orthogonality and the Coefficient Formula</em> proves the trace formula. §<em>The Matrix Units in the Method's Basis</em> gives the sixteen expansions and the length. §<em>The Peirce Dictionary</em> identifies the Peirce products. §<em>The Coefficient Matrix and the Length</em> states the computational rule, and §<em>Why These Matrices</em> states the case. The worked computation is the companion article.</p>
 <p><strong>Sources and boundaries.</strong> The left regular model and its product rules are <em>$M_4(\mathbb{C})$ Axis-Free Representation</em>; the Peirce coordinates are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>; the operator construction is <em>Two-Sided Operators on the Biquaternion Algebra</em>; the abstract theorem is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>; the Clifford reading is <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure and the Frame</em>. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.</p>
 <h2 id="the-starting-point">The Starting Point</h2>
-<p><strong>The algebra.</strong> Let $\mathbb{B}$ be the complexified quaternion algebra, with basis $e_t,e_x,e_y,e_z$ and product
+<p><strong>The algebra.</strong> Let $\mathbb{B}$ be the complexified quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and product
 $$
-e_t^2=e_t,\qquad e_x^2=e_y^2=e_z^2=-e_t,\qquad
-e_xe_y=e_z,\quad e_ye_z=e_x,\quad e_ze_x=e_y,
+e_t^2=e_t,\qquad \vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t,\qquad
+\vec e_x\vec e_y=\vec e_z,\quad \vec e_y\vec e_z=\vec e_x,\quad \vec e_z\vec e_x=\vec e_y,
 $$
-and the reverse products negative: $e_ye_x=-e_z$, $e_ze_y=-e_x$, $e_xe_z=-e_y$. The unit is $e_t$, written $1$ when no confusion is possible.</p>
-<p><strong>The carrier.</strong> The algebra acts on itself by multiplication, so its underlying complex vector space is a four-dimensional carrier. In the basis $(e_t,e_x,e_y,e_z)$ a vector has coordinates $(a_t,a_x,a_y,a_z)$, and the carrier is $\mathbb{C}^4$.</p>
+and the reverse products negative: $\vec e_y\vec e_x=-\vec e_z$, $\vec e_z\vec e_y=-\vec e_x$, $\vec e_x\vec e_z=-\vec e_y$. The unit is $e_t$, written $1$ when no confusion is possible.</p>
+<p><strong>The carrier.</strong> The algebra acts on itself by multiplication, so its underlying complex vector space is a four-dimensional carrier. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ a vector has coordinates $(a_t,a_x,a_y,a_z)$, and the carrier is $\mathbb{C}^4$.</p>
 <p><strong>The algebra is simple but not a division algebra.</strong> It is isomorphic to $M_2(\mathbb{C})$. A nonzero element need not be invertible: the norm
 $$
 N(a)=a_t^2+a_x^2+a_y^2+a_z^2
 $$
-can vanish for $a\ne0$, and then $a$ is a zero divisor. For example $(1+ie_x)(1-ie_x)=1-e_x^2=0$. The units are the elements with $N(a)\ne0$. This matters below: $L_a$ is invertible exactly when $a$ is a unit.</p>
+can vanish for $a\ne0$, and then $a$ is a zero divisor. For example $(1+i\vec e_x)(1-i\vec e_x)=1-\vec e_x^2=0$. The units are the elements with $N(a)\ne0$. This matters below: $L_a$ is invertible exactly when $a$ is a unit.</p>
 <p><strong>The multiplication table of the basis.</strong> Row $\mu$, column $\nu$, entry $e_\mu e_\nu$. It is the quaternion table, and it is the left table of §<em>Multiplication</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$e_\mu e_\nu$</th>
 <th>$e_t$</th>
-<th>$e_x$</th>
-<th>$e_y$</th>
-<th>$e_z$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$e_t$</td>
 <td>$e_t$</td>
-<td>$e_x$</td>
-<td>$e_y$</td>
-<td>$e_z$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_x$</td>
-<td>$e_x$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
 <td>$-e_t$</td>
-<td>$e_z$</td>
-<td>$-e_y$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_y$</td>
-<td>$e_y$</td>
-<td>$-e_z$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_z$</td>
 <td>$-e_t$</td>
-<td>$e_x$</td>
+<td>$\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_z$</td>
-<td>$e_z$</td>
-<td>$e_y$</td>
-<td>$-e_x$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
 <td>$-e_t$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="the-two-one-sided-operators">The Two One-Sided Operators</h2>
 <h3 id="left-multiplication">Left multiplication</h3>
-<p><strong>Definition.</strong> For $a\in\mathbb{B}$, let $L_a$ be the matrix of $x\mapsto ax$ in the coefficient basis $e_t,e_x,e_y,e_z$, ordered $t,x,y,z$. The map $L$ is the left regular representation.</p>
-<p><strong>The four basis matrices.</strong> With $e_x^2=e_y^2=e_z^2=-e_t$ and $e_xe_y=e_z$, $e_ye_z=e_x$, $e_ze_x=e_y$,</p>
+<p><strong>Definition.</strong> For $a\in\mathbb{B}$, let $L_a$ be the matrix of $x\mapsto ax$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, ordered $t,x,y,z$. The map $L$ is the left regular representation.</p>
+<p><strong>The four basis matrices.</strong> With $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$,</p>
 <p>$$
 L_{e_t}=\mathrm{I}_4,\qquad
-L_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_{e_z}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+L_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
 $$</p>
 <p><strong>The laws.</strong> $L_aL_b=L_{ab}$, $L_{e_t}=\mathrm{I}_4$, and $L_a$ is invertible exactly when $a$ is a unit. The image $L(\mathbb{B})$ has complex dimension four.</p>
 <h3 id="right-multiplication">Right multiplication</h3>
@@ -174,9 +174,9 @@ $$</p>
 <p><strong>The four basis matrices.</strong></p>
 <p>$$
 R_{e_t}=\mathrm{I}_4,\qquad
-R_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
-R_{e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-R_{e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+R_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+R_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+R_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$</p>
 <p><strong>The relation to the left family.</strong> Let $D=\operatorname{diag}(1,-1,-1,-1)$ and let $b^{\dagger}=(b_t,-b_x,-b_y,-b_z)$ be the quaternion conjugate. Then</p>
 <p>$$
@@ -201,7 +201,7 @@ $$</p>
 <h2 id="the-method">The Method</h2>
 <h3 id="the-construction-in-five-steps">The construction in five steps</h3>
 <p><strong>Step 1.</strong> Start from the biquaternion algebra $\mathbb{B}$ and its four-dimensional carrier. No matrix is chosen yet.</p>
-<p><strong>Step 2.</strong> Form the eight one-sided operators $L_{e_t},L_{e_x},L_{e_y},L_{e_z}$ and $R_{e_t},R_{e_x},R_{e_y},R_{e_z}$. They are linear maps of the carrier to itself.</p>
+<p><strong>Step 2.</strong> Form the eight one-sided operators $L_{e_t},L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}$ and $R_{e_t},R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}$. They are linear maps of the carrier to itself.</p>
 <p><strong>Step 3.</strong> Form the products $L_{a}R_{b}$ and all their linear combinations. This is the algebra generated by the two commuting copies $L(\mathbb{B})$ and $R(\mathbb{B})$.</p>
 <p><strong>Step 4.</strong> Prove that this algebra is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The proof is the proposition below.</p>
 <p><strong>Step 5.</strong> Choose the coefficient basis of the carrier. The operators become $4\times4$ matrices, and the method produces the sixteen matrices $L_{e_\mu}R_{e_\nu}$ displayed in §<em>The Sixteen Matrices</em>.</p>
@@ -233,32 +233,32 @@ and $\Phi$ of this is $L_{ac}R_{db}=L_aL_cR_dR_b=L_aR_bL_cR_d$, which is the pro
 <p><strong>The sixteen matrices, in the coefficient basis.</strong> The labels are the two indices: the first is the left parameter, the second the right parameter.</p>
 <p>$$
 L_{e_t}R_{e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_{e_t}R_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
-L_{e_t}R_{e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-L_{e_t}R_{e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+L_{e_t}R_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+L_{e_t}R_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+L_{e_t}R_{\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$</p>
 <p>$$
-L_{e_x}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{e_x}R_{e_x}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_{e_x}R_{e_y}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad
-L_{e_x}R_{e_z}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}.
+L_{\vec e_x}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{\vec e_x}R_{\vec e_x}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{\vec e_x}R_{\vec e_y}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad
+L_{\vec e_x}R_{\vec e_z}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}.
 $$</p>
 <p>$$
-L_{e_y}R_{e_t}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_{e_y}R_{e_x}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},\qquad
-L_{e_y}R_{e_y}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
-L_{e_y}R_{e_z}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}.
+L_{\vec e_y}R_{e_t}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{\vec e_y}R_{\vec e_x}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+L_{\vec e_y}R_{\vec e_y}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{\vec e_y}R_{\vec e_z}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}.
 $$</p>
 <p>$$
-L_{e_z}R_{e_t}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad
-L_{e_z}R_{e_x}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_{e_z}R_{e_y}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
-L_{e_z}R_{e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+L_{\vec e_z}R_{e_t}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad
+L_{\vec e_z}R_{\vec e_x}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{\vec e_z}R_{\vec e_y}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
+L_{\vec e_z}R_{\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$</p>
-<p><strong>The order of the labels matters.</strong> The two matrices $L_{e_t}R_{e_x}$ and $L_{e_x}R_{e_t}$ are different:</p>
+<p><strong>The order of the labels matters.</strong> The two matrices $L_{e_t}R_{\vec e_x}$ and $L_{\vec e_x}R_{e_t}$ are different:</p>
 <p>$$
-L_{e_t}R_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
-L_{e_x}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
+L_{e_t}R_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+L_{\vec e_x}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
 $$</p>
 <p>They agree in the first two rows and differ in the last two. A computation that confuses them returns the wrong coefficient; the companion article <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em> records the trap.</p>
 <h3 id="the-invariants">The invariants</h3>
@@ -284,7 +284,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_t}R_{e_x}$</td>
+<td>$L_{e_t}R_{\vec e_x}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -292,7 +292,7 @@ $$</p>
 <td>$-\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_t}R_{e_y}$</td>
+<td>$L_{e_t}R_{\vec e_y}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -300,7 +300,7 @@ $$</p>
 <td>$-\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_t}R_{e_z}$</td>
+<td>$L_{e_t}R_{\vec e_z}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -308,7 +308,7 @@ $$</p>
 <td>$-\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_x}R_{e_t}$</td>
+<td>$L_{\vec e_x}R_{e_t}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -316,7 +316,7 @@ $$</p>
 <td>$-\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_x}R_{e_x}$</td>
+<td>$L_{\vec e_x}R_{\vec e_x}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -324,7 +324,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_x}R_{e_y}$</td>
+<td>$L_{\vec e_x}R_{\vec e_y}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -332,7 +332,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_x}R_{e_z}$</td>
+<td>$L_{\vec e_x}R_{\vec e_z}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -340,7 +340,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_y}R_{e_t}$</td>
+<td>$L_{\vec e_y}R_{e_t}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -348,7 +348,7 @@ $$</p>
 <td>$-\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_y}R_{e_x}$</td>
+<td>$L_{\vec e_y}R_{\vec e_x}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -356,7 +356,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_y}R_{e_y}$</td>
+<td>$L_{\vec e_y}R_{\vec e_y}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -364,7 +364,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_y}R_{e_z}$</td>
+<td>$L_{\vec e_y}R_{\vec e_z}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -372,7 +372,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_z}R_{e_t}$</td>
+<td>$L_{\vec e_z}R_{e_t}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -380,7 +380,7 @@ $$</p>
 <td>$-\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_z}R_{e_x}$</td>
+<td>$L_{\vec e_z}R_{\vec e_x}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -388,7 +388,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_z}R_{e_y}$</td>
+<td>$L_{\vec e_z}R_{\vec e_y}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -396,7 +396,7 @@ $$</p>
 <td>$\mathrm{I}_4$</td>
 </tr>
 <tr>
-<td>$L_{e_z}R_{e_z}$</td>
+<td>$L_{\vec e_z}R_{\vec e_z}$</td>
 <td>$0$</td>
 <td>$1$</td>
 <td>$4$</td>
@@ -406,7 +406,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The pattern.</strong> Every matrix is invertible, of determinant one and of rank four. The trace is $4$ only for $L_{e_t}R_{e_t}$, the identity, and $0$ for the other fifteen. The order is $4$ exactly when one index is $t$ and the other is spatial: $L_{e_t}R_{e_\sigma}$ and $L_{e_\sigma}R_{e_t}$ with $\sigma=x,y,z$ square to $-\mathrm{I}_4$. The two-spatial matrices square to $+\mathrm{I}_4$.</p>
-<p><strong>Proof of the pattern.</strong> The matrix $L_{e_\mu}R_{e_\nu}$ is a signed permutation, so it is orthogonal and its determinant is $\pm1$. The group $\{\pm L_{e_\mu}R_{e_\nu}\}$ is generated by the six matrices $L_{e_x},L_{e_y},L_{e_z},R_{e_x},R_{e_y},R_{e_z}$, each of determinant $1$ by the displayed matrices, and the determinant is a homomorphism; hence all thirty-two elements have determinant $1$. The trace and the order columns are read from the sixteen displayed matrices: the trace is $4$ only for the identity, and the square is $-\mathrm{I}_4$ exactly for the six matrices with one $t$ index and one spatial index. The square column also follows from the two multiplication tables of §<em>Multiplication</em>.</p>
+<p><strong>Proof of the pattern.</strong> The matrix $L_{e_\mu}R_{e_\nu}$ is a signed permutation, so it is orthogonal and its determinant is $\pm1$. The group $\{\pm L_{e_\mu}R_{e_\nu}\}$ is generated by the six matrices $L_{\vec e_x},L_{\vec e_y},L_{\vec e_z},R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}$, each of determinant $1$ by the displayed matrices, and the determinant is a homomorphism; hence all thirty-two elements have determinant $1$. The trace and the order columns are read from the sixteen displayed matrices: the trace is $4$ only for the identity, and the square is $-\mathrm{I}_4$ exactly for the six matrices with one $t$ index and one spatial index. The square column also follows from the two multiplication tables of §<em>Multiplication</em>.</p>
 <h3 id="the-group-of-order-thirty-two">The group of order thirty-two</h3>
 <p><strong>Theorem.</strong> The thirty-two matrices $\pm L_{e_\mu}R_{e_\nu}$ are distinct and form a group; it is isomorphic to
 $$
@@ -418,8 +418,8 @@ $$
 (\pm L_{e_\mu}R_{e_\nu})(\pm L_{e_\rho}R_{e_\sigma})=\pm L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=\pm L_{e_\mu}L_{e_\rho}R_{e_\nu}R_{e_\sigma},
 $$
 by the composition law of §<em>The Two-Sided Matrices</em>. The result is again in $\{\pm L_{e_\mu}R_{e_\nu}\}$. The set is finite, contains $\mathrm{I}_4=L_{e_t}R_{e_t}$, and every element is invertible, so it is a group. Distinctness: $L_{e_\mu}R_{e_\nu}=L_{e_\rho}R_{e_\sigma}$ gives $L_{e_\mu}^{-1}L_{e_\rho}=R_{e_\nu}R_{e_\sigma}^{-1}$, an element of $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\mathrm{I}_4$; both sides are signed basis matrices, so both are $\mathrm{I}_4$, hence $\mu=\rho$ and $\nu=\sigma$. If $L_{e_\mu}R_{e_\nu}=-L_{e_\rho}R_{e_\sigma}$, the same argument gives $\mathrm{I}_4=-\mathrm{I}_4$, which is false. So the thirty-two are distinct.</p>
-<p>For the isomorphism, let $Q_8^{L}=\{\pm\mathrm{I}_4,\pm L_{e_x},\pm L_{e_y},\pm L_{e_z}\}$ and $Q_8^{R}=\{\pm\mathrm{I}_4,\pm R_{e_x},\pm R_{e_y},\pm R_{e_z}\}$. Each is a copy of $Q_8$. They commute and meet in $\{\pm\mathrm{I}_4\}$, so their product has order $8\cdot8/2=32$, and it is the set $\{\pm L_{e_\mu}R_{e_\nu}\}$. The map $(A,B)\mapsto AB$ from $Q_8^{L}\times Q_8^{R}$ has kernel $\{(1,1),(-1,-1)\}$, hence the displayed quotient.</p>
-<p><strong>The matrices are not a group of order sixteen.</strong> The sixteen $L_{e_\mu}R_{e_\nu}$ alone are not closed: $L_{e_t}R_{e_x}L_{e_x}R_{e_t}=L_{e_x}R_{e_x}$ is in the set, but $L_{e_x}R_{e_y}L_{e_y}R_{e_z}=-L_{e_z}R_{e_x}$ is not. One sign is missing. The group needs the thirty-two signed matrices.</p>
+<p>For the isomorphism, let $Q_8^{L}=\{\pm\mathrm{I}_4,\pm L_{\vec e_x},\pm L_{\vec e_y},\pm L_{\vec e_z}\}$ and $Q_8^{R}=\{\pm\mathrm{I}_4,\pm R_{\vec e_x},\pm R_{\vec e_y},\pm R_{\vec e_z}\}$. Each is a copy of $Q_8$. They commute and meet in $\{\pm\mathrm{I}_4\}$, so their product has order $8\cdot8/2=32$, and it is the set $\{\pm L_{e_\mu}R_{e_\nu}\}$. The map $(A,B)\mapsto AB$ from $Q_8^{L}\times Q_8^{R}$ has kernel $\{(1,1),(-1,-1)\}$, hence the displayed quotient.</p>
+<p><strong>The matrices are not a group of order sixteen.</strong> The sixteen $L_{e_\mu}R_{e_\nu}$ alone are not closed: $L_{e_t}R_{\vec e_x}L_{\vec e_x}R_{e_t}=L_{\vec e_x}R_{\vec e_x}$ is in the set, but $L_{\vec e_x}R_{\vec e_y}L_{\vec e_y}R_{\vec e_z}=-L_{\vec e_z}R_{\vec e_x}$ is not. One sign is missing. The group needs the thirty-two signed matrices.</p>
 <h2 id="multiplication">Multiplication</h2>
 <h3 id="the-two-tables">The two tables</h3>
 <p><strong>The left table.</strong> Row $\mu$, column $\nu$, entry $L_{e_\mu} L_{e_\nu}$. The product is a signed basis matrix.</p>
@@ -428,38 +428,38 @@ by the composition law of §<em>The Two-Sided Matrices</em>. The result is again
 <tr>
 <th>$L_{e_\mu} L_{e_\nu}$</th>
 <th>$L_{e_t}$</th>
-<th>$L_{e_x}$</th>
-<th>$L_{e_y}$</th>
-<th>$L_{e_z}$</th>
+<th>$L_{\vec e_x}$</th>
+<th>$L_{\vec e_y}$</th>
+<th>$L_{\vec e_z}$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$L_{e_t}$</td>
 <td>$L_{e_t}$</td>
-<td>$L_{e_x}$</td>
-<td>$L_{e_y}$</td>
-<td>$L_{e_z}$</td>
+<td>$L_{\vec e_x}$</td>
+<td>$L_{\vec e_y}$</td>
+<td>$L_{\vec e_z}$</td>
 </tr>
 <tr>
-<td>$L_{e_x}$</td>
-<td>$L_{e_x}$</td>
+<td>$L_{\vec e_x}$</td>
+<td>$L_{\vec e_x}$</td>
 <td>$-L_{e_t}$</td>
-<td>$L_{e_z}$</td>
-<td>$-L_{e_y}$</td>
+<td>$L_{\vec e_z}$</td>
+<td>$-L_{\vec e_y}$</td>
 </tr>
 <tr>
-<td>$L_{e_y}$</td>
-<td>$L_{e_y}$</td>
-<td>$-L_{e_z}$</td>
+<td>$L_{\vec e_y}$</td>
+<td>$L_{\vec e_y}$</td>
+<td>$-L_{\vec e_z}$</td>
 <td>$-L_{e_t}$</td>
-<td>$L_{e_x}$</td>
+<td>$L_{\vec e_x}$</td>
 </tr>
 <tr>
-<td>$L_{e_z}$</td>
-<td>$L_{e_z}$</td>
-<td>$L_{e_y}$</td>
-<td>$-L_{e_x}$</td>
+<td>$L_{\vec e_z}$</td>
+<td>$L_{\vec e_z}$</td>
+<td>$L_{\vec e_y}$</td>
+<td>$-L_{\vec e_x}$</td>
 <td>$-L_{e_t}$</td>
 </tr>
 </tbody>
@@ -470,43 +470,43 @@ by the composition law of §<em>The Two-Sided Matrices</em>. The result is again
 <tr>
 <th>$R_{e_\nu} R_{e_\sigma}$</th>
 <th>$R_{e_t}$</th>
-<th>$R_{e_x}$</th>
-<th>$R_{e_y}$</th>
-<th>$R_{e_z}$</th>
+<th>$R_{\vec e_x}$</th>
+<th>$R_{\vec e_y}$</th>
+<th>$R_{\vec e_z}$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$R_{e_t}$</td>
 <td>$R_{e_t}$</td>
-<td>$R_{e_x}$</td>
-<td>$R_{e_y}$</td>
-<td>$R_{e_z}$</td>
+<td>$R_{\vec e_x}$</td>
+<td>$R_{\vec e_y}$</td>
+<td>$R_{\vec e_z}$</td>
 </tr>
 <tr>
-<td>$R_{e_x}$</td>
-<td>$R_{e_x}$</td>
+<td>$R_{\vec e_x}$</td>
+<td>$R_{\vec e_x}$</td>
 <td>$-R_{e_t}$</td>
-<td>$-R_{e_z}$</td>
-<td>$R_{e_y}$</td>
+<td>$-R_{\vec e_z}$</td>
+<td>$R_{\vec e_y}$</td>
 </tr>
 <tr>
-<td>$R_{e_y}$</td>
-<td>$R_{e_y}$</td>
-<td>$R_{e_z}$</td>
+<td>$R_{\vec e_y}$</td>
+<td>$R_{\vec e_y}$</td>
+<td>$R_{\vec e_z}$</td>
 <td>$-R_{e_t}$</td>
-<td>$-R_{e_x}$</td>
+<td>$-R_{\vec e_x}$</td>
 </tr>
 <tr>
-<td>$R_{e_z}$</td>
-<td>$R_{e_z}$</td>
-<td>$-R_{e_y}$</td>
-<td>$R_{e_x}$</td>
+<td>$R_{\vec e_z}$</td>
+<td>$R_{\vec e_z}$</td>
+<td>$-R_{\vec e_y}$</td>
+<td>$R_{\vec e_x}$</td>
 <td>$-R_{e_t}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two tables are not the same.</strong> The left table is the quaternion table: $L_{e_x}L_{e_y}=L_{e_z}$. The right table is the reverse: $R_{e_x}R_{e_y}=-R_{e_z}$, because $R_aR_b=R_{ba}$ and $e_ye_x=-e_z$. This is the source of every sign in the corpus that looks like a sign error.</p>
+<p><strong>The two tables are not the same.</strong> The left table is the quaternion table: $L_{\vec e_x}L_{\vec e_y}=L_{\vec e_z}$. The right table is the reverse: $R_{\vec e_x}R_{\vec e_y}=-R_{\vec e_z}$, because $R_aR_b=R_{ba}$ and $\vec e_y\vec e_x=-\vec e_z$. This is the source of every sign in the corpus that looks like a sign error.</p>
 <h3 id="the-product-rule">The product rule</h3>
 <p><strong>The rule.</strong> Read the left table at $(\mu,\rho)$ and the right table at $(\nu,\sigma)$:
 $$
@@ -530,15 +530,15 @@ L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=\varepsilon_1\varepsilon_2\,L_{e_\lambd
 $$</p>
 <p><strong>The general law.</strong> $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$. The product of two two-sided operators is a two-sided operator. The set of all $L_{a}R_{b}$ is closed under multiplication, and it is the whole algebra.</p>
 <h3 id="three-examples">Three examples</h3>
-<p><strong>A product in the set.</strong> $L_{e_t}R_{e_x}L_{e_x}R_{e_t}$: the left table at $(t,x)$ gives $L_{e_x}$ with sign $+1$; the right table at $(x,t)$ gives $R_{e_x}$ with sign $+1$. Hence
+<p><strong>A product in the set.</strong> $L_{e_t}R_{\vec e_x}L_{\vec e_x}R_{e_t}$: the left table at $(t,x)$ gives $L_{\vec e_x}$ with sign $+1$; the right table at $(x,t)$ gives $R_{\vec e_x}$ with sign $+1$. Hence
 $$
-L_{e_t}R_{e_x}L_{e_x}R_{e_t}=L_{e_x}R_{e_x}.
+L_{e_t}R_{\vec e_x}L_{\vec e_x}R_{e_t}=L_{\vec e_x}R_{\vec e_x}.
 $$</p>
-<p><strong>A product with a sign.</strong> $L_{e_x}R_{e_y}L_{e_y}R_{e_z}$: the left table at $(x,y)$ gives $L_{e_z}$ with sign $+1$; the right table at $(y,z)$ gives $-R_{e_x}$. Hence
+<p><strong>A product with a sign.</strong> $L_{\vec e_x}R_{\vec e_y}L_{\vec e_y}R_{\vec e_z}$: the left table at $(x,y)$ gives $L_{\vec e_z}$ with sign $+1$; the right table at $(y,z)$ gives $-R_{\vec e_x}$. Hence
 $$
-L_{e_x}R_{e_y}L_{e_y}R_{e_z}=-L_{e_z}R_{e_x}.
+L_{\vec e_x}R_{\vec e_y}L_{\vec e_y}R_{\vec e_z}=-L_{\vec e_z}R_{\vec e_x}.
 $$</p>
-<p><strong>A square.</strong> $L_{e_z}R_{e_y}L_{e_z}R_{e_y}$: the left table at $(z,z)$ gives $-L_{e_t}$; the right table at $(y,y)$ gives $-R_{e_t}$; the product is $(-\mathrm{I}_4)(-\mathrm{I}_4)=\mathrm{I}_4$. This is the entry of the invariant table.</p>
+<p><strong>A square.</strong> $L_{\vec e_z}R_{\vec e_y}L_{\vec e_z}R_{\vec e_y}$: the left table at $(z,z)$ gives $-L_{e_t}$; the right table at $(y,y)$ gives $-R_{e_t}$; the product is $(-\mathrm{I}_4)(-\mathrm{I}_4)=\mathrm{I}_4$. This is the entry of the invariant table.</p>
 <h2 id="orthogonality-and-the-coefficient-formula">Orthogonality and the Coefficient Formula</h2>
 <p><strong>Theorem.</strong> For all indices,
 $$
@@ -588,67 +588,67 @@ and each row of the coefficient array has exactly four nonzero entries.</p>
 <tbody>
 <tr>
 <td>$E_{11}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_t}-L_{e_x}R_{e_x}-L_{e_y}R_{e_y}-L_{e_z}R_{e_z}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{e_t}-L_{\vec e_x}R_{\vec e_x}-L_{\vec e_y}R_{\vec e_y}-L_{\vec e_z}R_{\vec e_z}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{12}$</td>
-<td>$\tfrac14\bigl(-L_{e_t}R_{e_x}-L_{e_x}R_{e_t}+L_{e_y}R_{e_z}-L_{e_z}R_{e_y}\bigr)$</td>
+<td>$\tfrac14\bigl(-L_{e_t}R_{\vec e_x}-L_{\vec e_x}R_{e_t}+L_{\vec e_y}R_{\vec e_z}-L_{\vec e_z}R_{\vec e_y}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{13}$</td>
-<td>$\tfrac14\bigl(-L_{e_t}R_{e_y}-L_{e_x}R_{e_z}-L_{e_y}R_{e_t}+L_{e_z}R_{e_x}\bigr)$</td>
+<td>$\tfrac14\bigl(-L_{e_t}R_{\vec e_y}-L_{\vec e_x}R_{\vec e_z}-L_{\vec e_y}R_{e_t}+L_{\vec e_z}R_{\vec e_x}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{14}$</td>
-<td>$\tfrac14\bigl(-L_{e_t}R_{e_z}+L_{e_x}R_{e_y}-L_{e_y}R_{e_x}-L_{e_z}R_{e_t}\bigr)$</td>
+<td>$\tfrac14\bigl(-L_{e_t}R_{\vec e_z}+L_{\vec e_x}R_{\vec e_y}-L_{\vec e_y}R_{\vec e_x}-L_{\vec e_z}R_{e_t}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{21}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_x}+L_{e_x}R_{e_t}+L_{e_y}R_{e_z}-L_{e_z}R_{e_y}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{\vec e_x}+L_{\vec e_x}R_{e_t}+L_{\vec e_y}R_{\vec e_z}-L_{\vec e_z}R_{\vec e_y}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{22}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_t}-L_{e_x}R_{e_x}+L_{e_y}R_{e_y}+L_{e_z}R_{e_z}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{e_t}-L_{\vec e_x}R_{\vec e_x}+L_{\vec e_y}R_{\vec e_y}+L_{\vec e_z}R_{\vec e_z}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{23}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_z}-L_{e_x}R_{e_y}-L_{e_y}R_{e_x}-L_{e_z}R_{e_t}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{\vec e_z}-L_{\vec e_x}R_{\vec e_y}-L_{\vec e_y}R_{\vec e_x}-L_{\vec e_z}R_{e_t}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{24}$</td>
-<td>$\tfrac14\bigl(-L_{e_t}R_{e_y}-L_{e_x}R_{e_z}+L_{e_y}R_{e_t}-L_{e_z}R_{e_x}\bigr)$</td>
+<td>$\tfrac14\bigl(-L_{e_t}R_{\vec e_y}-L_{\vec e_x}R_{\vec e_z}+L_{\vec e_y}R_{e_t}-L_{\vec e_z}R_{\vec e_x}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{31}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_y}-L_{e_x}R_{e_z}+L_{e_y}R_{e_t}+L_{e_z}R_{e_x}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{\vec e_y}-L_{\vec e_x}R_{\vec e_z}+L_{\vec e_y}R_{e_t}+L_{\vec e_z}R_{\vec e_x}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{32}$</td>
-<td>$\tfrac14\bigl(-L_{e_t}R_{e_z}-L_{e_x}R_{e_y}-L_{e_y}R_{e_x}+L_{e_z}R_{e_t}\bigr)$</td>
+<td>$\tfrac14\bigl(-L_{e_t}R_{\vec e_z}-L_{\vec e_x}R_{\vec e_y}-L_{\vec e_y}R_{\vec e_x}+L_{\vec e_z}R_{e_t}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{33}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_t}+L_{e_x}R_{e_x}-L_{e_y}R_{e_y}+L_{e_z}R_{e_z}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}-L_{\vec e_y}R_{\vec e_y}+L_{\vec e_z}R_{\vec e_z}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{34}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_x}-L_{e_x}R_{e_t}-L_{e_y}R_{e_z}-L_{e_z}R_{e_y}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{\vec e_x}-L_{\vec e_x}R_{e_t}-L_{\vec e_y}R_{\vec e_z}-L_{\vec e_z}R_{\vec e_y}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{41}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_z}+L_{e_x}R_{e_y}-L_{e_y}R_{e_x}+L_{e_z}R_{e_t}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{\vec e_z}+L_{\vec e_x}R_{\vec e_y}-L_{\vec e_y}R_{\vec e_x}+L_{\vec e_z}R_{e_t}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{42}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_y}-L_{e_x}R_{e_z}-L_{e_y}R_{e_t}-L_{e_z}R_{e_x}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{\vec e_y}-L_{\vec e_x}R_{\vec e_z}-L_{\vec e_y}R_{e_t}-L_{\vec e_z}R_{\vec e_x}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{43}$</td>
-<td>$\tfrac14\bigl(-L_{e_t}R_{e_x}+L_{e_x}R_{e_t}-L_{e_y}R_{e_z}-L_{e_z}R_{e_y}\bigr)$</td>
+<td>$\tfrac14\bigl(-L_{e_t}R_{\vec e_x}+L_{\vec e_x}R_{e_t}-L_{\vec e_y}R_{\vec e_z}-L_{\vec e_z}R_{\vec e_y}\bigr)$</td>
 </tr>
 <tr>
 <td>$E_{44}$</td>
-<td>$\tfrac14\bigl(L_{e_t}R_{e_t}+L_{e_x}R_{e_x}+L_{e_y}R_{e_y}-L_{e_z}R_{e_z}\bigr)$</td>
+<td>$\tfrac14\bigl(L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}+L_{\vec e_y}R_{\vec e_y}-L_{\vec e_z}R_{\vec e_z}\bigr)$</td>
 </tr>
 </tbody>
 </table></div>
@@ -765,20 +765,20 @@ c(M)=\begin{pmatrix}1&0&0&0\\-1&0&0&0\\0&0&0&0\\0&0&-1&0\end{pmatrix}.
 $$</p>
 <p><strong>The length.</strong> The rank is two, so $\ell(M)=2$, while the matrix rank of $M$ is four. A decomposition is
 $$
-M=L_{e_t-e_x}R_{e_t}+L_{e_z}R_{-e_y}
-=L_{e_t}R_{e_t}-L_{e_x}R_{e_t}-L_{e_z}R_{e_y}.
+M=L_{e_t-\vec e_x}R_{e_t}+L_{\vec e_z}R_{-\vec e_y}
+=L_{e_t}R_{e_t}-L_{\vec e_x}R_{e_t}-L_{\vec e_z}R_{\vec e_y}.
 $$</p>
 <p><strong>The caution.</strong> The matrix looks like two copies of a Jordan block, but it is not a left regular matrix: in the coefficient basis a left matrix has equal entries $(1,2)$ and $(2,1)$ up to sign, and $M$ has $2$ and $0$. The block look is a property of the coefficient basis, not of the Peirce decomposition.</p>
 <p><strong>The full computation.</strong> <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em> carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.</p>
 <h2 id="the-gamma-formulation">The Gamma Formulation</h2>
 <p>The gamma frame is one choice inside the method's basis; the body writes the cells.</p>
-<p><strong>The five matrices.</strong> In the corpus frame $(\beta,\delta)=(e_y,e_x)$,
+<p><strong>The five matrices.</strong> In the corpus frame $(\beta,\delta)=(\vec e_y,\vec e_x)$,
 $$
-\gamma_0=iL_{e_t}R_{e_x},\qquad
-\gamma_1=iL_{e_x}R_{e_y},\qquad
-\gamma_2=iL_{e_y}R_{e_y},\qquad
-\gamma_3=iL_{e_z}R_{e_y},\qquad
-\gamma_5=-iL_{e_t}R_{e_z}.
+\gamma_0=iL_{e_t}R_{\vec e_x},\qquad
+\gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad
+\gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad
+\gamma_3=iL_{\vec e_z}R_{\vec e_y},\qquad
+\gamma_5=-iL_{e_t}R_{\vec e_z}.
 $$</p>
 <p><strong>The Clifford relations.</strong> With the metric $g=\operatorname{diag}(1,-1,-1,-1)$,
 $$
@@ -791,7 +791,7 @@ $$</p>
 <p><strong>The chirality projectors.</strong>
 $$
 P_{\pm}=\tfrac12\bigl(\mathrm{I}_4\pm\gamma_5\bigr)
-=\tfrac12\bigl(L_{e_t}R_{e_t}\mp iL_{e_t}R_{e_z}\bigr).
+=\tfrac12\bigl(L_{e_t}R_{e_t}\mp iL_{e_t}R_{\vec e_z}\bigr).
 $$
 Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations of two cells, not products themselves.</p>
 <p><strong>The reading.</strong> The gammas are five of the sixteen cells up to the scalar $i$. The products of the gammas are the other eleven, up to scalars. The Dirac algebra is the method's algebra with a chosen five-element frame, not a different algebra.</p>
@@ -818,8 +818,8 @@ $$</p>
 <td>the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$e_t,e_x,e_y,e_z$</td>
-<td>the coefficient basis, with $e_t=1$ and $e_x^2=e_y^2=e_z^2=-e_t$</td>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis, with $e_t=1$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$</td>
 </tr>
 <tr>
 <td>$L_a$</td>

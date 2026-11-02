@@ -149,10 +149,10 @@ confirming the second. The eigenvalues of $\mathsf{M}_2(\tilde Q)$ are $1.520333
 <p><strong>Interpretation of the result.</strong> The determinant of an element of the framework's algebra is the biquaternion norm, so a vanishing determinant — a zero divisor — is a vanishing norm, i.e. an element of the zero-divisor cone. This is the algebraic reason the cone of <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> is the light cone and the singular locus of the algebra at once. The regular-representation determinant being the square is the algebraic statement that the left and right actions see the same norm; there is no separate "left determinant" and "right determinant".</p>
 <h2 id="the-determinant-in-the-gaussian-integral">The Determinant in the Gaussian Integral</h2>
 <p>The determinant's function in the formalism is to normalize the Gaussian integral, and its one-loop role follows from the same computation.</p>
-<p><strong>The Gaussian.</strong> For a quadratic action $S[\tilde\Phi]=\tfrac12\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle$ the functional-integral article gives
+<p><strong>The Gaussian.</strong> For a quadratic action $S[\tilde\Phi]=\tfrac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle$ the functional-integral article gives
 $$
-\int\mathcal{D}\tilde\Phi\;\exp(-\frac12\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle)
-= \big(\det K_{\mathrm{kin}}\big)^{-1/2},
+\int\mathcal{D}\tilde\Phi\;\exp(-\frac12\langle\tilde\Phi,K^{\mathrm{kin}}\tilde\Phi\rangle)
+= \big(\det K^{\mathrm{kin}}\big)^{-1/2},
 $$
 the determinant taken on the module. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing); the determinant is taken over the module's components per mode, so the module's dimension enters as the size of the determinant. The power to which the determinant is raised is a convention of real-versus-complex counting and is fixed with the reality of the field; the algebra fixes the module on which the determinant is taken, not the power.</p>
 <p><strong>The one-loop action.</strong> Expanding about a classical field as in the previous article,
@@ -164,7 +164,7 @@ $$
 \Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] ,
 $$
 where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.</p>
-<p><strong>The free case.</strong> For the free biquaternion scalar, $S^{(2)}=K_{\mathrm{kin}}$ is central and mode-diagonal, and
+<p><strong>The free case.</strong> For the free biquaternion scalar, $S^{(2)}=K^{\mathrm{kin}}$ is central and mode-diagonal, and
 $$
 \Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde P\tilde P^{\natural}+m^2\big)^2
 = \sum_{\text{modes}}\log\big(k_E^2+m^2\big)
@@ -312,7 +312,7 @@ Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$,
 <td>Central operator's module determinant</td>
 </tr>
 <tr>
-<td>$(\det K_{\mathrm{kin}})^{-1/2}$</td>
+<td>$(\det K^{\mathrm{kin}})^{-1/2}$</td>
 <td>Gaussian normalization</td>
 </tr>
 <tr>

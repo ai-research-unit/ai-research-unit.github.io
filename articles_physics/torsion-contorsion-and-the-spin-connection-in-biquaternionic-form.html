@@ -136,20 +136,20 @@ $$</p>
 \Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda}\, \partial/\partial x_\mu \exp(a){}_\nu ,
 $$</p>
 <p>called the <strong>Weitzenböck connection</strong>, was computed for that tetrad together with its curvature. The curvature came out <strong>exactly zero</strong> in every component and the torsion <strong>exactly $\tfrac{3}{10}$</strong> in its nonzero components. This is the content of the teleparallel sector: a connection can be flat and still have torsion, and the framework's algebra can carry it.</p>
-<p><strong>Where the algebra enters.</strong> Under the dictionary the six generators $\vec e_k$ and $i\vec e_k$ of the Lie subspace are the six Lorentz bivectors $iL_{e_\mu}R_{e_{\nu(\mu)}} iL_{e_\nu}R_{e_{\nu(\nu)}}$, $\mu<\nu$, the products of the generator cells $iL_{e_t}R_{e_x}$ and $iL_{\vec e_k}R_{e_y}$ defined by $L_{a}R_{b}\psi=a\psi b$, so the six components of the algebra-valued one-form $\vec\Gamma_\mu$ of Route Three are in one-to-one correspondence with the six components $\omega_{ab\mu}$ of the spin connection. Nothing else about the algebra is used. The connection can therefore be written as an $\mathbb{B}$-valued object, and the covariant derivative must be written in the two-sided form of Route Three, $D_\mu\tilde Q = \partial/\partial x_\mu\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$, because the infinitesimal action of a boost generator is not the commutator. That trap is the corpus's own and is not repeated here; what matters for torsion is that the fix is the same for a torsionful connection as for a torsion-free one, since the torsion lives in the part of $\vec\Gamma_\mu$ that is already in the Lie subspace.</p>
-<p>Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
+<p><strong>Where the algebra enters.</strong> Under the dictionary the six generators $\vec e_k$ and $i\vec e_k$ of the Lie subspace are the six Lorentz bivectors $iL_{e_\mu}R_{\vec e_{\nu(\mu)}} iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$, $\mu<\nu$, the products of the generator cells $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ defined by $L_{a}R_{b}\psi=a\psi b$, so the six components of the algebra-valued one-form $\vec\Gamma_\mu$ of Route Three are in one-to-one correspondence with the six components $\omega_{ab\mu}$ of the spin connection. Nothing else about the algebra is used. The connection can therefore be written as an $\mathbb{B}$-valued object, and the covariant derivative must be written in the two-sided form of Route Three, $D_\mu\tilde Q = \partial/\partial x_\mu\tilde Q + \vec\Gamma_\mu\tilde Q + \tilde Q\vec\Gamma_\mu^{*}$, because the infinitesimal action of a boost generator is not the commutator. That trap is the corpus's own and is not repeated here; what matters for torsion is that the fix is the same for a torsionful connection as for a torsion-free one, since the torsion lives in the part of $\vec\Gamma_\mu$ that is already in the Lie subspace.</p>
+<p>Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
 <h2 id="the-spin-tensor-and-the-torsionspin-relation">The Spin Tensor and the Torsion–Spin Relation</h2>
 <p>In the Einstein–Cartan–Sciama–Kibble theory the torsion is not free: it is sourced <em>algebraically</em> by the spin density of matter. For a Dirac field the spin density is the completely antisymmetric bilinear</p>
 <p>$$
-\Sigma_{\lambda\mu\nu} = \bar\psi\,\operatorname{Alt}\bigl[iL_{e_\lambda}R_{e_{\nu(\lambda)}}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\bigr]\,\psi ,
+\Sigma_{\lambda\mu\nu} = \bar\psi\,\operatorname{Alt}\bigl[iL_{e_\lambda}R_{\vec e_{\nu(\lambda)}}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\bigr]\,\psi ,
 $$</p>
-<p>with $\operatorname{Alt}$ the total antisymmetrisation over the three indices, $\bar\psi=\psi^\dagger iR_{e_x}$ the Dirac adjoint, $iL_{e_\mu}R_{e_{\nu(\mu)}}$ the generator cells of the previous section, and $-iL_{e_t}R_{e_z}$ the chirality cell, the product $i\,iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}$, which anticommutes with each $iL_{e_\mu}R_{e_{\nu(\mu)}}$. The axial current is</p>
+<p>with $\operatorname{Alt}$ the total antisymmetrisation over the three indices, $\bar\psi=\psi^\dagger iR_{\vec e_x}$ the Dirac adjoint, $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ the generator cells of the previous section, and $-iL_{e_t}R_{\vec e_z}$ the chirality cell, the product $i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$, which anticommutes with each $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$. The axial current is</p>
 <p>$$
-A_\mu = \bar\psi\,-iR_{e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,\psi .
+A_\mu = \bar\psi\,-iR_{\vec e_z}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,\psi .
 $$</p>
 <p><strong>The antisymmetric spin density is the dual of the axial current.</strong> On the antisymmetrised triple product,</p>
 <p>$$
-\bar\psi\,\operatorname{Alt}\bigl[iL_{e_\lambda}R_{e_{\nu(\lambda)}}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\bigr]\,\psi = -\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\bar\psi\,-iR_{e_z}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\,\psi ,
+\bar\psi\,\operatorname{Alt}\bigl[iL_{e_\lambda}R_{\vec e_{\nu(\lambda)}}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\bigr]\,\psi = -\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\bar\psi\,-iR_{\vec e_z}\,iL_{e_\rho}R_{\vec e_{\nu(\rho)}}\,\psi ,
 $$</p>
 <p>with $\varepsilon_t=+1$ and $\varepsilon_k=-1$ the sign vector of the index convention, so that the display stays all-low as that convention requires. The identity is exact at every index triple and for every spinor, and the sign is not one constant in front of $\epsilon$: written with $+i$ and no weight it holds on the three spacelike choices of the free index $\rho$ and fails on the timelike one, the failure being exactly the factor $\varepsilon_t=+1$ against $\varepsilon_k=-1$. A direct consequence is that the spin density is <em>not</em> a general third-rank tensor: its antisymmetric part is fixed entirely by the axial four-vector, so the 24 components of a general third-rank tensor collapse to four. This is the same counting as in the metric-compatibility condition above, and it is not a coincidence: the physical torsion and the physical spin density live in the same four-dimensional subspace.</p>
 <p><strong>The spin density contracts to the axial current.</strong> Contracting the identity with itself gives</p>
@@ -212,7 +212,7 @@ The four contraction sums are frame statements, because a cell's square is. In t
 <h2 id="summary">Summary</h2>
 <p>A connection with torsion splits into a metric part, the Christoffel symbols, and a remainder, the contorsion $K_{\lambda\mu\nu}$, which is antisymmetric in its last two indices. The torsion is twice the alternating contorsion, $T_{\lambda\mu\nu} = 2K_{\lambda[\mu\nu]}$, and the inverse relation $K_{\lambda\mu\nu} = \tfrac12(T_{\lambda\mu\nu} - T_{\mu\nu\lambda} + T_{\nu\lambda\mu})$ holds in the totally antisymmetric case. The covariant derivative of the metric is $\nabla_\mu g_{\nu\rho} = -(K_{\nu\mu\rho} + K_{\rho\mu\nu})$, which vanishes for every index order exactly when the contorsion is totally antisymmetric; the 24 contorsion components are cut to a four-dimensional solution space, so <strong>metric compatibility is the condition of total antisymmetry</strong>, and this is the precise meaning of the corpus's statement that metric compatibility is a condition and not a consequence.</p>
 <p>The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices. The Weitzenböck connection $\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda} \partial/\partial x_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.</p>
-<p>The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma_{\lambda\mu\nu} = \bar\psi \operatorname{Alt}\bigl[iL_{e_\lambda}R_{e_{\nu(\lambda)}}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\bigr]\psi$. Its antisymmetric part is the dual of the axial current, $\bar\psi \operatorname{Alt}\bigl[iL_{e_\lambda}R_{e_{\nu(\lambda)}}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\bigr]\psi = -i\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho\bar\psi -iR_{e_z}\,iL_{e_\rho}R_{e_{\nu(\rho)}}\psi$, and its square is six times the axial current squared, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$. The Einstein–Cartan torsion–spin relation $T = \kappa\sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.</p>
+<p>The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma_{\lambda\mu\nu} = \bar\psi \operatorname{Alt}\bigl[iL_{e_\lambda}R_{\vec e_{\nu(\lambda)}}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\bigr]\psi$. Its antisymmetric part is the dual of the axial current, $\bar\psi \operatorname{Alt}\bigl[iL_{e_\lambda}R_{\vec e_{\nu(\lambda)}}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\bigr]\psi = -i\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho\bar\psi -iR_{\vec e_z}\,iL_{e_\rho}R_{\vec e_{\nu(\rho)}}\psi$, and its square is six times the axial current squared, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$. The Einstein–Cartan torsion–spin relation $T = \kappa\sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.</p>
 <p>Two statements bound the article. The commutator of the quaternion units is a constant of the algebra and not the torsion of a manifold; the algebra carries the connection and the torsion but generates neither, selects no connection, and supplies no action. The identities above are exact and recomputed; the dynamics is not here and is not claimed.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -268,24 +268,24 @@ The four contraction sums are frame statements, because a cell's square is. In t
 <td>two-sided cell, $L_{a}R_{b}\psi=a\psi b$</td>
 </tr>
 <tr>
-<td>$iR_{e_x}$, $iL_{\vec e_k}R_{e_y}$</td>
-<td>generator cells, $iL_{e_t}R_{e_x}$, $iL_{\vec e_k}R_{e_y}$</td>
+<td>$iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$</td>
+<td>generator cells, $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$</td>
 </tr>
 <tr>
-<td>$-iR_{e_z}$</td>
-<td>chirality cell, $-iL_{e_t}R_{e_z}=i\,iR_{e_x}\,iL_{e_x}R_{e_y}\,iL_{e_y}R_{e_y}\,iL_{e_z}R_{e_y}$</td>
+<td>$-iR_{\vec e_z}$</td>
+<td>chirality cell, $-iL_{e_t}R_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$</td>
 </tr>
 <tr>
-<td>$\bar\psi=\psi^\dagger iR_{e_x}$</td>
+<td>$\bar\psi=\psi^\dagger iR_{\vec e_x}$</td>
 <td>Dirac adjoint</td>
 </tr>
 <tr>
 <td>$\Sigma_{\lambda\mu\nu}$</td>
-<td>Dirac spin density, $\bar\psi \operatorname{Alt}\bigl[iL_{e_\lambda}R_{e_{\nu(\lambda)}}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}\bigr]\psi$</td>
+<td>Dirac spin density, $\bar\psi \operatorname{Alt}\bigl[iL_{e_\lambda}R_{\vec e_{\nu(\lambda)}}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\bigr]\psi$</td>
 </tr>
 <tr>
 <td>$A_\mu$</td>
-<td>axial current, $\bar\psi -iR_{e_z}\,iL_{e_\mu}R_{e_{\nu(\mu)}}\psi$</td>
+<td>axial current, $\bar\psi -iR_{\vec e_z}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$</td>
 </tr>
 <tr>
 <td>$\kappa = 8\pi G$</td>

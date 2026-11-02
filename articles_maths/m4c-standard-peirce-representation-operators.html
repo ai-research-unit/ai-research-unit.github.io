@@ -419,7 +419,7 @@ $$
 $$
 The mass term is $-mL_tR_t$. For a momentum $p$, the same operator reads
 $$
-D(p)=i\bigl(L_{e_t}R_xp_t+L_{\vec e_x}R_yp_x+L_{\vec e_y}R_yp_y+L_{\vec e_z}R_yp_z\bigr),
+D(p)=i\bigl((L_{e_t}R_{\vec e_x}p_t+L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)\bigr),
 $$
 so the frame is visible in the formula: another pair $(\beta,\delta)$ replaces the four cells by four single products spread over several cells. This is the matrix Dirac operator of the frame; it is not the biquaternionic gradient $\tilde\nabla$, which is a left multiplication. The dictionary relates the two; it does not identify them as operators on the same carrier.</p>
 <h2 id="the-cone-of-products">The Cone of Products</h2>
@@ -551,7 +551,7 @@ with $u_i$ the $i$-th standard column, has $\operatorname{rank}M_1=1$ and coeffi
 <td>$2$</td>
 <td>$1$</td>
 <td>$1$</td>
-<td>$L_{e_t/2}R_{e_t-ie_z}$</td>
+<td>$L_{e_t/2}R_{e_t-i\vec e_z}$</td>
 </tr>
 <tr>
 <td>$L_{\tilde Q}R_{\tilde P}$ with $\tilde Q,\tilde P\neq0$ and $\langle\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}=0$</td>
@@ -784,7 +784,7 @@ with $g=\operatorname{diag}(1,-1,-1,-1)$, and
 $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=iL_{e_t}R_{\beta\delta}.
 $$</p>
-<p><em>Proof.</em> $(\gamma_0)^2=-R(\delta^2)=\mathrm I_4$; $(\gamma_k)^2=-L(\vec e_k^2)R(\beta^2)=-\mathrm I_4$; $\gamma_0\gamma_k+\gamma_k\gamma_0=-L(\vec e_k)(R(\delta\beta)+R(\beta\delta))=0$; $\gamma_j\gamma_k+\gamma_k\gamma_j=-L(e_je_k+e_ke_j)R(\beta^2)=0$. For the pseudoscalar, the left factor is $L(e_te_xe_ye_z)=L(-e_t)$ and the right factor is $R(\beta^3\delta)=R(-\beta\delta)$; the two signs cancel, so the product is $L_{e_t}R_{\beta\delta}$.</p>
+<p><em>Proof.</em> $(\gamma_0)^2=-R(\delta^2)=\mathrm I_4$; $(\gamma_k)^2=-L(\vec e_k^2)R(\beta^2)=-\mathrm I_4$; $\gamma_0\gamma_k+\gamma_k\gamma_0=-L(\vec e_k)(R(\delta\beta)+R(\beta\delta))=0$; $\gamma_j\gamma_k+\gamma_k\gamma_j=-L(\vec e_j\vec e_k+\vec e_k\vec e_j)R(\beta^2)=0$. For the pseudoscalar, the left factor is $L(e_t\vec e_x\vec e_y\vec e_z)=L(-e_t)$ and the right factor is $R(\beta^3\delta)=R(-\beta\delta)$; the two signs cancel, so the product is $L_{e_t}R_{\beta\delta}$.</p>
 <h3 id="the-sixteen-products-of-the-frame">The sixteen products of the frame</h3>
 <p><strong>The table.</strong> In the reference frame the products of the five are the sixteen cells up to units.</p>
 <div class="table-scroll"><table>

@@ -75,7 +75,7 @@
 <p>The article is organised as follows. The next section sets up the two diagrams, the kinematics and the minus sign. The third computes the spin-summed matrix element. The fourth gives the cross section and its two limits. The fifth treats the weak correction and the parity-violating asymmetry. The sixth is the biquaternion interpretation. The closing sections are the open questions, the summary, the notation table and the literature.</p>
 <h2 id="the-process-and-its-two-diagrams">The Process and Its Two Diagrams</h2>
 <h3 id="kinematics">Kinematics</h3>
-<p>Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $p_{i0}\,iR_{e_x}-\sum_k p_{ik}\,iL_{e_k}R_{e_y}=m$ on shell, $m = m_e$. The the generator cell are the canonical frame's cells, $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$ for $k=1,2,3$. Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$. The <strong>Mandelstam variables</strong> are</p>
+<p>Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $p_{i0}\,iR_{\vec e_x}-\sum_k p_{ik}\,iL_{\vec e_k}R_{\vec e_y}=m$ on shell, $m = m_e$. The the generator cell are the canonical frame's cells, $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$. Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$. The <strong>Mandelstam variables</strong> are</p>
 <p>$$
 s = (p_1+p_2)^2 = (p_3+p_4)^2,
 \qquad
@@ -103,11 +103,11 @@ $$</p>
 <h3 id="the-two-amplitudes-and-the-minus-sign">The two amplitudes and the minus sign</h3>
 <p>The $t$-channel diagram contributes</p>
 <p>$$
-i\mathcal M_t = \frac{(-ie)^2(-i)}{t}\Bigl[\bar w(p_3)iR_{e_x}w(p_1)\,\bar w(p_4)iR_{e_x}w(p_2)-\sum_k\bar w(p_3)iL_{e_k}R_{e_y}w(p_1)\,\bar w(p_4)iL_{e_k}R_{e_y}w(p_2)\Bigr],
+i\mathcal M_t = \frac{(-ie)^2(-i)}{t}\Bigl[\bar w(p_3)iR_{\vec e_x}w(p_1)\,\bar w(p_4)iR_{\vec e_x}w(p_2)-\sum_k\bar w(p_3)iL_{\vec e_k}R_{\vec e_y}w(p_1)\,\bar w(p_4)iL_{\vec e_k}R_{\vec e_y}w(p_2)\Bigr],
 $$</p>
 <p>and the $u$-channel diagram, obtained by exchanging the two final electrons, contributes</p>
 <p>$$
-i\mathcal M_u = \frac{(-ie)^2(-i)}{u}\Bigl[\bar w(p_3)iR_{e_x}w(p_2)\,\bar w(p_4)iR_{e_x}w(p_1)-\sum_k\bar w(p_3)iL_{e_k}R_{e_y}w(p_2)\,\bar w(p_4)iL_{e_k}R_{e_y}w(p_1)\Bigr].
+i\mathcal M_u = \frac{(-ie)^2(-i)}{u}\Bigl[\bar w(p_3)iR_{\vec e_x}w(p_2)\,\bar w(p_4)iR_{\vec e_x}w(p_1)-\sum_k\bar w(p_3)iL_{\vec e_k}R_{\vec e_y}w(p_2)\,\bar w(p_4)iL_{\vec e_k}R_{\vec e_y}w(p_1)\Bigr].
 $$</p>
 <p>Because the two final states differ only by the exchange of identical fermions, the amplitudes are combined with a relative minus sign,</p>
 <p>$$
@@ -116,15 +116,15 @@ i\mathcal M = i(\mathcal M_t - \mathcal M_u)\;},
 $$</p>
 <p>the <strong>Pauli exchange sign</strong>. This single sign is the whole of the interference structure: it removes the forward-collinear enhancement in channels where the two electrons would be identical, and it is why the $u$-channel is a subtraction rather than an addition.</p>
 <h2 id="the-spin-summed-matrix-element">The Spin-Summed Matrix Element</h2>
-<p>Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives, with $D(p):=p_0\,iR_{e_x}-\sum_k p_k\,iL_{e_k}R_{e_y}+m\,L_{e_t}R_{e_t}$ the cell of the momentum shell,</p>
+<p>Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives, with $D(p):=p_0\,iR_{\vec e_x}-\sum_k p_k\,iL_{\vec e_k}R_{\vec e_y}+m\,L_{e_t}R_{e_t}$ the cell of the momentum shell,</p>
 <p>$$
-\frac14\sum_{\mathrm{spins}}|\mathcal M|^2 = \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_4)]
+\frac14\sum_{\mathrm{spins}}|\mathcal M|^2 = \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_4)]
 $$
 $$
-\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_4)]
+\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_3)]\operatorname{Tr}[iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_4)]
 $$
 $$
-\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[D(p_3)iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{e_{\nu(\nu)}}D(p_4)iL_{e_\mu}R_{e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{e_{\nu(\nu)}}] \Big\},
+\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[D(p_3)iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_1)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}D(p_4)iL_{e_\mu}R_{\vec e_{\nu(\mu)}}D(p_2)iL_{e_\nu}R_{\vec e_{\nu(\nu)}}] \Big\},
 $$</p>
 <p>using the spin sum $\sum_s w_s(p)\bar w_s(p) = D(p)$ and the Gamma section's trace identity, the trace of four generators is $4(\eta_{\mu\nu}\eta_{\rho\sigma}-\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives</p>
 <p>$$
@@ -132,7 +132,7 @@ $$</p>
 \overline{|\mathcal M|^2} = 2e^4\Big\{ \frac{1}{t^2}\left(s^2+u^2-8m^2(s+u)+24m^4\right) + \frac{1}{u^2}\left(s^2+t^2-8m^2(s+t)+24m^4\right) + \frac{2}{tu}\left(s^2-8m^2s+12m^4\right) \Big\}\;}.
 $$</p>
 <p>Each of the three terms has the same anatomy: the two trace factors are the two electron <strong>currents</strong> contracted with each other through the photon propagator's $1/t$ or $1/u$, and the cross term is the interference, with the minus sign of exchange explicit in the coefficient $-\tfrac{2}{tu}$.</p>
-<p>Here $iL_{e_\mu}R_{e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
+<p>Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
 <h2 id="the-cross-section-and-its-limits">The Cross Section and Its Limits</h2>
 <p>The unpolarized differential cross section follows from the standard two-body flux factor,</p>
 <p>$$
@@ -278,10 +278,10 @@ The four contraction sums are frame statements, because a cell's square is. In t
 </tr>
 <tr>
 <td>the generator cell</td>
-<td>Cells of the canonical frame; $iL_{e_t}R_{e_x}$ and $iL_{e_k}R_{e_y}$</td>
+<td>Cells of the canonical frame; $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$</td>
 </tr>
 <tr>
-<td>$D(p)=p_0\,iR_{e_x}-\sum_k p_k\,iL_{e_k}R_{e_y}+m\,L_{e_t}R_{e_t}$</td>
+<td>$D(p)=p_0\,iR_{\vec e_x}-\sum_k p_k\,iL_{\vec e_k}R_{\vec e_y}+m\,L_{e_t}R_{e_t}$</td>
 <td>Cell of the momentum shell</td>
 </tr>
 </tbody>

@@ -115,21 +115,29 @@
 <td>the revision said the two ranks "are the same number" for a cell</td>
 <td>accepted: an error introduced by the fix</td>
 </tr>
+<tr>
+<td>3</td>
+<td>the two count columns of the article list excluded every cell with a coefficient in front, so twenty-one rows read $0$ and $0$</td>
+<td>accepted: the columns are recounted under a stated rule, see §The Articles of the Migration</td>
+</tr>
 </tbody>
 </table></div>
 <p><strong>The refusal.</strong> The objection computes the rank of a single left factor, $\operatorname{rank}L_Q=2\operatorname{rank}\mathsf M_2(Q)$, and applies it to the cell. A cell multiplies both sides, $L_{Q}R_{P}=\mathsf M_2(P)^{\mathrm T}\otimes\mathsf M_2(Q)$, and the rank of a Kronecker product is the product of the ranks, so $\operatorname{rank}L_{Q}R_{P}=\operatorname{rank}\mathsf M_2(Q)\cdot\operatorname{rank}\mathsf M_2(P)$. The nine rank pairs give exactly $\{0,1,2,4\}$; the value one occurs whenever both factors have rank one. The set $\{0,2,4\}$ is right for $L_Q$ and wrong for the cell. Item 2 of §5 now carries the computation and names the confusion as the trap, because it is the mistake a reader will make.</p>
 <p><strong>The second round.</strong> The revision that answered the first review then wrote that the coefficient rank and the matrix rank "are the same number" for a cell. That is false, and item 1 of the same section was the counterexample: $L_{e_t}R_{e_t}$ has length one and matrix rank four. The sentence came from attaching a computation of the matrix rank to a claim about the coefficient rank. Both directions of the independence are now exhibited, and §7 carries the rows.</p>
+<p><strong>The third round.</strong> The article list at the end of the document was checked against the files on 2026-11-02 and it is complete: $120$ rows for $120$ bodies, the same bodies, the section in the same place in all of them. Its two count columns were not sound. A cell was recognised only when the letter $L$ stood alone, so a cell written with its coefficient, $iL_{a}R_{b}$, was invisible; the physics corpus writes almost every frame cell that way, which is why twenty-one rows read $0$ and $0$ although each of them displays the five frame cells in its closing section. The columns are recounted under a rule that is stated in the section itself, and a subscript that is a bare number, $L_{11}$, is excluded because it names a coefficient or a multiplier and not a multiplication.</p>
 <p>The two claims the reviews singled out as the payoff, §4.2 and §4.4, were rechecked and left unaltered.</p>
 <h2 id="1-the-state-of-the-withdrawal">1. The state of the withdrawal</h2>
 <p>The physics corpus holds 404 articles. Ninety-one of them carry the closing section <code>## The Gamma Formulation</code>, placed after the body and before the summary. The other 313 never wrote a gamma generator in the first place — most of them are classical, thermodynamic or algebraic — so the absence of that section there is not an unfinished migration.</p>
-<p>Two bodies name a gamma on purpose:</p>
+<p>Three bodies name a gamma on purpose:</p>
 <ul>
 <li><em>Why the Biquaternion Formalism Instead of Gamma Matrices</em>, whose subject is the comparison, and which therefore displays the five cells next to the five gammas.</li>
-<li><em>Conventions of the Frames</em>, which names the frames $\gamma_\mu[\mathbb{B}]$ and $\gamma_\mu[\mathbb{M}_-]$ because a frame is its subject. It carries no closing section, and it should not: it is the one article where the frame is the datum.</li>
+<li><em>Conventions of the Frames</em>, in both its physics and its maths copy, which names the frames $\gamma_\mu[\mathbb{B}]$ and $\gamma_\mu[\mathbb{M}_-]$ because a frame is its subject. Neither copy carries a closing section, and neither should: it is the one article where the frame is the datum.</li>
+<li><em>Conventions of the Operators and the Differential Calculus</em> in maths, whose §<em>The Basis Operators</em> writes the five gammas as cells in one sentence of a conventions list. It carries no closing section either; §The rest of the corpus records the asymmetry with its physics twin, which does.</li>
 </ul>
-<p>One stray stood outside this design, and it has since been repaired. In <em>Thomson and Compton Scattering: the Biquaternion Polarization Algebra</em>, the body wrote the spin sum of the Dirac trace as $\sum_s \xi_s\bar{\xi}_s = \gamma_\mu p_\mu + m$, in a file with no gamma section. The gamma there was neither an exception nor a coordinate; it was a leftover, and it was the only body in the corpus still in column language. The article was rewritten to the corpus form: the sum is now the cell $D(p)=iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu+m\,L_{e_t}R_{e_t}$, the spin-resolved sum is $D_s(p)=\tfrac12 D(p)(1+-iL_{e_t}R_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}} s_\mu)$, and the article carries the standard closing section. The old citation was also wrong — the spin sums live in <em>Solutions and the Non-Relativistic Limit</em>, not in <em>The Dirac Equation in Biquaternionic Form</em> — and the object was called a projector without the normalisation that makes it one.</p>
-<p>The remaining bodies that carry the letter write another quantity. In <em>Dirac Matter: Graphene, Dirac Cones and Topological Insulators</em> the $\gamma_0\approx2.8$ eV is the nearest-neighbour hopping; in <em>Causality and the Light Cone</em>, <em>Velocity Space as Hyperbolic Geometry</em>, <em>Paravectors and the Geometry of Spacetime</em> and <em>Noether's Theorem</em> the $\gamma_1,\gamma_2,\gamma_{\mathrm{rel}}$ are Lorentz factors; in <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula</em> the $\gamma_2$ is a mass-formula coefficient. These are homonyms of the generator, not uses of it, and no closing section is owed for them.</p>
-<p>The vocabulary the rewrite spread is the measure of its reach: 43 articles now state the chiral pair explicitly, 87 speak of a two-sided operator, 169 of chirality, 86 of the central sign $\chi$, and 70 of the Peirce decomposition. The rewrite did not touch only the Dirac articles; it spread a distinction into every article that touches a spinor.</p>
+<p>One stray stood outside this design, and it has since been repaired. In <em>Thomson and Compton Scattering: the Biquaternion Polarization Algebra</em>, the body wrote the spin sum of the Dirac trace as $\sum_s \xi_s\bar{\xi}_s = \gamma_\mu p_\mu + m$, in a file with no gamma section. The gamma there was neither an exception nor a coordinate; it was a leftover, and it was the only body in the corpus still in column language. The article was rewritten to the corpus form: the sum is now the cell $D(p)=iL_{e_\mu}R_{\vec e_{\nu(\mu)}} p_\mu+m\,L_{e_t}R_{e_t}$, the spin-resolved sum is $D_s(p)=\tfrac12 D(p)(1+-iL_{e_t}R_{\vec e_z}iL_{e_\mu}R_{\vec e_{\nu(\mu)}} s_\mu)$, and the article carries the standard closing section. The old citation was also wrong — the spin sums live in <em>Solutions and the Non-Relativistic Limit</em>, not in <em>The Dirac Equation in Biquaternionic Form</em> — and the object was called a projector without the normalisation that makes it one.</p>
+<p>The scan asked the complementary question too, the one the migration turns on: does any migrated body still print an indexed $\gamma$ before its closing section? Six of the $91$ do. §The rest of the corpus gives each a verdict. Two are leftovers, in <em>The Fujikawa Method and the Path-Integral Anomaly</em> and in <em>The Dirac Equation in Biquaternionic Form</em>, and four are the letter naming something else.</p>
+<p>The remaining bodies that carry the letter write another quantity. In <em>Dirac Matter: Graphene, Dirac Cones and Topological Insulators</em> the $\gamma_0\approx2.8$ eV is the nearest-neighbour hopping; in <em>Causality and the Light Cone</em>, <em>Velocity Space as Hyperbolic Geometry</em>, <em>Paravectors and the Geometry of Spacetime</em> and <em>Noether's Theorem</em> the $\gamma_1,\gamma_2,\gamma_{\mathrm{rel}}$ are Lorentz factors; in <em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula</em> the $\gamma_2$ is a mass-formula coefficient. The 2026-11-02 scan of the whole corpus added the rest of the family: the gyromagnetic ratio $\gamma_g$, the tone ratios $\gamma_k$, the spatial metric $\gamma_{ij}$, the minimal surface $\gamma_A$, the geometric and Berry phases $\gamma^{\mathrm{geo}}$, $\gamma_{AA}$, $\gamma_{\mathrm{Berry}}$, the Euler–Mascheroni constant $\gamma_E$, and in <em>The Modular Hamiltonian</em> a direction in the algebra written $\gamma_0$. These are homonyms of the generator, not uses of it, and no closing section is owed for them. §The rest of the corpus lists them with their files.</p>
+<p>The vocabulary the rewrite spread is the measure of its reach. Counted on the physics corpus on 2026-11-02, $49$ articles speak of a <em>chiral pair</em>, $93$ of a <em>two-sided operator</em>, $141$ of <em>chirality</em>, and $70$ of the <em>Peirce decomposition</em>. The rewrite did not touch only the Dirac articles; it spread a distinction into every article that touches a spinor.</p>
 <h2 id="2-the-dictionary-stated-once">2. The dictionary, stated once</h2>
 <p>The five frame cells are written as their two multipliers, with $\nu(t)=x$ and $\nu(k)=y$:</p>
 <div class="table-scroll"><table>
@@ -149,19 +157,19 @@
 <td>$\vec e_x$</td>
 </tr>
 <tr>
-<td>$iL_{e_\vec e_x}R_{\vec e_y}$</td>
+<td>$iL_{\vec e_x}R_{\vec e_y}$</td>
 <td>$iL_{\vec e_x}R_{\vec e_y}$</td>
 <td>$\vec e_x$</td>
 <td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$iL_{e_\vec e_y}R_{\vec e_y}$</td>
+<td>$iL_{\vec e_y}R_{\vec e_y}$</td>
 <td>$iL_{\vec e_y}R_{\vec e_y}$</td>
 <td>$\vec e_y$</td>
 <td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$iL_{e_\vec e_z}R_{\vec e_y}$</td>
+<td>$iL_{\vec e_z}R_{\vec e_y}$</td>
 <td>$iL_{\vec e_z}R_{\vec e_y}$</td>
 <td>$\vec e_z$</td>
 <td>$\vec e_y$</td>
@@ -179,9 +187,9 @@ Two rows of the table — the timelike cell and the chirality cell — have a ce
 <h2 id="3-five-things-that-became-visible">3. Five things that became visible</h2>
 <h3 id="31-chirality-is-a-right-multiplication">3.1 Chirality is a right multiplication</h3>
 <p>$$
-\Gamma=-iL_{e_t}R_{e_z}=-i\,R_{e_z},\qquad \Gamma^2=e_t,\qquad \{\Gamma,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0 .
+\Gamma=-iL_{e_t}R_{\vec e_z}=-i\,R_{\vec e_z},\qquad \Gamma^2=e_t,\qquad \{\Gamma,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}=0 .
 $$</p>
-<p>Written as a cell, chirality acts only after the field. It has no left multiplier. Verified: the residual of $\Gamma+iR_{e_z}$ is $0$, and $\Gamma$ anticommutes with all four frame cells to residual $0$.</p>
+<p>Written as a cell, chirality acts only after the field. It has no left multiplier. Verified: the residual of $\Gamma+iR_{\vec e_z}$ is $0$, and $\Gamma$ anticommutes with all four frame cells to residual $0$.</p>
 <p>The sharper statement is a negative one. No element $a\in\mathbb{B}$ has $L_a=\Gamma$. Fitting $\Gamma$ against the four-dimensional space $\{L_a\}$ leaves a residue of $1$ in one entry, so $\Gamma$ is not a left multiplication at all. Chirality is therefore not something the algebra does to a field from the left; it is something done to the field from the right. In gamma notation the distinction has no name, because $\gamma_5$ acts on a column, and a column has one side only.</p>
 <h3 id="32-time-and-chirality-act-on-one-side-space-acts-on-both">3.2 Time and chirality act on one side, space acts on both</h3>
 <p>This is the observation the corpus does not state in one place, and it is exact.</p>
@@ -201,23 +209,23 @@ $$</p>
 </tr>
 <tr>
 <td>timelike cell</td>
-<td>$iL_{e_t}R_{e_x}=iR_{e_x}$</td>
+<td>$iL_{e_t}R_{\vec e_x}=iR_{\vec e_x}$</td>
 <td>right only</td>
 </tr>
 <tr>
 <td>chirality cell</td>
-<td>$-iL_{e_t}R_{e_z}=-iR_{e_z}$</td>
+<td>$-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$</td>
 <td>right only</td>
 </tr>
 <tr>
 <td>spatial cells</td>
-<td>$iL_{e_\vec e_k}R_{e_y}$</td>
+<td>$iL_{\vec e_k}R_{\vec e_y}$</td>
 <td>both</td>
 </tr>
 </tbody>
 </table></div>
-<p>The reason is structural and not a feature of the reference frame. A cell whose left multiplier is central is a multiple of a right multiplication: $L_{\lambda e_t}R_{b}=\lambda R_b$. The timelike cell and the chirality cell both have $e_t$ on the left, up to the central $i$, so both are one-sided in every frame. The spatial cells have $\vec e_k$ on the left, which is not central, so they are genuinely two-sided, and the anticommutator $\{iL_{e_t}R_{e_x},iL_{e_\vec e_k}R_{e_y}\}=0$ comes entirely from the right factors, $R_{e_y}R_{e_x}=-R_{e_x}R_{e_y}$.</p>
-<p>The one-sidedness of $iL_{e_t}R_{e_x}$ and $\gamma_5$ was checked in three frame pairs, $(\beta,\delta)=(\vec e_y,\vec e_x)$, $(\vec e_x,\vec e_y)$, $(\vec e_z,\vec e_x)$, with residual $0$ in each, together with the Clifford relations, also residual $0$ in each. The spatial cells fail the same test with residual $2$, as they must.</p>
+<p>The reason is structural and not a feature of the reference frame. A cell whose left multiplier is central is a multiple of a right multiplication: $L_{\lambda e_t}R_{b}=\lambda R_b$. The timelike cell and the chirality cell both have $e_t$ on the left, up to the central $i$, so both are one-sided in every frame. The spatial cells have $\vec e_k$ on the left, which is not central, so they are genuinely two-sided, and the anticommutator $\{iL_{e_t}R_{\vec e_x},iL_{\vec e_k}R_{\vec e_y}\}=0$ comes entirely from the right factors, $R_{\vec e_y}R_{\vec e_x}=-R_{\vec e_x}R_{\vec e_y}$.</p>
+<p>The one-sidedness of $iL_{e_t}R_{\vec e_x}$ and $\gamma_5$ was checked in three frame pairs, $(\beta,\delta)=(\vec e_y,\vec e_x)$, $(\vec e_x,\vec e_y)$, $(\vec e_z,\vec e_x)$, with residual $0$ in each, together with the Clifford relations, also residual $0$ in each. The spatial cells fail the same test with residual $2$, as they must.</p>
 <p>Read as physics, the table says that time and chirality are properties of the <em>second</em> side, space is a property of the <em>pair</em> of sides, and the mass is central. This is the same content as the corpus's statement that the fourth Clifford direction <em>is</em> the second side, seen from the other end: the fourth direction is one-sided for the same reason the chirality is.</p>
 <h3 id="33-the-mass-is-the-identity-cell-and-the-gamma-list-cannot-name-it">3.3 The mass is the identity cell, and the gamma list cannot name it</h3>
 <p>$$
@@ -234,11 +242,11 @@ $$</p>
 <h3 id="35-the-edm-insertion-is-minus-a-material-vector">3.5 The EDM insertion is minus a material vector</h3>
 <p>The electric-dipole insertion is anti-Hermitian and its magnetic partner is Hermitian:</p>
 <p>$$
-\sigma_{0k}-iL_{e_t}R_{e_z}\ \text{anti-Hermitian},\qquad \sigma_{ij}\ \text{Hermitian},
+\sigma_{0k}-iL_{e_t}R_{\vec e_z}\ \text{anti-Hermitian},\qquad \sigma_{ij}\ \text{Hermitian},
 $$</p>
 <p>both to residual $0$ over all pairs. The identity behind the placement is exact:</p>
 <p>$$
-\sigma_{0k}-iL_{e_t}R_{e_z}=i\,\mathbf{1}\otimes\sigma_k=-\mathsf M_2(\vec e_k),
+\sigma_{0k}-iL_{e_t}R_{\vec e_z}=i\,\mathbf{1}\otimes\sigma_k=-\mathsf M_2(\vec e_k),
 $$</p>
 <p>on the spinor slot, for $k=1,2,3$, residual $0$. So the CP-odd insertion <em>is</em> a vector of the material sector, with a minus sign, and the explicit $i$ that makes the Lagrangian Hermitian is the marker of that sector rather than a convention.</p>
 <p>The gain is that "the EDM operator is anti-Hermitian" becomes "the EDM operator is (minus) a spatial direction". The first is a property of a matrix; the second is a property of the algebra.</p>
@@ -253,9 +261,9 @@ $$</p>
 <p>The duplication is not confined to the free equation. The same split appears in the covariant derivative, in the adjoint equation, in the axial current, and in the plane-wave solutions, and 43 articles now state the pair in this form.</p>
 <h3 id="42-why-the-scalar-mass-forces-a-pair">4.2 Why the scalar mass forces a pair</h3>
 <p>This is the strongest single result the rewrite exposed, and it is in <em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em>.</p>
-<p>A first-order operator $\mathsf D+B$ squares to $\Box-\mu^2$ only if $\{B,iL_{e_\mu}R_{e_{\nu(\mu)}}\}=0$ for all $\mu$. The anticommutant of the four cells is one-dimensional, and the only element in it is $-iL_{e_t}R_{e_z}$:</p>
+<p>A first-order operator $\mathsf D+B$ squares to $\Box-\mu^2$ only if $\{B,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}=0$ for all $\mu$. The anticommutant of the four cells is one-dimensional, and the only element in it is $-iL_{e_t}R_{\vec e_z}$:</p>
 <p>$$
-B=c\,(-iL_{e_t}R_{e_z}),\qquad B^2=c^2=-\mu^2,\qquad c=\pm i\mu .
+B=c\,(-iL_{e_t}R_{\vec e_z}),\qquad B^2=c^2=-\mu^2,\qquad c=\pm i\mu .
 $$</p>
 <p>So a <strong>single</strong> root exists, but the mass it carries is a <strong>pseudoscalar</strong> mass, parity-odd, diagonal in chirality, and not the mass of the Standard Model. The <strong>scalar</strong> mass commutes with the frame cells instead of anticommuting, so no single operator of the form $\mathsf D+\mu$ squares to the wave operator.</p>
 <p>$$
@@ -270,7 +278,7 @@ $$</p>
 <li><strong>The Lorentz action separates under boosts and coincides under rotations.</strong> A boost rotor has an imaginary vector part, so the two halves transform by inverse matrices; a rotation rotor is a real quaternion, so they transform alike. In gamma notation the two statements are one statement about $\gamma_5$ commuting with the Lorentz generators.</li>
 <li><strong>The double cover becomes a kernel statement.</strong> The sign cancels on a four-vector because the four-vector is bilinear, and it does not cancel on a spinor. One factor of $g$ versus two. The duplication is what makes the two actions different in kind.</li>
 </ul>
-<h3 id="44-three-objects-that-the-gamma-notation-calls-math106">4.4 Three objects that the gamma notation calls $\gamma_5$</h3>
+<h3 id="44-three-objects-that-the-gamma-notation-calls-math129">4.4 Three objects that the gamma notation calls $\gamma_5$</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -285,14 +293,14 @@ $$</p>
 <tr>
 <td>grading of the Dirac module</td>
 <td>$\gamma_5$</td>
-<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$, represented by $-iL_{e_t}R_{e_z}$</td>
+<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$, represented by $-iL_{e_t}R_{\vec e_z}$</td>
 <td>central in $\mathbb{C}\otimes\mathbb{B}$</td>
 <td>$e_t$</td>
 </tr>
 <tr>
 <td>chirality cell of the frame</td>
 <td>$\gamma_5$</td>
-<td>$\Gamma=-iL_{e_t}R_{e_z}=-iR_{e_z}$</td>
+<td>$\Gamma=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$</td>
 <td>the cell in the reference frame</td>
 <td>$e_t$</td>
 </tr>
@@ -320,10 +328,10 @@ $$</p>
 <li><strong>Matrix rank</strong>, the rank of the $4\times4$ matrix of $M$ on the regular module. For a cell, $L_{Q}R_{P}$ acts as $\mathsf M_2(P)^{\mathrm T}\otimes\mathsf M_2(Q)$, and the rank of a Kronecker product is the product of the ranks, so $\operatorname{rank}L_{Q}R_{P}=\operatorname{rank}\mathsf M_2(Q)\cdot\operatorname{rank}\mathsf M_2(P)\in\{0,1,2,4\}$. Three is impossible for the matrix rank of a cell.</li>
 <li><strong>The trap</strong>, a single left factor: $\operatorname{rank}L_Q=2\operatorname{rank}\mathsf M_2(Q)$, so the range $\{0,2,4\}$ — correct for $L_Q$ — is wrong for the cell, because the right factor multiplies the rank rather than contributing a second factor of two.</li>
 </ul>
-<p>The two numbers are independent in both directions, and <em>Why the Biquaternion Formalism Instead of Gamma Matrices</em> says so in one line with the same example: the chiral projector $P_+=\tfrac12(L_{e_t}R_{e_t}-iL_{e_t}R_{e_z})$ has matrix rank two and length one, and a rank-one matrix can have length four. Both were recomputed. The mass is a second instance of the first direction, $L_{e_t}R_{e_t}$ having length one and matrix rank four. The reverse — matrix rank one, length four — is any rank-one $4\times4$ matrix drawn at random on $\mathbb{C}^4$, which is not a single product in the sixteen-basis. Neither number is a proxy for the other, and a statement about one says nothing about the other.</p>
+<p>The two numbers are independent in both directions, and <em>Why the Biquaternion Formalism Instead of Gamma Matrices</em> says so in one line with the same example: the chiral projector $P_+=\tfrac12(L_{e_t}R_{e_t}-iL_{e_t}R_{\vec e_z})$ has matrix rank two and length one, and a rank-one matrix can have length four. Both were recomputed. The mass is a second instance of the first direction, $L_{e_t}R_{e_t}$ having length one and matrix rank four. The reverse — matrix rank one, length four — is any rank-one $4\times4$ matrix drawn at random on $\mathbb{C}^4$, which is not a single product in the sixteen-basis. Neither number is a proxy for the other, and a statement about one says nothing about the other.</p>
 </li>
 <li>
-<p><strong>A dull-looking operator is outside the cone.</strong> $L_{e_t}R_{e_t}+L_{e_x}R_{e_x}$ has length two and matrix rank two, and is not a single product; no decomposable frame change makes it one, since multiplying by single products on both sides leaves the length at two, checked on one hundred such products. A sum of two ordinary cells is a genuinely different object, and the gamma form has no way to say so.</p>
+<p><strong>A dull-looking operator is outside the cone.</strong> $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ has length two and matrix rank two, and is not a single product; no decomposable frame change makes it one, since multiplying by single products on both sides leaves the length at two, checked on one hundred such products. A sum of two ordinary cells is a genuinely different object, and the gamma form has no way to say so.</p>
 </li>
 <li>
 <p><strong>The fourth direction is the second side.</strong> Time is not a fourth quaternion unit; it is a right multiplication. This is why no element of $\mathbb{B}$ anticommutes with all three $\vec e_k$, and why the first-order root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ rather than in $\mathbb{B}$.</p>
@@ -366,15 +374,15 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$(-iL_{e_t}R_{e_z})^2=\mathbf 1$</td>
+<td>$(-iL_{e_t}R_{\vec e_z})^2=\mathbf 1$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$-iL_{e_t}R_{e_z}$ anticommutes with the four cells</td>
+<td>$-iL_{e_t}R_{\vec e_z}$ anticommutes with the four cells</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\Gamma=-iL_{e_t}R_{e_z}=-iR_{e_z}$</td>
+<td>$\Gamma=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -382,7 +390,7 @@ $$</p>
 <td>best fit off by $1$</td>
 </tr>
 <tr>
-<td>$iL_{e_t}R_{e_x}$ is a pure right multiplication</td>
+<td>$iL_{e_t}R_{\vec e_x}$ is a pure right multiplication</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -390,7 +398,7 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$iL_{e_k}R_{e_y}$ is not a pure right multiplication</td>
+<td>$iL_{\vec e_k}R_{\vec e_y}$ is not a pure right multiplication</td>
 <td>$2$</td>
 </tr>
 <tr>
@@ -426,15 +434,15 @@ $$</p>
 <td>residual $9\times10^{-16}$</td>
 </tr>
 <tr>
-<td>the chiral projector $P_+=\tfrac12(L_{e_t}R_{e_t}-iL_{e_t}R_{e_z})$: matrix rank $2$, length $1$</td>
+<td>the chiral projector $P_+=\tfrac12(L_{e_t}R_{e_t}-iL_{e_t}R_{\vec e_z})$: matrix rank $2$, length $1$</td>
 <td>exact</td>
 </tr>
 <tr>
-<td>length of $L_{e_t}R_{e_t}+L_{e_x}R_{e_x}$ after $100$ frame products $XMY$</td>
+<td>length of $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ after $100$ frame products $XMY$</td>
 <td>stays $2$</td>
 </tr>
 <tr>
-<td>$L_{e_t}R_{e_t}+L_{e_x}R_{e_x}$: eigenvalues $0,0,2,2$</td>
+<td>$L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$: eigenvalues $0,0,2,2$</td>
 <td>matrix rank $2$, length $2$</td>
 </tr>
 <tr>
@@ -450,7 +458,7 @@ $$</p>
 <td>exact</td>
 </tr>
 <tr>
-<td>$\operatorname{rank}(L_{e_t}R_{e_t}+L_{e_x}R_{e_x})=2$</td>
+<td>$\operatorname{rank}(L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x})=2$</td>
 <td>exact</td>
 </tr>
 <tr>
@@ -458,15 +466,15 @@ $$</p>
 <td>exact</td>
 </tr>
 <tr>
-<td>$\sigma_{0k}-iL_{e_t}R_{e_z}$ anti-Hermitian, all $k$</td>
+<td>$\sigma_{0k}-iL_{e_t}R_{\vec e_z}$ anti-Hermitian, all $k$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\sigma_{ij}-iL_{e_t}R_{e_z}$ Hermitian, all $i<j$</td>
+<td>$\sigma_{ij}-iL_{e_t}R_{\vec e_z}$ Hermitian, all $i<j$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\sigma_{0k}-iL_{e_t}R_{e_z}=-\mathsf M_2(\vec e_k)$ on the spinor slot</td>
+<td>$\sigma_{0k}-iL_{e_t}R_{\vec e_z}=-\mathsf M_2(\vec e_k)$ on the spinor slot</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -482,17 +490,20 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$D_{+}+D_{-}=D(p)$ and $\tfrac{1}{2m}\bigl(D(p)+m\,L_{e_t}R_{e_t}-iL_{e_\mu}R_{e_{\nu(\mu)}} p_\mu\bigr)=1$</td>
+<td>$D_{+}+D_{-}=D(p)$ and $\tfrac{1}{2m}\bigl(D(p)+m\,L_{e_t}R_{e_t}-iL_{e_\mu}R_{\vec e_{\nu(\mu)}} p_\mu\bigr)=1$</td>
 <td>$0$</td>
 </tr>
 </tbody>
 </table></div>
+<p>A second run, on 2026-11-02, counted the two corpora rather than the algebra. Every count in the article list and in §The rest of the corpus comes from it, and it is mechanical: the heading <code>## The Gamma Formulation</code> occurs $120$ times, once per body, always between the body and <code>## Summary</code>; the corpora hold $404$ physics and $2358$ maths files; outside the list, $10$ physics and $194$ maths bodies write a two-sided cell, $96$ and $3020$ cells; $54$ physics and $717$ maths bodies write a single $L$ or $R$ with a subscript; and $92$ physics and $230$ maths bodies write the letter $\gamma$, of which $33$ and $47$ index it, $\gamma_0$ to $\gamma_5$.</p>
+<p>A third run, later the same day, recounted the $120$ rows against the files after the corpus had been edited again: four rows moved, all of them by one or two symbols, and the totals are now $2870$ cells and $7519$ multiplication symbols in physics and $1200$ and $3134$ in maths. The run also asked the question the migration turns on and answered it: of the $91$ migrated physics bodies, six still print an indexed $\gamma$ before the closing section, and the count separates the two leftovers from the four homonyms. They are listed with their verdicts in §The rest of the corpus, and the $120$-row list itself is unchanged, because no article gained or lost the section.</p>
 <h2 id="8-open-questions">8. Open questions</h2>
 <ul>
 <li><strong>Does the vector-like reading survive the axial one?</strong> The two-$i$ question above, and the only open item that gates a programme rather than a paragraph. Deciding which module the field inhabits fixes whether the abelian factor is vector-like or axial, which fixes the hypercharge assignment, which decides whether the framework can reproduce the observed chiral fermion content at all. It is a modelling decision with empirical consequences, so it is left to the author and not settled here by preference.</li>
-<li><strong>Is the pseudoscalar root physical anywhere?</strong> The single root $\mathsf D\pm i\mu-iL_{e_t}R_{e_z}$ is parity-odd and is not the Dirac mass. If the framework has a natural home for a pseudoscalar mass, the corpus has not named it.</li>
+<li><strong>Is the pseudoscalar root physical anywhere?</strong> The single root $\mathsf D\pm i\mu-iL_{e_t}R_{\vec e_z}$ is parity-odd and is not the Dirac mass. If the framework has a natural home for a pseudoscalar mass, the corpus has not named it.</li>
 <li><strong>Can the three $\gamma_5$ roles be separated in the closing section too?</strong> Those sections say "$\gamma_5$" once, distinguish the cell from the central grading in one sentence, and never mention the Peirce copy sign $P$. A reader who consults only that section sees two objects where there are three.</li>
-<li><strong>Is the spin-resolved cell used anywhere else?</strong> The Thomson article now states $D_s(p)=\tfrac12 D(p)(1+-iL_{e_t}R_{e_z}iL_{e_\mu}R_{e_{\nu(\mu)}} s_\mu)$, verified as a pair of orthogonal rank-one cells. No other article states it, although Møller, Bhabha and the polarized cross-sections all need it; propagating it is the obvious next step.</li>
+<li><strong>Is the spin-resolved cell used anywhere else?</strong> The Thomson article now states $D_s(p)=\tfrac12 D(p)(1+-iL_{e_t}R_{\vec e_z}iL_{e_\mu}R_{\vec e_{\nu(\mu)}} s_\mu)$, verified as a pair of orthogonal rank-one cells. No other article states it, although Møller, Bhabha and the polarized cross-sections all need it; propagating it is the obvious next step.</li>
+<li><strong>Should <em>Conventions of the Operators and the Differential Calculus</em> carry the closing section?</strong> The maths conventions article writes the five gammas as cells in the body and stops there, while its physics twin closes with the section. Either the maths copy gains the section, or the corpus accepts that a conventions article names the dictionary and does not close it — as <em>Conventions of the Frames</em> already does. The record above reports the asymmetry; the decision belongs to the author.</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The withdrawal of the gamma frame changed more than the notation.</p>
@@ -501,9 +512,11 @@ $$</p>
 <p><strong>What became separable.</strong> Three objects that the gamma notation called $\gamma_5$ — the central grading $\chi$, the frame cell $\Gamma$, the Peirce copy sign $P$ — now have three names and three roles.</p>
 <p><strong>What stays fragile.</strong> The central phase has two readings and no decision; the Peirce split is easy to confuse with the chiral split; the dictionary is complex-linear and does not cover the real forms.</p>
 <h2 id="the-articles-of-the-migration">The Articles of the Migration</h2>
-<p>Every article below carries the closing section <code>## The Gamma Formulation</code>, and every one is listed in its menu, so the section and the menu entry are the two marks of an article the migration reached. The counts are of the body, the closing section included.</p>
-<p>The second column counts complete two-sided cells, an $L_{a}$ and an $R_{b}$ written together, $L_{a}R_{b}$. The third column counts every left and every right multiplication, so the one-sided spellings $iR_{\vec e_x}$, $-iR_{\vec e_z}$ and $L_{\vec e_x}$ are counted there and not in the second column.</p>
-<h3 id="the-maths-articles-in-the-order-of-the-menu">The maths articles, in the order of the menu</h3>
+<p>Every article below carries the closing section <code>## The Gamma Formulation</code>, and every one is listed in its menu, so the section and the menu entry are the two marks of an article the migration reached. The counts are of the whole file, the closing section included. The list was regenerated on 2026-11-02 against the files themselves: the $120$ rows are exactly the $120$ files that carry the heading, none is missing and none is stale, and every one of the $120$ has the section in the same place, between the body and <code>## Summary</code>.</p>
+<p>The second column counts complete two-sided cells, an $L_{a}$ and an $R_{b}$ written together, $L_{a}R_{b}$, with a coefficient in front counted as part of the cell, $iL_{a}R_{b}$. The third column counts every left and every right multiplication, so the one-sided spellings $iR_{\vec e_x}$, $-iR_{\vec e_z}$ and $L_{\vec e_x}$ are counted there and not in the second column. Both columns are mechanical: a subscripted $L$ or $R$ preceded by a coefficient, a bracket or a dollar sign is a match; a letter inside a word is not.</p>
+<p>The earlier version of these two columns counted a cell only when no coefficient preceded it, so every frame cell of the physics corpus, $iL_{a}R_{b}$, was invisible. That is why twenty-one rows read $0$ and $0$ although each of them writes the five frame cells in its closing section. The rows below are recounted. A subscript that is a bare number, $L_{11}$, is a coefficient of a surface or a multiplier of a function, not a multiplication, and it is excluded from both columns.</p>
+<p>The rows are grouped into two tables, maths and then physics, and inside each table they run from the densest body to the emptiest, measured on the two-sided cells of the second column; a tie falls to the total count of the third column and then to the title. The order of the menu is not kept, because the question these columns answer is which body leans hardest on the dictionary, and that ordering is the answer.</p>
+<h3 id="the-maths-articles-densest-first">The maths articles, densest first</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -514,154 +527,154 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="articles_maths/conventions-of-the-matrix-models.html">Matrix Representations Conventions</a></td>
-<td style="text-align: right;">153</td>
-<td style="text-align: right;">378</td>
+<td><a href="../articles_maths/the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a></td>
+<td style="text-align: right;">247</td>
+<td style="text-align: right;">619</td>
 </tr>
 <tr>
-<td><a href="articles_maths/the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html">The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</a></td>
-<td style="text-align: right;">25</td>
+<td><a href="../articles_maths/m4c-standard-peirce-representation-operators.html">$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</a></td>
+<td style="text-align: right;">216</td>
+<td style="text-align: right;">463</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/conventions-of-the-matrix-models.html">Matrix Representations Conventions</a></td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">380</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M_4(\mathbb{C})$</a></td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">171</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html">The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</a></td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">238</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html">The First-Order Root of the Biquaternion D'Alembertian</a></td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">287</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a></td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">166</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html">The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$</a></td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">137</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-clifford-group-and-the-frame-stabiliser.html">The Clifford Group and the Frame Stabiliser</a></td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">94</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html">The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</a></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">64</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html">The Fierz–Kofink Identities and the Classification of Spinors</a></td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-pin-group-of-the-gamma-frame.html">The Pin Group of the Gamma Frame</a></td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">62</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">112</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-dirac-kahler-equation.html">The Dirac–Kähler Equation</a></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.html">Complex Split Biquaternions and the Clifford Algebra Cl(3)</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/chirality-the-conjugate-pair.html">Chirality: The Conjugate Pair in the Biquaternion Algebra</a></td>
+<td style="text-align: right;">5</td>
 <td style="text-align: right;">50</td>
 </tr>
 <tr>
-<td><a href="articles_maths/the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_maths/adjoints-on-a-clifford-module.html">Adjoints on a Clifford Module</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
 </tr>
 <tr>
-<td><a href="articles_maths/the-low-dimensional-classification.html">The Low-Dimensional Classification</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_maths/dirac-operators-with-hermitian-adjoint.html">Dirac Operators with Hermitian Adjoint</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">26</td>
 </tr>
 <tr>
-<td><a href="articles_maths/the-number-systems-as-clifford-algebras.html">The Number Systems as Clifford Algebras</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_maths/biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
 </tr>
 <tr>
-<td><a href="articles_maths/dirac-operators-with-hermitian-adjoint.html">Dirac Operators with Hermitian Adjoint</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">18</td>
+<td><a href="../articles_maths/spectral-triples-and-noncommutative-geometry.html">Spectral Triples and Noncommutative Geometry</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
 </tr>
 <tr>
-<td><a href="articles_maths/spinor-adjoints-and-the-dirac-adjoint-with-hermitian-adjoint.html">Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
+<td><a href="../articles_maths/spinor-adjoints-and-the-dirac-adjoint-with-hermitian-adjoint.html">Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
 </tr>
 <tr>
-<td><a href="articles_maths/the-dirac-kahler-equation.html">The Dirac–Kähler Equation</a></td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">12</td>
+<td><a href="../articles_maths/the-dirac-operator-and-its-adjoint.html">The Dirac Operator and Its Adjoint</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
 </tr>
 <tr>
-<td><a href="articles_maths/adjoints-on-a-clifford-module.html">Adjoints on a Clifford Module</a></td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</a></td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">8</td>
 </tr>
 <tr>
-<td><a href="articles_maths/curves-and-surfaces-in-the-biquaternion-moving-frame.html">Curves and Surfaces in the Biquaternion Moving Frame</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">91</td>
-</tr>
-<tr>
-<td><a href="articles_maths/spectral-triples-and-noncommutative-geometry.html">Spectral Triples and Noncommutative Geometry</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-dirac-operator-and-its-adjoint.html">The Dirac Operator and Its Adjoint</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_maths/chirality-the-conjugate-pair.html">Chirality: The Conjugate Pair in the Biquaternion Algebra</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">23</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a></td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">36</td>
-</tr>
-<tr>
-<td><a href="articles_maths/m4c-standard-peirce-representation-operators.html">$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</a></td>
-<td style="text-align: right;">216</td>
-<td style="text-align: right;">468</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html">The First-Order Root of the Biquaternion D'Alembertian</a></td>
-<td style="text-align: right;">78</td>
-<td style="text-align: right;">267</td>
-</tr>
-<tr>
-<td><a href="articles_maths/biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_maths/bilinear-operators-on-the-general-plain-sesqualgebra.html">Bilinear Operators on the General Plain Sesqualgebra</a></td>
+<td><a href="../articles_maths/bilinear-operators-on-the-general-plain-sesqualgebra.html">Bilinear Operators on the General Plain Sesqualgebra</a></td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">5</td>
 </tr>
 <tr>
-<td><a href="articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</a></td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">7</td>
+<td><a href="../articles_maths/curves-and-surfaces-in-the-biquaternion-moving-frame.html">Curves and Surfaces in the Biquaternion Moving Frame</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr>
-<td><a href="articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html">The Fierz–Kofink Identities and the Classification of Spinors</a></td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">84</td>
+<td><a href="../articles_maths/the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr>
-<td><a href="articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.html">Complex Split Biquaternions and the Clifford Algebra Cl(3)</a></td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">13</td>
+<td><a href="../articles_maths/the-low-dimensional-classification.html">The Low-Dimensional Classification</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr>
-<td><a href="articles_maths/the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a></td>
-<td style="text-align: right;">240</td>
-<td style="text-align: right;">592</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html">The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</a></td>
-<td style="text-align: right;">76</td>
-<td style="text-align: right;">206</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a></td>
-<td style="text-align: right;">66</td>
-<td style="text-align: right;">161</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html">The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$</a></td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">135</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M_4(\mathbb{C})$</a></td>
-<td style="text-align: right;">85</td>
-<td style="text-align: right;">170</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-pin-group-of-the-gamma-frame.html">The Pin Group of the Gamma Frame</a></td>
-<td style="text-align: right;">23</td>
-<td style="text-align: right;">55</td>
-</tr>
-<tr>
-<td><a href="articles_maths/the-clifford-group-and-the-frame-stabiliser.html">The Clifford Group and the Frame Stabiliser</a></td>
-<td style="text-align: right;">43</td>
-<td style="text-align: right;">90</td>
+<td><a href="../articles_maths/the-number-systems-as-clifford-algebras.html">The Number Systems as Clifford Algebras</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
 </tbody>
 </table></div>
-<p>The 29 articles carry 1113 two-sided cells and 2870 multiplication symbols in all.</p>
-<h3 id="the-physics-articles-in-the-order-of-the-menu">The physics articles, in the order of the menu</h3>
+<p>The 29 articles carry 1200 two-sided cells and 3134 multiplication symbols in all.</p>
+<h3 id="the-physics-articles-densest-first">The physics articles, densest first</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -672,464 +685,688 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">6</td>
+<td><a href="../articles_physics/conventions-of-the-matrix-models.html">Matrix Representations Conventions</a></td>
+<td style="text-align: right;">199</td>
+<td style="text-align: right;">467</td>
 </tr>
 <tr>
-<td><a href="articles_physics/conventions-of-the-matrix-models.html">Matrix Representations Conventions</a></td>
-<td style="text-align: right;">204</td>
-<td style="text-align: right;">471</td>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a></td>
+<td style="text-align: right;">173</td>
+<td style="text-align: right;">397</td>
 </tr>
 <tr>
-<td><a href="articles_physics/conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a></td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">42</td>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
+<td style="text-align: right;">170</td>
+<td style="text-align: right;">415</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">5</td>
+<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">397</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_physics/the-gordon-decomposition-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">236</td>
 </tr>
 <tr>
-<td><a href="articles_physics/maxwells-equations-in-biquaternionic-form.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">12</td>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">214</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_physics/subluminal-and-superluminal-electromagnetic-waves-and-the-lepton-mass-spectrum.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
-<td style="text-align: right;">29</td>
-<td style="text-align: right;">89</td>
-</tr>
-<tr>
-<td><a href="articles_physics/paravectors-and-the-geometry-of-spacetime.html">Paravectors and the Geometry of Spacetime</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">12</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr>
-<td><a href="articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">63</td>
-</tr>
-<tr>
-<td><a href="articles_physics/moller-scattering-in-biquaternionic-form.html">Møller Scattering in Biquaternionic Form</a></td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">61</td>
-</tr>
-<tr>
-<td><a href="articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a></td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">24</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
-<td style="text-align: right;">63</td>
-<td style="text-align: right;">176</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
 <td style="text-align: right;">94</td>
-<td style="text-align: right;">190</td>
+<td style="text-align: right;">196</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">229</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</a></td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">12</td>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">170</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">8</td>
+<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a></td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">180</td>
 </tr>
 <tr>
-<td><a href="articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html">Parra's Four Options of the Dirac Equation and the Discrete Symmetries</a></td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit †</a></td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">191</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
-<td style="text-align: right;">84</td>
-<td style="text-align: right;">217</td>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">149</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action †</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">178</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">14</td>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">167</td>
 </tr>
 <tr>
-<td><a href="articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html">Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</a></td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">14</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit †</a></td>
-<td style="text-align: right;">66</td>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a></td>
+<td style="text-align: right;">62</td>
 <td style="text-align: right;">173</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-gordon-decomposition-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
-<td style="text-align: right;">102</td>
-<td style="text-align: right;">222</td>
+<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">128</td>
 </tr>
 <tr>
-<td><a href="articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></td>
-<td style="text-align: right;">111</td>
-<td style="text-align: right;">376</td>
+<td><a href="../articles_physics/the-grading-and-fermion-parity-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</a></td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">114</td>
 </tr>
 <tr>
-<td><a href="articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">18</td>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">173</td>
 </tr>
 <tr>
-<td><a href="articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a></td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">26</td>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">137</td>
 </tr>
 <tr>
-<td><a href="articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">29</td>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">149</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">38</td>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">106</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">135</td>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">123</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">44</td>
+<td><a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection in Biquaternionic Form</a></td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">104</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">26</td>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">145</td>
 </tr>
 <tr>
-<td><a href="articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">84</td>
 </tr>
 <tr>
-<td><a href="articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">35</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
-<td style="text-align: right;">43</td>
-<td style="text-align: right;">121</td>
-</tr>
-<tr>
-<td><a href="articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a></td>
 <td style="text-align: right;">36</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a></td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">103</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/moller-scattering-in-biquaternionic-form.html">Møller Scattering in Biquaternionic Form</a></td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">75</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a></td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">67</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a></td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">77</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-and-the-lepton-mass-spectrum.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">99</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td style="text-align: right;">23</td>
 <td style="text-align: right;">72</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a></td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">56</td>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">58</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">66</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
 <td style="text-align: right;">22</td>
 <td style="text-align: right;">54</td>
 </tr>
 <tr>
-<td><a href="articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">26</td>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">56</td>
 </tr>
 <tr>
-<td><a href="articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html">Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</a></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">53</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a></td>
-<td style="text-align: right;">169</td>
-<td style="text-align: right;">384</td>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">52</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-grading-and-fermion-parity-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</a></td>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td style="text-align: right;">20</td>
 <td style="text-align: right;">44</td>
-<td style="text-align: right;">98</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">58</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">4</td>
+<td><a href="../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a></td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">42</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
 <td style="text-align: right;">18</td>
-<td style="text-align: right;">36</td>
+<td style="text-align: right;">66</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a></td>
-<td style="text-align: right;">31</td>
-<td style="text-align: right;">81</td>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">55</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
-<td style="text-align: right;">165</td>
-<td style="text-align: right;">403</td>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">49</td>
 </tr>
 <tr>
-<td><a href="articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">51</td>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">40</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a></td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">6</td>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">40</td>
 </tr>
 <tr>
-<td><a href="articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
-<td style="text-align: right;">73</td>
-<td style="text-align: right;">156</td>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">38</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html">Klein–Gordon from the Dirac Square in Biquaternionic Form</a></td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">43</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a></td>
 <td style="text-align: right;">17</td>
 <td style="text-align: right;">38</td>
 </tr>
 <tr>
-<td><a href="articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td><a href="../articles_physics/conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a></td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">72</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">53</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">35</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
 <td style="text-align: right;">13</td>
-<td style="text-align: right;">41</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">39</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
-<td style="text-align: right;">46</td>
-<td style="text-align: right;">98</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">30</td>
-</tr>
-<tr>
-<td><a href="articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
-<td style="text-align: right;">46</td>
-<td style="text-align: right;">110</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a></td>
-<td style="text-align: right;">69</td>
-<td style="text-align: right;">161</td>
-</tr>
-<tr>
-<td><a href="articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
-<td style="text-align: right;">97</td>
-<td style="text-align: right;">200</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">21</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">20</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td><a href="articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">29</td>
-</tr>
-<tr>
-<td><a href="articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">26</td>
-</tr>
-<tr>
-<td><a href="articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
-<td style="text-align: right;">46</td>
-<td style="text-align: right;">143</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a></td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">90</td>
-</tr>
-<tr>
-<td><a href="articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">108</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
-<td style="text-align: right;">42</td>
-<td style="text-align: right;">151</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a></td>
-<td style="text-align: right;">57</td>
-<td style="text-align: right;">153</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
-<td style="text-align: right;">58</td>
-<td style="text-align: right;">147</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
-<td style="text-align: right;">34</td>
-<td style="text-align: right;">129</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">19</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">42</td>
-</tr>
-<tr>
-<td><a href="articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html">Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a></td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">30</td>
-</tr>
-<tr>
-<td><a href="articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td><a href="articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
-<td style="text-align: right;">15</td>
 <td style="text-align: right;">32</td>
 </tr>
 <tr>
-<td><a href="articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">43</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
 <td style="text-align: right;">9</td>
 <td style="text-align: right;">22</td>
 </tr>
 <tr>
-<td><a href="articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
-<td style="text-align: right;">15</td>
-<td style="text-align: right;">42</td>
-</tr>
-<tr>
-<td><a href="articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection in Biquaternionic Form</a></td>
-<td style="text-align: right;">40</td>
-<td style="text-align: right;">90</td>
-</tr>
-<tr>
-<td><a href="articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
 <td style="text-align: right;">9</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">22</td>
 </tr>
 <tr>
-<td><a href="articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">48</td>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">24</td>
 </tr>
 <tr>
-<td><a href="articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
-<td style="text-align: right;">3</td>
+<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html">Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</a></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html">Electromagnetism in Media — The Local Complex Structure at Work</a></td>
 <td style="text-align: right;">6</td>
+<td style="text-align: right;">55</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html">Parra's Four Options of the Dirac Equation and the Discrete Symmetries</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-biquaternionic-form.html">Maxwell's Equations in the Biquaternionic Formulation</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</a></td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action †</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/paravectors-and-the-geometry-of-spacetime.html">Paravectors and the Geometry of Spacetime</a></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
 </tbody>
 </table></div>
-<p>The 91 articles carry 2494 two-sided cells and 6224 multiplication symbols in all.</p>
-<p>Twenty-one of the $120$ are listed with two zeros and no cell: $7$ maths articles and $14$ physics articles carry the closing section while their body writes no left or right multiplication at all. The section is present and the body is not migrated, so the row reads $0$ and $0$ rather than being absent from the list.</p>
+<p>The 91 articles carry 2870 two-sided cells and 7519 multiplication symbols in all.</p>
+<p>Five of the $120$ carry the section and write no cell at all: <em>The Biquaternion Eigenvalue Decomposition</em>, <em>The Low-Dimensional Classification</em>, <em>The Number Systems as Clifford Algebras</em>, <em>Curves and Surfaces in the Biquaternion Moving Frame</em> in maths, and <em>Paravectors and the Geometry of Spacetime</em> in physics. Three more write one-sided multiplications and no cell: <em>Bilinear Operators on the General Plain Sesqualgebra</em>, <em>Noether's Theorem in Biquaternionic Form</em> and <em>The Conformal Group in Biquaternionic Form</em>. Their closing section is a dictionary, and a dictionary is prose. The section is present, the body is migrated in words, and the row states the fact rather than hiding it.</p>
+<p>That is the list of articles the migration reached. The rest of the corpus is the subject of the next section, because a cell or a gamma outside this list is not automatically a leftover.</p>
+<h3 id="the-rest-of-the-corpus-scanned">The rest of the corpus, scanned</h3>
+<p>Both corpora were scanned in full again on 2026-11-02, after the list was recounted: $404$ physics articles with $313$ outside the list, $2358$ maths articles with $2329$ outside it. Three questions were asked of every file: does it write a two-sided cell $L_{a}R_{b}$, does it write a single $L$ or $R$ with a subscript, does it write the letter $\gamma$. The rule is mechanical, and it is stated once here. A symbol counts when the letter is preceded by something that is not a letter, a digit or a backslash, or by a standalone coefficient $i$; a subscript that is a bare numeral, $L_{11}$, or that begins with $\text{...}$ names a coefficient and does not count. The counts are therefore a lower bound on what is printed, and they are reproducible from the files.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus</th>
+<th style="text-align: right;">articles</th>
+<th style="text-align: right;">outside the list</th>
+<th style="text-align: right;">write a cell</th>
+<th style="text-align: right;">cells</th>
+<th style="text-align: right;">write $L$ or $R$</th>
+<th style="text-align: right;">write $\gamma$</th>
+<th style="text-align: right;">indexed $\gamma$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics</td>
+<td style="text-align: right;">404</td>
+<td style="text-align: right;">313</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">33</td>
+</tr>
+<tr>
+<td>maths</td>
+<td style="text-align: right;">2358</td>
+<td style="text-align: right;">2329</td>
+<td style="text-align: right;">194</td>
+<td style="text-align: right;">3020</td>
+<td style="text-align: right;">717</td>
+<td style="text-align: right;">230</td>
+<td style="text-align: right;">47</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two answers follow from the table. No article outside the list writes a gamma-matrix formula except the four that do it on purpose: the comparison article, both <em>Conventions of the Frames</em> articles, and <em>Conventions of the Operators and the Differential Calculus</em>. And the single $L$ or $R$ is far more common outside the list than the cell is, in the physics corpus and in the maths corpus alike.</p>
+<p><strong>The ten physics articles with a cell.</strong> None of them owes a closing section.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">cells</th>
+<th>why it writes them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Why the Biquaternion Formalism Instead of Gamma Matrices</em></td>
+<td style="text-align: right;">53</td>
+<td>the comparison article; the cell is its subject</td>
+</tr>
+<tr>
+<td><em>The Parabolic Dirac Operator and the Fourier Reformulation of Maxwell's Equations</em></td>
+<td style="text-align: right;">16</td>
+<td>not a cell, see the collisions below</td>
+</tr>
+<tr>
+<td><em>The Element and Operator Representations</em></td>
+<td style="text-align: right;">9</td>
+<td>the article that defines $L_{\tilde Q}$ and $R_{\tilde Q}$</td>
+</tr>
+<tr>
+<td><em>The Lorentz Group as Biquaternion Norm Automorphisms</em></td>
+<td style="text-align: right;">7</td>
+<td>$L_{A}R_{B}$ is the Möbius action on $M_2(\mathbb{C})$, its classical name</td>
+</tr>
+<tr>
+<td><em>The Hermitian GNS Construction</em></td>
+<td style="text-align: right;">5</td>
+<td>$\Delta_{\tilde\varsigma}=L_{e^{-K}}R_{e^{K}}$ is the modular operator; it cannot be written otherwise</td>
+</tr>
+<tr>
+<td><em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula</em></td>
+<td style="text-align: right;">2</td>
+<td>not a cell, see the collisions below</td>
+</tr>
+<tr>
+<td><em>The Algebrodynamical Programme</em></td>
+<td style="text-align: right;">1</td>
+<td>not a cell, see the collisions below</td>
+</tr>
+<tr>
+<td><em>Conventions in the Biquaternion Universe</em></td>
+<td style="text-align: right;">1</td>
+<td>states the naming rule for operators and writes $L_{\tilde Q_1}R_{\tilde Q_2}$ to show that a subscript is positional</td>
+</tr>
+<tr>
+<td><em>Conventions of the Units, the Indices and the Notation</em></td>
+<td style="text-align: right;">1</td>
+<td>one sentence saying that the elementary tensors are the cells $L_{e_\mu}R_{e_\nu}$</td>
+</tr>
+<tr>
+<td><em>The Informational Sector: States, Observables and Probability</em></td>
+<td style="text-align: right;">1</td>
+<td>$\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ in a table of operators</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fifty-four physics articles that write $L$ or $R$ without a cell.</strong> They print $865$ symbols of the shape $L_{\text{subscript}}$, of which $133$ carry a numeral and are excluded by the rule above, leaving $732$ in three families.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the letter names</th>
+<th style="text-align: right;">articles</th>
+<th style="text-align: right;">symbols</th>
+<th>representative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the operator, $L_{e_\mu}$, $R_{e_\nu}$, $L_{\tilde Q}$, $R_{\tilde Q}$</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">273</td>
+<td><em>The Classical Coulomb Problem and Its Hidden $\mathrm{SO}(4)$ Symmetry</em>, <em>The Functional Determinant in Biquaternionic Form</em></td>
+</tr>
+<tr>
+<td>a component of angular momentum, $L_{i}$, $L_{k}$, $L_{z}$, $L_{b}$</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">264</td>
+<td><em>Angular Momentum and Spin in Biquaternionic Form</em>, <em>Rigid-Body Dynamics and the Biquaternion Rotor</em></td>
+</tr>
+<tr>
+<td>a component of a tensor or another label, $L_{\mu\nu}$, $R_{tz}$, $R_{txtx}$, $R_{nl}$</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">195</td>
+<td><em>The Yang–Mills Equation in Biquaternionic Form</em>, <em>Gravitational Waves in Biquaternionic Form</em></td>
+</tr>
+</tbody>
+</table></div>
+<p>The first family is the migration's other half: the one-sided operator is the object the cell is made of, and an article that writes only $L_{\tilde Q}$ is not a partial migration but an article about one side. The other two families are homonyms, and they are the reason the letter alone cannot be used as a search key for leftovers.</p>
+<p><strong>The one leftover, and it is repaired.</strong> <em>The Central Scalar Field</em> wrote its energy density as $L_{t}R_{t}$, three times, once in a display, once in the prose and once in the table of notation. The surrounding text already wrote the stress–energy tensor as $T_{\mu\nu}$ and the vanishing momentum density as $T_{tj}=0$, so the cell spelling was a piece of the withdrawn short subscript that survived the migration and no longer said anything. It now reads $T_{tt}$, which is what the quantity is: the time–time component of the stress–energy tensor, the energy density. The replacement leaves the value untouched, $\tfrac{1}{2c^{2}}(\partial\phi/\partial t')^{2}+\tfrac12(\nabla\phi)^{2}+\tfrac12\mu^{2}\phi^{2}$. The article does not appear among the ten above any more, which is how the repair shows in the count.</p>
+<p><strong>Three collisions of spelling.</strong> Three articles outside the list write something of the shape $L_{a}R_{b}$ that is not a cell. The reader who has just learned the cell will misread all three, and a rename costs nothing.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>written</th>
+<th>what it is</th>
+<th>suggested</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Parabolic Dirac Operator</em></td>
+<td>$L_{\mathcal{C}}R_{\pm}[w](x,t')$</td>
+<td>the parabolic Teodorescu transform, a pair of integral operators with kernels</td>
+<td>$\mathcal{T}^{\pm}_{\mathcal{C}}[w]$</td>
+</tr>
+<tr>
+<td><em>SU(3) Representations</em></td>
+<td>$L_{a_{1}\dots a_{n}}R_{\,b_{1}\dots b_{m}}$</td>
+<td>a traceless bisymmetric tensor carrying an $\mathrm{SU}(3)$ representation</td>
+<td>$T^{a_{1}\dots a_{n}}{}_{b_{1}\dots b_{m}}$</td>
+</tr>
+<tr>
+<td><em>The Algebrodynamical Programme</em></td>
+<td>$L_{CA}R_{BD}$</td>
+<td>the two chiral components of one function, with $L_{CA}=\varphi_{A}$ and $R_{BD}=\psi_{B}$</td>
+<td>$\varphi_{A}\psi_{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The maths side is the notation's home.</strong> Of the $2329$ maths articles outside the list, $194$ write a cell, $3020$ cells in all, and $717$ write the letter $L$ or $R$ with a subscript. They are the operator articles: <em>The Left and Right Multiplication Operators on a Clifford Algebra</em>, <em>Left and Right Multiplication in a Group</em>, <em>The Bounded Left and Right Multiplication Operators of a Sesqualgebra</em> and their neighbours. There $L_{a}$ and $R_{b}$ are the object of study, the article never had a gamma formulation, and a closing section would have nothing to close.</p>
+<p>Two maths articles write the gamma set itself and neither carries a closing section. The first is <em>Conventions of the Frames</em>, which names $\gamma_\mu[\mathbb{B}]$ and $\gamma_\mu[\mathbb{M}_-]$ because the frame is its subject. The second is <em>Conventions of the Operators and the Differential Calculus</em>, whose §<em>The Basis Operators</em> ends with the dictionary sentence in one line, $\gamma_0=iL_{e_t}R_{\vec e_x}$, $\gamma_1=iL_{\vec e_x}R_{\vec e_y}$, $\gamma_2=iL_{\vec e_y}R_{\vec e_y}$, $\gamma_3=iL_{\vec e_z}R_{\vec e_y}$, $\gamma_5=-iL_{e_t}R_{\vec e_z}$. That sentence is the same one the closing section of a migrated article carries, and here it stands in the body with no section behind it. The physics twin, <em>Operator and Calculus Conventions</em>, does carry the section. The asymmetry is real and it is the only one of its kind: the maths article names the gamma set without closing it, and the record here should say so rather than call the corpus uniform.</p>
+<p><strong>The gammas outside the list.</strong> Ninety-two physics articles write $\gamma$, $1637$ symbols in all, and $230$ maths articles write it, $3481$ symbols. Two subsets matter, and they are small. Thirty-three physics and $47$ maths articles carry an <em>indexed</em> gamma, one of the shapes $\gamma_0,\dots,\gamma_5,\gamma_\mu$; and of those, only the four conventions and comparison articles write what a matrix formulation writes, a $\gamma_5$, a trace of a gamma, an anticommutator, or a product of two indexed gammas. Everything else is a homonym, and three groups cover them.</p>
+<ul>
+<li><em>On purpose</em>: <em>Why the Biquaternion Formalism Instead of Gamma Matrices</em> with the five cells beside the five gammas, both <em>Conventions of the Frames</em> articles with the frame $\gamma_\mu[\mathbb{B}]$ and $\gamma_\mu[\mathbb{M}_-]$, <em>Conventions of the Operators and the Differential Calculus</em> with the dictionary line, and <em>Conventions of the Units, the Indices and the Notation</em>, where $\gamma_i$ illustrates what a subscript is and $\gamma_2\gamma_3$ is the Clifford image of $\vec e_x$.</li>
+<li><em>Another quantity, a different letter in every other corpus</em>: the Lorentz factor $\gamma$ and its variants $\gamma_b$, $\gamma_{\mathrm{rel}}$, $\gamma_2$ for the second particle; the gyromagnetic ratio $\gamma_g$ in <em>The Classical Spinning Particle</em> and <em>Thomas Precession as a Biquaternion Rotor Effect</em>; the just-scale ratios $\gamma_k$ in <em>Harmonic Elementary Particles</em>; the spatial metric $\gamma_{ij}$ in <em>Cosmology under the Biquaternion Framework</em>; the minimal surface $\gamma_A$ in <em>The Area Law of Entanglement Entropy</em>; the geometric and Berry phases $\gamma^{\mathrm{geo}}$, $\gamma_{AA}$, $\gamma_{\mathrm{Berry}}$; the Euler–Mascheroni constant $\gamma_E$ in <em>Coulomb Scattering</em>; the hopping $\gamma_0\approx2.8$ eV in <em>Dirac Matter: Graphene</em>; and in the maths corpus the path $\gamma$ of a contour integral, $\gamma_1*\gamma_2$ for concatenation in <em>The Parallel Transport Operator</em> and <em>The Covariant Derivative</em>, the contour $\gamma_k$ in <em>Spectral Theory and the Spectral Projectors of $\mathsf{M}_3(\mathbb{C})$</em>, the divided powers $\gamma_n$ in <em>Divided Powers</em>, and the group element $\gamma$ in <em>Solvable and Nilpotent Groups</em> and <em>Heyting Algebras</em>.</li>
+<li><em>Another quantity wearing the generator's own subscript</em>: this is the only group that hurts. <em>The Modular Hamiltonian and the First Law of Entanglement</em> writes $\gamma_0=\vec u_{r0}\cdot\mathbf e$ for a direction in the algebra, so its $\gamma_0$ is a biquaternion vector where the rest of the corpus reads the first generator; <em>Causality and the Light Cone</em>, <em>Velocity Space as Hyperbolic Geometry</em>, <em>The Relativistic Two-Body Problem</em> and <em>Exercise: Four-Momentum Conservation in a Collision</em> write $\gamma_1$ and $\gamma_2$ for the Lorentz factors of two particles, so $\gamma_2$ is a number where the rest of the corpus reads the third generator; <em>Scattering for the Quaternionic Dirac Operator</em> writes $k=\eta+t\gamma$ with $\gamma\in S^{2}$, so its $\gamma$ is a unit vector where the corpus reads the letter of the generators. Renaming these three families — $\vec u$, $\Gamma_1$ or $\gamma_{(1)}$, and $\hat n$ — would remove the last ambiguity the migration left in the letter itself.</li>
+</ul>
+<p><strong>The six migrated bodies that still write an indexed gamma.</strong> The migration moves the five gammas to the closing section, so an indexed gamma in a body is either a leftover or a homonym, and the count separates them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">symbols</th>
+<th>what it is</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Fujikawa Method and the Path-Integral Anomaly</em></td>
+<td style="text-align: right;">10</td>
+<td>$\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)$ and its neighbours, in the paragraph that quotes the Gamma section</td>
+<td>leftover; the trace identity is right, $-4i\epsilon_{\mu\nu\rho\sigma}$ for all $24$ permutations, and only its spelling is left</td>
+</tr>
+<tr>
+<td><em>Paravectors and the Geometry of Spacetime</em></td>
+<td style="text-align: right;">4</td>
+<td>$\gamma$ the Lorentz factor</td>
+<td>homonym</td>
+</tr>
+<tr>
+<td><em>Noether's Theorem in Biquaternionic Form</em></td>
+<td style="text-align: right;">4</td>
+<td>$\gamma_a$ the Lorentz factor of one body</td>
+<td>homonym</td>
+</tr>
+<tr>
+<td><em>The Field-Strength Biquaternion and Its Invariants</em></td>
+<td style="text-align: right;">1</td>
+<td>$\gamma$ the Lorentz factor</td>
+<td>homonym</td>
+</tr>
+<tr>
+<td><em>The Dirac Equation in Biquaternionic Form</em></td>
+<td style="text-align: right;">1</td>
+<td>$\gamma$ and $\alpha$ undeclared in the projector $P_\pm=(2\gamma)^{-1}M(\gamma\pm\alpha)$</td>
+<td>leftover, and unresolved</td>
+</tr>
+<tr>
+<td><em>The Biquaternion Basis of a Unified Field Fibre Bundle</em></td>
+<td style="text-align: right;">1</td>
+<td>$\sigma_\gamma$, a Pauli label</td>
+<td>homonym</td>
+</tr>
+</tbody>
+</table></div>
+<p>One of the six is a real leftover and one is a damaged formula; the other four are the letter naming something else. Apart from the four conventions and comparison articles, nothing in the $2762$ articles names the gamma set in its body without carrying the closing section, and apart from the ten physics articles above, nothing in the physics corpus writes a cell.</p>
       </div>
     </main>
   </div>
