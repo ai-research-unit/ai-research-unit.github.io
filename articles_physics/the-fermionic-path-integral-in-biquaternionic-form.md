@@ -135,7 +135,7 @@ where $S_F$ is the propagator amplitude of the companion article in configuratio
 
 ### The Biquaternion Form of the Kernel
 
-Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, and the frame cells $C_0=iL_tR_x$, $C_k=iL_{e_k}R_y$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, contracted as $C_\mu p_\mu=C_0E-\sum_kC_kp_k$, the momentum-space kernel is
+Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, and the frame cells $C_0=iL_{e_t}R_{e_x}$, $C_k=iL_{e_k}R_{e_y}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, contracted as $C_\mu p_\mu=C_0E-\sum_kC_kp_k$, the momentum-space kernel is
 
 $$
 S_F(p)=-\frac{i(C_{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
@@ -270,7 +270,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[\bar\eta M^{-1}\eta]$ | Free generating functional |
 | $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $C_0=iL_tR_x$, $C_k=iL_{e_k}R_y$, $C_\mu p_\mu=C_0E-\sum_kC_kp_k$ | Frame cells and the four-momentum contraction |
+| $C_0=iL_{e_t}R_{e_x}$, $C_k=iL_{e_k}R_{e_y}$, $C_\mu p_\mu=C_0E-\sum_kC_kp_k$ | Frame cells and the four-momentum contraction |
 | $S_F(p)=-\frac{i(C_{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
 | $\int d\psi_{2N}\cdots d\psi_1\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; source of the field-to-conjugate pairing |
@@ -297,7 +297,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_tR_x,\quad \gamma_1=iL_xR_y,\quad \gamma_2=iL_yR_y,\quad \gamma_3=iL_zR_y,\quad \gamma_5=-iL_tR_z .
+\gamma_0=iL_{e_t}R_{e_x},\quad \gamma_1=iL_{e_x}R_{e_y},\quad \gamma_2=iL_{e_y}R_{e_y},\quad \gamma_3=iL_{e_z}R_{e_y},\quad \gamma_5=-iL_{e_t}R_{e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

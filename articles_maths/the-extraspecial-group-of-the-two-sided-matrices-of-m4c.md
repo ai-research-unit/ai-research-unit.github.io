@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The sixteen two-sided operators $L_\mu R_\nu$ of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*, together with their negatives, form a finite group of order $32$:
+The sixteen two-sided operators $L_{e_\mu} R_{e_\nu}$ of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*, together with their negatives, form a finite group of order $32$:
 
 $$
-G=\{\pm L_\mu R_\nu:\mu,\nu\in\{t,x,y,z\}\}.
+G=\{\pm L_{e_\mu} R_{e_\nu}:\mu,\nu\in\{t,x,y,z\}\}.
 $$
 
 The group is the **central product of two quaternion groups**,
@@ -20,41 +20,41 @@ This article states the group, the two quaternion subgroups, the centre and the 
 
 ## The Group
 
-**Definition.** Let $L_\mu$ and $R_\nu$ be the left and right multiplication operators on $\mathbb{B}\cong M_2(\mathbb{C})$ by the four biquaternion units, with $L_t=R_t=I$. The **group of the two-sided matrices** is
+**Definition.** Let $L_{e_\mu}$ and $R_{e_\nu}$ be the left and right multiplication operators on $\mathbb{B}\cong M_2(\mathbb{C})$ by the four biquaternion units, with $L_{e_t}=R_{e_t}=I$. The **group of the two-sided matrices** is
 
 $$
-G=\{\pm L_\mu R_\nu:\mu,\nu\in\{t,x,y,z\}\}.
+G=\{\pm L_{e_\mu} R_{e_\nu}:\mu,\nu\in\{t,x,y,z\}\}.
 $$
 
-**Proposition.** $G$ has order $32$, and its elements are distinct up to sign: the sixteen products $L_\mu R_\nu$ are distinct, no one is the negative of another, and the two signs give thirty-two distinct matrices.
+**Proposition.** $G$ has order $32$, and its elements are distinct up to sign: the sixteen products $L_{e_\mu} R_{e_\nu}$ are distinct, no one is the negative of another, and the two signs give thirty-two distinct matrices.
 
-**Proof.** The sixteen $L_\mu R_\nu$ are a basis of $M_4(\mathbb{C})$ by the method article, so they are linearly independent and in particular distinct; $-L_\mu R_\nu=L_{\mu'}R_{\nu'}$ would be a linear dependence. The unit is $L_tR_t=I$, and $-I=L_tR_t$ is a distinct element.
+**Proof.** The sixteen $L_{e_\mu} R_{e_\nu}$ are a basis of $M_4(\mathbb{C})$ by the method article, so they are linearly independent and in particular distinct; $-L_{e_\mu} R_{e_\nu}=L_{e_\mu'}R_{e_\nu'}$ would be a linear dependence. The unit is $L_{e_t}R_{e_t}=I$, and $-I=L_{e_t}R_{e_t}$ is a distinct element.
 
 **The product rule.** The product is read from the multiplication of the units:
 
 $$
-(L_\mu R_\nu)(L_{\mu'}R_{\nu'})=L_\mu L_{\mu'}\,R_\nu R_{\nu'}
+(L_{e_\mu} R_{e_\nu})(L_{e_\mu'}R_{e_\nu'})=L_{e_\mu} L_{e_\mu'}\,R_{e_\nu} R_{e_\nu'}
 $$
 
-because left and right multiplications commute. The left product $L_\mu L_{\mu'}$ is $\pm L_{\mu''}$ and the right product is $\pm R_{\nu''}$, with the signs fixed by the orientation convention of the units. Hence the product is $\pm L_{\mu''}R_{\nu''}$, and $G$ is closed under products and inverses.
+because left and right multiplications commute. The left product $L_{e_\mu} L_{e_\mu'}$ is $\pm L_{e_\mu''}$ and the right product is $\pm R_{e_\nu''}$, with the signs fixed by the orientation convention of the units. Hence the product is $\pm L_{e_\mu''}R_{e_\nu''}$, and $G$ is closed under products and inverses.
 
 ## The Two Quaternion Subgroups
 
 **Proposition.** The sets
 
 $$
-Q_L=\{\pm L_\mu:\mu\in\{t,x,y,z\}\},\qquad
-Q_R=\{\pm R_\nu:\nu\in\{t,x,y,z\}\}
+Q_L=\{\pm L_{e_\mu}:\mu\in\{t,x,y,z\}\},\qquad
+Q_R=\{\pm R_{e_\nu}:\nu\in\{t,x,y,z\}\}
 $$
 
 are subgroups isomorphic to the quaternion group $Q_8$.
 
-**Proof.** The left multiplications satisfy $L_x^{2}=L_y^{2}=L_z^{2}=-I$ and $L_xL_y=-L_yL_x$; with $L_z=L_xL_y$ up to the orientation sign, the eight elements $\{\pm I,\pm L_x,\pm L_y,\pm L_z\}$ are the quaternion group: one element of order two, six of order four, and the multiplication of $Q_8$. The same holds on the right. $\square$
+**Proof.** The left multiplications satisfy $L_{e_x}^{2}=L_{e_y}^{2}=L_{e_z}^{2}=-I$ and $L_{e_x}L_{e_y}=-L_{e_y}L_{e_x}$; with $L_{e_z}=L_{e_x}L_{e_y}$ up to the orientation sign, the eight elements $\{\pm I,\pm L_{e_x},\pm L_{e_y},\pm L_{e_z}\}$ are the quaternion group: one element of order two, six of order four, and the multiplication of $Q_8$. The same holds on the right. $\square$
 
 **The central product.** The two subgroups commute elementwise,
 
 $$
-L_\mu R_\nu=R_\nu L_\mu,
+L_{e_\mu} R_{e_\nu}=R_{e_\nu} L_{e_\mu},
 $$
 
 because left and right multiplication commute in an associative algebra, and they meet in
@@ -74,28 +74,28 @@ $$
 **The commutator.** The two factors do not commute as abstract groups inside $Q_8\times Q_8$; their images in the central product commute because the identification is central. The commutator of a left and a right element is
 
 $$
-[L_\mu,R_\nu]=L_\mu R_\nu L_\mu^{-1}R_\nu^{-1}=I,
+[L_{e_\mu},R_{e_\nu}]=L_{e_\mu} R_{e_\nu} L_{e_\mu}^{-1}R_{e_\nu}^{-1}=I,
 $$
 
-and the nontrivial commutators come from within each $Q_8$: $[L_x,L_y]=-I$ and $[R_x,R_y]=-I$.
+and the nontrivial commutators come from within each $Q_8$: $[L_{e_x},L_{e_y}]=-I$ and $[R_{e_x},R_{e_y}]=-I$.
 
 ## The Centre and the Exponent
 
 **Proposition.** The centre of $G$ is $\{\pm I\}$.
 
-**Proof.** An element $L_\mu R_\nu$ commutes with every $L_\alpha$ exactly when $L_\mu$ commutes with $L_\alpha$ for every $\alpha$, which forces $\mu=t$; and it commutes with every $R_\beta$ exactly when $\nu=t$. Hence the central elements are $\pm L_tR_t=\pm I$. $\square$
+**Proof.** An element $L_{e_\mu} R_{e_\nu}$ commutes with every $L_{e_\alpha}$ exactly when $L_{e_\mu}$ commutes with $L_{e_\alpha}$ for every $\alpha$, which forces $\mu=t$; and it commutes with every $R_{e_\beta}$ exactly when $\nu=t$. Hence the central elements are $\pm L_{e_t}R_{e_t}=\pm I$. $\square$
 
 **Proposition.** The exponent of $G$ is $4$: every element has order at most four, and some have order four.
 
-**Proof.** For $g=L_\mu R_\nu$,
+**Proof.** For $g=L_{e_\mu} R_{e_\nu}$,
 
 $$
-g^{2}=L_\mu^{2}R_\nu^{2}=\pm I,
+g^{2}=L_{e_\mu}^{2}R_{e_\nu}^{2}=\pm I,
 $$
 
-because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_x$ and $R_x$ have order four, because their squares are $-I\ne I$. $\square$
+because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_{e_x}$ and $R_{e_x}$ have order four, because their squares are $-I\ne I$. $\square$
 
-**The order count.** The elements of order two are $-I$ and the eighteen products $L_\mu R_\nu$ with both $\mu\ne t$ and $\nu\ne t$, taken with both signs: $2+18=20$ elements satisfy $g^{2}=I$, of which nineteen have order exactly two. The remaining twelve elements, with exactly one index equal to $t$, have order four.
+**The order count.** The elements of order two are $-I$ and the eighteen products $L_{e_\mu} R_{e_\nu}$ with both $\mu\ne t$ and $\nu\ne t$, taken with both signs: $2+18=20$ elements satisfy $g^{2}=I$, of which nineteen have order exactly two. The remaining twelve elements, with exactly one index equal to $t$, have order four.
 
 | Order | Number of elements |
 |---|---|
@@ -108,11 +108,11 @@ because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_x$ and $R
 
 **Proposition.** $G/\{\pm I\}\cong(\mathbb{Z}/2)^{4}$.
 
-**Proof.** The quotient has order $16$. Its elements are the classes of $L_\mu R_\nu$; the class of $L_\mu R_\nu$ has order two because its square is $\pm I$, and the quotient is abelian because the commutator of any two elements lies in $\{\pm I\}$. A group of order $16$ and exponent two is $(\mathbb{Z}/2)^{4}$. $\square$
+**Proof.** The quotient has order $16$. Its elements are the classes of $L_{e_\mu} R_{e_\nu}$; the class of $L_{e_\mu} R_{e_\nu}$ has order two because its square is $\pm I$, and the quotient is abelian because the commutator of any two elements lies in $\{\pm I\}$. A group of order $16$ and exponent two is $(\mathbb{Z}/2)^{4}$. $\square$
 
 **Theorem.** $G$ is extraspecial of order $2^{1+4}$: its centre has order $2$, its quotient by the centre is elementary abelian of order $16$, and its derived subgroup is the centre.
 
-**Proof.** The centre is $\{\pm I\}$ and the quotient is elementary abelian, which is the definition. The derived subgroup is contained in the centre because the quotient is abelian, and contains $-I$ because $[L_x,L_y]=-I$; hence $G'=\{\pm I\}$. $\square$
+**Proof.** The centre is $\{\pm I\}$ and the quotient is elementary abelian, which is the definition. The derived subgroup is contained in the centre because the quotient is abelian, and contains $-I$ because $[L_{e_x},L_{e_y}]=-I$; hence $G'=\{\pm I\}$. $\square$
 
 **The commutator form.** Define
 
@@ -128,9 +128,9 @@ $$
 
 ## The Abelian Subgroups
 
-**Proposition.** The subgroup $\langle L_x,R_x\rangle$ is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.
+**Proposition.** The subgroup $\langle L_{e_x},R_{e_x}\rangle$ is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.
 
-**Proof.** $L_x$ and $R_x$ commute, $L_x$ has order four, and $L_xR_x$ has order two, because $(L_xR_x)^{2}=L_x^{2}R_x^{2}=(-I)(-I)=I$. Every element of the subgroup is $L_x^{a}(L_xR_x)^{b}$ with $a\in\{0,1,2,3\}$ and $b\in\{0,1\}$, and these eight elements are distinct; the subgroup is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$. $\square$
+**Proof.** $L_{e_x}$ and $R_{e_x}$ commute, $L_{e_x}$ has order four, and $L_{e_x}R_{e_x}$ has order two, because $(L_{e_x}R_{e_x})^{2}=L_{e_x}^{2}R_{e_x}^{2}=(-I)(-I)=I$. Every element of the subgroup is $L_{e_x}^{a}(L_{e_x}R_{e_x})^{b}$ with $a\in\{0,1,2,3\}$ and $b\in\{0,1\}$, and these eight elements are distinct; the subgroup is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$. $\square$
 
 **The maximal abelian subgroups.** Every abelian subgroup $A$ has $A\cap\{\pm I\}$ of order at most two, and its image in $G/\{\pm I\}$ is a totally isotropic subspace for the commutator form, of dimension at most two. Hence $|A|\le 2\cdot4=8$, and the bound is attained. The maximal abelian subgroups are therefore the inverse images of the maximal totally isotropic planes of $G/\{\pm I\}$, of order $8$.
 
@@ -144,9 +144,9 @@ $$
 
 **Theorem.** $G$ has seventeen irreducible complex representations: sixteen of degree one and one of degree four, the defining representation on $\mathbb{C}^{4}$.
 
-**Proof.** The number of irreducible representations equals the number of conjugacy classes, seventeen. The sixteen characters of the abelian quotient $G/\{\pm I\}\cong(\mathbb{Z}/2)^{4}$ are sixteen representations of degree one. The sum of the squares of the degrees is $|G|=32$, so the remaining representation has degree $d$ with $d^{2}=32-16=16$, that is, $d=4$. The defining representation is irreducible: the algebra generated by $G$ is $M_4(\mathbb{C})$, because the sixteen $L_\mu R_\nu$ are a basis, so its commutant is $\mathbb{C}I$ and the module $\mathbb{C}^{4}$ is simple. $\square$
+**Proof.** The number of irreducible representations equals the number of conjugacy classes, seventeen. The sixteen characters of the abelian quotient $G/\{\pm I\}\cong(\mathbb{Z}/2)^{4}$ are sixteen representations of degree one. The sum of the squares of the degrees is $|G|=32$, so the remaining representation has degree $d$ with $d^{2}=32-16=16$, that is, $d=4$. The defining representation is irreducible: the algebra generated by $G$ is $M_4(\mathbb{C})$, because the sixteen $L_{e_\mu} R_{e_\nu}$ are a basis, so its commutant is $\mathbb{C}I$ and the module $\mathbb{C}^{4}$ is simple. $\square$
 
-**The character table.** The sixteen linear characters take values $\pm1$ on the classes of $L_\mu R_\nu$; the degree-four character is the trace of the defining representation: $\chi(I)=4$, $\chi(-I)=-4$, $\chi(L_\mu R_\nu)=0$ for $\mu,\nu\ne t$, and $\chi(L_\mu)=0$, $\chi(R_\nu)=0$ for the elements of order four, whose trace vanishes because their eigenvalues are $\pm i$ in pairs.
+**The character table.** The sixteen linear characters take values $\pm1$ on the classes of $L_{e_\mu} R_{e_\nu}$; the degree-four character is the trace of the defining representation: $\chi(I)=4$, $\chi(-I)=-4$, $\chi(L_{e_\mu} R_{e_\nu})=0$ for $\mu,\nu\ne t$, and $\chi(L_{e_\mu})=0$, $\chi(R_{e_\nu})=0$ for the elements of order four, whose trace vanishes because their eigenvalues are $\pm i$ in pairs.
 
 **The Schrödinger representation.** The uniqueness of the degree-four representation is the Stone–von Neumann theorem for the Heisenberg group over $\mathbb{F}_2$: the extraspecial group is the Heisenberg group of the symplectic form, and it has a unique irreducible representation of dimension $2^{2}=4$ on which the centre acts by $-1$.
 
@@ -166,7 +166,7 @@ of order $64$, with centre $\{\pm I,\pm iI\}\cong\mathbb{Z}/4$ of order four. Th
 
 ## Summary
 
-The thirty-two matrices $\pm L_\mu R_\nu$ form a group $G$ of order $32$, the central product $Q_8\circ Q_8$ of the left and right quaternion subgroups. Its centre is $\{\pm I\}$, its exponent is $4$, it has nineteen elements of order two and twelve of order four, seventeen conjugacy classes, and seventeen irreducible representations: sixteen of degree one and one of degree four. The quotient $G/\{\pm I\}$ is $(\mathbb{Z}/2)^{4}$ with a nondegenerate alternating commutator form, so $G$ is extraspecial of order $2^{1+4}$; its maximal abelian subgroups have order $8$ and are fifteen in number. The group is not the two-qubit Pauli group: $G$ is nonabelian extraspecial of order $32$ with $G'=\{\pm I\}$, while the two-qubit Pauli group modulo $\{\pm I\}$ is elementary abelian of order $32$.
+The thirty-two matrices $\pm L_{e_\mu} R_{e_\nu}$ form a group $G$ of order $32$, the central product $Q_8\circ Q_8$ of the left and right quaternion subgroups. Its centre is $\{\pm I\}$, its exponent is $4$, it has nineteen elements of order two and twelve of order four, seventeen conjugacy classes, and seventeen irreducible representations: sixteen of degree one and one of degree four. The quotient $G/\{\pm I\}$ is $(\mathbb{Z}/2)^{4}$ with a nondegenerate alternating commutator form, so $G$ is extraspecial of order $2^{1+4}$; its maximal abelian subgroups have order $8$ and are fifteen in number. The group is not the two-qubit Pauli group: $G$ is nonabelian extraspecial of order $32$ with $G'=\{\pm I\}$, while the two-qubit Pauli group modulo $\{\pm I\}$ is elementary abelian of order $32$.
 
 | Quantity | Value |
 |---|---|
@@ -186,9 +186,9 @@ The thirty-two matrices $\pm L_\mu R_\nu$ form a group $G$ of order $32$, the ce
 
 | Symbol | Meaning |
 |---|---|
-| $L_\mu R_\nu$ | the two-sided operator of the pair $(\mu,\nu)$ |
-| $G$ | the group $\{\pm L_\mu R_\nu\}$ |
-| $Q_L,Q_R$ | the quaternion subgroups $\{\pm L_\mu\}$ and $\{\pm R_\nu\}$ |
+| $L_{e_\mu} R_{e_\nu}$ | the two-sided operator of the pair $(\mu,\nu)$ |
+| $G$ | the group $\{\pm L_{e_\mu} R_{e_\nu}\}$ |
+| $Q_L,Q_R$ | the quaternion subgroups $\{\pm L_{e_\mu}\}$ and $\{\pm R_{e_\nu}\}$ |
 | $b$ | the commutator form on $G/\{\pm I\}$ |
 | $P_2$ | the two-qubit Pauli group |
 | $Q_8\circ Q_8$ | the central product of two quaternion groups |
