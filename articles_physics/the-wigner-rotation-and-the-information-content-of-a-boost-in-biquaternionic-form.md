@@ -67,9 +67,9 @@ A boost therefore has a norm-preserving action on four-vectors and a non-trivial
 
 ### The composition of two boosts
 
-Let $\tilde U_{\mathrm b,1}$ and $\tilde U_{\mathrm b,2}$ be two boost rotors with non-collinear directions. Their product $\tilde U_{\mathrm{Lor}} = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is unit-norm, $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = 1$, because the biquaternion norm is multiplicative; but it is not Hermitian,
+Let $\tilde U_{\mathrm b,1}$ and $\tilde U_{\mathrm b,2}$ be two boost rotors with non-collinear directions. Their product $\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is unit-norm, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$, because the biquaternion norm is multiplicative; but it is not Hermitian,
 $$
-\tilde U_{\mathrm{Lor}}^{*} = \tilde U_{\mathrm b,1}^{*}\tilde U_{\mathrm b,2}^{*} = \tilde U_{\mathrm b,1}\tilde U_{\mathrm b,2} \neq \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} \quad\text{unless } [\tilde U_{\mathrm b,1},\tilde U_{\mathrm b,2}] = 0 .
+\tilde U_{\mathrm{lor}}^{*} = \tilde U_{\mathrm b,1}^{*}\tilde U_{\mathrm b,2}^{*} = \tilde U_{\mathrm b,1}\tilde U_{\mathrm b,2} \neq \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} \quad\text{unless } [\tilde U_{\mathrm b,1},\tilde U_{\mathrm b,2}] = 0 .
 $$
 The product of two boosts is therefore not a boost, and the deviation from Hermiticity is a deviation from pure boosting. The Cartan decomposition turns that deviation into a rotation: write
 $$
@@ -272,7 +272,7 @@ $$
 $$
 A boost is therefore an informational generator whose observable residue is a material rotation, and the map between them is the bracket $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$ that carries the informational sector into the material one. The information content of a boost, read this way, is the material image of an informational operation: the rapidity, which is the parameter of an element of the informational sector, appears to an observer as an angle in the material sector, and it does so through a map that is a cocycle rather than a homomorphism. The same structure appeared in the relativistic-qubit article as the null-vector map, which carries an informational state to a material light direction; here it appears at the level of the generators, and the compact, material character of the image is what makes it observable as a rotation rather than as a boost.
 
-Three algebraic facts about a boost are therefore three faces of one statement. The Cartan decomposition says that every frame transformation is a boost times a rotation, $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. The cocycle condition says that the spin part of that product is twisted by the momentum. The holonomy says that the twist has curvature. Together they say that the boost parameter space is not a flat arena of frame labels but a curved space of operations, and that the information a boost carries about itself is the rotation it leaves behind.
+Three algebraic facts about a boost are therefore three faces of one statement. The Cartan decomposition says that every frame transformation is a boost times a rotation, $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. The cocycle condition says that the spin part of that product is twisted by the momentum. The holonomy says that the twist has curvature. Together they say that the boost parameter space is not a flat arena of frame labels but a curved space of operations, and that the information a boost carries about itself is the rotation it leaves behind.
 
 ## Summary
 
@@ -296,7 +296,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | Symbol | Meaning |
 |---|---|
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}e_t + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, $\langle\tilde U_{\mathrm b}\rangle_{\natural} = 1$, Hermitian |
-| $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | General Lorentz rotor; its boost factor is $\tilde U_{\mathrm b}$ and its rotation factor is the Wigner rotation $\tilde u_{\mathrm r}=\tilde W$ |
+| $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | General Lorentz rotor; its boost factor is $\tilde U_{\mathrm b}$ and its rotation factor is the Wigner rotation $\tilde u_{\mathrm r}=\tilde W$ |
 | $\psi$ | Rapidity |
 | $\vec u_{\mathrm b}$ | Boost direction |
 | $\chi = \mathrm{atanh}(v/c)$ | Particle rapidity |

@@ -83,6 +83,8 @@ The mark says exactly one thing — the glyph is not an element, it is an operat
 
 **The opposite algebra carries a different token.** The reversed-product algebra is written with the superscript $\mathrm{opp}$, $\mathbb{B}^{\mathrm{opp}}$, $A^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$, on an **algebra name**, where the Fock mark is written on a **Fock-operator glyph**. The two tokens are distinct and neither is read for the other: $a^{\mathrm{fop}}$ is never an opposite algebra, and $\mathbb{B}^{\mathrm{opp}}$ is never an operator.
 
+**A caret carries a label as it carries a power.** The upright roman name of a construction, a frame or a variant of an object is written in the caret, and the physical corpus writes its own beside the two tokens: $\mathrm{orb}$ on the orbital part, $\mathrm{inc}$ on the incident field, $\mathrm{out}$ on the outgoing solution, $\mathrm{ret}$ on the retarded field, $\mathrm{reg}$ on the regularised Green function, $\mathrm{can}$ on the canonical tensor, $\mathrm{pol}$ on the polarisation vector, $\mathrm{lor}$ on the Lorentz object, $\mathrm{wkb}$ on the approximation, $\mathrm{mhv}$ on the amplitude, $\mathrm{epr}$ on the steering value. Italic is a power and upright is a name, so $E_0^{\mathrm{wkb}}$ is a labelled energy and never a power of $E_0$. The label is three letters by default, and the index of the three-letter labels, mathematical and physical together, is *Index, Notation and Corpus Conventions*, §*The Three-Letter Labels*; a label names the object the glyph denotes on the caret and a part or a role of it in the low slot, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$.
+
 ## The Subscripts
 
 A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.
@@ -120,7 +122,7 @@ The forms a subscript takes are these.
 
 A unit element is not a physical unit. The series uses the SI, the coefficients of one element share one unit, and the default temporal slot is $ict'$ in metres, with $it'$ and $g_{tt}=-c^2$ stated where an article uses it. A dimensionless number carries no unit and no conversion, and $\mu$ is read by context among the permeability, the inverse Compton length and the direction label.
 
-Two superscript tokens run beside the element marks. $\mathrm{fop}$ marks the Fock operator, the one glyph that is not an element; $\mathrm{opp}$ marks the opposite algebra, and it is written on an algebra name. The Fock mark comes first and the dagger follows it, $a^{\mathrm{fop}\dagger}$.
+Two superscript tokens run beside the element marks. $\mathrm{fop}$ marks the Fock operator, the one glyph that is not an element; $\mathrm{opp}$ marks the opposite algebra, and it is written on an algebra name. The Fock mark comes first and the dagger follows it, $a^{\mathrm{fop}\dagger}$. An upright label of a construction or a variant is written in the caret as well, three lowercase letters by default — $\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{ret}$, $\mathrm{reg}$, $\mathrm{lor}$, $\mathrm{wkb}$, $\mathrm{epr}$ in this corpus — and the index of the labels is *Index, Notation and Corpus Conventions*, §*The Three-Letter Labels*.
 
 A subscript is written with the underscore and one token. It is a component or a label, never a derivative. A coefficient carries a letter index and a counted element a number; a subscript either counts or names, and a role label is carried once into the coefficients. A sign is a subscript where the statement needs one. The allowed forms are the digit, the letter, two indices, a sign, an upright word and a grouped expression. The letter $\iota$ is not used at all. An **angular-momentum total** takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the operator carries the vector index, $\tilde S_{\mathrm{tot},k}$.
 
@@ -134,6 +136,7 @@ A subscript is written with the underscore and one token. It is a component or a
 | $\mu$ | Permeability, inverse Compton length $\mu=mc/\hbar$, or direction label; read by context |
 | $^{\mathrm{fop}}$ | The Fock-operator mark, the one glyph that is not an element |
 | $^{\mathrm{opp}}$ | The opposite algebra, written on an algebra name |
+| $\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{lor}$ | The three-letter labels of a construction or a variant; the index is *Index, Notation and Corpus Conventions*, §*The Three-Letter Labels* |
 | $Q_{\mathrm{f}t}$, $Q_{n+1}$, $\tilde\Pi_\pm$, $\mathbb{B}_{\mathrm{r}}$ | The subscript forms: letter index, grouped expression, sign, upright word |
 | $s_{\mathrm{tot}}$, $s_{\mathrm{tot},z}$, $\tilde S_{\mathrm{tot},k}$ | Total angular-momentum label, its projection, and the operator, which carries the vector index $k$ |
 

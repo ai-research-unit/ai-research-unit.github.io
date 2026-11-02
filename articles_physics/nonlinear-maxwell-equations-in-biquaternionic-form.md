@@ -67,7 +67,7 @@ carried as the biquaternion with vanishing scalar part, $F = (0, \vec E + i\vec 
 Space-time is a real biquaternion $Z = (t', \vec r)$, and the paper's group action is, in its equations (2.1), (2.4) and (2.6),
 
 $$
-Z_2 = U^{*}ZU, \qquad P_2 = U^{*}PU, \qquad F_{\mathrm{Lor}} = \bar{U}FU,
+Z_2 = U^{*}ZU, \qquad P_2 = U^{*}PU, \qquad F_{\mathrm{lor}} = \bar{U}FU,
 \tag{2.1, 2.4, 2.6}
 $$
 
@@ -364,7 +364,7 @@ No external source was consulted for the mathematics.
 | $Z_2 = U^{*}ZU$ preserves ${t'}^2 - \lvert\vec r\rvert^2$ | $8.4 \times 10^{-15}$ |
 | $Z_2 = U^{*}ZU$ as a parametrization composes under multiplication | Fails on the real parameters (boost/rotation); a bookkeeping matter, recorded |
 | (3.1) $\tfrac12F^{*}dZF$ is real-valued | Imaginary part $1.3 \times 10^{-15}$ |
-| (3.1), (3.4) covariance under $F_{\mathrm{Lor}} = \bar UFU$, $dZ_2 = UdZU$, $d\Sigma_2 = Ud\Sigma U$ | $2.0 \times 10^{-14}$; exactly four of the $64$ conjugation placements close, the printed one among them |
+| (3.1), (3.4) covariance under $F_{\mathrm{lor}} = \bar UFU$, $dZ_2 = UdZU$, $d\Sigma_2 = Ud\Sigma U$ | $2.0 \times 10^{-14}$; exactly four of the $64$ conjugation placements close, the printed one among them |
 | $\tfrac12FF^{*}dZ$ and $\tfrac12F^{*}F\,dZ$ covariant | Fail, by $8.8 \times 10^{1}$ and $3.7 \times 10^{2}$; the paper's uniqueness claim holds in this sense |
 | (3.14) $\Leftrightarrow$ (7.5) $\Leftrightarrow$ (4.4) $\Leftrightarrow$ (5.1)–(5.5) | All identities, $1.8$–$3.6 \times 10^{-15}$ |
 | Maxwell's equations imply (3.14) | Exactly, $0$ |

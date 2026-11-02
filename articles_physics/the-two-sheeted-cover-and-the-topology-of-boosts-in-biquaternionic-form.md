@@ -2,12 +2,12 @@
 
 ## Introduction
 
-The preceding article identifies the restricted Lorentz group with the group of rotor conjugations of the biquaternion algebra by the Lorentz rotor $\tilde U_{\mathrm{Lor}}$, a unit-norm biquaternion. Explicitly,
+The preceding article identifies the restricted Lorentz group with the group of rotor conjugations of the biquaternion algebra by the Lorentz rotor $\tilde U_{\mathrm{lor}}$, a unit-norm biquaternion. Explicitly,
 
 $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \qquad
-SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{Lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = e_t\},
+SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t\},
 $$
 
 and the correspondence is two-to-one. The identification raises two questions that are not answered by the group law alone. What is the topology of the covering group, and what is the topology of the subgroup formed by the boosts? The two questions have contrasting answers, and the contrast is the subject of this article.
@@ -17,7 +17,7 @@ The **covering group** $SL(2,\mathbb{C})$ is simply connected. As a manifold it 
 $$
 \pi:\ SL(2,\mathbb{C})\ \longrightarrow\ SO^+(1,3),
 \qquad
-\pi(\tilde U_{\mathrm{Lor}}):\tilde{Q}\longmapsto\tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*},
+\pi(\tilde U_{\mathrm{lor}}):\tilde{Q}\longmapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}^{*},
 $$
 
 is the **universal cover** of the restricted Lorentz group, and the fundamental group of that group is
@@ -33,7 +33,7 @@ The **boosts**, by contrast, are topologically trivial. The pure boosts form a t
 The article develops three threads. The first is the manifold structure of the covering group and its contraction onto $SU(2)$. The second is the covering itself, the $2\pi$ loop and the belt picture. The third is the topology of the boost manifold, the non-closure of the boost composition law, and the Wigner angle. The closing sections separate the algebraic content from the standard topology and record the open questions.
 
 $$
-\tilde U_{\mathrm{Lor}} = \tilde u_{\mathrm r}\,B_{\mathrm{right}},
+\tilde U_{\mathrm{lor}} = \tilde u_{\mathrm r}\,B_{\mathrm{right}},
 \qquad
 \tilde u_{\mathrm r}\in SU(2)\subset\mathbb{H}_{\mathbb{B}},
 \qquad
@@ -42,7 +42,7 @@ $$
 
 with $\tilde u_{\mathrm r}$ the spatial rotation and $B_{\mathrm{right}}$ the right polar boost factor,
 $$
-B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{Lor}}^{*}\tilde U_{\mathrm{Lor}}}
+B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{lor}}^{*}\tilde U_{\mathrm{lor}}}
 =\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\neq\tilde U_{\mathrm b}.
 $$
 The two words are the left and the right polar decompositions of the same rotor. They share the rotation factor and differ in the boost: the rapidity magnitude is the same, the axis is $\tilde u_{\mathrm r}^{-1}\vec u\,\tilde u_{\mathrm r}$. Only the rotation factor and the Wigner angle are independent of the word. A **pure boost** of rapidity $\psi$ along the unit real vector $\vec u$ is
@@ -64,15 +64,15 @@ The material coordinate is $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\
 The unit-norm elements
 
 $$
-SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{Lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = e_t\}
+SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t\}
 $$
 
-form a real Lie group of dimension six, because the single complex equation $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = 1$ is two real conditions on the eight real coordinates of $\tilde U_{\mathrm{Lor}}$. It is the double cover of the restricted Lorentz group and, as a manifold, it has a simple structure given by the polar decomposition.
+form a real Lie group of dimension six, because the single complex equation $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$ is two real conditions on the eight real coordinates of $\tilde U_{\mathrm{lor}}$. It is the double cover of the restricted Lorentz group and, as a manifold, it has a simple structure given by the polar decomposition.
 
 Every invertible matrix has a unique decomposition into a $*$-unitary and a positive Hermitian factor; in the right polar order, transported to the algebra, this reads
 
 $$
-\tilde U_{\mathrm{Lor}} = \tilde u_{\mathrm r}\,B_{\mathrm{right}},
+\tilde U_{\mathrm{lor}} = \tilde u_{\mathrm r}\,B_{\mathrm{right}},
 \qquad
 \tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{-1},
 \qquad
@@ -111,21 +111,21 @@ A simply connected cover of a connected group is its universal cover, so the two
 
 The boost factor is extracted from the rotor by the right polar decomposition:
 $$
-\tilde U_{\mathrm{Lor}}^{*}\tilde U_{\mathrm{Lor}}
+\tilde U_{\mathrm{lor}}^{*}\tilde U_{\mathrm{lor}}
 = B_{\mathrm{right}}^\dagger\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r}B_{\mathrm{right}}
 = B_{\mathrm{right}}^{2},
 \qquad
-B_{\mathrm{right}} = (\tilde U_{\mathrm{Lor}}^{*}\tilde U_{\mathrm{Lor}})^{1/2},
+B_{\mathrm{right}} = (\tilde U_{\mathrm{lor}}^{*}\tilde U_{\mathrm{lor}})^{1/2},
 $$
 
-using $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. The other ordering gives $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{*} = \tilde u_{\mathrm r}B_{\mathrm{right}}^2\tilde u_{\mathrm r}^{-1}$, whose square root is the corpus boost factor $\tilde U_{\mathrm b}=\tilde u_{\mathrm r}B_{\mathrm{right}}\tilde u_{\mathrm r}^{-1}$. It is a different boost whenever the rotation axis is not parallel to the boost axis, and it is the factor of the word $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not of the word used here. With $\tilde u_{\mathrm r} = \tilde U_{\mathrm{Lor}}B_{\mathrm{right}}^{-1}$ the factor $\tilde u_{\mathrm r}$ was $*$-unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B_{\mathrm{right}}$ was Hermitian positive with $\langle B_{\mathrm{right}}\rangle_{\natural}=e_t$, and the reconstruction $\tilde u_{\mathrm r}B_{\mathrm{right}}$ reproduced $\tilde U_{\mathrm{Lor}}$ to machine precision. The eigenvalues of $B_{\mathrm{right}}$ were real and positive, as required for the positive square root.
+using $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. The other ordering gives $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}^{*} = \tilde u_{\mathrm r}B_{\mathrm{right}}^2\tilde u_{\mathrm r}^{-1}$, whose square root is the corpus boost factor $\tilde U_{\mathrm b}=\tilde u_{\mathrm r}B_{\mathrm{right}}\tilde u_{\mathrm r}^{-1}$. It is a different boost whenever the rotation axis is not parallel to the boost axis, and it is the factor of the word $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not of the word used here. With $\tilde u_{\mathrm r} = \tilde U_{\mathrm{lor}}B_{\mathrm{right}}^{-1}$ the factor $\tilde u_{\mathrm r}$ was $*$-unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B_{\mathrm{right}}$ was Hermitian positive with $\langle B_{\mathrm{right}}\rangle_{\natural}=e_t$, and the reconstruction $\tilde u_{\mathrm r}B_{\mathrm{right}}$ reproduced $\tilde U_{\mathrm{lor}}$ to machine precision. The eigenvalues of $B_{\mathrm{right}}$ were real and positive, as required for the positive square root.
 
 ## The Two-Sheeted Cover
 
 The conjugation map
 
 $$
-\pi(\tilde U_{\mathrm{Lor}}):\ \tilde{Q}\ \longmapsto\ \tilde U_{\mathrm{Lor}}\,\tilde{Q}\,\tilde U_{\mathrm{Lor}}^{*}
+\pi(\tilde U_{\mathrm{lor}}):\ \tilde{Q}\ \longmapsto\ \tilde U_{\mathrm{lor}}\,\tilde{Q}\,\tilde U_{\mathrm{lor}}^{*}
 $$
 
 is a continuous surjective homomorphism from $SL(2,\mathbb{C})$ onto the restricted Lorentz group, and its kernel is
@@ -347,10 +347,10 @@ The conventions of the construction are those of the following companion article
 The covering group of the restricted Lorentz group is the group of unit-norm biquaternions,
 
 $$
-SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{Lor}} : \langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = e_t\} \cong SU(2)\times\mathbb{R}^3 \simeq S^3 ,
+SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t\} \cong SU(2)\times\mathbb{R}^3 \simeq S^3 ,
 $$
 
-which is simply connected, with $\pi_1 = 0$ and $\pi_3 = \mathbb{Z}$. The conjugation map $\pi(\tilde U_{\mathrm{Lor}}):\tilde{Q}\mapsto\tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*}$ has kernel $\{\pm e_t\}$ and is the universal cover,
+which is simply connected, with $\pi_1 = 0$ and $\pi_3 = \mathbb{Z}$. The conjugation map $\pi(\tilde U_{\mathrm{lor}}):\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}^{*}$ has kernel $\{\pm e_t\}$ and is the universal cover,
 
 $$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
@@ -385,13 +385,13 @@ with $\omega\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\omega\t
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar line (centre) |
-| $\tilde U_{\mathrm{Lor}}$, $\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural} = e_t$ | Unit-norm biquaternion; Lorentz rotor |
-| $\pi(\tilde U_{\mathrm{Lor}}):\tilde{Q}\mapsto\tilde U_{\mathrm{Lor}}\tilde{Q}\tilde U_{\mathrm{Lor}}^{*}$ | Conjugation action on $\mathbb{M}_-$ |
+| $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$ | Unit-norm biquaternion; Lorentz rotor |
+| $\pi(\tilde U_{\mathrm{lor}}):\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}^{*}$ | Conjugation action on $\mathbb{M}_-$ |
 | $\ker\pi = \{\pm e_t\}$, $\pi_1(SO^+(1,3))=\mathbb{Z}/2$ | Two-sheeted universal cover |
-| $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{Lor}}:\langle\tilde U_{\mathrm{Lor}}\rangle_{\natural}=e_t\}\cong SU(2)\times\mathbb{R}^3$ | Covering group manifold |
+| $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}:\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=e_t\}\cong SU(2)\times\mathbb{R}^3$ | Covering group manifold |
 | $R(\theta) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor; $R(2\pi)=-e_t$, $R(4\pi)=e_t$ |
-| $B_{\mathrm{right}}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ | Right polar boost, $B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{Lor}}^{*}\tilde U_{\mathrm{Lor}}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
-| $\tilde U_{\mathrm b}(\psi,\vec u) = \sqrt{\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{*}}$ | Left polar boost of the corpus word $\tilde U_{\mathrm{Lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; $\tilde U_{\mathrm b}\neq B_{\mathrm{right}}$ |
+| $B_{\mathrm{right}}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ | Right polar boost, $B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{lor}}^{*}\tilde U_{\mathrm{lor}}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
+| $\tilde U_{\mathrm b}(\psi,\vec u) = \sqrt{\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}^{*}}$ | Left polar boost of the corpus word $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; $\tilde U_{\mathrm b}\neq B_{\mathrm{right}}$ |
 | $\mathcal{B}\cong\mathbb{R}^3\cong\mathbb{H}^3\cong SL(2,\mathbb{C})/SU(2)$ | Boost manifold (hyperbolic three-space), contractible |
 | $SO(3)\to SO^+(1,3)\to\mathbb{H}^3$ | Fibration; topology carried by the rotation fiber |
 | $\tan\frac{\omega}{2} = \frac{\sinh^2(\psi/2)\sin\theta}{\cosh^2(\psi/2)+\sinh^2(\psi/2)\cos\theta}$ | Wigner angle for two equal-rapidity boosts |

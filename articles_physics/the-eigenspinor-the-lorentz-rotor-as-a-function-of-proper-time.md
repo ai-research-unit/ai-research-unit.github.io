@@ -76,13 +76,13 @@ or, more usefully, component by component from $\tilde{P} = m\tilde{V}$ and the 
 
 **The eigenprojection reading.** The two eigenprojections of the momentum are $\tilde\Pi_\pm=\tfrac12(e_t\mp i\vec u_p)$. For the pure boost along $\vec u_p$ they are fixed by the eigenspinor, $\tilde U\tilde\Pi_\pm\tilde U^{-1}=\tilde\Pi_\pm$, because the boost commutes with its own axis and with $e_t$; the eigenspinor moves the spin frame and not the momentum projectors. The residual rotor of the rest frame acts on them by conjugation and carries them among the minimal idempotents, which is the spin freedom of *Two gauges* above. Read this way, the eigenspinor is the transport of the spin frame, and the eigenvalue decomposition of the momentum is the pair of projectors that the transport leaves invariant; [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) gives the spectral form of that pair.
 
-**The one-sided transformation law.** Under a change of Lorentz frame implemented by the fixed Lorentz rotor $\tilde U_{\mathrm{Lor}}$, a four-vector transforms as $\tilde P_2 = \tilde U_{\mathrm{Lor}}\tilde{P}\tilde U_{\mathrm{Lor}}^{*}$ and, by the definition, the eigenspinor transforms as
+**The one-sided transformation law.** Under a change of Lorentz frame implemented by the fixed Lorentz rotor $\tilde U_{\mathrm{lor}}$, a four-vector transforms as $\tilde P_2 = \tilde U_{\mathrm{lor}}\tilde{P}\tilde U_{\mathrm{lor}}^{*}$ and, by the definition, the eigenspinor transforms as
 
 $$
-\tilde U_2 = \tilde U_{\mathrm{Lor}}\,\tilde U,
+\tilde U_2 = \tilde U_{\mathrm{lor}}\,\tilde U,
 $$
 
-a **one-sided** multiplication. This is the spinor law, not the two-sided four-vector law, and it is the statement that the eigenspinor belongs to the left module on which the rotors act, exactly as *The Spinor Module in Biquaternionic Form and Its Lorentz Action* describes. The two laws are consistent: $\tilde P_2 = (\tilde U_{\mathrm{Lor}}\tilde U)(imc\,e_t)(\tilde U_{\mathrm{Lor}}\tilde U)^{*}$. The distinction between this active reading of the rotor, the passive reading, and the reading in which a rotor relates two physical frames is set out in *The Lorentz Transformation as a Biquaternionic Rotation*, where the relative rotor between two worldlines is written as the ratio of their eigenspinors.
+a **one-sided** multiplication. This is the spinor law, not the two-sided four-vector law, and it is the statement that the eigenspinor belongs to the left module on which the rotors act, exactly as *The Spinor Module in Biquaternionic Form and Its Lorentz Action* describes. The two laws are consistent: $\tilde P_2 = (\tilde U_{\mathrm{lor}}\tilde U)(imc\,e_t)(\tilde U_{\mathrm{lor}}\tilde U)^{*}$. The distinction between this active reading of the rotor, the passive reading, and the reading in which a rotor relates two physical frames is set out in *The Lorentz Transformation as a Biquaternionic Rotation*, where the relative rotor between two worldlines is written as the ratio of their eigenspinors.
 
 ## The Evolution Equation and the Norm
 
@@ -236,7 +236,7 @@ $$
 = \tfrac12\left(\vec\Omega_{\mathrm{LT}}\tilde{P} + \tilde{P}\vec\Omega_{\mathrm{LT}}^{*}\right).
 $$
 
-With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde U\to\tilde U_{\mathrm{Lor}}\tilde U$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde U = \exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)\tilde U(0)$.
+With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde U\to\tilde U_{\mathrm{lor}}\tilde U$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde U = \exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)\tilde U(0)$.
 
 The eigenspinor does not remove the obstruction recorded in *The Lorentz Force in Biquaternion Form* to writing $\tilde{K}_{\mathrm{f}}$ as a single product of $\tilde{F}$ with $\tilde{V}$. It offers a different route, in which the force has a **linear** source — the rotor and its rate — and the product formula is a derived corollary.
 
@@ -245,7 +245,7 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 | Symbol | Meaning |
 |---|---|
 | $\tilde U(\tau)$ | Eigenspinor: the rotor carrying the rest frame to the laboratory |
-| $\tilde U_{\mathrm{Lor}}$ | Fixed Lorentz rotor acting on the eigenspinor; $\tilde U_{\mathrm{Lor}}\tilde U_{\mathrm{Lor}}^{\natural}=e_t$ |
+| $\tilde U_{\mathrm{lor}}$ | Fixed Lorentz rotor acting on the eigenspinor; $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}^{\natural}=e_t$ |
 | $\tilde{P} = m\tilde{V}$ | Four-momentum, in the material sector $\mathbb{M}_-$ |
 | $imc\,e_t$ | Rest four-momentum (central) |
 | $\vec\Omega_{\mathrm{LT}}$ | Spacetime rotation rate, the generator of the Lorentz transformation; a pure vector, $\vec\Omega_{\mathrm{LT}}^{\natural} = -\vec\Omega_{\mathrm{LT}}$ |

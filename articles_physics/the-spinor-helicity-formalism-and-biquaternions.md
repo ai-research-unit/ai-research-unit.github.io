@@ -199,7 +199,7 @@ Equivalently, a monomial with $\lambda$-degree $d_\lambda$ and $\bar\lambda$-deg
 The Parke–Taylor formula is the kinematic factor of the tree-level amplitude for $n$ gluons in the maximally helicity-violating (MHV) configuration, in which all but two gluons have positive helicity. With the two negative-helicity gluons at positions $i$ and $j$, and with the color-ordered labels in cyclic order,
 
 $$
-\mathcal A_n^{\mathrm{MHV}} \;\propto\;
+\mathcal A_n^{\mathrm{mhv}} \;\propto\;
 \frac{\langle ij\rangle^{4}}{\langle 12\rangle\langle 23\rangle\cdots\langle n1\rangle}.
 $$
 
@@ -303,7 +303,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 | $h$ | Helicity, the little-group weight; $d_\lambda=-2h$ |
 | $\tilde H=-i\tilde P\in\mathbb{M}_+$ | Hermitian four-vector, $\mathsf{M}_2(\tilde H)=p_{\alpha\bar\beta}$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) = 2\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | Trace formula (Born rule), inherited |
-| $\mathcal A_n^{\mathrm{MHV}}\propto\langle ij\rangle^4/\prod_k\langle k,k+1\rangle$ | Parke–Taylor kinematic factor |
+| $\mathcal A_n^{\mathrm{mhv}}\propto\langle ij\rangle^4/\prod_k\langle k,k+1\rangle$ | Parke–Taylor kinematic factor |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1\mu}\rvert^{2}$ |
 

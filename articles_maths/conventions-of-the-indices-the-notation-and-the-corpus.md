@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This article closes the series with the marks that are read on a glyph rather than on the object: the superscript tokens, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the eight companions, whose glyphs it indexes.
+This article closes the series with the marks that are read on a glyph rather than on the object: the superscript tokens and the labels they carry, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the eight companions, whose glyphs it indexes.
 
-The superscripts come first because they are two tokens and nothing else; the subscripts next, because their rule depends on the derivation convention fixed in *Operator and Calculus Conventions*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
+The superscripts come first because the tokens are two and their labels are an index of three letters; the subscripts next, because their rule depends on the derivation convention fixed in *Operator and Calculus Conventions*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
 
 The article is the last of the nine and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Algebra and Element Conventions* collects the glyphs of the algebra.
 
@@ -17,7 +17,8 @@ The article is the last of the nine and the index of the notation: the table bel
 - a power, $2^k$, $e^\lambda$, $(-1)^j$, $\alpha^k$, $2^{k/2-1}$;
 - a conjugation, $a^{*}$, $a^{\dagger}$, $a^{\natural}$;
 - a transposition, $L^T$, $\psi^T$;
-- a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{Sym}^l$, $\Lambda^kTM$ (degree).
+- a construction, $\mathbb{B}^\times$, $S^{\otimes n}$, $\mathrm{Sym}^l$, $\Lambda^kTM$ (degree);
+- a label naming the object, $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$, and the rest of §*The Three-Letter Labels*.
 
 **A low mark is the exclusive carrier of those things:**
 
@@ -27,9 +28,10 @@ The article is the last of the nine and the index of the notation: the table bel
 - a sign symbol, $\delta_{ij}$, $\varepsilon_{ijk}$, $\eta_{ij}$;
 - a gauge, colour, isospin or spin index, $T_a$, $G_a$, $\sigma_z$;
 - a connection or curvature component, $\Gamma_k$, $R_{ij}$, $\omega_i$, $g_{ij}$;
-- a differential, $dx_i$.
+- a differential, $dx_i$;
+- a label naming a part or a role, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, with the labels of §*The Three-Letter Labels* read in the two slots.
 
-**The lists rule on these uses, not on the names.** A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is.
+**The lists rule on these uses, not on the names.** A raised grade, parameter, sector or order is a name, not a power, a conjugation, a transposition or a construction, and the article that uses it says which name it is. A label is a name of that kind, and the slot says what it names: on the caret it names the object the glyph denotes, $\mathbb{B}^{\mathrm{opp}}$, $a^{\mathrm{fop}}$, $L^{\mathrm{axf}}$, and low it names a part or a role of that object, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, and it is then a subscript label.
 
 ## The Superscripts
 
@@ -58,9 +60,77 @@ The mark says exactly one thing — the glyph is not an element, it is an operat
 
 **The two-letter form $\mathrm{op}$ is forbidden.** It differs from $\mathrm{opp}$ by one letter, at the size a superscript is set, and a page carrying both would be undecidable at reading speed. It is therefore not a token of the corpus in any sense. In particular it does not mark the operator norm: the norm is written $\lVert A\rVert$ bare, and the norms it is compared with carry their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$, so that the unmarked bar is the operator norm by default and never by elimination. It does not mark an operator either: an operator glyph is the element's glyph, and the explicit form is written where the letter is taken, as in the gradient $\tilde\nabla$ and the momentum $-i\hbar\nabla$.
 
+**A caret carries a label as it carries a power.** Beyond the two tokens, the caret is the slot where the corpus names a variant of its object, in upright roman letters: $\mathbb{B}^{\mathrm{opp}}$, $a^{\mathrm{fop}}$, $L^{\mathrm{axf}}$, $\partial^{\mathrm{nil}}$, $\pi_1^{\mathrm{orb}}$. Italic is a power and upright is a name, so the two are told apart at sight, and a label is never read as an exponent: $L_x^{\mathrm{axf}}$ is the matrix of $\vec e_x$ in the axis-free frame and not the $x$-th power of an operator. **The label is three lowercase letters by default**, and for the reason that forbids $\mathrm{op}$ beside $\mathrm{opp}$ — one letter out of three, at the size a superscript is set, does not separate two meanings; a fourth letter is admitted where three do not carry the word, $\mathrm{lift}$, $\mathrm{dual}$, $\mathrm{deph}$, $\mathrm{refl}$, and the shorthands $\mathrm{fn}$ and $\mathrm{spin}$ of §*Summary of Notation* are of the same kind. The table below is the index of the three-letter labels of the corpus.
+
+### The Three-Letter Labels
+
+The table is an index of labels and not a list of tokens: a label names an object, a construction, a frame or a variant of one, the article that introduces it fixes what it abbreviates, and a label enters the table with that article. **Every label is written in lowercase.** The caret is set at superscript size, where the case of a three-letter word is not read reliably, so a capitalised variant beside a lowercase one would be undecidable at reading speed; the rule is the one that forbids the two-letter $\mathrm{op}$ beside $\mathrm{opp}$, applied to case instead of to length.
+
+Two kinds of token stand outside the table and are not labels. An **operator name** set in the superscript keeps its own capitalisation, $\operatorname{Sym}$ on a divided-power structure and $\operatorname{Gal}$ on the fixed field $K^{\operatorname{Gal}(K/F)}$, because it is the glyph of an operator and not a label read on an object. The **twelve names of the algebraic structures** keep their capitals under a stricter rule stated in the corpus: $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$, $\mathrm{SPA}$, $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{SQS}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ are codes whose three letters are the initials of the words — general, symmetric, antisymmetric, plain, quaternionic, algebra, sesqualgebra — and the code is fixed in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+
+| Label | Names |
+|---|---|
+| $\mathrm{adj}$ | the adjugate matrix |
+| $\mathrm{alg}$ | the algebraic left multiplication |
+| $\mathrm{arc}$ | the arc-length parametrisation of a curve |
+| $\mathrm{aut}$ | the automorphism attached to a triple isomorphism |
+| $\mathrm{avg}$ | the group average of a projection |
+| $\mathrm{axf}$ | the axis-free frame |
+| $\mathrm{can}$ | the canonical energy–momentum tensor |
+| $\mathrm{cop}$ | the coproduct of a Hopf algebra |
+| $\mathrm{cov}$ | the universal cover here, the covariant fundamental solution there |
+| $\mathrm{cts}$ | the continuous dual |
+| $\mathrm{def}$ | the deformation stratum |
+| $\mathrm{dif}$ | the difference, or antisymmetrised, product |
+| $\mathrm{epr}$ | the value of the EPR steering parameter |
+| $\mathrm{exp}$ | the experimental value |
+| $\mathrm{ext}$ | the extended affine Weyl group |
+| $\mathrm{fat}$ | the fat Cantor set |
+| $\mathrm{fin}$ | the non-Archimedean places |
+| $\mathrm{fix}$ | the fixed points of the involution |
+| $\mathrm{fop}$ | the Fock operator |
+| $\mathrm{har}$ | the harmonic Fischer projection |
+| $\mathrm{imp}$ | the improvement term of the tensor |
+| $\mathrm{inc}$ | the incident field |
+| $\mathrm{ind}$ | the induced character |
+| $\mathrm{inv}$ | the invariant measure |
+| $\mathrm{lcm}$ | the least common multiple |
+| $\mathrm{lin}$ | the linearisation |
+| $\mathrm{lor}$ | the Lorentz object, the group or the Green function |
+| $\mathrm{mhv}$ | the MHV amplitude |
+| $\mathrm{mod}$ | the modified Lagrangian here, the modular Hamiltonian there |
+| $\mathrm{mon}$ | the monogenic Fischer operator |
+| $\mathrm{new}$ | the new subspace |
+| $\mathrm{nil}$ | the nilpotent direction |
+| $\mathrm{odd}$ | the odd part of a graded algebra |
+| $\mathrm{old}$ | the old subspace |
+| $\mathrm{opp}$ | the opposite algebra |
+| $\mathrm{orb}$ | the orbifold group here, the orbital part there |
+| $\mathrm{out}$ | the outgoing solution |
+| $\mathrm{per}$ | the periodic cyclic complex |
+| $\mathrm{pol}$ | the polarisation vector |
+| $\mathrm{pre}$ | the presheaf |
+| $\mathrm{red}$ | the reduced object |
+| $\mathrm{reg}$ | the regularised object |
+| $\mathrm{rel}$ | the relative transfer |
+| $\mathrm{rep}$ | the representing function |
+| $\mathrm{res}$ | the residual part; the residue field |
+| $\mathrm{ret}$ | the retarded field |
+| $\mathrm{rev}$ | the reversed process |
+| $\mathrm{set}$ | the underlying set of a structure |
+| $\mathrm{sgn}$ | the sign |
+| $\mathrm{str}$ | the structure group |
+| $\mathrm{sub}$ | the submultiplicative seminorm |
+| $\mathrm{sym}$ | the symmetrised form |
+| $\mathrm{top}$ | the top degree |
+| $\mathrm{tot}$ | the total tensor |
+| $\mathrm{wkb}$ | the WKB approximation |
+
+**A label is read in its slot.** The word is the same in the two slots and the slot says what it names: the caret names the object the glyph denotes and the low mark a part or a role of it, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$, and §*The Subscripts* rules on the low slot. The vocabulary is not private to a slot either: $\mathrm{orb}$ and $\mathrm{cov}$ name one object in the mathematical corpus and another in the physical one, $\mathrm{res}$ already names two within the mathematics, the residual part and the residue field, and the article that writes a label says which object it names.
+
 ## The Subscripts
 
-A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.
+A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone. A subscript label is written in the upright roman of the caret labels, and the two lists are read together (§*The Three-Letter Labels*).
 
 **A subscript is never a partial derivative.** The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in *Operator and Calculus Conventions*, §*Conventions for Derivation*.
 
@@ -197,7 +267,7 @@ The articles are rendered with KaTeX on the page, and the following rules are ob
 
 ## Summary
 
-Two **superscript tokens** run beside the marks of the elements: $\mathrm{fop}$ marks a Fock operator, an operator on the Fock space and not an element of the algebra, and $\mathrm{opp}$ marks the opposite algebra, whose product is reversed. The two are not read for one another: $\mathrm{fop}$ is written on a glyph, $\mathrm{opp}$ on an algebra name. The Fock mark combines with the dagger, the mark first, $a^{\mathrm{fop}\dagger}$, and the dagger alone never marks a glyph as an operator. Two further upright superscripts, $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element, name objects outside the algebra. No index is raised anywhere in the corpus: every index is written low, and a contraction is a form.
+Two **superscript tokens** run beside the marks of the elements: $\mathrm{fop}$ marks a Fock operator, an operator on the Fock space and not an element of the algebra, and $\mathrm{opp}$ marks the opposite algebra, whose product is reversed. The two are not read for one another: $\mathrm{fop}$ is written on a glyph, $\mathrm{opp}$ on an algebra name. The Fock mark combines with the dagger, the mark first, $a^{\mathrm{fop}\dagger}$, and the dagger alone never marks a glyph as an operator. Two further upright superscripts, $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element, name objects outside the algebra. No index is raised anywhere in the corpus: every index is written low, and a contraction is a form. The caret also carries the corpus's **labels**, upright roman names of three lowercase letters by default — $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$ — indexed in §*The Three-Letter Labels*; a label names the object the glyph denotes when it is written on the caret, and a part or a role of that object when it is written low, $s_{\mathrm{tot}}$, $U_{\mathrm{lor}}$.
 
 A **subscript** is written with the underscore and takes a single token: one character bare, two or more in braces. It counts when it only distinguishes occurrences and names when it is a role label; a role-labelled element carries its label in its coefficients. The admitted forms are a digit, a letter, two indices, a sign, an upright word and a grouped expression, and the slot takes any KaTeX expression beyond them. A subscript is never a partial derivative. An **angular-momentum total** takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the total generator carries the role subscript and then the vector index, $\tilde S_{\mathrm{tot},k}$; the orbital part is $L_k$ here and $\tilde L_k$ in the physical corpus.
 
@@ -211,6 +281,7 @@ The **category numbers** count the categories of the parts in menu order; the fr
 |---|---|
 | $^{\mathrm{fop}}$ | A Fock operator, an operator on the Fock space and not an element of the algebra |
 | $^{\mathrm{opp}}$ | The opposite algebra, the algebra with the reversed product; the two-letter $\mathrm{op}$ is not a token |
+| $\mathrm{opp}$, $\mathrm{fop}$, $\mathrm{axf}$, $\mathrm{nil}$ | The three-letter labels of a construction, a frame or a variant of an object; the full index is §*The Three-Letter Labels* |
 | $^{\mathrm{fn}}$ | A function from a domain into the algebra |
 | $^{\mathrm{spin}}$ | An element of $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$ on a principal bundle |
 | `- Theory`, `- Operator Theory`, `- * Theory`, `- * Operator Theory` | The four groups of a category, in that order |

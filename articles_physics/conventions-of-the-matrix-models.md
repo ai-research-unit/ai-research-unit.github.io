@@ -207,7 +207,7 @@ L_{\vec e_z}R_{\vec e_y}=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end
 L_{\vec e_z}R_{\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
-Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $(L_{e_\mu}R_{e_\nu})^{\mathrm{coef}}=C_{\Pi}\,L_{e_\mu}R_{e_\nu}\,C_{\Pi}^{-1}$.
+Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $(L_{e_\mu}R_{e_\nu})^{\mathrm{axf}}=C_{\Pi}\,L_{e_\mu}R_{e_\nu}\,C_{\Pi}^{-1}$.
 
 **The invariants.** With $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$,
 $$
@@ -347,6 +347,68 @@ $$
 $$
 so the frame is visible in the formula.
 
+## The $M_4(\mathbb{C})$ Axis-Free Representation
+
+**A second frame, and its label.** The corpus displays the regular matrices in two frames, and this article keeps to the canonical Peirce frame, where the left matrix is $I_2\otimes\mathsf M_2(\tilde Q)$ and the five cells $\mathsf C_\mu$ are read; the other is the axis-free frame, the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ read without singling out one of the three vector directions, in contrast with the Peirce frame, whose root $\vec\Xi=i\vec e_z$ is a chosen direction. Its label is $\mathrm{axf}$, a name in roman letters and not an exponent: the left matrix of $\tilde Q$ is $L^{\mathrm{axf}}(\tilde Q)$, the matrix of the unit $e_\mu$ is $L_\mu^{\mathrm{axf}}$, and $L_x^{\mathrm{axf}}$ is the matrix of $\vec e_x$, never the $x$-th power of an operator.
+
+**The left matrix.** The columns are the coordinate columns of $\tilde Qe_\mu$,
+$$
+L^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&Q_t
+\end{pmatrix},
+$$
+and the right matrix, whose columns are the coordinate columns of $e_\mu\tilde Q$, is
+$$
+R^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&Q_z&-Q_y\\
+Q_y&-Q_z&Q_t&Q_x\\
+Q_z&Q_y&-Q_x&Q_t
+\end{pmatrix}.
+$$
+The scalar direction occupies the diagonal and the three vector directions enter by one rule. The two displays differ only in the signs of the six vector entries, which is the difference between a left and a right multiplication.
+
+**The eight units are real.** The four left matrices $L_\mu^{\mathrm{axf}}$ and the four right matrices $R_\mu^{\mathrm{axf}}$ of the units are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$. A general element is a complex combination and is not one. The same holds for the sixteen products $L_\mu^{\mathrm{axf}}R_\nu^{\mathrm{axf}}$, real, of determinant $1$, of Hilbert–Schmidt norm two and mutually orthogonal.
+
+**The stitch, and the sign vector.** Quaternion conjugation is transposition in this frame,
+$$
+R^{\mathrm{axf}}(\tilde Q)=D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,\qquad
+D=\operatorname{diag}(1,-1,-1,-1),
+$$
+and the same $D$ is the Gram matrix of the plain product $\operatorname{Sc}(XY)$ here, because $\operatorname{Sc}(e_\mu e_\nu)$ is $+1$ on $e_t$ and $-1$ on the three vector units. The transpose dictionary and the sign vector $\varepsilon$ of the products are the same array.
+
+**The change of frame.** The two displays are one operator in two bases,
+$$
+L^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L(\tilde Q)\,C_{\Pi}^{-1},\qquad
+R^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R(\tilde Q)\,C_{\Pi}^{-1},
+$$
+with $C_{\Pi}$ the Peirce change met above, whose columns are the four frame vectors in the axis-free basis,
+$$
+C_{\Pi}=\frac12
+\begin{pmatrix}
+1&0&0&1\\
+0&i&i&0\\
+0&1&-1&0\\
+i&0&0&-i
+\end{pmatrix},
+\qquad
+\det C_{\Pi}=-\tfrac14,\qquad
+C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4,\qquad
+C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}.
+$$
+The article that computes the frame writes $S$ for $C_{\Pi}$ and gives it these four columns.
+
+**The invariants are the operator's.** The trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2$ in this frame as in the canonical one, because $C_{\Pi}$ carries one to the other. A value read from an entry is a value of the frame; a value read from the trace, the determinant or a rank is a value of the operator.
+
+**No gamma set is chosen here.** In the canonical frame the five cells $\mathsf C_\mu$ are selected by hand from the sixteen products, and that selection is what writes a Clifford algebra and a gamma map. In the axis-free frame the sixteen products are all of one kind, real signed permutations of determinant $1$, and no five of them are singled out up to $i$: the gamma map is a choice of frame, not a structure of the algebra. The metric sign vector $\varepsilon$ and the substitution $Q_t=ict'$ on the material sector are untouched by the change of frame, which is a change of display.
+
+**The two articles of the frame.** *$M_4(\mathbb{C})$ Axis-Free Representation* gives the matrices, the product, the trace, the determinant and the six subspaces as matrix conditions; *$M_4(\mathbb{C})$ Axis-Free Representation : Operators* gives the operators at the three levels, the sixteen cells and the coefficient matrix.
+
 ## Summary
 
 The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, and the three vector units to $-i$ times the Pauli matrices, with $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace is twice the scalar part, the determinant is the biquaternion norm, and conjugating entries on their own is not an involution of the algebra. A bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
@@ -354,6 +416,8 @@ The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I
 The $4\times4$ representation is the regular one, $\rho_L$ and $\rho_R$, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$, not the ambient algebra. In the canonical Peirce frame the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The four left matrices $L_{e_\mu}$ and the four right matrices $R_{e_\nu}$ are written out, the right ones in the $L\leftrightarrow R$ correspondence $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$, the five frame cells are two-sided operators of that frame, and their sixteen products are the sixteen cells $L_{e_\mu}R_{e_\nu}$, written out entry by entry and tabulated by grade. The determinant is the square of the norm and the trace is four times the scalar part. No entry is read without its frame, and no frame changes the element or the copy.
 
 The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}R_{e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five generators are the cells $\mathsf C_0=iL_{e_t}R_{\vec e_x}$, $\mathsf C_1=iL_{\vec e_x}R_{\vec e_y}$, $\mathsf C_2=iL_{\vec e_y}R_{\vec e_y}$, $\mathsf C_3=iL_{\vec e_z}R_{\vec e_y}$, $\mathsf C_5=-iL_{e_t}R_{\vec e_z}$, and a change of frame is a change of basis. The biquaternion presentation carries the spinor module, the pairing, the involutions and the two sectors without a chosen frame. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the canonical frame $e_\mu\mapsto L_{e_\mu}R_{e_t}$ and $i\mapsto L_{e_t}R_{\vec e_z}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed generator: $\mathsf C_0$ times the image of $\mathbb{M}_+$ is the vector space, and $\mathsf C_0$ times the image of $\mathbb{M}_-$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\mathsf C_\mu\mathsf C_\nu$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace is $2\,\mathrm{Re}\operatorname{Tr}_2=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace of the corpus formula.
+
+The **axis-free frame** is the second display of the same regular matrices, the coefficient basis with no vector direction singled out, labelled $\mathrm{axf}$. Its eight unit matrices are real signed permutations of determinant $1$, its stitch is $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ with the $D$ that is also the Gram matrix of the plain product, and the change from the canonical frame is $C_{\Pi}$, of determinant $-\tfrac14$. No five of its sixteen products are singled out, so the gamma map is a choice of frame and not a structure of the algebra; the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^2$ and the metric sign vector are the same in both frames.
 
 ## Summary of Notation
 
@@ -369,6 +433,8 @@ The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes 
 | $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
 | $L_{e_\mu}=\mathsf M_4^{L}(e_\mu)$, $R_{e_\mu}=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_{e_\nu}=\mathsf S L_{e_\nu}^{\mathsf T}\mathsf S^{-1}$ |
 | $L_{e_\mu}R_{e_\nu}$ | The sixteen basis matrices; $L_{e_t}R_{e_t}=L_{e_t}$, $L_{e_t}R_{\vec e_k}=R_{\vec e_k}$, $L_{\vec e_k}R_{e_t}=L_{\vec e_k}$, $L_{\vec e_j}R_{\vec e_k}$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $L^{\mathrm{axf}}(\tilde Q)$, $L_\mu^{\mathrm{axf}}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
+| $C_{\Pi}$ | The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, written $S$ in the article of the frame |
 | $\mathsf C_0,\dots,\mathsf C_3,\mathsf C_5$ | The five frame cells, $\mathsf C_0=iL_{e_t}R_{\vec e_x}$, $\mathsf C_1=iL_{\vec e_x}R_{\vec e_y}$, $\mathsf C_2=iL_{\vec e_y}R_{\vec e_y}$, $\mathsf C_3=iL_{\vec e_z}R_{\vec e_y}$, $\mathsf C_5=-iL_{e_t}R_{\vec e_z}$ |
 | $\sigma_{\mu\nu}=\tfrac12\mathsf C_\mu\mathsf C_\nu$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
 
@@ -378,7 +444,7 @@ The Clifford structure is the algebra of the two-sided operators: $e_\mu\otimes 
 - [Conventions of the Products and the Forms](conventions-of-the-products-and-the-forms.html), for the products the matrix product mirrors.
 - [Conventions of the Operators and the Calculus](conventions-of-the-operators-and-the-calculus.html), for the left and right multiplications these matrices represent.
 - [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), companion article, for the coefficient space and the three actions.
-- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html), for the change of frame between the coefficient basis and the canonical frame.
+- [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [its Operators companion](../articles_maths/m4c-axis-free-representation-operators.html), for the change of frame between the coefficient basis and the canonical frame, and for the sixteen cells in that frame.
 - [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the frames of the normal form and the proof of the cell table.
 
 ## Appendix — The Gamma Formulation
