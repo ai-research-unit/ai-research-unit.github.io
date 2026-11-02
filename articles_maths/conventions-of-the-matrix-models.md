@@ -225,7 +225,7 @@ $$
 $$
 The sixteen products of the five frame cells span over $\mathbb{R}$ the algebra $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, of real dimension $16$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the opposite real form. The Dirac, Weyl and Majorana matrices are three presentations of the same complex algebra, related by a change of frame; a change of frame is a change of basis, not a change of object.
 
-**The five cells of the frame.** The five frame cells are five cells,
+**The five cells of the frame.** The five frame cells are
 $$
 \boxed{\;iL_{e_t}R_{\vec e_x},\qquad
 iL_{e_\vec e_x}R_{\vec e_y},\qquad
@@ -407,7 +407,7 @@ $$
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
 
-**The sixteen products.** The five generators are five cells up to a factor $i$, and the sixteen products of the five, in increasing grade, are the sixteen cells:
+**The sixteen products.** The five frame cells are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen cells:
 
 | grade | $\gamma$-product | cell | equality |
 |---|---|---|---|

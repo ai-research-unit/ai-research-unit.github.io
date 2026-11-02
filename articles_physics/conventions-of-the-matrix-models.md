@@ -245,7 +245,7 @@ with $g=\operatorname{diag}(1,-1,-1,-1)$.
 
 **A cell is written as its two multipliers, never as a letter.** The basis cell is $L_{e_\mu}R_{e_\nu}$, for two unit indices, and the frame cell of the coordinate $x_\mu$ is $iL_{e_\mu}R_{e_{\nu(\mu)}}$ with $\nu(t)=x$ and $\nu(k)=y$; the chirality cell is $-iL_{e_t}R_{\vec e_z}$. No single letter stands for a frame cell in either part of the corpus: the letter collided with the basis cells $L_{e_\mu}R_{e_\nu}$ and with the gauge generators $T_a=\tfrac12\vec e_a$ of the unification articles, and it is retired. The factor $i$ belongs to the cell, so a product of two cells is a product of the two multiplier pairs, $iL_{e_\mu}R_{e_{\nu(\mu)}}\,iL_{e_\nu}R_{e_{\nu(\nu)}}=-L_{e_\mu e_\nu}R_{e_{\nu(\nu)}e_{\nu(\mu)}}$, and the sign is carried by the product, not by a symbol.
 
-**These are the cells of the $\mathbb{M}_-$ frame.** In the $\mathbb{B}$ frame of the series, whose material case is $Q_t=ict'$, the four cells that all square to $+I_4$ are
+**The two frames differ by the sign of the three spatial cells.** In the $\mathbb{M}_-$ frame the five cells are the ones above, and the three spatial ones square to $-I_4$. In the $\mathbb{B}$ frame of the series, whose material case is $Q_t=ict'$, the four cells that all square to $+I_4$ are
 $$
 (iR_{\vec e_x})^2=+I_4,\qquad
 (-iL_{\vec e_k}R_{\vec e_y})^2=+I_4,\quad k=1,2,3 .
@@ -262,7 +262,7 @@ The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Del
 
 **The index is written low in both frames.** The label of a frame cell is the coordinate index of its left multiplier, written low as in $iL_{e_\mu}R_{e_{\nu(\mu)}}$, and the index is never raised or lowered, in either frame.
 
-**The sixteen products are the sixteen cells.** The five generators are five cells up to a factor $i$, and the sixteen products of the five, in increasing grade, are the sixteen cells $L_{e_\mu}R_{e_\nu}=L_{e_\mu} R_{e_\nu}$:
+**The sixteen products are the sixteen cells.** The five frame cells are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen cells $L_{e_\mu}R_{e_\nu}=L_{e_\mu} R_{e_\nu}$:
 
 | grade | cells |
 |---|---|
@@ -471,7 +471,7 @@ $$
 $$
 The $\mathbb{M}_-$ frame carries these matrices; the $\mathbb{B}$-frame generators are $\gamma_0(Q)=\gamma_0$ and $\gamma_k(Q)=i\gamma_k$, all squaring to $+I_4$.
 
-**The sixteen products.** The five generators are five cells up to a factor $i$, and the sixteen products of the five, in increasing grade, are the sixteen cells:
+**The sixteen products.** The five frame cells are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen cells:
 
 | grade | $\gamma$-product | cell | equality |
 |---|---|---|---|
