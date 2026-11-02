@@ -210,12 +210,12 @@ by the mixed-product property. It is the operator.
 
 ### The Coefficient Matrix
 
-**The expansion.** The sixteen products $L_{\mu}R_{\nu}=L_\mu R_\nu$ are an orthogonal basis of $M_4(\mathbb{C})$ for the Hilbert–Schmidt inner product, and every matrix has a unique expansion $M=\sum c_{\mu\nu}L_{\mu}R_{\nu}$. The matrix $c(M)$ is the coefficient matrix. The definition and the length theorem are in the $4\times4$ operators article.
+**The expansion.** The sixteen products $L_{e_\mu}R_{e_\nu}$ are an orthogonal basis of $M_4(\mathbb{C})$ for the Hilbert–Schmidt inner product, and every matrix has a unique expansion $M=\sum c_{\mu\nu}L_{e_\mu}R_{e_\nu}$. The matrix $c(M)$ is the coefficient matrix. The definition and the length theorem are in the $4\times4$ operators article.
 
 **The coefficient matrix of a pair.** If $A=\sum_\mu Q_\mu\mathsf M_2(e_\mu)$ and $B=\sum_\nu P_\nu\mathsf M_2(e_\nu)$, then
 $$
 [L_AR_B]_{\mathcal{P}}=B^{\mathsf T}\otimes A
-=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{\mu}R_{\nu},
+=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
 $$
 so
 $$
@@ -223,7 +223,7 @@ c(L_AR_B)=[Q][P]^{\mathsf T},
 $$
 the outer product of the two coefficient columns. It has rank at most one; conversely every rank-one coefficient matrix is such an outer product and gives a pair. The pair picture and the coefficient picture are the same statement, one in $2\times2$ matrices and one in the $4\times4$ coefficient matrix.
 
-**The two $4\times4$ matrices.** The coefficient matrix $c(L_AR_B)$ and the operator matrix $[L_AR_B]_{\mathcal{P}}$ are both $4\times4$, and they are different objects. The first is the matrix of the tensor in the basis $L_{\mu}R_{\nu}$; the second is the matrix of the operator on the carrier. The first has rank at most one, and rank one when the operator is nonzero; the second has rank $\operatorname{rank}A\cdot\operatorname{rank}B$.
+**The two $4\times4$ matrices.** The coefficient matrix $c(L_AR_B)$ and the operator matrix $[L_AR_B]_{\mathcal{P}}$ are both $4\times4$, and they are different objects. The first is the matrix of the tensor in the basis $L_{e_\mu}R_{e_\nu}$; the second is the matrix of the operator on the carrier. The first has rank at most one, and rank one when the operator is nonzero; the second has rank $\operatorname{rank}A\cdot\operatorname{rank}B$.
 
 **The length.** By the length theorem, the least number of pairs summing to $M$ is $\operatorname{rank}c(M)$. The pair set is the cone $\operatorname{rank}c\le1$; its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The length is $\ell(M)=\operatorname{rank}c(M)$, and the general endomorphism needs up to four pairs, the subject of §*The General Endomorphism*.
 
@@ -453,9 +453,9 @@ In one line: one matrix per side, a pair for the product, four pairs for the gen
 | $E_{ij}$ | the matrix units, $E_{ij}E_{kl}=\delta_{jk}E_{il}$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic norm, $\det A$ |
-| $L_{\mu}R_{\nu}=L_\mu R_\nu$ | the sixteen basis products |
+| $L_{e_\mu}R_{e_\nu}$ | the sixteen basis products |
 | $[Q],[P]$ | the coefficient columns $(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ and $(P_t,P_x,P_y,P_z)^{\mathsf T}$ |
-| $c(M)$ | the coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{\mu}R_{\nu})^{\dagger}M)$ |
+| $c(M)$ | the coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{e_\mu}R_{e_\nu})^{\dagger}M)$ |
 | $\ell(M)=\operatorname{rank}c(M)$ | the length, the least number of pairs summing to $M$ |
 | $\operatorname{rank}$ | the matrix rank |
 | $PGL_2(\mathbb{C})$ | the inner automorphism group |
