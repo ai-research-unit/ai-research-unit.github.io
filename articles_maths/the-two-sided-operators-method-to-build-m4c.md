@@ -6,7 +6,7 @@
 
 **The method.** Start from $\mathbb{B}$ and its carrier $\mathbb{B}\cong\mathbb{C}^4$. For $a,b\in\mathbb{B}$ define the two one-sided operators $L_a(x)=ax$ and $R_b(x)=xb$. The products $L_{a}R_{b}$, and their sums, form an algebra of operators on a four-dimensional space. That algebra is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. Choosing the coefficient basis of $\mathbb{B}$ turns the operators into $4\times4$ matrices, and the method produces sixteen explicit matrices $L_{e_\mu}R_{e_\nu}$. This article builds the algebra that way, displays the sixteen matrices, and proves the properties that make them the matrices to use.
 
-**The result.** The sixteen $L_{e_\mu}R_{e_\nu}$ are signed permutation matrices of determinant one. They are orthogonal for the Hilbert–Schmidt form, with $\operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}L_{\rho}R_{\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{e_\mu}R_{e_\nu}$ form a group of order $32$. The coefficients of any matrix in this basis are sixteen traces, and the rank of the coefficient matrix is the length, the least number of products. Every matrix unit is a sum of four of the sixteen, so the matrix-unit basis is the worst basis for the product.
+**The result.** The sixteen $L_{e_\mu}R_{e_\nu}$ are signed permutation matrices of determinant one. They are orthogonal for the Hilbert–Schmidt form, with $\operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}L_{e_rho}R_{e_sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{e_\mu}R_{e_\nu}$ form a group of order $32$. The coefficients of any matrix in this basis are sixteen traces, and the rank of the coefficient matrix is the length, the least number of products. Every matrix unit is a sum of four of the sixteen, so the matrix-unit basis is the worst basis for the product.
 
 **The terminology.** $M_4(\mathbb{C})$ is the matrix representation of the operator algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, not the biquaternion algebra itself. The biquaternion algebra is four-dimensional and is not a matrix algebra until a basis of the carrier is chosen. The operator algebra is sixteen-dimensional; the choice of the coefficient basis writes it as $M_4(\mathbb{C})$. Three objects are in play, and the article keeps them apart.
 
@@ -57,13 +57,13 @@ can vanish for $a\ne0$, and then $a$ is a zero divisor. For example $(1+ie_x)(1-
 **The four basis matrices.** With $e_x^2=e_y^2=e_z^2=-e_t$ and $e_xe_y=e_z$, $e_ye_z=e_x$, $e_ze_x=e_y$,
 
 $$
-L_t=\mathrm{I}_4,\qquad
-L_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+L_{e_t}=\mathrm{I}_4,\qquad
+L_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{e_z}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 
-**The laws.** $L_aL_b=L_{ab}$, $L_t=\mathrm{I}_4$, and $L_a$ is invertible exactly when $a$ is a unit. The image $L(\mathbb{B})$ has complex dimension four.
+**The laws.** $L_aL_b=L_{ab}$, $L_{e_t}=\mathrm{I}_4$, and $L_a$ is invertible exactly when $a$ is a unit. The image $L(\mathbb{B})$ has complex dimension four.
 
 ### Right multiplication
 
@@ -72,10 +72,10 @@ $$
 **The four basis matrices.**
 
 $$
-R_t=\mathrm{I}_4,\qquad
-R_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
-R_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-R_z=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+R_{e_t}=\mathrm{I}_4,\qquad
+R_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+R_{e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+R_{e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 
 **The relation to the left family.** Let $D=\operatorname{diag}(1,-1,-1,-1)$ and let $b^{\dagger}=(b_t,-b_x,-b_y,-b_z)$ be the quaternion conjugate. Then
@@ -103,7 +103,7 @@ $$
 **The basis.** The sixteen matrices
 
 $$
-L_{e_\mu}R_{e_\nu}=L_\mu R_\nu,\qquad \mu,\nu\in\{t,x,y,z\},
+L_{e_\mu}R_{e_\nu},\qquad \mu,\nu\in\{t,x,y,z\},
 $$
 
 are a basis of $M_4(\mathbb{C})$. The dimension count is $4\cdot4=16$.
@@ -117,7 +117,7 @@ are a basis of $M_4(\mathbb{C})$. The dimension count is $4\cdot4=16$.
 
 **Step 1.** Start from the biquaternion algebra $\mathbb{B}$ and its four-dimensional carrier. No matrix is chosen yet.
 
-**Step 2.** Form the eight one-sided operators $L_t,L_x,L_y,L_z$ and $R_t,R_x,R_y,R_z$. They are linear maps of the carrier to itself.
+**Step 2.** Form the eight one-sided operators $L_{e_t},L_{e_x},L_{e_y},L_{e_z}$ and $R_{e_t},R_{e_x},R_{e_y},R_{e_z}$. They are linear maps of the carrier to itself.
 
 **Step 3.** Form the products $L_{a}R_{b}$ and all their linear combinations. This is the algebra generated by the two commuting copies $L(\mathbb{B})$ and $R(\mathbb{B})$.
 
@@ -166,38 +166,38 @@ Dimensions: the domain has dimension $4\cdot4=16$, and the target has dimension 
 **The sixteen matrices, in the coefficient basis.** The labels are the two indices: the first is the left parameter, the second the right parameter.
 
 $$
-L_tR_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_tR_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
-L_tR_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-L_tR_z=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+L_{e_t}R_{e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{e_t}R_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+L_{e_t}R_{e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+L_{e_t}R_{e_z}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 
 $$
-L_xR_t=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_xR_x=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_xR_y=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad
-L_xR_z=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}.
+L_{e_x}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{e_x}R_{e_x}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{e_x}R_{e_y}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad
+L_{e_x}R_{e_z}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}.
 $$
 
 $$
-L_yR_t=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_yR_x=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},\qquad
-L_yR_y=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
-L_yR_z=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}.
+L_{e_y}R_{e_t}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{e_y}R_{e_x}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+L_{e_y}R_{e_y}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{e_y}R_{e_z}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}.
 $$
 
 $$
-L_zR_t=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad
-L_zR_x=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_zR_y=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
-L_zR_z=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+L_{e_z}R_{e_t}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad
+L_{e_z}R_{e_x}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{e_z}R_{e_y}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
+L_{e_z}R_{e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
-**The order of the labels matters.** The two matrices $L_tR_x$ and $L_xR_t$ are different:
+**The order of the labels matters.** The two matrices $L_{e_t}R_{e_x}$ and $L_{e_x}R_{e_t}$ are different:
 
 $$
-L_tR_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
-L_xR_t=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
+L_{e_t}R_{e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+L_{e_x}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
 $$
 
 They agree in the first two rows and differ in the last two. A computation that confuses them returns the wrong coefficient; the companion article *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation* records the trap.
@@ -208,26 +208,26 @@ They agree in the first two rows and differ in the last two. A computation that 
 
 | Matrix | Trace | Determinant | Rank | Order | Square |
 |---|---|---|---|---|---|
-| $L_tR_t$ | $4$ | $1$ | $4$ | $1$ | $\mathrm{I}_4$ |
-| $L_tR_x$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
-| $L_tR_y$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
-| $L_tR_z$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
-| $L_xR_t$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
-| $L_xR_x$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
-| $L_xR_y$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
-| $L_xR_z$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
-| $L_yR_t$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
-| $L_yR_x$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
-| $L_yR_y$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
-| $L_yR_z$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
-| $L_zR_t$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
-| $L_zR_x$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
-| $L_zR_y$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
-| $L_zR_z$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_t}R_{e_t}$ | $4$ | $1$ | $4$ | $1$ | $\mathrm{I}_4$ |
+| $L_{e_t}R_{e_x}$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
+| $L_{e_t}R_{e_y}$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
+| $L_{e_t}R_{e_z}$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
+| $L_{e_x}R_{e_t}$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
+| $L_{e_x}R_{e_x}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_x}R_{e_y}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_x}R_{e_z}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_y}R_{e_t}$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
+| $L_{e_y}R_{e_x}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_y}R_{e_y}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_y}R_{e_z}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_z}R_{e_t}$ | $0$ | $1$ | $4$ | $4$ | $-\mathrm{I}_4$ |
+| $L_{e_z}R_{e_x}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_z}R_{e_y}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
+| $L_{e_z}R_{e_z}$ | $0$ | $1$ | $4$ | $2$ | $\mathrm{I}_4$ |
 
-**The pattern.** Every matrix is invertible, of determinant one and of rank four. The trace is $4$ only for $L_tR_t$, the identity, and $0$ for the other fifteen. The order is $4$ exactly when one index is $t$ and the other is spatial: $L_tR_{\sigma}$ and $L_{\sigma}R_t$ with $\sigma=x,y,z$ square to $-\mathrm{I}_4$. The two-spatial matrices square to $+\mathrm{I}_4$.
+**The pattern.** Every matrix is invertible, of determinant one and of rank four. The trace is $4$ only for $L_{e_t}R_{e_t}$, the identity, and $0$ for the other fifteen. The order is $4$ exactly when one index is $t$ and the other is spatial: $L_tR_{\sigma}$ and $L_{e_sigma}R_{e_t}$ with $\sigma=x,y,z$ square to $-\mathrm{I}_4$. The two-spatial matrices square to $+\mathrm{I}_4$.
 
-**Proof of the pattern.** The matrix $L_{e_\mu}R_{e_\nu}$ is a signed permutation, so it is orthogonal and its determinant is $\pm1$. The group $\{\pm L_{e_\mu}R_{e_\nu}\}$ is generated by the six matrices $L_x,L_y,L_z,R_x,R_y,R_z$, each of determinant $1$ by the displayed matrices, and the determinant is a homomorphism; hence all thirty-two elements have determinant $1$. The trace and the order columns are read from the sixteen displayed matrices: the trace is $4$ only for the identity, and the square is $-\mathrm{I}_4$ exactly for the six matrices with one $t$ index and one spatial index. The square column also follows from the two multiplication tables of §*Multiplication*.
+**Proof of the pattern.** The matrix $L_{e_\mu}R_{e_\nu}$ is a signed permutation, so it is orthogonal and its determinant is $\pm1$. The group $\{\pm L_{e_\mu}R_{e_\nu}\}$ is generated by the six matrices $L_{e_x},L_{e_y},L_{e_z},R_{e_x},R_{e_y},R_{e_z}$, each of determinant $1$ by the displayed matrices, and the determinant is a homomorphism; hence all thirty-two elements have determinant $1$. The trace and the order columns are read from the sixteen displayed matrices: the trace is $4$ only for the identity, and the square is $-\mathrm{I}_4$ exactly for the six matrices with one $t$ index and one spatial index. The square column also follows from the two multiplication tables of §*Multiplication*.
 
 ### The group of order thirty-two
 
@@ -239,56 +239,56 @@ where $Q_8=\{\pm1,\pm i,\pm j,\pm k\}$, and it has order $32$.
 
 **Proof.** Closure: the product of two elements of $\{\pm L_{e_\mu}R_{e_\nu}\}$ is
 $$
-(\pm L_{e_\mu}R_{e_\nu})(\pm L_{\rho}R_{\sigma})=\pm L_{e_\mu}R_{e_\nu}L_{\rho}R_{\sigma}=\pm L_{\mu\rho}R_{\sigma\nu},
+(\pm L_{e_\mu}R_{e_\nu})(\pm L_{e_rho}R_{e_sigma})=\pm L_{e_\mu}R_{e_\nu}L_{e_rho}R_{e_sigma}=\pm L_{\mu\rho}R_{\sigma\nu},
 $$
-by the composition law of §*The Two-Sided Matrices*. The result is again in $\{\pm L_{e_\mu}R_{e_\nu}\}$. The set is finite, contains $\mathrm{I}_4=L_tR_t$, and every element is invertible, so it is a group. Distinctness: $L_{e_\mu}R_{e_\nu}=L_{\rho}R_{\sigma}$ gives $L_{\mu}^{-1}L_{\rho}=R_{\nu}R_{\sigma}^{-1}$, an element of $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\mathrm{I}_4$; both sides are signed basis matrices, so both are $\mathrm{I}_4$, hence $\mu=\rho$ and $\nu=\sigma$. If $L_{e_\mu}R_{e_\nu}=-L_{\rho}R_{\sigma}$, the same argument gives $\mathrm{I}_4=-\mathrm{I}_4$, which is false. So the thirty-two are distinct.
+by the composition law of §*The Two-Sided Matrices*. The result is again in $\{\pm L_{e_\mu}R_{e_\nu}\}$. The set is finite, contains $\mathrm{I}_4=L_{e_t}R_{e_t}$, and every element is invertible, so it is a group. Distinctness: $L_{e_\mu}R_{e_\nu}=L_{e_rho}R_{e_sigma}$ gives $L_{e_mu}^{-1}L_{e_rho}=R_{e_nu}R_{e_sigma}^{-1}$, an element of $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\mathrm{I}_4$; both sides are signed basis matrices, so both are $\mathrm{I}_4$, hence $\mu=\rho$ and $\nu=\sigma$. If $L_{e_\mu}R_{e_\nu}=-L_{e_rho}R_{e_sigma}$, the same argument gives $\mathrm{I}_4=-\mathrm{I}_4$, which is false. So the thirty-two are distinct.
 
-For the isomorphism, let $Q_8^{L}=\{\pm\mathrm{I}_4,\pm L_x,\pm L_y,\pm L_z\}$ and $Q_8^{R}=\{\pm\mathrm{I}_4,\pm R_x,\pm R_y,\pm R_z\}$. Each is a copy of $Q_8$. They commute and meet in $\{\pm\mathrm{I}_4\}$, so their product has order $8\cdot8/2=32$, and it is the set $\{\pm L_{e_\mu}R_{e_\nu}\}$. The map $(A,B)\mapsto AB$ from $Q_8^{L}\times Q_8^{R}$ has kernel $\{(1,1),(-1,-1)\}$, hence the displayed quotient.
+For the isomorphism, let $Q_8^{L}=\{\pm\mathrm{I}_4,\pm L_{e_x},\pm L_{e_y},\pm L_{e_z}\}$ and $Q_8^{R}=\{\pm\mathrm{I}_4,\pm R_{e_x},\pm R_{e_y},\pm R_{e_z}\}$. Each is a copy of $Q_8$. They commute and meet in $\{\pm\mathrm{I}_4\}$, so their product has order $8\cdot8/2=32$, and it is the set $\{\pm L_{e_\mu}R_{e_\nu}\}$. The map $(A,B)\mapsto AB$ from $Q_8^{L}\times Q_8^{R}$ has kernel $\{(1,1),(-1,-1)\}$, hence the displayed quotient.
 
-**The matrices are not a group of order sixteen.** The sixteen $L_{e_\mu}R_{e_\nu}$ alone are not closed: $L_tR_xL_xR_t=L_xR_x$ is in the set, but $L_xR_yL_yR_z=-L_zR_x$ is not. One sign is missing. The group needs the thirty-two signed matrices.
+**The matrices are not a group of order sixteen.** The sixteen $L_{e_\mu}R_{e_\nu}$ alone are not closed: $L_{e_t}R_{e_x}L_xR_t=L_{e_x}R_{e_x}$ is in the set, but $L_{e_x}R_{e_y}L_yR_z=-L_{e_z}R_{e_x}$ is not. One sign is missing. The group needs the thirty-two signed matrices.
 
 ## Multiplication
 
 ### The two tables
 
-**The left table.** Row $\mu$, column $\nu$, entry $L_\mu L_\nu$. The product is a signed basis matrix.
+**The left table.** Row $\mu$, column $\nu$, entry $L_{e_mu} L_{e_nu}$. The product is a signed basis matrix.
 
-| $L_\mu L_\nu$ | $L_t$ | $L_x$ | $L_y$ | $L_z$ |
+| $L_{e_mu} L_{e_nu}$ | $L_{e_t}$ | $L_{e_x}$ | $L_{e_y}$ | $L_{e_z}$ |
 |---|---|---|---|---|
-| $L_t$ | $L_t$ | $L_x$ | $L_y$ | $L_z$ |
-| $L_x$ | $L_x$ | $-L_t$ | $L_z$ | $-L_y$ |
-| $L_y$ | $L_y$ | $-L_z$ | $-L_t$ | $L_x$ |
-| $L_z$ | $L_z$ | $L_y$ | $-L_x$ | $-L_t$ |
+| $L_{e_t}$ | $L_{e_t}$ | $L_{e_x}$ | $L_{e_y}$ | $L_{e_z}$ |
+| $L_{e_x}$ | $L_{e_x}$ | $-L_{e_t}$ | $L_{e_z}$ | $-L_{e_y}$ |
+| $L_{e_y}$ | $L_{e_y}$ | $-L_{e_z}$ | $-L_{e_t}$ | $L_{e_x}$ |
+| $L_{e_z}$ | $L_{e_z}$ | $L_{e_y}$ | $-L_{e_x}$ | $-L_{e_t}$ |
 
-**The right table.** Row $\nu$, column $\sigma$, entry $R_\nu R_\sigma$. It is the table of the opposite quaternion algebra, so the signs sit in the other cells.
+**The right table.** Row $\nu$, column $\sigma$, entry $R_{e_nu} R_{e_sigma}$. It is the table of the opposite quaternion algebra, so the signs sit in the other cells.
 
-| $R_\nu R_\sigma$ | $R_t$ | $R_x$ | $R_y$ | $R_z$ |
+| $R_{e_nu} R_{e_sigma}$ | $R_{e_t}$ | $R_{e_x}$ | $R_{e_y}$ | $R_{e_z}$ |
 |---|---|---|---|---|
-| $R_t$ | $R_t$ | $R_x$ | $R_y$ | $R_z$ |
-| $R_x$ | $R_x$ | $-R_t$ | $-R_z$ | $R_y$ |
-| $R_y$ | $R_y$ | $R_z$ | $-R_t$ | $-R_x$ |
-| $R_z$ | $R_z$ | $-R_y$ | $R_x$ | $-R_t$ |
+| $R_{e_t}$ | $R_{e_t}$ | $R_{e_x}$ | $R_{e_y}$ | $R_{e_z}$ |
+| $R_{e_x}$ | $R_{e_x}$ | $-R_{e_t}$ | $-R_{e_z}$ | $R_{e_y}$ |
+| $R_{e_y}$ | $R_{e_y}$ | $R_{e_z}$ | $-R_{e_t}$ | $-R_{e_x}$ |
+| $R_{e_z}$ | $R_{e_z}$ | $-R_{e_y}$ | $R_{e_x}$ | $-R_{e_t}$ |
 
-**The two tables are not the same.** The left table is the quaternion table: $L_xL_y=L_z$. The right table is the reverse: $R_xR_y=-R_z$, because $R_aR_b=R_{ba}$ and $e_ye_x=-e_z$. This is the source of every sign in the corpus that looks like a sign error.
+**The two tables are not the same.** The left table is the quaternion table: $L_{e_x}L_{e_y}=L_{e_z}$. The right table is the reverse: $R_{e_x}R_{e_y}=-R_{e_z}$, because $R_aR_b=R_{ba}$ and $e_ye_x=-e_z$. This is the source of every sign in the corpus that looks like a sign error.
 
 ### The product rule
 
 **The rule.** Read the left table at $(\mu,\rho)$ and the right table at $(\nu,\sigma)$:
 $$
-L_\mu L_\rho=\varepsilon_1L_\lambda,\qquad
-R_\nu R_\sigma=\varepsilon_2R_\tau .
+L_{e_mu} L_{e_rho}=\varepsilon_1L_{e_lambda},\qquad
+R_{e_nu} R_{e_sigma}=\varepsilon_2R_{e_tau} .
 $$
 Then
 $$
-L_{e_\mu}R_{e_\nu}L_{\rho}R_{\sigma}
-=L_\mu L_\rho\,R_\nu R_\sigma
-=\varepsilon_1\varepsilon_2\,L_{\lambda}R_{\tau}.
+L_{e_\mu}R_{e_\nu}L_{e_rho}R_{e_sigma}
+=L_{e_mu} L_{e_rho}\,R_{e_nu} R_{e_sigma}
+=\varepsilon_1\varepsilon_2\,L_{\lambda}R_{e_tau}.
 $$
 The right index pair is not reversed in the formula; the reversal is already in the right table, whose row is the first factor and whose column is the second.
 
 **In one line.**
 $$
-L_{e_\mu}R_{e_\nu}L_{\rho}R_{\sigma}=\varepsilon_1\varepsilon_2\,L_{\lambda}R_{\tau},
+L_{e_\mu}R_{e_\nu}L_{e_rho}R_{e_sigma}=\varepsilon_1\varepsilon_2\,L_{\lambda}R_{e_tau},
 \qquad
 (\lambda,\varepsilon_1)=\text{left table}(\mu,\rho),
 \quad
@@ -299,30 +299,30 @@ $$
 
 ### Three examples
 
-**A product in the set.** $L_tR_xL_xR_t$: the left table at $(t,x)$ gives $L_x$ with sign $+1$; the right table at $(x,t)$ gives $R_x$ with sign $+1$. Hence
+**A product in the set.** $L_{e_t}R_{e_x}L_xR_t$: the left table at $(t,x)$ gives $L_{e_x}$ with sign $+1$; the right table at $(x,t)$ gives $R_{e_x}$ with sign $+1$. Hence
 $$
-L_tR_xL_xR_t=L_xR_x.
-$$
-
-**A product with a sign.** $L_xR_yL_yR_z$: the left table at $(x,y)$ gives $L_z$ with sign $+1$; the right table at $(y,z)$ gives $-R_x$. Hence
-$$
-L_xR_yL_yR_z=-L_zR_x.
+L_{e_t}R_{e_x}L_xR_t=L_{e_x}R_{e_x}.
 $$
 
-**A square.** $L_zR_yL_zR_y$: the left table at $(z,z)$ gives $-L_t$; the right table at $(y,y)$ gives $-R_t$; the product is $(-\mathrm{I}_4)(-\mathrm{I}_4)=\mathrm{I}_4$. This is the entry of the invariant table.
+**A product with a sign.** $L_{e_x}R_{e_y}L_yR_z$: the left table at $(x,y)$ gives $L_{e_z}$ with sign $+1$; the right table at $(y,z)$ gives $-R_{e_x}$. Hence
+$$
+L_{e_x}R_{e_y}L_yR_z=-L_{e_z}R_{e_x}.
+$$
+
+**A square.** $L_{e_z}R_{e_y}L_zR_y$: the left table at $(z,z)$ gives $-L_{e_t}$; the right table at $(y,y)$ gives $-R_{e_t}$; the product is $(-\mathrm{I}_4)(-\mathrm{I}_4)=\mathrm{I}_4$. This is the entry of the invariant table.
 
 ## Orthogonality and the Coefficient Formula
 
 **Theorem.** For all indices,
 $$
-\operatorname{tr}\bigl(L_{e_\mu}R_{e_\nu}^{*}L_{\rho}R_{\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
+\operatorname{tr}\bigl(L_{e_\mu}R_{e_\nu}^{*}L_{e_rho}R_{e_sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
 $$
 
 **Proof.** Every $L_{e_\mu}R_{e_\nu}$ is a signed permutation matrix, so it is orthogonal and $L_{e_\mu}R_{e_\nu}^{*}=L_{e_\mu}R_{e_\nu}^{-1}$. The inverse is $\pm L_{e_\mu}R_{e_\nu}$, because $L_{e_\mu}R_{e_\nu}^{2}=\pm\mathrm{I}_4$ by the invariant table. More generally,
 $$
-L_{e_\mu}R_{e_\nu}^{*}L_{\rho}R_{\sigma}=\pm L_{e_\mu}R_{e_\nu}L_{\rho}R_{\sigma}=\pm L_{\lambda}R_{\tau}
+L_{e_\mu}R_{e_\nu}^{*}L_{e_rho}R_{e_sigma}=\pm L_{e_\mu}R_{e_\nu}L_{e_rho}R_{e_sigma}=\pm L_{\lambda}R_{e_tau}
 $$
-for some indices $\lambda,\tau$. The trace of $L_{\lambda}R_{\tau}$ is $4$ when $\lambda=\tau=t$ and $0$ otherwise, by the invariant table. The indices $\lambda,\tau$ are $t$ exactly when $\mu=\rho$ and $\nu=\sigma$, because the product of two basis quaternions is the identity only when the factors are equal. Hence the trace is $4$ on the diagonal and $0$ off it.
+for some indices $\lambda,\tau$. The trace of $L_{\lambda}R_{e_tau}$ is $4$ when $\lambda=\tau=t$ and $0$ otherwise, by the invariant table. The indices $\lambda,\tau$ are $t$ exactly when $\mu=\rho$ and $\nu=\sigma$, because the product of two basis quaternions is the identity only when the factors are equal. Hence the trace is $4$ on the diagonal and $0$ off it.
 
 **The trace of a two-sided operator.** For all $a,b\in\mathbb{B}$,
 $$
@@ -339,7 +339,7 @@ $$
 c_{\mu\nu}(A)=\tfrac14\operatorname{tr}\bigl(L_{e_\mu}R_{e_\nu}^{*}A\bigr).
 $$
 
-**Proof.** Multiply the expansion by $L_{\rho}R_{\sigma}^{*}$ and take the trace. Orthogonality leaves $4c_{\rho\sigma}$.
+**Proof.** Multiply the expansion by $L_{e_rho}R_{e_sigma}^{*}$ and take the trace. Orthogonality leaves $4c_{\rho\sigma}$.
 
 **The formula in entries.** Since $L_{e_\mu}R_{e_\nu}$ is a signed permutation,
 $$
@@ -363,22 +363,22 @@ and each row of the coefficient array has exactly four nonzero entries.
 
 | Matrix unit | Expansion |
 |---|---|
-| $E_{11}$ | $\tfrac14\bigl(L_tR_t-L_xR_x-L_yR_y-L_zR_z\bigr)$ |
-| $E_{12}$ | $\tfrac14\bigl(-L_tR_x-L_xR_t+L_yR_z-L_zR_y\bigr)$ |
-| $E_{13}$ | $\tfrac14\bigl(-L_tR_y-L_xR_z-L_yR_t+L_zR_x\bigr)$ |
-| $E_{14}$ | $\tfrac14\bigl(-L_tR_z+L_xR_y-L_yR_x-L_zR_t\bigr)$ |
-| $E_{21}$ | $\tfrac14\bigl(L_tR_x+L_xR_t+L_yR_z-L_zR_y\bigr)$ |
-| $E_{22}$ | $\tfrac14\bigl(L_tR_t-L_xR_x+L_yR_y+L_zR_z\bigr)$ |
-| $E_{23}$ | $\tfrac14\bigl(L_tR_z-L_xR_y-L_yR_x-L_zR_t\bigr)$ |
-| $E_{24}$ | $\tfrac14\bigl(-L_tR_y-L_xR_z+L_yR_t-L_zR_x\bigr)$ |
-| $E_{31}$ | $\tfrac14\bigl(L_tR_y-L_xR_z+L_yR_t+L_zR_x\bigr)$ |
-| $E_{32}$ | $\tfrac14\bigl(-L_tR_z-L_xR_y-L_yR_x+L_zR_t\bigr)$ |
-| $E_{33}$ | $\tfrac14\bigl(L_tR_t+L_xR_x-L_yR_y+L_zR_z\bigr)$ |
-| $E_{34}$ | $\tfrac14\bigl(L_tR_x-L_xR_t-L_yR_z-L_zR_y\bigr)$ |
-| $E_{41}$ | $\tfrac14\bigl(L_tR_z+L_xR_y-L_yR_x+L_zR_t\bigr)$ |
-| $E_{42}$ | $\tfrac14\bigl(L_tR_y-L_xR_z-L_yR_t-L_zR_x\bigr)$ |
-| $E_{43}$ | $\tfrac14\bigl(-L_tR_x+L_xR_t-L_yR_z-L_zR_y\bigr)$ |
-| $E_{44}$ | $\tfrac14\bigl(L_tR_t+L_xR_x+L_yR_y-L_zR_z\bigr)$ |
+| $E_{11}$ | $\tfrac14\bigl(L_{e_t}R_{e_t}-L_{e_x}R_{e_x}-L_{e_y}R_{e_y}-L_{e_z}R_{e_z}\bigr)$ |
+| $E_{12}$ | $\tfrac14\bigl(-L_{e_t}R_{e_x}-L_{e_x}R_{e_t}+L_{e_y}R_{e_z}-L_{e_z}R_{e_y}\bigr)$ |
+| $E_{13}$ | $\tfrac14\bigl(-L_{e_t}R_{e_y}-L_{e_x}R_{e_z}-L_{e_y}R_{e_t}+L_{e_z}R_{e_x}\bigr)$ |
+| $E_{14}$ | $\tfrac14\bigl(-L_{e_t}R_{e_z}+L_{e_x}R_{e_y}-L_{e_y}R_{e_x}-L_{e_z}R_{e_t}\bigr)$ |
+| $E_{21}$ | $\tfrac14\bigl(L_{e_t}R_{e_x}+L_{e_x}R_{e_t}+L_{e_y}R_{e_z}-L_{e_z}R_{e_y}\bigr)$ |
+| $E_{22}$ | $\tfrac14\bigl(L_{e_t}R_{e_t}-L_{e_x}R_{e_x}+L_{e_y}R_{e_y}+L_{e_z}R_{e_z}\bigr)$ |
+| $E_{23}$ | $\tfrac14\bigl(L_{e_t}R_{e_z}-L_{e_x}R_{e_y}-L_{e_y}R_{e_x}-L_{e_z}R_{e_t}\bigr)$ |
+| $E_{24}$ | $\tfrac14\bigl(-L_{e_t}R_{e_y}-L_{e_x}R_{e_z}+L_{e_y}R_{e_t}-L_{e_z}R_{e_x}\bigr)$ |
+| $E_{31}$ | $\tfrac14\bigl(L_{e_t}R_{e_y}-L_{e_x}R_{e_z}+L_{e_y}R_{e_t}+L_{e_z}R_{e_x}\bigr)$ |
+| $E_{32}$ | $\tfrac14\bigl(-L_{e_t}R_{e_z}-L_{e_x}R_{e_y}-L_{e_y}R_{e_x}+L_{e_z}R_{e_t}\bigr)$ |
+| $E_{33}$ | $\tfrac14\bigl(L_{e_t}R_{e_t}+L_{e_x}R_{e_x}-L_{e_y}R_{e_y}+L_{e_z}R_{e_z}\bigr)$ |
+| $E_{34}$ | $\tfrac14\bigl(L_{e_t}R_{e_x}-L_{e_x}R_{e_t}-L_{e_y}R_{e_z}-L_{e_z}R_{e_y}\bigr)$ |
+| $E_{41}$ | $\tfrac14\bigl(L_{e_t}R_{e_z}+L_{e_x}R_{e_y}-L_{e_y}R_{e_x}+L_{e_z}R_{e_t}\bigr)$ |
+| $E_{42}$ | $\tfrac14\bigl(L_{e_t}R_{e_y}-L_{e_x}R_{e_z}-L_{e_y}R_{e_t}-L_{e_z}R_{e_x}\bigr)$ |
+| $E_{43}$ | $\tfrac14\bigl(-L_{e_t}R_{e_x}+L_{e_x}R_{e_t}-L_{e_y}R_{e_z}-L_{e_z}R_{e_y}\bigr)$ |
+| $E_{44}$ | $\tfrac14\bigl(L_{e_t}R_{e_t}+L_{e_x}R_{e_x}+L_{e_y}R_{e_y}-L_{e_z}R_{e_z}\bigr)$ |
 
 **Two examples in full.** For $E_{11}$ the four diagonal cells enter with the signs of the coordinates: the trace sum $1-(-1)-(-1)-(-1)=4$ gives the coefficient $1$, while the off-diagonal entries cancel. For $E_{12}$ the four cells with exactly one $t$ index enter; the two $t$-first matrices give the first column, and the two $t$-second matrices give the second.
 
@@ -487,7 +487,7 @@ $$
 **The length.** The rank is two, so $\ell(M)=2$, while the matrix rank of $M$ is four. A decomposition is
 $$
 M=L_{e_t-e_x}R_{e_t}+L_{e_z}R_{-e_y}
-=L_tR_t-L_xR_t-L_zR_y.
+=L_{e_t}R_{e_t}-L_{e_x}R_{e_t}-L_{e_z}R_{e_y}.
 $$
 
 **The caution.** The matrix looks like two copies of a Jordan block, but it is not a left regular matrix: in the coefficient basis a left matrix has equal entries $(1,2)$ and $(2,1)$ up to sign, and $M$ has $2$ and $0$. The block look is a property of the coefficient basis, not of the Peirce decomposition.
@@ -496,10 +496,10 @@ $$
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $L_{e_\mu}R_{e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}L_{\rho}R_{\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{e_\mu}R_{e_\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four cells with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
+The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $L_{e_\mu}R_{e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}L_{e_rho}R_{e_sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm L_{e_\mu}R_{e_\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four cells with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The Clifford frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.
 
 $$
-\boxed{\ \operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}L_{\rho}R_{\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma},\qquad
+\boxed{\ \operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}L_{e_rho}R_{e_sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma},\qquad
 c_{\mu\nu}(A)=\tfrac14\operatorname{tr}(L_{e_\mu}R_{e_\nu}^{*}A),\qquad
 \ell(A)=\operatorname{rank}c(A).\ }
 $$
@@ -560,7 +560,7 @@ $$
 **The chirality projectors.**
 $$
 P_{\pm}=\tfrac12\bigl(\mathrm{I}_4\pm\gamma_5\bigr)
-=\tfrac12\bigl(L_tR_t\mp iL_tR_z\bigr).
+=\tfrac12\bigl(L_{e_t}R_{e_t}\mp iL_tR_z\bigr).
 $$
 Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations of two cells, not products themselves.
 
