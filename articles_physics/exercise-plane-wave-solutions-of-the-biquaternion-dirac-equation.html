@@ -273,9 +273,9 @@ $$</p>
 <p>In the Dirac basis the same two components are the large and the small component; they are still the Peirce components, but there they are not the chirality projectors.</p>
 <p><strong>The momentum-space operator.</strong> For a plane wave of four-momentum $p_\mu=(E,\vec p)$, the Dirac operator is</p>
 <p>$$
-\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}=iR_{e_x}E-\sum_k iL_{e_k}R_{e_y} p_k=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y},
+\bigl(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\bigr)=iR_{e_x}E-\sum_k iL_{e_k}R_{e_y} p_k=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y},
 $$</p>
-<p>and the equation is $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}\,\tilde\Psi=m\tilde\Psi$. Written on the element,</p>
+<p>and the equation is $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\,\tilde\Psi=m\tilde\Psi$. Written on the element,</p>
 <p>$$
 E\,\tilde\Psi\,i\vec e_x-(\vec p\cdot\vec e)\,\tilde\Psi\,\vec e_y=m\,\tilde\Psi .
 $$</p>
@@ -293,7 +293,7 @@ $$</p>
 <p><strong>Conventions.</strong> Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The metric of the spacetime gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the Clifford metric of the generators is $g=-\eta$. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r)\dagger}\xi^{(s)}=\delta_{rs}$; $\chi_\pm$ are the helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\,\chi_\pm=\pm\chi_\pm$, with $\vec u_p=\vec p/|\vec p|$. The Hermitian conjugate $^*$ is the coefficient conjugation composed with the quaternion conjugation, $\tilde Q^*=\overline{\tilde Q^\natural}$, and under the matrix representation $\mathsf{M}_2$ it is the conjugate transpose.</p>
 <p>The seven problems are: <strong>(1)</strong> the spinors at rest and at general momentum; <strong>(2)</strong> the covariant normalisation and the orthogonality; <strong>(3)</strong> the spin sums; <strong>(4)</strong> the massless limit and the helicity–chirality locking; <strong>(5)</strong> the algebra of the generators and the change of basis; <strong>(6)</strong> the biquaternionic mass shell; <strong>(7)</strong> the helicity blocks and the block determinant.</p>
 <h2 id="problem-1-the-spinors-at-rest-and-at-general-momentum">Problem 1: The spinors at rest and at general momentum</h2>
-<p><strong>Statement.</strong> Solve $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}\,\tilde w=m\tilde w$ and $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}\,\tilde v=-m\tilde v$ explicitly at rest and at general momentum, in the chiral and in the Dirac basis.</p>
+<p><strong>Statement.</strong> Solve $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\,\tilde w=m\tilde w$ and $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\,\tilde v=-m\tilde v$ explicitly at rest and at general momentum, in the chiral and in the Dirac basis.</p>
 <p><strong>Solution.</strong> The equation was written above as a pair on the Peirce coordinates. In the <strong>chiral basis</strong> the pair is</p>
 <p>$$
 (E-\boldsymbol\sigma\cdot\vec p)\,\psi_-=m\psi_+,\qquad (E+\boldsymbol\sigma\cdot\vec p)\,\psi_+=m\psi_- .
@@ -387,8 +387,8 @@ $$</p>
 <h2 id="problem-3-the-spin-sums">Problem 3: The spin sums</h2>
 <p><strong>Statement.</strong> Verify the completeness relations</p>
 <p>$$
-\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m,\qquad
-\sum_{\pm}\tilde v_\pm\,\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}-m .
+\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m,\qquad
+\sum_{\pm}\tilde v_\pm\,\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m .
 $$</p>
 <p><strong>Solution.</strong> The left-hand side is an operator on $\mathbb{B}$, of rank two: for every $\tilde\Phi$,</p>
 <p>$$
@@ -403,31 +403,31 @@ $$</p>
 <p>and their conjugates. Restoring the algebra, $E I_2-|\vec p|\,\boldsymbol\sigma\cdot\vec u_p$ is $E-p_k\sigma_k$ and $mI_2$ is $m$, so</p>
 <p>$$
 \sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}
-=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y}+m=\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m .
+=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y}+m=iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m .
 $$</p>
-<p>The negative-frequency sum is identical in structure with the roles of the two Peirce components interchanged, and gives $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}-m$.</p>
-<p><strong>The on-shell identity.</strong> The two sums are consistent with the normalisations because the trace of $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m$ over the four-dimensional amplitude space is $4m$, and because</p>
+<p>The negative-frequency sum is identical in structure with the roles of the two Peirce components interchanged, and gives $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m$.</p>
+<p><strong>The on-shell identity.</strong> The two sums are consistent with the normalisations because the trace of $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m$ over the four-dimensional amplitude space is $4m$, and because</p>
 <p>$$
-(\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}+m)(\sum_\rho iL_{e_\rho}R_{e_{\nu(\rho)}} p_{\rho}-m)=(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu})^2-m^2 .
+(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m)=(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k})^2-m^2 .
 $$</p>
-<p>The operator $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}$ squares to a multiple of the identity:</p>
+<p>The operator $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}$ squares to a multiple of the identity:</p>
 <p>$$
-(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu})^2=E^2R_{(i\vec e_x)^2}-p_jp_kL_{i\vec e_j}R_{\vec e_y}L_{i\vec e_k}R_{\vec e_y}
+(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k})^2=E^2R_{(i\vec e_x)^2}-p_jp_kL_{i\vec e_j}R_{\vec e_y}L_{i\vec e_k}R_{\vec e_y}
 =E^2-p_jp_kL_{-\vec e_j\vec e_k}R_{-e_t}
 =E^2-\vec p^2 ,
 $$</p>
-<p>the cross terms vanishing because $R_{i\vec e_x}$ and $L_{i\vec e_k}R_{\vec e_y}$ anticommute. On the mass shell $(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu})^2=m^2$, so the two branches close the amplitude space, exactly as $(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m)(\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}-m)=0$ in the matrix language.</p>
+<p>the cross terms vanishing because $R_{i\vec e_x}$ and $L_{i\vec e_k}R_{\vec e_y}$ anticommute. On the mass shell $(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k})^2=m^2$, so the two branches close the amplitude space, exactly as $(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m)=0$ in the matrix language.</p>
 <p><strong>Check in the Dirac basis.</strong> The same relations hold with the spin index $r$ replacing the helicity index, once the Dirac-basis spinors of Problem 1 are used:</p>
 <p>$$
-\sum_{r=1}^{2}\tilde w^{(r)}\bigl\langle\tilde w^{(r)},\cdot\bigr\rangle_{\mathrm D}=\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m,\qquad
-\sum_{r=1}^{2}\tilde v^{(r)}\bigl\langle\tilde v^{(r)},\cdot\bigr\rangle_{\mathrm D}=\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}-m .
+\sum_{r=1}^{2}\tilde w^{(r)}\bigl\langle\tilde w^{(r)},\cdot\bigr\rangle_{\mathrm D}=iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m,\qquad
+\sum_{r=1}^{2}\tilde v^{(r)}\bigl\langle\tilde v^{(r)},\cdot\bigr\rangle_{\mathrm D}=iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m .
 $$</p>
 <p>The proof uses $\sum_r\xi^{(r)}\xi^{(r)\dagger}=I_2$ in place of the helicity sums. A numerical evaluation at the same kinematics confirms both equalities on a basis of $\mathbb{B}$.</p>
 <h2 id="problem-4-the-massless-limit-and-helicitychirality-locking">Problem 4: The massless limit and helicity–chirality locking</h2>
 <p><strong>Statement.</strong> Take $m=0$ and exhibit the helicity–chirality locking in the Peirce components.</p>
-<p><strong>Solution.</strong> In the chiral basis the massless equation $\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}\,\tilde\Psi=0$ splits into its two Peirce components,</p>
+<p><strong>Solution.</strong> In the chiral basis the massless equation $iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\,\tilde\Psi=0$ splits into its two Peirce components,</p>
 <p>$$
-\bigl(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}\,\tilde\Psi\bigr)\tilde\Pi_+=0,\qquad \bigl(\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}\,\tilde\Psi\bigr)\tilde\Pi_-=0,
+\bigl(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\,\tilde\Psi\bigr)\tilde\Pi_+=0,\qquad \bigl(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}\,\tilde\Psi\bigr)\tilde\Pi_-=0,
 $$</p>
 <p>which are the two Weyl equations</p>
 <p>$$
@@ -549,7 +549,7 @@ $$</p>
 <ol>
 <li><strong>The spinors.</strong> In the chiral basis, $\tilde w_\pm=\sqrt{E\mp|\vec p|}\,\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\,\Psi_-(\chi_\pm)$ and $\tilde v_\pm=-\sqrt{E\mp|\vec p|}\,\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\,\Psi_-(\chi_\pm)$; in the Dirac basis, $\tilde w^{(r)}=\sqrt{E+m}\,\Psi_+(\xi^{(r)})+\sqrt{E-m}\,\Psi_-(\boldsymbol\sigma\cdot\vec u_p\,\xi^{(r)})$ and $\tilde v^{(r)}=\sqrt{E-m}\,\Psi_+(\boldsymbol\sigma\cdot\vec u_p\,\eta^{(r)})+\sqrt{E+m}\,\Psi_-(\eta^{(r)})$. At rest the positive-frequency amplitude has equal Peirce coordinates and the negative-frequency amplitude opposite ones; in the Dirac basis each sits in a single Peirce component.</li>
 <li><strong>Normalisation.</strong> The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$; the Hermitian products are $2E$.</li>
-<li><strong>Spin sums.</strong> The completeness relations $\sum\tilde w\,\langle\tilde w,\cdot\rangle_{\mathrm D}=\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m$ and $\sum\tilde v\,\langle\tilde v,\cdot\rangle_{\mathrm D}=\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}-m$ hold as operator identities on $\mathbb{B}$, and $(\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}+m)(\sum_\nu iL_{e_\nu}R_{e_{\nu(\nu)}} p_{\nu}-m)=0$ on shell.</li>
+<li><strong>Spin sums.</strong> The completeness relations $\sum\tilde w\,\langle\tilde w,\cdot\rangle_{\mathrm D}=iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m$ and $\sum\tilde v\,\langle\tilde v,\cdot\rangle_{\mathrm D}=iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m$ hold as operator identities on $\mathbb{B}$, and $(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}+m)(iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}-m)=0$ on shell.</li>
 <li><strong>Massless limit.</strong> Each helicity eigenstate becomes a single Peirce component, with positive helicity right-handed and negative helicity left-handed; the mass term is the only coupling of the two components.</li>
 <li><strong>Generators.</strong> The Clifford algebra is the multiplication table: $iR_{e_x}=R_{i\vec e_x}$, $iL_{e_k}R_{e_y}=L_{i\vec e_k}R_{\vec e_y}$, $-iR_{e_z}=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $iR_{e_x}$ to $R_{i\vec e_z}$ and leaves $iL_{e_k}R_{e_y}$ unchanged; the Lorentz generators are $S_{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$.</li>
 <li><strong>Mass shell.</strong> The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.</li>
@@ -610,7 +610,7 @@ $$</p>
 <td>Dirac pairing in the chiral basis</td>
 </tr>
 <tr>
-<td>$\sum_\mu iL_{e_\mu}R_{e_{\nu(\mu)}} p_{\mu}=E R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$</td>
+<td>$iR_{e_x}p_{0}-\sum_k iL_{e_k}R_{e_y}p_{k}=E R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$</td>
 <td>Momentum-space Dirac operator</td>
 </tr>
 <tr>

@@ -148,34 +148,34 @@ In the $2\times2$ language, $L_A=R_B$ forces $A=B$ at the unit and then $AY=YA$ 
 <h3 id="the-pair">The Pair</h3>
 <p><strong>The operator.</strong> For $A,B\in M_2(\mathbb{C})$, the two-sided operator is
 $$
-L_{A}R_{B}:M_2(\mathbb{C})\longrightarrow M_2(\mathbb{C}),\qquad
-L_{A}R_{B}(Y)=AYB.
+T_{A,B}:M_2(\mathbb{C})\longrightarrow M_2(\mathbb{C}),\qquad
+T_{A,B}(Y)=AYB.
 $$
 It is $\mathbb{C}$-linear, and it is the composite $L_A R_B=R_B L_A$.</p>
-<p><strong>Two matrices are needed.</strong> The pair is the data. A single $2\times2$ matrix cannot describe the general operator: if $A$ and $B$ are nonzero, then $L_{A}R_{B}$ is a left multiplication exactly when $B$ is a scalar matrix, and a right multiplication exactly when $A$ is a scalar matrix. The proof is in §<em>The One-Sided Members</em>. A pair with neither slot scalar is genuinely two-sided, and it needs both matrices.</p>
+<p><strong>Two matrices are needed.</strong> The pair is the data. A single $2\times2$ matrix cannot describe the general operator: if $A$ and $B$ are nonzero, then $T_{A,B}$ is a left multiplication exactly when $B$ is a scalar matrix, and a right multiplication exactly when $A$ is a scalar matrix. The proof is in §<em>The One-Sided Members</em>. A pair with neither slot scalar is genuinely two-sided, and it needs both matrices.</p>
 <p><strong>The $4\times4$ matrix.</strong> The display is computed in §<em>The Kronecker Display</em>:
 $$
-[L_{A}R_{B}]_{\mathcal{P}}=B^{\mathsf T}\otimes A.
+[T_{A,B}]_{\mathcal{P}}=B^{\mathsf T}\otimes A.
 $$
 The operator is determined by the pair; for a nonzero operator, the pair is determined by the operator up to scaling.</p>
 <h3 id="the-scaling">The Scaling</h3>
 <p><strong>The invariance.</strong> For $\lambda\in\mathbb{C}^{\times}$,
 $$
-L_{\lambda A}R_{\lambda^{-1}B}=L_{A}R_{B}.
+T_{\lambda A,\lambda^{-1}B}=T_{A,B}.
 $$
 The scalar passes from one factor to the other, and the operator does not change.</p>
-<p><strong>The uniqueness.</strong> Conversely, if $L_{A}R_{B}=L_{A'}R_{B'}$ and the operator is nonzero, then $(A',B')=(\lambda A,\lambda^{-1}B)$ for some $\lambda\in\mathbb{C}^{\times}$.</p>
+<p><strong>The uniqueness.</strong> Conversely, if $T_{A,B}=T_{A',B'}$ and the operator is nonzero, then $(A',B')=(\lambda A,\lambda^{-1}B)$ for some $\lambda\in\mathbb{C}^{\times}$.</p>
 <p><em>Proof.</em> For the matrix units,
 $$
-L_{A}R_{B}(E_{ij})=A E_{ij}B=a_i b_j^{\mathsf T},\qquad
-L_{A'}R_{B'}(E_{ij})=a'_i (b'_j)^{\mathsf T}.
+T_{A,B}(E_{ij})=A E_{ij}B=a_i b_j^{\mathsf T},\qquad
+T_{A',B'}(E_{ij})=a'_i (b'_j)^{\mathsf T}.
 $$
 Equality for all $i,j$ gives $a'_i(b'_j)^{\mathsf T}=a_i b_j^{\mathsf T}$. Choose $i,j$ with $a_i\neq0$ and $b_j\neq0$; then $a'_i=\lambda a_i$ and $b'_j=\lambda^{-1}b_j$ for one nonzero $\lambda$. Comparing the pairs $(i,l)$ and $(k,j)$ gives $a'_k=\lambda a_k$ and $b'_l=\lambda^{-1}b_l$ for all $k,l$. Hence the pair is the scaling orbit.</p>
 <p><strong>The count.</strong> The pair space has complex dimension eight. The scaling group $\mathbb{C}^{\times}$ acts freely on the nonzero pairs, so the image has complex dimension $8-1=7$. The zero operator is the vertex of the cone, reached by every pair with $A=0$ or $B=0$.</p>
 <h3 id="the-one-sided-members">The One-Sided Members</h3>
-<p><strong>The criterion.</strong> Let $A$ and $B$ be nonzero. The operator $L_{A}R_{B}$ is a left multiplication exactly when $B$ is a scalar matrix, and a right multiplication exactly when $A$ is a scalar matrix.</p>
-<p><em>Proof.</em> If $B=\mu\mathrm I_2$, then $L_{A}R_{B}(Y)=\mu AY=L_{\mu A}(Y)$. If $A=\lambda\mathrm I_2$, then $L_{A}R_{B}(Y)=\lambda YB=R_{\lambda B}(Y)$.</p>
-<p>Conversely, suppose $L_{A}R_{B}=L_C$. At $Y=\mathrm I_2$, $C=AB$. Hence $AYB=ABY$ for all $Y$, that is $A(YB-BY)=0$ for all $Y$. If $A$ is invertible, then $YB=BY$ for all $Y$, so $B$ is scalar. If $A$ is not invertible, then $\ker A$ is a line, and the image of $Y\mapsto YB-BY$ is the commutator space $[M_2(\mathbb{C}),B]$, of dimension two when $B$ is not scalar; it cannot lie in a line. Hence $B$ is scalar. The right case is symmetric.</p>
+<p><strong>The criterion.</strong> Let $A$ and $B$ be nonzero. The operator $T_{A,B}$ is a left multiplication exactly when $B$ is a scalar matrix, and a right multiplication exactly when $A$ is a scalar matrix.</p>
+<p><em>Proof.</em> If $B=\mu\mathrm I_2$, then $T_{A,B}(Y)=\mu AY=L_{\mu A}(Y)$. If $A=\lambda\mathrm I_2$, then $T_{A,B}(Y)=\lambda YB=R_{\lambda B}(Y)$.</p>
+<p>Conversely, suppose $T_{A,B}=L_C$. At $Y=\mathrm I_2$, $C=AB$. Hence $AYB=ABY$ for all $Y$, that is $A(YB-BY)=0$ for all $Y$. If $A$ is invertible, then $YB=BY$ for all $Y$, so $B$ is scalar. If $A$ is not invertible, then $\ker A$ is a line, and the image of $Y\mapsto YB-BY$ is the commutator space $[M_2(\mathbb{C}),B]$, of dimension two when $B$ is not scalar; it cannot lie in a line. Hence $B$ is scalar. The right case is symmetric.</p>
 <p><strong>The copies.</strong> The left copy is the set of pairs $(A,\mathrm I_2)$, and the right copy the set of pairs $(\mathrm I_2,B)$. A pair with a scalar slot is in the scaling orbit of one of these, and the scaling moves the scalar into the other slot without changing the operator. The intersection is the scalar operators, the pairs with both slots scalar.</p>
 <p><strong>The precise sense of one matrix per side.</strong> A one-sided operator is a pair with a scalar in one slot. The scalar can be moved into the other slot by the scaling, so the pair reduces to one matrix. A two-sided operator has no scalar slot; the two matrices are independent, and the pair is the minimal data.</p>
 <h3 id="the-table-of-levels">The Table of Levels</h3>
@@ -207,7 +207,7 @@ Equality for all $i,j$ gives $a'_i(b'_j)^{\mathsf T}=a_i b_j^{\mathsf T}$. Choos
 </tr>
 <tr>
 <td>two-sided</td>
-<td>$L_{A}R_{B}(Y)=AYB$</td>
+<td>$T_{A,B}(Y)=AYB$</td>
 <td>a pair $(A,B)$ modulo scaling</td>
 <td>$B^{\mathsf T}\otimes A$</td>
 <td>$7$ (cone)</td>
@@ -257,24 +257,24 @@ by the mixed-product property. It is the operator.</p>
 <p><strong>The Kronecker product of the $4\times4$ matrices.</strong> The Kronecker product $(\mathrm I_2\otimes A)\otimes(B^{\mathsf T}\otimes\mathrm I_2)$ is $16\times16$, acts on the tensor square of the carrier, and is not the operator. The distinction is the one drawn in <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>, §<em>The Kronecker Question</em>: the ordinary product is the operator, the Kronecker product of the two $2\times2$ matrices is its display, and the Kronecker product of the two $4\times4$ matrices is a different operator on a different space.</p>
 <p><strong>The frame dependence.</strong> The display $B^{\mathsf T}\otimes A$ is a property of the Peirce frame. In the e-basis the same operator is a sum of sixteen signed-permutation cells, and no $2\times2$ block appears; the pair survives, but the frame does not display it. The two articles read the same operator in the two frames, and the pair is the invariant.</p>
 <h3 id="the-coefficient-matrix">The Coefficient Matrix</h3>
-<p><strong>The expansion.</strong> The sixteen products $L_\muR_\nu$ are an orthogonal basis of $M_4(\mathbb{C})$ for the Hilbert–Schmidt inner product, and every matrix has a unique expansion $M=\sum c_{\mu\nu}L_\muR_\nu$. The matrix $c(M)$ is the coefficient matrix. The definition and the length theorem are in the $4\times4$ operators article.</p>
+<p><strong>The expansion.</strong> The sixteen products $T_{\mu\nu}=L_\mu R_\nu$ are an orthogonal basis of $M_4(\mathbb{C})$ for the Hilbert–Schmidt inner product, and every matrix has a unique expansion $M=\sum c_{\mu\nu}T_{\mu\nu}$. The matrix $c(M)$ is the coefficient matrix. The definition and the length theorem are in the $4\times4$ operators article.</p>
 <p><strong>The coefficient matrix of a pair.</strong> If $A=\sum_\mu Q_\mu\mathsf M_2(e_\mu)$ and $B=\sum_\nu P_\nu\mathsf M_2(e_\nu)$, then
 $$
-[L_{A}R_{B}]_{\mathcal{P}}=B^{\mathsf T}\otimes A
-=\sum_{\mu,\nu}Q_\mu P_\nu\,L_\muR_\nu,
+[T_{A,B}]_{\mathcal{P}}=B^{\mathsf T}\otimes A
+=\sum_{\mu,\nu}Q_\mu P_\nu\,T_{\mu\nu},
 $$
 so
 $$
-c(L_{A}R_{B})=[Q][P]^{\mathsf T},
+c(T_{A,B})=[Q][P]^{\mathsf T},
 $$
 the outer product of the two coefficient columns. It has rank at most one; conversely every rank-one coefficient matrix is such an outer product and gives a pair. The pair picture and the coefficient picture are the same statement, one in $2\times2$ matrices and one in the $4\times4$ coefficient matrix.</p>
-<p><strong>The two $4\times4$ matrices.</strong> The coefficient matrix $c(L_{A}R_{B})$ and the operator matrix $[L_{A}R_{B}]_{\mathcal{P}}$ are both $4\times4$, and they are different objects. The first is the matrix of the tensor in the basis $L_\muR_\nu$; the second is the matrix of the operator on the carrier. The first has rank at most one, and rank one when the operator is nonzero; the second has rank $\operatorname{rank}A\cdot\operatorname{rank}B$.</p>
+<p><strong>The two $4\times4$ matrices.</strong> The coefficient matrix $c(T_{A,B})$ and the operator matrix $[T_{A,B}]_{\mathcal{P}}$ are both $4\times4$, and they are different objects. The first is the matrix of the tensor in the basis $T_{\mu\nu}$; the second is the matrix of the operator on the carrier. The first has rank at most one, and rank one when the operator is nonzero; the second has rank $\operatorname{rank}A\cdot\operatorname{rank}B$.</p>
 <p><strong>The length.</strong> By the length theorem, the least number of pairs summing to $M$ is $\operatorname{rank}c(M)$. The pair set is the cone $\operatorname{rank}c\le1$; its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The length is $\ell(M)=\operatorname{rank}c(M)$, and the general endomorphism needs up to four pairs, the subject of §<em>The General Endomorphism</em>.</p>
 <h2 id="the-rank-and-the-invariants">The Rank and the Invariants</h2>
 <h3 id="the-rank-formula">The Rank Formula</h3>
 <p><strong>The theorem.</strong> For all $A,B$,
 $$
-\operatorname{rank}L_{A}R_{B}=\operatorname{rank}A\cdot\operatorname{rank}B.
+\operatorname{rank}T_{A,B}=\operatorname{rank}A\cdot\operatorname{rank}B.
 $$
 The possible values are $0,1,2,4$; a product never has rank three.</p>
 <p><em>Proof.</em> Choose invertible matrices $G,H,K,L$ with
@@ -297,11 +297,11 @@ The $4\times4$ matrix and the $2\times2$ pair have the same rank.</p>
 <h3 id="the-trace-and-the-determinant">The Trace and the Determinant</h3>
 <p><strong>The invariants.</strong> The trace and the determinant of the pair are
 $$
-\operatorname{Tr}L_{A}R_{B}=4Q_tP_t,\qquad
-\det L_{A}R_{B}=\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2.
+\operatorname{Tr}T_{A,B}=4Q_tP_t,\qquad
+\det T_{A,B}=\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2.
 $$</p>
 <p><em>Proof.</em> The $4\times4$ matrix is $B^{\mathsf T}\otimes A$. The trace of a Kronecker product is the product of the traces, and $\operatorname{Tr}A=2Q_t$, $\operatorname{Tr}B=2P_t$. The determinant of a Kronecker product is $\det(B^{\mathsf T})^2\det(A)^2=(\det B)^2(\det A)^2$, and the determinants are the norms.</p>
-<p><strong>The inverse.</strong> If $A$ and $B$ are units, the inverse is $L_{A}R_{B}^{-1}=L_{A^{-1}}R_{B^{-1}}$. If one of them is singular, the rank is at most two and the operator is not invertible.</p>
+<p><strong>The inverse.</strong> If $A$ and $B$ are units, the inverse is $T_{A,B}^{-1}=T_{A^{-1},B^{-1}}$. If one of them is singular, the rank is at most two and the operator is not invertible.</p>
 <h3 id="the-three-examples">The Three Examples</h3>
 <p><strong>The rank one.</strong> For $A=B=E_{11}$, the operator is $Y\mapsto y_{11}E_{11}$; its $4\times4$ matrix is $E_{11}\otimes E_{11}$, the matrix with a single $1$ at the first diagonal entry. The rank is $1\cdot1=1$.</p>
 <p><strong>The rank two.</strong> For $A=\mathrm I_2$ and $B=E_{11}$, the operator is $Y\mapsto YE_{11}$, the right multiplication by $E_{11}$; its matrix is $E_{11}\otimes\mathrm I_2=\operatorname{diag}(1,1,0,0)$. The rank is $2\cdot1=2$.</p>
@@ -311,39 +311,39 @@ $$</p>
 <h3 id="composition">Composition</h3>
 <p><strong>The law.</strong> The composite of two pairs is
 $$
-L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}.
+T_{A,B}T_{C,D}=T_{AC,DB}.
 $$
 <em>Proof.</em> For every $Y$,
 $$
-L_{A}R_{B}\bigl(L_{C}R_{D}(Y)\bigr)=A(CYD)B=(AC)Y(DB).
+T_{A,B}\bigl(T_{C,D}(Y)\bigr)=A(CYD)B=(AC)Y(DB).
 $$
 The second slot reverses the order: the pair multiplies as $(A,B)(C,D)=(AC,DB)$.</p>
-<p><strong>The unit.</strong> The identity is $L_{\mathrm I_2}R_{\mathrm I_2}$. The pair multiplication is associative, and the scaling orbit is preserved: the product of the orbits of $(A,B)$ and $(C,D)$ is the orbit of $(AC,DB)$.</p>
+<p><strong>The unit.</strong> The identity is $T_{\mathrm I_2,\mathrm I_2}$. The pair multiplication is associative, and the scaling orbit is preserved: the product of the orbits of $(A,B)$ and $(C,D)$ is the orbit of $(AC,DB)$.</p>
 <p><strong>The algebra.</strong> The pair multiplication is the multiplication of $M_2(\mathbb{C})\times M_2(\mathbb{C})^{\mathrm{opp}}$: the first factor multiplies in the algebra, the second in the opposite algebra. This is the $2\times2$ form of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$.</p>
 <h3 id="the-inverse">The Inverse</h3>
 <p><strong>The inverse.</strong> If $A$ and $B$ are invertible, then
 $$
-L_{A}R_{B}^{-1}=L_{A^{-1}}R_{B^{-1}},
+T_{A,B}^{-1}=T_{A^{-1},B^{-1}},
 $$
-because $L_{A}R_{B}L_{A^{-1}}R_{B^{-1}}=L_{\mathrm I_2}R_{\mathrm I_2}$.</p>
+because $T_{A,B}T_{A^{-1},B^{-1}}=T_{\mathrm I_2,\mathrm I_2}$.</p>
 <p><strong>The group.</strong> The invertible pairs form $GL_2(\mathbb{C})\times GL_2(\mathbb{C})$, of complex dimension eight. The scaling $\mathbb{C}^{\times}$ is the kernel of the action on the carrier, so the image is a seven-dimensional subgroup of $GL_4(\mathbb{C})$. It is the group of invertible two-sided operators.</p>
 <h3 id="the-automorphisms">The Automorphisms</h3>
-<p><strong>The criterion.</strong> An invertible pair $L_{A}R_{B}$ is an algebra automorphism exactly when $B=A^{-1}$.</p>
+<p><strong>The criterion.</strong> An invertible pair $T_{A,B}$ is an algebra automorphism exactly when $B=A^{-1}$.</p>
 <p><em>Proof.</em> For all $Y,W$,
 $$
-L_{A}R_{B}(Y)L_{A}R_{B}(W)=AYB\,AWB,\qquad
-L_{A}R_{B}(YW)=AYWB.
+T_{A,B}(Y)T_{A,B}(W)=AYB\,AWB,\qquad
+T_{A,B}(YW)=AYWB.
 $$
 The two are equal exactly when $A(Y(BA-\mathrm I_2)W)B=0$ for all $Y,W$, which for invertible $A,B$ is $BA=\mathrm I_2$, that is $B=A^{-1}$.</p>
 <p><strong>The conjugation.</strong> When $B=A^{-1}$, the operator is
 $$
-L_{A}R_{A^{-1}}(Y)=AYA^{-1},
+T_{A,A^{-1}}(Y)=AYA^{-1},
 $$
 conjugation by $A$. Every automorphism of $M_2(\mathbb{C})$ is inner, so the automorphism group is $PGL_2(\mathbb{C})$, of complex dimension three. The pair $(A,A^{-1})$ is determined by $A$ up to scalar, and the scaling orbit is the same automorphism.</p>
 <p><strong>The one-sided case.</strong> A left multiplication $L_A$ is an automorphism only when $A=\mathrm I_2$; the same holds for a right multiplication. The nontrivial automorphisms are genuinely two-sided, and they are the pairs $(A,A^{-1})$.</p>
 <p><strong>The example.</strong> For $A=\operatorname{diag}(2,1)$,
 $$
-L_{A}R_{A^{-1}}(Y)=\begin{pmatrix}2&0\\0&1\end{pmatrix}Y\begin{pmatrix}\tfrac12&0\\0&1\end{pmatrix},
+T_{A,A^{-1}}(Y)=\begin{pmatrix}2&0\\0&1\end{pmatrix}Y\begin{pmatrix}\tfrac12&0\\0&1\end{pmatrix},
 $$
 which fixes the diagonal entries, doubles $y_{12}$ and halves $y_{21}$. The pair is $(A,A^{-1})$, and the scaling orbit $(\lambda A,\lambda^{-1}A^{-1})$ is the same automorphism.</p>
 <h3 id="the-system-of-matrix-units">The System of Matrix Units</h3>
@@ -369,10 +369,10 @@ D_\mu E_{21}D_\mu^{-1}=\mu^{-1}E_{21},\qquad
 D_\mu E_{11}D_\mu^{-1}=E_{11}.
 $$
 The systems with the two idempotents fixed are therefore one orbit of the diagonal torus, of complex dimension one.</p>
-<p><strong>The theorem.</strong> Every system of matrix units is the image of the standard one under an inner automorphism: there is an invertible $G$ with $E'_{ij}=GE_{ij}G^{-1}$ for all $i,j$. A system is the standard system read in another basis: $E'_{11}$ is the projector onto a line along a complementary line, a basis of the two lines conjugates $E_{11}$ to $E'_{11}$, and the two mixed elements are then fixed up to the reciprocal scaling just computed. The operator $L_{G}R_{G^{-1}}$ is the automorphism, and every automorphism of $M_2(\mathbb{C})$ is of that form by §<em>The Automorphisms</em>, so the frame carries no modulus beyond the conjugation.</p>
+<p><strong>The theorem.</strong> Every system of matrix units is the image of the standard one under an inner automorphism: there is an invertible $G$ with $E'_{ij}=GE_{ij}G^{-1}$ for all $i,j$. A system is the standard system read in another basis: $E'_{11}$ is the projector onto a line along a complementary line, a basis of the two lines conjugates $E_{11}$ to $E'_{11}$, and the two mixed elements are then fixed up to the reciprocal scaling just computed. The operator $T_{G,G^{-1}}$ is the automorphism, and every automorphism of $M_2(\mathbb{C})$ is of that form by §<em>The Automorphisms</em>, so the frame carries no modulus beyond the conjugation.</p>
 <p><strong>The consequence for a pair.</strong> A change of frame is a conjugation of the carrier, and it acts on a pair by conjugating the two slots:
 $$
-L_{GAG^{-1}}R_{GBG^{-1}}\bigl(GYG^{-1}\bigr)=G\,L_{A}R_{B}(Y)\,G^{-1}.
+T_{GAG^{-1},GBG^{-1}}\bigl(GYG^{-1}\bigr)=G\,T_{A,B}(Y)\,G^{-1}.
 $$
 The operator therefore has the same trace, the same determinant and the same rank in every system of matrix units, and only its matrix changes, by similarity. This is the reason the formulas of §<em>The Rank and the Invariants</em> may be stated in one frame.</p>
 <p><strong>Two reciprocal scalings, not one.</strong> The pair in §<em>The Scaling</em> and the system here carry the same $\mathbb{C}^{\times}$ in two different roles. On the pair, $(\lambda A,\lambda^{-1}B)$ leaves the operator unchanged: a symmetry of the data. On the frame, $\mu$ leaves the system of products unchanged: a change of basis. Neither is a symmetry of the other, and the formulas are invariant under both.</p>
@@ -400,13 +400,13 @@ $$
 $$
 in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four pairs are the minimum. The transpose is therefore a natural operator that is a sum of four pairs and no fewer.</p>
 <h3 id="the-pair-set-is-not-a-subspace">The Pair Set Is Not a Subspace</h3>
-<p><strong>The example.</strong> The operator $L_{\mathrm I_2}R_{\mathrm I_2}+L_{E_{11}}R_{E_{11}}$ is $Y\mapsto Y+y_{11}E_{11}$. Its coefficient matrix is the sum of the two rank-one matrices $[e_t][e_t]^{\mathsf T}$ and $[\tilde\Pi_+][\tilde\Pi_+]^{\mathsf T}$, where the brackets are the coefficient columns, of rank two; the operator is not a pair.</p>
+<p><strong>The example.</strong> The operator $T_{\mathrm I_2,\mathrm I_2}+T_{E_{11},E_{11}}$ is $Y\mapsto Y+y_{11}E_{11}$. Its coefficient matrix is the sum of the two rank-one matrices $[e_t][e_t]^{\mathsf T}$ and $[\tilde\Pi_+][\tilde\Pi_+]^{\mathsf T}$, where the brackets are the coefficient columns, of rank two; the operator is not a pair.</p>
 <p><strong>The cone.</strong> The pair set is the image of the bilinear map $(A,B)\mapsto B^{\mathsf T}\otimes A$, the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. It is closed under composition, by §<em>Composition</em>, and not under addition. A sum of two pairs need not be a pair, and up to four pairs may be needed for a general endomorphism.</p>
 <h2 id="what-the-pair-buys-and-does-not">What the Pair Buys and Does Not</h2>
 <p><strong>It gives.</strong></p>
 <ul>
 <li>The exact count: one matrix per side, a pair per product, four pairs for the general endomorphism.</li>
-<li>The exact rank formula $\operatorname{rank}L_{A}R_{B}=\operatorname{rank}A\cdot\operatorname{rank}B$.</li>
+<li>The exact rank formula $\operatorname{rank}T_{A,B}=\operatorname{rank}A\cdot\operatorname{rank}B$.</li>
 <li>The composition $(A,B)(C,D)=(AC,DB)$, the inverse, and the automorphism criterion $B=A^{-1}$.</li>
 <li>The Kronecker display $B^{\mathsf T}\otimes A$ and the coefficient matrix $[Q][P]^{\mathsf T}$.</li>
 <li>The seven effective parameters and the scaling orbit, and the reciprocal scaling of a system of matrix units.</li>
@@ -418,7 +418,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 <li>A short description of the general endomorphism: four pairs may be needed, and the tensor rank can be four.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>On $M_2(\mathbb{C})$, an operator is described by a count of $2\times2$ matrices. A left multiplication $L_A(Y)=AY$ is one matrix, a right multiplication $R_B(Y)=YB$ is one matrix, and a two-sided operator $L_{A}R_{B}(Y)=AYB$ is a pair. For a nonzero operator, the pair is unique up to the scaling $(\lambda A,\lambda^{-1}B)$, so the two-sided operators have seven effective complex parameters; the zero operator is the vertex of the cone.</p>
+<p>On $M_2(\mathbb{C})$, an operator is described by a count of $2\times2$ matrices. A left multiplication $L_A(Y)=AY$ is one matrix, a right multiplication $R_B(Y)=YB$ is one matrix, and a two-sided operator $T_{A,B}(Y)=AYB$ is a pair. For a nonzero operator, the pair is unique up to the scaling $(\lambda A,\lambda^{-1}B)$, so the two-sided operators have seven effective complex parameters; the zero operator is the vertex of the cone.</p>
 <p>A pair with a scalar slot is one-sided, and a pair with neither slot scalar is genuinely two-sided. The rank is $\operatorname{rank}A\cdot\operatorname{rank}B$, with values $0,1,2,4$; the trace is $4Q_tP_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2$.</p>
 <p>The $4\times4$ matrix of the pair is the Kronecker product $B^{\mathsf T}\otimes A$, by the vectorisation identity $\operatorname{vec}(AYB)=(B^{\mathsf T}\otimes A)\operatorname{vec}(Y)$. The same matrix is the ordinary product of the left and right matrices $\mathrm I_2\otimes A$ and $B^{\mathsf T}\otimes\mathrm I_2$. The coefficient matrix is the outer product $[Q][P]^{\mathsf T}$, of rank at most one; it is not the operator matrix, which has rank $\operatorname{rank}A\cdot\operatorname{rank}B$.</p>
 <p>The pairs compose by $(A,B)(C,D)=(AC,DB)$, invert by $(A,B)^{-1}=(A^{-1},B^{-1})$, and an invertible pair is an automorphism exactly when $B=A^{-1}$, the inner automorphisms $PGL_2(\mathbb{C})$. The pair set is a cone, not a subspace. A general endomorphism is a sum of at most four pairs, and the transpose is a sum of four pairs and no fewer.</p>
@@ -449,7 +449,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 <td>the right multiplication</td>
 </tr>
 <tr>
-<td>$L_{A}R_{B}(Y)=AYB$</td>
+<td>$T_{A,B}(Y)=AYB$</td>
 <td>the two-sided operator</td>
 </tr>
 <tr>
@@ -485,7 +485,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 <td>the quaternionic norm, $\det A$</td>
 </tr>
 <tr>
-<td>$L_\muR_\nu$</td>
+<td>$T_{\mu\nu}=L_\mu R_\nu$</td>
 <td>the sixteen basis products</td>
 </tr>
 <tr>
@@ -494,7 +494,7 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 </tr>
 <tr>
 <td>$c(M)$</td>
-<td>the coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}((L_\muR_\nu)^{\dagger}M)$</td>
+<td>the coefficient matrix, $c_{\mu\nu}=\frac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$</td>
 </tr>
 <tr>
 <td>$\ell(M)=\operatorname{rank}c(M)$</td>
