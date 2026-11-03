@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{C})$ Pauli Representation : Operators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-pauli-representation-operators"><strong>$M_4(\mathbb{C})$ Pauli Representation : Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The Pauli Representation article computes the left matrix $L(\tilde Q)$ and the right matrix $R(\tilde P)$ of a biquaternion, their product, their trace, their determinant and their values on the six subspaces. This article asks the operator question that follows: which endomorphisms of $\mathbb{B}$ arise from multiplication, what are their matrices inside $M_4(\mathbb{C})$, and how is the matrix algebra organised by the two-sided products?</p>
+<p><strong>The three answers.</strong> The answers sit at three levels.</p>
+<ul>
+<li>A general endomorphism is any matrix in $M_4(\mathbb{C})$. The frame gives a linear isomorphism $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\to M_4(\mathbb{C})$, and every $4\times4$ matrix is the matrix of exactly one operator. The space has sixteen complex dimensions, and a general operator need not be a single product.</li>
+<li>A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$, and the right matrices fill the four-dimensional copy $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$. These are exactly the two subsets of the Pauli Representation article, and their intersection is the scalars.</li>
+<li>A two-sided operator is a product $L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)$. The products fill a seven-dimensional cone in $M_4(\mathbb{C})$, not a subspace, and they are exactly the matrices whose coefficient matrix has rank at most one.</li>
+</ul>
+<p><strong>The matrix side.</strong> The sixteen products $L_{e_\mu}R_{e_\nu}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. The Pauli evaluation writes each of them as a $4\times4$ Kronecker product of two $2\times2$ matrices. One Clifford frame, built from a pair $(\beta,\delta)$ of orthogonal spatial directions, gives five cell multiples and the Clifford relations. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The article records these constructions, and closes with the open questions.</p>
+<p><strong>The result in one line.</strong> Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.</p>
+<p><strong>Boundaries.</strong> The frame and the one-sided matrices are <em>$M_4(\mathbb{C})$ Pauli Representation</em>. The same operators in the canonical frame are <em>$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>. The abstract family is <em>Two-Sided Operators on the Biquaternion Algebra</em>. The ambient endomorphisms are <em>The Endomorphisms of the Biquaternion Algebra</em>. The enveloping algebra is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>. The Hermitian sandwich is Part V and is not treated here.</p>
+<p><strong>Conventions.</strong> The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is the standard Peirce frame
+$$
+\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),\qquad
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
+$$
+and a matrix written without a superscript is in this frame. The coefficient coordinates are $(t,x,y,z)$. The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of $\mathsf M_2(\tilde Q)$, the natural conjugate is $\tilde Q^{\natural}=Q_t-\vec Q$, and the Hermitian conjugate is $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. The $2\times2$ model is $\mathsf M_2(\tilde Q)$, with
+$$
+\mathsf M_2(e_t)=\mathrm I_2,\qquad
+\mathsf M_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+\mathsf M_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf M_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+$$
+and the Pauli matrices are
+$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+$$
+so that $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, $\operatorname{tr}\mathsf M_2(\tilde Q)=2Q_t$. The exchange $\mathsf S$ is the permutation of the second and third coordinates; in the frame it satisfies
+$$
+R(\tilde Q)=\mathsf S\,L(\tilde Q)^{\mathsf T}\mathsf S^{-1}.
+$$</p>
+<h2 id="the-three-correspondences">The Three Correspondences</h2>
+<p><strong>The ambient space.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis above. Its complex dimension is four, and $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is the algebra $M_4(\mathbb{C})$ of complex dimension sixteen. Every endomorphism is written in the frame $\mathcal{P}$. The left matrix is $L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and the right matrix is $R(\tilde P)=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathrm I_2$; the two are the operators of left and right multiplication on $\mathbb{B}$.</p>
+<p><strong>General endomorphisms.</strong> Fixing the frame gives a linear isomorphism
+$$
+\operatorname{End}_{\mathbb{C}}(\mathbb{B})\longrightarrow M_4(\mathbb{C}),\qquad
+M\longmapsto [M]_{\mathcal{P}},
+$$
+and it is an isomorphism of algebras. Every $4\times4$ matrix is the matrix of exactly one endomorphism, and every endomorphism has exactly one matrix in the frame. The level is the whole ambient space, of sixteen complex dimensions. A general matrix need not be a left multiplication, a right multiplication or a two-sided product; the product set is the subject of the rest of the article.</p>
+<p><strong>One-sided operators.</strong> The left multiplications fill the image
+$$
+\mathbb{B}_L=\{L(\tilde Q):\tilde Q\in\mathbb{B}\}
+=\{\mathrm I_2\otimes A:A\in M_2(\mathbb{C})\},
+$$
+and the right multiplications fill
+$$
+\mathbb{B}_R=\{R(\tilde P):\tilde P\in\mathbb{B}\}
+=\{B^{\mathsf T}\otimes\mathrm I_2:B\in M_2(\mathbb{C})\}.
+$$
+These are exactly the two four-dimensional subsets of the Pauli Representation article. Each is a subalgebra: $\mathbb{B}_L\cong\mathbb{B}$ and $\mathbb{B}_R\cong\mathbb{B}^{\mathrm{opp}}$. Their intersection is the line of scalars $\mathbb{C}\cdot\mathrm I_4$, and each is the commutant of the other.</p>
+<p><strong>Two-sided operators.</strong> The product of a left and a right multiplication is the operator
+$$
+L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P),\qquad
+L_{\tilde Q}R_{\tilde P}(X)=\tilde QX\tilde P .
+$$
+The two factors commute, so $L_{\tilde Q}R_{\tilde P}=R(\tilde P)L(\tilde Q)$ as well. The pair $(\tilde Q,\tilde P)$ has eight complex parameters, and the scaling $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$ leaves the operator unchanged, so the image has seven effective parameters. The image is a cone, not a subspace. It is exactly the set of matrices whose coefficient matrix has rank at most one.</p>
+<p><strong>The table.</strong> The three levels and the two one-sided copies are collected in one table. The coefficient matrix is defined in §<em>The Coefficient Matrix $c(M)$</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Operator</th>
+<th>Subset of $M_4(\mathbb{C})$</th>
+<th>Complex dimension</th>
+<th>Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>general endomorphism</td>
+<td>$M$</td>
+<td>all of $M_4(\mathbb{C})$</td>
+<td>$16$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>one-sided left</td>
+<td>$L(\tilde Q)$</td>
+<td>$\{\mathrm I_2\otimes A\}$</td>
+<td>$4$</td>
+<td>two equal diagonal blocks</td>
+</tr>
+<tr>
+<td>one-sided right</td>
+<td>$R(\tilde P)$</td>
+<td>$\{B^{\mathsf T}\otimes\mathrm I_2\}$</td>
+<td>$4$</td>
+<td>scalar blocks</td>
+</tr>
+<tr>
+<td>intersection of the one-sided copies</td>
+<td>$\lambda\mathrm I_4$</td>
+<td>the scalars</td>
+<td>$1$</td>
+<td>both conditions</td>
+</tr>
+<tr>
+<td>two-sided</td>
+<td>$L_{\tilde Q}R_{\tilde P}$</td>
+<td>$\{\operatorname{rank}c(M)\le1\}$</td>
+<td>$7$ (cone)</td>
+<td>rank-one coefficient matrix</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the answer to the operator question. The general level is the whole space; the one-sided levels are two linear subspaces; the two-sided level is a cone inside the whole space, of dimension seven.</p>
+<h2 id="the-one-sided-operators">The One-Sided Operators</h2>
+<p><strong>The left copy.</strong> The left matrix is
+$$
+L(\tilde Q)=\mathrm I_2\otimes A=\operatorname{diag}(A,A),\qquad
+A=\mathsf M_2(\tilde Q).
+$$
+Its image is the four-dimensional subalgebra $\mathbb{B}_L$. The composition law is $L(\tilde Q)L(\tilde R)=L(\tilde Q\tilde R)$, and the map $\tilde Q\mapsto L(\tilde Q)$ is injective. The rank is $2\operatorname{rank}A$, the trace is $2\operatorname{Tr}A=4Q_t$, and the determinant is $(\det A)^2=\langle\tilde Q\rangle_{\natural}^2$. The four basis matrices $L_{e_\mu}$ are the images of the four units, and they are the four matrices of the Pauli Representation article.</p>
+<p><strong>The four left matrices.</strong> Each is the image of a unit under the left matrix map, in the canonical frame,
+$$
+L_{e_t}=\mathsf{M}_4^{L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{\vec e_x}=\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+$$
+$$
+L_{\vec e_y}=\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{\vec e_z}=\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
+$$
+and a general element is $L(\tilde Q)=Q_tL_{e_t}+Q_xL_{\vec e_x}+Q_yL_{\vec e_y}+Q_zL_{\vec e_z}$. In the Pauli form $L_{e_t}=\mathrm I_2\otimes\mathrm I_2$ and $L_{\vec e_k}=-i\,\mathrm I_2\otimes\sigma_k$.</p>
+<p><strong>The right copy.</strong> The right matrix is
+$$
+R(\tilde P)=B^{\mathsf T}\otimes\mathrm I_2,\qquad
+B=\mathsf M_2(\tilde P),
+$$
+a block matrix whose four blocks are scalar multiples of $\mathrm I_2$. Its image is the four-dimensional subalgebra $\mathbb{B}_R$. The composition law is anti-multiplicative, $R(\tilde P)R(\tilde S)=R(\tilde S\tilde P)$, and the map $\tilde P\mapsto R(\tilde P)$ is injective. The rank is $2\operatorname{rank}B$, the trace is $2\operatorname{Tr}B=4P_t$, and the determinant is $(\det B)^2=\langle\tilde P\rangle_{\natural}^2$. The four basis matrices $R_{e_\mu}$ are the images of the four units.</p>
+<p><strong>The four right matrices.</strong> Each is the image of a unit under the right matrix map,
+$$
+R_{e_t}=\mathsf{M}_4^{R}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+R_{\vec e_x}=\mathsf{M}_4^{R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+$$
+$$
+R_{\vec e_y}=\mathsf{M}_4^{R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+R_{\vec e_z}=\mathsf{M}_4^{R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
+$$
+In the Pauli form $R_{e_t}=\mathrm I_4$, $R_{\vec e_x}=-i\,\sigma_1\otimes\mathrm I_2$, $R_{\vec e_y}=+i\,\sigma_2\otimes\mathrm I_2$ and $R_{\vec e_z}=-i\,\sigma_3\otimes\mathrm I_2$. The signs differ from those of the left family because the transpose exchanges $\sigma_2$ with $-\sigma_2$ and fixes $\sigma_1,\sigma_3$.</p>
+<p><strong>The exchange.</strong> The two copies are exchanged by the transpose and the permutation $\mathsf S$ of the second and third coordinates:
+$$
+R(\tilde Q)=\mathsf S\,L(\tilde Q)^{\mathsf T}\mathsf S^{-1},\qquad
+L(\tilde Q)=\mathsf S\,R(\tilde Q)^{\mathsf T}\mathsf S^{-1}.
+$$
+The two identities are the frame form of the stitch between the left and the right. They will be used for the entry $L_{\vec e_x}R_{\vec e_y}$ and for the basis matrices. The subscript names the action, not the tensor slot: in this frame the left copy is the second factor and the right copy the first. The matrix of the exchange is
+$$
+\mathsf S=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+$$
+symmetric and involutive, $\mathsf S^{\mathsf T}=\mathsf S=\mathsf S^{-1}$, of trace $2$ and determinant $-1$. In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$.</p>
+<p><strong>The intersection.</strong> A matrix that is both block-diagonal with two equal blocks and block-scalar with four scalar blocks is a scalar matrix:
+$$
+\mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\cdot\mathrm I_4 .
+$$
+The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy; the two copies are mutual centralisers. The intersection is the centre of each.</p>
+<p><strong>The commutant of one element.</strong> The two copies are the commutants of each other; the commutant of a single matrix is smaller. For a non-scalar element, the commutant of $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ in $M_4(\mathbb{C})$ is
+$$
+M_2(\mathbb{C})\otimes\mathbb{C}\bigl[\mathsf M_2(\tilde Q)\bigr],
+$$
+of complex dimension $2\cdot4=8$: the first slot is free, and the second is spanned by $\mathrm I_2$ and the matrix itself, by Cayley–Hamilton. For a scalar element the commutant is all of $M_4(\mathbb{C})$, of dimension sixteen. The minimal polynomial is the one of the entry matrix in both cases, of degree two, and it does not square: the regular matrix is never nonderogatory, although its characteristic polynomial has degree four.</p>
+<p><strong>The compression.</strong> In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of <em>$M_2(\mathbb{C})$ Pauli Representation : Operators</em>.</p>
+<p><strong>The general level.</strong> A matrix of $M_4(\mathbb{C})$ that is neither in $\mathbb{B}_L$ nor in $\mathbb{B}_R$ is still an endomorphism, and the frame gives its matrix. Such a matrix is a sum of two-sided products, but not necessarily a single one. The next sections compute the sixteen basis matrices of the product family, then measure how far a general matrix is from being a single product, through the coefficient matrix.</p>
+<h2 id="the-sixteen-matrices-math134">The Sixteen Matrices $L_{e_\mu}R_{e_\nu}$</h2>
+<h3 id="the-table-in-four-families">The Table in Four Families</h3>
+<p><strong>Definition.</strong> For $\mu,\nu\in\{t,x,y,z\}$ put
+$$
+L_{e_\mu}=L(e_\mu),\qquad
+R_{e_\nu}=R(e_\nu),\qquad
+L_{e_\mu}R_{e_\nu}=L_{e_\mu} R_{e_\nu}.
+$$
+The matrix $L_{e_\mu}R_{e_\nu}$ is the matrix of $X\mapsto e_\mu Xe_\nu$. A general two-sided operator is the linear combination
+$$
+L_{\tilde Q}R_{\tilde P}=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu}.
+$$</p>
+<p><strong>The table.</strong> The sixteen matrices fall into four families.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$L_{e_\mu}R_{e_\nu}$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$L_{e_t}R_{e_t}=\mathrm I_4$</td>
+<td>$L_{e_t}R_{\vec e_x}=R_{\vec e_x}$</td>
+<td>$L_{e_t}R_{\vec e_y}=R_{\vec e_y}$</td>
+<td>$L_{e_t}R_{\vec e_z}=R_{\vec e_z}$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$L_{\vec e_x}R_{e_t}=L_{\vec e_x}$</td>
+<td>$L_{\vec e_x}R_{\vec e_x}$</td>
+<td>$L_{\vec e_x}R_{\vec e_y}$</td>
+<td>$L_{\vec e_x}R_{\vec e_z}$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$L_{\vec e_y}R_{e_t}=L_{\vec e_y}$</td>
+<td>$L_{\vec e_y}R_{\vec e_x}$</td>
+<td>$L_{\vec e_y}R_{\vec e_y}$</td>
+<td>$L_{\vec e_y}R_{\vec e_z}$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$L_{\vec e_z}R_{e_t}=L_{\vec e_z}$</td>
+<td>$L_{\vec e_z}R_{\vec e_x}$</td>
+<td>$L_{\vec e_z}R_{\vec e_y}$</td>
+<td>$L_{\vec e_z}R_{\vec e_z}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each row is labelled by its left unit and each column by its right unit, so each entry is the product of the two labels, left factor first. The first row is the right family, the first column the left family, the diagonal entry $L_{e_t}R_{e_t}$ the identity, and the remaining nine the genuinely two-sided cells. The table is the matrix form of the four families of <em>Two-Sided Operators on the Biquaternion Algebra</em>, §<em>The Operator $L_{\tilde Q}R_{\tilde P}$</em>.</p>
+<h3 id="the-sixteen-entry-by-entry">The Sixteen, Entry by Entry</h3>
+<p><strong>The display.</strong> In the Peirce frame, grouped by the left index $\mu$,
+$$
+L_{e_t}R_{e_t}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{e_t}R_{\vec e_x}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+$$
+$$
+L_{e_t}R_{\vec e_y}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{e_t}R_{\vec e_z}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
+$$
+$$
+L_{\vec e_x}R_{e_t}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+L_{\vec e_x}R_{\vec e_x}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+$$
+$$
+L_{\vec e_x}R_{\vec e_y}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix},\qquad
+L_{\vec e_x}R_{\vec e_z}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
+$$
+$$
+L_{\vec e_y}R_{e_t}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{\vec e_y}R_{\vec e_x}=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
+$$
+$$
+L_{\vec e_y}R_{\vec e_y}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+L_{\vec e_y}R_{\vec e_z}=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
+$$
+$$
+L_{\vec e_z}R_{e_t}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+L_{\vec e_z}R_{\vec e_x}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+$$
+$$
+L_{\vec e_z}R_{\vec e_y}=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
+L_{\vec e_z}R_{\vec e_z}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+$$</p>
+<p><strong>The pattern.</strong> Each matrix has four nonzero entries, one in each row and each column, and every nonzero entry is $\pm1$ or $\pm i$. The first row and the first column are the four left and the four right matrices; the nine remaining entries are the genuinely two-sided cells. The display is the matrix form of the sixteen products $L_{e_\mu}R_{e_\nu}$ of <em>Matrix Representations Conventions</em>, §<em>The 4×4 Regular Representation</em>.</p>
+<p><strong>The Pauli evaluation on the families.</strong> With $\mathsf M_2(e_t)=\mathrm I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
+$$
+L_{e_t}R_{e_t}=\mathrm I_4,\qquad
+L_{e_t}R_{\vec e_k}=-i\,\sigma_k^{\mathsf T}\otimes\mathrm I_2,\qquad
+L_{\vec e_k}R_{e_t}=-i\,\mathrm I_2\otimes\sigma_k,\qquad
+L_{\vec e_j}R_{\vec e_k}=-\sigma_k^{\mathsf T}\otimes\sigma_j,
+$$
+with $j,k\in\{x,y,z\}$. The first family is the identity, the second the right copy, the third the left copy, and the fourth the nine genuinely two-sided cells. The evaluation is a $4\times4$ Kronecker product of two $2\times2$ matrices; §<em>The Kronecker Question</em> separates it from the $16\times16$ Kronecker product of two $4\times4$ matrices.</p>
+<p><strong>One entry.</strong> The table gives $L_{\vec e_x}R_{\vec e_y}=L_{\vec e_x}\mathsf S\,(L_{\vec e_y})^{\mathsf T}\mathsf S^{-1}$,
+$$
+L_{\vec e_x}R_{\vec e_y}=
+\begin{pmatrix}
+0&0&0&-i\\
+0&0&-i&0\\
+0&i&0&0\\
+i&0&0&0
+\end{pmatrix},
+$$
+whose first column is the coordinate column of $\vec e_x\tilde\Pi_+\vec e_y=i\tilde\Pi_-$. The entry is the check that the family rule and the exchange agree.</p>
+<p><strong>The basis.</strong> The sixteen matrices are linearly independent and span $M_4(\mathbb{C})$, by the orthogonality theorem of §<em>Orthogonality</em> and the dimension count. The span of the products is the whole algebra: the generation theorem of <em>Two-Sided Operators on the Biquaternion Algebra</em>, §<em>The Sixteen Products as a Basis</em>, read in this frame. The expansion of a general matrix in this basis is unique, and the coefficient matrix is the subject of §<em>The Cone of Products</em>.</p>
+<h3 id="composition-trace-determinant">Composition, Trace, Determinant</h3>
+<p><strong>Composition.</strong> The product of two basis matrices is a signed basis matrix:
+$$
+L_{e_\mu}R_{e_\nu}L_{e_\rho}R_{e_\sigma}=\epsilon\epsilon'\,L_{e_\mu'}R_{e_\nu'},
+$$
+where $e_\mu e_\rho=\epsilon e_{\mu'}$ and $e_\sigma e_\nu=\epsilon' e_{\nu'}$, with $\epsilon,\epsilon'\in\{\pm1\}$. For general parameters,
+$$
+L_{\tilde Q}R_{\tilde P}L_{\tilde R}R_{\tilde S}=L_{\tilde Q\tilde R}R_{\tilde S\tilde P}.
+$$
+The sixteen are closed under multiplication up to sign, with unit $L_{e_t}R_{e_t}=\mathrm I_4$; they are not a group, because $-L_{e_\mu}R_{e_\nu}$ is not one of the sixteen. The full product family contains the signs, since $-L_{e_\mu}R_{e_\nu}=L_{-e_\mu}R_{e_\nu}$.</p>
+<p><strong>Trace and determinant.</strong> For $\tilde Q,\tilde P$ with $\langle\tilde Q\rangle_{\natural}\langle\tilde P\rangle_{\natural}\neq0$,
+$$
+\operatorname{Tr}L_{\tilde Q}R_{\tilde P}=4\,Q_tP_t,\qquad
+\det L_{\tilde Q}R_{\tilde P}=\langle\tilde Q\rangle_{\natural}^{2}\langle\tilde P\rangle_{\natural}^{2},
+\qquad
+(L_{\tilde Q}R_{\tilde P})^{-1}=L_{\tilde Q^{-1}}R_{\tilde P^{-1}}.
+$$
+<em>Proof.</em> In the Pauli evaluation $L_{\tilde Q}R_{\tilde P}=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q)$. The trace of a Kronecker product is the product of the traces, $\operatorname{Tr}\mathsf M_2(\tilde P)^{\mathsf T}=2P_t$ and $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$; the determinant is $\det(\mathsf M_2(\tilde P))^{2}\det(\mathsf M_2(\tilde Q))^{2}$, and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. The inverse is the inverse of each factor.</p>
+<p><strong>The basis values.</strong> Every basis matrix is invertible, of determinant $1$ and rank $4$; the trace is $4$ only for $L_{e_t}R_{e_t}$ and $0$ for the other fifteen. The basis consists of units, but its span does not: for example
+$$
+L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}=\mathrm I_4+L_{\vec e_x}R_{\vec e_x}=
+\begin{pmatrix}
+1&0&0&-1\\
+0&1&-1&0\\
+0&-1&1&0\\
+-1&0&0&1
+\end{pmatrix}
+$$
+has rank two. A basis of invertible matrices does not make the algebra a division algebra; the algebra is $M_4(\mathbb{C})$ and has many zero divisors.</p>
+<h3 id="orthogonality">Orthogonality</h3>
+<p><strong>Theorem (orthogonality).</strong> For the Hilbert–Schmidt inner product $\langle A,B\rangle=\operatorname{Tr}(A^{\dagger}B)$,
+$$
+\operatorname{Tr}\bigl((L_{e_\mu}R_{e_\nu})^{\dagger}L_{e_\rho}R_{e_\sigma}\bigr)=4\,\delta_{\mu\rho}\,\delta_{\nu\sigma}.
+$$
+The sixteen basis matrices are orthogonal, each of Hilbert–Schmidt norm $2$.</p>
+<p><em>Proof.</em> In the Pauli evaluation, $L_{e_\mu}R_{e_\nu}=\mathsf M_2(e_\nu)^{\mathsf T}\otimes\mathsf M_2(e_\mu)$. The Hilbert–Schmidt inner product of two Kronecker products is the product of the inner products of the factors. In the $2\times2$ model the four matrices $\mathsf M_2(e_\mu)$ are orthogonal of norm $\sqrt2$, because $\mathsf M_2(e_\mu)=-i\sigma_\mu$ for $\mu=x,y,z$ and $\mathsf M_2(e_t)=\mathrm I_2$; hence the product is $2\cdot2=4$ exactly when both indices agree, and $0$ otherwise.</p>
+<p><strong>The coefficient formula.</strong> If $M=\sum c_{\mu\nu}L_{e_\mu}R_{e_\nu}$, then orthogonality gives
+$$
+c_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((L_{e_\mu}R_{e_\nu})^{\dagger}M\bigr).
+$$
+The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself. It is the coordinate chart used in §<em>The Cone of Products</em>.</p>
+<p><strong>The coefficient basis.</strong> In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same sixteen are signed permutation matrices, the conjugates $C_{\Pi}L_{e_\mu}R_{e_\nu}C_{\Pi}^{-1}$ by the Peirce change of <em>Matrix Representations Conventions</em>; in the Peirce frame they are the products of a left matrix and a right matrix. The conjugation changes the entries, not the algebra; the Peirce frame is the display in which the Clifford construction closes.</p>
+<h2 id="the-kronecker-question">The Kronecker Question</h2>
+<h3 id="the-pauli-evaluation">The Pauli Evaluation</h3>
+<p><strong>The two one-sided evaluations.</strong> In the $2\times2$ model,
+$$
+L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q),\qquad
+R(\tilde P)=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathrm I_2.
+$$
+The first factor of $L(\tilde Q)$ is the copy index, the second the spinor index; the right matrix acts on the copy index and is the transpose of the left matrix of $\tilde P$, in the exchanged frame. The product is
+$$
+L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)
+=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q).
+$$</p>
+<p><strong>On the basis.</strong> The evaluation reproduces the four family formulas of §<em>The Table in Four Families</em>: the identity, the right copy, the left copy and the nine cells. It is a $4\times4$ matrix, the Kronecker product of two $2\times2$ matrices, and it is the ordinary product $L(\tilde Q)R(\tilde P)$ written in the model.</p>
+<h3 id="why-the-math240-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
+<p><strong>The dimensions.</strong> $L(\tilde Q)$ and $R(\tilde P)$ are $4\times4$ matrices. Their Kronecker product $L(\tilde Q)\otimes R(\tilde P)$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a complex space of dimension sixteen; the operator $L_{\tilde Q}R_{\tilde P}$ acts on $\mathbb{B}\cong\mathbb{C}^4$, of complex dimension four. The two cannot be the same matrix, and the $16\times16$ matrix does not represent the operator on the carrier.</p>
+<p><strong>The correct product.</strong> The matrix of the operator is the ordinary product $L(\tilde Q)R(\tilde P)$, of size $4\times4$. The algebra-level construction is the tensor product of algebras
+$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
+\tilde Q\otimes\tilde P^{\mathrm{opp}}\longmapsto L(\tilde Q)R(\tilde P),
+$$
+with $\mathbb{B}^{\mathrm{opp}}$ the opposite algebra (the reversed product); the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ map to the sixteen matrices $L_{e_\mu}R_{e_\nu}$. The Kronecker product of the matrices is a different construction: it is the matrix of the tensor product of the two operators on the tensor product of the carriers, not the matrix of their composite on one carrier.</p>
+<p><strong>The three products.</strong> The ordinary product $L(\tilde Q)R(\tilde P)$ is $4\times4$ and is the operator. The Kronecker product of two $2\times2$ matrices is $4\times4$ and is the evaluation of the ordinary product in the model $\mathbb{B}\cong M_2(\mathbb{C})$. The Kronecker product of two $4\times4$ matrices is $16\times16$ and is neither. The three are related by the identifications of the model, not by an equality of matrices.</p>
+<p><strong>The two displays.</strong> The Peirce frame is the canonical frame of the Pauli Representation article, and the Pauli evaluation is its display. The coefficient basis, reached by the Peirce change $C_{\Pi}$, is the conjugate display: the sixteen are signed permutation matrices, and a general endomorphism is an arbitrary matrix. Neither display changes the operator; the frame changes the entries, the basis changes the coordinates, and the algebra stays $M_4(\mathbb{C})$.</p>
+<h2 id="the-dirac-operator-of-the-frame">The Dirac Operator of the Frame</h2>
+<p><strong>The operator.</strong> With $\partial_\mu=\partial/\partial Q_\mu$,
+$$
+D=-\bigl(L_{e_t}R_{\vec e_x}\partial_0+L_{\vec e_x}R_{\vec e_y}\partial_1+L_{\vec e_y}R_{\vec e_y}\partial_2+L_{\vec e_z}R_{\vec e_y}\partial_3\bigr).
+$$
+On $\tilde Q\in\mathbb{B}$,
+$$
+\tilde Q\longmapsto-\bigl(\partial_0\tilde Q\,\vec e_x+\vec e_x\,\partial_1\tilde Q\,\vec e_y+\vec e_y\,\partial_2\tilde Q\,\vec e_y+\vec e_z\,\partial_3\tilde Q\,\vec e_y\bigr).
+$$
+The mass term is $-mL_tR_t$. For a momentum $p$, the same operator reads
+$$
+D(p)=i\bigl((L_{e_t}R_{\vec e_x}p_t+L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)\bigr),
+$$
+so the frame is visible in the formula: another pair $(\beta,\delta)$ replaces the four cells by four single products spread over several cells. This is the matrix Dirac operator of the frame; it is not the biquaternionic gradient $\tilde\nabla$, which is a left multiplication. The dictionary relates the two; it does not identify them as operators on the same carrier.</p>
+<h2 id="the-cone-of-products">The Cone of Products</h2>
+<h3 id="the-factorization-map">The Factorization Map</h3>
+<p><strong>The map.</strong> The assignment
+$$
+\Phi:\mathbb{B}\times\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
+\Phi(\tilde Q,\tilde P)=L_{\tilde Q}R_{\tilde P}
+$$
+is the factorisation map. Its image is the set of two-sided operators, and this section records what the factorisation does and does not imply.</p>
+<p><strong>Bilinearity.</strong> The map is complex-bilinear, not complex-linear:
+$$
+L_{a\tilde Q+b\tilde Q'}R_{\tilde P}=aL_{\tilde Q}R_{\tilde P}+bL_{\tilde Q'}R_{\tilde P},\qquad
+L_{\tilde Q}R_{a\tilde P+b\tilde P'}=aL_{\tilde Q}R_{\tilde P}+bL_{\tilde Q}R_{\tilde P'}.
+$$
+Consequently the image is a cone, not a subspace: for $\lambda\in\mathbb{C}$,
+$$
+\lambda L_{\tilde Q}R_{\tilde P}=L_{\lambda\tilde Q}R_{\tilde P}=L_{\tilde Q}R_{\lambda\tilde P}.
+$$</p>
+<p><strong>The scaling orbit.</strong> For $\lambda\in\mathbb{C}^{\times}$,
+$$
+L_{\lambda\tilde Q}R_{\lambda^{-1}\tilde P}=L_{\tilde Q}R_{\tilde P}.
+$$
+The group $\mathbb{C}^{\times}$ acts on $\mathbb{B}\times\mathbb{B}$ by $(\tilde Q,\tilde P)\mapsto(\lambda\tilde Q,\lambda^{-1}\tilde P)$, and the factorisation map is constant on every orbit.</p>
+<p><strong>The zero set.</strong> The product vanishes exactly when one parameter vanishes:
+$$
+L_{\tilde Q}R_{\tilde P}=0\iff \tilde Q=0\ \text{or}\ \tilde P=0 .
+$$
+If both are nonzero, write $A=\mathsf M_2(\tilde Q)$ and $B=\mathsf M_2(\tilde P)$. Choose indices $a,b,c,d$ with $A_{ab}\neq0$ and $B_{cd}\neq0$, and take the matrix unit $E_{bc}$; then
+$$
+(AE_{bc}B)_{ad}=A_{ab}B_{cd}\neq0,
+$$
+so the operator is nonzero. The zero operator is the image of every pair with a zero parameter, and it is the vertex of the cone.</p>
+<p><strong>The two slots.</strong> With the other parameter a unit, the map is injective in each slot:
+$$
+L_{\tilde Q}R_{e_t}=L(\tilde Q),\qquad
+L_{e_t}R_{\tilde P}=R(\tilde P).
+$$
+The first is the left copy, the second the right copy, and both parametrisations are injective. More generally, $L_{\tilde Q}R_{\tilde P}(e_t)=\tilde Q\tilde P$; if $\tilde P$ is a unit, $\tilde Q$ is recovered from this value, and if $\tilde Q$ is a unit, $\tilde P$ is recovered.</p>
+<p><strong>The fibres.</strong> For a nonzero product the fibre of the factorisation map is exactly one scaling orbit:
+$$
+L_{\tilde Q}R_{\tilde P}=L_{\tilde R}R_{\tilde S}
+\iff
+\tilde R=\lambda\tilde Q,\quad
+\tilde S=\lambda^{-1}\tilde P
+\quad\text{for some }\lambda\in\mathbb{C}^{\times}.
+$$
+Suppose all four parameters are nonzero and $L_{\tilde Q}R_{\tilde P}=L_{\tilde R}R_{\tilde S}$. Write $A=\mathsf M_2(\tilde Q)$, $B=\mathsf M_2(\tilde P)$, $C=\mathsf M_2(\tilde R)$, $D=\mathsf M_2(\tilde S)$. In the matrix model, $AXB=CXD$ for every $X\in M_2(\mathbb{C})$. On the matrix units $X=E_{ij}$ this reads $A_{ki}B_{jl}=C_{ki}D_{jl}$ for all $i,j,k,l$. Choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and $(j_0,l_0)$ with $B_{j_0l_0}\neq0$, and put $\lambda=C_{k_0i_0}/A_{k_0i_0}$. The identity with $i=i_0$ and $k=k_0$ gives $D_{jl}=\lambda^{-1}B_{jl}$ for all $j,l$; the identity with $j=j_0$ and $l=l_0$ gives $C_{ki}=\lambda A_{ki}$ for all $k,i$. Hence $C=\lambda A$ and $D=\lambda^{-1}B$, which is the claimed orbit. The converse is the scaling identity.</p>
+<p><strong>The dimension.</strong> The parameter space has complex dimension eight. The generic fibre has complex dimension one, so the image has complex dimension
+$$
+8-1=7.
+$$
+The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde P=0$ collapse. The image is the seven-dimensional cone of the next subsections.</p>
+<h3 id="the-coefficient-matrix-math326">The Coefficient Matrix $c(M)$</h3>
+<p><strong>Definition.</strong> By §<em>The Sixteen Matrices $L_{e_\mu}R_{e_\nu}$</em>, every $M\in M_4(\mathbb{C})$ has a unique expansion
+$$
+M=\sum_{\mu,\nu}c_{\mu\nu}L_{e_\mu}R_{e_\nu}.
+$$
+The $4\times4$ matrix $c(M)=(c_{\mu\nu})$ is the <strong>coefficient matrix</strong> of $M$. Orthogonality gives it directly:
+$$
+c(M)_{\mu\nu}=\tfrac14\operatorname{Tr}\bigl((L_{e_\mu}R_{e_\nu})^{\dagger}M\bigr).
+$$
+The map $M\mapsto c(M)$ is a linear isomorphism of $M_4(\mathbb{C})$ onto itself.</p>
+<p><strong>The coordinate column.</strong> For $\tilde Q\in\mathbb{B}$ write $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ for the column of its coefficients in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.</p>
+<p><strong>The expansion of a product.</strong> If $M=L_{\tilde Q}R_{\tilde P}$, then
+$$
+M=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
+$$
+so $c(M)=[Q][P]^{\mathsf T}$. The coefficient matrix of a product is a rank-one matrix, and every rank-one matrix arises this way. This is the source of the criterion of §<em>The Criterion for a Single Product</em>.</p>
+<h3 id="the-length-math342">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
+<p><strong>Definition.</strong> The <strong>length</strong> $\ell(M)$ is the least $r\ge0$ such that $M$ is a sum of $r$ products; $\ell(0)=0$.</p>
+<p><strong>Theorem (length is the rank).</strong> For every $M\in M_4(\mathbb{C})$,
+$$
+\ell(M)=\operatorname{rank}c(M).
+$$</p>
+<p><em>Proof.</em> If $M=\sum_{i\le r}L_{\tilde Q_i}R_{\tilde P_i}$, then $c(M)=\sum_{i\le r}[Q_i][P_i]^{\mathsf T}$ is a sum of $r$ rank-one matrices, so $\operatorname{rank}c(M)\le r$ and $\ell(M)\ge\operatorname{rank}c(M)$. Conversely, let $\operatorname{rank}c=r$ and factor $c=UV$ with $U$ of size $4\times r$ and $V$ of size $r\times4$; the $i$-th column of $U$ is $[Q_i]$ and the $i$-th row of $V$ is $[P_i]^{\mathsf T}$, so $M=\sum_{i\le r}L_{\tilde Q_i}R_{\tilde P_i}$ and $\ell(M)\le r$.</p>
+<p><strong>The count.</strong> Every matrix is a sum of at most four products; $\ell(M)=4$ exactly when $\det c(M)\neq0$. The condition $\det c(M)\neq0$ is open and dense, so a generic matrix needs four products and none needs five.</p>
+<h3 id="the-criterion-for-a-single-product">The Criterion for a Single Product</h3>
+<p><strong>Theorem (the product criterion).</strong> Let $M\in M_4(\mathbb{C})$ and $c=c(M)$. Then
+$$
+M=L_{\tilde Q}R_{\tilde P}\ \text{for some }\tilde Q,\tilde P
+\iff c=[Q][P]^{\mathsf T}
+\iff \operatorname{rank}c\le1.
+$$
+For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.</p>
+<p><em>Proof.</em> The first equivalence is §<em>The Coefficient Matrix $c(M)$</em>. The second is the rank-one criterion: a matrix is $[Q][P]^{\mathsf T}$ exactly when it has rank at most one, and the zero matrix is the case $Q=0$ or $P=0$.</p>
+<p><strong>The cone.</strong> The product set is the closed algebraic cone $\{M:\operatorname{rank}c(M)\le1\}$, cut out by the $2\times2$ minors of $c(M)$. Its projectivisation is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension six; the cone has complex dimension seven in the complex sixteen-dimensional algebra. It is closed under multiplication and under inverses on its invertible part, and it is not a subspace: $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ is not a product, because its coefficient matrix is $\operatorname{diag}(1,1,0,0)$ of rank two.</p>
+<p><strong>The two intersections.</strong> The product set meets the left family in the left family and the right family in the right family: $L_{\tilde Q}R_{e_t}=L(\tilde Q)$ and $L_{e_t}R_{\tilde P}=R(\tilde P)$. The two intersections are distinct; they meet in the scalars, by §<em>The Two One-Sided Boundaries</em>. The product set is larger than either, and the generic product lies in neither.</p>
+<p><strong>The parametrisation.</strong> The map $(\tilde Q,\tilde P)\mapsto L_{\tilde Q}R_{\tilde P}$ is bilinear and surjective onto the cone. Its fibre over a nonzero product is the scaling orbit $(\lambda\tilde Q,\lambda^{-1}\tilde P)$ of §<em>The Factorization Map</em>; the cone has complex dimension $8-1=7$. The kernel and the image of the Hermitian sandwich are a different question, treated in Part V.</p>
+<h3 id="matrix-rank-against-length">Matrix Rank Against Length</h3>
+<p><strong>Theorem (the rank of a product).</strong> For $M=L_{\tilde Q}R_{\tilde P}$,
+$$
+\operatorname{rank}M=\operatorname{rank}\mathsf M_2(\tilde Q)\cdot\operatorname{rank}\mathsf M_2(\tilde P)\in\{0,1,2,4\}.
+$$
+In particular $\operatorname{rank}M=4$ exactly when both parameters are units, and no product has rank three.</p>
+<p><em>Proof.</em> In the Pauli evaluation $L_{\tilde Q}R_{\tilde P}=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q)$. The rank of a Kronecker product is the product of the ranks, and the rank of $\mathsf M_2(\tilde Q)$ is $2$ when $\langle\tilde Q\rangle_{\natural}\neq0$, $1$ when $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, and $0$ when $\tilde Q=0$.</p>
+<p><strong>The two ranks are independent.</strong> Neither $\operatorname{rank}M$ nor $\ell(M)$ determines the other. The matrix
+$$
+M_1=(u_2+u_3)(u_2+u_3)^{\mathsf T}=
+\begin{pmatrix}
+0&0&0&0\\
+0&1&1&0\\
+0&1&1&0\\
+0&0&0&0
+\end{pmatrix},
+$$
+with $u_i$ the $i$-th standard column, has $\operatorname{rank}M_1=1$ and coefficient matrix $c(M_1)=\tfrac12\operatorname{diag}(1,-1,1,1)$, of rank four, so $\ell(M_1)=4$. The projector $P_+$ has $\operatorname{rank}P_+=2$ and $\ell(P_+)=1$. Among the rank-one matrices, those of length four form a dense open subset.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M$</th>
+<th>$\operatorname{rank}M$</th>
+<th>$\operatorname{rank}c(M)$</th>
+<th>$\ell(M)$</th>
+<th>decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{e_t}R_{e_t}+L_{e_t}R_{\vec e_z}$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$L_{e_t}R_{e_t+\vec e_z}$</td>
+</tr>
+<tr>
+<td>$P_+$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$L_{e_t/2}R_{e_t-i\vec e_z}$</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}R_{\tilde P}$ with $\tilde Q,\tilde P\neq0$ and $\langle\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}=0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>by construction</td>
+</tr>
+<tr>
+<td>$L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$</td>
+</tr>
+<tr>
+<td>$M_1=(u_2+u_3)(u_2+u_3)^{\mathsf T}$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$\tfrac12(L_{e_t}R_{e_t}-L_{\vec e_x}R_{\vec e_x}+L_{\vec e_y}R_{\vec e_y}+L_{\vec e_z}R_{\vec e_z})$</td>
+</tr>
+<tr>
+<td>generic $M$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>four terms, none removable</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How to decide.</strong> Compute the sixteen numbers $\tfrac14\operatorname{Tr}((L_{e_\mu}R_{e_\nu})^{\dagger}M)$ and form $c$. If $\operatorname{rank}c=1$, take $[Q]$ to be a nonzero column of $c$; choose a nonzero entry $Q_i$ of that column and take $[P]^{\mathsf T}$ to be the $i$-th row of $c$ divided by $Q_i$. If $\operatorname{rank}c=r>1$, a rank factorization $c=UV$ gives the $r$ terms. No test on $\operatorname{rank}M$ alone decides the question.</p>
+<h3 id="the-two-one-sided-boundaries">The Two One-Sided Boundaries</h3>
+<p><strong>The two boundary cases.</strong> The left and right copies are the two boundary cases of the cone:
+$$
+L_{\tilde Q}R_{e_t}=L(\tilde Q),\qquad
+L_{e_t}R_{\tilde P}=R(\tilde P).
+$$
+Both are single products, and both are contained in the cone. Their intersection is the scalars $\mathbb{C}\cdot\mathrm I_4$, by §<em>The One-Sided Operators</em>.</p>
+<p><strong>The cone is larger.</strong> A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.</p>
+<p><strong>The Hermitian subcone.</strong> The Hermitian sandwich is the subcone $\tilde P=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.</p>
+<h3 id="math467-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
+<p><strong>The matrix.</strong> Let $E_{11}$ be the first matrix unit in the frame. Its coefficient matrix is
+$$
+c(E_{11})=\frac14
+\begin{pmatrix}
+1&0&0&i\\
+0&0&0&0\\
+0&0&0&0\\
+i&0&0&-1
+\end{pmatrix}
+=\frac14\begin{pmatrix}1\\0\\0\\i\end{pmatrix}\begin{pmatrix}1&0&0&i\end{pmatrix}.
+$$
+It has rank one, so $E_{11}$ is a single product. The factorization reads
+$$
+[Q]=\frac14\begin{pmatrix}1\\0\\0\\i\end{pmatrix},\qquad
+[P]=\begin{pmatrix}1\\0\\0\\i\end{pmatrix},
+$$
+that is $Q=(e_t+i\vec e_z)/4$ and $P=e_t+i\vec e_z$, and
+$$
+E_{11}=L_{(e_t+i\vec e_z)/4}R_{e_t+i\vec e_z}.
+$$</p>
+<p><strong>The check.</strong> The coefficient matrix of the right side is $[Q][P]^{\mathsf T}=c(E_{11})$, and the expansion in the basis $L_{e_\mu}R_{e_\nu}$ is unique, so the two matrices are equal. Direct multiplication in the frame confirms the identity entry by entry: the only nonzero entry of $E_{11}$ is the $(1,1)$ entry, and the product $L_QR_P$ has the same matrix.</p>
+<p><strong>The reading.</strong> $E_{11}$ has matrix rank one and length one. The two ranks agree here, but they need not: the matrix $M_1$ above has matrix rank one and length four, and $P_+$ has matrix rank two and length one. The length is read from the coefficient matrix, not from the matrix rank. The example also shows that a matrix unit is a product, and that its factors can be null: $e_t+i\vec e_z$ has quaternionic norm zero.</p>
+<p><strong>Where the frame question is answered.</strong> The coefficient array $c(M)$ is computed from the sixteen products of four <em>basis elements</em>, so its entries move with the frame while its rank does not: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, and a change of the display alone leaves $c$ untouched. The proof, the two frames of the corpus and the sixteen lengths of the matrix units are §<em>The Change of Frame Is a Congruence</em> and §<em>The Sixteen Lengths</em> of <em>$M_4(\mathbb{C})$ Pauli Representation : The Matrix Product, the Trace and the Determinant</em>. What the length theorem needs from that is one line: the rank of a congruence is the rank of the array.</p>
+<h2 id="the-plain-adjoint-and-the-types">The Plain Adjoint and the Types</h2>
+<p><strong>The plain form.</strong> On $\mathbb{B}$ use the plain bilinear form
+$$
+\langle X,Y\rangle=\mathrm{Sc}(XY).
+$$
+Its Gram matrix in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is $\operatorname{diag}(1,-1,-1,-1)$, and the form is non-degenerate and symmetric. It is not positive definite, and it is not the Hilbert–Schmidt form on the matrix model.</p>
+<p><strong>The adjoint.</strong> The adjoint of a two-sided operator is the swap of the two parameters:
+$$
+\bigl(L_{\tilde Q}R_{\tilde P}\bigr)^{\approx}=L_{\tilde P}R_{\tilde Q}.
+$$
+The proof is the cyclicity of the scalar part:
+$$
+\bigl\langle L_{\tilde Q}R_{\tilde P}X,Y\bigr\rangle
+=\mathrm{Sc}(\tilde QX\tilde PY)
+=\mathrm{Sc}(X\tilde PY\tilde Q)
+=\bigl\langle X,L_{\tilde P}R_{\tilde Q}Y\bigr\rangle.
+$$
+The adjoint exchanges the two slots and conjugates neither parameter.</p>
+<p><strong>The self-adjoint pairs.</strong> For $\tilde Q\neq0$,
+$$
+\bigl(L_{\tilde Q}R_{\tilde P}\bigr)^{\approx}=L_{\tilde Q}R_{\tilde P}
+\iff
+\tilde P=\lambda\tilde Q
+\quad\text{for some }\lambda\in\mathbb{C}.
+$$
+The self-adjoint two-sided operators are the scalar multiples of the diagonal operators $L_{\tilde Q}R_{\tilde Q}$, together with the zero operator. The proof writes $A=\mathsf M_2(\tilde Q)$ and $B=\mathsf M_2(\tilde P)$ and tests $AXB=BXA$ on the matrix units; it uses no inverse and covers the zero divisors.</p>
+<p><strong>The skew sector.</strong> No nonzero two-sided operator is skew-adjoint:
+$$
+\bigl(L_{\tilde Q}R_{\tilde P}\bigr)^{\approx}=-L_{\tilde Q}R_{\tilde P}
+\iff
+L_{\tilde Q}R_{\tilde P}=0.
+$$
+The plain form has a self-adjoint sector and no skew-adjoint sector among the nonzero products.</p>
+<p><strong>The isometries.</strong> The operator preserves the plain form,
+$$
+\bigl\langle L_{\tilde Q}R_{\tilde P}X,L_{\tilde Q}R_{\tilde P}Y\bigr\rangle
+=\langle X,Y\rangle
+\quad\text{for all }X,Y,
+$$
+exactly when
+$$
+\tilde P\tilde Q=\pm e_t .
+$$
+Then $\tilde Q$ is a unit and $\tilde P=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$, where $\mathrm{Ad}_{\tilde Q}(X)=\tilde Q X\tilde Q^{-1}$ is the inner automorphism. The isometry group is
+$$
+\{\pm\mathrm{Ad}_{\tilde Q}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\},
+$$
+of complex dimension three. It is not the full orthogonal group, which has dimension six.</p>
+<p><strong>The multiplicative members.</strong> A nonzero operator $L_{\tilde Q}R_{\tilde P}$ is multiplicative,
+$$
+L_{\tilde Q}R_{\tilde P}(XY)=L_{\tilde Q}R_{\tilde P}(X)L_{\tilde Q}R_{\tilde P}(Y)
+\quad\text{for all }X,Y,
+$$
+exactly when
+$$
+\tilde P\tilde Q=e_t .
+$$
+Then $\tilde P=\tilde Q^{-1}$ and $L_{\tilde Q}R_{\tilde P}=\mathrm{Ad}_{\tilde Q}$, an automorphism of the algebra. The zero operator is multiplicative but is excluded by the nonzero condition.</p>
+<p><strong>No pin group.</strong> The quadratic form $\mathfrak{Q}(\tilde Q)=\mathrm{Sc}(\tilde Q^2)$ is not multiplicative. For example,
+$$
+\mathfrak{Q}\!\left(\frac{5e_t+4\vec e_x}{3}\right)
+=\mathfrak{Q}\!\left(\frac{5e_t+4\vec e_y}{3}\right)=1,
+\qquad
+\mathfrak{Q}\!\left(\frac{(5e_t+4\vec e_x)(5e_t+4\vec e_y)}{9}\right)
+=-\frac{431}{81}.
+$$
+The level set $\{\mathfrak{Q}=\pm1\}$ is not closed under multiplication, and no scalar condition on one parameter cuts a subgroup out of the family. The isometry group of the family is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three; it is not a pin group. The isometry condition is a condition on the pair, $\tilde P\tilde Q=\pm e_t$, not on either parameter alone.</p>
+<p><strong>The two adjoints.</strong> The coefficient formula uses the Hilbert–Schmidt adjoint $\dagger$ of the $4\times4$ matrix; the plain adjoint $\approx$ is the adjoint for the form $\mathrm{Sc}(XY)$ on $\mathbb{B}$. They are different involutions. The identity $(L_{\tilde Q}R_{\tilde P})^{\approx}=L_{\tilde P}R_{\tilde Q}$ is a statement about the operator, not about the coefficient matrix.</p>
+<h2 id="the-structural-reading">The Structural Reading</h2>
+<p><strong>The enveloping algebra.</strong> The map
+$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}
+\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad
+\tilde Q\otimes\tilde P^{\mathrm{opp}}
+\longmapsto L(\tilde Q)R(\tilde P)
+$$
+is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ map to the sixteen matrices $L_{e_\mu}R_{e_\nu}$, which are a basis; the isomorphism is the generation theorem in algebra form.</p>
+<p><strong>The pure tensors.</strong> Under this isomorphism the two-sided operators are exactly the decomposable tensors $\tilde Q\otimes\tilde P^{\mathrm{opp}}$, that is the image of the Segre cone $\mathbb{P}^3\times\mathbb{P}^3$ in $\mathbb{P}^{15}$. The abstract identity $L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)$ is the same statement as "the element is a pure tensor in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$". The seven-dimensional cone of §<em>The Criterion for a Single Product</em> is exactly the cone of pure tensors inside the sixteen-dimensional algebra.</p>
+<h2 id="what-the-factorization-buys-and-does-not">What the Factorization Buys and Does Not</h2>
+<p><strong>It gives.</strong>
+- An explicit parametrisation by two biquaternions, eight complex parameters modulo the $\mathbb{C}^{\times}$ scaling, hence seven effective parameters.
+- A product formula, hence powers, inverses and the monoid structure.
+- A rank-one coefficient criterion, hence a decisive test for "is this matrix a single two-sided operator?"
+- The length formula $\ell(M)=\operatorname{rank}c(M)$ with $0\le\ell(M)\le4$.
+- The commutant of one element: $M_2\otimes\mathbb{C}[A]$, of dimension eight, and a minimal polynomial of degree two.
+- The plain adjoint and the type criteria: $(L_{\tilde Q}R_{\tilde P})^{\approx}=L_{\tilde P}R_{\tilde Q}$; self-adjoint exactly when $\tilde P=\lambda\tilde Q$; isometry exactly when $\tilde P\tilde Q=\pm e_t$; multiplicative exactly when $\tilde P\tilde Q=e_t$.</p>
+<p><strong>It does not give.</strong>
+- Additivity: the set is not a subspace, and the sum of two products is generally not a product.
+- Universality: not every matrix is a single product; four products may be needed, and four are always enough.
+- A division algebra: the basis matrices are invertible, but the span has zero divisors, for example $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ of rank two.
+- A pin group: the quadratic form $\mathrm{Sc}(\tilde Q^2)$ is not multiplicative, and the isometry group of the family is only $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, with no skew-adjoint sector.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ul>
+<li>The classification of Clifford frames in $M_4(\mathbb{C})$: is every frame of the normal form above, and what is the stabiliser of the cell frame?</li>
+<li>The choice of frame as a choice of Clifford structure: which gradings the algebra admits, and how they are related.</li>
+<li>A dictionary, frame by frame, between the explicit matrix frames of the physics articles and the tensor basis. The corpus has many explicit representations, and they need not use the same pair $(\beta,\delta)$.</li>
+<li>Which physical statements are frame-independent, and which are artefacts of a table. The mass bilinear, the axial current and the chiral projectors are the first candidates.</li>
+<li>The sign of the pseudoscalar cell and the choice of the second central root of $-1$; the two conventions must not be mixed inside one computation.</li>
+<li>The Peirce image of a general frame, and the spinor-basis change that relates two frames.</li>
+<li>The Segre length in physics: the matrices of length at most $r$ are the locus $\operatorname{rank}c\le r$, cut out by the $(r+1)\times(r+1)$ minors; what is not known is which physical operators have length two or three, and why.</li>
+<li>The two-sided Dirac operator against the left gradient: the dictionary at the level of differential operators, not only of matrices.</li>
+</ul>
+<h2 id="the-gamma-formulation">The Gamma Formulation</h2>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells.</p>
+<h3 id="the-five-cells">The five cells</h3>
+<p><strong>The reference frame.</strong> Define
+$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\qquad
+\gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad
+\gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad
+\gamma_3=iL_{\vec e_z}R_{\vec e_y},\qquad
+\gamma_5=-iL_{e_t}R_{\vec e_z}.
+$$
+Each is a unit multiple of one cell of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
+$$
+\gamma_0=\sigma_1\otimes\mathrm I_2,\qquad
+\gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
+\gamma_5=-\sigma_3\otimes\mathrm I_2.
+$$</p>
+<p><strong>The values.</strong> In the frame,
+$$
+\gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+$$
+$$
+\gamma_2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+$$
+$$
+\gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
+$$
+Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §<em>The Table in Four Families</em>; the choice of the five is the choice of a frame.</p>
+<p><strong>The cells.</strong> The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.</p>
+<h3 id="the-normal-form-and-the-pair-math559">The normal form and the Pair $(\beta,\delta)$</h3>
+<p><strong>The pair.</strong> Let $\beta,\delta$ be unit spatial directions, orthogonal:
+$$
+\beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta.
+$$
+Define
+$$
+\gamma_0=iL(e_t)R(\delta),\qquad
+\gamma_k=iL(\vec e_k)R(\beta),\qquad k=x,y,z.
+$$
+For the reference frame $(\beta,\delta)=(\vec e_y,\vec e_x)$, the five are the cells of §<em>The Five Cells</em>; in that frame $\beta\delta=-\vec e_z$ and $\gamma_5=iL_{e_t}R_{\beta\delta}$.</p>
+<p><strong>The normal form.</strong> Every pair $(\beta,\delta)$ gives a frame with the Clifford relations of §<em>The Clifford Relations</em>, and the five operators determine the pair: $\delta$ is the right factor of $\gamma_0$, and $\beta$ is the right factor of $\gamma_1$. Distinct pairs give distinct frames, not two descriptions of one frame.</p>
+<p><strong>The free parameter.</strong> Nothing selects the pair. The relations use only $\beta^2=\delta^2=-e_t$ and $\beta\delta=-\delta\beta$; no Clifford relation mentions $\beta$ or $\delta$. The three spatial directions enter in three roles: $\beta$ as the common right factor of the three spatial generators, $\delta$ as the right factor of the time generator, and $\beta\delta$ as the right factor of the pseudoscalar. The algebra assigns no direction to any role. What changes with the pair is the list of operators, whether they are cells, the sign of $\gamma_5$, and the grade table.</p>
+<p><strong>Cells only for axes.</strong> If $\beta$ is not one of $\vec e_x,\vec e_y,\vec e_z$, the spatial generators are not cells:
+$$
+\gamma_k=iL_{\vec e_k}R_{\beta}=i\sum_\nu\beta_\nu\,L_{\vec e_k}R_{e_\nu}
+$$
+is a single product of coefficient rank one, supported on several cells. If $\delta$ is not a coordinate axis, $\gamma_0$ is not a cell either. The cell table of §<em>The Sixteen Products of the Frame</em> is the table of the reference pair.</p>
+<p><strong>Conjugacy.</strong> For a unit $\tilde u$ and $U=L(\tilde u)R(\tilde u^{-1})$,
+$$
+U\,L_{\tilde Q}R_{\tilde P}\,U^{-1}=L_{\tilde u\tilde Q\tilde u^{-1}}R_{\tilde u\tilde P\tilde u^{-1}}.
+$$
+This is the matrix of an inner automorphism, and it carries frames to frames. It does not preserve the normal form, because it rotates the left factors as well as the right factors; the normal form is a slice through the set of frames, not a conjugacy class.</p>
+<h3 id="the-clifford-relations">The Clifford relations</h3>
+<p><strong>Theorem (the Clifford relations).</strong> For the normal form of §<em>The Normal Form and the Pair $(\beta,\delta)$</em>,
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm I_4,\qquad
+(\gamma_5)^2=\mathrm I_4,\qquad
+\gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
+$$
+with $g=\operatorname{diag}(1,-1,-1,-1)$, and
+$$
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=iL_{e_t}R_{\beta\delta}.
+$$</p>
+<p><em>Proof.</em> $(\gamma_0)^2=-R(\delta^2)=\mathrm I_4$; $(\gamma_k)^2=-L(\vec e_k^2)R(\beta^2)=-\mathrm I_4$; $\gamma_0\gamma_k+\gamma_k\gamma_0=-L(\vec e_k)(R(\delta\beta)+R(\beta\delta))=0$; $\gamma_j\gamma_k+\gamma_k\gamma_j=-L(\vec e_j\vec e_k+\vec e_k\vec e_j)R(\beta^2)=0$. For the pseudoscalar, the left factor is $L(e_t\vec e_x\vec e_y\vec e_z)=L(-e_t)$ and the right factor is $R(\beta^3\delta)=R(-\beta\delta)$; the two signs cancel, so the product is $L_{e_t}R_{\beta\delta}$.</p>
+<h3 id="the-sixteen-products-of-the-frame">The sixteen products of the frame</h3>
+<p><strong>The table.</strong> In the reference frame the products of the five are the sixteen cells up to units.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Product</th>
+<th>Cell</th>
+<th>Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$1$</td>
+<td>$L_{e_t}R_{e_t}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\gamma_0$</td>
+<td>$L_{e_t}R_{\vec e_x}$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\gamma_1$</td>
+<td>$L_{\vec e_x}R_{\vec e_y}$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\gamma_2$</td>
+<td>$L_{\vec e_y}R_{\vec e_y}$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\gamma_3$</td>
+<td>$L_{\vec e_z}R_{\vec e_y}$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma_0\gamma_1$</td>
+<td>$L_{\vec e_x}R_{\vec e_z}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma_0\gamma_2$</td>
+<td>$L_{\vec e_y}R_{\vec e_z}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma_0\gamma_3$</td>
+<td>$L_{\vec e_z}R_{\vec e_z}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma_1\gamma_2$</td>
+<td>$L_{\vec e_z}R_{e_t}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma_1\gamma_3$</td>
+<td>$L_{\vec e_y}R_{e_t}$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma_2\gamma_3$</td>
+<td>$L_{\vec e_x}R_{e_t}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\gamma_0\gamma_1\gamma_2$</td>
+<td>$L_{\vec e_z}R_{\vec e_x}$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\gamma_0\gamma_1\gamma_3$</td>
+<td>$L_{\vec e_y}R_{\vec e_x}$</td>
+<td>$-i$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\gamma_0\gamma_2\gamma_3$</td>
+<td>$L_{\vec e_x}R_{\vec e_x}$</td>
+<td>$i$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\gamma_1\gamma_2\gamma_3$</td>
+<td>$L_{e_t}R_{\vec e_y}$</td>
+<td>$-i$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\gamma_0\gamma_1\gamma_2\gamma_3$</td>
+<td>$L_{e_t}R_{\vec e_z}$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The products are distinct, so they are the sixteen cells in some order, each with a coefficient in $\{1,-1,i,-i\}$. The table is the multiplication table of the frame read in the cell basis.</p>
+<p><strong>The algebra.</strong> The relations identify the span of the five with the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$; the sixteen products are a basis of $M_4(\mathbb{C})$. The Lorentz generators are the six commutators
+$$
+\Sigma_{\mu\nu}=\tfrac{i}{2}[\gamma_\mu,\gamma_\nu],
+$$
+which are again cells: $\Sigma^{01}=iL_{\vec e_x}R_{\vec e_z}$, $\Sigma^{02}=iL_{\vec e_y}R_{\vec e_z}$, $\Sigma^{03}=iL_{\vec e_z}R_{\vec e_z}$, $\Sigma^{12}=iL_{\vec e_z}R_{e_t}$, $\Sigma^{13}=-iL_{\vec e_y}R_{e_t}$, $\Sigma^{23}=iL_{\vec e_x}R_{e_t}$. They are even, of grade two, and they generate the spinor representation of $\mathfrak{so}(1,3)$ on $\mathbb{B}\cong\mathbb{C}^4$.</p>
+<h3 id="the-chiral-reading">The chiral reading</h3>
+<p><strong>The pseudoscalar.</strong> In the frame,
+$$
+\gamma_5=\operatorname{diag}(-1,-1,1,1).
+$$
+Its two eigenspaces are the two chiral blocks, each of complex dimension two. The four generators exchange them; the pseudoscalar is their sign.</p>
+<p><strong>The projectors.</strong> The chirality projectors are
+$$
+P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(L_{e_t}R_{e_t}\pm iL_{e_t}R_{\beta\delta}\bigr)=L_{e_t/2}R_{e_t\pm i\beta\delta}.
+$$
+In the frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$. Both have rank two, and the second parameter has quaternionic norm zero. They are single two-sided operators, but not cells: a single product can be singular, and a single product need not be a cell.</p>
+<p><strong>The two Weyl blocks.</strong> The frame is block diagonal for the left family, $L(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$, so the left image preserves the two chiral blocks. The four generators are not in the left image: they exchange the blocks. The Dirac algebra needs the two-sided operators; the left regular model cannot hold it.</p>
+<p><strong>Types.</strong> In the reference frame, $\gamma_0$ and $\gamma_5$ lie in the right family $\mathbb{B}_R$, because their left factor is $e_t$; the three spatial generators lie in neither one-sided family. The distinction is a property of the pair, not of the Clifford relations.</p>
+<p>Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
+<h2 id="summary">Summary</h2>
+<p>The operators on the biquaternion algebra sit at three levels. Every endomorphism has a matrix in $M_4(\mathbb{C})$, and the frame gives an isomorphism of sixteen-dimensional algebras. The one-sided operators fill the two four-dimensional copies $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$ and $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$; their intersection is the scalars and each is the commutant of the other. The two-sided operators are the products $L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)=B^{\mathsf T}\otimes A$.</p>
+<p>The sixteen products $L_{e_\mu}R_{e_\nu}$ are an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. They compose up to sign with the second slot reversed, their trace is $4Q_tP_t$, and their determinant is $\langle\tilde Q\rangle_{\natural}^2\langle\tilde P\rangle_{\natural}^2$. Every basis matrix is a unit of determinant one and rank four; the span is not a division algebra, since $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ has rank two. In the Peirce frame each of the sixteen is a monomial matrix, with one nonzero entry in each row and column, of modulus one; the first row is the right family and the first column the left family.</p>
+<p>The Pauli evaluation is $L_{\tilde Q}R_{\tilde P}=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q)$, a $4\times4$ Kronecker product of two $2\times2$ matrices. The Kronecker product of two $4\times4$ matrices is $16\times16$ and is not the operator; the matrix of the operator is the ordinary product $L(\tilde Q)R(\tilde P)$.</p>
+<p>The frame is generated by a pair $(\beta,\delta)$ of orthogonal spatial directions. The reference pair $(\vec e_y,\vec e_x)$ gives five cell multiples; a general pair gives five single products of coefficient rank one, spread over several cells. Nothing selects the pair, and the normal form is a slice through the set of frames, not a conjugacy class. The chiral reading is the pseudoscalar cell $iL_{e_t}R_{\beta\delta}$, with eigenvalues $\pm1$, the projectors $P_\pm=L_{e_t/2}R_{e_t\pm i\beta\delta}$, and the two Weyl blocks exchanged by the four generators. The left regular model cannot hold the Dirac algebra.</p>
+<p>The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}=M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The coefficient matrix $c(M)$ turns the product condition into the rank condition $\operatorname{rank}c(M)\le1$. The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. The matrix rank of a product is in $\{0,1,2,4\}$ and is independent of the length: matrix rank one can have length four, and matrix rank two can have length one. The matrix unit $E_{11}$ has rank one and length one, and all sixteen units have length one in this frame and length four in the axis-free basis, because the two arrays name different operators. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, of the same rank, and a change of the display alone leaves $c$ unchanged.</p>
+<p>The plain adjoint swaps the two parameters, and the type criteria are $\tilde P=\lambda\tilde Q$ for self-adjoint, $\tilde P\tilde Q=\pm e_t$ for isometry and $\tilde P\tilde Q=e_t$ for multiplicative. The isometry group is $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, and it is not a pin group.</p>
+<p>In one line: every two-sided operator is a single product of one left and one right multiplication; the set of such products is the seven-dimensional cone of pure tensors, characterised by a rank-one coefficient matrix, closed under composition but not under addition, with length the coefficient rank and matrix rank in $\{0,1,2,4\}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\dim_{\mathbb{C}}=4$</td>
+</tr>
+<tr>
+<td>$\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$</td>
+<td>the standard Peirce frame</td>
+</tr>
+<tr>
+<td>$\mathsf S$</td>
+<td>the permutation of the second and third coordinates; $R(\tilde Q)=\mathsf S L(\tilde Q)^{\mathsf T}\mathsf S^{-1}$</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$</td>
+<td>the left matrix</td>
+</tr>
+<tr>
+<td>$R(\tilde P)=\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathrm I_2$</td>
+<td>the right matrix</td>
+</tr>
+<tr>
+<td>$L_{e_\mu}=L(e_\mu)$, $R_{e_\nu}=R(e_\nu)$</td>
+<td>the four basis matrices of each copy</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)$</td>
+<td>the two-sided operator, $X\mapsto\tilde QX\tilde P$</td>
+</tr>
+<tr>
+<td>$L_{e_\mu}R_{e_\nu}$</td>
+<td>the sixteen basis matrices</td>
+</tr>
+<tr>
+<td>$[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$</td>
+<td>the coefficient column of $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(\tilde Q)$</td>
+<td>the $2\times2$ model, $\det=\langle\tilde Q\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli matrices, $\mathsf M_2(\vec e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$c(M)$</td>
+<td>the coefficient matrix, $c(M)_{\mu\nu}=\tfrac14\operatorname{Tr}((L_{e_\mu}R_{e_\nu})^{\dagger}M)$</td>
+</tr>
+<tr>
+<td>$\ell(M)$</td>
+<td>the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$</td>
+</tr>
+<tr>
+<td>$\Phi(\tilde Q,\tilde P)=L_{\tilde Q}R_{\tilde P}$</td>
+<td>the factorisation map</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the quaternionic norm, $\det\mathsf M_2(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\tilde Q^{\natural}=Q_t-\vec Q$</td>
+<td>the natural conjugate</td>
+</tr>
+<tr>
+<td>$\tilde Q^{*}=\bar{\tilde Q}^{\natural}$</td>
+<td>the Hermitian conjugate</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde Q}(X)=\tilde Q X\tilde Q^{-1}$</td>
+<td>the inner automorphism</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\mathrm{opp}}$</td>
+<td>the opposite algebra, with the reversed product</td>
+</tr>
+<tr>
+<td>$\beta,\delta$</td>
+<td>the two right directions of a frame, $\beta^2=\delta^2=-e_t$, $\beta\delta=-\delta\beta$</td>
+</tr>
+<tr>
+<td>$L_{e_t}R_{\beta\delta}$</td>
+<td>the pseudoscalar cell, the fifth generator of the frame</td>
+</tr>
+<tr>
+<td>$\Sigma_{\mu\nu}$</td>
+<td>the Lorentz generators, six even cells</td>
+</tr>
+<tr>
+<td>$P_\pm=L_{e_t/2}R_{e_t\pm i\beta\delta}$</td>
+<td>the chirality projectors</td>
+</tr>
+<tr>
+<td>$C_{\Pi}$</td>
+<td>the Peirce change from the Peirce frame to the coefficient basis</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>the scalar part, the $e_t$ coefficient</td>
+</tr>
+<tr>
+<td>$\approx$</td>
+<td>the plain adjoint for $\langle X,Y\rangle=\mathrm{Sc}(XY)$</td>
+</tr>
+<tr>
+<td>$\dagger$</td>
+<td>the Hilbert–Schmidt adjoint of a $4\times4$ matrix</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}$</td>
+<td>the matrix rank, on matrices and on $c(M)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})$ Pauli Representation</a>, for the frame, the left and right matrices and the six subspaces.</li>
+<li><a href="m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Pauli Representation</a>, for the compression of the two one-sided actions.</li>
+<li><a href="m2c-standard-peirce-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>, for the same operators compressed to one matrix per side and a pair for the product.</li>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the same operators in the axis-free basis.</li>
+<li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.</li>
+<li><a href="the-left-regular-operators-on-the-biquaternion-algebra.html">The Left Regular Operators on the Biquaternion Algebra</a>, for $L$ and the four left matrices.</li>
+<li><a href="the-right-regular-operators-on-the-biquaternion-algebra.html">The Right Regular Operators on the Biquaternion Algebra</a>, for $R$ and the four right matrices.</li>
+<li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the ambient operator space and its coordinate column.</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.</li>
+<li><a href="the-commutant-of-the-two-regular-families.html">The Commutant of the Two Regular Families</a>, for the intersection of the two one-sided copies.</li>
+<li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the plain adjoint and its comparison with the other adjoints.</li>
+<li><a href="the-hermitian-sandwich-definition-and-multiplicativity.html">The Hermitian Sandwich: Definition and Multiplicativity</a>, for the real subcone $\tilde P=\tilde Q^{*}$.</li>
+<li><a href="conventions-of-the-matrix-models.html">Matrix Representations Conventions</a>, for the $2\times2$ unit images, the four left and four right matrices, the exchange $\mathsf S$ and the sixteen cells entry by entry.</li>
+<li><a href="../articles_physics/conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a>, for the explicit chiral matrices of one frame, the Peirce match and the chirality.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

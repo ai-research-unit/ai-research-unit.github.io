@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-one-and-the-idempotents-of-the-algebra-of-the-reduced-biquaternions"><strong>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Of the four products of <em>The Four Products, Their Forms and Their Algebraic Norms</em>, exactly one makes the underlying complex space of $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ an associative unital $\mathbb{C}$-algebra; the algebra is <em>Introduction to the Algebra of the Reduced Biquaternions</em>, and its multiplication is the general plain bilinear product of two reduced biquaternions, $\breve Q_{1}\breve Q_{2}$. That product is the one read throughout this article.</p>
+<p>The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $\Xi\in\mathbb{B}_{\mathrm{r}}$ with</p>
+<p>$$
+\Xi^{2}=1 .
+$$</p>
+<p>The second is the idempotents of the algebra, the elements $\Pi$ with $\Pi^{2}=\Pi$. The two subjects are one subject, because the <strong>halving map</strong></p>
+<p>$$
+H(\Xi)=\tfrac12(1+\Xi),\qquad \Xi^{2}=1,
+$$</p>
+<p>is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$. A root carries two idempotents and not one: the halving map picks the member attached to $+1$, and the other is its value at $-\Xi$; with $\Pi_{+}(\Xi)=\tfrac12(1+\Xi)$ and $\Pi_{-}(\Xi)=\tfrac12(1-\Xi)=\Pi_{+}(-\Xi)$, the two are a complete orthogonal pair, $\Pi_{+}(\Xi)+\Pi_{-}(\Xi)=1$ and $\Pi_{+}(\Xi)\Pi_{-}(\Xi)=0$, and the root is their difference, $\Xi=\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$. The reason is a two-line computation: if $\Xi^{2}=1$ then $\Pi^{2}=\tfrac14(1+2\Xi+1)=\Pi$, and if $\Pi^{2}=\Pi$ then $(2\Pi-1)^{2}=4\Pi^{2}-4\Pi+1=1$. Every idempotent of the algebra is read through that map, on the roots of $+1$ alone, and the families of idempotents are the families of the roots of $+1$ read through it.</p>
+<p><strong>The results.</strong> The roots of $+1$ are exactly the four elements</p>
+<p>$$
+1,\qquad -1,\qquad j,\qquad -j,
+$$</p>
+<p>and there are no others. The two <strong>trivial roots</strong> $\pm1$ give the trivial idempotents $1$ and $0$; the two <strong>non-trivial roots</strong> $\pm j$ give the standard idempotents</p>
+<p>$$
+\Pi_{\pm}=\tfrac12(1\pm j).
+$$</p>
+<p>The trivial idempotents are Hermitian, fixed by the star; the standard idempotents are non-Hermitian, exchanged by it. Every idempotent is one of the four $0,1,\Pi_{+},\Pi_{-}$; there are no positive-dimensional families, because the root equation reduces to the two complex equations $\Xi_{+}^{2}=1$ and $\Xi_{-}^{2}=1$, each with two solutions, hence four roots. The roots of $+1$ form the four-element group $(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication, and every root is a unit. The roots of $-1$ are the four elements $\pm i$ and $\pm ij$, the roots of $+1$ multiplied by $i$; they are not the roots of $+1$.</p>
+<p>The following table collects the results at a glance.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Result</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roots of $+1$</td>
+<td>$1,-1,j,-j$</td>
+<td>four elements</td>
+</tr>
+<tr>
+<td>Roots of $-1$</td>
+<td>$i,-i,ij,-ij$</td>
+<td>four elements</td>
+</tr>
+<tr>
+<td>Root set</td>
+<td>group $(\mathbb{Z}/2\mathbb{Z})^{2}$</td>
+<td>four elements</td>
+</tr>
+<tr>
+<td>Idempotents</td>
+<td>$0,1,\Pi_{+},\Pi_{-}$</td>
+<td>four elements</td>
+</tr>
+<tr>
+<td>Hermitian idempotents</td>
+<td>$0,1$, the star fixing them</td>
+<td>two elements</td>
+</tr>
+<tr>
+<td>Non-Hermitian idempotents</td>
+<td>$\Pi_{+},\Pi_{-}$, the star exchanging them</td>
+<td>two elements</td>
+</tr>
+<tr>
+<td>Halving map</td>
+<td>bijection $H(\Xi)=\tfrac12(1+\Xi)$</td>
+<td>two-to-one on unordered pairs</td>
+</tr>
+<tr>
+<td>Standard pair</td>
+<td>$\Pi_{\pm}=\tfrac12(1\pm j)$, central, primitive, complete and orthogonal</td>
+<td>two elements</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>the non-trivial idempotents and their nonzero complex multiples</td>
+<td>two lines</td>
+</tr>
+<tr>
+<td>Involutions</td>
+<td>the tessarine sign and the star exchange $\Pi_{+}$ and $\Pi_{-}$; the bar fixes both; the flat sends each to the negative of the other</td>
+<td>four involutions</td>
+</tr>
+</tbody>
+</table></div>
+<p>The article is algebraic. It does not treat the roots of the general quadratic $\Xi^{2}=Q$, which is <em>Square Roots of a General Element in the Algebra of the Reduced Biquaternions</em>; the roots of $0$ and the nilpotents, which are <em>Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions</em>; the structure of the zero-divisor set, which is <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; or the ideals the standard idempotents generate, which are <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>. The subsection §<em>The Roots of Minus One</em> records the roots of $-1$; it is a remark, it is used nowhere, and it opens nothing.</p>
+<p>The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is <em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, §<em>Powers, the Square and the Roots</em>, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the Hermitian idempotent and the Peirce decomposition, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products are <em>The Four Products, Their Forms and Their Algebraic Norms</em>.</p>
+<h2 id="the-roots-of-one">The Roots of One</h2>
+<p><strong>The roots of $+1$ are exactly $\pm1$ and $\pm j$; there are no others.</strong></p>
+<p>A <strong>root of $+1$</strong> is an element $\Xi\in\mathbb{B}_{\mathrm{r}}$ with $\Xi^{2}=1$, the square being the one of the general plain bilinear product.</p>
+<h3 id="the-reduction">The Reduction</h3>
+<p>Write the root in the idempotent coordinates,</p>
+<p>$$
+\Xi=\Xi_{+}\Pi_{+}+\Xi_{-}\Pi_{-},\qquad \Xi_{\pm}=\Xi_{\blacktriangle}\pm\Xi_{\blacktriangledown},
+$$</p>
+<p>with $\Xi_{\blacktriangle},\Xi_{\blacktriangledown}\in\mathbb{C}$. Because the product is componentwise in the idempotent basis and $\Pi_{\pm}^{2}=\Pi_{\pm}$, $\Pi_{+}\Pi_{-}=0$, the square is</p>
+<p>$$
+\Xi^{2}=\Xi_{+}^{2}\Pi_{+}+\Xi_{-}^{2}\Pi_{-}.
+$$</p>
+<p>The equation $\Xi^{2}=1=\Pi_{+}+\Pi_{-}$ is therefore equivalent to the <strong>pair of complex equations</strong></p>
+<p>$$
+\Xi_{+}^{2}=1,\qquad \Xi_{-}^{2}=1.
+$$</p>
+<p>The two equations are collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Equation</th>
+<th>Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Xi_{+}$</td>
+<td>$\Xi_{+}^{2}=1$</td>
+<td>$\Xi_{+}=+1$ or $\Xi_{+}=-1$</td>
+</tr>
+<tr>
+<td>$\Xi_{-}$</td>
+<td>$\Xi_{-}^{2}=1$</td>
+<td>$\Xi_{-}=+1$ or $\Xi_{-}=-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>There is no coupling between the two coordinates: the root problem splits into two independent one-dimensional root problems over $\mathbb{C}$, each with the two solutions $\pm1$. The four combinations are the four roots.</p>
+<p><strong>Remark (the coordinate form).</strong> In the basis $1,j$ the same equations read</p>
+<p>$$
+\Xi_{\blacktriangle}^{2}+\Xi_{\blacktriangledown}^{2}=1,\qquad 2\Xi_{\blacktriangle}\Xi_{\blacktriangledown}=0,
+$$</p>
+<p>because $\Xi^{2}=(\Xi_{\blacktriangle}^{2}+\Xi_{\blacktriangledown}^{2})+2\Xi_{\blacktriangle}\Xi_{\blacktriangledown}j$. Over $\mathbb{C}$ the second equation forces $\Xi_{\blacktriangle}=0$ or $\Xi_{\blacktriangledown}=0$; the first then gives $\Xi_{\blacktriangle}=\pm1$ with $\Xi_{\blacktriangledown}=0$, or $\Xi_{\blacktriangle}=0$ with $\Xi_{\blacktriangledown}=\pm1$. The four solutions are $\pm1$ and $\pm j$.</p>
+<h3 id="the-trivial-roots">The Trivial Roots</h3>
+<p>The two <strong>trivial roots</strong> are</p>
+<p>$$
+\Xi=+1,\qquad \Xi=-1 .
+$$</p>
+<p>They are the roots in the complex line $\mathbb{C}1$, and they are the only roots with vanishing $j$-part. They give the trivial idempotents $1$ and $0$ under the halving map.</p>
+<h3 id="the-non-trivial-roots">The Non-Trivial Roots</h3>
+<p>The two <strong>non-trivial roots</strong> are</p>
+<p>$$
+\Xi=+j,\qquad \Xi=-j .
+$$</p>
+<p>They are the roots in the line $j\mathbb{C}$, with vanishing scalar part; they are anti-fixed by the star, $\Xi^{*}=-\Xi$, hence non-Hermitian, while the bar fixes them. They give the standard idempotents $\Pi_{+}$ and $\Pi_{-}$ under the halving map.</p>
+<h3 id="statement-of-the-theorem">Statement of the Theorem</h3>
+<p><strong>Theorem (the roots of $+1$).</strong> The roots of $+1$ in $\mathbb{B}_{\mathrm{r}}$ are exactly the four elements</p>
+<p>$$
+\boxed{\;
+1,\qquad -1,\qquad j,\qquad -j
+\;}.
+$$</p>
+<p><strong>Proof.</strong> The reduction gives $\Xi_{+}^{2}=1$ and $\Xi_{-}^{2}=1$, hence $\Xi_{+}\in\{+1,-1\}$ and $\Xi_{-}\in\{+1,-1\}$. The four combinations are</p>
+<p>$$
+\Xi=1\Pi_{+}+1\Pi_{-}=1,\qquad
+\Xi=1\Pi_{+}-1\Pi_{-}=j,\qquad
+\Xi=-1\Pi_{+}+1\Pi_{-}=-j,\qquad
+\Xi=-1\Pi_{+}-1\Pi_{-}=-1,
+$$</p>
+<p>where the second and third use $2\Pi_{+}-1=j$ and $2\Pi_{-}-1=-j$. There are no others, because the reduction is an equivalence.</p>
+<p>The roots fall into the two following families.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Form</th>
+<th>Real parameters</th>
+<th>Size</th>
+<th>Position</th>
+<th>Fixed by the star?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trivial roots</td>
+<td>$\Xi=\pm1$</td>
+<td>none</td>
+<td>two elements</td>
+<td>the complex line $\mathbb{C}1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Non-trivial roots</td>
+<td>$\Xi=\pm j$</td>
+<td>none</td>
+<td>two elements</td>
+<td>the line $j\mathbb{C}$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="verification">Verification</h3>
+<p>The four roots are checked by squaring.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Square</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trivial roots</td>
+<td>$(\pm1)^{2}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>Non-trivial roots</td>
+<td>$(\pm j)^{2}$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The verification is the whole computation: the split sign $j^{2}=+1$ is what makes $j$ a root of $+1$ and not a root of $-1$.</p>
+<h3 id="the-roots-of-minus-one">The Roots of Minus One</h3>
+<p><strong>Proposition (the roots of $-1$).</strong> The equation $\Xi^{2}=-1$ has the four solutions</p>
+<p>$$
+\Xi=+i,\qquad \Xi=-i,\qquad \Xi=+ij,\qquad \Xi=-ij .
+$$</p>
+<p><strong>Proof.</strong> In the idempotent coordinates the equation is $\Xi_{+}^{2}=-1$ and $\Xi_{-}^{2}=-1$, so $\Xi_{+}\in\{+i,-i\}$ and $\Xi_{-}\in\{+i,-i\}$. The four combinations are</p>
+<p>$$
+(i,i)=i,\qquad (i,-i)=ij,\qquad (-i,i)=-ij,\qquad (-i,-i)=-i,
+$$</p>
+<p>where the second and third use $j=(1,-1)$ and $i=(i,i)$ in the idempotent coordinates, so $ij=(i,-i)$. There are no others.</p>
+<p>The result is collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Equation</th>
+<th>Solutions</th>
+<th>Size</th>
+<th>Relation to the roots of $+1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Xi^{2}=-1$</td>
+<td>$i,-i,ij,-ij$</td>
+<td>four elements</td>
+<td>$i\{1,-1,j,-j\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four roots of $-1$ are the roots of $+1$ multiplied by $i$:</p>
+<p>$$
+i\{1,-1,j,-j\}=\{i,-i,ij,-ij\},
+$$</p>
+<p>and they lie in the real plane $i\mathbb{R}\{1,j\}$ of the algebra. The roots of $+1$ are not the roots of $-1$, and the distinction is stated here because the two families are both four.</p>
+<h3 id="status-of-the-roots">Status of the Roots</h3>
+<p><strong>Proposition (the roots form a group).</strong> The set</p>
+<p>$$
+\mathcal{R}_{+1}=\{1,-1,j,-j\}
+$$</p>
+<p>is a subgroup of the group of units of the plain product, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^{2}$.</p>
+<p><strong>Proof.</strong> The product of two roots is a root, because $(\Xi B)^{2}=\Xi^{2}B^{2}=1$ and the algebra is commutative; the unit is $1$; and each element is its own inverse, $\Xi^{2}=1$. The group is abelian of order four with every non-identity element of order two, hence $(\mathbb{Z}/2\mathbb{Z})^{2}$.</p>
+<p><strong>Proposition (the roots are units).</strong> Every root of $+1$ is a unit, with $\Xi^{-1}=\Xi$, and no root is a zero divisor.</p>
+<p><strong>Proof.</strong> $\Xi^{2}=1$ reads $\Xi\Xi=1$, so $\Xi$ is invertible with inverse $\Xi$. A unit is not a zero divisor.</p>
+<p><strong>Corollary (the real form).</strong> In the real coordinates the roots are $1=(1,0,0,0)$, $-1=(-1,0,0,0)$, $j=(0,0,1,0)$ and $-j=(0,0,-1,0)$; all four lie in the real subalgebra $\mathbb{R}\{1,j\}$.</p>
+<p>The status of the roots is collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Closed under multiplication?</td>
+<td>yes, the product of two roots is a root</td>
+</tr>
+<tr>
+<td>Group?</td>
+<td>yes, $(\mathbb{Z}/2\mathbb{Z})^{2}$</td>
+</tr>
+<tr>
+<td>Units?</td>
+<td>yes, $\Xi^{-1}=\Xi$</td>
+</tr>
+<tr>
+<td>Zero divisors?</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Position</td>
+<td>all four in the real subalgebra $\mathbb{R}\{1,j\}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-idempotents">The Idempotents</h2>
+<p><strong>The idempotents of $\mathbb{B}_{\mathrm{r}}$ are exactly the four elements $0,1,\Pi_{+},\Pi_{-}$; the standard pair is orthogonal, complete, central and primitive, and every idempotent is the image of exactly one root of $+1$ under the halving map.</strong></p>
+<p>The <strong>idempotents</strong> of $\mathbb{B}_{\mathrm{r}}$ are the elements satisfying $\Pi^{2}=\Pi$, the square being the one of the general plain bilinear product. They correspond to projectors under multiplication, and in $\mathbb{B}_{\mathrm{r}}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into the two idempotent lines, and in particular the two minimal ideals; they classify the zero divisors, every nonzero one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they carry the Peirce decomposition of the algebra. The definition and the families are the general ones of <em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, read here in the general plain bilinear product.</p>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> An element $\Pi$ of $\mathbb{B}_{\mathrm{r}}$ is an <strong>idempotent of the algebra of the reduced biquaternions</strong> when</p>
+<p>$$
+\Pi^{2}=\Pi .
+$$</p>
+<p>The element $0$ is an idempotent, and so is the unit $1$; the two are the <strong>trivial idempotents</strong>. The equation names a product, and the notion is relative to it: throughout this article the product is the general plain bilinear product, the multiplication of the algebra, and another product is named where it is meant. The other three general products are <em>The Four Products, Their Forms and Their Algebraic Norms</em>.</p>
+<p>Two idempotents $\Pi,\Pi'$ are <strong>orthogonal</strong> when $\Pi\Pi'=\Pi'\Pi=0$; a family is <strong>pairwise orthogonal</strong> when its members are pairwise orthogonal, and <strong>complete</strong> when in addition their sum is $1$. A nonzero idempotent is <strong>primitive</strong> when it is not the sum of two nonzero orthogonal idempotents.</p>
+<p>Idempotents encode direct summands of the algebra: an idempotent $\Pi$ and its complement $1-\Pi$ split the underlying $\mathbb{C}$-module,</p>
+<p>$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{\mathrm{r}}\Pi\oplus\mathbb{B}_{\mathrm{r}}(1-\Pi),\qquad \mathbb{B}_{\mathrm{r}}=\Pi\mathbb{B}_{\mathrm{r}}\oplus(1-\Pi)\mathbb{B}_{\mathrm{r}},
+$$</p>
+<p>the same on the left and on the right because the algebra is commutative. Every idempotent is the member attached to $+1$ of the pair of a root: for $\Pi$ idempotent the element $\Xi=2\Pi-1$ is a root of $+1$, and $\Pi_{+}(\Xi)=\Pi$ while $\Pi_{-}(\Xi)=1-\Pi$.</p>
+<h3 id="the-two-idempotents-of-a-root">The Two Idempotents of a Root</h3>
+<p><strong>A root $\Xi$ of $+1$ carries the two idempotents $\Pi_{+}(\Xi)=\tfrac12(1+\Xi)$ and $\Pi_{-}(\Xi)=\tfrac12(1-\Xi)=1-\Pi_{+}(\Xi)$; they are complete and orthogonal, their difference is the root, and the value of the pair map is an ordered complete orthogonal pair.</strong></p>
+<p><strong>Theorem (the two idempotents of a root).</strong> For a root $\Xi$ of $+1$, the elements</p>
+<p>$$
+\Pi_{+}(\Xi)=\tfrac12(1+\Xi),\qquad \Pi_{-}(\Xi)=\tfrac12(1-\Xi)
+$$</p>
+<p>are idempotent, complete and orthogonal; the identities are collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Identity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi_{+}(\Xi)^{2}$</td>
+<td>$\Pi_{+}(\Xi)$</td>
+</tr>
+<tr>
+<td>$\Pi_{-}(\Xi)^{2}$</td>
+<td>$\Pi_{-}(\Xi)$</td>
+</tr>
+<tr>
+<td>$\Pi_{+}(\Xi)\Pi_{-}(\Xi)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\Pi_{+}(\Xi)+\Pi_{-}(\Xi)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$</td>
+<td>$\Xi$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The idempotence is the two-line computation of the introduction; the sum is $\tfrac12(1+\Xi)+\tfrac12(1-\Xi)=1$; the product is $\tfrac14(1-\Xi^{2})=0$; and the difference is $\tfrac12(1+\Xi)-\tfrac12(1-\Xi)=\Xi$.</p>
+<p><strong>Corollary (the standard pair).</strong> The standard idempotents are the pair of the root $j$: $\Pi_{+}(j)=\Pi_{+}$ and $\Pi_{-}(j)=\Pi_{-}$.</p>
+<h3 id="the-arithmetic-of-the-pair">The Arithmetic of the Pair</h3>
+<p><strong>The pair of a root is complete and orthogonal, its difference is the root, and multiplication by the root acts by $+1$ on $\Pi_{+}$ and $-1$ on $\Pi_{-}$.</strong></p>
+<p>The four products of the pair are collected in the multiplication table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$\Pi_{+}$</th>
+<th>$\Pi_{-}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi_{+}$</td>
+<td>$\Pi_{+}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\Pi_{-}$</td>
+<td>$0$</td>
+<td>$\Pi_{-}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>so the pair is orthogonal and each member is idempotent.</p>
+<p>For a root $\Xi$ and the two idempotents $\Pi_{\pm}=\tfrac12(1\pm\Xi)$, the root acts on the pair by the two signs:</p>
+<p>$$
+\Xi\Pi_{+}=\Pi_{+},\qquad \Xi\Pi_{-}=-\Pi_{-}.
+$$</p>
+<p>The action is collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Multiplication by $\Xi$</th>
+<th>On $\Pi_{+}$</th>
+<th>On $\Pi_{-}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left or right</td>
+<td>$+1$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the root is $+1$ on the first idempotent and $-1$ on the second, and the algebra decomposes under multiplication by $\Xi$ into the two eigenspaces $\mathbb{C}\Pi_{+}$ and $\mathbb{C}\Pi_{-}$ with eigenvalues $+1$ and $-1$. The pair $\Pi_{\pm}$ is the spectral resolution of the root.</p>
+<p>The subalgebra spanned by the pair and the root is therefore the algebra $\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}\cong\mathbb{C}\times\mathbb{C}$, and the root is the element $(+1,-1)$ of that algebra. In the idempotent coordinates the pair is $(1,0)$ and $(0,1)$, and the root is $(1,-1)$; the four roots are the four sign choices on the two coordinates.</p>
+<h3 id="the-standard-idempotents">The Standard Idempotents</h3>
+<p><strong>The algebra carries the standard idempotents $\Pi_{+}=\tfrac12(1+j)$ and $\Pi_{-}=\tfrac12(1-j)$, the two idempotents of the root $j$, with $\Pi_{+}\Pi_{-}=0$ and $\Pi_{+}+\Pi_{-}=1$; each is central and primitive.</strong></p>
+<p>Put</p>
+<p>$$
+\Pi_{+}=\tfrac12(1+j),\qquad \Pi_{-}=\tfrac12(1-j).
+$$</p>
+<p>They are the pair of the root $j$ of $+1$, and they are the two solutions of the idempotent equation that are different from $0$ and $1$. Since $j^{2}=+1$,</p>
+<p>$$
+\Pi_{+}^{2}=\frac{1+2j+j^{2}}{4}=\frac{2+2j}{4}=\Pi_{+},\qquad \Pi_{-}^{2}=\Pi_{-},
+$$</p>
+<p>and</p>
+<p>$$
+\Pi_{+}\Pi_{-}=\frac{(1+j)(1-j)}{4}=\frac{1-j^{2}}{4}=0,\qquad \Pi_{+}+\Pi_{-}=1.
+$$</p>
+<p>They are <strong>central</strong>, because the algebra is commutative, and <strong>primitive</strong>, because the corner algebras $\Pi_{\pm}\mathbb{B}_{\mathrm{r}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$ are fields, isomorphic to $\mathbb{C}$. The properties of the pair are collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>$\Pi_{+},\Pi_{-}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orthogonal</td>
+<td>$\Pi_{+}\Pi_{-}=0$</td>
+</tr>
+<tr>
+<td>Complete</td>
+<td>$\Pi_{+}+\Pi_{-}=1$</td>
+</tr>
+<tr>
+<td>Central</td>
+<td>yes, the algebra is commutative</td>
+</tr>
+<tr>
+<td>Primitive</td>
+<td>yes, $\Pi_{\pm}\mathbb{B}_{\mathrm{r}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$</td>
+</tr>
+<tr>
+<td>Hermitian idempotent</td>
+<td>no for the star, which exchanges them; both are fixed by the bar</td>
+</tr>
+<tr>
+<td>Zero divisor</td>
+<td>yes, $\Pi_{+}\Pi_{-}=0$</td>
+</tr>
+<tr>
+<td>Minimal ideals</td>
+<td>$\mathbb{B}_{\mathrm{r}}\Pi_{\pm}=\mathbb{C}\Pi_{\pm}$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-classification-of-the-idempotents">The Classification of the Idempotents</h3>
+<p><strong>The idempotents of $\mathbb{B}_{\mathrm{r}}$ are exactly $0$, $1$, $\Pi_{+}$ and $\Pi_{-}$; there are no others.</strong></p>
+<p><strong>Theorem (the idempotents).</strong> The solutions of $\Pi^{2}=\Pi$ are</p>
+<p>$$
+\boxed{\; \Pi=0,\qquad \Pi=1,\qquad \Pi=\Pi_{+}=\tfrac12(1+j),\qquad \Pi=\Pi_{-}=\tfrac12(1-j) \;},
+$$</p>
+<p>and there are no others.</p>
+<p><strong>Proof.</strong> In the idempotent coordinates the equation is the pair $Q_{+}^{2}=Q_{+}$ and $Q_{-}^{2}=Q_{-}$; a complex number satisfies $z^{2}=z$ if and only if $z=0$ or $z=1$. The four pairs $(Q_{+},Q_{-})$ give, by $Q_{\blacktriangle}=\tfrac12(Q_{+}+Q_{-})$ and $Q_{\blacktriangledown}=\tfrac12(Q_{+}-Q_{-})$,</p>
+<p>$$
+(0,0)\to \Pi=0,\quad (1,1)\to \Pi=1,\quad (1,0)\to \Pi=\Pi_{+},\quad (0,1)\to \Pi=\Pi_{-}.
+$$</p>
+<h3 id="the-correspondence-with-the-roots-of-one">The Correspondence with the Roots of One</h3>
+<p><strong>The halving map $H(\Xi)=\tfrac12(1+\Xi)$ is a bijection from the roots of $+1$ onto the idempotents; the pair map $\Xi\mapsto(\Pi_{+}(\Xi),\Pi_{-}(\Xi))$ is a bijection from the roots of $+1$ onto the ordered complete orthogonal pairs of idempotents; and the class $\{\Xi,-\Xi\}$ gives the same unordered pair.</strong></p>
+<p><strong>Theorem (the halving map).</strong> The map</p>
+<p>$$
+H(\Xi)=\tfrac12(1+\Xi)
+$$</p>
+<p>restricts to a bijection from the roots of $+1$ onto the idempotents, with</p>
+<p>$$
+H(1)=1,\qquad H(-1)=0,\qquad H(j)=\Pi_{+},\qquad H(-j)=\Pi_{-},
+$$</p>
+<p>and the inverse on the idempotents is $\Pi\mapsto 2\Pi-1$.</p>
+<p><strong>Proof.</strong> The four values are direct: $\tfrac12(1+1)=1$, $\tfrac12(1-1)=0$, $\tfrac12(1+j)=\Pi_{+}$, $\tfrac12(1-j)=\Pi_{-}$. If $\Xi^{2}=1$ then $H(\Xi)^{2}=\tfrac14(1+2\Xi+\Xi^{2})=\tfrac14(2+2\Xi)=H(\Xi)$, so $H$ maps roots of $+1$ into idempotents; if $\Pi^{2}=\Pi$ then $2\Pi-1$ has $(2\Pi-1)^{2}=4\Pi^{2}-4\Pi+1=1$, so $2\Pi-1$ is a root of $+1$; and the two maps are inverse, since $H(2\Pi-1)=\tfrac12(1+2\Pi-1)=\Pi$.</p>
+<p><strong>Theorem (the pair map).</strong> The map
+$$
+\Xi\longmapsto(\Pi_{+}(\Xi),\Pi_{-}(\Xi))
+$$
+is a bijection from the roots of $+1$ onto the ordered pairs of idempotents that are complete and orthogonal, $\Pi_{+}+\Pi_{-}=1$ and $\Pi_{+}\Pi_{-}=0$.</p>
+<p><strong>Proof.</strong> The pair of a root is complete and orthogonal by §<em>The Two Idempotents of a Root</em>, so the map is well defined. It is injective because the root is recovered from the pair, $\Xi=\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$. It is surjective because an ordered complete orthogonal pair $(\Pi_{+},\Pi_{-})$ gives $\Xi=\Pi_{+}-\Pi_{-}$, and
+$$
+\Xi^{2}=\Pi_{+}^{2}-\Pi_{+}\Pi_{-}-\Pi_{-}\Pi_{+}+\Pi_{-}^{2}=\Pi_{+}+\Pi_{-}=1,
+$$
+so $\Xi$ is a root of $+1$ and the pair is its pair.</p>
+<p>The pair map is a bijection, so the idempotent classification and the root classification are the same classification read through it. The four roots and the two idempotents they carry correspond as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Root $\Xi$</th>
+<th>$\Pi_{+}(\Xi)=\tfrac12(1+\Xi)$</th>
+<th>$\Pi_{-}(\Xi)=\tfrac12(1-\Xi)$</th>
+<th>Unordered pair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trivial roots</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$\{0,1\}$</td>
+</tr>
+<tr>
+<td>Trivial roots</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$\{0,1\}$</td>
+</tr>
+<tr>
+<td>Non-trivial roots</td>
+<td>$j$</td>
+<td>$\Pi_{+}$</td>
+<td>$\Pi_{-}$</td>
+<td>$\{\Pi_{+},\Pi_{-}\}$</td>
+</tr>
+<tr>
+<td>Non-trivial roots</td>
+<td>$-j$</td>
+<td>$\Pi_{-}$</td>
+<td>$\Pi_{+}$</td>
+<td>$\{\Pi_{+},\Pi_{-}\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The root column is a bijection onto the idempotents; the last column is two-to-one. The root is recovered from the ordered pair as the difference of its members, $\Xi=\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$, and the unordered pair loses the sign of the root and nothing else. The roots of $+1$ and the idempotents meet in the single element $1$, the fixed point of the halving map.</p>
+<h3 id="the-families-of-idempotents">The Families of Idempotents</h3>
+<p><strong>The idempotents fall into two families, the trivial idempotents $0,1$ and the standard idempotents $\Pi_{\pm}$; both are finite.</strong></p>
+<p>The idempotents fall into the two following families.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Form</th>
+<th>Real parameters</th>
+<th>Size</th>
+<th>Position</th>
+<th>Fixed by the star?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trivial idempotents</td>
+<td>$0,1$</td>
+<td>none</td>
+<td>two elements</td>
+<td>the scalar line</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Standard idempotents</td>
+<td>$\Pi_{\pm}=\tfrac12(1\pm j)$</td>
+<td>none</td>
+<td>two elements</td>
+<td>the two idempotent lines</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The idempotents form a <strong>finite set of four elements</strong>, not a positive-dimensional family. The reason is visible in the classification: the idempotent equation forces $Q_{+}\in\{0,1\}$ and $Q_{-}\in\{0,1\}$, because each idempotent coordinate is a scalar and the equation $X^{2}=X$ has only the solutions $0$ and $1$; there is no vector part to vary independently. In the four-dimensional biquaternion algebra the non-trivial idempotents form a two-real-parameter Hermitian family and a four-real-parameter non-Hermitian family; here the non-trivial idempotents collapse to the two points $\Pi_{+},\Pi_{-}$. The idempotents are the indicator functions of the subsets of a two-point set under $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$:</p>
+<p>$$
+0\longmapsto(0,0),\qquad \Pi_{+}\longmapsto(1,0),\qquad \Pi_{-}\longmapsto(0,1),\qquad 1\longmapsto(1,1).
+$$</p>
+<h3 id="idempotents-and-their-projectors">Idempotents and Their Projectors</h3>
+<p><strong>Every idempotent is the member attached to $+1$ of the pair of a root, and its complement the member attached to $-1$; the two standard idempotents carry the two projections that resolve the identity.</strong></p>
+<p>An idempotent $\Pi$ acts by multiplication as a <strong>projector</strong>: $\Pi^{2}=\Pi$, so $L_{\Pi}$ is the identity on its image and annihilates its kernel. Its complement $1-\Pi$ is also an idempotent, and $\Pi(1-\Pi)=0$, so the pair gives the direct-sum decomposition</p>
+<p>$$
+\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{\mathrm{r}}\Pi\oplus\mathbb{B}_{\mathrm{r}}(1-\Pi),
+$$</p>
+<p>the same on the left and on the right because the algebra is commutative.</p>
+<p>For the standard pair the projections are the projections onto the two idempotent lines,</p>
+<p>$$
+P_{+}:\breve Q\longmapsto \breve Q\Pi_{+}=Q_{+}\Pi_{+},\qquad
+P_{-}:\breve Q\longmapsto \breve Q\Pi_{-}=Q_{-}\Pi_{-},
+$$</p>
+<p>with</p>
+<p>$$
+P_{+}^{2}=P_{+},\qquad P_{-}^{2}=P_{-},\qquad P_{+}P_{-}=P_{-}P_{+}=0,\qquad P_{+}+P_{-}=\mathrm{id}.
+$$</p>
+<p>The identity $P_{+}+P_{-}=\mathrm{id}$ is the <strong>resolution of the identity</strong>, and the two projections are the Peirce projections of the algebra. The images are the two lines, which meet only at the origin. The two projectors are collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Projector</th>
+<th>Formula</th>
+<th>Image</th>
+<th>Kernel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_{+}$</td>
+<td>$\breve Q\mapsto \breve Q\Pi_{+}$</td>
+<td>$\mathbb{C}\Pi_{+}$</td>
+<td>$\mathbb{C}\Pi_{-}$</td>
+</tr>
+<tr>
+<td>$P_{-}$</td>
+<td>$\breve Q\mapsto \breve Q\Pi_{-}$</td>
+<td>$\mathbb{C}\Pi_{-}$</td>
+<td>$\mathbb{C}\Pi_{+}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The decomposition of a general element reads</p>
+<p>$$
+\breve Q=P_{+}(\breve Q)+P_{-}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_{+}+(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_{-},
+$$</p>
+<p>the idempotent coordinates of <em>Reduced Biquaternion Space</em>. The Peirce decomposition of a pair of idempotents, with the four subspaces $\Pi\mathbb{B}_{\mathrm{r}}\Pi$, $\Pi\mathbb{B}_{\mathrm{r}}(1-\Pi)$, $(1-\Pi)\mathbb{B}_{\mathrm{r}}\Pi$ and $(1-\Pi)\mathbb{B}_{\mathrm{r}}(1-\Pi)$, is <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; here only the two projections and the two lines they carry are read.</p>
+<h3 id="idempotents-and-the-zero-divisors">Idempotents and the Zero Divisors</h3>
+<p><strong>A non-trivial idempotent is a zero divisor, and conversely every zero divisor is a nonzero complex multiple of one of the two non-trivial idempotents.</strong></p>
+<p>A non-trivial idempotent is a zero divisor, since</p>
+<p>$$
+\Pi_{+}(1-\Pi_{+})=\Pi_{+}\Pi_{-}=0,\qquad \Pi_{+}\neq0,\qquad 1-\Pi_{+}=\Pi_{-}\neq0,
+$$</p>
+<p>and symmetrically for $\Pi_{-}$. Conversely, every zero divisor is a nonzero complex multiple of one of the two non-trivial idempotents:</p>
+<p>$$
+\mathcal{Z}=\mathbb{C}^{\times}\Pi_{+}\cup\mathbb{C}^{\times}\Pi_{-}.
+$$</p>
+<p>The two kinds of zero divisor are collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Zero divisor</th>
+<th>Form</th>
+<th>Relation to the idempotents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-trivial idempotents</td>
+<td>$\Pi_{+},\Pi_{-}$</td>
+<td>the primitive zero divisors</td>
+</tr>
+<tr>
+<td>All nonzero multiples</td>
+<td>$\mathbb{C}^{\times}\Pi_{+}\cup\mathbb{C}^{\times}\Pi_{-}$</td>
+<td>every zero divisor</td>
+</tr>
+</tbody>
+</table></div>
+<p>That statement, with its proof and the structure of the zero-divisor set, is <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the present article records only that the non-trivial idempotents are the primitive zero divisors.</p>
+<h3 id="idempotents-and-the-minimal-ideals">Idempotents and the Minimal Ideals</h3>
+<p><strong>The standard idempotents generate the two non-trivial minimal ideals, and the algebra is their direct sum.</strong></p>
+<p>The principal ideals</p>
+<p>$$
+\mathbb{B}_{\mathrm{r}}\Pi_{+}=\mathbb{C}\Pi_{+},\qquad \mathbb{B}_{\mathrm{r}}\Pi_{-}=\mathbb{C}\Pi_{-}
+$$</p>
+<p>are the two non-trivial minimal ideals, and</p>
+<p>$$
+\boxed{\; \mathbb{B}_{\mathrm{r}}=\mathbb{B}_{\mathrm{r}}\Pi_{+}\oplus\mathbb{B}_{\mathrm{r}}\Pi_{-} \;}
+$$</p>
+<p>is the direct sum of the two copies of $\mathbb{C}$. The two ideals are collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ideal</th>
+<th>Generator</th>
+<th>Form</th>
+<th>Minimality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Two-sided</td>
+<td>$\Pi_{+}$</td>
+<td>$\mathbb{B}_{\mathrm{r}}\Pi_{+}=\mathbb{C}\Pi_{+}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Two-sided</td>
+<td>$\Pi_{-}$</td>
+<td>$\mathbb{B}_{\mathrm{r}}\Pi_{-}=\mathbb{C}\Pi_{-}$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The minimality is proved in <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>, where the idempotents, the Peirce decomposition and the failure of simplicity are developed together.</p>
+<h3 id="idempotents-and-the-involutions">Idempotents and the Involutions</h3>
+<p><strong>The tessarine sign and the star both exchange the two non-trivial idempotents, and only the bar fixes every idempotent.</strong></p>
+<p><strong>Theorem.</strong> $\Pi_{+,\mathrm{ts}}=\Pi_{-}=\Pi_{+}^{*}$, $\Pi_{-,\mathrm{ts}}=\Pi_{+}=\Pi_{-}^{*}$, and $\overline{\Pi_{+}}=\Pi_{+}$, $\overline{\Pi_{-}}=\Pi_{-}$; the flat sends each idempotent to the negative of the other, $\Pi_{+}^{\flat}=-\Pi_{-}$ and $\Pi_{-}^{\flat}=-\Pi_{+}$, which is not an idempotent.</p>
+<p><strong>Proof.</strong> $\Pi_{+,\mathrm{ts}}=\tfrac12(1+j)_{\mathrm{ts}}=\tfrac12(1-j)=\Pi_{-}$, and $\Pi_{-,\mathrm{ts}}=\Pi_{+}$ (<em>The Two Involutions and the Group of Involutions</em>); the bar conjugates the coefficients of $\Pi_{\pm}=\tfrac12\pm\tfrac12 j$, which are real, so it fixes each idempotent; the star is $\bar{\cdot}\circ{}_{\mathrm{ts}}$, so $\Pi_{+}^{*}=\overline{\Pi_{+,\mathrm{ts}}}=\overline{\Pi_{-}}=\Pi_{-}$ and $\Pi_{-}^{*}=\Pi_{+}$, the star exchanging the two as the tessarine sign does. The flat is $-{}^{*}$, so it sends each idempotent to the negative of the other.</p>
+<p>The action of the involutions on the idempotents is collected in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Involution</th>
+<th>$0$</th>
+<th>$1$</th>
+<th>$\Pi_{+}$</th>
+<th>$\Pi_{-}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bar $\bar{\cdot}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$\Pi_{+}$</td>
+<td>$\Pi_{-}$</td>
+</tr>
+<tr>
+<td>tessarine sign ${}_{\mathrm{ts}}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$\Pi_{-}$</td>
+<td>$\Pi_{+}$</td>
+</tr>
+<tr>
+<td>star ${}^{*}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$\Pi_{-}$</td>
+<td>$\Pi_{+}$</td>
+</tr>
+<tr>
+<td>flat ${}^{\flat}$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\Pi_{-}$</td>
+<td>$-\Pi_{+}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The trivial idempotents $0$ and $1$ are fixed by the bar, the tessarine sign and the star; the flat fixes $0$ and sends $1$ to $-1$.</p>
+<p><strong>Corollary (the involution swaps the two lines).</strong> The tessarine sign restricts to a $\mathbb{C}$-linear exchange of the two idempotent lines, $\mathbb{C}\Pi_{+}\leftrightarrow\mathbb{C}\Pi_{-}$, and the two lines are therefore conjugate under the intrinsic conjugate.</p>
+<h2 id="summary">Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roots of $+1$</td>
+<td>$1,-1,j,-j$</td>
+</tr>
+<tr>
+<td>Roots of $-1$</td>
+<td>$i,-i,ij,-ij$</td>
+</tr>
+<tr>
+<td>Root set</td>
+<td>group $(\mathbb{Z}/2\mathbb{Z})^{2}$, every non-identity element of order $2$</td>
+</tr>
+<tr>
+<td>Idempotents</td>
+<td>$0,1,\Pi_{+},\Pi_{-}$</td>
+</tr>
+<tr>
+<td>Hermitian idempotents</td>
+<td>$0,1$, the star fixing them</td>
+</tr>
+<tr>
+<td>Non-Hermitian idempotents</td>
+<td>$\Pi_{+},\Pi_{-}$, the star exchanging them</td>
+</tr>
+<tr>
+<td>Halving map</td>
+<td>bijection $H(\Xi)=\tfrac12(1+\Xi)$, inverse $H^{-1}(\Pi)=2\Pi-1$</td>
+</tr>
+<tr>
+<td>Standard pair</td>
+<td>central, primitive, complete and orthogonal; $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>the non-trivial idempotents and their nonzero complex multiples</td>
+</tr>
+<tr>
+<td>Involutions</td>
+<td>the tessarine sign and the star exchange $\Pi_{+}$ and $\Pi_{-}$; the bar fixes both; the flat sends each to the negative of the other</td>
+</tr>
+</tbody>
+</table></div>
+<p>The roots of $+1$ in the general plain algebra are the four elements</p>
+<p>$$
+1,\qquad -1,\qquad j,\qquad -j,
+$$</p>
+<p>and they form the group $(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication; they all lie in the real subalgebra $\mathbb{R}\{1,j\}$, and every root is a unit. The roots of $-1$ are the four elements $\pm i$ and $\pm ij$, the roots of $+1$ multiplied by $i$.</p>
+<p>The idempotents are the four elements</p>
+<p>$$
+0,\qquad 1,\qquad \Pi_{+}=\tfrac12(1+j),\qquad \Pi_{-}=\tfrac12(1-j),
+$$</p>
+<p>and the two non-trivial ones are complementary, orthogonal and zero divisors,</p>
+<p>$$
+\Pi_{+}^{2}=\Pi_{+},\qquad \Pi_{-}^{2}=\Pi_{-},\qquad \Pi_{+}\Pi_{-}=0,\qquad \Pi_{+}+\Pi_{-}=1 .
+$$</p>
+<p>Each root $\Xi$ of $+1$ carries the two idempotents $\Pi_{+}(\Xi)=\tfrac12(1+\Xi)$ and $\Pi_{-}(\Xi)=\tfrac12(1-\Xi)=1-\Pi_{+}(\Xi)$, a complete orthogonal pair whose difference is the root; the <strong>halving map</strong> $H(\Xi)=\tfrac12(1+\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$, and the class $\{\Xi,-\Xi\}$ gives the same unordered pair. The four roots give the two unordered pairs $\{0,1\}$ and $\{\Pi_{+},\Pi_{-}\}$.</p>
+<p>Each idempotent $\Pi$ carries the projector $P_{\Pi}(\breve Q)=\Pi\breve Q$, with $P_{\Pi}^{2}=P_{\Pi}$, $P_{+}+P_{-}=\mathrm{id}$ and $P_{+}P_{-}=0$; the explicit projections are $P_{+}(\breve Q)=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_{+}$ and $P_{-}(\breve Q)=(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_{-}$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$. The two lines are the two minimal ideals, and the standard pair is central, primitive and complete. The trivial idempotents are Hermitian, fixed by the star, and the non-trivial ones are non-Hermitian, exchanged by it. The non-trivial idempotents are the primitive zero divisors, and every zero divisor is a nonzero complex multiple of one of them. The <strong>tessarine sign</strong> and the <strong>star</strong> both exchange the two non-trivial idempotents, $\Pi_{+,\mathrm{ts}}=\Pi_{-}=\Pi_{+}^{*}$ and $\Pi_{-,\mathrm{ts}}=\Pi_{+}=\Pi_{-}^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_{+}}=\Pi_{+}$ and $\overline{\Pi_{-}}=\Pi_{-}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$</td>
+<td>The reduced biquaternion algebra, with basis $1,i,j,ij$</td>
+</tr>
+<tr>
+<td>${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$</td>
+<td>The star, the intrinsic involution</td>
+</tr>
+<tr>
+<td>$\Xi$</td>
+<td>A root of $+1$, $\Xi^{2}=1$</td>
+</tr>
+<tr>
+<td>$\mathcal{R}_{+1}=\{1,-1,j,-j\}$</td>
+<td>The four roots of $+1$, a group $(\mathbb{Z}/2\mathbb{Z})^{2}$</td>
+</tr>
+<tr>
+<td>$\Xi_{\pm}$</td>
+<td>The idempotent coordinates of the root $\Xi$</td>
+</tr>
+<tr>
+<td>$\Pi$</td>
+<td>An idempotent, $\Pi^{2}=\Pi$</td>
+</tr>
+<tr>
+<td>Hermitian idempotent</td>
+<td>An idempotent fixed by the star, $\Pi^{*}=\Pi$</td>
+</tr>
+<tr>
+<td>$\Pi_{\pm}=\tfrac12(1\pm j)$</td>
+<td>The standard idempotents</td>
+</tr>
+<tr>
+<td>$\Pi_{\pm}(\Xi)=\tfrac12(1\pm\Xi)$</td>
+<td>The two idempotents carried by the root $\Xi$</td>
+</tr>
+<tr>
+<td>$\Pi_{+}(\Xi)+\Pi_{-}(\Xi)=1$, $\Pi_{+}(\Xi)\Pi_{-}(\Xi)=0$</td>
+<td>Completeness and orthogonality of the pair</td>
+</tr>
+<tr>
+<td>$\Xi=\Pi_{+}(\Xi)-\Pi_{-}(\Xi)$</td>
+<td>The root as the difference of its pair</td>
+</tr>
+<tr>
+<td>$H(\Xi)=\tfrac12(1+\Xi)$</td>
+<td>The halving map from the roots of $+1$ to the idempotents</td>
+</tr>
+<tr>
+<td>$H^{-1}(\Pi)=2\Pi-1$</td>
+<td>The inverse halving map</td>
+</tr>
+<tr>
+<td>$P_{\Pi}(\breve Q)=\Pi\breve Q$</td>
+<td>The projector carried by an idempotent</td>
+</tr>
+<tr>
+<td>$P_{+}+P_{-}=\mathrm{id}$</td>
+<td>The resolution of the identity</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$</td>
+<td>The direct sum, the two minimal ideals</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-algebra-of-the-reduced-biquaternions.html">Introduction to the Algebra of the Reduced Biquaternions</a>, above this article in this category, for the algebra and the idempotent coordinates.</li>
+<li><a href="the-two-involutions-and-the-group-of-involutions.html">The Two Involutions and the Group of Involutions</a>, above this article, for the action of the four maps on the idempotents.</li>
+<li><a href="zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html">Zero Divisors of the Algebra of the Reduced Biquaternions</a>, above this article, for the two lines the idempotents generate.</li>
+<li><a href="annihilators-of-the-algebra-of-the-reduced-biquaternions.html">Annihilators of the Algebra of the Reduced Biquaternions</a>, above this article, for the annihilators of the idempotent lines.</li>
+<li><a href="square-roots-of-zero-and-the-nilpotents-of-the-algebra-of-the-reduced-biquaternions.html">Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions</a>, below this article, for the companion equation $\Xi^{2}=0$.</li>
+<li><a href="ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html">Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</a>, below this article in this category, for the full Peirce decomposition.</li>
+<li><a href="square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html">Square Roots of One and the Idempotents of the Split-Complex Algebra</a>, the real commutative case, where the same four-point pattern is read over $\mathbb{R}$.</li>
+<li><a href="idempotents.html">Idempotents</a>, the non-commutative counterpart, where the roots of $+1$ and the idempotents form larger families.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

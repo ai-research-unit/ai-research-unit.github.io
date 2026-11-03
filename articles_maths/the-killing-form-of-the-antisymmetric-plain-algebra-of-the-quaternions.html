@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Killing Form of the Antisymmetric Plain Algebra of the Quaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-killing-form-of-the-antisymmetric-plain-algebra-of-the-quaternions"><strong>The Killing Form of the Antisymmetric Plain Algebra of the Quaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetric plain algebra of $\mathbb{H}$ is the real Lie algebra
+$\mathfrak{g}=(\mathbb{H},\times)$ with the cross product
+$\tilde q_1\times\tilde q_2=\vec q_1\times\vec q_2$ of <em>The Lie Algebra of the Antisymmetric Plain
+Algebra</em>, below this article in this category. This article computes its Killing form, identifies the
+space of invariant bilinear forms, exhibits the Casimir element and compares the form with the Euclidean form of that
+subspace.</p>
+<p>The result is simple and rigid: the form is the Euclidean form of the vector subspace up to the factor
+$-2$, with the scalar direction in its radical, so it is negative semidefinite, negative definite on
+the derived algebra, and its radical is the centre. The space of invariant bilinear forms is the plane
+spanned by the Killing form and the scalar-part form $\varphi(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}$, and there is
+no nonzero alternating invariant form.</p>
+<p><strong>This is not the algebra $\mathbb{H}$.</strong> The form belongs to the Lie bracket of the vector parts, not
+to the associative multiplication. Throughout, the natural sign ${}^{\natural}$ is the quaternion
+conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star
+coincides with the natural sign and gives nothing new.</p>
+<p>The Lie algebra, its centre and its derived algebra are <em>The Lie Algebra of the Antisymmetric Plain
+Algebra</em>; the adjoint operators and the derivations are <em>The Adjoint Operators and the Derivations of
+the Antisymmetric Plain Algebra</em>, both below this article in this category.
+counterparts are <em>The Killing Form of the Antisymmetric Plain Algebra</em> and *Norm and Invertibility in</p>
+<h2 id="the-adjoint-representation-and-the-killing-form">The Adjoint Representation and the Killing Form</h2>
+<p><strong>Definition.</strong> The <strong>Killing form</strong> of the Lie algebra $\mathfrak{g}=(\mathbb{H},\times)$ is</p>
+<p>$$
+\kappa(\tilde q_1,\tilde q_2)=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde q_1}\operatorname{ad}_{\tilde q_2}\bigr),
+$$</p>
+<p>where $\operatorname{ad}_{\tilde q_1}\tilde q_2=\tilde q_1\times\tilde q_2$ is the adjoint operator, of
+<em>The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra</em>, below this article in
+this category.</p>
+<p><strong>Proposition.</strong> In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the adjoint is the block matrix
+$\operatorname{ad}_{\tilde q}=\operatorname{diag}(0,C_{\vec q})$ on
+$\mathbb{H}=\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{H})$, its square is
+$\operatorname{diag}(0,C_{\vec q}^2)$, and its trace is zero.</p>
+<p><em>Proof.</em> The bracket vanishes on the centre, so the centre is the kernel and the first block vanishes;
+on the vector subspace the adjoint is the cross product by $\vec q$, whose matrix is $C_{\vec q}$;
+a cross-product matrix is traceless, being skew-symmetric.</p>
+<h2 id="the-computation-of-the-form">The Computation of the Form</h2>
+<p><strong>Theorem (the form).</strong> For all $\tilde q_1,\tilde q_2$,</p>
+<p>$$
+\boxed{\;\kappa(\tilde q_1,\tilde q_2)=\operatorname{Tr}\bigl(C_{\vec q_1}C_{\vec q_2}\bigr)=-2\,\vec q_1\cdot\vec q_2\;}.
+$$</p>
+<p>In the basis the Gram matrix is $\operatorname{diag}(0,-2,-2,-2)$.</p>
+<p><em>Proof.</em> The adjoint product is $\operatorname{diag}(0,C_{\vec q_1}C_{\vec q_2})$ and the scalar
+block is zero, so the trace is $\operatorname{Tr}(C_{\vec q_1}C_{\vec q_2})$. Writing
+$C_{\vec q_1}\vec q_2=\vec q_1\times\vec q_2$ and using
+$\operatorname{Tr}(AB)=\sum_{i,j}A_{ij}B_{ji}=-\sum_{i,j}A_{ij}B_{ij}$ for skew-symmetric $A,B$, the
+trace is minus the Frobenius pairing of $C_{\vec q_1}$ and $C_{\vec q_2}$, which is
+$2\,\vec q_1\cdot\vec q_2$, so $\kappa=-2\,\vec q_1\cdot\vec q_2$.</p>
+<h2 id="the-invariance-and-the-two-forms">The Invariance and the Two Forms</h2>
+<p><strong>Proposition (invariance).</strong> The Killing form is symmetric and invariant,</p>
+<p>$$
+\boxed{\;\kappa(\tilde q_1\times\tilde q_2,\tilde q_3)+\kappa(\tilde q_2,\tilde q_1\times\tilde q_3)=0\;},
+$$</p>
+<p>and it is the form of the vector subspace alone: it does not see the scalar coordinates.</p>
+<p><em>Proof.</em> A Killing form is symmetric and invariant by the general theory of Lie algebras
+(<em>Structure of Lie Algebras</em>); on the block it is read as $-2\,\vec q_1\cdot\vec q_2$, which is zero
+whenever one of the arguments is central.</p>
+<p><strong>Theorem (the invariant bilinear forms).</strong> The space of invariant bilinear forms of $\mathfrak{g}$ is
+two-dimensional, spanned by the Killing form $\kappa$ and the scalar-part form
+$\varphi(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}$. There is no nonzero <strong>alternating</strong> invariant form. The plain
+form is the combination</p>
+<p>$$
+\boxed{\;B=\varphi+\tfrac12\kappa,\qquad \langle\tilde q_1,\tilde q_2\rangle=q_{1t}q_{2t}-\vec q_1\cdot\vec q_2\;},
+$$</p>
+<p>and it is nondegenerate, of signature $(1,3)$.</p>
+<p><em>Proof.</em> An invariant form is determined by its values on the two components and by the invariance,
+which forces the vanishing of the coupling between the centre and the derived algebra; on the simple
+derived algebra the invariant forms are the multiples of the Killing form, and on the abelian centre
+the one-dimensional scalar-part form is free. The Killing form is negative definite on the derived
+algebra and zero on the centre, the scalar-part form is positive definite on the centre and zero on the
+derived algebra, and there is no alternating source, the forms of a simple algebra being the multiples
+of the Killing form, which is symmetric. The plain form is the displayed combination and its
+signature is the inertia of $q_{1t}q_{2t}-\vec q_1\cdot\vec q_2$, one positive and three negative
+directions.</p>
+<h2 id="the-radical-and-the-definiteness">The Radical and the Definiteness</h2>
+<p><strong>Theorem.</strong> The radical of the Killing form is the centre,</p>
+<p>$$
+\boxed{\;\{\tilde q_1:\kappa(\tilde q_1,\tilde q_2)=0\ \text{for every }\tilde q_2\}=\mathbb{R}e_t\;},
+$$</p>
+<p>of real dimension one; the form is negative semidefinite, $\kappa(\tilde q,\tilde q)=-2|\vec q|^2\le0$,
+with equality exactly on the centre; and it is negative definite on the derived algebra.</p>
+<p><em>Proof.</em> $\kappa(\tilde q_1,\tilde q_2)=-2\,\vec q_1\cdot\vec q_2$ vanishes for every $\tilde q_2$ exactly
+when $\vec q_1=0$, which is the centre. The diagonal value is $-2|\vec q|^2$, non-positive and zero
+only for $\vec q=0$.</p>
+<h2 id="the-casimir-element">The Casimir Element</h2>
+<p><strong>Definition.</strong> Let $h_{\mu\nu}$ be the inverse of the Gram matrix $\kappa(\vec e_\mu,\vec e_\nu)=-2\delta_{\mu\nu}$, that is
+$h_{\mu\nu}=-\tfrac12\delta_{\mu\nu}$. The <strong>Casimir element</strong> of the block is</p>
+<p>$$
+\Omega=\sum_{\mu,\nu}h_{\mu\nu}\vec e_\mu \vec e_\nu=-\tfrac12\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2\bigr),
+$$</p>
+<p>an element of the universal enveloping algebra $\mathrm{U}(\mathfrak{g})$.</p>
+<p><strong>Theorem (the eigenvalue).</strong> The Casimir acts as the identity on the adjoint representation, that is
+on the derived algebra $\mathrm{Vect}(\mathbb{H})$, as the scalar $\tfrac38$ on the two-dimensional
+module of $\mathfrak{su}(2)$, and as $0$ on the centre.</p>
+<p><em>Proof.</em> On the derived algebra the adjoint is $\vec q\mapsto C_{\vec q}$, and
+$C_{\vec q}^2=\vec q\vec q^{\mathsf T}-|\vec q|^2\mathrm{I}_3$ gives
+$\sum_k C_{\vec e_k}^2=-2\mathrm{I}_3$; hence
+$\Omega$ acts as $-\tfrac12\sum_k C_{\vec e_k}^2=\mathrm{I}_3$. The two-dimensional module sends $\vec e_k$ to $-\tfrac{i}{2}\sigma_k$,
+and $\Omega$ acts as $-\tfrac12\sum_k(-\tfrac{i}{2}\sigma_k)^2=\tfrac18\sum_k\sigma_k^2=\tfrac38\mathrm{I}_2$ because
+the Pauli matrices satisfy $\sigma_k^2=\mathrm{I}_2$. The centre is annihilated.</p>
+<p><strong>Remark (the Casimir and the two norms).</strong> The eigenvalue $\tfrac38$ on the two-dimensional module is
+form realizes; the two readings are the two available values of the Casimir, and they do not conflict,
+being read on different representations.</p>
+<h2 id="the-cartan-criterion">The Cartan Criterion</h2>
+<p><strong>Proposition.</strong> The Lie algebra $\mathfrak{g}$ is not semisimple, and the degeneracy of its Killing
+form exhibits it: by Cartan's criterion an algebra is semisimple exactly when its Killing form is
+nondegenerate, and here the form degenerates on the centre. The semisimple part of $\mathfrak{g}$, the
+derived algebra, has the negative definite form, as a compact real form must.</p>
+<p><em>Proof.</em> The radical is the centre, of dimension one; the form is nondegenerate exactly on the derived
+algebra, where it is the negative definite form of $\mathfrak{su}(2)$.</p>
+<h2 id="summary">Summary</h2>
+<p>The Killing form of the antisymmetric plain algebra is $\kappa(\tilde q_1,\tilde q_2)=\operatorname{Tr}(C_{\vec q_1}C_{\vec q_2})=-2\,\vec q_1\cdot\vec q_2$,
+of Gram matrix $\operatorname{diag}(0,-2,-2,-2)$: the Euclidean form of the vector subspace in the
+negative direction, with the scalar direction in its radical. It is symmetric and invariant, negative
+semidefinite, and negative definite on the derived algebra, whose compact form it is. The space of
+invariant bilinear forms is two-dimensional, spanned by the Killing form and the scalar-part form
+$q_{1t}q_{2t}$, and the plain form is their combination $\langle\cdot,\cdot\rangle=\varphi+\tfrac12\kappa$, nondegenerate of
+signature $(1,3)$; there is no nonzero alternating invariant form. The Casimir element
+$\Omega=-\tfrac12(\vec e_x^2+\vec e_y^2+\vec e_z^2)$ acts as the identity on the adjoint and as $\tfrac38$ on the
+two-dimensional module. By Cartan's criterion the algebra is not semisimple, the radical being the
+centre. Over $\mathbb{C}$ the same computation gives an indefinite form; the antisymmetric
+quaternionic block has no Killing form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\kappa(\tilde q_1,\tilde q_2)=\operatorname{Tr}(\operatorname{ad}_{\tilde q_1}\operatorname{ad}_{\tilde q_2})$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$-2\,\vec q_1\cdot\vec q_2$, Gram $\operatorname{diag}(0,-2,-2,-2)$</td>
+<td>the computation</td>
+</tr>
+<tr>
+<td>$\mathbb{R}e_t$</td>
+<td>the radical, the centre</td>
+</tr>
+<tr>
+<td>$\varphi(\tilde q_1,\tilde q_2)=q_{1t}q_{2t}$</td>
+<td>the scalar-part form, the second invariant form</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle=\varphi+\tfrac12\kappa$</td>
+<td>the plain form, nondegenerate of signature $(1,3)$</td>
+</tr>
+<tr>
+<td>$\Omega=-\tfrac12(\vec e_x^2+\vec e_y^2+\vec e_z^2)$</td>
+<td>the Casimir element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lie-algebra-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Lie Algebra of the Antisymmetric Plain Algebra of the Quaternions</a>, below this article in this category, for the centre, the derived algebra and the structure constants.</li>
+<li><a href="the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra of the Quaternions</a>, below this article in this category, for the adjoint representation and the derivation algebra.</li>
+<li><a href="the-specificities-of-the-antisymmetric-plain-algebra-of-the-quaternions.html">The Specificities of the Antisymmetric Plain Algebra of the Quaternions</a>, below this article in this category, for the isolation of the block and the folded element classes.</li>
+<li><a href="structure-of-lie-algebras.html">Structure of Lie Algebras</a>, for the Killing form, the radical, the Cartan criterion and the Casimir element.</li>
+<li><a href="the-2-forms-over-the-quaternioid-r-space.html">The 2 Forms over the Quaternioid $\mathbb{R}$ Space</a>, for the plain and the quaternion forms of the space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

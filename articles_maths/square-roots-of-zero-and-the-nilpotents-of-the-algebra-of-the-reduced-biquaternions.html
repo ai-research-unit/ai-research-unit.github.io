@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="square-roots-of-zero-and-the-nilpotents-of-the-algebra-of-the-reduced-biquaternions"><strong>Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article reads the roots of zero and the nilpotents of the multiplication and of the four general products. For the <strong>multiplication</strong> the result is an <strong>absence</strong>: the only element with $\breve Q^{2}=0$ is $\breve Q=0$, and there is <strong>no nonzero nilpotent</strong>, because the algebra is reduced. The algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two fields and has no nilpotent elements beyond $0$; its radical is trivial.</p>
+<p>The higher products are read <strong>product by product</strong>, because the roots of zero of a product depend on the product and not on the space. The results are:
+$$
+\breve Q_{1}\breve Q_{2}=0\ \text{on}\ \breve Q_{1}=\breve Q_{2} \iff \breve Q_{1}=0,\qquad
+\breve Q_{\mathrm{ts}}\breve Q=0 \iff \breve Q\in\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-,
+$$
+$$
+\breve Q \breve Q^{*}=0 \iff \breve Q\in\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-,\qquad
+\breve Q_{\mathrm{ts}}\breve Q^{*}=0 \iff \breve Q=0 .
+$$
+The two <strong>bilinear</strong> products split: the general plain bilinear product has no nonzero square-zero element, and the general tessarine bilinear product has the two idempotent lines. The two <strong>sesquilinear</strong> products split the other way: the general plain sesquilinear product has the two lines, and the general tessarine sesquilinear product has none. The two lines are the <strong>same</strong> set for every one of the three products that have a nonzero square-zero element, namely the null cone of the reduced norm.</p>
+<p><strong>The results.</strong> The roots of zero of the multiplication are $\{0\}$, and the multiplication has no nonzero nilpotent; the algebra is <strong>reduced</strong>, its nilradical and its Jacobson radical are $\{0\}$, and it is semisimple. The tessarine bilinear product and the plain sesquilinear product each have the two idempotent lines as their nonzero square-zero set, and each is <strong>nilpotent of index two</strong> on those lines. The tessarine sesquilinear product has no nonzero square-zero element, and its nilpotents are the two lines with <strong>index three</strong>: $\breve Q^{\star2}\neq0$ and $\breve Q^{\star3}=0$ for a nonzero element of a line. The plain bilinear product is the multiplication and has none.</p>
+<h2 id="the-roots-of-zero-of-the-multiplication">The Roots of Zero of the Multiplication</h2>
+<h3 id="the-equation-and-the-single-root">The Equation and the Single Root</h3>
+<p><strong>The equation $\breve Q^{2}=0$ has exactly one solution, $\breve Q=0$, in the multiplication.</strong></p>
+<p><strong>Theorem (the roots of zero).</strong> The solutions of $\breve Q^{2}=0$ in the multiplication are the single element $\breve Q=0$.</p>
+<p><em>Proof.</em> In the idempotent coordinates $\breve Q=(Q_{+},Q_{-})$ the product is componentwise, so $\breve Q^{2}=(Q_{+}^{2},Q_{-}^{2})$ (<em>Introduction to the Algebra of the Reduced Biquaternions</em>). The equation $\breve Q^{2}=0$ is the pair $Q_{+}^{2}=0$, $Q_{-}^{2}=0$; a complex number of square zero is $0$, so $Q_{+}=Q_{-}=0$ and $\breve Q=0$.</p>
+<p><strong>Corollary (the two lines are not roots of zero of the multiplication).</strong> The nonzero elements of the two idempotent lines are zero divisors, $Q_{+}\Pi_+\cdot\Pi_-=Q_{-}\Pi_-\cdot\Pi_+=0$, but they are not square-zero: $(Q_{+}\Pi_+)^{2}=Q_{+}^{2}\Pi_+\neq0$ for $Q_{+}\neq0$, and $(Q_{-}\Pi_-)^{2}=Q_{-}^{2}\Pi_-\neq0$ for $Q_{-}\neq0$.</p>
+<h3 id="the-algebra-is-reduced">The Algebra Is Reduced</h3>
+<p><strong>The multiplication has no nonzero nilpotent, the algebra is reduced, and its radical is trivial.</strong></p>
+<p><strong>Definition.</strong> An element $\breve Q$ is <strong>nilpotent</strong> if some power vanishes, $\breve Q^{n}=0$ for some $n\geq1$; the <strong>nilradical</strong> is the set of the nilpotent elements, and the algebra is <strong>reduced</strong> if its only nilpotent is $0$.</p>
+<p><strong>Theorem (the algebra is reduced and semisimple).</strong> The multiplication has no nonzero nilpotent; the nilradical is $\{0\}$ and the Jacobson radical is $\{0\}$; the algebra is semisimple, being a direct product of two fields.</p>
+<p><em>Proof.</em> The multiplication is commutative and associative, and the algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two fields (<em>Reduced Biquaternion Space</em>); in a direct product of fields an element is nilpotent iff both coordinates are nilpotent, and a field has no nonzero nilpotent, so the coordinates vanish and the element is $0$. A commutative algebra that is a direct product of fields is semisimple, and its Jacobson radical is the intersection of the maximal ideals, which is $\mathbb{C}\Pi_+\cap\mathbb{C}\Pi_-=\{0\}$ (<em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>, §<em>The Maximal Ideals</em>).</p>
+<p><strong>Remark (the reduction is the structure).</strong> The absence of nilpotents is not an accident of the coefficients: the algebra is a direct product of two copies of the field $\mathbb{C}$, hence reduced for every coefficient field, and the two squares of a general element are read componentwise. The idempotent coordinates are the reason: squaring is squaring in each coordinate, and $\mathbb{C}$ has no nilpotent.</p>
+<h2 id="the-roots-of-zero-of-the-four-products">The Roots of Zero of the Four Products</h2>
+<h3 id="the-tables">The Tables</h3>
+<p><strong>The square-zero set and the nilpotent set of each of the four products are the ones of the table below.</strong></p>
+<p>For a product $\star$ the <strong>square-zero set</strong> is $\{\breve Q:\breve Q\star \breve Q=0\}$ and the <strong>nilpotent set</strong> is the set of elements some left-nested power of which vanishes, $\breve Q^{\star n}=0$ with $\breve Q^{\star(n+1)}=(\breve Q^{\star n})\star \breve Q$. The results are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>square-zero set</th>
+<th>nilpotent set</th>
+<th>nilpotency index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>general plain bilinear ($\breve Q_{1}\breve Q_{2}$)</td>
+<td>$\{0\}$</td>
+<td>$\{0\}$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>general tessarine bilinear ($\breve Q_{1,\mathrm{ts}}\breve Q_{2}$)</td>
+<td>$\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$</td>
+<td>$\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>general plain sesquilinear ($\breve Q_{1}\breve Q_{2}^{*}$)</td>
+<td>$\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$</td>
+<td>$\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>general tessarine sesquilinear ($\breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*}$)</td>
+<td>$\{0\}$</td>
+<td>$\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the plain bilinear product and the tessarine sesquilinear product).</strong> The multiplication $\breve Q_{1}\breve Q_{2}$ has square-zero set $\{0\}$, and the tessarine sesquilinear product $\breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*}$ has square-zero set $\{0\}$ as well.</p>
+<p><em>Proof.</em> The multiplication is the theorem of the previous section. For the tessarine sesquilinear product, the diagonal is
+$$
+\breve Q_{\mathrm{ts}}\breve Q^{*}=(|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2})-\bigl(Q_{\blacktriangle}\bar Q_{\blacktriangledown}+Q_{\blacktriangledown}\bar Q_{\blacktriangle}\bigr)j,
+$$
+so $\breve Q_{\mathrm{ts}}\breve Q^{*}=0$ requires $|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}=0$, which forces $Q_{\blacktriangle}=Q_{\blacktriangledown}=0$; hence $\breve Q=0$.</p>
+<p><strong>Theorem (the tessarine bilinear product and the plain sesquilinear product).</strong> The tessarine bilinear product $\breve Q_{1,\mathrm{ts}}\breve Q_{2}$ and the plain sesquilinear product $\breve Q_{1}\breve Q_{2}^{*}$ have the same nonzero square-zero set, the two idempotent lines
+$$
+\boxed{\; \bigl\{\breve Q\neq0:\breve Q_{\mathrm{ts}}\breve Q=0\bigr\}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_-=\bigl\{\breve Q\neq0:\breve Q \breve Q^{*}=0\bigr\}=\mathcal{N} \;},
+$$
+the null cone of the reduced norm.</p>
+<p><em>Proof.</em> $\breve Q_{\mathrm{ts}}\breve Q=(Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2})+0\cdot j$, a scalar, so $\breve Q_{\mathrm{ts}}\breve Q=0$ iff $Q_{\blacktriangle}^{2}=Q_{\blacktriangledown}^{2}$, which is the null cone $\mathcal{N}$ (<em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>). For the plain sesquilinear product,
+$$
+\breve Q \breve Q^{*}=(|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2})+\bigl(-Q_{\blacktriangle}\bar Q_{\blacktriangledown}+Q_{\blacktriangledown}\bar Q_{\blacktriangle}\bigr)j,
+$$
+and this vanishes iff $|Q_{\blacktriangle}|^{2}=|Q_{\blacktriangledown}|^{2}$ and $Q_{\blacktriangle}\bar Q_{\blacktriangledown}=Q_{\blacktriangledown}\bar Q_{\blacktriangle}$. The two conditions force $Q_{\blacktriangledown}=\pm Q_{\blacktriangle}$: writing $Q_{\blacktriangle}=|Q_{\blacktriangle}|\exp(i\alpha)$ and $Q_{\blacktriangledown}=|Q_{\blacktriangledown}|\exp(i\beta)$, the first gives $|Q_{\blacktriangle}|=|Q_{\blacktriangledown}|$ and the second gives $\exp(i(\alpha-\beta))=\pm1$, that is $Q_{\blacktriangledown}=\pm Q_{\blacktriangle}$, which is the null cone $\mathcal{N}$ again. Conversely $Q_{\blacktriangledown}=Q_{\blacktriangle}$ gives $|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangle}|^{2}=0$ and $-Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangle}\bar Q_{\blacktriangle}=0$, and $Q_{\blacktriangledown}=-Q_{\blacktriangle}$ gives $-Q_{\blacktriangle}(-\bar Q_{\blacktriangle})+(-Q_{\blacktriangle})\bar Q_{\blacktriangle}=0$, so both lines are square-zero.</p>
+<h3 id="the-two-products-split-differently">The Two Products Split Differently</h3>
+<p><strong>The bilinear pair and the sesquilinear pair split in opposite ways: the plain bilinear product has no square-zero element while the tessarine bilinear product has the lines, and the plain sesquilinear product has the lines while the tessarine sesquilinear product has none.</strong></p>
+<p><strong>Remark (the reading of the table).</strong> The table is the exact analogue for the reduced biquaternion layer of the tables of the biquaternion layer, with one difference: over the non-commutative quaternions the two nilpotent families are larger, while here the whole nilpotent set of every non-associative product is the two idempotent lines. The two lines are the null cone of the reduced norm, and the three products that have a nonzero square-zero element have it on the same cone; the distinction is only the <strong>index</strong>, two for the two bilinear-or-plain cases and three for the tessarine sesquilinear one.</p>
+<h2 id="the-nilpotents">The Nilpotents</h2>
+<h3 id="the-multiplication-has-none">The Multiplication Has None</h3>
+<p><strong>The multiplication has no nonzero nilpotent: its nilpotent set is $\{0\}$.</strong></p>
+<p><em>Proof.</em> An element is nilpotent in the multiplication iff some $\breve Q^{n}=0$; in the idempotent coordinates $\breve Q^{n}=(Q_{+}^{n},Q_{-}^{n})$, and $Q_{+}^{n}=Q_{-}^{n}=0$ iff $Q_{+}=Q_{-}=0$; so the only nilpotent is $0$. The statement is the one of §<em>The Algebra Is Reduced</em>, and it is repeated here because the article reads the nilpotents of all four products.</p>
+<h3 id="the-nilpotents-of-the-non-associative-products">The Nilpotents of the Non-Associative Products</h3>
+<p><strong>The two products of index two are the tessarine bilinear product and the plain sesquilinear product, on the two lines; the tessarine sesquilinear product is of index three on the two lines; and the plain bilinear product has none.</strong></p>
+<p><strong>Theorem (index two).</strong> For every nonzero element of the null cone,
+$$
+\boxed{\; \breve Q\in\mathcal{N}\ \Longrightarrow\ \breve Q_{\mathrm{ts}}\breve Q=0\quad\text{and}\quad \breve Q \breve Q^{*}=0 \;},
+$$
+so the tessarine bilinear product and the plain sesquilinear product are nilpotent of index two on the cone.</p>
+<p><em>Proof.</em> Both square-zero sets are the cone by the theorems above; an element whose square vanishes has every left-nested higher power vanishing as well, so the index is two.</p>
+<p><strong>Theorem (index three of the tessarine sesquilinear product).</strong> For $\breve Q=Q_{+}\Pi_+$ with $Q_{+}\neq0$,
+$$
+\breve Q_{\mathrm{ts}}\breve Q^{*}\neq0,\qquad (\breve Q_{\mathrm{ts}}\breve Q^{*})_{\mathrm{ts}}\breve Q^{*}=0,
+$$
+and likewise for $\breve Q=Q_{-}\Pi_-$; the tessarine sesquilinear product has nilpotency index three on the two lines and no nilpotent outside them.</p>
+<p><em>Proof.</em> Write $\breve Q=Q_{\blacktriangle}(1+j)=2Q_{\blacktriangle}\Pi_+=Q_{+}\Pi_+$. Then $\breve Q_{\mathrm{ts}}=Q_{\blacktriangle}(1-j)=2Q_{\blacktriangle}\Pi_-$ and $\breve Q^{*}=\bar Q_{\blacktriangle}(1-j)=2\bar Q_{\blacktriangle}\Pi_-$, so
+$$
+\breve Q_{\mathrm{ts}}\breve Q^{*}=Q_{\blacktriangle}(1-j)\bar Q_{\blacktriangle}(1-j)=|Q_{\blacktriangle}|^{2}(1-j)^{2}=2|Q_{\blacktriangle}|^{2}(1-j)\neq0,
+$$
+a nonzero element of the second idempotent line. The next power is $(\breve Q_{\mathrm{ts}}\breve Q^{*})_{\mathrm{ts}}\breve Q^{*}$: the tessarine sign of $2|Q_{\blacktriangle}|^{2}(1-j)$ is $2|Q_{\blacktriangle}|^{2}(1+j)$, and its product with $\breve Q^{*}=\bar Q_{\blacktriangle}(1-j)$ is $2|Q_{\blacktriangle}|^{2}\bar Q_{\blacktriangle}(1+j)(1-j)=2|Q_{\blacktriangle}|^{2}\bar Q_{\blacktriangle}(1-j^{2})=0$. So the index is three. Outside the two lines both idempotent coordinates $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ are nonzero, and in the idempotent coordinates the product reads $(x_{1},x_{2})\star(w_{1},w_{2})=(x_{2}\bar w_{2},\,x_{1}\bar w_{1})$, so the left-nested powers obey $x_{n+1}=y_{n}\bar Q_{-}$ and $y_{n+1}=x_{n}\bar Q_{+}$; every coordinate of $\breve Q^{\star n}$ is a product of a power of $Q_{+}$ or $Q_{-}$ with a conjugate power, hence nonzero, and no power vanishes.</p>
+<p><strong>Corollary (the nilpotent set of every product is the two lines).</strong> For the three products that have a nonzero nilpotent, the nilpotent set is the null cone $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, and the nilpotency index is the one of the table; the multiplication has no nonzero nilpotent.</p>
+<p><strong>Remark (the glyph).</strong> The nilpotents of the reduced biquaternion layer carry, in the convention of <em>Special Element and Peirce Conventions</em>, §<em>The Nilpotent Convention</em>, the plain capital and <strong>no tilde</strong>; but the only nilpotents here lie on the two idempotent lines and are already named by the idempotents, so this article names none of them and reads them as the cone.</p>
+<h2 id="the-radical">The Radical</h2>
+<p><strong>The radical of the multiplication is trivial: the Jacobson radical is $\{0\}$ and the algebra is semisimple.</strong></p>
+<p><strong>Theorem (the radical).</strong> The Jacobson radical of the algebra is
+$$
+\boxed{\; \operatorname{rad}\mathbb{B}_{\mathrm{r}}=\{0\} \;},
+$$
+and the algebra is semisimple and Artinian.</p>
+<p><em>Proof.</em> The radical of a commutative ring is the intersection of its maximal ideals; the maximal ideals are the two idempotent lines (<em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>), and their intersection is $\{0\}$ because they meet only at the origin. The algebra is a direct product of two fields, hence Artinian and semisimple.</p>
+<p><strong>Remark (reduced against radical).</strong> The absence of nilpotents and the triviality of the radical are the same fact here, because the algebra is commutative and a direct product of fields; both are read from the two coordinates, and both contrast with the biquaternion layer, whose algebra is simple with nilpotent elements and a nontrivial theory of nilpotents.</p>
+<h2 id="summary">Summary</h2>
+<p>The roots of zero of the multiplication are the single element $\breve Q=0$; the multiplication has <strong>no nonzero nilpotent</strong>, the algebra is <strong>reduced</strong>, its nilradical and its Jacobson radical are $\{0\}$, and it is semisimple, being the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two fields. Read product by product, the four general products give:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>square-zero set</th>
+<th>nilpotent set</th>
+<th>index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>general plain bilinear ($\breve Q_{1}\breve Q_{2}$)</td>
+<td>$\{0\}$</td>
+<td>$\{0\}$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>general tessarine bilinear ($\breve Q_{1,\mathrm{ts}}\breve Q_{2}$)</td>
+<td>the two lines</td>
+<td>the two lines</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>general plain sesquilinear ($\breve Q_{1}\breve Q_{2}^{*}$)</td>
+<td>the two lines</td>
+<td>the two lines</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>general tessarine sesquilinear ($\breve Q_{1,\mathrm{ts}}\breve Q_{2}^{*}$)</td>
+<td>$\{0\}$</td>
+<td>the two lines</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two <strong>bilinear</strong> products split in opposite ways — the plain one has no nonzero square-zero element, $\breve Q_{\mathrm{ts}}\breve Q=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ being a scalar vanishing only on the cone, and the tessarine one has the cone — and the two <strong>sesquilinear</strong> products split the other way — the plain one has the cone, $\breve Q \breve Q^{*}=(|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2})+(-Q_{\blacktriangle}\bar Q_{\blacktriangledown}+Q_{\blacktriangledown}\bar Q_{\blacktriangle})j$ vanishing only at $Q_{\blacktriangledown}=\pm Q_{\blacktriangle}$, and the tessarine one has none, since $\breve Q_{\mathrm{ts}}\breve Q^{*}$ has scalar part $|Q_{\blacktriangle}|^{2}+|Q_{\blacktriangledown}|^{2}$. Every nonzero nilpotent of every product lies on the null cone $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, at index two for the tessarine bilinear and the plain sesquilinear products and at index three for the tessarine sesquilinear product.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\breve Q^{2}=0$</td>
+<td>the root-of-zero equation of the multiplication, with the single solution $\breve Q=0$</td>
+</tr>
+<tr>
+<td>$\breve Q_{\mathrm{ts}}\breve Q=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$</td>
+<td>the diagonal of the tessarine bilinear product, vanishing on the two lines</td>
+</tr>
+<tr>
+<td>$\breve Q \breve Q^{*}=(\lvert Q_{\blacktriangle}\rvert^{2}-\lvert Q_{\blacktriangledown}\rvert^{2})+(-Q_{\blacktriangle}\bar Q_{\blacktriangledown}+Q_{\blacktriangledown}\bar Q_{\blacktriangle})j$</td>
+<td>the diagonal of the plain sesquilinear product, vanishing on the two lines</td>
+</tr>
+<tr>
+<td>$\breve Q_{\mathrm{ts}}\breve Q^{*}=(\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2})-(Q_{\blacktriangle}\bar Q_{\blacktriangledown}+Q_{\blacktriangledown}\bar Q_{\blacktriangle})j$</td>
+<td>the diagonal of the tessarine sesquilinear product, vanishing only at $0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$</td>
+<td>the nilpotent set of every product that has one, the null cone</td>
+</tr>
+<tr>
+<td>index $2$, index $3$</td>
+<td>the nilpotency index of the non-associative products</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}\mathbb{B}_{\mathrm{r}}=\{0\}$</td>
+<td>the trivial radical, the semisimplicity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-products-their-forms-and-their-algebraic-norms.html">The Four Products, Their Forms and Their Algebraic Norms</a>, above this article in this category, for the four products and their diagonals.</li>
+<li><a href="introduction-to-the-algebra-of-the-reduced-biquaternions.html">Introduction to the Algebra of the Reduced Biquaternions</a>, above this article, for the algebra, its product and its structure as a direct product of two fields.</li>
+<li><a href="zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html">Zero Divisors of the Algebra of the Reduced Biquaternions</a>, above this article, for the null cone and the maximal ideals.</li>
+<li><a href="square-roots-of-one-and-the-idempotents-of-the-algebra-of-the-reduced-biquaternions.html">Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</a>, above this article, for the idempotents and the projections.</li>
+<li><a href="special-element-and-peirce-conventions.html">Conventions of the Special Elements and the Peirce Decomposition</a>, §<em>The Nilpotent Convention</em>, for the glyph of the nilpotent of the layer.</li>
+<li><a href="nilpotents.html">Nilpotents</a>, the non-commutative counterpart, for the two nilpotent families of the larger algebra.</li>
+<li><a href="dual-numbers-zero-divisors.html">Dual-Numbers Zero Divisors</a>, for the companion with nonzero square-zero elements, the dual numbers, whose imaginary line is square-zero.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

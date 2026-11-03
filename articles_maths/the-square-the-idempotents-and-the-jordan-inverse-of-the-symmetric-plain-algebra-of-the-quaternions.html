@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra of the Quaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-the-quaternions"><strong>The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra of the Quaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ of <em>Introduction to the Symmetric Plain Algebra</em>. It is the specialisation of the degree-two Common Theory of <em>The Two General Products of an Algebra with Involution</em> to the real quaternions.</p>
+<p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
+<h2 id="the-square-map">The Square Map</h2>
+<p><strong>Definition.</strong> The <strong>square map</strong> of the block is</p>
+<p>$$
+Q:\tilde q\mapsto\tilde q\bullet\tilde q=\tilde q^2,\qquad
+\mathfrak{Q}(\tilde q)=\bigl(q_t^2-|\vec q|^2\bigr)e_t+2q_t\vec q .
+$$</p>
+<p>It is the diagonal of the product; the polarisation $\mathfrak{Q}(\tilde q_1,\tilde q_2)=\tfrac12\bigl(\mathfrak{Q}(\tilde q_1+\tilde q_2)-\mathfrak{Q}(\tilde q_1)-\mathfrak{Q}(\tilde q_2)\bigr)$ is the product, $\mathfrak{Q}(\tilde q_1,\tilde q_2)=\tilde q_1\bullet\tilde q_2$.</p>
+<p><strong>Proposition (the relation to the norm).</strong> The square, the trace and the norm are tied by</p>
+<p>$$
+\mathrm{Sc}\,\tilde q^2=q_t^2-|\vec q|^2=2q_t^2-\langle\tilde q\rangle_{\natural},\qquad
+\langle\tilde q\rangle_{\natural}=q_t^{\,2}+|\vec q|^{\,2},
+$$</p>
+<p>and by the quadratic identity $\tilde q^2-T(\tilde q)\tilde q+\langle\tilde q\rangle_{\natural}e_t=0$. The square of the block is the <strong>plain square</strong>; it is <strong>not</strong> the quaternionic square, whose value is the central element $\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}e_t$, and the two agree only on the scalar line.</p>
+<p><em>Proof.</em> The square is displayed above; the scalar part is $q_t^2-|\vec q|^2$, the vector part $2q_t\vec q$. The plain square is quoted from <em>Introduction to the Quaternion Algebra</em> and the quaternionic square from <em>Introduction to the General Quaternionic Algebra</em>, below this article in this category; the quadratic identity is <em>Norm and Invertibility in the Symmetric Plain Algebra</em>.</p>
+<p><strong>Remark (the two general products on one square).</strong> The chapter carries two general products, the plain product $\tilde q_1\tilde q_2$ and the quaternionic product $\tilde q_1^{\natural}\tilde q_2$; the square of the block is the square of the first, and the symmetrisation of the second, <em>The Symmetrised Quaternionic Product and the Hermitian Subspace</em>, below this article in this category, has the central square $\langle\tilde q\rangle_{\natural}e_t$. <strong>The division of the real chapter is between these two squares</strong>, and the block's square is the non-central one.</p>
+<h2 id="the-idempotents-and-their-degeneracy">The Idempotents and Their Degeneracy</h2>
+<p><strong>Definition.</strong> An <strong>idempotent</strong> of the block is an element with $\tilde\pi\bullet\tilde\pi=\tilde\pi$.</p>
+<p><strong>Theorem.</strong> The idempotents of the block are exactly</p>
+<p>$$
+\boxed{\;\tilde\pi\in\{0,\ e_t\}\;},
+$$</p>
+<p>the two trivial idempotents; there is no nontrivial one.</p>
+<p><em>Proof.</em> The square is the plain square, so the equation is $\tilde\pi^2=\tilde\pi$. The vector part gives $(2\pi_t-1)\vec\pi=0$, so either $\vec\pi=0$ and the scalar part gives $\pi_t^2=\pi_t$, giving $\tilde\pi\in\{0,e_t\}$, or $\pi_t=\tfrac12$ and the scalar part gives $|\vec\pi|^2=-\tfrac14$, with no real solution.</p>
+<p><strong>Remark (the degeneracy in a division algebra).</strong> A nontrivial idempotent is built, in a split algebra, from a pure root of $+e_t$ by $\tilde\pi=\tfrac12(e_t+\vec q_a)$, and the reason the construction fails here is that <strong>the pure square is negative</strong>: $\vec q_a\bullet\vec q_a=-|\vec q_a|^2e_t$, so a pure element can be a root of $-e_t$ but never a root of $+e_t$. Over a division algebra with a negative definite pure part the construction never closes, and the idempotent class collapses to the two trivial elements; the collapse is the algebraic form of the absence of the split.</p>
+<p><strong>Corollary (the associated idempotents).</strong> The only idempotents associated with the zero divisors are the trivial ones: a nonzero pure element $\vec q_a$ is a zero divisor but the element $\tfrac12(e_t+\vec q_a)$ has square $\tfrac14(1-|\vec q_a|^2)e_t+\tfrac12\vec q_a$, which is not an idempotent for any real $\vec q_a$.</p>
+<h2 id="the-peirce-decomposition">The Peirce Decomposition</h2>
+<p><strong>Theorem (the cubic identity).</strong> The multiplication operator satisfies the cubic Peirce identity</p>
+<p>$$
+\boxed{\;2\,(L^{\bullet}_{\tilde\pi})^3-3\,(L^{\bullet}_{\tilde\pi})^2+L^{\bullet}_{\tilde\pi}=0\;}
+$$</p>
+<p>at every idempotent $\tilde\pi$, so the spectrum is contained in $\{0,\tfrac12,1\}$.</p>
+<p><em>Proof.</em> The identity holds in every Jordan algebra for an idempotent, by the Peirce theory of <em>Jordan Algebras</em>; in the block it is checked directly from $L^{\bullet}_{e_t}=\mathrm{id}$ and $L^{\bullet}_{0}=0$.</p>
+<p><strong>Theorem (the Peirce decomposition).</strong> For the two idempotents the decomposition is trivial:</p>
+<p>$$
+J_1(e_t)=\mathbb{H},\quad J_{1/2}(e_t)=J_0(e_t)=0;
+\qquad
+J_0(0)=\mathbb{H},\quad J_1(0)=J_{1/2}(0)=0,
+$$</p>
+<p>where $J_\lambda(\tilde\pi)=\{\tilde q : \tilde\pi\bullet\tilde q=\lambda\tilde q\}$.</p>
+<p><em>Proof.</em> $L^{\bullet}_{e_t}=\mathrm{id}$ has the single eigenvalue $1$ with multiplicity four; $L^{\bullet}_{0}=0$ has the single eigenvalue $0$ with multiplicity four.</p>
+<p><strong>Remark (the would-be shape).</strong> A nontrivial idempotent of a degree-two block of this kind would split the algebra into three Peirce spaces of dimensions $1,2,1$; since the block has only $0$ and $e_t$, <strong>the middle space never opens and the Peirce calculus is degenerate.</strong> This is the specific-theory reading of the degeneracy of the previous section, and it is the reason the block carries no projector calculus.</p>
+<h2 id="the-jordan-inverse">The Jordan Inverse</h2>
+<p><strong>Theorem.</strong> An element is invertible exactly when $\langle\tilde q\rangle_{\natural}\neq0$, that is, when $\tilde q\neq0$, and the inverse is</p>
+<p>$$
+\boxed{\;\tilde q^{-1}=\frac{T(\tilde q)e_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{2q_te_t-\tilde q}{\langle\tilde q\rangle_{\natural}}=\frac{\tilde q^{\natural}}{\langle\tilde q\rangle_{\natural}}\;}.
+$$</p>
+<p><em>Proof.</em> This is <em>Norm and Invertibility in the Symmetric Plain Algebra</em>; the inverse satisfies $\tilde q\bullet\tilde q^{-1}=e_t$ and $\tilde q^{\bullet2}\bullet\tilde q^{-1}=\tilde q$.</p>
+<p><strong>Proposition (the two-sidedness and the failure of multiplicativity).</strong> The inverse is two-sided and involutive, $(\tilde q^{-1})^{-1}=\tilde q$; but the inversion is not a homomorphism, and the invertible elements do not form a group, since $\vec e_x,\vec e_y$ are invertible and $\vec e_x\bullet \vec e_y=0$ has no inverse.</p>
+<p><em>Proof.</em> The two-sidedness is commutativity and the first defining equation; the failure of multiplicativity is the pair $\vec e_x,\vec e_y$.</p>
+<h2 id="the-quadratic-representation">The Quadratic Representation</h2>
+<p><strong>Definition.</strong> The <strong>quadratic representation</strong> of the block is</p>
+<p>$$
+U_{\tilde q_1}=2\,(L^{\bullet}_{\tilde q_1})^2-L^{\bullet}_{\tilde q_1^{\,\bullet2}},
+\qquad
+U_{\tilde q_1}(\tilde q_2)=2\,\tilde q_1\bullet(\tilde q_1\bullet\tilde q_2)-\tilde q_1^{\bullet2}\bullet\tilde q_2 .
+$$</p>
+<p><strong>Theorem.</strong> The quadratic representation is the plain sandwich operator and it is multiplicative in the norm:</p>
+<p>$$
+\boxed{\;U_{\tilde q_1}(\tilde q_2)=\tilde q_1\,\tilde q_2\,\tilde q_1,\qquad
+\langle U_{\tilde q_1}\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}\;}.
+$$</p>
+<p><em>Proof.</em> Expanding $U_{\tilde q_1}(\tilde q_2)$ in the symmetrised plain product, $U_{\tilde q_1}(\tilde q_2)=\tfrac12\bigl(\tilde q_1(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)+(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)\tilde q_1\bigr)-\tfrac12(\tilde q_1^2\tilde q_2+\tilde q_2\tilde q_1^2)=\tilde q_1\tilde q_2\tilde q_1$ by the associativity of the plain product. The norm identity is the multiplicativity of $\langle\cdot\rangle_{\natural}$ applied twice, $\langle\tilde q_1\tilde q_2\tilde q_1\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}$.</p>
+<p><strong>Remark (the effect on the norm).</strong> For a nonzero $\tilde q$ the operator $U_{\tilde q}$ is invertible with inverse $U_{\tilde q^{-1}}$, and $U_{\tilde q^{-1}}=U_{\tilde q}^{-1}$; the norm identity is the degree-two form of the composite, and it is the quadratic representation statement of the degree-two Common Theory of <em>The Two General Products of an Algebra with Involution</em> read on the block.</p>
+<h2 id="summary">Summary</h2>
+<p>The square map of the block is the plain square, $\mathfrak{Q}(\tilde q)=(q_t^2-|\vec q|^2)e_t+2q_t\vec q$, polarising to the product, with the scalar part $2q_t^2-\langle\tilde q\rangle_{\natural}$ and the quadratic identity $\tilde q^2-T(\tilde q)\tilde q+\langle\tilde q\rangle_{\natural}e_t=0$. The idempotents are exactly $0$ and $e_t$, because a nontrivial idempotent would need a pure root of $+e_t$ and the pure square is $-|\vec q_a|^2e_t$; the Peirce decomposition is trivial, $J_1(e_t)=\mathbb{H}$ and $J_0(0)=\mathbb{H}$ with the other spaces vanishing. The Jordan inverse is $\tilde q^{-1}=(T(\tilde q)e_t-\tilde q)/\langle\tilde q\rangle_{\natural}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ for $\tilde q\neq0$, two-sided and involutive but not multiplicative, and the invertible elements do not form a group. The quadratic representation is $U_{\tilde q_1}=2(L^{\bullet}_{\tilde q_1})^2-L^{\bullet}_{\tilde q_1^{\,\bullet2}}$, equal to the sandwich $\tilde q_1\tilde q_2\tilde q_1$, and $\langle U_{\tilde q_1}\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}$. Everything but the idempotents and the Peirce decomposition has the same shape over $\mathbb{C}$; there the idempotents are many and the Peirce calculus opens.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{Q}(\tilde q)=\tilde q\bullet\tilde q=\tilde q^2$</td>
+<td>the square map</td>
+</tr>
+<tr>
+<td>$\vec q_a\bullet\vec q_a=-\lvert\vec q_a\rvert^2e_t$</td>
+<td>the square of a pure element</td>
+</tr>
+<tr>
+<td>$\{0,e_t\}$</td>
+<td>the idempotents</td>
+</tr>
+<tr>
+<td>$J_\lambda(\tilde\pi)$</td>
+<td>the Peirce spaces, trivial at $0$ and $e_t$</td>
+</tr>
+<tr>
+<td>$\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$</td>
+<td>the Jordan inverse</td>
+</tr>
+<tr>
+<td>$U_{\tilde q_1}=2(L^{\bullet}_{\tilde q_1})^2-L^{\bullet}_{\tilde q_1^{\,\bullet2}}$</td>
+<td>the quadratic representation, $=\tilde q_1\tilde q_2\tilde q_1$</td>
+</tr>
+<tr>
+<td>$\langle U_{\tilde q_1}\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}^2\langle\tilde q_2\rangle_{\natural}$</td>
+<td>the norm identity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html">Introduction to the Symmetric Plain Algebra of the Quaternions</a>, for the product and the square.</li>
+<li><a href="norm-and-invertibility-in-the-symmetric-plain-algebra.html">Norm and Invertibility in the Symmetric Plain Algebra</a>, for the norm, the trace and the inverse.</li>
+<li><a href="the-specificities-of-the-symmetric-plain-algebra-of-the-quaternions.html">The Specificities of the Symmetric Plain Algebra of the Quaternions</a>, for the same objects read as the block's properties.</li>
+<li><a href="the-multiplication-operators-of-the-symmetric-plain-algebra-of-the-quaternions.html">The Multiplication Operators of the Symmetric Plain Algebra of the Quaternions</a>, below this article in this category, for the operator whose square and cube enter the representation.</li>
+<li><a href="jordan-algebras.html">Jordan Algebras</a>, for the Peirce decomposition and the cubic identity.</li>
+<li><em>The Two General Products of an Algebra with Involution</em>, for the degree-two Common Theory specialised here.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
