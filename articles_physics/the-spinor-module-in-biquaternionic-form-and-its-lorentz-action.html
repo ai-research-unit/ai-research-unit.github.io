@@ -208,7 +208,7 @@ $$</p>
 \qquad\qquad
 \text{right-handed:}\quad \varphi \;\longmapsto\; \mathsf{M}_2(\bar{\tilde U}^{\mathrm{lor}})\,\varphi=(g^{\dagger})^{-1}\varphi,
 $$</p>
-<p>where $\bar{\tilde U}^{\mathrm{lor}}=(\tilde U^{\mathrm{lor}}{}^{*})^{\natural}$ is the <strong>coefficientwise complex conjugate</strong> of the biquaternion, written with the corpus's complex conjugation $\bar{\cdot}$, and $g^{\dagger}$ is the conjugate transpose of $g$. The star alone is the Hermitian conjugation of the algebra, whose matrix is $g^{\dagger}$; the bar is the coefficient conjugation, whose matrix is $\bar g$. The second action is the conjugate of the first: since $\tilde U^{\mathrm{lor}}\mapsto\bar{\tilde U}^{\mathrm{lor}}$ is an automorphism of $SL(2,\mathbb{C})$, the assignment is a genuine representation. Its matrix is</p>
+<p>where $\bar{\tilde U}^{\mathrm{lor}}=(\tilde U^{\mathrm{lor}}{}^{*})^{\natural}$ is the <strong>coefficientwise complex conjugate</strong> of the biquaternion, written with the corpus's complex conjugation $\bar{\cdot}$, and $g^{\dagger}$ is the conjugate transpose of $g$. The star alone is the Hermitian conjugation of the algebra; the bar is the coefficient conjugation, and its matrix is <strong>not</strong> the entrywise conjugate $\bar g$, because the realization carries $-i$ in its quaternion part and conjugating the coefficients therefore twists the Pauli part as well. The second action is the conjugate of the first — since $\tilde U^{\mathrm{lor}}\mapsto\bar{\tilde U}^{\mathrm{lor}}$ is an automorphism of $SL(2,\mathbb{C})$, the assignment is a genuine representation — and its matrix is</p>
 <p>$$
 \mathsf{M}_2(\bar{\tilde U}^{\mathrm{lor}}) = \epsilon^{-1}\bar{g}\,\epsilon = (g^{\dagger})^{-1},
 $$</p>
@@ -339,7 +339,7 @@ $$</p>
 <p>so the anti-Hermitian generators $-i\sigma_k$ and the Hermitian generators $\sigma_k$ both act on $S$ by matrix multiplication. On the spinor module the infinitesimal generators act as the Pauli matrices and their multiples, which is the familiar statement that the spin-$\frac{1}{2}$ representation is the fundamental representation of $\mathrm{SL}(2,\mathbb{C})$.</p>
 <p>The <strong>compact subgroup</strong> $SU(2)\subset SL(2,\mathbb{C})$ consists of the unit-norm biquaternions with real vector part (the unit quaternions), for which $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. Its action on $S$ is $*$-unitary with respect to the Hermitian inner product $\langle\psi,\phi\rangle = \psi^\dagger\phi$, and it is the double cover of the spatial rotation group $SO(3)$. The boosts, by contrast, are not $*$-unitary, and they do not preserve that inner product; this is the representation-theoretic expression of the non-compactness of the Lorentz group.</p>
 <h2 id="bilinear-pairings-and-the-vector-representation">Bilinear Pairings and the Vector Representation</h2>
-<p>The spinor module carries three pairings — two on $S$ and one between the two chiral halves — and one equivariant bilinear map to the algebra. They are the algebraic ancestors of the Dirac bilinears. Each is invariant under a <strong>different</strong> subgroup — $\varepsilon$ and the mixed pairing under all of $SL(2,\mathbb{C})$, the Hermitian form $h$ only under the compact $SU(2)$, the indefinite form $[\,\cdot\,|\,\cdot\,]$ only under $SU(1,1)$ — and that assignment is what organises the section.</p>
+<p>The spinor module carries four pairings — three on $S$ and one between the two chiral halves — and one equivariant bilinear map to the algebra. They are the algebraic ancestors of the Dirac bilinears. What distinguishes them is the subgroup that leaves each invariant: $\varepsilon$ and the mixed pairing under all of $SL(2,\mathbb{C})$, the Hermitian form $h$ only under the compact $SU(2)$, the indefinite form $[\,\cdot\,|\,\cdot\,]$ only under $SU(1,1)$. Three of those groups are proper subgroups of $SL(2,\mathbb{C})$, and the two of them that are not conjugate — $SU(2)$ compact, $SU(1,1)$ non-compact — cannot be traded for one another by a change of basis, so the four forms are genuinely four and not one form in four costumes.</p>
 <h3 id="the-symplectic-form">The Symplectic Form</h3>
 <p>Define</p>
 <p>$$
@@ -704,7 +704,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\bar S$</td>
-<td>Conjugate spinor module, $(0,\frac12)$</td>
+<td>Conjugate spinor module, $(0,\frac12)$; written $S^{\mathrm c}$ in some companion articles</td>
 </tr>
 <tr>
 <td>$\varphi\in\bar S$</td>
@@ -751,8 +751,8 @@ $$</p>
 <td>Definite Hermitian form</td>
 </tr>
 <tr>
-<td>$[u|v]=u^{\dagger}\sigma_3v$</td>
-<td>Indefinite Hermitian form, $SU(1,1)$</td>
+<td>$[u\vert v]=u^{\dagger}\sigma_3v$</td>
+<td>Indefinite Hermitian form invariant under $SU(1,1)$</td>
 </tr>
 <tr>
 <td>$\varsigma_1=\sigma_3,\varsigma_2=i\sigma_2,\varsigma_3=-i\sigma_1$</td>
