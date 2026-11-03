@@ -58,7 +58,7 @@ $$
 \det\lVert dF\rVert = \det\lVert L\rVert\det\lVert R\rVert \det\lVert dZ\rVert \equiv \lambda(Z)\det\lVert dZ\rVert ,
 $$
 
-which for invertible $L,R$ and $\lambda\neq0$ is again a conformal map, now of complexified Minkowski space $\mathbb{C}M$. The interesting case is the one the source calls **degenerate**: when $\det L=0$ (or $\det R=0$) the scale factor vanishes and the map takes its values in the **null divisors** of the algebra — the complex null cone. These degenerate conformal maps are the ones the programme identifies with physical fields, and complexification is what makes the class large.
+which for invertible $L,R$ and $\lambda\neq0$ is again a conformal map, now of complexified Minkowski space $\mathbb{C}M$. The interesting case is the one the source calls **degenerate**: when $\det L=0$ (or $\det R=0$) the scale factor vanishes and every differential $dF$ is a singular matrix, its values lying in the **null divisors** of the algebra — the complex null cone. These degenerate conformal maps are the ones the programme identifies with physical fields, and complexification is what makes the class large.
 
 In components the condition reads $\nabla_{AB}F_{CD}=L_{CA}R_{BD}$. Fixing a pair of function indices and writing $F_{CD}=\Sigma$, $L_{CA}=\varphi_A$, $R_{BD}=\psi_B$ gives
 
@@ -77,7 +77,7 @@ This is the central observation of the construction. The equation says that a co
 It becomes recognisable in coordinates. Writing the matrix entries as $Z_{00}=\upsilon$, $Z_{11}=v$, $Z_{01}=w$, $Z_{10}=p$ and computing the determinant gives
 
 $$
-(\nabla_\upsilon\Sigma)(\nabla_v\Sigma) - (\nabla_w\Sigma)(\nabla_p\Sigma) = 0 ,
+\frac{\partial\Sigma}{\partial\upsilon}\frac{\partial\Sigma}{\partial v}-\frac{\partial\Sigma}{\partial w}\frac{\partial\Sigma}{\partial p}=0 ,
 $$
 
 and in the Cartesian coordinates $z_0=(\upsilon+v)/2$, $z_3=(\upsilon-v)/2$, $z_1=(w+p)/2$, $z_2=i(w-p)/2$ this is
@@ -86,7 +86,7 @@ $$
 \boxed{\;\left(\frac{\partial\Sigma}{\partial z_0}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_1}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_2}\right)^2 - \left(\frac{\partial\Sigma}{\partial z_3}\right)^2 = 0\;},
 $$
 
-the **complex eikonal equation** of complexified Minkowski space. The verification of the coordinate change is one line of the chain rule and is confirmed by recomputation in this pass; the rank-one degeneracy is likewise confirmed on random complex matrices. Nothing in the derivation is special to four dimensions at the level of the determinant; what is special is that in the case $\mathbb{B}$ the nonlinear equation is a familiar one.
+the **complex eikonal equation** of complexified Minkowski space. The verification of the coordinate change is one line of the chain rule, and the rank-one degeneracy is confirmed on random complex matrices. The determinant identity is a chain-rule computation; what $\mathbb{B}$ supplies is the arrangement, four coordinates in a two-by-two array, and what that gives is the familiar eikonal of complexified Minkowski space.
 
 **Physical interpretation.** That the primary field equation is the eikonal is the programme's distinguishing feature. In the corpus the eikonal appears as the short-wavelength limit of a linear equation (*The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*); here it is exact and primary, and the linear wave equation holds for the **same function**, not for its derivatives and not only in a short-wavelength limit. The programme states the coincidence and calls it puzzling; it follows from the twistor factorisation, and §*The Kerr Equation and the Shear-Free Congruences* gives the mechanism. What is lost by making the eikonal primary is additivity — the solution set is not a vector space — and not the linear equation itself.
 
@@ -112,25 +112,25 @@ $$
 
 Resolving this algebraic equation for $G(\upsilon,v,w,p)$ gives a solution of the complex eikonal — the **class I** solutions. Resolving instead $d\Pi/dG=0$ for $G$ and substituting back gives the **class II** solutions, conjugate to the first. According to the source's earlier work on the eikonal, these two classes exhaust all almost-everywhere analytic solutions. For a general **world function** $\Pi$, the joint system $\Pi=0$, $d\Pi/dG=0$ defines the locus on which $G(\Pi)$ branches — that is, the set on which the four-gradient of the eikonal blows up. Resolving that algebraic system gives the singular set even when $G$ has no closed form, and it is the same locus that carries the singularities of the associated gauge and curvature fields.
 
-**Both classes, from one differentiation.** The two procedures are theorems of one computation. Differentiating the identity $\Pi(G,wG+\upsilon,vG+p)=0$ with respect to the four twistor coordinates, and writing $P=d\Pi/dG$ and $\Pi_A=\partial\Pi/\partial\kappa_A$, gives
+**Both classes, from one differentiation.** The two procedures are one computation. Differentiate the identity $\Pi(G,wG+\upsilon,vG+p)=0$ with respect to each of the four twistor coordinates, and write $P=d\Pi/dG\equiv\Pi_G+w\Pi_1+v\Pi_2$, the quantity called $\Delta$ in the companion mathematical article, and $\Pi_1,\Pi_2$ for the derivatives of $\Pi$ with respect to its two remaining arguments; then
 
 $$
-P\,\partial_\upsilon G=-\Pi_0,\qquad P\,\partial_w G=-G\,\Pi_0,\qquad P\,\partial_p G=-\Pi_1,\qquad P\,\partial_v G=-G\,\Pi_1 .
+P\frac{\partial G}{\partial\upsilon}=-\Pi_1,\qquad P\frac{\partial G}{\partial w}=-G\,\Pi_1,\qquad P\frac{\partial G}{\partial p}=-\Pi_2,\qquad P\frac{\partial G}{\partial v}=-G\,\Pi_2 .
 $$
 
 Multiplying the first by the fourth and the second by the third,
 
 $$
-\partial_\upsilon G\,\partial_v G=\partial_w G\,\partial_p G=\frac{G\,\Pi_0\Pi_1}{P^2},
+\frac{\partial G}{\partial\upsilon}\,\frac{\partial G}{\partial v}=\frac{\partial G}{\partial w}\,\frac{\partial G}{\partial p}=\frac{G\,\Pi_1\Pi_2}{P^2},
 $$
 
-which is the complex eikonal in null coordinates: the class-I field is eikonal because the two products are one. For a class-II solution the same differentiation is performed at $P=0$, where $G$ stays at the double root and it is $\Pi$, not $G$, that is differentiated:
+which is the complex eikonal in null coordinates: the class-I field is eikonal because the two products are one. For a class-II solution the same differentiation is done at $P=0$, where $G$ stays at the double root and it is $\Pi$, not $G$, that varies,
 
 $$
-\partial_\upsilon\Pi=\Pi_0,\qquad \partial_w\Pi=G\,\Pi_0,\qquad \partial_p\Pi=\Pi_1,\qquad \partial_v\Pi=G\,\Pi_1 ,
+\frac{\partial\Pi}{\partial\upsilon}=\Pi_1,\qquad \frac{\partial\Pi}{\partial w}=G\,\Pi_1,\qquad \frac{\partial\Pi}{\partial p}=\Pi_2,\qquad \frac{\partial\Pi}{\partial v}=G\,\Pi_2 ,
 $$
 
-whose product is the same $G\Pi_0\Pi_1$, so the function $\Pi$ of the coordinates satisfies the eikonal directly. The branch set of the class-II field lies one derivative higher, at the multiple root of $P=0$ rather than of $\Pi=0$, which is $\Lambda=d^2\Pi/dG^2=0$. Both products were verified here on the quadratic world function $\Pi=G\kappa_0-\kappa_1+2ia$ by implicit differentiation at random points, where both residuals vanish to finite-difference accuracy.
+whose product is the same $G\Pi_1\Pi_2$, so the function $\Pi$ of the coordinates satisfies the eikonal directly. The branch set of the class-II field lies one derivative higher, at the multiple root of $P=0$ rather than of $\Pi=0$, which is $\Lambda=d^2\Pi/dG^2=0$. Both products were checked here on the quadratic world function $\Pi=G\kappa_0-\kappa_1+2iaG$, by implicit differentiation at random points of the domain, where both residuals vanish to finite-difference accuracy.
 
 **Physical interpretation.** The twistor is thus not imported from twistor theory; it arises inside the programme as the algebraic variable in which the nonlinear eikonal linearises. This is a genuine structural agreement with the corpus's twistor article at the level of the incidence relation and the spinor, and a genuine divergence at the level of aim: the programme's twistor labels a solution of a **nonlinear** primary equation, whereas Penrose's twistor transform encodes linear massless fields and the conformal group.
 
@@ -330,13 +330,13 @@ $$
 in which $\Pi$ is an arbitrary holomorphic function of three complex twistor variables. This is the same $\Pi$ as in the eikonal section seen from the field side, and the equivalence is exact: the solutions satisfy the pair of partial differential equations
 
 $$
-\nabla_wG = G\,\nabla_\upsilon G , \qquad \nabla_vG = G\,\nabla_pG ,
+\frac{\partial G}{\partial w}=G\,\frac{\partial G}{\partial\upsilon} , \qquad \frac{\partial G}{\partial v}=G\,\frac{\partial G}{\partial p} ,
 $$
 
 and multiplying them gives back the complex eikonal, while differentiating them gives the linear wave equation for $G$,
 
 $$
-(\nabla_\upsilon\nabla_v - \nabla_w\nabla_p)\,G = 0 .
+\left(\frac{\partial^2}{\partial\upsilon\,\partial v}-\frac{\partial^2}{\partial w\,\partial p}\right)G = 0 .
 $$
 
 Consequently every $C^2$ function $\lambda(G)$ is harmonic on the solutions, since the eikonal supplies the quadratic term and the wave equation the linear one. In this pass the whole chain was recomputed on an explicit solution of the quadratic Kerr equation $\Pi=wG^2+(\upsilon-v)G-p$: the two first-order equations, the complex eikonal, the wave equation, and the harmonicity of $\ln G$ all hold to finite-difference accuracy.
@@ -344,7 +344,7 @@ Consequently every $C^2$ function $\lambda(G)$ is harmonic on the solutions, sin
 The electromagnetic field strengths are then the second derivatives of $\ln G$,
 
 $$
-F_{00}=\nabla_\upsilon\nabla_p\ln G,\quad F_{11}=\nabla_v\nabla_w\ln G,\quad F_{01}=\nabla_w\nabla_p\ln G ,
+F_{00}=\frac{\partial^2\ln G}{\partial\upsilon\,\partial p},\quad F_{11}=\frac{\partial^2\ln G}{\partial v\,\partial w},\quad F_{01}=\frac{\partial^2\ln G}{\partial w\,\partial p} ,
 $$
 
 so that Maxwell's equations for the field follow from the harmonicity of $\ln G$. The sharpest form of the result is the source's representation of the field through the twistor variables,
@@ -357,7 +357,7 @@ which the source presents as having no analogue in the literature: the field of 
 
 A further structure attaches to the congruence. The flat metric can be deformed into a **Kerr–Schild metric** $g_{\mu\nu}=\eta_{\mu\nu}+h\,k_\mu k_\nu$ with the null congruence $k$ as its repeated principal direction, and for generating functions linear in the twistor arguments the metric satisfies the **electrovacuum Einstein–Maxwell** equations of Debney, Kerr and Schild. The locus on which the congruence's $G$ branches — the condition $P=d\Pi/dG=0$ — is simultaneously the singularity of the effective curvature, of the electromagnetic field, and of the Yang–Mills field. The programme reads this coincidence as the statement that a **particle is a common singularity of all the associated fields**, and it is the geometric heart of the particle interpretation. The source states one qualification: the associated Yang–Mills fields carry, generically, additional **string-like singularities**, so the coincidence of loci is exact for the curvature and electromagnetic fields and is not claimed for the non-abelian ones.
 
-**The family, and what the congruence does not fix.** A congruence carries more than one Maxwell field, and the construction is a generation of the congruence rather than of its electromagnetic content. Let $\mathcal{D}:=\nabla_w-G\nabla_\upsilon$. The shear-free equation $\nabla_wG=G\nabla_\upsilon G$ makes $\mathcal{D}$ a derivative along the ray and gives $\mathcal{D}G=0$, hence
+**The family, and what the congruence does not fix.** A congruence carries more than one Maxwell field, and the construction is a generation of the congruence rather than of its electromagnetic content. Let $\mathcal{D}:=\partial/\partial w-G\,\partial/\partial\upsilon$ be the ray derivative. The shear-free equation $\partial G/\partial w=G\,\partial G/\partial\upsilon$ makes $\mathcal{D}$ a derivative along the ray and gives $\mathcal{D}G=0$, hence
 
 $$
 \mathcal{D}F(G)=F'(G)\,\mathcal{D}G=0
@@ -366,7 +366,7 @@ $$
 for every holomorphic $F$. Take the spinor from the pair $(\upsilon,w)$ — a different representation of the field from the $\ln G$ one above, which uses $(\upsilon,p)$, $(w,p)$ and $(v,w)$, so the two displays must not be read as the same components:
 
 $$
-\varphi_{\upsilon\upsilon}=\nabla_\upsilon\nabla_\upsilon F,\qquad \varphi_{\upsilon w}=\nabla_w\nabla_\upsilon F,\qquad \varphi_{ww}=\nabla_w\nabla_w F .
+\varphi_{\upsilon\upsilon}=\frac{\partial^2F}{\partial\upsilon^2},\qquad \varphi_{\upsilon w}=\frac{\partial^2F}{\partial w\,\partial\upsilon},\qquad \varphi_{ww}=\frac{\partial^2F}{\partial w^2} .
 $$
 
 The alignment condition is then the vanishing of
@@ -375,7 +375,7 @@ $$
 \varphi_{ww}-2G\,\varphi_{\upsilon w}+G^2\varphi_{\upsilon\upsilon}=\mathcal{D}^2F ,
 $$
 
-which is the second derivative along the ray and vanishes because $\mathcal{D}F=0$ identically on the congruence: one application of the shear-free equation, with no further hypothesis. This is exactly the source's argument, whose quantity $M:=G\nabla_\upsilon G-\nabla_wG$ is $-\mathcal{D}G$. The Maxwell equations then hold for every $F$, on the eikonal and the wave equation displayed above; they were checked here at a numerical point for $F=G^{-1}$, $G$, $G^2$, $e^G$, $\tan G$ and $\ln G$. The choice $F=G^{-1}$ gives
+which is the second derivative along the ray and vanishes because $\mathcal{D}F=0$ identically on the congruence: one application of the shear-free equation, with no further hypothesis. This is exactly the source's argument, whose quantity $M:=G\,\partial G/\partial\upsilon-\partial G/\partial w$ is $-\mathcal{D}G$. The Maxwell equations then hold for every $F$, on the eikonal and the wave equation displayed above; they were checked here at a numerical point for $F=G^{-1}$, $G$, $G^2$, $e^G$, $\tan G$ and $\ln G$. The choice $F=G^{-1}$ gives
 
 $$
 \varphi_{\upsilon\upsilon}=\mp\frac{1}{4}\frac{w}{r^3},\qquad \varphi_{\upsilon w}=\pm\frac{1}{4}\frac{z}{r^3},\qquad \varphi_{ww}=\pm\frac{1}{4}\frac{p}{r^3},
@@ -400,7 +400,7 @@ in the dimensionless units of the programme. The source states that the quantiza
 The **fundamental static solution** is the one that makes the claim concrete. It is generated by the function
 
 $$
-\Pi = G\,\kappa_0 - \kappa_1 + 2ia, \qquad a=\mathrm{const}\in\mathbb{R},
+\Pi = G\,\kappa_0 - \kappa_1 + 2ia\,G, \qquad a=\mathrm{const}\in\mathbb{R},
 $$
 
 which contains no time coordinate. Resolving the quadratic Kerr equation and restricting to real Minkowski space gives an explicit $G$, and the associated electromagnetic field has a **ring singularity** of radius $a$, the only admissible value of electric charge $|ϙ|=\tfrac14$, and magnetic and electric moments proportional to $qa$ and $qa^2$. For $a=0$ the solution degenerates to the stereographic projection $S^2\to\mathbb{C}$, and the field is the Coulomb field with the Reissner–Nordström metric. For $a\neq0$ the field and metric reproduce those of the **Kerr–Newman** solution. With the known gyromagnetic ratio $g=2$ of that solution, the ring singularity is the programme's classical model of the electron.
@@ -666,7 +666,7 @@ The algebrodynamical programme is an ambitious and internally coherent proposal,
 
 The algebrodynamical programme replaces the naive derivative of a quaternionic function — which exists only for linear functions — by the **two-sided** condition $dF=L\,dZ\,R$, which for $\mathbb{H}$ characterises the conformal maps of $E^4$ and, after complexification, admits **degenerate** conformal maps into the null divisors of the algebra. Fixing a component $\Sigma$, the condition says that the matrix of derivatives of $\Sigma$ has rank one, so its determinant vanishes: this is a **nonlinear analogue of the Laplace equation**, which in biquaternion coordinates is the complex eikonal of complexified Minkowski space.
 
-The eikonal is solved algebraically by a twistor, through the Kerr equation $\Pi(G,wG+\upsilon,vG+p)=0$ for an arbitrary holomorphic world function $\Pi$; the two classes $\Pi=0$ and $d\Pi/dG=0$ exhaust the analytic solutions. The physically relevant solutions come from a spinor splitting of the two-sided condition, the **generating system of equations**, which is over-determined (eight equations for six unknowns). Its integrability conditions force the curvature of an associated Weyl–Cartan connection to be **weakly self-dual**, and the Bianchi identity then yields the free Maxwell and Yang–Mills equations for the trace and trace-free parts of the curvature. The linear field equations are thus consequences of the primary nonlinear system.
+The eikonal is solved algebraically by a twistor, through the Kerr equation $\Pi(G,wG+\upsilon,vG+p)=0$ for an arbitrary holomorphic world function $\Pi$; the two classes $\Pi=0$ and $d\Pi/dG=0$ exhaust the analytic solutions on the source's account. The physically relevant solutions come from a spinor splitting of the two-sided condition, the **generating system of equations**, which is over-determined (eight equations for six unknowns). Its integrability conditions force the curvature of an associated Weyl–Cartan connection to be **weakly self-dual**, and the Bianchi identity then yields the free Maxwell and Yang–Mills equations for the trace and trace-free parts of the curvature. The linear field equations are thus consequences of the primary nonlinear system.
 
 The geometry behind those integrability conditions is explicit in the programme's 1995 presentation, and it is recorded here because it supplies four further claims. The spinor connection $\Gamma_\nu=G\varsigma_\nu$ is a complex affine connection of Weyl–Cartan type, determined by the electromagnetic potential $A_\mu=2G_\mu$ alone; passing to the **$*$-unitary field** $\mathcal{U}=FF^\dagger$ replaces it by a **real** connection whose Weyl non-metricity $a_\mu=\Re A_\mu$ is the Coulomb field and whose torsion pseudotrace $b_\mu=\Im A_\mu$ is a second field that does not enter the geodesic equation. The same connection is the one Stepanov showed to be the unique space-time connection compatible with a spinor-bundle structure carrying the conventional spinor derivative, which makes the programme's central geometric object one the corpus already uses. The integrability conditions include, beside the self-duality, the **inhomogeneous Lorentz condition** $D\equiv\sum_\mu \partial/\partial x_\mu A_\mu+2\sum_\mu A_\mu A_\mu=0$, a nonlinear condition with a term quadratic in the potential, which the source relates to the vanishing scalar curvature of the effective space. Non-triviality forces $\det F=0$ — the primary field takes its values on the **null divisors**, the complex light cone — and null fields exist only on **indefinite-signature** manifolds, the programme's sharpest statement that the Lorentzian signature is forced rather than postulated, the boundary stated in *Why Complexify Spacetime?*. Finally the trace-free part of the connection is a complex gauge triplet $N_\nu$, fixed linearly by the same potential through $N_{0a}=A_a$, $N_{ba}=\delta_{ab}A_0-i\varepsilon_{abc}A_c$, whose self-dual strength obeys the Yang–Mills equation; the curvature splits into a trace part proportional to $F_{\mu\nu}$ and this triplet strength, and $\det \mathrm{Ric}_{\mu\nu}=0$ makes the electromagnetic field strength the **modulus of the Yang–Mills triplet**, $\sum_a(L_{\mu\nu a})^2\propto(F_{\mu\nu})^2$ — a proportionality whose constant is convention-dependent and is not reconciled here.
 
@@ -689,7 +689,7 @@ The programme's geometry is **induced**: the complex invariant $\sigma=(z_1)^2+(
 | $\det Z=(z_0)^2-\dots-(z_3)^2$ | Source's holomorphic metric; the corpus's $\langle\cdot\rangle_{\natural}$ once $Q_t=z_0$, $Q_k=iz_k$ |
 | $dF=L\,dZ\,R$ | Two-sided $A$-differentiability; $L,R$ the semi-derivatives |
 | $\Sigma$ | A component of a differentiable function; the eikonal potential |
-| $\nabla_\upsilon,\dots$ | Partial derivatives with respect to $\upsilon,v,w,p$ |
+| $\partial/\partial\upsilon,\dots$ | Partial derivatives with respect to $\upsilon,v,w,p$ |
 | $\det\lVert\nabla_{AB}\Sigma\rVert=0$ | The nonlinear (complex-eikonal) equation |
 | $\psi,\tau$ | Spinor and incident twistor, $\tau=Z\psi$ |
 | $G=\psi_1/\psi_0$ | The principal spinor ratio |
@@ -697,7 +697,7 @@ The programme's geometry is **induced**: the complex invariant $\sigma=(z_1)^2+(
 | $\Pi(G,\kappa_0,\kappa_1)$ | Generating (world) function; the Kerr equation is $\Pi=0$ |
 | $P=d\Pi/dG$ | Singular-locus condition, $P=0$ |
 | $\Lambda=d^2\Pi/dG^2$ | Class-II branching condition; with $P=0$ it gives the singular locus |
-| $\mathcal{D}=\nabla_w-G\nabla_\upsilon$, $\varphi_{\upsilon\upsilon},\varphi_{\upsilon w},\varphi_{ww}$ | Ray derivative, vanishing on $G$ by the shear-free equation; the Maxwell spinor $\varphi_{\upsilon\upsilon}=\nabla_\upsilon\nabla_\upsilon F$, $\varphi_{\upsilon w}=\nabla_w\nabla_\upsilon F$, $\varphi_{ww}=\nabla_w\nabla_w F$ for a holomorphic $F(G)$, one field per $F$ on the same congruence |
+| $\mathcal{D}=\partial/\partial w-G\,\partial/\partial\upsilon$, $\varphi_{\upsilon\upsilon},\varphi_{\upsilon w},\varphi_{ww}$ | Ray derivative, vanishing on $G$ by the shear-free equation; the Maxwell spinor $\varphi_{\upsilon\upsilon}=\partial^2F/\partial\upsilon^2$, $\varphi_{\upsilon w}=\partial^2F/\partial w\,\partial\upsilon$, $\varphi_{ww}=\partial^2F/\partial w^2$ for a holomorphic $F(G)$, one field per $F$ on the same congruence |
 | $H=wG^2+2(z+ia)G-\bar w$ | Static twistor generator; $w=x-iy$, $\bar w=x+iy$, $z$ the third Cartesian coordinate |
 | $r_*^2=x^2+y^2+(z+ia)^2$ | The $r_*$ of the static Kerr solution, of its $n=2$ class-II partner, and of the Appel potential $A_0=ϙ/r_*$ |
 | $R_n=a(n-1)/\sqrt{n(n-2)}$ | Ring radii of the class-II family $\Pi=G^n/H$, $n\ge3$ |
