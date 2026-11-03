@@ -357,6 +357,8 @@ which is the second member of the pair with its left field read as $-i\overline{
 
 **The cells and the cone.** A single product is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 A **superalgebra** is a $\mathbb{Z}/2$-graded algebra with the grading as part of its structure, and on it the graded commutator $[a,b]_{\mathrm{gr}}=ab-(-1)^{\lvert a\rvert\lvert b\rvert}ba$ is the commutator for even or mixed pairs and the anticommutator for two odd elements. The biquaternion algebra is the **even part** of the graded Clifford algebra, $\mathbb{B}=\mathrm{Cl}^0_{1,3}$, so it is not by itself a superalgebra, and it must not be conflated with the chirality grading of the supersymmetry article or with the sector splitting by the star.
@@ -400,7 +402,7 @@ The matrix frame is the frame of cells written as letters, and it is confined to
 | $\langle su,tu\rangle_{*}=-q(u)\langle s,t\rangle_{*}$, $\langle s,tu\rangle_{*}=0$ | The Hermitian form on the odd slot |
 | $(-1)^F=i\vec e_z\in\mathbb{M}_+$, $((-1)^F)^2=e_t$ | The one fermionic mode the algebra hosts natively |
 | $\gamma_\mu$, $\gamma_5$ | The frame cells of *The Gamma Formulation*: letters for the cells, used in that section only |
-| $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
+| $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the Dirac module by the fifth frame cell |
 | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | The one-sided Dirac equation, the chiral pair |
 | $(i\partial/\partial t'+D_3)F-mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |

@@ -100,7 +100,7 @@ The four forms are read on the material sector $\mathbb{M}_-$, the anti-Hermitia
 
 ### Composition
 
-The plain product is the composition of two operations. Associativity is read as composability: the bracket of three factors may be moved without changing the result. The unit $e_t$ is the identity operation, and non-commutativity is the order of the two operations. The left multiplications $L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\tilde Q_2$ form a monoid under composition, with $L_{e_t}^{\mathrm{pau}}$ as identity; it is a monoid and not a group, because only the units are invertible. The process is the multiplication, and the state is the idempotent, not the element.
+The plain product is the composition of two operations. Associativity is read as composability: the bracket of three factors may be moved without changing the result. The unit $e_t$ is the identity operation, and non-commutativity is the order of the two operations. The left multiplications $L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\tilde Q_2$ form a monoid under composition, with $L_{e_t}^{\mathrm{axf}}$ as identity; it is a monoid and not a group, because only the units are invertible. The process is the multiplication, and the state is the idempotent, not the element.
 
 The invertible elements are the reversible operations. The zero-divisor cone is the wall of the reversible region, and the algebra is the disjoint union of the two. The criterion of invertibility is the multiplicative norm of the causal row, not the scalar form of this one: $e_t+\vec e_x$ is a unit with $\langle e_t+\vec e_x,e_t+\vec e_x\rangle=0$, and $e_t+i\vec e_x$ is a zero divisor with $\langle e_t+i\vec e_x,e_t+i\vec e_x\rangle=2$. The scalar form of composition decides no inverse.
 

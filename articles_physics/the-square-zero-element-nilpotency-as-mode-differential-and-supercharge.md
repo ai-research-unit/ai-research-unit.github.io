@@ -227,7 +227,7 @@ u:\ \psi\mapsto i\,e_t\psi\,\vec e_x,\qquad
 u^2=\Gamma^2=e_t .
 $$
 
-Both are two-sided: $u=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, so neither is a single left multiplication $L_a$. Both are single pure tensors, hence single two-sided operators and not sums, and the choice of $u$ is a frame choice, not a change of the algebra.
+Both are two-sided: $u=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, so neither is a single left multiplication $L_a$. Both are single pure tensors, hence single two-sided operators and not sums, and the choice of $u$ is a frame choice, not a change of the algebra.
 
 The distinction is not a pedantic one. It is the reason the one-mode algebra can be an algebra of fermionic modes while every one of its elements is a bosonic (Clifford-even) element of the ambient algebra. The mode's fermionic character is carried by the inner automorphism, not by the degree. The differential below and the supercharge's odd extension are the cases in which the fermionic character must be carried by an outer grading instead.
 
@@ -334,7 +334,7 @@ The first row is $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$ and the second $\tilde
 $$
 L_{\tilde\nabla^{\natural}}F=-i\,m\,\bar F\,\vec e_z=m\,\chi_{\mathrm{cell}}\bar F,
 \qquad
-\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
+\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
 $$
 
 where $\bar F$ is the coefficient conjugation. The derivative is a left multiplier. The mass acts by the right multiplier $\chi_{\mathrm{cell}}$ together with $\bar{\cdot}$, so the left and right multipliers commute; the conjugation is the antilinear part. This is the form in which the two-sided operator algebra acts by cells. It is not the same operator as the one-sided pair: the price of the single equation is the antilinear conjugation. The two forms are compared in *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*.
@@ -349,7 +349,7 @@ The two forms are set side by side once, in cells:
 | field | $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R\in\Delta=S\oplus S^{\mathrm c}$ | $F\in\mathbb{B}$ |
 | multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $L_{\tilde\nabla^{\natural}}$, right by $\vec e_z$, and the antilinear $\bar{\cdot}$ |
 | mass | off-diagonal pairing of the two chiral halves | the right-multiplied chirality cell |
-| chirality | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, represented by $\Gamma$ on the module | the cell $\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the same cell as $\Gamma$ |
+| chirality | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, represented by $\Gamma$ on the module | the cell $\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, the same cell as $\Gamma$ |
 | second order | $\mathcal{D}^2=\Box\,I$ | $L_{\tilde\nabla}L_{\tilde\nabla^{\natural}}=L_{\Box}$ |
 
 The two-sided column has no matrix: the field is the algebra, and the operator is a product of two multipliers.
@@ -366,7 +366,7 @@ The supercharge is the case in which the square-zero is paired with the Hamilton
 
 - **The cohomology is the zero-mode space.** For $H$ positive semidefinite and the complex elliptic, $\ker Q=\ker H\oplus\mathrm{im}\,Q$, so $\ker Q/\mathrm{im}\,Q\cong\ker H$. The cohomology is the space of zero modes, and the cohomological index is its graded dimension. The supercharge's content is not the whole spectrum but the part of it that the grading protects.
 - **The splitting is by the Hamiltonian.** The mode's anticommutator is the identity and splits the identity into two rungs; the supercharge's anticommutator is $H$, and the splitting is by the spectral projectors of $H$; the zero modes are the corner that survives.
-- **The grading is chirality.** The supercharge is odd under $\Gamma$; the mode is odd under $(-1)^F=i\vec e_z$. The cell $\Gamma$ is the representative of the grading on the Dirac module: the chiral projectors are $P_\pm=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\pm\Gamma)$, idempotent, orthogonal and complete. The physical grading is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ (the adjoined root $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, from *Chirality: The Conjugate Pair*), with $\chi^2=e_t$, which is not an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. The cell $\Gamma=\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is its representative on the module. In the one-mode truncation the two gradings can be represented by the same cell on the module, but they remain different objects: they act on different spaces and have different physical meanings. The coincidence of the cell is not a coincidence of the role.
+- **The grading is chirality.** The supercharge is odd under $\Gamma$; the mode is odd under $(-1)^F=i\vec e_z$. The cell $\Gamma$ is the representative of the grading on the Dirac module: the chiral projectors are $P_\pm=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\pm\Gamma)$, idempotent, orthogonal and complete. The physical grading is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ (the adjoined root $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, from *Chirality: The Conjugate Pair*), with $\chi^2=e_t$, which is not an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. The cell $\Gamma=\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative on the module. In the one-mode truncation the two gradings can be represented by the same cell on the module, but they remain different objects: they act on different spaces and have different physical meanings. The coincidence of the cell is not a coincidence of the role.
 
 ## The Label
 
@@ -647,6 +647,8 @@ $\gamma_5$ is the reference-frame cell of the chirality: $\gamma_5=\Gamma=\chi_{
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the sixteen real cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 A nilpotent is a nonzero element with $X^2=0$. The equation is one, and the corpus's uses of it are five: the one-mode ladder of $\mathbb{B}$, the BRST differential, the supersymmetric supercharge, the Grassmann label and the chiral corner. A sixth object, the physical null momentum, is a zero divisor with a nonzero square and is not a nilpotent.
@@ -661,7 +663,7 @@ The differential is an odd derivation of ghost number $+1$ on $\mathbb{B}\otimes
 
 The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $\{Q,Q^\dagger\}=H$. Its cohomology is the zero-mode space, its cohomological index is the Witten index, and its grading is chirality. In the framework it is the off-diagonal block of the Dirac operator $\mathcal{D}=Q+Q^\dagger$ with $\mathcal{D}^2=\Box$, and the odd supercharge is never an element of $\mathbb{B}$: the Clifford parity is trivial on $\mathbb{B}$, and the odd slot is the rank-one left module $\mathrm{Cl}^1=\mathbb{B}_Lu$.
 
-The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$, with both gradients acting from the left. The two-sided form is Kravchenko's single equation $L_{\tilde\nabla^\natural}F=-i\,m\,\bar F\,\vec e_z=m\chi_{\mathrm{cell}}\bar F$ on $F\in\mathbb{B}$, in which the derivative is a left multiplier and the mass a right multiplier through the chirality cell $\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The two are different operators, and the price of the single equation is the antilinear conjugation.
+The biquaternion realization carries two forms of the Dirac equation. The one-sided form is the chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$, with both gradients acting from the left. The two-sided form is Kravchenko's single equation $L_{\tilde\nabla^\natural}F=-i\,m\,\bar F\,\vec e_z=m\chi_{\mathrm{cell}}\bar F$ on $F\in\mathbb{B}$, in which the derivative is a left multiplier and the mass a right multiplier through the chirality cell $\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$. The two are different operators, and the price of the single equation is the antilinear conjugation.
 
 The Grassmann label multiplies rather than acts; it is an odd extension, adjoined in $\mathbb{B}\otimes\Lambda$, and two independent generators with a nonzero product have no faithful representation in $\mathbb{B}$. The chiral corner is the local ladder $\sigma_\pm$ of a chiral symbol at a node; the node is a null point of the symbol, not a nilpotent momentum.
 
@@ -706,7 +708,7 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $H=\{Q,Q^\dagger\}$ | the supersymmetric Hamiltonian |
 | $\mathrm{Ind}=\mathrm{Tr}(-1)^F$ | the Witten index |
 | $\Gamma$, $\psi\mapsto-ie_t\psi \vec e_z$ | chirality, the supersymmetric grading; the cell representative of $\chi$ |
-| $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$; its cell is $\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | the central chirality, not an element of $\mathbb{B}$; its cell is $\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ |
 | $F$ | the algebra-valued field of the two-sided Dirac equation |
 | $\Delta=S\oplus S^{\mathrm c}$ | the chiral module of the one-sided equation |
 | $\tilde P=iP_t e_t+\vec p$ | the physical four-momentum |

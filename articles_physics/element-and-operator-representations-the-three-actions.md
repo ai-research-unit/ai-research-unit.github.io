@@ -105,7 +105,7 @@ The matrix acts on a two-component column. That column is the **spinor**, and th
 
 ### The $4\times4$ Left Regular Element
 
-The left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*. Its invariants are the doubled invariants:
+The left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the axis-free frame of *Matrix Representations Conventions*, §*The 4×4 Matrix Representation*. Its invariants are the doubled invariants:
 
 $$
 \det\mathsf{M}_4^{L}(\tilde Q)=N^2, \qquad \operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t.
@@ -292,7 +292,7 @@ On the $*$-unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner a
 The left multiplications form a monoid under composition, isomorphic to the multiplicative monoid of $\mathbb{B}$:
 
 $$
-L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}, \qquad L_{e_t}^{\mathrm{pau}}=\mathrm{id}.
+L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}, \qquad L_{e_t}^{\mathrm{axf}}=\mathrm{id}.
 $$
 
 The reversible elements are the units of the algebra, that is the elements off the cone. The right multiplications form the opposite monoid, and the two-sided maps form a monoid whose units are the pairs of units.

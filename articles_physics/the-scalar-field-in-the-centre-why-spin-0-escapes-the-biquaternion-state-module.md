@@ -85,10 +85,10 @@ $$
 On the state module these act as left multiplication. The left multipliers, $L_a\psi=a\psi$, compose as $L_aL_b=L_{ab}$, so they inherit the quaternion relations,
 
 $$
-L_{\vec e_\nu}^{\mathrm{pau}}L_{\vec e_\mu}^{\mathrm{pau}}=-\delta_{\nu\mu}L_{e_t}^{\mathrm{pau}}+\varepsilon_{\nu\mu\lambda}L_{\vec e_\lambda}^{\mathrm{pau}},
+L_{\vec e_\nu}^{\mathrm{axf}}L_{\vec e_\mu}^{\mathrm{axf}}=-\delta_{\nu\mu}L_{e_t}^{\mathrm{axf}}+\varepsilon_{\nu\mu\lambda}L_{\vec e_\lambda}^{\mathrm{axf}},
 $$
 
-and in the matrix representation $L_{\vec e_\mu}^{\mathrm{pau}}$ is multiplication by $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, so that
+and in the matrix representation $L_{\vec e_\mu}^{\mathrm{axf}}$ is multiplication by $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, so that
 
 $$
 \tilde S_\mu\;\longmapsto\;\tfrac{1}{2}\sigma_\mu .
@@ -379,6 +379,8 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, where $\tilde\Xi_{\mathrm{ad}}$ is the central root of $-e_t$, is a different object: it is the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$, and it is represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
 
 ## Summary
 

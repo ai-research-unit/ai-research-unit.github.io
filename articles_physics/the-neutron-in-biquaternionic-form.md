@@ -59,7 +59,7 @@ Two qualifications keep this from overturning the paragraph above. First, the is
 
 The companion article separates two objects that both carry the name *Dirac equation*, and they must not be read as one. The neutron needs the separation stated once, because the two differ in which side of the field the derivative and the mass act.
 
-**The one-sided equation** is the chiral pair displayed at the head of this section: the definition. The gradient acts by left multiplication, the field is the module-valued $\tilde\Psi\in\Delta$, the mass is the off-diagonal pairing of $S$ and $\bar S$, and chirality is the cell $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ — a **right** multiplication, the module representative of the central sign $\chi$ of the complexified algebra.
+**The one-sided equation** is the chiral pair displayed at the head of this section: the definition. The gradient acts by left multiplication, the field is the module-valued $\tilde\Psi\in\Delta$, the mass is the off-diagonal pairing of $S$ and $\bar S$, and chirality is the cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ — a **right** multiplication, the module representative of the central sign $\chi$ of the complexified algebra.
 
 **The two-sided equation** is Kravchenko's dictionary form, a single equation on the algebra-valued field $F\in\mathbb{B}$, in the corpus's units $c=1$,
 
@@ -77,7 +77,7 @@ with the bar the coefficientwise complex conjugation, to be read apart from the 
 | Field | $\tilde\Psi\in\Delta=S\oplus\bar S$ | $F\in\mathbb{B}$ |
 | Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left, by $i\partial/\partial t'$ and $D_3$ |
 | Mass | off-diagonal pairing of $S$ and $\bar S$ | right multiplication by $\vec e_z$, with $\overline{F}$ |
-| Chirality | the cell $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ | the right action by $\vec e_z$ of the mass term |
+| Chirality | the cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | the right action by $\vec e_z$ of the mass term |
 | Status here | the definition, used throughout | quoted; not used |
 
 The article uses the one-sided pair, because the spin content, the mass-shell relation and the charge operator of the next section are all read on the module. The two-sided form is quoted for one point that does matter here: the chirality of the next section is the right multiplication by $\vec e_z$, and the two-sided mass acts by that same right multiplication. Chirality lives on the right, the derivative on the left. Neither equation contains a second fermion, and neither fixes $m_n$.
@@ -89,9 +89,9 @@ The neutron's charge is zero. Of the neutron's properties, neutrality looks like
 $$
 Ϙ \;=\; ϙ_L\,P_L + ϙ_R\,P_R,
 \qquad
-P_L=\tfrac12\bigl(I_4+iR_{\vec e_z}^{\mathrm{pau}}\bigr),
+P_L=\tfrac12\bigl(I_4+iR_{\vec e_z}^{\mathrm{axf}}\bigr),
 \qquad
-P_R=\tfrac12\bigl(I_4-iR_{\vec e_z}^{\mathrm{pau}}\bigr),
+P_R=\tfrac12\bigl(I_4-iR_{\vec e_z}^{\mathrm{axf}}\bigr),
 $$
 
 with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix: they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$. The covariant derivative and its curvature carry the same operator,
@@ -102,10 +102,10 @@ D_\mu \;=\; \frac{\partial}{\partial Q_\mu} + \frac{i}{\hbar}A_\mu Ϙ,
 [D_\mu,D_\nu] \;=\; \frac{i}{\hbar}F_{\mu\nu}Ϙ .
 $$
 
-**The operator multiplies from the right.** $Ϙ$ is a module endomorphism, and the endomorphism is a right multiplication by an element of $\mathbb{M}_+$. Writing $I_4=R_{e_t}^{\mathrm{pau}}$ and $-iR_{\vec e_z}^{\mathrm{pau}}=R_{-i\vec e_z}^{\mathrm{pau}}$ gives
+**The operator multiplies from the right.** $Ϙ$ is a module endomorphism, and the endomorphism is a right multiplication by an element of $\mathbb{M}_+$. Writing $I_4=R_{e_t}^{\mathrm{axf}}$ and $-iR_{\vec e_z}^{\mathrm{axf}}=R_{-i\vec e_z}^{\mathrm{axf}}$ gives
 
 $$
-Ϙ \;=\; \frac{ϙ_L+ϙ_R}{2}\,R_{e_t}^{\mathrm{pau}}+\frac{ϙ_R-ϙ_L}{2}\,R_{-i\vec e_z}^{\mathrm{pau}}
+Ϙ \;=\; \frac{ϙ_L+ϙ_R}{2}\,R_{e_t}^{\mathrm{axf}}+\frac{ϙ_R-ϙ_L}{2}\,R_{-i\vec e_z}^{\mathrm{axf}}
 \;=\; R_b,
 \qquad
 b \;=\; \tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}\left(ϙ_R-ϙ_L\right)\vec e_z \in \mathbb{M}_+ ,
@@ -116,14 +116,14 @@ so the operator coincides with a left multiplication only in the vector-like cas
 The cells act by $L_{a}R_{b}\psi=a\psi b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so the chirality cell is a right multiplication by $\vec e_z$,
 
 $$
--iR_{\vec e_z}^{\mathrm{pau}}\psi \;=\; -i\,\psi\,\vec e_z,
+-iR_{\vec e_z}^{\mathrm{axf}}\psi \;=\; -i\,\psi\,\vec e_z,
 \qquad
-(-iR_{\vec e_z}^{\mathrm{pau}})^{2} \;=\; i^{2}(R_{\vec e_z}^{\mathrm{pau}})^{2} \;=\; (-1)(-I_4) \;=\; I_4,
+(-iR_{\vec e_z}^{\mathrm{axf}})^{2} \;=\; i^{2}(R_{\vec e_z}^{\mathrm{axf}})^{2} \;=\; (-1)(-I_4) \;=\; I_4,
 $$
 
-the two minus signs cancelling: one is $i^{2}=-1$, the other is $(R_{\vec e_z}^{\mathrm{pau}})^{2}=R_{\vec e_z\vec e_z}^{\mathrm{pau}}=R_{-e_t}^{\mathrm{pau}}=-I_4$.
+the two minus signs cancelling: one is $i^{2}=-1$, the other is $(R_{\vec e_z}^{\mathrm{axf}})^{2}=R_{\vec e_z\vec e_z}^{\mathrm{axf}}=R_{-e_t}^{\mathrm{axf}}=-I_4$.
 
-As multipliers, the projectors are $P_L=R_{b_L}$ and $P_R=R_{b_R}$ with $b_{L,R}=\tfrac12(e_t\pm i\vec e_z)$, that is $P_L=\tfrac12L_{e_t}^{\mathrm{pau}}R_{e_t+i\vec e_z}^{\mathrm{pau}}$. The multipliers are idempotent and orthogonal for the same reason, $(i\vec e_z)^{2}=i^{2}\vec e_z^{2}=(-1)(-e_t)=e_t$, so $b_L^{2}=\tfrac14\left(e_t+2i\vec e_z+(i\vec e_z)^{2}\right)=b_L$ and $b_Lb_R=\tfrac14\left(e_t-(i\vec e_z)^{2}\right)=0$. The multipliers are not central, since $\vec e_z$ is not: the blocks they cut out are central in the cell algebra $M_4(\mathbb{C})$, but the multipliers that cut them lie off the centre of $\mathbb{B}$.
+As multipliers, the projectors are $P_L=R_{b_L}$ and $P_R=R_{b_R}$ with $b_{L,R}=\tfrac12(e_t\pm i\vec e_z)$, that is $P_L=\tfrac12L_{e_t}^{\mathrm{axf}}R_{e_t+i\vec e_z}^{\mathrm{axf}}$. The multipliers are idempotent and orthogonal for the same reason, $(i\vec e_z)^{2}=i^{2}\vec e_z^{2}=(-1)(-e_t)=e_t$, so $b_L^{2}=\tfrac14\left(e_t+2i\vec e_z+(i\vec e_z)^{2}\right)=b_L$ and $b_Lb_R=\tfrac14\left(e_t-(i\vec e_z)^{2}\right)=0$. The multipliers are not central, since $\vec e_z$ is not: the blocks they cut out are central in the cell algebra $M_4(\mathbb{C})$, but the multipliers that cut them lie off the centre of $\mathbb{B}$.
 
 In the block basis $(\psi_L,\psi_R)$ the operator is diagonal,
 
@@ -140,7 +140,7 @@ so its spectrum is $\{ϙ_L,ϙ_R\}$, each with multiplicity two. A single-particl
 - If $ϙ_R=0$ and $ϙ_L\neq0$, then $\ker Ϙ = \bar{S}$, the right-handed block.
 - If $ϙ_L=ϙ_R=0$ the whole module is neutral (the trivially uncoupled case).
 
-Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**: the chirality cell restricted to the neutral block is a multiple of the identity there. When $ϙ_L=0$ the neutral space is $S$, on which $-iR_{\vec e_z}^{\mathrm{pau}}=-I_2$; when $ϙ_R=0$ it is $\bar{S}$, with $-iR_{\vec e_z}^{\mathrm{pau}}=+I_2$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed): each of its two products pairs a left half with a right half, and one half is absent. So the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
+Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**: the chirality cell restricted to the neutral block is a multiple of the identity there. When $ϙ_L=0$ the neutral space is $S$, on which $-iR_{\vec e_z}^{\mathrm{axf}}=-I_2$; when $ϙ_R=0$ it is $\bar{S}$, with $-iR_{\vec e_z}^{\mathrm{axf}}=+I_2$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed): each of its two products pairs a left half with a right half, and one half is absent. So the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
 
 The framework therefore does not cleanly supply a **massive neutral spin-$\tfrac12$ single particle**: on the module, neutrality and the massive Dirac interpretation pull in opposite directions.
 
@@ -252,6 +252,8 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The neutron is an electrically neutral spin-$\tfrac12$ baryon, and in the biquaternion framework of this series it is represented as a field in the Dirac module $\Delta=S\oplus\bar{S}$ satisfying the linear chiral mass pair $\tilde{\nabla}\tilde{\Psi}_R=m_n\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_n\tilde{\Psi}_R$. That pair is the one-sided form, the definition; Kravchenko's two-sided equation writes the derivative on the left and the mass on the right through $\vec e_z$, and it is a different operator, quoted here but not used.
@@ -278,15 +280,15 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field; the algebra's real structure |
 | $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar S=(0,\tfrac12)$ | Dirac module; $S$ the left-handed, $\bar S$ the right-handed half |
 | $L_{a}$, $R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Left and right multiplication; the cell $L_aR_b$ acts by $\psi\mapsto a\psi b$ |
-| $\Gamma = -iR_{\vec e_z}^{\mathrm{pau}} = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = P_R-P_L = \mathrm{diag}(-I_2,I_2)$ | Chirality cell; $(-iR_{\vec e_z}^{\mathrm{pau}})^2=I_4$ |
+| $\Gamma = -iR_{\vec e_z}^{\mathrm{axf}} = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} = P_R-P_L$, which is $\mathrm{diag}(-I_2,I_2)$ in the Peirce display | Chirality cell; $(-iR_{\vec e_z}^{\mathrm{axf}})^2=I_4$ |
 | $\chi = i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$, $e_\pm=\tfrac12(e_t\pm\chi)$ | Central grading of the algebra; not an element of $\mathbb{B}$, represented on the module by $\Gamma$ |
-| $P_L = \tfrac12(I_4+iR_{\vec e_z}^{\mathrm{pau}})$, $P_R = \tfrac12(I_4-iR_{\vec e_z}^{\mathrm{pau}})$ | Chiral projectors; cells $R_{b_{L,R}}$ with $b_{L,R}=\tfrac12(e_t\pm i\vec e_z)$ |
+| $P_L = \tfrac12(I_4+iR_{\vec e_z}^{\mathrm{axf}})$, $P_R = \tfrac12(I_4-iR_{\vec e_z}^{\mathrm{axf}})$ | Chiral projectors; cells $R_{b_{L,R}}$ with $b_{L,R}=\tfrac12(e_t\pm i\vec e_z)$ |
 | $Ϙ = ϙ_LP_L+ϙ_RP_R = \mathrm{diag}(ϙ_L,ϙ_L,ϙ_R,ϙ_R)$ | Charge operator on the module; $ϙ_L,ϙ_R$ unfixed parameters |
 | $D_\mu = \partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ | Covariant derivative of the chiral charge; $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$ |
 | $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
 | $\mathcal{N}F = (i\partial/\partial t'+D_3)F - m_n i\,\overline{F}\,\vec e_z$ | Two-sided Dirac equation, $F\in\mathbb{B}$; bar is the coefficientwise conjugation |
-| $\gamma_\mu$, $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Gamma Formulation* |
+| $\gamma_\mu$, $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Gamma Formulation* |
 | $G_N = \sigma\exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |

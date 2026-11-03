@@ -208,7 +208,7 @@ Adding the two parts gives the rule.
 $$
 L_{\tilde U_{\mathrm b}}R_{\tilde U_{\mathrm b}^{*}}\,p_\parallel=L_{\tilde V_{\mathrm p}}\,p_\parallel ,
 \qquad
-L_{\tilde U_{\mathrm b}}R_{\tilde U_{\mathrm b}^{*}}\,p_\perp=R_{e_t}^{\mathrm{pau}}\,p_\perp ,
+L_{\tilde U_{\mathrm b}}R_{\tilde U_{\mathrm b}^{*}}\,p_\perp=R_{e_t}^{\mathrm{axf}}\,p_\perp ,
 $$
 
 so a two-sided operator on the paravector space is a one-sided operator on each of the two parts: the left cell of the proper velocity on the coplanar part, the identity on the orthogonal part. That is the operator content of the rule, and the reason a boost of a plane wave is a pair of one-sided operations rather than a conjugation.
@@ -395,6 +395,8 @@ $$
 a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the chirality is the splitting of the field into two halves, and on the Dirac module that splitting is carried by the $\gamma_5$ cell; in the second equation there is no split at all, and the chirality is the volume cell $-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field.
 
 The paravector reading supplies the one-sided half: a paravector multiplying from the left is a cell $L_p$, and the whole of the boost rule is one-sided. What it does not supply is the doubling. A chirality is a grading: it must separate the module into two halves, so it must be an operator that anticommutes with the generators and squares to the identity. The volume element $i$ of the algebra of physical space is central and squares to $-1$; it multiplies every element by the same scalar and separates nothing. The two objects are often confused, and the confusion has a visible cause: in the cell formulation $\gamma_5^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ while $\gamma_5$ anticommutes with the four generating cells, and in the element formulation $i^2=-e_t$ while $i$ commutes with everything. A scalar and a grading cannot be the same object, and it is the reason the paravector literature writes one Dirac equation where the cell formulation writes two. The full account is in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, §*The Two Equations of the Corpus*.
+
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
 
 ## Summary
 

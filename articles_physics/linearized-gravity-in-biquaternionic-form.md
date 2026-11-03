@@ -226,23 +226,23 @@ with the exact expansion $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu} + \langle \del
 
 The construction above is pure geometry: it linearizes the frame and reads the metric perturbation off it. Where matter attaches to that frame, the parent article's attachment is the one-sided covariant derivative on the spinor module, $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$, with $\vec\Gamma_\mu$ the spin connection. An external source shows that this attachment has two inequivalent forms, and the difference is not a higher-order subtlety here.
 
-For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term $\{iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{pau}},S_{cd}\}$ between the frame cell and the Lorentz generator, which the substituted equation does not. In the cells, with the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)=-\eta$ and using $i^2=-1$ to remove the pair of imaginary units from the generator,
+For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term $\{iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{axf}},S_{cd}\}$ between the frame cell and the Lorentz generator, which the substituted equation does not. In the cells, with the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)=-\eta$ and using $i^2=-1$ to remove the pair of imaginary units from the generator,
 
 $$
-S_{cd}=\tfrac14\bigl[iL_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{pau}},iL_{e_d}R_{\vec e_{\nu(d)}}^{\mathrm{pau}}\bigr]
-=-\tfrac14\bigl[L_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{pau}},L_{e_d}R_{\vec e_{\nu(d)}}^{\mathrm{pau}}\bigr],
+S_{cd}=\tfrac14\bigl[iL_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{axf}},iL_{e_d}R_{\vec e_{\nu(d)}}^{\mathrm{axf}}\bigr]
+=-\tfrac14\bigl[L_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{axf}},L_{e_d}R_{\vec e_{\nu(d)}}^{\mathrm{axf}}\bigr],
 $$
 
 the relevant commutator is
 
 $$
-\bigl[L_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{pau}},S_{ab}\bigr]
-=g_{ca}\,L_{e_b}R_{\vec e_{\nu(b)}}^{\mathrm{pau}}-g_{cb}\,L_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{pau}},
+\bigl[L_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{axf}},S_{ab}\bigr]
+=g_{ca}\,L_{e_b}R_{\vec e_{\nu(b)}}^{\mathrm{axf}}-g_{cb}\,L_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{axf}},
 $$
 
 which is nonzero whenever $c$ equals exactly one of $a,b$, rather than vanishing (J. Fredsted, arXiv:1906.12200v3 [physics.gen-ph], 2019; recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*). Both the frame perturbation $\delta\tilde{E}_\mu$ and the spin connection $\vec\Gamma_\mu$ are **first order** in the perturbation of this article, and the discrepancy is linear in the connection, so it is first order as well: it does not disappear as the perturbation is taken small. A linearized system that couples a Dirac field to $h_{\mu\nu}$ therefore has to say which of the two forms it linearizes, and the corpus's own curved Dirac equation — the one-sided chirality pair displayed in *The Gamma Formulation* — is the substituted one.
 
-Here $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 This is recorded as an external caution and is not resolved here. Nothing constructed in this article changes, because the construction above contains no matter coupling at all; what changes is the interpretation of the article's own gap list, where "a derivation of the coupling to matter" has to be strengthened — the coupling is not merely underived, it is not unique in the standard formulation.
 
@@ -501,6 +501,8 @@ $$
 
 with the spatial gradient acting from the left, the mass from the right through $\vec e_z$, and the mass term carrying the algebra's complex conjugation $\overline{\cdot}$. The first acts on a pair of chirality halves with a scalar mass; the second acts on one biquaternion with a directed, antilinear mass. They share the frame, not the operator.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 Linearized gravity in biquaternionic form is the linearization of the parent article's frame route. The metric perturbation is carried by a frame perturbation $\delta\tilde{E}_\mu \in \mathbb{M}_-$ through $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_\mu,\varepsilon_\nu\rangle_{\natural}$, and every symmetric perturbation arises this way. The sixteen frame components split as $16 = 10 + 6$, the kernel being the infinitesimal local Lorentz transformations, which leave the metric perturbation exactly invariant.
@@ -538,7 +540,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12\eta_{\mu\nu}h$, $\bar{h} = -h$ | Trace-reversed perturbation; here the overbar marks trace reversal, not complex conjugation |
 | $\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14 h\,\varepsilon_\mu$ | Trace-reversed frame perturbation |
 | $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$ | Infinitesimal local Lorentz generator (complex pure vector) |
-| $iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{a}R_{b}$ | Frame cells, $L_a$ and $R_b$ the left and right multiplications |
+| $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $L_{a}R_{b}$ | Frame cells, $L_a$ and $R_b$ the left and right multiplications |
 | $\tilde Q_{\mathrm d} \in \mathbb{M}_-$ | Gauge four-vector, $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial x_\mu\,\tilde Q_{\mathrm d}$ |
 | $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\xi_\nu - \partial/\partial x_\nu\,\xi_\mu$, $\xi_\nu = \langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | Linearized gauge transformation |
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |

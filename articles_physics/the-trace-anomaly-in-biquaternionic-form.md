@@ -177,7 +177,7 @@ $$
 $$
 on the algebra, and the two-sided cell equation
 $$
-(\mathbb{D}-m)\psi=0,\qquad \mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_{k}L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
+(\mathbb{D}-m)\psi=0,\qquad \mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_{k}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
 $$
 on the module. These are the two Dirac equations of the series: the pair is the one-sided statement, the cell equation is its two-sided representative, and only the second carries a chirality. The phase, and not the curvature coefficient, is the subject of the next article, and the determinant article's central/non-central distinction is what separates them. The framework's statement is that the trace anomaly is the *central* statement (a scalar coefficient multiplying curvature invariants) while the $\theta$ vacuum is the *phase* statement, and that the two are read from the same determinant.
 
@@ -261,6 +261,8 @@ That anticommutator is the algebraic content of "only the two-sided equation car
 
 **The trace.** The trace of a product is a linear functional on cells, $\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ on the four-dimensional module, so a spinor trace is a product of scalar parts and $\operatorname{tr}e_t=4$. On the two-dimensional module the same cell has trace $2\,\mathrm{Sc}(ab)$, which is the informational formula of the body; the numbers $2$ and $4$ are the dimensions of the two spaces, not two normalisations of one trace. The dictionary is complex-linear: over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\operatorname{Tr}\log S^{(2)}[\phi;g]$ has the conformal variation
@@ -287,7 +289,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
 | $\xi=(d-2)/(4(d-1))$ | Improvement coupling; $\xi=1/6$ at $d=4$ |
 | $\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Clifford trace on the Dirac module; $\operatorname{tr}e_t=4$ |
-| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial Q_k$ | Cell Dirac operator of the module |
+| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$ | Cell Dirac operator of the module |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients; the two-dimensional central charge is a different $c$ |
 
 ## Further Reading

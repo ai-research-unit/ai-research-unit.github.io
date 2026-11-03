@@ -317,21 +317,21 @@ $$
 obeying the massive Dirac equation in the frame cells (the bispinor is read in the Dirac module $\Delta$),
 
 $$
-\left(i\omega\,iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}
--\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}
+\left(i\omega\,iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}
+-\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}
 +im\right)\Phi_\omega=0
 $$
 
-in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. Here $L_aR_b$ are the cells, $L_aR_b\psi=a\psi b$, so $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ are the frame cells. The time term carries two imaginary factors, and $i^2=-1$ collapses them,
+in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. Here $L_aR_b$ are the cells, $L_aR_b\psi=a\psi b$, so $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ are the frame cells. The time term carries two imaginary factors, and $i^2=-1$ collapses them,
 
 $$
-i\omega\,iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=i^2\omega\,L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-\omega\,R_{\vec e_x}^{\mathrm{pau}},
+i\omega\,iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=i^2\omega\,L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=-\omega\,R_{\vec e_x}^{\mathrm{axf}},
 $$
 
-since $L_{e_t}^{\mathrm{pau}}$ is the identity; no residual scalar sign is hidden in the display. The confinement of the field to $\Omega$ is the boundary condition
+since $L_{e_t}^{\mathrm{axf}}$ is the identity; no residual scalar sign is hidden in the display. The confinement of the field to $\Omega$ is the boundary condition
 
 $$
-\sum_{k=1}^{3}u_k\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,\Phi_\omega(\vec q)=i\,\Phi_\omega(\vec q)
+\sum_{k=1}^{3}u_k\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,\Phi_\omega(\vec q)=i\,\Phi_\omega(\vec q)
 \qquad(\vec q\in\partial\Omega),
 $$
 
@@ -344,7 +344,7 @@ The reduction of the model to the algebra is due to V. V. Kravchenko (1995), and
 **A real-linear bijection of the spinor module onto the algebra.** There is a bijection $A$ from bispinors $\Phi: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[\Phi]$, under which the spatial cells act by left multiplication by the imaginary units and the timelike cell acts **antilinearly**, by complex conjugation:
 
 $$
-A\bigl(iR_{\vec e_x}^{\mathrm{pau}}\Phi\bigr) = \overline{A(\Phi)}, \qquad A(i\Phi) = -A(\Phi)\,\vec e_z ,
+A\bigl(iR_{\vec e_x}^{\mathrm{axf}}\Phi\bigr) = \overline{A(\Phi)}, \qquad A(i\Phi) = -A(\Phi)\,\vec e_z ,
 $$
 
 where $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The second identity says that $A$ is $\mathbb{R}$-linear and not $\mathbb{C}$-linear. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
@@ -505,6 +505,8 @@ $\gamma_5$ is the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\
 
 The comparison with the frame is complex-linear — the coefficients of an element in the basis of the sixteen products are complex numbers — although the dictionary $A$ of the bag is only $\mathbb{R}$-linear. Over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 Confinement is the absence of the coloured degrees of freedom from the asymptotic spectrum, diagnosed by the Wilson loop: a perimeter law for a screened phase and an area law for a confining one, with the rectangular loop giving the static potential. In the biquaternion framework the loop is a two-sector bilinear — a material-sector connection integrated around a curve, exponentiated into the informational realization of the gauge group, and traced to a gauge-invariant number — so the order parameter is housed exactly.
@@ -517,7 +519,7 @@ What the framework cannot supply is the colour theory itself. The compact algebr
 
 The two confinement pictures must be kept apart, and the framework houses one of them. The non-perturbative gauge-dynamics picture is the one the QCD agenda rules out: a loop expectation value, an area law, a string tension and a mass gap, none of which the framework can derive.
 
-The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose chirality is the central sign $\chi$ and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\sum_k u_k\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
+The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose chirality is the central sign $\chi$ and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\sum_k u_k\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
 
 That condition is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995). A real-linear bijection carries the bispinor to a biquaternion; the mass term carries the componentwise complex conjugation $\overline{\cdot}$; factoring the equation removes it; the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$; the bag condition becomes the projector condition $S^-\tilde{p}=0$; and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$.
 
@@ -530,7 +532,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
+| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Informational and material sectors |
 | $\tilde{A} = \sum_\mu A_\mu e_\mu\in\mathbb{M}_-$ | Gauge connection (material sector) |
 | $T_a = i\vec e_a\in\mathbb{M}_+$ | Generators realized in the informational sector |

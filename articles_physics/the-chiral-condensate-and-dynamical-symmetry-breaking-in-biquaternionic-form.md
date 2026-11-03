@@ -10,53 +10,53 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L , \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
 $$
 
-The framework carries two first-order equations, and this article keeps them apart from the first line. The **gradient equation** is that pair on the algebra: every derivative acts by left multiplication, the two members are conjugate, and no chirality operator appears, because no right multiplication is one of its terms. The **cell equation** is the same dynamics on the Dirac module, $(\mathbb{D}-m)\psi=0$, in which each derivative is a two-sided cell and the chirality is the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$. The condensate, its bilinears and the axial rotation are objects of the cell equation; the gradient equation supplies the mass shell. The section *The Two Dirac Equations and the Chirality Cell* states both, and every later section says which one it uses.
+The framework carries two first-order equations, and this article keeps them apart from the first line. The **gradient equation** is that pair on the algebra: every derivative acts by left multiplication, the two members are conjugate, and no chirality operator appears, because no right multiplication is one of its terms. The **cell equation** is the same dynamics on the Dirac module, $(\mathbb{D}-m)\psi=0$, in which each derivative is a two-sided cell and the chirality is the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$. The condensate, its bilinears and the axial rotation are objects of the cell equation; the gradient equation supplies the mass shell. The section *The Two Dirac Equations and the Chirality Cell* states both, and every later section says which one it uses.
 
 This article asks what the framework supplies for the condensate. The answer is a short chain of algebraic facts and one large missing physical input. The categories are the corpus's: **established** (and recomputed here), **transcribed** from the standard literature, and **gap** (left visible).
 
-- **Established, and recomputed below.** The massless cell equation $\mathbb{D}\psi=0$ carries the two phase symmetries $\psi\mapsto e^{i\alpha}\psi$ and $\psi\mapsto e^{i\alpha\Gamma}\psi$, with $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$; the massive linear chiral pair breaks the second. The vector central phase passes through the mass and the axial phase does not, and the axial current obeys $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2im\,\bar{\psi}\Gamma\psi$. A condensate $\langle\bar{\psi}\psi\rangle$ is the vacuum expectation of exactly the bilinear that the mass term multiplies, so a nonzero condensate is a dynamically generated coefficient of the *same* linear chiral pair — not of the algebra's antilinear real structure $\flat$, which is a different object.
+- **Established, and recomputed below.** The massless cell equation $\mathbb{D}\psi=0$ carries the two phase symmetries $\psi\mapsto e^{i\alpha}\psi$ and $\psi\mapsto e^{i\alpha\Gamma}\psi$, with $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$; the massive linear chiral pair breaks the second. The vector central phase passes through the mass and the axial phase does not, and the axial current obeys $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2im\,\bar{\psi}\Gamma\psi$. A condensate $\langle\bar{\psi}\psi\rangle$ is the vacuum expectation of exactly the bilinear that the mass term multiplies, so a nonzero condensate is a dynamically generated coefficient of the *same* linear chiral pair — not of the algebra's antilinear real structure $\flat$, which is a different object.
 - **Established, and recomputed below.** The bilinear $\bar{\psi}\psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ is chirality-odd, Lorentz-invariant and parity-even; its vacuum expectation is a real number, which read back into the algebra sits on $\mathbb{R}e_t\subset\mathbb{C}_{\mathbb{B}}$, the **central** scalar line; it is the carrier of the linear chiral mass, and it is what the framework's off-diagonal mass coupling is a coefficient of. The counting of broken generators, $N_f^2-1$ for $N_f$ massless flavours, is the standard one and is reproduced.
 - **Standard, transcribed.** The Nambu–Jona-Lasinio gap equation, the critical coupling $G_c$, the mean-field condensate, and the Goldstone counting are textbook. They are stated here in the framework's notation because they are what a dynamical condensate is; every number quoted below was recomputed from the integral.
 - **Gap, left visible.** The framework has **no colour group and no strong gauge dynamics**: the compact gauge algebra inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of real dimension four, every $\mathbb{B}$-module has even complex dimension, and $SU(3)$ is absent. A QCD-like condensate therefore cannot be *derived* in the framework. The framework supplies the algebraic identity of the condensate with the coefficient of its linear chiral pair; the scale, and the interaction that produces it, are empirical input.
 
 The article is organised as follows. A section states the two Dirac equations and the chirality cell. A second fixes the chiral symmetry of the linear mass term and its axial current. A third shows that the condensate is the order parameter and identifies it algebraically. A fourth transcribes the gap equation and verifies its numbers. A fifth gives the mass shell and the effective potential. A sixth gives the biquaternion interpretation, a seventh records the Goldstone counting and where the pion is treated, a closing section separates what the framework supplies, transcribes, and does not supply, and the gamma dictionary follows for cross-reference with the rest of the series.
 
-**The cells.** With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and the two-sided cell $L_aR_b$, so that $L_aR_b\psi=a\psi b$, the product is $L_aR_b\,L_cR_d=L_{ac}R_{db}$ and the identity is $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4$. The four generator cells and the chirality cell are
+**The cells.** With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and the two-sided cell $L_aR_b$, so that $L_aR_b\psi=a\psi b$, the product is $L_aR_b\,L_cR_d=L_{ac}R_{db}$ and the identity is $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4$. The four generator cells and the chirality cell are
 
 $$
-G_0=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-G_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-G_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-G_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
-$$
-
-$$
-\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
-$$
-
-and $G_\mu$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$. Each generator carries one factor of $i$; naming them $G_\mu$ is what keeps that factor from being written out again in every product, and the factor is structural, since without it the time cell would square to $-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and the three spatial ones to $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. The relations are
-
-$$
-G_0^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad G_1^{2}=G_2^{2}=G_3^{2}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
-\{G_\mu,G_\nu\}=2g_{\mu\nu}\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+G_0=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+G_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+G_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+G_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
 $$
-\Gamma^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad \{\Gamma,G_\mu\}=0\qquad(\mu=0,1,2,3),
+\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-with $g=\operatorname{diag}(+1,-1,-1,-1)$. The chirality cell is Hermitian, and in the chiral block basis it acts as $-1$ on $\psi_L$ and $+1$ on $\psi_R$, that is $\Gamma=\operatorname{diag}(-I_2,I_2)$; the projectors are $P_L=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}-\Gamma)$ and $P_R=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+\Gamma)$.
+and $G_\mu$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$. Each generator carries one factor of $i$; naming them $G_\mu$ is what keeps that factor from being written out again in every product, and the factor is structural, since without it the time cell would square to $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and the three spatial ones to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. The relations are
+
+$$
+G_0^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad G_1^{2}=G_2^{2}=G_3^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
+\{G_\mu,G_\nu\}=2g_{\mu\nu}\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+$$
+
+$$
+\Gamma^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad \{\Gamma,G_\mu\}=0\qquad(\mu=0,1,2,3),
+$$
+
+with $g=\operatorname{diag}(+1,-1,-1,-1)$. The chirality cell is Hermitian, and in the chiral block basis it acts as $-1$ on $\psi_L$ and $+1$ on $\psi_R$, that is $\Gamma=\operatorname{diag}(-I_2,I_2)$; the projectors are $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-\Gamma)$ and $P_R=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+\Gamma)$.
 
 **The collapse of the imaginary unit.** Because $i^{2}=-1$, the product of the central imaginary with a cell is a plain cell, and the two collapses used below are
 
 $$
-i\,\Gamma=R_{\vec e_z}^{\mathrm{pau}},\qquad
-i\,G_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} .
+i\,\Gamma=R_{\vec e_z}^{\mathrm{axf}},\qquad
+i\,G_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}} .
 $$
 
-Every double $i$ in this article therefore reduces: the axial rotation is a real combination of cells, and the pseudoscalar bilinear is $i\bar\psi\Gamma\psi=\bar\psi R_{\vec e_z}^{\mathrm{pau}}\psi$. A product of two generators spends $i^{2}=-1$ and returns a plain cell with no residual unit.
+Every double $i$ in this article therefore reduces: the axial rotation is a real combination of cells, and the pseudoscalar bilinear is $i\bar\psi\Gamma\psi=\bar\psi R_{\vec e_z}^{\mathrm{axf}}\psi$. A product of two generators spends $i^{2}=-1$ and returns a plain cell with no residual unit.
 
-**The adjoint and the bilinears.** The Dirac adjoint is $\bar{\psi}=\psi^{*}iR_{\vec e_x}^{\mathrm{pau}}=\psi^{*}G_0$, with $G_0$ Hermitian, $G_1,G_2,G_3$ anti-Hermitian and $\Gamma$ Hermitian. In the chiral block basis, with $\psi=(\psi_L,\psi_R)$,
+**The adjoint and the bilinears.** The Dirac adjoint is $\bar{\psi}=\psi^{*}iR_{\vec e_x}^{\mathrm{axf}}=\psi^{*}G_0$, with $G_0$ Hermitian, $G_1,G_2,G_3$ anti-Hermitian and $\Gamma$ Hermitian. In the chiral block basis, with $\psi=(\psi_L,\psi_R)$,
 
 $$
 \bar{\psi}\psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L,\qquad
@@ -65,19 +65,19 @@ $$
 
 so that $\bar{\psi}\psi$ is real and $i\bar{\psi}\Gamma\psi$ is real, the two being twice the real part and minus twice the imaginary part of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$.
 
-**The volume cell and the isomorphism.** The volume cell is $\omega=G_0G_1G_2G_3=-i\Gamma=-R_{\vec e_z}^{\mathrm{pau}}$, so $\Gamma=i\omega$. The five cells generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$: a product of two generators is a plain cell, and
+**The volume cell and the isomorphism.** The volume cell is $\omega=G_0G_1G_2G_3=-i\Gamma=-R_{\vec e_z}^{\mathrm{axf}}$, so $\Gamma=i\omega$. The five cells generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$: a product of two generators is a plain cell, and
 
 $$
-\vec e_x\mapsto iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\vec e_y\mapsto iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\vec e_z\mapsto iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+\vec e_x\mapsto iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\vec e_y\mapsto iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\vec e_z\mapsto iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
 $$
-i\mapsto\omega=iR_{\vec e_x}^{\mathrm{pau}}\,iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}
+i\mapsto\omega=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
 $$
 
-identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$. In each product the right factors are $\vec e_y\vec e_y=-e_t$ while $i^{2}=-1$, so the two signs cancel and the three quaternion units land on the left multiplications $L_{\vec e_x}^{\mathrm{pau}},L_{\vec e_y}^{\mathrm{pau}},L_{\vec e_z}^{\mathrm{pau}}$; the fourth line has $i^{4}=+1$ and right factors $\vec e_y^{3}\vec e_x=+\vec e_z$, with left factors $e_t\vec e_x\vec e_y\vec e_z=-e_t$, so $i$ lands on $\omega=-R_{\vec e_z}^{\mathrm{pau}}$, the pure right multiplication, whose square is $R_{\vec e_z^{2}}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ as $i^{2}=-1$ requires. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$. In each product the right factors are $\vec e_y\vec e_y=-e_t$ while $i^{2}=-1$, so the two signs cancel and the three quaternion units land on the left multiplications $L_{\vec e_x}^{\mathrm{axf}},L_{\vec e_y}^{\mathrm{axf}},L_{\vec e_z}^{\mathrm{axf}}$; the fourth line has $i^{4}=+1$ and right factors $\vec e_y^{3}\vec e_x=+\vec e_z$, with left factors $e_t\vec e_x\vec e_y\vec e_z=-e_t$, so $i$ lands on $\omega=-R_{\vec e_z}^{\mathrm{axf}}$, the pure right multiplication, whose square is $R_{\vec e_z^{2}}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ as $i^{2}=-1$ requires. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The frame, the coordinates and the units.** Every derivative in a cell display is with respect to $x_\mu=(t',x,y,z)$, in units $c=1$; the $ict'$ normalization $Q_t=ict'$ is named only where the gradient is written. In these coordinates $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$, so the contraction that reproduces $\Box$ has $\eta^{00}=-1$ and $\eta^{kk}=+1$, that is $\eta=-g$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
 
@@ -103,11 +103,11 @@ is the first-order dynamics of the algebra: each member acts by **left** multipl
 **The cell equation.** On the Dirac module $\Delta=S\oplus\bar{S}$ the same pair is one four-component equation $(\mathbb{D}-m)\psi=0$, with the operator built from the generators,
 
 $$
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial x_k}
+\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k}
 =i\,G_\mu\frac{\partial}{\partial x_\mu},
 $$
 
-where the second form is the first read through $iG_0=-R_{\vec e_x}^{\mathrm{pau}}$ and $iG_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The time term is a pure right multiplication and the three spatial terms are left times right; the four minus signs are the four factors of $i$ that the generators carry. The operator is two-sided, and since the metric is already in the generators,
+where the second form is the first read through $iG_0=-R_{\vec e_x}^{\mathrm{axf}}$ and $iG_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. The time term is a pure right multiplication and the three spatial terms are left times right; the four minus signs are the four factors of $i$ that the generators carry. The operator is two-sided, and since the metric is already in the generators,
 
 $$
 \mathbb{D}^{2}=-g^{\mu\nu}\frac{\partial^{2}}{\partial x_\mu\partial x_\nu}
@@ -136,7 +136,7 @@ is multiplication by the central element $\exp(i\alpha)\in\mathbb{C}_{\mathbb{B}
 
 $$
 A:\ \psi\ \longmapsto\ \exp(i\alpha\Gamma)\psi
-=\cos\alpha\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\psi+\sin\alpha\,R_{\vec e_z}^{\mathrm{pau}}\psi
+=\cos\alpha\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\psi+\sin\alpha\,R_{\vec e_z}^{\mathrm{axf}}\psi
 $$
 
 rotates them oppositely, since $\Gamma=-1$ on $\psi_L$ and $+1$ on $\psi_R$:
@@ -145,7 +145,7 @@ $$
 \psi_L\longmapsto \exp(-i\alpha)\psi_L ,\qquad \psi_R\longmapsto \exp(+i\alpha)\psi_R .
 $$
 
-In the biquaternion statement of the companion article on chiral fermions, the two halves are the left-handed module $S$ and its conjugate $\bar{S}$, and the axial phase is the relative phase of the two. The rotation is written in the cells on purpose: $i\Gamma=R_{\vec e_z}^{\mathrm{pau}}$, so the imaginary unit of $\exp(i\alpha\Gamma)=\cos\alpha+i\sin\alpha\Gamma$ is absorbed by the cell and the phase reads $\cos\alpha\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+\sin\alpha\,R_{\vec e_z}^{\mathrm{pau}}$, with no unit left outside.
+In the biquaternion statement of the companion article on chiral fermions, the two halves are the left-handed module $S$ and its conjugate $\bar{S}$, and the axial phase is the relative phase of the two. The rotation is written in the cells on purpose: $i\Gamma=R_{\vec e_z}^{\mathrm{axf}}$, so the imaginary unit of $\exp(i\alpha\Gamma)=\cos\alpha+i\sin\alpha\Gamma$ is absorbed by the cell and the phase reads $\cos\alpha\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+\sin\alpha\,R_{\vec e_z}^{\mathrm{axf}}$, with no unit left outside.
 
 **Why both are symmetries.** Since $\Gamma$ anticommutes with each generator, it anticommutes with $\mathbb{D}$ and commutes with $\mathbb{D}^{2}=\Box$; the central phase commutes with everything. Hence
 
@@ -205,9 +205,9 @@ $$
 
 which vanishes exactly when $m=0$. The mass is the only explicit breaking, and the identity is exact at the classical level. The quantum correction to it — the axial anomaly, which adds a term even at $m=0$ — belongs to the companion articles; the *spontaneous* breaking that a condensate produces is a separate phenomenon from that anomaly.
 
-**Why the sum carries no metric factor.** The metric is already spent inside the cells, since $G_0^{2}=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $G_k^{2}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ are the entries of $g$. Hence $j_{5k}=\bar\psi G_k\Gamma\psi$ is the contravariant spatial component and $\sum_\mu\partial j_{5\mu}/\partial x_\mu=\partial j_5^0/\partial t'+\nabla\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
+**Why the sum carries no metric factor.** The metric is already spent inside the cells, since $G_0^{2}=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and $G_k^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ are the entries of $g$. Hence $j_{5k}=\bar\psi G_k\Gamma\psi$ is the contravariant spatial component and $\sum_\mu\partial j_{5\mu}/\partial x_\mu=\partial j_5^0/\partial t'+\nabla\cdot\vec j_5$ is the divergence; an extra $\varepsilon$ would apply the metric a second time.
 
-**The companion's notation.** There the identity reads $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_5)=2im\,\tilde\Psi^{\natural}\chi\tilde\Psi$, the time slot of $\tilde J_5$ carrying the factor $ic$ that the $ict'$ coordinate requires. The two notations name the same operator: $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ is the reference-frame cell of $\chi=i\tilde\Xi_{\mathrm{ad}}$, and on $\Delta$ they agree, $\chi=\Gamma=\mathrm{diag}(-I_2,I_2)$.
+**The companion's notation.** There the identity reads $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J_5)=2im\,\tilde\Psi^{\natural}\chi\tilde\Psi$, the time slot of $\tilde J_5$ carrying the factor $ic$ that the $ict'$ coordinate requires. The two notations name the same operator: $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ is the reference-frame cell of $\chi=i\tilde\Xi_{\mathrm{ad}}$, and on $\Delta$ they agree, $\chi=\Gamma=\mathrm{diag}(-I_2,I_2)$.
 
 **Two symmetries, two currents.** For later use we record the vector and axial bilinears and their divergences:
 
@@ -235,7 +235,7 @@ $$
 the **Dirac mass bilinear**. It is off-diagonal in the chiral blocks, it is a Lorentz scalar and parity-even, and its pseudoscalar partner is
 
 $$
-i\bar{\psi}\Gamma\psi=\bar{\psi}R_{\vec e_z}^{\mathrm{pau}}\psi=\psi_L^{\dagger}\psi_R-\psi_R^{\dagger}\psi_L ,
+i\bar{\psi}\Gamma\psi=\bar{\psi}R_{\vec e_z}^{\mathrm{axf}}\psi=\psi_L^{\dagger}\psi_R-\psi_R^{\dagger}\psi_L ,
 $$
 
 written with the explicit factor of $i$ because $\bar{\psi}\Gamma\psi$ is purely imaginary and $i\bar{\psi}\Gamma\psi$ is real. Under the axial transformation the scalar bilinear is not invariant:
@@ -246,7 +246,7 @@ A:\ \bar{\psi}\psi\ \longmapsto\ \cos(2\alpha)\,\bar{\psi}\psi+\sin(2\alpha)\,i\
 i\bar{\psi}\Gamma\psi\ \longmapsto\ \cos(2\alpha)\,i\bar{\psi}\Gamma\psi-\sin(2\alpha)\,\bar{\psi}\psi ,
 $$
 
-using $\exp(2i\alpha\Gamma)=\cos(2\alpha)\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+i\sin(2\alpha)\,\Gamma$ and $\Gamma^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. The two bilinears therefore rotate into each other by the angle $2\alpha$: the pair $(\bar{\psi}\psi,\,i\bar{\psi}\Gamma\psi)$ carries the two-dimensional rotation of the axial group, exactly as a two-component order parameter should, and the invariant of the rotation is $(\bar{\psi}\psi)^{2}+(i\bar{\psi}\Gamma\psi)^{2}$.
+using $\exp(2i\alpha\Gamma)=\cos(2\alpha)\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+i\sin(2\alpha)\,\Gamma$ and $\Gamma^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. The two bilinears therefore rotate into each other by the angle $2\alpha$: the pair $(\bar{\psi}\psi,\,i\bar{\psi}\Gamma\psi)$ carries the two-dimensional rotation of the axial group, exactly as a two-component order parameter should, and the invariant of the rotation is $(\bar{\psi}\psi)^{2}+(i\bar{\psi}\Gamma\psi)^{2}$.
 
 **The order parameter.** A **chiral condensate** is a nonzero vacuum expectation value
 
@@ -277,7 +277,7 @@ $$
 + G\left[(\bar{\psi}\psi)^{2}+(i\bar{\psi}\Gamma\psi)^{2}\right],
 $$
 
-in which $G$ has mass dimension $-2$. The interaction is chirally invariant: the combination $(\bar{\psi}\psi)^{2}+(i\bar{\psi}\Gamma\psi)^{2}$ is the invariant of the axial rotation noted above, because the pair $(\bar{\psi}\psi,\,i\bar{\psi}\Gamma\psi)$ rotates as a two-vector, and $i\Gamma=R_{\vec e_z}^{\mathrm{pau}}$ writes the second term with a single cell. The framework carries the same structure: the four-fermion interaction pairs the bilinears, and it does not need the algebra beyond the chiral pairing that the bilinears already are.
+in which $G$ has mass dimension $-2$. The interaction is chirally invariant: the combination $(\bar{\psi}\psi)^{2}+(i\bar{\psi}\Gamma\psi)^{2}$ is the invariant of the axial rotation noted above, because the pair $(\bar{\psi}\psi,\,i\bar{\psi}\Gamma\psi)$ rotates as a two-vector, and $i\Gamma=R_{\vec e_z}^{\mathrm{axf}}$ writes the second term with a single cell. The framework carries the same structure: the four-fermion interaction pairs the bilinears, and it does not need the algebra beyond the chiral pairing that the bilinears already are.
 
 **The mean-field mass.** Linearising the interaction about the condensate, $(\bar{\psi}\psi)^{2}\to2\langle\bar{\psi}\psi\rangle\bar{\psi}\psi+\ldots$, replaces the four-fermion term by a mass term $-m\bar{\psi}\psi$ with
 
@@ -446,6 +446,8 @@ $$
 $$
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The chiral condensate in biquaternionic form is the vacuum expectation of the chirality-odd scalar bilinear,
@@ -454,7 +456,7 @@ $$
 \boxed{\;\langle\bar{\psi}\psi\rangle = \langle\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L\rangle\;} ,
 $$
 
-and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ breaks. The two Dirac equations are kept apart throughout: the pair is the one-sided statement in the algebra, the cell equation $(\mathbb{D}-m)\psi=0$ with $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ is its two-sided representative on the module, and the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ exists only on the module. The massless cell equation carries both the vector and the axial phase, $\psi\mapsto e^{i\alpha}\psi$ and $\psi\mapsto e^{i\alpha\Gamma}\psi$; the mass term preserves the central one and breaks the axial one, with $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2im\bar{\psi}\Gamma\psi$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\bar{\psi}\psi\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
+and it is the order parameter of the axial symmetry that the framework's **linear chiral mass pair** $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ breaks. The two Dirac equations are kept apart throughout: the pair is the one-sided statement in the algebra, the cell equation $(\mathbb{D}-m)\psi=0$ with $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ is its two-sided representative on the module, and the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ exists only on the module. The massless cell equation carries both the vector and the axial phase, $\psi\mapsto e^{i\alpha}\psi$ and $\psi\mapsto e^{i\alpha\Gamma}\psi$; the mass term preserves the central one and breaks the axial one, with $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2im\bar{\psi}\Gamma\psi$. A nonzero condensate reproduces exactly this breaking, spontaneously, and its value is the coefficient of the same linear chiral pair: $m=-2G\langle\bar{\psi}\psi\rangle$. The order parameter sits on the real central line, and it is not the antilinear pairing built on the algebra's real structure $\flat$.
 
 The standard mean-field account was verified. With $N_c$ colours and cutoff $\Lambda$ the gap equation is $1=4N_cG\,I_1(m)$, the critical coupling is $G_c=\pi^2/(N_c\Lambda^2)$, and for $N_c=3$, $\Lambda=0.65$ GeV, and a constituent mass $m=0.3$ GeV the condensate is $-(247\ \mathrm{MeV})^3$ — the accepted order of magnitude. The Goldstone count is $N_f^2-1$, giving three pions for $N_f=2$ and eight modes for $N_f=3$, the ninth would-be mode being the $\eta'$, which the anomaly keeps heavy; the spin-$0$ effective description of those modes belongs to another subcategory and is not developed here.
 
@@ -469,21 +471,21 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the condensate itself sits on $\mathbb{R}e_t$ |
-| $L_aR_b$, $L_aR_b\psi=a\psi b$ | Two-sided cell; identity cell $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4$ |
+| $L_aR_b$, $L_aR_b\psi=a\psi b$ | Two-sided cell; identity cell $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4$ |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\sum_k\partial^2/\partial Q_k^2$ | d'Alembertian, series convention; $Q_k=x_k$, and $\Delta$ is reserved for the Dirac module |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Gradient equation: the linear chiral pair, one-sided |
 | $(\mathbb{D}-m)\psi=0$, $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ | Cell equation: the pair on $\Delta$, two-sided |
-| $G_0=iR_{\vec e_x}^{\mathrm{pau}}$, $G_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Generator cells; $\{G_\mu,G_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
-| $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\omega$ | Chirality cell; $\mathrm{diag}(-I_2,I_2)$ in the chiral basis |
+| $G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Generator cells; $\{G_\mu,G_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega$ | Chirality cell; $\mathrm{diag}(-I_2,I_2)$ in the chiral basis |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Chirality of the double, the corpus's algebra-side name; equal to $\Gamma$ on $\Delta$ |
-| $\omega=G_0G_1G_2G_3=-R_{\vec e_z}^{\mathrm{pau}}$ | Volume cell; the image of the scalar imaginary |
-| $iG_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $i\Gamma=R_{\vec e_z}^{\mathrm{pau}}$ | The collapse of $i^2=-1$: one imaginary unit per cell |
+| $\omega=G_0G_1G_2G_3=-R_{\vec e_z}^{\mathrm{axf}}$ | Volume cell; the image of the scalar imaginary |
+| $iG_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $i\Gamma=R_{\vec e_z}^{\mathrm{axf}}$ | The collapse of $i^2=-1$: one imaginary unit per cell |
 | $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\Delta=S\oplus\bar{S}$ | Weyl, conjugate Weyl, and Dirac modules |
-| $\bar{\psi}=\psi^{*}iR_{\vec e_x}^{\mathrm{pau}}=\psi^{*}G_0$ | Dirac adjoint; carries the generator cell $G_0$ |
-| $P_L=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}-\Gamma)$, $P_R=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+\Gamma)$ | Chiral projectors |
+| $\bar{\psi}=\psi^{*}iR_{\vec e_x}^{\mathrm{axf}}=\psi^{*}G_0$ | Dirac adjoint; carries the generator cell $G_0$ |
+| $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-\Gamma)$, $P_R=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+\Gamma)$ | Chiral projectors |
 | $\bar{\psi}\psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ | Chirality-odd scalar bilinear; the condensate's carrier |
-| $i\bar{\psi}\Gamma\psi=\bar{\psi}R_{\vec e_z}^{\mathrm{pau}}\psi$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
+| $i\bar{\psi}\Gamma\psi=\bar{\psi}R_{\vec e_z}^{\mathrm{axf}}\psi$ | Pseudoscalar partner; rotates with the condensate under the axial phase |
 | $j_\mu=\bar{\psi}G_\mu\psi$, $j_{5\mu}=\bar{\psi}G_\mu\Gamma\psi$ | Vector and axial currents |
 | $\sum_\mu\partial j_{5\mu}/\partial x_\mu=2im\bar{\psi}\Gamma\psi$ | Axial divergence (explicit breaking by $m$); no metric factor, the cells carry it |
 | $\langle\bar{\psi}\psi\rangle=-\Sigma^3$ | Chiral condensate, the order parameter; $\Sigma$ its scale |

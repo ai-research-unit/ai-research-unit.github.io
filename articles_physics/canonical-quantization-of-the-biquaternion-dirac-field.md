@@ -62,12 +62,12 @@ whose solutions, normalizations, and spin sums are established in the parent art
 The body is written in the **frame cells** of the reference frame. Write
 
 $$
-C_0:=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
-C_k:=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-iC_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}},
+C_0:=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+C_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+iC_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{axf}},
 $$
 
-where $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, $e_\mu$ runs over the four basis units $e_t,\vec e_x,\vec e_y,\vec e_z$ — the scalar unit for $\mu=t$ and $\vec e_k$ for $\mu=k$ — and $\kappa(t)=x$, $\kappa(k)=y$ name the spatial unit that each cell multiplies on the right. $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ is the identity on the module. The solutions article writes the same cells with a capital letter and an index; the letter changes, the operators do not. The cells satisfy
+where $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, $e_\mu$ runs over the four basis units $e_t,\vec e_x,\vec e_y,\vec e_z$ — the scalar unit for $\mu=t$ and $\vec e_k$ for $\mu=k$ — and $\kappa(t)=x$, $\kappa(k)=y$ name the spatial unit that each cell multiplies on the right. $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ is the identity on the module. The solutions article writes the same cells with a capital letter and an index; the letter changes, the operators do not. The cells satisfy
 
 $$
 C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4,\qquad
@@ -77,15 +77,15 @@ $$
 so $C_0^2=I_4$ and $C_k^2=-I_4$. A product of two cells carries a single minus sign and no leftover imaginary unit, because $i^2=-1$ is already in the cell:
 
 $$
-C_\mu C_\nu=i^2\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}\,L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\kappa(\nu)}}^{\mathrm{pau}}
-=-\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}\,L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\kappa(\nu)}}^{\mathrm{pau}} .
+C_\mu C_\nu=i^2\,L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{axf}}\,L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\kappa(\nu)}}^{\mathrm{axf}}
+=-\,L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{axf}}\,L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\kappa(\nu)}}^{\mathrm{axf}} .
 $$
 
 On the algebra the pair operator carries no matrix generator; on the module it is represented by the cell operator that the solutions article writes as the position-space Dirac operator:
 
 $$
 \mathbb{D}:=iC_0\frac{\partial}{\partial t'}+i\sum_k C_k\frac{\partial}{\partial Q_k}
-=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
+=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
 $$
 
 with $Q_k$ running over the three spatial coordinates. Its symbol on a plane wave is the momentum cell
@@ -128,7 +128,7 @@ which says that the cell is self-adjoint for the $C_0$-twisted pairing and not f
 
 $$
 \bar{\psi}=\psi^\dagger C_0,\qquad
-C_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},
+C_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},
 $$
 
 the Hermitian conjugate followed by the timelike frame cell. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.
@@ -598,6 +598,8 @@ $$
 
 the second being $4\gamma_0$ for $\alpha=0$ and zero for $\alpha=k$. The all-lower four- and five-gamma sums are then neither $4g_{\alpha\beta}I_4$ nor $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$, and they are not recorded: the body does not use them. In the Euclidean frame, where the metric is $\delta$ and lowering changes nothing, the two index conventions coincide and every sum takes the standard form displayed first.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The biquaternion Dirac field is quantized by promoting its spinor-module representative to an operator-valued field. The equation quantized is the one-sided chiral pair, written on the module as $(\mathbb{D}-m)\psi=0$; Kravchenko's two-sided equation is a different operator and is not quantized here. The classical theory has Lagrangian $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ and conjugate momentum $\pi=i\psi^\dagger$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators,
@@ -636,11 +638,11 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger C_0$ | Dirac spinor (spinor module) and its adjoint |
 | $e_\mu$ | Basis unit: $e_t$ for $\mu=t$, $\vec e_k$ for $\mu=k$ |
 | $\kappa(\mu)$ | Right multiplier of the cell: $\kappa(t)=x$, $\kappa(k)=y$ |
-| $C_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$, $C_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Frame cells, acting on the spinor module |
-| $C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4$ | Cell Clifford algebra, $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
+| $C_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}$, $C_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells, acting on the spinor module |
+| $C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4$ | Cell Clifford algebra, $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the cells; $g=-\eta$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
-| $\mathbb{D}=iC_0\partial/\partial t'+i\sum_kC_k\partial/\partial Q_k=-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial Q_k$ | Pair operator on the module; $\mathbb{D}^2=\Box$ |
+| $\mathbb{D}=iC_0\partial/\partial t'+i\sum_kC_k\partial/\partial Q_k=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$ | Pair operator on the module; $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p=C_0E_{\vec p}-\sum_kC_kp_k$ | Momentum symbol of $\mathbb{D}$ on a plane wave; $\mathbb{D}_p^2=p^2$ |
 | $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial\psi/\partial t')=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |

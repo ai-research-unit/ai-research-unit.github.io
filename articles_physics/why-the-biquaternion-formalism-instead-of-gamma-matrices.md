@@ -44,7 +44,7 @@ No symbol for the operator is needed when the operator is not the subject. This 
 
 **The reference frame chosen by the corpus is one of a family.** In that frame, whose spatial pair is $(\vec e_y,\vec e_x)$,
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 and the Clifford relations hold. Any other orthogonal pair of spatial units gives another basis by the same construction; a change of pair changes which cells represent the generators and preserves the Clifford relations and the algebra. It is a change of gamma basis, not a change of the algebra. In the gamma notation the same statement is written $S\gamma_\mu S^{-1}$, and the freedom is easy to mistake for a symmetry of the physics.
 
@@ -66,11 +66,11 @@ A generic element has $\ell=4$, and the set $\det c(M)\neq0$ is open and dense.
 
 **A concrete failure.** The sum
 $$
-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}
+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}
 $$
 has coefficient matrix $\operatorname{diag}(1,1,0,0)$, of rank two. It is not a single product, and no change of frame by a decomposable $S$ makes it one: such a change acts on $c(M)$ by an invertible left and right multiplication and preserves its rank. A formalism that makes the generic matrix the primitive has no place to mark the rank-one subset that the physics uses; the cell form writes the same operator as a sum of two terms and leaves it there.
 
-**Two ranks, independent.** The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}})$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.
+**Two ranks, independent.** The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.
 
 **The physics uses few terms.** The chiral projector is one term. The Dirac operator, worked in the next section, has length two: the three spatial terms share a right multiplier and combine into one. The four-term display is a display, not a property of the operator. The operators displayed in the corpus sit at low length; the generic element is not one of them. The gamma basis makes the coefficient vector the object; the biquaternion reading makes the pair the object.
 
@@ -82,7 +82,7 @@ D\psi=\gamma_0\frac{\partial\psi}{\partial x_0}+\gamma_1\frac{\partial\psi}{\par
 $$
 with
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 Four fixed operators and four derivatives. The display does not show a pair of multipliers, and it does not show that the three spatial terms share a right multiplier.
 
@@ -108,7 +108,7 @@ because $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, and distinct gammas anticommute. Th
 
 **The mass.** The mass term is one cell, and in this frame that cell is the identity:
 $$
-m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\psi=m\,e_t\psi e_t=m\psi,
+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\psi=m\,e_t\psi e_t=m\psi,
 $$
 because $e_t$ is central. In the gamma display the same term is $m\psi$, which is $m\gamma_0^2$, not a sixth gamma. The five-name list does not name the identity as a cell; the cell list does. This is the concrete case of the point above: the cell form names the mass block, the gamma form leaves it as the identity.
 
@@ -116,10 +116,10 @@ because $e_t$ is central. In the gamma display the same term is $m\psi$, which i
 
 | operator | cell display | length |
 |---|---|---|
-| mass | $mL_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | 1 |
-| chirality | $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | 1 |
-| chiral projector $P_+$ | $\tfrac12L_{e_t}^{\mathrm{pau}}R_{e_t-i\vec e_z}^{\mathrm{pau}}$ | 1 |
-| Dirac, minimal | $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\,\partial/\partial x_0+iL_{\nabla}R_{\vec e_y}^{\mathrm{pau}}$ | 2 |
+| mass | $mL_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | 1 |
+| chirality | $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | 1 |
+| chiral projector $P_+$ | $\tfrac12L_{e_t}^{\mathrm{axf}}R_{e_t-i\vec e_z}^{\mathrm{axf}}$ | 1 |
+| Dirac, minimal | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\,\partial/\partial x_0+iL_{\nabla}R_{\vec e_y}^{\mathrm{axf}}$ | 2 |
 | Dirac, expanded | four cells | 2 |
 | generic element | — | 4 |
 
@@ -133,7 +133,7 @@ The length is the number of products in the minimal sum, not the number of cells
 
 **Chirality separates cleanly.** In the reference frame the chirality is the single cell
 $$
-\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
+\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
 $$
 and the projectors are read as actions,
 $$
@@ -149,7 +149,7 @@ It is an operator on the module, not multiplication by an element of $\mathbb{B}
 
 **One frame in every formula.** The reference dictionary ties time to $\vec e_x$ and the three spatial directions to $\vec e_y$:
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 The pair $(\vec e_y,\vec e_x)$ is a choice. A formula written in it is a formula about that choice as much as about the operator, and the gamma notation gives the reader no mark that separates the two.
 
@@ -248,7 +248,7 @@ The rules that follow from the above are short.
 | $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ | composition, with the second slot reversed |
 | $c(M)$ | the coefficient matrix of $M$ in the cell basis; a diagnostic, not a datum |
 | $\ell(M)=\operatorname{rank}c(M)$ | the length, the least number of products in a sum |
-| $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | the chirality in the reference frame, $\Gamma^2=1$ |
+| $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | the chirality in the reference frame, $\Gamma^2=1$ |
 | $P_\pm=\tfrac12(1\pm\Gamma)$ | the chiral projectors |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the central sign, $\chi^2=e_t$; an operator, not multiplication by an element of $\mathbb{B}$ |
 | the spatial pair | the orthogonal pair of units that fixes the reference frame |

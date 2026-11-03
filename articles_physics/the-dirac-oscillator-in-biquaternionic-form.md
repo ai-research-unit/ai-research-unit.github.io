@@ -28,7 +28,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$
 
-in which every derivative acts by left multiplication and the mass is the off-diagonal pairing of the two minimal left ideals. Chirality is present, but not as a cell of the frame: it is the split into those ideals, carried algebraically by the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$. The **module equation** is the single two-sided cell equation $(\mathbb{D}-mc/\hbar)\psi=0$, in which the frame cells multiply on both sides and whose two chiral projections are two lines; there the chirality is the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$, and the large/small split is the frame grading: $\beta=iR_{\vec e_x}^{\mathrm{pau}}$ is diagonal in the basis in which the two-spinors are the large and small components. The oscillator is a problem in the module equation, because the substitution is built from $\beta$ and from the velocity cells, and both are two-sided objects. The algebra pair is recorded here because its square is the Klein–Gordon operator on which the whole construction rests; the oscillator itself is never posed in it, and apart from the dictionary drawn in *The Gamma Formulation* it makes no further appearance.
+in which every derivative acts by left multiplication and the mass is the off-diagonal pairing of the two minimal left ideals. Chirality is present, but not as a cell of the frame: it is the split into those ideals, carried algebraically by the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$. The **module equation** is the single two-sided cell equation $(\mathbb{D}-mc/\hbar)\psi=0$, in which the frame cells multiply on both sides and whose two chiral projections are two lines; there the chirality is the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, and the large/small split is the frame grading: $\beta=iR_{\vec e_x}^{\mathrm{axf}}$ is diagonal in the basis in which the two-spinors are the large and small components. The oscillator is a problem in the module equation, because the substitution is built from $\beta$ and from the velocity cells, and both are two-sided objects. The algebra pair is recorded here because its square is the Klein–Gordon operator on which the whole construction rests; the oscillator itself is never posed in it, and apart from the dictionary drawn in *The Gamma Formulation* it makes no further appearance.
 
 **Conventions.** These are the series conventions. A cell is the two-sided multiplication
 
@@ -36,34 +36,34 @@ $$
 L_a\psi=a\psi,\qquad R_b\psi=\psi b,\qquad L_aR_bL_cR_d=L_{ac}R_{db},
 $$
 
-with $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity. The four generator cells $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, one per coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, satisfy
+with $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ the identity. The four generator cells $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, one per coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, satisfy
 
 $$
-\{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-so that $(iR_{\vec e_x}^{\mathrm{pau}})^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. The frame cell and the velocity cells are
+so that $(iR_{\vec e_x}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. The frame cell and the velocity cells are
 
 $$
-\beta=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},
+\beta=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},
 \qquad
-\alpha_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+\alpha_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
-where the two factors of $i$ give $-1$ and the reversed unit product $\vec e_y\vec e_x=-\vec e_z$ gives a second, so the two cancel. Both cells are Hermitian, square to $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, and satisfy $\{\beta,\alpha_k\}=0$ and $\{\alpha_j,\alpha_k\}=2\delta_{jk}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. **A cell product collects a sign from two places:** from the factors of $i$, one per generator cell, and from the units, which the composition rule reverses, so that $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}}$ because $\vec e_y\vec e_x=-\vec e_z$. The two signs can cancel, and in $\beta\,(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=\alpha_k$ they do: the product of two generator cells carries no $i$ at all. The products used below are
+where the two factors of $i$ give $-1$ and the reversed unit product $\vec e_y\vec e_x=-\vec e_z$ gives a second, so the two cancel. Both cells are Hermitian, square to $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, and satisfy $\{\beta,\alpha_k\}=0$ and $\{\alpha_j,\alpha_k\}=2\delta_{jk}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. **A cell product collects a sign from two places:** from the factors of $i$, one per generator cell, and from the units, which the composition rule reverses, so that $R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=R_{\vec e_y\vec e_x}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}}$ because $\vec e_y\vec e_x=-\vec e_z$. The two signs can cancel, and in $\beta\,(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=\alpha_k$ they do: the product of two generator cells carries no $i$ at all. The products used below are
 
 $$
-\beta\alpha_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\alpha_k\beta=-iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\beta\alpha_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\alpha_k\beta=-iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \beta\alpha_k\beta=-\alpha_k .
 $$
 
 The two-sided Dirac operator is
 
 $$
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial x_0}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
+\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_0}-\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
 \qquad x_0=ct',
 $$
 
@@ -73,21 +73,21 @@ and its square is the d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta$, wit
 
 Minimal coupling replaces $\vec p$ by $\vec p - ϙ\vec A$; the added term is a vector potential and enters the Hamiltonian through $\boldsymbol\alpha\cdot\vec A$. The oscillator substitution is different in three ways, and each matters.
 
-**It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with $\boldsymbol\alpha$, the product $\boldsymbol\alpha\cdot(\beta\vec r)$, which is the cell $\alpha_k\beta=-iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ contracted with the position, is frame-**odd**: it lies in the same grading class as the kinetic term $\boldsymbol\alpha\cdot\vec p$, and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the square is again second order and central except for the spin–orbit term.
+**It multiplies the position by $\beta$.** The added term is $-im\omega\beta\vec r$, not $-im\omega\vec r$. Because $\beta$ anticommutes with $\boldsymbol\alpha$, the product $\boldsymbol\alpha\cdot(\beta\vec r)$, which is the cell $\alpha_k\beta=-iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ contracted with the position, is frame-**odd**: it lies in the same grading class as the kinetic term $\boldsymbol\alpha\cdot\vec p$, and in the opposite class from the mass $\beta mc^2$. In the algebra this is the statement that the substitution shifts the odd part of the operator while leaving the even part alone, which is why the square is again second order and central except for the spin–orbit term.
 
-**The coefficient is imaginary, and the term is Hermitian.** A gauge interaction adds the real, Hermitian $ϙ\vec A$ to $\vec p$; here the coefficient is $i$. In the cells the imaginary coefficient is spent on the cell at once, because $\alpha_k\beta=-iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ and the two factors of $i$ multiply to $-1$:
+**The coefficient is imaginary, and the term is Hermitian.** A gauge interaction adds the real, Hermitian $ϙ\vec A$ to $\vec p$; here the coefficient is $i$. In the cells the imaginary coefficient is spent on the cell at once, because $\alpha_k\beta=-iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ and the two factors of $i$ multiply to $-1$:
 
 $$
 c\,\boldsymbol\alpha\cdot\left(-im\omega\beta\vec r\right)
 =-icm\omega\sum_k\alpha_k\beta\,x_k
-=-cm\omega\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,x_k .
+=-cm\omega\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,x_k .
 $$
 
-The coefficient is now real, and the cell $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ is Hermitian: $(L_aR_b)^{\dagger}=L_{a^*}R_{b^*}$, and the units satisfy $\vec e_k^*=-\vec e_k$ and $\vec e_y^*=-\vec e_y$, so the two sign changes cancel. The added term is therefore Hermitian, and so is $H$. What the imaginary coefficient signals is not a complex deformation — the spectrum below is real — but a term that is frame-odd, linear in the position and matrix-valued, which a gauge potential cannot produce.
+The coefficient is now real, and the cell $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ is Hermitian: $(L_aR_b)^{\dagger}=L_{a^*}R_{b^*}$, and the units satisfy $\vec e_k^*=-\vec e_k$ and $\vec e_y^*=-\vec e_y$, so the two sign changes cancel. The added term is therefore Hermitian, and so is $H$. What the imaginary coefficient signals is not a complex deformation — the spectrum below is real — but a term that is frame-odd, linear in the position and matrix-valued, which a gauge potential cannot produce.
 
 **It is linear in the position**, so it grows without bound. The oscillator potential is confining, the spectrum is discrete, and the model is a relativistic confinement model rather than a scattering problem. This is the physical reason for its use in quark-confinement phenomenology, and the reason the spectrum consists of bound levels with the mass gap at their base.
 
-Multiplying the time-dependent equation $H\psi=i\hbar\,\partial \psi/\partial t$ on the left by $\beta/(\hbar c)$ — so that every term is divided by $\hbar$ and the right-hand side becomes $i\beta\,\partial \psi/\partial x_0$ — two collapses do the work. The kinetic term becomes $\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial Q_k$, because the $i$ of the cell, the $i$ of $p_k=-i\hbar\partial/\partial Q_k$ and the $1/\hbar$ multiply to $+1$, and that term is $-\mathbb{D}+i\beta\,\partial/\partial x_0$: its second piece cancels the right-hand side, so the **time** derivative drops out and the spatial part survives as $-\mathbb{D}$. The frame cell passing through the substitution changes its sign, $\beta\alpha_k\beta=-\alpha_k$, so $-im\omega\beta\vec r$ becomes $+im\omega\alpha_kQ_k$, and the mass term becomes $mc/\hbar$. What remains is
+Multiplying the time-dependent equation $H\psi=i\hbar\,\partial \psi/\partial t$ on the left by $\beta/(\hbar c)$ — so that every term is divided by $\hbar$ and the right-hand side becomes $i\beta\,\partial \psi/\partial x_0$ — two collapses do the work. The kinetic term becomes $\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$, because the $i$ of the cell, the $i$ of $p_k=-i\hbar\partial/\partial Q_k$ and the $1/\hbar$ multiply to $+1$, and that term is $-\mathbb{D}+i\beta\,\partial/\partial x_0$: its second piece cancels the right-hand side, so the **time** derivative drops out and the spatial part survives as $-\mathbb{D}$. The frame cell passing through the substitution changes its sign, $\beta\alpha_k\beta=-\alpha_k$, so $-im\omega\beta\vec r$ becomes $+im\omega\alpha_kQ_k$, and the mass term becomes $mc/\hbar$. What remains is
 
 $$
 \left(\mathbb{D} - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\,\alpha_k x_k\,\psi .
@@ -105,7 +105,7 @@ $$
 \alpha_k = \begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0 \end{pmatrix}.
 $$
 
-In this basis the frame cell is block-diagonal and the velocity cells are block-off-diagonal, and in the two off-diagonal blocks the triple $\alpha_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is a Pauli triple: each block is Hermitian, squares to the identity, and the three anticommute pairwise. Writing $\alpha_k\mapsto\sigma_k$ records that identification; which of the several unitarily equivalent Pauli triples a particular cell realisation produces is a relabelling of the three axes, and nothing below depends on it.
+In this basis the frame cell is block-diagonal and the velocity cells are block-off-diagonal, and in the two off-diagonal blocks the triple $\alpha_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is a Pauli triple: each block is Hermitian, squares to the identity, and the three anticommute pairwise. Writing $\alpha_k\mapsto\sigma_k$ records that identification; which of the several unitarily equivalent Pauli triples a particular cell realisation produces is a relabelling of the three axes, and nothing below depends on it.
 
 Since $\beta\vec r = \mathrm{diag}(\vec r,-\vec r)$, the substitution acts differently in the two blocks:
 
@@ -292,19 +292,19 @@ The comparison isolates where the relativistic content lives. In the free theory
 
 Three structural statements can now be made in the algebra.
 
-**The substitution is a shift of the odd part.** The gradient $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\sum_k\vec e_k\,\partial/\partial Q_k$ has a frame-even part ($e_t\,\partial/\partial Q_t$, the timelike direction) and a frame-odd part ($\sum_k\vec e_k\,\partial/\partial Q_k$, the spacelike directions). What the substitution adds to the operator is the cell $-cm\omega\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,x_k$, and that cell is frame-odd: it anticommutes with $\beta=iR_{\vec e_x}^{\mathrm{pau}}$, and it is linear in the position. Squaring the two conjugate first-order operators returns a second-order operator that is central except for one remainder: the pieces built from the two conjugate gradients combine as in the free case, and what survives beside the centre is the spin–orbit cell. With the dictionary of *Reduction to Two-Component Equations*, that remainder is
+**The substitution is a shift of the odd part.** The gradient $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\sum_k\vec e_k\,\partial/\partial Q_k$ has a frame-even part ($e_t\,\partial/\partial Q_t$, the timelike direction) and a frame-odd part ($\sum_k\vec e_k\,\partial/\partial Q_k$, the spacelike directions). What the substitution adds to the operator is the cell $-cm\omega\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,x_k$, and that cell is frame-odd: it anticommutes with $\beta=iR_{\vec e_x}^{\mathrm{axf}}$, and it is linear in the position. Squaring the two conjugate first-order operators returns a second-order operator that is central except for one remainder: the pieces built from the two conjugate gradients combine as in the free case, and what survives beside the centre is the spin–orbit cell. With the dictionary of *Reduction to Two-Component Equations*, that remainder is
 
 $$
 -2m\omega\,\boldsymbol\sigma\cdot\vec L
 \;\longleftrightarrow\;
--2m\omega\sum_k L_k^{\mathrm{orb}}\,L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+-2m\omega\sum_k L_k^{\mathrm{orb}}\,L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 \qquad
 L_k^{\mathrm{orb}}=\sum_{a,b}\epsilon_{kab}\,Q_ap_b ,
 $$
 
-a Hermitian element of $\mathbb{M}_+$: $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\alpha_k$ is Hermitian, $L_k^{\mathrm{orb}}$ is Hermitian, and the two commute. The spin is the Hermitian cell $\alpha_k$, the orbital angular momentum is the scalar operator $L_k^{\mathrm{orb}}$, and the coupling is their contraction — the operator $\sum_kL_k^{\mathrm{orb}}\tilde S_k$ of the hydrogen article, up to the factor $-4m\omega/\hbar$. That the remainder is Hermitian and spinorial rather than central is the algebraic statement that the oscillator's square is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian operator to the square.
+a Hermitian element of $\mathbb{M}_+$: $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\alpha_k$ is Hermitian, $L_k^{\mathrm{orb}}$ is Hermitian, and the two commute. The spin is the Hermitian cell $\alpha_k$, the orbital angular momentum is the scalar operator $L_k^{\mathrm{orb}}$, and the coupling is their contraction — the operator $\sum_kL_k^{\mathrm{orb}}\tilde S_k$ of the hydrogen article, up to the factor $-4m\omega/\hbar$. That the remainder is Hermitian and spinorial rather than central is the algebraic statement that the oscillator's square is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue, it adds a Hermitian operator to the square.
 
-**The zero point is a commutator.** The constant $-3m\hbar\omega$ comes from the commutator of position and momentum. In the cells the shift carries $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}x_k$ against the momentum $p_k$, and the two do not commute: their commutator is the central scalar $[Q_k,p_k]=i\hbar$, and the trace is $3i\hbar$. The factor $im\omega$ of the substitution turns it into $-3m\hbar\omega$ through one use of $i^2=-1$. This is why the aligned ground state sits at the mass gap: the commutator has removed the zero-point energy exactly, and the cancellation counts the number of spatial directions rather than any particular representation.
+**The zero point is a commutator.** The constant $-3m\hbar\omega$ comes from the commutator of position and momentum. In the cells the shift carries $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}x_k$ against the momentum $p_k$, and the two do not commute: their commutator is the central scalar $[Q_k,p_k]=i\hbar$, and the trace is $3i\hbar$. The factor $im\omega$ of the substitution turns it into $-3m\hbar\omega$ through one use of $i^2=-1$. This is why the aligned ground state sits at the mass gap: the commutator has removed the zero-point energy exactly, and the cancellation counts the number of spatial directions rather than any particular representation.
 
 **The zero modes are supersymmetric.** The operator identity has the form of a factorisation, $\mathcal{Q}^\dagger\mathcal{Q}$ with the conjugate pair of *The Square of the Coupled Operator*. The aligned states with $n_r=0$ are exactly the **zero modes** $\mathcal{Q}\phi=0$, and their infinite degeneracy is the zero-mode degeneracy of the factorised operator. The pair $(\mathcal{Q},\mathcal{Q}^\dagger)$ is the standard supersymmetric pair of quantum physics: $\mathcal{Q}^\dagger\mathcal{Q}$ and $\mathcal{Q}\mathcal{Q}^\dagger$ are partner Hamiltonians, and the zero modes of $\mathcal{Q}$ are the states the supersymmetry relates. That this supersymmetry is present, and hidden in the Dirac equation rather than imposed, is the content of the Benítez–Salas-Brito solution listed in the Further Reading. The companion article *Supersymmetric Quantum Physics in the Biquaternion Framework* develops this correspondence; the Dirac oscillator is its exactly solvable relativistic realisation. The two operators here are not the two gradients $\tilde{\nabla},\tilde{\nabla}^{\natural}$ of the free mass pair but their shifted, spin-projected forms; what is common to both is that the square of a first-order operator with a conjugate partner is a second-order operator whose zero modes carry the structure.
 
@@ -384,6 +384,8 @@ because $\alpha_k\beta=-\gamma_k$ and the two factors of $i$ give $-1$. The $i$ 
 
 **What the frame cell is not.** $\gamma_0=\beta=iR_{\vec e_x}^{\mathrm{pau}}$ is the frame cell and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell; the two anticommute. The mass term $\beta mc^2$ is diagonal in the frame grading and off-diagonal in the chirality grading: the Foldy–Wouthuysen transformation can diagonalise it in the frame grading, but no chirality projection can, and the mass is not a chirality.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The Dirac oscillator is the system obtained by the non-minimal substitution $\vec p \to \vec p - im\omega\beta\vec r$ in the Dirac Hamiltonian. The substitution is frame-odd, imaginary and linear in the position; it shifts the odd part of the first-order operator without touching the even (mass) part. In the Dirac basis the equation reduces to the coupled pair
@@ -414,7 +416,7 @@ $$
 
 with the aligned branch independent of $l$ and hence an infinitely degenerate level at $E = \pm mc^2$. In one dimension the spin–orbit term is absent and the spectrum is $E^2 = m^2c^4 + 2m\hbar\omega c^2 n$, $n = 0,1,2,\dots$.
 
-In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the cells its imaginary coefficient is spent on the cell: the added term is $-cm\omega\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}x_k$, a real coefficient times a Hermitian, frame-odd cell. The square is central except for the Hermitian spin–orbit remainder $-2m\omega\sum_kL_k^{\mathrm{orb}}L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ in $\mathbb{M}_+$. The zero-point cancellation is the trace of the commutator $[Q_k,p_k]=i\hbar$ over the three spatial directions, converted to $-3m\hbar\omega$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. The article uses the two-sided module equation throughout; the gammas, the chirality projectors and the matrix form of the two Dirac equations appear only in *The Gamma Formulation*.
+In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the cells its imaginary coefficient is spent on the cell: the added term is $-cm\omega\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}x_k$, a real coefficient times a Hermitian, frame-odd cell. The square is central except for the Hermitian spin–orbit remainder $-2m\omega\sum_kL_k^{\mathrm{orb}}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ in $\mathbb{M}_+$. The zero-point cancellation is the trace of the commutator $[Q_k,p_k]=i\hbar$ over the three spatial directions, converted to $-3m\hbar\omega$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. The article uses the two-sided module equation throughout; the gammas, the chirality projectors and the matrix form of the two Dirac equations appear only in *The Gamma Formulation*.
 
 ## Summary of Notation
 
@@ -424,17 +426,17 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $\mathbb{M}_+$ | Hermitian (informational) sector |
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided cell; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
-| $\beta = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $\alpha_k = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Frame and Dirac velocity cells; $\beta\alpha_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $\alpha_k\beta=-iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ |
-| $\Gamma = -iR_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell, a pure right multiplication |
+| $\beta = iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $\alpha_k = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Frame and Dirac velocity cells; $\beta\alpha_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $\alpha_k\beta=-iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
+| $\Gamma = -iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, a pure right multiplication |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 | $H = c\,\boldsymbol\alpha\cdot(\vec p-im\omega\beta\vec r) + \beta mc^2$ | Dirac-oscillator Hamiltonian |
 | $\vec p - im\omega\beta\vec r$ | Non-minimal substitution (frame-odd shift) |
-| $\mathbb{D} = -R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial Q_k$ | Two-sided Dirac operator, $\mathbb{D}^2=\Box$ |
+| $\mathbb{D} = -R_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$ | Two-sided Dirac operator, $\mathbb{D}^2=\Box$ |
 | $\phi$, $\chi$ | Upper (large) and lower (small) two-spinors |
 | $\mathcal{Q} = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$, $\mathcal{Q}^\dagger = \boldsymbol\sigma\cdot(\vec p+im\omega\vec r)$ | Factorised conjugate operators |
 | $\mathcal{Q}^\dagger \mathcal{Q} = \vec p^2+m^2\omega^2\vec r^2-3m\hbar\omega-2m\omega\boldsymbol\sigma\cdot\vec L$ | Operator identity |
 | $\vec L = \vec r\times\vec p$, $L_k^{\mathrm{orb}}=\sum_{a,b}\epsilon_{kab}Q_ap_b$ | Orbital angular momentum |
-| $-2m\omega\sum_kL_k^{\mathrm{orb}}L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Spin–orbit remainder, Hermitian in $\mathbb{M}_+$ |
+| $-2m\omega\sum_kL_k^{\mathrm{orb}}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Spin–orbit remainder, Hermitian in $\mathbb{M}_+$ |
 | $N = 2n_r + l$ | Total oscillator quantum number |
 | $n_r$ | Radial quantum number |
 | $E^2 = m^2c^4+4m\hbar\omega c^2 n_r$ ($s_{\mathrm{tot}}=l+\tfrac12$) | Aligned branch |

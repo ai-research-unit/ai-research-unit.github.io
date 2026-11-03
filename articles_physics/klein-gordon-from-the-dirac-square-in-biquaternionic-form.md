@@ -15,7 +15,7 @@ Two operators carry the name *Dirac operator* in this corpus, and they are the t
 $$
 \mathbb{D} = i\sum_\mu C_\mu\,\frac{\partial}{\partial x_\mu},
 \qquad
-C_\mu = iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},
+C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},
 \qquad
 (x_t,x_x,x_y,x_z) = (ct',x,y,z),
 $$
@@ -105,7 +105,7 @@ $$
 \tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z .
 $$
 
-In cells the gradient is one-sided: $\tilde\nabla = \sum_\mu L_{e_\mu}^{\mathrm{pau}}\,\partial/\partial Q_\mu$, and $\tilde\nabla^{\natural} = L_{e_t}^{\mathrm{pau}}\,\partial/\partial Q_t - \sum_{k=x,y,z}L_{\vec e_k}^{\mathrm{pau}}\,\partial/\partial Q_k$. Cells compose by multiplying their elements, $L_aL_b = L_{ab}$, so the product of the two cells is the cell of the product, $L_{\tilde\nabla}L_{\tilde\nabla^{\natural}} = L_{\tilde\nabla\tilde\nabla^{\natural}} = L_{\Box}$, a scalar cell. One-sided cells suffice while only products of gradients are taken; two-sided cells enter when an operator holding both $\tilde\nabla$ and $\tilde\nabla^{\natural}$ at once has to be written without a conjugation, and that is the module reading below.
+In cells the gradient is one-sided: $\tilde\nabla = \sum_\mu L_{e_\mu}^{\mathrm{axf}}\,\partial/\partial Q_\mu$, and $\tilde\nabla^{\natural} = L_{e_t}^{\mathrm{axf}}\,\partial/\partial Q_t - \sum_{k=x,y,z}L_{\vec e_k}^{\mathrm{axf}}\,\partial/\partial Q_k$. Cells compose by multiplying their elements, $L_aL_b = L_{ab}$, so the product of the two cells is the cell of the product, $L_{\tilde\nabla}L_{\tilde\nabla^{\natural}} = L_{\tilde\nabla\tilde\nabla^{\natural}} = L_{\Box}$, a scalar cell. One-sided cells suffice while only products of gradients are taken; two-sided cells enter when an operator holding both $\tilde\nabla$ and $\tilde\nabla^{\natural}$ at once has to be written without a conjugation, and that is the module reading below.
 
 Their product is central and scalar:
 
@@ -142,7 +142,7 @@ $$
 \Box = \partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 .
 $$
 
-The chiral pair retains its form and the reduction gives $(\Box - m^2)\tilde{\Psi}_{L,R} = 0$ exactly as before. The module is still the four-dimensional one, so the chirality cell $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ still splits it in two, and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P = i\omega/c\,e_t + k\vec e_x$ and
+The chiral pair retains its form and the reduction gives $(\Box - m^2)\tilde{\Psi}_{L,R} = 0$ exactly as before. The module is still the four-dimensional one, so the chirality cell $\Gamma = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ still splits it in two, and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P = i\omega/c\,e_t + k\vec e_x$ and
 
 $$
 \tilde P\tilde P^{\natural} = -\omega^2/c^2 + k^2 = -\mu^2,
@@ -202,11 +202,11 @@ so the pair is the statement that $\Psi$ is an eigenvector of $\mathcal{Q}$ with
 The module reading is written in cells, because a cell is how the corpus states an operator that acts on one side or on both. Write $L_a$ and $R_b$ for the left and right multiplications, $L_a\psi = a\psi$ and $R_b\psi = \psi b$, so that $L_aR_b\psi = a\psi b$ and $L_aR_b\,L_cR_d = L_{ac}R_{db}$. The **frame cells** of the reference frame are
 
 $$
-C_t := iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = iR_{\vec e_x}^{\mathrm{pau}}, \qquad
-C_k := iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=x,y,z),
+C_t := iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} = iR_{\vec e_x}^{\mathrm{axf}}, \qquad
+C_k := iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=x,y,z),
 $$
 
-with $\nu(t) = x$ and $\nu(k) = y$, and the identity on the four-dimensional module is $I_4 = L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, since $e_t = 1$. Each cell carries one factor of $i$, and every product of two cells carries $i^2 = -1$, so no display below ever carries a double $i$. The cells satisfy
+with $\nu(t) = x$ and $\nu(k) = y$, and the identity on the four-dimensional module is $I_4 = L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, since $e_t = 1$. Each cell carries one factor of $i$, and every product of two cells carries $i^2 = -1$, so no display below ever carries a double $i$. The cells satisfy
 
 $$
 C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4,
@@ -214,13 +214,13 @@ C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4,
 g = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
-so $C_t^2 = I_4$ and $C_k^2 = -I_4$. The cells are indexed by the coordinate labels, $\mu\in\{t,x,y,z\}$, so $C_t$ is the timelike cell and the other three are spatial. The timelike cell carries $R_{\vec e_x}^{\mathrm{pau}}$ and the spatial cells carry $R_{\vec e_y}^{\mathrm{pau}}$; those two units anticommute, and that is why $C_t$ anticommutes with each $C_k$.
+so $C_t^2 = I_4$ and $C_k^2 = -I_4$. The cells are indexed by the coordinate labels, $\mu\in\{t,x,y,z\}$, so $C_t$ is the timelike cell and the other three are spatial. The timelike cell carries $R_{\vec e_x}^{\mathrm{axf}}$ and the spatial cells carry $R_{\vec e_y}^{\mathrm{axf}}$; those two units anticommute, and that is why $C_t$ anticommutes with each $C_k$.
 
 The operator of the module, with the four physical coordinates $x_t = ct'$, $x_x = x$, $x_y = y$ and $x_z = z$, is
 
 $$
 \mathbb{D} := i\sum_\mu C_\mu\frac{\partial}{\partial x_\mu}
-= -R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial x_t} - \sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial x_k},
+= -R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_t} - \sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k},
 \qquad
 \mathbb{D}^2 = -\frac{\partial^2}{\partial x_t^2} + \Delta = \Box ,
 $$
@@ -232,7 +232,7 @@ In this reading no conjugate is needed for the square. The four cells anticommut
 **Chirality.** The chirality cell is
 
 $$
-\Gamma := -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\Gamma := -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 \qquad
 \Gamma^2 = I_4,
 \qquad
@@ -493,11 +493,13 @@ $$
 
 In the $\mathbb{M}_-$ frame, with $g = (+1,-1,-1,-1)$, the metric enters: the first sum is $\sum_\mu\gamma_\mu\gamma_\mu = -2I_4$, and the second is $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu = 2\left(1+g_{\alpha\alpha}\right)\gamma_\alpha$, which is $4\gamma_0$ for $\alpha = 0$ and vanishes for a spatial $\alpha$. The third and fourth are stated in the Euclidean frame only; in the $\mathbb{M}_-$ frame they do not take the Euclidean form with $g$ written for $\delta$. The body uses the anticommutator, the chirality cell and the volume element; the contraction sums are recorded for reference.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The biquaternionic Dirac equation is the first-order pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, and symmetrically for $\tilde{\Psi}_L$; both chiral halves obey the Klein–Gordon equation $(\Box - m^2)\tilde{\Psi} = 0$ with the series d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$, which in physical units is $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$. The square is not the plain square: $\tilde\nabla^2 \neq \Box$, because the timelike unit $e_t$ commutes with the vector units and leaves the mixed term $2\,\partial/\partial Q_t\,\vec\nabla$, and it is the conjugate product $\tilde\nabla\tilde\nabla^\natural$ that cancels it. The conjugate is the algebra's image of the Clifford anticommutator.
 
-On the spinor module the same square is written in cells. The frame cells $C_\mu = iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ satisfy $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4$, each squares to $\pm I_4$, and the operator $\mathbb{D} = i\sum_\mu C_\mu\,\partial/\partial x_\mu$, with $(x_t,x_x,x_y,x_z) = (ct',x,y,z)$, squares to $\Box$ with no conjugate at all. Here the cancellation is carried by the anticommutation of the cells rather than by a conjugation, and every product of two $i$'s is reduced by $i^2 = -1$, so the operator carries no imaginary unit. The chirality cell $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = i\,C_tC_xC_yC_z$ squares to $I_4$ and anticommutes with each $C_\mu$, so $\Gamma\mathbb{D}\Gamma = -\mathbb{D}$; the single two-sided equation $(\mathbb{D} - m)\psi = 0$ therefore splits by chirality into the pair, and $(\mathbb{D} - m)(\mathbb{D} + m) = \Box - m^2$.
+On the spinor module the same square is written in cells. The frame cells $C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ satisfy $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4$, each squares to $\pm I_4$, and the operator $\mathbb{D} = i\sum_\mu C_\mu\,\partial/\partial x_\mu$, with $(x_t,x_x,x_y,x_z) = (ct',x,y,z)$, squares to $\Box$ with no conjugate at all. Here the cancellation is carried by the anticommutation of the cells rather than by a conjugation, and every product of two $i$'s is reduced by $i^2 = -1$, so the operator carries no imaginary unit. The chirality cell $\Gamma = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} = i\,C_tC_xC_yC_z$ squares to $I_4$ and anticommutes with each $C_\mu$, so $\Gamma\mathbb{D}\Gamma = -\mathbb{D}$; the single two-sided equation $(\mathbb{D} - m)\psi = 0$ therefore splits by chirality into the pair, and $(\mathbb{D} - m)(\mathbb{D} + m) = \Box - m^2$.
 
 The square root is not scalar. The companion article on the Klein–Gordon equation proves that $\Box - \mu^2$ has no first-order scalar factorisation in $\mathbb{B}$, because a scalar coefficient would have to anticommute with all three quaternion units and none does. The Dirac square root escapes the obstruction by being operator-valued and off-diagonal: it is the conjugate pair $(\tilde{\nabla},\tilde{\nabla}^{\natural})$ acting on the two chiral halves, coupled by the mass. Written as the block matrix $\mathcal{D}_\mp$ defined above, the operator identity is $\mathcal{D}_-\mathcal{D}_+ = (\Box - m^2)I$; written as $\mathcal{Q}\Psi = m\Psi$ with $\mathcal{Q}$ the off-diagonal part, it is $\mathcal{Q}^2 = \Box\,I$. The scalar no-go and the spinor square root are the same multiplication table seen from two sides.
 
@@ -514,10 +516,10 @@ The converse holds exactly for the free pair. Read the first member as a definit
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $L_a$, $R_b$, $L_aR_b$ | Left and right multiplication, $L_a\psi = a\psi$, $R_b\psi = \psi b$, and the two-sided cell $L_aR_b\psi = a\psi b$ |
-| $C_\mu = iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ | Frame cells, $\mu\in\{t,x,y,z\}$, $\nu(t) = x$, $\nu(k) = y$; $C_t = iR_{\vec e_x}^{\mathrm{pau}}$ and $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4$ |
-| $I_4 = L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | Identity on the spinor module |
+| $C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Frame cells, $\mu\in\{t,x,y,z\}$, $\nu(t) = x$, $\nu(k) = y$; $C_t = iR_{\vec e_x}^{\mathrm{axf}}$ and $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4$ |
+| $I_4 = L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Identity on the spinor module |
 | $\mathbb{D} = i\sum_\mu C_\mu\,\partial/\partial x_\mu$ | Two-sided Dirac operator of the module, $(x_t,x_x,x_y,x_z) = (ct',x,y,z)$; $\mathbb{D}^2 = \Box$ |
-| $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = i\,C_tC_xC_yC_z$ | Chirality cell, $\Gamma^2 = I_4$, $\{\Gamma,C_\mu\} = 0$, $\Gamma\mathbb{D}\Gamma = -\mathbb{D}$ |
+| $\Gamma = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} = i\,C_tC_xC_yC_z$ | Chirality cell, $\Gamma^2 = I_4$, $\{\Gamma,C_\mu\} = 0$, $\Gamma\mathbb{D}\Gamma = -\mathbb{D}$ |
 | $\chi = i\tilde\Xi_{\mathrm{ad}}$ | Central grading of the complexified algebra, $\chi^2 = e_t$, not an element of $\mathbb{B}$; represented by $\Gamma$ on the module |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient (the one-sided Dirac operator) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |

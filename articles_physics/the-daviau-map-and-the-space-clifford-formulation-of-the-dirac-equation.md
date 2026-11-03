@@ -173,7 +173,7 @@ This is the article's central algebraic result. **Daviau's star conjugation is n
 
 **Remark (the star is outer, and stays outer).** On the eight real parameters the star is a real-linear algebra automorphism of $\mathrm{Cl}_{3,0}$, and it is **not** inner: an inner automorphism fixes the centre, and the star sends the central $i$ to $-i$. Enlarging the algebra does not help. The element $i$ remains central in $\mathbb B$, in the cell algebra and in $M_2(\mathbb C)$, so in each of them conjugation by any unit fixes it, and no conjugate-linear map is inner. It is precisely the conjugate-linearity that the star carries, $(\lambda\varphi)^{*}=\bar\lambda\,\varphi^{*}$.
 
-This is why the corpus's odd cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ is not, and cannot be, an implementation of the star. A cell acts on the **module**, not on the algebra: this one is the frame element of the Dirac adjoint, where the $i$ and the time direction supply the metric. The star is an automorphism of the algebra, and it is outer by the argument above.
+This is why the corpus's odd cell $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ is not, and cannot be, an implementation of the star. A cell acts on the **module**, not on the algebra: this one is the frame element of the Dirac adjoint, where the $i$ and the time direction supply the metric. The star is an automorphism of the algebra, and it is outer by the argument above.
 
 ## The Daviau Equation
 
@@ -220,10 +220,10 @@ are the corpus's elements whose matrix images are $\nabla$ and $A$. Every term i
 **The cell form.** The right multiplication is a cell, so the same equation reads
 
 $$
-L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{pau}}\,\varphi = m\,\bar\varphi + q\,L_{\tilde A}\,\varphi,
+L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{axf}}\,\varphi = m\,\bar\varphi + q\,L_{\tilde A}\,\varphi,
 $$
 
-with $L_a\psi=a\psi$ and $R_b\psi=\psi b$. The left side is one cell $L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{pau}}$: the gradient multiplies on the left, the fixed bivector $-\vec e_x$ on the right. The mass term is the conjugate-linear term, and the coupling is a pure left multiplication.
+with $L_a\psi=a\psi$ and $R_b\psi=\psi b$. The left side is one cell $L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{axf}}$: the gradient multiplies on the left, the fixed bivector $-\vec e_x$ on the right. The mass term is the conjugate-linear term, and the coupling is a pure left multiplication.
 
 **What the terms are.** The gradient $\mathfrak D$ has the corpus's Hermitian units on the space derivatives and the unit on the time derivative; under the space-Clifford interpretation these are the three vectors, in the cyclic order $i\vec e_y,i\vec e_z,i\vec e_x$ attached to $\partial/\partial Q_x,\partial/\partial Q_y,\partial/\partial Q_z$. The right factor $-\vec e_x$ is a single fixed element of the algebra multiplying every solution on the right — the structural feature the corpus meets again, in a different guise, in the spacetime-algebra formulation, where the gradient carries a fixed right multiplier of the same kind. The mass term $m\bar\varphi$ is **conjugate-linear** over $\mathbb C$, and real-linear on the eight real parameters; it is the antilinear structure of the corpus's *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, applied to the general-element spinor rather than to the chiral pair. The coupling $q\tilde A\varphi$ is the standard left multiplication by the connection, exactly the minimal coupling of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.
 
@@ -233,7 +233,7 @@ $$
 i\sigma_1=\sigma_1\sigma_2\sigma_3\,\sigma_1=\sigma_2\sigma_3,
 $$
 
-hence **even** in $\mathrm{Cl}_{3,0}$. In the biquaternion interpretation $\vec e_x$ is a quaternion unit, a bivector of $\mathrm{Cl}_{1,3}$, also **even**. The two gradings therefore agree on the right factor; they disagree on the generators $\sigma_k$, which are odd in $\mathrm{Cl}_{3,0}$ and even in $\mathrm{Cl}_{1,3}$ (as $i\vec e_k$, the pseudoscalar times a bivector). The right multiplication by $-\vec e_x$ is the cell $-R_{\vec e_x}^{\mathrm{pau}}$, not the odd cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ of the Dirac adjoint: the two differ by the central factor $i$ and by the sign of the right multiplier. The article states each element in whichever grading is in use at the point of use and does not carry a value across from the other grading.
+hence **even** in $\mathrm{Cl}_{3,0}$. In the biquaternion interpretation $\vec e_x$ is a quaternion unit, a bivector of $\mathrm{Cl}_{1,3}$, also **even**. The two gradings therefore agree on the right factor; they disagree on the generators $\sigma_k$, which are odd in $\mathrm{Cl}_{3,0}$ and even in $\mathrm{Cl}_{1,3}$ (as $i\vec e_k$, the pseudoscalar times a bivector). The right multiplication by $-\vec e_x$ is the cell $-R_{\vec e_x}^{\mathrm{axf}}$, not the odd cell $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ of the Dirac adjoint: the two differ by the central factor $i$ and by the sign of the right multiplier. The article states each element in whichever grading is in use at the point of use and does not carry a value across from the other grading.
 
 ## The Two Equations the Corpus Carries
 
@@ -259,11 +259,11 @@ with $t'$ the physical time, related to the corpus's coordinate by $Q_t=ict'$ on
 
 | | Daviau equation | Corpus chiral pair | Kravchenko two-sided equation |
 |---|---|---|---|
-| Equation | $L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{pau}}\varphi=m\bar\varphi+qL_{\tilde A}\varphi$ | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal N F=0$ |
+| Equation | $L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{axf}}\varphi=m\bar\varphi+qL_{\tilde A}\varphi$ | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal N F=0$ |
 | Multiplication | left by $\mathfrak D$, right by $-\vec e_x$ | left by $\tilde\nabla$, $\tilde\nabla^{\natural}$ | left by $i\partial/\partial t'$ and $D_3$, right by $\vec e_z$ |
 | Field | $\varphi\in\mathcal P$, a general element | $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ | $F\in\mathbb B$ |
 | Mass | $m\bar\varphi$, conjugate-linear | off-diagonal pairing of the two halves | $-mi\,\overline{F}\,\vec e_z$ |
-| Chirality | the right factor $-\vec e_x$ is a bivector, not the chirality cell | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the volume cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ |
+| Chirality | the right factor $-\vec e_x$ is a bivector, not the chirality cell | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the volume cell $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ |
 | Role in the corpus | space Clifford formulation | the corpus's formulation | the dictionary and the Cauchy theory |
 
 The table separates the three. The Daviau equation and the chiral pair are the two this article compares; the Kravchenko column is recorded so that the word "two-sided" does not identify the two. The chiral pair and Kravchenko's equation are themselves related by the dictionary of *Canonical Quantization of the Biquaternion Dirac Field*, but they are different equations with mass terms of different kinds, and Daviau's equation belongs with the chiral pair, not with Kravchenko's.
@@ -302,9 +302,9 @@ The physical point the corpus records is that the left-versus-right question of 
 
 ## Open Questions
 
-1. **Chirality in the space formulation.** In the matrix formulation chirality is the split of the biquaternion into left and right ideals. Daviau's spinor is a general element, and the corpus's *The Reflection and the Rotation in Biquaternionic Form* records that the Pauli algebra cannot carry chirality on its own. The right factor $-\vec e_x=i\sigma_1$ is a bivector, so its right multiplication is a rotation, not the pseudoscalar; the question is whether that rotation, composed with the star's grade involution, reproduces the chirality cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of the full algebra. The Daviau equation alone does not answer it.
+1. **Chirality in the space formulation.** In the matrix formulation chirality is the split of the biquaternion into left and right ideals. Daviau's spinor is a general element, and the corpus's *The Reflection and the Rotation in Biquaternionic Form* records that the Pauli algebra cannot carry chirality on its own. The right factor $-\vec e_x=i\sigma_1$ is a bivector, so its right multiplication is a rotation, not the pseudoscalar; the question is whether that rotation, composed with the star's grade involution, reproduces the chirality cell $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ of the full algebra. The Daviau equation alone does not answer it.
 
-2. **The odd element.** The right factor $-\vec e_x$ is even under both gradings; the elements that change grade are the space-Clifford generators $\sigma_k$, odd in $\mathrm{Cl}_{3,0}$ and even in $\mathrm{Cl}_{1,3}$. The odd cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ of the Dirac adjoint is a different object. Which grading is the physical one for the framework, and does the corpus's sector split select it?
+2. **The odd element.** The right factor $-\vec e_x$ is even under both gradings; the elements that change grade are the space-Clifford generators $\sigma_k$, odd in $\mathrm{Cl}_{3,0}$ and even in $\mathrm{Cl}_{1,3}$. The odd cell $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ of the Dirac adjoint is a different object. Which grading is the physical one for the framework, and does the corpus's sector split select it?
 
 3. **The four Parra options.** Daviau's equation is one of four inequivalent forms of the real Dirac equation recorded by Parra. Which option is it, and how do the other three read in the corpus's conventions? This is the subject of the companion article *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*.
 
@@ -326,9 +326,11 @@ $\gamma_5$ is the reference-frame cell of the chirality operator; the central gr
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
-The space Clifford formulation writes the Dirac equation as a single equation for a **general element** $\varphi$ of the Pauli algebra $\mathcal P\cong M_2(\mathbb{C})$, $\nabla\varphi\,i\sigma_1 = m\varphi^{*}+qA\varphi$, with a cyclically permuted gradient, a potential in the same basis and the **star conjugation** $\varphi^{*}=\sigma_2\bar\varphi\sigma_2$. The spinor has the right eight real components, and the equation is a Dirac equation. Under the corpus's identification of the Pauli algebra with the biquaternion algebra $\mathbb B$, the star conjugation is the corpus's own **complex conjugation** $\bar{\cdot}$ (not the corpus's Hermitian conjugation ${}^{*}$): the factor $\sigma_2$ on each side is precisely the correction that turns entrywise matrix conjugation into the involution that fixes $\mathbb H_\mathbb B$ and negates $i\mathbb H_\mathbb B$. On the eight real parameters it is the grade involution, and it is not inner: it negates the central $i$, which no conjugation by an element or by a cell can do. This is the article's main algebraic point, and it is exact. The Daviau equation is equivalent to the Dirac–Hestenes equation of the spacetime algebra, the passage being the sign of the mass, a cyclic relabelling of the three space directions, and the star. The equation acts on the spinor from the left and from the right at once; in cell notation it is $L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{pau}}\varphi=m\bar\varphi+qL_{\tilde A}\varphi$. It is a two-sided equation, but it is not the corpus's two-sided equation: its right multiplier is the fixed bivector $-\vec e_x$, not Kravchenko's mass direction $\vec e_z$, and it is the space-Clifford face of the chiral (Hestenes) equation, not a rewriting of Kravchenko's. The formulation is an equivalent rewriting and carries no new physics; its value is the dictionary, which is exact and which locates the star, the odd element and the right action at their proper places in the corpus.
+The space Clifford formulation writes the Dirac equation as a single equation for a **general element** $\varphi$ of the Pauli algebra $\mathcal P\cong M_2(\mathbb{C})$, $\nabla\varphi\,i\sigma_1 = m\varphi^{*}+qA\varphi$, with a cyclically permuted gradient, a potential in the same basis and the **star conjugation** $\varphi^{*}=\sigma_2\bar\varphi\sigma_2$. The spinor has the right eight real components, and the equation is a Dirac equation. Under the corpus's identification of the Pauli algebra with the biquaternion algebra $\mathbb B$, the star conjugation is the corpus's own **complex conjugation** $\bar{\cdot}$ (not the corpus's Hermitian conjugation ${}^{*}$): the factor $\sigma_2$ on each side is precisely the correction that turns entrywise matrix conjugation into the involution that fixes $\mathbb H_\mathbb B$ and negates $i\mathbb H_\mathbb B$. On the eight real parameters it is the grade involution, and it is not inner: it negates the central $i$, which no conjugation by an element or by a cell can do. This is the article's main algebraic point, and it is exact. The Daviau equation is equivalent to the Dirac–Hestenes equation of the spacetime algebra, the passage being the sign of the mass, a cyclic relabelling of the three space directions, and the star. The equation acts on the spinor from the left and from the right at once; in cell notation it is $L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{axf}}\varphi=m\bar\varphi+qL_{\tilde A}\varphi$. It is a two-sided equation, but it is not the corpus's two-sided equation: its right multiplier is the fixed bivector $-\vec e_x$, not Kravchenko's mass direction $\vec e_z$, and it is the space-Clifford face of the chiral (Hestenes) equation, not a rewriting of Kravchenko's. The formulation is an equivalent rewriting and carries no new physics; its value is the dictionary, which is exact and which locates the star, the odd element and the right action at their proper places in the corpus.
 
 ## Summary of Notation
 
@@ -344,14 +346,14 @@ The space Clifford formulation writes the Dirac equation as a single equation fo
 | $\nabla=\partial/\partial Q_t+\sigma_2\partial/\partial Q_x+\sigma_3\partial/\partial Q_y+\sigma_1\partial/\partial Q_z$ | The cyclically permuted gradient |
 | $A=A_t+A_x\sigma_2+A_y\sigma_3+A_z\sigma_1$ | The potential in the same basis |
 | $\nabla\varphi\,i\sigma_1=m\varphi^{*}+qA\varphi$ | The Daviau equation |
-| $L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{pau}}\varphi=m\bar\varphi+qL_{\tilde A}\varphi$ | The Daviau equation in cell notation |
+| $L_{\mathfrak D}R_{-\vec e_x}^{\mathrm{axf}}\varphi=m\bar\varphi+qL_{\tilde A}\varphi$ | The Daviau equation in cell notation |
 | $-\vec e_x$ | The fixed right factor of the Daviau equation; a bivector, even in both gradings |
 | $z(\sigma_1)=\Sigma_3$, $z(\sigma_2)=\Sigma_1$, $z(\sigma_3)=\Sigma_2$ | The cyclic map relating the space and spacetime bases |
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra; equals $\mathcal P$ as a complex algebra |
 | $\mathsf{M}_2$ | The corpus's matrix representation, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
 | $\mathfrak D,\ \tilde A$ | The corpus's elements with matrix images $\nabla$ and $A$ |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The corpus's chiral gradient and its quaternion conjugate |
-| $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | The odd cell of the Dirac adjoint, named in *The Gamma Formulation*; not the Daviau right factor, and not an implementation of the star |
+| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ | The odd cell of the Dirac adjoint, named in *The Gamma Formulation*; not the Daviau right factor, and not an implementation of the star |
 
 ## Further Reading
 

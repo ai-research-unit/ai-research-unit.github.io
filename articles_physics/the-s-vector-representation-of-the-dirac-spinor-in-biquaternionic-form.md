@@ -183,7 +183,7 @@ and the corresponding projections $R_\mu, L_\mu$ of $G_\mu$ are the subject of �
 
 ### The Dictionary
 
-The reward of the s-vector representation is that every Dirac bilinear becomes a bilinear in $G$ and $G^*$ with the structure constants $c$ and $\check c$, where $\Gamma:\Psi\mapsto-i e_t\Psi\vec e_z=-iR_{\vec e_z}^{\mathrm{pau}}\Psi$ is the chirality cell:
+The reward of the s-vector representation is that every Dirac bilinear becomes a bilinear in $G$ and $G^*$ with the structure constants $c$ and $\check c$, where $\Gamma:\Psi\mapsto-i e_t\Psi\vec e_z=-iR_{\vec e_z}^{\mathrm{axf}}\Psi$ is the chirality cell:
 
 $$
 \bar\Psi\Psi = -\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu + G^*_\nu G^{*}_{\nu}\bigr),
@@ -196,11 +196,11 @@ $$
 \qquad
 \bar\Psi\,\Gamma C_\mu\Psi = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, \check c_{\lambda\mu\nu}\, G^*_\nu .
 $$
-Here $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ and $C_\mu=iL_{a_\mu}R_{b_\mu}$, so $\Gamma C_\mu=(-i)(i)L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}L_{a_\mu}R_{b_\mu}=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}L_{a_\mu}R_{b_\mu}$: the two factors of $i$ cancel by $i^2=-1$, and the axial bilinear carries no explicit imaginary unit. The slot order is the one fixed above: the first slot of $c$ belongs to the left factor, here $G_\lambda$, the middle slot to the output index $\mu$, and the last slot to the right factor, here $G^*_\nu$. Because the two factors commute as complex numbers, the sum is unchanged if the two are exchanged together with the first and last slots; it is changed if only one of the two is moved. With the opposite attachment, $\sum\epsilon_\nu\epsilon_\lambda G^*_\nu\check c_{\nu\mu\lambda}G_\lambda$, the same sum appears with the opposite sign, and the two readings must not be mixed.
+Here $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ and $C_\mu=iL_{a_\mu}R_{b_\mu}$, so $\Gamma C_\mu=(-i)(i)L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}L_{a_\mu}R_{b_\mu}=L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}L_{a_\mu}R_{b_\mu}$: the two factors of $i$ cancel by $i^2=-1$, and the axial bilinear carries no explicit imaginary unit. The slot order is the one fixed above: the first slot of $c$ belongs to the left factor, here $G_\lambda$, the middle slot to the output index $\mu$, and the last slot to the right factor, here $G^*_\nu$. Because the two factors commute as complex numbers, the sum is unchanged if the two are exchanged together with the first and last slots; it is changed if only one of the two is moved. With the opposite attachment, $\sum\epsilon_\nu\epsilon_\lambda G^*_\nu\check c_{\nu\mu\lambda}G_\lambda$, the same sum appears with the opposite sign, and the two readings must not be mixed.
 
 The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G_\rho c_{\rho\mu\sigma}G^*_\sigma = e\,\bar\Psi C_\mu\Psi$, the source's first bilinear, and it is the vector identity above with the summation indices renamed $\lambda\to\rho$, $\nu\to\sigma$. The chirality cell is the ordered product of the four generator cells up to the factor $i$,
 $$
-\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 and it anticommutes with each $C_\mu$, so it separates the two chiral halves of every spinor. Its representative on the reference frame, written in §The Gamma Formulation, is the usual fifth gamma. The source further rewrites the mass form as
 
@@ -335,7 +335,7 @@ $$
 \tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R,
 $$
 
-with the mass cell $mL_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=m e_t$ the identity in the algebra. Nothing in the mass term flips the chirality by itself; the term is off-diagonal only in the sense that the two equations are written as a pair, and each half is carried into the other by the mass. The s-vector pair and the spinor pair are the same two equations in two carriers.
+with the mass cell $mL_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=m e_t$ the identity in the algebra. Nothing in the mass term flips the chirality by itself; the term is off-diagonal only in the sense that the two equations are written as a pair, and each half is carried into the other by the mass. The s-vector pair and the spinor pair are the same two equations in two carriers.
 
 Equivalently, with $A_\mu = 0$, the pair is the self-dual system
 
@@ -480,6 +480,8 @@ $\gamma_5$ is the reference-frame representative of the chirality cell: the orde
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Psi_1 = \mathcal{R}(B^\flat)v$ and $\Psi_2 = \mathcal{R}(N^\flat)u$ with real $B_\mu, N_\mu$, where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the four-index traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is the quaternion algebra with $e_0=I$ and $e_k=i\vec u_k$, so that $e_k^2=+I$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
@@ -511,7 +513,7 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ | Structure constants built on $k$ |
 | $\check c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on $j$ |
 | $c_5{}_{\mu\nu} = -g_{\mu\mu}\check c_{\mu\nu\lambda}k_\lambda$ | The algebra's chirality cell; $(c_5)^2 = 1$ |
-| $\Gamma:\Psi\mapsto-i e_t\Psi\vec e_z=-iR_{\vec e_z}^{\mathrm{pau}}\Psi$ | The chirality cell (not a gamma matrix) |
+| $\Gamma:\Psi\mapsto-i e_t\Psi\vec e_z=-iR_{\vec e_z}^{\mathrm{axf}}\Psi$ | The chirality cell (not a gamma matrix) |
 | $(G\otimes H)_\lambda = \sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,G_\mu c_{\mu\lambda\nu}H_\nu$ | Composition law |
 | $B_\mu, N_\mu$ | Real four-vectors of the two semi-spinors |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector (the vector representation of the Dirac spinor) |

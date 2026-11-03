@@ -102,7 +102,7 @@ $$
 L_{\tilde A}\circ L_{\tilde B}=L_{\tilde A\tilde B},
 $$
 
-so the left multiplications form a **monoid** under composition, with identity $L_{e_t}^{\mathrm{pau}}$. The monoid is the element monoid seen through the regular representation, and it carries the same partition: its units are exactly the off-cone elements, and its non-units are the zero divisors together with zero.
+so the left multiplications form a **monoid** under composition, with identity $L_{e_t}^{\mathrm{axf}}$. The monoid is the element monoid seen through the regular representation, and it carries the same partition: its units are exactly the off-cone elements, and its non-units are the zero divisors together with zero.
 
 A unit is a **reversible process**: the map is a bijection, and it can be run backwards. A zero divisor is a **process that forgets**: its map has a nonzero kernel, the annihilator, and the kernel is the direction it loses. The cone is the boundary between the two.
 

@@ -102,7 +102,7 @@ $$
 \det\mathsf M_4^L(\tilde\nabla)=\Box^2.
 $$
 
-The matrix is block diagonal with two equal blocks in the canonical frame, $\mathsf M_4^L(\tilde\nabla)=I_2\otimes A_+(\tilde\nabla)$; the two blocks are equal, and each carries one factor:
+The matrix is block diagonal with two equal blocks in the Peirce display, $\mathsf M_4^L(\tilde\nabla)=I_2\otimes A_+(\tilde\nabla)$; the two blocks are equal, and each carries one factor:
 
 $$
 \boxed{\;\det A_+(\tilde\nabla)=\Box\;}.

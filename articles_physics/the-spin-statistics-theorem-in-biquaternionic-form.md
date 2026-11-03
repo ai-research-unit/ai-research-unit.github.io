@@ -128,11 +128,11 @@ $$
 with $\psi^{\mathrm{fop}\dagger}$ the adjoint and $w^{(r)}$, $v^{(r)}$ the parents' spinors. Write $L_aR_b\psi=a\psi b$ for the two-sided multiplier, with $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$, and every left multiplication commuting with every right one. The four cells of the reference frame are
 
 $$
-c_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
-c_k=iL_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=x,y,z),
+c_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+c_k=iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=x,y,z),
 $$
 
-and they obey $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair of indices, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and no sum implied. The index of $c_\mu$ is the coordinate index: with $x_0=t'$ the material time, $c_0$ is the cell paired with $\partial/\partial t'$ and $c_k$ the cell paired with $\partial/\partial x_k$. The same objects are the frame of *The Gamma Formulation* below, where they carry the gamma names, and where the fifth cell $c_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ joins them; only there are they called gammas.
+and they obey $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair of indices, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and no sum implied. The index of $c_\mu$ is the coordinate index: with $x_0=t'$ the material time, $c_0$ is the cell paired with $\partial/\partial t'$ and $c_k$ the cell paired with $\partial/\partial x_k$. The same objects are the frame of *The Gamma Formulation* below, where they carry the gamma names, and where the fifth cell $c_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ joins them; only there are they called gammas.
 
 The field satisfies the corpus's Dirac equation in cells,
 
@@ -155,7 +155,7 @@ $$
 \sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\,c_0+c_0\sum_k c_k\,p_k,
 $$
 
-and the passage uses the algebra three times: $c_0^2=(iR_{\vec e_x}^{\mathrm{pau}})^2=-R_{\vec e_x^2}^{\mathrm{pau}}=I_4$, because $\vec e_x^2=-e_t$ and $i^2=-1$; $c_kc_0=-c_0c_k$, because the cells anticommute; and $c_0c_k=L_{e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, because $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=R_{\vec e_y\vec e_x}^{\mathrm{pau}}=R_{-\vec e_z}^{\mathrm{pau}}$ and $i^2=-1$ again. The two factors of $i$ multiply to $-1$ and the reversal of the two right multipliers flips the sign back, so the double imaginary $i\cdot i$ leaves a real cell: the spinorial part of the spin sum carries no imaginary unit.
+and the passage uses the algebra three times: $c_0^2=(iR_{\vec e_x}^{\mathrm{axf}})^2=-R_{\vec e_x^2}^{\mathrm{axf}}=I_4$, because $\vec e_x^2=-e_t$ and $i^2=-1$; $c_kc_0=-c_0c_k$, because the cells anticommute; and $c_0c_k=L_{e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, because $R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=R_{\vec e_y\vec e_x}^{\mathrm{axf}}=R_{-\vec e_z}^{\mathrm{axf}}$ and $i^2=-1$ again. The two factors of $i$ multiply to $-1$ and the reversal of the two right multipliers flips the sign back, so the double imaginary $i\cdot i$ leaves a real cell: the spinorial part of the spin sum carries no imaginary unit.
 
 The field is a spinor-module field; the biquaternion content is the module on which it is built and the notation, and the mode algebra is imposed. Two choices are available. The **Fermi choice** imposes
 
@@ -201,7 +201,7 @@ $$
 F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),
 $$
 
-with $\nabla_k=\partial/\partial\Delta_k$. The cell $c_0$ multiplies both surviving terms and factors out, and the remaining $i$ is the one of the derivative, because $\int\frac{d^3p}{(2\pi)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$. In the multipliers, where $-ic_k=L_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, the same identity reads $[\psi^{\mathrm{fop}},\psi^{\mathrm{fop}\dagger}]=iR_{\vec e_x}^{\mathrm{pau}}(m+\sum_k L_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\nabla_k)F(\vec\Delta)$. For $m>0$ the kernel is $F(\vec\Delta)=\dfrac{m}{2\pi^2|\vec\Delta|}\,K_1\!\big(m|\vec\Delta|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\Delta)\,dp=mK_1(m\Delta)$ is the derivative in $\Delta$ of $\int_0^\infty\frac{\cos(p\Delta)}{E}\,dp=K_0(m\Delta)$, and both were checked numerically for $m=1$ and $\Delta=0.5,2,5,10$ to eleven digits. The kernel is nonzero for **every** $\vec\Delta\ne 0$; it decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec\Delta\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
+with $\nabla_k=\partial/\partial\Delta_k$. The cell $c_0$ multiplies both surviving terms and factors out, and the remaining $i$ is the one of the derivative, because $\int\frac{d^3p}{(2\pi)^3}\,\frac{p_k\sin\theta}{E_{\vec p}}=-\nabla_kF$. In the multipliers, where $-ic_k=L_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, the same identity reads $[\psi^{\mathrm{fop}},\psi^{\mathrm{fop}\dagger}]=iR_{\vec e_x}^{\mathrm{axf}}(m+\sum_k L_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\nabla_k)F(\vec\Delta)$. For $m>0$ the kernel is $F(\vec\Delta)=\dfrac{m}{2\pi^2|\vec\Delta|}\,K_1\!\big(m|\vec\Delta|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\Delta)\,dp=mK_1(m\Delta)$ is the derivative in $\Delta$ of $\int_0^\infty\frac{\cos(p\Delta)}{E}\,dp=K_0(m\Delta)$, and both were checked numerically for $m=1$ and $\Delta=0.5,2,5,10$ to eleven digits. The kernel is nonzero for **every** $\vec\Delta\ne 0$; it decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec\Delta\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
 
 The two-sided structure has a compact covariant form. The gradient and its quaternion conjugate are
 
@@ -368,6 +368,8 @@ The first three are one rule: a pure $k$-vector picks up $(-1)^k(4-2k)$, that is
 
 In the frame of the cells themselves, where $c_0$ squares to $+I_4$ and $c_k$ to $-I_4$, only the first two keep a closed form. The first stays scalar, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$. The second picks up the metric factor, $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(g_{\alpha\alpha}+1)\gamma_\alpha$, which is $4\gamma_0$ for the time index and $0$ for a spatial one. The third is no longer proportional to $\delta_{\alpha\beta}I_4$: for $\alpha\ne\beta$ it does not vanish. The fourth is no longer $-2\gamma_\alpha\gamma_\beta\gamma_\delta$; the metric enters term by term.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The spin–statistics theorem pairs half-integer spin with anticommutators and integer spin with commutators. In the biquaternion framework the spin half of the theorem is algebraic and exact: the rotor group of unit real quaternions is the double cover of the rotation group, the rotor through $2\pi$ is $-e_t$, half-integer-spin representations live on the odd tensor powers of the spinor module, where $-e_t$ acts as $-\mathrm{id}$, and integer-spin representations live on the material sector $\mathbb{M}_-$ and on the even tensor powers, where it acts as $+\mathrm{id}$. The framework's finite algebra also contains one fermionic mode, whose ladder operators are the spin ladder operators, $\vec\Upsilon_x=\tilde S_+/\hbar$, and whose parity grading is the Hermitian element $(-1)^F=i\vec e_z=2\tilde S_z/\hbar$; no bosonic mode exists, because a canonical commutator would be central and traceless.
@@ -394,10 +396,10 @@ What the framework establishes is that the two pairings which survive the theore
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Single-mode number operator (idempotent) |
 | $(-1)^F=i\vec e_z=e_t-2\tilde\Pi_-=2\tilde S_z/\hbar$ | Fermion parity; Hermitian involution in $\mathbb{M}_+$ |
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$ | Fermionic mode relation; failure of the bosonic relation |
-| $c_0=iR_{\vec e_x}^{\mathrm{pau}}$, $c_k=iL_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $c_5=-iR_{\vec e_z}^{\mathrm{pau}}$, $L_aR_b\psi=a\psi b$ | Cells of the reference frame, $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$; $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $c_0=iR_{\vec e_x}^{\mathrm{axf}}$, $c_k=iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $c_5=-iR_{\vec e_z}^{\mathrm{axf}}$, $L_aR_b\psi=a\psi b$ | Cells of the reference frame, $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$; $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
 | $\slashed p=c_0p_0-\sum_kc_kp_k$, $i(c_0\nabla_t+\sum_kc_k\nabla_k)\psi=m\psi$ | Momentum cell and field equation; on a plane wave $\slashed pw=mw$, $(\slashed p+m)v=0$ |
 | $\nabla_k=\partial/\partial\Delta_k$ | Gradient with respect to the spatial separation |
-| $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\,iR_{\vec e_x}^{\mathrm{pau}}$ | Quantized spinor-module field and its Dirac adjoint |
+| $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$ | Quantized spinor-module field and its Dirac adjoint |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_r(\vec p)$ | Annihilation and antiparticle creation operators |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (from the parents) |
 | $\sum_r w^{(r)}\bar w^{(r)}=E_{\vec p}c_0-\sum_k p_kc_k+m$, $\sum_r v^{(r)}\bar v^{(r)}=E_{\vec p}c_0-\sum_k p_kc_k-m$ | Spin sums; multiplied on the right by $c_0$ they give $E_{\vec p}I_4+m\,c_0+c_0\sum_k c_kp_k$ for $w$ and the same with $-m\,c_0$ for $v$ |

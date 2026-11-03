@@ -159,13 +159,13 @@ The two cases differ in exactly one place: whether the amputation operator is a 
 
 **Spinor case: the cell, and which Dirac equation.** For a spinor field the amputation operator is a cell, and the reduction must name the equation whose cell it is. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $L_aR_b$ for the cell $\psi\mapsto a\psi b$. The cells act on $\mathbb{B}$ read as a four-complex-dimensional module, which is the Dirac module $\Delta=S\oplus S^{\mathrm c}$, whose two summands are the two chiralities. The **momentum cell** is
 $$
-\mathcal{D}(p)=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_0-\sum_{k=x,y,z}iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k ,
+\mathcal{D}(p)=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}p_0-\sum_{k=x,y,z}iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k ,
 \qquad
 \mathcal{D}(p)^2=p^2\,\mathbf{1} ,
 \qquad
 p^2=p_0^2-\vec p^{\,2},
 $$
-with $\mathbf{1}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell. Since $L_{e_t}^{\mathrm{pau}}$ is the identity map, the cell is the propagator article's momentum cell $iR_{\vec e_x}^{\mathrm{pau}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k$, with that identity written out. It is the momentum symbol of the pair operator $\mathbb{D}$ of *Conventions of the Operators and the Calculus*, $\mathbb{D}\Psi=(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$ with $\mathbb{D}^2=\Box\,\mathbf{1}$; the operator $\mathcal{D}(p)-m$ is the symbol of the inverse propagator. The energy enters as the component $p_0=E$ and not as the on-shell value $E_{\vec p}$, because the amputation is an off-shell operation; the two coincide only on the shell. The signs are the frame's. The energy cell squares to $+1$ because $i^2=-1$ is met by $\vec e_x^2=-e_t$, and each spatial cell squares to $-1$ because the two quaternion squares give $(-e_t)(-e_t)=+e_t$ and the sign is the central $i^2$ alone.
+with $\mathbf{1}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ the identity cell. Since $L_{e_t}^{\mathrm{axf}}$ is the identity map, the cell is the propagator article's momentum cell $iR_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$, with that identity written out. It is the momentum symbol of the pair operator $\mathbb{D}$ of *Conventions of the Operators and the Calculus*, $\mathbb{D}\Psi=(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$ with $\mathbb{D}^2=\Box\,\mathbf{1}$; the operator $\mathcal{D}(p)-m$ is the symbol of the inverse propagator. The energy enters as the component $p_0=E$ and not as the on-shell value $E_{\vec p}$, because the amputation is an off-shell operation; the two coincide only on the shell. The signs are the frame's. The energy cell squares to $+1$ because $i^2=-1$ is met by $\vec e_x^2=-e_t$, and each spatial cell squares to $-1$ because the two quaternion squares give $(-e_t)(-e_t)=+e_t$ and the sign is the central $i^2$ alone.
 
 **The two Dirac equations.** The corpus carries two, and they are not the same operator (see *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The **one-sided** form is the chiral pair
 $$
@@ -204,7 +204,7 @@ $$
 $$
 with two independent signs per leg: $\sigma_j=+1$ on an outgoing leg and $-1$ on an incoming one, from the Fourier phase, and $\varepsilon_j=+1$ on a $\tilde\Psi$ leg and $-1$ on a $\tilde\Psi^{\natural}$ leg, from the numerator the leg carries. The two are unrelated: a $\tilde\Psi^{\natural}$ leg may be incoming or outgoing.
 
-**Chirality.** The chirality is the cell $\chi_{\mathrm{c}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the representative of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of *The Dirac Equation in Biquaternionic Form*, and the fifth cell of the frame written in the Gamma Formulation. It squares to the identity cell, and direct computation gives
+**Chirality.** The chirality is the cell $\chi_{\mathrm{c}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, the representative of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of *The Dirac Equation in Biquaternionic Form*, and the fifth cell of the frame written in the Gamma Formulation. It squares to the identity cell, and direct computation gives
 $$
 \{\chi_{\mathrm{c}},\mathcal{D}(p)\}=0 ,
 \qquad
@@ -330,6 +330,8 @@ $\gamma_5$ is the reference-frame cell of the chirality; the central grading $\c
 
 The dictionary is complex-linear, and the frame carries the central $i$ in each $\gamma_\mu$: the four are $i$ times real cells, so together with $i$ they span the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$ of the section's first line. The real cells $L_aR_b$ alone, without the $i$, are real matrices and span all of $M_4(\mathbb{R})$; nothing is lost by writing the frame with the $i$ attached.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The LSZ reduction in biquaternionic form is the standard reduction with the framework's mass-shell symbol. The mass shell is the biquaternion-norm level set
@@ -367,10 +369,10 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\exp(i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R))=\exp(-ip\cdot x)$ | Central-phase plane wave (external leg), the positive-frequency mode; complex central, not real |
 | $\tilde Q^{\mathrm{amp}}$ | Constant biquaternion amplitude of the central-phase plane wave; an element of $\mathbb{B}$ bound here, with a complex scalar part, hence the majuscule |
 | $L_a$, $R_b$, $L_aR_b$ | Left multiplication $a\psi$, right multiplication $\psi b$, and the cell $\psi\mapsto a\psi b$ |
-| $\mathbf{1}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | Identity cell |
-| $\mathcal{D}(p)=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k$ | Momentum cell, the momentum symbol of $\mathbb{D}$; $\mathcal{D}(p)^2=p^2\mathbf 1$ |
+| $\mathbf{1}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Identity cell |
+| $\mathcal{D}(p)=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$ | Momentum cell, the momentum symbol of $\mathbb{D}$; $\mathcal{D}(p)^2=p^2\mathbf 1$ |
 | $\mathbb{D}$ | Pair operator, $\mathbb{D}\Psi=(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$, $\mathbb{D}^2=\Box\,\mathbf 1$ |
-| $\chi_{\mathrm{c}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell, the module representative of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$; $\{\chi_{\mathrm c},\mathcal{D}(p)\}=0$, $\chi_{\mathrm c}^2=\mathbf 1$ |
+| $\chi_{\mathrm{c}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, the module representative of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$; $\{\chi_{\mathrm c},\mathcal{D}(p)\}=0$, $\chi_{\mathrm c}^2=\mathbf 1$ |
 | $\Delta=S\oplus S^{\mathrm c}$ | Dirac module, the two chiralities |
 | $w^{(r)},v^{(r)}$ | External spinors; $\sum_r w^{(r)}\bar w^{(r)}=\mathcal{D}(p)+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\mathcal{D}(p)-m$, evaluated on the shell |
 | $\vec\Upsilon_x,\vec\Upsilon_y$, $\tilde\Pi_\pm$ | One-mode ladders and rungs; $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$ |

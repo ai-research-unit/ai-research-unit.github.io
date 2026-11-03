@@ -24,7 +24,7 @@ C_\mu=L_{a_\mu}R_{b_\mu},\qquad a_0=e_t,\quad a_k=\vec e_k,\qquad b_0=\vec e_x,\
 $$
 and $\mathcal{D}(w)=\sum_\mu w_\mu\,iC_\mu$ contracts the four generators with the components $w_\mu$. The cells obey the Clifford relations $\{iC_\mu,iC_\nu\}=2g_{\mu\nu}e_t$, so the metric sits inside the generator and a cell bilinear carries no explicit $\epsilon$. The chirality cell is
 $$
-\Gamma=-iC_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\qquad \Gamma^2=e_t,\qquad \Gamma\,C_\mu=-C_\mu\Gamma,\qquad \Gamma=iC_0C_1C_2C_3 .
+\Gamma=-iC_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad \Gamma^2=e_t,\qquad \Gamma\,C_\mu=-C_\mu\Gamma,\qquad \Gamma=iC_0C_1C_2C_3 .
 $$
 The gammas are a frame of this algebra. They appear once, in §The Gamma Formulation, and nowhere in the body.
 
@@ -206,11 +206,11 @@ with $R_\mu=\tfrac12\bigl(G_\mu+\sum_\nu c_5{}_{\mu\nu}G_\nu\bigr)$ and $L_\mu=\
 
 **The two-sided equation.** Read on the algebra rather than on the module, the same content is one equation whose two sides are the two multiplications. In the observer frame it is
 $$
-\Bigl(iL_{e_t}^{\mathrm{pau}}\frac{\partial}{\partial t'}+\sum_k L_{\vec e_k}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}\Bigr)F-m\,i\,R_{\vec e_z}^{\mathrm{pau}}\overline F=0,
+\Bigl(iL_{e_t}^{\mathrm{axf}}\frac{\partial}{\partial t'}+\sum_k L_{\vec e_k}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}\Bigr)F-m\,i\,R_{\vec e_z}^{\mathrm{axf}}\overline F=0,
 $$
-with $F\in\mathbb{B}$: the derivative acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. The derivative is $i\partial/\partial t'+D_3$ with $D_3=\sum_kL_{\vec e_k}^{\mathrm{pau}}\partial/\partial Q_k$, which is $-\tilde\nabla^{\natural}$, so the equation can be moved to one side, and the mass term can be read as a cell. Since $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$, one has $R_{\vec e_z}^{\mathrm{pau}}=i\Gamma$ and
+with $F\in\mathbb{B}$: the derivative acts from the left, the mass from the right, and the componentwise conjugation $\overline{\;\cdot\;}$ supplies the antilinear part. The derivative is $i\partial/\partial t'+D_3$ with $D_3=\sum_kL_{\vec e_k}^{\mathrm{axf}}\partial/\partial Q_k$, which is $-\tilde\nabla^{\natural}$, so the equation can be moved to one side, and the mass term can be read as a cell. Since $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$, one has $R_{\vec e_z}^{\mathrm{axf}}=i\Gamma$ and
 $$
--m\,i\,R_{\vec e_z}^{\mathrm{pau}}\overline F=-m\,i\,(i\Gamma)\overline F=+m\,\Gamma\,\overline F
+-m\,i\,R_{\vec e_z}^{\mathrm{axf}}\overline F=-m\,i\,(i\Gamma)\overline F=+m\,\Gamma\,\overline F
 \qquad\Longrightarrow\qquad
 \tilde\nabla^{\natural}F=m\,\Gamma\,\overline F ,
 $$
@@ -298,6 +298,8 @@ $$
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The Dirac Lagrangian in the vector representation and the Lagrangian of the three-dimensional topologically massive gauge field are **dual**: one first-order parent action in the s-vector variables reduces, on one elimination, to the Dirac Lagrangian — first-order kinetic term in the $\check c$ structure constants, mass term $m(G^*G^*+GG)$ coupling the field to its conjugate — and, on the other elimination, to a second-order Lagrangian for the dual potential whose mass term is first order, one derivative and one power of $m$. On the spin manifold orthogonal to $j$, at $a=0$, the latter reads
@@ -317,7 +319,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $C_\mu=L_{a_\mu}R_{b_\mu}$ | Bare cell of index $\mu$; $a_0=e_t$, $a_k=\vec e_k$, $b_0=\vec e_x$, $b_k=\vec e_y$; $C_\mu\Psi=a_\mu\Psi b_\mu$ |
 | $iC_\mu$ | Generator cell; $\{iC_\mu,iC_\nu\}=2g_{\mu\nu}e_t$ |
 | $\mathcal{D}(w)=\sum_\mu w_\mu\,iC_\mu$ | Contraction of the four generators with the components $w_\mu$ |
-| $C_5=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $\Gamma=-iC_5$ | Chirality cell; $\Gamma=iC_0C_1C_2C_3$, not a gamma matrix |
+| $C_5=L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $\Gamma=-iC_5$ | Chirality cell; $\Gamma=iC_0C_1C_2C_3$, not a gamma matrix |
 | $g_{\mu\nu}=\mathrm{diag}(+1,-1,-1,-1)$ | Generator metric; not the $ict'$ metric of $\mathbb{M}_-$ |
 | $\epsilon_\mu=g_{\mu\mu}$, $\epsilon=(1,-1,-1,-1)$ | Sign vector of the metric; distinct from $\varepsilon$ |
 | $G_\mu$ | s-Vector (complex four-vector), the Dirac field in the vector representation |

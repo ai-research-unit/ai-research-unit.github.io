@@ -28,7 +28,7 @@ The framework results used here are those of the companion articles:
 $$
 \mathcal{L}_{W} \supset \frac{g}{\sqrt2}\,W^+_\mu\,
 \bar\psi_{\mathrm u,a}\,V_{ab}\,
-iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_L\,\psi_{\mathrm d,b} + \text{h.c.},
+iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}P_L\,\psi_{\mathrm d,b} + \text{h.c.},
 $$
 
 with $a,b$ the flavour indices, summed over the generations, and $V=X_u^\dagger X_d$ the relative rotation of the up- and down-type diagonalisations.
@@ -36,20 +36,20 @@ with $a,b$ the flavour indices, summed over the generations, and $V=X_u^\dagger 
 **The cells and the vertex.** The one-generation field is a Dirac field on $\Delta=S\oplus\bar S$, and a cell acts on it by $L_aR_b\psi=a\psi b$. The Lorentz structure of the charged current is the generator cell of the coordinate $x_\mu$,
 
 $$
-iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},\qquad \nu(t)=x,\quad \nu(k)=y ,
+iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},\qquad \nu(t)=x,\quad \nu(k)=y ,
 $$
 
 and the chirality split is carried by the chirality cell $\chi$ and the left projector $P_L$,
 
 $$
-\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},\qquad
-P_L=\tfrac12\big(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+iR_{\vec e_z}^{\mathrm{pau}}\big)=\tfrac12\big(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}-\chi\big),
+\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},\qquad
+P_L=\tfrac12\big(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+iR_{\vec e_z}^{\mathrm{axf}}\big)=\tfrac12\big(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-\chi\big),
 $$
 
-where $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4$ is the identity cell. The square of the chirality cell is a cell square (with $L_aR_bL_cR_d=L_{ac}R_{db}$), and it uses only $i^2=-1$ and $\vec e_z^2=-e_t$:
+where $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4$ is the identity cell. The square of the chirality cell is a cell square (with $L_aR_bL_cR_d=L_{ac}R_{db}$), and it uses only $i^2=-1$ and $\vec e_z^2=-e_t$:
 
 $$
-\chi^2=(-i)^2\,L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\,L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=(-1)\,L_{e_t}^{\mathrm{pau}}R_{\vec e_z^2}^{\mathrm{pau}}=(-1)(-I_4)=I_4 ,
+\chi^2=(-i)^2\,L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\,L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=(-1)\,L_{e_t}^{\mathrm{axf}}R_{\vec e_z^2}^{\mathrm{axf}}=(-1)(-I_4)=I_4 ,
 $$
 
 so $P_L^2=P_L$ and $P_L$ has rank two. The two objects act differently. A cell multiplies on both sides, $\psi\mapsto a\psi b$, and it is the operator in the two-sided reading of the Dirac equation; $P_L$ multiplies on the right only, $\psi\mapsto\psi\,P_L$, because its left factor is the identity cell, and it is the projector of the one-sided chiral reading. The vertex needs both: the cell for the Lorentz index, the projector for the chirality.
@@ -57,10 +57,10 @@ so $P_L^2=P_L$ and $P_L$ has rank two. The two objects act differently. A cell m
 **The tensor form.** The interaction vertex is therefore
 
 $$
-\big(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_L\big)\otimes V
+\big(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}P_L\big)\otimes V
 $$
 
-on $\Delta\otimes\mathcal{F}$: the framework's Lorentz-and-chirality structure on the module factor, times the mixing operator on the flavour factor. The framework supplies the first factor exactly — the $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_L$ vertex of the charged current is the module's structure — and the second factor is an arbitrary $*$-unitary operator. The only requirement is $V\in \mathrm{U}(N_g)$: it comes from the framework, because the flavour rotation must preserve the norm on $\mathcal{F}$, and it says nothing about which $V$. The gauge sector does not select the pattern.
+on $\Delta\otimes\mathcal{F}$: the framework's Lorentz-and-chirality structure on the module factor, times the mixing operator on the flavour factor. The framework supplies the first factor exactly — the $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}P_L$ vertex of the charged current is the module's structure — and the second factor is an arbitrary $*$-unitary operator. The only requirement is $V\in \mathrm{U}(N_g)$: it comes from the framework, because the flavour rotation must preserve the norm on $\mathcal{F}$, and it says nothing about which $V$. The gauge sector does not select the pattern.
 
 **Why the mixing is a basis change.** The CKM matrix is a change of basis in flavour space, not a new interaction. In the framework this is transparent: the gauge interactions are $I_\Delta\otimes I_{\mathcal{F}}$ times the module structure, i.e. they are **generation-universal**, and the mixing arises only because the mass matrices, which are $I_\Delta\otimes M^{\mathcal{F}}$, are not diagonal in the same flavour basis. The framework's gauge sector is flavour-blind; the flavour structure is created by the mass matrices. This is the algebraic form of the Glashow–Iliopoulos–Maiani mechanism: flavour-changing neutral currents are absent because the gauge vertex is $I_{\mathcal{F}}$ in flavour space.
 
@@ -331,9 +331,11 @@ $$
 
 so it enters with the central $i$, and the real algebra generated by the four $\gamma_\mu$ does not contain it. The chirality grading is the one place where the dictionary needs more than the four gammas.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
-The CKM matrix is a $*$-unitary operator on the framework's generation (multiplicity) factor, acting on $\Delta\otimes\mathbb{C}^{N_g}$ as $I_\Delta\otimes V$, and arising from the mismatch of the up- and down-type mass matrices, $V=X_u^\dagger X_d$, both of which are flavour-factor operators while the module factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current vertex is $(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_L)\otimes V$, and the neutral currents carry $I_{\mathcal{F}}$ and are flavour-diagonal. The parameter count is that of $\mathrm{U}(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
+The CKM matrix is a $*$-unitary operator on the framework's generation (multiplicity) factor, acting on $\Delta\otimes\mathbb{C}^{N_g}$ as $I_\Delta\otimes V$, and arising from the mismatch of the up- and down-type mass matrices, $V=X_u^\dagger X_d$, both of which are flavour-factor operators while the module factor is common. The framework's gauge sector is flavour-universal, which is the algebraic form of the GIM mechanism: the charged-current vertex is $(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}P_L)\otimes V$, and the neutral currents carry $I_{\mathcal{F}}$ and are flavour-diagonal. The parameter count is that of $\mathrm{U}(N_g)$: $(N_g-1)^2$ parameters, comprising $\tfrac12N_g(N_g-1)$ angles and $\tfrac12(N_g-1)(N_g-2)$ phases, so that a CP-violating phase requires $N_g\ge3$.
 
 The framework's definite structural contribution is the location of the phase. The algebra acting on the multi-generation space is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ with centre $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}\cong\mathbb{C}$, a single generation-blind central phase; a phase that distinguishes generations therefore cannot be central and must sit in the flavour factor $I_\Delta\otimes M_{N_g}(\mathbb{C})$. The framework's own central phases are CP-even in the flavour sense, and all quark-sector CP violation is a statement about the matrix on $\mathbb{C}^{N_g}$. The Jarlskog invariant, $J=\mathrm{Im}(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*})=c_{12}c_{23}c_{13}^2s_{12}s_{23}s_{13}\sin\delta$, is the minimal rephasing-invariant measure of the CP violation and is the imaginary part of the determinant of the commutator of the two mass-matrix products, normalised by the six mass-squared differences; the recomputation with the standard parameters gave $J=3.00\times10^{-5}$, consistent with the quoted $3.1\times10^{-5}$ to the rounding of the inputs, with unitarity of the reconstructed matrix to machine precision, $\sin2\beta=0.707$, $\beta\simeq22.5^\circ$, and $\gamma\simeq65.4^\circ$. The framework places all of this on the flavour factor and supplies none of the values.
 
@@ -344,8 +346,8 @@ The framework's definite structural contribution is the location of the phase. T
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_-,\mathbb{C}_{\mathbb{B}}$ | Material sector (the frame of the gamma identities); centre |
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
-| $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
-| $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $P_L=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+iR_{\vec e_z}^{\mathrm{pau}})=\tfrac12(I_4-\chi)$ | Chirality cell; left projector, rank two |
+| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
+| $\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+iR_{\vec e_z}^{\mathrm{axf}})=\tfrac12(I_4-\chi)$ | Chirality cell; left projector, rank two |
 | $\gamma_\mu$, $\gamma_5=\chi$ | The frame cells under their gamma names (§ The Gamma Formulation) |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
@@ -354,7 +356,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $H_u=M_u^{\mathcal{F}}M_u^{\mathcal{F}\dagger}$, $H_d=M_d^{\mathcal{F}}M_d^{\mathcal{F}\dagger}$ | Hermitian mass products; their eigenvalues are the squared masses |
 | $V=X_u^\dagger X_d$ | CKM matrix from the diagonalisations |
 | $\psi_{\mathrm u,a}$, $\psi_{\mathrm d,b}$; $\bar\psi$ | Up- and down-type quark fields, flavour indices $a,b$; Dirac adjoint |
-| $(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_L)\otimes V$ | Charged-current vertex |
+| $(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}P_L)\otimes V$ | Charged-current vertex |
 | $I_\Delta\otimes I_{\mathcal{F}}$ | Gauge vertices; flavour universality (GIM) |
 | $\mathbb{C}_{\mathbb{B}}\otimes I_{N_g}$ | Centre of the multiplied algebra; generation-blind |
 | $\tfrac12N_g(N_g-1)$, $\tfrac12(N_g-1)(N_g-2)$ | Mixing angles; CP-violating phases |

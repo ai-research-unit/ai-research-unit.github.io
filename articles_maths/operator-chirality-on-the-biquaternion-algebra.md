@@ -4,11 +4,11 @@
 
 **The question.** Every operator of the biquaternion algebra is built from left and right multiplications, $L_aR_b$, and the two sides are symmetric in the definition and asymmetric in the results. This article asks what chirality means for such an operator, and answers with the operator alone.
 
-**The answer in one line.** Chirality is the side on which an operator multiplies. The chirality operator of a frame is its volume cell, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}R_{\vec e_z}$, a pure right multiplier; the Dirac operator is a pure left multiplier; and the swap $\sigma$ is the operator that exchanges the two sides.
+**The answer in one line.** Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The chirality operator of a frame is its volume cell, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}R_{\vec e_z}$ in the axis-free frame, and it is a pure right multiplier. The swap $\sigma$ is the operator that exchanges the two sides, and the natural conjugation is the operator that exchanges them while reversing the units.
 
-**What the article is not about.** The notion is defined on the endomorphism algebra of $\mathbb{B}$ and needs nothing else. Section §*What Operator Chirality Is Not* separates it, one object at a time, from a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix and an ideal, and records the single coincidence of arrays that makes the confusion possible.
+**What the article is not about.** The notion is defined on the endomorphism algebra of $\mathbb{B}$ and needs nothing else. Section §*What Operator Chirality Is Not* separates it, one object at a time, from a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal and a Clifford algebra, and records the single coincidence of arrays that makes the confusion possible.
 
-**The order of the article.** Section §*The Two Slots* defines the sides, their dimensions and their overlap. Section §*The Chirality Operator of the Frame* reads the volume cell as a pure right multiplier and lists what it satisfies. Section §*The Dirac Pair Is a Pair of Sides* shows that the Dirac equation is a coupling of the two sides and that the pair carries no module. Sections §*The Swap of the Two Sides* to §*The Swap on the Frame* prove the exchange operator, its matrix, its two eigenspaces and its action on the frame. Section §*The Bivectors Are Not Stable* records what the swap moves. Section §*What Operator Chirality Is Not* is the separation. Section §*Why the Slot Label Is Not a Grading* fixes what the sides can and cannot supply.
+**The order of the article.** Section §*The Two Slots* defines the sides, their dimensions and their overlap. Section §*The Chirality Operator of the Frame* reads the volume cell as a pure right multiplier and lists what it satisfies. Section §*Conjugation Exchanges the Sides* proves that the natural conjugate of a left multiplier is a right multiplier, which is the second side-exchanging map and the origin of the phases. Sections §*The Swap of the Two Sides* to §*The Swap on the Frame* prove the exchange operator, its matrix, its two eigenspaces and its action on the frame. Section §*The Bivectors Are Not Stable* records what the swap moves. Section §*What Operator Chirality Is Not* is the separation. Section §*Why the Slot Label Is Not a Grading* fixes what the sides can and cannot supply.
 
 **Boundaries.** The cells, the two families and the switch are *Families of Matrix Representations*; the frames are *$M_4(\mathbb{C})$ Axis-Free Representation* and *$M_4(\mathbb{C})$ Pauli Representation*, with their operator articles *$M_4(\mathbb{C})$ Axis-Free Representation : Operators* and *$M_4(\mathbb{C})$ Pauli Representation : Operators*; the carrier and its splittings are *The Unpolarized Module of $M_4(\mathbb{C})$*; the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is *The Endomorphisms of the Biquaternion Algebra*.
 
@@ -16,7 +16,7 @@
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\qquad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\qquad \gamma_5=-iL_{e_t}R_{\vec e_z},
 $$
-with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(1,-1,-1,-1)$, so that $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The Peirce sign of the third axis is $P=R_{i\vec e_z}=iR_{\vec e_z}$, and it is used in this article only where it is named.
+with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(1,-1,-1,-1)$, so that $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The anticommutation is a computed property of these five cells, not an axiom: no Clifford algebra enters the definitions of this article. The Peirce sign of the third axis is $P=R_{i\vec e_z}=iR_{\vec e_z}$, and it is used only where it is named.
 
 ## The Two Slots
 
@@ -35,8 +35,6 @@ with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(1,-1,-1,
 **Nine directions use both slots.** Since $L+R$ has dimension seven, an arbitrary operator of the sixteen-dimensional endomorphism algebra is a pure one-sided operator only inside that seven-dimensional subspace; the other nine directions carry both slots at once. Most operators have no single side, and the side is a property of the pure part.
 
 **Chirality is the slot.** With the two families fixed, the definition is one line: an operator has the **left slot** when it is a pure left multiplier, the **right slot** when it is a pure right multiplier, and **both slots** otherwise. Operator chirality is that label. The definition uses the algebra and nothing else: no root, no idempotent, no subspace, no carrier.
-
-**The slot is not the handedness of a field.** The two words must be kept apart. The slot is a property of an operator; the handedness of a field is the eigenvalue of $\gamma_5$ on that field, and it is a statement about the field. The chirality operator of the next section is a right-slot operator, and the Dirac operator is a left-slot operator, and the two anticommute; which of the two fields is then called right-handed is a convention of the frame, decided by the sign in the definition of $\gamma_5$, and this article does not fix it.
 
 **What the label is not.** The slot is a name, not a quantity. It is two-valued on the one-sided part and undefined outside it, it is not additive, and it carries no sign: $L_a+L_b$ and $L_a-L_b$ both have the left slot, and no linear functional separates a left multiplier from a right one by a sign. Section §*Why the Slot Label Is Not a Grading* proves the algebraic reason.
 
@@ -63,39 +61,44 @@ a **pure right multiplier**. That is the whole content of the operator: the chir
 | spectrum | $+1$ and $-1$, two dimensions each |
 | with the frame | $\{\gamma_\mu,\gamma_5\}=0$ for $\mu=0,1,2,3$ |
 
-The anticommutation is what makes the operator usable: it says that the four generators of the frame are odd under the right multiplication by $\vec e_z$, and that is the algebraic statement behind every occurrence of $\gamma_5$ in a Dirac equation.
+The anticommutation says that the four generators of the frame are odd under the right multiplication by $\vec e_z$. It is a consequence, computed on five cells, and it is not a definition: nothing in this article is built by asking which operators anticommute with what.
 
-**Only the frame is used.** The four generators, the Clifford relation and their product. No root, no idempotent, no subspace of $\mathbb{B}$, no decomposition of anything, no carrier. The operator is available as soon as the frame is declared, and the frame is a basis: it is the weakest of the choices the algebra offers.
+**Only the frame is used.** The four generators and their product. No root, no idempotent, no subspace of $\mathbb{B}$, no decomposition of anything, no carrier, and no Clifford algebra: the relation $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ holds for these five cells as an identity of matrices, and the chirality operator is the fifth of them. The operator is available as soon as the frame is declared, and a frame is a basis: the weakest of the choices the algebra offers.
 
-**The side is the point.** A reader who writes $\gamma_5$ as a diagonal matrix with two $+1$'s and two $-1$'s is reading the array of the operator in a basis where it is diagonal. The operator itself is $R_{\vec e_z}$ up to a phase, and its content is the side: it multiplies on the right. The Dirac operator of the frame multiplies on the left. That difference of sides is the chirality of the algebra, and it survives every change of basis.
+**The side is the point.** A reader who writes $\gamma_5$ as a diagonal matrix with two $+1$'s and two $-1$'s is reading the array of the operator in a basis where it is diagonal. The operator itself is $R_{\vec e_z}$ up to a phase, and its content is the side: it multiplies on the right. The gradient of the frame, $L(\tilde\nabla)$, multiplies on the left. That difference of sides is operator chirality, and it survives every change of basis.
 
-## The Dirac Pair Is a Pair of Sides
+## Conjugation Exchanges the Sides
 
-**The gradient multiplies on the left.** The biquaternionic gradient is an element of the algebra,
+**The natural conjugate.** The map $\natural$ reverses the three vector units and fixes the scalar unit,
 $$
-\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+e_t^{\natural}=e_t,\qquad \vec e_x^{\natural}=-\vec e_x,\qquad \vec e_y^{\natural}=-\vec e_y,\qquad \vec e_z^{\natural}=-\vec e_z,
 $$
-and the Dirac operator is the left multiplication by it, $L(\tilde\nabla)$. It is a pure left multiplier: one side only.
+and is extended to $\mathbb{B}$ so that it fixes the coefficients. It is complex-linear, it is an involution, and it is an automorphism: the reversed units multiply among themselves with the same structure constants, $(-\vec e_x)(-\vec e_y)=\vec e_z=\vec e_x\vec e_y$. It is the involution used throughout the corpus under the name quaternion conjugate.
 
-**The conjugate is the other side through conjugation.** Let $\mathsf C$ be the quaternion conjugation on the coefficients, $\mathsf C(\tilde X)=\bar{\tilde X}$, which reverses the three vector units and fixes $e_t$. Then for every element $a$,
+**The same reversal as a matrix.** On the coefficient space $\mathbb{C}^4$ the map is the diagonal matrix
 $$
-\mathsf C\,L(a)\,\mathsf C=R(\bar a),
+\mathsf C=\operatorname{diag}(1,-1,-1,-1),
 $$
-and therefore
-$$
-L(\tilde\nabla^{\natural})=\mathsf C\,R(\tilde\nabla)\,\mathsf C .
-$$
-The quaternion conjugate of the gradient is not a new kind of operator: it is the right multiplication by the gradient, read through conjugation. That is the precise sense in which the two members of the Dirac pair occupy the two sides.
+complex-linear, with $\mathsf C^2=\mathrm I$. In the axis-free frame $\mathsf C=D$, the switch of the frame.
 
-**The pair.** The equation of the corpus is the chiral pair
+**It carries the left side to the right side.** For every element $a\in\mathbb{B}$,
 $$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+\mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
 $$
-and both members are left multiplications by elements of the algebra. The first uses $\tilde\nabla$, the second its conjugate, and the conjugation is exactly the passage to the other side. The mass couples the two.
+and equivalently $\mathsf C\,L(a)\,\mathsf C=R(a^{\natural})$. On a unit this is $\mathsf C L(\vec e_k)\mathsf C=R(-\vec e_k)$, one sign for each of the three vector units; on a general element it follows by linearity. So the left multiplier of the conjugate is the right multiplier read through the switch, and the two sides are exchanged by a conjugation.
 
-**What the pair needs.** An element $\tilde\Psi\in\mathbb{B}$, the two operators, and the mass. Nothing else: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. This is stated in the corpus where the three forms of the equation are separated — the pair written on the algebra holds without any choice of module — and it is the reason the biquaternionic Dirac equation is an equation on the algebra.
+**The sign is the phase.** The identity carries no phase of its own, and the sign of the three vector units is where every phase in the corpus comes from. A left multiplier of the frame and a right multiplier of the frame have arrays that agree up to that sign, which is the origin of every statement of the form "the same array, up to a phase".
 
-**What chirality is here.** In the massless limit the pair decouples into the two one-sided equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one per side. The mass is the only term that couples them. So chirality in the Dirac equation is the side of the operator, in the exact sense of §*The Two Slots*, and the operator that exchanges the sides is the subject of the next section.
+**It is not the swap.** The two maps are different and only one of them is the swap of this article:
+
+| Map | On $L_a$ | On a cell $L_aR_b$ | What it moves |
+|---|---|---|---|
+| $\sigma$ | $R_a$ | $L_bR_a$ | the two indices |
+| $\mathsf C$ | $R_{a^{\natural}}$ | $R_{a^{\natural}}L_{b^{\natural}}$ | the units, and the order |
+
+So $\sigma$ exchanges the slots and leaves the units alone, while $\mathsf C$ exchanges the slots after conjugating the units and reversing their order. On a pure left multiplier the two agree exactly when $a=a^{\natural}$, that is when $a$ lies in the even part, the span of the scalar unit and the three bivectors; on the odd part, the span of the three vector units and the trivector, they differ by a sign.
+
+**Where the conjugation enters, and where it does not.** The conjugation is not needed to define chirality: the slots are defined by the cells alone. It enters when one asks how a left multiplier and a right multiplier are related, and its answer is the table above. A reader who has only $\sigma$ can say which slot an operator occupies; a reader who also has $\mathsf C$ can say when two operators of opposite slots have the same array. That is the whole content of the map, and it is why it belongs in this article next to the swap rather than in the definition.
 
 ## The Swap of the Two Sides
 
@@ -232,7 +235,7 @@ So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of th
 
 ## What Operator Chirality Is Not
 
-**The list.** The notion is one line long — the side — and it is routinely attached to seven other objects. The table states what each of them is and why it is not needed.
+**The list.** The notion is one line long — the side — and it is routinely attached to eight other objects. The table states what each of them is and why it is not needed.
 
 | Object | What it is | Why operator chirality does not need it |
 |---|---|---|
@@ -243,6 +246,7 @@ So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of th
 | a spinor | an element of a minimal left ideal | an ideal needs a rank-one idempotent; the side is a property of an operator on $\mathbb{B}$ |
 | a Pauli matrix | the array of a frame in the tensor display | the same operator is $-iR_{\vec e_z}$ in the axis-free frame |
 | an ideal | a subspace of $\mathbb{B}$, here a point of a projective line | a subspace is chosen; $\gamma_5$ chooses no point |
+| a Clifford algebra | the algebra generated by vectors with $\{e_i,e_j\}=2g_{ij}$, here $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$ | the anticommutation of the frame is a property of five cells, and no Clifford relation is used to define the side |
 
 **Not a root.** A root is an element of the algebra and it enters when a Peirce decomposition is wanted. The chirality operator is a cell of the frame and the frame is declared before any root is mentioned. Changing the root changes nothing in $\gamma_5$; there is no root in its definition to change.
 
@@ -255,6 +259,10 @@ So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of th
 **Not a Pauli matrix.** The Pauli display is a frame, the tensor factorisation $\mathbb{C}^2\otimes\mathbb{C}^2$, and a Pauli matrix is the array of a cell in that display. The chirality operator exists in the axis-free frame, where it is the single cell $-iR_{\vec e_z}$, and in the Pauli frame where it is the same array written with two factors. The display changes; the side does not.
 
 **Not an ideal.** A left ideal of $\mathbb{B}$ is a subspace, and the minimal ones are indexed by the points of a projective line, with no point distinguished. An operator that multiplied on one side and selected a point would be an ideal in disguise. The chirality operator selects nothing: it multiplies, and its two eigenspaces are two-dimensional subspaces of the coefficient space $\mathbb{C}^4$, present in every frame.
+
+**Not a Clifford algebra.** A Clifford algebra is generated by vectors subject to $\{e_i,e_j\}=2g_{ij}$, and it is offered as the natural home of chirality, with $\gamma_5$ as the product of the generators. In this algebra the relation is a theorem about five cells of the frame, verified by multiplying them, and it is not used in any definition. The reason is structural: the relation fixes the squares and the anticommutators of four cells and says nothing about the side on which an operator multiplies, which is the only datum operator chirality needs. A Clifford algebra also fixes a dimension and a signature; the sides exist in every dimension and are read from the cells alone. So the Clifford reading is a frame in which the algebra is displayed, and the chirality of a frame is the same statement in that display.
+
+**Why no anticommutation gives it.** A reader might expect the chirality operator to be characterised by anticommuting with the frame. It cannot be, and the reason is one line: $L(e_t)=\mathrm I$ is one of the operators that a candidate would have to anticommute with, and an operator that anticommutes with the identity is zero. So the sign in this algebra is never produced by an anticommutator; it is produced by the side, which is what the slots supply and what no Clifford relation can supply.
 
 **The one coincidence, and why it matters.** There is a single place where the two families of notions touch, and it must be stated or the whole section is misleading. For the root aligned with the volume direction, $\tilde\Xi=i\vec e_z$, the Peirce sign is
 $$
@@ -282,11 +290,11 @@ So for that one root the Peirce projector and the chiral projector are the same 
 
 Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The pure left multipliers form a four-dimensional family, the pure right multipliers another, the two overlap in the scalars, and their sum is seven-dimensional inside a sixteen-dimensional endomorphism algebra; the remaining nine directions carry both slots and have no side.
 
-The chirality operator of a frame is its volume cell, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}R_{\vec e_z}$, which in the axis-free frame is the pure right multiplier $-iR_{\vec e_z}$. It squares to the identity, has trace zero, splits the carrier two and two, and anticommutes with the four generators. The Dirac operator is the pure left multiplier $L(\tilde\nabla)$, its conjugate is the same operator seen on the other side through conjugation, $\mathsf C\,L(a)\,\mathsf C=R(\bar a)$, and the chiral pair of the Dirac equation is the coupling of the two sides by the mass. The pair needs no module, no projector and no idempotent.
+The chirality operator of a frame is its volume cell, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}R_{\vec e_z}$, which in the axis-free frame is the pure right multiplier $-iR_{\vec e_z}$. It squares to the identity, has trace zero, splits the coefficient space two and two, and anticommutes with the four generators. A pure left multiplier is the operator $L(a)$ for an element $a$; its natural conjugate is the right multiplier $\mathsf C\,L(a^{\natural})\,\mathsf C=R(a)$, so the conjugation is the second map that exchanges the sides, and the two maps differ by the sign of the three vector units. Neither the definition nor either exchange uses a module, a projector, an idempotent or a Clifford relation.
 
 The swap $\sigma(L_aR_b)=L_bR_a$ is well defined on the cells, involutive, anti-multiplicative and independent of the frame; it is the transpose read through the switch, it has four fixed cells, trace four and determinant one, and its eigenspaces are the self-adjoint and skew-adjoint operators of dimensions ten and six. It carries the rotation generator $L_{\vec e_z}$ to $i\gamma_5$, which is the identity that ties the swap to chirality.
 
-The notion is unrelated to the seven objects that usually carry the name: a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix and an ideal. It touches them once, at the root aligned with the volume direction, where $P=-\gamma_5$ and the Peirce projector equals $\tfrac12(\mathrm I-\gamma_5)$; that single coincidence of arrays is the source of the confusion, and it is not an identity of notions.
+The notion is unrelated to the eight objects that usually carry the name: a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal and a Clifford algebra. It touches them once, at the root aligned with the volume direction, where $P=-\gamma_5$ and the Peirce projector equals $\tfrac12(\mathrm I-\gamma_5)$; that single coincidence of arrays is the source of the confusion, and it is not an identity of notions.
 
 ## Summary of Notation
 
@@ -296,7 +304,7 @@ The notion is unrelated to the seven objects that usually carry the name: a root
 | $L(\mathbb{B})$, $R(\mathbb{B})$ | the pure left and pure right multipliers, four-dimensional each, overlapping in the centre |
 | left slot, right slot, both slots | operator chirality: on which side an operator multiplies |
 | $\gamma_5$ | the volume cell of the frame, $-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$ in the axis-free frame, a pure right multiplier |
-| $\mathsf C$ | quaternion conjugation of the coefficients, $\mathsf C\,L(a)\,\mathsf C=R(\bar a)$ |
+| $\mathsf C$ | the natural conjugation as a matrix, $\operatorname{diag}(1,-1,-1,-1)$, with $\mathsf C L(a^{\natural})\mathsf C=R(a)$ |
 | $\sigma$ | the swap, $\sigma(L_aR_b)=L_bR_a$, the exchange of the two sides |
 | $\mathsf W$ | the switch of a frame, $R(\tilde Q)=\mathsf W L(\tilde Q)^{\mathsf T}\mathsf W$ |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | the switch of the axis-free frame, and the matrix of $\mathsf C$ |
@@ -315,7 +323,5 @@ The notion is unrelated to the seven objects that usually carry the name: a root
 - [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the same operators in the tensor display.
 - [Families of Matrix Representations](families-of-matrix-representations.html), for the two sides, the switch and the change of frame.
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and the two-sided operators.
-- [The Dirac Equation in Biquaternionic Form](../articles_physics/the-dirac-equation-in-biquaternionic-form.html), for the chiral pair on the algebra, the one-sided and the two-sided equations, and the mass.
-- [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), for the three forms of the equation and the statement that the pair on the algebra needs no module.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the labels and the conventions of the category.
 

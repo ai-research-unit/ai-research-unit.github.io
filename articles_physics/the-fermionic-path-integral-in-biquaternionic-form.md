@@ -68,19 +68,19 @@ whose spinor-module representative is the Lagrangian above. The mass term is the
 
 ### The Pair Operator in Cells
 
-On the module the pair operator is a cell operator. With $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and with $\nu(t)=x$ and $\nu(k)=y$, each coordinate frame cell is $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$. The operator also carries an explicit $i$ in every term, so two imaginary units meet; since $i^2=-1$,
+On the module the pair operator is a cell operator. With $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and with $\nu(t)=x$ and $\nu(k)=y$, each coordinate frame cell is $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$. The operator also carries an explicit $i$ in every term, so two imaginary units meet; since $i^2=-1$,
 
 $$
-i\,\big(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\big)=i^2L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}.
+i\,\big(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\big)=i^2L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}.
 $$
 
 The cell form therefore carries no imaginary unit:
 
 $$
-\mathbb{D}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}.
+\mathbb{D}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}.
 $$
 
-The operator is the same dynamics, written once; the five frame cells are named in §*The Gamma Formulation*. Contractions below carry the frame's sign vector: with $\varepsilon_\mu=g_{\mu\mu}$ and $\varepsilon=(+1,-1,-1,-1)$, a contraction of two lower indices carries $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu=R_{\vec e_x}^{\mathrm{pau}}E-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k$. The sign is not decoration: the plane wave produces it. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
+The operator is the same dynamics, written once; the five frame cells are named in §*The Gamma Formulation*. Contractions below carry the frame's sign vector: with $\varepsilon_\mu=g_{\mu\mu}$ and $\varepsilon=(+1,-1,-1,-1)$, a contraction of two lower indices carries $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=R_{\vec e_x}^{\mathrm{axf}}E-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$. The sign is not decoration: the plane wave produces it. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
 
 ### Properties of the Action
 
@@ -90,7 +90,7 @@ Three properties of the action are used below.
 
 **Its phase is central.** $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.
 
-**Its Hermiticity structure.** $\bar\psi\,\mathbb{D}\,\psi$ is Hermitian up to a total derivative and $\bar\psi m\psi$ is Hermitian. Both statements use the Dirac adjoint $\bar\psi=\psi^{\dagger}(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})$ of the parent article: the cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ is Hermitian and converts the conjugate into a Hermitian bilinear, while the spatial cells $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ are anti-Hermitian, which is why the derivative term needs the total-derivative caveat. That same cell anticommutes with the chirality cell, so $\bar\psi$ sits in the chiral half opposite to $\psi$, and the mass bilinear $\bar\psi m\psi$ mixes the two halves even though the operator $m$ is even. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean kinetic operator anticommutes with the chirality grading (the central grading of the complexified algebra), so its spectrum is symmetric about zero; its eigenvalues are $\pm i\mu$ with $\mu$ real, and each pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$, so the determinant of $\mathbb{D}_{\mathrm{E}}+m$ is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks that symmetry and gives the determinant a phase; the phase is the subject of §*Parity Sectors, the Phase and the Sign Problem*.
+**Its Hermiticity structure.** $\bar\psi\,\mathbb{D}\,\psi$ is Hermitian up to a total derivative and $\bar\psi m\psi$ is Hermitian. Both statements use the Dirac adjoint $\bar\psi=\psi^{\dagger}(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})$ of the parent article: the cell $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ is Hermitian and converts the conjugate into a Hermitian bilinear, while the spatial cells $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ are anti-Hermitian, which is why the derivative term needs the total-derivative caveat. That same cell anticommutes with the chirality cell, so $\bar\psi$ sits in the chiral half opposite to $\psi$, and the mass bilinear $\bar\psi m\psi$ mixes the two halves even though the operator $m$ is even. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean kinetic operator anticommutes with the chirality grading (the central grading of the complexified algebra), so its spectrum is symmetric about zero; its eigenvalues are $\pm i\mu$ with $\mu$ real, and each pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$, so the determinant of $\mathbb{D}_{\mathrm{E}}+m$ is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks that symmetry and gives the determinant a phase; the phase is the subject of §*Parity Sectors, the Phase and the Sign Problem*.
 
 ### Sources
 
@@ -186,7 +186,7 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 Write the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, and write $\nu(t)=x$, $\nu(k)=y$. The momentum cell is the symbol of the cell operator $\mathbb{D}$ on the plane wave $\exp(-iEt'+i\vec p\cdot\vec x)$: the derivative brings $-i$ from $t'$ and $+i$ from each $Q_k$, and multiplication by the explicit $i$ of $\mathbb{D}$ gives $+1$ and $-1$ respectively, since $i^2=-1$. The symbol is the momentum contraction of the frame cells:
 
 $$
-\slashed p=\mathbb{D}_p=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu=iR_{\vec e_x}^{\mathrm{pau}}E-i\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k.
+\slashed p=\mathbb{D}_p=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=iR_{\vec e_x}^{\mathrm{axf}}E-i\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k.
 $$
 
 The momentum-space kernel is
@@ -198,13 +198,13 @@ $$
 The prefactor $-i$ meets the $i$ already inside the momentum cell. By $i^2=-1$,
 
 $$
--i(\slashed p+m)=-i\slashed p-im=\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu-im,
+-i(\slashed p+m)=-i\slashed p-im=\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu-im,
 $$
 
 so the same amplitude, with the two imaginary units reduced, is
 
 $$
-S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
+S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
 $$
 
 Multiplying numerator and denominator by $-1$ gives the companion's standard form $i(\slashed p+m)/(p^2-m^2+i\epsilon)$; the two are the same amplitude, and this is the propagator companion's amplitude. The determinant is therefore that of the operator whose inverse is $S_F$, with the deformed mass-shell denominator; the deformation lies along the $ict'$ axis of the material sector. On the module $\mathbb{D}$ is block off-diagonal in the chiral basis and the two gradient blocks multiply to $\Box$, so the block determinant of $\mathbb{D}-m$ is $\det(m^2-\Box)$ on a single complex component. The module is two complex dimensions, each carrying one such factor, so the determinant on it is the square of the scalar one:
@@ -340,6 +340,8 @@ $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central gr
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The equation integrated is the **one-sided** chiral pair; Kravchenko's **two-sided** equation is a different operator, related to it by a real-linear dictionary, and is not integrated here. The phase is central and lies in $\mathbb{M}_-$ along the $ict'$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
@@ -347,7 +349,7 @@ The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Ber
 The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the propagator companion's
 
 $$
-S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
+S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$
 
 with the two imaginary units of $-i(\slashed p+m)$ multiplied to $-1$. The determinant of the pair operator is the square of the scalar determinant, $\det(\mathbb D-m)=[\det(\Box-m^2)]^2$, because the block determinant is $\det(m^2-\Box)$ on each of the module's two complex dimensions.
@@ -372,9 +374,9 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
 | $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu$, $\varepsilon=(+1,-1,-1,-1)$ | Frame cells; the sign vector $\varepsilon_\mu=g_{\mu\mu}$ carried by every contraction of two lower indices, so that $\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu=iR_{\vec e_x}^{\mathrm{pau}}E-i\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k$ |
-| $\mathbb{D}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial Q_k$ | Pair operator in cells; the explicit $i$ and the $i$ of the cell multiply to $-1$ |
-| $S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel; the two imaginary units of $-i(\slashed p+m)$ multiply to $-1$ |
+| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu$, $\varepsilon=(+1,-1,-1,-1)$ | Frame cells; the sign vector $\varepsilon_\mu=g_{\mu\mu}$ carried by every contraction of two lower indices, so that $\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=iR_{\vec e_x}^{\mathrm{axf}}E-i\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$ |
+| $\mathbb{D}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$ | Pair operator in cells; the explicit $i$ and the $i$ of the cell multiply to $-1$ |
+| $S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel; the two imaginary units of $-i(\slashed p+m)$ multiply to $-1$ |
 | $\det(\mathbb{D}-m)=[\det(\Box-m^2)]^2$ | Determinant; the module's two complex dimensions give the square of the scalar determinant |
 | $\int d\psi_{2N}\cdots d\psi_1\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; makes the field-to-conjugate pairing available |

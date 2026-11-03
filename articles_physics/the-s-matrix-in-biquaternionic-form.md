@@ -368,6 +368,8 @@ The derivative contraction is the same sum with $p_\mu\to\partial/\partial Q_\mu
 
 The one-mode S-matrix of the body is the cell $L_{\tilde S}$ read on the two-dimensional module, where its $2\times2$ matrix is $\mathsf{M}_2(\tilde S)$; the cell is unitary with respect to the Hermitian form exactly when $\tilde S^{*}\tilde S=e_t$, equivalently $\tilde S\tilde S^{*}=e_t$. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The S-matrix in biquaternionic form has a small exact core and a large transcribed body. The core is finite-dimensional. Conditional on the Fock article's one-mode identification, the S-matrix of a single fermionic mode is an element of $\mathbb{B}$ that is **matrix-unitary**,
@@ -420,7 +422,7 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\tilde u\tilde u^{\natural}=e_t$ | Unit real quaternion $\Leftrightarrow SU(2)$; spin rotation |
 | $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost biquaternion; $\psi$ is the rapidity |
 | $\Psi$ | Spinor-module element on which the cells act |
-| $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}E-i(L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$ | Feynman contraction |
+| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}E-i(L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_x+L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_y+L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_z)$ | Feynman contraction |
 | $\mathcal{H}_I$, $H_I$ | Interaction Hamiltonian density and Hamiltonian |
 | $\tilde H\in\mathbb{M}_+$, $\tilde H^{*}=\tilde H$ | One-mode Hermitian generator |
 | $S=T\exp(-i\int d^4x\,\mathcal{H}_I)$ | S-matrix; time-ordered exponential (Dyson series) |

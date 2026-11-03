@@ -111,7 +111,7 @@ The first is symmetric under the interchange of its two index pairs, the second 
 
 ### The Quadratic Forms
 
-The two quadratic forms are read on the same cells, with $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the chirality,
+The two quadratic forms are read on the same cells, with $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ the chirality,
 
 $$
 \bar\Psi\Psi = N_\mu g_{\mu\nu}N_\nu - B_\mu g_{\mu\nu}B_\nu ,
@@ -225,6 +225,8 @@ The frame obeys the Clifford relations $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}$
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 A **ding** is an $\ell$-linear map on a product of the Lorentz-vector space $M$, the first-type semi-spinor space $S_1$ and the second-type semi-spinor space $S_2$, built from the four generator cells $C_\mu = iL_{a_\mu}R_{b_\mu}$ and the timelike neutral vector $k$. The order-three ding is the invariant trilinear form
@@ -259,7 +261,7 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $C_\mu = iL_{a_\mu}R_{b_\mu}$ | Generator cell, $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}$ |
 | $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$ | Generator metric; no index is raised |
 | $\mathrm{Sc}$ | Scalar part of a biquaternion |
-| $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality involution, $\Gamma^2 = e_t$, $\Gamma C_\mu + C_\mu\Gamma = 0$ |
+| $\Gamma = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality involution, $\Gamma^2 = e_t$, $\Gamma C_\mu + C_\mu\Gamma = 0$ |
 | $t_{\mu\nu\lambda\rho}$ | Four-index generator trace, symmetric under the interchange of its two index pairs |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol of the generators, $\varepsilon_{0123} = 1$ |
 | $t_{\nu\mu\lambda}$, $\varepsilon_{\nu\mu\lambda}$ | The same tensors contracted with $k_\sigma$ |

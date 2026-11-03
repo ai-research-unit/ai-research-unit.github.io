@@ -91,16 +91,16 @@ $$
 
 Two readings of the same element are in use in the series, and they differ by a sign carried by right multiplication by $\vec e_z$. Both are stated here, because the one-site map is exact in one and picks up that sign in the other.
 
-The $2\times2$ reading is the complex-linear isomorphism $\mathsf M_2$ of the matrix models, $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$; it is the left action on a Peirce carrier, and it is the one the companion articles use. The cell reading is $\mathbb R$-linear and sends each real unit to a two-sided operator, $e_t\mapsto L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\vec e_k\mapsto L_{\vec e_k}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $i\mapsto L_{e_t}^{\mathrm{pau}}R_{e_z}$, with the cells $L_aR_b$ acting by $\psi\mapsto a\psi b$ and multiplying by $L_aR_b\,L_cR_d=L_{ac}R_{db}$. The two readings are
+The $2\times2$ reading is the complex-linear isomorphism $\mathsf M_2$ of the matrix models, $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$; it is the left action on a Peirce carrier, and it is the one the companion articles use. The cell reading is $\mathbb R$-linear and sends each real unit to a two-sided operator, $e_t\mapsto L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $\vec e_k\mapsto L_{\vec e_k}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and $i\mapsto L_{e_t}^{\mathrm{axf}}R_{e_z}$, with the cells $L_aR_b$ acting by $\psi\mapsto a\psi b$ and multiplying by $L_aR_b\,L_cR_d=L_{ac}R_{db}$. The two readings are
 
 | Element | $2\times2$ image $\mathsf M_2$ | Cell |
 |---|---|---|
-| $e_t$ | $I_2$ | $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
-| $\vec e_k$ | $-i\sigma_k$ | $L_{\vec e_k}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
-| $i$ | $iI_2$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=R_{\vec e_z}^{\mathrm{pau}}$ |
-| $i\vec e_k$ | $\sigma_k$ | $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ |
-| $\vec\Upsilon_x$ | $\sigma_+$ | $\tfrac12\bigl(L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}-L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)$ |
-| $\vec\Upsilon_y$ | $\sigma_-$ | $\tfrac12\bigl(L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}+L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)$ |
+| $e_t$ | $I_2$ | $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $\vec e_k$ | $-i\sigma_k$ | $L_{\vec e_k}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $i$ | $iI_2$ | $L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=R_{\vec e_z}^{\mathrm{axf}}$ |
+| $i\vec e_k$ | $\sigma_k$ | $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ |
+| $\vec\Upsilon_x$ | $\sigma_+$ | $\tfrac12\bigl(L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}-L_{\vec e_y}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)$ |
+| $\vec\Upsilon_y$ | $\sigma_-$ | $\tfrac12\bigl(L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}+L_{\vec e_y}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)$ |
 
 A real unit and an imaginary unit are each a single cell, while the ladder is a sum of two, because the reading is $\mathbb R$-linear and not $\mathbb C$-linear. The sign that separates the two readings is carried by right multiplication by $\vec e_z$. That multiplication is a scalar on each Peirce carrier, $\tilde\Pi_+\vec e_z=-i\tilde\Pi_+$ and $\tilde\Pi_-\vec e_z=+i\tilde\Pi_-$, so the cell of $i\vec e_k$ is $-i$ times the left action on the first carrier and $+i$ times the left action on the second. In matched bases — bases of the two carriers that a left-module isomorphism carries into one another, so that the left action is the same matrix $\mathsf M_2$ on both — the cell is
 
@@ -113,7 +113,7 @@ $$
 
 both signs using $i^2=-1$. The $2\times2$ image is the left action alone and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$; the cell acts from both sides and carries both.
 
-The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}^{\mathrm{pau}}$. Since $R_{i\vec e_z}^{\mathrm{pau}}=iR_{\vec e_z}^{\mathrm{pau}}$, and $R_{\vec e_z}^{\mathrm{pau}}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the central sign of the complexified algebra, it is not an element of $\mathbb{B}$, and it is represented on the Dirac module by the same cell up to an overall sign; the relation is recorded in *The Gamma Formulation* below.
+The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}^{\mathrm{axf}}$. Since $R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}}$, and $R_{\vec e_z}^{\mathrm{axf}}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the central sign of the complexified algebra, it is not an element of $\mathbb{B}$, and it is represented on the Dirac module by the same cell up to an overall sign; the relation is recorded in *The Gamma Formulation* below.
 
 The one-site identification is exact inside the algebra, and its $2\times2$ image is exact as well:
 
@@ -292,7 +292,7 @@ is the product of the on-site parities and commutes with $H_{XY}$; the two secto
 - *The one-site identity.* The parents' $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ is the one-site Jordan–Wigner map, an identity inside $\mathbb{B}$; the transformation has a one-site fixed point.
 - *The string as the product of one-site parities.* $\prod_{k<j}(\sigma_z)_{k}=\prod_{k<j}(-1)^{F_k}$, with $(-1)^F=i\vec e_z$ the parent's algebra element. The string is the tensor product of the algebra's parities, and its non-diagonality is the external grading the spin–statistics companion records.
 - *The grading statement.* The parity is available on both sides, $(-1)^{F}=\prod_j(\sigma_z)_{j}$, and the map respects it: $(\sigma_z)_{j}$ is even, the transverse spins are odd, the modes are odd. What the map does not preserve is the site structure, since a one-site spin operator becomes a string-laden fermion operator.
-- *The two readings.* The $2\times2$ image is one-sided and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$, while the cell $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ acts on the two Peirce carriers with opposite signs, $-\sigma_k$ on one and $+\sigma_k$ on the other. The difference is right multiplication by $i\vec e_z$, the Peirce copy index; the chirality is the central sign, and the two agree on the Dirac module up to an overall sign.
+- *The two readings.* The $2\times2$ image is one-sided and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$, while the cell $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ acts on the two Peirce carriers with opposite signs, $-\sigma_k$ on one and $+\sigma_k$ on the other. The difference is right multiplication by $i\vec e_z$, the Peirce copy index; the chirality is the central sign, and the two agree on the Dirac module up to an overall sign.
 
 **Open.**
 
@@ -303,8 +303,8 @@ is the product of the on-site parities and commutes with $H_{XY}$; the two secto
 ## Companion Articles
 
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder identified here with the one-site spin, and the parity $(-1)^F=i\vec e_z$.
-- Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the identification $i\vec e_k\mapsto L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ and the $2\times2$ image $\mathsf M_2$ that fixes the one-site map.
-- Companion article *Biquaternion Physical Interpretation of Chirality*, for the distinction between the Peirce sign $P=R_{i\vec e_z}^{\mathrm{pau}}$, a copy index, and the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, which is the chirality.
+- Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the identification $i\vec e_k\mapsto L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ and the $2\times2$ image $\mathsf M_2$ that fixes the one-site map.
+- Companion article *Biquaternion Physical Interpretation of Operator Chirality*, for the definition of chirality as the side on which an operator multiplies, the identification of $\gamma_5=-iR_{\vec e_z}$ as a pure right multiplier, and the coincidence $P=-\gamma_5$ for the aligned root.
 
 ## The Gamma Formulation
 
@@ -375,6 +375,8 @@ The two act from the left; what separates them is the conjugation $\natural$, no
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The Jordan–Wigner transformation in biquaternion form has a one-site fixed point inside the algebra and is extended over sites by the product of the algebra's parities. At one site the parents' ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ satisfies $\vec\Upsilon_x^2=0$, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$, and its two products are the Peirce idempotents $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, so a one-site spin ladder *is* a fermionic mode and the string is the empty product.
@@ -418,8 +420,8 @@ The map is a unital algebra isomorphism — both presentations generate $M_{2^N}
 | $(\sigma_x)_{j}=(\prod_{k<j}(\sigma_z)_{k})(c^{\mathrm{fop}}_j+c^{\mathrm{fop}\dagger}_j)$ | Inverse map |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Both descriptions generate the full matrix algebra |
 | $(-1)^{F}=\prod_j(\sigma_z)_{j}$ | Whole-chain parity; boundary-condition sectors |
-| $i\vec e_k\mapsto L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Cell of the timelike bivector $i\vec e_k$; it acts as $-\sigma_k$ on $\mathbb{B}\tilde\Pi_+$ and $+\sigma_k$ on $\mathbb{B}\tilde\Pi_-$ |
-| $P=R_{i\vec e_z}^{\mathrm{pau}}$ | Peirce sign of the two carriers, $+1$ on $S_+$ and $-1$ on $S_-$; a copy index, not the chirality |
+| $i\vec e_k\mapsto L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Cell of the timelike bivector $i\vec e_k$; it acts as $-\sigma_k$ on $\mathbb{B}\tilde\Pi_+$ and $+\sigma_k$ on $\mathbb{B}\tilde\Pi_-$ |
+| $P=R_{i\vec e_z}^{\mathrm{axf}}$ | Peirce sign of the two carriers, $+1$ on $S_+$ and $-1$ on $S_-$; a copy index, not the chirality |
 
 ## Further Reading
 

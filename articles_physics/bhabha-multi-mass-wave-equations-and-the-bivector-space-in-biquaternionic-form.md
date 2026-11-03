@@ -8,7 +8,7 @@ This article records the equations, the spin chains they live on, and the third 
 
 It is worth separating this article from the companion that shares the name Bhabha. *Bhabha Scattering in Biquaternionic Form* is about the elastic scattering of an electron and a positron; the present article is about Bhabha's *wave equations*, a different piece of work by the same author. The two are cross-referenced and not merged.
 
-**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$. Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, the three squaring to $-e_t$. The two-sided cells act by $L_aR_b\psi=a\psi b$, and the **generator cell** of the coordinate $x_\mu$ is $G_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, with $\nu(t)=x$ and $\nu(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{pau}}$. The gammas are the frame names of the same cells and appear only in the section *The Gamma Formulation*; no gamma-matrix is used before it.
+**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$. Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, the three squaring to $-e_t$. The two-sided cells act by $L_aR_b\psi=a\psi b$, and the **generator cell** of the coordinate $x_\mu$ is $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$. The gammas are the frame names of the same cells and appear only in the section *The Gamma Formulation*; no gamma-matrix is used before it.
 
 **The order of the article.** A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction and settles its metric and its index order. A fourth works the proton chain and writes the Dirac limit in its two forms, the one-sided chiral pair and the two-sided cell equation. A fifth states the biquaternion interpretation and separates what is established from what is transcribed; the gammas are collected in a section of their own before the summary.
 
@@ -252,14 +252,14 @@ so each chiral half obeys the Klein–Gordon equation.
 
 $$
 \boxed{\;(\mathbb{D}-m_e)\psi=0,\qquad
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial x_0}-\sum_{k=1}^{3}L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial x_k}\;}
+\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_0}-\sum_{k=1}^{3}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k}\;}
 $$
 
 The operator is the four generator cells contracted with the four derivatives; the $i$ of each cell cancels the $i$ in front, and the expanded form has no imaginary unit:
 
 $$
-G_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
-G_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+G_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \mathbb{D}=i\sum_{\mu=0}^{3}G_\mu\frac{\partial}{\partial x_\mu}.
 $$
 
@@ -277,7 +277,7 @@ $$
 
 Hence $(\mathbb{D}-m_e)\psi=0$ implies $(\Box-m_e^2)\psi=0$, the same Klein–Gordon consequence as the pair. The mass enters with the scalar coefficient $-m_e$.
 
-The chirality is the right multiplication $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$, an involution with eigenvalues $\pm1$ of multiplicity two that splits $\Delta$ into the two chiral halves. It anticommutes with every generator cell, and therefore with $\mathbb{D}$,
+The chirality is the right multiplication $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$, an involution with eigenvalues $\pm1$ of multiplicity two that splits $\Delta$ into the two chiral halves. It anticommutes with every generator cell, and therefore with $\mathbb{D}$,
 
 $$
 \chi\mathbb{D}\chi=-\mathbb{D},
@@ -340,7 +340,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)=(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$, and its non-injectivity across spin lines; for the proton's first factor $60\times59=3540$.
 - The $\pm$ pairing of the eigenvalues of $M_0$, derived from the evenness in $p_0$ of the rest-frame determinant.
 - The bivector metric's $(3,3)$ inertia, and the printed diagonal as the componentwise image in the order $10,20,30,23,31,12$; recomputed for all six collective indices.
-- The Dirac limit's cells: $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $iG_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $\mathbb{D}^2=\Box$, the product of the four generator cells equal to $-R_{\vec e_z}^{\mathrm{pau}}$, and the reduction to the Pauli matrices at $c_{\frac12,\frac12}=2$; recomputed on the explicit $4\times4$ cell representation.
+- The Dirac limit's cells: $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $iG_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\mathbb{D}^2=\Box$, the product of the four generator cells equal to $-R_{\vec e_z}^{\mathrm{axf}}$, and the reduction to the Pauli matrices at $c_{\frac12,\frac12}=2$; recomputed on the explicit $4\times4$ cell representation.
 - The proton-to-electron mass ratio: the product $(l+\frac12)(\bar l+\frac12)$ is $30\times29.5=885$ at $(59/2,29)$ and $1\times\frac12$ at the electron's $(1/2,0)$, so the ratio is $885/\frac12=1770$.
 
 **Transcribed, not derived.**
@@ -421,13 +421,15 @@ with $g=\mathrm{diag}(+1,-1,-1,-1)$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+
 ## Summary
 
 The Bhabha–Gel'fand–Yaglom wave equations place a field in an arbitrary Lorentz representation $\tau^{l\bar l}$, carried by coefficients of symmetric spintensors of degree $(k+1)(r+1)=(2l+1)(2\bar l+1)$, and give it a matrix mass whose determinant is a polynomial in $s^2=p^2$ with roots $m_i^2$. The $\pm$ pairing of the eigenvalues is a consequence of the determinant's evenness at rest; the source's reading of the masses from those eigenvalues is not the determinant's, and is recorded as an open question. The representations are organised into interlocking chains — the Bose and Fermi schemes — and the fields of type $(l,\bar l)\oplus(\bar l,l)$ carry generalised spin $s=|l-\bar l|$.
 
 The equations can be mapped into the six-dimensional bivector space $\mathbb{R}^6\cong\mathbb{C}^3$. The printed bivector metric is the componentwise image of the Minkowski metric under the boost-first collective order $10,20,30,23,31,12$; the order printed in the source interleaves the two classes and does not reproduce it. With the corrected order, the three boosts carry $-1$ and the three rotations $+1$, which is the $(3,3)$ split of the Lorentz parameter space. The $\mathbb{R}^6$ equation keeps the source's explicit $i$ in its second sum: the source's two relations for the conjugate coordinate are mutually inconsistent, so the reduction of that pair of imaginary units by $i^2=-1$ is stated as a consequence of one reading and left open, rather than performed silently.
 
-The first chain member is the electron's Dirac doublet, and the Dirac equation has two forms. The **chiral pair** $\tilde\nabla\psi_R=m_e\psi_L$, $\tilde\nabla^{\natural}\psi_L=m_e\psi_R$ is the one-sided definition on the two chiral halves. The **cell equation** $(\mathbb{D}-m_e)\psi=0$ is its two-sided representative on the single module, with $\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$ and $\mathbb{D}^2=\Box$. The two have the same square, the same massless content, and neither is a second physics: the chirality cell anticommutes with $\mathbb{D}$, and that oddness is what turns the single equation into the pair. The nucleon is taken at the chain member $(59/2,29)$ of degree $3540$; the ratio $m_p/m_e=1770$ is $3.6\%$ below the measured value.
+The first chain member is the electron's Dirac doublet, and the Dirac equation has two forms. The **chiral pair** $\tilde\nabla\psi_R=m_e\psi_L$, $\tilde\nabla^{\natural}\psi_L=m_e\psi_R$ is the one-sided definition on the two chiral halves. The **cell equation** $(\mathbb{D}-m_e)\psi=0$ is its two-sided representative on the single module, with $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$ and $\mathbb{D}^2=\Box$. The two have the same square, the same massless content, and neither is a second physics: the chirality cell anticommutes with $\mathbb{D}$, and that oddness is what turns the single equation into the pair. The nucleon is taken at the chain member $(59/2,29)$ of degree $3540$; the ratio $m_p/m_e=1770$ is $3.6\%$ below the measured value.
 
 The framework's relation to this is the fundamental doublet's factor: $\mathbb{C}^2$ is the defining module of the biquaternion algebra, the bivector space is the corpus's field-strength space, and the equations' massless limit is the corpus's Weyl pair, with the Maxwell field in spinor form as the programme's companion identification. The higher chain members lie outside $\mathbb{B}$, and the physical assignments are choices fixed by the mass ratio.
 
@@ -450,9 +452,9 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $(59/2,29)$, degree $3540$ | The proton's chain member |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient, its natural conjugate, and the scalar d'Alembertian |
 | $\tilde\nabla\psi_R=m\psi_L$, $\tilde\nabla^{\natural}\psi_L=m\psi_R$ | The one-sided Dirac pair, one equation per chirality |
-| $L_aR_b\psi=a\psi b$, $G_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $\nu(t)=x$, $\nu(k)=y$ | Two-sided cells and the generator cells |
-| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$, $\mathbb{D}^2=\Box$ | Two-sided cell Dirac operator; $(\mathbb{D}-m)\psi=0$ |
-| $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell on the module, $\chi^2=I_4$, eigenvalues $\pm1$ |
+| $L_aR_b\psi=a\psi b$, $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\nu(t)=x$, $\nu(k)=y$ | Two-sided cells and the generator cells |
+| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$, $\mathbb{D}^2=\Box$ | Two-sided cell Dirac operator; $(\mathbb{D}-m)\psi=0$ |
+| $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell on the module, $\chi^2=I_4$, eigenvalues $\pm1$ |
 
 ## Further Reading
 
