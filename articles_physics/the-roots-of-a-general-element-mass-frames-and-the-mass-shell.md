@@ -153,9 +153,9 @@ $$
 \tilde P=imc\cosh\psi+mc\,\hat p\sinh\psi .
 $$
 
-The mass is $m=\lvert\Rho\rvert/c$. The root set of the value $-m^{2}c^{2}$ is the union of the two sheets of the shell, the two orbits of the restricted Lorentz group: the orbit of $\Rho e^{\vec U\Theta}$ and the orbit of its central negative. Every point of the shell has the same $\lvert\Rho\rvert$ and its own frame $(\vec U,\Theta)$. The level set is the geometric form of the statement, and the modulus is the invariant that defines it.
+The mass is $m=\lvert\Rho\rvert/c$. The root set of the value $-m^{2}c^{2}$ is the union of the two sheets of the shell, the two orbits of the restricted Lorentz group: the orbit of $\Rho e^{\vec U\Theta}$ and the orbit of its central negative. Every point of the shell has the same $\lvert\Rho\rvert$ and its own pair $(\vec U,\Theta)$: the same modulus, a different direction and rapidity.
 
-The mass is the modulus of the Hamilton amplitude, not the energy. A boost changes the frame angle $\psi$, hence the energy $mc^{2}\cosh\psi$, and it leaves the modulus $mc$ alone. The same division appears in the spectrum: $\lambda_+\lambda_-=\Rho^{2}$ is the invariant norm, and $\lambda_+/\lambda_-=e^{2\psi}$ is the frame.
+The mass is the modulus of the Hamilton amplitude, not the energy. A boost changes the rapidity $\psi$, hence the energy $mc^{2}\cosh\psi$, and it leaves the modulus $mc$ alone. The same split appears in the spectrum: $\lambda_+\lambda_-=\Rho^{2}$ is the invariant norm, while $\lambda_+/\lambda_-=e^{2\psi}$ carries the rapidity.
 
 **The boundary.** The identification is licensed for the four-momentum chart and the principal branch. For a general element the Hamilton modulus is a complex amplitude, and the mass interpretation is an extra identification. The modulus is also not additive: it is multiplicative under composition, and the mass of a sum is not the sum of the masses.
 
@@ -172,7 +172,7 @@ a complex quadric of four real dimensions. On the material slice $\vec Q\in\math
 
 The family is the set that a spectrum-only measurement leaves open. It is also the common level set of the trace and the norm, the two spectral invariants. A dynamics that conserves both moves inside the family and does not leave it.
 
-A rotation acts transitively on that sphere, so the material family is one rotation orbit. The mass shell is larger: it is the union of the two orbits of the restricted Lorentz group at fixed mass, and a boost changes the trace and the spectrum while preserving the norm. On the whole algebra the family also contains complex vector parts that no real Lorentz transformation reaches; those are the members that are not frames.
+A rotation acts transitively on that sphere, so the material family is one rotation orbit. The mass shell is larger: it is the union of the two orbits of the restricted Lorentz group at fixed mass, and a boost changes the trace and the spectrum while preserving the norm. On the whole algebra the family also contains complex vector parts that no real Lorentz transformation reaches; those members are not four-momenta.
 
 The degenerate case splits. At $B=0$ the eigenvalues coincide at $Q_t$, and the family is the isotropic quadric $(\vec Q,\vec Q)=0$ in the vector part, a cone with vertex at the origin of $\vec Q$-space. Within the matrix image a repeated eigenvalue has two conjugation classes, the scalar $Q_te_t$ and the Jordan block $Q_te_t+\vec Q$ with $\vec Q\neq0$ and $\vec Q^2=0$. They have the same spectrum and the same norm, and they are not conjugate. The minimal polynomial, not the spectrum, separates them.
 
@@ -337,9 +337,9 @@ The bands must be kept apart. The plain root set of a nonzero central value is a
 
 ## The Gamma Formulation
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+The body names cells — $L_a$, $R_b$, $\Gamma=-iR_{\vec e_z}$ — without naming an algebra for them. This closing section supplies the dictionary and nothing in the body depends on it.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+The gammas generate $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$; they are not a different algebra. The cells act on $\mathbb{B}$ itself, four complex dimensions, so each cell is a $4\times4$ complex matrix. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\qquad
@@ -370,9 +370,9 @@ $$
 
 A single product is a pure tensor: $c(M)$ has rank one. The rank-one elements form a cone of complex dimension seven, every general element is a sum of at most four of them, and the length is $\ell(M)=\operatorname{rank}c(M)$.
 
-The cells of the cell equation are these gammas: $G_\mu=\gamma_\mu$, since $L_{e_t}$ acts as the identity on the module, and the chirality cell is $\Gamma=\gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, is the difference of the two central idempotents, so $\chi^2=e_t$. It is a different object: the $4\times4$ frame represents $\Gamma$ and $\chi$ by the same matrix, and the algebra keeps them apart.
+The cells of the cell equation are these gammas: $G_\mu=\gamma_\mu$, since $L_{e_t}$ acts as the identity on the module, and the chirality cell is $\Gamma=\gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, is the difference of the two central idempotents, so $\chi^2=e_t$. It is a different object: on the module the two act through the same $4\times4$ matrix, and only the algebra keeps them apart.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear. Over $\mathbb{R}$ the sixteen words in $\gamma_0,\dots,\gamma_3$ span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The two are distinct real forms of the same $M_4(\mathbb{C})$, the first of quaternionic type and the second of real type; that is why $i$ times a cell is not again a cell.
 
 ## Summary
 

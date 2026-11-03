@@ -6764,6 +6764,11 @@ Rows: I.1 the ambient algebra, II.1 the left family, III.1 the right family, IV.
 <a href="articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>
 <!-- I.1: the ambient operator space before any matrix, the carrier and its coordinate column, the sixteen complex dimensions and the real and complex reading; the endomorphisms of the algebra, the automorphism group and the derivations; the natural conjugation as an anti-automorphism and the conjugate-linear maps outside the algebra. One display $Qx-xQ$, one pointer to the regular operators; proves the row $\operatorname{End}(\mathbb{B})$. -->
 
+##### The SVD of an Endomorphism
+
+<a href="articles_maths/the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html">The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</a>
+<!-- the SVD as the spine, and no later article used: the algebra as a complex Hilbert space of dimension four with $\langle X,Y\rangle=\operatorname{Sc}(XY^{*})$; the adjoint $F^{*}$ by Riesz; the spectral theorem for $F^{*}F$ proved in four steps, and $F=\sum_{i\le r}\sigma_i u_i\langle\cdot,v_i\rangle$ with orthonormal families and $r=\operatorname{rk}F\le4$; the ellipsoid, $\sigma_1=\|F\|_{\mathrm{op}}$, the rank cases $4,3,2,1,0$, $\prod\sigma_i=|\det F|$, $\sum\sigma_i^2=\|F\|^2$; the three regimes of non-uniqueness; the min-max characterisation and Eckart-Young. The multiplication enters last: $\mathcal T_{\tilde Q,\tilde P}(X)=\tilde QX\tilde P$ as the rank-one elements of the tensor square, sixteen atoms at the units orthogonal of norm two, $F=\sum_{i\le r}\varsigma_i\mathcal T_{u_i,w_i}$ with $r=\ell(F)=\operatorname{rk}\varphi_F\le4$, and the two senses of rank one kept apart: the identity is one product of rank four, the projection onto $\mathbb{C}e_t$ is four products of rank one, and $\sum_\mu\mathcal T_{e_\mu,e_\mu}=-2D$. -->
+
 ##### The Four Readings and the Slots
 
 <a href="articles_maths/introduction-to-the-operators-of-the-biquaternion-algebra.html">Introduction to the Operators of the Biquaternion Algebra</a>

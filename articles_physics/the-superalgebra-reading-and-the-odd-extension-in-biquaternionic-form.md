@@ -168,7 +168,7 @@ $$
 \{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H,\qquad [\mathcal{Q},H]_{\mathrm{gr}}=0 ,
 $$
 
-so that the square is a bosonic element commuting with $\mathcal{Q}$. This needs $\mathcal{Q}^{2}\neq0$. In the Clifford parity it is the relation of the ambient algebra, $\{v_\mu,v_\mu\}=2v_\mu^{2}$; in the chirality grading of the supersymmetry article the odd object is the gradient, and its square is the central scalar, $\tilde\nabla\tilde\nabla^{\natural}=\Box$, which is the $H$ of that reading.
+so that the square is a bosonic element commuting with $\mathcal{Q}$, and it is Hermitian as well when $\mathcal{Q}$ is, since $(\mathcal{Q}^{2})^{*}=(\mathcal{Q}^{*})^{2}$. This needs $\mathcal{Q}^{2}\neq0$. In the Clifford parity it is the relation of the ambient algebra, where the square of a frame vector is central, $v_\mu^{2}=g_{\mu\mu}e_t$; in the chirality grading of the supersymmetry article the odd object is the gradient, and its square is the central scalar, $\tilde\nabla\tilde\nabla^{\natural}=\Box$, which is the $H$ of that reading.
 
 **(ii) The star.** In the Hermitian interpretation the physical pairing is the one with the **star** rather than with the element itself,
 
@@ -178,7 +178,19 @@ $$
 
 with $H'$ the Hamiltonian of that reading; it is the convention of *Supersymmetric Quantum Physics in the Biquaternion Framework*, $\{\mathcal{Q},\mathcal{Q}^{\dagger}\}=H$, $\mathcal{Q}^{2}=(\mathcal{Q}^{\dagger})^{2}=0$. There it is the *nilpotent* realisation that is in play: the supercharge is strictly triangular, its square vanishes, and the Hamiltonian is not a square at all but the off-diagonal product $AA^{\dagger}$, which is why the first display would give $H=0$ and the second does not.
 
-The two agree when $\mathcal{Q}^{*}=\mathcal{Q}$, and a search over the odd slot finds no second case: agreement makes $\mathcal{Q}^{2}$ Hermitian and $(\mathcal{Q}-\mathcal{Q}^{*})^{2}=0$, and no odd element of the slot meets both conditions without vanishing. For an odd element that is not Hermitian they differ, and on a vector they differ by a sign,
+The two agree when $\mathcal{Q}^{*}=\mathcal{Q}$. They also agree, **at zero**, on one family, and it is worth naming because it shows what the agreement is not. Let $\omega=v_0v_1v_2v_3$ be the pseudoscalar, with $\omega^{2}=-1$, and put
+
+$$
+B=v\,(1-i\omega)=v+i\omega v .
+$$
+
+A vector changes sign under the star and a trivector does not, so $v$ is anti-Hermitian and $i\omega v$ is anti-Hermitian as well: $B^{*}=-B$. Its square is
+
+$$
+B^{2}=q(v)\,e_t\,(1+i\omega)(1-i\omega)=q(v)\,e_t\,(1-i^{2}\omega^{2})=0 ,
+$$
+
+because $i^{2}=-1$ and $\omega^{2}=-1$ give $i^{2}\omega^{2}=+1$. On such an element both pairings vanish, so their agreement there carries no Hamiltonian. Apart from that vanishing family the agreement forces $\mathcal{Q}^{*}=\mathcal{Q}$: it makes $\mathcal{Q}^{2}$ Hermitian and $(\mathcal{Q}-\mathcal{Q}^{*})^{2}=0$, and a search over the odd slot returns no element on which the two are equal and nonzero. Outside that family, for an odd element that is not Hermitian, the two differ, and on a vector they differ by a sign,
 
 $$
 \{u,u\}=2q(u)e_t,\qquad \{u,u^{*}\}=-2q(u)e_t ,
@@ -244,7 +256,7 @@ $$
 (-1)^F(-1)^F=i^2\,\vec e_z^2=(-1)(-e_t)=e_t ,
 $$
 
-by $i^2=-1$ and $\vec e_z^2=-e_t$, so it is a parity operator of a $*$-unitary theory, $(-1)^F\in\mathbb{M}_+$. The parity of a field, $\prod_{\text{modes}}i\vec e_z^{(\text{mode})}$, is not an element of the algebra.
+by $i^2=-1$ and $\vec e_z^2=-e_t$, so it is a parity operator of a $*$-unitary theory, $(-1)^F\in\mathbb{M}_+$. The parity of a field, the product of the element over the modes, $\prod_{\text{modes}}(i\vec e_z)$, is not an element of the algebra.
 
 **Remark (the count of what is adjoined).** One odd generator, and its products with the even elements, exhaust the odd slot: the extension is not "one more algebra" but one more generator, and the rule odd $\times$ odd $=$ even that it brings with it.
 
@@ -271,6 +283,7 @@ the third step dropping the two central minus signs of $u^{2}$ and using $u^{2}=
 - **The parity of a field is external.** $(-1)^F$ is an element of the algebra for one mode and a product over modes, hence outside it, for a field.
 - **The star of the envelope is a convention.** The corpus defines the star on the algebra; the extension used here, $X^{*}=\sigma(\alpha(X^{r}))$ with $\sigma$ the coefficient conjugation, is the Clifford conjugation of the maths corpus, and it agrees with the algebra's star on the even part through the identification of the frame with the cells. The reversion is the other natural anti-involution of the envelope, and the bracket-adjoint identity holds for it as well, because it is a property of any parity-preserving anti-involution; only the identification of the involution with the physical adjoint depends on the choice, and the reversion is not the adjoint of the spinor form.
 - **The symmetric pairing is conditional.** The formula $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ is claimed exactly when $s^{*}s$ has no part of $u$-parity $-1$ — in particular for an even $s$ of definite $u$-parity — and not in general, where the second term is $-u\,s^{*}s\,u$; what holds always is that the pairing is even and Hermitian.
+- **The two pairings coincide only for a Hermitian supercharge.** For a non-Hermitian odd element they are two different elements, and they coincide only on the nilpotent family $v(1-i\omega)$, where both vanish; a Hamiltonian read from the pair needs $\mathcal{Q}^{*}=\mathcal{Q}$.
 - **Nothing here is a measure or an integral.** The Grassmann and Berezin constructions are cited from their articles and are not used; the article is algebra, grading and adjointness.
 - **No supersymmetry algebra is claimed to be contained in $\mathbb{B}$.** The super-Poincaré algebra, if it is to be written, is written on an extension; the corpus's supersymmetry article states which superalgebra its construction realizes, and this article adds the general boundary and the Hermitian structure, not a second claim.
 
@@ -340,7 +353,7 @@ $$
 \tilde\nabla^{\natural}F=m\left(-i\overline{F}\,\vec e_z\right),
 $$
 
-which is the second member of the pair with its left field read as $-i\overline{F}\,\vec e_z$: a conjugation and the fixed direction $\vec e_z$. That right-hand factor is the chirality cell, since $-i\overline{F}\,\vec e_z=\Gamma\,\overline{F}$ with $\Gamma=-iR_{\vec e_z}=\gamma_5$, so the mass of the two-sided equation is carried by the cell that names the chirality — the two-sided counterpart of the off-diagonal mass of the one-sided pair, and the reason the mass is chirality-odd here as it is off-diagonal there. The two forms are one operator read from two sides, and the dictionary between them is that of *The Dirac Equation in Biquaternionic Form*. In the language of this article the one-sided pair is the superalgebra's own statement, the gradient and its conjugate paired off-diagonally by the mass, while the two-sided equation is the cell $L_{\tilde\nabla^{\natural}}$ with the chirality carried on the right: what the one-sided form holds in a second field, the two-sided form holds in the side of the action.
+which is the second member of the pair with its left field read as $-i\overline{F}\,\vec e_z$: a conjugation and the fixed direction $\vec e_z$. That right-hand factor is the chirality cell, since $-i\overline{F}\,\vec e_z=\Gamma\,\overline{F}$ with $\Gamma=-iR_{\vec e_z}=\gamma_5$, so the mass of the two-sided equation is carried by the cell that names the chirality — the two-sided counterpart of the off-diagonal mass of the one-sided pair, and the reason the mass is chirality-odd here as it is off-diagonal there. The two forms are one operator read from two sides, and the dictionary between them is that of *The Dirac Equation in Biquaternionic Form*. In the language of this article the one-sided pair is the superalgebra's own statement in the chirality grading of the supersymmetry article, where the gradient is the odd element and its conjugate is the odd element of the conjugate module, the two paired off-diagonally by the mass; the two-sided equation is instead the cell $L_{\tilde\nabla^{\natural}}$ with the chirality carried on the right: what the one-sided form holds in a second field, the two-sided form holds in the side of the action.
 
 **The cells and the cone.** A single product is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -380,15 +393,15 @@ The matrix frame is the frame of cells written as letters, and it is confined to
 | $X^{*}=\sigma(\alpha(X^{r}))$ | The star, Hermitian conjugation; even anti-involution of the superalgebra |
 | $\bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}[a^{*},b^{*}]_{\mathrm{gr}}$ | The star reverses a commutator, preserves an anticommutator |
 | $(ab)^{*}=(-1)^{\lvert a\rvert\lvert b\rvert}b^{*}a^{*}$ | The Koszul-signed super-*; **not** the star of the corpus |
-| $\{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H$, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H'$ | The square pairing and the star pairing of a supercharge; Hermitian and even |
+| $\{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H$, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H'$ | The square pairing and the star pairing of a supercharge; both even, the second Hermitian always and the first when $\mathcal{Q}$ is |
 | $L_{\mathcal{Q}}=L_sL_u$, $L_{\mathcal{Q}}^{\dagger}=L_{\mathcal{Q}^{*}}$ | The operator of a supercharge and its adjoint |
 | $\mathcal{Q}=su$, $\mathcal{Q}^{*}=-u s^{*}$, $\mathcal{Q}\mathcal{Q}^{*}=-q(u)ss^{*}$ | The supercharge in the module $\mathrm{Cl}^1=\mathbb{B}u$ |
-| $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ | Its pairing for an even $s$ of definite $u$-parity |
+| $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ | Its pairing when $s^{*}s$ has no part of $u$-parity $-1$, in particular for an even $s$ of definite $u$-parity |
 | $\langle su,tu\rangle_{*}=-q(u)\langle s,t\rangle_{*}$, $\langle s,tu\rangle_{*}=0$ | The Hermitian form on the odd slot |
 | $(-1)^F=i\vec e_z\in\mathbb{M}_+$, $((-1)^F)^2=e_t$ | The one fermionic mode the algebra hosts natively |
-| $\gamma_\mu$, $\gamma_5=-iR_{\vec e_z}$ | The frame cells of *The Gamma Formulation*, used only there |
-| $\Gamma=-iR_{\vec e_z}$ | The chirality cell; $\gamma_5=\Gamma$ in the frame |
-| $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading, represented by $\gamma_5$ on the Dirac module |
+| $\gamma_\mu$, $\gamma_5$ | The frame cells of *The Gamma Formulation*: letters for the cells, used in that section only |
+| $\Gamma=-iR_{\vec e_z}$ | The chirality cell of the module; equal to the fifth frame cell in the frame |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | The central grading; central, outside $\mathbb{B}_{\mathbb{R}}$, represented on the Dirac module by the fifth frame cell |
 | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | The one-sided Dirac equation, the chiral pair |
 | $(i\partial/\partial t'+D_3)F-mi\overline{F}\vec e_z=0$ | The two-sided Dirac equation, the mass on the right |
 

@@ -160,6 +160,7 @@ The **natural conjugation** $D$ is the one conjugation that is complex-linear. I
 ## Further Reading
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its basis and its multiplication.
+- [The SVD Decomposition of Endomorphisms of the Biquaternion Algebra](the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html), for the shortest expression of an endomorphism as a sum of two-sided operators, the bound four, and the orthogonal decomposition with weights.
 - [The Operators on an Algebra](the-operators-on-an-algebra.html), for the ambient operator space in general and the subspace-group rule.
 - [The Regular Representation as an Algebra of Operators](the-regular-representation-as-an-algebra-of-operators.html), for the regular representations and their double centraliser.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the matrix in a basis, the change of frame and the invariants.

@@ -928,6 +928,7 @@ The same construction has two consequences that belong to the equation rather th
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$ | Shifted gradient, $\kappa \in \mathbb{C}$ central (companion d'Alembertian article) |
 | $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ | Spinor field, one component per chiral half: $\tilde{\Psi}_L\in S$, $\tilde{\Psi}_R\in S^{\mathrm{c}}$ |
+| $S^{\mathrm c}=\bar S$ | Conjugate of the spinor module, the right-handed chiral half; written $\bar S$ in [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) |
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $A$ | Real-linear bijection from bispinors to biquaternion-valued functions (the explicit dictionary) |
 | $\bar{\cdot}$, written $C$ by the source | Componentwise complex conjugation, $Q_\mu\mapsto\bar Q_\mu$ on the coefficients: an automorphism, $\mathbb{C}$-antilinear and not an anti-automorphism; the timelike generator of that dictionary |
@@ -948,7 +949,7 @@ The same construction has two consequences that belong to the equation rather th
 | $K_\mu$ | Unit complex four-vector carrying the mass term, $m\bar\Psi\Psi=\bar\Psi(iK_t\,e_t\Psi \vec e_x+i\sum_k K_k\,\vec e_k\Psi \vec e_y)$; $K_\mu=p_\mu/m$ on shell, $\sum_\mu\varepsilon_\mu K_\mu K_\mu=1$ |
 | $B_\mu, N_\mu$ | The two real four-vectors of the semi-spinors, $\Psi_1=-\sum_{\mu,\nu}B_\mu g_{\mu\nu}e_\nu v e_\bullet$, $\Psi_2=-\sum_{\mu,\nu}N_\mu g_{\mu\nu}e_\nu u e_\bullet$, with $e_\bullet=\vec e_x$ on the timelike index and $\vec e_y$ on the spatial ones |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector, the vector representation of the same spinor |
-| $|F|^2 = \langle F\rangle_{*} = \sum_\mu|F_\mu|^2$ | Hermitian norm of the biquaternion field; the Dirac probability density under the dictionary |
+| $\lvert F\rvert^2 = \langle F\rangle_{*} = \sum_\mu\lvert F_\mu\rvert^2$ | Hermitian norm of the biquaternion field; the Dirac probability density under the dictionary |
 | $m$ | Fermion mass |
 
 ## Further Reading

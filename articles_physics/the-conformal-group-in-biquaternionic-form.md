@@ -18,7 +18,9 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is the scalar $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}\tilde{Q}^{\natural})=\sum_{\mu}Q_\mu^2$, with the central spelling $\tilde{Q}\tilde{Q}^{\natural}=\langle\tilde{Q}\rangle_{\natural}e_t$; its zero set is the zero-divisor cone. The Hermitian form on the Hermitian sector, read as the trace pairing, is, for two Hermitian elements $\tilde H_1,\tilde H_2$, $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*}) = 2\langle\tilde{H}_1,\tilde{H}_2\rangle_{*}$. Every product of two imaginary units is reduced by $i^2=-1$ before a formula is read. The body is written in elements, with the cell dictionary confined to *The Gamma Formulation*; the gamma names appear only there. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. On $\mathbb{M}_-$ the scalar coordinate is $Q_t=ict'$, so that $\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.
+the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace.
+
+The biquaternion norm is the scalar $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}\tilde{Q}^{\natural})=\sum_{\mu}Q_\mu^2$, with the central spelling $\tilde{Q}\tilde{Q}^{\natural}=\langle\tilde{Q}\rangle_{\natural}e_t$; its zero set is the zero-divisor cone. The Hermitian form on the Hermitian sector, read as the trace pairing, is $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*}) = 2\langle\tilde{H}_1,\tilde{H}_2\rangle_{*}$ for two Hermitian elements $\tilde H_1,\tilde H_2$. Every product of two imaginary units is reduced by $i^2=-1$ before a formula is read. The body is written in elements, with the cell dictionary confined to *The Gamma Formulation*; the gamma names appear only there. Throughout, $c$ is the speed of light in the medium. On $\mathbb{M}_-$ the scalar coordinate is $Q_t=ict'$, so that $\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.
 
 ## The Conformal Group and Its Generators
 
@@ -81,7 +83,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0
 \qquad(\text{equivalently }\tilde{Q}\tilde{Q}^{\natural}=0),
 $$
-and an element of $\mathbb{B}$ is a zero divisor exactly when its norm vanishes. The light cone of Minkowski space is therefore the material sector's part of that cone, the **zero-divisor cone**, whose geometry is the subject of the companion article on the null quadric and projective geometry; here only its invariance is needed. The algebra contains the *object* that the conformal group preserves, even though, as the later sections show, it does not contain the group.
+and an element of $\mathbb{B}$ is a zero divisor exactly when its norm vanishes. The light cone of Minkowski space is therefore the material sector's slice of the **zero-divisor cone** of the algebra, whose geometry is the subject of the companion article on the null quadric and projective geometry; here only its invariance is needed. The algebra contains the *object* that the conformal group preserves, even though, as the later sections show, it does not contain the group.
 
 The four families of generators act on the zero set of $\langle\cdot\rangle_{\natural}$ as follows; each statement follows from the algebra's product, inverse and addition, and each was checked on explicit elements.
 
@@ -117,7 +119,7 @@ and this displays both what the algebra provides and what it withholds. Three po
 
 **The dilation element is not a unit-norm biquaternion.** The central element $\sqrt{\lambda}e_t$ has biquaternion norm $\langle\sqrt{\lambda}e_t\rangle_{\natural}=\lambda$, which differs from $1$ for $\lambda\ne1$, so it lies outside $SL(2,\mathbb{C})$. The rotor group acts by isometries and preserves $\langle\cdot\rangle_{\natural}$; the dilation scales $\langle\cdot\rangle_{\natural}$, so it cannot be a member of that group. The dilation is realizable *by* the algebra but is not *of* the group of the algebra.
 
-**The dilation is not an algebra automorphism.** Multiplication by a scalar is linear but not multiplicative: $\lambda(\tilde{Q}\tilde{Q}_1)$ is not $(\lambda\tilde{Q})(\lambda\tilde{Q}_1)$ for $\lambda\ne1$, a defect that was checked by direct computation on a non-commuting pair. So the dilation, unlike the rotations, cannot be read as a relabelling of the algebra's own product.
+**The dilation is not an algebra automorphism.** Multiplication by a scalar is linear but not multiplicative: $\lambda(\tilde{Q}\tilde{Q}_1)$ is not $(\lambda\tilde{Q})(\lambda\tilde{Q}_1)$ for $\lambda\ne1$, checked by direct computation on explicit elements. So the dilation, unlike the rotations, cannot be read as a relabelling of the algebra's own product.
 
 **The dilation generator is not an inner derivation.** Extended to all of $\mathbb{B}$, the dilation is $\lambda$ times the identity, of trace $8\lambda$; every inner derivation $\mathrm{ad}_{\tilde Q_4}=[\tilde Q_4,\cdot\,]$ of the eight-dimensional algebra is traceless, as a direct computation in a real basis confirms for several random $\tilde Q_4$. So no element of $\mathbb{B}$ generates the dilation by commutator. This is the precise sense in which one of the fifteen parameters sits half inside the algebra: expressible, but not a group element and not an inner derivation.
 
@@ -137,7 +139,7 @@ because $\langle\tilde{Q}^{\natural}\rangle_{\natural}=\langle\tilde{Q}\rangle_{
 $$
 \boxed{\;\langle I(\tilde{Q})\rangle_{\natural}=\frac{1}{\langle\tilde{Q}\rangle_{\natural}}\;},
 $$
-so $I$ maps the null cone to itself and is a conformal map with the reciprocal scale factor. Unlike the Lorentz, dilation and translation parts, the inversion is not built from the algebra's multiplication and addition alone: it uses the inverse, that is, division by the biquaternion norm.
+so $I$ maps the light cone to itself and is a conformal map with the reciprocal scale factor. Unlike the Lorentz, dilation and translation parts, the inversion is a rational map of the module: it divides by $\langle\tilde{Q}\rangle_{\natural}$.
 
 There is a small but real distinction to record. The algebra's own inverse is
 $$
@@ -208,9 +210,9 @@ reduce to a conformal map of vectors. For Minkowski space the entries live in $\
 
 **The six-dimensional embedding.** Alternatively, the conformal group is a rotation group of a six-dimensional space. The conformal compactification of $\mathbb{R}^{1,3}$ is the projectivized null cone of $\mathbb{R}^{2,4}$, exactly as Minkowski space is a real slice of the complexified rotation picture of the Lorentz-transformation companion; the conformal group is $O(2,4)$, realized by rotations of that six-dimensional space. In Clifford terms this is $\mathrm{Cl}_{2,4}$: its bivectors span the fifteen-dimensional conformal algebra, and its even subalgebra, the home of the conformal rotors, has real dimension $32$. The biquaternion algebra, as the even subalgebra of the four-dimensional Clifford algebra $\mathrm{Cl}_{1,3}$, is eight-dimensional. The conformal rotor algebra is four times larger. This is the quantitative content of the Poincaré article's remark that any enlargement forced by the translations must be strictly larger than $\mathbb{B}$.
 
-**The Clifford-group interpretation, and dilations without a Weyl field.** The six-dimensional embedding is sometimes stated as its own result: the conformal group of four-dimensional spacetime *emerges as a subgroup of the Clifford group* [Castro and Pavšič, "Clifford Algebra of Spacetime and the Conformal Group," Int. J. Theor. Phys. **42** (2003) 1693, arXiv:hep-th/0203194]. The standard part is the bivector count of a six-generator algebra: the four vector generators and two extra slots, a pseudoscalar and a scalar, the pair carrying signature $(-1,+1)$. The bivectors of two vector slots give the six Lorentz generators; those mixing a vector slot with an extra one give the four translations and the four special conformal generators; the bivector of the two extra slots gives the dilation — fifteen in all, the same $\mathrm{Cl}_{2,4}$ statement as above. The authors' own comment is that this "might look mathematically trivial". What the reference adds is where that six-dimensional space sits: it is the subspace of the Clifford space spanned by those six generators, with coordinates $(\xi_\mu,\xi_5,\xi_6)$ replacing $(x_\mu,\check\sigma,\sigma)$ (written $\eta_a$ in the reference; the letter $\eta$ is kept here for the metric), so that the conformal group acts *linearly* on it and, on the cone $\sum_{a,b}g_{ab}\xi_a\xi_b=0$ with $g=\mathrm{diag}(+1,-1,-1,-1,-1,+1)$, reproduces the conformal transformations of Minkowski space. The remaining polyvector coordinates — the bivectors $x_{\mu\nu}$ and the pseudovectors $\check x_\mu$ — lie outside that subspace and take no part.
+**The Clifford-group interpretation, and dilations without a Weyl field.** The six-dimensional embedding is sometimes stated as its own result: the conformal group of four-dimensional spacetime *emerges as a subgroup of the Clifford group* [Castro and Pavšič, "Clifford Algebra of Spacetime and the Conformal Group," Int. J. Theor. Phys. **42** (2003) 1693, arXiv:hep-th/0203194]. The standard part is the bivector count of a six-generator set $e_a=(\gamma_\mu,\gamma_5,1)$, the four vectors together with the pseudoscalar and the scalar unit, of signature $(-1,+1)$ in the last two slots. The bivectors of two vector slots give the six Lorentz generators, $M_{\mu\nu}=-\tfrac{i}{4}[\gamma_\mu,\gamma_\nu]$; those mixing a vector slot with the two extra ones give the translations $P_\mu=L_{5\mu}+L_{6\mu}=\tfrac12\gamma_\mu(1-i\gamma_5)$ and the special conformal generators $L_{5\mu}-L_{6\mu}=\tfrac12\gamma_\mu(1+i\gamma_5)$; and the bivector of the two extra slots gives the dilation, $D=L_{65}=-\tfrac12\gamma_5$ — fifteen in all, the same $\mathrm{Cl}_{2,4}$ statement as above. One caution belongs to that last one: a commutator with the identity vanishes, so $L_{65}=-\tfrac{i}{4}[1,\gamma_5]$ has to be read with the antisymmetrised product of the unit, $[1,\gamma_5]\mapsto2\gamma_5$, and it is not the zero that the literal bracket would give. The authors' own comment on the construction is that it "might look mathematically trivial". What the reference adds is where that six-dimensional space sits: it is the subspace of the Clifford space spanned by those six generators, its coordinates $(\eta^\mu,\eta^5,\eta^6)$ — the source's $(x^\mu,\check s,s)$, with $\check s$ the pseudoscalar and $s$ the scalar coordinate — renamed $(\xi_\mu,\xi_5,\xi_6)$ here, so that the conformal group acts *linearly* on it and, on the cone $\sum_{a,b}g_{ab}\xi_a\xi_b=0$ with $g=\mathrm{diag}(+1,-1,-1,-1,-1,+1)$, reproduces the conformal transformations of Minkowski space. The remaining polyvector coordinates — the bivectors $x_{\mu\nu}$ and the pseudovectors $\check x_\mu$ — lie outside that subspace and take no part.
 
-The same passage adds, and this is **speculative**, a **physical interpretation** of the dilations: the authors argue that extended objects in this arena change size "in the absence of forces and the Weyl gauge field of dilations", moving dilationally *because of inertia* rather than because a compensating gauge field has been introduced, citing Pavšič's own earlier work. That is a proposal about why scale changes occur, not a derivation, and it is recorded here as the programme's claim, not as a result of the algebra.
+The same passage adds, and this is **speculative**, a **physical interpretation** of the dilations: the authors argue that an extended object in this arena changes size "as a result of free motion, without presence of any forces or such fields as assumed in Weyl theory", moving dilationally *because of inertia* rather than because a compensating gauge field has been introduced, and they cite their own earlier work for the proposal. That is a proposal about why scale changes occur, not a derivation, and it is recorded here as the programme's claim, not as a result of the algebra.
 
 **Twistors.** A third realization uses the same vector space as the algebra but a different structure. The double cover $SU(2,2)$ of the conformal group acts linearly on twistor space $T=S\oplus\bar{S}\cong\mathbb{C}^4$. As complex vector spaces, $T$ and $\mathbb{B}$ are both $\mathbb{C}^4$; but the form that $SU(2,2)$ preserves is a **Hermitian** form of signature $(2,2)$, whereas the biquaternion norm $\langle\cdot\rangle_{\natural}$ is a complex **symmetric bilinear** form. The spaces agree; the forms do not. This is the precise sense in which the conformal group, when it acts on the same four-dimensional vector space, enters as the **$*$-unitary** group of a form and not as the **unit** group of a norm — a different kind of group from the one the framework uses. The companion article on twistors develops this in full, with the incidence relation and the Klein correspondence; the point here is only that the twistor realization does not place the conformal group inside $\mathbb{B}$, it places it on $\mathbb{B}$ read as a new module with a new form.
 
@@ -218,8 +220,13 @@ The same passage adds, and this is **speculative**, a **physical interpretation*
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here only as the dictionary to the matrix formulation; no gamma name is used before this section.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde Q=a\tilde Q$ and $R_b\tilde Q=\tilde Q b$, and a cell is their product $L_aR_b:\tilde Q\mapsto a\tilde Q b$. The five frame cells are
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde Q=a\tilde Q$ and $R_b\tilde Q=\tilde Q b$, and a cell is their product $L_aR_b:\tilde Q\mapsto a\tilde Q b$. Two cells multiply by multiplying the left factors and the right factors separately,
+$$
+L_aR_b\,L_cR_d=L_{ac}R_{db},
+$$
+the right factors meeting in the reverse order. A general two-sided operator is a sum of the sixteen cells $L_{e_\mu}R_{e_\nu}$, with $C(M)$ its $4\times4$ coefficient matrix and $\ell(M)=\operatorname{rank}C(M)$ its length. A single cell $L_aR_b$ is a pure tensor of rank one; the pure tensors form the seven-dimensional cone $\{\operatorname{rank}C(M)\le1\}$, and a general operator is a sum of at most four of them.
 
+The five frame cells are
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\qquad
 \gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad
@@ -230,21 +237,35 @@ $$
 \gamma_5=-iL_{e_t}R_{\vec e_z}.
 $$
 
-The factors of $i$ are reduced by $i^2=-1$; the five cells satisfy
+The factors of $i$ are reduced by $i^2=-1$ before a product is read, so a product of two frame cells is a plain cell, with no $i$ left in it:
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}e_t,\qquad \mu,\nu=0,1,2,3,
+\gamma_0\gamma_1=i^2L_{\vec e_x}R_{\vec e_y\vec e_x}=-L_{\vec e_x}R_{-\vec e_z}=+L_{\vec e_x}R_{\vec e_z}.
 $$
-with $g=\mathrm{diag}(+1,-1,-1,-1)$, and
+The same collapse gives the squares and the Clifford relations, with $I_4=L_{e_t}R_{e_t}$ the identity cell, the algebra's unit read as an operator on the module,
 $$
-\gamma_5^2=e_t,\qquad
-\{\gamma_5,\gamma_\mu\}=0\quad(\mu=0,1,2,3),\qquad
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5.
+\gamma_0^2=I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=I_4,
 $$
-The Clifford metric $g$ is the negative of the interval $\eta$; the two are fixed by the same frame and must not be interchanged.
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad \{\gamma_5,\gamma_\mu\}=0,\qquad \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5.
+$$
+The Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ is the negative of the interval $\eta$; the two are fixed by the same frame and must not be interchanged.
 
-A single cell $L_aR_b$ is a pure tensor: in the basis of the sixteen products its coefficient matrix $c(M)$ has rank one. The pure tensors form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, a general element is a sum of at most four of them, and the length is $\ell(M)=\operatorname{rank}c(M)$.
+**What the frame carries of the conformal algebra.** The six bivectors $\gamma_\mu\gamma_\nu$ with $\mu<\nu$ close under the commutator and span the Lorentz algebra, exactly the six generators that the body places inside $\mathbb{B}$. The other nine are not bivectors of this frame: the dilation is the four-vector product $\gamma_5$ up to a phase, and the translations and special conformal generators are the vector-plus-pseudovector combinations $\tfrac12\gamma_\mu(1\mp i\gamma_5)$ quoted in the Clifford-group paragraph above. To get all fifteen as bivectors one must enlarge the generating set by the pseudoscalar and the unit, which is the six-generator construction of that paragraph. This is the dictionary's reading of the body's count.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma=-iR_{\vec e_z}$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the chirality cell $\Gamma=-iR_{\vec e_z}$: the two differ only by the left factor $L_{e_t}$, which is the identity. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, the difference of the two central idempotents of the complexified algebra, so that $\chi_{\mathrm{ad}}^2=e_t$, is a different object, represented by $\gamma_5$ on the Dirac module.
+
+**The two Dirac equations.** The cells carry the corpus's two Dirac equations, and the first of them is the equation this article's subject acts on. The **one-sided** equation is the gradient equation: every derivative acts by left multiplication, the two members are conjugate, and no chirality operator appears,
+$$
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad
+\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+$$
+with $\tilde\Psi_R$ and $\tilde\Psi_L$ the two chirality halves. At $m=0$ this is the massless field equation that the conformal generators leave invariant, and the mass term is the only obstruction to that invariance.
+
+The **two-sided** equation is the cell equation: the same dynamics on the Dirac module, with the mass carried by the right multiplication,
+$$
+\left(iL_{e_t}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}\frac{\partial}{\partial Q_k}\right)\tilde Q_{\mathrm f}-mi\,R_{\vec e_z}\overline{\tilde Q_{\mathrm f}}=0,
+$$
+where the derivative acts from the left, the mass from the right through $\vec e_z$, and $\overline{\tilde Q_{\mathrm f}}$ is the coefficient conjugate. The two share the frame but not the operator: the one-sided pair splits the field into chirality halves, while the two-sided equation is antilinear in its mass term and carries the chirality in the right multiplication $\Gamma$, not in a left factor.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -258,7 +279,7 @@ $$
 $$
 which reproduces $x_{2\mu}=(x_\mu+a_\mu x^2)/(1+2a\cdot x+a^2x^2)$.
 
-What it does not carry: the group. The algebra is eight real dimensions and its unit-norm subgroup six, against the conformal group's fifteen; the six Lorentz generators are elements of $\mathbb{B}$, the dilation is realized by a non-unit element, and its generator is a non-inner, nonzero-trace linear map; the four translations are affine and the four special conformal transformations are fractional. The transformations realized linearly or affinely on $\mathbb{M}_-$ form the eleven-dimensional similitude group, and the four remaining generators are exactly the nonlinear part. The standard homes of the full group are larger: Vahlen matrices with entries in $\mathrm{Cl}_{1,3}$ (entry algebra real dimension $16$), conformal geometric algebra in $\mathrm{Cl}_{2,4}$ (even part real dimension $32$), or $SU(2,2)$ acting on a $\mathbb{C}^4$ equipped with a signature-$(2,2)$ Hermitian form that the biquaternion norm is not. The conformal group is expressed by the algebra — by its biquaternion norm's zero set, its inverse, and its four-vector module — and is not contained in it.
+What it does not carry: the group. The algebra is eight real dimensions and its unit-norm subgroup six, against the conformal group's fifteen; the six Lorentz generators are elements of $\mathbb{B}$, the dilation is realized by a non-unit element, and its generator is a non-inner, nonzero-trace linear map; the four translations are affine and the four special conformal transformations are fractional. The transformations realized linearly or affinely on $\mathbb{M}_-$ form the eleven-dimensional similitude group, and the four remaining generators are exactly the nonlinear part. The standard homes of the full group are larger: Vahlen matrices with entries in $\mathrm{Cl}_{1,3}$ (entry algebra real dimension $16$), conformal geometric algebra in $\mathrm{Cl}_{2,4}$ (even part real dimension $32$), or $SU(2,2)$ acting on a $\mathbb{C}^4$ equipped with a signature-$(2,2)$ Hermitian form that the biquaternion norm is not. The conformal group is expressed by the algebra — by its biquaternion norm's zero set, its inverse, and its four-vector module — and is not contained in it. The operator content is carried by cells, and the frame cells with their Clifford relations and the two Dirac equations are collected in *The Gamma Formulation* and used nowhere else.
 
 ## Summary of Notation
 
@@ -284,11 +305,17 @@ What it does not carry: the group. The algebra is eight real dimensions and its 
 | $\mathrm{Cl}_{2,4}$ | Conformal embedding Clifford algebra; bivectors $\cong\mathfrak{so}(2,4)$, even part real dimension $32$ |
 | $\xi_a=(\xi_\mu,\xi_5,\xi_6)$, $g_{ab}$ | Embedding coordinates and their metric; the slot index $a$ is written low, as everywhere in the series |
 | $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})=2\langle\tilde{H}_1,\tilde{H}_2\rangle_{*}$ | Trace reading of the Hermitian form on the Hermitian sector |
-| $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
+| $c$ | Speed of light in the medium, entering $Q_t=ict'$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)=\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$ | General plain bilinear form, with $\varepsilon=(1,-1,-1,-1)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | General plain sesquilinear form; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $L_a$, $R_b$ | Left and right multiplication, $L_a\tilde Q=a\tilde Q$, $R_b\tilde Q=\tilde Q b$; a cell is $L_aR_b$ |
-| $\Gamma=-iR_{\vec e_z}$ | Chirality cell |
+| $\Gamma=-iR_{\vec e_z}$ | Chirality cell; equals $\gamma_5$ |
+| $\gamma_0,\dots,\gamma_3$, $\gamma_5$ | Frame cells of $\mathrm{Cl}_{1,3}$; confined to *The Gamma Formulation* |
+| $I_4=L_{e_t}R_{e_t}$ | Identity cell on the module |
+| $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ | Central grading of the complexified algebra, $\chi_{\mathrm{ad}}^2=e_t$; represented by $\gamma_5$ on the module |
+| $C(M)$, $\ell(M)$ | Coefficient matrix of a cell and its rank, the length |
+| $\tilde\nabla=e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\tilde\Psi_R$, $\tilde\Psi_L$, $\tilde Q_{\mathrm f}$ | Chirality halves of the one-sided equation; field of the two-sided equation |
 
 ## Further Reading
 

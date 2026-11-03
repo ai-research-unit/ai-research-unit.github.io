@@ -17,7 +17,7 @@ whose integrand is built from the biquaternion norm of the displacement biquater
 - **internal** symmetries, which do not move the spacetime point — here the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and
 - **spacetime** symmetries, the Poincaré transformations — four translations $\tilde{R}\mapsto\tilde{R}+\tilde{R}_0$ and six Lorentz transformations $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.
 
-The internal case produces a current biquaternion $\tilde{J}\in\mathbb{M}_-$ with $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, the framework form of $\sum_\mu\partial J_\mu/\partial Q_\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.
+The internal case produces a current biquaternion $\tilde{J}\in\mathbb{M}_-$ with $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$ on shell, the framework form of $\sum_\mu\partial J_\mu/\partial Q_\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.
 
 **What is established, and what is not.** Established below, and recomputed: the central-phase current of the complex biquaternion scalar field,
 
@@ -230,7 +230,7 @@ j_{5\mu} = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\,\chi\,\psi
 = \bar{\psi}\,L_{e_\mu}R_{\vec e_z\vec e_{\tau(\mu)}}\,\psi ,
 $$
 
-where the two imaginary units meet and reduce by $i\cdot(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\tau(\mu)}$ in that order, and it is not symmetric: writing the pair the other way round flips the sign of the current. The divergence is the **plain** sum of the four derivatives — the metric is already spent inside the cells, since $(iL_{e_\mu}R_{\vec e_{\tau(\mu)}})^2=g_{\mu\mu}$, so a sign vector would apply it a second time — and the mass is the obstruction:
+where the two imaginary units meet and reduce by $i\cdot(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\tau(\mu)}$ in that order, and it is not symmetric: writing the pair the other way round flips the sign of the current. The divergence is the **plain** sum of the four derivatives, since the $\natural$ in $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}$ already carries the relative sign of the spatial derivatives and no metric is applied a second time; the mass is the obstruction:
 
 $$
 \langle\tilde\nabla,\tilde J_5\rangle_{\natural} = \sum_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu} = 2im\,\bar{\psi}\,\chi\,\psi ,
@@ -379,7 +379,7 @@ the last equality being the Poynting theorem. The factor $i$ is uniform across t
 
 ### A Caution on the $ict'$ Convention
 
-The energy density is not $\mathcal{L}_\phi$ and is not obtained from it by a flat sum: for a plane wave $T_{00}=\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ while $\mathcal{L}_\phi=-\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$, with $\mu=mc/\hbar$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=ict'$; the tensor lives in $x_\mu=(ct',x,y,z)$, where the time component is real and the metric signs sit in $\eta$. Mixing the two frames produces the wrong sign on the time derivative, and the mismatch is the same $(-i)^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real frame. This is the same caution the energy–momentum exercise records for the trace.
+The energy density is not $\mathcal{L}_\phi$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ while $\mathcal{L}_\phi=-\frac{1}{c^2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$, with $\mu=mc/\hbar$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=ict'$; the tensor lives in $x_\mu=(ct',x,y,z)$, where the time component is real and the metric signs sit in $\eta$. Mixing the two frames produces the wrong sign on the time derivative, and the mismatch is the same $(-i)^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real frame. This is the same caution the energy–momentum exercise records for the trace.
 
 ## Lorentz Invariance and the Angular-Momentum Bivector
 
@@ -396,10 +396,10 @@ $$
 using $dx_\mu/d\tau = p_\mu/m$ and $dp_\mu/d\tau = 0$ for a free particle; the conservation of the six independent components is the conservation of angular momentum and of the boost charges. In the biquaternion algebra the antisymmetric pair is a **bivector**, the same representation the field strength occupies: writing
 
 $$
-\boxed{\;\vec{L} = \tfrac12\sum_{\mu,\nu}L_{\mu\nu}\,e^{\natural}_\mu e_\nu\;}
+\boxed{\;\tilde L = \tfrac12\sum_{\mu,\nu}L_{\mu\nu}\,e^{\natural}_\mu e_\nu\;}
 $$
 
-the angular momentum of a free particle is a single biquaternion. This is the same construction by which $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \tfrac12\sum_{\mu\nu}F_{\mu\nu}e^{\natural}_\mu e_\nu$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.
+the angular momentum of a free particle is a single biquaternion. The tilde rather than an arrow is deliberate: the vector part of $\tilde L$ is $L_{0k}-\tfrac12\epsilon_{kij}L_{ij}$ along $\vec e_k$, which pairs the boost charges with $\vec r\times\vec p$ and is not the three-vector of orbital angular momentum. This is the same construction by which $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \tfrac12\sum_{\mu\nu}F_{\mu\nu}e^{\natural}_\mu e_\nu$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.
 
 ### The Rank-Three Field Current
 
@@ -415,11 +415,11 @@ $$
 \sum_\mu\eta_{\mu\mu}\frac{\partial L_{\mu\nu\rho}}{\partial x_\mu} = 0
 $$
 
-expresses the symmetry of the energy–momentum tensor together with the conservation of spin. Being rank three, it is not a biquaternion and not even a single bilinear; the orbital and spin pieces separate, with the spin term vanishing for the classical scalar field. The particle bivector $\vec{L}$ above is the finite-dimensional case where the rank-two object *is* the whole story.
+expresses the symmetry of the energy–momentum tensor together with the conservation of spin. Being rank three, it is not a biquaternion and not even a single bilinear; the orbital and spin pieces separate, with the spin term vanishing for the classical scalar field. The particle bivector $\tilde L$ above is the finite-dimensional case where the rank-two object *is* the whole story.
 
 ## What Is Inherited, What Is Added, What Is Interpretation
 
-**Inherited and unchanged.** The action, the four-momentum, the four-current and its conservation $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$, the algebra, the gradient, the sectors, and the trace formula, for a state $\tilde{Ϛ}$ and a Hermitian observable $\tilde H$, $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ are those of the read list. No symbol is renamed or rederived, and the sign of the current is the one for which $\rho>0$ on a positive-frequency wave.
+**Inherited and unchanged.** The action, the four-momentum, the four-current and its conservation $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$, the algebra, the gradient, the sectors, and the trace formula, for a state $\tilde{Ϛ}$ and a Hermitian observable $\tilde H$, $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ are those of the read list. No symbol is renamed, the sign of the current is the one for which $\rho>0$ on a positive-frequency wave, and what this article adds to the list is derivation and identification, not new definitions.
 
 **Added by this article.** The derivation of the central-phase current $\tilde{J} = i[(\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi} - \tilde{\Phi}^{*}\tilde{\nabla}\tilde{\Phi}]$ from the phase symmetry of the field action, and its conservation identity; its cell form $j_\mu=\bar\psi\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\psi$ on the Dirac module, with the axial current and the chirality cell; the identification of the free-particle four-momentum as the Noether charge of translation invariance, with the corrected multi-body statement; the explicit translation multiplier $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}))$; the energy–momentum current and its packaging; and the angular-momentum bivector. These are transcriptions of the standard theorem into the algebra, with the subspace assignments the algebra supplies, not new physics.
 
@@ -431,7 +431,7 @@ expresses the symmetry of the energy–momentum tensor together with the conserv
 
 1. **The biquaternion form of the full translation current.** The energy–momentum tensor is rank two and cannot be one biquaternion. Is there a natural biquaternion-bilinear expression for the canonical $T_{\mu\nu}$ of a general biquaternion field, beyond the Maxwell case constructed in the energy–momentum exercise?
 
-2. **Spin and the angular momentum of fields.** The rank-three Lorentz current carries a spin term. Can the spin density of a biquaternion field be written as a biquaternion expression, and how does it relate to the bivector representation of angular momentum?
+2. **Spin and the angular momentum of fields.** The rank-three Lorentz current carries a spin term. Can the spin density of a biquaternion field be written as a single algebra-valued object, and how does it relate to the bivector representation of angular momentum?
 
 3. **Scale and conformal symmetry.** The massless Klein–Gordon and Maxwell actions have more symmetries than the Poincaré group. Do they have biquaternion Noether currents, and does the tracelessness of the electromagnetic energy–momentum tensor — established in the energy–momentum exercise — express one of them?
 
@@ -467,7 +467,7 @@ $$
 i\,\gamma_\mu = -L_{e_\mu}R_{\vec e_{\tau(\mu)}} ,
 $$
 
-by $i^2=-1$: multiplying a generator cell by $i$ trades it for a plain one, which is why a product of four generator cells carries $i^4=+1$ and no residual unit. Under the same identity the mass term of the two-sided equation, $-mi\,\bar F\vec e_z$ in the body, is $m\,\bar F\gamma_5$ in the frame, because $\vec e_z=i\gamma_5$ and $(-mi)(i\gamma_5)=-m\,i^2\bar F\gamma_5=+m\,\bar F\gamma_5$.
+by $i^2=-1$: multiplying a generator cell by $i$ trades it for a plain one, which is why a product of four generator cells carries $i^4=+1$ and no residual unit. Under the same identity the mass term of the two-sided equation, $-mi\,\bar F\vec e_z$ in the body, is $m\,\bar F\gamma_5$ in the frame: right multiplication by $\vec e_z$ is the cell $i\gamma_5$, so $(-mi)(i\gamma_5)\bar F=-m\,i^2\gamma_5\bar F=+m\,\gamma_5\bar F$.
 
 **The central grading.** The cell $\gamma_5$ is not the grading itself. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi_{\mathrm{ad}}$ as a central sign, while the mass of the two-sided equation is a right multiplication by the chirality cell, and the cell is the representative of the sign on the module.
 
@@ -483,13 +483,13 @@ $$
 \{\gamma_\mu,\gamma_5\}=0 ,
 $$
 
-the anticommutation with $\gamma_5$ being what makes the chirality cell the axial insertion. The first relation is the quaternion multiplication table in the frame: a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, and the central $i$ of each generator flips the sign, so the timelike cell squares to $+I_4$ and the three spatial ones to $-I_4$.
+the anticommutation with $\gamma_5$ being what makes the chirality cell the axial insertion. The first relation is the quaternion multiplication table in the frame: a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, and the central $i$ of each generator flips the sign, so the timelike cell squares to $+I_4$ and the three spatial ones to $-I_4$. The frame's metric is $g=-\eta$, and the reason is again $i^2$: each $\gamma_\mu$ is $i$ times the plain cell $L_{e_\mu}R_{\vec e_{\tau(\mu)}}$, whose own Clifford bracket is $2\eta_{\mu\nu}I_4$, so the two factors of $i$ inside the bracket turn $2\eta$ into $-2\eta$.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the plain cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the two Clifford algebras that differ by that relative $i$.
 
 ## Summary
 
-Noether's theorem in biquaternionic form joins the action of *Relativistic Mechanics in Biquaternionic Form* to the conserved current of the same article. The theorem has two forms. For an **internal** symmetry, that of the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of the complex biquaternion scalar field, the derived current is
+Noether's theorem in biquaternionic form joins the two ends that *Relativistic Mechanics in Biquaternionic Form* states separately, the free-particle action and the conserved four-current, by deriving the second from the first. The theorem has two forms. For an **internal** symmetry, that of the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of the complex biquaternion scalar field, the derived current is
 
 $$
 \tilde{J} = i\left[(\tilde{\nabla}\tilde{\Phi}^{*})\tilde{\Phi} - \tilde{\Phi}^{*}(\tilde{\nabla}\tilde{\Phi})\right] = \sum_\nu J_\nu e_\nu,
@@ -515,7 +515,7 @@ $$
 
 as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\mathrm{tot}}/dt' = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{K}_{\mathrm{f},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P\tilde R_0^{\natural}))$, with $\mathrm{Sc}(\tilde P\tilde R_0^{\natural}) = \vec k\cdot\vec R_0-\omega t'_0$.
 
-The field translation current is the canonical energy–momentum, $\sum_\mu\eta_{\mu\mu}\partial T_{\mu\nu}/\partial x_\mu = 0$ on shell in the real frame, with positive energy density $T_{00} = \frac{1}{c^2}|\partial\phi/\partial t'|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\vec{L} = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
+The field translation current is the canonical energy–momentum, $\sum_\mu\eta_{\mu\mu}\partial T_{\mu\nu}/\partial x_\mu = 0$ on shell in the real frame, with positive energy density $T_{00} = \frac{1}{c^2}|\partial\phi/\partial t'|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
 ## Summary of Notation
 
@@ -534,7 +534,7 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 | $\tilde{R} = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, in $\mathbb{M}_-$ |
 | $\tilde{R}_0\in\mathbb{M}_-$ | Constant translation (displacement) |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
-| $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation; never a generic element |
+| $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation; real energy and momentum, so in $\mathbb{M}_-$ |
 | $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$ | Four-force (proper-time derivative; not summable) |
 | $\tilde{\Phi} = \phi\,e_t\in\mathbb{C}_{\mathbb{B}}$ | Complex biquaternion scalar field |
 | $\mathcal{L} = \sum_\mu(\partial\phi^{*}/\partial Q_\mu)(\partial\phi/\partial Q_\mu) + \frac{m^2c^2}{\hbar^2}|\phi|^2$ | Field Lagrangian density, $Q$ frame |
@@ -549,8 +549,8 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 | $j_{5\mu}=\bar\psi\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\chi\,\psi=\bar\psi\,L_{e_\mu}R_{\vec e_z\vec e_{\tau(\mu)}}\psi$ | Axial current; $\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2im\bar\psi\chi\psi$ |
 | $x_\mu = (ct',x,y,z)$, $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Real frame of the energy–momentum tensor, distinct from $Q_\mu$; $\eta_{\mu\mu}=-\varepsilon_\mu$ |
 | $T_{\mu\nu} = (\partial\phi^*/\partial x_\mu)(\partial\phi/\partial x_\nu) + (\partial\phi/\partial x_\mu)(\partial\phi^*/\partial x_\nu) - \eta_{\mu\nu}\mathcal{L}_\phi$ | Canonical energy–momentum, real frame |
-| $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Maxwell energy–momentum (time row), in $\mathbb{M}_+$; $\tilde{\nabla}\tilde{W}=-\tilde{\mathcal F}$ |
-| $L_{\mu\nu} = x_\mu p_\nu - x_\nu p_\mu$, $\vec{L} = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$ | Angular momentum and its bivector |
+| $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Maxwell energy–momentum (time row), in $\mathbb{M}_+$; $\mathrm{Sc}(\tilde\nabla\tilde W)=\frac{i}{c}\vec J\cdot\vec E$ |
+| $L_{\mu\nu} = x_\mu p_\nu - x_\nu p_\mu$, $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$ | Angular momentum and its bivector |
 | $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, in $\mathbb{M}_-$; plane-wave phase $\mathrm{Sc}(\tilde P\tilde R^{\natural}) = \vec k\cdot\vec x-\omega t'$ |
 | $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_0^{\natural}))$, $\mathrm{Sc}(\tilde P\tilde R_0^{\natural})=\vec k\cdot\vec R_0-\omega t'_0$ | Central translation multiplier on a plane wave, of unit modulus |
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ | Trace formula of the informational sector, $\tilde H$ Hermitian |

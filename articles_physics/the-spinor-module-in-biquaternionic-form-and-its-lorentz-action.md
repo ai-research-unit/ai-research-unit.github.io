@@ -205,7 +205,7 @@ $$
 \text{right-handed:}\quad \varphi \;\longmapsto\; \mathsf{M}_2(\bar{\tilde U}^{\mathrm{lor}})\,\varphi=(g^{\dagger})^{-1}\varphi,
 $$
 
-where $\bar{\tilde U}^{\mathrm{lor}}=(\tilde U^{\mathrm{lor}}{}^{*})^{\natural}$ is the **coefficientwise complex conjugate** of the biquaternion, written with the corpus's complex conjugation $\bar{\cdot}$, and $g^{\dagger}$ is the conjugate transpose of $g$. The star alone is the Hermitian conjugation of the algebra, whose matrix is $g^{\dagger}$; the bar is the coefficient conjugation, whose matrix is $\bar g$. The second action is the conjugate of the first: since $\tilde U^{\mathrm{lor}}\mapsto\bar{\tilde U}^{\mathrm{lor}}$ is an automorphism of $SL(2,\mathbb{C})$, the assignment is a genuine representation. Its matrix is
+where $\bar{\tilde U}^{\mathrm{lor}}=(\tilde U^{\mathrm{lor}}{}^{*})^{\natural}$ is the **coefficientwise complex conjugate** of the biquaternion, written with the corpus's complex conjugation $\bar{\cdot}$, and $g^{\dagger}$ is the conjugate transpose of $g$. The star alone is the Hermitian conjugation of the algebra; the bar is the coefficient conjugation, and its matrix is **not** the entrywise conjugate $\bar g$, because the realization carries $-i$ in its quaternion part and conjugating the coefficients therefore twists the Pauli part as well. The second action is the conjugate of the first — since $\tilde U^{\mathrm{lor}}\mapsto\bar{\tilde U}^{\mathrm{lor}}$ is an automorphism of $SL(2,\mathbb{C})$, the assignment is a genuine representation — and its matrix is
 
 $$
 \mathsf{M}_2(\bar{\tilde U}^{\mathrm{lor}}) = \epsilon^{-1}\bar{g}\,\epsilon = (g^{\dagger})^{-1},
@@ -375,7 +375,7 @@ The **compact subgroup** $SU(2)\subset SL(2,\mathbb{C})$ consists of the unit-no
 
 ## Bilinear Pairings and the Vector Representation
 
-The spinor module carries three pairings — two on $S$ and one between the two chiral halves — and one equivariant bilinear map to the algebra. They are the algebraic ancestors of the Dirac bilinears. Each is invariant under a **different** subgroup — $\varepsilon$ and the mixed pairing under all of $SL(2,\mathbb{C})$, the Hermitian form $h$ only under the compact $SU(2)$, the indefinite form $[\,\cdot\,|\,\cdot\,]$ only under $SU(1,1)$ — and that assignment is what organises the section.
+The spinor module carries four pairings — three on $S$ and one between the two chiral halves — and one equivariant bilinear map to the algebra. They are the algebraic ancestors of the Dirac bilinears. What distinguishes them is the subgroup that leaves each invariant: $\varepsilon$ and the mixed pairing under all of $SL(2,\mathbb{C})$, the Hermitian form $h$ only under the compact $SU(2)$, the indefinite form $[\,\cdot\,|\,\cdot\,]$ only under $SU(1,1)$. Three of those groups are proper subgroups of $SL(2,\mathbb{C})$, and the two of them that are not conjugate — $SU(2)$ compact, $SU(1,1)$ non-compact — cannot be traded for one another by a change of basis, so the four forms are genuinely four and not one form in four costumes.
 
 ### The Symplectic Form
 
@@ -721,7 +721,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | $L_a$, $R_b$, $L_aR_b$ | Left, right and two-sided cells, $X\mapsto aX$, $X\mapsto Xb$, $X\mapsto aXb$ |
 | $\Theta_{\tilde U}=L_{\tilde U}R_{\tilde U^{*}}$ | Hermitian sandwich, four-vector action |
 | $S=\mathbb{C}^2$ | Spinor module, defining representation $(\frac12,0)$ |
-| $\bar S$ | Conjugate spinor module, $(0,\frac12)$ |
+| $\bar S$ | Conjugate spinor module, $(0,\frac12)$; written $S^{\mathrm c}$ in some companion articles |
 | $\varphi\in\bar S$ | Right-handed spinor; written $\chi$ in some companion articles |
 | $\Delta=S\oplus\bar S$ | Dirac spinor module |
 | $\tilde\Pi_\pm=\frac12(e_t\pm i\vec e_z)$ | Peirce idempotents |
@@ -733,7 +733,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 | $g=\mathsf{M}_2(\tilde U^{\mathrm{lor}})$ | Its matrix, $\det g=1$ |
 | $\varepsilon(\psi,\phi)=\psi_1\phi_2-\psi_2\phi_1$ | Invariant alternating form |
 | $h(\psi,\phi)=\psi^{\dagger}\phi$ | Definite Hermitian form |
-| $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite Hermitian form, $SU(1,1)$ |
+| $[u\vert v]=u^{\dagger}\sigma_3v$ | Indefinite Hermitian form invariant under $SU(1,1)$ |
 | $\varsigma_1=\sigma_3,\varsigma_2=i\sigma_2,\varsigma_3=-i\sigma_1$ | Triple with $\varsigma_i\varsigma_j=\eta_{ij}I_2-i\sum_{k,l}\varepsilon_{ijk}\eta_{kl}\varsigma_l$, $\eta=\mathrm{diag}(1,-1,-1)$; $\sigma_3\varsigma=(I_2,\sigma_1,\sigma_2)$ |
 | $\omega=i\sum_{i,j}(\sigma_3)_{ij}dz_i\wedge d\bar z_j$ | Symplectic form on $\mathbb{C}^2\oplus\bar{\mathbb{C}}^2$ |
 | $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}(\mathbb{R})$ | Even Clifford algebra |
