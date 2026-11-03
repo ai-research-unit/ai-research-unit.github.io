@@ -90,12 +90,12 @@ The read-list article *Chiral Fermions in the Biquaternion Framework* establishe
 The Dirac module is $\Delta = S\oplus\bar{S}$. The chirality operator is the cell
 
 $$
--iR_{\vec e_z}\psi=-iL_{e_t}R_{\vec e_z}\psi=-i\psi\vec e_z,
+-iR_{\vec e_z}^{\mathrm{pau}}\psi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\psi=-i\psi\vec e_z,
 \qquad
-(-iR_{\vec e_z})^{2}=I_4,
+(-iR_{\vec e_z}^{\mathrm{pau}})^{2}=I_4,
 $$
 
-and its representative on $\Delta$ is $\mathrm{diag}(-I_2,I_2)$. The projectors $P_L = \tfrac12(I_4+iR_{\vec e_z})$ and $P_R = \tfrac12(I_4-iR_{\vec e_z})$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $-iR_{\vec e_z}$ anticommutes with the generator cells and commutes with every even product. The Dirac mass bilinear $\bar\psi\psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L$, with $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$ the adjoint built on the time-like cell, is chirality-odd and vanishes on a state of definite chirality.
+and its representative on $\Delta$ is $\mathrm{diag}(-I_2,I_2)$. The projectors $P_L = \tfrac12(I_4+iR_{\vec e_z}^{\mathrm{pau}})$ and $P_R = \tfrac12(I_4-iR_{\vec e_z}^{\mathrm{pau}})$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $-iR_{\vec e_z}^{\mathrm{pau}}$ anticommutes with the generator cells and commutes with every even product. The Dirac mass bilinear $\bar\psi\psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L$, with $\bar\psi=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$ the adjoint built on the time-like cell, is chirality-odd and vanishes on a state of definite chirality.
 
 On the module, a chiral abelian gauge symmetry with independent charges is consistent: with
 
@@ -114,10 +114,10 @@ the covariant derivative is gauge covariant for **arbitrary** $ϙ_L, ϙ_R$, and 
 Two structural facts of that article are the hinges of this agenda. The first is that the **canonically available gauge group is vector-like**: the framework's own abelian gauge group is the $*$-unitary part of the centre, which acts as a *scalar* on $M_2(\mathbb{C})$, so every component receives the same charge. Chirality requires a non-central action. The second is that the **chiral charge operator is a module endomorphism, not an algebra element**: expanding the projectors gives
 
 $$
-Ϙ = \tfrac{ϙ_L+ϙ_R}{2}I_4 + \tfrac{ϙ_R-ϙ_L}{2}\,(-iR_{\vec e_z}),
+Ϙ = \tfrac{ϙ_L+ϙ_R}{2}I_4 + \tfrac{ϙ_R-ϙ_L}{2}\,(-iR_{\vec e_z}^{\mathrm{pau}}),
 $$
 
-and $-iR_{\vec e_z}$ is the representative on $\Delta$ of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, the difference of the two central idempotents of the complexified algebra, of square $\chi^2=e_t$; it is not an element of $\mathbb{B}$. Equivalently $Ϙ$ is the right multiplication $R_b$ with
+and $-iR_{\vec e_z}^{\mathrm{pau}}$ is the representative on $\Delta$ of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, the difference of the two central idempotents of the complexified algebra, of square $\chi^2=e_t$; it is not an element of $\mathbb{B}$. Equivalently $Ϙ$ is the right multiplication $R_b$ with
 
 $$
 b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z\in\mathbb{M}_+,
@@ -142,9 +142,9 @@ with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. Both members act on the al
 On the Dirac module the same pair is one two-sided cell equation. Writing $G_\mu$ for the generator cell of the coordinate $x_\mu=(t',x,y,z)$, with $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ and $g=\mathrm{diag}(+1,-1,-1,-1)$,
 
 $$
-G_0=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},
+G_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},
 \qquad
-G_k=iL_{e_k}R_{\vec e_y}\ \ (k=1,2,3),
+G_k=iL_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\ \ (k=1,2,3),
 \qquad
 \tau(t)=x,\quad \tau(k)=y,
 $$
@@ -167,20 +167,20 @@ $$
 =\Box .
 $$
 
-The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial_\mu$; the second is the Lorentzian metric inside $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.
+The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial_\mu$; the second is the Lorentzian metric inside $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.
 
 **The axial current.** The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field. What the mass breaks is the axial symmetry. The axial current is
 
 $$
-j_{5\mu}=\bar\psi\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\,(-iR_{\vec e_z})\,\psi
-=\bar\psi\,L_{e_\mu}R_{\vec e_z\vec e_{\tau(\mu)}}\,\psi,
+j_{5\mu}=\bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\,(-iR_{\vec e_z}^{\mathrm{pau}})\,\psi
+=\bar\psi\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{pau}}\,\psi,
 $$
 
 where the second form spends $i(-i)=+1$ and uses $R_aR_b=R_{ba}$. Its divergence is the classical identity
 
 $$
 \sum_\mu\frac{\partial j_{5\mu}}{\partial x_\mu}
-=2im\,\bar\psi\,(-iR_{\vec e_z})\,\psi,
+=2im\,\bar\psi\,(-iR_{\vec e_z}^{\mathrm{pau}})\,\psi,
 $$
 
 a plain sum, with the derivative taken in $x_\mu=(t',x,y,z)$; in the $ict'$ coordinate $Q_t$ the time slot of the current carries the factor $ic$ that the coordinate requires, so the sum is the same divergence. The cells already carry the metric, $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, so an extra $\varepsilon_\mu$ would apply it a second time. The right-hand side vanishes only at $m=0$.
@@ -265,7 +265,7 @@ The table collects the items of the agenda and sorts each into the three-way cla
 | Non-abelian construction on $\mathrm{SU}(2)$: connection, adjoint curvature with $[\mathcal{A},\mathcal{A}]$, Bianchi identity, gauge-invariant density | Established | — |
 | Available compact algebra $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, i.e. $\mathrm{U}(2)$, real dimension $4$ | Established | — |
 | Mixed reality class of the connection ($\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian; no single eigenspace) | Established gap (read list) | A declaration of the intended assignment, or a reformulation removing the mismatch |
-| Chiral structure on $\Delta$: $-iR_{\vec e_z}$, $P_{L,R}$, selection rule $ϙ_L=ϙ_R$, vector-like centre | Established | — |
+| Chiral structure on $\Delta$: $-iR_{\vec e_z}^{\mathrm{pau}}$, $P_{L,R}$, selection rule $ϙ_L=ϙ_R$, vector-like centre | Established | — |
 | $\mathrm{SU}(2)$ as the algebra of weak isospin | Established as an **algebra** only | — |
 | Chiral non-abelian gauge action ($SU(2)_L$ doublets and singlets) | Known route, **outside the $\mathbb{B}$-valued construction** | A declared carrier with $\mathrm{SU}(2)$-module structure (left doublet, right singlet), an $\mathrm{End}(\Delta)$-valued connection, and verified gauge covariance; pseudoreality shows it cannot be the left action of $\mathbb{B}$ |
 | Non-abelian matter representation (read-list open question 3) | Open, known route | Construct the $\mathrm{SU}(2)$ charge operator on the spinor module and verify covariance |
@@ -301,24 +301,24 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{e_x}R_{\vec e_y},\quad \gamma_2=iL_{e_y}R_{\vec e_y},\quad \gamma_3=iL_{e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{e_y}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 Each dictionary entry carries one factor of $i$, and every product of two entries spends $i^2=-1$. The collapse that removes the factor is
 
 $$
-i\gamma_5=i\bigl(-iR_{\vec e_z}\bigr)=R_{\vec e_z},
+i\gamma_5=i\bigl(-iR_{\vec e_z}^{\mathrm{pau}}\bigr)=R_{\vec e_z}^{\mathrm{pau}},
 \qquad
-i\gamma_\mu=i\bigl(iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\bigr)=-L_{e_\mu}R_{\vec e_{\tau(\mu)}}\quad(\mu=0,1,2,3),
+i\gamma_\mu=i\bigl(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\bigr)=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\quad(\mu=0,1,2,3),
 $$
 
 with $\tau(t)=x$ and $\tau(k)=y$, so no residual phase is carried through a product. The volume cell is the product of the four generators,
 
 $$
-\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}R_{\vec e_z}=-i\gamma_5,
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-i\gamma_5,
 $$
 
-the second equality being $\gamma_5=-iR_{\vec e_z}$ read once.
+the second equality being $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ read once.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -383,10 +383,10 @@ The two upstream items are a chiral matter representation with a declared carrie
 | $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$ | Matrix realization |
 | $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\Delta=S\oplus\bar{S}$, $\psi\in\Delta$ | Weyl modules, Dirac module, and the field on it |
 | $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_b\,L_cR_d=L_{ac}R_{db}$ | Left and right multiplication cells; the notation for operators on $\Delta$ |
-| $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, $P_L=\tfrac12(I_4+iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chirality cell and projectors |
-| $G_0=iR_{\vec e_x}$, $G_k=iL_{e_k}R_{\vec e_y}$, $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ | Generator cells and the cell Dirac operator; $(\mathbb{D}-m)\psi=0$ is the module form of the chiral pair |
-| $j_{5\mu}=\bar\psi L_{e_\mu}R_{\vec e_z\vec e_{\tau(\mu)}}\psi$, $\tau(t)=x$, $\tau(k)=y$ | Axial current; its divergence is a plain sum |
-| $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$, $\bar\psi\psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R=R_b$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$, selection rule $ϙ_L=ϙ_R$ | Dirac adjoint, chirality-odd mass bilinear, chiral charge operator as a right multiplication |
+| $-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $P_L=\tfrac12(I_4+iR_{\vec e_z}^{\mathrm{pau}})$, $P_R=\tfrac12(I_4-iR_{\vec e_z}^{\mathrm{pau}})$ | Chirality cell and projectors |
+| $G_0=iR_{\vec e_x}^{\mathrm{pau}}$, $G_k=iL_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ | Generator cells and the cell Dirac operator; $(\mathbb{D}-m)\psi=0$ is the module form of the chiral pair |
+| $j_{5\mu}=\bar\psi L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{pau}}\psi$, $\tau(t)=x$, $\tau(k)=y$ | Axial current; its divergence is a plain sum |
+| $\bar\psi=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$, $\bar\psi\psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R=R_b$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$, selection rule $ϙ_L=ϙ_R$ | Dirac adjoint, chirality-odd mass bilinear, chiral charge operator as a right multiplication |
 | $\varepsilon=\bigl(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\bigr)$, $\varepsilon g^{*}\varepsilon^{-1}=g$ | Pseudoreality intertwiner: $2\cong\bar{2}$ for $SU(2)$ |
 | $\mathrm{End}(\Delta)$ | Module endomorphisms; the home a chiral gauge connection would need |
 | $a$ | $\mathrm{SU}(2)$ adjoint index, written low; a contraction over it is an explicit sum |

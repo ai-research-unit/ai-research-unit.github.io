@@ -303,9 +303,9 @@ The transpose is the exchange of the two nilpotent coordinates, with the two ide
 
 **Against the $4\times4$ article.** There the stitch is
 $$
-R(\tilde Q)=\mathsf S\,L(\tilde Q)^{\mathsf T}\mathsf S^{-1},
+R(\tilde Q)=\mathsf P\,L(\tilde Q)^{\mathsf T}\mathsf P,
 $$
-with $\mathsf S$ the permutation of the second and third coordinates (§*The Stitch Between the Two Families*). The permutation exchanges the two tensor slots, and one of the two slots is the identity factor: $\mathsf S(\mathrm I_2\otimes A^{\mathsf T})\mathsf S^{-1}=A^{\mathsf T}\otimes\mathrm I_2$, which is $R$. On one block there is no slot left to exchange, the permutation acts as the identity, and the stitch is the plain transpose $R=A^{\mathsf T}$. The $4\times4$ statement is a transpose conjugated; the $2\times2$ statement is the transpose; the conjugation is invisible here because the two slots it swaps are one block and one identity.
+with $\mathsf P$ the permutation of the second and third coordinates (§*The Stitch Between the Two Families*). The permutation exchanges the two tensor slots, and one of the two slots is the identity factor: $\mathsf P(\mathrm I_2\otimes A^{\mathsf T})\mathsf P=A^{\mathsf T}\otimes\mathrm I_2$, which is $R$. On one block there is no slot left to exchange, the permutation acts as the identity, and the stitch is the plain transpose $R=A^{\mathsf T}$. The $4\times4$ statement is a transpose conjugated; the $2\times2$ statement is the transpose; the conjugation is invisible here because the two slots it swaps are one block and one identity.
 
 **The anti-automorphism.** The transpose is an anti-automorphism of $M_2(\mathbb{C})$:
 $$
@@ -386,13 +386,13 @@ $$
 $$
 The factors $2$ and the square are the only changes from the $2\times2$ invariants.
 
-**No axis-free basis switch remains.** The $4\times4$ article has a change matrix $S$ between the Peirce frame and the axis-free basis,
+**No axis-free basis switch remains.** The $4\times4$ article has a change matrix $C_{\Pi}$ between the Peirce frame and the axis-free basis,
 $$
-S=\frac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
+C_{\Pi}=\frac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
 \qquad
-\det S=-\tfrac14 .
+\det C_{\Pi}=-\tfrac14 .
 $$
-The matrix $S$ mixes the two Peirce pairs: its columns are the four frame vectors, and the compression keeps one pair, so $S$ has no $2\times2$ image. The $2\times2$ model is already in the matrix-unit frame: $\mathsf M_2(\tilde Q)$ is the matrix of the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, and its transpose is the matrix of the right action in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The switch of the compressed model is the identity. The only surviving exchange is the swap of the two nilpotents, $\mathcal{P}\leftrightarrow\mathcal{P}'$, which is what makes the right block the transpose of the left; that transpose is already the stitch.
+The matrix $C_{\Pi}$ mixes the two Peirce pairs: its columns are the four frame vectors, and the compression keeps one pair, so $C_{\Pi}$ has no $2\times2$ image. The $2\times2$ model is already in the matrix-unit frame: $\mathsf M_2(\tilde Q)$ is the matrix of the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, and its transpose is the matrix of the right action in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$. The switch of the compressed model is the identity. The only surviving exchange is the swap of the two nilpotents, $\mathcal{P}\leftrightarrow\mathcal{P}'$, which is what makes the right block the transpose of the left; that transpose is already the stitch.
 
 **What does not compress.** The two $4\times4$ families commute, $L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1)$, because they act on the two tensor factors. The two $2\times2$ matrices need not commute, and they are not operators on one space. The mixed trace
 $$

@@ -57,11 +57,11 @@ which carries each half to the other, with $\omega^2=1$, $\omega$ central and $\
 $$
 L_aL_b=L_{ab},\qquad R_bR_c=R_{cb},
 $$
-so the left action generates a copy of $\mathbb{H}$ and the right action the opposite algebra $\mathbb{H}^{\mathrm{opp}}$, which is isomorphic to $\mathbb{H}$ through conjugation but is a different copy. The imaginary part of each is a Lie algebra isomorphic to $\mathrm{su}(2)$; the real span of the six cells $L_{\vec e_k},R_{\vec e_k}$ is $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$, and the two $\mathrm{su}(2)$'s commute. Together the two actions generate the full endomorphism algebra,
+so the left action generates a copy of $\mathbb{H}$ and the right action the opposite algebra $\mathbb{H}^{\mathrm{opp}}$, which is isomorphic to $\mathbb{H}$ through conjugation but is a different copy. The imaginary part of each is a Lie algebra isomorphic to $\mathrm{su}(2)$; the real span of the six cells $L_{\vec e_k}^{\mathrm{pau}},R_{\vec e_k}^{\mathrm{pau}}$ is $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$, and the two $\mathrm{su}(2)$'s commute. Together the two actions generate the full endomorphism algebra,
 $$
 \boxed{\;\operatorname{span}_{\mathbb{C}}\{\,T_{a,b}:a,b\in\mathbb{B}\,\} = \operatorname{End}_{\mathbb{C}}(\mathbb{B}) \cong M_4(\mathbb{C}) \cong \mathrm{Cl}(4)\;},
 $$
-the complexified Dirac algebra, of complex dimension $16$. These statements were checked on the four-dimensional model of $\mathbb{B}$: the left and right actions commute identically, $L_{\vec e_x}L_{\vec e_y}=L_{\vec e_z}$ while $R_{\vec e_x}R_{\vec e_y}=R_{\vec e_y}R_{\vec e_x}=-R_{\vec e_z}$, each action spans a four-dimensional algebra, the six imaginary cells span a six-dimensional Lie algebra closed under the commutator, and the span of the sixteen cells $T_{a,b}$ is sixteen-dimensional, i.e. all of $M_4(\mathbb{C})$.
+the complexified Dirac algebra, of complex dimension $16$. These statements were checked on the four-dimensional model of $\mathbb{B}$: the left and right actions commute identically, $L_{\vec e_x}^{\mathrm{pau}}L_{\vec e_y}^{\mathrm{pau}}=L_{\vec e_z}^{\mathrm{pau}}$ while $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}}$, each action spans a four-dimensional algebra, the six imaginary cells span a six-dimensional Lie algebra closed under the commutator, and the span of the sixteen cells $T_{a,b}$ is sixteen-dimensional, i.e. all of $M_4(\mathbb{C})$.
 
 ## The Left-Right Symmetric Interpretation
 
@@ -107,11 +107,11 @@ L_{\tilde\nabla^{\natural}}F=m\,T_{e_t,-i\vec e_z}\bar F=m\,\chi\,\bar F,
 $$
 where $F\in\mathbb{B}$, $\bar F$ is the coefficient conjugate, and
 $$
-\chi:=T_{e_t,-i\vec e_z}=L_{e_t}R_{-i\vec e_z}=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}
+\chi:=T_{e_t,-i\vec e_z}=L_{e_t}^{\mathrm{pau}}R_{-i\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}
 $$
-is the chirality cell, with the $i$ extracted from the right multiplier since right multiplication is complex-linear, $R_{-i\vec e_z}=-iR_{\vec e_z}$, and with $L_{e_t}=I_4$ dropped in the last step. Its square is exact,
+is the chirality cell, with the $i$ extracted from the right multiplier since right multiplication is complex-linear, $R_{-i\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$, and with $L_{e_t}^{\mathrm{pau}}=I_4$ dropped in the last step. Its square is exact,
 $$
-\chi^2=(-i)^2R_{\vec e_z^{\,2}}=(-1)\cdot(-I_4)=I_4,
+\chi^2=(-i)^2R_{\vec e_z^{\,2}}^{\mathrm{pau}}=(-1)\cdot(-I_4)=I_4,
 $$
 using $i^2=-1$ and $\vec e_z^{\,2}=-e_t$; and $\chi$ anticommutes with each of the four frame cells of *The Gamma Formulation*, so it commutes with every even product of them. Those even products span eight dimensions of operators on $\mathbb{B}$, and because $\chi$ commutes with all of them $\chi$ is block diagonal for them; each of the two blocks is the full $M_2(\mathbb{C})$, so the even algebra is $\mathrm{Cl}(3)\cong\mathbb{B}\oplus\mathbb{B}$, its two summands acting on the two $\chi$-eigenspaces. That is the doubling of the first section, read inside the frame. The derivative acts on the left and the mass on the right: the two sides of the single equation are the two multiplications of the cell algebra.
 
@@ -157,7 +157,7 @@ $$
 T_a=\tau_a\,P,\qquad P=\tfrac12\bigl(1+i\,\vec e_x\vec e_y\bigr).
 $$
 
-**$P$ is a left multiplication, not a mixed cell.** It acts on the right-action factor by left multiplication, $L_P=\tfrac12\bigl(L_{e_t}+i\,L_{\vec e_x}L_{\vec e_y}\bigr)$. Left multiplication is an algebra map, so $L_{\vec e_x\vec e_y}=L_{\vec e_x}L_{\vec e_y}$, and $\vec e_x\vec e_y$ squares to $-1$, so $(iL_{\vec e_x}L_{\vec e_y})^2=i^2L_{(\vec e_x\vec e_y)^2}=(-1)(-1)=+1$ and $P^2=P$. The mixed cell $T_{\vec e_x,\vec e_y}=L_{\vec e_x}R_{\vec e_y}$ is **not** this operator and must not be substituted for it: $(iT_{\vec e_x,\vec e_y})^2=i^2L_{\vec e_x^{\,2}}R_{\vec e_y^{\,2}}=(-1)(-1)(-1)=-1$, so $\tfrac12(1+iT_{\vec e_x,\vec e_y})$ is not idempotent: it is not even Hermitian, its four eigenvalues being $\tfrac12(1\pm i)$, each twice, where a projector's would be $1$ and $0$.
+**$P$ is a left multiplication, not a mixed cell.** It acts on the right-action factor by left multiplication, $L_P=\tfrac12\bigl(L_{e_t}^{\mathrm{pau}}+i\,L_{\vec e_x}^{\mathrm{pau}}L_{\vec e_y}^{\mathrm{pau}}\bigr)$. Left multiplication is an algebra map, so $L_{\vec e_x\vec e_y}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}}L_{\vec e_y}^{\mathrm{pau}}$, and $\vec e_x\vec e_y$ squares to $-1$, so $(iL_{\vec e_x}^{\mathrm{pau}}L_{\vec e_y}^{\mathrm{pau}})^2=i^2L_{(\vec e_x\vec e_y)^2}^{\mathrm{pau}}=(-1)(-1)=+1$ and $P^2=P$. The mixed cell $T_{\vec e_x,\vec e_y}=L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ is **not** this operator and must not be substituted for it: $(iT_{\vec e_x,\vec e_y})^2=i^2L_{\vec e_x^{\,2}}^{\mathrm{pau}}R_{\vec e_y^{\,2}}^{\mathrm{pau}}=(-1)(-1)(-1)=-1$, so $\tfrac12(1+iT_{\vec e_x,\vec e_y})$ is not idempotent: it is not even Hermitian, its four eigenvalues being $\tfrac12(1\pm i)$, each twice, where a projector's would be $1$ and $0$.
 
 **The source's statement.** The $T_a$ annihilate $V_R$ and $e^-_R$ while interchanging $e^-_L$ and $V_L$ as the two isospin states, so that $\mathrm{SU}(2)_L$ acts on the left-handed particles and their right-handed antiparticles; and the mirror construction — the right action on $\omega\,\mathbb{C}\otimes\mathbb{H}$ rather than on $\mathbb{C}\otimes\mathbb{H}$ — reproduces the same picture with the roles exchanged, so that $\mathrm{SU}(2)_R$ acts on the right-handed particles and their left-handed antiparticles.
 
@@ -185,17 +185,17 @@ of dimension $16$, acting on the four-dimensional $\mathbb{B}$.
 
 The volume element of the first rung is the product of the four frame cells written in *The Gamma Formulation*,
 $$
-i\,(iL_{e_t}R_{\vec e_x})(iL_{\vec e_x}R_{\vec e_y})(iL_{\vec e_y}R_{\vec e_y})(iL_{\vec e_z}R_{\vec e_y})=-iL_{e_t}R_{\vec e_z},
+i\,(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
-where the four factors carry $i^4=1$; the left factors multiply to $e_t\vec e_x\vec e_y\vec e_z=\vec e_z\vec e_z=-e_t$, the right factors, multiplying in reverse order, to $\vec e_y\vec e_y\vec e_y\vec e_x=-\vec e_y\vec e_x=+\vec e_z$, and the outer $i$ is what makes the result $-iL_{e_t}R_{\vec e_z}$. Without the outer $i$ the product is $-R_{\vec e_z}$, whose square is $R_{\vec e_z^{\,2}}=R_{-e_t}=-I_4$; the outer $i$ turns that into $+I_4$, since $i^2=-1$.
+where the four factors carry $i^4=1$; the left factors multiply to $e_t\vec e_x\vec e_y\vec e_z=\vec e_z\vec e_z=-e_t$, the right factors, multiplying in reverse order, to $\vec e_y\vec e_y\vec e_y\vec e_x=-\vec e_y\vec e_x=+\vec e_z$, and the outer $i$ is what makes the result $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. Without the outer $i$ the product is $-R_{\vec e_z}^{\mathrm{pau}}$, whose square is $R_{\vec e_z^{\,2}}^{\mathrm{pau}}=R_{-e_t}^{\mathrm{pau}}=-I_4$; the outer $i$ turns that into $+I_4$, since $i^2=-1$.
 
 The Coxeter element of the $\mathrm{Cl}(5)$ rung is a different object. It is a single two-sided product of five generators of $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ — three from the left and the two right generators $\vec e_x,\vec e_y$, the third imaginary unit $\vec e_z$ being their product rather than a third generator — so its left factor is an element of $\mathrm{Cl}(3)$ outside $\mathbb{B}$, and it acts on eight dimensions, not four. In one ordering,
 $$
-L_{E_1}L_{E_2}L_{E_3}R_{\vec e_x}R_{\vec e_y}=L_{\omega}R_{\vec e_x}R_{\vec e_y}=L_{\omega}R_{-\vec e_z},
+L_{E_1}L_{E_2}L_{E_3}R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=L_{\omega}R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=L_{\omega}R_{-\vec e_z}^{\mathrm{pau}},
 $$
-using $R_bR_c=R_{cb}$, so that $R_{\vec e_x}R_{\vec e_y}=R_{-\vec e_z}$; a different ordering of the five factors changes the sign, which is the $\pm$ recorded in the source. Its square is
+using $R_bR_c=R_{cb}$, so that $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=R_{-\vec e_z}^{\mathrm{pau}}$; a different ordering of the five factors changes the sign, which is the $\pm$ recorded in the source. Its square is
 $$
-\bigl(L_\omega R_{-\vec e_z}\bigr)^2=L_{\omega^2}R_{(-\vec e_z)^2}=L_1R_{-e_t}=-I_8,
+\bigl(L_\omega R_{-\vec e_z}^{\mathrm{pau}}\bigr)^2=L_{\omega^2}R_{(-\vec e_z)^2}^{\mathrm{pau}}=L_1R_{-e_t}^{\mathrm{pau}}=-I_8,
 $$
 with $\omega^2=1$ and $\vec e_z^{\,2}=-e_t$. That is why the Coxeter element is not the first rung's volume cell: it multiplies by the volume element on the left and by a bivector on the right, and it acts on the algebra rather than on $\mathbb{B}$. The corpus therefore states the dictionary at the rung where it is exact and records the $\mathrm{Cl}(5)$ Coxeter element as an object of the larger algebra, which is the algebra this article already declares outside the sixteen cells.
 
@@ -278,8 +278,8 @@ Every section but this one is written in cells; here the same cells are written 
 The cells are those of the setup, $T_{a,b}=L_aR_b$ with $T_{a,b}\psi=a\psi b$ and $T_{a,b}T_{c,d}=T_{ac,db}$; $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products, and $\ell(M)=\operatorname{rank}c(M)$ its cell rank. The frame is
 $$
 \begin{aligned}
-\gamma_0&=iL_{e_t}R_{\vec e_x}, & \gamma_1&=iL_{\vec e_x}R_{\vec e_y}, & \gamma_2&=iL_{\vec e_y}R_{\vec e_y},\\
-\gamma_3&=iL_{\vec e_z}R_{\vec e_y}, & \gamma_5&=-iL_{e_t}R_{\vec e_z}=\chi .
+\gamma_0&=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, & \gamma_1&=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, & \gamma_2&=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\
+\gamma_3&=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, & \gamma_5&=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
 \end{aligned}
 $$
 Every gamma is a single cell. The single cells are the pure tensors; they form the seven-dimensional cone $\ell(M)\le1$, and a general element of the algebra is a sum of at most four of them.
@@ -294,13 +294,13 @@ $$
 Each entry is the cell rule with $i^2=-1$ and $\vec e_k^{\,2}=-e_t$. The first pair, for instance,
 $$
 \begin{aligned}
-\gamma_0\gamma_1&=i^2\,L_{e_t}L_{\vec e_x}\,R_{\vec e_x}R_{\vec e_y}=-L_{\vec e_x}R_{-\vec e_z}=+L_{\vec e_x}R_{\vec e_z},\\
-\gamma_1\gamma_0&=i^2\,L_{\vec e_x}L_{e_t}\,R_{\vec e_y}R_{\vec e_x}=-L_{\vec e_x}R_{\vec e_z},
+\gamma_0\gamma_1&=i^2\,L_{e_t}^{\mathrm{pau}}L_{\vec e_x}^{\mathrm{pau}}\,R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\\
+\gamma_1\gamma_0&=i^2\,L_{\vec e_x}^{\mathrm{pau}}L_{e_t}^{\mathrm{pau}}\,R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \end{aligned}
 $$
-since $L_{e_t}=I_4$ and $R_{\vec e_x}R_{\vec e_y}=R_{-\vec e_z}$ while $R_{\vec e_y}R_{\vec e_x}=R_{\vec e_z}$, the two right multiplications themselves anticommuting; the signs come from $i^2=-1$ in each product.
+since $L_{e_t}^{\mathrm{pau}}=I_4$ and $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=R_{-\vec e_z}^{\mathrm{pau}}$ while $R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=R_{\vec e_z}^{\mathrm{pau}}$, the two right multiplications themselves anticommuting; the signs come from $i^2=-1$ in each product.
 
-**Chirality.** $\gamma_5=-iL_{e_t}R_{\vec e_z}=\chi$ is the chirality cell of the section *The Two Dirac Equations in Cells*, and the product of the four frame cells returns it,
+**Chirality.** $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi$ is the chirality cell of the section *The Two Dirac Equations in Cells*, and the product of the four frame cells returns it,
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\chi,\qquad\text{so}\qquad i\,\gamma_0\gamma_1\gamma_2\gamma_3=\chi=\gamma_5 ,
 $$
@@ -322,7 +322,7 @@ The first fact is the doubling. The central volume element of each algebra is an
 
 The interpretations are the identification of the two summands with the two chiralities and of the two quaternion actions with $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$, the identification of the neutral state of the right-handed summand with the sterile right-handed neutrino, the assignment of the states to the Pati–Salam multiplets, and the interpretation of the volume element $\omega$ as the Higgs.
 
-The equation side is written in the article's cells: the chirality-off-diagonal pair $L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L$ and $L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R$, one equation per chirality, together with the single two-sided equation $L_{\tilde\nabla^{\natural}}F=m\chi\bar F$, in which the mass is a right multiplication by the chirality cell $\chi=-iL_{e_t}R_{\vec e_z}$, whose square is $I_4$.
+The equation side is written in the article's cells: the chirality-off-diagonal pair $L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L$ and $L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R$, one equation per chirality, together with the single two-sided equation $L_{\tilde\nabla^{\natural}}F=m\chi\bar F$, in which the mass is a right multiplication by the chirality cell $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, whose square is $I_4$.
 
 The construction's contact with the framework's ledger is that the second chirality and the sterile state are supplied by the algebra rather than added by hand, and that a sterile fermion is unconstrained by the anomaly conditions. Its open end is the same as that of the undoubled construction: the three commutator computations that would decide whether the abelian charge is a physical gauge charge, together with the choice of the supercharge sector that fixes the isospin alignment.
 
@@ -349,11 +349,11 @@ The construction, like the particle-roster one, is outside the biquaternion alge
 | $\sigma:e_i\mapsto-e_i$ | Parity automorphism; the discrete left-right symmetry; the outer exchange of the two summands |
 | $T_{a,b}=L_aR_b$ | Cell, $T_{a,b}\psi=a\psi b$, with $T_{a,b}T_{c,d}=T_{ac,db}$ |
 | $L_x,R_x$ | Left and right quaternion multiplications; commuting $\mathrm{su}(2)$'s |
-| $i\,(iL_{e_t}R_{\vec e_x})(iL_{\vec e_x}R_{\vec e_y})(iL_{\vec e_y}R_{\vec e_y})(iL_{\vec e_z}R_{\vec e_y})=-iL_{e_t}R_{\vec e_z}=\chi$ | Four-factor volume cell of the first rung, $\mathrm{Cl}(4)$; it equals the chirality cell, and squares to $I_4$ |
-| $\chi=-iL_{e_t}R_{\vec e_z}$ | Chirality cell; the mass term of the two-sided Dirac equation |
+| $i\,(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi$ | Four-factor volume cell of the first rung, $\mathrm{Cl}(4)$; it equals the chirality cell, and squares to $I_4$ |
+| $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell; the mass term of the two-sided Dirac equation |
 | $L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L$, $L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R$ | The chirality-off-diagonal pair of Dirac equations |
 | $L_{\tilde\nabla^{\natural}}F=m\chi\bar F$ | The same content as one two-sided equation |
-| $L_\omega R_{-\vec e_z}$ (one ordering) | Coxeter element of the second rung, $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}(5)$; squares to $-I_8$ |
+| $L_\omega R_{-\vec e_z}^{\mathrm{pau}}$ (one ordering) | Coxeter element of the second rung, $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}(5)$; squares to $-I_8$ |
 | $M_4(\mathbb{C})\cong\mathrm{Cl}(4)$ | First rung: the sixteen cells $T_{a,b}$ with both factors in $\mathbb{B}$, acting on the four-dimensional $\mathbb{B}$; contains $\mathrm{so}(4)\cong\mathrm{su}(2)\oplus\mathrm{su}(2)$ |
 | $\mathrm{Cl}(3)\otimes_{\mathbb{C}}(\mathbb{C}\otimes\mathbb{H})^{\mathrm{opp}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)\cong\mathrm{Cl}(6)^+$ | Algebra generated by left $\mathrm{Cl}(3)$ and right $\mathbb{C}\otimes\mathbb{H}$; dimension $32$, centre $2$ |
 | $\Omega_L=\alpha_1\alpha_2\alpha_3$, $\Omega_R$ | Composite ladder operators of the two summands; read as $W^\pm$ |

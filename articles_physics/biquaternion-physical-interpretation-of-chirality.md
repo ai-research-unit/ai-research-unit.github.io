@@ -12,7 +12,7 @@ The biquaternion algebra supplies the second sign only after one step: the centr
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The Peirce sign, the Peirce table and $S_+\cong S_-\cong S$ | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
+| The Peirce sign, the Peirce table and $S_+\cong S_-\cong S$ | [Peirce Decompositions of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The nilpotents as matrix units and the column ideals | [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring-one-idempotent-and-n-1-nilpotents.html) |
 | The simple module, $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ and $\mathbb{B}\cong S\oplus S$ | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
 | The conjugate module, its real isomorphism and its complex inequivalence | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |
@@ -24,7 +24,7 @@ The biquaternion algebra supplies the second sign only after one step: the centr
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has one simple complex module $S$, and $\mathbb{B}\cong S\oplus S$ as a left module. The Peirce idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ give the two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$, both isomorphic to $S$. The Peirce sign is the right multiplication
 
 $$
-P=R_{i\vec e_z},
+P=R_{i\vec e_z}^{\mathrm{pau}},
 \qquad
 P(s)=s\ \text{on }S_+,
 \qquad
@@ -141,14 +141,14 @@ and it is not $\mathbb{B}_{\mathbb{R}}$-linear. The mass exists as a pairing bet
 
 ## Summary
 
-Chirality is the central sign of the conjugate pair. The Peirce sign $P=R_{i\vec e_z}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades $S_+\cong S_-\cong S$; it is a copy index. The chiral sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ is the nontrivial central involution of the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$ as real algebras, and grades $S$ against $S^{\mathrm{c}}$. On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ it is $\operatorname{diag}(-I,I)$. The mass is the unique invariant sesquilinear pairing between the two halves, off-diagonal and chirality-odd; it is not a $\mathbb{B}_{\mathbb{R}}$-linear operator. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair. The central phase is vector-like on $S\oplus S$ and axial on $\Delta$, and the algebra alone does not choose between the two interpretations.
+Chirality is the central sign of the conjugate pair. The Peirce sign $P=R_{i\vec e_z}^{\mathrm{pau}}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades $S_+\cong S_-\cong S$; it is a copy index. The chiral sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ is the nontrivial central involution of the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$ as real algebras, and grades $S$ against $S^{\mathrm{c}}$. On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ it is $\operatorname{diag}(-I,I)$. The mass is the unique invariant sesquilinear pairing between the two halves, off-diagonal and chirality-odd; it is not a $\mathbb{B}_{\mathbb{R}}$-linear operator. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair. The central phase is vector-like on $S\oplus S$ and axial on $\Delta$, and the algebra alone does not choose between the two interpretations.
 
 $$
 \boxed{\;
 \chi=i\tilde\Xi_{\mathrm{ad}},\quad \chi=\operatorname{diag}(-I_2,I_2),\quad
 P_L=\tfrac12(1-\chi),\quad P_R=\tfrac12(1+\chi),\quad
 \Delta=S\oplus S^{\mathrm{c}},\quad
-P=R_{i\vec e_z}\in\mathbb{B}.
+P=R_{i\vec e_z}^{\mathrm{pau}}\in\mathbb{B}.
 \;}
 $$
 
@@ -160,7 +160,7 @@ $$
 | $S$ | the simple left $\mathbb{B}$-module, the left-handed Weyl module |
 | $S^{\mathrm{c}}$ | the conjugate module, the right-handed Weyl module |
 | $\Delta=S\oplus S^{\mathrm{c}}$ | the Dirac module |
-| $P=R_{i\vec e_z}$ | the Peirce sign, a copy index |
+| $P=R_{i\vec e_z}^{\mathrm{pau}}$ | the Peirce sign, a copy index |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | the off-diagonal nilpotent; $R_{\vec\Upsilon_x}$ is the copy flip |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two Peirce planes, both $\cong S$ |
 | $\tilde\Xi_{\mathrm{ad}}$ | the adjoined central root of $-1$ of the double, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ |

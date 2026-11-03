@@ -51,7 +51,7 @@ $$
 \tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R .
 $$
 
-It is a pair, not one equation, and the two-sided operator structure is why. The gradients act by left multiplication, and a left multiplication preserves each chiral half. The mass term must mix the halves, so it cannot be a left multiplication; it is the off-diagonal pairing $\tilde\Psi_R\leftrightarrow\tilde\Psi_L$, with the central scalar $m e_t$ as its coefficient. Chirality itself is the right multiplication $-iR_{\vec e_z}$. The mass coefficient is central and does not disturb it, but the pairing is odd under it: the mass is off-diagonal in the chiral grading, and that oddness is what the axial current later measures. That is the algebraic content of the pair: at $m=0$ it decouples into two Weyl equations, one for each chirality.
+It is a pair, not one equation, and the two-sided operator structure is why. The gradients act by left multiplication, and a left multiplication preserves each chiral half. The mass term must mix the halves, so it cannot be a left multiplication; it is the off-diagonal pairing $\tilde\Psi_R\leftrightarrow\tilde\Psi_L$, with the central scalar $m e_t$ as its coefficient. Chirality itself is the right multiplication $-iR_{\vec e_z}^{\mathrm{pau}}$. The mass coefficient is central and does not disturb it, but the pairing is odd under it: the mass is off-diagonal in the chiral grading, and that oddness is what the axial current later measures. That is the algebraic content of the pair: at $m=0$ it decouples into two Weyl equations, one for each chirality.
 
 A second form, Kravchenko's two-sided equation, is a change of representation rather than a second definition — the derivatives act from the left and the mass from the right through a conjugation — and it is not used here because it carries no continuous central phase to gauge (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*).
 
@@ -64,30 +64,30 @@ $$
 with
 
 $$
-\boldsymbol\alpha_k = L_{\vec e_k}R_{\vec e_z} ,
+\boldsymbol\alpha_k = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} ,
 \qquad
-\beta = iL_{e_t}R_{\vec e_x} = iR_{\vec e_x} ,
+\beta = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = iR_{\vec e_x}^{\mathrm{pau}} ,
 $$
 
-and $V(r) = ϙ\phi = -\kappa/r$. The two multipliers are cells of the two-sided operator algebra: $\boldsymbol\alpha_k$ is genuinely two-sided, while $\beta$ has a central left factor $e_t$, so it is the right multiplication $iR_{\vec e_x}$. What the equation uses is their algebra: four mutually anticommuting generators, each squaring to $L_{e_t}R_{e_t}$,
+and $V(r) = ϙ\phi = -\kappa/r$. The two multipliers are cells of the two-sided operator algebra: $\boldsymbol\alpha_k$ is genuinely two-sided, while $\beta$ has a central left factor $e_t$, so it is the right multiplication $iR_{\vec e_x}^{\mathrm{pau}}$. What the equation uses is their algebra: four mutually anticommuting generators, each squaring to $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$,
 
 $$
-\{\boldsymbol\alpha_i,\boldsymbol\alpha_j\} = 2\delta_{ij}\,L_{e_t}R_{e_t},
+\{\boldsymbol\alpha_i,\boldsymbol\alpha_j\} = 2\delta_{ij}\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 \{\boldsymbol\alpha_k,\beta\} = 0,
 \qquad
-\beta^2 = L_{e_t}R_{e_t},
+\beta^2 = L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 so that $(c\,\boldsymbol\alpha\cdot\vec p+\beta mc^2)^2 = c^2\vec p^{\,2}+m^2c^4$ on the free field.
 
-In this frame the four generators have the Euclidean sign pattern, every square being $+L_{e_t}R_{e_t}$. Multiplying the three $\boldsymbol\alpha_k$ by $\beta$ on both sides flips them, $\beta\boldsymbol\alpha_k\beta=-\boldsymbol\alpha_k$, so the four generators
+In this frame the four generators have the Euclidean sign pattern, every square being $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. Multiplying the three $\boldsymbol\alpha_k$ by $\beta$ on both sides flips them, $\beta\boldsymbol\alpha_k\beta=-\boldsymbol\alpha_k$, so the four generators
 
 $$
 \beta,\quad \beta\boldsymbol\alpha_1,\quad \beta\boldsymbol\alpha_2,\quad \beta\boldsymbol\alpha_3
 $$
 
-have the Lorentzian pattern instead — one square $+L_{e_t}R_{e_t}$ and three $-L_{e_t}R_{e_t}$ — and that is the frame of *The Gamma Formulation* below, where it is written in the algebra's own words. Both frames span the same $M_4(\mathbb{C})$, so nothing physical depends on which is written: the spectrum, the currents and the chiral structure are the same objects in either, the flip moving no level, so that no sign convention among the three is physical. The frame matters only in the algebra's own reading, where the two-sided cells are what carry the structure, and that reading is given once, in the gamma section.
+have the Lorentzian pattern instead — one square $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and three $-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ — and that is the frame of *The Gamma Formulation* below, where it is written in the algebra's own words. Both frames span the same $M_4(\mathbb{C})$, so nothing physical depends on which is written: the spectrum, the currents and the chiral structure are the same objects in either, the flip moving no level, so that no sign convention among the three is physical. The frame matters only in the algebra's own reading, where the two-sided cells are what carry the structure, and that reading is given once, in the gamma section.
 
 As a module over the cell algebra, $\mathbb{B}$ is the defining four-dimensional module, so reading $\tilde\Psi \in \mathbb{B}$ in the cell frame gives the four-component spinor $\psi$, and the free part of the module equation is the same chiral pair written on $\Delta$. The Coulomb term is a **central scalar**, $V(r)e_t \in \mathbb{C}_{\mathbb{B}}$, so it multiplies the field without ambiguity of order, and in this respect its placement is the same as the non-relativistic potential's.
 
@@ -298,10 +298,10 @@ the transformed left-hand side is $\lambda\,D\tilde\Psi_R$ and the transformed r
 The object the phase cannot pass through is not the mass but the algebra's real structure: a coupling built on $\flat = -{}^{*}$, which is antilinear, transforms as $(\lambda\tilde\Psi)^\flat = \lambda^{*}\tilde\Psi^\flat$, so a Majorana-type mass $m\tilde\Psi^\flat$ would acquire the factor $\exp(2iϙ\Gamma/\hbar)$ and be form-invariant only for $\lambda = \pm1$. That is a statement about the real structure, not about the linear mass term, and it belongs to the companion articles on the neutrino and on chirality. What the mass breaks is the **axial** symmetry,
 
 $$
-\sum_\mu\epsilon_\mu\,\frac{\partial j_{5\mu}}{\partial Q_\mu} = 2im\,\tilde\Psi^{\natural}\bigl(-iR_{\vec e_z}\bigr)\tilde\Psi ,
+\sum_\mu\epsilon_\mu\,\frac{\partial j_{5\mu}}{\partial Q_\mu} = 2im\,\tilde\Psi^{\natural}\bigl(-iR_{\vec e_z}^{\mathrm{pau}}\bigr)\tilde\Psi ,
 $$
 
-with $\epsilon=(1,-1,-1,-1)$ the sign vector, $-iR_{\vec e_z}$ the chirality cell — the representative on the Dirac module of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ — and $j_{5\mu}=\tilde\Psi^{\natural}G_\mu(-iR_{\vec e_z})\tilde\Psi$, where $G_\mu$ are the four cell generators of *Noether's Theorem in Biquaternionic Form*, $G_t=iL_{e_t}R_{\vec e_x}$ and $G_k=iL_{\vec e_k}R_{\vec e_y}$. These are the frame elements of *The Gamma Formulation*: $G_t$ is the $\beta$ of the Hamiltonian above, and $G_k$ is $\beta\boldsymbol\alpha_k$, the Hamiltonian's $\boldsymbol\alpha_k$ multiplied by $\beta$ — so the two frames differ by that one factor and by nothing else. The vector current is the same expression with the chirality factor omitted. The right-hand side is proportional to $m$, so the axial current is conserved only in the massless limit, while the vector current is conserved for the massive field. This was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
+with $\epsilon=(1,-1,-1,-1)$ the sign vector, $-iR_{\vec e_z}^{\mathrm{pau}}$ the chirality cell — the representative on the Dirac module of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ — and $j_{5\mu}=\tilde\Psi^{\natural}G_\mu(-iR_{\vec e_z}^{\mathrm{pau}})\tilde\Psi$, where $G_\mu$ are the four cell generators of *Noether's Theorem in Biquaternionic Form*, $G_t=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $G_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. These are the frame elements of *The Gamma Formulation*: $G_t$ is the $\beta$ of the Hamiltonian above, and $G_k$ is $\beta\boldsymbol\alpha_k$, the Hamiltonian's $\boldsymbol\alpha_k$ multiplied by $\beta$ — so the two frames differ by that one factor and by nothing else. The vector current is the same expression with the chirality factor omitted. The right-hand side is proportional to $m$, so the axial current is conserved only in the massless limit, while the vector current is conserved for the massive field. This was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
 
 The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and in the algebra reading the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\vec p \to \vec p - ϙ\vec A$ and $i\hbar\,\partial/\partial t' \to i\hbar\,\partial/\partial t' - ϙ\phi$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
 
@@ -431,22 +431,22 @@ Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}R_{\vec e_x}, &\gamma_1 &= iL_{\vec e_x}R_{\vec e_y},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}R_{\vec e_y}, &\gamma_3 &= iL_{\vec e_z}R_{\vec e_y},\\[2pt]
-\gamma_5 &= -iL_{e_t}R_{\vec e_z}.
+\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
 
-Because $L_{e_t}$ is the identity of the cell algebra, two of them collapse: $\gamma_0=iR_{\vec e_x}$, which is the $\beta$ of the Hamiltonian above, $\beta=\gamma_0$; and $\gamma_5=-iR_{\vec e_z}$, which is the chirality cell of the axial current. The remaining three are genuinely two-sided.
+Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the cell algebra, two of them collapse: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$, which is the $\beta$ of the Hamiltonian above, $\beta=\gamma_0$; and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$, which is the chirality cell of the axial current. The remaining three are genuinely two-sided.
 
-The squares use $i^2=-1$, the cell rule $L_aR_bL_cR_d=L_{ac}R_{db}$, and $\vec e_k^2=-e_t$, with $L_{e_t}R_{e_t}$ the identity of the cell algebra:
-
-$$
-\gamma_0^2=i^2L_{e_t}R_{\vec e_x\vec e_x}=-L_{e_t}R_{-e_t}=+L_{e_t}R_{e_t},
-$$
+The squares use $i^2=-1$, the cell rule $L_aR_bL_cR_d=L_{ac}R_{db}$, and $\vec e_k^2=-e_t$, with $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity of the cell algebra:
 
 $$
-\gamma_k^2=i^2L_{\vec e_k\vec e_k}R_{\vec e_y\vec e_y}=-L_{-e_t}R_{-e_t}=-L_{e_t}R_{e_t}.
+\gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x\vec e_x}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+$$
+
+$$
+\gamma_k^2=i^2L_{\vec e_k\vec e_k}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
 $$
 
 The timelike generator squares to the identity and the three spatial ones to minus the identity, so the frame has the signature $(+,-,-,-)$. The mixed products vanish for the same reason: in $\{\gamma_0,\gamma_j\}$ the left factors $e_t$ and $\vec e_j$ commute while the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, and in $\{\gamma_i,\gamma_j\}$, $i\neq j$, the right factor $\vec e_y$ is common while the left factors $\vec e_i$ and $\vec e_j$ anticommute.
@@ -455,17 +455,17 @@ One product of all four is worth writing out, because it fixes the sign of the c
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3
-= L_{e_t\vec e_x\vec e_y\vec e_z}R_{\vec e_y\vec e_y\vec e_y\vec e_x}
-= L_{-e_t}R_{\vec e_z}
-= -L_{e_t}R_{\vec e_z},
+= L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{pau}}
+= L_{-e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
+= -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
 so that
 
 $$
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}R_{\vec e_z},
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \qquad
-\gamma_5^2=+L_{e_t}R_{e_t},
+\gamma_5^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 \{\gamma_5,\gamma_\mu\}=0 .
 $$
@@ -516,8 +516,8 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\mathbb{M}_+$ | Hermitian subspace (informational): real scalar, imaginary vector |
 | $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre of the algebra |
 | $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i\vec e_k) = \sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
-| $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided multiplication by the pair $(a,b)$; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$; $\boldsymbol\alpha_k = L_{\vec e_k}R_{\vec e_z}$, $\beta = iL_{e_t}R_{\vec e_x}$ |
-| $\chi = i\tilde\Xi_{\mathrm{ad}}$, $\chi^2 = e_t$ | The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the Dirac module by the chirality cell $-iL_{e_t}R_{\vec e_z}$ |
+| $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided multiplication by the pair $(a,b)$; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$; $\boldsymbol\alpha_k = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $\beta = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ |
+| $\chi = i\tilde\Xi_{\mathrm{ad}}$, $\chi^2 = e_t$ | The central grading (the axial generator); not an element of $\mathbb{B}$, represented on the Dirac module by the chirality cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ |
 | $Q_t = ict'$, $Q_k = x_k$ | Coordinates; $t'$ the real time of the material sector |
 | $\tilde\nabla = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$ | d'Alembertian |
@@ -541,7 +541,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\Delta = S\oplus\bar S \cong \mathbb{C}^4$ | Dirac module carrying the four-component field $\psi$; its two halves are the chiralities |
 | $D = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A$ | Covariant derivative (minimal-coupling article) |
 | $\bar D = \tilde\nabla^{\natural}+\frac{iϙ}{\hbar}\tilde A^{\natural}$ | $\natural$-image of the covariant derivative; operator of the second chiral member |
-| $j_{5\mu}=\tilde\Psi^{\natural}G_\mu(-iR_{\vec e_z})\tilde\Psi$ | Axial current; $G_\mu$ the four cell generators, the vector current omitting the chirality cell |
+| $j_{5\mu}=\tilde\Psi^{\natural}G_\mu(-iR_{\vec e_z}^{\mathrm{pau}})\tilde\Psi$ | Axial current; $G_\mu$ the four cell generators, the vector current omitting the chirality cell |
 | $\psi_{\mathrm{large}}$, $\psi_{\mathrm{small}}$ | Large (upper) and small (lower) components of the four-component spinor $\psi$ (companion Pauli exercise; not the chiral pair) |
 | $\{f_\mu\}$ | Large-component functions of the finite basis; the small-component functions are their image under the balancing operator |
 | $\frac{\hbar}{2mc}\mathsf{M}_2(\mathrm{Vect}\,\tilde\nabla) = \frac{\boldsymbol\sigma\cdot\vec p}{2mc}$ | Balancing operator; the image of the large basis is the small basis (kinetic balance) |

@@ -334,14 +334,14 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a\Psi=a\Psi$ and $R_b\Psi=\Psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell: the two-sided operator of *Two-Sided Operators on the Biquaternion Algebra*. A single left multiplication is not enough — it would keep the frame inside the four-dimensional algebra, and $\mathrm{Cl}_{1,3}(\mathbb{C})$ needs the pair.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The squares follow from $i^2=-1$ and $\vec e_k^2=-e_t$:
 $$
-\gamma_0^2=i^2L_{e_t}^2R_{\vec e_x}^2=(-1)(1)(-1)=e_t,
+\gamma_0^2=i^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_x}^{\mathrm{pau}})^2=(-1)(1)(-1)=e_t,
 \qquad
-\gamma_k^2=i^2L_{\vec e_k}^2R_{\vec e_y}^2=(-1)(-1)(-1)=-e_t
+\gamma_k^2=i^2(L_{\vec e_k}^{\mathrm{pau}})^2(R_{\vec e_y}^{\mathrm{pau}})^2=(-1)(-1)(-1)=-e_t
 \quad(k=x,y,z),
 $$
 so
@@ -352,17 +352,17 @@ g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 and
 $$
-\gamma_5^2=(-i)^2L_{e_t}^2R_{\vec e_z}^2=(-1)(1)(-1)=e_t,
+\gamma_5^2=(-i)^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_z}^{\mathrm{pau}})^2=(-1)(1)(-1)=e_t,
 \qquad
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5,
 $$
-The chirality cell is therefore $\gamma_5=-iL_{e_t}R_{\vec e_z}$, the representative of chirality that the solutions article uses. The signs are those of the cell products, not a separate convention.
+The chirality cell is therefore $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the representative of chirality that the solutions article uses. The signs are those of the cell products, not a separate convention.
 
 The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers, with $L_{a}R_{b}\,L_{c}R_{d}=L_{ac}R_{db}$. The Feynman contraction is a sum of four cells, one per component, not a single cell:
 $$
 \gamma_0E-\gamma_1p_x-\gamma_2p_y-\gamma_3p_z
-=iL_{e_t}R_{\vec e_x}E
--i\left(L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z\right).
+=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}E
+-i\left(L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z\right).
 $$
 The derivative contraction is the same sum with $p_\mu\to\partial/\partial Q_\mu$.
 
@@ -420,7 +420,7 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\tilde u\tilde u^{\natural}=e_t$ | Unit real quaternion $\Leftrightarrow SU(2)$; spin rotation |
 | $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost biquaternion; $\psi$ is the rapidity |
 | $\Psi$ | Spinor-module element on which the cells act |
-| $iL_{e_t}R_{\vec e_x}E-i(L_{\vec e_x}R_{\vec e_y}p_x+L_{\vec e_y}R_{\vec e_y}p_y+L_{\vec e_z}R_{\vec e_y}p_z)$ | Feynman contraction |
+| $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}E-i(L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$ | Feynman contraction |
 | $\mathcal{H}_I$, $H_I$ | Interaction Hamiltonian density and Hamiltonian |
 | $\tilde H\in\mathbb{M}_+$, $\tilde H^{*}=\tilde H$ | One-mode Hermitian generator |
 | $S=T\exp(-i\int d^4x\,\mathcal{H}_I)$ | S-matrix; time-ordered exponential (Dyson series) |

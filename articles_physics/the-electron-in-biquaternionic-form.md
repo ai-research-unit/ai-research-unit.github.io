@@ -139,10 +139,10 @@ Four statements are worth separating.
 **The current is derived.** Given the equation, the Dirac current is conserved. The generator cell of the coordinate $x_\mu$ is
 
 $$
-G_\mu := iL_{e_\mu}R_{\vec e_{\nu(\mu)}}, \qquad \nu(t)=x,\quad \nu(k)=y,
+G_\mu := iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}, \qquad \nu(t)=x,\quad \nu(k)=y,
 $$
 
-and with the Dirac adjoint $\bar{\psi} = \psi^\dagger G_0 = \psi^\dagger(iR_{\vec e_x})$ the current is the bilinear
+and with the Dirac adjoint $\bar{\psi} = \psi^\dagger G_0 = \psi^\dagger(iR_{\vec e_x}^{\mathrm{pau}})$ the current is the bilinear
 
 $$
 j_\mu = \bar{\psi}\,G_\mu\,\psi .
@@ -159,7 +159,7 @@ and its conservation reads $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde{J}) = 0$, 
 **The value and sign of the charge are inserted.** Nothing in the algebra fixes $e$, explains why charge is quantised, or explains why the electron and the proton have equal and opposite charge. The equation with $ϙ = -e$ and the equation with $ϙ = +e$ have the same form, related by $\tilde{A}\to-\tilde{A}$; the labelling of which branch is the electron is a convention. Charge conjugation makes this explicit: the equation admits the antisymmetric cell
 
 $$
-C = -iL_{\vec e_y}R_{\vec e_z},\qquad C^{T} = -C,\qquad C^2 = -e_t,\qquad
+C = -iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\qquad C^{T} = -C,\qquad C^2 = -e_t,\qquad
 C\,G_\mu^{T}C^{-1} = -G_\mu\quad(\mu=0,1,2,3),
 $$
 
@@ -273,7 +273,7 @@ $$
 
 half the reduced Compton wavelength $386.2$ fm. These are the standard values, reconfirmed numerically in the companion article on the Zitterbewegung.
 
-The framework's temptation is to read the trembling as the observable face of the complexification — positive- and negative-energy components being the two sectors. The companion article tests that identification and refutes it: the energy-sign projector is built from $\beta = iR_{\vec e_x} = iL_{e_t}R_{\vec e_x}$, an *odd* Clifford element, outside the even subalgebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, while the sector projectors are built from Hermitian conjugation, internal to $\mathbb{B}$; the two splittings are also splittings of different objects (the spinor module and the algebra). What survives is a relation of scale and phase: at rest the trembling frequency is exactly twice the rest-energy sector-rotation frequency $m_ec^2/\hbar$, because the trembling phase is the square of the free-evolution phase. For the electron this means that its rest energy sets both the rate at which the sectors rotate into one another and the frequency of the trembling, without the trembling being an informational-sector effect.
+The framework's temptation is to read the trembling as the observable face of the complexification — positive- and negative-energy components being the two sectors. The companion article tests that identification and refutes it: the energy-sign projector is built from $\beta = iR_{\vec e_x}^{\mathrm{pau}} = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, an *odd* Clifford element, outside the even subalgebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, while the sector projectors are built from Hermitian conjugation, internal to $\mathbb{B}$; the two splittings are also splittings of different objects (the spinor module and the algebra). What survives is a relation of scale and phase: at rest the trembling frequency is exactly twice the rest-energy sector-rotation frequency $m_ec^2/\hbar$, because the trembling phase is the square of the free-evolution phase. For the electron this means that its rest energy sets both the rate at which the sectors rotate into one another and the frequency of the trembling, without the trembling being an informational-sector effect.
 
 ## The Two Chiralities
 
@@ -283,17 +283,17 @@ $$
 \tilde\Psi = \tilde\Psi_L + \tilde\Psi_R, \qquad \tilde\Psi_L\in S,\quad \tilde\Psi_R\in S^{\mathrm{c}},
 $$
 
-each a two-component Weyl spinor. The decomposition is expressed by the chirality cell $-iR_{\vec e_z} = -iL_{e_t}R_{\vec e_z}$, the operator $\psi\mapsto -i\,e_t\,\psi\,\vec e_z$: it anticommutes with every generator,
+each a two-component Weyl spinor. The decomposition is expressed by the chirality cell $-iR_{\vec e_z}^{\mathrm{pau}} = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the operator $\psi\mapsto -i\,e_t\,\psi\,\vec e_z$: it anticommutes with every generator,
 
 $$
-\big(-iR_{\vec e_z}\big)\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)
-= -\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)\big(-iR_{\vec e_z}\big),
+\big(-iR_{\vec e_z}^{\mathrm{pau}}\big)\big(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\big)
+= -\big(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\big)\big(-iR_{\vec e_z}^{\mathrm{pau}}\big),
 $$
 
 and therefore commutes with every Clifford-even element, the biquaternion subalgebra among them. Its square uses $i^2=-1$ and $\vec e_z^2=-e_t$,
 
 $$
-\big(-iR_{\vec e_z}\big)^2 = (-i)^2R_{\vec e_z^2} = (-1)(-e_t) = e_t ,
+\big(-iR_{\vec e_z}^{\mathrm{pau}}\big)^2 = (-i)^2R_{\vec e_z^2}^{\mathrm{pau}} = (-1)(-e_t) = e_t ,
 $$
 
 so it is a grading. The massless equation splits into two independent Weyl equations, one per chirality; the mass term couples them, which is the same statement as the chirality-mixing of the mass section.
@@ -316,7 +316,7 @@ Two structural points and two cautions.
 | Spin states, observables, expectation values | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 | Spin magnitude $\hbar/2$ | Represented | normalisation of $S_k = \tfrac{\hbar}{2}i\vec e_k$ |
 | Tree-level $g=2$, $\vec\mu_e = -(e/m_e)\vec S$ | Derived (conditional) | $1/2m_e$ coefficient from the mass term plus minimal coupling |
-| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde{J}) = 0$ |
+| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu = \bar{\psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde{J}) = 0$ |
 | Coulomb field $\tilde{F}\in\mathbb{M}_+$ | Derived (from Maxwell) | point-charge solution; purely imaginary vector |
 | Mass term couples the two chiral halves $S$ and $S^{\mathrm{c}}$, off-diagonally | Derived | off-diagonal chiral pair; Weyl decomposition |
 | Two-sided single-equation form | Derived (dictionary) | the real-linear dictionary $F\in\mathbb{B}$; a change of representation, not of physics |
@@ -341,12 +341,12 @@ The sections above are written in cells; this section writes the same cells as g
 Each gamma is a single cell $T_{a,b}=L_aR_b$, a pure tensor, and a general element of $M_4(\mathbb{C})$ is a sum of at most four such cells.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
-$\gamma_5$ is the cell of the chirality operator $\Gamma:\psi\mapsto -i\,e_t\,\psi\,\vec e_z = -iR_{\vec e_z}$, which acts on the Dirac module. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, where $\tilde\Xi_{\mathrm{ad}}$ is the central root of $-1$ that complexifies the real subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{H}_{\mathbb{B}}$ ($\tilde\Xi_{\mathrm{ad}}^2=-1$, $[\tilde\Xi_{\mathrm{ad}},i]=0$), is the difference of the two central idempotents of the complexified algebra, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-1)=e_t$. The grading $\chi$ is central and belongs to the algebra, $\Gamma$ is its representative on the module, and $\gamma_5$ is that representative written as a cell.
+$\gamma_5$ is the cell of the chirality operator $\Gamma:\psi\mapsto -i\,e_t\,\psi\,\vec e_z = -iR_{\vec e_z}^{\mathrm{pau}}$, which acts on the Dirac module. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, where $\tilde\Xi_{\mathrm{ad}}$ is the central root of $-1$ that complexifies the real subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{H}_{\mathbb{B}}$ ($\tilde\Xi_{\mathrm{ad}}^2=-1$, $[\tilde\Xi_{\mathrm{ad}},i]=0$), is the difference of the two central idempotents of the complexified algebra, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-1)=e_t$. The grading $\chi$ is central and belongs to the algebra, $\Gamma$ is its representative on the module, and $\gamma_5$ is that representative written as a cell.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The generator cells $G_\mu$ of the charge section are these gammas, $G_\mu=\gamma_\mu$, and the charge-conjugation cell is $C = -iL_{\vec e_y}R_{\vec e_z} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The generator cells $G_\mu$ of the charge section are these gammas, $G_\mu=\gamma_\mu$, and the charge-conjugation cell is $C = -iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
 
 **The identities the bodies cite.** Here $\mathrm{tr}$ is the $4\times4$ matrix trace, $I_4$ the identity of $M_4(\mathbb{C})$, $g=\mathrm{diag}(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$.
 
@@ -400,7 +400,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y=\vec e_z$ cyclically |
 | $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Cells, $T_{a,b}\psi=a\psi b$; $T_{a,b}T_{c,d}=T_{ac,db}$ |
-| $G_\mu = iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | Generator cell of $x_\mu$, with $\nu(t)=x$, $\nu(k)=y$ |
+| $G_\mu = iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ | Generator cell of $x_\mu$, with $\nu(t)=x$, $\nu(k)=y$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\natural$, $\bar{\cdot}$, ${}^{*}$ | Quaternion, complex, Hermitian conjugations; $\tilde Q^*=\overline{\tilde Q^\natural}$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
@@ -409,8 +409,8 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\Box = \tilde\nabla\tilde\nabla^\natural = \sum_\mu\partial^2/\partial Q_\mu^2$ | Central d'Alembertian; $Q_t=ict'$ |
 | $\Delta = S\oplus S^{\mathrm{c}}$, $S$, $S^{\mathrm{c}}$ | Dirac module and its two chiral halves |
 | $\tilde{\Psi}$, $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Biquaternion Dirac field; the algebra's real structure (not the mass term) |
-| $\chi = i\tilde\Xi_{\mathrm{ad}}$, $\Gamma = -iR_{\vec e_z}$ | Central chirality grading, $\chi^2=e_t$; its representative on the module |
-| $C = -iL_{\vec e_y}R_{\vec e_z}$ | Charge-conjugation cell, $C^{T}=-C$, $C^2=-e_t$, $CG_\mu^{T}C^{-1}=-G_\mu$ |
+| $\chi = i\tilde\Xi_{\mathrm{ad}}$, $\Gamma = -iR_{\vec e_z}^{\mathrm{pau}}$ | Central chirality grading, $\chi^2=e_t$; its representative on the module |
+| $C = -iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Charge-conjugation cell, $C^{T}=-C$, $C^2=-e_t$, $CG_\mu^{T}C^{-1}=-G_\mu$ |
 | $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Spin-state idempotent in $\mathbb{M}_+$ |
 | $\mathrm{Sc}$, $\mathrm{Vect}$ | Scalar and vector parts of an algebra element |
 | $\langle\tilde Q\rangle_\natural = \tilde Q\tilde Q^\natural$ | Quaternionic norm |

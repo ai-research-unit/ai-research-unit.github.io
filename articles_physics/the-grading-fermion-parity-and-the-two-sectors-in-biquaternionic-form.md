@@ -12,11 +12,11 @@ $$
 
 with the Hermitian adjoint on the right and no second factor. The parity enters as the **sign character** $\varepsilon_x=(-1)^{\lvert x\rvert}$ of a homogeneous element, a scalar, and not as a factor of the operator. Two consequences follow at once and are used below. Every element of $\mathbb{B}$ is even, so $\varepsilon_x=+1$ on the algebra and every computation of the series is a computation with the unsigned sandwich. The signed operators of the maths corpus are maps on the full $\mathrm{Cl}_{1,3}$; on the even slot they reduce to $\Theta_x$, which is why the physics never needs them.
 
-The generators are written as cells of the biquaternion algebra acting on itself on both sides. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_aR_b\psi=a\psi b$, the four generator cells are $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\vec e_y}$, $iL_{\vec e_y}R_{\vec e_y}$ and $iL_{\vec e_z}R_{\vec e_y}$, and the chirality cell is $-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$. **Every generator cell carries one factor $i$, so a product of two carries $i^2=-1$ and a product of four carries $i^4=+1$**; the collapses below use this.
+The generators are written as cells of the biquaternion algebra acting on itself on both sides. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and $L_aR_b\psi=a\psi b$, the four generator cells are $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ and $iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, and the chirality cell is $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$. **Every generator cell carries one factor $i$, so a product of two carries $i^2=-1$ and a product of four carries $i^4=+1$**; the collapses below use this.
 
 Three facts organise the article. The first is that the dagger is **even**: it preserves the parity, so the grading is a symmetry of the Hermitian structure, and the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the corpus are its fixed and anti-fixed loci. The second is that the parity is a **scalar sign**, $\alpha(x)=\varepsilon_x x$, and that it is invisible on the algebra, because every element of $\mathbb{B}$ is even. The third is that the twist is a conjugation, by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$; it sits on the element and never on the operator, so the sandwich is the only operator the physics uses.
 
-The ambient graded algebra, the two slots, the dictionary $\vec e_x\mapsto L_{\vec e_x}R_{e_t}$ and $i\mapsto-\Omega$, and the chirality cell $-iR_{\vec e_z}=i\Omega$ are *Biquaternion Versors and the Orthogonal Group*, which also carries the Hermitian dagger, the sectors $\mathbb{M}_\pm$, the reflection and the determinants of the versors. The two sectors themselves, and their physical reading, are developed in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, built on *Introduction to the Biquaternion Universe*. The fermionic mode and $(-1)^F=i\vec e_z$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the parity of the state space, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$, is *The Fermionic Fock Space in Biquaternionic Form*. The graded bracket built on this parity is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*. The abstract algebra of the signed forms is the maths pair *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, cited for the ambient theory and not used as operators here.
+The ambient graded algebra, the two slots, the dictionary $\vec e_x\mapsto L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $i\mapsto-\Omega$, and the chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}=i\Omega$ are *Biquaternion Versors and the Orthogonal Group*, which also carries the Hermitian dagger, the sectors $\mathbb{M}_\pm$, the reflection and the determinants of the versors. The two sectors themselves, and their physical reading, are developed in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, built on *Introduction to the Biquaternion Universe*. The fermionic mode and $(-1)^F=i\vec e_z$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the parity of the state space, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$, is *The Fermionic Fock Space in Biquaternionic Form*. The graded bracket built on this parity is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*. The abstract algebra of the signed forms is the maths pair *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, cited for the ambient theory and not used as operators here.
 
 ## The Grading of the Ambient Algebra
 
@@ -31,9 +31,9 @@ $$
 \text{odd}\cdot\text{odd}=\text{even},
 $$
 
-that is, the parity of a product is the sum of the parities. The generator cells $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ are odd; the bivectors $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}=-L_{e_\mu}L_{e_\nu}R_{\vec e_{\nu(\mu)}}R_{\vec e_{\nu(\nu)}}$ and the volume element are even; the square $(iL_{e_\mu}R_{\vec e_{\nu(\mu)}})^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
+that is, the parity of a product is the sum of the parities. The generator cells $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ are odd; the bivectors $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}=-L_{e_\mu}^{\mathrm{pau}}L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}$ and the volume element are even; the square $(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}})^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
 
-Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a Clifford algebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector, and this is why the parity sign of the section after next is invisible in it.
 
@@ -85,7 +85,7 @@ The sign $\varepsilon_x=(-1)^{\lvert x\rvert}$ is usually introduced as the abst
 **Theorem (the grade involution is a conjugation).** The volume element of $\mathrm{Cl}_{1,3}$ is
 
 $$
-\Omega=iL_{e_t}R_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}=-R_{\vec e_z}=-L_{e_t}R_{\vec e_z}.
+\Omega=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\,iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 Then $\Omega^2=-1$, $\Omega$ commutes with the even slot and anticommutes with every generator, and for every homogeneous $x$
@@ -96,7 +96,7 @@ $$
 
 Under the dictionary $i\mapsto-\Omega$, the same statement reads: the grade involution is the conjugation by $-\Omega$, the image of the central scalar imaginary.
 
-**Proof.** The four factors of $\Omega$ carry $i^4=+1$. On the left, $L_{e_t}L_{\vec e_x}L_{\vec e_y}L_{\vec e_z}=L_{\vec e_x\vec e_y\vec e_z}=L_{-e_t}=-I$, because $\vec e_x\vec e_y=\vec e_z$ and $\vec e_z^2=-e_t$. On the right, $R_{\vec e_x}R_{\vec e_y}R_{\vec e_y}R_{\vec e_y}=R_{\vec e_y^3\vec e_x}=R_{\vec e_z}$ — the right multipliers compose in the reverse order, $R_aR_b=R_{ba}$ — because $\vec e_y^3=-\vec e_y$ and $-\vec e_y\vec e_x=\vec e_z$. Hence $\Omega=-R_{\vec e_z}$, and $\Omega^2=-1$. Moving one generator $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ past the four factors of $\Omega$ costs the sign $(-1)^{3}=-1$: it anticommutes with the three factors other than its own square and commutes with that square. Hence $\Omega\,(iL_{e_\mu}R_{\vec e_{\nu(\mu)}})=-(iL_{e_\mu}R_{\vec e_{\nu(\mu)}})\,\Omega$ for every generator, and $\Omega^{-1}=-\Omega$ because $\Omega^2=-1$. A monomial of $k$ generators therefore satisfies $\Omega x=(-1)^{k}x\Omega$. Every element of $\mathbb{B}$ is a sum of monomials of even $k$, so $\Omega$ commutes with it, and the conjugation is the identity on the even slot.
+**Proof.** The four factors of $\Omega$ carry $i^4=+1$. On the left, $L_{e_t}^{\mathrm{pau}}L_{\vec e_x}^{\mathrm{pau}}L_{\vec e_y}^{\mathrm{pau}}L_{\vec e_z}^{\mathrm{pau}}=L_{\vec e_x\vec e_y\vec e_z}=L_{-e_t}^{\mathrm{pau}}=-I$, because $\vec e_x\vec e_y=\vec e_z$ and $\vec e_z^2=-e_t$. On the right, $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=R_{\vec e_y^3\vec e_x}^{\mathrm{pau}}=R_{\vec e_z}^{\mathrm{pau}}$ — the right multipliers compose in the reverse order, $R_aR_b=R_{ba}$ — because $\vec e_y^3=-\vec e_y$ and $-\vec e_y\vec e_x=\vec e_z$. Hence $\Omega=-R_{\vec e_z}^{\mathrm{pau}}$, and $\Omega^2=-1$. Moving one generator $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ past the four factors of $\Omega$ costs the sign $(-1)^{3}=-1$: it anticommutes with the three factors other than its own square and commutes with that square. Hence $\Omega\,(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}})=-(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}})\,\Omega$ for every generator, and $\Omega^{-1}=-\Omega$ because $\Omega^2=-1$. A monomial of $k$ generators therefore satisfies $\Omega x=(-1)^{k}x\Omega$. Every element of $\mathbb{B}$ is a sum of monomials of even $k$, so $\Omega$ commutes with it, and the conjugation is the identity on the even slot.
 
 **Remark (the sign is a scalar, not a factor of the operator).** The grade involution acts on the element, $\alpha(x)=\varepsilon_x x$, and $\varepsilon_x=\pm1$. It therefore never multiplies a sandwich: multiplying the parameter by $\varepsilon_x$ multiplies the sandwich by the same scalar, and on the algebra $\varepsilon_x=+1$ identically. The parity is a property of the parameter, which the operator may report as a sign, and not a second operator.
 
@@ -151,7 +151,7 @@ verified for all four generators and on even samples: the form on the fermionic 
 
 The odd slot is where the parity sign is visible, and the simplest odd elements are the generators, which are the vectors of Minkowski space. The Hermitian interpretation of the reflection count is therefore a statement about the action of the Hermitian sandwich on them.
 
-**Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $\bigl(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\bigr)^{*}=-iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, so that the odd slot is where it parts company with the reversion: on a real vector $a$ the reversion is $\mathrm{rev}(a)=a$ while $a^{*}=-a$. The corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ therefore holds on the even slot and picks up the grade sign on the odd one, $\alpha\circ\mathrm{rev}={}^{*}\circ\sigma$. Read as arrays, the cells carry the array adjoint $\dagger$, distinct from the star, $(iL_{e_t}R_{\vec e_x})^{\dagger}=+iL_{e_t}R_{\vec e_x}$, $(iL_{\vec e_k}R_{\vec e_y})^{\dagger}=-iL_{\vec e_k}R_{\vec e_y}$ and $(-iR_{\vec e_z})^{\dagger}=-iR_{\vec e_z}$, the two marks being related by $x^{*}=S\,x^{\dagger}\,S^{-1}$ with $S=-iL_{e_t}R_{\vec e_y}$.
+**Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $\bigl(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\bigr)^{*}=-iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, so that the odd slot is where it parts company with the reversion: on a real vector $a$ the reversion is $\mathrm{rev}(a)=a$ while $a^{*}=-a$. The corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ therefore holds on the even slot and picks up the grade sign on the odd one, $\alpha\circ\mathrm{rev}={}^{*}\circ\sigma$. Read as arrays, the cells carry the array adjoint $\dagger$, distinct from the star, $(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})^{\dagger}=+iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^{\dagger}=-iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ and $(-iR_{\vec e_z}^{\mathrm{pau}})^{\dagger}=-iR_{\vec e_z}^{\mathrm{pau}}$, the two marks being related by $x^{*}=S\,x^{\dagger}\,S^{-1}$ with $S=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$.
 
 **Proposition (the vector identity).** Let $a,v$ be real vectors of the Minkowski space of the envelope, with $q$ the quadratic form, $B$ its polar form, $a^2=q(a)$ and $av+va=2B(a,v)$, and let $\rho_a(v)=v-2B(a,v)a/q(a)$ be the reflection. Then
 
@@ -161,7 +161,7 @@ $$
 
 *Proof.* $\Theta_a(v)=a\,v\,a^{*}=a\,v\,(-a)=-a\,v\,a=-2B(a,v)\,a+a^{2}v=q(a)\,v-2B(a,v)\,a=q(a)\,\rho_a(v)$, using $a^{*}=-a$ on the vectors and $a^{2}=q(a)$.
 
-**Corollary (which reflection carries which sign).** The timelike generator has $q(iL_{e_t}R_{\vec e_x})=+1$ and satisfies $\Theta_{iL_{e_t}R_{\vec e_x}}=\rho_{iL_{e_t}R_{\vec e_x}}$ exactly, while the spatial generators, $(iL_{\vec e_k}R_{\vec e_y})^{2}=-1$, satisfy $\Theta_{iL_{\vec e_k}R_{\vec e_y}}=-\rho_{iL_{\vec e_k}R_{\vec e_y}}$. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the last worked case, where two odd steps compose to a rotation.
+**Corollary (which reflection carries which sign).** The timelike generator has $q(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})=+1$ and satisfies $\Theta_{iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}}=\rho_{iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}}$ exactly, while the spatial generators, $(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^{2}=-1$, satisfy $\Theta_{iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}}=-\rho_{iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}}$. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the last worked case, where two odd steps compose to a rotation.
 
 **Remark (the same statement on the algebra).** The algebra has a Euclidean Clifford structure of its own, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, with vectors the Hermitian elements $i\vec e_k$ of the informational sector; there the vector identity reads $\Theta_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
 
@@ -172,7 +172,7 @@ Several distinct $\mathbb{Z}/2$'s coexist in the framework, and the parity of th
 | structure | what it grades | an algebra grading? |
 |---|---|---|
 | Clifford parity (this article) | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, bosonic/fermionic | yes, of the ambient algebra only |
-| chirality (left/right) | the two minimal left ideals of $\mathbb{B}$, the chirality cell $-iR_{\vec e_z}$ | a $\mathbb{Z}/2$ of the module structure |
+| chirality (left/right) | the two minimal left ideals of $\mathbb{B}$, the chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$ | a $\mathbb{Z}/2$ of the module structure |
 | sector splitting $\mathbb{M}_+\oplus\mathbb{M}_-$ | the Hermitian dagger, informational/material | **no**; it is the eigen-decomposition of the dagger and grades the symmetrized product only |
 | frame grading $\beta$ | large/small components, Foldy–Wouthuysen | no; a frame-dependent split |
 | number grading $N$ | the Fock space by total particle number | a grading of the state space |
@@ -203,22 +203,22 @@ Let $x=i\vec e_x$, a boost, with $\langle x\rangle_{\natural}=-1$ and $x^{*}=x$.
 
 ### Two Fermionic Steps Compose to a Bosonic One
 
-The generators $iL_{\vec e_x}R_{\vec e_y}$ and $iL_{\vec e_y}R_{\vec e_y}$ are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, $\Theta_{iL_{\vec e_x}R_{\vec e_y}}=-\rho_{iL_{\vec e_x}R_{\vec e_y}}$ and $\Theta_{iL_{\vec e_y}R_{\vec e_y}}=-\rho_{iL_{\vec e_y}R_{\vec e_y}}$, because $q(iL_{\vec e_k}R_{\vec e_y})=-1$; the two minus signs multiply to $+1$ in the composite. The product of the two parameters reduces by $i^2=-1$,
+The generators $iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ and $iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, $\Theta_{iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}}=-\rho_{iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}}$ and $\Theta_{iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}}=-\rho_{iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}}$, because $q(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=-1$; the two minus signs multiply to $+1$ in the composite. The product of the two parameters reduces by $i^2=-1$,
 
 $$
-iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}
-=-L_{\vec e_x}L_{\vec e_y}R_{\vec e_y}R_{\vec e_y}
-=-L_{\vec e_x\vec e_y}R_{\vec e_y^2}
-=L_{\vec e_z},
+iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}
+=-L_{\vec e_x}^{\mathrm{pau}}L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}
+=-L_{\vec e_x\vec e_y}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}
+=L_{\vec e_z}^{\mathrm{pau}},
 $$
 
 so
 
 $$
-\Theta_{iL_{\vec e_x}R_{\vec e_y}}\circ\Theta_{iL_{\vec e_y}R_{\vec e_y}}=\Theta_{\vec e_z},
+\Theta_{iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}}\circ\Theta_{iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}}=\Theta_{\vec e_z},
 $$
 
-the Hermitian sandwich by the bosonic element $\vec e_z=L_{\vec e_z}R_{e_t}$: two fermionic steps have composed to a bosonic one, the reflection signs have cancelled in the product, and no correction factor is needed because the sign was never in the operator. The composite is a rotation by a quaternion unit, and the parity of the number of factors is the $\mathbb{Z}/2$ behind the split of $O(1,3)$ from $SO(1,3)$.
+the Hermitian sandwich by the bosonic element $\vec e_z=L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$: two fermionic steps have composed to a bosonic one, the reflection signs have cancelled in the product, and no correction factor is needed because the sign was never in the operator. The composite is a rotation by a quaternion unit, and the parity of the number of factors is the $\mathbb{Z}/2$ behind the split of $O(1,3)$ from $SO(1,3)$.
 
 ## The Gamma Formulation
 
@@ -227,7 +227,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
@@ -280,7 +280,7 @@ The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the gra
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$ | The graded ambient algebra; $\mathrm{Cl}^0=\mathbb{B}$ |
-| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ odd, $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}=-L_{e_\mu}L_{e_\nu}R_{\vec e_{\nu(\mu)}}R_{\vec e_{\nu(\nu)}}$ even | Generator cells fermionic, bivectors bosonic |
+| $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ odd, $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}=-L_{e_\mu}^{\mathrm{pau}}L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}$ even | Generator cells fermionic, bivectors bosonic |
 | $x^{*}=\sigma(\alpha(x^{r}))$ | The Hermitian dagger; even, anti-involution |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Fixed and anti-fixed loci of the dagger; informational and material sectors |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | The eigen-decomposition of the dagger; not an algebra grading |

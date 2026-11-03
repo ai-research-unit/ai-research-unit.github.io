@@ -1,4 +1,4 @@
-# __The Peirce Decomposition of the Biquaternion Algebra__
+# __Peirce Decompositions of the Biquaternion Algebra__
 
 ## Introduction
 
@@ -16,9 +16,9 @@ $$
 \mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t},\qquad s,t\in\{+,-\}.
 $$
 
-The family is the only input. The signs are labels of the pair. No element of a mixed line is chosen, and no basis is chosen.
+The family is the only input. The signs are labels of the pair. No element of a mixed line is chosen, and no basis is chosen. Each such family gives its own Peirce decomposition, and the algebra carries as many as it carries families; the plural in the title records this, and the article keeps the family as the variable throughout.
 
-The article defines the family and the four lines, proves that each line is one-dimensional and that the lines sum directly, computes their multiplication rule, reads the two indices that the family assigns to each line, identifies the two mixed components, records the parity of the cut, and says what the cut does not give. The choice of an element in each line and its gauge are *The Peirce Basis of the Biquaternion Algebra*; the coordinates and the spinors are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. An example is given at the end.
+The article defines the family and the four lines, proves that each line is one-dimensional and that the lines sum directly, computes their multiplication rule, reads the two indices that the family assigns to each line, identifies the two mixed components, records the parity of the cut, and says what the cut does not give. The choice of an element in each line and its gauge are *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*; the coordinates and the spinors are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. An example is given at the end.
 
 ## The Family
 
@@ -141,7 +141,7 @@ $$
 \vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-},
 $$
 
-then left multiplication by $\vec\Upsilon_{-+}$ is the inverse of left multiplication by $\vec\Upsilon_{+-}$ on $\mathbb{B}_{-+}$, and the two maps are inverse isomorphisms between $\mathbb{B}_{-+}$ and $\mathbb{B}_{++}$. Without the normalization, the pair is defined only up to reciprocal scale, and that scale is the gauge treated in *The Peirce Basis of the Biquaternion Algebra*. No basis of either line is fixed by the family.
+then left multiplication by $\vec\Upsilon_{-+}$ is the inverse of left multiplication by $\vec\Upsilon_{+-}$ on $\mathbb{B}_{-+}$, and the two maps are inverse isomorphisms between $\mathbb{B}_{-+}$ and $\mathbb{B}_{++}$. Without the normalization, the pair is defined only up to reciprocal scale, and that scale is the gauge treated in *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*. No basis of either line is fixed by the family.
 
 ## The Decomposition as a Grading
 
@@ -165,7 +165,7 @@ Here $A_{0}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{C}\tilde\Pi_{-}$ is the commuta
 
 ## What the Decomposition Does Not Give
 
-The family gives the four lines and their multiplication. It gives no element of a mixed line, no basis, no gauge and no spinor. The diagonal lines have canonical vectors, the idempotents. The mixed lines do not: each is a complex line with its zero element removed, and the choice of a point in it is an extra datum. That datum, and the freedom that remains after it, are *The Peirce Basis of the Biquaternion Algebra*.
+The family gives the four lines and their multiplication. It gives no element of a mixed line, no basis, no gauge and no spinor. The diagonal lines have canonical vectors, the idempotents. The mixed lines do not: each is a complex line with its zero element removed, and the choice of a point in it is an extra datum. That datum, and the freedom that remains after it, are *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*.
 
 ## Example: The Standard Family
 
@@ -202,7 +202,7 @@ and the other four products vanish. The standard family is Hermitian; it is one 
 
 ## Summary
 
-A nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ of two idempotents gives the four complex lines $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$, each of dimension one, with the product rule $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$. The diagonal lines are spanned by the idempotents and the mixed lines are nilpotent lines. The left and right Peirce indices are the two idempotents acting as the identity, and the mixed lines have different indices. The diagonal part is the subalgebra $\mathbb{C}\times\mathbb{C}$ and the two mixed lines are stable under multiplication by it on both sides; the cut carries a parity. The family has four real parameters and is not canonical. It fixes the four lines but no element inside a mixed line, no basis and no gauge.
+A nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ of two idempotents gives the four complex lines $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$, each of dimension one, with the product rule $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$. The diagonal lines are spanned by the idempotents and the mixed lines are nilpotent lines. The left and right Peirce indices are the two idempotents acting as the identity, and the mixed lines have different indices. The diagonal part is the subalgebra $\mathbb{C}\times\mathbb{C}$ and the two mixed lines are stable under multiplication by it on both sides; the cut carries a parity. The family has four real parameters and is not canonical. It fixes the four lines but no element inside a mixed line, no basis and no gauge. One family gives one Peirce decomposition, and the algebra carries one for each family it carries.
 
 ## Summary of Notation
 
@@ -219,7 +219,7 @@ A nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ of two idempotents
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the units, the product table, the centre and simplicity.
 - [Idempotents](idempotents.html), for the classification of the idempotents and the standard pair.
-- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the choice of an element in each line and the gauge.
+- [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the choice of an element in each line and the gauge.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the elements of the two spinor spaces.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general family.
 - [Complementary Idempotents and the Peirce Decomposition](complementary-idempotents-and-the-peirce-decomposition.html), for the complement and the general corner rule.

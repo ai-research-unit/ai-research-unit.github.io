@@ -177,7 +177,7 @@ $$
 $$
 on the algebra, and the two-sided cell equation
 $$
-(\mathbb{D}-m)\psi=0,\qquad \mathbb{D}=-R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_{k}L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial Q_k},
+(\mathbb{D}-m)\psi=0,\qquad \mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_{k}L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
 $$
 on the module. These are the two Dirac equations of the series: the pair is the one-sided statement, the cell equation is its two-sided representative, and only the second carries a chirality. The phase, and not the curvature coefficient, is the subject of the next article, and the determinant article's central/non-central distinction is what separates them. The framework's statement is that the trace anomaly is the *central* statement (a scalar coefficient multiplying curvature invariants) while the $\theta$ vacuum is the *phase* statement, and that the two are read from the same determinant.
 
@@ -235,27 +235,27 @@ The gamma symbols are used only in this section; every other section writes the 
 
 Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_aR_b$ is the two-sided cell, $L_aR_b\psi=a\psi b$. The five reference cells are
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 **The squares are uses of $i^2=-1$.** Each generator carries two factors of $i$ when it is squared, and the sign is the product of those two with the signs of the two multiplications:
 $$
-(iL_{e_t}R_{\vec e_x})^2=i^2L_{e_t}^2R_{\vec e_x}^2=(-1)(+1)(-1)=+e_t,
+(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})^2=i^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_x}^{\mathrm{pau}})^2=(-1)(+1)(-1)=+e_t,
 $$
 $$
-(iL_{\vec e_k}R_{\vec e_y})^2=i^2L_{\vec e_k}^2R_{\vec e_y}^2=(-1)(-1)(-1)=-e_t,
+(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=i^2(L_{\vec e_k}^{\mathrm{pau}})^2(R_{\vec e_y}^{\mathrm{pau}})^2=(-1)(-1)(-1)=-e_t,
 $$
-for $k=x,y,z$, so the four generators carry the metric $g=\mathrm{diag}(+1,-1,-1,-1)=-\eta$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $I_4=L_{e_t}R_{e_t}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple
+for $k=x,y,z$, so the four generators carry the metric $g=\mathrm{diag}(+1,-1,-1,-1)=-\eta$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple
 $$
-\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z},
+\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}},
 \qquad
-\gamma_5=+i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z},
+\gamma_5=+i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}},
 $$
 the sign convention in which $\gamma_5^2=+e_t$; the opposite sign is an equally good chirality and differs only by which of the two chiralities is called left.
 
-**Chirality is the right multiplication.** Because $L_{e_t}$ is the identity, $\gamma_5=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$: the chirality is a pure right multiplication, and it is the one cell the one-sided pair displayed above cannot contain, because that pair uses left multiplications only. The two-sided representative does contain it, and the chiral halves of the module decouple because it anticommutes with the operator:
+**Chirality is the right multiplication.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality is a pure right multiplication, and it is the one cell the one-sided pair displayed above cannot contain, because that pair uses left multiplications only. The two-sided representative does contain it, and the chiral halves of the module decouple because it anticommutes with the operator:
 $$
-\{\gamma_5,\mathbb{D}\}=0,\qquad \gamma_5=-iR_{\vec e_z}.
+\{\gamma_5,\mathbb{D}\}=0,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}.
 $$
 That anticommutator is the algebraic content of "only the two-sided equation carries a chirality": a cell built from left multiplications alone could not produce it.
 
@@ -287,7 +287,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
 | $\xi=(d-2)/(4(d-1))$ | Improvement coupling; $\xi=1/6$ at $d=4$ |
 | $\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Clifford trace on the Dirac module; $\operatorname{tr}e_t=4$ |
-| $\mathbb{D}=-R_{\vec e_x}\partial/\partial t'-\sum_kL_{\vec e_k}R_{\vec e_y}\partial/\partial Q_k$ | Cell Dirac operator of the module |
+| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial Q_k$ | Cell Dirac operator of the module |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients; the two-dimensional central charge is a different $c$ |
 
 ## Further Reading

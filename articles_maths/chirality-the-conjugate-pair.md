@@ -4,7 +4,7 @@
 
 **Chirality is the grading of the conjugate pair, not the sign of the Peirce decomposition.** The Peirce sign is an inner involution of the regular module; its two eigenspaces are minimal left ideals and both are isomorphic to the simple module $S$. The chiral sign is the nontrivial central involution of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$; its two eigenspaces are $S$ and its conjugate $S^{\mathrm{c}}$, which are not isomorphic. The article proves the no-go statements that separate the notions, constructs the chiral grading, identifies it with the central idempotents $\tfrac12(1\pm\chi)$, and shows that the mass is the off-diagonal invariant pairing between the two halves, not an algebra element and not a Peirce nilpotent. A section separates the one definition of spin from the three labels that sit beside it: the Peirce index, the chirality and the adjoint carrier. No Clifford algebra is used.
 
-The Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the simple module and its endomorphisms are *The Category of Modules*; the conjugate module is *Conjugate-Linear Maps and the Conjugate Dual*; the matrix model and its $\epsilon$ are *The Four Adjoints of the Biquaternion Algebra in Examples*; the invariant form of the spinor module is *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. The physical interpretation is *Biquaternion Physical Interpretation of Chirality*.
+The Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*; the simple module and its endomorphisms are *The Category of Modules*; the conjugate module is *Conjugate-Linear Maps and the Conjugate Dual*; the matrix model and its $\epsilon$ are *The Four Adjoints of the Biquaternion Algebra in Examples*; the invariant form of the spinor module is *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. The physical interpretation is *Biquaternion Physical Interpretation of Chirality*.
 
 ## The Peirce Sign
 
@@ -42,7 +42,7 @@ $$
 \vec\Upsilon_y\tilde\Pi_+=\vec\Upsilon_y.
 $$
 
-*Proof.* The table is the multiplication table of the matrix units $E_{11},E_{12},E_{21},E_{22}$ under the model $\mathsf{M}_2(\vec e_x)=-i\sigma_1$, $\mathsf{M}_2(\vec e_y)=-i\sigma_2$, $\mathsf{M}_2(\vec e_z)=-i\sigma_3$. The computation is in *The Peirce Decomposition of the Biquaternion Algebra*, and the identification of the nilpotents with the matrix units is in *The Column Ideals of a Matrix Ring*.
+*Proof.* The table is the multiplication table of the matrix units $E_{11},E_{12},E_{21},E_{22}$ under the model $\mathsf{M}_2(\vec e_x)=-i\sigma_1$, $\mathsf{M}_2(\vec e_y)=-i\sigma_2$, $\mathsf{M}_2(\vec e_z)=-i\sigma_3$. The computation is in *Peirce Decompositions of the Biquaternion Algebra*, and the identification of the nilpotents with the matrix units is in *The Column Ideals of a Matrix Ring*.
 
 **Proposition.** $P^2=\mathrm{id}$, $P$ commutes with every left multiplication, and
 
@@ -319,7 +319,7 @@ The first and the fourth rows are the same decomposition read as a right multipl
 
 ## Further Reading
 
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the two idempotents, the four Peirce lines and the multiplication table.
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the two idempotents, the four Peirce lines and the multiplication table.
 - [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](the-column-ideals-of-a-matrix-ring-one-idempotent-and-n-1-nilpotents.html), for the identification of the nilpotents with the matrix units.
 - [The Category of Modules](the-category-of-modules.html), for the simple module, $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ and the classification of left modules.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint-action reading of integer spin and the symmetric traceless tensors.

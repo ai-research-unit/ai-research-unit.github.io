@@ -184,7 +184,7 @@ $$
 \tilde Q=2Q_t\,uw,\qquad u^2=w^2=0.
 $$
 
-The idempotents, their classification and their Peirce systems are *The Peirce Decomposition of the Biquaternion Algebra*; the factorisation is recorded here because it places the non-pure zero divisors in the same Peirce framework as the pure ones.
+The idempotents, their classification and their Peirce systems are *Peirce Decompositions of the Biquaternion Algebra*; the factorisation is recorded here because it places the non-pure zero divisors in the same Peirce framework as the pure ones.
 
 **Theorem (the zero-divisor set).** The set
 
@@ -268,7 +268,7 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the complex-valued norm of the biquaternion algebra.
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the norm and its axioms.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of an algebraic norm and the separation of the four.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce factorisation of the strata.
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce factorisation of the strata.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the isomorphism $\mathsf M_2$, the determinant, the trace, the rank-one elements and the contraction of their factors.
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the topology of $\mathbb{B}^{\times}$, its maximal compact subgroup and its homotopy.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the zero-divisor set and its criterion for the general quaternionic product.

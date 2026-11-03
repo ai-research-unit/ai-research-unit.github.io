@@ -26,7 +26,7 @@ $$
 $$
 gives the canonical pion kinetic term $\tfrac12[\sum_a\big((\partial/\partial t'\,\pi_a)^2-(\nabla\pi_a)^2\big)]$ with coefficient exactly one; verified numerically. The mass term $\propto\mathrm{Tr}(M\tilde U + M^\dagger\tilde U^{*})$ gives the standard Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$, equivalently $m_\pi^2 = B_0(m_u+m_d)$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$.
 - **Interpretation.** Interpreting the pion's isospin triplet as the adjoint of the framework's material-sector $\mathrm{SU}(2)$, and the chiral field as a unit real quaternion, is the interpretive link between the framework's compact group and the pion's quantum numbers. The interpretation is exact at the level of the unbroken subgroup and is labelled where the chiral group is involved.
-- **Gap, left visible.** The framework's centre is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but no axial generator of the centre acts on the triplet. The chirality cell $\chi=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$ is a two-sided frame operator, not a central generator, so it can represent the axial vertex but does not generate a chiral symmetry. The axial currents, the anomaly and the Wess–Zumino–Witten term therefore belong to the spinor and general-gauge sectors. The chiral Lagrangian is realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
+- **Gap, left visible.** The framework's centre is vector-like: the algebra supplies the diagonal isospin $SU(2)_V$ and its adjoint action on the pion triplet, but no axial generator of the centre acts on the triplet. The chirality cell $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$ is a two-sided frame operator, not a central generator, so it can represent the axial vertex but does not generate a chiral symmetry. The axial currents, the anomaly and the Wess–Zumino–Witten term therefore belong to the spinor and general-gauge sectors. The chiral Lagrangian is realised as a geometric construction on the framework's group manifold, with the axial-current algebra and the anomaly imported from the standard treatment.
 
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone boson, the derivative couplings, the decay constant and the effective Lagrangian.
 - Companion article *The Nonlinear Sigma Model in Biquaternionic Form*, for the group-valued field, its invariant metric and its flat connection, of which this article is the chiral specialisation.
@@ -295,14 +295,14 @@ the standard isovector current of the pion triplet. The natural conjugation on t
 **The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the cell that carries the vertex. The frame cells are
 
 $$
-C_\mu = iL_{e_\mu}R_{\vec e_{\nu(\mu)}} ,
+C_\mu = iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} ,
 \qquad \nu(t)=x,\quad \nu(k)=y ,
 $$
 
-so that the timelike cell collapses to a single right multiplication, $C_t=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x}$, while the three spatial ones keep both factors, $C_k=iL_{\vec e_k}R_{\vec e_y}$. The bare cell $\beta_\mu=L_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the same product without the central $i$, so $C_\mu=i\beta_\mu$. The chirality cell is
+so that the timelike cell collapses to a single right multiplication, $C_t=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$, while the three spatial ones keep both factors, $C_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The bare cell $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ is the same product without the central $i$, so $C_\mu=i\beta_\mu$. The chirality cell is
 
 $$
-\chi=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
 \qquad
 \chi^2=e_t ,
 $$
@@ -311,10 +311,10 @@ where $L_X\psi=X\psi$ and $R_X\psi=\psi X$ for $X\in\mathbb{B}$. Two cells multi
 
 $$
 j_{5\mu a} = \bar q\,C_\mu\,\chi\,\frac{\tau_a}{2}q
-= \bar q\,L_{e_\mu}R_{\vec e_z\vec e_{\nu(\mu)}}\,\frac{\tau_a}{2}q ,
+= \bar q\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,\frac{\tau_a}{2}q ,
 $$
 
-since $C_\mu\chi=i\beta_\mu\,(-iR_{\vec e_z})=\beta_\mu R_{\vec e_z}=L_{e_\mu}R_{\vec e_{\nu(\mu)}}R_{\vec e_z}$ and the last two right multipliers compose as $\vec e_z\vec e_{\nu(\mu)}$, with $\vec e_z\vec e_x=\vec e_y$ and $\vec e_z\vec e_y=-\vec e_x$. The axial vertex is therefore the frame cell with $\vec e_z\vec e_{\nu(\mu)}$ as its right multiplier, and no second imaginary unit survives.
+since $C_\mu\chi=i\beta_\mu\,(-iR_{\vec e_z}^{\mathrm{pau}})=\beta_\mu R_{\vec e_z}^{\mathrm{pau}}=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ and the last two right multipliers compose as $\vec e_z\vec e_{\nu(\mu)}$, with $\vec e_z\vec e_x=\vec e_y$ and $\vec e_z\vec e_y=-\vec e_x$. The axial vertex is therefore the frame cell with $\vec e_z\vec e_{\nu(\mu)}$ as its right multiplier, and no second imaginary unit survives.
 
 **The chiral pair behind the current.** The axial vertex is two-sided because the fermion has two chiral halves. On the spinor module the two chiral halves obey the pair
 
@@ -331,7 +331,7 @@ In the isospin limit the divergence is the mass bilinear,
 $$
 \langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural}
 = \frac{m_u+m_d}{2}\,\bar q\,i\chi\,\tau_a q
-= \frac{m_u+m_d}{2}\,\bar q\,R_{\vec e_z}\tau_a q ,
+= \frac{m_u+m_d}{2}\,\bar q\,R_{\vec e_z}^{\mathrm{pau}}\tau_a q ,
 $$
 
 and at the level of the chiral Lagrangian it is proportional to the pion field itself,
@@ -362,7 +362,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 **The trace fixes the normalisation.** The kinetic term's coefficient is fixed by $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, and the framework's plain form, read as the trace pairing, supplies it. The framework therefore contributes the normalisation in which $f_\pi$ appears, and hence the normalisation in which the GOR relation and the PCAC matrix element are written. This is the same role the trace plays in every bilinear of the series.
 
-**The chiral group's axial half is not supplied.** The framework's centre is vector-like, and the algebra contains no axial generator of the centre acting on the pion triplet. The isospin $SU(2)_V$ is realised as the diagonal of the two-sided action, the adjoint cell $L_{g_V}R_{g_V^{*}}$; the axial $SU(2)_A$ is not. The chirality cell $\chi=-iR_{\vec e_z}$ is a two-sided frame operator, not a central generator, so it can represent the axial vertex but does not generate a symmetry. The consequence is that the chiral Lagrangian is available to the framework as a geometric object and as a theory of the unbroken isospin current, while the axial current, the anomaly, the Wess–Zumino–Witten term and the flavour-singlet $\eta_{\mathrm s}$ mass are imported. This is the same boundary that the companion articles on chiral fermions and on the Standard Model agenda draw for the spinor sector, seen here from the pion side.
+**The chiral group's axial half is not supplied.** The framework's centre is vector-like, and the algebra contains no axial generator of the centre acting on the pion triplet. The isospin $SU(2)_V$ is realised as the diagonal of the two-sided action, the adjoint cell $L_{g_V}R_{g_V^{*}}$; the axial $SU(2)_A$ is not. The chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ is a two-sided frame operator, not a central generator, so it can represent the axial vertex but does not generate a symmetry. The consequence is that the chiral Lagrangian is available to the framework as a geometric object and as a theory of the unbroken isospin current, while the axial current, the anomaly, the Wess–Zumino–Witten term and the flavour-singlet $\eta_{\mathrm s}$ mass are imported. This is the same boundary that the companion articles on chiral fermions and on the Standard Model agenda draw for the spinor sector, seen here from the pion side.
 
 ## Open Questions
 
@@ -385,12 +385,12 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four of them, at least $\operatorname{rank}c(M)$ in number.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The four frame cells multiply to $\gamma_0\gamma_1\gamma_2\gamma_3=-i\chi$, so $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ spends one more $i$ and returns $\chi$: the two imaginary units give $i\cdot(-i)=1$, and the fifth cell is the chirality cell of the body, not a sixth one.
 
-Each of the four is one factor of $i$ times a bare cell of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{e_\mu}R_{\vec e_{\nu(\mu)}}$; the fifth is not of that form, being the chirality cell itself, $\gamma_5=\chi=-iR_{\vec e_z}$. Nothing in the body needs the gammas: they are its own cells with the $i$ made explicit. The bare cells anticommute with the body's metric, $\{\beta_a,\beta_b\}=2\eta_{ab}I_4$ with $\eta=\mathrm{diag}(-1,+1,+1,+1)$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per cell flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per cell, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — with $\tilde\Xi_{\mathrm{ad}}$ a central root of $-e_t$, so $\chi_{\mathrm{ad}}^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+Each of the four is one factor of $i$ times a bare cell of the body, $\gamma_\mu=i\beta_\mu$ with $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$; the fifth is not of that form, being the chirality cell itself, $\gamma_5=\chi=-iR_{\vec e_z}^{\mathrm{pau}}$. Nothing in the body needs the gammas: they are its own cells with the $i$ made explicit. The bare cells anticommute with the body's metric, $\{\beta_a,\beta_b\}=2\eta_{ab}I_4$ with $\eta=\mathrm{diag}(-1,+1,+1,+1)$: $\beta_t^2=-I_4$ while $\beta_k^2=+I_4$. The one $i$ per cell flips that square, $\gamma_t^2=-\beta_t^2=+I_4$, and leaves the three spatial signs alone, so the gammas anticommute with the negative metric, $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=-\eta$. The difference between the two signatures is therefore exactly one factor of $i$ per cell, spent as $i^2=-1$, and the signs that remain are the quaternion squares $\vec e_k^2=-e_t$. The central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — with $\tilde\Xi_{\mathrm{ad}}$ a central root of $-e_t$, so $\chi_{\mathrm{ad}}^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -476,7 +476,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $B_0 = -\langle\bar qq\rangle/f_\pi^2$ | Condensate scale parameter |
 | $m_\pi^2 = B_0(m_u+m_d)$, $m_\pi^2f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$ | Pion mass and the Gell-Mann–Oakes–Renner relation |
 | $j_{\mu a}$, $j_{5\mu a}$ | Isospin (vector) and axial currents |
-| $C_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\beta_\mu=L_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\chi=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$ | Frame cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$; its bare form, $C_\mu=i\beta_\mu$, with $\{\beta_a,\beta_b\}=2\eta_{ab}I_4$; and the chirality cell; $L_X\psi=X\psi$, $R_X\psi=\psi X$ for $X\in\mathbb{B}$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ is a different object |
+| $C_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$ | Frame cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$; its bare form, $C_\mu=i\beta_\mu$, with $\{\beta_a,\beta_b\}=2\eta_{ab}I_4$; and the chirality cell; $L_X\psi=X\psi$, $R_X\psi=\psi X$ for $X\in\mathbb{B}$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ is a different object |
 | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | Chiral pair of the Dirac equation; the two sides are coupled only by the mass |
 | $\langle0\vert j_{5\mu a}(0)\vert\pi_b(p)\rangle = if_\pi p_\mu\delta_{ab}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural} = f_\pi m_\pi^2\pi_a$ | PCAC |

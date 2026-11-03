@@ -62,12 +62,12 @@ whose solutions, normalizations, and spin sums are established in the parent art
 The body is written in the **frame cells** of the reference frame. Write
 
 $$
-C_0:=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},\qquad
-C_k:=iL_{\vec e_k}R_{\vec e_y},\qquad
-iC_\mu=-L_{e_\mu}R_{\vec e_{\kappa(\mu)}},
+C_0:=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
+C_k:=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+iC_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}},
 $$
 
-where $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, $e_\mu$ runs over the four basis units $e_t,\vec e_x,\vec e_y,\vec e_z$ — the scalar unit for $\mu=t$ and $\vec e_k$ for $\mu=k$ — and $\kappa(t)=x$, $\kappa(k)=y$ name the spatial unit that each cell multiplies on the right. $I_4=L_{e_t}R_{e_t}$ is the identity on the module. The solutions article writes the same cells with a capital letter and an index; the letter changes, the operators do not. The cells satisfy
+where $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, $e_\mu$ runs over the four basis units $e_t,\vec e_x,\vec e_y,\vec e_z$ — the scalar unit for $\mu=t$ and $\vec e_k$ for $\mu=k$ — and $\kappa(t)=x$, $\kappa(k)=y$ name the spatial unit that each cell multiplies on the right. $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ is the identity on the module. The solutions article writes the same cells with a capital letter and an index; the letter changes, the operators do not. The cells satisfy
 
 $$
 C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4,\qquad
@@ -77,15 +77,15 @@ $$
 so $C_0^2=I_4$ and $C_k^2=-I_4$. A product of two cells carries a single minus sign and no leftover imaginary unit, because $i^2=-1$ is already in the cell:
 
 $$
-C_\mu C_\nu=i^2\,L_{e_\mu}R_{\vec e_{\kappa(\mu)}}\,L_{e_\nu}R_{\vec e_{\kappa(\nu)}}
-=-\,L_{e_\mu}R_{\vec e_{\kappa(\mu)}}\,L_{e_\nu}R_{\vec e_{\kappa(\nu)}} .
+C_\mu C_\nu=i^2\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}\,L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\kappa(\nu)}}^{\mathrm{pau}}
+=-\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}\,L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\kappa(\nu)}}^{\mathrm{pau}} .
 $$
 
 On the algebra the pair operator carries no matrix generator; on the module it is represented by the cell operator that the solutions article writes as the position-space Dirac operator:
 
 $$
 \mathbb{D}:=iC_0\frac{\partial}{\partial t'}+i\sum_k C_k\frac{\partial}{\partial Q_k}
-=-L_{e_t}R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial Q_k},
+=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
 $$
 
 with $Q_k$ running over the three spatial coordinates. Its symbol on a plane wave is the momentum cell
@@ -128,7 +128,7 @@ which says that the cell is self-adjoint for the $C_0$-twisted pairing and not f
 
 $$
 \bar{\psi}=\psi^\dagger C_0,\qquad
-C_0=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},
+C_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},
 $$
 
 the Hermitian conjugate followed by the timelike frame cell. This is the Lagrangian of a free Dirac field, with the pair operator in place of the matrix contraction.
@@ -516,19 +516,19 @@ The extension attempted here is therefore **not canonical** in the framework: th
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body:
 
 $$
-\gamma_0=C_0=iL_{e_t}R_{\vec e_x},\quad
-\gamma_1=C_1=iL_{\vec e_x}R_{\vec e_y},\quad
-\gamma_2=C_2=iL_{\vec e_y}R_{\vec e_y},\quad
-\gamma_3=C_3=iL_{\vec e_z}R_{\vec e_y}.
+\gamma_0=C_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1=C_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=C_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=C_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
 $$
 
 The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixes its sign and its cell:
 
 $$
-\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}.
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
 $$
 
-The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives; the cell that results is $-iR_{\vec e_z}$, the chirality cell of the solutions article.
+The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives; the cell that results is $-iR_{\vec e_z}^{\mathrm{pau}}$, the chirality cell of the solutions article.
 
 The pair operator of the body is the same cell operator, written in gammas:
 
@@ -538,19 +538,19 @@ $$
 \mathbb{D}_p=\gamma_0E_{\vec p}-\sum_k\gamma_kp_k,
 $$
 
-with $p_0=E_{\vec p}$ and $p_k$ the physical momentum components. Written in cells, each term $i\gamma_\mu=iC_\mu=-L_{e_\mu}R_{\vec e_{\kappa(\mu)}}$ has already spent the product $i\cdot i=-1$, so the operator is
+with $p_0=E_{\vec p}$ and $p_k$ the physical momentum components. Written in cells, each term $i\gamma_\mu=iC_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}$ has already spent the product $i\cdot i=-1$, so the operator is
 
 $$
-\mathbb{D}=-L_{e_t}R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial Q_k},
+\mathbb{D}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
 $$
 
-with no imaginary unit left in any term. The collapse removes the $i$, not the cell: $i\gamma_0=-R_{\vec e_x}\ne-I_4$, so the time derivative is multiplied by the right multiplication by $\vec e_x$, not by a number.
+with no imaginary unit left in any term. The collapse removes the $i$, not the cell: $i\gamma_0=-R_{\vec e_x}^{\mathrm{pau}}\ne-I_4$, so the time derivative is multiplied by the right multiplication by $\vec e_x$, not by a number.
 
 In the matrix representation of the frame, a single product of basis units is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$; a general element is a sum of at most four of them, and $\ell(M)=\operatorname{rank}c(M)$.
 
-The cell $\gamma_5=-iR_{\vec e_z}$ is also the module representative of the central chirality sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$: $\chi$ is the difference of the two central idempotents of the complexified algebra, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$. The sign $\chi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$; the cell is its representative on the Dirac module, not its definition.
+The cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is also the module representative of the central chirality sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$: $\chi$ is the difference of the two central idempotents of the complexified algebra, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$. The sign $\chi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$; the cell is its representative on the Dirac module, not its definition.
 
-The map from the sixteen products of the biquaternion basis to the gamma frame is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real left–right products $L_{e_\mu}R_{\vec e_{\kappa(\mu)}}$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The map from the sixteen products of the biquaternion basis to the gamma frame is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real left–right products $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the bodies cite.** In the $\gamma$ interpretation, with $\epsilon_{0123}=+1$,
 
@@ -636,11 +636,11 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger C_0$ | Dirac spinor (spinor module) and its adjoint |
 | $e_\mu$ | Basis unit: $e_t$ for $\mu=t$, $\vec e_k$ for $\mu=k$ |
 | $\kappa(\mu)$ | Right multiplier of the cell: $\kappa(t)=x$, $\kappa(k)=y$ |
-| $C_0=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x}$, $C_k=iL_{\vec e_k}R_{\vec e_y}$ | Frame cells, acting on the spinor module |
-| $C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4$ | Cell Clifford algebra, $I_4=L_{e_t}R_{e_t}$ |
+| $C_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$, $C_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Frame cells, acting on the spinor module |
+| $C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4$ | Cell Clifford algebra, $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the cells; $g=-\eta$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
-| $\mathbb{D}=iC_0\partial/\partial t'+i\sum_kC_k\partial/\partial Q_k=-R_{\vec e_x}\partial/\partial t'-\sum_kL_{\vec e_k}R_{\vec e_y}\partial/\partial Q_k$ | Pair operator on the module; $\mathbb{D}^2=\Box$ |
+| $\mathbb{D}=iC_0\partial/\partial t'+i\sum_kC_k\partial/\partial Q_k=-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial Q_k$ | Pair operator on the module; $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p=C_0E_{\vec p}-\sum_kC_kp_k$ | Momentum symbol of $\mathbb{D}$ on a plane wave; $\mathbb{D}_p^2=p^2$ |
 | $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial\psi/\partial t')=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |

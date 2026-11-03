@@ -290,7 +290,7 @@ The algebra is central simple of dimension four. The element, its three coordina
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their Cayley table and their orbits.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the subspaces the conjugations single out.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the invertibility criterion and the zero-divisor cone.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents, the Peirce decomposition and the matrix model $M_2(\mathbb{C})$.
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents, the Peirce decomposition and the matrix model $M_2(\mathbb{C})$.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix model in full.
 - [The Category of Modules](the-category-of-modules.html), for the simple modules, the classification, Schur's lemma, the intertwiners and the Morita equivalence.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.

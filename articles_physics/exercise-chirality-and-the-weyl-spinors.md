@@ -70,8 +70,8 @@ This problem works in the natural units $\hbar=c=1$; the factors of $\hbar$ and 
 **The four cells.** Write $L_a$ and $R_b$ for left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_aR_b\,L_cR_d=L_{ac}R_{db}$. The generator cells of the reference frame are
 
 $$
-C_t := iL_{e_t}R_{\vec e_x}=iR_{\vec e_x}, \qquad
-C_k := iL_{\vec e_k}R_{\vec e_y}\quad(k=x,y,z),
+C_t := iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}, \qquad
+C_k := iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=x,y,z),
 $$
 
 $C_\mu$ is the cell of the coordinate $x_\mu$. Since $e_t=1$, the timelike cell is a pure right multiplication. Each cell carries one factor of $i$, so a product of two cells spends $i^2=-1$ once. The cells satisfy
@@ -159,7 +159,7 @@ $$
 \left(i\frac{\partial}{\partial t'}+D_3\right)F - mi\,\bar F\,\vec e_z = 0, \qquad D_3=\sum_k\vec e_k\frac{\partial}{\partial Q_k},
 $$
 
-in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by $\vec e_z$. The two are related by the dictionary and are not the same operator: the mass of the pair is a scalar coupling of $S$ to $\bar S$; the mass of the two-sided equation is a conjugation together with a spatial direction. Chirality is why the second side is needed at all: left multiplication preserves each chiral half, so no left multiplication, and no sum of left multiplications, carries one chirality into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression. The chirality of the two-sided equation is the chirality cell of the frame, $-iL_{e_t}R_{\vec e_z}$, which represents the central grading of the complexification on $\Delta$; the cell is recorded in *The Gamma Formulation*.
+in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by $\vec e_z$. The two are related by the dictionary and are not the same operator: the mass of the pair is a scalar coupling of $S$ to $\bar S$; the mass of the two-sided equation is a conjugation together with a spatial direction. Chirality is why the second side is needed at all: left multiplication preserves each chiral half, so no left multiplication, and no sum of left multiplications, carries one chirality into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression. The chirality of the two-sided equation is the chirality cell of the frame, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, which represents the central grading of the complexification on $\Delta$; the cell is recorded in *The Gamma Formulation*.
 
 Three conjugations must not be confused. The coefficient conjugation $\tilde{\Psi}\mapsto\bar{\tilde{\Psi}}$ is the antilinear map that relates the defining module $S$ to its conjugate $\bar{S}$; the Hermitian star $\tilde{\Psi}^{*}=\bar{\tilde{\Psi}}^{\,\natural}$ is its composition with the quaternion conjugation; and the parent's anti-Hermitian conjugation $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ is the algebra's real structure, with fixed space $\mathbb{M}_-$. None of the three is the mass. The exercise therefore treats the mass term in the explicit Dirac module, where it is unambiguous.
 
@@ -423,7 +423,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 On the chiral pair $(\psi_L,\psi_R)$, with the left-handed block first, the same five objects are the matrices
@@ -489,7 +489,7 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\Gamma
 | $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z),\; \tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$ | Primitive orthogonal idempotents |
 | $\Gamma = \operatorname{diag}(-I_2,I_2)$ | Chirality operator on $\Delta$ |
 | $P_L = \tfrac12(I_4-\Gamma),\; P_R = \tfrac12(I_4+\Gamma)$ | Chiral projectors |
-| $C_t=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x}$, $C_k=iL_{\vec e_k}R_{\vec e_y}$ | The four generator cells of the reference frame |
+| $C_t=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$, $C_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | The four generator cells of the reference frame |
 | $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ | Three-dimensional Cauchy–Riemann operator of the two-sided equation |
 | $\psi_L\in S$, $\psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |

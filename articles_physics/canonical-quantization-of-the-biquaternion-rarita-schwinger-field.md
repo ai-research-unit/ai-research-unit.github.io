@@ -28,13 +28,13 @@ The article is organized as follows. The field and its cell are fixed first, and
 The field is a vector-spinor: four components $\psi_\mu$, each a Dirac spinor. The vector index is carried by a **cell** of the algebra, a pair of multipliers,
 
 $$
-L_{a}R_{b}\psi=a\psi b,\qquad L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db},\qquad I_4=L_{e_t}R_{e_t},
+L_{a}R_{b}\psi=a\psi b,\qquad L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db},\qquad I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
-so that a cell names both sides at once. The frame cell of the coordinate $x_\mu$ is $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, with $\nu(t)=x$ and $\nu(k)=y$: the cell $iR_{\vec e_x}$ for $\mu=t$ and the cells $iL_{\vec e_k}R_{\vec e_y}$ for $\mu=k$. The label of a cell is the coordinate index of its left multiplier, and it is written low. The four frame cells satisfy
+so that a cell names both sides at once. The frame cell of the coordinate $x_\mu$ is $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, with $\nu(t)=x$ and $\nu(k)=y$: the cell $iR_{\vec e_x}^{\mathrm{pau}}$ for $\mu=t$ and the cells $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $\mu=k$. The label of a cell is the coordinate index of its left multiplier, and it is written low. The four frame cells satisfy
 
 $$
-iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}+iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}=2g_{\mu\nu}I_4,
+iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}+iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}=2g_{\mu\nu}I_4,
 \qquad
 g=\mathrm{diag}(+1,-1,-1,-1).
 $$
@@ -42,7 +42,7 @@ $$
 The factor $i$ belongs to the cell and is not a choice: it is what makes the four cells the Clifford generators, and without it they would square to $-g_{\mu\nu}$. Where two cells meet, the two imaginary units multiply to $-1$,
 
 $$
-iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}=-L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}},
+iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}},
 $$
 
 and the collapse is written out wherever it occurs below, rather than left as a double $i$. The cells are elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$, not of $\mathbb{B}$; the frame is a coordinate choice, not a second algebra. No index is raised: because two low indices are contracted with the metric, every contraction carries the **sign vector** $\varepsilon_\mu:=g_{\mu\mu}$, with $\varepsilon_0=+1$ and $\varepsilon_k=-1$.
@@ -50,15 +50,15 @@ and the collapse is written out wherever it occurs below, rather than left as a 
 Two composites recur often enough to name once. They are sums and contractions rather than single cells, so they carry letters where no frame cell does. The first is the **pair operator** of *Operator and Calculus Conventions* read on the module, written for the derivative and for the momentum,
 
 $$
-\mathbb{D}:=-\sum_\mu\varepsilon_\mu\,L_{e_\mu}R_{\vec e_{\nu(\mu)}}\frac{\partial}{\partial x_\mu},
+\mathbb{D}:=-\sum_\mu\varepsilon_\mu\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\frac{\partial}{\partial x_\mu},
 \qquad
-\mathbb{D}_p:=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,p_\mu ,
+\mathbb{D}_p:=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,p_\mu ,
 $$
 
 with $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$; the minus sign of $\mathbb{D}$ is the product of the two imaginary units, $i\cdot i=-1$. The second is the **trace spinor** of a vector-spinor, the metric contraction of its vector index with the frame cells,
 
 $$
-\Sigma(\psi):=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi_\mu .
+\Sigma(\psi):=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi_\mu .
 $$
 
 It is the spinor the companion article writes $S$ in the gamma notation; the letter $\Sigma$ is used here so as not to collide with the left-ideal carrier $S$ of the Dirac article.
@@ -75,7 +75,7 @@ $$
 \;}
 $$
 
-with $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ and $\tilde\Psi_\mu=\tilde\Psi_{\mu,L}+\tilde\Psi_{\mu,R}$. The two equations are the two chiralities, not two independent dynamics: the first couples the gradient to the right-chiral component, the second the conjugate gradient to the left-chiral component, and the conjugation $\natural$ is the anti-automorphism that exchanges the sides, $(ab)^{\natural}=b^{\natural}a^{\natural}$. This is the two-sided operator theorem of *Operator and Calculus Conventions*: a right action on $\psi$ is a left action on $\psi^{\natural}$, so the pair is complete as written and no second field is needed. The chirality cell $-iL_{e_t}R_{\vec e_z}$ anticommutes with the four frame cells and exchanges the two components, which is what makes the pair a two-sided form of a single equation rather than two dynamics.
+with $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ and $\tilde\Psi_\mu=\tilde\Psi_{\mu,L}+\tilde\Psi_{\mu,R}$. The two equations are the two chiralities, not two independent dynamics: the first couples the gradient to the right-chiral component, the second the conjugate gradient to the left-chiral component, and the conjugation $\natural$ is the anti-automorphism that exchanges the sides, $(ab)^{\natural}=b^{\natural}a^{\natural}$. This is the two-sided operator theorem of *Operator and Calculus Conventions*: a right action on $\psi$ is a left action on $\psi^{\natural}$, so the pair is complete as written and no second field is needed. The chirality cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ anticommutes with the four frame cells and exchanges the two components, which is what makes the pair a two-sided form of a single equation rather than two dynamics.
 
 On the spinor module the pair is transcribed as the single **cell equation**
 
@@ -88,12 +88,12 @@ with the operator of the preceding paragraph. The two imaginary units — the on
 The field is irreducible only with the **trace constraint**
 
 $$
-\boxed{\;\Sigma(\psi)=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi_\mu=0.\;}
+\boxed{\;\Sigma(\psi)=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi_\mu=0.\;}
 $$
 
 The constraint is not an equation of motion; it removes the spin-$\tfrac12$ components that a bare vector-spinor would contain. The fully antisymmetric form of the Rarita–Schwinger equation — the antisymmetrized triple contracted with the derivative and the antisymmetrized pair multiplying the mass — is the Lagrangian origin of the system. For $m\neq0$ it implies the component equation and the trace constraint, and the pair and the constraint displayed above are the reduced form; the companion article gives the reduction. For quantization the pair and the constraint are the starting point.
 
-In the algebra's own terms the constraint is the single element $\tilde\Psi_0+\sum_k\vec e_k\tilde\Psi_k\vec e_z=0$ of the companion article: one left multiplication of the cell trace by the invertible cell $\gamma_0=iR_{\vec e_x}$ returns exactly that element, since $\gamma_0\gamma_0=I_4$ and $\gamma_0\gamma_k=L_{\vec e_k}R_{\vec e_z}$, so the two forms vanish together. The element needs no frame; the cell trace does, and the frame it uses is that of the cells. The constraint displayed is the form the projector below annihilates — and it is the metric-weighted contraction, $\sum_\mu\varepsilon_\mu\gamma_\mu\psi_\mu$, that the projector annihilates; without the sign vector the contraction is not annihilated.
+In the algebra's own terms the constraint is the single element $\tilde\Psi_0+\sum_k\vec e_k\tilde\Psi_k\vec e_z=0$ of the companion article: one left multiplication of the cell trace by the invertible cell $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ returns exactly that element, since $\gamma_0\gamma_0=I_4$ and $\gamma_0\gamma_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, so the two forms vanish together. The element needs no frame; the cell trace does, and the frame it uses is that of the cells. The constraint displayed is the form the projector below annihilates — and it is the metric-weighted contraction, $\sum_\mu\varepsilon_\mu\gamma_\mu\psi_\mu$, that the projector annihilates; without the sign vector the contraction is not annihilated.
 
 ### Transversality from the Constraint
 
@@ -124,16 +124,16 @@ which is not independent but follows from the two. The identity and the implicat
 The constraint is imposed by the projector
 
 $$
-P_{\mu\nu} = g_{\mu\nu}I_4-\tfrac14\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}
-= g_{\mu\nu}I_4+\tfrac14\,L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}} ,
+P_{\mu\nu} = g_{\mu\nu}I_4-\tfrac14\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}
+= g_{\mu\nu}I_4+\tfrac14\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}} ,
 $$
 
 where the second form has multiplied the two imaginary units of the product to $-1$. The projector annihilates the trace on either index and is idempotent under the metric-weighted composition; because the vector index is contracted with the metric, those three properties read
 
 $$
-\sum_\nu\varepsilon_\nu P_{\mu\nu}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}} = 0 ,
+\sum_\nu\varepsilon_\nu P_{\mu\nu}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}} = 0 ,
 \qquad
-\sum_\mu\varepsilon_\mu\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_{\mu\nu} = 0 ,
+\sum_\mu\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} P_{\mu\nu} = 0 ,
 $$
 
 $$
@@ -189,10 +189,10 @@ $$
 where $T$ is the antisymmetrized triple of cells,
 
 $$
-T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}R_{\vec e_{\nu(\mu)}}\,L_{e_\nu}R_{\vec e_{\nu(\nu)}}\,L_{e_\rho}R_{\vec e_{\nu(\rho)}} ,
+T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\,L_{e_\rho}^{\mathrm{pau}}R_{\vec e_{\nu(\rho)}}^{\mathrm{pau}} ,
 $$
 
-$\bar\psi_\nu=\psi_\nu^\dagger iR_{\vec e_x}$ is the Dirac adjoint, and the normalization of the Lagrangian is left free. The triple is totally antisymmetric in its three indices and vanishes when two of them coincide; its factors are plain cells rather than frame cells, and $(-i)^3=i$. The $i$ of the adjoint and the three of the triple multiply to $i^4=1$, so no imaginary unit survives in the display of the momentum and none is left as a double $i$. The canonical analysis gives the primary constraint $\pi_0\approx 0$ — automatic here, since the antisymmetrized triple carrying two timelike cells vanishes — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
+$\bar\psi_\nu=\psi_\nu^\dagger iR_{\vec e_x}^{\mathrm{pau}}$ is the Dirac adjoint, and the normalization of the Lagrangian is left free. The triple is totally antisymmetric in its three indices and vanishes when two of them coincide; its factors are plain cells rather than frame cells, and $(-i)^3=i$. The $i$ of the adjoint and the three of the triple multiply to $i^4=1$, so no imaginary unit survives in the display of the momentum and none is left as a double $i$. The canonical analysis gives the primary constraint $\pi_0\approx 0$ — automatic here, since the antisymmetrized triple carrying two timelike cells vanishes — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
 
 $$
 \{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\chi_a\}_P\,(\Delta^{-1})_{ab}\,\{\chi_b,B\}_P ,
@@ -276,7 +276,7 @@ $$
 3\cdot 2 = 4+2 ,
 $$
 
-the spin-$\tfrac32$ piece of dimension four and a spin-$\tfrac12$ piece of dimension two. The trace constraint removes the spin-$\tfrac12$ piece, and the projector that does it is $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$, whose rank on the sixteen components of the vector-spinor is twelve — the four removed components being exactly the spin-$\tfrac12$ trace. This was verified by the explicit rank computation. The massive multiplet is the spin-$\tfrac32$ piece, with its four polarizations; the massless field, when the gauge symmetry is present, keeps the two states of helicity $\pm\tfrac32$ and the gauge removes the $\pm\tfrac12$ members of the same multiplet.
+the spin-$\tfrac32$ piece of dimension four and a spin-$\tfrac12$ piece of dimension two. The trace constraint removes the spin-$\tfrac12$ piece, and the projector that does it is $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}$, whose rank on the sixteen components of the vector-spinor is twelve — the four removed components being exactly the spin-$\tfrac12$ trace. This was verified by the explicit rank computation. The massive multiplet is the spin-$\tfrac32$ piece, with its four polarizations; the massless field, when the gauge symmetry is present, keeps the two states of helicity $\pm\tfrac32$ and the gauge removes the $\pm\tfrac12$ members of the same multiplet.
 
 The parallel with the integer-spin case is close. There, the carrier is a tensor power of the material vector and the trace removal selects the top component: for the graviton, the symmetric trace-free square, $1\otimes1$ symmetric and traceless $=2$ with dimension five, verified by the transverse-traceless projection. Here, the carrier is the material vector tensored with the spinor, and the trace removes the lower component: $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$, with the $\tfrac32$ of dimension four retained. In both cases the framework's statement is the same: the higher-spin field is obtained by tensoring the material vector with a lower-spin carrier and projecting onto the top component with a projector built from the algebra's own invariant form — the metric pairing for the integer-spin case, the trace for the half-integer one. The difference is that the spinor carrier is a left ideal rather than a tensor power of the vector, and that is why the half-integer case requires the Clifford structure while the integer case does not.
 
@@ -300,7 +300,7 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The vector index as the material vector, whose spatial part is the triplet on which the adjoint action acts; the spinor index as the left ideal of the Dirac article; the tensor-product decomposition $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ with $3\cdot2=4+2$; the traceless projector $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$, its metric-weighted idempotency, its annihilation of the trace, and its rank twelve on the sixteen components, all verified with explicit frame cells; and the transversality $p\cdot\psi=0$ as a consequence of the constraint and the field equation, verified through the Clifford identity $\Sigma(\mathbb{D}_p\psi)=2p\cdot\psi-\mathbb{D}_p\Sigma(\psi)$.
+**Supplied by the algebra, and recomputed here.** The vector index as the material vector, whose spatial part is the triplet on which the adjoint action acts; the spinor index as the left ideal of the Dirac article; the tensor-product decomposition $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ with $3\cdot2=4+2$; the traceless projector $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}$, its metric-weighted idempotency, its annihilation of the trace, and its rank twelve on the sixteen components, all verified with explicit frame cells; and the transversality $p\cdot\psi=0$ as a consequence of the constraint and the field equation, verified through the Clifford identity $\Sigma(\mathbb{D}_p\psi)=2p\cdot\psi-\mathbb{D}_p\Sigma(\psi)$.
 
 **Imported, and left visible.** The Rarita–Schwinger equation and its antisymmetric Lagrangian origin, which belong to the classical theory of higher spins; the canonical momentum and the constraint algebra; the Dirac bracket and the quantization of second-class systems; the fermionic mode algebra and the Fock space; the spin–statistics relation, cited to the companion article on the theorem; the transverse Rarita–Schwinger projector $\Pi_{\mu\nu}$ and the completeness relation of the four polarization spinors; the propagator, its gauge-fixing dependence, and its dimensional continuation; the Faddeev–Popov ghosts of the massless case and their commuting spinor carrier; and the BRST structure, cited to the standard literature.
 
@@ -325,16 +325,16 @@ The massless limit takes the count to two in every case, because the gauge symme
 The gammas are the frame cells of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_\mu:=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(t)=x,\ \nu(k)=y),
 \qquad
-\gamma_5:=-iL_{e_t}R_{\vec e_z},
+\gamma_5:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
-that is $\gamma_0=iR_{\vec e_x}$ and $\gamma_k=iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$. No display of the body uses the letter: there the cells are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+that is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $k=1,2,3$. No display of the body uses the letter: there the cells are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. It anticommutes with each of the four frame cells and commutes with every even element, hence with the whole biquaternion image; its eigenspaces are the chiral halves of the spinor space, and it is the cell that exchanges the two lines of the chiral pair. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The composites of the body.** The letter absorbs the imaginary unit of the cell, $i\gamma_\mu=-L_{e_\mu}R_{\vec e_{\nu(\mu)}}$, the two imaginary units multiplying to $-1$. The four composites named in the body are therefore
+**The composites of the body.** The letter absorbs the imaginary unit of the cell, $i\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, the two imaginary units multiplying to $-1$. The four composites named in the body are therefore
 
 $$
 \mathbb{D}=i\gamma\cdot\partial,
@@ -400,7 +400,7 @@ $$
 
 ## Summary
 
-The Rarita–Schwinger field is a vector-spinor $\psi_\mu$ satisfying the chiral pair $\tilde\nabla\tilde\Psi_{\mu,R}=m\tilde\Psi_{\mu,L}$, $\tilde\nabla^{\natural}\tilde\Psi_{\mu,L}=m\tilde\Psi_{\mu,R}$ and the irreducibility constraint $\Sigma(\psi)=0$. On the spinor module the pair is the single equation $(\mathbb{D}-m)\psi_\mu=0$, the operator $\mathbb{D}$ carrying the product $i\cdot i=-1$ of its two imaginary units. The trace of the equation, taken with one use of the Clifford relation, is $\Sigma(\mathbb{D}_p\psi)=2p\cdot\psi-\mathbb{D}_p\Sigma(\psi)$; with $\Sigma(\psi)=0$ it gives the transversality condition $p\cdot\psi=0$, verified on shell with explicit frame cells. The constraint is imposed by the projector $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14 iL_{e_\mu}R_{\vec e_{\nu(\mu)}}iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$, which is idempotent under the metric-weighted composition, annihilates the trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.
+The Rarita–Schwinger field is a vector-spinor $\psi_\mu$ satisfying the chiral pair $\tilde\nabla\tilde\Psi_{\mu,R}=m\tilde\Psi_{\mu,L}$, $\tilde\nabla^{\natural}\tilde\Psi_{\mu,L}=m\tilde\Psi_{\mu,R}$ and the irreducibility constraint $\Sigma(\psi)=0$. On the spinor module the pair is the single equation $(\mathbb{D}-m)\psi_\mu=0$, the operator $\mathbb{D}$ carrying the product $i\cdot i=-1$ of its two imaginary units. The trace of the equation, taken with one use of the Clifford relation, is $\Sigma(\mathbb{D}_p\psi)=2p\cdot\psi-\mathbb{D}_p\Sigma(\psi)$; with $\Sigma(\psi)=0$ it gives the transversality condition $p\cdot\psi=0$, verified on shell with explicit frame cells. The constraint is imposed by the projector $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14 iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}$, which is idempotent under the metric-weighted composition, annihilates the trace, and whose rank on the sixteen components of the vector-spinor is twelve, so that the constraint removes exactly a four-component spinor — all verified to machine precision.
 
 The gauge structure differs between the two mass regimes. For $m=0$ the field has the gauge symmetry $\psi_\mu\mapsto\psi_\mu+\partial/\partial x_\mu\,\epsilon$ with a spinor parameter, the constraints are first class, the trace gauge fixing requires Faddeev–Popov commuting spinor ghosts, and the physical states are the two helicities $\pm\tfrac32$. For $m\neq0$ the gauge symmetry is absent, the constraints are second class, the quantization uses the Dirac bracket, and the physical states are the four helicities $\pm\tfrac32,\pm\tfrac12$. The canonical quantization gives a fermionic mode expansion with four polarizations, anticommutators $\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$, and a completeness relation whose transverse projector is built from the same frame cells.
 
@@ -411,22 +411,22 @@ In the biquaternion framework the field is the tensor product of the material fo
 | Symbol | Meaning |
 |---|---|
 | $\psi_\mu$ | Rarita–Schwinger vector-spinor; material vector index $\mu$, spinor index suppressed |
-| $L_{a}R_{b}\psi=a\psi b$, $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ | A cell: one left and one right multiplier; the identity cell is $I_4=L_{e_t}R_{e_t}$ |
-| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(k)=y$ | Frame cell of the coordinate $x_\mu$: $iR_{\vec e_x}$ for $\mu=t$, $iL_{\vec e_k}R_{\vec e_y}$ for $\mu=k$; elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ |
-| $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4$ | Clifford relation of the frame cells; the product of two cells multiplies their imaginary units to $-1$ |
+| $L_{a}R_{b}\psi=a\psi b$, $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ | A cell: one left and one right multiplier; the identity cell is $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
+| $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $\nu(t)=x$, $\nu(k)=y$ | Frame cell of the coordinate $x_\mu$: $iR_{\vec e_x}^{\mathrm{pau}}$ for $\mu=t$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $\mu=k$; elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ |
+| $\{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\}=2g_{\mu\nu}I_4$ | Clifford relation of the frame cells; the product of two cells multiplies their imaginary units to $-1$ |
 | $\varepsilon_\mu=g_{\mu\mu}$, $\varepsilon_0=+1$, $\varepsilon_k=-1$ | Sign vector; every contraction of two low indices carries it |
 | $\tilde\nabla\tilde\Psi_{\mu,R}=m\tilde\Psi_{\mu,L}$, $\tilde\nabla^{\natural}\tilde\Psi_{\mu,L}=m\tilde\Psi_{\mu,R}$ | Field equation as the chiral pair; the two Dirac equations |
-| $\mathbb{D}:=-\sum_\mu\varepsilon_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial/\partial x_\mu$, $\mathbb{D}_p:=\sum_\mu\varepsilon_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}p_\mu$ | Pair operator of the conventions article on the module and its Fourier symbol; $\mathbb{D}^2=\Box$, $\mathbb{D}_p^2=p^2$, and the two imaginary units are already multiplied to $-1$ |
+| $\mathbb{D}:=-\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu$, $\mathbb{D}_p:=\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu$ | Pair operator of the conventions article on the module and its Fourier symbol; $\mathbb{D}^2=\Box$, $\mathbb{D}_p^2=p^2$, and the two imaginary units are already multiplied to $-1$ |
 | $(\mathbb{D}-m)\psi_\mu=0$ | Cell transcription of the chiral pair |
-| $\Sigma(\psi):=\sum_\mu\varepsilon_\mu iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi_\mu=0$ | Trace spinor and irreducibility constraint; removes the $\left(\tfrac12\right)$ component |
+| $\Sigma(\psi):=\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi_\mu=0$ | Trace spinor and irreducibility constraint; removes the $\left(\tfrac12\right)$ component |
 | $p\cdot\psi=\sum_\mu\varepsilon_\mu p_\mu\psi_\mu=0$ | Transversality; follows from the constraint and the field equation |
 | $\Sigma(\mathbb{D}_p\psi)=2\,p\cdot\psi-\mathbb{D}_p\Sigma(\psi)$ | Clifford identity used; the trace of the operator times the field is the divergence minus the operator on the trace (verified) |
-| $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14 iL_{e_\mu}R_{\vec e_{\nu(\mu)}}iL_{e_\nu}R_{\vec e_{\nu(\nu)}}$, $(P\psi)_\mu=\sum_\nu\varepsilon_\nu P_{\mu\nu}\psi_\nu$ | Traceless projector; it annihilates the trace and is idempotent under the metric-weighted composition (verified) |
+| $P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14 iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}$, $(P\psi)_\mu=\sum_\nu\varepsilon_\nu P_{\mu\nu}\psi_\nu$ | Traceless projector; it annihilates the trace and is idempotent under the metric-weighted composition (verified) |
 | $\mathrm{rank}\,P=12=16-4$ | Verified by Gaussian elimination over $\mathbb{C}$ |
 | $V\otimes S$, $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ | Spatial part of the carrier and its decomposition; $3\cdot2=4+2$ |
 | $\psi_\mu\mapsto\psi_\mu+\partial/\partial x_\mu\,\epsilon$ | Massless gauge symmetry; spinor parameter |
-| $T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}R_{\vec e_{\nu(\mu)}}L_{e_\nu}R_{\vec e_{\nu(\nu)}}L_{e_\rho}R_{\vec e_{\nu(\rho)}}$, $\pi_\mu=\bar\psi_\nu T_{\nu t\mu}$ | Antisymmetrized triple of cells and the canonical momentum; $i\cdot i^3=1$, so no imaginary unit survives |
-| $\bar\psi_\nu=\psi_\nu^\dagger iR_{\vec e_x}$ | Dirac adjoint |
+| $T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}L_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}L_{e_\rho}^{\mathrm{pau}}R_{\vec e_{\nu(\rho)}}^{\mathrm{pau}}$, $\pi_\mu=\bar\psi_\nu T_{\nu t\mu}$ | Antisymmetrized triple of cells and the canonical momentum; $i\cdot i^3=1$, so no imaginary unit survives |
+| $\bar\psi_\nu=\psi_\nu^\dagger iR_{\vec e_x}^{\mathrm{pau}}$ | Dirac adjoint |
 | $\vec x:=x\vec e_x+y\vec e_y+z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $\Delta_{ab}=\{\chi_a,\chi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Fermionic mode algebra |
@@ -435,7 +435,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
 | $G_{\mu\nu}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level 3); the $ict'$ metric is $\eta=-g$ |
-| $\gamma_\mu:=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\gamma_5:=-iL_{e_t}R_{\vec e_z}$ | The gammas of *The Gamma Formulation*: the same frame cells written as letters; $\gamma_0=iR_{\vec e_x}$, $\gamma_k=iL_{\vec e_k}R_{\vec e_y}$ |
+| $\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $\gamma_5:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | The gammas of *The Gamma Formulation*: the same frame cells written as letters; $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$, $\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ |
 
 ## Further Reading
 

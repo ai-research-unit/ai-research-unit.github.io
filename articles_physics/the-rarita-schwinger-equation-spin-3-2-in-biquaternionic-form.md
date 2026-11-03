@@ -28,15 +28,15 @@ with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the frame. The antisymmetrize
 
 Two features of the standard theory are recorded and read in the algebra. First, in the massless case the system has a gauge freedom $\psi_\mu\to\psi_\mu+\partial/\partial x_\mu\,\epsilon$, with $\epsilon$ an arbitrary Dirac spinor; the freedom removes the spin-$\tfrac12$ branches that the representation theory places in the field, leaving the two helicities $\pm\tfrac32$. Second, in the massive case the constraint structure is more rigid and the minimal coupling is known to be inconsistent: the field propagates acausally in an external electromagnetic background, the Velo–Zwanziger obstruction, and a consistent interacting theory requires either a gravitational background or a gauge principle. The framework represents these facts; it does not remove them.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central scalar imaginary $i$, gradient $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$ with conjugate $\tilde{\nabla}^{\natural}$ and d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The frame is written in cells of the algebra that acts on $\mathbb{B}$ by two-sided multiplication: a cell is a pair of multipliers, $L_{a}R_{b}\psi=a\psi b$, with $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ and identity cell $I_4=L_{e_t}R_{e_t}$. The frame cells are
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central scalar imaginary $i$, gradient $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$ with conjugate $\tilde{\nabla}^{\natural}$ and d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The frame is written in cells of the algebra that acts on $\mathbb{B}$ by two-sided multiplication: a cell is a pair of multipliers, $L_{a}R_{b}\psi=a\psi b$, with $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ and identity cell $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. The frame cells are
 
 $$
-\gamma_\mu:=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\quad(\nu(0)=x,\ \nu(k)=y),
+\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(0)=x,\ \nu(k)=y),
 \qquad
-\gamma_5:=-iR_{\vec e_z},
+\gamma_5:=-iR_{\vec e_z}^{\mathrm{pau}},
 $$
 
-that is $\gamma_0=iR_{\vec e_x}$ and $\gamma_k=iL_{\vec e_k}R_{\vec e_y}$ for $k=1,2,3$. The label $\mu$ of a cell is the coordinate index of its left multiplier, and the index is always written low. The right multiplier is always a spatial unit — the direction $\nu(\mu)$ is one of $x,y,z$ by construction, never $t$ — so it carries the arrow, $\vec e_{\nu(\mu)}$; the left multiplier carries the arrow only when its index is written out as spatial, $L_{\vec e_k}$; the generic $L_{e_\mu}$ is left plain, since $\mu=0$ gives the scalar $e_t=1$. The one factor $i$ in a cell is a normalisation and not a choice: it is what makes the four Clifford generators of the frame, and divided by $i$ the cells would square to $-g_{\mu\nu}$ and the signature would be reversed. Where a second $i$ meets the $i$ of a cell the two collapse, $i^2=-1$, so that $i\,\gamma_\mu=-L_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and the Dirac operator $i\,\gamma_\mu\partial/\partial x_\mu$ of the frame is minus the plain two-sided contraction. Every display below is written in these glyphs, so that the factor $i$ of a cell is read once, here, and not at each occurrence; where the two multipliers carry the argument — the algebra element of the mass term, the reading of the trace — the cell is spelled out. The cells are elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$, not of $\mathbb{B}$, and the frame is a coordinate choice.
+that is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $k=1,2,3$. The label $\mu$ of a cell is the coordinate index of its left multiplier, and the index is always written low. The right multiplier is always a spatial unit — the direction $\nu(\mu)$ is one of $x,y,z$ by construction, never $t$ — so it carries the arrow, $\vec e_{\nu(\mu)}$; the left multiplier carries the arrow only when its index is written out as spatial, $L_{\vec e_k}^{\mathrm{pau}}$; the generic $L_{e_\mu}^{\mathrm{pau}}$ is left plain, since $\mu=0$ gives the scalar $e_t=1$. The one factor $i$ in a cell is a normalisation and not a choice: it is what makes the four Clifford generators of the frame, and divided by $i$ the cells would square to $-g_{\mu\nu}$ and the signature would be reversed. Where a second $i$ meets the $i$ of a cell the two collapse, $i^2=-1$, so that $i\,\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ and the Dirac operator $i\,\gamma_\mu\partial/\partial x_\mu$ of the frame is minus the plain two-sided contraction. Every display below is written in these glyphs, so that the factor $i$ of a cell is read once, here, and not at each occurrence; where the two multipliers carry the argument — the algebra element of the mass term, the reading of the trace — the cell is spelled out. The cells are elements of the cell algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$, not of $\mathbb{B}$, and the frame is a coordinate choice.
 
 The informational basis is $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ — the four units that square to $+e_t$ — and it is distinct from the coordinate basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, whose three spatial legs carry no factor $i$. With the mostly-minus metric $g=\mathrm{diag}(+1,-1,-1,-1)$,
 
@@ -231,15 +231,15 @@ with the sign fixed by the left factor alone, a relation verified for all sixtee
 
 The mass term, the antisymmetrized pair, comes out of the same rule, and it is where the two multipliers separate. The timelike bivector is the image of $i\vec e_k$, $\tfrac12[\gamma_0,\gamma_k]=\gamma_0\gamma_k$. The spacelike bivector is a pure left multiplier,
 $$
-\tfrac12[\gamma_j,\gamma_k]=\pm\,L_{\vec e_\lambda}\qquad(\lambda\ \text{the remaining index}),
+\tfrac12[\gamma_j,\gamma_k]=\pm\,L_{\vec e_\lambda}^{\mathrm{pau}}\qquad(\lambda\ \text{the remaining index}),
 $$
 with the plus sign for the cyclic order $(\vec e_x,\vec e_y,\vec e_z)$: the two spatial cells of the product carry the same right multiplier $\vec e_y$, and $\vec e_y\vec e_y=-e_t$, so the right multiplier cancels and only the left one survives. The two families therefore are not of one shape, and the frame needs both: the timelike pair carries the right multiplier of the spatial cells, the spacelike pair does not. This is the sense in which the timelike bivectors are the informational sector's images and the spacelike ones the material sector's left multipliers.
 
 The trivectors, which carry the kinetic structure, are the fixed odd cell times those left multipliers,
 $$
-\gamma_0\,L_{\vec e_\lambda}=i\,L_{\vec e_\lambda}R_{\vec e_x}=\gamma_0\gamma_j\gamma_k ,
+\gamma_0\,L_{\vec e_\lambda}^{\mathrm{pau}}=i\,L_{\vec e_\lambda}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\gamma_0\gamma_j\gamma_k ,
 \qquad
-\gamma_1\gamma_2\gamma_3=-i\,R_{\vec e_y},
+\gamma_1\gamma_2\gamma_3=-i\,R_{\vec e_y}^{\mathrm{pau}},
 $$
 four cells, one for each choice of three indices, with the same cyclic sign rule, as *Matrix Representations Conventions* records.
 
@@ -278,11 +278,11 @@ where the first line is the algebra reading of the cell trace $\sum_\mu\gamma_\m
 
 The equivalence with the antisymmetrized equation is the standard free-field reduction. If each component satisfies the chiral pair, and if the trace and divergence constraints hold, then the antisymmetrized equation follows; conversely, the antisymmetrized equation implies the pair and the trace, and the divergence. The cell form of the pair is the module transcription of the first display, and the two constraints are the module transcription of the second; the biquaternion form is the pair and the constraints.
 
-**The trace in the algebra.** The cell trace collapses onto one algebra element, and the right multiplier of the spatial cells is part of the answer. Since $\gamma_0=iR_{\vec e_x}$ and $\gamma_k=iL_{\vec e_k}R_{\vec e_y}$, the product $\gamma_0\gamma_k$ carries both multipliers and the right one moves to the far right,
+**The trace in the algebra.** The cell trace collapses onto one algebra element, and the right multiplier of the spatial cells is part of the answer. Since $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, the product $\gamma_0\gamma_k$ carries both multipliers and the right one moves to the far right,
 $$
 \gamma_0\gamma_k\psi=i\,\bigl(i\vec e_k\psi\vec e_y\bigr)\vec e_x=\vec e_k\psi\,\vec e_z ,
 $$
-so $\gamma_0\gamma_k=L_{\vec e_k}R_{\vec e_z}$ as cells. Multiplying the cell trace by the invertible $\gamma_0$ therefore gives
+so $\gamma_0\gamma_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ as cells. Multiplying the cell trace by the invertible $\gamma_0$ therefore gives
 $$
 \gamma_0\sum_\mu\gamma_\mu\tilde{\Psi}_\mu
 =\tilde{\Psi}_0+\sum_k\vec e_k\tilde{\Psi}_k\,\vec e_z ,
@@ -304,7 +304,7 @@ with $\Gamma_{00}=0$ and the sign of $\Gamma_{jk}$ fixed by the orientation $\ve
 
 ### Setting up
 
-**Time convention.** The check is performed in the $\mathbb{M}_-$ frame, with $x_0=t'$ and the frame cells declared above. The series' algebra coordinate is $Q_t=ict'$; the two are related by $\partial/\partial t'=i\partial/\partial Q_t$, not by relabelling $Q_t$ as $t'$. The substitution is applied to the whole operator, $\mathbb{D}-m$, at once. The mixed contraction $i\,\gamma_\mu\partial/\partial Q_\mu-m$ is a different operator, obtained by replacing only the time derivative; at rest it is $i\,\gamma_0(-m)-m=m(R_{\vec e_x}-I_4)$, and since $R_{\vec e_x}^2=-I_4$ its eigenvalues are $m(-1\pm i)$, so it has no kernel at all. The upper-half result below therefore belongs to the $\mathbb{M}_-$ frame and is not obtained by substituting $Q_t$ for $t'$ in the operator.
+**Time convention.** The check is performed in the $\mathbb{M}_-$ frame, with $x_0=t'$ and the frame cells declared above. The series' algebra coordinate is $Q_t=ict'$; the two are related by $\partial/\partial t'=i\partial/\partial Q_t$, not by relabelling $Q_t$ as $t'$. The substitution is applied to the whole operator, $\mathbb{D}-m$, at once. The mixed contraction $i\,\gamma_\mu\partial/\partial Q_\mu-m$ is a different operator, obtained by replacing only the time derivative; at rest it is $i\,\gamma_0(-m)-m=m(R_{\vec e_x}^{\mathrm{pau}}-I_4)$, and since $(R_{\vec e_x}^{\mathrm{pau}})^2=-I_4$ its eigenvalues are $m(-1\pm i)$, so it has no kernel at all. The upper-half result below therefore belongs to the $\mathbb{M}_-$ frame and is not obtained by substituting $Q_t$ for $t'$ in the operator.
 
 The computation below is a frame check: it evaluates the standard transcription in the frame of the cells. The invariant statement is the pair and the constraints. Take the field at rest and of positive frequency, so that each component is proportional to $\exp(-imt'/\hbar)$ in natural units; the derivative is $\partial/\partial t'\to -im$, equivalently $\partial/\partial Q_t\to -m$. The Dirac operator becomes
 
@@ -312,10 +312,10 @@ $$
 i\,\gamma_\mu\partial/\partial x_\mu - m \;\longrightarrow\; i\,\gamma_0(-im) - m ,
 $$
 
-the product of the two imaginary units collapses, $i^2=-1$, and because $\gamma_0=iR_{\vec e_x}$ one has $i\,\gamma_0(-im)=i\,mR_{\vec e_x}$, so the operator is
+the product of the two imaginary units collapses, $i^2=-1$, and because $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ one has $i\,\gamma_0(-im)=i\,mR_{\vec e_x}^{\mathrm{pau}}$, so the operator is
 
 $$
-imR_{\vec e_x} - m = m\left(\gamma_0 - I_4\right),
+imR_{\vec e_x}^{\mathrm{pau}} - m = m\left(\gamma_0 - I_4\right),
 $$
 
 acting on each component. Since $(\gamma_0)^2=I_4$, with eigenvalues $\pm1$, the operator $m(\gamma_0-I_4)$ annihilates exactly the **upper** half of $\mathbb{B}$, the $+1$ eigenspace of $\gamma_0$, and annihilates nothing else; the equation on the spatial components therefore forces them into that half.
@@ -454,7 +454,7 @@ The conventions are those of three companion articles:
 
 ## The Gamma Formulation
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and the transcription introduces no new symbol: the $\gamma_\mu$ and $\gamma_5$ of the literature are the cells declared in the conventions, $\gamma_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and $\gamma_5=-iR_{\vec e_z}$. The two vocabularies therefore name the same five objects in one chosen frame of the cell algebra, and no translation between two algebras is needed; what the literature adds is the matrix representation of those objects, not a second set of generators.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and the transcription introduces no new symbol: the $\gamma_\mu$ and $\gamma_5$ of the literature are the cells declared in the conventions, $\gamma_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. The two vocabularies therefore name the same five objects in one chosen frame of the cell algebra, and no translation between two algebras is needed; what the literature adds is the matrix representation of those objects, not a second set of generators.
 
 The cells act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$. They form a complex vector space of dimension sixteen, and $c(M)$ is the coefficient matrix of a cell $M$ in the basis of the sixteen products, with $\ell(M)=\operatorname{rank}c(M)$. A single product is a pure tensor; the products form the seven-dimensional cone $\ell(M)\le1$, and a general element is a sum of at most four.
 
@@ -497,11 +497,11 @@ The field is a tensor product of the algebra's vector structure and its spinor s
 | Dictionary | Map onto the even Clifford algebra; $e_t\mapsto I_4$ and $i\vec e_k\mapsto \gamma_0\gamma_k$; the cells are not elements of $\mathbb{B}$ |
 | $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ | Cell algebra of the regular module; the Clifford map lands here, not in $\mathbb{B}$ |
 | $e_t$, $i\vec e_k$ | Informational basis, the four units that square to $+e_t$; frame-free trace and mass terms |
-| $\gamma_5=-iR_{\vec e_z}=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$, $i_{\mathrm{Cl}}$ | Chirality cell, the product of the two commuting square roots of $-1$, the biquaternion $i$ and the external imaginary $i_{\mathrm{Cl}}$ |
+| $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=-\Phi_{\mathbb{C}}(i_{\mathrm{Cl}}i)$, $i_{\mathrm{Cl}}$ | Chirality cell, the product of the two commuting square roots of $-1$, the biquaternion $i$ and the external imaginary $i_{\mathrm{Cl}}$ |
 | $\tilde{\Psi}_\mu\in\mathbb{B}$ | Biquaternion-valued components of the vector-spinor |
 | $\epsilon$ | Dirac-spinor parameter of the massless shift symmetry |
-| $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ | A cell: one left and one right multiplier, $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the identity cell is $I_4=L_{e_t}R_{e_t}$; the frame is written with the two multipliers |
-| $\gamma_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ | Frame cells, one factor $i$ each, $g=\mathrm{diag}(+1,-1,-1,-1)$; the four gamma cells of the dictionary |
+| $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ | A cell: one left and one right multiplier, $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the identity cell is $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$; the frame is written with the two multipliers |
+| $\gamma_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ | Frame cells, one factor $i$ each, $g=\mathrm{diag}(+1,-1,-1,-1)$; the four gamma cells of the dictionary |
 | $\gamma_{\mu\nu}:=\tfrac12[\gamma_\mu,\gamma_\nu]=h_{\mu\nu}$ | Antisymmetrized pair, the mass-term structure; image of $\Gamma_{\mu\nu}$ |
 | $\Gamma_{0k}=i\vec e_k$, $\Gamma_{k0}=-i\vec e_k$, $\Gamma_{jk}=\pm\vec e_l$ | Mass-term coefficients in $\mathbb{B}$ |
 | $\gamma_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm \gamma_\mu\,\gamma_\nu\,\gamma_\rho=T_{\mu\nu\rho}$ | Antisymmetrized triple, kinetic structure of the equation |

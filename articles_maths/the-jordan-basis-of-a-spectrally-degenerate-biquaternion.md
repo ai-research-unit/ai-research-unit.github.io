@@ -24,7 +24,7 @@ $$
 
 listed chain by chain, is then a basis of the algebra, a **Jordan basis**, in which left multiplication by $\tilde Q$ is $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$ and right multiplication is the same two blocks with the other pairing. Every biquaternion has a unique expansion in it, and the coordinate model sends $\tilde Q$ to the single block $J_2(Q_t)$. The construction is the degenerate twin of the eigenbasis: it covers the two defective strata at once, and it does not depend on the scalar part.
 
-**Place among the Peirce decompositions.** This article is the degenerate particular case of *The Peirce Decomposition of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is an adapted frame of §*The Frame on the Sector*: complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What is special is the matrix of the element: $\mathsf M_{\tilde\Pi}(\tilde Q)=J_2(Q_t)$, so each couple is a Jordan chain rather than a pair of eigenvectors. The reciprocal $\mathbb{C}^\times$ of the general theory is fixed here by $\vec\Upsilon_-=\vec Q$, not by a normalisation convention.
+**Place among the Peirce decompositions.** This article is the degenerate particular case of *Peirce Decompositions of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is an adapted frame of §*The Frame on the Sector*: complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What is special is the matrix of the element: $\mathsf M_{\tilde\Pi}(\tilde Q)=J_2(Q_t)$, so each couple is a Jordan chain rather than a pair of eigenvectors. The reciprocal $\mathbb{C}^\times$ of the general theory is fixed here by $\vec\Upsilon_-=\vec Q$, not by a normalisation convention.
 
 The sector is the union of two cells of the four-cell arrangement,
 
@@ -288,7 +288,7 @@ $$
 \mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}.
 $$
 
-Each corner is a complex line (*The Peirce Decomposition of the Biquaternion Algebra*), and the direct sum is the algebra:
+Each corner is a complex line (*Peirce Decompositions of the Biquaternion Algebra*), and the direct sum is the algebra:
 
 $$
 \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}.
@@ -691,7 +691,7 @@ Both sector articles use a basis of this shape. They differ only in the pair, an
 
 Here $\lambda_\pm=Q_t\pm iB$ are the two eigenvalues, $J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$ is the Jordan block of the repeated eigenvalue.
 
-**The rigidity applies to all three columns.** By §*Systems of Matrix Units* of *The Peirce Basis of the Biquaternion Algebra*, every pair of primitive orthogonal idempotents summing to $e_t$ is the image of the standard pair under an inner automorphism. The pairs are therefore conjugate, and the three columns are not three decompositions of different kinds: what changes from one column to the next is the position of the element in the decomposition, not the decomposition itself. The regular pair commutes with $\tilde Q$; the support pair does not; on the scalar line every pair commutes.
+**The rigidity applies to all three columns.** By §*Systems of Matrix Units* of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, every pair of primitive orthogonal idempotents summing to $e_t$ is the image of the standard pair under an inner automorphism. The pairs are therefore conjugate, and the three columns are not three decompositions of different kinds: what changes from one column to the next is the position of the element in the decomposition, not the decomposition itself. The regular pair commutes with $\tilde Q$; the support pair does not; on the scalar line every pair commutes.
 
 **The regular case.** For $B^2\neq0$ the pair is the spectral pair of $\tilde Q$. It satisfies $[\tilde\Pi_\pm,\tilde Q]=0$, so $\mathsf M_{\tilde\Pi}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$ and each couple is a pair of eigenvectors. The basis $\mathcal{P}$ is the eigenbasis $\mathcal{B}(\tilde Q)$ of *The Eigenbasis of a Spectrally Regular Biquaternion*; the reciprocal freedom is fixed there by the normalisation of the mixed generators.
 
@@ -754,7 +754,7 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the matrix form, the Jordanising matrix and the defect
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the $4\times4$ model
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction and the Jordan basis as a particular Peirce matrix
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction and the Jordan basis as a particular Peirce matrix
 - [The Spectrum](the-spectrum.html), for the spectral criterion, the cone, the three strata and the similarity classification
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the complementary sector and the eigenbasis construction
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the matrix reading of the eigenbasis

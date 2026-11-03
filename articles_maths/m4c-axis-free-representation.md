@@ -362,7 +362,7 @@ Comparing the coefficients of the basis on the two sides gives $a_{\sigma_\mu^{-
 
 **The rest.** From there the check is finite: the three remaining vectors are fixed by their own sixteen products, and the sign patterns that remain return only $\pm\vec e_x,\pm\vec e_y,\pm\vec e_z$ in some order. The converse is immediate: if $f_t=\pm e_t$ and $f_k=\pm e_{\sigma(k)}$, the products $f_\mu f_\nu$ are again $\pm$ a basis vector, by the table of the algebra.
 
-**Among the real frames, no uniqueness.** Every real change of basis $S\in GL_4(\mathbb{R})$ applied to the axis-free basis gives another real frame, with $L'=S^{-1}LS$. The real frames are therefore a sixteen-dimensional family, and their entries are in general arbitrary real numbers. Realness alone does not characterise the axis-free frame; realness together with sparsity — signed permutations — does.
+**Among the real frames, no uniqueness.** Every real change of basis $C\in GL_4(\mathbb{R})$ applied to the axis-free basis gives another real frame, with $L'=C^{-1}LC$. The real frames are therefore a sixteen-dimensional family, and their entries are in general arbitrary real numbers. Realness alone does not characterise the axis-free frame; realness together with sparsity — signed permutations — does.
 
 **Among all the frames, no uniqueness at all.** Every basis gives a family, so there are as many families as bases, and they are one orbit under $GL_4(\mathbb{C})$. The axis-free basis is distinguished by the simultaneous presence of (a)–(j), not by being the only family with real entries.
 

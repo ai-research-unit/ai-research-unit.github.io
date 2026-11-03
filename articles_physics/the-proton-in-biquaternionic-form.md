@@ -50,7 +50,7 @@ $$
 \left(\mathbb{D}-m_p\right)\psi=0 .
 $$
 
-The operator is now a single object acting on the pair: it is the pair written once, and it contains no matrix generator. The module is also where chirality becomes an operator, the pure right multiplication $\Gamma=-iR_{\vec e_z}$. That is what the two-sided reading adds: the algebra carries the mass term and the mass shell, the module carries chirality, the charge operator and the bilinears. The two forms are related by a change of representation, not by a change of physics.
+The operator is now a single object acting on the pair: it is the pair written once, and it contains no matrix generator. The module is also where chirality becomes an operator, the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$. That is what the two-sided reading adds: the algebra carries the mass term and the mass shell, the module carries chirality, the charge operator and the bilinears. The two forms are related by a change of representation, not by a change of physics.
 
 | Quantity | One-sided equation | Two-sided equation |
 |---|---|---|
@@ -58,7 +58,7 @@ The operator is now a single object acting on the pair: it is the pair written o
 | Field | $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R\in\Delta=S\oplus S^{\mathrm{c}}$ | $\psi=(\psi_L,\psi_R)$ in $\Delta=S\oplus S^{\mathrm{c}}$ |
 | Mass | the off-diagonal pairing of the two halves | the same coefficient, off-diagonal in the two blocks |
 | Operator | left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ | one operator on the pair, $\mathbb{D}^2=\Box I_4$ |
-| Chirality | the label of the half; no operator | the pure right multiplication $\Gamma=-iR_{\vec e_z}$ |
+| Chirality | the label of the half; no operator | the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ |
 | Use | the definition, the mass term, the mass shell | the charge operator, the projectors, the bilinears |
 
 **The spin-$\tfrac12$ representation content is forced once the field is placed in the module.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, of complex dimension $2$, and its group of unit-norm biquaternions, $\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$ — under $\mathsf{M}_2$ the group $\det=1$ — is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field in $\Delta=S\oplus S^{\mathrm{c}}$ transforms in the two inequivalent two-component representations
@@ -89,7 +89,7 @@ Charge enters only when the field is coupled to a four-potential, through minima
 The cells act by left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so a two-sided cell is $L_aR_b\psi=a\psi b$. The chirality cell of the module is the pure right multiplication
 
 $$
-\Gamma=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
 \qquad
 \Gamma\psi=-i\,e_t\,\psi\,\vec e_z,
 \qquad
@@ -99,9 +99,9 @@ $$
 whose two eigenspaces are the chiral halves. The projectors onto them are
 
 $$
-P_L=\tfrac12\left(I_4-\Gamma\right)=\tfrac12\left(I_4+iR_{\vec e_z}\right),
+P_L=\tfrac12\left(I_4-\Gamma\right)=\tfrac12\left(I_4+iR_{\vec e_z}^{\mathrm{pau}}\right),
 \qquad
-P_R=\tfrac12\left(I_4+\Gamma\right)=\tfrac12\left(I_4-iR_{\vec e_z}\right),
+P_R=\tfrac12\left(I_4+\Gamma\right)=\tfrac12\left(I_4-iR_{\vec e_z}^{\mathrm{pau}}\right),
 $$
 
 so that $P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$, and $\Gamma=P_R-P_L=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis. $\Gamma$ is Hermitian, so with $\Gamma^2=I_4$ the two $P$ are orthogonal projectors. The charge operator of *Chiral Fermions in the Biquaternion Framework* is then the module operator
@@ -122,7 +122,7 @@ $$
 [\,Ϙ,\Gamma\,]=0,
 $$
 
-with spectrum $\{ϙ_L\ (\text{twice}),\,ϙ_R\ (\text{twice})\}$. Second, the **mass selection rule**. The bilinears are built with the Dirac bar $\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}$, where $G_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ are the four generator cells of the coordinates, $\nu(t)=x$ and $\nu(k)=y$. Under the chiral gauge transformation $\psi_L\mapsto\exp(iϙ_L\lambda/\hbar)\psi_L$, $\psi_R\mapsto\exp(iϙ_R\lambda/\hbar)\psi_R$, with $\lambda(\tilde{Q})$ a real gauge function, only the relative phase of the two halves changes:
+with spectrum $\{ϙ_L\ (\text{twice}),\,ϙ_R\ (\text{twice})\}$. Second, the **mass selection rule**. The bilinears are built with the Dirac bar $\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$, where $G_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ are the four generator cells of the coordinates, $\nu(t)=x$ and $\nu(k)=y$. Under the chiral gauge transformation $\psi_L\mapsto\exp(iϙ_L\lambda/\hbar)\psi_L$, $\psi_R\mapsto\exp(iϙ_R\lambda/\hbar)\psi_R$, with $\lambda(\tilde{Q})$ a real gauge function, only the relative phase of the two halves changes:
 
 $$
 \begin{aligned}
@@ -253,7 +253,7 @@ The table sorts the proton's properties by the status they have in the framework
 | Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
 | Mass term is off-diagonal in chirality; real structure acts $+1/-1$ on $\mathbb{M}_\mp$ | Derived | linear chiral pair; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$; Weyl decomposition |
 | Vector-like charge operator $Ϙ=ϙI_4$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$ |
-| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\bar{\psi}\,G_\mu\psi$, with $G_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ the generator cell of the coordinate $x_\mu$ ($\nu(t)=x$, $\nu(k)=y$); $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$ |
+| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\bar{\psi}\,G_\mu\psi$, with $G_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ the generator cell of the coordinate $x_\mu$ ($\nu(t)=x$, $\nu(k)=y$); $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$ |
 | Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathrm{SU}(2)$ generators have imaginary/half-integer spectra |
 | Charge value $ϙ_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
 | $|ϙ_p|=|ϙ_e|$, opposite signs | Outside | no framework structure; independent parameters |
@@ -288,14 +288,14 @@ No gamma appears in the sections above, and this section is where it does. Its p
 Each gamma is a single cell $L_aR_b$, the operator $\psi\mapsto a\psi b$. The frame is
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
-Because $L_{e_t}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\vec e_x}$ and $\gamma_5=-iR_{\vec e_z}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $g=\mathrm{diag}(+1,-1,-1,-1)$ — and that is why the Dirac bar of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one cell and not a sum of cells, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
+Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $g=\mathrm{diag}(+1,-1,-1,-1)$ — and that is why the Dirac bar of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one cell and not a sum of cells, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
 
-The generator cells $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu$: $G_t=\gamma_0=iR_{\vec e_x}$ and $G_k=\gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The anticommutator of the notation table is therefore the Clifford relation below.
+The generator cells $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu$: $G_t=\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $G_k=\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The anticommutator of the notation table is therefore the Clifford relation below.
 
-**Chirality, three objects and one representative.** $\gamma_5=-iR_{\vec e_z}$ *is* the chirality cell $\Gamma$ of the charge section, so the fifth cell and the fifth gamma are one object in two readings. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object: it is central, it belongs to the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}$, and it is not an element of $\mathbb{B}$. The chain is $\chi$ in the double, $\Gamma=\mathrm{diag}(-I_2,I_2)$ its representative on the module $\Delta$, and $\gamma_5$ that representative written as a cell.
+**Chirality, three objects and one representative.** $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ *is* the chirality cell $\Gamma$ of the charge section, so the fifth cell and the fifth gamma are one object in two readings. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object: it is central, it belongs to the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}$, and it is not an element of $\mathbb{B}$. The chain is $\chi$ in the double, $\Gamma=\mathrm{diag}(-I_2,I_2)$ its representative on the module $\Delta$, and $\gamma_5$ that representative written as a cell.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -370,10 +370,10 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\tilde{P}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}\tilde{P}^{\natural}=-m_p^2c^2$, that is $E^2=|\vec p|^2c^2+m_p^2c^4$ |
 | $L_{a}R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms, $L_aR_b\psi=a\psi b$ |
 | $\mathbb{D}\psi=(\tilde{\nabla}\psi_R,\tilde{\nabla}^{\natural}\psi_L)$, $\mathbb{D}^2=\Box I_4$ | Pair operator of the two-sided equation $(\mathbb{D}-m_p)\psi=0$ |
-| $\Gamma=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}=P_R-P_L$ | Chirality cell, $\Gamma\psi=-i\,e_t\psi\vec e_z$, $\Gamma^2=I_4$, $\Gamma=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis |
-| $G_\mu=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | Generator cell of $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$; $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}=P_R-P_L$ | Chirality cell, $\Gamma\psi=-i\,e_t\psi\vec e_z$, $\Gamma^2=I_4$, $\Gamma=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis |
+| $G_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ | Generator cell of $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$; $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
 | $P_L=\tfrac12(I_4-\Gamma)$, $P_R=\tfrac12(I_4+\Gamma)$ | Chiral projectors |
-| $\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}$ | Dirac bar of the module spinor $\psi=\psi_L+\psi_R$; $G_t$ is what pairs the two halves |
+| $\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$ | Dirac bar of the module spinor $\psi=\psi_L+\psi_R$; $G_t$ is what pairs the two halves |
 | $Ϙ=ϙ_LP_L+ϙ_RP_R$ | Charge operator on $\Delta$ |
 | $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); massive field forces $ϙ_L=ϙ_R$ |
 | $ϙ_p=+1$ | Proton charge eigenvalue (inserted, not derived) |

@@ -85,10 +85,10 @@ $$
 On the state module these act as left multiplication. The left multipliers, $L_a\psi=a\psi$, compose as $L_aL_b=L_{ab}$, so they inherit the quaternion relations,
 
 $$
-L_{\vec e_\nu}L_{\vec e_\mu}=-\delta_{\nu\mu}L_{e_t}+\varepsilon_{\nu\mu\lambda}L_{\vec e_\lambda},
+L_{\vec e_\nu}^{\mathrm{pau}}L_{\vec e_\mu}^{\mathrm{pau}}=-\delta_{\nu\mu}L_{e_t}^{\mathrm{pau}}+\varepsilon_{\nu\mu\lambda}L_{\vec e_\lambda}^{\mathrm{pau}},
 $$
 
-and in the matrix representation $L_{\vec e_\mu}$ is multiplication by $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, so that
+and in the matrix representation $L_{\vec e_\mu}^{\mathrm{pau}}$ is multiplication by $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, so that
 
 $$
 \tilde S_\mu\;\longmapsto\;\tfrac{1}{2}\sigma_\mu .
@@ -371,7 +371,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.

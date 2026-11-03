@@ -8,7 +8,7 @@ $$
 \boxed{\;\tilde\Xi^2=\tilde Q\;}.
 $$
 
-**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$; every double $i$ is reduced before a formula is read. The star is the Hermitian conjugation, $\tilde\Xi^{*}=\bar\Xi_t e_t-\bar{\vec\Xi}$, and the natural conjugation is $\tilde\Xi^{\natural}=\Xi_t e_t-\vec\Xi$. The two-sided cells act on a field $\psi$ by $L_aR_b\psi=a\psi b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$; the chirality cell is $\Gamma=-iR_{\vec e_z}$, and the Dirac adjoint is $\bar\psi=\psi^*iR_{\vec e_x}$. The gamma names of the cells are collected in *The Gamma Formulation* and are not used before it. For a radicand with vector part $\vec Q$, write $B^2=(\vec Q,\vec Q)$.
+**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$; every double $i$ is reduced before a formula is read. The star is the Hermitian conjugation, $\tilde\Xi^{*}=\bar\Xi_t e_t-\bar{\vec\Xi}$, and the natural conjugation is $\tilde\Xi^{\natural}=\Xi_t e_t-\vec\Xi$. The two-sided cells act on a field $\psi$ by $L_aR_b\psi=a\psi b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$; the chirality cell is $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$, and the Dirac adjoint is $\bar\psi=\psi^*iR_{\vec e_x}^{\mathrm{pau}}$. The gamma names of the cells are collected in *The Gamma Formulation* and are not used before it. For a radicand with vector part $\vec Q$, write $B^2=(\vec Q,\vec Q)$.
 
 The answer depends on the product, and the first job of the article is to keep the products apart. The **plain square** $\tilde\Xi^2$ has a finite root set for a non-scalar radicand, generically four elements, falling to two or to none. The **natural square** $\tilde\Xi\tilde\Xi^{\natural}=\langle\tilde\Xi\rangle_{\natural}e_t$ has the level set of the interval as its root set, and on the material sector that level set is the mass shell. The **Hermitian square** $\tilde\Xi\tilde\Xi^{*}$ produces a positive semidefinite value; the eigenvalues of the mass operator are the mass-squareds of a doublet. The three squares are three root problems, not one.
 
@@ -241,10 +241,10 @@ $$
 with the sum over $k=1,2,3$ understood, $t'$ the time coordinate of the material chart, and the cells
 
 $$
-G_0=iR_{\vec e_x},\qquad G_k=iL_{\vec e_k}R_{\vec e_y} .
+G_0=iR_{\vec e_x}^{\mathrm{pau}},\qquad G_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}} .
 $$
 
-The operator is two-sided: the time term is a pure right multiplication, the spatial terms are left times right. The chirality cell $\Gamma=-iR_{\vec e_z}$ anticommutes with the operator, $\{\Gamma,\mathbb D\}=0$, because $R_{\vec e_z}$ anticommutes with $R_{\vec e_x}$ and with $R_{\vec e_y}$ while the left factors commute with it. A chirality needs a right multiplication, and the one-sided gradient has none; it can appear only on the module.
+The operator is two-sided: the time term is a pure right multiplication, the spatial terms are left times right. The chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ anticommutes with the operator, $\{\Gamma,\mathbb D\}=0$, because $R_{\vec e_z}^{\mathrm{pau}}$ anticommutes with $R_{\vec e_x}^{\mathrm{pau}}$ and with $R_{\vec e_y}^{\mathrm{pau}}$ while the left factors commute with it. A chirality needs a right multiplication, and the one-sided gradient has none; it can appear only on the module.
 
 The axial symmetry, the axial current and the condensate belong to the cell equation. They are not two theories: the pair is the one-sided statement in the algebra, and the cell equation is its two-sided representative on the module.
 
@@ -254,7 +254,7 @@ $$
 \psi\longmapsto\exp(i\alpha\Gamma)\psi .
 $$
 
-Since $i\Gamma=R_{\vec e_z}$ and $i^2=-1$, the exponential is a real combination of cells,
+Since $i\Gamma=R_{\vec e_z}^{\mathrm{pau}}$ and $i^2=-1$, the exponential is a real combination of cells,
 
 $$
 \exp(i\alpha\Gamma)\psi
@@ -266,7 +266,7 @@ with no imaginary unit left outside. A mass term breaks the symmetry: the vector
 $$
 \sum_\mu\frac{\partial j_{5\mu}}{\partial x_\mu}
 =2im\,\bar\psi\Gamma\psi
-=2m\,\bar\psi R_{\vec e_z}\psi .
+=2m\,\bar\psi R_{\vec e_z}^{\mathrm{pau}}\psi .
 $$
 
 The divergence vanishes at $m=0$; the axial anomaly is a separate quantum effect. A nonzero vacuum expectation of the fermion bilinear,
@@ -337,19 +337,19 @@ The bands must be kept apart. The plain root set of a nonzero central value is a
 
 ## The Gamma Formulation
 
-The body names cells — $L_a$, $R_b$, $\Gamma=-iR_{\vec e_z}$ — without naming an algebra for them. This closing section supplies the dictionary and nothing in the body depends on it.
+The body names cells — $L_a$, $R_b$, $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ — without naming an algebra for them. This closing section supplies the dictionary and nothing in the body depends on it.
 
 The gammas generate $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$; they are not a different algebra. The cells act on $\mathbb{B}$ itself, four complex dimensions, so each cell is a $4\times4$ complex matrix. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\qquad
-\gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad
-\gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad
-\gamma_3=iL_{\vec e_z}R_{\vec e_y},
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
 $$
-\gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The factors of $i$ in a product are reduced by $i^2=-1$; the five cells satisfy, for $k=1,2,3$,
@@ -370,7 +370,7 @@ $$
 
 A single product is a pure tensor: $c(M)$ has rank one. The rank-one elements form a cone of complex dimension seven, every general element is a sum of at most four of them, and the length is $\ell(M)=\operatorname{rank}c(M)$.
 
-The cells of the cell equation are these gammas: $G_\mu=\gamma_\mu$, since $L_{e_t}$ acts as the identity on the module, and the chirality cell is $\Gamma=\gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, is the difference of the two central idempotents, so $\chi^2=e_t$. It is a different object: on the module the two act through the same $4\times4$ matrix, and only the algebra keeps them apart.
+The cells of the cell equation are these gammas: $G_\mu=\gamma_\mu$, since $L_{e_t}^{\mathrm{pau}}$ acts as the identity on the module, and the chirality cell is $\Gamma=\gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, is the difference of the two central idempotents, so $\chi^2=e_t$. It is a different object: on the module the two act through the same $4\times4$ matrix, and only the algebra keeps them apart.
 
 The dictionary is complex-linear. Over $\mathbb{R}$ the sixteen words in $\gamma_0,\dots,\gamma_3$ span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The two are distinct real forms of the same $M_4(\mathbb{C})$, the first of quaternionic type and the second of real type; that is why $i$ times a cell is not again a cell.
 
@@ -404,12 +404,12 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $\mathsf{M}_2$ | the $2\times2$ matrix representation, $\mathbb{B}\to M_2(\mathbb{C})$ |
 | $\tilde\nabla$ | the biquaternionic gradient |
 | $\tilde\Psi_{L,R}$ | the two chiral components of the gradient equation |
-| $\psi$ | the Dirac field; its adjoint is $\bar\psi=\psi^*iR_{\vec e_x}$ |
-| $G_\mu$ | the generator cells, $G_0=iR_{\vec e_x}$, $G_k=iL_{\vec e_k}R_{\vec e_y}$ |
+| $\psi$ | the Dirac field; its adjoint is $\bar\psi=\psi^*iR_{\vec e_x}^{\mathrm{pau}}$ |
+| $G_\mu$ | the generator cells, $G_0=iR_{\vec e_x}^{\mathrm{pau}}$, $G_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ |
 | $\mathbb D$ | the two-sided Dirac operator, $\mathbb D=iG_0\partial_{t'}+iG_k\partial_{x_k}$ |
 | $\langle\bar\psi\psi\rangle$ | the chiral condensate |
 | $\flat$ | the algebra's real structure, an antilinear conjugation |
-| $\Gamma$ | the chirality cell, $\Gamma=-iR_{\vec e_z}$ |
+| $\Gamma$ | the chirality cell, $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ |
 | $\varsigma$ | the Kustaanheimo–Stiefel quaternion, $\varsigma=\varsigma_1\vec e_x+\varsigma_2\vec e_y+\varsigma_3\vec e_z+\varsigma_0e_t$ |
 | $\Rho$ | the Hamilton amplitude of a four-momentum, $\Rho=imc$; the mass is $m=\lvert\Rho\rvert/c$ |
 | $\mathcal I(\lambda_+,\lambda_-)$ | the isospectral family of a pair of eigenvalues |

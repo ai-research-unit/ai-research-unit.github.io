@@ -9,7 +9,7 @@ S_{+}=\mathbb{B}\tilde\Pi_{+}=\mathbb{B}_{++}\oplus\mathbb{B}_{-+},\qquad
 S_{-}=\mathbb{B}\tilde\Pi_{-}=\mathbb{B}_{+-}\oplus\mathbb{B}_{--},
 $$
 
-where $\tilde\Pi_{+},\tilde\Pi_{-}$ is a nondegenerate complete family of idempotents and $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$ are the four Peirce lines. The family fixes the two spaces and their splitting into a diagonal line and a mixed line. The diagonal line is spanned by the idempotent; the mixed line has no canonical generator. A Peirce basis chooses one, and the choice is the gauge of *The Peirce Basis of the Biquaternion Algebra*. The spinor is the algebra element; its Peirce coordinates are its coefficients in the adapted basis. The coordinates depend on the basis, the element does not.
+where $\tilde\Pi_{+},\tilde\Pi_{-}$ is a nondegenerate complete family of idempotents and $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$ are the four Peirce lines. The family fixes the two spaces and their splitting into a diagonal line and a mixed line. The diagonal line is spanned by the idempotent; the mixed line has no canonical generator. A Peirce basis chooses one, and the choice is the gauge of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*. The spinor is the algebra element; its Peirce coordinates are its coefficients in the adapted basis. The coordinates depend on the basis, the element does not.
 
 The article defines the two spaces and their canonical splitting, gives the adapted bases and the gauge action, computes the ladder by the mixed units, identifies the invariants of a single spinor, reads the Peirce index as a right index, treats right multiplication and the exchange, and says what the spinor is not. An example is given at the end.
 
@@ -109,7 +109,7 @@ Therefore left multiplication by $\vec\Upsilon_{-+}\vec\Upsilon_{+-}$ is the pro
 
 ## The Gauge
 
-**The action on coordinates.** Under the basis change of *The Peirce Basis of the Biquaternion Algebra*,
+**The action on coordinates.** Under the basis change of *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*,
 
 $$
 \vec\Upsilon'_{+-}=t^{-1}\vec\Upsilon_{+-},\qquad
@@ -318,8 +318,8 @@ A spinor is an element of one of the two Peirce spaces $S_{\pm}=\mathbb{B}\tilde
 
 ## Further Reading
 
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
-- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the coordinates.
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
+- [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the coordinates.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix picture of the two spaces.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the identification of the two spaces as minimal left ideals.
 - [The Commutator Operator](the-commutator-operator.html), for the right multiplication and the exchange as operators.

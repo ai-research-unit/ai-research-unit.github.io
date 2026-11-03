@@ -12,16 +12,16 @@ The next section sets up the naive discretization, its propagator and its double
 
 ### The classical action and the lattice
 
-The biquaternion field lives on the Lorentzian section. In the coordinates $x_0=ct'$, $x_k$, the frame is carried by the cells $L_{a}R_{b}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the identity is $L_{e_t}R_{e_t}$. Here $i$ is the scalar imaginary, $i^2=-1$. The four Minkowski frame cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ ($k=1,2,3$) satisfy
+The biquaternion field lives on the Lorentzian section. In the coordinates $x_0=ct'$, $x_k$, the frame is carried by the cells $L_{a}R_{b}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the identity is $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. Here $i$ is the scalar imaginary, $i^2=-1$. The four Minkowski frame cells $iR_{\vec e_x}^{\mathrm{pau}}$ and $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ ($k=1,2,3$) satisfy
 
 $$
-(iR_{\vec e_x})^2=L_{e_t}R_{e_t},\qquad
-(iL_{\vec e_k}R_{\vec e_y})^2=-L_{e_t}R_{e_t},\qquad
-\{iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y}\}=0,\qquad
-\{iL_{\vec e_j}R_{\vec e_y},iL_{\vec e_k}R_{\vec e_y}\}=-2\delta_{jk}L_{e_t}R_{e_t},
+(iR_{\vec e_x}^{\mathrm{pau}})^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\{iR_{\vec e_x}^{\mathrm{pau}},iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\}=0,\qquad
+\{iL_{\vec e_j}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\}=-2\delta_{jk}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
-which are the Clifford relations of $g=\mathrm{diag}(+1,-1,-1,-1)$; the chirality cell is $\chi=-iR_{\vec e_z}$. The biquaternion Dirac equation is the chiral pair
+which are the Clifford relations of $g=\mathrm{diag}(+1,-1,-1,-1)$; the chirality cell is $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$. The biquaternion Dirac equation is the chiral pair
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,
@@ -33,30 +33,30 @@ and its spinor-module representative is the single cell equation
 
 $$
 (\mathbb{D}-m)\psi=0,\qquad
-\mathbb{D}=-R_{\vec e_x}\frac{\partial}{\partial x_0}+\sum_{k=1}^3 L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}.
+\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial x_0}+\sum_{k=1}^3 L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial x_k}.
 $$
 
 The two lines are the two chiral halves of the field: the gradient $\tilde{\nabla}$ acts on the right-chiral field and its conjugate $\tilde{\nabla}^{\natural}$ on the left-chiral one, and the mass couples them. The transcription of the pair on the spinor module is the single cell equation. At $m=0$ the pair decouples into $\tilde{\nabla}\tilde{\Psi}_R=0$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=0$. The free continuum Dirac action is
 
 $$
 S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(\mathbb{D}-m\right)\psi(x)
-= \int d^4x\;\bar\psi(x)\left(-R_{\vec e_x}\frac{\partial}{\partial x_0}+\sum_{k=1}^3 L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}-m\right)\psi(x).
+= \int d^4x\;\bar\psi(x)\left(-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial x_0}+\sum_{k=1}^3 L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial x_k}-m\right)\psi(x).
 $$
 
 On the Euclidean section the frame cells are
 
 $$
-E_4=iR_{\vec e_x},\qquad E_k=-L_{\vec e_k}R_{\vec e_y}\quad(k=1,2,3),
+E_4=iR_{\vec e_x}^{\mathrm{pau}},\qquad E_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=1,2,3),
 $$
 
-which satisfy $E_\mu^2=L_{e_t}R_{e_t}$ and $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}L_{e_t}R_{e_t}$. These are the Wick-rotated frame cells, a change of frame and not a change of algebra. With $x_4=ix_0$, so that $\partial_0=i\partial_4$, the cell operator becomes
+which satisfy $E_\mu^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. These are the Wick-rotated frame cells, a change of frame and not a change of algebra. With $x_4=ix_0$, so that $\partial_0=i\partial_4$, the cell operator becomes
 
 $$
-\mathbb{D}=-R_{\vec e_x}\frac{\partial}{\partial x_0}+\sum_{k=1}^3L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}
+\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial x_0}+\sum_{k=1}^3L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial x_k}
 =-\sum_{\mu=1}^4E_\mu\frac{\partial}{\partial x_\mu},
 $$
 
-so $(\mathbb{D}-m)\psi=0$ and $(\sum_\mu E_\mu\partial_\mu+m)\psi=0$ are the same equation; the flip of the mass sign is the Wick rotation, not a new convention. The Euclidean chirality is $iR_{\vec e_z}=E_4E_1E_2E_3$, which is minus the Minkowski chirality cell $-iR_{\vec e_z}$: the four cells anticommute, so reversing their order flips the sign. The Euclidean action is
+so $(\mathbb{D}-m)\psi=0$ and $(\sum_\mu E_\mu\partial_\mu+m)\psi=0$ are the same equation; the flip of the mass sign is the Wick rotation, not a new convention. The Euclidean chirality is $iR_{\vec e_z}^{\mathrm{pau}}=E_4E_1E_2E_3$, which is minus the Minkowski chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$: the four cells anticommute, so reversing their order flips the sign. The Euclidean action is
 
 $$
 S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\sum_{\mu=1}^4 E_\mu\frac{\partial}{\partial x_\mu} + m\right)\psi(x).
@@ -119,7 +119,7 @@ $$
 \qquad
 \bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,\exp(i\,n\cdot\pi_A),
 \qquad
-S_0 = L_{e_t}R_{e_t},\quad S_\nu = iR_{\vec e_z}E_\nu\;},
+S_0 = L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\quad S_\nu = iR_{\vec e_z}^{\mathrm{pau}}E_\nu\;},
 $$
 
 with $S_A$ the product of the $S_\nu$ over the indices in $A$; the lattice must be of even extent in each direction, so that the phase is single-valued. Conjugating a frame cell by $S_A$ flips its sign exactly for $\mu\in A$,
@@ -147,7 +147,7 @@ $$
 S=\sum_{x,y,\mu}\bar\psi(x)\,E_\mu F_\mu(x,y)P_R\psi(y),
 $$
 
-under translation invariance, hermiticity ($F_\mu(-x)=F_\mu(x)^\dagger$) and locality; here $P_R=\tfrac12(L_{e_t}R_{e_t}-iR_{\vec e_z})$ is the right-chiral projector, the projector on the $+1$ eigenvalue of the chirality cell $-iR_{\vec e_z}$, and $P_L=\tfrac12(L_{e_t}R_{e_t}+iR_{\vec e_z})$ is the left-chiral one. A general version extends the statement to *all* regularization schemes: no regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of left- and right-handed Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. One consequence is that the Standard Model cannot be put on a lattice without violating one of these conditions; another is that a chirally invariant regularization makes the chiral anomaly vanish, which is wrong. The theorem does not say *how many* doublers appear — only that at least one partner is forced. When chiral fermions do not exist — odd dimensions — the theorem is vacuous, since there is no chirality operator anticommuting with all the frame generators.
+under translation invariance, hermiticity ($F_\mu(-x)=F_\mu(x)^\dagger$) and locality; here $P_R=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}-iR_{\vec e_z}^{\mathrm{pau}})$ is the right-chiral projector, the projector on the $+1$ eigenvalue of the chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$, and $P_L=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+iR_{\vec e_z}^{\mathrm{pau}})$ is the left-chiral one. A general version extends the statement to *all* regularization schemes: no regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of left- and right-handed Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. One consequence is that the Standard Model cannot be put on a lattice without violating one of these conditions; another is that a chirally invariant regularization makes the chiral anomaly vanish, which is wrong. The theorem does not say *how many* doublers appear — only that at least one partner is forced. When chiral fermions do not exist — odd dimensions — the theorem is vacuous, since there is no chirality operator anticommuting with all the frame generators.
 
 ### The proof idea
 
@@ -158,7 +158,7 @@ The Euclidean proof uses the **Poincaré–Hopf theorem**. Locality makes the Fo
 Every lattice fermion formulation must give up at least one hypothesis of the theorem, or the bilinear form of the action that carries them. The main routes are:
 
 - **Wilson fermions** add a term proportional to the second difference, which gives the doublers a mass of order $1/a$ and removes them from the low-energy theory, at the cost of explicitly breaking chiral symmetry.
-- **Ginsparg–Wilson fermions** satisfy a remnant of chiral symmetry on the lattice, $\{D,\chi\}=a\,D\chi D$ with $D$ the lattice Dirac operator and $\chi=-iR_{\vec e_z}$, in place of the continuum anticommutator $\{D,\chi\}=0$; the **overlap** fermions realize this with an exactly massless, index-carrying operator. Chiral symmetry is not broken explicitly; it is realized in this modified form.
+- **Ginsparg–Wilson fermions** satisfy a remnant of chiral symmetry on the lattice, $\{D,\chi\}=a\,D\chi D$ with $D$ the lattice Dirac operator and $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$, in place of the continuum anticommutator $\{D,\chi\}=0$; the **overlap** fermions realize this with an exactly massless, index-carrying operator. Chiral symmetry is not broken explicitly; it is realized in this modified form.
 - **Domain-wall fermions** place chiral fermions on the boundaries of an extra dimension; the bulk mass term breaks chiral symmetry explicitly, but the boundary mode's chiral symmetry is restored as the extra dimension grows, and the price is the extra dimension.
 - **Staggered (Kogut–Susskind) fermions** reduce the sixteen tastes to four by distributing the four spinor components over the sites of a hypercube, which leaves only a discrete remnant of the translation symmetry.
 - **Twisted-mass Wilson fermions** add a chirally twisted mass term; the Wilson term removes the doublers, and the twist protects a remnant of chiral symmetry.
@@ -217,15 +217,15 @@ The gammas are the frame cells of the body, written as single letters; they form
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The Euclidean frame of the lattice sections is built from these cells, with a factor of $i$ on the three spatial legs:
 
 $$
-\gamma^E_4=\gamma_0=iR_{\vec e_x},\qquad
-\gamma^E_k=i\gamma_k=-L_{\vec e_k}R_{\vec e_y}\quad(k=1,2,3),\qquad
-\gamma^E_5=\gamma^E_4\gamma^E_1\gamma^E_2\gamma^E_3=iR_{\vec e_z}.
+\gamma^E_4=\gamma_0=iR_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma^E_k=i\gamma_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=1,2,3),\qquad
+\gamma^E_5=\gamma^E_4\gamma^E_1\gamma^E_2\gamma^E_3=iR_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The four cells anticommute, so moving $\gamma^E_4$ to the right past the other three flips the sign:
@@ -236,7 +236,7 @@ In particular $\gamma^E_5=-\gamma_5$, and a right-chiral projector written with 
 
 The sixteen graded products of the five cells — the unit, the four cells, the six products of two, the four products of three and $\gamma_5$ — form a basis of $M_4(\mathbb{C})$, so every two-sided operator is a complex combination of them.
 
-$\gamma_5$ is the reference-frame representative of the chirality operator. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the cell $\chi=-iR_{\vec e_z}=\gamma_5$.
+$\gamma_5$ is the reference-frame representative of the chirality operator. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -247,7 +247,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
 $$
 
-On the spinor module the pair reduces to the single cell equation $(\mathbb{D}-m)\psi=0$, with $\mathbb{D}=i\gamma\cdot\partial$, the dot product being the metric contraction $\gamma\cdot\partial=\sum_\mu\varepsilon_\mu\gamma_\mu\partial_\mu$ and $\varepsilon_\mu=g_{\mu\mu}$; in the letter this is $(i\gamma\cdot\partial-m)\psi=0$. The letter and the cells are the same operator: expanding the metric sum gives back $-R_{\vec e_x}\partial/\partial x_0+\sum_k L_{\vec e_k}R_{\vec e_y}\partial/\partial x_k$.
+On the spinor module the pair reduces to the single cell equation $(\mathbb{D}-m)\psi=0$, with $\mathbb{D}=i\gamma\cdot\partial$, the dot product being the metric contraction $\gamma\cdot\partial=\sum_\mu\varepsilon_\mu\gamma_\mu\partial_\mu$ and $\varepsilon_\mu=g_{\mu\mu}$; in the letter this is $(i\gamma\cdot\partial-m)\psi=0$. The letter and the cells are the same operator: expanding the metric sum gives back $-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$.
 
 The pair and the cell equation are the same statement in two readings. The two lines of the pair are the two chiral halves of $\psi$: with
 
@@ -300,7 +300,7 @@ In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=
 
 ## Summary
 
-Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, are related by the taste-exchange symmetry $S_\nu=iR_{\vec e_z}E_\nu$, and are exactly degenerate in the free theory, so an interacting lattice theory cannot simply drop them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of left- and right-handed species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — gives up one of the theorem's hypotheses, and symmetric mass generation gives up the bilinear form of the action rather than a hypothesis.
+Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, are related by the taste-exchange symmetry $S_\nu=iR_{\vec e_z}^{\mathrm{pau}}E_\nu$, and are exactly degenerate in the free theory, so an interacting lattice theory cannot simply drop them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of left- and right-handed species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — gives up one of the theorem's hypotheses, and symmetric mass generation gives up the bilinear form of the action rather than a hypothesis.
 
 The biquaternion framework does not evade the obstruction. The doubling argument uses only locality, hermiticity, translation invariance and the oddness of the massless symbol, all of which the discretized biquaternion gradient shares; the algebra is not a lattice and supplies no alternative difference operator. The one positive structural point is that the framework's multivector field is contained in the **Dirac–Kähler** multivector, whose simplicial discretization is the **staggered fermion** formulation — a mitigation, not a solution. Two index-theoretic facts reach the framework as companions: the anomalous half-integer quantum Hall effect of graphene and the harmonic-form zero modes of the Dirac–Kähler operator.
 
@@ -310,15 +310,15 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 |---|---|
 | $a$, $n$, $\vec u_\mu$ | Lattice spacing, site index, unit lattice vector in the direction $\mu$ |
 | $S_F^L$ | Naive lattice fermion action |
-| $L_{a}R_{b}$ | Frame cells, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}\psi=a\psi b$; identity $L_{e_t}R_{e_t}$ |
-| $iR_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ | Minkowski frame cells; $(iR_{\vec e_x})^2=+L_{e_t}R_{e_t}$, $(iL_{\vec e_k}R_{\vec e_y})^2=-L_{e_t}R_{e_t}$ |
-| $\chi=-iR_{\vec e_z}$ | Minkowski chirality cell; $\chi^2=L_{e_t}R_{e_t}$ and $\chi$ anticommutes with the four frame cells |
-| $\mathbb{D}$ | Cell Dirac operator, $\mathbb{D}=-R_{\vec e_x}\partial/\partial x_0+\sum_k L_{\vec e_k}R_{\vec e_y}\partial/\partial x_k$ |
-| $E_4=iR_{\vec e_x}$, $E_k=-L_{\vec e_k}R_{\vec e_y}$ | Euclidean frame cells; $E_\mu^2=L_{e_t}R_{e_t}$, $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}L_{e_t}R_{e_t}$ |
-| $iR_{\vec e_z}$ | Euclidean chirality, $iR_{\vec e_z}=E_4E_1E_2E_3$, the negative of the Minkowski chirality cell |
-| $P_R$, $P_L$ | Chiral projectors, $P_{R,L}=\tfrac12(L_{e_t}R_{e_t}\mp iR_{\vec e_z})$ |
+| $L_{a}R_{b}$ | Frame cells, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}\psi=a\psi b$; identity $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
+| $iR_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Minkowski frame cells; $(iR_{\vec e_x}^{\mathrm{pau}})^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
+| $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ | Minkowski chirality cell; $\chi^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\chi$ anticommutes with the four frame cells |
+| $\mathbb{D}$ | Cell Dirac operator, $\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$ |
+| $E_4=iR_{\vec e_x}^{\mathrm{pau}}$, $E_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Euclidean frame cells; $E_\mu^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
+| $iR_{\vec e_z}^{\mathrm{pau}}$ | Euclidean chirality, $iR_{\vec e_z}^{\mathrm{pau}}=E_4E_1E_2E_3$, the negative of the Minkowski chirality cell |
+| $P_R$, $P_L$ | Chiral projectors, $P_{R,L}=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\mp iR_{\vec e_z}^{\mathrm{pau}})$ |
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |
-| $S_\nu=iR_{\vec e_z}E_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |
+| $S_\nu=iR_{\vec e_z}^{\mathrm{pau}}E_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |
 | $I_4$ | Unit matrix of the four-dimensional Dirac module |
 | $D$ | Lattice Dirac operator of the Ginsparg–Wilson relation |
 | $S(p)$ | Naive lattice propagator |

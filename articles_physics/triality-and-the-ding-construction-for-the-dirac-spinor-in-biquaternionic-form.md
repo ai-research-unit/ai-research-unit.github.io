@@ -111,7 +111,7 @@ The first is symmetric under the interchange of its two index pairs, the second 
 
 ### The Quadratic Forms
 
-The two quadratic forms are read on the same cells, with $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z = -iL_{e_t}R_{\vec e_z}$ the chirality,
+The two quadratic forms are read on the same cells, with $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the chirality,
 
 $$
 \bar\Psi\Psi = N_\mu g_{\mu\nu}N_\nu - B_\mu g_{\mu\nu}B_\nu ,
@@ -216,12 +216,12 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 
 $$
 \gamma_\mu = C_\mu, \qquad
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{e_x}R_{\vec e_y},\quad \gamma_2=iL_{e_y}R_{\vec e_y},\quad \gamma_3=iL_{e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{e_y}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 Here $L_{c}R_{d}$ multiplies on the left by $c$ and on the right by $d$: $L_{c}R_{d}\psi=c\psi d$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
-The frame obeys the Clifford relations $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}$ and the chirality relations $\gamma_5^2 = e_t$ and $\{\gamma_5,\gamma_\mu\} = 0$, with $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$; the sign in the last identity is the one that makes $\gamma_5$ the fifth generator and not its negative. $\gamma_5$ is the chirality $\Gamma$ itself, $\Gamma = -iL_{e_t}R_{\vec e_z} = \gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+The frame obeys the Clifford relations $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}$ and the chirality relations $\gamma_5^2 = e_t$ and $\{\gamma_5,\gamma_\mu\} = 0$, with $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$; the sign in the last identity is the one that makes $\gamma_5$ the fifth generator and not its negative. $\gamma_5$ is the chirality $\Gamma$ itself, $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = \gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -259,7 +259,7 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $C_\mu = iL_{a_\mu}R_{b_\mu}$ | Generator cell, $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}$ |
 | $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$ | Generator metric; no index is raised |
 | $\mathrm{Sc}$ | Scalar part of a biquaternion |
-| $\Gamma = -iL_{e_t}R_{\vec e_z}$ | Chirality involution, $\Gamma^2 = e_t$, $\Gamma C_\mu + C_\mu\Gamma = 0$ |
+| $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality involution, $\Gamma^2 = e_t$, $\Gamma C_\mu + C_\mu\Gamma = 0$ |
 | $t_{\mu\nu\lambda\rho}$ | Four-index generator trace, symmetric under the interchange of its two index pairs |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol of the generators, $\varepsilon_{0123} = 1$ |
 | $t_{\nu\mu\lambda}$, $\varepsilon_{\nu\mu\lambda}$ | The same tensors contracted with $k_\sigma$ |

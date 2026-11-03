@@ -300,6 +300,6 @@ The trace form is positive definite, with isotropic set $\{0\}$; there is no nul
 - [The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m3c.html), for the trace pairing and the rank.
 - [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the determinant and the spectral strata.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the null cone of $\mathbb{B}$.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the zero divisors of $\mathbb{B}$.
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the zero divisors of $\mathbb{B}$.
 - [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the singular values as the eigenvalues of the positive factor.
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant and its geometry.

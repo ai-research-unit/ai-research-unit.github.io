@@ -60,7 +60,7 @@ $$
 P_L = \tfrac12\left(e_t - \chi\right), \qquad P_R = \tfrac12\left(e_t + \chi\right), \qquad \tilde{\Psi}_{L,R} = P_{L,R}\tilde{\Psi} .
 $$
 
-On the Dirac module $\Delta = S\oplus S^{\mathrm{c}}$ the chirality is $\operatorname{diag}(-I_2,I_2)$, so $P_L$ projects onto $S$ and $P_R$ onto $S^{\mathrm{c}}$. The grading is not the Peirce index: the two Peirce carriers of $\mathbb{B}$ are two copies of $S$ and carry no chirality, and the sign that flips between them is the inner sign $R_{i\vec e_z}$, not the central $\chi$. The distinction matters for the mass term, and the subsection *Which equation, and on which module* below turns on it.
+On the Dirac module $\Delta = S\oplus S^{\mathrm{c}}$ the chirality is $\operatorname{diag}(-I_2,I_2)$, so $P_L$ projects onto $S$ and $P_R$ onto $S^{\mathrm{c}}$. The grading is not the Peirce index: the two Peirce carriers of $\mathbb{B}$ are two copies of $S$ and carry no chirality, and the sign that flips between them is the inner sign $R_{i\vec e_z}^{\mathrm{pau}}$, not the central $\chi$. The distinction matters for the mass term, and the subsection *Which equation, and on which module* below turns on it.
 
 The **real structure** is the anti-Hermitian conjugation
 
@@ -195,7 +195,7 @@ $$
 \mathcal{N}F = -\tilde{\nabla}^{\natural}F - m\,i\,\overline{F}\,\vec e_z = 0 ,
 $$
 
-the bar being the complex conjugation of the coefficients and not the real structure $\flat$. The mass term combines a right multiplication by $\vec e_z$, the central $i$ and that conjugation. On real quaternions the conjugation is inert and the operator is, up to the overall $-m$, the right multiplication by $i\vec e_z$ — the inner Peirce sign $R_{i\vec e_z}$ of the regular module, an involution because $(i\vec e_z)^2 = e_t$ — so there the mass enters as the eigenvalue of the copy label; on a general element of $\mathbb{B}$ the conjugation is not inert and the mass term is a right multiplication followed by a conjugation, not a single cell. Under a constant central phase $F\mapsto\lambda F$ the two terms scale differently,
+the bar being the complex conjugation of the coefficients and not the real structure $\flat$. The mass term combines a right multiplication by $\vec e_z$, the central $i$ and that conjugation. On real quaternions the conjugation is inert and the operator is, up to the overall $-m$, the right multiplication by $i\vec e_z$ — the inner Peirce sign $R_{i\vec e_z}^{\mathrm{pau}}$ of the regular module, an involution because $(i\vec e_z)^2 = e_t$ — so there the mass enters as the eigenvalue of the copy label; on a general element of $\mathbb{B}$ the conjugation is not inert and the mass term is a right multiplication followed by a conjugation, not a single cell. Under a constant central phase $F\mapsto\lambda F$ the two terms scale differently,
 
 $$
 -\tilde{\nabla}^{\natural}\left(\lambda F\right) = \lambda\left(-\tilde{\nabla}^{\natural}F\right),
@@ -384,17 +384,17 @@ $$
 
 It is $-4i$ at the origin and non-zero everywhere. The naive biquaternion product is therefore **not** the conserved electromagnetic current of the Dirac field. The sign of the bilinear does not help: with $\tilde J_{\Psi}^{*}$ in place of $\tilde J_{\Psi}$ the same computation gives $+4i\,e^{-2Q_t}$, because $\tilde J_\Psi^{*} = -\tilde J_\Psi$.
 
-**Why, and what the current is instead.** The reason is representation-theoretic. The conserved current of the Dirac field is the spinor-module bilinear, built with the generator cell $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ of the coordinate $x_\mu$ — $\nu(t)=x$ and $\nu(k)=y$ — and with the **Dirac adjoint** $\bar\psi = \psi^{\dagger}iR_{\vec e_x}$, the row spinor that pairs with the cell:
+**Why, and what the current is instead.** The reason is representation-theoretic. The conserved current of the Dirac field is the spinor-module bilinear, built with the generator cell $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ of the coordinate $x_\mu$ — $\nu(t)=x$ and $\nu(k)=y$ — and with the **Dirac adjoint** $\bar\psi = \psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$, the row spinor that pairs with the cell:
 
 $$
-j_\mu = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,\psi .
+j_\mu = \bar{\psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,\psi .
 $$
 
 Written out, the two $i$'s stand next to each other, and $i\cdot i = -1$:
 
 $$
-j_\mu = \psi^{\dagger}\,iR_{\vec e_x}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,\psi
-= -\psi^{\dagger}R_{\vec e_x}L_{e_\mu}R_{\vec e_{\nu(\mu)}}\,\psi .
+j_\mu = \psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{pau}}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,\psi
+= -\psi^{\dagger}R_{\vec e_x}^{\mathrm{pau}}L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,\psi .
 $$
 
 The adjacent cells then combine into one, so the bilinear reduces to
@@ -403,13 +403,13 @@ $$
 j_\mu =
 \begin{cases}
 \psi^{\dagger}\psi, & \mu = t,\\[4pt]
-\psi^{\dagger}L_{\vec e_k}R_{\vec e_z}\psi, & \mu = k,
+\psi^{\dagger}L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\psi, & \mu = k,
 \end{cases}
 $$
 
-using $R_{\vec e_x}L_{e_t}R_{\vec e_x} = -e_t$ and $R_{\vec e_x}L_{e_k}R_{\vec e_y} = -L_{\vec e_k}R_{\vec e_z}$, which are the cell identities $R_{\vec e_x}^{2} = -e_t$ and $\vec e_y\vec e_x = -\vec e_z$ read through $L_aR_bL_cR_d = L_{ac}R_{db}$. The time component is the density $\psi^{\dagger}\psi$ and the spatial ones are the usual $\psi^{\dagger}\alpha_k\psi$; that the reduction lands on those two is the check that the transcription is the standard one.
+using $R_{\vec e_x}^{\mathrm{pau}}L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = -e_t$ and $R_{\vec e_x}^{\mathrm{pau}}L_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}} = -L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, which are the cell identities $(R_{\vec e_x}^{\mathrm{pau}})^{2} = -e_t$ and $\vec e_y\vec e_x = -\vec e_z$ read through $L_aR_bL_cR_d = L_{ac}R_{db}$. The time component is the density $\psi^{\dagger}\psi$ and the spatial ones are the usual $\psi^{\dagger}\alpha_k\psi$; that the reduction lands on those two is the check that the transcription is the standard one.
 
-The factor $iR_{\vec e_x}$ is Clifford-**odd**. It is not in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$, and it is exactly the extra ingredient that the biquaternion formulation needs to recover the four-component Dirac spinor from its pair of Weyl spinors. A bilinear formed only from $\tilde{\Psi}$ and $\tilde{\Psi}^{*}$ inside $\mathbb{B}$ cannot supply it, which is why the naive product fails. The physical current therefore lies partly **outside** the algebra. That the electron's current is nevertheless an $\mathbb{M}_-$ four-vector — $\tilde J = ic\rho\,e_t + \vec J$ with $c\rho = \psi^{\dagger}\psi$ and $\vec J = \sum_k\left(\psi^{\dagger}L_{\vec e_k}R_{\vec e_z}\psi\right)\vec e_k$ — is a statement about the spinor-module transcription, not about a product in $\mathbb{B}$.
+The factor $iR_{\vec e_x}^{\mathrm{pau}}$ is Clifford-**odd**. It is not in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$, and it is exactly the extra ingredient that the biquaternion formulation needs to recover the four-component Dirac spinor from its pair of Weyl spinors. A bilinear formed only from $\tilde{\Psi}$ and $\tilde{\Psi}^{*}$ inside $\mathbb{B}$ cannot supply it, which is why the naive product fails. The physical current therefore lies partly **outside** the algebra. That the electron's current is nevertheless an $\mathbb{M}_-$ four-vector — $\tilde J = ic\rho\,e_t + \vec J$ with $c\rho = \psi^{\dagger}\psi$ and $\vec J = \sum_k\left(\psi^{\dagger}L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\psi\right)\vec e_k$ — is a statement about the spinor-module transcription, not about a product in $\mathbb{B}$.
 
 This is the same representation question as the left/right action of the previous sections, met from the current side. The parent Dirac article's open question flags the representation conventions; this article records that they are not idle. The biquaternion form of the conserved current, and the sense in which the sourced Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is fed by the Dirac field, remain open.
 
@@ -432,7 +432,7 @@ The right-hand side is the pairing of the boson potential with the matter source
 
 The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \varphi\rho - \vec A\cdot\vec J$, that is, $\frac{1}{2\mu_0}\sum_{\mu,\nu}F_{\mu\nu}F^{\mu\nu} = -\sum_\sigma A_\sigma J^\sigma$ in the $(+{-}{-}{-})$ signature, the minus being the signature's; the mixed form above is the general one.
 
-**Domain.** The matter fields of the source are built from its own biquaternion Dirac field, in its own conventions, and are read off a Maxwell-like system that costs one of the field's four components: the constraint $\psi_0 = -c\beta\sum_k iL_{\vec e_k}R_{\vec e_y}\psi_k$ must be imposed, and the source's Appendix B gives the modified system that replaces it, with an extra real field $\Lambda=\beta\psi_0+c\sum_k iL_{\vec e_k}R_{\vec e_y}\psi_k$ appearing in all four equations. The identity is therefore stated on the constrained system, and it is a statement about the source's field strengths, not about the corpus's $\tilde{\Psi}$ or about its $\sqrt{\mu}\,\tilde{J}$.
+**Domain.** The matter fields of the source are built from its own biquaternion Dirac field, in its own conventions, and are read off a Maxwell-like system that costs one of the field's four components: the constraint $\psi_0 = -c\beta\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\psi_k$ must be imposed, and the source's Appendix B gives the modified system that replaces it, with an extra real field $\Lambda=\beta\psi_0+c\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\psi_k$ appearing in all four equations. The identity is therefore stated on the constrained system, and it is a statement about the source's field strengths, not about the corpus's $\tilde{\Psi}$ or about its $\sqrt{\mu}\,\tilde{J}$.
 
 Written as a residual, with the source's own residual combinations $r_5,\dots,r_8$ of its fields — the vectors $\vec r_6,\vec r_7$ and the scalars $r_5,r_8$ —
 
@@ -453,7 +453,7 @@ $$
 \boxed{\;\left(\mathbb{D}_A - \frac{mc}{\hbar}\right)\psi = 0\;}
 $$
 
-With the linear mass the equation is gauge covariant in the standard way, the conserved current is the spinor-module bilinear $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$, and the standard consequences — the tree-level gyromagnetic factor $g = 2$, the correct non-relativistic limit, the magnetic moment — follow by the computations of the companion articles on the electron and on the solutions and non-relativistic limit. Those results are not repeated here; the point for this article is that they are obtained with a **linear** mass term, which is exactly the form the parent's biquaternion equation carries, so the transcription and the standard treatment agree on the massive sector as well as on the massless one.
+With the linear mass the equation is gauge covariant in the standard way, the conserved current is the spinor-module bilinear $j_\mu = \bar{\psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$, and the standard consequences — the tree-level gyromagnetic factor $g = 2$, the correct non-relativistic limit, the magnetic moment — follow by the computations of the companion articles on the electron and on the solutions and non-relativistic limit. Those results are not repeated here; the point for this article is that they are obtained with a **linear** mass term, which is exactly the form the parent's biquaternion equation carries, so the transcription and the standard treatment agree on the massive sector as well as on the massless one.
 
 This is also where the module question of the previous subsection is answered in practice. On the four-component column the gauge transformation is the scalar multiplication $\psi\mapsto\lambda\psi$, which multiplies both Weyl components by the same factor, and the covariance checked in the standard theory is the covariance of that multiplication. The algebra's left action reproduces the connection term of the spinor-module derivative; how its scalar multiplication is to be written inside the algebra is the remaining question, and it is the one the module reading of $\Delta$ leaves open.
 
@@ -487,7 +487,7 @@ What the algebra forces and what it merely rewrites in its own notation are easi
 
 2. **The matter representation.** The gauge principle produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which action — which spinor module — is the physical Dirac field in? On $\Delta = S\oplus S^{\mathrm c}$ the vector phase is not a left multiplication by any element at all, so the module and the transformation law cannot be chosen independently. What fixes them inside the algebra?
 
-3. **The interaction current.** The naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is in $\mathbb{M}_-$ but is not conserved: the plane wave $\phi = \exp(iQ_x - Q_t)e_t$ gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_\Psi) = -4i\,e^{-2Q_t}$. The physical current uses the Clifford-odd $iR_{\vec e_x}$, outside $\mathbb{B}$. Is there a biquaternion-natural current, perhaps on a restricted module, or is the current irreducibly a representation-level object?
+3. **The interaction current.** The naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is in $\mathbb{M}_-$ but is not conserved: the plane wave $\phi = \exp(iQ_x - Q_t)e_t$ gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_\Psi) = -4i\,e^{-2Q_t}$. The physical current uses the Clifford-odd $iR_{\vec e_x}^{\mathrm{pau}}$, outside $\mathbb{B}$. Is there a biquaternion-natural current, perhaps on a restricted module, or is the current irreducibly a representation-level object?
 
 4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, and does the coupled system close on the algebra or require the spinor module? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{\Psi}$, so it does not by itself close the corpus's system.
 
@@ -504,7 +504,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the left and right multiplications of the regular module, and $c(M)$ for the matrix of a cell in the basis of the sixteen products. The four gammas and $\gamma_5$ are single cells:
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 A single cell is a tensor $a\otimes b$ read through $L_aR_b$, so its coefficient matrix has rank one; the cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and every element of $M_4(\mathbb{C})$ is a sum of at most four of them.
@@ -583,7 +583,7 @@ $$
 
 The covariance statement is the algebra reading, in which $\lambda$ is one central element multiplying the field from the left. On the Dirac module the same left multiplication is the axial rotation: the two members acquire $\lambda$ and $\bar\lambda$, and the mass term is not invariant there. The biquaternion form of the statement that a Majorana-type mass term — built on the antilinear real structure $\flat$ — is incompatible with a gauged continuous $\mathrm{U}(1)$ is given in the companion articles on the neutrino and on chirality; the standard linear Dirac mass, which is the parent's form, does not have that obstruction, and on the spinor module the standard minimal coupling is recovered.
 
-The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is not conserved on solutions of the massless equation: the field $\tilde\Psi = \tilde{\nabla}^{\natural}\phi$ built on the null plane wave $\phi = \exp(iQ_x - Q_t)e_t$ gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_\Psi) = -4i\,e^{-2Q_t}$. The physical current is the spinor-module bilinear $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$, whose Dirac adjoint uses the Clifford-odd $iR_{\vec e_x}$ outside $\mathbb{B}$; there the two $i$'s multiply to $-1$ and the adjacent cells combine, leaving $\psi^{\dagger}\psi$ for $\mu=t$ and $\psi^{\dagger}\alpha_k\psi$ for $\mu=k$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the axial symmetry of the massive sector.
+The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is not conserved on solutions of the massless equation: the field $\tilde\Psi = \tilde{\nabla}^{\natural}\phi$ built on the null plane wave $\phi = \exp(iQ_x - Q_t)e_t$ gives $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde J_\Psi) = -4i\,e^{-2Q_t}$. The physical current is the spinor-module bilinear $j_\mu = \bar{\psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$, whose Dirac adjoint uses the Clifford-odd $iR_{\vec e_x}^{\mathrm{pau}}$ outside $\mathbb{B}$; there the two $i$'s multiply to $-1$ and the adjacent cells combine, leaving $\psi^{\dagger}\psi$ for $\mu=t$ and $\psi^{\dagger}\alpha_k\psi$ for $\mu=k$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the axial symmetry of the massive sector.
 
 One external result is recorded on the source side, and it is not a development of the framework: the identity of A. I. Arbab (arXiv:1708.06230v2), by which the mixed invariant of the two coupled field strengths is fixed by the pairing of the potential with the four-current. It is a constraint following from that source's own four equations, verified exactly here, and its other claims are not adopted. It is recorded because it has the shape that Open Question 4 asks for, and because the corpus has no statement of that shape.
 
@@ -594,7 +594,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $\mathrm{Sc}(\tilde Q) = \tfrac12\,\mathrm{Tr}\,\tilde Q$ | Scalar part: the coefficient of $e_t$, and half the trace of the $2\times2$ matrix |
-| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $L_{a}R_{b}\psi = a\psi b$ | Generator cells; $iR_{\vec e_x} = iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ |
+| $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, $L_{a}R_{b}\psi = a\psi b$ | Generator cells; $iR_{\vec e_x}^{\mathrm{pau}} = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
@@ -614,14 +614,14 @@ One external result is recorded on the source side, and it is not a development 
 | $\bar{D} = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ | Its $\natural$-image; the operator of the second member of the pair |
 | $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = -(i/c)\,\partial/\partial t'$ |
 | $\nu(\mu)$ | Cell index: $\nu(t)=x$, $\nu(k)=y$ |
-| $\alpha_k = L_{\vec e_k}R_{\vec e_z}$ | The spatial Dirac matrices in the cell frame (Hermitian, $\alpha_k^2 = I_4$) |
+| $\alpha_k = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | The spatial Dirac matrices in the cell frame (Hermitian, $\alpha_k^2 = I_4$) |
 | $\tilde{F}$ | Field-strength biquaternion; $\bar{D}D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ |
 | $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Minimally coupled Dirac equation |
 | $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ | Interaction term |
 | $\exp(2iϙ\Gamma/\hbar)$ | Phase that an antilinear (Majorana-type) mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
 | $\|\tilde\Psi\|_E^2 = \mathrm{Sc}(\tilde\Psi\tilde\Psi^{*})$ | Euclidean modulus squared; real and $\ge 0$, the sum of the four squared coefficient moduli |
 | $\tilde J_{\Psi} = i\tilde{\Psi}\tilde{\Psi}^{*}$ | Naive bilinear; gauge invariant, in $\mathbb{M}_-$, **not conserved** |
-| $j_\mu = \bar{\psi}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$, $\bar{\psi} = \psi^\dagger iR_{\vec e_x}$ | Spinor-module conserved current (involves the Clifford-odd $iR_{\vec e_x}$) |
+| $j_\mu = \bar{\psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$, $\bar{\psi} = \psi^\dagger iR_{\vec e_x}^{\mathrm{pau}}$ | Spinor-module conserved current (involves the Clifford-odd $iR_{\vec e_x}^{\mathrm{pau}}$) |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Four-current; the Maxwell source is $\sqrt{\mu}\,\tilde J$ |
 | $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ | Biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

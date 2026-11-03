@@ -6,31 +6,31 @@ A **nonlinear Dirac equation** is a Dirac equation with a self-interaction term.
 
 Two models dominate the literature, and they fill the two channels other than the axial one. The **Thirring model** (Thirring 1958) is a $1+1$-dimensional theory whose interaction is the square of the vector current, contracted with the metric, $-\frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu$; it is exactly solvable and is the field-theory side of the bosonisation correspondence with the sine-Gordon model. The **Soler model** (Soler 1970) is a $3+1$-dimensional theory whose interaction is the square of the scalar bilinear, $\frac{g}{2}\left(\bar\psi\psi\right)^2$; it is the mean-field relative of the Nambu–Jona-Lasinio four-fermion interaction, and it is the model in which exact closed-form solutions have been found.
 
-Here $V_\mu=\bar\psi\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$, where $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the **generator cell** of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, and $\varepsilon_\mu=g_{\mu\mu}$ is the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{M}_-$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
+Here $V_\mu=\bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$, where $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ is the **generator cell** of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, and $\varepsilon_\mu=g_{\mu\mu}$ is the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{M}_-$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
 
-This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the fermion bilinears they use, and gives the biquaternion interpretation. The framework's contribution is a **placement of the channels**: each quartic interaction is built from one of the local bilinears — the scalar density $S = \bar\psi\psi$, the vector current $V_\mu = \bar\psi\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$, the axial current $A_\mu = \bar\psi\,c^{(5)}_\mu\psi$ — and each of these has a definite place in the framework's structure. $S$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. $V_\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. $A_\mu$ is the axial current, and the framework's linear mass is precisely what breaks its conservation; an axial-axial self-interaction is therefore a coupling in the channel conjugate to the mass. A quartic interaction is also **bosonic**: it is even in the fermion field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.
+This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the fermion bilinears they use, and gives the biquaternion interpretation. The framework's contribution is a **placement of the channels**: each quartic interaction is built from one of the local bilinears — the scalar density $S = \bar\psi\psi$, the vector current $V_\mu = \bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$, the axial current $A_\mu = \bar\psi\,c^{(5)}_\mu\psi$ — and each of these has a definite place in the framework's structure. $S$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. $V_\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. $A_\mu$ is the axial current, and the framework's linear mass is precisely what breaks its conservation; an axial-axial self-interaction is therefore a coupling in the channel conjugate to the mass. A quartic interaction is also **bosonic**: it is even in the fermion field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.
 
-What the framework does **not** supply is equally definite, and follows from the minimal-coupling article. Every one of the bilinears above is a spinor-module object: the Dirac adjoint $\bar\psi = i\psi^\dagger L_{e_t}R_{\vec e_x}$ carries the Clifford-odd cell $iL_{e_t}R_{\vec e_x}$ — $L_{a}R_{b}$ is the two-sided multiplication, $L_{a}R_{b}\psi = a\psi b$ — and the axial cells are the generator cells times the chirality cell $-iL_{e_t}R_{\vec e_z}$; none of these is in the left copy $\mathbb{B}_L$, because each is a two-sided cell of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$. The framework names the channels and places them in its sectors; it does not derive the self-interaction from a product in the algebra, and it adds no solution, coupling or prediction of its own.
+What the framework does **not** supply is equally definite, and follows from the minimal-coupling article. Every one of the bilinears above is a spinor-module object: the Dirac adjoint $\bar\psi = i\psi^\dagger L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ carries the Clifford-odd cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ — $L_{a}R_{b}$ is the two-sided multiplication, $L_{a}R_{b}\psi = a\psi b$ — and the axial cells are the generator cells times the chirality cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$; none of these is in the left copy $\mathbb{B}_L$, because each is a two-sided cell of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$. The framework names the channels and places them in its sectors; it does not derive the self-interaction from a product in the algebra, and it adds no solution, coupling or prediction of its own.
 
 The article is organised as follows. The next section fixes the cells and the two writings of the free equation. A section then explains why a self-interaction is cubic and how geometry produces one. A section states the Thirring and Soler models. A section writes the Hehl–Datta equation in cells and fixes its coefficient. A section lists the local bilinears and the channel each model uses. A section gives the biquaternion interpretation. A section records the two-dimensional relations verified here in exact arithmetic. A later section states the same objects in the matrix notation of the sources, so that the two can be compared term by term. The closing sections are the open questions, the summary, the notation table and the literature.
 
 ## The Cells and the Two Equations
 
-The conventions are those of the companion articles. A two-sided multiplication is written once for all, $L_{a}R_{b}\psi = a\psi b$, with $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ and identity $L_{e_t}R_{e_t}$; the short form $iR_{\vec e_x}$ stands for $iL_{e_t}R_{\vec e_x}$.
+The conventions are those of the companion articles. A two-sided multiplication is written once for all, $L_{a}R_{b}\psi = a\psi b$, with $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ and identity $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$; the short form $iR_{\vec e_x}^{\mathrm{pau}}$ stands for $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$.
 
 ### The Generator Cells
 
-The four cells $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ are the generators, and their squares are the squares of the units times $i^2 = -1$:
+The four cells $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ are the generators, and their squares are the squares of the units times $i^2 = -1$:
 
 $$
-\left(iL_{e_t}R_{\vec e_x}\right)^2=i^2L_{e_t}R_{\vec e_x^2}=-L_{e_t}R_{-e_t}=+L_{e_t}R_{e_t},\qquad
-\left(iL_{\vec e_k}R_{\vec e_y}\right)^2=i^2L_{\vec e_k^2}R_{\vec e_y^2}=(-1)\left(-L_{e_t}\right)\left(-R_{e_t}\right)=-L_{e_t}R_{e_t}.
+\left(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\right)^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\left(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\right)^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)\left(-L_{e_t}^{\mathrm{pau}}\right)\left(-R_{e_t}^{\mathrm{pau}}\right)=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
 $$
 
-So the timelike generator squares to $+L_{e_t}R_{e_t}$ and the three spatial ones to $-L_{e_t}R_{e_t}$. The timelike generator anticommutes with each spatial one, because the left factor $e_t$ contributes no sign while the right factors $\vec e_x$ and $\vec e_y$ anticommute. The whole set therefore satisfies
+So the timelike generator squares to $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and the three spatial ones to $-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. The timelike generator anticommutes with each spatial one, because the left factor $e_t$ contributes no sign while the right factors $\vec e_x$ and $\vec e_y$ anticommute. The whole set therefore satisfies
 
 $$
-\left\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\rho}R_{\vec e_{\nu(\rho)}}\right\}=2g_{\mu\rho}L_{e_t}R_{e_t},
+\left\{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\rho}^{\mathrm{pau}}R_{\vec e_{\nu(\rho)}}^{\mathrm{pau}}\right\}=2g_{\mu\rho}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad g=\mathrm{diag}(+1,-1,-1,-1).
 $$
 
@@ -38,31 +38,31 @@ This is the sign the frame of the cells carries, the $\mathbb{M}_-$ frame of the
 
 ### The Chirality and the Axial Cells
 
-The chirality cell is $-iL_{e_t}R_{\vec e_z}$, and its square is again $i^2$:
+The chirality cell is $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, and its square is again $i^2$:
 
 $$
-\left(-iL_{e_t}R_{\vec e_z}\right)^2=(-i)^2L_{e_t}R_{\vec e_z^2}=-L_{e_t}R_{-e_t}=+L_{e_t}R_{e_t},
+\left(-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\right)^2=(-i)^2L_{e_t}^{\mathrm{pau}}R_{\vec e_z^2}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 so the chirality is an involution of the cell algebra, and it anticommutes with each generator: the two imaginary factors multiply to $-i^2=+1$, and the units supply the minus, $\vec e_z\vec e_x=\vec e_y$ on one side against $\vec e_x\vec e_z=-\vec e_y$ on the other. The **axial cells** are the generators times the chirality cell,
 
 $$
-c^{(5)}_\mu:=\left(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\right)\left(-iL_{e_t}R_{\vec e_z}\right)=-i^2L_{e_\mu}R_{\vec e_z\vec e_{\nu(\mu)}}=+L_{e_\mu}R_{\vec e_z\vec e_{\nu(\mu)}},
+c^{(5)}_\mu:=\left(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\right)\left(-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\right)=-i^2L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z\vec e_{\nu(\mu)}}^{\mathrm{pau}}=+L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z\vec e_{\nu(\mu)}}^{\mathrm{pau}},
 $$
 
-so that $c^{(5)}_0=L_{e_t}R_{\vec e_y}$ and $c^{(5)}_k=-L_{\vec e_k}R_{\vec e_x}$, on using $\vec e_z\vec e_x=\vec e_y$ and $\vec e_z\vec e_y=-\vec e_x$. One difference from the generators is worth recording: each axial cell is a generator cell times the chirality cell, so two of them anticommute to $-2g_{\mu\rho}$ rather than $+2g_{\mu\rho}$,
+so that $c^{(5)}_0=L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ and $c^{(5)}_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, on using $\vec e_z\vec e_x=\vec e_y$ and $\vec e_z\vec e_y=-\vec e_x$. One difference from the generators is worth recording: each axial cell is a generator cell times the chirality cell, so two of them anticommute to $-2g_{\mu\rho}$ rather than $+2g_{\mu\rho}$,
 
 $$
-\left\{c^{(5)}_\mu,c^{(5)}_\rho\right\}=-2g_{\mu\rho}L_{e_t}R_{e_t},
+\left\{c^{(5)}_\mu,c^{(5)}_\rho\right\}=-2g_{\mu\rho}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 and the axial cells generate the same Clifford algebra as the generators with the overall sign of the metric reversed. The Dirac adjoint is
 
 $$
-\bar\psi = i\psi^\dagger L_{e_t}R_{\vec e_x},
+\bar\psi = i\psi^\dagger L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},
 $$
 
-and the cell $iL_{e_t}R_{\vec e_x}$ that it carries is what makes a bilinear a two-sided object.
+and the cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ that it carries is what makes a bilinear a two-sided object.
 
 ### The Two Writings of the Free Equation
 
@@ -74,7 +74,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
 $$
 
-in which the gradient acts by **left** multiplication on the field and the mass couples the two chiral halves; collected in the pair operator of the conventions article, this is the **one-sided** writing, with $\mathbb{D}^2=\Box I$ and $\Box=\sum_\mu\varepsilon_\mu\partial_\mu^2=\partial_t^2-\nabla^2$ in this frame. The **two-sided** writing is the cell operator $i\sum_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial_\mu$ acting on the module, and it is the one this article needs, because every bilinear and every interaction below is a two-sided cell between $\bar\psi$ and $\psi$. The two writings describe one dynamics: each is first order, and each squares to the d'Alembertian, $\left(i\sum_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial_\mu\right)^2=\Box\,L_{e_t}R_{e_t}$, with the same $\Box$. The spinor equations used in the sections that follow are the representatives in which the literature models are defined. The biquaternionic transcription of each interaction is the open point, and the first item of *Open Questions* names it.
+in which the gradient acts by **left** multiplication on the field and the mass couples the two chiral halves; collected in the pair operator of the conventions article, this is the **one-sided** writing, with $\mathbb{D}^2=\Box I$ and $\Box=\sum_\mu\varepsilon_\mu\partial_\mu^2=\partial_t^2-\nabla^2$ in this frame. The **two-sided** writing is the cell operator $i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu$ acting on the module, and it is the one this article needs, because every bilinear and every interaction below is a two-sided cell between $\bar\psi$ and $\psi$. The two writings describe one dynamics: each is first order, and each squares to the d'Alembertian, $\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\right)^2=\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, with the same $\Box$. The spinor equations used in the sections that follow are the representatives in which the literature models are defined. The biquaternionic transcription of each interaction is the open point, and the first item of *Open Questions* names it.
 
 ## Why the Dirac Equation Becomes Nonlinear
 
@@ -83,7 +83,7 @@ in which the gradient acts by **left** multiplication on the field and the mass 
 The free Dirac equation is linear, and its solutions form a vector space. A self-interaction is a term built from the field itself. Lorentz covariance and the absence of derivatives leave only the local quartic combinations of the Lorentz-covariant bilinears, a finite set because the bilinears themselves are finite in number. A bilinear is quadratic in $\psi$, so a product of two bilinears is quartic in the field, and a quartic term of the Lagrangian varies into a term cubic in the field: varying one of the two bilinears leaves the other standing as the coefficient. Writing $B(\psi)$ for the bilinear built from the field, the equation keeps the shape
 
 $$
-\left(i\sum_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial_\mu - m\right)\psi + B(\psi)\,\psi = 0,
+\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu - m\right)\psi + B(\psi)\,\psi = 0,
 $$
 
 in which $B$ is quadratic in $\psi$ and the explicit field supplies the third power. The equation is nonlinear in the field and no worse than cubic: the word names the self-coupling, not a higher degree.
@@ -101,14 +101,14 @@ The Thirring model is defined in $1+1$ dimensions by the Lagrangian density
 $$
 \boxed{\;
 \begin{aligned}
-\mathcal{L} &= \bar\psi\,i\sum_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial_\mu\psi - m\,\bar\psi\psi
+\mathcal{L} &= \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\psi - m\,\bar\psi\psi
 - \frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu ,\\[4pt]
-V_\mu &= \bar\psi\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi ,
+V_\mu &= \bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi ,
 \end{aligned}
 \;}
 $$
 
-with $\psi=\left(\psi_+,\psi_-\right)$ a two-component spinor, one component per chirality, $g$ the coupling and $m$ the mass. The sums over $\mu$ run over $t$ and $x$ only, and the two-dimensional generator cells are $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_x}R_{\vec e_y}$. The kinetic part is the cell operator restricted to the two coordinates $t$ and $x$, and the mass term is the scalar density $\bar\psi\psi$, which in the one-sided reading is the off-diagonal pairing of the two chiral halves; the two writings are the two-sided and the one-sided form of one dynamics.
+with $\psi=\left(\psi_+,\psi_-\right)$ a two-component spinor, one component per chirality, $g$ the coupling and $m$ the mass. The sums over $\mu$ run over $t$ and $x$ only, and the two-dimensional generator cells are $iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The kinetic part is the cell operator restricted to the two coordinates $t$ and $x$, and the mass term is the scalar density $\bar\psi\psi$, which in the one-sided reading is the off-diagonal pairing of the two chiral halves; the two writings are the two-sided and the one-sided form of one dynamics.
 
 The quartic terms of the two-dimensional theory are not independent. The spinor has four real components, and the Fierz rearrangement identities of the two-dimensional Clifford algebra relate the quartic terms to one another. In particular the vector–vector and axial–axial combinations are the same operator up to sign, because the axial current is the two-dimensional Hodge dual of the vector current — the identity verified in exact arithmetic at the end of this article, where the two-dimensional chirality cell is the one the axial current of this model must use — so a single coupling $g$ covers the current–current model.
 
@@ -119,29 +119,29 @@ The **massless** Thirring model is exactly solvable: the multipoint correlation 
 The Soler model is defined in $3+1$ dimensions by
 
 $$
-\boxed{\;\mathcal{L} = \bar\psi\,i\sum_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial_\mu\psi - m\,\bar\psi\psi
+\boxed{\;\mathcal{L} = \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\psi - m\,\bar\psi\psi
 + \frac{g}{2}\left(\bar\psi\psi\right)^2\;},
 $$
 
-with $\psi$ a four-component spinor and the sums over all four $\mu$: the generator cells are the four of the conventions above, $\nu(t)=x$ and $\nu(k)=y$. Its interaction is the square of the **scalar** bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $P_5^2$, the square of the parity-odd density of the bilinear table. The two belong together because the axial phase rotates $S$ into its partner: the companion article on the chiral condensate writes the rotation as multiplication by $\exp\left(2i\alpha\left(-iR_{\vec e_z}\right)\right)$, that is $S\mapsto\cos 2\alpha\,S+\sin 2\alpha\,P_5$, and reads the pair as a two-component order parameter. $S^2+P_5^2$ is the combination that rotation leaves fixed, which is why the pair of squares is the chirally invariant NJL interaction.
+with $\psi$ a four-component spinor and the sums over all four $\mu$: the generator cells are the four of the conventions above, $\nu(t)=x$ and $\nu(k)=y$. Its interaction is the square of the **scalar** bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $P_5^2$, the square of the parity-odd density of the bilinear table. The two belong together because the axial phase rotates $S$ into its partner: the companion article on the chiral condensate writes the rotation as multiplication by $\exp\left(2i\alpha\left(-iR_{\vec e_z}^{\mathrm{pau}}\right)\right)$, that is $S\mapsto\cos 2\alpha\,S+\sin 2\alpha\,P_5$, and reads the pair as a two-component order parameter. $S^2+P_5^2$ is the combination that rotation leaves fixed, which is why the pair of squares is the chirally invariant NJL interaction.
 
 ## The Hehl–Datta Interaction from Torsion
 
 The geometric route of the earlier section gives the equation
 
 $$
-\boxed{\;\Big(i\sum_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\nabla_\mu - m\Big)\psi
+\boxed{\;\Big(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\nabla_\mu - m\Big)\psi
 + \frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,c^{(5)}_\mu\psi = 0\;},
 $$
 
 in which the kinetic operator is the cell operator of *The Cells and the Two Equations*, and its single factor $i$ multiplies the whole sum, so that
 
 $$
-i\sum_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\nabla_\mu\psi
+i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\nabla_\mu\psi
 =i\Big(\left(\nabla_t\psi\right)\vec e_x + \sum_k \vec e_k\left(\nabla_k\psi\right)\vec e_y\Big),
 $$
 
-the $t$ term being the right multiplication of $\nabla_t\psi$ by $\vec e_x$ and the three spatial terms the left multiplication of $\nabla_k\psi$ by $\vec e_k$ followed by the right multiplication by $\vec e_y$. The factor $i^2=-1$ enters one power later, not here: the sum without it squares to $-\Box L_{e_t}R_{e_t}$, because the time cell squares to $+L_{e_t}R_{e_t}$ and each spatial one to $-L_{e_t}R_{e_t}$, so the square of the operator as written is $+\Box L_{e_t}R_{e_t}$. Here $\nabla_\mu$ is the general-relativistic covariant derivative of a spinor, $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant, and the interaction is the axial-axial contact term produced by the torsion of the spinor's own spin. The coefficient $3\kappa/8$ is fixed by the geometry, not chosen. Since $\kappa$ has the dimensions of an inverse mass squared and $A_\mu$ has those of a number density, the cubic term matches $m\psi$ only when $\kappa A_\mu\sim m$, that is at densities $\bar\psi\psi\sim m/\kappa\sim m\,M_P^2$ with $M_P$ the Planck mass — some forty orders of magnitude above nuclear density for a nucleon, so the interaction is a high-density effect and nothing else.
+the $t$ term being the right multiplication of $\nabla_t\psi$ by $\vec e_x$ and the three spatial terms the left multiplication of $\nabla_k\psi$ by $\vec e_k$ followed by the right multiplication by $\vec e_y$. The factor $i^2=-1$ enters one power later, not here: the sum without it squares to $-\Box L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, because the time cell squares to $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and each spatial one to $-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, so the square of the operator as written is $+\Box L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. Here $\nabla_\mu$ is the general-relativistic covariant derivative of a spinor, $\kappa = 8\pi G/c^4$ is the Einstein gravitational constant, and the interaction is the axial-axial contact term produced by the torsion of the spinor's own spin. The coefficient $3\kappa/8$ is fixed by the geometry, not chosen. Since $\kappa$ has the dimensions of an inverse mass squared and $A_\mu$ has those of a number density, the cubic term matches $m\psi$ only when $\kappa A_\mu\sim m$, that is at densities $\bar\psi\psi\sim m/\kappa\sim m\,M_P^2$ with $M_P$ the Planck mass — some forty orders of magnitude above nuclear density for a nucleon, so the interaction is a high-density effect and nothing else.
 
 If the torsion is allowed to propagate rather than to be eliminated algebraically, the same nonlinear structure survives with the coefficient replaced by a term of magnitude $X^2/M^2$, with $X$ the spinor–torsion coupling and $M$ the torsion mass. The sign is the one the convention gives: with the natural sign the axial-axial interaction is **repulsive**, so it cannot by itself condense the field, and the scale is set by the torsion mass. The two routes — a non-propagating torsion fixed by gravity, and a propagating torsion with its own mass — therefore give the same axial-axial channel with different coefficients, which is the reason the channel is regarded as the generic one rather than a special choice.
 
@@ -154,15 +154,15 @@ A single Dirac field has five types of local bilinear, classified by their Loren
 | Bilinear | Name | Lorentz type | Behaviour under parity |
 |---|---|---|---|
 | $S = \bar\psi\psi$ | Scalar | scalar | even |
-| $P_5 = \bar\psi\left(-iL_{e_t}R_{\vec e_z}\right)\psi$ | Pseudoscalar | pseudoscalar | odd |
-| $V_\mu = \bar\psi\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$ | Vector (current) | four-vector | $V_0$ even, $V_k$ odd |
+| $P_5 = \bar\psi\left(-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\right)\psi$ | Pseudoscalar | pseudoscalar | odd |
+| $V_\mu = \bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$ | Vector (current) | four-vector | $V_0$ even, $V_k$ odd |
 | $A_\mu = \bar\psi\,c^{(5)}_\mu\psi$ | Axial vector | four-vector | $A_0$ odd, $A_k$ even |
 | $T_{\mu\nu} = \bar\psi\sigma_{\mu\nu}\psi$ | Tensor | antisymmetric rank 2 | $T_{0k}$ odd, $T_{jk}$ even |
 
 The last column is the reason the axial vector is the parity partner of the vector: their time parts carry opposite parity, and so do their space parts. The two-dimensional form of the same statement is the Hodge duality verified at the end of the article. Each bilinear is quadratic in the field. The tensor entry is the antisymmetric product of two generator cells,
 
 $$
-\sigma_{\mu\rho} = \tfrac{i}{2}\left[iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\rho}R_{\vec e_{\nu(\rho)}}\right]
+\sigma_{\mu\rho} = \tfrac{i}{2}\left[iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\rho}^{\mathrm{pau}}R_{\vec e_{\nu(\rho)}}^{\mathrm{pau}}\right]
 $$
 
 acting between the adjoint and the field, with $\sigma_{0k}\psi = i\,\vec e_k\,\psi\,\vec e_z$ and $\sigma_{jk}\psi = i\,\vec e_j \vec e_k\,\psi$ for $j\ne k$, so that $\sigma_{0k}$ multiplies on both sides and $\sigma_{jk}$ on the left only, while $\sigma_{\mu\mu}=0$. A local quartic interaction without derivatives is a Lorentz-covariant product of two bilinears, and only a few combinations are independent because the Fierz identities relate them. The parity-odd entry is a density, and its representative in the cell dictionary is the quaternion $P=\bar\psi\,\psi\,\vec e_z$, the object that appears on the right of the axial divergence below. A Lagrangian term squares the densities and not the quaternions: the quaternion product squares the unit as well, $P\cdot P=S^2\vec e_z^2=-S^2$, so it carries the opposite sign and would cancel the scalar term instead of adding to it. What enters the interaction is the density square $P_5^2$.
@@ -194,29 +194,29 @@ The three channels of the table map onto three different structures the framewor
 
 ### What the Framework Does Not Supply
 
-The identification above is a placement, not a derivation, and the boundary should be stated in the same terms as the companion articles. Each bilinear in the table is a spinor-module object. The scalar and vector bilinears require the Clifford-odd cell $iL_{e_t}R_{\vec e_x}$ of the Dirac adjoint; the pseudoscalar and axial bilinears require the chirality cell $-iL_{e_t}R_{\vec e_z}$ as well; neither cell lies in the left copy $\mathbb{B}_L \cong \mathbb{C}\ell_{1,3}^+$. The consequence is the one recorded in the minimal-coupling article: a bilinear built only from $\tilde\Psi$ and $\tilde\Psi^{*}$ inside $\mathbb{B}$ cannot supply these objects, and the self-interaction, like the current, is irreducibly a spinor-module statement. The framework transcribes the models, verifies the two-dimensional algebra of their channels, and locates each channel in its sectors. It supplies no coupling, no solution, no spectrum, and no prediction.
+The identification above is a placement, not a derivation, and the boundary should be stated in the same terms as the companion articles. Each bilinear in the table is a spinor-module object. The scalar and vector bilinears require the Clifford-odd cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ of the Dirac adjoint; the pseudoscalar and axial bilinears require the chirality cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ as well; neither cell lies in the left copy $\mathbb{B}_L \cong \mathbb{C}\ell_{1,3}^+$. The consequence is the one recorded in the minimal-coupling article: a bilinear built only from $\tilde\Psi$ and $\tilde\Psi^{*}$ inside $\mathbb{B}$ cannot supply these objects, and the self-interaction, like the current, is irreducibly a spinor-module statement. The framework transcribes the models, verifies the two-dimensional algebra of their channels, and locates each channel in its sectors. It supplies no coupling, no solution, no spectrum, and no prediction.
 
 Two further limits are inherited from other gaps. The Einstein–Cartan route needs a torsionful connection with a field equation; the companion article on curved spacetime records that the framework can carry the connection as an object of its own Lie subspace but generates no dynamics for it, so a biquaternion torsion is in that agenda and not in the constructed part. And the exact solubility of the massless Thirring model is a property of two-dimensional quantum field theory with no biquaternion counterpart: the framework can write the two-component reduction in its own cells, and it does not reproduce the solution.
 
 ## Verified Two-Dimensional Relations
 
-The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the cell algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{M}_-$ frame of the conventions article, $g=\mathrm{diag}(+1,-1)$: the generators are the cells $iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_x}R_{\vec e_y}$, and the two-dimensional chirality is their product, the cell $L_{\vec e_x}R_{\vec e_z}$.
+The two-dimensional identities on which the Thirring model's one coupling rests were checked directly, in exact arithmetic on the cell algebra over the Gaussian integers, so every residual below is exactly $0$ and not merely small. The frame is the $\mathbb{M}_-$ frame of the conventions article, $g=\mathrm{diag}(+1,-1)$: the generators are the cells $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, and the two-dimensional chirality is their product, the cell $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$.
 
 ### The Clifford Relations
 
 The two generators form the two-dimensional Clifford algebra, and their product is the chirality:
 
 $$
-\left(iL_{e_t}R_{\vec e_x}\right)^2=L_{e_t}R_{e_t},\qquad
-\left(iL_{\vec e_x}R_{\vec e_y}\right)^2=-L_{e_t}R_{e_t},\qquad
-\left\{iL_{e_t}R_{\vec e_x},iL_{\vec e_x}R_{\vec e_y}\right\}=0,\qquad
-iL_{e_t}R_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}=L_{\vec e_x}R_{\vec e_z},\qquad
-\left(L_{\vec e_x}R_{\vec e_z}\right)^2=L_{e_t}R_{e_t}.
+\left(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\right)^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\left(iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\right)^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\left\{iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\right\}=0,\qquad
+iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\,iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\qquad
+\left(L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\right)^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
 $$
 
 ### The Current Duality
 
-The axial current of the two-dimensional theory is built with the two-dimensional chirality, $A_\mu=\bar\psi\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,\chi_{\mathrm{2D}}\,\psi$ with $\chi_{\mathrm{2D}}=L_{\vec e_x}R_{\vec e_z}$, and not with the four-dimensional cell $c^{(5)}_\mu$ of the earlier section, which is built from the chirality of four dimensions: the chirality cell is a property of the dimension, so each dimension uses its own. With $\chi_{\mathrm{2D}}$ the duality is an identity of cells, with no free constant:
+The axial current of the two-dimensional theory is built with the two-dimensional chirality, $A_\mu=\bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,\chi_{\mathrm{2D}}\,\psi$ with $\chi_{\mathrm{2D}}=L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, and not with the four-dimensional cell $c^{(5)}_\mu$ of the earlier section, which is built from the chirality of four dimensions: the chirality cell is a property of the dimension, so each dimension uses its own. With $\chi_{\mathrm{2D}}$ the duality is an identity of cells, with no free constant:
 
 $$
 A_0=V_1,\qquad A_1=V_0 ,
@@ -258,15 +258,15 @@ Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}R_{\vec e_x}, &\gamma_1 &= iL_{\vec e_x}R_{\vec e_y},\\[2pt]
-\gamma_2 &= iL_{e_y}R_{\vec e_y}, &\gamma_3 &= iL_{e_z}R_{\vec e_y},\\[2pt]
-\gamma_5 &= -iL_{e_t}R_{\vec e_z}.
+\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2 &= iL_{e_y}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
 
 A single product $L_{a}R_{b}$ is a pure tensor $a\otimes b$; the single products form a seven-dimensional cone, of rank at most one, and a general element of the algebra is a sum of at most four of them.
 
-The axial cells are the products of a generator and the chirality cell: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{e_t}R_{\vec e_x}\cdot L_{e_t}R_{\vec e_z}=L_{e_t}R_{\vec e_z\vec e_x}=L_{e_t}R_{\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article **is** the $\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma^\mu\gamma_5\psi$ of the torsion literature.
+The axial cells are the products of a generator and the chirality cell: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\cdot L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{\vec e_z\vec e_x}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article **is** the $\left(\bar\psi\gamma_\mu\gamma_5\psi\right)\gamma^\mu\gamma_5\psi$ of the torsion literature.
 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
@@ -320,24 +320,24 @@ In each of the four the contracted generator is the same one on both sides, so i
 
 A nonlinear Dirac equation adds a self-interaction built from the field's bilinears to the free equation. The physically motivated case is geometric: in Einstein–Cartan theory the torsion sourced by the spinor's own spin, eliminated through its field equation, leaves the axial-axial Hehl–Datta term $\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,c^{(5)}_\mu\psi$ with a coefficient fixed by the gravitational constant. The two standard models use the other two channels: the Thirring model in $1+1$ dimensions uses the square of the vector current and is exactly solvable, with the massive case equivalent to sine-Gordon; the Soler model in $3+1$ dimensions uses the square of the scalar bilinear and is the mean-field relative of the NJL interaction.
 
-The biquaternion interpretation places the channels. The scalar density is the mass channel, whose expectation is the dynamical mass of the chiral-condensate article. The vector current is the material-sector current of the minimal-coupling and Gordon articles. The axial current is the channel the linear mass breaks, so an axial-axial interaction couples in the channel conjugate to the mass; the interaction the geometry supplies is repulsive, and the dynamical mass itself is generated in the scalar channel, where the mass term lives. Every quartic interaction is bosonic, so it passes through the framework's central phase and leaves the exact vector symmetry intact. Each bilinear, however, requires the Clifford-odd adjoint cell $iL_{e_t}R_{\vec e_x}$, and the pseudoscalar and axial ones the chirality cell $-iL_{e_t}R_{\vec e_z}$ as well, neither of which is in the left copy $\mathbb{B}_L$; the framework transcribes the models and locates their channels, and supplies no coupling, solution or prediction. The one exact algebraic fact about the models that the article verifies is two-dimensional: the axial current is the Hodge dual of the vector current, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-\sum_\mu\varepsilon_\mu V_\mu V_\mu$ and the Thirring model has a single coupling.
+The biquaternion interpretation places the channels. The scalar density is the mass channel, whose expectation is the dynamical mass of the chiral-condensate article. The vector current is the material-sector current of the minimal-coupling and Gordon articles. The axial current is the channel the linear mass breaks, so an axial-axial interaction couples in the channel conjugate to the mass; the interaction the geometry supplies is repulsive, and the dynamical mass itself is generated in the scalar channel, where the mass term lives. Every quartic interaction is bosonic, so it passes through the framework's central phase and leaves the exact vector symmetry intact. Each bilinear, however, requires the Clifford-odd adjoint cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, and the pseudoscalar and axial ones the chirality cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ as well, neither of which is in the left copy $\mathbb{B}_L$; the framework transcribes the models and locates their channels, and supplies no coupling, solution or prediction. The one exact algebraic fact about the models that the article verifies is two-dimensional: the axial current is the Hodge dual of the vector current, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-\sum_\mu\varepsilon_\mu V_\mu V_\mu$ and the Thirring model has a single coupling.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_k^2 = -e_t$, central $i$ |
-| $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided cell; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, identity $L_{e_t}R_{e_t}$ |
-| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | Generator cells: $iR_{\vec e_x} = iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ |
-| $i\sum_\mu L_{e_\mu}R_{\vec e_{\nu(\mu)}}\partial_\mu$ | Cell operator of the Dirac equation; its square is $\Box\,L_{e_t}R_{e_t}$, since $i^2=-1$ |
-| $c^{(5)}_\mu$ | Axial cells: $c^{(5)}_0 = L_{e_t}R_{\vec e_y}$, $c^{(5)}_k = -L_{\vec e_k}R_{\vec e_x}$ |
-| $\bar\psi = i\psi^\dagger L_{e_t}R_{\vec e_x}$ | Dirac adjoint (carries the Clifford-odd cell $iL_{e_t}R_{\vec e_x}$) |
-| $-iL_{e_t}R_{\vec e_z}$ | Chirality cell; its square is the identity cell $L_{e_t}R_{e_t}$ |
+| $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided cell; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, identity $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
+| $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ | Generator cells: $iR_{\vec e_x}^{\mathrm{pau}} = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ |
+| $i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu$ | Cell operator of the Dirac equation; its square is $\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, since $i^2=-1$ |
+| $c^{(5)}_\mu$ | Axial cells: $c^{(5)}_0 = L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $c^{(5)}_k = -L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ |
+| $\bar\psi = i\psi^\dagger L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | Dirac adjoint (carries the Clifford-odd cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$) |
+| $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell; its square is the identity cell $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
 | $S = \bar\psi\psi$ | Scalar density (mass channel) |
 | $P_5$, $P=\bar\psi\,\psi\,\vec e_z$ | Pseudoscalar density, the parity-odd partner of $S$; $P$ is its quaternion representative, whose quaternion square $P\cdot P=-S^2$ is a different object from the density square $P_5^2$ |
-| $V_\mu = \bar\psi\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\psi$ | Vector current (material sector in the framework) |
+| $V_\mu = \bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$ | Vector current (material sector in the framework) |
 | $A_\mu = \bar\psi\,c^{(5)}_\mu\psi$ | Axial current (channel broken by the mass); in two dimensions built with $\chi_{\mathrm{2D}}$ |
-| $\chi_{\mathrm{2D}} = L_{\vec e_x}R_{\vec e_z}$ | Chirality cell of two dimensions, the product of the two generators |
+| $\chi_{\mathrm{2D}} = L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell of two dimensions, the product of the two generators |
 | $\sum_\mu\varepsilon_\mu J_\mu K_\mu$ | Metric contraction of two currents |
 | $T_{\mu\nu} = \bar\psi\sigma_{\mu\nu}\psi$ | Tensor bilinear; $\sigma_{0k}\psi = i \vec e_k\psi \vec e_z$, $\sigma_{jk}\psi = i \vec e_j \vec e_k\psi$ for $j\ne k$, and $\sigma_{\mu\mu}=0$ |
 | $\sigma_{\mu\nu}$, $S_{cd}$ | Generators of the Lorentz algebra, $\sigma_{\mu\nu}=2iS_{\mu\nu}$; their commutator form is in *The Gamma Formulation* |

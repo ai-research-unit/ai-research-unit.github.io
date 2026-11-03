@@ -34,7 +34,7 @@ Over $\mathbb{C}$ the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is semisimple (*
 
 Every minimal left ideal is of the form $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$ (*Primitive Idempotents and Minimal Left Ideals*). The examples are $S_+$ and $S_-$ above.
 
-All minimal left ideals are isomorphic as left $\mathbb{B}$-modules. A general one is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent, and $\tilde\Pi$ is the image of $\tilde\Pi_+$ under an inner automorphism of $\mathbb{B}$ (*The Peirce Basis of the Biquaternion Algebra*, §*Systems of Matrix Units*), which carries $\mathbb{B}\tilde\Pi_+$ to $\mathbb{B}\tilde\Pi$. There is therefore one isomorphism class of simple left modules and, dually, one of simple right modules.
+All minimal left ideals are isomorphic as left $\mathbb{B}$-modules. A general one is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent, and $\tilde\Pi$ is the image of $\tilde\Pi_+$ under an inner automorphism of $\mathbb{B}$ (*The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*), which carries $\mathbb{B}\tilde\Pi_+$ to $\mathbb{B}\tilde\Pi$. There is therefore one isomorphism class of simple left modules and, dually, one of simple right modules.
 
 Being nonzero proper one-sided ideals, none is two-sided; this is the abundance of one-sided ideals that the simplicity of *The Regular Module*, §*The Two-Sided Ideals* permits.
 

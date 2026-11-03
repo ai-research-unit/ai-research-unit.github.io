@@ -113,7 +113,7 @@ $$
 
 *Proof.* The flip sends $\mathrm I_{n}\otimes A$ to $A\otimes\mathrm I_{n}$, and $A\otimes\mathrm I_{n}=(A^{\mathsf T})^{\mathsf T}\otimes\mathrm I_{n}=[R_{A^{\mathsf T}}]$. The second identity is the first applied to $B^{\mathsf T}$.
 
-**The flip is an operator and not an element.** It lives in $\operatorname{End}(M_{n}(\mathbb{C}))$ and not in the algebra, it exchanges the two copies, and it preserves neither the product of the algebra nor a single letter of the two families. In the biquaternion case the same role is played by the permutation $\mathsf S$ of the second and third coordinates of the frame, and the identity there reads $R^{P}(\tilde Q)=\mathsf S\,L^{P}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, which is the frame form of the proposition above.
+**The flip is an operator and not an element.** It lives in $\operatorname{End}(M_{n}(\mathbb{C}))$ and not in the algebra, it exchanges the two copies, and it preserves neither the product of the algebra nor a single letter of the two families. In the biquaternion case the same role is played by the permutation $\mathsf S$ of the second and third coordinates of the frame, and the identity there reads $R^{\mathrm{pau}}(\tilde Q)=\mathsf S\,L^{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, which is the frame form of the proposition above.
 
 ## The Two Copies
 

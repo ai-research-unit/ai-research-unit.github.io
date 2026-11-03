@@ -41,38 +41,38 @@ so that $i \vec e_k \leftrightarrow \sigma_k$. The factor $i$ is part of the dic
 The five cells of the frame, defined by their action on the state, are
 
 $$
-iR_{\vec e_x}\psi = i\,e_t\,\psi\,\vec e_x, \qquad
-iL_{\vec e_k}R_{\vec e_y}\psi = i\,\vec e_k\,\psi\,\vec e_y, \qquad
--iR_{\vec e_z}\psi = -i\,e_t\,\psi\,\vec e_z .
+iR_{\vec e_x}^{\mathrm{pau}}\psi = i\,e_t\,\psi\,\vec e_x, \qquad
+iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\psi = i\,\vec e_k\,\psi\,\vec e_y, \qquad
+-iR_{\vec e_z}^{\mathrm{pau}}\psi = -i\,e_t\,\psi\,\vec e_z .
 $$
 
-Since $L_{e_t}$ is the identity, these are $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iL_{e_t}R_{\vec e_z}$. The cells of the four coordinates are then
+Since $L_{e_t}^{\mathrm{pau}}$ is the identity, these are $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ and $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The cells of the four coordinates are then
 
 $$
-\Gamma_0=iL_{e_t}R_{\vec e_x},\qquad \Gamma_k=iL_{\vec e_k}R_{\vec e_y},\qquad k=x,y,z,
+\Gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \Gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad k=x,y,z,
 $$
 
-so the time cell is $\Gamma_0=iR_{\vec e_x}$ and the space cells are $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$.
+so the time cell is $\Gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and the space cells are $\Gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$.
 
 **Each square is one use of $i^2=-1$.** From $i^2=-1$ and $\vec e_x^2=\vec e_y^2=-e_t$,
 
 $$
-(iR_{\vec e_x})^2=i^2L_{e_t}R_{\vec e_x^2}=(-1)L_{e_t}R_{-e_t}=L_{e_t}R_{e_t},
+(iR_{\vec e_x}^{\mathrm{pau}})^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 $$
-(iL_{\vec e_k}R_{\vec e_y})^2=i^2L_{\vec e_k^2}R_{\vec e_y^2}=(-1)L_{-e_t}R_{-e_t}=-L_{e_t}R_{e_t}.
+(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
 $$
 
 The mixed products anticommute: in a time–space pair the left factor $e_t$ commutes with every unit while the right factors $\vec e_x$ and $\vec e_y$ anticommute, and in a space–space pair the right factor $\vec e_y$ is common to both while the left factors $\vec e_k$ anticommute. Hence
 
 $$
-\{\Gamma_\mu,\Gamma_\nu\} = 2g_{\mu\nu}L_{e_t}R_{e_t}, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
+\{\Gamma_\mu,\Gamma_\nu\} = 2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
 the metric sign being the convention noted in the companion article.
 
-**The two bases.** The frame above is the **chiral (Weyl) basis**. The chirality is the cell $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$; on the Peirce planes $\mathbb{B}\tilde\Pi_\pm$, with $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, it acts as $-1$ on $\mathbb{B}\tilde\Pi_+$ and as $+1$ on $\mathbb{B}\tilde\Pi_-$, so the upper two-component block is left-handed and the lower is right-handed. The **Dirac basis** is obtained by the $*$-unitary change of basis $R_{\tilde W}$ with $\tilde W=(e_t+\vec e_y)/\sqrt2$. It diagonalizes the timelike cell $\Gamma_0=iR_{\vec e_x}$, which becomes $+1$ on the upper block and $-1$ on the lower, and it mixes the two chiralities. The plane-wave spinors are simplest in the Dirac basis; the massless equations are simplest in the chiral one.
+**The two bases.** The frame above is the **chiral (Weyl) basis**. The chirality is the cell $-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$; on the Peirce planes $\mathbb{B}\tilde\Pi_\pm$, with $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, it acts as $-1$ on $\mathbb{B}\tilde\Pi_+$ and as $+1$ on $\mathbb{B}\tilde\Pi_-$, so the upper two-component block is left-handed and the lower is right-handed. The **Dirac basis** is obtained by the $*$-unitary change of basis $R_{\tilde W}$ with $\tilde W=(e_t+\vec e_y)/\sqrt2$. It diagonalizes the timelike cell $\Gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$, which becomes $+1$ on the upper block and $-1$ on the lower, and it mixes the two chiralities. The plane-wave spinors are simplest in the Dirac basis; the massless equations are simplest in the chiral one.
 
 **The two metrics, and the two sectors.** Two metric symbols appear, and they carry the same information with opposite sign. The Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ is the one in the anticommutator of the cells. The spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ is its negative, $\eta=-g$, and it is the metric of the $ict'$ gradient. The relative sign is the freedom the companion article flags as convention.
 
@@ -81,7 +81,7 @@ Two sectors recur. The material sector $\mathbb{M}_-$ is the anti-Hermitian part
 On the momentum cell the sign difference of the two metrics is the relative minus between the time and the space terms. With $p_0=E$ and $\vec p=(p_1,p_2,p_3)$,
 
 $$
-P=\Gamma_0p_0-\sum_k\Gamma_kp_k=iR_{\vec e_x}E-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k .
+P=\Gamma_0p_0-\sum_k\Gamma_kp_k=iR_{\vec e_x}^{\mathrm{pau}}E-\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k .
 $$
 
 The square follows from the two squares above and from the anticommutation of the cells; the cross terms cancel because the components commute,
@@ -107,14 +107,14 @@ Since $Q_k=x,y,z$, the two writings $\partial/\partial Q_k$ and $\partial/\parti
 A reader who prefers to attach $\eta$ to the generators multiplies the frame by $i$. Since $i^2=-1$,
 
 $$
-i\Gamma_0=i^2L_{e_t}R_{\vec e_x}=-L_{e_t}R_{\vec e_x},\qquad
-i\Gamma_k=i^2L_{\vec e_k}R_{\vec e_y}=-L_{\vec e_k}R_{\vec e_y},
+i\Gamma_0=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+i\Gamma_k=i^2L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
 and the anticommutator flips sign,
 
 $$
-\{i\Gamma_\mu,i\Gamma_\nu\}=2\eta_{\mu\nu}L_{e_t}R_{e_t}.
+\{i\Gamma_\mu,i\Gamma_\nu\}=2\eta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
 $$
 
 The physics is unchanged; only the placement of the signs differs.
@@ -143,7 +143,7 @@ $$
 
 The biquaternion field $\tilde{\Psi}$ of the companion article is the algebra-level representative of this column: the element of $\mathbb{B}\cong M_2(\mathbb{C})$ read in the cell frame. The Dirac operator on the column is the carrier form $\slashed p$ of the algebra-level $\tilde{\nabla}$, and it is the operator whose plane-wave solutions are constructed below. The mass of the companion article is the linear, chirality-off-diagonal coupling of the pair — the algebra-level representative of the spinor mass term. The conjugation $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ is a separate object, the algebra's real structure (the fixed space of $\flat$ is $\mathbb{M}_-$), and is *not* the mass term.
 
-The two bases fixed above are the ones used throughout: the chiral basis for the massless case, and the Dirac basis, where $\Gamma_0=iR_{\vec e_x}=\beta$ is diagonal and the upper and lower blocks play the parts of the large and the small component in the non-relativistic limit. The plane-wave solutions below are given in both.
+The two bases fixed above are the ones used throughout: the chiral basis for the massless case, and the Dirac basis, where $\Gamma_0=iR_{\vec e_x}^{\mathrm{pau}}=\beta$ is diagonal and the upper and lower blocks play the parts of the large and the small component in the non-relativistic limit. The plane-wave solutions below are given in both.
 
 The Dirac adjoint is the Hermitian pairing twisted by the timelike cell,
 
@@ -167,7 +167,7 @@ $$
 where $w(\vec p)$ is a four-component constant spinor. Substituting into the pair gives the single four-component equation
 
 $$
-(P-m)\,w(\vec p)=0,\qquad P=iR_{\vec e_x}E-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k ,
+(P-m)\,w(\vec p)=0,\qquad P=iR_{\vec e_x}^{\mathrm{pau}}E-\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k ,
 $$
 
 with the momentum cell $P$ defined in the cells section. The four-component equation is the pair written once; the pair itself is the statement in the algebra, and in the chiral basis it splits into the two equations
@@ -316,12 +316,12 @@ From a spinor and its adjoint one forms the standard bilinears, classified by th
 | Bilinear | Lorentz character |
 |---|---|
 | $\bar{\psi}\psi$ | scalar |
-| $i\,\bar{\psi}\,(-iR_{\vec e_z})\psi$ | pseudoscalar |
+| $i\,\bar{\psi}\,(-iR_{\vec e_z}^{\mathrm{pau}})\psi$ | pseudoscalar |
 | $\bar{\psi}\,\Gamma_\mu\psi$ | four-vector |
-| $\bar{\psi}\,\Gamma_\mu(-iR_{\vec e_z})\psi$ | axial four-vector (pseudovector) |
+| $\bar{\psi}\,\Gamma_\mu(-iR_{\vec e_z}^{\mathrm{pau}})\psi$ | axial four-vector (pseudovector) |
 | $\bar{\psi}\sigma_{\mu\nu}\psi$, $\ \sigma_{\mu\nu} = \tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu]$ | antisymmetric rank-two tensor |
 
-The pseudoscalar is written with the explicit factor of $i$ because, in the convention used here, $\bar{\psi}\,-iR_{\vec e_z}\psi$ is purely imaginary and $i\bar{\psi}\,-iR_{\vec e_z}\psi$ is real. The vector bilinear is the conserved current of the preceding section; the tensor bilinear governs the spin contribution to the current and, as shown below, the magnetic moment.
+The pseudoscalar is written with the explicit factor of $i$ because, in the convention used here, $\bar{\psi}\,-iR_{\vec e_z}^{\mathrm{pau}}\psi$ is purely imaginary and $i\bar{\psi}\,-iR_{\vec e_z}^{\mathrm{pau}}\psi$ is real. The vector bilinear is the conserved current of the preceding section; the tensor bilinear governs the spin contribution to the current and, as shown below, the magnetic moment.
 
 ### The chiral components
 
@@ -332,7 +332,7 @@ $$
 $$
 
 $$
-\bar{\psi}\,-iR_{\vec e_z}\psi = \psi_L^\dagger\psi_R - \psi_R^\dagger\psi_L = 2i\,\mathrm{Im}\!\left(\psi_L^\dagger\psi_R\right),
+\bar{\psi}\,-iR_{\vec e_z}^{\mathrm{pau}}\psi = \psi_L^\dagger\psi_R - \psi_R^\dagger\psi_L = 2i\,\mathrm{Im}\!\left(\psi_L^\dagger\psi_R\right),
 $$
 
 and the vector current has components
@@ -382,7 +382,7 @@ which splits the current into a **convection** part, proportional to $(p+p_2)_\m
 
 ### Removing the rest energy
 
-The non-relativistic limit is most transparent in the Dirac basis, where $\beta = \Gamma_0 = iR_{\vec e_x}$ is diagonal with opposite signs on the upper and the lower two-component part, and the spinor splits into an upper ("large") and a lower ("small") two-component part. Minimal coupling replaces the four-momentum by $p_\mu-ϙA_\mu$, with $A_\mu = (\Phi,-\vec A)$ and $ϙ$ the charge of the field; in natural units this is
+The non-relativistic limit is most transparent in the Dirac basis, where $\beta = \Gamma_0 = iR_{\vec e_x}^{\mathrm{pau}}$ is diagonal with opposite signs on the upper and the lower two-component part, and the spinor splits into an upper ("large") and a lower ("small") two-component part. Minimal coupling replaces the four-momentum by $p_\mu-ϙA_\mu$, with $A_\mu = (\Phi,-\vec A)$ and $ϙ$ the charge of the field; in natural units this is
 
 $$
 \vec p \;\longrightarrow\; \vec p - ϙ\vec A, \qquad i\partial/\partial t' \;\longrightarrow\; i\partial/\partial t' - ϙ\Phi .
@@ -392,10 +392,10 @@ The Dirac equation becomes $i\partial/\partial t'\psi = H\psi$ with
 
 $$
 H = \sum_k\alpha_k(p_k - ϙA_k) + m\Gamma_0 + ϙ\Phi, \qquad
-\alpha_k = \Gamma_0\Gamma_k = L_{\vec e_k}R_{\vec e_z}.
+\alpha_k = \Gamma_0\Gamma_k = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
-The last equality is one use of $i^2=-1$: $\Gamma_0\Gamma_k=(iR_{\vec e_x})(iL_{\vec e_k}R_{\vec e_y})=i^2L_{\vec e_k}R_{\vec e_y\vec e_x}=-L_{\vec e_k}R_{-\vec e_z}=L_{\vec e_k}R_{\vec e_z}$. In the Dirac basis $\alpha_k$ exchanges the upper and lower two-component part and multiplies each by $\sigma_k$, which is what produces the coupled pair below.
+The last equality is one use of $i^2=-1$: $\Gamma_0\Gamma_k=(iR_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=i^2L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_k}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. In the Dirac basis $\alpha_k$ exchanges the upper and lower two-component part and multiplies each by $\sigma_k$, which is what produces the coupled pair below.
 
 The rest energy dominates the dynamics, so we factor it out by writing
 
@@ -520,7 +520,7 @@ $$
 for the left-handed field. In covariant form, with $\sigma^\mu=(1,\boldsymbol\sigma)$, $\bar\sigma^\mu=(1,-\boldsymbol\sigma)$ and $\partial_\mu=(\partial_t,\nabla)$, they read $i\sigma^\mu\partial_\mu\psi_R = 0$ and $i\bar\sigma^\mu\partial_\mu\psi_L = 0$ in natural units. Each equation carries a single chirality. For the positive-frequency modes chirality and helicity coincide, so the right-handed field has positive helicity and the left-handed field negative helicity; for the negative-frequency modes, the antiparticles, the assignment reverses. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors
 
 $$
-P_L = \tfrac{1}{2}\bigl(1 - (-iR_{\vec e_z})\bigr), \qquad P_R = \tfrac{1}{2}\bigl(1 + (-iR_{\vec e_z})\bigr)
+P_L = \tfrac{1}{2}\bigl(1 - (-iR_{\vec e_z}^{\mathrm{pau}})\bigr), \qquad P_R = \tfrac{1}{2}\bigl(1 + (-iR_{\vec e_z}^{\mathrm{pau}})\bigr)
 $$
 
 select the two components; on the four-component carrier they act as the Peirce right multiplications $R_{\tilde\Pi_+}$ and $R_{\tilde\Pi_-}$. The algebraic counterparts of $P_L$ and $P_R$ are the central idempotents $e_\pm=\tfrac12(1\pm\chi)$ of the complexification, with $\chi=i\tilde\Xi_{\mathrm{ad}}$ the central grading of the Gamma section; the Peirce idempotents $\tilde\Pi_\pm$ are not central, and the two pairs are different objects. The Weyl spinors are thus the $m \to 0$ limit of the solutions constructed above, and the biquaternionic Dirac operator reduces in that limit to the pair of Weyl operators.
@@ -532,12 +532,12 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $-iR_{\vec e_z}$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $-iR_{\vec e_z}^{\mathrm{pau}}$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -593,14 +593,14 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternionic mass-shell condition |
 | $\psi = (\psi_L,\psi_R)$ | Dirac spinor in the chiral basis |
 | $L_a$, $R_b$, $L_{a}R_{b}$ | Left and right multiplication, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}\psi=a\psi b$; $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ |
-| $\Gamma_0=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Generator cells of the frame |
-| $\beta = \Gamma_0 = iR_{\vec e_x}$ | Timelike cell in the Dirac basis; $+1$ on the upper block, $-1$ on the lower |
-| $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$ | Chirality cell; $-1$ on $\mathbb{B}\tilde\Pi_+$, $+1$ on $\mathbb{B}\tilde\Pi_-$ |
+| $\Gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$, $\Gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Generator cells of the frame |
+| $\beta = \Gamma_0 = iR_{\vec e_x}^{\mathrm{pau}}$ | Timelike cell in the Dirac basis; $+1$ on the upper block, $-1$ on the lower |
+| $-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell; $-1$ on $\mathbb{B}\tilde\Pi_+$, $+1$ on $\mathbb{B}\tilde\Pi_-$ |
 | $\tilde\Pi_\pm = \tfrac12(e_t\pm i\vec e_z)$ | Peirce idempotents; on the four-component carrier $P_{L,R}$ act as $R_{\tilde\Pi_\pm}$ |
 | $P = \Gamma_0p_0-\sum_k\Gamma_kp_k$ | Momentum cell; $P^2=p_0^2-\vec p^2$ |
 | $\vec\pi = \vec p - ϙ\vec A$ | Kinetic momentum under minimal coupling |
 | $\slashed p = i\Gamma_0\partial/\partial t'+\sum_k i\Gamma_k\partial/\partial Q_k$ | Dirac operator on the material sector; $\slashed p^2=\Box$ on $\mathbb{M}_-$ |
-| $\alpha_k = \Gamma_0\Gamma_k = L_{\vec e_k}R_{\vec e_z}$ | Velocity operator of the non-relativistic limit |
+| $\alpha_k = \Gamma_0\Gamma_k = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Velocity operator of the non-relativistic limit |
 | $\sigma_{\mu\nu} = \tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu]$ | Antisymmetric product of two generators; operator of the tensor bilinear |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators; note $g = -\eta$ |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |

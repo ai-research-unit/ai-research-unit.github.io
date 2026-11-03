@@ -1,4 +1,4 @@
-# __The Peirce Basis of the Biquaternion Algebra__
+# __The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra__
 
 ## Introduction
 
@@ -49,7 +49,7 @@ so both mixed elements are nilpotents. The four elements satisfy the multiplicat
 
 **Theorem.** Every nondegenerate complete family of two idempotents of $\mathbb{B}$ admits a Peirce basis. More precisely, for every nonzero $u\in\mathbb{B}_{+-}$ there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$, and then $vu=\tilde\Pi_{-}$. The Peirce bases of the family are in bijection with the nonzero elements of $\mathbb{B}_{+-}$, and also with the nonzero elements of $\mathbb{B}_{-+}$.
 
-**Proof.** Let $u\in\mathbb{B}_{+-}$ be nonzero. By the corner rule, left multiplication by $u$ maps $\mathbb{B}_{-+}$ into $\mathbb{B}_{++}$ and annihilates $\mathbb{B}_{++}$. The product $\mathbb{B}_{+-}\mathbb{B}_{-+}$ is nonzero by the lemma of *The Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Decompositions*; since $\mathbb{B}_{-+}$ is a line, $u\mathbb{B}_{-+}\ne0$. A nonzero linear map between two lines is an isomorphism, so there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$.
+**Proof.** Let $u\in\mathbb{B}_{+-}$ be nonzero. By the corner rule, left multiplication by $u$ maps $\mathbb{B}_{-+}$ into $\mathbb{B}_{++}$ and annihilates $\mathbb{B}_{++}$. The product $\mathbb{B}_{+-}\mathbb{B}_{-+}$ is nonzero by the lemma of *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*; since $\mathbb{B}_{-+}$ is a line, $u\mathbb{B}_{-+}\ne0$. A nonzero linear map between two lines is an isomorphism, so there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$.
 
 Now $vu\in\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{-}$. It is nonzero: if $vu=0$, then $u(vu)=0$, but $(uv)u=\tilde\Pi_{+}u=u\ne0$. Write $vu=\lambda\tilde\Pi_{-}$ with $\lambda\ne0$. Then
 
@@ -220,7 +220,7 @@ A Peirce basis is exactly such a system. The coordinate map of §*Coordinates* s
 
 ## Dimensions
 
-**The family.** A nondegenerate family is the same data as a nontrivial idempotent, by *The Peirce Decomposition of the Biquaternion Algebra*, §*From One Idempotent to Its Complement*. In the matrix model a nontrivial idempotent is a rank-one projection: its image is a line, of one complex parameter, and its kernel is a complementary line, of one complex parameter. The family therefore has complex dimension two, that is real dimension four.
+**The family.** A nondegenerate family is the same data as a nontrivial idempotent, by *Peirce Decompositions of the Biquaternion Algebra*, §*From One Idempotent to Its Complement*. In the matrix model a nontrivial idempotent is a rank-one projection: its image is a line, of one complex parameter, and its kernel is a complementary line, of one complex parameter. The family therefore has complex dimension two, that is real dimension four.
 
 **The basis.** Fix the family. A basis is a nonzero element of one mixed line, by §*Existence: The Nilpotent Route*. A complex line with its zero removed has complex dimension one, that is real dimension two. The basis is the family together with this point, so the basis space has real dimension $4+2=6$.
 
@@ -297,7 +297,7 @@ A Peirce basis of a nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ 
 
 ## Further Reading
 
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the family, the four lines and the product rule.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the coordinates of the two spinor spaces.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix model and the coordinate isomorphism.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general gauge $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}$.

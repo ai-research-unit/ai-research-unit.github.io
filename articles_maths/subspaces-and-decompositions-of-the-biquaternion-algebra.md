@@ -467,7 +467,7 @@ Each of the four conjugations preserves each remarkable subspace and acts on it 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the inverse formula, the unit group and the zero divisors of the whole algebra
 - [Square Roots of an Element](square-roots-of-an-element.html), for the three classifications in the whole algebra
 - [Idempotents](idempotents.html), for the classification of the idempotents of the whole algebra, the bijection with the roots of minus one and the projection reading
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition in the whole algebra
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition in the whole algebra
 - [The Category of Modules](the-category-of-modules.html), for the simple module $S$, the minimal left ideals and the Morita equivalence
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the product and its scalar–vector form
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the two parts into which the product splits

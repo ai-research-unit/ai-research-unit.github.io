@@ -23,34 +23,34 @@ $$
 The four frame cells of the current are
 
 $$
-\Gamma_t:=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},\qquad
-\Gamma_k:=iL_{\vec e_k}R_{\vec e_y}\quad(k=1,2,3),
+\Gamma_t:=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
+\Gamma_k:=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=1,2,3),
 $$
 
 with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each $\Gamma_\mu$ carries exactly one factor of the central $i$, so each square spends $i^2=-1$ once, and the remaining signs come from $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$:
 
 $$
-\Gamma_t^2=L_{e_t}R_{e_t},\qquad
-\Gamma_k^2=-L_{e_t}R_{e_t},\qquad
-\{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}L_{e_t}R_{e_t},
+\Gamma_t^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\Gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
-with $g=\mathrm{diag}(+1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The cells are two-sided: $\Gamma_t$ has the central left multiplier $e_t$ and is therefore a pure right multiplication, while the three spatial cells $\Gamma_k$ have a non-central left multiplier and use both sides. The fifth frame cell, the **chirality cell**, is $-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$; it is also a pure right multiplication and anticommutes with the four cells.
+with $g=\mathrm{diag}(+1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The cells are two-sided: $\Gamma_t$ has the central left multiplier $e_t$ and is therefore a pure right multiplication, while the three spatial cells $\Gamma_k$ have a non-central left multiplier and use both sides. The fifth frame cell, the **chirality cell**, is $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$; it is also a pure right multiplication and anticommutes with the four cells.
 
 The **momentum cell** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is
 
 $$
 P:=p_0\Gamma_t-\sum_{k=1}^3 p_k\Gamma_k
-=p_0\,iR_{\vec e_x}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}R_{\vec e_y},
+=p_0\,iR_{\vec e_x}^{\mathrm{pau}}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
 which is the slashed momentum read in these cells, $P=p_\mu\Gamma^\mu$ with $p_\mu=(p_0,p_1,p_2,p_3)$ and $\Gamma^k=-\Gamma_k$. Its square is central,
 
 $$
-P^2=(p_0^2-\vec p^2)\,L_{e_t}R_{e_t},
+P^2=(p_0^2-\vec p^2)\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
-and the mass-shell condition is $P^2=m^2L_{e_t}R_{e_t}$, that is $p_0^2-\vec p^2=m^2$.
+and the mass-shell condition is $P^2=m^2L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, that is $p_0^2-\vec p^2=m^2$.
 
 The **Mandelstam variables** are
 
@@ -104,17 +104,17 @@ where $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k
 **The two-sided form.** Read on the whole algebra rather than on the module, the same physics is the single equation
 
 $$
-L_{\tilde\nabla^{\natural}}F=m\,L_{e_t}R_{-i\vec e_z}\bar F=m\,\chi\bar F,
+L_{\tilde\nabla^{\natural}}F=m\,L_{e_t}^{\mathrm{pau}}R_{-i\vec e_z}^{\mathrm{pau}}\bar F=m\,\chi\bar F,
 \qquad
-\chi:=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+\chi:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
 $$
 
 with $\bar F$ the coefficient conjugate and $\chi$ the **chirality cell**, the two-sided multiplier by $e_t$ on the left and by $-i\vec e_z$ on the right. The derivative acts on the left, the mass acts on the right, and the conjugation supplies the antilinear part; the second field of the pair is the conjugate of the first, $-i\bar F\vec e_z$. The two forms are related by a change of representation but they are different operators: the pair is linear in the field, the two-sided form is antilinear in $F$ because the mass term carries $\bar F$. The pair is what the external spinors below solve; the two-sided form is the algebra's own reading of the same mass.
 
-**The four-component form.** In the frame cells, with $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ and the mass read as the central cell $m\,L_{e_t}R_{e_t}$, the pair is written as the single four-component equation
+**The four-component form.** In the frame cells, with $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ and the mass read as the central cell $m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, the pair is written as the single four-component equation
 
 $$
-\bigl(P-m\,L_{e_t}R_{e_t}\bigr)w=0,
+\bigl(P-m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)w=0,
 $$
 
 and the spin sum below is the sum over its two positive-frequency solutions. This is the pair written once; its two lines are the two chiral halves. It is not the two-sided equation: there the mass is a right multiplication by the chirality cell, here it is the central multiplier $m$. The two agree on the module, where the right multiplication by $-i\vec e_z$ separates the two chiralities, as the chiral grading of the four-component spinor does.
@@ -126,10 +126,10 @@ The vertex current of an electron of incoming momentum $p_{\mathrm{in}}$ and out
 $$
 J_\mu(p_{\mathrm{out}},p_{\mathrm{in}}):=\bar w(p_{\mathrm{out}})\,\Gamma_\mu\,w(p_{\mathrm{in}}),
 \qquad
-\bar w:=w^\dagger iR_{\vec e_x},
+\bar w:=w^\dagger iR_{\vec e_x}^{\mathrm{pau}},
 $$
 
-with $\Gamma_\mu$ the cell of the Lorentz index $\mu$ and $\bar w$ the Dirac adjoint, whose factor $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$ is the Clifford-odd cell outside $\mathbb{B}$. The contraction is the Hermitian pairing of two module elements, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
+with $\Gamma_\mu$ the cell of the Lorentz index $\mu$ and $\bar w$ the Dirac adjoint, whose factor $iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ is the Clifford-odd cell outside $\mathbb{B}$. The contraction is the Hermitian pairing of two module elements, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
 
 $$
 \mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{k=1}^3 J_k(p_3,p_1)J_k(p_4,p_2)\Bigr],
@@ -152,8 +152,8 @@ where the amplitude $\mathcal M$ is the invariant matrix element, normalised so 
 Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives the following. With the spin-sum cell
 
 $$
-D(p):=P+m\,L_{e_t}R_{e_t}
-=p_0\,iR_{\vec e_x}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}R_{\vec e_y}+m\,L_{e_t}R_{e_t},
+D(p):=P+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}
+=p_0\,iR_{\vec e_x}^{\mathrm{pau}}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 the spin sum is
@@ -286,10 +286,10 @@ The framework's minimal-coupling article writes the electromagnetic coupling of 
 $$
 j_\mu=\bar\psi\,\Gamma_\mu\,\psi,
 \qquad
-\bar\psi=\psi^\dagger iR_{\vec e_x},
+\bar\psi=\psi^\dagger iR_{\vec e_x}^{\mathrm{pau}},
 $$
 
-where $\Gamma_\mu$ are the four frame cells of the Kinematics, $\Gamma_t=iL_{e_t}R_{\vec e_x}$ and $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$. The current is a material-sector object, $\tilde J=ic\,j_0e_t+\vec j\in\mathbb M_-$, but its Dirac adjoint uses the Clifford-odd cell $iR_{\vec e_x}$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $\bar w(p_{\mathrm{out}})\Gamma_\mu w(p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+where $\Gamma_\mu$ are the four frame cells of the Kinematics, $\Gamma_t=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $\Gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The current is a material-sector object, $\tilde J=ic\,j_0e_t+\vec j\in\mathbb M_-$, but its Dirac adjoint uses the Clifford-odd cell $iR_{\vec e_x}^{\mathrm{pau}}$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $\bar w(p_{\mathrm{out}})\Gamma_\mu w(p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -315,7 +315,7 @@ The framework supplies the two vertex currents, the photon propagator, the Fock 
 
 5. **Loops.** The corpus's Ward–Takahashi and Schwinger–Dyson articles treat the identities a loop computation must satisfy, but no loop amplitude is evaluated. Whether Møller scattering at one loop can be organised in the framework without new structure is open.
 
-6. **The two chiral sums.** The spin sum $D(p)=P+m\,L_{e_t}R_{e_t}$ is the four-component reading of the chiral pair. Can the positive- and negative-frequency sums be written as two separate cell sums, one for each chiral half, without passing through the four-component spinor?
+6. **The two chiral sums.** The spin sum $D(p)=P+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ is the four-component reading of the chiral pair. Can the positive- and negative-frequency sums be written as two separate cell sums, one for each chiral half, without passing through the four-component spinor?
 
 7. **Empirical contact.** The tree-level result is standard electrodynamics in the framework's variables; the parity-violating asymmetry is the one place the framework meets a measured number, and it is not a framework-specific prediction.
 
@@ -326,14 +326,14 @@ This section fixes the dictionary that the traces above use, and nothing here is
 The five $\gamma$'s are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, so they are elements of the same algebra as the cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The body's cells are the same objects: $\Gamma_t=\gamma_0$, $\Gamma_k=\gamma_k$ for $k=1,2,3$, and the chirality cell is $\gamma_5$.
 
 A single product is a pure tensor; in the sixteen-dimensional coefficient space the products form the seven-dimensional cone of coefficient rank at most one. A general element is a sum of at most four products; its **length** $\ell(M)$ is the least number of products in such a sum. The **matrix rank** of $M$ on the regular module is a different number: for a single cell $L_QR_P$ it is $\operatorname{rank}\mathsf M_2(Q)\operatorname{rank}\mathsf M_2(P)$, and it lies in $\{0,1,2,4\}$. The two numbers are independent.
 
-$\gamma_5$ is the chirality cell itself, $-iL_{e_t}R_{\vec e_z}$, so the fifth cell and the fifth gamma are one object seen in two readings. The central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; it merely has the same representative $\gamma_5$ on the Dirac module, so that the two central idempotents correspond to the two chiral projectors and $\chi$ is the module representative of $\chi_{\mathrm{ad}}$.
+$\gamma_5$ is the chirality cell itself, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, so the fifth cell and the fifth gamma are one object seen in two readings. The central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; it merely has the same representative $\gamma_5$ on the Dirac module, so that the two central idempotents correspond to the two chiral projectors and $\chi$ is the module representative of $\chi_{\mathrm{ad}}$.
 
 The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -393,12 +393,12 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $s,t,u$ | Mandelstam variables; $s+t+u=4m^2$ |
 | $E_{\mathrm{CM}}=2E$ | Centre-of-momentum energy |
 | $\theta$ | Centre-of-mass scattering angle |
-| $\Gamma_t=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Four frame cells of the current |
+| $\Gamma_t=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$, $\Gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Four frame cells of the current |
 | $\Gamma^t=\Gamma_t$, $\Gamma^k=-\Gamma_k$ | Raised-index cells |
 | $L_aR_b$ | Two-sided multiplication, $L_aR_b\psi=a\psi b$ |
-| $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ | Momentum cell; $P^2=(p_0^2-\vec p^2)L_{e_t}R_{e_t}$ |
-| $D(p)=P+m\,L_{e_t}R_{e_t}$ | Spin-sum cell of the momentum shell |
-| $w^{(r)}(p)$, $\bar w=w^\dagger iR_{\vec e_x}$ | Positive-frequency spinor and its Dirac adjoint |
+| $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ | Momentum cell; $P^2=(p_0^2-\vec p^2)L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
+| $D(p)=P+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | Spin-sum cell of the momentum shell |
+| $w^{(r)}(p)$, $\bar w=w^\dagger iR_{\vec e_x}^{\mathrm{pau}}$ | Positive-frequency spinor and its Dirac adjoint |
 | $\mathcal M_t,\mathcal M_u$ | $t$- and $u$-channel amplitudes |
 | $\mathcal M=\mathcal M_t-\mathcal M_u$ | Total amplitude with the exchange sign |
 | $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element, factor $\tfrac14$ included |
@@ -408,7 +408,7 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $A_{\mathrm{PV}}$ | Parity-violating asymmetry; $\theta_{\mathrm W}$ the weak mixing angle |
 | $E_{\mathrm{beam}}$ | Beam energy in the laboratory, as in $m_eE_{\mathrm{beam}}$ |
 | $y=Q^2/s=-t/s$ | Inelasticity; equals $\sin^2(\theta/2)$ up to $m^2/E^2$ |
-| $\chi=-iL_{e_t}R_{\vec e_z}$ | Chirality cell of the two-sided Dirac equation; $\chi^2=e_t$ |
+| $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell of the two-sided Dirac equation; $\chi^2=e_t$ |
 | $G_{\mathrm F}$ | Fermi constant |
 | $g_V^e=-\tfrac12Q_W^e$, $g_A^e=-\tfrac12$ | Vector and axial $Z$ couplings of the electron |
 | $Q_W^e=1-4\sin^2\theta_{\mathrm W}$ | Weak charge of the electron |

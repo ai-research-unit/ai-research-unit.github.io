@@ -234,14 +234,14 @@ $$
 and, for one mode, the same operator on the module is the left multiplication by the algebra element $(-1)^F=i\vec e_z$ of the parents, so over the modes
 
 $$
-\Gamma(-I)=\bigotimes_{\mathrm{modes}}L_{i\vec e_z}^{(\mathrm{mode})}.
+\Gamma(-I)=\bigotimes_{\mathrm{modes}}(L_{i\vec e_z}^{\mathrm{pau}})^{(\mathrm{mode})}.
 $$
 
-The one-mode identity $(-1)^{N_{\mathrm{mode}}}=i\vec e_z$ is the parents' statement; read on the module it is $L_{i\vec e_z}$. The operator identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed on the four-dimensional space $\Lambda S$: $\Gamma(-I)$ built as $\mathrm{diag}(1,-1,-1,1)$ from its action on degree $0,1,2$ equals the product of the single-mode parities exactly, with eigenvalue list $\{+1,+1,-1,-1\}$ in both constructions.
+The one-mode identity $(-1)^{N_{\mathrm{mode}}}=i\vec e_z$ is the parents' statement; read on the module it is $L_{i\vec e_z}^{\mathrm{pau}}$. The operator identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed on the four-dimensional space $\Lambda S$: $\Gamma(-I)$ built as $\mathrm{diag}(1,-1,-1,1)$ from its action on degree $0,1,2$ equals the product of the single-mode parities exactly, with eigenvalue list $\{+1,+1,-1,-1\}$ in both constructions.
 
 **The parity and the field.** The field operator, being a sum of one-mode operators, is odd under $\Gamma(-I)$; a bilinear is even. The observable algebra of the field is therefore the even part of the Fock space's operator algebra, and the state space splits into an even and an odd sector that never mix under observables. This is the state-space statement of the field's $\mathbb{Z}/2$ grading.
 
-**The sign convention.** With $N_{\mathrm{mode}}=a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}$ one has, on the one-mode module, $(-1)^{N_{\mathrm{mode}}}=L_{i\vec e_z}$; with the $\mathbb{M}_+$ generator $\tilde S_3=\tfrac{\hbar}{2}i\vec e_z$ this reads $(-1)^F=L_{2\tilde S_3/\hbar}$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode; for the field, the tensor product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
+**The sign convention.** With $N_{\mathrm{mode}}=a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}$ one has, on the one-mode module, $(-1)^{N_{\mathrm{mode}}}=L_{i\vec e_z}^{\mathrm{pau}}$; with the $\mathbb{M}_+$ generator $\tilde S_3=\tfrac{\hbar}{2}i\vec e_z$ this reads $(-1)^F=L_{2\tilde S_3/\hbar}$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode; for the field, the tensor product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
 
 ## The Inner Product, States and the Trace Pairing
 
@@ -293,21 +293,21 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$ on $\mathb
 
 ## The Gamma Formulation
 
-The gamma symbols are used only in this section; every other section writes the same objects as cells. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$; on the regular module a left multiplication is the cell $L_aR_{e_t}$, so the body's $L_{\tilde Q}$ are the cells whose right factor is the unit. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+The gamma symbols are used only in this section; every other section writes the same objects as cells. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$; on the regular module a left multiplication is the cell $L_aR_{e_t}^{\mathrm{pau}}$, so the body's $L_{\tilde Q}$ are the cells whose right factor is the unit. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
-Each generator is $i$ times a real cell, and multiplying by $i$ trades it back: $i\gamma_0=-L_{e_t}R_{\vec e_x}$ and $i\gamma_k=-L_{\vec e_k}R_{\vec e_y}$. Because $i^2=-1$, the square of a generator is minus the square of its cell, $(iL_aR_b)^2=-L_{a^2}R_{b^2}$, and with $e_t^2=e_t$ and $\vec e_k^2=-e_t$ that one line gives both signs of the frame,
+Each generator is $i$ times a real cell, and multiplying by $i$ trades it back: $i\gamma_0=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $i\gamma_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. Because $i^2=-1$, the square of a generator is minus the square of its cell, $(iL_aR_b)^2=-L_{a^2}R_{b^2}$, and with $e_t^2=e_t$ and $\vec e_k^2=-e_t$ that one line gives both signs of the frame,
 
 $$
-\gamma_0^2=-L_{e_t^2}R_{\vec e_x^2}=-L_{e_t}R_{-e_t}=+I_4,
+\gamma_0^2=-L_{e_t^2}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+I_4,
 \qquad
-\gamma_k^2=-L_{\vec e_k^2}R_{\vec e_y^2}=-L_{-e_t}R_{-e_t}=-I_4,
+\gamma_k^2=-L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=-L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-I_4,
 $$
 
-and $\gamma_5^2=-L_{e_t^2}R_{\vec e_z^2}=+I_4$. They obey the Clifford relations of the frame,
+and $\gamma_5^2=-L_{e_t^2}^{\mathrm{pau}}R_{\vec e_z^2}^{\mathrm{pau}}=+I_4$. They obey the Clifford relations of the frame,
 
 $$
 \gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_4,
@@ -341,7 +341,7 @@ $$
 0\oplus\tfrac12\oplus0,
 $$
 
-with $\hat S^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N^{\mathrm{fop}}}$, recomputed in both constructions. For one mode the parity is the left multiplication $L_{i\vec e_z}$ on the module, with $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$; for the field it is the tensor product over modes and external to $\mathbb{B}$.
+with $\hat S^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N^{\mathrm{fop}}}$, recomputed in both constructions. For one mode the parity is the left multiplication $L_{i\vec e_z}^{\mathrm{pau}}$ on the module, with $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$; for the field it is the tensor product over modes and external to $\mathbb{B}$.
 
 The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). Pure one-mode states are Hermitian idempotents of $\mathbb{M}_+$, the four-dimensional $\Lambda S$ has $4\times4$ density matrices, the observables are even, and the Born rule is the normalised Hermitian form, read through the trace $\operatorname{Tr}\bigl(\tilde{Ϛ}(H^{\mathrm{fop}})^{*}\bigr)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}(H^{\mathrm{fop}})^{*}\bigr)$, checked to machine precision.
 
@@ -363,7 +363,7 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 | $\Lambda S=\mathbb{C}\oplus S\oplus\mathbb{C}$ | Lorentz content of the two spin states of one momentum: $0\oplus\tfrac12\oplus0$ |
 | $\hat S_i=\tfrac12\sum_{s,s'}a_s^{\mathrm{fop}\dagger}(\sigma_i)_{ss'}a_{s'}^{\mathrm{fop}}$ | Spin operators on $\Lambda S$, the images of $\tilde S_i=\tfrac{\hbar}{2}i\vec e_i$, in units $\hbar=1$ |
 | $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ | Degree parity; $2\pi$ rotation on the Fock space |
-| $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$ (one mode) | Parity as an element of $\mathbb{M}_+$, acting by $L_{i\vec e_z}$ |
+| $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$ (one mode) | Parity as an element of $\mathbb{M}_+$, acting by $L_{i\vec e_z}^{\mathrm{pau}}$ |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $N$ fermionic modes |
 | $\tilde{Ϛ}^2=\tilde{Ϛ}=\tilde{Ϛ}^{*}$, $\operatorname{Tr}\tilde{Ϛ}=1$ | One-mode pure state, the Bloch element $\tfrac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$; the four-dimensional $\Lambda S$ has $4\times4$ density matrices |
 | $\langle H^{\mathrm{fop}}\rangle_{\tilde{Ϛ}}=\langle\tilde{Ϛ},H^{\mathrm{fop}}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\operatorname{Tr}\bigl(\tilde{Ϛ}(H^{\mathrm{fop}})^{*}\bigr)$ | Born rule for one mode: form first, trace at normalisation last |

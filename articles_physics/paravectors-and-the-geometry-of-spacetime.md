@@ -208,7 +208,7 @@ Adding the two parts gives the rule.
 $$
 L_{\tilde U_{\mathrm b}}R_{\tilde U_{\mathrm b}^{*}}\,p_\parallel=L_{\tilde V_{\mathrm p}}\,p_\parallel ,
 \qquad
-L_{\tilde U_{\mathrm b}}R_{\tilde U_{\mathrm b}^{*}}\,p_\perp=R_{e_t}\,p_\perp ,
+L_{\tilde U_{\mathrm b}}R_{\tilde U_{\mathrm b}^{*}}\,p_\perp=R_{e_t}^{\mathrm{pau}}\,p_\perp ,
 $$
 
 so a two-sided operator on the paravector space is a one-sided operator on each of the two parts: the left cell of the proper velocity on the coplanar part, the identity on the orthogonal part. That is the operator content of the rule, and the reason a boost of a plane wave is a pair of one-sided operations rather than a conjugation.
@@ -339,28 +339,28 @@ The one genuinely new object in the source's programme is not a change of basis 
 The gammas of this section are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and they are **cells**, not elements. The section of the same name in *The Number Systems as Clifford Algebras* uses the word for the **elements** $i\vec e_k$; here it names the cells that represent those elements on the Dirac module. The module is what tells the two apart, and the cells act on it while the elements are multiplied. In the corpus's notation they are
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad
-\gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad
-\gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad
-\gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad
-\gamma_5=-iL_{e_t}R_{\vec e_z},
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
 Their Clifford relations, their chirality and their volume product are
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}R_{e_t},
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 g=\mathrm{diag}(1,-1,-1,-1),
 \qquad
-\gamma_5^{2}=L_{e_t}R_{e_t},
+\gamma_5^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 \{\gamma_\mu,\gamma_5\}=0,
 \qquad
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-L_{e_t}R_{\vec e_z}.
+\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
-The metric here is the mostly-minus $g=\mathrm{diag}(1,-1,-1,-1)$, in which $\gamma_0^2=L_{e_t}R_{e_t}$ and $\gamma_k^2=-L_{e_t}R_{e_t}$. It is not the $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the material sector; the two differ by an overall sign, $\eta=-g$, and the sign shows up as the sign of $\gamma_0^2$. A frame whose time cell squares to $+1$ carries $g$; one whose time cell squares to $-1$ carries $\eta$.
+The metric here is the mostly-minus $g=\mathrm{diag}(1,-1,-1,-1)$, in which $\gamma_0^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. It is not the $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the material sector; the two differ by an overall sign, $\eta=-g$, and the sign shows up as the sign of $\gamma_0^2$. A frame whose time cell squares to $+1$ carries $g$; one whose time cell squares to $-1$ carries $\eta$.
 
 The letter $\gamma$ is also used, in the algebra-of-physical-space literature, for the three **generators** of that algebra. That is a different object: the element
 
@@ -368,10 +368,10 @@ $$
 i\vec e_k,\qquad k=x,y,z,
 $$
 
-generates $\mathrm{Cl}_{3,0}$ inside $\mathbb{B}$, with $(i\vec e_j)(i\vec e_k)+(i\vec e_k)(i\vec e_j)=2\delta_{jk}e_t$, $(i\vec e_k)^2=+e_t$ and $(i\vec e_x)(i\vec e_y)(i\vec e_z)=i$. The two uses of the letter are irreconcilable and both are standard, so this article keeps them apart: the four gamma cells appear only in this section, and everywhere else the three generators are written $i\vec e_k$. Read as an operator, a generator is the single left cell $L_{i\vec e_k}$, and the Clifford relations of the elements are the relations of those cells:
+generates $\mathrm{Cl}_{3,0}$ inside $\mathbb{B}$, with $(i\vec e_j)(i\vec e_k)+(i\vec e_k)(i\vec e_j)=2\delta_{jk}e_t$, $(i\vec e_k)^2=+e_t$ and $(i\vec e_x)(i\vec e_y)(i\vec e_z)=i$. The two uses of the letter are irreconcilable and both are standard, so this article keeps them apart: the four gamma cells appear only in this section, and everywhere else the three generators are written $i\vec e_k$. Read as an operator, a generator is the single left cell $L_{i\vec e_k}^{\mathrm{pau}}$, and the Clifford relations of the elements are the relations of those cells:
 
 $$
-L_{i\vec e_j}L_{i\vec e_k}+L_{i\vec e_k}L_{i\vec e_j}=2\delta_{jk}\,L_{e_t}R_{e_t}.
+L_{i\vec e_j}^{\mathrm{pau}}L_{i\vec e_k}^{\mathrm{pau}}+L_{i\vec e_k}^{\mathrm{pau}}L_{i\vec e_j}^{\mathrm{pau}}=2\delta_{jk}\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
 $$
 
 The paravector calculus is therefore the calculus of *one-sided* cells of a three-dimensional Clifford set, and that is exactly what the boost rule of this article uses.
@@ -392,9 +392,9 @@ $$
 D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k},
 $$
 
-a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the chirality is the splitting of the field into two halves, and on the Dirac module that splitting is carried by the $\gamma_5$ cell; in the second equation there is no split at all, and the chirality is the volume cell $-L_{e_t}R_{\vec e_z}$. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field.
+a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the chirality is the splitting of the field into two halves, and on the Dirac module that splitting is carried by the $\gamma_5$ cell; in the second equation there is no split at all, and the chirality is the volume cell $-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field.
 
-The paravector reading supplies the one-sided half: a paravector multiplying from the left is a cell $L_p$, and the whole of the boost rule is one-sided. What it does not supply is the doubling. A chirality is a grading: it must separate the module into two halves, so it must be an operator that anticommutes with the generators and squares to the identity. The volume element $i$ of the algebra of physical space is central and squares to $-1$; it multiplies every element by the same scalar and separates nothing. The two objects are often confused, and the confusion has a visible cause: in the cell formulation $\gamma_5^{2}=L_{e_t}R_{e_t}$ while $\gamma_5$ anticommutes with the four generating cells, and in the element formulation $i^2=-e_t$ while $i$ commutes with everything. A scalar and a grading cannot be the same object, and it is the reason the paravector literature writes one Dirac equation where the cell formulation writes two. The full account is in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, §*The Two Equations of the Corpus*.
+The paravector reading supplies the one-sided half: a paravector multiplying from the left is a cell $L_p$, and the whole of the boost rule is one-sided. What it does not supply is the doubling. A chirality is a grading: it must separate the module into two halves, so it must be an operator that anticommutes with the generators and squares to the identity. The volume element $i$ of the algebra of physical space is central and squares to $-1$; it multiplies every element by the same scalar and separates nothing. The two objects are often confused, and the confusion has a visible cause: in the cell formulation $\gamma_5^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ while $\gamma_5$ anticommutes with the four generating cells, and in the element formulation $i^2=-e_t$ while $i$ commutes with everything. A scalar and a grading cannot be the same object, and it is the reason the paravector literature writes one Dirac equation where the cell formulation writes two. The full account is in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, §*The Two Equations of the Corpus*.
 
 ## Summary
 

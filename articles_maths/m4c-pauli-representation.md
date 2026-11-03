@@ -10,7 +10,7 @@ $$
 $$
 and the root is the only choice made in the article: the frame, the four coordinates, the $2\times2$ block and both matrices follow from it. §*The Root and the Peirce Frame* performs the construction.
 
-**The order of the article.** The frame is built first, from a root and the multiplication table (§*The Root and the Peirce Frame*). The left family is then read by columns (§*The Left Family*), the right family by the same construction on the other side (§*The Right Family*), and the matrix that carries one to the other is a swap of two tensor slots (§*The Stitch Between the Two Families*). Every other frame is a conjugate of this one (§*Every Frame Is a Conjugate of This One*). The properties of this frame are listed next, and the roots that produce such frames are counted (§*What the Peirce Frame Makes Simple*, §*Which Roots Give a Peirce Frame*). The product, the trace, the determinant and the six subspaces follow (§*The Product*, §*The Trace*, §*The Determinant*, §*The Six Subspaces*), and the comparison with the coefficient basis and with a generic frame closes the article (§*The Comparison Table*).
+**The order of the article.** The frame is built first, from a root and the multiplication table (§*The Root and the Peirce Frame*). The left family is then read by columns (§*The Left Family*), the right family by the same construction on the other side (§*The Right Family*), and the matrix that carries one to the other is a swap of two tensor slots (§*The Stitch Between the Two Families*). Every other frame is a conjugate of this one (§*Every Frame Is a Conjugate of This One*), and the conjugation that reaches the axis-free frame is computed in full, one entry at a time, in §*The Switch to the Axis-Free Matrices*: the two matrices $C_{\Pi}$ and $C_{\Pi}^{-1}$, their four columns, the two $2\times2$ blocks they split into, the recipe $L=C_{\Pi}^{-1}L^{\mathrm{axf}}C_{\Pi}$ and a worked element shown in both frames. The properties of this frame are listed next, and the roots that produce such frames are counted (§*What the Peirce Frame Makes Simple*, §*Which Roots Give a Peirce Frame*). The product, the trace, the determinant and the six subspaces follow (§*The Product*, §*The Trace*, §*The Determinant*, §*The Six Subspaces*), and the comparison with the coefficient basis and with a generic frame closes the article (§*The Comparison Table*).
 
 **The algebra.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.
 
@@ -30,9 +30,9 @@ so that $\mathsf M_2(\vec e_k)=-i\sigma_k$. The representation is called Pauli b
 
 **The two copies.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, and both are four-dimensional subalgebras of the ambient $M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The left multiplication is $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$; the right multiplication is $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$.
 
-**What this article leaves out.** The sixteen products $L_{e_\mu}R_{e_\nu}$ are a basis of the whole algebra $M_4(\mathbb{C})$, not only of the two copies, so every endomorphism has a coefficient matrix $c(M)$ in that basis and a length $\ell(M)=\operatorname{rank}c(M)$, the least number of products summing to it. That chain is the subject of the companion article *$M_4(\mathbb{C})$ Pauli Representation : Operators*, together with the congruence that makes the length survive a change of element basis. This article stops at the two families and at the algebra they generate.
+**What this article leaves out.** The sixteen products $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ are a basis of the whole algebra $M_4(\mathbb{C})$, not only of the two copies, so every endomorphism has a coefficient matrix $c(M)$ in that basis and a length $\ell(M)=\operatorname{rank}c(M)$, the least number of products summing to it. That chain is the subject of the companion article *$M_4(\mathbb{C})$ Pauli Representation : Operators*, together with the congruence that makes the length survive a change of element basis. This article stops at the two families and at the algebra they generate.
 
-**Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The idempotents and the Peirce decomposition are *The Peirce Decomposition of the Biquaternion Algebra* and *The Peirce Basis of the Biquaternion Algebra*. The general theory of the two families, of the stitch and of the change of frame is *Families of Matrix Representations*; this article is one instance of it, worked out in full, and the frame below is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ Axis-Free Representation*, and at the element size the block is *$M_2(\mathbb{C})$ Pauli Representation*.
+**Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The idempotents and the Peirce decomposition are *Peirce Decompositions of the Biquaternion Algebra* and *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*. The general theory of the two families, of the stitch and of the change of frame is *Families of Matrix Representations*; this article is one instance of it, worked out in full, and the frame below is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ Axis-Free Representation*, and at the element size the block is *$M_2(\mathbb{C})$ Pauli Representation*.
 
 ## The Root and the Peirce Frame
 
@@ -116,11 +116,11 @@ X_+=-iQ_x+Q_y,\quad
 X_-=-iQ_x-Q_y,\quad
 P_-=Q_t+iQ_z,
 $$
-so the change from the coefficients $Q_\mu$ to the Peirce coordinates is the linear map displayed in §*Every Frame Is a Conjugate of This One*.
+so the change from the coefficients $Q_\mu$ to the Peirce coordinates is the linear map displayed in §*The Switch to the Axis-Free Matrices*.
 
 ## The Left Family
 
-**The operator.** The matrix $L(\tilde Q)$ is the matrix of $\rho_L(\tilde Q)$ in the frame $\mathcal{P}$. The map $\rho_L$ is injective and multiplicative, so its image is the four-dimensional subalgebra $\mathbb{B}_L\subset M_4(\mathbb{C})$, and the four matrices $L_{e_\mu}$ are a basis of it.
+**The operator.** The matrix $L(\tilde Q)$ is the matrix of $\rho_L(\tilde Q)$ in the frame $\mathcal{P}$. The map $\rho_L$ is injective and multiplicative, so its image is the four-dimensional subalgebra $\mathbb{B}_L\subset M_4(\mathbb{C})$, and the four matrices $L_{e_\mu}^{\mathrm{pau}}$ are a basis of it.
 
 **The definition.** The $\nu$-th column of the left matrix is the coordinate column of the product of $\tilde Q$ with the $\nu$-th frame vector:
 $$
@@ -144,7 +144,7 @@ Q_t-iQ_z&-iQ_x-Q_y\\
 $$
 Then
 $$
-L(\tilde Q)=\mathrm I_2\otimes A=
+L^{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes A=
 \begin{pmatrix}
 a&b&0&0\\
 c&d&0&0\\
@@ -158,19 +158,19 @@ The matrix is block diagonal with two equal blocks. The first block acts on the 
 
 **The four left matrices.** The four matrices are the images of the units under the left matrix map,
 $$
-L_{e_t}=\mathsf{M}_4^{L}(e_t)=\mathrm I_4,\qquad
-L_{\vec e_x}=\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+L_{e_t}^{\mathrm{pau}}=\mathsf{M}_4^{L}(e_t)=\mathrm I_4,\qquad
+L_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 $$
-L_{\vec e_y}=\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{\vec e_z}=\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
+L_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
 $$
 Each is $\mathrm I_2\otimes\mathsf M_2(\vec e_k)$ with $\mathsf M_2(\vec e_k)=-i\sigma_k$. The matrices are not signed permutations; their entries are $0,\pm1,\pm i$. Each has determinant $1$; the identity has trace $4$, and the three vector matrices have trace $0$. Since $\rho_L$ is injective and the four units are a basis of $\mathbb{B}$, the four matrices are linearly independent and span $\mathbb{B}_L$: they are a basis of the left copy.
 
 **The example.** For $\tilde Q=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z$,
 $$
 A=\begin{pmatrix}3+i&-4-i\\2-i&1+i\end{pmatrix},\qquad
-L(\tilde Q)=
+L^{\mathrm{pau}}(\tilde Q)=
 \begin{pmatrix}
 3+i&-4-i&0&0\\
 2-i&1+i&0&0\\
@@ -182,22 +182,22 @@ The trace is $8+4i=4(2+i)$, and the determinant is $117+44i=(11+2i)^2$, with $\l
 
 **The product of two left matrices.** Write the quaternion product of two units as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ with $\varepsilon=\pm1$ and $e_{\mu\nu}$ a unit. Then
 $$
-L_{e_\mu} L_{e_\nu}=\varepsilon L_{e_{\mu\nu}},
+L_{e_\mu}^{\mathrm{pau}} L_{e_\nu}^{\mathrm{pau}}=\varepsilon L_{e_{\mu\nu}}^{\mathrm{pau}},
 $$
 so the left product follows the order of the units, and the four matrices multiply as the units do up to sign, for example
 $$
-(L_{\vec e_x})^2=(L_{\vec e_y})^2=(L_{\vec e_z})^2=-\mathrm I_4,\qquad
-L_{\vec e_x}L_{\vec e_y}=L_{\vec e_z},\qquad
-L_{\vec e_y}L_{\vec e_x}=-L_{\vec e_z}.
+(L_{\vec e_x}^{\mathrm{pau}})^2=(L_{\vec e_y}^{\mathrm{pau}})^2=(L_{\vec e_z}^{\mathrm{pau}})^2=-\mathrm I_4,\qquad
+L_{\vec e_x}^{\mathrm{pau}}L_{\vec e_y}^{\mathrm{pau}}=L_{\vec e_z}^{\mathrm{pau}},\qquad
+L_{\vec e_y}^{\mathrm{pau}}L_{\vec e_x}^{\mathrm{pau}}=-L_{\vec e_z}^{\mathrm{pau}}.
 $$
 The set of the four left matrices together with their negatives is the quaternion group of order eight, and the closure under products up to sign is the multiplicativity of $\rho_L$ read on the basis.
 
 **The trace and the determinant.** Every left basis matrix is invertible, with
 $$
-\det L_{e_\mu}=1,\qquad
-\operatorname{Tr}L_{e_\mu}=4\delta_{\mu t}.
+\det L_{e_\mu}^{\mathrm{pau}}=1,\qquad
+\operatorname{Tr}L_{e_\mu}^{\mathrm{pau}}=4\delta_{\mu t}.
 $$
-A sum of basis matrices need not be invertible: $L_{\vec e_x}+R_{\vec e_x}$ has rank $2$, for instance. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
+A sum of basis matrices need not be invertible: $L_{\vec e_x}^{\mathrm{pau}}+R_{\vec e_x}^{\mathrm{pau}}$ has rank $2$, for instance. The algebra is simple and has zero divisors, and the invertibility of each basis vector does not extend to the complex span.
 
 ## The Right Family
 
@@ -210,7 +210,7 @@ The construction is the same as the left one with the order of the two factors e
 
 **The display.** In the same frame, with $A=\mathsf M_2(\tilde Q)$ and its entries $a,b,c,d$ as in §*The Left Family*,
 $$
-R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2=
+R^{\mathrm{pau}}(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2=
 \begin{pmatrix}
 a&0&c&0\\
 0&a&0&c\\
@@ -227,18 +227,18 @@ The two identities are the two ways of reading the associative law: the first is
 
 **The four right matrices.** The four matrices are the images of the units under the right matrix map,
 $$
-R_{e_t}=\mathsf{M}_4^{R}(e_t)=\mathrm I_4,\qquad
-R_{\vec e_x}=\mathsf{M}_4^{R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+R_{e_t}^{\mathrm{pau}}=\mathsf{M}_4^{R}(e_t)=\mathrm I_4,\qquad
+R_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-R_{\vec e_y}=\mathsf{M}_4^{R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_{\vec e_z}=\mathsf{M}_4^{R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
+R_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+R_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
 $$
 Each is $\mathsf M_2(\vec e_k)^{\mathsf T}\otimes\mathrm I_2$. Each has determinant $1$ and trace $4\delta_{\mu t}$; the four are a basis of $\mathbb{B}_R$. The two bases are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$, not two bases of one space.
 
 **The example.** For the same element $\tilde Q=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z$, the right matrix is the transposed block display,
 $$
-R(\tilde Q)=
+R^{\mathrm{pau}}(\tilde Q)=
 \begin{pmatrix}
 3+i&0&2-i&0\\
 0&3+i&0&2-i\\
@@ -250,20 +250,20 @@ Its trace is $8+4i$ and its determinant $117+44i$, the same as those of $L(\tild
 
 **The product of two right matrices.** With the same notation, $e_\nu e_\mu=\varepsilon'e_{\nu\mu}$, so
 $$
-R_{e_\mu} R_{e_\nu}=\varepsilon' R_{e_{\nu\mu}},
+R_{e_\mu}^{\mathrm{pau}} R_{e_\nu}^{\mathrm{pau}}=\varepsilon' R_{e_{\nu\mu}}^{\mathrm{pau}},
 $$
 and the right product reverses the order of the units, because $R_aR_b=R_{ba}$. For example
 $$
-(R_{\vec e_x})^2=(R_{\vec e_y})^2=(R_{\vec e_z})^2=-\mathrm I_4,\qquad
-R_{\vec e_x}R_{\vec e_y}=-R_{\vec e_z},\qquad
-R_{\vec e_y}R_{\vec e_x}=R_{\vec e_z}.
+(R_{\vec e_x}^{\mathrm{pau}})^2=(R_{\vec e_y}^{\mathrm{pau}})^2=(R_{\vec e_z}^{\mathrm{pau}})^2=-\mathrm I_4,\qquad
+R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}},\qquad
+R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=R_{\vec e_z}^{\mathrm{pau}}.
 $$
 The four right matrices together with their negatives are again the quaternion group of order eight, with the product read backwards.
 
 **The trace and the determinant.** The right matrices have the same invariants as the left ones,
 $$
-\det R_{e_\mu}=1,\qquad
-\operatorname{Tr}R_{e_\mu}=4\delta_{\mu t},
+\det R_{e_\mu}^{\mathrm{pau}}=1,\qquad
+\operatorname{Tr}R_{e_\mu}^{\mathrm{pau}}=4\delta_{\mu t},
 $$
 because the stitch of §*The Stitch Between the Two Families* is a transposition composed with a fixed permutation, and neither changes a determinant or a trace.
 
@@ -292,7 +292,7 @@ The identity is the tensor identity $\mathsf P(\mathrm I_2\otimes A^{\mathsf T})
 
 **The stitch in full.** The three steps are displayed on a general element. The transpose of the left matrix is
 $$
-L(\tilde Q)^{\mathsf T}=
+{L^{\mathrm{pau}}(\tilde Q)}^{\mathsf T}=
 \begin{pmatrix}
 a&c&0&0\\
 b&d&0&0\\
@@ -302,7 +302,7 @@ b&d&0&0\\
 $$
 the swap moves the two $2\times2$ blocks into the two tensor slots,
 $$
-\mathsf P\,L(\tilde Q)^{\mathsf T}=
+\mathsf P\,{L^{\mathrm{pau}}(\tilde Q)}^{\mathsf T}=
 \begin{pmatrix}
 a&c&0&0\\
 0&0&a&c\\
@@ -312,14 +312,14 @@ b&d&0&0\\
 $$
 and the second multiplication by $\mathsf P$ exchanges the second and third columns,
 $$
-\mathsf P\,L(\tilde Q)^{\mathsf T}\mathsf P=
+\mathsf P\,{L^{\mathrm{pau}}(\tilde Q)}^{\mathsf T}\mathsf P=
 \begin{pmatrix}
 a&0&c&0\\
 0&a&0&c\\
 b&0&d&0\\
 0&b&0&d
 \end{pmatrix}
-=R(\tilde Q).
+=R^{\mathrm{pau}}(\tilde Q).
 $$
 The swap sends a block in the second tensor slot to the first slot, and conversely. The stitch is an involution, because $\mathsf P^2=\mathrm I_4$ and transposition is an involution. It preserves the trace and the determinant:
 $$
@@ -360,26 +360,66 @@ and all the cross products vanish. A frame orthogonal with equal norms gives the
 
 ## Every Frame Is a Conjugate of This One
 
-**The change matrix.** The columns of
+**Every frame at once.** Let $\mathcal{F}'$ be any frame, with change matrix $C$ whose columns are its four vectors written in $\mathcal{P}$. A vector whose Peirce coordinate column is $p$ has the column $Cp$ in $\mathcal{F}'$, so the two matrices are
 $$
-S=\frac12
+L'(\tilde Q)=C^{-1}L(\tilde Q)C,\qquad R'(\tilde Q)=C^{-1}R(\tilde Q)C .
+$$
+One matrix serves both families, because the frame is a property of the carrier and the side is a property of the action.
+
+**One orbit.** Every frame arises this way from one $C\in GL_4(\mathbb{C})$, so the frames form a single orbit, and what changes from frame to frame is the array: its entries, its sparsity, the subring of $\mathbb{C}$ in which they lie, its blocks. What does not change is the element, and the trace $4Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}^{2}$, the characteristic polynomial $((\lambda-Q_t)^2+B^2)^2$, the spectrum and the rank are the same in every frame.
+
+**A change of frame, not of operator.** The conjugation leaves the trace, the determinant and the characteristic polynomial untouched. It is not a change of the element and not a change of the side; it is the same action written in another basis. An identity that holds in one frame may therefore fail in another, and the transpose identity of §*The Transpose Is Not the Conjugation* is the example.
+
+**The axis-free frame on the orbit.** It is reached from the Peirce frame by the matrix $C_{\Pi}$ of the next section, whose four columns are the frame vectors written in the axis-free basis. The matrix, its inverse, the two dictionaries they carry and the conjugations performed entry by entry are the subject of that section.
+
+## The Switch to the Axis-Free Matrices
+
+**What the switch is.** One matrix and its inverse. The columns of the first are the four frame vectors written in the axis-free basis, the columns of the second are the four axis-free units written in the frame. Everything below is those two arrays, the two $2\times2$ blocks they split into, the eight unit matrices of the two families each displayed in both frames, one of the sixteen products, and a worked element.
+
+### The Two Basis Matrices
+
+**The notation of the switch.** Write $\tau_\mu$ for the four frame vectors in the order $\mathcal{P}$ and $e_\mu$ for the four units in the order of the coefficient basis:
+$$
+\tau_1=\tilde\Pi_+,\quad \tau_2=\vec\Upsilon_+,\quad \tau_3=\vec\Upsilon_-,\quad \tau_4=\tilde\Pi_-,
+\qquad
+e_1=e_t,\quad e_2=\vec e_x,\quad e_3=\vec e_y,\quad e_4=\vec e_z .
+$$
+The switch is then two arrays of coordinate columns,
+$$
+C_{\Pi}=\bigl([\tau_1]_e,\dots,[\tau_4]_e\bigr),
+\qquad
+C_{\Pi}^{-1}=\bigl([e_1]_\tau,\dots,[e_4]_\tau\bigr),
+$$
+and the two expansions they carry are
+$$
+\tau_\mu=\sum_{\nu=1}^{4}\bigl(C_{\Pi}\bigr)_{\nu\mu}e_\nu,
+\qquad
+e_\mu=\sum_{\nu=1}^{4}\bigl(C_{\Pi}^{-1}\bigr)_{\nu\mu}\tau_\nu .
+$$
+The first array is the matrix of the $\tau$ basis in terms of the axis-free basis, the second is the matrix of the axis-free basis in terms of the $\tau$ basis; each lists four vectors, one per column.
+
+**The $\tau$ basis over the axf basis.** The columns are the four frame vectors, in the order $\mathcal{P}$:
+$$
+C_{\Pi}=
 \begin{pmatrix}
-1&0&0&1\\
-0&i&i&0\\
-0&1&-1&0\\
-i&0&0&-i
-\end{pmatrix}
+\tfrac12&0&0&\tfrac12\\[2pt]
+0&\tfrac{i}{2}&\tfrac{i}{2}&0\\[2pt]
+0&\tfrac12&-\tfrac12&0\\[2pt]
+\tfrac{i}{2}&0&0&-\tfrac{i}{2}
+\end{pmatrix},
+\qquad
+\begin{array}{l}
+\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr),\\[2pt]
+\vec\Upsilon_+=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\\[2pt]
+\vec\Upsilon_-=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\\[2pt]
+\tilde\Pi_-=\tfrac12\bigl(e_t-i\vec e_z\bigr).
+\end{array}
 $$
-are the four frame vectors in the axis-free basis:
+The $k$-th column of $C_{\Pi}$ is the coordinate column of the $k$-th frame vector: $(1,0,0,i)/2$ for $\tilde\Pi_+$, $(0,i,1,0)/2$ for $\vec\Upsilon_+$, $(0,i,-1,0)/2$ for $\vec\Upsilon_-$ and $(1,0,0,-i)/2$ for $\tilde\Pi_-$.
+
+**The axf basis over the $\tau$ basis.** The columns are the four units, in the axis-free order:
 $$
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad
-\vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),\quad
-\vec\Upsilon_-=\tfrac12(i\vec e_x-\vec e_y),\quad
-\tilde\Pi_-=\tfrac12(e_t-i\vec e_z).
-$$
-The inverse is
-$$
-S^{-1}=
+C_{\Pi}^{-1}=
 \begin{pmatrix}
 1&0&0&-i\\
 0&-i&1&0\\
@@ -387,43 +427,211 @@ S^{-1}=
 1&0&0&i
 \end{pmatrix},
 \qquad
-\det S=-\tfrac14 .
+\begin{array}{l}
+e_t=\tilde\Pi_++\tilde\Pi_-,\\[2pt]
+\vec e_x=-i\vec\Upsilon_+-i\vec\Upsilon_-,\\[2pt]
+\vec e_y=\vec\Upsilon_+-\vec\Upsilon_-,\\[2pt]
+\vec e_z=-i\tilde\Pi_++i\tilde\Pi_-.
+\end{array}
 $$
-The determinant is the normalisation of the four frame vectors, not an invariant of the algebra. The matrix satisfies $S^{\dagger}S=\tfrac12\mathrm I_4$ and $S^{-1}=2S^{\dagger}$; the factor $\tfrac12$ is the common squared norm of the frame vectors.
+The $k$-th column of $C_{\Pi}^{-1}$ is the coordinate column of the $k$-th unit: $(1,0,0,1)$ for $e_t$, $(0,-i,-i,0)$ for $\vec e_x$, $(0,1,-1,0)$ for $\vec e_y$ and $(-i,0,0,i)$ for $\vec e_z$. Each unit is a combination of two frame vectors and each frame vector a combination of two units, so the two arrays have two nonzeros in every row and in every column.
 
-**The congruence.** The two representations are the same operator read in two frames:
-$$
-L(\tilde Q)=S^{-1}L^{\mathrm{axf}}(\tilde Q)S,\qquad
-R(\tilde Q)=S^{-1}R^{\mathrm{axf}}(\tilde Q)S,
-$$
-and conversely
-$$
-L^{\mathrm{axf}}(\tilde Q)=S\,L(\tilde Q)\,S^{-1},\qquad
-R^{\mathrm{axf}}(\tilde Q)=S\,R(\tilde Q)\,S^{-1}.
-$$
-On the four units,
-$$
-L_{e_\mu}=S^{-1}L_{e_\mu}^{\mathrm{axf}}S,\qquad
-R_{e_\mu}=S^{-1}R_{e_\mu}^{\mathrm{axf}}S .
-$$
-The coordinate columns change by
-$$
-q_e=S\,p,\qquad p=S^{-1}q_e,
-$$
-where $q_e=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ and $p=(P_+,X_+,X_-,P_-)^{\mathsf T}$ are the coefficients in the axis-free basis and in the Peirce frame.
+**The two dictionaries, side by side.** Reading the two arrays column by column gives the whole switch:
 
-**A change of frame, not of operator.** The switch conjugates the matrix and leaves the trace, the determinant and the characteristic polynomial unchanged. It is not a change of the algebra element and not a change of the left or right action; it is the same action written in the other basis. The two representations are therefore two displays of one representation, and the formulas of the product, the trace and the determinant below hold in both.
+| frame vector | its column over axf | unit | its column over $\tau$ |
+|---|---|---|---|
+| $\tilde\Pi_+$ | $\tfrac12(1,0,0,i)^{\mathsf T}$ | $e_t$ | $(1,0,0,1)^{\mathsf T}$ |
+| $\vec\Upsilon_+$ | $\tfrac12(0,i,1,0)^{\mathsf T}$ | $\vec e_x$ | $(0,-i,-i,0)^{\mathsf T}$ |
+| $\vec\Upsilon_-$ | $\tfrac12(0,i,-1,0)^{\mathsf T}$ | $\vec e_y$ | $(0,1,-1,0)^{\mathsf T}$ |
+| $\tilde\Pi_-$ | $\tfrac12(1,0,0,-i)^{\mathsf T}$ | $\vec e_z$ | $(-i,0,0,i)^{\mathsf T}$ |
 
-**Every frame at once.** Let $\mathcal{F}'$ be any frame, with change matrix $C$ whose columns are its four vectors in $\mathcal{P}$. Reading the two definitions in $\mathcal{F}'$ and in $\mathcal{P}$ gives
+**They are inverse, and normalised.** The two arrays satisfy
 $$
-L'(\tilde Q)=C^{-1}L(\tilde Q)C,\qquad
-R'(\tilde Q)=C^{-1}R(\tilde Q)C,
+C_{\Pi}C_{\Pi}^{-1}=\mathrm I_4,\qquad
+\det C_{\Pi}=-\tfrac14,\qquad
+C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4,\qquad
+C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}.
 $$
-so every frame is the conjugate of this one by its own change matrix, the switch $S$ is the instance for the coefficient basis, and the frames are one orbit under $GL_4(\mathbb{C})$. The trace, the determinant and the characteristic polynomial are unchanged along the orbit, which is why they are properties of the element and not of the frame.
+The factor $\tfrac12$ is the common squared norm of the four frame vectors, so the determinant $-\tfrac14$ is that normalisation and not an invariant of the algebra. The letter is the one of *Matrix Representations Conventions*, §*The $M_4(\mathbb{C})$ Axis-Free Representation*, where this array is called the Peirce change.
+
+**Two blocks, and no mixing.** Both arrays vanish in the two blocks that join $\{e_t,\vec e_z\}$ to $\{\vec e_x,\vec e_y\}$, so the switch is two independent $2\times2$ switches:
+$$
+\begin{pmatrix}\tilde\Pi_+\\ \tilde\Pi_-\end{pmatrix}
+=\tfrac12
+\begin{pmatrix}1&i\\ 1&-i\end{pmatrix}
+\begin{pmatrix}e_t\\ \vec e_z\end{pmatrix},
+\qquad
+\begin{pmatrix}\vec\Upsilon_+\\ \vec\Upsilon_-\end{pmatrix}
+=\tfrac12
+\begin{pmatrix}i&1\\ i&-1\end{pmatrix}
+\begin{pmatrix}\vec e_x\\ \vec e_y\end{pmatrix}.
+$$
+Each block is a Hadamard matrix with one column multiplied by $i$, and the two blocks invert to
+$$
+\begin{pmatrix}1&1\\-i&i\end{pmatrix},
+\qquad
+\begin{pmatrix}-i&-i\\1&-1\end{pmatrix},
+$$
+which are the two blocks of $C_{\Pi}^{-1}$, read transposed: that array lists the units by columns and not by rows. This is why the two arrays have four zeros in each off-block position: the idempotents never mix with the nilpotents.
+
+**The same dictionary on a column.** A coordinate column changes by the same two arrays,
+$$
+q_e=C_{\Pi}\,p,\qquad p=C_{\Pi}^{-1}q_e,
+$$
+where $q_e=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ and $p=(P_+,X_+,X_-,P_-)^{\mathsf T}$. Written out, $q_e=C_{\Pi}p$ is
+$$
+\begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}
+=\frac12
+\begin{pmatrix}
+P_++P_-\\
+iX_++iX_-\\
+X_+-X_-\\
+iP_+-iP_-
+\end{pmatrix},
+$$
+which is the inverse of the four formulas of §*The Root and the Peirce Frame*: half the sum of the two idempotent coordinates is $Q_t$, half their difference multiplied by $i$ is $Q_z$, half the sum of the two mixed coordinates is $-iQ_x$, and half their difference is $Q_y$.
+
+### The Eight Unit Matrices in Both Displays
+
+**The rule.** The two families are conjugated by the same two arrays,
+$$
+L^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L(\tilde Q)\,C_{\Pi}^{-1},
+\qquad
+L(\tilde Q)=C_{\Pi}^{-1}L^{\mathrm{axf}}(\tilde Q)\,C_{\Pi},
+$$
+$$
+R^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R(\tilde Q)\,C_{\Pi}^{-1},
+\qquad
+R(\tilde Q)=C_{\Pi}^{-1}R^{\mathrm{axf}}(\tilde Q)\,C_{\Pi}.
+$$
+One pair of arrays serves both families, because the frame is a property of the carrier and the side is a property of the action.
+
+**The scalar unit.** $L_{e_t}^{\mathrm{axf}}=C_{\Pi}^{-1}\mathrm I_4C_{\Pi}=L_{e_t}^{\mathrm{pau}}=\mathrm I_4$, and the same on the right. The identity is fixed by every change of frame, so it has no display of its own.
+
+**The unit $\vec e_x$.**
+$$
+L_{\vec e_x}^{\mathrm{axf}}=
+\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+\qquad
+L_{\vec e_x}^{\mathrm{pau}}=C_{\Pi}^{-1}L_{\vec e_x}^{\mathrm{axf}}C_{\Pi}=
+\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+$$
+$$
+R_{\vec e_x}^{\mathrm{axf}}=
+\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+\qquad
+R_{\vec e_x}^{\mathrm{pau}}=C_{\Pi}^{-1}R_{\vec e_x}^{\mathrm{axf}}C_{\Pi}=
+\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix}.
+$$
+
+**The unit $\vec e_y$.**
+$$
+L_{\vec e_y}^{\mathrm{axf}}=
+\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
+\qquad
+L_{\vec e_y}^{\mathrm{pau}}=C_{\Pi}^{-1}L_{\vec e_y}^{\mathrm{axf}}C_{\Pi}=
+\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+$$
+$$
+R_{\vec e_y}^{\mathrm{axf}}=
+\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},
+\qquad
+R_{\vec e_y}^{\mathrm{pau}}=C_{\Pi}^{-1}R_{\vec e_y}^{\mathrm{axf}}C_{\Pi}=
+\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}.
+$$
+
+**The unit $\vec e_z$.**
+$$
+L_{\vec e_z}^{\mathrm{axf}}=
+\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+\qquad
+L_{\vec e_z}^{\mathrm{pau}}=C_{\Pi}^{-1}L_{\vec e_z}^{\mathrm{axf}}C_{\Pi}=
+\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
+$$
+$$
+R_{\vec e_z}^{\mathrm{axf}}=
+\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},
+\qquad
+R_{\vec e_z}^{\mathrm{pau}}=C_{\Pi}^{-1}R_{\vec e_z}^{\mathrm{axf}}C_{\Pi}=
+\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
+$$
+
+**What the twelve arrays say.** In each pair the axis-free array is a signed permutation with entries $0,\pm1$, and the Peirce array is monomial with entries $0,\pm1,\pm i$. The positions differ, and the imaginary unit appears in the Peirce array because the switch carries it. One coincidence marks the relation: the Peirce matrix of $\vec e_y$ is the axis-free matrix of $\vec e_x$, so the two displays are two orders of the same four arrays and not two sets of objects.
+
+**One step in full.** The two multiplications of the same vector are separated, starting from $L_{\vec e_x}^{\mathrm{axf}}$ displayed above:
+$$
+C_{\Pi}^{-1}L_{\vec e_x}^{\mathrm{axf}}=
+\begin{pmatrix}0&-1&-i&0\\-i&0&0&-1\\-i&0&0&1\\0&-1&i&0\end{pmatrix},
+\qquad
+C_{\Pi}^{-1}L_{\vec e_x}^{\mathrm{axf}}C_{\Pi}=
+\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix}.
+$$
+The first factor rewrote the four columns in the frame, the second recombined them into the columns of the Peirce display. Every entry of the result is a sum of two entries of the middle array with coefficients $\pm\tfrac12$ and $\pm\tfrac i2$; the $(1,2)$ entry, for instance, is $\tfrac12(-1)i+\tfrac12(-i)1=-i$.
+
+**The entry rule.** Behind the conjugation of any array is
+$$
+L(\tilde Q)_{\mu\nu}=\sum_{\rho,\sigma}\bigl(C_{\Pi}^{-1}\bigr)_{\mu\rho}\,L^{\mathrm{axf}}(\tilde Q)_{\rho\sigma}\,\bigl(C_{\Pi}\bigr)_{\sigma\nu},
+$$
+a sum of four terms, because each row of $C_{\Pi}^{-1}$ and each column of $C_{\Pi}$ has two nonzero entries. For $\mu=\nu=1$ the first row of $C_{\Pi}^{-1}$ is $(1,0,0,-i)$ and the first column of $C_{\Pi}$ is $(1,0,0,i)/2$, so only $\rho,\sigma\in\{1,4\}$ contribute and
+$$
+L_{11}(\tilde Q)=\tfrac12\bigl(Q_t-iQ_z-iQ_z+Q_t\bigr)=Q_t-iQ_z=a,
+$$
+the entry $a$ of §*The Left Family*. The same computation gives $b=-iQ_x-Q_y$, $c=-iQ_x+Q_y$ and $d=Q_t+iQ_z$; and an entry that vanishes in the Peirce display, such as the $(1,3)$, is a sum of four terms cancelling in pairs, $\tfrac12(-iQ_x+Q_y-Q_y+iQ_x)=0$.
+
+### The Sixteen Products
+
+**The conjugation passes through the products.** An endomorphism written in the basis of the sixteen products switches with the same coefficients:
+$$
+C_{\Pi}^{-1}MC_{\Pi}
+=\sum_{\mu,\nu}c_{\mu\nu}\,C_{\Pi}^{-1}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}\,C_{\Pi}^{-1}R_{e_\nu}^{\mathrm{pau}}C_{\Pi}
+=\sum_{\mu,\nu}c_{\mu\nu}\,L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}},
+$$
+so the coefficient column $c$ is the same in the two frames, and only the sixteen arrays that carry it change. The two bases of the ambient are therefore one basis written twice, and the companion article works with either.
+
+**One product in both displays.** For $\mu=\nu=x$ the product is
+$$
+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=
+\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+\qquad
+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=
+\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+$$
+the second the conjugate of the first. The Peirce display reverses the two ends of the diagonal, the axis-free display is diagonal, and the trace $0$ and the rank $4$ are common to the two. The shape is general: each of the sixteen products is monomial in the frame, with entries $0,\pm1,\pm i$, and a signed permutation in the axis-free basis, with entries $0,\pm1$.
+
+### The Worked Element, Both Ways
+
+**The two coordinate columns.**
+$$
+q_e=\begin{pmatrix}2+i\\ 1-i\\ 3\\ i\end{pmatrix}=C_{\Pi}p,
+\qquad
+p=\begin{pmatrix}3+i\\ 2-i\\ -4-i\\ 1+i\end{pmatrix}=C_{\Pi}^{-1}q_e .
+$$
+
+**The two matrices.**
+$$
+L^{\mathrm{pau}}(\tilde Q)=
+\begin{pmatrix}
+3+i&-4-i&0&0\\
+2-i&1+i&0&0\\
+0&0&3+i&-4-i\\
+0&0&2-i&1+i
+\end{pmatrix},
+\qquad
+L^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+2+i&-1+i&-3&-i\\
+1-i&2+i&-i&3\\
+3&i&2+i&-1+i\\
+i&-3&1-i&2+i
+\end{pmatrix},
+$$
+and $C_{\Pi}^{-1}L^{\mathrm{axf}}(\tilde Q)C_{\Pi}$ returns the first. The block structure is gone in the axis-free array; the trace $8+4i=4Q_t$ and the determinant $117+44i=\langle\tilde Q\rangle_{\natural}^{2}$ are common to the two.
+
+**What the switch costs, and what it buys.** The two blocks of the left matrix merge into one dense array, and the eight zeros of the Peirce display are lost. What is gained is the transpose dictionary, real entries for real elements and the cyclic symmetry of the three directions; the four rows of §*The Comparison Table* that record these trades are the ones named real matrices, cyclic symmetry, transpose and tensor display.
 
 ## What the Peirce Frame Makes Simple
 
-**The ten properties.** In the Peirce frame the sixteen matrices $L_{e_\mu}$ and $R_{e_\nu}$ have all of the following at once.
+**The ten properties.** In the Peirce frame the sixteen matrices $L_{e_\mu}^{\mathrm{pau}}$ and $R_{e_\nu}^{\mathrm{pau}}$ have all of the following at once.
 
 **(a) They are monomial.** Exactly one nonzero entry in each row and in each column, of modulus one.
 
@@ -439,15 +647,15 @@ so every frame is the conjugate of this one by its own change matrix, the switch
 
 **(g) The stitch is a pure swap.** $R(\tilde Q)=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P$ with $\mathsf P^2=\mathrm I_4$: no signs and no diagonal factor.
 
-**(h) The switch is half a swap.** The Gram matrix of the plain product in this frame is $\tfrac12\mathsf P$, so $S^{\mathsf T}DS=\tfrac12\mathsf P$ and the two frames differ by a swap and a factor two.
+**(h) The switch is half a swap.** The Gram matrix of the plain product in this frame is $\tfrac12\mathsf P$, so $C_{\Pi}^{\mathsf T}DC_{\Pi}=\tfrac12\mathsf P$ and the two frames differ by a swap and a factor two.
 
-**(i) The invariants of a unit are trivial.** $\operatorname{Tr}L_{e_\mu}=4\delta_{\mu t}$ and $\det L_{e_\mu}=1$, and the same on the right.
+**(i) The invariants of a unit are trivial.** $\operatorname{Tr}L_{e_\mu}^{\mathrm{pau}}=4\delta_{\mu t}$ and $\det L_{e_\mu}^{\mathrm{pau}}=1$, and the same on the right.
 
 **(j) The transpose is two copies of $\sigma_2$.** $L(\tilde Q)^{\mathsf T}=C_LL(\tilde Q^{\natural})C_L$ and $R(\tilde Q)^{\mathsf T}=C_RR(\tilde Q^{\natural})C_R$.
 
 **One root, ten readings.** Properties (d) and (e) are the root: the idempotents are its two halves, and the split $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is the reason the block repeats. Properties (a), (b), (c) and (i) are one fact about the block, that $\mathsf M_2$ is a unitary monomial array of determinant one. Property (f) is the Peirce table of §*The Root and the Peirce Frame*. Properties (g) and (h) are the same swap, read on the two matrices. Property (j) is $\sigma_2$, the only Pauli matrix that is imaginary and antisymmetric. The ten are one frame seen ten ways.
 
-**What the entries cannot be.** No entry of the sixteen is real except $0$ and $\pm1$, and those occur only in $L_{\vec e_y}$ and $R_{\vec e_y}$. The frame vectors are complex, so the display of a real element is not real: the real slice $\mathbb{H}\subset\mathbb{B}$ does not land in $M_4(\mathbb{R})$ here, and the quaternion block of §*The Six Subspaces* is the shape $A_{\mathbb{H}}(a,b)$ and not the entrywise real shape. This is the price of the tensor display, and the coefficient basis pays it in the other currency: it keeps the entries real and gives up the idempotents.
+**What the entries cannot be.** No entry of the sixteen is real except $0$ and $\pm1$, and those occur only in $L_{\vec e_y}^{\mathrm{pau}}$ and $R_{\vec e_y}^{\mathrm{pau}}$. The frame vectors are complex, so the display of a real element is not real: the real slice $\mathbb{H}\subset\mathbb{B}$ does not land in $M_4(\mathbb{R})$ here, and the quaternion block of §*The Six Subspaces* is the shape $A_{\mathbb{H}}(a,b)$ and not the entrywise real shape. This is the price of the tensor display, and the coefficient basis pays it in the other currency: it keeps the entries real and gives up the idempotents.
 
 ## Which Roots Give a Peirce Frame
 
@@ -465,7 +673,7 @@ one complex equation in three complex unknowns: a two-parameter family, of real 
 
 **The six coordinate roots.** The roots with a single nonzero coordinate are $\pm i\vec e_x$, $\pm i\vec e_y$, $\pm i\vec e_z$. They give the three coordinate frames and their two readings: the root $-\vec\Xi$ has the idempotents of $\vec\Xi$ exchanged, so its frame is the same one with the first and fourth vectors interchanged. The frames of $i\vec e_x$, $i\vec e_y$ and $i\vec e_z$ are carried into each other by the cyclic relabelling $x\mapsto y\mapsto z\mapsto x$, which preserves the relations $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and is therefore an automorphism of the algebra. So the six coordinate roots give one frame up to a cyclic relabelling and the exchange of the two idempotents.
 
-**Any other root loses the sparsity.** Take a root with two nonzero coordinates, for example $i(\vec e_x+\vec e_y)/\sqrt2$. Its idempotent $\tilde\Pi_+=\tfrac12(e_t+i(a_x\vec e_x+a_y\vec e_y+a_z\vec e_z))$ has three nonzero coordinates in the coefficient basis, so the change matrix $C$ from the standard frame to this one is not monomial, and neither is its inverse. The sixteen arrays are then $C^{-1}L_{e_\mu}C$ and $C^{-1}R_{e_\nu}C$, and their entries leave $\{0,\pm1,\pm i\}$: the coefficients of $C$ and of $C^{-1}$ are carried into the product. The sparsity of §*What the Peirce Frame Makes Simple* therefore belongs to the six coordinate roots and not to the Peirce construction itself.
+**Any other root loses the sparsity.** Take a root with two nonzero coordinates, for example $i(\vec e_x+\vec e_y)/\sqrt2$. Its idempotent $\tilde\Pi_+=\tfrac12(e_t+i(a_x\vec e_x+a_y\vec e_y+a_z\vec e_z))$ has three nonzero coordinates in the coefficient basis, so the change matrix $C$ from the standard frame to this one is not monomial, and neither is its inverse. The sixteen arrays are then $C^{-1}L_{e_\mu}^{\mathrm{pau}}C$ and $C^{-1}R_{e_\nu}^{\mathrm{pau}}C$, and their entries leave $\{0,\pm1,\pm i\}$: the coefficients of $C$ and of $C^{-1}$ are carried into the product. The sparsity of §*What the Peirce Frame Makes Simple* therefore belongs to the six coordinate roots and not to the Peirce construction itself.
 
 **Every frame with two idempotents is a root frame.** Suppose a frame contains two orthogonal idempotents summing to $e_t$. Their difference is
 $$
@@ -503,7 +711,7 @@ L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1).
 $$
 The identity is the associativity of the product, read on the two sides. It says that the left copy and the right copy are mutual commutants inside the ambient matrix algebra.
 
-**The product of a left and a right basis matrix.** The product $L_{e_\mu} R_{e_\nu}$ is a monomial matrix with entries $0,\pm1,\pm i$; it need not lie in either copy. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
+**The product of a left and a right basis matrix.** The product $L_{e_\mu}^{\mathrm{pau}} R_{e_\nu}^{\mathrm{pau}}$ is a monomial matrix with entries $0,\pm1,\pm i$; it need not lie in either copy. A left matrix and a right matrix commute, and this commutation is the defining property of the two copies.
 
 ## The Trace
 
@@ -515,10 +723,10 @@ The trace is the sum of the four diagonal entries, each pair contributing $2Q_t$
 
 **The trace of a basis matrix.** On the basis,
 $$
-\operatorname{Tr}L_{e_t}=\operatorname{Tr}R_{e_t}=4,\qquad
-\operatorname{Tr}L_{\vec e_x}=\operatorname{Tr}L_{\vec e_y}=\operatorname{Tr}L_{\vec e_z}=0,
+\operatorname{Tr}L_{e_t}^{\mathrm{pau}}=\operatorname{Tr}R_{e_t}^{\mathrm{pau}}=4,\qquad
+\operatorname{Tr}L_{\vec e_x}^{\mathrm{pau}}=\operatorname{Tr}L_{\vec e_y}^{\mathrm{pau}}=\operatorname{Tr}L_{\vec e_z}^{\mathrm{pau}}=0,
 \qquad
-\operatorname{Tr}R_{\vec e_x}=\operatorname{Tr}R_{\vec e_y}=\operatorname{Tr}R_{\vec e_z}=0.
+\operatorname{Tr}R_{\vec e_x}^{\mathrm{pau}}=\operatorname{Tr}R_{\vec e_y}^{\mathrm{pau}}=\operatorname{Tr}R_{\vec e_z}^{\mathrm{pau}}=0.
 $$
 The trace is $\mathbb{C}$-linear and additive. It is not multiplicative; the trace of a product is not the product of the traces.
 
@@ -558,9 +766,9 @@ and the same identity holds for $R$. The determinant is the multiplicative invar
 
 **The basis determinants.** Every basis matrix has determinant $1$:
 $$
-\det L_{e_\mu}=\det R_{e_\mu}=1\qquad(\mu=t,x,y,z).
+\det L_{e_\mu}^{\mathrm{pau}}=\det R_{e_\mu}^{\mathrm{pau}}=1\qquad(\mu=t,x,y,z).
 $$
-The determinant of a sum is not the sum of the determinants; a sum of two invertible matrices can be singular, as $L_{\vec e_x}+R_{\vec e_x}$ shows.
+The determinant of a sum is not the sum of the determinants; a sum of two invertible matrices can be singular, as $L_{\vec e_x}^{\mathrm{pau}}+R_{\vec e_x}^{\mathrm{pau}}$ shows.
 
 **The invertibility and the rank.** The following are equivalent: $\tilde Q$ is invertible; $\langle\tilde Q\rangle_{\natural}\neq0$; $\mathsf M_2(\tilde Q)$ is invertible; $L(\tilde Q)$ is invertible; $R(\tilde Q)$ is invertible. When $\langle\tilde Q\rangle_{\natural}=0$, the rank of the regular matrix is $0$, $2$ or $4$, never $1$ or $3$, because the matrix is two equal copies of the $2\times2$ image. The rank is twice the rank of $\mathsf M_2(\tilde Q)$.
 
@@ -604,7 +812,7 @@ $$
 A=\begin{pmatrix}-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&iQ_z\end{pmatrix},\qquad
 L(\tilde Q)=\mathrm I_2\otimes A .
 $$
-The block $A$ is traceless, and so is $M$. The image is the complex span of $L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to $Q_t=0$. The image is closed under the commutator and not under the product. It is not the space of skew-symmetric matrices in this frame; the transpose dictionary of the axis-free basis does not carry over to this frame without the matrices $C_L$ and $C_R$.
+The block $A$ is traceless, and so is $M$. The image is the complex span of $L_{\vec e_x}^{\mathrm{pau}},L_{\vec e_y}^{\mathrm{pau}},L_{\vec e_z}^{\mathrm{pau}}$, of real dimension $6$. The trace is $0$, the determinant of the $2\times2$ image is $B^2$, and the determinant of $M$ is $B^4$. Inside the image, the trace condition is equivalent to $Q_t=0$. The image is closed under the commutator and not under the product. It is not the space of skew-symmetric matrices in this frame; the transpose dictionary of the axis-free basis does not carry over to this frame without the matrices $C_L$ and $C_R$.
 
 ### The Quaternion Subspace
 
@@ -705,17 +913,17 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 
 **The invariants are common to all three columns.** Trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, characteristic polynomial $((\lambda-Q_t)^2+B^2)^2$, spectrum $Q_t\pm iB$ twice, rank in $\{0,2,4\}$: none of these is a row of the table, because none of them distinguishes the frames. They are properties of the element, and the element is the same in all of them.
 
-**What the table does not decide.** It does not name a preferred representation and it does not compare elements: a row is a property of an array, and an array is a display of an operator in a frame. The two frames display the same operators, related by the change $S$ of §*Every Frame Is a Conjugate of This One*, and each row says what one display makes visible and the other does not.
+**What the table does not decide.** It does not name a preferred representation and it does not compare elements: a row is a property of an array, and an array is a display of an operator in a frame. The two frames display the same operators, related by the Peirce change $C_{\Pi}$ of §*The Switch to the Axis-Free Matrices*, and each row says what one display makes visible and the other does not.
 
 ## Summary
 
 The standard Peirce frame is built from the root $\vec\Xi=i\vec e_z$, whose square is $e_t$. The two idempotents are $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$, the two mixed units are $\vec\Upsilon_\pm=(i\vec e_x\pm\vec e_y)/2$, and the frame is $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The root is the only choice made: it fixes the idempotents, the frame is fixed by them up to the scale of the mixed units, and the roots form a two-parameter family, of which the six coordinate roots give the three coordinate frames up to relabelling and the exchange of the idempotents.
 
-The left matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and the right matrix is $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The four left matrices and the four right matrices are monomial, with entries $0,\pm1,\pm i$, unitary, of determinant one; each family is a basis of its copy. The stitch between the two matrices is $R(\tilde Q)=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P$, a pure swap with no signs, and the switch from the coefficient basis is $L=S^{-1}L^{\mathrm{axf}}S$, $R=S^{-1}R^{\mathrm{axf}}S$, with $\det S=-\tfrac14$ and $S^{\mathsf T}DS=\tfrac12\mathsf P$.
+The left matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and the right matrix is $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The four left matrices and the four right matrices are monomial, with entries $0,\pm1,\pm i$, unitary, of determinant one; each family is a basis of its copy. The stitch between the two matrices is $R(\tilde Q)=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P$, a pure swap with no signs, and the switch from the coefficient basis is $L=C_{\Pi}^{-1}L^{\mathrm{axf}}C_{\Pi}$, $R=C_{\Pi}^{-1}R^{\mathrm{axf}}C_{\Pi}$, with $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{\mathsf T}DC_{\Pi}=\tfrac12\mathsf P$. The switch itself is one matrix and its inverse, in four columns each, and it splits into two $2\times2$ blocks: the idempotents in the plane of $e_t,\vec e_z$, the nilpotents in the plane of $\vec e_x,\vec e_y$, the two planes never mixed. The columns of $C_{\Pi}^{-1}$ read the other way give $e_t=\tilde\Pi_++\tilde\Pi_-$, $\vec e_x=-i(\vec\Upsilon_++\vec\Upsilon_-)$, $\vec e_y=\vec\Upsilon_+-\vec\Upsilon_-$, $\vec e_z=i(\tilde\Pi_--\tilde\Pi_+)$, and the coefficient columns change by $q_e=C_{\Pi}p$, $p=C_{\Pi}^{-1}q_e$.
 
 The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $Q_t\pm iB$, each twice. The six subspaces are the scalar, traceless, quaternion-shaped, anti-quaternion-shaped, Hermitian and anti-Hermitian matrices of the image, of real dimensions $2,6,4,4,4,4$, with the traces and determinants of the table of §*The Six Subspaces*.
 
-The sixteen products $L_{e_\mu}R_{e_\nu}$, the coefficient matrix $c(M)$ and the length $\ell(M)=\operatorname{rank}c(M)$ are the subject of the companion article *$M_4(\mathbb{C})$ Pauli Representation : Operators*, together with the congruence that makes the length survive a change of element basis.
+The sixteen products $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$, the coefficient matrix $c(M)$ and the length $\ell(M)=\operatorname{rank}c(M)$ are the subject of the companion article *$M_4(\mathbb{C})$ Pauli Representation : Operators*, together with the congruence that makes the length survive a change of element basis.
 
 The comparison of §*The Comparison Table* closes the article: no frame says yes in every row, the Peirce frame trades realness and sparsity for the tensor display and the idempotents, and the trace, the determinant, the spectrum and the rank are the same in every frame because they are properties of the element.
 
@@ -727,12 +935,15 @@ The comparison of §*The Comparison Table* closes the article: no frame says yes
 | $\vec\Xi=i\vec e_z$ | the root, $\vec\Xi^2=e_t$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the two idempotents |
 | $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$ | the two mixed units |
-| $L_{e_\mu}$, $R_{e_\mu}$ | the left and right matrices of the four units |
+| $L_{e_\mu}^{\mathrm{pau}}$, $R_{e_\mu}^{\mathrm{pau}}$ | the left and right matrices of the four units |
 | $L(\tilde Q)$, $R(\tilde Q)$ | the left and right matrices of $\tilde Q$ |
 | $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ image, the block of $L(\tilde Q)$ |
 | $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices, $\mathsf M_2(\vec e_k)=-i\sigma_k$ |
-| $S$ | the change matrix, columns the frame vectors in the coefficient basis |
-| $D=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of the plain product in the coefficient basis, $S^{\mathsf T}DS=\tfrac12\mathsf P$ |
+| $C_{\Pi}$ | the Peirce change, columns the frame vectors in the coefficient basis |
+| $\tau_1,\dots,\tau_4$ | the four frame vectors $\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-$ |
+| $e_1,\dots,e_4$ | the four units $e_t,\vec e_x,\vec e_y,\vec e_z$ |
+| $q_e$, $p$ | the coefficient column and the Peirce column of an element, $q_e=C_{\Pi}p$ |
+| $D=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of the plain product in the coefficient basis, $C_{\Pi}^{\mathsf T}DC_{\Pi}=\tfrac12\mathsf P$ |
 | $\mathbb{B}_L,\mathbb{B}_R$ | the two four-dimensional copies, $\rho_L(\mathbb{B})$ and $\rho_R(\mathbb{B})$ |
 | $\mathsf P$ | the swap matrix, $\mathsf P(A\otimes B)\mathsf P=B\otimes A$ |
 | $C_L=\mathrm I_2\otimes\sigma_2$, $C_R=\sigma_2\otimes\mathrm I_2$ | the transpose dictionaries of the Peirce frame |

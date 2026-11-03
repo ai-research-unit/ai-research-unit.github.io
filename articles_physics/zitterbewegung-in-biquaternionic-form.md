@@ -18,7 +18,7 @@ $$
 i\hbar\,\frac{\partial\psi}{\partial t'} = H\psi, \qquad H = c\,\boldsymbol{\alpha}\cdot\vec p + \beta mc^2,
 $$
 
-where $\vec p=-i\hbar\nabla$ is the momentum operator, $\beta = iL_{e_t}R_{\vec e_x}$ and $\alpha_k = \beta\,iL_{\vec e_k}R_{\vec e_y} = L_{\vec e_k}R_{\vec e_z}$, with $L_{a}R_{b}\psi = a\psi b$ the two-sided cell and $I = L_{e_t}R_{e_t}$ its identity. Every factor of $i$ in the cell products is reduced with $i^2=-1$ and the quaternion relations, as in the explicit simplification in the section *Recomputing the Oscillation* below. The cells satisfy
+where $\vec p=-i\hbar\nabla$ is the momentum operator, $\beta = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $\alpha_k = \beta\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}} = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, with $L_{a}R_{b}\psi = a\psi b$ the two-sided cell and $I = L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ its identity. Every factor of $i$ in the cell products is reduced with $i^2=-1$ and the quaternion relations, as in the explicit simplification in the section *Recomputing the Oscillation* below. The cells satisfy
 
 $$
 \{\alpha_j,\alpha_k\} = 2\delta_{jk}I, \qquad \{\alpha_k,\beta\} = 0, \qquad (\alpha_k)^2 = I,
@@ -122,37 +122,37 @@ and $\flat$ acts as $-1$ on the $\mathbb{M}_+$ part and $+1$ on the $\mathbb{M}_
 
 ## Recomputing the Oscillation
 
-The parent's generators, written in cells rather than in the Dirac basis, are the timelike cell $\beta = iL_{e_t}R_{\vec e_x}$ and the three spatial cells $iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$. They satisfy
+The parent's generators, written in cells rather than in the Dirac basis, are the timelike cell $\beta = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and the three spatial cells $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, with $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$. They satisfy
 
 $$
-\left(iL_{e_t}R_{\vec e_x}\right)^2 = L_{e_t}R_{e_t}, \qquad
-\left(iL_{\vec e_k}R_{\vec e_y}\right)^2 = -L_{e_t}R_{e_t}, \qquad
-\{iL_{e_t}R_{\vec e_x}, iL_{\vec e_k}R_{\vec e_y}\} = 0,
+\left(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\right)^2 = L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}, \qquad
+\left(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\right)^2 = -L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}, \qquad
+\{iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\} = 0,
 $$
 
 which is the Clifford relation with $g = \mathrm{diag}(+1,-1,-1,-1)$. Every sign in this display is a reduction of $i^2=-1$ and of the quaternion relations. For the first square,
 
 $$
-\left(iL_{e_t}R_{\vec e_x}\right)^2
-=i^2\,L_{e_t^2}R_{\vec e_x^2}
-=i^2\,L_{e_t}R_{-e_t}
-=(-1)(-1)L_{e_t}R_{e_t}
-=L_{e_t}R_{e_t},
+\left(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\right)^2
+=i^2\,L_{e_t^2}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}
+=i^2\,L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}
+=(-1)(-1)L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}
+=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 and for the product that defines the spatial cells,
 
 $$
 \begin{aligned}
-\alpha_k &= \beta\, iL_{\vec e_k}R_{\vec e_y}
-= i^2\,L_{\vec e_k}R_{\vec e_y\vec e_x}
-= i^2\,L_{\vec e_k}R_{-\vec e_z} \\[2pt]
-&= -L_{\vec e_k}R_{-\vec e_z}
-= L_{\vec e_k}R_{\vec e_z},
+\alpha_k &= \beta\, iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}
+= i^2\,L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}
+= i^2\,L_{\vec e_k}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}} \\[2pt]
+&= -L_{\vec e_k}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}
+= L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \end{aligned}
 $$
 
-where $\vec e_y\vec e_x=-\vec e_z$ and $R_{-b}=-R_b$. The relations $\{\alpha_j,\alpha_k\} = 2\delta_{jk}L_{e_t}R_{e_t}$, $\{\alpha_k,\beta\} = 0$ and $H^2 = E^2L_{e_t}R_{e_t}$ all follow, and each was checked numerically.
+where $\vec e_y\vec e_x=-\vec e_z$ and $R_{-b}=-R_b$. The relations $\{\alpha_j,\alpha_k\} = 2\delta_{jk}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\{\alpha_k,\beta\} = 0$ and $H^2 = E^2L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ all follow, and each was checked numerically.
 
 The operator identity for the Heisenberg velocity is the exact statement
 
@@ -209,7 +209,7 @@ $$
 P_+(\vec p) = \tfrac12\Big(I + \frac{c\,\boldsymbol{\alpha}\cdot\vec p + \beta mc^2}{E}\Big) = \tfrac12\Big(I + \frac{H}{E}\Big),
 $$
 
-and it contains $\beta = iL_{e_t}R_{\vec e_x}$. In the cell Clifford algebra $\beta$ is a **single generator**, hence **odd**; every left multiplication $L_a$ is **even**, because it commutes with the volume element $\omega$ defined in the next sentence. The left copy $\mathbb{B}_L$ therefore contains no odd element, so no $a\in\mathbb{B}$ has $L_a=\beta$, and *a fortiori* $\beta$ lies in neither sector. This is not a convention; it is tested by the parity grading. With $\omega = -L_{e_t}R_{\vec e_z}$ the volume element, even cells commute with $\omega$ and odd cells anticommute with it; direct computation gives $\{\beta,\omega\} = 0$ (so $\beta$ is odd) and $[\alpha_k,\omega] = 0$ (so the $\alpha_k$ are even). The energy-sign split and the sector split are therefore generated by different operations: $P_\pm(\vec p)$ by the odd cell $\beta$, which is outside $\mathbb{B}$, and the sector projectors $P_\pm^{\mathrm{sec}}\tilde Q=\tfrac12(\tilde Q\pm\tilde Q^*)$ by Hermitian conjugation, which is inside it.
+and it contains $\beta = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$. In the cell Clifford algebra $\beta$ is a **single generator**, hence **odd**; every left multiplication $L_a$ is **even**, because it commutes with the volume element $\omega$ defined in the next sentence. The left copy $\mathbb{B}_L$ therefore contains no odd element, so no $a\in\mathbb{B}$ has $L_a=\beta$, and *a fortiori* $\beta$ lies in neither sector. This is not a convention; it is tested by the parity grading. With $\omega = -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume element, even cells commute with $\omega$ and odd cells anticommute with it; direct computation gives $\{\beta,\omega\} = 0$ (so $\beta$ is odd) and $[\alpha_k,\omega] = 0$ (so the $\alpha_k$ are even). The energy-sign split and the sector split are therefore generated by different operations: $P_\pm(\vec p)$ by the odd cell $\beta$, which is outside $\mathbb{B}$, and the sector projectors $P_\pm^{\mathrm{sec}}\tilde Q=\tfrac12(\tilde Q\pm\tilde Q^*)$ by Hermitian conjugation, which is inside it.
 
 **They are also splits of different objects.** The sector split is a decomposition of the *algebra element* $\tilde\Psi \in \mathbb{B}$ into $\tilde\Psi_+ + \tilde\Psi_-$. The energy-sign split is a decomposition of the *spinor module* — of the four-component Dirac spinor, with positive and negative energy each two-dimensional. The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts on a two-dimensional complex module; the four-component spinor is the direct sum of that module with its conjugate, and, for $\vec p\ne0$, the energy projection mixes the two summands. Identifying a decomposition of the algebra with a decomposition of the module, without a stated dictionary, is a category error, and the parent article explicitly leaves the dictionary as a convention.
 
@@ -223,7 +223,7 @@ the idempotent of the informational sector, independent of energy sign. Both res
 
 **A momentum argument reinforces this.** The sector split is pointwise and momentum-independent: whether an element is Hermitian is a property of the element, not of any Fourier mode it carries. The energy projection is momentum-dependent through $\boldsymbol{\alpha}\cdot\vec p$. A momentum-independent algebraic split cannot be a momentum-dependent spectral projection except in the trivial case $\vec p = 0$, and even there the two rest branches both land in $\mathbb{M}_+$.
 
-The honest conclusion, then, is that the $\mathbb{M}_\pm$ split **renames the Hermitian decomposition of the algebra and not the $\pm$-energy decomposition of the spinor**. It is not obviously "doing work": the two splittings share the mass scale, but the interference that produces the trembling is between energy branches, and the energy branches are not the sectors. The natural candidate for a splitting that does carry the interference is **chirality**. Its cell $-iL_{e_t}R_{\vec e_z}$ is Clifford-**even**, unlike the odd $\beta$, but it is a two-sided cell, not a left multiplication: its left part is $L_{e_t}$ and its right part is $R_{\vec e_z}$. The abstract chirality $\chi$ is central in the complexification $\mathbb{B}[j]$, not in $\mathbb{B}$ itself. In the massless limit the chiral pair decouples into two independent Weyl equations and chirality locks to helicity. But even there each chiral equation carries both frequency signs, so chirality does not coincide with the energy-sign split either; it is a splitting of the module by the chirality operator, not a splitting of the algebra into $\mathbb{M}_\pm$. Whether the chirality idempotents should be read as objects of $\mathbb{B}$ or as central idempotents of the complexified algebra is the distinction recorded by the parent. What is settled is that the $\pm$-energy split is neither the $\mathbb{M}_\pm$ split nor the chirality split, for the reasons above.
+The honest conclusion, then, is that the $\mathbb{M}_\pm$ split **renames the Hermitian decomposition of the algebra and not the $\pm$-energy decomposition of the spinor**. It is not obviously "doing work": the two splittings share the mass scale, but the interference that produces the trembling is between energy branches, and the energy branches are not the sectors. The natural candidate for a splitting that does carry the interference is **chirality**. Its cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is Clifford-**even**, unlike the odd $\beta$, but it is a two-sided cell, not a left multiplication: its left part is $L_{e_t}^{\mathrm{pau}}$ and its right part is $R_{\vec e_z}^{\mathrm{pau}}$. The abstract chirality $\chi$ is central in the complexification $\mathbb{B}[j]$, not in $\mathbb{B}$ itself. In the massless limit the chiral pair decouples into two independent Weyl equations and chirality locks to helicity. But even there each chiral equation carries both frequency signs, so chirality does not coincide with the energy-sign split either; it is a splitting of the module by the chirality operator, not a splitting of the algebra into $\mathbb{M}_\pm$. Whether the chirality idempotents should be read as objects of $\mathbb{B}$ or as central idempotents of the complexified algebra is the distinction recorded by the parent. What is settled is that the $\pm$-energy split is neither the $\mathbb{M}_\pm$ split nor the chirality split, for the reasons above.
 
 ## What Survives
 
@@ -253,13 +253,13 @@ Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}R_{\vec e_x}, &\gamma_1 &= iL_{e_x}R_{\vec e_y},\\[2pt]
-\gamma_2 &= iL_{e_y}R_{\vec e_y}, &\gamma_3 &= iL_{e_z}R_{\vec e_y},\\[2pt]
-\gamma_5 &= -iL_{e_t}R_{\vec e_z}.
+\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2 &= iL_{e_y}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
 
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}R_{e_t}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu,\gamma_5\}=0$.
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu,\gamma_5\}=0$.
 
 A single cell $L_aR_b$ is a pure tensor; a single product is one cell up to a phase, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -273,7 +273,7 @@ The Zitterbewegung was derived in the biquaternion notation of the series. The H
 
 The genuinely algebraic content is that the mass is the linear coupling between the two chiralities (the algebra's two central ideals), that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-imc^2t'/\hbar) = \cos(mc^2t'/\hbar)e_t - \sin(mc^2t'/\hbar)(ie_t)$ rotates the two sectors into one another at $mc^2/\hbar$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
-The structural claim that motivated the article fails. The positive- and negative-energy components are **not** the $\mathbb{M}_-$ and $\mathbb{M}_+$ sectors. The energy-sign projector is built from $\beta = iL_{e_t}R_{\vec e_x}$, an odd Clifford cell; every left multiplication in the even copy $\mathbb{B}_L$ is even, so $\beta$ has no representative there, while the sector projectors are built from Hermitian conjugation; the two are splits of different objects (module versus algebra); and on the dictionary the series supplies, both energy branches correspond to $\mathbb{M}_+$ objects while the current lives in $\mathbb{M}_-$. The relation between the trembling and the complexification is therefore one of phase and scale — the trembling is the second harmonic of the sector rotation — and not the identity the strong form of the claim requires.
+The structural claim that motivated the article fails. The positive- and negative-energy components are **not** the $\mathbb{M}_-$ and $\mathbb{M}_+$ sectors. The energy-sign projector is built from $\beta = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, an odd Clifford cell; every left multiplication in the even copy $\mathbb{B}_L$ is even, so $\beta$ has no representative there, while the sector projectors are built from Hermitian conjugation; the two are splits of different objects (module versus algebra); and on the dictionary the series supplies, both energy branches correspond to $\mathbb{M}_+$ objects while the current lives in $\mathbb{M}_-$. The relation between the trembling and the complexification is therefore one of phase and scale — the trembling is the second harmonic of the sector rotation — and not the identity the strong form of the claim requires.
 
 ## Summary of Notation
 
@@ -292,13 +292,13 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde P\tilde P^{\natural} = -m^2c^2$ | Biquaternionic mass-shell condition |
 | $\psi^{(r)}, \chi^{(r)}$ | Positive- and negative-frequency spinors |
-| $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided cell; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, identity $L_{e_t}R_{e_t}$ |
-| $\beta = iL_{e_t}R_{\vec e_x}$, $\alpha_k = L_{\vec e_k}R_{\vec e_z}$ | Generator cells; $\beta$ odd, $\alpha_k$ even bivector cells |
-| $I = L_{e_t}R_{e_t}$ | Identity cell |
-| $H = c\boldsymbol{\alpha}\cdot\vec p + \beta mc^2$ | Dirac Hamiltonian, $H^2 = E^2L_{e_t}R_{e_t}$ |
+| $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided cell; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, identity $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
+| $\beta = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $\alpha_k = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Generator cells; $\beta$ odd, $\alpha_k$ even bivector cells |
+| $I = L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | Identity cell |
+| $H = c\boldsymbol{\alpha}\cdot\vec p + \beta mc^2$ | Dirac Hamiltonian, $H^2 = E^2L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
 | $A_k = \alpha_k(0) - cp_k/H$ | Anticommuting part of the velocity, $\{A_k,H\}=0$ |
-| $\omega = -L_{e_t}R_{\vec e_z}$ | Volume element (parity grading) |
-| $-iL_{e_t}R_{\vec e_z}$ | Chirality cell, Clifford-even; a two-sided cell, not a left multiplication |
+| $\omega = -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Volume element (parity grading) |
+| $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell, Clifford-even; a two-sided cell, not a left multiplication |
 | $\omega_Z = 2E/\hbar$ | Zitterbewegung angular frequency |
 | $\hbar/(2mc)$ | Zitterbewegung amplitude (order) |
 | $\mathrm{Tr}(\tilde Q_1\tilde H) = 2\,\mathrm{Sc}(\tilde Q_1\tilde H)$ | Trace formula |

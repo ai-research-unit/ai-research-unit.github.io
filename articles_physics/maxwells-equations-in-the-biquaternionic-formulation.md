@@ -861,7 +861,7 @@ $$
 because $R_bR_d=R_{db}$. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra:
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
@@ -883,10 +883,10 @@ $$
 The single $i$ in a generator is also what makes a doubled $i$ collapse: multiplying a generator by $i$ returns a plain cell,
 
 $$
-i\gamma_\mu=-L_{e_\mu}R_{\vec e_{\nu(\mu)}},
+i\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},
 $$
 
-with $\vec e_{\nu(t)}=\vec e_x$ and $\vec e_{\nu(k)}=\vec e_y$, together with $i\gamma_5=+L_{e_t}R_{\vec e_z}$, the sign there being the opposite one because $\gamma_5$ was defined with the opposite sign of $i$. Every product of two imaginary units is therefore a sign, and no display in this article carries a doubled $i$.
+with $\vec e_{\nu(t)}=\vec e_x$ and $\vec e_{\nu(k)}=\vec e_y$, together with $i\gamma_5=+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the sign there being the opposite one because $\gamma_5$ was defined with the opposite sign of $i$. Every product of two imaginary units is therefore a sign, and no display in this article carries a doubled $i$.
 
 In these names the field operator of *The Field Bivector and the Field Operator* above is $\tfrac12(R_{\tilde F}+L_{\tilde F^{\sim}})$; since the reverse of a bivector is minus itself, $\tilde F^{\sim}=-\tilde F$, and the operator is half the commutator with the field strength,
 
@@ -896,7 +896,7 @@ $$
 
 $\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-**The two-sided structure, and the two Dirac equations.** The cells come in two families, $L$ and $R$, and that is what separates the corpus's two Dirac equations of *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*. The one-sided equation acts with the left family alone, $L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L$ and $L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R$, and it splits the field into its two chirality halves. The two-sided equation carries the mass through the right family, $iL_{e_t}\partial/\partial t'\,F+\sum_kL_{\vec e_k}\partial/\partial Q_k\,F-mi\,R_{\vec e_z}\overline{F}=0$; its chirality sits in that right multiplication, and its mass term is **antilinear**, the complex conjugation $\overline{F}$ being what the right cell acts on. The two share the frame and not the operator. The field operator of *The Field Bivector and the Field Operator* above is the third object of the same kind, $\tfrac12(R_{\tilde F}-L_{\tilde F})$, one cell from each family, antisymmetrised. In this article the field equation is written with the element; the cells appear before this section only as the notation for the field operator and the tensor operator, and the gamma names are attached to them here and nowhere else.
+**The two-sided structure, and the two Dirac equations.** The cells come in two families, $L$ and $R$, and that is what separates the corpus's two Dirac equations of *Biquaternion Representation of Spin One-Half and the Relativistic One-Electron Atom*. The one-sided equation acts with the left family alone, $L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L$ and $L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R$, and it splits the field into its two chirality halves. The two-sided equation carries the mass through the right family, $iL_{e_t}^{\mathrm{pau}}\partial/\partial t'\,F+\sum_kL_{\vec e_k}^{\mathrm{pau}}\partial/\partial Q_k\,F-mi\,R_{\vec e_z}^{\mathrm{pau}}\overline{F}=0$; its chirality sits in that right multiplication, and its mass term is **antilinear**, the complex conjugation $\overline{F}$ being what the right cell acts on. The two share the frame and not the operator. The field operator of *The Field Bivector and the Field Operator* above is the third object of the same kind, $\tfrac12(R_{\tilde F}-L_{\tilde F})$, one cell from each family, antisymmetrised. In this article the field equation is written with the element; the cells appear before this section only as the notation for the field operator and the tensor operator, and the gamma names are attached to them here and nowhere else.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

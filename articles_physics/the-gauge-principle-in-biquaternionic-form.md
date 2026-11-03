@@ -9,7 +9,7 @@ $$
 L_a\psi=a\psi,\qquad R_b\psi=\psi b,\qquad L_aR_b\,\psi=a\psi b,
 \qquad L_aR_b\,L_cR_d=L_{ac}R_{db},
 $$
-the right factors in reverse order. Every operator of the body that acts on a field is a left cell $L_a$ or a sum of left cells, with one class of exception: the cells that carry chirality act on the right. These are the chirality cell $\chi=-iR_{\vec e_z}$ defined in §*The Mass Term and the Axial Symmetry*, and the four generator cells $iL_{e_\mu}R_{\vec e_{\tau(\mu)}}$ used there, which receive their frame names in §*The Gamma Formulation*. The component operators $D_\mu$ are scalar operators, and $D=\sum_\mu L_{e_\mu}D_\mu$. The fields and the connection themselves are elements, and the article never identifies an element with the cell that multiplies by it. The five frame cells are collected once, in §*The Gamma Formulation*, and none of those names is used before it. The gauge function $\Gamma$ is a real scalar and is not one of them.
+the right factors in reverse order. Every operator of the body that acts on a field is a left cell $L_a$ or a sum of left cells, with one class of exception: the cells that carry chirality act on the right. These are the chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ defined in §*The Mass Term and the Axial Symmetry*, and the four generator cells $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$ used there, which receive their frame names in §*The Gamma Formulation*. The component operators $D_\mu$ are scalar operators, and $D=\sum_\mu L_{e_\mu}^{\mathrm{pau}}D_\mu$. The fields and the connection themselves are elements, and the article never identifies an element with the cell that multiplies by it. The five frame cells are collected once, in §*The Gamma Formulation*, and none of those names is used before it. The gauge function $\Gamma$ is a real scalar and is not one of them.
 
 **Two Dirac equations, not one.** The corpus carries the one-sided chiral pair on the spinor module and the two-sided single equation on the algebra. The pair writes chirality as a splitting of the field; the two-sided equation writes it as a right cell, and its mass term carries a coefficient conjugation. This article uses the pair for the gauging and records the two-sided form in the section on the mass term, where the two are set side by side. They are related by the real-linear dictionary $A$ of *The Dirac Equation in Biquaternionic Form* and are not the same operator.
 
@@ -142,7 +142,7 @@ and for real $\Gamma$ the scalar coefficient $\partial/\partial Q_t\,\Gamma = -\
 The field $\tilde{A}$ is the **connection**, and $D$ is the **covariant derivative**. Writing $\tilde{A} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$, the covariant derivative separates into components,
 
 $$
-D = \sum_{\mu\in\{t,x,y,z\}} L_{e_\mu}D_\mu, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
+D = \sum_{\mu\in\{t,x,y,z\}} L_{e_\mu}^{\mathrm{pau}}D_\mu, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
 where $\partial/\partial Q_t = \partial/\partial(ict')$ and $\partial/\partial Q_k = \partial/\partial x_k$, and where $A_0:=A_t$ in the component displays below. Its action on a field is $D\tilde{\Psi} = L_{\tilde{\nabla}}\tilde{\Psi} + \frac{iϙ}{\hbar}L_{\tilde{A}}\tilde{\Psi}$, since $\sum_\mu e_\mu A_\mu = \tilde{A}$.
@@ -276,7 +276,7 @@ with $\tilde\nabla$ the gradient and $\tilde\nabla^\natural$ its quaternion conj
 **The two-sided single equation.** Read on the algebra rather than on the module, the same physics has a one-equation form whose two sides are the two multiplications,
 
 $$
-\boxed{\;L_{\tilde\nabla^\natural}F=m\chi\bar F,\qquad \chi=-iR_{\vec e_z}\;}
+\boxed{\;L_{\tilde\nabla^\natural}F=m\chi\bar F,\qquad \chi=-iR_{\vec e_z}^{\mathrm{pau}}\;}
 $$
 
 where $F$ is the biquaternion-valued field of this form — not the field strength $\tilde{F}$ of §*The Field Strength as the Curvature* — and $\bar F$ is its coefficient conjugate; equivalently $\tilde\nabla^\natural F=-im\bar F\vec e_z$. The derivative acts on the left, the mass on the right through the chirality cell, and the conjugation supplies the second field of the pair. This is the two-sided form: chirality is the right cell $\chi$, not a splitting of the field, and the mass term is **antilinear**. The two forms are related by the real-linear dictionary $A$ of *The Dirac Equation in Biquaternionic Form* and are not the same operator: the pair is linear in the field throughout, while the two-sided equation is linear in its derivative term and antilinear in its mass term. The pair is the representation used for the gauging below; the two-sided form is recorded because it is the one that exhibits the mass as a right multiplication, and because the axial current inserts the same cell.
@@ -285,22 +285,22 @@ where $F$ is the biquaternion-valued field of this form — not the field streng
 
 What the mass breaks is the **axial** symmetry, not the phase. The axial rotation multiplies the two chiral halves by opposite phases, $\tilde\Psi_R\mapsto\exp(i\alpha)\tilde\Psi_R$, $\tilde\Psi_L\mapsto\exp(-i\alpha)\tilde\Psi_L$. Each gradient term is multiplied by one of these phases and can be divided out; the mass term cannot, because it pairs the two halves and so carries the *relative* factor $\exp(i\alpha)/\exp(-i\alpha)=\exp(2i\alpha)$. The pair is invariant only when $\exp(2i\alpha)=1$, that is $\alpha\equiv0\pmod{\pi}$, where the rotation has degenerated into the global phase $\pm1$. The continuous axial rotation is broken by the mass, exactly as the divergence below records.
 
-Write $\bar{\tilde\Psi}:=\tilde\Psi^{\dagger}iR_{\vec e_x}$ for the **Dirac adjoint** of *Chiral Fermions in the Biquaternion Framework* — the Hermitian form, to be distinguished from the coefficient conjugation $\bar F$ of the two-sided equation above, and from the quaternionic norm $\tilde\Psi^{\natural}\tilde\Psi$, which vanishes on the zero-divisor cone and cannot serve as a density. The chirality operator is the cell $\chi=-iR_{\vec e_z}$, so that $\chi\tilde\Psi=-i\tilde\Psi\vec e_z$. The axial current inserts this cell,
+Write $\bar{\tilde\Psi}:=\tilde\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$ for the **Dirac adjoint** of *Chiral Fermions in the Biquaternion Framework* — the Hermitian form, to be distinguished from the coefficient conjugation $\bar F$ of the two-sided equation above, and from the quaternionic norm $\tilde\Psi^{\natural}\tilde\Psi$, which vanishes on the zero-divisor cone and cannot serve as a density. The chirality operator is the cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$, so that $\chi\tilde\Psi=-i\tilde\Psi\vec e_z$. The axial current inserts this cell,
 
 $$
-j_{5\mu}=\bar{\tilde\Psi}\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\,\chi\,\tilde\Psi,
+j_{5\mu}=\bar{\tilde\Psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\,\chi\,\tilde\Psi,
 \qquad \tau(t)=x,\quad \tau(k)=y,
 $$
 
-and its divergence is the plain sum over $\mu$, with no metric signs, because the metric is already spent inside the generator cells: each square is $(iL_{e_\mu}R_{\vec e_{\tau(\mu)}})^2=g_{\mu\mu}I_4$, so weighting the sum by $g_{\mu\mu}$ a second time would apply the metric twice.
+and its divergence is the plain sum over $\mu$, with no metric signs, because the metric is already spent inside the generator cells: each square is $(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}})^2=g_{\mu\mu}I_4$, so weighting the sum by $g_{\mu\mu}$ a second time would apply the metric twice.
 
 $$
 \sum_\mu\partial/\partial Q_\mu\,j_{5\mu}
 =2im\,\bar{\tilde\Psi}\,\chi\,\tilde\Psi
-=2m\,\bar{\tilde\Psi}\,R_{\vec e_z}\,\tilde\Psi,
+=2m\,\bar{\tilde\Psi}\,R_{\vec e_z}^{\mathrm{pau}}\,\tilde\Psi,
 $$
 
-which vanishes identically only when $m=0$. The factors are reduced in the second form, $i\chi=i(-iR_{\vec e_z})=R_{\vec e_z}$. In the biquaternion interpretation this is the statement that the mass is the **off-diagonal coupling between the two chiral ideals** of $\mathbb{B}$ — the two chiralities — so the symmetry it breaks is exactly the one that rotates those two ideals, while the *central* $\mathrm{U}(1)$ that the algebra canonically carries is untouched.
+which vanishes identically only when $m=0$. The factors are reduced in the second form, $i\chi=i(-iR_{\vec e_z}^{\mathrm{pau}})=R_{\vec e_z}^{\mathrm{pau}}$. In the biquaternion interpretation this is the statement that the mass is the **off-diagonal coupling between the two chiral ideals** of $\mathbb{B}$ — the two chiralities — so the symmetry it breaks is exactly the one that rotates those two ideals, while the *central* $\mathrm{U}(1)$ that the algebra canonically carries is untouched.
 
 Two things should be said about this, one established and one open.
 
@@ -348,14 +348,14 @@ What the external construction gives this article is therefore not a new result 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the only place in the article where a $\gamma$ symbol is used.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The factors of $i$ are reduced before the squares are read, $i^2=-1$:
 
 $$
-\gamma_0^2=i^2L_{e_t}R_{\vec e_x^2}=(-1)(+1)(-1)I_4=I_4,\qquad
-\gamma_k^2=i^2L_{\vec e_k^2}R_{\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
+\gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)(+1)(-1)I_4=I_4,\qquad
+\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)(-1)(-1)I_4=-I_4,
 $$
 
 so the frame carries the Lorentzian signature. With $\mu,\nu\in\{0,1,2,3\}$ in this section only, the five cells satisfy
@@ -369,7 +369,7 @@ $$
 
 The last identity fixes the sign: $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$, so the product of the four generator cells is the chirality cell up to the central factor.
 
-$\gamma_5$ is the chirality cell $\chi=-iR_{\vec e_z}$ used in the body, since $L_{e_t}=I$. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the adjoined central root of $-e_t$ so that $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $\chi_{\mathrm{ad}}^2=e_t$, is a different object: being central it is the difference of the two central idempotents of the complexified algebra, and $\gamma_5$ is its representative on the Dirac module.
+$\gamma_5$ is the chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ used in the body, since $L_{e_t}^{\mathrm{pau}}=I$. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the adjoined central root of $-e_t$ so that $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $\chi_{\mathrm{ad}}^2=e_t$, is a different object: being central it is the difference of the two central idempotents of the complexified algebra, and $\gamma_5$ is its representative on the Dirac module.
 
 The correspondence with the matrix algebra is complex-linear. Over $\mathbb{R}$ the products of the four generator cells, with real coefficients, span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the cells $L_aR_b$ with $a,b$ in the real quaternion algebra span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$; with biquaternion parameters the cells span all of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$.
 
@@ -408,7 +408,7 @@ Because $\tilde{F}$ is constructed from $\tilde{A}$, the homogeneous Maxwell equ
 
 The result connects directly to the two parents. The Maxwell field is the gauge field of the central phase, and its single equation $L_{\tilde{\nabla}}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is the sourced curvature equation; the gauge redundancy derived here is the one that *Canonical Quantization of the Biquaternion Maxwell Field* finds the algebra unable to remove. The algebra supplies a canonical abelian gauge group, a bivector home for the curvature, and preservation of the material sector; it does not supply the coupling constant, a gauge-fixing principle, or a derivation of the geometric interpretation, which is interpretation.
 
-Two gaps are left visible. The non-abelian extension needs the algebra's non-commutativity, which is present, but also a reality condition selecting a compact gauge algebra, which is not derived. And the mass term, being linear in the one-sided pair, preserves the continuous phase symmetry, so the gauge principle as derived applies to the massive sector as well; what the mass breaks is the axial symmetry between the two chiral ideals, and whether that can be gauged is left open. The breaking is visible in the current: $j_{5\mu}=\bar{\tilde\Psi}\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\chi\tilde\Psi$ has divergence $2m\,\bar{\tilde\Psi}R_{\vec e_z}\tilde\Psi$, which is the mass times a non-zero bilinear. The two-sided form of the same mass is recorded only for the chirality link: its mass term is a right multiplication with a conjugation, and the pair is the representation on which the phase acts linearly.
+Two gaps are left visible. The non-abelian extension needs the algebra's non-commutativity, which is present, but also a reality condition selecting a compact gauge algebra, which is not derived. And the mass term, being linear in the one-sided pair, preserves the continuous phase symmetry, so the gauge principle as derived applies to the massive sector as well; what the mass breaks is the axial symmetry between the two chiral ideals, and whether that can be gauged is left open. The breaking is visible in the current: $j_{5\mu}=\bar{\tilde\Psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\chi\tilde\Psi$ has divergence $2m\,\bar{\tilde\Psi}R_{\vec e_z}^{\mathrm{pau}}\tilde\Psi$, which is the mass times a non-zero bilinear. The two-sided form of the same mass is recorded only for the chirality link: its mass term is a right multiplication with a conjugation, and the pair is the representation on which the phase acts linearly.
 
 ## Summary of Notation
 
@@ -418,8 +418,8 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $L_a, R_b, L_aR_b$ | Cells: $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_b\psi=a\psi b$; $L_aR_b\,L_cR_d=L_{ac}R_{db}$ |
-| $\chi = -iR_{\vec e_z}$ | Chirality cell; $\chi\tilde{\Psi}=-i\tilde{\Psi}\vec e_z$, $\chi^2=I_4$ |
-| $iL_{e_\mu}R_{\vec e_{\tau(\mu)}}$ | Generator cell of the coordinate $\mu$; $\tau(t)=x$, $\tau(k)=y$; its square is $g_{\mu\mu}I_4$ |
+| $\chi = -iR_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell; $\chi\tilde{\Psi}=-i\tilde{\Psi}\vec e_z$, $\chi^2=I_4$ |
+| $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$ | Generator cell of the coordinate $\mu$; $\tau(t)=x$, $\tau(k)=y$; its square is $g_{\mu\mu}I_4$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre of the algebra, source of the abelian gauge group |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=1}^{3}\,\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
@@ -430,8 +430,8 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L$, $L_{\tilde\nabla^\natural}\tilde\Psi_L=m\tilde\Psi_R$ | One-sided chiral pair; the Dirac mass is linear in the field |
 | $L_{\tilde\nabla^\natural}F=m\chi\bar F$ | Two-sided Dirac equation; $\bar F$ the coefficient conjugate, mass term antilinear |
 | $F$ | Field of the two-sided equation; $\bar F$ its coefficient conjugate (not the field strength $\tilde F$) |
-| $j_{5\mu}=\bar{\tilde\Psi}\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\,\chi\,\tilde\Psi$ | Axial current; $\tau(t)=x$, $\tau(k)=y$; its divergence is the plain sum |
-| $\bar{\tilde\Psi}=\tilde\Psi^{\dagger}iR_{\vec e_x}$ | Dirac adjoint (Hermitian form); not the coefficient conjugation $\bar F$, nor the norm $\tilde\Psi^{\natural}\tilde\Psi$ |
+| $j_{5\mu}=\bar{\tilde\Psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\,\chi\,\tilde\Psi$ | Axial current; $\tau(t)=x$, $\tau(k)=y$; its divergence is the plain sum |
+| $\bar{\tilde\Psi}=\tilde\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$ | Dirac adjoint (Hermitian form); not the coefficient conjugation $\bar F$, nor the norm $\tilde\Psi^{\natural}\tilde\Psi$ |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase; $\Gamma$ real scalar |
 | $ϙ$ | Coupling constant (charge), not fixed by the algebra |
 | $\tilde{A} = i\phi/c\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |

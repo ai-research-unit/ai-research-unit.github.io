@@ -256,7 +256,7 @@ $$
 $$
 where $\beta$ is the **chirality measure** of the medium, a real scalar of the dimension of a length, and $\epsilon,\mu,\beta$ are constants. At $\beta=0$ these are the relations of the preceding sections. The magnetoelectric coupling is what makes the reduction below a different problem rather than a relabelling of the same one.
 
-**A name collision.** Everywhere else in this framework "chiral" means the chirality of a Dirac field — the eigenvalue of the chirality operator, whose cell is $-iL_{e_t}R_{\vec e_z}$ on the Dirac module and $-iR_{\vec e_z}$ on the algebra alone; for that sense see *Chiral Fermions in the Biquaternion Framework*. "Chiral medium" is the older use of the same word for an optically active material. The two senses are unrelated and are distinguished by context alone; the medium sense occurs only in this section and its two companions below. The physical motivation for the medium sense — organic molecules such as DNA at some frequencies, the pupil of the eye, and manufactured chiral materials — is recorded by the authors of the time-harmonic treatment cited below.
+**A name collision.** Everywhere else in this framework "chiral" means the chirality of a Dirac field — the eigenvalue of the chirality operator, whose cell is $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ on the Dirac module and $-iR_{\vec e_z}^{\mathrm{pau}}$ on the algebra alone; for that sense see *Chiral Fermions in the Biquaternion Framework*. "Chiral medium" is the older use of the same word for an optically active material. The two senses are unrelated and are distinguished by context alone; the medium sense occurs only in this section and its two companions below. The physical motivation for the medium sense — organic molecules such as DNA at some frequencies, the pupil of the eye, and manufactured chiral materials — is recorded by the authors of the time-harmonic treatment cited below.
 
 **The time variable of this section.** The source of this section differentiates with respect to the *real* time, and the corpus's own variable is imaginary: $\partial/\partial t'=ic\,\partial/\partial Q_t$, so that $\partial/\partial t'$ and $ic\,\partial/\partial Q_t$ are the same operator and only one convention should be used in a display. The formulas of this section are written with $\partial/\partial t'$, which is the source's variable, so that each of them can be checked as it stands against Maxwell's equations and against the source; the corpus's $\partial/\partial Q_t$ reappears in the non-chiral reduction of the earlier sections, where it carries no source to be transcribed. The time-harmonic convention is $\exp(i\omega t')$, so that $\partial/\partial t'\to i\omega$.
 
@@ -511,11 +511,11 @@ $$
 $$
 L_{\tilde{\nabla}^{\natural}}\tilde{\Psi}_L=m\,\tilde{\Psi}_R .
 $$
-Both lines act from the left, the mass is the off-diagonal pairing of the two halves, and no term carries a right multiplication. The grading that separates the halves is the chirality operator, $-iL_{e_t}R_{\vec e_z}$ on the module and $-iR_{\vec e_z}$ on the algebra alone — the cell the chiral-fermion articles write as $\chi$ — and this is the equation whose dividing line is chirality.
+Both lines act from the left, the mass is the off-diagonal pairing of the two halves, and no term carries a right multiplication. The grading that separates the halves is the chirality operator, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ on the module and $-iR_{\vec e_z}^{\mathrm{pau}}$ on the algebra alone — the cell the chiral-fermion articles write as $\chi$ — and this is the equation whose dividing line is chirality.
 
 Kravchenko's equation is **two-sided**: one equation on the algebra,
 $$
-L_{\tilde{\nabla}^{\natural}}F=-mi\,\bar F\,R_{\vec e_z},
+L_{\tilde{\nabla}^{\natural}}F=-mi\,\bar F\,R_{\vec e_z}^{\mathrm{pau}},
 $$
 in natural units, where the spatial gradient acts from the left, the mass term acts from the right through the fixed direction $\vec e_z$, and $\bar{\cdot}$ is the coefficientwise complex conjugation of the introduction. The position dependence of a potential is a coefficient multiplying one basis direction on the right, and it is this second form, not the chiral pair, that has the shape of the carrier identity.
 
@@ -905,11 +905,11 @@ Every two-sided operator in this article has been written as a cell $L_aR_b$ —
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, which is the algebra the cells already generate. One cell per gamma,
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\qquad
-\gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad
-\gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad
-\gamma_3=iL_{\vec e_z}R_{\vec e_y},\qquad
-\gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 Cells compose by composing their factors, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, and in that product the four satisfy the Clifford relations of the Minkowski metric while the fifth closes the frame on the chirality cell,
@@ -930,9 +930,9 @@ The product of the four is taken in the order in which the cells stand, and the 
 
 **Cells are pure tensors; gammas are not.** A cell is a single product $a\otimes b^{\mathrm{opp}}$, so the cells form a seven-dimensional cone inside the sixteen-dimensional algebra, and a general element is a sum of at most four of them. The least number required is the rank of the coefficient matrix $c(M)$, the matrix of $M$ in the basis of the sixteen products. A decomposition into cells is therefore not unique in general; it is unique only in the rank-one case, when the operator is a single cell. That is the reason the article prints a two-sided operator as a cell only when it is one, and writes the others as sums.
 
-**One-sided and two-sided, in this frame.** The two Dirac equations of the section *Arbitrary Inhomogeneous Media* separate here into the two kinds of cell the algebra allows. The chiral pair acts by left multiplication only, so each of its members is a single one-sided cell, and the grading that separates the halves is the cell $\gamma_5$; this is the sense in which that equation's dividing line is chirality. Kravchenko's equation is a left cell together with a right multiplication in the mass term, $\tilde{\nabla}^{\natural}$ acting from the left and $\vec e_z$ from the right, hence the two-sided cell $L_{\tilde{\nabla}^{\natural}}$ with the mass term carried by $R_{\vec e_z}$. The distinction drawn in words in the inhomogeneous section is thus, in the printing, the distinction between $L$ and $LR$.
+**One-sided and two-sided, in this frame.** The two Dirac equations of the section *Arbitrary Inhomogeneous Media* separate here into the two kinds of cell the algebra allows. The chiral pair acts by left multiplication only, so each of its members is a single one-sided cell, and the grading that separates the halves is the cell $\gamma_5$; this is the sense in which that equation's dividing line is chirality. Kravchenko's equation is a left cell together with a right multiplication in the mass term, $\tilde{\nabla}^{\natural}$ acting from the left and $\vec e_z$ from the right, hence the two-sided cell $L_{\tilde{\nabla}^{\natural}}$ with the mass term carried by $R_{\vec e_z}^{\mathrm{pau}}$. The distinction drawn in words in the inhomogeneous section is thus, in the printing, the distinction between $L$ and $LR$.
 
-**The chirality cell and the central grading.** $\gamma_5$ is the cell of the chirality operator: $-iL_{e_t}R_{\vec e_z}$ on the Dirac module, which acts on the algebra alone as $-iR_{\vec e_z}$, the cell the chiral-fermion articles write as $\chi$. The central grading of the complexified algebra — the difference of its two central idempotents, whose square is $e_t$ — is a different object: $\gamma_5$ represents it on the module, and the two must not be identified as elements of the algebra.
+**The chirality cell and the central grading.** $\gamma_5$ is the cell of the chirality operator: $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ on the Dirac module, which acts on the algebra alone as $-iR_{\vec e_z}^{\mathrm{pau}}$, the cell the chiral-fermion articles write as $\chi$. The central grading of the complexified algebra — the difference of its two central idempotents, whose square is $e_t$ — is a different object: $\gamma_5$ represents it on the module, and the two must not be identified as elements of the algebra.
 
 **Why the cells stay primary.** The dictionary is complex-linear, and the two real forms behind it are not the same: over $\mathbb{R}$ the gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The biquaternion algebra is the complex one, so both readings are available in it, but only the cells are defined without a choice of frame. The article keeps the cells for that reason, and uses the gammas as the frame in which the fermion articles are written.
 

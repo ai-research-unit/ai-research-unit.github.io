@@ -296,19 +296,19 @@ The pair is one matrix equation written in two halves, and squaring its first me
 The second is the **single equation on the four-component module**, the form the chirality supplies and the one written in cells. It needs no pair, because a column carries both halves. In the coordinates $Q_\mu$ its four cells are
 
 $$
-c_t = iR_{\vec e_x},
+c_t = iR_{\vec e_x}^{\mathrm{pau}},
 \qquad
-c_k = -L_{\vec e_k}R_{\vec e_y},
+c_k = -L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 \qquad
-c_\mu^2 = L_{e_t}R_{e_t},
+c_\mu^2 = L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 c_\mu c_\nu + c_\nu c_\mu = 0 \quad (\mu \ne \nu),
 $$
 
-where $L_{e_t}R_{e_t}$ is the identity cell. The spatial cell is $i$ times the generator cell $iL_{\vec e_k}R_{\vec e_y}$, the two imaginary units collapsing by $i^2=-1$, so the four cells square to the identity and anticommute. Hence $\left(\sum_\mu c_\mu\,\partial/\partial Q_\mu\right)^2 = \Box$ and the equation is
+where $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ is the identity cell. The spatial cell is $i$ times the generator cell $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, the two imaginary units collapsing by $i^2=-1$, so the four cells square to the identity and anticommute. Hence $\left(\sum_\mu c_\mu\,\partial/\partial Q_\mu\right)^2 = \Box$ and the equation is
 
 $$
-\left(iR_{\vec e_x}\frac{\partial}{\partial Q_t}-\sum_k L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial Q_k}\right)\psi = -m\psi .
+\left(iR_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial Q_t}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}\right)\psi = -m\psi .
 $$
 
 The two are not two dynamics. The column equation is the module form of the pair, and the mass signs differ because the dictionary between the algebra and the cells carries factors of $i$: the cells $c_\mu$ are the frame cells of the Euclidean reading, each carrying an $i$ on its spatial legs. Squaring either form returns $\Box = m^2$. What separates them is not the physics but the algebra the chirality lives in — the pair needs both conjugates and acts on the algebra, the single equation needs one column and acts on the module.
@@ -331,13 +331,13 @@ The word "connection" is used in the framework for two different objects, and co
 
 The connection of this article is **one-sided**: $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
 
-The distinction has a consequence the corpus had not recorded, and an external source names it. Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+The distinction has a consequence the corpus had not recorded, and an external source names it. Here $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
-For an internal gauge force — this article's abelian case, and the non-abelian case it opens onto — the substitution $\partial/\partial Q_\mu \to D_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the internal generators commute with the frame cell $iL_{e_a}R_{\vec e_{\nu(a)}}$. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term $\{iL_{e_a}R_{\vec e_{\nu(a)}},S_{cd}\}$ between the frame cell and the Lorentz generator $S_{cd}=\tfrac14[iL_{e_c}R_{\vec e_{\nu(c)}},iL_{e_d}R_{\vec e_{\nu(d)}}]$, which the substituted equation does not have, because
+For an internal gauge force — this article's abelian case, and the non-abelian case it opens onto — the substitution $\partial/\partial Q_\mu \to D_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the internal generators commute with the frame cell $iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{pau}}$. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term $\{iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{pau}},S_{cd}\}$ between the frame cell and the Lorentz generator $S_{cd}=\tfrac14[iL_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{pau}},iL_{e_d}R_{\vec e_{\nu(d)}}^{\mathrm{pau}}]$, which the substituted equation does not have, because
 
 $$
-[iL_{e_c}R_{\vec e_{\nu(c)}},S_{ab}]
-= g_{ca}\,iL_{e_b}R_{\vec e_{\nu(b)}} - g_{cb}\,iL_{e_a}R_{\vec e_{\nu(a)}} ,
+[iL_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{pau}},S_{ab}]
+= g_{ca}\,iL_{e_b}R_{\vec e_{\nu(b)}}^{\mathrm{pau}} - g_{cb}\,iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{pau}} ,
 $$
 
 rather than vanishing: the commutator is nonzero whenever $c$ is one of $a$ or $b$.
@@ -369,7 +369,7 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 In these names the four cells of the column equation of *The Two Dirac Equations* are $\gamma_0$, $i\gamma_1$, $i\gamma_2$ and $i\gamma_3$: the temporal leg is a gamma and each spatial leg is a gamma multiplied by $i$. That is why those four cells square to $+I_4$ in the coordinates $Q_\mu$ while the gammas of the $\mathbb{M}_-$ frame square to $(+1,-1,-1,-1)$.
@@ -426,7 +426,7 @@ $$
 
 with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact gauge algebra. The gauge connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
 
-The identity is the square of two equations that the framework keeps apart: the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar D\tilde\Psi_L = m\tilde\Psi_R$, written on the algebra by left multiplication in the two-sided operator theory, and the single equation on the four-component module, written in the frame cells $iR_{\vec e_x}$ and $-L_{\vec e_k}R_{\vec e_y}$, whose square is $\Box = m^2$ as the square of the pair is.
+The identity is the square of two equations that the framework keeps apart: the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar D\tilde\Psi_L = m\tilde\Psi_R$, written on the algebra by left multiplication in the two-sided operator theory, and the single equation on the four-component module, written in the frame cells $iR_{\vec e_x}^{\mathrm{pau}}$ and $-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, whose square is $\Box = m^2$ as the square of the pair is.
 
 ## Summary of Notation
 
@@ -460,8 +460,8 @@ The identity is the square of two equations that the framework keeps apart: the 
 | $\bar D D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ | Covariant square identity |
 | $\bar{e}_t = e_t, \bar{e}_\mu = -\vec e_\mu$ | Conjugate basis |
 | $L_a, R_b$ | Left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
-| $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ | Generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$ |
-| $c_t=iR_{\vec e_x}$, $c_k=-L_{\vec e_k}R_{\vec e_y}$ | The four cells of the column Dirac equation |
+| $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ | Generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$ |
+| $c_t=iR_{\vec e_x}^{\mathrm{pau}}$, $c_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | The four cells of the column Dirac equation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |
 

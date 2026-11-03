@@ -309,7 +309,7 @@ $$
 
 They are idempotent, orthogonal and complete, $H=P_{+}-P_{-}$, and each has rank one. The algebra $M_{2}(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}$, and this is its frame of two idempotents; the construction is the order-two case of the formula of §*The Lagrange Projectors*, with the two roots of $x^{2}-1$.
 
-**The contrast with $n=3$.** For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of *The Peirce Decomposition of the Biquaternion Algebra* uses a second root only to fix the relative scale of its two mixed units; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the gauge of the off-diagonal units, treated in *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
+**The contrast with $n=3$.** For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of *Peirce Decompositions of the Biquaternion Algebra* uses a second root only to fix the relative scale of its two mixed units; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the gauge of the off-diagonal units, treated in *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
 
 ## Summary
 
@@ -365,7 +365,7 @@ The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the 
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the algebra, its matrix units, its trace and its determinant.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the decomposition of the algebra by the three Lagrange idempotents.
 - [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the characteristic cubic, the discriminant and the degeneration of the projectors at a repeated root.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the order-two case and the biquaternion frame.
+- [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the order-two case and the biquaternion frame.
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the spectral theorem for diagonalisable matrices.
 - [Interpolation Theory](interpolation-theory.html), for the Lagrange interpolation formula in one variable.
 - [Flag Manifolds](flag-manifolds.html), for the flag variety, its dimension and its homogeneous description.

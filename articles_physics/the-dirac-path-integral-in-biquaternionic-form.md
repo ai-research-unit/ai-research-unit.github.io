@@ -27,15 +27,15 @@ $$
 with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$; in natural units $\mu = m$, which is the form in which the pair is usually displayed. Its component form is the standard Dirac equation on the spinor module, with the four generator cells of the canonical frame
 
 $$
-G_0 = iR_{\vec e_x}:\psi\mapsto ie_t\psi\vec e_x,
+G_0 = iR_{\vec e_x}^{\mathrm{pau}}:\psi\mapsto ie_t\psi\vec e_x,
 \qquad
-G_k = iL_{\vec e_k}R_{\vec e_y}:\psi\mapsto i\vec e_k\psi\vec e_y \ (k = x,y,z),
+G_k = iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}:\psi\mapsto i\vec e_k\psi\vec e_y \ (k = x,y,z),
 $$
 
 where the spatial index runs over $k = x,y,z$ and is written $k = 1,2,3$ wherever a numerical label is needed, and with the pseudoscalar cell
 
 $$
-G_5 = -iR_{\vec e_z} = -iL_{e_t}R_{\vec e_z}:\psi\mapsto -ie_t\psi\vec e_z .
+G_5 = -iR_{\vec e_z}^{\mathrm{pau}} = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}:\psi\mapsto -ie_t\psi\vec e_z .
 $$
 
 The frame is a choice: the right factor $\vec e_y$ is common to the three spatial cells, the left factor is the direction of the coordinate, and the time cell has $\vec e_x$ on its right. The four cells carry the Clifford relations of the level-3 (Clifford) metric,
@@ -61,7 +61,7 @@ $$
 with $\slashed p$ the **momentum cell** of the reference frame, the signed sum of the four generator cells contracted with the four-momentum,
 
 $$
-\slashed p = iR_{\vec e_x}p_0 - \sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}p_k
+\slashed p = iR_{\vec e_x}^{\mathrm{pau}}p_0 - \sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k
 = G_0p_0 - \sum_{k=1}^{3}G_kp_k ,
 \qquad
 (\slashed p)^2 = p^2 I_4 ,
@@ -78,7 +78,7 @@ $$
 = (\slashed p)^2-\mu^2 = \left(p^2-\mu^2\right)I_4 ,
 $$
 
-so that $\frac{i}{\slashed p-\mu}$ is the same object as $\frac{i(\slashed p+\mu)}{p^2-\mu^2}$. The two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side below. The $i$ inside each cell fixes the sign pattern of the four squares: without it the bare multiplications $R_{\vec e_x}$ and $L_{\vec e_k}R_{\vec e_y}$ square to $-I_4$ and $+I_4$ respectively, the pattern $(-,+,+,+)$ of $\eta$, and the central $i^2=-1$ flips every one of them into the pattern $(+,-,-,-)$ of $g$. With that pattern the denominator is the real scalar $p^2-\mu^2$ and not its negative.
+so that $\frac{i}{\slashed p-\mu}$ is the same object as $\frac{i(\slashed p+\mu)}{p^2-\mu^2}$. The two factors of $i$ do different work and neither is redundant. The $i$ of the numerator is the normalisation of the Green's function, fixed by the right-hand side below. The $i$ inside each cell fixes the sign pattern of the four squares: without it the bare multiplications $R_{\vec e_x}^{\mathrm{pau}}$ and $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ square to $-I_4$ and $+I_4$ respectively, the pattern $(-,+,+,+)$ of $\eta$, and the central $i^2=-1$ flips every one of them into the pattern $(+,-,-,-)$ of $g$. With that pattern the denominator is the real scalar $p^2-\mu^2$ and not its negative.
 
 The propagator satisfies
 
@@ -194,7 +194,7 @@ $$
 \{\psi_\mu,\psi_\nu\} = \frac{1}{2}\eta_{\mu\nu}\,I_4 ,
 $$
 
-in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The metric here is $\eta$ and not $g$, and the difference between the two is one factor of the central $i$. Write $C_0=R_{\vec e_x}$ and $C_k=L_{\vec e_k}R_{\vec e_y}$ for the bare multiplications, the cells without their factor of $i$: they square to $(-1,+1,+1,+1)$ and satisfy $\{C_\mu,C_\nu\}=2\eta_{\mu\nu}I_4$, while the cells of the introduction are $G_\mu=iC_\mu$ and satisfy
+in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The metric here is $\eta$ and not $g$, and the difference between the two is one factor of the central $i$. Write $C_0=R_{\vec e_x}^{\mathrm{pau}}$ and $C_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for the bare multiplications, the cells without their factor of $i$: they square to $(-1,+1,+1,+1)$ and satisfy $\{C_\mu,C_\nu\}=2\eta_{\mu\nu}I_4$, while the cells of the introduction are $G_\mu=iC_\mu$ and satisfy
 
 $$
 \{G_\mu,G_\nu\} = i^2\{C_\mu,C_\nu\} = -2\eta_{\mu\nu}I_4 = 2g_{\mu\nu}I_4 .
@@ -289,12 +289,12 @@ The biquaternion interpretation is then immediate. In 1+1 dimensions the two ret
 $$
 \mathrm{Cl}_{1,1}^{+} \cong \mathbb{R}\oplus\mathbb{R},
 \qquad
-\mathrm{Cl}_{1,1}^{+} = \operatorname{span}_{\mathbb{R}}\left\{e_t,\; L_{\vec e_x}R_{\vec e_z}\right\},
+\mathrm{Cl}_{1,1}^{+} = \operatorname{span}_{\mathbb{R}}\left\{e_t,\; L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\right\},
 \qquad
-\left(L_{\vec e_x}R_{\vec e_z}\right)^2 = e_t ,
+\left(L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\right)^2 = e_t ,
 $$
 
-and the cell $L_{\vec e_x}R_{\vec e_z} = G_0G_1$ is the two-dimensional chirality. Its two minimal ideals are the two chiral halves; the two directions of the checkerboard are those two halves, and each corner is an insertion of the **off-diagonal mass** of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = \mu\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = \mu\tilde{\Psi}_R$. The checkerboard is thus the discrete, real-time picture of the mass pair: the free propagation is diagonal in the chirality — each half propagates on its own — and the mass is the reversal that connects them, since $G_0$ and $G_1$ anticommute with $L_{\vec e_x}R_{\vec e_z}$ and therefore exchange its two eigenspaces. The continuum limit is the statement that the off-diagonal mass pair, iterated on the lattice, reproduces the flat-space Dirac propagator.
+and the cell $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = G_0G_1$ is the two-dimensional chirality. Its two minimal ideals are the two chiral halves; the two directions of the checkerboard are those two halves, and each corner is an insertion of the **off-diagonal mass** of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R = \mu\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = \mu\tilde{\Psi}_R$. The checkerboard is thus the discrete, real-time picture of the mass pair: the free propagation is diagonal in the chirality — each half propagates on its own — and the mass is the reversal that connects them, since $G_0$ and $G_1$ anticommute with $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ and therefore exchange its two eigenspaces. The continuum limit is the statement that the off-diagonal mass pair, iterated on the lattice, reproduces the flat-space Dirac propagator.
 
 ### The Recurrence and Its Limit
 
@@ -391,14 +391,14 @@ The worldline and the checkerboard are complementary descriptions of the same ob
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra; here $L_aR_b$ is the two-sided multiplication $\psi\mapsto a\psi b$. The five are the generator cells under the gammas' own letters, $\gamma_\mu = G_\mu$ and $\gamma_5 = G_5$, so that the dictionary between the two writings is the identity on the operators:
 
 $$
-\gamma_0 = iL_{e_t}R_{\vec e_x},\quad
-\gamma_1 = iL_{\vec e_x}R_{\vec e_y},\quad
-\gamma_2 = iL_{\vec e_y}R_{\vec e_y},\quad
-\gamma_3 = iL_{\vec e_z}R_{\vec e_y},\quad
-\gamma_5 = -iL_{e_t}R_{\vec e_z} .
+\gamma_0 = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1 = iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2 = iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3 = iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_5 = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
-The right factor $\vec e_y$ of the three spatial gammas is the frame's common direction and the left factor is the direction of the coordinate, so the four vectors $L_{e_t}R_{\vec e_x}$, $L_{\vec e_x}R_{\vec e_y}$, $L_{\vec e_y}R_{\vec e_y}$, $L_{\vec e_z}R_{\vec e_y}$ climb a staircase through the two-sided index pairs — a row in neither factor, and not a diagonal. That staircase is the choice of frame, not a feature of the gammas: the repetition of $\vec e_y$ is in the frame. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le 1$, and a general element is a sum of at most four, with $\ell(M) = \operatorname{rank}c(M)$.
+The right factor $\vec e_y$ of the three spatial gammas is the frame's common direction and the left factor is the direction of the coordinate, so the four vectors $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ climb a staircase through the two-sided index pairs — a row in neither factor, and not a diagonal. That staircase is the choice of frame, not a feature of the gammas: the repetition of $\vec e_y$ is in the frame. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le 1$, and a general element is a sum of at most four, with $\ell(M) = \operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi = i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2 = e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
@@ -420,7 +420,7 @@ S_{cd} = \tfrac14[\gamma_c,\gamma_d],
 $$
 
 $$
-\gamma_0\gamma_1\gamma_2\gamma_3 = -i\,\gamma_5 = -R_{\vec e_z},\qquad
+\gamma_0\gamma_1\gamma_2\gamma_3 = -i\,\gamma_5 = -R_{\vec e_z}^{\mathrm{pau}},\qquad
 \mathrm{tr}(\gamma_\mu\gamma_\nu) = 4g_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
@@ -468,12 +468,12 @@ the identity of the notation table below; the scalar path integral of the compan
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector; the worldline position $\tilde R$ |
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $G_0 = iR_{\vec e_x}$, $G_k = iL_{\vec e_k}R_{\vec e_y}$ | Generator cells of the canonical frame, $G_\mu=iC_\mu$ |
-| $C_0 = R_{\vec e_x}$, $C_k = L_{\vec e_k}R_{\vec e_y}$ | Bare cells, $\{C_\mu,C_\nu\}=2\eta_{\mu\nu}I_4$ |
-| $G_5 = -iL_{e_t}R_{\vec e_z}$ | Pseudoscalar (chirality) cell |
+| $G_0 = iR_{\vec e_x}^{\mathrm{pau}}$, $G_k = iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Generator cells of the canonical frame, $G_\mu=iC_\mu$ |
+| $C_0 = R_{\vec e_x}^{\mathrm{pau}}$, $C_k = L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | Bare cells, $\{C_\mu,C_\nu\}=2\eta_{\mu\nu}I_4$ |
+| $G_5 = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Pseudoscalar (chirality) cell |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the cells, $\{G_\mu,G_\nu\} = 2g_{\mu\nu}I_4$ |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict'$-coordinate metric; $g = -\eta$ |
-| $\slashed p = iR_{\vec e_x}p_0-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k$ | Momentum cell, $(\slashed p)^2 = p^2I_4$ |
+| $\slashed p = iR_{\vec e_x}^{\mathrm{pau}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k$ | Momentum cell, $(\slashed p)^2 = p^2I_4$ |
 | $i\slashed\partial$ | First-order operator, $(i\slashed\partial)^2 = \Box$; symbol $\slashed p$ |
 | $\Delta = \sum_k \partial^2/\partial Q_k^2$ | Quaternionic Laplacian |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian; $\Delta-\partial^2/\partial(q'_t)^2$ on $\mathbb{M}_-$ |

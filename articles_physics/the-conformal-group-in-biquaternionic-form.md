@@ -224,24 +224,24 @@ Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde Q=a\tild
 $$
 L_aR_b\,L_cR_d=L_{ac}R_{db},
 $$
-the right factors meeting in the reverse order. A general two-sided operator is a sum of the sixteen cells $L_{e_\mu}R_{e_\nu}$, with $C(M)$ its $4\times4$ coefficient matrix and $\ell(M)=\operatorname{rank}C(M)$ its length. A single cell $L_aR_b$ is a pure tensor of rank one; the pure tensors form the seven-dimensional cone $\{\operatorname{rank}C(M)\le1\}$, and a general operator is a sum of at most four of them.
+the right factors meeting in the reverse order. A general two-sided operator is a sum of the sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$, with $C(M)$ its $4\times4$ coefficient matrix and $\ell(M)=\operatorname{rank}C(M)$ its length. A single cell $L_aR_b$ is a pure tensor of rank one; the pure tensors form the seven-dimensional cone $\{\operatorname{rank}C(M)\le1\}$, and a general operator is a sum of at most four of them.
 
 The five frame cells are
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\qquad
-\gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad
-\gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad
-\gamma_3=iL_{\vec e_z}R_{\vec e_y},
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 $$
-\gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The factors of $i$ are reduced by $i^2=-1$ before a product is read, so a product of two frame cells is a plain cell, with no $i$ left in it:
 $$
-\gamma_0\gamma_1=i^2L_{\vec e_x}R_{\vec e_y\vec e_x}=-L_{\vec e_x}R_{-\vec e_z}=+L_{\vec e_x}R_{\vec e_z}.
+\gamma_0\gamma_1=i^2L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
-The same collapse gives the squares and the Clifford relations, with $I_4=L_{e_t}R_{e_t}$ the identity cell, the algebra's unit read as an operator on the module,
+The same collapse gives the squares and the Clifford relations, with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell, the algebra's unit read as an operator on the module,
 $$
 \gamma_0^2=I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=I_4,
 $$
@@ -252,7 +252,7 @@ The Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ is the negative of the interv
 
 **What the frame carries of the conformal algebra.** The six bivectors $\gamma_\mu\gamma_\nu$ with $\mu<\nu$ close under the commutator and span the Lorentz algebra, exactly the six generators that the body places inside $\mathbb{B}$. The other nine are not bivectors of this frame: the dilation is the four-vector product $\gamma_5$ up to a phase, and the translations and special conformal generators are the vector-plus-pseudovector combinations $\tfrac12\gamma_\mu(1\mp i\gamma_5)$ quoted in the Clifford-group paragraph above. To get all fifteen as bivectors one must enlarge the generating set by the pseudoscalar and the unit, which is the six-generator construction of that paragraph. This is the dictionary's reading of the body's count.
 
-$\gamma_5$ is the chirality cell $\Gamma=-iR_{\vec e_z}$: the two differ only by the left factor $L_{e_t}$, which is the identity. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, the difference of the two central idempotents of the complexified algebra, so that $\chi_{\mathrm{ad}}^2=e_t$, is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$: the two differ only by the left factor $L_{e_t}^{\mathrm{pau}}$, which is the identity. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, the difference of the two central idempotents of the complexified algebra, so that $\chi_{\mathrm{ad}}^2=e_t$, is a different object, represented by $\gamma_5$ on the Dirac module.
 
 **The two Dirac equations.** The cells carry the corpus's two Dirac equations, and the first of them is the equation this article's subject acts on. The **one-sided** equation is the gradient equation: every derivative acts by left multiplication, the two members are conjugate, and no chirality operator appears,
 $$
@@ -263,7 +263,7 @@ with $\tilde\Psi_R$ and $\tilde\Psi_L$ the two chirality halves. At $m=0$ this i
 
 The **two-sided** equation is the cell equation: the same dynamics on the Dirac module, with the mass carried by the right multiplication,
 $$
-\left(iL_{e_t}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}\frac{\partial}{\partial Q_k}\right)\tilde Q_{\mathrm f}-mi\,R_{\vec e_z}\overline{\tilde Q_{\mathrm f}}=0,
+\left(iL_{e_t}^{\mathrm{pau}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}\right)\tilde Q_{\mathrm f}-mi\,R_{\vec e_z}^{\mathrm{pau}}\overline{\tilde Q_{\mathrm f}}=0,
 $$
 where the derivative acts from the left, the mass from the right through $\vec e_z$, and $\overline{\tilde Q_{\mathrm f}}$ is the coefficient conjugate. The two share the frame but not the operator: the one-sided pair splits the field into chirality halves, while the two-sided equation is antilinear in its mass term and carries the chirality in the right multiplication $\Gamma$, not in a left factor.
 
@@ -309,9 +309,9 @@ What it does not carry: the group. The algebra is eight real dimensions and its 
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)=\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$ | General plain bilinear form, with $\varepsilon=(1,-1,-1,-1)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | General plain sesquilinear form; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $L_a$, $R_b$ | Left and right multiplication, $L_a\tilde Q=a\tilde Q$, $R_b\tilde Q=\tilde Q b$; a cell is $L_aR_b$ |
-| $\Gamma=-iR_{\vec e_z}$ | Chirality cell; equals $\gamma_5$ |
+| $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell; equals $\gamma_5$ |
 | $\gamma_0,\dots,\gamma_3$, $\gamma_5$ | Frame cells of $\mathrm{Cl}_{1,3}$; confined to *The Gamma Formulation* |
-| $I_4=L_{e_t}R_{e_t}$ | Identity cell on the module |
+| $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | Identity cell on the module |
 | $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ | Central grading of the complexified algebra, $\chi_{\mathrm{ad}}^2=e_t$; represented by $\gamma_5$ on the module |
 | $C(M)$, $\ell(M)$ | Coefficient matrix of a cell and its rank, the length |
 | $\tilde\nabla=e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
