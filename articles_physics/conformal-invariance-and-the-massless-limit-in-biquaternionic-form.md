@@ -54,7 +54,7 @@ with $x^2 = \sum_{\rho,\sigma}\eta_{\rho\sigma}x_\rho x_\sigma$. The conformal g
 
 Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $\vec e_k$ and the boosts $K_k = i\vec e_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_t$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
-I(\tilde{Q}) = \overline{\tilde{Q}}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
+I(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
 \langle I(\tilde{Q})\rangle_{\natural} = \frac{1}{\langle\tilde{Q}\rangle_{\natural}} .
 $$

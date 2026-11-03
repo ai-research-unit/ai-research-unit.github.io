@@ -312,7 +312,7 @@ The article now carries two equations, and they must not be read as one. The cor
 | Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left by $i\partial/\partial t'$ and $D_3$, right by $\vec e_z$ in the mass term, and the antilinear bar |
 | Field | $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R\in\Delta=S\oplus S^{\mathrm c}$ | $F\in\mathbb{B}$ |
 | Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-mi\,\overline{F}\,\vec e_z$: a conjugation together with a direction |
-| Chirality | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the volume cell, represented by $\gamma_5=-iL_{e_t}R_{\vec e_z}$ up to the source's sign |
+| Chirality | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the volume cell, represented by $-iL_{e_t}R_{\vec e_z}$ up to the source's sign |
 | Use | the corpus's formulation and its kinematics | the dictionary, the Cauchy theory and the integral representation |
 
 The dictionary is therefore not a second definition of the same equation. It is a change of representation that makes the equation two-sided, and the price of the change is the conjugation in the mass term. The one-sided pair is the definition; the two-sided equation is the form in which the analytic machinery acts.
@@ -357,10 +357,10 @@ and with that one remark the three theorems of the hyperholomorphic theory hold 
 
 **The chirality of the biquaternion Dirac field is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexification, not a Clifford matrix.**
 
-Let $\tilde\Xi_{\mathrm{ad}}$ be the central root of $-1$ that complexifies $\mathbb{B}_{\mathbb{R}}$, with $\tilde\Xi_{\mathrm{ad}}^2=-1$ and $[\tilde\Xi_{\mathrm{ad}},i]=0$. The algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ is $\mathbb{B}\oplus\mathbb{B}$, with central idempotents
+Let $\tilde\Xi_{\mathrm{ad}}$ be the central root of $-1$ that complexifies $\mathbb{B}_{\mathbb{R}}$, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $[\tilde\Xi_{\mathrm{ad}},i]=0$. The algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ is $\mathbb{B}\oplus\mathbb{B}$, with central idempotents
 
 $$
-e_+=\tfrac12(1+i\tilde\Xi_{\mathrm{ad}}),\qquad e_-=\tfrac12(1-i\tilde\Xi_{\mathrm{ad}}),\qquad e_++e_-=e_t,\qquad e_+e_-=0,
+e_+=\tfrac12(e_t+i\tilde\Xi_{\mathrm{ad}}),\qquad e_-=\tfrac12(e_t-i\tilde\Xi_{\mathrm{ad}}),\qquad e_++e_-=e_t,\qquad e_+e_-=0,
 $$
 
 and chirality
@@ -372,7 +372,7 @@ $$
 On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ the representation is
 
 $$
-\rho(i)=\operatorname{diag}(iI_2,-iI_2),\qquad \rho(\tilde\Xi_{\mathrm{ad}})=\operatorname{diag}(iI_2,-iI_2),\qquad \rho(\chi)=\operatorname{diag}(-I_2,I_2).
+\rho(i)=\operatorname{diag}(iI_2,-iI_2),\qquad \rho(\tilde\Xi_{\mathrm{ad}})=iI_4,\qquad \rho(\chi)=\operatorname{diag}(-I_2,I_2).
 $$
 
 The chiral projectors are

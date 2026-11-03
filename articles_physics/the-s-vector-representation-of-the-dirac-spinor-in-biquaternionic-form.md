@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Cartan observed that the spin group $\mathrm{Spin}(8)$ has three eight-dimensional real representations — the vector $8_v$ and the two half-spinors $8_s, 8_c$ — and that they are permuted by an outer automorphism of order three, the *triality* of $D_4$. The coincidence of the three dimensions is special to eight dimensions. Only $n = 8$ puts the vector space and the two semi-spinor spaces on an equal footing, and the associated composition law is the octonion product.
+Cartan observed that the spin group $\mathrm{Spin}(8)$ has three eight-dimensional real representations — the vector $8_v$ and the two half-spinors $8_s, 8_c$ — and that they are permuted by an outer automorphism of order three, the *triality* of $D_4$. Triality itself is special to dimension eight: there, and only there, the three representations have the same dimension *and* an outer automorphism of order three permutes them, and the composition law that comes with the permutation is the octonion product.
 
-In four-dimensional Minkowski space the three spaces have dimensions four, four and four: a Lorentz vector, and the two four-real-component semi-spinors that a Dirac spinor decomposes into. Liu Yu-Fen asked whether the same coincidence can be exploited there, and constructed what he calls a *ding* construction: an order-three map $J$ on $\mathbb{M}^{1+3}\times S_1\times S_2$ built from a triple of neutral elements, under which the Dirac spinor becomes a complex four-vector. The composition law it defines is that of the algebra of complexified quaternions — the biquaternion algebra — so the *vector representation of the Dirac spinor* is the same thing as a biquaternionic representation of it. This article records that construction, its bosonic rewriting of the Dirac Lagrangian, and the self-dual form the massive Dirac equation takes in it.
+In four-dimensional Minkowski space the three spaces do have dimensions four, four and four — a Lorentz vector, and the two four-real-component semi-spinors that a Dirac spinor decomposes into — but $\mathrm{Spin}(1,3)$ has no order-three outer automorphism, so the coincidence of dimensions buys nothing on its own. Liu Yu-Fen asked whether a permutation can be built anyway, from extra data, and constructed what he calls a *ding* construction: an order-three map $J$ on $\mathbb{M}^{1+3}\times S_1\times S_2$ built from a triple of neutral elements, under which the Dirac spinor becomes a complex four-vector. The composition law it defines is that of the algebra of complexified quaternions — the biquaternion algebra — so the *vector representation of the Dirac spinor* is the same thing as a biquaternionic representation of it. This article records that construction, its bosonic rewriting of the Dirac Lagrangian, and the self-dual form the massive Dirac equation takes in it.
 
 The construction is a companion to the corpus's spinor-module articles. There, the Dirac field lives in a minimal left ideal of $\mathbb{B}$ and the Lorentz group acts on the left; here, a *different* linear representation of the same group — on a complex four-vector $G_\mu$ — carries the same field, and the two representations are related by fixed neutral elements. What is gained is a dictionary in which every Dirac bilinear becomes a bilinear in $G$ and its conjugate; what is paid is a preferred timelike direction, the neutral element $k_\mu$, which the dictionary needs and the metric does not supply.
 
@@ -32,7 +32,7 @@ $$
 \bar u u = 1, \qquad \bar v v = -1, \qquad \bar u v = 0,
 $$
 
-where $\bar u = i(u^\dagger e_t)\vec e_x = u^\dagger C_0$ is the Dirac conjugate (left unit $e_t$, right unit $\vec e_x$). Write $a_0=e_t$, $a_k=\vec e_k$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator cell** of index $\mu$ is
+where $\bar\Psi = i(\Psi^\dagger e_t)\vec e_x = \Psi^\dagger C_0$ is the Dirac conjugate (left unit $e_t$, right unit $\vec e_x$), so that $\bar u u$ above is the Dirac bilinear of the unit semi-spinor. Write $a_0=e_t$, $a_k=\vec e_k$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator cell** of index $\mu$ is
 $$
 C_\mu := iL_{a_\mu}R_{b_\mu},
 \qquad
@@ -161,7 +161,7 @@ $$
 \qquad \vec u_x\vec u_y = -\vec u_y\vec u_x = \vec u_z \ \ (\text{cyclic})\;}.
 $$
 
-These are the relations of the **matrix realisation**, not of the biquaternion units themselves. In that realisation $e_0=I$ and $e_k=i\vec u_k$, so $e_k^2=i^2\vec u_k^2=+I$ and $e_xe_y=i^2\vec u_x\vec u_y=-\vec u_z=i e_z$; the factor $i$, through $i^2=-1$, is what flips both signs. The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred time direction of the algebra.
+These are the relations of the **matrix realisation**, not of the biquaternion units themselves. In that realisation $e_0=I$ and $e_k=i\vec u_k$, so $e_k^2=i^2\vec u_k^2=+I$ and $e_xe_y=i^2\vec u_x\vec u_y=-\vec u_z=i e_z$; the factor $i$, through $i^2=-1$, is what flips both signs. The unarrowed $e_k$ is this rescaled unit, $e_k=i\vec e_k$; it is not the quaternion unit $\vec e_k$, which has square $-e_t$ and product $\vec e_x\vec e_y=+\vec e_z$. The neutral vector $k$ is hidden inside $c$: it is the unit element, the preferred time direction of the algebra.
 
 ## The Semi-Spinors as Real Four-Vectors
 
@@ -198,7 +198,7 @@ $$
 $$
 Here $\Gamma=-iL_{e_t}R_{\vec e_z}$ and $C_\mu=iL_{a_\mu}R_{b_\mu}$, so $\Gamma C_\mu=(-i)(i)L_{e_t}R_{\vec e_z}L_{a_\mu}R_{b_\mu}=L_{e_t}R_{\vec e_z}L_{a_\mu}R_{b_\mu}$: the two factors of $i$ cancel by $i^2=-1$, and the axial bilinear carries no explicit imaginary unit. The slot order is the one fixed above: the first slot of $c$ belongs to the left factor, here $G_\lambda$, the middle slot to the output index $\mu$, and the last slot to the right factor, here $G^*_\nu$. Because the two factors commute as complex numbers, the sum is unchanged if the two are exchanged together with the first and last slots; it is changed if only one of the two is moved. With the opposite attachment, $\sum\epsilon_\nu\epsilon_\lambda G^*_\nu\check c_{\nu\mu\lambda}G_\lambda$, the same sum appears with the opposite sign, and the two readings must not be mixed.
 
-The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G_\rho c_{\rho\mu\sigma}G^*_\sigma$, the source's first bilinear; the vector identity above is the same statement with $\mu$ renamed. The chirality cell is the ordered product of the four generator cells up to the factor $i$,
+The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G_\rho c_{\rho\mu\sigma}G^*_\sigma = e\,\bar\Psi C_\mu\Psi$, the source's first bilinear, and it is the vector identity above with the summation indices renamed $\lambda\to\rho$, $\nu\to\sigma$. The chirality cell is the ordered product of the four generator cells up to the factor $i$,
 $$
 \Gamma=-iL_{e_t}R_{\vec e_z},
 $$
@@ -342,16 +342,16 @@ Equivalently, with $A_\mu = 0$, the pair is the self-dual system
 $$
 \boxed{\;G_{\mu\nu} = \tfrac{i}{2}\,\varepsilon_{\mu\nu\lambda\rho} G_{\lambda\rho},
 \qquad
-\sum_\mu\epsilon_\mu\bigl(\partial/\partial x_\mu G_\mu - i m j_\mu G^{*}_{\mu}\bigr) = 0\;},
+\sum_\mu\epsilon_\mu\bigl(\partial/\partial x_\mu G_\mu + i m j_\mu G^{*}_{\mu}\bigr) = 0\;},
 $$
 
 where
 
 $$
-G_{\mu\nu} = \bigl(\partial/\partial x_\mu G_\nu + im\,j_\mu G^*_\nu\bigr) - \bigl(\partial/\partial x_\nu G_\mu + im\,j_\nu G^*_\mu\bigr).
+G_{\mu\nu} = \bigl(\partial/\partial x_\mu G_\nu - im\,j_\mu G^*_\nu\bigr) - \bigl(\partial/\partial x_\nu G_\mu - im\,j_\nu G^*_\mu\bigr).
 $$
 
-The first equation is a self-duality condition on the field strength $G_{\mu\nu}$, the second a divergence condition. The self-dual pair and the chiral pair are two ways of writing the same first-order system: one splits by the 2-form, the other by chirality. The mass enters the two boxed equations with opposite signs, and that relative sign is fixed: the self-duality is a consequence of the equation of motion, not an independent equation, and flipping both signs at once is the change of convention $G\leftrightarrow G^*$, $m\mapsto-m$ rather than a different system.
+The first equation is a self-duality condition on the field strength $G_{\mu\nu}$, the second a divergence condition. The mass enters both with the same sign, $+im\,j_\mu G^*_\mu$, and both entries are consequences of the compact equation, not independent equations. Each sign is fixed separately: the self-duality uses the mass term with one sign, the divergence with the same sign, and flipping either one alone breaks the equivalence.
 
 ### The Chiral Biquaternions and the 2-Form
 
@@ -398,21 +398,35 @@ c_5{}_{\mu\nu} =
 \begin{pmatrix} 0 & 0 & 0 & 1\\ 0 & 0 & i & 0\\ 0 & -i & 0 & 0\\ 1 & 0 & 0 & 0\end{pmatrix},
 $$
 
-which is Hermitian and squares to the identity, so its eigenvalues are $+1$ and $-1$ and the two projections are orthogonal. It mixes $G_0$ with $G_3$ and $G_1$ with $G_2$; it does not separate time from space, and the factor $i$ in its off-diagonal entries is what makes it an involution rather than a reflection.
-
-The $\mathrm{U}(1)$ transformation of the spinor, $\Psi \mapsto \Psi \exp(i\alpha)$, becomes in the vector representation
+which is Hermitian, squares to the identity, and is $g$-antisymmetric,
 
 $$
-G_\mu \mapsto \bigl(\delta_{\mu\nu}\cos\alpha - i c_5{}_{\mu\nu}\sin\alpha\bigr)G_\nu = \bigl(\exp(-i\alpha c_5)\bigr)_{\mu\nu} G_\nu .
+\sum_\lambda c_5{}_{\lambda\mu}g_{\lambda\nu} = -\sum_\lambda g_{\mu\lambda}c_5{}_{\lambda\nu},
 $$
 
-This is a *chiral-type* transformation of $G$, and because $c_5^2 = 1$ it obeys the De Moivre theorem,
+so its eigenvalues are $+1$ and $-1$, the two projections are orthogonal, and $e^{-i\alpha c_5}$ is an isometry of the quadratic form. It mixes $G_0$ with $G_3$ and $G_1$ with $G_2$; it does not separate time from space, and the entries are basis-dependent, the matrix being a representative of $\Gamma$ rather than $\Gamma$ itself.
+
+The last two of these properties are what make the *chiral-type* rotation
+
+$$
+M(\alpha)_{\mu\nu} = \delta_{\mu\nu}\cos\alpha - i c_5{}_{\mu\nu}\sin\alpha = \bigl(\exp(-i\alpha c_5)\bigr)_{\mu\nu}
+$$
+
+an isometry of the quadratic form $q(G)=G_\mu g_{\mu\nu}G_\nu$: the $g$-antisymmetry makes the cross terms cancel, and $c_5^2=1$ makes the diagonal terms add to $g$, so $M^{\mathsf T}gM=g$. Because $c_5^2=1$ it also obeys the De Moivre theorem,
 
 $$
 \bigl(\cos\alpha - i c_5\sin\alpha\bigr)^n = \cos n\alpha - i c_5\sin n\alpha .
 $$
 
-The correspondence is exact, but it is not symmetric: the *chiral* transformation of the spinor, $\Psi \mapsto \exp(-ia\Gamma)\Psi$, becomes the *ordinary* $\mathrm{U}(1)$ transformation $G_\mu \mapsto \exp(ia)G_\mu$, and $\Psi\mapsto\exp(ia\Gamma)\Psi$ becomes $G_\mu\mapsto\exp(-ia)G_\mu$. The mass term $m\bar\Psi\Psi = -\tfrac{m}{2}(G^*G^* + GG)$ is invariant under the chiral-type transformation $G_\mu\mapsto(\delta_{\mu\nu}\cos a-i c_5{}_{\mu\nu}\sin a)G_\nu$ but *not* under the ordinary $\mathrm{U}(1)$ transformation $G_\mu\mapsto e^{ia}G_\mu$, so plane-wave solutions for $\Psi$ and for $G_\mu$ are rotated into one another by this exchange and must be distinguished.
+The mass term $m\bar\Psi\Psi = -\tfrac{m}{2}(G^*G^* + GG) = -\tfrac{m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\alpha)$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\alpha}G_\mu$, which multiplies $q$ by $e^{2i\alpha}$.
+
+The source identifies $M(\alpha)$ with the image of the spinor's vector $\mathrm{U}(1)$, $\Psi\mapsto\Psi\exp(i\alpha)$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\Psi\mapsto\exp(-ia\Gamma)\Psi$ becomes the ordinary phase $G_\mu\mapsto e^{ia}G_\mu$, and $\Psi\mapsto\exp(ia\Gamma)\Psi$ becomes $G_\mu\mapsto e^{-ia}G_\mu$. The vector phase does not act diagonally on $G$ at all. Since $\bar v\,iC_\mu\Psi$ and $\bar\Psi\,iC_\mu v$ are conjugate up to sign, $B_\mu$ is the real part of $X_\mu:=\bar v\,iC_\mu\Psi$, and the phase sends
+
+$$
+B_\mu \mapsto B_\mu\cos\alpha - \operatorname{Im}(X_\mu)\sin\alpha,
+$$
+
+with $N_\mu$ treated the same way through $Z_\mu:=\bar\Psi\,iC_\mu u$: a mixing of the two semi-spinors, not a rotation of each. So $M(\alpha)$ is the transformation the mass form invites, and it is the one to use in the algebra, but it is not the image of a spinor symmetry.
 
 ## The Dual Transformation and the Two Semi-Spinors
 
@@ -470,7 +484,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Psi_1 = \mathcal{R}(B^\flat)v$ and $\Psi_2 = \mathcal{R}(N^\flat)u$ with real $B_\mu, N_\mu$, where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$. The combined object $G_\mu = B_\mu + iN_\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k_\mu$, a spacelike unit vector $j_\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho} - i\varepsilon_{\mu\nu\lambda\rho})k_\rho$ built from the four-index traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is the quaternion algebra with $e_0=I$ and $e_k=i\vec u_k$, so that $e_k^2=+I$ and $e_xe_y=i e_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
-The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the chirality-off-diagonal mass in another guise. The massive equation becomes the pair of §The Chiral Pair, or equivalently the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\partial/\partial x_\mu G_\mu - imj_\mu G^{*}_{\mu} = 0$, with the antisymmetric part of the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. The $\mathrm{U}(1)$ transformation of the spinor becomes the chiral-type transformation $G \mapsto (\cos\alpha - ic_5\sin\alpha)G$ with $(c_5)^2 = 1$, so the De Moivre theorem holds; the chiral transformation of the spinor becomes an ordinary $\mathrm{U}(1)$ transformation of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
+The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the chirality-off-diagonal mass in another guise. The massive equation becomes the pair of §The Chiral Pair, or equivalently the self-dual pair $G_{\mu\nu} = \tfrac{i}{2}\varepsilon_{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\sum_\mu\epsilon_\mu\bigl(\partial/\partial x_\mu G_\mu + imj_\mu G^{*}_{\mu}\bigr) = 0$, with the antisymmetric part of the two-form $H_{\mu\nu} = G^*_\lambda\check c_{\lambda\mu\nu}$ anti-self-dual. Because $(c_5)^2=1$ and $c_5$ is $g$-antisymmetric, the chiral-type rotation $G\mapsto(\cos\alpha-ic_5\sin\alpha)G$ is an isometry of the quadratic form, obeys the De Moivre theorem, and leaves the mass term invariant; the chiral transformation of the spinor, by contrast, is an ordinary $\mathrm{U}(1)$ phase of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
 What the construction supplies is a dictionary; what it does not supply is covariance or new physics. The neutral elements $k_\mu$ and $j_\mu$ are a preferred frame. They are not determined by the metric; the contractions $g_{\mu\nu}c_{\mu\nu\lambda}=4k_\lambda$ and $g_{\mu\nu}\check c_{\mu\nu\lambda}=-4j_\lambda$ return them from the structure constants, so the frame is the algebra's own, but it is still a frame, and the corpus records the question as open. The triality map is not a symmetry; it maps one description to another description of the same theory.
 
@@ -498,7 +512,7 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $\check c_{\mu\nu\lambda} = ({t'}_{\mu\nu\lambda\rho}-i\varepsilon_{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on $j$ |
 | $c_5{}_{\mu\nu} = -g_{\mu\mu}\check c_{\mu\nu\lambda}k_\lambda$ | The algebra's chirality cell; $(c_5)^2 = 1$ |
 | $\Gamma:\Psi\mapsto-i e_t\Psi\vec e_z=-iR_{\vec e_z}\Psi$ | The chirality cell (not a gamma matrix) |
-| $(G\otimes H)_\lambda = G_\mu c_{\mu\lambda\nu}H_\nu$ | Composition law |
+| $(G\otimes H)_\lambda = \sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,G_\mu c_{\mu\lambda\nu}H_\nu$ | Composition law |
 | $B_\mu, N_\mu$ | Real four-vectors of the two semi-spinors |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector (the vector representation of the Dirac spinor) |
 | $\Psi_R, \Psi_L$ | Right- and left-handed halves of the spinor, $\Psi_{R,L}=\tfrac12(e_t\pm\Gamma)\Psi$ (the source's $R,L$) |

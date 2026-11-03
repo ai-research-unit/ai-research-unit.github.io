@@ -2,15 +2,15 @@
 
 ## Introduction
 
-**The compression.** The $M_4(\mathbb{C})$ Pauli Representation writes the two regular matrices of an element in the standard Peirce frame as
+**The question.** *$M_4(\mathbb{C})$ Pauli Representation* writes the two regular matrices of an element in the standard Peirce frame and finds the same $2\times2$ block twice in each:
 $$
 L(\tilde Q)=\mathrm I_2\otimes A,\qquad
 R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2,\qquad
-A=\mathsf M_2(\tilde Q).
+A=\mathsf M_2(\tilde Q),
 $$
-The same $2\times2$ block $A$ occurs twice on the diagonal of $L$, and the same block $A^{\mathsf T}$ occurs twice on the diagonal of $R$ in the order that pairs the two nilpotents. The second block is a copy of the first. This article keeps one block.
+with the same block $A$ twice on the diagonal of $L$ and $A^{\mathsf T}$ twice on the diagonal of $R$, in the order that pairs the two nilpotents (§*The Left Family* and §*The Right Family* of that article). The second block is a copy of the first, so the $4\times4$ display says nothing that one block does not say. This article asks what one block says on its own: which statements of the $4\times4$ article are statements about $A$, and which are statements about the repetition.
 
-The result is the $2\times2$ model of the algebra itself. It is not a smaller regular representation: the regular matrices act on the four-dimensional algebra, while the $2\times2$ matrices act on one Peirce plane. The compression is the reading of each action on one plane, and it is exact because the two planes of a copy carry the same matrix.
+**The compression.** Keeping the block and dropping the repetition gives the $2\times2$ model of the algebra itself. It is not a smaller regular representation: the regular matrices act on the four-dimensional algebra, while the $2\times2$ matrices act on one Peirce plane. The compression is the reading of each action on one plane, and it is exact because the two planes of a copy carry the same matrix.
 
 **The left and the right.** The left/right split survives, but not as two commuting families on one space. The left action on the left ideal
 $$
@@ -36,7 +36,9 @@ $$
 $$
 The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The matrix units are $E_{ij}$, the Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\operatorname{Tr}$ is the $2\times2$ trace.
 
-**Boundaries.** The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The $4\times4$ representation is *$M_4(\mathbb{C})$ Pauli Representation*; the matrix units and the two Peirce planes are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
+**The order of the article.** The article follows the $4\times4$ one step by step, at the size of one block. The root and its two idempotents come first, as the compression of §*The Root and the Peirce Frame* of the $4\times4$ article (§*The Root and the Two Idempotents*), then the Peirce basis in the two orders that the two sides need (§*The Peirce Basis and the Two Orders*). The left and the right matrices are read on the two ideals (§*The Left and Right Matrices*, against §*The Left Family* and §*The Right Family*), then the images of the four units (§*The Images of the Four Units*) and the stitch between the two sides (§*The Stitch Between the Left and the Right*, against §*The Stitch Between the Two Families*). The compression maps and the surviving switch follow (§*The Compression and the Switch*, against §*Every Frame Is a Conjugate of This One*), and then the entry-size quantities: the product, the trace and the determinant (§*The Product*, §*The Trace*, §*The Determinant*). The spectral projectors, the diagonalising matrix, the adjugate and the inverse, and the four norms are new at the element size, with no section of their own in the $4\times4$ article (§*The Spectral Projectors*, §*The Adjugate and the Inverse*, §*The Four Norms*). The six subspaces close the article in their compressed form (§*The Six Subspaces*), and what fails to compress is named at the end of §*The Compression and the Switch*.
+
+**Boundaries.** This article is the continuation of *$M_4(\mathbb{C})$ Pauli Representation*: it takes the block of §*The Left Family* and §*The Right Family* there and follows it to the end. The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The matrix units and the two Peirce planes are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
 
 ## The Root and the Two Idempotents
 
@@ -214,6 +216,8 @@ $$
 
 **A note on the element.** The matrix $A$ is the matrix of the element itself, not a regular matrix on a larger space. The left action is the multiplication by $A$ on the column space of the left ideal; the right action is the multiplication by $A^{\mathsf T}$ on the row space of the right ideal. There is no ambient $4\times4$ space in the compressed model, and the two actions are not two operators on one space.
 
+**Against the $4\times4$ article.** There the same two matrices are §*The Left Family* and §*The Right Family*, displayed as the Kronecker products $\mathrm I_2\otimes A$ and $A^{\mathsf T}\otimes\mathrm I_2$. The compression keeps the block and drops the identity factor. The two bases used above are the two columns of that repeated block: the first block acts on $(\tilde\Pi_+,\vec\Upsilon_+)$, the second on $(\vec\Upsilon_-,\tilde\Pi_-)$, and the two orders $\mathcal{P}$ and $\mathcal{P}'$ of §*The Peirce Basis and the Two Orders* differ by the swap of the two nilpotents.
+
 ## The Images of the Four Units
 
 **The left matrices.** The four left matrices are the images of the four units under the model:
@@ -296,6 +300,12 @@ $$
 The transpose is the exchange of the two nilpotent coordinates, with the two idempotent coordinates fixed.
 
 **Why the transpose.** The left ideal is a space of columns: the first column of $A$ is the image of $\tilde\Pi_+$, the second the image of $\vec\Upsilon_+$. The right ideal is a space of rows: the first row of $A$ is the image of $\tilde\Pi_+$, the second the image of $\vec\Upsilon_-$. Writing a row as a column transposes the matrix. The two bases differ by the exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$, and the exchange of the two nilpotents is exactly the exchange of the row index and the column index.
+
+**Against the $4\times4$ article.** There the stitch is
+$$
+R(\tilde Q)=\mathsf S\,L(\tilde Q)^{\mathsf T}\mathsf S^{-1},
+$$
+with $\mathsf S$ the permutation of the second and third coordinates (§*The Stitch Between the Two Families*). The permutation exchanges the two tensor slots, and one of the two slots is the identity factor: $\mathsf S(\mathrm I_2\otimes A^{\mathsf T})\mathsf S^{-1}=A^{\mathsf T}\otimes\mathrm I_2$, which is $R$. On one block there is no slot left to exchange, the permutation acts as the identity, and the stitch is the plain transpose $R=A^{\mathsf T}$. The $4\times4$ statement is a transpose conjugated; the $2\times2$ statement is the transpose; the conjugation is invisible here because the two slots it swaps are one block and one identity.
 
 **The anti-automorphism.** The transpose is an anti-automorphism of $M_2(\mathbb{C})$:
 $$
@@ -419,6 +429,8 @@ AA^{\mathsf T}=E_{22}\neq E_{11}=A^{\mathsf T}A .
 $$
 The two matrices are the left and right matrices of the same element, but they act on the two different planes $S_+$ and $T_+$. There is no product of the two actions in the compressed model, and no commutation theorem to state.
 
+**Against the $4\times4$ article.** The three identities above are §*The Product* of the $4\times4$ article with the identity factor removed: $\mathrm I_2\otimes A$ makes the left product a product of blocks, and $A^{\mathsf T}\otimes\mathrm I_2$ makes the right product the reversed product of blocks. The reversal is the reversal of the element order in both sizes; the only difference is that the $4\times4$ display carries the identity factor and this one does not.
+
 **The mixed trace.** The product $A_1A_2^{\mathsf T}$ is a matrix product, not the compression of $L(\tilde Q_1)R(\tilde Q_2)$. Its trace is
 $$
 \operatorname{Tr}(A_1A_2^{\mathsf T})=2\operatorname{Sc}\bigl(\tilde Q_1\varrho(\tilde Q_2)\bigr),
@@ -458,7 +470,7 @@ $$
 \operatorname{Tr}L(\tilde Q)=2\operatorname{Tr}A=4Q_t,\qquad
 \operatorname{Tr}R(\tilde Q)=2\operatorname{Tr}A^{\mathsf T}=4Q_t,
 $$
-which is the $4Q_t$ of the $4\times4$ article. The factor $2$ is the number of blocks.
+which is the $4Q_t$ of §*The Trace* of the $4\times4$ article. The factor $2$ is the number of blocks.
 
 **The trace is not the norm.** The trace is additive and complex-valued; it does not detect the vector part. The statement is the matrix form of the split
 $$
@@ -472,7 +484,7 @@ $$
 \det A=(Q_t-iQ_z)(Q_t+iQ_z)-(-iQ_x-Q_y)(-iQ_x+Q_y)
 =Q_t^2+Q_z^2+Q_x^2+Q_y^2=\langle\tilde Q\rangle_{\natural}.
 $$
-The determinant is the quaternionic norm, not its square. The $4\times4$ determinant is the square of this one, because the block is repeated twice.
+The determinant is the quaternionic norm, not its square. The $4\times4$ determinant of §*The Determinant* of that article is the square of this one, because the block is repeated twice.
 
 **Multiplicativity.** The determinant is multiplicative,
 $$
@@ -792,7 +804,7 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 
 ## Summary
 
-The $2\times2$ Pauli representation is the compression of the $4\times4$ one. The left regular matrix is $\mathrm I_2\otimes A$ and the right regular matrix is $A^{\mathsf T}\otimes\mathrm I_2$; the block $A=\mathsf M_2(\tilde Q)$ occurs twice in the left and the block $A^{\mathsf T}$ occurs twice in the right, and the second block is a copy. Keeping one block gives the $2\times2$ model.
+The $2\times2$ Pauli representation is the compression of the $4\times4$ one, and its continuation at the element size. The left regular matrix is $\mathrm I_2\otimes A$ and the right regular matrix is $A^{\mathsf T}\otimes\mathrm I_2$; the block $A=\mathsf M_2(\tilde Q)$ occurs twice in the left and the block $A^{\mathsf T}$ occurs twice in the right, and the second block is a copy. Keeping one block gives the $2\times2$ model.
 
 The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
 

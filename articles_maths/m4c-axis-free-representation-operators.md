@@ -644,7 +644,7 @@ c=\begin{pmatrix}1\\1\\0\\0\end{pmatrix}
 $$
 of rank one. It is a unit of determinant $16$ and length one. The two examples together show that neither matrix rank nor determinant decides the length.
 
-**Where the frame question is answered.** The coefficient array $c(M)$ is computed from the sixteen products of four *basis elements*, so its entries move with the frame while its rank does not: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, and a change of the display alone leaves $c$ untouched. The proof, the two frames of the corpus and the sixteen lengths of the matrix units are §*The Change of Frame Is a Congruence* and §*The Sixteen Lengths* of *$M_4(\mathbb{C})$ Axis-Free Representation : The Matrix Product, the Trace and the Determinant*. What the length theorem needs from that is one line: the rank of a congruence is the rank of the array.
+**Where the frame question is answered.** The coefficient array $c(M)$ is computed from the sixteen products of four *basis elements*, so its entries move with the frame while its rank does not: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, and a change of the display alone leaves $c$ untouched. The proof, the two frames of the corpus and the sixteen lengths of the matrix units are §*The Change of Frame Is a Congruence* and §*The Sixteen Lengths* of *$M_4(\mathbb{C})$ Pauli Representation : Operators*. What the length theorem needs from that is one line: the rank of a congruence is the rank of the array.
 
 ## The Plain Adjoint and the Types
 
@@ -806,7 +806,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 - The real slice: the real Segre cone, the real length, and the real forms of the complex cone. Does every real matrix of length $r$ have a real decomposition of length $r$? The rank argument says yes, but the explicit factors are not classified.
 - The physical operators of the corpus: which have length two or three, and whether the real structure of the axis-free basis makes their statements frame-independent.
 
-Two questions listed here in earlier editions are answered by §*The Coefficient Matrix and the Length* of *$M_4(\mathbb{C})$ Axis-Free Representation : The Matrix Product, the Trace and the Determinant*. The frame dependence of $c$ is §*The Change of Frame Is a Congruence* there, and the lengths of the sixteen units are §*The Sixteen Lengths* there. So only the identification of physical operators inside a stratum remains open.
+Two questions listed here in earlier editions are answered in *$M_4(\mathbb{C})$ Pauli Representation : Operators*. The frame dependence of $c$ is §*The Change of Frame Is a Congruence* there, and the lengths of the sixteen units are §*The Sixteen Lengths* there. So only the identification of physical operators inside a stratum remains open.
 
 ## Summary
 

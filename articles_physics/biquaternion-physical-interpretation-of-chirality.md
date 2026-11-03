@@ -16,7 +16,7 @@ The biquaternion algebra supplies the second sign only after one step: the centr
 | The nilpotents as matrix units and the column ideals | [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring-one-idempotent-and-n-1-nilpotents.html) |
 | The simple module, $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ and $\mathbb{B}\cong S\oplus S$ | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
 | The conjugate module, its real isomorphism and its complex inequivalence | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |
-| The central idempotents $e_\pm=\tfrac12(1\pm i\tilde\Xi_{\mathrm{ad}})$, the chirality $\chi=i\tilde\Xi_{\mathrm{ad}}$ and its action on $\Delta$ | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |
+| The central idempotents $e_\pm=\tfrac12(e_t\pm i\tilde\Xi_{\mathrm{ad}})$, the chirality $\chi=i\tilde\Xi_{\mathrm{ad}}$ and its action on $\Delta$ | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |
 | The invariant pairing $\beta$ and the mass operator $D_m$ | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |
 
 ## The Result in Brief
