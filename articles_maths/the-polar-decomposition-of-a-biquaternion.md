@@ -24,7 +24,7 @@ The article works in the algebra throughout. It gives the coordinate formula for
 
 The article treats the general case, on the whole algebra. It does not treat the refinement of the two factors into a scale, a central phase, a Hermitian boost and a unit real quaternion; nor the exponential polar decomposition; nor the spectral decomposition. Those are separate articles. The two factors here are the general ones, and the finer words are separate objects, not a rewriting of this pair.
 
-Off the cone the pair is the Cartan pair of the group of units: the Hermitian factor is positive definite, the isometry factor is $*$-unitary, and both projections are $e_t$. The refinement of that pair into four factors is *The Polar Decomposition of a N-Regular Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of a N-Degenerate Biquaternion*.
+Off the cone the pair is the Cartan pair of the group of units: the Hermitian factor is positive definite, the isometry factor is $*$-unitary, and both projections are $e_t$. The refinement of that pair into four factors is *The Polar Decomposition of an N-Regular Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of an N-Degenerate Biquaternion*.
 
 The conventions and the symbols are those of *Algebra and Element Conventions*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the two algebraic norms are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
@@ -493,4 +493,4 @@ The three statements to carry away are these. The formulas $\tilde Q_H=(\tilde Q
 - *Exponential Polar Decomposition of Biquaternions*, for the boundary limits of the four-factor word at the cone.
 - [The Polar Decomposition of an Operator of the Form](the-polar-decomposition-of-an-operator-of-the-form.html), for the operator polar decomposition that this article is not.
 - [The Zero-Divisor Cone and the Massless Spectrum](../articles_physics/the-zero-divisor-cone-and-the-massless-spectrum.html) and [Roots, Idempotents and Observables](../articles_physics/roots-idempotents-and-observables.html), for the physical reading of the cone as the massless boundary, which the rank-one case of this article supplies.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation of the corpus.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation of the corpus.

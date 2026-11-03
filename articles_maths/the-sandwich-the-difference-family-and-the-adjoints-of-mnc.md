@@ -279,5 +279,5 @@ The difference family $L_{A}-R_{B}$ is the general Sylvester operator, with kern
 - [The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$](the-two-sided-operators-and-the-segre-cone-of-mnc.html), for the cone and its two boundaries.
 - [The One-Sided Operators of $M_n(\mathbb{C})$](the-one-sided-operators-of-mnc.html), for the two copies and the flip.
 - [The Length and the Two Ranks on $M_n(\mathbb{C})$](the-length-and-the-two-ranks-on-mnc.html), for the invariance of the length under the dagger.
-- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the plain adjoint and the three types at $n=2$.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the plain adjoint and the three types at $n=2$.
 - [The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$](the-sylvester-operator-and-the-kronecker-sum-of-m4c.html), for the difference operator at $n=4$.

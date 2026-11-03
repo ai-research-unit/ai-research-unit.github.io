@@ -47,7 +47,7 @@ The article proves the bridge, the kernel identity, the two unitarity criteria a
 | The Fourier kernel, the root-adapted basis and the factorization into complex transforms | [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), §*The Fourier Kernel* and §*Factorization into Complex Fourier Transforms* |
 | The expansion of every biquaternion in the eigenbasis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*Expansion of Every Biquaternion* |
 | The three families of roots of $-1$ | [Idempotents](idempotents.html), §*The Roots of Minus One* |
-| The conjugations $\natural$ and $*$ | [Conventions in Mathematics](conventions-in-mathematics.html), §*The Conjugations* |
+| The conjugations $\natural$ and $*$ | [Conventions in Mathematics](algebra-and-element-conventions.html), §*The Conjugations* |
 
 The table is the contract: every statement below is either an identity proved here or a restatement of one of these rows.
 
@@ -514,4 +514,4 @@ On the cone there is no root and no frequency. The exponential is the truncated 
 - *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the companion dictionary between the exponential and the spectrum.
 - [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the physical interpretation of the two cases.
 - [Derivatives, Fields and Transforms](../articles_physics/derivatives-fields-and-transforms.html), for the root as the clock and the frequency as its rate.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the conjugations.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation and the conjugations.

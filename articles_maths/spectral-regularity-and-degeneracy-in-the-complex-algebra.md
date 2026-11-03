@@ -191,7 +191,7 @@ Every element of $\mathbb{C}$ is semisimple. The minimal polynomial is $X-t$ on 
 - [Relations between the Modulus and Spectral Regularity and Degeneracy](relations-between-the-modulus-and-spectral-regularity-and-degeneracy.html), for the comparison of $|z|^2$ and $b^2$, the nesting of the two regular sets and the chain of invariants.
 - [The Three Sectors of the Complex Algebra](the-three-sectors-of-the-complex-algebra.html), for the partition $\Sigma_{11},\Sigma_{10},\Sigma_{00}$ and the empty cell $\Sigma_{01}$.
 - [Complex Algebra](complex-algebra.html), for the definition, the conjugation and the real and imaginary subspaces.
-- [$M_2(\mathbb{R})$ Cayley Representation](c-m2r-cayley-representation.html), for the Cayley matrix, its determinant and its trace.
+- [$M_2(\mathbb{R})$ Cayley Representation](m2r-cayley-representation.html), for the Cayley matrix, its determinant and its trace.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, its multiplicativity and the criterion $z\neq0$.
 - [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the general definitions of spectrum, spectral idempotent and semisimplicity.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the semisimple and nilpotent parts in the general theory.

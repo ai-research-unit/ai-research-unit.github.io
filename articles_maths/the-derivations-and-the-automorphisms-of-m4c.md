@@ -185,11 +185,11 @@ Every derivation of $M_4(\mathbb{C})$ is inner, $\operatorname{Der}(M_4)=\operat
 
 ## Further Reading
 
-- [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4-and-sl4-of-m4c.html), for $\mathfrak{sl}_4$ and its root decomposition.
+- [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4c-and-sl4c-of-m4c.html), for $\mathfrak{sl}_4$ and its root decomposition.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the derivations on the Peirce blocks.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the action of $PGL_4$.
-- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the two commuting $\mathfrak{sl}_2$'s.
-- [The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$](the-real-forms-of-m4c.html), for the real and quaternionic structures.
+- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the two commuting $\mathfrak{sl}_2$'s.
+- [The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$](the-quaternionic-structure-and-the-real-forms-of-m4c.html), for the real and quaternionic structures.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the $*$-structures.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Wedderburn's and Skolem–Noether's theorems.
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for the derivations of matrix algebras.

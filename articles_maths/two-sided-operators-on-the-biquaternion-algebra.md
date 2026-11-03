@@ -451,5 +451,5 @@ The plain adjoint exchanges the parameters, $(L_{\tilde Q}R_{\tilde P})^{\approx
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the association of the one-sided families and the four adjoints.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the plain form and its quadratic form.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the algebra's matrix units used in the generation theorem.
-- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the operator-space matrix units and the Peirce change.
-- [Operator Family Conventions](conventions-of-the-operator-families.html), for the letters, the slots and the set names.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the operator-space matrix units and the Peirce change.
+- [Operator Family Conventions](operator-family-conventions.html), for the letters, the slots and the set names.

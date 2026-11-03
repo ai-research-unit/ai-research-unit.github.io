@@ -12,9 +12,9 @@ The article states the correspondence, computes the standard optical parameters 
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The element image $\mathsf{M}_2(\tilde J)$ and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html) |
+| The element image $\mathsf{M}_2(\tilde J)$ and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | The Cartan pairing $\tilde J=\tilde J_H\tilde J_0$, the positive factor and the $*$-unitary factor | *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions* |
-| The generalized pairing on the cone, the partial isometry and its projections | [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
+| The generalized pairing on the cone, the partial isometry and its projections | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 | The eigenvalue decomposition, the eigenprojections and the rank-one case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The norm, the invertibility criterion and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The $*$-unitary group and its matrix model | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
@@ -282,10 +282,10 @@ The polarizer is the boundary case. It is a rank-one element, hence a zero divis
 
 - [Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html), for the Jones vector, the Stokes parameters and the coherency biquaternion.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the Cartan pairing in the corpus's notation and its comparison with the quaternion and Hamilton pairings.
-- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the state that an operator defines and its purity stratigraphy.
+- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the state that an operator defines and its purity stratigraphy.
 - [The Pauli Correspondence and the Matrix Image](the-pauli-correspondence-and-the-matrix-image.html), for the singular values of the amplitude and the determinant as a volume.
 - *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the theorem and its uniqueness.
-- [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the extension to the cone and the polarizer.
+- [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the extension to the cone and the polarizer.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectral decomposition of the factors.
 - [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the partition that the polarizer sits on.
 - Max Born and Emil Wolf, *Principles of Optics* (Cambridge, 7th edn, 1999), for the Jones calculus, the Stokes parameters and the polar decomposition of optical elements.

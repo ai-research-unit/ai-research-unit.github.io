@@ -314,4 +314,4 @@ The Hermitian sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^
 - [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the matrix verification in the regular model.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the adjoints of the sandwich.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the criterion on the parameter and the action on the six subspaces.
-- [Conventions of the Operator Families](conventions-of-the-operator-families.html), for the names of the families and the sets.
+- [Conventions of the Operator Families](operator-family-conventions.html), for the names of the families and the sets.

@@ -656,4 +656,4 @@ Read down a column for one algebra and across a row for one concept. The first t
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the modulus, the torus and the uniqueness of the pair.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
 - *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the noncommutative analogue.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

@@ -187,7 +187,7 @@ The chain runs from the element to $(\nu,\delta)$, then to the binary pair $(\nu
 
 - [Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-reduced-biquaternion-algebra.html), for the spectral criterion, the eigenspaces and the scalar stratum.
 - [The Four Sectors of the Reduced Biquaternion Algebra](the-four-sectors-of-the-reduced-biquaternion-algebra.html), for the four cells, their dimensions and their closures.
-- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the reduced norm and the unit criterion.
-- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two punctured idempotent lines.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), for the reduced norm and the unit criterion.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two punctured idempotent lines.
 - [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the spectrum and the spectral decomposition.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the non-commutative comparison and its finer chain of invariants.

@@ -1,4 +1,4 @@
-# __Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion__
+# __Worked Examples of Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion__
 
 ## Introduction
 
@@ -801,9 +801,9 @@ The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 
 
 ## Further Reading
 
-- [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the theorem, the proofs and the spectral reading.
-- [Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the companion sector and its worked examples.
-- [Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the degenerate cases.
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem.
+- [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the theorem, the proofs and the spectral reading.
+- [Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the companion sector and its worked examples.
+- [Worked Examples of Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the degenerate cases.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the eigenbasis and the spectral idempotents.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

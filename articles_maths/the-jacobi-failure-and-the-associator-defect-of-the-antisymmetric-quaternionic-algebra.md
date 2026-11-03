@@ -165,7 +165,7 @@ The cyclic sum of the antisymmetric quaternionic multiplication has the closed f
 ## Further Reading
 
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the associator criterion, the Lie-admissible algebras and the cyclic identity
-- [The Associator and the Ternary Product of the Quaternionic Product](the-associator-and-the-ternary-product-of-the-quaternionic-product.html), for the associator of the parent product, its closed form and the count of the basis triples
+- [The Associator and the Ternary Product of the Quaternionic Product of the Biquaternions](the-associator-and-the-ternary-product-of-the-quaternionic-product-of-the-biquaternions.html), for the associator of the parent product, its closed form and the count of the basis triples
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its table and its image
 - [The Adjoint Operators of the Antisymmetric Quaternionic Algebra](the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.html), for the deviation $D$ and the derivations of the block
 - [Lie Algebras of Sesqualgebras](lie-algebras-of-sesqualgebras.html), for the obstruction that causes the other two Jacobi failures of the twelve

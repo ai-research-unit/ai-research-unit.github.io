@@ -369,4 +369,4 @@ The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the 
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the spectral theorem for diagonalisable matrices.
 - [Interpolation Theory](interpolation-theory.html), for the Lagrange interpolation formula in one variable.
 - [Flag Manifolds](flag-manifolds.html), for the flag variety, its dimension and its homogeneous description.
-- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the general construction at order $n$.
+- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-mnc.html), for the general construction at order $n$.

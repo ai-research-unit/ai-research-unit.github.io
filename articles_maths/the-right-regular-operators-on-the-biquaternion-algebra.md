@@ -266,4 +266,4 @@ In the Peirce frame the right matrix is the transpose of the left one conjugated
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the commutation and the two centralisers.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$ transposed here.
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient space and the natural conjugation.
-- [Operator Family Conventions](conventions-of-the-operator-families.html), for the letter $R$, the slots and the set names.
+- [Operator Family Conventions](operator-family-conventions.html), for the letter $R$, the slots and the set names.

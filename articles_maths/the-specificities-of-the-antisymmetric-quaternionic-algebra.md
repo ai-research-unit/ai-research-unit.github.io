@@ -230,7 +230,7 @@ no Peirce calculus.
 ## Further Reading
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the criterion of left alternativity, the model of the family
-- [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the first border case, where the projectors are indexed by the plain idempotents
+- [The Specificities of the General Quaternionic Algebra of the Biquaternions](the-specificities-of-the-general-quaternionic-algebra-of-the-biquaternions.html), for the first border case, where the projectors are indexed by the plain idempotents
 - [The Specificities of the Symmetric Quaternionic Algebra](the-specificities-of-the-symmetric-quaternionic-algebra.html), for the second border case, the hyperplane of rank-one projections onto the centre
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its image, the one-sided action of the unit and the absence of a unit
 - [The Adjoint Operators of the Antisymmetric Quaternionic Algebra](the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.html), for the operators $L_{\tilde Q_4}$, their matrices, their ranks and the elements for which the rank drops

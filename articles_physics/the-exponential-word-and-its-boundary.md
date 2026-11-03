@@ -6,7 +6,7 @@ Every biquaternion off the zero-divisor cone is an ordered product of four expon
 
 The parametrization fails in two ways, and they are different. The four exponents do not add: the exponential of their sum is not the product, because the boost and the rotor do not commute. And the parametrization does not reach the cone: on the cone the scale collapses and the rapidity diverges, so the word has boundary values rather than a value.
 
-The article reads the word, the defect and the boundary. The decomposition, the defect and the boundary limits are those of *Exponential Polar Decomposition of Biquaternions* and *The Polar Decomposition of a N-Regular Biquaternion*. The article owns the physical reading and its limits.
+The article reads the word, the defect and the boundary. The decomposition, the defect and the boundary limits are those of *Exponential Polar Decomposition of Biquaternions* and *The Polar Decomposition of an N-Regular Biquaternion*. The article owns the physical reading and its limits.
 
 $$
 \tilde Q=r\,e^{i\alpha}\,\tilde B\,\tilde u_{\mathrm r},
@@ -22,7 +22,7 @@ with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\ve
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The four factors, their ranges and the uniqueness of the word | [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| The four factors, their ranges and the uniqueness of the word | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | The exponential word, the defect and the single logarithm | *Exponential Polar Decomposition of Biquaternions* |
 | The kernel, the fibre and the section of the word map | *Exponential Polar Decomposition of Biquaternions* |
 | The two strata of the zero-divisor cone | *Exponential Polar Decomposition of Biquaternions* |
@@ -268,7 +268,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 
 ## Further Reading
 
-- [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, their ranges and the uniqueness.
+- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, their ranges and the uniqueness.
 - *Exponential Polar Decomposition of Biquaternions*, for the defect, the boundary limits and the two strata.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the kernel.
 - [Idempotents](../articles_maths/idempotents.html), for the minimal idempotents.

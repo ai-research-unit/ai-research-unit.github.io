@@ -431,8 +431,8 @@ with $G_5=iG_0G_1G_2G_3$, and the complexified even algebra $M_2\oplus M_2$. The
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five gammas, the Clifford basis and the frame.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_{e_\mu} R_{e_\nu}$ and their multiplication table.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for $L_a$, $R_a$ and $L_{a}R_{b}$ on the sixteen-dimensional algebra.
-- [The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$](the-real-forms-of-m4c.html), for the antilinear involutions and the real forms.
+- [The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$](the-quaternionic-structure-and-the-real-forms-of-m4c.html), for the antilinear involutions and the real forms.
 - [The Sesquilinear Sandwich on the Biquaternion](the-sesquilinear-sandwich-on-the-biquaternion.html), for the star in the argument of a sandwich.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Frame*.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the bar, the natural conjugation and the star.
+- [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Frame*.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the bar, the natural conjugation and the star.
 - [The Pin and the Spin Groups with Signed Hermitian Adjoint](the-pin-and-spin-groups-with-signed-hermitian-adjoint.html), for the group of the antilinear operations.

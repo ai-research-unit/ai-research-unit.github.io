@@ -128,5 +128,5 @@ The split-biquaternion Julia set is the boundary of the product of two quaternio
 - [The Split-Biquaternion Quadratic Family](the-split-biquaternion-quadratic-family.html), for the reduction, the escape lemma and the connectedness criterion.
 - [The Quaternion Quadratic Map and Its Julia Sets](the-quaternion-quadratic-map-and-its-julia-sets.html) and [The Slices of the Quaternion Julia Sets](the-slices-of-the-quaternion-julia-sets.html), for the two factors.
 - [The Quaternion Mandelbrot Set](the-quaternion-mandelbrot-set.html), for the connectedness interval and the parameter picture of a factor.
-- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the biquaternion coupling that the split side lacks.
+- [The Idempotent Decomposition and the Split Fractal of the Biquaternions](the-idempotent-decomposition-and-the-split-fractal-of-the-biquaternions.html), for the biquaternion coupling that the split side lacks.
 - [Fractal Geometry](fractal-geometry.html), for the product formula and the product topology used here.

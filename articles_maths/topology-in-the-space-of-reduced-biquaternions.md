@@ -102,9 +102,9 @@ The reduced biquaternion algebra carries the Euclidean topology of $\mathbb{R}^{
 
 ## Further Reading
 
-- [The Forms of the Algebra of the Reduced Biquaternions](the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the definiteness of $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$.
-- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the four products and the norms.
-- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two lines.
+- [The Forms of the Algebra of the Reduced Biquaternions](the-forms-of-the-algebra-of-the-reduced-biquaternions.html), for the definiteness of $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), for the four products and the norms.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two lines.
 - [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the metric, the unit sphere and the unit group as a topological group.
-- [Topology and Metric for Each of the Operations](topology-and-metric-for-each-of-the-operations-of-the-reduced-biquaternions.html), for the metric of each product.
+- [Topology and Metric for Each of the Operations](topology-and-metric-for-each-of-the-operations.html), for the metric of each product.
 - [Topology in the Space of Biquaternions](topology-in-the-space-of-biquaternions.html), for the non-commutative companion.

@@ -322,5 +322,5 @@ The article interprets the linear structure, the involutions, the four real-type
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group, its subgroups and its orbits.
 - [Subspaces and Decompositions](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces one by one, the three decompositions, the coordinate blocks and the intersection table.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions of the forms and the area pairing.
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the coordinate dictionary and the choice of the material sector.
+- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the coordinate dictionary and the choice of the material sector.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sectors.

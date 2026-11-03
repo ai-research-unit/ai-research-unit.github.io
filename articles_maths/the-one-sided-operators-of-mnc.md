@@ -193,6 +193,6 @@ The regular matrix is never nonderogatory for $n\ge2$, because its minimal polyn
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge, 1991), for the Kronecker products, the identities $(\mathrm I\otimes A)$ and $(B^{\mathsf T}\otimes\mathrm I)$, and the invariants of a Kronecker product.
 - Paul Richard Halmos, *Finite-Dimensional Vector Spaces* (Springer, 1974), for the regular representation and the double centraliser.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the algebra, its centre and its trace.
-- [The Regular Representation in Dimension $n$](the-regular-representation-in-n-dimensions.html), for the abstract construction and its ladder.
+- [The Regular Representation in Dimension $n$](the-regular-representation-in-dimension-n.html), for the abstract construction and its ladder.
 - [The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$](the-two-sided-operators-and-the-segre-cone-of-mnc.html), for the products of the two copies.
-- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same matrices at $n=2$ in the Peirce frame.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the same matrices at $n=2$ in the Peirce frame.

@@ -152,4 +152,4 @@ The split-biquaternion quadratic family is, by the centrality of the idempotents
 - [Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html) and [Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html), for the norm and the ideals.
 - [The Quaternion Quadratic Map and Its Julia Sets](the-quaternion-quadratic-map-and-its-julia-sets.html), [The Escape Radius and the Green's Function for Quaternions](the-escape-radius-and-the-greens-function-for-quaternions.html) and [The Quaternion Mandelbrot Set](the-quaternion-mandelbrot-set.html), for the quaternion theory read here on two factors.
 - [The Split-Biquaternion Julia Sets](the-split-biquaternion-julia-sets.html), for the fractal structure of the product.
-- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the biquaternion contrast in which the splitting is only a slice.
+- [The Idempotent Decomposition and the Split Fractal of the Biquaternions](the-idempotent-decomposition-and-the-split-fractal-of-the-biquaternions.html), for the biquaternion contrast in which the splitting is only a slice.

@@ -279,7 +279,7 @@ $$
 
 which is polynomial in $\theta$; it grows even when $Q_t$ is purely imaginary. The flow is never oscillatory, and no Fourier basis is attached to the element.
 
-**Polar decomposition.** It exists throughout the sector, because $\langle\tilde Q\rangle_{\natural}\neq0$ and the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}\neq0$ is defined; the modulus–unit polar decomposition of *The Polar Decomposition of a N-Regular Biquaternion* applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.
+**Polar decomposition.** It exists throughout the sector, because $\langle\tilde Q\rangle_{\natural}\neq0$ and the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}\neq0$ is defined; the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.
 
 **One-sided operators.** Since $\tilde Q$ is a unit, $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$, with zero kernel, and both annihilators are $\{0\}$. The spectral defectivity is invisible to the one-sided structure: on $\Sigma_{10}$ and on $\Sigma_{11}$ alike, both multiplications are invertible. No ideal-theoretic condition can detect a repeated eigenvalue.
 
@@ -375,5 +375,5 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 - [The Spectrum](the-spectrum.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners.
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

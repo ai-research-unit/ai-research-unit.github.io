@@ -133,4 +133,4 @@ The powers of the general plain sesqualgebra are $\tilde Q_1^{\star k}=\tilde Q_
 - [Zero Divisors of the General Plain Sesqualgebra](zero-divisors-of-the-general-plain-sesqualgebra.html), for the zero-divisor set and the pure and non-pure families that the nilpotents refine.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the square-zero set of the block, the origin alone.
 - [Nilpotents](nilpotents.html), for the parent's nilpotents, the pure isotropic cone of index two.
-- [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the model in which the nilpotents are the rank-one traceless matrices.
+- [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html), for the model in which the nilpotents are the rank-one traceless matrices.

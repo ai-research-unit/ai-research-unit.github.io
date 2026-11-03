@@ -193,7 +193,7 @@ one of the three with both properties.
 ## Further Reading
 
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
-- [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the operation, its table and its anti-automorphism.
+- [Introduction to the General Quaternionic Algebra of the Biquaternions](introduction-to-the-general-quaternionic-algebra-of-the-biquaternions.html), for the operation, its table and its anti-automorphism.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), above this article in this category, for the criterion, the two families and the comparison with the other general products.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the plain algebra, the cone and the rank-one matrix reading.
 - [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html), the block whose annihilator is a hyperplane for every nonzero element.

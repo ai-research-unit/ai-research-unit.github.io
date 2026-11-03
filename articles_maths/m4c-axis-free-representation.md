@@ -675,5 +675,5 @@ The sixteen products $L_{e_\mu}^{\mathrm{axf}} R_{e_\nu}^{\mathrm{axf}}$ are an 
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and the three decompositions.
 - [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the four conjugations and the coordinate systems.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
-- [$M_4(\mathbb{C})$ Pauli Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the same content in the standard Peirce frame, the pure swap stitch and the tensor displays.
+- [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for the same content in the standard Peirce frame, the pure swap stitch and the tensor displays.
 - [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the operators on the algebra and the sixteen products in the axis-free basis.

@@ -177,9 +177,9 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html), for orthogonality, primitivity and the ideals an idempotent generates.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the sectors, the conjugations and the trace.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the sector, the Bloch ball and the Born pairing.
-- [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), for the Born formula and its trace reading.
-- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the mixed states and the ball.
-- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the three actions and the operator reading of the multiplication.
+- [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), for the Born formula and its trace reading.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the mixed states and the ball.
+- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the three actions and the operator reading of the multiplication.
 - [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the general value and the failure of the square-root formula off the cone.
 - [The Local Complex Structure and the Speed of Light](the-local-complex-structure-and-the-speed-of-light.html), for the local complex structure of the material sector and the speed of light.
 - [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the $*$-unitary root $\tilde S\tilde S^{*}=e_t$ of a single mode.

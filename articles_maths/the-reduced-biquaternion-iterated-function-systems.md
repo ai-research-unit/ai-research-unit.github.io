@@ -125,9 +125,9 @@ An affine map of the reduced biquaternion algebra is the pair of two complex aff
 
 ## Further Reading
 
-- [$M_2(\mathbb{C})$ Reduced Representation : Operators](rb-m2c-reduced-representation-operators.html), for the operators and their norms.
-- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the branching cone.
-- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.html), above this article, for the attractor as the matched set of the coding space.
+- [$M_2(\mathbb{C})$ Reduced Representation : Operators](m2c-reduced-representation-operators.html), for the operators and their norms.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), above this article, for the branching cone.
+- [The Idempotent Decomposition and the Split Fractal of the Reduced Biquaternions](the-idempotent-decomposition-and-the-split-fractal-of-the-reduced-biquaternions.html), above this article, for the attractor as the matched set of the coding space.
 - [The Reduced Biquaternion Quadratic Map and Its Julia Sets](the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html), above this article, for the quadratic family.
 - [The Hausdorff Dimension of the Reduced Biquaternion Julia Sets](the-hausdorff-dimension-of-the-reduced-biquaternion-julia-sets.html), below this article, for the dimension of the attractors of the quadratic family.
 - [The Biquaternion Iterated Function Systems](the-biquaternion-iterated-function-systems.html), for the companion in which the left and the right affine systems differ.

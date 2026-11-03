@@ -291,8 +291,8 @@ The comparison with the neighbouring algebras is the comparison of discriminants
 
 - [Dual-Numbers Algebra](dual-numbers-algebra.html), for the algebra, the two conjugations, the maximal ideal and the group of units.
 - [Dual-Numbers Norm and Invertibility](dual-numbers-norm-and-invertibility.html), for the norm, its degeneracy, the Euclidean form and the invertibility criterion.
-- [$M_2(R)$ Triangular Representation](dual-m2r-triangular-representation.html), for the matrix model, the characteristic polynomial and the transpose convention.
-- [Dual-Numbers Linear Representations](dual-numbers-element-representations.html), for the regular representation in the basis $(1,\varepsilon)$.
+- [$M_2(R)$ Triangular Representation](m2r-triangular-representation.html), for the matrix model, the characteristic polynomial and the transpose convention.
+- [Dual-Numbers Linear Representations](dual-numbers-linear-representations.html), for the regular representation in the basis $(1,\varepsilon)$.
 - [The Defective Sector of the Dual-Number Algebra](the-defective-sector-of-the-dual-number-algebra.html), for the defect, its two strata, the module picture and the polar decomposition.
 - [Relations between the Dual Norm and Spectral Degeneracy](relations-between-the-dual-norm-and-spectral-degeneracy.html), for the comparison of the norm and the defect and the chain of invariants.
 - [The Spectrum](the-spectrum.html), for the same distinction on the biquaternion spectral-degenerate cone.

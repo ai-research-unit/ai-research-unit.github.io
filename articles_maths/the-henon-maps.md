@@ -200,12 +200,12 @@ The degree of $H^n$ is $2^n$, the dynamical degree is $2$, and the topological e
 
 ## Further Reading
 
-- [Duo-Complex Numbers](the-duo-complex-numbers.html), for the space and the polynomial maps.
-- [The Affine and Polynomial Automorphisms of $\mathbb{C}^2$](the-affine-and-polynomial-automorphisms-of-the-duo-complex-numbers.html), the previous article, for the degree, the tame automorphisms and the Jacobian.
-- [The Topology of $\mathbb{C}^2$](the-topology-of-the-duo-complex-numbers.html), for the compactness and the escape to infinity.
-- [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder.html), for the model domains and the boundary geometry.
+- [Duo-Complex Numbers](duo-complex-numbers.html), for the space and the polynomial maps.
+- [The Affine and Polynomial Automorphisms of $\mathbb{C}^2$](the-affine-and-polynomial-automorphisms-of-c2.html), the previous article, for the degree, the tame automorphisms and the Jacobian.
+- [The Topology of $\mathbb{C}^2$](the-topology-of-c2.html), for the compactness and the escape to infinity.
+- [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder-in-c2.html), for the model domains and the boundary geometry.
 - [Hyperbolic Dynamics and Anosov Systems](hyperbolic-dynamics-and-anosov-systems.html), for the horseshoe and the uniformly hyperbolic theory.
 - [Several Complex Variables](several-complex-variables.html), for the plurisubharmonic Green functions and the currents.
 - [The Mandelbrot Set and the Quadratic Family](the-mandelbrot-set-and-the-quadratic-family.html), for the one-dimensional Mandelbrot set and the Julia sets.
 - [The Dual-Number Quadratic Family](the-dual-number-quadratic-family.html), for the degenerate analogue in the dual numbers.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the glyphs and the typographic conventions of the corpus.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the glyphs and the typographic conventions of the corpus.

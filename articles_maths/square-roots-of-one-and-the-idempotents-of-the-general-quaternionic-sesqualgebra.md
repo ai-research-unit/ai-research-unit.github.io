@@ -387,6 +387,6 @@ and each nontrivial idempotent has central square $1$, so that it is a unit of t
 - [Zero Divisors of the General Quaternionic Sesqualgebra](zero-divisors-of-the-general-quaternionic-sesqualgebra.html), for the zero-divisor cone and the criterion used on the roots of one and on the idempotents of the other products.
 - [Norm and Invertibility in the General Quaternionic Sesqualgebra](norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.html), for the plain criterion of invertibility $C\neq0$.
 - [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the absence of a unit that makes the halving map fail.
-- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$ and the Krein scalar part.
+- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-general-quaternionic-sesquilinear-product-and-the-two-halves.html), for the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$ and the Krein scalar part.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the definition of the four products and their scalar parts.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the article format.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation and the article format.

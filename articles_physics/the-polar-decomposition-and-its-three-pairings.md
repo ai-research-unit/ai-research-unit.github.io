@@ -21,12 +21,12 @@ Two distinctions organise the article and are worth naming at the start. A **pai
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The four factors, their ranges, their dimensions, the theorem and the uniqueness | [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| The four factors, their ranges, their dimensions, the theorem and the uniqueness | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | The exponential word, the logarithm, the kernel and the boundary limits | *Exponential Polar Decomposition of Biquaternions* |
 | The quaternion pairing, its construction and its domain | *The Quaternion Pairing of the Polar Decomposition of Biquaternions* |
 | The Hamilton pairing, the complex modulus and the complex angle | *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions* |
 | The Cartan pairing and the matrix polar decomposition | *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions* |
-| The generalized pairing on the null cone | [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
+| The generalized pairing on the null cone | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 | The action of the four factors on the sectors and the six remarkable subspaces | [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html) |
 
 ## The Four Factors
@@ -320,14 +320,14 @@ The pairings read the same data under different headings, and the readings are d
 ## Further Reading
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the general H-norm two-factor decomposition and the partial isometry on the cone.
-- [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the theorem and the uniqueness.
+- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the theorem and the uniqueness.
 - *Exponential Polar Decomposition of Biquaternions*, for the exponential word, the logarithm, the kernel and the boundary limits.
 - *The Quaternion Pairing of the Polar Decomposition of Biquaternions*, for the real quaternion modulus and the angle.
 - *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, for the complex axis-angle.
 - *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the amplitude–phase split.
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html), for the sector action, the cross-term signs and the preservation table.
-- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the state defined by an operator and the modular reading.
+- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the state defined by an operator and the modular reading.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass shell and the complex angle.
 - [The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers](the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html), for the Cartan pair as diattenuator and retarder, and the polarizer as its cone case.
 - [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the Cartan pair as strength and backaction and the effect spectrum $r^{2}e^{\pm\psi_w}$.
-- [Conventions of the Norms and the Pairings](conventions-of-the-norms-and-the-pairings.html), §*The Polar Word and the Three Pairings*, for the frozen notation and the domains.
+- [Conventions of the Norms and the Pairings](norm-and-pairing-conventions.html), §*The Polar Word and the Three Pairings*, for the frozen notation and the domains.

@@ -173,7 +173,7 @@ The Euclidean topology of the reduced biquaternion algebra is the topology of th
 ## Further Reading
 
 - [Topology in the Space of Reduced Biquaternions](topology-in-the-space-of-reduced-biquaternions.html), for the norm, the topology and the continuity of the products.
-- [Topology and Metric for Each of the Operations](topology-and-metric-for-each-of-the-operations-of-the-reduced-biquaternions.html), for the metric of each product.
-- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two lines.
-- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit group.
+- [Topology and Metric for Each of the Operations](topology-and-metric-for-each-of-the-operations.html), for the metric of each product.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two lines.
+- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html), for the unit group.
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the non-commutative companion and its zero-divisor cone.

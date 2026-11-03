@@ -151,5 +151,5 @@ The invariant bilinear forms of the block, the $\beta$ with $\beta(\tilde Q_1\di
 - [The Adjoint Operators of the Antisymmetric Quaternionic Algebra](the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.html), for the matrix of the operator, its trace and the derivation of the operator trace form
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the quaternion form $\langle\cdot\rangle_{\natural}$ and the forms of the parent algebra
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms of the associative algebra $\mathbb{B}$
-- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the invariant form that the adjacent Lie case carries and this block does not
+- [The Killing Form of the Antisymmetric Plain Algebra of the Biquaternions](the-killing-form-of-the-antisymmetric-plain-algebra-of-the-biquaternions.html), for the invariant form that the adjacent Lie case carries and this block does not
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the scalar and vector lines of the remarkable subspaces

@@ -859,9 +859,9 @@ In one line: every two-sided operator is a single product of one left and one ri
 ## Further Reading
 
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the frame, the left and right matrices and the six subspaces.
-- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same operators in the standard Peirce frame.
-- [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-standard-peirce-representation-operators.html), for the Peirce frame where a two-sided operator is a pair of $2\times2$ matrices and the display is $B^{\mathsf T}\otimes A$.
-- [$M_4(\mathbb{C})$ Pauli Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the pure swap stitch and the tensor displays.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the same operators in the standard Peirce frame.
+- [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-pauli-representation-operators.html), for the Peirce frame where a two-sided operator is a pair of $2\times2$ matrices and the display is $B^{\mathsf T}\otimes A$.
+- [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for the frame, the pure swap stitch and the tensor displays.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for $L^{\mathrm{axf}}$ and the four left matrices.
@@ -871,4 +871,4 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the intersection of the two one-sided copies.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the plain adjoint and its comparison with the other adjoints.
 - [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde P=\tilde Q^{*}$.
-- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the four left and four right matrices and the sixteen cells entry by entry.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the four left and four right matrices and the sixteen cells entry by entry.

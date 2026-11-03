@@ -241,5 +241,5 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 - [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the table $L_{e_t}R_{e_t}=I$, the pseudoscalar cell $L_{e_t}R_{\vec e_z}$ and the grades of the other fourteen.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the projectors $P_\pm$ and the chiral blocks.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the trace form and the Hermitian structure.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the real-linear embedding and the explicit matrices, §*The Clifford Structure and the Frame*.
+- [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the real-linear embedding and the explicit matrices, §*The Clifford Structure and the Frame*.
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the bar, the star and the two Clifford dictionaries.

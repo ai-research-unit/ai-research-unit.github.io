@@ -159,7 +159,7 @@ The reduced biquaternion algebra $\mathbb{B}_{\mathrm r}=\mathbb{C}[j]/(j^{2}-1)
 
 ## Further Reading
 
-- [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the algebra and its product.
+- [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-algebra-of-the-reduced-biquaternions.html), for the algebra and its product.
 - [The Peirce Basis of the Reduced Biquaternion Algebra](the-peirce-basis-of-the-reduced-biquaternion-algebra.html), for the canonical basis.
 - [Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-reduced-biquaternion-algebra.html), for the degenerate spinor.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the nondegenerate case.

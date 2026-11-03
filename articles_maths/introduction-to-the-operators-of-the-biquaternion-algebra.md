@@ -405,7 +405,7 @@ The same two switches are read on one operator, with the conjugation in the righ
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations and their group
 - [The Signed Sandwich on a Clifford Algebra](the-signed-sandwich-on-a-clifford-algebra.html), for the ordinary sandwich, its minus sign and the repair by the grade involution
 - [Two-Sided Operators with the Signed Product](two-sided-operators-with-the-signed-product.html), for the signed family, its twisted composition law and its coset structure
-- [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the parameter insertion in the biquaternion model
+- [Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions](two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html), for the parameter insertion in the biquaternion model
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the plain family that the right factors twist, and its criteria
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four general products read on the remarkable real subspaces
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the parity, the determinant and the Lorentz group

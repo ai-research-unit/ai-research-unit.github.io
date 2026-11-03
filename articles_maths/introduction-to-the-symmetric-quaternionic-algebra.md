@@ -223,7 +223,7 @@ The symmetric part of the general quaternionic product $\tilde Q_1^{\natural}\ti
 ## Further Reading
 
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the splitting that produces the operation.
-- [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the parent product and its scalar–vector form.
+- [Introduction to the General Quaternionic Algebra of the Biquaternions](introduction-to-the-general-quaternionic-algebra-of-the-biquaternions.html), for the parent product and its scalar–vector form.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the row of $\tilde Q_1\bullet_{\natural}\tilde Q_2$ in the catalogue.
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the other half of the row.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) and [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm form, its polarisation and its isotropic cone.

@@ -565,4 +565,4 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 - [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html), the parent of this exercise.
 - [The Foldy–Wouthuysen Transformation in Biquaternionic Form](the-foldy-wouthuysen-transformation-in-biquaternionic-form.html), for the transformation in the algebra.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the sector structure.
-- [Operator and Calculus Conventions](conventions-of-the-operators-and-the-calculus.html), for the cell calculus.
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the cell calculus.

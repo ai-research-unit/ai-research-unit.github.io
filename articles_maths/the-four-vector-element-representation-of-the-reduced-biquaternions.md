@@ -179,6 +179,6 @@ The reduced biquaternion element is a real quadruple $\breve Q=(q_{\blacktriangl
 
 - [Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$](reduced-biquaternions-as-a-vector-space-over-r-and-c.html), for the two scalar systems and the two coordinate readings.
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), for the multiplication table in the abstract.
-- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the conjugations and their fixed spaces.
-- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the four products and the norms.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the coordinate planes.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), for the conjugations and their fixed spaces.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), for the four products and the norms.
+- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the coordinate planes.

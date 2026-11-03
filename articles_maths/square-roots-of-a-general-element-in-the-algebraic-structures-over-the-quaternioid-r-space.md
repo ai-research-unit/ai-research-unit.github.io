@@ -166,9 +166,9 @@ The root of $0$ exists for all three companion structures, and it is the origin 
 - [The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](the-algebraic-structures-over-the-quaternioid-r-space.html), for the three companion names and the class of each.
 - [Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-quaternioid-r-space.html), for the root, the central value and the general vocabulary.
 - [The 2 Forms over the Quaternioid $\mathbb{R}$ Space](the-2-forms-over-the-quaternioid-r-space.html), for the plain form and the quaternion form.
-- [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra-of-quaternioid.html), for the general quaternionic product and its class.
-- [Introduction to the Symmetric Plain Algebra](introduction-to-the-symmetric-plain-algebra-of-quaternioid.html), for the Jordan product and its class.
-- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra-of-quaternioid.html), for the cross product and the vanishing square.
+- [Introduction to the General Quaternionic Algebra of the Quaternions](introduction-to-the-general-quaternionic-algebra-of-the-quaternions.html), for the general quaternionic product and its class.
+- [Introduction to the Symmetric Plain Algebra of the Quaternions](introduction-to-the-symmetric-plain-algebra-of-the-quaternions.html), for the Jordan product and its class.
+- [Introduction to the Antisymmetric Plain Algebra of the Quaternions](introduction-to-the-antisymmetric-plain-algebra-of-the-quaternions.html), for the cross product and the vanishing square.
 - [Square Roots of a General Element in the Quaternion Algebra](square-roots-of-a-general-element-in-the-quaternion-algebra.html), in the *Quaternions* category, for the algebra-product root at the general value.
 - [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html) and [Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](zero-divisors-in-the-algebraic-structures-over-the-quaternioid-r-space.html), for the unit that every non-zero root is and the absence of zero divisors.
 - [Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.html), below this article in this category, for the roots of $0$ and the annihilating partners.

@@ -566,5 +566,5 @@ $$
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the operators $L_a,R_a,L_{a}R_{b}$ on the sixteen-dimensional algebra.
 - [The Coefficient Matrix of a Two-Sided Operator: A Worked Computation](the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html), for the sixteen traces, the rank and the factorisation of one matrix.
 - [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of the sandwich on the sixteen-dimensional algebra.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit chiral matrices of one frame, §*The Clifford Structure and the Frame*.
+- [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the explicit chiral matrices of one frame, §*The Clifford Structure and the Frame*.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.

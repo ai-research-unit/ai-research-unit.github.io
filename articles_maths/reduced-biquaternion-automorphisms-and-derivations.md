@@ -134,8 +134,8 @@ The reduced biquaternion algebra is the direct product $\mathbb{C}\Pi_+\oplus\ma
 ## Further Reading
 
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the multiplication, the idempotents and the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$.
-- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), above this article, for the bar, the tessarine sign, the star and the flat.
-- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the minimal two-sided ideals that an automorphism permutes.
-- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the units whose inner automorphisms are all trivial.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), above this article, for the bar, the tessarine sign, the star and the flat.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the minimal two-sided ideals that an automorphism permutes.
+- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the units whose inner automorphisms are all trivial.
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the companion in which the algebra is simple, the automorphisms over $\mathbb{C}$ are inner and the derivations are inner and three-dimensional.
 - [Split-Biquaternion Automorphisms and Derivations](split-biquaternion-automorphisms-and-derivations.html), for the split-complex companion.

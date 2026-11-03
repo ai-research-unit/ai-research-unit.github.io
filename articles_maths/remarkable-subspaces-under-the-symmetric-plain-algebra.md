@@ -191,4 +191,4 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the generic norm, the units and the isotropic cone.
 - *Idempotents of the General Plain Algebra*, for the idempotents and the pure states.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the Hermitian Jordan algebra $J(\mathbb{B})$ and the placement of the block.
-- [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html), for the isotropic cone of the block and the elements of square zero.
+- [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra of the Biquaternions](the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-the-biquaternions.html), for the isotropic cone of the block and the elements of square zero.

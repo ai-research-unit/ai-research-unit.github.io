@@ -174,8 +174,8 @@ The filled Julia set of the reduced biquaternion quadratic map is the product $K
 ## Further Reading
 
 - [The Reduced Biquaternion Quadratic Map and Its Julia Sets](the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html), above this article, for the map and the product fractal.
-- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.html), above this article, for the global decomposition behind the product rule.
+- [The Idempotent Decomposition and the Split Fractal of the Reduced Biquaternions](the-idempotent-decomposition-and-the-split-fractal-of-the-reduced-biquaternions.html), above this article, for the global decomposition behind the product rule.
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article, for the coordinates and the real subspace.
-- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), above this article, for the exchange of the two idempotent coordinates.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), above this article, for the exchange of the two idempotent coordinates.
 - [The Hausdorff Dimension of the Reduced Biquaternion Julia Sets](the-hausdorff-dimension-of-the-reduced-biquaternion-julia-sets.html), below this article, for the dimension of the slices and of the fractal.
 - [The Slices of the Biquaternion Julia Sets](the-slices-of-the-biquaternion-julia-sets.html), for the companion in which only the idempotent slice is exact.

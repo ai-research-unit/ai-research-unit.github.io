@@ -84,7 +84,7 @@ Two further physical qualifications belong to the carrier, not to the table.
 | The plain product as an associative unital law, with its multiplication table and basis | [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html) |
 | The idempotents, the Peirce decomposition, the minimal left ideals and the matrix units | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The module theory: the simple module, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
-| The column ideal of a matrix ring: one idempotent and $n-1$ nilpotents | [The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html) |
+| The column ideal of a matrix ring: one idempotent and $n-1$ nilpotents | [The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring-one-idempotent-and-n-1-nilpotents.html) |
 | The canonical Hermitian form on the regular module, its positivity and its Gram matrix | [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html) |
 | The four forms of the twelve products, their Gram matrices and their signatures | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The embedding of the algebra in $\operatorname{End}_{\mathbb{C}}(S)$ | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
@@ -453,10 +453,10 @@ The algebra also splits into two minimal left ideals, the second column $\mathbb
 
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners, the matrix units and the minimal ideals.
 - [The Category of Modules](../articles_maths/the-category-of-modules.html), for simplicity, the endomorphism ring and the regular module.
-- [Higher Spin from Tensor Products](higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html), for the spins beyond the elementary list.
-- [The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html), for the structural count of the basis.
+- [Higher Spin from Tensor Products](higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-zero-and-one-half.html), for the spins beyond the elementary list.
+- [The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring-one-idempotent-and-n-1-nilpotents.html), for the structural count of the basis.
 - [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the positive definite form and its Gram matrix.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the probability structure.
-- [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), for the derivation and its bounds.
+- [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), for the derivation and its bounds.
 - [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the vacuum choice and the family of idempotents.
 - [The Spectral Triple of the Biquaternion Algebra](the-spectral-triple-of-the-biquaternion-algebra.html), for the chirality conventions of the doubling.

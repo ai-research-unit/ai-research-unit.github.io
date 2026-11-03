@@ -184,7 +184,7 @@ The general plain sesquilinear form $\langle\tilde Q_4,\tilde Q_1\rangle_{*}=\ma
 
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the operator, its composition and parameter rules, the adjoint, the $*$-unitary criterion and the kernel.
 - [The Unitary Slice and the Compact Real Form with Hermitian Adjoint](the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.html), for the slice, the group $\mathrm{U}(2)$ and its determinant-one part.
-- [The Pin and Spin Groups of the General Quaternionic Algebra](the-pin-and-spin-groups-of-the-general-quaternionic-algebra.html), the bilinear twin whose isometry condition is the norm level set $\langle\cdot\rangle_{\natural}=\pm1$.
+- [The Pin and Spin Groups of the General Quaternionic Algebra of the Biquaternions](the-pin-and-spin-groups-of-the-general-quaternionic-algebra-of-the-biquaternions.html), the bilinear twin whose isometry condition is the norm level set $\langle\cdot\rangle_{\natural}=\pm1$.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), §*The Isometry Group and the Absence of a Pin Group*, the bilinear twin whose isometry condition is vacuous and whose level set is not a group.
 - [The Pin and Spin Groups with Signed Hermitian Adjoint](the-pin-and-spin-groups-with-signed-hermitian-adjoint.html), for the general theory of the pin and spin groups with a Hermitian adjoint, of which this is the biquaternion instance.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, the four conjugations and the scalar form.

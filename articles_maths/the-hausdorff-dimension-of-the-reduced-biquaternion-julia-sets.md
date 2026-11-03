@@ -147,7 +147,7 @@ The dimension theory of the reduced biquaternion quadratic fractal is the sum of
 ## Further Reading
 
 - [The Reduced Biquaternion Quadratic Map and Its Julia Sets](the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html), above this article, for the product fractal, the critical cone and the singular slices.
-- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.html), above this article, for the global decomposition behind the product formula.
+- [The Idempotent Decomposition and the Split Fractal of the Reduced Biquaternions](the-idempotent-decomposition-and-the-split-fractal-of-the-reduced-biquaternions.html), above this article, for the global decomposition behind the product formula.
 - [The Slices of the Reduced Biquaternion Julia Sets](the-slices-of-the-reduced-biquaternion-julia-sets.html), above this article, for the slices whose dimension is computed here.
 - [The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus](the-reduced-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), above this article, for the parameter regions of the cases.
 - [The Reduced Biquaternion Iterated Function Systems](the-reduced-biquaternion-iterated-function-systems.html), above this article, for the similarity dimension of self-similar systems.

@@ -340,7 +340,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 
 ## Further Reading
 
-- [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the Cartan projection $\tilde Q\mapsto\tilde Q_0$ and the factorization $\tilde Q=\tilde Q_H\tilde Q_0$.
+- [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the Cartan projection $\tilde Q\mapsto\tilde Q_0$ and the factorization $\tilde Q=\tilde Q_H\tilde Q_0$.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the logarithm, its domain and the kernel of the exponential.
 - [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the strength and backaction of a single outcome and the null-cone boundary.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for quantum operations, the Kraus representation, and the depolarizing and dephasing channels.

@@ -746,4 +746,4 @@ The quaternion case is the definite compact companion of the biquaternion case: 
 - *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the noncommutative four-dimensional companion with two axes.
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
 - [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the two-dimensional indefinite companion.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

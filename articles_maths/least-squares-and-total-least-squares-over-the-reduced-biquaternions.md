@@ -432,10 +432,10 @@ The three approximation problems over the reduced biquaternion algebra — least
 - Carl Eckart and Gale Young, "The approximation of one matrix by another of lower rank", *Psychometrika* **1** (1936) 211–218, for the best rank-$n$ approximation and its uniqueness under the spectral gap.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd edition (Cambridge University Press, 2013), for the adjoint, the normal equations and the polar decomposition.
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), for the algebra, the idempotents and the coordinates.
-- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the decomposition along the two idempotents.
-- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the form $\langle\cdot\rangle_{\mathrm{ts}*}$ and the topological norm.
-- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the bar, the tessarine sign and the star.
-- [Reduced Biquaternion Versors and the Orthogonal Group](reduced-biquaternion-other-algebraic-element-representations.html), for the array representation and the pair $(M^{+},M^{-})$.
+- [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), for the decomposition along the two idempotents.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), for the form $\langle\cdot\rangle_{\mathrm{ts}*}$ and the topological norm.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), for the bar, the tessarine sign and the star.
+- [Reduced Biquaternion Algebraic Presentations](reduced-biquaternion-algebraic-presentations.html), for the array representation and the pair $(M^{+},M^{-})$.
 - [Hermitian Solutions of the Pair Matrix Equation over the Reduced Biquaternions](hermitian-solutions-of-the-pair-matrix-equation-over-the-reduced-biquaternions.html), for the pair equation $(AXB,CXD)=(E,F)$ in the source's Hermitian set, the real representation and the signed selection used there, the half-vectorisation, and the least squares, consistency and uniqueness criteria.
 - [Reduced Biquaternion Objects and Their Matrix Correspondences](reduced-biquaternion-objects-and-their-matrix-correspondences.html), for the objects of the algebra and their matrix invariants.
 - [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum and the singular values of the algebra.

@@ -314,4 +314,4 @@ The count $8=6+2$ is the orbit-stabiliser count for the action of $PGL_{3}$ on t
 - [Matrix Algebras](matrix-algebras.html), for the matrix-unit table.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the two-dimensional frame and its single $\mu$.
 - [Root Systems and Classification](root-systems-and-classification.html), for the root system $A_{2}$ and the maximal torus.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the general construction at order $n$.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the general construction at order $n$.

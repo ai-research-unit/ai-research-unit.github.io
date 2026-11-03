@@ -130,5 +130,5 @@ On the remarkable real subspaces the general quaternionic bilinear form carries 
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the same remarkable subspaces under the other readings
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms on the remarkable subspaces, side by side
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm and its real forms
-- [The Isotropic Structure of the General Quaternionic Algebra](the-isotropic-structure-of-the-general-quaternionic-algebra.html), for the null cone on the subspaces
-- [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the operators that preserve the form
+- [The Isotropic Structure of the General Quaternionic Algebra of the Biquaternions](the-isotropic-structure-of-the-general-quaternionic-algebra-of-the-biquaternions.html), for the null cone on the subspaces
+- [Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions](two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html), for the operators that preserve the form

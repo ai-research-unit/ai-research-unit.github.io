@@ -270,8 +270,8 @@ The polar decomposition $Q=ru\exp(s\varepsilon)$ exposes the defect as the parab
 - [Dual-Numbers Zero Divisors](dual-numbers-zero-divisors.html), for the nilpotent stratum and the zero-divisor set.
 - [Dual-Numbers Polar Decomposition](dual-numbers-polar-decomposition.html), for the decomposition $Q=ru\exp(s\varepsilon)$ and the parabolic angle.
 - [Shears and Parabolic Rotations](shears-and-parabolic-rotations.html), for the shear group $1+\mathrm{M}$ and its parametrisation.
-- [$M_2(R)$ Triangular Representation](dual-m2r-triangular-representation.html), for the matrix model and the Jordan form of the nilpotent.
-- [Dual-Numbers Linear Representations](dual-numbers-element-representations.html), for the regular representation.
+- [$M_2(R)$ Triangular Representation](m2r-triangular-representation.html), for the matrix model and the Jordan form of the nilpotent.
+- [Dual-Numbers Linear Representations](dual-numbers-linear-representations.html), for the regular representation.
 - [Spectral Regularity and Degeneracy in the Dual-Number Algebra](spectral-regularity-and-degeneracy-in-the-dual-number-algebra.html), for the characteristic polynomial, the minimal polynomial dichotomy and the one-term decomposition.
 - [Relations between the Dual Norm and Spectral Degeneracy](relations-between-the-dual-norm-and-spectral-degeneracy.html), for the comparison of the norm and the defect.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the three strata of the biquaternion spectral-degenerate cone.

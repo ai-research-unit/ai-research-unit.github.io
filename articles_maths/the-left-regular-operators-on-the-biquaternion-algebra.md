@@ -188,9 +188,9 @@ The three statements — the law, the rank trichotomy and the criterion — are 
 ## Further Reading
 
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient operator space and the complex dimension sixteen.
-- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the matrix of a general operator and the units.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the matrix of a general operator and the units.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the matrix $I_2\otimes\mathsf M_2(\tilde Q)$, the trace, the determinant and the spectrum.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the other side and the exchange.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the $2\times2$ model, the determinant and the norm.
-- [Norm and Unitary Conventions](conventions-of-the-norms-and-the-unitary-convention.html), for the norm and the invertibility criterion.
-- [Operator Family Conventions](conventions-of-the-operator-families.html), for the letter $L$, the slots and the set names.
+- [Norm and Unitary Conventions](norm-and-unitary-conventions.html), for the norm and the invertibility criterion.
+- [Operator Family Conventions](operator-family-conventions.html), for the letter $L$, the slots and the set names.

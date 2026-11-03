@@ -193,6 +193,6 @@ The quadratic family is equivariant under the three conjugations ${}^{\natural},
 - [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family, the conjugation equivariance and the central-parameter reduction.
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, the group they form and their fixed subspaces.
 - [The Biquaternion Mandelbrot Set and the Connectedness Locus](the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), for the commutative-plane theorem used at the idempotent slice.
-- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the decomposition the exact slices carry.
+- [The Idempotent Decomposition and the Split Fractal of the Biquaternions](the-idempotent-decomposition-and-the-split-fractal-of-the-biquaternions.html), for the decomposition the exact slices carry.
 - [The Quaternion Quadratic Map and Its Julia Sets](the-quaternion-quadratic-map-and-its-julia-sets.html), for the three-dimensional picture read here as a slice.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the remarkable subspaces and their closedness properties.

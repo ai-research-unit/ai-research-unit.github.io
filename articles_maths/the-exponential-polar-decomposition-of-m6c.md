@@ -346,5 +346,5 @@ In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the S
 - [The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the chiral decomposition of the $3\times3$ block.
 - [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the $3+3$ split and the chirality involution.
 - [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the $2+2$ split and the $2\times2$ mass block.
-- [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the regular case.
+- [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the regular case.
 - [The Cartan Decomposition and the Cartan Involution](the-cartan-decomposition-and-the-cartan-involution.html), for the symmetric space and the exponential polar form.

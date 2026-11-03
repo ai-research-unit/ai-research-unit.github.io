@@ -224,7 +224,7 @@ The operators of the block are $L^{\star}_{\tilde Q_4}(\tilde Q_1)=\tilde Q_4\st
 
 ## Further Reading
 
-- [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html), for the operators of the unsplit product.
+- [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-general-quaternionic-sesquilinear-product.html), for the operators of the unsplit product.
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the operators with the conjugate transpose and the group preserving the form.
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural*}$ and the adjoint relation in the form setting.
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product and its parity.

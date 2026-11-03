@@ -304,7 +304,7 @@ Bochner's theorem for the biquaternion transform is a theorem about the general 
 - [Square Roots of an Element](square-roots-of-an-element.html), for the classification of the roots of $-1$, $-0$ and $+1$.
 - [Quaternion Harmonic Analysis](quaternion-harmonic-analysis.html), for the quaternion case that does hold, the positivity theorem of the real roots.
 - [Positive Definite Functions and Hermitian Kernels](positive-definite-functions-and-hermitian-kernels.html), [Reproducing Kernel Hilbert Spaces](reproducing-kernel-hilbert-spaces.html) and [Positive Definite Distributions](positive-definite-distributions.html), for Bochner's theorem, the Aronszajn theorem and the Bochner–Schwartz theorem in the classical setting.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols of the roots, the conjugations and the pairings.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the symbols of the roots, the conjugations and the pairings.
 - [The Physical Interpretation of the 12 Products](../articles_physics/the-physical-interpretation-of-the-12-products.html), the physics counterpart, for the physical reading of the same theorem.
 - S. Bochner, "Monotone Funktionen, Stieltjessche Integrale und harmonische Analyse", *Mathematische Annalen* **108** (1933) 378–410, for the classical theorem that a normalised positive-definite function is the Fourier transform of a measure.
 - S. Georgiev, J. Morais, K. I. Kou, and W. Sprößig, "Bochner–Minlos theorem and quaternion Fourier transform", in *Quaternion and Clifford–Fourier Transforms and Wavelets*, Trends in Mathematics (Springer, 2013), 105–120, for the quaternion theorem whose biquaternionic counterpart fails at the genuinely complex roots.

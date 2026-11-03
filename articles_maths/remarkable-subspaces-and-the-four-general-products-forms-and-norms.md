@@ -861,7 +861,7 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces, their defining conditions, their bases, their dimensions and their role.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the coordinate blocks, the pairwise intersections, the sums and the three decompositions.
 - [The Sesquilinear Symmetrised Product](the-sesquilinear-symmetrised-product.html) and [The Sesquilinear Commutator](the-sesquilinear-commutator.html), for the plain reading's own halves.
-- [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html), for the convention of the four pairings, the four names and the pairs, and for the interpretations of the four on the algebra and on the material sector.
+- [Conventions in the Biquaternion Universe](../articles_physics/algebra-and-element-conventions.html), for the convention of the four pairings, the four names and the pairs, and for the interpretations of the four on the algebra and on the material sector.
 - [The Four General Products: Composition, Probability, Causality, Gauge](../articles_physics/the-four-general-products-composition-probability-causality-gauge.html), for the physical interpretations of the four forms and their signature table on the remarkable subspaces.
 - [The Norm Defined by a Form](the-norm-defined-by-a-form.html) and [Hermitian Forms over Algebras and Norms](hermitian-forms-over-algebras-and-norms.html), for the passage from a form to its algebraic norm, and for the real part, the imaginary part and the alternating companion of a Hermitian form.
 

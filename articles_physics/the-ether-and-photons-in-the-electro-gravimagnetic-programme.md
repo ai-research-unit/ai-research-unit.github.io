@@ -448,5 +448,5 @@ clearest statement of what the programme assumes.
   structure, of which the elementary photon is the monochromatic Helmholtz case.
 - [Gravitational Waves in Biquaternionic Form](gravitational-waves-in-biquaternionic-form.html), for the corpus's own gravitational wave and its two
   polarisations, against which the programme's "no pure gravitational waves" is measured.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html), for the corpus's dual field strength, its energy density
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the corpus's dual field strength, its energy density
   and Poynting vector, and the conventions this article restates before quoting the 2020 paper.

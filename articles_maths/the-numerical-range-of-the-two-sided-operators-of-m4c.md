@@ -341,7 +341,7 @@ The field of values contains the convex hull of the product set $W(a)W(b)$, and 
 - [Hermitian Operators and the Numerical Range](hermitian-operators-and-the-numerical-range.html), for the general theory, the support function and the Toeplitz–Hausdorff theorem.
 - [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the elliptical range theorem, the block rule, the rank-one case and the nilpotent chain.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for $L_a$, $R_a$, $L_{a}R_{b}$, their matrices and their spectrum.
-- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the Kronecker product and the identity $W(I\otimes M)=W(M)$.
+- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the Kronecker product and the identity $W(I\otimes M)=W(M)$.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the construction of the algebra from the $4\times4$ matrices $L_\mu R_\nu$.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the same sandwich on the carrier $\mathbb{B}$.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the Schatten norms and the singular values.

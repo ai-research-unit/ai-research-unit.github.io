@@ -14,7 +14,7 @@ with discriminant $\Delta=t(t+4)$, scalar part $Q_t=1+t/2$ and vector square $B^
 
 The two examples show two of the regular types. With $t=-1$ the product has eigenvalues $e^{\pm i\pi/3}$; with $t=1$ it has eigenvalues $(3\pm\sqrt5)/2$. The two values differ only in the pairing of the two nilpotent parts. The article also proves that every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotent elements, and that every element of the unit group is a central scalar times an element of the norm-one slice.
 
-The product law on the spectral-degenerate sector, which uses the pairing $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$, is *Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*, §*The Group Law*; the spectral criterion, the characteristic polynomial and the cone are *The Spectrum*; the norm, the norm-one group and the matrix model are *The N-Regular Sector* and *$M_2(\mathbb{C})$ Pauli Representation*. The relation $t=-2s$ is the bridge between the two computations, and nothing of the cited articles is reproved here.
+The product law on the spectral-degenerate sector, which uses the pairing $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$, is *Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion*, §*The Group Law*; the spectral criterion, the characteristic polynomial and the cone are *The Spectrum*; the norm, the norm-one group and the matrix model are *The N-Regular Sector* and *$M_2(\mathbb{C})$ Pauli Representation*. The relation $t=-2s$ is the bridge between the two computations, and nothing of the cited articles is reproved here.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The **quaternionic norm**, written $N$, is
 
@@ -104,7 +104,7 @@ $$
 
 The characteristic polynomial of a $2\times2$ matrix is $\lambda^2-\operatorname{Tr}T\,\lambda+\det T$, which gives (iii), and its discriminant is $(2+t)^2-4=t(t+4)$. The scalar part is half the trace, $Q_t=1+t/2$. The product is a unit of norm one, because the norm is multiplicative and $N(U_i)=1$; hence $B^2(T)=N(T)-Q_t^2=1-Q_t^2=-t(t+4)/4$. Finally, $\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-\vec\Upsilon_1\cdot\vec\Upsilon_2$ gives $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-2s$, and substitution gives $B^2(T)=s(2-s)$.
 
-**Remark (the product law on the sector).** For $\tilde Q_i=Q_{ti}(e_t+\vec\Upsilon_i)$, *Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*, §*The Group Law*, proves
+**Remark (the product law on the sector).** For $\tilde Q_i=Q_{ti}(e_t+\vec\Upsilon_i)$, *Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion*, §*The Group Law*, proves
 
 $$
 B^2(\tilde Q_1\tilde Q_2)=Q_{t1}^2Q_{t2}^2\,s(2-s),\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2.
@@ -391,10 +391,10 @@ Every element of the norm-one group except $-e_t$ is a product of two non-trivia
 - [The N-Regular Sector](the-n-regular-sector.html), for the norm-one group, the matrix identification $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$ and the polar retraction.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, its zero locus and the two norm cases.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unipotent elements, the scalar line and the Jordan part.
-- [Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the group law on the sector, the product formula $B^2=Q_{t1}^2Q_{t2}^2s(2-s)$ and the two roots $s=0$ and $s=2$.
+- [Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the group law on the sector, the product formula $B^2=Q_{t1}^2Q_{t2}^2s(2-s)$ and the two roots $s=0$ and $s=2$.
 - [The Spectrum](the-spectrum.html), for the characteristic polynomial, the discriminant, the cone and the similarity classification.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the place of the defective elements in them.
-- [$M_2(\mathbb{C})$ Pauli Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the matrix model, the basis images and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$.
+- [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the matrix model, the basis images and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t$ and $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the pure nilpotents and the nilpotent stratum.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the defective elements, their Jordan form and their centraliser.

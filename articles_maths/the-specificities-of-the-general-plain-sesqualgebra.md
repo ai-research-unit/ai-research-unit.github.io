@@ -153,9 +153,9 @@ The general plain sesqualgebra satisfies the **right-composition law** $R^{\star
 ## Further Reading
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the criterion of left alternativity and the family of criteria this article closes.
-- [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the mirror criterion on the left multiplications and the left-ideal coincidence.
+- [The Specificities of the General Quaternionic Algebra of the Biquaternions](the-specificities-of-the-general-quaternionic-algebra-of-the-biquaternions.html), for the mirror criterion on the left multiplications and the left-ideal coincidence.
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the product, its class, its table and its placement among the twelve.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for the plain operators $L_{\tilde Q_4}$, $R_{\tilde Q_3}$, their composition laws, their adjoints and their types, which the dictionary reads on the block.
 - [Norm and Invertibility in the General Plain Sesqualgebra](norm-and-invertibility-in-the-general-plain-sesqualgebra.html), for the norm, the one-sided inverse and the criterion of invertibility.
 - [Square Roots of One and the Idempotents of the General Plain Sesqualgebra](square-roots-of-one-and-the-idempotents-of-the-general-plain-sesqualgebra.html), for the Hermitian idempotents that the projector family meets.
-- [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the model in which the dictionary is the conjugate transpose.
+- [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html), for the model in which the dictionary is the conjugate transpose.

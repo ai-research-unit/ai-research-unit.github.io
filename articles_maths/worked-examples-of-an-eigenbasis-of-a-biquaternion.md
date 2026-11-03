@@ -1551,4 +1551,4 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm built on the decomposition.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the Jordan and nilpotent regimes.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the algebraic structure of the biquaternion algebra.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation used throughout.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation used throughout.

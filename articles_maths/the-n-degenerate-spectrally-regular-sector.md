@@ -372,7 +372,7 @@ $$
 
 with equality exactly when the element is normal: $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$, with $\tilde X^*=\overline{\tilde X^\natural}$ (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). The flow is $*$-unitary for the Hermitian form exactly when $Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$ — the massless material case — and self-adjoint exactly when $Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$. Spectral regularity, not invertibility, is what the Fourier dictionary needs.
 
-**Polar decomposition.** The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of a N-Regular Biquaternion* has no value on the sector. The failure is caused by the norm, not by the spectrum.
+**Polar decomposition.** The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* has no value on the sector. The failure is caused by the norm, not by the spectrum.
 
 **One-sided operators.** Rank $2$, equal to $2Q_t$ times a projection, with kernel the corresponding annihilator plane. Neither multiplication is invertible on either side.
 
@@ -482,5 +482,5 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners and the nilpotents $E_{ij}$.
 - [Idempotents](idempotents.html), for the root variety $\tilde\Xi^2=e_t$ and the idempotent manifold.
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and its failure at $\langle\tilde Q\rangle_{\natural}=0$.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and its failure at $\langle\tilde Q\rangle_{\natural}=0$.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

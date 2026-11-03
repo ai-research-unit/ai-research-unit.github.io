@@ -262,7 +262,7 @@ and the element $e_t + i\vec e_x$ is a non-pure zero divisor whose square vanish
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the theorem that the four general products have one zero-divisor set, which this article quotes.
 - [Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.html), for the square-zero family $c(\vec u+i)$, its real dimension and its non-purity.
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product, its table and its axioms.
-- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$ used in the examples.
+- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-general-quaternionic-sesquilinear-product-and-the-two-halves.html), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$ used in the examples.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the position of the cone in the remarkable subspaces.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the article format.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation and the article format.
 - [Annihilators of the General Quaternionic Sesqualgebra](annihilators-of-the-general-quaternionic-sesqualgebra.html), below this article in this category, the companion article, for the two distinct annihilators of an element and the rank table

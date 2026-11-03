@@ -367,4 +367,4 @@ The cocycle $c_{ij}c_{jk}=c_{ik}$ forces $c_{ij}=t_i/t_j$ and $c_{ii}=1$: no six
 - [Primitive Idempotents and Minimal Left Ideals](primitive-idempotents-and-minimal-left-ideals.html), for the matrix units and the ideals they generate.
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for the root systems, the simple roots and the maximal torus.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the flag variety and the Borel subgroup.
-- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the general construction at order $n$.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the general construction at order $n$.

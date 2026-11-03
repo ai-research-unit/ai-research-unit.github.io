@@ -1,4 +1,4 @@
-# __Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion__
+# __Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion__
 
 ## Introduction
 
@@ -44,9 +44,9 @@ $$
 
 while the sum of the four exponents is not a logarithm: the boost and the rotor do not commute, and the log defect is the cross term plus the nonlinear terms.
 
-The companion article *Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion* treats the case $B^2\neq0$. The two articles are independent: each defines the word, proves existence and uniqueness, and develops the logarithm and the group law. This article does not use the companion, and the companion does not use this one. The two sectors are the two sides of the pair of conditions $\operatorname{Sc}\tilde U=\pm1$ and $\operatorname{Sc}\tilde U\neq\pm1$.
+The companion article *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion* treats the case $B^2\neq0$. The two articles are independent: each defines the word, proves existence and uniqueness, and develops the logarithm and the group law. This article does not use the companion, and the companion does not use this one. The two sectors are the two sides of the pair of conditions $\operatorname{Sc}\tilde U=\pm1$ and $\operatorname{Sc}\tilde U\neq\pm1$.
 
-The article assumes *The Polar Decomposition of a N-Regular Biquaternion* for the modulus–unit theorem, *Biquaternion Elementary Functions* for the exponential and the logarithm, and *The N-Regular, Spectrally Degenerate Sector* for the normal forms and the two strata. It does not treat the spectral algebra of the sector, the Peirce decomposition or the spinors. The numerical cases are in *Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*.
+The article assumes *The Polar Decomposition of an N-Regular Biquaternion* for the modulus–unit theorem, *Biquaternion Elementary Functions* for the exponential and the logarithm, and *The N-Regular, Spectrally Degenerate Sector* for the normal forms and the two strata. It does not treat the spectral algebra of the sector, the Peirce decomposition or the spinors. The numerical cases are in *Worked Examples of Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion*.
 
 **The plan.** The word, its two unit factors and the seven data are boxed and proved in §*The Result in Terms of the Coordinates*. The domain is fixed in §*The Domain*, with its two strata. The word and its component form are in §*The Decomposition*. §*The Unipotent Unit Factor* proves the rigidity: the scalar constraint, the orthogonal frame and the closed form. §*The Two Strata* treats the scalar line and the Jordan part separately. Existence and uniqueness are proved in §*Existence and Uniqueness*. The logarithm, the group law, the matrix picture, the exponential coordinates and the boundary follow. The summary collects the formulas.
 
@@ -629,7 +629,7 @@ $$
 
 The logarithm is the sum of the scalar logarithm and the nilpotent vector part. The period $2\pi ik\,e_t$ can be added to the scalar logarithm, and no other ambiguity is present on the Jordan part: the logarithm is unique modulo the central periods, because the nilpotent part is fixed by $\tilde Q$.
 
-The operator form of this single exponent is in §*The Exponential at the Wall* of *The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion* and of *The Sandwich of a N-Regular, Spectrally Degenerate Biquaternion*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the sandwich is the null rotation $\Theta_{\tilde Q}=|Q_t|^2e^{A+B}$.
+The operator form of this single exponent is in §*The Exponential at the Wall* of *The One-Sided Operators of an N-Regular, Spectrally Degenerate Biquaternion* and of *The Sandwich of an N-Regular, Spectrally Degenerate Biquaternion*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the sandwich is the null rotation $\Theta_{\tilde Q}=|Q_t|^2e^{A+B}$.
 
 ### The Formal Exponent and the Defect
 
@@ -909,12 +909,12 @@ Seen from $\Sigma_{11}$, the locus $B^2=0$ is a wall: the word converges to the 
 
 ## Further Reading
 
-- [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), the companion for $B^2\neq0$, independent of this article.
-- [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Degenerate Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the polar word read against the Jordan form.
-- [Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the numerical cases, the scalar line, the Jordan part and the defect tables.
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem and the group of units.
+- [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), the companion for $B^2\neq0$, independent of this article.
+- [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Degenerate Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the polar word read against the Jordan form.
+- [Worked Examples of Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the numerical cases, the scalar line, the Jordan part and the defect tables.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem and the group of units.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the normal forms and the two strata.
 - [The Spectrum](the-spectrum.html), for the four sectors and the discriminants.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the fibre.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Cartan decomposition and the Baker–Campbell–Hausdorff series.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

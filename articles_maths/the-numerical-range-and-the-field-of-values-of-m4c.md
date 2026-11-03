@@ -258,7 +258,7 @@ The field of values $W(A)=\{x^*Ax:\|x\|=1\}$ of a matrix of $M_4(\mathbb{C})$ is
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the Frobenius, operator and nuclear norms.
 - [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectrum and the resolvent.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix representation of the biquaternion algebra.
-- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the tensor product and the identity $W(I\otimes M)=W(M)$.
+- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the tensor product and the identity $W(I\otimes M)=W(M)$.
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge University Press, 1991), for the field of values and the elliptical range theorem.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the numerical radius and its inequalities.
 - Karl E. Gustafson and Duggirala K. M. Rao, *Numerical Range: The Field of Values of Linear Operators and Matrices* (Springer, 1997), for the general theory.

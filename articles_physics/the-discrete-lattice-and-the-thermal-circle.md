@@ -140,7 +140,7 @@ named as a gap and not proposed as a formula.
   partition function.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) and *Thermal Time and the Modular Flow in the
   Biquaternion Framework*, for the KMS periodicity and the modular flow.
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the central phase that
+- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase that
   the thermal circle realises.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the discrete charge from the compact
   group.

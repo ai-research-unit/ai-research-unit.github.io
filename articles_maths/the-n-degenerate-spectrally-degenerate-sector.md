@@ -240,7 +240,7 @@ $$
 
 polynomial in $\theta$; the flow is never oscillatory, and no Fourier basis is attached to the element. The exponential is a unit on the sector, although the element is a zero divisor or the origin.
 
-**Polar decomposition.** The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of a N-Regular Biquaternion* has no value on the sector: there is no unit factor of norm one.
+**Polar decomposition.** The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* has no value on the sector: there is no unit factor of norm one.
 
 **One-sided operators.** Rank $2$, square-zero; the kernels are the two annihilator planes; neither multiplication is invertible on either side.
 
@@ -335,7 +335,7 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
 - [The Spectrum](the-spectrum.html), for the spectral criterion, the two cases and the degenerate cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the independence of the two cones, the nilpotent intersection and the four sectors.
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $\langle\tilde Q\rangle_{\natural}$ among the four norms and of $B^2$ outside them.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.

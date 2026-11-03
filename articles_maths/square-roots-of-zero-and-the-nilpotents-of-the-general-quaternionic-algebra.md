@@ -237,5 +237,5 @@ In the general quaternionic bilinear product the square is the central element $
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the criterion, the two families and the annihilators.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, its multiplicativity and the criterion.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the square-zero sets of the four general products side by side.
-- [$M_2(\mathbb{C})$ Representation : The General Quaternionic Algebra of Biquaternions](the-general-quaternionic-algebra-in-the-2x2-matrix-element-representation.html), for the isomorphism $\mathsf{M}_2$ and its determinant.
-- [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the left ideals of the product and the operator theory.
+- [$M_2(\mathbb{C})$ Representation : The General Quaternionic Algebra of Biquaternions](m2c-representation-the-general-quaternionic-algebra-of-biquaternions.html), for the isomorphism $\mathsf{M}_2$ and its determinant.
+- [The Specificities of the General Quaternionic Algebra of the Biquaternions](the-specificities-of-the-general-quaternionic-algebra-of-the-biquaternions.html), for the left ideals of the product and the operator theory.

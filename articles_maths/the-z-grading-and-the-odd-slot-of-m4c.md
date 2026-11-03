@@ -249,4 +249,4 @@ and the five cells of the frame are $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_x}R_{\ve
 - [The Vector and the Axial Traces of $M_4(\mathbb{C})$](the-vector-and-the-axial-traces-of-m4c.html), for the two coordinates $L_{e_t}R_{e_t}$ and $L_{e_t}R_{\vec e_z}$ that the traces read.
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the operation-level form of the odd generators.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chirality and its relation to the pseudoscalar.
-- [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Frame*.
+- [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the explicit matrices and the even-part identification, §*The Clifford Structure and the Frame*.

@@ -463,4 +463,4 @@ The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; 
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for the partial flags and the Grassmannians used in the coarse splits.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the representation of $\mathbb{Z}/6$ and the discrete Fourier decomposition of a cyclic group.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the spectral theorem, the Lagrange interpolation formula and the trace of a projection.
-- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the general construction at order $n$.
+- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-mnc.html), for the general construction at order $n$.

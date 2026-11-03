@@ -178,7 +178,7 @@ A rank-one idempotent splits $M_4(\mathbb{C})$ into the four Peirce blocks of di
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the split $M_2\oplus M_2$ and the corners $4+4+4+4$.
 - [The $M_2$ Corner of $M_3(\mathbb{C})$](the-m2-corner-of-m3c.html), for the general compression and its proofs.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the fine Peirce decomposition by four idempotents.
-- [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the recursion $M_n\supset M_p\oplus M_{n-p}$.
+- [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the recursion $M_n\supset M_p\oplus M_{n-p}$.
 - [The Geometry of the Idempotents of $M_4(\mathbb{C})$](the-geometry-of-the-idempotents-of-m4c.html), for the homogeneous space of idempotents of each rank.
 - [The Modules and the Minimal Left Ideals of $M_4(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m4c.html), for $M_4P$ as a minimal left ideal.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the parabolic and the flag variety.

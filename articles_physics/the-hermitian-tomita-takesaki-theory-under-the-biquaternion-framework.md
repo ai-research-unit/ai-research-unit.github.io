@@ -329,7 +329,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 - Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the single fermionic mode, $\tilde\Pi_-$, and the parity $(-1)^F$.
 - Companion article [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the algebra and its two sectors.
 - Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector and the four-vectors.
-- Companion article [Interpretation of the Wick Rotation in the Biquaternion Universe](the-interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for the $i$-exchange between the sectors.
+- Companion article [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for the $i$-exchange between the sectors.
 - Companion article [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the operator algebra of the informational sector.
 - M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the original development of the modular theory.
 - M. Takesaki, *Theory of Operator Algebras II* (Springer, 2003), for the modular automorphism group and its properties.

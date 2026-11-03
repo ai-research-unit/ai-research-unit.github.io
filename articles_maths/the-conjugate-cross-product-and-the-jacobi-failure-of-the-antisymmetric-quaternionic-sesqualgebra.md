@@ -138,6 +138,6 @@ The block is the conjugate cross product $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the three Jacobi failures and their witnesses.
 - [Lie Algebras of Sesqualgebras](lie-algebras-of-sesqualgebras.html), for the obstruction behind the two sesquilinear failures.
 - [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the class-preserving exchange.
-- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the square whose conjugate half-difference is the block.
-- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra.html), for the cross product on the real part.
+- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-general-quaternionic-sesquilinear-product-and-the-two-halves.html), for the square whose conjugate half-difference is the block.
+- [Introduction to the Antisymmetric Plain Algebra of the Biquaternions](introduction-to-the-antisymmetric-plain-algebra-of-the-biquaternions.html), for the cross product on the real part.
 - [The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra](the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the form of the block.

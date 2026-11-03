@@ -12,11 +12,11 @@ The article states the correspondence and reads its invariants: the trace as the
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The assignment $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, the isomorphism and the inverse map | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html) |
+| The assignment $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, the isomorphism and the inverse map | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | The Hermitian subspace $\mathbb M_+$ as the Hermitian matrices, the anti-Hermitian $\mathbb M_-$ as the anti-Hermitian matrices, and $\mathbb M_-=i\mathbb M_+$ | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
-| $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$, $\det\mathsf M_2(\tilde Q)=N$, and the norm on each subspace | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html) |
+| $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$, $\det\mathsf M_2(\tilde Q)=N$, and the norm on each subspace | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | The regular image $\mathsf M_4^{L}(\tilde Q)$, its trace and determinant, and the block splitting | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
-| The sandwich operator, its spectrum $\lambda_i\bar\lambda_j$, its determinant and trace | [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html) |
+| The sandwich operator, its spectrum $\lambda_i\bar\lambda_j$, its determinant and trace | [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html) |
 | Hermitian conjugation ${}^{*}$ as the conjugate transpose, and the four involutions as four matrix operations | [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html) |
 | The rank-one matrices, the two strata of the null cone and the trace-one idempotents | [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html) |
 | The unit-norm slice as $SL_2(\mathbb{C})$, the $*$-unitary slice as $SU(2)$, and the polar decomposition | [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) |
@@ -390,9 +390,9 @@ The correspondence does not say that nature is complex, and it does not derive t
 
 ## Further Reading
 
-- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the correspondence table this article extends.
+- [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html), for the correspondence table this article extends.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections.
-- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the ball and its boundary.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the ball and its boundary.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state conditions and the Born pairing.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone as the boundary of the state space.
 - [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html), for the bundle, its fibre and its Chern number.

@@ -343,7 +343,7 @@ The further reading of this exercise is the parent and companion articles of thi
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian subspace and the trace formula.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the direct parent: the potential equation and the normalisation of the four-current.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the direct parent: the potential equation and the normalisation of the four-current.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the field strength built from the potential by differentiation, and its biquaternion norm.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html) — the covariance of the four-potential, inherited here unchanged.
 - [Radiation from Accelerated Charges in Biquaternionic Form](radiation-from-accelerated-charges-in-biquaternionic-form.html) — the companion that states (but does not derive) the retarded kernel and convolution and specializes them to a point charge, with the worldline Jacobian of Problem 4(b).

@@ -281,6 +281,6 @@ has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V$. Its ev
 - [The Pin Group of the Gamma Frame](the-pin-group-of-the-gamma-frame.html), for the real Pin group and the finite frame group.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the spin group as a biquaternion group and the double cover.
 - [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](the-star-and-the-conjugate-linear-operators-of-m4c.html), for the two Clifford dictionaries.
-- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the left and right copies of $\mathbb{B}$.
+- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the left and right copies of $\mathbb{B}$.
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the chiral blocks and the mass block.
 - [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the five frame cells inside the two-sided basis.

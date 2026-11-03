@@ -136,4 +136,4 @@ real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}
 
 - [Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.html), for the nontrivial idempotents of the block.
 - [Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.html) and [Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.html), for the roots of the block.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the article format.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation and the article format.

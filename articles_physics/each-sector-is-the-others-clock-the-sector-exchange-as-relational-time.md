@@ -144,8 +144,8 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 
 ## Further Reading
 
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html) — the basis, the conjugations, the remarkable subspaces, the $ict'$ dictionary, the four forms, and the exchange read on the metric.
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html) — the one generator, its restrictions, the complex time plane, the order four of the rotation, and the statement that the algebra offers no rule that selects a slice.
+- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) — the basis, the conjugations, the remarkable subspaces, the $ict'$ dictionary, the four forms, and the exchange read on the metric.
+- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) — the one generator, its restrictions, the complex time plane, the order four of the rotation, and the statement that the algebra offers no rule that selects a slice.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the two sectors the exchange relates, and the coefficient dictionaries used above.
 - [The Biquaternion Space, the Group of Involutions and the Six Subspaces](the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html) — the complex time sector, the complex space sector, the real and imaginary sectors, and the exchange of the real and imaginary sectors as the Wick rotation.
 - [The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form](the-relativistic-exchange-of-information-and-clock-synchronisation-in-biquaternionic-form.html) — signals as null displacements, the radar method, Einstein synchronisation, the $k$-factor, clock transport and the twin effect: the local clocks, their rates and their synchronisation.

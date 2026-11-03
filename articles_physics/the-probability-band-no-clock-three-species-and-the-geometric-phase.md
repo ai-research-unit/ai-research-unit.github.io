@@ -23,7 +23,7 @@ The order is the order of the readings. Each section states the algebraic result
 | The roots of $+1$ and the idempotents | [Square Roots of One and the Idempotents of the General Plain Sesqualgebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-sesqualgebra.html) |
 | The roots of $0$ and the nilpotents of index three | [Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-sesqualgebra.html) |
 | The ternary product and the Jordan triple identity | [The Ternary Product and the Associator of the Biquaternion Sesqualgebra](../articles_maths/the-ternary-product-and-the-associator-of-the-biquaternion-sesqualgebra.html) |
-| The type criterion for the one-sided operators of the quaternionic product | [One-Sided Operators on the General Quaternionic Algebra](../articles_maths/one-sided-operators-on-the-general-quaternionic-algebra.html) |
+| The type criterion for the one-sided operators of the quaternionic product | [One-Sided Operators on the General Quaternionic Algebra of the Biquaternions](../articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html) |
 | The trace-one positive slice and the pure states | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
 | The connection, the curvature and the holonomy | [Fibre Bundles, Connections and Curvature](../articles_maths/fibre-bundles-connections-and-curvature.html) |
 
@@ -496,7 +496,7 @@ The three grades of coefficient reality are the complex, central and real specie
 - [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the place of the band among the four products.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the gps and gqa structures, their products, their roots and their nilpotents.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the trace-one slice.
-- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the purity and the linear entropy.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the purity and the linear entropy.
 - [Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html), for the half-solid-angle rule.
 - [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html), for the phase fibre.
 - [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the monoid of acting maps and the cone as the wall of reversibility.

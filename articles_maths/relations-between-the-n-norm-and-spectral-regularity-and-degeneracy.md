@@ -208,7 +208,7 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 
 **Theorem (the polar decomposition follows the norm).** A modulus–unit polar decomposition exists exactly on $\Sigma_{11}\cup\Sigma_{10}$; the modulus is a choice of square root of $\langle\tilde Q\rangle_{\natural}$.
 
-*Proof.* If $N\neq0$, choose a square root $\Rho$ and set $\tilde U=\tilde Q/\Rho$; then $\langle\tilde U\rangle_{\natural}=1$. If $N=0$ and $\tilde Q\neq0$, no $\Rho\neq0$ has $\Rho^2=0$; at the origin the same equation forces $\Rho=0$. This is the modulus of *The Polar Decomposition of a N-Regular Biquaternion*.
+*Proof.* If $N\neq0$, choose a square root $\Rho$ and set $\tilde U=\tilde Q/\Rho$; then $\langle\tilde U\rangle_{\natural}=1$. If $N=0$ and $\tilde Q\neq0$, no $\Rho\neq0$ has $\Rho^2=0$; at the origin the same equation forces $\Rho=0$. This is the modulus of *The Polar Decomposition of an N-Regular Biquaternion*.
 
 **The two decompositions in the strata.**
 
@@ -323,8 +323,8 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents and the spectrum $\{c,0\}$.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotent cone and the origin.
 - *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the comparison of the two decompositions factor by factor.
-- [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich, its spectrum and its rank on the null cone.
+- [The Sandwich of an N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html), for the sandwich, its spectrum and its rank on the null cone.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections and the degenerate regimes.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the same four sectors read through the flow: the eigenbasis, the root and the Hermitian norm.
 
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and its failure at $N=0$.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and its failure at $N=0$.

@@ -162,7 +162,7 @@ No sector has a defective stratum. Every element is semisimple: the minimal poly
 
 - [Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-reduced-biquaternion-algebra.html), for the spectral criterion, the eigenspaces and the scalar stratum.
 - [Relations between the Reduced Norm and Spectral Regularity and Degeneracy](relations-between-the-reduced-norm-and-spectral-regularity-and-degeneracy.html), for the independence of the two conditions and the chain of invariants.
-- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the reduced norm and the unit criterion.
-- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two punctured idempotent lines.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), for the reduced norm and the unit criterion.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two punctured idempotent lines.
 - [The Spectrum](the-spectrum.html), for the defective cone and the Jordan strata that are absent here.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the non-commutative four sectors and the refinement by the minimal polynomial.

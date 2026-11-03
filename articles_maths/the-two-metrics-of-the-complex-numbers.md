@@ -191,7 +191,7 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 
 - [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
 - [The Two Products of the Complexoid Space](the-two-products-of-the-complexoid-space.html), for the two products $Q_1Q_2$ and $Q_1\bar Q_2$ whose forms are realified here.
-- [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars-on-the-complexoid.html), the complex article of that name, for the realification rules that give the signatures $(1,1)$ and $(2,0)$.
+- [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars.html), the complex article of that name, for the realification rules that give the signatures $(1,1)$ and $(2,0)$.
 - [Complex Algebra](complex-algebra.html), for the algebra, its basis and its one nontrivial involution.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, its multiplicativity, its triangle inequality and the group of units.
 - [Rotations and Reflections in the Complex Plane](rotations-and-reflections-in-the-complex-plane.html), for the identification of the form-preserving multiplications with $\mathrm{SO}(2)$, the reflections and the group $O(2)$.

@@ -127,9 +127,9 @@ The matrix model of the reduced biquaternion algebra sends an element $\breve Q=
 
 ## Further Reading
 
-- [$M_2(\mathbb{C})$ Reduced Representation](rb-m2c-reduced-representation.html), for the construction of the model and the map on the basis.
-- [$M_2(\mathbb{C})$ Reduced Representation](rb-m2c-reduced-representation.html), for the algebra read in the model.
-- [Reduced Biquaternion Versors and the Orthogonal Group](reduced-biquaternion-other-algebraic-element-representations.html), for the other presentations and their relations.
-- [$M_2(\mathbb{C})$ Reduced Representation : Operators](rb-m2c-reduced-representation-operators.html), for the operators $L_{\breve Q}$ and $R_{\breve Q}$ and their norms.
-- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the forms, the norms and the Gram matrices.
+- [$M_2(\mathbb{C})$ Reduced Representation](m2c-reduced-representation.html), for the construction of the model and the map on the basis.
+- [$M_2(\mathbb{C})$ Reduced Representation](m2c-reduced-representation.html), for the algebra read in the model.
+- [Reduced Biquaternion Algebraic Presentations](reduced-biquaternion-algebraic-presentations.html), for the other presentations and their relations.
+- [$M_2(\mathbb{C})$ Reduced Representation : Operators](m2c-reduced-representation-operators.html), for the operators $L_{\breve Q}$ and $R_{\breve Q}$ and their norms.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), for the forms, the norms and the Gram matrices.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the companion in which the left and the right multiplications differ.

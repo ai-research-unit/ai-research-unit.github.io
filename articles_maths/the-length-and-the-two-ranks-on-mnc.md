@@ -230,7 +230,7 @@ The length and the ordinary rank are independent: a product of full rank has len
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge, 1991), for the Kronecker product, the rank of a product and the determinantal varieties of a matrix space.
 - Joe Harris, *Algebraic Geometry: A First Course* (Springer, 1992), for the determinantal varieties and their dimensions.
 - [The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$](the-two-sided-operators-and-the-segre-cone-of-mnc.html), for the case $r=1$ and the cone of products.
-- [The Regular Representation in Dimension $n$](the-regular-representation-in-n-dimensions.html), for the tensor form and the central simple criterion.
+- [The Regular Representation in Dimension $n$](the-regular-representation-in-dimension-n.html), for the tensor form and the central simple criterion.
 - [The One-Sided Operators of $M_n(\mathbb{C})$](the-one-sided-operators-of-mnc.html), for the one-sided operators of length one.
-- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same theorem with the sixteen Peirce-frame operators.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the same theorem with the sixteen Peirce-frame operators.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family at $n=2$.

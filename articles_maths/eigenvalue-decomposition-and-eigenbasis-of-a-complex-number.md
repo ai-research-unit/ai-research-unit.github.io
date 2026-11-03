@@ -211,7 +211,7 @@ The matrix $A=tI+bJ$ is normal, $A^{\mathsf{T}}A=|z|^2I$, and, for $z\neq0$, $A/
 - [Relations between the Modulus and Spectral Regularity and Degeneracy](relations-between-the-modulus-and-spectral-regularity-and-degeneracy.html), for the comparison of $|z|^2$ and $b^2$ and the place of the unit circle.
 - [The Three Sectors of the Complex Algebra](the-three-sectors-of-the-complex-algebra.html), for the partition into $\Sigma_{11},\Sigma_{10},\Sigma_{00}$ and the empty $\Sigma_{01}$.
 - [Complex Algebra](complex-algebra.html), for the algebra, its conjugation and its two distinguished subspaces.
-- [$M_2(\mathbb{R})$ Cayley Representation](c-m2r-cayley-representation.html), for the Cayley matrix, its multiplicativity and its determinant.
+- [$M_2(\mathbb{R})$ Cayley Representation](m2r-cayley-representation.html), for the Cayley matrix, its multiplicativity and its determinant.
 - [Modulus–Unit Polar Decomposition of Complex Numbers](modulus-unit-polar-decomposition-of-complex-numbers.html), for the polar decomposition, the unit circle and the modulus.
 - [Complex Exponential and Lie Group Structure](complex-exponential-and-lie-group-structure.html), for the exponential $u=e^{i\theta}$ and the identification of the unit circle with $SO(2)$.
 - [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the general existence and uniqueness theorems.

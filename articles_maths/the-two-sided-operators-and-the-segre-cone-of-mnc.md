@@ -240,7 +240,7 @@ The two one-sided copies are the two rulings of the cone and meet in the scalars
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge, 1991), for the Kronecker product, its rank and its determinant.
 - Joe Harris, *Algebraic Geometry: A First Course* (Springer, 1992), for the Segre varieties and the cones over them.
 - [The One-Sided Operators of $M_n(\mathbb{C})$](the-one-sided-operators-of-mnc.html), for the two rulings of the cone.
-- [The Regular Representation in Dimension $n$](the-regular-representation-in-n-dimensions.html), for the tensor form and the ladder.
+- [The Regular Representation in Dimension $n$](the-regular-representation-in-dimension-n.html), for the tensor form and the ladder.
 - [The Length and the Two Ranks on $M_n(\mathbb{C})$](the-length-and-the-two-ranks-on-mnc.html), for the coefficient array which cuts the cone out by minors.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family at $n=2$.
-- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the sixteen basis operators and the Peirce gauge.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the sixteen basis operators and the Peirce gauge.

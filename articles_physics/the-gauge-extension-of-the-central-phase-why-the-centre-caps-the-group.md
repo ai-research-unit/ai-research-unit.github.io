@@ -152,7 +152,7 @@ does not contain.
   five characterisations and its interpretation as the classical sector.
 - [The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html), for the ceiling, the
   Cartan decomposition and the enlargements that pass it.
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the central phase as
+- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the central phase as
   one generator on remarkable subspaces.
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the compact slice and the discrete
   charge.

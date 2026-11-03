@@ -123,8 +123,8 @@ The general tessarine bilinear form of the reduced biquaternion algebra, $\langl
 ## Further Reading
 
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotents and the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$.
-- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), above this article, for the four forms, their Gram matrices and the reduced norm.
-- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), above this article, for the bar, the tessarine sign, the star and the flat that realise the reflections.
-- [$M_2(\mathbb{C})$ Reduced Representation : Operators](rb-m2c-reduced-representation-operators.html), for the operators $L_{P}$ and $R_{P}$ and their norms.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), above this article, for the four forms, their Gram matrices and the reduced norm.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), above this article, for the bar, the tessarine sign, the star and the flat that realise the reflections.
+- [$M_2(\mathbb{C})$ Reduced Representation : Operators](m2c-reduced-representation-operators.html), for the operators $L_{P}$ and $R_{P}$ and their norms.
 - [Reduced Biquaternion Rotations and Lorentz Transformations](reduced-biquaternion-rotations-and-lorentz-transformations.html), above this article, for the multiplicative action on the space and the isometry groups of the four forms.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the companion in which the algebra is the even part of the Clifford algebra of Lorentzian space.

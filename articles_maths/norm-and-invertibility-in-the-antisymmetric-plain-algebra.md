@@ -109,8 +109,8 @@ The antisymmetric plain multiplication $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\time
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
-- [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra.html), for the operation, its class, its image and the absence of a unit.
+- [Introduction to the Antisymmetric Plain Algebra of the Biquaternions](introduction-to-the-antisymmetric-plain-algebra-of-the-biquaternions.html), for the operation, its class, its image and the absence of a unit.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the unit table of the four general products.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form of this block.
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the antisymmetrisation from which the block is written.
-- [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the invariant forms of the block.
+- [The Killing Form of the Antisymmetric Plain Algebra of the Biquaternions](the-killing-form-of-the-antisymmetric-plain-algebra-of-the-biquaternions.html), for the invariant forms of the block.

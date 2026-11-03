@@ -725,14 +725,14 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 - Alexander Altland and Ben Simons, *Condensed Matter Field Theory* (Cambridge University Press, 2nd ed. 2010), for the two-band models, the Dirac points and the Nielsen–Ninomiya pairing.
 - Mikio Nakahara, *Geometry, Topology and Physics* (IOP, 2nd ed. 2003), for the de Rham and Koszul differentials and the cohomological reading of square-zero operators.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. II (Cambridge University Press, 1996), for the BRST quantization of gauge theories and the physical-state cohomology.
-- [Algebra and Element Conventions](conventions-in-the-biquaternion-universe.html)
+- [Algebra and Element Conventions](algebra-and-element-conventions.html)
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html)
-- [The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form](the-grading-and-fermion-parity-in-biquaternionic-form.html)
+- [The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form](the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.html)
 - [The Superalgebra Reading and the Odd Extension in Biquaternionic Form](the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html)
-- [Chirality: The Conjugate Pair](chirality-the-conjugate-pair.html)
-- [List of Zero Divisors and Nilpotents](list-of-zero-divisors-and-nilpotents.html)
-- [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-mnc.html)
-- [Operator and Calculus Conventions](conventions-of-the-operators-and-the-calculus.html)
+- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html)
+- [List of Zero Divisors and Nilpotents](../articles_maths/list-of-zero-divisors-and-nilpotents.html)
+- [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](../articles_maths/the-peirce-decomposition-and-the-corner-recursion-of-mnc.html)
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html)
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html)
 - [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html)
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html)

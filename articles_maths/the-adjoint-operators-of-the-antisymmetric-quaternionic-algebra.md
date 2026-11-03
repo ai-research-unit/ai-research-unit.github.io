@@ -190,7 +190,7 @@ The left multiplication operator of the block is $L_{\tilde Q_3}\tilde Q_2=Q_{3t
 
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its table and its image
 - [The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra](the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html), for the cyclic sum that the deviation reverses, and for the trivial alternating centre
-- [The Left Multiplications of the Quaternionic Product and the Opposite Monoid](the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.html), for the operators of the parent product
-- [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the two-sided family of the parent product
-- [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.html), for the Lie case, whose adjoint map is a representation and whose derivations are inner
+- [The Left Multiplications of the Quaternionic Product and the Opposite Monoid of the Biquaternions](the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid-of-the-biquaternions.html), for the operators of the parent product
+- [Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions](two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html), for the two-sided family of the parent product
+- [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra of the Biquaternions](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra-of-the-biquaternions.html), for the Lie case, whose adjoint map is a representation and whose derivations are inner
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm and its isotropic cone, on which the rank of the operator drops

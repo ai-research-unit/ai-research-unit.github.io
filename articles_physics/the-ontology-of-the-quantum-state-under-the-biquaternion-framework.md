@@ -250,8 +250,8 @@ The article's interpretive claim is that the algebra settles the identity, the s
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the operator-algebra identification and the informational-sector hypothesis.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors and the complementarity $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the state and observable formalism, the Bloch ball, and the Born rule.
-- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the state space as a slice of the cone and purity as a boundary condition.
-- [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), for what the Hermitian form, read through the trace, derives and what it restates.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), for the state space as a slice of the cone and purity as a boundary condition.
+- [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), for what the Hermitian form, read through the trace, derives and what it restates.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) and [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the algebraic structure of idempotents, rank-one elements, and zero divisors used in the purity section.
 - [The Measurement Problem in Algebraic Form](the-measurement-problem-in-algebraic-form.html), for provenance-blindness, the missing outcome index, and the segment-versus-endpoint gap.
 - [Decoherence as Idempotent Projection](decoherence-as-idempotent-projection.html), for the deformation of an idempotent into a mixed state.
@@ -259,4 +259,4 @@ The article's interpretive claim is that the algebra settles the identity, the s
 - [Quantum Channels and the Reversible/Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), for the operation-form interpretation of evolution and measurement.
 - [The Quantum–Classical Divide in the Biquaternion Framework](the-quantum-classical-divide-in-the-biquaternion-framework.html), for idempotent versus $*$-unitary operations.
 - [Quantum Physics: Foundations and Structure](quantum-physics-foundations-and-structure.html), for the standard formulation and the structural checklist.
-- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the state as the Hermitian square of the amplitude.
+- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the state as the Hermitian square of the amplitude.

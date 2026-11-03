@@ -251,7 +251,7 @@ The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, o
 
 **The sandwich.** The operator $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Sandwich*. On the null set it is therefore singular exactly on $\mathcal K_{\mathrm d}$, and invertible on $\mathcal K_{\mathrm u}$. This is the sharpest operator reading of the two strata: the sandwich separates them, and it does so through the algebraic norm.
 
-**The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. On the null set it therefore exists exactly on $\mathcal K_{\mathrm u}$ and fails on $\mathcal K_{\mathrm d}$; *The Polar Decomposition of a N-Regular Biquaternion*.
+**The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. On the null set it therefore exists exactly on $\mathcal K_{\mathrm u}$ and fails on $\mathcal K_{\mathrm d}$; *The Polar Decomposition of an N-Regular Biquaternion*.
 
 **The adjoint.** The Krein adjoint is defined at every point of the sector, the form being non-degenerate; the sector imposes no restriction on it. The operator theory is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
@@ -300,5 +300,5 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, the unit group and the zero-divisor cone.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce idempotents behind the doubly null lines.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the sandwich, the rank of left multiplication and the polar decomposition.
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restriction of the form to the six remarkable subspaces.

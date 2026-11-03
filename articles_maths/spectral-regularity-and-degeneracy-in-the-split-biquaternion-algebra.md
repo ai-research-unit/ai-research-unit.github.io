@@ -27,7 +27,7 @@ $$
 =\sum_{\mu=t,x,y,z}Q_\mu^2,
 $$
 
-and the reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The algebra and idempotents are *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)* and *[Split-Biquaternion Idempotents and Projections](split-biquaternion-idempotents-and-projections.html)*; the norm is *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*; the spectrum is *[Split-Biquaternion Spectral Theory](split-biquaternion-spectral-theory.html)*. The companion articles are *[The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](relations-between-the-split-biquaternion-reduced-norm-and-spectral-regularity-and-degeneracy.html)* and *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*.
+and the reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The algebra and idempotents are *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)* and *[Split-Biquaternion Idempotents and Projections](split-biquaternion-idempotents-and-projections.html)*; the norm is *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*; the spectrum is *[Split-Biquaternion Spectral Theory](split-biquaternion-spectral-theory.html)*. The companion articles are *[The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html)* and *[The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html)*.
 
 ## The Spectrum as the Union of the Two Half-Spectra
 
@@ -226,5 +226,5 @@ Every element is semisimple, because each half lies in $\mathbb{H}$ and a direct
 - [Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html), for the norm, the reduced norm and the unit criterion.
 - [Split-Biquaternion Spectral Theory](split-biquaternion-spectral-theory.html), for left multiplication and the quaternionic spectra.
 - [The Spectrum](the-spectrum.html), for the complex cone and the defective elements off the scalar line.
-- [The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](relations-between-the-split-biquaternion-reduced-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the two predicates.
+- [The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html), for the comparison of the two predicates.
 - [The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html), for the cells and their dimensions.

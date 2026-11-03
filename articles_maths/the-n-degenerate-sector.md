@@ -281,7 +281,7 @@ $$
 
 with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. For $\tilde Q\neq0$, $\tilde Q_H$ has rank one, $\tilde Q_0$ is not $*$-unitary, and its final projection is a rank-one projection. At the origin both factors vanish.
 
-*Proof.* The existence and uniqueness are *The Polar Decomposition of a Biquaternion*, §*Uniqueness*; the rank and partial-isometry statements are *The Polar Decomposition of a N-Degenerate Biquaternion*, §*The Two-Factor Decomposition*.
+*Proof.* The existence and uniqueness are *The Polar Decomposition of a Biquaternion*, §*Uniqueness*; the rank and partial-isometry statements are *The Polar Decomposition of an N-Degenerate Biquaternion*, §*The Two-Factor Decomposition*.
 
 **Theorem (the Hermitian factor).** For $\tilde Q\neq0$ on the cone, write $\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{*}e_t+i\vec W$ with $\vec W$ real and put
 
@@ -293,7 +293,7 @@ $$
 
 Then $\tilde Q_H^2=\tilde Q\tilde Q^{*}$, $\tilde Q_H$ is positive semidefinite of rank one, and its spectrum is $\{0,2a\}$. The scalar part of $\tilde Q_H$ is $a$ and its vector part has length $a$.
 
-*Proof.* This is *The Polar Decomposition of a N-Degenerate Biquaternion*, §*The Hermitian Factor*, where the identities $\lvert\vec W\rvert=\langle\tilde Q\rangle_{*}$ and $\lvert\vec W\rvert=2a^2$ are proved; the spectrum follows from $\tilde Q_H^2=2a^2e_t+i\vec W$.
+*Proof.* This is *The Polar Decomposition of an N-Degenerate Biquaternion*, §*The Hermitian Factor*, where the identities $\lvert\vec W\rvert=\langle\tilde Q\rangle_{*}$ and $\lvert\vec W\rvert=2a^2$ are proved; the spectrum follows from $\tilde Q_H^2=2a^2e_t+i\vec W$.
 
 **Remark (what degenerates).** On the sector the Hermitian factor is positive definite and the isometry factor is $*$-unitary. On the cone the Hermitian factor drops to rank one and the isometry factor to a partial isometry; the two projections are rank-one and no longer the identity. The Hermitian factor is the continuous limit of the regular one; the isometry factor is not continuous at the cone.
 
@@ -412,7 +412,7 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the criterion, the zero divisors and the two strata
 - [The N-Regular Sector](the-n-regular-sector.html), for the partner article and the group of units
-- [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two factors and the Hermitian factor on the cone
+- [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two factors and the Hermitian factor on the cone
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the non-pure stratum as a cell
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the pure stratum as a cell
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants

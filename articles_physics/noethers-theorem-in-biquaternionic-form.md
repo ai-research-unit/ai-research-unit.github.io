@@ -380,7 +380,7 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 - [The Poincaré Group and the Biquaternion Frame](the-poincare-group-and-the-biquaternion-frame.html) — the symmetry group, and the corrected central translation phase.
 - [Exercise: Four-Momentum Conservation in a Collision](exercise-four-momentum-conservation-in-a-collision.html) — the total four-momentum of an isolated system, and the report of the proper-time four-force defect.
 - [Exercise: The Electromagnetic Energy–Momentum Tensor](exercise-the-electromagnetic-energy-momentum-tensor.html) — the rank-two translation current and why one biquaternion cannot carry it.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the source conservation and the energy–momentum biquaternion $\tilde{W}$.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the source conservation and the energy–momentum biquaternion $\tilde{W}$.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the bivector representation used for the angular momentum.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the angular-momentum algebra and the spin operators.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the localization of the central phase whose global current is derived here.

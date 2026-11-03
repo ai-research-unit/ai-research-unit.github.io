@@ -162,9 +162,9 @@ The **natural conjugation** $D$ is the one conjugation that is complex-linear. I
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its basis and its multiplication.
 - [The Operators on an Algebra](the-operators-on-an-algebra.html), for the ambient operator space in general and the subspace-group rule.
 - [The Regular Representation as an Algebra of Operators](the-regular-representation-as-an-algebra-of-operators.html), for the regular representations and their double centraliser.
-- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the matrix in a basis, the change of frame and the invariants.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the matrix in a basis, the change of frame and the invariants.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for the first summand of the display.
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the second summand and the exchange by the natural conjugation.
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for the same two objects at matrix level.
-- [Algebra and Element Conventions](conventions-in-mathematics.html), for the element, the basis and the three conjugations.
-- [Operator Family Conventions](conventions-of-the-operator-families.html), for the letters and the adjoint signs used in the Parts that follow.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the element, the basis and the three conjugations.
+- [Operator Family Conventions](operator-family-conventions.html), for the letters and the adjoint signs used in the Parts that follow.

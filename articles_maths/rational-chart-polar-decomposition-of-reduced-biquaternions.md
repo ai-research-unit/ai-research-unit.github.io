@@ -499,5 +499,5 @@ In the matrix picture the unit factor is orthogonally conjugate to the block dia
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the transcendental coordinate on the torus.
 - [Rational-Chart Polar Decomposition of Complex Numbers](rational-chart-polar-decomposition-of-complex-numbers.html), for the complex member of the family.
 - [Rational-Chart Polar Decomposition of Split-Complex Numbers](rational-chart-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic companion.
-- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the topology of the torus.
-- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two zero-divisor lines.
+- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html), for the topology of the torus.
+- [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two zero-divisor lines.

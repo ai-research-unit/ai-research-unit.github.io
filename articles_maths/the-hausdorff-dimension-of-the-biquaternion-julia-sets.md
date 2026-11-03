@@ -89,6 +89,6 @@ The Hausdorff dimension of a biquaternion Julia set is known in three situations
 
 - [Fractal Geometry](fractal-geometry.html), for the definition of the dimension and the product formula.
 - [The Slices of the Biquaternion Julia Sets](the-slices-of-the-biquaternion-julia-sets.html), for the slices whose dimensions are computed here.
-- [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the product structure of the idempotent slice.
+- [The Idempotent Decomposition and the Split Fractal of the Biquaternions](the-idempotent-decomposition-and-the-split-fractal-of-the-biquaternions.html), for the product structure of the idempotent slice.
 - [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the idempotent manifold and the singular part.
 - [The Biquaternion Iterated Function Systems](the-biquaternion-iterated-function-systems.html), for the similarity dimension of a system, which is the constructive counterpart.

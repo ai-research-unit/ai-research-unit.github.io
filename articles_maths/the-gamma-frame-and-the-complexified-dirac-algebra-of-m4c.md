@@ -260,10 +260,10 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 
 - [Why the Biquaternion Formalism Instead of Gamma Matrices](../articles_physics/why-the-biquaternion-formalism-instead-of-gamma-matrices.html), for the comparison of the two notations, the worked Dirac operator and the length table.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen operators $L_{e_\mu} R_{e_\nu}$ and their product rule.
-- [Matrix Representations Conventions](conventions-of-the-matrix-models.html), for the cell symbols the generator cell and the frame in the canonical frame, §*The Clifford Structure and the Frame*.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the cell symbols the generator cell and the frame in the canonical frame, §*The Clifford Structure and the Frame*.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the even slot and the versors.
-- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c.html), for the two commuting copies of $\mathbb{B}$.
+- [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the two commuting copies of $\mathbb{B}$.
 - [The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$](the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html), for the bivectors and the Lie algebra $\mathfrak{so}(4,\mathbb{C})$.
-- [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4-and-sl4-of-m4c.html), for the Lie algebra of the frame.
+- [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4c-and-sl4c-of-m4c.html), for the Lie algebra of the frame.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification and the frame.
 - Ian M. Benn and Robert W. Tucker, *An Introduction to Spinors and Geometry with Applications in Physics* (Adam Hilger, 1987), for the Clifford group and the spin group.

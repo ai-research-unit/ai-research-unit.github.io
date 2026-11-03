@@ -136,7 +136,7 @@ $$
 \tilde Q=\tilde Q_H\tilde Q_0,
 $$
 
-with $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}$ Hermitian positive definite and $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$ $*$-unitary. The pair is unique and depends continuously on $\tilde Q$. The four-factor word $r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ refines it: a positive scale $r$, a unit phase $\zeta$, a Hermitian positive boost $\tilde U_{\mathrm b}$ of norm one, and a unit real quaternion $\tilde u_{\mathrm r}$ (*The Polar Decomposition of a N-Regular Biquaternion*, §*The Four Factors*).
+with $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}$ Hermitian positive definite and $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$ $*$-unitary. The pair is unique and depends continuously on $\tilde Q$. The four-factor word $r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ refines it: a positive scale $r$, a unit phase $\zeta$, a Hermitian positive boost $\tilde U_{\mathrm b}$ of norm one, and a unit real quaternion $\tilde u_{\mathrm r}$ (*The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*).
 
 **Remark (the two decompositions are not the same).** The modulus-unit decomposition $\tilde Q=\Rho\tilde U$ with $\Rho^2=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$ is a bijection onto $\mathcal{H}\times\mathbb{B}^{\times}_1$, where $\mathcal{H}=\{\Rho:\operatorname{Re}\Rho>0\}\cup\{it:t>0\}$ is the half-plane of the principal modulus. It is a bijection of sets, not a homeomorphism: the branch of the square root jumps across the negative real axis, and so does $\tilde U$. The smooth product structure is the non-central one: the section $\lambda\mapsto\mathrm{diag}(\lambda,1)$ trivialises the determinant bundle, so $\mathbb{B}^{\times}$ is diffeomorphic to $\mathbb{C}^{\times}\times SL_2(\mathbb{C})$, while the central multiplication map $\mathbb{C}^{\times}e_t\times\mathbb{B}^{\times}_1\to\mathbb{B}^{\times}$ is a connected two-to-one covering.
 
@@ -336,7 +336,7 @@ The spectrum does not split the sector into two open halves. The spectrally regu
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the criterion, the inverse formula and the two cases
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the partner article and the null cone
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the four factors and the group of units
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the four factors and the group of units
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the open dense cell
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan cone
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants

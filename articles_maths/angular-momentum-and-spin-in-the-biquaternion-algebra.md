@@ -472,7 +472,7 @@ The tensor square of the adjoint module contains a spin-two summand, and the mul
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the spinor spaces and the ladder.
 - [The Casimir Operator](the-casimir-operator.html), for the Casimir in the general theory.
 - [Representations of Lie Algebras](representations-of-lie-algebras.html), for the highest-weight classification and the Clebsch–Gordan rule.
-- [The Tensor Square of the Duo-Complex Numbers](the-tensor-square-of-the-duo-complex-numbers.html), for the decomposition of the tensor square.
+- [The Tensor Square of the Duo-Complex Numbers](the-tensor-square-of-c2.html), for the decomposition of the tensor square.
 - [Chirality: The Conjugate Pair in the Biquaternion Algebra](chirality-the-conjugate-pair.html), for the central sign and the conjugate module.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz action and its labels.
 - [Angular Momentum and Spin in Biquaternionic Form](../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html), for the physics counterpart and the units.

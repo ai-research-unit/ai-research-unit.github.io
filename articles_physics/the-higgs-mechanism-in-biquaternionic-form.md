@@ -324,7 +324,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html) — the framework's scalar Lagrangian, whose complex-field normalization is discussed in the companion notes.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian sector and the trace formula.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the abelian potential and field strength that the gauge field mass modifies.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian potential and field strength that the gauge field mass modifies.
 - [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) — the left/right matter-representation question that the non-abelian scalar inherits.
 - [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.
-- [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html) — the multiplication rule, the conjugations, and the centre used throughout.
+- [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) — the multiplication rule, the conjugations, and the centre used throughout.

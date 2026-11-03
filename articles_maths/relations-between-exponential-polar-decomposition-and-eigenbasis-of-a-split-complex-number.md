@@ -543,4 +543,4 @@ Read down a column for one algebra and across a row for one concept. The first t
 - [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), for the group of units and the exponential parametrisation.
 - [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the reduced biquaternion analogue.
 - *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the noncommutative analogue.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

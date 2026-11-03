@@ -122,5 +122,5 @@ The roots of zero are exactly the family $c(\vec u+i)$ over the complex numbers 
 - [Square Roots of Zero and the Nilpotents of the Quaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.html), for the plain nilpotent cone, pure and of real dimension four, against which the family is compared.
 - [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-quaternioid-r-space.html), for the natural product's square-zero set, the whole zero-divisor cone.
 - [Zero Divisors of the General Quaternionic Sesqualgebra](zero-divisors-of-the-general-quaternionic-sesqualgebra.html), for the cone, its two families and the criterion.
-- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the article format.
+- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-general-quaternionic-sesquilinear-product-and-the-two-halves.html), for the identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation and the article format.

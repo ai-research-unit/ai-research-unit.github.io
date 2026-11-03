@@ -285,7 +285,7 @@ The chain is $(a,b)\mapsto m_Q\mapsto p_Q\mapsto\langle Q\rangle$. The minimal p
 - [The Spectrum](the-spectrum.html), for the defect on the biquaternion spectral-degenerate cone.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for semisimplicity and the additive decomposition.
 - [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html), for the Jordan type and the module picture.
-- [$M_2(R)$ Triangular Representation](dual-m2r-triangular-representation.html), for the matrix model and the determinant as the norm.
+- [$M_2(R)$ Triangular Representation](m2r-triangular-representation.html), for the matrix model and the determinant as the norm.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the trace, the determinant and the characteristic polynomial.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, Providence, 2005), for degenerate quadratic forms and their radicals.
 - Michael F. Atiyah and Ian G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, Reading, 1969), for local rings and nilpotent ideals.

@@ -142,4 +142,4 @@ The two copies are therefore mutual centralisers and incomparable; their only co
 - [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the right matrix.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the centre.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the products and the generation theorem.
-- [Operator Family Conventions](conventions-of-the-operator-families.html), for the letters and the set names.
+- [Operator Family Conventions](operator-family-conventions.html), for the letters and the set names.

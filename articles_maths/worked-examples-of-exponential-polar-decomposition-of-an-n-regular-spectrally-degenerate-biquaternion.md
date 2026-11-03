@@ -1,4 +1,4 @@
-# __Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion__
+# __Worked Examples of Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion__
 
 ## Introduction
 
@@ -776,9 +776,9 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 
 ## Further Reading
 
-- [Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the theorem, the proofs and the rigidity of the word.
-- [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the companion sector and its worked examples.
-- [Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the regular cases.
-- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem.
+- [Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the theorem, the proofs and the rigidity of the word.
+- [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the companion sector and its worked examples.
+- [Worked Examples of Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the regular cases.
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the normal forms and the two strata.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

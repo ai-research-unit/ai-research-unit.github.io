@@ -265,4 +265,4 @@ The framework thus realizes thermal time in its inner, trivial case exactly, wit
 - Companion article [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), for the wedge modular flow as the boost.
 - Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the thermal interpretation of the boost.
 - Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the logarithm of a biquaternion state.
-- Companion article [The Reeh–Schlieder Theorem under the Biquaternion Framework](the-reh-schlieder-theorem-under-the-biquaternion-framework.html), for the module algebra and the type III setting.
+- Companion article [The Reeh–Schlieder Theorem under the Biquaternion Framework](the-reeh-schlieder-theorem-under-the-biquaternion-framework.html), for the module algebra and the type III setting.

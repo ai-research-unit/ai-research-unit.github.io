@@ -169,14 +169,14 @@ The consequences are the specificities of the block. The product is linear in th
 ## Further Reading
 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the left-alternativity criterion and the parity obstruction, the twin of the present article.
-- [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the isotope criterion of the natural product.
+- [The Specificities of the General Quaternionic Algebra of the Biquaternions](the-specificities-of-the-general-quaternionic-algebra-of-the-biquaternions.html), for the isotope criterion of the natural product.
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product, its table, the first-slot reading of the scalar form and the failure of the ternary identity.
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the symmetrisation $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, which shares the two actions of $e_t$ and fails the star identity, and for the sibling $\tilde Q_1\bullet_{*}\tilde Q_2$.
 - [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the adapted exchange that constructs the eight derived parts.
 - [The Two One-Sided Actions and the Absence of a Unit](the-two-one-sided-actions-and-the-absence-of-a-unit.html), for the two actions of $e_t$ and the absence of a unit.
-- [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html), for the left and right multiplications and the sandwich.
-- [The Associator of the General Quaternionic Sesquilinear Product](the-associator-of-the-quaternionic-sesquilinear-product.html), for the associator and the failure of the associativity laws.
+- [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-general-quaternionic-sesquilinear-product.html), for the left and right multiplications and the sandwich.
+- [The Associator of the General Quaternionic Sesquilinear Product](the-associator-of-the-general-quaternionic-sesquilinear-product.html), for the associator and the failure of the associativity laws.
 - [The Ternary Product and the Failure of the Jordan Triple Identity](the-ternary-product-and-the-failure-of-the-jordan-triple-identity.html), for the ternary product and the quintuple witness.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the definition of the four products and the two slot involutions.
-- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the square and the Krein form.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the article format.
+- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-general-quaternionic-sesquilinear-product-and-the-two-halves.html), for the square and the Krein form.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation and the article format.
