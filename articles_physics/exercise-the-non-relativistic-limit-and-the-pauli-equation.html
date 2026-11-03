@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="exercise-the-non-relativistic-limit-and-the-pauli-equation"><strong>Exercise: The Non-Relativistic Limit and the Pauli Equation</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This is one of the worked exercises attached to the article <em>The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit</em>. That article stated the biquaternion Dirac equation, constructed its plane-wave solutions, and carried the equation into the non-relativistic regime far enough to exhibit the Pauli equation and the gyromagnetic factor $g=2$. This exercise takes the limiting procedure as given and executes it in full: every order that contributes to the first corrections is kept, every coefficient is derived, and every claim is checked.</p>
+<p>This is one of the worked exercises attached to the article <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em>. That article states the two forms of the biquaternion Dirac equation, constructs the plane-wave solutions of the one-sided pair, and carries the pair into the non-relativistic regime far enough to exhibit the Pauli equation and the gyromagnetic factor $g=2$. This exercise takes the limiting procedure as given and executes it in full: every order that contributes to the first corrections is kept, every coefficient is derived, and every claim is checked.</p>
 <p>Five problems are worked:</p>
 <ol>
 <li>the Foldy–Wouthuysen elimination of the small component, carried out step by step and to the order at which the first corrections appear;</li>
@@ -79,32 +79,118 @@
 <li>the Hermiticity of every term, and which terms lie in the Hermitian subspace $\mathbb M_+$ and which do not;</li>
 <li>the physical dimensions of every term.</li>
 </ol>
-<p><strong>On the parent article.</strong> The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses ($\beta$, $\boldsymbol\alpha$, $O$, $S_1$), although it does identify the Pauli Hamiltonian and the spin term as $\mathbb M_+$ observables. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.</p>
-<p>The five frame cells are $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$, with $L_{a}R_{b}\psi=a\psi b$ the two-sided multiplication. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the Gamma section. In the Dirac basis, where the timelike cell is diagonal, the two operators of the Hamiltonian take their standard matrices, the odd $\beta=iR_{\vec e_x}$ and the even $\alpha_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}$,</p>
-<p>$$\beta=\begin{pmatrix} I_2&0\\0&-I_2\end{pmatrix},\qquad
-\alpha_k=\begin{pmatrix} 0&\sigma_k\\ \sigma_k&0\end{pmatrix}.
+<p><strong>On the parent article.</strong> The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.</p>
+<p><strong>The cells.</strong> The article is written in the cells of the frame, and the gamma symbols appear only in <em>The Gamma Formulation</em>. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_aR_b\psi=a\psi b$, with $L_aR_bL_cR_d=L_{ac}R_{db}$. The four coordinate cells are</p>
+<p>$$
+c_0=iR_{\vec e_x},\qquad c_k=iL_{\vec e_k}R_{\vec e_y}\quad(k=x,y,z),
 $$</p>
-<p>The Clifford metric $g$ is carried by the generators; it is the negative of the metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ that appears in the $ict'$ form of the biquaternionic gradient, $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ with $\partial^2/\partial Q_t^2=-c^{-2}\,\partial^2/\partial {t'}^2$. The kinetic momentum is $\vec\pi=p-ϙ\vec A$ with $p=-i\hbar\nabla$, the charge is $ϙ$, the electrostatic potential is written $\phi_0$, and the potential energy of the charge in it is $V=ϙ\phi_0$. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made.</p>
+<p>and the chirality cell is $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, the parent's cell for chirality. The squares and the anticommutators follow from $i^2=-1$ and $\vec e_k^2=-e_t$:</p>
+<p>$$
+c_0^2=R_{(i\vec e_x)^2}=R_{i^2\vec e_x^2}=R_{e_t}=1,\qquad
+c_k^2=L_{(i\vec e_k)^2}R_{\vec e_y^2}=L_{e_t}R_{-e_t}=-1,
+$$</p>
+<p>$$
+\{c_0,c_k\}=0,\qquad \{c_j,c_k\}=-2\delta_{jk}.
+$$</p>
+<p>Repeated spatial indices $j,k,l$ are summed over $x,y,z$, and the sums are written out only where a chain of equalities would otherwise be ambiguous.</p>
+<p>The velocity cell is one product of two coordinate cells, and one use of $i^2=-1$ removes both factors of $i$:</p>
+<p>$$
+\alpha_k=c_0c_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}
+=i^2L_{\vec e_k}R_{\vec e_y\vec e_x}
+=-L_{\vec e_k}R_{-\vec e_z}
+=L_{\vec e_k}R_{\vec e_z}.
+$$</p>
+<p>In the Dirac basis, where $c_0=\operatorname{diag}(I_2,-I_2)$, the velocity cell is $\alpha_k=\begin{pmatrix}0&\sigma_k\\\sigma_k&0\end{pmatrix}$. The spin cell is $S_k=iL_{\vec e_k}$; it is block diagonal in that basis, with upper block $\sigma_k$ and lower block $-\sigma_k$, and it satisfies</p>
+<p>$$
+\alpha_j\alpha_k=\delta_{jk}+i\epsilon_{jkl}S_l .
+$$</p>
+<p>The Clifford metric is $g=\operatorname{diag}(+1,-1,-1,-1)$, the negative of the metric $\eta=\operatorname{diag}(-1,+1,+1,+1)$ that appears in the $ict'$ form of the biquaternionic gradient. The kinetic momentum is $\vec\pi=p-ϙ\vec A$ with $p=-i\hbar\nabla$, the charge is $ϙ$, the electrostatic potential is written $\Phi$, and the potential energy of the charge in it is $V=ϙ\Phi$. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made.</p>
+<h3 id="the-two-dirac-equations">The two Dirac equations</h3>
+<p>The parent carries two equations, and they must not be read as one.</p>
+<p><strong>The one-sided pair.</strong> The corpus's own equation is the chiral pair. It acts on the two chiral halves $\tilde\Psi_R$ and $\tilde\Psi_L$ of the field by left multiplication, and the mass is the off-diagonal pairing of the two halves:</p>
+<p>$$
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
+$$</p>
+<p>$$
+\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
+$$</p>
+<p>Both gradients act on the left, and no right multiplication and no conjugation enters. On the Dirac module the pair is a four-component equation, and it is the equation reduced below.</p>
+<p><strong>The two-sided form.</strong> Kravchenko's dictionary writes the same physics as a single equation on the whole algebra. The derivative acts on the left, the mass acts on the right through the chirality cell, and a componentwise conjugation supplies the antilinear part. Here $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ is the three-dimensional Cauchy–Riemann operator and $\mathcal N$ names the left-hand side. In natural units:</p>
+<p>$$
+\mathcal N F=\Bigl(i\frac{\partial}{\partial t'}+D_3\Bigr)F-mi\,\overline F\,\vec e_z=0 .
+$$</p>
+<p>Equivalently,</p>
+<p>$$
+-\tilde\nabla^{\natural}F-mi\,\overline F\,\vec e_z=0
+$$</p>
+<p>for a field $F\in\mathbb B$. The two forms are related by a change of representation, but they are different operators: the pair is linear in the field, while the mass term of the two-sided form is antilinear because it carries $\overline F$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>One-sided pair</th>
+<th>Two-sided form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Equation</td>
+<td>$\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$</td>
+<td>$\mathcal NF=0$, with $\mathcal NF=(i\partial/\partial t'+D_3)F-mi\overline F\vec e_z$</td>
+</tr>
+<tr>
+<td>Multiplication</td>
+<td>left by $\tilde\nabla$ and $\tilde\nabla^{\natural}$</td>
+<td>left by $i\partial/\partial t'$ and $D_3$; right by $\vec e_z$; antilinear bar</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>$\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R\in\Delta$</td>
+<td>$F\in\mathbb B$</td>
+</tr>
+<tr>
+<td>Mass</td>
+<td>off-diagonal pairing of the chiral halves</td>
+<td>$-mi\overline F\vec e_z$: a conjugation and a direction</td>
+</tr>
+<tr>
+<td>Chirality</td>
+<td>the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$</td>
+<td>the chirality cell $-iL_{e_t}R_{\vec e_z}$</td>
+</tr>
+<tr>
+<td>Use</td>
+<td>the formulation and its kinematics</td>
+<td>the dictionary, the Cauchy theory, the integral representation</td>
+</tr>
+</tbody>
+</table></div>
+<p>The reduction below is of the one-sided pair, read on the Dirac module. The Foldy–Wouthuysen transformation is applied to the four-component Hamiltonian of that pair. The two-sided form is a different operator, antilinear in its mass term; its non-relativistic reduction is not attempted here.</p>
 <h2 id="problem-1-the-foldywouthuysen-elimination-of-the-small-component">Problem 1: The Foldy–Wouthuysen elimination of the small component</h2>
 <p><strong>Statement.</strong> Starting from the four-component Dirac Hamiltonian with minimal coupling, eliminate the small component and obtain the Pauli Hamiltonian, keeping the orders through the first corrections.</p>
 <p><strong>Solution.</strong></p>
 <p><em>Step 1: the split.</em> In the Dirac basis the Hamiltonian is</p>
 <p>$$
 i\hbar\,\partial/\partial t'\,\psi=H\psi,\qquad
-H=c\,\boldsymbol\alpha\cdot\vec\pi+\beta mc^2+ϙ\phi_0,
-\qquad \alpha_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}=\begin{pmatrix}0&\sigma_k\\ \sigma_k&0\end{pmatrix}.
+H=c\sum_k\alpha_k\pi_k+c_0mc^2+ϙ\Phi,
+\qquad
+\alpha_k=c_0c_k=L_{\vec e_k}R_{\vec e_z}.
 $$</p>
-<p>Write $H=\beta mc^2+O+E$ with</p>
+<p>Write $H=c_0mc^2+O+E$ with</p>
 <p>$$
-O=c\,\boldsymbol\alpha\cdot\vec\pi \quad(\text{odd},\ \beta O\beta=-O),
-\qquad E=ϙ\phi_0 \quad(\text{even},\ \beta E\beta=E).
+O=c\sum_k\alpha_k\pi_k\quad(\text{odd},\ c_0Oc_0=-O),
+\qquad E=ϙ\Phi\quad(\text{even},\ c_0Ec_0=E).
 $$</p>
-<p>The even operator $E$ is the electrostatic energy and the odd operator $O$ is what couples the upper and lower components.</p>
+<p>The even operator $E$ is the electrostatic energy and the odd operator $O$ is what couples the upper and lower components. One product with $c_0$ removes one velocity cell, since $c_0\alpha_k=c_0^2c_k=c_k$:</p>
+<p>$$
+c_0O=c\sum_k c_k\pi_k .
+$$</p>
 <p><em>Step 2: factoring out the rest energy.</em> Write $\psi=\exp(-imc^2t'/\hbar)(\phi,\chi)^{\mathsf T}$. Substituting and cancelling the common phase gives the parent's two coupled equations,</p>
 <p>$$
-i\hbar\,\partial/\partial t'\,\phi=c\,\boldsymbol\sigma\cdot\vec\pi\,\chi+ϙ\phi_0\phi,
-\qquad
-i\hbar\,\partial/\partial t'\,\chi=c\,\boldsymbol\sigma\cdot\vec\pi\,\phi-2mc^2\chi+ϙ\phi_0\chi .
+i\hbar\,\partial/\partial t'\,\phi=c\,\boldsymbol\sigma\cdot\vec\pi\,\chi+ϙ\Phi\phi,
+$$</p>
+<p>$$
+i\hbar\,\partial/\partial t'\,\chi=c\,\boldsymbol\sigma\cdot\vec\pi\,\phi-2mc^2\chi+ϙ\Phi\chi .
 $$</p>
 <p><em>Step 3: the leading elimination.</em> The term $2mc^2\chi$ dominates the second equation whenever the fields, the kinetic energy and $\partial/\partial t'\,\chi$ are small compared with $mc^2$. Neglecting the other terms there,</p>
 <p>$$
@@ -112,56 +198,78 @@ $$</p>
 $$</p>
 <p>so the small component is of relative order $v/c$, as it must be. Substituting into the first equation eliminates $\chi$ exactly at this order:</p>
 <p>$$
-i\hbar\,\partial/\partial t'\,\phi=\left[\frac{(\boldsymbol\sigma\cdot\vec\pi)^2}{2m}+ϙ\phi_0\right]\phi .
+i\hbar\,\partial/\partial t'\,\phi=\left[\frac{(\boldsymbol\sigma\cdot\vec\pi)^2}{2m}+ϙ\Phi\right]\phi .
 $$</p>
 <p><em>Step 4: the systematic transformation.</em> The approximation of Step 3 is the first term of a controlled expansion. The Foldy–Wouthuysen generator is $S=S_1+S_2+\cdots$ with</p>
 <p>$$
-S_1=-\frac{i}{2mc^2}\,\beta O .
+S_1=-\frac{i}{2mc^2}\,c_0O
+=-\frac{i}{2mc^2}\,c_0\cdot c\sum_k c_0c_k\pi_k
+=-\frac{i}{2mc}\sum_k c_k\pi_k
+=\frac{1}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}\pi_k .
 $$</p>
-<p>For static fields the generator is time-independent, and</p>
+<p>The last equality is again $i^2=-1$, since $c_k=iL_{\vec e_k}R_{\vec e_y}$. For static fields the generator is time-independent, and the transformed Hamiltonian is</p>
 <p>$$
-\exp(iS_1)\big(H-i\hbar\partial/\partial t'\big)\exp(-iS_1)
+e^{iS_1}He^{-iS_1}
 =H+i[S_1,H]-\tfrac12[S_1,[S_1,H]]-\tfrac{i}{6}[S_1,[S_1,[S_1,H]]]+\cdots
 $$</p>
-<p>Using $O\beta=-\beta O$ and $E\beta=\beta E$, the three elementary commutators are</p>
+<p>the full transformed operator being this expression minus $i\hbar\partial/\partial t'$. Using $c_0O=-Oc_0$ and $c_0E=Ec_0$, the three elementary commutators are</p>
 <p>$$
-i[S_1,\beta mc^2]=-O,\qquad
-i[S_1,O]=\frac{\beta O^2}{mc^2},\qquad
-[S_1,[S_1,\beta mc^2]]=\frac{\beta O^2}{mc^2}.
+i[S_1,c_0mc^2]=-O,\qquad
+i[S_1,O]=\frac{c_0O^2}{mc^2},\qquad
+[S_1,[S_1,c_0mc^2]]=\frac{c_0O^2}{mc^2}.
 $$</p>
-<p>The first cancels the odd term $O$; the second and third combine into the even term $\frac{\beta O^2}{2mc^2}$, the leading non-relativistic energy. There is also a residual odd operator, of relative order $(v/c)^2$ compared with $O$,</p>
+<p>The first cancels the odd term $O$. The second contributes $+\frac{c_0O^2}{mc^2}$ to the expansion and the third contributes $-\frac12$ of the same, so together they give $+\frac{c_0O^2}{2mc^2}$, the leading non-relativistic energy. There is also a residual odd operator, of relative order $(v/c)^2$ compared with $O$ for a Coulomb field,</p>
 <p>$$
-O_1=i[S_1,E]=\frac{iϙ}{2mc}\,\beta\,\boldsymbol\alpha\cdot\vec E,
+O_1=i[S_1,E]
+=\frac{i}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}[\pi_k,E]
+=\frac{i}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}(i\hbarϙE_k)
+=-\frac{\hbarϙ}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}E_k,
 $$</p>
-<p>which the second transformation $S_2=-\frac{i}{2mc^2}\beta O_1$ removes. To the order at which the first physical corrections appear, therefore,</p>
+<p>which the second transformation $S_2=-\frac{i}{2mc^2}c_0O_1$ removes. To the order at which the first physical corrections appear, therefore,</p>
 <p>$$
-H_1=\beta mc^2+ϙ\phi_0+\frac{\beta O^2}{2mc^2}+O_1+O(c^{-2}).
+H_1=c_0mc^2+ϙ\Phi+\frac{c_0O^2}{2mc^2}+O_1+O(c^{-2}).
 $$</p>
-<p><em>Step 5: evaluating $O^2$.</em> With $\alpha_i\alpha_j=\delta_{ij}+i\sum_k\varepsilon_{ijk}\Sigma_k$ and $\Sigma_k=\mathrm{diag}(\sigma_k,\sigma_k)$,</p>
+<p>The omitted even term of order $c^{-2}$ is the second-order term $-\tfrac12[S_1,[S_1,E]]$; it is evaluated in Problem 3.</p>
+<p><em>Step 5: evaluating $O^2$.</em> With $\alpha_k=L_{\vec e_k}R_{\vec e_z}$ and $L_aR_bL_cR_d=L_{ac}R_{db}$,</p>
 <p>$$
-O^2=c^2\big(\vec\pi^2+i\,\boldsymbol\Sigma\cdot(\vec\pi\times\vec\pi)\big).
+\alpha_j\alpha_k=L_{\vec e_j}R_{\vec e_z}L_{\vec e_k}R_{\vec e_z}
+=L_{\vec e_j\vec e_k}R_{-e_t}
+=-L_{\vec e_j\vec e_k}
+=\delta_{jk}-\epsilon_{jkl}L_{\vec e_l},
 $$</p>
-<p>Since $O$ is block-off-diagonal, its square is block-diagonal, so the odd part of $H_1$ is exactly $O_1$ and the even part, beyond the rest energy, is $ϙ\phi_0+\beta O^2/(2mc^2)$. In the upper (large) block, $\beta\to+1$ and $\boldsymbol\Sigma\to\boldsymbol\sigma$, so</p>
+<p>since $\vec e_j\vec e_k=-\delta_{jk}+\epsilon_{jkl}\vec e_l$. Therefore</p>
 <p>$$
-H_{\rm large}=mc^2+ϙ\phi_0+\frac{\vec\pi^2-ϙ\,\boldsymbol\sigma\cdot\vec B}{2m}+O(c^{-2}),
+O^2=c^2\alpha_j\alpha_k\pi_j\pi_k
+=c^2\left(\vec\pi^2-\epsilon_{jkl}L_{\vec e_l}\pi_j\pi_k\right).
 $$</p>
-<p>where the evaluation of $\vec\pi\times\vec\pi$ is carried out in Problem 2. Subtracting the rest energy,</p>
+<p>The commutator of the kinetic momenta is evaluated in Problem 2; here its consequence is $\epsilon_{jkl}\pi_j\pi_k=i\hbarϙB_l$, so</p>
 <p>$$
-\boxed{\;i\hbar\,\partial/\partial t'\,\phi=\left[\frac{(p-ϙ\vec A)^2}{2m}+ϙ\phi_0-\frac{ϙ\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\phi\;}
+O^2=c^2\left(\vec\pi^2-i\hbarϙL_{\vec e_l}B_l\right)
+=c^2\left(\vec\pi^2-\hbarϙ\,iL_{\vec e_l}B_l\right).
+$$</p>
+<p>Since $O$ is block off-diagonal, its square is block diagonal; $O^2$ is even and commutes with $c_0$. In the upper (large) block, $c_0\to+1$ and the spin cell $iL_{\vec e_l}\to\sigma_l$, so</p>
+<p>$$
+O^2_{\rm large}=c^2\left(\vec\pi^2-\hbarϙ\,\boldsymbol\sigma\cdot\vec B\right),
+\qquad
+H_{\rm large}=mc^2+ϙ\Phi+\frac{\vec\pi^2-ϙ\hbar\,\boldsymbol\sigma\cdot\vec B}{2m}+O(c^{-2}).
+$$</p>
+<p>Subtracting the rest energy,</p>
+<p>$$
+\boxed{\;i\hbar\,\partial/\partial t'\,\phi=\left[\frac{(p-ϙ\vec A)^2}{2m}+ϙ\Phi-\frac{ϙ\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\phi\;}
 $$</p>
 <p>which is the Pauli equation exactly as the parent reports it. The coefficient $1/2m$ is the whole content of the $g=2$ result of Problem 2: it is produced by the $2mc^2$ in the denominator of the small-component elimination, not put in by hand.</p>
-<h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math77">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
+<h2 id="problem-2-minimal-substitution-the-electromagnetic-terms-and-math119">Problem 2: Minimal substitution, the electromagnetic terms, and $g=2$</h2>
 <p><strong>Statement.</strong> Carry out the minimal substitution, evaluate the electromagnetic terms it generates, and verify the gyromagnetic factor $g=2$ together with the biquaternion form of the spin term.</p>
 <p><strong>Solution.</strong></p>
-<p><em>Step 1: the substitution.</em> The parent's convention is $D_\mu=\partial/\partial Q_\mu+iqA_\mu$, which in this mostly-minus metric is equivalent to</p>
+<p><em>Step 1: the substitution.</em> The parent's minimal coupling replaces the four-momentum by $p_\mu-ϙA_\mu$, with the four-potential $A_\mu=(\Phi,-\vec A)$ in this mostly-minus metric. The spatial components give $p\to p-ϙ\vec A$, and the time component gives</p>
 <p>$$
-p\ \longrightarrow\ p-ϙ\vec A,\qquad i\partial/\partial t'\ \longrightarrow\ i\partial/\partial t'-ϙ\phi_0 ,
+i\partial/\partial t'\ \longrightarrow\ i\partial/\partial t'-ϙ\Phi ,
 $$</p>
-<p>i.e. $\vec\pi=p-ϙ\vec A$ and the electrostatic energy $ϙ\phi_0$ collected in $V=ϙ\phi_0$. This is the mostly-minus form of the covariant derivative; the reader should note that the mostly-plus convention uses $D_\mu=\partial/\partial Q_\mu-iqA_\mu$, and that the sign of $A_\mu=(\phi_0,-\vec A)$ is tied to the metric. Within this article the statement above is used throughout, and it reproduces the standard Hamiltonian $H=c\boldsymbol\alpha\cdot(p-ϙ\vec A)+\beta mc^2+ϙ\phi_0$.</p>
+<p>that is $\vec\pi=p-ϙ\vec A$ and the electrostatic energy $ϙ\Phi$ collected in $V=ϙ\Phi$. The sign of the coupling is tied to the metric and to the convention for $A_\mu$; the mostly-plus convention often writes the opposite sign. Within this article the statement above is used throughout, and it reproduces the standard Hamiltonian $H=c\sum_k\alpha_k(p_k-ϙA_k)+c_0mc^2+ϙ\Phi$, with $\alpha_k=c_0c_k$.</p>
 <p><em>Step 2: the commutator of the kinetic momenta.</em> With $p=-i\hbar\nabla$,</p>
 <p>$$
-[\pi_i,\pi_j]=-ϙ\big([p_i,A_j]+[A_i,p_j]\big)
-=-ϙ\big(-i\hbar\partial/\partial Q_i\,A_j+i\hbar\partial/\partial Q_j\,A_i\big)
+[\pi_i,\pi_j]=-ϙ\bigl([p_i,A_j]+[A_i,p_j]\bigr)
+=-ϙ\bigl(-i\hbar\partial/\partial Q_i\,A_j+i\hbar\partial/\partial Q_j\,A_i\bigr)
 =i\hbar ϙ\,\epsilon_{ijk}B_k ,
 $$</p>
 <p>so that</p>
@@ -174,7 +282,7 @@ $$</p>
 (\boldsymbol\sigma\cdot\vec a)(\boldsymbol\sigma\cdot\vec b)
 =\vec a\cdot\vec b\,I_2+i\,\boldsymbol\sigma\cdot(\vec a\times\vec b),
 $$</p>
-<p>valid for any two vectors whose components commute with one another. Applying it to $\vec a=\vec b=\vec\pi$ and using Step 2,</p>
+<p>valid whenever the matrices $\sigma_k$ commute with every component $a_i$ and $b_j$. The components $a_i$ and $b_j$ need not commute among themselves, provided the cross product is read with the operator ordering kept. Applying it to $\vec a=\vec b=\vec\pi$ and using Step 2,</p>
 <p>$$
 (\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2+i\,\boldsymbol\sigma\cdot(\vec\pi\times\vec\pi)
 =\vec\pi^2+i\,\boldsymbol\sigma\cdot(i\hbar ϙ\vec B)
@@ -197,76 +305,95 @@ $$</p>
 \vec\mu_e=-\frac{e}{m_e}\vec S=-g\frac{e}{2m_e}\vec S,\qquad g=2,
 $$</p>
 <p>whose magnitude at $S_z=\hbar/2$ is one Bohr magneton $\mu_B=e\hbar/2m_e$. The measured anomalous part $a=(g-2)/2\approx\alpha/2\pi$ is a radiative correction that lies outside the equation treated here.</p>
-<p><em>Step 5: the biquaternion form.</em> Under the isomorphism $\sigma_k\leftrightarrow i\vec e_k$, a magnetic field written as the pure real quaternion $\vec B=\sum_k B_k \vec e_k$ maps the spin term to</p>
+<p><em>Step 5: the biquaternion form.</em> Under the isomorphism $\sigma_k\leftrightarrow i\vec e_k$, the spin cell $iL_{\vec e_k}$ is the biquaternion representative of $\sigma_k$ on the upper block, and a magnetic field written as the pure real quaternion $\vec B=\sum_k B_k \vec e_k$ maps the spin term to</p>
 <p>$$
 -\frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B\ \longleftrightarrow\ -\frac{ϙ\hbar}{2m}\,i\vec B\ \in\ \mathbb M_+ ,
 $$</p>
-<p>the Hermitian element of the informational sector, exactly as the parent states. The kinetic and electrostatic terms multiply the identity and map to the scalar part $(\vec\pi^2/2m)e_t$ and $ϙ\phi_0 e_t$ of $\mathbb M_+$.</p>
-<p><em>Numerical checks.</em> The commutator identity of Step 2 was verified by finite differences on a grid with $\vec A=(-y,0,0)$, for which $\vec B=(0,0,1)$; the operator identity $[\pi_x,\pi_y]\psi=iqB_z\psi$ was confirmed at five test points with a maximum absolute error $4.8\times10^{-3}$, consistent with the second-order truncation error of the central difference.</p>
+<p>the Hermitian element of the informational sector, exactly as the parent states. The kinetic and electrostatic terms multiply the identity and map to the scalar part $(\vec\pi^2/2m)e_t$ and $ϙ\Phi e_t$ of $\mathbb M_+$.</p>
+<p><em>Numerical check.</em> The commutator identity of Step 2 was verified by finite differences on a $41\times41$ grid with spacing $h=0.1$ on $[-2,2]^2$, with $\vec A=(-y,0,0)$, for which $\vec B=(0,0,1)$, and with the smooth test function $\psi=\exp(-(x^2+y^2))\cos(2x)\sin(3y)$. With $ϙ=\hbar=1$, the identity $[\pi_x,\pi_y]\psi=iB_z\psi$ was confirmed at the interior points with a maximum absolute error $4.8\times10^{-2}$; halving the spacing to $h=0.05$ gave $1.2\times10^{-2}$, the factor four of the second-order central difference.</p>
 <h2 id="problem-3-the-spinorbit-and-darwin-terms-at-the-next-order">Problem 3: The spin–orbit and Darwin terms at the next order</h2>
 <p><strong>Statement.</strong> Extend the elimination to the next order in $1/c$ and obtain the relativistic kinetic correction, the Darwin term, and the spin–orbit coupling.</p>
-<p><strong>Solution.</strong> This order is <em>not</em> contained in the parent article, which stops at the leading Pauli Hamiltonian. It is obtained by the second Foldy–Wouthuysen step.</p>
-<p><em>Step 1: the second generator.</em> The odd remainder of $H_1$ is $O_1=\dfrac{iϙ}{2mc}\beta\boldsymbol\alpha\cdot\vec E$, and the transformation that removes it is</p>
+<p><strong>Solution.</strong> This order is <em>not</em> contained in the parent article, which stops at the leading Pauli Hamiltonian. The even terms of order $c^{-2}$ have two sources. The second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin and spin–orbit couplings; the expansion of the free large-block energy gives the relativistic kinetic correction. The second transformation removes the residual odd term $O_1$ and adds no even term at this order.</p>
+<p><em>Step 1: the even term of the first transformation.</em> From Step 4 of Problem 1,</p>
 <p>$$
-S_2=-\frac{i}{2mc^2}\,\beta O_1 .
+[S_1,E]=\frac{i\hbarϙ}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}E_k .
 $$</p>
-<p>Evaluating the expansion of $\exp(iS_2)H_1\exp(-iS_2)$ and using $[\boldsymbol\alpha\cdot\vec E,ϙ\phi_0]=0$ (the matrix $\boldsymbol\alpha$ is constant and $\vec E$ and $\phi_0$ are functions of position), the even terms of relative order $c^{-2}$ that survive are</p>
+<p>A direct use of the cell algebra, with $[S_1,E]$ above and $S_1=\frac{1}{2mc}\sum_j L_{\vec e_j}R_{\vec e_y}\pi_j$, gives</p>
 <p>$$
-H^{(2)}
-=-\frac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}
-+\frac{\hbar^2}{8m^2c^2}\nabla^2V
--\frac{ϙ\hbar}{4m^2c^2}\,\boldsymbol\sigma\cdot(\vec E\times\vec\pi),
+-\tfrac12[S_1,[S_1,E]]
+=-\frac{\hbarϙ}{4m^2c^2}\,iL_{\vec e_l}(E\times\vec\pi)_l
+-\frac{\hbar^2ϙ}{8m^2c^2}\,\nabla\cdot\vec E .
 $$</p>
-<p>with $V=ϙ\phi_0$ the potential energy. The first term is the expansion of the large-component energy $\sqrt{m^2c^4+(\boldsymbol\sigma\cdot\vec\pi)^2c^2}$; it is $(\boldsymbol\sigma\cdot\vec\pi)^4$, not $\vec\pi^4$, because $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-ϙ\hbar\boldsymbol\sigma\cdot\vec B$, so the two differ by $-ϙ\hbar(\vec\pi^2\boldsymbol\sigma\cdot\vec B+\boldsymbol\sigma\cdot\vec B\vec\pi^2)+(ϙ\hbar)^2(\boldsymbol\sigma\cdot\vec B)^2$, which is of the same $1/c^2$ order and is not dropped.</p>
-<p><em>Step 2: the Darwin term.</em> Since $\vec E=-\nabla\phi_0$ and $V=ϙ\phi_0$,</p>
+<p>The first term comes from the antisymmetric part of $\alpha_j\alpha_k=\delta_{jk}+i\epsilon_{jkl}S_l$; the second comes from the symmetric part. Since $\nabla\cdot\vec E=-\nabla^2V/ϙ$, the second term is the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)$. In the upper block, $iL_{\vec e_l}\to\sigma_l$, so the two terms read</p>
+<p>$$
+-\frac{\hbarϙ}{4m^2c^2}\,\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
+-\frac{\hbar^2ϙ}{8m^2c^2}\,\nabla\cdot\vec E .
+$$</p>
+<p><em>Step 2: the Darwin term.</em> Since $\vec E=-\nabla\Phi$ and $V=ϙ\Phi$,</p>
 <p>$$
 \frac{\hbar^2}{8m^2c^2}\nabla^2V=-\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E .
 $$</p>
 <p>This is the Darwin term. Its Hermiticity is immediate: $\nabla\cdot\vec E$ is a real function of position.</p>
-<p><em>Step 3: the spin–orbit term.</em> Since $\nabla V=ϙ\nabla\phi_0=-ϙ\vec E$,</p>
+<p><em>Step 3: the spin–orbit term.</em> Since $\nabla V=ϙ\nabla\Phi=-ϙ\vec E$,</p>
 <p>$$
 -\frac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
 =\frac{\hbar}{4m^2c^2}\,\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)
 =\frac{\hbar}{4m^2c^2}\,\frac1r\frac{dV}{dr}\,\boldsymbol\sigma\cdot\vec L
 \qquad(\text{central }V),
 $$</p>
-<p>where $\vec E\times\vec\pi$ has been written with $\vec E=-\nabla\phi_0$. For a central electrostatic field, whose vector potential may be neglected so that $\vec\pi\to p$, the last factor is the standard spin–orbit coupling with $\vec L=\vec r\times p$ and $\vec S=\tfrac\hbar2\boldsymbol\sigma$. The coefficient $1/(4m^2c^2)$ already contains the Thomas factor of $\tfrac12$: a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value, and the factor of $\tfrac12$ is the Thomas precession correction. With $\vec S=\tfrac\hbar2\boldsymbol\sigma$, the term reads $\dfrac{1}{2m^2c^2}\dfrac1r\dfrac{dV}{dr}\vec L\cdot\vec S$, the standard spin–orbit coupling.</p>
-<p><em>Step 4: the assembled Hamiltonian.</em> Collecting the leading and next-to-leading orders, the large-component Hamiltonian is</p>
+<p>where $\vec E\times\vec\pi$ has been written with $\vec E=-\nabla\Phi$. For a central electrostatic field, whose vector potential may be neglected so that $\vec\pi\to p$, the last factor is the standard spin–orbit coupling with $\vec L=\vec r\times p$ and $\vec S=\tfrac\hbar2\boldsymbol\sigma$. The coefficient $1/(4m^2c^2)$ already contains the Thomas factor of $\tfrac12$: a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value, and the factor of $\tfrac12$ is the Thomas precession correction. With $\vec S=\tfrac\hbar2\boldsymbol\sigma$, the term reads $\dfrac{1}{2m^2c^2}\dfrac1r\dfrac{dV}{dr}\vec L\cdot\vec S$, the standard spin–orbit coupling.</p>
+<p><em>Step 4: the relativistic kinetic correction.</em> The free large-block energy is the expansion of $\sqrt{m^2c^4+O^2}$, and the next term is fixed by the same $O^2$:</p>
+<p>$$
+\sqrt{m^2c^4+O^2}
+=mc^2+\frac{O^2}{2mc^2}-\frac{O^4}{8m^3c^6}+\cdots .
+$$</p>
+<p>In the upper block $O^4=c^4(\boldsymbol\sigma\cdot\vec\pi)^4$, so the correction is</p>
+<p>$$
+-\frac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}.
+$$</p>
+<p>It is $(\boldsymbol\sigma\cdot\vec\pi)^4$, not $\vec\pi^4$, because $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-ϙ\hbar\boldsymbol\sigma\cdot\vec B$; the difference is of the same $c^{-2}$ order and is not dropped.</p>
+<p><em>Step 5: the second generator and the assembled Hamiltonian.</em> The odd remainder is $O_1$, and the transformation that removes it is $S_2=-\frac{i}{2mc^2}c_0O_1$. With $O_1$ from Problem 1 and $c_0L_{\vec e_k}R_{\vec e_y}=-i\alpha_k$,</p>
+<p>$$
+c_0O_1=\frac{i\hbarϙ}{2mc}\sum_k\alpha_kE_k,
+\qquad
+S_2=-\frac{i}{2mc^2}c_0O_1=\frac{\hbarϙ}{4m^2c^3}\sum_k\alpha_kE_k .
+$$</p>
+<p>The transformation cancels $O_1$; its even terms are of higher order and are dropped. Collecting the leading and next-to-leading orders, the large-component Hamiltonian is</p>
 <p>$$
 \boxed{\;
-H=\frac{\vec\pi^2}{2m}+ϙ\phi_0-\frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B
+H=\frac{\vec\pi^2}{2m}+ϙ\Phi-\frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B
 -\frac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}
 +\frac{\hbar^2}{8m^2c^2}\nabla^2V
 -\frac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
 \;}
 $$</p>
 <p>to relative order $c^{-2}$. The first three terms are the Pauli Hamiltonian of Problem 1; the last three are the corrections that the parent article does not reach.</p>
-<p><em>Step 5: numerical verification against the exact Dirac spectrum.</em> The three corrections are fixed by their coefficients; a single overall check is therefore decisive. In a hydrogenic atom with nuclear charge $\mathfrak{Z}$, the first-order shifts of the four terms are, in natural units ($c=1$), as in the companion's derivation,</p>
+<p><em>Step 6: numerical verification against the exact Dirac spectrum.</em> The three corrections are fixed by their coefficients; a single overall check is therefore decisive. In a hydrogenic atom with nuclear charge $\mathfrak{Z}$, the first-order shifts of the three corrections are, in natural units ($c=1$), the standard ones,</p>
 <p>$$
 \Delta E_{\rm kin}=-\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\!\left[\frac{1}{\ell+\tfrac12}-\frac{3}{4n}\right],\qquad
-\Delta E_{\rm SO}=\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\frac{s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-\ell(\ell+1)-\tfrac34}{2\ell(\ell+\tfrac12)(\ell+1)},
+\Delta E_{\rm SO}=\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\frac{s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-\ell(\ell+1)-\tfrac34}{2\ell(\ell+\tfrac12)(\ell+1)}\quad(\ell\neq0),
 $$</p>
 <p>$$
 \Delta E_{\rm D}=\frac{m(\mathfrak{Z}\alpha)^4}{2n^3}\quad(\ell=0),\qquad \Delta E_{\rm D}=0\quad(\ell\neq0),
 $$</p>
-<p>with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4}{2n^3}\Big[\dfrac{1}{s_{\mathrm{tot}}+\tfrac12}-\dfrac{3}{4n}\Big]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, both $s_{\mathrm{tot}}=\ell\pm\tfrac12$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. An independent one-dimensional Foldy–Wouthuysen expansion, carried out symbolically to order $m^{-3}$ in a purely scalar potential, reproduces the four coefficients $1,+\tfrac12,+\tfrac18,-\tfrac18$ for $V$, $\vec\pi^2/2m$, $\nabla^2V/(8m^2c^2)$ and $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$ respectively. The Darwin sign is therefore $+\hbar^2\nabla^2V/(8m^2c^2)$, equivalently $-(ϙ\hbar^2/8m^2c^2)\nabla\cdot\vec E$.</p>
-<h2 id="problem-4-hermiticity-and-the-math176-decomposition">Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition</h2>
+<p>with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4}{2n^3}\Bigl[\dfrac{1}{s_{\mathrm{tot}}+\tfrac12}-\dfrac{3}{4n}\Bigr]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, with the allowed $s_{\mathrm{tot}}=\ell\pm\tfrac12$, one value at $\ell=0$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. The coefficients are also those of the two sources named at the head of this problem: the binomial coefficients $1,\tfrac12,-\tfrac18$ of $\sqrt{m^2c^4+O^2}$ and the Darwin coefficient $+\tfrac18$ of the second-order term.</p>
+<h2 id="problem-4-hermiticity-and-the-math240-decomposition">Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition</h2>
 <p><strong>Statement.</strong> Check the Hermiticity of every term and determine which terms lie in $\mathbb M_+$.</p>
 <p><strong>Solution.</strong></p>
 <p><em>Step 1: Hermiticity.</em> Each term of the Hamiltonian of Problem 3 is Hermitian:</p>
 <ul>
-<li>$\vec\pi^2/2m$: $\pi_i^\dagger=\pi_i$, hence $\pi_i\pi_i$ is Hermitian;</li>
-<li>$ϙ\phi_0$: multiplication by the real function $ϙ\phi_0$, Hermitian;</li>
+<li>$\vec\pi^2/2m$: $\pi_i^\dagger=\pi_i$, hence $\sum_i\pi_i^2$ is Hermitian;</li>
+<li>$ϙ\Phi$: multiplication by the real function $ϙ\Phi$, Hermitian;</li>
 <li>$-\dfrac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B$: $\sigma_k$ and the real field $B_k$ are Hermitian;</li>
-<li>$-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$: a real multiple of the Hermitian $(\boldsymbol\sigma\cdot\vec\pi)^2$;</li>
+<li>$-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$: minus a real multiple of the square of the Hermitian $(\boldsymbol\sigma\cdot\vec\pi)^2$;</li>
 <li>$\dfrac{\hbar^2}{8m^2c^2}\nabla^2V$: multiplication by a real function;</li>
 <li>$-\dfrac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$: this is the one term whose Hermiticity is not automatic. Using $[\pi_i,E_j]=-i\hbar\partial/\partial Q_i\,E_j$,</li>
 </ul>
 <p>$$
 (\vec E\times\vec\pi)_i^\dagger=(\vec E\times\vec\pi)_i+i\hbar(\nabla\times\vec E)_i ,
 $$</p>
-<p>so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nabla\phi_0$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nabla\phi_0=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part $-\partial/\partial t'\,\vec A$ and $\nabla\times\vec E=-\partial/\partial t'\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.</p>
-<p><em>Step 2: the $\mathbb M_+$ representatives.</em> Under the isomorphism, a Hermitian $2\times2$ matrix $h_tI_2+\vec h\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $h_te_t+i\vec h\in\mathbb M_+$; this was verified directly for 100 random Hermitian operators with maximum error $0$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,</p>
+<p>so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nabla\Phi$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nabla\Phi=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part $-\partial/\partial t'\,\vec A$ and $\nabla\times\vec E=-\partial/\partial t'\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.</p>
+<p><em>Step 2: the $\mathbb M_+$ representatives.</em> Under the isomorphism, a Hermitian $2\times2$ matrix $h_tI_2+\vec h\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $h_te_t+i\vec h\in\mathbb M_+$. Applying it term by term, with $\vec B=\sum_k B_k\vec e_k$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_k$,</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -282,13 +409,18 @@ $$</p>
 <td>$\mathbb M_+$</td>
 </tr>
 <tr>
-<td>$ϙ\phi_0$</td>
-<td>$(ϙ\phi_0)\,e_t$</td>
+<td>$ϙ\Phi$</td>
+<td>$(ϙ\Phi)\,e_t$</td>
 <td>$\mathbb M_+$</td>
 </tr>
 <tr>
 <td>$-\dfrac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B$</td>
 <td>$-\dfrac{ϙ\hbar}{2m}\,i\vec B$</td>
+<td>$\mathbb M_+$</td>
+</tr>
+<tr>
+<td>$-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$</td>
+<td>$-\dfrac{1}{8m^3c^2}\bigl(\vec\pi^2-\hbarϙ\,i\vec B\bigr)^2$</td>
 <td>$\mathbb M_+$</td>
 </tr>
 <tr>
@@ -307,22 +439,22 @@ $$</p>
 <p><em>Step 3: what does not land in $\mathbb M_+$.</em> Three classes of object in the reduction do not.</p>
 <ol>
 <li>
-<p><strong>The Clifford-odd operators.</strong> The mass term $\beta mc^2$ contains $\beta=iR_{\vec e_x}$, and the generator $S_1=-\frac{i}{2mc^2}\beta O$ contains $\beta O$. Both $\beta$ and $\beta O$ are odd products of the frame cells, whereas $\mathbb B\cong\mathrm{Cl}^+_{1,3}$ is the <em>even</em> subalgebra. They therefore have no representative in $\mathbb B$ at all, and a fortiori none in either $\mathbb M_\pm$. This is why the four-component Hamiltonian is not an element of $\mathbb B$ and why a transformation is needed before the biquaternion identification can be made: the Foldy–Wouthuysen transformation is exactly the operation that removes the Clifford-odd part and leaves an element of $\mathbb M_+$.</p>
+<p><strong>The Clifford-odd operators.</strong> The mass term $c_0mc^2$ contains the cell $c_0=iR_{\vec e_x}$, and the generator $S_1=-\frac{i}{2mc^2}c_0O$ contains $c_0O$. Their coefficient matrices are odd elements of the Clifford algebra, whereas $\mathbb B\cong\mathrm{Cl}^+_{1,3}$ is the <em>even</em> subalgebra and a left multiplication by a biquaternion has an even coefficient matrix. They therefore have no representative in $\mathbb B$ at all, and a fortiori none in either $\mathbb M_\pm$. This is why the four-component Hamiltonian is not an element of $\mathbb B$ and why a transformation is needed before the biquaternion identification can be made: the Foldy–Wouthuysen transformation is exactly the operation that removes the Clifford-odd part and leaves an element of $\mathbb M_+$.</p>
 </li>
 <li>
-<p><strong>The anti-Hermitian generator.</strong> $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb M_-$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb M_-$. It is not itself in $\mathbb M_-$, because it is built from the Clifford-odd element $\beta O$. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $\beta$, the $\mathbb M_\pm$ grading is by ${}^{*}$. Thus the odd operator $O=c\boldsymbol\alpha\cdot\vec\pi$ is Foldy–Wouthuysen-odd but Clifford-even and Hermitian, so as a biquaternion it lies in $\mathbb M_+$; while $\beta O$ is Foldy–Wouthuysen-odd, Clifford-odd and anti-Hermitian, and lies in neither $\mathbb B$ nor $\mathbb M_\pm$. The identification of "odd" with "not in $\mathbb M_+$" is incorrect.</p>
+<p><strong>The anti-Hermitian generator.</strong> $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb M_-$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb M_-$. It is not itself in $\mathbb M_-$, because it is built from the Clifford-odd element $c_0O$. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $c_0$, the $\mathbb M_\pm$ grading is by ${}^{*}$. Thus the odd operator $O=c\sum_k\alpha_k\pi_k$ is Foldy–Wouthuysen-odd but Clifford-even and Hermitian, so as a biquaternion it lies in $\mathbb M_+$; while $c_0O$ is Foldy–Wouthuysen-odd, Clifford-odd and anti-Hermitian, and lies in neither $\mathbb B$ nor $\mathbb M_\pm$. The identification of "odd" with "not in $\mathbb M_+$" is incorrect.</p>
 </li>
 <li>
-<p><strong>The real structure and the mass term.</strong> In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure, and it <em>preserves</em> the sectors: if $\tilde\Psi\in\mathbb M_+$ then $\tilde\Psi^\flat=-\tilde\Psi\in\mathbb M_+$, and if $\tilde\Psi\in\mathbb M_-$ then $\tilde\Psi^\flat=\tilde\Psi\in\mathbb M_-$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $m\tilde\Psi^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, which couples the two central ideals (the chiralities) and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy phase that is factored out before the reduction,</p>
+<p><strong>The real structure and the mass term.</strong> In the biquaternion equation the conjugation $\flat=-{}^{*}$ is the algebra's real structure. It maps $\mathbb M_+$ to $\mathbb M_-$ and fixes $\mathbb M_-$: if $\tilde\Psi\in\mathbb M_+$ then $\tilde\Psi^\flat=-\tilde\Psi\in\mathbb M_-$, and if $\tilde\Psi\in\mathbb M_-$ then $\tilde\Psi^\flat=\tilde\Psi$. Its action is diagonal on the sector decomposition with opposite signs $\mp1$: a coupling built on $\flat$ — a Majorana-type mass, $m\tilde\Psi^\flat$ — would carry those opposite signs. The parent's mass term is not that coupling; it is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, which couples the two central ideals (the chiralities) and leaves each element's sector membership untouched. The operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy phase that is factored out before the reduction,</p>
 </li>
 </ol>
 <p>$$
-\exp(-imc^2t'/\hbar)=\cos\!\Big(\frac{mc^2t'}{\hbar}\Big)e_t-\sin\!\Big(\frac{mc^2t'}{\hbar}\Big)(ie_t),
+\exp(-imc^2t'/\hbar)=\cos\!\Bigl(\frac{mc^2t'}{\hbar}\Bigr)e_t-\sin\!\Bigl(\frac{mc^2t'}{\hbar}\Bigr)(ie_t),
 $$</p>
 <p>is not Hermitian: its first term lies in $\mathbb M_+$ and its second in $\mathbb M_-$, since $ie_t$ is anti-Hermitian. It is a phase, not an observable, and must be factored out before a two-component (hence $\mathbb M_+$) description of the dynamics is reached.</p>
 <h2 id="problem-5-the-physical-dimensions-of-each-term">Problem 5: The physical dimensions of each term</h2>
 <p><strong>Statement.</strong> Determine the physical dimensions of each term.</p>
-<p><strong>Solution.</strong> Every term is an energy, since each is a term of a Hamiltonian. The individual coefficients nevertheless carry different powers of $\hbar$ and $c$, and checking them is a useful consistency test. In SI units, with $[\hbar]=\mathrm{kg\,m^2\,s^{-1}}$, $[c]=\mathrm{m\,s^{-1}}$, $[ϙ]=\mathrm C$, $[\phi_0]=\mathrm{V}=\mathrm{kg\,m^2\,s^{-3}A^{-1}}$, $[\vec B]=\mathrm T=\mathrm{kg\,s^{-2}A^{-1}}$ and $[\vec E]=\mathrm{V\,m^{-1}}=\mathrm{kg\,m\,s^{-3}A^{-1}}$:</p>
+<p><strong>Solution.</strong> Every term is an energy, since each is a term of a Hamiltonian. The individual coefficients nevertheless carry different powers of $\hbar$ and $c$, and checking them is a useful consistency test. In SI units, with $[\hbar]=\mathrm{kg\,m^2\,s^{-1}}$, $[c]=\mathrm{m\,s^{-1}}$, $[ϙ]=\mathrm C$, $[\Phi]=\mathrm V=\mathrm{kg\,m^2\,s^{-3}A^{-1}}$, $[\vec B]=\mathrm T=\mathrm{kg\,s^{-2}A^{-1}}$ and $[\vec E]=\mathrm{V\,m^{-1}}=\mathrm{kg\,m\,s^{-3}A^{-1}}$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -340,13 +472,13 @@ $$</p>
 <td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
 </tr>
 <tr>
-<td>$ϙ\phi_0$</td>
+<td>$ϙ\Phi$</td>
 <td>$\mathrm C$</td>
 <td>$\mathrm{kg\,m^2\,s^{-3}A^{-1}}$</td>
 <td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
 </tr>
 <tr>
-<td>$\dfrac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B$</td>
+<td>$-\dfrac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B$</td>
 <td>$\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$</td>
 <td>$\mathrm{kg\,s^{-2}A^{-1}}$</td>
 <td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
@@ -358,56 +490,66 @@ $$</p>
 <td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
 </tr>
 <tr>
-<td>$\dfrac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$</td>
+<td>$-\dfrac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$</td>
 <td>$\mathrm C\,\mathrm{kg\,m^2s^{-1}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$</td>
 <td>$\mathrm{kg^2m^2s^{-4}A^{-1}}$</td>
 <td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
 </tr>
 <tr>
-<td>$\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$</td>
+<td>$-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$</td>
 <td>$\mathrm{kg^{-3}m^{-2}s^{2}}$</td>
 <td>$\mathrm{kg^4m^4s^{-4}}$</td>
 <td>$\mathrm{kg\,m^2\,s^{-2}}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The pattern is informative. The leading terms ($\vec\pi^2/2m$, $ϙ\phi_0$, the spin term) carry no power of $c$; the three corrections each carry $c^{-2}$, which is the statement that they are relativistic corrections of order $v^2/c^2$. The spin term carries one power of $\hbar$ while the leading kinetic and electrostatic terms carry none, so the spin term vanishes formally in the classical limit $\hbar\to0$; this is the operator form of the statement that the magnetic moment of a point charge is a quantum effect. The Darwin and spin–orbit terms carry $\hbar^2$ and $\hbar$ respectively, and both survive the $\hbar\to0$ limit when divided by $\hbar$ in the corresponding classical spin–orbit coupling, which is the Thomas-precession energy.</p>
+<p>The pattern is informative. The leading terms ($\vec\pi^2/2m$, $ϙ\Phi$, the spin term) carry no power of $c$; the three corrections each carry $c^{-2}$, which is the statement that they are relativistic corrections of order $v^2/c^2$. The spin term carries one power of $\hbar$ in its coefficient, while the leading kinetic and electrostatic terms carry none. Written with $\vec S=\tfrac\hbar2\boldsymbol\sigma$, it is $-(ϙ/m)\vec S\cdot\vec B$, the classical coupling of a magnetic moment; the power of $\hbar$ is the conversion between the dimensionless $\boldsymbol\sigma$ and the spin. The Darwin term carries $\hbar^2$ and has no classical counterpart. The spin–orbit term carries one power of $\hbar$ in its coefficient, but it is quadratic in the angular momenta once $\vec S$ and $\vec L=\vec r\times\vec p$ are used, so it becomes the classical Thomas-precession coupling when $\vec S$ and $\vec L$ are classical.</p>
 <h2 id="the-gamma-formulation">The Gamma Formulation</h2>
-<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
-<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb C)=M_4(\mathbb C)$, not a different algebra. This is the only section of the article that names them.</p>
+<p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.</p>
 <p>$$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$</p>
-<p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
-<p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
-<p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
-$$
+<p>A single product $L_aR_b$ is a pure tensor; the pure products form the seven-dimensional cone of coefficient matrices of rank at most one, and a general element of the cell algebra is a sum of at most four of them.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality, the cell $-iR_{\vec e_z}$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>The dictionary is complex-linear; over $\mathbb R$ the products $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb R)\cong M_4(\mathbb R)$, and the four coordinate cells span $\mathrm{Cl}_{1,3}(\mathbb R)\cong M_2(\mathbb H)$.</p>
+<p><strong>The identities of the frame.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,</p>
+<p>$$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
-$$
-$$
+$$</p>
+<p>$$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
 [\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
-$$
-$$
+$$</p>
+<p>$$
 \mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
-$$
-$$
+$$</p>
+<p>$$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
-$$
-The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.</p>
+$$</p>
+<p>The four contraction sums are frame statements, because they follow from the cell squares alone. In the Euclidean frame, where every cell squares to $+I_4$, they are</p>
+<p>$$
+\sum_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
+\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
+$$</p>
+<p>$$
+\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha .
+$$</p>
+<p>In the mostly-minus frame of this article the metric signs enter and only the two-index sum stays a multiple of the identity, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the three higher sums are not rescaled versions of the Euclidean ones, which is why they are stated in the frame where the squares are all $+1$.</p>
+<p>With $\nu(t)=x$ and $\nu(k)=y$, the coordinate cell of $x_\mu$ is $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$; these are the cells $c_0=iR_{\vec e_x}$ and $c_k=iL_{\vec e_k}R_{\vec e_y}$ used throughout the body, and the gamma frame above is exactly this set, renamed.</p>
 <h2 id="summary">Summary</h2>
-<p>The non-relativistic limit of the biquaternion Dirac equation was carried through in five steps.</p>
-<p>The Foldy–Wouthuysen elimination of the small component, executed systematically with the generator $S_1=-\frac{i}{2mc^2}\beta O$, produces the Pauli Hamiltonian
-$i\hbar\partial/\partial t'\,\phi=\big[\vec\pi^2/2m+ϙ\phi_0-(ϙ\hbar/2m)\boldsymbol\sigma\cdot\vec B\big]\phi$,
-reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gives $[\pi_i,\pi_j]=i\hbar ϙ\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-ϙ\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(ϙ/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$ the second Foldy–Wouthuysen step adds the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$, the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(ϙ\hbar^2/8m^2c^2)\nabla\cdot\vec E$, and the spin–orbit coupling $-(ϙ\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.</p>
-<p>Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$; the objects that do not are the Clifford-odd pieces ($\beta mc^2$, $\beta O$), which have no representative in $\mathbb B$ at all, the anti-Hermitian generator $iS_1$, and the real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — together with the sector-exchanging rest-energy phase; the parent's mass term is the linear coupling between the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb M_\pm$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.</p>
+<p>The non-relativistic limit of the biquaternion Dirac equation was carried through in five steps, for the one-sided chiral pair read on the Dirac module. The two-sided form of the parent is a different operator, antilinear in its mass term, and is not reduced here.</p>
+<p>The Foldy–Wouthuysen elimination of the small component, executed systematically with the generator $S_1=-\frac{i}{2mc^2}c_0O=\frac{1}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}\pi_k$, produces the Pauli Hamiltonian
+$i\hbar\partial/\partial t'\,\phi=\big[\vec\pi^2/2m+ϙ\Phi-(ϙ\hbar/2m)\boldsymbol\sigma\cdot\vec B\big]\phi$,
+reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gives $[\pi_i,\pi_j]=i\hbar ϙ\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-ϙ\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(ϙ/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(ϙ\hbar^2/8m^2c^2)\nabla\cdot\vec E$ and the spin–orbit coupling $-(ϙ\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-block energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.</p>
+<p>Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$; the objects that do not are the Clifford-odd pieces ($c_0mc^2$, $c_0O$), which have no representative in $\mathbb B$ at all, the anti-Hermitian generator $iS_1$, and the real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — together with the sector-exchanging rest-energy phase; the parent's mass term is the linear coupling between the two chiralities. The Foldy–Wouthuysen grading by $c_0$ must not be confused with the $\mathbb M_\pm$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -434,15 +576,23 @@ reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gi
 <td>Isomorphism, Pauli matrices</td>
 </tr>
 <tr>
-<td>$iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $L_{a}R_{b}\psi=a\psi b$</td>
-<td>Frame cells in the mostly-minus convention; $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4$</td>
+<td>$L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_bL_cR_d=L_{ac}R_{db}$</td>
+<td>Left, right and two-sided multiplication</td>
 </tr>
 <tr>
-<td>$\beta=iR_{\vec e_x}$, $\alpha_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}$</td>
-<td>Dirac-basis matrices, the cells read with the timelike one diagonal</td>
+<td>$c_0=iR_{\vec e_x}$, $c_k=iL_{\vec e_k}R_{\vec e_y}$</td>
+<td>Coordinate cells; $c_0^2=1$, $c_k^2=-1$, $\{c_0,c_k\}=0$</td>
 </tr>
 <tr>
-<td>$g=\mathrm{diag}(+1,-1,-1,-1)$</td>
+<td>$\alpha_k=c_0c_k=L_{\vec e_k}R_{\vec e_z}$</td>
+<td>Velocity cell, after one use of $i^2=-1$</td>
+</tr>
+<tr>
+<td>$S_k=iL_{\vec e_k}$</td>
+<td>Spin cell; upper block $\sigma_k$, lower block $-\sigma_k$</td>
+</tr>
+<tr>
+<td>$g=\operatorname{diag}(+1,-1,-1,-1)$</td>
 <td>Clifford metric; $g=-\eta$</td>
 </tr>
 <tr>
@@ -454,20 +604,24 @@ reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gi
 <td>Magnetic, electric fields</td>
 </tr>
 <tr>
-<td>$V=ϙ\phi_0$</td>
+<td>$V=ϙ\Phi$</td>
 <td>Potential energy</td>
 </tr>
 <tr>
-<td>$H=\beta mc^2+O+E$, $O=c\boldsymbol\alpha\cdot\vec\pi$</td>
+<td>$H=c_0mc^2+O+E$, $O=c\sum_k\alpha_k\pi_k$</td>
 <td>Split Hamiltonian; odd part</td>
 </tr>
 <tr>
-<td>$S_1=-\frac{i}{2mc^2}\beta O$</td>
+<td>$S_1=-\frac{i}{2mc^2}c_0O=\frac{1}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}\pi_k$</td>
 <td>Foldy–Wouthuysen generator</td>
 </tr>
 <tr>
-<td>$O_1=\frac{iϙ}{2mc}\beta\boldsymbol\alpha\cdot\vec E$</td>
+<td>$O_1=i[S_1,E]=-\frac{\hbarϙ}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}E_k$</td>
 <td>Residual odd operator</td>
+</tr>
+<tr>
+<td>$S_2=-\frac{i}{2mc^2}c_0O_1=\frac{\hbarϙ}{4m^2c^3}\sum_k\alpha_kE_k$</td>
+<td>Second generator</td>
 </tr>
 <tr>
 <td>$\vec S=\tfrac\hbar2\boldsymbol\sigma$, $\vec\mu=g\frac{ϙ}{2m}\vec S$</td>
@@ -491,9 +645,12 @@ reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gi
 <li>J. J. Sakurai, <em>Advanced Quantum Mechanics</em> (Addison-Wesley, 1967), for the emergence of the Pauli equation and the spin–orbit coupling.</li>
 <li>W. Greiner, <em>Relativistic Quantum Mechanics: Wave Equations</em> (Springer, 2000), for a step-by-step Foldy–Wouthuysen and Pauli limit.</li>
 <li>C. Itzykson and J.-B. Zuber, <em>Quantum Field Theory</em> (McGraw-Hill, 1980), for the fine structure and the hydrogen spectrum.</li>
-<li>The companion articles of this series: <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>, <em>The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit</em>, and <a href="quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>, for the two forms and the mass.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a>, the parent of this exercise.</li>
+<li><a href="the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a>, for the transformation in the algebra.</li>
+<li><a href="quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, for the sector structure.</li>
+<li><a href="conventions-of-the-operators-and-the-calculus.html">Operator and Calculus Conventions</a>, for the cell calculus.</li>
 </ul>
-<p>Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
       </div>
     </main>
   </div>

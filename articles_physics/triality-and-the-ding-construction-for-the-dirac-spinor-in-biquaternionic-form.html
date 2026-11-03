@@ -71,12 +71,13 @@
         <h1 id="triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form"><strong>Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The triality of $\mathrm{Spin}(8)$ is the striking fact that the spin group of eight-dimensional Euclidean space has <strong>three</strong> eight-dimensional irreducible real representations — the vector $8_v$ and the two half-spinors $8_s, 8_c$ — and that an outer automorphism of order three permutes them cyclically. The associated invariant is a symmetric trilinear form, the composition law of the octonions, and the whole structure exists only in dimension eight. The mathematics of that case is recorded in the companion article <em>Triality and Spin(8) with Inner Conjugation</em>.</p>
-<p>In four-dimensional Minkowski space the three spaces do not coincide: a Lorentz vector has dimension four and each half-spinor has dimension four <em>real</em>, but they carry inequivalent representations and no outer automorphism permutes them. Liu Yu-Fen's observation is that a <strong>trilinear</strong> form nevertheless exists on the triple (Lorentz vector) $\times$ (semi-spinor of the first type) $\times$ (semi-spinor of the second type), built from the four generators of the Dirac module and a single pair of neutral elements, and that the resulting construction — which he calls a <strong>ding</strong> — is the four-dimensional analogue of Cartan's triality with the biquaternion algebra in place of the octonions. The order-three permutation is still there; what replaces the eight-dimensional coincidence of dimensions is the coincidence of the three real dimensions in $1+3$.</p>
-<p>This article records the construction, the trilinear and cubic invariant forms, the order-three map $J$, and the order-four braid maps that Liu calls "Dirac's game". It is the group-theoretic companion of <em>The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</em>, which carries the dictionary and the Lagrangian; this article carries the symmetry structure.</p>
-<p>The conventions are those of the companion articles: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and four-vector indices $\mu = 0,1,2,3$ carry the generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$.</p>
+<p>In four-dimensional Minkowski space the three spaces do not coincide. A Lorentz vector has four real components and each half-spinor has four real components, but they carry inequivalent representations and no outer automorphism permutes them. Liu Yu-Fen's observation is that a <strong>trilinear</strong> form nevertheless exists on the triple (Lorentz vector) $\times$ (semi-spinor of the first type) $\times$ (semi-spinor of the second type), built from the four generator cells of the Dirac module and the timelike neutral vector $k_\mu$, and that the resulting construction — which he calls a <strong>ding</strong> — is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions. The order-three permutation is still there. What replaces the coincidence of the three eight-dimensional representations is the coincidence of the three real dimensions in $1+3$.</p>
+<p>Two invariants come out of the construction and they are not the same object. The <strong>trilinear form</strong> $\varepsilon$ takes three arguments, one in each space, and is linear in each. The <strong>cubic form</strong> $C$ takes one vector and one spinor, is quadratic in the two semi-spinors, and splits into a quadratic part and the trilinear part. The source exhibits them together; this article keeps them apart, because the first is the triality invariant and the second is the interaction the dictionary of the companion article uses.</p>
+<p>This article records the construction, the two invariant forms, the order-three map $J$, and the order-four braid maps that Liu calls "Dirac's game". It is the group-theoretic companion of <em>The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</em>, which carries the dictionary and the Lagrangian; this article carries the symmetry structure.</p>
+<p>The conventions are those of the companion articles: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$ with $i^2 = -1$, and four-vector indices $\mu = 0,1,2,3$ carry the generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$. The imaginary unit is central: it commutes with the units, so two factors of $i$ in a product are one factor $-1$, and a display never leaves a double $i$ standing. No index is raised; a sum such as $B_\mu g_{\mu\nu}B_\nu$ carries its signs in the metric, and a sum such as $\sum_\mu\epsilon_\mu B_\mu B_\mu$ carries them in the sign vector $\epsilon = (1,-1,-1,-1)$; the two are the same number.</p>
 <h2 id="the-three-spaces">The Three Spaces</h2>
 <h3 id="the-spaces">The Spaces</h3>
-<p>Liu's construction lives on the product of three spaces:</p>
+<p>Liu's construction lives on the product of three spaces. The element $q$ is a unit biquaternion of the Lorentz group; it acts on the three spaces by three inequivalent linear maps, left multiplication $S_1(q)$, right multiplication $S_2(q)$, and the mixed map $\Lambda(q) : x \mapsto qxq^*$ on a coordinate vector. Each space is four-real-dimensional, and its carrier is a four-vector of components.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -100,59 +101,86 @@
 <td>Semi-spinor of the first type</td>
 <td>4</td>
 <td>$S_1(q)$</td>
-<td>$B_\mu$, $N_\mu$</td>
+<td>$B_\mu$</td>
 </tr>
 <tr>
 <td>$S_2$</td>
 <td>Semi-spinor of the second type</td>
 <td>4</td>
 <td>$S_2(q)$</td>
-<td>$N_\mu$, $B_\mu$</td>
+<td>$N_\mu$</td>
 </tr>
 </tbody>
 </table></div>
-<p>Here $q$ is a unit biquaternion of the Lorentz group, $S_1(q)$ is left multiplication, $S_2(q)$ right multiplication, and $\Lambda(q)$ the mixed map $x \mapsto qxq^*$ that acts on a coordinate vector. The semi-spinors $B_\mu$ and $N_\mu$ are the two real four-vectors of the s-vector representation, and the <strong>s-vector</strong> $G_\mu = B_\mu + iN_\mu$ is the complex combination of the two.</p>
-<h3 id="the-composition-law">The Composition Law</h3>
-<p>The building block is the matrix representation of the algebra on this four-dimensional carrier. Writing $e_\mu = i\vec u_{\mu}$ for the three spatial units in the trinomial basis, the units satisfy</p>
+<p>The semi-spinors $B_\mu$ and $N_\mu$ are the two real four-vectors of the s-vector representation, and the <strong>s-vector</strong> $G_\mu = B_\mu + iN_\mu$ is the complex combination of the two. The neutral vector is timelike, $k_\mu g_{\mu\nu}k_\nu = 1$; in the source's coordinate system $k = (1,0,0,0)$.</p>
+<h3 id="the-generator-cells">The Generator Cells</h3>
+<p>Each four-vector index carries a left unit and a right unit, $a_0 = e_t$, $a_k = \vec e_k$ and $b_0 = \vec e_x$, $b_k = \vec e_y$. A <strong>cell</strong> is a pair of multipliers, $L_{c}R_{d} : \Psi \mapsto c\Psi d$, and the four <strong>generator cells</strong> are</p>
 <p>$$
-\vec u_x\vec u_y\vec u_z = -I, \qquad \vec u_k^2 = -I, \qquad
-\vec u_x\vec u_y = \vec u_z, \quad \vec u_y\vec u_z = \vec u_x, \quad \vec u_z\vec u_x = \vec u_y,
+C_\mu = i L_{a_\mu}R_{b_\mu}, \qquad C_\mu\Psi = i a_\mu\Psi b_\mu .
 $$</p>
-<p>the quaternion relations of $\mathbb{B}$. An order-$\ell$ <strong>ding</strong> is an $\ell$-linear map on a product of the three spaces with values in $\mathbb{C}$ built from these units and a parameter $z \neq 0$. For each order the source exhibits the map explicitly; the invariant content of the construction is the low-order maps, which are the ones that can be contracted with the physical fields.</p>
-<h2 id="the-trilinear-and-cubic-forms">The Trilinear and Cubic Forms</h2>
-<h3 id="the-trilinear-form">The Trilinear Form</h3>
+<p>The cells are the objects the construction uses: the trilinear form, the cubic form and the Dirac operator are all built from them, and the name <em>generator</em> belongs to the four cells and to nothing else. Two cells compose as $(L_{c}R_{d})(L_{c'}R_{d'}) = L_{cc'}R_{d'd}$, so the product of two generators is</p>
+<p>$$
+C_\mu C_\nu = i^2\,L_{a_\mu a_\nu}R_{b_\nu b_\mu} = -L_{a_\mu a_\nu}R_{b_\nu b_\mu} .
+$$</p>
+<p>The two prefactors multiply to $i^2 = -1$, and what survives is a plain cell. That minus is the whole of the double $i$: it is used once, here, and it never appears in a display. The four generators obey the Clifford relations</p>
+<p>$$
+C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu},
+$$</p>
+<p>which fix their normalisation once the frame is chosen.</p>
+<p>The units they use are the quaternion ones of $\mathbb{B}$: $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$ cyclically, and $\vec e_x\vec e_y\vec e_z = -e_t$. The source realises them on a four-dimensional carrier by explicit matrices; the relations above are the algebra's and do not depend on that choice.</p>
+<h3 id="the-ding">The Ding</h3>
+<p>An order-$\ell$ <strong>ding</strong> is an $\ell$-linear map on a product of the three spaces with values in $\mathbb{C}$, built from the generator cells and the neutral elements. For each order the source exhibits the map explicitly. The invariant content of the construction is its two low-order maps, which are the ones that can be contracted with the physical fields; they are the subject of the next two sections.</p>
+<h2 id="the-trilinear-form">The Trilinear Form</h2>
+<h3 id="the-form">The Form</h3>
 <p>The order-three invariant is the source's <em>Ding-3</em>: the trilinear form</p>
 <p>$$
 \boxed{\;\varepsilon : \ M \times S_1 \times S_2 \longrightarrow \mathbb{C},
 \qquad
-\varepsilon(A, B, N) = 2\, A_\mu\, \varepsilon_{\nu\mu\lambda\sigma}k_\sigma\, B_\nu N_\lambda\;}.
+\varepsilon(A, B, N) = 2\, A_\mu\, \varepsilon_{\nu\mu\lambda\sigma}k_\sigma\, B_\nu N_\lambda\;},
 $$</p>
-<p>Equivalently, and this is the form that shows the two independent pieces, it is</p>
+<p>where $\varepsilon_{\mu\nu\lambda\rho}$ is the totally antisymmetric symbol of the four generators, defined below and normalised by $\varepsilon_{0123} = 1$. The factor two is not a convention of the symbol: it is the symmetrisation in the two semi-spinors. Each ordering of the two spinors contributes $\varepsilon_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$, and the symmetric sum carries the factor two.</p>
+<p>The contraction with the single vector $k$ makes the form a determinant. In the frame $k = (1,0,0,0)$ only the spatial parts of $A$, $B$ and $N$ survive, and</p>
 <p>$$
-\varepsilon(A, B, N) = A_\mu\Bigl[\, t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda \Bigr],
+\varepsilon(A,B,N) = 2\,\det\!\begin{pmatrix} A_1 & A_2 & A_3\\ B_1 & B_2 & B_3\\ N_1 & N_2 & N_3 \end{pmatrix},
 $$</p>
-<p>where the two symbols are read off the four generators. Write $a_0 = e_t$, $a_k = \vec e_k$ for the left unit an index carries and $b_0 = \vec e_x$, $b_k = \vec e_y$ for its right unit, with $\mathrm{Sc}$ the scalar part, so that generator $\mu$ acts on a spinor as $\Psi \mapsto i a_\mu \Psi b_\mu$. Then</p>
+<p>so the form vanishes whenever one of its three arguments is proportional to $k$. It is alternating in its three arguments, and that is why the cyclic map of the next section leaves it invariant.</p>
+<h3 id="the-geometric-interpretation">The Geometric Interpretation</h3>
+<p>The interpretation is Cartan's, in four dimensions. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the Clifford action composed with the invariant spinor pairing. Here the trilinear form on $M \times S_1 \times S_2$ is the cell action $A_\mu\,\bar\Psi_{(1)}C_\mu\Psi_{(2)}$, symmetrised in the two semi-spinors and evaluated on the neutral element $k$. It is the same construction in four dimensions, and it is the lowest-order invariant the four cells supply.</p>
+<h2 id="the-cubic-form-and-the-dictionary">The Cubic Form and the Dictionary</h2>
+<h3 id="the-cubic-form">The Cubic Form</h3>
+<p>Evaluated on a single spinor rather than on a triple, the same cells give the cubic form of the interaction. This object is quadratic in $B$ and $N$ and linear in $A$, and it splits:</p>
 <p>$$
-t_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu) = g_{\mu\nu}g_{\lambda\rho} + g_{\mu\rho}g_{\nu\lambda} - g_{\mu\lambda}g_{\nu\rho}
+C = A_\mu\,\bar\Psi\,C_\mu\Psi
+= A_\mu\,t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda .
 $$</p>
-<p>is the symmetric trace of the four generators, and</p>
+<p>The three-index symbols are the four-index ones contracted with the neutral vector, and they carry three indices only for brevity:</p>
 <p>$$
-\varepsilon_{\mu\nu\lambda\rho} = \mathrm{Sc}(e_t\, a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu\, \vec e_z)
+t_{\nu\mu\lambda} := t_{\nu\mu\lambda\sigma}k_\sigma, \qquad \varepsilon_{\nu\mu\lambda} := \varepsilon_{\nu\mu\lambda\sigma}k_\sigma .
 $$</p>
-<p>is the totally antisymmetric symbol, both contracted with the neutral vector $k$. The first bracket is the quadratic form on the semi-spinor, the second the genuinely cubic part; both are needed for the full invariant.</p>
-<p>The geometric interpretation is the same as Cartan's. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the Clifford action composed with the invariant spinor pairing. Here the trilinear form on $M \times S_1 \times S_2$ is the cell action $A_\mu \bar\Psi_{(1)}\, i a_\mu\Psi_{(2)} b_\mu$, symmetrised in the two semi-spinors and evaluated on the neutral elements: it is the same construction in four dimensions, and it is the only independent invariant of the triple.</p>
-<h3 id="the-cubic-form-and-the-dictionary">The Cubic Form and the Dictionary</h3>
-<p>When the same form is evaluated on a single spinor rather than on a triple, it gives the cubic form of the interaction,</p>
+<p>The four-index tensors are read off the generators, with $\mathrm{Sc}$ the scalar part of a biquaternion,</p>
 <p>$$
-C = A_\mu\,\bar\Psi\, i a_\mu\Psi b_\mu
-= A_\mu\, t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda .
+t_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu) = g_{\mu\nu}g_{\lambda\rho} + g_{\mu\rho}g_{\nu\lambda} - g_{\mu\lambda}g_{\nu\rho},
 $$</p>
-<p>Together with the two quadratic forms, with $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z$ the chirality,</p>
 <p>$$
-\bar\Psi\Psi = N_\nu N_\nu - B_\nu B_\nu, \qquad
-\bar\Psi\Gamma\Psi = -\tfrac12\bigl(G_\nu G_\nu - G^*_\nu G^{*}_{\nu}\bigr),
+\varepsilon_{\mu\nu\lambda\rho} = \mathrm{Sc}(e_t\, a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu\, \vec e_z)\,.
 $$</p>
-<p>the cubic form $C$ is the complete invariant content of the algebra: the quadratic forms define the metric on the two semi-spinor spaces, and the cubic form is the triality-invariant coupling of the vector to the pair. The dictionary of <em>The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</em> exhibits all of these as $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$.</p>
+<p>The first is symmetric under the interchange of its two index pairs, the second is totally antisymmetric with $\varepsilon_{0123} = 1$, and both identities hold on every index value. The same $t$ multiplies $B_\nu B_\lambda$ and $N_\nu N_\lambda$: the two semi-spinors enter the quadratic part with one coefficient and one sign, and the sign difference between the two sectors appears only in the quadratic forms of the next subsection. The last term of $C$ is the trilinear form itself, so the cubic form is the quadratic part plus $\varepsilon$.</p>
+<h3 id="the-quadratic-forms">The Quadratic Forms</h3>
+<p>The two quadratic forms are read on the same cells, with $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z = -iL_{e_t}R_{\vec e_z}$ the chirality,</p>
+<p>$$
+\bar\Psi\Psi = N_\mu g_{\mu\nu}N_\nu - B_\mu g_{\mu\nu}B_\nu ,
+$$</p>
+<p>$$
+\bar\Psi\Gamma\Psi = -2i\,B_\mu g_{\mu\nu}N_\nu .
+$$</p>
+<p>The first is the quadratic form of the spinor and is real, of indefinite sign. The second is the pseudoscalar and is purely imaginary, because $\Gamma$ anticommutes with every generator cell, $\Gamma C_\mu + C_\mu\Gamma = 0$. Written in the s-vector $G_\mu = B_\mu + iN_\mu$, with $G^{*}_\mu = B_\mu - iN_\mu$, the pair reads</p>
+<p>$$
+\bar\Psi\Psi = -\tfrac12\bigl(G_\mu g_{\mu\nu}G_\nu + G^{*}_\mu g_{\mu\nu}G^{*}_\nu\bigr),
+$$</p>
+<p>$$
+\bar\Psi\Gamma\Psi = -\tfrac12\bigl(G_\mu g_{\mu\nu}G_\nu - G^{*}_\mu g_{\mu\nu}G^{*}_\nu\bigr),
+$$</p>
+<p>so the quadratic form is minus the real part of $G_\mu g_{\mu\nu}G_\nu$ and the pseudoscalar is minus $i$ times its imaginary part. With the trilinear form and the two quadratic forms, $C$ is the complete invariant content of the algebra: the quadratic forms define the metric on the two semi-spinor spaces, and $C$ is the triality-invariant coupling of the vector to the pair. The dictionary of <em>The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</em> exhibits all of these as $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$.</p>
 <h2 id="the-ding-map">The Ding Map</h2>
 <h3 id="the-order-three-map">The Order-Three Map</h3>
 <p>The map</p>
@@ -163,8 +191,8 @@ $$</p>
 <p>$$
 \boxed{\;\varepsilon(J(A,B,N)) = \varepsilon(B, N, A) = \varepsilon(A, B, N)\;}.
 $$</p>
-<p>This is the four-dimensional triality. Its order is three, $J^3 = 1$, and it acts on the product of the three spaces, not inside any one of them: $J$ is not an inner automorphism of $\mathbb{B}$, it is an <em>outer</em> permutation of three inequivalent modules. That is exactly the situation of the Cartan triality, where the outer automorphism group of the $D_4$ diagram is $S_3$ and the three-node orbit is the three eight-dimensional representations. What is special to the four-dimensional case is that the three modules are the vector and the two semi-spinors of a <em>Lorentz</em> group, which have equal real dimension, and the invariant form is built from the four generators rather than from the octonion product.</p>
-<h3 id="the-quartic-diracs-game">The Quartic "Dirac's Game"</h3>
+<p>The invariance is the alternation of $\varepsilon$: a cyclic permutation of the three arguments is an even permutation. The order of $J$ is three, $J^3 = 1$, and it acts on the product of the three spaces, not inside any one of them. $J$ is not an inner automorphism of $\mathbb{B}$; it is an <em>outer</em> permutation of three inequivalent modules. That is exactly the situation of the Cartan triality, where the outer automorphism group of the $D_4$ diagram is $S_3$ and the three-node orbit is the three eight-dimensional representations. What is special to the four-dimensional case is that the three modules are the vector and the two semi-spinors of a <em>Lorentz</em> group, which have equal real dimension, and that the invariant form is built from the four generator cells rather than from the octonion product.</p>
+<h3 id="the-quartic-maps">The Quartic Maps</h3>
 <p>The source also exhibits order-four maps that act inside the triple and generalise the triality moves:</p>
 <p>$$
 q_x : \ (A, B, N) \mapsto (-B, A, N), \qquad
@@ -174,18 +202,23 @@ $$</p>
 <p>$$
 q_x^4 = 1, \qquad q_y^4 = 1,
 $$</p>
-<p>and they satisfy the braid relation</p>
+<p>with the squares $q_x^2 : (A,B,N) \mapsto (-A,-B,N)$ and $q_y^2 : (A,B,N) \mapsto (A,-B,-N)$, both involutions. They satisfy the braid relation</p>
 <p>$$
 \boxed{\;q_x q_y q_x = q_y q_x q_y\;},
 $$</p>
-<p>so they generate a quotient of the braid group $B_3$ on three strands. The name "Dirac's game" is the source's. The content is that the combination</p>
+<p>so they define a representation of the braid group $B_3$ on three strands, and the group they generate has order $24$.</p>
+<p>The two families are not independent. The product of the two generators is the square of the triality,</p>
 <p>$$
-q_x q_y q_y q_x
+q_x q_y : \ (A,B,N) \mapsto (N,A,B) = J^2 ,
 $$</p>
-<p>leaves the cubic form $C$ invariant. The order-four moves and the order-three $J$ together are the two families of symmetries of the triple that the construction supplies; the order-three family is the triality, the order-four family the braid.</p>
+<p>so $J$ lies in the group generated by $q_x$ and $q_y$: the order-three and the order-four moves are two elements of one group, not two separate structures. What the source names "Dirac's game" is the word</p>
+<p>$$
+q_x q_y q_y q_x = q_y^2 ,
+$$</p>
+<p>the simultaneous reversal of the two semi-spinors. That word leaves the cubic form $C$ invariant term by term: $B_\nu B_\lambda$ and $N_\nu N_\lambda$ are even under $B \mapsto -B$, $N \mapsto -N$, and so is the product $B_\nu N_\lambda$, while $A$ is untouched. The order-four family supplies the sign reversal that the order-three family does not.</p>
 <p>The contrast with Cartan's case is worth naming. There the triality automorphisms have order three and the braid-group promotion appears in the <em>octonionic</em> description, through the alternative laws $x(yz) = (xy)z$ obeyed only up to sign. Here the two families coexist as stated maps on the triple, because the algebra is associative and the maps are exhibited directly.</p>
 <h2 id="what-the-ding-is-and-is-not">What the Ding Is and Is Not</h2>
-<p><strong>It is</strong> a genuine order-three symmetry of the invariant trilinear form on the triple (vector, semi-spinor-1, semi-spinor-2). Every identity stated above — the trilinear form, the cubic decomposition, the invariance of $C$ under $J$, the braid relations and the invariance of $C$ under $q_xq_yq_yq_x$ — was recomputed on the corpus's convention and holds.</p>
+<p><strong>It is</strong> a genuine order-three symmetry of the invariant trilinear form on the triple (vector, semi-spinor-1, semi-spinor-2). Every identity stated above — the trilinear form and its determinant form, the cubic decomposition with its two three-index symbols, the two quadratic forms, the invariance of $\varepsilon$ under $J$, the orders of $q_x$ and $q_y$, the braid relation, the identity $q_xq_y = J^2$ and the invariance of $C$ under $q_xq_yq_yq_x$ — was recomputed on the corpus's convention and holds.</p>
 <p><strong>It is not</strong> a symmetry of the theory. The source is explicit: the ding is a map from one <em>description</em> of the theory to another description of the same theory, not a transformation of the physical fields. A symmetry of the theory would have to act on a single field configuration and leave the action invariant; $J$ permutes three different spaces, each of which is the same field read in a different representation. This is the same distinction the corpus draws for the triality of $\mathrm{Spin}(8)$: the triality automorphism is not a symmetry of an ordinary field theory either, it relates the vector and the two spinor descriptions.</p>
 <p><strong>It is not</strong> the octonionic triality. The algebra here is the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, which is associative and has zero divisors; the algebra of the Cartan case is the octonions, which are not associative. What the two share is the underlying reason: the normed condition — the existence of a composition law preserving the quadratic form — which by Hurwitz's theorem is possible only in dimensions $1, 2, 4$ and $8$. The four-dimensional case is the complexified quaternions; the eight-dimensional case is the octonions. The triality that the four-dimensional case supports is a <em>spin</em>-triality on the three four-real-dimensional modules, not the $\mathrm{Spin}(8)$ triality on the three eight-dimensional ones.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -197,7 +230,7 @@ $$</p>
 <p><strong>The relation to the Cartan case.</strong> The four-dimensional ding and the eight-dimensional triality are the $4$ and $8$ cases of the Hurwitz list. Is there a uniform construction for $1, 2, 4, 8$ — with the complex numbers, the quaternions and the octonions? The $1$- and $2$-dimensional cases are degenerate; the $4$- and $8$-dimensional cases are the ones Liu's construction and Cartan's triality treat.</p>
 </li>
 <li>
-<p><strong>The role of the braid group.</strong> The braid relation $q_xq_yq_x = q_yq_xq_y$ is the defining relation of $B_3$. The corpus's <em>Anyons and Braid Statistics in Biquaternionic Form</em> treats braid statistics as a physical phenomenon in $2+1$ dimensions. Is the braid structure used by the four-dimensional construction the same braid group, or only the same presentation?</p>
+<p><strong>The role of the braid group.</strong> The braid relation $q_xq_yq_x = q_yq_xq_y$ is the defining relation of $B_3$, and the two maps generate a group of order $24$, so they define a representation of $B_3$ with a finite image. The corpus's <em>Anyons and Braid Statistics in Biquaternionic Form</em> treats braid statistics as a physical phenomenon in $2+1$ dimensions. Is the braid structure used by the four-dimensional construction that same braid group, or only the same presentation?</p>
 </li>
 <li>
 <p><strong>The three-generation interpretation.</strong> A triality relates exactly three spaces. The Standard Model has exactly three generations of fermions. Whether the ding's order-three structure is the group-theoretic shadow of the three generations — or merely a numerical coincidence of the same number — is not addressed by the source, and the corpus records the observation only as a speculation.</p>
@@ -205,20 +238,24 @@ $$</p>
 </ol>
 <p>These questions are open.</p>
 <h2 id="the-gamma-formulation">The Gamma Formulation</h2>
-<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and in the cell notation they are the four generator cells with a name:</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_\mu = C_\mu, \qquad
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{e_x}R_{\vec e_y},\quad \gamma_2=iL_{e_y}R_{\vec e_y},\quad \gamma_3=iL_{e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z}.
 $$</p>
-<p>Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$: $L_{a}R_{b}\psi=a\psi b$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>Here $L_{c}R_{d}$ multiplies on the left by $c$ and on the right by $d$: $L_{c}R_{d}\psi=c\psi d$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.</p>
+<p>The frame obeys the Clifford relations $\{\gamma_\mu,\gamma_\nu\} = 2g_{\mu\nu}$ and the chirality relations $\gamma_5^2 = e_t$ and $\{\gamma_5,\gamma_\mu\} = 0$, with $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$; the sign in the last identity is the one that makes $\gamma_5$ the fifth generator and not its negative. $\gamma_5$ is the chirality $\Gamma$ itself, $\Gamma = -iL_{e_t}R_{\vec e_z} = \gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
-<p>A <strong>ding</strong> is an $\ell$-linear map on a product of the Lorentz-vector space $M$, the first-type semi-spinor space $S_1$ and the second-type semi-spinor space $S_2$, built from the biquaternion units $e_\mu = i\vec u_{\mu}$ and a nonzero parameter. The order-three ding is the invariant trilinear form</p>
+<p>A <strong>ding</strong> is an $\ell$-linear map on a product of the Lorentz-vector space $M$, the first-type semi-spinor space $S_1$ and the second-type semi-spinor space $S_2$, built from the four generator cells $C_\mu = iL_{a_\mu}R_{b_\mu}$ and the timelike neutral vector $k$. The order-three ding is the invariant trilinear form</p>
 <p>$$
-\varepsilon(A,B,N) = 2\,A_\mu\,\varepsilon_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda
-= A_\mu\bigl[t_{\nu\mu\lambda}(B_\nu B_\lambda + N_\nu N_\lambda) + 2\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda\bigr],
+\varepsilon(A,B,N) = 2\,A_\mu\,\varepsilon_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda,
 $$</p>
-<p>and its evaluation on a single spinor is the cubic form $A_\mu\bar\Psi\, i a_\mu\Psi b_\mu$. The order-three map $J : A \mapsto B \mapsto N \mapsto A$ permutes the three spaces and leaves $\varepsilon$ invariant; this is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and it exists because the three modules have equal real dimension in $1+3$. The order-four maps $q_x : (A,B,N) \mapsto (-B,A,N)$ and $q_y : (A,B,N) \mapsto (A,-N,B)$ satisfy $q_x^4 = q_y^4 = 1$ and the braid relation $q_xq_yq_x = q_yq_xq_y$, and the combination $q_xq_yq_yq_x$ leaves the cubic form invariant — "Dirac's game".</p>
+<p>alternating in its three arguments and equal to twice the determinant of the three spatial parts in a frame where $k=(1,0,0,0)$; its evaluation on a single spinor is the cubic form</p>
+<p>$$
+C = A_\mu\bar\Psi\,C_\mu\Psi = A_\mu t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda,
+$$</p>
+<p>with $t$ and $\varepsilon$ the generator traces contracted with $k$. The order-three map $J : A \mapsto B \mapsto N \mapsto A$ permutes the three spaces and leaves $\varepsilon$ invariant; this is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and it exists because the three modules have equal real dimension in $1+3$. The order-four maps $q_x : (A,B,N) \mapsto (-B,A,N)$ and $q_y : (A,B,N) \mapsto (A,-N,B)$ satisfy $q_x^4 = q_y^4 = 1$ and the braid relation $q_xq_yq_x = q_yq_xq_y$; their product is $q_xq_y = J^2$, so the order-three and the order-four moves generate one group, of order $24$, and the word $q_xq_yq_yq_x = q_y^2$ leaves the cubic form invariant — "Dirac's game".</p>
 <p>What the construction supplies is the symmetry structure of the triple; what it does not supply is a symmetry of the theory. The ding is a map between descriptions, not a transformation of the fields, and the algebra that carries it is the associative biquaternion algebra, not the octonions. Both cases are the $4$ and the $8$ of the Hurwitz list.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -246,6 +283,10 @@ $$</p>
 <td>s-Vector</td>
 </tr>
 <tr>
+<td>$k_\mu$</td>
+<td>Timelike neutral vector, $k_\mu g_{\mu\nu}k_\nu = 1$; $k=(1,0,0,0)$ in the source's frame</td>
+</tr>
+<tr>
 <td>$q$</td>
 <td>Unit biquaternion of the Lorentz group</td>
 </tr>
@@ -254,35 +295,47 @@ $$</p>
 <td>Left, right and mixed actions of $q$</td>
 </tr>
 <tr>
-<td>$e_\nu = i\vec u_{\nu}$</td>
-<td>Units of the trinomial basis, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$</td>
+<td>$a_\mu$, $b_\mu$</td>
+<td>Left and right units of the index: $a_0 = e_t$, $a_k = \vec e_k$, $b_0 = \vec e_x$, $b_k = \vec e_y$</td>
 </tr>
 <tr>
-<td>$a_\mu$, $b_\mu$</td>
-<td>Left and right units of generator $\mu$: $a_0 = e_t$, $a_k = \vec e_k$, $b_0 = \vec e_x$, $b_k = \vec e_y$</td>
+<td>$L_{c}R_{d} : \Psi\mapsto c\Psi d$</td>
+<td>Cell: a pair of multipliers, $(L_{c}R_{d})(L_{c'}R_{d'}) = L_{cc'}R_{d'd}$</td>
+</tr>
+<tr>
+<td>$C_\mu = iL_{a_\mu}R_{b_\mu}$</td>
+<td>Generator cell, $C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>$g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$</td>
+<td>Generator metric; no index is raised</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc}$</td>
 <td>Scalar part of a biquaternion</td>
 </tr>
 <tr>
-<td>$\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z$</td>
-<td>Chirality involution</td>
+<td>$\Gamma = -iL_{e_t}R_{\vec e_z}$</td>
+<td>Chirality involution, $\Gamma^2 = e_t$, $\Gamma C_\mu + C_\mu\Gamma = 0$</td>
 </tr>
 <tr>
-<td>$t_{\mu\nu\lambda\rho} = \mathrm{Sc}(a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu)$</td>
-<td>Symmetric trace of the four generators</td>
+<td>$t_{\mu\nu\lambda\rho}$</td>
+<td>Four-index generator trace, symmetric under the interchange of its two index pairs</td>
 </tr>
 <tr>
-<td>$\varepsilon_{\mu\nu\lambda\rho} = \mathrm{Sc}(e_t\,a_\mu a_\nu a_\lambda a_\rho)\,\mathrm{Sc}(b_\rho b_\lambda b_\nu b_\mu\,\vec e_z)$</td>
-<td>Totally antisymmetric symbol, $\varepsilon_{0123} = 1$</td>
+<td>$\varepsilon_{\mu\nu\lambda\rho}$</td>
+<td>Totally antisymmetric symbol of the generators, $\varepsilon_{0123} = 1$</td>
+</tr>
+<tr>
+<td>$t_{\nu\mu\lambda}$, $\varepsilon_{\nu\mu\lambda}$</td>
+<td>The same tensors contracted with $k_\sigma$</td>
 </tr>
 <tr>
 <td>$\varepsilon(A,B,N) = 2A_\mu\varepsilon_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$</td>
 <td>Order-three ding (the invariant trilinear form)</td>
 </tr>
 <tr>
-<td>$C = A_\mu\bar\Psi\, i a_\mu\Psi b_\mu$</td>
+<td>$C = A_\mu\bar\Psi\,C_\mu\Psi$</td>
 <td>Cubic form</td>
 </tr>
 <tr>

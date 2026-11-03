@@ -75,20 +75,21 @@
 <p>The findings, stated before the detail.</p>
 <ul>
 <li>The transformation the source proposes, its equation (8), reproduces the four Pauli matrices on the four quaternion units the source lists, and it does nothing else: it is not multiplicative and not injective, so it is not the matrix representation it is claimed to be. The classical matrix it invokes is a different matrix, and that one is a representation of the real quaternions but not of the complex quaternions.</li>
-<li>The spin operators and the two states the source builds do satisfy the angular-momentum algebra and the six eigenvalue equations, each verified here. Read in the corpus's algebra, however, the source's two states are not objects of the same kind: the up state is $\sqrt2$ times a Hermitian idempotent of $\mathbb{M}_+$, a pure-state idempotent, while the down state is $\sqrt2$ times a <strong>nilpotent</strong> element of the same minimal left ideal. The source's norm is the Hilbert–Schmidt norm, which is $1$ on both; the algebra norm $\langle\cdot\rangle_{\natural}$ vanishes on both.</li>
-<li>The rotation operators are unit-norm biquaternions and the sandwich action is correct, verified on the three axes. The single printed formula for the rotated components does not say which component is paired with which for each axis; recomputed, it is right for the cyclic pairing and carries the opposite sign for the reverse one, and the component along the axis is the invariant one in all three cases.</li>
-<li>The two states are orthonormal in the <strong>scalar part</strong>, $\mathrm{Sc}\left(\bar q_p^*q_q\right) = \delta_{pq}$, but not in the algebra product, where $\bar q_\pm^*q_\pm = e_t - i\vec e_x$ is a zero divisor rather than $e_t$. That scalar part is the corpus's Born pairing $\mathrm{Tr}(\tilde\Pi\tilde H^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$, and the source's probability example is that pairing used before it is named.</li>
-<li>The relativistic one-electron atom is the standard radial Dirac–Coulomb problem re-expressed. The system the source derives is the standard system; the quaternion wave function and the probability density are the standard solution and the sum of the squared moduli of its two spinor components. The spectrum is printed <strong>without the square on $Za_0$</strong>; with the square restored it is the standard Sommerfeld–Dirac formula and it reproduces the exact ground-state value, which the printed form does not.</li>
+<li>The spin operators and the two states the source builds do satisfy the angular-momentum algebra and the six eigenvalue equations, each verified here. Read in the corpus's algebra, however, the source's two states are not objects of the same kind: the up state is $\sqrt2$ times a Hermitian idempotent of $\mathbb{M}_+$, a pure-state idempotent, while the down state is $\sqrt2$ times a <strong>nilpotent</strong> element of the same minimal left ideal. The source's coefficient norm is $1$ on both; the algebra norm $\langle\cdot\rangle_{\natural}$ vanishes on both.</li>
+<li>The rotation operators are unit-norm biquaternions and the sandwich action is correct, verified on the three axes. The single printed formula for the rotated components does not say which component is paired with which for each axis; recomputed, the plus sign belongs to the pairings $(j,k)=(z,y)$ about $x$, $(x,z)$ about $y$ and $(y,x)$ about $z$, the reverse pairing carries the opposite sign, and the component along the axis is the invariant one in all three cases.</li>
+<li>The two states are orthonormal in the <strong>scalar part</strong>, $\mathrm{Sc}\left(q_p^*q_q\right) = \delta_{pq}$, but not in the algebra product, where $q_\pm^*q_\pm = e_t - i\vec e_x$ is a zero divisor rather than $e_t$. That scalar part is the corpus's Born pairing $\mathrm{Tr}(\tilde\Pi\tilde H^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$, and the source's probability example is that pairing used before it is named.</li>
+<li>The relativistic one-electron atom is the standard radial Dirac–Coulomb problem re-expressed. The system the source derives is the standard system; the quaternion wave function and the probability density are the standard solution and the sum of the squared moduli of its two spinor components. The spectrum is printed <strong>without the square on the ratio</strong>; with the ratio squared it is the standard Sommerfeld–Dirac formula and it reproduces the exact ground-state value, which the printed form does not.</li>
 <li>The section on the Pauli-matrix algebra has one parameter appearing twice and another not at all, so the correspondence printed there cannot be one-to-one.</li>
 </ul>
-<p>Throughout, $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ are the quaternion units, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; $i$ is the central scalar imaginary; $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the biquaternion algebra; $\mathsf{M}_2$ is the corpus's isomorphism $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu) = \sigma_\mu$; $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$ is the algebra norm; ${}^{*}$ is Hermitian conjugation, $\bar{\ }$ quaternion conjugation and $*$ complex conjugation. The source writes its complex quaternions with the same quaternion rules, and its "square norm" $|q|^2 = \mathrm{Sc}(q\bar q^*)$ is not $\langle\cdot\rangle_{\natural}$; the difference is used below and is not a notational one.</p>
+<p>Throughout, $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ are the quaternion units, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; $i$ is the central scalar imaginary, with $i^2=-1$, so every product of imaginary factors is simplified before it is displayed: $i\,i=-1$, $i(-i)=+1$ and $(-i)(-i)=-1$, while $i\vec e_\mu$ is a unit distinct from $\vec e_\mu$. $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the biquaternion algebra; $\mathsf{M}_2$ is the corpus's isomorphism $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ for $k=x,y,z$, and $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$; $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$ is the algebra norm; ${}^{\natural}$ is quaternion conjugation, $\bar{\ }$ complex conjugation and ${}^{*}$ Hermitian conjugation, so $q^{*}=\overline{q^{\natural}}$. The source writes its complex quaternions with the same quaternion rules, and its "square norm" $|q|^2 = \mathrm{Sc}(q q^*)$ is not $\langle\cdot\rangle_{\natural}$; the difference is used below and is not a notational one.</p>
 <h2 id="the-proposed-22-transformation">The Proposed 2×2 Transformation</h2>
 <h3 id="the-matrix-and-its-four-values">The matrix and its four values</h3>
 <p>The source proposes the assignment of a $2\times2$ complex matrix $A(q)$ to a complex quaternion $q = q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$,</p>
 <p>$$
-A(q) = \begin{pmatrix} q_t + iq_1 & q_y + iq_3 \\ q_y^* + (iq_3)^* & q_t - (iq_1)^* \end{pmatrix},
+A(q) = \begin{pmatrix} q_t + iq_1 & q_y + iq_3 \\ q_y^* + (iq_3)^* & q_t - (iq_1)^* \end{pmatrix}
+=\begin{pmatrix} q_t + iq_1 & q_y + iq_3 \\ \overline{q_y}-i\overline{q_3} & q_t + i\overline{q_1} \end{pmatrix},
 $$</p>
-<p>in its equation (8), where $q_1 := q_x$ and $q_3 := q_z$ are the source's coefficient labels and $^*$ is complex conjugation of the coefficient. The second row is written in the source in unsimplified form; in the notation of the first row its entries are $\overline{(q_y + iq_3)}$ and $q_t + iq_1^*$. The source then evaluates $A$ on four elements and finds the identity and the three Pauli matrices:</p>
+<p>in its equation (8), where $q_1 := q_x$ and $q_3 := q_z$ are the source's coefficient labels. The source's star on a coefficient is the complex conjugation of that scalar; it is written with an overbar here, so $(iq_3)^* = -i\overline{q_3}$ and $(iq_1)^* = -i\overline{q_1}$, since $i^*=-i$. The second row is printed in the source in unsimplified form; the second equality displays it simplified. The source then evaluates $A$ on four elements and finds the identity and the three Pauli matrices:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -127,30 +128,30 @@ $$</p>
 <p><strong>Proof by counterexample.</strong> $A(\vec e_x) = iI$, $A(\vec e_y) = \sigma_x$ and $A(\vec e_x \vec e_y) = A(\vec e_z)$; computed directly, $A(\vec e_x)A(\vec e_y)$ and $A(\vec e_x \vec e_y)$ differ in the second row, the entry $(2,1)$ being $+i$ in the product and $-i$ in the image of $\vec e_x \vec e_y$. On a hundred random pairs of complex quaternions the largest entrywise discrepancy between $A(qp)$ and $A(q)A(p)$ is of order $3\times10^1$, that is, of the size of the entries themselves. The same test on a hundred random pairs of <strong>real</strong> quaternions gives a discrepancy of order $10^1$: the failure is not an artefact of the complex coefficients. So $A$ fails to preserve products on the complex quaternions and on the real ones alike, and no algebraic statement may be carried through it.</p>
 <h3 id="the-transformation-is-not-injective">The transformation is not injective</h3>
 <p><strong>Statement.</strong> $A$ has a kernel of real dimension three.</p>
-<p><strong>Proof.</strong> The vanishing of $A(q)$ is the vanishing of the two entries $q_t + iq_1$ and $q_y + iq_3$ together with that of the diagonal entry $q_t + iq_1^*$. The first two give $q_t = -iq_1$ and $q_y = -iq_3$; the third then reads $i(q_x^* - q_x) = 0$, that is, $q_x$ real. The solutions are $q_x = x$ real, $q_t = -ix$, and $q_z$ an arbitrary complex number with $q_y = -iq_3$, which is a real three-dimensional space,</p>
+<p><strong>Proof.</strong> The vanishing of $A(q)$ is the vanishing of the two entries $q_t + iq_1$ and $q_y + iq_3$ together with that of the diagonal entry $q_t + i\overline{q_1}$. The first two give $q_t = -iq_1$ and $q_y = -iq_3$; the third then reads $i(\overline{q_x}-q_x)=0$, that is, $q_x$ real. The solutions are $q_x = x$ real, $q_t = -ix$, and $q_z$ an arbitrary complex number with $q_y = -iq_3$, which is a real three-dimensional space,</p>
 <p>$$
 \boxed{\;\ker A = \mathrm{span}_\mathbb{R}\left\{-ie_t + \vec e_x,\ -i\vec e_y + \vec e_z,\ \vec e_y + i\vec e_z\right\}\;}.
 $$</p>
 <p>The last generator spans, over $\mathbb{C}$, the whole complex line through $-\vec e_y - i\vec e_z$, and this is not an accidental coincidence: <strong>the source's own spin-down state lies in that line</strong>. Its state $q_- = (-\vec e_y - i\vec e_z)/\sqrt2$ is a complex multiple of the third generator, and $A(q_-) = 0$ on a hundred random complex multiples. So $A$ does not merely fail to preserve products; it annihilates one of the two states the source uses, and with it every other element of the down-state line. What the source's table exhibits is an assignment that agrees with a representation on four chosen elements, not a representation.</p>
-<h3 id="the-kravchenkoshapiro-matrix-and-the-corpuss-math95">The Kravchenko–Shapiro matrix, and the corpus's $\mathsf{M}_2$</h3>
+<h3 id="the-kravchenkoshapiro-matrix-and-the-corpuss-math110">The Kravchenko–Shapiro matrix, and the corpus's $\mathsf{M}_2$</h3>
 <p>The source attributes the matrix to Kravchenko and Shapiro. The matrix of that name is the assignment of</p>
 <p>$$
 \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}, \qquad z = q_t + iq_1, \quad w = q_y + iq_3 ,
 $$</p>
-<p>to $q = z + w\vec e_y$, and it is carried by the corpus in <em>The Element and Operator Representations</em> — with $z = q_t - iq_3$, $w = -q_y - iq_1$ there, a different choice of the compact splitting — as the matrix form of the <strong>real-quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$. Three things are true of it, each checked.</p>
+<p>to $q = z + w\vec e_y$, where the complex structure is left multiplication by $\vec e_x$, so $i\vec e_y=\vec e_z$ and $i\vec e_z=-\vec e_y$. It is carried by the corpus in <em>The $M_2(\mathbb{C})_{\mathbb{H}}$ Standard Representation</em> — with $z = q_t - iq_z$, $w = -q_y - iq_x$ there, a different choice of the compact splitting — as the matrix form of the <strong>real-quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$. Three things are true of it, each checked.</p>
 <ul>
 <li>It is multiplicative on the real quaternions: a hundred random pairs give a largest discrepancy of $10^{-15}$, machine precision.</li>
 <li>It is <strong>not</strong> multiplicative on the complex quaternions: a hundred random pairs give a largest discrepancy of order $3\times10^1$. The reason is structural and not accidental: the entries $-\bar w$ and $\bar z$ use complex conjugation, which is antilinear, and an antilinear operation cannot commute with the central $i$ of a complex-linear multiplication. The Kravchenko–Shapiro form is a representation of $\mathbb{H}$ over $\mathbb{C}$, not of $\mathbb{B}$.</li>
-<li>The source's $A$ is not this matrix. In the $z,w$ notation the source's second row is $+\bar w$ where the classical form has $-\bar w$, and its diagonal entry is $q_t + iq_1^*$ where the classical form has $\bar z = q_t^* - iq_1^*$. The source displays the classical form in the compact notation and then expands it into a different matrix.</li>
+<li>The source's $A$ is not this matrix. In the $z,w$ notation the source's second row is $+\bar w$ where the classical form has $-\bar w$, and its diagonal entry is $q_t + i\overline{q_1}$ where the classical form has $\bar z = \overline{q_t}-i\overline{q_1}$. The source displays the classical form in the compact notation and then expands it into a different matrix.</li>
 </ul>
-<p>The corpus's own isomorphism is the complex-linear one, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu) = \sigma_\mu$, and it is multiplicative on the complex quaternions to machine precision on a hundred random pairs. It is the map that survives the step to $\mathbb{B}$, and it is the map in which the source's own spin operators must be read if the corpus's conventions are kept. In $\mathsf{M}_2$ the two matrices the source substitutes in its hydrogen section are not the units it substitutes: the source writes $\alpha_r = -i\vec e_y$ and $\beta = -i\vec e_x$, consistent with its own table, while the corpus's $\mathsf{M}_2$ sends $i\vec e_y\mapsto\sigma_y$ and $i\vec e_z\mapsto\sigma_z$. A reader who carries $\mathsf{M}_2$ across the source's page and keeps the source's pair of units will be two axes and one sign away from the matrices intended. The mismatch is a convention mismatch, not an error of the source, which is self-consistent with its own table throughout.</p>
+<p>The corpus's own isomorphism is the complex-linear one, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$, and it is multiplicative on the complex quaternions to machine precision on a hundred random pairs. It is the map that survives the step to $\mathbb{B}$, and it is the map in which the source's own spin operators must be read if the corpus's conventions are kept. In $\mathsf{M}_2$ the two matrices the source substitutes in its hydrogen section are not the images of the units it substitutes: the source writes $\alpha_r = -i\vec e_y$ and $\beta = -i\vec e_x$, consistent with its own table, while $\mathsf{M}_2(-i\vec e_y)=-\sigma_y$ and $\mathsf{M}_2(-i\vec e_x)=-\sigma_x$. The pair of units that reproduces the matrices the source intends, $\sigma_y$ and $\sigma_z$, is $i\vec e_y$ and $i\vec e_z$, since $\mathsf{M}_2(i\vec e_y)=\sigma_y$ and $\mathsf{M}_2(i\vec e_z)=\sigma_z$. A reader who carries $\mathsf{M}_2$ across the source's page and keeps the source's pair of units therefore lands on $-\sigma_y$ and $-\sigma_x$, whereas the source intends $\sigma_y$ and $\sigma_z$: one axis is exchanged and both signs are reversed. The mismatch is a convention mismatch, not an error of the source, which is self-consistent with its own table throughout.</p>
 <h2 id="the-spin-operators-and-the-states">The Spin Operators and the States</h2>
 <h3 id="the-operators">The operators</h3>
 <p>The source's spin operators are its equations (9)–(11),</p>
 <p>$$
 S_x = \frac{\hbar}{2}(-i\vec e_z), \qquad S_y = \frac{\hbar}{2}(-i\vec e_y), \qquad S_z = \frac{\hbar}{2}(-i\vec e_x).
 $$</p>
-<p>Their commutation relations were recomputed: $[S_x,S_y] = i\hbar S_z$, $[S_y,S_z] = i\hbar S_x$ and $[S_z,S_x] = i\hbar S_y$ hold exactly, with no residual term. So the three elements are a spin-$\tfrac12$ representation of the angular-momentum algebra in the algebra's own product, and that part of the source needs no correction. The corpus's spin operators are $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$; the source's are the corpus's with the axes reversed and an overall sign, $S_x = -\tilde S_3$, $S_y = -\tilde S_2$, $S_z = -\tilde S_1$, so the two sets are equal as algebras and different as identifications. Under $\mathsf{M}_2$ the source's $S_x$ is $-S_z$, not $S_x$; under the source's own $A$ it is $\sigma_x$. Both interpretations are consistent inside their own convention, and they are not the same interpretation.</p>
+<p>Their commutation relations were recomputed: $[S_x,S_y] = i\hbar S_z$, $[S_y,S_z] = i\hbar S_x$ and $[S_z,S_x] = i\hbar S_y$ hold exactly, with no residual term. So the three elements are a spin-$\tfrac12$ representation of the angular-momentum algebra in the algebra's own product, and that part of the source needs no correction. The corpus's spin operators are $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$; the source's are the corpus's with the $x$ and $z$ axes exchanged and an overall sign, $S_x = -\tilde S_3$, $S_y = -\tilde S_2$, $S_z = -\tilde S_1$, so the two sets are equal as algebras and different as identifications. Under $\mathsf{M}_2$ the source's $S_x$ has image $-\tfrac{\hbar}{2}\sigma_z$, which is $-\mathsf{M}_2(\tilde S_z)$, not $\mathsf{M}_2(\tilde S_x)=\tfrac{\hbar}{2}\sigma_x$; under the source's own $A$ its image is $\tfrac{\hbar}{2}\sigma_x$. Both interpretations are consistent inside their own convention, and they are not the same interpretation.</p>
 <h3 id="the-states">The states</h3>
 <p>The source's states are its equations (12) and (13),</p>
 <p>$$
@@ -183,13 +184,13 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The entry worth pausing on is the second in the first column. The source displays the product $S_xq_-$ and reads off $q_+$ with the positive sign, and that is what direct multiplication gives; the sign is right and the flipped sign would be wrong. The four orthogonality and normalisation statements that follow in the source were also recomputed: $\bar q_+^*\,q_- = 0$, and the source's norm is $1$ on both states. Its dual states are $\bar q_\pm^*$, which coincide with the states themselves for $q_+$ and differ for $q_-$.</p>
+<p>The entry worth pausing on is the second in the first column. The source displays the product $S_xq_-$ and reads off $q_+$ with the positive sign, and that is what direct multiplication gives; the sign is right and the flipped sign would be wrong. The four orthogonality and normalisation statements that follow in the source were also recomputed: $q_+^*q_- = 0$, and the source's norm is $1$ on both states. Its dual states are $q_\pm^*$, which coincide with the states themselves for $q_+$ and differ for $q_-$.</p>
 <h3 id="the-states-read-in-the-corpuss-algebra">The states read in the corpus's algebra</h3>
-<p>The source's normalisation is $|q|^2 = \mathrm{Sc}(q\bar q^*) = \sum_\mu \left(\mathrm{Re}\,q_\mu\right)^2 + \left(\mathrm{Im}\,q_\mu\right)^2$, the sum of the squared moduli of the coefficients. It is the Hilbert–Schmidt norm of the image matrix, and it is not the algebra norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, which is complex in general. On the source's two states the two forms disagree completely: the source's norm gives $1$ on each, verified, while</p>
+<p>The source's normalisation is $|q|^2 = \mathrm{Sc}(q q^*) = \sum_\mu \left(\mathrm{Re}\,q_\mu\right)^2 + \left(\mathrm{Im}\,q_\mu\right)^2$, the sum of the squared moduli of the coefficients. It is, up to the factor $2$, the squared Hilbert–Schmidt norm of the image matrix $A(q)$: $\lVert A(q)\rVert_{\mathrm{HS}}^2 = 2\sum_\mu\lvert q_\mu\rvert^2 = 2\lvert q\rvert^2$. It is not the algebra norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, which is complex in general. On the source's two states the two forms disagree completely: the source's norm gives $1$ on each, verified, while</p>
 <p>$$
 \boxed{\;\langle q_+\rangle_{\natural} = 0, \qquad \langle q_-\rangle_{\natural} = 0\;}.
 $$</p>
-<p>Both are zero divisors, which is what rank-one matrices are, and the source itself expects this where it says that in the complex quaternions "there are certain objects called zero divisors" and that the inverse is lost. The consequence for the interpretation of the states is sharper than the source draws. Dividing each state by $\sqrt2$ gives an element of the algebra, and the two elements so obtained are of different kinds:</p>
+<p>Both are zero divisors: after division by $\sqrt2$, $q_+$ gives a rank-one idempotent and $q_-$ a nilpotent, and the source itself expects this where it says that in the complex quaternions "there are certain objects called zero divisors" and that the inverse is lost. The consequence for the interpretation of the states is sharper than the source draws. Dividing each state by $\sqrt2$ gives an element of the algebra, and the two elements so obtained are of different kinds:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -219,24 +220,56 @@ $$</p>
 </table></div>
 <p>$\tilde\Pi_1$ is Hermitian, idempotent and of trace $1$, hence an idempotent of $\mathbb{M}_+$ and, by <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, a pure-state idempotent; $\tilde\Pi^{\mathrm{nil}}$ is not idempotent at all but <strong>nilpotent</strong>, with $\tilde\Pi^{\mathrm{nil}}\tilde\Pi_1 = \tilde\Pi^{\mathrm{nil}}$ and $\tilde\Pi_1\tilde\Pi^{\mathrm{nil}} = 0$, so it is a null element of the same minimal left ideal rather than the complementary idempotent, which is $\tfrac12(e_t + i\vec e_x)$. So the source's spin-up state is a pure-state idempotent up to the factor $\sqrt2$, and its spin-down state is not: the pair is one idempotent and one nilpotent. The source's norm cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. In the corpus's interpretation the two pure states of the spin are the idempotents $\tilde\Pi_{1,2} = \tfrac12(e_t \pm i\vec e_x)$ of the $\vec e_x$ direction, and the source's pair is not that pair.</p>
 <h2 id="the-rotation-operators">The Rotation Operators</h2>
-<p>The source's rotation operator and its conjugate are</p>
+<p>The source writes $D^\dagger$ for the conjugate; in the corpus's marks the Hermitian conjugate of an element is $D^{*}$, the dagger being reserved for operators, so the same object is written $D^{*}$ here. The source's rotation operator and its conjugate are</p>
 <p>$$
-D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i\left(q_p\cdot n\right)\sin\frac{\varphi}{2}, \qquad D^\dagger(n,\varphi) = e_t\cos\frac{\varphi}{2} + i\left(q_p\cdot n\right)\sin\frac{\varphi}{2},
+D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i\left(q_p\cdot n\right)\sin\frac{\varphi}{2},
+\qquad
+D^{*}(n,\varphi) = e_t\cos\frac{\varphi}{2} + i\left(q_p\cdot n\right)\sin\frac{\varphi}{2},
 $$</p>
-<p>with $q_p$ the three units written as a vector and $n$ the axis; for the three axes the source's (14)–(16) read $D(x,\varphi) = e_t\cos\tfrac{\varphi}{2} - \vec e_z\sin\tfrac{\varphi}{2}$, and the same with $\vec e_y$ for $y$ and $\vec e_x$ for $z$. These are unit-norm biquaternions in the corpus's sense: $D^\dagger D = e_t$ was recomputed for each axis and holds exactly, so the objects are rotors and the corpus's rotor theory applies to them unchanged.</p>
-<p>With $\varphi = 0.7$ about the source's $x$-axis, for instance,</p>
+<p>with $q_p\cdot n=-i(\vec e\cdot n)$ the source's spin vector, not the vector of units $\vec e\cdot n$, and $n$ the axis. Since $-i(-i)=i^2=-1$, the general formula reduces to</p>
 <p>$$
-\boxed{\;D^\dagger S_xD = S_x, \qquad D^\dagger S_yD = \cos\varphi\,S_y + \sin\varphi\,S_z, \qquad D^\dagger S_zD = \cos\varphi\,S_z - \sin\varphi\,S_y\;},
+D(n,\varphi)=e_t\cos\frac{\varphi}{2}-(\vec e\cdot n)\sin\frac{\varphi}{2},
+\qquad
+D^{*}(n,\varphi)=e_t\cos\frac{\varphi}{2}+(\vec e\cdot n)\sin\frac{\varphi}{2}.
 $$</p>
-<p>the component along the axis being invariant and the two transverse components rotating into one another in the standard sense, and the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17), $D^\dagger(n_i,\varphi)S_jD(n_i,\varphi) = \tfrac{\hbar}{2}\left(q_j\cos\varphi + q_k\sin\varphi\right)$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the reader must take the pairing from the computation, and the invariant component $j = i$ is not covered by the pattern at all.</p>
+<p>For the three axes the source's (14)–(16) read</p>
+<p>$$
+\begin{aligned}
+D(x,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_z\sin\frac{\varphi}{2},\\
+D(y,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_y\sin\frac{\varphi}{2},\\
+D(z,\varphi) &= e_t\cos\frac{\varphi}{2}-\vec e_x\sin\frac{\varphi}{2}.
+\end{aligned}
+$$</p>
+<p>These are unit-norm biquaternions in the corpus's sense: $D^{*} D=e_t$ was recomputed for each axis and holds exactly, so the objects are rotors and the corpus's rotor theory applies to them unchanged.</p>
+<p>For the source's $x$-axis, whose unit is $\vec e_z$, the sandwich action is</p>
+<p>$$
+\boxed{\;
+\begin{aligned}
+D^{*} S_xD &= S_x,\\
+D^{*} S_yD &= \cos\varphi\,S_y-\sin\varphi\,S_z,\\
+D^{*} S_zD &= \cos\varphi\,S_z+\sin\varphi\,S_y.
+\end{aligned}\;}
+$$</p>
+<p>The component along the axis is invariant and the two transverse components rotate into one another in the standard sense; the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17),</p>
+<p>$$
+D^{*}(n_a,\varphi)S_jD(n_a,\varphi)=\frac{\hbar}{2}\left(q_j\cos\varphi+q_k\sin\varphi\right),
+$$</p>
+<p>where $q_j=-i\vec e_j$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the plus sign belongs to $(j,k)=(z,y)$ about $x$, $(x,z)$ about $y$ and $(y,x)$ about $z$, the reverse pairing carries the opposite sign, and the component along the axis is not covered by the pattern at all.</p>
 <h2 id="the-raising-and-lowering-operators">The Raising and Lowering Operators</h2>
-<p>The source defines $S_+ = S_x + iS_y$ and $S_- = S_x - iS_y$ and, in units $\hbar=1$, finds the two quaternion elements</p>
+<p>The source prints $S_+ = \tfrac12(S_x + iS_y)$ and $S_- = \tfrac12(S_x - iS_y)$; with its own $S_x,S_y$ from (9)–(10) the factor $\tfrac12$ is spurious, and the values it prints in (18)–(19) are those of $S_x\pm iS_y$ with $\hbar=1$. Indeed, using $i(-i)=+1$,</p>
 <p>$$
-\tfrac12\left(\vec e_y - i\vec e_z\right) = S_+, \qquad \tfrac12\left(-\vec e_y - i\vec e_z\right) = S_-,
+S_+ = S_x+iS_y = \frac{\hbar}{2}\left(-i\vec e_z+\vec e_y\right)=\frac{\hbar}{2}\left(\vec e_y-i\vec e_z\right),
 $$</p>
-<p>which were recomputed. The raising and lowering behaviour is correct: $S_+q_- = q_+$, $S_+q_+ = 0$, $S_-q_- = 0$ and $S_-q_+ = q_-$, all verified. Two remarks belong to the notation. The first is that the source's statement that the two operators are obtained from one another by complex quaternionic conjugation holds up to a sign: the identity $S_- = -\overline{S_+^*}$ was verified and the signless form $S_- = +\overline{S_+^*}$ fails, so the claim is true in prose only if the sign is supplied. The second is an overload: the symbols $q_+$ and $q_-$ denote the two <strong>states</strong> in the source's (12)–(13) and the two <strong>operators</strong> in its (18)–(19), and these are different elements — the states are $\sqrt2$ times an idempotent and a nilpotent, the operators are real vectors. The coincidence is not accidental, since the state $q_-$ is $\sqrt2$ times the operator $S_-$, but a reader who carries a symbol across the two uses will be carrying the wrong element.</p>
+<p>$$
+S_- = S_x-iS_y = \frac{\hbar}{2}\left(-i\vec e_z-\vec e_y\right)=\frac{\hbar}{2}\left(-\vec e_y-i\vec e_z\right),
+$$</p>
+<p>so in units $\hbar=1$ the two elements are</p>
+<p>$$
+S_+=\tfrac12\left(\vec e_y-i\vec e_z\right),\qquad S_-=\tfrac12\left(-\vec e_y-i\vec e_z\right),
+$$</p>
+<p>which were recomputed. The raising and lowering behaviour is correct: $S_+q_- = q_+$, $S_+q_+ = 0$, $S_-q_- = 0$ and $S_-q_+ = q_-$, all verified. Two remarks belong to the notation. The first is that the source's statement that the two operators are obtained from one another by complex quaternionic conjugation is correct: the identity $S_- = S_+^*$ holds, and the negative form $S_- = -S_+^*$ fails. The second is an overload: the symbols $q_+$ and $q_-$ denote the two <strong>states</strong> in the source's (12)–(13) and the two <strong>operators</strong> in its (18)–(19), and these are different elements — the states are $\sqrt2$ times an idempotent and a nilpotent, the operators are pure vectors, with no scalar part. The coincidence is not accidental, since the state $q_-$ is $\sqrt2$ times the operator $S_-$, but a reader who carries a symbol across the two uses will be carrying the wrong element.</p>
 <h2 id="the-spinor-functions">The Spinor Functions</h2>
-<p>The source's equation (20) encodes the two-component spinor harmonic — written there with the two radicals $C_1 = \sqrt{l\pm s_{\mathrm{tot},z}+\tfrac12}$ and $C_2 = \sqrt{l\mp s_{\mathrm{tot},z}+\tfrac12}$, and without the normalising factor $1/\sqrt{2l+1}$ that the standard harmonic carries, so that the source's $C$'s are the radicals as printed — as the single quaternion</p>
+<p>The source's equation (20) encodes the two-component spinor harmonic — written there with two coefficients $C_1,C_2$, which the source identifies as the Clebsch–Gordan coefficients of the case — as the single quaternion</p>
 <p>$$
 \frac{1}{\sqrt2}\left(C_1Y_l^{s_{\mathrm{tot},z}-\frac12}e_t - iC_1Y_l^{s_{\mathrm{tot},z}-\frac12}\vec e_x - C_2Y_l^{s_{\mathrm{tot},z}+\frac12}\vec e_y - iC_2Y_l^{s_{\mathrm{tot},z}+\frac12}\vec e_z\right),
 $$</p>
@@ -245,7 +278,7 @@ $$</p>
 C_1Y_l^{s_{\mathrm{tot},z}-\frac12}\,q_+ + C_2Y_l^{s_{\mathrm{tot},z}+\frac12}\,q_- ,
 $$</p>
 <p>the expansion of the angular spinor in the source's own two states, with the two components of the column as the coefficients. So the encoding is faithful and its convention is the same one that the states of the previous sections are written in. It is also the step that a corpus reader has to notice: the object on the left is a <strong>spinor</strong>, an element of the defining module $S$ of the algebra, and the object on the right is an element of the algebra. The corpus's articles keep the two apart — the state is a spinor, the idempotent is the state operator — and the source's representation writes the state and the state's operator as elements of one space.</p>
-<p>The probability example that closes the section is the measurement of the down state on the $l = 2$ harmonic, $y = C_1Y_2^1q_+ + C_2Y_2^2q_-$ with $C_1 = \sqrt{2/5}$ and $C_2 = \sqrt{1/5}$, and the source's result is $\tfrac15\lvert Y_2^2\rvert^2$. The two states are orthonormal <strong>in the scalar part</strong>: $\mathrm{Sc}\left(\bar q_p^*q_q\right) = \delta_{pq}$ was verified on the four pairs. The full products are not, however, the identity element: $\bar q_+^*q_+ = \bar q_-^*q_- = e_t - i\vec e_x$, a zero divisor, so the source's dual is a dual only at the level of the scalar part. That scalar part is exactly what the corpus's trace formula $\mathrm{Tr}(\tilde\Pi\tilde H^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$ pairs with, and the source's probability example is that pairing used before it is named: $\mathrm{Sc}\left(\bar q_-^*y\right) = C_2Y_2^2$ on a hundred random harmonic amplitudes, whence the squared modulus $\tfrac15\lvert Y_2^2\rvert^2$. The source's "orthogonality and normalisation", in other words, are true statements about the scalar part and not about the algebra product, which is the same distinction the corpus's Born rule draws.</p>
+<p>The probability example that closes the section is the measurement of the down state on the $l = 2$ harmonic, $y = C_1Y_2^1q_+ + C_2Y_2^2q_-$ with $C_1 = \sqrt{2/5}$ and $C_2 = \sqrt{1/5}$, and the source's result is $\tfrac15\lvert Y_2^2\rvert^2$. The two states are orthonormal <strong>in the scalar part</strong>: $\mathrm{Sc}\left(q_p^*q_q\right) = \delta_{pq}$ was verified on the four pairs. The full products are not, however, the identity element: $q_+^*q_+ = q_-^*q_- = e_t - i\vec e_x$, a zero divisor, so the source's dual is a dual only at the level of the scalar part. That scalar part is exactly what the corpus's trace formula $\mathrm{Tr}(\tilde\Pi\tilde H^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$ pairs with, and the source's probability example is that pairing used before it is named: $\mathrm{Sc}\left(q_-^*y\right) = C_2Y_2^2$ on a hundred random harmonic amplitudes, whence the squared modulus $\tfrac15\lvert Y_2^2\rvert^2$. The source's "orthogonality and normalisation", in other words, are true statements about the scalar part and not about the algebra product, which is the same distinction the corpus's Born rule draws.</p>
 <h2 id="the-relativistic-one-electron-atom">The Relativistic One-Electron Atom</h2>
 <h3 id="the-sources-route">The source's route</h3>
 <p>The source's section 1 solves the problem by the standard matrix route and states the answer; its section 6 re-solves it in the quaternion representation. In the radial equation the two $2\times2$ matrices are replaced by their quaternion images $\alpha_r = -i\vec e_y$ and $\beta = -i\vec e_x$, and the radial function is written as a biquaternion,</p>
@@ -254,26 +287,39 @@ R(r) = \frac{1}{r}\left(F(r)\left(e_t - i\vec e_x\right) + G(r)\left(-\vec e_y -
 $$</p>
 <p>whose two basis elements are, up to the factor $\sqrt2$, the two states of the previous sections: the pair $(F,G)$ is encoded exactly as the two-component spinor of the angular part was, $R = \tfrac{\sqrt2}{r}(Fq_+ + Gq_-)$. So the radial reduction is a two-component reduction, the $2\times2$ matrices being those that act on the pair $(F,G)$, and the encoded object is not the four-component bispinor. Expanding the equation in the two basis elements separates it into the two coupled first-order equations</p>
 <p>$$
--c\hbar\frac{dG}{dr} - \frac{c\hbar k}{r}G + mc^2F - \frac{z\hbar ca_0}{r}F = EF, \qquad c\hbar\frac{dF}{dr} - \frac{c\hbar k}{r}F - mc^2G - \frac{z\hbar ca_0}{r}G = EG,
+\begin{aligned}
+-c\hbar\frac{dG}{dr} - \frac{c\hbar k}{r}G + mc^2F - \frac{z\hbar ca_0}{r}F &= EF,\\
+c\hbar\frac{dF}{dr} - \frac{c\hbar k}{r}F - mc^2G - \frac{z\hbar ca_0}{r}G &= EG.
+\end{aligned}
 $$</p>
-<p>which is the same pair the source's matrix route prints, $k$ the Dirac–Coulomb quantum number and $z a_0$ the Coulomb coupling in units of $\hbar c$. The two displays were compared entrywise and are the same system; the system itself is the standard radial Dirac–Coulomb one, its $1/r$ terms, mass terms and coupling being those of the textbook problem in the source's conventions. Its closed-form solution is given by the source as Laguerre polynomials in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular spinors multiplied by $F(\rho)$ and $G(\rho)$, written first as a two-component column and then as the single quaternion of its equations (25) and (26), with the dual in (27). The scalar part of $\bar\Psi^*\Psi$, its (28), is the sum of the squared moduli of the two spinor components with $F^2$ and $G^2$ attached, and its (29) is that sum integrated over the angular variables,</p>
+<p>which is the same pair the source's matrix route prints, $k$ the Dirac–Coulomb quantum number and $za_0$ the Coulomb coupling in units of $\hbar c$. The two displays were compared entrywise and are the same system; the system itself is the standard radial Dirac–Coulomb one, its $1/r$ terms, mass terms and coupling being those of the textbook problem in the source's conventions. Its closed-form solution is given by the source as Laguerre polynomials in $\rho = Cr$ with $C = \sqrt{m^2c^4 - E^2}/(\hbar c)$ and $s = \sqrt{k^2 - z^2a_0^2}$, and its wave function is the pair of angular spinors multiplied by $F(\rho)$ and $G(\rho)$, written first as a two-component column and then as the single quaternion of its equations (25) and (26), with the dual in (27). The scalar part of $\Psi^*\Psi$, its (28), is $1/r^2$ times the sum of the squared moduli of the two spinor components with $F^2$ and $G^2$ attached. Its (29) integrates that density over the angular variables, and the density is</p>
 <p>$$
-\rho = \int_{-a}^{a}\frac{1}{r^2}\left(C_1^2\left(Y_k^{s_{\mathrm{tot},z}-\frac12}\right)^2F(r)^2 + C_2^2\left(Y_k^{s_{\mathrm{tot},z}+\frac12}\right)^2F(r)^2 + C_3^2\left(Y_{-k}^{s_{\mathrm{tot},z}-\frac12}\right)^2G(r)^2 + C_4^2\left(Y_{-k}^{s_{\mathrm{tot},z}+\frac12}\right)^2G(r)^2\right)d\Omega ,
+\begin{aligned}
+\rho(\theta,\phi)=\frac{1}{r^2}\Bigl(&C_1^2\left\lvert Y_k^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2F(r)^2
++C_2^2\left\lvert Y_k^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2F(r)^2\\
+&+C_3^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}-\frac12}\right\rvert^2G(r)^2
++C_4^2\left\lvert Y_{-k}^{s_{\mathrm{tot},z}+\frac12}\right\rvert^2G(r)^2\Bigr),
+\end{aligned}
 $$</p>
-<p>which is the standard probability density of the two-component radial solution. (The source calls this probability $\rho$, the same letter it uses for the radial variable $\rho = Cr$ in the closed forms; the collision is the source's, and the two are kept apart here by context.) The structure of (28) and (29) was checked against (25) and (26) and is consistent with them. The closed forms of $F(\rho)$ and $G(\rho)$ were <strong>not</strong> independently recomputed: the radicals and the Laguerre arguments do not survive extraction from the source's file in a form that can be transcribed without guesswork, and a half-guessed formula is worse than a recorded one. They are recorded as printed and marked unverified.</p>
+<p>with the angular probability $\int_{S^2}\rho(\theta,\phi)\,d\Omega$. The source prints the limits $-a$ to $a$ against $d\Omega$; those limits are radial while the measure is angular, so the printed integral is not a probability as it stands. The angular integral is over the sphere, and a volume probability carries $r^2\,dr\,d\Omega$, which cancels the $1/r^2$. Apart from this measure slip, the density is the standard one for the two-component radial solution. (The source calls this probability $\rho$, the same letter it uses for the radial variable $\rho = Cr$ in the closed forms; the collision is the source's, and the two are kept apart here by context.) The structure of (28) and (29) was checked against (25) and (26) and is consistent with them. The closed forms of $F(\rho)$ and $G(\rho)$ were <strong>not</strong> independently recomputed: the radicals and the Laguerre arguments do not survive extraction from the source's file in a form that can be transcribed without guesswork, and a half-guessed formula is worse than a recorded one. They are recorded as printed and marked unverified.</p>
 <h3 id="the-spectrum-as-printed">The spectrum as printed</h3>
 <p>The source's energies are printed as</p>
 <p>$$
-E = mc^2\left(1 + \frac{za_0}{n - |k| + \sqrt{k^2 - Z^2a_0^2}}\right)^{-1/2},
+E_{\mathrm{printed}} = mc^2\left(1 + \frac{za_0}{n - |k| + \sqrt{k^2 - z^2a_0^2}}\right)^{-1/2},
 $$</p>
-<p>in which the square of the coupling $za_0$ is <strong>absent</strong>. The standard Sommerfeld–Dirac formula has $\left(za_0\right)^2$ in the numerator, and the difference is not cosmetic. At $n = 1$, $|k| = 1$ the exact Dirac–Coulomb ground state is $E = mc^2\sqrt{1 - Z^2a_0^2}$, and the two forms compare as follows:</p>
+<p>in which the square on the ratio is <strong>absent</strong>. The standard Sommerfeld–Dirac formula squares the whole ratio,</p>
+<p>$$
+E = mc^2\left(1 + \left(\frac{za_0}{n - |k| + \sqrt{k^2 - z^2a_0^2}}\right)^2\right)^{-1/2}
+= mc^2\left(1 + \frac{z^2a_0^2}{\left(n - |k| + \sqrt{k^2 - z^2a_0^2}\right)^2}\right)^{-1/2},
+$$</p>
+<p>and the difference is not cosmetic. At $n = 1$, $|k| = 1$ the exact Dirac–Coulomb ground state is $E = mc^2\sqrt{1 - z^2a_0^2}$, and the two forms compare as follows:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>$Za_0$</th>
+<th>$za_0$</th>
 <th>printed</th>
-<th>with the square restored</th>
-<th>exact $\sqrt{1-Z^2a_0^2}$</th>
+<th>with the ratio squared</th>
+<th>exact $\sqrt{1-z^2a_0^2}$</th>
 </tr>
 </thead>
 <tbody>
@@ -297,11 +343,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The restored form agrees with the exact ground state to every digit displayed, at each coupling, and the printed form does not. The square is the only difference; the rest of the formula, including the denominator $n - |k| + \sqrt{k^2 - Z^2a_0^2}$, is the standard one. Since the same section of the source prints the denominator's two squares correctly, the missing one is a slip in that formula and not an extraction artefact. Nothing else in the source's spectrum is at issue.</p>
+<p>The restored form agrees with the exact ground state to every digit displayed, at each coupling, and the printed form does not. The missing operation is the square on the ratio; the denominator's square under the root, $k^2 - z^2a_0^2$, is already correct in the source, so the slip is in the ratio and not an extraction artefact. Nothing else in the source's spectrum is at issue.</p>
 <h3 id="what-this-is-and-what-it-is-not">What this is and what it is not</h3>
-<p>The source's quaternion wave function is the standard radial Dirac–Coulomb solution, re-encoded: the same system, the same Laguerre functions, the same spherical spinor harmonics, written as one biquaternion instead of a column. The article on the Dirac–Coulomb problem in this corpus states that "the exact bound-state solution itself is the standard radial Dirac–Coulomb one, and it is not reproduced anywhere in the corpus", and adds that what the corpus does not supply is the radial Dirac–Coulomb solution <strong>inside the algebra</strong>. The source's result is an instance of the first thing: a reproduction, in the algebra's notation, of the standard solution. It is a transcription, and the source itself says so, obtaining the quaternion form from the matrix solution of its section 1 and then rewriting it. It is therefore recorded here as the transcription that fills the corpus's notation gap at the level of notation, and <strong>not</strong> as the algebra-level derivation that article says is absent. The difference is not pedantic: a derivation inside the algebra would produce the radial system and its solution from the algebra's own Dirac equation, with the mass term and the coupling as the corpus's equation carries them; a transcription produces them from the matrix problem and then relabels. What the source demonstrates is that the relabelling can be carried out and that the results agree; what it does not demonstrate is that the algebra produces them.</p>
-<p>The second thing the source supplies in this neighbourhood is the pair of substitutions $\alpha_r = -i\vec e_y$, $\beta = -i\vec e_x$ inside the quaternion radial equation, that is, an explicit statement of which biquaternion units stand for which Dirac matrices in a Coulomb computation. Because the substitution is made through the source's own table and not through a multiplicative map, its result is safe only as long as the source's axes are kept; the corpus's alternative pair, read through $\mathsf{M}_2$, is $\alpha_r \mapsto i\vec e_y$, $\beta\mapsto i\vec e_z$, as noted above. This is a small point of bookkeeping that the source leaves open and a reader must close.</p>
-<h2 id="the-pauli-matrix-and-dirac-matrix-sections">The Pauli-Matrix and Dirac-Matrix Sections</h2>
+<p>The source's quaternion wave function is the standard radial Dirac–Coulomb solution, re-encoded: the same system, the same Laguerre functions, the same spherical spinor harmonics, written as one biquaternion instead of a column. The article on the Dirac–Coulomb problem in this corpus records that the exact bound-state solution is the standard radial Dirac–Coulomb one, that what the corpus does not supply is the radial Dirac–Coulomb solution <strong>inside the algebra</strong> — the derivation, not the transcription — and that the transcription is what this article's source supplies. The source's result is the transcription and not the derivation: a reproduction, in the algebra's notation, of the standard solution. It is a transcription, and the source itself says so, obtaining the quaternion form from the matrix solution of its section 1 and then rewriting it. It is therefore recorded here as the transcription that fills the corpus's notation gap at the level of notation, and <strong>not</strong> as the algebra-level derivation that article says is absent. The difference is not pedantic: a derivation inside the algebra would produce the radial system and its solution from the algebra's own Dirac equation, with the mass term and the coupling as the corpus's equation carries them; a transcription produces them from the matrix problem and then relabels. What the source demonstrates is that the relabelling can be carried out and that the results agree; what it does not demonstrate is that the algebra produces them.</p>
+<p>The second thing the source supplies in this neighbourhood is the pair of substitutions $\alpha_r = -i\vec e_y$, $\beta = -i\vec e_x$ inside the quaternion radial equation, that is, an explicit statement of which biquaternion units carry the Dirac operator in a Coulomb computation. Because the substitution is made through the source's own table and not through a multiplicative map, its result is safe only as long as the source's axes are kept; the corpus's alternative pair, read through $\mathsf{M}_2$, is $\alpha_r \mapsto i\vec e_y$, $\beta\mapsto i\vec e_z$, as noted above. This is a small point of bookkeeping that the source leaves open and a reader must close.</p>
+<h2 id="the-pauli-matrix-and-dirac-operator-sections">The Pauli-Matrix and Dirac-Operator Sections</h2>
 <p>Two short sections close the source's physics. The first represents the algebra spanned by the identity and the three Pauli matrices. Its eight parameters $q_t,\dots,q_7$ are assigned to the eight basis elements, and the assignment is then rewritten in the quaternion space as</p>
 <p>$$
 q = \left(q_t - iq_7\right)e_t - \left(iq_1 + q_4\right)\vec e_x - \left(iq_2 + q_5\right)\vec e_y - \left(iq_3 + q_7\right)\vec e_z ,
@@ -317,14 +363,14 @@ $$</p>
 <li>The commutation relations of the three spin operators, exactly.</li>
 <li>The six eigenvalue equations, including the sign of $S_xq_-$.</li>
 <li>Orthogonality and normalisation of the two states in both norms; the idempotence of $\tilde\Pi_1$ and the nilpotence of $\tilde\Pi^{\mathrm{nil}}$; the two orthogonality relations between them; the Hermiticity of $\tilde\Pi_1$.</li>
-<li>The two ladder operators, their action on the two states, and the sign in $S_- = -\overline{S_+^*}$.</li>
+<li>The two ladder operators, their action on the two states, and the Hermitian conjugation $S_- = S_+^*$.</li>
 <li>Unitarity of the three rotation operators and their sandwich action on the three spin operators.</li>
 <li>The identity of the source's equation (20) with the expansion in its own two states.</li>
-<li>The scalar-part pairing $\mathrm{Sc}\left(\bar q_p^*q_q\right) = \delta_{pq}$, the zero-divisor values of the full products, and the source's $l = 2$ probability example against a hundred random harmonic amplitudes.</li>
-<li>The identity of the two printed radial systems and the consistency of (28) and (29) with (25) and (26).</li>
-<li>The spectrum with the square restored against the exact ground-state value, at three couplings.</li>
+<li>The scalar-part pairing $\mathrm{Sc}\left(q_p^*q_q\right) = \delta_{pq}$, the zero-divisor values of the full products, and the source's $l = 2$ probability example against a hundred random harmonic amplitudes.</li>
+<li>The identity of the two printed radial systems and the consistency of (28) and (29) with (25) and (26), with the angular measure corrected to $S^2$.</li>
+<li>The spectrum with the ratio squared against the exact ground-state value, at three couplings.</li>
 </ul>
-<p>The following are recorded from the source and were <strong>not</strong> verified: the closed forms of $F(\rho)$ and $G(\rho)$ and their Laguerre arguments; the $2\times1$ and $1\times2$ transformations the source uses to pass between quaternions and columns, whose displayed forms do not extract cleanly; the intermediate reduction from the radial equation to the two coupled equations, whose printed terms carry the $1/r$ of the definition of $R$ and the $c$ of the derivative in a bookkeeping that does not close on the page; the Hodge-operator statement (31); and the four Dirac matrices of the last section, which are compared to the corpus's dictionary by their labels only.</p>
+<p>The following are recorded from the source and were <strong>not</strong> verified: the closed forms of $F(\rho)$ and $G(\rho)$ and their Laguerre arguments; the $2\times1$ and $1\times2$ transformations the source uses to pass between quaternions and columns, whose displayed forms do not extract cleanly; the intermediate reduction from the radial equation to the two coupled equations, whose printed terms carry the $1/r$ of the definition of $R$ and the $c$ of the derivative in a bookkeeping that does not close on the page; the Hodge-operator statement (31); and the four $4\times4$ matrices of the last section, which are compared to the corpus's dictionary by their labels only.</p>
 <h2 id="the-gamma-formulation">The Gamma Formulation</h2>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
@@ -332,10 +378,20 @@ $$</p>
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p><strong>The two Dirac equations.</strong> The corpus carries two equations under the name, and they are not the same operator. In units $\hbar=c=1$, with $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ and $\tilde\nabla^{\natural}$ its quaternion conjugate, the one-sided equation is the chiral pair</p>
+<p>$$
+L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L,\qquad
+L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R,
+$$</p>
+<p>with both derivatives acting from the left, $\tilde\Psi_R$ and $\tilde\Psi_L$ the two chirality halves, and the mass pairing them. The two-sided equation for a biquaternion field $F$, with $t'$ the observer time and $Q_k$ the material coordinates, is</p>
+<p>$$
+\left(iL_{e_t}\frac{\partial}{\partial t'}+\sum_k L_{\vec e_k}\frac{\partial}{\partial Q_k}\right)F
+-m i\,R_{\vec e_z}\overline{F}=0,
+$$</p>
+<p>with the derivative acting from the left and the mass from the right through $\vec e_z$, after the complex conjugation $\overline{\,\cdot\,}$. They share the frame but not the operator: the first is linear in the field and splits it into chirality halves; the second is antilinear in its mass term and carries the chirality in the right multiplication. The pair is the corpus's distinction, recorded in <em>The Dirac Equation in Biquaternionic Form</em>. The chirality cell is $\gamma_5=-iL_{e_t}R_{\vec e_z}$, the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
-<p>The source proposes a $2\times2$ complex matrix $A(q)$ for a complex quaternion and a table of four evaluations of it; it builds the spin operators, the two spin states, the rotation operators, the ladder operators and the angular spinor functions on that table; and it uses the same substitution to write the relativistic one-electron wave function and its probability density in quaternion space. The table is exact on the four elements. The matrix is not multiplicative on those elements' products, in either the real or the complex quaternions, and it annihilates a three-real-dimensional subspace that contains the source's own spin-down state; it is not the Kravchenko–Shapiro matrix it is attributed to, and that matrix in turn represents the real quaternions but not the complex ones. The corpus's isomorphism $\mathsf{M}_2$ is the complex-linear map that does both. On the algebraic side the source's results are correct and the corpus's conventions read them as: a spin operator set equal to the corpus's with reversed axes and a sign, an up state equal to $\sqrt2$ times a pure-state idempotent of $\mathbb{M}_+$ and a down state equal to $\sqrt2$ times a nilpotent of the same ideal, both of vanishing algebra norm $\langle\cdot\rangle_{\natural}$ and unit Hilbert–Schmidt norm, and rotations that are unit-norm biquaternions acting correctly. On the physical side the source's quaternion hydrogen atom is the standard radial Dirac–Coulomb problem re-encoded, its system standard and its probability density standard, with one missing square in the printed spectrum; the restored spectrum is the Sommerfeld–Dirac formula. The result is the transcription of the corpus's notation gap and not the closure of its mathematical gap, and it is recorded as such.</p>
+<p>The source proposes a $2\times2$ complex matrix $A(q)$ for a complex quaternion and a table of four evaluations of it; it builds the spin operators, the two spin states, the rotation operators, the ladder operators and the angular spinor functions on that table; and it uses the same substitution to write the relativistic one-electron wave function and its probability density in quaternion space. The table is exact on the four elements. The matrix is not multiplicative on those elements' products, in either the real or the complex quaternions, and it annihilates a three-real-dimensional subspace that contains the source's own spin-down state; it is not the Kravchenko–Shapiro matrix it is attributed to, and that matrix in turn represents the real quaternions but not the complex ones. The corpus's isomorphism $\mathsf{M}_2$ is the complex-linear map that does both. On the algebraic side the source's results are correct and the corpus's conventions read them as: a spin operator set equal to the corpus's with the $x$ and $z$ axes exchanged and a sign, an up state equal to $\sqrt2$ times a pure-state idempotent of $\mathbb{M}_+$ and a down state equal to $\sqrt2$ times a nilpotent of the same ideal, both of vanishing algebra norm $\langle\cdot\rangle_{\natural}$ and unit coefficient norm, and rotations that are unit-norm biquaternions acting correctly. On the physical side the source's quaternion hydrogen atom is the standard radial Dirac–Coulomb problem re-encoded, its system standard and its probability density standard, with one missing square on the ratio in the printed spectrum; the spectrum with the ratio squared is the Sommerfeld–Dirac formula. The two Dirac equations are distinguished in <em>The Gamma Formulation</em>. The result is the transcription of the corpus's notation gap and not the closure of its mathematical gap, and it is recorded as such.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -358,8 +414,8 @@ $$</p>
 <td>Central scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu) = \sigma_\mu$</td>
-<td>The corpus's isomorphism with $M_2(\mathbb{C})$</td>
+<td>$\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$</td>
+<td>The corpus's isomorphism with $M_2(\mathbb{C})$; hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$</td>
 </tr>
 <tr>
 <td>$\sigma_x, \sigma_y, \sigma_z$</td>
@@ -382,8 +438,8 @@ $$</p>
 <td>The algebra norm; $0$ on both of the source's states</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(q\bar q^*) = \sum_\mu \left(\mathrm{Re}\,q_\mu\right)^2 + \left(\mathrm{Im}\,q_\mu\right)^2$</td>
-<td>The source's "square norm", the Hilbert–Schmidt norm; $1$ on both states</td>
+<td>$\mathrm{Sc}(q q^*) = \sum_\mu \left(\mathrm{Re}\,q_\mu\right)^2 + \left(\mathrm{Im}\,q_\mu\right)^2$</td>
+<td>The source's "square norm", the coefficient norm; $1$ on both states</td>
 </tr>
 <tr>
 <td>$S_x, S_y, S_z = \tfrac{\hbar}{2}(-i\vec e_z), \tfrac{\hbar}{2}(-i\vec e_y), \tfrac{\hbar}{2}(-i\vec e_x)$</td>
@@ -406,16 +462,16 @@ $$</p>
 <td>Nilpotent, $q_- = \sqrt2\,\tilde\Pi^{\mathrm{nil}}$, $\left(\tilde\Pi^{\mathrm{nil}}\right)^2 = 0$</td>
 </tr>
 <tr>
-<td>$D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i(q_p\cdot n)\sin\frac{\varphi}{2}$</td>
+<td>$D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i(q_p\cdot n)\sin\frac{\varphi}{2}$, $q_p\cdot n=-i(\vec e\cdot n)$</td>
 <td>The source's rotation operator; unit-norm biquaternion</td>
 </tr>
 <tr>
 <td>$S_\pm = S_x \pm iS_y$</td>
-<td>The source's ladder operators; $S_- = -\overline{S_+^*}$</td>
+<td>The source's ladder operators; $S_- = S_+^*$</td>
 </tr>
 <tr>
 <td>$Y_l^{l\pm\frac12}$, $C_1, C_2$</td>
-<td>Angular spinor harmonic and its two coefficient radicals</td>
+<td>Angular spinor harmonic and its two Clebsch–Gordan coefficients</td>
 </tr>
 <tr>
 <td>$\sqrt2\,q_+ = e_t - i\vec e_x$, $\sqrt2\,q_- = -\vec e_y - i\vec e_z$</td>
@@ -431,7 +487,7 @@ $$</p>
 </tr>
 <tr>
 <td>$E$</td>
-<td>Energy; the source's formula printed without the square on $za_0$</td>
+<td>Energy; the source's formula printed without the square on the ratio</td>
 </tr>
 </tbody>
 </table></div>
@@ -440,12 +496,12 @@ $$</p>
 <li>Alejandro Arias Jiménez, "Biquaternion representation of the spin one half and it's application on the relativistic one electron atom," arXiv:2403.02344v1 [quant-ph] (28 February 2024), Universidad de las Américas Puebla, the source recorded here.</li>
 <li>V. V. Kravchenko and M. V. Shapiro, <em>Integral Representations for Spatial Models of Mathematical Physics</em>, Pitman Research Notes in Mathematics 351 (Addison-Wesley Longman, 1996), for the $2\times2$ matrix form $\left(\begin{smallmatrix}z&w\\-\bar w&\bar z\end{smallmatrix}\right)$ of the real quaternions and the quaternionic function theory built on it.</li>
 <li>V. V. Kravchenko, <em>Applied Quaternionic Analysis</em>, Research and Exposition in Mathematics 28 (Heldermann, 2003), for the quaternionic Dirac operators and potentials that the source's last sections approach from the matrix side.</li>
-<li>Maurits H. Silvis, <em>A quaternion formulation of the Dirac equation</em>, Centre for Theoretical Physics, University of Groningen (2010), for the representation of the Dirac matrices that the source's final section records.</li>
+<li>Maurits H. Silvis, <em>A quaternion formulation of the Dirac equation</em>, Centre for Theoretical Physics, University of Groningen (2010), for the matrix representation that the source's final section records.</li>
 <li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the complex-quaternion algebra, its conjugations, its norm and its zero divisors, cited as the source's own reference.</li>
 <li>J. J. Sakurai and E. D. Commins, <em>Modern Quantum Mechanics</em>, revised edition (Addison-Wesley, 1995), for the Pauli-matrix formalism of spin one half, the source's own reference for the operators and states.</li>
 <li>Walter Greiner, <em>Relativistic Quantum Mechanics: Wave Equations</em> (Springer, 1990), for the standard radial Dirac–Coulomb system, its Laguerre solutions and the Sommerfeld–Dirac spectrum against which the source's result is compared.</li>
 <li>H. A. Bethe and E. E. Salpeter, <em>Quantum Mechanics of One- and Two-Electron Atoms</em> (Springer, 1957), for the exact Dirac–Coulomb spectrum and the two-electron problem the source names as its next step.</li>
-<li>Companion articles: <a href="spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a>; <a href="angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a>; <a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>; <a href="the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a>; <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>; <a href="conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a>; <a href="the-element-and-operator-representations.html">Element and Operator Representations: The Three Actions</a>; <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>; <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>; <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>.</li>
+<li>Companion articles: <a href="spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a>; <a href="angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a>; <a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>; <a href="the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a>; <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>; <a href="conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a>; <a href="the-element-and-operator-representations.html">Element and Operator Representations: The Three Actions</a>; <a href="../articles_maths/h-m2c-standard-representation.html">The M2(C)-H Standard Representation</a>; <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>; <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>; <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>.</li>
 </ul>
       </div>
     </main>

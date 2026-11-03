@@ -73,8 +73,8 @@
 <p>A spin-$\tfrac12$ chain and a chain of fermionic modes are described by different operators with different commutation rules, and yet in one dimension the two descriptions carry the same state space and the same algebra. The map between them is the Jordan–Wigner transformation. In the biquaternion framework it has a sharp interpretation: the transformation is the <strong>extension over sites of a one-site identity that is already inside the algebra</strong>, and the object that extends it — the Jordan–Wigner string — is the product of the one-site fermionic parities, the element $(-1)^F=i\vec e_z$ that the parents isolate in $\mathbb{M}_+$.</p>
 <p>This article establishes:</p>
 <ul>
-<li><strong>The one-site case is the algebra's own identity.</strong> For one mode the parents' ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ satisfies $\vec\Upsilon_x^2=0$ and $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ inside $\mathbb{B}$, so a one-site spin ladder <em>is</em> a fermionic mode with no string attached. The spin generators are the bilinears $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$; the fermionic mode is the square of those bilinears' structure. There is nothing to transform at one site.</li>
-<li><strong>The string.</strong> For $N$ sites the map must carry a string, and the string is exactly the tensor product of the one-site parities: $\prod_{k<j}(-1)^{m_k}=\prod_{k<j}(\sigma_z)_{k}$. It lies in $\bigotimes_j\mathbb{B}$ but not in $\mathbb{B}$, and for one site it collapses to the identity, which is why the one-site case needed none.</li>
+<li><strong>The one-site case is the algebra's own identity.</strong> For one mode the parents' ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ satisfies $\vec\Upsilon_x^2=0$ and $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ inside $\mathbb{B}$, so a one-site spin ladder <em>is</em> a fermionic mode with no string attached. The spin generators are the bilinears $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, and the ladder they build is the same pair, $\tilde S_+=\hbar\,\vec\Upsilon_x$ and $\tilde S_-=\hbar\,\vec\Upsilon_y$. There is nothing to transform at one site.</li>
+<li><strong>The string.</strong> For $N$ sites the map must carry a string, and the string is exactly the tensor product of the one-site parities: $\prod_{k<j}(-1)^{n_k}=\prod_{k<j}(\sigma_z)_{k}$, with $n_k$ the occupation of the site. It lies in $\bigotimes_j\mathbb{B}$ but not in $\mathbb{B}$, and for one site it collapses to the identity, which is why the one-site case needed none.</li>
 <li><strong>The map, its grading and its nonlocality.</strong> The Jordan–Wigner map is a unital algebra isomorphism between the spin algebra and the fermionic mode algebra — both are the full matrix algebra of the $2^N$-dimensional space, and this is the Clifford identity $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$. It <strong>does</strong> preserve the parity grading, because $(-1)^{F}=\prod_j(\sigma_z)_{j}$ is the same operator on the two sides: $(\sigma_z)_{j}$ is even, $(\sigma_x)_{j}$ and $(\sigma_y)_{j}$ are odd, and the modes $c^{\mathrm{fop}}_j$ are odd. What it does not preserve is locality: a one-site spin operator becomes a string-laden fermion operator, and conversely. The transformation is the choice of a square root of the spin algebra, and the string is its branch cut.</li>
 <li><strong>The consequences.</strong> The hopping identity, the parity identity, the inverse map, the free-fermion solution of the XY chain, and the boundary term that distinguishes the two fermion-parity sectors.</li>
 </ul>
@@ -92,45 +92,116 @@ $$</p>
 \qquad
 \vec\Upsilon_y=\tfrac12\big(i\vec e_x+\vec e_y\big),
 $$</p>
-<p>as the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> defines them. Then, by exact multiplication in the basis,</p>
+<p>as the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> defines them. The two squares follow from $i^2=-1$, $\vec e_x^2=\vec e_y^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$:</p>
+<p>$$
+(i\vec e_x\pm\vec e_y)^2=i^2\vec e_x^2\pm i\bigl(\vec e_x\vec e_y+\vec e_y\vec e_x\bigr)+\vec e_y^2=(-1)(-e_t)+0-e_t=0 ,
+$$</p>
+<p>and the two products are the Peirce idempotents, with $i^2=-1$ carried out in the expansion:</p>
+<p>$$
+\begin{aligned}
+\vec\Upsilon_x\vec\Upsilon_y&=\tfrac14\bigl(i^2\vec e_x^2+i\vec e_x\vec e_y-i\vec e_y\vec e_x-\vec e_y^2\bigr)
+=\tfrac14\bigl(e_t+i\vec e_z+i\vec e_z+e_t\bigr)=\tfrac12\bigl(e_t+i\vec e_z\bigr)=\tilde\Pi_+ ,\\
+\vec\Upsilon_y\vec\Upsilon_x&=\tfrac12\bigl(e_t-i\vec e_z\bigr)=\tilde\Pi_- .
+\end{aligned}
+$$</p>
+<p>with $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_+^{*}=\tilde\Pi_+$ and $\tilde\Pi_++\tilde\Pi_-=e_t$. Summing the two products gives the anticommutator, subtracting them gives the commutator, and each square vanishes:</p>
 <p>$$
 \boxed{\;\vec\Upsilon_x^2=0 ,
 \qquad
-\vec\Upsilon_y^{2}=0 ,
+\vec\Upsilon_y^2=0 ,
 \qquad
 \{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t ,
 \qquad
-[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z\;},
+[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z\;}.
 $$</p>
-<p>so the pair $\vec\Upsilon_x,\vec\Upsilon_y$ satisfies the canonical anticommutation relations and the commutator fails the bosonic relation by an element of $\mathbb{M}_+$ rather than by a c-number. The tracelessness of a commutator ($\mathrm{Tr}[\tilde{Q},\tilde Q_1]=0$, while $\mathrm{Tr}\,e_t=2$) shows that no bosonic mode with a central commutator exists here, so the algebra's one mode is fermionic — the algebra's finite content is the fermionic Fock space.</p>
+<p>The pair $\vec\Upsilon_x,\vec\Upsilon_y$ therefore satisfies the canonical anticommutation relations, while the commutator, being the difference $\tilde\Pi_+-\tilde\Pi_-$ of the two idempotents, fails the bosonic relation by an element of $\mathbb{M}_+$ rather than by a c-number. The tracelessness of a commutator ($\mathrm{Tr}[\tilde{Q},\tilde Q_1]=0$, while $\mathrm{Tr}\,e_t=2$) shows that no bosonic mode with a central commutator exists here, so the algebra's one mode is fermionic — the algebra's finite content is the fermionic Fock space.</p>
 <p>The spin generators are the bilinears</p>
 <p>$$
 \tilde S_k=\tfrac{\hbar}{2}\,i\vec e_k ,
 \qquad
 [\tilde S_a,\tilde S_b]=i\hbar\,\epsilon_{abc}\,\tilde S_c ,
 \qquad
+\tilde S_\pm=\tilde S_x\pm i\tilde S_y ,
+$$</p>
+<p>$$
 \tilde S_+=\tfrac{\hbar}{2}\big(i\vec e_x-\vec e_y\big)=\hbar\,\vec\Upsilon_x ,
 \qquad
 \tilde S_-=\tfrac{\hbar}{2}\big(i\vec e_x+\vec e_y\big)=\hbar\,\vec\Upsilon_y ,
 $$</p>
 <p>which the spin-$\tfrac12$ companion derives. Comparing the two displays identifies the one-site spin ladder with the one-site fermionic mode:</p>
 <p>$$
-\vec\Upsilon_x=\frac{\tilde S_+}{\hbar}\Big|_{\text{one mode}} ,
+\vec\Upsilon_x=\tilde S_+/\hbar ,
 \qquad
-\vec\Upsilon_y=\frac{\tilde S_-}{\hbar}\Big|_{\text{one mode}} .
+\vec\Upsilon_y=\tilde S_-/\hbar .
 $$</p>
-<p><strong>This is the one-site Jordan–Wigner transformation</strong>, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the <em>other</em> sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{m_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two interpretations of the same biquaternion, the interpretation changing only when a <em>second</em> site is present.</p>
-<p><strong>A note on the identification.</strong> The parent article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> and the dictionary companion fix the module-level identification $i\vec e_k\mapsto L_{\vec e_k}R_{\vec e_z}$, the cells $L_{a}R_{b}$ acting by $\psi\mapsto a\psi b$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> gives the two-dimensional representative $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:</p>
+<p><strong>This is the one-site Jordan–Wigner transformation</strong>, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the <em>other</em> sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{n_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two interpretations of the same biquaternion, the interpretation changing only when a <em>second</em> site is present.</p>
+<h3 id="the-two-readings-of-the-identification">The Two Readings of the Identification</h3>
+<p>Two readings of the same element are in use in the series, and they differ by a sign carried by right multiplication by $\vec e_z$. Both are stated here, because the one-site map is exact in one and picks up that sign in the other.</p>
+<p>The $2\times2$ reading is the complex-linear isomorphism $\mathsf M_2$ of the matrix models, $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$; it is the left action on a Peirce carrier, and it is the one the companion articles use. The cell reading is $\mathbb R$-linear and sends each real unit to a two-sided operator, $e_t\mapsto L_{e_t}R_{e_t}$, $\vec e_k\mapsto L_{\vec e_k}R_{e_t}$ and $i\mapsto L_{e_t}R_{e_z}$, with the cells $L_aR_b$ acting by $\psi\mapsto a\psi b$ and multiplying by $L_aR_b\,L_cR_d=L_{ac}R_{db}$. The two readings are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>$2\times2$ image $\mathsf M_2$</th>
+<th>Cell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$I_2$</td>
+<td>$L_{e_t}R_{e_t}$</td>
+</tr>
+<tr>
+<td>$\vec e_k$</td>
+<td>$-i\sigma_k$</td>
+<td>$L_{\vec e_k}R_{e_t}$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>$iI_2$</td>
+<td>$L_{e_t}R_{\vec e_z}=R_{\vec e_z}$</td>
+</tr>
+<tr>
+<td>$i\vec e_k$</td>
+<td>$\sigma_k$</td>
+<td>$L_{\vec e_k}R_{\vec e_z}$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_x$</td>
+<td>$\sigma_+$</td>
+<td>$\tfrac12\bigl(L_{\vec e_x}R_{\vec e_z}-L_{\vec e_y}R_{e_t}\bigr)$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_y$</td>
+<td>$\sigma_-$</td>
+<td>$\tfrac12\bigl(L_{\vec e_x}R_{\vec e_z}+L_{\vec e_y}R_{e_t}\bigr)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>A real unit and an imaginary unit are each a single cell, while the ladder is a sum of two, because the reading is $\mathbb R$-linear and not $\mathbb C$-linear. The sign that separates the two readings is carried by right multiplication by $\vec e_z$. That multiplication is a scalar on each Peirce carrier, $\tilde\Pi_+\vec e_z=-i\tilde\Pi_+$ and $\tilde\Pi_-\vec e_z=+i\tilde\Pi_-$, so the cell of $i\vec e_k$ is $-i$ times the left action on the first carrier and $+i$ times the left action on the second. In matched bases — bases of the two carriers that a left-module isomorphism carries into one another, so that the left action is the same matrix $\mathsf M_2$ on both — the cell is</p>
 <p>$$
-\mathsf{M}_2(\vec\Upsilon_x)=\sigma_+ ,
-\qquad
-\mathsf{M}_2(\vec\Upsilon_y)=\sigma_- ,
-\qquad
-\mathsf{M}_2(\vec\Upsilon_y)=\mathsf{M}_2(\vec\Upsilon_x)^\dagger ,
-\qquad
-\mathsf{M}_2([\vec\Upsilon_x,\vec\Upsilon_y])=\mathsf{M}_2(i\vec e_z)=\sigma_z ,
+\begin{aligned}
+\text{on }\mathbb{B}\tilde\Pi_+:\quad & -i\,\mathsf M_2(\vec e_k)=(-i)(-i)\sigma_k=-\sigma_k ,\\
+\text{on }\mathbb{B}\tilde\Pi_-:\quad & +i\,\mathsf M_2(\vec e_k)=(+i)(-i)\sigma_k=+\sigma_k ,
+\end{aligned}
 $$</p>
-<p>all four checked by exact matrix multiplication: $\mathsf{M}_2(\vec e_x\vec e_y)=\mathsf{M}_2(\vec e_z)$, $\{\mathsf{M}_2(\vec\Upsilon_x),\mathsf{M}_2(\vec\Upsilon_y)\}=I$, $[\mathsf{M}_2(\vec\Upsilon_x),\mathsf{M}_2(\vec\Upsilon_y)]=\sigma_z$. The one-site identification above is the $N=1$ case of the chain map, and the chain map is the subject of the rest of the article.</p>
+<p>both signs using $i^2=-1$. The $2\times2$ image is the left action alone and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$; the cell acts from both sides and carries both.</p>
+<p>The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}$. Since $R_{i\vec e_z}=iR_{\vec e_z}$, and $R_{\vec e_z}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the central sign of the complexified algebra, it is not an element of $\mathbb{B}$, and it is represented on the Dirac module by the same cell up to an overall sign; the relation is recorded in <em>The Gamma Formulation</em> below.</p>
+<p>The one-site identification is exact inside the algebra, and its $2\times2$ image is exact as well:</p>
+<p>$$
+\mathsf M_2(\vec\Upsilon_x)=\sigma_+ ,
+\qquad
+\mathsf M_2(\vec\Upsilon_y)=\sigma_- ,
+\qquad
+\mathsf M_2(\vec\Upsilon_y)=\mathsf M_2(\vec\Upsilon_x)^\dagger ,
+$$</p>
+<p>$$
+\mathsf M_2\bigl([\vec\Upsilon_x,\vec\Upsilon_y]\bigr)=\mathsf M_2(i\vec e_z)=\sigma_z ,
+\qquad
+\{\mathsf M_2(\vec\Upsilon_x),\mathsf M_2(\vec\Upsilon_y)\}=I_2 .
+$$</p>
+<p>All five were checked by exact matrix multiplication, together with $\mathsf M_2(\vec e_x\vec e_y)=\mathsf M_2(\vec e_z)$. The one-site identification above is the $N=1$ case of the chain map, and the chain map is the subject of the rest of the article.</p>
 <h2 id="the-many-site-map">The Many-Site Map</h2>
 <p>Let the chain carry $N$ spins, with Hilbert space $\mathcal{H}=\bigotimes_{j=1}^N\mathbb{C}^2$ and Pauli operators $(\sigma_\alpha)_{j}$ acting on site $j$. Define the fermionic modes by the Jordan–Wigner prescription in the convention above,</p>
 <p>$$
@@ -145,7 +216,7 @@ $$</p>
 \qquad
 \{c^{\mathrm{fop}}_i,c^{\mathrm{fop}\dagger}_j\}=\delta_{ij}\,I\;}.
 $$</p>
-<p>The verification on $N=4$ returned a maximum error of exactly $0$ over all $16$ pairs and all $256$ matrix entries. The cancellation of the string requires that the two sites be ordered; for $i<j$ the strings differ by $(\sigma_z)_{i}$, whose square is the identity, and it is precisely the anticommutation of the two modes that makes the square cancel.</p>
+<p>The verification on $N=4$ returned a maximum error of exactly $0$ over all $16$ pairs and all $256$ matrix entries. The cancellation of the string requires that the two sites be ordered. For $i<j$ the string of $c^{\mathrm{fop}}_j$ carries the parity of every site up to $j$, and the only factor that meets a raising operator is $(\sigma_z)_{i}$: in $S_j(\sigma_+)_{j}S_i(\sigma_+)_{i}$ it sits immediately to the right of $(\sigma_+)_{i}$, and $\sigma_+\sigma_z=-\sigma_+$ is the whole sign. The factors with $i<k<j$ commute with $(\sigma_+)_{i}$ and cost nothing, which is why the string cancels for every pair of sites and not only for adjacent ones.</p>
 <p><strong>The number and the parity.</strong> With the sign convention stated,</p>
 <p>$$
 n_j=c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_j=\frac{I-(\sigma_z)_{j}}{2} ,
@@ -168,12 +239,14 @@ $$</p>
 <h3 id="the-string-is-a-product-of-one-site-parities">The String Is a Product of One-Site Parities</h3>
 <p>The string is not a novel object. Using the parity identity above,</p>
 <p>$$
-\prod_{k<j}(\sigma_z)_{k}=\prod_{k<j}(-1)^{m_k}=\prod_{k<j}(-1)^{F_k} ,
+\prod_{k<j}(\sigma_z)_{k}=\prod_{k<j}(-1)^{F_k} ,
+\qquad F_k=n_k ,
 $$</p>
-<p>and the one-site parity is the algebra element the parents identify,</p>
+<p>where the one-site factor is the algebra element the parents identify in the one-mode case,</p>
 <p>$$
-(-1)^{F}=i\vec e_z=2\tilde S_z/\hbar .
+(-1)^{F}=i\vec e_z=2\tilde S_z/\hbar ,
 $$</p>
+<p>that is, $(-1)^{F_k}$ read inside $\mathbb{B}$.</p>
 <p>The Jordan–Wigner string is therefore the tensor product of the one-site biquaternion parities,</p>
 <p>$$
 \prod_{k<j}(-1)^{F_k}\;\in\;\bigotimes_{k=1}^{j-1}\mathbb{B} ,
@@ -191,16 +264,20 @@ $$</p>
 (\sigma_x)_{j}=\Big(\prod_{k<j}(\sigma_z)_{k}\Big)\big(c^{\mathrm{fop}}_j+c^{\mathrm{fop}\dagger}_j\big) ,
 \qquad
 (\sigma_y)_{j}=-i\Big(\prod_{k<j}(\sigma_z)_{k}\Big)\big(c^{\mathrm{fop}}_j-c^{\mathrm{fop}\dagger}_j\big) ,
-\qquad
+$$</p>
+<p>$$
 (\sigma_z)_{j}=I-2c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_j ,
 $$</p>
 <p>so a one-site spin operator is not a one-site fermion operator of definite degree: the transverse components carry the whole string to the left of the site. The parity operator is the same operator on the two sides, $(-1)^{F}=\prod_j(\sigma_z)_{j}=\prod_j(I-2c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_j)$; it commutes with $(\sigma_z)_{j}$ and anticommutes with $(\sigma_x)_{j}$ and $(\sigma_y)_{j}$, so the map <strong>does</strong> respect the parity grading. What it does not respect is the site structure: locality is lost in both directions, since $c^{\mathrm{fop}}_j$ is a string times $(\sigma_+)_{j}$ and $(\sigma_x)_{j}$ is a string times $c^{\mathrm{fop}}_j+c^{\mathrm{fop}\dagger}_j$.</p>
-<p><strong>The transformation is a square root.</strong> The mode algebra is graded by the parity, $\mathcal{A}=\mathcal{A}_{\mathrm{even}}\oplus\mathcal{A}^{\mathrm{odd}}$, and the even part is spanned by the products of an even number of odd elements; it is generated by the number bilinears $c^{\mathrm{fop}\dagger}_ic^{\mathrm{fop}}_j$ together with the pairing bilinears $c^{\mathrm{fop}}_ic^{\mathrm{fop}}_j$ and $c^{\mathrm{fop}\dagger}_ic^{\mathrm{fop}\dagger}_j$. The number bilinears alone do not suffice: at $N=2$ they generate an algebra of dimension $6$, while the even part has dimension $8$. Passing from spins to fermions is taking a square root of the observable algebra — the modes are the odd generators, and their products span the even part — and the string is the choice of branch. In biquaternion language the one-site even part is the span of $e_t$ and the parity $i\vec e_z$, that is $\mathbb{C}\oplus\mathbb{C}$ with idempotents $(e_t\pm i\vec e_z)/2$, and the modes are the odd elements adjoined to it — the same structure that the parent Fock-space article exhibits for one mode, here extended over sites by the parity product. This is also why the map cannot be canonical: a square root has a branch, and the branch is the string's ordering.</p>
+<p><strong>The transformation is a square root.</strong> The mode algebra is graded by the parity, $\mathcal{A}=\mathcal{A}_{\mathrm{even}}\oplus\mathcal{A}_{\mathrm{odd}}$, and the even part is spanned by the products of an even number of odd elements; it is generated by the number bilinears $c^{\mathrm{fop}\dagger}_ic^{\mathrm{fop}}_j$ together with the pairing bilinears $c^{\mathrm{fop}}_ic^{\mathrm{fop}}_j$ and $c^{\mathrm{fop}\dagger}_ic^{\mathrm{fop}\dagger}_j$. The number bilinears alone do not suffice: at $N=2$ they generate an algebra of dimension $6$, while the even part has dimension $8$. Passing from spins to fermions is taking a square root of the observable algebra — the modes are the odd generators, and their products span the even part — and the string is the choice of branch. In biquaternion language the one-site even part is the span of $e_t$ and the parity $i\vec e_z$, that is $\mathbb{C}\oplus\mathbb{C}$ with idempotents $(e_t\pm i\vec e_z)/2$, and the modes are the odd elements adjoined to it — the same structure that the parent Fock-space article exhibits for one mode, here extended over sites by the parity product. This is also why the map cannot be canonical: a square root has a branch, and the branch is the string's ordering.</p>
 <h2 id="consequences-for-the-chain">Consequences for the Chain</h2>
-<p><strong>Free fermions.</strong> The hopping identity converts the XY Hamiltonian into a quadratic fermionic form:</p>
+<p><strong>Free fermions.</strong> The hopping identity converts the XY Hamiltonian into a quadratic fermionic form. The spin form is</p>
 <p>$$
-\boxed{\;H_{XY}=-J\sum_j\Big((\sigma_x)_{j}(\sigma_x)_{j+1}+(\sigma_y)_{j}(\sigma_y)_{j+1}\Big)
-=-2J\sum_j\Big(c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_{j+1}+c^{\mathrm{fop}\dagger}_{j+1}c^{\mathrm{fop}}_j\Big)\;},
+\boxed{\;H_{XY}=-J\sum_j\Big((\sigma_x)_{j}(\sigma_x)_{j+1}+(\sigma_y)_{j}(\sigma_y)_{j+1}\Big)\;}
+$$</p>
+<p>and the fermion form, equal to it term by term through the hopping identity, is</p>
+<p>$$
+H_{XY}=-2J\sum_j\Big(c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_{j+1}+c^{\mathrm{fop}\dagger}_{j+1}c^{\mathrm{fop}}_j\Big) ,
 $$</p>
 <p>which is a free-fermion Hamiltonian, diagonalised by a Bogoliubov transformation in momentum space. The transverse-field Ising chain is brought to the same free-fermion form up to a pairing term $c^{\mathrm{fop}}_jc^{\mathrm{fop}}_{j+1}+c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}\dagger}_{j+1}$, which a Majorana decomposition absorbs. The transcription is standard and is recorded as such; the biquaternion framework adds nothing to the solution.</p>
 <p><strong>A two-site example.</strong> For $N=2$ the identity can be exhibited in full. In the ordered basis $\{|\!\uparrow\uparrow\rangle,|\!\uparrow\downarrow\rangle,|\!\downarrow\uparrow\rangle,|\!\downarrow\downarrow\rangle\}$ of $\mathbb{C}^2\otimes\mathbb{C}^2$, the spin and fermion forms of the XY Hamiltonian agree exactly,</p>
@@ -210,21 +287,22 @@ $$</p>
 \qquad
 \max|H_{\text{spin}}-H_{\text{ferm}}|=0 ,
 $$</p>
-<p>and both have the spectrum $\{-2J,0,0,+2J\}$ — a non-degenerate ground state, a non-degenerate excited state, and a doubly degenerate level at zero, which is the free-fermion spectrum of two modes with the hopping turned on. The whole-chain parity $(-1)^{F}=(\sigma_z)_{1}(\sigma_z)_{2}$ commutes with the Hamiltonian, with commutator norm exactly $0$, so the degeneracy is resolved by the parity sectors; this is the lattice form of the boundary-condition structure at the end of the chain.</p>
+<p>and both have the spectrum $\{-2J,0,0,+2J\}$ — a non-degenerate ground state, a non-degenerate excited state, and a doubly degenerate level at zero, which is the free-fermion spectrum of two modes with the hopping turned on. The whole-chain parity $(-1)^{F}=(\sigma_z)_{1}(\sigma_z)_{2}$ commutes with the Hamiltonian, with commutator norm exactly $0$, so the two sectors are separately diagonalised. The whole zero level lies in the even sector — its two states are the empty state and the doubly occupied one — while the two odd states are the split pair at $\mp2J$. The degeneracy at zero is therefore the particle–hole pairing of the free theory and not a parity degeneracy: the whole-chain parity does not resolve it.</p>
 <h3 id="the-string-as-a-cocycle">The String as a Cocycle</h3>
-<p>The string has one more structural property that the spin language hides and the fermion language makes plain. The map is <em>ordered</em>, and reordering the sites multiplies the mode by a parity: for $i<j$,</p>
+<p>The string has one more structural property that the spin language hides and the fermion language makes plain: it is a multiplicative one-cocycle of the site ordering. Writing $S_j=\prod_{k<j}(\sigma_z)_{k}$ for the string, the increment from one site to the next is that site's own parity,</p>
 <p>$$
-c^{\mathrm{fop}}_ic^{\mathrm{fop}}_j=-c^{\mathrm{fop}}_jc^{\mathrm{fop}}_i ,
+S_{j+1}=S_j(\sigma_z)_{j} ,
 \qquad
-\Big(\prod_{k<j}(\sigma_z)_{k}\Big)\Big(\prod_{k<i}(\sigma_z)_{k}\Big)^{-1}=\prod_{k=i}^{j-1}(\sigma_z)_{k} ,
+S_jS_i^{-1}=\prod_{i\le k<j}(\sigma_z)_{k}\quad(i<j),
 $$</p>
-<p>so that moving one operator past another costs exactly the parity of the sites passed. This is the statement that the string is a one-cocycle of the site ordering: it is a phase that must be carried whenever two sites are exchanged, and it is the reason the transformation is nonlocal. The biquaternion interpretation is the same as before — the phase is the product of the one-site parities $(-1)^{F_k}$ along the path, and the cocycle condition is the statement that the products multiply consistently.</p>
+<p>so the relative string of two sites is the parity of the interval between them. Three things follow. The modes anticommute, $c^{\mathrm{fop}}_ic^{\mathrm{fop}}_j=-c^{\mathrm{fop}}_jc^{\mathrm{fop}}_i$ for $i\ne j$, and the sign is the single factor $(\sigma_z)_{i}$ that the longer string carries before $(\sigma_+)_{i}$. Each mode is defined only relative to the ordering, since $c^{\mathrm{fop}}_j$ carries the parity of every site to its left. And the transformation is nonlocal for a reason the cochain makes visible: an operator supported on one site of the spin chain is supported on that site and on every site to its left in the fermion chain.</p>
+<p>The biquaternion interpretation is the same as before: the increments of the cochain are the one-site parities $(-1)^{F_k}=i\vec e_z$, so the relative string of two sites is the tensor product of that many factors of the algebra's parity, and the cocycle condition is the statement that these products multiply consistently.</p>
 <p><strong>The boundary term.</strong> The string makes the map nonlocal, and the nonlocality has a physical place: it sits at the chain's ends. The fermion-parity operator of the whole chain,</p>
 <p>$$
 (-1)^{F}=\prod_j(\sigma_z)_{j} ,
 $$</p>
-<p>is the product of the on-site parities and commutes with $H_{XY}$; the two sectors it labels carry different boundary conditions for the fermions. In the ordered phase of the transverse-field Ising chain the two sectors are nearly degenerate, and the degeneracy is the standard signature of the $\mathbb{Z}_2$ symmetry in a spin language and of the two boundary-condition sectors in a fermion language — a one-site-versus-whole-chain statement that the algebra's parity interpretation makes natural.</p>
-<p><strong>The hidden symmetry.</strong> The map also shows why a symmetry visible in one language may be invisible in the other: the parity $(-1)^{F}$ is the on-site $\prod(\sigma_z)_{j}$ in the spin language and a constant on the fermionic vacuum, while the hopping is a simple bilinear in one and a two-site spin operator in the other. The transformation does not create or destroy symmetry; it relabels which generators are simple.</p>
+<p>is the product of the on-site parities and commutes with $H_{XY}$; the two sectors it labels carry different boundary conditions for the fermions. In the ordered phase of the transverse-field Ising chain the two lowest states of the two sectors are nearly degenerate, and that near-degeneracy is the standard signature of the $\mathbb{Z}_2$ symmetry in the spin language and of the two boundary-condition sectors in the fermion language.</p>
+<p><strong>The hidden symmetry.</strong> The map also shows why an operator that is simple in one language need not be simple in the other: the parity is the product of on-site spins, $\prod_j(\sigma_z)_{j}$, and the modes contribute the diagonal operator $(-1)^{\hat N}$ with $\hat N=\sum_j c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_j$, while the hopping is a two-site spin operator and a bilinear in the modes. The transformation does not create or destroy symmetry; it relabels which generators are simple.</p>
 <h2 id="what-is-standard-and-what-the-algebras">What Is Standard and What the Algebra's</h2>
 <p><strong>Standard, transcribed.</strong> The Jordan–Wigner transformation itself, the string, the anticommutators, the number and parity identities, the hopping identity, the inverse map, the free-fermion solution of the XY and transverse-field Ising chains, and the boundary-condition sectors. This is textbook material in the stated convention, and every sign was recomputed on chains up to $N=4$.</p>
 <p><strong>The algebra's own.</strong></p>
@@ -232,6 +310,7 @@ $$</p>
 <li><em>The one-site identity.</em> The parents' $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ is the one-site Jordan–Wigner map, an identity inside $\mathbb{B}$; the transformation has a one-site fixed point.</li>
 <li><em>The string as the product of one-site parities.</em> $\prod_{k<j}(\sigma_z)_{k}=\prod_{k<j}(-1)^{F_k}$, with $(-1)^F=i\vec e_z$ the parent's algebra element. The string is the tensor product of the algebra's parities, and its non-diagonality is the external grading the spin–statistics companion records.</li>
 <li><em>The grading statement.</em> The parity is available on both sides, $(-1)^{F}=\prod_j(\sigma_z)_{j}$, and the map respects it: $(\sigma_z)_{j}$ is even, the transverse spins are odd, the modes are odd. What the map does not preserve is the site structure, since a one-site spin operator becomes a string-laden fermion operator.</li>
+<li><em>The two readings.</em> The $2\times2$ image is one-sided and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$, while the cell $L_{\vec e_k}R_{\vec e_z}$ acts on the two Peirce carriers with opposite signs, $-\sigma_k$ on one and $+\sigma_k$ on the other. The difference is right multiplication by $i\vec e_z$, the Peirce copy index; the chirality is the central sign, and the two agree on the Dirac module up to an overall sign.</li>
 </ul>
 <p><strong>Open.</strong></p>
 <ul>
@@ -242,19 +321,58 @@ $$</p>
 <h2 id="companion-articles">Companion Articles</h2>
 <ul>
 <li>Companion article <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, for the one-mode ladder identified here with the one-site spin, and the parity $(-1)^F=i\vec e_z$.</li>
-<li>Companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the identification $i\vec e_k\mapsto L_{\vec e_k}R_{\vec e_z}$ and the module action that fixes the one-site map.</li>
+<li>Companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the identification $i\vec e_k\mapsto L_{\vec e_k}R_{\vec e_z}$ and the $2\times2$ image $\mathsf M_2$ that fixes the one-site map.</li>
+<li>Companion article <em>Biquaternion Physical Interpretation of Chirality</em>, for the distinction between the Peirce sign $P=R_{i\vec e_z}$, a copy index, and the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, which is the chirality.</li>
 </ul>
 <h2 id="the-gamma-formulation">The Gamma Formulation</h2>
-<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
+<p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are cells of the same two-sided operator algebra that the one-site identification used, and the chirality cell is the right multiplication by $\vec e_z$ that separated the two carriers there.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
+<p>The four frame cells are the four coordinates, with the factor $i$ belonging to the cell:</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}R_{\vec e_x},\qquad
+\gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad
+\gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad
+\gamma_3=iL_{\vec e_z}R_{\vec e_y}.
 $$</p>
+<p>The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixes its sign and its cell. Multiplying cells, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with $\vec e_x\vec e_x=\vec e_y\vec e_y=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$,</p>
+<p>$$
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}R_{\vec e_z},
+\qquad
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=i\bigl(-L_{e_t}R_{\vec e_z}\bigr)=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}.
+$$</p>
+<p>The four gammas carry $i^4=1$, so the single $i$ of the definition survives, and no second factor of $i$ is left over: the cell that results is $-iR_{\vec e_z}$, in which the left multiplier is the identity and the cell has collapsed to a right multiplication.</p>
+<p>That right multiplication is the one the one-site section met, up to the factor $i$: the Peirce sign of the two carriers is $P=R_{i\vec e_z}=iR_{\vec e_z}$, so</p>
+<p>$$
+\gamma_5=-iR_{\vec e_z}=-P ,
+\qquad
+P^2=I_4 ,
+$$</p>
+<p>and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not, it is the central sign of the complexified algebra.</p>
+<p>The frame is Clifford, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and $I_4=L_{e_t}R_{e_t}$ the identity cell:</p>
+<p>$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4 ,
+\qquad
+\gamma_5^2=I_4 ,
+\qquad
+\{\gamma_\mu,\gamma_5\}=0 ,
+$$</p>
+<p>all three checked cell by cell.</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$. The central grading is a different object and carries its own factors: $\tilde\Xi_{\mathrm{ad}}$ is the central root of the double with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so $\chi=i\tilde\Xi_{\mathrm{ad}}$ has</p>
+<p>$$
+\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,
+$$</p>
+<p>and $\chi$ is the difference of the two central idempotents of the complexified algebra, $(e_t+\chi)/2-(e_t-\chi)/2=\chi$. The cell represents $\chi$ on the Dirac module; it is not its definition. The chirality pairs the two halves of that module, and the field article writes the pair as two equations, one for each chirality:</p>
+<p>$$
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L ,
+$$</p>
+<p>$$
+\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
+$$</p>
+<p>The two act from the left; what separates them is the conjugation $\natural$, not a change of side. The mass is the one term of the pair that mixes the two chiralities.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
-<p>The Jordan–Wigner transformation in biquaternion form is the statement that the transformation has a one-site fixed point inside the algebra and is extended over sites by the product of the algebra's parities. At one site the parents' ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ satisfies $\vec\Upsilon_x^2=0$, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$, so a one-site spin ladder <em>is</em> a fermionic mode and the string is the empty product.</p>
+<p>The Jordan–Wigner transformation in biquaternion form has a one-site fixed point inside the algebra and is extended over sites by the product of the algebra's parities. At one site the parents' ladder $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ satisfies $\vec\Upsilon_x^2=0$, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$, and its two products are the Peirce idempotents $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, so a one-site spin ladder <em>is</em> a fermionic mode and the string is the empty product.</p>
 <p>For $N$ sites, with $c^{\mathrm{fop}}_j=(\prod_{k<j}(\sigma_z)_{k})(\sigma_+)_{j}$ and the spin-down state occupied,</p>
 <p>$$
 \{c^{\mathrm{fop}}_i,c^{\mathrm{fop}\dagger}_j\}=\delta_{ij} ,
@@ -262,8 +380,10 @@ $$</p>
 n_j=\frac{I-(\sigma_z)_{j}}{2} ,
 \qquad
 (-1)^{n_j}=(\sigma_z)_{j} ,
-\qquad
-c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_{j+1}+\text{h.c.}=\tfrac12\big((\sigma_x)_{j}(\sigma_x)_{j+1}+(\sigma_y)_{j}(\sigma_y)_{j+1}\big),
+$$</p>
+<p>$$
+c^{\mathrm{fop}\dagger}_jc^{\mathrm{fop}}_{j+1}+\text{h.c.}
+=\tfrac12\big((\sigma_x)_{j}(\sigma_x)_{j+1}+(\sigma_y)_{j}(\sigma_y)_{j+1}\big),
 $$</p>
 <p>all four verified with zero error on chains of up to four sites. The string is the product of one-site parities, $\prod_{k<j}(\sigma_z)_{k}=\prod_{k<j}(-1)^{F_k}$, each factor being the parent's $(-1)^F=i\vec e_z$; it is trivial at one site and non-diagonal beyond, which is the same externality of the grading that the spin–statistics companion records for the field.</p>
 <p>The map is a unital algebra isomorphism — both presentations generate $M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1,2$ — it preserves the parity grading, and it is not local: a one-site spin operator becomes a string-laden fermion operator, the modes are the odd generators whose products span the even part, and the string is the choice of branch. The consequences are the standard ones: the XY chain becomes free fermions, the whole-chain parity $\prod_j(\sigma_z)_{j}$ labels the two boundary-condition sectors, and the near-degeneracy of the ordered phase appears as the standard $\mathbb{Z}_2$ structure.</p>
@@ -283,6 +403,18 @@ $$</p>
 <tr>
 <td>$\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$</td>
 <td>CAR inside the algebra; commutator not central</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$</td>
+<td>Peirce idempotents, $\tilde\Pi_+=\vec\Upsilon_x\vec\Upsilon_y$ and $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(\vec e_k)=-i\sigma_k$, $\mathsf M_2(i\vec e_k)=\sigma_k$</td>
+<td>Complex-linear $2\times2$ image of the algebra</td>
+</tr>
+<tr>
+<td>$L_aR_b$, $L_aR_b\,L_cR_d=L_{ac}R_{db}$</td>
+<td>The two-sided cell, $\psi\mapsto a\psi b$</td>
 </tr>
 <tr>
 <td>$\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_+=\hbar\,\vec\Upsilon_x$, $\tilde S_-=\hbar\,\vec\Upsilon_y$</td>
@@ -330,7 +462,11 @@ $$</p>
 </tr>
 <tr>
 <td>$i\vec e_k\mapsto L_{\vec e_k}R_{\vec e_z}$</td>
-<td>Cell of the bivector $i\vec e_k$; its module action is the Pauli action</td>
+<td>Cell of the timelike bivector $i\vec e_k$; it acts as $-\sigma_k$ on $\mathbb{B}\tilde\Pi_+$ and $+\sigma_k$ on $\mathbb{B}\tilde\Pi_-$</td>
+</tr>
+<tr>
+<td>$P=R_{i\vec e_z}$</td>
+<td>Peirce sign of the two carriers, $+1$ on $S_+$ and $-1$ on $S_-$; a copy index, not the chirality</td>
 </tr>
 </tbody>
 </table></div>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$M_2(\mathbb{C})$ Standard Peirce Representation : Operators — Biquaternion Universe</title>
+  <title>$M_2(\mathbb{C})$ Pauli Representation : Operators — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,9 +68,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="math0-standard-peirce-representation-operators"><strong>$M_2(\mathbb{C})$ Standard Peirce Representation : Operators</strong></h1>
+        <h1 id="math0-pauli-representation-operators"><strong>$M_2(\mathbb{C})$ Pauli Representation : Operators</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The question.</strong> The $M_2(\mathbb{C})$ Standard Peirce article compresses the two regular matrices of an element to one block: $L(\tilde Q)=\mathrm I_2\otimes A$ compresses to $A$, and $R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2$ compresses to $A^{\mathsf T}$. The compression says what one block of each regular matrix is. This article asks the question that follows: on the compressed side, which maps of $M_2(\mathbb{C})$ arise from multiplication, and how many $2\times2$ matrices does each need?</p>
+<p><strong>The question.</strong> The $M_2(\mathbb{C})$ Pauli Representation article compresses the two regular matrices of an element to one block: $L(\tilde Q)=\mathrm I_2\otimes A$ compresses to $A$, and $R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2$ compresses to $A^{\mathsf T}$. The compression says what one block of each regular matrix is. This article asks the question that follows: on the compressed side, which maps of $M_2(\mathbb{C})$ arise from multiplication, and how many $2\times2$ matrices does each need?</p>
 <p><strong>The count.</strong> The answer is a count of matrices.</p>
 <ul>
 <li>A left multiplication is $Y\mapsto AY$, and one matrix $A$ describes it.</li>
@@ -81,7 +81,7 @@
 <p>The first two bullets are the one-sided operators; the third is the two-sided operator.</p>
 <p><strong>Why one matrix per side.</strong> A $2\times2$ matrix has four complex entries. A left multiplication is determined by its value on the unit, $L_A(\mathrm I_2)=A$, so the element and its left operator carry the same four numbers. A right multiplication is determined by $R_B(\mathrm I_2)=B$. A two-sided operator has seven effective complex parameters, more than the four of one $2\times2$ matrix, and no single $2\times2$ matrix records both sides: $A$ acts on the left and $B$ acts on the right.</p>
 <p><strong>The result in one line.</strong> On $M_2(\mathbb{C})$, a one-sided operator is one matrix, a two-sided operator is a pair of matrices, unique up to scaling when the operator is nonzero, and a general endomorphism is a sum of at most four pairs; the $4\times4$ matrix of the pair is the Kronecker product $B^{\mathsf T}\otimes A$.</p>
-<p><strong>Boundaries.</strong> The frame, the two blocks, the compression and the algebra model are <em>$M_2(\mathbb{C})$ Standard Peirce Representation</em>. The uncompressed operators are <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>; the same operators in the axis-free basis are <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em>. The matrix units and the two Peirce planes are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>. The abstract family is <em>Two-Sided Operators on the Biquaternion Algebra</em>. The Hermitian sandwich is Part V and is not treated here.</p>
+<p><strong>Boundaries.</strong> The frame, the two blocks, the compression and the algebra model are <em>$M_2(\mathbb{C})$ Pauli Representation</em>. The uncompressed operators are <em>$M_4(\mathbb{C})$ Pauli Representation : Operators</em>; the same operators in the axis-free basis are <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em>. The matrix units and the two Peirce planes are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>. The abstract family is <em>Two-Sided Operators on the Biquaternion Algebra</em>. The Hermitian sandwich is Part V and is not treated here.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is
 $$
 \mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-),\qquad
@@ -99,7 +99,7 @@ so the coordinate column of a $2\times2$ matrix $Y$ is $(y_{11},y_{21},y_{12},y_
 $$
 \mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr),
 $$
-where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices; the four units map to $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. The trace is $\operatorname{Tr}A=2Q_t$, and the determinant is $\det A=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the quaternionic norm. A second element is $\tilde P$, with $B=\mathsf M_2(\tilde P)$. The $4\times4$ matrices $L,R$ are those of the Standard Peirce article, and $\otimes$ is the Kronecker product in the frame order.</p>
+where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices; the four units map to $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. The trace is $\operatorname{Tr}A=2Q_t$, and the determinant is $\det A=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the quaternionic norm. A second element is $\tilde P$, with $B=\mathsf M_2(\tilde P)$. The $4\times4$ matrices $L,R$ are those of the Pauli Representation article, and $\otimes$ is the Kronecker product in the frame order.</p>
 <h2 id="the-one-sided-operators">The One-Sided Operators</h2>
 <h3 id="the-element-as-one-matrix">The Element as One Matrix</h3>
 <p><strong>The compression.</strong> The map $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$ is an algebra isomorphism: it is linear, bijective and multiplicative. It reads the element itself as one $2\times2$ matrix, with the four Peirce coordinates as entries. The unit is $\mathrm I_2$, the product is the matrix product, and the norm is the determinant.</p>
@@ -115,7 +115,7 @@ It is $\mathbb{C}$-linear. The matrix $A$ is recovered from the operator by $A=L
 $$
 [L_A]_{\mathcal{P}}=\mathrm I_2\otimes A=\begin{pmatrix}A&0\\0&A\end{pmatrix}.
 $$
-The second block is a copy of the first, which is the compression of the Standard Peirce article: the left regular matrix of $\tilde Q$ is this matrix, and its one block is $A$.</p>
+The second block is a copy of the first, which is the compression of the Pauli Representation article: the left regular matrix of $\tilde Q$ is this matrix, and its one block is $A$.</p>
 <p><strong>The law.</strong> The composition is $L_A L_C=L_{AC}$, and the map $A\mapsto L_A$ is injective. The left copy is the four-dimensional subalgebra $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$.</p>
 <p><strong>The invariants.</strong> The rank is $2\operatorname{rank}A$, because the matrix is two copies of $A$. The trace is $2\operatorname{Tr}A=4Q_t$, and the determinant is $(\det A)^2=\langle\tilde Q\rangle_{\natural}^2$.</p>
 <h3 id="the-right-operator">The Right Operator</h3>
@@ -133,7 +133,7 @@ b_{11}\mathrm I_2&b_{21}\mathrm I_2\\
 b_{12}\mathrm I_2&b_{22}\mathrm I_2
 \end{pmatrix}.
 $$
-The transpose is the price of the column-major frame: the block matrix records $B^{\mathsf T}$, while the operator uses $B$. The compressed block of the Standard Peirce article is $B^{\mathsf T}$ for the same reason, and the action itself is right multiplication by $B$.</p>
+The transpose is the price of the column-major frame: the block matrix records $B^{\mathsf T}$, while the operator uses $B$. The compressed block of the Pauli Representation article is $B^{\mathsf T}$ for the same reason, and the action itself is right multiplication by $B$.</p>
 <p><strong>The law.</strong> The composition is anti-multiplicative, $R_B R_D=R_{DB}$, and the map $B\mapsto R_B$ is injective. The right copy is the four-dimensional subalgebra $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$.</p>
 <p><strong>The invariants.</strong> The rank is $2\operatorname{rank}B$. The trace is $2\operatorname{Tr}B=4P_t$, and the determinant is $(\det B)^2=\langle\tilde P\rangle_{\natural}^2$.</p>
 <h3 id="the-two-copies">The Two Copies</h3>
@@ -254,7 +254,7 @@ $$
 $$
 by the mixed-product property. It is the operator.</p>
 <p><strong>The Kronecker product of the $2\times2$ matrices.</strong> The same matrix is the Kronecker product $B^{\mathsf T}\otimes A$ of the two $2\times2$ matrices. This is the display that the Peirce frame makes possible: the element is already a matrix, and the operator is built from the two element matrices.</p>
-<p><strong>The Kronecker product of the $4\times4$ matrices.</strong> The Kronecker product $(\mathrm I_2\otimes A)\otimes(B^{\mathsf T}\otimes\mathrm I_2)$ is $16\times16$, acts on the tensor square of the carrier, and is not the operator. The distinction is the one drawn in <em>$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</em>, §<em>The Kronecker Question</em>: the ordinary product is the operator, the Kronecker product of the two $2\times2$ matrices is its display, and the Kronecker product of the two $4\times4$ matrices is a different operator on a different space.</p>
+<p><strong>The Kronecker product of the $4\times4$ matrices.</strong> The Kronecker product $(\mathrm I_2\otimes A)\otimes(B^{\mathsf T}\otimes\mathrm I_2)$ is $16\times16$, acts on the tensor square of the carrier, and is not the operator. The distinction is the one drawn in <em>$M_4(\mathbb{C})$ Pauli Representation : Operators</em>, §<em>The Kronecker Question</em>: the ordinary product is the operator, the Kronecker product of the two $2\times2$ matrices is its display, and the Kronecker product of the two $4\times4$ matrices is a different operator on a different space.</p>
 <p><strong>The frame dependence.</strong> The display $B^{\mathsf T}\otimes A$ is a property of the Peirce frame. In the axis-free basis the same operator is a sum of sixteen signed-permutation cells, and no $2\times2$ block appears; the pair survives, but the frame does not display it. The two articles read the same operator in the two frames, and the pair is the invariant.</p>
 <h3 id="the-coefficient-matrix">The Coefficient Matrix</h3>
 <p><strong>The expansion.</strong> The sixteen products $L_{e_\mu}R_{e_\nu}$ are an orthogonal basis of $M_4(\mathbb{C})$ for the Hilbert–Schmidt inner product, and every matrix has a unique expansion $M=\sum c_{\mu\nu}L_{e_\mu}R_{e_\nu}$. The matrix $c(M)$ is the coefficient matrix. The definition and the length theorem are in the $4\times4$ operators article.</p>
@@ -512,8 +512,8 @@ in the coefficient order $(t,x,y,z)$, of rank four. By the length theorem, four 
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Standard Peirce Representation</a>, for the frame, the compression and the two blocks.</li>
-<li><a href="m4c-standard-peirce-representation-operators.html">$M_4(\mathbb{C})$ Standard Peirce Representation : Operators</a>, for the uncompressed operators, the sixteen products and the coefficient matrix.</li>
+<li><a href="m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Pauli Representation</a>, for the frame, the compression and the two blocks.</li>
+<li><a href="m4c-standard-peirce-representation-operators.html">$M_4(\mathbb{C})$ Pauli Representation : Operators</a>, for the uncompressed operators, the sixteen products and the coefficient matrix.</li>
 <li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>, for the same operators in the basis where no $2\times2$ block appears.</li>
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the abstract family, the generation theorem, the composition and the adjoint.</li>
 <li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.</li>
