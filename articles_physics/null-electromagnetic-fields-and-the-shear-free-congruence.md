@@ -1,0 +1,189 @@
+# __Null Electromagnetic Fields and the Shear-Free Congruence__
+
+## Introduction
+
+The corpus knows nullness in two places and never joins them. *The Field-Strength Biquaternion and Its Invariants* reads the vanishing of the two invariants as the algebraic condition of a **null field**, and observes that the field-strength biquaternion is then a zero divisor and the state a pure one on the boundary of the Bloch ball. *The Algebrodynamical Programme* takes the **shear-free geodesic null congruence** as its primary object, and obtains the linear field equations as integrability conditions of a nonlinear system built on it. Between those two articles stands a classical theorem which says that the two objects are one: a null field determines a null direction field, and that direction field is geodesic and shear-free. This article supplies the join.
+
+Two results do the work, and both are classical. **Bateman's representation** writes every real null solution of the source-free Maxwell equations, locally, as the real part of the exterior product of the gradients of two eikonal functions, $C=d\alpha\wedge d\beta$ with $\partial\alpha\cdot\partial\beta=0$. The **Mariot–Robinson theorem** states that the principal null direction of a null field is tangent to a congruence that is geodesic and shear-free, and that conversely every such congruence is the principal direction of some null field.
+
+The join matters for a reason internal to the corpus. The programme's thesis is that the congruence is primary and the field secondary, and it presents that inversion as a consequence of its nonlinear generating system. The join shows that the association already exists in **linear** Maxwell theory, where it constrains neither the profile nor the singularity; what the nonlinear system adds is the construction and the rigidity. The article also produces an explicit null field that is **static**, which corrects a natural over-reading of nullness as radiation.
+
+The recomputations are these: the closure of $C$, both invariants, the duality relation together with the constant-field counterexample that separates it from nullness, the annihilation of $C$ by its two null directions, the components in a spherical frame, the principal direction of the real part, the Poynting vector, the nullness of the real part and the expansion of the radial congruence. Bateman's representation and the Mariot–Robinson theorem are quoted and not re-derived: the proof needs the spin-coefficient propagation equations, which the corpus does not carry, and its reference is given in *Further Reading*.
+
+The conventions are those of the read-list articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central $i$ with $i^2=-1$; the field strength is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$; the Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$; the two invariants are $I_1=\vec E\cdot\vec E-c^2\vec B\cdot\vec B$ and $I_2=\vec E\cdot\vec B$. Throughout this article the vacuum is used in Heaviside–Lorentz units, $\epsilon=\mu=1$ and $c=1$, and the coordinates are $(t',x,y,z)$ with the material time $t'$ and the interval $-\Delta t'^2+\Delta x^2+\Delta y^2+\Delta z^2$, that is $g=(-1,1,1,1)$; the setting of the constants to one is local to this article, and so is the overall sign of the metric, which enters only through the signs written out in $\star$. A two-form $C$ on the real coordinates $(x_0,x_1,x_2,x_3)=(t',x,y,z)$ carries the parts
+
+$$
+E_k=-C_{0k},\qquad B_k=\tfrac12\sum_{j,l}\varepsilon_{jkl}C_{jl},
+$$
+
+with $\varepsilon_{123}=+1$, and its dual is the Hodge dual of the field-strength article, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, with $\star^2=-1$. **The corpus's articles attach the name "self-dual" to opposite signs.** The programme writes $\vec E+i\vec H=0$ and calls that condition weakly (anti)self-dual; the split article and the invariants article call $\star=-i$, that is $\vec E-i\vec B=0$, the self-dual half. The names are fixed in the next section, and every statement below carries its equation.
+
+## The Null Field in the Algebra
+
+The null condition is $I_1=I_2=0$, and it has four equivalent forms in the corpus: $\vec N\cdot\vec N=0$ for the Riemann–Silberstein vector; $\tilde F^2=0$, so that $\tilde F$ is a zero divisor; the vanishing of both invariants, which is the form used here; and the statement that the normalised $\tilde F\tilde F^{*}$ is a pure state, on the boundary of the Bloch ball. Nullness is Lorentz invariant and cannot be removed by a change of frame, which is the content of the invariants article.
+
+**A second condition, which is a different one.** A two-form is called **duality-pure** when it is an eigenform of the dual, $\star C=\pm iC$. In components that is $\vec E\pm i\vec B=0$: with the dual above, $\star C=+iC$ is $\vec B=i\vec E$ and $\star C=-iC$ is $\vec B=-i\vec E$. The two signs carry the two names, and the split article assigns them as follows: $\star=-i$, that is $\vec E-i\vec B=0$, is the **self-dual** half, and the other sign the anti-self-dual one. The programme's $\vec E+i\vec H=0$ is therefore the $+i$ sign, the one the corpus calls anti-self-dual, which is why the programme hedges the name as weakly (anti)self-dual. This article writes the equation beside the name each time.
+
+Counting pointwise parameters of a complex field, with $\vec E$ and $\vec B$ six complex numbers, separates the three conditions.
+
+| Condition | Equations | Complex conditions | Real parameters left |
+|---|---|---|---|
+| null | $I_1=0$, $I_2=0$ | $2$ | $8$ |
+| duality-pure | $\vec E\pm i\vec B=0$ | $3$ | $6$ |
+| both | $\vec E\pm i\vec B=0$ and $\vec E\cdot\vec E=0$ | $4$ | $4$ |
+
+**Neither condition implies the other.** Nullness does not give duality-purity, and the counterexample is a constant field: $\vec E=(1,1,0)$ with $\vec B=(1,-1,0)$ has $I_1=I_2=0$ and satisfies neither $\star C=+iC$ nor $\star C=-iC$, as recomputation confirms. Duality-purity does not give nullness either, and the reason is a quadratic identity: with $\vec B=i\vec E$ the invariants become
+
+$$
+I_1=2\,\vec E\cdot\vec E,\qquad I_2=i\,\vec E\cdot\vec E,\qquad\text{so that}\qquad I_1+2i\,I_2=0,
+$$
+
+and the single further condition $\vec E\cdot\vec E=0$ is what nullness adds. Two consequences are worth stating. A real field is never duality-pure, since $\vec E\pm i\vec B=0$ with real $\vec E$ and $\vec B$ forces both to vanish; for a real field only the null row of the table is available, and the field is then the real part of a duality-pure complex field. And the intersection of the two conditions is the four-parameter family of the last row, which is where the field of this article lies.
+
+**A caution on the carrier.** Since $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,(\vec E+ic\vec B)$, the field-strength biquaternion vanishes identically on a duality-pure field of the $+i$ sign: the two halves cancel. On that sign the field is therefore carried by no element of $\mathbb{B}$, but by the pair $(\vec E,\vec B)$ itself, and the real field it defines through
+
+$$
+\mathrm{Im}\,\vec H=\mathrm{Re}\,\vec E,\qquad \mathrm{Im}\,\vec E=-\mathrm{Re}\,\vec H
+$$
+
+is the whole of its content. Those are the relations the programme records when it says that its self-dual complex field reduces to an ordinary real one; the equivalence is exact, and it is the reason the programme passes to the real field as soon as the self-duality has been imposed. On the other sign, $\vec E-i\vec B=0$, the field strength does not vanish but is proportional to $\vec E$, so the carrier question is a property of the sign and not of duality-purity as such.
+
+## Bateman's Two Eikonal Functions
+
+Let $\alpha$ and $\beta$ be two complex functions on spacetime, each a solution of the eikonal equation, and mutually orthogonal in the complexified metric,
+
+$$
+\partial\alpha\cdot\partial\alpha=0,\qquad \partial\beta\cdot\partial\beta=0,\qquad \partial\alpha\cdot\partial\beta=0,
+$$
+
+where the product is the Minkowski one, $\partial\alpha\cdot\partial\beta=-\partial\alpha/\partial t'\,\partial\beta/\partial t'+\sum_k\partial\alpha/\partial x_k\,\partial\beta/\partial x_k$. The **Bateman field** is the exterior product of the two gradients,
+
+$$
+C=d\alpha\wedge d\beta,\qquad C_{\mu\nu}=\frac{\partial\alpha}{\partial x_\mu}\frac{\partial\beta}{\partial x_\nu}-\frac{\partial\alpha}{\partial x_\nu}\frac{\partial\beta}{\partial x_\mu}.
+$$
+
+Three properties follow, and all three are exact statements about the algebra, not approximations. First, $C$ is **closed**, $dC=0$, and this needs no eikonal condition at all: an exterior product of two gradients is an exterior derivative. Second, $C$ is **null**. Writing $k_\alpha$ and $k_\beta$ for the two vectors obtained from the gradients, the invariants of $C$ are built from $k_\alpha\cdot k_\alpha$, $k_\beta\cdot k_\beta$ and $k_\alpha\cdot k_\beta$, and the eikonal conditions make all three vanish. Third, $C$ is **duality-pure**, and this too needs only the two eikonal conditions: orthogonality of two null vectors forces them to share one of their two spinor factors, and a two-form built from two null vectors that share a spinor is an eigenform of $\star$, the chirality of the shared factor fixing the eigenvalue, $+i$ or $-i$. The converse of the third property does not hold — a null two-form whose second leg is spacelike is not duality-pure, which is the content of the counterexample of the preceding section — and it is the orthogonality of two *null* legs that does the work.
+
+**The Maxwell equations then hold without further work.** $dC=0$ is one pair of them; the other pair, $d\star C=0$, follows from the same computation because $\star C=\pm iC$ gives $d\star C=\pm i\,dC$. This is the sense in which Bateman's representation solves the equations by construction: the two eikonal functions carry the whole content of the field, and no equation remains to be solved.
+
+**The pair is defined up to reparametrisation, and this is a physical freedom.** Replacing $\alpha$ by a function of $\alpha$ alone, and $\beta$ by a function of $\beta$ alone, leaves both eikonal conditions and the orthogonality intact, so that $C$ is multiplied by the product of the two derivatives. In particular a field of the form $f(\beta)\,d\alpha\wedge d\beta$ is again of Bateman form, with $\beta$ replaced by an integral of $f$; the profile of a null field along its propagation is therefore free, and only its two characteristic functions are fixed.
+
+**Bateman's theorem is the converse**, and it is quoted here rather than proved: every real null solution of the source-free Maxwell equations is, on a domain, the real part of a $C$ of this form. The complex $C$ is duality-pure and the real field is its real part, which is why a real null field is not itself an eigenform of $\star$. The proof identifies the principal null direction of the field, takes the two characteristic functions whose gradients span the null two-plane it defines, and shows that the field is a multiple of their exterior product. It needs the spin-coefficient propagation equations, which the corpus does not carry, and its reference is given in *Further Reading*; what this article uses is only the representation and the three properties above.
+
+## The Principal Null Direction
+
+A null two-form is **decomposable**: it is the exterior product of two one-forms, and its contraction with either of them vanishes. For the Bateman field this is immediate. With $k_\alpha$ and $k_\beta$ the two null vectors obtained from the gradients by raising the index,
+
+$$
+\sum_\nu C_{\mu\nu}\,k_\alpha^{\ \nu}=0,\qquad \sum_\nu C_{\mu\nu}\,k_\beta^{\ \nu}=0,
+$$
+
+for every $\mu$, as one line of algebra shows: each term contains either $k_\alpha\cdot k_\alpha$, $k_\beta\cdot k_\beta$ or $k_\alpha\cdot k_\beta$, and the three vanish. The two vectors are the **legs** of $C$, and a two-form with two legs is said to be simple or decomposable.
+
+**What the annihilator is, and what "principal" means.** The vectors annihilated by $C$ form the two-plane spanned by the two legs. For a real null field that plane carries one real null vector and one real spacelike vector orthogonal to it, and no second null direction: two real null vectors that are orthogonal in a Lorentzian metric are proportional, so a real two-plane of this type cannot carry two of them. Only one direction in it is null, and that direction is the **principal null direction** of the field, defined up to a scalar. The field is transverse to it: the electric and magnetic vectors span a spacelike two-plane orthogonal to it, and the contraction of the field with it vanishes. This is the object to which the Mariot–Robinson theorem applies.
+
+**In the complex case the two legs are distinct and both are null**, and the statement is weaker: the annihilator is two **complex** dimensional, and every vector in it is null in the complexified sense, because a combination $\mu k_\alpha+\nu k_\beta$ has norm $2\mu\nu\,k_\alpha\cdot k_\beta=0$. No direction is therefore singled out by the algebra, and which leg is called the principal direction is a choice.
+
+**The real part of such a field has a definite principal direction, and it is one of the legs.** Taking the real part of $C=k_\alpha\wedge k_\beta$ with $k_\beta$ real leaves the simple form $(\mathrm{Re}\,k_\alpha)\wedge k_\beta$, whose two legs are $k_\beta$ and the spacelike vector $\mathrm{Re}\,k_\alpha$; the unique null direction among them is $k_\beta$. This is the mechanism behind Bateman's theorem, and in the example below the leg in question is the radial null vector $\hat t+\hat r$.
+
+## The Mariot–Robinson Theorem
+
+**Theorem** (Mariot; Robinson). Let $F$ be a non-zero null solution of the source-free Maxwell equations on a Lorentzian four-manifold. Then its principal null direction is tangent to a congruence of null curves that is geodesic and shear-free. Conversely, every geodesic shear-free null congruence is the principal direction of some null Maxwell field.
+
+**Why it holds.** The proof is a computation in the spin-coefficient form of Maxwell's equations. In a null tetrad whose first null leg is the principal direction, three of the four Maxwell scalars vanish and only one survives; call it $\Phi_2$, the standard name. Two of the four Newman–Penrose field equations then have vanishing left-hand sides, and they read $\kappa\Phi_2=0$ and $\sigma\Phi_2=0$. Since $\Phi_2\ne0$, both spin coefficients vanish: $\kappa=0$ is the statement that the congruence is geodesic, and $\sigma=0$ that it is shear-free. The remaining two equations propagate $\Phi_2$ along the two null directions, and the expansion $\rho$ enters them only as a coefficient, so the theorem constrains the congruence without fixing its expansion. The corpus's Newman–Penrose article names the twelve spin coefficients, $\kappa$ and $\sigma$ among them; it does not carry these four equations, and this article records the theorem rather than deriving it.
+
+**The theorem is the classical counterpart of the programme's inversion, and it sets the measure of what the programme adds.** In the theorem the field is given and the congruence follows; the converse is a statement of existence, that for a given geodesic shear-free congruence there is some null field whose principal direction it is, and it selects neither the field nor the profile. The programme replaces that existence statement by a construction: the congruence is generated from a single spinor field obeying a nonlinear equation, the field is computed from it rather than chosen, and the duality-purity of the curvature is an output of the generating system rather than an input. What the programme claims is therefore not the association of a congruence with a field, which is classical and holds in the linear theory, but the rigidity of the construction and the reading of its singular loci as particles.
+
+**What the theorem does not say.** It says nothing about fields that are not null: an electric Coulomb field has no principal null direction, and no congruence is associated with it. It says nothing about the *value* of the expansion, and so nothing about the singularity structure the programme reads as particles. And it is a local statement, about a neighbourhood in which the congruence is smooth.
+
+## A Static Null Field
+
+The example is the field generated by the stereographic coordinate of the sphere and the advanced null coordinate,
+
+$$
+G=\frac{x+iy}{z+r}=\tan\frac{\theta}{2}\,e^{i\phi},\qquad \beta=t'+r,\qquad C=dG\wedge d\beta .
+$$
+
+$G$ is the $f^+$ of the programme's fundamental static solution, the stereographic coordinate, written in the Cartesian form $f^+=(x_1+ix_2)/(r+x_3)$ there; and $\beta$ is an eikonal function with $\partial\beta\cdot\partial\beta=0$. The two gradients are
+
+$$
+dG=\lambda\,(\hat\theta+i\hat\phi),\qquad \lambda=\frac{e^{i\phi}}{2r\cos^2(\theta/2)},\qquad d\beta=\hat t+\hat r .
+$$
+
+$dG$ is null because $\hat\theta$ and $\hat\phi$ are unit spacelike and the two coefficients are $1$ and $i$; $d\beta$ is null because $\hat t$ and $\hat r$ are unit and of opposite metric sign; and the two are orthogonal because $dG$ has no $t'$ or $r$ component. The choice of the advanced rather than the retarded null coordinate is what makes the flux inward; the level sets of $t'+r$ are spheres contracting at the speed of light. All three conditions of Bateman's construction hold, so $C$ is closed, null and duality-pure by the preceding sections, with $\star C=+iC$ — the sign the split article calls anti-self-dual and the programme calls weakly (anti)self-dual. The components in the orthonormal spherical frame are
+
+$$
+C_{\hat t\hat r}=0,\qquad C_{\hat\theta\hat\phi}=0,\qquad C_{\hat t\hat\theta}=C_{\hat r\hat\theta}=-\lambda,\qquad C_{\hat t\hat\phi}=C_{\hat r\hat\phi}=-i\lambda,
+$$
+
+which is the statement that $C=-\lambda\,(\hat t+\hat r)\wedge(\hat\theta+i\hat\phi)$.
+
+**The field is transverse to the spheres.** The two components $C_{\hat t\hat r}$ and $C_{\hat\theta\hat\phi}$ vanish, so the electric and magnetic parts have no radial component, $E_r=B_r=0$, and the two vectors lie in the plane tangent to the sphere. In the complex form they are related by $\vec E=\lambda(\hat\theta+i\hat\phi)$ and $\vec B=i\vec E$, so that $\vec E+i\vec B=0$: the field is the case of the table in which nullness and duality-purity coincide, and $\vec E\cdot\vec E=0$ holds as a consequence of the nullity of $dG$.
+
+**The real field it defines is a genuine null field**, with
+
+$$
+\vec E_1=\lambda_R\hat\theta-\lambda_I\hat\phi,\qquad \vec H_1=-\lambda_I\hat\theta-\lambda_R\hat\phi,
+$$
+
+where $\lambda=\lambda_R+i\lambda_I$. Its invariants vanish, $|\vec E_1|=|\vec H_1|=|\lambda|$ and $\vec E_1\cdot\vec H_1=0$, and its principal null direction is the outward radial one: the real part of $C$ is $-(\hat t+\hat r)\wedge\vec E_1$, with $\vec E_1$ read as a covector, and is annihilated by $\hat t+\hat r$, while $\vec H_1=-\hat r\times\vec E_1$ exhibits the transverse triple $(\vec E_1,\vec H_1,\hat r)$ and so the same radial direction. The congruence is the radial one: null, geodesic, of expansion magnitude $2/r$ and with zero shear and twist.
+
+**The energy flows inward and does not accumulate.** With $|\lambda|^2=1/(4r^2\cos^4(\theta/2))$ the Poynting vector of the real field is
+
+$$
+\vec S=\vec E_1\times\vec H_1=-\frac{1}{4r^2\cos^4(\theta/2)}\,\hat r,
+$$
+
+the energy density is $W=|\lambda|^2$, and $|\vec S|=cW$ pointwise — the radiative relation, satisfied by a field that does not depend on time. The sign is the one of $\beta=t'+r$; the choice $\beta=t'-r$ reverses both the sign of the flow and the direction of the principal null direction.
+
+**The field is singular on a string, and its energy diverges.** $G$ is singular at $r=0$ and on the negative $z$-axis, which is the axis of the stereographic projection; on that half-axis $\cos^2(\theta/2)$ vanishes and all components of $C$ diverge. The energy density falls as $1/r^2$, so the energy inside a large sphere grows linearly with the radius, and near the axis it diverges faster than the transverse measure can absorb: with $\varrho$ the distance from the negative half-axis, $\theta=\pi-\varrho/r$ gives $\cos^2(\theta/2)\approx\varrho^2/(4r^2)$, so the density behaves as $4r^2/\varrho^4$, whose integral against the measure $\varrho\,d\varrho$ diverges at $\varrho=0$. The static profile is therefore not a normalisable object, and the freedom of the profile does not repair it: replacing $\beta$ by an integral of a function of $\beta$ multiplies $C$ by an arbitrary function of $\beta$ and so makes the field vanish away from a chosen shell in $\beta$, but the angular factor at the string is untouched. The energy is finite only for a profile concentrated in $\beta$ and after a tube around the negative half-axis is excised; the string is the price of the stereographic chart rather than of the null construction.
+
+**The same $G$ enters a second construction.** In the programme the potential of the fundamental static solution is built from the same stereographic coordinate, $A_0=\pm1/(2r)$, with an electric field falling as $1/r^2$. The null field of this section falls as $1/r$. The two fields are not two readings of one object: they differ in what is differentiated — the coordinate itself in the programme, its gradient as one leg of a two-form here — and in the power of the falloff, $1/r^2$ against $1/r$.
+
+## Nullness and Radiation
+
+**A static null field exists, and it settles a question of wording.** A null field satisfies $|\vec S|=cW$ pointwise and has both invariants zero, and the corpus accordingly calls it a radiative field; but the example is **static**, has a steady and divergence-free flux, and radiates nothing. Nullness is the pointwise relation between energy density and flux, and the invariants article's statement that the field is a radiation field in every frame is a statement about frame independence, not a claim that the field is radiation.
+
+**What the radiation field has that the example does not** is a source that changes in time. The corpus's radiation article exhibits the difference in the cleanest form: the acceleration field of a moving charge falls as $1/R$, is transverse and null, and is a zero divisor, exactly as the example is; it differs in its congruence, which is the retarded cone of a moving apex rather than the static cone of a point at rest. The example is not a limit of that field — a charge at rest has no acceleration field at all — but the same construction applied to a point at rest, and the profile freedom is what turns one into the other in spirit.
+
+**What the example gives the programme.** In the programme the singular locus of the principal field is interpreted as a particle, and the congruence emanating from it is the object that carries the field. The example is the simplest instance in which that interpretation can be checked: the congruence is the radial one from the point $r=0$, the string is the price of the stereographic chart, and the field is null without being radiation. Whether the string is an artefact of the chart or a property of the solution is a question this article leaves open.
+
+## Summary
+
+A null field and a shear-free geodesic null congruence are two descriptions of one object in linear Maxwell theory. Bateman's representation writes a real null field as the real part of $C=d\alpha\wedge d\beta$, built from two eikonal functions that are mutually orthogonal; closure is then automatic, the eikonal conditions make $C$ null and duality-pure, and the Maxwell equations hold because $dC=0$ and $\star C$ is a constant multiple of $C$. The principal null direction annihilates the field and is unique for a real field; the Mariot–Robinson theorem states that it is tangent to a congruence that is geodesic and shear-free, and that every such congruence arises this way.
+
+Nullness and duality-purity are different conditions. Duality-purity is $\vec E\pm i\vec B=0$ with three complex conditions, nullness has two, and neither implies the other: duality-purity forces $I_1+2iI_2=0$ and nullness adds $\vec E\cdot\vec E=0$, while a null field with a spacelike second leg is not duality-pure at all. On the $+i$ sign, which is the sign of the worked example, the field strength vanishes identically and the field is carried by the real pair that the programme's relations single out.
+
+The worked example, $C=dG\wedge d\beta$ with $G$ the stereographic coordinate and $\beta=t'+r$, is null, duality-pure, transverse to the spheres, radial in its congruence, inward in its flux, and static. Its energy diverges at the string and at infinity; a profile concentrated in $\beta$ removes the behaviour at infinity but not the divergence at the string. The example is the clean statement that nullness is not radiation.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $C$, $C_{\mu\nu}$ | The null two-form, $C=d\alpha\wedge d\beta$, and its components |
+| $\alpha$, $\beta$ | The two eikonal functions of Bateman's representation, mutually orthogonal |
+| $k_\alpha$, $k_\beta$ | The two null vectors obtained from their gradients; the legs of $C$, whose directions are its null directions |
+| $\Phi_2$, $\kappa$, $\sigma$ | The one surviving Maxwell scalar in a tetrad adapted to the principal direction, and the spin coefficients of geodesy and shear |
+| duality-pure | $\star C=\pm iC$, that is $\vec E\pm i\vec B=0$; not the same condition as nullness |
+| $\vec E$, $\vec B$ | The electric and magnetic parts of $C$, $E_k=-C_{0k}$ and $B_k=\tfrac12\sum_{j,l}\varepsilon_{jkl}C_{jl}$ |
+| $I_1$, $I_2$ | The invariants $\vec E\cdot\vec E-c^2\vec B\cdot\vec B$ and $\vec E\cdot\vec B$ |
+| $\vec N=\vec E+ic\vec B$ | The Riemann–Silberstein vector; its vanishing of norm is nullness |
+| $\star$ | The dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$ |
+| $G$ | The stereographic coordinate $(x+iy)/(z+r)=\tan(\theta/2)e^{i\phi}$ |
+| $\lambda$ | The coefficient $e^{i\phi}/(2r\cos^2(\theta/2))$ of $dG=\lambda(\hat\theta+i\hat\phi)$ |
+| $t'$, $x$, $y$, $z$ | The material coordinates; $r$ their spatial radius; $\theta$, $\phi$ the polar angles |
+| $\hat t$, $\hat r$, $\hat\theta$, $\hat\phi$ | The orthonormal frame adapted to the spherical coordinates |
+| $W$, $\vec S$ | Energy density and Poynting vector, $W=\lvert\lambda\rvert^2$ and $\vec S=-\lvert\lambda\rvert^2\hat r$ in the example |
+
+## Further Reading
+
+- [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html), for the field strength, the two invariants, the Riemann–Silberstein vector and the reading of the vanishing of the norm as a zero divisor.
+- [Exercise: Duality Rotation and the Riemann–Silberstein Vector](exercise-duality-rotation-and-the-riemann-silberstein-vector.html), for the duality rotation and the Lorentz transformation of the field strength.
+- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the two halves of a complexified two-form, the projectors and the naming of the two signs.
+- [The Newman–Penrose Formalism in Biquaternionic Form](the-newman-penrose-formalism-in-biquaternionic-form.html), for the null tetrad as a frame of zero divisors, for the twelve spin coefficients $\kappa$ and $\sigma$ among them, and for the principal null directions as the roots of the Petrov quartic.
+- [The Algebrodynamical Programme](the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html), for the shear-free null congruences as the primary object, the Kerr congruence, the generating system, and and the static eikonal solution $f^+$ that this article renames $G$.
+- [Twistor Theory and Biquaternions](twistor-theory-and-biquaternions.html), for the null cone as the zero set of the norm, its reading as the incidence geometry of twistor lines, and the precise list of what the two programmes share and what separates them.
+- [Radiation from Accelerated Charges in Biquaternionic Form](radiation-from-accelerated-charges-in-biquaternionic-form.html), for the acceleration field that is null, transverse and a zero divisor, and for the retarded structure this article's static example does not have.
+- H. Bateman, *The Mathematical Analysis of Electrical and Optical Wave-Motion* (Cambridge University Press, 1915; Dover reprint 1955), for the representation of a null solution of Maxwell's equations as the exterior product of two eikonal gradients.
+- I. Robinson, "Null electromagnetic fields," *Journal of Mathematical Physics* **2** (1961) 290–291, and R. Penrose and W. Rindler, *Spinors and Space-Time*, Vol. 2 (Cambridge University Press, 1986), ch. 7, for the theorem that the principal null direction of a null field is geodesic and shear-free, known after Mariot and Robinson, and for its proof in the spinor calculus.
+- V. V. Kassandrov, "Algebrodynamics: Shear-Free Null Congruences and New Types of Electromagnetic Fields," arXiv:2311.14027 [physics.gen-ph] (2023), the paper this article was written around: the construction of null fields from two eikonal functions, the static field built from the stereographic coordinate, its string singularity, and the reading of the singular loci as particles. The construction is Bateman's, and the article records it in that status; what the source adds to the corpus is the explicit static example and the particle reading, both of which the programme article already carries in its own terms.

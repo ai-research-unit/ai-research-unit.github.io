@@ -465,6 +465,7 @@ In one line: one matrix per side, a pair for the product, four pairs for the gen
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the frame, the compression and the two blocks.
 - [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the uncompressed operators, the sixteen products and the coefficient matrix.
 - [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the same operators in the basis where no $2\times2$ block appears.
+- [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the two laws, the rank and the commutation.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition and the adjoint.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the fixed model and the conventions of the matrix models.

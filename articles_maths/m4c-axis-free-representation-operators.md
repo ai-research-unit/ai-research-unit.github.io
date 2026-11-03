@@ -216,7 +216,7 @@ The Hermitian adjoint is
 $$
 L^{\mathrm{axf}}(\tilde X)^{\dagger}=L^{\mathrm{axf}}(\tilde X^{*}),
 $$
-and the same identities hold for $R^{\mathrm{axf}}$. The first is the transpose dictionary of the axis-free basis: natural conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity.
+and the same identities hold for $R^{\mathrm{axf}}$. The first is the transpose dictionary of the axis-free basis: natural conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity. At the operator level the same transposition carries the parameter through the natural conjugation, and the flip of the two mixed units conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$; both statements are proved in *The One-Sided Operators on the Biquaternion Algebra*, §*The Matrix Identity*, where the two frames are set side by side.
 
 ### The Intersection of the Two Copies
 
@@ -864,11 +864,9 @@ In one line: every two-sided operator is a single product of one left and one ri
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for the frame, the pure swap stitch and the tensor displays.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.
-- [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for $L^{\mathrm{axf}}$ and the four left matrices.
-- [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for $R^{\mathrm{axf}}$ and the four right matrices.
+- [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for $L^{\mathrm{axf}}$, $R^{\mathrm{axf}}$ and the four matrices of each side.
 - [The Endomorphisms of the Biquaternion Algebra](the-endomorphisms-of-the-biquaternion-algebra.html), for the ambient operator space and its coordinate column.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.
-- [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the intersection of the two one-sided copies.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the plain adjoint and its comparison with the other adjoints.
 - [The Hermitian Sandwich: Definition and Multiplicativity](the-hermitian-sandwich-definition-and-multiplicativity.html), for the real subcone $\tilde P=\tilde Q^{*}$.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the four left and four right matrices and the sixteen cells entry by entry.

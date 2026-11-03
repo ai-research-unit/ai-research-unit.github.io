@@ -349,7 +349,7 @@ T \longmapsto \cosh 2\psi\,T + \sinh 2\psi\,X_3 , \qquad
 X_3 \longmapsto \sinh 2\psi\,T + \cosh 2\psi\,X_3 ,
 $$
 
-a **Lorentz boost of rapidity $2\psi$**. The doubling is the source's point: the Lorentz boost angle is twice the rotation angle that generates it, so the Lorentz action on the bilinear coordinates is not the same as the complex rotation that produces it. The two families together — real rotations and imaginary rotations — are the six real parameters of $SO(3,\mathbb{C})$, and their images are the rotations and the boosts of $SO^+(1,3)$, which is the isomorphism of the previous paragraph made explicit at the level of one-parameter subgroups.
+a **Lorentz boost of rapidity $2\psi$**. The doubling is the source's point: the Lorentz boost angle is twice the rotation angle that generates it, so the Lorentz action on the bilinear coordinates is not the same as the complex rotation that produces it. The two families together — real rotations and imaginary rotations — are the six real parameters of $SO(3,\mathbb{C})$, and the isomorphism of the previous paragraph is the statement about the **groups**, not about an action on $(T,\vec X)$: the boost above holds only while $\vec p$ and $\vec q$ stay in the rotation plane, and for generic $\vec p,\vec q$ the induced map is not linear at all, so the action on the bilinear coordinates remains the Hermitian sandwich of $X=ZZ^{\dagger}$, not the automorphism itself.
 
 **Causality as a theorem.** Two inequalities, both elementary, make the construction more than a rewriting. By AM–GM, $2|\vec p|\,|\vec q|\le|\vec p|^2+|\vec q|^2=T$; and $|\vec X|=2|\vec p\times\vec q|\le2|\vec p|\,|\vec q|$. Hence
 
@@ -373,7 +373,17 @@ $$
 \cos^2\theta = \frac{1-v^2}{1+v^2\cot^2\alpha} ,
 $$
 
-where $\theta$ is the angle between $\vec p$ and $\vec q$ and $v=|\delta\vec X|/\delta T$ is the speed in units of $c$; at $v=0$ it forces $\cos^2\theta=1$, the pair parallel or antiparallel, which the source reads as a possible origin of spin. Both the invariance of $\alpha$ and this relation were checked on random data (below).
+where $\theta$ is the angle between $\vec p$ and $\vec q$ and $v=|\delta\vec X|/\delta T$ is the speed in units of $c$; at $v=0$ it forces $\cos^2\theta=1$, the pair parallel or antiparallel, which the source reads as a possible origin of spin.
+
+The relation is an identity, not a numerical coincidence. Put $u=\lvert\vec p\rvert$, $w=\lvert\vec q\rvert$ and $c=\cos\theta$. The phase invariant gives $\tan\alpha=2uwc/(u^2-w^2)$, and the interval element gives $v^2=4u^2w^2(1-c^2)/(u^2+w^2)^2$ since $\lvert\vec X\rvert=2uw\sin\theta$ and $T=u^2+w^2$. Then
+
+$$
+1+v^2\cot^2\alpha = \frac{(u^2-w^2)^2+4u^2w^2c^2}{(u^2+w^2)^2c^2},
+\qquad
+1-v^2 = \frac{(u^2-w^2)^2+4u^2w^2c^2}{(u^2+w^2)^2},
+$$
+
+so the ratio is $c^2=\cos^2\theta$. The derivation uses only the definitions of $T$, $\vec X$ and $\alpha$, so it covers both readings of the relation: the positions, with $v=\lvert\vec X\rvert/T$, and the increments, with $v=\lvert\delta\vec X\rvert/\delta T$ and the pair $\vec p,\vec q$ replaced by its increments. The invariance of $\alpha$ and the relation were also checked on random data (below).
 
 **Two slips of the source, recorded rather than repaired.** First, the power of $|z_0|$. The local complex null cone of the source's dynamics is $\sigma=z_0^2$ — its equation for the relative coordinate, equivalent to the vanishing of the determinant — so taking moduli gives $|\sigma|=|z_0|^2$, hence $S=|\sigma|=|z_0|^2$ and
 
@@ -460,7 +470,7 @@ This is what makes each combination close on itself with the same structure cons
 
 **Interpretation.** The interpretation of the material slice as physical spacetime, and of its biquaternion-norm automorphisms as the Lorentz group, is the framework's structural hypothesis. The group-theoretic content is exact; the physical assignment is the hypothesis, and it is the same hypothesis that the foundational articles *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *Introduction to the Biquaternion Universe* state.
 
-**Attributed to a neighbouring programme.** The diagonal interpretation of the algebra automorphisms, the bilinear real coordinates $T=|\vec p|^2+|\vec q|^2$, $\vec X=2\,\vec p\times\vec q$, the induced interval $T^2-|\vec X|^2=S^2=\sigma\sigma^*$ with its guaranteed sign, the boost of rapidity $2\psi$, and the invariant phase $\alpha=\arg\sigma$ are the construction of Kassandrov's algebrodynamics and not of this article. What is this article's is the placement of that construction as the middle case between the norm and the slice, the identification of its group with the adjoint-inverse subfamily $SO(3,\mathbb{C})\subset SO(4,\mathbb{C})$, and the checks. The source's reading of the phase as the origin of quantum properties, and its vocabulary of *duplicons* and "observable" space-time, are not adopted. The programme as a whole — its nonlinear primary equation, its twistor field, its multivalued principal field, its induced geometry with phase and its particle picture — is recorded, once, in *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge*, which owns it; this article's contribution is the group-theoretic identification of the automorphism group with the adjoint-inverse subfamily of the norm-automorphism group and the numerical checks.
+**Attributed to a neighbouring programme.** The diagonal interpretation of the algebra automorphisms, the bilinear real coordinates $T=|\vec p|^2+|\vec q|^2$, $\vec X=2\,\vec p\times\vec q$, the induced interval $T^2-|\vec X|^2=S^2=\sigma\sigma^*$ with its guaranteed sign, the boost of rapidity $2\psi$, and the invariant phase $\alpha=\arg\sigma$ are the construction of Kassandrov's algebrodynamics and not of this article. What is this article's is the placement of that construction as the middle case between the norm and the slice, the identification of its group with the adjoint-inverse subfamily $SO(3,\mathbb{C})\subset SO(4,\mathbb{C})$. The source's reading of the phase as the origin of quantum properties, and its vocabulary of *duplicons* and "observable" space-time, are not adopted. The programme as a whole — its nonlinear primary equation, its twistor field, its multivalued principal field, its induced geometry with phase and its particle picture — is recorded, once, in *The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge*, which owns it; this article's contribution is the group-theoretic identification of the automorphism group with the adjoint-inverse subfamily of the norm-automorphism group, together with the checks, numerical and algebraic.
 
 ## Open Questions
 

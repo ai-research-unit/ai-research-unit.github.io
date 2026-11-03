@@ -561,6 +561,8 @@ The cone carries no non-trivial probability rule. Off the scalar line there are 
 
 The article does not claim that the three strata exhaust the physics of the cone. They exhaust the normal forms of the element. A physical system can approach a stratum along a family, and the family, the rate and the direction are extra data.
 
+**One external reading of the cone.** Kassandrov and Khasanov read a vanishing discriminant as an event and not as a degeneracy. In their scheme a worldline is defined implicitly by a polynomial system depending on a parameter, the roots are taken to be particles, and the instant at which two roots merge, which their Jacobian condition $\det\lVert\partial F_A/\partial x_B\rVert=0$ selects, is an annihilation or a creation. For a single polynomial that condition is exactly $\operatorname{disc}p=0$, and on an element of $\mathbb{B}$ it is the cone $B^2=0$ of this article. The locus is shared, the reading is not: the corpus reads $B^2=0$ as one element with a repeated eigenvalue, a stopped clock and no eigenbasis, and it does not read the two eigenvalues as two particles. The source's reading is recorded here and not adopted, and it belongs to *The Algebrodynamical Programme*.
+
 ## Summary
 
 - The spectral condition is $B^2=(\vec Q,\vec Q)\neq0$; the eigenvalues are $\lambda_\pm=Q_t\pm iB$, and they coincide exactly when $B^2=0$.

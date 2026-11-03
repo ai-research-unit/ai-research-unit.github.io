@@ -26,7 +26,7 @@ with $\mu,\nu\in\{t,x,y,z\}$. They are named here, at the start, because the gen
 
 **The letters.** The parameters are $\tilde Q,\tilde P,\tilde R,\tilde S$, the argument is $X$, and the operator is $L_{\tilde Q}R_{\tilde P}$. The two letters $L$ and $R$, written together, name the two-sided family; the sandwich $\Theta$ is a different letter and a different object, and it is not used here. The conventions of the four letters, the slots and the set names are *Operator Family Conventions*.
 
-**Boundaries.** The algebra is *The Biquaternion Algebra*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the one-sided families are *The Left Regular Operators on the Biquaternion Algebra* and *The Right Regular Operators on the Biquaternion Algebra*; the commutant is *The Commutant of the Two Regular Families*; the matrix units are *Special Element and Peirce Conventions*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+**Boundaries.** The algebra is *The Biquaternion Algebra*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the two regular families and their commutant are *The One-Sided Operators on the Biquaternion Algebra*; the matrix units are *Special Element and Peirce Conventions*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Operator $L_{\tilde Q}R_{\tilde P}$
 
@@ -81,7 +81,7 @@ $$
 
 **The two slices.** The boundary cases are the two slices $\tilde P=e_t$ and $\tilde Q=e_t$. The first is the left family, of complex dimension four; the second is the right family, also of complex dimension four. Both are contained in the cone.
 
-**The intersection of the slices.** The two slices meet in the scalars: $L_{\tilde Q}=R_{\tilde P}$ exactly when $\tilde Q=\tilde P$ is central, by *The Commutant of the Two Regular Families*, §*The Proof*. The intersection is the line $\mathbb{C}\cdot\mathrm I_4$, of complex dimension one.
+**The intersection of the slices.** The two slices meet in the scalars: $L_{\tilde Q}=R_{\tilde P}$ exactly when $\tilde Q=\tilde P$ is central, by *The One-Sided Operators on the Biquaternion Algebra*, §*The Intersection $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\cdot\mathrm I_4$*. The intersection is the line $\mathbb{C}\cdot\mathrm I_4$, of complex dimension one.
 
 **The boundary is not the whole cone.** A generic pair has neither parameter equal to the unit, and its operator is neither a left nor a right multiplication. The cone is complex seven-dimensional, the two boundary slices are complex four-dimensional each, and the difference is the two-parameter body.
 
@@ -217,7 +217,7 @@ $$
 1\ <\ 4\ <\ 7\ <\ 16 .
 $$
 
-The first inclusion is $L_{\lambda e_t}=\lambda\mathrm I_4$; the second is $L_{\tilde Q}R_{e_t}=L_{\tilde Q}$; the third is the definition of the two-sided operator as a product. Each inclusion is proper, because the complex dimensions are strictly increasing. The right family is a second copy of complex dimension four, incomparable with the left one, and the two meet in the scalars by *The Commutant of the Two Regular Families*.
+The first inclusion is $L_{\lambda e_t}=\lambda\mathrm I_4$; the second is $L_{\tilde Q}R_{e_t}=L_{\tilde Q}$; the third is the definition of the two-sided operator as a product. Each inclusion is proper, because the complex dimensions are strictly increasing. The right family is a second copy of complex dimension four, incomparable with the left one, and the two meet in the scalars by *The One-Sided Operators on the Biquaternion Algebra*.
 
 **The middle dimension.** The complex dimension seven is the complex dimension of the cone: eight complex parameters minus the one-dimensional complex scaling orbit. The chain is a chain of sets, not of subspaces. The cone is not a subspace, and its linear span is the whole complex sixteen-dimensional space by §*The Generation Theorem*. The complex dimension seven is the dimension of the cone as an algebraic variety, not the dimension of a subspace containing it.
 
@@ -227,7 +227,7 @@ The first inclusion is $L_{\lambda e_t}=\lambda\mathrm I_4$; the second is $L_{\
 
 **Theorem (the sum).** The subspace $\operatorname{End}_L(\mathbb{B})+\operatorname{End}_R(\mathbb{B})$ has complex dimension seven and is not a subalgebra of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
 
-*Proof.* The complex dimension is $4+4-1=7$ by the intersection theorem of *The Commutant of the Two Regular Families*. For the failure of closure, take $L_{\vec e_x}$ and $R_{\vec e_x}$, both in the sum. Their product is $L_{\vec e_x}R_{\vec e_x}$. If the sum were a subalgebra, this product would be $L_{\tilde A}+R_{\tilde B}$ for some $\tilde A,\tilde B$; the next paragraph shows that it is not.
+*Proof.* The complex dimension is $4+4-1=7$ by the intersection theorem of *The One-Sided Operators on the Biquaternion Algebra*. For the failure of closure, take $L_{\vec e_x}$ and $R_{\vec e_x}$, both in the sum. Their product is $L_{\vec e_x}R_{\vec e_x}$. If the sum were a subalgebra, this product would be $L_{\tilde A}+R_{\tilde B}$ for some $\tilde A,\tilde B$; the next paragraph shows that it is not.
 
 Suppose $\vec e_xX\vec e_x=\tilde AX+X\tilde B$ for all $X$. At $X=e_t$, $-\!e_t=\tilde A+\tilde B$. At $X=\vec e_x$,
 
@@ -446,8 +446,7 @@ The plain adjoint exchanges the parameters, $(L_{\tilde Q}R_{\tilde P})^{\approx
 
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices, the coefficient matrix and the length.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the isomorphism that the generation theorem supports.
-- [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html) and [The Right Regular Operators on the Biquaternion Algebra](the-right-regular-operators-on-the-biquaternion-algebra.html), for the two boundary families.
-- [The Commutant of the Two Regular Families](the-commutant-of-the-two-regular-families.html), for the intersection used in the ladder.
+- [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for the two boundary families, their commutation and the intersection used in the ladder.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the association of the one-sided families and the four adjoints.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the plain form and its quadratic form.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the algebra's matrix units used in the generation theorem.

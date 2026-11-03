@@ -196,7 +196,6 @@ $$
 
 which is not a scalar multiple of $\mathrm{I}_2$. **The scalar square is a property of $\mathbb{B}$ and not of the slot family**, and it is the row of the table of §*The Table of the Slots* that assigns the ${}^{\natural}$-product its place among the four.
 
-
 ## The Two Switches and the Twisted Right Factor
 
 The four readings of §*The Readings and Their Group* are also read on a single operator, once the two insertions are put on the right factor. The first is the **coefficient involution** $\sigma$, the conjugation of the scalars of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, which on this algebra is the coefficient conjugation $\bar{\cdot}$ of *The Group of Involutions*; the second is the **sign character** $\alpha$, the identity on the centre $\mathbb{C}_{\mathbb{B}}$ and minus the identity on the vector subspace $V$, which on this algebra is the natural conjugation $\natural$ read as a twist, as in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, where the same operator carries $\alpha$ in place of $\natural$. The two commute, one being linear over $\mathbb{C}$ and the other conjugate-linear, and their four settings are the four settings of the products, now on one parameter rather than on the two slots.
@@ -406,6 +405,7 @@ The same two switches are read on one operator, with the conjugation in the righ
 - [The Signed Sandwich on a Clifford Algebra](the-signed-sandwich-on-a-clifford-algebra.html), for the ordinary sandwich, its minus sign and the repair by the grade involution
 - [Two-Sided Operators with the Signed Product](two-sided-operators-with-the-signed-product.html), for the signed family, its twisted composition law and its coset structure
 - [Two-Sided Operators on the General Quaternionic Algebra of the Biquaternions](two-sided-operators-on-the-general-quaternionic-algebra-of-the-biquaternions.html), for the parameter insertion in the biquaternion model
+- [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for the two families read frame-free, with the two laws, the rank and the commutation.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the plain family that the right factors twist, and its criteria
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four general products read on the remarkable real subspaces
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the parity, the determinant and the Lorentz group
