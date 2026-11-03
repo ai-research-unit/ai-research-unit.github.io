@@ -2,91 +2,323 @@
 
 ## Introduction
 
-The algebra is read in matrices in two ways, and the two answer different questions. The **$2\times2$ isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a complex matrix of the algebra's own size; the **$4\times4$ regular representation** reads multiplication as a linear map on the algebra taken as a complex vector space, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$.
+The algebra is read in matrices in three ways, and the three answer different questions. The **axis-free representation** reads multiplication in the basis the algebra already carries, and writes the two operators $L^{\mathrm{axf}}(\tilde Q)$ and $R^{\mathrm{axf}}(\tilde Q)$; it needs no frame, its entries are the structure constants, and it is the display a computation uses when no direction is to be singled out. The **Pauli representation** reads the same two operators in the Peirce frame of the standard pair; it costs the choice of a frame and buys the $2\times2$ block, the five-cell Clifford frame and the gamma matrices. The **$2\times2$ isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a complex matrix of the algebra's own size; it is not a regular representation at all, and it is the block from which the Pauli display is built.
 
-The algebra is $M_2(\mathbb{C})$ and it is never $M_4(\mathbb{C})$. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and the retired label $M_4(\mathbb{C})_L$ is read as $\mathbb{B}_L$.
+The order of the article is that order. The axis-free display comes first because it follows from the multiplication table alone, with nothing chosen. The Pauli display comes second because it needs the standard pair, and once it is written the switch between the two frames is one matrix and its inverse, §*The Switch Between the Two Frames*. The $2\times2$ isomorphism comes last because it is the algebra and not an operator on it, and it is read best after both $4\times4$ displays have shown what a matrix of an operator is.
 
-The order is: the table of objects, the $2\times2$ isomorphism with its four forced images and its trace and determinant, the $4\times4$ regular representation in the canonical Peirce frame with the four left matrices $L_{e_\mu}^{\mathrm{pau}}$, the four right matrices $R_{e_\nu}^{\mathrm{pau}}$ and the sixteen basis matrices $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$, and the Clifford structure of the cells that closes it. The article assumes the base of *Algebra and Element Conventions* and the Peirce convention of *Special Element and Peirce Conventions*, whose standard pair fixes the frame.
+**Three displays, two objects.** The two $4\times4$ displays are one operator in two bases: the same four-dimensional subalgebra $\mathbb{B}_L$ of the ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, written twice. The $2\times2$ display is a different object, the algebra itself. A change of frame never changes the operator, and it never touches the $2\times2$ image, because that image carries no frame.
+
+**The order renames nothing.** The corpus calls the Peirce frame the canonical frame, and this article keeps the name: the word names the frame, not its position here. The axis-free frame is the coefficient basis read as a frame, and its label is $\mathrm{axf}$.
+
+**The algebra is $M_2(\mathbb{C})$, and it is never $M_4(\mathbb{C})$.** The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and the retired label $M_4(\mathbb{C})_L$ is read as $\mathbb{B}_L$.
+
+The article assumes the base of *Algebra and Element Conventions* and the Peirce convention of *Special Element and Peirce Conventions*, whose standard pair fixes the Pauli frame.
 
 ## The Matrix Models
 
-**The biquaternion algebra is $M_2(\mathbb{C})$, and it is never $M_4(\mathbb{C})$.** Two kinds of matrix model read it, and they answer different questions. The **isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a $2\times2$ complex matrix, of the algebra's own size. The **regular representation** reads multiplication as a linear map on the algebra taken as a complex vector space, and its target is $\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$; its image is a four-dimensional subspace of that ambient algebra, not the ambient algebra. The two are different representations, not two sizes of one.
+**Two kinds of matrix model read the algebra.** The **isomorphism** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a $2\times2$ complex matrix, of the algebra's own size. The **regular representation** reads multiplication as a linear map on the algebra taken as a complex vector space, and its target is $\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$; its image is a four-dimensional subspace of that ambient algebra, not the ambient algebra. The two are different representations, not two sizes of one.
 
 | object | writing | meaning |
 |---|---|---|
 | the algebra | $\mathbb{B}$ | $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ |
-| the isomorphism | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the element read as a $2\times2$ matrix |
 | the ambient | $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ | operators on the algebra as a vector space |
 | the left copy | $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}=\rho_L(\mathbb{B})$ | four-dimensional subalgebra |
 | the right copy | $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}=\rho_R(\mathbb{B})$ | the commutant of $\mathbb{B}_L$ |
-| the matrix of an element | $\mathsf{M}_4^{L}(\tilde Q)$, $\mathsf{M}_4^{R}(\tilde Q)$ | the matrices of $\rho_L(\tilde Q)$, $\rho_R(\tilde Q)$ in the frame the article names; canonical by default |
+| the isomorphism | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the element read as a $2\times2$ matrix |
+| the axis-free matrix | $\mathsf{M}_4^{\mathrm{axf},L}(\tilde Q)$, $\mathsf{M}_4^{\mathrm{axf},R}(\tilde Q)$ | the regular matrices in the coefficient basis, written $L^{\mathrm{axf}}(\tilde Q)$, $R^{\mathrm{axf}}(\tilde Q)$ |
+| the Pauli matrix | $\mathsf{M}_4^{\mathrm{pau},L}(\tilde Q)$, $\mathsf{M}_4^{\mathrm{pau},R}(\tilde Q)$ | the regular matrices in the Peirce frame, written $L(\tilde Q)$, $R(\tilde Q)$ |
 
-### The 2×2 Isomorphism
+The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy, $M_4(\mathbb{C})_{\mathbb{B}_R}$ the right, and $M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ both. A bare $M_4(\mathbb{C})$ is the ambient. The two cones are written $M_4(\mathbb{C})_{\mathcal{T}}$ for the two-sided operators and $M_4(\mathbb{C})_{\Theta}$ for the sandwiches, whose names are in *Conventions of the Operator Families*.
 
-**The map.** The isomorphism is $\mathbb{C}$-linear, multiplicative and bijective,
-$$
-\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad
-\mathsf{M}_2(\tilde Q_1+\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)+\mathsf{M}_2(\tilde Q_2),\qquad
-\mathsf{M}_2(\tilde Q_1\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2),
-$$
-and it is the reading every numerical check in the corpus is performed with.
+**The subscript names the action, not a tensor slot.** $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in *Operator and Calculus Conventions*, §*The Operators*. In the Pauli frame the left copy happens to be the second tensor factor and the right copy the first, and another frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.
 
-**The four unit images.** The images of the units are fixed once, because every article depends on them agreeing:
+## The $M_4(\mathbb{C})$ Axis-Free Representation
+
+**The basis is the one the algebra carries.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and its basis is the tensor basis of *The Biquaternion Algebra*, §*The Basis and the Complexification*,
 $$
-\mathsf{M}_2(e_t)=I_2,\qquad
-\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}=-i\sigma_1,\qquad
-\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}=-i\sigma_2,\qquad
-\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}=-i\sigma_3,
+e_t=1\otimes1,\qquad \vec e_x=1\otimes\vec e_x,\qquad \vec e_y=1\otimes\vec e_y,\qquad \vec e_z=1\otimes\vec e_z,
 $$
-with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices,
+the vector units on the right being those of $\mathbb{H}$, and the scalar imaginary $i=i\otimes1$ being central and occurring only as a coefficient. The four are a $\mathbb{C}$-basis, and the element is
+$$
+\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu=q_\mu+iq'_\mu,
+$$
+the developed form of *The Element, the Coordinates and the Conjugations*, §*The Coordinate Systems*. This basis is called the **coefficient basis**, because its four coordinates are the coefficients of the developed form, and it is called **axis-free**, because no one of the three vector directions enters by a rule of its own.
+
+**The multiplication table.** Every matrix below is read from this table and from nothing else:
+
+| $e_\mu e_\nu$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
+|---|---|---|---|---|
+| $e_t$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
+| $\vec e_x$ | $\vec e_x$ | $-e_t$ | $\vec e_z$ | $-\vec e_y$ |
+| $\vec e_y$ | $\vec e_y$ | $-\vec e_z$ | $-e_t$ | $\vec e_x$ |
+| $\vec e_z$ | $\vec e_z$ | $\vec e_y$ | $-\vec e_x$ | $-e_t$ |
+
+Each of the sixteen products is $\pm$ one of the four basis elements, and the signs are those of the quaternion algebra, $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. No complex number appears in the table, because $i$ is central and is carried by the coefficients. In the compact form,
+$$
+e_\mu e_\nu=\sum_\rho\varepsilon_{\mu\nu}^{\ \ \rho}\,e_\rho,\qquad
+\varepsilon_{\mu\nu}^{\ \ \rho}\in\{0,+1,-1\},
+$$
+and the array $\varepsilon$ is the algebra: the table is that array written out.
+
+**Why this frame is first.** The construction uses the multiplication of the algebra and nothing else: no idempotent is chosen, no direction is singled out, no root is fixed. The display is therefore unique once the basis is, and the basis is the one the algebra comes with. That is why it is the first display of the article, and why a computation that must not favour an axis starts here.
+
+**The label.** Write $L^{\mathrm{axf}}(\tilde Q)$ and $L_{e_\mu}^{\mathrm{axf}}$, and $R^{\mathrm{axf}}(\tilde Q)$ and $R_{e_\mu}^{\mathrm{axf}}$. The label is a name in lowercase roman letters, like $\mathrm{opp}$ and $\mathrm{fop}$, not an exponent: $L_{\vec e_x}^{\mathrm{axf}}$ is the left matrix of $\vec e_x$, and its square is written $(L_{\vec e_x}^{\mathrm{axf}})^2$. The label is carried by the family and not by the entry, because the frame is a property of the carrier and the side is a property of the action.
+
+### The Left Family
+
+**The definition.** The $\nu$-th column of the left matrix is the coordinate column of the product $\tilde Qe_\nu$,
+$$
+L^{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_{\mu},\qquad
+L^{\mathrm{axf}}(\tilde Q):=\bigl(\bigl[\tilde Qe_t\bigr]\;\bigl[\tilde Q\vec e_x\bigr]\;\bigl[\tilde Q\vec e_y\bigr]\;\bigl[\tilde Q\vec e_z\bigr]\bigr),
+$$
+which is the definition of *Families of Matrix Representations*, §*The Two Sides*, read in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The four matrices of the units are $L_{e_\mu}^{\mathrm{axf}}:=L^{\mathrm{axf}}(e_\mu)$.
+
+**The display.** For $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$,
+$$
+L^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&Q_t
+\end{pmatrix}.
+$$
+The first column is $(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$, the coordinate column of $\tilde Q$ itself, because $\tilde Qe_t=\tilde Q$. The other three columns are the products of $\tilde Q$ with the three vector units, one rule applied to the other three columns of the table.
+
+**The four left matrices.** On the units,
+$$
+L_{e_t}^{\mathrm{axf}}=\mathrm I_4,\qquad
+L_{\vec e_x}^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+$$
+$$
+L_{\vec e_y}^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{\vec e_z}^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$
+Each is a column of the multiplication table written as an array: the $z$ matrix has $-1$ where the table sends $e_t\mapsto\vec e_z$, $\vec e_y\mapsto-\vec e_x$, $\vec e_z\mapsto-e_t$ and $\vec e_x\mapsto\vec e_y$.
+
+**Signed permutations.** Each of the four is a signed permutation matrix: exactly one nonzero entry in each row and in each column, of modulus one, hence orthogonal with entries in $\{0,+1,-1\}$. Each has determinant $1$; the identity has trace $4$ and the three vector matrices have trace $0$. The four are linearly independent, since the assignment is injective and the four units are a basis, so they are a basis of $\mathbb{B}_L$.
+
+**The group.** The four matrices together with their negatives are eight distinct signed permutation matrices forming a group isomorphic to the quaternion group $Q_8$: the vector matrices square to $-\mathrm I_4$, distinct ones anticommute up to sign, and the identity is the unit. The left family of this frame is a copy of $Q_8$ inside $O(4)\subset M_4(\mathbb{R})$.
+
+**The law.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+L^{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=L^{\mathrm{axf}}(\tilde Q_1)L^{\mathrm{axf}}(\tilde Q_2),
+$$
+which is associativity and nothing else: the $\nu$-th column of the left side is the coordinate column of $(\tilde Q_1\tilde Q_2)e_\nu=\tilde Q_1(\tilde Q_2e_\nu)$, and the $\nu$-th column of the right side is $\tilde Q_1$ applied to the coordinate column of $\tilde Q_2e_\nu$. The first column recovers $\tilde Q$, so the assignment is injective, and its image is the four-dimensional complex subalgebra $\mathbb{B}_L$ of $M_4(\mathbb{C})$ whose unit is $\mathrm I_4$.
+
+**The transpose is the conjugation.** In this frame,
+$$
+L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L^{\mathrm{axf}}(\tilde Q^{\natural}),\qquad
+\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z,
+$$
+because transposing swaps the $(\mu,\nu)$ and the $(\nu,\mu)$ entries, and those two carry opposite signs exactly when $s_\mu s_\nu=-1$, with $s_t=1$ and $s_x=s_y=s_z=-1$; multiplying the three vector coefficients by $-1$ produces that sign pattern. The dagger gives the star conjugate, $L^{\mathrm{axf}}(\tilde Q)^{\dagger}=L^{\mathrm{axf}}(\tilde Q^{*})$, because the entrywise conjugate of the display is the display of the element with $\overline{Q_\mu}$ in place of $Q_\mu$. Both identities are properties of this frame and not of the algebra.
+
+### The Right Family
+
+**The definition.** The $\nu$-th column of the right matrix is the coordinate column of $\vec e_\nu\tilde Q$,
+$$
+R^{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\vec e_\nu\tilde Q\bigr]_{\mu},\qquad
+R^{\mathrm{axf}}(\tilde Q):=\bigl(\bigl[e_t\tilde Q\bigr]\;\bigl[\vec e_x\tilde Q\bigr]\;\bigl[\vec e_y\tilde Q\bigr]\;\bigl[\vec e_z\tilde Q\bigr]\bigr),
+$$
+the same construction with the order of the two factors exchanged.
+
+**The display.**
+$$
+R^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&Q_z&-Q_y\\
+Q_y&-Q_z&Q_t&Q_x\\
+Q_z&Q_y&-Q_x&Q_t
+\end{pmatrix}.
+$$
+The two displays agree on the diagonal and in the first column, and differ in the signs of the six entries where one index is scalar and the other vector.
+
+**The four right matrices.** On the units,
+$$
+R_{e_t}^{\mathrm{axf}}=\mathrm I_4,\qquad
+R_{\vec e_x}^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+$$
+$$
+R_{\vec e_y}^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+R_{\vec e_z}^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+$$
+Each is a signed permutation matrix of determinant $1$ and trace $4\delta_{\mu t}$, and the four are a basis of $\mathbb{B}_R$.
+
+**The law is reversed.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+R^{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=R^{\mathrm{axf}}(\tilde Q_2)R^{\mathrm{axf}}(\tilde Q_1),
+$$
+because associativity turns $\vec e_\nu(\tilde Q_1\tilde Q_2)$ into $(\vec e_\nu\tilde Q_1)\tilde Q_2$, so the columns compose in the reverse order. Powers and inverses are not reversed, since they involve one element only: $R^{\mathrm{axf}}(\tilde Q^n)=R^{\mathrm{axf}}(\tilde Q)^n$ and $R^{\mathrm{axf}}(\tilde Q^{-1})=R^{\mathrm{axf}}(\tilde Q)^{-1}$. The products of the unit matrices follow the reverse order too, $R_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}=\varepsilon'R_{e_{\nu\mu}}^{\mathrm{axf}}$ with $e_\nu e_\mu=\varepsilon'e_{\nu\mu}$, so $R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}}$, the opposite sign to the left family.
+
+**The two families commute.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+L^{\mathrm{axf}}(\tilde Q_1)R^{\mathrm{axf}}(\tilde Q_2)=R^{\mathrm{axf}}(\tilde Q_2)L^{\mathrm{axf}}(\tilde Q_1),
+$$
+because the two factors sit on opposite sides of the argument and never meet. The two families meet in the scalars: $L^{\mathrm{axf}}(\tilde Q)=R^{\mathrm{axf}}(\tilde Q)$ says that $\tilde Q$ commutes with every element, that is $\tilde Q\in\mathbb{C}e_t$, and then the common matrix is $\lambda\mathrm I_4$.
+
+### The Stitch Between the Two Families
+
+**The general rule.** In any frame the right matrix is the transpose of the left one between the switch matrix and its inverse,
+$$
+R(\tilde Q)=\mathsf W^{-1}L(\tilde Q)^{\mathsf T}\mathsf W,
+$$
+where $\mathsf W$ is the Gram matrix of the symmetric form $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ on the frame (*Families of Matrix Representations*).
+
+**The switch of this frame.** On the four units, $\beta(e_\mu,e_\nu)=\operatorname{Sc}(e_\mu e_\nu)$ is $+1$ on $e_t$, $-1$ on the three vector units and $0$ off the diagonal, so
+$$
+\mathsf W=D=\operatorname{diag}(1,-1,-1,-1),
+\qquad
+R^{\mathrm{axf}}(\tilde Q)=D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,
+\qquad
+D=D^{\mathsf T}=D^{-1}.
+$$
+The same array $D$ is the sign vector $\varepsilon$ of the products: the transpose dictionary and the metric of the plain product are one object here. This is the cheapest stitch in the corpus, and it is the reason the transpose is the conjugation above.
+
+**The switch matrix, written out.** It is its own transpose and its own inverse,
+$$
+D=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix},
+\qquad
+D^{\mathsf T}=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}=D,
+\qquad
+D^{-1}=D .
+$$
+Entrywise the stitch reads
+$$
+\bigl(R^{\mathrm{axf}}(\tilde Q)\bigr)_{ij}=d_i\,d_j\,\bigl(L^{\mathrm{axf}}(\tilde Q)\bigr)_{ji},
+\qquad d_1=1,\quad d_2=d_3=d_4=-1,
+$$
+so transposing already writes $R$ except in the bottom-right $3\times3$ block, and the two factors of $D$ negate that block and only that block. On the general element the two displays of §*The Left Family* and §*The Right Family* differ in exactly those six entries, and on the unit $\vec e_x$ the computation is
+$$
+D\,\bigl(L_{\vec e_x}^{\mathrm{axf}}\bigr)^{\mathsf T}D
+=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}
+\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}
+\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}
+=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}
+=R_{\vec e_x}^{\mathrm{axf}} .
+$$
+The four matrix displays of the two families are the same arrays read in the two ways, and nothing in the algebra is changed by the choice.
+
+**The invariants.** The trace and the determinant are
+$$
+\operatorname{tr}L^{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
+\det L^{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},
+$$
+and the same values hold for $R$, since the stitch changes neither a trace nor a determinant. They are the values of the operator, not of the frame.
+
+### The Sixteen Products in This Frame
+
+**They are real.** The sixteen products $L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$ are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$, of Hilbert–Schmidt norm two, and mutually orthogonal. Their entries are the structure constants themselves, so the product table of the algebra and the multiplication of the sixteen arrays are one table.
+
+**The sixteen, one by one.** Each is a signed permutation matrix, with four entries $\pm1$, and each is written here with both factors named:
+
+$$
+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}
+$$
+
+$$
+L_{e_t}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}
+$$
+
+$$
+L_{\vec e_x}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}
+$$
+
+$$
+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad
+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}
+$$
+
+$$
+L_{\vec e_y}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix}
+$$
+
+$$
+L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}
+$$
+
+$$
+L_{\vec e_z}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad
+L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix}
+$$
+
+$$
+L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
+L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}
+$$
+
+**The product closes on the cell.** They multiply by multiplying the left factors together and the right factors together,
+$$
+L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}\,L_{e_\rho}^{\mathrm{axf}}R_{e_\sigma}^{\mathrm{axf}}
+=L_{e_\mu e_\rho}^{\mathrm{axf}}R_{e_\sigma e_\nu}^{\mathrm{axf}},
+$$
+which is again a cell, so the sixteen span a sixteen-dimensional algebra: the whole ambient $M_4(\mathbb{C})$, as §*The Clifford Structure* reads it in the other frame.
+
+**The cost.** No $2\times2$ block appears, no Peirce idempotent is visible, and the sixteen arrays are all of one kind, so no five of them are singled out. The frame that gives the transpose dictionary takes away the block and the gamma frame; the next sections buy them back.
+
+## The $M_4(\mathbb{C})$ Pauli Representation
+
+**A second frame, and what it buys.** The same two operators are displayed in the Peirce frame of the standard pair. The frame is a choice, and it is the choice the rest of the corpus makes: it is the frame in which the left matrix is a $2\times2$ block matrix, in which every cell is a Kronecker product of two $2\times2$ matrices, and in which five of them are the gamma matrices. Its label is $\mathrm{pau}$.
+
+### The Peirce Frame
+
+**The two idempotents.** The standard pair is
+$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
+\tilde\Pi_+^2=\tilde\Pi_+,\quad \tilde\Pi_-^2=\tilde\Pi_-,\quad \tilde\Pi_+\tilde\Pi_-=0,\quad \tilde\Pi_++\tilde\Pi_-=e_t,
+$$
+and its two mixed units are
+$$
+\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),\qquad
+\vec\Upsilon_\pm^2=0,\quad \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+ .
+$$
+So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. The Peirce convention fixes no family (*Special Element and Peirce Conventions*, §*The Biquaternion Peirce Convention*); the choice here is not a preferred pair, it is the frame this display is written in, and the corpus calls it the canonical frame.
+
+**The frame vectors over the basis.** Written in the coefficient basis, the four frame vectors are
+$$
+\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad
+\vec\Upsilon_+=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\qquad
+\vec\Upsilon_-=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad
+\tilde\Pi_-=\tfrac12\bigl(e_t-i\vec e_z\bigr),
+$$
+so each is a combination of two units and the switch is two $2\times2$ blocks, as §*The Switch Between the Two Frames* writes it out.
+
+**The root, and the broken symmetry.** The frame singles out the direction $i\vec e_z$ through $\tilde\Pi_\pm$, and the two mixed units pair $\vec e_x$ with $\vec e_y$ and leave $\vec e_z$ in the idempotents. That is the price of the block: the axis-free frame has no root and no block, and this frame has both.
+
+### The Two Tensor Factors
+
+**The Pauli matrices.** The $4\times4$ arrays of this frame are built from three $2\times2$ matrices, and they are fixed here once for the whole chapter:
 $$
 \sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
 \sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
 \sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
 $$
-The central scalar is $\mathsf{M}_2(i)=iI_2$, and $\mathbb{C}$-linearity gives the Hermitian units, $\mathsf{M}_2(i\vec e_k)=i\,\mathsf{M}_2(\vec e_k)$.
-
-**The assignment is forced.** $\vec e_k^2=-e_t$ requires the factor $i$, and $\vec e_x\vec e_y=\vec e_z$ fixes the sign. The three images cannot be made real, nor all three negated; *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions* derives both.
-
-**No frame is needed.** The isomorphism is a map of algebras and does not depend on a frame of $\mathbb{B}$. The four matrices above are the images of the units, not the entries of a matrix read in a basis, and no Peirce family enters. The frame enters only in the regular representation of §*The 4×4 Regular Representation*, which reads an operator on the algebra.
-
-**The invariants.** The determinant of the image is the biquaternion norm and its trace is twice the scalar part,
+They are Hermitian, traceless, of determinant $-1$ and of square $I_2$, and they multiply by
 $$
-\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},\qquad
-\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t .
+\sigma_1\sigma_2=i\sigma_3,\qquad \sigma_2\sigma_3=i\sigma_1,\qquad \sigma_3\sigma_1=i\sigma_2,
+\qquad
+\sigma_1\sigma_2\sigma_3=iI_2,
 $$
-The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of units and the unit-norm group are read from it.
-
-### The 4×4 Regular Representation
-
-**The maps.** Left multiplication is the linear map $\rho_L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, and right multiplication is $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The target is the ambient operator algebra $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$.
-
-**The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B}_L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B}_R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and $\mathbb{B}_R$ is the commutant of $\mathbb{B}_L$ in $M_4(\mathbb{C})$.
-
-The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy, $M_4(\mathbb{C})_{\mathbb{B}_R}$ the right, and $M_4(\mathbb{C})_{\mathbb{B}_L,\mathbb{B}_R}$ both. A bare $M_4(\mathbb{C})$ is the ambient, $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$; it carries no biquaternion structure and takes no biquaternion name. The two cones are written $M_4(\mathbb{C})_{\mathcal{T}}$ for the two-sided operators and $M_4(\mathbb{C})_{\Theta}$ for the sandwiches, whose names are in *Conventions of the Operator Families*.
-
-**The subscript names the action, not a tensor slot.** $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in *Operator and Calculus Conventions*, §*The Operators*. In the canonical frame below the left copy is the second tensor factor and the right copy the first, and another choice of frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.
-
-**The canonical frame is the Peirce frame of the standard pair.** The matrix model fixes the family and the two mixed units,
+so $\sigma_j\sigma_k=-\sigma_k\sigma_j$ for $j\ne k$ and $\{\sigma_j,\sigma_k\}=2\delta_{jk}I_2$. The image of the algebra is their complex linear combination,
 $$
-\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
-\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
+\mathsf{M}_2(\tilde Q)=Q_tI_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)
+=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix},
 $$
-which satisfy
-$$
-\tilde\Pi_+^2=\tilde\Pi_+,\quad \tilde\Pi_-^2=\tilde\Pi_-,\quad \tilde\Pi_+\tilde\Pi_-=0,\quad
-\vec\Upsilon_\pm^2=0,\quad \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+ .
-$$
-So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. This is the frame of the $\mathsf{M}_2$ model, and it is a choice of frame inside the matrix model. The Peirce convention fixes no family (*Special Element and Peirce Conventions*, §*The Biquaternion Peirce Convention*), and the choice here is not a preferred pair: it is the frame the matrix model is written in.
+and every $4\times4$ array of this frame is a Kronecker product of these three with $I_2$ or with each other. That is why each $4\times4$ display carries the same $2\times2$ arrays twice, and why the four left matrices below are read as $-i\sigma_k$ repeated in the two diagonal blocks, the four right ones as $-i\sigma_k^{\mathsf T}$ multiplying the four blocks of $I_2$.
 
-**In this frame the two copies are the two tensor factors.**
+**The left matrix.** In the Peirce frame the left matrix of $\tilde Q$ is the $2\times2$ matrix taken twice,
 $$
 \rho_L(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),\qquad
-\rho_R(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2 .
+\mathsf{M}_4^{\mathrm{pau},L}(\tilde Q)=L(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),
 $$
-So the left copy is the set of matrices $I_2\otimes A$ and the right copy the set $B\otimes I_2$: in the $4\times4$ matrix of an element the four blocks are $\mathsf{M}_2(\tilde Q)$, $0$, $0$, $\mathsf{M}_2(\tilde Q)$ on the left, and $M_{11}I_2$, $M_{21}I_2$, $M_{12}I_2$, $M_{22}I_2$ on the right, where $M_{ij}$ are the entries of $\mathsf{M}_2(\tilde Q)$. The regular matrix is the $2\times2$ matrix taken twice.
+so its four blocks are $\mathsf{M}_2(\tilde Q)$, $0$, $0$, $\mathsf{M}_2(\tilde Q)$.
 
-**The four left matrices.** Each is the image of a unit under the left matrix map, in the canonical frame,
+**The four left matrices.** Each is the image of a unit,
 $$
 L_{e_t}^{\mathrm{pau}}=\mathsf{M}_4^{L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 L_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
@@ -95,25 +327,34 @@ $$
 L_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
 L_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
 $$
-each equal to $I_2\otimes\mathsf M_2(\vec e_k)$, with $\mathsf M_2(\vec e_k)=-i\sigma_k$. A general element is their linear combination,
+each equal to $I_2\otimes\mathsf{M}_2(\vec e_k)$, with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$:
 $$
-\mathsf M_4^{L}(\tilde Q)=Q_tL_{e_t}^{\mathrm{pau}}+Q_xL_{\vec e_x}^{\mathrm{pau}}+Q_yL_{\vec e_y}^{\mathrm{pau}}+Q_zL_{\vec e_z}^{\mathrm{pau}}=I_2\otimes\mathsf M_2(\tilde Q).
+L_{e_t}^{\mathrm{pau}}=\operatorname{diag}\bigl(I_2,I_2\bigr),\qquad
+L_{\vec e_x}^{\mathrm{pau}}=\operatorname{diag}\bigl(-i\sigma_1,-i\sigma_1\bigr),\qquad
+L_{\vec e_y}^{\mathrm{pau}}=\operatorname{diag}\bigl(-i\sigma_2,-i\sigma_2\bigr),\qquad
+L_{\vec e_z}^{\mathrm{pau}}=\operatorname{diag}\bigl(-i\sigma_3,-i\sigma_3\bigr).
+$$
+The visible structure of the four arrays is the structure of the three Pauli matrices: $L_{\vec e_z}^{\mathrm{pau}}$ is diagonal because $\sigma_3$ is, $L_{\vec e_x}^{\mathrm{pau}}$ and $L_{\vec e_y}^{\mathrm{pau}}$ are off the diagonal inside each block because $\sigma_1$ and $\sigma_2$ are, and the factor $i$ is what makes each square $-I_4$. A general element is their linear combination,
+$$
+\mathsf{M}_4^{L}(\tilde Q)=Q_tL_{e_t}^{\mathrm{pau}}+Q_xL_{\vec e_x}^{\mathrm{pau}}+Q_yL_{\vec e_y}^{\mathrm{pau}}+Q_zL_{\vec e_z}^{\mathrm{pau}}=I_2\otimes\mathsf{M}_2(\tilde Q).
 $$
 
-**The four right matrices.** Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf P$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
+**The four right matrices.** Right multiplication is the transpose of left multiplication in the exchanged frame. Let $\mathsf P$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
 $$
 \mathsf P\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
 \mathsf P\vec\Upsilon_+=\vec\Upsilon_-,\qquad
 \mathsf P\vec\Upsilon_-=\vec\Upsilon_+,
 $$
-the permutation of the second and third coordinates of the canonical frame. Its matrix there is
+the permutation of the second and third canonical coordinates. Its matrix there is
 $$
 \mathsf P=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
 $$
-symmetric and involutive, $\mathsf P^{\mathsf T}=\mathsf P=\mathsf P^{-1}$, of trace $2$ and determinant $-1$; in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. It is a linear involution of the carrier, not an algebra map, not one of the sixteen cells and not a one-sided multiplication. The right matrix is then
+symmetric and involutive, $\mathsf P^{\mathsf T}=\mathsf P=\mathsf P^{-1}$, of trace $2$ and determinant $-1$; in the coefficient basis the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. It is a linear involution of the carrier, not an algebra map, not one of the sixteen cells and not a one-sided multiplication. Then
 $$
 \mathsf M_4^{R}(\tilde Q)=\mathsf P\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}\mathsf P^{-1},\qquad
-R_{e_\nu}^{\mathrm{pau}}=\mathsf P\,{L_{e_\nu}^{\mathrm{pau}}}^{\mathsf T}\,\mathsf P^{-1}.
+R_{e_\nu}^{\mathrm{pau}}=\mathsf P\,{L_{e_\nu}^{\mathrm{pau}}}^{\mathsf T}\,\mathsf P^{-1},
+\qquad
+\mathsf{M}_4^{\mathrm{pau},R}(\tilde Q)=R(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2 .
 $$
 Explicitly,
 $$
@@ -122,104 +363,206 @@ R_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\
 $$
 $$
 R_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
+R_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
 $$
-and a general element is $\mathsf M_4^{R}(\tilde Q)=Q_tR_{e_t}^{\mathrm{pau}}+Q_xR_{\vec e_x}^{\mathrm{pau}}+Q_yR_{\vec e_y}^{\mathrm{pau}}+Q_zR_{\vec e_z}^{\mathrm{pau}}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$.
+**The same Pauli matrices, in the other slot.** The right matrices are
+$$
+R_{\vec e_k}^{\mathrm{pau}}=\mathsf{M}_2(\vec e_k)^{\mathsf T}\otimes I_2=\bigl(-i\sigma_k^{\mathsf T}\bigr)\otimes I_2,\qquad
+R_{e_t}^{\mathrm{pau}}=I_2\otimes I_2=\operatorname{diag}(I_2,I_2),
+$$
+so the entry $\bigl(-i\sigma_k^{\mathsf T}\bigr)_{rc}I_2$ sits in the $(r,c)$ block. The exchange of the two factors is not a transposition of the array: it moves the Pauli matrix from the diagonal blocks to the block-scaling role, and its blocks become multiples of $I_2$ instead of being $I_2$-multiples of the same $2\times2$ array.
 
-**The Pauli form of the two families.** With $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
+**What the exchange does, case by case.** $\sigma_1$ and $\sigma_2$ have zero diagonal, so $R_{\vec e_x}^{\mathrm{pau}}$ and $R_{\vec e_y}^{\mathrm{pau}}$ have both diagonal blocks zero and their two off-diagonal blocks equal to $-iI_2$. $\sigma_3$ is diagonal, so the two matrices differ only in the order of four diagonal entries,
 $$
-L_{e_t}^{\mathrm{pau}}=I_2\otimes I_2,\qquad
-L_{\vec e_k}^{\mathrm{pau}}=-i\,I_2\otimes\sigma_k,\qquad
-R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}},\qquad
-R_{\vec e_x}^{\mathrm{pau}}=-i\,\sigma_1\otimes I_2,\quad
-R_{\vec e_y}^{\mathrm{pau}}=+i\,\sigma_2\otimes I_2,\quad
-R_{\vec e_z}^{\mathrm{pau}}=-i\,\sigma_3\otimes I_2 .
+L_{\vec e_z}^{\mathrm{pau}}=\operatorname{diag}(-i,\,i,\,-i,\,i),\qquad
+R_{\vec e_z}^{\mathrm{pau}}=\operatorname{diag}(-i,\,-i,\,i,\,i),
 $$
-The Pauli line is the evaluation of the $L$-based definition, never its replacement.
+which is the exchange written on the diagonal: the left array repeats $-i,i$ twice, the right array repeats $-i$ twice and then $i$ twice. The transposition itself leaves $R_{\vec e_x}^{\mathrm{pau}}$ and $R_{\vec e_z}^{\mathrm{pau}}$ as the exchange alone would give, because $\sigma_1$ and $\sigma_3$ are symmetric, and it negates the blocks of $R_{\vec e_y}^{\mathrm{pau}}$ because $\sigma_2$ is antisymmetric: $\sigma_2^{\mathsf T}=-\sigma_2$.
 
-**The sixteen basis matrices.** The sixteen cells are the ordinary products
+**The laws and the invariants.** Both families obey the laws of the axis-free frame, with the same side conventions,
 $$
-\mathsf M_4^{L}\bigl(\vec e_\mu\otimes\vec e_\nu^{\mathrm{opp}}\bigr)=L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}=L_{e_\mu}^{\mathrm{pau}}\,\mathsf P\,{L_{e_\nu}^{\mathrm{pau}}}^{\mathsf T}\,\mathsf P^{-1},
+L(\tilde Q_1\tilde Q_2)=L(\tilde Q_1)L(\tilde Q_2),\qquad
+R(\tilde Q_1\tilde Q_2)=R(\tilde Q_2)R(\tilde Q_1),\qquad
+L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1),
 $$
-in four families,
-$$
-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}},\qquad
-L_{e_t}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}}=R_{\vec e_k}^{\mathrm{pau}},\qquad
-L_{\vec e_k}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=L_{\vec e_k}^{\mathrm{pau}},\qquad
-L_{\vec e_j}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}} ,
-$$
-which is the $L\leftrightarrow R$ correspondence of the basis: the mixed cell with left unit $\mu$ and right unit $t$ is the left matrix of $\mu$, the mixed cell with left unit $t$ and right unit $\nu$ is the right matrix of $\nu$, and the purely spatial cells $L_{\vec e_j}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}}$ are the only ones that are neither. In the Pauli form,
-$$
-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4,\qquad
-L_{e_t}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}}=-i\,\sigma_k^{\mathsf T}\otimes I_2,\qquad
-L_{\vec e_k}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=-i\,I_2\otimes\sigma_k,\qquad
-L_{\vec e_j}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
-$$
+and the trace and determinant are the same numbers, $\operatorname{tr}L(\tilde Q)=4Q_t$ and $\det L(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$, because they are properties of the operator. The dagger is the star conjugate, $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$, and the transpose is not the conjugation here: the conjugation is the transpose followed by the exchange, $L(\tilde Q^{\natural})=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$.
 
-The sixteen, with their left and right factors, are
+**The block form of the element.** Since $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ with
 $$
-\boxed{\;\begin{aligned}
-&L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\quad L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\\
-&L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\quad L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\\
-&L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\quad L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\\
-&L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\quad L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-\end{aligned}\;}
+a=Q_t-iQ_z,\qquad b=-iQ_x-Q_y,\qquad c=-iQ_x+Q_y,\qquad d=Q_t+iQ_z,
 $$
+the left matrix is
+$$
+L(\tilde Q)=\begin{pmatrix}a&b&0&0\\ c&d&0&0\\0&0&a&b\\0&0&c&d\end{pmatrix},
+$$
+so the algebra acts on each Peirce component by the same $2\times2$ matrix, and the two components never mix. This is the block the $2\times2$ display names, §*The $2\times2$ Pauli Representation*.
 
-**The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$, each entry being $\mathsf M_4^{L}\bigl(\vec e_\mu\otimes\vec e_\nu^{\mathrm{opp}}\bigr)=L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$,
+**The zero block is the point.** Every entry linking an index in $\{1,2\}$ to one in $\{3,4\}$ vanishes for every element. The Peirce frame does not block an arbitrary operator; it blocks the left copy $\mathbb{B}_L$, and the vanishing is the statement that left multiplication preserves the two Peirce components.
+
+### The Sixteen Cells in the Peirce Frame
+
+**The sixteen cells, entry by entry.** The cells multiply left multipliers with left multipliers and right with right,
+$$
+L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}\,L_{e_\rho}^{\mathrm{pau}}R_{e_\sigma}^{\mathrm{pau}}
+=L_{e_\mu e_\rho}^{\mathrm{pau}}R_{e_\sigma e_\nu}^{\mathrm{pau}},
+$$
+so each cell is fixed by its left unit $e_\mu$ and its right unit $e_\nu$, and the four left matrices and the four right matrices generate all sixteen. In blocks of $2\times2$,
+$$
+L_{e_t}^{\mathrm{pau}}=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+L_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+L_{\vec e_y}^{\mathrm{pau}}=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+L_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+$$
+$$
+R_{e_t}^{\mathrm{pau}}=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+R_{\vec e_y}^{\mathrm{pau}}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+$$
+each a $2\times2$ block repeated twice, $I_2\otimes\mathsf{M}_2(e_\mu)=\operatorname{diag}\bigl(\mathsf{M}_2(e_\mu),\mathsf{M}_2(e_\mu)\bigr)$ for the left matrices and $\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes I_2=\operatorname{diag}\bigl(\mathsf{M}_2(e_\nu)^{\mathsf T},\mathsf{M}_2(e_\nu)^{\mathsf T}\bigr)$ for the right ones.
+
+**The sixteen cells are Kronecker products.** Combining the two tensor forms,
+$$
+L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}=\bigl(I_2\otimes\mathsf{M}_2(e_\mu)\bigr)\bigl(\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes I_2\bigr)
+=\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes\mathsf{M}_2(e_\mu),
+$$
+so each cell is a Kronecker product: the right unit's matrix, transposed, in the first slot, and the left unit's matrix in the second. The left factor fixes the second slot and the right factor the first, and the cell is the pair $(\mu,\nu)$ read in the two slots:
+
+| cell | $\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes \mathsf{M}_2(e_\mu)$ | cell | $\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes \mathsf{M}_2(e_\mu)$ |
+|---|---|---|---|
+| $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $I_2\otimes I_2$ | $L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $I_2\otimes \mathsf{M}_2(\vec e_y)$ |
+| $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_x)^{\mathsf T}\otimes I_2$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_x)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_y)$ |
+| $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_y)^{\mathsf T}\otimes I_2$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_y)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_y)$ |
+| $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_z)^{\mathsf T}\otimes I_2$ | $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_z)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_y)$ |
+| $L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $I_2\otimes \mathsf{M}_2(\vec e_x)$ | $L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ | $I_2\otimes \mathsf{M}_2(\vec e_z)$ |
+| $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_x)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_x)$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_x)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_z)$ |
+| $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_y)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_x)$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_y)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_z)$ |
+| $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_z)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_x)$ | $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $\mathsf{M}_2(\vec e_z)^{\mathsf T}\otimes \mathsf{M}_2(\vec e_z)$ |
+
+All sixteen are invertible, of rank four and of Hilbert–Schmidt norm two, because $\lVert X\otimes Y\rVert_{\mathrm{HS}}=\lVert X\rVert_{\mathrm{HS}}\lVert Y\rVert_{\mathrm{HS}}$ and every $\mathsf{M}_2(e_\mu)$ has norm $\sqrt2$; the only one of trace $4$ is $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4$, and the other fifteen have trace $0$.
+
+**The sixteen, one by one.** Written out in full:
+
 $$
 L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix}
 $$
+
 $$
 L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}
 $$
+
 $$
 L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix}
 $$
+
 $$
 L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix},\qquad
-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}
 $$
+
 $$
 L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix}
 $$
+
 $$
 L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},\qquad
-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix}
 $$
+
 $$
 L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix}
 $$
+
 $$
 L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}
 $$
 
-Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $(L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}})^{\mathrm{axf}}=C_{\Pi}\,L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}\,C_{\Pi}^{-1}$.
+### The Pauli Form
 
-**The invariants.** With $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$, the block form gives
+**The Pauli form.** The matrices $I_2\otimes\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$ are the two tensor forms of the same element. The first reads the element on the left, the second on the right, and the exchange $\mathsf P$ is the difference between them:
 $$
-\det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},\qquad
-\operatorname{tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t .
+\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P\,\bigl(I_2\otimes\mathsf{M}_2(\tilde Q)^{\mathsf T}\bigr)\mathsf P^{-1}
+=\mathsf P\,\bigl(I_2\otimes\mathsf{M}_2(\tilde Q)\bigr)^{\mathsf T}\mathsf P^{-1}.
 $$
-The same values hold for $R$, because transposition and the permutation $\mathsf P$ change neither a determinant nor a trace.
+The four left matrices, the four right matrices and the sixteen cells are written above in this frame; the gamma framing of the same five cells, and the comparison with the Clifford algebra, are in §*The Clifford Structure* and §*The Gamma Formulation*.
 
-**The frame is not the object.** Another gauge, another order of the four basis elements, or another Peirce family gives another matrix of the same operator; the two formulas above hold in the canonical frame alone. An article that uses another frame says so and gives the change of frame. What the frame does not change is the copy and the element: the matrix is an image of the element, never the element and never the algebra.
+## The Switch Between the Two Frames
 
-**The explicit matrices are written in the canonical frame.** The model articles display $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ in the canonical Peirce frame. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display $C_{\Pi}(I_2\otimes\mathsf{M}_2)C_{\Pi}^{-1}$, with the Peirce change $C_{\Pi}$. The articles whose subject is the transpose dictionary use the coefficient basis, because quaternion conjugation is transposition there, and each declares it. An article that uses another frame declares it; an entry is read only with the frame that produced it.
+**One matrix, and its inverse.** The two frames are two bases of the same four-dimensional vector space, so the two displays of one operator are related by one change of matrix. Write $C_{\Pi}$ for the matrix whose columns are the coordinates of the frame vectors in the coefficient basis,
+$$
+C_{\Pi}=\tfrac12\begin{pmatrix}1&0&0&1\\0&i&i&0\\0&1&-1&0\\i&0&0&-i\end{pmatrix},
+$$
+the columns being $\tilde\Pi_+$, $\vec\Upsilon_+$, $\vec\Upsilon_-$, $\tilde\Pi_-$ in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Then for every element and every side,
+$$
+\boxed{\;L^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L(\tilde Q)\,C_{\Pi}^{-1},\qquad
+R^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R(\tilde Q)\,C_{\Pi}^{-1}\;}
+$$
+and inversely $L(\tilde Q)=C_{\Pi}^{-1}L^{\mathrm{axf}}(\tilde Q)C_{\Pi}$, $R(\tilde Q)=C_{\Pi}^{-1}R^{\mathrm{axf}}(\tilde Q)C_{\Pi}$. The reason is one line: the $\nu$-th column of a regular matrix is the coordinate column of a product, and a change of basis rewrites every coordinate column by the same matrix. Neither side changes, and both displays change by the same conjugation.
 
-**Each frame is labelled on the family.** Write $L^{\mathrm{axf}}(\tilde Q)$ and $L_{e_\mu}^{\mathrm{axf}}$ for the coefficient basis read as the axis-free basis, where the three vector directions enter by one rule and none is singled out, and $L^{\mathrm{pau}}(\tilde Q)$ and $L_{e_\mu}^{\mathrm{pau}}$ for the standard Peirce frame; the label is a name in lowercase roman letters, like $\mathrm{opp}$ and $\mathrm{fop}$, not an exponent. The capital $P$ that this article once wrote for the same frame is retired, since a capital in the caret reads as a matrix set and the corpus writes every label in lowercase.
+**The inverse.** The inverse is
+$$
+C_{\Pi}^{-1}=\begin{pmatrix}1&0&0&-i\\0&-i&1&0\\0&-i&-1&0\\1&0&0&i\end{pmatrix}=2C_{\Pi}^{\dagger},
+$$
+so $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$ and the change is a scaled unitary, not a unitary. Its determinant is $-\tfrac14$: the frame vectors are not normalised to modulus one, and no normalisation is imposed, because the frame is the Peirce basis and not an orthonormal basis.
 
-**The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes $M_4(\mathbb{C})_L$ is read as $M_4(\mathbb{C})_{\mathbb{B}_L}$, and one that writes $M_4(\mathbb{C})_R$ as $M_4(\mathbb{C})_{\mathbb{B}_R}$. The same rule governs the matrices: a bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the superscript $L$ or $R$.
+**Two $2\times2$ blocks.** In $2\times2$ blocks over the splitting $(1,2)\mid(3,4)$,
+$$
+C_{\Pi}=\tfrac12\begin{pmatrix}
+\begin{pmatrix}1&0\\0&i\end{pmatrix}&\begin{pmatrix}0&1\\i&0\end{pmatrix}\\[2pt]
+\begin{pmatrix}0&1\\i&0\end{pmatrix}&\begin{pmatrix}-1&0\\0&-i\end{pmatrix}
+\end{pmatrix},
+\qquad
+C_{\Pi}^{-1}=\begin{pmatrix}
+\begin{pmatrix}1&0\\0&-i\end{pmatrix}&\begin{pmatrix}0&1\\-i&0\end{pmatrix}\\[2pt]
+\begin{pmatrix}0&1\\-i&0\end{pmatrix}&\begin{pmatrix}-1&0\\0&i\end{pmatrix}
+\end{pmatrix},
+$$
+and the two off-diagonal blocks are equal in each matrix: the switch does not mix the two Peirce components independently, it pairs them symmetrically. The block form is what makes the switch two $2\times2$ computations and not one $4\times4$ one.
 
-### The Clifford Structure
+**The eight unit matrices.** Apply the switch to each unit matrix, using $C_{\Pi}L_{e_\mu}^{\mathrm{axf}}C_{\Pi}^{-1}=L_{e_\mu}^{\mathrm{pau}}$ and $C_{\Pi}R_{e_\mu}^{\mathrm{axf}}C_{\Pi}^{-1}=R_{e_\mu}^{\mathrm{pau}}$. In the axis-free frame the four left matrices are real signed permutations and the four right ones are real signed permutations, and after the switch,
+$$
+L_{e_t}^{\mathrm{axf}}\mapsto L_{e_t}^{\mathrm{pau}}=\mathrm I_4,\qquad
+L_{\vec e_x}^{\mathrm{axf}}\mapsto L_{\vec e_x}^{\mathrm{pau}},\qquad
+L_{\vec e_y}^{\mathrm{axf}}\mapsto L_{\vec e_y}^{\mathrm{pau}},\qquad
+L_{\vec e_z}^{\mathrm{axf}}\mapsto L_{\vec e_z}^{\mathrm{pau}},
+$$
+$$
+R_{e_t}^{\mathrm{axf}}\mapsto R_{e_t}^{\mathrm{pau}}=\mathrm I_4,\qquad
+R_{\vec e_x}^{\mathrm{axf}}\mapsto R_{\vec e_x}^{\mathrm{pau}},\qquad
+R_{\vec e_y}^{\mathrm{axf}}\mapsto R_{\vec e_y}^{\mathrm{pau}},\qquad
+R_{\vec e_z}^{\mathrm{axf}}\mapsto R_{\vec e_z}^{\mathrm{pau}},
+$$
+with the eight displays of §*The Two Tensor Factors*. The identity is the identity in both frames, and the seven others change. The two families agree on the identity and nowhere else, as they must: $L^{\mathrm{axf}}(\tilde Q)=R^{\mathrm{axf}}(\tilde Q)$ forces $\tilde Q\in\mathbb{C}e_t$.
 
-**The Clifford algebra is the cell algebra.** The sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by multiplying the left multipliers together and the right multipliers together, $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}\,L_{e_\rho}^{\mathrm{pau}}R_{e_\sigma}^{\mathrm{pau}}=L_{e_\mu}^{\mathrm{pau}}L_{e_\rho}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}R_{e_\sigma}^{\mathrm{pau}}$; the result is again a left multiplication and a right multiplication, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ is an algebra isomorphism
+**A worked element.** Take $\tilde Q=e_t+\vec e_x$, so that $Q_t=Q_x=1$ and $Q_y=Q_z=0$. In the axis-free frame,
+$$
+L^{\mathrm{axf}}(e_t+\vec e_x)=L_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\mathrm{axf}}
+=\begin{pmatrix}1&-1&0&0\\1&1&0&0\\0&0&1&-1\\0&0&1&1\end{pmatrix},
+$$
+and in the Peirce frame the same element reads
+$$
+L(e_t+\vec e_x)=\mathsf{M}_4^{L}(e_t)+\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}1&-i&0&0\\-i&1&0&0\\0&0&1&-i\\0&0&-i&1\end{pmatrix},
+$$
+which is the block $\mathsf{M}_2(e_t+\vec e_x)=\begin{pmatrix}1&-i\\-i&1\end{pmatrix}$ written twice. The switch is checked by multiplying, $L= C_{\Pi}^{-1}L^{\mathrm{axf}}C_{\Pi}$, and it holds entry by entry. The right displays of the same element are obtained the same way, $R(e_t+\vec e_x)=\mathsf{P}\,L(e_t+\vec e_x)^{\mathsf T}\mathsf{P}^{-1}$.
+
+**What the switch preserves, and what it does not.** It preserves the trace, the determinant, the spectrum, the ranks of all powers, and the algebra of the sixteen cells: it is a conjugation, so it is an isomorphism of the ambient $M_4(\mathbb{C})$ carrying $\mathbb{B}_L$ onto $\mathbb{B}_L$ and $\mathbb{B}_R$ onto $\mathbb{B}_R$. It does not preserve the transpose dictionary, the reality of the sixteen arrays, the vanishing of the cross blocks, or the property that a matrix is a signed permutation. Those four are properties of the axis-free frame; the vanishing of the cross blocks and the tensor form are properties of the Peirce frame.
+
+**Where the $2\times2$ display sits.** The switch moves the $4\times4$ displays and leaves the $2\times2$ image alone: $\mathsf{M}_2(\tilde Q)$ appears as a block before the switch and after it, and it never meets $C_{\Pi}$. §*The $2\times2$ Pauli Representation*, §*The Bridge to the $4\times4$ Displays* states the consequence.
+
+## The Clifford Structure
+
+**The Clifford algebra is the cell algebra.** The sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ are linearly independent, and their complex span is all of $M_4(\mathbb{C})$. They multiply by multiplying the left multipliers together and the right multipliers together,
+$$
+L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}\,L_{e_\rho}^{\mathrm{pau}}R_{e_\sigma}^{\mathrm{pau}}
+=L_{e_\mu e_\rho}^{\mathrm{pau}}R_{e_\sigma e_\nu}^{\mathrm{pau}};
+$$
+the result is again a left multiplication and a right multiplication, so the assignment $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ is an algebra isomorphism
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C}).
 $$
@@ -233,12 +576,14 @@ iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\;}
 $$
-Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. For the first and the last the left factor is $e_t$, so the cell collapses to a single right multiplication, $iR_{\vec e_x}^{\mathrm{pau}}$ and $-iR_{\vec e_z}^{\mathrm{pau}}$, and the two spellings are the same operator. In the canonical frame the five are monomial matrices, written out in the closing section together with the Pauli evaluation.
+Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. For the first and the last the left factor is $e_t$, so the cell collapses to a single right multiplication, $iR_{\vec e_x}^{\mathrm{pau}}$ and $-iR_{\vec e_z}^{\mathrm{pau}}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §*The Gamma Formulation*; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too.
 
-**The Clifford relations.** They satisfy
+**The Clifford relations.**
 $$
 \{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\}=2g_{\mu\nu}I_4,\qquad
-(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=-I_4,\qquad
+(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=-I_4,
+$$
+$$
 -iR_{\vec e_z}^{\mathrm{pau}}=i\,(iR_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}),
 $$
 with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display.
@@ -253,88 +598,22 @@ with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the met
 | $3$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ |
 | $4$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ |
 
-Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five cells, the relations survive, and the cell labels do not. The proof, and the freedom in the choice of frame, are in section *Composition and the Two Closures* of *Two-Sided Operators on the Biquaternion Algebra*.
+Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The frame is one frame among many: another orthogonal pair $(\beta,\delta)$ gives another five cells, the relations survive, and the cell labels do not. The proof, and the freedom in the choice of frame, are in *Two-Sided Operators on the Biquaternion Algebra*, §*Composition and the Two Closures*.
 
-**The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot^{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is not used at all, neither for the opposite algebra nor for the operator norm, which is written $\lVert A\rVert$; the reason is that one letter out of three, at superscript size, does not separate the two meanings (*Index, Notation and Corpus Conventions*, §*The Superscripts*). Every place in this series where $\mathrm{op}$ once marked a norm now writes the norm bare, and the competing norms keep their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$.
+**The opposite algebra is written with three letters.** The opposite of an algebra, with the product reversed, carries the superscript $\mathrm{opp}$: the reversed product is $a\cdot^{\mathrm{opp}}b=ba$, and the opposite of $\mathbb{B}$ is $\mathbb{B}^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is not used at all, neither for the opposite algebra nor for the operator norm, which is written $\lVert A\rVert$ (*Index, Notation and Corpus Conventions*, §*The Superscripts*). The competing norms keep their own labels, $\lVert A\rVert_{\mathrm{HS}}$, $\lVert A\rVert_{\mathrm{nuc}}$, $\lVert A\rVert_F$, $\lVert A\rVert_*$.
 
-**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. Its image is the real span of the eight cells $L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$.
+**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. Its image is the real span of the eight cells $L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$. In the axis-free frame the same map reads $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, because the conjugation carries the whole cell algebra with it.
 
-**The slash is not used.** The Dirac slash is not part of the notation of the matrix models.
-A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum.
-A derivative contraction is $i\sum_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu$ with $x_0=q'_t$,
-in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*.
-If the $\mathbb{B}$ frame is used, it is written $\sum_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial Q_\mu$ with the $\mathbb{B}$-frame cells $iR_{\vec e_x}^{\mathrm{pau}}$ and $-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$,
-and never with the cells of the $\mathbb{M}_-$ frame: the mixed form $i\sum_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial Q_\mu$ belongs to neither frame.
-No index is raised or lowered and no metric tensor enters: the metric of the series is the sign vector $\varepsilon$ inside the product, and the metric each frame carries is separated in *Frame Conventions*.
-In the canonical frame the momentum contraction is a cell sum,
+**The slash is not used.** The Dirac slash is not part of the notation of the matrix models. A contraction is written out with the index repeated in the same position, as the cell sum below for a momentum. A derivative contraction is $i\sum_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu$ with $x_0=q'_t$, in the $\mathbb{M}_-$ frame fixed in *Frame Conventions*; if the $\mathbb{B}$ frame is used, it is written $\sum_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial Q_\mu$, and never with the cells of the $\mathbb{M}_-$ frame. In the Pauli frame the momentum contraction is a cell sum,
 $$
-\sum_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu=i\bigl((L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)\bigr),
+\sum_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu
+=i\bigl(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z\bigr),
 $$
 so the frame is visible in the formula.
 
-## The $M_4(\mathbb{C})$ Axis-Free Representation
-
-**A second frame, and its label.** The corpus displays the regular matrices in two frames, and this article keeps to the canonical Peirce frame, where the left matrix is $I_2\otimes\mathsf M_2(\tilde Q)$; the other is the axis-free frame, the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ read without singling out one of the three vector directions, in contrast with the Peirce frame, whose root $\vec\Xi=i\vec e_z$ is a chosen direction. Its label is $\mathrm{axf}$, a name in roman letters and not an exponent: the left matrix of $\tilde Q$ is $L^{\mathrm{axf}}(\tilde Q)$, the left matrix of the unit $e_\mu$ is $L_{e_\mu}^{\mathrm{axf}}$, and $L_{\vec e_x}^{\mathrm{axf}}$ is read as the matrix of $\vec e_x$, never as the $x$-th power of an operator.
-
-**The left matrix.** The columns are the coordinate columns of $\tilde Qe_\mu$,
-$$
-L^{\mathrm{axf}}(\tilde Q)=
-\begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
-Q_z&-Q_y&Q_x&Q_t
-\end{pmatrix},
-$$
-and the right matrix, whose columns are the coordinate columns of $e_\mu\tilde Q$, is
-$$
-R^{\mathrm{axf}}(\tilde Q)=
-\begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&Q_z&-Q_y\\
-Q_y&-Q_z&Q_t&Q_x\\
-Q_z&Q_y&-Q_x&Q_t
-\end{pmatrix}.
-$$
-The scalar direction occupies the diagonal and the three vector directions enter by one rule, one signed coefficient into each of the three remaining columns. No coefficient is singled out by its position; the two displays differ only in the signs of the six vector entries, which is the difference between a left and a right multiplication.
-
-**The eight units are real.** The four left matrices $L_{e_\mu}^{\mathrm{axf}}$ and the four right matrices $R_{e_\mu}^{\mathrm{axf}}$ of the units are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$. A general element is a complex combination of them and is not one. The same holds for the sixteen products $L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$, which are real, of determinant $1$ and of Hilbert–Schmidt norm two, and mutually orthogonal.
-
-**The stitch.** Quaternion conjugation is transposition in this frame,
-$$
-R^{\mathrm{axf}}(\tilde Q)=D\,L^{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,\qquad
-D=\operatorname{diag}(1,-1,-1,-1),
-$$
-and $D$ is also the Gram matrix of the plain product $\operatorname{Sc}(XY)$ here, because $\operatorname{Sc}(e_\mu e_\nu)$ is $+1$ on $e_t$ and $-1$ on the three vector units. The transpose dictionary and the sign vector $\varepsilon$ of the products are the same array.
-
-**The change of frame.** The two displays are one operator in two bases,
-$$
-L^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L(\tilde Q)\,C_{\Pi}^{-1},\qquad
-R^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R(\tilde Q)\,C_{\Pi}^{-1},
-$$
-with $C_{\Pi}$ the Peirce change of §*The frame is not the object*, whose columns are the four frame vectors in the axis-free basis,
-$$
-C_{\Pi}=\frac12
-\begin{pmatrix}
-1&0&0&1\\
-0&i&i&0\\
-0&1&-1&0\\
-i&0&0&-i
-\end{pmatrix},
-\qquad
-\det C_{\Pi}=-\tfrac14,\qquad
-C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4,\qquad
-C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}.
-$$
-The determinant is the normalisation of the frame vectors and not an invariant of the algebra. The article that computes the frame, [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), writes $C_{\Pi}$ as well, and gives the matrix, its inverse, the two $2\times2$ blocks they split into and the conjugation entry by entry, in its §*The Switch to the Axis-Free Matrices*.
-
-**The invariants are the operator's.** The trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2$ in this frame as in the canonical one, because $C_{\Pi}$ carries one to the other. A value read from an entry is a value of the frame; a value read from the trace, the determinant or a rank is a value of the operator.
-
-**What the frame buys and what it costs.** It buys the transpose dictionary: quaternion conjugation is transposition, so $M^{\natural}=M^{\mathsf T}$ entry by entry, and the eight unit matrices are real signed permutations, so a condition on an entry is a condition on a coefficient. It costs the block: no $2\times2$ block appears, no Peirce idempotent is visible, and the sixteen products are all of one kind, so no five of them are singled out. The two articles of the frame are [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrices, the product, the trace, the determinant and the six subspaces as conditions on $M$, and [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the operators, the sixteen cells and the coefficient matrix.
-
 ## The Gamma Formulation
 
-The gammas are the five-cell frame of the body written as matrices; the body writes the cells.
+**The gammas are the five-cell frame as matrices.** The body writes the cells; this section writes the arrays, in both frames.
 
 **The five gammas.** The five Dirac matrices are two-sided operators of the frame,
 $$
@@ -344,7 +623,8 @@ $$
 \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\;}
 $$
-In the canonical frame their matrices are
+
+**In the Peirce frame.**
 $$
 \gamma_0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
@@ -360,6 +640,18 @@ $$
 \gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
+
+**In the axis-free frame.** The conjugation §*The Switch Between the Two Frames* carries them, and there they are $i$ times real signed permutation matrices,
+$$
+\gamma_0=i\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+\gamma_1=i\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},
+$$
+$$
+\gamma_2=i\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
+\gamma_3=i\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
+\gamma_5=i\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix}.
+$$
+The entries are $\pm i$ or $0$ in both frames, and the axis-free arrays are exactly the cells $iR_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ and $-iR_{\vec e_z}^{\mathrm{axf}}$: the same five cells, drawn in the other frame.
 
 **The sixteen products.** The five frame cells are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen cells:
 
@@ -382,13 +674,11 @@ $$
 | $3$ | $\gamma_1\gamma_2\gamma_3$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=i\,\gamma_1\gamma_2\gamma_3$ |
 | $4$ | $\gamma_0\gamma_1\gamma_2\gamma_3$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$ |
 
-Each row reads $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$.
+Each row reads the cell as a unit coefficient times the $\gamma$-product; the inverse reading carries the conjugate coefficient, since $c\in\{1,-1,i,-i\}$.
 
-**The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ reads in gammas as $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of the body.
+**The comparison map.** In gammas, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Clifford Structure*.
 
-**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i((L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z))$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
-
-Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
@@ -410,50 +700,123 @@ $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
-The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+The contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+
+## The $2\times2$ Pauli Representation
+
+**Read last, and not because it is small.** The $2\times2$ display is the algebra itself, not an operator on it. It is placed last because it is best read after both $4\times4$ displays have shown what a matrix of an operator is, and because its matrices are the block of the Pauli display: the object it displays is the one the other two displays act on.
+
+### The Isomorphism
+
+**The map.** The isomorphism is $\mathbb{C}$-linear, multiplicative and bijective,
+$$
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad
+\mathsf{M}_2(\tilde Q_1+\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)+\mathsf{M}_2(\tilde Q_2),\qquad
+\mathsf{M}_2(\tilde Q_1\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2),
+$$
+and it is the reading every numerical check in the corpus is performed with.
+
+**The four unit images.** The images of the units are fixed once, because every article depends on them agreeing:
+$$
+\mathsf{M}_2(e_t)=I_2,\qquad
+\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}=-i\sigma_1,\qquad
+\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix}=-i\sigma_2,\qquad
+\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}=-i\sigma_3,
+$$
+with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices of §*The Two Tensor Factors*. The central scalar is $\mathsf{M}_2(i)=iI_2$, and $\mathbb{C}$-linearity gives the Hermitian units, $\mathsf{M}_2(i\vec e_k)=i\,\mathsf{M}_2(\vec e_k)$. A general element is
+$$
+\mathsf{M}_2(\tilde Q)=
+\begin{pmatrix}
+Q_t-iQ_z&-iQ_x-Q_y\\
+-iQ_x+Q_y&Q_t+iQ_z
+\end{pmatrix}
+=\begin{pmatrix}a&b\\ c&d\end{pmatrix},
+$$
+which is the $a,b,c,d$ of §*The Two Tensor Factors*, and the reason the Pauli display has that block.
+
+**The assignment is forced.** $\vec e_k^2=-e_t$ requires the factor $i$, and $\vec e_x\vec e_y=\vec e_z$ fixes the sign. The three images cannot be made real, nor all three negated; *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions* derives both.
+
+**No frame is needed.** The isomorphism is a map of algebras and does not depend on a frame of $\mathbb{B}$. The four matrices above are the images of the units, not the entries of a matrix read in a basis, and no Peirce family enters. The frame enters only in the two $4\times4$ displays, which read operators on the algebra.
+
+**The invariants.** The determinant of the image is the biquaternion norm and its trace is twice the scalar part,
+$$
+\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},\qquad
+\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t .
+$$
+The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of units and the unit-norm group are read from it.
+
+### The Bridge to the $4\times4$ Displays
+
+**The block.** In the Pauli frame the left regular matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$, so the $2\times2$ image is the block of the $4\times4$ display, and the right regular matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, the same block transposed in the other slot. This is the whole reason the Peirce frame earns its root: it turns a $4\times4$ operator into a $2\times2$ matrix written twice.
+
+**The frame moves the block, not the image.** In the axis-free frame the same operator reads
+$$
+L^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,\bigl(I_2\otimes\mathsf{M}_2(\tilde Q)\bigr)\,C_{\Pi}^{-1},
+$$
+so the axis-free display is the conjugated block. The $2\times2$ image $\mathsf{M}_2(\tilde Q)$ is untouched by $C_{\Pi}$: a change of frame conjugates the $4\times4$ displays and leaves the $2\times2$ display alone. That asymmetry is what separates the two kinds of model in §*The Matrix Models*.
+
+**The determinant squares, the trace doubles.** From the block form, $\det L(\tilde Q)=\det\mathsf{M}_2(\tilde Q)^2=\langle\tilde Q\rangle_{\natural}^2$ and $\operatorname{tr}L(\tilde Q)=2\operatorname{tr}\mathsf{M}_2(\tilde Q)=4Q_t$, in either frame. The two invariants of the operator are the invariants of the element, counted twice.
 
 ## Summary
 
-The **$2\times2$ isomorphism** $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.
+The algebra is displayed in three ways, in the order in which the displays are built.
 
-The **$4\times4$ regular representation** is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.
+**The axis-free representation comes first.** Its basis is the tensor basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, its product is the multiplication table, and its two matrices are read off that table by columns:
+$$
+L^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&Q_t
+\end{pmatrix},
+\qquad
+R^{\mathrm{axf}}(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&Q_z&-Q_y\\
+Q_y&-Q_z&Q_t&Q_x\\
+Q_z&Q_y&-Q_x&Q_t
+\end{pmatrix}.
+$$
+Its eight unit matrices are real signed permutations, its stitch is $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, its transpose is the conjugation, and its sixteen products are real. Nothing is chosen but the basis the algebra already carries.
 
-The **canonical frame** is the Peirce frame of the standard pair: $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, with the four Peirce components in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. In it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, with the left coupling to the second tensor factor and the right to the first; the transpose is what makes right multiplication act on the first factor.
+**The Pauli representation comes second.** Its frame is the Peirce basis $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ of the standard pair, and in it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right one $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$. The four left matrices $L_{e_\mu}^{\mathrm{pau}}$, the four right matrices $R_{e_\nu}^{\mathrm{pau}}$ and the sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ are written out, and the cells are the Clifford algebra: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. Five cells are the gamma matrices, written in this frame and in the axis-free one.
 
-The label $M_4(\mathbb{C})_L$ is retired: it named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$.
+**The switch comes between them, and belongs to both.** It is $C_{\Pi}$ and its inverse, of determinant $-\tfrac14$ and normalisation $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$, with $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$ and $R^{\mathrm{axf}}=C_{\Pi}RC_{\Pi}^{-1}$. It is two $2\times2$ blocks, it carries the eight unit matrices and the sixteen cells, and it leaves the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ alone.
 
-The **four left matrices** $L_{e_\mu}^{\mathrm{pau}}=\mathsf{M}_4^{L}(e_\mu)$ and the **four right matrices** $R_{e_\nu}^{\mathrm{pau}}=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_{e_\nu}^{\mathrm{pau}}=\mathsf P {L_{e_\nu}^{\mathrm{pau}}}^{\mathsf T}\mathsf P^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf P\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$.
+**The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image.
 
-The **sixteen basis matrices** are the products $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$, in four families: $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}$, $L_{e_t}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}}=R_{\vec e_k}^{\mathrm{pau}}$, $L_{\vec e_k}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=L_{\vec e_k}^{\mathrm{pau}}$ and $L_{\vec e_j}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}}$. They are written entry by entry in the canonical frame, and the grade table reads each of them as a unit coefficient times a product of the five frame cells.
-
-The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame cells of the canonical frame are $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ and $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$; a change of frame is a change of basis. The map $\iota_{\mathrm{Cl}}$ is the $\mathbb{R}$-linear comparison with the even subalgebra, $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$.
-
-The **axis-free frame** is the second display of the same operators, the coefficient basis with no vector direction singled out, labelled $\mathrm{axf}$. Its left matrix has the coefficients of $\tilde Q$ on the diagonal and the three vector directions entering by one rule, its eight unit matrices are real signed permutations of determinant $1$, and its stitch is $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$ with the $D$ that is also the Gram matrix of the plain product. The change from the canonical frame is $C_{\Pi}$, of determinant $-\tfrac14$, and the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ are the same in both frames.
+**The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$. A bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the superscript $L$ or $R$ and the frame label $\mathrm{axf}$ or $\mathrm{pau}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
+| $\rho_L,\rho_R$ | Left and right multiplication as linear maps |
+| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
+| $L^{\mathrm{axf}}(\tilde Q)$, $L_{e_\mu}^{\mathrm{axf}}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
+| $R^{\mathrm{axf}}(\tilde Q)$, $R_{e_\mu}^{\mathrm{axf}}$ | The right regular matrix in the axis-free frame |
+| $D=\operatorname{diag}(1,-1,-1,-1)$ | The stitch of the axis-free frame, $R^{\mathrm{axf}}=D(L^{\mathrm{axf}})^{\mathsf T}D$; the Gram matrix of $\operatorname{Sc}(XY)$ there |
+| $L^{\mathrm{pau}}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the Peirce frame, written $L(\tilde Q)$ |
+| $R(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$ | The right regular matrix in the Peirce frame |
+| $\mathsf P$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
+| $L_{e_\mu}^{\mathrm{pau}}=\mathsf M_4^{L}(e_\mu)$, $R_{e_\mu}^{\mathrm{pau}}=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; $R_{e_\nu}^{\mathrm{pau}}=\mathsf P {L_{e_\nu}^{\mathrm{pau}}}^{\mathsf T}\mathsf P^{-1}$ |
+| $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ | The sixteen cells; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
+| $C_{\Pi}$ | The change of frame, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$ and $R^{\mathrm{axf}}=C_{\Pi}RC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$ |
+| $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the Peirce frame |
+| $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | The five cells of the frame, timelike, three spatial, chirality; the gammas |
+| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
 | $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
-| $\rho_L,\rho_R$ | Left and right multiplication as linear maps |
-| $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
-| $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
-| $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf P\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf P^{-1}$ | The right regular matrix in the canonical frame |
-| $\mathsf P$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
-| $L_{e_\mu}^{\mathrm{pau}}=\mathsf M_4^{L}(e_\mu)$, $R_{e_\mu}^{\mathrm{pau}}=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_{e_\nu}^{\mathrm{pau}}=\mathsf P {L_{e_\nu}^{\mathrm{pau}}}^{\mathsf T}\mathsf P^{-1}$ |
-| $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ | The sixteen basis matrices; $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}$, $L_{e_t}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}}=R_{\vec e_k}^{\mathrm{pau}}$, $L_{\vec e_k}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=L_{\vec e_k}^{\mathrm{pau}}$, $L_{\vec e_j}^{\mathrm{pau}}R_{\vec e_k}^{\mathrm{pau}}$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
-| $L^{\mathrm{axf}}(\tilde Q)$, $L_{e_\mu}^{\mathrm{axf}}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
-| $C_{\Pi}$ | The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, written $S$ in the article of the frame |
-| $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | The five cells of the canonical frame, timelike, three spatial, chirality |
-| $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ |
-| $\tilde\Pi_\pm$, $\vec\Upsilon_\pm$ | The standard pair and its two mixed units, which fix the frame |
 
 ## Further Reading
 
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
-- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html) and [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the same operators in the coefficient basis read axis-free.
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html) and [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the matrices, the product, the trace, the determinant and the sixteen cells in the coefficient basis.
+- [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html) and [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the Peirce frame, the switch and the same objects in it.
+- [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the $2\times2$ isomorphism read in full.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen cells, the frame and the proof of the cell table.
-- [Conventions of the Matrix Models](../articles_physics/matrix-representations-conventions.html), for the comparison with the even subalgebra and the five-cell frame.
+- [Index, Notation and Corpus Conventions](index-notation-and-corpus-conventions.html), for the superscripts, the labels and the retired names.

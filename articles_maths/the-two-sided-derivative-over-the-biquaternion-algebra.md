@@ -10,15 +10,15 @@ $$
 dF=L\,dZ\,R .
 $$
 
-This is Scheffers' invariant-differential condition with a factor allowed on each side, the **two-sided** or **semi-derivative** form. Over a division algebra it is nearly empty: the admissible maps are the conformal ones, and over $\mathbb{H}$ the condition says only that the map is a composition of translations, dilations, rotations and inversions. Over $\mathbb{B}$ it is not empty, because the zero divisors let the multipliers become singular while the product stays finite, and the class it defines obeys a nonlinear equation rather than a linear one.
+This is Scheffers' invariant-differential condition with a factor allowed on each side, the **two-sided** or **semi-derivative** form. Over a division algebra it is nearly empty: the admissible maps are the conformal ones, and over $\mathbb{H}$ the condition says only that the map is a composition of translations, dilations, rotations and inversions. That is the programme's own stated reason for the complexification. The conformal group of a Euclidean space of three or more dimensions is finite-dimensional — fifteen parameters in four — so a class of maps that is nothing but the conformal maps is too narrow to carry a field theory. What widens it is complexification, and only because complexification is what supplies the zero divisors: the multipliers may become singular while the product stays finite, the class of admissible maps grows, and the condition it obeys becomes a nonlinear equation rather than a linear one.
 
-This article states the third definition, proves the three propositions that make it usable, and fixes its exact relation to the corpus's own operator. The relation is sharper than "a second convention". The two conditions ask for the **same number of equations**, have the **same characteristic cone**, and differ in **degree**: one is linear in the first derivatives of the field, the other is quadratic. They are two representatives of one characteristic class, and neither contains the other.
+This article states the third definition, proves the two propositions and the corollary that make it usable, and fixes its exact relation to the corpus's own operator. The relation is sharper than "a second convention". The two conditions ask for the **same number of equations**, have the **same characteristic cone**, and differ in **degree**: one is linear in the first derivatives of the field, the other is quadratic. They are two representatives of one characteristic class, and neither contains the other. The degree difference is also less absolute than it looks, because the quadratic condition, restricted to the class the programme actually constructs, comes with a linear equation satisfied by the same functions; that is the central finding of the article and it is what makes the word *sector* in the title honest.
 
 The article is mathematics throughout. The reading of the condition as a primary field equation, and the reason its degree matters physically, belong to the companion article *The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe*.
 
 ## Three Definitions of the Derivative
 
-### The Quotient and Its Two Failures
+### The Quotient and Where It Breaks
 
 The naive definition of the derivative at $\tilde Z_0$ is the limit of a quotient,
 
@@ -70,7 +70,7 @@ The table states what each definition demands and what it gives. The third row i
 
 | Definition | Condition | Linear in $F$? | Uses an inverse? | Solutions |
 |---|---|---|---|---|
-| Quotient | $dF=\Phi\,d\tilde Z$, one-sided | yes | yes, and it must exist | linear maps only |
+| Quotient | $dF=\Phi\,d\tilde Z$, one-sided | yes | yes, and it must exist | affine maps only |
 | Operator | $\tilde\nabla F=0$ | yes | no | a complex vector space, infinite-dimensional |
 | Two-sided | $dF=L\,dZ\,R$ | no | no | an arbitrary function of three twistor arguments |
 
@@ -86,12 +86,12 @@ $$
 Z=\begin{pmatrix}\upsilon & w\\ p & v\end{pmatrix},
 $$
 
-the four complex coordinates are $\upsilon,v,w,p$ themselves, and $F$ is four functions $F_{CD}$ of those four variables. The differential is the four-by-four array $\partial_{AB}F_{CD}$, with $A,B$ the coordinate indices and $C,D$ the component indices.
+the four complex coordinates are $\upsilon,v,w,p$ themselves, and $F$ is four functions $F_{CD}$ of those four variables. The differential is the four-by-four array whose entry is the derivative of one component with respect to one coordinate, $\partial F_{CD}/\partial Z_{AB}$, the indices $A,B$ naming the coordinate and $C,D$ the component.
 
 In these indices the two-sided condition reads
 
 $$
-\partial_{AB}F_{CD}=L_{CA}R_{BD}.
+\frac{\partial F_{CD}}{\partial Z_{AB}}=L_{CA}R_{BD}.
 $$
 
 For a fixed component, that is, for fixed $C$ and $D$, the right-hand side is a product of a column indexed by $A$ and a row indexed by $B$. This is the observation the whole article turns on.
@@ -101,12 +101,12 @@ For a fixed component, that is, for fixed $C$ and $D$, the right-hand side is a 
 **Proposition 1 (the rank-one criterion).** Let $F$ be $C^1$. If $F$ admits a two-sided derivative with multipliers $L$ and $R$, then for every component $\Sigma=F_{CD}$ the two-by-two matrix
 
 $$
-\Sigma_{;AB}:=\partial_{AB}\Sigma=\begin{pmatrix}\partial_\upsilon\Sigma & \partial_w\Sigma\\ \partial_p\Sigma & \partial_v\Sigma\end{pmatrix}
+\mathsf D\Sigma:=\begin{pmatrix}\dfrac{\partial\Sigma}{\partial\upsilon} & \dfrac{\partial\Sigma}{\partial w}\\[2pt] \dfrac{\partial\Sigma}{\partial p} & \dfrac{\partial\Sigma}{\partial v}\end{pmatrix}
 $$
 
 has rank at most one.
 
-*Proof.* If $dF=L\,dZ\,R$ then, in the indices, $\partial_{AB}\Sigma=L_{CA}R_{BD}$ for the fixed pair $(C,D)$, which is a column times a row and therefore has rank at most one. Conversely, a two-by-two matrix of rank at most one is a column times a row; factorising the matrix of each component gives $\partial_{AB}\Sigma=\varphi_A\psi_B$ for that component, which is the condition with the multipliers depending on the component index. The two factorisations need not agree on a common pair $(L,R)$ across the four components. The criterion is therefore exact for the condition read **component by component**, and it is necessary and not sufficient for the condition with one pair shared by the four components.
+*Proof.* If $dF=L\,dZ\,R$ then, in the indices, $\partial\Sigma/\partial Z_{AB}=L_{CA}R_{BD}$ for the fixed pair $(C,D)$, which is a column times a row and therefore has rank at most one. Conversely, a two-by-two matrix of rank at most one is a column times a row; factorising the matrix of each component gives $\partial\Sigma/\partial Z_{AB}=\varphi_A\psi_B$ for that component, which is the condition with the multipliers depending on the component index. The two factorisations need not agree on a common pair $(L,R)$ across the four components. The criterion is therefore exact for the condition read **component by component**, and it is necessary and not sufficient for the condition with one pair shared by the four components.
 
 For a two-by-two matrix, rank at most one is the vanishing of the determinant, and rank zero is the case of a component whose gradient vanishes. So the criterion is one complex equation per component: **four complex first-order equations** on four unknown functions of four variables.
 
@@ -115,7 +115,7 @@ For a two-by-two matrix, rank at most one is the vanishing of the determinant, a
 **Proposition 2.** For any $C^1$ function $\Sigma$ of the four coordinates,
 
 $$
-\det\Sigma_{;AB}=\tfrac14\,N\bigl(\nabla\Sigma\bigr),
+\det\mathsf D\Sigma=\tfrac14\,N\bigl(\nabla\Sigma\bigr),
 $$
 
 with the norm read in the Cartesian coordinates of complexified Minkowski space,
@@ -132,9 +132,9 @@ $$
 
 The first is the scalar coordinate $Q_t$; the other three are $-i$ times the vector coordinates, $z_k=-iQ_k$, which is why the all-plus sum $\sum_\mu(\partial\Sigma/\partial Q_\mu)^2$ and the indefinite sum above are one form written in two frames.
 
-*Proof.* The chain rule gives $\partial_\upsilon=\tfrac12(\partial_0+\partial_3)$, $\partial_v=\tfrac12(\partial_0-\partial_3)$, $\partial_w=\tfrac12(\partial_1-i\partial_2)$ and $\partial_p=\tfrac12(\partial_1+i\partial_2)$, and the four products in the determinant combine into a quarter of the indefinite form.
+*Proof.* The chain rule gives $\partial_\upsilon=\tfrac12(\partial_0+\partial_3)$, $\partial_v=\tfrac12(\partial_0-\partial_3)$, $\partial_w=\tfrac12(\partial_1+i\partial_2)$ and $\partial_p=\tfrac12(\partial_1-i\partial_2)$, and the four products in the determinant combine into a quarter of the indefinite form: $\partial_\upsilon\partial_v=\tfrac14(\partial_0^2-\partial_3^2)$ and $\partial_w\partial_p=\tfrac14(\partial_1^2+\partial_2^2)$, the sign being the one the factors $i\partial_2$ supply.
 
-The identity was verified here on 100 generic complex points, with a largest residual of $9.4\times10^{-13}$.
+The identity was verified here on 100 generic complex points, with a largest residual of $1.4\times10^{-14}$, which is the finite-difference floor.
 
 **Corollary.** The two-sided condition on a component is $N(\nabla\Sigma)=0$. The biquaternion gradient of every component is therefore a **zero divisor or zero**, since $N$ is the determinant of the matrix model and the determinant is the biquaternion norm.
 
@@ -144,12 +144,12 @@ The four forms say one thing. The first is the algebraic one, the second the met
 
 | Form | Statement | Where the corpus owns it |
 |---|---|---|
-| Rank | $\operatorname{rank}\Sigma_{;AB}\le1$ | this article |
-| Determinant | $\det\Sigma_{;AB}=0$ | this article |
+| Rank | $\operatorname{rank}\mathsf D\Sigma\le1$ | this article |
+| Determinant | $\det\mathsf D\Sigma=0$ | this article |
 | Norm | $N(\nabla\Sigma)=0$ | *Norm and Unitary Conventions* |
 | Cone | $\nabla\Sigma$ lies on the zero-divisor cone | *Zero Divisors and Units in the Biquaternion Algebra*; *The Topology of the Zero-Divisor Cone* |
 
-The equivalence of the second and third forms is the identity $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$, verified here on 100 random biquaternions with a largest residual of $8.0\times10^{-15}$.
+The equivalence of the second and third forms is the identity $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$, verified here on 100 random biquaternions with a largest residual of $1.3\times10^{-15}$.
 
 ## The Complex Eikonal
 
@@ -187,36 +187,46 @@ Five statements belong here, because each is a natural over-reading.
 
 **It does not imply $\Box\Sigma=0$ — but the programme's own solutions satisfy both.** Both halves of that sentence are needed, and separating them is the sharpest statement in this section.
 
-*The eikonal alone does not make a function harmonic.* The d'Alembertian is built from the same symbol, but a symbol that vanishes at the gradient says nothing about the divergence of the gradient. In the null coordinates $\upsilon,v,w,p$ the condition reads $\Sigma_{;\upsilon}\Sigma_{;v}=\Sigma_{;w}\Sigma_{;p}$ and the d'Alembertian is $4(\Sigma_{;\upsilon v}-\Sigma_{;wp})$, so a witness is any function whose four derivatives are non-zero and whose separated products agree,
+*The eikonal alone does not make a function harmonic.* The d'Alembertian is built from the same symbol, but a symbol that vanishes at the gradient says nothing about the divergence of the gradient. In the null coordinates $\upsilon,v,w,p$ the two read
+
+$$
+\frac{\partial\Sigma}{\partial\upsilon}\frac{\partial\Sigma}{\partial v}=\frac{\partial\Sigma}{\partial w}\frac{\partial\Sigma}{\partial p},
+\qquad
+\Box\Sigma=4\left(\frac{\partial^2\Sigma}{\partial\upsilon\partial v}-\frac{\partial^2\Sigma}{\partial w\partial p}\right),
+$$
+
+so a witness is any function whose four derivatives are non-zero, whose separated products agree and whose d'Alembertian does not vanish:
 
 $$
 \Sigma=\sqrt{\upsilon v}+\sqrt{wp},\qquad
-\Sigma_{;\upsilon}\Sigma_{;v}=\tfrac14=\Sigma_{;w}\Sigma_{;p},\qquad
+\frac{\partial\Sigma}{\partial\upsilon}\frac{\partial\Sigma}{\partial v}=\tfrac14=\frac{\partial\Sigma}{\partial w}\frac{\partial\Sigma}{\partial p},\qquad
 \Box\Sigma=(\upsilon v)^{-1/2}-(wp)^{-1/2}\neq0 .
 $$
 
-Checked at 20 random complex points: the eikonal held to $9.7\times10^{-10}$, the finite-difference floor, while $\lvert\Box\Sigma\rvert$ had a minimum of $0.067$ and a median of $0.66$.
+The quantity $\lvert\Box\Sigma\rvert$ vanishes only where $\upsilon v=wp$, a codimension-one locus and not the domain. Checked at 20 random complex points: the eikonal held to $6\times10^{-14}$, the finite-difference floor, and the smallest value of $\lvert\Box\Sigma\rvert$ was $0.64$.
 
-*The class the programme actually uses satisfies both.* The reason is that the rank-one factor is not an arbitrary pair of spinors but the twistor spinor itself. Resolving $\Pi(G,wG+\upsilon,vG+p)=0$ for $G$ and differentiating implicitly gives $P\,G_{;w}=-G\Pi_1$ and $P\,G_{;\upsilon}=-\Pi_1$ with $P=\Pi_G+w\Pi_1+v\Pi_2$, hence the two first-order relations
-
-$$
-G_{;w}=G\,G_{;\upsilon},\qquad G_{;v}=G\,G_{;p} .
-$$
-
-Multiplying them gives the eikonal algebraically, $G_{;\upsilon}G_{;v}=G\,G_{;\upsilon}G_{;p}=G_{;w}G_{;p}$; subtracting their cross-derivatives gives
+*The class the programme actually uses satisfies both.* The reason is that the rank-one factor is not an arbitrary pair of spinors but the twistor spinor itself. Write $\kappa_0=wG+\upsilon$ and $\kappa_1=vG+p$, let $\Pi_1=\partial\Pi/\partial\kappa_0$ and $\Pi_2=\partial\Pi/\partial\kappa_1$, and differentiate $\Pi(G,\kappa_0,\kappa_1)=0$ in each coordinate, with $\partial\Pi/\partial\upsilon=\Pi_1$, $\partial\Pi/\partial w=G\Pi_1$, $\partial\Pi/\partial p=\Pi_2$ and $\partial\Pi/\partial v=G\Pi_2$. The four derivatives of $G$ come out in closed form, and the ratio within each pair gives the two first-order relations
 
 $$
-0=\partial_v\bigl(G_{;w}-GG_{;\upsilon}\bigr)-\partial_w\bigl(G_{;v}-GG_{;p}\bigr)
-=\bigl(G_{;v}G_{;\upsilon}-G_{;w}G_{;p}\bigr)+G\bigl(G_{;\upsilon v}-G_{;wp}\bigr),
+\frac{\partial G}{\partial w}=G\,\frac{\partial G}{\partial\upsilon},\qquad \frac{\partial G}{\partial v}=G\,\frac{\partial G}{\partial p} ,
 $$
 
-and the bracket is the eikonal, so the second term vanishes: $G\,\Box G=0$. On the quadratic Kerr generating function $\Pi=wG^2+(\upsilon-v+2ia)G-p$ the two relations held to $1.2\times10^{-19}$, the eikonal to $1.4\times10^{-19}$ and $\Box G$ to $2.5\times10^{-18}$ against a second-derivative scale of $0.064$.
+identically in $\Pi$; the general solution carries the four relations and the reason no numerical error enters them.
+
+These are the rows of the condition $\mathsf D\Sigma=\varphi\psi$ with the right factor the spinor $(1,G)$ and the left factor $\varphi=(\partial G/\partial\upsilon,\partial G/\partial p)$: the right semi-derivative of a twistor-generated solution is the twistor spinor in the gauge $\psi_0=1$. Multiplying the two relations gives the eikonal algebraically; subtracting their cross-derivatives gives
+
+$$
+0=\frac{\partial}{\partial v}\left(\frac{\partial G}{\partial w}-G\frac{\partial G}{\partial\upsilon}\right)-\frac{\partial}{\partial w}\left(\frac{\partial G}{\partial v}-G\frac{\partial G}{\partial p}\right)
+=\left(\frac{\partial G}{\partial v}\frac{\partial G}{\partial\upsilon}-\frac{\partial G}{\partial w}\frac{\partial G}{\partial p}\right)+G\left(\frac{\partial^2G}{\partial\upsilon\partial v}-\frac{\partial^2G}{\partial w\partial p}\right),
+$$
+
+and the bracket is the eikonal, so the second term vanishes: $G\,\Box G=0$. On the quadratic Kerr generating function $\Pi=wG^2+(\upsilon-v+2ia)G-p$ at 45 working digits, the two relations held to $6\times10^{-32}$ and the eikonal to $2\times10^{-32}$, and $\Box G$ held to $2\times10^{-17}$ against a second-derivative scale of $0.064$ — the accuracy of a second difference, which is to say exactly.
 
 The consequence is worth stating plainly, because it cuts against the obvious reading of a nonlinear equation. **The nonlinearity of the eikonal is inert on the solution class the programme constructs.** The class is generated by an algebraic constraint, the constraint forces the gradient to factorise through the spinor, and the factorisation delivers the eikonal and the wave equation together. What the equation is not, is the source of the linearity: the linear equation is not a short-wavelength limit of the eikonal here, it is a consequence of the algebraic constraint that defines the class. The algebrodynamical article records the same mechanism from the field side, where $\ln G$ is harmonic and its second derivatives are the electromagnetic strengths.
 
 **It is homogeneous of degree two, so it is scale covariant componentwise.** For any function $\Sigma$ and any constant $\lambda$, $N(\nabla(\lambda\Sigma))=\lambda^2N(\nabla\Sigma)$, so a component may be rescaled freely. The condition does not by itself fix an amplitude.
 
-**It is not additive.** For two gradients $g_1,g_2$ with $N(g_1)=N(g_2)=0$, the norm of the sum is the polar form, $N(g_1+g_2)=2\langle g_1,g_2\rangle$, which does not vanish in general. On 100 random pairs of complex null gradients the smallest value of $\lvert N(g_1+g_2)\rvert$ was $1.54$, so the failure is not a measure-zero accident of the sampling. The solution set of the eikonal is not a vector space, and this is the structural difference from the operator form that no choice of notation can remove.
+**It is not additive.** For two gradients $g_1,g_2$ with $N(g_1)=N(g_2)=0$, the norm of the sum is the polar form, $N(g_1+g_2)=2\langle g_1,g_2\rangle$, which does not vanish in general. On 100 random pairs of complex null gradients normalised to $\sum_\mu\lvert g_\mu\rvert^2=1$, the smallest value of $\lvert N(g_1+g_2)\rvert$ was $0.063$ against a median of $0.96$, so the failure is neither rare nor small. The solution set of the eikonal is not a vector space, and this is the structural difference from the operator form that no choice of notation can remove.
 
 **It is conformally invariant, and this needs no weight.** The condition is homogeneous of degree two in the gradient, so under a conformal rescaling of the metric $N\mapsto\Omega^{-2}N$ and the zero set is unchanged. The solution set of the eikonal is therefore preserved by the full conformal group of the four-dimensional complex space, not only by the Lorentz group, and it is preserved without attaching a conformal weight to $\Sigma$ — which is more than the operator condition can claim.
 
@@ -234,13 +244,25 @@ $$
 \Pi\bigl(G,\;wG+\upsilon,\;vG+p\bigr)=0 .
 $$
 
-Then $G$ satisfies the complex eikonal wherever $\Pi_G\neq0$, by the implicit function theorem applied to the two relations that the vanishing of $\Pi$ imposes on the four derivatives of $G$. This is the classical reduction of the eikonal to an arbitrary function of three variables, and it was verified here by Newton solving: for 40 random polynomials $\Pi$ of degree four, the numerically differentiated $G$ satisfied the eikonal with a largest relative residual of $6.1\times10^{-7}$, the size of the finite-difference error.
+Then $G$ satisfies the complex eikonal wherever $\Pi_G\neq0$, and the proof is the implicit function theorem rather than a computation. Write $\Pi_1,\Pi_2$ for the derivatives of $\Pi$ in its second and third arguments and differentiate the defining equation in $\upsilon$:
+
+$$
+\Pi_G\,\partial_\upsilon G+\Pi_1\bigl(w\,\partial_\upsilon G+1\bigr)+\Pi_2\,v\,\partial_\upsilon G=0 ,
+$$
+
+and the same in the other three variables. With $\Delta=\Pi_G+w\Pi_1+v\Pi_2$, the derivative of the composite $\Pi(G,wG+\upsilon,vG+p)$ with respect to $G$ at fixed coordinates, the four solutions are
+
+$$
+\partial_\upsilon G=-\frac{\Pi_1}{\Delta},\qquad \partial_wG=-G\frac{\Pi_1}{\Delta},\qquad \partial_vG=-G\frac{\Pi_2}{\Delta},\qquad \partial_pG=-\frac{\Pi_2}{\Delta},\qquad \Delta=\Pi_G+w\Pi_1+v\Pi_2 ,
+$$
+
+so that $\partial_wG=G\,\partial_\upsilon G$ and $\partial_vG=G\,\partial_pG$ **identically**, for every $\Pi$ and with no numerical error at all. Multiplying the two relations gives the eikonal and cross-differentiating them gives the wave equation, which is the mechanism the eikonal section describes. This is the classical reduction of the eikonal to an arbitrary function of three variables, and the relations were checked against a Newton solve as well: on 37 of 40 random quartics the solve converged and the differentiated $G$ reproduced them to $1.4\times10^{-9}$ relative, the accuracy of the difference.
 
 **The two classes.** Resolving $\Pi=0$ for $G$ gives the **class I** solutions; resolving $\Pi_G=0$ and substituting back gives the **class II** solutions, conjugate to the first, which are the ones whose four-gradient blows up. The locus $\Pi_G=0$ is the branch set of $G$, and it is the same locus on which the derivative of the component is infinite. The two classes exhaust the analytic solutions almost everywhere, and the enumeration is a theorem of the classical theory of the eikonal rather than a construction of this article.
 
 **The count.** The arbitrary datum is the function $\Pi$ of three arguments, and the composed $f$ adds no freedom, since it is one function of one argument. That is the count a single first-order equation in four variables requires, which is the reason the construction is a reduction of the eikonal rather than a family of special solutions inside it.
 
-The three arguments of $\Pi$ are the components of a projective twistor, written in the affine gauge $\psi_0=1$; the incidence relation behind them, and the reading of $G$ as a projective spinor ratio, are the corpus's twistor article and not repeated here.
+The three arguments of $\Pi$ are the independent components of a projective twistor in the affine gauge $\psi_0=1$: with $\pi=(1,G)$ the two components $\kappa_0,\kappa_1$ are those of $\omega=Z\pi$, so the pair $(\omega,\pi)$ obeys the incidence relation and $\Pi=0$ is an equation on a twistor. *Twistor Theory and Biquaternions* writes the same relation as $\omega=i\,x\pi$, the factor $i$ being the corpus's rescaling of the vector coordinates; the reading of $G$ as a projective spinor ratio is there as well and is not repeated.
 
 ### What the Class Contains
 
@@ -252,11 +274,11 @@ The class is large in one direction and narrow in another, and the difference is
 | $f(G)$ for holomorphic $f$, $G$ resolved from $\Pi$ | yes | chain rule, with $N(\nabla G)=0$ |
 | $\upsilon$, $v$, $w$, $p$ | yes | constant gradient of rank one |
 | $f(\upsilon,w)$ for any $f$ | yes | the array is a row times a column, $\partial_v=\partial_p=0$ |
-| $Z_{00}Z_{11}=\upsilon v$ | no | $\det\Sigma_{;AB}=\upsilon v$ |
-| a component of $Z^2$, $\upsilon^2+wp$ | no | $\det\Sigma_{;AB}=-wp$ |
-| $F=A^2$ with $A=Q_t+\vec e_xQ_x$ | no | the scalar component has $\det\Sigma_{;AB}\neq0$ |
+| $Z_{00}Z_{11}=\upsilon v$ | no | $\det\mathsf D\Sigma=\upsilon v$ |
+| a component of $Z^2$, $\upsilon^2+wp$ | no | $\det\mathsf D\Sigma=-wp$ |
+| $F=A^2$ with $A=Q_t+\vec e_xQ_x$ | no | the scalar component has $\det\mathsf D\Sigma=z_0^2-z_1^2$ |
 
-Three rows were verified numerically. The component $\upsilon^2+wp$ of $Z^2$ was checked on 100 random points against the closed form $-wp$, with a largest residual of $1.4\times10^{-9}$. The single-plane holomorphic $A^2$ was checked on 100 random points, and the largest value of $\lvert\det\Sigma_{;AB}\rvert$ was $6.5$. The four coordinate entries were checked symbolically, their gradients being constant. The class is not closed under multiplication: the product of two functions of $G$ is a function of $G$ and stays in, but the product of two coordinate entries does not. What the class contains is an arbitrary function of three twistor arguments, carrying a coordinate that solves an algebraic equation — not a ring of functions.
+The two non-examples marked by a determinant were verified numerically as well as algebraically: the component $\upsilon^2+wp$ of $Z^2$ was checked on 100 random points against the closed form $-wp$, with a largest residual of $1.4\times10^{-9}$. The four coordinate entries need no check, their gradients being constant. The class is not closed under multiplication: the product of two functions of $G$ is a function of $G$ and stays in, but the product of two coordinate entries does not. What the class contains is an arbitrary function of three twistor arguments, carrying a coordinate that solves an algebraic equation — not a ring of functions.
 
 ## The Linear Sector
 
@@ -278,15 +300,16 @@ Set the two conditions side by side. The comparison is a table of counts, and th
 
 | | Operator form | Two-sided form |
 |---|---|---|
-| Equation | $\tilde\nabla F=0$ | $\det\Sigma_{;AB}=0$ per component |
+| Equation | $\tilde\nabla F=0$ | $\det\mathsf D\Sigma=0$ per component |
 | Complex equations | four | four |
 | Unknowns | four components of four variables | four components of four variables |
 | Degree in the first derivatives | one | two |
 | Characteristic set | $N(\xi)=0$ | $N(\nabla\Sigma)=0$ |
 | Linear in $F$ | yes | no |
+| Solutions obey a linear equation | that equation | yes, $\Box\Sigma=0$ on the twistor class |
 | Solution set | a complex vector space | not a vector space |
 
-The two rows that agree are the ones that matter. The count agrees because the operator equation is four complex equations, one per component of the value, and the two-sided condition is four complex equations, one per component as well. The characteristic set agrees because the determinant of the symbol matrix is the norm, which is the same quadratic form the eikonal imposes on the gradient. Two first-order conditions with the same count of equations and the same cone, one linear and one quadratic, are as close as two different equations of this kind can be.
+The rows that agree are the ones that matter, and three of them agree. The count agrees because the operator equation is four complex equations, one per component of the value, and the two-sided condition is four complex equations, one per component as well. The characteristic set agrees because the determinant of the symbol matrix is the norm, which is the same quadratic form the eikonal imposes on the gradient. And the linearity survives in a weaker but real form: the programme's solutions satisfy the wave equation as well as the eikonal, so the two conditions differ in degree rather than in linearity. Two first-order conditions with the same count of equations, the same cone and a common harmonic sector are as close as two different equations of this kind can be.
 
 ### Neither Condition Contains the Other
 
@@ -300,7 +323,7 @@ $$
 
 so the identity is not regular. The two-sided class is not contained in the regular class.
 
-**A regular function that is not two-sided.** Take the single-plane holomorphic function $F=A^2$ with $A=Q_t+\vec e_xQ_x$, which is regular by the single-plane criterion of *Biquaternion Regular Functions*, its dependence on two of the four variables reducing $\tilde\nabla F=0$ to the Cauchy–Riemann equation in $A$. Its scalar component is $\Sigma=Q_t^2-Q_x^2$, and the determinant of its gradient matrix does not vanish: on 100 random points the largest value of $\lvert\det\Sigma_{;AB}\rvert$ was $6.5$. The regular class is not contained in the two-sided class.
+**A regular function that is not two-sided.** Take the single-plane holomorphic function $F=A^2$ with $A=Q_t+\vec e_xQ_x$, which is regular by the single-plane criterion of *Biquaternion Regular Functions*, its dependence on two of the four variables reducing $\tilde\nabla F=0$ to the Cauchy–Riemann equation in $A$. Its scalar component is $\Sigma=Q_t^2-Q_x^2=z_0^2+z_1^2$, whose array has $\partial_\upsilon\Sigma=\partial_v\Sigma=z_0$ and $\partial_w\Sigma=\partial_p\Sigma=z_1$, so $\det\mathsf D\Sigma=z_0^2-z_1^2$ and the determinant vanishes only on the two planes $z_0=\pm z_1$. The regular class is not contained in the two-sided class.
 
 So the two conditions are genuinely independent. What they share is the cone and the count; what separates them is the degree, and with the degree everything that follows from linearity.
 
@@ -310,7 +333,7 @@ The corpus differentiates by an operator, $\tilde\nabla F=0$. The alternative is
 
 The two conditions have the same number of complex equations, four, and the same characteristic cone, the zero-divisor cone, since the determinant of the symbol matrix of $\tilde\nabla$ is the norm. They differ in degree: one is linear in the first derivatives and one is quadratic. Neither contains the other, and the identity $\tilde Z$ and the single-plane holomorphic function $A^2$ are the two witnesses.
 
-The eikonal is scale covariant componentwise and not additive; its solutions are generated by an arbitrary function of three twistor arguments, with the coordinate resolved from an implicit equation and an arbitrary holomorphic function of it composed on the outside; its branch set is the locus of the second class. The failure of additivity is what a quadratic condition costs, and it is the structural fact behind the physical difference between the two definitions.
+The eikonal is scale covariant componentwise, conformally invariant without a weight, and not additive; its solutions are generated by an arbitrary function of three twistor arguments, with the coordinate resolved from an implicit equation and an arbitrary holomorphic function of it composed on the outside; its branch set is the locus of the second class. The solution class the programme actually constructs satisfies $\Box\Sigma=0$ as well, because the rank-one factor is the twistor spinor and the two first-order relations that the algebraic constraint imposes multiply to the eikonal and cross-differentiate to the wave equation. The failure of additivity is therefore what a quadratic condition costs, and it is the only thing it costs: the linear space survives, and the nonlinearity is inert on the class.
 
 ## Summary of Notation
 
@@ -323,7 +346,7 @@ The eikonal is scale covariant componentwise and not additive; its solutions are
 | $F$, $F_{CD}$ | The biquaternion-valued function and its four components |
 | $\Sigma$ | One component $F_{CD}$, a complex-valued function of the four coordinates |
 | $L$, $R$ | The left and right semi-derivatives, defined up to a central rescaling |
-| $\Sigma_{;AB}$ | The two-by-two array $\partial_{AB}\Sigma$ of the four coordinate derivatives |
+| $\mathsf D\Sigma$ | The two-by-two array of the four coordinate derivatives of a component $\Sigma$ |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The biquaternionic gradient and its quaternion conjugate |
 | $\Box$ | The d'Alembertian, $\sum_\mu\partial^2/\partial Q_\mu^2$ |
 | $N(\tilde Q)$ | The biquaternion norm $\sum_\mu Q_\mu^2$, the determinant of $\mathsf M_2(\tilde Q)$ |
@@ -341,5 +364,6 @@ The eikonal is scale covariant componentwise and not additive; its solutions are
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the cone as a topological object and its Lorentzian slices.
 - [Remarkable Subspaces and the Analysis](remarkable-subspaces-and-the-analysis.html), for the restriction of the operator to each real form and the elliptic and hyperbolic cases.
 - [The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe](../articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html), the companion article, for the reading of the two-sided condition as a field equation.
+- [Twistor Theory and Biquaternions](../articles_physics/twistor-theory-and-biquaternions.html), for the incidence relation $\omega=i\,x\pi$ and the reading of $G$ as a projective spinor ratio.
 - [The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry](../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html), for the source in which the two-sided condition is developed as a physical programme.
 - G. Scheffers, "Verallgemeinerung der Grundlagen der gewöhnlichen komplexen Funktionen", *Berichte der Sächsischen Akademie der Wissenschaften* **45** (1893), for the invariant-differential definition of differentiability over an algebra and its one-sided form.
