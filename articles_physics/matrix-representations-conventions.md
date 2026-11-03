@@ -165,11 +165,11 @@ R_{\vec e_x}^{\mathrm{pau}}=-i\,\sigma_1\otimes I_2,\quad
 R_{\vec e_y}^{\mathrm{pau}}=+i\,\sigma_2\otimes I_2,\quad
 R_{\vec e_z}^{\mathrm{pau}}=-i\,\sigma_3\otimes I_2 .
 $$
-The Pauli line is the evaluation of the $L$-based definition, never its replacement.
+The plus on $R_{\vec e_y}^{\mathrm{pau}}$ is the transpose: $\sigma_2^{\mathsf T}=-\sigma_2$, while $\sigma_1$ and $\sigma_3$ are symmetric, so the right matrix carries $-i\sigma_k$ on $x$ and $z$ and $+i\sigma_k$ on $y$. The Pauli line is the evaluation of the $L$-based definition, never its replacement.
 
 **The sixteen basis matrices.** The sixteen cells are the ordinary products
 $$
-\mathsf M_4^{L}\bigl(\vec e_\mu\otimes\vec e_\nu^{\mathrm{opp}}\bigr)=L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}=L_{e_\mu}^{\mathrm{pau}}\,\mathsf S\,(L_{e_\nu}^{\mathrm{pau}})^{\mathsf T}\,\mathsf S^{-1},
+L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}=L_{e_\mu}^{\mathrm{pau}}\,\mathsf S\,(L_{e_\nu}^{\mathrm{pau}})^{\mathsf T}\,\mathsf S^{-1},
 $$
 in four families,
 $$
@@ -196,7 +196,7 @@ $$
 \end{aligned}\;}
 $$
 
-**The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$, each entry being $\mathsf M_4^{L}\bigl(\vec e_\mu\otimes\vec e_\nu^{\mathrm{opp}}\bigr)=L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$,
+**The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$, each entry being the matrix of $e_\mu[\,]e_\nu$, the cell $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$,
 $$
 L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
@@ -285,7 +285,7 @@ The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Del
 
 **The index is written low in both frames.** The label of a frame cell is the coordinate index of its left multiplier, written low as in $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, and the index is never raised or lowered, in either frame.
 
-**The sixteen products are the sixteen cells.** The five frame cells are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}=L_{e_\mu}^{\mathrm{pau}} R_{e_\nu}^{\mathrm{pau}}$:
+**The sixteen products are the sixteen cells.** The five frame cells are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen cells:
 
 | grade | cells |
 |---|---|
@@ -295,7 +295,7 @@ The d'Alembertian is one operator, $\Box=\partial^2/\partial Q_t^2+\Delta_Q=\Del
 | $3$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ |
 | $4$ | $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ |
 
-Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The cells are labelled by the frame units, not by spacetime indices: $L_{e_\mu}^{\mathrm{pau}} R_{e_\nu}^{\mathrm{pau}}$ with $\mu,\nu\in\{t,x,y,z\}$ is not the stress–energy tensor $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ of the physics articles. The proof, and the freedom in the choice of frame, are in section *Composition and the Two Closures* of *Two-Sided Operators on the Biquaternion Algebra*. The frame is one frame among many: another orthogonal pair gives another five cells, the relations survive, and the cell labels do not.
+Each row lists the cells of one grade, and the counts are $1+4+6+4+1=16$. The cells are labelled by the frame units, not by spacetime indices: $L_{e_\mu}^{\mathrm{pau}} R_{e_\nu}^{\mathrm{pau}}$ with $\mu,\nu\in\{t,x,y,z\}$ is not the stress–energy tensor $T_{\mu\nu}$ of the physics articles. The proof, and the freedom in the choice of frame, are in section *Composition and the Two Closures* of *Two-Sided Operators on the Biquaternion Algebra*. The frame is one frame among many: another orthogonal pair gives another five cells, the relations survive, and the cell labels do not.
 
 **A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $S\,(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}})\,S^{-1}$ with $S$ invertible. A change of frame is a change of basis, and the normal forms are those of section *The Operator $L_{\tilde Q}R_{\tilde P}$* in *Two-Sided Operators on the Biquaternion Algebra*. No statement of the corpus depends on the basis written.
 
@@ -374,7 +374,7 @@ so the frame is visible in the formula.
 
 ## The $M_4(\mathbb{C})$ Axis-Free Representation
 
-**A second frame, and its label.** The corpus displays the regular matrices in two frames, and this article keeps to the canonical Peirce frame, where the left matrix is $I_2\otimes\mathsf M_2(\tilde Q)$ and the five frame cells are read; the other is the axis-free frame, the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ read without singling out one of the three vector directions, in contrast with the Peirce frame, whose root $\vec\Xi=i\vec e_z$ is a chosen direction. Its label is $\mathrm{axf}$, beside $\mathrm{pau}$ for the canonical frame of this article; both are names in roman letters and not exponents: the left matrix of $\tilde Q$ is $L^{\mathrm{axf}}(\tilde Q)$, the matrix of the unit $e_\mu$ is $L_{e_\mu}^{\mathrm{axf}}$, and $L_{\vec e_x}^{\mathrm{axf}}$ is the matrix of $\vec e_x$, never the $x$-th power of an operator.
+**A second frame, and its label.** The corpus displays the regular matrices in two frames. The canonical one of this article is the Peirce frame, where the left matrix is $I_2\otimes\mathsf M_2(\tilde Q)$ and the five frame cells are read; the other is the axis-free frame, the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ read without singling out one of the three vector directions, in contrast with the Peirce frame, whose root $\vec\Xi=i\vec e_z$ is a chosen direction. Both are displayed in this article, with the change between them. Its label is $\mathrm{axf}$, beside $\mathrm{pau}$ for the canonical frame of this article; both are names in roman letters and not exponents: the left matrix of $\tilde Q$ is $L^{\mathrm{axf}}(\tilde Q)$, the matrix of the unit $e_\mu$ is $L_{e_\mu}^{\mathrm{axf}}$, and $L_{\vec e_x}^{\mathrm{axf}}$ is the matrix of $\vec e_x$, never the $x$-th power of an operator.
 
 **The left matrix.** The columns are the coordinate columns of $\tilde Qe_\mu$,
 $$
@@ -396,7 +396,7 @@ Q_y&-Q_z&Q_t&Q_x\\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$
-The scalar direction occupies the diagonal and the three vector directions enter by one rule. The two displays differ only in the signs of the six vector entries, which is the difference between a left and a right multiplication.
+The scalar direction occupies the diagonal and the three vector directions enter by one rule. The two displays agree on the diagonal, the first row and the first column, and differ in the sign of the six entries whose two indices are both vector, which is the difference between a left and a right multiplication.
 
 **The eight units are real.** The four left matrices $L_{e_\mu}^{\mathrm{axf}}$ and the four right matrices $R_{e_\mu}^{\mathrm{axf}}$ of the units are real signed permutation matrices: four entries $\pm1$, one in each row and each column, of determinant $1$. A general element is a complex combination and is not one. The same holds for the sixteen products $L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$, real, of determinant $1$, of Hilbert–Schmidt norm two and mutually orthogonal.
 
@@ -412,7 +412,7 @@ $$
 L^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,L^{\mathrm{pau}}(\tilde Q)\,C_{\Pi}^{-1},\qquad
 R^{\mathrm{axf}}(\tilde Q)=C_{\Pi}\,R^{\mathrm{pau}}(\tilde Q)\,C_{\Pi}^{-1},
 $$
-with $C_{\Pi}$ the Peirce change met above, whose columns are the four frame vectors in the axis-free basis,
+with $C_{\Pi}$ the Peirce change used above and written out here for the first time, whose columns are the four frame vectors in the axis-free basis,
 $$
 C_{\Pi}=\frac12
 \begin{pmatrix}
@@ -426,7 +426,7 @@ i&0&0&-i
 C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4,\qquad
 C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}.
 $$
-The article that computes the frame writes $S$ for $C_{\Pi}$ and gives it these four columns.
+The article of the frame, which computes it, gives these four columns and writes the change with a letter of its own; here the letter $C_{\Pi}$ is kept throughout.
 
 **The invariants are the operator's.** The trace is $4Q_t$ and the determinant is $\langle\tilde Q\rangle_{\natural}^2$ in this frame as in the canonical one, because $C_{\Pi}$ carries one to the other. A value read from an entry is a value of the frame; a value read from the trace, the determinant or a rank is a value of the operator.
 
@@ -592,7 +592,7 @@ $$
 \gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
 $$
-The $\mathbb{M}_-$ frame carries these matrices; the $\mathbb{B}$-frame generators are $\gamma_0(Q)=\gamma_0$ and $\gamma_k(Q)=i\gamma_k$, all squaring to $+I_4$.
+The $\mathbb{M}_-$ frame carries these matrices; the $\mathbb{B}$-frame generators are $\gamma_0[\mathbb{B}]=\gamma_0[\mathbb{M}_-]$ and $\gamma_k[\mathbb{B}]=i\gamma_k[\mathbb{M}_-]$, all squaring to $+I_4$.
 
 **The sixteen products.** The five frame cells are five of the sixteen products up to a factor $i$, and their products in increasing grade are the sixteen cells:
 
@@ -633,7 +633,7 @@ $$
 $$
 and Clifford reversal, $\mathrm{rev}(\gamma_{\mu_1}\cdots\gamma_{\mu_k})=\gamma_{\mu_k}\cdots\gamma_{\mu_1}$, is quaternion conjugation under the reading.
 
-**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\sum_\mu \gamma_\mu(Q)\partial/\partial Q_\mu$. The mixed form $i\sum_\mu \gamma_\mu\partial/\partial Q_\mu$ belongs to neither frame.
+**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\sum_\mu \gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\sum_\mu \gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
 
 Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -686,7 +686,7 @@ The **axis-free frame** is the second display of the same regular matrices, the 
 | $L^{\mathrm{axf}}(\tilde Q)$, $L_{e_\mu}^{\mathrm{axf}}$ | The left regular matrix in the axis-free frame, and the matrix of the unit $e_\mu$ |
 | $e_\mu[\,]e_\nu$, $L_{e_\mu}R_{e_\nu}$ | The basis two-sided operator $X\mapsto e_\mu Xe_\nu$ and its matrix, the cell; $\mathsf M_4^{L}(\tilde Q)\mathsf M_4^{R}(\tilde P)$ is the matrix of $L_{\tilde Q}R_{\tilde P}$ |
 | $c(T)$, $\ell(T)=\operatorname{rank}c(T)$ | The coefficient array of an operator $T$ in the basis of the sixteen cells and its length; $c(L_{\tilde Q}R_{\tilde P})=QP^{\mathsf T}$, so a two-sided operator has length one |
-| $C_{\Pi}$ | The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, written $S$ in the article of the frame |
+| $C_{\Pi}$ | The change from the canonical frame to the axis-free one, $L^{\mathrm{axf}}=C_{\Pi}LC_{\Pi}^{-1}$; $\det C_{\Pi}=-\tfrac14$, $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$ |
 | $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | The five frame cells, timelike, three spatial, chirality; their products in increasing grade are the sixteen cells |
 | $\sigma_{\mu\nu}=\tfrac12\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}$ ($\mu\neq\nu$) | The Lorentz generators; half the bivectors of the table |
 

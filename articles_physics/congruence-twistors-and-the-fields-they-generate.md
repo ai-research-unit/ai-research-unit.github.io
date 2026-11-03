@@ -14,7 +14,7 @@ The overlap is real and is stated at the outset so that the division is visible.
 - That pair is identified with the constraint the source imposes on its rescaling parameter, so that the gauge condition and the eikonal are one equation.
 - The reach of the pair is mapped: the eikonal holds for every twistor function, the wave equation only for the functions of $G$, and the difference is computed rather than asserted.
 - The gauge group is described as a group acting on a surface, with the projective twistor space as its orbit set.
-- The paper's two other field statements — the spinor inside the potential and the closed-form Yang–Mills triplet — are recorded, neither being anywhere in the corpus.
+- The paper's two other field statements are recorded: the spinor inside the potential, in the form the paper derives it from its (13) and (67), which the corpus does not otherwise have, and the closed-form Yang–Mills triplet $\{-GF,iGF,-F\}$, whose modulus relation the programme article records but whose components in this form it does not.
 
 The recomputations are these, and each is reported where it is used. The null-twistor identity for a Hermitian coordinate matrix, on a hundred random Hermitian matrices. The pair of first-order relations and the eikonal, **symbolically, for an arbitrary generating function**, with vanishing residual — the programme article's check was numeric and on one quadratic generator, so the symbolic form is a strengthening rather than a repetition. The rank of the twistor field's Jacobian, on a hundred random complex points for each of three generating functions — quadratic, cubic and transcendental — checking that every three-by-three minor vanishes and that some two-by-two minor does not. The triplet's modulus identity, on a hundred random complex pairs. And the tangency condition of the static Kerr generator, which reduces to $r_*^2=0$ exactly.
 
@@ -169,7 +169,7 @@ $$
 
 **It is a group, and the argument is the rank statement.** Composition of two such rescalings is multiplication of two functions of $T$, hence of the same type; associativity is inherited; and the inverse exists because $T$ has only two functionally independent components, so the two independent components of the image determine those of the argument, and $\alpha^{-1}$ read on the image is again a function of the twistor. The last step is exactly where the rank-two result is used, and without it the construction would give a semigroup.
 
-**The orbits are the projective twistors, and this is the point.** Since $\alpha$ is a function of $T$ and not of $x$, the ratio of any two twistor components is invariant, and two twistors related by a rescaling differ by nothing the geometry can see: the quotient by the group is the projective twistor space $\mathbb{PT}$. The corpus's twistor article records that the standard projective structure comes from the full $\mathbb{C}^{\times}$ action on the four components. Here the projective structure is **derived** instead: it is the orbit set of the symmetry group that the congruence actually has, and the group is a proper subgroup of the naive one. A rescaling with a parameter that is not a twistor function is not a symmetry, and the source states this explicitly.
+**The orbits are the projective twistors, and this is the point.** Since $\alpha$ is a function of $T$ and not of $x$, the ratio of any two twistor components is invariant, and two twistors related by a rescaling differ by nothing the geometry can see: the quotient by the group is the projective twistor space $\mathbb{PT}$. The corpus's twistor article writes the projective space as $\mathbb{PT}=\mathbb{CP}^3$, the complex lines of $\mathbb{C}^4$ — the orbit set of the full $\mathbb{C}^{\times}$ action on the four components. Here the projective structure is **derived** instead: it is the orbit set of the symmetry group that the congruence actually has, and the group is a proper subgroup of the naive one. A rescaling with a parameter that is not a twistor function is not a symmetry, and the source states this explicitly.
 
 **The potential shifts, and the field does not.** The trace of the matrix one-form $C\,dZ$ transforms as
 
@@ -199,17 +199,17 @@ $$
 
 and the Maxwell equations then hold for it because $\ln G$ is harmonic. That was checked directly: with $G$ solved by Newton continuation at forty digits and the derivatives taken by central differences, the eikonal residual of $\ln G$ was $6.0\times10^{-16}$ and $5.7\times10^{-23}$ for the quadratic and transcendental generators, and the mixed derivative $\partial^2\ln G/\partial\upsilon\,\partial v$ agreed with $\partial^2\ln G/\partial w\,\partial p$ to twelve digits, which is $\Box\ln G=0$ written out.
 
-**The 2016 paper writes the same field as the second derivatives of $G$ itself.** Its three components are
+**A second normalisation of the same field exists, and it must not be confused with this one.** The paper writes only (64), with $\Lambda=\ln G$; the second derivatives of $G$ itself are the corpus's, not the paper's, and they come from the other spinor of the construction. *The Algebrodynamical Programme* records that family: for every holomorphic $F$, the spinor taken from the pair $(\upsilon,w)$ has components
 
 $$
-E_+=\frac{\partial^2G}{\partial\upsilon^2},
+\varphi_{\upsilon\upsilon}=\frac{\partial^2F}{\partial\upsilon^2},
 \qquad
-E_3=-\frac{\partial^2G}{\partial\upsilon\,\partial p},
+\varphi_{\upsilon w}=\frac{\partial^2F}{\partial w\,\partial\upsilon},
 \qquad
-E_-=-\frac{\partial^2G}{\partial p^2},
+\varphi_{ww}=\frac{\partial^2F}{\partial w^2},
 $$
 
-which are $\partial\varphi_0/\partial\upsilon$, $-\partial\varphi_0/\partial p$ and $-\partial\varphi_1/\partial p$ in the surviving components $\varphi_0,\varphi_1$ of the next subsection, and the homogeneous Maxwell equations hold for them on the congruence by the wave equation for $G$. The two assignments are not the same components — $\partial\ln G=\partial G/G$ leaves behind a term quadratic in the first derivatives — and the article keeps them apart instead of presenting one as the other. What the two share is the singular locus, not the normalisation.
+and the alignment condition is $\mathcal{D}^2F=0$ because $\mathcal{D}G=0$. Those are components in the $(\upsilon,w)$ pair; the paper's (64) uses $(\upsilon,p)$, $(w,p)$ and $(v,w)$. The two sets therefore have different index structure and are not the same components — $\partial\ln G=\partial G/G$ leaves behind a term quadratic in the first derivatives — and this article keeps them apart instead of presenting one as the other. What the two share is the singular locus, not the normalisation.
 
 **The sharpest form of the result is the source's.** The field can be written through the derivatives of $\Pi$ alone,
 
@@ -217,13 +217,13 @@ $$
 F_{AB}=\frac{1}{P}\,\Pi_{AB}-\frac{1}{P}\,\frac{d}{dG}\left(\frac{\Pi_A\Pi_B}{P}\right),
 $$
 
-with $\Pi_A,\Pi_{AB}$ the first and second derivatives of $\Pi$ in its two twistor arguments, $A,B\in\{0,1\}$ indexing the second and third arguments as in the source (the companion article writes $\Pi_1,\Pi_2$ for the same pair), and $P=d\Pi/dG$ its total derivative along the line, so that **the field of a congruence is computed from the generating function without ever solving the Kerr equation for $G$**. The corpus records this formula in *The Algebrodynamical Programme* and does not re-derive it; what this article adds is the reading of why it can exist at all. The field is a second derivative of a function of the twistor, the twistor is constrained to a surface, and a function on a surface has its derivatives fixed by the surface's defining equation — which is exactly what a formula in $\Pi$ and its derivatives expresses.
+with $\Pi_A,\Pi_{AB}$ the first and second derivatives of $\Pi$ in its two twistor arguments, $A,B\in\{0,1\}$ indexing the second and third arguments as in the source (the companion article writes $\Pi_1,\Pi_2$ for the same pair, its indices shifted by one), and $P=d\Pi/dG$ its total derivative along the line, so that **the field of a congruence is computed from the generating function without ever solving the Kerr equation for $G$**. The corpus records this formula in *The Algebrodynamical Programme* and does not re-derive it; what this article adds is the reading of why it can exist at all. The field is a second derivative of a function of the twistor, the twistor is constrained to a surface, and a function on a surface has its derivatives fixed by the surface's defining equation — which is exactly what a formula in $\Pi$ and its derivatives expresses.
 
 ### The Spinor inside the Potential
 
 This is the part of the paper the corpus does not otherwise have, and it is the reason the construction reaches the fermionic sector at all.
 
-The potential is not a four-vector with something added to it. It is the array $\Phi_{B'A}$ of the source's (13), built from the spinor by $\Phi_{B'A}=\iota^{A}\nabla_{AA'}\xi_{B'}$ with a conjugate spinor $\iota$ normalised by $\xi_{A'}\iota^{A}=1$, and its two indices are of different kinds: by the transformation law (10), $\Phi\mapsto\bar L^{+}\Phi\bar L$, the group acts by $\bar L^{+}$ on the primed index and by $\bar L$ on the unprimed one. The object carries one primed and one unprimed spinor index, and fixing either index leaves a two-component spinor.
+The potential is a complex four-vector, as the source calls it, and in the spinor basis that is one statement and not two: a four-vector is an object of type $(\tfrac12,\tfrac12)$, which is exactly one primed and one unprimed spinor index. Concretely it is the array $\Phi_{B'A}$ of the source's (13), built from the spinor by $\Phi_{B'A}=\iota^{A}\nabla_{AA'}\xi_{B'}$ with a conjugate spinor $\iota$ normalised by $\xi_{A'}\iota^{A}=1$; the two indices are of different kinds, since by the transformation law (10), $\Phi\mapsto\bar L^{+}\Phi\bar L$, the group acts by $\bar L^{+}$ on the primed index and by $\bar L$ on the unprimed one. Fixing either index leaves a two-component spinor, and that is where the fermionic reading comes from — not from the four-vector, which is the bosonic one, but from the half of it that a choice of gauge leaves behind.
 
 **In the gauge $\xi_{0'}=1$ half of it vanishes, and the reason is (13).** (The source writes the spinor with a primed index, $\xi_{A'}$; this is this article's $\xi=(1,G)$, so the gauge is the $\xi_0=1$ used above, and only the spelling differs.) There $\Phi_{0'A}=\iota^{A}\nabla_{AA'}\xi_{0'}$ is the derivative of the constant $\xi_{0'}=1$ and therefore zero, so the array is
 
@@ -279,10 +279,10 @@ For the effective curvature and for the electromagnetic field the singular locus
 **The static family is the test case, and it works exactly.** For the generator of the ring solution,
 
 $$
-\Pi=wG^2+2(z+ia)G-p ,
+\Pi=wG^2+(\upsilon-v+2ia)G-p ,
 $$
 
-the tangency condition $P=0$ gives $G=-(z+ia)/w$, and substituting it back into $\Pi=0$ leaves
+with $z:=z_3=\tfrac12(\upsilon-v)$ and $a$ the ring's radius, the tangency condition $P=0$ gives $G=-(z+ia)/w$, and substituting it back into $\Pi=0$ leaves
 
 $$
 \Pi\big|_{P=0}=-\frac{x^2+y^2+(z+ia)^2}{w}=-\frac{r_*^2}{w},
@@ -296,7 +296,7 @@ checked symbolically with $w=x-iy$ and $p=x+iy$. The tangency locus is therefore
 
 **It is not the Penrose transform.** The incidence geometry is the classical one, and the null quadric is the same quadric; but the object attached to a twistor here is the **general solution of a nonlinear first-order system**, not a solution of a linear massless field equation. There is no cohomology, no $\bar\partial$-closed form, no contour integral, and no transform in the sense of the twistor programme: the field is an algebraic function of the same $\Pi$ that defines the congruence, and the "transform" is differentiation. *Twistor Theory and Biquaternions* records the three senses in which the corpus's literature uses the word; this article is the sense it calls the congruence twistor, taken past the incidence relation to the fields.
 
-**It bears on two of the open questions the introduction lists.** Question 1 asks whether the algebra's structure produces consequences or only reformulates known physics, to be judged by the richness of what it yields; question 4 asks for a relativistic theory of spinor fields whose classical precursor is the biquaternion Dirac equation. The construction here does something that neither of those programmes does: it yields a chiral two-component spinor, a Maxwell field and a non-abelian triplet from one holomorphic function, with no gauge principle imposed and no Dirac equation written down. It does so, however, on an algebra of coordinates rather than on the corpus's algebra of fields, so the answer is given in a neighbouring setting and does not transfer without a translation the corpus does not possess. Whether the construction is a derivation of the linear equations or only a very economical bookkeeping is the question it leaves open, and it is the right question to leave open.
+**It bears on two of the open questions of *Introduction to the Biquaternion Universe*.** Its question 1 asks whether the algebra's structure produces consequences or only reformulates known physics, to be judged by the richness of what it yields; its question 4 asks for a relativistic theory of spinor fields whose classical precursor is the biquaternion Dirac equation. The construction here does something that neither of those programmes does: it yields a chiral two-component spinor, a Maxwell field and a non-abelian triplet from one holomorphic function, with no gauge principle imposed and no Dirac equation written down. It does so, however, on an algebra of coordinates rather than on the corpus's algebra of fields, so the answer is given in a neighbouring setting and does not transfer without a translation the corpus does not possess. Whether the construction is a derivation of the linear equations or only a very economical bookkeeping is the question it leaves open, and it is the right question to leave open.
 
 **What it does not give.** No action, hence no canonical quantisation of the kind the corpus's quantisation articles presuppose. No superposition: a sum of two solutions satisfies the linear equations but not the congruence equation, which the programme article records as a selection rule and a cost. No dynamics beyond the algebraic constraint: the "time evolution" of a singular locus is the motion of a tangency, and it is determined, not postulated, which is either the construction's strength or its limitation depending on what one wanted. And no numerical prediction except the one the programme derives elsewhere.
 
@@ -326,7 +326,7 @@ The singular locus is the tangency locus: a point is singular for the field exac
 | $\alpha(T)$ | Rescaling parameter; a symmetry exactly when it is a twistor function |
 | $A\mapsto A+d\ln\alpha$ | Shift of the potential; $F=dA$ invariant |
 | $\ln G$ | Field-generating function; the source writes it $\Lambda$, the programme article writes it in full |
-| $F_{00},F_{01},F_{11}$; $E_+,E_3,E_-$ | Independent components of the antiself-dual field, as second derivatives of $\ln G$ in the programme's presentation and of $G$ in the 2016 paper's |
+| $F_{00},F_{01},F_{11}$ | Independent components of the antiself-dual field, as second derivatives of $\ln G$; the source's (64) |
 | $\varphi_0,\varphi_1$ | The two surviving components of the potential, $\varphi_0=\partial\ln G/\partial w$ and $\varphi_1=\partial\ln G/\partial v$ in the gauge $\xi_{0'}=1$ |
 | $\{-GF,iGF,-F\}$ | Yang–Mills triplet; its modulus is $F$ |
 | $r_*^2=x^2+y^2+(z+ia)^2$ | Ring condition; the tangency locus of the static generator is $r_*^2=0$ |

@@ -26,7 +26,7 @@ L_{\tilde Q}R_{\tilde P}(X)=\tilde Q\,X\,\tilde P,
 $$
 so the matrix of a two-sided operator is the product of the two regular matrices, taken in the same frame on both factors,
 $$
-\mathsf{M}_4\bigl(L_{\tilde Q}R_{\tilde P}\bigr)=L(\tilde Q)\,R(\tilde P).
+\mathsf{M}_4^{L}(\tilde Q)\,\mathsf{M}_4^{R}(\tilde P).
 $$
 This is the whole reason the article writes both families and their products: the object displayed is an operator of the two-sided family, and the matrix is what a computation can multiply.
 
@@ -427,7 +427,7 @@ L(\tilde Q_1\tilde Q_2)=L(\tilde Q_1)L(\tilde Q_2),\qquad
 R(\tilde Q_1\tilde Q_2)=R(\tilde Q_2)R(\tilde Q_1),\qquad
 L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1),
 $$
-and the trace and determinant are the same numbers, $\operatorname{tr}L(\tilde Q)=4Q_t$ and $\det L(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$, because they are properties of the operator. The dagger is the star conjugate, $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$, and the transpose is not the conjugation here: the conjugation is the transpose followed by the exchange, $L(\tilde Q^{\natural})=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$.
+and the trace and determinant are the same numbers, $\operatorname{tr}L(\tilde Q)=4Q_t$ and $\det L(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$, because they are properties of the operator. The dagger is the star conjugate, $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$. Transposition is not the conjugation in this frame: with the exchange it gives the other family, $R(\tilde Q)=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P^{-1}$, and the conjugation of this frame is no transpose at all, $L(\tilde Q^{\natural})=2Q_t\,\mathrm I_4-L(\tilde Q)$. The transpose is the conjugation in the axis-free frame alone, §*The Stitch Between the Two Families*.
 
 **The block form of the element.** Since $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ with
 $$
@@ -685,7 +685,7 @@ iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\;}
 $$
-Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit. For the first and the last the left factor is $e_t$, so the cell collapses to a single right multiplication, $iR_{\vec e_x}^{\mathrm{pau}}$ and $-iR_{\vec e_z}^{\mathrm{pau}}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §*The Gamma Formulation*; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too.
+Each is a unit multiple of a cell; the left factor is a unit and the right factor a spatial unit, written $\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$. For the first and the last the left factor is $e_t$, so the cell collapses to a single right multiplication, $iR_{\vec e_x}^{\mathrm{pau}}$ and $-iR_{\vec e_z}^{\mathrm{pau}}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §*The Gamma Formulation*; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too.
 
 **The Clifford relations.**
 $$
@@ -787,7 +787,7 @@ Each row reads the cell as a unit coefficient times the $\gamma$-product; the in
 
 **The comparison map.** In gammas, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma_2\gamma_3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma_3\gamma_1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma_1\gamma_2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma_0\gamma_1\gamma_2\gamma_3$, the same map as $\iota_{\mathrm{Cl}}(e_\mu)=L_{e_\mu}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\iota_{\mathrm{Cl}}(i)=L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Clifford Structure*.
 
-**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
+**The contractions.** In gamma notation a momentum contraction is $\sum_\mu \gamma_\mu p_\mu=i(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_t+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z)$, a derivative contraction is $i\sum_\mu \gamma_\mu\partial/\partial x_\mu$ with $x_0=q'_t$, and a $\mathbb{B}$-frame contraction is $\sum_\mu \gamma_\mu[\mathbb{B}]\partial/\partial Q_\mu$. The mixed form $i\sum_\mu \gamma_\mu[\mathbb{M}_-]\partial/\partial Q_\mu$ belongs to neither frame.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
