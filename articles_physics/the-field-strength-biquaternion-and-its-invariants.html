@@ -409,21 +409,21 @@ L_aR_b\,L_cR_d=L_{ac}R_{db},
 $$</p>
 <p>because $R_bR_d=R_{db}$. Every two-sided operator is a sum of the sixteen products,</p>
 <p>$$
-M=\sum_{\mu,\nu}c_{\mu\nu}(M)\,L_{e_\mu}R_{e_\nu},
+M=\sum_{\mu,\nu}c_{\mu\nu}(M)\,L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}},
 $$</p>
 <p>where $e_\mu$ runs over the four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$, so the coefficient matrix $c(M)$ is unique. A cell is a pure tensor of rank one; the cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four cells.</p>
 <p>The gamma cells are</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad
-\gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad
-\gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad
-\gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad
-\gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
 <p>Every generator carries exactly one factor of $i$, so a product of two generators carries $i^2=-1$ and is a plain cell. For example,</p>
 <p>$$
-\gamma_0\gamma_1=i^2L_{e_t\vec e_x}R_{\vec e_y\vec e_x}
-=-L_{\vec e_x}R_{-\vec e_z}=+L_{\vec e_x}R_{\vec e_z}.
+\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}
+=-L_{\vec e_x}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
 <p>The same collapse gives the squares and the Clifford relations,</p>
 <p>$$
@@ -441,13 +441,13 @@ $$</p>
 $$</p>
 <p>A single $i$ also collapses when it multiplies a generator:</p>
 <p>$$
-i\gamma_0=-L_{e_t}R_{\vec e_x},\quad
-i\gamma_1=-L_{\vec e_x}R_{\vec e_y},\quad
-i\gamma_2=-L_{\vec e_y}R_{\vec e_y},\quad
-i\gamma_3=-L_{\vec e_z}R_{\vec e_y},\quad
-i\gamma_5=+L_{e_t}R_{\vec e_z}.
+i\gamma_0=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+i\gamma_1=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+i\gamma_2=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+i\gamma_3=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+i\gamma_5=+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
-<p>$\gamma_5=-iL_{e_t}R_{\vec e_z}$ is the chirality cell $\Gamma$, the involution that grades the Dirac module (<em>Chirality: The Conjugate Pair</em>). The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; being central, it acts on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operatorname{diag}(-I_2,I_2)$, and $\gamma_5$ is its representative there.</p>
+<p>$\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell $\Gamma$, the involution that grades the Dirac module (<em>Chirality: The Conjugate Pair</em>). The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; being central, it acts on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operatorname{diag}(-I_2,I_2)$, and $\gamma_5$ is its representative there.</p>
 <p><strong>The two Dirac equations.</strong> The two families separate the corpus's two Dirac equations. The one-sided pair acts with the left family alone,</p>
 <p>$$
 L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L,\qquad
@@ -455,11 +455,11 @@ L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R,
 $$</p>
 <p>where both derivatives act from the left, the mass is $m$, and $\tilde\Psi_R$ and $\tilde\Psi_L$ are the two chirality halves. The two-sided equation carries the mass through the right family. It holds for a biquaternion-valued Dirac field $F$, which is not the field strength $\tilde F$ of this article,</p>
 <p>$$
-\left(iL_{e_t}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}\frac{\partial}{\partial Q_k}\right)F
--mi\,R_{\vec e_z}\bar F=0,
+\left(iL_{e_t}^{\mathrm{pau}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}\right)F
+-mi\,R_{\vec e_z}^{\mathrm{pau}}\bar F=0,
 $$</p>
 <p>where the derivative acts from the left, the mass acts from the right through $\vec e_z$, and $\bar F$ is the coefficient conjugate. The two equations share the frame but not the operator: the one-sided pair splits the field into chirality halves; the two-sided equation is antilinear in its mass term and carries the chirality in the right multiplication.</p>
-<p>The dictionary is complex-linear, so over $\mathbb{C}$ the five generators generate the whole of $M_4(\mathbb{C})$. Over $\mathbb{R}$ the sixteen products of the five generators span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells $L_{e_\mu}R_{e_\nu}$ span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ (<em>Matrix Representations and Conventions</em>).</p>
+<p>The dictionary is complex-linear, so over $\mathbb{C}$ the five generators generate the whole of $M_4(\mathbb{C})$. Over $\mathbb{R}$ the sixteen products of the five generators span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ (<em>Matrix Representations and Conventions</em>).</p>
 <h2 id="summary">Summary</h2>
 <p>The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure-vector biquaternion with vanishing scalar part. It lies in the six-dimensional real vector part of $\mathbb{B}$, decomposed into an imaginary electric piece in the Hermitian subspace $\mathbb{M}_+$ and a real magnetic piece in the anti-Hermitian subspace $\mathbb{M}_-$. This is why the field strength is neither a four-vector nor an element of $\mathbb{M}_-$: it is an antisymmetric rank-two tensor, whose two halves occupy the two complementary sectors of the algebra.</p>
 <p>The biquaternion norm of the field strength is the complex scalar</p>
@@ -598,7 +598,7 @@ $$</p>
 <td>Coefficient matrix of the two-sided operator $M$</td>
 </tr>
 <tr>
-<td>$\Gamma = \gamma_5 = -iL_{e_t}R_{\vec e_z}$</td>
+<td>$\Gamma = \gamma_5 = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>Chirality cell, representative of $\chi_{\mathrm{ad}}$ on the Dirac module</td>
 </tr>
 <tr>

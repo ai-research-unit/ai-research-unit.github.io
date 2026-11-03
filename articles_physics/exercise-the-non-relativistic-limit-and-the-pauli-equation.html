@@ -82,12 +82,12 @@
 <p><strong>On the parent article.</strong> The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.</p>
 <p><strong>The cells.</strong> The article is written in the cells of the frame, and the gamma symbols appear only in <em>The Gamma Formulation</em>. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_aR_b\psi=a\psi b$, with $L_aR_bL_cR_d=L_{ac}R_{db}$. The four coordinate cells are</p>
 <p>$$
-c_0=iR_{\vec e_x},\qquad c_k=iL_{\vec e_k}R_{\vec e_y}\quad(k=x,y,z),
+c_0=iR_{\vec e_x}^{\mathrm{pau}},\qquad c_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=x,y,z),
 $$</p>
-<p>and the chirality cell is $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, the parent's cell for chirality. The squares and the anticommutators follow from $i^2=-1$ and $\vec e_k^2=-e_t$:</p>
+<p>and the chirality cell is $-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the parent's cell for chirality. The squares and the anticommutators follow from $i^2=-1$ and $\vec e_k^2=-e_t$:</p>
 <p>$$
-c_0^2=R_{(i\vec e_x)^2}=R_{i^2\vec e_x^2}=R_{e_t}=1,\qquad
-c_k^2=L_{(i\vec e_k)^2}R_{\vec e_y^2}=L_{e_t}R_{-e_t}=-1,
+c_0^2=R_{(i\vec e_x)^2}^{\mathrm{pau}}=R_{i^2\vec e_x^2}=R_{e_t}^{\mathrm{pau}}=1,\qquad
+c_k^2=L_{(i\vec e_k)^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-1,
 $$</p>
 <p>$$
 \{c_0,c_k\}=0,\qquad \{c_j,c_k\}=-2\delta_{jk}.
@@ -95,12 +95,12 @@ $$</p>
 <p>Repeated spatial indices $j,k,l$ are summed over $x,y,z$, and the sums are written out only where a chain of equalities would otherwise be ambiguous.</p>
 <p>The velocity cell is one product of two coordinate cells, and one use of $i^2=-1$ removes both factors of $i$:</p>
 <p>$$
-\alpha_k=c_0c_k=iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}
-=i^2L_{\vec e_k}R_{\vec e_y\vec e_x}
-=-L_{\vec e_k}R_{-\vec e_z}
-=L_{\vec e_k}R_{\vec e_z}.
+\alpha_k=c_0c_k=iR_{\vec e_x}^{\mathrm{pau}}\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}
+=i^2L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}
+=-L_{\vec e_k}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}
+=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
-<p>In the Dirac basis, where $c_0=\operatorname{diag}(I_2,-I_2)$, the velocity cell is $\alpha_k=\begin{pmatrix}0&\sigma_k\\\sigma_k&0\end{pmatrix}$. The spin cell is $S_k=iL_{\vec e_k}$; it is block diagonal in that basis, with upper block $\sigma_k$ and lower block $-\sigma_k$, and it satisfies</p>
+<p>In the Dirac basis, where $c_0=\operatorname{diag}(I_2,-I_2)$, the velocity cell is $\alpha_k=\begin{pmatrix}0&\sigma_k\\\sigma_k&0\end{pmatrix}$. The spin cell is $S_k=iL_{\vec e_k}^{\mathrm{pau}}$; it is block diagonal in that basis, with upper block $\sigma_k$ and lower block $-\sigma_k$, and it satisfies</p>
 <p>$$
 \alpha_j\alpha_k=\delta_{jk}+i\epsilon_{jkl}S_l .
 $$</p>
@@ -156,7 +156,7 @@ $$</p>
 <tr>
 <td>Chirality</td>
 <td>the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$</td>
-<td>the chirality cell $-iL_{e_t}R_{\vec e_z}$</td>
+<td>the chirality cell $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 </tr>
 <tr>
 <td>Use</td>
@@ -174,7 +174,7 @@ $$</p>
 i\hbar\,\partial/\partial t'\,\psi=H\psi,\qquad
 H=c\sum_k\alpha_k\pi_k+c_0mc^2+ϙ\Phi,
 \qquad
-\alpha_k=c_0c_k=L_{\vec e_k}R_{\vec e_z}.
+\alpha_k=c_0c_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
 <p>Write $H=c_0mc^2+O+E$ with</p>
 <p>$$
@@ -205,9 +205,9 @@ $$</p>
 S_1=-\frac{i}{2mc^2}\,c_0O
 =-\frac{i}{2mc^2}\,c_0\cdot c\sum_k c_0c_k\pi_k
 =-\frac{i}{2mc}\sum_k c_k\pi_k
-=\frac{1}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}\pi_k .
+=\frac{1}{2mc}\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\pi_k .
 $$</p>
-<p>The last equality is again $i^2=-1$, since $c_k=iL_{\vec e_k}R_{\vec e_y}$. For static fields the generator is time-independent, and the transformed Hamiltonian is</p>
+<p>The last equality is again $i^2=-1$, since $c_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. For static fields the generator is time-independent, and the transformed Hamiltonian is</p>
 <p>$$
 e^{iS_1}He^{-iS_1}
 =H+i[S_1,H]-\tfrac12[S_1,[S_1,H]]-\tfrac{i}{6}[S_1,[S_1,[S_1,H]]]+\cdots
@@ -221,33 +221,33 @@ $$</p>
 <p>The first cancels the odd term $O$. The second contributes $+\frac{c_0O^2}{mc^2}$ to the expansion and the third contributes $-\frac12$ of the same, so together they give $+\frac{c_0O^2}{2mc^2}$, the leading non-relativistic energy. There is also a residual odd operator, of relative order $(v/c)^2$ compared with $O$ for a Coulomb field,</p>
 <p>$$
 O_1=i[S_1,E]
-=\frac{i}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}[\pi_k,E]
-=\frac{i}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}(i\hbarϙE_k)
-=-\frac{\hbarϙ}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}E_k,
+=\frac{i}{2mc}\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}[\pi_k,E]
+=\frac{i}{2mc}\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}(i\hbarϙE_k)
+=-\frac{\hbarϙ}{2mc}\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}E_k,
 $$</p>
 <p>which the second transformation $S_2=-\frac{i}{2mc^2}c_0O_1$ removes. To the order at which the first physical corrections appear, therefore,</p>
 <p>$$
 H_1=c_0mc^2+ϙ\Phi+\frac{c_0O^2}{2mc^2}+O_1+O(c^{-2}).
 $$</p>
 <p>The omitted even term of order $c^{-2}$ is the second-order term $-\tfrac12[S_1,[S_1,E]]$; it is evaluated in Problem 3.</p>
-<p><em>Step 5: evaluating $O^2$.</em> With $\alpha_k=L_{\vec e_k}R_{\vec e_z}$ and $L_aR_bL_cR_d=L_{ac}R_{db}$,</p>
+<p><em>Step 5: evaluating $O^2$.</em> With $\alpha_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ and $L_aR_bL_cR_d=L_{ac}R_{db}$,</p>
 <p>$$
-\alpha_j\alpha_k=L_{\vec e_j}R_{\vec e_z}L_{\vec e_k}R_{\vec e_z}
-=L_{\vec e_j\vec e_k}R_{-e_t}
-=-L_{\vec e_j\vec e_k}
-=\delta_{jk}-\epsilon_{jkl}L_{\vec e_l},
+\alpha_j\alpha_k=L_{\vec e_j}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
+=L_{\vec e_j\vec e_k}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}
+=-L_{\vec e_j\vec e_k}^{\mathrm{pau}}
+=\delta_{jk}-\epsilon_{jkl}L_{\vec e_l}^{\mathrm{pau}},
 $$</p>
 <p>since $\vec e_j\vec e_k=-\delta_{jk}+\epsilon_{jkl}\vec e_l$. Therefore</p>
 <p>$$
 O^2=c^2\alpha_j\alpha_k\pi_j\pi_k
-=c^2\left(\vec\pi^2-\epsilon_{jkl}L_{\vec e_l}\pi_j\pi_k\right).
+=c^2\left(\vec\pi^2-\epsilon_{jkl}L_{\vec e_l}^{\mathrm{pau}}\pi_j\pi_k\right).
 $$</p>
 <p>The commutator of the kinetic momenta is evaluated in Problem 2; here its consequence is $\epsilon_{jkl}\pi_j\pi_k=i\hbarϙB_l$, so</p>
 <p>$$
-O^2=c^2\left(\vec\pi^2-i\hbarϙL_{\vec e_l}B_l\right)
-=c^2\left(\vec\pi^2-\hbarϙ\,iL_{\vec e_l}B_l\right).
+O^2=c^2\left(\vec\pi^2-i\hbarϙL_{\vec e_l}^{\mathrm{pau}}B_l\right)
+=c^2\left(\vec\pi^2-\hbarϙ\,iL_{\vec e_l}^{\mathrm{pau}}B_l\right).
 $$</p>
-<p>Since $O$ is block off-diagonal, its square is block diagonal; $O^2$ is even and commutes with $c_0$. In the upper (large) block, $c_0\to+1$ and the spin cell $iL_{\vec e_l}\to\sigma_l$, so</p>
+<p>Since $O$ is block off-diagonal, its square is block diagonal; $O^2$ is even and commutes with $c_0$. In the upper (large) block, $c_0\to+1$ and the spin cell $iL_{\vec e_l}^{\mathrm{pau}}\to\sigma_l$, so</p>
 <p>$$
 O^2_{\rm large}=c^2\left(\vec\pi^2-\hbarϙ\,\boldsymbol\sigma\cdot\vec B\right),
 \qquad
@@ -305,7 +305,7 @@ $$</p>
 \vec\mu_e=-\frac{e}{m_e}\vec S=-g\frac{e}{2m_e}\vec S,\qquad g=2,
 $$</p>
 <p>whose magnitude at $S_z=\hbar/2$ is one Bohr magneton $\mu_B=e\hbar/2m_e$. The measured anomalous part $a=(g-2)/2\approx\alpha/2\pi$ is a radiative correction that lies outside the equation treated here.</p>
-<p><em>Step 5: the biquaternion form.</em> Under the isomorphism $\sigma_k\leftrightarrow i\vec e_k$, the spin cell $iL_{\vec e_k}$ is the biquaternion representative of $\sigma_k$ on the upper block, and a magnetic field written as the pure real quaternion $\vec B=\sum_k B_k \vec e_k$ maps the spin term to</p>
+<p><em>Step 5: the biquaternion form.</em> Under the isomorphism $\sigma_k\leftrightarrow i\vec e_k$, the spin cell $iL_{\vec e_k}^{\mathrm{pau}}$ is the biquaternion representative of $\sigma_k$ on the upper block, and a magnetic field written as the pure real quaternion $\vec B=\sum_k B_k \vec e_k$ maps the spin term to</p>
 <p>$$
 -\frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B\ \longleftrightarrow\ -\frac{ϙ\hbar}{2m}\,i\vec B\ \in\ \mathbb M_+ ,
 $$</p>
@@ -316,15 +316,15 @@ $$</p>
 <p><strong>Solution.</strong> This order is <em>not</em> contained in the parent article, which stops at the leading Pauli Hamiltonian. The even terms of order $c^{-2}$ have two sources. The second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin and spin–orbit couplings; the expansion of the free large-block energy gives the relativistic kinetic correction. The second transformation removes the residual odd term $O_1$ and adds no even term at this order.</p>
 <p><em>Step 1: the even term of the first transformation.</em> From Step 4 of Problem 1,</p>
 <p>$$
-[S_1,E]=\frac{i\hbarϙ}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}E_k .
+[S_1,E]=\frac{i\hbarϙ}{2mc}\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}E_k .
 $$</p>
-<p>A direct use of the cell algebra, with $[S_1,E]$ above and $S_1=\frac{1}{2mc}\sum_j L_{\vec e_j}R_{\vec e_y}\pi_j$, gives</p>
+<p>A direct use of the cell algebra, with $[S_1,E]$ above and $S_1=\frac{1}{2mc}\sum_j L_{\vec e_j}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\pi_j$, gives</p>
 <p>$$
 -\tfrac12[S_1,[S_1,E]]
-=-\frac{\hbarϙ}{4m^2c^2}\,iL_{\vec e_l}(E\times\vec\pi)_l
+=-\frac{\hbarϙ}{4m^2c^2}\,iL_{\vec e_l}^{\mathrm{pau}}(E\times\vec\pi)_l
 -\frac{\hbar^2ϙ}{8m^2c^2}\,\nabla\cdot\vec E .
 $$</p>
-<p>The first term comes from the antisymmetric part of $\alpha_j\alpha_k=\delta_{jk}+i\epsilon_{jkl}S_l$; the second comes from the symmetric part. Since $\nabla\cdot\vec E=-\nabla^2V/ϙ$, the second term is the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)$. In the upper block, $iL_{\vec e_l}\to\sigma_l$, so the two terms read</p>
+<p>The first term comes from the antisymmetric part of $\alpha_j\alpha_k=\delta_{jk}+i\epsilon_{jkl}S_l$; the second comes from the symmetric part. Since $\nabla\cdot\vec E=-\nabla^2V/ϙ$, the second term is the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)$. In the upper block, $iL_{\vec e_l}^{\mathrm{pau}}\to\sigma_l$, so the two terms read</p>
 <p>$$
 -\frac{\hbarϙ}{4m^2c^2}\,\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
 -\frac{\hbar^2ϙ}{8m^2c^2}\,\nabla\cdot\vec E .
@@ -352,7 +352,7 @@ $$</p>
 -\frac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}.
 $$</p>
 <p>It is $(\boldsymbol\sigma\cdot\vec\pi)^4$, not $\vec\pi^4$, because $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-ϙ\hbar\boldsymbol\sigma\cdot\vec B$; the difference is of the same $c^{-2}$ order and is not dropped.</p>
-<p><em>Step 5: the second generator and the assembled Hamiltonian.</em> The odd remainder is $O_1$, and the transformation that removes it is $S_2=-\frac{i}{2mc^2}c_0O_1$. With $O_1$ from Problem 1 and $c_0L_{\vec e_k}R_{\vec e_y}=-i\alpha_k$,</p>
+<p><em>Step 5: the second generator and the assembled Hamiltonian.</em> The odd remainder is $O_1$, and the transformation that removes it is $S_2=-\frac{i}{2mc^2}c_0O_1$. With $O_1$ from Problem 1 and $c_0L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\alpha_k$,</p>
 <p>$$
 c_0O_1=\frac{i\hbarϙ}{2mc}\sum_k\alpha_kE_k,
 \qquad
@@ -439,7 +439,7 @@ $$</p>
 <p><em>Step 3: what does not land in $\mathbb M_+$.</em> Three classes of object in the reduction do not.</p>
 <ol>
 <li>
-<p><strong>The Clifford-odd operators.</strong> The mass term $c_0mc^2$ contains the cell $c_0=iR_{\vec e_x}$, and the generator $S_1=-\frac{i}{2mc^2}c_0O$ contains $c_0O$. Their coefficient matrices are odd elements of the Clifford algebra, whereas $\mathbb B\cong\mathrm{Cl}^+_{1,3}$ is the <em>even</em> subalgebra and a left multiplication by a biquaternion has an even coefficient matrix. They therefore have no representative in $\mathbb B$ at all, and a fortiori none in either $\mathbb M_\pm$. This is why the four-component Hamiltonian is not an element of $\mathbb B$ and why a transformation is needed before the biquaternion identification can be made: the Foldy–Wouthuysen transformation is exactly the operation that removes the Clifford-odd part and leaves an element of $\mathbb M_+$.</p>
+<p><strong>The Clifford-odd operators.</strong> The mass term $c_0mc^2$ contains the cell $c_0=iR_{\vec e_x}^{\mathrm{pau}}$, and the generator $S_1=-\frac{i}{2mc^2}c_0O$ contains $c_0O$. Their coefficient matrices are odd elements of the Clifford algebra, whereas $\mathbb B\cong\mathrm{Cl}^+_{1,3}$ is the <em>even</em> subalgebra and a left multiplication by a biquaternion has an even coefficient matrix. They therefore have no representative in $\mathbb B$ at all, and a fortiori none in either $\mathbb M_\pm$. This is why the four-component Hamiltonian is not an element of $\mathbb B$ and why a transformation is needed before the biquaternion identification can be made: the Foldy–Wouthuysen transformation is exactly the operation that removes the Clifford-odd part and leaves an element of $\mathbb M_+$.</p>
 </li>
 <li>
 <p><strong>The anti-Hermitian generator.</strong> $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb M_-$ play in the companion quantum article, where the Lie algebra of the $*$-unitary group is $\mathbb M_-$. It is not itself in $\mathbb M_-$, because it is built from the Clifford-odd element $c_0O$. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $c_0$, the $\mathbb M_\pm$ grading is by ${}^{*}$. Thus the odd operator $O=c\sum_k\alpha_k\pi_k$ is Foldy–Wouthuysen-odd but Clifford-even and Hermitian, so as a biquaternion it lies in $\mathbb M_+$; while $c_0O$ is Foldy–Wouthuysen-odd, Clifford-odd and anti-Hermitian, and lies in neither $\mathbb B$ nor $\mathbb M_\pm$. The identification of "odd" with "not in $\mathbb M_+$" is incorrect.</p>
@@ -508,10 +508,10 @@ $$</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb C)=M_4(\mathbb C)$, not a different algebra. This is the only section of the article that names them.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$</p>
 <p>A single product $L_aR_b$ is a pure tensor; the pure products form the seven-dimensional cone of coefficient matrices of rank at most one, and a general element of the cell algebra is a sum of at most four of them.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality, the cell $-iR_{\vec e_z}$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>$\gamma_5$ is the reference-frame cell of the chirality, the cell $-iR_{\vec e_z}^{\mathrm{pau}}$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb R$ the products $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb R)\cong M_4(\mathbb R)$, and the four coordinate cells span $\mathrm{Cl}_{1,3}(\mathbb R)\cong M_2(\mathbb H)$.</p>
 <p><strong>The identities of the frame.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,</p>
 <p>$$
@@ -543,10 +543,10 @@ $$</p>
 \sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha .
 $$</p>
 <p>In the mostly-minus frame of this article the metric signs enter and only the two-index sum stays a multiple of the identity, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the three higher sums are not rescaled versions of the Euclidean ones, which is why they are stated in the frame where the squares are all $+1$.</p>
-<p>With $\nu(t)=x$ and $\nu(k)=y$, the coordinate cell of $x_\mu$ is $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$; these are the cells $c_0=iR_{\vec e_x}$ and $c_k=iL_{\vec e_k}R_{\vec e_y}$ used throughout the body, and the gamma frame above is exactly this set, renamed.</p>
+<p>With $\nu(t)=x$ and $\nu(k)=y$, the coordinate cell of $x_\mu$ is $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$; these are the cells $c_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $c_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ used throughout the body, and the gamma frame above is exactly this set, renamed.</p>
 <h2 id="summary">Summary</h2>
 <p>The non-relativistic limit of the biquaternion Dirac equation was carried through in five steps, for the one-sided chiral pair read on the Dirac module. The two-sided form of the parent is a different operator, antilinear in its mass term, and is not reduced here.</p>
-<p>The Foldy–Wouthuysen elimination of the small component, executed systematically with the generator $S_1=-\frac{i}{2mc^2}c_0O=\frac{1}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}\pi_k$, produces the Pauli Hamiltonian
+<p>The Foldy–Wouthuysen elimination of the small component, executed systematically with the generator $S_1=-\frac{i}{2mc^2}c_0O=\frac{1}{2mc}\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\pi_k$, produces the Pauli Hamiltonian
 $i\hbar\partial/\partial t'\,\phi=\big[\vec\pi^2/2m+ϙ\Phi-(ϙ\hbar/2m)\boldsymbol\sigma\cdot\vec B\big]\phi$,
 reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gives $[\pi_i,\pi_j]=i\hbar ϙ\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-ϙ\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(ϙ/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(ϙ\hbar^2/8m^2c^2)\nabla\cdot\vec E$ and the spin–orbit coupling $-(ϙ\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-block energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.</p>
 <p>Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$; the objects that do not are the Clifford-odd pieces ($c_0mc^2$, $c_0O$), which have no representative in $\mathbb B$ at all, the anti-Hermitian generator $iS_1$, and the real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — together with the sector-exchanging rest-energy phase; the parent's mass term is the linear coupling between the two chiralities. The Foldy–Wouthuysen grading by $c_0$ must not be confused with the $\mathbb M_\pm$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.</p>
@@ -580,15 +580,15 @@ reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gi
 <td>Left, right and two-sided multiplication</td>
 </tr>
 <tr>
-<td>$c_0=iR_{\vec e_x}$, $c_k=iL_{\vec e_k}R_{\vec e_y}$</td>
+<td>$c_0=iR_{\vec e_x}^{\mathrm{pau}}$, $c_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
 <td>Coordinate cells; $c_0^2=1$, $c_k^2=-1$, $\{c_0,c_k\}=0$</td>
 </tr>
 <tr>
-<td>$\alpha_k=c_0c_k=L_{\vec e_k}R_{\vec e_z}$</td>
+<td>$\alpha_k=c_0c_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>Velocity cell, after one use of $i^2=-1$</td>
 </tr>
 <tr>
-<td>$S_k=iL_{\vec e_k}$</td>
+<td>$S_k=iL_{\vec e_k}^{\mathrm{pau}}$</td>
 <td>Spin cell; upper block $\sigma_k$, lower block $-\sigma_k$</td>
 </tr>
 <tr>
@@ -612,11 +612,11 @@ reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gi
 <td>Split Hamiltonian; odd part</td>
 </tr>
 <tr>
-<td>$S_1=-\frac{i}{2mc^2}c_0O=\frac{1}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}\pi_k$</td>
+<td>$S_1=-\frac{i}{2mc^2}c_0O=\frac{1}{2mc}\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\pi_k$</td>
 <td>Foldy–Wouthuysen generator</td>
 </tr>
 <tr>
-<td>$O_1=i[S_1,E]=-\frac{\hbarϙ}{2mc}\sum_k L_{\vec e_k}R_{\vec e_y}E_k$</td>
+<td>$O_1=i[S_1,E]=-\frac{\hbarϙ}{2mc}\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}E_k$</td>
 <td>Residual odd operator</td>
 </tr>
 <tr>

@@ -105,30 +105,30 @@ L_a\psi=a\psi,\qquad R_b\psi=\psi b,\qquad L_aR_b\psi=a\psi b,\qquad L_aR_bL_cR_
 $$</p>
 <p>The four <strong>frame cells</strong> of the current are</p>
 <p>$$
-\Gamma_t:=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},\qquad
-\Gamma_k:=iL_{\vec e_k}R_{\vec e_y}\quad(k=1,2,3),
+\Gamma_t:=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
+\Gamma_k:=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=1,2,3),
 $$</p>
 <p>with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$, and the fifth, the <strong>chirality cell</strong>, is</p>
 <p>$$
-\chi:=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}.
+\chi:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
 <p>Each $\Gamma_\mu$ carries exactly one factor of the central $i$, so each square spends $i^2=-1$ once, and the remaining signs come from $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$:</p>
 <p>$$
-\Gamma_t^2=L_{e_t}R_{e_t},\qquad
-\Gamma_k^2=-L_{e_t}R_{e_t},\qquad
-\{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}L_{e_t}R_{e_t},
+\Gamma_t^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\Gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$</p>
 <p>with $g=\mathrm{diag}(+1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The cells are two-sided: $\Gamma_t$ has the central left multiplier $e_t$ and is therefore a pure right multiplication, while the three spatial cells $\Gamma_k$ have a non-central left multiplier and use both sides. The chirality cell is also a pure right multiplication and anticommutes with the four frame cells.</p>
 <p>The <strong>momentum cell</strong> of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is</p>
 <p>$$
 P:=p_0\Gamma_t-\sum_{k=1}^3 p_k\Gamma_k
-=p_0\,iR_{\vec e_x}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}R_{\vec e_y},
+=p_0\,iR_{\vec e_x}^{\mathrm{pau}}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$</p>
 <p>which is the slashed momentum read in these cells, $P=p^\mu\Gamma^\mu$ with $p^\mu=(p_0,\vec p)$ and $\Gamma^\mu=(\Gamma_t,-\Gamma_k)$ the raised cells, the minus signs being those of the metric, $\Gamma_k=-\Gamma^k$. Its square is central,</p>
 <p>$$
-P^2=(p_0^2-\vec p^2)\,L_{e_t}R_{e_t},
+P^2=(p_0^2-\vec p^2)\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$</p>
-<p>and the mass-shell condition is $P^2=m^2L_{e_t}R_{e_t}$, that is $p_0^2-\vec p^2=m^2$.</p>
+<p>and the mass-shell condition is $P^2=m^2L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, that is $p_0^2-\vec p^2=m^2$.</p>
 <h3 id="the-two-dirac-equations-of-the-external-states">The two Dirac equations of the external states</h3>
 <p>The external spinors satisfy the massive Dirac equation, but in the biquaternion algebra that equation is not a single line. Two forms matter here: the <strong>one-sided chiral pair</strong>, which is the Dirac equation on the spinor module, and the <strong>two-sided equation</strong>, which is the same physics read on the whole algebra. The four-component form is their common reading in the frame cells.</p>
 <p><strong>The chiral pair.</strong> It is first a pair of one-sided equations</p>
@@ -140,17 +140,17 @@ $$</p>
 <p>where $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ is its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each chirality. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is <strong>one-sided</strong>. The electron spinor $w$ and the positron spinor $v$ are the two four-component fields of the process; the charge conjugation $\mathcal C$ of the doubled module maps one onto the other.</p>
 <p><strong>The two-sided form.</strong> Read on the whole algebra rather than on the module, the same physics is the single equation</p>
 <p>$$
-\tilde\nabla^{\natural}F=m\,\chi\bar F=m\,L_{e_t}R_{-i\vec e_z}\bar F,
+\tilde\nabla^{\natural}F=m\,\chi\bar F=m\,L_{e_t}^{\mathrm{pau}}R_{-i\vec e_z}^{\mathrm{pau}}\bar F,
 \qquad
-\chi:=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+\chi:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
 $$</p>
 <p>with $\bar F$ the coefficient conjugate and $\chi$ the <strong>chirality cell</strong>, the two-sided multiplier by $e_t$ on the left and by $-i\vec e_z$ on the right. The derivative acts on the left, the mass acts on the right, and the conjugation supplies the antilinear part. The two forms are related by a change of representation but they are different operators: the pair is linear in the field, the two-sided form is antilinear in $F$ because the mass term carries $\bar F$.</p>
-<p>The cell $\chi$ is a right multiplication by the unit $-i\vec e_z$, whose square is $e_t$; hence $\chi^2=L_{e_t}R_{e_t}$ and the eigenvalues of $\chi$ are $\pm1$. The two eigenspaces are the two chirality classes of $F$, and the coefficient conjugate of a field in one class lies in the other, because conjugation sends $-i\vec e_z$ to $+i\vec e_z$. The mass term therefore relates the two classes through $\bar F$: the conjugation plays the part of the second field of the pair, and the multiplier $\chi$ the part of the off-diagonal mass. That is why the two-sided reading is one equation for one biquaternion rather than a pair, and why it is antilinear.</p>
-<p><strong>The four-component form.</strong> In the frame cells, with $P(p)=p_0\Gamma_t-\sum_kp_k\Gamma_k$ and the mass read as the central cell $m\,L_{e_t}R_{e_t}$, the pair is written as</p>
+<p>The cell $\chi$ is a right multiplication by the unit $-i\vec e_z$, whose square is $e_t$; hence $\chi^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and the eigenvalues of $\chi$ are $\pm1$. The two eigenspaces are the two chirality classes of $F$, and the coefficient conjugate of a field in one class lies in the other, because conjugation sends $-i\vec e_z$ to $+i\vec e_z$. The mass term therefore relates the two classes through $\bar F$: the conjugation plays the part of the second field of the pair, and the multiplier $\chi$ the part of the off-diagonal mass. That is why the two-sided reading is one equation for one biquaternion rather than a pair, and why it is antilinear.</p>
+<p><strong>The four-component form.</strong> In the frame cells, with $P(p)=p_0\Gamma_t-\sum_kp_k\Gamma_k$ and the mass read as the central cell $m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, the pair is written as</p>
 <p>$$
-\bigl(P(p)-m\,L_{e_t}R_{e_t}\bigr)w(p)=0,
+\bigl(P(p)-m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)w(p)=0,
 \qquad
-\bigl(P(k)+m\,L_{e_t}R_{e_t}\bigr)v(k)=0,
+\bigl(P(k)+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)v(k)=0,
 $$</p>
 <p>where $w$ is the electron spinor and $v$ the positron spinor. The two lines are distinguished by the sign of the mass term, because $w$ carries the positive-frequency factor $e^{-ip\cdot x}$ and $v$ the negative-frequency factor $e^{+ip\cdot x}$; the opposite sign is the crossing, not a second mass. Each of $w$ and $v$ still carries both chiralities: the chiral halves are the two projections of the spinor, and the mass couples them. This is therefore not the two-sided equation: there the mass is a right multiplication by the chirality cell on the algebra, here it is the central multiplier $m$ on the module, and the conjugation that the two-sided form carries is absorbed in the passage from one carrier to the other.</p>
 <h3 id="the-two-amplitudes">The two amplitudes</h3>
@@ -158,24 +158,24 @@ $$</p>
 <p>$$
 J_\mu(p',p):=\bar w(p')\,\Gamma_\mu\,w(p),
 \qquad
-\bar w:=w^\dagger iR_{\vec e_x},
+\bar w:=w^\dagger iR_{\vec e_x}^{\mathrm{pau}},
 \qquad
-\bar v:=v^\dagger iR_{\vec e_x},
+\bar v:=v^\dagger iR_{\vec e_x}^{\mathrm{pau}},
 $$</p>
-<p>with $\Gamma_\mu$ the cell of the Lorentz index $\mu$ and $\bar w,\bar v$ the Dirac adjoints, whose factor $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$ is the Clifford-odd cell outside $\mathbb{B}$. The positron line uses the same bilinear with the order reversed, $\bar v(k)\Gamma_\mu v(k_2)$. The contraction is the Hermitian pairing of two module elements, so every bilinear is a single complex number and the brackets below are ordinary complex products.</p>
+<p>with $\Gamma_\mu$ the cell of the Lorentz index $\mu$ and $\bar w,\bar v$ the Dirac adjoints, whose factor $iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ is the Clifford-odd cell outside $\mathbb{B}$. The positron line uses the same bilinear with the order reversed, $\bar v(k)\Gamma_\mu v(k_2)$. The contraction is the Hermitian pairing of two module elements, so every bilinear is a single complex number and the brackets below are ordinary complex products.</p>
 <p>Every vertex carries two factors of the central $i$, one in the adjoint and one in the cell, so each vertex carries $i^2=-1$ and never a double $i$. For the time component the reduction is the density,</p>
 <p>$$
 \bar w\,\Gamma_t\,w
-=w^\dagger(iR_{\vec e_x})(iR_{\vec e_x})w
-=-\,w^\dagger R_{\vec e_x^2}\,w
+=w^\dagger(iR_{\vec e_x}^{\mathrm{pau}})(iR_{\vec e_x}^{\mathrm{pau}})w
+=-\,w^\dagger R_{\vec e_x^2}^{\mathrm{pau}}\,w
 =w^\dagger w,
 $$</p>
 <p>and for a spatial component, with $k=1,2,3$,</p>
 <p>$$
 \bar w\,\Gamma_k\,w
-=w^\dagger(iR_{\vec e_x})(iL_{\vec e_k}R_{\vec e_y})w
-=-\,w^\dagger L_{\vec e_k}R_{\vec e_y\vec e_x}\,w
-=w^\dagger L_{\vec e_k}R_{\vec e_z}\,w,
+=w^\dagger(iR_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})w
+=-\,w^\dagger L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}\,w
+=w^\dagger L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\,w,
 $$</p>
 <p>where the last step uses $\vec e_y\vec e_x=-\vec e_z$ and $R_{ab}=R_bR_a$. The same reduction holds with $v$ in place of $w$, and no double $i$ is left in a reduced vertex.</p>
 <p>With this notation the $t$-channel and $s$-channel amplitudes are</p>
@@ -192,14 +192,14 @@ $$</p>
 <h2 id="the-spin-sum-and-the-cross-section">The Spin Sum and the Cross Section</h2>
 <p>The spin sum is the four-component reading of the same pair. With the spin-sum cell</p>
 <p>$$
-D(p):=P(p)+m\,L_{e_t}R_{e_t}
-=p_0\,iR_{\vec e_x}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}R_{\vec e_y}+m\,L_{e_t}R_{e_t},
+D(p):=P(p)+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}
+=p_0\,iR_{\vec e_x}^{\mathrm{pau}}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$</p>
 <p>the electron and positron sums are</p>
 <p>$$
 \sum_{r=1}^{2} w^{(r)}(p)\,\bar w^{(r)}(p)=D(p),
 \qquad
-\sum_{r=1}^{2} v^{(r)}(k)\,\bar v^{(r)}(k)=P(k)-m\,L_{e_t}R_{e_t}.
+\sum_{r=1}^{2} v^{(r)}(k)\,\bar v^{(r)}(k)=P(k)-m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
 $$</p>
 <p>At leading order the mass is dropped, $m=0$, and both sums are the momentum cell; the cross section below is the massless one.</p>
 <p>Squaring the amplitude and averaging over the two incoming spins and summing over the two final spins — a factor $\tfrac14$ — gives, with the three trace combinations</p>
@@ -305,7 +305,7 @@ $$</p>
 <p>This section fixes the dictionary that the traces above use, and nothing here is needed outside it.</p>
 <p>The five cells below are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, elements of the same algebra as the body's cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$</p>
 <p>Each $\gamma_\mu$ carries one factor of $i$, so a square spends $i^2=-1$ once; the signs of the squares are the metric signs. The fifth cell is not independent, since</p>
 <p>$$
@@ -389,7 +389,7 @@ $$</p>
 <td>Two-sided cell, $L_aR_b\psi=a\psi b$</td>
 </tr>
 <tr>
-<td>$\Gamma_t=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$</td>
+<td>$\Gamma_t=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$, $\Gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
 <td>Four frame cells</td>
 </tr>
 <tr>
@@ -397,23 +397,23 @@ $$</p>
 <td>Raised-index cells</td>
 </tr>
 <tr>
-<td>$\chi=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$</td>
+<td>$\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>Chirality cell; $\chi^2=e_t$</td>
 </tr>
 <tr>
 <td>$P=p_0\Gamma_t-\sum_kp_k\Gamma_k$</td>
-<td>Momentum cell; $P^2=(p_0^2-\vec p^2)L_{e_t}R_{e_t}$</td>
+<td>Momentum cell; $P^2=(p_0^2-\vec p^2)L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 </tr>
 <tr>
-<td>$D(p)=P(p)+m\,L_{e_t}R_{e_t}$</td>
+<td>$D(p)=P(p)+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 <td>Spin-sum cell, $D(p)=\sum_r w^{(r)}(p)\bar w^{(r)}(p)$</td>
 </tr>
 <tr>
-<td>$w^{(r)}(p)$, $\bar w=w^\dagger iR_{\vec e_x}$</td>
+<td>$w^{(r)}(p)$, $\bar w=w^\dagger iR_{\vec e_x}^{\mathrm{pau}}$</td>
 <td>Electron spinor and Dirac adjoint</td>
 </tr>
 <tr>
-<td>$v^{(r)}(k)$, $\bar v=v^\dagger iR_{\vec e_x}$</td>
+<td>$v^{(r)}(k)$, $\bar v=v^\dagger iR_{\vec e_x}^{\mathrm{pau}}$</td>
 <td>Positron spinor and Dirac adjoint</td>
 </tr>
 <tr>

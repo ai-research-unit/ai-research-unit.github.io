@@ -190,9 +190,9 @@ $$
 $$
 the effective angle being the asymmetry result, the second the $\overline{\mathrm{MS}}$ value, and the third the on-shell angle built from the measured masses. They are three different quantities, separated by amounts of the size of the known radiative corrections, and the corrections carry one into another; that the corrections close the gap is a nontrivial consistency check of the standard theory. The framework has nothing to add to this: the couplings $T_{3f}$ and $Q_f$ are the imported fermion data of the spin-$\tfrac12$ subcategory, and the scheme dependence is a property of the standard radiative corrections. The point of recording it is that the empirical mixing angle is an effective parameter, so the framework's imported $\theta_W$ should be understood in the same effective sense and not as a bare algebra parameter.</p>
 <h3 id="the-currents-and-the-self-couplings">The Currents and the Self-Couplings</h3>
-<p>The currents below are written with the cells of the module. Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, and $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$ is the Dirac adjoint. The left projector is the cell
+<p>The currents below are written with the cells of the module. Here $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$, and $\bar\psi=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$ is the Dirac adjoint. The left projector is the cell
 $$
-P_L=\tfrac12\left(1+iL_{e_t}R_{\vec e_z}\right),
+P_L=\tfrac12\left(1+iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\right),
 \qquad
 P_L\psi=\tfrac12\big(\psi+i\psi\vec e_z\big),
 \qquad
@@ -200,24 +200,24 @@ P_L^{2}=P_L,\qquad P_L+P_R=1 ,
 $$
 with $P_L$ and $P_R$ the two chiral halves of the module; every frame cell exchanges them,
 $$
-P_L\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}=iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,P_R,
+P_L\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,P_R,
 \qquad
-P_L\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}P_L=0,
+P_L\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_L=0,
 \qquad
-P_R\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}P_R=0 ,
+P_R\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_R=0 ,
 $$
-so that a frame cell connects the left half of the module to the right half and nothing else: it flips the chirality, and a cell carrying the same projector at both ends vanishes. The cell therefore splits into the two halves $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}P_L$ and $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}P_R$, and a current that keeps one of them is chiral. The three identities were verified on the frame cells as $4\times4$ maps of the module.</p>
+so that a frame cell connects the left half of the module to the right half and nothing else: it flips the chirality, and a cell carrying the same projector at both ends vanishes. The cell therefore splits into the two halves $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_L$ and $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}P_R$, and a current that keeps one of them is chiral. The three identities were verified on the frame cells as $4\times4$ maps of the module.</p>
 <p>The charged current interaction is
 $$
 \mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt{2}}\Big(\sum_\mu W^+_\mu J^{+}_\mu+\mathrm{h.c.}\Big),
 \qquad
-J^+_\mu=\sum_{\text{doublets}}\bar\psi_{\mathrm u}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L\psi_{d},
+J^+_\mu=\sum_{\text{doublets}}\bar\psi_{\mathrm u}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} P_L\psi_{d},
 $$
 with the sum running over the lepton and quark doublets with the appropriate quark mixing matrix, and $\psi_{\mathrm u}$, $\psi_{\mathrm d}$ the up and down members of a doublet. The projector is what makes the coupling chiral: it is applied to the down field, so that of the two halves of the module only the left one reaches the W. The neutral current interaction is
 $$
 \mathcal{L}_{\mathrm{nc}}=-\frac{g}{\cos\theta_W}\sum_\mu Z_\mu J_{Z\mu} ,
 \qquad
-J_{Z\mu}=\sum_f\bar f\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\left(T_{3f} P_L-Q_f\sin^2\theta_W\right)f ,
+J_{Z\mu}=\sum_f\bar f\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\left(T_{3f} P_L-Q_f\sin^2\theta_W\right)f ,
 $$
 where $T_{3f}$ is the weak isospin of the fermion and $Q_f$ its electric charge. The bracket is the Z-pole combination of the previous section, $\tfrac12(g_{Vf}+g_{Af})P_L+\tfrac12(g_{Vf}-g_{Af})P_R$ with $g_{Vf}=v_f$ and $g_{Af}=a_f$, so the two sections use one set of couplings. The coupling of the photon is $eQ_f$, with $Q_f=T_{3f}+Y_f$. The non-abelian structure produces the gauge self-couplings, whose Lorentz structure is standard:
 $$
@@ -299,7 +299,7 @@ and the rotation angle is the Weinberg angle. The algebra contains the plane and
 <h3 id="the-longitudinal-mode-and-the-goldstone-equivalence">The Longitudinal Mode and the Goldstone Equivalence</h3>
 <p>A massive vector has three polarizations, and the third — the longitudinal mode — is the one the mass term creates: at high energy its amplitude is the amplitude of the would-be Goldstone boson that the gauge transformation removed, the <strong>Goldstone equivalence theorem</strong>. In the standard theory the would-be Goldstone modes are the three components of the scalar doublet that the unbroken electromagnetic subgroup does not leave invariant, and the longitudinal W and Z are their high-energy avatars; this is why the scalar sector controls the longitudinal vector dynamics and why the theory would violate unitarity without it. In the framework the longitudinal mode of a Proca field is present as the propagating third polarization of the material vector, and the Proca companion's constraint analysis exhibits it: the Gauss law is deformed by the mass, the primary constraint is second class, and the physical Hilbert space carries three polarizations. What the framework does not supply is the scalar multiplet whose Goldstone modes the longitudinal W and Z are; the longitudinal mode is available as a mode of the massive field, but its high-energy identity with a Goldstone amplitude is a statement of the standard scalar sector and is imported. The Goldstone companion records the framework's treatment of the would-be Goldstone mode in the abelian case, where the central scalar supplies it.</p>
 <h2 id="the-currents-and-the-vector-like-obstruction">The Currents and the Vector-Like Obstruction</h2>
-<p>The charged current interaction is chiral: the W couples to $J^{+}_\mu=\bar\psi_{\mathrm u}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L\psi_d$, a purely left-handed current, and the neutral current has the parity-violating combination $T_{3f}P_L-Q_f\sin^2\theta_W$. The framework's gauge action on the algebra is the adjoint action, which is real and preserves the sector: it acts on the material sector as a rotation, identically on the two chiralities of any Dirac module built on it. The companion article <em>Chiral Fermions in the Biquaternion Framework</em> shows that a gauge group drawn from the centre acts as a scalar and is therefore vector-like, and that chirality requires a non-central action. The non-central actions the framework possesses are the adjoint action on the material sector and left multiplication on the spinor module; the adjoint is real, and left multiplication acts on the two Weyl halves alike, so neither produces the asymmetric left/right assignment the W requires. Two possibilities are recorded in the companion and are not resolved here: a chiral action built on a module that is not the material sector, and a real structure that pairs the two chiralities. Neither is supplied by the algebra as it stands. The result for the vector bosons is that the framework transcribes the charged and neutral currents but does not derive their chirality.</p>
+<p>The charged current interaction is chiral: the W couples to $J^{+}_\mu=\bar\psi_{\mathrm u}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} P_L\psi_d$, a purely left-handed current, and the neutral current has the parity-violating combination $T_{3f}P_L-Q_f\sin^2\theta_W$. The framework's gauge action on the algebra is the adjoint action, which is real and preserves the sector: it acts on the material sector as a rotation, identically on the two chiralities of any Dirac module built on it. The companion article <em>Chiral Fermions in the Biquaternion Framework</em> shows that a gauge group drawn from the centre acts as a scalar and is therefore vector-like, and that chirality requires a non-central action. The non-central actions the framework possesses are the adjoint action on the material sector and left multiplication on the spinor module; the adjoint is real, and left multiplication acts on the two Weyl halves alike, so neither produces the asymmetric left/right assignment the W requires. Two possibilities are recorded in the companion and are not resolved here: a chiral action built on a module that is not the material sector, and a real structure that pairs the two chiralities. Neither is supplied by the algebra as it stands. The result for the vector bosons is that the framework transcribes the charged and neutral currents but does not derive their chirality.</p>
 <p>The electromagnetic current is a different case, and it is reached. The unbroken generator of the electroweak group is $Ϙ=T_3+Y$, its gauge field is the photon, and the coupling is $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The abelian gauge principle of the companion articles is the central phase, and the photon is the massless central-material combination. The framework reaches the photon exactly; it reaches the Z as a massive neutral material vector with a mixing angle that is imported; and it reaches the W as a massive charged adjoint excitation with a mass and a chiral coupling that are imported.</p>
 <h2 id="the-gauge-self-couplings">The Gauge Self-Couplings</h2>
 <p>The trilinear and quartic vertices of the electroweak vector bosons come from the non-abelian curvature, and here the framework's structure is sufficient in form. The previous part writes the two vertices in their electroweak form, with the charged and neutral combinations already made; this section writes them in the general non-abelian form from which that specialization follows, so that the structure constants that appear are visibly the ones of the compact factor. Writing the curvature as
@@ -325,11 +325,11 @@ with the repeated $\mu,\nu$ summed, which are the three- and four-gauge-boson ve
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$</p>
 <p>Each of the four generator cells is one factor of $i$ times a plain two-sided cell,
 $$
-i\,\gamma_\mu=-L_{e_\mu}R_{\vec e_{\nu(\mu)}} ,
+i\,\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} ,
 $$
 so that a product of two frame cells carries $i^2=-1$ and nothing further.</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
@@ -380,7 +380,7 @@ M_Z=\frac{\sqrt{g^2+g_{\mathrm Y}^2}\,v}{2}=\frac{M_W}{\cos\theta_W},
 e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W ,
 $$
 all hold in the standard theory and were verified as identities with the standard inputs ($v=246.22$ GeV from $G_F$); the measured masses, $M_W=80.377$ GeV and $M_Z=91.1876$ GeV, differ from the tree-level expressions by the radiative correction. The framework's abelian Higgs mechanism gives a mass $M_A=\kappa v$ to the central direction, and the Stueckelberg mechanism gives an invariant mass to the abelian direction without a potential; neither reaches the charged W's, because the framework's scalar is central and its covariant kinetic term carries no adjoint action on the charged directions. An adjoint scalar would give a mass of order $gv$, not $gv/2$; the observed factor of one-half requires the doublet, that is a Lorentz scalar in the fundamental of the compact factor, and the algebra's Lorentz-scalar carriers hold only the singlet and the adjoint, so the doublet is not available.</p>
-<p>The charged current is chiral, $J^{+}_\mu=\bar\psi_{\mathrm u}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L\psi_d$, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication on the spinor module — are vector-like, so none of them supplies the asymmetric left/right assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.</p>
+<p>The charged current is chiral, $J^{+}_\mu=\bar\psi_{\mathrm u}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} P_L\psi_d$, and the framework's gauge actions — the central phase, the adjoint action on the material sector, and left multiplication on the spinor module — are vector-like, so none of them supplies the asymmetric left/right assignment; the companion article on chiral fermions establishes the obstruction for a central action and records the non-central case as the open question. The W's mass and its chiral coupling are therefore imported, while its carrier, its charge, its polarizations and its self-couplings are supplied.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -411,15 +411,15 @@ all hold in the standard theory and were verified as identities with the standar
 <td>Centre; abelian factor</td>
 </tr>
 <tr>
-<td>$iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$</td>
+<td>$iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>Frame and chirality cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$</td>
 </tr>
 <tr>
-<td>$P_L=\tfrac12(1+iL_{e_t}R_{\vec e_z})$, $P_L\psi=\tfrac12(\psi+i\psi\vec e_z)$, $P_L^2=P_L$</td>
+<td>$P_L=\tfrac12(1+iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}})$, $P_L\psi=\tfrac12(\psi+i\psi\vec e_z)$, $P_L^2=P_L$</td>
 <td>Left projector; $P_R=1-P_L$</td>
 </tr>
 <tr>
-<td>$\bar\psi=\psi^{\dagger}iR_{\vec e_x}$</td>
+<td>$\bar\psi=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$</td>
 <td>Dirac adjoint</td>
 </tr>
 <tr>
@@ -479,11 +479,11 @@ all hold in the standard theory and were verified as identities with the standar
 <td>Framework abelian mass from the central scalar</td>
 </tr>
 <tr>
-<td>$J^{+}_\mu=\bar\psi_{\mathrm u}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}} P_L\psi_d$</td>
+<td>$J^{+}_\mu=\bar\psi_{\mathrm u}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} P_L\psi_d$</td>
 <td>Charged current (chiral)</td>
 </tr>
 <tr>
-<td>$J_{Z\mu}=\sum_f\bar f\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}(T_{3f}P_L-Q_f\sin^2\theta_W)f$</td>
+<td>$J_{Z\mu}=\sum_f\bar f\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}(T_{3f}P_L-Q_f\sin^2\theta_W)f$</td>
 <td>Neutral current</td>
 </tr>
 <tr>

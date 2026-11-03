@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Peirce Basis of the Biquaternion Algebra — Biquaternion Universe</title>
+  <title>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-peirce-basis-of-the-biquaternion-algebra"><strong>The Peirce Basis of the Biquaternion Algebra</strong></h1>
+        <h1 id="the-peirce-basis-of-a-peirce-decomposition-of-the-biquaternion-algebra"><strong>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A complete orthogonal family of two idempotents $\tilde\Pi_{+},\tilde\Pi_{-}$ cuts the biquaternion algebra into four complex lines $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$. The diagonal lines are spanned by the idempotents, and those vectors are canonical. The mixed lines have no canonical nonzero element.</p>
 <p>A <strong>Peirce basis</strong> is a choice of one nonzero element in each mixed line, normalized so that the two elements multiply to the two idempotents. The diagonal elements are then forced. The choice of one mixed element determines the other: for every nonzero $u\in\mathbb{B}_{+-}$ there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$, and then $vu=\tilde\Pi_{-}$. The remaining freedom is a nonzero complex scale, the <strong>gauge</strong>. A basis is therefore a family together with a point of the gauge torsor.</p>
@@ -99,7 +99,7 @@ $$</p>
 <p><strong>The mixed elements are a choice.</strong> A nonzero $\vec\Upsilon_{+-}$ can be rescaled, and the product normalization forces the reciprocal rescaling of $\vec\Upsilon_{-+}$. That freedom is the gauge of §<em>The Gauge</em>.</p>
 <h2 id="existence-the-nilpotent-route">Existence: The Nilpotent Route</h2>
 <p><strong>Theorem.</strong> Every nondegenerate complete family of two idempotents of $\mathbb{B}$ admits a Peirce basis. More precisely, for every nonzero $u\in\mathbb{B}_{+-}$ there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$, and then $vu=\tilde\Pi_{-}$. The Peirce bases of the family are in bijection with the nonzero elements of $\mathbb{B}_{+-}$, and also with the nonzero elements of $\mathbb{B}_{-+}$.</p>
-<p><strong>Proof.</strong> Let $u\in\mathbb{B}_{+-}$ be nonzero. By the corner rule, left multiplication by $u$ maps $\mathbb{B}_{-+}$ into $\mathbb{B}_{++}$ and annihilates $\mathbb{B}_{++}$. The product $\mathbb{B}_{+-}\mathbb{B}_{-+}$ is nonzero by the lemma of <em>The Peirce Decomposition of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>; since $\mathbb{B}_{-+}$ is a line, $u\mathbb{B}_{-+}\ne0$. A nonzero linear map between two lines is an isomorphism, so there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$.</p>
+<p><strong>Proof.</strong> Let $u\in\mathbb{B}_{+-}$ be nonzero. By the corner rule, left multiplication by $u$ maps $\mathbb{B}_{-+}$ into $\mathbb{B}_{++}$ and annihilates $\mathbb{B}_{++}$. The product $\mathbb{B}_{+-}\mathbb{B}_{-+}$ is nonzero by the lemma of <em>Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>; since $\mathbb{B}_{-+}$ is a line, $u\mathbb{B}_{-+}\ne0$. A nonzero linear map between two lines is an isomorphism, so there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$.</p>
 <p>Now $vu\in\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{-}$. It is nonzero: if $vu=0$, then $u(vu)=0$, but $(uv)u=\tilde\Pi_{+}u=u\ne0$. Write $vu=\lambda\tilde\Pi_{-}$ with $\lambda\ne0$. Then</p>
 <p>$$
 u=uvu=\lambda u,
@@ -216,7 +216,7 @@ $$</p>
 <p><strong>Uniqueness up to conjugation.</strong> Every two systems of $2\times2$ matrix units of $\mathbb{B}$ are conjugate by a unit, and the conjugating unit is unique up to the centre.</p>
 <p><strong>Proof.</strong> For two systems of the same family, the two bases differ by the gauge of §<em>The Gauge</em>, and that gauge is conjugation by $U=t_{+}\tilde\Pi_{+}+t_{-}\tilde\Pi_{-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.</p>
 <h2 id="dimensions">Dimensions</h2>
-<p><strong>The family.</strong> A nondegenerate family is the same data as a nontrivial idempotent, by <em>The Peirce Decomposition of the Biquaternion Algebra</em>, §<em>From One Idempotent to Its Complement</em>. In the matrix model a nontrivial idempotent is a rank-one projection: its image is a line, of one complex parameter, and its kernel is a complementary line, of one complex parameter. The family therefore has complex dimension two, that is real dimension four.</p>
+<p><strong>The family.</strong> A nondegenerate family is the same data as a nontrivial idempotent, by <em>Peirce Decompositions of the Biquaternion Algebra</em>, §<em>From One Idempotent to Its Complement</em>. In the matrix model a nontrivial idempotent is a rank-one projection: its image is a line, of one complex parameter, and its kernel is a complementary line, of one complex parameter. The family therefore has complex dimension two, that is real dimension four.</p>
 <p><strong>The basis.</strong> Fix the family. A basis is a nonzero element of one mixed line, by §<em>Existence: The Nilpotent Route</em>. A complex line with its zero removed has complex dimension one, that is real dimension two. The basis is the family together with this point, so the basis space has real dimension $4+2=6$.</p>
 <p><strong>The gauge.</strong> The effective gauge is $\mathbb{C}^{\times}$, of real dimension two. It is the fibre of the map from bases to families. The count is</p>
 <p>$$
@@ -303,7 +303,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the family, the four lines and the product rule.</li>
+<li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">Peirce Decompositions of the Biquaternion Algebra</a>, for the family, the four lines and the product rule.</li>
 <li><a href="spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Biquaternion Algebra</a>, for the coordinates of the two spinor spaces.</li>
 <li><a href="spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Biquaternion Algebra</a>, for the matrix model and the coordinate isomorphism.</li>
 <li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the general gauge $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}$.</li>

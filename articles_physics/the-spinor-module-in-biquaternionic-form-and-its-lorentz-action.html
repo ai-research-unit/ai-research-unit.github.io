@@ -79,7 +79,7 @@ $$</p>
 <p>The article is written in the <strong>cell algebra</strong>. A <strong>cell</strong> is the two-sided multiplier</p>
 <p>$$
 L_aR_b:\ X\;\longmapsto\; aXb,
-\qquad L_a=L_aR_{e_t},\quad R_b=L_{e_t}R_b,
+\qquad L_a=L_aR_{e_t}^{\mathrm{pau}},\quad R_b=L_{e_t}^{\mathrm{pau}}R_b,
 $$</p>
 <p>and two cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order. The spinor action of the Lorentz group is the <strong>one-sided cell</strong> $L_{\tilde U}$; the four-vector action is the <strong>two-sided cell</strong></p>
 <p>$$
@@ -226,13 +226,13 @@ $$</p>
 <p>with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ a central root of $-1$ in the complexification, so $\chi^2=e_t$. Under the correspondence $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$, the biquaternion scalar imaginary maps to $-\omega$ in the chosen extension, and the Clifford image of $\chi$ is $i_{\mathbb{C}}\omega$; the two signs $i_{\mathbb{C}}$ and $\omega$ square to $-1$, so their product squares to $+1$. These are the idempotents of the two chiral halves. This is the algebraic form of the statement that the odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities (Section <em>The Even Subalgebra and the Origin of the Action</em>).</p>
 <p><strong>The chirality cell.</strong> On the Dirac module the chiral sign is represented by the cell</p>
 <p>$$
-\Gamma=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
 \qquad
 \Gamma\Psi=-i\,\Psi\,\vec e_z .
 $$</p>
 <p>It satisfies $\Gamma^2=I_4$, because $(-i)^2=-1$ and $\vec e_z^2=-e_t$:</p>
 <p>$$
-\Gamma^2=(-i)^2L_{e_t}R_{\vec e_z^2}=(-1)L_{e_t}R_{-e_t}=I_4 .
+\Gamma^2=(-i)^2L_{e_t}^{\mathrm{pau}}R_{\vec e_z^2}^{\mathrm{pau}}=(-1)L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=I_4 .
 $$</p>
 <p>The <strong>chiral projectors</strong> are</p>
 <p>$$
@@ -240,7 +240,7 @@ P_L=\tfrac{1}{2}(I_4-\Gamma),\qquad P_R=\tfrac{1}{2}(I_4+\Gamma),
 \qquad
 P_L^2=P_L,\quad P_R^2=P_R,\quad P_LP_R=0,\quad P_L+P_R=I_4,
 $$</p>
-<p>and on $\Delta$ the cell acts as $\operatorname{diag}(-I_2,I_2)$ in the basis of the two halves, so there $P_L$ projects onto $S$ and $P_R$ onto $\bar S$. The carrier matters at this point, and the two carriers must not be confused. On the regular module $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ the same cell has the Peirce eigenspaces $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, which are <strong>two copies of $S$</strong>, and there it equals $-$ the inner Peirce sign $R_{i\vec e_z}$; the two eigenspaces are isomorphic, so no chiral distinction is produced. On $\Delta$ the two eigenspaces are $S$ and $\bar S$, which are not isomorphic, and the distinction is real. The difference is the carrier: $\Delta$ is a module for the <strong>group</strong> $SL(2,\mathbb{C})$, not for the algebra $\mathbb{B}$. A $\mathbb{B}$-module cannot split into $S\oplus\bar S$, because $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and $\bar S$ is not a $\mathbb{B}$-module. The chiral sign is the <strong>central</strong> grading of the complexification, and it is not an element of $\mathbb{B}$.</p>
+<p>and on $\Delta$ the cell acts as $\operatorname{diag}(-I_2,I_2)$ in the basis of the two halves, so there $P_L$ projects onto $S$ and $P_R$ onto $\bar S$. The carrier matters at this point, and the two carriers must not be confused. On the regular module $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ the same cell has the Peirce eigenspaces $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, which are <strong>two copies of $S$</strong>, and there it equals $-$ the inner Peirce sign $R_{i\vec e_z}^{\mathrm{pau}}$; the two eigenspaces are isomorphic, so no chiral distinction is produced. On $\Delta$ the two eigenspaces are $S$ and $\bar S$, which are not isomorphic, and the distinction is real. The difference is the carrier: $\Delta$ is a module for the <strong>group</strong> $SL(2,\mathbb{C})$, not for the algebra $\mathbb{B}$. A $\mathbb{B}$-module cannot split into $S\oplus\bar S$, because $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and $\bar S$ is not a $\mathbb{B}$-module. The chiral sign is the <strong>central</strong> grading of the complexification, and it is not an element of $\mathbb{B}$.</p>
 <p>The <strong>Dirac spinor module</strong> is the direct sum of the two halves,</p>
 <p>$$
 \boxed{\;\Delta = S \oplus \bar{S} = \left(\tfrac{1}{2},0\right)\oplus\left(0,\tfrac{1}{2}\right), \qquad \dim_{\mathbb{C}}\Delta = 4\;},
@@ -589,7 +589,7 @@ $$</p>
 <li><strong>It is the double cover.</strong> The kernel of the vector action is $\{\pm e_t\}$; the kernel of the spinor action is $\{e_t\}$. The sign that the vector action cannot see is exactly the sign that distinguishes a spinor from its negative.</li>
 <li><strong>It is the difference between a sandwich and a product.</strong> The four-vector action is a sandwich, and it maps $\mathbb{M}_-$ into itself. The spinor action is a single left multiplication by an element of the even subalgebra, and the even subalgebra does not preserve the exterior grading: a bivector multiplied into a vector produces a vector plus a trivector, so grades are mixed in pairs. The spinor module is a Clifford module, not an exterior module.</li>
 <li><strong>It is a difference of real form.</strong> Both representations are four-real-dimensional, and they are different in kind. The vector representation is a <strong>real form</strong>: it is real four-dimensional, and its complexification is $S\otimes\bar{S}=(\tfrac12,\tfrac12)$, of complex dimension four; the four-vector space is the Hermitian slice of that complex representation. The spinor representation is genuinely complex two-dimensional, and it carries no invariant real structure, because such a structure would be an isomorphism $S\cong\bar{S}$ and the two halves are not isomorphic. Equal real dimension, different kind.</li>
-<li><strong>It is the origin of chirality.</strong> The odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities. The chirality is the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra; on the Dirac module it is the cell $\Gamma=-iL_{e_t}R_{\vec e_z}$, which is a cell and not an element of $\mathbb{B}$ and which the frame of §<em>The Gamma Formulation</em> displays as the fifth of its five cells. The Peirce sign $R_{i\vec e_z}$ is a different, inner sign; it grades the two minimal left ideals, not the two chiral halves.</li>
+<li><strong>It is the origin of chirality.</strong> The odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities. The chirality is the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra; on the Dirac module it is the cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, which is a cell and not an element of $\mathbb{B}$ and which the frame of §<em>The Gamma Formulation</em> displays as the fifth of its five cells. The Peirce sign $R_{i\vec e_z}^{\mathrm{pau}}$ is a different, inner sign; it grades the two minimal left ideals, not the two chiral halves.</li>
 </ol>
 <p>The last point is the precise sense in which "the gamma matrices" and "the spinor module" are not two theories. The gamma matrices are a frame of the same cell algebra that contains $L_{\tilde U}$; the spinor module is the carrier on which the one-sided cells act. The frame is displayed once, in the next section, and the body of the article needs none of it.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -627,16 +627,16 @@ $$</p>
 <p>The gamma matrices are a <strong>frame</strong> of the same cell algebra, written as $4\times4$ matrices on the regular module. They are displayed once, here, so that the body of the article can be read without them.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra. In cell notation,</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\qquad
-\gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad
-\gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad
-\gamma_3=iL_{\vec e_z}R_{\vec e_y},\qquad
-\gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
-<p>Each is a one-cell product, and each satisfies the Clifford relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\eta_{\mu\nu}I_4$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ <strong>is</strong> the chirality cell $\Gamma=-iL_{e_t}R_{\vec e_z}$ of §<em>The Two Chiral Halves</em> — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\chi$ of the complexification, which is not a gamma matrix; the body of the article uses $\chi$ and never needs a gamma symbol.</p>
+<p>Each is a one-cell product, and each satisfies the Clifford relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\eta_{\mu\nu}I_4$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ <strong>is</strong> the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §<em>The Two Chiral Halves</em> — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\chi$ of the complexification, which is not a gamma matrix; the body of the article uses $\chi$ and never needs a gamma symbol.</p>
 <p>A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance</p>
 <p>$$
-\gamma_0\gamma_1=i^2L_{e_t\vec e_x}R_{\vec e_y\vec e_x}=-L_{\vec e_x}R_{\vec e_y\vec e_x}=L_{\vec e_x}R_{\vec e_z},
+\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$</p>
 <p>and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\Gamma$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\Gamma$ the chirality cell.</p>
 <p>The dictionary is complex-linear: the five cells are a complex frame, and their sixteen products are the sixteen-element Clifford basis. What the frame does <strong>not</strong> fix is the real slice. Both $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ are real forms of the same complex algebra $\mathrm{Cl}_{4}(\mathbb{C})\cong M_4(\mathbb{C})$, and they are not isomorphic to one another. The signs in the display above are the ones that make $\vec e_x,\vec e_y,\vec e_z$ spacelike bivectors, that is the signature $(1,3)$; the other choice of signs describes the other real form, and the complex frame cannot tell the two apart. The choice is made once, in <a href="matrix-representations-conventions.html">Matrix Representations: Conventions</a>, and it is held throughout the series.</p>
@@ -647,7 +647,7 @@ $$</p>
 <li><strong>There is one simple module.</strong> $S=\mathbb{C}^2$ is the unique simple $\mathbb{B}$-module; the regular module is $S\oplus S$, and the minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both copies of $S$.</li>
 <li><strong>The Lorentz action is one-sided.</strong> $\psi\mapsto L_{\tilde U}\psi=\tilde U^{\mathrm{lor}}\psi$; the four-vector action is the two-sided cell $\Theta_{\tilde U}=L_{\tilde U}R_{\tilde U^{*}}$, $\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$.</li>
 <li><strong>The double cover is the kernel.</strong> $\ker\pi=\{\pm e_t\}$ acts trivially on $\mathbb{M}_-$ and as $-\mathrm{id}$ on $S$; the spinor action is faithful, the vector action is not.</li>
-<li><strong>The chiral halves are $S$ and $\bar S$.</strong> They are the two Weyl modules $(\frac12,0)$ and $(0,\frac12)$, paired by $\psi^{\dagger}\varphi$; the chirality cell is $\Gamma=-iL_{e_t}R_{\vec e_z}$, with $\Gamma^2=I_4$ and projectors $P_{L,R}=\frac12(I_4\mp\Gamma)$. The two minimal left ideals are <strong>not</strong> the two chiral halves; they are two copies of $S$, and the distinction requires the real structure.</li>
+<li><strong>The chiral halves are $S$ and $\bar S$.</strong> They are the two Weyl modules $(\frac12,0)$ and $(0,\frac12)$, paired by $\psi^{\dagger}\varphi$; the chirality cell is $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, with $\Gamma^2=I_4$ and projectors $P_{L,R}=\frac12(I_4\mp\Gamma)$. The two minimal left ideals are <strong>not</strong> the two chiral halves; they are two copies of $S$, and the distinction requires the real structure.</li>
 <li><strong>The invariant forms are three on $S$, plus one between the halves.</strong> $\varepsilon$ is the alternating form that makes $S$ self-dual; $h$ is the definite Hermitian form invariant only under $SU(2)$; $[\,\cdot\,|\,\cdot\,]$ is the indefinite Hermitian form invariant under $SU(1,1)$; and the mixed pairing $\psi^{\dagger}\varphi$ is invariant between $S$ and $\bar S$.</li>
 <li><strong>The vector representation is the tensor square.</strong> $S\otimes\bar S\cong\mathbb{B}$ as $SL(2,\mathbb{C})$-representations, and the four-vector representation is its Hermitian slice, $(\frac12,\frac12)=(\frac12,0)\otimes(0,\frac12)$.</li>
 <li><strong>The gamma matrices are a frame, not the subject.</strong> They are the five cells displayed once in §<em>The Gamma Formulation</em>; the body of the article is written in the cells $L_{\tilde U}$ and $\Theta_{\tilde U}$.</li>
@@ -723,7 +723,7 @@ $$</p>
 <td>Matrix units $E_{12},E_{21}$</td>
 </tr>
 <tr>
-<td>$\Gamma=-iL_{e_t}R_{\vec e_z}$</td>
+<td>$\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>Chirality cell, $\Gamma^2=I_4$</td>
 </tr>
 <tr>

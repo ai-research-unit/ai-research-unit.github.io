@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Special Decomposition of a Biquaternion under a Peirce Basis — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-special-decomposition-of-a-biquaternion-under-a-peirce-basis"><strong>The Special Decomposition of a Biquaternion under a Peirce Basis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every biquaternion is the product of two unitaries around a real linear combination of $e_t$ and a pure Hermitian root of $e_t$. For a chosen root $\vec\Xi$, the statement is</p>
+<p>$$
+\tilde Q=\tilde U\,(r e_t+s\vec\Xi)\,\tilde V^{*},\qquad r\ge s\ge0,
+$$</p>
+<p>and the middle factor is diagonal in the Peirce basis of $\vec\Xi$, with Peirce coefficients $r+s$ and $r-s$. This is the <strong>special decomposition under a Peirce basis</strong> of the title. It is special in a precise sense: it selects the diagonal Peirce component of one root, and the two coefficients in that component are invariants of the element, not of the root.</p>
+<p>The article answers four questions, in this order. What is a root of the algebra, and what Peirce data does it produce? What factorization does every element admit relative to those data? What is determined by the element, and what is a choice of presentation? What is the relation to the eigenbasis of a spectrally regular element?</p>
+<p>The theorem is stated for an arbitrary root and proved by transporting a base case from the root that the element itself carries. The Peirce language is used throughout; no matrix representation appears before §<em>The Matrix Model as a Check</em>, where it serves as a verification and not as a definition. The article assumes <em>Algebra and Element Conventions</em> for the algebra and the conjugations, <em>Special Element and Peirce Conventions</em> for the glyphs of the root, the idempotent and the Peirce units, <em>Peirce Decompositions of the Biquaternion Algebra</em> and <em>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</em> for the four corners and the basis, and <em>The Polar Decomposition of a Biquaternion</em> for the polar form. The eigenbasis is a different construction and is compared, not merged, in §<em>Relation to the Eigenbasis</em>.</p>
+<h2 id="notation">Notation</h2>
+<p><strong>The algebra.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the complex algebra with unit $e_t$ and three further units $\vec e_x,\vec e_y,\vec e_z$ subject to</p>
+<p>$$
+\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t,\qquad
+\vec e_x\vec e_y=\vec e_z,\quad \vec e_y\vec e_z=\vec e_x,\quad \vec e_z\vec e_x=\vec e_y,
+$$</p>
+<p>the reversed products being the negatives. The central imaginary is $i$, with $i^{2}=-1$ and $i$ commuting with every unit. An element and its vector part are</p>
+<p>$$
+\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z=Q_te_t+\vec Q,\qquad Q_\mu\in\mathbb{C},
+$$</p>
+<p>and the product is the associative product of $\mathbb{B}$.</p>
+<p><strong>The involution.</strong> The Hermitian conjugation is</p>
+<p>$$
+\tilde Q^{*}=\overline{Q_t}e_t-\overline{Q_x}\vec e_x-\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z.
+$$</p>
+<p>It is conjugate-linear and involutive, $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$. The elements fixed by the star are <strong>Hermitian</strong>, those anti-fixed are <strong>anti-Hermitian</strong>. The <strong>unitary group</strong> is</p>
+<p>$$
+\mathrm{U}(\mathbb{B})=\{\tilde U\in\mathbb{B}:\tilde U^{*}\tilde U=e_t\};
+$$</p>
+<p>it is compact and isomorphic to $\mathrm{U}(2)$ (<em>The Unitary Group of the Biquaternion Algebra</em>).</p>
+<p><strong>Pure elements.</strong> An element is <strong>pure</strong> when its scalar part vanishes. A pure element is written with the arrow, $\vec X$, the arrow replacing the tilde.</p>
+<p><strong>The Hermitian root.</strong> A <strong>Hermitian root of $e_t$</strong> is a pure Hermitian element $\vec\Xi$ with</p>
+<p>$$
+\vec\Xi^{2}=e_t.
+$$</p>
+<p>In this article the word <strong>root</strong> is shorthand for a Hermitian root of $e_t$. The general root of <em>Special Element and Peirce Conventions</em> is any element with square $e_t$; it need be neither pure nor Hermitian, and it includes the central elements $\pm e_t$. The two extra conditions select the roots that produce a non-trivial Hermitian pair and a non-degenerate Peirce basis. A root is an element of the algebra, not a square root of a number, and the word is reserved for this object throughout.</p>
+<p><strong>Proposition (the Hermitian roots are the imaginary unit vectors).</strong> A pure element $\vec\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ is a Hermitian root of $e_t$ exactly when $\Xi_k=i n_k$ with $n_k\in\mathbb{R}$ and $n_x^{2}+n_y^{2}+n_z^{2}=1$. The Hermitian roots are therefore exactly the elements $i\vec n$ with $\vec n$ a real unit vector, and they form a two-sphere.</p>
+<p><em>Proof.</em> A pure element is Hermitian exactly when each coefficient is fixed by $z\mapsto-\bar z$, that is when $\Xi_k=in_k$ with $n_k$ real. For such an element, $\vec\Xi^{2}=-(\Xi_x^{2}+\Xi_y^{2}+\Xi_z^{2})e_t=(n_x^{2}+n_y^{2}+n_z^{2})e_t$, which equals $e_t$ exactly when $\lvert\vec n\rvert=1$.</p>
+<p><strong>Remark (Hermiticity and purity are restrictions, not consequences).</strong> A pure element with $\vec\Xi^{2}=e_t$ need not be Hermitian: the element $i\sqrt2\,\vec e_x+\vec e_y$ is pure and its square is $e_t$, but its star is $i\sqrt2\,\vec e_x-\vec e_y$, which differs from it. A Hermitian element with $\vec\Xi^{2}=e_t$ need not be pure: the central elements $\pm e_t$ are Hermitian and square to $e_t$, but they give the trivial pair $e_t,0$. The roots used in this article are both pure and Hermitian. Purity excludes the two central elements; Hermiticity is exactly the condition for $\mathbb{C}[\vec\Xi]$ to be a $*$-plane and for $r e_t+s\vec\Xi$ to be Hermitian with spectral values $r\pm s$. The other solutions of $\vec\Xi^{2}=e_t$ do not carry the positive semidefinite middle factor of the theorem.</p>
+<p><strong>The singular values.</strong> The element $\tilde Q^{*}\tilde Q$ is Hermitian positive semidefinite, and its two spectral values are $\sigma_1^{2}$ and $\sigma_2^{2}$ with $\sigma_1\ge\sigma_2\ge0$. The numbers $\sigma_1,\sigma_2$ are the <strong>singular values</strong> of $\tilde Q$; equivalently, they are the spectral values of the Hermitian positive semidefinite element $(\tilde Q^{*}\tilde Q)^{1/2}$ (<em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>).</p>
+<h2 id="the-peirce-data-of-a-root">The Peirce Data of a Root</h2>
+<p><strong>The idempotents.</strong> Fix a root $\vec\Xi$ and put</p>
+<p>$$
+\tilde\Pi_+=\frac{e_t+\vec\Xi}{2},\qquad
+\tilde\Pi_-=\frac{e_t-\vec\Xi}{2}.
+$$</p>
+<p><strong>Lemma (the two idempotents).</strong> The elements $\tilde\Pi_\pm$ satisfy</p>
+<p>$$
+\tilde\Pi_\pm^{2}=\tilde\Pi_\pm,\qquad
+\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,\qquad
+\tilde\Pi_++\tilde\Pi_-=e_t,
+$$</p>
+<p>and they are Hermitian, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$.</p>
+<p><em>Proof.</em> The idempotence is $\tilde\Pi_\pm^{2}=(e_t\pm2\vec\Xi+\vec\Xi^{2})/4=(e_t\pm\vec\Xi)/2$, using $\vec\Xi^{2}=e_t$; the orthogonality is $\tilde\Pi_+\tilde\Pi_-=(e_t-\vec\Xi^{2})/4=0$; the sum and the Hermiticity are immediate from the definitions.</p>
+<p><strong>The Peirce decomposition.</strong> The corners of the pair are</p>
+<p>$$
+\mathbb{B}_{++}=\tilde\Pi_+\mathbb{B}\tilde\Pi_+,\quad
+\mathbb{B}_{+-}=\tilde\Pi_+\mathbb{B}\tilde\Pi_-,\quad
+\mathbb{B}_{-+}=\tilde\Pi_-\mathbb{B}\tilde\Pi_+,\quad
+\mathbb{B}_{--}=\tilde\Pi_-\mathbb{B}\tilde\Pi_-,
+$$</p>
+<p>each is a complex line, and</p>
+<p>$$
+\mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}
+$$</p>
+<p>(<em>Peirce Decompositions of the Biquaternion Algebra</em>). The multiplication follows the corner rule $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$, with $s,t,u,v\in\{+,-\}$.</p>
+<p><strong>Lemma (the diagonal part is the plane of the root).</strong> The two diagonal corners span the plane of the idempotents and of the root,</p>
+<p>$$
+\mathbb{B}_{++}\oplus\mathbb{B}_{--}
+=\mathbb{C}[\vec\Xi]
+=\operatorname{span}_{\mathbb{C}}\{e_t,\vec\Xi\}
+=\operatorname{span}_{\mathbb{C}}\{\tilde\Pi_+,\tilde\Pi_-\}.
+$$</p>
+<p><em>Proof.</em> The diagonal corners are $\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_+$ and $\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_-$, so their sum is $\operatorname{span}_{\mathbb{C}}\{\tilde\Pi_+,\tilde\Pi_-\}$. The two idempotents are the invertible linear combinations $e_t\pm\vec\Xi$ divided by two, hence they span the same plane as $e_t$ and $\vec\Xi$.</p>
+<p>Within the Peirce data, this is the only place where the root enters as an element of the algebra rather than as the label of a pair of corners.</p>
+<p><strong>Lemma A (transport of roots).</strong> For any two Hermitian roots $\vec\Xi,\vec\Xi'$ there is $\tilde W\in\mathrm{U}(\mathbb{B})$ with</p>
+<p>$$
+\tilde W\vec\Xi\tilde W^{*}=\vec\Xi',
+$$</p>
+<p>and consequently $\tilde W\tilde\Pi_\pm\tilde W^{*}=\tilde\Pi'_\pm$ and $\tilde W\mathbb{C}[\vec\Xi]\tilde W^{*}=\mathbb{C}[\vec\Xi']$.</p>
+<p><em>Proof.</em> Write $\vec\Xi=i\vec n$ and $\vec\Xi'=i\vec n'$ with $\vec n,\vec n'$ real unit vectors. A rotation of $\mathbb{R}^{3}$ carries $\vec n$ to $\vec n'$; every rotation of the vector part is the conjugation $\vec v\mapsto\tilde w\vec v\tilde w^{*}$ by a unit quaternion $\tilde w\in S^{3}\subset\mathrm{U}(\mathbb{B})$ (<em>Biquaternion Rotations and Lorentz Transformations</em>). Taking $\tilde W=\tilde w$ gives the first identity. The two consequences follow by conjugating $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ and by conjugating the plane spanned by $e_t$ and $\vec\Xi$.</p>
+<p><strong>The Peirce basis.</strong> A <strong>Peirce basis</strong> of the pair is a quadruple</p>
+<p>$$
+\mathcal{B}(\vec\Xi)=(\tilde\Pi_+,\ \vec\Upsilon_{+-},\ \vec\Upsilon_{-+},\ \tilde\Pi_-),
+\qquad
+\vec\Upsilon_{+-}\in\mathbb{B}_{+-},\quad \vec\Upsilon_{-+}\in\mathbb{B}_{-+},
+$$</p>
+<p>with</p>
+<p>$$
+\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+,\qquad
+\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_-.
+$$</p>
+<p><strong>Lemma (existence and uniqueness of the partner).</strong> For every nonzero $\vec\Upsilon_{+-}\in\mathbb{B}_{+-}$ there is a unique $\vec\Upsilon_{-+}\in\mathbb{B}_{-+}$ with $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+$, and for it $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_-$. Consequently every choice of one nonzero mixed element determines a Peirce basis, and the two mixed elements are nilpotents.</p>
+<p><em>Proof.</em> Left multiplication by $\vec\Upsilon_{+-}$ is a nonzero linear map from the line $\mathbb{B}_{-+}$ to the line $\mathbb{B}_{++}$; it is nonzero because the product of the two mixed lines is nonzero, and it is therefore an isomorphism of complex lines. Hence there is a unique $\vec\Upsilon_{-+}$ with $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+$. The product $\vec\Upsilon_{-+}\vec\Upsilon_{+-}$ lies in $\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_-$; writing it $\lambda\tilde\Pi_-$ and multiplying the first identity by $\vec\Upsilon_{+-}$ on the right gives $\vec\Upsilon_{+-}=\lambda\vec\Upsilon_{+-}$, so $\lambda=1$. The nilpotence is $\vec\Upsilon_{+-}^{2}\in\mathbb{B}_{++}\mathbb{B}_{+-}=0$, and likewise for the other.</p>
+<p><strong>The gauge.</strong> If $\vec\Upsilon_{+-}$ is replaced by $\mu\vec\Upsilon_{+-}$ with $\mu\in\mathbb{C}^{\times}$, the partner is replaced by $\mu^{-1}\vec\Upsilon_{-+}$, and the products are unchanged. This is the <strong>gauge</strong> of the basis,</p>
+<p>$$
+\vec\Upsilon_{+-}\longmapsto\mu\,\vec\Upsilon_{+-},\qquad
+\vec\Upsilon_{-+}\longmapsto\mu^{-1}\vec\Upsilon_{-+},\qquad \mu\in\mathbb{C}^{\times},
+$$</p>
+<p>and every two bases of the same pair differ by exactly one gauge transformation. The basis $\mathcal{B}(\vec\Xi)$ is therefore unique up to the gauge, and the diagonal elements are the idempotents themselves and are not a choice. The companion article writes the same gauge with the parameter $t=\mu^{-1}$.</p>
+<p><strong>Peirce coordinates.</strong> Every element has a unique expansion</p>
+<p>$$
+\tilde Q=Q_{++}\tilde\Pi_++Q_{+-}\vec\Upsilon_{+-}+Q_{-+}\vec\Upsilon_{-+}+Q_{--}\tilde\Pi_-,
+\qquad Q_{st}\in\mathbb{C}.
+$$</p>
+<p>Under the gauge the off-diagonal coordinates transform reciprocally, $Q_{+-}\mapsto\mu^{-1}Q_{+-}$ and $Q_{-+}\mapsto\mu Q_{-+}$, while $Q_{++}$ and $Q_{--}$ are unchanged.</p>
+<h2 id="the-theorem">The Theorem</h2>
+<p><strong>Theorem (factorization relative to a root).</strong> Let $\vec\Xi$ be a Hermitian root of $e_t$. For every $\tilde Q\in\mathbb{B}$ there exist $\tilde U,\tilde V\in\mathrm{U}(\mathbb{B})$ and real numbers $r\ge s\ge0$ with</p>
+<p>$$
+\tilde Q=\tilde U\,(r e_t+s\vec\Xi)\,\tilde V^{*}.
+$$</p>
+<p>The middle factor lies in $\mathbb{C}[\vec\Xi]$, and its Peirce coordinates in $\mathcal{B}(\vec\Xi)$ are $(r+s,0,0,r-s)$.</p>
+<p><strong>Reading of the statement.</strong> Three points are part of the statement and not consequences of the proof.</p>
+<ul>
+<li>The middle factor is diagonal in the Peirce basis, $r e_t+s\vec\Xi=(r+s)\tilde\Pi_++(r-s)\tilde\Pi_-$, and its two Peirce coefficients are non-negative real numbers.</li>
+<li>The pair $(r,s)$ is determined by $\tilde Q$ alone. The singular values of $\tilde Q$ are $\sigma_1=r+s$ and $\sigma_2=r-s$, so $r=(\sigma_1+\sigma_2)/2$ and $s=(\sigma_1-\sigma_2)/2$. The root changes only the presentation of the middle factor.</li>
+<li>The factorization is not a claim about a preferred root. It holds for every root, and the two numbers $r+s$ and $r-s$ are the same for all roots.</li>
+</ul>
+<h2 id="the-proof">The Proof</h2>
+<p>The proof has three steps: a transport of roots, a base case, and a transport of the factorization. The base case is not attached to a fixed root; it is attached to the root that the element itself carries. That is the choice of base case that makes the proof shortest, and it is internal to the proof.</p>
+<p><strong>Lemma A (transport of roots)</strong> is the transitivity lemma of §<em>The Peirce Data of a Root</em>: for any two roots $\vec\Xi,\vec\Xi'$ there is $\tilde W\in\mathrm{U}(\mathbb{B})$ with $\tilde W\vec\Xi\tilde W^{*}=\vec\Xi'$, and it carries the idempotents and the plane of one root to those of the other. It is the first step.</p>
+<p><strong>Lemma (extension of a partial isometry).</strong> Let $\tilde Q_0$ be a partial isometry, with initial projection $\tilde\Pi_{\mathrm i}=\tilde Q_0^{*}\tilde Q_0$ and final projection $\tilde\Pi_{\mathrm f}=\tilde Q_0\tilde Q_0^{*}$. Then there is $\tilde U\in\mathrm{U}(\mathbb{B})$ with $\tilde U\tilde\Pi_{\mathrm i}=\tilde Q_0$.</p>
+<p><em>Proof.</em> If $\tilde\Pi_{\mathrm i}=0$ then $\tilde Q_0=0$ and any unitary works; if $\tilde\Pi_{\mathrm i}=e_t$ then $\tilde Q_0$ is unitary. Otherwise $\tilde\Pi_{\mathrm i}$ and $\tilde\Pi_{\mathrm f}$ are Hermitian idempotents that are neither $0$ nor $e_t$, so each is the idempotent of a root. For the initial one, put $\vec\Xi=2\tilde\Pi_{\mathrm i}-e_t$: the element $\vec\Xi$ is Hermitian, and it is pure because the vector part of $\tilde\Pi_{\mathrm i}$ does not vanish, which forces the scalar part of $\tilde\Pi_{\mathrm i}$ to be $1/2$ by $\tilde\Pi_{\mathrm i}^{2}=\tilde\Pi_{\mathrm i}$; then $\vec\Xi^{2}=4\tilde\Pi_{\mathrm i}-4\tilde\Pi_{\mathrm i}+e_t=e_t$. So $\tilde\Pi_{\mathrm i}=(e_t+\vec\Xi)/2$, and likewise $\tilde\Pi_{\mathrm f}=(e_t+\vec\Xi')/2$. By Lemma A there is $\tilde W\in\mathrm{U}(\mathbb{B})$ with $\tilde W\tilde\Pi_{\mathrm i}\tilde W^{*}=\tilde\Pi_{\mathrm f}$. Put</p>
+<p>$$
+\tilde U=\tilde Q_0+\tilde W(e_t-\tilde\Pi_{\mathrm i}).
+$$</p>
+<p>The cross terms in $\tilde U^{*}\tilde U$ vanish because $\tilde Q_0=\tilde Q_0\tilde\Pi_{\mathrm i}=\tilde\Pi_{\mathrm f}\tilde Q_0$ and $\tilde W\tilde\Pi_{\mathrm i}=\tilde\Pi_{\mathrm f}\tilde W$, and the two remaining terms are $\tilde\Pi_{\mathrm i}+(e_t-\tilde\Pi_{\mathrm i})=e_t$; hence $\tilde U$ is unitary, and $\tilde U\tilde\Pi_{\mathrm i}=\tilde Q_0$.</p>
+<p><strong>Lemma B (the root carried by the element).</strong> For every $\tilde Q\in\mathbb{B}$ there exist a Hermitian root $\vec\Xi$, a unitary $\tilde U\in\mathrm{U}(\mathbb{B})$ and real numbers $r\ge s\ge0$ with</p>
+<p>$$
+\tilde Q=\tilde U\,(r e_t+s\vec\Xi).
+$$</p>
+<p><em>Proof.</em> By the polar form with the Hermitian factor on the right, $\tilde Q=\tilde Q_0\tilde H$ with $\tilde H=(\tilde Q^{*}\tilde Q)^{1/2}$ Hermitian positive semidefinite and $\tilde Q_0=\tilde Q\tilde H^{+}$ a partial isometry. This is the companion's polar form read on the other side: applied to $\tilde Q^{*}$ it gives $\tilde Q^{*}=\tilde H\tilde Q_0^{*}$ with the same $\tilde H$, and transposing back gives the displayed identity (<em>The Polar Decomposition of a Biquaternion</em>, §<em>The Isometry Factor</em>); the inverse $\tilde H^{+}$ is that of §<em>The Moore–Penrose Inverse of the Hermitian Factor</em>, and $\tilde Q_0^{*}\tilde Q_0=\tilde H^{+}\tilde H$ is the projection onto the image of $\tilde H$. Write the Hermitian factor in coordinates,</p>
+<p>$$
+\tilde H=h_0e_t+i\bigl(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z\bigr)=h_0e_t+i\vec h,
+\qquad h_0,h_x,h_y,h_z\in\mathbb{R}.
+$$</p>
+<p>Positive semidefiniteness is $h_0\ge\lvert\vec h\rvert$ (<em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>), and the spectral values of $\tilde H$ are $h_0\pm\lvert\vec h\rvert$. Put $r=h_0$ and $s=\lvert\vec h\rvert$. If $s>0$, put $\vec\Xi=i\vec h/s$; if $s=0$, put $\vec\Xi=i\vec e_z$. In both cases $\vec\Xi$ is a root and $\tilde H=r e_t+s\vec\Xi$, with $r\ge s\ge0$.</p>
+<p>It remains to replace the partial isometry $\tilde Q_0$ by a unitary without changing the product. Let $\tilde\Pi_{\mathrm i}=\tilde Q_0^{*}\tilde Q_0$, which is the projection onto the image of $\tilde H$. By the extension lemma there are $\tilde U\in\mathrm{U}(\mathbb{B})$ and $\tilde W\in\mathrm{U}(\mathbb{B})$ with $\tilde U=\tilde Q_0+\tilde W(e_t-\tilde\Pi_{\mathrm i})$ and $\tilde U\tilde\Pi_{\mathrm i}=\tilde Q_0$. Since $(e_t-\tilde\Pi_{\mathrm i})\tilde H=0$, one has</p>
+<p>$$
+\tilde U\tilde H=\tilde Q_0\tilde H+\tilde W(e_t-\tilde\Pi_{\mathrm i})\tilde H=\tilde Q_0\tilde H=\tilde Q.
+$$</p>
+<p>Hence $\tilde Q=\tilde U(r e_t+s\vec\Xi)$.</p>
+<p><strong>Lemma C (transport of the factorization).</strong> If the theorem holds for a Hermitian root $\vec\Xi$, then it holds for every Hermitian root $\vec\Xi'$.</p>
+<p><em>Proof.</em> Let $\tilde W\in\mathrm{U}(\mathbb{B})$ satisfy $\tilde W\vec\Xi\tilde W^{*}=\vec\Xi'$, by Lemma A, and let $\tilde Q=\tilde U(r e_t+s\vec\Xi)\tilde V^{*}$ be a factorization for $\vec\Xi$. Then</p>
+<p>$$
+\tilde Q=\tilde U\tilde W^{*}\,\bigl(r e_t+s\vec\Xi'\bigr)\,\bigl(\tilde V\tilde W^{*}\bigr)^{*},
+$$</p>
+<p>and $\tilde U\tilde W^{*}$ and $\tilde V\tilde W^{*}$ are unitary.</p>
+<p><strong>Conclusion.</strong> Let $\vec\Xi$ be the root fixed in the statement. Lemma B gives the factorization of $\tilde Q$ for the root that $\tilde Q$ carries; Lemma A supplies the unitary $\tilde W$ carrying that root to $\vec\Xi$; Lemma C transports the factorization to $\vec\Xi$. Hence the theorem holds for every root.</p>
+<p><strong>What the proof uses, and what it does not use.</strong> It uses the transitivity of $\mathrm{U}(\mathbb{B})$ on the roots, the polar form and the positivity of $\tilde Q^{*}\tilde Q$ for the base case, and the extension of a partial isometry to a unitary. It does not use a preferred root in the statement, and it does not use a matrix representation at any point.</p>
+<h2 id="uniqueness">Uniqueness</h2>
+<p><strong>Theorem (uniqueness).</strong> Let $\tilde Q=\tilde U(r e_t+s\vec\Xi)\tilde V^{*}$ with $r\ge s\ge0$, and let $\tilde Q=\tilde U'(r e_t+s\vec\Xi)\tilde V'^{*}$ be another factorization with the same root and the same pair. Put $\tilde A=\tilde U^{*}\tilde U'$ and $\tilde B=\tilde V^{*}\tilde V'$, so that $\tilde A(r e_t+s\vec\Xi)=(r e_t+s\vec\Xi)\tilde B$. Then:</p>
+<ul>
+<li>if $r>s>0$, there are real $\theta_+,\theta_-$ with $\tilde A=\tilde B=e^{i\theta_+}\tilde\Pi_++e^{i\theta_-}\tilde\Pi_-$; the two unitaries are unique up to the simultaneous right multiplication by a unitary commuting with the middle factor;</li>
+<li>if $r=s>0$, there are real $\theta,\varphi,\psi$ with
+$$
+\tilde A=e^{i\theta}\tilde\Pi_++e^{i\varphi}\tilde\Pi_-,\qquad
+\tilde B=e^{i\theta}\tilde\Pi_++e^{i\psi}\tilde\Pi_-;
+$$
+the phase of the image line is common and the phase of the kernel line is free on each side;</li>
+<li>if $s=0$ and $r>0$, the middle factor is the scalar $r e_t$ and $\tilde A=\tilde B$ is an arbitrary unitary; if $\tilde Q=0$ the middle factor vanishes and $\tilde A$ and $\tilde B$ are independent arbitrary unitaries.</li>
+</ul>
+<p><em>Proof.</em> Write the middle factor in the Peirce basis, $M=r e_t+s\vec\Xi=r_+\tilde\Pi_++r_-\tilde\Pi_-$ with $r_\pm=r\pm s$, and write $\tilde A$ and $\tilde B$ in the same basis, with Peirce coordinates $A_{st}$ and $B_{st}$. The identity $\tilde A M=M\tilde B$ reads, on the four Peirce components,</p>
+<p>$$
+A_{st}\,r_t=r_s\,B_{st},\qquad s,t\in\{+,-\}.
+$$</p>
+<p>If $s=0$ and $r>0$, then $r_+=r_-=r$ and the identity is $\tilde A=\tilde B$, with no further condition beyond unitarity; if $r=0$ the identity is void, and $\tilde A$ and $\tilde B$ are free.</p>
+<p>If $r>s>0$, then $M$ is invertible and the identity gives $\tilde A=M\tilde B M^{-1}$. Unitarity of $\tilde A$ and $\tilde B$ gives $\tilde B^{*}M^{2}\tilde B=M^{2}$, that is $\tilde B M^{2}=M^{2}\tilde B$. The Hermitian element $M^{2}$ has the two distinct spectral values $r_+^{2}$ and $r_-^{2}$, so the unitary $\tilde B$ commutes with its two spectral projections and is therefore diagonal in the Peirce basis; then the diagonal equations give $\tilde A=\tilde B$. A diagonal element $a\tilde\Pi_++b\tilde\Pi_-$ is unitary exactly when $\lvert a\rvert=\lvert b\rvert=1$, because $\tilde\Pi_\pm$ are Hermitian orthogonal idempotents.</p>
+<p>If $r=s>0$, then $r_+=2r$ and $r_-=0$. The equations with $(s,t)=(+,-)$ and $(-,+)$ give $B_{+-}=0$ and $A_{-+}=0$, so both elements have at most three Peirce components. A unitary with $A_{-+}=0$ is diagonal: writing $A=a\tilde\Pi_++b\tilde\Pi_-+c\vec\Upsilon_{+-}$, the product $\tilde A\tilde A^{*}$ carries the mixed terms $a\bar c\,\vec\Upsilon_{-+}$ and $c\bar b\,\vec\Upsilon_{+-}$, which must vanish, so $c=0$ because $\lvert a\rvert=\lvert b\rvert=1$; and likewise for $\tilde B$. Hence $\tilde A=\operatorname{diag}(A_{++},A_{--})$ and $\tilde B=\operatorname{diag}(B_{++},B_{--})$, the equation $(+,+)$ gives $A_{++}=B_{++}$, and unitarity gives $\lvert A_{++}\rvert=\lvert A_{--}\rvert=\lvert B_{--}\rvert=1$.</p>
+<p><strong>Corollary (the residual freedom preserves the middle factor).</strong> In each case of the theorem, $\tilde A M\tilde B^{*}=M$. Hence $\tilde U'(r e_t+s\vec\Xi)\tilde V'^{*}=\tilde U(r e_t+s\vec\Xi)\tilde V^{*}$ with the middle factor unchanged, and the residual freedom is a subgroup of $\mathrm{U}(\mathbb{B})\times\mathrm{U}(\mathbb{B})$ acting on the right of the pair: simultaneously in the generic case, and with the two kernel phases independent in the rank-one case. It is not the gauge of the Peirce basis: the gauge rescales the mixed elements of $\mathcal{B}(\vec\Xi)$ and leaves the unitaries alone, while the residual freedom acts on the unitaries and leaves the basis alone.</p>
+<h2 id="the-peirce-diagonal-reading">The Peirce-Diagonal Reading</h2>
+<p><strong>Proposition (the element becomes Peirce-diagonal).</strong> Let $\tilde Q=\tilde U(r e_t+s\vec\Xi)\tilde V^{*}$ and put</p>
+<p>$$
+\tilde\Pi_i^{\tilde U}=\tilde U\tilde\Pi_i\tilde U^{*},\qquad
+\tilde\Pi_j^{\tilde V}=\tilde V\tilde\Pi_j\tilde V^{*},\qquad i,j\in\{+,-\}.
+$$</p>
+<p>Then</p>
+<p>$$
+\tilde\Pi_i^{\tilde U}\,\tilde Q\,\tilde\Pi_j^{\tilde V}
+=\delta_{ij}\,r_i\,\tilde U\tilde\Pi_i\tilde V^{*},
+\qquad r_+=r+s,\quad r_-=r-s.
+$$</p>
+<p><em>Proof.</em> By the corner rule, $\tilde\Pi_i^{\tilde U}\tilde Q\tilde\Pi_j^{\tilde V}=\tilde U\tilde\Pi_i(r e_t+s\vec\Xi)\tilde\Pi_j\tilde V^{*}$. The middle factor acts on the idempotents by $\tilde\Pi_i(r e_t+s\vec\Xi)=r_i\tilde\Pi_i$, and $\tilde\Pi_i\tilde\Pi_j=\delta_{ij}\tilde\Pi_i$; the display follows.</p>
+<p><strong>Remark.</strong> The two rotated systems depend on the element, through $\tilde U$ and $\tilde V$, and on the chosen root. The coefficients $r_+$ and $r_-$ do not depend on either. The proposition is the precise sense in which the element is Peirce-diagonal: diagonal relative to the pair of rotated systems, not relative to the pair $\tilde\Pi_\pm$ of the root itself.</p>
+<h2 id="what-is-intrinsic-and-what-is-a-choice">What Is Intrinsic and What Is a Choice</h2>
+<p><strong>Proposition (invariance of the coefficients).</strong> Let $\vec\Xi$ and $\vec\Xi'$ be two Hermitian roots, and let $\tilde W\in\mathrm{U}(\mathbb{B})$ satisfy $\tilde W\vec\Xi\tilde W^{*}=\vec\Xi'$. If</p>
+<p>$$
+\tilde Q=\tilde U\,(r e_t+s\vec\Xi)\,\tilde V^{*},
+$$</p>
+<p>then</p>
+<p>$$
+\tilde Q=(\tilde U\tilde W^{*})\,(r e_t+s\vec\Xi')\,(\tilde V\tilde W^{*})^{*},
+$$</p>
+<p>with the same $r$ and $s$.</p>
+<p><em>Proof.</em> Since $r e_t+s\vec\Xi=\tilde W^{*}(r e_t+s\vec\Xi')\tilde W$, the identity is</p>
+<p>$$
+\tilde Q=\tilde U\tilde W^{*}(r e_t+s\vec\Xi')\tilde W\tilde V^{*},
+$$</p>
+<p>and $\tilde W\tilde V^{*}=(\tilde V\tilde W^{*})^{*}$.</p>
+<p><strong>Corollary (the numbers are invariants of the element).</strong> The numbers $r$, $s$, $r_+=r+s$ and $r_-=r-s$ are the same for every root. They are determined by $\tilde Q$ alone: $r_+$ and $r_-$ are its singular values, and $r=(r_++r_-)/2$, $s=(r_+-r_-)/2$. The unitary $\tilde W$ depends only on the two roots and not on the element, so the same $\tilde W$ serves every $\tilde Q$. The root, the Peirce basis, the gauge and the unitaries are a presentation; the coefficients are the invariant.</p>
+<p>The two columns below separate the two kinds of data.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Intrinsic to $\tilde Q$</th>
+<th>A choice of presentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The numbers $r\ge s\ge0$</td>
+<td>The root $\vec\Xi$</td>
+</tr>
+<tr>
+<td>The Peirce coefficients $r_+=r+s$, $r_-=r-s$, that is the singular values $\sigma_1,\sigma_2$</td>
+<td>The Peirce basis $\mathcal{B}(\vec\Xi)$</td>
+</tr>
+<tr>
+<td>The image line and the kernel line of $\tilde Q$, when $r>s>0$</td>
+<td>The gauge $\mu$ of $\mathcal{B}(\vec\Xi)$</td>
+</tr>
+<tr>
+<td></td>
+<td>The unitaries $\tilde U,\tilde V$, and the residual freedom between them</td>
+</tr>
+<tr>
+<td></td>
+<td>The matrix representation used as a check</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="worked-example">Worked Example</h2>
+<h3 id="the-element-and-its-singular-values">The Element and Its Singular Values</h3>
+<p>Take</p>
+<p>$$
+\tilde Q=\frac{1}{\sqrt2}(e_t+\vec e_x)\left(\frac32e_t+\frac12i\vec e_z\right)
+=\frac{3\sqrt2}{4}e_t+\frac{3\sqrt2}{4}\vec e_x-\frac{\sqrt2}{4}i\vec e_y+\frac{\sqrt2}{4}i\vec e_z .
+$$</p>
+<p>The factor $(e_t+\vec e_x)/\sqrt2$ is a unit quaternion, hence unitary, so</p>
+<p>$$
+\tilde Q^{*}\tilde Q=\left(\frac32e_t+\frac12i\vec e_z\right)^{2}
+=\frac52e_t+\frac32i\vec e_z .
+$$</p>
+<p>Its spectral values are $5/2\pm3/2$, that is $4$ and $1$. The singular values are therefore $2$ and $1$, and</p>
+<p>$$
+r=\frac{2+1}{2}=\frac32,\qquad s=\frac{2-1}{2}=\frac12,\qquad r_+=2,\quad r_-=1.
+$$</p>
+<h3 id="the-root-math361">The Root $i\vec e_z$</h3>
+<p>Take $\vec\Xi_0=i\vec e_z$. The idempotents and the standard mixed units are</p>
+<p>$$
+\tilde\Pi_\pm=\frac{e_t\pm i\vec e_z}{2},\qquad
+\vec\Upsilon_{+-}=\frac{i\vec e_x-\vec e_y}{2},\qquad
+\vec\Upsilon_{-+}=\frac{i\vec e_x+\vec e_y}{2},
+$$</p>
+<p>with $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+$ and $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_-$; this is the standard Peirce basis of the literature. The factorization is</p>
+<p>$$
+\tilde Q=\tilde U_0\left(\frac32e_t+\frac12i\vec e_z\right)\tilde V_0^{*},
+\qquad
+\tilde U_0=\frac{e_t+\vec e_x}{\sqrt2},\quad \tilde V_0=e_t,
+$$</p>
+<p>which is the definition of $\tilde Q$ above. The middle factor has Peirce coordinates $(2,0,0,1)$ in $\mathcal{B}(i\vec e_z)$.</p>
+<h3 id="the-root-math370">The Root $i\vec e_x$</h3>
+<p>Take $\vec\Xi_1=i\vec e_x$ and the unitary</p>
+<p>$$
+\tilde W=\frac{e_t+\vec e_y}{\sqrt2},
+$$</p>
+<p>so that $\tilde W\vec\Xi_0\tilde W^{*}=\vec\Xi_1$. The transported factorization is</p>
+<p>$$
+\tilde Q=\tilde U_1\left(\frac32e_t+\frac12i\vec e_x\right)\tilde V_1^{*},
+\qquad
+\tilde U_1=\tilde U_0\tilde W^{*}=\frac12\bigl(e_t+\vec e_x-\vec e_y-\vec e_z\bigr),
+\quad
+\tilde V_1=\tilde W^{*}=\frac{e_t-\vec e_y}{\sqrt2}.
+$$</p>
+<p>The Peirce data of $\vec\Xi_1$ are</p>
+<p>$$
+\tilde\Pi'_\pm=\frac{e_t\pm i\vec e_x}{2},\qquad
+\vec\Upsilon'_{+-}=-\frac{\vec e_y+i\vec e_z}{2},\qquad
+\vec\Upsilon'_{-+}=\frac{\vec e_y-i\vec e_z}{2},
+$$</p>
+<p>the mixed units being the $\tilde W$-conjugates of the standard ones. The middle factor has Peirce coordinates $(2,0,0,1)$ in $\mathcal{B}(i\vec e_x)$ as well, so the two roots give the same coefficients $r_+=2$ and $r_-=1$.</p>
+<h3 id="the-two-presentations-agree">The Two Presentations Agree</h3>
+<p>The two factorizations differ by $\tilde W$ exactly as the invariance proposition predicts: $\tilde U_1=\tilde U_0\tilde W^{*}$ and $\tilde V_1=\tilde V_0\tilde W^{*}$, and</p>
+<p>$$
+\tilde Q=\tilde U_1\left(\frac32e_t+\frac12i\vec e_x\right)\tilde V_1^{*}
+=\tilde U_0\left(\frac32e_t+\frac12i\vec e_z\right)\tilde V_0^{*}.
+$$</p>
+<p>The rotated idempotents of the second presentation are</p>
+<p>$$
+\tilde\Pi_+^{\tilde U_1}=\tilde U_1\tilde\Pi'_+\tilde U_1^{*}=\frac{e_t-i\vec e_y}{2},
+\qquad
+\tilde\Pi_-^{\tilde U_1}=\frac{e_t+i\vec e_y}{2},
+$$</p>
+<p>$$
+\tilde\Pi_+^{\tilde V_1}=\tilde V_1\tilde\Pi'_+\tilde V_1^{*}=\tilde\Pi_+,
+\qquad
+\tilde\Pi_-^{\tilde V_1}=\tilde\Pi_-.
+$$</p>
+<p>The Peirce-diagonal proposition then gives $\tilde\Pi_i^{\tilde U_1}\tilde Q\tilde\Pi_j^{\tilde V_1}=\delta_{ij}r_i\tilde U_1\tilde\Pi'_i\tilde V_1^{*}$, with $r_+=2$ and $r_-=1$. Relative to the unrotated pair $\tilde\Pi'_\pm$ the element is not diagonal; for instance</p>
+<p>$$
+\tilde\Pi'_+\tilde Q\tilde\Pi'_-=\frac{\sqrt2}{8}\bigl((1-i)\vec e_y+(1+i)\vec e_z\bigr)\ne0.
+$$</p>
+<p>This is the point of §<em>The Peirce-Diagonal Reading</em>: the idempotent systems must be rotated by the unitaries, and the coefficients are $2$ and $1$ in both presentations.</p>
+<h2 id="the-boundary-of-the-construction">The Boundary of the Construction</h2>
+<p>The Peirce decomposition and the factorization have different boundaries, and they must not be conflated.</p>
+<p><strong>The Peirce side has no boundary.</strong> A root always produces the idempotents $\tilde\Pi_\pm$, the four corners, the Peirce basis and the expansion of any element in it. The decomposition exists for every root and every element, and the basis is unique up to the gauge. Nothing degenerates.</p>
+<p><strong>The factorization always exists and its uniqueness degenerates.</strong> The scalars $r$ and $s$ are always defined, and the unitaries always exist, by the theorem. The ambiguity of the pair $(\tilde U,\tilde V)$ grows on two loci, and the two are different.</p>
+<ul>
+<li><strong>The scalar locus $s=0$, equivalently $r_+=r_-$.</strong> The middle factor is $r e_t$ and any unitary commutes with it. The pair is unique only up to the diagonal right action of $\mathrm{U}(\mathbb{B})$, $(\tilde U,\tilde V)\mapsto(\tilde U\tilde R,\tilde V\tilde R)$ with arbitrary unitary $\tilde R$. This is the case of two equal singular values.</li>
+<li><strong>The rank-one locus $r=s>0$, equivalently $r_-=0$.</strong> The middle factor is $2r\tilde\Pi_+$ and has one zero spectral value. The pair is unique only up to $\tilde U'=\tilde U(e^{i\theta}\tilde\Pi_++e^{i\varphi}\tilde\Pi_-)$ and $\tilde V'=\tilde V(e^{i\theta}\tilde\Pi_++e^{i\psi}\tilde\Pi_-)$ with independent real $\varphi$ and $\psi$: the phase of the image line is common, the phase of the kernel line is free on each side. This is the case of a vanishing second singular value.</li>
+<li><strong>The generic locus $r>s>0$.</strong> The pair is unique up to the simultaneous right multiplication by $e^{i\theta_+}\tilde\Pi_++e^{i\theta_-}\tilde\Pi_-$, a two-torus.</li>
+</ul>
+<p>At $\tilde Q=0$ one has $r=s=0$, the middle factor vanishes, and every pair of unitaries is allowed. The two loci are the boundary of the uniqueness of the factorization, not of the Peirce decomposition.</p>
+<h2 id="relation-to-the-eigenbasis">Relation to the Eigenbasis</h2>
+<p>The eigenbasis of a spectrally regular biquaternion is a different construction, and it is compared here without being merged with the special decomposition.</p>
+<p>The eigenbasis fixes the direction to the vector part of the element itself,</p>
+<p>$$
+\vec\Xi_{\mathrm{eig}}=-\frac{i\vec Q}{B},\qquad B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2},
+$$</p>
+<p>which is defined only on the spectral-regular locus $B^{2}\ne0$. The element is pure and satisfies $\vec\Xi_{\mathrm{eig}}^{2}=e_t$, but it need not be Hermitian; when it is not, it lies outside the class of roots fixed in this article. Its idempotents $\tilde\Pi_\pm=(e_t\pm\vec\Xi_{\mathrm{eig}})/2$ commute with $\tilde Q$, and the expansion</p>
+<p>$$
+\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-,\qquad \lambda_\pm=Q_t\pm iB,
+$$</p>
+<p>is diagonal with complex coefficients, with no unitaries. The special decomposition fixes no relation between the root and the element, requires no spectral condition, uses Hermitian roots and produces a factorization with two unitaries and real non-negative coefficients.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Eigenbasis</th>
+<th>Special decomposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direction</td>
+<td>$\vec\Xi_{\mathrm{eig}}=-i\vec Q/B$, depends on $\tilde Q$</td>
+<td>Any Hermitian root, independent of $\tilde Q$</td>
+</tr>
+<tr>
+<td>Existence</td>
+<td>$B^{2}\ne0$</td>
+<td>Always</td>
+</tr>
+<tr>
+<td>Unitaries</td>
+<td>$\tilde U=\tilde V=e_t$</td>
+<td>General $\tilde U,\tilde V$</td>
+</tr>
+<tr>
+<td>Middle factor</td>
+<td>$\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$</td>
+<td>$r e_t+s\vec\Xi$</td>
+</tr>
+<tr>
+<td>Coefficients</td>
+<td>$\lambda_\pm=Q_t\pm iB\in\mathbb{C}$</td>
+<td>$r\ge s\ge0$ real</td>
+</tr>
+<tr>
+<td>Peirce basis</td>
+<td>$\mathcal{B}(\vec\Xi_{\mathrm{eig}})$</td>
+<td>$\mathcal{B}(\vec\Xi)$ with an arbitrary Hermitian root</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two constructions meet on the Hermitian positive semidefinite elements with $B^{2}\ne0$. There the eigenbasis element $\vec\Xi_{\mathrm{eig}}$ is the negative of the root that the element carries, and its two idempotents are those of the special decomposition with the labels exchanged. With that root and with $\tilde U=\tilde V=e_t$ the two statements coincide, the coefficients being real and non-negative in both. Off that locus the eigenbasis keeps the complex eigenvalues and the special decomposition keeps the real singular values, and the two are not the same statement.</p>
+<h2 id="the-matrix-model-as-a-check">The Matrix Model as a Check</h2>
+<p>The $2\times2$ Pauli representation is used once, here, as a verification and not as a definition (<em>$M_2(\mathbb{C})$ Pauli Representation</em>):</p>
+<p>$$
+e_t\longmapsto I_2,\qquad
+\vec e_x\longmapsto-i\sigma_x,\qquad
+\vec e_y\longmapsto-i\sigma_y,\qquad
+\vec e_z\longmapsto-i\sigma_z,
+$$</p>
+<p>with the Pauli matrices $\sigma_x,\sigma_y,\sigma_z$. Under it the star becomes the conjugate transpose, so unitaries become unitary matrices and the theorem becomes a factorization $\mathsf M_2(\tilde Q)=U\,\mathsf M_2(r e_t+s\vec\Xi)\,V^{*}$ with $U,V\in\mathrm{U}(2)$.</p>
+<p>For the standard root $\vec\Xi_0=i\vec e_z$ one has $\mathsf M_2(\vec\Xi_0)=\sigma_z$, hence</p>
+<p>$$
+\mathsf M_2(r e_t+s\vec\Xi_0)=rI_2+s\sigma_z=\begin{pmatrix}r+s&0\\0&r-s\end{pmatrix},
+$$</p>
+<p>which is diagonal: the reference root reproduces the diagonal middle factor of the ordinary singular value decomposition.</p>
+<p>For the root $\vec\Xi_1=i\vec e_x$ one has $\mathsf M_2(\vec\Xi_1)=\sigma_x$, hence</p>
+<p>$$
+\mathsf M_2(r e_t+s\vec\Xi_1)=rI_2+s\sigma_x=\begin{pmatrix}r&s\\s&r\end{pmatrix},
+$$</p>
+<p>which is not diagonal in the Pauli frame. It is nonetheless Hermitian with spectral values $r+s$ and $r-s$: it is diagonal in the Peirce frame of $\vec\Xi_1$, not in the matrix frame of the representation. This is the warning of the article. The special decomposition is diagonal in the Peirce sense, not in the matrix sense; the matrix model confirms the coefficients and shows that only the reference root makes the middle factor matrix-diagonal.</p>
+<h2 id="summary">Summary</h2>
+<p>A root of $e_t$ is a pure Hermitian element $\vec\Xi$ with $\vec\Xi^{2}=e_t$; the roots are exactly $i\vec n$ with $\vec n$ a real unit vector. A root produces the idempotents $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$, the four Peirce lines, the Peirce basis $\mathcal{B}(\vec\Xi)$, unique up to the reciprocal gauge, and the plane $\mathbb{C}[\vec\Xi]=\mathbb{B}_{++}\oplus\mathbb{B}_{--}$.</p>
+<p>For every element and every root there are unitaries $\tilde U,\tilde V$ and real $r\ge s\ge0$ with $\tilde Q=\tilde U(r e_t+s\vec\Xi)\tilde V^{*}$. The middle factor is Peirce-diagonal with coefficients $r_+=r+s$ and $r_-=r-s$, and the element is Peirce-diagonal relative to the rotated idempotent systems $\tilde U\tilde\Pi_i\tilde U^{*}$, $\tilde V\tilde\Pi_j\tilde V^{*}$. The proof transports the base case from the root carried by the element to the chosen root. The uniqueness of the pair $(\tilde U,\tilde V)$ degenerates at $s=0$ and at $r=s$, and at neither point does the Peirce decomposition degenerate.</p>
+<p>The numbers $r_+$ and $r_-$ are the singular values of the element, and $r=(r_++r_-)/2$, $s=(r_+-r_-)/2$; all four are independent of the root. The root, the basis, the gauge and the unitaries are a choice of presentation. The decomposition is special because it selects the diagonal Peirce component of a chosen root, and the numbers in that component are invariants of the element, not of the root.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec\Xi$</td>
+<td>A Hermitian root of $e_t$: pure, $\vec\Xi^{2}=e_t$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$</td>
+<td>The two idempotents of the root</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$</td>
+<td>A Peirce corner, left index first</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_{+-},\vec\Upsilon_{-+}$</td>
+<td>The mixed units of a Peirce basis</td>
+</tr>
+<tr>
+<td>$\mathcal{B}(\vec\Xi)$</td>
+<td>The Peirce basis $(\tilde\Pi_+,\vec\Upsilon_{+-},\vec\Upsilon_{-+},\tilde\Pi_-)$</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>The gauge parameter, $\vec\Upsilon_{+-}\mapsto\mu\vec\Upsilon_{+-}$, $\vec\Upsilon_{-+}\mapsto\mu^{-1}\vec\Upsilon_{-+}$</td>
+</tr>
+<tr>
+<td>$Q_{st}$</td>
+<td>The Peirce coordinates of $\tilde Q$</td>
+</tr>
+<tr>
+<td>$r\ge s\ge0$</td>
+<td>The two real coefficients of the middle factor</td>
+</tr>
+<tr>
+<td>$r_+=r+s$, $r_-=r-s$</td>
+<td>The two Peirce coefficients</td>
+</tr>
+<tr>
+<td>$\sigma_1\ge\sigma_2$</td>
+<td>The singular values, $\sigma_1=r_+$, $\sigma_2=r_-$</td>
+</tr>
+<tr>
+<td>$\tilde U,\tilde V$</td>
+<td>The two unitaries of the factorization</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_i^{\tilde U},\tilde\Pi_j^{\tilde V}$</td>
+<td>The rotated idempotent systems</td>
+</tr>
+<tr>
+<td>$\vec\Xi_{\mathrm{eig}}=-i\vec Q/B$</td>
+<td>The element of the eigenbasis, defined for $B^{2}\ne0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">Peirce Decompositions of the Biquaternion Algebra</a>, for the four corners, the corner rule and the diagonal lines.</li>
+<li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</a>, for the existence of the mixed partner, the gauge and the torsor of bases.</li>
+<li><a href="the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the Hermitian factor and the partial isometry used in Lemma B.</li>
+<li><a href="the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ and its action.</li>
+<li><a href="the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a>, for the element-dependent root compared in §<em>Relation to the Eigenbasis</em>.</li>
+<li><a href="m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a>, for the matrix check of §<em>The Matrix Model as a Check</em>.</li>
+<li><a href="idempotents.html">Idempotents</a>, for the classification of the idempotents and the halving map from the roots of $e_t$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -138,16 +138,16 @@ R_b\psi=\psi b,\qquad
 L_aR_b\psi=a\psi b,\qquad
 L_aR_bL_cR_d=L_{ac}R_{db},
 $$</p>
-<p>where $e_t$ is the identity of the algebra, $L_{e_t}R_{e_t}$ the identity cell, and $(L_aR_b)^{-1}=L_{a^{-1}}R_{b^{-1}}$ the inverse. In this notation the derivative term of the Dirac–Hestenes equation is a left multiplication followed by a right multiplication, the mass is a right multiplication, and the one-sided chiral pair is a pure left multiplication. The cells are the article's working notation; the Gamma Formulation names one frame of them.</p>
+<p>where $e_t$ is the identity of the algebra, $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell, and $(L_aR_b)^{-1}=L_{a^{-1}}R_{b^{-1}}$ the inverse. In this notation the derivative term of the Dirac–Hestenes equation is a left multiplication followed by a right multiplication, the mass is a right multiplication, and the one-sided chiral pair is a pure left multiplication. The cells are the article's working notation; the Gamma Formulation names one frame of them.</p>
 <p><strong>The imaginary unit.</strong> Three objects square to $-1$ and are kept apart until the identifications are made: the central scalar imaginary $i$ of $\mathbb B$, with $i^2=-1$; the STA pseudoscalar $\omega$, with $\omega^2=-1$, which is central on the even subalgebra; and the fixed spin plane $\omega\sigma_3$, with $(\omega\sigma_3)^2=-1$, which is not central and is the phase generator of the Hestenes equation. The dictionary of <em>Conventions of the Matrix Models</em> fixes two of the three: the pseudoscalar is $\omega=-i$, and the spin plane is $\omega\sigma_3=-\vec e_z$ in the framework's units. A product of two factors of any of them is $-1$, so a cell product that carries two such factors is simplified before it is read, for example</p>
 <p>$$
-iL_{e_t}R_{\vec e_x}\cdot iL_{e_t}R_{\vec e_x}
-=i^2L_{e_t}R_{\vec e_x^2}
-=(-1)L_{e_t}R_{-e_t}
-=(-1)^2L_{e_t}R_{e_t}
-=L_{e_t}R_{e_t},
+iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\cdot iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}
+=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}
+=(-1)L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}
+=(-1)^2L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}
+=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$</p>
-<p>where $\vec e_x^2=-e_t$ and $L_{e_t}R_{-e_t}=-L_{e_t}R_{e_t}$. The same rule applies to every display below: a double $i$ is a sign, and a double $\omega$ is a sign.</p>
+<p>where $\vec e_x^2=-e_t$ and $L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. The same rule applies to every display below: a double $i$ is a sign, and a double $\omega$ is a sign.</p>
 <p><strong>The spinor decomposition.</strong> Hestenes decomposes a general Dirac spinor as</p>
 <p>$$
 \boxed{\;\psi=\bigl(\rho\,e^{\omega\beta}\bigr)^{1/2}R=\sqrt{\rho}\,e^{\omega\beta/2}R\;},
@@ -194,7 +194,7 @@ $$</p>
 <p>$$
 \psi\tilde\psi=\rho\,e^{\omega\beta}=\rho\cos\beta+\rho\sin\beta\,\omega,
 $$</p>
-<p>whose scalar part is $\rho\cos\beta$ and whose pseudoscalar part is $\rho\sin\beta$; the density is the modulus $\rho$, and $\beta$ is the Yvon–Takabayasi angle. The framework's current is the four-vector $\tilde J=ic\rho\,e_t+\vec J\in\mathbb M_-$ of the Maxwell article, and the minimal-coupling article records that it is a spinor-module object rather than a product in $\mathbb B$, since it needs the Clifford-odd $iR_{\vec e_x}$. The Dirac–Hestenes current $J=\psi v_0\tilde\psi$ is the same current written in the full algebra, where the odd fixed vector $v_0$ supplies exactly the ingredient the even algebra cannot hold.</p>
+<p>whose scalar part is $\rho\cos\beta$ and whose pseudoscalar part is $\rho\sin\beta$; the density is the modulus $\rho$, and $\beta$ is the Yvon–Takabayasi angle. The framework's current is the four-vector $\tilde J=ic\rho\,e_t+\vec J\in\mathbb M_-$ of the Maxwell article, and the minimal-coupling article records that it is a spinor-module object rather than a product in $\mathbb B$, since it needs the Clifford-odd $iR_{\vec e_x}^{\mathrm{pau}}$. The Dirac–Hestenes current $J=\psi v_0\tilde\psi$ is the same current written in the full algebra, where the odd fixed vector $v_0$ supplies exactly the ingredient the even algebra cannot hold.</p>
 <h2 id="the-two-equations-of-the-corpus">The Two Equations of the Corpus</h2>
 <p>The corpus carries two Dirac equations, and the Dirac–Hestenes equation must be placed against both. They are distinguished by which side the operator acts on and by what carries the chirality.</p>
 <h3 id="the-one-sided-equation">The one-sided equation</h3>
@@ -214,11 +214,11 @@ D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k},
 $$</p>
 <p>and the operator that collects the two sides is</p>
 <p>$$
-\mathcal NF=L_{i\partial/\partial t'+D_3}F-mi\,R_{\vec e_z}\overline F .
+\mathcal NF=L_{i\partial/\partial t'+D_3}F-mi\,R_{\vec e_z}^{\mathrm{pau}}\overline F .
 $$</p>
-<p>Here $t'$ is the physical time, related to the corpus's coordinate by $Q_t=ict'$ on the material sector. The left side is one-sided: the time derivative and the spatial gradient act from the left. The right side is the mass: the componentwise conjugation $\overline{\cdot}$ supplies the antilinear part, and the fixed direction $\vec e_z$ multiplies on the right. This is the <strong>two-sided</strong> equation of the corpus: two sides, one field, no chiral split. Its chirality is the volume cell $-L_{e_t}R_{\vec e_z}$, not a splitting of the field.</p>
+<p>Here $t'$ is the physical time, related to the corpus's coordinate by $Q_t=ict'$ on the material sector. The left side is one-sided: the time derivative and the spatial gradient act from the left. The right side is the mass: the componentwise conjugation $\overline{\cdot}$ supplies the antilinear part, and the fixed direction $\vec e_z$ multiplies on the right. This is the <strong>two-sided</strong> equation of the corpus: two sides, one field, no chiral split. Its chirality is the volume cell $-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, not a splitting of the field.</p>
 <h3 id="where-the-dirachestenes-equation-sits">Where the Dirac–Hestenes equation sits</h3>
-<p>The Dirac–Hestenes equation is also two-sided in the cell sense, but its right factors are the fixed spin plane $\omega\sigma_3$ in the derivative term and the fixed timelike vector $v_0$ in the mass term. The spin plane is $\omega\sigma_3=-\vec e_z$ in the framework's units, so the two equations multiply by the same spatial unit and only the slot differs: Kravchenko puts $\vec e_z$ in the mass term, where a conjugation accompanies it, and the Dirac–Hestenes equation puts it in the derivative term, where it plays the part of the imaginary unit of the matrix theory. The spin plane is the phase generator and not the chirality. The chirality is the pseudoscalar $\omega$, the grading of the even part, and the mass is what mixes the two graded halves because $v_0$ anticommutes with $\omega$. The two equations carry that chirality in one cell, since $\omega=-L_{e_t}R_{\vec e_z}$ is Kravchenko's volume cell, and only its role differs, a grading of the field in one and a right multiplier in the other. The mass itself is a right multiplication by an odd vector, not a conjugation together with a spatial direction. It is therefore the spacetime-algebra face of the <strong>chiral</strong> equation, not a rewriting of Kravchenko's. The word "two-sided" does not identify the two: it says only that a right action is present.</p>
+<p>The Dirac–Hestenes equation is also two-sided in the cell sense, but its right factors are the fixed spin plane $\omega\sigma_3$ in the derivative term and the fixed timelike vector $v_0$ in the mass term. The spin plane is $\omega\sigma_3=-\vec e_z$ in the framework's units, so the two equations multiply by the same spatial unit and only the slot differs: Kravchenko puts $\vec e_z$ in the mass term, where a conjugation accompanies it, and the Dirac–Hestenes equation puts it in the derivative term, where it plays the part of the imaginary unit of the matrix theory. The spin plane is the phase generator and not the chirality. The chirality is the pseudoscalar $\omega$, the grading of the even part, and the mass is what mixes the two graded halves because $v_0$ anticommutes with $\omega$. The two equations carry that chirality in one cell, since $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is Kravchenko's volume cell, and only its role differs, a grading of the field in one and a right multiplier in the other. The mass itself is a right multiplication by an odd vector, not a conjugation together with a spatial direction. It is therefore the spacetime-algebra face of the <strong>chiral</strong> equation, not a rewriting of Kravchenko's. The word "two-sided" does not identify the two: it says only that a right action is present.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -263,7 +263,7 @@ $$</p>
 <td>Chirality</td>
 <td>the central sign $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, the splitting $S\oplus S^{\mathrm c}$</td>
 <td>the pseudoscalar $\omega$, the central grading on the even part</td>
-<td>the volume cell $-L_{e_t}R_{\vec e_z}$</td>
+<td>the volume cell $-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 </tr>
 <tr>
 <td>Use</td>
@@ -291,13 +291,13 @@ $$</p>
 $$</p>
 <p>because $\partial_\mu E=e(\partial_\mu\alpha)\,\omega\sigma_3E$, because $E$ commutes with $\omega\sigma_3$, and because $(\omega\sigma_3)^2=-1$ turns the two factors of the spin plane into $-1$. The shifted potential produces $+e(\nabla\alpha)\psi E$, and the two cancel. The phase rotor commutes with $v_0$, because $\omega\sigma_3$ is a spatial bivector, so the mass term is invariant as well. A <strong>left</strong> multiplication by the phase does not work: it puts $\nabla\alpha$ between $\omega\sigma_3$ and $\psi$, where no sign removes it, and a direct computation leaves a residual of order one. This is the left-versus-right matter-representation question that the minimal-coupling article records, and the STA equation answers it on the other side from the corpus's one-sided pair: the derivative acts on the left, and the phase, the spin plane and the mass all act on the right.</p>
 <h3 id="the-discrete-symmetries">The discrete symmetries</h3>
-<p>The discrete operations are not all of one kind, and they are not the right multiplications of the equation. In the cell frame of the Gamma Formulation the four generator cells are $G_\mu$, with $G_0=iR_{\vec e_x}$ the timelike one, and the chirality cell is $\Gamma=-iL_{e_t}R_{\vec e_z}$. The corpus's operations on the spinor module are</p>
+<p>The discrete operations are not all of one kind, and they are not the right multiplications of the equation. In the cell frame of the Gamma Formulation the four generator cells are $G_\mu$, with $G_0=iR_{\vec e_x}^{\mathrm{pau}}$ the timelike one, and the chirality cell is $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The corpus's operations on the spinor module are</p>
 <p>$$
 P[\psi]=G_0\,\psi(t',-\vec x),
 \qquad
-C[\psi]=-L_{\vec e_y}R_{\vec e_y}\,\psi^{*},
+C[\psi]=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,\psi^{*},
 \qquad
-T[\psi]=-L_{\vec e_y}\,\psi^{*}(-t',\vec x),
+T[\psi]=-L_{\vec e_y}^{\mathrm{pau}}\,\psi^{*}(-t',\vec x),
 $$</p>
 <p>with $\vec x=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and $\psi^{*}$ the module conjugation, the antilinear map that carries one chiral half onto the other. Their characters and internal factors are collected in the table.</p>
 <div class="table-scroll"><table>
@@ -315,21 +315,21 @@ $$</p>
 <td>Parity $P$</td>
 <td>linear</td>
 <td>$G_0\,\psi(t',-\vec x)$</td>
-<td>$G_0=iR_{\vec e_x}$, odd</td>
+<td>$G_0=iR_{\vec e_x}^{\mathrm{pau}}$, odd</td>
 <td>flips</td>
 </tr>
 <tr>
 <td>Charge conjugation $C$</td>
 <td>antilinear</td>
-<td>$-L_{\vec e_y}R_{\vec e_y}\,\psi^{*}$</td>
-<td>$-L_{\vec e_y}R_{\vec e_y}$, odd</td>
+<td>$-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,\psi^{*}$</td>
+<td>$-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, odd</td>
 <td>flips</td>
 </tr>
 <tr>
 <td>Time reversal $T$</td>
 <td>antilinear</td>
-<td>$-L_{\vec e_y}\,\psi^{*}(-t',\vec x)$</td>
-<td>$-L_{\vec e_y}$, even</td>
+<td>$-L_{\vec e_y}^{\mathrm{pau}}\,\psi^{*}(-t',\vec x)$</td>
+<td>$-L_{\vec e_y}^{\mathrm{pau}}$, even</td>
 <td>preserves</td>
 </tr>
 </tbody>
@@ -345,7 +345,7 @@ $$</p>
 <h3 id="the-odd-vector-math208-and-the-right-action">The odd vector $v_0$ and the right action</h3>
 <p>The two places where the Dirac–Hestenes equation differs in shape from the framework's one-sided equation are the two places the companion articles flag as subtle.</p>
 <p>First, the equation is <strong>not</strong> a pure left-action equation. The terms $\psi\omega\sigma_3$ and $m\psi v_0$ multiply the spinor on the right by fixed algebra elements. The corpus's one-sided equation is written in terms of the gradient acting on the left, and the minimal-coupling article records the left-action and right-action constructions as two consistent covariant options whose choice is an unresolved matter representation. The Dirac–Hestenes equation is a standard formulation in which the right action is essential, and the fixed element in the mass term is $v_0$, which selects a rest frame. The gauge phase of the section above acts on the same side.</p>
-<p>Second, the mass term uses the <strong>odd</strong> vector $v_0$. The framework's mass is the linear chirality-off-diagonal pair of terms derived from the gradient and the conjugate gradient, and the minimal-coupling article notes that the conserved current requires an odd element that a pure biquaternion product does not supply. In the STA form the odd element is explicit and unavoidable: $m\psi v_0$ is odd because $v_0$ is odd, and the current $J=\psi v_0\tilde\psi$ carries the same $v_0$. In the cell frame that vector is the cell $iL_{e_t}R_{\vec e_x}$, and the cell $iR_{\vec e_x}$ is exactly the Clifford-odd factor that the Dirac adjoint of the minimal-coupling article carries. The framework's observation and the STA structure are the same statement in two languages.</p>
+<p>Second, the mass term uses the <strong>odd</strong> vector $v_0$. The framework's mass is the linear chirality-off-diagonal pair of terms derived from the gradient and the conjugate gradient, and the minimal-coupling article notes that the conserved current requires an odd element that a pure biquaternion product does not supply. In the STA form the odd element is explicit and unavoidable: $m\psi v_0$ is odd because $v_0$ is odd, and the current $J=\psi v_0\tilde\psi$ carries the same $v_0$. In the cell frame that vector is the cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, and the cell $iR_{\vec e_x}^{\mathrm{pau}}$ is exactly the Clifford-odd factor that the Dirac adjoint of the minimal-coupling article carries. The framework's observation and the STA structure are the same statement in two languages.</p>
 <p>The distinction from Kravchenko's equation is the direction of the mass and the slot of the direction. In the Dirac–Hestenes equation the mass multiplies by the timelike $v_0$, and the spatial $\vec e_z$ sits in the derivative term as the spin plane; in Kravchenko's the mass multiplies by that same $\vec e_z$ and carries a conjugation. The two are different representations of the same mass term, and the table of the preceding section separates them.</p>
 <h3 id="what-the-framework-does-not-gain">What the framework does not gain</h3>
 <p>The Dirac–Hestenes equation is an <strong>equivalent rewriting</strong> of the Dirac equation. It is real, matrix-free and geometric, and those are real advantages of exposition and interpretation; they are not new physics. In particular it neither resolves the framework's left-versus-right representation question nor supplies an empirical prediction. It does, however, tell the framework what a resolution of that question looks like in the standard formulation, and it identifies the pseudoscalar with the central imaginary unit, which is a clarifying rather than a predictive result.</p>
@@ -390,24 +390,24 @@ $$</p>
 <h2 id="the-gamma-formulation">The Gamma Formulation</h2>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb C)=M_4(\mathbb C)$, not a different algebra. They are single cells $L_aR_b$, and a general element of $M_4(\mathbb C)$ is a sum of at most four such cells. The four generator cells $G_\mu$ and the chirality cell are:</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad
-\gamma_1=iL_{e_x}R_{\vec e_y},\quad
-\gamma_2=iL_{e_y}R_{\vec e_y},\quad
-\gamma_3=iL_{e_z}R_{\vec e_y},\quad
-\gamma_5=-iL_{e_t}R_{\vec e_z}.
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1=iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{e_y}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
 <p>The article's frame is $v_\mu=\gamma_\mu$ and its pseudoscalar is $\omega=-i\gamma_5$. The cell $\gamma_5$ is the chirality cell $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The frame satisfies the Clifford relations and the chirality identities</p>
 <p>$$
-\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}L_{e_t}R_{e_t},
+\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
-\gamma_5^2=L_{e_t}R_{e_t},
+\gamma_5^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$</p>
 <p>and the volume product is</p>
 <p>$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=\omega=-L_{e_t}R_{\vec e_z}.
+\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$</p>
 <p>The factors of $i$ are reduced by $i^2=-1$ wherever they meet in a product.</p>
 <p>The dictionary is $\mathbb R$-linear, as <em>Conventions of the Matrix Models</em> states; the gammas are single cells, and their real span is the real Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb R)$.</p>
@@ -466,7 +466,7 @@ $$</p>
 </tr>
 <tr>
 <td>$v_0$</td>
-<td>Fixed timelike odd vector, the cell $iL_{e_t}R_{\vec e_x}$; mass and current</td>
+<td>Fixed timelike odd vector, the cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$; mass and current</td>
 </tr>
 <tr>
 <td>$J=\psi v_0\tilde\psi$</td>

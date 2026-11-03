@@ -129,11 +129,11 @@ $$</p>
 <p>The read-list article <em>Chiral Fermions in the Biquaternion Framework</em> establishes the following, and this agenda inherits it without change.</p>
 <p>The Dirac module is $\Delta = S\oplus\bar{S}$. The chirality operator is the cell</p>
 <p>$$
--iR_{\vec e_z}\psi=-iL_{e_t}R_{\vec e_z}\psi=-i\psi\vec e_z,
+-iR_{\vec e_z}^{\mathrm{pau}}\psi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\psi=-i\psi\vec e_z,
 \qquad
-(-iR_{\vec e_z})^{2}=I_4,
+(-iR_{\vec e_z}^{\mathrm{pau}})^{2}=I_4,
 $$</p>
-<p>and its representative on $\Delta$ is $\mathrm{diag}(-I_2,I_2)$. The projectors $P_L = \tfrac12(I_4+iR_{\vec e_z})$ and $P_R = \tfrac12(I_4-iR_{\vec e_z})$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $-iR_{\vec e_z}$ anticommutes with the generator cells and commutes with every even product. The Dirac mass bilinear $\bar\psi\psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L$, with $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$ the adjoint built on the time-like cell, is chirality-odd and vanishes on a state of definite chirality.</p>
+<p>and its representative on $\Delta$ is $\mathrm{diag}(-I_2,I_2)$. The projectors $P_L = \tfrac12(I_4+iR_{\vec e_z}^{\mathrm{pau}})$ and $P_R = \tfrac12(I_4-iR_{\vec e_z}^{\mathrm{pau}})$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $-iR_{\vec e_z}^{\mathrm{pau}}$ anticommutes with the generator cells and commutes with every even product. The Dirac mass bilinear $\bar\psi\psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L$, with $\bar\psi=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$ the adjoint built on the time-like cell, is chirality-odd and vanishes on a state of definite chirality.</p>
 <p>On the module, a chiral abelian gauge symmetry with independent charges is consistent: with</p>
 <p>$$
 \boxed{\;
@@ -147,9 +147,9 @@ $$</p>
 <p>the covariant derivative is gauge covariant for <strong>arbitrary</strong> $ϙ_L, ϙ_R$, and the mass bilinear is gauge invariant <strong>if and only if</strong> $ϙ_L = ϙ_R$. A genuinely chiral fermion has no gauge-invariant bare mass.</p>
 <p>Two structural facts of that article are the hinges of this agenda. The first is that the <strong>canonically available gauge group is vector-like</strong>: the framework's own abelian gauge group is the $*$-unitary part of the centre, which acts as a <em>scalar</em> on $M_2(\mathbb{C})$, so every component receives the same charge. Chirality requires a non-central action. The second is that the <strong>chiral charge operator is a module endomorphism, not an algebra element</strong>: expanding the projectors gives</p>
 <p>$$
-Ϙ = \tfrac{ϙ_L+ϙ_R}{2}I_4 + \tfrac{ϙ_R-ϙ_L}{2}\,(-iR_{\vec e_z}),
+Ϙ = \tfrac{ϙ_L+ϙ_R}{2}I_4 + \tfrac{ϙ_R-ϙ_L}{2}\,(-iR_{\vec e_z}^{\mathrm{pau}}),
 $$</p>
-<p>and $-iR_{\vec e_z}$ is the representative on $\Delta$ of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, the difference of the two central idempotents of the complexified algebra, of square $\chi^2=e_t$; it is not an element of $\mathbb{B}$. Equivalently $Ϙ$ is the right multiplication $R_b$ with</p>
+<p>and $-iR_{\vec e_z}^{\mathrm{pau}}$ is the representative on $\Delta$ of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, the difference of the two central idempotents of the complexified algebra, of square $\chi^2=e_t$; it is not an element of $\mathbb{B}$. Equivalently $Ϙ$ is the right multiplication $R_b$ with</p>
 <p>$$
 b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z\in\mathbb{M}_+,
 $$</p>
@@ -165,9 +165,9 @@ $$</p>
 <p>with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. Both members act on the algebra by left multiplication, and the mass couples the two chiral ideals off-diagonally: this is the one-sided statement.</p>
 <p>On the Dirac module the same pair is one two-sided cell equation. Writing $G_\mu$ for the generator cell of the coordinate $x_\mu=(t',x,y,z)$, with $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ and $g=\mathrm{diag}(+1,-1,-1,-1)$,</p>
 <p>$$
-G_0=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},
+G_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},
 \qquad
-G_k=iL_{e_k}R_{\vec e_y}\ \ (k=1,2,3),
+G_k=iL_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\ \ (k=1,2,3),
 \qquad
 \tau(t)=x,\quad \tau(k)=y,
 $$</p>
@@ -185,16 +185,16 @@ $$</p>
 =-\frac{\partial^{2}}{\partial t'^{2}}+\sum_k\frac{\partial^{2}}{\partial x_k^{2}}
 =\Box .
 $$</p>
-<p>The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial_\mu$; the second is the Lorentzian metric inside $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.</p>
+<p>The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial_\mu$; the second is the Lorentzian metric inside $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.</p>
 <p><strong>The axial current.</strong> The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field. What the mass breaks is the axial symmetry. The axial current is</p>
 <p>$$
-j_{5\mu}=\bar\psi\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\,(-iR_{\vec e_z})\,\psi
-=\bar\psi\,L_{e_\mu}R_{\vec e_z\vec e_{\tau(\mu)}}\,\psi,
+j_{5\mu}=\bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\,(-iR_{\vec e_z}^{\mathrm{pau}})\,\psi
+=\bar\psi\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{pau}}\,\psi,
 $$</p>
 <p>where the second form spends $i(-i)=+1$ and uses $R_aR_b=R_{ba}$. Its divergence is the classical identity</p>
 <p>$$
 \sum_\mu\frac{\partial j_{5\mu}}{\partial x_\mu}
-=2im\,\bar\psi\,(-iR_{\vec e_z})\,\psi,
+=2im\,\bar\psi\,(-iR_{\vec e_z}^{\mathrm{pau}})\,\psi,
 $$</p>
 <p>a plain sum, with the derivative taken in $x_\mu=(t',x,y,z)$; in the $ict'$ coordinate $Q_t$ the time slot of the current carries the factor $ic$ that the coordinate requires, so the sum is the same divergence. The cells already carry the metric, $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, so an extra $\varepsilon_\mu$ would apply it a second time. The right-hand side vanishes only at $m=0$.</p>
 <p><strong>The real structure.</strong> The algebra's anti-linear object is the <strong>real structure</strong> $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$, order-reversing with a sign, fixing the anti-Hermitian sector $\mathbb{M}_-$ and negating the Hermitian one $\mathbb{M}_+$; a coupling built on it pairs the field with its conjugate. Whether the framework intends such a <strong>Majorana-type</strong> conjugate pairing, or whether its real structure only supplies the real-form expression of an ordinary <strong>Dirac</strong> mass, is not settled in the read list, and for that separate coupling the two readings differ on whether a conserved fermion number exists at all. This is inherited as an open item, and it is the pivot on which the scalar-sector question turns: a Majorana-type coupling needs no scalar doublet, whereas the linear Dirac mass for a chiral fermion needs a compensating field carrying the charge difference $ϙ_L-ϙ_R$ (the negative of the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$ the mass bilinear acquires).</p>
@@ -270,7 +270,7 @@ $$</p>
 <td>A declaration of the intended assignment, or a reformulation removing the mismatch</td>
 </tr>
 <tr>
-<td>Chiral structure on $\Delta$: $-iR_{\vec e_z}$, $P_{L,R}$, selection rule $ϙ_L=ϙ_R$, vector-like centre</td>
+<td>Chiral structure on $\Delta$: $-iR_{\vec e_z}^{\mathrm{pau}}$, $P_{L,R}$, selection rule $ϙ_L=ϙ_R$, vector-like centre</td>
 <td>Established</td>
 <td>—</td>
 </tr>
@@ -359,19 +359,19 @@ $$</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{e_x}R_{\vec e_y},\quad \gamma_2=iL_{e_y}R_{\vec e_y},\quad \gamma_3=iL_{e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{e_y}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$</p>
 <p>Each dictionary entry carries one factor of $i$, and every product of two entries spends $i^2=-1$. The collapse that removes the factor is</p>
 <p>$$
-i\gamma_5=i\bigl(-iR_{\vec e_z}\bigr)=R_{\vec e_z},
+i\gamma_5=i\bigl(-iR_{\vec e_z}^{\mathrm{pau}}\bigr)=R_{\vec e_z}^{\mathrm{pau}},
 \qquad
-i\gamma_\mu=i\bigl(iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\bigr)=-L_{e_\mu}R_{\vec e_{\tau(\mu)}}\quad(\mu=0,1,2,3),
+i\gamma_\mu=i\bigl(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\bigr)=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\quad(\mu=0,1,2,3),
 $$</p>
 <p>with $\tau(t)=x$ and $\tau(k)=y$, so no residual phase is carried through a product. The volume cell is the product of the four generators,</p>
 <p>$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}R_{\vec e_z}=-i\gamma_5,
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-i\gamma_5,
 $$</p>
-<p>the second equality being $\gamma_5=-iR_{\vec e_z}$ read once.</p>
+<p>the second equality being $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ read once.</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
@@ -481,19 +481,19 @@ The four contraction sums — $\sum_\mu\gamma_\mu\gamma_\mu$, $\sum_\mu\gamma_\m
 <td>Left and right multiplication cells; the notation for operators on $\Delta$</td>
 </tr>
 <tr>
-<td>$-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, $P_L=\tfrac12(I_4+iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$</td>
+<td>$-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $P_L=\tfrac12(I_4+iR_{\vec e_z}^{\mathrm{pau}})$, $P_R=\tfrac12(I_4-iR_{\vec e_z}^{\mathrm{pau}})$</td>
 <td>Chirality cell and projectors</td>
 </tr>
 <tr>
-<td>$G_0=iR_{\vec e_x}$, $G_k=iL_{e_k}R_{\vec e_y}$, $\mathbb{D}=iG_\mu\partial/\partial x_\mu$</td>
+<td>$G_0=iR_{\vec e_x}^{\mathrm{pau}}$, $G_k=iL_{e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $\mathbb{D}=iG_\mu\partial/\partial x_\mu$</td>
 <td>Generator cells and the cell Dirac operator; $(\mathbb{D}-m)\psi=0$ is the module form of the chiral pair</td>
 </tr>
 <tr>
-<td>$j_{5\mu}=\bar\psi L_{e_\mu}R_{\vec e_z\vec e_{\tau(\mu)}}\psi$, $\tau(t)=x$, $\tau(k)=y$</td>
+<td>$j_{5\mu}=\bar\psi L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{pau}}\psi$, $\tau(t)=x$, $\tau(k)=y$</td>
 <td>Axial current; its divergence is a plain sum</td>
 </tr>
 <tr>
-<td>$\bar\psi=\psi^{\dagger}iR_{\vec e_x}$, $\bar\psi\psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R=R_b$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$, selection rule $ϙ_L=ϙ_R$</td>
+<td>$\bar\psi=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$, $\bar\psi\psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R=R_b$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$, selection rule $ϙ_L=ϙ_R$</td>
 <td>Dirac adjoint, chirality-odd mass bilinear, chiral charge operator as a right multiplication</td>
 </tr>
 <tr>

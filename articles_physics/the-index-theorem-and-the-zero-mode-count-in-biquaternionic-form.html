@@ -95,15 +95,15 @@ $$</p>
 <p><strong>Frame.</strong> Displays are read in the $\mathbb{B}$ frame: the four coordinates $Q_\mu$ are complex, and the Clifford metric is $g_{\mu\nu}=\delta_{\mu\nu}$, the positive-definite one. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.</p>
 <p><strong>The four frame cells.</strong> Write</p>
 <p>$$
-G_t:=iL_{e_t}R_{\vec e_x},\qquad
-G_x:=-L_{\vec e_x}R_{\vec e_y},\qquad
-G_y:=-L_{\vec e_y}R_{\vec e_y},\qquad
-G_z:=-L_{\vec e_z}R_{\vec e_y}.
+G_t:=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+G_x:=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+G_y:=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+G_z:=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
 $$</p>
 <p>On a field $\psi$ they act as $\psi\mapsto G_\mu\psi$: the time cell multiplies on the right by $i\,\vec e_x$, and each spatial cell multiplies on the left by $-\vec e_k$ and on the right by $\vec e_y$. Their squares and anticommutators are</p>
 <p>$$
-G_\mu^2=L_{e_t}R_{e_t},\qquad
-\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}R_{e_t},
+G_\mu^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$</p>
 <p>the first from $i^2=-1$ together with $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, the second from $\vec e_j\vec e_k+\vec e_k\vec e_j=-2\delta_{jk}e_t$.</p>
 <p><strong>The operator.</strong> The twisted Dirac operator in the representation $R$ is</p>
@@ -116,7 +116,7 @@ $$</p>
 [D_\mu,D_\nu]=i\kappa\,F_{\mu\nu},\qquad
 F_{\mu\nu}=\frac{\partial\mathcal A_\nu}{\partial Q_\mu}-\frac{\partial\mathcal A_\mu}{\partial Q_\nu}+i\kappa[\mathcal A_\mu,\mathcal A_\nu].
 $$</p>
-<p>The principal symbol at a covector $\xi$ is $\sum_\mu G_\mu\xi_\mu$, whose square is $\lvert\xi\rvert^2L_{e_t}R_{e_t}$; it is invertible for $\xi\neq0$, so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. Its square is</p>
+<p>The principal symbol at a covector $\xi$ is $\sum_\mu G_\mu\xi_\mu$, whose square is $\lvert\xi\rvert^2L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$; it is invertible for $\xi\neq0$, so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. Its square is</p>
 <p>$$
 \mathcal D_R^2=\sum_\mu D_\mu^2+\frac{i\kappa}{2}\sum_{\mu,\nu}G_\mu G_\nu F_{\mu\nu},
 $$</p>
@@ -129,11 +129,11 @@ $$</p>
 <p>The algebra element $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ satisfies $\tilde\nabla\tilde\nabla^{\natural}=\Box$ as well; the frame cells are chosen so that the operator has the same square, and the operator is the square root of the framework's d'Alembertian.</p>
 <p><strong>The chirality.</strong> The grading is the cell</p>
 <p>$$
-\chi:=-iL_{e_t}R_{\vec e_z},
+\chi:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$</p>
 <p>acting as $\psi\mapsto-i\psi\vec e_z$. The two signs in its square cancel — $i^2=-1$ and $\vec e_z^2=-e_t$ — and it is odd for the operator:</p>
 <p>$$
-\chi^2=L_{e_t}R_{e_t},\qquad
+\chi^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
 \{\chi,G_\mu\}=0,\qquad
 [\chi,D_\mu]=0,\qquad
 \chi\,\mathcal D_R=-\mathcal D_R\,\chi .
@@ -273,25 +273,25 @@ $$</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.</p>
 <p>In the $\mathbb{M}_-$ frame the four frame cells are</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad
-\gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad
-\gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad
-\gamma_3=iL_{\vec e_z}R_{\vec e_y},
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$</p>
-<p>with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}R_{e_t}$ and $g=\mathrm{diag}(1,-1,-1,-1)$. All four carry the same factor $i$, so the Lorentzian signs come from $i^2=-1$ together with $\vec e_k^2=-e_t$ alone. In the $\mathbb{B}$ frame, whose Clifford metric is $\delta_{\mu\nu}$, the four are</p>
+<p>with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $g=\mathrm{diag}(1,-1,-1,-1)$. All four carry the same factor $i$, so the Lorentzian signs come from $i^2=-1$ together with $\vec e_k^2=-e_t$ alone. In the $\mathbb{B}$ frame, whose Clifford metric is $\delta_{\mu\nu}$, the four are</p>
 <p>$$
-\gamma_t[\mathbb{B}]=iL_{e_t}R_{\vec e_x},\quad
-\gamma_x[\mathbb{B}]=-L_{\vec e_x}R_{\vec e_y},\quad
-\gamma_y[\mathbb{B}]=-L_{\vec e_y}R_{\vec e_y},\quad
-\gamma_z[\mathbb{B}]=-L_{\vec e_z}R_{\vec e_y},
+\gamma_t[\mathbb{B}]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_x[\mathbb{B}]=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_y[\mathbb{B}]=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_z[\mathbb{B}]=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$</p>
 <p>and $\gamma_k[\mathbb{B}]=i\gamma_k[\mathbb{M}_-]$ for the three spatial directions. These four are the cells written $G_\mu$ in the body of the article.</p>
-<p>The fifth is fixed by the four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, so it is not a fifth direction. In the $\mathbb{M}_-$ frame it reads $\gamma_5[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}$ and squares to $+L_{e_t}R_{e_t}$; in the $\mathbb{B}$ frame, $\gamma_5[\mathbb{B}]=-L_{e_t}R_{\vec e_z}$, and it squares to $-L_{e_t}R_{e_t}$. The grading used in the body is</p>
+<p>The fifth is fixed by the four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, so it is not a fifth direction. In the $\mathbb{M}_-$ frame it reads $\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ and squares to $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$; in the $\mathbb{B}$ frame, $\gamma_5[\mathbb{B}]=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, and it squares to $-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. The grading used in the body is</p>
 <p>$$
-\chi=i\gamma_5[\mathbb{B}]=\gamma_5[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z},
+\chi=i\gamma_5[\mathbb{B}]=\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$</p>
-<p>which squares to $+L_{e_t}R_{e_t}$ and anticommutes with the four cells of either frame.</p>
-<p>A single product is a pure tensor: writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products are exactly the elements with $\operatorname{rank}c(M)\le1$, a seven-dimensional cone, and a general element is a sum of at most four of them, with $\ell(M)=\operatorname{rank}c(M)$. Every sign in the products comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for one example, $\gamma_0\gamma_1=i^2L_{e_t\vec e_x}R_{\vec e_y\vec e_x}=-L_{\vec e_x}R_{\vec e_y\vec e_x}$, where the minus sign is the square of the imaginary unit and the ordering of the right factors is the reverse of the cells'.</p>
+<p>which squares to $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and anticommutes with the four cells of either frame.</p>
+<p>A single product is a pure tensor: writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products are exactly the elements with $\operatorname{rank}c(M)\le1$, a seven-dimensional cone, and a general element is a sum of at most four of them, with $\ell(M)=\operatorname{rank}c(M)$. Every sign in the products comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for one example, $\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$, where the minus sign is the square of the imaginary unit and the ordering of the right factors is the reverse of the cells'.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented on the Dirac module by $\gamma_5[\mathbb{M}_-]$, which is the cell $\chi$ above.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <h2 id="summary">Summary</h2>
@@ -347,8 +347,8 @@ $$</p>
 <td>Two-sided cell; $L_aR_bL_cR_d=L_{ac}R_{db}$</td>
 </tr>
 <tr>
-<td>$G_t=iL_{e_t}R_{\vec e_x}$, $G_k=-L_{\vec e_k}R_{\vec e_y}$</td>
-<td>The four frame cells; $G_\mu^2=L_{e_t}R_{e_t}$, $\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}R_{e_t}$</td>
+<td>$G_t=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $G_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
+<td>The four frame cells; $G_\mu^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 </tr>
 <tr>
 <td>$\mathcal D_R=\sum_\mu G_\mu D_\mu$</td>
@@ -359,8 +359,8 @@ $$</p>
 <td>Covariant derivative; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$</td>
 </tr>
 <tr>
-<td>$\chi=-iL_{e_t}R_{\vec e_z}$</td>
-<td>Chirality; $\psi\mapsto-i\psi\vec e_z$, $\chi^2=L_{e_t}R_{e_t}$</td>
+<td>$\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
+<td>Chirality; $\psi\mapsto-i\psi\vec e_z$, $\chi^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 </tr>
 <tr>
 <td>$n_\pm$</td>

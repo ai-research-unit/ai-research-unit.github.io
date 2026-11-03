@@ -103,32 +103,32 @@ $$</p>
 \sum_{r=1}^{2}\Big[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
 +b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$</p>
-<p>with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$. Its adjoint is $\bar\psi^{\mathrm{fop}}=\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}$: the Hermitian conjugate, then the timelike cell of the reference frame.</p>
+<p>with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$. Its adjoint is $\bar\psi^{\mathrm{fop}}=\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{pau}}$: the Hermitian conjugate, then the timelike cell of the reference frame.</p>
 <p>Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $\nu(t)=x$, $\nu(k)=y$ for the cells of the reference frame. The <strong>momentum cell</strong> is the signed sum of the frame cells contracted with the four-momentum. The sign vector of the frame is $(+,-,-,-)$, so the energy takes the timelike cell with a plus and each momentum component a spatial cell with a minus, and the sum is named rather than left to a repeated index:</p>
 <p>$$
-\slashed p\;:=\;iL_{e_t}R_{\vec e_x}p_0-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}p_k
-\;=\;iR_{\vec e_x}p_0-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}p_k ,
+\slashed p\;:=\;iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}p_0-\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k
+\;=\;iR_{\vec e_x}^{\mathrm{pau}}p_0-\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k ,
 $$</p>
-<p>the last step because $L_{e_t}$ is the identity. The two halves act on different sides — the energy from the right through $\vec e_x$, the momentum from the left through $\vec e_k$ together with a right multiplication by $\vec e_y$ — and that asymmetry is the reference frame's, not a slip of notation: it is what makes the cell square to the Lorentz square of the momentum. The four squares do <em>not</em> share a sign. The energy cell squares to $+1$, because two minus signs meet: $i^2=-1$ from the central unit and $\vec e_x^2=-\vec e_t$ from the quaternion,</p>
+<p>the last step because $L_{e_t}^{\mathrm{pau}}$ is the identity. The two halves act on different sides — the energy from the right through $\vec e_x$, the momentum from the left through $\vec e_k$ together with a right multiplication by $\vec e_y$ — and that asymmetry is the reference frame's, not a slip of notation: it is what makes the cell square to the Lorentz square of the momentum. The four squares do <em>not</em> share a sign. The energy cell squares to $+1$, because two minus signs meet: $i^2=-1$ from the central unit and $\vec e_x^2=-\vec e_t$ from the quaternion,</p>
 <p>$$
-(iR_{\vec e_x}p_0)^2=i^2p_0^2\,R_{\vec e_x^2}=(-1)(-1)\,p_0^2\,\mathbf{1}=+p_0^2\,\mathbf{1},
+(iR_{\vec e_x}^{\mathrm{pau}}p_0)^2=i^2p_0^2\,R_{\vec e_x^2}^{\mathrm{pau}}=(-1)(-1)\,p_0^2\,\mathbf{1}=+p_0^2\,\mathbf{1},
 $$</p>
 <p>while each spatial cell squares to $-1$, because the same $i^2$ is now the only sign left, $\vec e_k^2$ and $\vec e_y^2$ cancelling one another,</p>
 <p>$$
-(iL_{\vec e_k}R_{\vec e_y}p_k)^2=i^2p_k^2\,L_{\vec e_k^2}R_{\vec e_y^2}=(-1)(+1)\,p_k^2\,\mathbf{1}=-p_k^2\,\mathbf{1}.
+(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k)^2=i^2p_k^2\,L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)(+1)\,p_k^2\,\mathbf{1}=-p_k^2\,\mathbf{1}.
 $$</p>
 <p>The cross terms vanish because</p>
 <p>$$
-\{iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y}\}=-L_{\vec e_k}R_{\vec e_y\vec e_x+\vec e_x\vec e_y}=0,
+\{iR_{\vec e_x}^{\mathrm{pau}},iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\}=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y\vec e_x+\vec e_x\vec e_y}^{\mathrm{pau}}=0,
 $$</p>
-<p>the two factors of $i$ multiplying to $-1$ and the quaternion relation $\vec e_y\vec e_x=-\vec e_x\vec e_y$ killing what is left; two distinct spatial cells cancel the same way on the left, $\{iL_{\vec e_k}R_{\vec e_y},iL_{\vec e_l}R_{\vec e_y}\}=-L_{\vec e_k\vec e_l+\vec e_l\vec e_k}R_{\vec e_y^2}=0$ for $k\ne l$. Hence</p>
+<p>the two factors of $i$ multiplying to $-1$ and the quaternion relation $\vec e_y\vec e_x=-\vec e_x\vec e_y$ killing what is left; two distinct spatial cells cancel the same way on the left, $\{iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},iL_{\vec e_l}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\}=-L_{\vec e_k\vec e_l+\vec e_l\vec e_k}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=0$ for $k\ne l$. Hence</p>
 <p>$$
 (\slashed p)^2=p^2\,\mathbf{1},\qquad p^2=p_0^2-\vec p^2 .
 $$</p>
 <p>The general statement behind the signs is the frame-cell anticommutator</p>
 <p>$$
-\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}\mathbf{1},
-\qquad g=\mathrm{diag}(+1,-1,-1,-1),\qquad \mathbf{1}=L_{e_t}R_{e_t},
+\{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\}=2g_{\mu\nu}\mathbf{1},
+\qquad g=\mathrm{diag}(+1,-1,-1,-1),\qquad \mathbf{1}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$</p>
 <p>with $\mathbf{1}$ the identity cell. The body is written in these cells; section <em>The Gamma Formulation</em> gives their standard names.</p>
 <p>The mode operators obey</p>
@@ -196,7 +196,7 @@ $$</p>
 \mathrm{Res}_{p_0=-E_{\vec p}}\frac{\slashed p+m}{p_0^2-E_{\vec p}^2}
 =\frac{\slashed p_-+m}{-2E_{\vec p}},
 $$</p>
-<p>with $\slashed p_\pm=iR_{\vec e_x}(\pm E_{\vec p})-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k$.</p>
+<p>with $\slashed p_\pm=iR_{\vec e_x}^{\mathrm{pau}}(\pm E_{\vec p})-\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k$.</p>
 <p>The contour contributes $-2\pi i$ when it closes below and $+2\pi i$ when it closes above. With the residues above and the overall factor $i$ of $S_F$, the two cases are</p>
 <p>$$
 \Delta t>0:\quad i\,(-2\pi i)\,\frac{\slashed p_++m}{2E_{\vec p}}
@@ -213,7 +213,7 @@ $$</p>
 $$</p>
 <p>Now flip the integration variable, $\vec p\to-\vec p$: the measure and $E_{\vec p}$ are unchanged, and the spatial phase reverses. The cell is linear in the four-momentum, so flipping all four components flips its sign,</p>
 <p>$$
-\slashed p_-(-\vec p)=iR_{\vec e_x}(-E_{\vec p})-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}(-p_k)=-\slashed p_+(\vec p),
+\slashed p_-(-\vec p)=iR_{\vec e_x}^{\mathrm{pau}}(-E_{\vec p})-\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}(-p_k)=-\slashed p_+(\vec p),
 $$</p>
 <p>and the numerator of the flipped expression becomes</p>
 <p>$$
@@ -342,7 +342,7 @@ $$</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
@@ -355,7 +355,7 @@ $$</p>
 <p>$$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathbf{1},
 $$</p>
-<p>which is the frame-cell anticommutator of the body: $\gamma_\mu$ <em>is</em> the cell $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, so this is the same statement, given here in its named form. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.</p>
+<p>which is the frame-cell anticommutator of the body: $\gamma_\mu$ <em>is</em> the cell $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, so this is the same statement, given here in its named form. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.</p>
 <h2 id="summary">Summary</h2>
 <p>The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point function</p>
 <p>$$
@@ -364,7 +364,7 @@ $$</p>
 <p>Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:</p>
 <p>$$
 S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{\slashed p+m}{p^2-m^2+i\epsilon},
-\qquad \slashed p=iR_{\vec e_x}p_0-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}p_k .
+\qquad \slashed p=iR_{\vec e_x}^{\mathrm{pau}}p_0-\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k .
 $$</p>
 <p>The $p_0$ integral has poles at $p_0=\pm\big(E_{\vec p}-i\epsilon/2E_{\vec p}\big)$: the positive pole below the real axis and the negative pole above it. Closing below for $x_0-y_0>0$ and above for $x_0-y_0<0$ gives the two branches with the same positive weight $1/(2E_{\vec p})$, the sign of the half-plane cancelling the sign inside the residue and the $2\pi$ cancelling the measure; the fermionic relative minus is carried by the numerator: after $\vec p\to-\vec p$ the negative-frequency numerator obeys $\slashed p_-(-\vec p)+m=-(\slashed p_+(\vec p)-m)$, which is the two-point form of the anticommutation.</p>
 <p>Writing the four-momentum biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, the propagator amplitude becomes</p>
@@ -406,19 +406,19 @@ $$</p>
 <td>Left and right multiplication, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_bL_cR_d=L_{ac}R_{db}$</td>
 </tr>
 <tr>
-<td>$\mathbf{1}=L_{e_t}R_{e_t}$</td>
+<td>$\mathbf{1}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 <td>Identity cell</td>
 </tr>
 <tr>
-<td>$iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$</td>
+<td>$iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$</td>
 <td>Frame cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$</td>
 </tr>
 <tr>
 <td>$g=\mathrm{diag}(+1,-1,-1,-1)$</td>
-<td>Clifford metric of the cells, $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}\mathbf{1}$</td>
+<td>Clifford metric of the cells, $\{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\}=2g_{\mu\nu}\mathbf{1}$</td>
 </tr>
 <tr>
-<td>$\slashed p=iR_{\vec e_x}p_0-\sum_k iL_{\vec e_k}R_{\vec e_y}p_k$</td>
+<td>$\slashed p=iR_{\vec e_x}^{\mathrm{pau}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k$</td>
 <td>Momentum cell, $(\slashed p)^2=p^2\mathbf{1}$</td>
 </tr>
 <tr>
@@ -442,7 +442,7 @@ $$</p>
 <td>Biquaternion Dirac field on $\Delta=S\oplus S^{\mathrm c}$ and its anti-Hermitian conjugate</td>
 </tr>
 <tr>
-<td>$\psi$, $\bar\psi=\psi^\dagger iR_{\vec e_x}$</td>
+<td>$\psi$, $\bar\psi=\psi^\dagger iR_{\vec e_x}^{\mathrm{pau}}$</td>
 <td>Spinor-module representative and its adjoint</td>
 </tr>
 <tr>
