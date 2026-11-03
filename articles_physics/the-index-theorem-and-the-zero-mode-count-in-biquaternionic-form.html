@@ -95,15 +95,15 @@ $$</p>
 <p><strong>Frame.</strong> Displays are read in the $\mathbb{B}$ frame: the four coordinates $Q_\mu$ are complex, and the Clifford metric is $g_{\mu\nu}=\delta_{\mu\nu}$, the positive-definite one. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.</p>
 <p><strong>The four frame cells.</strong> Write</p>
 <p>$$
-G_t:=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-G_x:=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-G_y:=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-G_z:=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
+G_t:=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+G_x:=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+G_y:=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+G_z:=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
 $$</p>
 <p>On a field $\psi$ they act as $\psi\mapsto G_\mu\psi$: the time cell multiplies on the right by $i\,\vec e_x$, and each spatial cell multiplies on the left by $-\vec e_k$ and on the right by $\vec e_y$. Their squares and anticommutators are</p>
 <p>$$
-G_\mu^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
-\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+G_\mu^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
+\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$</p>
 <p>the first from $i^2=-1$ together with $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, the second from $\vec e_j\vec e_k+\vec e_k\vec e_j=-2\delta_{jk}e_t$.</p>
 <p><strong>The operator.</strong> The twisted Dirac operator in the representation $R$ is</p>
@@ -116,7 +116,7 @@ $$</p>
 [D_\mu,D_\nu]=i\kappa\,F_{\mu\nu},\qquad
 F_{\mu\nu}=\frac{\partial\mathcal A_\nu}{\partial Q_\mu}-\frac{\partial\mathcal A_\mu}{\partial Q_\nu}+i\kappa[\mathcal A_\mu,\mathcal A_\nu].
 $$</p>
-<p>The principal symbol at a covector $\xi$ is $\sum_\mu G_\mu\xi_\mu$, whose square is $\lvert\xi\rvert^2L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$; it is invertible for $\xi\neq0$, so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. Its square is</p>
+<p>The principal symbol at a covector $\xi$ is $\sum_\mu G_\mu\xi_\mu$, whose square is $\lvert\xi\rvert^2L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$; it is invertible for $\xi\neq0$, so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. Its square is</p>
 <p>$$
 \mathcal D_R^2=\sum_\mu D_\mu^2+\frac{i\kappa}{2}\sum_{\mu,\nu}G_\mu G_\nu F_{\mu\nu},
 $$</p>
@@ -129,11 +129,11 @@ $$</p>
 <p>The algebra element $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ satisfies $\tilde\nabla\tilde\nabla^{\natural}=\Box$ as well; the frame cells are chosen so that the operator has the same square, and the operator is the square root of the framework's d'Alembertian.</p>
 <p><strong>The chirality.</strong> The grading is the cell</p>
 <p>$$
-\chi:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\chi:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$</p>
 <p>acting as $\psi\mapsto-i\psi\vec e_z$. The two signs in its square cancel — $i^2=-1$ and $\vec e_z^2=-e_t$ — and it is odd for the operator:</p>
 <p>$$
-\chi^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},\qquad
+\chi^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
 \{\chi,G_\mu\}=0,\qquad
 [\chi,D_\mu]=0,\qquad
 \chi\,\mathcal D_R=-\mathcal D_R\,\chi .
@@ -294,6 +294,7 @@ $$</p>
 <p>A single product is a pure tensor: writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products are exactly the elements with $\operatorname{rank}c(M)\le1$, a seven-dimensional cone, and a general element is a sum of at most four of them, with $\ell(M)=\operatorname{rank}c(M)$. Every sign in the products comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for one example, $\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$, where the minus sign is the square of the imaginary unit and the ordering of the right factors is the reverse of the cells'.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented on the Dirac module by $\gamma_5[\mathbb{M}_-]$, which is the cell $\chi$ above.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
+<p><strong>The display.</strong> Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>The index of the biquaternionic Dirac operator is the difference $n_+-n_-$ of the numbers of positive- and negative-chirality zero modes, and the Atiyah–Singer theorem computes it as the integral of the index density $\hat A(TM)\wedge\mathrm{ch}(E_R)$. On the flat four-dimensional slice the $\hat A$-genus is trivial and the index is $2T(R)Ϙ$, where $Ϙ$ is the instanton charge of <em>Instantons and Solitons in Biquaternionic Form</em> and $T(R)$ is the Dynkin index. For the framework's two representations the indices are $T(\text{defining})=\tfrac12$ and $T(\text{adjoint})=2$, so the counts are $n_+=k$ in the defining module and $n_+=4k$ in the adjoint, one zero mode and four for the unit self-dual instanton. The abelian specialisation on the two-sphere gives index equal to the charge, which is the Chern number $1$ of the Hopf bundle.</p>
 <p>The index density is a total derivative whose integral equals the instanton charge, and in the abelian case it is the framework's invariant $I_2=\vec E\cdot\vec B$. The operator, its cells, its defining module, the adjoint representation and the group theory of the indices are all the algebra's; the theorem itself, the $\hat A$-genus, the boundary eta invariant and the identification of the counted modes with physical fermions are standard results transcribed. The one place where the framework is silent is the invariant form of the non-abelian density: it is computable in components with the matrix trace, but it is not an object of the biquaternion-norm invariant calculus, because that calculus is rank-two and single-slot while the density is traced over a second algebra factor.</p>
@@ -347,8 +348,8 @@ $$</p>
 <td>Two-sided cell; $L_aR_bL_cR_d=L_{ac}R_{db}$</td>
 </tr>
 <tr>
-<td>$G_t=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $G_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
-<td>The four frame cells; $G_\mu^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
+<td>$G_t=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $G_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$</td>
+<td>The four frame cells; $G_\mu^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$\mathcal D_R=\sum_\mu G_\mu D_\mu$</td>
@@ -359,8 +360,8 @@ $$</p>
 <td>Covariant derivative; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$</td>
 </tr>
 <tr>
-<td>$\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
-<td>Chirality; $\psi\mapsto-i\psi\vec e_z$, $\chi^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
+<td>$\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
+<td>Chirality; $\psi\mapsto-i\psi\vec e_z$, $\chi^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$n_\pm$</td>

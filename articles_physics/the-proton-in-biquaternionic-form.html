@@ -105,7 +105,7 @@ $$</p>
 <p>$$
 \left(\mathbb{D}-m_p\right)\psi=0 .
 $$</p>
-<p>The operator is now a single object acting on the pair: it is the pair written once, and it contains no matrix generator. The module is also where chirality becomes an operator, the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$. That is what the two-sided reading adds: the algebra carries the mass term and the mass shell, the module carries chirality, the charge operator and the bilinears. The two forms are related by a change of representation, not by a change of physics.</p>
+<p>The operator is now a single object acting on the pair: it is the pair written once, and it contains no matrix generator. The module is also where chirality becomes an operator, the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$. That is what the two-sided reading adds: the algebra carries the mass term and the mass shell, the module carries chirality, the charge operator and the bilinears. The two forms are related by a change of representation, not by a change of physics.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -138,7 +138,7 @@ $$</p>
 <tr>
 <td>Chirality</td>
 <td>the label of the half; no operator</td>
-<td>the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$</td>
+<td>the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>Use</td>
@@ -164,7 +164,7 @@ $$</p>
 <h2 id="the-charge-operator-on-the-dirac-module">The Charge Operator on the Dirac Module</h2>
 <p>The cells act by left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so a two-sided cell is $L_aR_b\psi=a\psi b$. The chirality cell of the module is the pure right multiplication</p>
 <p>$$
-\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
+\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
 \qquad
 \Gamma\psi=-i\,e_t\,\psi\,\vec e_z,
 \qquad
@@ -172,9 +172,9 @@ $$</p>
 $$</p>
 <p>whose two eigenspaces are the chiral halves. The projectors onto them are</p>
 <p>$$
-P_L=\tfrac12\left(I_4-\Gamma\right)=\tfrac12\left(I_4+iR_{\vec e_z}^{\mathrm{pau}}\right),
+P_L=\tfrac12\left(I_4-\Gamma\right)=\tfrac12\left(I_4+iR_{\vec e_z}^{\mathrm{axf}}\right),
 \qquad
-P_R=\tfrac12\left(I_4+\Gamma\right)=\tfrac12\left(I_4-iR_{\vec e_z}^{\mathrm{pau}}\right),
+P_R=\tfrac12\left(I_4+\Gamma\right)=\tfrac12\left(I_4-iR_{\vec e_z}^{\mathrm{axf}}\right),
 $$</p>
 <p>so that $P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$, and $\Gamma=P_R-P_L=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis. $\Gamma$ is Hermitian, so with $\Gamma^2=I_4$ the two $P$ are orthogonal projectors. The charge operator of <em>Chiral Fermions in the Biquaternion Framework</em> is then the module operator</p>
 <p>$$
@@ -189,7 +189,7 @@ $$</p>
 \qquad
 [\,Ϙ,\Gamma\,]=0,
 $$</p>
-<p>with spectrum $\{ϙ_L\ (\text{twice}),\,ϙ_R\ (\text{twice})\}$. Second, the <strong>mass selection rule</strong>. The bilinears are built with the Dirac bar $\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$, where $G_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ are the four generator cells of the coordinates, $\nu(t)=x$ and $\nu(k)=y$. Under the chiral gauge transformation $\psi_L\mapsto\exp(iϙ_L\lambda/\hbar)\psi_L$, $\psi_R\mapsto\exp(iϙ_R\lambda/\hbar)\psi_R$, with $\lambda(\tilde{Q})$ a real gauge function, only the relative phase of the two halves changes:</p>
+<p>with spectrum $\{ϙ_L\ (\text{twice}),\,ϙ_R\ (\text{twice})\}$. Second, the <strong>mass selection rule</strong>. The bilinears are built with the Dirac bar $\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$, where $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ are the four generator cells of the coordinates, $\nu(t)=x$ and $\nu(k)=y$. Under the chiral gauge transformation $\psi_L\mapsto\exp(iϙ_L\lambda/\hbar)\psi_L$, $\psi_R\mapsto\exp(iϙ_R\lambda/\hbar)\psi_R$, with $\lambda(\tilde{Q})$ a real gauge function, only the relative phase of the two halves changes:</p>
 <p>$$
 \begin{aligned}
 \psi_L^{\dagger}G_t\psi_R &\longmapsto \exp\!\left(\frac{i}{\hbar}(ϙ_R-ϙ_L)\lambda\right)\psi_L^{\dagger}G_t\psi_R,\\[4pt]
@@ -304,7 +304,7 @@ $$</p>
 <tr>
 <td>Conserved current $\tilde{J}\in\mathbb{M}_-$</td>
 <td>Derived</td>
-<td>Dirac current $j_\mu=\bar{\psi}\,G_\mu\psi$, with $G_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ the generator cell of the coordinate $x_\mu$ ($\nu(t)=x$, $\nu(k)=y$); $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$</td>
+<td>Dirac current $j_\mu=\bar{\psi}\,G_\mu\psi$, with $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ the generator cell of the coordinate $x_\mu$ ($\nu(t)=x$, $\nu(k)=y$); $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$</td>
 </tr>
 <tr>
 <td>Electric charge generator is the central $\mathrm{U}(1)$</td>
@@ -418,6 +418,7 @@ $$</p>
 \sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_\mu=-2\gamma_\rho\gamma_\beta\gamma_\alpha .
 $$</p>
 <p>In the Euclidean frame the spatial gammas are $i\gamma_k$, so every cell squares to $+I_4$; the same four sums then hold with every weight equal to $+1$ and $g$ replaced by $\delta$, giving $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\rho\gamma_\beta\gamma_\alpha$, with the Euclidean gammas in place of the Minkowski ones. Without weights in $\mathbb{M}_-$ the sum is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$: the metric has left the cells and entered the sum.</p>
+<p><strong>The display.</strong> Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$ and on the module as the two-sided equation $(\mathbb{D}-m_p)\psi=0$. The framework makes three structural statements about it. The spin-$\tfrac12$ representation content follows from the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$; the mass term is the chirality-mixing linear pair of the two chiral halves; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$ on the Dirac module collapses to a multiple of the identity,</p>
 <p>$$
@@ -505,11 +506,11 @@ $$</p>
 <td>Pair operator of the two-sided equation $(\mathbb{D}-m_p)\psi=0$</td>
 </tr>
 <tr>
-<td>$\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}=P_R-P_L$</td>
+<td>$\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$</td>
 <td>Chirality cell, $\Gamma\psi=-i\,e_t\psi\vec e_z$, $\Gamma^2=I_4$, $\Gamma=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis</td>
 </tr>
 <tr>
-<td>$G_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$</td>
+<td>$G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$</td>
 <td>Generator cell of $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$; $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+1,-1,-1,-1)$</td>
 </tr>
 <tr>
@@ -517,7 +518,7 @@ $$</p>
 <td>Chiral projectors</td>
 </tr>
 <tr>
-<td>$\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{pau}}$</td>
+<td>$\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$</td>
 <td>Dirac bar of the module spinor $\psi=\psi_L+\psi_R$; $G_t$ is what pairs the two halves</td>
 </tr>
 <tr>

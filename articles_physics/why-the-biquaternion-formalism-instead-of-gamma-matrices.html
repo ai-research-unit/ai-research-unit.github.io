@@ -127,7 +127,7 @@ No symbol for the operator is needed when the operator is not the subject. This 
 <p><strong>The gamma basis is not canonical.</strong> For a fixed metric, every gamma basis is $S\gamma_\mu S^{-1}$ for some invertible $S$, and the gamma bases over that metric form a homogeneous space under $GL_4(\mathbb{C})$. Physics chooses one basis. An equation that names $\gamma_0$ names the choice, and a reader who does not know the choice cannot tell a choice of basis from an algebraic fact.</p>
 <p><strong>The reference frame chosen by the corpus is one of a family.</strong> In that frame, whose spatial pair is $(\vec e_y,\vec e_x)$,
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 and the Clifford relations hold. Any other orthogonal pair of spatial units gives another basis by the same construction; a change of pair changes which cells represent the generators and preserves the Clifford relations and the algebra. It is a change of gamma basis, not a change of the algebra. In the gamma notation the same statement is written $S\gamma_\mu S^{-1}$, and the freedom is easy to mistake for a symmetry of the physics.</p>
 <p><strong>The metric is already in the units.</strong> In $\mathbb{B}$ the signature is carried by $e_t^2=e_t$ and $\vec e_k^2=-e_t$. The Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ restates that signature as a second datum, and a gamma basis is a choice of representatives for that datum. The basis adds no structure the multiplication lacks; it adds a coordinate on that structure.</p>
@@ -142,10 +142,10 @@ $$
 A generic element has $\ell=4$, and the set $\det c(M)\neq0$ is open and dense.</p>
 <p><strong>A concrete failure.</strong> The sum
 $$
-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}
+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}
 $$
 has coefficient matrix $\operatorname{diag}(1,1,0,0)$, of rank two. It is not a single product, and no change of frame by a decomposable $S$ makes it one: such a change acts on $c(M)$ by an invertible left and right multiplication and preserves its rank. A formalism that makes the generic matrix the primitive has no place to mark the rank-one subset that the physics uses; the cell form writes the same operator as a sum of two terms and leaves it there.</p>
-<p><strong>Two ranks, independent.</strong> The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}})$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.</p>
+<p><strong>Two ranks, independent.</strong> The matrix rank of a product is $\operatorname{rank}M_2(Q)\cdot\operatorname{rank}M_2(P)$, so it lies in $\{0,1,2,4\}$; no product has matrix rank three. The length lies in $\{0,1,2,3,4\}$. Neither fixes the other: the chiral projector $P_+=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})$ has matrix rank two and length one, and a rank-one matrix can have length four. A reader who uses matrix rank as a proxy for "how many terms" is misled in both directions.</p>
 <p><strong>The physics uses few terms.</strong> The chiral projector is one term. The Dirac operator, worked in the next section, has length two: the three spatial terms share a right multiplier and combine into one. The four-term display is a display, not a property of the operator. The operators displayed in the corpus sit at low length; the generic element is not one of them. The gamma basis makes the coefficient vector the object; the biquaternion reading makes the pair the object.</p>
 <h2 id="a-worked-example-the-dirac-operator">A Worked Example: the Dirac Operator</h2>
 <p><strong>The gamma display.</strong> In the reference frame, with $x_0=ct'$ and $x_1,x_2,x_3$ the three spatial coordinates, the operator is
@@ -154,7 +154,7 @@ D\psi=\gamma_0\frac{\partial\psi}{\partial x_0}+\gamma_1\frac{\partial\psi}{\par
 $$
 with
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 Four fixed operators and four derivatives. The display does not show a pair of multipliers, and it does not show that the three spatial terms share a right multiplier.</p>
 <p><strong>The dictionary.</strong> Replace each gamma by its cell:
@@ -175,7 +175,7 @@ $$
 because $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, and distinct gammas anticommute. The cell form gives the same square, because the cells are the same operators. This is the sense in which the gamma basis is correct: it is a coordinate, and the coordinate reproduces the invariant.</p>
 <p><strong>The mass.</strong> The mass term is one cell, and in this frame that cell is the identity:
 $$
-m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\psi=m\,e_t\psi e_t=m\psi,
+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\psi=m\,e_t\psi e_t=m\psi,
 $$
 because $e_t$ is central. In the gamma display the same term is $m\psi$, which is $m\gamma_0^2$, not a sixth gamma. The five-name list does not name the identity as a cell; the cell list does. This is the concrete case of the point above: the cell form names the mass block, the gamma form leaves it as the identity.</p>
 <p><strong>The lengths.</strong> At a generic frequency,</p>
@@ -190,22 +190,22 @@ because $e_t$ is central. In the gamma display the same term is $m\psi$, which i
 <tbody>
 <tr>
 <td>mass</td>
-<td>$mL_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
+<td>$mL_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
 <td>1</td>
 </tr>
 <tr>
 <td>chirality</td>
-<td>$-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
+<td>$-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
 <td>1</td>
 </tr>
 <tr>
 <td>chiral projector $P_+$</td>
-<td>$\tfrac12L_{e_t}^{\mathrm{pau}}R_{e_t-i\vec e_z}^{\mathrm{pau}}$</td>
+<td>$\tfrac12L_{e_t}^{\mathrm{axf}}R_{e_t-i\vec e_z}^{\mathrm{axf}}$</td>
 <td>1</td>
 </tr>
 <tr>
 <td>Dirac, minimal</td>
-<td>$iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\,\partial/\partial x_0+iL_{\nabla}R_{\vec e_y}^{\mathrm{pau}}$</td>
+<td>$iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\,\partial/\partial x_0+iL_{\nabla}R_{\vec e_y}^{\mathrm{axf}}$</td>
 <td>2</td>
 </tr>
 <tr>
@@ -226,7 +226,7 @@ because $e_t$ is central. In the gamma display the same term is $m\psi$, which i
 <p><strong>The same freedom, stated twice.</strong> In the column language the freedom is written twice: in the basis of $\mathbb{C}^4$ and in the representation of the gammas. A change of basis acts on the representation by conjugation, so the two writings carry the same invertible $S$, and the reader has to check that both were changed together. The algebra language names the freedom once, as the frame, and a frame change is written where it occurs.</p>
 <p><strong>Chirality separates cleanly.</strong> In the reference frame the chirality is the single cell
 $$
-\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
+\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad \Gamma^2=1,\qquad P_\pm=\tfrac12(1\pm\Gamma),
 $$
 and the projectors are read as actions,
 $$
@@ -240,7 +240,7 @@ It is an operator on the module, not multiplication by an element of $\mathbb{B}
 <h2 id="the-frame-becomes-the-physics">The Frame Becomes the Physics</h2>
 <p><strong>One frame in every formula.</strong> The reference dictionary ties time to $\vec e_x$ and the three spatial directions to $\vec e_y$:
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 The pair $(\vec e_y,\vec e_x)$ is a choice. A formula written in it is a formula about that choice as much as about the operator, and the gamma notation gives the reader no mark that separates the two.</p>
 <p><strong>A change of gamma basis preserves the cone only when it is decomposable.</strong> A change by $S=L_{a}R_{b}$, with $a,b$ units, sends $L_{Q}R_{P}$ to $L_{aQa^{-1}}R_{\,b^{-1}Pb}$ and stays inside the cone. A general change of gamma basis need not: it is itself a sum of a few cells, and it can turn one product into several. The gamma notation writes both changes with the same symbol $S(\cdot)S^{-1}$, and the difference between them — one preserves the class of physical operators, the other does not — is invisible.</p>
@@ -383,7 +383,7 @@ with $a_t$ the scalar part and $\langle a\rangle_{\natural}$ the quaternionic no
 <td>the length, the least number of products in a sum</td>
 </tr>
 <tr>
-<td>$\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
+<td>$\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
 <td>the chirality in the reference frame, $\Gamma^2=1$</td>
 </tr>
 <tr>
