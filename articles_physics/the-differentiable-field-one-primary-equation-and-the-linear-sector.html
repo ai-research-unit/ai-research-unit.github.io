@@ -133,25 +133,20 @@
 <h3 id="translation-and-derivation-are-not-rivals">Translation and Derivation Are Not Rivals</h3>
 <p>A translation is not wasted work when the derivation succeeds. The derivation produces <em>an</em> equation set; it must then be compared with the known one, and the comparison is only possible if the known one has already been written in the same algebra. The corpus's transcription articles are the dictionary that makes the derivation legible, and the derivation route is the test of whether the dictionary is a dictionary of one language or of two.</p>
 <h2 id="the-primary-equation">The Primary Equation</h2>
-<h3 id="the-condition-and-its-chain">The Condition and Its Chain</h3>
-<p>The mathematics is in the companion article and is quoted here in one paragraph. A function of the biquaternion variable is called differentiable when its differential factorises, $dF=L\,dZ\,R$, and the definition takes no inverse, so neither the noncommutativity nor the zero divisors obstruct it. In the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ the condition says that for each component $\Sigma$ of $F$ the two-by-two array of its four coordinate derivatives has rank at most one, which is</p>
+<h3 id="the-condition-stated-once">The Condition, Stated Once</h3>
+<p>The mathematics is the companion article's and the reader should take it there; one sentence fixes what this article needs. A function is differentiable when its differential factorises, $dF=L\,dZ\,R$, with no inverse taken, and in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ this says that for each component $\Sigma$ the array $\mathsf D\Sigma$ of its four coordinate derivatives has rank at most one, equivalently $\det\mathsf D\Sigma=0$, equivalently $N(\nabla\Sigma)=0$. In Cartesian coordinates that last form is the complex eikonal,</p>
 <p>$$
-\det\Sigma_{;AB}=0,\qquad\text{equivalently}\qquad N(\nabla\Sigma)=0,
+\left(\frac{\partial\Sigma}{\partial z_0}\right)^2-\left(\frac{\partial\Sigma}{\partial z_1}\right)^2-\left(\frac{\partial\Sigma}{\partial z_2}\right)^2-\left(\frac{\partial\Sigma}{\partial z_3}\right)^2=0 ,
 $$</p>
-<p>and in Cartesian coordinates this is the complex eikonal</p>
-<p>$$
-\left(\frac{\partial\Sigma}{\partial z_0}\right)^2-\left(\frac{\partial\Sigma}{\partial z_1}\right)^2-\left(\frac{\partial\Sigma}{\partial z_2}\right)^2-\left(\frac{\partial\Sigma}{\partial z_3}\right)^2=0 .
-$$</p>
-<p>The biquaternion gradient of every component is a zero divisor of the algebra. That is the whole of the primary input.</p>
-<p>Everything else is a consequence, and the chain is short. The gradient is null, so it defines a direction field; the direction field is a null congruence; the congruence is shear-free and geodesic; a null congruence of that kind is the principal direction of a null electromagnetic field; and the integrability of the over-determined system that generates the congruence forces the self-duality of its curvature, whose Bianchi identity is Maxwell's equation for the trace part and the Yang–Mills equation for the trace-free part. The generating system, the self-duality and the identification of the Bianchi identity with the field equations are <em>The Algebrodynamical Programme</em>, worked out there in detail; the congruence side is <em>Null Electromagnetic Fields and the Shear-Free Congruence</em>.</p>
+<p>so the biquaternion gradient of every component is a zero divisor of the algebra. That is the whole of the primary input.</p>
+<p>Everything else is a consequence, and the chain is short: a null gradient, hence a direction field; a direction field that is a null congruence; a congruence that is shear-free and geodesic; a null congruence of that kind that is the principal direction of a null electromagnetic field; and an over-determined system whose integrability forces the self-duality of its curvature, whose Bianchi identity is Maxwell's equation for the trace part and the Yang–Mills equation for the trace-free part. The condition as an equation, the reason complexification is what makes it non-empty, the twistor solution, the generating system and the self-duality are all in <em>The Algebrodynamical Programme</em>; the congruence side is <em>Null Electromagnetic Fields and the Shear-Free Congruence</em>. This article does not restate them.</p>
 <h3 id="the-eikonal-as-primary-and-the-inversion-of-the-wkb-relation">The Eikonal as Primary, and the Inversion of the WKB Relation</h3>
-<p>The corpus already contains the eikonal, in a different role. <em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em> derives it as the short-wavelength limit of the linear wave equation: the phase of a rapidly oscillating solution obeys it approximately, and the approximation improves as the wavelength shrinks. In the derivation route the relation is inverted. The eikonal is <strong>exact and primary</strong>, and the linear wave equation is what the <em>derivatives</em> of its solution obey. Two statements, one arrow each way, and the corpus must hold both: the WKB reading is a theorem about a limit, the derivation reading is a postulate about what is fundamental. They are compatible, and the compatibility is the reason the inversion is worth taking seriously rather than dismissing as a change of subject.</p>
+<p>The corpus already contains the eikonal, in a different role. <em>The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form</em> derives it as the short-wavelength limit of the linear wave equation: the phase of a rapidly oscillating solution obeys it approximately, and the approximation improves as the wavelength shrinks.</p>
+<p>In the derivation route the eikonal is <strong>exact and primary</strong>, and the wave equation is not a separate postulate but a consequence. The consequence is not the one usually expected. Both equations hold for the same function: every solution the programme constructs satisfies the eikonal <em>and</em> $\Box\Sigma=0$, and neither is a limit of the other. The two relations that the algebraic constraint imposes on the solution multiply to the eikonal and cross-differentiate to the wave equation, which is the whole of the mechanism; the mathematics article carries the derivation and the checks.</p>
+<p>So the inversion is not a change of subject but a change of <strong>explanatory order</strong>. The WKB reading says: the wave equation is fundamental and the eikonal is its short-wavelength shadow. The derivation reading says: the algebraic constraint is fundamental, the eikonal is one of its consequences and the wave equation the other. Neither reading denies the other's equations, and they disagree only about which one is doing the explaining. The derivation reading has the better claim on the word, because the algebraic constraint is what selects the solutions and the two differential equations are what the selection yields.</p>
+<p>This also dissolves the most obvious objection to a nonlinear primary equation. The nonlinearity is real — the solution set is not a vector space — but it is inert: it is not a nonlinear dynamics standing beside a linear one, it is an algebraic selection inside a linear space. The cost is additivity, not linearity.</p>
 <h3 id="the-fields-as-semi-derivatives">The Fields as Semi-Derivatives</h3>
-<p>What plays the role of the field is not $\Sigma$ but the multiplier. The spinor splitting of the condition writes the function as a pair of spinors and the condition as</p>
-<p>$$
-d\eta=\Phi\,dZ\,\xi ,
-$$</p>
-<p>with $\Phi$ transforming as a complex four-vector and $\eta,\xi$ as $SL(2,\mathbb{C})$-spinors. The system is eight differential equations for six unknown functions, so it is <strong>over-determined</strong>, and $\Phi$ — the left semi-derivative — carries the gauge field. Differentiating the equation and using it again gives an integrability condition whose object is a connection; requiring the curvature to annihilate the non-trivial spinor forces its self-dual part to vanish, and the Bianchi identity then delivers the field equations.</p>
+<p>What plays the role of the field is not $\Sigma$ but the multiplier. The condition splits as $d\eta=\Phi\,dZ\,\xi$, with $\Phi$ the left semi-derivative carrying the gauge field and $\eta,\xi$ two $SL(2,\mathbb{C})$-spinors; the system is eight equations for six unknowns, and the connection its integrability generates has a vanishing self-dual curvature whose Bianchi identity is the field equation. That construction is <em>The Algebrodynamical Programme</em>, §<em>The Generating System and the Gauge Fields</em>, and it is not repeated here.</p>
 <p>The point for this article is the direction of the implication. In the corpus's gauge articles the connection is introduced because a symmetry is made local, and the field strength is defined as its curvature; the gauge principle is the postulate. Here the connection is what a differentiable function carries, the curvature is its integrability obstruction, and the field equations are identities. No gauge principle is assumed.</p>
 <h2 id="the-three-corpus-objects-the-gradient-meets">The Three Corpus Objects the Gradient Meets</h2>
 <p>A null element of the algebra is not a new object in this corpus, and the three objects that the gradient lands on are already owned. What the derivation adds is that they are met <strong>necessarily</strong> rather than by choice.</p>
@@ -191,47 +186,61 @@ $$</p>
 <h2 id="what-the-derivation-buys">What the Derivation Buys</h2>
 <h3 id="gauge-equations-without-a-gauge-postulate">Gauge Equations Without a Gauge Postulate</h3>
 <p>The gain is not a new equation but a new status for the old ones. Maxwell and Yang–Mills become identities, and the gauge principle becomes a theorem about the curvature of the connection a differentiable function carries. That is the strongest form the corpus's open question 1 could take: the dynamics is a consequence of the algebra and of one definition, and the definition is not adjustable without changing what a derivative means.</p>
-<h3 id="a-fixed-scale-and-where-discreteness-can-come-from">A Fixed Scale, and Where Discreteness Can Come From</h3>
+<h3 id="a-fixed-scale-and-what-it-does-not-settle">A Fixed Scale, and What It Does Not Settle</h3>
 <p>The scale question is the one place where the derivation has real physical content, and it must be stated with more care than it usually is.</p>
-<p><strong>The eikonal alone is scale covariant.</strong> Its condition is homogeneous of degree two in the gradient, so a component may be multiplied by any constant and the condition survives. Verified on the polar form: $N(\lambda g)=\lambda^2N(g)$ for every complex $\lambda$. Nothing about a single component's amplitude is fixed by differentiability.</p>
+<p><strong>The eikonal alone is scale covariant.</strong> Its condition is homogeneous of degree two in the gradient, so a component may be multiplied by any constant and the condition survives. It is immediate from the polar form, $N(\lambda g)=\lambda^2N(g)$ for every complex $\lambda$. Nothing about a single component's amplitude is fixed by differentiability.</p>
 <p><strong>The connection is not.</strong> The curvature of a connection is $dA+[A,A]$, one term linear in the potential and one quadratic in it. Scaling the potential therefore does not scale the curvature:</p>
 <p>$$
 F(\lambda A)=\lambda\,F(A)+(\lambda^2-\lambda)\,[A,A] .
 $$</p>
-<p>The two terms scale differently, so the self-duality relation $F=iF^{*}$ selects $\lambda=1$ whenever the commutator does not vanish.</p>
-<p><strong>That is where a discrete charge can come from, and it is not a quantum assumption.</strong> A linear theory cannot prefer one amplitude, because its solution space is a vector space and every multiple of a solution is a solution. A theory whose field equations contain a quadratic term can, and does: the admissible potentials come in a discrete set of scales, and the programme's value $q=N/4$ is the expression of that discreteness in its own units. The mechanism is not $\hbar$; nothing in the algebra knows about $\hbar$. It is the failure of scale covariance of the connection, and that failure is a property of the algebra's product.</p>
+<p>The two terms scale differently, so a solution of the self-duality relation $F=iF^{*}$ survives a rescaling only for $\lambda=1$ — or for a commutator term that is itself (anti)self-dual in the same sense, which a generic potential does not have. The admissible amplitudes are isolated, not continuous.</p>
+<p><strong>That is where a fixed amplitude can come from, and it is not a quantum assumption.</strong> A linear theory cannot prefer one amplitude, because its solution space is a vector space and every multiple of a solution is a solution. A theory whose field equations carry a quadratic term can, and here does: the amplitude of the connection is pinned by the self-duality condition rather than left free, and the pinning is a property of the algebra's product and not of $\hbar$. Nothing in the algebra knows about $\hbar$.</p>
+<p>The step from a fixed amplitude to a <strong>discrete</strong> charge is the programme's, and it is a further claim, not a corollary of the scaling identity. The programme's value $q=N/4$ with $N$ an integer is stated there with two reasons of its own, one topological and one dynamical, and with a pointer to a general theorem in its later papers; <em>The Algebrodynamical Programme</em>, §<em>Particle-Like Solutions and the Self-Quantized Charge</em>, records it with that attribution.</p>
 <h3 id="singularities-that-carry-the-particle-data">Singularities That Carry the Particle Data</h3>
-<p>The singular locus of a solution is the branch set of the generating function, $\Pi_G=0$, and it is simultaneously the singularity of the semi-derivative, of the electromagnetic field and of the effective geometry. One locus, three readings, which is the programme's answer to why the particle's charge, its field and its gravitational effect have a common origin. The reading is the programme's and the corpus records it as such; what belongs here is only that the derivation route produces the coincidence rather than assuming it.</p>
+<p>The singular locus of a solution is the branch set of the generating function, $\Pi_G=0$, and it is simultaneously the singularity of the semi-derivative, of the electromagnetic field and of the effective geometry — one locus, three readings, which is the programme's answer to why a particle's charge, its field and its gravitational effect share an origin. The coincidence is derived there rather than assumed; what belongs here is that this route produces it.</p>
 <h2 id="what-it-costs">What It Costs</h2>
 <h3 id="no-action-principle">No Action Principle</h3>
 <p>The generating system is over-determined, eight equations for six unknowns, and an over-determined system has no free initial data and no variational principle of the usual kind. A Lagrangian is what canonical quantisation needs, and the corpus's quantisation articles — <em>Canonical Quantization of the Biquaternion Graviton Field</em>, <em>The Path Integral in Biquaternionic Form</em> — presuppose one. The derivation route buys its explanatory power at the price of the method by which the rest of the corpus quantises. Any quantisation of it must be a quantisation of a constrained system, and the programme itself says that this requires new methods.</p>
+<p>The programme's own position is narrower than an absence: the primary system admits no Lagrangian, while the <strong>secondary</strong> gauge fields associated with it do, since they are ordinary field equations once the congruence is given. So the action exists one storey down. That is not enough for canonical quantisation of the primary field, and it is more than nothing.</p>
 <h3 id="no-superposition">No Superposition</h3>
-<p>The eikonal is quadratic, so the sum of two solutions is not a solution: for two null gradients the norm of the sum is twice their polar form, which does not vanish. On 100 random pairs of complex null gradients the smallest value of $\lvert N(g_1+g_2)\rvert$ was $1.54$, so the failure is generic and not an accident of measure. The solution set is not a vector space, there is no Hilbert space of solutions to build on, and the linearity of the quantum formalism has to be recovered from something else rather than read off the equation.</p>
-<p>This is the deepest of the costs, because the corpus's whole quantum sector rests on the linearity of the state space. A nonlinear primary equation does not contradict quantum mechanics — the linear equation can be its derived sector, for the derivatives — but it forbids taking the linear structure as the primitive one.</p>
+<p>The eikonal is quadratic, so the sum of two solutions is not a solution: for two null gradients the norm of the sum is twice their polar form, which does not vanish. On 100 random pairs of complex null gradients normalised to $\sum_\mu\lvert g_\mu\rvert^2=1$ the smallest value of $\lvert N(g_1+g_2)\rvert$ was $0.063$ against a median of $0.96$, so the failure is generic and neither rare nor small. The solution set is not a vector space.</p>
+<p>The cost is narrower than that sentence suggests, and the eikonal section says why. Every solution the programme constructs is harmonic, so the class sits <strong>inside</strong> a linear space, the solutions of $\Box\Sigma=0$, and the nonlinear condition is an algebraic selection within it. The harmonicity is a property of the constructed class and not of the eikonal: a function can solve the eikonal without being harmonic, and the mathematics article carries the witness. What fails is additivity of the class, not the existence of a linear ambient space. A formalism built on the harmonic space would have the right linearity; what it would not have is the assurance that a superposition of two states is a state.</p>
+<p>That is still the deepest of the costs, because the corpus's quantum sector rests on the linearity of the state space and not merely on the availability of one. A primary equation that selects a nonlinear subset of a linear space does not contradict quantum mechanics, but it forbids taking the linear structure as primitive: on this reading the linear space is what the constraint is imposed on, not what generates it.</p>
 <h3 id="the-real-slice-is-not-natural">The Real Slice Is Not Natural</h3>
-<p>The programme's own rule for what counts as meaningful is invariance under the algebra automorphisms, $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$, and the Hermitian form is not invariant under them. The programme draws the conclusion and calls the restriction to the real slice artificial. The corpus draws the opposite conclusion and makes the natural conjugation primitive, with $\mathbb{M}_+\oplus\mathbb{M}_-$ as its fixed and anti-fixed spaces.</p>
-<p>This is not a difference of taste; it is the one point at which the two cannot both be right, and it is treated next.</p>
+<p>The programme's rule for what counts as meaningful is invariance under the algebra automorphisms, $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$, and the Hermitian form is not invariant under them, so the programme calls the restriction to the real slice artificial. The corpus makes the natural conjugation primitive instead, with $\mathbb{M}_+\oplus\mathbb{M}_-$ as its fixed and anti-fixed spaces. The argument for the programme's side is in <em>The Algebrodynamical Programme</em>, §<em>The Induced Causal Minkowski Geometry with Phase</em>.</p>
+<p>This is not a difference of taste: it is the point at which the two cannot both have the primitive object.</p>
 <h2 id="the-fork-product-first-or-conjugation-first">The Fork: Product First or Conjugation First</h2>
 <p>The corpus's structure is built on the <strong>natural conjugation</strong> $\natural$, the $\mathbb{C}$-linear quaternion conjugation: it cuts the algebra into the material and the informational sectors, it gives the interval its signature, and it makes the two slots of one product physically different. That conjugation is not an algebra automorphism, and the corpus already knows what that means: <em>Frames, Rotations and the Lorentz Group</em> states that a boost preserves the interval and the sectors but not the product, and concludes that a boost is a motion and not a symmetry of the algebraic structure.</p>
 <p>The derivation route is built on the <strong>product</strong> instead. Its derivative is defined by multiplication alone, its invariants are the automorphism invariants, and a structure that the product does not preserve is not a structure of the theory. The Hermitian form fails that test, so the real slice fails it, and the two sectors are, on this reading, an artefact of a coordinate choice.</p>
+<p>That is not the end of the argument, and leaving it there would misrepresent the programme. The product-first route is not left without geometry: it <strong>builds</strong> an arena, from the one object the automorphisms do preserve. The construction is due to the source and is worked out in <em>The Algebrodynamical Programme</em>; it is summarized here because it decides what the fork is about.</p>
+<p>The automorphism group $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$ fixes the diagonal entry of the matrix and rotates the other three as a complex three-vector $z$. The one invariant of that rotation is the complex quadratic form</p>
+<p>$$
+\sigma=z_1^2+z_2^2+z_3^2 ,
+$$</p>
+<p>and its modulus obeys the Lagrange identity $\sigma\sigma^{*}=T^2-\lvert\vec X\rvert^2$ with</p>
+<p>$$
+T=\vec z\cdot\vec z^{*},\qquad \vec X=i\,[\vec z\times\vec z^{*}] ,
+$$</p>
+<p>both real. So the product-first route recovers a Minkowski-type interval, and it recovers it as an <strong>identity</strong> rather than as a postulate. Three features follow, and each is a physical consequence rather than a technicality. The interval is non-negative by construction, $T^2-\lvert\vec X\rvert^2=\lvert\sigma\rvert^2\ge0$, so the arena is the causal domain only: there is no spacelike-separated region. The time $T=\lvert\vec p\rvert^2+\lvert\vec q\rvert^2$ for $z=\vec p+i\vec q$ is positive definite, so the arena comes with a future and no past. And $\sigma$ has a <strong>phase</strong>, invariant under the same group, which has nowhere to live in the macro-geometry and therefore sits as a fibre coordinate over it — the programme's phase extension, and its candidate for the origin of the wave properties of matter.</p>
+<h3 id="the-two-columns">The Two Columns</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th></th>
 <th>Conjugation first</th>
-<th>Product first</th>
+<th>Product first, with the phase extension</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Primitive</td>
 <td>$\natural$, the split $\mathbb{M}_+\oplus\mathbb{M}_-$</td>
-<td>the product and its automorphisms</td>
+<td>the product, its automorphisms and the complex three-vector</td>
 </tr>
 <tr>
 <td>The real slice</td>
 <td>the physical sector</td>
-<td>not an invariant object</td>
+<td>induced, and only the causal domain</td>
 </tr>
 <tr>
 <td>The Hermitian form</td>
@@ -241,25 +250,40 @@ $$</p>
 <tr>
 <td>What a boost is</td>
 <td>a motion, not an automorphism</td>
-<td>not a symmetry of the structure</td>
+<td>an automorphism of the three-vector, not of the algebra</td>
 </tr>
 <tr>
 <td>The two sectors</td>
 <td>material and informational</td>
 <td>a coordinate artefact</td>
 </tr>
+<tr>
+<td>The arena</td>
+<td>Minkowski, assumed</td>
+<td>Minkowski-type, derived: $S^2=T^2-\lvert\vec X\rvert^2\ge0$</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>a coordinate of either sign</td>
+<td>$T=\vec z\cdot\vec z^{*}\ge0$, future only</td>
+</tr>
+<tr>
+<td>Extra invariant</td>
+<td>none</td>
+<td>the phase $\alpha$ of $\sigma$, a fibre coordinate</td>
+</tr>
 </tbody>
 </table></div>
-<p>Neither column is refuted by the other, and this article does not choose between them. What it records is that the choice determines whether the corpus's central object — the real slice and its two readings — survives the derivation. A derivation that keeps the product and loses the sectors is not a derivation of the biquaternion universe; it is a derivation of a neighbouring theory that happens to share the algebra.</p>
+<p>Neither column is refuted by the other, and this article does not choose between them. What it records is that the choice is narrower and more interesting than a choice between geometry and no geometry. Both routes produce a Minkowski-type arena; they differ in whether time carries a sign, whether the space outside the cone exists, and whether there is an internal phase. A derivation that keeps the product and loses the sectors is a derivation of a neighbouring theory that shares the algebra — but it is a theory with a metric, a causal structure, an arrow of time and one extra invariant, not a theory with nothing. The source itself calls the identification of $T$ and $\vec X$ with the Minkowski coordinates informal, and the corpus records the construction as the source's, with that qualification.</p>
 <h2 id="where-the-two-agree">Where the Two Agree</h2>
 <p>Three agreements are worth naming, because they are what makes the derivation worth pursuing inside this corpus rather than beside it.</p>
 <p><strong>The same cone.</strong> The characteristic set of the corpus's operator $\tilde\nabla$ is the zero-divisor cone, since the determinant of its symbol matrix is the norm, and the primary equation says the gradient lies on that cone. The two frameworks are built on the same quadratic form; they differ in degree, not in cone.</p>
-<p><strong>The same twistor.</strong> The general solution of the primary equation is generated by an arbitrary function of three twistor components, with the coordinate resolved from the incidence relation. The corpus's twistor article writes the same incidence relation for a different purpose. The object is shared; only its role differs.</p>
+<p><strong>The same twistor.</strong> The general solution of the primary equation is generated by an arbitrary function of three components of a twistor, with the coordinate resolved from the incidence relation. <em>Twistor Theory and Biquaternions</em> writes that relation for a different purpose, the representation of massless fields. The object is shared; only its role differs.</p>
 <p><strong>The same locus of states.</strong> The null cone on which the gradient lives is the locus on which the corpus's pure states sit. A theory whose fields live on the state locus is not a foreign body in this corpus, whatever its vocabulary.</p>
 <h2 id="summary">Summary</h2>
 <p>The corpus derives its arena and imports its dynamics. The derivation route inverts the second half: one condition, the factorisation of the differential, and the field equations as its integrability conditions. The condition is that the gradient of every component of a differentiable function is a zero divisor; the eikonal is the coordinate form of that statement; the fields are the semi-derivatives; self-duality is the integrability condition; Maxwell and Yang–Mills are the Bianchi identities of the resulting curvature.</p>
-<p>The gains are three: gauge equations without a gauge postulate, a fixed scale whose failure of scale covariance is where a discrete charge can come from, and a singular locus that carries the field, the charge and the effective geometry at once. The costs are three: no action principle, so no canonical quantisation; no superposition, so no linear state space; and a real slice that the theory's own invariance rule does not preserve.</p>
-<p>The last is the fork. Conjugation first gives the two sectors and the corpus's quantum reading, at the price of a structure the product does not preserve. Product first gives the derivation, at the price of the sectors. The two share the cone, the twistor and the locus of states, so they are not strangers; but they cannot both be fundamental, and the choice between them is the choice of what the biquaternion universe is a universe of.</p>
+<p>The gains are three: gauge equations without a gauge postulate, a fixed amplitude whose isolation is where the programme locates the origin of its discrete charge, and a singular locus that carries the field, the charge and the effective geometry at once. The costs are three: no action principle, so no canonical quantisation; no additivity, so no linear state space on the solution class, although the class sits inside one; and a real slice that the theory's own invariance rule does not preserve.</p>
+<p>The last is the fork. Conjugation first gives the two sectors and the corpus's quantum reading, at the price of a structure the product does not preserve. Product first gives the derivation, and — carried through — an induced Minkowski-type arena with a positive-definite time and an invariant phase, at the price of the sectors. The two share the cone, the twistor and the locus of states, so they are not strangers; but they cannot both be fundamental, and the choice between them is the choice of what the biquaternion universe is a universe of.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -294,7 +318,7 @@ $$</p>
 <td>One component of a differentiable function</td>
 </tr>
 <tr>
-<td>$\Sigma_{;AB}$</td>
+<td>$\mathsf D\Sigma$</td>
 <td>The two-by-two array of its four coordinate derivatives</td>
 </tr>
 <tr>
@@ -321,6 +345,18 @@ $$</p>
 <td>$q$</td>
 <td>The electric charge, $q=N/4$ in the programme's units</td>
 </tr>
+<tr>
+<td>$\sigma$</td>
+<td>The automorphism invariant $z_1^2+z_2^2+z_3^2$ of the complex three-vector</td>
+</tr>
+<tr>
+<td>$T$, $\vec X$</td>
+<td>The induced time $\vec z\cdot\vec z^{*}$ and space $i\,\vec z\times\vec z^{*}$</td>
+</tr>
+<tr>
+<td>$S$, $\alpha$</td>
+<td>The modulus and the phase of $\sigma$, the latter the fibre coordinate</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -329,6 +365,7 @@ $$</p>
 <li><a href="the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</a>, for the generating system, the self-duality, the quantised charge and the induced geometry.</li>
 <li><a href="null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a>, for Bateman's representation, the Mariot–Robinson theorem and the static null field.</li>
 <li><a href="the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html">The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</a>, for the sphere of null directions and the little-group phase.</li>
+<li><a href="twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a>, for the incidence relation and the projective spinor ratio that the generating function is written in.</li>
 <li><a href="../articles_maths/the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the cone as a topological object and its Lorentzian slices.</li>
 <li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>, for the postulate the derivation route replaces with a theorem.</li>
 <li><a href="gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity in Biquaternionic Form</a>, for the Bianchi identity as a Jacobi identity and the form the field equations take.</li>
