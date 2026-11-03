@@ -293,7 +293,7 @@ The Hermitian adjoint is
 $$
 L^{\mathrm{axf}}(\tilde X)^{\dagger}=L^{\mathrm{axf}}(\tilde X^{*}),
 $$
-and the same identities hold for $R^{\mathrm{axf}}$. The first is the transpose dictionary of the axis-free basis: natural conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity.</p>
+and the same identities hold for $R^{\mathrm{axf}}$. The first is the transpose dictionary of the axis-free basis: natural conjugation is transposition. The second is the conjugate transpose: the dagger is the Hermitian conjugation. Both are checked on the four units and extended by linearity. At the operator level the same transposition carries the parameter through the natural conjugation, and the flip of the two mixed units conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$; both statements are proved in <em>The One-Sided Operators on the Biquaternion Algebra</em>, §<em>The Matrix Identity</em>, where the two frames are set side by side.</p>
 <h3 id="the-intersection-of-the-two-copies">The Intersection of the Two Copies</h3>
 <p><strong>The intersection.</strong> A matrix that is both a left matrix and a right matrix is a scalar matrix:
 $$
@@ -301,7 +301,7 @@ $$
 $$
 <em>Proof.</em> Suppose $L^{\mathrm{axf}}(\tilde Q)=R^{\mathrm{axf}}(\tilde P)$. The first column of each is the coordinate column of the element, so $\tilde P=\tilde Q$. Compare the entries $(2,3)$ and $(3,2)$: the left matrix has $-Q_z$ and $Q_z$, the right matrix has $Q_z$ and $-Q_z$, so $Q_z=0$. Compare $(2,4)$ and $(4,2)$: the left matrix has $Q_y$ and $-Q_y$, the right matrix has $-Q_y$ and $Q_y$, so $Q_y=0$. Compare $(3,4)$ and $(4,3)$: the left matrix has $-Q_x$ and $Q_x$, the right matrix has $Q_x$ and $-Q_x$, so $Q_x=0$. Hence $\tilde Q=Q_te_t$ and the matrix is $Q_t\mathrm I_4$. The converse is immediate.</p>
 <p><strong>The mutual commutants.</strong> The left copy is the commutant of the right copy, and the right copy is the commutant of the left copy. The inclusion $\mathbb{B}_L\subseteq\mathbb{B}_R'$ is the commutation law. The reverse inclusion is the double commutant theorem: the commutant of $\mathbb{B}_L$ is four-dimensional and contains $\mathbb{B}_R$, so the two coincide. The intersection is the centre of each copy.</p>
-<h2 id="the-sixteen-matrices-math174">The Sixteen Matrices $L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$</h2>
+<h2 id="the-sixteen-matrices-math175">The Sixteen Matrices $L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$</h2>
 <h3 id="the-table-in-four-families">The Table in Four Families</h3>
 <p><strong>Definition.</strong> For $\mu,\nu\in\{t,x,y,z\}$ put
 $$
@@ -478,7 +478,7 @@ $$
 \bigl((\lambda-Q_t)^2+B^2\bigr)^2,
 $$
 and the determinant is $\langle\tilde Q\rangle_{\natural}^2$. The same holds for $R^{\mathrm{axf}}(\tilde Q)$.</p>
-<h3 id="the-rank-of-math299-and-math300">The Rank of $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$</h3>
+<h3 id="the-rank-of-math300-and-math301">The Rank of $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$</h3>
 <p><strong>The form.</strong> The bilinear form
 $$
 \beta(X,Y)=\operatorname{Sc}(XY^{\natural})
@@ -514,7 +514,7 @@ of rank one, while each one-sided factor has rank two.</p>
 <p><strong>The dimensions.</strong> The matrix of the composite is the ordinary $4\times4$ product $L^{\mathrm{axf}}(\tilde Q)R^{\mathrm{axf}}(\tilde P)$. The Kronecker product $L^{\mathrm{axf}}(\tilde Q)\otimes R^{\mathrm{axf}}(\tilde P)$ is a $16\times16$ matrix acting on the tensor square of the carrier, a space of dimension sixteen; it is the matrix of the tensor product of the two operators, not of their composite on the four-dimensional algebra.</p>
 <h2 id="the-cone-of-products">The Cone of Products</h2>
 <p><strong>The product set.</strong> The image of the factorisation map of §<em>The Factorization Map</em> is the set of two-sided operators. It is a cone, not a subspace, and its coordinate description is the subject of this section. The coordinate chart is the coefficient matrix of §<em>The Coefficient Matrix $c(M)$</em>, and it turns the product condition into a rank condition.</p>
-<h3 id="the-coefficient-matrix-math366">The Coefficient Matrix $c(M)$</h3>
+<h3 id="the-coefficient-matrix-math367">The Coefficient Matrix $c(M)$</h3>
 <p><strong>Definition.</strong> By §<em>Orthogonality</em>, every $M\in M_4(\mathbb{C})$ has a unique expansion
 $$
 M=\sum_{\mu,\nu}c_{\mu\nu}L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}.
@@ -584,7 +584,7 @@ $$
 8-1=7.
 $$
 The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde P=0$ collapse. The image is the seven-dimensional cone of the next subsections.</p>
-<h3 id="the-length-math407">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
+<h3 id="the-length-math408">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
 <p><strong>Definition.</strong> The <strong>length</strong> $\ell(M)$ is the least $r\ge0$ such that $M$ is a sum of $r$ products; $\ell(0)=0$.</p>
 <p><strong>Theorem (length is the rank).</strong> For every $M\in M_4(\mathbb{C})$,
 $$
@@ -671,7 +671,7 @@ $$
 Both are single products, and both are contained in the cone. Their intersection is the scalars $\mathbb{C}\cdot\mathrm I_4$, by §<em>The Intersection of the Two Copies</em>.</p>
 <p><strong>The cone is larger.</strong> A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.</p>
 <p><strong>The Hermitian subcone.</strong> The Hermitian sandwich is the subcone $\tilde P=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.</p>
-<h3 id="a-worked-case-the-matrix-unit-math508">A Worked Case: The Matrix Unit $E_{11}$</h3>
+<h3 id="a-worked-case-the-matrix-unit-math509">A Worked Case: The Matrix Unit $E_{11}$</h3>
 <p><strong>The matrix.</strong> Let $E_{11}$ be the first matrix unit in the axis-free basis, the matrix with $1$ in the $(1,1)$ entry and $0$ elsewhere. Its coefficient matrix is
 $$
 c(E_{11})=\frac14
@@ -987,11 +987,9 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 <li><a href="m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a>, for the frame, the pure swap stitch and the tensor displays.</li>
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.</li>
 <li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.</li>
-<li><a href="the-left-regular-operators-on-the-biquaternion-algebra.html">The Left Regular Operators on the Biquaternion Algebra</a>, for $L^{\mathrm{axf}}$ and the four left matrices.</li>
-<li><a href="the-right-regular-operators-on-the-biquaternion-algebra.html">The Right Regular Operators on the Biquaternion Algebra</a>, for $R^{\mathrm{axf}}$ and the four right matrices.</li>
+<li><a href="the-one-sided-operators-on-the-biquaternion-algebra.html">The One-Sided Operators on the Biquaternion Algebra</a>, for $L^{\mathrm{axf}}$, $R^{\mathrm{axf}}$ and the four matrices of each side.</li>
 <li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the ambient operator space and its coordinate column.</li>
 <li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.</li>
-<li><a href="the-commutant-of-the-two-regular-families.html">The Commutant of the Two Regular Families</a>, for the intersection of the two one-sided copies.</li>
 <li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the plain adjoint and its comparison with the other adjoints.</li>
 <li><a href="the-hermitian-sandwich-definition-and-multiplicativity.html">The Hermitian Sandwich: Definition and Multiplicativity</a>, for the real subcone $\tilde P=\tilde Q^{*}$.</li>
 <li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the four left and four right matrices and the sixteen cells entry by entry.</li>

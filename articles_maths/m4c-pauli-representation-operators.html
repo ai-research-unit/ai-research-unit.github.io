@@ -220,7 +220,7 @@ The two identities are the frame form of the stitch between the left and the rig
 $$
 \mathsf P=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
 $$
-symmetric and involutive, $\mathsf P^{\mathsf T}=\mathsf P=\mathsf P^{-1}$, of trace $2$ and determinant $-1$. In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$.</p>
+symmetric and involutive, $\mathsf P^{\mathsf T}=\mathsf P=\mathsf P^{-1}$, of trace $2$ and determinant $-1$. In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. At the operator level the permutation conjugates the two families, $SL_{\tilde Q}S^{-1}=R_{S\tilde Q}$, and the Peirce transpose carries the parameter through the exchange, $L(\tilde X)^{\mathsf T}=L(S\tilde X)$; both are proved in <em>The One-Sided Operators on the Biquaternion Algebra</em>, §<em>The Matrix Identity</em>.</p>
 <p><strong>The intersection.</strong> A matrix that is both block-diagonal with two equal blocks and block-scalar with four scalar blocks is a scalar matrix:
 $$
 \mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\cdot\mathrm I_4 .
@@ -233,7 +233,7 @@ $$
 of complex dimension $2\cdot4=8$: the first slot is free, and the second is spanned by $\mathrm I_2$ and the matrix itself, by Cayley–Hamilton. For a scalar element the commutant is all of $M_4(\mathbb{C})$, of dimension sixteen. The minimal polynomial is the one of the entry matrix in both cases, of degree two, and it does not square: the regular matrix is never nonderogatory, although its characteristic polynomial has degree four.</p>
 <p><strong>The compression.</strong> In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of <em>$M_2(\mathbb{C})$ Pauli Representation : Operators</em>.</p>
 <p><strong>The general level.</strong> A matrix of $M_4(\mathbb{C})$ that is neither in $\mathbb{B}_L$ nor in $\mathbb{B}_R$ is still an endomorphism, and the frame gives its matrix. Such a matrix is a sum of two-sided products, but not necessarily a single one. The next sections compute the sixteen basis matrices of the product family, then measure how far a general matrix is from being a single product, through the coefficient matrix.</p>
-<h2 id="the-sixteen-matrices-math135">The Sixteen Matrices $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$</h2>
+<h2 id="the-sixteen-matrices-math137">The Sixteen Matrices $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$</h2>
 <h3 id="the-table-in-four-families">The Table in Four Families</h3>
 <p><strong>Definition.</strong> For $\mu,\nu\in\{t,x,y,z\}$ put
 $$
@@ -398,7 +398,7 @@ L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)
 =\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q).
 $$</p>
 <p><strong>On the basis.</strong> The evaluation reproduces the four family formulas of §<em>The Table in Four Families</em>: the identity, the right copy, the left copy and the nine cells. It is a $4\times4$ matrix, the Kronecker product of two $2\times2$ matrices, and it is the ordinary product $L(\tilde Q)R(\tilde P)$ written in the model.</p>
-<h3 id="why-the-math241-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
+<h3 id="why-the-math243-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
 <p><strong>The dimensions.</strong> $L(\tilde Q)$ and $R(\tilde P)$ are $4\times4$ matrices. Their Kronecker product $L(\tilde Q)\otimes R(\tilde P)$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a complex space of dimension sixteen; the operator $L_{\tilde Q}R_{\tilde P}$ acts on $\mathbb{B}\cong\mathbb{C}^4$, of complex dimension four. The two cannot be the same matrix, and the $16\times16$ matrix does not represent the operator on the carrier.</p>
 <p><strong>The correct product.</strong> The matrix of the operator is the ordinary product $L(\tilde Q)R(\tilde P)$, of size $4\times4$. The algebra-level construction is the tensor product of algebras
 $$
@@ -473,7 +473,7 @@ $$
 8-1=7.
 $$
 The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde P=0$ collapse. The image is the seven-dimensional cone of the next subsections.</p>
-<h3 id="the-coefficient-matrix-math327">The Coefficient Matrix $c(M)$</h3>
+<h3 id="the-coefficient-matrix-math329">The Coefficient Matrix $c(M)$</h3>
 <p><strong>Definition.</strong> By §<em>The Sixteen Matrices $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$</em>, every $M\in M_4(\mathbb{C})$ has a unique expansion
 $$
 M=\sum_{\mu,\nu}c_{\mu\nu}L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}.
@@ -489,7 +489,7 @@ $$
 M=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}},
 $$
 so $c(M)=[Q][P]^{\mathsf T}$. The coefficient matrix of a product is a rank-one matrix, and every rank-one matrix arises this way. This is the source of the criterion of §<em>The Criterion for a Single Product</em>.</p>
-<h3 id="the-length-math343">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
+<h3 id="the-length-math345">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
 <p><strong>Definition.</strong> The <strong>length</strong> $\ell(M)$ is the least $r\ge0$ such that $M$ is a sum of $r$ products; $\ell(0)=0$.</p>
 <p><strong>Theorem (length is the rank).</strong> For every $M\in M_4(\mathbb{C})$,
 $$
@@ -612,7 +612,7 @@ $$
 Both are single products, and both are contained in the cone. Their intersection is the scalars $\mathbb{C}\cdot\mathrm I_4$, by §<em>The One-Sided Operators</em>.</p>
 <p><strong>The cone is larger.</strong> A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.</p>
 <p><strong>The Hermitian subcone.</strong> The Hermitian sandwich is the subcone $\tilde P=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.</p>
-<h3 id="math508-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
+<h3 id="math510-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
 <p><strong>The matrix.</strong> Let $E_{11}$ be the first matrix unit in the frame. Its coefficient matrix is
 $$
 c(E_{11})=\frac14
@@ -870,7 +870,7 @@ $$
 $$
 Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §<em>The Table in Four Families</em>; the choice of the five is the choice of a frame.</p>
 <p><strong>The cells.</strong> The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.</p>
-<h3 id="the-normal-form-and-the-pair-math662">The normal form and the Pair $(\beta,\delta)$</h3>
+<h3 id="the-normal-form-and-the-pair-math664">The normal form and the Pair $(\beta,\delta)$</h3>
 <p><strong>The pair.</strong> Let $\beta,\delta$ be unit spatial directions, orthogonal:
 $$
 \beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta.
@@ -1182,11 +1182,9 @@ In the frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1
 <li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the same operators in the axis-free basis.</li>
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.</li>
 <li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.</li>
-<li><a href="the-left-regular-operators-on-the-biquaternion-algebra.html">The Left Regular Operators on the Biquaternion Algebra</a>, for $L$ and the four left matrices.</li>
-<li><a href="the-right-regular-operators-on-the-biquaternion-algebra.html">The Right Regular Operators on the Biquaternion Algebra</a>, for $R$ and the four right matrices.</li>
+<li><a href="the-one-sided-operators-on-the-biquaternion-algebra.html">The One-Sided Operators on the Biquaternion Algebra</a>, for $L$, $R$ and the four matrices of each side.</li>
 <li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the ambient operator space and its coordinate column.</li>
 <li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.</li>
-<li><a href="the-commutant-of-the-two-regular-families.html">The Commutant of the Two Regular Families</a>, for the intersection of the two one-sided copies.</li>
 <li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the plain adjoint and its comparison with the other adjoints.</li>
 <li><a href="the-hermitian-sandwich-definition-and-multiplicativity.html">The Hermitian Sandwich: Definition and Multiplicativity</a>, for the real subcone $\tilde P=\tilde Q^{*}$.</li>
 <li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the $2\times2$ unit images, the four left and four right matrices, the exchange $\mathsf P$ and the sixteen cells entry by entry.</li>
