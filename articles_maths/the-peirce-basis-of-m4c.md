@@ -121,6 +121,6 @@ A Peirce basis of $M_4(\mathbb{C})$ is a choice $E_{kl}\in A_{kl}$ with $E_{kl}E
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce units and the gauge.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the lines and the rule.
-- [Spinors as Peirce Coordinates in $M_4(\mathbb{C})$](spinors-as-peirce-coordinates-in-m4c.html), for the columns of the array.
+- [Spinors as Coordinates in $M_4(\mathbb{C})$](spinors-as-coordinates-in-m4c.html), for the columns of the array.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the simple nilpotents and the same torus.
 - [The Peirce Basis in $n$ Dimensions](the-peirce-basis-in-n-dimensions.html), for the general statement.

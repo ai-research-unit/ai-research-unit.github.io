@@ -1,4 +1,4 @@
-# __Spinors as Peirce Coordinates in $M_3(\mathbb{C})$__
+# __Spinors as Coordinates in $M_3(\mathbb{C})$__
 
 ## Introduction
 

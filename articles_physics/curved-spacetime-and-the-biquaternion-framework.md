@@ -14,6 +14,8 @@ Three claims organise the discussion, and they are worth stating at the outset, 
 
 **Third, a general curved metric can be carried, but only by inserting a frame field (a tetrad).** The algebra then supplies the local Lorentz group at every point, and can even supply the connection and its curvature as elements of its own Lie subspace; it supplies nothing that determines them. Any four-dimensional real vector space with a form of signature $(3,1)$ would do the same work at each point, so nothing distinctive about $\mathbb{B}$ is put to the test along this route.
 
+One family of frames deserves separate mention, because it is the one in which the algebra contributes more than a bilinear form. The Kerr–Schild metrics are the orbit of the flat form under a shear along a null direction, and the shear's generator is square-zero for the reason the corpus already owns: a null direction is a zero divisor. That single vanishing square is what makes the Kerr–Schild deformation affine in its scalar function, unimodular and invertible in closed form, what keeps its null direction fixed and therefore null, and why the class contains a vacuum plane-fronted wave while the local-scale class contains none. It supplies no dynamics either.
+
 The article closes by separating what has been constructed from what remains an agenda. The separation is stark: the kinematical fibre of tetrad gravity is present, its dynamics is absent, and the informational sector $\mathbb{M}_+$ has no curved-space treatment at all.
 
 The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$, with $i^2=-1$, commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. For two observables of the informational sector the plain form is $\langle\tilde H_1,\tilde H_2\rangle=\mathrm{Sc}(\tilde H_1\tilde H_2)$, read as the trace pairing $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
@@ -160,7 +162,7 @@ $$
 \mathrm{Ric}=-\frac{r_s^2\,e^{-r_s/r}}{2r^4},
 $$
 
-in the corpus's curvature convention, all three vanishing as $r\to\infty$. Truncated at first order, $f^2=1-r_s/r$, the line element is the isotropic weak-field form $ds^2=-(1-r_s/r)c_0^2d{t'}^2+(1+r_s/r)(dr^2+r^2d\Omega^2)$; that expansion **is** the Schwarzschild exterior to first order in $r_s/r$, and it is Ricci-flat to that order, but the truncated metric kept exactly still has $\mathrm{Ric}_{11}=-r_s^2/\bigl(r^2(r-r_s)^2\bigr)$. The classical tests the paper then computes are those of the first-order truncation.
+in the corpus's curvature convention, all three vanishing as $r\to\infty$. Truncated at first order, $f^2=1-r_s/r$, the line element is the isotropic weak-field form $ds^2=-(1-r_s/r)c_0^2d{t'}^2+(1+r_s/r)(dr^2+r^2d\Omega^2)$; that expansion **is** the Schwarzschild exterior to first order in $r_s/r$, and it is Ricci-flat to that order. The family's own line element with the truncated profile left unexpanded, $ds^2=-(1-r_s/r)c_0^2d{t'}^2+(dr^2+r^2d\Omega^2)/(1-r_s/r)$, is a different metric and is not Ricci-flat: it has $\mathrm{Ric}_{00}=-r_s^2/(2r^4)$ and $\mathrm{Ric}_{11}=-r_s^2/\bigl(r^2(r-r_s)^2\bigr)$. The classical tests the paper then computes are those of the first-order truncation.
 
 The same computation settles what the instance can and cannot show. Within Waser's family, where the spatial part is forced to follow the time profile, the Ricci tensor has only two independent components,
 
@@ -169,7 +171,7 @@ $$
 \mathrm{Ric}_{11}\propto rff''-3r{f'}^2+2ff',
 $$
 
-so $\mathrm{Ric}_{\mu\nu}=0$ forces ${f'}^2=0$: the inverse-squared spatial part does not restore a non-flat vacuum member, it removes it. Free the radial leg instead, keeping the same profile $f^2=1-r_s/r$,
+the other two follow from these, $\mathrm{Ric}_{22}=(r^2/f^4)\,\mathrm{Ric}_{00}$ and $\mathrm{Ric}_{33}=\sin^2\theta\,\mathrm{Ric}_{22}$, so $\mathrm{Ric}_{\mu\nu}=0$ forces ${f'}^2=0$: the inverse-squared spatial part does not restore a non-flat vacuum member, it removes it. Free the radial leg instead, keeping the same profile $f^2=1-r_s/r$,
 
 $$
 ds^2=-f^2c_0^2\,d{t'}^2+\frac{dr^2}{f^2}+r^2\,d\Omega^2 ,
@@ -209,6 +211,119 @@ Two honest qualifications keep this from sounding like more than it is.
 First, *carrying is not deriving*. The frame field is inserted by hand, and it is subject to no condition from the algebra. Every Lorentzian metric, including every vacuum spacetime, is representable; the framework excludes nothing. That is not a success but an emptiness: the entire content of the construction is the sixteen functions, and the algebra contributes only a fixed four-dimensional real vector space with a form of signature $(3,1)$, which any such space would contribute equally. Beyond that one quadratic form, nothing that distinguishes $\mathbb{B}$ is used: writing $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$ calls on the biquaternion norm and on nothing else — not the quaternionic multiplication, not the two-sector decomposition, not the complex structure.
 
 Second, *this route does not make the complex structure local*. The frame field is a real linear map at each point; the imaginary direction of $\mathbb{B}$ remains globally the coefficient of $e_t$ in a fixed basis. The framework's local complex structure and the tetrad's local frame are different devices, and neither contains the other: the frame route gives general relativity's kinematics and abandons the framework's own locality proposal, while the local-scale route keeps that proposal and cannot reach even a non-flat Ricci-flat vacuum. This tension is a finding of this article, not a problem it resolves. One thing the external record shows is that the frame **language**, rather than the algebra, is where the tension lives: a construction recorded below, under *An External Claim That the Bundle Basis Is Biquaternionic*, carries the same metric with no vierbein at all — the basis is four $\mathbb{M}_-$-valued fields $s_\mu$ themselves — and derives its connection from a condition on the basis rather than inserting one.
+
+## The Kerr–Schild Form: a Null Shear of the Flat Form
+
+Route Two carries any Lorentzian metric, and its verdict is that the algebra contributes nothing beyond a bilinear form. There is one family of frames in which it contributes a little more, and it happens to be the family in which the exact solutions the corpus's neighbouring articles work with are written. It is the **Kerr–Schild form**,
+
+$$
+g_{\mu\nu} = \eta_{\mu\nu} + 2h\,k_\mu k_\nu,
+\qquad
+\sum_\mu\eta_{\mu\mu}k_\mu k_\mu = 0,
+$$
+
+with $k_\mu$ a null covector and $h$ a scalar function, both otherwise free. Kerr, Kerr–Newman and Schwarzschild are all of this shape, with $k_\mu$ the repeated principal null direction of the congruence the solution is built on.
+
+The claim of this section is exact and narrow. The family is the orbit of the flat form under a **shear along a null direction**; the shear's generator is square-zero because a null direction is a zero divisor; and the properties usually listed one at a time for the family are the faces of that single vanishing square. Nothing is claimed about content: $h$ and $k_\mu$ stay free, and no equation of the framework fixes them.
+
+One convention is needed for the components, and it is the one the index rules impose: every index stays low, and where a component would otherwise be raised the diagonal weight carries the sign. The rigid material frame of the Dirac section, $\tilde E_0 = ie_t$ and $\tilde E_k = \vec e_k$, has $\langle\tilde E_\mu,\tilde E_\nu\rangle_\natural = \eta_{\mu\nu}$, so the datum $k_\mu$ names an element of $\mathbb{M}_-$,
+
+$$
+\tilde k = \sum_\mu \eta_{\mu\mu}k_\mu\,\tilde E_\mu \in \mathbb{M}_-,
+\qquad
+\langle\tilde E_\mu,\tilde k\rangle_\natural = k_\mu,
+\qquad
+\langle\tilde k\rangle_\natural = \sum_\mu \eta_{\mu\mu}k_\mu k_\mu = 0 ,
+$$
+
+and the null covector is exactly the element of vanishing norm. Normalised this way, $\tilde k$ makes the shear below reproduce $g_{\mu\nu} = \eta_{\mu\nu} + 2h\,k_\mu k_\nu$ with no weight anywhere, which is the standard Kerr–Schild form. (The neighbouring article *The Algebrodynamical Programme* writes the same deformation as $\eta_{\mu\nu} + h\,k_\mu k_\nu$, so its profile is half of this one.)
+
+### The Operator a Null Element Defines
+
+The vanishing of the norm is the corpus's own criterion for a zero divisor, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*). What the Kerr–Schild form uses is not the element but one operator built from it,
+
+$$
+N_{\tilde k} : \mathbb{M}_- \to \mathbb{M}_-,
+\qquad
+N_{\tilde k}(X) = \tilde k\,\langle X,\tilde k\rangle_\natural ,
+$$
+
+a real-linear map of $\mathbb{M}_-$ into itself, the scalar $\langle X,\tilde k\rangle_\natural$ being real on $\mathbb{M}_-$. Its square vanishes,
+
+$$
+N_{\tilde k}^{\,2}(X) = \tilde k\,\langle X,\tilde k\rangle_\natural\,\langle\tilde k\rangle_\natural = 0 ,
+$$
+
+and the only step worth naming is the one that makes it vanish: $\langle X,\tilde k\rangle_\natural$ is a scalar, hence central, so it passes through $\tilde k$ and leaves the norm behind. The trace carries the same condition, $\mathrm{tr}\,N_{\tilde k} = \langle\tilde k\rangle_\natural = 0$, and the rank is one.
+
+The distinction from **left multiplication**, the map the algebra supplies for nothing, must also be kept. For an element of $\mathbb{M}_-$ that map is never square-zero unless $\tilde k = 0$: a null $\tilde k = iq_t + \vec q$ with $q_t \ne 0$ satisfies $\tilde k^2 = 2iq_t\tilde k$, which is the Cayley–Hamilton identity $M^2 = (\mathrm{tr}\,M)M$ of the $2\times2$ image at vanishing determinant, while $q_t = 0$ forces $\vec q = 0$ by the null condition, so the only nilpotent element of $\mathbb{M}_-$ is zero. Nilpotent null elements do exist in the algebra at large — $\vec e_x + i\vec e_y$ has square zero and vanishing norm — but they are not material elements, their spatial coefficients being complex. The operator that is square-zero for every null direction of $\mathbb{M}_-$ is the rank-one $N_{\tilde k}$, and the distinction is the one *The Square-Zero Element* and *The Light Cone as the Biquaternion Zero-Divisor Cone* already draw between the square-zero cone and the zero-divisor cone. The Kerr–Schild shear is built on the second operator, not the first.
+
+### The Frame It Produces, and Four Properties That Are One
+
+The frame is the rigid frame carried by the shear, and the shear is the exponential of the square-zero operator: $T = \exp(hN_{\tilde k}) = \mathrm{id} + hN_{\tilde k}$, the series terminating at the linear term. On the rigid frame,
+
+$$
+T\tilde E_\mu = \tilde E_\mu + h\,\tilde k\,\langle\tilde E_\mu,\tilde k\rangle_\natural = \tilde E_\mu + h\,k_\mu\,\tilde k ,
+$$
+
+and the metric is Route Two's Gram matrix of the result. The computation is one line, and its two cross terms are the same term twice:
+
+$$
+\langle T\tilde E_\mu,T\tilde E_\nu\rangle_\natural
+= \eta_{\mu\nu} + 2h\,k_\mu k_\nu + h^2 k_\mu k_\nu\langle\tilde k\rangle_\natural
+= \eta_{\mu\nu} + 2h\,k_\mu k_\nu .
+$$
+
+The four properties usually listed for the class are the single vanishing $N_{\tilde k}^2 = 0$, read in four places.
+
+- **The deformation is affine in $h$.** The quadratic term is $k_\mu k_\nu\langle\tilde k\rangle_\natural$ and it vanishes with the null condition, so the family is a straight line through $\eta$ and not a nonlinear orbit. This is what makes the class an ansatz at all, and it is the null condition read at second order.
+- **The metric is unimodular.** $T$ is unipotent, $\det T = \exp(h\,\mathrm{tr}\,N_{\tilde k}) = 1$, hence $\det g = (\det T)^2\det\eta = \det\eta$. In this chart $\sqrt{-\det g} = 1$, and the Laplace–Beltrami operator of the Dirac section loses its measure factor. Unimodularity is the tracelessness of $N_{\tilde k}$, which is the null condition read as a trace.
+- **The inverse is the flat inverse with the sign of the correction reversed.** $T^{-1} = \exp(-hN_{\tilde k}) = \mathrm{id} - hN_{\tilde k}$, so the metric of the inverse frame is $\eta_{\mu\nu} - 2h\,\eta_{\mu\mu}\eta_{\nu\nu}k_\mu k_\nu$: the flat inverse array with the correction's sign reversed, the two weights being the ones the index rules put where the correction would otherwise carry raised labels. The square, once more.
+- **The direction is fixed, and it stays null.** $N_{\tilde k}\tilde k = \tilde k\langle\tilde k\rangle_\natural = 0$, so $T\tilde k = \tilde k$: the shear does not move the null element at all. The norm $\langle\tilde k\rangle_\natural$ carries no frame, so $\tilde k$ is null for the deformed metric exactly as it was for the flat one. At the level of arrays, the inverse array returns from $k_\mu$ the vector $\eta_{\mu\mu}k_\mu$ that the flat array returns, because its correction is $-2h\,\eta_{\mu\mu}k_\mu$ times the vanishing scalar $\sum_\nu\eta_{\nu\nu}k_\nu^2$; nullity is what makes the two agree, not an approximation. That is why the congruence of a Kerr–Schild solution is carried into the curved metric unchanged.
+
+All four were recomputed here on a hundred random null directions with four random values of $h$ each — the affineness, $\det g = \det\eta$, the closed-form inverse array, $T\tilde k = \tilde k$, and nullity in the deformed metric — together with the column form $T\tilde E_\mu = \tilde E_\mu + hk_\mu\tilde k$ and the kernel $\tilde k^{\perp}$ fixed pointwise; no residual exceeded $10^{-9}$. Unipotence was checked in its defining form, $(T - \mathrm{id})^2 = h^2N_{\tilde k}^2 = 0$, which holds to $10^{-13}$; the spectrum $\{1\}$ follows from it, whereas an eigenvalue solver returns $1$ only to $10^{-7}$, the usual loss of half the digits on a Jordan block.
+
+### What the Shear Leaves Alone
+
+Since $N_{\tilde k}$ has rank one, its kernel is the hyperplane orthogonal to $\tilde k$,
+
+$$
+\ker N_{\tilde k} = \left\{ X \in \mathbb{M}_- : \langle X,\tilde k\rangle_\natural = 0 \right\} = \tilde k^{\perp},
+$$
+
+so $T$ fixes $\tilde k^{\perp}$ pointwise and shears only along the one remaining direction. In the real slice, where $k_\mu$ and $h$ are real and $g$ is a real Lorentzian metric, that is the whole geometric content: the shear is the identity on the degenerate three-plane that contains the null direction, and it moves nothing else.
+
+Complexified, the statement is sharper, and the complexification is the algebra's own. $\mathbb{M}_-$ is a **real** four-plane: its elements are $\sum_\mu\eta_{\mu\mu}k_\mu\tilde E_\mu$ with real $k_\mu$, and its null cone is the ordinary light cone, in which the largest totally null subspace has dimension one. But $i\mathbb{M}_- = \mathbb{M}_+$ — the mark $*$ is conjugate-linear, so $(i\tilde Q)^{*} = -i\tilde Q^{*} = i\tilde Q$ for $\tilde Q\in\mathbb{M}_-$ — and therefore $\mathbb{M}_-\otimes_\mathbb{R}\mathbb{C} = \mathbb{M}_-\oplus i\mathbb{M}_- = \mathbb{B}$. In that complex four-space the norm is complex and a null element lies in exactly **two** maximal totally null planes, each two-dimensional and both inside $\tilde k^{\perp}$; they are the **left and right** null planes that the Kerr–Schild literature separates. Since the shear is the identity on the whole of $\tilde k^{\perp}$, it fixes both planes **point by point**, so the null planes of the congruence are null for the curved metric without approximation. That is the algebraic content of the property the Kerr–Schild literature uses as a working tool.
+
+### A Constant Direction, and a Vacuum Wave
+
+With $h$ and $k_\mu$ constant, $T$ is a constant invertible map and $g$ is $\eta$ in the chart $y^\alpha = T^\alpha{}_\mu x^\mu$; the metric is flat. The remark is small, and it marks a limit of Route Two's flatness criterion: a frame that is pure rotor gauge is flat, but the converse fails. A constant shear is not a rotor, and it produces no curvature, because it is a change of chart rather than a change of frame. Flatness of the frame has at least these two independent sources, and the second is a diffeomorphism, the object the algebra does not have.
+
+With $k_\mu$ constant and $h$ varying, the same family is curved, and its member is the wave the neighbouring articles meet as a gravitational wave. Take $k_\mu$ with $k_0 = 1$ and $k_3 = 1$, null since $-1+1=0$, and pass to the null coordinates $u = t'+z$ and $v = t'-z$. The metric reads
+
+$$
+ds^2 = -du\,dv + dx^2 + dy^2 + 2h(u,x,y)\,du^2 ,
+$$
+
+and its Ricci tensor has a single independent component, in the curvature convention of *Curvature and Geodesics* used throughout this article,
+
+$$
+\mathrm{Ric}_{uu} = -\Bigl(\frac{\partial^2 h}{\partial x^2} + \frac{\partial^2 h}{\partial y^2}\Bigr),
+$$
+
+all other components vanishing. The metric is therefore Ricci-flat exactly when $h$ is harmonic in the two transverse coordinates. For $h = x^2-y^2$ and for $h = e^x\cos y$ the Ricci tensor vanishes and the Riemann tensor does not, so both are vacuum solutions; for constant $h$ the Riemann tensor vanishes, as the chart argument requires. These are plane-fronted gravitational waves with a constant null direction, written in the algebra's own notation, with one free harmonic function.
+
+The contrast with Route One deserves a sentence, because it is the sharpest in the article. Within the local-scale class Ricci-flatness forces flatness, so that route carries no vacuum gravitational wave at all. The frame route carries one, and the Kerr–Schild sub-class carries one with a constant direction and a single harmonic function. What neither carries is a reason for the function: $h$ is inserted, and the algebra supplies the shape of the ansatz and the four identities that shape entails, and nothing else.
+
+### What the Instance Is Worth
+
+The instance is worth its algebra, and no more.
+
+It is worth the shape of the ansatz. Route Two counts sixteen frame functions modulo six rotor parameters; the Kerr–Schild sub-class fixes the frame once and for all to be the rigid frame carried by one null shear, and the metric that results is governed, in a fixed chart, by three functions of position — the direction of $k_\mu$ up to scale and the amplitude $h$. Three functions rather than ten is an economy, not a content: all three remain free.
+
+It is worth the four identities, which the literature states one at a time and which are one line here, and the unimodularity in particular, because in a Kerr–Schild chart $\sqrt{-\det g} = 1$, so the Laplace–Beltrami operator inside the Lichnerowicz square of the Dirac section carries no measure factor at all.
+
+What it is not worth is dynamics. That a member is Ricci-flat is a property of the inserted function, checked and not produced. And the two objects that would carry the physical content sit outside the algebra: for the Kerr–Newman solution the null direction is the principal null congruence selected by the Kerr theorem, and $h$ is fixed by the Einstein–Maxwell equations. Both belong to the corpus elsewhere — the congruence to *Congruence Twistors and the Fields They Generate* and to *The Algebrodynamical Programme*, the ring the solution carries to *The Complex-Displaced Singularity and the Circle Electron* — and in both the algebra enters as the language of the congruence, not as the source of the equation. On this sharper instance the section therefore repeats the conclusion of Route Two: carrying is not deriving.
 
 ## Route Three: The Connection, and the Two-Sided Derivative
 
@@ -519,7 +634,7 @@ whose last two terms are the same two-sided sandwiching — left action of $\Ome
 
 The boundary can be drawn as a list, and drawing it is this article's main result.
 
-**Constructed** (algebraic facts, each recomputed for this article). The pointwise metric of $\mathbb{M}_-$ as the polar form of the biquaternion norm, with signature $(3,1)$. Its invariance under rotor conjugation. The representation of an arbitrary Lorentzian metric by a frame field $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, and the local $SL(2,\mathbb{C})$ gauge invariance of that representation. The identification of the rotor group's Lie algebra with the six-dimensional traceless subspace of $\mathbb{B}$. The two-sided infinitesimal action of a connection, and the tracelessness of a rotor field's logarithmic derivative. The curved biquaternion Dirac operator $\tilde F_\mu D_\mu$, built from the dual frame and the one-sided spinor derivative $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$, with its covariant connection transformation, its exact flat limit, and the Lichnerowicz square $(\tilde F_{\mu} D_{\mu})^2 = -\Box_g + \tfrac14 \mathrm{Ric}$ of its spinor-module reading. The induced metrics of the local-scale route in both interpretations, with the flatness of Reading A and the closed-form curvature of Reading B, and the result that within Reading B's metric class Ricci-flatness implies flatness.
+**Constructed** (algebraic facts, each recomputed for this article). The pointwise metric of $\mathbb{M}_-$ as the polar form of the biquaternion norm, with signature $(3,1)$. Its invariance under rotor conjugation. The representation of an arbitrary Lorentzian metric by a frame field $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, and the local $SL(2,\mathbb{C})$ gauge invariance of that representation. The identification of the rotor group's Lie algebra with the six-dimensional traceless subspace of $\mathbb{B}$. The two-sided infinitesimal action of a connection, and the tracelessness of a rotor field's logarithmic derivative. The curved biquaternion Dirac operator $\tilde F_\mu D_\mu$, built from the dual frame and the one-sided spinor derivative $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$, with its covariant connection transformation, its exact flat limit, and the Lichnerowicz square $(\tilde F_{\mu} D_{\mu})^2 = -\Box_g + \tfrac14 \mathrm{Ric}$ of its spinor-module reading. The induced metrics of the local-scale route in both interpretations, with the flatness of Reading A and the closed-form curvature of Reading B, and the result that within Reading B's metric class Ricci-flatness implies flatness. The identification of the Kerr–Schild class as the orbit of the flat form under the unipotent null shear $\exp(hN_{\tilde k})$, with the affineness in $h$, the unimodularity $\det g=\det\eta$, the closed-form inverse and the direction being fixed and therefore still null, all read as the one vanishing square $N_{\tilde k}^2=0$, and the plane-fronted wave as its constant-direction member.
 
 **Agenda** (nothing constructed). An action principle or field equation for the frame or the connection, and hence any Einstein equation. Coupling to sources, with the bookkeeping problem that the gravitating objects are symmetric rank-2 tensors, $\left(1,1\right)\oplus\left(0,0\right)$, while the framework's own fields are four-vectors in $\mathbb{M}_-$. The curved-space form of the biquaternion **Maxwell** equation written in the framework's own notation, for which the background-dependence of $\tilde{\nabla}$ is precisely the obstacle; the corresponding **Dirac** form is constructed in the section *The Biquaternion Dirac Equation on a Curved Background* above, on a background whose frame and connection are still inserted by hand and whose current source remains the spinor-module object of the companion articles. The **coupling ambiguity** of the Lorentz gauge group: the Dirac form written here is the substituted form of a gauged flat equation, and the source recorded in *Lorentz Gauging and the Euler–Lagrange Variation* shows that the varied form differs, because the Lorentz generator does not commute with the generator cell; whether the corpus should adopt the varied form, or the world-index formalism that removes the difference, is open. Global and topological structure of every kind: the algebra is a point, so causal structure, horizons, singularities, and topology are outside it, and even the existence of spinor fields on a manifold is a topological condition — the vanishing of the second Stiefel–Whitney class — that the algebra cannot see; the globalisation of the spinor module to a bundle over a curved background is recorded as a separate open item in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*. The discrete symmetries, which are not in the connected rotor group. The informational sector, as above. And empirical contact, which remains the framework's central open question and is not advanced by anything here.
 
@@ -584,7 +699,9 @@ The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ o
 
 Within the second interpretation's class — one function, no shift, flat spatial slices — Ricci-flatness forces $u$ to be affine in the spatial coordinates, and every such metric is flat. The class therefore contains no non-flat vacuum geometry: no Weyl curvature, no gravitational waves, no black-hole exteriors. The local scale factor is not the route to general relativity. Nor is it the same object as the metric: $c$ is the Maxwell speed of a medium, and the standard effective metric of a dielectric is a metric for light, not for free fall.
 
-A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, so curvature is exactly the non-gauge part of the frame. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{R} + \tilde{R}G^{*}$, not the commutator, the two differing precisely for the boosts.
+A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, a condition that is sufficient and not necessary, so curvature can only come from the part of the frame that is neither a rotor gauge nor a change of chart. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{R} + \tilde{R}G^{*}$, not the commutator, the two differing precisely for the boosts.
+
+One sub-class of frames is worth separating because the algebra contributes more to it than a bilinear form, and it is the Kerr–Schild class, $g_{\mu\nu} = \eta_{\mu\nu} + 2h\,k_\mu k_\nu$ with $\sum_\mu\eta_{\mu\mu}k_\mu k_\mu = 0$. A null element is a zero divisor, and the operator built from it, $N_{\tilde k}(X) = \tilde k\langle X,\tilde k\rangle_\natural$, is square-zero and traceless for that reason alone; the frame is the rigid frame carried by the unipotent shear $\exp(hN_{\tilde k}) = \mathrm{id} + hN_{\tilde k}$, and $g$ is its Gram matrix. The affineness of the deformation in $h$, the unimodularity $\det g = \det\eta$, the inverse array $\eta_{\mu\nu} - 2h\,\eta_{\mu\mu}\eta_{\nu\nu}k_\mu k_\nu$, and the direction's being fixed and still null are four faces of that vanishing square; the shear is the identity on the three-plane orthogonal to $\tilde k$, and therefore on both totally null planes of the complexification, which is why the null planes of the congruence survive unchanged. With a constant direction and a transverse harmonic $h$ the class contains a vacuum plane-fronted wave, so the frame route carries a vacuum gravitational wave that the local-scale route cannot; with $h$ and $k_\mu$ both constant it is flat, which shows that the rotor criterion for flatness is sufficient and not necessary, since a constant shear is a change of chart rather than a change of frame. None of it is dynamics: the direction and $h$ are three free functions, and for Kerr–Newman they are fixed by the Kerr theorem and the Einstein–Maxwell equations, not by the algebra.
 
 The Dirac field lives on a different module from the four-vector, and its curved equation has a different derivative. The spinor module carries the **left** action $\psi \mapsto \tilde U\psi$, not the two-sided rotor conjugation, so its covariant derivative is the **one-sided** $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$, with $\vec\Gamma_\mu$ in the Lie subspace; covariance fixes the inhomogeneous transformation $\vec\Gamma_\mu \mapsto \tilde U\vec\Gamma_\mu\tilde U^{-1} - (\partial/\partial x_\mu\,\tilde U)\tilde U^{-1}$. With the dual frame $\tilde F_\mu = g_{\mu\nu}\tilde E_\nu$ this gives the curved biquaternion Dirac operator $\tilde F_\mu D_\mu$, whose massless equation is $\tilde F_{\mu} D_{\mu}\psi = 0$ and whose massive form is the same chiral pair as in the flat case, $\tilde F_{\mu} D_{\mu}\tilde\Psi_R = m\tilde\Psi_L$, $(\tilde F_{\mu} D_{\mu})^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, the mass being untouched by the curvature. The operator reduces exactly to $\tilde\nabla$ in the rigid material frame $\tilde E_0=ie_t$, $\tilde E_k=\vec e_k$ with vanishing connection, and its spinor-module square is the Lichnerowicz formula $(\tilde F_{\mu} D_{\mu})^2 = -\Box_g + \tfrac14 \mathrm{Ric}$, so the curvature couples to the field through the Ricci scalar even without a source. That much of the curved matter equation is now constructed in the framework's own notation. What remains is unchanged and unyielding: the frame and the connection are inserted by hand and satisfy no equation, the metric is not selected, the current that would source the coupled system is the spinor-module object carrying $iR_{\vec e_x}^{\mathrm{pau}}$ outside $\mathbb{B}$, and the global existence of spinor fields is a topological condition no local operator can see.
 
@@ -609,6 +726,11 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\tilde{\nabla} = e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k=-ie_t\partial/\partial t'+\sum_k\,\vec e_k\partial/\partial x_k$ | Biquaternionic gradient, $Q_t=ict'$; needs a global chart |
 | $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{R} = \sum_\mu\tilde{E}_\mu dx_\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | Metric carried by the frame field |
+| $k_\mu$, $\tilde k = \sum_\mu\eta_{\mu\mu}k_\mu\tilde E_\mu$ | Null covector and the null element it names: $\langle\tilde E_\mu,\tilde k\rangle_\natural = k_\mu$ and $\langle\tilde k\rangle_\natural = \sum_\mu\eta_{\mu\mu}k_\mu k_\mu = 0$; the weight $\eta_{\mu\mu}$ is the one the index rules put in place of a raised label |
+| $N_{\tilde k}(X) = \tilde k\langle X,\tilde k\rangle_\natural$ | Rank-one real-linear map of $\mathbb{M}_-$ built from a null element; $N_{\tilde k}^2 = 0$, $\mathrm{tr}\,N_{\tilde k} = \langle\tilde k\rangle_\natural = 0$ |
+| $T = \exp(hN_{\tilde k}) = \mathrm{id} + hN_{\tilde k}$ | The null shear, a unipotent map of $\mathbb{M}_-$; on the rigid frame $T\tilde E_\mu = \tilde E_\mu + hk_\mu\tilde k$, the Kerr–Schild frame |
+| $g_{\mu\nu} = \eta_{\mu\nu} + 2h\,k_\mu k_\nu$ | Kerr–Schild form: the orbit of $\eta$ under the null shear; $\det g = \det\eta$, and the inverse array is $\eta_{\mu\nu} - 2h\,\eta_{\mu\mu}\eta_{\nu\nu}k_\mu k_\nu$ |
+| $\tilde k^{\perp}$ | Kernel of $N_{\tilde k}$: the three-plane $\langle X,\tilde k\rangle_\natural = 0$, fixed pointwise by $T$ |
 | $\vec e_k$, $K_k = i\vec e_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
 | $\vec\Gamma_\mu$ | Connection 1-form, valued in the Lie subspace |
 | $D_\mu\tilde{Q} = \partial/\partial x_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$ | Covariant derivative on $\mathbb{M}_-$ (two-sided) |
@@ -636,6 +758,9 @@ What is missing is not a technical detail but the theory. Nothing determines the
 - Charles W. Misner, Kip S. Thorne, and John A. Wheeler, *Gravitation* (Freeman, 1973), for the tetrad formalism and the distinction between coordinate and orthonormal frames in general relativity.
 - Robert M. Wald, *General Relativity* (Chicago, 1984), for the metric, the curvature tensors, and the spinor formulation of curved spacetime.
 - A. Lichnerowicz, "Spineurs harmoniques," *Comptes Rendus de l'Académie des Sciences* **257** (1963) 7–9, for the square of the Dirac operator and the $\tfrac14 \mathrm{Ric}$ curvature term.
+- G. C. Debney, R. P. Kerr and A. B. Schild, "Solutions of the Einstein and Einstein–Maxwell Equations," *Journal of Mathematical Physics* **10** (1969) 1842, for the Kerr–Schild family whose null congruence is generated by the Kerr theorem: the electrovacuum solutions written in the form of the section *The Kerr–Schild Form: a Null Shear of the Flat Form*, with the profile function fixed by the field equations rather than by the algebra.
+- Alexander Burinskii, "Stringlike structures in the real and complex Kerr–Schild geometry," arXiv:1410.2462v1 (2014), for the same form as it is used in practice: $g_{\mu\nu} = \eta_{\mu\nu} + 2h\,e^3_\mu e^3_\nu$ with the null congruence $e^3$ selected by the Kerr theorem, the property that the null planes of the congruence remain null for the curved metric, and the reading of Kerr's congruence as a stringlike structure. Only the metric form and the plane property are taken from it here; the string interpretation and the material-space speculation that follow are not used.
+- H. Stephani, D. Kramer, M. MacCallum, C. Hoenselaers and E. Herlt, *Exact Solutions of Einstein's Field Equations*, 2nd ed. (Cambridge, 2003), for the Kerr–Schild class and for the plane-fronted waves with parallel rays, whose Ricci-flatness is the transverse harmonicity of the single profile function.
 - J. Fredsted, "Obtaining consistent Lorentz gauging for a gravitationally coupled fermion," arXiv:1906.12200v3 [physics.gen-ph] (2019), for the external construction recorded in *Lorentz Gauging and the Euler–Lagrange Variation*: the non-commutativity of Lorentz gauging with the Euler–Lagrange variation in the standard vierbein coupling of a Dirac fermion to gravity; the world-index formalism — the frame fields $n_\mu$ and $n_{\mu i}$, the matrices $M_\mu$ and $N_i$ with their Dirac-like algebra, and the covariant derivative carrying the explicit Levi-Civita connection — in which the two procedures commute; and the geometry of that formalism, in which the frame is covariantly constant, the connection is thereby solved in terms of the metric, its curvature is minus the Riemann tensor, and the gravitational action remains the Einstein–Hilbert one. Cited as an external claim; the source's equations were recomputed here, and the formalism is not adopted.
 - J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the external construction recorded in *An External Claim That the Bundle Basis Is Biquaternionic*: a coordinate-covariant and locally Lorentz invariant formalism in which the basis $s_\mu \in (\mathbb{C}\otimes\mathbb{H})_-$ is biquaternionic, the metric is the polar form $g_{\mu\nu} = \langle s_\mu, s_\nu\rangle$, and a single algebra-valued connection $\omega_\mu$ carries both the local $\mathrm{U}(1)$ freedom and the Lorentz freedom. Cited as an external construction that reproduces the frame route of this article in the source's notation; the corpus does not adopt it.
 - L. Parker and D. Toms, *Quantum Field Theory in Curved Spacetime: Quantized Fields and Gravity* (Cambridge, 2009), for the spinor covariant derivative, the Dirac equation on a curved background and its squared Klein–Gordon form.

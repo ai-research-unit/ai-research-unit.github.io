@@ -117,6 +117,8 @@ The resolution of the apparent paradox is a matter of particle number, not of th
 
 Two algebraic facts organise the problem, and they were established in the companion articles. The potential term is central — a scalar multiple of $e_t$ — so it acts trivially on the state module and only shifts the mass shell. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, the one term that couples the two minimal left ideals. The two ingredients of the Klein problem therefore act in orthogonal places: the potential is a central shift, the mass is a chirality mixing. The paradox is not caused by either alone but by the fact that the central shift can move the frequency past the mass gap, into the region where the two mass-shell roots exchange their roles.
 
+**The converse step.** A step in the mass is the other case: the mass is the chirality-mixing term of the pair, so a position-dependent mass shifts no frequency and cannot exchange the two mass-shell roots. When the local mass exceeds the energy the transmitted wave is evanescent rather than negative-frequency, the reflection is total, and the field penetrates the region of large mass only to a depth $1/\sqrt{M^2-E^2}$ in units $\hbar=c=1$. That is the confinement mechanism of the bag models of Bardeen, Chanowitz, Drell, Weinstein and Yang (1974), which use a scalar mass step rather than an electrostatic one for exactly this reason: a scalar step has no Klein threshold.
+
 ### The mass shell and the exchange of branches
 
 The free mass shell is
