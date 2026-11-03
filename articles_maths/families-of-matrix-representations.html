@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Families of Matrix Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="families-of-matrix-representations"><strong>Families of Matrix Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A matrix of a biquaternion needs two choices. The first is a frame, that is a basis of the algebra. The second is a side, left or right, that is the reading of $\tilde X\mapsto\tilde Q\tilde X$ or of $\tilde X\mapsto\tilde X\tilde Q$. Every frame gives two families of arrays, one for each side, and the families of different frames are not independent. The laws of the algebra force exact relations between them, and each relation is carried by a matrix.</p>
+<p><strong>The two kinds of matrix.</strong> One matrix changes the frame. It conjugates the arrays and leaves the element alone. One matrix changes the side. It is not a conjugation, because no conjugation can carry a left family onto a right one; it is a transposition followed by a congruence. Both matrices are read off the multiplication, so neither is an extra structure imported from outside.</p>
+<p><strong>Why the theory is general.</strong> The three laws of §<em>The Two Sides</em> hold in every frame and involve no coordinate at all. The invariants of §<em>What the Laws Give the Two Families</em> are therefore properties of the element, equal in the two sides and in every frame. Only the arrays depend on the frame, and the two matrices of §<em>The Switch Between the Left and the Right</em> and of §<em>The Matrix That Changes the Frame</em> say exactly how.</p>
+<p><strong>What this article is not.</strong> The objects here are arrays, their products, their transposes, their traces, their determinants and their spectra. Nothing else is used. The concrete families of four-dimensional arrays are computed in the model articles that follow this one in the category, and each of them is one instance of the general frame used below.</p>
+<h2 id="the-two-sides">The Two Sides</h2>
+<p><strong>The two matrices of an element.</strong> Fix a frame $\mathcal{F}=(f_1,f_2,f_3,f_4)$ of $\mathbb{B}$ and write $[\tilde X]_{\mu}$ for the $\mu$-th coordinate of $\tilde X$ in $\mathcal{F}$. The left matrix and the right matrix of $\tilde Q$ in this frame have for their $\nu$-th columns the coordinate columns of $\tilde Qf_\nu$ and of $f_\nu\tilde Q$,
+$$
+L_{\mathcal{F}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qf_\nu\bigr]_{\mu},\qquad
+R_{\mathcal{F}}(\tilde Q)_{\mu\nu}=\bigl[f_\nu\tilde Q\bigr]_{\mu}.
+$$
+Both are $4\times4$ complex arrays. The element does not depend on $\mathcal{F}$; the array does. Below the frame is fixed and the subscript is dropped.</p>
+<p><strong>The three laws.</strong> For all $\tilde P,\tilde Q\in\mathbb{B}$,
+$$
+L(\tilde P\tilde Q)=L(\tilde P)L(\tilde Q),\qquad
+R(\tilde P\tilde Q)=R(\tilde Q)R(\tilde P),\qquad
+L(\tilde P)R(\tilde Q)=R(\tilde Q)L(\tilde P).
+$$
+The first is the associativity $(\tilde P\tilde Q)\tilde X=\tilde P(\tilde Q\tilde X)$ read on the left. The second is the associativity $(\tilde X\tilde Q)\tilde P=\tilde X(\tilde Q\tilde P)$ read on the right, and it is the interesting one: the right family carries the product backwards. The third holds because the two factors sit on opposite sides of the argument and never meet.</p>
+<p><strong>The three laws need no coordinates.</strong> Each is an identity between products of elements, read through the columns of a frame. A change of frame conjugates every array and therefore preserves all three. This is why the statements below are frame-free and why only the displays are frame-bound.</p>
+<p><strong>Faithfulness.</strong> If $L(\tilde Q)=0$ then $\tilde Qf_\nu=0$ for each $\nu$, and since the four $f_\nu$ span, $\tilde Q=0$; the same argument holds on the right. So each side is an injective image, of complex dimension four inside the sixteen of $M_4(\mathbb{C})$, and an element is known by its left matrix alone and by its right matrix alone.</p>
+<p><strong>The centre is the coincidence locus.</strong> The identity $L(\tilde Q)=R(\tilde Q)$ says $\tilde Q\tilde X=\tilde X\tilde Q$ for every $\tilde X$, that is $\tilde Q\in\mathbb{C}e_t$. So the two families agree on the centre and nowhere else.</p>
+<p><strong>A central element has one matrix, and it is scalar.</strong> If $\tilde Q=\lambda e_t$ then $L(\tilde Q)=R(\tilde Q)=\lambda\mathrm I_4$. This is the only case in which a matrix of the left family is also a matrix of the right family.</p>
+<h2 id="what-the-laws-give-the-two-families">What the Laws Give the Two Families</h2>
+<p><strong>The left family is the algebra and the right family is its opposite.</strong> The first law makes $\mathbb{B}_L=\{L(\tilde Q)\}$ a subalgebra of $M_4(\mathbb{C})$ isomorphic to $\mathbb{B}$. The second makes $\mathbb{B}_R=\{R(\tilde Q)\}$ a subalgebra isomorphic to the opposite algebra $\mathbb{B}^{\mathrm{opp}}$. These are abstractly the same algebra, because $M_2(\mathbb{C})$ is isomorphic to its opposite through transposition; this is why a switch between the sides can exist at all.</p>
+<p><strong>Every left matrix commutes with every right matrix.</strong> The left matrix of any element commutes with the right matrix of any other, and the two elements need not be related. So the left family lies in the commutant of the right family and conversely.</p>
+<p><strong>The two families meet in the scalars.</strong> Suppose $L(\tilde P)=R(\tilde Q)$. Applying both to $e_t$ gives $\tilde P=\tilde Q$, and then $L(\tilde Q)=R(\tilde Q)$, so $\tilde Q$ is central and the common matrix is scalar. Hence
+$$
+\mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\,\mathrm I_4,
+$$
+a line, and the two four-dimensional families together span seven dimensions, not eight. The missing dimension is the one they share.</p>
+<p><strong>The invariants agree.</strong> A transposition and a conjugation by a fixed matrix change neither a trace nor a determinant, so the two matrices of an element carry the same invariants:
+$$
+\operatorname{Tr}L(\tilde Q)=\operatorname{Tr}R(\tilde Q)=4Q_t,\qquad
+\det L(\tilde Q)=\det R(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},
+$$
+with $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ the norm of the element, which is also the determinant of the $2\times2$ matrix of $\tilde Q$. The characteristic polynomial is the same in the two families,
+$$
+p(X)=\bigl((X-Q_t)^2+B^2\bigr)^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
+$$
+so the spectrum is $Q_t\pm iB$, each value twice. The rank is the same too: it is twice the rank of the $2\times2$ matrix of the element, hence $0$, $2$ or $4$, and no matrix of either family has odd rank.</p>
+<p><strong>The kernels.</strong> The kernel of the left matrix is the left annihilator of the element, the kernel of the right matrix is its right annihilator. The two have the same dimension, $4-\operatorname{rank}L(\tilde Q)$, and they are in general different subspaces of the coordinate space.</p>
+<p><strong>The trace pairing.</strong> Within one family the trace pairing is the scalar product of the algebra,
+$$
+\operatorname{Tr}\bigl(L(\tilde P)L(\tilde Q)\bigr)=4\operatorname{Sc}(\tilde P\tilde Q),\qquad
+\operatorname{Tr}\bigl(R(\tilde P)R(\tilde Q)\bigr)=4\operatorname{Sc}(\tilde P\tilde Q),
+$$
+because the product of two matrices of one side is again a matrix of that side. Across the two families it collapses to the product of the scalar parts,
+$$
+\operatorname{Tr}\bigl(L(\tilde P)R(\tilde Q)\bigr)=4P_tQ_t .
+$$
+So the two sides are orthogonal for the trace form exactly when one of the two scalar parts vanishes, and what couples them is the centre and nothing else.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>left family</th>
+<th>right family</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trace</td>
+<td>$4Q_t$</td>
+<td>$4Q_t$</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$\langle\tilde Q\rangle_{\natural}^{2}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}^{2}$</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>$((X-Q_t)^2+B^2)^2$</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$Q_t\pm iB$, twice</td>
+<td>$Q_t\pm iB$, twice</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$2\operatorname{rank}A(\tilde Q)\in\{0,2,4\}$</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>kernel</td>
+<td>left annihilator</td>
+<td>right annihilator, same dimension</td>
+</tr>
+<tr>
+<td>trace pairing inside</td>
+<td>$4\operatorname{Sc}(\tilde P\tilde Q)$</td>
+<td>$4\operatorname{Sc}(\tilde P\tilde Q)$</td>
+</tr>
+<tr>
+<td>trace pairing with the other side</td>
+<td>$4P_tQ_t$</td>
+<td>$4P_tQ_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>None of these numbers sees the frame.</strong> A change of frame conjugates the arrays, and a conjugation leaves the trace, the determinant, the characteristic polynomial and the rank untouched. The table above is therefore a table of the element, written twice.</p>
+<h2 id="the-switch-between-the-left-and-the-right">The Switch Between the Left and the Right</h2>
+<p><strong>A conjugation is not available.</strong> No invertible $\mathsf X$ satisfies $R(\tilde Q)=\mathsf X\,L(\tilde Q)\,\mathsf X^{-1}$ for all $\tilde Q$. Such an $\mathsf X$ would carry products to products, while the right family reverses them, so it would force $L(\tilde P\tilde Q)=L(\tilde Q\tilde P)$ for all $\tilde P,\tilde Q$; the pair $(\vec e_x,\vec e_y)$ refutes that, because $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. So the matrix that changes the side has to be combined with a transposition, and no matrix alone is enough.</p>
+<p><strong>The form behind the switch.</strong> What is needed is a scalar product, and the algebra carries one:
+$$
+\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y).
+$$
+It is symmetric, because $\operatorname{Sc}(\tilde X\tilde Y)=\operatorname{Sc}(\tilde Y\tilde X)$. It is nondegenerate, because its Gram matrix in any frame is invertible. It is also cyclic,
+$$
+\operatorname{Sc}(\tilde Q\tilde X\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y\tilde Q),
+$$
+and this single identity is what the switch rests on.</p>
+<p><strong>The adjoint identity.</strong> By cyclicity, for all $\tilde Q,\tilde X,\tilde Y$,
+$$
+\beta(\tilde Q\tilde X,\tilde Y)=\beta(\tilde X,\tilde Y\tilde Q).
+$$
+Let $\mathsf W$ be the Gram matrix of $\beta$ in the frame,
+$$
+\mathsf W_{\mu\nu}=\beta(f_\mu,f_\nu),
+$$
+so that $\beta(\tilde X,\tilde Y)=[X]^{\mathsf T}\mathsf W[Y]$ in coordinates. The identity then reads, in arrays,
+$$
+\mathsf W\,R(\tilde Q)=L(\tilde Q)^{\mathsf T}\,\mathsf W,
+$$
+or, since $\mathsf W$ is invertible,
+$$
+R(\tilde Q)=\mathsf W^{-1}L(\tilde Q)^{\mathsf T}\mathsf W .
+$$
+This is the switch. The form is symmetric, so $\mathsf W$ is a symmetric matrix, and the switch consists of a transposition and a congruence rather than of a transposition alone.</p>
+<p><strong>Three immediate properties.</strong> Applying the stitch twice returns the array, because transposition and conjugation by a fixed matrix are both involutions. The matrix $\mathsf W$ is symmetric and invertible, so the switch is defined in every frame and never degenerates. And $\mathsf W$ is read off the multiplication of the four frame vectors, so no choice is made beyond the frame itself.</p>
+<p><strong>The switch is unique up to a scalar.</strong> Every matrix $\mathsf M$ that satisfies $\mathsf M\,R(\tilde Q)=L(\tilde Q)^{\mathsf T}\mathsf M$ for all $\tilde Q$ is of the form $\mathsf M=\mathsf W\,L(\tilde P)$ with $\tilde P$ arbitrary: a four-dimensional family, because $\mathsf W^{-1}\mathsf M$ has to commute with the whole right family, and the commutant of that family is the left family. Among these solutions exactly the symmetric ones are the scalar multiples of $\mathsf W$. The requirement of symmetry, equivalently the requirement that the matrix be the Gram matrix of a form on the algebra, therefore fixes the switch up to one nonzero scalar, and the Gram matrix is the canonical representative.</p>
+<p><strong>The switch is not the Hermitian dictionary.</strong> The algebra carries a second form, the Hermitian one $\langle\tilde X,\tilde Y\rangle_*=\operatorname{Sc}(\tilde X\tilde Y^{*})$. Its dictionary takes the adjoint and stays inside the family, $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$. The switch takes the transpose and exchanges the sides. The two are read on the same array and answer different questions.</p>
+<p><strong>The transpose alone does not cross the divide.</strong> Transposition reverses the order of a product, exactly as the conjugation of the element does, so it cannot by itself turn a product-preserving action into a product-reversing one. The side is changed only when the transposition is followed by the congruence with $\mathsf W$; the transposition reverses the order once, and the congruence restores it.</p>
+<h2 id="the-matrix-that-changes-the-frame">The Matrix That Changes the Frame</h2>
+<p><strong>The change.</strong> Let $\mathcal{F}'=(f'_1,f'_2,f'_3,f'_4)$ be a second frame and let $\mathsf C$ be the matrix of the change, so that $f'_\nu=\sum_\mu f_\mu\mathsf C_{\mu\nu}$. The columns of $\mathsf C$ are the new frame vectors written in the old one, and $\mathsf C$ is invertible. A change of frame is a change of basis of the carrier, so it conjugates every array read on the carrier, whichever side the array belongs to:
+$$
+L_{\mathcal{F}'}(\tilde Q)=\mathsf C^{-1}L_{\mathcal{F}}(\tilde Q)\,\mathsf C,\qquad
+R_{\mathcal{F}'}(\tilde Q)=\mathsf C^{-1}R_{\mathcal{F}}(\tilde Q)\,\mathsf C .
+$$
+One matrix serves both sides, because the frame is a property of the carrier and the side is a property of the action. This is the precise sense in which the two families of one frame are tied to the two families of another: the same $\mathsf C$ acts on all four.</p>
+<p><strong>What it leaves alone.</strong> A conjugation leaves the trace, the determinant, the characteristic polynomial and the rank unchanged, so the table of invariants of §<em>What the Laws Give the Two Families</em> is the same in every frame. The frame changes the array and never the element.</p>
+<p><strong>What the switch becomes in the new frame.</strong> The switch is not a matrix that belongs to a pair of frames; it belongs to one frame, and each frame has its own. Write $\mathsf W_{\mathcal{F}'}$ for the switch of the new frame, that is the array that turns $L_{\mathcal{F}'}$ into $R_{\mathcal{F}'}$,
+$$
+R_{\mathcal{F}'}(\tilde Q)=\mathsf W_{\mathcal{F}'}^{-1}L_{\mathcal{F}'}(\tilde Q)^{\mathsf T}\mathsf W_{\mathcal{F}'}.
+$$
+It plays the same role as $\mathsf W_{\mathcal{F}}$ and it is computed the same way, from the new frame vectors, $\mathsf W_{\mathcal{F}',\mu\nu}=\beta(f'_\mu,f'_\nu)$. So nothing new is introduced: the switch of a frame is always the Gram matrix of the form on that frame. Only its entries change.</p>
+<p><strong>Why the entries change by congruence.</strong> Put $f'_\nu=\sum_\mu f_\mu\mathsf C_{\mu\nu}$ into the definition and use the bilinearity of $\beta$:
+$$
+\mathsf W_{\mathcal{F}',\mu\nu}=\beta\Bigl(\sum_\alpha f_\alpha\mathsf C_{\alpha\mu},\sum_\beta f_\beta\mathsf C_{\beta\nu}\Bigr)
+=\sum_{\alpha,\beta}\mathsf C_{\alpha\mu}\,\beta(f_\alpha,f_\beta)\,\mathsf C_{\beta\nu},
+$$
+that is
+$$
+\mathsf W_{\mathcal{F}'}=\mathsf C^{\mathsf T}\mathsf W_{\mathcal{F}}\,\mathsf C .
+$$
+The rule is not an extra requirement: it is the definition of the Gram matrix, written in the new basis. The form $\beta$ itself has not moved. Only its array has, and it moves by congruence because a bilinear form pairs two vectors and therefore meets $\mathsf C$ on both sides.</p>
+<p><strong>A reading of the congruence.</strong> Each entry of $\mathsf W'$ is a value of $\beta$ on a pair of new frame vectors, and each new frame vector is a combination of the old ones. A diagonal entry $\mathsf W'_{\nu\nu}=\beta(f'_\nu,f'_\nu)$ collects the old values on all the old vectors that enter $f'_\nu$, with the coefficients squared; an off-diagonal entry collects the old values on the two vectors that enter, once through each slot. So the congruence is nothing but the bookkeeping of the definition, and every entry of $\mathsf W'$ still says what a form says.</p>
+<p><strong>When the array happens to stay put.</strong> If $\mathsf C^{\mathsf T}\mathsf W\mathsf C=\mathsf W$, then $\mathsf W'=\mathsf W$, and one array switches the families in every such frame. Such a $\mathsf C$ keeps the form and is called $\beta$-orthogonal; it is the exception, not the rule. It does not leave the families alone, since $L'=\mathsf C^{-1}L\mathsf C$ still changes the arrays. So the families move while the switch does not, which shows that $\mathsf W'$ and $L'$ are independent pieces of data and that neither can be computed from the other.</p>
+<p><strong>The two changes are compatible.</strong> Write the switch in the new frame and substitute the two rules above:
+$$
+\mathsf W_{\mathcal{F}'}^{-1}L_{\mathcal{F}'}^{\mathsf T}\mathsf W_{\mathcal{F}'}
+=\mathsf C^{-1}\mathsf W_{\mathcal{F}}^{-1}L_{\mathcal{F}}^{\mathsf T}\mathsf W_{\mathcal{F}}\,\mathsf C
+=\mathsf C^{-1}R_{\mathcal{F}}\,\mathsf C
+=R_{\mathcal{F}'}.
+$$
+The intermediate factors cancel, so the switch of the new frame is the switch of the old frame transported. Changing the frame moves the families by conjugation and the switch by congruence, and the relation between them survives untouched.</p>
+<p><strong>The frame is itself defined only up to a matrix.</strong> Nothing distinguishes one frame from another; a change $\mathsf C$ produces another legal description of the same element. What is invariant is the pair, the families together with the switch, and the pair moves as above. One member of the pair has no meaning without the other.</p>
+<h2 id="the-relations-in-one-picture">The Relations in One Picture</h2>
+<p><strong>Two matrices, two jobs.</strong> Only two matrices are ever needed, and each has one job. The matrix $\mathsf C$ is a change of frame: it belongs to the carrier and says how one basis is written in another. The matrix $\mathsf W$ belongs to the algebra: it is the Gram matrix of the form $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$, and its single job is to turn a left array into a right array.</p>
+<p><strong>The two rules.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>you change</th>
+<th>what happens to the arrays</th>
+<th>what happens to the switch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the frame, by $\mathsf C$</td>
+<td>$L'=\mathsf C^{-1}L\mathsf C$ and $R'=\mathsf C^{-1}R\mathsf C$</td>
+<td>$\mathsf W'=\mathsf C^{\mathsf T}\mathsf W\mathsf C$, the switch of the new frame</td>
+</tr>
+<tr>
+<td>the side, by $\mathsf W$</td>
+<td>$R=\mathsf W^{-1}L^{\mathsf T}\mathsf W$</td>
+<td>nothing: $\mathsf W$ is the matrix that does the switching</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the two rules look different.</strong> A frame is a basis of the carrier, so changing it conjugates every array of that carrier, and it does so for the left family and the right family alike. The switch is the matrix of a bilinear form, and a bilinear form transforms by congruence, never by conjugation. That is the whole difference: $\mathsf C$ moves a basis, $\mathsf W$ moves a form.</p>
+<p><strong>Doing both gives nothing new.</strong> Change the frame and then the side, or the side and then the frame, and the result is the same, because the two rules are compatible by §<em>The Matrix That Changes the Frame</em>. So a composition of the two moves never produces a third matrix, and every family in every frame is reached from one family in one frame by these two moves alone.</p>
+<p><strong>One switch per frame, not one per pair of frames.</strong> A frame determines $\mathsf W$ through $\mathsf W_{\mu\nu}=\beta(f_\mu,f_\nu)$, and the rule $\mathsf W'=\mathsf C^{\mathsf T}\mathsf W\mathsf C$ says that all the switches of all the frames are congruent copies of one another. So the frame carries both the arrays and the switch, and there is no freedom left over.</p>
+<p><strong>The reading of the table.</strong> A change of frame is invisible to every invariant, and so is a change of side. The four-dimensional families therefore carry one set of invariants between them, and the general theory of the element can be written once and read in any of them.</p>
+<p><strong>What the table does not say.</strong> It does not say that the arrays are equal. The left array and the right array of one element are different arrays in every frame, with different transposes, different symmetries and different kernels, and the table accounts for the differences with two matrices and no more.</p>
+<h2 id="the-22-family">The 2×2 Family</h2>
+<p><strong>One family without a frame.</strong> The isomorphism $A:\mathbb{B}\to M_2(\mathbb{C})$ reads the element at its own size and needs no frame. Its arrays carry the same invariants at half the size:
+$$
+\operatorname{Tr}A(\tilde Q)=2Q_t,\qquad
+\det A(\tilde Q)=\langle\tilde Q\rangle_{\natural},\qquad
+\operatorname{spec}A(\tilde Q)=\bigl\{Q_t+iB,\;Q_t-iB\bigr\},
+$$
+and $\operatorname{rank}A(\tilde Q)\in\{0,1,2\}$. The left and the right matrices carry the same data at twice the size, which is why their traces are twice as large, their determinants are squared and their ranks are doubled.</p>
+<p><strong>There is no second side at size two.</strong> In the $2\times2$ model the carrier is $M_2(\mathbb{C})$ itself, and the right action on it is the ordinary right matrix product $\mathsf A\mapsto\mathsf A\,A(\tilde Q)$. That is a linear map of the four-dimensional carrier, but it is not the left multiplication by a second matrix unless $A(\tilde Q)$ is scalar. So the element yields one matrix and not two, and the second family appears only when the element is read as acting on the carrier.</p>
+<p><strong>The same mechanism at size two.</strong> The transpose of a $2\times2$ matrix is a conjugation, by the fixed matrix $\varepsilon$,
+$$
+\varepsilon=i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+\qquad
+\varepsilon^{2}=-\mathrm I_2,\qquad
+\varepsilon^{\mathsf T}=-\varepsilon,
+$$
+and the conjugating matrix produces the conjugate of the element and not a second side,
+$$
+A(\tilde Q^{\natural})=\varepsilon\,A(\tilde Q)^{\mathsf T}\varepsilon^{-1}.
+$$
+At size two the transposition and the conjugation are the same operation, because the matrix already is the element. At size four they separate: the transposition returns the conjugate, and the transposition followed by the switch returns the other side.</p>
+<h2 id="summary">Summary</h2>
+<p>An element has a left matrix and a right matrix in each frame, so each frame gives two families of arrays. Associativity makes the left family multiplicative and the right family anti-multiplicative, makes every left matrix commute with every right matrix, and makes each family faithful. The two families coincide exactly on the centre, where both are scalar, so they meet in the line $\mathbb{C}\mathrm I_4$ and span seven dimensions. Their invariants agree: trace $4Q_t$, determinant $\langle\tilde Q\rangle_{\natural}^2$, characteristic polynomial $((X-Q_t)^2+B^2)^2$, spectrum $Q_t\pm iB$ twice, rank $0$, $2$ or $4$. Within a family the trace pairing is the scalar product $4\operatorname{Sc}(\tilde P\tilde Q)$; across the families it is $4P_tQ_t$, so only the centre couples the two sides.</p>
+<p>Two matrices generate every relation. A change of frame is a conjugation by an invertible $\mathsf C$, applied to both sides at once because the frame belongs to the carrier and the side to the action. The switch $\mathsf W$ is the Gram matrix of the symmetric form $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$; it satisfies $\mathsf W R(\tilde Q)=L(\tilde Q)^{\mathsf T}\mathsf W$, hence $R(\tilde Q)=\mathsf W^{-1}L(\tilde Q)^{\mathsf T}\mathsf W$, and it is symmetric, nondegenerate and unique up to a nonzero scalar once symmetry is required. Each frame carries its own switch, the Gram matrix of $\beta$ on its own vectors, and the two changes are compatible, $\mathsf W'=\mathsf C^{\mathsf T}\mathsf W\mathsf C$, so the arrays and the switch of a frame are transported as one object.</p>
+<p>No conjugation carries the left family onto the right, because a conjugation preserves the product while the right side reverses it, and a transposition alone returns the conjugate element and not the other side. At size two the same mechanism gives the conjugate of the element, with $\varepsilon=i\sigma_2$, and there is no second side, because the carrier already is the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{F}$, $\mathsf C$</td>
+<td>a frame of the algebra, and the matrix of the change to another frame</td>
+</tr>
+<tr>
+<td>$L_{\mathcal{F}}(\tilde Q)$, $R_{\mathcal{F}}(\tilde Q)$</td>
+<td>the left and the right matrix of $\tilde Q$ in $\mathcal{F}$</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)$, $R(\tilde Q)$</td>
+<td>the same, in the frame in force</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_L$, $\mathbb{B}_R$</td>
+<td>the left and the right family, as subalgebras of $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$A(\tilde Q)$</td>
+<td>the $2\times2$ matrix of the element</td>
+</tr>
+<tr>
+<td>$B^2$</td>
+<td>$Q_x^2+Q_y^2+Q_z^2$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>$Q_t^2+B^2$, the norm, and $\det A(\tilde Q)$</td>
+</tr>
+<tr>
+<td>$\beta(\tilde X,\tilde Y)$</td>
+<td>$\operatorname{Sc}(\tilde X\tilde Y)$, the symmetric scalar form</td>
+</tr>
+<tr>
+<td>$\mathsf W$</td>
+<td>the switch, the Gram matrix $\beta(f_\mu,f_\nu)$ in the frame in force</td>
+</tr>
+<tr>
+<td>$\mathsf W_{\mathcal{F}}$, $\mathsf W_{\mathcal{F}'}$</td>
+<td>the switch in two frames, related by $\mathsf W'=\mathsf C^{\mathsf T}\mathsf W\mathsf C$</td>
+</tr>
+<tr>
+<td>$\varepsilon=i\sigma_2$</td>
+<td>the $2\times2$ matrix of the transposition, $\varepsilon^{2}=-\mathrm I_2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the two matrices of an element in a working frame and the conventions used across the category.</li>
+<li><a href="m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a>, for one four-dimensional instance of the general frame.</li>
+<li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for another four-dimensional instance, in the coefficient basis.</li>
+<li><a href="m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a>, for the element size, the compression and the conjugate as a transpose.</li>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the multiplication table, the scalar product and the centre.</li>
+<li><a href="the-element-the-coordinates-and-the-conjugations.html">The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</a>, for the element, the four conjugations and the coordinate systems.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

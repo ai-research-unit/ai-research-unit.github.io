@@ -77,7 +77,7 @@
 <li>A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$, and the right matrices fill the four-dimensional copy $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$. These are exactly the two subsets of the Pauli Representation article, and their intersection is the scalars.</li>
 <li>A two-sided operator is a product $L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)$. The products fill a seven-dimensional cone in $M_4(\mathbb{C})$, not a subspace, and they are exactly the matrices whose coefficient matrix has rank at most one.</li>
 </ul>
-<p><strong>The matrix side.</strong> The sixteen products $L_{e_\mu}R_{e_\nu}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. The Pauli evaluation writes each of them as a $4\times4$ Kronecker product of two $2\times2$ matrices. One Clifford frame, built from a pair $(\beta,\delta)$ of orthogonal spatial directions, gives five cell multiples and the Clifford relations. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The article records these constructions, and closes with the open questions.</p>
+<p><strong>The matrix side.</strong> The sixteen products $L_{e_\mu}R_{e_\nu}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. The Pauli evaluation writes each of them as a $4\times4$ Kronecker product of two $2\times2$ matrices. One Clifford frame, built from a pair $(\beta,\delta)$ of orthogonal spatial directions, gives five cell multiples and the Clifford relations. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The article records these constructions, and closes with the open questions. It also settles the frame question: a change of the element basis sends $c$ to a congruence, so the length survives every basis (§<em>The Change of Frame Is a Congruence</em>), and in the Peirce frame the sixteen matrix units are the shortest matrices of their size, each a single product (§<em>The Sixteen Lengths</em>).</p>
 <p><strong>The result in one line.</strong> Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.</p>
 <p><strong>Boundaries.</strong> The frame and the one-sided matrices are <em>$M_4(\mathbb{C})$ Pauli Representation</em>. The same operators in the canonical frame are <em>$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>. The abstract family is <em>Two-Sided Operators on the Biquaternion Algebra</em>. The ambient endomorphisms are <em>The Endomorphisms of the Biquaternion Algebra</em>. The enveloping algebra is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>. The Hermitian sandwich is Part V and is not treated here.</p>
 <p><strong>Conventions.</strong> The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is the standard Peirce frame
@@ -233,7 +233,7 @@ $$
 of complex dimension $2\cdot4=8$: the first slot is free, and the second is spanned by $\mathrm I_2$ and the matrix itself, by Cayley–Hamilton. For a scalar element the commutant is all of $M_4(\mathbb{C})$, of dimension sixteen. The minimal polynomial is the one of the entry matrix in both cases, of degree two, and it does not square: the regular matrix is never nonderogatory, although its characteristic polynomial has degree four.</p>
 <p><strong>The compression.</strong> In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of <em>$M_2(\mathbb{C})$ Pauli Representation : Operators</em>.</p>
 <p><strong>The general level.</strong> A matrix of $M_4(\mathbb{C})$ that is neither in $\mathbb{B}_L$ nor in $\mathbb{B}_R$ is still an endomorphism, and the frame gives its matrix. Such a matrix is a sum of two-sided products, but not necessarily a single one. The next sections compute the sixteen basis matrices of the product family, then measure how far a general matrix is from being a single product, through the coefficient matrix.</p>
-<h2 id="the-sixteen-matrices-math134">The Sixteen Matrices $L_{e_\mu}R_{e_\nu}$</h2>
+<h2 id="the-sixteen-matrices-math135">The Sixteen Matrices $L_{e_\mu}R_{e_\nu}$</h2>
 <h3 id="the-table-in-four-families">The Table in Four Families</h3>
 <p><strong>Definition.</strong> For $\mu,\nu\in\{t,x,y,z\}$ put
 $$
@@ -398,7 +398,7 @@ L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)
 =\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathsf M_2(\tilde Q).
 $$</p>
 <p><strong>On the basis.</strong> The evaluation reproduces the four family formulas of §<em>The Table in Four Families</em>: the identity, the right copy, the left copy and the nine cells. It is a $4\times4$ matrix, the Kronecker product of two $2\times2$ matrices, and it is the ordinary product $L(\tilde Q)R(\tilde P)$ written in the model.</p>
-<h3 id="why-the-math240-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
+<h3 id="why-the-math241-kronecker-product-is-not-the-operator">Why the $4\times4$ Kronecker Product Is Not the Operator</h3>
 <p><strong>The dimensions.</strong> $L(\tilde Q)$ and $R(\tilde P)$ are $4\times4$ matrices. Their Kronecker product $L(\tilde Q)\otimes R(\tilde P)$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a complex space of dimension sixteen; the operator $L_{\tilde Q}R_{\tilde P}$ acts on $\mathbb{B}\cong\mathbb{C}^4$, of complex dimension four. The two cannot be the same matrix, and the $16\times16$ matrix does not represent the operator on the carrier.</p>
 <p><strong>The correct product.</strong> The matrix of the operator is the ordinary product $L(\tilde Q)R(\tilde P)$, of size $4\times4$. The algebra-level construction is the tensor product of algebras
 $$
@@ -473,7 +473,7 @@ $$
 8-1=7.
 $$
 The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde P=0$ collapse. The image is the seven-dimensional cone of the next subsections.</p>
-<h3 id="the-coefficient-matrix-math326">The Coefficient Matrix $c(M)$</h3>
+<h3 id="the-coefficient-matrix-math327">The Coefficient Matrix $c(M)$</h3>
 <p><strong>Definition.</strong> By §<em>The Sixteen Matrices $L_{e_\mu}R_{e_\nu}$</em>, every $M\in M_4(\mathbb{C})$ has a unique expansion
 $$
 M=\sum_{\mu,\nu}c_{\mu\nu}L_{e_\mu}R_{e_\nu}.
@@ -489,7 +489,7 @@ $$
 M=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}R_{e_\nu},
 $$
 so $c(M)=[Q][P]^{\mathsf T}$. The coefficient matrix of a product is a rank-one matrix, and every rank-one matrix arises this way. This is the source of the criterion of §<em>The Criterion for a Single Product</em>.</p>
-<h3 id="the-length-math342">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
+<h3 id="the-length-math343">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
 <p><strong>Definition.</strong> The <strong>length</strong> $\ell(M)$ is the least $r\ge0$ such that $M$ is a sum of $r$ products; $\ell(0)=0$.</p>
 <p><strong>Theorem (length is the rank).</strong> For every $M\in M_4(\mathbb{C})$,
 $$
@@ -497,6 +497,25 @@ $$
 $$</p>
 <p><em>Proof.</em> If $M=\sum_{i\le r}L_{\tilde Q_i}R_{\tilde P_i}$, then $c(M)=\sum_{i\le r}[Q_i][P_i]^{\mathsf T}$ is a sum of $r$ rank-one matrices, so $\operatorname{rank}c(M)\le r$ and $\ell(M)\ge\operatorname{rank}c(M)$. Conversely, let $\operatorname{rank}c=r$ and factor $c=UV$ with $U$ of size $4\times r$ and $V$ of size $r\times4$; the $i$-th column of $U$ is $[Q_i]$ and the $i$-th row of $V$ is $[P_i]^{\mathsf T}$, so $M=\sum_{i\le r}L_{\tilde Q_i}R_{\tilde P_i}$ and $\ell(M)\le r$.</p>
 <p><strong>The count.</strong> Every matrix is a sum of at most four products; $\ell(M)=4$ exactly when $\det c(M)\neq0$. The condition $\det c(M)\neq0$ is open and dense, so a generic matrix needs four products and none needs five.</p>
+<h3 id="the-change-of-frame-is-a-congruence">The Change of Frame Is a Congruence</h3>
+<p><strong>Why the question arises.</strong> The left side of the identity $\ell(M)=\operatorname{rank}c(M)$ never mentions a basis: a product is $\tilde QX\tilde P$ on the algebra, and a sum of products is a sum of operators. The right side does. The coefficient matrix is computed from the sixteen $L_{e_\mu}R_{e_\nu}$, which are built from the four basis elements $e_\mu$, so another basis of $\mathbb{B}$ produces another array for the same $M$. The two bases must return the same rank, or the length would be a property of the frame and not of the operator. The reason they do is a congruence.</p>
+<p><strong>The change.</strong> Let $f_\alpha=\sum_\mu\mathsf C_{\mu\alpha}e_\mu$ be another basis of $\mathbb{B}$, with $\mathsf C$ invertible, and put $B_{\alpha\beta}=L(f_\alpha)R(f_\beta)$.</p>
+<p><strong>Proposition.</strong> (i) $B_{\alpha\beta}=\sum_{\mu\nu}\mathsf C_{\mu\alpha}\mathsf C_{\nu\beta}L_{e_\mu}R_{e_\nu}$. (ii) If $c'$ is the coefficient matrix of $M$ in the basis $B$, then
+$$
+c'(M)=\mathsf C^{-1}c(M)\,\mathsf C^{-\mathsf T}.
+$$
+(iii) Consequently $\operatorname{rank}c'(M)=\operatorname{rank}c(M)$, and the two bases return one length.</p>
+<p><em>Proof.</em> (i) $L$ and $R$ are linear in the element, so $L(f_\alpha)=\sum_\mu\mathsf C_{\mu\alpha}L(e_\mu)$ and $R(f_\beta)=\sum_\nu\mathsf C_{\nu\beta}R(e_\nu)$. (ii) Expand the same $M$ in the two bases and substitute (i):
+$$
+\sum_{\mu\nu}c_{\mu\nu}L_{e_\mu}R_{e_\nu}
+=\sum_{\alpha\beta}c'_{\alpha\beta}B_{\alpha\beta}
+=\sum_{\mu\nu}\Bigl(\sum_{\alpha\beta}\mathsf C_{\mu\alpha}c'_{\alpha\beta}\mathsf C_{\nu\beta}\Bigr)L_{e_\mu}R_{e_\nu},
+$$
+so $c=\mathsf Cc'\mathsf C^{\mathsf T}$ by linear independence of the sixteen. (iii) $\det\mathsf C\neq0$, and multiplication on the left and on the right by invertible matrices preserves the rank.</p>
+<p><strong>Only the determinant is used.</strong> The Peirce change $C_{\Pi}$ of §<em>The Sixteen Matrices $L_{e_\mu}R_{e_\nu}$</em> is not orthogonal: $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12\mathrm I_4$, the product $C_{\Pi}^{\mathsf T}C_{\Pi}$ is not diagonal, and $\det C_{\Pi}=-\tfrac14$. None of this enters. A shortcut from the transpose — "the transpose of a monomial cell is another cell, so the coefficients do not move" — would fail here, because the transpose of a matrix is not a frame-free operation and the cells are not closed under it in an ordered way. The congruence is the statement that survives every basis, orthogonal or not.</p>
+<p><strong>The two displays of the corpus.</strong> The sixteen of the coefficient basis are $C_{\Pi}L_{e_\mu}R_{e_\nu}C_{\Pi}^{-1}$, the same four units in the same order, so the abstract basis is common, only the display moves, the coefficient matrix is literally unchanged, and the two operator articles compute one number. The congruence answers a different question: what happens when the sixteen are built from another basis of <em>elements</em>, for instance from the four Peirce elements themselves. That basis is not orthogonal, so the extraction $\tfrac14\operatorname{Tr}(T^{\dagger}M)$ no longer applies to it and the dual basis must be used; the rank, and with it the length, is unchanged by (iii).</p>
+<p><strong>An array is not an operator.</strong> The same array read in two frames names two different operators, and the lengths can differ. The array $E_{11}$ has length one here and four in the coefficient basis. Both statements are true. Here $E_{11}$ is the projector onto $\tilde\Pi_+$ along the other three frame vectors, a single product; there it is $X\mapsto\operatorname{Sc}(X)e_t$, which keeps the scalar coordinate and discards the vector part, and no sum of fewer than four products produces it. The two operators are conjugates of one another, and each keeps its length in every frame. So "the length of a matrix" means "the length of the operator whose display it is in the frame at hand", and no array has a length on its own.</p>
+<p><strong>What the invariance buys.</strong> The stratum $\{\ell\le r\}$ is cut by the $(r+1)$-minors of $c$, and a vanishing condition on minors of a congruence is basis-free. The cone $\{\ell\le1\}$ is one subvariety of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and not two, the stratification by length is frame-free, and the length is an invariant of the endomorphism rather than of the display.</p>
 <h3 id="the-criterion-for-a-single-product">The Criterion for a Single Product</h3>
 <p><strong>Theorem (the product criterion).</strong> Let $M\in M_4(\mathbb{C})$ and $c=c(M)$. Then
 $$
@@ -593,7 +612,7 @@ $$
 Both are single products, and both are contained in the cone. Their intersection is the scalars $\mathbb{C}\cdot\mathrm I_4$, by §<em>The One-Sided Operators</em>.</p>
 <p><strong>The cone is larger.</strong> A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.</p>
 <p><strong>The Hermitian subcone.</strong> The Hermitian sandwich is the subcone $\tilde P=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.</p>
-<h3 id="math467-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
+<h3 id="math508-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
 <p><strong>The matrix.</strong> Let $E_{11}$ be the first matrix unit in the frame. Its coefficient matrix is
 $$
 c(E_{11})=\frac14
@@ -616,7 +635,108 @@ E_{11}=L_{(e_t+i\vec e_z)/4}R_{e_t+i\vec e_z}.
 $$</p>
 <p><strong>The check.</strong> The coefficient matrix of the right side is $[Q][P]^{\mathsf T}=c(E_{11})$, and the expansion in the basis $L_{e_\mu}R_{e_\nu}$ is unique, so the two matrices are equal. Direct multiplication in the frame confirms the identity entry by entry: the only nonzero entry of $E_{11}$ is the $(1,1)$ entry, and the product $L_QR_P$ has the same matrix.</p>
 <p><strong>The reading.</strong> $E_{11}$ has matrix rank one and length one. The two ranks agree here, but they need not: the matrix $M_1$ above has matrix rank one and length four, and $P_+$ has matrix rank two and length one. The length is read from the coefficient matrix, not from the matrix rank. The example also shows that a matrix unit is a product, and that its factors can be null: $e_t+i\vec e_z$ has quaternionic norm zero.</p>
-<p><strong>Where the frame question is answered.</strong> The coefficient array $c(M)$ is computed from the sixteen products of four <em>basis elements</em>, so its entries move with the frame while its rank does not: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, and a change of the display alone leaves $c$ untouched. The proof, the two frames of the corpus and the sixteen lengths of the matrix units are §<em>The Change of Frame Is a Congruence</em> and §<em>The Sixteen Lengths</em> of <em>$M_4(\mathbb{C})$ Pauli Representation : The Matrix Product, the Trace and the Determinant</em>. What the length theorem needs from that is one line: the rank of a congruence is the rank of the array.</p>
+<p><strong>Where the frame question is answered.</strong> The coefficient array $c(M)$ is computed from the sixteen products of four <em>basis elements</em>, so its entries move with the frame while its rank does not: a change of the element basis sends $c$ to $\mathsf C^{-1}c\,\mathsf C^{-\mathsf T}$, and a change of the display alone leaves $c$ untouched. The proof and the two displays of the corpus are §<em>The Change of Frame Is a Congruence</em>, above; the sixteen lengths of the matrix units are §<em>The Sixteen Lengths</em>, below. What the length theorem needs from the first is one line: the rank of a congruence is the rank of the array.</p>
+<h3 id="the-sixteen-lengths">The Sixteen Lengths</h3>
+<p><strong>The statement.</strong> In the Peirce frame every matrix unit is a single product:
+$$
+\ell(E_{ij})=1,\qquad 1\le i,j\le4 .
+$$
+The worked case §<em>$E_{11}$ as a Worked Case</em>, above, is therefore typical, and the sixteen units are the shortest matrices of their size class rather than the longest.</p>
+<p><strong>The table.</strong> Each row gives $\tilde Q$ and $\tilde P$ by their coefficient columns $[Q]$ and $[P]$ in $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and reads $E_{ij}=L_{\tilde Q}R_{\tilde P}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$ij$</th>
+<th>$[Q]$</th>
+<th>$[P]$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$11$</td>
+<td>$\tfrac14(1,0,0,i)$</td>
+<td>$(1,0,0,i)$</td>
+</tr>
+<tr>
+<td>$12$</td>
+<td>$\tfrac14(0,i,-1,0)$</td>
+<td>$(1,0,0,i)$</td>
+</tr>
+<tr>
+<td>$13$</td>
+<td>$\tfrac14(i,0,0,-1)$</td>
+<td>$(0,1,-i,0)$</td>
+</tr>
+<tr>
+<td>$14$</td>
+<td>$\tfrac14(0,-1,-i,0)$</td>
+<td>$(0,1,-i,0)$</td>
+</tr>
+<tr>
+<td>$21$</td>
+<td>$\tfrac14(0,i,1,0)$</td>
+<td>$(1,0,0,i)$</td>
+</tr>
+<tr>
+<td>$22$</td>
+<td>$\tfrac14(1,0,0,-i)$</td>
+<td>$(1,0,0,i)$</td>
+</tr>
+<tr>
+<td>$23$</td>
+<td>$\tfrac14(0,-1,i,0)$</td>
+<td>$(0,1,-i,0)$</td>
+</tr>
+<tr>
+<td>$24$</td>
+<td>$\tfrac14(i,0,0,1)$</td>
+<td>$(0,1,-i,0)$</td>
+</tr>
+<tr>
+<td>$31$</td>
+<td>$\tfrac14(i,0,0,-1)$</td>
+<td>$(0,1,i,0)$</td>
+</tr>
+<tr>
+<td>$32$</td>
+<td>$\tfrac14(0,-1,-i,0)$</td>
+<td>$(0,1,i,0)$</td>
+</tr>
+<tr>
+<td>$33$</td>
+<td>$\tfrac14(1,0,0,i)$</td>
+<td>$(1,0,0,-i)$</td>
+</tr>
+<tr>
+<td>$34$</td>
+<td>$\tfrac14(0,i,-1,0)$</td>
+<td>$(1,0,0,-i)$</td>
+</tr>
+<tr>
+<td>$41$</td>
+<td>$\tfrac14(0,-1,i,0)$</td>
+<td>$(0,1,i,0)$</td>
+</tr>
+<tr>
+<td>$42$</td>
+<td>$\tfrac14(i,0,0,1)$</td>
+<td>$(0,1,i,0)$</td>
+</tr>
+<tr>
+<td>$43$</td>
+<td>$\tfrac14(0,i,1,0)$</td>
+<td>$(1,0,0,-i)$</td>
+</tr>
+<tr>
+<td>$44$</td>
+<td>$\tfrac14(1,0,0,-i)$</td>
+<td>$(1,0,0,-i)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The check.</strong> The coefficient matrix of the right side is $[Q][P]^{\mathsf T}$, of rank one, and the expansion in the sixteen is unique, so each row is proved by the product it displays. The names are also visible in the compression: every factor above has $\mathsf M_2$ a scalar multiple of a matrix unit, so each product has one nonzero entry, and the entry sits where the row says.</p>
+<p><strong>Two controls.</strong> The identity has length one, because $\mathrm I_4=L(e_t)=L_{e_t}R_{e_t}$ is a single product; and $\ell(E_{11})=1$, which matches the worked case. The value one is the minimum, so the sixteen units lie on the cone of products, and in the Peirce frame the coordinate axes are as close to that cone as four independent directions can be.</p>
+<p><strong>The other frame.</strong> In the coefficient basis the same sixteen arrays have length four, not one. The arrays name different operators, and §<em>The Change of Frame Is a Congruence</em> is the reason both counts are right. There the products are signed permutations and the units are maximally long; here the products are monomial too, and every unit is a product. A monomial display therefore decides nothing about the length: only the position of the coordinate axes relative to the cone does.</p>
 <h2 id="the-plain-adjoint-and-the-types">The Plain Adjoint and the Types</h2>
 <p><strong>The plain form.</strong> On $\mathbb{B}$ use the plain bilinear form
 $$
@@ -750,7 +870,7 @@ $$
 $$
 Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §<em>The Table in Four Families</em>; the choice of the five is the choice of a frame.</p>
 <p><strong>The cells.</strong> The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.</p>
-<h3 id="the-normal-form-and-the-pair-math559">The normal form and the Pair $(\beta,\delta)$</h3>
+<h3 id="the-normal-form-and-the-pair-math662">The normal form and the Pair $(\beta,\delta)$</h3>
 <p><strong>The pair.</strong> Let $\beta,\delta$ be unit spatial directions, orthogonal:
 $$
 \beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta.
@@ -1027,6 +1147,14 @@ In the frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1
 <tr>
 <td>$C_{\Pi}$</td>
 <td>the Peirce change from the Peirce frame to the coefficient basis</td>
+</tr>
+<tr>
+<td>$\mathsf C$</td>
+<td>the matrix of a change of element basis, $f_\alpha=\sum_\mu\mathsf C_{\mu\alpha}e_\mu$; $c'=\mathsf C^{-1}c\,\mathsf C^{-\mathsf T}$</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the sixteen matrix units of the frame, each of length one</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc}$</td>
