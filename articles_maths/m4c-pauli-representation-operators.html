@@ -409,13 +409,13 @@ with $\mathbb{B}^{\mathrm{opp}}$ the opposite algebra (the reversed product); th
 <p><strong>The three products.</strong> The ordinary product $L(\tilde Q)R(\tilde P)$ is $4\times4$ and is the operator. The Kronecker product of two $2\times2$ matrices is $4\times4$ and is the evaluation of the ordinary product in the model $\mathbb{B}\cong M_2(\mathbb{C})$. The Kronecker product of two $4\times4$ matrices is $16\times16$ and is neither. The three are related by the identifications of the model, not by an equality of matrices.</p>
 <p><strong>The two displays.</strong> The Peirce frame is the canonical frame of the Pauli Representation article, and the Pauli evaluation is its display. The coefficient basis, reached by the Peirce change $C_{\Pi}$, is the conjugate display: the sixteen are signed permutation matrices, and a general endomorphism is an arbitrary matrix. Neither display changes the operator; the frame changes the entries, the basis changes the coordinates, and the algebra stays $M_4(\mathbb{C})$.</p>
 <h2 id="the-dirac-operator-of-the-frame">The Dirac Operator of the Frame</h2>
-<p><strong>The operator.</strong> With $\partial_\mu=\partial/\partial Q_\mu$,
+<p><strong>The operator.</strong>
 $$
-D=-\bigl(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\partial_0+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_1+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_2+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_3\bigr).
+D=-\Bigl(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial Q_t}+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_x}+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_y}+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_z}\Bigr).
 $$
 On $\tilde Q\in\mathbb{B}$,
 $$
-\tilde Q\longmapsto-\bigl(\partial_0\tilde Q\,\vec e_x+\vec e_x\,\partial_1\tilde Q\,\vec e_y+\vec e_y\,\partial_2\tilde Q\,\vec e_y+\vec e_z\,\partial_3\tilde Q\,\vec e_y\bigr).
+\tilde Q\longmapsto-\Bigl(\frac{\partial\tilde Q}{\partial Q_t}\,\vec e_x+\vec e_x\,\frac{\partial\tilde Q}{\partial Q_x}\,\vec e_y+\vec e_y\,\frac{\partial\tilde Q}{\partial Q_y}\,\vec e_y+\vec e_z\,\frac{\partial\tilde Q}{\partial Q_z}\,\vec e_y\Bigr).
 $$
 The mass term is $-mL_tR_t$. For a momentum $p$, the same operator reads
 $$
@@ -473,7 +473,7 @@ $$
 8-1=7.
 $$
 The zero operator is the vertex, where the two four-dimensional subspaces $\tilde Q=0$ and $\tilde P=0$ collapse. The image is the seven-dimensional cone of the next subsections.</p>
-<h3 id="the-coefficient-matrix-math329">The Coefficient Matrix $c(M)$</h3>
+<h3 id="the-coefficient-matrix-math328">The Coefficient Matrix $c(M)$</h3>
 <p><strong>Definition.</strong> By §<em>The Sixteen Matrices $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$</em>, every $M\in M_4(\mathbb{C})$ has a unique expansion
 $$
 M=\sum_{\mu,\nu}c_{\mu\nu}L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}.
@@ -489,7 +489,7 @@ $$
 M=\sum_{\mu,\nu}Q_\mu P_\nu\,L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}},
 $$
 so $c(M)=[Q][P]^{\mathsf T}$. The coefficient matrix of a product is a rank-one matrix, and every rank-one matrix arises this way. This is the source of the criterion of §<em>The Criterion for a Single Product</em>.</p>
-<h3 id="the-length-math345">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
+<h3 id="the-length-math344">The Length $\ell(M)=\operatorname{rank}c(M)$</h3>
 <p><strong>Definition.</strong> The <strong>length</strong> $\ell(M)$ is the least $r\ge0$ such that $M$ is a sum of $r$ products; $\ell(0)=0$.</p>
 <p><strong>Theorem (length is the rank).</strong> For every $M\in M_4(\mathbb{C})$,
 $$
@@ -612,7 +612,7 @@ $$
 Both are single products, and both are contained in the cone. Their intersection is the scalars $\mathbb{C}\cdot\mathrm I_4$, by §<em>The One-Sided Operators</em>.</p>
 <p><strong>The cone is larger.</strong> A generic pair has neither parameter a scalar multiple of $e_t$, and its operator is neither a left nor a right multiplication. The cone is strictly larger than the union of the two copies. The two copies are four-dimensional linear subspaces inside the seven-dimensional cone, and the cone itself is not a subspace.</p>
 <p><strong>The Hermitian subcone.</strong> The Hermitian sandwich is the subcone $\tilde P=\tilde Q^{*}$, a real seven-dimensional cone inside the complex seven-dimensional cone. It is the subject of Part V and is not developed here.</p>
-<h3 id="math510-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
+<h3 id="math509-as-a-worked-case">$E_{11}$ as a Worked Case</h3>
 <p><strong>The matrix.</strong> Let $E_{11}$ be the first matrix unit in the frame. Its coefficient matrix is
 $$
 c(E_{11})=\frac14
@@ -870,7 +870,7 @@ $$
 $$
 Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §<em>The Table in Four Families</em>; the choice of the five is the choice of a frame.</p>
 <p><strong>The cells.</strong> The five are supported on single cells because the pair of directions is a pair of coordinate axes; a general frame of the normal form below is not supported on cells. The cell property is a property of the pair, not of the construction.</p>
-<h3 id="the-normal-form-and-the-pair-math664">The normal form and the Pair $(\beta,\delta)$</h3>
+<h3 id="the-normal-form-and-the-pair-math663">The normal form and the Pair $(\beta,\delta)$</h3>
 <p><strong>The pair.</strong> Let $\beta,\delta$ be unit spatial directions, orthogonal:
 $$
 \beta^2=\delta^2=-e_t,\qquad \beta\delta=-\delta\beta.

@@ -115,12 +115,12 @@ $$</p>
 \qquad
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
 $$</p>
-<p>in which the gradient acts by <strong>left</strong> multiplication on the field and the mass couples the two chiral halves; collected in the pair operator of the conventions article, this is the <strong>one-sided</strong> writing, with $\mathbb{D}^2=\Box I$ and $\Box=\sum_\mu\varepsilon_\mu\partial_\mu^2=\partial_t^2-\nabla^2$ in this frame. The <strong>two-sided</strong> writing is the cell operator $i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu$ acting on the module, and it is the one this article needs, because every bilinear and every interaction below is a two-sided cell between $\bar\psi$ and $\psi$. The two writings describe one dynamics: each is first order, and each squares to the d'Alembertian, $\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\right)^2=\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, with the same $\Box$. The spinor equations used in the sections that follow are the representatives in which the literature models are defined. The biquaternionic transcription of each interaction is the open point, and the first item of <em>Open Questions</em> names it.</p>
+<p>in which the gradient acts by <strong>left</strong> multiplication on the field and the mass couples the two chiral halves; collected in the pair operator of the conventions article, this is the <strong>one-sided</strong> writing, with $\mathbb{D}^2=\Box I$ and $\Box=\sum_\mu\varepsilon_\mu\partial^2/\partial x_\mu^2=\partial^2/\partial t^2-\nabla^2$ in this frame. The <strong>two-sided</strong> writing is the cell operator $i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu$ acting on the module, and it is the one this article needs, because every bilinear and every interaction below is a two-sided cell between $\bar\psi$ and $\psi$. The two writings describe one dynamics: each is first order, and each squares to the d'Alembertian, $\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu\right)^2=\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, with the same $\Box$. The spinor equations used in the sections that follow are the representatives in which the literature models are defined. The biquaternionic transcription of each interaction is the open point, and the first item of <em>Open Questions</em> names it.</p>
 <h2 id="why-the-dirac-equation-becomes-nonlinear">Why the Dirac Equation Becomes Nonlinear</h2>
 <h3 id="self-interaction-and-the-cubic-form">Self-Interaction and the Cubic Form</h3>
 <p>The free Dirac equation is linear, and its solutions form a vector space. A self-interaction is a term built from the field itself. Lorentz covariance and the absence of derivatives leave only the local quartic combinations of the Lorentz-covariant bilinears, a finite set because the bilinears themselves are finite in number. A bilinear is quadratic in $\psi$, so a product of two bilinears is quartic in the field, and a quartic term of the Lagrangian varies into a term cubic in the field: varying one of the two bilinears leaves the other standing as the coefficient. Writing $B(\psi)$ for the bilinear built from the field, the equation keeps the shape</p>
 <p>$$
-\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu - m\right)\psi + B(\psi)\,\psi = 0,
+\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu - m\right)\psi + B(\psi)\,\psi = 0,
 $$</p>
 <p>in which $B$ is quadratic in $\psi$ and the explicit field supplies the third power. The equation is nonlinear in the field and no worse than cubic: the word names the self-coupling, not a higher degree.</p>
 <h3 id="the-einsteincartan-route">The Einstein–Cartan Route</h3>
@@ -131,7 +131,7 @@ $$</p>
 <p>$$
 \boxed{\;
 \begin{aligned}
-\mathcal{L} &= \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\psi - m\,\bar\psi\psi
+\mathcal{L} &= \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial \psi/\partial x_\mu - m\,\bar\psi\psi
 - \frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu ,\\[4pt]
 V_\mu &= \bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi ,
 \end{aligned}
@@ -143,7 +143,7 @@ $$</p>
 <h3 id="the-soler-model">The Soler Model</h3>
 <p>The Soler model is defined in $3+1$ dimensions by</p>
 <p>$$
-\boxed{\;\mathcal{L} = \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\psi - m\,\bar\psi\psi
+\boxed{\;\mathcal{L} = \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial \psi/\partial x_\mu - m\,\bar\psi\psi
 + \frac{g}{2}\left(\bar\psi\psi\right)^2\;},
 $$</p>
 <p>with $\psi$ a four-component spinor and the sums over all four $\mu$: the generator cells are the four of the conventions above, $\nu(t)=x$ and $\nu(k)=y$. Its interaction is the square of the <strong>scalar</strong> bilinear, the same channel in which a fermion mass lives, and its sign convention makes a sufficiently strong coupling favour a nonzero $\langle\bar\psi\psi\rangle$. It is the single-particle relative of the Nambu–Jona-Lasinio model, in which the same quartic term is the interaction whose mean-field treatment produces a dynamical mass and a chiral condensate; the companion article on the chiral condensate owns the gap equation, the critical coupling and the Goldstone counting. A pseudoscalar variant replaces $S^2$ by $P_5^2$, the square of the parity-odd density of the bilinear table. The two belong together because the axial phase rotates $S$ into its partner: the companion article on the chiral condensate writes the rotation as multiplication by $\exp\left(2i\alpha\left(-iR_{\vec e_z}^{\mathrm{pau}}\right)\right)$, that is $S\mapsto\cos 2\alpha\,S+\sin 2\alpha\,P_5$, and reads the pair as a two-component order parameter. $S^2+P_5^2$ is the combination that rotation leaves fixed, which is why the pair of squares is the chirally invariant NJL interaction.</p>
@@ -381,7 +381,7 @@ $$</p>
 <td>Generator cells: $iR_{\vec e_x}^{\mathrm{pau}} = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
 </tr>
 <tr>
-<td>$i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu$</td>
+<td>$i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu$</td>
 <td>Cell operator of the Dirac equation; its square is $\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, since $i^2=-1$</td>
 </tr>
 <tr>
