@@ -154,7 +154,7 @@ Q_y&-Q_z&Q_t&Q_x\\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$
-The two displays agree on the diagonal and in the first column, and differ in the signs of the six entries where one index is scalar and the other vector.
+The two displays agree on the diagonal, in the first row and in the first column, and differ in the sign of the six entries whose two indices are both vector.
 
 **The four right matrices.** On the units,
 $$

@@ -18,7 +18,7 @@ The overlap is real and is stated at the outset so that the division is visible.
 
 The recomputations are these, and each is reported where it is used. The null-twistor identity for a Hermitian coordinate matrix, on a hundred random Hermitian matrices. The pair of first-order relations and the eikonal, **symbolically, for an arbitrary generating function**, with vanishing residual — the programme article's check was numeric and on one quadratic generator, so the symbolic form is a strengthening rather than a repetition. The rank of the twistor field's Jacobian, on a hundred random complex points for each of three generating functions — quadratic, cubic and transcendental — checking that every three-by-three minor vanishes and that some two-by-two minor does not. The triplet's modulus identity, on a hundred random complex pairs. And the tangency condition of the static Kerr generator, which reduces to $r_*^2=0$ exactly.
 
-Two claims are quoted and not recomputed, because they belong to the programme's own machinery rather than to the twistor geometry: that the field built from the second derivatives of $\ln G$ satisfies the source-free Maxwell equations, and the explicit representation of that field through the derivatives of $\Pi$ alone. Both are recorded in *The Algebrodynamical Programme*. Of the first, only the harmonicity of $\Lambda$ that carries it was checked here; the Maxwell equations themselves, and the whole of the second claim, are quoted and not re-derived, because the field-theoretic content of either is not what this article is about.
+Two claims are quoted and not recomputed, because they belong to the programme's own machinery rather than to the twistor geometry: that the field built from the second derivatives of $\ln G$ satisfies the source-free Maxwell equations, and the explicit representation of that field through the derivatives of $\Pi$ alone. Both are recorded in *The Algebrodynamical Programme*. Of the first, only the harmonicity of $\ln G$ that carries it was checked here; the Maxwell equations themselves, and the whole of the second claim, are quoted and not re-derived, because the field-theoretic content of either is not what this article is about.
 
 The conventions are those of the read-list articles and of the companion mathematics article *The Two-Sided Derivative over the Biquaternion Algebra*, which owns the coordinate chart. The complexified Minkowski coordinates are the four entries of the matrix
 
@@ -38,7 +38,7 @@ $$
 \kappa_0=wG+\upsilon,\qquad \kappa_1=vG+p ,
 $$
 
-and the generating function is an arbitrary holomorphic $\Pi(G,\kappa_0,\kappa_1)$, with $P=\partial\Pi/\partial G$.
+and the generating function is an arbitrary holomorphic $\Pi(G,\kappa_0,\kappa_1)$. Its **total** derivative along the line, $P=d\Pi/dG=\Pi_G+w\,\Pi_1+v\,\Pi_2$ with $\Pi_1,\Pi_2$ the derivatives in the second and third arguments, is the object the source calls $P$ in (60) and the companion article calls $\Delta$; it is a total derivative and not the partial $\Pi_G$, and the two differ by $w\Pi_1+v\Pi_2$.
 
 ## The Coordinate Matrix and Its Two Columns
 
@@ -72,7 +72,7 @@ defines a **two-complex-dimensional surface** $S$ in $\mathbb{PT}$ — three pro
 
 **The intersection explains the multivaluedness.** Restricted to the line, $\Pi$ becomes a polynomial in $G$ whose degree is $\Pi$'s total degree in its three arguments, so the line meets the surface in that many points, counted with multiplicity. A quadratic generator gives two roots, a cubic three; the corpus's *The Algebrodynamical Programme* records the resulting multivaluedness and the programme's insistence that it is required rather than tolerated, together with the topological route to charge quantisation that it supplies. The addition here is the reason: **the multivaluedness is Bézout's theorem.** It is not a defect of the eikonal equation and not a failure of the ansatz; it is the count of intersections of a line with a surface, and it disappears only when the surface is a plane.
 
-**The singular locus is a tangency.** When the line is tangent to the surface the roots coincide, the implicit resolution of $\Pi=0$ for $G$ fails, and $P=\partial\Pi/\partial G$ vanishes beside $\Pi$. This is the condition the programme uses as its singular set, and in the twistor picture it is one thing only: *the set of spacetime points whose line is tangent to the twistor surface*. The point-like, string-like and surface-like singular sets of the programme's catalogue are then the various ways a two-surface can be touched by a family of lines.
+**The singular locus is a tangency.** When the line is tangent to the surface the roots coincide, the implicit resolution of $\Pi=0$ for $G$ fails, and $P=d\Pi/dG$ vanishes beside $\Pi$. This is the condition the programme uses as its singular set, and in the twistor picture it is one thing only: *the set of spacetime points whose line is tangent to the twistor surface*. The point-like, string-like and surface-like singular sets of the programme's catalogue are then the various ways a two-surface can be touched by a family of lines.
 
 ## The Pair of Relations
 
@@ -139,7 +139,7 @@ on using $\partial G/\partial v=G\,\partial G/\partial p$ and $\partial G/\parti
 
 **The wave equation is therefore not a consequence of the pair alone, and this is the one place where the article must part company with a natural guess.** The bracket of the last display vanishes identically when $\lambda$ depends on $G$ alone, because then $\partial\lambda/\partial p=(d\lambda/dG)\,\partial G/\partial p$ and $\partial\lambda/\partial\upsilon=(d\lambda/dG)\,\partial G/\partial\upsilon$; it does not vanish for a general twistor function. At $\lambda=G$ the display reads $\Box G=0$, which is the wave equation the source derives, and that is the sense in which the source's statement is about $G$. Checked numerically on the quadratic generator at forty digits with warm-started Newton continuation: $\Box G$ and $\Box\ln G$ came out at $5\times10^{-14}$ and $6\times10^{-14}$ against a second-difference floor of order $h^2=10^{-12}$, while $\Box\kappa_0$ and $\Box\kappa_1$ came out at $0.16$ and $0.31$; and the identity above reproduced the values of $\Box\kappa_0$ and $\Box\kappa_1$ to a relative $6\times10^{-13}$.
 
-So the pair gives two things of different reach. **The eikonal holds for all twistor functions** — every one of them is a null gradient — and **the wave equation holds for the functions of $G$ alone**, which is exactly the boundary the programme article draws when it says that every $C^2$ function of $G$ is harmonic on the solutions. The asymmetry is what the field construction needs and no more: the field is built from $\Lambda=\ln G$, a function of $G$, so harmonicity is available where it is used, and the gauge parameter, which is a general twistor function, is required only to be null.
+So the pair gives two things of different reach. **The eikonal holds for all twistor functions** — every one of them is a null gradient — and **the wave equation holds for the functions of $G$ alone**, which is exactly the boundary the programme article draws when it says that every $C^2$ function of $G$ is harmonic on the solutions. The asymmetry is what the field construction needs and no more: the field is built from $\ln G$, a function of $G$, so harmonicity is available where it is used, and the gauge parameter, which is a general twistor function, is required only to be null.
 
 **The same pair is the gauge constraint.** This is the observation that ties the algebra to the geometry. The programme requires its rescaling parameter to depend on the coordinates only through the twistor, and the differential form of that requirement is that $\alpha$ is constant along each ray: the principal spinor $\xi=(1,G)$ contracted into the gradient of $\alpha$ vanishes. In components that condition is
 
@@ -187,17 +187,17 @@ Three distinct field equations hold on the solutions of the congruence equation,
 
 ### The Electromagnetic Field
 
-Let $\Lambda=\ln G$. It is a function of the single twistor component $G$, so it satisfies the pair, the eikonal and the wave equation, by the argument of the section above. The programme article writes the three independent components of the antiself-dual field as the second derivatives of $\Lambda$,
+Let the field-generating function be $\ln G$; the source writes it $\Lambda:=\ln G$, and this article spells it out to avoid the letter, which the programme article uses for $d^2\Pi/dG^2$ and, separately, for the conformal factor of its quaternionic maps. It is a function of the single twistor component $G$, so it satisfies the pair, the eikonal and the wave equation, by the argument of the section above. The programme article writes the three independent components of the antiself-dual field as the second derivatives of $\ln G$,
 
 $$
-F_{00}=\frac{\partial^2\Lambda}{\partial\upsilon\,\partial p},
+F_{00}=\frac{\partial^2\ln G}{\partial\upsilon\,\partial p},
 \qquad
-F_{01}=\frac{\partial^2\Lambda}{\partial w\,\partial p},
+F_{01}=\frac{\partial^2\ln G}{\partial w\,\partial p},
 \qquad
-F_{11}=\frac{\partial^2\Lambda}{\partial v\,\partial w},
+F_{11}=\frac{\partial^2\ln G}{\partial v\,\partial w},
 $$
 
-and the Maxwell equations then hold for it because $\Lambda$ is harmonic. That was checked directly: with $G$ solved by Newton continuation at forty digits and the derivatives taken by central differences, the eikonal residual of $\Lambda$ was $6.0\times10^{-16}$ and $5.7\times10^{-23}$ for the quadratic and transcendental generators, and the mixed derivative $\partial^2\Lambda/\partial\upsilon\,\partial v$ agreed with $\partial^2\Lambda/\partial w\,\partial p$ to twelve digits, which is $\Box\Lambda=0$ written out.
+and the Maxwell equations then hold for it because $\ln G$ is harmonic. That was checked directly: with $G$ solved by Newton continuation at forty digits and the derivatives taken by central differences, the eikonal residual of $\ln G$ was $6.0\times10^{-16}$ and $5.7\times10^{-23}$ for the quadratic and transcendental generators, and the mixed derivative $\partial^2\ln G/\partial\upsilon\,\partial v$ agreed with $\partial^2\ln G/\partial w\,\partial p$ to twelve digits, which is $\Box\ln G=0$ written out.
 
 **The 2016 paper writes the same field as the second derivatives of $G$ itself.** Its three components are
 
@@ -217,7 +217,7 @@ $$
 F_{AB}=\frac{1}{P}\,\Pi_{AB}-\frac{1}{P}\,\frac{d}{dG}\left(\frac{\Pi_A\Pi_B}{P}\right),
 $$
 
-with $\Pi_A$ and $\Pi_{AB}$ the first and second derivatives of $\Pi$ in its two twistor arguments and $P=d\Pi/dG$, in the companion article's notation for these derivatives, so that **the field of a congruence is computed from the generating function without ever solving the Kerr equation for $G$**. The corpus records this formula in *The Algebrodynamical Programme* and does not re-derive it; what this article adds is the reading of why it can exist at all. The field is a second derivative of a function of the twistor, the twistor is constrained to a surface, and a function on a surface has its derivatives fixed by the surface's defining equation — which is exactly what a formula in $\Pi$ and its derivatives expresses.
+with $\Pi_A,\Pi_{AB}$ the first and second derivatives of $\Pi$ in its two twistor arguments, $A,B\in\{0,1\}$ indexing the second and third arguments as in the source (the companion article writes $\Pi_1,\Pi_2$ for the same pair), and $P=d\Pi/dG$ its total derivative along the line, so that **the field of a congruence is computed from the generating function without ever solving the Kerr equation for $G$**. The corpus records this formula in *The Algebrodynamical Programme* and does not re-derive it; what this article adds is the reading of why it can exist at all. The field is a second derivative of a function of the twistor, the twistor is constrained to a surface, and a function on a surface has its derivatives fixed by the surface's defining equation — which is exactly what a formula in $\Pi$ and its derivatives expresses.
 
 ### The Spinor inside the Potential
 
@@ -320,13 +320,13 @@ The singular locus is the tangency locus: a point is singular for the field exac
 | $\kappa_0=wG+\upsilon$, $\kappa_1=vG+p$ | The two twistor components attached to $G$ |
 | $T=(\xi,\tau)=(G,\kappa_0,\kappa_1)$ | The twistor of the point, written as one symbol where the group acts on it |
 | $\Pi(G,\kappa_0,\kappa_1)$ | Generating (world) function; $S=\{\Pi=0\}$ is the twistor surface |
-| $P=\partial\Pi/\partial G$ | Tangency condition: $P=0$ with $\Pi=0$ |
+| $P=d\Pi/dG=\Pi_G+w\,\Pi_1+v\,\Pi_2$ | Total derivative along the line, the companion's $\Delta$; the tangency condition is $P=0$ with $\Pi=0$ |
 | $\partial\lambda/\partial w=G\,\partial\lambda/\partial\upsilon$, $\partial\lambda/\partial v=G\,\partial\lambda/\partial p$ | The pair of relations, obeyed by every twistor function $\lambda$ |
 | $\Box=4\left(\partial^2/\partial\upsilon\,\partial v-\partial^2/\partial w\,\partial p\right)$ | The d'Alembertian in these coordinates |
 | $\alpha(T)$ | Rescaling parameter; a symmetry exactly when it is a twistor function |
 | $A\mapsto A+d\ln\alpha$ | Shift of the potential; $F=dA$ invariant |
-| $\Lambda=\ln G$ | Field-generating function of the programme's presentation |
-| $F_{00},F_{01},F_{11}$; $E_+,E_3,E_-$ | Independent components of the antiself-dual field, as second derivatives of $\Lambda$ in the programme's presentation and of $G$ in the 2016 paper's |
+| $\ln G$ | Field-generating function; the source writes it $\Lambda$, the programme article writes it in full |
+| $F_{00},F_{01},F_{11}$; $E_+,E_3,E_-$ | Independent components of the antiself-dual field, as second derivatives of $\ln G$ in the programme's presentation and of $G$ in the 2016 paper's |
 | $\varphi_0,\varphi_1$ | The two surviving components of the potential, $\varphi_0=\partial\ln G/\partial w$ and $\varphi_1=\partial\ln G/\partial v$ in the gauge $\xi_{0'}=1$ |
 | $\{-GF,iGF,-F\}$ | Yang–Mills triplet; its modulus is $F$ |
 | $r_*^2=x^2+y^2+(z+ia)^2$ | Ring condition; the tangency locus of the static generator is $r_*^2=0$ |
