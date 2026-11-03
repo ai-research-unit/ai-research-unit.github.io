@@ -151,7 +151,7 @@ The derivation route is built on the **product** instead. Its derivative is defi
 
 That is not the end of the argument, and leaving it there would misrepresent the programme. The product-first route is not left without geometry: it **builds** an arena, from the one object the automorphisms do preserve. The construction is due to the source and is worked out in *The Algebrodynamical Programme*; it is summarized here because it decides what the fork is about.
 
-The automorphism group $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$ fixes the diagonal entry of the matrix and rotates the other three as a complex three-vector $z$. The one invariant of that rotation is the complex quadratic form
+The automorphism group $\mathrm{Aut}(\mathbb{B})\cong SO(3,\mathbb{C})$ fixes the trace of the matrix — the scalar part $z_0=\tfrac12(\upsilon+v)$ — and rotates the traceless part as a complex three-vector $z$. The one invariant of that rotation is the complex quadratic form
 
 $$
 \sigma=z_1^2+z_2^2+z_3^2 ,

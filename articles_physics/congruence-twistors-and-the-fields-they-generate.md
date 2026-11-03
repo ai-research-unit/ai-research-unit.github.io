@@ -18,7 +18,7 @@ The overlap is real and is stated at the outset so that the division is visible.
 
 The recomputations are these, and each is reported where it is used. The null-twistor identity for a Hermitian coordinate matrix, on a hundred random Hermitian matrices. The pair of first-order relations and the eikonal, **symbolically, for an arbitrary generating function**, with vanishing residual — the programme article's check was numeric and on one quadratic generator, so the symbolic form is a strengthening rather than a repetition. The rank of the twistor field's Jacobian, on a hundred random complex points for each of three generating functions — quadratic, cubic and transcendental — checking that every three-by-three minor vanishes and that some two-by-two minor does not. The triplet's modulus identity, on a hundred random complex pairs. And the tangency condition of the static Kerr generator, which reduces to $r_*^2=0$ exactly.
 
-Two claims are quoted and not recomputed, because they belong to the programme's own machinery rather than to the twistor geometry: that the field built from the second derivatives of $\ln G$ satisfies the source-free Maxwell equations, and the explicit representation of that field through the derivatives of $\Pi$ alone. Both are recorded in *The Algebrodynamical Programme*, neither is re-derived here, and the field-theoretic content of either is not what this article is about.
+Two claims are quoted and not recomputed, because they belong to the programme's own machinery rather than to the twistor geometry: that the field built from the second derivatives of $\ln G$ satisfies the source-free Maxwell equations, and the explicit representation of that field through the derivatives of $\Pi$ alone. Both are recorded in *The Algebrodynamical Programme*. Of the first, only the harmonicity of $\Lambda$ that carries it was checked here; the Maxwell equations themselves, and the whole of the second claim, are quoted and not re-derived, because the field-theoretic content of either is not what this article is about.
 
 The conventions are those of the read-list articles and of the companion mathematics article *The Two-Sided Derivative over the Biquaternion Algebra*, which owns the coordinate chart. The complexified Minkowski coordinates are the four entries of the matrix
 
@@ -209,7 +209,7 @@ E_3=-\frac{\partial^2G}{\partial\upsilon\,\partial p},
 E_-=-\frac{\partial^2G}{\partial p^2},
 $$
 
-which are $\partial C_p/\partial\upsilon$, $-\partial C_v/\partial\upsilon$ and $-\partial C_v/\partial p$ in the potential components of the next subsection, and the homogeneous Maxwell equations hold for them on the congruence by the wave equation for $G$. The two assignments are not the same components — $\partial\ln G=\partial G/G$ leaves behind a term quadratic in the first derivatives — and the article keeps them apart instead of presenting one as the other. What the two share is the singular locus, not the normalisation.
+which are $\partial\varphi_0/\partial\upsilon$, $-\partial\varphi_0/\partial p$ and $-\partial\varphi_1/\partial p$ in the surviving components $\varphi_0,\varphi_1$ of the next subsection, and the homogeneous Maxwell equations hold for them on the congruence by the wave equation for $G$. The two assignments are not the same components — $\partial\ln G=\partial G/G$ leaves behind a term quadratic in the first derivatives — and the article keeps them apart instead of presenting one as the other. What the two share is the singular locus, not the normalisation.
 
 **The sharpest form of the result is the source's.** The field can be written through the derivatives of $\Pi$ alone,
 
@@ -223,33 +223,32 @@ with $\Pi_A$ and $\Pi_{AB}$ the first and second derivatives of $\Pi$ in its two
 
 This is the part of the paper the corpus does not otherwise have, and it is the reason the construction reaches the fermionic sector at all.
 
-The potential is not a four-vector with something added to it. In the null frame of these coordinates it is a two-by-two array of components, $C_\upsilon$, $C_w$, $C_p$ and $C_v$ in the positions of
+The potential is not a four-vector with something added to it. It is the array $\Phi_{B'A}$ of the source's (13), built from the spinor by $\Phi_{B'A}=\iota^{A}\nabla_{AA'}\xi_{B'}$ with a conjugate spinor $\iota$ normalised by $\xi_{A'}\iota^{A}=1$, and its two indices are of different kinds: by the transformation law (10), $\Phi\mapsto\bar L^{+}\Phi\bar L$, the group acts by $\bar L^{+}$ on the primed index and by $\bar L$ on the unprimed one. The object carries one primed and one unprimed spinor index, and fixing either index leaves a two-component spinor.
+
+**In the gauge $\xi_{0'}=1$ half of it vanishes, and the reason is (13).** (The source writes the spinor with a primed index, $\xi_{A'}$; this is this article's $\xi=(1,G)$, so the gauge is the $\xi_0=1$ used above, and only the spelling differs.) There $\Phi_{0'A}=\iota^{A}\nabla_{AA'}\xi_{0'}$ is the derivative of the constant $\xi_{0'}=1$ and therefore zero, so the array is
 
 $$
-\begin{pmatrix}C_\upsilon & C_w\\ C_p & C_v\end{pmatrix},
-$$
-
-and the self-duality conditions together with the Lorentz gauge become **two Weyl equations on that array**, one for each row: the two-spinor $\{C_\upsilon,C_w\}$ obeys one pair and the two-spinor $\{C_p,C_v\}$ the other. The array is therefore a **pair of two-spinors**, and the source notes that both readings — one complex four-vector, or a pair of two-spinors — are admissible, because the system's symmetry group acts on the two rows independently. The apparent paradox of a vector that is also a pair of spinors is resolved by the reducibility of the representation, not by identifying the two readings.
-
-**The residual gauge freedom spends half of it.** Beside the gradient shifts the system carries a residual freedom that moves the potential by the gradient of a function $\lambda$ with $\Box\lambda=0$, and the source uses it to set one row to zero. What survives is a single two-spinor, carried by two nonzero components,
-
-$$
-C_p=\frac{\partial G}{\partial\upsilon}=\frac{\partial\ln G}{\partial w},
+\begin{pmatrix}\Phi_{0'0} & \Phi_{0'1}\\ \Phi_{1'0} & \Phi_{1'1}\end{pmatrix}
+=\begin{pmatrix}0 & 0\\ \varphi_0 & \varphi_1\end{pmatrix},
 \qquad
-C_v=\frac{\partial G}{\partial p}=\frac{\partial\ln G}{\partial v},
-$$
-
-the second equality in each being the pair of relations. **Two of the four components of the potential are therefore zero by a choice of gauge, and the two that remain are a chiral spinor.**
-
-**They obey the Weyl relations, and their content is the wave equation for $G$.** The pair they must satisfy is
-
-$$
-\frac{\partial C_p}{\partial p}=\frac{\partial C_v}{\partial\upsilon},
+\varphi_0=\frac{\partial\ln G}{\partial w}=\frac{\partial G}{\partial\upsilon},
 \qquad
-\frac{\partial C_p}{\partial v}=\frac{\partial C_v}{\partial w},
+\varphi_1=\frac{\partial\ln G}{\partial v}=\frac{\partial G}{\partial p},
 $$
 
-the second pair of the source's double-Weyl system. Substituting the components, the first reads $\partial^2G/\partial p\,\partial\upsilon=\partial^2G/\partial\upsilon\,\partial p$ and is an identity of mixed partials; the second reads $\partial^2G/\partial\upsilon\,\partial v=\partial^2G/\partial w\,\partial p$ and is $\Box G=0$. So the two Weyl equations carry the wave equation for $G$ beside an identity, and **they add no equation of their own**: the chiral relations hold because $G$ is null and harmonic, which is what the pair of the earlier section supplies. What that leaves is nonetheless the substantive point — a two-component spinor field, obeying the relations that a massless chiral fermion's field obeys, is what the complex four-potential is once its gauge freedom is spent, with no Dirac equation and no gamma matrices anywhere in the derivation. The potential is bigger than the electromagnetic field it carries, and the extra part is not gauge, it is a spinor.
+the second equality in each being the pair of relations. **Two of the four components of the potential are zero by the choice of gauge, and the two that remain form a chiral two-spinor.** The vanishing is not an extra assumption: it is what the projective freedom $\xi\mapsto\alpha(T)\xi$ is spent on, and the source draws it from (13) and not from a postulate about the potential.
+
+**The surviving pair satisfies the massless Weyl equation, and its content is the wave equation for $G$.** The source writes it as $\nabla_{AB'}\varphi^{A}=0$, whose two component equations are
+
+$$
+\frac{\partial\varphi_0}{\partial p}=\frac{\partial\varphi_1}{\partial\upsilon},
+\qquad
+\frac{\partial\varphi_0}{\partial v}=\frac{\partial\varphi_1}{\partial w},
+$$
+
+where $p$ is the coordinate $\bar w$ of this article's chart, not the twistor coordinate of the same name. Substituting the components, the first reads $\partial^2G/\partial\upsilon\,\partial p=\partial^2G/\partial p\,\partial\upsilon$ and is an identity of mixed partials; the second reads $\partial^2G/\partial\upsilon\,\partial v=\partial^2G/\partial w\,\partial p$ and is $\Box G=0$. So the pair carries the wave equation for $G$ beside an identity, and **it adds no equation of its own**: the Weyl relations hold because $G$ is null and harmonic, which is what the pair of the earlier section supplies. The source states the two equations as equivalent to the self-duality conditions together with the inhomogeneous Lorentz condition, which is what the first-order pair already encodes.
+
+**What that leaves is nonetheless the substantive point.** A two-component spinor field, obeying the relations that a massless chiral fermion's field obeys, is what the complex four-potential becomes once its gauge freedom is spent, with no Dirac equation and no gamma matrices anywhere in the derivation. The potential is bigger than the electromagnetic field it carries, and the extra part is not gauge — it is a spinor. What the construction does not supply is a reason for the spinor to have a mass or to obey a massive equation, and the source claims neither.
 
 **Physical interpretation.** The corpus derives its fermions from the Dirac equation and its bosons from the gauge principle, and treats the two as separate imports. Here one holomorphic function of the twistor yields the electromagnetic field, a complex Yang–Mills triplet, and a two-component spinor, the first two as its second derivatives and the third as the potential's own surviving components. The three are not unified in the sense of a group that contains them, and the algebra does not identify their couplings; what is unified is their **origin**. Since the source's construction is an external programme, the corpus records this as the programme's structure and not as a result of the framework.
 
@@ -305,7 +304,7 @@ checked symbolically with $w=x-iy$ and $p=x+iy$. The tangency locus is therefore
 
 A congruence of null rays is a two-surface $S$ in projective twistor space; a spacetime point is a line $L_x$ in that space; the congruence's principal spinor at the point is the intersection $L_x\cap S$, and the number of its branches is the degree of the surface, by Bézout. The whole construction is that one correspondence, and the algebra that makes it computable is one pair of first-order relations, $\partial\lambda/\partial w=G\,\partial\lambda/\partial\upsilon$ and $\partial\lambda/\partial v=G\,\partial\lambda/\partial p$, satisfied by every function of the twistor because it is satisfied by the twistor's own components. Multiplying the pair gives the complex eikonal; cross-differentiating it gives a wave equation for the functions of $G$ and not for the general twistor function, with the obstruction computed; and written on the spinor $\xi=(1,G)$ the pair is the constraint that the programme imposes on its rescaling parameter. The condition for a rescaling to be a symmetry and the condition for a function to solve the eikonal are therefore one condition, whose solutions are the functions of the twistor.
 
-From that pair everything else follows. The four-component twistor field has rank two — verified as an exact vanishing of every three-by-three minor at the rounding floor of forty-digit arithmetic, with the non-vanishing minors at $O(0.1)$, over three generating functions and a hundred points each — which is why it is a surface and why the rescaling group is a group. The group's orbits are the projective twistors, so the projective structure is derived from the restricted gauge symmetry rather than assumed, and the potential shifts by a gradient while the field strength stays fixed. Then three fields come out of one function: the electromagnetic field as the second derivatives of $\ln G$, guaranteed to obey the free Maxwell equations by the harmonicity that the pair supplies for a function of $G$; a complex Yang–Mills triplet whose modulus equals the electromagnetic field because the squares of its first two components cancel between $G^2$ and $(iG)^2$; and — the part not previously in the corpus — a two-component spinor inside the four-potential: the Lorentz gauge turns the potential into a pair of two-spinors, the residual gauge freedom sets one row to zero, and the surviving pair $C_p=\partial G/\partial\upsilon$, $C_v=\partial G/\partial p$ satisfies the Weyl relations. Those relations carry the wave equation $\Box G=0$ beside an identity of mixed partials, so the reduction is recorded as a representation of the harmonicity and not as a new equation.
+From that pair everything else follows. The four-component twistor field has rank two — verified as an exact vanishing of every three-by-three minor at the rounding floor of forty-digit arithmetic, with the non-vanishing minors at $O(0.1)$, over three generating functions and a hundred points each — which is why it is a surface and why the rescaling group is a group. The group's orbits are the projective twistors, so the projective structure is derived from the restricted gauge symmetry rather than assumed, and the potential shifts by a gradient while the field strength stays fixed. Then three fields come out of one function: the electromagnetic field as the second derivatives of $\ln G$, guaranteed to obey the free Maxwell equations by the harmonicity that the pair supplies for a function of $G$; a complex Yang–Mills triplet whose modulus equals the electromagnetic field because the squares of its first two components cancel between $G^2$ and $(iG)^2$; and — the part not previously in the corpus — a two-component spinor inside the four-potential: the gauge $\xi_{0'}=1$ annihilates the first row of the potential array $\Phi_{B'A}$ by the source's (13), and the surviving pair $\varphi_0=\partial\ln G/\partial w=\partial G/\partial\upsilon$, $\varphi_1=\partial\ln G/\partial v=\partial G/\partial p$ satisfies the Weyl relations. Those relations carry the wave equation $\Box G=0$ beside an identity of mixed partials, so the reduction is recorded as a representation of the harmonicity and not as a new equation.
 
 The singular locus is the tangency locus: a point is singular for the field exactly when the line and the surface are tangent, because the field is a function of the resolved $G$ and a resolution degenerates exactly there. For the static ring generator the condition reduces exactly to $r_*^2=0$, so the ring of the programme is literally the set of lines tangent to its twistor surface. What this settles is the coincidence of the two abelian singular loci and the dimension count of the tangency set; what it does not settle is what the singularities are, and the corpus leaves the programme's particle reading with the programme.
 
@@ -328,7 +327,7 @@ The singular locus is the tangency locus: a point is singular for the field exac
 | $A\mapsto A+d\ln\alpha$ | Shift of the potential; $F=dA$ invariant |
 | $\Lambda=\ln G$ | Field-generating function of the programme's presentation |
 | $F_{00},F_{01},F_{11}$; $E_+,E_3,E_-$ | Independent components of the antiself-dual field, as second derivatives of $\Lambda$ in the programme's presentation and of $G$ in the 2016 paper's |
-| $C_\upsilon,C_w,C_p,C_v$ | Components of the potential in the null frame; $C_p$ and $C_v$ are the two that survive the residual gauge freedom |
+| $\varphi_0,\varphi_1$ | The two surviving components of the potential, $\varphi_0=\partial\ln G/\partial w$ and $\varphi_1=\partial\ln G/\partial v$ in the gauge $\xi_{0'}=1$ |
 | $\{-GF,iGF,-F\}$ | Yang–Mills triplet; its modulus is $F$ |
 | $r_*^2=x^2+y^2+(z+ia)^2$ | Ring condition; the tangency locus of the static generator is $r_*^2=0$ |
 
