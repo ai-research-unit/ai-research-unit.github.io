@@ -139,6 +139,18 @@ and it is not $\mathbb{B}_{\mathbb{R}}$-linear. The mass exists as a pairing bet
 - **No claim that every fermion is a Dirac pair.** Weyl and Majorana fermions are separate cases.
 - **No claim that chirality is an element of $\mathbb{B}$.** It is an endomorphism of $\Delta$ outside the algebra, equivalently the central sign $i\tilde\Xi_{\mathrm{ad}}$ of the double.
 
+## The Gamma Formulation
+
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The chirality operator of the Dirac module has an array in that frame, and the Peirce sign has the same array with the other sign:
+
+$$
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\gamma_0\gamma_1\gamma_2\gamma_3,
+\qquad
+P=R_{i\vec e_z}^{\mathrm{pau}}=iR_{\vec e_z}^{\mathrm{pau}}=-\gamma_5 .
+$$
+
+**The arrays agree and the modules do not.** In the canonical frame the Peirce sign is the negative of $\gamma_5$: $P=\operatorname{diag}(I_2,-I_2)$ on $\mathbb{B}$ and $\gamma_5=\operatorname{diag}(-I_2,I_2)$ on $\Delta$. A reader who works in gammas sees one matrix and one sign, and the sign looks like the chirality, so the two are easily taken for one operator. They are two operators on two modules: $\gamma_5$, the representative of the central grading $\chi$, grades the pair $\Delta=S\oplus S^{\mathrm{c}}$ into non-isomorphic halves, while $P$ grades $\mathbb{B}$ into the Peirce ideals $S_+$ and $S_-$, which are isomorphic. The common array is a property of the frame, and the distinction the article defends is a property of the module, so it is invisible in the gamma notation.
+
 ## Summary
 
 Chirality is the central sign of the conjugate pair. The Peirce sign $P=R_{i\vec e_z}^{\mathrm{pau}}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades $S_+\cong S_-\cong S$; it is a copy index. The chiral sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ is the nontrivial central involution of the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$ as real algebras, and grades $S$ against $S^{\mathrm{c}}$. On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ it is $\operatorname{diag}(-I,I)$. The mass is the unique invariant sesquilinear pairing between the two halves, off-diagonal and chirality-odd; it is not a $\mathbb{B}_{\mathbb{R}}$-linear operator. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair. The central phase is vector-like on $S\oplus S$ and axial on $\Delta$, and the algebra alone does not choose between the two interpretations.

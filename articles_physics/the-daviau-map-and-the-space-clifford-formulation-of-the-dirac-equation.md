@@ -275,7 +275,7 @@ The spacetime-algebra formulation writes the Dirac equation for an even multivec
 Fauser writes the comparison equation as
 
 $$
-\partial_t\,\Psi\,i\Sigma_3+\sum_{k=1}^{3}\Sigma_k\,\partial_k\,\Psi\,i\Sigma_3 = -m\,\Psi^{*}+q\Bigl(A_t+\sum_{k=1}^{3}\Sigma_kA_k\Bigr)\Psi ,
+\partial/\partial t\,\Psi\,i\Sigma_3+\sum_{k=1}^{3}\Sigma_k\,\partial/\partial x_k\,\Psi\,i\Sigma_3 = -m\,\Psi^{*}+q\Bigl(A_t+\sum_{k=1}^{3}\Sigma_kA_k\Bigr)\Psi ,
 $$
 
 with $\Sigma_1,\Sigma_2,\Sigma_3$ the three space vectors of the formulation — the STA Pauli vectors, each the product of a space frame vector with the time vector, not the four basis vectors of the frame — and $i$ the pseudoscalar, which is the corpus's central imaginary. The time derivative carries **no** frame vector, exactly as in Daviau's $\nabla$; that is what puts the two equations in the same shape. Fauser proves that this equation and the Daviau equation are the same equation, and that the passage between them is made of three explicit operations.

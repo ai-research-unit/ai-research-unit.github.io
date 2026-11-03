@@ -82,7 +82,7 @@ $$
 \mathcal{D}\tilde{\Psi} = \text{(mass term)},
 $$
 
-where $\mathcal{D}$ is first order and carries the gradient. The mass term is defined as the part of the equation that survives when every derivative is dropped. Being non-derivative, it cannot pair the field with $\partial_\mu\tilde{\Psi}$; being bilinear and built from a single field, it must pair $\tilde{\Psi}$ with something constructed from $\tilde{\Psi}$ itself. The only constructions available that do not reintroduce a derivative are the involutions of the previous section.
+where $\mathcal{D}$ is first order and carries the gradient. The mass term is defined as the part of the equation that survives when every derivative is dropped. Being non-derivative, it cannot pair the field with $\partial/\partial x_\mu\tilde{\Psi}$; being bilinear and built from a single field, it must pair $\tilde{\Psi}$ with something constructed from $\tilde{\Psi}$ itself. The only constructions available that do not reintroduce a derivative are the involutions of the previous section.
 
 So a mass term has the shape
 
@@ -152,7 +152,7 @@ The first acts on the right-handed half, the second on the left-handed one, and 
 **The two-sided reading.** The pair is also the corpus's two-sided structure. For a scalar mass the siding is invisible — $m$ is central, so $m\tilde{\Psi}_L=\tilde{\Psi}_L m$ and the mass term may be read as a left or as a right multiplication — but the siding becomes visible as soon as the mass term carries a direction and a conjugation, which is exactly what the dictionary's form of the equation does. With $t'$ the imaginary time and $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ the three-dimensional Cauchy–Riemann operator, Kravchenko's form of the equation on $F\in\mathbb{B}$ reads
 
 $$
-(i\partial_{t'} + D_3)F - mi\,\bar{F}\,\vec e_z = 0 ,
+(i\partial/\partial t' + D_3)F - mi\,\bar{F}\,\vec e_z = 0 ,
 $$
 
 a left multiplication by the derivative, an antilinear coefficient conjugation $\bar{\cdot}$ with no side, and a right multiplication by the spatial unit $\vec e_z$. There the mass term is a right multiplication *followed by* a conjugation, and it is not a single cell. The two readings are related by the dictionary and are not the same equation — their mass terms are of different kinds, a scalar in one and a right multiplication with a conjugation in the other. What they share is the structural reason the second side is needed at all: the Dirac mass is what couples one chirality to the other, and left multiplication alone preserves each chirality.

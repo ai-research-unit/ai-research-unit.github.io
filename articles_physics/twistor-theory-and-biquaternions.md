@@ -256,7 +256,7 @@ $$
 \left(\Delta \pm 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\psi = 0 ,
 $$
 
-with $\Box_A = \partial^2_\tau - \Delta$, the operator that *The Klein–Gordon Equation in Biquaternionic Form* treats and relates to this series' $\Box$ — and the twistor is recovered from its potential by one first-order operator. The solutions of that equation are represented as **surface integrals** $\psi^0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \int_{S^{\omega}} \varphi(\vec\xi)\exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\vec\xi))\,dS^{\omega}(\vec\xi)$ over the surface
+with $\Box_A = \partial^2/\partial\tau^2 - \Delta$, the operator that *The Klein–Gordon Equation in Biquaternionic Form* treats and relates to this series' $\Box$ — and the twistor is recovered from its potential by one first-order operator. The solutions of that equation are represented as **surface integrals** $\psi^0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \int_{S^{\omega}} \varphi(\vec\xi)\exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\vec\xi))\,dS^{\omega}(\vec\xi)$ over the surface
 
 $$
 S^{\omega} = \left\{\vec\xi : (\vec\xi + i\vec F, \vec\xi + i\vec F) = \omega^2\right\},

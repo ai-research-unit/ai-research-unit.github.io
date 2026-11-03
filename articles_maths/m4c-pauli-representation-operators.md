@@ -319,13 +319,13 @@ with $\mathbb{B}^{\mathrm{opp}}$ the opposite algebra (the reversed product); th
 
 ## The Dirac Operator of the Frame
 
-**The operator.** With $\partial_\mu=\partial/\partial Q_\mu$,
+**The operator.**
 $$
-D=-\bigl(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\partial_0+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_1+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_2+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_3\bigr).
+D=-\Bigl(L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial Q_t}+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_x}+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_y}+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_z}\Bigr).
 $$
 On $\tilde Q\in\mathbb{B}$,
 $$
-\tilde Q\longmapsto-\bigl(\partial_0\tilde Q\,\vec e_x+\vec e_x\,\partial_1\tilde Q\,\vec e_y+\vec e_y\,\partial_2\tilde Q\,\vec e_y+\vec e_z\,\partial_3\tilde Q\,\vec e_y\bigr).
+\tilde Q\longmapsto-\Bigl(\frac{\partial\tilde Q}{\partial Q_t}\,\vec e_x+\vec e_x\,\frac{\partial\tilde Q}{\partial Q_x}\,\vec e_y+\vec e_y\,\frac{\partial\tilde Q}{\partial Q_y}\,\vec e_y+\vec e_z\,\frac{\partial\tilde Q}{\partial Q_z}\,\vec e_y\Bigr).
 $$
 The mass term is $-mL_tR_t$. For a momentum $p$, the same operator reads
 $$

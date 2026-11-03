@@ -167,7 +167,7 @@ $$
 =\Box .
 $$
 
-The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial_\mu$; the second is the Lorentzian metric inside $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.
+The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial/\partial x_\mu$; the second is the Lorentzian metric inside $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.
 
 **The axial current.** The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field. What the mass breaks is the axial symmetry. The axial current is
 

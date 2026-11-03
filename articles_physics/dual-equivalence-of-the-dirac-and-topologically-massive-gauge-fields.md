@@ -63,7 +63,7 @@ which is the source's field strength: it reduces to the Maxwell tensor at $a=0$ 
 
 The parent action is linear in the auxiliary field and quadratic in the Dirac field,
 $$
-S_{GH}=\int\Bigl[\bigl(G_\nu+\tfrac12 H_\nu\bigr)^*i\check c_{\nu\mu\lambda}\nabla^{ea}_\mu H_\lambda-\bigl(\nabla^{ea}_\mu H_\nu\bigr)^*i\check c_{\nu\mu\lambda}\bigl(G_\lambda+\tfrac12 H_\lambda\bigr)+\tfrac{m-a}{2}\bigl(G\cdot G+G^*\cdot G^*\bigr)+\partial_\mu Z_0^\mu\Bigr],
+S_{GH}=\int\Bigl[\bigl(G_\nu+\tfrac12 H_\nu\bigr)^*i\check c_{\nu\mu\lambda}\nabla^{ea}_\mu H_\lambda-\bigl(\nabla^{ea}_\mu H_\nu\bigr)^*i\check c_{\nu\mu\lambda}\bigl(G_\lambda+\tfrac12 H_\lambda\bigr)+\tfrac{m-a}{2}\bigl(G\cdot G+G^*\cdot G^*\bigr)+\partial Z_0^\mu/\partial x_\mu\Bigr],
 $$
 with $\nabla^{ea}$ the same derivative with the electromagnetic term of $\tilde\nabla$ added to the $a$-term. The *same* $\check c$ contracts the Dirac field, the auxiliary field and the derivative in both halves: the two eliminations are two ways of inverting one linear system, and the coupling constants $e$ and $a$ sit in the derivative while the mass $m$ sits in the quadratic terms. $Z_0^\mu$ is a surface term, chosen so that the total divergence produced by the elimination vanishes.
 
@@ -87,11 +87,11 @@ $$
 $$
 and substituting it back leaves a **second-order Lagrangian** for $H_\mu$ (sums over repeated indices, one $\epsilon$ per index),
 $$
-\mathcal{L}_H=\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda,\rho,\delta}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}\nabla^{ea}_\mu H_\lambda\bigr)\bigl(\check c_{\nu\rho\delta}\nabla^{ea}_\rho H_\delta\bigr)+\tfrac12\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda H^*_\nu\,i\check c_{\nu\mu\lambda}\nabla^{ea}_\mu H_\lambda+\text{c.c.}+\partial_\mu Z_0^\mu ,
+\mathcal{L}_H=\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda,\rho,\delta}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}\nabla^{ea}_\mu H_\lambda\bigr)\bigl(\check c_{\nu\rho\delta}\nabla^{ea}_\rho H_\delta\bigr)+\tfrac12\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda H^*_\nu\,i\check c_{\nu\mu\lambda}\nabla^{ea}_\mu H_\lambda+\text{c.c.}+\partial Z_0^\mu/\partial x_\mu ,
 $$
 The first term is quadratic in the derivative and is the kinetic term; the second carries one derivative and no mass, and it is the **cubic (order-three) form** of the companion article. At $a=e=0$, and after the rescaling $H_\mu\mapsto bH_\mu$ that restores canonical normalisation, it reads
 $$
-\mathcal{L}_H=-\tfrac{b^2}{2m}\Bigl[\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,\partial_\mu H_\nu\,\partial_\mu H_\nu-m\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\,H^*_\nu\,i\check c_{\nu\mu\lambda}\,\partial_\mu H_\lambda\Bigr]+\text{c.c.}+\partial\text{-terms},
+\mathcal{L}_H=-\tfrac{b^2}{2m}\Bigl[\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\,\partial H_\nu/\partial x_\mu\,\partial H_\nu/\partial x_\mu-m\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\,H^*_\nu\,i\check c_{\nu\mu\lambda}\,\partial H_\lambda/\partial x_\mu\Bigr]+\text{c.c.}+\partial\text{-terms},
 $$
 so the mass term has one derivative and one power of $m$ — the hallmark of a topological mass, and the reason the source calls the two actions dual.
 
@@ -99,7 +99,7 @@ so the mass term has one derivative and one power of $m$ — the hallmark of a t
 
 The three-dimensional version separates the scalar first. The duality is taken between the pairs $(G^\mu;\phi)$ and $(B^\mu;\phi)$ with the *same* $\phi$, and the parent action is
 $$
-S_{G\phi B}=\int\Bigl[\tfrac12\bigl(G^*_\nu+\tfrac12 B^*_\nu\bigr)i\check c_{\nu\mu\lambda}F_{\mu\lambda}+\tfrac{i}{2}\bigl(G\cdot\partial\phi^*-\phi^*\partial\cdot G\bigr)+\tfrac{m-a}{2}G\cdot G+\tfrac{i}{2}\phi^*j\cdot\nabla^{-a}\phi+\text{c.c.}+\partial_\mu Z_1^\mu\Bigr].
+S_{G\phi B}=\int\Bigl[\tfrac12\bigl(G^*_\nu+\tfrac12 B^*_\nu\bigr)i\check c_{\nu\mu\lambda}F_{\mu\lambda}+\tfrac{i}{2}\bigl(G\cdot\partial\phi^*-\phi^*\partial\cdot G\bigr)+\tfrac{m-a}{2}G\cdot G+\tfrac{i}{2}\phi^*j\cdot\nabla^{-a}\phi+\text{c.c.}+\partial Z_1^\mu/\partial x_\mu\Bigr].
 $$
 Varying $B_\mu$ gives
 $$
@@ -107,16 +107,16 @@ $$
 $$
 and substituting back returns the Dirac Lagrangian, now with $A_\mu=0$ and $G_\mu=G^\mu-j_\mu\phi$. Varying $G_\nu$ gives
 $$
-(m-a)G^\mu=\tfrac{i}{2}F_{\lambda\nu}\check c^{*\nu\lambda\mu}-i\,p^{\mu\nu}_+\partial_\nu\phi^* ,
+(m-a)G^\mu=\tfrac{i}{2}F_{\lambda\nu}\check c^{*\nu\lambda\mu}-i\,p^{\mu\nu}_+\partial \phi^*/\partial x_\nu ,
 $$
 and substituting this back leaves
 $$
 \begin{aligned}
 \mathcal{L}_{\phi B}=\;&\tfrac{1}{8(m-a)}\sum_{\nu,\mu,\lambda,\rho,\delta}\epsilon_\nu\epsilon_\mu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}F_{\mu\lambda}\bigr)\bigl(\check c_{\nu\rho\delta}F_{\rho\delta}\bigr)+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda B^*_\nu\,i\check c_{\nu\mu\lambda}F_{\mu\lambda}\\
-&-\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\bigl(\partial_\mu\phi\bigr)\check c_{\mu\nu\lambda}F_{\nu\lambda}+\text{(scalar sector)}+\text{c.c.}+\partial_\mu Z_2^\mu .
+&-\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\bigl(\partial \phi/\partial x_\mu\bigr)\check c_{\mu\nu\lambda}F_{\nu\lambda}+\text{(scalar sector)}+\text{c.c.}+\partial Z_2^\mu/\partial x_\mu .
 \end{aligned}
 $$
-The abbreviation *scalar sector* stands for the source's two terms in $\phi$ alone, $\tfrac{1}{2(m-a)}\partial_\mu\phi\,p^{\mu\nu}_+\partial_\nu\phi^*$ and $\tfrac i2\phi^*j^\mu\nabla^{-a}_\mu\phi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $B_\nu j^\nu=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $j^\nu\partial_\nu B_\mu=j^\nu\partial_\nu\phi=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\phi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
+The abbreviation *scalar sector* stands for the source's two terms in $\phi$ alone, $\tfrac{1}{2(m-a)}\partial \phi/\partial x_\mu\,p^{\mu\nu}_+\partial \phi^*/\partial x_\nu$ and $\tfrac i2\phi^*j^\mu\nabla^{-a}_\mu\phi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $B_\nu j^\nu=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $j^\nu\partial B_\mu/\partial x_\nu=j^\nu\partial \phi/\partial x_\nu=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\phi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
 $$
 \boxed{\;\mathcal{L}_G=-\tfrac{1}{4m}\sum_{\mu,\lambda}\epsilon_\mu\epsilon_\lambda F_{\mu\lambda}F_{\mu\lambda}+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\,\check\varepsilon_{\nu\mu\lambda}\,B^*_\nu F_{\mu\lambda}+\text{(scalar sector)}+\text{c.c.}\;}
 $$
@@ -146,7 +146,7 @@ for which the equations of motion are unchanged while the mass term changes by a
 $$
 B_\mu\mapsto B_\mu+p^+_{\mu\nu}\,\partial/\partial x_\nu\Theta ,
 $$
-with $\Theta$ a function on the spin manifold, and $\check c_{\nu\mu\lambda}\partial_\mu\partial_\lambda\Theta=j_\nu\,\partial\partial\Theta$ reduces the condition to the wave equation.
+with $\Theta$ a function on the spin manifold, and $\check c_{\nu\mu\lambda}\partial^2/\partial x_\mu\partial x_\lambda\Theta=j_\nu\,\partial\partial\Theta$ reduces the condition to the wave equation.
 
 **There is no Bianchi identity.** The structure constants $\check c$ contain the antisymmetric (Lie) and the symmetric (Jordan) parts, so the two-form built from the potential is not the curl of anything with an automatic closure: the object the duality exchanges is the self-dual tensor of §*The Self-Dual Field Strength*, not an antisymmetric field strength. The source's reason for the construction is stated as the definition of a potential without a Bianchi identity: of the Maxwell-like pair that the Dirac current satisfies, the second plays the role of a Bianchi identity only for one choice of the two phase parameters $\phi_1,\phi_2$ the source introduces, namely $\phi_1+\phi_2=0$, and it is precisely that choice which the dual potential is meant to avoid.
 
@@ -332,7 +332,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\check\varepsilon_{\nu\mu\lambda}=\sum_\rho\varepsilon_{\nu\mu\lambda\rho}j_\rho$ | Levi-Civita symbol of the $j$-slice |
 | $H_{\mu\nu}=\sum_\lambda\epsilon_\lambda G^*_\lambda\check c_{\lambda\mu\nu}$ | Two-form of the s-vector; $H_{(\mu\nu)}=-\phi^*g_{\mu\nu}$ and $H_{[\mu\nu]}$ anti-self-dual |
 | $\phi^*=G^*\cdot j$ | Trace of the two-form, $\phi^*=\sum_\mu\epsilon_\mu G^*_\mu j_\mu$; the complex scalar $\phi=G\cdot j$ with a star |
-| $F_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu+iaj_\mu B^*_\nu-iaj_\nu B^*_\mu$ | Field strength of the dual potential |
+| $F_{\mu\nu}=\partial B_\nu/\partial x_\mu-\partial B_\mu/\partial x_\nu+iaj_\mu B^*_\nu-iaj_\nu B^*_\mu$ | Field strength of the dual potential |
 | $\bar\Psi\Psi=\sum_\nu\epsilon_\nu(N_\nu N_\nu-B_\nu B_\nu)$ | Dirac bilinear |
 | $K_\mu$ | Complex vector of Eq. (100) carrying the mass as a non-integrable phase; normalised to $K\cdot K=1$ in the source |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |

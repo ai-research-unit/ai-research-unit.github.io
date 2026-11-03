@@ -406,7 +406,7 @@ The mass shell is a statement of the gradient equation; the chirality, the axial
 | $\tilde\Psi_{L,R}$ | the two chiral components of the gradient equation |
 | $\psi$ | the Dirac field; its adjoint is $\bar\psi=\psi^*iR_{\vec e_x}^{\mathrm{pau}}$ |
 | $G_\mu$ | the generator cells, $G_0=iR_{\vec e_x}^{\mathrm{pau}}$, $G_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ |
-| $\mathbb D$ | the two-sided Dirac operator, $\mathbb D=iG_0\partial_{t'}+iG_k\partial_{x_k}$ |
+| $\mathbb D$ | the two-sided Dirac operator, $\mathbb D=iG_0\partial/\partial t'+iG_k\partial/\partial x_k$ |
 | $\langle\bar\psi\psi\rangle$ | the chiral condensate |
 | $\flat$ | the algebra's real structure, an antilinear conjugation |
 | $\Gamma$ | the chirality cell, $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ |

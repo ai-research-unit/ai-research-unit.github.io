@@ -230,7 +230,7 @@ in natural units, with $D_3 = \sum_k\vec e_k\,\partial/\partial Q_k$ and the bar
 | Equation | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal{N}F=0$, as displayed |
 | Field | $\tilde\Psi\in\Delta=S\oplus S^{\mathrm{c}}$ | $F\in\mathbb{B}$ |
 | Mass | the off-diagonal pairing of $S$ and $S^{\mathrm{c}}$ | $-mi\,\overline{F}\,\vec e_z$: a conjugation and a direction |
-| Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial_{t'}$ and $D_3$; right by $\vec e_z$ in the mass |
+| Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial t'$ and $D_3$; right by $\vec e_z$ in the mass |
 | Chirality | the central sign of the complexified algebra | the dictionary's volume element, a right multiplication by $\vec e_z$ |
 | Use | the definition, the kinematics, and the mass term | the analytic theory and the integral representation |
 
@@ -421,7 +421,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\varepsilon=(1,-1,-1,-1)$, $g=\mathrm{diag}(1,-1,-1,-1)$ | Metric weights of the $\mathbb{M}_-$ frame; metric in the gamma section |
 | $m_e$, $e$, $\hbar$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
 | $\tilde\Psi_L$, $\tilde\Psi_R$ | Left- and right-handed Weyl halves, in $S$ and $S^{\mathrm{c}}$ |
-| $\mathcal{N}F = (i\partial_{t'}+D_3)F - mi\,\overline{F}\,\vec e_z$, $D_3=\sum_k\vec e_k\partial/\partial Q_k$ | Two-sided Dirac equation of the dictionary form |
+| $\mathcal{N}F = (i\partial/\partial t'+D_3)F - mi\,\overline{F}\,\vec e_z$, $D_3=\sum_k\vec e_k\partial/\partial Q_k$ | Two-sided Dirac equation of the dictionary form |
 | $g$, $\mu_B = e\hbar/2m_e$ | Gyromagnetic factor; Bohr magneton |
 
 ## Further Reading

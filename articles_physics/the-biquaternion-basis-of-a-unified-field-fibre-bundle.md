@@ -117,7 +117,7 @@ $$
 (x_t,x_x,x_y,x_z)=(ct',x,y,z),
 $$
 
-and $\mathbb{D}^2=\Box$: the cells anticommute, so the mixed terms cancel, and $i^2=-1$ turns what is left into $-\sum_\mu g^{\mu\mu}\partial_\mu^2=-\partial_t^2+\Delta$, the corpus's series sign for $\Box$. The chirality cell
+and $\mathbb{D}^2=\Box$: the cells anticommute, so the mixed terms cancel, and $i^2=-1$ turns what is left into $-\sum_\mu g^{\mu\mu}\partial^2/\partial x_\mu^2=-\partial^2/\partial t^2+\Delta$, the corpus's series sign for $\Box$. The chirality cell
 
 $$
 \Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\,C_tC_xC_yC_z

@@ -99,7 +99,7 @@ L_{\tilde\nabla}\tilde\Psi_R&=m\,\tilde\Psi_L,\\
 L_{\tilde\nabla^{\natural}}\tilde\Psi_L&=m\,\tilde\Psi_R,
 \end{aligned}
 $$
-with $\tilde\nabla=e_t\,\partial_{Q_t}+\vec e_x\,\partial_{Q_x}+\vec e_y\,\partial_{Q_y}+\vec e_z\,\partial_{Q_z}$ and $\tilde\nabla^{\natural}$ its quaternion conjugate. The first is the right-handed equation and the second the left-handed one; the $\natural$ in the second is what makes the pair real-linear, and each line is a left multiplication of the field. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$; at $m\ne0$ the mass couples them, and eliminating one half leaves the Klein–Gordon equation. **Two equations, one per chirality** — that is the content of the word "pair".
+with $\tilde\nabla=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$ and $\tilde\nabla^{\natural}$ its quaternion conjugate. The first is the right-handed equation and the second the left-handed one; the $\natural$ in the second is what makes the pair real-linear, and each line is a left multiplication of the field. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$; at $m\ne0$ the mass couples them, and eliminating one half leaves the Klein–Gordon equation. **Two equations, one per chirality** — that is the content of the word "pair".
 
 **The two-sided single equation.** Read on the algebra rather than on the module, the same content is one equation whose two sides are the two multiplications,
 $$

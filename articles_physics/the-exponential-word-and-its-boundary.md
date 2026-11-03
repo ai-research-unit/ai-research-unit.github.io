@@ -113,7 +113,9 @@ $$
 
 and the exponent is a complex angle on one axis. Its real part is the stored rotation angle and its imaginary part is the stored rapidity. This is the Hamilton angle of the element, up to the factor of two: the word stores $\theta/2$ and $\psi/2$, while the four-vector factor carries $\theta$ and $\psi$, as the conventions article warns.
 
-When the axes differ, no single complex angle exists. The sum of the two exponents is not a logarithm, and the element needs both axes as well as the two angles. A complex angle on a fixed axis is two real parameters and the axis is two more; the unit group is six-dimensional, so a general element needs a second axis. The single complex angle covers the aligned four-dimensional submanifold, not the group.
+When the axes differ, no single complex angle on a real axis exists. The sum of the two exponents is not a logarithm, and the element needs both axes as well as the two angles. A complex angle on a fixed real axis is two real parameters and the axis is two more; the unit group is six-dimensional, so a general element needs a second axis. The single complex angle covers the aligned four-dimensional submanifold, not the group.
+
+**The element is still a single exponential, with a complex axis.** What fails is the reality of the axis, not the exponential. A unit-norm element is $\exp(\vec U\Theta)$ with a complex $\Theta$ and a complex root $\vec U$ of $-e_t$, as *The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion* shows on the whole domain; the identities $\cos^2\Theta+\sin^2\Theta=1$ and $\vec U^2=-e_t$ hold for complex values as well, so the exponential needs nothing real. The distinction is the one this article is about: the word stores a complex angle on a **real** axis only on the aligned submanifold, and a complex angle on a complex axis everywhere.
 
 **The boundary.** The complex angle is not a Lorentz invariant and not a rapidity in general. Its imaginary part is the rapidity only on the four-momentum chart, and only when the axis is the momentum direction.
 
@@ -243,7 +245,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 - The formal exponent is the sum of the four exponents, and its exponential is not the element; the defect is the Baker–Campbell–Hausdorff correction, whose first term is a boost.
 - The defect vanishes when the boost and rotor axes commute or when one of the two parameters vanishes.
 - The rotor is the compact factor and the boost the non-compact one; the word is their product, and the element itself is neither compact nor non-compact.
-- On aligned axes the word is one exponential with a complex angle $\theta/2+i\psi/2$, the Hamilton angle up to the factor of two; on skew axes no single complex angle exists.
+- On aligned axes the word is one exponential with a complex angle $\theta/2+i\psi/2$, the Hamilton angle up to the factor of two; on skew axes no single complex angle on a **real** axis exists, while the element is still one exponential on a complex axis.
 - The defect is the non-additivity of generators, the same structure as the Wigner rotation and the field-strength commutator, but it is not a coupling and not a dynamics.
 - The word is defined off the zero-divisor cone; on the cone the scale collapses and the rapidity diverges.
 - The cone has two strata: the idempotent stratum, a complex multiple of a minimal idempotent, and the nilpotent stratum, a square-zero lightlike displacement.

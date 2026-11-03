@@ -430,7 +430,7 @@ The claims of this article, in order.
 | $P_{L,R} = \tfrac12(I_4 \pm iR_{\vec e_z}^{\mathrm{pau}})$ | Chirality projectors, rank $2$ |
 | $\tilde\Psi_{L,R} = P_{L,R}\tilde\Psi$ | The two chiral components of a spinor |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | The biquaternion gradient and its quaternion conjugate; the one-sided chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, blind to chirality |
-| $\mathbb{D} = -R_{\vec e_x}^{\mathrm{pau}}\partial_{t'}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_{x_k}$ | The module Dirac operator, built from two-sided cells; odd under the chirality cell, hence it carries one half into the other |
+| $\mathbb{D} = -R_{\vec e_x}^{\mathrm{pau}}\partial/\partial t'-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$ | The module Dirac operator, built from two-sided cells; odd under the chirality cell, hence it carries one half into the other |
 | $iR_{\vec e_x}^{\mathrm{pau}} = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | The frame cell; the reflection whose normal is $e_t$ |
 | $\rho(u) : x\mapsto -\epsilon(u)\,u x u$ | Pin action of an odd unit element; $u^2=\epsilon(u)I_4$ |
 | Reversal | Reversing the Clifford image of $\tilde{Q}$ gives the image of $\tilde{Q}^{\natural}$; Clifford reversal is quaternion conjugation |

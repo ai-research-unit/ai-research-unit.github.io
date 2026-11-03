@@ -290,7 +290,7 @@ j_{\mu a} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\partial/\partial Q_\mu\,\til
 = -\sum_{b,c}\varepsilon_{abc}\pi_b\partial/\partial Q_\mu\,\pi_c + \cdots ,
 $$
 
-the standard isovector current of the pion triplet. The natural conjugation on the derivative is the one that fixes the sign: with $\partial_\mu\tilde U^{\natural}=-\partial_\mu\tilde U$ and $\mathrm{Sc}(e_ae_b)=-\delta_{ab}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
+the standard isovector current of the pion triplet. The natural conjugation on the derivative is the one that fixes the sign: with $\partial \tilde U^{\natural}/\partial x_\mu=-\partial \tilde U/\partial x_\mu$ and $\mathrm{Sc}(e_ae_b)=-\delta_{ab}$, the two minus signs cancel and the prefactor $-\frac{f_\pi^2}{2}$ produces the displayed minus. It lies in the material sector, like every current of the framework, and it is the current whose charge rotates the pion triplet in the adjoint.
 
 **The axial current and its divergence.** The axial current is not the Noether current of a symmetry of the algebra. It is the quark axial current of the underlying theory, which fixes its nature and its anomalous divergence; what the framework contributes is the cell that carries the vertex. The frame cells are
 

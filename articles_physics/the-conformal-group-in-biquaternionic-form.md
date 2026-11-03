@@ -45,14 +45,14 @@ The generators fall into four families, fifteen in all. Here $x$ and $a$ are the
 
 The symbol $\mathcal{K}_\mu$ is used for the special conformal generator because the literature's usual $K_\mu$ is taken in this series by the boost generator $K_k=i\vec e_k$ of the Lorentz-group companion, which carries a spatial index and is an element of the algebra. The distinction is not merely typographical below.
 
-A concrete realization of the fifteen generators is by vector fields on the coordinates. Because the generators are operators on spacetime and not elements of $\mathbb{B}$, this display uses the standard covariant notation of the conformal-group literature: $x^\mu$ are the coordinates, $x_\mu=\eta_{\mu\nu}x^\nu$, $\partial_\mu=\partial/\partial x^\mu$, and a repeated index is summed. The series' low-index rule is for the algebra and resumes after these displays. The coordinate $x^0$ is the real time $ct'$, and the algebra element of $\mathbb{M}_-$ is $\tilde Q=i x^0e_t+x^1\vec e_x+x^2\vec e_y+x^3\vec e_z$.
+A concrete realization of the fifteen generators is by vector fields on the coordinates. Because the generators are operators on spacetime and not elements of $\mathbb{B}$, this display uses the standard covariant notation of the conformal-group literature: $x^\mu$ are the coordinates, $x_\mu=\eta_{\mu\nu}x^\nu$, the derivatives are written $\partial/\partial x^\mu$, and a repeated index is summed. The series' low-index rule is for the algebra and resumes after these displays. The coordinate $x^0$ is the real time $ct'$, and the algebra element of $\mathbb{M}_-$ is $\tilde Q=i x^0e_t+x^1\vec e_x+x^2\vec e_y+x^3\vec e_z$.
 
 $$
-P_\mu=\partial_\mu,\qquad D=x^\mu\partial_\mu,\qquad
-M_{\mu\nu}=x_\mu\partial_\nu-x_\nu\partial_\mu,
+P_\mu=\partial/\partial x^\mu,\qquad D=x^\mu\partial/\partial x^\mu,\qquad
+M_{\mu\nu}=x_\mu\partial/\partial x^\nu-x_\nu\partial/\partial x^\mu,
 $$
 $$
-\mathcal{K}_\mu=2x_\mu x^\nu\partial_\nu-x^2\partial_\mu,
+\mathcal{K}_\mu=2x_\mu x^\nu\partial/\partial x^\nu-x^2\partial/\partial x^\mu,
 $$
 with $x^2=\eta_{\mu\nu}x^\mu x^\nu$ and $\eta=\mathrm{diag}(-1,1,1,1)$. In this real form the structure constants are real, matching the convention of the Lorentz-group companion, whose brackets are $[\vec e_j,\vec e_k]=2\epsilon_{jkl}\vec e_l$, $[\vec e_j,K_k]=2\epsilon_{jkl}K_l$, $[K_j,K_k]=-2\epsilon_{jkl}\vec e_l$ for $\vec e_k$, $K_k=i\vec e_k$. The brackets are
 $$
@@ -175,7 +175,7 @@ Two qualifications belong to the formula. First, it is a fractional (nonlinear) 
 $$
 \delta x^\mu=a^\mu x^2-2x^\mu(a\cdot x)=-a^\nu\,\mathcal{K}_\nu x^\mu,
 $$
-with $\mathcal{K}_\nu=2x_\nu x^\rho\partial_\rho-x^2\partial_\nu$. This is the vector field of the generator table; the algebra produces the finite transformation but not an element of $\mathbb{B}$ that generates it.
+with $\mathcal{K}_\nu=2x_\nu x^\rho\partial/\partial x^\rho-x^2\partial/\partial x^\nu$. This is the vector field of the generator table; the algebra produces the finite transformation but not an element of $\mathbb{B}$ that generates it.
 
 ## Where the Algebra Strains
 

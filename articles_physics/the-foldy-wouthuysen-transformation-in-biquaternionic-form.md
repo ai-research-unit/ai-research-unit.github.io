@@ -587,7 +587,7 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $-iR_{\vec e_z}^{\mathrm{pau}}=i\,\omega$, $\omega=(iR_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell; $(-iR_{\vec e_z}^{\mathrm{pau}})^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
 | $ϙ$ | Charge of the field; $A_\mu=(A_0,-\vec A)$ |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric; used only in *The Gamma Formulation* |
-| $\mathcal{D}=i\sum_\mu\bigl(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\bigr)\partial_\mu$ | Dirac operator; $\mathcal{D}^2=\Box$ |
+| $\mathcal{D}=i\sum_\mu\bigl(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\bigr)\partial/\partial x_\mu$ | Dirac operator; $\mathcal{D}^2=\Box$ |
 | $H = iR_{\vec e_x}^{\mathrm{pau}}mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |
 | $O = c\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\pi_k$ | Odd (frame-anticommuting) part |
 | $\mathcal{E} = ϙA_0$ | Even (frame-commuting) part |

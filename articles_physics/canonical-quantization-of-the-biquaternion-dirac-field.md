@@ -352,7 +352,7 @@ H=\int d^3X\;\psi^{\mathrm{fop}\dagger}\Big(-i\sum_k C_0C_k\frac{\partial}{\part
 =\int d^3X\;\bar{\psi^{\mathrm{fop}}}\Big(-i\sum_k C_k\frac{\partial}{\partial Q_k}+m\Big)\psi^{\mathrm{fop}} .
 $$
 
-The integrand is the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform $\pi\,\partial_{t'}\psi-\mathcal{L}$ of the Lagrangian fixed in the section *The Lagrangian*: the two time-derivative terms cancel, and what is left is the expression above.
+The integrand is the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform $\pi\,\partial \psi/\partial t'-\mathcal{L}$ of the Lagrangian fixed in the section *The Lagrangian*: the two time-derivative terms cancel, and what is left is the expression above.
 
 The two forms are the same operator. In the first the spatial derivative is multiplied by $C_0C_k$; in the second the $C_0$ has been absorbed into $\bar\psi$, and since $C_0^2=I_4$ the operator standing between $\psi^\dagger$ and $\psi$ is again $C_0C_k$. That matrix is Hermitian,
 

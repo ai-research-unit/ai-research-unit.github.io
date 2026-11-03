@@ -119,12 +119,12 @@ $$
 In words: **charge conjugation negates every frame cell**, since its coefficient conjugate is its negative. The Dirac operator is not a sum of frame cells, however; it is
 
 $$
-\mathbb{D}=-\sum_\mu\varepsilon_\mu\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,\partial_\mu ,
+\mathbb{D}=-\sum_\mu\varepsilon_\mu\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,\partial/\partial x_\mu ,
 \qquad
 \varepsilon_\mu:=g_{\mu\mu},
 $$
 
-whose coefficients are the **real** cells, taken with the signs $\varepsilon_\mu$, and whose symbol on the positive-frequency factor is the $\mathbb{D}_p$ used below, because $\partial_\mu\mapsto-ip_\mu$ there and $-\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,(-ip_\mu)=\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,p_\mu$. The two forms differ by one factor of $i$, counted with $i^2=-1$:
+whose coefficients are the **real** cells, taken with the signs $\varepsilon_\mu$, and whose symbol on the positive-frequency factor is the $\mathbb{D}_p$ used below, because $\partial/\partial x_\mu\mapsto-ip_\mu$ there and $-\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,(-ip_\mu)=\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,p_\mu$. The two forms differ by one factor of $i$, counted with $i^2=-1$:
 
 $$
 -i\,\bigl(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\bigr)=-\,\bigl(i^2\bigr)\,L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}} .
@@ -226,7 +226,7 @@ $$
 \psi \;=\; u\,e_{+} \;+\; u^{c}\,e_{-},
 $$
 
-where $e_{+}=e^{-ip\cdot Q}$ and $e_{-}=e^{+ip\cdot Q}$ are the two frequency factors, $e_{-}$ being the coefficient conjugate of $e_{+}$, where $\mathbb{D}$ acts on $e_{+}$ as the symbol $\mathbb{D}_p=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,p_\mu$ and on $e_{-}$ as $-\mathbb{D}_p$ (the sign of $\partial_\mu$ reverses), and where $u$ solves
+where $e_{+}=e^{-ip\cdot Q}$ and $e_{-}=e^{+ip\cdot Q}$ are the two frequency factors, $e_{-}$ being the coefficient conjugate of $e_{+}$, where $\mathbb{D}$ acts on $e_{+}$ as the symbol $\mathbb{D}_p=\sum_\mu\varepsilon_\mu\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\,p_\mu$ and on $e_{-}$ as $-\mathbb{D}_p$ (the sign of $\partial/\partial x_\mu$ reverses), and where $u$ solves
 
 $$
 \bigl(\mathbb{D}_p-m\bigr)u=0,
@@ -487,7 +487,7 @@ Separately from this particle interpretation, the Majorana pair has a **geometri
 | $\psi^{c} = \mathcal{C}\psi$ | Charge conjugate; $\psi^{c}=\psi$ defines Majorana |
 | $\psi=i\psi^{*}$ | Majorana condition |
 | $\mathbb{D}\,\psi=m\psi^{c}$ | Majorana equation |
-| $\mathbb{D}=-\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu$ | Pair operator in real cells; symbol $\mathbb{D}_p$, $\mathbb{D}_p^2=p^2$ |
+| $\mathbb{D}=-\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu$ | Pair operator in real cells; symbol $\mathbb{D}_p$, $\mathbb{D}_p^2=p^2$ |
 | $j_\mu=\bar{\psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi$; $\bar{\psi}\psi$; $j^{5}_\mu=\bar{\psi}\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\Gamma\psi$ | Vector, scalar and axial bilinears |
 | $\Lambda C \Lambda^{T}$ | Charge-conjugation cell under a linear change of frame $\Lambda$ |
 | $\dim_{\mathbb{R}}\{\psi:\psi^{c}=\psi\}=4$ | Majorana component count |

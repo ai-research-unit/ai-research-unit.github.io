@@ -483,6 +483,51 @@ $$
 
 The last equality is the point of the paragraph: the Hermitian form is not a scalar under Lorentz transformations, but its contraction **is**, and the contraction returns the two invariants. The energy density and the Poynting vector are therefore tied to the same pair $(I_1, I_2)$ that classifies the field. The programme states the same relation with its pseudonorm; on a Hermitian element that pseudonorm and the corpus's norm $\langle\cdot\rangle_{\natural}$ agree, so the two forms are one statement, and in vacuum ($\epsilon = \mu = 1$) it reads $\langle\tilde{\Sigma}\rangle_{\natural} = \tfrac14 I_1^2 + I_2^2$.
 
+### The Flow the Field Generates: The Four Types
+
+**The field is a generator, not only a value.** The vector part of $\mathbb{B}$ is the bivector part of $\mathrm{Cl}^{+}_{1,3}$, which is the Lie algebra of the Lorentz group, so $\tilde F$ defines a one-parameter subgroup of the unit group, $U(t) = \exp(t\tilde F)$, and, through the conjugation action $\tilde X \mapsto U(t)\tilde XU(t)^{*}$, a one-parameter subgroup of the Lorentz group acting at the event where the field is evaluated. Its spectrum is fixed by the two invariants alone. With $\lvert\vec N\cdot\vec N\rvert = \sqrt{I_1^2 + 4c^2I_2^2}$ and
+
+$$
+\sigma = \sqrt{\tfrac12\left(\lvert\vec N\cdot\vec N\rvert + I_1\right)} \ \ge 0,
+\qquad
+\theta = \operatorname{sgn}(I_2)\,\sqrt{\tfrac12\left(\lvert\vec N\cdot\vec N\rvert - I_1\right)},
+$$
+
+the complex number $\sigma + i\theta$ is the principal square root of $\vec N\cdot\vec N$, so that
+
+$$
+\sigma^2 - \theta^2 = I_1, \qquad \sigma\theta = c\,I_2 .
+$$
+
+In the defining four-dimensional representation, with $F$ the matrix of $\tilde F$ and $\Lambda(t) = \exp(tF)$, the characteristic polynomial is $(\lambda^2-\sigma^2)(\lambda^2+\theta^2)$, with eigenvalues $\pm\sigma$ and $\pm i\theta$. Hence
+
+$$
+\operatorname{Tr}\Lambda(t) = 2\cosh t\sigma + 2\cos t\theta, \qquad \det\Lambda(t) = 1 ,
+$$
+
+which is the quickest check of a computed flow. The closed form of $U(t)$ is the exponential of *Biquaternion Elementary Functions*; what the invariants add is the meaning of its two angles, $\sigma$ being the rapidity rate and $\theta$ the rotation rate.
+
+**The type of the field is the type of its own flow.**
+
+| invariants | $(\sigma,\theta)$ | $U(t)$, hence $\Lambda(t)$ | field type |
+|---|---|---|---|
+| $I_2 = 0$, $I_1 > 0$ | $\theta = 0$ | boost along $\vec E$, rapidity $t\sigma$ | electric |
+| $I_2 = 0$, $I_1 < 0$ | $\sigma = 0$ | rotation about $\vec B$, angle $t\theta$ | magnetic |
+| $I_1 = I_2 = 0$ | $0,\,0$ | null rotation | null |
+| otherwise | $\sigma,\theta \neq 0$ | boost composed with rotation | generic |
+
+**These are the four classical types of a one-parameter Lorentz transformation** — hyperbolic, elliptic, parabolic and loxodromic in Herglotz's naming, the same four that *A Brief History of Biquaternions in Physics* records at the Laguerre group. The table is therefore not new data on the field. It is the classification of the paragraphs above followed through the exponential rather than left in the algebra, and the two descriptions coincide row by row.
+
+**The null row is where the algebra and its matrix image part company.** There $\tilde F^2 = 0$, so $U(t) = \mathbb 1 + t\tilde F$ and $U(t)-\mathbb 1$ squares to zero in the algebra. In the defining representation the same flow is $(\Lambda - \mathbb 1)^3 = 0$ with $(\Lambda - \mathbb 1)^2 \neq 0$, the Jordan form $J_3(1)\oplus J_1(1)$ of the degenerate case in *The Sandwich Exponential of an N-Regular, Spectrally Degenerate Biquaternion*. Both statements describe one null rotation; what differs is the size of the representation, and the difference is the same one that makes $\tilde F$ a zero divisor while $F$ is a matrix that squares to something nonzero.
+
+**The flow fixes its own generator, and that separates the flow from the field.** Because $\Lambda(t)$ is a power series in $F$ it commutes with $F$, so the subgroup it generates leaves the tensor at the event unchanged: the flow moves frames and not the field. What the flow is not is a worldline. The worldline of a charge is the flow of $(\varrho/m)F$ acting on the four-momentum, in *The Lorentz Force in Biquaternion Form*; the two exponents are the same matrix only up to the scalar $\varrho/m$, and only in a uniform field, since otherwise the field varies along the motion and the exponent is an ordered product rather than a single exponential.
+
+**The invariants and the flow determine each other, with one exception.** From $(I_1,I_2)$ the pair $(\sigma^2,\theta^2)$ is recovered, and from the conjugacy class of the flow the pair is recovered as $I_1 = \sigma^2-\theta^2$ and $cI_2 = \sigma\theta$; the pair therefore determines the flow up to conjugacy and is determined by it. The exception is the null row, where $(0,0)$ is shared by the vanishing field, whose flow is the identity, and by a null field, whose flow is a nontrivial unipotent subgroup; there the pair does not separate the two, and the Jordan type does.
+
+**Checks.** Over $100$ random fields the trace of $\Lambda(t)$ agreed with $2\cosh t\sigma + 2\cos t\theta$ to $2\times10^{-15}$. A pure electric field with $\vec E$ along $(1,2,2)$ of unit magnitude reproduced the boost of rapidity $t\sigma$ along $\vec E$, and a pure magnetic field with $\vec B$ along $(2,2,1)$ of magnitude two the rotation of angle $t\theta$ about $\vec B$, each to machine precision. A null field reproduced $\mathbb 1 + tF + \tfrac12t^2F^2$ exactly, and a generic field gave four distinct eigenvalues.
+
+**Boundary.** The section adds an interpretation and no dynamics. It does not refine the classification of the paragraphs above, and it computes no flow that the field equations ask for. What it records is that the pair which already fixed the frame displaying the field also fixes what the field generates: the invariants are the spectral data of the flow. The standard forms of the four types, their normalisations and their classification are not developed here; the corpus carries them in the maths block and cites them in *Further Reading*.
+
 ## The Gamma Formulation
 
 The body of this article writes the field as an element of $\mathbb{B}$; its cell reading is the left multiplication $L_{\tilde F}$. The gamma names are attached to the frame cells only here.
@@ -596,7 +641,7 @@ Duality is the rotation $\vec N\mapsto \exp(-i\theta)\vec N$; at $\theta = \pi/2
 
 The field also has a polar reading, $\tilde F=\tilde F_H\tilde F_0$: the amplitude carries the intensity and the invariant modulus, and the phase carries the duality angle and the polarization. The gamma cells supply the Clifford frame, in which the field has a cell reading and the two Dirac equations are the one-sided pair and the two-sided equation.
 
-Finally, the invariants classify the field into null, electric, magnetic, and generic types, and fix the field magnitudes in the frame that displays each type; they are the complete set of local, derivative-free invariants, but they are not a complete description of the field.
+Finally, the invariants classify the field into null, electric, magnetic, and generic types, and fix the field magnitudes in the frame that displays each type; they are the complete set of local, derivative-free invariants, but they are not a complete description of the field. The same pair fixes what the field generates: since the field is an element of the Lorentz Lie algebra, $\exp(t\tilde F)$ is a one-parameter subgroup whose type — hyperbolic, elliptic, parabolic or loxodromic — is the type of the field, so the classification followed through the exponential agrees row by row with the classification in the algebra.
 
 ## Summary of Notation
 
@@ -619,6 +664,8 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $I_1 = \vec E^2 - c^2\vec B^2$ | First Lorentz invariant (scalar) |
 | $I_2 = \vec E\cdot\vec B$ | Second Lorentz invariant (pseudoscalar) |
 | $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\vec N$ |
+| $\sigma,\theta$ | Rapidity rate and rotation rate of the field's flow, $\sigma+i\theta=\sqrt{\vec N\cdot\vec N}$, so that $\sigma^2-\theta^2=I_1$ and $\sigma\theta=cI_2$ |
+| $F$, $\Lambda(t)=\exp(tF)$ | Field matrix in the defining representation and the one-parameter Lorentz transformation it generates |
 | $\star$ | Hodge dual, $\star(\vec E,\vec B) = (c\vec B, -\vec E/c)$, $\star^2 = -1$ |
 | $W = \tfrac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ | Electromagnetic energy density |
 | $\vec S = \vec E\times\vec H$ | Poynting vector |
@@ -651,3 +698,5 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations.
 - L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7**(1) (2012) 19–39 (arXiv:1302.0523), for the energy–momentum biquaternion $\tilde{\Sigma}$, its pseudonorm and its identification with the two field invariants.
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for the biquaternionic treatment of the field and its energy–momentum.
+- Arkadiusz Jadczyk and Jerzy Szulga, "A Comment on 'On the Rotation Matrix in Minkowski Space-time' by Özdemir and Erdoğdu", arXiv:1412.5581 [physics.gen-ph] (2014), for the exponential of a Lorentz generator in closed form in terms of the two field invariants, its two regimes and its null limit, and the identification of the four field types with the four types of the one-parameter flow; the identities of §*The Flow the Field Generates* were recomputed here, and the identification of the field-strength biquaternion with the generator is the corpus's, not the source's.
+- E. Minguzzi, "Relativistic Chasles' Theorem and the Conjugacy Classes of the Inhomogeneous Lorentz Group", arXiv:1205.4131 [gr-qc] (2013), for the classification of Lorentz generators into standard forms up to conjugacy, which §*The Flow the Field Generates* quotes and does not derive.

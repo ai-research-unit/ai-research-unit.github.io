@@ -13,7 +13,7 @@ Two conventions frame everything below.
 
 The article is an **equivalent rewriting**, as everywhere in this series: the four options are four forms of the standard equation, and nothing new is predicted. What is new to the corpus is the object: the discrete symmetries organising the four spinor types, and the algebraic datum that keeps them apart. The construction is taken from Parra as reported by Fauser; the corpus reproduces the report and does not claim to have consulted Parra's papers, which are unpublished or difficult to obtain.
 
-**Notation, once.** The imaginary unit is $i$, with $i^2=-1$; every product of two of them is reduced before a formula is read, and no other object in the article is identified with it. The quaternion units are $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclic. A cell multiplies on the left by one element and on the right by another, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_b\psi=a\psi b$, and two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order; the side of an action is carried by position and never by a mark. The four frame cells are $\Gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$, with $\tau(t)=x$ and $\tau(k)=y$ for $k=x,y,z$, and their sum with the derivative is the gradient cell $\mathcal{D}:=\Gamma_\mu\partial_\mu$. The chirality cell is $\chi:=R_{-i\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$, the last step because $L_{e_t}^{\mathrm{pau}}=I_4$; it acts as $\chi\psi=-i\psi\vec e_z$, so it multiplies **on the right** and the factor $i$ is a scalar of the cell. This is the corpus's name for the cell, and it is a cell and not an element: $\chi$ below always acts on what stands to its right. The squares are then a count of minus signs, each frame cell carrying exactly one factor $i$,
+**Notation, once.** The imaginary unit is $i$, with $i^2=-1$; every product of two of them is reduced before a formula is read, and no other object in the article is identified with it. The quaternion units are $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclic. A cell multiplies on the left by one element and on the right by another, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_b\psi=a\psi b$, and two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order; the side of an action is carried by position and never by a mark. The four frame cells are $\Gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$, with $\tau(t)=x$ and $\tau(k)=y$ for $k=x,y,z$, and their sum with the derivative is the gradient cell $\mathcal{D}:=\Gamma_\mu\partial/\partial x_\mu$. The chirality cell is $\chi:=R_{-i\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$, the last step because $L_{e_t}^{\mathrm{pau}}=I_4$; it acts as $\chi\psi=-i\psi\vec e_z$, so it multiplies **on the right** and the factor $i$ is a scalar of the cell. This is the corpus's name for the cell, and it is a cell and not an element: $\chi$ below always acts on what stands to its right. The squares are then a count of minus signs, each frame cell carrying exactly one factor $i$,
 
 $$
 \Gamma_t^{\,2}=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)(+1)(-1)I_4=I_4,\qquad
@@ -70,7 +70,7 @@ $$
 \end{aligned}\;}
 $$
 
-Here $\mathcal{D}=\Gamma_\mu\partial_\mu$ is the gradient cell, the derivative acting on everything to its right; $ϙ$ is the charge and $A$ the potential; and $R_{e_{21}}$ is the right cell of the spin bivector. Under the corpus's dictionary the bivector $e_{21}$ of the source's Clifford basis is the element $-\vec e_z$ of the even algebra, so that
+Here $\mathcal{D}=\Gamma_\mu\partial/\partial x_\mu$ is the gradient cell, the derivative acting on everything to its right; $ϙ$ is the charge and $A$ the potential; and $R_{e_{21}}$ is the right cell of the spin bivector. Under the corpus's dictionary the bivector $e_{21}$ of the source's Clifford basis is the element $-\vec e_z$ of the even algebra, so that
 
 $$
 R_{e_{21}}=R_{-\vec e_z}^{\mathrm{pau}}=-i\,\chi .
@@ -98,7 +98,7 @@ $$
 \boxed{\;L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L,\qquad L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R\;}
 $$
 
-with $\tilde\nabla=e_t\partial_{Q_t}+\vec e_x\partial_{Q_x}+\vec e_y\partial_{Q_y}+\vec e_z\partial_{Q_z}$ and $\tilde\nabla^{\natural}$ its quaternion conjugate. **Two equations, one per chirality.** Both gradients act on the left, so the pair is one-sided; at $m=0$ the two lines decouple into the two Weyl equations, and at $m\ne0$ the mass couples them off the diagonal.
+with $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\tilde\nabla^{\natural}$ its quaternion conjugate. **Two equations, one per chirality.** Both gradients act on the left, so the pair is one-sided; at $m=0$ the two lines decouple into the two Weyl equations, and at $m\ne0$ the mass couples them off the diagonal.
 
 **The two-sided single equation.** Read on the algebra rather than on the module, the same physics is one equation whose two sides are the two multiplications,
 
@@ -286,7 +286,7 @@ The options are permuted by the discrete quotient $D=\Gamma_{1,3}/\Gamma^{0}_{1,
 | $\Gamma_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$ | The four frame cells, $\tau(t)=x$ and $\tau(k)=y$; $\{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}I_4$ |
 | $\chi=R_{-i\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$ | The chirality cell, a right-multiplication cell, $\chi\psi=-i\psi\vec e_z$; $\chi^2=I_4$ and $\{\Gamma_\mu,\chi\}=0$ |
 | $R_{e_{21}}=R_{-\vec e_z}^{\mathrm{pau}}=-i\chi$ | The right cell of the spin bivector; $(R_{e_{21}})^2=(-i)^2\chi^2=-I_4$ |
-| $\mathcal{D}=\Gamma_\mu\partial_\mu$ | The gradient cell of the body |
+| $\mathcal{D}=\Gamma_\mu\partial/\partial x_\mu$ | The gradient cell of the body |
 | $\nabla$, $A$, $m$, $ϙ$ | The multivector gradient, the potential, the mass and the charge of the source's displays; $ϙ$ is the corpus glyph and is not the quaternion components $q_{rj}$ |
 | $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ | The central grading of the complexified algebra, $\chi_{\mathrm{ad}}^2=e_t$; a different object from the chirality cell $\chi$, and named only in the closing section |
 | $\tilde\nabla$, $\tilde\nabla^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; $L_{\tilde\nabla}$ is the one-sided Dirac operator |

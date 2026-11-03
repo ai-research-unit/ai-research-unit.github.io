@@ -108,7 +108,7 @@ $$
 \sum_\mu\varepsilon_\mu\frac{\partial A_\mu}{\partial Q_\mu}
 =-\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\phi}{\partial Q_\mu^2}.
 $$
-The signature sign matters: read as the plain contraction $B_\mu=\sum_\nu\epsilon_{\mu\nu}V_\nu$, the dual is $\frac{1}{\sqrt\pi}(\partial_t\phi,-\partial_x\phi)$, whose two components have opposite relative signs and so do not form a gradient; that reading is not the axial current. The invariant contraction
+The signature sign matters: read as the plain contraction $B_\mu=\sum_\nu\epsilon_{\mu\nu}V_\nu$, the dual is $\frac{1}{\sqrt\pi}(\partial \phi/\partial t,-\partial \phi/\partial x)$, whose two components have opposite relative signs and so do not form a gradient; that reading is not the axial current. The invariant contraction
 $$
 \sum_\mu\varepsilon_\mu A_\mu A_\mu=-\sum_\mu\varepsilon_\mu V_\mu V_\mu
 $$
@@ -229,11 +229,11 @@ The framework supplies the factor $2$ as the two Majorana fields into which the 
 
 The fermionic side of the dictionary is built from vertex operators, and their dimensions are the sharpest arithmetic of the equivalence.
 
-**The current algebra.** In the bosonized language the current is $j_\mu=-\frac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial_\nu\phi$ (the dictionary above), whose components are $j_0=\frac{1}{\sqrt\pi}\partial_1\phi$ and $j_1=\frac{1}{\sqrt\pi}\partial_0\phi$, and the equal-time commutator of two lower-index components in $1+1$ dimensions is
+**The current algebra.** In the bosonized language the current is $j_\mu=-\frac{1}{\sqrt\pi}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\partial \phi/\partial x_\nu$ (the dictionary above), whose components are $j_0=\frac{1}{\sqrt\pi}\partial \phi/\partial x_1$ and $j_1=\frac{1}{\sqrt\pi}\partial \phi/\partial x_0$, and the equal-time commutator of two lower-index components in $1+1$ dimensions is
 $$
 \big[j_0(x),j_1(y)\big] = \frac{i}{\pi}\,\frac{d\delta}{dx}(x-y),
 $$
-the **Schwinger term**. The sign and the coefficient are the canonical commutator's: $[\phi(x),\partial_0\phi(y)]=i\delta(x-y)$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial_1\phi(x),\partial_0\phi(y)]=\frac{i}{\pi}\delta'(x-y)$. Both indices are low, so no metric sign enters this commutator; the signature signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being
+the **Schwinger term**. The sign and the coefficient are the canonical commutator's: $[\phi(x),\partial/\partial x_0\phi(y)]=i\delta(x-y)$ with $\hbar=1$, the corpus's convention, gives $\frac{1}{\pi}[\partial/\partial x_1\phi(x),\partial/\partial x_0\phi(y)]=\frac{i}{\pi}\delta'(x-y)$. Both indices are low, so no metric sign enters this commutator; the signature signs are already carried by the dictionary's $\epsilon_{\mu\nu}\varepsilon_\nu$. The coefficient is $1/\pi$, the square of the anomaly's $1/\sqrt\pi$ because it is bilinear in the current, the anomaly being
 $$
 \sum_\mu\varepsilon_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}
 =-\frac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\frac{\partial^2\phi}{\partial Q_\mu^2},
@@ -257,7 +257,7 @@ where $\phi_{L,R}$ are the chiral halves of $\phi=\phi_L+\phi_R$, $\Delta_{\math
 **Sugawara.** The bosonic stress tensor is the Sugawara form of the current of the previous subsection. Written with the dictionary's $j_\mu$ and $g=\mathrm{diag}(+1,-1)$, the traceless symmetric combination is
 $$
 T_{\mu\nu}=\frac{\pi}{2}\bigl(j_\mu j_\nu+j_\nu j_\mu-g_{\mu\nu}j_\rho j^\rho\bigr)
-=\partial_\mu\phi\,\partial_\nu\phi-\tfrac12\,g_{\mu\nu}\sum_\rho\varepsilon_\rho\frac{\partial\phi}{\partial Q_\rho}\frac{\partial\phi}{\partial Q_\rho},
+=\partial \phi/\partial x_\mu\,\partial \phi/\partial x_\nu-\tfrac12\,g_{\mu\nu}\sum_\rho\varepsilon_\rho\frac{\partial\phi}{\partial Q_\rho}\frac{\partial\phi}{\partial Q_\rho},
 $$
 the coefficient $\pi/2$ being the inverse of the dictionary's $1/\pi$, and the right-hand side is the canonical stress tensor of the free boson, so the central charge is $c=1$, matching the fermionic $c=1$ of the central-charge section. The framework adds nothing beyond naming the current's $\mathrm{U}(1)$ as the abelian part of the module's symmetry; the non-abelian Sugawara construction belongs to the group theory of the next section.
 
@@ -408,7 +408,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 | $\theta$ | Phase of the mass, $m=|m|e^{i\theta}$; also the $\theta$-vacuum angle |
 | $\epsilon_{\mu\nu}$ | Antisymmetric symbol, $\epsilon_{01}=+1$ |
 | $\varepsilon_\mu=g_{\mu\mu}$ | Signature sign of the index $\mu$; with $g=\mathrm{diag}(+1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_1=-1$ |
-| $A_\mu=\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu V_\nu$ | Hodge dual of the current; $=-\tfrac{1}{\sqrt\pi}\partial_\mu\phi$, so $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=-\tfrac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\partial_\mu^2\phi$ |
+| $A_\mu=\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu V_\nu$ | Hodge dual of the current; $=-\tfrac{1}{\sqrt\pi}\partial \phi/\partial x_\mu$, so $\sum_\mu\varepsilon_\mu\partial A_\mu/\partial x_\mu=-\tfrac{1}{\sqrt\pi}\sum_\mu\varepsilon_\mu\partial^2/\partial x_\mu^2\phi$ |
 | $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ | Series d'Alembertian |
 | $\sum_\mu\varepsilon_\mu\partial^2/\partial Q_\mu^2=\partial^2/\partial Q_t^2-\Delta_Q$ | Quaternionic norm of the gradient; the operator in the anomaly |
 | $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$ | Spatial Laplacian |

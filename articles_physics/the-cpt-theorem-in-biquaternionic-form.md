@@ -82,7 +82,7 @@ $$
 $$
 which is the two-sided form: the spatial terms are the two-sided cells, the time term is a pure right multiplication, and the frame is completed by the chirality, itself a pure right multiplication, $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$. The four minus signs are the four factors of $i$ that the generators carry, since $-R_{\vec e_x}^{\mathrm{pau}}=iG_0$ and $-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=iG_k$; in the generators the operator is the contraction
 $$
-\mathbb{D}=i\,G_\mu\,\partial_\mu=i\Bigl(G_0\,\partial_{t'}+\sum_kG_k\,\partial_{x_k}\Bigr),
+\mathbb{D}=i\,G_\mu\,\partial/\partial x_\mu=i\Bigl(G_0\,\partial/\partial t'+\sum_kG_k\,\partial/\partial x_k\Bigr),
 $$
 which has no metric sign anywhere because the metric is already in the generators, $G_0^{2}=1$ and $G_k^{2}=-1$. On a plane wave $e^{-ip\cdot x}$ with $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$ the factors of $i$ cancel again:
 $$
@@ -440,8 +440,8 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}$ | Biquaternion Dirac field and its anti-Hermitian conjugate |
 | $\psi=(\psi_L,\psi_R)^{T}$ | Spinor-module representative; $(\mathbb{D}-m)\psi=0$ |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi=a\psi b$ | Two-sided cells; identity $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, inverse $L_{a^{-1}}R_{b^{-1}}$, product $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ |
-| $G_0=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $G_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | The four generator cells (written as the gammas in the Gamma section); $G_0^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $G_k^{2}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, distinct ones anticommute (metric $g=\mathrm{diag}(+1,-1,-1,-1)$); $\mathbb{D}=iG_\mu\partial_\mu$ |
-| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\partial_{t'}-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_k$ | The Dirac operator on the module, in cells |
+| $G_0=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $G_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | The four generator cells (written as the gammas in the Gamma section); $G_0^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, $G_k^{2}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, distinct ones anticommute (metric $g=\mathrm{diag}(+1,-1,-1,-1)$); $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ |
+| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$ | The Dirac operator on the module, in cells |
 | $G_0E_{\vec p}-\sum_k G_kp_k$ | Plane-wave value of $\mathbb{D}$; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
 | $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, $\omega=-R_{\vec e_z}^{\mathrm{pau}}=-i\Gamma$ | Chirality cell and volume element; $\Gamma^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$; $\eta_{CPT}=\Gamma=i\omega$ |
 | $P_{L,R}=\tfrac12(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\mp\Gamma)$ | Chiral projectors |

@@ -161,7 +161,7 @@ $$
 g=(1+i v)\,\frac{x+i y}{(z-z_0)\pm r_b},
 $$
 
-whose two signs are the two sheets of the ring, as in the static case. It satisfies both the complex eikonal equation and the wave equation, $(\partial_{t'}g)^2-(\partial_x g)^2-(\partial_y g)^2-(\partial_z g)^2=0$ and $(\partial_{t'}^2-\partial_x^2-\partial_y^2-\partial_z^2)g=0$, which were verified here by finite differences on both branches at $v=0$, $0.4$, $1.5$ and $3$, the residual falling as the square of the step as it should. At $v=0$ it is the spinor of the static complex-shifted congruence, and for $a\to0$ it reduces to the stereographic projection $S^2\to\mathbb{C}$, $g=(x+iy)/(z\pm r)$.
+whose two signs are the two sheets of the ring, as in the static case. It satisfies both the complex eikonal equation and the wave equation, $(\partial g/\partial t')^2-(\partial g/\partial x)^2-(\partial g/\partial y)^2-(\partial g/\partial z)^2=0$ and $(\partial^2/\partial t'^2-\partial^2/\partial x^2-\partial^2/\partial y^2-\partial^2/\partial z^2)g=0$, which were verified here by finite differences on both branches at $v=0$, $0.4$, $1.5$ and $3$, the residual falling as the square of the step as it should. At $v=0$ it is the spinor of the static complex-shifted congruence, and for $a\to0$ it reduces to the stereographic projection $S^2\to\mathbb{C}$, $g=(x+iy)/(z\pm r)$.
 
 The reason the spinor is worth recording is that it is where the deformation is visible most cheaply: the only change from the static case is the complex time dependence of $z_0$ and the factor $(1+iv)$. The eikonal equation, the wave equation and the algebraic structure of the congruence are the same in the two cases, and so is the reading of the eikonal as the null condition on the gradient — the vanishing of the biquaternion norm of the gradient, which is the zero-divisor cone of the algebra.
 
@@ -224,6 +224,8 @@ The corpus records other ring-shaped electrons, and they must be kept apart.
 | Charge | arbitrary | self-quantised, minimal value $|ϙ|=\tfrac14$ | fixed at the elementary value, independent of $v$ and $t'$ |
 | Gravity | none | Kerr–Newman metric, $g=2$ | Kerr–Schild deformation, conjectural; $g=2$ and $\mu=ea$ only in the static member $v=0$ |
 
+The shift of a singularity by a constant imaginary amount, $z\mapsto z+i\lambda$, is one device with three uses, and what distinguishes them is the status of $\lambda$: in the Kerr ring it is fixed by the source's angular momentum, $\lambda=a=J/M$; in the algebrodynamical ring it is fixed only by requiring the Dirac moment, $\lvert\lambda\rvert=\lvert a\rvert=\hbar/2Mc$; and in Lanczos's construction it is free, $\lambda=\varrho$, the length of a displacement into $\mathbb{M}_+$.
+
 The third column is the same ring as the first, seen at a different member of a family, and it is not a new model: its field is the complex boost of the Coulomb field, and its equation is linear. What it adds is the time dependence, and with it the caveat recorded in *The Instability* above.
 
 Both are classical models in which the electron is a ring rather than a point, and both are recorded in the corpus as external programmes rather than as results. The decisive difference is the equation. Lanczos's ring lives on the **linear** Cauchy–Riemann equation, where the complex displacement is a symmetry of the equation and the ring is its image; the algebrodynamical ring lives on a **nonlinear, over-determined** primary equation, where the ring, the quantised charge and the induced metric are consequences of the nonlinearity. The linear ring has a free radius and no quantisation; the nonlinear ring has a fixed radius, a quantised charge and a metric. The corpus's linear framework reaches the first and is silent on the second, which is the boundary the algebrodynamical article states.
@@ -244,6 +246,7 @@ The ring is also the static member of a family. Kassandrov's congruence construc
 | $\vec r_0 = -i\varrho \vec e_z$ | Position of the singularity, displaced into the informational sector |
 | $\Delta\tilde{Q} = -i\varrho \vec e_z$ | The displacement itself; an element of $\mathbb{M}_+$ with $z'=-\varrho$ |
 | $\varrho$ | Magnitude of the imaginary displacement; radius of the circle electron |
+| $\lambda$ | Length of a constant imaginary shift $z\mapsto z+i\lambda$; $a=J/M$ for the Kerr ring, $\lvert a\rvert=\hbar/2Mc$ in the algebrodynamical ring, $\varrho$ here |
 | $\Gamma$ | Singular set: the ring $z=0$, $x^2+y^2=\varrho^2$ |
 | $D$ | Branch disk $z=0$, $x^2+y^2<\varrho^2$, where the square root changes sign |
 | $\rho=\sqrt{x^2+y^2}$ | Cylindrical radius, used in the torus parametrisation |

@@ -6,9 +6,9 @@ The companion articles develop a formulation of quantum physics in which states 
 
 The claim to be established is that the informational unit of the framework — the **qubit** — is the **defining module** of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the unique simple left module $S$ on which $\mathbb{B}$ acts faithfully. A complex two-dimensional space is not chosen and then equipped with operators; it is the object the algebra is a matrix algebra *of*. The state vectors are elements of $S$; the rank-one projectors on $S$ correspond exactly to the idempotents of $\mathbb{M}_+$ that are normalised by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ (trace one in the image); and the inner product that quantum physics requires is the algebra's own Hermitian form, whose matrix reading is the trace pairing, restricted to the module.
 
-This is the informational interpretation of a structural fact. The article does not claim that the biquaternion algebra predicts the existence of a two-state system, nor that it excludes systems of other dimension: it claims that *if* the informational sector is described by $\mathbb{B}$, then its elementary carrier is forced, because an algebra of $2\times2$ complex matrices has exactly one simple module up to isomorphism, and that module is two-dimensional over $\mathbb{C}$. The qubit is native in the sense that it is read off the algebra rather than imposed on it. What is genuinely open is whether the tensor product $\mathbb{B}\otimes\mathbb{B}$, on which the multi-qubit information-theoretic articles of this subcategory depend, is native in the same sense; that question is raised here and left where the companion articles leave it.
+This is the informational interpretation of a structural fact. The article does not claim that the biquaternion algebra predicts the existence of a two-state system, nor that it excludes systems of other dimension: it claims that *if* the informational sector is described by $\mathbb{B}$, then its elementary carrier is forced, because an algebra of $2\times2$ complex matrices has exactly one simple module up to isomorphism, and that module is two-dimensional over $\mathbb{C}$. The qubit is native in the sense that it is read off the algebra rather than imposed on it. What is genuinely open is whether the tensor product $\mathbb{B}\otimes\mathbb{B}$, on which the multi-qubit information-theoretic articles of this subcategory depend, is native in the same sense. The carrier is native and the composition is not, and the second statement is not a matter of taste: the criterion that decides whether two qubits are separate is the determinant of the amplitude array, a polynomial of the tensor product that the algebra does not carry, as the section *The Composition Rule and the Rank-One Condition* shows.
 
-The article proceeds as follows. The algebra and its matrix representative are fixed first. Then the defining module is introduced, its simplicity and uniqueness are recorded, and it is shown that the algebra's left regular module is two copies of it. Then the states are placed on the module: the Hermitian elements act as observables, the rank-one idempotents correspond to rays, and the Hermitian form becomes the Hilbert-space inner product, read as the trace pairing. Then the geometry of the module's state space is read off the biquaternion norm. A section collects what the module supplies and what it does not, and the article closes with the open questions.
+The article proceeds as follows. The algebra and its matrix representative are fixed first. Then the defining module is introduced, its simplicity and uniqueness are recorded, and it is shown that the algebra's left regular module is two copies of it. Then the states are placed on the module: the Hermitian elements act as observables, the rank-one idempotents correspond to rays, and the Hermitian form becomes the Hilbert-space inner product, read as the trace pairing. Then the geometry of the module's state space is read off the biquaternion norm. A section collects what the module supplies and what it does not. A further section then tests the composition rule itself, identifies the invariant that decides separability, and shows that it is not a form of the algebra. The article closes with the open questions.
 
 ## The Algebra and a Matrix Representative
 
@@ -234,14 +234,70 @@ the three pairs of outcome probabilities determine $\vec r$ and hence the state;
 
 **What it does not supply.**
 
-- **The dimension of composite systems.** The defining module is the single-qubit carrier. The two-qubit arena is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module $\mathbb{C}^4$ is *not* the defining module of $\mathbb{B}$; it is the defining module of the larger algebra. That the tensor product is the correct composition rule is an additional structure, identified as an open question in *Entangled Subsystems in the Biquaternion Framework*.
+- **The dimension of composite systems.** The defining module is the single-qubit carrier. The two-qubit arena is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module $\mathbb{C}^4$ is *not* the defining module of $\mathbb{B}$; it is the defining module of the larger algebra. That the tensor product is the correct composition rule is an additional structure, identified as an open question in *Entangled Subsystems in the Biquaternion Framework* and analysed in the section *The Composition Rule and the Rank-One Condition* above.
 - **Systems of other dimension.** A qutrit would require $M_3(\mathbb{C})$, which is not isomorphic to $\mathbb{B}$. The framework as developed here describes two-level systems; whether it can be extended is a separate question.
 - **A dynamics.** The module fixes the kinematics — carriers, states, observables, probabilities — and says nothing about which Hamiltonian acts.
 - **An interpretation.** That the module is the algebra's own carrier is a structural fact; that it is a physical informational sector is the interpretive hypothesis of *The Informational Sector: States, Observables and Probability*, and it is not required by anything in this article.
 
+## The Composition Rule and the Rank-One Condition
+
+The first of the open questions below can be given a partial answer, and the answer is negative in a sense precise enough to be computed. The algebra forces its carrier, because it is a matrix algebra and has one simple module. It does not force how two carriers combine. And when the combination is supplied, the criterion that separates the products from the rest is a condition on $\mathbb{C}^2\otimes\mathbb{C}^2$ as a **vector space**, carried by a polynomial that the algebra does not possess.
+
+### The amplitude array and its determinant
+
+A two-qubit state vector is $|\psi\rangle=\sum_{A_1,A_2}c_{A_1A_2}|A_1A_2\rangle$ with $A_1,A_2\in\{0,1\}$. Its four amplitudes form the array $\mathbf c=(c_{A_1A_2})$, and the linear isomorphism $\mathbb{C}^2\otimes\mathbb{C}^2\to\mathrm{End}(\mathbb{C}^2)$ sends $|u\rangle\otimes|v\rangle$ to the rank-one operator $|u\rangle\langle v|$. The determinant of the array,
+
+$$
+\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10},
+$$
+
+is the **hyperdeterminant of format $2\times2$**, the generator of the polynomial invariants of $\mathbb{C}^2\otimes\mathbb{C}^2$ under the local group $SL(2,\mathbb{C})\times SL(2,\mathbb{C})$.
+
+**Proposition (separability is the rank-one condition).** $|\psi\rangle$ is a product $|u\rangle\otimes|v\rangle$ if and only if $\operatorname{rank}\mathbf c=1$, if and only if $\mathrm{Det}(\mathbf c)=0$.
+
+**Proof.** A product gives $\mathbf c=|u\rangle\langle v|$, of rank one. Conversely an array of rank one is $|u\rangle\langle v|$ for a nonzero column $|u\rangle$ and a nonzero row $\langle v|$, and the corresponding vector is $|u\rangle\otimes|v\rangle$. An array has rank at most one exactly when its $2\times2$ minor vanishes, and there is one minor.
+
+The condition is one quadratic equation in $\mathbb{P}^3$, so the product states form a quadric surface, the Segre variety $\mathbb{P}^1\times\mathbb{P}^1$ that *Projective Geometry* records as the low-dimensional model of the Klein quadric; its vanishing minors are the Plücker relations in the smallest size they take, as stated in *Grassmannians and Stiefel Manifolds*. This surface is not the Segre variety of *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*, which at $n=2$ lives in $\mathbb{P}^{15}$: the two are one construction applied to different tensor products. The same condition is recorded numerically, in the component order $c_1,c_2,c_3,c_4$, in *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, where $c_1c_4-c_2c_3=0$ is the test for a product state and $2\lvert c_1c_4-c_2c_3\rvert$ the concurrence. What is added here is the name of the object that carries the test and the conclusion that follows from it.
+
+**Concurrence is the modulus of the determinant.** For a normalised state the standard concurrence is
+
+$$
+\mathcal C=\frac{2\,\lvert\mathrm{Det}(\mathbf c)\rvert}{\sum_{A_1,A_2}\lvert c_{A_1A_2}\rvert^2}=\frac{2\sigma_1\sigma_2}{\sigma_1^2+\sigma_2^2},
+$$
+
+with $\sigma_1,\sigma_2$ the singular values of $\mathbf c$, and it equals $2\sqrt{\det\rho_1}$ for the reduced state $\rho_1$ of the first qubit. The determinant is therefore not an auxiliary quantity: it *is* the entanglement measure of a pure two-qubit state, up to normalisation. On a hundred random normalised states the three expressions agreed to $5.6\times10^{-16}$, and on a hundred product states $\lvert\mathrm{Det}(\mathbf c)\rvert$ did not exceed $5.5\times10^{-17}$.
+
+**The maximally entangled states.** $\mathcal C$ depends only on the ratio of the singular values and reaches $1$ exactly when they are equal, that is, when the array is a nonzero scalar multiple of a unitary matrix. Projectively those are the classes of $U(2)$, so the maximally entangled states form $U(2)/U(1)\cong SO(3)\cong\mathbb{RP}^3$ inside $\mathbb{CP}^3$, a real three-dimensional manifold lying off the Segre quadric. On a hundred random unitary arrays the concurrence was $1$ to $2.2\times10^{-16}$. The two-qubit state space is thus $\mathbb{CP}^3$, with one quadric for the products and one copy of $\mathbb{RP}^3$ for maximal entanglement; the Schmidt decomposition of the state is the singular value decomposition of $\mathbf c$.
+
+### The two quadratic forms on one element
+
+The identification $\mathbb{C}^4\cong\mathbb{B}$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, namely $|00\rangle\mapsto e_t$, $|01\rangle\mapsto\vec e_x$, $|10\rangle\mapsto\vec e_y$, $|11\rangle\mapsto\vec e_z$, puts the amplitude array of a state at the coefficients of an element, $\mathbf c=(Q_t,Q_x,Q_y,Q_z)$, and the hyperdeterminant then reads
+
+$$
+\mathrm{Det}(\mathbf c)=Q_tQ_z-Q_xQ_y .
+$$
+
+The same four coefficients carry the algebra's own quadratic form, the determinant of the matrix image, which is the biquaternion norm:
+
+$$
+\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2 ,
+$$
+
+verified to $3.6\times10^{-15}$ on a hundred random elements. Two quadratic forms on one element, answering different questions, and the difference is not a change of scale. It is visible on the smallest examples:
+
+- $|00\rangle$ is a product state. Its array is $\operatorname{diag}(1,0)$, of rank one and hyperdeterminant zero; its element is $e_t$, whose matrix image is the identity, of rank two and determinant one.
+- $|01\rangle$ is a product state, and its element $\vec e_x$ has $\det\mathsf M_2(\vec e_x)=1$.
+- $(|00\rangle+i\lvert01\rangle)/\sqrt2$ is a product state whose element $(e_t+i\vec e_x)/\sqrt2$ has $\langle\tilde Q\rangle_{\natural}=\tfrac12-\tfrac12=0$, and whose matrix image is singular.
+
+The biquaternion norm therefore vanishes on some product states and equals one on others, and the matrix image of a product state may be invertible or singular. Neither the rank nor the determinant of $\mathsf M_2$ tracks separability, and no relabelling of the coefficients makes it do so: every automorphism of $\mathbb{B}$ is inner, by Skolem–Noether, hence preserves $\det\mathsf M_2$, while $\mathrm{Det}$ is not proportional to it. **The criterion is invariant under the local group $SL(2,\mathbb{C})\times SL(2,\mathbb{C})$ and not under the algebra's own symmetries.** That is the precise content of the statement that the composition rule is additional structure.
+
+### What this leaves of the question
+
+The module question is settled by the algebra; the composition question is not. $\mathbb{B}$ supplies one carrier and one inner product, and it supplies neither a second carrier nor the rule that pairs two carriers. What a pair supplies is one polynomial, the hyperdeterminant, hence one entanglement coordinate for each pure state, and its geometry is a rank-one condition of a Grassmannian rather than a property of the algebra product. The framework is not wrong to use $\mathbb{B}\otimes\mathbb{B}$; it is using a second structure, and that structure is now named. For three or more qubits the criterion is in addition relative to a bipartition: separability across a cut $\mathbb{C}^L\otimes\mathbb{C}^l$ is the rank-one condition on the $L\times l$ array, cut out by the Plücker relations. There, even the criterion is a choice of cut.
+
 ## Open Questions
 
-**1. The tensor product.** Is $\mathbb{B}\otimes\mathbb{B}$ native to the framework, or is it imposed? The defining module of $\mathbb{B}\otimes\mathbb{B}$ is $\mathbb{C}^4$, and the composition of two qubits into one four-level system is an assumption about how subsystems combine. This is the central open structural question for the informational interpretation, and it is inherited from the companion articles on entanglement.
+**1. The tensor product.** Is $\mathbb{B}\otimes\mathbb{B}$ native to the framework, or is it imposed? The defining module of $\mathbb{B}\otimes\mathbb{B}$ is $\mathbb{C}^4$, and the composition of two qubits into one four-level system is an assumption about how subsystems combine. This is the central open structural question for the informational interpretation, and it is inherited from the companion articles on entanglement. The section above answers the part of it that can be answered: the *criterion* of the composition is the hyperdeterminant, which is not a function of the algebra, so the composition is additional at the level of what it means for two qubits to be separate, and not only at the level of the carrier.
 
 **2. The doubling of the regular module.** The left regular module is $S\oplus S$. The qubit uses one copy. Does the second copy have informational content — a chirality, a superselection rule, or nothing — or is it a redundancy of the matrix representative? *Spin-1/2 Quantum Physics in Biquaternionic Form* develops the spinor side of this question.
 
@@ -257,7 +313,7 @@ The elementary informational unit of the biquaternion framework is the defining 
 
 On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the normalised Hermitian form $\langle\tilde\Pi,\tilde H\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})=2\langle\tilde\Pi,\tilde H\rangle_{*}$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$; its $2\times2$ reading is the trace formula. A general state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ is a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image) with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the state slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
-What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive.
+What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive. The composition can be tested, and the test is negative in a precise sense. The array of amplitudes of a two-qubit state is a $2\times2$ matrix whose hyperdeterminant $\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10}$ vanishes exactly on the product states and whose modulus, normalised, is the concurrence; the product states are the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1\subset\mathbb{P}^3$, and the maximally entangled states are a copy of $\mathbb{RP}^3$. The hyperdeterminant is not the biquaternion norm of anything, the two quadratic forms on the four coefficients are not related by an automorphism of the algebra, and the rank and the determinant of $\mathsf M_2$ do not track separability at all: the matrix image of $|00\rangle$ is the identity. The carrier is native, the composition is not, and the difference is a named invariant rather than a vague reservation.
 
 ## Summary of Notation
 
@@ -278,6 +334,9 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\langle\tilde\Pi,\tilde H\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = \langle u|H|u\rangle_{*}$ | Trace reading of the Hermitian form; the $2\times2$ reading of the Born rule |
 | $r_k = 2\langle\tilde{Ϛ},i\vec e_k\rangle_{*} = \mathrm{Tr}(\tilde{Ϛ}\,(i\vec e_k)^{*})$ | Bloch components (tomography) |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
+| $\mathbf c=(c_{A_1A_2})$ | Amplitude array of a two-qubit state, the $2\times2$ matrix of the four amplitudes |
+| $\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10}$ | Hyperdeterminant of format $2\times2$; it vanishes exactly on the product states |
+| $\mathcal C=2\,\lvert\mathrm{Det}(\mathbf c)\rvert/\sum_{A_1,A_2}\lvert c_{A_1A_2}\rvert^2$ | Concurrence of a pure two-qubit state |
 
 ## Further Reading
 
@@ -288,4 +347,6 @@ What the module does not supply is the composition rule for several qubits: the 
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the qubit, the density operator, and the correspondence between pure states and rays.
 - A. Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for the geometry of the Bloch ball and the statistical interpretation of the trace pairing.
 - J. S. Bell, "On the problem of hidden variables in quantum mechanics," *Reviews of Modern Physics* **38** (1966) 447–452, for the noncontextual hidden-variable model of a single qubit, which illustrates the special position of the two-dimensional module.
+- I. M. Gelfand, M. M. Kapranov and A. V. Zelevinsky, *Discriminants, Resultants, and Multidimensional Determinants* (Birkhäuser, 1994), for the hyperdeterminant of format $2\times2$, the rank-one condition on a tensor, and the invariants of $\mathbb{C}^2\otimes\mathbb{C}^2$ under the local group.
+- The mathematics corpus: [Projective Geometry](../articles_maths/projective-geometry.html), §*Quadrics, Rank One and the Segre Embedding*, for the Segre embedding $\mathbb{P}^1\times\mathbb{P}^1\subset\mathbb{P}^3$ as the rank-one locus, and [Grassmannians and Stiefel Manifolds](../articles_maths/grassmannians-and-stiefel-manifolds.html), for the Plücker embedding and the Plücker relations.
 - The companion articles of this series: [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-from-the-hermitian-form-derivation-and-comparison.html), [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html), and [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html).

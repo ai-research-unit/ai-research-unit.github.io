@@ -102,7 +102,7 @@ $$
 =\Box\big|_{\mathbb{M}_-}.
 $$
 
-Since $Q_k=x,y,z$, the two writings $\partial/\partial Q_k$ and $\partial/\partial x_k$ name the same derivative, and the display is $\slashed p=i\Gamma_\mu\partial_\mu$ with $\partial_\mu=(\partial_{t'},\partial_x,\partial_y,\partial_z)$. No sign enters beyond $i^2=-1$ and the two cell squares.
+Since $Q_k=x,y,z$, the two writings $\partial/\partial Q_k$ and $\partial/\partial x_k$ name the same derivative, and the display is $\slashed p=i\Gamma_\mu\partial/\partial x_\mu$ with the four derivatives $(\partial/\partial t',\partial/\partial x,\partial/\partial y,\partial/\partial z)$. No sign enters beyond $i^2=-1$ and the two cell squares.
 
 A reader who prefers to attach $\eta$ to the generators multiplies the frame by $i$. Since $i^2=-1$,
 
@@ -517,7 +517,7 @@ $$
 \boxed{\;i\hbar\,\partial/\partial t'\psi_L = -\,c\,\boldsymbol{\sigma}\cdot\vec p\,\psi_L\;}
 $$
 
-for the left-handed field. In covariant form, with $\sigma^\mu=(1,\boldsymbol\sigma)$, $\bar\sigma^\mu=(1,-\boldsymbol\sigma)$ and $\partial_\mu=(\partial_t,\nabla)$, they read $i\sigma^\mu\partial_\mu\psi_R = 0$ and $i\bar\sigma^\mu\partial_\mu\psi_L = 0$ in natural units. Each equation carries a single chirality. For the positive-frequency modes chirality and helicity coincide, so the right-handed field has positive helicity and the left-handed field negative helicity; for the negative-frequency modes, the antiparticles, the assignment reverses. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors
+for the left-handed field. In covariant form, with $\sigma^\mu=(1,\boldsymbol\sigma)$, $\bar\sigma^\mu=(1,-\boldsymbol\sigma)$ and the four derivatives $(\partial/\partial t,\nabla)$, they read $i\sigma^\mu\partial \psi_R/\partial x_\mu = 0$ and $i\bar\sigma^\mu\partial \psi_L/\partial x_\mu = 0$ in natural units. Each equation carries a single chirality. For the positive-frequency modes chirality and helicity coincide, so the right-handed field has positive helicity and the left-handed field negative helicity; for the negative-frequency modes, the antiparticles, the assignment reverses. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors
 
 $$
 P_L = \tfrac{1}{2}\bigl(1 - (-iR_{\vec e_z}^{\mathrm{pau}})\bigr), \qquad P_R = \tfrac{1}{2}\bigl(1 + (-iR_{\vec e_z}^{\mathrm{pau}})\bigr)

@@ -242,6 +242,7 @@ The interpretation organizes the applications into a split between those that tr
 - A. M. Polyakov, *Gauge Fields and Strings* (Harwood, 1987), for instantons and non-perturbative effects.
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the elliptic quaternionic analysis of the subspace $\mathbb{H}_{\mathbb{B}}$.
 - Roger Penrose, *The Road to Reality* (Knopf, 2004), Chapters 18 and 33, for the complex structure of spacetime.
+- V. V. Kassandrov, "Urusovskii's Geometry, Algebrodynamics and Universal Quantum-like Kinematics in Complex Space", arXiv:1209.2377 [physics.gen-ph] (2012), for an independent arrival at the same two-subspace split with the priority reversed: there $\mathbb{H}_{\mathbb{B}}$ is the arena and the Lorentzian sector is the derived one, which is the reverse of this article's reading. The comparison is drawn in *The SO(4) Route to the Euclidean Frame*.
 
 ---
 

@@ -469,6 +469,8 @@ $$
 
 so $k\cdot P$ is constant along the worldline. This is the invariant of the motion associated with the degenerate (radiative) type of the field, and it exists precisely when $I_1 = I_2 = 0$. For non-null fields the mass shell is the only invariant of this simple kind.
 
+**The exponentials are themselves a Lorentz transformation, and the invariants fix its type.** The matrix $(\varrho/m)F$ is an element of the Lorentz Lie algebra, so $\exp((\varrho/m)\tau F)$ is a one-parameter subgroup of the group, and the four cases of the eigenvalues above are its four types: a boost for the electric type, a rotation for the magnetic type, a null rotation for the null type, and a boost composed with a rotation for the generic one. The classification, the two rates that the trace of the flow displays, and the boundary between this flow and the field it exponentiates are recorded in *The Field-Strength Biquaternion and Its Invariants*, §*The Flow the Field Generates: The Four Types*.
+
 ## The Transformation of the Force under Boosts
 
 Because the four-force is a four-vector, it transforms under the Lorentz group by the same **rotor conjugation** as every other element of $\mathbb{M}_-$:

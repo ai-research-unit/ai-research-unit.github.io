@@ -192,7 +192,7 @@ $$
 +\frac{1}{2\rho}\exp(\omega\beta)J\,\psi ,
 $$
 
-with $\Lambda=\Omega\cdot S$ and $K=\Omega\cdot(\omega S)$ built from the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ and the spin bivector $S=-\tfrac12\psi\vec e_z\psi^{-1}=-\tfrac12R\vec e_zR^{-1}$, in which the phase cancels. The bivectors $\Omega_\mu$ are those of the rotor's derivative, $\partial_\mu\psi=\tfrac12(\partial_\mu\ln\rho+\omega\,\partial_\mu\beta+\Omega_\mu)\psi$ with $\Omega_\mu=2(\partial_\mu R)R^{-1}$, so $\Omega$ is the directional derivative of the rotor along the four-velocity. The source prints the two scalar terms separately; they are one, because both multiply the same cell, and they add into the single coefficient $\Lambda+\omega K$, a complex number in $\omega$.
+with $\Lambda=\Omega\cdot S$ and $K=\Omega\cdot(\omega S)$ built from the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ and the spin bivector $S=-\tfrac12\psi\vec e_z\psi^{-1}=-\tfrac12R\vec e_zR^{-1}$, in which the phase cancels. The bivectors $\Omega_\mu$ are those of the rotor's derivative, $\partial \psi/\partial x_\mu=\tfrac12(\partial/\partial x_\mu\ln\rho+\omega\,\partial \beta/\partial x_\mu+\Omega_\mu)\psi$ with $\Omega_\mu=2(\partial R/\partial x_\mu)R^{-1}$, so $\Omega$ is the directional derivative of the rotor along the four-velocity. The source prints the two scalar terms separately; they are one, because both multiply the same cell, and they add into the single coefficient $\Lambda+\omega K$, a complex number in $\omega$.
 
 The source also carries the pair $(\lambda,\kappa)$, with $\lambda=\Lambda\cos\beta+K\sin\beta$ and $\kappa=K\cos\beta-\Lambda\sin\beta$, and writes the same equation with it and no phase in front: the phase-free display is the same equation, because
 $$

@@ -470,7 +470,7 @@ The identities were recomputed before they were written. The cell frame was buil
 | $\{iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},iL_{e_\nu}^{\mathrm{pau}}R_{\vec e_{\nu(\nu)}}^{\mathrm{pau}}\}-2g_{\mu\nu}I_4$ | $0$ (exact) |
 | $(-iR_{\vec e_z}^{\mathrm{pau}})^{2}-I_4$ and $\{-iR_{\vec e_z}^{\mathrm{pau}},iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\}$ | $0$ (exact) |
 | $-iR_{\vec e_z}^{\mathrm{pau}}+R_{\vec e_x}^{\mathrm{pau}}\,iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\,iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ | $0$ (exact) |
-| $\mathsf D+R_{\vec e_x}^{\mathrm{pau}}\partial_0+\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_k$ | $0$ (exact) |
+| $\mathsf D+R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$ | $0$ (exact) |
 | Tensor dictionary reproduces the five cells and satisfies the same Clifford relations | $0$ (exact) |
 | Anticommutant of all four generators | rank $15$, nullity $1$ |
 | $\{\mu R_{\vec e_z}^{\mathrm{pau}},iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\}$ and $(\mu R_{\vec e_z}^{\mathrm{pau}})^2+\mu^2I_4$ | $0$ (exact) |

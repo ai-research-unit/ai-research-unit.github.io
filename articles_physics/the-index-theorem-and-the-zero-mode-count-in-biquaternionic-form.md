@@ -69,7 +69,7 @@ $$
 \mathcal D_R^2=\sum_\mu D_\mu^2+\frac{i\kappa}{2}\sum_{\mu,\nu}G_\mu G_\nu F_{\mu\nu},
 $$
 
-so where the field strength vanishes the second term is absent, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial_\mu u$ the covariant derivative acts as $D_\mu\psi=u^{-1}\partial_\mu(u\psi)$, so the operator is a conjugation of the free one: $\mathcal D_R=u^{-1}\bigl(\sum_\mu G_\mu\partial_\mu\bigr)u$, whence
+so where the field strength vanishes the second term is absent, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial x_\mu$ the covariant derivative acts as $D_\mu\psi=u^{-1}\partial/\partial x_\mu(u\psi)$, so the operator is a conjugation of the free one: $\mathcal D_R=u^{-1}\bigl(\sum_\mu G_\mu\partial/\partial x_\mu\bigr)u$, whence
 
 $$
 \mathcal D_R^2=u^{-1}\,\Box\,u,\qquad

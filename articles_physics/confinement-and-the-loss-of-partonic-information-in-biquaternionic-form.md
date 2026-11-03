@@ -437,32 +437,6 @@ That is the shape of the result: a linear bag model becomes a **boundary singula
 
 **What it does not change.** The bag model is not a colour theory either. It assumes the confining region instead of deriving it, it fixes no colour group, and it yields no area law; only the boundary-value theory is the framework's. The colour ceiling stands, the bag's fields are a $\mathrm{U}(2)$-like transcription, and the model itself — the linear boundary condition, the confining region, the hadron as a bounded domain — is imported from nuclear physics. The honest placement is that the algebra houses the **boundary-value problem** that one confinement picture poses, and the QCD agenda's obstacle remains for the other.
 
-## The Gamma Formulation
-
-The whole article is written in the cells, without gammas. This section writes the same objects in the gamma frame once, so that the correspondence with the standard notation is on record. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and this is the only section in which they are named.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
-$$
-
-The squares follow from $i^2=-1$ and the quaternion relations,
-
-$$
-\gamma_0^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
-\qquad
-\gamma_1^{2}=\gamma_2^{2}=\gamma_3^{2}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
-$$
-
-so the frame carries the Clifford form $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(1,-1,-1,-1)$. The time cell of the bag equation is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and its three spatial cells are $\gamma_1,\gamma_2,\gamma_3$; the boundary condition of the bag is therefore the frame's linear condition, written above without the gammas.
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, and $L_{e_t}^{\mathrm{pau}}$ is the identity, so $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi$ as a central sign, while the mass term of the two-sided equation is $m\,\overline{F}\,\gamma_5$. The two coincide in one step: $\vec e_z=i\gamma_5$, so $-mi\,\overline{F}\,\vec e_z=-mi\,\overline{F}\,(i\gamma_5)=-m\,i^2\,\overline{F}\,\gamma_5=m\,\overline{F}\,\gamma_5$, by the same $i^2=-1$.
-
-The comparison with the frame is complex-linear — the coefficients of an element in the basis of the sixteen products are complex numbers — although the dictionary $A$ of the bag is only $\mathbb{R}$-linear. Over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
 ## What the Algebra Supplies, Transcribes, and Does Not Supply
 
 **Supplied by the algebra, and recomputed here.** The Wilson loop as a two-sector bilinear: a material-sector connection integrated along a curve, exponentiated into the informational realization of the group, traced to a gauge-invariant number. The information-theoretic interpretation of the two laws, with the scaling of $I(C) = -\log|\langle W(C)\rangle|$ recomputed: $I/T\to$ constant for the perimeter law and $I/T\to\sigma L$ for the area law, in both cases to the stated accuracy. The superselection structure of a charge rotation on the informational sector, with the accessible state as the dephasing along the charge axis and the accessible relative entropy vanishing while the full relative entropy is positive — recomputed on explicit states. The conditional expectation onto the charge-neutral subalgebra as an idempotent channel — realized on the framework's own compact algebra $\mathrm{SU}(2)\subset\mathbb{M}_+$, the group whose singlets the framework's own superselection analysis selects, and only transcribed for a colour group — and the monotonicity of relative entropy under it, cited from the companion articles. And, in the bag picture, the boundary-value theory of the shifted operator $D_\alpha$: the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion, with the reduction of the linear bag model to the boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ — the reduction and the criterion are the source's, the algebra they use is the corpus's, and the three algebraic facts the reduction rests on (the right-multiplication idempotents $P^\pm=\tfrac12M_{(e_t\pm i\vec e_x)}$, the collapse $i\cdot i=-1$ that makes $R$ real, and the identity $\langle \alpha\rangle_{\natural} = m^2-\omega^2$) were recomputed here.
@@ -505,6 +479,32 @@ The comparison with the frame is complex-linear — the coefficients of an eleme
 
 8. **The zero-divisor branch.** The bag's parameter $\alpha$ lies in the zero-divisor set $\mathcal Z$ exactly on the mass shell, so the relevant branch of $T_\alpha$ and $K_\alpha$ is the one where the parameter has no inverse. Does the on-shell degeneracy of the shift have an interpretation of its own — the mass shell as a locus where the function theory changes character — or is it only the algebraic form of the dispersion relation? The zero-divisor articles treat the cone as a physical locus for a *field*; here it is the *parameter* that is singular, which is a different interpretation.
 
+## The Gamma Formulation
+
+The whole article is written in the cells, without gammas. This section writes the same objects in the gamma frame once, so that the correspondence with the standard notation is on record. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and this is the only section in which they are named.
+
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+$$
+
+The squares follow from $i^2=-1$ and the quaternion relations,
+
+$$
+\gamma_0^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\qquad
+\gamma_1^{2}=\gamma_2^{2}=\gamma_3^{2}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+$$
+
+so the frame carries the Clifford form $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(1,-1,-1,-1)$. The time cell of the bag equation is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and its three spatial cells are $\gamma_1,\gamma_2,\gamma_3$; the boundary condition of the bag is therefore the frame's linear condition, written above without the gammas.
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+
+$\gamma_5$ is the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, and $L_{e_t}^{\mathrm{pau}}$ is the identity, so $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi$ as a central sign, while the mass term of the two-sided equation is $m\,\overline{F}\,\gamma_5$. The two coincide in one step: $\vec e_z=i\gamma_5$, so $-mi\,\overline{F}\,\vec e_z=-mi\,\overline{F}\,(i\gamma_5)=-m\,i^2\,\overline{F}\,\gamma_5=m\,\overline{F}\,\gamma_5$, by the same $i^2=-1$.
+
+The comparison with the frame is complex-linear — the coefficients of an element in the basis of the sixteen products are complex numbers — although the dictionary $A$ of the bag is only $\mathbb{R}$-linear. Over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+
 ## Summary
 
 Confinement is the absence of the coloured degrees of freedom from the asymptotic spectrum, diagnosed by the Wilson loop: a perimeter law for a screened phase and an area law for a confining one, with the rectangular loop giving the static potential. In the biquaternion framework the loop is a two-sector bilinear — a material-sector connection integrated around a curve, exponentiated into the informational realization of the gauge group, and traced to a gauge-invariant number — so the order parameter is housed exactly.
@@ -521,7 +521,7 @@ The **bag** picture is different in kind. Two Dirac equations are kept apart the
 
 That condition is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995). A real-linear bijection carries the bispinor to a biquaternion; the mass term carries the componentwise complex conjugation $\overline{\cdot}$; factoring the equation removes it; the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$; the bag condition becomes the projector condition $S^-\tilde{p}=0$; and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$.
 
-What the framework supplies here is the function theory, the reduction and the Fredholm question; what it still does not supply is the confining dynamics, since the bag assumes the region rather than explaining it. The three facts the reduction leans on were recomputed: the right-multiplication idempotents $P^\pm=\tfrac12M_{(e_t\pm i\vec e_x)}$ are complementary, the step $i\cdot i=-1$ leaves $R=D_3-\partial_{t'}M_{\vec e_x}-mM_{\vec e_y}$ free of complex coefficients, and $\langle \alpha\rangle_{\natural} = m^2-\omega^2$, so the parameter of the reduced bag equation lies in the **zero-divisor set $\mathcal Z$ exactly on the mass shell**.
+What the framework supplies here is the function theory, the reduction and the Fredholm question; what it still does not supply is the confining dynamics, since the bag assumes the region rather than explaining it. The three facts the reduction leans on were recomputed: the right-multiplication idempotents $P^\pm=\tfrac12M_{(e_t\pm i\vec e_x)}$ are complementary, the step $i\cdot i=-1$ leaves $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$ free of complex coefficients, and $\langle \alpha\rangle_{\natural} = m^2-\omega^2$, so the parameter of the reduced bag equation lies in the **zero-divisor set $\mathcal Z$ exactly on the mass shell**.
 
 ## Summary of Notation
 
@@ -556,7 +556,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $D_3=\sum_k\vec e_k\partial/\partial Q_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |
-| $R=D_3-\partial_{t'}M_{\vec e_x}-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$ |
+| $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$ |
 | $\vec q=x\vec e_x+y\vec e_y+z\vec e_z$ | Position in the bag domain |
 | $D_\alpha = D + M_\alpha$, $D = i\sum_k \vec e_k\,\partial/\partial Q_k$ | Shifted Moisil–Teodoresco operator; $M_\alpha$ right multiplication by $\alpha$ |
 | $\alpha = -(i\omega \vec e_x + m \vec e_y)$ | Bag parameter; $\alpha\in\mathcal Z \iff \omega^2 = m^2$ |

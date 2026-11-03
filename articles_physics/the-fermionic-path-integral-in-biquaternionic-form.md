@@ -373,7 +373,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
 | $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
 | $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu$, $\varepsilon=(+1,-1,-1,-1)$ | Frame cells; the sign vector $\varepsilon_\mu=g_{\mu\mu}$ carried by every contraction of two lower indices, so that $\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu=iR_{\vec e_x}^{\mathrm{pau}}E-i\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_k$ |
-| $\mathbb{D}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\partial_{t'}-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial_{Q_k}$ | Pair operator in cells; the explicit $i$ and the $i$ of the cell multiply to $-1$ |
+| $\mathbb{D}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial Q_k$ | Pair operator in cells; the explicit $i$ and the $i$ of the cell multiply to $-1$ |
 | $S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel; the two imaginary units of $-i(\slashed p+m)$ multiply to $-1$ |
 | $\det(\mathbb{D}-m)=[\det(\Box-m^2)]^2$ | Determinant; the module's two complex dimensions give the square of the scalar determinant |
 | $\int d\psi_{2N}\cdots d\psi_1\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |

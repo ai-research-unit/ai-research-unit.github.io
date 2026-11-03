@@ -74,7 +74,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
 $$
 
-in which the gradient acts by **left** multiplication on the field and the mass couples the two chiral halves; collected in the pair operator of the conventions article, this is the **one-sided** writing, with $\mathbb{D}^2=\Box I$ and $\Box=\sum_\mu\varepsilon_\mu\partial_\mu^2=\partial_t^2-\nabla^2$ in this frame. The **two-sided** writing is the cell operator $i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu$ acting on the module, and it is the one this article needs, because every bilinear and every interaction below is a two-sided cell between $\bar\psi$ and $\psi$. The two writings describe one dynamics: each is first order, and each squares to the d'Alembertian, $\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\right)^2=\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, with the same $\Box$. The spinor equations used in the sections that follow are the representatives in which the literature models are defined. The biquaternionic transcription of each interaction is the open point, and the first item of *Open Questions* names it.
+in which the gradient acts by **left** multiplication on the field and the mass couples the two chiral halves; collected in the pair operator of the conventions article, this is the **one-sided** writing, with $\mathbb{D}^2=\Box I$ and $\Box=\sum_\mu\varepsilon_\mu\partial^2/\partial x_\mu^2=\partial^2/\partial t^2-\nabla^2$ in this frame. The **two-sided** writing is the cell operator $i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu$ acting on the module, and it is the one this article needs, because every bilinear and every interaction below is a two-sided cell between $\bar\psi$ and $\psi$. The two writings describe one dynamics: each is first order, and each squares to the d'Alembertian, $\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu\right)^2=\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, with the same $\Box$. The spinor equations used in the sections that follow are the representatives in which the literature models are defined. The biquaternionic transcription of each interaction is the open point, and the first item of *Open Questions* names it.
 
 ## Why the Dirac Equation Becomes Nonlinear
 
@@ -83,7 +83,7 @@ in which the gradient acts by **left** multiplication on the field and the mass 
 The free Dirac equation is linear, and its solutions form a vector space. A self-interaction is a term built from the field itself. Lorentz covariance and the absence of derivatives leave only the local quartic combinations of the Lorentz-covariant bilinears, a finite set because the bilinears themselves are finite in number. A bilinear is quadratic in $\psi$, so a product of two bilinears is quartic in the field, and a quartic term of the Lagrangian varies into a term cubic in the field: varying one of the two bilinears leaves the other standing as the coefficient. Writing $B(\psi)$ for the bilinear built from the field, the equation keeps the shape
 
 $$
-\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu - m\right)\psi + B(\psi)\,\psi = 0,
+\left(i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu - m\right)\psi + B(\psi)\,\psi = 0,
 $$
 
 in which $B$ is quadratic in $\psi$ and the explicit field supplies the third power. The equation is nonlinear in the field and no worse than cubic: the word names the self-coupling, not a higher degree.
@@ -101,7 +101,7 @@ The Thirring model is defined in $1+1$ dimensions by the Lagrangian density
 $$
 \boxed{\;
 \begin{aligned}
-\mathcal{L} &= \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\psi - m\,\bar\psi\psi
+\mathcal{L} &= \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial \psi/\partial x_\mu - m\,\bar\psi\psi
 - \frac{g}{2}\sum_\mu\varepsilon_\mu V_\mu V_\mu ,\\[4pt]
 V_\mu &= \bar\psi\,iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\psi ,
 \end{aligned}
@@ -119,7 +119,7 @@ The **massless** Thirring model is exactly solvable: the multipoint correlation 
 The Soler model is defined in $3+1$ dimensions by
 
 $$
-\boxed{\;\mathcal{L} = \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu\psi - m\,\bar\psi\psi
+\boxed{\;\mathcal{L} = \bar\psi\,i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial \psi/\partial x_\mu - m\,\bar\psi\psi
 + \frac{g}{2}\left(\bar\psi\psi\right)^2\;},
 $$
 
@@ -329,7 +329,7 @@ The biquaternion interpretation places the channels. The scalar density is the m
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_k^2 = -e_t$, central $i$ |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Two-sided cell; $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, identity $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |
 | $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ | Generator cells: $iR_{\vec e_x}^{\mathrm{pau}} = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ |
-| $i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial_\mu$ | Cell operator of the Dirac equation; its square is $\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, since $i^2=-1$ |
+| $i\sum_\mu L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\partial/\partial x_\mu$ | Cell operator of the Dirac equation; its square is $\Box\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$, since $i^2=-1$ |
 | $c^{(5)}_\mu$ | Axial cells: $c^{(5)}_0 = L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $c^{(5)}_k = -L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ |
 | $\bar\psi = i\psi^\dagger L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ | Dirac adjoint (carries the Clifford-odd cell $iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$) |
 | $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ | Chirality cell; its square is the identity cell $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ |

@@ -207,7 +207,7 @@ F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu
 \end{pmatrix},
 $$
 
-antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$. The entries follow from $F_{0k}=-(i/c)(\partial_{t'}A_k+\partial_k\phi)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$, and they reproduce the six components of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
+antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$. The entries follow from $F_{0k}=-(i/c)(\partial A_k/\partial t'+\partial \phi/\partial x_k)=iE_k/c$ and $F_{jk}=\epsilon_{jkl}B_l$, and they reproduce the six components of $\vec F$: three in the imaginary electric part and three in the real magnetic part.
 
 The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector** $\vec N = \vec E + ic\vec B$. The biquaternionic field strength is that vector with one constant phase and one normalisation,
 
@@ -777,7 +777,7 @@ $$
 \tfrac12\left(\tilde{\nabla}\tilde{F}-\tilde{F}^{\sim}\tilde{\nabla}\right)=\mathrm{rot}\,\vec F,
 $$
 
-where the second product is read with the derivative acting on the reversed field strength and the unit standing on the right, $\tilde{F}^{\sim}\tilde{\nabla}=\sum_\mu(\partial_\mu\tilde{F}^{\sim})\,e_\mu$. The first line carries the time derivative and the divergence, a biquaternion whose scalar part is $-\mathrm{div}\,\vec F$ and whose vector part is $\partial/\partial Q_t\,\vec F$; the second line is the spatial curl. The one-term equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ therefore fixes the *sum* of the two halves and neither half separately, and the divergence half is not identically zero: on a test field of mixed polynomial structure both its scalar and its vector part are nonzero. So the compact equation is a statement about the sum; its spatial-reversal covariance rests on the two halves coinciding, and the source reads that coincidence as the source-free condition rather than as a property the writing inherits from the equation.
+where the second product is read with the derivative acting on the reversed field strength and the unit standing on the right, $\tilde{F}^{\sim}\tilde{\nabla}=\sum_\mu(\partial/\partial x_\mu\tilde{F}^{\sim})\,e_\mu$. The first line carries the time derivative and the divergence, a biquaternion whose scalar part is $-\mathrm{div}\,\vec F$ and whose vector part is $\partial/\partial Q_t\,\vec F$; the second line is the spatial curl. The one-term equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ therefore fixes the *sum* of the two halves and neither half separately, and the divergence half is not identically zero: on a test field of mixed polynomial structure both its scalar and its vector part are nonzero. So the compact equation is a statement about the sum; its spatial-reversal covariance rests on the two halves coinciding, and the source reads that coincidence as the source-free condition rather than as a property the writing inherits from the equation.
 
 ## Maxwell's Vacuum Equation as a Cauchy–Riemann Condition
 
