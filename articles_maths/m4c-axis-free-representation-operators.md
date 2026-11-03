@@ -14,7 +14,7 @@
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
-**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*. The same operators in another frame are *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
+**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Axis-Free Representation*. The same operators in another frame are *$M_4(\mathbb{C})$ Pauli Representation : Operators*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
 
 **Conventions.** The basis is
 $$
@@ -859,9 +859,9 @@ In one line: every two-sided operator is a single product of one left and one ri
 ## Further Reading
 
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the frame, the left and right matrices and the six subspaces.
-- [$M_4(\mathbb{C})$ Standard Peirce Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same operators in the standard Peirce frame.
-- [$M_2(\mathbb{C})$ Standard Peirce Representation : Operators](m2c-standard-peirce-representation-operators.html), for the Peirce frame where a two-sided operator is a pair of $2\times2$ matrices and the display is $B^{\mathsf T}\otimes A$.
-- [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the pure swap stitch and the tensor displays.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same operators in the standard Peirce frame.
+- [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-standard-peirce-representation-operators.html), for the Peirce frame where a two-sided operator is a pair of $2\times2$ matrices and the display is $B^{\mathsf T}\otimes A$.
+- [$M_4(\mathbb{C})$ Pauli Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the pure swap stitch and the tensor displays.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.
 - [The Left Regular Operators on the Biquaternion Algebra](the-left-regular-operators-on-the-biquaternion-algebra.html), for $L^{\mathrm{axf}}$ and the four left matrices.

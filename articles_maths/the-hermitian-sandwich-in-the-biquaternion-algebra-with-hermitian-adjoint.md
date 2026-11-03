@@ -78,7 +78,7 @@ is the general similarity statement of *The Hermitian Sandwich on a Hermitian Al
 
 ## The Unitary Slice of the Biquaternion Algebra
 
-**Theorem.** The unitary slice of $\mathbb{B}$ is the unitary group $\mathrm{U}(2)$ under the identification $\mathbb{B}\cong M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Standard Peirce Representation*, and its determinant-one part is $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$.
+**Theorem.** The unitary slice of $\mathbb{B}$ is the unitary group $\mathrm{U}(2)$ under the identification $\mathbb{B}\cong M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Pauli Representation*, and its determinant-one part is $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$.
 
 **Proof.** The matrix model sends ${}^{*}$ to the conjugate transpose of a matrix, since its fixed space is the space of Hermitian matrices $\mathbb{M}_+$; the condition $x^{\dagger}x = 1$ is therefore the condition that the matrix be unitary, so the slice is $\mathrm{U}(2)$, and the determinant-one part is $SU(2)$, which is $\mathrm{Spin}(3)$.
 

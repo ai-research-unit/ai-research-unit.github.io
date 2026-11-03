@@ -1,8 +1,8 @@
-# __$M_2(\mathbb{C})$ Standard Peirce Representation : Operators__
+# __$M_2(\mathbb{C})$ Pauli Representation : Operators__
 
 ## Introduction
 
-**The question.** The $M_2(\mathbb{C})$ Standard Peirce article compresses the two regular matrices of an element to one block: $L(\tilde Q)=\mathrm I_2\otimes A$ compresses to $A$, and $R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2$ compresses to $A^{\mathsf T}$. The compression says what one block of each regular matrix is. This article asks the question that follows: on the compressed side, which maps of $M_2(\mathbb{C})$ arise from multiplication, and how many $2\times2$ matrices does each need?
+**The question.** The $M_2(\mathbb{C})$ Pauli Representation article compresses the two regular matrices of an element to one block: $L(\tilde Q)=\mathrm I_2\otimes A$ compresses to $A$, and $R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2$ compresses to $A^{\mathsf T}$. The compression says what one block of each regular matrix is. This article asks the question that follows: on the compressed side, which maps of $M_2(\mathbb{C})$ arise from multiplication, and how many $2\times2$ matrices does each need?
 
 **The count.** The answer is a count of matrices.
 
@@ -17,7 +17,7 @@ The first two bullets are the one-sided operators; the third is the two-sided op
 
 **The result in one line.** On $M_2(\mathbb{C})$, a one-sided operator is one matrix, a two-sided operator is a pair of matrices, unique up to scaling when the operator is nonzero, and a general endomorphism is a sum of at most four pairs; the $4\times4$ matrix of the pair is the Kronecker product $B^{\mathsf T}\otimes A$.
 
-**Boundaries.** The frame, the two blocks, the compression and the algebra model are *$M_2(\mathbb{C})$ Standard Peirce Representation*. The uncompressed operators are *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*; the same operators in the axis-free basis are *$M_4(\mathbb{C})$ Axis-Free Representation : Operators*. The matrix units and the two Peirce planes are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The Hermitian sandwich is Part V and is not treated here.
+**Boundaries.** The frame, the two blocks, the compression and the algebra model are *$M_2(\mathbb{C})$ Pauli Representation*. The uncompressed operators are *$M_4(\mathbb{C})$ Pauli Representation : Operators*; the same operators in the axis-free basis are *$M_4(\mathbb{C})$ Axis-Free Representation : Operators*. The matrix units and the two Peirce planes are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The Hermitian sandwich is Part V and is not treated here.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is
 $$
@@ -36,7 +36,7 @@ so the coordinate column of a $2\times2$ matrix $Y$ is $(y_{11},y_{21},y_{12},y_
 $$
 \mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr),
 $$
-where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices; the four units map to $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. The trace is $\operatorname{Tr}A=2Q_t$, and the determinant is $\det A=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the quaternionic norm. A second element is $\tilde P$, with $B=\mathsf M_2(\tilde P)$. The $4\times4$ matrices $L,R$ are those of the Standard Peirce article, and $\otimes$ is the Kronecker product in the frame order.
+where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices; the four units map to $\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. The trace is $\operatorname{Tr}A=2Q_t$, and the determinant is $\det A=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the quaternionic norm. A second element is $\tilde P$, with $B=\mathsf M_2(\tilde P)$. The $4\times4$ matrices $L,R$ are those of the Pauli Representation article, and $\otimes$ is the Kronecker product in the frame order.
 
 ## The One-Sided Operators
 
@@ -59,7 +59,7 @@ It is $\mathbb{C}$-linear. The matrix $A$ is recovered from the operator by $A=L
 $$
 [L_A]_{\mathcal{P}}=\mathrm I_2\otimes A=\begin{pmatrix}A&0\\0&A\end{pmatrix}.
 $$
-The second block is a copy of the first, which is the compression of the Standard Peirce article: the left regular matrix of $\tilde Q$ is this matrix, and its one block is $A$.
+The second block is a copy of the first, which is the compression of the Pauli Representation article: the left regular matrix of $\tilde Q$ is this matrix, and its one block is $A$.
 
 **The law.** The composition is $L_A L_C=L_{AC}$, and the map $A\mapsto L_A$ is injective. The left copy is the four-dimensional subalgebra $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$.
 
@@ -82,7 +82,7 @@ b_{11}\mathrm I_2&b_{21}\mathrm I_2\\
 b_{12}\mathrm I_2&b_{22}\mathrm I_2
 \end{pmatrix}.
 $$
-The transpose is the price of the column-major frame: the block matrix records $B^{\mathsf T}$, while the operator uses $B$. The compressed block of the Standard Peirce article is $B^{\mathsf T}$ for the same reason, and the action itself is right multiplication by $B$.
+The transpose is the price of the column-major frame: the block matrix records $B^{\mathsf T}$, while the operator uses $B$. The compressed block of the Pauli Representation article is $B^{\mathsf T}$ for the same reason, and the action itself is right multiplication by $B$.
 
 **The law.** The composition is anti-multiplicative, $R_B R_D=R_{DB}$, and the map $B\mapsto R_B$ is injective. The right copy is the four-dimensional subalgebra $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$.
 
@@ -204,7 +204,7 @@ by the mixed-product property. It is the operator.
 
 **The Kronecker product of the $2\times2$ matrices.** The same matrix is the Kronecker product $B^{\mathsf T}\otimes A$ of the two $2\times2$ matrices. This is the display that the Peirce frame makes possible: the element is already a matrix, and the operator is built from the two element matrices.
 
-**The Kronecker product of the $4\times4$ matrices.** The Kronecker product $(\mathrm I_2\otimes A)\otimes(B^{\mathsf T}\otimes\mathrm I_2)$ is $16\times16$, acts on the tensor square of the carrier, and is not the operator. The distinction is the one drawn in *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*, §*The Kronecker Question*: the ordinary product is the operator, the Kronecker product of the two $2\times2$ matrices is its display, and the Kronecker product of the two $4\times4$ matrices is a different operator on a different space.
+**The Kronecker product of the $4\times4$ matrices.** The Kronecker product $(\mathrm I_2\otimes A)\otimes(B^{\mathsf T}\otimes\mathrm I_2)$ is $16\times16$, acts on the tensor square of the carrier, and is not the operator. The distinction is the one drawn in *$M_4(\mathbb{C})$ Pauli Representation : Operators*, §*The Kronecker Question*: the ordinary product is the operator, the Kronecker product of the two $2\times2$ matrices is its display, and the Kronecker product of the two $4\times4$ matrices is a different operator on a different space.
 
 **The frame dependence.** The display $B^{\mathsf T}\otimes A$ is a property of the Peirce frame. In the axis-free basis the same operator is a sum of sixteen signed-permutation cells, and no $2\times2$ block appears; the pair survives, but the frame does not display it. The two articles read the same operator in the two frames, and the pair is the invariant.
 
@@ -462,8 +462,8 @@ In one line: one matrix per side, a pair for the product, four pairs for the gen
 
 ## Further Reading
 
-- [$M_2(\mathbb{C})$ Standard Peirce Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the compression and the two blocks.
-- [$M_4(\mathbb{C})$ Standard Peirce Representation : Operators](m4c-standard-peirce-representation-operators.html), for the uncompressed operators, the sixteen products and the coefficient matrix.
+- [$M_2(\mathbb{C})$ Pauli Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the compression and the two blocks.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the uncompressed operators, the sixteen products and the coefficient matrix.
 - [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the same operators in the basis where no $2\times2$ block appears.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition and the adjoint.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the pure tensors.

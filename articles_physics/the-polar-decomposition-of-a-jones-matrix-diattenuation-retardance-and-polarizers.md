@@ -12,7 +12,7 @@ The article states the correspondence, computes the standard optical parameters 
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The element image $\mathsf{M}_2(\tilde J)$ and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ | [$M_2(\mathbb{C})$ Standard Peirce Representation](../articles_maths/m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html) |
+| The element image $\mathsf{M}_2(\tilde J)$ and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html) |
 | The Cartan pairing $\tilde J=\tilde J_H\tilde J_0$, the positive factor and the $*$-unitary factor | *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions* |
 | The generalized pairing on the cone, the partial isometry and its projections | [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 | The eigenvalue decomposition, the eigenprojections and the rank-one case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |

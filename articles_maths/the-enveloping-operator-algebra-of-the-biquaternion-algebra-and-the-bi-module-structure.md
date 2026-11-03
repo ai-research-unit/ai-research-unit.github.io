@@ -148,7 +148,7 @@ The sandwich action of $E_{ik}$ is therefore the Peirce projection onto the corn
 
 The word matrix names three different objects in this group, and the theorem above is read correctly only if they are kept apart.
 
-**The element matrix.** For $\tilde Q\in\mathbb B$, the $2\times2$ matrix $\mathsf M_2(\tilde Q)$ of *$M_2(\mathbb{C})$ Standard Peirce Representation* is the matrix of the algebra element in the model $\mathbb B\cong M_2(\mathbb C)$. It is not an operator matrix; it is the matrix of an element, and its determinant is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
+**The element matrix.** For $\tilde Q\in\mathbb B$, the $2\times2$ matrix $\mathsf M_2(\tilde Q)$ of *$M_2(\mathbb{C})$ Pauli Representation* is the matrix of the algebra element in the model $\mathbb B\cong M_2(\mathbb C)$. It is not an operator matrix; it is the matrix of an element, and its determinant is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
 
 **The operator matrix.** For $T\in\operatorname{End}_{\mathbb C}(\mathbb B)$, the $4\times4$ matrix $[T]_{\mathcal B}$ of *Matrix Representations Conventions*, §*The Isomorphism with $M_4(\mathbb{C})$*, is the matrix of the operator in the canonical frame $\mathcal B$. It acts on coordinate columns: $[T(x)]_{\mathcal B}=[T]_{\mathcal B}[x]_{\mathcal B}$.
 

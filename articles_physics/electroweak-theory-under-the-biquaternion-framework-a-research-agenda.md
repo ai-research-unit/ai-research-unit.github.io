@@ -10,9 +10,11 @@ The starting position is stated at the outset, because the whole agenda depends 
 - **The framework has a non-abelian gauge field construction, and the algebra it needs is present.** The material sector decomposes as a Lie algebra, $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so the compact algebra available is $\mathrm{U}(1)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$, of real dimension four. That is exactly the dimension count of the electroweak gauge group. It supplies the **algebra** of a non-abelian gauge theory. It does **not** supply a **chiral** gauge theory, and the two are different objects.
 - **The framework has not constructed the electroweak sector.** Nothing derives weak hypercharge; no chiral non-abelian matter representation is built; there is no scalar sector, no symmetry breaking, and no Yukawa coupling; and the framework's inability to fix the gauge bounds the physical content of any orbit.
 
-The word "electroweak" occurs in the corpus only where standard theory is being named or imported. *The Dirac Equation in Biquaternionic Form* states that the framework "does not by itself derive the mass term or the electroweak structure". *The CPT Theorem in Biquaternionic Form* records the electroweak relevance of the discrete operations $C$ and $P$ and says plainly that it "is imported". *The Neutrino and Majorana Fermions in Biquaternionic Form* names a dimension-five operator arising "after electroweak symmetry breaking" as something the framework does not represent. No article constructs $SU(2)_L\times \mathrm{U}(1)_Y$, a hypercharge assignment, a Higgs doublet, or a $W$ or $Z$ field.
+The word "electroweak" occurs in the corpus only where standard theory is being named or imported. *The Dirac Equation in Biquaternionic Form* states that the framework "does not by itself derive the mass term or the electroweak structure". *The CPT Theorem in Biquaternionic Form* records the electroweak relevance of the discrete operations $C$ and $P$ and says plainly that it "is imported". *The Neutrino and Majorana Fermions in Biquaternionic Form* names a dimension-five operator arising "after electroweak symmetry breaking" as something the framework does not represent. No article constructs $SU(2)_L\times \mathrm{U}(1)_Y$, derives a hypercharge assignment, a Higgs doublet, or a $W$ or $Z$ field.
 
 The discipline this forces on the article is the one the genre requires: **an agenda that quietly assumes hypercharge or chirality has fabricated its own premise.** Both are therefore carried as **open items throughout**, never as working assumptions. Wherever a standard electroweak statement is written down — the group, the hypercharge values, the Weinberg angle, the Higgs doublet, the $W$ and $Z$ masses — it is flagged as standard input, not as a framework result.
+
+**Two notations, and where the Clifford frame lives.** The algebra's own objects are written as elements — $\tilde{\Psi}$, $\tilde{A}$, $\mathcal{A}_\mu$ — and operators on the spinor module are written as **cells**, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for $a,b\in\mathbb{B}$, with $L_aR_b\,\psi=a\psi b$ and the composition $L_aR_b\,L_cR_d=L_{ac}R_{db}$. Chirality, the mass bilinear and the axial current are statements in the cells, and the cells are the notation of the sections that treat them. The Clifford frame is a dictionary for the same algebra, not a second framework, and it appears in this article only in *The Gamma Formulation*. Every factor of $i$ in a product is spent with $i^2=-1$, so no product of cells carries an unspent power of $i$.
 
 **The three-way classification.** The article sorts every item into one of three categories, and the distinction is the point of the agenda.
 
@@ -63,13 +65,19 @@ $$
 \mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2),\quad \dim_\mathbb{R} = 4\;}.
 $$
 
-This is the read-list article's central algebraic result, and it is the reason the electroweak question can be posed at all: the compact algebra of dimension four that electroweak theory uses is *already present in the material sector*, not adjoined. What is not present is the way electroweak theory uses it. The gauge group of the construction is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field **by left multiplication**, and the connection transforms as
+This is the read-list article's central algebraic result, and it is the reason the electroweak question can be posed at all: the compact algebra of dimension four that electroweak theory uses is *already present in the material sector*, not adjoined. What is not present is the way electroweak theory uses it. The gauge group of the construction is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field **by left multiplication**. The connection transforms as
 
 $$
 \mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1},
 $$
 
-with curvature $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ transforming in the adjoint, $F_{2,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$, satisfying the Bianchi identity, and admitting the gauge-invariant density $-\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\mathrm{Tr}(F_{\mu\nu}F_{\mu\nu})$.
+The curvature is
+
+$$
+F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu].
+$$
+
+It transforms in the adjoint, $F_{2,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$, satisfies the Bianchi identity, and admits the gauge-invariant density $-\tfrac12\mathrm{Tr}\bigl(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\bigr)$, a plain sum: the metric is carried by the index positions and by the reality classes of the components, so an explicit $\varepsilon_\mu\varepsilon_\nu$ would apply it a second time.
 
 Two gaps of this construction are inherited and matter here. The first is the **matter representation**: the covariant derivative acts by left multiplication, the representation carried by the matter field is not specified, and the non-abelian version of the chiral charge operator is not constructed (the read-list article's open question 3). The second is the **reality class of the connection**: no single Hermitian-conjugation eigenspace is gauge invariant across all four components, because the $ict'$ derivative $\partial/\partial Q_t = -i\partial/\partial t'$ flips the conjugation behaviour of the Maurer–Cartan form in the time direction. A consistent mixed assignment exists — $\mathcal{A}_0$ anti-Hermitian traceless in $\mathrm{SU}(2)\subset\mathbb{M}_-$, $\mathcal{A}_k$ Hermitian traceless in $i\,\mathrm{SU}(2)\subset\mathbb{M}_+$ — but whether it is the intended physical assignment is not settled.
 
@@ -79,27 +87,105 @@ For the purposes of this agenda, the construction is the **general machinery of 
 
 The read-list article *Chiral Fermions in the Biquaternion Framework* establishes the following, and this agenda inherits it without change.
 
-The Dirac module is $\Delta = S\oplus\bar{S}$; the chirality operator is the cell $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, where $L_X\psi=X\psi$ and $R_X\psi=\psi X$ for $X\in\mathbb{B}$, so that $-iR_{\vec e_z}\psi = -i\,e_t\psi \vec e_z$; its representative on $\Delta$ is $\mathrm{diag}(-I_2,I_2)$, with $(-iR_{\vec e_z})^{2} = I_4$, and the projectors $P_L = \tfrac12(I_4+iR_{\vec e_z})$, $P_R = \tfrac12(I_4-iR_{\vec e_z})$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $-iR_{\vec e_z}$ anticommutes with the generators and commutes with every even product. The Dirac mass bilinear $\bar\Psi\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.
+The Dirac module is $\Delta = S\oplus\bar{S}$. The chirality operator is the cell
+
+$$
+-iR_{\vec e_z}\psi=-iL_{e_t}R_{\vec e_z}\psi=-i\psi\vec e_z,
+\qquad
+(-iR_{\vec e_z})^{2}=I_4,
+$$
+
+and its representative on $\Delta$ is $\mathrm{diag}(-I_2,I_2)$. The projectors $P_L = \tfrac12(I_4+iR_{\vec e_z})$ and $P_R = \tfrac12(I_4-iR_{\vec e_z})$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $-iR_{\vec e_z}$ anticommutes with the generator cells and commutes with every even product. The Dirac mass bilinear $\bar\psi\psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L$, with $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$ the adjoint built on the time-like cell, is chirality-odd and vanishes on a state of definite chirality.
 
 On the module, a chiral abelian gauge symmetry with independent charges is consistent: with
 
-$$\boxed{\;Ϙ = ϙ_L P_L + ϙ_R P_R,
+$$
+\boxed{\;
+Ϙ = ϙ_L P_L + ϙ_R P_R,
 \qquad
 D_\mu = \partial/\partial Q_\mu + \tfrac{i}{\hbar}A_\mu Ϙ,
 \qquad
-[D_\mu,D_\nu] = \tfrac{i}{\hbar}F_{\mu\nu}Ϙ\;},$$
+[D_\mu,D_\nu] = \tfrac{i}{\hbar}F_{\mu\nu}Ϙ
+\;}
+$$
 
 the covariant derivative is gauge covariant for **arbitrary** $ϙ_L, ϙ_R$, and the mass bilinear is gauge invariant **if and only if** $ϙ_L = ϙ_R$. A genuinely chiral fermion has no gauge-invariant bare mass.
 
-Two structural facts of that article are the hinges of this agenda. The first is that the **canonically available gauge group is vector-like**: the framework's own abelian gauge group is the $*$-unitary part of the centre, which acts as a *scalar* on $M_2(\mathbb{C})$, so every component receives the same charge. Chirality requires a non-central action. The second is that the **chiral charge operator is a module endomorphism, not an algebra element**: $Ϙ = \tfrac{ϙ_L+ϙ_R}{2}I_4 + \tfrac{ϙ_R-ϙ_L}{2}\,-iR_{\vec e_z}$, and $-iR_{\vec e_z}$ is a central idempotent combination of the complexification $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not an element of $\mathbb{B}$. The chiral structure therefore does not fit the form $\tilde{\nabla} + \tfrac{iϙ}{\hbar}\tilde{A}$ with $\tilde{A}\in\mathbb{B}$; it is a connection valued in the algebra of module endomorphisms, $\mathrm{End}(\Delta)$.
+Two structural facts of that article are the hinges of this agenda. The first is that the **canonically available gauge group is vector-like**: the framework's own abelian gauge group is the $*$-unitary part of the centre, which acts as a *scalar* on $M_2(\mathbb{C})$, so every component receives the same charge. Chirality requires a non-central action. The second is that the **chiral charge operator is a module endomorphism, not an algebra element**: expanding the projectors gives
+
+$$
+Ϙ = \tfrac{ϙ_L+ϙ_R}{2}I_4 + \tfrac{ϙ_R-ϙ_L}{2}\,(-iR_{\vec e_z}),
+$$
+
+and $-iR_{\vec e_z}$ is the representative on $\Delta$ of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, the difference of the two central idempotents of the complexified algebra, of square $\chi^2=e_t$; it is not an element of $\mathbb{B}$. Equivalently $Ϙ$ is the right multiplication $R_b$ with
+
+$$
+b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z\in\mathbb{M}_+,
+$$
+
+so it is a cell, and it coincides with a left multiplication — and hence with the framework's $\mathbb{B}$-valued connection — only when $ϙ_L=ϙ_R$. The chiral structure therefore does not fit the form $\tilde{\nabla} + \tfrac{iϙ}{\hbar}\tilde{A}$ with $\tilde{A}\in\mathbb{B}$; it is a connection valued in the algebra of module endomorphisms, $\mathrm{End}(\Delta)$.
 
 A qualification recorded in that article is carried here because it bears on hypercharge. The corpus does not settle how the biquaternion field is identified with the Dirac module. The left regular module is $S\oplus S$, whose two columns both carry the defining representation; the Dirac module is $S\oplus\bar{S}$, whose second factor carries the conjugate action, and the passage between them is the real structure. Under the Lorentz-conjugate assignment a central phase would act as $\exp(i\theta)$ on the left half and $\exp(-i\theta)$ on the right half — an **axial**, not vector-like, action. Which interpretation is physical is the same unsettled "two-$i$" question as the embedding of the projectors. It matters here because it decides whether the framework's abelian factor is vector-like or axial.
 
 ### The mass term and the real structure
 
-The framework's Dirac equation carries the **linear chiral mass pair** $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field; what the mass breaks is the axial symmetry, $\sum_\mu\varepsilon_\mu\,\partial j_{5\mu}/\partial Q_\mu = 2im\,\bar\psi\,-iR_{\vec e_z}\,\psi$, with $j_{5\mu}=\bar\psi\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,-iR_{\vec e_z}\,\psi$ ($iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ the generator cell, $iR_{\vec e_x}=iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$), which vanishes only at $m=0$. The algebra's anti-linear object is the **real structure** $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$, order-reversing with a sign and swapping the two chiral ideals; a coupling built on it pairs the field with its conjugate. Whether the framework intends such a **Majorana-type** conjugate pairing, or whether its real structure only supplies the real-form expression of an ordinary **Dirac** mass, is not settled in the read list, and for that separate coupling the two readings differ on whether a conserved fermion number exists at all. This is inherited as an open item, and it is the pivot on which the scalar-sector question turns: a Majorana-type coupling needs no scalar doublet, whereas the linear Dirac mass for a chiral fermion needs a compensating field carrying the charge difference $ϙ_L-ϙ_R$ (the negative of the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$ the mass bilinear acquires).
+**Two Dirac equations.** The massive Dirac equation of the framework is the **linear chiral mass pair**
 
-Here $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+$$
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,
+\qquad
+\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
+$$
+
+with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. Both members act on the algebra by left multiplication, and the mass couples the two chiral ideals off-diagonally: this is the one-sided statement.
+
+On the Dirac module the same pair is one two-sided cell equation. Writing $G_\mu$ for the generator cell of the coordinate $x_\mu=(t',x,y,z)$, with $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ and $g=\mathrm{diag}(+1,-1,-1,-1)$,
+
+$$
+G_0=iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},
+\qquad
+G_k=iL_{e_k}R_{\vec e_y}\ \ (k=1,2,3),
+\qquad
+\tau(t)=x,\quad \tau(k)=y,
+$$
+
+the equation is
+
+$$
+(\mathbb{D}-m)\psi=0,
+\qquad
+\mathbb{D}=i\,G_\mu\frac{\partial}{\partial x_\mu},
+$$
+
+and, with the sum over $\mu$ plain,
+
+$$
+\mathbb{D}^{2}
+=-\tfrac12\{G_\mu,G_\nu\}\frac{\partial^{2}}{\partial x_\mu\,\partial x_\nu}
+=-g^{\mu\nu}\frac{\partial^{2}}{\partial x_\mu\,\partial x_\nu}
+=-\frac{\partial^{2}}{\partial t'^{2}}+\sum_k\frac{\partial^{2}}{\partial x_k^{2}}
+=\Box .
+$$
+
+The first minus sign is $i^2=-1$ read once, from $\mathbb{D}=iG_\mu\partial_\mu$; the second is the Lorentzian metric inside $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$. The chirality cell $-iR_{\vec e_z}$ is a right multiplication, and neither member of the pair contains one, so the cell has no image under the left action: it exists on the module and not in the algebra. The two equations are therefore one object on two carriers: the mass shell and the Klein–Gordon consequence are statements in the algebra, while chirality and the axial rotation are statements on the module.
+
+**The axial current.** The mass is complex-linear in the field, so the continuous central phase passes through it and the vector $\mathrm{U}(1)$ — fermion number — is conserved for the massive field. What the mass breaks is the axial symmetry. The axial current is
+
+$$
+j_{5\mu}=\bar\psi\,iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\,(-iR_{\vec e_z})\,\psi
+=\bar\psi\,L_{e_\mu}R_{\vec e_z\vec e_{\tau(\mu)}}\,\psi,
+$$
+
+where the second form spends $i(-i)=+1$ and uses $R_aR_b=R_{ba}$. Its divergence is the classical identity
+
+$$
+\sum_\mu\frac{\partial j_{5\mu}}{\partial x_\mu}
+=2im\,\bar\psi\,(-iR_{\vec e_z})\,\psi,
+$$
+
+a plain sum, with the derivative taken in $x_\mu=(t',x,y,z)$; in the $ict'$ coordinate $Q_t$ the time slot of the current carries the factor $ic$ that the coordinate requires, so the sum is the same divergence. The cells already carry the metric, $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, so an extra $\varepsilon_\mu$ would apply it a second time. The right-hand side vanishes only at $m=0$.
+
+**The real structure.** The algebra's anti-linear object is the **real structure** $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$, order-reversing with a sign, fixing the anti-Hermitian sector $\mathbb{M}_-$ and negating the Hermitian one $\mathbb{M}_+$; a coupling built on it pairs the field with its conjugate. Whether the framework intends such a **Majorana-type** conjugate pairing, or whether its real structure only supplies the real-form expression of an ordinary **Dirac** mass, is not settled in the read list, and for that separate coupling the two readings differ on whether a conserved fermion number exists at all. This is inherited as an open item, and it is the pivot on which the scalar-sector question turns: a Majorana-type coupling needs no scalar doublet, whereas the linear Dirac mass for a chiral fermion needs a compensating field carrying the charge difference $ϙ_L-ϙ_R$ (the negative of the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$ the mass bilinear acquires).
 
 ## The Chiral-Fermion Obstacle: an Algebra Is Not a Chiral Gauge Theory
 
@@ -111,15 +197,15 @@ Electroweak theory is chiral, and this is not a detail of its matter content but
 
 There is a second, representation-theoretic way to say the same thing. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and Artinian, so every $\mathbb{B}$-module is a direct sum of copies of its unique simple module $\mathbb{C}^2$ and has complex dimension $2k$. A one-dimensional $\mathbb{B}$-module would therefore be a trivial module, and $\mathbb{B}$ has no nontrivial one-dimensional module; a fortiori the left action of $\mathrm{SU}(2)\subset\mathbb{B}$ on $\Delta$ is nonzero on every sub-object, since every nonzero $\mathbb{B}$-submodule is a sum of copies of the simple module $S=\mathbb{C}^2$, on which $\mathrm{SU}(2)$ acts nontrivially. A right-handed $SU(2)_L$ singlet is not a structure the left-multiplication construction can express: there is no sub-object on which that action is trivial. This is a statement about the carrier, not about arithmetic: the electroweak assignment is perfectly writable, but it is not the one $\mathbb{B}$'s left action supplies.
 
-**What a chiral non-abelian structure would require.** It would replace the $\mathbb{B}$-valued connection by an $\mathrm{End}(\Delta)$-valued one whose generators act only on the left half — schematically $G_a = T_a P_L$ on $\Delta$, with $T_a$ the $\mathrm{SU}(2)$ generators of the read list. The covariance computation is the abelian $Ϙ$-case of the chiral-fermion article with $Ϙ$ promoted to a matrix of generators, and it is identifiable: one verifies $D_{2,\mu}(\Lambda\Psi) = \Lambda D_\mu\Psi$ for $\Lambda = \exp(\tfrac{i}{\hbar}\sum_a\Gamma_a G_a)$ with an $\mathrm{SU}(2)$-valued gauge function. The cost is explicit: such a connection is **not** $\mathbb{B}$-valued and does not act by left multiplication, so it is not the framework's own non-abelian construction; it is that construction's chiral analogue, valued in a larger algebra. Whether the framework may adjoin it, or must derive it, is the open question.
+**What a chiral non-abelian structure would require.** It would replace the $\mathbb{B}$-valued connection by an $\mathrm{End}(\Delta)$-valued one whose generators act only on the left half — schematically $T_aP_L$ on $\Delta$, with $T_a$ the $\mathrm{SU}(2)$ generators of the read list and $P_L$ the chirality projector. The covariance computation is the abelian $Ϙ$-case of the chiral-fermion article with $Ϙ$ promoted to a matrix of generators, and it is identifiable: one verifies $D_{2,\mu}(\Lambda\Psi) = \Lambda D_\mu\Psi$ for $\Lambda = \exp(\tfrac{i}{\hbar}\sum_a\Gamma_a\,T_aP_L)$ with an $\mathrm{SU}(2)$-valued gauge function. The cost is explicit: such a connection is **not** $\mathbb{B}$-valued and does not act by left multiplication, so it is not the framework's own non-abelian construction; it is that construction's chiral analogue, valued in a larger algebra. Whether the framework may adjoin it, or must derive it, is the open question.
 
-**The remaining pieces of the obstacle, named.** The matter representation is unbuilt (the read-list parent's open question 3): what representation the matter field carries under the non-abelian group is not specified. The reality class of the connection is unsettled: the mixed assignment $\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian is the consistent one, but whether it is intended is open, and it bears on how the physical vector fields are identified with connection components. And a chiral gauge theory must satisfy anomaly-cancellation conditions on its spectrum; no biquaternion formulation of the anomaly is attempted anywhere in the series, so the consistency of any constructed chiral spectrum is unexamined.
+**The remaining pieces of the obstacle, named.** The matter representation is unbuilt (the read-list parent's open question 3): what representation the matter field carries under the non-abelian group is not specified. The reality class of the connection is unsettled: the mixed assignment $\mathcal{A}_0$ anti-Hermitian, $\mathcal{A}_k$ Hermitian is the consistent one, but whether it is intended is open, and it bears on how the physical vector fields are identified with connection components. And a chiral gauge theory must satisfy anomaly-cancellation conditions on its spectrum. The series does formulate the anomaly — the boxed Clifford trace, the axial anomaly density as a multiple of $\vec E\cdot\vec B$, and the Standard Model's four cancellation conditions recomputed exactly, in *Anomalies and Anomaly Cancellation in Biquaternionic Form* — and it records that the framework's own gauge factors are anomaly-free identically, the centre being vector-like and $\mathrm{SU}(2)$ having no cubic Casimir. What is absent is a chiral spectrum generated by the framework for those conditions to constrain: the anomaly computation exists, the spectrum it would test does not.
 
-**What would settle it.** The object is a **chiral non-abelian matter representation**: a declared carrier with an $\mathrm{SU}(2)$-module structure in which the left half transforms in the doublet and the right half in the singlet, a connection valued in that structure's endomorphisms, and a verification of gauge covariance and of the resulting mass selection rule. The computation is not mysterious — it is the standard one — but naming the carrier is a decision the framework has not made, and the pseudoreality argument shows it cannot be the framework's own left action. A second settling object is a **biquaternion axial-anomaly computation**; a third is a **decision on the real-structure identification** ("two-$i$"), since it fixes whether the framework's abelian factor is vector-like or axial. Classification: **known route, outside the framework's own construction** — the object is identifiable, but it is not reached by the $\mathbb{B}$-valued connection, and the route's endpoint is a modelling choice rather than a derivation.
+**What would settle it.** The object is a **chiral non-abelian matter representation**: a declared carrier with an $\mathrm{SU}(2)$-module structure in which the left half transforms in the doublet and the right half in the singlet, a connection valued in that structure's endomorphisms, and a verification of gauge covariance and of the resulting mass selection rule. The computation is not mysterious — it is the standard one — but naming the carrier is a decision the framework has not made, and the pseudoreality argument shows it cannot be the framework's own left action. A second settling object is the **anomaly conditions imposed on a framework-generated chiral spectrum** — the machinery exists in the series, the spectrum to feed it does not; a third is a **decision on the real-structure identification** ("two-$i$"), since it fixes whether the framework's abelian factor is vector-like or axial. Classification: **known route, outside the framework's own construction** — the object is identifiable, but it is not reached by the $\mathbb{B}$-valued connection, and the route's endpoint is a modelling choice rather than a derivation.
 
 ## Weak Hypercharge: Nothing Derives It
 
-Electroweak theory needs a second gauge factor. With $SU(2)_L$ it forms $SU(2)_L\times \mathrm{U}(1)_Y$, and its charge, weak hypercharge $Y$, is what distinguishes the right-handed partners and what the scalar doublet carries into the masses. The framework's position on $Y$ is simple and should be stated without softening: **nothing in this series derives weak hypercharge, its values, or even its character.** The word does not appear anywhere in the read list, and no article in the series assigns a hypercharge. This is an open item, not an assumption.
+Electroweak theory needs a second gauge factor. With $SU(2)_L$ it forms $SU(2)_L\times \mathrm{U}(1)_Y$, and its charge, weak hypercharge $Y$, is what distinguishes the right-handed partners and what the scalar doublet carries into the masses. The framework's position on $Y$ is simple and should be stated without softening: **nothing in this series derives weak hypercharge, its values, or even its character.** No article assigns hypercharges of its own; where values of $Y$ are written down — in the cancellation conditions of *Anomalies and Anomaly Cancellation in Biquaternionic Form*, for instance — they are transcribed from the standard spectrum. This is an open item, not an assumption.
 
 Three separate facts make the gap precise.
 
@@ -129,9 +215,19 @@ Three separate facts make the gap precise.
 
 **Third, even the character of the framework's abelian factor is undecided.** As the chiral-fermion article's qualification records, under the Lorentz-conjugate interpretation a central phase acts axially rather than vector-like. So the framework does not yet say whether its own $\mathrm{U}(1)$ is vector-like or axial; a fortiori it does not say whether it can play the role of hypercharge.
 
-A fourth, related gap is the **relative normalization of the two couplings**. In the standard theory the Weinberg angle is fixed by the embedding of $\mathrm{U}(1)_Y$ in $SU(2)_L\times \mathrm{U}(1)_Y$ and the measured couplings, and electric charge is $Q_{\mathrm{em}} = T_3 + Y$. The framework supplies two couplings $\kappa$ (non-abelian) and $ϙ$ (abelian) as free parameters, and no embedding; so neither the mixing angle nor the electric-charge relation is derived.
+A fourth, related gap is the **relative normalization of the two couplings**. In the standard theory the two gauge couplings $g$ (for $SU(2)_L$) and $g_{\mathrm Y}$ (for $\mathrm{U}(1)_Y$) fix the Weinberg angle, and the electric charge is a fixed linear combination of the two neutral generators,
 
-**What would settle it.** The standard route to hypercharge values is not an assumption but a computation: the requirement that the chiral spectrum be anomaly-free, together with the observed electric-charge spectrum, fixes the hypercharge assignments up to normalization. The settling object is therefore a **biquaternion anomaly computation on the framework's spectrum**, which would either reproduce the standard conditions — in which case $Y$ becomes a framework output for the spectrum the framework supplies — or fail to reproduce them. A second settling object is a **no-go**: a demonstration that the framework's abelian factor cannot carry independent left and right charges, forcing $Y$ to be adjoined as an independent factor. A third is a **positive construction**: a derivation of a chiral abelian generator from the algebra's own structure, rather than from the module's projectors. Classification: the values are **no route yet**; the anomaly route is **known in standard field theory, unrealised in the framework**.
+$$
+\tan\theta_W=\frac{g_{\mathrm Y}}{g},
+\qquad
+e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W,
+\qquad
+Q_{\mathrm{em}}=T_3+Y,
+$$
+
+in the normalization of $Y$ in which the scalar doublet carries $Y=\tfrac12$. The framework supplies two couplings $\kappa$ (non-abelian) and $ϙ$ (abelian) as free parameters, and no embedding; so neither the mixing angle nor the electric-charge relation is derived.
+
+**What would settle it.** The standard route to hypercharge values is not an assumption but a computation: the requirement that the chiral spectrum be anomaly-free, together with the observed electric-charge spectrum, fixes the hypercharge assignments up to normalization. The settling object is therefore a **biquaternion anomaly computation on the framework's spectrum**, which would either reproduce the standard conditions — in which case $Y$ becomes a framework output for the spectrum the framework supplies — or fail to reproduce them. A second settling object is a **no-go**: a demonstration that the framework's abelian factor cannot carry independent left and right charges, forcing $Y$ to be adjoined as an independent factor. A third is a **positive construction**: a derivation of a chiral abelian generator from the algebra's own structure, rather than from the module's projectors. Classification: the values are **no route yet**; the anomaly conditions are computed in the series, but they can fix $Y$ only once the framework supplies the chiral spectrum they are imposed on.
 
 ## The Scalar Sector and Symmetry Breaking
 
@@ -157,7 +253,7 @@ Why this bounds the electroweak sector specifically. In a gauge theory the physi
 
 Two inherited facts sharpen the bound. The first is the **mixed reality class** of the non-abelian connection: because $\partial/\partial Q_t = -i\partial/\partial t'$ flips the conjugation behaviour of the Maurer–Cartan form, the time component and the space components of $\mathcal{A}_\mu$ lie in opposite Hermitian-conjugation eigenspaces, and while the mixed assignment is internally consistent, whether it is the intended physical one is unsettled. Until it is settled, even the identification of the physical vector fields with components of the connection is provisional. The second is that the **gauge function and the connection are material-sector objects** only for real $\Gamma$; the electroweak rotation that mixes the two factors is not of this abelian form, so the abelian gauge-fixing analysis does not extend to it.
 
-**What would settle it.** The object is a **gauge-fixing principle internal to the algebra** — an algebraic condition selecting a preferred representative of each orbit, generalizing the abelian Lorenz condition $\sum_\mu\partial A_\mu/\partial Q_\mu = 0$ that the parent already has, together with a demonstration that it selects a section (the Gribov question) — or, alternatively, a proof that the framework's physical content is determined entirely by gauge-invariant objects, with the massive spectrum read off from invariants such as the curvature and $\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\mathrm{Tr}(F_{\mu\nu}F_{\mu\nu})$ and their correlators. Either would convert "the framework cannot fix the gauge" from a bound on what can be said into a statement about how physics is to be expressed. Classification: **no route yet** for a fixing principle; the invariant formulation is a conceivable route but is not constructed.
+**What would settle it.** The object is a **gauge-fixing principle internal to the algebra** — an algebraic condition selecting a preferred representative of each orbit, generalizing the abelian Lorenz condition $\sum_\mu\partial A_\mu/\partial Q_\mu = 0$ that the parent already has, together with a demonstration that it selects a section (the Gribov question) — or, alternatively, a proof that the framework's physical content is determined entirely by gauge-invariant objects, with the massive spectrum read off from invariants such as the curvature and $\mathrm{Tr}\bigl(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\bigr)$ and their correlators. Either would convert "the framework cannot fix the gauge" from a bound on what can be said into a statement about how physics is to be expressed. Classification: **no route yet** for a fixing principle; the invariant formulation is a conceivable route but is not constructed.
 
 ## The Ledger
 
@@ -181,7 +277,7 @@ The table collects the items of the agenda and sorts each into the three-way cla
 | Mass interpretation: Majorana-type or real-form Dirac | Open, inherited | Decide on the real module |
 | Gauge fixing | **No route yet** | A biquaternionic gauge-fixing functional selecting a section, or a proof that physical content is orbit-invariant |
 | Gribov copies of any fixing | No route yet | Follows the fixing principle; not addressed anywhere |
-| Anomaly cancellation | Known route in standard field theory; no framework realisation | A biquaternion axial-current or triangle-anomaly computation |
+| Anomaly cancellation | **Computed** in the series: boxed Clifford trace, axial density, the four Standard Model conditions recomputed exactly; the framework's own factors are anomaly-free identically | A framework-generated chiral spectrum for those conditions to constrain |
 | $W^\pm$, $Z$ spectrum and masses | Blocked | The scalar kinetic term in a fixed gauge, or an invariant pole analysis |
 | Empirical contact | Open | A prediction distinguishing the framework from standard electroweak theory |
 
@@ -190,7 +286,7 @@ The table collects the items of the agenda and sorts each into the three-way cla
 The obstacles are not independent, and the dependency chain is short. The scalar sector needs the chiral action and the hypercharge assignments; the chiral non-abelian action needs a declared carrier and a connection that is not the framework's own $\mathbb{B}$-valued one; hypercharge needs either a derivation or a no-go; and every physical statement about masses needs a gauge fixing. Two items are therefore upstream of everything else.
 
 1. **A chiral matter representation, and a decision about its carrier.** Either the framework supplies an object on which $SU(2)_L$ acts with inequivalent left and right representations — which, by the pseudoreality argument, cannot be the left action of $\mathbb{B}$ and must be an $\mathrm{End}(\Delta)$-valued or otherwise enlarged structure — or it is shown that the chiral sector must be adjoined as an independent representation. Either outcome converts the framework's relation to electroweak theory from "unknown" to "stated". The one thing that does not convert it is writing $SU(2)_L$ doublets and singlets down and proceeding; that is the fabricated premise the agenda exists to prevent.
-2. **A weak hypercharge assignment, derived or refused.** Either hypercharge comes out of an internal principle — the anomaly-cancellation route is the standard candidate, and no framework realisation exists — or it is shown that the framework's abelian factor cannot carry independent left and right charges and that $Y$ must be adjoined. As with chirality, the honest alternatives are a derivation and a no-go; an assumption is neither.
+2. **A weak hypercharge assignment, derived or refused.** Either hypercharge comes out of an internal principle — the anomaly-cancellation route is the standard candidate, and the series has the machinery without a framework spectrum to impose it on — or it is shown that the framework's abelian factor cannot carry independent left and right charges and that $Y$ must be adjoined. As with chirality, the honest alternatives are a derivation and a no-go; an assumption is neither.
 
 A third item is a condition on all physical statements rather than an object of the theory: **a gauge-fixing principle, or an invariant formulation**. Without one, the framework can compute curvature components but cannot say what the massive spectrum is, because it cannot connect an orbit to an observation. This is upstream of the $W$ and $Z$ masses in the same way the colour group and the quark content are upstream of QCD's running coupling in the companion agenda: the computation is standard, and its inputs are the missing objects.
 
@@ -205,8 +301,24 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{e_x}R_{\vec e_y},\quad \gamma_2=iL_{e_y}R_{\vec e_y},\quad \gamma_3=iL_{e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
+
+Each dictionary entry carries one factor of $i$, and every product of two entries spends $i^2=-1$. The collapse that removes the factor is
+
+$$
+i\gamma_5=i\bigl(-iR_{\vec e_z}\bigr)=R_{\vec e_z},
+\qquad
+i\gamma_\mu=i\bigl(iL_{e_\mu}R_{\vec e_{\tau(\mu)}}\bigr)=-L_{e_\mu}R_{\vec e_{\tau(\mu)}}\quad(\mu=0,1,2,3),
+$$
+
+with $\tau(t)=x$ and $\tau(k)=y$, so no residual phase is carried through a product. The volume cell is the product of the four generators,
+
+$$
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}R_{\vec e_z}=-i\gamma_5,
+$$
+
+the second equality being $\gamma_5=-iR_{\vec e_z}$ read once.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -214,7 +326,7 @@ $\gamma_5$ is the reference-frame cell of the chirality operator; the central gr
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+**The identities used in the body.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
@@ -234,18 +346,18 @@ $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
-The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+The four contraction sums — $\sum_\mu\gamma_\mu\gamma_\mu$, $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu$, $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu$, and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\delta\gamma_\mu$ — are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
 
 ## Summary
 
 This article is a research agenda for electroweak theory inside the biquaternion framework. Its finding is that the framework reaches the general machinery of a non-abelian gauge theory on a compact algebra of the right dimension, together with an exact chiral structure on the spinor module, and stops before any chiral gauge theory, any hypercharge assignment, or any scalar sector.
 
-What is established is recalled: the abelian gauge principle, with a canonical central $\mathrm{U}(1)$, the connection $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, the covariant derivative, the abelian curvature, and the linear chiral mass with its conserved vector $\mathrm{U}(1)$ and broken axial symmetry; the non-abelian construction, with a connection transforming inhomogeneously, a curvature transforming in the adjoint and containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$, of real dimension four; the chiral structure on the Dirac module, with exact projectors, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; and the vector-like character of the centre.
+What is established is recalled: the abelian gauge principle, with a canonical central $\mathrm{U}(1)$, the connection $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, the covariant derivative, the abelian curvature, and the linear chiral mass — in its one-sided algebra pair and its two-sided cell equation — with its conserved vector $\mathrm{U}(1)$ and broken axial symmetry; the non-abelian construction, with a connection transforming inhomogeneously, a curvature transforming in the adjoint and containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$, of real dimension four; the chiral structure on the Dirac module, with exact projectors, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; and the vector-like character of the centre.
 
 What is not established is everything electroweak-specific.
 
 - **A chiral gauge theory.** The framework's non-abelian connection is $\mathbb{B}$-valued and acts by left multiplication, which is vector-like on $\Delta$ because the $SU(2)$ doublet is pseudoreal and $\mathbb{B}$ has no one-dimensional module. The chiral abelian structure that does exist is valued in $\mathrm{End}(\Delta)$, not $\mathbb{B}$. **Known route, outside the framework's own construction**, with the carrier named as the thing to be decided.
-- **Weak hypercharge.** Nothing derives its values or its chiral character; the framework's canonical abelian factor is the scalar centre, which is vector-like. The word does not occur in the read list. **No route yet** for the values; the anomaly-cancellation route is standard but unrealised.
+- **Weak hypercharge.** Nothing derives its values or its chiral character; the framework's canonical abelian factor is the scalar centre, which is vector-like. **No route yet** for the values; the anomaly conditions are computed in the series, but there is no framework chiral spectrum to impose them on.
 - **The scalar sector and symmetry breaking.** The framework has a scalar field type with a linear mass but no doublet; in the read list there is no potential, no vacuum expectation value, and no Yukawa coupling, and the framework states that it does not derive the mechanism. **Known route, blocked** on the chiral action and on hypercharge, and contingent on the mass interpretation.
 - **Gauge fixing.** The framework cannot fix the gauge, and the non-abelian case adds the Gribov question; without a fixing or an invariant formulation, the physical content of an orbit — including the vector masses — cannot be exhibited. **No route yet.**
 
@@ -261,7 +373,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; the vector-like abelian factor |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\,\partial/\partial Q_\mu$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=-\partial^2/\partial t'^2+\sum_k\partial^2/\partial x_k^2$ | Biquaternionic gradient and d'Alembertian |
 | $\tilde{A}_2 = \tilde{A}-\tilde{\nabla}\Gamma$, $D=\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ | Abelian connection law and covariant derivative (read list) |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{M}_-$ |
 | $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Available compact algebra (real dimension $4$) |
@@ -269,9 +381,12 @@ The two upstream items are a chiral matter representation with a declared carrie
 | $\mathcal{A}_{2,\mu}=\tilde U\mathcal{A}_\mu \tilde U^{-1}+\tfrac{i}{\kappa}(\partial/\partial Q_\mu \tilde U)\tilde U^{-1}$ | Non-abelian connection law |
 | $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ | Non-abelian curvature; adjoint law |
 | $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$ | Matrix realization |
-| $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\Delta=S\oplus\bar{S}$ | Weyl modules and Dirac module |
+| $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\Delta=S\oplus\bar{S}$, $\psi\in\Delta$ | Weyl modules, Dirac module, and the field on it |
+| $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_b\,L_cR_d=L_{ac}R_{db}$ | Left and right multiplication cells; the notation for operators on $\Delta$ |
 | $-iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}$, $P_L=\tfrac12(I_4+iR_{\vec e_z})$, $P_R=\tfrac12(I_4-iR_{\vec e_z})$ | Chirality cell and projectors |
-| $\bar\Psi\Psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R$, selection rule $ϙ_L=ϙ_R$ | Chirality-odd mass bilinear; chiral charge operator |
+| $G_0=iR_{\vec e_x}$, $G_k=iL_{e_k}R_{\vec e_y}$, $\mathbb{D}=iG_\mu\partial/\partial x_\mu$ | Generator cells and the cell Dirac operator; $(\mathbb{D}-m)\psi=0$ is the module form of the chiral pair |
+| $j_{5\mu}=\bar\psi L_{e_\mu}R_{\vec e_z\vec e_{\tau(\mu)}}\psi$, $\tau(t)=x$, $\tau(k)=y$ | Axial current; its divergence is a plain sum |
+| $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$, $\bar\psi\psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R=R_b$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$, selection rule $ϙ_L=ϙ_R$ | Dirac adjoint, chirality-odd mass bilinear, chiral charge operator as a right multiplication |
 | $\varepsilon=\bigl(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\bigr)$, $\varepsilon g^{*}\varepsilon^{-1}=g$ | Pseudoreality intertwiner: $2\cong\bar{2}$ for $SU(2)$ |
 | $\mathrm{End}(\Delta)$ | Module endomorphisms; the home a chiral gauge connection would need |
 | $a$ | $\mathrm{SU}(2)$ adjoint index, written low; a contraction over it is an explicit sum |
@@ -291,6 +406,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian origin of the connection, the central $\mathrm{U}(1)$, the linear mass and the real structure, and the gauge-fixing gap.
 
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the module's chirality structure, the vector-like centre, the mass selection rule, the module-valued chiral charge operator, and the real-structure qualification that bears on hypercharge.
+- [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the boxed Clifford trace, the axial anomaly and its density, the Standard Model's four cancellation conditions recomputed exactly, and the anomaly-freedom of the framework's own vector-like factors; the computation this agenda's hypercharge route would need applied to a chiral spectrum.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension is the parent's starting point.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-biquaternionic-form.html) — the abelian potential, field strength, and gauge scalar that the electroweak factors would generalize.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the mass term, the chirality of the mass bilinear, and the corpus's explicit statement that the framework does not derive the electroweak structure.

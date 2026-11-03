@@ -1,20 +1,20 @@
-# __$M_4(\mathbb{C})$ Standard Peirce Representation : Operators__
+# __$M_4(\mathbb{C})$ Pauli Representation : Operators__
 
 ## Introduction
 
-**The question.** The Standard Peirce article computes the left matrix $L(\tilde Q)$ and the right matrix $R(\tilde P)$ of a biquaternion, their product, their trace, their determinant and their values on the six subspaces. This article asks the operator question that follows: which endomorphisms of $\mathbb{B}$ arise from multiplication, what are their matrices inside $M_4(\mathbb{C})$, and how is the matrix algebra organised by the two-sided products?
+**The question.** The Pauli Representation article computes the left matrix $L(\tilde Q)$ and the right matrix $R(\tilde P)$ of a biquaternion, their product, their trace, their determinant and their values on the six subspaces. This article asks the operator question that follows: which endomorphisms of $\mathbb{B}$ arise from multiplication, what are their matrices inside $M_4(\mathbb{C})$, and how is the matrix algebra organised by the two-sided products?
 
 **The three answers.** The answers sit at three levels.
 
 - A general endomorphism is any matrix in $M_4(\mathbb{C})$. The frame gives a linear isomorphism $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\to M_4(\mathbb{C})$, and every $4\times4$ matrix is the matrix of exactly one operator. The space has sixteen complex dimensions, and a general operator need not be a single product.
-- A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$, and the right matrices fill the four-dimensional copy $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$. These are exactly the two subsets of the Standard Peirce article, and their intersection is the scalars.
+- A one-sided operator is a left or a right multiplication. The left matrices fill the four-dimensional copy $\mathbb{B}_L=\{\mathrm I_2\otimes A\}$, and the right matrices fill the four-dimensional copy $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm I_2\}$. These are exactly the two subsets of the Pauli Representation article, and their intersection is the scalars.
 - A two-sided operator is a product $L_{\tilde Q}R_{\tilde P}=L(\tilde Q)R(\tilde P)$. The products fill a seven-dimensional cone in $M_4(\mathbb{C})$, not a subspace, and they are exactly the matrices whose coefficient matrix has rank at most one.
 
 **The matrix side.** The sixteen products $L_{e_\mu}R_{e_\nu}$ form an orthogonal basis of $M_4(\mathbb{C})$, of Hilbert–Schmidt norm two. The Pauli evaluation writes each of them as a $4\times4$ Kronecker product of two $2\times2$ matrices. One Clifford frame, built from a pair $(\beta,\delta)$ of orthogonal spatial directions, gives five cell multiples and the Clifford relations. The coefficient matrix $c(M)$ turns the product condition into a rank condition, and the cone of products into the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$. The article records these constructions, and closes with the open questions.
 
 **The result in one line.** Every matrix is a sum of at most four two-sided products; the products themselves are the matrices of coefficient rank at most one; and the least number of products is the coefficient rank.
 
-**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Standard Peirce Representation*. The same operators in the canonical frame are *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
+**Boundaries.** The frame and the one-sided matrices are *$M_4(\mathbb{C})$ Pauli Representation*. The same operators in the canonical frame are *$M_4(\mathbb{C})_{\mathcal{T}}$ Representation : The Two-Sided Operators on the Biquaternion Algebra*. The abstract family is *Two-Sided Operators on the Biquaternion Algebra*. The ambient endomorphisms are *The Endomorphisms of the Biquaternion Algebra*. The enveloping algebra is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The Hermitian sandwich is Part V and is not treated here.
 
 **Conventions.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. The frame is the standard Peirce frame
 $$
@@ -61,7 +61,7 @@ $$
 \mathbb{B}_R=\{R(\tilde P):\tilde P\in\mathbb{B}\}
 =\{B^{\mathsf T}\otimes\mathrm I_2:B\in M_2(\mathbb{C})\}.
 $$
-These are exactly the two four-dimensional subsets of the Standard Peirce article. Each is a subalgebra: $\mathbb{B}_L\cong\mathbb{B}$ and $\mathbb{B}_R\cong\mathbb{B}^{\mathrm{opp}}$. Their intersection is the line of scalars $\mathbb{C}\cdot\mathrm I_4$, and each is the commutant of the other.
+These are exactly the two four-dimensional subsets of the Pauli Representation article. Each is a subalgebra: $\mathbb{B}_L\cong\mathbb{B}$ and $\mathbb{B}_R\cong\mathbb{B}^{\mathrm{opp}}$. Their intersection is the line of scalars $\mathbb{C}\cdot\mathrm I_4$, and each is the commutant of the other.
 
 **Two-sided operators.** The product of a left and a right multiplication is the operator
 $$
@@ -89,7 +89,7 @@ $$
 L(\tilde Q)=\mathrm I_2\otimes A=\operatorname{diag}(A,A),\qquad
 A=\mathsf M_2(\tilde Q).
 $$
-Its image is the four-dimensional subalgebra $\mathbb{B}_L$. The composition law is $L(\tilde Q)L(\tilde R)=L(\tilde Q\tilde R)$, and the map $\tilde Q\mapsto L(\tilde Q)$ is injective. The rank is $2\operatorname{rank}A$, the trace is $2\operatorname{Tr}A=4Q_t$, and the determinant is $(\det A)^2=\langle\tilde Q\rangle_{\natural}^2$. The four basis matrices $L_{e_\mu}$ are the images of the four units, and they are the four matrices of the Standard Peirce article.
+Its image is the four-dimensional subalgebra $\mathbb{B}_L$. The composition law is $L(\tilde Q)L(\tilde R)=L(\tilde Q\tilde R)$, and the map $\tilde Q\mapsto L(\tilde Q)$ is injective. The rank is $2\operatorname{rank}A$, the trace is $2\operatorname{Tr}A=4Q_t$, and the determinant is $(\det A)^2=\langle\tilde Q\rangle_{\natural}^2$. The four basis matrices $L_{e_\mu}$ are the images of the four units, and they are the four matrices of the Pauli Representation article.
 
 **The four left matrices.** Each is the image of a unit under the left matrix map, in the canonical frame,
 $$
@@ -143,7 +143,7 @@ M_2(\mathbb{C})\otimes\mathbb{C}\bigl[\mathsf M_2(\tilde Q)\bigr],
 $$
 of complex dimension $2\cdot4=8$: the first slot is free, and the second is spanned by $\mathrm I_2$ and the matrix itself, by Cayley–Hamilton. For a scalar element the commutant is all of $M_4(\mathbb{C})$, of dimension sixteen. The minimal polynomial is the one of the entry matrix in both cases, of degree two, and it does not square: the regular matrix is never nonderogatory, although its characteristic polynomial has degree four.
 
-**The compression.** In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of *$M_2(\mathbb{C})$ Standard Peirce Representation : Operators*.
+**The compression.** In the $2\times2$ model the left matrix compresses to $A$ and the right matrix compresses to $B^{\mathsf T}$. The two-sided product does not compress to a single $2\times2$ matrix: it is the $4\times4$ product $B^{\mathsf T}\otimes A$, and the two tensor factors are both needed. The one-sided actions compress one at a time; the two-sided operator is the product of the two uncompressed actions. The pair description, with one matrix per side and a pair for the product, is the subject of *$M_2(\mathbb{C})$ Pauli Representation : Operators*.
 
 **The general level.** A matrix of $M_4(\mathbb{C})$ that is neither in $\mathbb{B}_L$ nor in $\mathbb{B}_R$ is still an endomorphism, and the frame gives its matrix. Such a matrix is a sum of two-sided products, but not necessarily a single one. The next sections compute the sixteen basis matrices of the product family, then measure how far a general matrix is from being a single product, through the coefficient matrix.
 
@@ -315,7 +315,7 @@ with $\mathbb{B}^{\mathrm{opp}}$ the opposite algebra (the reversed product); th
 
 **The three products.** The ordinary product $L(\tilde Q)R(\tilde P)$ is $4\times4$ and is the operator. The Kronecker product of two $2\times2$ matrices is $4\times4$ and is the evaluation of the ordinary product in the model $\mathbb{B}\cong M_2(\mathbb{C})$. The Kronecker product of two $4\times4$ matrices is $16\times16$ and is neither. The three are related by the identifications of the model, not by an equality of matrices.
 
-**The two displays.** The Peirce frame is the canonical frame of the Standard Peirce article, and the Pauli evaluation is its display. The coefficient basis, reached by the Peirce change $C_{\Pi}$, is the conjugate display: the sixteen are signed permutation matrices, and a general endomorphism is an arbitrary matrix. Neither display changes the operator; the frame changes the entries, the basis changes the coordinates, and the algebra stays $M_4(\mathbb{C})$.
+**The two displays.** The Peirce frame is the canonical frame of the Pauli Representation article, and the Pauli evaluation is its display. The coefficient basis, reached by the Peirce change $C_{\Pi}$, is the conjugate display: the sixteen are signed permutation matrices, and a general endomorphism is an arbitrary matrix. Neither display changes the operator; the frame changes the entries, the basis changes the coordinates, and the algebra stays $M_4(\mathbb{C})$.
 
 ## The Dirac Operator of the Frame
 
@@ -519,7 +519,7 @@ $$
 
 **The reading.** $E_{11}$ has matrix rank one and length one. The two ranks agree here, but they need not: the matrix $M_1$ above has matrix rank one and length four, and $P_+$ has matrix rank two and length one. The length is read from the coefficient matrix, not from the matrix rank. The example also shows that a matrix unit is a product, and that its factors can be null: $e_t+i\vec e_z$ has quaternionic norm zero.
 
-**Where the frame question is answered.** The coefficient array $c(M)$ is computed from the sixteen products of four *basis elements*, so its entries move with the frame while its rank does not: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, and a change of the display alone leaves $c$ untouched. The proof, the two frames of the corpus and the sixteen lengths of the matrix units are §*The Change of Frame Is a Congruence* and §*The Sixteen Lengths* of *$M_4(\mathbb{C})$ Standard Peirce Representation : The Matrix Product, the Trace and the Determinant*. What the length theorem needs from that is one line: the rank of a congruence is the rank of the array.
+**Where the frame question is answered.** The coefficient array $c(M)$ is computed from the sixteen products of four *basis elements*, so its entries move with the frame while its rank does not: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, and a change of the display alone leaves $c$ untouched. The proof, the two frames of the corpus and the sixteen lengths of the matrix units are §*The Change of Frame Is a Congruence* and §*The Sixteen Lengths* of *$M_4(\mathbb{C})$ Pauli Representation : The Matrix Product, the Trace and the Determinant*. What the length theorem needs from that is one line: the rank of a congruence is the rank of the array.
 
 ## The Plain Adjoint and the Types
 
@@ -821,9 +821,9 @@ In one line: every two-sided operator is a single product of one left and one ri
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the left and right matrices and the six subspaces.
-- [$M_2(\mathbb{C})$ Standard Peirce Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the compression of the two one-sided actions.
-- [$M_2(\mathbb{C})$ Standard Peirce Representation : Operators](m2c-standard-peirce-representation-operators.html), for the same operators compressed to one matrix per side and a pair for the product.
+- [$M_4(\mathbb{C})$ Pauli Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the frame, the left and right matrices and the six subspaces.
+- [$M_2(\mathbb{C})$ Pauli Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the compression of the two one-sided actions.
+- [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-standard-peirce-representation-operators.html), for the same operators compressed to one matrix per side and a pair for the product.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the same operators in the axis-free basis.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family, the generation theorem, the composition, the adjoint and the type criteria.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis.

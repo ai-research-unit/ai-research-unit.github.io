@@ -90,7 +90,7 @@ It is a complex subspace of $\mathbb{B}$.
 
 *Proof.* $L_{\tilde Q}(X)=0$ is $\tilde QX=0$, which is the defining condition of the right annihilator.
 
-**The three cases.** The complex dimension of the annihilator is read in the $2\times2$ model of *$M_2(\mathbb{C})$ Standard Peirce Representation*, where $\tilde Q$ is a $2\times2$ matrix:
+**The three cases.** The complex dimension of the annihilator is read in the $2\times2$ model of *$M_2(\mathbb{C})$ Pauli Representation*, where $\tilde Q$ is a $2\times2$ matrix:
 
 - if $\tilde Q$ is a unit, $\operatorname{Ann}_r(\tilde Q)=0$, of complex dimension $0$;
 - if $\tilde Q\neq0$ and $N(\tilde Q)=0$, the matrix has rank one, its kernel is a line, and the right annihilator is the complex two-dimensional space of matrices whose columns lie in that line;

@@ -8,7 +8,7 @@
 
 **The three numbers.** The parametrisation has $2n^{2}$ complex parameters, its generic fibre is a single scaling orbit of dimension one, and the image has dimension $2n^{2}-1$. At $n=2$ this is $8-1=7$, the dimension of the cone of the biquaternion algebra; at $n=3$ it is $17$; at $n=4$ it is $31$.
 
-**Boundaries.** The one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the general construction is *The Regular Representation in Dimension $n$*; the coefficient array and the length are *The Length and the Two Ranks on $M_n(\mathbb{C})$*; the sandwich, the adjoints and the difference family are *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. At $n=2$ the abstract family is *Two-Sided Operators on the Biquaternion Algebra*, the frame and the sixteen basis operators are *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*, and the entry-by-entry array is *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation*. The Hermitian sandwich is Part V.
+**Boundaries.** The one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the general construction is *The Regular Representation in Dimension $n$*; the coefficient array and the length are *The Length and the Two Ranks on $M_n(\mathbb{C})$*; the sandwich, the adjoints and the difference family are *The Sandwich, the Difference Family and the Adjoints of $M_n(\mathbb{C})$*. At $n=2$ the abstract family is *Two-Sided Operators on the Biquaternion Algebra*, the frame and the sixteen basis operators are *$M_4(\mathbb{C})$ Pauli Representation : Operators*, and the entry-by-entry array is *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation*. The Hermitian sandwich is Part V.
 
 **Conventions.** The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the operator space is $\operatorname{End}(A)$, of dimension $N^{2}=n^{4}$. The operator is $L_{A}R_{B}$, acting by $L_{A}R_{B}(X)=AXB$. In the column-stacking basis $L_{A}=\mathrm I_{n}\otimes A$, $R_{B}=B^{\mathsf T}\otimes\mathrm I_{n}$ and therefore
 $$
@@ -108,7 +108,7 @@ $$
 $$
 of complex dimension $2(N-1)=2n^{2}-2$, one less than the cone it closes.
 
-**The count.** The Segre variety has dimension $2n^{2}-2$ and the cone over it has dimension $2n^{2}-1$; the ambient projective space has dimension $n^{4}-1$ and the ambient affine space $n^{4}$. At $n=2$ the Segre variety is $\mathbb{P}^{3}\times\mathbb{P}^{3}$ of dimension six inside $\mathbb{P}^{15}$, which is the count of the Peirce article.
+**The count.** The Segre variety has dimension $2n^{2}-2$ and the cone over it has dimension $2n^{2}-1$; the ambient projective space has dimension $n^{4}-1$ and the ambient affine space $n^{4}$. At $n=2$ the Segre variety is $\mathbb{P}^{3}\times\mathbb{P}^{3}$ of dimension six inside $\mathbb{P}^{15}$, which is the count of the Pauli Representation article.
 
 **The two rulings.** The two families of linear spaces of the Segre variety are the two one-sided families: fixing $B=I$ gives the copy $\mathbb{P}(M_{n})$ of the left multiplications, and fixing $A=I$ gives the copy of the right multiplications. The two copies meet in the single point of the scalars. **The copies are linear spaces inside the cone and not generators of it**: their linear span is the subspace of dimension $2n^{2}-1$ of the companion article, the sums of a left and a right multiplication, and a generic product is not in that span.
 
@@ -243,4 +243,4 @@ The two one-sided copies are the two rulings of the cone and meet in the scalars
 - [The Regular Representation in Dimension $n$](the-regular-representation-in-n-dimensions.html), for the tensor form and the ladder.
 - [The Length and the Two Ranks on $M_n(\mathbb{C})$](the-length-and-the-two-ranks-on-mnc.html), for the coefficient array which cuts the cone out by minors.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family at $n=2$.
-- [$M_4(\mathbb{C})$ Standard Peirce Representation : Operators](m4c-standard-peirce-representation-operators.html), for the sixteen basis operators and the Peirce gauge.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the sixteen basis operators and the Peirce gauge.

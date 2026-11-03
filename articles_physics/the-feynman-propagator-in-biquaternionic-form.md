@@ -4,33 +4,47 @@
 
 The companion article *Canonical Quantization of the Biquaternion Dirac Field* quantizes the biquaternion Dirac field on its spinor module: it promotes the field to an operator-valued distribution, imposes the equal-time anticommutators, expands the field in the plane-wave solutions, and builds the Fock space. It closes with an explicit accounting of what is standard and what remains open, and it concludes that the construction is a transcription of ordinary canonical quantization rather than a derivation from the algebra $\mathbb{B}$.
 
+Natural units $\hbar=c=1$ are used throughout, so the four-momentum is $\tilde P=iE\,e_t+\vec p$ and the mass shell is $\tilde P\tilde P^\natural=-m^2$.
+
 The dynamics is the one-sided chiral pair
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R .
 $$
 
-The framework now carries two equations under that name, and they must not be read as one. This pair is the definition. The gradient acts by left multiplication, the field lies in $\Delta=S\oplus S^{\mathrm{c}}$, and the mass is the off-diagonal pairing of the two chiral halves. The **two-sided** form of *The Dirac Equation in Biquaternionic Form* is a single equation on $\mathbb{B}$,
+The framework carries two equations called the Dirac equation, and they must not be read as one. The pair displayed above is the first: it is the definition. The gradient acts by left multiplication, the field lies in $\Delta=S\oplus S^{\mathrm{c}}$, and the mass is the off-diagonal pairing of the two chiral halves.
+
+The second is the **two-sided** form of *The Dirac Equation in Biquaternionic Form*, a single equation on $\mathbb{B}$,
 
 $$
 \mathcal{N}F=\Big(i\frac{\partial}{\partial t'}+D_3\Big)F-mi\,\overline{F}\,\vec e_z=0,
 $$
 
-in which $D_3$ is the spatial Dirac operator of that article, the mass term acts by right multiplication through $\vec e_z$, and the conjugation supplies the antilinear part. The two forms are related by the dictionary $A$ of that article, and they are not the same operator. Everything below is written for the one-sided pair, whose spinor-module representative is the ordinary $(\slashed p-m)\psi=0$; the two-sided form differs by the place of the mass and by the conjugation, and its free solutions obey the same mass-shell condition.
-
-Natural units $\hbar=c=1$ are used throughout, so the four-momentum is $\tilde P=iEe_t+\vec p$ and the mass shell is $\tilde P\tilde P^\natural=-m^2$.
-
-This article is about the next object in that construction: the **two-point function** of the quantized field on the spinor-module representative, the Feynman propagator
+in which $D_3$ is the spatial Dirac operator of that article, the mass acts by right multiplication through $\vec e_z$, and the conjugation supplies the antilinear part. Because $i\partial/\partial t'+D_3=-\tilde\nabla^{\natural}$, the two-sided operator is
 
 $$
-\boxed{\;S_F(x-y)\;=\;\langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle\;},
+\mathcal{N}=-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z .
+$$
+
+That display is the whole relation between the two equations, and it says three things. The leading term is the $\natural$-member of the pair, not a new operator. The mass sits on the far side, and it reaches the field only through its conjugate: comparing $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ with $\mathcal{N}F=0$ reads the second field as $\tilde\Psi_R=-i\overline{F}\,\vec e_z$, a conjugation and a fixed direction and nothing else. The price is that $\mathcal{N}$ is not left multiplication by an element of $\mathbb{B}$, which is why the two forms are not the same operator. The dictionary $A$ is a real-linear bijection, so the two forms describe the same field; what changes is the shape of the operator, not the physics. The conjugation in the mass term pairs $F$ with $\overline{F}$, so a solution carries both frequency branches at once; in the time-harmonic case the parent article exhibits exactly that, as a sum of two exponentials of opposite sign.
+
+Everything below is written for the one-sided pair, whose spinor-module representative is the ordinary $(\slashed p-m)\psi=0$. That is the form written on the chiral halves $S$ and $S^{\mathrm{c}}$, which is the decomposition the chirality grading of section *The Gamma Formulation* labels.
+
+This article is about the next object in that quantization: the **two-point function** of the quantized field on the spinor-module representative, the Feynman propagator
+
+$$
+\boxed{\;S_F(x-y)\;=\;\langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar\psi^{\mathrm{fop}}(y)\,|0\rangle\;},
 $$
 
 with $T$ the fermionic time-ordering operator. The two-point function is where the boundary condition of the theory is stored. Its momentum-space amplitude is not a function but a distribution, and what makes it the *Feynman* amplitude rather than the retarded or advanced one is a contour prescription in the complex energy plane — the $i\epsilon$.
 
 The specific question this article asks is a question about the algebra. The biquaternion framework already carries a complex structure: the scalar imaginary $i$ is a fixed central element with $i^2=-1$, it is what turns the material time coordinate into $ict'$, and it is what lets the mass shell be written as the single quadratic condition $\tilde P\tilde P^{\natural}=-m^2$ whose two roots in the energy are the positive- and negative-frequency branches (the particle and antiparticle modes in the standard interpretation). The Feynman prescription is also an insertion of $i$: $m^2\mapsto m^2-i\epsilon$. Are these the same $i$ doing the same work? Is the contour deformation the algebra's own complex structure, or is it an independent analytic input that the algebra can only write down?
 
-We answer this on a concrete case, by computing the pole structure and the contour explicitly and by recomputing every displayed formula on a momentum chosen for the purpose. The finding is stated at the outset because it is the article's content. **The algebra supplies the complex plane in which the contour is drawn, and a natural notation for the prescription — the deformed mass-shell scalar $\tilde P\tilde P^{\natural}+m^2-i\epsilon$, whose shift $-i\epsilon\,e_t$ is a central element along the $ict'$ axis of the material sector — but it does not select the contour.** The deformation's *axis* is algebraically natural; its *orientation*, which is what distinguishes the Feynman propagator from the retarded and advanced ones, is an analytic boundary condition. In this problem the algebra adds notation and a home for the $i\epsilon$, not the physics that fixes it. If that is all it adds, we say so.
+We answer this on a concrete case, by computing the pole structure and the contour explicitly and by recomputing every displayed formula on a momentum chosen for the purpose. The finding is stated at the outset because it is the article's content.
+
+**The algebra supplies the complex plane in which the contour is drawn, and a natural notation for the prescription — the deformed mass-shell scalar $\tilde P\tilde P^{\natural}+m^2-i\epsilon$, whose added term $-i\epsilon\,e_t$ is a central element along the $ict'$ axis of the material sector — but it does not select the contour.**
+
+The deformation's *axis* is algebraically natural; its *orientation*, which is what distinguishes the Feynman propagator from the retarded and advanced ones, is an analytic boundary condition. In this problem the algebra adds notation and a home for the $i\epsilon$, not the physics that fixes it. If that is all it adds, we say so.
 
 ## The Two-Point Function of the Quantized Dirac Field
 
@@ -42,21 +56,40 @@ $$
 +b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$
 
-with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$. Its adjoint is $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}$: the Hermitian conjugate, then the timelike cell of the reference frame.
+with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$. Its adjoint is $\bar\psi^{\mathrm{fop}}=\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}$: the Hermitian conjugate, then the timelike cell of the reference frame.
 
-Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and
-
-$$
-\slashed p\;:=\;iR_{\vec e_x}p_0-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}p_k
-$$
-
-for the **momentum cell**, the four frame cells combined with the metric signs, chosen so that the cell squares to the Lorentz square of the momentum,
+Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $\nu(t)=x$, $\nu(k)=y$ for the cells of the reference frame. The **momentum cell** is the signed sum of the frame cells contracted with the four-momentum. The sign vector of the frame is $(+,-,-,-)$, so the energy takes the timelike cell with a plus and each momentum component a spatial cell with a minus, and the sum is named rather than left to a repeated index:
 
 $$
-(\slashed p)^2=p^2\,\mathbf{1},\qquad p^2=p_0^2-\vec p^2.
+\slashed p\;:=\;iL_{e_t}R_{\vec e_x}p_0-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}p_k
+\;=\;iR_{\vec e_x}p_0-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}p_k ,
 $$
 
-The signs are not free: they are the signs of the cell anticommutator
+the last step because $L_{e_t}$ is the identity. The two halves act on different sides — the energy from the right through $\vec e_x$, the momentum from the left through $\vec e_k$ together with a right multiplication by $\vec e_y$ — and that asymmetry is the reference frame's, not a slip of notation: it is what makes the cell square to the Lorentz square of the momentum. The four squares do *not* share a sign. The energy cell squares to $+1$, because two minus signs meet: $i^2=-1$ from the central unit and $\vec e_x^2=-\vec e_t$ from the quaternion,
+
+$$
+(iR_{\vec e_x}p_0)^2=i^2p_0^2\,R_{\vec e_x^2}=(-1)(-1)\,p_0^2\,\mathbf{1}=+p_0^2\,\mathbf{1},
+$$
+
+while each spatial cell squares to $-1$, because the same $i^2$ is now the only sign left, $\vec e_k^2$ and $\vec e_y^2$ cancelling one another,
+
+$$
+(iL_{\vec e_k}R_{\vec e_y}p_k)^2=i^2p_k^2\,L_{\vec e_k^2}R_{\vec e_y^2}=(-1)(+1)\,p_k^2\,\mathbf{1}=-p_k^2\,\mathbf{1}.
+$$
+
+The cross terms vanish because
+
+$$
+\{iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y}\}=-L_{\vec e_k}R_{\vec e_y\vec e_x+\vec e_x\vec e_y}=0,
+$$
+
+the two factors of $i$ multiplying to $-1$ and the quaternion relation $\vec e_y\vec e_x=-\vec e_x\vec e_y$ killing what is left; two distinct spatial cells cancel the same way on the left, $\{iL_{\vec e_k}R_{\vec e_y},iL_{\vec e_l}R_{\vec e_y}\}=-L_{\vec e_k\vec e_l+\vec e_l\vec e_k}R_{\vec e_y^2}=0$ for $k\ne l$. Hence
+
+$$
+(\slashed p)^2=p^2\,\mathbf{1},\qquad p^2=p_0^2-\vec p^2 .
+$$
+
+The general statement behind the signs is the frame-cell anticommutator
 
 $$
 \{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}\mathbf{1},
@@ -91,14 +124,14 @@ the momentum cell being on the mass shell, $p_0=E_{\vec p}$.
 Contracting the mode operators against the vacuum gives the two elementary two-point functions. The **positive-frequency** piece is
 
 $$
-W_+(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle
+W_+(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}}(x)\,\bar\psi^{\mathrm{fop}}(y)\,|0\rangle
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\slashed p+m\big)\,\exp(-ip\cdot(x-y)),
 $$
 
 in which only the $a^{\mathrm{fop}} a^{\mathrm{fop}\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
-W_-(x-y)\;=\;\langle 0|\,\bar{\psi^{\mathrm{fop}}}(y)\,\psi^{\mathrm{fop}}(x)\,|0\rangle
+W_-(x-y)\;=\;\langle 0|\,\bar\psi^{\mathrm{fop}}(y)\,\psi^{\mathrm{fop}}(x)\,|0\rangle
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\slashed p-m\big)\,\exp(+ip\cdot(x-y)),
 $$
 
@@ -161,28 +194,36 @@ with $\slashed p_\pm=iR_{\vec e_x}(\pm E_{\vec p})-\sum_k iL_{\vec e_k}R_{\vec e
 The contour contributes $-2\pi i$ when it closes below and $+2\pi i$ when it closes above. With the residues above and the overall factor $i$ of $S_F$, the two cases are
 
 $$
-\Delta t>0:\quad (-2\pi i)\cdot\frac{\slashed p_++m}{2E_{\vec p}}\cdot i
-=\frac{2\pi}{2E_{\vec p}}\big(\slashed p_++m\big),
+\Delta t>0:\quad i\,(-2\pi i)\,\frac{\slashed p_++m}{2E_{\vec p}}
+=2\pi\,\frac{\slashed p_++m}{2E_{\vec p}},
 $$
 
 $$
-\Delta t<0:\quad (+2\pi i)\cdot\frac{\slashed p_-+m}{-2E_{\vec p}}\cdot i
-=\frac{2\pi}{2E_{\vec p}}\big(\slashed p_-+m\big).
+\Delta t<0:\quad i\,(+2\pi i)\,\frac{\slashed p_-+m}{-2E_{\vec p}}
+=2\pi\,\frac{\slashed p_-+m}{2E_{\vec p}},
 $$
 
-Both carry the same **positive** weight $2\pi/(2E_{\vec p})$: the sign of the half-plane and the sign inside the residue cancel. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is
+in both lines the product of the two imaginary units being $i^2=-1$.
+
+Both carry the same **positive** weight: the sign of the half-plane and the sign inside the residue cancel, and the $2\pi$ cancels against the $1/(2\pi)$ of the $p_0$ measure, leaving $1/(2E_{\vec p})$, which is the normalisation of $W_\pm$. The fermionic minus is therefore not in the contour, and it must come from the numerator. For $\Delta t>0$ the $p_0$ integral is already the positive-frequency integrand of $W_+$. For $\Delta t<0$ it is
 
 $$
-\frac{\slashed p_-+m}{2E_{\vec p}}\,\exp(+iE_{\vec p}\Delta t+i\vec p\cdot\Delta\vec x),
+\frac{\slashed p_-+m}{2E_{\vec p}}\,\exp(+iE_{\vec p}\Delta t+i\vec p\cdot\Delta\vec x).
 $$
 
-and after $\vec p\to-\vec p$, with $p_+(-\vec p)=(E_{\vec p},-\vec p)$, the numerator identity
+Now flip the integration variable, $\vec p\to-\vec p$: the measure and $E_{\vec p}$ are unchanged, and the spatial phase reverses. The cell is linear in the four-momentum, so flipping all four components flips its sign,
 
 $$
-\slashed p_-+m=-\big(\slashed p_+(-\vec p)-m\big)
+\slashed p_-(-\vec p)=iR_{\vec e_x}(-E_{\vec p})-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}(-p_k)=-\slashed p_+(\vec p),
 $$
 
-turns it into the negative-frequency integrand of $-W_-$. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus.
+and the numerator of the flipped expression becomes
+
+$$
+\slashed p_-(-\vec p)+m=-\big(\slashed p_+(\vec p)-m\big),
+$$
+
+which is the negative-frequency numerator of $W_-$ with a minus. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus.
 
 Three things are conflated in the phrase "the $i\epsilon$ does the time ordering", and they are worth separating.
 
@@ -193,10 +234,10 @@ Three things are conflated in the phrase "the $i\epsilon$ does the time ordering
 **A recomputation on a case chosen for it.** Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the spinors, the two equations $(\slashed p-m)w^{(r)}=0$ and $(\slashed p+m)v^{(r)}=0$, the normalizations and the spin sums gives a maximum deviation of $4.4\times10^{-16}$, and $1.7\times10^{-15}$ over nine further random on-shell momenta. The cell identity
 
 $$
-(\slashed p-m)(\slashed p+m)=(p^2-m^2)\mathbf{1}
+(\slashed p-m)(\slashed p+m)=(\slashed p)^2-m^2\,\mathbf{1}=(p^2-m^2)\,\mathbf{1}
 $$
 
-is exact. For $\epsilon=10^{-3}$ the Feynman poles come out at
+is an identity, not a coincidence: it is the square of the cell derived above, and it holds for off-shell $p$ as well. Evaluated numerically it deviates by $3.6\times10^{-15}$. For $\epsilon=10^{-3}$ the Feynman poles come out at
 
 $$
 p_0=+1.61245155-i\,3.10\times10^{-4}
@@ -204,7 +245,7 @@ p_0=+1.61245155-i\,3.10\times10^{-4}
 p_0=-1.61245155+i\,3.10\times10^{-4},
 $$
 
-that is, one on each side of the real axis, as claimed. A direct numerical evaluation of the $p_0$ integral along the real axis, with the grid refined near the poles and the range cut at $|p_0|=10^3$, reproduces the $\theta$-combination for both signs of $\Delta t$ to $4\times10^{-3}$ at $\epsilon=10^{-2}$ and $3\times10^{-4}$ at $\epsilon=10^{-3}$; the residual is the resolution of the two poles, which sit a distance $\epsilon/(2E_{\vec p})$ from the real axis. The relative minus was verified by evaluating the two branches separately and comparing with $\theta(x_0-y_0)W_+-\theta(y_0-x_0)W_-$.
+that is, one on each side of the real axis, as claimed. A direct numerical evaluation of the $p_0$ integral along the real axis — grid refined to $2\times10^{-4}$ within $|p_0|<6$ and cut at $|p_0|=10^3$ — reproduces all sixteen components of the $\theta$-combination for both signs of $\Delta t$ to $2.5\times10^{-3}$ at $\epsilon=10^{-2}$ and $2.9\times10^{-4}$ at $\epsilon=10^{-3}$; the residual tracks the resolution of the two poles, which sit a distance $\epsilon/(2E_{\vec p})$ from the real axis. The relative minus was verified by evaluating the two branches separately and comparing with $\theta(x_0-y_0)W_+-\theta(y_0-x_0)W_-$.
 
 ## Feynman, Retarded, and Advanced: What Selects the Contour
 
@@ -212,19 +253,19 @@ The pole structure makes the choice of propagator explicit. Three prescriptions 
 
 | Prescription | Denominator | Poles (to first order in $\epsilon$) |
 |---|---|---|
-| Feynman | $p_0^2-E_{\vec p}^2+i\epsilon$ | $+E_{\vec p}$ below, $-E_{\vec p}$ above |
+| Feynman | $p_0^2-E_{\vec p}^2+i\epsilon$ | $\pm E_{\vec p}\mp i\epsilon/(2E_{\vec p})$ (opposite sides) |
 | Retarded | $(p_0+i\epsilon)^2-E_{\vec p}^2$ | $\pm E_{\vec p}-i\epsilon$ (both below) |
 | Advanced | $(p_0-i\epsilon)^2-E_{\vec p}^2$ | $\pm E_{\vec p}+i\epsilon$ (both above) |
 
-The three are distinguished by whether the displacements are **opposite** (Feynman) or **common** (retarded and advanced). For $\epsilon=10^{-3}$ and the same momentum, the retarded poles are at $1.61245155-i\,10^{-3}$ and $-1.61245155-i\,10^{-3}$, and the advanced poles at the same points with $+i\,10^{-3}$: both on the same side, as the table states. Closing the contour then shows at once why the retarded propagator vanishes for $x_0-y_0<0$ and the advanced one for $x_0-y_0>0$: with both poles on one side, one of the two half-planes contains no pole.
+The three are distinguished by whether the displacements are **opposite** (Feynman) or **common** (retarded and advanced). The displacement in the first row is smaller by the factor $2E_{\vec p}$ because that prescription shifts the denominator by $i\epsilon$ while the other two shift $p_0$ by $\pm i\epsilon$; only the pattern of sides matters for the contour. For $\epsilon=10^{-3}$ and the same momentum, the retarded poles are at $1.61245155-i\,10^{-3}$ and $-1.61245155-i\,10^{-3}$, and the advanced poles at the same points with $+i\,10^{-3}$: both on the same side, as the table states. Closing the contour then shows at once why the retarded propagator vanishes for $x_0-y_0<0$ and the advanced one for $x_0-y_0>0$: with both poles on one side, one of the two half-planes contains no pole.
 
 The companion *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form* lists the same three displacements in the frequency $\omega$ and with the denominator written as $\vec p^2+\mu^2-\omega^2$, the negative of the one here; the pole positions agree.
 
-This is the physical content of the $i\epsilon$, and it is exactly the content the algebra does not supply. The Feynman choice encodes the time-ordered vacuum correlation; the retarded choice encodes causal response to a source; the advanced choice is its mirror. They solve the *same* differential equation off the source and differ only in support. A choice among them is a boundary condition on the distributional inverse, and boundary conditions are not algebraic data. The companion article on the biquaternion Maxwell equation meets the same situation in the first-order problem: it selects the retarded Green's function, and it notes explicitly that the retarded kernel is a different object from the elliptic Cauchy kernel of the analysis articles, related by the Wick rotation. The selection there is made on physical grounds, not read off the algebra, and the same is true here.
+This is the physical content of the $i\epsilon$, and it is exactly the content the algebra does not supply. The Feynman choice encodes the time-ordered vacuum correlation; the retarded choice encodes causal response to a source; the advanced choice is its mirror. They solve the *same* differential equation off the source and differ only in support. A choice among them is a boundary condition on the distributional inverse, and boundary conditions are not algebraic data. *Maxwell's Equations in Biquaternionic Form* meets the same situation: it selects the retarded kernel as "the physically relevant" one, and it states that the retarded kernel is a different object from the elliptic Cauchy kernel of the analysis articles, the two being related by the Wick rotation. The selection there is made on physical grounds, not read off the algebra, and the same is true here.
 
 ## The Biquaternion Form of the Prescription
 
-The Feynman denominator has a compact biquaternion form. With the four-momentum biquaternion $\tilde P=iE\,e_t+\vec p$ and its quaternion conjugate $\tilde P^{\natural}=iE\,e_t-\vec p$, the quaternion product is
+The Feynman denominator has a compact biquaternion form. With the four-momentum biquaternion $\tilde P=iE\,e_t+\vec p$, where $E$ denotes the timelike component, the same $p_0$ the contour integral runs over, and its quaternion conjugate $\tilde P^{\natural}=iE\,e_t-\vec p$, the quaternion product is
 
 $$
 \tilde P\tilde P^{\natural}=(iE)^2+\vec p^2=-E^2+\vec p^2=-p^2 .
@@ -236,36 +277,54 @@ The mass shell is then the single algebraic condition
 
 $$
 \tilde P\tilde P^{\natural}=-m^2
-\quad\Longleftrightarrow\quad
-E^2-\vec p^2=-m^2
-\quad\Longleftrightarrow\quad
+\;\Longleftrightarrow\;
+-E^2+\vec p^2=-m^2
+\;\Longleftrightarrow\;
+E^2-\vec p^2=m^2
+\;\Longleftrightarrow\;
 E^2=\vec p^2+m^2 ,
 $$
 
-whose two frequency branches $E=\pm E_{\vec p}$ are the two poles above. Substituting $\tilde P\tilde P^{\natural}=-p^2$ in the amplitude gives the biquaternion form,
+whose two frequency branches $E=\pm E_{\vec p}$ are the two poles $p_\pm$ of section *The Pole Structure and the Contour*. Substituting $\tilde P\tilde P^{\natural}=-p^2$ in the amplitude gives the biquaternion form,
 
 $$
 \boxed{\;S_F(p)\;=\;\frac{i(\slashed p+m)}{p^2-m^2+i\epsilon}
-\;=\;-\,\frac{i(\slashed p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon}\;},
+\;=\;-\,\frac{i(\slashed p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}\;},
 $$
 
-the denominator being the **deformed mass-shell operator** $\mathcal{M}(\tilde{P})=\tilde{P}\tilde{P}^{\natural}+m^2$, shifted by $-i\epsilon$. The prescription is thus a deformation of the scalar on which the mass shell is defined, not an addition to the algebra.
+the denominator being the **deformed mass-shell operator** $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$, shifted by $-i\epsilon$. The prescription is thus a deformation of the scalar on which the mass shell is defined, not an addition to the algebra.
 
-The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_t$, an element with purely imaginary scalar coefficient and zero vector part; it is anti-Hermitian, so by the definition of the material sector it lies in $\mathbb{M}_-$, and it lies in the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. Written out, $-i\epsilon\,e_t$ is a displacement along the same $ie_t$ direction that the framework uses for the temporal coordinate of $\mathbb{M}_-$, the direction of $ict'$. So the algebra does three things here, and it is worth separating them:
+The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_t$: a central element, purely imaginary as a scalar coefficient and with no vector part. Being anti-Hermitian it lies on the material side, and being central it lies in $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. Since $\epsilon$ is real, $-i\epsilon\,e_t=-\epsilon\,(ie_t)$, so it is a **real** multiple of the $ict'$ direction, the direction in which the framework writes the material time. Both statements describe one element: the shift is imaginary relative to the scalar unit $e_t$ and real relative to the time direction $ie_t$, exactly as $Q_t=ict'$ is.
+
+One caveat belongs here, because it is the kind of sign that hides in prose. The Feynman term is **added to the scalar** $\mathcal{M}(\tilde P)$, and as an element it is anti-Hermitian. Displacing the four-momentum biquaternion is a different operation. With $\tilde P\to\tilde P+\delta e_t$,
+
+$$
+\tilde P\tilde P^{\natural}\;\longmapsto\;-p^2+2iE\delta+\delta^2 ,
+$$
+
+so reproducing the term requires $\delta=-\epsilon/(2E)$, which is **real**: the equivalent displacement of the momentum runs along the Hermitian direction, not the material one. The two readings agree on the pole positions to first order in $\epsilon$ and disagree on which sector the deformation lives in. The article's claim is the first: $\tilde P$ is not displaced, the central scalar is, and it is that added term which lies in $\mathbb{M}_-$. Read as a displacement of the momentum, the $i\epsilon$ would sit in the informational sector, because $\tilde P$ carries its energy through $i$.
+
+The algebra therefore does three things here, and it is worth separating them:
 
 1. It provides the complex plane in which the contour is drawn — the coefficient complex structure of $\mathbb{C}_{\mathbb{B}}$.
-2. It locates the deformation direction, the $ict'$ axis of $\mathbb{M}_-$.
-3. It makes the undeformed mass shell a single algebraic condition $\tilde{P}\tilde{P}^{\natural}=-m^2$, so that the two poles are the two branches of one equation rather than two unrelated objects.
+2. It locates the direction of the added term, the $ict'$ axis of $\mathbb{M}_-$.
+3. It makes the undeformed mass shell a single algebraic condition $\tilde P\tilde P^{\natural}=-m^2$, so that the two poles are the two branches of one equation rather than two unrelated objects.
 
-What it does not do is choose the orientation. Replacing $\epsilon$ by $-\epsilon$ reverses the pole displacements, turning the Feynman propagator into the anti-Feynman one; replacing the opposite displacement by a common one gives the retarded or advanced propagator. All three denominators are built from the same $\tilde{P}\tilde{P}^{\natural}+m^2$ and the same central $i$. The algebra cannot tell them apart, because the difference is not in the algebra; it is in which half-plane the contour closes, equivalently in which boundary condition defines the distribution. The $i\epsilon$ is therefore written *with* the algebra's complex structure and *lives in* its material sector, but it is not *produced* by either. The algebra names the axis; the physics chooses the direction.
+What it does not do is choose the orientation. Replacing $\epsilon$ by $-\epsilon$ reverses the pole displacements, turning the Feynman propagator into the anti-Feynman one; replacing the opposite displacement by a common one gives the retarded or advanced propagator. All three denominators are built from the same $\tilde P\tilde P^{\natural}+m^2$ and the same central $i$. The algebra cannot tell them apart, because the difference is not in the algebra; it is in which half-plane the contour closes, equivalently in which boundary condition defines the distribution. The $i\epsilon$ is therefore written *with* the algebra's complex structure and *lives in* its material sector, but it is not *produced* by either. The algebra names the axis; the physics chooses the direction.
 
-The closest the complex structure comes to doing real work is the Wick rotation. In the $ict'$ convention the hyperbolic operator
+The closest the complex structure comes to doing real work is the Wick rotation. On the material sector the d'Alembertian reads
 
 $$
-\Box=-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta
+\Box=-\frac{\partial^2}{\partial t'^2}+\Delta ,
 $$
 
-becomes, after $t'\to-i\tau$, the elliptic operator with all four directions on the same footing. The Euclidean Green's function of the elliptic operator is unique once one demands decay at infinity, and its analytic continuation back to real time is the Feynman propagator. In that route the complexification of time is exactly what makes the continuation available.
+a hyperbolic operator: one sign against three. The substitution $t'=-i\tau$ turns $\partial^2/\partial t'^2$ into $-\partial^2/\partial\tau^2$, so the same operator becomes
+
+$$
+\Box \;\longmapsto\; \frac{\partial^2}{\partial\tau^2}+\Delta ,
+$$
+
+which is elliptic: all four directions now carry the same sign, and that single sign flip is exactly what separates the hyperbolic reading from the elliptic one. The Euclidean Green's function of the elliptic operator is unique once one demands decay at infinity, and its analytic continuation back to real time is the Feynman propagator. In that route the complexification of time is exactly what makes the continuation available.
 
 But the selection is still analytic, not algebraic. The step "continue the unique Euclidean Green's function" is the input: uniqueness rests on a decay condition in the Euclidean variables, and the direction of the rotation is a further choice, equivalent to the sign of $\epsilon$. Nothing in $\mathbb{B}$ prefers decaying-in-Euclidean over growing. So the Wick rotation exhibits the algebra's complex structure as a *necessary* carrier of the continuation, and the analytic input as the thing that fixes which continuation; it does not convert the algebra into a derivation of the Feynman prescription.
 
@@ -283,7 +342,7 @@ S_F=(\mathbb{D}+m)\,G_F,
 (\Box-m^2)\,G_F=i\,\delta^{(4)},
 $$
 
-in the distributional sense, with $\mathbb{D}$ the pair operator of the conventions article, $\mathbb{D}\Psi=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$ and $\mathbb{D}^2=\Box$. The overall factor is a normalization: the conventions article writes the Green matrix $\mathcal{S}=(\mathbb{D}+m)G$ with $(\mathbb{D}-m)\mathcal{S}=\delta I$, whereas the time-ordered product of this article carries $S_F=i\mathcal{S}$; the companion Klein–Gordon article fixes $(\Box-\mu^2)G=-\delta^{(4)}$ at $\mu=m$, so its $G$ is $-i$ times the $G_F$ here. None of the three normalizations affects a pole position or a support. The differential equation holds for the Feynman, retarded, and advanced choices alike, because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0>y_0$ and $x_0<y_0$.
+in the distributional sense, with $\mathbb{D}$ the pair operator of the conventions article, $\mathbb{D}\Psi=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$ and $\mathbb{D}^2=\Box$. The overall factor is a normalization: the conventions article writes the Green matrix $\mathcal{S}=(\mathbb{D}+m)G$ with $(\mathbb{D}-m)\mathcal{S}=\delta I$, whereas the time-ordered product of this article carries $S_F=i\mathcal{S}$; the companion Klein–Gordon article fixes $(\Box-\mu^2)G=-\delta^{(4)}$ at $\mu=m$, so its $G$ is $i$ times the $G_F$ here — the opposite sign to the conventions article's, which that article records as a convention compensated by a minus in the convolution. None of the three normalizations affects a pole position or a support. The differential equation holds for the Feynman, retarded, and advanced choices alike, because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0>y_0$ and $x_0<y_0$.
 
 This is the sharpest way to see why the question "does the algebra supply the $i\epsilon$?" cannot be answered by finding an $i$ in the algebra. The equation of motion supplies a differential operator, and a differential operator has many distributional inverses; the algebra supplies the operator $\tilde{\nabla}$ (or its second-order companion $\tilde{\nabla}\tilde{\nabla}^{\natural}$) and hence the same many inverses. Distinguishing the Feynman one requires a condition that is not an equation of motion. The complex structure enters when that condition is *represented* — as a contour in $\mathbb{C}_{\mathbb{B}}$, or as a point in the complexified time plane — and not when it is *chosen*.
 
@@ -291,22 +350,20 @@ This is the sharpest way to see why the question "does the algebra supply the $i
 
 One further structure is worth recording, because it is the place where the framework's complex time does carry a genuinely analytic condition. The companion article *The KMS Condition and the Biquaternion Framework* characterizes thermal equilibrium by the analyticity of the correlation function $F_{AB}(t')=\omega_\beta(A\,\alpha_{t'}(B))$ in the strip $0<\mathrm{Im}(t')<\beta$, with boundary relation $F_{AB}(t'+i\beta)=F_{BA}(-t')$; the imaginary-time direction is intrinsic to the material sector $\mathbb{M}_-$, and the companion quantization article shows that the anticommutator turns the boundary relation into the Fermi–Dirac distribution and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$.
 
-At finite temperature the time-ordered two-point function is not given by a vacuum contour integral but by the discrete Matsubara sum over the compact imaginary-time circle; the real-time retarded and advanced propagators still carry their own $\epsilon$ prescriptions, and they are obtained from the Matsubara sum by analytic continuation, not by an algebraic operation. The imaginary-time complexification that the algebra carries is a real feature of the thermal state — it is where the KMS analyticity lives — but it does not select the vacuum contour either. It is a consistency: the same imaginary direction that makes the mass shell algebraic is the direction in which the thermal correlation functions are analytic, and the vacuum contour is recovered as the $\beta\to\infty$ limit rather than derived from the algebra.
+At finite temperature the time-ordered two-point function is not given by a vacuum contour integral but by the discrete Matsubara sum over the compact imaginary-time circle; the real-time retarded and advanced propagators still carry their own $\epsilon$ prescriptions, and they are obtained from the Matsubara sum by analytic continuation, not by an algebraic operation. The imaginary-time complexification that the algebra carries is a real feature of the thermal state — it is where the KMS analyticity lives — but it does not select the vacuum contour either. It is a consistency: the imaginary direction the framework already uses for the material time is the direction in which the thermal correlation functions are analytic, and the vacuum contour is recovered as the $\beta\to\infty$ limit rather than derived from the algebra.
 
 ## What the Algebra Adds and What It Does Not
 
 **Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point functions $W_+$ and $W_-$ and their spin sums; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(\mathbb{D}-m)S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
 
-**What the biquaternion notation provides.** The deformed mass-shell scalar $\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon$; the pole set as the two branches of one algebraic condition; and the location of the deformation in the centre $\mathbb{C}_{\mathbb{B}}$, along the $ict'$ axis of the material sector $\mathbb{M}_-$.
+**What the biquaternion notation provides.** The deformed mass-shell scalar $\tilde P\tilde P^{\natural}+m^2-i\epsilon$; the pole set as the two branches of one algebraic condition; and a place for the added term in the centre $\mathbb{C}_{\mathbb{B}}$, along the $ict'$ axis of the material sector $\mathbb{M}_-$ — a place, not a necessity, for the reason recorded above.
 
 **What remains open in the framework.**
 
-- **The intrinsic operator.** Whether a genuinely $\mathbb{B}$-valued two-point function $\langle 0|T\tilde{\Psi}(\tilde{Q})\tilde{\Psi}^\flat(\tilde{Q}_2)|0\rangle$, paired with the trace $2\,\mathrm{Sc}(\cdot)$ or the biquaternion norm, exists and reproduces the spinor-module $S_F$. The companion quantization article leaves the intrinsic field open; this article inherits that gap.
+- **The intrinsic operator.** Whether a genuinely $\mathbb{B}$-valued two-point function $\langle 0|T\tilde{\Psi}(\tilde{Q})\tilde{\Psi}^\flat(\tilde{Q}_2)|0\rangle$, paired with the $2\times2$ trace $2\,\mathrm{Sc}(\cdot)$ or the biquaternion norm, exists and reproduces the spinor-module $S_F$. The companion quantization article leaves the intrinsic field open; this article inherits that gap.
 - **Whether the algebra can *select* the contour.** We have argued that it cannot, on the ground that Feynman, retarded, and advanced differ only by boundary condition. A derivation of the Feynman prescription from an algebraic property of $\mathbb{B}$ alone would contradict that argument; we record the contrary as a possibility but do not claim it, and we have found no candidate.
-- **The meaning of the $\mathbb{M}_-$ location.** That the deformation lies along the $ict'$ direction may be a genuine structural fact — the same direction as the KMS strip — or an artifact of writing $\epsilon$ as a scalar. We have not distinguished the two.
+- **The meaning of the $\mathbb{M}_-$ location.** That the deformation lies along the $ict'$ direction may be a genuine structural fact — the same direction as the KMS strip — or an artifact of writing $\epsilon$ as a scalar. The alternative reading above, in which the same shift appears as a Hermitian displacement of $\tilde P$, is the concrete form of the doubt: the sector depends on whether one deforms the scalar or the momentum. We have not distinguished the two readings.
 - **Empirical content.** As with the rest of the framework, whether any of this yields a prediction distinguishing it from standard quantum field theory is open, and the present article changes nothing about it.
-
-The honest summary of the algebra's role is the one we gave in the introduction. The complex structure of $\mathbb{B}$ is what makes the $i\epsilon$ writable, and it names the axis along which the deformation acts; it does not supply the orientation that defines the Feynman propagator. On this problem the biquaternion framework adds notation and a natural home for the prescription, not a derivation of it.
 
 ## The Gamma Formulation
 
@@ -318,26 +375,32 @@ $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
-The body's momentum cell then reads
-
-$$
-\slashed p=\gamma_0p_0-\sum_k\gamma_kp_k ,
-$$
-
-the spatial signs being those of $g=\mathrm{diag}(+1,-1,-1,-1)$.
-
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
+The body's momentum cell then reads
+
+$$
+\slashed p=\gamma_0p_0-\sum_k\gamma_kp_k ,
+$$
+
+the spatial signs being those of $g=\mathrm{diag}(+1,-1,-1,-1)$. The frame satisfies the Clifford relation
+
+$$
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathbf{1},
+$$
+
+which is the frame-cell anticommutator of the body: $\gamma_\mu$ *is* the cell $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, so this is the same statement, given here in its named form. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.
+
 ## Summary
 
 The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point function
 
 $$
-S_F(x-y)=\langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle .
+S_F(x-y)=\langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar\psi^{\mathrm{fop}}(y)\,|0\rangle .
 $$
 
 Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
@@ -347,15 +410,15 @@ S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{\slashed p+m}{p^
 \qquad \slashed p=iR_{\vec e_x}p_0-\sum_{k=1}^{3}iL_{\vec e_k}R_{\vec e_y}p_k .
 $$
 
-The $p_0$ integral has poles at $p_0=\pm\big(E_{\vec p}-i\epsilon/2E_{\vec p}\big)$: the positive pole below the real axis and the negative pole above it. Closing below for $x_0-y_0>0$ and above for $x_0-y_0<0$ gives the two branches with the same positive weight $2\pi/(2E_{\vec p})$, the sign of the half-plane cancelling the sign inside the residue; the fermionic relative minus is carried by the numerator, through $\slashed p_-+m=-(\slashed p_+(-\vec p)-m)$, which is the two-point form of the anticommutation.
+The $p_0$ integral has poles at $p_0=\pm\big(E_{\vec p}-i\epsilon/2E_{\vec p}\big)$: the positive pole below the real axis and the negative pole above it. Closing below for $x_0-y_0>0$ and above for $x_0-y_0<0$ gives the two branches with the same positive weight $1/(2E_{\vec p})$, the sign of the half-plane cancelling the sign inside the residue and the $2\pi$ cancelling the measure; the fermionic relative minus is carried by the numerator: after $\vec p\to-\vec p$ the negative-frequency numerator obeys $\slashed p_-(-\vec p)+m=-(\slashed p_+(\vec p)-m)$, which is the two-point form of the anticommutation.
 
-Writing the four-momentum biquaternion $\tilde{P}=iE\,e_t+\vec p$, so that $\tilde{P}\tilde{P}^{\natural}=-p^2$, the propagator amplitude becomes
+Writing the four-momentum biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, the propagator amplitude becomes
 
 $$
-S_F(p)=-\frac{i(\slashed p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon},
+S_F(p)=-\frac{i(\slashed p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$
 
-and the prescription is a deformation of the mass-shell scalar. The deformation $-i\epsilon\,e_t$ lies in the centre $\mathbb{C}_{\mathbb{B}}$ and along the $ict'$ axis of the material sector $\mathbb{M}_-$. The Feynman, retarded, and advanced propagators differ only in whether the two pole displacements are opposite or common; the algebra provides the complex plane and the axis of the deformation but not its orientation, which is a boundary condition on the distributional inverse. The algebra therefore adds notation and a natural home for the $i\epsilon$, not the selection of the Feynman contour.
+and the prescription is a deformation of the mass-shell scalar. The added term $-i\epsilon\,e_t$ is central and lies along the $ict'$ axis of the material sector $\mathbb{M}_-$; read instead as a displacement of $\tilde P$, the same shift would be Hermitian, so what is fixed is the place of the term, not a direction of the momentum. The Feynman, retarded, and advanced propagators differ only in whether the two pole displacements are opposite or common; the algebra provides the complex plane and the axis of the added term but not its orientation, which is a boundary condition on the distributional inverse. The algebra therefore adds notation and a natural home for the $i\epsilon$, not the selection of the Feynman contour.
 
 ## Summary of Notation
 
@@ -374,20 +437,21 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient; $Q_t$ is the time coordinate, $ict'$ on $\mathbb{M}_-$ |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\mathbb{D}$ | Pair operator of the conventions article, $\mathbb{D}\Psi=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$, $\mathbb{D}^2=\Box$ |
+| $\mathcal{N}=-\tilde\nabla^{\natural}-mi\,\overline{\,\cdot\,}\,\vec e_z$ | Two-sided Dirac operator of *The Dirac Equation in Biquaternionic Form* |
 | $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R$, $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Biquaternion Dirac field on $\Delta=S\oplus S^{\mathrm c}$ and its anti-Hermitian conjugate |
 | $\psi$, $\bar\psi=\psi^\dagger iR_{\vec e_x}$ | Spinor-module representative and its adjoint |
-| $p_\mu=(E,\vec p)$, $p^2=E^2-\vec p^2$ | Four-momentum and its Lorentz square |
+| $p_\mu=(E,\vec p)$, $p_\pm=(\pm E_{\vec p},\vec p)$, $p^2=E^2-\vec p^2$ | Four-momentum, the two pole momenta, and the Lorentz square |
 | $\psi^{\mathrm{fop}}$, $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Quantized field; particle and antiparticle modes |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency plane-wave spinors |
 | $\bar w^{(r)}w^{(s)}=2m\delta_{rs}$, $\bar v^{(r)}v^{(s)}=-2m\delta_{rs}$ | Spinor normalizations |
 | $\sum_r w^{(r)}\bar w^{(r)}=\slashed p+m$, $\sum_r v^{(r)}\bar v^{(r)}=\slashed p-m$ | Spin sums, on shell |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point functions |
-| $S_F(x-y)=\langle 0|T\,\psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$ | Feynman propagator |
-| $\tilde{P}=iE\,e_t+\vec p$ | Four-momentum biquaternion, $\tilde{P}\tilde{P}^{\natural}=-p^2$ |
-| $\tilde{P}\tilde{P}^{\natural}=-m^2$ | Biquaternion mass-shell condition |
-| $\mathcal{M}(\tilde{P})=\tilde{P}\tilde{P}^{\natural}+m^2$ | Mass-shell operator; Feynman shift $\mathcal{M}(\tilde{P})-i\epsilon$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form |
-| $\beta=\hbar/(k_BT)$, $\omega_\beta$, $\alpha_{t'}$ | Inverse temperature, thermal state, Heisenberg evolution |
+| $S_F(x-y)=\langle 0|T\,\psi^{\mathrm{fop}}(x)\bar\psi^{\mathrm{fop}}(y)|0\rangle$ | Feynman propagator |
+| $\tilde P=iE\,e_t+\vec p$ | Four-momentum biquaternion, $\tilde P\tilde P^{\natural}=-p^2$ |
+| $\tilde P\tilde P^{\natural}=-m^2$ | Biquaternion mass-shell condition |
+| $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2$ | Mass-shell operator; Feynman shift $\mathcal{M}(\tilde P)-i\epsilon\,e_t$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form, in the $2\times2$ image ($\mathrm{Tr}$ is representation-specific) |
+| $\beta=1/(k_BT)$, $\omega_\beta$, $\alpha_{t'}$ | Inverse temperature, thermal state, Heisenberg evolution |
 | $F_{AB}(t'+i\beta)=F_{BA}(-t')$ | KMS condition |
 | $\omega_n=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |
 

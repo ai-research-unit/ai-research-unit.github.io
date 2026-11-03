@@ -148,7 +148,7 @@ $$
 U = \{\,\tilde{Q}\in\mathbb{B} : \tilde{Q}^{*}\tilde{Q} = e_t\,\}.
 $$
 
-In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of *$M_2(\mathbb{C})$ Standard Peirce Representation* the dagger is the conjugate transpose, so $U$ is the $*$-unitary group $\mathrm{U}(2)$ of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
+In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of *$M_2(\mathbb{C})$ Pauli Representation* the dagger is the conjugate transpose, so $U$ is the $*$-unitary group $\mathrm{U}(2)$ of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
 
 **Theorem (the $*$-unitary two-sided operators).** For $\tilde Q_1\in\mathbb{B}$, the operator $\Theta_{\tilde Q_1}$ is $*$-unitary, $\langle\Theta_{\tilde Q_1}\tilde Q_3,\Theta_{\tilde Q_1}\tilde Q_2\rangle_{*}=\langle\tilde Q_3,\tilde Q_2\rangle_{*}$ for all $\tilde Q_2,\tilde Q_3$, if and only if $\tilde Q_1^{*}\tilde Q_1$ is a central scalar of modulus one:
 
@@ -188,7 +188,7 @@ $$
 \Theta_{\tilde{Q}}(e_t) = e_t \iff \tilde{Q}\in U .
 $$
 
-In the matrix model $\mathsf{M}_2(\Theta_{\tilde{Q}}(e_t)) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\mathsf{M}_2(\tilde{Q})$ (*$M_2(\mathbb{C})$ Standard Peirce Representation*).
+In the matrix model $\mathsf{M}_2(\Theta_{\tilde{Q}}(e_t)) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\mathsf{M}_2(\tilde{Q})$ (*$M_2(\mathbb{C})$ Pauli Representation*).
 
 *Proof.* The first display is the definition; $\tilde{Q}\tilde{Q}^{*}$ is Hermitian because $(\tilde{Q}\tilde{Q}^{*})^{\dagger}=\tilde{Q}\tilde{Q}^{*}$; positivity is the positivity of the Gram matrix; and $\tilde{Q}\tilde{Q}^{*}=e_t$ is the defining condition of the slice.
 

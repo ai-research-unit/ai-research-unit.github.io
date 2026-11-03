@@ -8,7 +8,7 @@
 
 **Why the article is needed.** The two-sided operators are built from the two one-sided families, and every count of the companion articles starts from the dimensions $n^{2}+n^{2}-1=2n^{2}-1$ and $n^{4}$. The one-sided case is also the only case in which the invariants of the operator are read off the parameter without any tensor rank computation: the rank of $L_{A}$ is $n$ times the rank of $A$, and the determinant is the $n$-th power.
 
-**Boundaries.** The algebra and its trace and determinant are *The Matrix Algebra $M_n(\mathbb{C})$*. The general construction is *The Regular Representation in Dimension $n$*. The two-sided products are *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*. At $n=2$ the same matrices in the Peirce frame are the two four-dimensional copies of *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*, and the pair description is *$M_2(\mathbb{C})$ Standard Peirce Representation : Operators*.
+**Boundaries.** The algebra and its trace and determinant are *The Matrix Algebra $M_n(\mathbb{C})$*. The general construction is *The Regular Representation in Dimension $n$*. The two-sided products are *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*. At $n=2$ the same matrices in the Peirce frame are the two four-dimensional copies of *$M_4(\mathbb{C})$ Pauli Representation : Operators*, and the pair description is *$M_2(\mathbb{C})$ Pauli Representation : Operators*.
 
 **Conventions.** The algebra is $A=M_{n}(\mathbb{C})$, of complex dimension $N=n^{2}$. An element $X$ is written as a column $\operatorname{vec}X$ by stacking its columns, so that $\operatorname{vec}(AX)=(\mathrm I_{n}\otimes A)\operatorname{vec}X$ and $\operatorname{vec}(XB)=(B^{\mathsf T}\otimes\mathrm I_{n})\operatorname{vec}X$. An operator on the algebra is an $N\times N$ matrix; the identity operator is $\mathrm I_{N}$. The transpose of a matrix is ${}^{\mathsf T}$ and the conjugate transpose is ${}^{*}$.
 
@@ -195,4 +195,4 @@ The regular matrix is never nonderogatory for $n\ge2$, because its minimal polyn
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the algebra, its centre and its trace.
 - [The Regular Representation in Dimension $n$](the-regular-representation-in-n-dimensions.html), for the abstract construction and its ladder.
 - [The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$](the-two-sided-operators-and-the-segre-cone-of-mnc.html), for the products of the two copies.
-- [$M_4(\mathbb{C})$ Standard Peirce Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same matrices at $n=2$ in the Peirce frame.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same matrices at $n=2$ in the Peirce frame.

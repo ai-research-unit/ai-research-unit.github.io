@@ -141,7 +141,7 @@ The algebra $M_n(\mathbb{C})$ is central simple of real dimension $2n^{2}$, with
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the determinant, the singular values and the polar decomposition.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the real algebra $\mathbb{B}$ and its four forms.
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the root that replaces the standard flag by a spectral one.
-- [$M_2(\mathbb{C})$ Standard Peirce Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the explicit isomorphism $\mathbb{B}\to M_2(\mathbb{C})$.
+- [$M_2(\mathbb{C})$ Pauli Representation](m2c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the explicit isomorphism $\mathbb{B}\to M_2(\mathbb{C})$.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), the case $n=3$.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), the case $n=4$.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), the case $n=5$.

@@ -12,7 +12,7 @@ c(L_{A}R_{B})=[A]\,[B]^{\mathsf T},
 $$
 so a product has a coefficient array of rank one and every array of rank one is a product. **The product condition becomes a rank condition, and the length becomes the rank of the array**; nothing else in the article is needed for the two theorems.
 
-**Boundaries.** The products and their cone are *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*; the one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the abstract setting is *The Regular Representation in Dimension $n$*. At $n=2$ the same theorem with the sixteen Peirce-frame operators is *$M_4(\mathbb{C})$ Standard Peirce Representation : Operators*, and the coefficient matrix there is the $4\times4$ array of that article. The general statement for an algebra of dimension $N$ is the tensor form of *The Regular Representation in Dimension $n$*.
+**Boundaries.** The products and their cone are *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*; the one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the abstract setting is *The Regular Representation in Dimension $n$*. At $n=2$ the same theorem with the sixteen Peirce-frame operators is *$M_4(\mathbb{C})$ Pauli Representation : Operators*, and the coefficient matrix there is the $4\times4$ array of that article. The general statement for an algebra of dimension $N$ is the tensor form of *The Regular Representation in Dimension $n$*.
 
 **Conventions.** The algebra is $A=M_{n}(\mathbb{C})$ of complex dimension $N=n^{2}$; the endomorphism algebra has complex dimension $N^{2}=n^{4}$. The matrix units are $E_{\mu}=E_{ij}$ with $\mu$ running over the $N$ pairs, and they are orthonormal for the Hilbert–Schmidt form, $\operatorname{tr}(E_{\mu}^{*}E_{\nu})=\delta_{\mu\nu}$. The basis products are $L_{E_{\mu}}R_{E_{\nu}}$. The coefficient array of $M\in\operatorname{End}(A)$ is $c(M)$, an $N\times N$ array. The length is $\ell(M)$.
 
@@ -74,7 +74,7 @@ $$
 
 **The values.** The length takes the values $0,1,\dots,n^{2}$. The value $0$ is the zero operator; the value $1$ is the cone of products; the value $n^{2}$ is the complement of the determinantal variety of the arrays of rank at most $n^{2}-1$, which is open and dense. **Every endomorphism of $M_{n}(\mathbb{C})$ is a sum of at most $n^{2}$ two-sided products, and a generic one needs exactly $n^{2}$.**
 
-**The case $n=2$.** The statement is the four of the Peirce article: every $4\times4$ matrix is a sum of at most four products, and a generic matrix needs four.
+**The case $n=2$.** The statement is the four of the Pauli Representation article: every $4\times4$ matrix is a sum of at most four products, and a generic matrix needs four.
 
 ### The Strata
 
@@ -146,7 +146,7 @@ that is $N^{2}(N-1)^{2}/4$ polynomial conditions, which define a variety of codi
 
 **A product of rank one and of length one.** Take $A$ and $B$ of rank one; then $\operatorname{rank}L_{A}R_{B}=1$ and $\ell=1$.
 
-**A matrix of rank one and of length four.** Take $M=uv^{\mathsf T}$ with $u,v$ generic columns of length $4$; the array $c(M)$ has rank $4$ for generic $u,v$, so $\ell(M)=4$ while $\operatorname{rank}M=1$. The set is not small: the rank-one matrices of length four form a dense open subset of the rank-one variety, and the computation is the one of the worked case $M_{1}$ of the Peirce article. **At $n=3$ the same construction gives a matrix of rank one and length $n^{2}=9$**, and the phenomenon is not an accident of the small case.
+**A matrix of rank one and of length four.** Take $M=uv^{\mathsf T}$ with $u,v$ generic columns of length $4$; the array $c(M)$ has rank $4$ for generic $u,v$, so $\ell(M)=4$ while $\operatorname{rank}M=1$. The set is not small: the rank-one matrices of length four form a dense open subset of the rank-one variety, and the computation is the one of the worked case $M_{1}$ of the Pauli Representation article. **At $n=3$ the same construction gives a matrix of rank one and length $n^{2}=9$**, and the phenomenon is not an accident of the small case.
 
 **A product of full rank and of length one.** Take $A$ and $B$ invertible; then $\operatorname{rank}L_{A}R_{B}=n^{2}$ and $\ell=1$. So a matrix of the largest rank can have the smallest length.
 
@@ -232,5 +232,5 @@ The length and the ordinary rank are independent: a product of full rank has len
 - [The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$](the-two-sided-operators-and-the-segre-cone-of-mnc.html), for the case $r=1$ and the cone of products.
 - [The Regular Representation in Dimension $n$](the-regular-representation-in-n-dimensions.html), for the tensor form and the central simple criterion.
 - [The One-Sided Operators of $M_n(\mathbb{C})$](the-one-sided-operators-of-mnc.html), for the one-sided operators of length one.
-- [$M_4(\mathbb{C})$ Standard Peirce Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same theorem with the sixteen Peirce-frame operators.
+- [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-standard-peirce-representation-operators.html), for the same theorem with the sixteen Peirce-frame operators.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the abstract family at $n=2$.

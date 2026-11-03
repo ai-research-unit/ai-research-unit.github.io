@@ -4,29 +4,31 @@
 
 The companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* constructs the Fock space of the finite biquaternion algebra, exhibits the one fermionic mode inside $\mathbb{B}$, and shows that its ladder operators are the spin ladder operators. The companion article *The Spin–Statistics Theorem in Biquaternionic Form* fixes which bracket goes with which spin and shows that the spin-$\tfrac12$ field is quantized with anticommutators. Neither article constructs the Fock space of the *field*, and neither asks what the biquaternion structure says about the shape of that space. That is this article's subject.
 
-The result is that the fermionic Fock space of the spin-$\tfrac12$ field is the **exterior algebra** over the one-particle spinor module,
+The result is that the fermionic Fock space of the spin-$\tfrac12$ field, on the particle branch at one momentum, is the **exterior algebra** over the one-particle spinor module,
 
 $$
 \boxed{\;\mathcal{F}=\Lambda S=\bigoplus_{n=0}^{\dim S}\Lambda^n S,
 \qquad
-\Lambda(V\oplus W)=\Lambda V\otimes\Lambda W\;},
+\Lambda(V\oplus W)=\Lambda V\mathbin{\hat\otimes}\Lambda W\;},
 $$
 
-and that this is not an extra assumption but the reflection in the state space of two facts already fixed by the parents: the one-particle space is a module of complex dimension two, and the bracket is the anticommutator. The two together force the antisymmetric tensor algebra, occupation numbers $0$ and $1$, and the Lorentz decomposition $0\oplus\tfrac12\oplus 0$ over the two spin states of one momentum.
+and that this is not an extra assumption but the reflection in the state space of two facts already fixed by the parents: the one-particle space is a module of complex dimension two, and the bracket is the anticommutator. The two together force the exterior algebra, occupation numbers $0$ and $1$, and the Lorentz decomposition $0\oplus\tfrac12\oplus 0$ over the two spin states of one momentum.
+
+**Notation, once.** The imaginary unit is central and has $i^2=-1$; it is the only imaginary unit in the article, and wherever two of them meet in a product they are reduced before the formula is read. The body writes operators on $S$ as left multiplications $L_{\tilde Q}\psi=\tilde Q\psi$; the two-sided cells $L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, enter only where a right action is needed. The gamma symbols are frame names of the same cells and appear only in the closing section *The Gamma Formulation*.
 
 The article develops five things.
 
 - **The one-particle space and its two forms.** The module $S=\mathbb{C}^2$ is the minimal left ideal $\mathbb{B}\tilde\Pi_+$; on it sit the positive-definite Hermitian form, which is the Hilbert-space form of the Fock construction, and the isotropic biquaternion norm $\langle\cdot\rangle_{\natural}$, which is the algebra's own. The two must not be interchanged.
-- **The exterior algebra.** Occupation-number states, the wedge product, the Koszul sign, and the reason the Kleinian sign appears in the state space rather than in the operators.
+- **The exterior algebra.** Occupation-number states, the wedge product, the Koszul sign, and the reason that sign appears in the state space rather than in the operators.
 - **The Lorentz content.** $\Lambda S$ is the reducible representation $\Gamma(\rho)$; its decomposition into irreducibles is computed and contains exactly one $\tfrac12$, one vacuum, and one singlet. The $2\pi$ rotation acts as $(-1)^\text{degree}$, tying the state-space grading to the parity of the number operator.
-- **The functor $\Gamma$ and the grading.** $\Gamma(-I)=(-1)^F$ is derived and recomputed. The Fock space is $\mathbb{Z}/2$-graded, and the grading is the one the observable algebra commutes with.
-- **The sector content.** States are $\mathbb{M}_+$ elements through their density matrices; the Born rule is the normalised Hermitian form, read through the trace; and the field's Fock space is the tensor product over modes, whose grading is the field's fermionic parity.
+- **The functor $\Gamma$ and the grading.** $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ is derived and recomputed. The Fock space is $\mathbb{Z}/2$-graded, and the grading is the one the observable algebra commutes with.
+- **The sector content.** One-mode states are $\mathbb{M}_+$ elements through their density matrices, while the four-dimensional $\Lambda S$ has $4\times4$ ones; the Born rule is the normalised Hermitian form, read through the trace; and the field's Fock space is the tensor product over modes, whose grading is the field's fermionic parity.
 
 The division between transcribed standard material and the algebra's own statements is marked throughout.
 
 ## The One-Particle Space
 
-The one-particle space of the biquaternion Dirac field is the spinor module $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts irreducibly and which the dictionary companion identifies with the Peirce carriers $\mathbb{B}\tilde\Pi_\pm$, the minimal left ideals here:
+The one-particle space of the biquaternion Dirac field, on the particle branch at one momentum, is the spinor module $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts irreducibly and which the dictionary companion identifies with the Peirce carriers $\mathbb{B}\tilde\Pi_\pm$, the minimal left ideals here:
 
 $$
 S\;\cong\;\mathbb{B}\tilde\Pi_+ ,
@@ -40,7 +42,9 @@ S\;\cong\;\mathbb{B}\tilde\Pi_+ ,
 \tilde\Pi_\pm^{*}=\tilde\Pi_\pm .
 $$
 
-The idempotent $\tilde\Pi_+$ is Hermitian and primitive, its left ideal has complex dimension two, and the dimension count was recomputed by exact multiplication of the biquaternion basis: $\tilde\Pi_+^2-\tilde\Pi_+=0$ and $\dim_\mathbb{C}(\mathbb{B}\tilde\Pi_+)=2$. The subscript belongs to the complete pair, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, as *Special Element Conventions*, §*The Idempotent Convention* requires.
+The idempotent $\tilde\Pi_+$ is Hermitian and primitive, its left ideal has complex dimension two, and the dimension count was recomputed by exact multiplication of the biquaternion basis: $\tilde\Pi_+^2-\tilde\Pi_+=0$ and $\dim_\mathbb{C}(\mathbb{B}\tilde\Pi_+)=2$. Explicitly, $\tilde\Pi_+^2=\tfrac14\bigl(e_t+2i\vec e_z+(i\vec e_z)^2\bigr)=\tfrac14(e_t+2i\vec e_z+e_t)=\tilde\Pi_+$, since $(i\vec e_z)^2=i^2\vec e_z^2=(-1)(-1)=e_t$. The subscript belongs to the complete pair, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, as *Special Element Conventions*, §*The Idempotent Convention* requires.
+
+Only the particle branch is used below. The antiparticle branch is a second copy $S^{\mathrm c}$, and the full Dirac one-particle space is $S\oplus S^{\mathrm c}$ per momentum. The exterior algebra over the doubled space is the full Dirac Fock space, sixteen-dimensional per momentum; the construction here is the four-dimensional one-branch factor, and the doubling is recorded where it changes a count.
 
 Two forms live on $S$, and the distinction is one of the framework's standing conventions.
 
@@ -50,11 +54,11 @@ $$
 \langle\xi,\eta\rangle_{*}=\xi^{*}\eta ,
 $$
 
-complex-valued, $\mathbb{C}$-antilinear in the first argument and positive definite. This is the Hilbert-space form of the Fock construction, and it is the one that makes the fermionic Fock space a Hilbert space. It is *not* the algebra's biquaternion norm.
+taking values in the Peirce line $\mathbb{C}\tilde\Pi_+$, identified with $\mathbb{C}$; it is $\mathbb{C}$-antilinear in the first argument and positive definite. This is the Hilbert-space form of the Fock construction, and it is the one that makes the fermionic Fock space a Hilbert space. It is *not* the algebra's biquaternion norm.
 
 **The biquaternion norm.** On $\mathbb{B}$, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, a general bilinear, scalar-valued form; it is isotropic on the zero divisors, and on the real sectors it has signature $(3,1)$ on the material sector $\mathbb{M}_-$ and the mirror signature $(1,3)$ on the informational sector $\mathbb{M}_+$, as the conventions article fixes. Its restriction to the ideal $\mathbb{B}\tilde\Pi_+$ vanishes identically: the left ideal is totally isotropic for $\langle\cdot\rangle_{\natural}$, which was checked to machine precision on random elements of the ideal. The biquaternion norm therefore does *not* descend to a form on the one-particle space. What $S$ carries instead is the antisymmetric form $\varepsilon$ and the mixed pairing with the dual, and those are the invariant bilinears; the biquaternion norm's role is on $\mathbb{B}$ itself.
 
-A one-particle state is therefore an element of the ideal, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element of $\mathbb{B}\tilde\Pi_+$. The two are related by the Hermitian form for probabilities and by the antisymmetric and mixed pairings for the Lorentz-invariant bilinears. The classical plane-wave spinor $w^{(r)}(\vec p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the creation operators of the field act on the one-particle space $S_{\vec p}\cong S$ for each momentum.
+A one-particle state is therefore an element of the ideal, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element of $\mathbb{B}\tilde\Pi_+$. The two are related by the Hermitian form for probabilities and by the antisymmetric and mixed pairings for the Lorentz-invariant bilinears. The classical plane-wave spinor $w^{(r)}(\vec p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the one-particle space at momentum $\vec p$ is $S_{\vec p}\cong S$, spanned by the two spinors $w^{(r)}(\vec p)$.
 
 ### The Lorentz Action and the Covering Sign
 
@@ -62,17 +66,17 @@ The Lorentz action on $S$ is the spin-$\tfrac12$ representation. Two of its feat
 
 First, the action factors through the double cover: the rotor through $2\pi$ is $-e_t$, and $-e_t$ acts on $S$ as $-\mathrm{id}$. This is the module-level statement of the covering and is computed in the spin–statistics companion.
 
-Second, the action is by algebra multiplication. It preserves the biquaternion norm of the algebra, and it preserves the antisymmetric form $\varepsilon=i\sigma_2$; the Hermitian form $h$ is invariant only on the compact subgroup $SU(2)$, as the spinor-module article states, so a boost does not preserve it and the invariant bilinears of the module are $\varepsilon$ and the mixed pairing. With $\Phi$ the matrix realization of the algebra, the antisymmetric invariant satisfies
+Second, the action is by left multiplication, $L_{\tilde U}\psi=\tilde U\psi$. A unit rotor preserves the biquaternion norm of the algebra, and it preserves the antisymmetric form $\varepsilon=i\sigma_2$; the Hermitian form $\langle\cdot,\cdot\rangle_*$ is invariant only on the compact subgroup $SU(2)$, as the spinor-module article states, so a boost does not preserve it and the invariant bilinears of the module are $\varepsilon$ and the mixed pairing. With $\mathsf M_2$ the matrix realization of the algebra and $\sigma_i$ the Pauli matrices, the antisymmetric invariant satisfies
 
 $$
-\Phi(-\vec e_y)=i\sigma_2 ,
+\mathsf M_2(-\vec e_y)=i\sigma_2 ,
 \qquad
 U^{\mathsf T}\varepsilon\,U=\det(U)\,\varepsilon ,
 \qquad
-\varepsilon^2=-I_2 ,
+\varepsilon^2=(i\sigma_2)^2=i^2\sigma_2^2=-I_2 ,
 $$
 
-so that $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant, that is for every Lorentz transformation and not only for the rotations. The identity was recomputed on random elements of $SL(2,\mathbb C)$ and of $SU(2)$: the residual $\det(U)\varepsilon-U^{\mathsf T}\varepsilon U$ vanishes exactly, and the random $SU(2)$ sample agrees to $7\times10^{-16}$. The combination $U^{\mathsf T}\varepsilon U=\varepsilon$ — transpose, not Hermitian conjugate — is what makes the *antisymmetric* power of $S$ a singlet, and it is the reason the two-particle state below is Lorentz invariant.
+where the last step spends $i^2=-1$ and $\sigma_2^2=I_2$. Hence $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant, that is for every Lorentz transformation and not only for the rotations. The identity was recomputed on random elements of $SL(2,\mathbb C)$ and of $SU(2)$: the residual $\det(U)\varepsilon-U^{\mathsf T}\varepsilon U$ vanishes exactly, and the random $SU(2)$ sample agrees to $7\times10^{-16}$. The combination $U^{\mathsf T}\varepsilon U=\varepsilon$ — transpose, not Hermitian conjugate — is what makes the *antisymmetric* power of $S$ a singlet, and it is the reason the two-particle state below is Lorentz invariant.
 
 ## The Exterior Algebra
 
@@ -87,7 +91,7 @@ $$
 Its canonical basis is the occupation-number basis
 
 $$
-|0\rangle_{*} ,
+|0\rangle ,
 \qquad
 |\!\uparrow\rangle ,
 \qquad
@@ -117,11 +121,11 @@ and no state can be occupied twice. Pauli exclusion is not a dynamical accident 
 **The graded product and the number grading.** The degree operator $N^{\mathrm{fop}}$ assigns to a basis vector of $\Lambda^nS$ the eigenvalue $n$ and acts as degree multiplication. The wedge is compatible with it in the graded sense: $(\Lambda^m)\wedge(\Lambda^n)\subseteq\Lambda^{m+n}$. This is the $\mathbb{Z}$-grading, and by reduction modulo two the $\mathbb{Z}/2$-grading:
 
 $$
-\mathcal{F}=\mathcal{F}_{\text{even}}\oplus\mathcal{F}^{\mathrm{odd}} ,
+\mathcal{F}=\mathcal{F}_{\mathrm{even}}\oplus\mathcal{F}_{\mathrm{odd}} ,
 \qquad
-\mathcal{F}_{\text{even}}=\mathbb{C}\oplus\Lambda^2S ,
+\mathcal{F}_{\mathrm{even}}=\mathbb{C}\oplus\Lambda^2S ,
 \qquad
-\mathcal{F}^{\mathrm{odd}}=S .
+\mathcal{F}_{\mathrm{odd}}=S .
 $$
 
 The even part is the state space of an even number of quanta; the odd part is the one-particle space. The field operators below are odd; the observables are even.
@@ -142,9 +146,9 @@ $$
 \Gamma(\rho)=\bigoplus_{n=0}^{2}\Lambda^n\rho ,
 $$
 
-where $\Lambda^n\rho$ denotes the induced action on $\Lambda^nS$, and the reason this is the natural action is that the exterior algebra is a functor: it converts each one-particle representation into the sequence of its antisymmetric powers, preserving direct sums, tensor products and duals.
+where $\Lambda^n\rho$ denotes the induced action on $\Lambda^nS$, and the reason this is the natural action is that the exterior algebra is a functor: it converts each one-particle representation into the sequence of its antisymmetric powers, preserving direct sums and duals. (It does not turn a tensor product into a tensor product; only the direct sum has the tensor-product rule.)
 
-The decomposition is computed by symmetry. On $S$ the total-spin operators are $\tilde S_i$, and $\Gamma(\tilde S_i)$ acts on $\Lambda S$ as the antisymmetric jet of $\tilde S_i$: as $0$ on the vacuum, as $\tilde S_i$ on $\Lambda^1S=S$, and as the induced (scalar) action on $\Lambda^2S$. Since $\Lambda^2S\cong\mathbb{C}$ with the invariant $\varepsilon$, the top power is a Lorentz **singlet**, and the vacuum is the other. On the middle power the quadratic Casimir $\tilde S^2$ is the one-particle Casimir, $s(s+1)=\tfrac34$. The eigenvalues of $\tilde S^2$ on $\mathcal{F}$, in the occupation basis, are
+The decomposition is computed by symmetry. On $S$ the total-spin operators are $\tilde S_i$, and the induced operator $\Gamma(\tilde S_i)$ acts on $\Lambda S$ as the antisymmetrized derivation of $\tilde S_i$: as $0$ on the vacuum, as $L_{\tilde S_i}$ on $\Lambda^1S=S$, and as the induced scalar action on $\Lambda^2S$. Since $\Lambda^2S\cong\mathbb{C}$ with the invariant $\varepsilon$, the top power is a Lorentz **singlet**, and the vacuum is the other. On the middle power the quadratic Casimir $\tilde S^2$ is the one-particle Casimir, $s(s+1)=\tfrac34$ in units $\hbar=1$. The eigenvalues of the induced operator $\Gamma(\tilde S^2)$ on $\mathcal{F}$, in the occupation basis, are
 
 $$
 \{0,\tfrac34,\tfrac34,0\},
@@ -158,34 +162,34 @@ $$
 0\oplus\tfrac12\oplus 0\;}.
 $$
 
-The eigenvalues were recomputed by building the spin operators
+The eigenvalues were recomputed by building the operator representatives $\hat S_i=\Gamma(\tilde S_i)$ of the spin generators,
 
 $$
-S_i=\tfrac12\sum_{s,s_2}a_s^{\mathrm{fop}\dagger}(\sigma_i)_{s,s_2}a_{s_2}^{\mathrm{fop}}
+\hat S_i=\tfrac12\sum_{s,s'}a_s^{\mathrm{fop}\dagger}(\sigma_i)_{ss'}a_{s'}^{\mathrm{fop}}
 $$
 
-on the four-dimensional space $\Lambda S$ and diagonalising $\tilde S^2=\sum_iS_i^2$: the spectrum is $\{0,0,\tfrac34,\tfrac34\}$, with $N^{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and $s_z$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
+on the four-dimensional space $\Lambda S$, in units $\hbar=1$, and diagonalising $\hat S^2=\sum_i\hat S_i^2$: the spectrum is $\{0,\tfrac34,\tfrac34,0\}$, with $N^{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and $\hat S_3$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
 
-The same decomposition follows without diagonalising, and the derivation shows why the top power must be a singlet. On $\Lambda^1S=S$ the induced action is the one-particle action, whose Casimir is $s(s+1)=\tfrac34$. On $\Lambda^2S$, which is one-dimensional, the induced action of $\tilde S_i$ is the antisymmetrised pair
+The same decomposition follows without diagonalising, and the derivation shows why the top power must be a singlet. On $\Lambda^1S=S$ the induced action is the one-particle action, whose Casimir is $s(s+1)=\tfrac34$. On $\Lambda^2S$, which is one-dimensional, the induced action of $\tilde S_i$ is multiplication by the trace,
 
 $$
-\Lambda^2\rho(\tilde S_i)=\tilde S_i\otimes I+I\otimes \tilde S_i\big|_{\Lambda^2 S}=\mathrm{tr}_S(\tilde S_i)=0 ,
+\Lambda^2\rho(\tilde S_i)=\mathrm{tr}_S\bigl(\mathsf M_2(\tilde S_i)\bigr)=0 ,
 $$
 
-because the representing matrices of $\mathrm{SU}(2)$ on $S$ are traceless. Hence $\Lambda^2S$ is annihilated by every $\tilde S_i$ and is a singlet; the vacuum is the other. The Casimir spectrum is therefore $\{0,\tfrac34,\tfrac34,0\}$ with no further computation, and the antisymmetric form $\varepsilon$ is the singlet's invariant bilinear, which is the reason $U^{\mathsf T}\varepsilon U=\varepsilon$ appears in the same role.
+because the matrix of $\tilde S_i$ is traceless. Hence $\Lambda^2S$ is annihilated by every $\tilde S_i$ and is a singlet; the vacuum is the other. The Casimir spectrum is therefore $\{0,\tfrac34,\tfrac34,0\}$ with no further computation, and the antisymmetric form $\varepsilon$ is the singlet's invariant bilinear, which is the reason $U^{\mathsf T}\varepsilon U=\varepsilon$ appears in the same role.
 
 Three consequences are worth stating.
 
 **The $2\pi$ sign and the grading agree.** The covering element $-e_t$ acts on $\Lambda^nS$ as $(-1)^n$ times the identity, so the nontrivial element of the double cover is precisely the degree parity on the Fock space. Because the one-particle space is odd, the action of $-e_t$ on it is $-\mathrm{id}$; on the vacuum and on the pair it is $+\mathrm{id}$. A $2\pi$ rotation therefore acts as the fermionic parity $(-1)^{N^{\mathrm{fop}}}$ on the state space: the spinors carry the sign $-1$, while the even subspace and every bilinear are returned to themselves, so the sign is invisible in observables and only the $4\pi$ rotation returns a spinor to itself. This is the state-space content of the spin–statistics pairing of the companion article.
 
-**The field's Fock space is a tensor product.** For the field, the one-particle space is $\bigoplus_{\vec p}S_{\vec p}$, and the functor gives
+**The field's Fock space is a tensor product.** For the field, the one-particle space on the particle branch is $\bigoplus_{\vec p}S_{\vec p}$, and the functor gives
 
 $$
 \mathcal{F}_{\text{field}}=\Lambda\!\left(\bigoplus_{\vec p}S_{\vec p}\right)
 =\bigotimes_{\vec p}\Lambda S_{\vec p},
 $$
 
-with each tensor factor four-dimensional and the vacuum the empty wedge. Occupation numbers are $0$ and $1$ mode by mode; the grading is the parity of the total occupation; and the Lorentz content is the tensor tower generated by the two singlet powers and the doublet power at each momentum.
+with each tensor factor four-dimensional and the vacuum the empty wedge. Occupation numbers are $0$ and $1$ mode by mode; the grading is the parity of the total occupation; and the Lorentz content is the tensor tower generated by the two singlet powers and the doublet power at each momentum. The antiparticle branch adds a second factor $\Lambda S^{\mathrm c}_{\vec p}$ at each momentum, so the full Dirac factor is $4\times4=16$-dimensional; the counting and the grading above are those of one branch, and the full parity is the product of the two branch parities.
 
 **The Clifford algebra acts on the Fock space.** With the module written as $S\oplus S^*$ and the mode operators assembled into odd generators satisfying the canonical anticommutation relations, the operators generated by them close on the full matrix algebra of the Fock space. This is the algebraic identity
 
@@ -193,31 +197,37 @@ $$
 \mathrm{Cl}(2N)\;\cong\;M_{2^N}(\mathbb{C})\;\cong\;\mathcal{A}_N ,
 $$
 
-where $\mathcal{A}_N$ is the algebra generated by $N$ fermionic modes, and it was checked by explicit rank computation: the algebra generated by $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ has dimension $4=2^{2}$, and that generated by $a_1^{\mathrm{fop}},a_2^{\mathrm{fop}},a_1^{\mathrm{fop}\dagger},a_2^{\mathrm{fop}\dagger}$ has dimension $16=2^{4}$. The spin–statistics companion's Clifford realization of the Dirac algebra is the spinor-module side of this identity: the Clifford generators are nothing but odd operators on the fermionic Fock space, and the even Clifford algebra is $\mathbb{B}$ itself. The identity is recorded here as the algebraic fact that the state space carries; its physical exploitation belongs to the articles that map fermions onto other descriptions.
+where $\mathcal{A}_N$ is the algebra generated by $N$ fermionic modes, and it was checked by explicit rank computation: the algebra generated by $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ has dimension $4=2^{2\cdot1}$, and that generated by $a_1^{\mathrm{fop}},a_2^{\mathrm{fop}},a_1^{\mathrm{fop}\dagger},a_2^{\mathrm{fop}\dagger}$ has dimension $16=2^{2\cdot2}$. The spin–statistics companion's Clifford realization of the Dirac algebra is the spinor-module side of this identity: its generators are odd operators on the fermionic Fock space, and its even subalgebra is the even Clifford algebra of the frame, $\mathrm{Cl}^{+}_{1,3}\cong\mathbb{B}$. The mode algebra $\mathcal{A}_N$ is a different Clifford algebra, that of the $2N$ mode operators; for $N=1$ it is $\mathbb{B}$, and for $N=2$ it is $M_4(\mathbb{C})$. The identity is recorded here as the algebraic fact that the state space carries; its physical exploitation belongs to the articles that map fermions onto other descriptions.
 
 ## The Functor $\Gamma$, the Grading and the Parity
 
 The exterior-power construction is a functor from the one-particle category to the state-space category. Three of its properties are used in the framework.
 
-**Preservation of the structure.** $\Gamma$ sends direct sums to tensor products, tensor products to tensor products, duals to duals, and the identity to the identity; in symbols, $\Gamma(V\oplus W)=\Gamma(V)\otimes\Gamma(W)$ and $\Gamma(V^*)=\Gamma(V)^*$. This is what makes the many-mode Fock space a tensor product of one-mode spaces, as used above.
+**Preservation of the structure.** $\Gamma$ carries direct sums to graded tensor products and duals to duals; in symbols, $\Gamma(V\oplus W)=\Gamma(V)\mathbin{\hat\otimes}\Gamma(W)$ and $\Gamma(V^*)=\Gamma(V)^*$. It is a functor, so it preserves identities and composition. It does **not** carry a tensor product to a tensor product: $\Lambda(V\otimes W)$ is not $\Lambda V\otimes\Lambda W$ in general, and only the direct sum has the tensor-product rule. This is what makes the many-mode Fock space a tensor product of one-mode spaces, as used above.
 
 **The parity of the negation.** The one-particle space carries the representation of the double cover; the scalar $-1$ acts on $S$ as $-\mathrm{id}$. On $\Lambda^nS$ it acts as $(-1)^n$, hence on the whole Fock space as the operator
 
 $$
-\boxed{\;\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}(I-2N_{\mathrm{mode}})=\prod_{\text{modes}}i \vec e_z^{(\text{mode})}\;},
+\boxed{\;\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}\bigl(I-2N_{\mathrm{mode}}\bigr)\;}
 $$
 
-where the last equality uses the one-mode identity $(-1)^F=i\vec e_z$ of the parents. The operator identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed on the four-dimensional space $\Lambda S$: $\Gamma(-I)$ built as $\mathrm{diag}(1,-1,-1,1)$ from its action on degree $0,1,2$ equals the product of the single-mode parities exactly, with eigenvalue list $\{+1,+1,-1,-1\}$ in both constructions.
+and, for one mode, the same operator on the module is the left multiplication by the algebra element $(-1)^F=i\vec e_z$, so over the modes
+
+$$
+\Gamma(-I)=\bigotimes_{\text{modes}}L_{i\vec e_z}^{(\text{mode})}.
+$$
+
+The last writing uses the one-mode identity $(-1)^{N_{\mathrm{mode}}}=i\vec e_z$ of the parents, read as the left multiplication $L_{i\vec e_z}$. The operator identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed on the four-dimensional space $\Lambda S$: $\Gamma(-I)$ built as $\mathrm{diag}(1,-1,-1,1)$ from its action on degree $0,1,2$ equals the product of the single-mode parities exactly, with eigenvalue list $\{+1,+1,-1,-1\}$ in both constructions.
 
 **The parity and the field.** The field operator, being a sum of one-mode operators, is odd under $\Gamma(-I)$; a bilinear is even. The observable algebra of the field is therefore the even part of the Fock space's operator algebra, and the state space splits into an even and an odd sector that never mix under observables. This is the state-space statement of the field's $\mathbb{Z}/2$ grading.
 
-**The sign convention.** With $N_{\mathrm{mode}}=a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}$ one has $(-1)^{N_{\mathrm{mode}}}=i \vec e_z$ for one mode; with the $\mathbb{M}_+$ generator $\tilde S_3=\tfrac{\hbar}{2}i\vec e_z$ this reads $(-1)^F=2\tilde S_3/\hbar$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode; for the field, the product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
+**The sign convention.** With $N_{\mathrm{mode}}=a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}$ one has, on the one-mode module, $(-1)^{N_{\mathrm{mode}}}=L_{i\vec e_z}$; with the $\mathbb{M}_+$ generator $\tilde S_3=\tfrac{\hbar}{2}i\vec e_z$ this reads $(-1)^F=L_{2\tilde S_3/\hbar}$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode; for the field, the tensor product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
 
 ## The Inner Product, States and the Trace Pairing
 
 The Fock space is a Hilbert space under the Hermitian form induced from $S$: the one-particle form $\langle\xi,\eta\rangle=\xi^{*}\eta$ extends to $\Lambda S$ by the rule that distinct occupation numbers are orthogonal and the norm of a basis vector is one. The extensions of $a^{\mathrm{fop}}$ and $a^{\mathrm{fop}\dagger}$ to $\Lambda S$ are adjoint with respect to this form, which is the sense in which the Fock construction is $*$-unitary.
 
-The biquaternion content enters through the description of states. A pure state of the finite Fock space is a ray; its density matrix $\tilde\Pi$ is a Hermitian idempotent of trace one,
+The biquaternion content enters through the description of states, and it enters mode by mode. A pure state of the **one-mode** Fock space is a ray; its density matrix is a Hermitian idempotent of trace one in $\mathbb{B}$,
 
 $$
 \tilde\Pi^2=\tilde\Pi,
@@ -227,27 +237,27 @@ $$
 \mathrm{Tr}\,\tilde\Pi=1 ,
 $$
 
-and hence an element of $\mathbb{M}_+$ once the four-real-dimensional space of one-mode density matrices is identified with the algebra's Hermitian sector through the dictionary. The Born rule is the normalised Hermitian form of the framework, read as the trace pairing,
+and hence an element of $\mathbb{M}_+$ through the dictionary. The four-dimensional $\Lambda S$ of the two spin states is not an element of $\mathbb{B}$: its density matrices are $4\times4$, and only their one-mode restrictions are algebra elements. For one mode, the Born rule is the normalised Hermitian form of the framework, read as the trace pairing,
 
 $$
 \langle H^{\mathrm{fop}}\rangle=\frac{\langle\tilde\Pi,H^{\mathrm{fop}}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde\Pi (H^{\mathrm{fop}})^{*})}{\mathrm{Sc}(\tilde\Pi)}=\frac{\operatorname{Tr}(\tilde\Pi (H^{\mathrm{fop}})^{*})}{\operatorname{Tr}(\tilde\Pi)} ,
 $$
 
-and the identity between the two expressions was checked on a Hermitian $\rho$: $2\,\mathrm{Sc}(\rho)=\mathrm{Tr}(\rho)$ to machine precision. Two remarks fix the interpretation.
+and the identity $2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}(\tilde Q)$, applied to numerator and denominator, was checked on a Hermitian $\tilde\Pi$ to machine precision. Two remarks fix the interpretation.
 
-First, the state and the observable are both in $\mathbb{M}_+$; the material sector $\mathbb{M}_-$ carries the generators and the *field*, not the states. This is the sector assignment the framework runs on, and the Fock construction respects it.
+First, the state and the observable are both in $\mathbb{M}_+$; the material sector $\mathbb{M}_-$ carries the generators and the *field*, not the states. This is the sector assignment the framework runs on, and the Fock construction respects it, mode by mode.
 
-Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$, which for the finite Fock space coincides with the Hilbert-space trace because the representation is the full matrix algebra. For the field's Fock space the identification is formal — the Hilbert space is infinite-dimensional and the algebraic trace is not defined — and the framework's finite-algebra formulas are used mode by mode, where the algebra is finite-dimensional. The companion article *The KMS Condition and the Biquaternion Framework* discusses the thermal state on that passage, and the algebraic completion of a finite Fock space is the standard GNS construction; here the finite one-mode statement is what is used.
+Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$ on $\mathbb{B}$, which for the one-mode Fock space is the Hilbert-space trace because the representation is $M_2(\mathbb{C})$. For the four-dimensional $\Lambda S$ the Hilbert-space trace is the $M_4(\mathbb{C})$ trace, and the biquaternion formula applies after restriction to a mode. For the field's Fock space the identification is formal — the Hilbert space is infinite-dimensional and the algebraic trace is not defined — and the framework's finite-algebra formulas are used mode by mode, where the algebra is finite-dimensional. The companion article *The KMS Condition and the Biquaternion Framework* discusses the thermal state on that passage, and the algebraic completion of a finite Fock space is the standard GNS construction; here the finite one-mode statement is what is used.
 
-## What Is Standard and What the Algebra's
+## What Is Standard and What Is the Algebra's Own
 
 **Standard, transcribed.** The exterior-algebra construction of the fermionic Fock space; the occupation-number basis and Pauli exclusion; the functoriality of $\Lambda$; the Lorentz content $0\oplus\tfrac12\oplus0$ of the two spin states of one momentum; the $2\pi$ sign as the degree parity; the Hilbert-space inner product and the adjointness of $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$; the Clifford identity $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$. All of this is standard, and it is written in the parents' conventions.
 
 **The algebra's own.**
 
 - *The one-particle space as a minimal left ideal* $S=\mathbb{B}\tilde\Pi_+$, with the two structures on it: the Hermitian form for probabilities and the antisymmetric form for invariants, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it. The distinction is a framework convention and is kept explicit.
-- *The one-mode identification of the state space with the algebra's own spin structure*: $\Lambda S$ is four-dimensional and its grading is the degree parity, so for a single ladder the Fock space, the spin tower and the parity $(-1)^F=i\vec e_z$ are all statements about $\mathbb{B}$, while over the two spin states of one momentum the state space is $\Lambda S$ itself.
-- *The sector assignment of states and observables*, both in $\mathbb{M}_+$, with the normalised Hermitian form, read through the trace, as the Born rule.
+- *The one-mode identification of the state space with the algebra's own spin structure*: the one-mode Fock space is two-dimensional and its grading is the degree parity, so for a single ladder the Fock space, the spin tower and the parity $(-1)^F=i\vec e_z$ are all statements about $\mathbb{B}$. Over the two spin states of one momentum the state space is the four-dimensional $\Lambda S$, whose density matrices are the $4\times4$ matrices of the mode algebra, not elements of $\mathbb{B}$.
+- *The sector assignment of states and observables*, both in $\mathbb{M}_+$ for one mode, with the normalised Hermitian form, read through the trace, as the Born rule.
 
 **Open.**
 
@@ -263,23 +273,47 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$, which for
 
 ## The Gamma Formulation
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. On the regular module, the body's left multiplications are the cells $L_a=L_aR_{e_t}$.
 
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+Multiplying by $i$ removes the unit up to a sign: $i\gamma_0=-L_{e_t}R_{\vec e_x}$ and $i\gamma_k=-L_{\vec e_k}R_{\vec e_y}$, so the body's cells are these without the factor, up to the sign. Every generator is $i$ times a real cell, so $i^2=-1$ fixes the signs: $(iL_aR_b)^2=-L_{a^2}R_{b^2}$. That one line gives both signs of the frame,
+
+$$
+\gamma_0^2=-L_{e_t^2}R_{\vec e_x^2}=-L_{e_t}R_{-e_t}=+I_4,
+\qquad
+\gamma_k^2=-L_{\vec e_k^2}R_{\vec e_y^2}=-L_{-e_t}R_{-e_t}=-I_4,
+$$
+
+and $\gamma_5^2=-L_{e_t^2}R_{\vec e_z^2}=+I_4$. They obey the Clifford relations of the frame,
+
+$$
+\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_4,
+\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+
+with $g=\mathrm{diag}(+1,-1,-1,-1)$, and the chirality cell is their product,
+
+$$
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3.
+$$
+
+The relations were checked on the cells.
+
+A single product is a pure tensor; the products form the seven-dimensional cone $\{M:\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with its **length** $\ell(M)=\operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real cells $L_aR_b$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 ## Summary
 
-The fermionic Fock space of the biquaternion spin-$\tfrac12$ field is the exterior algebra over the one-particle spinor module, $\mathcal{F}=\Lambda S$ with $\dim_\mathbb{C}\Lambda S=1+2+1=4$ over the two spin states of one momentum; the antisymmetry is forced by the anticommutator, which the spin–statistics companion fixes by the spin. The one-particle space is the minimal left ideal $S=\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ Hermitian and primitive, carrying the positive-definite Hermitian form for probabilities and the antisymmetric form for the Lorentz-invariant bilinears, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it; the idempotent and the ideal dimension were recomputed exactly.
+The fermionic Fock space of the biquaternion spin-$\tfrac12$ field, on the particle branch at one momentum, is the exterior algebra over the one-particle spinor module, $\mathcal{F}=\Lambda S$ with $\dim_\mathbb{C}\Lambda S=1+2+1=4$ over the two spin states. The antiparticle branch doubles the one-particle space, and the factor is then sixteen-dimensional. The antisymmetry is forced by the anticommutator, which the spin–statistics companion fixes by the spin. The one-particle space is the minimal left ideal $S=\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ Hermitian and primitive, carrying the positive-definite Hermitian form for probabilities and the antisymmetric form for the Lorentz-invariant bilinears, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it; the idempotent and the ideal dimension were recomputed exactly.
 
 The occupation-number basis $|0\rangle,|\!\uparrow\rangle,|\!\downarrow\rangle,|\!\uparrow\downarrow\rangle$ has the wedge product with the Koszul sign, which yields Pauli exclusion. The Lorentz content is
 
@@ -289,9 +323,9 @@ $$
 0\oplus\tfrac12\oplus0,
 $$
 
-with $\tilde S^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N^{\mathrm{fop}}}$, and the identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed in both constructions. For one mode the parity is the algebra element $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$; for the field it is the product over modes and external to $\mathbb{B}$.
+with $\hat S^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N^{\mathrm{fop}}}$, and the identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed in both constructions. For one mode the parity is the left multiplication $L_{i\vec e_z}$ on the module, with $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$; for the field it is the tensor product over modes and external to $\mathbb{B}$.
 
-The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). States are Hermitian idempotents of $\mathbb{M}_+$, the observables are even, and the Born rule is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi (H^{\mathrm{fop}})^{*})=2\,\mathrm{Sc}(\tilde\Pi (H^{\mathrm{fop}})^{*})$, checked to machine precision.
+The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). One-mode states are Hermitian idempotents of $\mathbb{M}_+$, the four-dimensional $\Lambda S$ has $4\times4$ density matrices, the observables are even, and the Born rule is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi (H^{\mathrm{fop}})^{*})=2\,\mathrm{Sc}(\tilde\Pi (H^{\mathrm{fop}})^{*})$, checked to machine precision.
 
 ## Summary of Notation
 
@@ -299,21 +333,22 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 |---|---|
 | $S=\mathbb{C}^2=\mathbb{B}\tilde\Pi_+$ | One-particle spinor module (Peirce carrier, minimal left ideal here) |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | Primitive Hermitian idempotent, $\tilde\Pi_+^2=\tilde\Pi_+$ |
-| $\langle\xi,\eta\rangle=\xi^{*}\eta$ | Positive-definite Hermitian form on $S$ (invariant on $SU(2)$ only) |
+| $\langle\xi,\eta\rangle=\xi^{*}\eta$ | Positive-definite Hermitian form on $S$, valued in $\mathbb{C}\tilde\Pi_+\cong\mathbb{C}$ (invariant on $SU(2)$ only) |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm on $\mathbb{B}$; signature $(3,1)$ on $\mathbb{M}_-$, $(1,3)$ on $\mathbb{M}_+$, vanishing on the left ideal |
-| $\varepsilon=i\sigma_2=\Phi(-\vec e_y)$ | Invariant antisymmetric form, $U^{\mathsf T}\varepsilon U=\varepsilon$ |
+| $\varepsilon=i\sigma_2=\mathsf M_2(-\vec e_y)$ | Invariant antisymmetric form, $\varepsilon^2=-I_2$ and $U^{\mathsf T}\varepsilon U=\varepsilon$ |
+| $L_aR_b$ | Left and right multiplications, $L_a\psi=a\psi$, $R_b\psi=\psi b$; the two-sided cells |
 | $\mathcal{F}=\Lambda S$ | Fermionic Fock space |
-| $|0\rangle,|\!\uparrow\rangle,|\!\downarrow\rangle,|\!\uparrow\downarrow\rangle$ | Occupation-number basis; $\dim_\mathbb{C}\mathcal{F}=4$ |
-| $q_1\wedge q_2=(-1)^{|q_1||q_2|}q_2\wedge q_1$ | Graded-commutative wedge (Koszul sign) |
+| $\lvert 0\rangle,\lvert\!\uparrow\rangle,\lvert\!\downarrow\rangle,\lvert\!\uparrow\downarrow\rangle$ | Occupation-number basis; $\dim_\mathbb{C}\mathcal{F}=4$ |
+| $q_1\wedge q_2=(-1)^{\lvert q_1\rvert\lvert q_2\rvert}q_2\wedge q_1$ | Graded-commutative wedge (Koszul sign) |
 | $N^{\mathrm{fop}}$, $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ | Number operator; one-mode ladder |
 | $\Gamma(\rho)=\bigoplus_n\Lambda^n\rho$ | Exterior-power (Fock) functor |
 | $\Lambda S=\mathbb{C}\oplus S\oplus\mathbb{C}$ | Lorentz content of the two spin states of one momentum: $0\oplus\tfrac12\oplus0$ |
-| $S_i=\tfrac12a_s^{\mathrm{fop}\dagger}(\sigma_i)_{s,s_2}a_{s_2}^{\mathrm{fop}}$ | Spin operators on $\Lambda S$ |
+| $\hat S_i=\tfrac12\sum_{s,s'}a_s^{\mathrm{fop}\dagger}(\sigma_i)_{ss'}a_{s'}^{\mathrm{fop}}$ | Spin operators on $\Lambda S$, in units $\hbar=1$ |
 | $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ | Degree parity; $2\pi$ rotation on the Fock space |
-| $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$ (one mode) | Parity as an element of $\mathbb{M}_+$ |
+| $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$ (one mode) | Parity as an element of $\mathbb{M}_+$, acting by $L_{i\vec e_z}$ |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $N$ fermionic modes |
-| $\tilde\Pi^2=\tilde\Pi=\tilde\Pi^{*}$, $\mathrm{Tr}\tilde\Pi=1$ | Pure state as a Hermitian idempotent in $\mathbb{M}_+$ |
-| $\langle H^{\mathrm{fop}}\rangle=\langle\tilde\Pi,H^{\mathrm{fop}}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=\operatorname{Tr}(\tilde\Pi (H^{\mathrm{fop}})^{*})$ | Born rule: form first, trace at normalisation last |
+| $\tilde\Pi^2=\tilde\Pi=\tilde\Pi^{*}$, $\mathrm{Tr}\tilde\Pi=1$ | One-mode pure state as a Hermitian idempotent in $\mathbb{M}_+$; the four-dimensional $\Lambda S$ has $4\times4$ density matrices |
+| $\langle H^{\mathrm{fop}}\rangle=\langle\tilde\Pi,H^{\mathrm{fop}}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=\operatorname{Tr}(\tilde\Pi (H^{\mathrm{fop}})^{*})$ | Born rule for one mode: form first, trace at normalisation last |
 
 ## Further Reading
 

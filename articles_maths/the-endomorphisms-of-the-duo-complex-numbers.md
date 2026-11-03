@@ -44,7 +44,7 @@ $$
 T^2-(\operatorname{tr}T)\,T+(\det T)I=0.
 $$
 
-*Proof.* The trace and the determinant of a matrix are invariant under conjugation, hence independent of the basis; the multiplicativity of the determinant and the cyclicity of the trace are the matrix identities. The Cayley–Hamilton identity in dimension two is the computation of the characteristic polynomial $\lambda^2-(\operatorname{tr}T)\lambda+\det T$ at $\lambda=T$, and it is verified entrywise or by the general theorem (*$M_2(\mathbb{C})$ Standard Peirce Representation*).
+*Proof.* The trace and the determinant of a matrix are invariant under conjugation, hence independent of the basis; the multiplicativity of the determinant and the cyclicity of the trace are the matrix identities. The Cayley–Hamilton identity in dimension two is the computation of the characteristic polynomial $\lambda^2-(\operatorname{tr}T)\lambda+\det T$ at $\lambda=T$, and it is verified entrywise or by the general theorem (*$M_2(\mathbb{C})$ Pauli Representation*).
 
 **Remark (the spectrum).** Over $\mathbb{C}$ every operator has two eigenvalues counted with multiplicity, the roots of $\lambda^2-(\operatorname{tr}T)\lambda+\det T$. **The discriminant $\Delta=(\operatorname{tr}T)^2-4\det T$ separates the two cases**: for $\Delta\neq0$ the eigenvalues are distinct and the operator is diagonalisable; for $\Delta=0$ the operator is either scalar or a single Jordan block of size two, and in the second case it is not diagonalisable (*The Spectrum* and *The Jordan Basis* in the $M_2(\mathbb{C})$ Model).
 

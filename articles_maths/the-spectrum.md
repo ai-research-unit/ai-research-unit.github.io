@@ -16,7 +16,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The companion article *N-Regularity and N-Degeneracy in the Biquaternion Algebra* studies the zero-divisor set; this article studies $B^2$ and the spectral cases it defines. The matrix realization $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Standard Peirce Representation* appears only as a check, through the identity $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$; the criterion is proved without it. The algebra and its conventions are *The Biquaternion Algebra*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*.
+The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The companion article *N-Regularity and N-Degeneracy in the Biquaternion Algebra* studies the zero-divisor set; this article studies $B^2$ and the spectral cases it defines. The matrix realization $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Pauli Representation* appears only as a check, through the identity $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$; the criterion is proved without it. The algebra and its conventions are *The Biquaternion Algebra*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*.
 
 ## The Spectral Criterion
 

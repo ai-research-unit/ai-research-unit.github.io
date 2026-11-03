@@ -469,7 +469,7 @@ The identities were recomputed before they were written. The cell frame was buil
 |---|---|
 | $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}-2g_{\mu\nu}I_4$ | $0$ (exact) |
 | $(-iR_{\vec e_z})^{2}-I_4$ and $\{-iR_{\vec e_z},iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\}$ | $0$ (exact) |
-| $-iR_{\vec e_z}-i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$ | $0$ (exact) |
+| $-iR_{\vec e_z}+R_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$ | $0$ (exact) |
 | $\mathsf D+R_{\vec e_x}\partial_0+\sum_k L_{\vec e_k}R_{\vec e_y}\partial_k$ | $0$ (exact) |
 | Tensor dictionary reproduces the five cells and satisfies the same Clifford relations | $0$ (exact) |
 | Anticommutant of all four generators | rank $15$, nullity $1$ |

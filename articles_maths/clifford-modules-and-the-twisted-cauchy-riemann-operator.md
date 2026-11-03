@@ -157,7 +157,7 @@ $$
 
 The index of the twisted operator is therefore the degree of the twisting line bundle; it is an integer, and the theorem produces the integrality rather than assuming it.
 
-**Example (a four-dimensional spin manifold).** Let $M$ be a closed spin $4$-manifold, untwisted. The $\hat{A}$-class is $\hat{A}(TM)=1-\tfrac{1}{24}n_1(TM)$, and the top-degree part is the $4$-form $-\tfrac{1}{24}n_1$. Hence
+**Example (a four-dimensional spin manifold).** Let $M$ be a closed spin $4$-manifold, untwisted. The $\hat{A}$-class is $\hat{A}(TM)=1-\tfrac{1}{24}p_1(TM)$, and the top-degree part is the $4$-form $-\tfrac{1}{24}p_1$. Hence
 
 $$
 \operatorname{ind}(D_+)=-\frac{1}{24}\int_Mp_1(TM)=-\frac{\sigma(M)}{8},

@@ -1,8 +1,8 @@
-# __$M_2(\mathbb{C})$ Standard Peirce Representation__
+# __$M_2(\mathbb{C})$ Pauli Representation__
 
 ## Introduction
 
-**The compression.** The $M_4(\mathbb{C})$ Standard Peirce Representation writes the two regular matrices of an element in the standard Peirce frame as
+**The compression.** The $M_4(\mathbb{C})$ Pauli Representation writes the two regular matrices of an element in the standard Peirce frame as
 $$
 L(\tilde Q)=\mathrm I_2\otimes A,\qquad
 R(\tilde Q)=A^{\mathsf T}\otimes\mathrm I_2,\qquad
@@ -36,7 +36,7 @@ $$
 $$
 The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The matrix units are $E_{ij}$, the Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and $\operatorname{Tr}$ is the $2\times2$ trace.
 
-**Boundaries.** The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The $4\times4$ representation is *$M_4(\mathbb{C})$ Standard Peirce Representation*; the matrix units and the two Peirce planes are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
+**Boundaries.** The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The $4\times4$ representation is *$M_4(\mathbb{C})$ Pauli Representation*; the matrix units and the two Peirce planes are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
 
 ## The Root and the Two Idempotents
 
@@ -68,7 +68,7 @@ $$
 \mathsf M_2(\tilde\Pi_+)=E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
 \mathsf M_2(\tilde\Pi_-)=E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix}.
 $$
-The Peirce decomposition is therefore the spectral decomposition of $\sigma_3$: the abstract pair becomes the row/column pair of $\mathbb{C}^2$. This is the first sense in which the $2\times2$ model is the compressed Peirce representation.
+The Peirce decomposition is therefore the spectral decomposition of $\sigma_3$: the abstract pair becomes the row/column pair of $\mathbb{C}^2$. This is the first sense in which the $2\times2$ model is the compressed Pauli representation.
 
 **The two planes.** Put
 $$
@@ -661,7 +661,7 @@ This is a property of the entry size. At the regular size the adjugate has degre
 $$
 A^{-1}=\frac{\operatorname{adj}A}{\det A}=\frac{\mathsf M_2(\tilde Q^{\natural})}{\langle\tilde Q\rangle_{\natural}},
 $$
-which is the inverse of an element, in contrast with the pair inverse of *$M_2(\mathbb{C})$ Standard Peirce Representation : Operators*, §*The Inverse*. On the null cone the determinant vanishes, the adjugate is nonzero whenever $A\neq0$, and the inverse does not exist.
+which is the inverse of an element, in contrast with the pair inverse of *$M_2(\mathbb{C})$ Pauli Representation : Operators*, §*The Inverse*. On the null cone the determinant vanishes, the adjugate is nonzero whenever $A\neq0$, and the inverse does not exist.
 
 ## The Four Norms
 
@@ -792,7 +792,7 @@ of real dimensions $2+6$, $4+4$ and $4+4$. The first is the scalar–vector spli
 
 ## Summary
 
-The $2\times2$ Standard Peirce representation is the compression of the $4\times4$ one. The left regular matrix is $\mathrm I_2\otimes A$ and the right regular matrix is $A^{\mathsf T}\otimes\mathrm I_2$; the block $A=\mathsf M_2(\tilde Q)$ occurs twice in the left and the block $A^{\mathsf T}$ occurs twice in the right, and the second block is a copy. Keeping one block gives the $2\times2$ model.
+The $2\times2$ Pauli representation is the compression of the $4\times4$ one. The left regular matrix is $\mathrm I_2\otimes A$ and the right regular matrix is $A^{\mathsf T}\otimes\mathrm I_2$; the block $A=\mathsf M_2(\tilde Q)$ occurs twice in the left and the block $A^{\mathsf T}$ occurs twice in the right, and the second block is a copy. Keeping one block gives the $2\times2$ model.
 
 The left/right split survives on two different planes. The left action on $S_+=\mathbb{B}\tilde\Pi_+$, in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$, has matrix $A$; the right action on $T_+=\tilde\Pi_+\mathbb{B}$, in the basis $(\tilde\Pi_+,\vec\Upsilon_-)$, has matrix $A^{\mathsf T}$. The stitch is the transpose. The two matrices need not commute, because they are not operators on one space.
 
@@ -830,8 +830,8 @@ The compression keeps the product, the trace, the determinant and the six subspa
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})$ Standard Peirce Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the uncompressed representation, the two blocks, the stitch and the axis-free basis switch.
-- [$M_2(\mathbb{C})$ Standard Peirce Representation : Operators](m2c-standard-peirce-representation-operators.html), for the operators on the algebra, the one-matrix and pair descriptions, and the Kronecker display.
+- [$M_4(\mathbb{C})$ Pauli Representation](m4c-standard-peirce-representation-the-matrix-product-the-trace-and-the-determinant.html), for the uncompressed representation, the two blocks, the stitch and the axis-free basis switch.
+- [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-standard-peirce-representation-operators.html), for the operators on the algebra, the one-matrix and pair descriptions, and the Kronecker display.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the same element in the axis-free basis.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the coefficient form of the element and the four conjugations.

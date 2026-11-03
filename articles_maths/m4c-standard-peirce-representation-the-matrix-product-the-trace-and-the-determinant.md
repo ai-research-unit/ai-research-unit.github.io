@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})$ Standard Peirce Representation__
+# __$M_4(\mathbb{C})$ Pauli Representation__
 
 ## Introduction
 
@@ -20,6 +20,18 @@ $$
 The root chooses the direction $z$. This is the price of the construction, and it is the difference from the axis-free basis: the axis-free basis names no direction, while the standard Peirce frame is built around one.
 
 **The algebra.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu\in\mathbb{R}$, and put $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$.
+
+**The name.** The matrices
+$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}
+$$
+are the Pauli matrices, and the $2\times2$ image is written in them,
+$$
+\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr),
+$$
+so that $\mathsf M_2(\vec e_k)=-i\sigma_k$. The representation is called Pauli because its block is the Pauli combination of the element; the $4\times4$ matrices are the two Kronecker products of that block with $\mathrm I_2$, read in the standard Peirce frame.
 
 **The result in one line.** The left matrix is the $2\times2$ image taken twice, $L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$; the right matrix is the transposed image taken twice, $R(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. The product is multiplicative on the left and anti-multiplicative on the right. The trace is $4Q_t$. The determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$. The eigenvalues are $Q_t\pm iB$, each twice.
 
@@ -181,7 +193,7 @@ R(\tilde Q)=
 \end{pmatrix}.
 $$
 
-**The transpose and the dagger.** In the Peirce frame the transpose is not the quaternion conjugation. With $\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix}$ and
+**The transpose and the dagger.** In the Peirce frame the transpose is not the quaternion conjugation. With the Pauli matrix $\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix}$ and
 $$
 C_L=\mathrm I_2\otimes\sigma_2,\qquad
 C_R=\sigma_2\otimes\mathrm I_2,
@@ -542,7 +554,7 @@ The determinant of a sum is not the sum of the determinants; a sum of two invert
 
 ## The Six Subspaces
 
-**The table.** The six remarkable subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra*. On the image of the standard Peirce representation they become the conditions of the table. Write $A$ for the $2\times2$ block, so $M=L(\tilde Q)=\mathrm I_2\otimes A$, and put
+**The table.** The six remarkable subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra*. On the image of the Pauli representation they become the conditions of the table. Write $A$ for the $2\times2$ block, so $M=L(\tilde Q)=\mathrm I_2\otimes A$, and put
 $$
 A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix},\qquad
 A_{i\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\ \bar b&-\bar a\end{pmatrix}.
@@ -677,6 +689,7 @@ The sixteen products $L_{e_\mu}R_{e_\nu}$ are an orthogonal basis of $M_4(\mathb
 | $L_{e_\mu}$, $R_{e_\mu}$ | the left and right matrices of the four units |
 | $L(\tilde Q)$, $R(\tilde Q)$ | the left and right matrices of $\tilde Q$ |
 | $A=\mathsf M_2(\tilde Q)$ | the $2\times2$ image, the block of $L(\tilde Q)$ |
+| $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices, $\mathsf M_2(\vec e_k)=-i\sigma_k$ |
 | $S$ | the change matrix, columns the frame vectors in the axis-free basis |
 | $\mathsf P$ | the swap matrix, $\mathsf P(A\otimes B)\mathsf P=B\otimes A$ |
 | $C_L=\mathrm I_2\otimes\sigma_2$, $C_R=\sigma_2\otimes\mathrm I_2$ | the transpose dictionaries of the Peirce frame |
