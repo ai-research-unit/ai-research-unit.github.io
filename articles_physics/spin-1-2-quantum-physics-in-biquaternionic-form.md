@@ -358,7 +358,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 1. **Quantization.** The framework is classical. Promoting fields to operators requires additional structure (a Hilbert space, a Fock space, a quantization prescription).
 
-2. **Bosonic fields of higher spin.** The algebra's modules carry only spin one-half; the four-vector is carried by conjugation and the scalar by the centre. Spin-3/2 and spin-2 have no carrier inside $\mathbb{B}$, and fields of higher spin require tensor products or larger algebras.
+2. **Bosonic fields of higher spin.** The algebra's modules carry only spin one-half; the four-vector is carried by the adjoint action on $\mathbb{B}$, and its scalar component by the centre. Spin-3/2 and spin-2 have no subcarrier inside $\mathbb{B}$, and fields of higher spin require tensor products or larger algebras.
 
 3. **Many-body structure.** A single spin-1/2 particle (or a single spin-1/2 field) is the natural content. Multiparticle states and entangled systems require tensor products of the algebra.
 

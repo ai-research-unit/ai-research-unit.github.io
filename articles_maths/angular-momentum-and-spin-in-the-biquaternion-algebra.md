@@ -429,7 +429,7 @@ The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module st
 
 ## The Four Uses of the Word Spin
 
-Four objects in this corpus are called a spin, and they are not four notions. One is the definition, one is its adjoint instance, and two are signs that carry no weight at all.
+Four objects in this corpus are called a spin. They are one definition applied to two module structures, and two signs that carry no weight at all.
 
 | use | what it labels | structure | values |
 |---|---|---|---|
@@ -438,13 +438,13 @@ Four objects in this corpus are called a spin, and they are not four notions. On
 | Peirce index | the copy | right multiplication by $i\vec u$ | $+$ or $-$ |
 | chirality | the Lorentz half | a central sign in $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ | $+$ or $-$ |
 
-The first two rows are the definition read twice. Conjugation is a module structure like the left action, and the definition applied to it gives $s=0$ on $Z$ and $s=1$ on $V$; the row records the second. The set $\{0,\tfrac12,1\}$ is the union of the lists $2\mathcal{V}_1$ and $\mathcal{V}_0\oplus\mathcal{V}_2$, and the arithmetic obstruction above says the union is not a direct sum.
+The first two rows are one definition read twice: conjugation is the other module structure, and applying the definition to it gives $s=0$ on $Z$ and $s=1$ on $V$. The set $\{0,\tfrac12,1\}$ is the union of the lists $2\mathcal{V}_1$ and $\mathcal{V}_0\oplus\mathcal{V}_2$, and the arithmetic obstruction above says the two lists cannot be the constituents of one action.
 
 ### The Central Sign and the Integrality Class
 
-A rotation by $2\pi$ is $-e_t$. On the half-integer carriers, the minimal left ideals, it acts as $-\mathrm{id}$; on the integer carriers, $Z$ and $V$, it acts as the identity. The sign of $-e_t$ marks the integrality class.
+The $2\pi$ signs of §*The Left Module: Spin One Half* are the two integrality classes: $-e_t$ acts as $-\mathrm{id}$ on the minimal left ideals and as the identity on $Z$ and on $V$. Half-integer carriers carry the first sign, integer carriers the second.
 
-That sign is not an eigenvalue read off one operator on $\mathbb{B}$. In the left regular module $-e_t$ acts as $-\mathrm{id}$ on all of $\mathbb{B}$; in the adjoint action it acts trivially on all of $\mathbb{B}$. The two signs are read in the two structures, not as the two eigenspaces of one operator on the algebra.
+Neither sign is an eigenvalue read off one operator on $\mathbb{B}$. In the left regular module $-e_t$ acts as $-\mathrm{id}$ on all of $\mathbb{B}$; in the adjoint action it acts trivially on all of $\mathbb{B}$. The two signs are read in the two structures, not as the two eigenspaces of one operator on the algebra.
 
 ### The Peirce Sign Is Not the Central Sign
 
@@ -456,11 +456,11 @@ $$
 
 so $P$ is $+1$ on $S_+(\vec u)$ and $-1$ on $S_-(\vec u)$. It is implemented by the element $i\vec u$, which is not central: at $\vec u=\vec e_z$, $i\vec e_z\vec e_x=+i\vec e_y$ while $\vec e_x i\vec e_z=-i\vec e_y$. The Peirce index is therefore an inner, non-central copy label, and it never changes a spin value.
 
-Right multiplication by a nilpotent mixed unit carries $S_+(\vec u)$ onto $S_-(\vec u)$ and gives the module isomorphism, but it is not the grading: a nilpotent squares to zero and cannot be an involution.
+At a fixed axis, right multiplication by the mixed unit $\vec\Upsilon_{+-}$ carries $S_+$ onto $S_-$ and is the module isomorphism: it sends $\tilde\Pi_+$ to $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ to $\tilde\Pi_-$. Right multiplication by $\vec\Upsilon_{-+}$ annihilates $S_+$, because $\tilde\Pi_+\vec\Upsilon_{-+}=0$ and $\vec\Upsilon_{-+}^2=0$. Neither is the grading: each mixed unit squares to zero, and a nilpotent cannot be an involution.
 
 ### Chirality Is Central but Not a Spin
 
-In the double, the chirality has the central form $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\chi^2=+e_t$, and its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$ of §*Real Forms and the Rotation Subgroup*. Both halves carry the same rotation spin: chirality separates the two Lorentz chiralities, not two values of $s$.
+In the double, the chirality has the central form $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\chi^2=+e_t$, and its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$ of §*Real Forms and the Rotation Subgroup*. Both halves carry the same rotation content: chirality separates the two Lorentz chiralities, not two values of $s$.
 
 The three signs are therefore distinct. A central sign in $\mathbb{B}$ marks integer against half-integer; an inner non-central sign separates two copies of one half-integer carrier; a central sign in the double separates two Lorentz halves. Only the first tracks the integrality of a spin, and none of the three is a value of $s$.
 
@@ -494,7 +494,7 @@ The truncation is the same fact from the other side. The algebra is the endomorp
 
 **No statistics.** The algebraic split matches the two integrality classes. The spin–statistics theorem is not proved by the algebra.
 
-**No full Lorentz label.** Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under conjugation it carries the four-vector $(\tfrac12,\tfrac12)$, and its split into $\mathbf{1}\oplus\mathbf{3}$ is the work of the compact subgroup $G$. The rotation spin is the little-group shadow of the Lorentz label, not the whole label.
+**No full Lorentz label.** Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under the Lorentz sandwich $Q\mapsto\tilde U Q\tilde U^{*}$ it carries the four-vector $(\tfrac12,\tfrac12)$, and its split into $\mathbf{1}\oplus\mathbf{3}$ is the work of the compact subgroup $G$. The rotation spin is the little-group shadow of the Lorentz label, not the whole label.
 
 ## Summary
 
@@ -510,7 +510,7 @@ The subcarriers of the regular module are exactly these three, and $1+2+3=6>4$ s
 
 The tensor square of the adjoint module contains a spin-two summand, and the multiplication map kills it: the product of two biquaternions carries no spin two. That vanishing, and not the dimension count, is the algebraic reason the algebra realises the three subcarrier types and no fourth.
 
-The word spin has four uses in this corpus, and only one of them is a weight. The highest weight of a module structure is the definition; the adjoint action is its instance on $\mathbb{B}=Z\oplus V$; the Peirce index and the chirality are signs, one an inner copy label and one a central Lorentz label, and neither is a value of $s$.
+The word spin has four uses in this corpus, and only the first two record a value of $s$. The highest weight of a module structure is the definition; the adjoint action is its instance on $\mathbb{B}=Z\oplus V$; the Peirce index and the chirality are signs, one an inner copy label and one a central Lorentz label, and neither is a value of $s$.
 
 ## Summary of Notation
 
@@ -531,7 +531,8 @@ The word spin has four uses in this corpus, and only one of them is a weight. Th
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The minimal left ideals at the axis $\vec u$ |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The rank-one idempotents |
 | $R_{Q}$ | Right multiplication by $Q$ |
-| $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$ | The lowering vector of $S_+$ |
+| $\vec\Upsilon_{+-}=\tfrac12(i\vec e_x-\vec e_y)$ | The nilpotent weight $+\tfrac12$ vector of $S_-$ |
+| $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$ | The nilpotent weight $-\tfrac12$ vector of $S_+$ |
 | $v_+=\vec e_x+i\vec e_y$ | The highest-weight vector of $V$ |
 | $L_k^{\mathrm{orb}}=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ | The orbital generators |
 | $\mathcal{H}_l$ | The harmonic polynomials of degree $l$ |
