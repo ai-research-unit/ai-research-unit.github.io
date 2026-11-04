@@ -120,14 +120,14 @@ C_k := iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=x,y,z),
 $$</p>
 <p>$C_\mu$ is the cell of the coordinate $x_\mu$. Since $e_t=1$, the timelike cell is a pure right multiplication. Each cell carries one factor of $i$, so a product of two cells spends $i^2=-1$ once. The cells satisfy</p>
 <p>$$
-C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4, \qquad g=\operatorname{diag}(-1,+1,+1,+1),
+C_\mu C_\nu + C_\nu C_\mu = 2\varepsilon_\mu\delta_{\mu\nu}I_4, \qquad \varepsilon=(1,-1,-1,-1),
 $$</p>
 <p>so that $C_t^2=I_4$ and $C_k^2=-I_4$. On the chiral pair $(\psi_L,\psi_R)$ they act as</p>
 <p>$$
 C_t(\psi_L,\psi_R)=(\psi_R,\psi_L), \qquad
 C_k(\psi_L,\psi_R)=(\sigma_k\psi_R,\,-\sigma_k\psi_L),
 $$</p>
-<p>where $\sigma_k=\mathsf{M}_2(i\vec e_k)$; the block arrays of the five cells are recorded in <em>The Legacy Gamma Formulation</em>.</p>
+<p>where $\sigma_k=\mathsf{M}_2(i\vec e_k)$; the block arrays of the five cells are recorded in <em>The Legacy Pauli Gamma Formulation</em>.</p>
 <p><strong>The chiral pair.</strong> The dynamics is the <strong>one-sided</strong> chiral pair of the parent article: two equations, one per chirality,</p>
 <p>$$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L ,
@@ -175,7 +175,7 @@ $$</p>
 <p>$$
 \left(i\frac{\partial}{\partial t'}+D_3\right)F - mi\,\bar F\,\vec e_z = 0, \qquad D_3=\sum_k\vec e_k\frac{\partial}{\partial Q_k},
 $$</p>
-<p>in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by $\vec e_z$. The two are related by the dictionary and are not the same operator: the mass of the pair is a scalar coupling of $S$ to $\bar S$; the mass of the two-sided equation is a conjugation together with a spatial direction. Chirality is why the second side is needed at all: left multiplication preserves each chiral half, so no left multiplication, and no sum of left multiplications, carries one chirality into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression. The chirality of the two-sided equation is the chirality cell of the frame, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which represents the central grading of the complexification on $\Delta$; the cell is recorded in <em>The Legacy Gamma Formulation</em>.</p>
+<p>in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by $\vec e_z$. The two are related by the dictionary and are not the same operator: the mass of the pair is a scalar coupling of $S$ to $\bar S$; the mass of the two-sided equation is a conjugation together with a spatial direction. Chirality is why the second side is needed at all: left multiplication preserves each chiral half, so no left multiplication, and no sum of left multiplications, carries one chirality into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression. The chirality of the two-sided equation is the chirality cell of the frame, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which represents the central grading of the complexification on $\Delta$; the cell is recorded in <em>The Legacy Pauli Gamma Formulation</em>.</p>
 <p>Three conjugations must not be confused. The coefficient conjugation $\tilde{\Psi}\mapsto\bar{\tilde{\Psi}}$ is the antilinear map that relates the defining module $S$ to its conjugate $\bar{S}$; the Hermitian star $\tilde{\Psi}^{*}=\bar{\tilde{\Psi}}^{\,\natural}$ is its composition with the quaternion conjugation; and the parent's anti-Hermitian conjugation $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ is the algebra's real structure, with fixed space $\mathbb{M}_-$. None of the three is the mass. The exercise therefore treats the mass term in the explicit Dirac module, where it is unambiguous.</p>
 <h2 id="problem-3-a-boost-and-a-rotation-of-each-half">Problem 3: A Boost and a Rotation of Each Half</h2>
 <p>Recall the two distinguished unit-norm biquaternions and their images under $\mathsf{M}_2$:</p>
@@ -350,7 +350,8 @@ $$</p>
 </li>
 </ol>
 <p>A fourth point, the biquaternion (ideal) form of the symplectic pairing, is the parent's open question 3; the exercise uses the matrix-coordinate form throughout, which is the form the parent defines.</p>
-<h2 id="the-legacy-gamma-formulation">The Legacy Gamma Formulation</h2>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
@@ -382,18 +383,18 @@ the signed permutations $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$ and $\gamma_k=iL
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <p><strong>The standard identities.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$:</p>
 <p>$$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$</p>
 <p>$$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$</p>
 <p>$$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$</p>
 <p>$$
@@ -509,6 +510,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, Vol. 1 (Cambridge, 1984), for the two-component spinor calculus, the invariant $\epsilon$-form, and the Weyl spinors.</li>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the rotor formulation of the Lorentz group and the relation between spinors and four-vectors.</li>
 <li>Steven Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1 (Cambridge, 1995), for the construction of the Dirac spinor from two Weyl spinors and the mass term.</li>

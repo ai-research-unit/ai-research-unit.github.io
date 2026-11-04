@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The companion articles of the relativistic quantum series build the biquaternion Dirac algebra and use it: <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure</em>, fixes the comparison between the biquaternions and the even Clifford algebra; <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> constructs the module on which the algebra acts; <em>Exercise: Chirality and the Weyl Spinors</em> develops the chiral projectors. This article is about a structure that all three use but none names: the <strong>grading of the Dirac algebra by reflection parity</strong>, and the identification of one element, the timelike frame cell $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, as the hinge on which the whole structure turns. Here $L_{a}R_{b}$ is the cell that multiplies on the left by $a$ and on the right by $b$, $L_{a}R_{b}\psi=a\psi b$, and $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
 <p>The subject is one observation, made precise. The biquaternion algebra $\mathbb{B}$ is isomorphic to the <strong>even</strong> part of the Clifford algebra $\mathrm{Cl}_{1,3}$. Its rotors, the elements of unit norm, act on four-vectors by conjugation, and the same rotors are the points of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. The generators $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, by contrast, are <strong>odd</strong>: none of them lies in the even part, whose cells are those whose right multiplier lies in $\mathrm{span}\{e_t,\vec e_z\}$, and none of them is a rotor. They act on spinors and they <strong>exchange the two chiralities</strong>. The odd/even split of the Clifford algebra is therefore not a bookkeeping device. It is the split between the transformations that <em>turn</em> and the transformations that <em>reflect</em>, and chirality — the property that separates the two Weyl spinors — is precisely what the odd part changes and the even part preserves.</p>
-<p>The article is organized as follows. §<em>One Algebra, Read Twice</em> reconciles the two ways in which a single element of the algebra is used, as an object and as an operator. §<em>The Grading by Reflection Count</em> establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. §<em>The Frame Cell and the Hermitian Sector</em> introduces the frame cell $iR_{\vec e_x}^{\mathrm{axf}}$ and shows that the Clifford metric is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. §<em>Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ Is the Bar</em> shows that conjugation by the frame cell is the conjugation of the coefficients, so that the frame, the sector swap and the reflection are one operator. §<em>The Spaces of Rotations and of Reflections</em> and §<em>How Many Reflections?</em> describe the two spaces and answer the question of how many reflections a given Lorentz transformation needs. §<em>Why Chirality Needs a Reflection</em> draws the consequence for chirality, and §<em>Why the Pauli Algebra Cannot Carry Chirality</em> shows that no chirality element exists there. A closing §<em>The Legacy Gamma Formulation</em> translates the results into the matrix notation of the literature, and it is the only section of the article that uses it; every other statement is written in cells.</p>
+<p>The article is organized as follows. §<em>One Algebra, Read Twice</em> reconciles the two ways in which a single element of the algebra is used, as an object and as an operator. §<em>The Grading by Reflection Count</em> establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. §<em>The Frame Cell and the Hermitian Sector</em> introduces the frame cell $iR_{\vec e_x}^{\mathrm{axf}}$ and shows that the sign vector of the cells is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. §<em>Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ Is the Bar</em> shows that conjugation by the frame cell is the conjugation of the coefficients, so that the frame, the sector swap and the reflection are one operator. §<em>The Spaces of Rotations and of Reflections</em> and §<em>How Many Reflections?</em> describe the two spaces and answer the question of how many reflections a given Lorentz transformation needs. §<em>Why Chirality Needs a Reflection</em> draws the consequence for chirality, and §<em>Why the Pauli Algebra Cannot Carry Chirality</em> shows that no chirality element exists there. A closing §<em>The Legacy Pauli Gamma Formulation</em> translates the results into the matrix notation of the literature, and it is the only section of the article that uses it; every other statement is written in cells.</p>
 <p>The conventions are those of the series: the algebra, the units, the sectors and the generator metric are those of <em>Algebra and Element Conventions</em> and <em>Frame Conventions</em>, and none is restated here. The comparison with the even subalgebra is the dictionary of <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure</em>.</p>
 <p>As the series writes it, the comparison is given by its values and never by a symbol,
 $$
@@ -189,18 +189,18 @@ $$
 the identity together with the spacelike bivectors, which generate the spatial rotations.</p>
 <p>The decisive consequence concerns the <strong>metric</strong>. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — the coefficients $Q_\mu$ are complex, so a coefficient $i$ contributes $i^2=-1$ — evaluated on the two sector bases gives
 $$
-\langle\tilde Q\rangle_{\natural}\ \text{on}\ (e_t, i\vec e_x, i\vec e_y, i\vec e_z) = \mathrm{diag}(+1,-1,-1,-1) = g,
+\langle\tilde Q\rangle_{\natural}\ \text{on}\ (e_t, i\vec e_x, i\vec e_y, i\vec e_z) = \mathrm{diag}(+1,-1,-1,-1) = -g_{\mu\nu}[\mathbb{M}_-],
 $$
 $$
 \langle\tilde Q\rangle_{\natural}\ \text{on}\ (ie_t, \vec e_x, \vec e_y, \vec e_z) = \mathrm{diag}(-1,+1,+1,+1) = g_{\mu\nu}[\mathbb{M}_-] .
 $$
-The minus signs of $g$ are those of $i^2$ on the three spatial directions, and nothing else. The Clifford metric of the generators is therefore not an independent convention laid on top of the algebra: <strong>it is the biquaternion norm of the Hermitian sector</strong>, and the $ict'$ metric of the material sector is its negative, the biquaternion norm of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: the material coordinates carry $g_{\mu\nu}[\mathbb{M}_-]$, and the generators, which are Hermitian objects, carry $g = \mathrm{diag}(-1,+1,+1,+1)$. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.</p>
+The minus signs of this array are those of $i^2$ on the three spatial directions, and nothing else. The sign vector of the generators is therefore not an independent convention laid on top of the algebra: <strong>it is the biquaternion norm of the Hermitian sector</strong>, and the $ict'$ metric of the material sector is its negative, the biquaternion norm of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: the material coordinates carry $g_{\mu\nu}[\mathbb{M}_-]$, and the generators, which are Hermitian objects, carry $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$, their cells squaring to its negative. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.</p>
 <p>The same fact appears in the vector square. For $w$ as above,
 $$
 \left(x_\mu iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\right)^2 = \langle w\rangle_{\natural}\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} = \left(x_t^2 - x_x^2 - x_y^2 - x_z^2\right)L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} ,
 $$
 with no relative sign between the Clifford square and the biquaternion norm. The absence of that sign is the signature $g$ showing through.</p>
-<h2 id="conjugation-by-math138-is-the-bar">Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ Is the Bar</h2>
+<h2 id="conjugation-by-math137-is-the-bar">Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ Is the Bar</h2>
 <p>The frame cell $iR_{\vec e_x}^{\mathrm{axf}}$ is not merely a bookkeeping element. It has a definite action on the algebra, and it is the action that defines the split $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$.</p>
 <p>For every $\tilde{Q}\in\mathbb{B}$,
 $$
@@ -480,7 +480,8 @@ $$
 -iR_{\vec e_z}^{\mathrm{axf}} = i\,\bigl(iR_{\vec e_x}^{\mathrm{axf}}\bigr)\bigl(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\bigr)\bigl(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\bigr)\bigl(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\bigr) = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} ,
 $$
 and there is no way to form it from three: a product of three generators is a trivector, odd, while the chirality cell is even. The timelike direction is not an optional extra; it is the ingredient that makes the chirality element exist. Chirality is therefore intrinsically relativistic: the Dirac algebra carries it, the Pauli algebra cannot, and the non-relativistic limit keeps only the spin. The same conclusion follows from the label table above, since the two-factor split is a property of the complexified <em>Lorentz</em> algebra, which the spatial rotation algebra does not possess.</p>
-<h2 id="the-legacy-gamma-formulation">The Legacy Gamma Formulation</h2>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.
 $$
@@ -495,32 +496,32 @@ $$</p>
 <p>The $\gamma$'s are a complex frame, not a real one: they generate $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$ over $\mathbb{C}$, whereas the cells with real coefficients generate the real algebra $\mathrm{Cl}_{3,1}(\mathbb{R})=M_4(\mathbb{R})$. It is the complexification that makes the scalar $i$ central, and that is why each generator is written as $i$ times a real cell.</p>
 <p><strong>The identities the series uses.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
-$$
+\qquad \varepsilon=(1,-1,-1,-1),$$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
-Four contraction sums accompany them. The four that hold in every frame are the ones with one index raised, $\gamma^\mu=\varepsilon_\mu\gamma_\mu$ and $\varepsilon=(+1,-1,-1,-1)$:
+Four contraction sums accompany them. The four that hold in every frame are the ones with one index raised, $\gamma^\mu=g^{\mu\mu}\gamma_\mu$:
 $$
-\sum_\mu\gamma^\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4g_{\alpha\beta}I_4,
+\sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha,\qquad
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,
 $$
 $$
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=-2\,\gamma_\gamma\gamma_\beta\gamma_\alpha .
+\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=2\,\gamma_\gamma\gamma_\beta\gamma_\alpha .
 $$
 Written with every index down, they are frame statements instead, because a cell's square changes with the frame. In a Euclidean frame, where every cell squares to $+I_4$, the same four sums read
 $$
@@ -553,7 +554,7 @@ which is $-2\gamma_0\gamma_k$ for one timelike and one spacelike index, $+2\gamm
 <p><strong>The grading is the reflection count.</strong> By Cartan–Dieudonné, an orthogonal transformation is a product of reflections and its determinant is $(-1)^{\text{count}}$. The split $\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+}\oplus\mathrm{Cl}_{1,3}^{-}$ is that parity.</p>
 </li>
 <li>
-<p><strong>The frame and the metric.</strong> Every vector is $iR_{\vec e_x}^{\mathrm{axf}}$ times the image of $w\in\mathbb{M}_+$, and the image of $\mathbb{M}_+$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $g = \mathrm{diag}(-1,+1,+1,+1)$, its minus signs being those of $i^2$, and on the material basis $g_{\mu\nu}[\mathbb{M}_-]$. The Clifford metric is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.</p>
+<p><strong>The frame and the signs.</strong> Every vector is $iR_{\vec e_x}^{\mathrm{axf}}$ times the image of $w\in\mathbb{M}_+$, and the image of $\mathbb{M}_+$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $\varepsilon=(1,-1,-1,-1)$, its minus signs being those of $i^2$, and on the material basis $g_{\mu\nu}[\mathbb{M}_-]$. The sign vector of the cells is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.</p>
 </li>
 <li>
 <p><strong>Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ is the bar.</strong> Conjugating the image of $\tilde{Q}$ by $iR_{\vec e_x}^{\mathrm{axf}}$ gives the image of $\bar{\tilde{Q}}$: it fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, hence preserves each of $\mathbb{M}_{\pm}$. Together with reversal, which is quaternion conjugation, it composes into the Hermitian conjugation ${}^{*}$. The real structure $\flat = -{}^{*}$ therefore carries the frame within it.</p>
@@ -589,8 +590,8 @@ which is $-2\gamma_0\gamma_k$ for one timelike and one spacelike index, $+2\gamm
 <td>Clifford algebra and its even/odd parts</td>
 </tr>
 <tr>
-<td>$g = \mathrm{diag}(-1,+1,+1,+1)$</td>
-<td>Clifford metric of the generators</td>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>sign vector of the generators</td>
 </tr>
 <tr>
 <td>$g_{\mu\nu}[\mathbb{M}_-]$</td>
@@ -688,6 +689,7 @@ which is $-2\gamma_0\gamma_k$ for one timelike and one spacelike index, $+2\gamm
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li>Companion articles in this series: <a href="matrix-representations-conventions.html">Matrix Representations Conventions</a> (the Clifford reading, the sign conventions, and the chirality operator used throughout, §<em>The Clifford Structure</em>); <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a> (the chiral pair, the two-sided form and the mass); <a href="the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a> (the module, the one-sided spinor action, and the two factors $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$); <a href="exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a> (the projectors and the two Weyl modules); <a href="the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a> (the boost rotor, its Hermiticity, and the rotor conjugation); <a href="the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a>; <a href="exercise-the-thomas-precession.html">Exercise: The Thomas Precession</a> (the composition of non-collinear boosts); <a href="exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a>.</li>
 <li>On the physics of chirality: <a href="chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>; <a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a>; <a href="the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a> (the anti-linear discrete symmetries of the last subsection); <a href="zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a> (the mass as the coupling between the chiralities); <a href="exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a> (the reduction to the Pauli algebra).</li>
 <li>Foundational articles: <a href="introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>; <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>; <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>; <a href="algebra-and-element-conventions.html">Algebra and Element Conventions</a>.</li>

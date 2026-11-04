@@ -83,7 +83,7 @@
 <p><strong>Gap, left visible.</strong> The framework does not derive the values of either mass, and it does not decide which kind a given fermion carries; that is empirical input, as the neutrino companion states. What the framework supplies is the algebraic distinction and the reality structure each kind is built on.</p>
 </li>
 </ul>
-<p>The article is organised as follows. A section fixes what antilinear means in this algebra and tabulates the involutions. A section gives the argument that a mass is a pairing with a conjugate. A section distinguishes the two conjugates and the two masses. A section separates the two real structures, on the algebra and on the module, which is where the retired equation went wrong, and fixes the four levels at which the name "charge conjugation" is used. A section places charge conjugation in its group-theoretic setting, the $\mathrm{Spin}^c$ structure, and reads off which spinors can carry the algebra's central $\mathrm{U}(1)$. A section exhibits the dispersion failure in full, for the retired equation and for all four involutions. A section records what the antilinear structure is genuinely for. A closing section, <em>The Legacy Gamma Formulation</em>, is the dictionary: it is the only place in the article where the gammas appear, because they are a frame of the cell algebra and not a separate structure.</p>
+<p>The article is organised as follows. A section fixes what antilinear means in this algebra and tabulates the involutions. A section gives the argument that a mass is a pairing with a conjugate. A section distinguishes the two conjugates and the two masses. A section separates the two real structures, on the algebra and on the module, which is where the retired equation went wrong, and fixes the four levels at which the name "charge conjugation" is used. A section places charge conjugation in its group-theoretic setting, the $\mathrm{Spin}^c$ structure, and reads off which spinors can carry the algebra's central $\mathrm{U}(1)$. A section exhibits the dispersion failure in full, for the retired equation and for all four involutions. A section records what the antilinear structure is genuinely for. A closing section, <em>The Legacy Pauli Gamma Formulation</em>, is the dictionary: it is the only place in the article where the gammas appear, because they are a frame of the cell algebra and not a separate structure.</p>
 <h2 id="what-antilinear-means-here">What Antilinear Means Here</h2>
 <p>The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and a scalar imaginary $i$ commuting with every unit, $i^2 = -1$. That relation is used all through the article: every sign produced by two imaginary factors is $i^2 = -1$ read once. An element is a sum with complex coefficients,</p>
 <p>$$
@@ -507,7 +507,8 @@ $$</p>
 <p><strong>Kramers degeneracy and antiunitary symmetry.</strong> An antiunitary operator that commutes with the Hamiltonian and squares to $-1$ forces every level to be at least doubly degenerate. The theorem is available to the antilinear maps alone — no linear involution yields the conclusion, whatever its spectrum. The framework carries the $-1$ the theorem needs, but in an internal factor and not in the square of an operation. The internal factor of time reversal is even and real, $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$, so $\eta_T^{2}=L_{\vec e_y^{2}}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=-I_4$: a complex structure on the module. The operation itself, $T=\eta_T\circ{}^{*}$, squares to an inner automorphism instead, because the conjugation turns the left multiplication into a right one, $T^{2}\psi=\vec e_y\psi\vec e_y^{-1}$; that is the rotation by $\pi$ about the second axis, it satisfies $(T^{2})^{2}=\mathrm{id}$ without being $\pm\mathrm{id}$, and it is what the CPT companion calls the operation being of order two up to the free phase. The algebra's real structure is of neither kind: it is an involution, $\flat^{2}=+1$, with no complex structure anywhere in it, and that contrast — an antiunitary operation whose internal factor squares to $-1$ against an involution that squares to $+1$ — is the sharpest reason the distinction between an antilinear symmetry and a linear one has content.</p>
 <p><strong>The discrete symmetries.</strong> Charge conjugation and time reversal are antilinear, and the CPT companion establishes that the antilinearity is forced — a <em>linear</em> time reversal is not a symmetry of the Dirac equation. The internal factors of the three operations are Clifford elements, and their grades decide which chirality each carries to: the factors of charge conjugation and of parity are odd and exchange the chiral halves, the factor of time reversal is even and preserves them, so the factor of $CPT$ is even and preserves them. The grade governs the chirality; the linearity governs the spacetime parity, since an antilinear map multiplies the induced determinant by $-1$ — the point recorded in <em>The Reflection and the Rotation in Biquaternionic Form</em>.</p>
 <p>In every one of these uses the coupling pairs the field with its conjugate, and in every one of them the pairing is a <strong>constraint or a symmetry</strong>, not the mass of the Dirac equation. That is the pattern the retired equation violated, and stating it positively is the content of this article: an antilinear pairing is not thereby a mass, and a mass is not thereby antilinear.</p>
-<h2 id="the-legacy-gamma-formulation">The Legacy Gamma Formulation</h2>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
@@ -555,19 +556,19 @@ $$</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the gammas span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the real cells $L_aR_b$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <p><strong>The identities used in the body.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and every trace taken on the module $\Delta$, of complex dimension four,</p>
 <p>$$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,\qquad
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3,
-$$</p>
+\qquad \varepsilon=(1,-1,-1,-1),$$</p>
 <p>$$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$</p>
 <p>$$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$</p>
 <p>$$
@@ -695,6 +696,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li>Foundational articles: <a href="introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>; <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>; <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>; <a href="algebra-and-element-conventions.html">Conventions in the Biquaternion Universe</a> (the mass-term convention, the real structure $\flat$, and the dispersion failure this article expands).</li>
 <li>The Dirac mass in biquaternionic form: <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a> (the linear chiral pair and the massless limit $\tilde{\nabla}\tilde{\Psi} = 0$); <a href="the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a>.</li>
 <li>The Majorana side: <a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a> (charge conjugation on the module, the Majorana condition, and the obstruction by which $\mathbb{M}_-$ fails to be a reality condition); <a href="chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a> (why a chiral fermion cannot carry a bare Dirac mass).</li>

@@ -97,12 +97,12 @@ $$</p>
 <p>and $G_\mu$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$. Each generator carries one factor of $i$; naming them $G_\mu$ is what keeps that factor from being written out again in every product, and the factor is structural, since without it the time cell would square to $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and the three spatial ones to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. The relations are</p>
 <p>$$
 G_0^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad G_1^{2}=G_2^{2}=G_3^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
-\{G_\mu,G_\nu\}=2g_{\mu\nu}\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad \varepsilon=(1,-1,-1,-1),
 $$</p>
 <p>$$
 \Gamma^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad \{\Gamma,G_\mu\}=0\qquad(\mu=0,1,2,3),
 $$</p>
-<p>with $g=\operatorname{diag}(-1,+1,+1,+1)$. The chirality cell is Hermitian, and in the chiral block basis it acts as $-1$ on $\psi_L$ and $+1$ on $\psi_R$, that is $\Gamma=\operatorname{diag}(-I_2,I_2)$; the projectors are $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-\Gamma)$ and $P_R=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+\Gamma)$.</p>
+<p>with $\varepsilon=(1,-1,-1,-1)$. The chirality cell is Hermitian, and in the chiral block basis it acts as $-1$ on $\psi_L$ and $+1$ on $\psi_R$, that is $\Gamma=\operatorname{diag}(-I_2,I_2)$; the projectors are $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-\Gamma)$ and $P_R=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+\Gamma)$.</p>
 <p><strong>The collapse of the imaginary unit.</strong> Because $i^{2}=-1$, the product of the central imaginary with a cell is a plain cell, and the two collapses used below are</p>
 <p>$$
 i\,\Gamma=R_{\vec e_z}^{\mathrm{axf}},\qquad
@@ -148,7 +148,7 @@ $$</p>
 $$</p>
 <p>where the second form is the first read through $iG_0=-R_{\vec e_x}^{\mathrm{axf}}$ and $iG_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. The time term is a pure right multiplication and the three spatial terms are left times right; the four minus signs are the four factors of $i$ that the generators carry. The operator is two-sided, and since the metric is already in the generators,</p>
 <p>$$
-\mathbb{D}^{2}=-g^{\mu\nu}\frac{\partial^{2}}{\partial x_\mu\partial x_\nu}
+\mathbb{D}^{2}=+g^{\mu\nu}[\mathbb{M}_-]\frac{\partial^{2}}{\partial x_\mu\partial x_\nu}
 =-\frac{\partial^{2}}{\partial t'^{2}}+\sum_k\frac{\partial^{2}}{\partial x_k^{2}}=\Box ,
 $$</p>
 <p>the minus sign being the one of $i^{2}=-1$ spent on the metric, and the last equality the definition $\Box=\partial^2/\partial Q_\mu\partial Q_\mu$ read on the $ict'$ slice, where the spatial coordinates coincide, $Q_k=x_k$, and $\partial^2/\partial Q_t^2=-\partial^2/\partial t'^2$. Every bilinear and every rotation below is an object of this equation.</p>
@@ -363,7 +363,8 @@ $$</p>
 <p><strong>Supplied.</strong> The linear chiral pair, and with it the carrier of the condensate; the chirality cell and the two ways it acts, as a symmetry of the massless equation and as the broken generator of the massive one; the chirality-odd scalar bilinear and its rotation into the pseudoscalar partner; the axial current identity and the pattern of preserved vector and broken axial symmetry; the centrality of the order parameter's value; and the algebraic identification $m\leftrightarrow-2G\langle\bar{\psi}\psi\rangle$. The framework's mass term is not merely compatible with a condensate; it is the term whose coefficient a condensate fixes, and the companion on antilinear structure explains why the condensate is not to be sought in the real structure $\flat$.</p>
 <p><strong>Transcribed.</strong> The NJL model, the mean-field gap equation, the critical coupling $G_c$, the condensate's size, the Goldstone counting, and the Goldstone theorem. These are standard and are used here in the framework's notation.</p>
 <p><strong>Not supplied.</strong> The colour gauge dynamics that produces the condensate in nature; the value of the coupling $G$; the scale $\Lambda$; and therefore the numerical value of $\langle\bar{\psi}\psi\rangle$ and of the constituent mass. The framework is scale-free until these are supplied, exactly as the companion articles record for the masses elsewhere. No biquaternion prediction distinguishes this account from the standard one.</p>
-<h2 id="the-legacy-gamma-formulation">The Legacy Gamma Formulation</h2>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
@@ -391,18 +392,18 @@ $$</p>
 <p>so multiplying a generator or the chirality cell by $i$ trades it for a plain cell; four generators therefore carry $i^{4}=+1$ and the volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=\omega=-i\gamma_5$.</p>
 <p><strong>The identities the article cites.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
@@ -470,7 +471,7 @@ $$</p>
 </tr>
 <tr>
 <td>$G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$</td>
-<td>Generator cells; $\{G_\mu,G_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
+<td>Generator cells; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega$</td>
@@ -556,6 +557,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li>Y. Nambu and G. Jona-Lasinio, "Dynamical model of elementary particles based on an analogy with superconductivity. I," <em>Physical Review</em> <strong>122</strong> (1961) 345–358, and II, <em>Physical Review</em> <strong>124</strong> (1961) 246–254, for the four-fermion mechanism of dynamical mass generation.</li>
 <li>J. Goldstone, "Field theories with superconductor solutions," <em>Nuovo Cimento</em> <strong>19</strong> (1961) 154–164, for the Goldstone theorem and the counting of broken generators.</li>
 <li>S. Coleman and E. Weinberg, "Radiative corrections as the origin of spontaneous symmetry breaking," <em>Physical Review D</em> <strong>7</strong> (1973) 1888–1910, for dynamical symmetry breaking in the effective-potential language.</li>

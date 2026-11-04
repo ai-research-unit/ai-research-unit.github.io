@@ -77,7 +77,7 @@
 \bigl([a,b]_{\mathrm{gr}}\bigr)^{*}=-(-1)^{\lvert a\rvert\lvert b\rvert}\,\bigl[a^{*},b^{*}\bigr]_{\mathrm{gr}},
 $$</p>
 <p>so it reverses a commutator and preserves an anticommutator, the reason being that the order reversal of the adjoint and the Koszul sign of the bracket multiply, and cancel exactly on an odd-odd pair. The third is that this is a statement about the <em>convention</em>: the Koszul-signed rule of a super-* would make the star an anti-automorphism of the bracket without the extra sign, and the corpus's star does not obey that rule; the two conventions are distinguished by a check on two generators, and the article records which one the physics uses — and why it has to be that one: on the other convention the square of a Hermitian odd element is anti-Hermitian, so the Hamiltonian would be imaginary.</p>
-<p>The body is written in <strong>cells</strong>: an operator is a two-sided multiplication $L_{a}R_{b}$, $\psi\mapsto a\psi b$, its adjoint is the cell $(L_{a}R_{b})^{\dagger}=L_{a^{*}}R_{b^{*}}$, and the odd generator acts by the left multiplication $L_{u}$ by a single vector. The matrix frame is those same cells written as letters; it is collected in <em>The Legacy Gamma Formulation</em>, which is the only section of the article where that frame appears, and it is there that the two Dirac equations the corpus carries — the one-sided chiral pair and the two-sided cell equation — are kept apart.</p>
+<p>The body is written in <strong>cells</strong>: an operator is a two-sided multiplication $L_{a}R_{b}$, $\psi\mapsto a\psi b$, its adjoint is the cell $(L_{a}R_{b})^{\dagger}=L_{a^{*}}R_{b^{*}}$, and the odd generator acts by the left multiplication $L_{u}$ by a single vector. The matrix frame is those same cells written as letters; it is collected in <em>The Legacy Pauli Gamma Formulation</em>, which is the only section of the article where that frame appears, and it is there that the two Dirac equations the corpus carries — the one-sided chiral pair and the two-sided cell equation — are kept apart.</p>
 <p>The graded bracket, the parity table, the Lie-superalgebra statement and the odd extension are restated here in the form the physics uses; the parity interpretation of the ambient algebra and the sectors are <em>The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</em>; the supercharge pair and the chirality grading are <em>Supersymmetric Quantum Physics in the Biquaternion Framework</em>; the Grassmann envelope is <em>Grassmann Coherent States in Biquaternionic Form</em> and <em>BRST Symmetry in Biquaternionic Form</em>; the commutator bracket and the trace-free part are <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>; the one-mode parity is <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>. Nothing owned by those articles is re-derived.</p>
 <h2 id="the-graded-algebra-and-its-parity">The Graded Algebra and Its Parity</h2>
 <p><strong>Definition.</strong> On a $\mathbb{Z}/2$-graded algebra $A=A^0\oplus A^1$ the <strong>graded commutator</strong> is</p>
@@ -145,7 +145,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The even part has dimension $1+6+1=8$ and the odd part $4+4=8$; the odd slot is therefore the sum of the vector and the trivector grades, and it is not a single grade. The Clifford relations are $\{v_\mu,v_\nu\}=2g_{\mu\nu}e_t$ with $g=(+1,-1,-1,-1)$, so $v_0^2=e_t$ and $v_k^2=-e_t$.</p>
+<p>The even part has dimension $1+6+1=8$ and the odd part $4+4=8$; the odd slot is therefore the sum of the vector and the trivector grades, and it is not a single grade. The Clifford relations are $\{v_\mu,v_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}e_t$ with $\varepsilon=(1,-1,-1,-1)$, so $v_0^2=e_t$ and $v_k^2=-e_t$.</p>
 <p><strong>Remark (the even part is the Lie algebra of the framework).</strong> The restriction of the graded bracket to $\mathbb{B}$ is the ordinary commutator, that is the Lie algebra of <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>, whose trace-free part is the Lorentz algebra. The odd slot is a module over the even part and not a second Lie algebra: the bracket of two odd elements is even, exactly as the bracket of two reflections is a rotation.</p>
 <h2 id="the-module-and-the-cells">The Module and the Cells</h2>
 <p>The operators of the article are the two-sided multiplications of the algebra on itself, and every one of them is written as a cell rather than as a matrix.</p>
@@ -293,7 +293,8 @@ $$</p>
 <li><strong>Nothing here is a measure or an integral.</strong> The Grassmann and Berezin constructions are cited from their articles and are not used; the article is algebra, grading and adjointness.</li>
 <li><strong>No supersymmetry algebra is claimed to be contained in $\mathbb{B}$.</strong> The super-Poincaré algebra, if it is to be written, is written on an extension; the corpus's supersymmetry article states which superalgebra its construction realizes, and this article adds the general boundary and the Hermitian structure, not a second claim.</li>
 </ul>
-<h2 id="the-legacy-gamma-formulation">The Legacy Gamma Formulation</h2>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body written as letters, and this section is the only place in the article where they appear: every section above is written in cells.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications of §<em>The Module and the Cells</em>, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
@@ -321,9 +322,9 @@ $$</p>
 \gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^{2}}^{\mathrm{axf}}=i^2L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4,\qquad
 \gamma_k^2=i^2L_{\vec e_k^{2}}^{\mathrm{axf}}R_{\vec e_y^{2}}^{\mathrm{axf}}=i^2L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=-I_4 .
 $$</p>
-<p>Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_k$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the metric $g=\operatorname{diag}(-1,+1,+1,+1)$, and</p>
+<p>Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_k$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the signs $\varepsilon=(1,-1,-1,-1)$, and</p>
 <p>$$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,\qquad
 \gamma_5^2=I_4 .
 $$</p>
@@ -368,7 +369,7 @@ $$</p>
 $$</p>
 <p>so it reverses a commutator and preserves an anticommutator: the star reverses the order of the factors, and only the odd-odd, symmetric case is even under the reversal. The Koszul-signed super-* convention would give the cleaner rule without the parity sign, and the corpus's star is not of that convention; the two are distinguished on two generators, and the physics selects the plain one, because under the signed rule the square of a Hermitian odd element is anti-Hermitian and the Hamiltonian would be imaginary.</p>
 <p>A <strong>supercharge</strong> is an odd element, paired either with <strong>itself</strong>, $\{\mathcal{Q},\mathcal{Q}\}=2\mathcal{Q}^{2}=2H$, which is the Clifford square and needs $\mathcal{Q}^{2}\neq0$, or with its <strong>star</strong>, $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H'$, which is the nilpotent pairing of the corpus's supersymmetric quantum physics and is Hermitian and even because the star is an involution. The two agree for a Hermitian supercharge and are reconciled by $i^{2}=-1$ otherwise. In the module $\mathrm{Cl}^1=\mathbb{B}u$ a supercharge is $\mathcal{Q}=su$ with adjoint $\mathcal{Q}^{*}=-us^{*}$ and $\mathcal{Q}\mathcal{Q}^{*}=-q(u)ss^{*}$, an even element; the symmetric form $\{\mathcal{Q},\mathcal{Q}^{*}\}=-q(u)(ss^{*}+s^{*}s)$ holds when $s$ has a definite $u$-parity, and only the evenness and the Hermiticity hold in general. The odd extension is one generator, not a second algebra, and the odd slot carries the algebra's own Hermitian form, $-q(u)\langle s,t\rangle_{*}$, which is the form of $\mathbb{B}$ for a spacelike $u$ and its negative for a timelike one.</p>
-<p>The matrix frame is the frame of cells written as letters, and it is confined to <em>The Legacy Gamma Formulation</em>: the five cells, their squares fixed by $i^2=-1$, the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $\chi^2=e_t$, and the two Dirac equations — the one-sided chiral pair, whose chirality sits in the two fields, and the two-sided cell equation, whose chirality sits in the side of the action.</p>
+<p>The matrix frame is the frame of cells written as letters, and it is confined to <em>The Legacy Pauli Gamma Formulation</em>: the five cells, their squares fixed by $i^2=-1$, the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $\chi^2=e_t$, and the two Dirac equations — the one-sided chiral pair, whose chirality sits in the two fields, and the two-sided cell equation, whose chirality sits in the side of the action.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -460,7 +461,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\gamma_\mu$, $\gamma_5$</td>
-<td>The frame cells of <em>The Legacy Gamma Formulation</em>: letters for the cells, used in that section only</td>
+<td>The frame cells of <em>The Legacy Pauli Gamma Formulation</em>: letters for the cells, used in that section only</td>
 </tr>
 <tr>
 <td>$\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$</td>
@@ -482,6 +483,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li>Manfred Scheunert, <em>The Theory of Lie Superalgebras</em>, Lecture Notes in Mathematics 716 (Springer, 1979), for the graded bracket, the super-Jacobi identity and the structure theory.</li>
 <li>Julius Wess and Jonathan Bagger, <em>Supersymmetry and Supergravity</em> (Princeton University Press, 2nd ed. 1992), for the super-Poincaré algebra and the supercharge conventions.</li>
 <li>Bryce S. DeWitt, <em>Supermanifolds</em> (Cambridge University Press, 2nd ed. 1992), for the Grassmann envelope, the Berezin integral and the functorial view of the odd coordinates.</li>

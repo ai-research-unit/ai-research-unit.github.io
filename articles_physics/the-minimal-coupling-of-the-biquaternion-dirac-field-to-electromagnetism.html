@@ -265,7 +265,7 @@ $$</p>
 <p>$$
 \left(\sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F} - m^{2}\right)\tilde{\Psi}_R = 0 ,
 $$</p>
-<p>a covariant wave equation with a curvature term. The corresponding statement for $\tilde\Psi_L$ carries $D\bar{D}$ in place of $\bar{D}D$. The parallel with the standard spinor-module square is an interpretation of this identity and not a derivation of it: there the second-order operator carries, beside the d'Alembertian, a contraction of the field strength with the spin tensor of the Lorentz generators; here the corresponding term is the algebra element $\frac{iϙ}{\hbar}\tilde{F}$ multiplying the field, and no Clifford matrix enters. The spin tensor needed for the comparison is the one defined in <em>The Legacy Gamma Formulation</em>.</p>
+<p>a covariant wave equation with a curvature term. The corresponding statement for $\tilde\Psi_L$ carries $D\bar{D}$ in place of $\bar{D}D$. The parallel with the standard spinor-module square is an interpretation of this identity and not a derivation of it: there the second-order operator carries, beside the d'Alembertian, a contraction of the field strength with the spin tensor of the Lorentz generators; here the corresponding term is the algebra element $\frac{iϙ}{\hbar}\tilde{F}$ multiplying the field, and no Clifford matrix enters. The spin tensor needed for the comparison is the one defined in <em>The Legacy Pauli Gamma Formulation</em>.</p>
 <h2 id="the-massive-case-gauge-covariance-and-the-axial-symmetry">The Massive Case: Gauge Covariance and the Axial Symmetry</h2>
 <p>The massive equation is where the mass term's role is decided, and with the linear chiral pair it is benign. Suppose the minimally coupled massive equation holds in one gauge:</p>
 <p>$$
@@ -391,7 +391,7 @@ $$</p>
 <li><em>The value of the coupling.</em> The charge $ϙ$ is a parameter; the algebra does not fix it.</li>
 <li><em>The standard spinor-module results.</em> The conserved current, the non-relativistic limit, and $g=2$ are properties of the Dirac equation the framework contains, obtained with the linear mass term on the spinor module; the framework transcribes them.</li>
 </ul>
-<p><strong>The commutativity that makes this unambiguous — and the sector where it fails.</strong> The whole prescription rests on a property that this article has used without naming: for an internal gauge group the substitution $\partial \to D$ gives the same equation whether it is applied to the action or to the Euler–Lagrange equation of motion, so it does not matter which of the two is gauged. The reason is that the generators of an internal group act on an internal index, while the four matrices of the gradient act on the spinor index, so the two sets commute; the abelian $\mathrm{U}(1)$ of this article is the simplest case. The property is not universal. For a Dirac fermion coupled to gravity in the vierbein formulation the gauge generators are the Lorentz generators $S_{cd}$, which act on the spinor index itself and therefore do <strong>not</strong> commute with the matrices of the gradient — the commutator is stated and checked in <em>The Legacy Gamma Formulation</em> below — and the two procedures then differ by an anticommutator term. J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and constructs a world-index formalism in which it is removed, recorded in <em>Curved Spacetime and the Biquaternion Framework</em>. The consequence for this article is a boundary rather than a defect: the minimal-coupling prescription derived here is unambiguous <strong>because</strong> its gauge group is internal, and it must not be transferred to the gravitational sector unchanged, where the same prescription is a different and inequivalent construction.</p>
+<p><strong>The commutativity that makes this unambiguous — and the sector where it fails.</strong> The whole prescription rests on a property that this article has used without naming: for an internal gauge group the substitution $\partial \to D$ gives the same equation whether it is applied to the action or to the Euler–Lagrange equation of motion, so it does not matter which of the two is gauged. The reason is that the generators of an internal group act on an internal index, while the four matrices of the gradient act on the spinor index, so the two sets commute; the abelian $\mathrm{U}(1)$ of this article is the simplest case. The property is not universal. For a Dirac fermion coupled to gravity in the vierbein formulation the gauge generators are the Lorentz generators $S_{cd}$, which act on the spinor index itself and therefore do <strong>not</strong> commute with the matrices of the gradient — the commutator is stated and checked in <em>The Legacy Pauli Gamma Formulation</em> below — and the two procedures then differ by an anticommutator term. J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and constructs a world-index formalism in which it is removed, recorded in <em>Curved Spacetime and the Biquaternion Framework</em>. The consequence for this article is a boundary rather than a defect: the minimal-coupling prescription derived here is unambiguous <strong>because</strong> its gauge group is internal, and it must not be transferred to the gravitational sector unchanged, where the same prescription is a different and inequivalent construction.</p>
 <p><strong>What is interpretation.</strong> Reading the coupled equation as a Dirac field propagating in a background connection is a geometric interpretation. The algebraic content is the transformation law, the covariance of the coupled equation in both the massless and the massive case, and the explicit component form; the bundle picture is a consistent interpretation of that content, as in the gauge principle article.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
@@ -417,7 +417,8 @@ $$</p>
 <p><strong>Empirical content.</strong> As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard gauge theory. The minimal coupling as presented is a reformulation; the framework-level question of empirical contact remains open.</p>
 </li>
 </ol>
-<h2 id="the-legacy-gamma-formulation">The Legacy Gamma Formulation</h2>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and they are used only in this section, as the frame in which the cells can be compared with the standard matrices.</p>
 <p>Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the left and right multiplications of the regular module, and $c(M)$ for the matrix of a cell in the basis of the sixteen products. The four gammas and $\gamma_5$ are single cells:</p>
 <p>$$
@@ -430,37 +431,29 @@ $$</p>
 <p>A single cell is a tensor $a\otimes b$ read through $L_aR_b$, so its coefficient matrix has rank one; the cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and every element of $M_4(\mathbb{C})$ is a sum of at most four of them.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That $\gamma_5$ has eigenvalues $\pm1$ with multiplicity two each is the module statement of $\chi^2=e_t$.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
-<p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
+<p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k)^2=-I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
+[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
 S_{cd}=\tfrac14[\gamma_c,\gamma_d],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
++\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$,</p>
-<p>$$
-\sum_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\delta_{\alpha\beta}I_4,
-$$
-$$
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\delta\gamma_\mu=-2\,\gamma_\delta\gamma_\beta\gamma_\alpha .
-$$</p>
-<p>In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.</p>
-<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.</p>
 <h2 id="summary">Summary</h2>
 <p>The minimal coupling of the biquaternion Dirac field to electromagnetism is the replacement of the gradient by the covariant derivative of the gauge principle,</p>
 <p>$$
@@ -640,6 +633,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li>P. A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the original equation and the minimal coupling.</li>
 <li>Hermann Weyl, "Elektron und Gravitation," <em>Zeitschrift für Physik</em> <strong>56</strong> (1929) 330–352, for the origin of the local phase and the gauge principle.</li>
 <li>J. D. Bjorken and S. D. Drell, <em>Relativistic Quantum Mechanics</em> (McGraw-Hill, 1964), for the standard treatment of minimal coupling, the conserved current, and the non-relativistic limit.</li>

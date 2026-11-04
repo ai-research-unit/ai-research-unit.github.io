@@ -770,7 +770,8 @@ M=L_{e_t-\vec e_x}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_z}^{\mathrm{ax
 $$</p>
 <p><strong>The caution.</strong> The matrix looks like two copies of a Jordan block, but it is not a left regular matrix: in the coefficient basis a left matrix has equal entries $(1,2)$ and $(2,1)$ up to sign, and $M$ has $2$ and $0$. The block look is a property of the coefficient basis, not of the Peirce decomposition.</p>
 <p><strong>The full computation.</strong> <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em> carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.</p>
-<h2 id="the-legacy-gamma-formulation">The Legacy Gamma Formulation</h2>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
 <p>The gamma frame is one choice inside the method's basis; the body writes the cells.</p>
 <p><strong>The five matrices.</strong> In the corpus frame $(\beta,\delta)=(\vec e_y,\vec e_x)$,
 $$
@@ -780,14 +781,14 @@ $$
 \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$</p>
-<p><strong>The Clifford relations.</strong> With the metric $g=\operatorname{diag}(-1,+1,+1,+1)$,
+<p><strong>The Clifford relations.</strong> With the sign vector $\varepsilon=(1,-1,-1,-1)$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm{I}_4,
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm{I}_4,
 \qquad
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3,
 \qquad
-\{\gamma_5,\gamma_\mu\}=0.
-$$</p>
+\{\gamma_5,\gamma_\mu\}=0,
+\qquad \varepsilon=(1,-1,-1,-1),$$</p>
 <p><strong>The chirality projectors.</strong>
 $$
 P_{\pm}=\tfrac12\bigl(\mathrm{I}_4\pm\gamma_5\bigr)
@@ -869,6 +870,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the construction and the product question.</li>
 <li><a href="m4c-axis-free-representation.html">The $M_4(\mathbb{C})$ Axis-Free Representation</a>, for the left regular model and its trace and determinant.</li>
 <li><a href="the-polarized-module-of-the-biquaternion-algebra.html">The Polarized Module of the Biquaternion Algebra</a>, for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}^{\mathrm{pau}}R_{P_j}^{\mathrm{pau}}$.</li>

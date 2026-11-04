@@ -73,9 +73,9 @@
 <p>Cartan observed that the spin group $\mathrm{Spin}(8)$ has three eight-dimensional real representations — the vector $8_v$ and the two half-spinors $8_s, 8_c$ — and that they are permuted by an outer automorphism of order three, the <em>triality</em> of $D_4$. Triality itself is special to dimension eight: there, and only there, the three representations have the same dimension <em>and</em> an outer automorphism of order three permutes them, and the composition law that comes with the permutation is the octonion product.</p>
 <p>In four-dimensional Minkowski space the three spaces do have dimensions four, four and four — a Lorentz vector, and the two four-real-component semi-spinors that a Dirac spinor decomposes into — but $\mathrm{Spin}(1,3)$ has no order-three outer automorphism, so the coincidence of dimensions buys nothing on its own. Liu Yu-Fen asked whether a permutation can be built anyway, from extra data, and constructed what he calls a <em>ding</em> construction: an order-three map $J$ on $\mathbb{M}^{1+3}\times S_1\times S_2$ built from a triple of neutral elements, under which the Dirac spinor becomes a complex four-vector. The composition law it defines is that of the algebra of complexified quaternions — the biquaternion algebra — so the <em>vector representation of the Dirac spinor</em> is the same thing as a biquaternionic representation of it. This article records that construction, its bosonic rewriting of the Dirac Lagrangian, and the self-dual form the massive Dirac equation takes in it.</p>
 <p>The construction is a companion to the corpus's spinor-module articles. There, the Dirac field lives in a minimal left ideal of $\mathbb{B}$ and the Lorentz group acts on the left; here, a <em>different</em> linear representation of the same group — on a complex four-vector $G_\mu$ — carries the same field, and the two representations are related by fixed neutral elements. What is gained is a dictionary in which every Dirac bilinear becomes a bilinear in $G$ and its conjugate; what is paid is a preferred timelike direction, the neutral element $k_\mu$, which the dictionary needs and the metric does not supply.</p>
-<p>The conventions are those of the companion articles and of <em>The Dirac Equation in Biquaternionic Form</em>: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, the quaternion relations $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$ cyclically, and the central scalar imaginary $i$, with $i^2=-1$. The article is written in the <strong>cell algebra</strong>: a generator is the cell $C_\mu=iL_{a_\mu}R_{b_\mu}$, acting by $C_\mu\Psi=i a_\mu\Psi b_\mu$, and the gamma matrices are a frame of that algebra, displayed once in §The Legacy Gamma Formulation. The source's four-vector indices $\mu = 0,1,2,3$ are ordinary Minkowski indices with metric</p>
+<p>The conventions are those of the companion articles and of <em>The Dirac Equation in Biquaternionic Form</em>: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, the quaternion relations $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$ cyclically, and the central scalar imaginary $i$, with $i^2=-1$. The article is written in the <strong>cell algebra</strong>: a generator is the cell $C_\mu=iL_{a_\mu}R_{b_\mu}$, acting by $C_\mu\Psi=i a_\mu\Psi b_\mu$, and the gamma matrices are a frame of that algebra, displayed once in §The Legacy Pauli Gamma Formulation. The source's four-vector indices $\mu = 0,1,2,3$ are ordinary Minkowski indices with metric</p>
 <p>$$
-g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1),
+g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1),
 $$</p>
 <p>which is the corpus's <strong>generator metric</strong>, the same object the four generators of the Dirac module obey; the source writes $\eta_{\mu\nu}$ for it. It is <em>not</em> the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = \sum_{\mu,\nu}V_\mu g_{\mu\nu}W_\nu = \sum_\mu\epsilon_\mu V_\mu W_\mu$. No index is raised in this article. Where the source wrote a contraction with one index up and one down and no metric between them, the sum here carries the sign vector $\epsilon=(1,-1,-1,-1)$, written $\sum_\mu\epsilon_\mu$; where $g_{\mu\nu}$ is written, it carries the signs itself and the sum is plain. The sign vector and the Levi-Civita symbol $\varepsilon_{\mu\nu\lambda\rho}$ are different letters.</p>
 <h2 id="the-trinomial-unit-basis">The Trinomial Unit Basis</h2>
@@ -209,7 +209,7 @@ Here $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ and $C_\mu=iL_
 $$
 \Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
-and it anticommutes with each $C_\mu$, so it separates the two chiral halves of every spinor. Its representative on the reference frame, written in §The Legacy Gamma Formulation, is the usual fifth gamma. The source further rewrites the mass form as</p>
+and it anticommutes with each $C_\mu$, so it separates the two chiral halves of every spinor. Its representative on the reference frame, written in §The Legacy Pauli Gamma Formulation, is the usual fifth gamma. The source further rewrites the mass form as</p>
 <p>$$
 \bar\Psi\Psi = \sum_\mu\epsilon_\mu\, K_\mu\,\bar\Psi\, C_\mu\Psi
 $$</p>
@@ -271,7 +271,7 @@ $$
 so the combination $T_1-T_2=T_1+\overline{T_1}$ is real. The minus comes from the antisymmetry of $\varepsilon$ under the exchange of the two slots it carries.</p>
 <p>Two features are worth naming. The kinetic operator is not symmetric in $G$ and $G^*$: the two terms differ by a sign as well as by conjugation, and that is what makes their difference real. The mass term is $m(G^*G^* + GG)$, not $mG^*G$: the mass couples $G$ to $G^*$ rather than to itself, which is the shadow of the chirality-off-diagonal mass of the spinor formulation. The kinetic operator has the block structure of a Dirac operator in a four-vector carrier. The generator cells anticommute,
 $$
-C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu},
+C_\mu C_\nu + C_\nu C_\mu = 2\epsilon_\mu\delta_{\mu\nu},\qquad \epsilon=(1,-1,-1,-1),
 $$
 so the operator $\sum_\mu\epsilon_\mu C_\mu\,\partial/\partial x_\mu$ squares to the d'Alembertian,
 $$
@@ -406,7 +406,8 @@ so the preferred frame is not put in by hand in the final form, it is the algebr
 </li>
 </ol>
 <p>These questions are open.</p>
-<h2 id="the-legacy-gamma-formulation">The Legacy Gamma Formulation</h2>
+<h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
 <p>The four gammas are the generator cells of the body, $\gamma_\mu=C_\mu$, and together they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>$$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
@@ -437,7 +438,7 @@ $$</p>
 <td>Ordinary Minkowski four-vector indices, $0,1,2,3$</td>
 </tr>
 <tr>
-<td>$g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$</td>
+<td>$g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1)$</td>
 <td>Generator metric of the frame (the source's $\eta$); not the $ict'$ metric</td>
 </tr>
 <tr>
@@ -556,6 +557,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the reasons the AXF matrices replace the Pauli and gamma matrices.</li>
 <li>Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the trinomial unit basis and the neutral elements, the composition law $c_{\mu\nu\lambda}$ and the normed condition, the semi-spinor four-vectors $B_\mu, N_\mu$, the s-vector $G_\mu = B_\mu + iN_\mu$, the bilinear dictionary, the bosonic Dirac Lagrangian, the self-dual form of the massive equation, the $\mathrm{U}(1)$ transformation and the De Moivre theorem, and the dual map $B \leftrightarrow N$. The explicit matrices $\vec u_{\nu}$ are its equations (16)–(18).</li>
 <li>Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the restatement of the construction with the fuller cubic form, the braid-group "Dirac's game", the chiral biquaternions $R_\mu, L_\mu$, the anti-self-dual two-form $H_{\mu\nu}$, the chiral form of the equation of motion, and the parent-action duality carried in the companion article <em>Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</em>.</li>
 <li>E. Cartan, <em>Leçons sur la théorie des spineurs</em> I, II (Hermann, Paris, 1938); English translation by R. Streater, <em>The Theory of Spinors</em> (Hermann, Paris, 1966), for the original triality of $\mathrm{Spin}(8)$.</li>
