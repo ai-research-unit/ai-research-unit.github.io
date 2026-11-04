@@ -23,7 +23,7 @@ The first two rows are one notion. The adjoint action carries the two integer ca
 
 **The Peirce index.** A complete family $\tilde\Pi_+,\tilde\Pi_-$ cuts the algebra into four lines $\mathbb{B}_{rt}=\tilde\Pi_r\mathbb{B}\tilde\Pi_t$, with $r,t\in\{+,-\}$. The indices $r,t$ are the Peirce indices; they are written $r,t$ here to leave $s$ for the spin. The right index selects the copy: $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$. Both copies carry spin $\tfrac12$. The Peirce index does not distinguish a spin from another spin; it distinguishes two copies of the same spin.
 
-**The chirality.** In the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$, with $\tilde\Xi_{\mathrm{ad}}$ its central root of $-1$, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, commuting with the algebra, the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$. It satisfies $\chi^2=+e_t$, and the central idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$, with $\chi e_\pm=\pm e_\pm$. The two idempotents split the doubled algebra into two chiral halves. Chirality is a Lorentz label, not a rotation label: on the rotation subgroup the two halves carry the same spin. The root $\tilde\Xi_{\mathrm{ad}}$ is an element of the double; the spin is the real number $s$.
+**The chirality.** In the double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}$, with $\tilde\Xi_{\mathrm{ad}}$ its central root of $-1$, $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, commuting with the algebra, the chirality has the central form $\chi=i\tilde\Xi_{\mathrm{ad}}$, its operator being the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$. The sign satisfies $\chi^2=+e_t$, and the central idempotents are $e_\pm=\tfrac12(e_t\pm\chi)$, with $\chi e_\pm=\pm e_\pm$. The two idempotents split the doubled algebra into two chiral halves. Chirality is a Lorentz label, not a rotation label: on the rotation subgroup the two halves carry the same spin. The root $\tilde\Xi_{\mathrm{ad}}$ is an element of the double; the spin is the real number $s$.
 
 So the four uses reduce to one definition, one instance and two signs. The rest of the article is the definition and its two structures.
 
@@ -230,7 +230,7 @@ $$
 
 so $P$ is $+1$ on $S_+$ and $-1$ on $S_-$. It is implemented by the element $i\vec e_z$, which is not central: $i\vec e_z\vec e_x=+i\vec e_y$ while $\vec e_x i\vec e_z=-i\vec e_y$. The Peirce index is therefore an inner, non-central copy label, and it never changes a spin value. Right multiplication by the nilpotent $\vec\Upsilon_{+-}$ gives the module isomorphism $S_+\to S_-$, but it is not the grading: $\vec\Upsilon_{+-}^2=0$, so it cannot be an involution.
 
-**Chirality is central, but not a spin.** In the double the chirality $\chi=i\tilde\Xi_{\mathrm{ad}}$ is central, and $\chi^2=e_t$. Its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$. Both halves carry the same rotation spin. Chirality distinguishes the two Lorentz chiralities, not two values of $s$.
+**Chirality is central, but not a spin.** In the double the central form of the chirality, $\chi=i\tilde\Xi_{\mathrm{ad}}$, is central, and $\chi^2=e_t$. Its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$. Both halves carry the same rotation spin. Chirality distinguishes the two Lorentz chiralities, not two values of $s$.
 
 The three signs are therefore distinct: a central sign that marks integer against half-integer, an inner non-central sign that separates two copies of one half-integer carrier, and a central sign in a doubled algebra that separates two Lorentz halves. Only the first tracks the integrality of a spin; none of the three is a spin value.
 
@@ -277,10 +277,9 @@ The closure theorem states that these are all the irreducible subcarriers. There
 ## Further Reading
 
 - [The Category of Modules in the Biquaternion Algebra](the-category-of-modules.html), for the simple module $S$, the classification of the modules and the lines of $\mathbb{C}^2$ that index the minimal left ideals.
-- [The Minimal Left Ideals in the Biquaternion Algebra](the-minimal-left-ideals.html), for the direct sum ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$.
+- [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the direct sum ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$, the spinor spaces, the mixed units and the ladder.
 - [The Regular Module in the Biquaternion Algebra](the-regular-module.html), for the ideals and the two-sided simplicity.
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the spinor spaces, the mixed units and the ladder.
-- [Chirality: The Conjugate Pair in the Biquaternion Algebra](chirality-the-conjugate-pair.html), for the Peirce sign and the central chiral sign.
+- [The Unpolarized Module of the Biquaternion Algebra](the-unpolarized-module-of-the-biquaternion-algebra.html), for the Peirce sign and the central chiral sign.
 - [The Casimir Operator](the-casimir-operator.html), for the general theory of the Casimir operator.
 - [Representations of Lie Algebras](representations-of-lie-algebras.html), for the highest-weight classification.
 - [The Determination of the Possible Spins in Biquaternionic Form](../articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.html), for the physical interpretation.

@@ -764,7 +764,7 @@ What the article does **not** supply is a dynamics. It supplies the carrier, the
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian observables and the two-state system.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the classification $(\tfrac12,0)$ and $(0,\tfrac12)$ used here.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the one-sided chiral pair and its two-sided Kravchenko form.
-- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) — the central sign of the complexification and the chiral projectors.
+- [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) — the central sign of the complexification and the chiral projectors.
 - [The Reflection and the Rotation in Biquaternionic Form](the-reflection-and-the-rotation-in-biquaternionic-form.html) — the discrete symmetries that exchange the two chiral halves.
 - [Matrix Representations: Conventions](matrix-representations-conventions.html) — the five-gamma frame and the two real Clifford algebras.
 

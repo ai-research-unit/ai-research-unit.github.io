@@ -29,7 +29,7 @@ The three are often conflated because their compact parts all involve $SU(2)$. T
 | The $*$-unitary group, its normal form and its topology | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The polar decomposition and the retractions | [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html) |
 | The three actions and the sandwich | [Element and Operator Representations: The Three Actions](element-and-operator-representations-the-three-actions.html) |
-| The minimal left ideals and the spinor spaces | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
+| The minimal left ideals and the spinor spaces | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | The Krein isometry group and its Cartan decomposition | [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html) |
 | The Krein form and the gauge calibration | [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html) |
 | The state space and the Born form | [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) |

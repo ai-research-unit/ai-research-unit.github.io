@@ -690,7 +690,7 @@ not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\v
 
 **The eigenbasis exhibits the two spinor spaces as the two columns of its matrix model. Each column is a minimal left ideal, each is a complex plane, and each carries both eigenvalues under left multiplication. The Peirce index is the right index, not the left one; it is not a chirality.**
 
-The general statement is in *Spinors as Peirce Coordinates in the Biquaternion Algebra*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.
+The general statement is in *The Polarized Module of the Biquaternion Algebra*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.
 
 ### The Two Spinor Spaces
 
@@ -838,7 +838,7 @@ It therefore does not act inside the Peirce decomposition: the two Peirce copies
 
 ### Physical Interpretation
 
-In the language of physics, the pair of columns is two copies of one Weyl spinor, not a Dirac spinor: the two Peirce copies carry the same left-handed module. The two eigenvalues $\lambda_\pm$ play the role of two mass or energy labels inside each copy. A spinor in a definite Peirce copy has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves the Peirce copy; a copy-flip coupling, such as the right multiplication by one of the nilpotents, couples the two copies and is therefore not a left multiplication by an element. That coupling is not the chiral mass: the chiral mass pairs $S$ with the conjugate module $S^{\mathrm{c}}$, as in *Chirality: The Conjugate Pair*. The general element of $\mathbb{B}$, which has off-diagonal entries, is a pair of spinors, one of each Peirce copy, and its off-diagonal entries mix the two spectral components inside each Peirce copy rather than the two Peirce copies.
+In the language of physics, the pair of columns is two copies of one Weyl spinor, not a Dirac spinor: the two Peirce copies carry the same left-handed module. The two eigenvalues $\lambda_\pm$ play the role of two mass or energy labels inside each copy. A spinor in a definite Peirce copy has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves the Peirce copy; a copy-flip coupling, such as the right multiplication by one of the nilpotents, couples the two copies and is therefore not a left multiplication by an element. That coupling is not the chiral mass: the chiral mass pairs $S$ with the conjugate module $S^{\mathrm{c}}$, as in *The Unpolarized Module of the Biquaternion Algebra*. The general element of $\mathbb{B}$, which has off-diagonal entries, is a pair of spinors, one of each Peirce copy, and its off-diagonal entries mix the two spectral components inside each Peirce copy rather than the two Peirce copies.
 
 ## Summary
 

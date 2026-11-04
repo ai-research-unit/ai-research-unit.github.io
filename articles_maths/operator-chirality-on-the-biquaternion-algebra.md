@@ -10,7 +10,7 @@
 
 **The order of the article.** Section §*The Two Slots* defines the sides, their dimensions and their overlap. Section §*The Chirality Operator of the Frame* reads the volume cell as a pure right multiplier and lists what it satisfies. Section §*Conjugation Exchanges the Sides* proves that the natural conjugate of a left multiplier is a right multiplier, which is the second side-exchanging map and the origin of the phases. Sections §*The Swap of the Two Sides* to §*The Swap on the Frame* prove the exchange operator, its matrix, its two eigenspaces and its action on the frame. Section §*The Bivectors Are Not Stable* records what the swap moves. Section §*What Operator Chirality Is Not* is the separation. Section §*Why the Slot Label Is Not a Grading* fixes what the sides can and cannot supply.
 
-**Boundaries.** The cells, the two families and the switch are *Families of Matrix Representations*; the frames are *$M_4(\mathbb{C})$ Axis-Free Representation* and *$M_4(\mathbb{C})$ Pauli Representation*, with their operator articles *$M_4(\mathbb{C})$ Axis-Free Representation : Operators* and *$M_4(\mathbb{C})$ Pauli Representation : Operators*; the carrier and its splittings are *The Unpolarized Module of $M_4(\mathbb{C})$*; the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is *The Endomorphisms of the Biquaternion Algebra*.
+**Boundaries.** The cells, the two families and the switch are *Families of Matrix Representations*; the frames are *$M_4(\mathbb{C})$ Axis-Free Representation* and *$M_4(\mathbb{C})$ Pauli Representation*, with their operator articles *$M_4(\mathbb{C})$ Axis-Free Representation : Operators* and *$M_4(\mathbb{C})$ Pauli Representation : Operators*; the carrier and its splittings are *The Unpolarized Module of the Biquaternion Algebra*; the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is *The Endomorphisms of the Biquaternion Algebra*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, and $i$ central. The cells are $L_aR_b$ with $L_aR_b\tilde X=a\tilde Xb$, and the sixteen of them are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. In the axis-free frame the gamma frame is
 $$
@@ -318,7 +318,7 @@ The notion is unrelated to the eight objects that usually carry the name: a root
 
 ## Further Reading
 
-- [The Unpolarized Module of $M_4(\mathbb{C})$](the-unpolarized-module-of-m4c.html), for the carrier, the projective line of splittings and the trace form.
+- [The Unpolarized Module of the Biquaternion Algebra](the-unpolarized-module-of-the-biquaternion-algebra.html), for the carrier, the projective line of splittings and the trace form.
 - [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html), for the cells as an orthogonal basis and the coefficient matrix.
 - [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the same operators in the tensor display.
 - [Families of Matrix Representations](families-of-matrix-representations.html), for the two sides, the switch and the change of frame.

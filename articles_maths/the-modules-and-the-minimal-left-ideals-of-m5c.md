@@ -56,7 +56,7 @@ The article assumes the matrix algebra, the frame and the Peirce decomposition. 
 
 **Proof.** A semisimple module is a direct sum of simple modules; the simple modules are the quotients of the regular module by maximal left ideals, and all are isomorphic to $V$ by the minimal-left-ideal computation below. The multiplicity $m$ is the dimension divided by $5$.
 
-## The Minimal Left Ideals
+## The Polarized Module of the Biquaternion Algebra
 
 ### Rank-One Idempotents
 

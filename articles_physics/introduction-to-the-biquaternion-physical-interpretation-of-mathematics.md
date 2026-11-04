@@ -104,15 +104,14 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Idempotents](../articles_maths/idempotents.html)
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html)
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
+- [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html)
 
 #### The Modules
 
 - [The Regular Module](../articles_maths/the-regular-module.html)
-- [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html)
+- [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html)
 - [The Category of Modules](../articles_maths/the-category-of-modules.html)
-- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html)
+- [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html)
 - [The Four Uses of Spin in the Biquaternion Algebra](../articles_maths/the-four-uses-of-spin-in-the-biquaternion-algebra.html)
 - [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html)
 

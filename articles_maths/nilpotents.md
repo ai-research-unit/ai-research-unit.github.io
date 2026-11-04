@@ -14,7 +14,7 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 
 **The results.** The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.
 
-The article is algebraic. The zero-divisor set and the criterion on the central square are *Zero Divisors and Units*; the roots of $+1$ are *Idempotents*; the minimal ideals the nilpotents generate are *The Minimal Left Ideals*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The article is algebraic. The zero-divisor set and the criterion on the central square are *Zero Divisors and Units*; the roots of $+1$ are *Idempotents*; the minimal ideals the nilpotents generate are *The Polarized Module of the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},

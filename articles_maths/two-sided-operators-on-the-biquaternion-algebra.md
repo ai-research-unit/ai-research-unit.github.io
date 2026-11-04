@@ -158,7 +158,7 @@ $$
 U_{ij}U_{kl}=\delta_{jk}U_{il},
 $$
 
-the multiplication table of the matrix units of $M_2(\mathbb{C})$, by *Spinors as Peirce Coordinates in the Biquaternion Algebra*, §*Systems of Matrix Units*. The order of the indices is the matrix order: the first index is the row, the second the column, and $U_{12}=\vec\Upsilon_-$ and $U_{21}=\vec\Upsilon_+$ are the two mixed units in that order.
+the multiplication table of the matrix units of $M_2(\mathbb{C})$, by *The Polarized Module of the Biquaternion Algebra*, §*Systems of Matrix Units*. The order of the indices is the matrix order: the first index is the row, the second the column, and $U_{12}=\vec\Upsilon_-$ and $U_{21}=\vec\Upsilon_+$ are the two mixed units in that order.
 
 **The elementary operators.** For fixed $i,j,k,l$, the operator $U_{ij}[\,]U_{kl}$ acts on the basis element $U_{mn}$ by
 
@@ -449,6 +449,6 @@ The plain adjoint exchanges the parameters, $(L_{\tilde Q}R_{\tilde P})^{\approx
 - [The One-Sided Operators on the Biquaternion Algebra](the-one-sided-operators-on-the-biquaternion-algebra.html), for the two boundary families, their commutation and the intersection used in the ladder.
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the association of the one-sided families and the four adjoints.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the plain form and its quadratic form.
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the algebra's matrix units used in the generation theorem.
+- [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the algebra's matrix units used in the generation theorem.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the operator-space matrix units and the Peirce change.
 - [Operator Family Conventions](operator-family-conventions.html), for the letters, the slots and the set names.

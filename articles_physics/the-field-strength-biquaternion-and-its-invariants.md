@@ -625,7 +625,7 @@ i\gamma_3=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
 i\gamma_5=+L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-$\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell $\Gamma$, the involution that grades the Dirac module (*Chirality: The Conjugate Pair*). The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; being central, it acts on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operatorname{diag}(-I_2,I_2)$, and $\gamma_5$ is its representative there.
+$\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell $\Gamma$, the involution that grades the Dirac module (*The Unpolarized Module of the Biquaternion Algebra*). The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; being central, it acts on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operatorname{diag}(-I_2,I_2)$, and $\gamma_5$ is its representative there.
 
 **The two Dirac equations.** The two families separate the corpus's two Dirac equations. The one-sided pair acts with the left family alone,
 
@@ -727,7 +727,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra treatment of the field strength and its invariants.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of Lorentz transformations and the bivector structure of the field.
 - [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the state that a non-Hermitian operator defines and its purity strata.
-- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the gamma frame, the central grading and the chiral halves.
+- [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html), for the gamma frame, the central grading and the chiral halves.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the one-sided and two-sided equations and the mass term.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the self-dual and anti-self-dual decomposition of the field tensor.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the representation theory of the Lorentz group and its two three-dimensional complex representations.

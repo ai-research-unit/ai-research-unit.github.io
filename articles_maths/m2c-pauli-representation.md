@@ -38,7 +38,7 @@ The labels of the Peirce-coordinates article are $\vec\Upsilon_x=\vec\Upsilon_-$
 
 **The order of the article.** The article follows the $4\times4$ one step by step, at the size of one block. The root and its two idempotents come first, as the compression of §*The Root and the Peirce Frame* of the $4\times4$ article (§*The Root and the Two Idempotents*), then the Peirce basis in the two orders that the two sides need (§*The Peirce Basis and the Two Orders*). The left and the right matrices are read on the two ideals (§*The Left and Right Matrices*, against §*The Left Family* and §*The Right Family*), then the images of the four units (§*The Images of the Four Units*) and the stitch between the two sides (§*The Stitch Between the Left and the Right*, against §*The Stitch Between the Two Families*). The compression maps and the surviving switch follow (§*The Compression and the Switch*, against §*Every Frame Is a Conjugate of This One*), and then the entry-size quantities: the product, the trace and the determinant (§*The Product*, §*The Trace*, §*The Determinant*). The spectral projectors, the diagonalising matrix, the adjugate and the inverse, and the four norms are new at the element size, with no section of their own in the $4\times4$ article (§*The Spectral Projectors*, §*The Adjugate and the Inverse*, §*The Four Norms*). The six subspaces close the article in their compressed form (§*The Six Subspaces*), and what fails to compress is named at the end of §*The Compression and the Switch*.
 
-**Boundaries.** This article is the continuation of *$M_4(\mathbb{C})$ Pauli Representation*: it takes the block of §*The Left Family* and §*The Right Family* there and follows it to the end. The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The matrix units and the two Peirce planes are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
+**Boundaries.** This article is the continuation of *$M_4(\mathbb{C})$ Pauli Representation*: it takes the block of §*The Left Family* and §*The Right Family* there and follows it to the end. The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The matrix units and the two Peirce planes are *The Polarized Module of the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
 
 ## The Root and the Two Idempotents
 
@@ -85,7 +85,7 @@ Left multiplication preserves each $S_\pm$; right multiplication preserves each 
 $$
 S_\pm^{*}=T_\pm,
 $$
-as in *Spinors as Peirce Coordinates in the Biquaternion Algebra*, §*The Two Spinor Spaces*.
+as in *The Polarized Module of the Biquaternion Algebra*, §*The Two Spinor Spaces*.
 
 **The two blocks.** The left action on $S_+$ and the left action on $S_-$ have the same matrix; these are the two diagonal blocks of $L$. The right action on $T_+$ and the right action on $T_-$ have the same matrix; these are the two diagonal blocks of $R$. Keeping one block from each copy gives the $2\times2$ model. The other block is a copy, and no information is lost.
 

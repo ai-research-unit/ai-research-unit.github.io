@@ -560,7 +560,7 @@ A general inner automorphism need not preserve the chosen frame, and the image o
 
 **The two minimal left ideals are the two Jordan blocks of the left action, and the right action distinguishes them only partly.**
 
-The general statement is in *Spinors as Peirce Coordinates in the Biquaternion Algebra*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples, and left multiplication acts on each couple by the same matrix. Here that matrix is $J_2(Q_t)$, so each couple is a single Jordan chain. The eigenline in $\mathcal{C}_+$ is $\mathbb{C}\tilde\Pi_+$ and the eigenline in $\mathcal{C}_-$ is $\mathbb{C}\vec\Upsilon_-=\mathbb{C}\vec Q$; the two lines span the two-dimensional eigenspace.
+The general statement is in *The Polarized Module of the Biquaternion Algebra*, §*The Left Action on a Couple*: the four Peirce vectors split into the couples, and left multiplication acts on each couple by the same matrix. Here that matrix is $J_2(Q_t)$, so each couple is a single Jordan chain. The eigenline in $\mathcal{C}_+$ is $\mathbb{C}\tilde\Pi_+$ and the eigenline in $\mathcal{C}_-$ is $\mathbb{C}\vec\Upsilon_-=\mathbb{C}\vec Q$; the two lines span the two-dimensional eigenspace.
 
 **Definition (the spinor spaces).** Put $S_\pm=\mathbb{B}\tilde\Pi_\pm$, the two Peirce carriers, here the two minimal left ideals.
 

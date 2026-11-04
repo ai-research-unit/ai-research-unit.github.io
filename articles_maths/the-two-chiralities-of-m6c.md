@@ -405,7 +405,7 @@ $$
 1+1+1+1=4,
 $$
 
-with mass block of dimension $1$. The two matrix-model chiralities are the two coordinate lines; the biquaternion chirality is the separate central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of *Chirality: The Conjugate Pair*, which grades $S$ against $S^{\mathrm{c}}$. The two minimal left ideals of $M_2$ are the two columns, each of dimension two, and each column contains one of the lines.
+with mass block of dimension $1$. The two matrix-model chiralities are the two coordinate lines; the biquaternion chirality is the separate central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of *The Unpolarized Module of the Biquaternion Algebra*, which grades $S$ against $S^{\mathrm{c}}$. The two minimal left ideals of $M_2$ are the two columns, each of dimension two, and each column contains one of the lines.
 
 **Proof.** The two eigenspaces are the two coordinate lines; the columns of $M_2$ are the two minimal left ideals, each of dimension two, and each contains one of the lines. In the $1+1$ split the two lines are the two matrix-model chiral halves.
 

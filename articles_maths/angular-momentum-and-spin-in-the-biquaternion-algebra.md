@@ -423,9 +423,9 @@ $$
 \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B},\qquad e_\pm=\tfrac12(e_t\pm\chi),\qquad \chi=i\tilde\Xi_{\mathrm{ad}},\qquad \chi^2=+e_t.
 $$
 
-The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in *Chirality: The Conjugate Pair*. Its central root of $-1$ is $\tilde\Xi_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.
+The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. The doubled algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, the same notation as in *The Unpolarized Module of the Biquaternion Algebra*. Its central root of $-1$ is $\tilde\Xi_{\mathrm{ad}}$, an element of the double; the spin is the real number $s$.
 
-The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{M}_\pm$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *Chirality: The Conjugate Pair*; nothing in the present article depends on them.
+The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{M}_\pm$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *The Unpolarized Module of the Biquaternion Algebra*; nothing in the present article depends on them.
 
 ## Summary
 
@@ -468,12 +468,11 @@ The tensor square of the adjoint module contains a spin-two summand, and the mul
 
 - [The Four Uses of Spin in the Biquaternion Algebra](the-four-uses-of-spin-in-the-biquaternion-algebra.html), for the closure theorem, the two structures and the three signs.
 - [The Category of Modules in the Biquaternion Algebra](the-category-of-modules.html), for the simple module and the classification of the modules.
-- [The Minimal Left Ideals in the Biquaternion Algebra](the-minimal-left-ideals.html), for the decomposition ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$.
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the spinor spaces and the ladder.
+- [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the decomposition ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$; the spinor spaces and the ladder.
 - [The Casimir Operator](the-casimir-operator.html), for the Casimir in the general theory.
 - [Representations of Lie Algebras](representations-of-lie-algebras.html), for the highest-weight classification and the Clebsch–Gordan rule.
 - [The Tensor Square of the Duo-Complex Numbers](the-tensor-square-of-c2.html), for the decomposition of the tensor square.
-- [Chirality: The Conjugate Pair in the Biquaternion Algebra](chirality-the-conjugate-pair.html), for the central sign and the conjugate module.
+- [The Unpolarized Module of the Biquaternion Algebra](the-unpolarized-module-of-the-biquaternion-algebra.html), for the central sign and the conjugate module.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz action and its labels.
 - [Angular Momentum and Spin in Biquaternionic Form](../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html), for the physics counterpart and the units.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the highest-weight theorem and the Casimir.

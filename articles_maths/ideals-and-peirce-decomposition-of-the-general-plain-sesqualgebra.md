@@ -43,7 +43,7 @@ $$
 
 so that the minimal left ideal of the algebra is the sum of one diagonal and one mixed Peirce line, and the minimal right ideal is the sum of the other diagonal line and the other mixed line.
 
-**Proof.** The minimality is *The Minimal Left Ideals*, §*The Two Minimal Left Ideals*: a primitive idempotent generates a minimal one-sided ideal, and a rank-one idempotent is primitive. The splittings are the completeness $\tilde\Pi+\tilde\Pi^{\perp}=e_t$ inserted between the two factors, $\mathbb{B}\tilde\Pi=\mathbb{B}(\tilde\Pi+\tilde\Pi^{\perp})\tilde\Pi=\mathbb{B}\tilde\Pi\tilde\Pi+\mathbb{B}\tilde\Pi^{\perp}\tilde\Pi$, which is direct because the two summands lie in the Peirce lines $\mathbb{B}_{11}$ and $\mathbb{B}_{21}$ and those are distinct, and the symmetric computation on the right.
+**Proof.** The minimality is *The Polarized Module of the Biquaternion Algebra*, §*The Two Minimal Left Ideals*: a primitive idempotent generates a minimal one-sided ideal, and a rank-one idempotent is primitive. The splittings are the completeness $\tilde\Pi+\tilde\Pi^{\perp}=e_t$ inserted between the two factors, $\mathbb{B}\tilde\Pi=\mathbb{B}(\tilde\Pi+\tilde\Pi^{\perp})\tilde\Pi=\mathbb{B}\tilde\Pi\tilde\Pi+\mathbb{B}\tilde\Pi^{\perp}\tilde\Pi$, which is direct because the two summands lie in the Peirce lines $\mathbb{B}_{11}$ and $\mathbb{B}_{21}$ and those are distinct, and the symmetric computation on the right.
 
 **Corollary (which minimal ideals the multiplication keeps).** A minimal left ideal of the algebra is not a left ideal of the multiplication, while a minimal right ideal is a right ideal of the multiplication: $\mathbb{B}\tilde\Pi$ is destroyed by the multiplication, and $\tilde\Pi\mathbb{B}$ is preserved by it.
 

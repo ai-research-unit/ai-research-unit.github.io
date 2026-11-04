@@ -123,7 +123,7 @@ The trace is the contraction of the two factors; the identity is the invariant t
 
 **The Peirce decomposition in the tensor picture.** The idempotent $P_{k}=E_{kk}$ is $e_{k}\otimes e_{k}^{*}$, the projection onto the $k$-th line. The Peirce line $A_{kl}=\mathbb{C}E_{kl}$ is the line $\mathbb{C}e_{k}\otimes e_{l}^{*}$, of dimension one. The left ideal $M_{3}P_{k}$ is $\mathbb{C}^{3}\otimes e_{k}^{*}$, a copy of the column; the right ideal $P_{k}M_{3}$ is $e_{k}\otimes(\mathbb{C}^{3})^{*}$, a copy of the row. The nine Peirce lines are the nine lines of the tensor product, not nine modules.
 
-## The Minimal Left Ideals and the Non-Canonical Exchange
+## The Polarized Module of the Biquaternion Algebra and the Non-Canonical Exchange
 
 **The three minimal left ideals.** For $k=1,2,3$ the space
 $$

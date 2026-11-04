@@ -18,7 +18,7 @@ $$
 
 The family is the only input. The signs are labels of the pair. No element of a mixed line is chosen, and no basis is chosen. Each such family gives its own Peirce decomposition, and the algebra carries as many as it carries families; the plural in the title records this, and the article keeps the family as the variable throughout.
 
-The article defines the family and the four lines, proves that each line is one-dimensional and that the lines sum directly, computes their multiplication rule, reads the two indices that the family assigns to each line, identifies the two mixed components, records the parity of the cut, and says what the cut does not give. The choice of an element in each line and its gauge are *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*; the coordinates and the spinors are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. An example is given at the end.
+The article defines the family and the four lines, proves that each line is one-dimensional and that the lines sum directly, computes their multiplication rule, reads the two indices that the family assigns to each line, identifies the two mixed components, records the parity of the cut, and says what the cut does not give. The choice of an element in each line and its gauge are *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*; the coordinates and the spinors are *The Polarized Module of the Biquaternion Algebra*. An example is given at the end.
 
 ## The Family
 
@@ -220,7 +220,6 @@ A nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ of two idempotents
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the units, the product table, the centre and simplicity.
 - [Idempotents](idempotents.html), for the classification of the idempotents and the standard pair.
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the choice of an element in each line and the gauge.
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the elements of the two spinor spaces.
+- [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the elements of the two spinor spaces; the matrix form of the cut.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general family.
 - [Complementary Idempotents and the Peirce Decomposition](complementary-idempotents-and-the-peirce-decomposition.html), for the complement and the general corner rule.
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix form of the cut.

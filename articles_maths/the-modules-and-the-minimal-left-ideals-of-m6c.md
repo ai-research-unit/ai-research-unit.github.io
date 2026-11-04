@@ -190,7 +190,7 @@ $$
 
 **Proof.** The left ideal of the projector with kernel $\ker\varphi$ is the set of all $u\otimes\varphi$; the right ideal of the projector with image $\mathbb{C}u$ is the set of all $u\otimes\psi$.
 
-## The Minimal Left Ideals and the Exchange
+## The Polarized Module of the Biquaternion Algebra and the Exchange
 
 ### The Family
 

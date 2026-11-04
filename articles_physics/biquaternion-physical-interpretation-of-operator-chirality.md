@@ -30,8 +30,8 @@ with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(1,-1,-1,
 | The list of eight objects the notion does not need | same |
 | The swap $\sigma(L_aR_b)=L_bR_a$ and the conjugation $\mathsf C\,L(a^{\natural})\,\mathsf C=R(a)$ | same |
 | The cells as a basis, the coefficient matrix and the length | [$M_4(\mathbb{C})$ Axis-Free Representation : Operators](../articles_maths/m4c-axis-free-representation-operators.html) |
-| The regular module, its two minimal left ideals and the carrier | [The Unpolarized Module of $M_4(\mathbb{C})$](../articles_maths/the-unpolarized-module-of-m4c.html) |
-| The conjugate module and its inequivalence to $S$ | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |
+| The regular module, its two minimal left ideals and the carrier | [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) |
+| The conjugate module and its inequivalence to $S$ | [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) |
 | The chiral pair of the Dirac equation and its two-sided variant | [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) |
 | The three forms of the equation and the statement that the pair needs no module | [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) |
 
@@ -167,7 +167,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 
 **The halves are copies.** This is the limit that no amount of operator bookkeeping removes, and it must be stated plainly. The two chiral halves of $\mathbb{B}$ are two-dimensional and each is stable under left multiplication, so each is isomorphic to the simple left module $S$. The grading is therefore a grading between **two copies** of one Lorentz module, and a gauge action by left multiplication acts identically on the two. In the language of the Standard Model it is vector-like.
 
-**What the physics needs instead.** The Standard Model chirality distinguishes two **inequivalent** Lorentz modules: the left-handed Weyl spinor $S$ and its conjugate $S^{\mathrm{c}}$. Those two are not two copies of one module, and the biquaternion algebra contains only the first. The distinction is a property of the pair $S\oplus S^{\mathrm{c}}$, and it is the content of *Chirality: The Conjugate Pair*.
+**What the physics needs instead.** The Standard Model chirality distinguishes two **inequivalent** Lorentz modules: the left-handed Weyl spinor $S$ and its conjugate $S^{\mathrm{c}}$. Those two are not two copies of one module, and the biquaternion algebra contains only the first. The distinction is a property of the pair $S\oplus S^{\mathrm{c}}$, and it is the content of *The Unpolarized Module of the Biquaternion Algebra*.
 
 **So what has been gained.** The operator chirality supplies, without adjoining anything, the object that the physics calls $\gamma_5$: an involution of the algebra, of trace zero, with two equal halves, commuting with the Dirac operator and anticommuting with the frame. That is what a Lagrangian needs in order to write a chiral projector, a chiral current or an axial anomaly coefficient. What it does not supply is the inequivalence of the two halves, and no operator of $\mathbb{B}$ can supply it, because every operator of $\mathbb{B}$ grades copies.
 
@@ -230,7 +230,6 @@ The limit is stated once and it is not small: the two chiral halves of $\mathbb{
 - [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the definition, the dimensions, the swap, the conjugation and the list of unrelated objects.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair, the one-sided and the two-sided equation, and the plane-wave solutions.
 - [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), for the three forms of the equation and the gauge covariance of the pair on the algebra.
-- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the inequivalence of $S$ and $S^{\mathrm{c}}$, the pairing and the mass operator on $\Delta$.
+- [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html), for the inequivalence of $S$ and $S^{\mathrm{c}}$, the pairing and the mass operator on $\Delta$; the regular module, its minimal left ideals and the carrier.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chiral projectors and the mass selection rule in the physics corpus.
-- [The Unpolarized Module of $M_4(\mathbb{C})$](../articles_maths/the-unpolarized-module-of-m4c.html), for the regular module, its minimal left ideals and the carrier.
 - [The Two Chiralities of $M_4(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m4c.html), for the comparison with the matrix case.

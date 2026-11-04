@@ -22,7 +22,7 @@ The physical content is the **light ray**: a rank-one element, a direction and a
 | --- | --- |
 | The definition, the five descriptions and the geometry of the cell | [The N-Degenerate, Spectrally Regular Sector](../articles_maths/the-n-degenerate-spectrally-regular-sector.html) |
 | The zero-divisor cone, its rulings and the massless limit | [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) |
-| The primitive idempotents and the minimal left ideals | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
+| The primitive idempotents and the minimal left ideals | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | The spectrum and the two-term writing | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | The four-vector dictionary and the light cone | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
@@ -273,4 +273,4 @@ The cell is not a particle count. One zero eigenvalue is one frozen mode, not an
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the massless limit of the Doppler pair.
 - [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the boundary of the cell.
 - [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the cell whose boundary this is.
-- [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html), for the primitive idempotents and the spinor spaces.
+- [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html), for the primitive idempotents and the spinor spaces.

@@ -6,7 +6,7 @@ A spectral triple is a triple $(\mathcal{A},\mathcal{H},D)$ consisting of an alg
 
 This article asks whether the biquaternion algebra $\mathbb{B}$ supports such a triple, and what the framework's structures contribute to it. The scalar imaginary of the algebra satisfies $i^2=-1$ throughout; it is the central unit of the complexification, not a quaternion unit. The findings are the following.
 
-1. **The algebra, the Hilbert space and the Dirac operator are already present.** The framework's algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. Its chiral spinor space is the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ of *Chirality: The Conjugate Pair*, of complex dimension four (or, in the field-theoretic setting, the square-integrable sections of $\Delta$ on spacetime), and the operator is the framework's Dirac operator,
+1. **The algebra, the Hilbert space and the Dirac operator are already present.** The framework's algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. Its chiral spinor space is the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ of *The Unpolarized Module of the Biquaternion Algebra*, of complex dimension four (or, in the field-theoretic setting, the square-integrable sections of $\Delta$ on spacetime), and the operator is the framework's Dirac operator,
     $$
     \mathcal{D}=i\tilde\nabla+D_F,
     $$
@@ -162,7 +162,7 @@ written for the central mass $m\in\mathbb{C}$; for a biquaternionic mass the ord
 
 The commutator is not, however, nonzero for every non-scalar $a$, and saying which elements it does vanish on is worth the precision. The conjugation here is the one carried by the coordinate identification $S^{\mathrm{c}}\to S$, and on the four units it reads $\overline{e_t}=e_t$, $\overline{\vec e_y}=\vec e_y$, $\overline{\vec e_x}=-\vec e_x$, $\overline{\vec e_z}=-\vec e_z$. So $[D_F,L_a]=0$ exactly when $a$ lies in $\mathbb{R}[\vec e_y]$, the copy of $\mathbb{C}$ spanned over $\mathbb{R}$ by $\vec e_y$ inside $\mathbb{B}_{\mathbb{R}}$ — a commutative subalgebra, and the largest one on which the mass commutes with the left action. For $\vec e_x$ and $\vec e_z$ the commutator is $2m$ times an off-diagonal block. The parallel with Connes' two-point space is exact in this one respect: there the finite algebra $\mathbb{C}\oplus\mathbb{C}$ is abelian and the condition holds. What the mass tolerates is a commutative subalgebra, and the non-abelian part of $\mathbb{B}_{\mathbb{R}}$ is where it fails.
 
-**The same fact in the companion's coordinates.** *Chirality: The Conjugate Pair* writes the conjugate action in the $\epsilon$-dressed model,
+**The same fact in the companion's coordinates.** *The Unpolarized Module of the Biquaternion Algebra* writes the conjugate action in the $\epsilon$-dressed model,
 $$
 \rho(a)=\operatorname{diag}\bigl(\mathsf M_2(a),\ \epsilon\,\overline{\mathsf M_2(a)}\,\epsilon^{-1}\bigr),
 \qquad
@@ -521,7 +521,7 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t
 | $\mathbb{R}[\vec e_y]$ | The copy of $\mathbb{C}$ inside $\mathbb{B}_{\mathbb{R}}$; the fixed set of the conjugation, and the largest subalgebra on which $D_F$ commutes with the left action |
 | $\flat=-{}^{*}$ | The framework's real-form involution; $\flat^2=+1$ |
 | $\tilde\nabla=\sum_\mu L_{e_\mu}^{\mathrm{axf}}\partial/\partial Q_\mu$ | Biquaternion gradient; symbol $\sum_\mu\xi_\mu e_\mu$ of quaternion norm $\lvert\xi\rvert^2$ |
-| $\beta:S^{\mathrm{c}}\to S$ | The invariant pairing $\beta(s,t)=s^{\dagger}t$ of *Chirality: The Conjugate Pair*, i.e. the identity on the underlying spinors; its adjoint is the other off-diagonal block |
+| $\beta:S^{\mathrm{c}}\to S$ | The invariant pairing $\beta(s,t)=s^{\dagger}t$ of *The Unpolarized Module of the Biquaternion Algebra*, i.e. the identity on the underlying spinors; its adjoint is the other off-diagonal block |
 | $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ | Quaternionic structure of the module |
 | $d(\varphi,\omega)=\sup_{a\in\mathcal{A}}\{\lvert\varphi(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\}$ | Distance formula between two states |
 | $\mathrm{Tr}\,\exp(-t'D^2)\sim {t'}^{-d/2}$ | Heat-kernel growth; the spectral dimension |

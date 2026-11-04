@@ -176,7 +176,7 @@ $$
 L_\ell=\{\tilde Q:\tilde Q\text{ vanishes on }\ell\},\qquad \ell=\ker\tilde\Pi \text{ a line in } S,
 $$
 
-one for each kernel line, so the family of minimal left ideals is a projective line; the two summands of the regular module correspond to the two points $\ker\tilde\Pi_\pm$, and the general element of the family is $\mathbb{B}\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ with kernel $\ell$. The image line is not this parameter: it indexes the minimal *right* ideals $\tilde\Pi\mathbb{B}=\{\tilde Q:\operatorname{im}\tilde Q\subseteq\operatorname{im}\tilde\Pi\}$, and the two criteria are not interchangeable, as §*The Projective Line and the Möbius Action* sets out. The classification is that of *The Minimal Left Ideals*; the reading here is that these are the simple submodules of the regular module.
+one for each kernel line, so the family of minimal left ideals is a projective line; the two summands of the regular module correspond to the two points $\ker\tilde\Pi_\pm$, and the general element of the family is $\mathbb{B}\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ with kernel $\ell$. The image line is not this parameter: it indexes the minimal *right* ideals $\tilde\Pi\mathbb{B}=\{\tilde Q:\operatorname{im}\tilde Q\subseteq\operatorname{im}\tilde\Pi\}$, and the two criteria are not interchangeable, as §*The Projective Line and the Möbius Action* sets out. The classification is that of *The Polarized Module of the Biquaternion Algebra*; the reading here is that these are the simple submodules of the regular module.
 
 ### Von Neumann regular and self-injective
 
@@ -295,6 +295,5 @@ a Borel subgroup of $PGL_2(\mathbb{C})$, of complex dimension two.
 ## Further Reading
 
 - [The Regular Module](the-regular-module.html), for the ideals as submodules.
-- [The Minimal Left Ideals](the-minimal-left-ideals.html), for the simple module in the algebra.
+- [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the simple module in the algebra; the matrix model of the classification.
 - [The Centraliser](the-centraliser.html), for the commutant of an element.
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the matrix model of the classification.
