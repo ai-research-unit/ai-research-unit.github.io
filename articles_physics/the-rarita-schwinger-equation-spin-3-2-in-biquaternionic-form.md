@@ -436,7 +436,7 @@ The biquaternion description follows the same sequence. The Dirac field is an el
 
 **What is imported.** The identification of the field with a spin-$\tfrac32$ particle, the value of the mass, the existence of a consistent interaction, and the resolution of the Velo–Zwanziger problem are inputs beyond the free algebra. The canonical quantisation of the field and its propagator belong to the field-theoretic companion subcategory.
 
-The structural point that this article makes for the subcategory is that the field is a tensor product of the algebra's vector structure with its spinor structure, so its spin-$\tfrac32$ content is not native to the algebra but arises from the product. The final article of the subcategory states this in general and proves that the algebra's own modules carry only spin zero and spin one-half.
+The structural point that this article makes for the subcategory is that the field is a tensor product of the algebra's vector structure with its spinor structure, so its spin-$\tfrac32$ content is not native to the algebra but arises from the product. The final article of the subcategory states this in general and proves that the algebra's own modules carry only spin one-half, the scalar living in the centre and the vector in the adjoint.
 
 The conventions are those of three companion articles:
 

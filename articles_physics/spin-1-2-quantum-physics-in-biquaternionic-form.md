@@ -358,7 +358,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 1. **Quantization.** The framework is classical. Promoting fields to operators requires additional structure (a Hilbert space, a Fock space, a quantization prescription).
 
-2. **Bosonic fields of higher spin.** The biquaternion algebra contains only the spin-1/2 representation of the Lorentz group. Higher spins require tensor products or larger algebras.
+2. **Bosonic fields of higher spin.** The algebra's modules carry only spin one-half; the four-vector is carried by conjugation and the scalar by the centre. Spin-3/2 and spin-2 have no carrier inside $\mathbb{B}$, and fields of higher spin require tensor products or larger algebras.
 
 3. **Many-body structure.** A single spin-1/2 particle (or a single spin-1/2 field) is the natural content. Multiparticle states and entangled systems require tensor products of the algebra.
 
@@ -384,7 +384,7 @@ The identification raises several questions.
 
 4. **The role of $\mathbb{M}_-$.** In the identification, $\mathbb{M}_+$ is the space of observables and $\mathbb{M}_-$ is the space of generators. The state space is the fundamental module, which is not directly $\mathbb{M}_-$ or $\mathbb{M}_+$. Is there a natural interpretation of $\mathbb{M}_-$ in the spin-1/2 framework (beyond being the generators of $*$-unitary evolution)?
 
-5. **The extension to higher spins.** The biquaternion algebra contains only spin-1/2. How does it extend to spin-1 (the photon), spin-3/2, or spin-2 (the graviton)? These would require tensor products or larger algebras.
+5. **The extension to higher spins.** The algebra's modules carry only spin one-half, and its adjoint action adds the vector of spin one; spin-3/2 and spin-2 have no subcarrier inside $\mathbb{B}$. How does the framework reach them? They would require tensor products or larger algebras.
 
 6. **The role of the Weyl spinors.** The biquaternion Dirac equation is expressed in terms of a pair of Weyl spinors. The full Dirac spinor is four-component. What is the precise relation between the two, and how does the chirality structure of the Standard Model fit into the biquaternion framework?
 

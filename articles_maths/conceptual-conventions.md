@@ -14,9 +14,9 @@
 
 Each concept below is used somewhere in the corpus, and each one brings something the algebra does not contain. The list names the defect. An unpreferred concept is admitted as a display when the article that prints it declares the missing piece once, at the head of the display.
 
-- **The Pauli matrices $\sigma_k$.** Three matrices, correct and useful. *The defect:* the array fixes an axis that the sentence does not name, and it fixes a Peirce frame with it.
-- **The gamma matrices $\gamma_\mu$.** *The defect:* the five cells belong to a frame that is not named, and they carry a dimension and a signature that the algebra does not fix.
-- **A Clifford algebra as a foundation.** *The defect:* it starts from a quadratic form, so the signature is fixed before the algebra is read. The biquaternion algebra starts from a central $i$, and the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ exists.
+- **The Pauli matrices $\sigma_k$.** *The defect:* the array carries a preferred axis, and neither the algebra nor the sentence names it. Isotropy is measured, so the axis is a defect and not a notation.
+- **The gamma matrices $\gamma_\mu$.** *The defect:* the five cells carry a preferred frame, and with it a preferred axis, and the frame is not named. Isotropy is measured, so the frame is a defect and not a notation.
+- **A Clifford algebra as a foundation.** *The defect:* it starts from a quadratic form, so a metric is imposed on the algebra before the algebra is read. The biquaternion algebra carries its own form, the norm $\tilde Q\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and the sector fixes the signature. A metric supplied from outside is a preferred datum, and nothing in the algebra asks for one.
 
 **The kinds of defect.** A defect is one of three kinds, and each kind has a test that can be run on a sentence.
 
@@ -33,6 +33,7 @@ A concept that passes all three tests is a preferred concept, and the short list
 These concepts are the algebra itself, written down. Each one can be read from an element, a cell or a form, and none of them needs a frame, a root, a basis or a name borrowed from another formalism. The corpus writes them without comment.
 
 - **The two sectors.** The anti-Hermitian subspace $\mathbb{M}_-$ carries the four-vectors and the interval. The Hermitian subspace $\mathbb{M}_+$ carries the observables, the states and the spin generators. The algebra supplies the subspaces and the forms on them, and the identification of a subspace with a physical role is the programme's step, stated at every use.
+- **The metric of $\mathbb{B}$.** The four coefficients stand with equal signs, so the form $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ has signature $1,1,1,1$ in the coefficients. No direction is singled out and no sign is flipped, so the metric is the one the algebra supplies and not one imposed on it. A subspace may take another metric for a stated use: on $\mathbb{M}_-$ the norm is negative definite and the interval is $-\langle\tilde Q\rangle_{\natural}$, of signature $(3,1)$, and the article that uses it says so.
 - **Operator chirality.** An operator has the **left slot** when it is a pure left multiplier $cL_a$, the **right slot** when it is a pure right multiplier $cR_b$, and **both slots** otherwise. The label is read from the cell and from nothing else. The one-sided operators form a seven-dimensional sum inside the sixteen-dimensional endomorphism algebra, and the scalars lie in both families at once, so a scalar has no side. No root, idempotent, ideal, axis or Clifford algebra appears in the definition.
 - **The spin.** The generators are $\tilde S_k=\tfrac12 i\vec e_k\in\mathbb{M}_+$, with $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$ and $\tilde S_k^{*}=\tilde S_k$. The Casimir is $C=\tilde S_1^2+\tilde S_2^2+\tilde S_3^2$, and on an irreducible unitary carrier $\rho(C)=s(s+1)$ with $\dim_{\mathbb{C}}W=2s+1$ and $s\in\tfrac12\mathbb{Z}_{\ge0}$. The spin is a real label of a carrier and not a vector, and the definition is a spectrum of elements.
 
@@ -40,7 +41,7 @@ These concepts are the algebra itself, written down. Each one can be read from a
 
 A concept is used in this corpus only when it agrees with mathematics and no result of experiment contradicts it. In a mathematics article the second condition is met by restraint, because nothing here draws a physical conclusion.
 
-The concepts that pass are used in one of two ways. Unpreferred concepts are working tools that bring a frame, a basis, a root or a part of the algebra: the Pauli matrices, the gamma matrices and the Clifford algebra. Each is admitted only with the missing piece declared. Preferred concepts are the algebra itself, and there are three: the two sectors, operator chirality and the spin.
+The concepts that pass are used in one of two ways. Unpreferred concepts are working tools that bring a frame, a basis, a root or a part of the algebra: the Pauli matrices, the gamma matrices and the Clifford algebra. Each is admitted only with the missing piece declared. Preferred concepts are the algebra itself, and there are four: the two sectors, the metric, operator chirality and the spin.
 
 Every defect is one of three: a missing datum, a part printed as the whole, or two kinds under one name. Operator chirality passes all three, which is why it is written as a slot and not as a root, an idempotent, a projector, a Clifford product or a gamma subscript.
 

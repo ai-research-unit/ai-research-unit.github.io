@@ -362,7 +362,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 5. **Composite scalars and the trace formula.** The bilinear route uses the Hermitian product $H$ and its scalar part $\sigma=\mathrm{Sc}\,H$, read through the trace formula $\mathrm{Tr}(H)=2\,\mathrm{Sc}\,H$. At the bilinear level nothing is left open: $S\otimes S$ and $S\otimes\bar{S}$ each have a one-dimensional space of invariants under $SL(2,\mathbb{C})$, spanned by $\varepsilon$ and $\mathfrak{b}$, so every invariant bilinear is a multiple of one of them. Whether every scalar-valued functional of higher degree — a quartic condensate, a determinant, an effective action — reduces to products and sums of these is a different question, and it is not settled here.
 
-6. **Why the algebra admits only spin $0$ and one-half.** The module carries spin $\tfrac{1}{2}$ and the algebra under rotations carries spin $0$ and $1$; there is no simple module of higher spin. The general question — which spins the biquaternion algebra admits as elementary representations — is the subject of a separate article in the series and is not answered here.
+6. **Why the algebra admits only spin $0$, $\tfrac{1}{2}$ and $1$.** The module carries spin $\tfrac{1}{2}$ and the algebra under rotations carries spin $0$ and $1$; there is no simple module of higher spin. The general question — which spins the biquaternion algebra admits as elementary representations — is the subject of a separate article in the series and is not answered here.
 
 ## The Legacy Pauli Gamma Formulation
 
