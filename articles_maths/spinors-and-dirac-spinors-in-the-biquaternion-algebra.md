@@ -209,8 +209,7 @@ No left multiplication moves between the parts, so the coupling of the parts is 
 
 ## Further Reading
 
-- [Angular Momentum and Spin in the Biquaternion Algebra](angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the definition of spin as a maximal weight, the Casimir, the sphere of minimal left ideals and the double cover.
-- [The Four Uses of Spin in the Biquaternion Algebra](the-four-uses-of-spin-in-the-biquaternion-algebra.html), for the module structures and the closure theorem that fixes the carriers.
+- [Angular Momentum and Spin in the Biquaternion Algebra](angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the definition of spin as a maximal weight, the Casimir, the sphere of minimal left ideals, the double cover and the four uses of the word spin.
 - [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the side of a multiplication as the chirality, and for the swap.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the decomposition $V\cong S\oplus S$ of the carrier and the two spinor spaces.
 - [The Pauli Module of the Biquaternion Algebra](the-pauli-module-of-the-biquaternion-algebra.html), for the two slots as two copies of one module and for the chirality cell whose eigenspaces they are.

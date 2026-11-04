@@ -4,7 +4,7 @@
 
 The angular-momentum algebra is the Lie algebra $\mathfrak{su}(2)$ with a chosen basis. In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ it appears in two normalisations: as the anti-Hermitian pure quaternions $g_k=-\tfrac12\vec e_k$, which are the elements of the Lie algebra, and as the Hermitian elements $\tilde S_k=\tfrac12 i\vec e_k=-ig_k$, which are the same generators multiplied by $-i$. The factor $-i$ is what makes them self-adjoint, and it is the only difference between the two pictures.
 
-This article develops the module theory of that algebra inside $\mathbb{B}$: the Casimir, the highest-weight classification, the two module structures, the subcarriers of the regular module, the orbital realisation, the addition of angular momenta, and the tensor products. It is the pure-mathematical counterpart of *Angular Momentum and Spin in Biquaternionic Form*; the symbols are the same, and the difference is that the present article sets $\hbar=1$ and never leaves the algebra.
+This article develops the module theory of that algebra inside $\mathbb{B}$: the Casimir, the highest-weight classification, the two module structures, the subcarriers of the regular module, the orbital realisation, the addition of angular momenta, the tensor products, and the four uses of the word spin. It is the pure-mathematical counterpart of *Angular Momentum and Spin in Biquaternionic Form*; the symbols are the same, and the difference is that the present article sets $\hbar=1$ and never leaves the algebra.
 
 The constant $\hbar$ is a unit of action, not an element of $\mathbb{B}$. Every operator below is $\tilde S_k=\tfrac12 i\vec e_k$; the physical article writes the same operator with the dimensionful factor, $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, and every algebraic statement is homogeneous in $\tilde S_k$. Restoring $\hbar$ is the substitution $\tilde S_k\mapsto\hbar \tilde S_k$, which multiplies every weight by $\hbar$ and the Casimir by $\hbar^2$.
 
@@ -427,6 +427,75 @@ The idempotents $e_\pm$ split the doubled algebra into the two chiral halves. Th
 
 The rotation subgroup acts by conjugation on $\mathbb{B}$, and the two module structures of this article are its two pictures: $2\mathcal{V}_1$ on the left and $\mathcal{V}_0\oplus\mathcal{V}_2$ on the adjoint. The Lorentz group acts by the sandwich $a\mapsto gag^*$, and the two sectors $\mathbb{M}_\pm$ are the two four-vectors; the left spinor is the $(\tfrac12,0)$ and the conjugate module the $(0,\tfrac12)$. The details are in *Biquaternion Rotations and Lorentz Transformations* and in *The Unpolarized Module of the Biquaternion Algebra*; nothing in the present article depends on them.
 
+## The Four Uses of the Word Spin
+
+Four objects in this corpus are called a spin, and they are not four notions. One is the definition, one is its adjoint instance, and two are signs that carry no weight at all.
+
+| use | what it labels | structure | values |
+|---|---|---|---|
+| highest weight | the representation | a module structure on a carrier | $0,\ \tfrac12,\ 1$ |
+| adjoint action | the vector carrier | conjugation on the algebra | $1$ |
+| Peirce index | the copy | right multiplication by $i\vec u$ | $+$ or $-$ |
+| chirality | the Lorentz half | a central sign in $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ | $+$ or $-$ |
+
+The first two rows are the definition read twice. Conjugation is a module structure like the left action, and the definition applied to it gives $s=0$ on $Z$ and $s=1$ on $V$; the row records the second. The set $\{0,\tfrac12,1\}$ is the union of the lists $2\mathcal{V}_1$ and $\mathcal{V}_0\oplus\mathcal{V}_2$, and the arithmetic obstruction above says the union is not a direct sum.
+
+### The Central Sign and the Integrality Class
+
+A rotation by $2\pi$ is $-e_t$. On the half-integer carriers, the minimal left ideals, it acts as $-\mathrm{id}$; on the integer carriers, $Z$ and $V$, it acts as the identity. The sign of $-e_t$ marks the integrality class.
+
+That sign is not an eigenvalue read off one operator on $\mathbb{B}$. In the left regular module $-e_t$ acts as $-\mathrm{id}$ on all of $\mathbb{B}$; in the adjoint action it acts trivially on all of $\mathbb{B}$. The two signs are read in the two structures, not as the two eigenspaces of one operator on the algebra.
+
+### The Peirce Sign Is Not the Central Sign
+
+The central element $-e_t$ acts as $-\mathrm{id}$ on $S_+$ and on $S_-$ alike, so it cannot separate them. The Peirce sign is the right multiplication $P=R_{i\vec u}$ at a unit $\vec u$. Since $(i\vec u)^2=+e_t$, $P^2=\mathrm{id}$, and
+
+$$
+P\tilde\Pi_+(\vec u)=\tilde\Pi_+(\vec u),\qquad P\tilde\Pi_-(\vec u)=-\tilde\Pi_-(\vec u),
+$$
+
+so $P$ is $+1$ on $S_+(\vec u)$ and $-1$ on $S_-(\vec u)$. It is implemented by the element $i\vec u$, which is not central: at $\vec u=\vec e_z$, $i\vec e_z\vec e_x=+i\vec e_y$ while $\vec e_x i\vec e_z=-i\vec e_y$. The Peirce index is therefore an inner, non-central copy label, and it never changes a spin value.
+
+Right multiplication by a nilpotent mixed unit carries $S_+(\vec u)$ onto $S_-(\vec u)$ and gives the module isomorphism, but it is not the grading: a nilpotent squares to zero and cannot be an involution.
+
+### Chirality Is Central but Not a Spin
+
+In the double, the chirality has the central form $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\chi^2=+e_t$, and its two eigenspaces are the chiral halves $e_\pm=\tfrac12(e_t\pm\chi)$ of §*Real Forms and the Rotation Subgroup*. Both halves carry the same rotation spin: chirality separates the two Lorentz chiralities, not two values of $s$.
+
+The three signs are therefore distinct. A central sign in $\mathbb{B}$ marks integer against half-integer; an inner non-central sign separates two copies of one half-integer carrier; a central sign in the double separates two Lorentz halves. Only the first tracks the integrality of a spin, and none of the three is a value of $s$.
+
+### The Dimensions One, Two and Three as Tensor Degrees
+
+Two descriptions of one arithmetic.
+
+**Matrix.** A left ideal of $M_2(\mathbb{C})$ is a sum of columns, each of dimension $2$. The centre is the line of scalar matrices, and the traceless part is the complement, of dimension $4-1=3$.
+
+**Tensor degree.** The first three tensor powers of the simple module are
+
+$$
+\mathbb{C}\ (\text{degree }0),\qquad S\ (\text{degree }1),\qquad S\otimes S\ (\text{degree }2),
+$$
+
+of dimensions $1$, $2$ and $4$. The trace form identifies $S^{*}$ with $S$, so $S\otimes S\cong\operatorname{End}_{\mathbb{C}}(S)=\mathbb{B}$, and under $G$ it splits as
+
+$$
+S\otimes S=\Lambda^2S\oplus\operatorname{sym}^2S\cong\mathbf{1}\oplus\mathbf{3}.
+$$
+
+The trivial summand is $\Lambda^2S$, spanned under the identification by the identity endomorphism; the traceless symmetric part is the adjoint $V$. The dimensions $1$, $2$, $3$ are those of the degree-$0$ object, the degree-$1$ object, and the traceless part of the degree-$2$ object.
+
+The truncation is the same fact from the other side. The algebra is the endomorphism object of $S$, of dimension $4$, and it splits as $\mathbf{1}\oplus\mathbf{3}$; degree $3$ is $S^{\otimes3}$, of dimension $8$, and it is not a subspace of $\mathbb{B}$. Spin above one is a carrier but not a subcarrier, which is the remark that closes §*The Subcarriers of the Regular Module*.
+
+### What the Algebra Does Not Determine
+
+**Which structure a particle uses.** The algebra carries both lists. It does not say that the electron uses the left module and the photon the adjoint; that assignment is physics.
+
+**No dynamics.** The Casimir is a kinematical label. No mass, no Hamiltonian and no equation of motion follow from it.
+
+**No statistics.** The algebraic split matches the two integrality classes. The spin–statistics theorem is not proved by the algebra.
+
+**No full Lorentz label.** Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under conjugation it carries the four-vector $(\tfrac12,\tfrac12)$, and its split into $\mathbf{1}\oplus\mathbf{3}$ is the work of the compact subgroup $G$. The rotation spin is the little-group shadow of the Lorentz label, not the whole label.
+
 ## Summary
 
 The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermitian $g_k=-\tfrac12\vec e_k$ and the Hermitian $\tilde S_k=\tfrac12 i\vec e_k$, related by $\tilde S_k=-ig_k$. The Casimir is $C=\sum \tilde S_k^2$; on an irreducible unitary carrier it is $s(s+1)$, the dimension is $2s+1$, and $s$ is the maximal weight.
@@ -440,6 +509,8 @@ The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermit
 The subcarriers of the regular module are exactly these three, and $1+2+3=6>4$ shows that no single structure contains all three. The minimal left ideals are parametrised by the sphere, and each is a copy of the spin-half module. The orbital part is an outer derivation of the polynomial algebra; the spin part is the inner derivation $\operatorname{ad}_{\tilde S_k}$.
 
 The tensor square of the adjoint module contains a spin-two summand, and the multiplication map kills it: the product of two biquaternions carries no spin two. That vanishing, and not the dimension count, is the algebraic reason the algebra realises the three subcarrier types and no fourth.
+
+The word spin has four uses in this corpus, and only one of them is a weight. The highest weight of a module structure is the definition; the adjoint action is its instance on $\mathbb{B}=Z\oplus V$; the Peirce index and the chirality are signs, one an inner copy label and one a central Lorentz label, and neither is a value of $s$.
 
 ## Summary of Notation
 
@@ -459,6 +530,7 @@ The tensor square of the adjoint module contains a spin-two summand, and the mul
 | $\mathcal{V}_n$ | The irreducible module of dimension $n+1$ |
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The minimal left ideals at the axis $\vec u$ |
 | $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The rank-one idempotents |
+| $R_{Q}$ | Right multiplication by $Q$ |
 | $\vec\Upsilon_{-+}=\tfrac12(i\vec e_x+\vec e_y)$ | The lowering vector of $S_+$ |
 | $v_+=\vec e_x+i\vec e_y$ | The highest-weight vector of $V$ |
 | $L_k^{\mathrm{orb}}=-i\sum_{l,m}\epsilon_{klm}x_l\,\partial/\partial x_m$ | The orbital generators |
@@ -466,7 +538,6 @@ The tensor square of the adjoint module contains a spin-two summand, and the mul
 
 ## Further Reading
 
-- [The Four Uses of Spin in the Biquaternion Algebra](the-four-uses-of-spin-in-the-biquaternion-algebra.html), for the closure theorem, the two structures and the three signs.
 - [The Category of Modules in the Biquaternion Algebra](the-category-of-modules.html), for the simple module and the classification of the modules.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the decomposition ${}_\mathbb{B}\mathbb{B}\cong S\oplus S$; the spinor spaces and the ladder.
 - [The Casimir Operator](the-casimir-operator.html), for the Casimir in the general theory.
