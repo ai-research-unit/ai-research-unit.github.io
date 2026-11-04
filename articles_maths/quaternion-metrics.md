@@ -236,7 +236,7 @@ The quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2
 |---|---|---|---|---|
 | $\mathbb{H}$ | quaternion norm $\langle\tilde q\rangle_{\natural}=\tilde q\tilde{q}^{\natural}$ | $\mathbb{R}$ | $(4,0)$ | no, definite |
 | $\mathbb{H}$ | quaternion metric $Q_g$, $g\neq0$ | $\mathbb{R}$ | $(1,3)$ | yes, the family itself |
-| $\mathbb{H}_{\mathrm{s}}$ | determinant form | $\mathbb{R}$ | $(2,2)$ | no, wrong algebra and signature |
+| $\mathbb{H}^{\mathrm{spl}}$ | determinant form | $\mathbb{R}$ | $(2,2)$ | no, wrong algebra and signature |
 
 The family of quaternion metrics is a four-parameter family inside the ten-dimensional space of symmetric real forms on $\mathbb{R}^4$, and it is a single isometry class inside it.
 

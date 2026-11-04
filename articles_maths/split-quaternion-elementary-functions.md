@@ -51,7 +51,7 @@ $$
 \langle\exp \tilde q\rangle_{\natural} = \exp(2q_t) > 0 .
 $$
 
-The exponential is therefore never zero and always invertible, its split-quaternion norm is $\exp(2q_t)$, and it maps $\mathbb{H}_{\mathrm{s}}$ into the open set $\{N > 0\}$ of units.
+The exponential is therefore never zero and always invertible, its split-quaternion norm is $\exp(2q_t)$, and it maps $\mathbb{H}^{\mathrm{spl}}$ into the open set $\{N > 0\}$ of units.
 
 **Proof.** The scalar $q_t$ is central and commutes with $v$, so the series splits, $\exp(q_t+v) = \exp(q_t)\exp v$; the split-quaternion norm follows from multiplicativity and the theorem above.
 
@@ -59,7 +59,7 @@ The exponential is therefore never zero and always invertible, its split-quatern
 
 $$
 \boxed{\;
-\exp(\mathbb{H}_{\mathrm{s}}) = \big\{\tilde q : \langle\tilde q\rangle_{\natural} > 0,\ \operatorname{Sc}(\tilde q) > -\sqrt{\langle\tilde q\rangle_{\natural}}\big\} \cup \{\tilde q \in \mathbb{R} : \tilde q < 0\}
+\exp(\mathbb{H}^{\mathrm{spl}}) = \big\{\tilde q : \langle\tilde q\rangle_{\natural} > 0,\ \operatorname{Sc}(\tilde q) > -\sqrt{\langle\tilde q\rangle_{\natural}}\big\} \cup \{\tilde q \in \mathbb{R} : \tilde q < 0\}
 \;},
 $$
 
@@ -187,9 +187,9 @@ so $1$ is a root of unity of every order, while $\vec e_y = \tilde\pi_1 - \tilde
 
 ## Non-Commutativity and the One-Variable Case
 
-**Theorem (One-Variable Case).** If $\tilde q$ lies in a commutative subalgebra of $\mathbb{H}_{\mathrm{s}}$, that is in one of the planes $\operatorname{span}\{1,\tilde\xi\}$ with $\tilde\xi^2 = \pm 1$, then all the elementary identities of the real and split-complex one-variable calculus hold for $\tilde q$, with the sine and cosine replaced by the hyperbolic functions when $\tilde\xi^2 = +1$.
+**Theorem (One-Variable Case).** If $\tilde q$ lies in a commutative subalgebra of $\mathbb{H}^{\mathrm{spl}}$, that is in one of the planes $\operatorname{span}\{1,\tilde\xi\}$ with $\tilde\xi^2 = \pm 1$, then all the elementary identities of the real and split-complex one-variable calculus hold for $\tilde q$, with the sine and cosine replaced by the hyperbolic functions when $\tilde\xi^2 = +1$.
 
-**Proof.** In a commutative subalgebra the binomial theorem applies to the series, and the subalgebra is isomorphic to $\mathbb{C}$ or to $\mathbb{D}$ according to the sign of $\tilde\xi^2$.
+**Proof.** In a commutative subalgebra the binomial theorem applies to the series, and the subalgebra is isomorphic to $\mathbb{C}$ or to $\mathbb{C}^{\mathrm{spl}}$ according to the sign of $\tilde\xi^2$.
 
 **Theorem (The General Case).** For general $\tilde q_1,\tilde q_2$ the identities fail: $\exp(\tilde q_1+\tilde q_2) \neq \exp \tilde q_1\exp \tilde q_2$ unless $\tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1$, and the failure is exactly the Baker–Campbell–Hausdorff correction. The conjugation however always behaves well: $(\exp \tilde q)^{\natural} = \exp\tilde{q}^{\natural}$, $\langle\exp \tilde q\rangle_{\natural} = \exp(2\operatorname{Sc}(\tilde q))$, and $\exp \tilde q$ is a unit for every $\tilde q$.
 
@@ -207,7 +207,7 @@ so $1$ is a root of unity of every order, while $\vec e_y = \tilde\pi_1 - \tilde
 | $\exp v$ | $c_0(\langle v\rangle_{\natural}) + c_1(\langle v\rangle_{\natural})v$ | all $v \in V$ |
 | $\exp v$ | $1 + v$ | $\langle v\rangle_{\natural} = 0$ |
 | $\langle\exp \tilde q\rangle_{\natural}$ | $\exp(2\operatorname{Sc}(\tilde q))$ | all $\tilde q$ |
-| $\exp(\mathbb{H}_{\mathrm{s}})$ | $\{N>0,\ \operatorname{Sc} > -\sqrt{N}\} \cup \{\tilde q < 0\}$ | image of the exponential |
+| $\exp(\mathbb{H}^{\mathrm{spl}})$ | $\{N>0,\ \operatorname{Sc} > -\sqrt{N}\} \cup \{\tilde q < 0\}$ | image of the exponential |
 | kernel of $\exp$ | $\{0\} \cup 2\pi\mathbb{Z}\cdot\Sigma$ | $\Sigma$ the root set of $-1$ |
 | $\cos^2v+\sin^2v$ | $1$ | $v \in V$, $\langle v\rangle_{\natural} \neq 0$ |
 | $\cosh^2v-\sinh^2v$ | $1$ | $v \in V$, $\langle v\rangle_{\natural} \neq 0$ |

@@ -127,7 +127,7 @@ $$
 k[\mathbb{Z}/2] \cong \frac{k[x]}{(x^2-1)} \cong \frac{k[x]}{(x-1)}\times\frac{k[x]}{(x+1)} \cong k\times k,
 $$
 
-which over $k = \mathbb{R}$ is the split complex algebra $\mathbb{D}$.
+which over $k = \mathbb{R}$ is the split complex algebra $\mathbb{C}^{\mathrm{spl}}$.
 
 ## Finite Groups and the Decomposition
 

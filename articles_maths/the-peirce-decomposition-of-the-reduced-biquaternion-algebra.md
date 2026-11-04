@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reduced biquaternion algebra $\mathbb{B}_{\mathrm r}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ is commutative, associative and unital, of complex dimension $2$, with basis $1,j$ and $j^{2}=+1$. Its two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$ are complete, orthogonal and central, and the Peirce decomposition relative to them is diagonal: the algebra is the sum of the two lines $\mathbb{C}\Pi_{+}$ and $\mathbb{C}\Pi_{-}$, and the two mixed components vanish.
+The reduced biquaternion algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ is commutative, associative and unital, of complex dimension $2$, with basis $1,j$ and $j^{2}=+1$. Its two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$ are complete, orthogonal and central, and the Peirce decomposition relative to them is diagonal: the algebra is the sum of the two lines $\mathbb{C}\Pi_{+}$ and $\mathbb{C}\Pi_{-}$, and the two mixed components vanish.
 
 This is the degenerate case of the Peirce construction. The mixed components vanish because the idempotents are central, exactly as in the split-complex algebra. The article states the decomposition, the multiplication table and the root of $1$ that produces the family. The basis and the spinors are *The Peirce Basis of the Reduced Biquaternion Algebra* and *Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra*.
 
@@ -11,7 +11,7 @@ This is the degenerate case of the Peirce construction. The mixed components van
 **The algebra.** Over $\mathbb{C}$,
 
 $$
-\mathbb{B}_{\mathrm r}=\mathbb{C}[j]/(j^{2}-1),\qquad j^{2}=1,
+\mathbb{B}^{\mathrm{red}}=\mathbb{C}[j]/(j^{2}-1),\qquad j^{2}=1,
 $$
 
 with basis $1,j$ and product determined by $j^{2}=1$. A general element is
@@ -42,26 +42,26 @@ $$
 \breve Q=\breve Q_{+}\Pi_{+}+\breve Q_{-}\Pi_{-},\qquad \breve Q_{\pm}=u\pm v .
 $$
 
-The map $\breve Q\mapsto(\breve Q_{+},\breve Q_{-})$ is an isomorphism of $\mathbb{C}$-algebras from $\mathbb{B}_{\mathrm r}$ to $\mathbb{C}\times\mathbb{C}$.
+The map $\breve Q\mapsto(\breve Q_{+},\breve Q_{-})$ is an isomorphism of $\mathbb{C}$-algebras from $\mathbb{B}^{\mathrm{red}}$ to $\mathbb{C}\times\mathbb{C}$.
 
 ## The Peirce Lines
 
 **Definition.** For $\sigma,\tau\in\{+,-\}$ the Peirce line is
 
 $$
-\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\mathbb{B}_{\mathrm r}\Pi_{\tau}.
+\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\mathbb{B}^{\mathrm{red}}\Pi_{\tau}.
 $$
 
 **Proposition.** The two diagonal lines are one-dimensional over $\mathbb{C}$, the two mixed lines are zero, and
 
 $$
-\mathbb{B}_{\mathrm r}=\mathbb{B}_{++}\oplus\mathbb{B}_{--}.
+\mathbb{B}^{\mathrm{red}}=\mathbb{B}_{++}\oplus\mathbb{B}_{--}.
 $$
 
 **Proof.** Since $\Pi_{\sigma}$ is central,
 
 $$
-\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\Pi_{\tau}\mathbb{B}_{\mathrm r}=\delta_{\sigma\tau}\,\Pi_{\sigma}\mathbb{B}_{\mathrm r}.
+\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\Pi_{\tau}\mathbb{B}^{\mathrm{red}}=\delta_{\sigma\tau}\,\Pi_{\sigma}\mathbb{B}^{\mathrm{red}}.
 $$
 
 So $\mathbb{B}_{+-}=\mathbb{B}_{-+}=0$, and
@@ -99,7 +99,7 @@ $$
 
 ## The Root of $1$
 
-**Proposition.** The roots of $x^{2}=1$ in $\mathbb{B}_{\mathrm r}$ are $1,-1,j,-j$.
+**Proposition.** The roots of $x^{2}=1$ in $\mathbb{B}^{\mathrm{red}}$ are $1,-1,j,-j$.
 
 **Proof.** Write $x=u+jv$ with $u,v\in\mathbb{C}$. Then $x^{2}=u^{2}+v^{2}+2uvj$, so $x^{2}=1$ is equivalent to
 
@@ -124,13 +124,13 @@ The root $j$ attaches $\Pi_{+}$ to $+1$ and $\Pi_{-}$ to $-1$; the root $-j$ exc
 Because $\Pi_{\pm}$ is central, the decomposition is a decomposition into two algebras, each with unit $\Pi_{\pm}$, and the algebra is the direct product
 
 $$
-\mathbb{B}_{\mathrm r}\cong\mathbb{C}\Pi_{+}\times\mathbb{C}\Pi_{-},\qquad \breve Q\longmapsto(\breve Q_{+},\breve Q_{-}).
+\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\Pi_{+}\times\mathbb{C}\Pi_{-},\qquad \breve Q\longmapsto(\breve Q_{+},\breve Q_{-}).
 $$
 
 This is the structural reason for the vanishing of the mixed lines: for central $\Pi_{+}$,
 
 $$
-\Pi_{+}\mathbb{B}_{\mathrm r}\Pi_{-}=\Pi_{+}\Pi_{-}\mathbb{B}_{\mathrm r}=0.
+\Pi_{+}\mathbb{B}^{\mathrm{red}}\Pi_{-}=\Pi_{+}\Pi_{-}\mathbb{B}^{\mathrm{red}}=0.
 $$
 
 The generator $j$ is the difference of the two idempotents:
@@ -145,17 +145,17 @@ The decomposition gives two lines, each spanned by its idempotent, and no mixed 
 
 ## Summary
 
-The reduced biquaternion algebra $\mathbb{B}_{\mathrm r}=\mathbb{C}[j]/(j^{2}-1)$, of complex dimension $2$, has the complete orthogonal family $\Pi_{\pm}=\tfrac12(1\pm j)$. The idempotents are central, so the Peirce decomposition is diagonal, $\mathbb{B}_{\mathrm r}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$, with the mixed components zero. The multiplication is componentwise, the algebra is $\mathbb{C}\times\mathbb{C}$, and the nontrivial roots of $1$ are $\pm j$, both giving the same unordered family.
+The reduced biquaternion algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}[j]/(j^{2}-1)$, of complex dimension $2$, has the complete orthogonal family $\Pi_{\pm}=\tfrac12(1\pm j)$. The idempotents are central, so the Peirce decomposition is diagonal, $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$, with the mixed components zero. The multiplication is componentwise, the algebra is $\mathbb{C}\times\mathbb{C}$, and the nontrivial roots of $1$ are $\pm j$, both giving the same unordered family.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm r}=\mathbb{C}[j]/(j^{2}-1)$ | The reduced biquaternion algebra |
+| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}[j]/(j^{2}-1)$ | The reduced biquaternion algebra |
 | $\breve Q=u+jv$ | A general element |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | The two idempotents |
 | $\breve Q_{\pm}=u\pm v$ | The idempotent coordinates |
-| $\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\mathbb{B}_{\mathrm r}\Pi_{\tau}$ | A Peirce component |
+| $\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\mathbb{B}^{\mathrm{red}}\Pi_{\tau}$ | A Peirce component |
 
 ## Further Reading
 

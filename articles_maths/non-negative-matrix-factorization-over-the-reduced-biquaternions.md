@@ -4,7 +4,7 @@
 
 Non-negative matrix factorization writes a non-negative matrix as a product of two non-negative matrices of lower rank and reads the result as a basis and a coefficient matrix. Over the reduced biquaternions the same construction is available, and it is constrained by the algebra in a way the real and the complex cases are not: the product of two non-negative reduced biquaternion matrices need not be non-negative, so the constraint must be placed on the **structure** of one of the two factors and not on its non-negativity alone. The model of the literature is
 $$
-X\approx WH,\qquad W\in\mathbb{B}_{\mathrm{r}}^{m\times l},\quad H\in\mathbb{B}_{\mathrm{r}}^{l\times n},\qquad X\succeq0,\quad W\succeq0,\quad H=H_0+H_2j\ \text{with}\ H_0,H_2\ \text{real non-negative},
+X\approx WH,\qquad W\in{\mathbb{B}^{\mathrm{red}}}^{m\times l},\quad H\in{\mathbb{B}^{\mathrm{red}}}^{l\times n},\qquad X\succeq0,\quad W\succeq0,\quad H=H_0+H_2j\ \text{with}\ H_0,H_2\ \text{real non-negative},
 $$
 where $\succeq0$ means that the four coefficient matrices of the matrix are real non-negative matrices, which is the entrywise reading of the non-negative cone of the algebra, and where the coefficient matrix $H$ is restricted to the elements of the form $h_0+h_2j$ with $h_0,h_2\ge0$. The restriction is exactly what makes the product non-negative, and it is the reason the reduced biquaternion case is more than a doubling of the real one.
 
@@ -16,7 +16,7 @@ where $\succeq0$ means that the four coefficient matrices of the matrix are real
 
 ### The Two Cones of Matrices
 
-**Definition.** A matrix $M\in\mathbb{B}_{\mathrm{r}}^{m\times n}$ is **non-negative** when its four component matrices are entrywise non-negative, $M_\ell\ge0$ for $\ell=0,1,2,3$; the set of them is $\mathcal{C}_{+}^{m\times n}$, the product of the cones $\mathcal{C}_{+}$ over the $mn$ entries. The matrix is **structured** when $M=M_0+M_2j$ with $M_0\ge0$ and $M_2\ge0$ entrywise; the set of them is $\mathcal{O}^{m\times n}$, the product of the orthants $\mathcal{O}$ over the entries.
+**Definition.** A matrix $M\in{\mathbb{B}^{\mathrm{red}}}^{m\times n}$ is **non-negative** when its four component matrices are entrywise non-negative, $M_\ell\ge0$ for $\ell=0,1,2,3$; the set of them is $\mathcal{C}_{+}^{m\times n}$, the product of the cones $\mathcal{C}_{+}$ over the $mn$ entries. The matrix is **structured** when $M=M_0+M_2j$ with $M_0\ge0$ and $M_2\ge0$ entrywise; the set of them is $\mathcal{O}^{m\times n}$, the product of the orthants $\mathcal{O}$ over the entries.
 
 **Theorem (the two cones).** Both $\mathcal{C}_{+}^{m\times n}$ and $\mathcal{O}^{m\times n}$ are closed convex pointed cones of the real vector space of the matrices, with nonempty interior and with the entrywise order, and
 $$
@@ -70,7 +70,7 @@ $$
 \operatorname{rank}_{+}(X)\le\min(m,n).
 $$
 
-*Proof.* If $m\le n$, take $W=[\,X\ \ 0\,]\in\mathbb{B}_{\mathrm{r}}^{m\times n}$, the matrix $X$ followed by $n-m$ zero columns, and $H=[\,I_m\ \ 0\,]^{\top}\in\mathcal{O}^{n\times m}$, the identity on top of $n-m$ zero rows; then $WH=X$, both factors are in their cones, and $l=m$. If $n\le m$, take $W=X\in\mathcal{C}_{+}^{m\times n}$ and $H=I_n\in\mathcal{O}^{n\times n}$; then $WH=X$ and $l=n$. In both cases an exact factorization with $l=\min(m,n)$ is exhibited, so the set over which the minimum is taken is nonempty and the rank is at most $\min(m,n)$.
+*Proof.* If $m\le n$, take $W=[\,X\ \ 0\,]\in{\mathbb{B}^{\mathrm{red}}}^{m\times n}$, the matrix $X$ followed by $n-m$ zero columns, and $H=[\,I_m\ \ 0\,]^{\top}\in\mathcal{O}^{n\times m}$, the identity on top of $n-m$ zero rows; then $WH=X$, both factors are in their cones, and $l=m$. If $n\le m$, take $W=X\in\mathcal{C}_{+}^{m\times n}$ and $H=I_n\in\mathcal{O}^{n\times n}$; then $WH=X$ and $l=n$. In both cases an exact factorization with $l=\min(m,n)$ is exhibited, so the set over which the minimum is taken is nonempty and the rank is at most $\min(m,n)$.
 
 **Proposition (a real basis forces structured data).** If the basis matrix is real non-negative, $W=W_0\ge0$ with $W_1=W_2=W_3=0$, and $H\in\mathcal{O}$, then $X=WH$ is structured,
 $$

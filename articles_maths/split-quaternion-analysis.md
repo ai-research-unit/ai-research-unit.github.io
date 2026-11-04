@@ -9,7 +9,7 @@ The split-quaternion algebra, its split-quaternion norm and its idempotents are 
 
 ## The Metric Structure
 
-**Definition.** Identify $\mathbb{H}_{\mathrm{s}}$ with $\mathbb{R}^4$ by $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, and put
+**Definition.** Identify $\mathbb{H}^{\mathrm{spl}}$ with $\mathbb{R}^4$ by $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, and put
 
 $$
 |\tilde q|^2 = q_t^2 + q_x^2 + q_y^2 + q_z^2 .
@@ -17,7 +17,7 @@ $$
 
 This is the **Euclidean norm** of the algebra. The split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ is indefinite and is not a norm in the analytic sense.
 
-**Theorem (The Algebra Is a Normed Algebra up to a Constant).** For all $\tilde q_1,\tilde q_2 \in \mathbb{H}_{\mathrm{s}}$,
+**Theorem (The Algebra Is a Normed Algebra up to a Constant).** For all $\tilde q_1,\tilde q_2 \in \mathbb{H}^{\mathrm{spl}}$,
 
 $$
 \boxed{\;
@@ -39,9 +39,9 @@ The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{
 
 ## Limits and Continuity
 
-**Definition.** A function $f : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ has **limit** $L$ at $\tilde q_1$ when for every $\varepsilon > 0$ there is $\delta > 0$ with $|f(\tilde q)-L| < \varepsilon$ whenever $0 < |\tilde q - \tilde q_1| < \delta$; and $f$ is **continuous** at $\tilde q_1$ when the limit there is $f(\tilde q_1)$.
+**Definition.** A function $f : \mathbb{H}^{\mathrm{spl}} \to \mathbb{H}^{\mathrm{spl}}$ has **limit** $L$ at $\tilde q_1$ when for every $\varepsilon > 0$ there is $\delta > 0$ with $|f(\tilde q)-L| < \varepsilon$ whenever $0 < |\tilde q - \tilde q_1| < \delta$; and $f$ is **continuous** at $\tilde q_1$ when the limit there is $f(\tilde q_1)$.
 
-**Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q_1,\tilde q_2) \mapsto \tilde q_1+\tilde q_2$, $(\tilde q_1,\tilde q_2)\mapsto \tilde q_1 \tilde q_2$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \tilde{q}^{\natural}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}_{\mathrm{s}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of units.
+**Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q_1,\tilde q_2) \mapsto \tilde q_1+\tilde q_2$, $(\tilde q_1,\tilde q_2)\mapsto \tilde q_1 \tilde q_2$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \tilde{q}^{\natural}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}^{\mathrm{spl}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of units.
 
 **Proof.** The sum and scalar product are linear in the coordinates; the product satisfies $|\tilde q_1 \tilde q_2 - q_{1t}q_{2t}| \leq |\tilde q_1-q_{1t}||\tilde q_2| + |q_{1t}||\tilde q_2-q_{2t}|$ for the coordinate norm up to a constant, hence is continuous; the involutions and the projections are linear in the coordinates. For the inverse, $\tilde q^{-1}-\tilde q_1^{-1} = \tilde q^{-1}(\tilde q_1-\tilde q)\tilde q_1^{-1}$ and $\tilde q \mapsto \tilde q^{-1}$ is bounded near $\tilde q_1$ by the continuity of the coordinates of the inverse, which are rational functions of the coordinates with denominator $\langle\tilde q\rangle_{\natural}$.
 
@@ -107,15 +107,15 @@ which is the zero divisor set of the algebra in the vector subspace.
 
 **Proof.** The implication is $D^2 = \Box_{(2,1)}$, the counterexample is the displayed computation, and an operator with a cone of nonzero characteristic vectors is not elliptic, so the elliptic-theoretic properties fail along the characteristic directions; the identification of the characteristic variety with the zero divisors is the theorem. That the class is much smaller than the wave solutions, and in particular is not parametrised by arbitrary data on a hypersurface, is the kernel computation of *Split-Quaternion Integration*, §*The Kernel of the Vector Operator*, where the two transported families and the nonzero compactly supported solutions are exhibited. The elliptic case is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*.
 
-**Corollary (The Operators on the Algebra and on the Vector Subspace).** The operator $D$ acts on functions whose variable lies in the vector subspace, or on the vector part of a function of the full algebra. The operator associated with the full form of signature $(2,2)$ is the Clifford operator of the algebra $\mathrm{Cl}_{2,2}$, whose generators are not the generators $\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{H}_{\mathrm{s}}$ alone; the two operators are different, and the analysis of the full algebra is not the analysis of its vector part.
+**Corollary (The Operators on the Algebra and on the Vector Subspace).** The operator $D$ acts on functions whose variable lies in the vector subspace, or on the vector part of a function of the full algebra. The operator associated with the full form of signature $(2,2)$ is the Clifford operator of the algebra $\mathrm{Cl}_{2,2}$, whose generators are not the generators $\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{H}^{\mathrm{spl}}$ alone; the two operators are different, and the analysis of the full algebra is not the analysis of its vector part.
 
-**Proof.** The generators of $\mathbb{H}_{\mathrm{s}}$ have the sign pattern $(-,+,+)$ and span a three-dimensional subspace, so they generate the Clifford algebra of the restricted form, not of the form on the algebra; the operator of the (2,2) form requires four anticommuting generators.
+**Proof.** The generators of $\mathbb{H}^{\mathrm{spl}}$ have the sign pattern $(-,+,+)$ and span a three-dimensional subspace, so they generate the Clifford algebra of the restricted form, not of the form on the algebra; the operator of the (2,2) form requires four anticommuting generators.
 
 **Remark (One Variable and Several Variables).** In the one-variable tradition of *Quaternion Analysis* the derivative is taken with respect to the full variable and the operator is the Cauchy–Riemann operator of the ambient form; in the several-variable tradition of the Part III articles the operator is a fixed first-order system. On this algebra the second reading is the only one available: the first leads to the wave operator above, whose theory is hyperbolic.
 
 ## Power Series and Analytic Functions
 
-**Definition.** A **power series** with coefficients in the algebra is a series $\sum_{n \geq 0} q_n \tilde q^n$ with $q_n \in \mathbb{H}_{\mathrm{s}}$; it is **absolutely convergent** at $\tilde q$ when $\sum |q_n|\,|\tilde q|^n$ converges.
+**Definition.** A **power series** with coefficients in the algebra is a series $\sum_{n \geq 0} q_n \tilde q^n$ with $q_n \in \mathbb{H}^{\mathrm{spl}}$; it is **absolutely convergent** at $\tilde q$ when $\sum |q_n|\,|\tilde q|^n$ converges.
 
 **Theorem (Convergence of Power Series).** A power series converges absolutely on the open ball of radius $R = 1/\limsup |q_n|^{1/n}$ and defines a continuous function there; the series converges if and only if its four coordinate series converge, and the value is the corresponding coordinate limit. In particular the exponential, the logarithm and the elementary series of *Split-Quaternion Elementary Functions* are defined on their balls of convergence in the coordinate sense.
 
@@ -123,7 +123,7 @@ which is the zero divisor set of the algebra in the vector subspace.
 
 **Corollary (No Identity Theorem).** Two convergent power series that agree on an open set need not agree on their common domain; the identity theorem fails.
 
-**Proof.** The algebra has zero divisors, so a nonzero element can act as zero on a factor: if $\tilde\nu \neq 0$ has $\tilde\nu^2 = 0$, then the function $\tilde q \mapsto \tilde\nu(\tilde q - q_t)$ vanishes on the set $\tilde q - q_t \in \tilde\nu\mathbb{H}_{\mathrm{s}}$, which contains a point but not an open set, while $\tilde q \mapsto \tilde\nu(\tilde q-q_t)^2$ vanishes on a larger set; the standard connectedness argument of the identity theorem requires a product ring with no nilpotents. The failure is the nilpotent phenomenon of *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
+**Proof.** The algebra has zero divisors, so a nonzero element can act as zero on a factor: if $\tilde\nu \neq 0$ has $\tilde\nu^2 = 0$, then the function $\tilde q \mapsto \tilde\nu(\tilde q - q_t)$ vanishes on the set $\tilde q - q_t \in \tilde\nu\mathbb{H}^{\mathrm{spl}}$, which contains a point but not an open set, while $\tilde q \mapsto \tilde\nu(\tilde q-q_t)^2$ vanishes on a larger set; the standard connectedness argument of the identity theorem requires a product ring with no nilpotents. The failure is the nilpotent phenomenon of *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
 
 ## Singularities
 
@@ -161,13 +161,13 @@ $$
 \tilde q \longmapsto \big(\tilde\pi_1\tilde q\tilde\pi_1,\ \tilde\pi_1\tilde q\tilde\pi_2,\ \tilde\pi_2\tilde q\tilde\pi_1,\ \tilde\pi_2\tilde q\tilde\pi_2\big)
 $$
 
-is a linear isomorphism of $\mathbb{H}_{\mathrm{s}}$ with the four lines, and the components multiply as the matrix units: for any $\tilde q_1, \tilde q_2$,
+is a linear isomorphism of $\mathbb{H}^{\mathrm{spl}}$ with the four lines, and the components multiply as the matrix units: for any $\tilde q_1, \tilde q_2$,
 
 $$
 (\tilde\pi_\epsilon \tilde q_1 \tilde\pi_\eta)(\tilde\pi_{\eta'} \tilde q_2 \tilde\pi_{\epsilon'}) = 0 \quad \text{unless } \eta = \eta',
 $$
 
-and, when $\eta = \eta'$, the product is $\tilde\pi_\epsilon (\tilde q_1 \tilde\pi_\eta \tilde q_2) \tilde\pi_{\epsilon'}$, which lies in the line $\tilde\pi_\epsilon\mathbb{H}_{\mathrm{s}}\tilde\pi_{\epsilon'}$. The coordinates are therefore a presentation of the algebra as a matrix algebra.
+and, when $\eta = \eta'$, the product is $\tilde\pi_\epsilon (\tilde q_1 \tilde\pi_\eta \tilde q_2) \tilde\pi_{\epsilon'}$, which lies in the line $\tilde\pi_\epsilon\mathbb{H}^{\mathrm{spl}}\tilde\pi_{\epsilon'}$. The coordinates are therefore a presentation of the algebra as a matrix algebra.
 
 Written in the basis $1, \vec e_x, \vec e_y, \vec e_z$, the four components of $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ are
 
@@ -191,7 +191,7 @@ which are the two eigenvalues of the diagonal projections, $\tilde\pi_1\tilde q\
 
 ## Comparison with the Quaternion and Split-Complex Cases
 
-| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{D}$ |
+| | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{spl}}$ |
 |---|---|---|---|
 | norm | definite, multiplicative | indefinite, not multiplicative | indefinite, not multiplicative |
 | zero divisors | none | the null cone | the isotropic lines |
@@ -220,7 +220,7 @@ The natural operators are the vector operator $D = \vec e_x\,\partial/\partial q
 | $q_x^2-q_y^2-q_z^2=0$ | the characteristic variety, equal to the zero divisor set | *Split-Quaternion Zero Divisors* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
 | power series $\sum q_n \tilde q^n$ | convergence on a ball, evaluation coordinatewise | this article |
-| $\mathrm{Cl}_{2,2}$ | the Clifford algebra of the full form, different from $\mathbb{H}_{\mathrm{s}}$ | *Clifford Algebras in Finite Dimensions* |
+| $\mathrm{Cl}_{2,2}$ | the Clifford algebra of the full form, different from $\mathbb{H}^{\mathrm{spl}}$ | *Clifford Algebras in Finite Dimensions* |
 
 ## Further Reading
 

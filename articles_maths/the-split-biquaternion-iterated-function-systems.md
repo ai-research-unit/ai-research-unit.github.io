@@ -8,7 +8,7 @@ The split-biquaternion algebra, its idempotents and its norm are *Split-Biquater
 
 The article owns the operator norm of a split-biquaternion generator, the contraction criterion, the product attractor and the sum of the dimensions, the parity structure of the generator list, and the zero-divisor generators. It does not re-derive the classical theory or the quaternion systems.
 
-**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, and a left-affine generator is $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ with $\tilde Q_{1,i}=\tilde Q_{1,i}^+\tilde\Pi_1+\tilde Q_{1,i}^-\tilde\Pi_2$; $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
+**Standing convention.** $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, and a left-affine generator is $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ with $\tilde Q_{1,i}=\tilde Q_{1,i}^+\tilde\Pi_1+\tilde Q_{1,i}^-\tilde\Pi_2$; $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
 
 ## The Operator Norm and the Contraction Criterion
 
@@ -68,7 +68,7 @@ $$
 
 ## The Parity Structure of the Systems
 
-**Proposition (even and odd generators).** Let $\tilde Q_1\in\mathbb{H}_{\mathbb{D}}$ be written $\tilde Q_1=\tilde Q_1^0+j\tilde Q_1^1$ with $\tilde Q_1^0$ even and $j\tilde Q_1^1$ odd. Then
+**Proposition (even and odd generators).** Let $\tilde Q_1\in\mathbb{B}^{\mathrm{spl}}$ be written $\tilde Q_1=\tilde Q_1^0+j\tilde Q_1^1$ with $\tilde Q_1^0$ even and $j\tilde Q_1^1$ odd. Then
 
 1. if $\tilde Q_1$ is even ($\tilde Q_1^1=0$), left multiplication by $\tilde Q_1$ preserves the even part and the odd part;
 2. if $\tilde Q_1$ is odd ($\tilde Q_1^0=0$), left multiplication by $\tilde Q_1$ exchanges the even part and the odd part.

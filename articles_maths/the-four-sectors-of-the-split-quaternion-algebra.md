@@ -59,7 +59,7 @@ The sectors therefore refine both dichotomies at once: the row $i=1$ consists of
 
 ### $\Sigma_{11}$: Units off Both Cones
 
-On $\Sigma_{11}$ the norm is non-zero and $S\neq0$. The element is a unit, the two eigenvalues $t\pm\sqrt S$ are distinct, and $L_q$ is semisimple. The minimal polynomial is $(\lambda-t)^2-S$, the characteristic polynomial is its square, over $\mathbb C$ each eigenspace has dimension $2$ and an eigenbasis exists. The eigenvalues are real when $S>0$ and a complex conjugate pair when $S<0$. The sector is open in $\mathbb H_{\mathrm s}$ and has dimension $4$.
+On $\Sigma_{11}$ the norm is non-zero and $S\neq0$. The element is a unit, the two eigenvalues $t\pm\sqrt S$ are distinct, and $L_q$ is semisimple. The minimal polynomial is $(\lambda-t)^2-S$, the characteristic polynomial is its square, over $\mathbb C$ each eigenspace has dimension $2$ and an eigenbasis exists. The eigenvalues are real when $S>0$ and a complex conjugate pair when $S<0$. The sector is open in $\mathbb{H}^{\mathrm{spl}}$ and has dimension $4$.
 
 ### $\Sigma_{10}$: Units on the Spectral Cone
 
@@ -101,13 +101,13 @@ It splits into the origin and the non-zero nilpotents. At the origin $L_0=0$, th
 **Theorem (closures).** The closures of the sectors are
 
 $$
-\overline{\Sigma_{11}}=\mathbb H_{\mathrm s},\qquad
+\overline{\Sigma_{11}}=\mathbb{H}^{\mathrm{spl}},\qquad
 \overline{\Sigma_{10}}=\mathcal C,\qquad
 \overline{\Sigma_{01}}=\mathcal Z,\qquad
 \overline{\Sigma_{00}}=\Sigma_{00}.
 $$
 
-*Proof.* The set $\Sigma_{11}$ is the complement of $\mathcal Z\cup\mathcal C$, a finite union of zero sets of non-zero polynomials, so it is open and dense; its closure is $\mathbb H_{\mathrm s}$. The sector $\Sigma_{10}$ is $\mathcal C$ with the slice $t=0$ removed; every point of that slice is a limit of points with $t\neq0$ and the same vector part, so its closure is $\mathcal C$. The sector $\Sigma_{01}$ is $\mathcal Z$ with the slice $S=0$ removed; every point of that slice is a limit of points of $\mathcal Z$ with $S>0$ and $t=\sqrt S$ (add a small multiple of $\vec e_y$ if necessary), so its closure is $\mathcal Z$. The sector $\Sigma_{00}$ is the zero set of the two polynomials $t$ and $S$, hence closed.
+*Proof.* The set $\Sigma_{11}$ is the complement of $\mathcal Z\cup\mathcal C$, a finite union of zero sets of non-zero polynomials, so it is open and dense; its closure is $\mathbb{H}^{\mathrm{spl}}$. The sector $\Sigma_{10}$ is $\mathcal C$ with the slice $t=0$ removed; every point of that slice is a limit of points with $t\neq0$ and the same vector part, so its closure is $\mathcal C$. The sector $\Sigma_{01}$ is $\mathcal Z$ with the slice $S=0$ removed; every point of that slice is a limit of points of $\mathcal Z$ with $S>0$ and $t=\sqrt S$ (add a small multiple of $\vec e_y$ if necessary), so its closure is $\mathcal Z$. The sector $\Sigma_{00}$ is the zero set of the two polynomials $t$ and $S$, hence closed.
 
 **Corollary (the common boundary).** The origin lies in the closure of every sector, and
 
@@ -115,9 +115,9 @@ $$
 \overline{\Sigma_{10}}\cap\overline{\Sigma_{01}}=\mathcal C\cap\mathcal Z=\Sigma_{00}.
 $$
 
-*Proof.* The origin lies in $\mathbb H_{\mathrm s}$, in $\mathcal C$ and in $\mathcal Z$, and $\Sigma_{00}$ contains it. The intersection of the two cone closures is the intersection of the two cones, which is $\Sigma_{00}$ by definition.
+*Proof.* The origin lies in $\mathbb{H}^{\mathrm{spl}}$, in $\mathcal C$ and in $\mathcal Z$, and $\Sigma_{00}$ contains it. The intersection of the two cone closures is the intersection of the two cones, which is $\Sigma_{00}$ by definition.
 
-**Theorem (dimensions and openness).** The dimensions of the sectors are $4,3,3,2$ in the order $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$. The sector $\Sigma_{11}$ is the only one open in $\mathbb H_{\mathrm s}$. The sectors $\Sigma_{10}$ and $\Sigma_{01}$ are open in $\mathcal C$ and $\mathcal Z$ respectively, and $\Sigma_{00}$ is closed.
+**Theorem (dimensions and openness).** The dimensions of the sectors are $4,3,3,2$ in the order $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$. The sector $\Sigma_{11}$ is the only one open in $\mathbb{H}^{\mathrm{spl}}$. The sectors $\Sigma_{10}$ and $\Sigma_{01}$ are open in $\mathcal C$ and $\mathcal Z$ respectively, and $\Sigma_{00}$ is closed.
 
 *Proof.* The sector $\Sigma_{11}$ is open in $\mathbb R^4$, so it has dimension $4$. The cone $\mathcal C=\mathbb R\times N_V$ has dimension $3$, and $\Sigma_{10}$ is open in it, so $\Sigma_{10}$ has dimension $3$; the scalar part has dimension $1$ and the defective part has dimension $3$. The cone $\mathcal Z$ has dimension $3$ and is smooth off the origin, and $\Sigma_{01}=\mathcal Z\setminus N_V$ is open in it, so $\Sigma_{01}$ has dimension $3$. The nilpotent cone $N_V$ has dimension $2$, and the origin has dimension $0$. A sector on a proper cone is not open in $\mathbb R^4$, and $\Sigma_{00}$ is closed by the closure theorem.
 
@@ -136,13 +136,13 @@ The four sectors are the four sign combinations of the norm $t^2-S$ and the spec
 
 The sector $\Sigma_{11}$ consists of units with simple spectrum; it is open and dense, of dimension $4$. The sector $\Sigma_{10}$ consists of units on the spectral cone. Its scalar part $t\neq0$, $\vec v=0$ is semisimple, and its defective part $t\neq0$, $\vec v\neq0$, $S=0$ has minimal polynomial $(\lambda-t)^2$ and Jordan type $(2,2)$; the sector has dimension $3$. A unit on the spectral cone is defective exactly when $\vec v\neq0$.
 
-The sector $\Sigma_{01}$ consists of zero divisors with simple spectrum $\{0,2t\}$; it is semisimple, with $q=2t e$ and $e=q/(2t)$ idempotent, and has dimension $3$. The sector $\Sigma_{00}$ is the nilpotent cone $q_x^2=q_y^2+q_z^2$, consisting of the origin and the non-zero nilpotents; it has dimension $2$ and is closed. The closures are $\mathbb H_{\mathrm s}$, $\mathcal C$, $\mathcal Z$ and $\Sigma_{00}$; the origin lies in the closure of every sector, and $\Sigma_{00}$ is the intersection of the two cones.
+The sector $\Sigma_{01}$ consists of zero divisors with simple spectrum $\{0,2t\}$; it is semisimple, with $q=2t e$ and $e=q/(2t)$ idempotent, and has dimension $3$. The sector $\Sigma_{00}$ is the nilpotent cone $q_x^2=q_y^2+q_z^2$, consisting of the origin and the non-zero nilpotents; it has dimension $2$ and is closed. The closures are $\mathbb{H}^{\mathrm{spl}}$, $\mathcal C$, $\mathcal Z$ and $\Sigma_{00}$; the origin lies in the closure of every sector, and $\Sigma_{00}$ is the intersection of the two cones.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\mathbb H_{\mathrm s}$ | the split-quaternion algebra |
+| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra |
 | $q=t+\vec v$ | a general element |
 | $S=\vec v^2=-q_x^2+q_y^2+q_z^2$ | the square of the vector part |
 | $q\bar q=t^2-S$ | the split-quaternion norm |

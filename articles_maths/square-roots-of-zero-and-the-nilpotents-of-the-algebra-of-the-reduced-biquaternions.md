@@ -124,7 +124,7 @@ a nonzero element of the second idempotent line. The next power is $(\breve Q_{\
 
 **Theorem (the radical).** The Jacobson radical of the algebra is
 $$
-\boxed{\; \operatorname{rad}\mathbb{B}_{\mathrm{r}}=\{0\} \;},
+\boxed{\; \operatorname{rad}\mathbb{B}^{\mathrm{red}}=\{0\} \;},
 $$
 and the algebra is semisimple and Artinian.
 
@@ -155,7 +155,7 @@ The two **bilinear** products split in opposite ways — the plain one has no no
 | $\breve Q_{\mathrm{ts}}\breve Q^{*}=(\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2})-(Q_{\blacktriangle}\bar Q_{\blacktriangledown}+Q_{\blacktriangledown}\bar Q_{\blacktriangle})j$ | the diagonal of the tessarine sesquilinear product, vanishing only at $0$ |
 | $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | the nilpotent set of every product that has one, the null cone |
 | index $2$, index $3$ | the nilpotency index of the non-associative products |
-| $\operatorname{rad}\mathbb{B}_{\mathrm{r}}=\{0\}$ | the trivial radical, the semisimplicity |
+| $\operatorname{rad}\mathbb{B}^{\mathrm{red}}=\{0\}$ | the trivial radical, the semisimplicity |
 
 ## Further Reading
 

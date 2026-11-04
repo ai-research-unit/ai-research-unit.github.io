@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ is commutative, associative and unital. It is four-dimensional over $\mathbb{R}$ and two-dimensional over $\mathbb{C}$, with real basis $1,i,j,ij$ and complex basis $1,j$; the multiplication is fixed by $i^{2}=-1$, $j^{2}=1$ and $ij=ji$. This article reads the **eigenvalue decomposition** of a reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ in the distinct case $Q_{\blacktriangledown}\neq0$: the writing
+The reduced biquaternion algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ is commutative, associative and unital. It is four-dimensional over $\mathbb{R}$ and two-dimensional over $\mathbb{C}$, with real basis $1,i,j,ij$ and complex basis $1,j$; the multiplication is fixed by $i^{2}=-1$, $j^{2}=1$ and $ij=ji$. This article reads the **eigenvalue decomposition** of a reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ in the distinct case $Q_{\blacktriangledown}\neq0$: the writing
 
 $$
 \breve Q=\lambda_+\Pi_++\lambda_-\Pi_-,
@@ -14,22 +14,22 @@ $$
 
 Here the coefficients $\lambda_+,\lambda_-$ are the eigenvalues and the idempotents $\Pi_\pm$ are the eigenprojections. The eigenvalues are therefore the idempotent coordinates, and their values are displayed with them throughout. The article is the four-dimensional commutative counterpart of *The Biquaternion Eigenvalue Decomposition* and the complex analogue of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*. The general definition and the existence and uniqueness theorems are those of *The Eigenvalue Decomposition of an Element*. The reduced biquaternion content is threefold: for a non-scalar element the eigenprojections are the standard idempotents $\Pi_\pm$; they are central and independent of the element; and the Peirce decomposition of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* relative to either of them is the decomposition of the whole algebra.
 
-**The results.** The spectrum of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is $\{Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}\}$, and in the distinct case $Q_{\blacktriangledown}\neq0$ the two eigenprojections are the standard idempotents $\Pi_\pm=\tfrac12(1\pm j)$. They are central and independent of $\breve Q$, the eigenvalue decomposition is the direct-product decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ read on the element, and the Peirce decomposition relative to $\Pi_+$ has two vanishing off-diagonal corners. The polynomial calculus is the componentwise calculus on $\mathbb{C}\times\mathbb{C}$, and the unit group is $\mathbb{C}^\times\times\mathbb{C}^\times$. The idempotents form a complex eigenbasis of the multiplication operator, with eigenvalues $\lambda_+$ and $\lambda_-$. The scalar regime has a repeated eigenvalue, the zero-divisor regime keeps a two-term decomposition with one zero eigenvalue, and there is no nilpotent regime. The two minimal ideals $S_\pm=\mathbb{C}\Pi_\pm$ are the spinor spaces: a spinor is a single complex coefficient on one of them.
+**The results.** The spectrum of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ is $\{Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}\}$, and in the distinct case $Q_{\blacktriangledown}\neq0$ the two eigenprojections are the standard idempotents $\Pi_\pm=\tfrac12(1\pm j)$. They are central and independent of $\breve Q$, the eigenvalue decomposition is the direct-product decomposition $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ read on the element, and the Peirce decomposition relative to $\Pi_+$ has two vanishing off-diagonal corners. The polynomial calculus is the componentwise calculus on $\mathbb{C}\times\mathbb{C}$, and the unit group is $\mathbb{C}^\times\times\mathbb{C}^\times$. The idempotents form a complex eigenbasis of the multiplication operator, with eigenvalues $\lambda_+$ and $\lambda_-$. The scalar regime has a repeated eigenvalue, the zero-divisor regime keeps a two-term decomposition with one zero eigenvalue, and there is no nilpotent regime. The two minimal ideals $S_\pm=\mathbb{C}\Pi_\pm$ are the spinor spaces: a spinor is a single complex coefficient on one of them.
 
 | Question | Answer |
 |---|---|
-| Algebra | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ |
+| Algebra | $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ |
 | Element | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ |
 | Spectrum | $\sigma(\breve Q)=\{\lambda_+,\lambda_-\}=\{Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown}\}$ |
 | Distinctness | $\lambda_+\neq\lambda_-\iff Q_{\blacktriangledown}\neq0$ |
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$, independent of $\breve Q$ |
 | Eigenprojections central? | yes |
 | Eigenvalue decomposition | $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
-| Peirce decomposition | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, with zero off-diagonal corners |
+| Peirce decomposition | $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, with zero off-diagonal corners |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
 | Matrix model | $M(\breve Q_2)=\operatorname{diag}(A_1,A_2)$; the regular matrix is $\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}$ |
 | Spinor spaces | $S_\pm=\mathbb{C}\Pi_\pm$, two complex lines; one complex spinor coordinate per Peirce copy |
-| Unit group | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ |
+| Unit group | ${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ |
 
 **Conventions.** The notation is fixed in *Algebra and Element Conventions*: the general element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ complex; the idempotents are $\Pi_\pm=\tfrac12(1\pm j)$; and the idempotent coordinates are $Q_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_+\Pi_++Q_-\Pi_-$. The eigenvalues are $\lambda_+=Q_+$ and $\lambda_-=Q_-$, so that $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$. The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$. The two spinor spaces are $S_\pm=\mathbb{C}\Pi_\pm$, with complex spinor coordinates $A_1,A_2$, the two diagonal entries of the matrix in the eigenbasis. The base field is $\mathbb{C}$.
 
@@ -37,7 +37,7 @@ Here the coefficients $\lambda_+,\lambda_-$ are the eigenvalues and the idempote
 
 ## The Spectrum and the Characteristic Polynomial
 
-**Definition.** Let $\breve Q\in\mathbb{B}_{\mathrm{r}}$. A complex scalar $\mu$ is an **eigenvalue** of $\breve Q$ if $\breve Q-\mu 1$ is not a unit in $\mathbb{B}_{\mathrm{r}}$; the set of eigenvalues is the **spectrum** $\sigma(\breve Q)$. This is the definition of *The Eigenvalue Decomposition of an Element*, §*The Eigenvalues of an Element*.
+**Definition.** Let $\breve Q\in\mathbb{B}^{\mathrm{red}}$. A complex scalar $\mu$ is an **eigenvalue** of $\breve Q$ if $\breve Q-\mu 1$ is not a unit in $\mathbb{B}^{\mathrm{red}}$; the set of eigenvalues is the **spectrum** $\sigma(\breve Q)$. This is the definition of *The Eigenvalue Decomposition of an Element*, §*The Eigenvalues of an Element*.
 
 **Notation.** The two eigenvalues are the idempotent coordinates, and their values are
 $$
@@ -198,16 +198,16 @@ The data of the decomposition are collected in the table.
 
 Let $e=\Pi_+$ and $1-e=\Pi_-$. The **Peirce corners** of the pair are
 $$
-\mathbb{B}_{\sigma\tau}=\Pi_\sigma\mathbb{B}_{\mathrm{r}}\Pi_\tau,\qquad \sigma,\tau\in\{+,-\},
+\mathbb{B}_{\sigma\tau}=\Pi_\sigma\mathbb{B}^{\mathrm{red}}\Pi_\tau,\qquad \sigma,\tau\in\{+,-\},
 $$
 in the notation of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, §*The Peirce Decomposition*. The Peirce decomposition is
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}.
+\mathbb{B}^{\mathrm{red}}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}.
 $$
 Because the idempotents are central and orthogonal,
 $$
-\mathbb{B}_{+-}=\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_-=0,\qquad
-\mathbb{B}_{-+}=\Pi_-\mathbb{B}_{\mathrm{r}}\Pi_+=0,
+\mathbb{B}_{+-}=\Pi_+\mathbb{B}^{\mathrm{red}}\Pi_-=0,\qquad
+\mathbb{B}_{-+}=\Pi_-\mathbb{B}^{\mathrm{red}}\Pi_+=0,
 $$
 and
 $$
@@ -215,17 +215,17 @@ $$
 $$
 The vanishing is the commutative case of *Off-Diagonal Peirce Components and Noncentral Idempotents*, where the mixed part measures the failure of the idempotent to be central. So the decomposition collapses to the direct product
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\times\mathbb{C}.
+\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-\cong\mathbb{C}\times\mathbb{C}.
 $$
 
 The four corners are collected in the table.
 
 | Corner | Definition | Value | Dimension over $\mathbb{C}$ |
 |---|---|---|---|
-| $\mathbb{B}_{++}$ | $\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_+$ | $\mathbb{C}\Pi_+$ | $1$ |
-| $\mathbb{B}_{+-}$ | $\Pi_+\mathbb{B}_{\mathrm{r}}\Pi_-$ | $0$ | $0$ |
-| $\mathbb{B}_{-+}$ | $\Pi_-\mathbb{B}_{\mathrm{r}}\Pi_+$ | $0$ | $0$ |
-| $\mathbb{B}_{--}$ | $\Pi_-\mathbb{B}_{\mathrm{r}}\Pi_-$ | $\mathbb{C}\Pi_-$ | $1$ |
+| $\mathbb{B}_{++}$ | $\Pi_+\mathbb{B}^{\mathrm{red}}\Pi_+$ | $\mathbb{C}\Pi_+$ | $1$ |
+| $\mathbb{B}_{+-}$ | $\Pi_+\mathbb{B}^{\mathrm{red}}\Pi_-$ | $0$ | $0$ |
+| $\mathbb{B}_{-+}$ | $\Pi_-\mathbb{B}^{\mathrm{red}}\Pi_+$ | $0$ | $0$ |
+| $\mathbb{B}_{--}$ | $\Pi_-\mathbb{B}^{\mathrm{red}}\Pi_-$ | $\mathbb{C}\Pi_-$ | $1$ |
 
 The two lines are the minimal ideals of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, §*The Two-Sided Ideals*, and each is generated by its idempotent, so $\Pi_\pm$ are primitive idempotents.
 
@@ -237,13 +237,13 @@ with zero mixed components. The eigenvalue decomposition is therefore the Peirce
 
 For $Q_{\blacktriangledown}\neq0$, *The Centraliser and the Diagonal Peirce Part*, §*The theorem*, identifies the diagonal part with the centraliser of $\breve Q$. Here the diagonal part is the whole algebra, and the centraliser is the whole algebra as well:
 $$
-C(\breve Q)=\mathbb{B}_{\mathrm{r}}
+C(\breve Q)=\mathbb{B}^{\mathrm{red}}
 $$
 for every $\breve Q$, because the algebra is commutative. The subalgebra generated by $\breve Q$ is $\mathbb{C}[\breve Q]=\operatorname{span}_{\mathbb{C}}\{1,\breve Q\}$; it equals the whole algebra when $Q_{\blacktriangledown}\neq0$, and it is the scalar line $\mathbb{C}\cdot1$ when $Q_{\blacktriangledown}=0$. This is the commutative shadow of the biquaternion Peirce decomposition: there the idempotents are noncentral, the mixed corners are nonzero, and the diagonal part is only the centraliser $\mathbb{C}[\tilde Q]$ (*Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*).
 
 ## The Eigenbasis
 
-**In the distinct case the fixed idempotents $\Pi_\pm$ form a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$, and in this basis multiplication by $\breve Q$ is diagonal.**
+**In the distinct case the fixed idempotents $\Pi_\pm$ form a $\mathbb{C}$-basis of $\mathbb{B}^{\mathrm{red}}$, and in this basis multiplication by $\breve Q$ is diagonal.**
 
 ### The Basis
 
@@ -259,7 +259,7 @@ and they are complete, $\Pi_++\Pi_-=1$. They are linearly independent over $\mat
 $$
 (\Pi_+,\Pi_-)
 $$
-is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$.
+is a $\mathbb{C}$-basis of $\mathbb{B}^{\mathrm{red}}$.
 
 **Coordinates.** Expanding a general element $\breve Q_2=Q_{2,\blacktriangle}+jQ_{2,\blacktriangledown}$ gives
 $$
@@ -276,7 +276,7 @@ $$
 
 ### The Action of $\breve Q$ and the Eigenbasis
 
-**Definition.** An **eigenvector** of $\breve Q$ is a nonzero $\breve Q_2$ with $\breve Q\breve Q_2=\mu\breve Q_2$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $\breve Q$ is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm{r}}$ consisting of eigenvectors.
+**Definition.** An **eigenvector** of $\breve Q$ is a nonzero $\breve Q_2$ with $\breve Q\breve Q_2=\mu\breve Q_2$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $\breve Q$ is a $\mathbb{C}$-basis of $\mathbb{B}^{\mathrm{red}}$ consisting of eigenvectors.
 
 In the basis $(\Pi_+,\Pi_-)$ the action is diagonal:
 $$
@@ -316,21 +316,21 @@ The decomposition $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ gives every power, ev
 
 The eigenbasis is the basis in which the two Peirce coordinates of $\breve Q$ are the two eigenvalues.
 
-**Nilpotents.** There are none. If $N=\nu_+\Pi_++\nu_-\Pi_-$ satisfies $N^2=0$, then $\nu_+^2=\nu_-^2=0$, and over $\mathbb{C}$ this forces $\nu_+=\nu_-=0$, hence $N=0$. The off-diagonal Peirce corners $\mathbb{B}_{\mathrm{r},+-}$ and $\mathbb{B}_{\mathrm{r},-+}$ both vanish, so there is no off-diagonal direction in which a nilpotent could live. The nilpotent regime is empty.
+**Nilpotents.** There are none. If $N=\nu_+\Pi_++\nu_-\Pi_-$ satisfies $N^2=0$, then $\nu_+^2=\nu_-^2=0$, and over $\mathbb{C}$ this forces $\nu_+=\nu_-=0$, hence $N=0$. The off-diagonal Peirce corners $\mathbb{B}^{\mathrm{red}}_{+-}$ and $\mathbb{B}^{\mathrm{red}}_{-+}$ both vanish, so there is no off-diagonal direction in which a nilpotent could live. The nilpotent regime is empty.
 
 ### The Spinor Spaces
 
-**A spinor space of $\mathbb{B}_{\mathrm{r}}$ is a minimal nonzero ideal; the two spinor spaces are the complex lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and a spinor is one complex coefficient on one of them.**
+**A spinor space of $\mathbb{B}^{\mathrm{red}}$ is a minimal nonzero ideal; the two spinor spaces are the complex lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and a spinor is one complex coefficient on one of them.**
 
-Since $\mathbb{B}_{\mathrm{r}}$ is commutative, its left, right and two-sided ideals coincide. The minimal nonzero ideals are
+Since $\mathbb{B}^{\mathrm{red}}$ is commutative, its left, right and two-sided ideals coincide. The minimal nonzero ideals are
 $$
-S_+=\mathbb{B}_{\mathrm{r}}\Pi_+=\mathbb{C}\Pi_+,
+S_+=\mathbb{B}^{\mathrm{red}}\Pi_+=\mathbb{C}\Pi_+,
 \qquad
-S_-=\mathbb{B}_{\mathrm{r}}\Pi_-=\mathbb{C}\Pi_-,
+S_-=\mathbb{B}^{\mathrm{red}}\Pi_-=\mathbb{C}\Pi_-,
 $$
 each one-dimensional over $\mathbb{C}$, and
 $$
-\mathbb{B}_{\mathrm{r}}=S_+\oplus S_-.
+\mathbb{B}^{\mathrm{red}}=S_+\oplus S_-.
 $$
 The notation $S_\pm$ is reserved for these two spaces.
 
@@ -409,7 +409,7 @@ P^{-1}[L_{\breve Q}]_{(1,j)}P=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatri
 $$
 The matrix $[L_{\breve Q}]_{(1,j)}$ is symmetric, and it is conformal for the complex bilinear form $G=\operatorname{diag}(1,-1)$: $[L_{\breve Q}]_{(1,j)}^{T}G[L_{\breve Q}]_{(1,j)}=\langle\breve Q\rangle_{\mathrm{ts}}G$. The eigenbasis diagonalises it. The vanishing of the off-diagonal entries is the matrix statement that the Peirce decomposition has no mixed part.
 
-**Nilpotents in the matrix model.** Since the image of the Peirce model is the diagonal subalgebra, no nonzero nilpotent matrix is in it: a diagonal matrix with square zero is zero. The matrix units $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{C})$, but they are not in the image of $\mathbb{B}_{\mathrm{r}}$. The absence is the matrix form of the reducedness of the algebra.
+**Nilpotents in the matrix model.** Since the image of the Peirce model is the diagonal subalgebra, no nonzero nilpotent matrix is in it: a diagonal matrix with square zero is zero. The matrix units $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{C})$, but they are not in the image of $\mathbb{B}^{\mathrm{red}}$. The absence is the matrix form of the reducedness of the algebra.
 
 ## Powers, Polynomial Calculus, and the Group of Units
 
@@ -435,7 +435,7 @@ since $\breve Q_{\mathrm{ts}}=Q_-\Pi_++Q_+\Pi_-$ and $\langle \breve Q\rangle_{\
 
 **The group of units.** The map
 $$
-\mathbb{B}_{\mathrm{r}}^{\times}\longrightarrow\mathbb{C}^{\times}\times\mathbb{C}^{\times},
+{\mathbb{B}^{\mathrm{red}}}^{\times}\longrightarrow\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 \qquad
 \breve Q\longmapsto(\lambda_+,\lambda_-)
 $$
@@ -448,8 +448,8 @@ The results are collected in the table.
 | Powers | $\breve Q^n=\lambda_+^n\Pi_++\lambda_-^n\Pi_-$ | $n\geq0$ |
 | Polynomials | $f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ | every $f\in\mathbb{C}[X]$ |
 | Inverse | $\breve Q^{-1}=\lambda_+^{-1}\Pi_++\lambda_-^{-1}\Pi_-$ | $\breve Q$ a unit |
-| Unit criterion | $\breve Q\in\mathbb{B}_{\mathrm{r}}^\times\iff\lambda_+\lambda_-\neq0$ | — |
-| Group of units | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ | — |
+| Unit criterion | $\breve Q\in{\mathbb{B}^{\mathrm{red}}}^\times\iff\lambda_+\lambda_-\neq0$ | — |
+| Group of units | ${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ | — |
 
 ## The Algebraic Fibre of the Decomposition
 
@@ -459,7 +459,7 @@ Every element of the diagonal part, which is the whole algebra, is
 $$
 \breve Q_{1}=\mu_+\Pi_++\mu_-\Pi_-,\qquad \mu_\pm\in\mathbb{C},
 $$
-and the map $(\mu_+,\mu_-)\mapsto\breve Q_2$ is a $\mathbb{C}$-linear isomorphism $\mathbb{C}^{2}\to\mathbb{B}_{\mathrm{r}}$. For $\mu_+\neq\mu_-$ this is the eigenvalue decomposition of $\breve Q_2$, with the eigenprojections $\Pi_\pm$ and the eigenvalue data $(\mu_+,\mu_-)$. For $\mu_+=\mu_-=a$ the element is the scalar $a$, with the one-term decomposition $a\cdot1$.
+and the map $(\mu_+,\mu_-)\mapsto\breve Q_2$ is a $\mathbb{C}$-linear isomorphism $\mathbb{C}^{2}\to\mathbb{B}^{\mathrm{red}}$. For $\mu_+\neq\mu_-$ this is the eigenvalue decomposition of $\breve Q_2$, with the eigenprojections $\Pi_\pm$ and the eigenvalue data $(\mu_+,\mu_-)$. For $\mu_+=\mu_-=a$ the element is the scalar $a$, with the one-term decomposition $a\cdot1$.
 
 The unordered spectrum is the image of the map $(\mu_+,\mu_-)\mapsto\{\mu_+,\mu_-\}$. Off the diagonal it is two-to-one: the two preimages of $\{\mu_+,\mu_-\}$ are $\mu_+\Pi_++\mu_-\Pi_-$ and $\mu_-\Pi_++\mu_+\Pi_-$, which differ by
 $$
@@ -521,7 +521,7 @@ $$
 \qquad
 \breve Q=q+jq'=\lambda_+\Pi_++\lambda_-\Pi_-.
 $$
-The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=q^2-q'^2=\lambda_+\lambda_-$. The real plane is a real subalgebra of $\mathbb{B}_{\mathrm{r}}$ isomorphic to the split-complex algebra $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, and on it the eigenvalue decomposition, the Peirce decomposition and the spectral calculus reduce to those of the split-complex article.
+The reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=q^2-q'^2=\lambda_+\lambda_-$. The real plane is a real subalgebra of $\mathbb{B}^{\mathrm{red}}$ isomorphic to the split-complex algebra $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$, and on it the eigenvalue decomposition, the Peirce decomposition and the spectral calculus reduce to those of the split-complex article.
 
 ## Degenerate Regimes
 
@@ -582,7 +582,7 @@ The algebra is $\mathbb{C}\times\mathbb{C}$, a product of fields, hence **reduce
 
 ## Remarks
 
-1. **Relation to the model algebra.** Under $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\times\mathbb{C}$, the eigenvalue decomposition is literally the product decomposition: $\lambda_+=Q_+$ and $\lambda_-=Q_-$ are the two complex components, $\Pi_+$ and $\Pi_-$ are the standard minimal central idempotents, and the Lagrange–Sylvester formulas are the interpolation formulas in the product algebra.
+1. **Relation to the model algebra.** Under $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$, the eigenvalue decomposition is literally the product decomposition: $\lambda_+=Q_+$ and $\lambda_-=Q_-$ are the two complex components, $\Pi_+$ and $\Pi_-$ are the standard minimal central idempotents, and the Lagrange–Sylvester formulas are the interpolation formulas in the product algebra.
 
 2. **Centrality and the Peirce decomposition.** The idempotents $\Pi_\pm$ are central, so the Peirce decomposition is a direct sum of two-sided ideals and the off-diagonal components vanish. This is the commutative shadow of the biquaternion Peirce decomposition, and it is structurally identical to the split-complex case with $\mathbb{R}$ replaced by $\mathbb{C}$.
 
@@ -613,13 +613,13 @@ The eigenvalues are distinct complex numbers, the idempotents are primitive, ort
 | Distinctness | $\lambda_+\neq\lambda_-\iff Q_{\blacktriangledown}\neq0$ |
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
 | Eigenvalue decomposition | $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-=(Q_{\blacktriangle}+Q_{\blacktriangledown})\Pi_++(Q_{\blacktriangle}-Q_{\blacktriangledown})\Pi_-$ |
-| Peirce decomposition | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ |
+| Peirce decomposition | $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
 | Matrix model | $M(\breve Q_2)=\operatorname{diag}(A_1,A_2)$; the regular matrix is $\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}$ |
 | Nilpotents | none; the algebra is reduced, so $N^2=0$ implies $N=0$ |
 | Spinor spaces | $S_\pm=\mathbb{C}\Pi_\pm$, the two minimal ideals; spinors $A_1\Pi_+$ and $A_2\Pi_-$ |
 | Polynomial calculus | $f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ |
-| Group of units | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ |
+| Group of units | ${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{C}^\times\times\mathbb{C}^\times$ |
 
 ### Regimes
 
@@ -633,7 +633,7 @@ The zero-divisor row is a subcase of the distinct row, separated because one eig
 | Jordan | absent: the algebra is reduced | — | — | — |
 | Nilpotent | absent; only $\breve Q=0$ | — | — | — |
 
-The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{B}_{\sigma\tau}=\Pi_\sigma\mathbb{B}_{\mathrm{r}}\Pi_\tau$. Its off-diagonal corners vanish, and its diagonal part is the whole algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The element $\breve Q$ has the diagonal coordinates $\lambda_+,\lambda_-$ and zero mixed coordinates. The centraliser of $\breve Q$ is the whole algebra; the subalgebra $\mathbb{C}[\breve Q]$ is the whole algebra exactly when $\breve Q$ is not scalar. The polynomial calculus, the inverse and the group isomorphism $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ all follow from the decomposition. There is no Jordan or nilpotent regime, because the algebra is a product of fields.
+The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{B}_{\sigma\tau}=\Pi_\sigma\mathbb{B}^{\mathrm{red}}\Pi_\tau$. Its off-diagonal corners vanish, and its diagonal part is the whole algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The element $\breve Q$ has the diagonal coordinates $\lambda_+,\lambda_-$ and zero mixed coordinates. The centraliser of $\breve Q$ is the whole algebra; the subalgebra $\mathbb{C}[\breve Q]$ is the whole algebra exactly when $\breve Q$ is not scalar. The polynomial calculus, the inverse and the group isomorphism ${\mathbb{B}^{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ all follow from the decomposition. There is no Jordan or nilpotent regime, because the algebra is a product of fields.
 
 ### Comparison with the Neighbouring Cases
 
@@ -663,7 +663,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | Reduced biquaternion algebra, dimension $4$ over $\mathbb{R}$, $2$ over $\mathbb{C}$ |
+| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | Reduced biquaternion algebra, dimension $4$ over $\mathbb{R}$, $2$ over $\mathbb{C}$ |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | General reduced biquaternion, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$ |
 | $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ | Complex basis coordinates |
 | $\breve Q_{\mathrm{ts}}=Q_{\blacktriangle}-jQ_{\blacktriangledown}=Q_-\Pi_++Q_+\Pi_-$ | Tessarine conjugate |
@@ -681,11 +681,11 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $E_{ij}$ | Matrix units of the $2\times2$ model |
 | $A_1,A_2$ | Spinor coordinates on $S_+$ and $S_-$, the two diagonal entries of the matrix in the eigenbasis |
 | $\alpha,\beta$ | Scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$ |
-| $S_\pm=\mathbb{B}_{\mathrm{r}}\Pi_\pm=\mathbb{C}\Pi_\pm$ | The two spinor spaces, the two minimal ideals (complex lines) |
-| $\mathbb{B}_{\sigma\tau}=\Pi_\sigma\mathbb{B}_{\mathrm{r}}\Pi_\tau$ | Peirce corners of the pair $\Pi_\pm$ |
+| $S_\pm=\mathbb{B}^{\mathrm{red}}\Pi_\pm=\mathbb{C}\Pi_\pm$ | The two spinor spaces, the two minimal ideals (complex lines) |
+| $\mathbb{B}_{\sigma\tau}=\Pi_\sigma\mathbb{B}^{\mathrm{red}}\Pi_\tau$ | Peirce corners of the pair $\Pi_\pm$ |
 | $\mathbb{C}[\breve Q]=\operatorname{span}_{\mathbb{C}}\{1,\breve Q\}$ | Subalgebra generated by $\breve Q$ |
-| $C(\breve Q)=\mathbb{B}_{\mathrm{r}}$ | Centraliser of $\breve Q$ |
-| $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | Group of units, the coordinatewise nonzero pairs |
+| $C(\breve Q)=\mathbb{B}^{\mathrm{red}}$ | Centraliser of $\breve Q$ |
+| ${\mathbb{B}^{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | Group of units, the coordinatewise nonzero pairs |
 | $L=\{(m/2,n/2):m,n\in\mathbb{Z}[i],\ m\equiv n\pmod2\}$ | Lattice of basis-coordinate data for Gaussian-integral eigenvalue coordinates $\mu_\pm\in\mathbb{Z}[i]$ |
 | $\breve Q_2=A_1\Pi_++A_2\Pi_-$ | General element in the spinor coordinates, with matrix $\operatorname{diag}(A_1,A_2)$ |
 | $\breve Q_2=\mu_+\Pi_++\mu_-\Pi_-$ | General element in the eigenvalue coordinates |

@@ -106,7 +106,7 @@ with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statem
 
 ### The Exponential Polar Decomposition
 
-Every unit $\breve Q\in\mathbb{B}_{\mathrm{r}}^\times=\{Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ has a unique writing
+Every unit $\breve Q\in{\mathbb{B}^{\mathrm{red}}}^\times=\{Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ has a unique writing
 
 $$
 \boxed{\;
@@ -129,7 +129,7 @@ and $\rho>0$, $\phi\in\mathbb{R}$, $(\alpha,\beta)$ in the principal diamond $\l
 
 | Polar item | Value |
 |---|---|
-| Domain | $\mathbb{B}_{\mathrm{r}}^\times=\{\breve Q:Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ |
+| Domain | ${\mathbb{B}^{\mathrm{red}}}^\times=\{\breve Q:Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ |
 | Decomposition | $\breve Q=\breve r\,u=\rho(\cosh\phi+j\sinh\phi)\exp(i\alpha)\exp(ij\beta)$ |
 | Modulus | $\breve r=\rho(\cosh\phi+j\sinh\phi)$, $\rho>0$ |
 | Unit factor | $u=\exp(i\alpha)\exp(ij\beta)$ |
@@ -390,7 +390,7 @@ The algebra is $\mathbb{C}\times\mathbb{C}$, hence reduced. There is no nonzero 
 
 ### The Kernel
 
-The exponential of $\mathbb{B}_{\mathrm{r}}$ has kernel
+The exponential of $\mathbb{B}^{\mathrm{red}}$ has kernel
 
 $$
 \ker\exp=2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)
@@ -629,7 +629,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the reduced biquaternion algebra |
+| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the reduced biquaternion algebra |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | a reduced biquaternion |
 | $\lambda_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | the eigenvalues |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the fixed central idempotents |

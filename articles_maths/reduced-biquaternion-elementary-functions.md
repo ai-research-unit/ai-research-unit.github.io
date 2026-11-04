@@ -74,7 +74,7 @@ The rule explains both structural facts of the algebra. Multiplication is commut
 
 ### Definition
 
-The **reduced biquaternion exponential** is defined for $\breve Q\in\mathbb{B}_{\mathrm{r}}$ by the power series
+The **reduced biquaternion exponential** is defined for $\breve Q\in\mathbb{B}^{\mathrm{red}}$ by the power series
 
 $$
 \exp\breve Q=\sum_{n=0}^{\infty}\frac{\breve Q^{n}}{n!}.
@@ -128,7 +128,7 @@ In particular $\exp(\breve Q+2\pi i)=\exp\breve Q$ and $\exp(\breve Q+\pi i(1+j)
 | Quantity | Value |
 |---|---|
 | Kernel | $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^{2}$ |
-| Image | the unit group $\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
+| Image | the unit group ${\mathbb{B}^{\mathrm{red}}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
 | Periods | the kernel |
 | Injective | no |
 | Surjective onto the image | yes |
@@ -276,7 +276,7 @@ The logarithm exists on the whole unit group and is never unique. The general so
 
 | Quantity | Value |
 |---|---|
-| Domain | the units $\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
+| Domain | the units ${\mathbb{B}^{\mathrm{red}}}^{\times}=\{\breve Q:\lambda_1\lambda_2\neq0\}$ |
 | Fibre over a point | $\operatorname{Log}\breve Q+\ker\exp$, a coset of $\mathbb{Z}^{2}$ |
 | Kernel | $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)=2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$ |
 | Principal domain | $\lvert\operatorname{Im}\lambda_1\rvert\le\pi$ and $\lvert\operatorname{Im}\lambda_2\rvert\le\pi$, boundary half-open |
@@ -424,7 +424,7 @@ where $k_1,k_2$ are the integers of the logarithm chosen for $\breve Q^{s}$.
 
 ### The Roots
 
-**Theorem (the roots).** Let $n\ge1$ and let $\breve Q\in\mathbb{B}_{\mathrm{r}}$.
+**Theorem (the roots).** Let $n\ge1$ and let $\breve Q\in\mathbb{B}^{\mathrm{red}}$.
 
 1. If $\breve Q$ is a unit, the equation $\breve R^{n}=\breve Q$ has exactly $n^{2}$ solutions: the elements whose eigenvalues are
    $$
@@ -582,7 +582,7 @@ The full set of logarithms of a scalar is larger: it is $\operatorname{Log}\brev
 
 ### The Split-Complex Plane
 
-If both coefficients are real, the element lies in the split-complex plane $\mathbb{D}=\mathbb{R}\{1,j\}$; write $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ with $q_{\blacktriangle},q_{\blacktriangledown}\in\mathbb{R}$. Then $\lambda_1=q_{\blacktriangle}+q_{\blacktriangledown}$ and $\lambda_2=q_{\blacktriangle}-q_{\blacktriangledown}$ are real. The exponential is
+If both coefficients are real, the element lies in the split-complex plane $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\{1,j\}$; write $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ with $q_{\blacktriangle},q_{\blacktriangledown}\in\mathbb{R}$. Then $\lambda_1=q_{\blacktriangle}+q_{\blacktriangledown}$ and $\lambda_2=q_{\blacktriangle}-q_{\blacktriangledown}$ are real. The exponential is
 
 $$
 \exp(q_{\blacktriangle}+jq_{\blacktriangledown})=\exp(q_{\blacktriangle})\bigl(\cosh q_{\blacktriangledown}+j\sinh q_{\blacktriangledown}\bigr).
@@ -620,7 +620,7 @@ $$
 
 ### The Relation Between the Two
 
-The complex line $\mathbb{R}\{1,i\}$ and the split-complex plane $\mathbb{R}\{1,j\}$ are two real two-planes in $\mathbb{B}_{\mathrm{r}}$, and they intersect in the real axis $\mathbb{R}$. In the eigenvalue coordinates the complex line is the diagonal
+The complex line $\mathbb{R}\{1,i\}$ and the split-complex plane $\mathbb{R}\{1,j\}$ are two real two-planes in $\mathbb{B}^{\mathrm{red}}$, and they intersect in the real axis $\mathbb{R}$. In the eigenvalue coordinates the complex line is the diagonal
 
 $$
 \{(\lambda_1,\lambda_2):\lambda_1=\lambda_2\},
@@ -656,9 +656,9 @@ The trigonometric and hyperbolic functions are read at the two eigenvalues. Thei
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
 | Idempotent Principle | $f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-$ for every complex power series |
 | Exponential | $\exp\breve Q=\exp(\lambda_1)\Pi_++\exp(\lambda_2)\Pi_-=\exp Q_{\blacktriangle}(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$ |
-| Kernel and image | $\ker\exp=2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)\cong\mathbb{Z}^{2}$; $\operatorname{im}\exp=\mathbb{B}_{\mathrm{r}}^{\times}$ |
+| Kernel and image | $\ker\exp=2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)\cong\mathbb{Z}^{2}$; $\operatorname{im}\exp={\mathbb{B}^{\mathrm{red}}}^{\times}$ |
 | Logarithm | $\operatorname{Log}\breve Q=\frac{\operatorname{Log}\lambda_1+\operatorname{Log}\lambda_2}{2}+j\frac{\operatorname{Log}\lambda_1-\operatorname{Log}\lambda_2}{2}$ on the units |
-| Principal domain | every eigenvalue has imaginary part in $(-\pi,\pi]$; $\exp:D\to\mathbb{B}_{\mathrm{r}}^{\times}$ is bijective |
+| Principal domain | every eigenvalue has imaginary part in $(-\pi,\pi]$; $\exp:D\to{\mathbb{B}^{\mathrm{red}}}^{\times}$ is bijective |
 | Fibre | $\operatorname{Log}\breve Q+\ker\exp$, a coset of $\mathbb{Z}^{2}$ |
 | Derivative of the logarithm | $d\operatorname{Log}_{\breve Q}(\breve H)=\breve Q^{-1}\breve H$ |
 | Powers | $\breve Q^{s}=\lambda_1^{s}\Pi_++\lambda_2^{s}\Pi_-$; $n^{2}$ values for $s=m/n$ in lowest terms |
@@ -712,7 +712,7 @@ The table compares the elementary functions across the three algebras; in the bi
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm{r}}$ | the reduced biquaternion algebra, basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ij=ji$ |
+| $\mathbb{B}^{\mathrm{red}}$ | the reduced biquaternion algebra, basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ij=ji$ |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | an element, $Q_{\blacktriangle}$ scalar part, $Q_{\blacktriangledown}$ split part |
 | $Q_{+}$, $Q_{-}$ | the eigenvalues $\lambda_1=Q_+$, $\lambda_2=Q_-$, read also as idempotent coordinates |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the central idempotents, $\breve Q=\lambda_1\Pi_++\lambda_2\Pi_-$ |

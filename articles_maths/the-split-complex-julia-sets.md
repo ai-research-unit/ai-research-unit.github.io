@@ -10,10 +10,10 @@ The point of the article is honesty about what is transferred and what is new. T
 
 ### The Definition
 
-**Definition.** Let $f_c(z) = z^2+c$ with $c \in \mathbb{D}$. The **Fatou set** $F_c$ is the set of points $z$ for which the family of iterates $\{f_c^n\}$ is **equicontinuous** on some neighbourhood of $z$, the plane being given the Euclidean metric and its one-point compactification; the **Julia set** is the complement
+**Definition.** Let $f_c(z) = z^2+c$ with $c \in \mathbb{C}^{\mathrm{spl}}$. The **Fatou set** $F_c$ is the set of points $z$ for which the family of iterates $\{f_c^n\}$ is **equicontinuous** on some neighbourhood of $z$, the plane being given the Euclidean metric and its one-point compactification; the **Julia set** is the complement
 
 $$
-J_c = \mathbb{D} \setminus F_c .
+J_c = \mathbb{C}^{\mathrm{spl}} \setminus F_c .
 $$
 
 That is, $z \in F_c$ when there is a neighbourhood $\Omega$ of $z$ on which, for every $\varepsilon > 0$, there is $\delta > 0$ with $|f_c^n(z') - f_c^n(z'')| < \varepsilon$ for all $n$ whenever $z', z'' \in \Omega$ with $|z'-z''| < \delta$; the distance in the compactification is the spherical one.
@@ -26,7 +26,7 @@ That is, $z \in F_c$ when there is a neighbourhood $\Omega$ of $z$ on which, for
 
 ### The Product Structure
 
-**Theorem (the Fatou set is a product).** For every $c \in \mathbb{D}$ the Fatou set is the preimage under the isomorphism $\varphi$ of the product of the real Fatou sets,
+**Theorem (the Fatou set is a product).** For every $c \in \mathbb{C}^{\mathrm{spl}}$ the Fatou set is the preimage under the isomorphism $\varphi$ of the product of the real Fatou sets,
 
 $$
 \boxed{\; F_c = \varphi^{-1}\bigl(F_+ \times F_-\bigr) \;},
@@ -51,12 +51,12 @@ since the complement of $F_+ \times F_-$ in $\mathbb{R}^2$ is $(J_+ \times \math
 **Definition.** The **filled Julia set** of $f_c$ is
 
 $$
-K_c = \{z \in \mathbb{D} : \text{the orbit } (f_c^n(z)) \text{ is bounded}\} ,
+K_c = \{z \in \mathbb{C}^{\mathrm{spl}} : \text{the orbit } (f_c^n(z)) \text{ is bounded}\} ,
 $$
 
-the compactness locus of the three sets; it is compact and contains $c$ exactly when $c \in M_{\mathbb{D}}$.
+the compactness locus of the three sets; it is compact and contains $c$ exactly when $c \in M_{\mathbb{C}^{\mathrm{spl}}}$.
 
-**Theorem (the filled Julia set is a compact product).** For every $c \in \mathbb{D}$,
+**Theorem (the filled Julia set is a compact product).** For every $c \in \mathbb{C}^{\mathrm{spl}}$,
 
 $$
 K_c = \varphi^{-1}\bigl(K_+ \times K_-\bigr) ,
@@ -96,7 +96,7 @@ the union of two closed strips of width four crossing at forty-five degrees; it 
 
 ## The Norm, the Null Cone and the Two Forms
 
-**Theorem (the two forms).** The norm of $\mathbb{D}$ has the two equivalent forms
+**Theorem (the two forms).** The norm of $\mathbb{C}^{\mathrm{spl}}$ has the two equivalent forms
 
 $$
 \langle z\rangle_{*} = a^2 - a'^2 = z_+ z_- ,
@@ -108,11 +108,11 @@ indefinite of signature $(1,1)$; its zero set is the **null cone** $\mathcal{N} 
 
 **Remark (the hyperbolas replacing the circles).** In the complex case the level sets of the modulus, $|z|^2 = $ const, are circles, and they are the equipotentials of the quadratic family. In the split case the level sets of the norm are hyperbolas with the null lines as the degenerate members; they are the natural equipotentials of the split-complex plane, and their asymptotes are the null directions. The Julia set, however, is assembled from the level sets of the **coordinate functionals** $z_+$ and $z_-$, which are the two families of lines parallel to the null lines, and not from the level sets of the norm: the product formula above can be read as saying that the Julia set is a union of two families of such lines, indexed by the real Julia sets.
 
-**Remark (the polar decomposition degenerates on the null cone).** A nonzero element admits the polar decomposition $z = |\langle z\rangle_{*}|^{1/2}u$ with $u$ a unit only off the null cone; on the null lines the norm vanishes and the decomposition is undefined. This is why the definition and the study of the two sets are carried out in the idempotent coordinates and not in the polar coordinates of *Hyperbolic Rotations*: the polar form is available exactly on the units $\mathbb{D} \setminus \mathcal{N}$, and the coordinate form everywhere.
+**Remark (the polar decomposition degenerates on the null cone).** A nonzero element admits the polar decomposition $z = |\langle z\rangle_{*}|^{1/2}u$ with $u$ a unit only off the null cone; on the null lines the norm vanishes and the decomposition is undefined. This is why the definition and the study of the two sets are carried out in the idempotent coordinates and not in the polar coordinates of *Hyperbolic Rotations*: the polar form is available exactly on the units $\mathbb{C}^{\mathrm{spl}} \setminus \mathcal{N}$, and the coordinate form everywhere.
 
 ## The Newton Method
 
-**Theorem (the Newton map splits).** Let $p(z) = \sum_{k=0}^{d} a_k z^k$ be a polynomial with coefficients $a_k \in \mathbb{D}$, and let $N_p(z) = z - p(z)/p'(z)$ be the Newton map of $p$, defined where $p'(z)$ is a unit. Then $N_p$ commutes with the idempotent decomposition: in the coordinates,
+**Theorem (the Newton map splits).** Let $p(z) = \sum_{k=0}^{d} a_k z^k$ be a polynomial with coefficients $a_k \in \mathbb{C}^{\mathrm{spl}}$, and let $N_p(z) = z - p(z)/p'(z)$ be the Newton map of $p$, defined where $p'(z)$ is a unit. Then $N_p$ commutes with the idempotent decomposition: in the coordinates,
 
 $$
 \boxed{\; \varphi\bigl(N_p(z)\bigr) = \bigl(N_{p_+}(z_+),\ N_{p_-}(z_-)\bigr) \;},
@@ -120,7 +120,7 @@ $$
 
 where $p_\pm(x) = \sum_k a_{k\pm} x^k$ is the real polynomial obtained from the coefficients of $p$ and $N_{p_\pm}$ is its real Newton map.
 
-**Proof.** A polynomial with coefficients in $\mathbb{D}$ splits, $\varphi(p(z)) = (p_+(z_+), p_-(z_-))$, because $\varphi$ is a ring homomorphism and $\varphi(a_k) = (a_{k+},a_{k-})$; the same holds for the derivative. The quotient of two split-complex numbers with nonzero coordinates is componentwise in the coordinates, since $\Pi_\pm$ are orthogonal idempotents; hence the Newton quotient splits, and the formula follows.
+**Proof.** A polynomial with coefficients in $\mathbb{C}^{\mathrm{spl}}$ splits, $\varphi(p(z)) = (p_+(z_+), p_-(z_-))$, because $\varphi$ is a ring homomorphism and $\varphi(a_k) = (a_{k+},a_{k-})$; the same holds for the derivative. The quotient of two split-complex numbers with nonzero coordinates is componentwise in the coordinates, since $\Pi_\pm$ are orthogonal idempotents; hence the Newton quotient splits, and the formula follows.
 
 **Corollary.** The Fatou set of the Newton map is $\varphi^{-1}(F_{p_+} \times F_{p_-})$ and its Julia set is $\varphi^{-1}((J_{p_+}\times\mathbb{R})\cup(\mathbb{R}\times J_{p_-}))$, with the real Newton basins of the two factor polynomials as the factors. In particular the fractal Newton basins of a real polynomial with distinct real roots are the products of the real basins and their boundaries, and the "Newton fractal" of the split-complex plane is a union of two products of one-dimensional basins.
 

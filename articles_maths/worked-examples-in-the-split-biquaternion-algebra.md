@@ -5,17 +5,17 @@
 
 This article is the computational companion to the article on the split biquaternion algebra. Its purpose is to display, on explicit elements, every construction that the algebraic articles state in general: the basis products, the four involutions and their fixed-point subspaces, the idempotents and the two minimal left ideals, explicit zero-divisor pairs, the four conjugations acting on a concrete element, and the realisation of the two quaternion halves.
 
-The treatment is purely mathematical. Every number is recomputed before it is asserted, and the model used for the calculations is stated: a split biquaternion $\tilde{Q} = \tilde q + j \tilde q'$ with $\tilde q, \tilde q' \in \mathbb{H}$ is written as the pair of real quaternions $(\tilde q, \tilde q')$, with multiplication $(\tilde q_1, \tilde q'_1)(\tilde q_2, \tilde q'_2) = (\tilde q_1\tilde q_2 + \tilde q'_1\tilde q'_2,\ \tilde q_1\tilde q'_2 + \tilde q'_1\tilde q_2)$. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, and the split complex algebra $\mathbb{D}$ from the article on split complex algebra, with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$.
+The treatment is purely mathematical. Every number is recomputed before it is asserted, and the model used for the calculations is stated: a split biquaternion $\tilde{Q} = \tilde q + j \tilde q'$ with $\tilde q, \tilde q' \in \mathbb{H}$ is written as the pair of real quaternions $(\tilde q, \tilde q')$, with multiplication $(\tilde q_1, \tilde q'_1)(\tilde q_2, \tilde q'_2) = (\tilde q_1\tilde q_2 + \tilde q'_1\tilde q'_2,\ \tilde q_1\tilde q'_2 + \tilde q'_1\tilde q_2)$. No physics is invoked. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, and the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ from the article on split complex algebra, with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$.
 
 Throughout,
 $$
-\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu = q_\mu + j q'_\mu \in \mathbb{D},
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu = q_\mu + j q'_\mu \in \mathbb{C}^{\mathrm{spl}},
 $$
 with real $q_\mu, q'_\mu$, and the four conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian).
 
 ## The Algebra and Its Basis
 
-The algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is eight-dimensional over $\mathbb{R}$, with the real basis
+The algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is eight-dimensional over $\mathbb{R}$, with the real basis
 
 $$
 1, \quad \vec e_x, \quad \vec e_y, \quad \vec e_z, \quad j, \quad j \vec e_x, \quad j \vec e_y, \quad j \vec e_z.
@@ -107,19 +107,19 @@ Each conjugation has a fixed-point subspace, and the projection onto the fixed-p
 
 | Involution | Fixed subspace | Condition | Dimension |
 |---|---|---|---|
-| ${}^{\natural}$ | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $Q_x = Q_y = Q_z = 0$ | $2$ |
-| $\bar{\cdot}$ | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $q'_\mu = 0$ for all $\mu$ | $4$ |
+| ${}^{\natural}$ | $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ | $Q_x = Q_y = Q_z = 0$ | $2$ |
+| $\bar{\cdot}$ | $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ | $q'_\mu = 0$ for all $\mu$ | $4$ |
 | ${}^{*}$ | $\mathbb{M}_+$ | $q_t$ real and $Q_x, Q_y, Q_z$ purely split-imaginary | $4$ |
 | ${}^{\flat}$ | $\mathbb{M}_-$ | $Q_t$ purely split-imaginary and $q_x, q_y, q_z$ real | $4$ |
 
 Projecting $\tilde{Q}$ onto the four fixed-point subspaces gives
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\natural}) = 1 + j = Q_t \in \mathbb{D}_{\mathbb{H}_{\mathbb{D}}},
+\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{\natural}) = 1 + j = Q_t \in \mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}},
 $$
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \bar{\tilde{Q}}) = 1 + 2 \vec e_x + \vec e_y = \tilde q \in \mathbb{H}_{\mathbb{H}_{\mathbb{D}}},
+\tfrac{1}{2}(\tilde{Q} + \bar{\tilde{Q}}) = 1 + 2 \vec e_x + \vec e_y = \tilde q \in \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}},
 $$
 
 $$
@@ -130,11 +130,11 @@ $$
 \tfrac{1}{2}(\tilde{Q} + \tilde{Q}^\flat) = (2 \vec e_x + \vec e_y) + j \in \mathbb{M}_-.
 $$
 
-The four projections do not sum to $\tilde{Q}$: the four subspaces overlap — for example $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{R}$, the real scalars — so they are four distinct fixed-point sets rather than the four summands of a single decomposition.
+The four projections do not sum to $\tilde{Q}$: the four subspaces overlap — for example $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cap \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}} = \mathbb{R}$, the real scalars — so they are four distinct fixed-point sets rather than the four summands of a single decomposition.
 
 ## The Idempotents and the Two Minimal Left Ideals
 
-The idempotents of $\mathbb{H}_{\mathbb{D}}$ are $0, \tilde\Pi_1, \tilde\Pi_2, 1$, with
+The idempotents of $\mathbb{B}^{\mathrm{spl}}$ are $0, \tilde\Pi_1, \tilde\Pi_2, 1$, with
 
 $$
 \tilde\Pi_1 = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_2 = \tfrac{1}{2}(1 - j), \qquad \tilde\Pi_1 \tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1.
@@ -144,7 +144,7 @@ They are central and primitive, and they give the idempotent decomposition
 
 $$
 \boxed{\;
-\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2, \qquad \mathbb{H} \tilde\Pi_{1,2} = \{ \tilde{Q} \tilde\Pi_{1,2} : \tilde{Q} \in \mathbb{H}_{\mathbb{D}} \} \cong \mathbb{H}
+\mathbb{B}^{\mathrm{spl}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2, \qquad \mathbb{H} \tilde\Pi_{1,2} = \{ \tilde{Q} \tilde\Pi_{1,2} : \tilde{Q} \in \mathbb{B}^{\mathrm{spl}} \} \cong \mathbb{H}
 \;},
 $$
 
@@ -178,17 +178,17 @@ $$
 \;},
 $$
 
-while neither $\tilde{Q}_1$ nor $\tilde{Q}_2$ is zero. The pair therefore exhibits an explicit zero divisor, and it shows the general shape of the zero divisor set: the zero divisors of $\mathbb{H}_{\mathbb{D}}$ are exactly the elements with $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$, that is, the union of the two halves $\mathbb{H} \tilde\Pi_2 \cup \mathbb{H} \tilde\Pi_1$. The classification is developed in *Split-Biquaternion Zero Divisors*.
+while neither $\tilde{Q}_1$ nor $\tilde{Q}_2$ is zero. The pair therefore exhibits an explicit zero divisor, and it shows the general shape of the zero divisor set: the zero divisors of $\mathbb{B}^{\mathrm{spl}}$ are exactly the elements with $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$, that is, the union of the two halves $\mathbb{H} \tilde\Pi_2 \cup \mathbb{H} \tilde\Pi_1$. The classification is developed in *Split-Biquaternion Zero Divisors*.
 
 ## The Two Quaternion Halves Realised
 
-The isomorphism $\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}$, $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$, sends the concrete element to
+The isomorphism $\varphi : \mathbb{B}^{\mathrm{spl}} \to \mathbb{H} \oplus \mathbb{H}$, $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$, sends the concrete element to
 
 $$
 \varphi(\tilde{Q}) = \big(2 + 2 \vec e_x, \; 2 \vec e_x + 2 \vec e_y \big).
 $$
 
-Multiplication is componentwise, so the concrete element is a unit in $\mathbb{H}_{\mathbb{D}}$ exactly because each of $2 + 2 \vec e_x$ and $2 \vec e_x + 2 \vec e_y$ is a nonzero quaternion, hence a unit in $\mathbb{H}$; indeed
+Multiplication is componentwise, so the concrete element is a unit in $\mathbb{B}^{\mathrm{spl}}$ exactly because each of $2 + 2 \vec e_x$ and $2 \vec e_x + 2 \vec e_y$ is a nonzero quaternion, hence a unit in $\mathbb{H}$; indeed
 
 $$
 (2 + 2 \vec e_x)^{-1} = \tfrac{1}{8}(2 - 2 \vec e_x), \qquad (2 \vec e_x + 2 \vec e_y)^{-1} = \tfrac{1}{8}(-2 \vec e_x - 2 \vec e_y),
@@ -198,26 +198,26 @@ and $\varphi(\tilde{Q}^{-1}) = \tfrac{1}{8}(2 - 2 \vec e_x, -2 \vec e_x - 2 \vec
 
 ## Summary
 
-The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ has the real basis $1, \vec e_x, \vec e_y, \vec e_z, j, j \vec e_x, j \vec e_y, j \vec e_z$ and the product formula $\tilde{Q}_1 \tilde{Q}_2 = (Q_{1t} Q_{2t} - (\vec Q_1, \vec Q_2)) e_t + Q_{1t} \vec Q_2 + Q_{2t} \vec Q_1 + [\vec Q_1, \vec Q_2]$. On the concrete element
+The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ has the real basis $1, \vec e_x, \vec e_y, \vec e_z, j, j \vec e_x, j \vec e_y, j \vec e_z$ and the product formula $\tilde{Q}_1 \tilde{Q}_2 = (Q_{1t} Q_{2t} - (\vec Q_1, \vec Q_2)) e_t + Q_{1t} \vec Q_2 + Q_{2t} \vec Q_1 + [\vec Q_1, \vec Q_2]$. On the concrete element
 
 $$
 \tilde{Q} = (1 + j) + 2 \vec e_x + (1 - j) \vec e_y
 $$
 
-the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 - j) \vec e_y$, $\bar{\tilde{Q}} = (1 - j) + 2 \vec e_x + (1 + j) \vec e_y$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_{1,2}$; the element decomposes as $\tilde{Q} = (2 + 2 \vec e_x) \tilde\Pi_1 + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_2$ with both components nonzero. An explicit zero-divisor pair is $\tilde{Q}_1 = \vec e_x \tilde\Pi_2$ and $\tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_1$, with $\tilde{Q}_1 \tilde{Q}_2 = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 \vec e_x, 2 \vec e_x + 2 \vec e_y)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 \vec e_x) + j(4 + 4 \vec e_x)$ agrees whether computed from the product formula or from the idempotent components.
+the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 - j) \vec e_y$, $\bar{\tilde{Q}} = (1 - j) + 2 \vec e_x + (1 + j) \vec e_y$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ and $\tilde{Q}^\flat = -\tilde{Q}^{*}$; the four fixed-point subspaces $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$, $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ have dimensions $2, 4, 4, 4$ and overlap, so their projections do not sum to the element. The idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central and primitive and give the two minimal left ideals $\mathbb{H} \tilde\Pi_{1,2}$; the element decomposes as $\tilde{Q} = (2 + 2 \vec e_x) \tilde\Pi_1 + (2 \vec e_x + 2 \vec e_y) \tilde\Pi_2$ with both components nonzero. An explicit zero-divisor pair is $\tilde{Q}_1 = \vec e_x \tilde\Pi_2$ and $\tilde{Q}_2 = (1 + \vec e_y) \tilde\Pi_1$, with $\tilde{Q}_1 \tilde{Q}_2 = 0$. The isomorphism $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-) = (2 + 2 \vec e_x, 2 \vec e_x + 2 \vec e_y)$ realises the two quaternion halves, and the square $\tilde{Q}^2 = (-4 + 4 \vec e_x) + j(4 + 4 \vec e_x)$ agrees whether computed from the product formula or from the idempotent components.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
+| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | The idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = 1$ |
 | $\tilde{Q} = \tilde q + j \tilde q'$ | Concrete element, $\tilde q, \tilde q' \in \mathbb{H}$ |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components in $\mathbb{H}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
-| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}, \mathbb{M}_+, \mathbb{M}_-$ | The four involution fixed-point subspaces |
+| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}, \mathbb{M}_+, \mathbb{M}_-$ | The four involution fixed-point subspaces |
 | $\mathbb{H} \tilde\Pi_{1,2}$ | The two minimal left ideals, each $\cong \mathbb{H}$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Idempotent-decomposition isomorphism |
 

@@ -7,7 +7,7 @@ This article introduces the split complex algebra as an algebraic structure. The
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The idempotent decomposition is defined algebraically.
 
-The split complex algebra is the two-dimensional real algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, written in a generator $j$ with $j^2 = +1$. It is the indefinite member of the two-dimensional pair whose definite member is the field $\mathbb{C}$ of complex numbers; the two share their basis, their conjugation and their dimension and differ in the sign of the square of the imaginary unit. The complex numbers are assumed from *Complex Algebra*, together with their basis, their multiplication and their conjugation, and no facts about them are restated here except where the comparison is the point.
+The split complex algebra is the two-dimensional real algebra $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$, written in a generator $j$ with $j^2 = +1$. It is the indefinite member of the two-dimensional pair whose definite member is the field $\mathbb{C}$ of complex numbers; the two share their basis, their conjugation and their dimension and differ in the sign of the square of the imaginary unit. The complex numbers are assumed from *Complex Algebra*, together with their basis, their multiplication and their conjugation, and no facts about them are restated here except where the comparison is the point.
 
 ## The Split Complex Algebra
 
@@ -41,29 +41,29 @@ The notation $j$ is chosen deliberately. In the complex algebra the imaginary un
 
 ### The Real Algebra View
 
-The split complex algebra has a single ground field. It is a **two-dimensional algebra over $\mathbb{R}$**: its basis is $\{1, j\}$, every element is a real linear combination of the two basis elements, and the multiplication is $\mathbb{R}$-bilinear. The centre is all of $\mathbb{D}$, because the algebra is commutative.
+The split complex algebra has a single ground field. It is a **two-dimensional algebra over $\mathbb{R}$**: its basis is $\{1, j\}$, every element is a real linear combination of the two basis elements, and the multiplication is $\mathbb{R}$-bilinear. The centre is all of $\mathbb{C}^{\mathrm{spl}}$, because the algebra is commutative.
 
 There is no second ground field to pass to, and no scalar imaginary inside the algebra. This is the first of the systematic differences from the four-dimensional members of the family, and it is the reason the subspace lattice below collapses.
 
 ### Developed Form
 
-Equivalently, $\mathbb{D}$ is the quotient ring
+Equivalently, $\mathbb{C}^{\mathrm{spl}}$ is the quotient ring
 
 $$
-\mathbb{D} = \mathbb{R}[x]/(x^2-1),
+\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1),
 $$
 
 the image of the generator $x$ being $j$. Since $x^2 - 1 = (x-1)(x+1)$ is not prime, the quotient is not a field but a product of two copies of $\mathbb{R}$; that product is exhibited explicitly in *The Isomorphism with $\mathbb{R}\oplus\mathbb{R}$* below.
 
 ### The Algebra Structure
 
-The algebra $\mathbb{D}$ is a two-dimensional commutative, associative and unital algebra over $\mathbb{R}$, with unit $1$. As a ring it is a commutative ring with zero divisors. It is **not** a division algebra: the elements $1+j$ and $1-j$ are non-zero, but
+The algebra $\mathbb{C}^{\mathrm{spl}}$ is a two-dimensional commutative, associative and unital algebra over $\mathbb{R}$, with unit $1$. As a ring it is a commutative ring with zero divisors. It is **not** a division algebra: the elements $1+j$ and $1-j$ are non-zero, but
 
 $$
 (1+j)(1-j) = 1 - j^2 = 0.
 $$
 
-So $\mathbb{D}$ is not a field, and not a division algebra. This is the fundamental difference from $\mathbb{C}$, and it is the source of everything that distinguishes the two theories.
+So $\mathbb{C}^{\mathrm{spl}}$ is not a field, and not a division algebra. This is the fundamental difference from $\mathbb{C}$, and it is the source of everything that distinguishes the two theories.
 
 **Frobenius theorem.** The finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$. The split complex algebra is a commutative associative real algebra of dimension two that is not a division algebra, so it lies outside that list; it is not one of the three.
 
@@ -85,7 +85,7 @@ where the products $e_\mu e_\nu$ are those of the split complex algebra. The mul
 
 ### Conjugations
 
-There are **two** conjugations on $\mathbb{D}$, and they turn out to coincide.
+There are **two** conjugations on $\mathbb{C}^{\mathrm{spl}}$, and they turn out to coincide.
 
 **Split complex conjugation** $\bar{Q}$:
 
@@ -107,9 +107,9 @@ $$
 \tilde{Q} = q - j q' = \bar{Q}.
 $$
 
-So in the split complex algebra the split complex conjugation and the idempotent conjugation coincide. The coincidence is a special feature of the two-dimensional case: the conjugation induced on $\mathbb{D}$ by the idempotent basis is the same map as the conjugation of the algebra, because the single non-trivial involution has only one non-trivial choice to make.
+So in the split complex algebra the split complex conjugation and the idempotent conjugation coincide. The coincidence is a special feature of the two-dimensional case: the conjugation induced on $\mathbb{C}^{\mathrm{spl}}$ by the idempotent basis is the same map as the conjugation of the algebra, because the single non-trivial involution has only one non-trivial choice to make.
 
-Each conjugation is an involution: applying it twice returns the original split complex number. Each therefore splits $\mathbb{D}$ into a fixed space and an anti-fixed space, and each of the two is a real vector subspace of $\mathbb{D}$; those subspaces are described in the following sections.
+Each conjugation is an involution: applying it twice returns the original split complex number. Each therefore splits $\mathbb{C}^{\mathrm{spl}}$ into a fixed space and an anti-fixed space, and each of the two is a real vector subspace of $\mathbb{C}^{\mathrm{spl}}$; those subspaces are described in the following sections.
 
 ### The Group of Conjugations
 
@@ -123,7 +123,7 @@ There is no second independent involution, hence no Klein four-group and no Herm
 
 ## The Distinguished Subspaces
 
-The single non-trivial involution $\bar{\cdot}$ splits $\mathbb{D}$ into its fixed space and its anti-fixed space, two real vector subspaces of dimension $1$. The idempotent basis, developed below, cuts the algebra into its two primitive lines; it is the finest decomposition of $\mathbb{D}$, and it names the two null directions in place of the two coordinate axes.
+The single non-trivial involution $\bar{\cdot}$ splits $\mathbb{C}^{\mathrm{spl}}$ into its fixed space and its anti-fixed space, two real vector subspaces of dimension $1$. The idempotent basis, developed below, cuts the algebra into its two primitive lines; it is the finest decomposition of $\mathbb{C}^{\mathrm{spl}}$, and it names the two null directions in place of the two coordinate axes.
 
 ### The Real Subspace
 
@@ -144,7 +144,7 @@ $$
 Q = q, \qquad q \in \mathbb{R}.
 $$
 
-This is the **real subspace** $\mathbb{R}_{\mathbb{D}}$, a copy of the real line embedded in $\mathbb{D}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{D}$ isomorphic to $\mathbb{R}$, and as a ring it is a field. The form it carries is treated in *Norm and Invertibility in the General Split-Complex Algebra*.
+This is the **real subspace** $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, a copy of the real line embedded in $\mathbb{C}^{\mathrm{spl}}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{C}^{\mathrm{spl}}$ isomorphic to $\mathbb{R}$, and as a ring it is a field. The form it carries is treated in *Norm and Invertibility in the General Split-Complex Algebra*.
 
 ### The Split Imaginary Subspace
 
@@ -154,9 +154,9 @@ $$
 Q = j q', \qquad q' \in \mathbb{R}.
 $$
 
-This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{D}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j q')^2 = q'^2 \in \mathbb{R}_{\mathbb{D}}$, which is not in $j\mathbb{R}_{\mathbb{D}}$ unless $q' = 0$. The form it carries is treated in *Norm and Invertibility in the General Split-Complex Algebra*.
+This is the **split imaginary subspace** $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, a real vector space of dimension $1$. It is not a subalgebra: $(j q')^2 = q'^2 \in \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, which is not in $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ unless $q' = 0$. The form it carries is treated in *Norm and Invertibility in the General Split-Complex Algebra*.
 
-There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The involution lattice of $\mathbb{D}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.
+There is only one non-trivial fixed-point set and one non-trivial anti-fixed-point set, because there is only one non-trivial involution. The involution lattice of $\mathbb{C}^{\mathrm{spl}}$ is the single edge $\{0\}\subset\mathbb{Z}/2$ drawn on the two lines.
 
 ### The Idempotent Basis
 
@@ -185,7 +185,7 @@ This is the **idempotent decomposition** of $Q$. It is the single most important
 The map
 
 $$
-\varphi : \mathbb{D} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(q + j q') = (q + q', q - q'),
+\varphi : \mathbb{C}^{\mathrm{spl}} \to \mathbb{R} \oplus \mathbb{R}, \qquad \varphi(q + j q') = (q + q', q - q'),
 $$
 
 is an algebra isomorphism. It is bijective, and it satisfies
@@ -200,11 +200,11 @@ $$
 (u_1, u_2)(v_1, v_2) = (u_1 v_1, u_2 v_2).
 $$
 
-So $\mathbb{D}$ is not a new algebra. It is $\mathbb{R} \oplus \mathbb{R}$ in disguise. Everything that can be said about $\mathbb{D}$ is a statement about pairs of real numbers, and everything that is surprising about $\mathbb{D}$ is a consequence of the fact that the disguise hides the zero divisors: the pairs with one coordinate zero are exactly the zero divisors.
+So $\mathbb{C}^{\mathrm{spl}}$ is not a new algebra. It is $\mathbb{R} \oplus \mathbb{R}$ in disguise. Everything that can be said about $\mathbb{C}^{\mathrm{spl}}$ is a statement about pairs of real numbers, and everything that is surprising about $\mathbb{C}^{\mathrm{spl}}$ is a consequence of the fact that the disguise hides the zero divisors: the pairs with one coordinate zero are exactly the zero divisors.
 
 ## The Split Complex Decomposition
 
-The real subspace $\mathbb{R}_{\mathbb{D}}$ and the split imaginary subspace $j\mathbb{R}_{\mathbb{D}}$ are the two eigenspaces of split complex conjugation. Every split complex number decomposes uniquely as the sum of a real part and an imaginary part:
+The real subspace $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and the split imaginary subspace $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ are the two eigenspaces of split complex conjugation. Every split complex number decomposes uniquely as the sum of a real part and an imaginary part:
 
 $$
 Q = Q_r + j Q_i, \qquad Q_r = q, \quad Q_i = q'.
@@ -216,21 +216,21 @@ $$
 Q_r = \frac{1}{2}(Q + \bar{Q}), \qquad Q_i = \frac{1}{2j}(Q - \bar{Q}) = q'.
 $$
 
-Indeed, $Q_r$ is fixed by split complex conjugation, so it lies in $\mathbb{R}_{\mathbb{D}}$, and $Q_i = q'$ is real, so $j Q_i$ lies in $j \mathbb{R}_{\mathbb{D}}$. The sum is $Q_r + j Q_i = Q$.
+Indeed, $Q_r$ is fixed by split complex conjugation, so it lies in $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, and $Q_i = q'$ is real, so $j Q_i$ lies in $j \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$. The sum is $Q_r + j Q_i = Q$.
 
 This gives the direct sum decomposition
 
 $$
-\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j \mathbb{R}_{\mathbb{D}},
+\mathbb{C}^{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} \oplus j \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}},
 $$
 
-where $j \mathbb{R}_{\mathbb{D}}$ is the set of split complex numbers of the form $j q'$ with $q' \in \mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{D}$ of real dimension $2$.
+where $j \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ is the set of split complex numbers of the form $j q'$ with $q' \in \mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{C}^{\mathrm{spl}}$ of real dimension $2$.
 
 This is the **split complex decomposition** of a split complex number. It expresses $Q$ as a real number plus $j$ times another real number. The two summands are the two eigenspaces of the unique non-trivial involution.
 
 ## The Idempotent Decomposition
 
-The idempotent decomposition is the second natural decomposition of $\mathbb{D}$, and it is not the eigenspace decomposition of an involution:
+The idempotent decomposition is the second natural decomposition of $\mathbb{C}^{\mathrm{spl}}$, and it is not the eigenspace decomposition of an involution:
 
 $$
 Q = Q_+ \Pi_+ + Q_- \Pi_-, \qquad Q_+ = q + q', \quad Q_- = q - q'.
@@ -242,15 +242,15 @@ $$
 Q_+ = Q \Pi_+, \qquad Q_- = Q \Pi_-,
 $$
 
-which, since $\mathbb{D}$ is commutative, is unambiguous.
+which, since $\mathbb{C}^{\mathrm{spl}}$ is commutative, is unambiguous.
 
 This gives the direct sum decomposition
 
 $$
-\mathbb{D} = \mathbb{D} \Pi_+ \oplus \mathbb{D} \Pi_-,
+\mathbb{C}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \Pi_+ \oplus \mathbb{C}^{\mathrm{spl}} \Pi_-,
 $$
 
-where $\mathbb{D} \Pi_+$ and $\mathbb{D} \Pi_-$ are the two ideals of $\mathbb{D}$, each isomorphic to $\mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{D}$ of real dimension $2$.
+where $\mathbb{C}^{\mathrm{spl}} \Pi_+$ and $\mathbb{C}^{\mathrm{spl}} \Pi_-$ are the two ideals of $\mathbb{C}^{\mathrm{spl}}$, each isomorphic to $\mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{C}^{\mathrm{spl}}$ of real dimension $2$.
 
 The idempotent decomposition and the split complex decomposition are related by
 
@@ -262,10 +262,10 @@ So the idempotent components are the sum and difference of the real and imaginar
 
 ## Zero Divisors
 
-**Definition.** An element $Q \in \mathbb{D}$ is a **zero divisor** if $Q \neq 0$ and there exists $B \in \mathbb{D}$ with $B \neq 0$ and $QB = 0$; the **annihilator** of $Q$ is the ideal
+**Definition.** An element $Q \in \mathbb{C}^{\mathrm{spl}}$ is a **zero divisor** if $Q \neq 0$ and there exists $B \in \mathbb{C}^{\mathrm{spl}}$ with $B \neq 0$ and $QB = 0$; the **annihilator** of $Q$ is the ideal
 
 $$
-\operatorname{ann}(Q) = \{B \in \mathbb{D} : QB = 0\}.
+\operatorname{ann}(Q) = \{B \in \mathbb{C}^{\mathrm{spl}} : QB = 0\}.
 $$
 
 The algebra has zero divisors already among its primitive elements:
@@ -274,7 +274,7 @@ $$
 (1+j)(1-j) = 1 - j^2 = 0,
 $$
 
-so $1+j$ and $1-j$ are non-zero elements with zero product, and $\mathbb{D}$ is not a domain.
+so $1+j$ and $1-j$ are non-zero elements with zero product, and $\mathbb{C}^{\mathrm{spl}}$ is not a domain.
 
 **Proposition.** Write $Q = Q_+\Pi_+ + Q_-\Pi_-$ in the idempotent basis, with $Q$ not both coordinates zero. Then $Q$ is a zero divisor if and only if one of $Q_+, Q_-$ vanishes; if both are nonzero then $Q$ is a unit, with inverse
 
@@ -284,13 +284,13 @@ $$
 
 **Proof.** In the idempotent basis multiplication is componentwise, $QB = Q_+B_+\Pi_+ + Q_-B_-\Pi_-$. If $Q_+ = 0$ then $Q\Pi_+ = Q_-\Pi_-\Pi_+ = 0$ with $\Pi_+ \neq 0$, so $Q$ is a zero divisor, and symmetrically for $Q_- = 0$. If both coordinates are nonzero, the displayed formula gives $Q Q^{-1} = \Pi_+ + \Pi_- = 1$, so $Q$ is a unit, and a unit is never a zero divisor.
 
-So the zero divisors are exactly the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and the non-units of $\mathbb{D}$ are $0$ together with the zero divisors. The classification of the zero-divisor set, its two families and its relation to the isotropic cone are the subject of *Zero Divisors of the Split-Complex Algebra*; the criterion by the norm belongs to *Norm and Invertibility in the General Split-Complex Algebra*, where the norm, the Hermitian form and the inner product — a form and a distance — are treated.
+So the zero divisors are exactly the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and the non-units of $\mathbb{C}^{\mathrm{spl}}$ are $0$ together with the zero divisors. The classification of the zero-divisor set, its two families and its relation to the isotropic cone are the subject of *Zero Divisors of the Split-Complex Algebra*; the criterion by the norm belongs to *Norm and Invertibility in the General Split-Complex Algebra*, where the norm, the Hermitian form and the inner product — a form and a distance — are treated.
 
 ## Summary
 
-The split complex algebra $\mathbb{D}$ is the two-dimensional real algebra with basis $1$, $j$ and the relation $j^2 = +1$. It is commutative, associative and unital, and it is not a field: it has zero divisors. A general element is written $Q = q + j q'$, and the algebra is $\mathbb{R}[x]/(x^2-1)$.
+The split complex algebra $\mathbb{C}^{\mathrm{spl}}$ is the two-dimensional real algebra with basis $1$, $j$ and the relation $j^2 = +1$. It is commutative, associative and unital, and it is not a field: it has zero divisors. A general element is written $Q = q + j q'$, and the algebra is $\mathbb{R}[x]/(x^2-1)$.
 
-Split complex conjugation sends $q + j q'$ to $q - j q'$; it is the unique non-trivial involution, and the idempotent conjugation coincides with it, so the conjugation group is $\mathbb{Z}/2$. Its fixed points form the real subspace $\mathbb{R}_{\mathbb{D}}$ and its anti-fixed points the split imaginary subspace $j\mathbb{R}_{\mathbb{D}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every split complex number decomposes uniquely as a real part plus an imaginary part. The algebra carries a second natural decomposition, which the complex case does not have: the idempotent decomposition $Q = Q_+\Pi_+ + Q_-\Pi_-$, where $\Pi_\pm = (1 \pm j)/2$ are the two nontrivial idempotents and $Q_\pm = q \pm q'$. The two components are independent ring homomorphisms, so $\mathbb{D}$ is the direct sum $\mathbb{R} \oplus \mathbb{R}$.
+Split complex conjugation sends $q + j q'$ to $q - j q'$; it is the unique non-trivial involution, and the idempotent conjugation coincides with it, so the conjugation group is $\mathbb{Z}/2$. Its fixed points form the real subspace $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and its anti-fixed points the split imaginary subspace $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every split complex number decomposes uniquely as a real part plus an imaginary part. The algebra carries a second natural decomposition, which the complex case does not have: the idempotent decomposition $Q = Q_+\Pi_+ + Q_-\Pi_-$, where $\Pi_\pm = (1 \pm j)/2$ are the two nontrivial idempotents and $Q_\pm = q \pm q'$. The two components are independent ring homomorphisms, so $\mathbb{C}^{\mathrm{spl}}$ is the direct sum $\mathbb{R} \oplus \mathbb{R}$.
 
 The algebra has zero divisors: $(1+j)(1-j) = 0$, and in the idempotent basis a non-zero element $Q = Q_+\Pi_+ + Q_-\Pi_-$ is a zero divisor exactly when one of its two coordinates vanishes, while it is a unit with $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$ exactly when both are nonzero. The zero divisors are therefore the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, classified in *Zero Divisors of the Split-Complex Algebra*. The norm, the Hermitian form and the inner product are a form and a distance and belong to *Norm and Invertibility in the General Split-Complex Algebra*.
 
@@ -298,7 +298,7 @@ The algebra has zero divisors: $(1+j)(1-j) = 0$, and in the idempotent basis a n
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | Split complex algebra, $\mathbb{R}[x]/(x^2-1)$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra, $\mathbb{R}[x]/(x^2-1)$ |
 | $1$ | Identity |
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + j q'$ | General split complex number |
@@ -310,9 +310,9 @@ The algebra has zero divisors: $(1+j)(1-j) = 0$, and in the idempotent basis a n
 | $\Pi_- = (1 - j)/2$ | Negative idempotent |
 | $Q = Q_+ \Pi_+ + Q_- \Pi_-$ | Idempotent decomposition, $Q_\pm = q \pm q'$ |
 | $\operatorname{ann}(Q)$ | Annihilator, the ideal $\{B : QB = 0\}$ |
-| $\mathbb{R}_{\mathbb{D}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
-| $j \mathbb{R}_{\mathbb{D}}$ | Split imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$ |
-| $\mathbb{D} \Pi_+, \mathbb{D} \Pi_-$ | The two ideals, isomorphic to $\mathbb{R}$ |
+| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
+| $j \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | Split imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$ |
+| $\mathbb{C}^{\mathrm{spl}} \Pi_+, \mathbb{C}^{\mathrm{spl}} \Pi_-$ | The two ideals, isomorphic to $\mathbb{R}$ |
 
 ## Further Reading
 

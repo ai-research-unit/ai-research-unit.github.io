@@ -165,9 +165,9 @@ orthogonal projection onto $H_N$ in $L^2(\mathbb T)$, and it exhibits the genera
 kernel of a closed subspace of $L^2$ with continuous evaluation is the integral kernel of the orthogonal
 projection onto it.
 
-**Example (the Hardy, Bergman and Fock spaces).** On the unit disc the Hardy space $H^2(\mathbb D)$ of
+**Example (the Hardy, Bergman and Fock spaces).** On the unit disc the Hardy space $H^2(\mathbb{D})$ of
 square-summable power series has reproducing kernel $K(z,w)=(1-z\bar w)^{-1}$, the Bergman space
-$A^2(\mathbb D)$ has $K(z,w)=(1-z\bar w)^{-2}$, and the Fock space of entire functions with Gaussian weight
+$A^2(\mathbb{D})$ has $K(z,w)=(1-z\bar w)^{-2}$, and the Fock space of entire functions with Gaussian weight
 has $K(z,w)=\exp(z\bar w)$; on $\mathbb R$ the space of entire functions with the Gaussian kernel
 $\exp(-\pi(x-y)^2)$ is the Segal–Bargmann space. These spaces and their kernels belong to the complex analysis
 and the operator theory of the later Parts, and are recorded here as instances of the correspondence.

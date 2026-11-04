@@ -82,7 +82,7 @@ Thus every field is an extension of a prime field and a vector space over it, an
 
 **(e)** A division ring that is not commutative is not a field. By Wedderburn's little theorem every finite division ring is a field, so every **skew field** is infinite (*Rings*, §13).
 
-**(f)** The split-complex numbers $\mathbb{D}$ are commutative but have zero divisors.
+**(f)** The split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ are commutative but have zero divisors.
 
 **(g)** If $f$ is reducible, then $F[x]/(f)$ is not a field: $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$, and $\mathbb{F}_2[x]/(x^2+1)$ fails since $x^2+1 = (x+1)^2$ over $\mathbb{F}_2$.
 

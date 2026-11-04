@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article studies the ideal structure of the dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ and the decomposition of the algebra relative to its distinguished submodules. The base article *Dual-Numbers Algebra* fixed the algebra, its two conjugations, the maximal ideal $\mathrm{M} = (\varepsilon)$ and the two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$; the article *Dual-Numbers Norm and Invertibility* fixed the norm and the group of units. The goal here is to determine the ideals, to explain why the algebra is local and not semisimple, and to describe the decomposition that stands in for the Peirce decomposition of a semisimple algebra.
+This article studies the ideal structure of the dual-number algebra $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$ and the decomposition of the algebra relative to its distinguished submodules. The base article *Dual-Numbers Algebra* fixed the algebra, its two conjugations, the maximal ideal $\mathrm{M} = (\varepsilon)$ and the two submodules $R_{\mathbb{C}^{\mathrm{dua}}}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$; the article *Dual-Numbers Norm and Invertibility* fixed the norm and the group of units. The goal here is to determine the ideals, to explain why the algebra is local and not semisimple, and to describe the decomposition that stands in for the Peirce decomposition of a semisimple algebra.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, and the algebra is $\mathbb{D}'_R$. The classification of the ideals into the chain $0 \subset \mathrm{M} \subset \mathbb{D}'$ is proved for a field $k$ and then extended to a general commutative ring by the pair description $I \oplus J\varepsilon$ with $I \subseteq J$; the geometric specialisation is $R = \mathbb{R}$. A general dual number is $Q = q + \varepsilon q'$ with $q = \operatorname{Re} Q$ and $q' = \operatorname{Inf} Q$, dual conjugation is $\bar Q = q - \varepsilon q'$, the norm $\langle Q\rangle$ of *Dual-Numbers Norm and Invertibility* reads $\langle Q\rangle = q^2$, and $\mathrm{M} = (\varepsilon)$ is the maximal ideal. The comparison at the end records where the dual algebra diverges from a field, its closest base case.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, and the algebra is $\mathbb{C}^{\mathrm{dua}}_R$. The classification of the ideals into the chain $0 \subset \mathrm{M} \subset \mathbb{C}^{\mathrm{dua}}$ is proved for a field $k$ and then extended to a general commutative ring by the pair description $I \oplus J\varepsilon$ with $I \subseteq J$; the geometric specialisation is $R = \mathbb{R}$. A general dual number is $Q = q + \varepsilon q'$ with $q = \operatorname{Re} Q$ and $q' = \operatorname{Inf} Q$, dual conjugation is $\bar Q = q - \varepsilon q'$, the norm $\langle Q\rangle$ of *Dual-Numbers Norm and Invertibility* reads $\langle Q\rangle = q^2$, and $\mathrm{M} = (\varepsilon)$ is the maximal ideal. The comparison at the end records where the dual algebra diverges from a field, its closest base case.
 
 The scope boundaries are these. This article owns the ideals and the Peirce-type decomposition. The norm and the unit criterion belong to *Dual-Numbers Norm and Invertibility*. The classification of the zero divisors and their distribution belong to *Dual-Numbers Zero Divisors*; the maximal ideal appears in both articles, but here it is treated as an ideal and there as the zero-divisor set.
 
@@ -15,7 +15,7 @@ The scope boundaries are these. This article owns the ideals and the Peirce-type
 
 **Definition.** Let $A$ be an associative ring. An additive subgroup $I \subseteq A$ is a **left ideal** if $AI \subseteq I$, a **right ideal** if $IA \subseteq I$, and a **two-sided ideal** if it is both. The ideals $0$ and $A$ are called **trivial**.
 
-In a commutative ring the three notions coincide, and every ideal is two-sided. Since $\mathbb{D}'_R$ is commutative, its left, right and two-sided ideals are the same family, and the word *ideal* is unambiguous here.
+In a commutative ring the three notions coincide, and every ideal is two-sided. Since $\mathbb{C}^{\mathrm{dua}}_R$ is commutative, its left, right and two-sided ideals are the same family, and the word *ideal* is unambiguous here.
 
 ### The Quotient
 
@@ -23,41 +23,41 @@ In a commutative ring the three notions coincide, and every ideal is two-sided. 
 
 **Proof.** Standard; the operations on cosets are well defined precisely because $I$ absorbs multiplication.
 
-The quotient $\mathbb{D}'_R/\mathrm{M}$ is the ring $R$ itself, since $\mathrm{M} = (\varepsilon)$ and $R[\varepsilon]/(\varepsilon^2) / (\varepsilon) \cong R$.
+The quotient $\mathbb{C}^{\mathrm{dua}}_R/\mathrm{M}$ is the ring $R$ itself, since $\mathrm{M} = (\varepsilon)$ and $R[\varepsilon]/(\varepsilon^2) / (\varepsilon) \cong R$.
 
 ### Ideals of a Unital Algebra and the Base Field
 
-**Remark.** If $A$ is a unital algebra over a commutative ring $k$ and $I$ is a left ideal, then $I$ is automatically a $k$-submodule: for $\lambda \in k$ and $a \in I$ one has $\lambda a = (\lambda 1)a \in I$, because $\lambda 1 \in A$. Hence the ideal lattice of $\mathbb{D}'_R$ does not depend on which ring of scalars inside $R$ is used to view it; the same lattice is seen over $\mathbb{R}$ and over $R$ once $\varepsilon$ is present.
+**Remark.** If $A$ is a unital algebra over a commutative ring $k$ and $I$ is a left ideal, then $I$ is automatically a $k$-submodule: for $\lambda \in k$ and $a \in I$ one has $\lambda a = (\lambda 1)a \in I$, because $\lambda 1 \in A$. Hence the ideal lattice of $\mathbb{C}^{\mathrm{dua}}_R$ does not depend on which ring of scalars inside $R$ is used to view it; the same lattice is seen over $\mathbb{R}$ and over $R$ once $\varepsilon$ is present.
 
-## The Ideals of $\mathbb{D}'_R$
+## The Ideals of $\mathbb{C}^{\mathrm{dua}}_R$
 
 ### The Classification
 
-**Theorem.** Let $k$ be a field. The ideals of $\mathbb{D}'_k = k[\varepsilon]/(\varepsilon^2)$ are exactly
+**Theorem.** Let $k$ be a field. The ideals of $\mathbb{C}^{\mathrm{dua}}_k = k[\varepsilon]/(\varepsilon^2)$ are exactly
 
 $$
 \boxed{\;
-0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{D}'_k
+0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{C}^{\mathrm{dua}}_k
 \;},
 $$
 
 and there are no others. The maximal ideal $\mathrm{M}$ is the unique nonzero proper ideal, hence simultaneously the unique maximal ideal and the unique minimal nonzero ideal.
 
-**Proof.** Let $I \neq 0$ be an ideal and let $0 \neq Q = q + \varepsilon q' \in I$. If $q \neq 0$ then $q$ is a unit of the field $k$, so $Q$ is a unit by the invertibility criterion of *Dual-Numbers Norm and Invertibility*, and $I = \mathbb{D}'_k$. If $q = 0$ then $Q = \varepsilon q'$ with $q' \neq 0$, and since $q'$ is a unit the ideal generated by $Q$ is $(\varepsilon) = \mathrm{M}$, so $I \supseteq \mathrm{M}$. The ideal $\mathrm{M}$ is maximal because $\mathbb{D}'_k/\mathrm{M} \cong k$ is a field, so the only ideal containing $\mathrm{M}$ is $\mathrm{M}$ itself or the whole ring. Hence every nonzero proper ideal is $\mathrm{M}$.
+**Proof.** Let $I \neq 0$ be an ideal and let $0 \neq Q = q + \varepsilon q' \in I$. If $q \neq 0$ then $q$ is a unit of the field $k$, so $Q$ is a unit by the invertibility criterion of *Dual-Numbers Norm and Invertibility*, and $I = \mathbb{C}^{\mathrm{dua}}_k$. If $q = 0$ then $Q = \varepsilon q'$ with $q' \neq 0$, and since $q'$ is a unit the ideal generated by $Q$ is $(\varepsilon) = \mathrm{M}$, so $I \supseteq \mathrm{M}$. The ideal $\mathrm{M}$ is maximal because $\mathbb{C}^{\mathrm{dua}}_k/\mathrm{M} \cong k$ is a field, so the only ideal containing $\mathrm{M}$ is $\mathrm{M}$ itself or the whole ring. Hence every nonzero proper ideal is $\mathrm{M}$.
 
-**Corollary.** Over a field, $\mathbb{D}'_k$ is a **local ring**: it has exactly one maximal ideal, namely $\mathrm{M}$, and the residue field is $\mathbb{D}'_k/\mathrm{M} \cong k$.
+**Corollary.** Over a field, $\mathbb{C}^{\mathrm{dua}}_k$ is a **local ring**: it has exactly one maximal ideal, namely $\mathrm{M}$, and the residue field is $\mathbb{C}^{\mathrm{dua}}_k/\mathrm{M} \cong k$.
 
-**Theorem (general base).** Let $R$ be a commutative ring. The ideals of $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ are exactly the pairs $I \subseteq J$ of ideals of $R$, realized as
+**Theorem (general base).** Let $R$ be a commutative ring. The ideals of $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$ are exactly the pairs $I \subseteq J$ of ideals of $R$, realized as
 
 $$
 I \oplus J\varepsilon = \{q + \varepsilon q' : q \in I,\; q' \in J\}.
 $$
 
-The ideal lattice of $\mathbb{D}'_R$ is therefore the three-element chain $0 \subset \mathrm{M} \subset \mathbb{D}'_R$ if and only if $R$ is a field, and $\mathbb{D}'_R$ is local if and only if $R$ is local; in the local case the unique maximal ideal is $\mathrm{P} \oplus R\varepsilon = \mathrm{P} + \mathrm{M}$ for the maximal ideal $\mathrm{P}$ of $R$.
+The ideal lattice of $\mathbb{C}^{\mathrm{dua}}_R$ is therefore the three-element chain $0 \subset \mathrm{M} \subset \mathbb{C}^{\mathrm{dua}}_R$ if and only if $R$ is a field, and $\mathbb{C}^{\mathrm{dua}}_R$ is local if and only if $R$ is local; in the local case the unique maximal ideal is $\mathrm{P} \oplus R\varepsilon = \mathrm{P} + \mathrm{M}$ for the maximal ideal $\mathrm{P}$ of $R$.
 
-**Proof.** An $R$-submodule of $\mathbb{D}'_R = R \oplus R\varepsilon$ has the form $I \oplus J\varepsilon$ for $R$-submodules $I, J$ of $R$. It is an ideal exactly when $(q_1 + \varepsilon q'_1)(q_2 + \varepsilon q'_2) = q_1 q_2 + (q_1 q'_2 + q'_1 q_2)\varepsilon$ lies in $I \oplus J\varepsilon$ for all $q_1, q'_1 \in R$, $q_2 \in I$, $q'_2 \in J$, that is, when $RI \subseteq I$, $RJ \subseteq J$ and $RI \subseteq J$: $I$ and $J$ are ideals of $R$ with $I \subseteq J$. For a field the only ideals of $k$ are $0$ and $k$, giving the three pairs $(0,0) = 0$, $(0,k) = \mathrm{M}$ and $(k,k) = \mathbb{D}'_k$. A pair with $J = R$ and $I = \mathrm{P}$ maximal has $\mathbb{D}'_R/(\mathrm{P} \oplus R\varepsilon) \cong R/\mathrm{P}$, a field, so it is maximal; conversely if $I \oplus J\varepsilon$ is maximal then $J = R$, since $J \neq R$ leaves the nonzero nilpotent $\varepsilon$-part in the quotient, and then $I$ is maximal because $R/I$ is a field. The maximal ideals of $\mathbb{D}'_R$ therefore correspond bijectively to those of $R$, which proves both the locality criterion and the field criterion.
+**Proof.** An $R$-submodule of $\mathbb{C}^{\mathrm{dua}}_R = R \oplus R\varepsilon$ has the form $I \oplus J\varepsilon$ for $R$-submodules $I, J$ of $R$. It is an ideal exactly when $(q_1 + \varepsilon q'_1)(q_2 + \varepsilon q'_2) = q_1 q_2 + (q_1 q'_2 + q'_1 q_2)\varepsilon$ lies in $I \oplus J\varepsilon$ for all $q_1, q'_1 \in R$, $q_2 \in I$, $q'_2 \in J$, that is, when $RI \subseteq I$, $RJ \subseteq J$ and $RI \subseteq J$: $I$ and $J$ are ideals of $R$ with $I \subseteq J$. For a field the only ideals of $k$ are $0$ and $k$, giving the three pairs $(0,0) = 0$, $(0,k) = \mathrm{M}$ and $(k,k) = \mathbb{C}^{\mathrm{dua}}_k$. A pair with $J = R$ and $I = \mathrm{P}$ maximal has $\mathbb{C}^{\mathrm{dua}}_R/(\mathrm{P} \oplus R\varepsilon) \cong R/\mathrm{P}$, a field, so it is maximal; conversely if $I \oplus J\varepsilon$ is maximal then $J = R$, since $J \neq R$ leaves the nonzero nilpotent $\varepsilon$-part in the quotient, and then $I$ is maximal because $R/I$ is a field. The maximal ideals of $\mathbb{C}^{\mathrm{dua}}_R$ therefore correspond bijectively to those of $R$, which proves both the locality criterion and the field criterion.
 
-**Remark.** When $R$ is a domain but not a field, the lattice is still larger than the three-element chain: for a nonzero nonunit $r$ the ideal generated by $r$ is $r\mathbb{D}'_R = (r) \oplus (r)\varepsilon$, distinct from $0$, $\mathrm{M}$ and $\mathbb{D}'_R$. The three-element chain is thus a field phenomenon, and it is the hypothesis under which the classification above is sharp.
+**Remark.** When $R$ is a domain but not a field, the lattice is still larger than the three-element chain: for a nonzero nonunit $r$ the ideal generated by $r$ is $r\mathbb{C}^{\mathrm{dua}}_R = (r) \oplus (r)\varepsilon$, distinct from $0$, $\mathrm{M}$ and $\mathbb{C}^{\mathrm{dua}}_R$. The three-element chain is thus a field phenomenon, and it is the hypothesis under which the classification above is sharp.
 
 ### Nilpotence of the Maximal Ideal
 
@@ -71,9 +71,9 @@ $$
 
 Equivalently, $\varepsilon^2 = 0$ and $\varepsilon \neq 0$, and every element of $\mathrm{M}$ has square zero.
 
-**Proof.** $\mathrm{M}^2$ is generated by products $\varepsilon \cdot \varepsilon = 0$, so $\mathrm{M}^2 = 0$; and $\varepsilon \neq 0$ in $\mathbb{D}'_R$ because $R[\varepsilon]/(\varepsilon^2)$ has $\{1, \varepsilon\}$ as a free basis. For $Q = \varepsilon q'$ one has $Q^2 = q'^2\varepsilon^2 = 0$.
+**Proof.** $\mathrm{M}^2$ is generated by products $\varepsilon \cdot \varepsilon = 0$, so $\mathrm{M}^2 = 0$; and $\varepsilon \neq 0$ in $\mathbb{C}^{\mathrm{dua}}_R$ because $R[\varepsilon]/(\varepsilon^2)$ has $\{1, \varepsilon\}$ as a free basis. For $Q = \varepsilon q'$ one has $Q^2 = q'^2\varepsilon^2 = 0$.
 
-**Corollary.** Every element of $\mathrm{M}$ is a nilpotent, and $\mathrm{M}$ is contained in the Jacobson radical of $\mathbb{D}'_R$.
+**Corollary.** Every element of $\mathrm{M}$ is a nilpotent, and $\mathrm{M}$ is contained in the Jacobson radical of $\mathbb{C}^{\mathrm{dua}}_R$.
 
 ## Length, Artinianity and the Failure of Semisimplicity
 
@@ -84,18 +84,18 @@ Equivalently, $\varepsilon^2 = 0$ and $\varepsilon \neq 0$, and every element of
 **Proposition.** Over a field, the chain
 
 $$
-0 \;\subset\; \mathrm{M} \;\subset\; \mathbb{D}'_k
+0 \;\subset\; \mathrm{M} \;\subset\; \mathbb{C}^{\mathrm{dua}}_k
 $$
 
-is a composition series. Its two successive quotients are $\mathrm{M}/\mathrm{M}^2 = \mathrm{M} \cong k$ and $\mathbb{D}'_k/\mathrm{M} \cong k$, both one-dimensional over $k$ and hence simple. The **length of $\mathbb{D}'_k$ as a module over itself is two.**
+is a composition series. Its two successive quotients are $\mathrm{M}/\mathrm{M}^2 = \mathrm{M} \cong k$ and $\mathbb{C}^{\mathrm{dua}}_k/\mathrm{M} \cong k$, both one-dimensional over $k$ and hence simple. The **length of $\mathbb{C}^{\mathrm{dua}}_k$ as a module over itself is two.**
 
-**Proof.** The quotient $\mathrm{M}/0 = \mathrm{M}$ is a one-dimensional $k$-space because $\mathrm{M} = k\varepsilon$, and its submodules are $0$ and $\mathrm{M}$; likewise $\mathbb{D}'_k/\mathrm{M} \cong k$.
+**Proof.** The quotient $\mathrm{M}/0 = \mathrm{M}$ is a one-dimensional $k$-space because $\mathrm{M} = k\varepsilon$, and its submodules are $0$ and $\mathrm{M}$; likewise $\mathbb{C}^{\mathrm{dua}}_k/\mathrm{M} \cong k$.
 
 So the two simple composition factors are isomorphic, both equal to the residue field $k$; the simple module is one-dimensional and occurs twice in the regular module.
 
 ### Artinianity
 
-**Proposition.** Over a field the algebra $\mathbb{D}'_k$ is **artinian** on both sides: every descending chain of ideals stabilizes.
+**Proposition.** Over a field the algebra $\mathbb{C}^{\mathrm{dua}}_k$ is **artinian** on both sides: every descending chain of ideals stabilizes.
 
 **Proof.** The ideal lattice has three elements, so every chain stabilizes immediately. For a more general noetherian base, the two-dimensional module over $R$ is artinian exactly when $R$ is.
 
@@ -103,19 +103,19 @@ So the two simple composition factors are isomorphic, both equal to the residue 
 
 **Definition.** A ring $A$ is **semisimple** if its left regular module is a direct sum of simple modules; by Wedderburn–Artin this is equivalent to $A$ being artinian with zero Jacobson radical, and in the commutative case to $A$ being a finite product of fields.
 
-**Theorem.** Over a field, $\mathbb{D}'_k$ is **not** semisimple.
+**Theorem.** Over a field, $\mathbb{C}^{\mathrm{dua}}_k$ is **not** semisimple.
 
-**Proof.** The Jacobson radical of $\mathbb{D}'_k$ contains $\mathrm{M}$, which is nonzero because $\varepsilon \neq 0$; hence the radical is nonzero and the Wedderburn–Artin criterion fails. Equivalently, a finite product of fields is reduced (has no nonzero nilpotent), while $\varepsilon$ is a nonzero nilpotent.
+**Proof.** The Jacobson radical of $\mathbb{C}^{\mathrm{dua}}_k$ contains $\mathrm{M}$, which is nonzero because $\varepsilon \neq 0$; hence the radical is nonzero and the Wedderburn–Artin criterion fails. Equivalently, a finite product of fields is reduced (has no nonzero nilpotent), while $\varepsilon$ is a nonzero nilpotent.
 
-**Remark (the reason).** The obstruction is exactly the nilpotence of the maximal ideal. Semisimplicity would require the regular module to split as $\mathrm{M} \oplus k$, that is, a decomposition into two ideals; but $\mathrm{M}$ is the unique minimal ideal, so there is no complementary ideal, and the chain $0 \subset \mathrm{M} \subset \mathbb{D}'_k$ cannot split. The extension $0 \to \mathrm{M} \to \mathbb{D}'_k \to k \to 0$ is non-split, and, up to isomorphism, $\mathbb{D}'_k$ is the unique non-split extension of $k$ by $k$ in this category.
+**Remark (the reason).** The obstruction is exactly the nilpotence of the maximal ideal. Semisimplicity would require the regular module to split as $\mathrm{M} \oplus k$, that is, a decomposition into two ideals; but $\mathrm{M}$ is the unique minimal ideal, so there is no complementary ideal, and the chain $0 \subset \mathrm{M} \subset \mathbb{C}^{\mathrm{dua}}_k$ cannot split. The extension $0 \to \mathrm{M} \to \mathbb{C}^{\mathrm{dua}}_k \to k \to 0$ is non-split, and, up to isomorphism, $\mathbb{C}^{\mathrm{dua}}_k$ is the unique non-split extension of $k$ by $k$ in this category.
 
 ## The Peirce-Type Decomposition
 
-### The Idempotents of $\mathbb{D}'_R$
+### The Idempotents of $\mathbb{C}^{\mathrm{dua}}_R$
 
-**Proposition.** Let $R$ be a connected commutative ring — for instance a field, an integral domain, or a local ring. Then the idempotents of $\mathbb{D}'_R$ are exactly $0$ and $1$.
+**Proposition.** Let $R$ be a connected commutative ring — for instance a field, an integral domain, or a local ring. Then the idempotents of $\mathbb{C}^{\mathrm{dua}}_R$ are exactly $0$ and $1$.
 
-**Proof.** An idempotent $Q = q + \varepsilon q'$ satisfies $Q^2 = Q$, that is $q^2 = q$ and $2q q' = q'$. Since $R$ is connected its only idempotents are $0$ and $1$, so $q = 0$ or $q = 1$. If $q = 0$ then $q' = 2\cdot 0 \cdot q' = 0$, giving $Q = 0$. If $q = 1$ then $q' = 2q'$ forces $q' = 0$ because $2$ is invertible, giving $Q = 1$. Conversely $0$ and $1$ are idempotent; and if $R$ carried a nontrivial idempotent $q$, then $q + 0\varepsilon$ would be an idempotent of $\mathbb{D}'_R$ other than $0$ and $1$, which is why connectedness is needed.
+**Proof.** An idempotent $Q = q + \varepsilon q'$ satisfies $Q^2 = Q$, that is $q^2 = q$ and $2q q' = q'$. Since $R$ is connected its only idempotents are $0$ and $1$, so $q = 0$ or $q = 1$. If $q = 0$ then $q' = 2\cdot 0 \cdot q' = 0$, giving $Q = 0$. If $q = 1$ then $q' = 2q'$ forces $q' = 0$ because $2$ is invertible, giving $Q = 1$. Conversely $0$ and $1$ are idempotent; and if $R$ carried a nontrivial idempotent $q$, then $q + 0\varepsilon$ would be an idempotent of $\mathbb{C}^{\mathrm{dua}}_R$ other than $0$ and $1$, which is why connectedness is needed.
 
 So over a connected base the algebra has no nontrivial idempotent. This is the algebraic expression of the fact that the algebra is *connected* as a ring, and it is the reason the Peirce machinery of a matrix algebra is unavailable here.
 
@@ -127,7 +127,7 @@ $$
 A = eAe \oplus eAf \oplus fAe \oplus fAf,
 $$
 
-whose off-diagonal corners vanish for a central idempotent. In $\mathbb{D}'_R$ the only idempotents are $0$ and $1$; for $e = 1$ the decomposition collapses to $A = A \oplus 0 \oplus 0 \oplus 0$, and for $e = 0$ to $A = 0$. So the Peirce decomposition is trivial, and no nontrivial corner decomposition exists. This is the *idempotent-free case* of the theory: the algebra has no pair of orthogonal idempotents summing to the identity.
+whose off-diagonal corners vanish for a central idempotent. In $\mathbb{C}^{\mathrm{dua}}_R$ the only idempotents are $0$ and $1$; for $e = 1$ the decomposition collapses to $A = A \oplus 0 \oplus 0 \oplus 0$, and for $e = 0$ to $A = 0$. So the Peirce decomposition is trivial, and no nontrivial corner decomposition exists. This is the *idempotent-free case* of the theory: the algebra has no pair of orthogonal idempotents summing to the identity.
 
 ### The Peirce-Type Decomposition into the Two Submodules
 
@@ -135,44 +135,44 @@ What replaces the Peirce decomposition is the eigenspace decomposition of the un
 
 $$
 \boxed{\;
-\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Q = \tfrac{1}{2}(Q + \bar Q) + \tfrac{1}{2}(Q - \bar Q)
+\mathbb{C}^{\mathrm{dua}}_R = R_{\mathbb{C}^{\mathrm{dua}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}, \qquad Q = \tfrac{1}{2}(Q + \bar Q) + \tfrac{1}{2}(Q - \bar Q)
 \;}.
 $$
 
-The two summands are the real submodule $R_{\mathbb{D}'} = \{Q : \bar Q = Q\}$ and the infinitesimal submodule $\varepsilon R_{\mathbb{D}'} = \{Q : \bar Q = -Q\}$, and both are rank-one $R$-modules whose direct sum is all of $\mathbb{D}'_R$. The two projections $Q \mapsto (Q \pm \bar Q)/2$ are the analogues of the Peirce projections, but they are associated to the involution and not to an idempotent.
+The two summands are the real submodule $R_{\mathbb{C}^{\mathrm{dua}}} = \{Q : \bar Q = Q\}$ and the infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{Q : \bar Q = -Q\}$, and both are rank-one $R$-modules whose direct sum is all of $\mathbb{C}^{\mathrm{dua}}_R$. The two projections $Q \mapsto (Q \pm \bar Q)/2$ are the analogues of the Peirce projections, but they are associated to the involution and not to an idempotent.
 
-**Remark (the two minimal submodules).** The two submodules $R_{\mathbb{D}'}$ and $\varepsilon R_{\mathbb{D}'}$ are the minimal nonzero $R$-submodules of $\mathbb{D}'_R$, of rank one each. Only the second is an ideal: $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is closed under multiplication by the whole algebra, whereas $R_{\mathbb{D}'} = R \cdot 1$ is not, because $\varepsilon \cdot 1 = \varepsilon \notin R_{\mathbb{D}'}$. So the two minimal submodules of the decomposition are distinct objects: one is the unique minimal ideal, the other is a subalgebra that is not an ideal. The dual algebra, being idempotent-free, has only one minimal ideal and cannot split it.
+**Remark (the two minimal submodules).** The two submodules $R_{\mathbb{C}^{\mathrm{dua}}}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ are the minimal nonzero $R$-submodules of $\mathbb{C}^{\mathrm{dua}}_R$, of rank one each. Only the second is an ideal: $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \mathrm{M}$ is closed under multiplication by the whole algebra, whereas $R_{\mathbb{C}^{\mathrm{dua}}} = R \cdot 1$ is not, because $\varepsilon \cdot 1 = \varepsilon \notin R_{\mathbb{C}^{\mathrm{dua}}}$. So the two minimal submodules of the decomposition are distinct objects: one is the unique minimal ideal, the other is a subalgebra that is not an ideal. The dual algebra, being idempotent-free, has only one minimal ideal and cannot split it.
 
 ### The Action of the Nilpotent on the Two Submodules
 
-**Proposition.** Let $E$ be multiplication by $\varepsilon$ on $\mathbb{D}'_R$. Then $\ker E = \mathrm{M}$ and $\operatorname{im} E = \mathrm{M}$, so $E$ has kernel and image the same rank-one submodule; the subalgebra $R_{\mathbb{D}'}$ meets neither.
+**Proposition.** Let $E$ be multiplication by $\varepsilon$ on $\mathbb{C}^{\mathrm{dua}}_R$. Then $\ker E = \mathrm{M}$ and $\operatorname{im} E = \mathrm{M}$, so $E$ has kernel and image the same rank-one submodule; the subalgebra $R_{\mathbb{C}^{\mathrm{dua}}}$ meets neither.
 
-**Proof.** $E(Q) = \varepsilon q$, which vanishes exactly when $q = 0$; and its image is $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$.
+**Proof.** $E(Q) = \varepsilon q$, which vanishes exactly when $q = 0$; and its image is $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \mathrm{M}$.
 
 So multiplication by the nilpotent does not decompose the algebra; it crushes the real submodule onto the infinitesimal one. This is the sharpest way to see why the length-two chain does not split: the nilpotent moves the two eigenspaces into one another and strictly decreases the flag.
 
 ## The Lattice of Ideals
 
-Over a field $k$ the ideal lattice of $\mathbb{D}'_k$ has three elements,
+Over a field $k$ the ideal lattice of $\mathbb{C}^{\mathrm{dua}}_k$ has three elements,
 
 $$
-0 \;\subset\; \mathrm{M} \;\subset\; \mathbb{D}'_k,
+0 \;\subset\; \mathrm{M} \;\subset\; \mathbb{C}^{\mathrm{dua}}_k,
 $$
 
-a single chain: $\mathrm{M}$ covers $0$ and is covered by $\mathbb{D}'_k$, and there are no incomparable elements. The lattice is a total order of length two.
+a single chain: $\mathrm{M}$ covers $0$ and is covered by $\mathbb{C}^{\mathrm{dua}}_k$, and there are no incomparable elements. The lattice is a total order of length two.
 
-- $\mathrm{M}$ is the unique maximal ideal, so $\mathbb{D}'_k$ is local.
-- $\mathrm{M}$ is the unique minimal nonzero ideal, so $\mathbb{D}'_k$ is *connected* and has no nontrivial idempotent.
-- The unique prime ideal is $\mathrm{M}$: the quotient by any other ideal is $0$ or $\mathbb{D}'_k$, and $\mathbb{D}'_k/\mathrm{M} \cong k$ is a field.
+- $\mathrm{M}$ is the unique maximal ideal, so $\mathbb{C}^{\mathrm{dua}}_k$ is local.
+- $\mathrm{M}$ is the unique minimal nonzero ideal, so $\mathbb{C}^{\mathrm{dua}}_k$ is *connected* and has no nontrivial idempotent.
+- The unique prime ideal is $\mathrm{M}$: the quotient by any other ideal is $0$ or $\mathbb{C}^{\mathrm{dua}}_k$, and $\mathbb{C}^{\mathrm{dua}}_k/\mathrm{M} \cong k$ is a field.
 - The algebra is a principal ideal ring with socle $\mathrm{M}$ and Jacobson radical $\mathrm{M}$: the socle and the radical coincide, which is characteristic of local artinian rings with $\mathrm{M}^2 = 0$.
 
 ## Comparison with the Ideals of a Field
 
 The contrast with a field $k$ is the base contrast of the series.
 
-| | $\mathbb{D}'_k$ | $k$ |
+| | $\mathbb{C}^{\mathrm{dua}}_k$ | $k$ |
 |---|---|---|
-| Two-sided ideals | $0, \mathrm{M}, \mathbb{D}'_k$ | $0, k$ only (simple) |
+| Two-sided ideals | $0, \mathrm{M}, \mathbb{C}^{\mathrm{dua}}_k$ | $0, k$ only (simple) |
 | Maximal ideal | unique, $\mathrm{M} = (\varepsilon)$ | $0$, the zero ideal |
 | Radical | $\mathrm{M} \neq 0$ | $0$ |
 | Semisimple | no | yes |
@@ -182,33 +182,33 @@ The contrast with a field $k$ is the base contrast of the series.
 | One-sided ideals | coincide with ideals | coincide with ideals |
 | Peirce decomposition | trivial; replaced by the involution eigenspaces | trivial |
 
-Two structural points stand out. First, locality of $\mathbb{D}'_k$ and simplicity of $k$ are the two extreme ways of having a small number of two-sided ideals: in $k$ the only ideals are the trivial ones because the algebra is a field, while in $\mathbb{D}'_k$ there is exactly one proper ideal because the algebra is local. Second, the length is two in $\mathbb{D}'_k$ and one in $k$: the dual algebra has two isomorphic simple factors because its maximal ideal is a square-zero copy of the residue field. The Peirce decomposition is trivial in both cases: with no nontrivial idempotent there are no corners, and what replaces it in $\mathbb{D}'_k$ are the eigencomponents of the involution.
+Two structural points stand out. First, locality of $\mathbb{C}^{\mathrm{dua}}_k$ and simplicity of $k$ are the two extreme ways of having a small number of two-sided ideals: in $k$ the only ideals are the trivial ones because the algebra is a field, while in $\mathbb{C}^{\mathrm{dua}}_k$ there is exactly one proper ideal because the algebra is local. Second, the length is two in $\mathbb{C}^{\mathrm{dua}}_k$ and one in $k$: the dual algebra has two isomorphic simple factors because its maximal ideal is a square-zero copy of the residue field. The Peirce decomposition is trivial in both cases: with no nontrivial idempotent there are no corners, and what replaces it in $\mathbb{C}^{\mathrm{dua}}_k$ are the eigencomponents of the involution.
 
 ## Summary
 
-Over a field $k$, the dual-number algebra $\mathbb{D}'_k = k[\varepsilon]/(\varepsilon^2)$ is a commutative local ring whose ideals are exactly
+Over a field $k$, the dual-number algebra $\mathbb{C}^{\mathrm{dua}}_k = k[\varepsilon]/(\varepsilon^2)$ is a commutative local ring whose ideals are exactly
 
 $$
-0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{D}'_k,
+0 \;\subset\; \mathrm{M} = (\varepsilon) \;\subset\; \mathbb{C}^{\mathrm{dua}}_k,
 $$
 
-so $\mathrm{M}$ is simultaneously the unique maximal ideal and the unique minimal nonzero ideal, and the residue field is $\mathbb{D}'_k/\mathrm{M} \cong k$. Over a general commutative ring $R$ the lattice is larger: the ideals are the pairs $I \subseteq J$ of ideals of $R$, realized as $I \oplus J\varepsilon$, and the three-element chain occurs exactly when $R$ is a field. The maximal ideal is nilpotent of index two, $\mathrm{M}^2 = 0$, and every element of $\mathrm{M}$ squares to zero. Over a field the algebra is artinian of length two, with two isomorphic simple composition factors both equal to $k$, and it is **not** semisimple: the Jacobson radical is $\mathrm{M} \neq 0$, or equivalently the non-split chain $0 \subset \mathrm{M} \subset \mathbb{D}'_k$ cannot be refined into a direct sum. Over a field (or, more generally, a connected base) the algebra is idempotent-free — its only idempotents are $0$ and $1$ — so the Peirce decomposition is trivial; what replaces it is the eigenspace decomposition $R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}$ of dual conjugation, whose two rank-one submodules are the minimal submodule and the subalgebra, of which only the first is an ideal.
+so $\mathrm{M}$ is simultaneously the unique maximal ideal and the unique minimal nonzero ideal, and the residue field is $\mathbb{C}^{\mathrm{dua}}_k/\mathrm{M} \cong k$. Over a general commutative ring $R$ the lattice is larger: the ideals are the pairs $I \subseteq J$ of ideals of $R$, realized as $I \oplus J\varepsilon$, and the three-element chain occurs exactly when $R$ is a field. The maximal ideal is nilpotent of index two, $\mathrm{M}^2 = 0$, and every element of $\mathrm{M}$ squares to zero. Over a field the algebra is artinian of length two, with two isomorphic simple composition factors both equal to $k$, and it is **not** semisimple: the Jacobson radical is $\mathrm{M} \neq 0$, or equivalently the non-split chain $0 \subset \mathrm{M} \subset \mathbb{C}^{\mathrm{dua}}_k$ cannot be refined into a direct sum. Over a field (or, more generally, a connected base) the algebra is idempotent-free — its only idempotents are $0$ and $1$ — so the Peirce decomposition is trivial; what replaces it is the eigenspace decomposition $R_{\mathbb{C}^{\mathrm{dua}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ of dual conjugation, whose two rank-one submodules are the minimal submodule and the subalgebra, of which only the first is an ideal.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
-| $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
+| $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dua}} = \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\bar{Q} = q - \varepsilon q'$ | Dual conjugation, the unique nontrivial involution over a field |
-| $R_{\mathbb{D}'}$ | Real submodule, $+1$-eigenspace of $\bar{\cdot}$ |
-| $\varepsilon R_{\mathbb{D}'}$ | Infinitesimal submodule, $-1$-eigenspace of $\bar{\cdot}$ |
+| $R_{\mathbb{C}^{\mathrm{dua}}}$ | Real submodule, $+1$-eigenspace of $\bar{\cdot}$ |
+| $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ | Infinitesimal submodule, $-1$-eigenspace of $\bar{\cdot}$ |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal, $\mathrm{M}^2 = 0$; unique nonzero proper ideal over a field |
-| $I \oplus J\varepsilon$, $I \subseteq J$ | General ideals of $\mathbb{D}'_R$ over a general commutative ring $R$ |
-| $\mathbb{D}'_R/\mathrm{M} \cong R$ | Residue ring |
-| $\operatorname{Jac}(\mathbb{D}'_k) = \mathrm{M}$ | Jacobson radical, over a field $k$ |
+| $I \oplus J\varepsilon$, $I \subseteq J$ | General ideals of $\mathbb{C}^{\mathrm{dua}}_R$ over a general commutative ring $R$ |
+| $\mathbb{C}^{\mathrm{dua}}_R/\mathrm{M} \cong R$ | Residue ring |
+| $\operatorname{Jac}(\mathbb{C}^{\mathrm{dua}}_k) = \mathrm{M}$ | Jacobson radical, over a field $k$ |
 | $1 + \mathrm{M}$ | Shear group, units of real part one |
 | $k$ | Base field in the specialisations |
 

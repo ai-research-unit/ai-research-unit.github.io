@@ -93,7 +93,7 @@ with $r_b \in R$ and all but finitely many $r_b$ zero. The uniqueness of the coe
 
 **Definition.** An $R$-module is **free** if it has a basis. The zero module is free on the empty basis.
 
-**Examples.** The module $R^n$ of $n$-tuples is free with the **standard basis** $e_1,\dots,e_n$, where $e_j$ has $1$ in slot $j$ and $0$ elsewhere. The polynomial ring $R[x]$ is free on $\{1,x,x^2,\dots\}$. Over $\mathbb{Z}$ the module $\mathbb{Z}$ is free of rank $1$; the module $\mathbb{Z}/n\mathbb{Z}$ for $n \ge 2$ is *not* free, because a nonzero free $\mathbb{Z}$-module is infinite and contains no element of finite additive order. Over the split complex numbers $\mathbb{D}$, the free modules of finite rank are the modules $\mathbb{D}^n$.
+**Examples.** The module $R^n$ of $n$-tuples is free with the **standard basis** $e_1,\dots,e_n$, where $e_j$ has $1$ in slot $j$ and $0$ elsewhere. The polynomial ring $R[x]$ is free on $\{1,x,x^2,\dots\}$. Over $\mathbb{Z}$ the module $\mathbb{Z}$ is free of rank $1$; the module $\mathbb{Z}/n\mathbb{Z}$ for $n \ge 2$ is *not* free, because a nonzero free $\mathbb{Z}$-module is infinite and contains no element of finite additive order. Over the split complex numbers $\mathbb{C}^{\mathrm{spl}}$, the free modules of finite rank are the modules ${\mathbb{C}^{\mathrm{spl}}}^n$.
 
 ### The Universal Property
 
@@ -221,19 +221,19 @@ Over a principal ideal domain, every submodule of a free module is free. This is
 
 ### Over the Split Complex Numbers
 
-The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_{1,2}=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_x^2=\pi_x$, $\pi_y^2=\pi_y$, $\pi_x\pi_y=0$ and $\pi_x+\pi_y=1$. The ring isomorphism
+The split complex numbers $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_{1,2}=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_x^2=\pi_x$, $\pi_y^2=\pi_y$, $\pi_x\pi_y=0$ and $\pi_x+\pi_y=1$. The ring isomorphism
 
 $$
-\mathbb{D} \cong \mathbb{R} \times \mathbb{R}, \qquad a+bj \longmapsto (a+b,\ a-b),
+\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}, \qquad a+bj \longmapsto (a+b,\ a-b),
 $$
 
-sends $\pi_x$ to $(1,0)$ and $\pi_y$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and
+sends $\pi_x$ to $(1,0)$ and $\pi_y$ to $(0,1)$. Every $\mathbb{C}^{\mathrm{spl}}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and
 
 $$
-\mathbb{D}^{(I)} \cong \mathbb{R}^{(I)} \oplus \mathbb{R}^{(I)}
+{\mathbb{C}^{\mathrm{spl}}}^{(I)} \cong \mathbb{R}^{(I)} \oplus \mathbb{R}^{(I)}
 $$
 
-as an $\mathbb{R}$-module. So a free $\mathbb{D}$-module of rank $n$ is a pair of real vector spaces each of dimension $n$, and a $\mathbb{D}$-module is free of rank $n$ exactly when both idempotent components are real vector spaces of dimension $n$. Rank over $\mathbb{D}$ is thus a pair of ordinary dimensions constrained to be equal. This is the first place in the category where a single rank is replaced by several invariants because the ring has zero divisors.
+as an $\mathbb{R}$-module. So a free $\mathbb{C}^{\mathrm{spl}}$-module of rank $n$ is a pair of real vector spaces each of dimension $n$, and a $\mathbb{C}^{\mathrm{spl}}$-module is free of rank $n$ exactly when both idempotent components are real vector spaces of dimension $n$. Rank over $\mathbb{C}^{\mathrm{spl}}$ is thus a pair of ordinary dimensions constrained to be equal. This is the first place in the category where a single rank is replaced by several invariants because the ring has zero divisors.
 
 ### Over a Polynomial Ring
 

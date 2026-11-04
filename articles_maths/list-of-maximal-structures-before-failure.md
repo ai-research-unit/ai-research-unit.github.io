@@ -14,7 +14,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | The property | The strongest structure that lacks it | The exact object at the boundary | Introduced in |
 |---|---|---|---|
 | commutativity | a division ring | $\mathbb{H}$ | *Quaternion Algebra* |
-| no nonzero nilpotent | a local Artinian ring with nilpotent maximal ideal | the dual numbers $\mathbb{D}'$ | *Dual-Numbers Algebra* |
+| no nonzero nilpotent | a local Artinian ring with nilpotent maximal ideal | the dual numbers $\mathbb{C}^{\mathrm{dua}}$ | *Dual-Numbers Algebra* |
 | no zero divisors | a reduced commutative ring with idempotents | $\mathbb{Z} \times \mathbb{Z}$ | *Examples of Rings and Fields* |
 | unique factorisation | a Bézout domain, hence a GCD domain | $\overline{\mathbb{Z}}$ | *Bézout Domains* |
 | every ideal principal | a unique factorisation domain | $\mathbb{Z}[x]$ | *Polynomial Rings and Rational Functions* |
@@ -40,7 +40,7 @@ The strongest structure that is not commutative is a division ring: it has no ze
 
 ## The Boundary at Reducedness
 
-A ring is reduced when it has no nonzero nilpotent. The strongest structure that fails to be reduced is local and Artinian with a nilpotent maximal ideal; the exact object is the dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, in which $\varepsilon \neq 0$ and $\varepsilon^2 = 0$. The ring $\mathbb{Z}/4\mathbb{Z}$ is the same phenomenon in finite form, with $2^2 = 0$; the dual numbers are the stronger witness because they are an algebra over a field and their only nilpotents are the elements of the maximal ideal $(\varepsilon)$. The nilradical, its identification with the intersection of the prime ideals, and the counterexamples that fix the rung are the subject of *Reduced Rings and the Nilradical*.
+A ring is reduced when it has no nonzero nilpotent. The strongest structure that fails to be reduced is local and Artinian with a nilpotent maximal ideal; the exact object is the dual numbers $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, in which $\varepsilon \neq 0$ and $\varepsilon^2 = 0$. The ring $\mathbb{Z}/4\mathbb{Z}$ is the same phenomenon in finite form, with $2^2 = 0$; the dual numbers are the stronger witness because they are an algebra over a field and their only nilpotents are the elements of the maximal ideal $(\varepsilon)$. The nilradical, its identification with the intersection of the prime ideals, and the counterexamples that fix the rung are the subject of *Reduced Rings and the Nilradical*.
 
 ## The Boundary at the Domain Property
 
@@ -105,7 +105,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | The real quaternions, a division ring that is not a field |
-| $\mathbb{D}'$ | The dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
+| $\mathbb{C}^{\mathrm{dua}}$ | The dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
 | $\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z} \times \mathbb{Z}$ | The integers, the residue ring, the product ring |
 | $\mathbb{Z}[x]$, $k[x]$, $k[x_1,\dots,x_n]$ | Polynomial rings |
 | $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{-2}]$, $\mathbb{Z}[\sqrt{-5}]$ | Quadratic integer rings |

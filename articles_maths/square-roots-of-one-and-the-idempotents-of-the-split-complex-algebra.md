@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Of the two products of *The Two Products of the Split-Complexoid Space*, exactly one makes the underlying real space of $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=+1$, an associative unital $\mathbb{R}$-algebra; the algebra is *Split-Complex Algebra*, and its multiplication is the general plain bilinear product of two split-complex numbers, $Q_1Q_2$. That product is the one read throughout this article.
+Of the two products of *The Two Products of the Split-Complexoid Space*, exactly one makes the underlying real space of $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, an associative unital $\mathbb{R}$-algebra; the algebra is *Split-Complex Algebra*, and its multiplication is the general plain bilinear product of two split-complex numbers, $Q_1Q_2$. That product is the one read throughout this article.
 
-The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $\Xi\in\mathbb{D}$ with
+The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $\Xi\in\mathbb{C}^{\mathrm{spl}}$ with
 
 $$
 \Xi^{2}=1 .
@@ -55,7 +55,7 @@ The equations name a product, so the roots and the idempotents are relative to i
 
 **The roots of $+1$ are exactly $\pm1$ and $\pm j$; there are no others.**
 
-A **root of $+1$** is an element $\Xi\in\mathbb{D}$ with $\Xi^{2}=1$, the square being the one of the general plain bilinear product.
+A **root of $+1$** is an element $\Xi\in\mathbb{C}^{\mathrm{spl}}$ with $\Xi^{2}=1$, the square being the one of the general plain bilinear product.
 
 ### The Reduction
 
@@ -102,7 +102,7 @@ $$
 \Xi=+1,\qquad \Xi=-1 .
 $$
 
-They are the roots in the real line $\mathbb{R}_{\mathbb{D}}$, and they are the only roots fixed by the conjugation, $\bar\Xi=\Xi$. They give the trivial idempotents $1$ and $0$ under the halving map.
+They are the roots in the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, and they are the only roots fixed by the conjugation, $\bar\Xi=\Xi$. They give the trivial idempotents $1$ and $0$ under the halving map.
 
 ### The Non-Trivial Roots
 
@@ -112,11 +112,11 @@ $$
 \Xi=+j,\qquad \Xi=-j .
 $$
 
-They are the imaginary roots, in the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, and the conjugation exchanges them, $\overline{+j}=-j$; they are therefore non-Hermitian for the conjugation. They give the standard idempotents $\Pi_{+}$ and $\Pi_{-}$ under the halving map.
+They are the imaginary roots, in the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, and the conjugation exchanges them, $\overline{+j}=-j$; they are therefore non-Hermitian for the conjugation. They give the standard idempotents $\Pi_{+}$ and $\Pi_{-}$ under the halving map.
 
 ### Statement of the Theorem
 
-**Theorem (the roots of $+1$).** The roots of $+1$ in $\mathbb{D}$ are exactly the four elements
+**Theorem (the roots of $+1$).** The roots of $+1$ in $\mathbb{C}^{\mathrm{spl}}$ are exactly the four elements
 
 $$
 \boxed{\;1,\qquad -1,\qquad j,\qquad -j\;}.
@@ -137,8 +137,8 @@ The roots fall into the two following families.
 
 | Family | Form | Real parameters | Size | Position | Fixed by the conjugation? |
 |---|---|---|---|---|---|
-| Trivial roots | $\Xi=\pm1$ | none | two elements | the real line $\mathbb{R}_{\mathbb{D}}$ | yes |
-| Non-trivial roots | $\Xi=\pm j$ | none | two elements | the split imaginary line $j\mathbb{R}_{\mathbb{D}}$ | no |
+| Trivial roots | $\Xi=\pm1$ | none | two elements | the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | yes |
+| Non-trivial roots | $\Xi=\pm j$ | none | two elements | the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | no |
 
 ### Verification
 
@@ -153,7 +153,7 @@ The verification is the whole computation: the split sign $j^{2}=+1$ is what mak
 
 ### The Roots of Minus One
 
-**Proposition (the roots of $-1$).** The equation $\Xi^{2}=-1$ has **no solution** in $\mathbb{D}$.
+**Proposition (the roots of $-1$).** The equation $\Xi^{2}=-1$ has **no solution** in $\mathbb{C}^{\mathrm{spl}}$.
 
 **Proof.** In the idempotent coordinates the equation is $\Xi_{+}^{2}=-1$ and $\Xi_{-}^{2}=-1$, impossible over $\mathbb{R}$; in the scalar coordinates it is $x^{2}+x'^{2}=-1$ and $2xx'=0$, and the first equation is impossible because the left side is non-negative.
 
@@ -163,7 +163,7 @@ The result is collected in the table.
 |---|---|---|---|
 | $\Xi^{2}=-1$ | none | empty | no root of $+1$ produces one; the complex unit $i$ is absent |
 
-The absence is the sharp difference from the complex field: the complex unit $i$ is a root of $-1$, while the split unit $j$ is a root of $+1$. There is no central imaginary in $\mathbb{D}$ and no multiplication of the roots of $+1$ by one that would produce roots of $-1$; the two root problems have different solution sets, one of four elements and one empty.
+The absence is the sharp difference from the complex field: the complex unit $i$ is a root of $-1$, while the split unit $j$ is a root of $+1$. There is no central imaginary in $\mathbb{C}^{\mathrm{spl}}$ and no multiplication of the roots of $+1$ by one that would produce roots of $-1$; the two root problems have different solution sets, one of four elements and one empty.
 
 ### Status of the Roots
 
@@ -202,13 +202,13 @@ No root of $+1$ is a zero divisor, because every root is a unit; the real roots 
 
 ## The Idempotents
 
-**The idempotents of $\mathbb{D}$ are exactly the four elements $0,1,\Pi_{+},\Pi_{-}$; the standard pair is orthogonal, complete, central and primitive, and every idempotent is the image of exactly one root of $+1$ under the halving map.**
+**The idempotents of $\mathbb{C}^{\mathrm{spl}}$ are exactly the four elements $0,1,\Pi_{+},\Pi_{-}$; the standard pair is orthogonal, complete, central and primitive, and every idempotent is the image of exactly one root of $+1$ under the halving map.**
 
-The **idempotents** of $\mathbb{D}$ are the elements satisfying $\Pi^{2}=\Pi$, the square being the one of the plain product. They correspond to projectors under multiplication, and in $\mathbb{D}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into the two idempotent lines, and in particular the two minimal ideals; they classify the zero divisors, every nonzero one of which is a real multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they carry the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read on this two-dimensional member of the family.
+The **idempotents** of $\mathbb{C}^{\mathrm{spl}}$ are the elements satisfying $\Pi^{2}=\Pi$, the square being the one of the plain product. They correspond to projectors under multiplication, and in $\mathbb{C}^{\mathrm{spl}}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into the two idempotent lines, and in particular the two minimal ideals; they classify the zero divisors, every nonzero one of which is a real multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they carry the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read on this two-dimensional member of the family.
 
 ### The Definition
 
-**Definition.** Let $\mathbb{D}$ be the split-complex algebra. An element $\Pi\in\mathbb{D}$ is an **idempotent of the split-complex algebra** when
+**Definition.** Let $\mathbb{C}^{\mathrm{spl}}$ be the split-complex algebra. An element $\Pi\in\mathbb{C}^{\mathrm{spl}}$ is an **idempotent of the split-complex algebra** when
 
 $$
 \Pi^{2}=\Pi .
@@ -302,8 +302,8 @@ $$
 They are **central**, because the algebra is commutative, and **primitive**, because
 
 $$
-\Pi_{+}\mathbb{D}\Pi_{+}=\mathbb{R}\Pi_{+}\cong\mathbb{R},\qquad
-\Pi_{-}\mathbb{D}\Pi_{-}=\mathbb{R}\Pi_{-}\cong\mathbb{R}
+\Pi_{+}\mathbb{C}^{\mathrm{spl}}\Pi_{+}=\mathbb{R}\Pi_{+}\cong\mathbb{R},\qquad
+\Pi_{-}\mathbb{C}^{\mathrm{spl}}\Pi_{-}=\mathbb{R}\Pi_{-}\cong\mathbb{R}
 $$
 
 are fields. The properties of the pair are collected in the table.
@@ -313,16 +313,16 @@ are fields. The properties of the pair are collected in the table.
 | Orthogonal | $\Pi_{+}\Pi_{-}=0$ |
 | Complete | $\Pi_{+}+\Pi_{-}=1$ |
 | Central | yes, the algebra is commutative |
-| Primitive | yes, $\Pi_{\pm}\mathbb{D}\Pi_{\pm}=\mathbb{R}\Pi_{\pm}$ |
+| Primitive | yes, $\Pi_{\pm}\mathbb{C}^{\mathrm{spl}}\Pi_{\pm}=\mathbb{R}\Pi_{\pm}$ |
 | Hermitian idempotent | no, $\overline{\Pi_{+}}=\Pi_{-}$ and $\overline{\Pi_{-}}=\Pi_{+}$ |
 | Zero divisor | yes, $\Pi_{+}\Pi_{-}=0$ |
-| Minimal ideals | $\mathbb{D}\Pi_{\pm}=\mathbb{R}\Pi_{\pm}$ |
+| Minimal ideals | $\mathbb{C}^{\mathrm{spl}}\Pi_{\pm}=\mathbb{R}\Pi_{\pm}$ |
 
 ### The Classification of the Idempotents
 
-**The idempotents of $\mathbb{D}$ are exactly $0$, $1$, $\Pi_{+}$ and $\Pi_{-}$; there are no others.**
+**The idempotents of $\mathbb{C}^{\mathrm{spl}}$ are exactly $0$, $1$, $\Pi_{+}$ and $\Pi_{-}$; there are no others.**
 
-**Theorem (the idempotents).** The idempotents of $\mathbb{D}$ are exactly
+**Theorem (the idempotents).** The idempotents of $\mathbb{C}^{\mathrm{spl}}$ are exactly
 
 $$
 \boxed{\;0,\qquad 1,\qquad \Pi_{+}=\frac{1+j}{2},\qquad \Pi_{-}=\frac{1-j}{2}\;}.
@@ -352,7 +352,7 @@ $$
 H(\Xi)=\tfrac12(1+\Xi)
 $$
 
-is a bijection from the roots of $+1$ onto the idempotents of $\mathbb{D}$, with inverse
+is a bijection from the roots of $+1$ onto the idempotents of $\mathbb{C}^{\mathrm{spl}}$, with inverse
 
 $$
 H^{-1}(\Pi)=2\Pi-1 .
@@ -406,7 +406,7 @@ The idempotents fall into the two following families.
 | Trivial idempotents | $0,1$ | none | two elements | the scalar line | yes |
 | Standard idempotents | $\Pi_{\pm}=\tfrac12(1\pm j)$ | none | two elements | the two idempotent lines | no |
 
-The idempotents form a **finite set of four elements**, not a positive-dimensional family. The reason is visible in the classification: the idempotent equation factors as $q'(2q-1)=0$, a product of two real scalars, so each factor gives a finite set of values; there is no vector part to vary independently. In the four-dimensional biquaternion algebra the non-trivial idempotents form a two-real-parameter Hermitian family and a four-real-parameter non-Hermitian family; here the non-trivial idempotents collapse to the two points $\Pi_{+},\Pi_{-}$. The idempotents are the indicator functions of the subsets of a two-point set under $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$:
+The idempotents form a **finite set of four elements**, not a positive-dimensional family. The reason is visible in the classification: the idempotent equation factors as $q'(2q-1)=0$, a product of two real scalars, so each factor gives a finite set of values; there is no vector part to vary independently. In the four-dimensional biquaternion algebra the non-trivial idempotents form a two-real-parameter Hermitian family and a four-real-parameter non-Hermitian family; here the non-trivial idempotents collapse to the two points $\Pi_{+},\Pi_{-}$. The idempotents are the indicator functions of the subsets of a two-point set under $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$:
 
 $$
 0\longmapsto(0,0),\qquad \Pi_{+}\longmapsto(1,0),\qquad \Pi_{-}\longmapsto(0,1),\qquad 1\longmapsto(1,1).
@@ -421,7 +421,7 @@ The four are the empty set, the two singletons and the whole set; the power set 
 An idempotent $\Pi$ acts by multiplication as a **projector**: $\Pi^{2}=\Pi$, so $L_\Pi$ is the identity on its image and annihilates its kernel. Its complement $1-\Pi$ is also an idempotent, and $\Pi(1-\Pi)=0$, so the pair gives the direct-sum decomposition
 
 $$
-\mathbb{D}=\mathbb{D}\Pi\oplus\mathbb{D}(1-\Pi),
+\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\Pi\oplus\mathbb{C}^{\mathrm{spl}}(1-\Pi),
 $$
 
 the same on the left and on the right because the algebra is commutative.
@@ -485,21 +485,21 @@ That statement, with its proof and the structure of the zero-divisor set, is *Ze
 The principal ideals
 
 $$
-\mathbb{D}\Pi_{+}=\mathbb{R}\Pi_{+},\qquad \mathbb{D}\Pi_{-}=\mathbb{R}\Pi_{-}
+\mathbb{C}^{\mathrm{spl}}\Pi_{+}=\mathbb{R}\Pi_{+},\qquad \mathbb{C}^{\mathrm{spl}}\Pi_{-}=\mathbb{R}\Pi_{-}
 $$
 
 are the two non-trivial minimal ideals, and
 
 $$
-\mathbb{D}=\mathbb{D}\Pi_{+}\oplus\mathbb{D}\Pi_{-}
+\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\Pi_{+}\oplus\mathbb{C}^{\mathrm{spl}}\Pi_{-}
 $$
 
 is the direct sum of the two copies of $\mathbb{R}$. The two ideals are collected in the table.
 
 | Ideal | Generator | Form | Minimality |
 |---|---|---|---|
-| Two-sided | $\Pi_{+}$ | $\mathbb{D}\Pi_{+}=\mathbb{R}\Pi_{+}$ | yes |
-| Two-sided | $\Pi_{-}$ | $\mathbb{D}\Pi_{-}=\mathbb{R}\Pi_{-}$ | yes |
+| Two-sided | $\Pi_{+}$ | $\mathbb{C}^{\mathrm{spl}}\Pi_{+}=\mathbb{R}\Pi_{+}$ | yes |
+| Two-sided | $\Pi_{-}$ | $\mathbb{C}^{\mathrm{spl}}\Pi_{-}=\mathbb{R}\Pi_{-}$ | yes |
 
 The minimality is proved in *Ideals and Peirce Decomposition of the Split-Complex Algebra*, where the idempotents, the Peirce decomposition and the failure of simplicity are developed together.
 
@@ -528,19 +528,19 @@ On the roots, the conjugation fixes $\pm1$ and exchanges $j$ with $-j$. Since $j
 | Hermitian idempotents | $0,1$, the conjugation fixing them |
 | Non-Hermitian idempotents | $\Pi_{+},\Pi_{-}$, the conjugation exchanging them |
 | Halving map | bijection $H(\Xi)=\tfrac12(1+\Xi)$, inverse $H^{-1}(\Pi)=2\Pi-1$ |
-| Standard pair | central, primitive, complete and orthogonal; $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$ |
+| Standard pair | central, primitive, complete and orthogonal; $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$ |
 | Zero divisors | the non-trivial idempotents and their nonzero real multiples |
 | Involutions | the conjugation exchanges $\Pi_{+}$ and $\Pi_{-}$ |
 
 The roots of $+1$ in the split-complex algebra are exactly the four elements $1,-1,j,-j$; there are no others and there are no roots of $-1$. The roots form the group $(\mathbb{Z}/2\mathbb{Z})^{2}$, and the two real roots are timelike units while the two imaginary roots are spacelike units.
 
-The idempotents are exactly $0,1,\Pi_{+}=\tfrac12(1+j),\Pi_{-}=\tfrac12(1-j)$. The **halving map** $H(\Xi)=\tfrac12(1+\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$; each root carries the complete orthogonal pair $\Pi_{\pm}(\Xi)=\tfrac12(1\pm\Xi)$, whose difference is the root, and the class $\{\Xi,-\Xi\}$ gives the same unordered pair. The standard pair is central, primitive and complete, and it carries the direct-sum decomposition $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}\cong\mathbb{R}\oplus\mathbb{R}$ and the two complementary projectors $P_{\pm}$. The trivial idempotents are Hermitian, fixed by the conjugation, and the non-trivial ones are non-Hermitian, exchanged by it. The non-trivial idempotents are the primitive zero divisors, and every zero divisor is a nonzero real multiple of one of them.
+The idempotents are exactly $0,1,\Pi_{+}=\tfrac12(1+j),\Pi_{-}=\tfrac12(1-j)$. The **halving map** $H(\Xi)=\tfrac12(1+\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\Pi)=2\Pi-1$; each root carries the complete orthogonal pair $\Pi_{\pm}(\Xi)=\tfrac12(1\pm\Xi)$, whose difference is the root, and the class $\{\Xi,-\Xi\}$ gives the same unordered pair. The standard pair is central, primitive and complete, and it carries the direct-sum decomposition $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}\cong\mathbb{R}\oplus\mathbb{R}$ and the two complementary projectors $P_{\pm}$. The trivial idempotents are Hermitian, fixed by the conjugation, and the non-trivial ones are non-Hermitian, exchanged by it. The non-trivial idempotents are the primitive zero divisors, and every zero divisor is a nonzero real multiple of one of them.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=+1$ | The split-complex algebra |
+| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$ | The split-complex algebra |
 | $\bar{\cdot}$ | The conjugation, the intrinsic involution |
 | $\Xi$ | A root of $+1$, $\Xi^{2}=1$ |
 | $\mathcal{R}_{+1}=\{1,-1,j,-j\}$ | The four roots of $+1$, a group $(\mathbb{Z}/2\mathbb{Z})^{2}$ |
@@ -553,7 +553,7 @@ The idempotents are exactly $0,1,\Pi_{+}=\tfrac12(1+j),\Pi_{-}=\tfrac12(1-j)$. T
 | $H(\Xi)=\tfrac12(1+\Xi)$ | The halving map from the roots of $+1$ to the idempotents |
 | $H^{-1}(\Pi)=2\Pi-1$ | The inverse halving map |
 | $P_{\pm}:Q\mapsto Q\Pi_{\pm}=Q_{\pm}\Pi_{\pm}$ | The two complementary projections |
-| $\mathbb{D}\Pi_{\pm}=\mathbb{R}\Pi_{\pm}$ | The two minimal ideals |
+| $\mathbb{C}^{\mathrm{spl}}\Pi_{\pm}=\mathbb{R}\Pi_{\pm}$ | The two minimal ideals |
 
 ## Further Reading
 

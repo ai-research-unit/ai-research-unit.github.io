@@ -2,10 +2,10 @@
 
 ## Introduction
 
-**The operator layer of a split algebra.** The carrier is $\mathbb{D}$, of real dimension two, and the ambient is
+**The operator layer of a split algebra.** The carrier is $\mathbb{C}^{\mathrm{spl}}$, of real dimension two, and the ambient is
 
 $$
-\operatorname{End}_{\mathbb{R}}(\mathbb{D})\cong M_2(\mathbb{R}),
+\operatorname{End}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}})\cong M_2(\mathbb{R}),
 $$
 
 of dimension four. The one-sided family is the image of the model; the two-sided family is the set of maps $X\mapsto QXP$; and the two are related by the failure of the algebra to be central simple.
@@ -34,25 +34,25 @@ Three of the four collapse as in the complex category, and the reason is the sam
 **The family.** The left multiplications are the hyperbolic Cayley matrices, and the right multiplications are the same set:
 
 $$
-L(\mathbb{D})=R(\mathbb{D})=\{\mathsf{M}_2(Q)\},\qquad \dim=2,\qquad L+R=L.
+L(\mathbb{C}^{\mathrm{spl}})=R(\mathbb{C}^{\mathrm{spl}})=\{\mathsf{M}_2(Q)\},\qquad \dim=2,\qquad L+R=L.
 $$
 
 **The representation.** $M:Q\mapsto M_Q$ is $\mathbb{R}$-linear, multiplicative and faithful, and its image is the algebra of matrices symmetric with equal diagonal. Faithfulness is evaluation at $1$: $M_Q(1)=Q$. So the one-sided layer is the algebra itself, read on its regular module, and there is nothing else in it.
 
-**Kernel, image and rank.** For $Q\in\mathbb{D}$,
+**Kernel, image and rank.** For $Q\in\mathbb{C}^{\mathrm{spl}}$,
 
 $$
-\ker M_Q=\operatorname{Ann}(Q),\qquad \operatorname{im}M_Q=Q\mathbb{D},
+\ker M_Q=\operatorname{Ann}(Q),\qquad \operatorname{im}M_Q=Q\mathbb{C}^{\mathrm{spl}},
 $$
 
 and the three cases are exhaustive:
 
 | $Q$ | $\langle Q\rangle_{*}$ | rank $M_Q$ | kernel | image |
 |---|---|---|---|---|
-| $0$ | $0$ | $0$ | $\mathbb{D}$ | $0$ |
+| $0$ | $0$ | $0$ | $\mathbb{C}^{\mathrm{spl}}$ | $0$ |
 | $\lambda_+\Pi_+$, $\lambda_+\neq0$ | $0$ | $1$ | $S_-$ | $S_+$ |
 | $\lambda_-\Pi_-$, $\lambda_-\neq0$ | $0$ | $1$ | $S_+$ | $S_-$ |
-| unit | $\neq0$ | $2$ | $0$ | $\mathbb{D}$ |
+| unit | $\neq0$ | $2$ | $0$ | $\mathbb{C}^{\mathrm{spl}}$ |
 
 **The reading.** The rank takes the three values $2,1,0$ and drops to one exactly on the two null lines. This is the first category of the block in which the one-sided operator has an intermediate rank, and it is the operator-level statement that the algebra has zero divisors.
 
@@ -121,7 +121,7 @@ $$
 **The reading.** The two slots are not independent: the operator depends on the pair only through the product, and since the algebra is commutative the map $(Q,P)\mapsto QP$ is the multiplication of the algebra. So the two-sided family is the one-sided family,
 
 $$
-\{L_{Q}R_{P}\}=\{M_{QP}\}=M(\mathbb{D}),
+\{L_{Q}R_{P}\}=\{M_{QP}\}=M(\mathbb{C}^{\mathrm{spl}}),
 $$
 
 of dimension two, and the pair is a redundant parametrisation of the algebra.
@@ -226,19 +226,19 @@ a sum of two orthogonal rank-one projectors on the two ambient directions $u_+\o
 
 ## The Pair as a Semigroup
 
-**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{D}\times\mathbb{D}$ onto the monoid $(\mathbb{D},\cdot)$, with kernel the rescaling.
+**Composition.** $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{C}^{\mathrm{spl}}\times\mathbb{C}^{\mathrm{spl}}$ onto the monoid $(\mathbb{C}^{\mathrm{spl}},\cdot)$, with kernel the rescaling.
 
 **The units.** The invertible members are those with $QP$ a unit, and the group is
 
 $$
-\mathbb{D}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
+{\mathbb{C}^{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
 $$
 
 of dimension two and four components. The group of two-sided operators is therefore the unit group of the algebra, and not the seven-dimensional product of the two one-sided groups of the quaternion category.
 
-**The automorphisms of the algebra.** The only automorphisms are the identity and the conjugation $j\mapsto-j$: as an $\mathbb{R}$-algebra, $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ and an automorphism is a permutation of the two idempotents. The group is $\mathbb{Z}/2\mathbb{Z}$, and its non-trivial element swaps the two Peirce lines and the two null lines.
+**The automorphisms of the algebra.** The only automorphisms are the identity and the conjugation $j\mapsto-j$: as an $\mathbb{R}$-algebra, $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ and an automorphism is a permutation of the two idempotents. The group is $\mathbb{Z}/2\mathbb{Z}$, and its non-trivial element swaps the two Peirce lines and the two null lines.
 
-**The conjugation is outer in the algebra and inner in the ambient.** The conjugation is not inner in $\mathbb{D}$, since the algebra is commutative and its unit group is abelian. But on the model it *is* implemented by an ambient inner automorphism,
+**The conjugation is outer in the algebra and inner in the ambient.** The conjugation is not inner in $\mathbb{C}^{\mathrm{spl}}$, since the algebra is commutative and its unit group is abelian. But on the model it *is* implemented by an ambient inner automorphism,
 
 $$
 \mathsf{M}_2(\bar Q)=g\,\mathsf{M}_2(Q)\,g^{-1},\qquad g=\operatorname{diag}(1,-1),\quad g^{2}=I_2,
@@ -248,17 +248,17 @@ with $g$ a reflection of the plane, of determinant $-1$ and not in the image. So
 
 **The reading.** The three groups — the automorphisms of the algebra, the inner automorphisms of the ambient, the conformal group of the form — are here three different objects of orders $2$, $4$ and infinite, and the model displays all three. In the quaternion category the first two coincided, which is why that category had a single operator layer.
 
-**The absence of a cover.** Two facts have to be separated, because it is easy to conflate them. The inner automorphisms of the *ambient* do act on the family, but by moving it: $U\mathsf{M}_2(\mathbb{D})U^{-1}=\mathbb{R}[UJU^{-1}]$ is a conjugate copy of the algebra, and the stabiliser of the model is the unit group of the algebra, of dimension two and four components. The inner automorphisms of the *algebra*, which is the group that the operator layer is about, are trivial, because the algebra is commutative. So there is no circle and no line acting on the algebra, no double cover inside the model, and no spin representation. The identity component of the conformal group is the boost line, which is simply connected; the abstract double cover $\mathrm{Spin}(1,1)\to SO^{+}(1,1)$ exists, but it is not realised by matrices of the image, because that would need a half-angle action and the spectrum has none.
+**The absence of a cover.** Two facts have to be separated, because it is easy to conflate them. The inner automorphisms of the *ambient* do act on the family, but by moving it: $U\mathsf{M}_2(\mathbb{C}^{\mathrm{spl}})U^{-1}=\mathbb{R}[UJU^{-1}]$ is a conjugate copy of the algebra, and the stabiliser of the model is the unit group of the algebra, of dimension two and four components. The inner automorphisms of the *algebra*, which is the group that the operator layer is about, are trivial, because the algebra is commutative. So there is no circle and no line acting on the algebra, no double cover inside the model, and no spin representation. The identity component of the conformal group is the boost line, which is simply connected; the abstract double cover $\mathrm{Spin}(1,1)\to SO^{+}(1,1)$ exists, but it is not realised by matrices of the image, because that would need a half-angle action and the spectrum has none.
 
 ## The Cone and the Coefficient Matrix
 
 **The parametrisation.**
 
 $$
-\beta:\mathbb{D}\times\mathbb{D}\to\operatorname{End}_{\mathbb{R}}(\mathbb{D}),\qquad \beta(Q,P)=L_{QP},
+\beta:\mathbb{C}^{\mathrm{spl}}\times\mathbb{C}^{\mathrm{spl}}\to\operatorname{End}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}}),\qquad \beta(Q,P)=L_{QP},
 $$
 
-whose image is the algebra $M_2(\mathbb{D})$, a linear subspace of dimension two and not a cone.
+whose image is the algebra $M_2(\mathbb{C}^{\mathrm{spl}})$, a linear subspace of dimension two and not a cone.
 
 **The fibres.** $\beta^{-1}(L_c)=\{(Q,P):QP=c\}$, of real dimension two for $c\neq0$; over $c=0$ it is the union of the two axis pairs, again of dimension two but singular at the origin. So the map is four dimensions to two with two-dimensional fibres, everywhere.
 
@@ -285,14 +285,14 @@ of rank one for every non-zero pair. The operator is described by the coefficien
 **The statement.**
 
 $$
-\ell(L_{Q}R_{P})\in\{0,1\},\qquad \operatorname{span}\{L_{Q}R_{P}\}=M(\mathbb{D})\cup\{0\},
+\ell(L_{Q}R_{P})\in\{0,1\},\qquad \operatorname{span}\{L_{Q}R_{P}\}=M(\mathbb{C}^{\mathrm{spl}})\cup\{0\},
 $$
 
 the value $0$ only for the zero operator, and the span equal to the algebra because the algebra is a subspace closed under products.
 
 **The degenerate case of the length theorem.** The general theorem allows at most $n=2$ products and identifies the length with the rank of the coefficient array. Here the coefficient array has rank one for a single product and the span is closed, so no sum is ever needed and the bound is not attained. The null elements do not form an exception: a zero divisor is still a single product $L_Q$, of rank one, and its length is one and not two. This is the precise sense in which the length theory of this category is vacuous, and it is worth stating because the tempting error is to read the rank drop as a failure of the length: it is not, since the length counts products and not ranks.
 
-**Why the span is closed.** The products are the compositions $L_Q\circ R_P=L_{QP}$, so the multiplication map sends $L(\mathbb{D})\times R(\mathbb{D})$ into $L(\mathbb{D})$; the image is the algebra and it is a subspace. In the quaternion category the same map is an isomorphism $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$ and fills a sixteen-dimensional ambient; the difference is central simplicity. $\mathbb{R}\times\mathbb{R}$ is commutative and therefore not central simple, and the map collapses to the multiplication of the algebra.
+**Why the span is closed.** The products are the compositions $L_Q\circ R_P=L_{QP}$, so the multiplication map sends $L(\mathbb{C}^{\mathrm{spl}})\times R(\mathbb{C}^{\mathrm{spl}})$ into $L(\mathbb{C}^{\mathrm{spl}})$; the image is the algebra and it is a subspace. In the quaternion category the same map is an isomorphism $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$ and fills a sixteen-dimensional ambient; the difference is central simplicity. $\mathbb{R}\times\mathbb{R}$ is commutative and therefore not central simple, and the map collapses to the multiplication of the algebra.
 
 **What lies outside the span.** Two dimensions: the traceless diagonal line $\mathbb{R}g$ and the skew line $\mathfrak{so}(2)$. The matrices of $\mathbb{R}g$ are the ones that change the sign of the determinant, and the skew line is the rotation. Neither is a product at any length, and neither is a sum of products: they are simply not in the span. So the operator layer of the split category covers half of the ambient and not more, exactly as in the complex category, and the missing half is again the part of $M_2(\mathbb{R})$ that does not commute with $J$.
 
@@ -339,7 +339,7 @@ The two ranks differ exactly on the units, where the first is two and the second
 
 ## Summary
 
-1. The carrier is $\mathbb{D}$ of dimension two, the ambient is $M_2(\mathbb{R})$ of dimension four, and the one-sided family is the two-dimensional algebra of hyperbolic matrices.
+1. The carrier is $\mathbb{C}^{\mathrm{spl}}$ of dimension two, the ambient is $M_2(\mathbb{R})$ of dimension four, and the one-sided family is the two-dimensional algebra of hyperbolic matrices.
 2. The one-sided operator is faithful, self-adjoint for both the trace and the Frobenius forms, and conformal for the split form with factor the norm; its rank is $2$ on the units, $1$ on the null lines and $0$ at the origin.
 3. The polar word $Q=r\epsilon\exp(\phi j)$ reads $M_Q=rM_\epsilon\exp(\phi J)$, with eigenvalues $r\epsilon_\pm e^{\pm\phi}$; the angle is full, the sign is a discrete label, and no cover appears.
 4. The two-sided operator depends on the pair only through the product, $L_{Q}R_{P}=M_{QP}$, so the two-sided family is the algebra and the parametrisation has two-dimensional fibres.

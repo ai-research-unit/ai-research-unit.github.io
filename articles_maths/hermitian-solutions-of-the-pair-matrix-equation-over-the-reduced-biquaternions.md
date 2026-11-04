@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The pair equation over the reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ is
+The pair equation over the reduced biquaternion algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ is
 
 $$
-(AXB,CXD)=(E,F),\qquad A,C\in\mathbb{B}_{\mathrm{r}}^{m\times n},\quad B,D\in\mathbb{B}_{\mathrm{r}}^{n\times s},\quad E,F\in\mathbb{B}_{\mathrm{r}}^{m\times s},
+(AXB,CXD)=(E,F),\qquad A,C\in{\mathbb{B}^{\mathrm{red}}}^{m\times n},\quad B,D\in{\mathbb{B}^{\mathrm{red}}}^{n\times s},\quad E,F\in{\mathbb{B}^{\mathrm{red}}}^{m\times s},
 $$
 
-with one unknown $X\in\mathbb{B}_{\mathrm{r}}^{n\times n}$ carrying two equations at once. The two residuals are measured together by
+with one unknown $X\in{\mathbb{B}^{\mathrm{red}}}^{n\times n}$ carrying two equations at once. The two residuals are measured together by
 
 $$
 \bigl\|(AXB-E,CXD-F)\bigr\|_{\mathrm F}^{2}=\|AXB-E\|_{\mathrm F}^{2}+\|CXD-F\|_{\mathrm F}^{2},
@@ -30,7 +30,7 @@ the square of the Frobenius norm of *Least Squares and Total Least Squares over 
 
 **The pair imposes two linear equations on one unknown, and the least squares problem measures the two residuals together.**
 
-**Definition (the pair equation).** Given $A,C\in\mathbb{B}_{\mathrm{r}}^{m\times n}$, $B,D\in\mathbb{B}_{\mathrm{r}}^{n\times s}$ and $E,F\in\mathbb{B}_{\mathrm{r}}^{m\times s}$, the **pair equation** is
+**Definition (the pair equation).** Given $A,C\in{\mathbb{B}^{\mathrm{red}}}^{m\times n}$, $B,D\in{\mathbb{B}^{\mathrm{red}}}^{n\times s}$ and $E,F\in{\mathbb{B}^{\mathrm{red}}}^{m\times s}$, the **pair equation** is
 
 $$
 AXB=E,\qquad CXD=F,
@@ -67,12 +67,12 @@ The failure is the reason the map is not one of the four involutions of *The Two
 **Definition.** The **Hermitian set** is
 
 $$
-H(n)=\bigl\{X\in\mathbb{B}_{\mathrm{r}}^{n\times n}:\ X_{0}^{\mathsf T}=X_{0},\ X_{1}^{\mathsf T}=-X_{1},\ X_{2}^{\mathsf T}=-X_{2},\ X_{3}^{\mathsf T}=-X_{3}\bigr\},
+H(n)=\bigl\{X\in{\mathbb{B}^{\mathrm{red}}}^{n\times n}:\ X_{0}^{\mathsf T}=X_{0},\ X_{1}^{\mathsf T}=-X_{1},\ X_{2}^{\mathsf T}=-X_{2},\ X_{3}^{\mathsf T}=-X_{3}\bigr\},
 $$
 
 where $X=X_{0}+X_{1}i+X_{2}j+X_{3}ij$ with real $X_{t}$.
 
-**Proposition (it is a real subspace).** $H(n)$ is a real subspace of $\mathbb{B}_{\mathrm{r}}^{n\times n}$ of real dimension $2n^{2}-n$.
+**Proposition (it is a real subspace).** $H(n)$ is a real subspace of ${\mathbb{B}^{\mathrm{red}}}^{n\times n}$ of real dimension $2n^{2}-n$.
 
 *Proof.* Each condition is a real-linear condition on the coefficient matrices, so the set is a real subspace. The symmetric block $X_{0}$ has $n(n+1)/2$ independent entries, and each of the three antisymmetric blocks has $n(n-1)/2$, so the dimension is $n(n+1)/2+3n(n-1)/2=2n^{2}-n$.
 
@@ -157,7 +157,7 @@ The map $z\mapsto X$ is a linear bijection from $\mathbb{R}^{2n^{2}-n}$ onto $H(
 
 **The real representation carries the product to the product, and the row form is the first block row.**
 
-**Proposition.** For matrices of matching shapes over $\mathbb{B}_{\mathrm{r}}$,
+**Proposition.** For matrices of matching shapes over $\mathbb{B}^{\mathrm{red}}$,
 
 $$
 (MN)^{R}=M^{R}N^{R},\qquad (MN)^{R}_{r}=M^{R}_{r}N^{R},\qquad \|M\|_{\mathrm F}=\tfrac12\|M^{R}\|_{\mathrm F}=\|M^{R}_{r}\|_{\mathrm F}.
@@ -294,9 +294,9 @@ $$
 
 *Proof.* Multiplying $X=X_{0}+X_{1}i+X_{2}j+X_{3}ij$ by $i$ gives $iX=-X_{1}+X_{0}i-X_{3}j+X_{2}ij$. Its blocks must satisfy the conditions of $H(n)$: $-X_{1}$ symmetric forces $X_{1}=0$, because $X_{1}$ is antisymmetric; $X_{0}$ antisymmetric forces $X_{0}=0$, because $X_{0}$ is symmetric; $-X_{3}$ symmetric forces $X_{3}=0$; and $X_{2}$ antisymmetric holds automatically. Multiplying by $j$ gives $jX=X_{2}+X_{3}i+X_{0}j+X_{1}ij$, and the conditions force $X_{2}=0$ and $X_{0}=0$, the conditions on $X_{1}$ and $X_{3}$ holding automatically.
 
-**Corollary.** $H(n)$ is not a $\mathbb{B}_{\mathrm{r}}$-submodule of $\mathbb{B}_{\mathrm{r}}^{n\times n}$; in particular it is not of entry type, and the reduction to two independent complex problems is unavailable.
+**Corollary.** $H(n)$ is not a $\mathbb{B}^{\mathrm{red}}$-submodule of ${\mathbb{B}^{\mathrm{red}}}^{n\times n}$; in particular it is not of entry type, and the reduction to two independent complex problems is unavailable.
 
-*Proof.* A structure of entry type is the $\mathbb{B}_{\mathrm{r}}$-span of real zero-one matrices, so it is a module, and a module is closed under multiplication by $i$ and by $j$. The set $H(n)$ is not, so it is not of entry type. Its real dimension is $2n^{2}-n$, which is a multiple of four exactly when $n\equiv0\pmod 4$; the dimension alone does not decide the question at $n=4$, where it is $28$, and the module argument decides it for every $n$.
+*Proof.* A structure of entry type is the $\mathbb{B}^{\mathrm{red}}$-span of real zero-one matrices, so it is a module, and a module is closed under multiplication by $i$ and by $j$. The set $H(n)$ is not, so it is not of entry type. Its real dimension is $2n^{2}-n$, which is a multiple of four exactly when $n\equiv0\pmod 4$; the dimension alone does not decide the question at $n=4$, where it is $28$, and the module argument decides it for every $n$.
 
 The corollary is the reason the source needs the real representation and the half-vectorisation: the reduction through the idempotents is unavailable, and the constraint must be encoded on the real coordinates.
 
@@ -306,7 +306,7 @@ The corollary is the reason the source needs the real representation and the hal
 
 **The complex matrices are the reduced biquaternion matrices with vanishing $j$- and $ij$-blocks, and the complex pair is the degenerate case of the construction.**
 
-**Proposition.** Let $A,C\in\mathbb{C}^{m\times n}$, $B,D\in\mathbb{C}^{n\times s}$ and $E,F\in\mathbb{C}^{m\times s}$, read in $\mathbb{B}_{\mathrm{r}}$ with the second and third blocks of all six matrices vanishing. Then the pair over $\mathbb{B}_{\mathrm{r}}$ has a Hermitian solution in the complex subspace if and only if the complex pair has a Hermitian solution, and the Hermitian unknown is $X=X_{0}+iX_{1}$ with $X_{0}$ symmetric and $X_{1}$ antisymmetric.
+**Proposition.** Let $A,C\in\mathbb{C}^{m\times n}$, $B,D\in\mathbb{C}^{n\times s}$ and $E,F\in\mathbb{C}^{m\times s}$, read in $\mathbb{B}^{\mathrm{red}}$ with the second and third blocks of all six matrices vanishing. Then the pair over $\mathbb{B}^{\mathrm{red}}$ has a Hermitian solution in the complex subspace if and only if the complex pair has a Hermitian solution, and the Hermitian unknown is $X=X_{0}+iX_{1}$ with $X_{0}$ symmetric and $X_{1}$ antisymmetric.
 
 *Proof.* The blocks $2$ and $3$ of every coefficient and of every right-hand side vanish, so the blocks $2$ and $3$ of both residuals vanish for every $X$ with $X_{2}=X_{3}=0$; the two remaining block equations are the real and the imaginary parts of the complex pair. The Hermitian condition on $X$ is the two conditions on $X_{0}$ and $X_{1}$ of §*The Two Complex Blocks*.
 

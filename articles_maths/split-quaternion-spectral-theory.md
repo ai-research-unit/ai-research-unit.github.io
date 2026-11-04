@@ -3,16 +3,16 @@
 
 ## Introduction
 
-The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is unital and associative but neither commutative nor a division algebra, and both failures shape its spectral theory. Because the algebra is a real form of $M_2(\mathbb{C})$ and has an **indefinite** norm, the spectrum of an element falls into two qualitatively different regimes: a real eigenvalue pair or a complex-conjugate pair, according to the sign of the split-quaternion norm of the vector part. This dichotomy is the feature that distinguishes the subject from the biquaternion spectral theory, where the corresponding vector norm is definite.
+The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ is unital and associative but neither commutative nor a division algebra, and both failures shape its spectral theory. Because the algebra is a real form of $M_2(\mathbb{C})$ and has an **indefinite** norm, the spectrum of an element falls into two qualitatively different regimes: a real eigenvalue pair or a complex-conjugate pair, according to the sign of the split-quaternion norm of the vector part. This dichotomy is the feature that distinguishes the subject from the biquaternion spectral theory, where the corresponding vector norm is definite.
 
 This article defines the spectrum, discusses left and right eigenvalues, states the eigenvalue dichotomy, the Cayley–Hamilton theorem and the trace and determinant functionals, the eigenspaces and their dimensions, the resolvent and the spectral radius, and the relation to the biquaternion spectral theory. It relies on *Split-Quaternion Norm and Invertibility* for the invertibility criterion and on *Split-Quaternion Zero Divisors* for the singular elements. "Spectrum" without qualification always means the set of roots of the characteristic polynomial of the element, analysed over $\mathbb{C}$. No physics is invoked.
 
 ## The Spectrum of a Split Quaternion
 
-**Definition.** The **spectrum** of $\tilde q\in\mathbb{H}_{\mathrm{s}}$ is
+**Definition.** The **spectrum** of $\tilde q\in\mathbb{H}^{\mathrm{spl}}$ is
 
 $$
-\sigma(\tilde q) = \{\, \lambda \in \mathbb{C} : \tilde q - \lambda \text{ is not invertible in } \mathbb{H}_{\mathrm{s}}\otimes_{\mathbb{R}}\mathbb{C} \,\},
+\sigma(\tilde q) = \{\, \lambda \in \mathbb{C} : \tilde q - \lambda \text{ is not invertible in } \mathbb{H}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{C} \,\},
 $$
 
 equivalently the zero set of the **characteristic polynomial** of $\tilde q$
@@ -39,7 +39,7 @@ where $\sqrt{\cdot}$ denotes either complex square root, the two choices giving 
 
 Eigenvalues may be sought in the algebra itself rather than in the centre, and then the non-commutativity matters.
 
-**Definition.** A scalar $\lambda \in \mathbb{H}_{\mathrm{s}}$ is a **left eigenvalue** of $\tilde q$ if $\tilde q \tilde q_2 = \lambda \tilde q_2$ for some nonzero $\tilde q_2 \in \mathbb{H}_{\mathrm{s}}$, and a **right eigenvalue** if $\tilde q \tilde q_2 = \tilde q_2\lambda$ for some nonzero $\tilde q_2$. The sets are the **left spectrum** $\sigma_L(\tilde q)$ and the **right spectrum** $\sigma_R(\tilde q)$.
+**Definition.** A scalar $\lambda \in \mathbb{H}^{\mathrm{spl}}$ is a **left eigenvalue** of $\tilde q$ if $\tilde q \tilde q_2 = \lambda \tilde q_2$ for some nonzero $\tilde q_2 \in \mathbb{H}^{\mathrm{spl}}$, and a **right eigenvalue** if $\tilde q \tilde q_2 = \tilde q_2\lambda$ for some nonzero $\tilde q_2$. The sets are the **left spectrum** $\sigma_L(\tilde q)$ and the **right spectrum** $\sigma_R(\tilde q)$.
 
 **Theorem.** If the eigenvalues are required to lie in the **centre** $\mathbb{R}$ of the algebra, the left and right problems coincide and equal the real spectrum:
 
@@ -51,7 +51,7 @@ For eigenvalues taken in the full algebra, $\sigma_R(\tilde q)$ is a union of co
 
 **Proof.** Central scalars commute with every element, so $(\tilde q-\lambda)\tilde q_2 = 0$ and $\tilde q_2(\tilde q-\lambda) = 0$ are equivalent, and either condition is the singularity of $\tilde q-\lambda$; the conjugacy statement is the displayed computation.
 
-**Remark.** Because $\mathbb{H}_{\mathrm{s}}$ is not a division algebra, the left spectrum in the algebra contains more than the central spectrum: any zero divisor produces an element $\tilde q_2$ with $\tilde q \tilde q_2 = 0$, giving the left eigenvalue $0$ even when $\tilde q$ itself is invertible, whenever $\tilde q$ fails to be injective on the relevant left ideal. The intrinsic spectrum of the previous section, taken over $\mathbb{C}$, is the one used throughout.
+**Remark.** Because $\mathbb{H}^{\mathrm{spl}}$ is not a division algebra, the left spectrum in the algebra contains more than the central spectrum: any zero divisor produces an element $\tilde q_2$ with $\tilde q \tilde q_2 = 0$, giving the left eigenvalue $0$ even when $\tilde q$ itself is invertible, whenever $\tilde q$ fails to be injective on the relevant left ideal. The intrinsic spectrum of the previous section, taken over $\mathbb{C}$, is the one used throughout.
 
 ## The Eigenvalue Dichotomy
 
@@ -71,7 +71,7 @@ The dichotomy is the signature in the spectrum of the indefiniteness of $\langle
 
 ## Cayley–Hamilton and the Trace and Determinant Functionals
 
-**Definition.** The **trace** and **determinant** functionals of $\mathbb{H}_{\mathrm{s}}$ are
+**Definition.** The **trace** and **determinant** functionals of $\mathbb{H}^{\mathrm{spl}}$ are
 
 $$
 T(\tilde q) = 2q_t = \tilde q + \tilde{q}^{\natural}, \qquad D(\tilde q) = \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} .
@@ -98,10 +98,10 @@ $$
 **Definition.** For $\lambda \in \sigma(\tilde q)$, the **eigenspace** is
 
 $$
-E_\lambda = \{\, \tilde q_2 \in \mathbb{H}_{\mathrm{s}} : (\tilde q-\lambda)\tilde q_2 = 0 \,\},
+E_\lambda = \{\, \tilde q_2 \in \mathbb{H}^{\mathrm{spl}} : (\tilde q-\lambda)\tilde q_2 = 0 \,\},
 $$
 
-a right ideal of $\mathbb{H}_{\mathrm{s}}$, stable under right multiplication because $(\tilde q-\lambda)\tilde q_2 = 0$ gives $(\tilde q-\lambda)(\tilde q_2\tilde q_3) = 0$.
+a right ideal of $\mathbb{H}^{\mathrm{spl}}$, stable under right multiplication because $(\tilde q-\lambda)\tilde q_2 = 0$ gives $(\tilde q-\lambda)(\tilde q_2\tilde q_3) = 0$.
 
 **Theorem.** The dimensions are as follows.
 
@@ -121,7 +121,7 @@ $$
 R(\lambda) = (\tilde q-\lambda)^{-1} = \frac{(\tilde q-\lambda)^{\natural}}{\langle\tilde q-\lambda\rangle_{\natural}} = \frac{\tilde{q}^{\natural} - \lambda}{\langle\tilde q\rangle_{\natural} - 2q_t\lambda + \lambda^2}.
 $$
 
-**Theorem.** The resolvent is a $\mathbb{H}_{\mathrm{s}}$-valued rational function of $\lambda$ whose poles are exactly the points of $\sigma(\tilde q)$, and it satisfies
+**Theorem.** The resolvent is a $\mathbb{H}^{\mathrm{spl}}$-valued rational function of $\lambda$ whose poles are exactly the points of $\sigma(\tilde q)$, and it satisfies
 
 $$
 R(\lambda) - R(\mu) = (\lambda - \mu)\,R(\lambda)R(\mu), \qquad \tilde q\,R(\lambda) = R(\lambda)\,\tilde q,
@@ -131,7 +131,7 @@ the resolvent identity and commutativity with $\tilde q$, on the common domain o
 
 **Proof.** The inverse formula is the standard $\tilde q_2^{-1} = \tilde q_2^{\natural}/\langle\tilde q_2\rangle_{\natural}$ of *Split-Quaternion Norm and Invertibility* applied to $\tilde q_2 = \tilde q-\lambda$, and $\langle\tilde q-\lambda\rangle_{\natural} = \lambda^2-2q_t\lambda+\langle\tilde q\rangle_{\natural} = p_{\tilde q}(\lambda)$ is the characteristic polynomial, so the denominator vanishes exactly on $\sigma(\tilde q)$. The resolvent identity is the algebraic identity for inverses of non-commuting factors that do commute here, since $\tilde q$ commutes with every polynomial in $\tilde q$.
 
-**Remark.** $R$ is analytic in $\lambda$ off $\sigma(\tilde q)$ in the sense of $\mathbb{H}_{\mathrm{s}}$-valued functions of a **real or complex central** variable $\lambda$; because $\lambda$ is central, the calculus of one real or complex variable applies to $R$ componentwise. There is no analogue of the Cauchy integral of a non-central variable here.
+**Remark.** $R$ is analytic in $\lambda$ off $\sigma(\tilde q)$ in the sense of $\mathbb{H}^{\mathrm{spl}}$-valued functions of a **real or complex central** variable $\lambda$; because $\lambda$ is central, the calculus of one real or complex variable applies to $R$ componentwise. There is no analogue of the Cauchy integral of a non-central variable here.
 
 ## The Spectral Radius
 
@@ -147,7 +147,7 @@ $$
 \;}.
 $$
 
-Equivalently, with the eigenvalues $\lambda_\pm = q_t\pm\sqrt{-\langle \vec v\rangle_{\natural}}$, $\rho(\tilde q) = \max(|\lambda_+|,|\lambda_-|)$. It satisfies $\rho(\tilde q) \le \|L_{\tilde q}\|$, where $L_{\tilde q}$ is the left-multiplication operator and $\|L_{\tilde q}\|$ its operator norm on $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ with the Euclidean norm.
+Equivalently, with the eigenvalues $\lambda_\pm = q_t\pm\sqrt{-\langle \vec v\rangle_{\natural}}$, $\rho(\tilde q) = \max(|\lambda_+|,|\lambda_-|)$. It satisfies $\rho(\tilde q) \le \|L_{\tilde q}\|$, where $L_{\tilde q}$ is the left-multiplication operator and $\|L_{\tilde q}\|$ its operator norm on $\mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^4$ with the Euclidean norm.
 
 **Proof.** The formulas are the three cases of the dichotomy evaluated at $\lambda_\pm$. The inequality $\rho(\tilde q)\le\|L_{\tilde q}\|$ is the general fact that every eigenvalue of an operator is bounded by its split-quaternion norm, applied to the complexification of $L_{\tilde q}$.
 
@@ -165,7 +165,7 @@ The definite spectral theorem has no direct analogue, and the reason is the inde
 
 **Proof.** The symmetric statement is immediate; normality follows from $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ being central.
 
-**Remark.** The involutions $\alpha$ and $\rho$ of *Split-Quaternion Subspaces and the Involutions* have larger fixed spaces, $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and $\operatorname{span}\{1,\vec e_x,\vec e_y\}$, and the indefinite form makes neither of them a positive-definite Hermitian structure; a genuine spectral theorem in the sense of Hilbert space theory requires a definite form, which $\mathbb{H}_{\mathrm{s}}$ does not carry. What replaces it is the direct-sum (Peirce) decomposition of *Split-Quaternion Ideals and Peirce Decomposition*, which is a decomposition tailored to an idempotent rather than to a Hermitian element.
+**Remark.** The involutions $\alpha$ and $\rho$ of *Split-Quaternion Subspaces and the Involutions* have larger fixed spaces, $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and $\operatorname{span}\{1,\vec e_x,\vec e_y\}$, and the indefinite form makes neither of them a positive-definite Hermitian structure; a genuine spectral theorem in the sense of Hilbert space theory requires a definite form, which $\mathbb{H}^{\mathrm{spl}}$ does not carry. What replaces it is the direct-sum (Peirce) decomposition of *Split-Quaternion Ideals and Peirce Decomposition*, which is a decomposition tailored to an idempotent rather than to a Hermitian element.
 
 ## Relation to the Biquaternion Case
 
@@ -177,7 +177,7 @@ $$
 
 the **definite** complex norm of the vector part. There, the eigenvalues are always of the same type — a complex-conjugate pair the moment $B \neq 0$ — because the vector norm is complex and definite on the quaternion directions.
 
-The split-quaternion case, by contrast, has real eigenvalues $q_t\pm\sqrt{-\langle \vec v\rangle_{\natural}}$ whose type is decided by the **sign** of the indefinite norm $\langle \vec v\rangle_{\natural}$: a real pair for spacelike $\vec v$, a conjugate pair for timelike $\vec v$, and a double root for null $\vec v$. The Cayley–Hamilton relation and the trace and determinant functionals have the same shape in both cases, $\tilde q^2 - T \tilde q + D = 0$, with $D = N$ the determinant and $T$ twice the scalar part; the zero-divisor set is $\{N = 0\}$ in both, and for the split algebra it is exactly the set of elements with $0$ in the spectrum. Since $\mathbb{H}_{\mathrm{s}}\otimes_{\mathbb{R}}\mathbb{C} = M_2(\mathbb{C}) \cong \mathbb{B}$, the complexified theories are the same; the split-quaternion theory is the real form in which the spectrum displays the indefiniteness of the form. Nothing biquaternion-specific — the central imaginary unit $i$, the definite vector norm, the Hermitian spectral theorem — is imported.
+The split-quaternion case, by contrast, has real eigenvalues $q_t\pm\sqrt{-\langle \vec v\rangle_{\natural}}$ whose type is decided by the **sign** of the indefinite norm $\langle \vec v\rangle_{\natural}$: a real pair for spacelike $\vec v$, a conjugate pair for timelike $\vec v$, and a double root for null $\vec v$. The Cayley–Hamilton relation and the trace and determinant functionals have the same shape in both cases, $\tilde q^2 - T \tilde q + D = 0$, with $D = N$ the determinant and $T$ twice the scalar part; the zero-divisor set is $\{N = 0\}$ in both, and for the split algebra it is exactly the set of elements with $0$ in the spectrum. Since $\mathbb{H}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{C} = M_2(\mathbb{C}) \cong \mathbb{B}$, the complexified theories are the same; the split-quaternion theory is the real form in which the spectrum displays the indefiniteness of the form. Nothing biquaternion-specific — the central imaginary unit $i$, the definite vector norm, the Hermitian spectral theorem — is imported.
 
 ## Summary
 
@@ -187,7 +187,7 @@ The spectrum of $\tilde q = q_t+\vec v$ is the zero set of the characteristic po
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}_{\mathrm{s}}$, $\tilde q=q_t+\vec v$ | the split-quaternion algebra and a general element | *Split-Quaternion Algebra* |
+| $\mathbb{H}^{\mathrm{spl}}$, $\tilde q=q_t+\vec v$ | the split-quaternion algebra and a general element | *Split-Quaternion Algebra* |
 | $T(\tilde q) = 2q_t = \tilde q+\tilde{q}^{\natural}$ | the trace functional | this article |
 | $D(\tilde q) = \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the determinant / norm functional | *Split-Quaternion Norm and Invertibility* |
 | $\sigma(\tilde q) = \{q_t\pm\sqrt{-\langle \vec v\rangle_{\natural}}\}$ | the spectrum over $\mathbb{C}$ | this article |

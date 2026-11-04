@@ -2,9 +2,7 @@
 
 ## Introduction
 
-The biquaternion Klein–Gordon operator has a first-order root, but it has no single one. Squaring a first-order operator to the central scalar $\Box-\mu^2$ needs four mutually anticommuting generators with $(iR_{\vec e_x}^{\mathrm{axf}})^2=+1$ and $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-1$, the Lorentz signature; the biquaternion algebra supplies the three spatial ones, and the fourth needs a second factor. That factor doubles the minimal module to four complex dimensions. Write $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ for the four generators and $-iR_{\vec e_z}^{\mathrm{axf}}$ for their chirality, the cell that anticommutes with all four. With a pseudoscalar mass the single square exists; with the physical scalar mass only a factorisation exists, and the physical equation is one factor of it. The root therefore lives in the two-sided algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while $\Box$ itself remains central.
-
-Here $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+The biquaternion Klein–Gordon operator has a first-order root, but it has no single one. Squaring a first-order operator to the central scalar $\Box-\mu^2$ needs four mutually anticommuting generators, one of square $+1$ and three of square $-1$, the Lorentz signature. The algebra supplies the three, and the fourth multiplies on the right. The root is therefore not a table of numbers acting on a list of numbers: it is a sum of multiplications acting on both sides of the algebra, and the field stays an element of the algebra. With a pseudoscalar mass the single square exists. With the physical scalar mass only a factorisation exists, and the physical equation is one factor of it.
 
 The equation is
 
@@ -14,297 +12,172 @@ $$
 \mu=\frac{mc}{\hbar}.
 $$
 
-The companion *The Klein–Gordon Equation in Biquaternionic Form* records that the operator is central and scalar, that the equation decouples into four scalar equations, and that no scalar first-order operator in $\mathbb{B}$ has it as its square. The companion *Klein–Gordon from the Dirac Square in Biquaternionic Form* records the other side: a first-order equation exists, but it is spinor-valued and its mass couples two chiral halves. Together they leave Open Question 3 of the Klein–Gordon article: is the spinor root the only first-orderisation, and why four components?
+The companion *The Klein–Gordon Equation in Biquaternionic Form* records that the operator is central and scalar, that the equation decouples into four scalar equations, and that no scalar first-order operator in $\mathbb{B}$ has it as its square. The companion *Klein–Gordon from the Dirac Square in Biquaternionic Form* records the other side: a first-order equation exists, but its field carries an $L$ part and an $R$ part, and its mass couples the two. Together they leave Open Question 3 of the Klein–Gordon article: is that the only first-orderisation, and why four components?
 
-There are two inequivalent senses of "first-order root", and the article treats both. A **single square** is one operator $D$ with $D^2=(\Box-\mu^2)I$. A **factorisation** is a product $D_-D_+=(\Box-\mu^2)I$ of two first-order factors; the physical equation is one factor, and the product is the Klein–Gordon operator. The single square is the stronger notion, and the physical mass does not admit it. The factorisation is the weaker notion, and the physical mass requires it.
+There are two inequivalent senses of "first-order root", and the article treats both. A **single square** is one first-order operator whose square is $\Box-\mu^2$. A **factorisation** is a product of two first-order factors whose product is $\Box-\mu^2$; the physical equation is one factor, and the product is the Klein–Gordon operator. The single square is the stronger notion, and the physical mass does not admit it. The factorisation is the weaker notion, and the physical mass requires it.
 
-The two notions give two first-order equations, and the article keeps them apart. Write $\mathsf D$ for the derivative part in the Lorentz frame, defined in §*The ansatz*; the single square is
+The two notions give two first-order equations, and the article keeps them apart. Write $\mathsf D$ for the derivative part, defined in §*The Root Condition*; the single square is
 
 $$
-\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{axf}},
+\mathsf D_{\mathrm{ps},\pm}\psi=\mathsf D\psi\pm\mu\,\psi\vec e_z,
 \qquad
-\mathsf D_{\mathrm{ps},\pm}^2=\left(\Box-\mu^2\right)I ,
+\mathsf D_{\mathrm{ps},\pm}^2=\Box-\mu^2,
 $$
 
 with a pseudoscalar mass, and the factorisation is
 
 $$
-\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I,
+\mathsf D_{\mathrm{sc},\pm}\psi=\mathsf D\psi\pm\mu\psi,
 \qquad
-\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}
-=\left(\Box-\mu^2\right)I ,
+\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}=\Box-\mu^2,
 $$
 
-with a scalar mass. The first is the Dirac equation read in the two-sided operator algebra; the second is the corpus's chiral pair, written in the cell frame and with both factors kept. They are different equations, not two spellings of one, and the physical mass selects the second.
+with a scalar mass. They are different equations, not two spellings of one, and the physical mass selects the second.
 
 Three results:
 
-- **The root acts on four complex components.** The derivative part $\mathsf D$ of a first-order operator $\mathsf D+B$ squares to the scalar $\Box I$ exactly when the four cells $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ mutually anticommute, with $(iR_{\vec e_x}^{\mathrm{axf}})^2=+1$ and $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-1$. They generate $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose smallest module is $\mathbb{C}^4$, of real dimension eight.
-- **The algebra supplies three of the four.** The three $\vec e_k$ supply the spatial Clifford system inside $\mathbb{B}$. No fourth element of $\mathbb{B}$ anticommutes with all three, so the fourth acts on a second factor. In the regular picture that factor is the right copy $\mathbb{B}_R$, and the root lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.
-- **The mass term is constrained.** The condition $\{B,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\}=0$ leaves $B$ one-dimensional, along the chirality cell: $B=c\,(-iR_{\vec e_z}^{\mathrm{axf}})$ with $c=\pm i\mu$, that is, $B=\pm\mu R_{\vec e_z}^{\mathrm{axf}}$. A single operator exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
+- **The root acts on four complex dimensions.** The derivative part $\mathsf D$ of a first-order operator $\mathsf D+\mathsf B$ squares to the scalar $\Box$ exactly when its four generators mutually anticommute, with one square $+1$ and three of square $-1$. Together with their products they give sixteen independent maps of the algebra, and sixteen independent maps need a carrier of at least four complex dimensions. The algebra itself is four-dimensional over $\mathbb{C}$, so the carrier is $\mathbb{B}$.
+- **The algebra supplies three of the four.** The three spatial units supply the three spatial generators. No element of $\mathbb{B}$ anticommutes with all three, so the fourth generator cannot multiply only on the left; it multiplies on the right, and it is $\psi\mapsto i\psi\vec e_x$.
+- **The mass term is constrained.** The condition that the mass anticommutes with all four generators leaves one direction: the mass is the multiplication $\psi\mapsto\mu\psi\vec e_z$. A single operator therefore exists only with a **pseudoscalar** mass. A **scalar** mass commutes with the generators, so it admits only the factorisation, and the physical first-order equation is one factor.
 
-The Clifford classification is standard. The identification of its generators with cells of the two-sided algebra is the corpus's dictionary, and the mass dichotomy read as the reason for the chiral pair is the synthesis offered here. Nothing in the article predicts a mass or a coupling.
+The count of sixteen maps is elementary linear algebra. The identification of the four generators with the two sides of the algebra is the corpus's dictionary, and the mass dichotomy read as the reason for the chiral pair is the synthesis offered here. Nothing in the article predicts a mass or a coupling.
 
-### The d'Alembertian
+## The Equation
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central imaginary $i$. The coordinates are $Q_\mu$, with $Q_t=ict'$ on the material sector. The gradient is $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$, and the d'Alembertian is the single one of the series,
+$\Box$ is the biquaternion d'Alembertian of the series, one operator in both coordinate frames, and the article uses it without restating it (*Operator and Calculus Conventions*). It is read here in the Lorentz coordinates $x_0=ct'$ and $x_k$, related to the algebra coordinates by $Q_t=ix_0$ and $Q_k=x_k$. Derived from that relation, its Lorentz form is
 
 $$
-\Box=\langle\tilde\nabla\rangle_{\natural}
-=\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde\nabla\right)
-=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q
-=\Delta_Q-c^{-2}\frac{\partial^2}{\partial t'^2}
-\quad\text{on }\mathbb{M}_- .
+\Box=-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
 $$
 
-In the $x$ coordinates $x_0=ct'$, $x_k$, where $Q_t=ix_0$ and $Q_k=x_k$, the same operator is
-$$
-\Box=-\sum_{\mu,\nu}g_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}
-=-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
-\qquad
-\varepsilon=(1,-1,-1,-1).
-$$
-The $Q$ form is the Euclidean transcription, obtained by $\partial/\partial Q_t=-ic^{-1}\partial/\partial t'$.
+because the substitution turns $\partial^2/\partial Q_t^2$ into $-\partial^2/\partial x_0^2$ and leaves the three spatial derivatives alone. This is the form the rest of the article uses.
 
-Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, and $\hbar$ is the reduced Planck constant. The $\mu$ of that formula is the permeability of the medium; the mass parameter $\mu=mc/\hbar$ is a different quantity, and the letter is overloaded in the corpus.
+Throughout, $c$ is the speed of light in the medium and $\hbar$ the reduced Planck constant. The mass parameter $\mu=mc/\hbar$ must not be confused with the permeability of electromagnetism, which carries the same letter: the letter is overloaded in the corpus.
 
 ## The Operator and Its Symbol
 
-### The norm of the gradient
+### The gradient is not the root
 
-The d'Alembertian is central: it is a multiple of the identity as an operator, and it acts coefficient by coefficient,
-
-$$
-\Box\tilde Q_{\mathrm f}=\sum_\mu\left(\Box Q_{\mathrm f,\mu}\right)e_\mu .
-$$
-
-The gradient itself does not have this property. Its square is
-
-$$
-\tilde\nabla^2=\left(\frac{\partial^2}{\partial Q_t^2}-\Delta_Q\right)e_t+2\frac{\partial}{\partial Q_t}\vec\nabla,
-$$
-
-with a vector remainder. The scalar part of this square is $\partial^2/\partial Q_t^2-\Delta_Q$, not $\Box$; the norm is the scalar part of the conjugate product, $\tilde\nabla\tilde\nabla^\natural=\Box e_t$, where the conjugation flips the sign of the spatial part. The first-order root is therefore not $\tilde\nabla$ itself: the gradient is a first-order operator whose square is not central, while the root is a first-order operator whose square is central, a multiple of the identity. The root is a different object, and it is matrix-valued.
+The gradient is a first-order operator, and its square is not central: the conventions record the vector remainder (*Operator and Calculus Conventions*). A root must square to a multiple of the identity, so the gradient is not one. The root is a different object, and it acts on both sides of the algebra.
 
 ### The symbol and the mass shell
 
-On a plane wave the gradient acts as left multiplication by the symbol $\tilde K_{\mathrm s}$. The sign of the exponential is immaterial below, because every condition is quadratic in the symbol. The corpus four-wavevector is $\tilde K=i\omega/c\,e_t+\vec k$, and the symbol is its $i$ multiple,
+On a plane wave $e^{-ik_0x_0+i\vec k\cdot\vec x}$ every derivative is a multiple of the wave, and the derivative part acts as one fixed map of the algebra. At the wave covector $k_\mu=(\omega/c,\vec k)$ that map is
 
 $$
-\tilde K=\frac{\tilde P}{\hbar}=\frac{i\omega}{c}e_t+\vec k,
-\qquad
-\tilde K_{\mathrm s}=i\tilde K=\frac{i\tilde P}{\hbar}=-\frac{\omega}{c}e_t+i\vec k ,
-\qquad
-\tilde K_{\mathrm s}=K_te_t+K_x\vec e_x+K_y\vec e_y+K_z\vec e_z .
+\mathsf D(k)\psi=k_0\,i\psi\vec e_x-\sum_k k_k\,i\vec e_k\psi\vec e_y,
 $$
 
-The norm of the symbol is the symbol of the d'Alembertian,
+and its square is a multiple of the identity,
 
 $$
-\Box\;\longmapsto\;\langle\tilde K_{\mathrm s}\rangle_{\natural}
-=\tilde K_{\mathrm s}\tilde K_{\mathrm s}^{\natural}
-=\frac{\omega^2}{c^2}-|\vec k|^2 ,
+\mathsf D(k)^2\psi=\left(k_0^2-\lvert\vec k\rvert^2\right)\psi,
 $$
 
-and the mass shell is the level set
+which is the symbol of $\Box$. The mass shell is the level set
 
 $$
-\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2
+k_0^2-\lvert\vec k\rvert^2=\mu^2
 \quad\Longleftrightarrow\quad
-\frac{\omega^2}{c^2}-|\vec k|^2=\frac{m^2c^2}{\hbar^2}
+\frac{\omega^2}{c^2}-\lvert\vec k\rvert^2=\frac{m^2c^2}{\hbar^2}
 \quad\Longleftrightarrow\quad
 E^2=\vec p^{\,2}c^2+m^2c^4 .
 $$
 
-Equivalently, on the shell $\langle\tilde K\rangle_{\natural}=-\mu^2$ and $\langle\tilde P\rangle_{\natural}=-m^2c^2$, with $\tilde P=iE/c\,e_t+\vec p$. The operator and its on-shell condition are the same norm, evaluated on the gradient and on the four-momentum. This is the structural fact that the rest of the article uses.
+The symbol of $\Box$ is the interval of the wave covector, and the mass shell is that symbol set to $\mu^2$. This is the structural fact the rest of the article uses.
 
-In the $x$ coordinates the four-wavevector has components $k_\mu=(\omega/c,\vec k)$. The spatial sign is carried by the frame, since $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-I_4$, and not by a raised label. On the plane wave $e^{-ik_0x_0+i\vec k\cdot\vec x}$ the derivative part $\mathsf D$ has symbol $iR_{\vec e_x}^{\mathrm{axf}}k_{0}-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}k_{k}$, whose square is $\sum_{\mu,\nu}g_{\mu\nu}k_\mu k_\nu I=(\omega^2/c^2-|\vec k|^2)I$, the symbol of $\Box$.
-
-A first-order operator with symbol $iR_{\vec e_x}^{\mathrm{axf}}k_{0}-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}k_{k}+B$ is singular exactly when its determinant vanishes. If its square is $(\langle\tilde K_{\mathrm s}\rangle_{\natural}-\mu^2)I$, the determinant vanishes exactly on the mass shell, so the first-order equation has nonzero plane-wave solutions exactly where the Klein–Gordon equation does.
+The symbol of an operator whose square is $\Box-\mu^2$ is singular exactly on the shell, because its square is $(k_0^2-\lvert\vec k\rvert^2-\mu^2)$ times the identity. A first-order equation therefore has a nonzero plane-wave solution exactly where the Klein–Gordon equation does.
 
 ## The Root Condition
 
 ### The ansatz
 
-Let
+The four generators are the maps
 
 $$
-D=\mathsf D+B,
+G_0:\psi\mapsto i\psi\vec e_x,
 \qquad
-\mathsf D=i\sum_\mu\Bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\Bigr)\frac{\partial}{\partial x_\mu},
+G_k:\psi\mapsto i\vec e_k\psi\vec e_y,
 $$
 
-with the cells $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ and the zero-order matrix $B$ constant in $M_n(\mathbb{C})$. Written out in the Lorentz frame,
+and the derivative part is
 
 $$
-\mathsf D=i\Bigl(iR_{\vec e_x}^{\mathrm{axf}}\Bigr)\frac{1}{c}\frac{\partial}{\partial t'}
-+i\sum_k\Bigl(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Bigr)\frac{\partial}{\partial x_k}.
+\mathsf D\psi=i\sum_\mu G_\mu\Bigl(\frac{\partial\psi}{\partial x_\mu}\Bigr),
 $$
 
-Two imaginary units stand side by side in each term: the inner $i$ belongs to the generator cell, the outer one to the operator. Their product is $i^2=-1$, so the same operator reads
+and a first-order operator of constant coefficients is $\mathsf D+\mathsf B$, where $\mathsf B$ is a fixed map of $\mathbb{B}$ that carries no derivative. Written out, the derivative part is
 
 $$
-\mathsf D=-R_{\vec e_x}^{\mathrm{axf}}\frac{1}{c}\frac{\partial}{\partial t'}
--\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k},
+\mathsf D\psi=-\frac{\partial\psi}{\partial x_0}\vec e_x-\sum_k\vec e_k\frac{\partial\psi}{\partial x_k}\vec e_y .
 $$
 
-whose coefficients square to $(-1,+1,+1,+1)$. The cell form is kept because it is the one whose anticommutation relations are $2g_{\mu\nu}$; the minus sign is carried by the metric there, and is not a separate convention.
+Two imaginary units stand side by side in the first form: the inner $i$ belongs to the generator and the outer one to the operator. Their product is $i^2=-1$, which is why the second form carries no imaginary unit at all. The generator form is kept because it is the one whose anticommutation relations state the signature; the minus sign there is carried by the product of the units and is not a separate convention.
 
-This is the form in which the root condition is solved, not the most general first-order operator: a general constant-coefficient operator $\sum_\mu A_\mu\partial/\partial x_\mu+B$ whose square is $(\Box-\mu^2)I$ has $\{A_\mu,A_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I$ with $\varepsilon=(1,-1,-1,-1)$, so its $A_\mu$ form a Clifford system conjugate to the frame cells, and $\mathsf D$ is the representative of that class. The coefficients are constant because the classification below is a classification of the algebraic form; position-dependent coefficients are a separate problem, taken up in §*What the Root Does Not Carry*.
+This is the form in which the root condition is solved, not the most general first-order operator: a general constant-coefficient first-order operator whose square is $\Box-\mu^2$ has coefficients that anticommute with the same signature, so it differs from this one by a change of basis of the algebra. The coefficients are constant because the classification below is a classification of the algebraic form; position-dependent coefficients are a separate problem, taken up in §*What the Root Does Not Carry*.
 
 ### The expansion
 
-Because the partial derivatives commute, only the symmetric part of the quadratic term survives: the antisymmetric part of $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}$ multiplies the symmetric $\partial^2/\partial x_\mu\partial x_\nu$ and drops out, leaving the anticommutator. Hence
+Because the partial derivatives commute, only the symmetric part of the second-order term survives: the antisymmetric part of a product of two generators multiplies the symmetric $\partial^2/\partial x_\mu\partial x_\nu$ and drops out. Hence
 
 $$
-D^2
-=-\tfrac12\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}\frac{\partial^2}{\partial x_\mu\partial x_\nu}
-+i\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},B\}\frac{\partial}{\partial x_\mu}
-+B^2 .
+(\mathsf D+\mathsf B)^2\psi
+=-\tfrac12\sum_{\mu,\nu}\bigl(G_\mu G_\nu+G_\nu G_\mu\bigr)\Bigl(\frac{\partial^2\psi}{\partial x_\mu\partial x_\nu}\Bigr)
++i\sum_\mu\bigl(G_\mu\mathsf B+\mathsf B G_\mu\bigr)\Bigl(\frac{\partial\psi}{\partial x_\mu}\Bigr)
++\mathsf B^2\psi .
 $$
 
-This is an identity for every choice of the cells and of $B$; it assumes nothing about them. Requiring
+This is an identity for every choice of the generators and of $\mathsf B$; it assumes nothing about them. Requiring $(\mathsf D+\mathsf B)^2\psi=\Box\psi-\mu^2\psi$ and matching the three monomials gives three conditions, written for maps of the algebra and with $1$ the identity map:
 
 $$
-D^2=\left(\Box-\mu^2\right)I_n
-=-\sum_{\mu,\nu}g_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}-\mu^2I_n
-$$
-
-and matching the three monomials gives three conditions:
-
-$$
-\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_n,
+G_0^2=1,
 \qquad
-\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},B\}=0,
+G_k^2=-1,
 \qquad
-B^2=-\mu^2I_n .
+G_\mu G_\nu+G_\nu G_\mu=0\quad(\mu\neq\nu),
+\qquad
+G_\mu\mathsf B+\mathsf B G_\mu=0,
+\qquad
+\mathsf B^2=-\mu^2 .
 $$
 
-The first is the Clifford relation on the derivative part: the four cells $iR_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ carry the cell relation of $\varepsilon=(1,-1,-1,-1)$, with $2g_{00}=+2$ and $2g_{kk}=-2$. The second says the mass must anticommute with every generator. The third fixes the magnitude of the mass. The three are independent: the first is about the derivative part, the second about the mixing of the derivative and the mass, the third about the mass alone.
+The first is the relation on the derivative part: the four generators square to $+1,-1,-1,-1$ and anticommute in pairs, which is the Lorentz signature. The second says the mass must anticommute with every generator. The third fixes the magnitude of the mass. The three are independent: the first is about the derivative part, the second about the mixing of the derivative and the mass, the third about the mass alone.
 
-The signs are those of $\Box$ in the $x$ coordinates, where the squares are $\varepsilon=(1,-1,-1,-1)$. The $Q$ coordinates carry the Euclidean transcription, in which all four generators square to $+1$ and the spatial ones acquire a factor $i$; that frame is not used here.
+The signs are those of $\Box$ in the $x$ coordinates, where the time term is negative and the three spatial terms positive. The algebra coordinates carry the Euclidean transcription, in which all four generators square to $+1$ and the spatial ones acquire a factor $i$; that frame is not used here.
 
 ## Four Generators
 
-### The Clifford algebra
+### The carrier is four-dimensional
 
-Four generators with $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. The algebra is simple, so every nonzero representation is faithful, and its smallest module is $\mathbb{C}^4$. A representation on $\mathbb{C}^2$ would be a two-dimensional module for $M_4(\mathbb{C})$, which does not exist. Hence
+The four generators are maps of $\mathbb{B}$, and so is every product of them. Together with the identity they give sixteen maps: the identity, the four, the six products of two, the four products of three, and the product of all four. They are linearly independent (§*Verification*), so sixteen independent maps act on the algebra. A complex space of dimension $n$ carries $n^2$ independent complex-linear maps, so $n\ge4$. The algebra has $n=4$, and the bound is attained: the root acts on $\mathbb{B}$ itself.
 
-$$
-n\ge 4,
-$$
+This is the answer to the "why four components" of Open Question 3. The four components are not an added multiplicity; they are the four coefficients of a biquaternion.
 
-and $n=4$ is both minimal and realised. The real dimension of the minimal module is eight, the same as the real dimension of $\mathbb{B}$.
+### Three inside the algebra
 
-The counting can be seen without naming the algebra. Four anticommuting matrices in $M_n(\mathbb{C})$ generate, together with their products, $16$ linearly independent matrices: the identity, the four generators, the six products $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}$ with $\mu<\nu$, the four products $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,(-iR_{\vec e_z}^{\mathrm{axf}})$, and $-iR_{\vec e_z}^{\mathrm{axf}}$. Sixteen independent matrices require $n^2\ge16$, hence $n\ge4$. The bound is attained by the frame of five cells below.
+Three of the four generators carry a left factor from the algebra: $G_k$ multiplies by $\vec e_k$ on the left and by $\vec e_y$ on the right. The algebra's own units supply them, because the three spatial units anticommute in pairs and each squares to $-\vec e_t$.
 
-The minimal realisation is explicit, and it uses both sides of the algebra. With $L_{a}R_{b}$,
-
-$$
-iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},
-\qquad
-iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
-\qquad
-iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
-\qquad
-iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
-\qquad
--iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
-$$
-
-and the split of each cell between the two sides is
-
-| $T$ | $L$ | $R$ |
-|---|---|---|
-| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ | $L_{e_t}^{\mathrm{axf}}=I$ | $R_{\vec e_x}^{\mathrm{axf}}$ |
-| $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | $iL_{\vec e_k}^{\mathrm{axf}}$ | $R_{\vec e_y}^{\mathrm{axf}}$ |
-| $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | $L_{e_t}^{\mathrm{axf}}=I$ | $-iR_{\vec e_z}^{\mathrm{axf}}$ |
-
-The fourth generator has $L=I$: it is a pure right multiplication, which is why the biquaternion algebra alone does not contain it. The three space generators have both factors. The split is what the next two subsections use: the three space generators carry a left factor from $\mathbb{B}$, the fourth carries only a right factor.
-
-The five cells are the four generators and the chirality. The product of the four generators is
-
-$$
-\Bigl(iR_{\vec e_x}^{\mathrm{axf}}\Bigr)\Bigl(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Bigr)
-\Bigl(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Bigr)\Bigl(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Bigr)
-=-R_{\vec e_z}^{\mathrm{axf}},
-$$
-
-which squares to $-I_4$ and is $-i$ times the chirality. The chirality cell is the $i$ multiple, $-iR_{\vec e_z}^{\mathrm{axf}}$, which squares to $+I_4$ and anticommutes with all four generators. Since $-iR_{\vec e_z}^{\mathrm{axf}}$ is $-i$ times the right multiplication, the product is $(-i)(-iR_{\vec e_z}^{\mathrm{axf}})=-R_{\vec e_z}^{\mathrm{axf}}$: the two differ by the factor $-i$, and $(-i)(-i)=-1$ is the whole difference. The corpus calls $-iR_{\vec e_z}^{\mathrm{axf}}$ the volume element. The mass of the single square is built on the chirality, which squares to $+I_4$, and not on the product, which squares to $-I_4$; that sign is the reason the mass uses the first.
-
-### Three inside the biquaternions
-
-The biquaternion algebra contains three mutually anticommuting generators of square $-1$:
-
-$$
-\vec e_k^2=-e_t,
-\qquad
-\{\vec e_j,\vec e_k\}=0,\quad j\neq k .
-$$
-
-They act by left multiplication on a minimal left ideal $S\cong\mathbb{C}^2$, and their images are $-i$ times the Pauli matrices,
-
-$$
-\mathsf M_2(\vec e_x)=-i\sigma_1,
-\qquad
-\mathsf M_2(\vec e_y)=-i\sigma_2,
-\qquad
-\mathsf M_2(\vec e_z)=-i\sigma_3 .
-$$
-
-So $\mathbb{B}$ supplies three of the four generators, and the module $S$ is two-dimensional.
-
-No fourth element of $\mathbb{B}$ anticommutes with all three. Write a general element as $X=a_te_t+a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ with $a_\mu\in\mathbb{C}$. The anticommutator with $\vec e_x$ is
+No element of $\mathbb{B}$ anticommutes with all three. Write a general element as $X=a_te_t+a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ with $a_\mu\in\mathbb{C}$. The anticommutator with $\vec e_x$ is
 
 $$
 \{X,\vec e_x\}=2a_t\vec e_x-2a_x e_t=0,
 $$
 
-which forces $a_t=a_x=0$. Anticommuting with $\vec e_y$ then forces $a_y=0$, leaving $X=a_z\vec e_z$. But this commutes with the third generator, so it does not anticommute with it. The only solution is $X=0$.
+which forces $a_t=a_x=0$. Anticommuting with $\vec e_y$ then forces $a_y=0$, leaving $X=a_z\vec e_z$. But $a_z\vec e_z$ commutes with the third unit, so it does not anticommute with it. The only solution is $X=0$.
 
-This is the coefficient proof of the Klein–Gordon article, read as a statement about the fourth generator. The obstruction is not that the algebra lacks room for a fourth direction; it is that the fourth direction cannot be a left multiplication.
+This is the coefficient proof of the Klein–Gordon article, read as a statement about the fourth generator. The obstruction is not that the algebra lacks room for a fourth direction; it is that a fourth direction cannot multiply only on the left.
 
-### The fourth direction is the second side
+### The fourth multiplication is on the right
 
-The fourth generator acts on a second factor. The minimal module is
-
-$$
-\mathbb{C}^4\cong\mathbb{C}^2_{\mathrm{mult}}\otimes S,
-$$
-
-with $\mathbb{C}^2_{\mathrm{mult}}$ the multiplicity factor and $S$ the biquaternion spinor module. The tensor frame is the image of the cell frame, not a second frame: a cell maps to a Kronecker product of its two multipliers,
+The fourth generator is
 
 $$
-L_{a}R_{b}\;\longmapsto\;\mathsf M_2(b)^{\mathsf T}\otimes\mathsf M_2(a),
+G_0:\psi\mapsto i\psi\vec e_x,
 $$
 
-so the cell form is the primary one and the tensor form is its transcription. On the four frame cells the dictionary gives
+a multiplication on the right. It commutes with every left multiplication, so no product of left multiplications can produce it, and it anticommutes with the three spatial generators through the right factor, $\vec e_y\vec e_x=-\vec e_x\vec e_y$.
 
-$$
-iR_{\vec e_x}^{\mathrm{axf}}=\sigma_1\otimes I_2,
-\qquad
-iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i\sigma_2\otimes\sigma_k,
-\qquad
--iR_{\vec e_z}^{\mathrm{axf}}=-\sigma_3\otimes I_2 .
-$$
-
-The first acts on the multiplicity factor alone and as the identity on $S$; the three space generators act on $S$ by $\sigma_k=\mathsf M_2(i\vec e_k)$, dressed by $i\sigma_2$ on the multiplicity, so their product squares to $-1$. The multiplicity factor is what $\mathbb{B}$ alone does not supply. Adjoining it is the passage to the two-sided algebra.
-
-The cell form exhibits the same fact. The fourth generator is
-
-$$
-iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=R_{i\vec e_x}^{\mathrm{axf}},
-$$
-
-a right multiplication, and it commutes with every left multiplication, so it lies in the commutant $\mathbb{B}_R$ of the left copy $\mathbb{B}_L$. A right multiplication is invisible to $\mathbb{B}_L$; this is the precise sense in which the fourth direction is the second side. The algebra generated by $\mathbb{B}_L$ and $\mathbb{B}_R$ is
-
-$$
-\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong M_4(\mathbb{C}).
-$$
-
-The three space generators are cells that use both sides, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the anticommutator with $iR_{\vec e_x}^{\mathrm{axf}}$ comes from the right factors, $R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=-R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$.
-
-The real dimension count is consistent. The module $\mathbb{C}^4$ has real dimension eight, the same as $\mathbb{B}$. The root does not enlarge the field space relative to a biquaternion field; it changes the module structure. Relative to a single complex scalar, of course, it is a fourfold complex enlargement.
+The four use both sides, and together they give every map of the algebra: sixteen independent maps on a space of sixteen dimensions. The algebra has real dimension eight and complex dimension four, so the root does not enlarge the field space relative to a biquaternion field. It changes the action, not the carrier. Relative to a single complex scalar, of course, it is a fourfold complex enlargement, and §*The scalar field has no root* shows that a central scalar admits none.
 
 ## The Mass Condition and the Two Masses
 
@@ -313,81 +186,57 @@ The real dimension count is consistent. The module $\mathbb{C}^4$ has real dimen
 The second root condition is
 
 $$
-\{B,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\}=0\quad\text{for all }\mu .
+G_\mu\mathsf B+\mathsf B G_\mu=0\quad\text{for all }\mu .
 $$
 
-The anticommutant of the four generators is one-dimensional, and it is spanned by the chirality cell, which anticommutes with all four. If $B$ anticommutes with every generator $\Gamma=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, then $B(-iR_{\vec e_z}^{\mathrm{axf}})$ commutes with $\Gamma$: each factor changes sign and the two signs cancel. The four generate $M_4(\mathbb{C})$, whose commutant is $\mathbb{C}I_4$, so $B(-iR_{\vec e_z}^{\mathrm{axf}})=cI_4$. The chirality cell is its own inverse, $(-iR_{\vec e_z}^{\mathrm{axf}})^2=I_4$, so
+Expanding $\mathsf B$ in the sixteen maps, the four anticommutators force every coefficient except that of the product of the four to vanish, and the product is $\psi\mapsto-\psi\vec e_z$ (§*Verification*). Hence
 
 $$
-B=c\,(-iR_{\vec e_z}^{\mathrm{axf}})=-ic\,R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-The third condition then gives
-
-$$
-B^2=c^2\,(-iR_{\vec e_z}^{\mathrm{axf}})^{2}=c^2I_4=-\mu^2I_4,
+\mathsf B\psi=c\,\psi\vec e_z,
 \qquad
-c=\pm i\mu .
+\mathsf B^2\psi=-c^2\psi,
 $$
 
-The factor $-i$ of the chirality cell and $c=\pm i\mu$ combine, $(-i)(\pm i\mu)=\pm\mu$, so the mass term carries no imaginary unit at all:
+and $\mathsf B^2=-\mu^2$ gives $c=\pm\mu$. The single-square roots are
 
 $$
-B=\pm\mu R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-So the single-square roots are
-
-$$
-\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{axf}},
+\mathsf D_{\mathrm{ps},\pm}\psi=\mathsf D\psi\pm\mu\,\psi\vec e_z,
 \qquad
-\mathsf D_{\mathrm{ps},\pm}^2=\left(\Box-\mu^2\right)I_4 ,
+\mathsf D_{\mathrm{ps},\pm}^2=\Box-\mu^2 .
 $$
 
-with $\mathsf D$ the derivative part of §*The ansatz*.
-
-The mass term is proportional to $R_{\vec e_z}^{\mathrm{axf}}$, which is $i$ times the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$. It is a **pseudoscalar** mass.
+The mass term is the multiplication $\psi\mapsto\mu\psi\vec e_z$. It is a **pseudoscalar** mass.
 
 ### The single square
 
-The pseudoscalar mass is not an accident of the construction. It is the only mass that anticommutes with all four generators. In the basis where $-iR_{\vec e_z}^{\mathrm{axf}}$ is diagonal, the term $\mu R_{\vec e_z}^{\mathrm{axf}}$ is diagonal: it takes opposite values on the two chiralities, and it does not mix them.
+The pseudoscalar mass is not an accident of the construction: it is the only mass that anticommutes with all four generators. It acts on the two parts separately, by opposite constants, so it does not mix $\psi_L$ with $\psi_R$.
 
-The invariant statement is the anticommutator, not the matrix shape. The scalar mass commutes with $\mathsf D$; the pseudoscalar mass anticommutes with it. No change of frame alters which of the two holds, because the two conditions are statements about the algebra and not about a basis.
+The invariant statement is the anticommutator, not the shape of any display. The scalar mass commutes with $\mathsf D$; the pseudoscalar mass anticommutes with it. No change of basis alters which of the two holds, because the two conditions are statements about the algebra and not about a basis.
 
-The corpus knows this channel. It is the $\chi$-type coupling of *The Dirac Equation in Biquaternionic Form*, the pseudoscalar potential that multiplies the central imaginary $i$ and is the $-iR_{\vec e_z}^{\mathrm{axf}}$-type in the matrix dictionary. The single first-order root is therefore not new machinery; it is the corpus's pseudoscalar channel read as a mass.
-
-The sign is fixed by the conventions:
-
-$$
--iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
-$$
-
-so the pseudoscalar mass reads $\mu R_{\vec e_z}^{\mathrm{axf}}=i\mu(-iR_{\vec e_z}^{\mathrm{axf}})\leftrightarrow i\mu\chi$ in the biquaternion dictionary; here $i\cdot(-i)=-i^2=+1$ is what cancels the two imaginary units. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; the central element $\chi$ is its central form, and the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative in the reference frame.
-
-The term is parity-odd. A parity-odd mass is not the mass of the Dirac equation, and it is not the mass the Standard Model generates. The single root exists, but it is not the physical one.
+The corpus knows this channel. It is the pseudoscalar potential of *The Dirac Equation in Biquaternionic Form*, which multiplies the central imaginary $i$. The single first-order root is therefore not new machinery; it is the corpus's pseudoscalar channel read as a mass. A mass of that kind is not the mass of the Dirac equation, and it is not the mass the Standard Model generates. The single root exists, but it is not the physical one.
 
 ### The scalar mass and the factorisation
 
-The physical mass is a scalar: it multiplies the identity and commutes with every generator. It fails the second condition,
+The physical mass is a scalar: it multiplies every element by the same constant and commutes with every generator. It fails the second condition,
 
 $$
-\{\mu I,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\}=2\mu\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\neq0,
+(G_\mu\mathsf B+\mathsf B G_\mu)\psi=2\mu\,G_\mu\psi\neq0
+\quad\text{for }\mathsf B:\psi\mapsto\mu\psi,
 $$
 
-so no single operator of the form $\mathsf D+B$ with a scalar mass squares to the Klein–Gordon operator. Each factor alone carries a first-order remainder:
+so no single operator of the form $\mathsf D+\mathsf B$ with a scalar mass squares to the Klein–Gordon operator. Each factor alone carries a first-order remainder:
 
 $$
-\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I,
+\mathsf D_{\mathrm{sc},\pm}\psi=\mathsf D\psi\pm\mu\psi,
 \qquad
-\mathsf D_{\mathrm{sc},\pm}^2=\left(\Box+\mu^2\right)I\pm2\mu\mathsf D .
+\mathsf D_{\mathrm{sc},\pm}^2=\Box+\mu^2\pm2\mu\mathsf D .
 $$
 
 The cross term is the price of the scalar mass. It cancels in the product:
 
 $$
-\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}
-=\left(\mathsf D-\mu I\right)\left(\mathsf D+\mu I\right)
-=\left(\Box-\mu^2\right)I .
+\mathsf D_{\mathrm{sc},-}\bigl(\mathsf D_{\mathrm{sc},+}\psi\bigr)
+=\left(\Box-\mu^2\right)\psi .
 $$
 
 The physical first-order equation is one factor, $\mathsf D_{\mathrm{sc},-}\psi=0$ or $\mathsf D_{\mathrm{sc},+}\psi=0$; the other factor carries the opposite mass. The product is the Klein–Gordon operator, so each factor implies Klein–Gordon without squaring to it. This is the precise sense in which the scalar mass needs a pair: not two independent equations, but a factorisation whose two factors carry opposite mass. The algebraic content of the chiral pair of the corpus is the same factorisation,
@@ -398,88 +247,75 @@ $$
 \tilde\nabla^{\natural}\tilde\Psi_L=\mu\tilde\Psi_R,
 $$
 
-with the same $\mu$ as above, which the companion writes as $m$ in natural units. Substituting the first into the second and using $\tilde\nabla^{\natural}\tilde\nabla=\Box$ gives $\Box\tilde\Psi_R=\mu^2\tilde\Psi_R$, so each half satisfies Klein–Gordon. The pair is the scalar-mass case written in the biquaternion chiral basis, not a second, independent root.
+with the same $\mu$ as above, which the companion writes as $m$ in natural units. Substituting the first into the second and using $\tilde\nabla^{\natural}\tilde\nabla=\Box$ gives $\Box\tilde\Psi_R=\mu^2\tilde\Psi_R$, so each part satisfies Klein–Gordon. The pair is the scalar-mass case written on the two parts of one element, not a second, independent root.
 
 The dichotomy is therefore sharp:
 
 - a **pseudoscalar** mass anticommutes with the generators and admits a single first-order operator whose square is Klein–Gordon;
 - a **scalar** mass commutes with the generators and admits only the factorisation, whose physical factor is the Dirac equation.
 
-The physical mass is the second. The corpus's use of the chiral pair is not an arbitrary choice of basis; it is the biquaternion form of the factorisation forced by the scalar mass.
+The physical mass is the second. The corpus's use of the chiral pair is not an arbitrary choice of basis; it is the form of the factorisation forced by the scalar mass.
 
 ### The scalar field has no root
 
-A central scalar field has a one-dimensional module. Four nonzero scalars commute, so they cannot satisfy the Clifford relation. Equivalently, a one-dimensional module cannot carry $M_4(\mathbb{C})$. The Klein–Gordon field itself, taken as a central scalar, therefore has no first-order root. A first-order root requires promoting the field to the Clifford module. This is the no-go of the Klein–Gordon article, recovered as a module-dimension statement. The three cases are collected in the table.
+A field whose value is one complex number has one independent complex-linear map, the multiplication by a constant, and four independent generators need four of them, so such a field admits no first-order root. A root requires the field to be an element of the algebra. The Klein–Gordon equation is satisfied by both readings and only the second has a root: this is the no-go of the Klein–Gordon article recovered as a dimension count. The three cases are collected in the table.
 
-| Field | Module | Mass term | Equation | Single square? |
+| Field | Independent maps | Mass term | Equation | Single square? |
 |---|---|---|---|---|
-| Central scalar | $\mathbb{C}$ | — | none | no |
-| Pseudoscalar-mass spinor | $\mathbb{C}^4$ | $\mu R_{\vec e_z}^{\mathrm{axf}}$ | $\mathsf D_{\mathrm{ps},\pm}\psi=0$ | yes, $\mathsf D_{\mathrm{ps},\pm}^2=(\Box-\mu^2)I_4$ |
-| Scalar-mass spinor | $\mathbb{C}^4$ | $\mu I$ | $\mathsf D_{\mathrm{sc},\pm}\psi=0$ (chiral pair) | no, $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}=(\Box-\mu^2)I_4$ |
+| One complex number | one | — | no first-order equation | no |
+| Element of $\mathbb{B}$ | sixteen | $\psi\mapsto\mu\psi\vec e_z$ | $\mathsf D_{\mathrm{ps},\pm}\psi=0$ | yes, $\mathsf D_{\mathrm{ps},\pm}^2=\Box-\mu^2$ |
+| Element of $\mathbb{B}$ | sixteen | $\psi\mapsto\mu\psi$ | $\mathsf D_{\mathrm{sc},\pm}\psi=0$, one factor | no, $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}=\Box-\mu^2$ |
 
 ### The determinant face
 
-The corpus records two determinant identities for the gradient:
+On a plane wave the symbol of $\mathsf D_{\mathrm{ps},\pm}$ is $\mathsf D(k)\pm\mu(\psi\mapsto\psi\vec e_z)$, and its determinant is
 
 $$
-\det A_+(\tilde\nabla)=\Box,
-\qquad
-\det\mathsf M_{4L}(\tilde\nabla)=\Box^2,
+\det\bigl(\mathsf D(k)\pm\mu(\psi\mapsto\psi\vec e_z)\bigr)
+=\left(k_0^2-\lvert\vec k\rvert^2-\mu^2\right)^2,
 $$
 
-where $A_+(\tilde\nabla)$ is the chiral block of the left regular matrix. These are identities of the **even** face: a second-order scalar operator is the determinant of a first-order matrix. They are not a square root in the matrix sense. The determinant is a product of eigenvalues; a massless root is a single operator $D$ with
+the square of the symbol of $\Box-\mu^2$. At $\mu=0$ the same value is the square of the symbol of $\Box$.
 
-$$
-D^2=\Box\,I .
-$$
-
-The two questions are different. The determinant identity says that the scalar wave operator is the determinant of a first-order matrix; the root asks for one first-order operator whose square is the scalar operator. The massless root has $\det\mathsf D=\Box^2$, the same determinant as the left regular matrix of the gradient. The massive root has
-
-$$
-\det\mathsf D_{\mathrm{ps},\pm}=\left(\Box-\mu^2\right)^2,
-$$
-
-which reduces to $\Box^2$ at $\mu=0$. The determinant depends on $\mu$ only through $\mu^2$, so the two signs in $B=\pm\mu R_{\vec e_z}^{\mathrm{axf}}$ give the same value. This is a consistency check on the classification, not a construction of the root.
+The determinant is a product of eigenvalues, and it is not a square root. The two questions are different. A determinant identity says that the square of the scalar symbol is the determinant of a first-order operator; a root needs one first-order operator whose square is the scalar operator. The two signs of the mass give one determinant, so the determinant is a consistency check on the classification and not a construction of the root.
 
 ## What the Root Does Not Carry
 
 The classification is a statement of form, and its boundaries are part of the result.
 
-1. **It is stronger than Klein–Gordon.** A first-order equation selects a subspace of the second-order solution space. The single root and the Dirac factor select different subspaces, and neither is equivalent to the second-order equation. For a fixed momentum on the shell the second-order equation allows all four polarisations, while a first-order equation allows two; both retain the two frequency branches, so what the root halves is the polarisation space and not the spectrum. At $\mu=0$ the single root reduces to $\mathsf D$, whose kernel is two-dimensional with one state of each chirality, while the scalar-mass factorisation reduces to $\mathsf D^2=\Box$; the massless limit does not select one channel.
-2. **No mass, no coupling, and no sign is predicted.** The classification says which first-order structures have the Klein–Gordon square; it does not say which one nature uses, and it does not determine $\mu$. The sign of the mass is not physical either: $\mathsf D_{\mathrm{ps},+}$ and $\mathsf D_{\mathrm{ps},-}$ are exchanged by $\mu\to-\mu$, so only the relative sign of the mass and the chirality is meaningful. Whether a pseudoscalar mass is realised is a dynamical question that the classification leaves open; the corpus's $\chi$-type coupling suggests an axial channel but supplies no dynamics.
-3. **The coefficients are constant and the background flat.** Position-dependent coefficients add commutator terms, and a gauged derivative adds a field strength; the Clifford structure is then deformed, and the constant-coefficient classification is the starting point rather than the answer. On a curved background the partial derivatives become covariant derivatives and the Clifford algebra is the tangent-space algebra; the dimension count is unchanged, but the spin connection enters the root. The $x$ coordinates are flat; the $Q$ form is the Euclidean transcription of the same operator, not a different root.
-4. **The real structure and the index are open.** The article works over $\mathbb{C}$. The two real forms of the Lorentzian complex algebra are $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ and $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the choice between them is the Majorana/Dirac question, and the charge-conjugation pairing is a real-structure question that this article does not settle. The massless root is odd under the chirality grading and $\Box$ is even, so the index of $\mathsf D$ is an invariant of the graded module; whether the biquaternion grading gives a nontrivial index on a gauge background is open.
+1. **It is stronger than Klein–Gordon.** A first-order equation selects a subspace of the second-order solution space. The single root and the Dirac factor select different subspaces, and neither is equivalent to the second-order equation. At a fixed momentum on the shell the second-order equation admits every element, four complex dimensions, while the root admits a two-dimensional subspace; both retain the two frequency branches, so what the root halves is the room for the field at that momentum and not the spectrum. At $\mu=0$ the single root reduces to $\mathsf D$, whose kernel is two-dimensional with one state of each value of the label, while the scalar-mass factorisation reduces to $\mathsf D^2=\Box$; the massless limit does not select one channel.
+2. **No mass and no coupling are predicted.** The classification says which first-order structures have the Klein–Gordon square; it does not say which one nature uses, and it does not determine $\mu$. The sign of the mass carries no content either: $\mathsf D_{\mathrm{ps},+}$ at $\mu$ and $\mathsf D_{\mathrm{ps},-}$ at $-\mu$ are one operator. Whether a pseudoscalar mass is realised is a dynamical question that the classification leaves open; the corpus's pseudoscalar potential suggests such a channel but supplies no dynamics.
+3. **The coefficients are constant and the background flat.** A position-dependent coefficient adds a term in which the derivative acts on the coefficient, and a gauged derivative adds a field strength; the constant-coefficient classification is then the starting point rather than the answer. On a curved background the derivatives become covariant, and the classification applies in the tangent space at each point. The $x$ coordinates are flat; the algebra coordinates give the same operator and not a different root.
+4. **The real structure and the index are open.** The article works over $\mathbb{C}$. Whether the four generators can be chosen real, and which real structure the field carries, is the charge-conjugation question, and the article does not settle it. The massless root converts an $L$ part into an $R$ part while $\Box$ preserves the value, so an index is available; whether it is nontrivial on a gauge background is open.
 
-## The Even and the Odd Face
+## The Equation and the Root
 
-The article's result can be stated as a division of labour between two matrix sizes.
+Two statements that look like one. The Klein–Gordon **equation** is central: its operator multiplies every element by the same scalar, so a single complex scalar satisfies it. The Klein–Gordon **root** is not central: it multiplies on both sides, so it acts on the whole algebra. The equation lives in the centre; the root lives on the two sides.
 
-- **The even face is $M_2$.** The Klein–Gordon operator is central; the determinant of the chiral block of the left regular matrix is $\Box$. The three generators $\vec e_k$ and the determinant identity live at the $M_2(\mathbb{C})$ level; the chiral pair is written in the biquaternion module before the fourth generator is adjoined.
-- **The odd face is $M_4$.** The first-order structure — the single square $\mathsf D_{\mathrm{ps},\pm}$ or the Dirac factor of the scalar-mass case — needs the fourth generator, the multiplicity factor, and the two-sided algebra. For the single square, $\det\mathsf D_{\mathrm{ps},\pm}=(\Box-\mu^2)^2$, which reduces to $\Box^2$ at $\mu=0$ and matches the determinant of the left regular matrix of the gradient.
+The two statements are compatible because they are about different objects. A scalar equation needs no second side; its first-order root does.
 
-The division answers the $M_2$/$M_4$ question. The Klein–Gordon **equation** does not require $M_4$: its operator is central and its field can be a single complex scalar. The Klein–Gordon **root** does require $M_4$: the fourth Clifford direction is the second side of the algebra. The two statements are compatible because they are about different objects. The scalar equation lives in the centre; its first-order root lives in the two-sided algebra.
-
-The regular representation's doubling is not a prediction of doubled particles. The two minimal left ideals are the two chiral copies of the same module; the doubling is the price of the fourth generator, not a doubling of the spectrum.
+The doubling is not a doubling of particles. The two values of the label are the two parts of one element, and the root reads both.
 
 ## Verification
 
-The identities were recomputed before they were written. The cell frame was built from $L_{a}R_{b}$ as $4\times4$ complex matrices, and the tensor description from the Pauli matrices and the $2\times2$ images of $\vec e_k$. The residuals are the largest absolute entries over the stated samples; $K$ is a complex four-wavevector drawn from a fixed seed and $\mu$ a fixed real mass.
+The identities were recomputed before they were written. The four generators were built as maps of $\mathbb{B}$ and applied to random elements. The derivative identities were checked on their symbols, at random wave covectors. The residuals are the largest absolute difference over the stated samples, and $\mu$ is a fixed real mass.
 
 | Check | Result |
 |---|---|
-| $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}-2g_{\mu\nu}I_4$ | $0$ (exact) |
-| $(-iR_{\vec e_z}^{\mathrm{axf}})^{2}-I_4$ and $\{-iR_{\vec e_z}^{\mathrm{axf}},iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\}$ | $0$ (exact) |
-| $-iR_{\vec e_z}^{\mathrm{axf}}+R_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | $0$ (exact) |
-| $\mathsf D+R_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$ | $0$ (exact) |
-| Tensor dictionary reproduces the five cells and satisfies the same anticommutation relations | $0$ (exact) |
-| Anticommutant of all four generators | rank $15$, nullity $1$ |
-| $\{\mu R_{\vec e_z}^{\mathrm{axf}},iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\}$ and $(\mu R_{\vec e_z}^{\mathrm{axf}})^2+\mu^2I_4$ | $0$ (exact) |
-| $\mathsf D_{\mathrm{ps},+}^2-(\Box-\mu^2)I_4$ on $100$ random $K$ | $4.0\times10^{-15}$ |
-| $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}-(\Box-\mu^2)I_4$ on $100$ random $K$ | $4.0\times10^{-15}$ |
-| $\left(iR_{\vec e_x}^{\mathrm{axf}}k_{0}-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}k_{k}\right)^2-g_{\mu\nu}k_\mu k_\nu I_4$ on $100$ random $K$ | $4.0\times10^{-15}$ |
-| $\det\mathsf D_{\mathrm{ps},\pm}-(\Box-\mu^2)^2$ on $100$ random $K$ | $3.8\times10^{-13}$ |
-| $\det\mathsf D-\Box^2$ on $100$ random $K$ | $2.9\times10^{-13}$ |
-| Frame squares $(+1,-1,-1,-1)$ and anticommutators | $0$ (exact) |
+| the four generators square to $+1,-1,-1,-1$ and anticommute in pairs | $0$ (exact) |
+| the sixteen products are linearly independent | rank $16$ |
+| the product of the four generators is $\psi\mapsto-\psi\vec e_z$ | $0$ (exact) |
+| the maps that anticommute with all four | one-dimensional, spanned by $\psi\mapsto\psi\vec e_z$ |
+| no element of $\mathbb{B}$ anticommutes with the three spatial units | rank $4$ of $4$ |
+| $G_0$ commutes with every left multiplication | $0$ (exact) |
+| the mass $\psi\mapsto\mu\psi\vec e_z$ anticommutes with the four and squares to $-\mu^2$ | $0$ (exact) |
+| $\mathsf D(k)^2\psi-(k_0^2-\lvert\vec k\rvert^2)\psi$ on $100$ random wave covectors | $1.8\times10^{-15}$ |
+| $\mathsf D_{\mathrm{ps},\pm}^2-(\Box-\mu^2)$ on $100$ random wave covectors | $1.8\times10^{-15}$ |
+| $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}-(\Box-\mu^2)$ on $100$ random wave covectors | $1.8\times10^{-15}$ |
+| $\mathsf D_{\mathrm{sc},+}^2-(\Box+\mu^2+2\mu\mathsf D)$ | $1.8\times10^{-15}$ |
+| the determinant of the symbol of $\mathsf D_{\mathrm{ps},\pm}$, minus the square of the symbol of $\Box-\mu^2$, on $100$ random wave covectors | $8.5\times10^{-14}$ |
+| the massless kernel at $k_0^2-\lvert\vec k\rvert^2=0$: dimension two, one state of each value | $0$ (exact) |
+| the label split of $100$ random elements: only the zero element in both parts | $0$ failures |
 
 The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription.
 
@@ -558,56 +394,54 @@ $$
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
+
 ## Summary
 
-The first-order root of the biquaternion Klein–Gordon operator exists, and its carrier is fixed by the Clifford relation. The root acts on a module of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose minimal module is $\mathbb{C}^4$. The biquaternion algebra supplies the three spatial generators $\vec e_x,\vec e_y,\vec e_z$, and no fourth; the fourth (time) generator acts on the multiplicity factor and, in the regular picture, is the right multiplication $R_{i\vec e_x}^{\mathrm{axf}}$, which lies in the commutant $\mathbb{B}_R$. The root therefore lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while the Klein–Gordon operator itself remains central.
+The first-order root of the biquaternion Klein–Gordon operator exists, it has two forms, and the algebra fixes which form the physical mass uses. Squaring a first-order operator to the central scalar $\Box-\mu^2$ requires four mutually anticommuting generators, one of square $+1$ and three of square $-1$. The three spatial units supply the three spatial generators, $\psi\mapsto i\vec e_k\psi\vec e_y$, and no element of the algebra supplies the fourth; the fourth multiplies on the right, $\psi\mapsto i\psi\vec e_x$. The root therefore acts on both sides of the algebra, which is where the four complex dimensions come from, while the Klein–Gordon operator itself stays central.
 
-The mass term is constrained by $\{B,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\}=0$. The anticommutant is spanned by the chirality cell, so the only single-operator solution is $B=\pm\mu R_{\vec e_z}^{\mathrm{axf}}$, a pseudoscalar mass. A scalar mass commutes with the generators, so no single operator with a scalar mass squares to Klein–Gordon; the scalar mass admits only the factorisation $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}$, which is the corpus's chiral pair. The physical mass is the scalar one, so the physical first-order equation is one factor of that factorisation.
+The mass is constrained by the anticommutator with the four generators. The maps that anticommute with all four are the multiples of $\psi\mapsto\psi\vec e_z$, so the only single-operator solution is $\psi\mapsto\pm\mu\psi\vec e_z$, a pseudoscalar mass. A scalar mass commutes with the generators, so no single operator with a scalar mass squares to Klein–Gordon; the scalar mass admits only the factorisation $\mathsf D_{\mathrm{sc},-}\mathsf D_{\mathrm{sc},+}$, which is the corpus's chiral pair. The physical mass is the scalar one, so the physical first-order equation is one factor of that factorisation.
 
-The two equations are therefore distinct, and the article's notation keeps them so: $\mathsf D_{\mathrm{ps},\pm}\psi=0$ is the single square in the two-sided operator algebra, and $\mathsf D_{\mathrm{sc},\pm}\psi=0$ is the chiral pair. Only the second is physical.
+The two equations are distinct, and the notation keeps them so: $\mathsf D_{\mathrm{ps},\pm}\psi=0$ is the single square, and $\mathsf D_{\mathrm{sc},\pm}\psi=0$ is the chiral pair. Only the second is physical.
 
-The scalar Klein–Gordon field, taken as a central scalar, has no first-order root. The results are a classification of form: no mass, no coupling, and no dynamics are predicted. The open questions are the gauged, curved, position-dependent, and real-structure extensions.
+A field whose value is one complex number has no first-order root. The results are a classification of form: no mass, no coupling and no dynamics are predicted. The open questions are the gauged, curved, position-dependent and real-structure extensions.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
-| $i$ | Central scalar imaginary, $i^2=-1$ |
-| $Q_\mu$ | Algebra coordinates, $Q_t=ict'$ on $\mathbb{M}_-$ |
-| $x_\mu$ | Lorentz coordinates, $x_0=ct'$, $x_k$ spatial |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | Frame metric, $\mathrm{diag}(-1,+1,+1,+1)$ |
-| $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
-| $\Box=\langle\tilde\nabla\rangle_{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\partial^2/\partial x_\mu\partial x_\nu$ | d'Alembertian, series convention and Lorentz form |
-| $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium; the $\mu$ here is the permeability |
-| $\mu=mc/\hbar$ | Mass parameter (inverse reduced Compton wavelength) |
-| $\tilde P=iE/c\,e_t+\vec p$ | Material four-momentum |
-| $\tilde K=\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Corpus four-wavevector |
-| $\tilde K_{\mathrm s}=i\tilde K$ | Symbol of the gradient; $K_\mu$ its components |
-| $\langle\tilde K_{\mathrm s}\rangle_{\natural}=\mu^2$ | Mass shell |
-| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Generator cells of the root, $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
-| $\nu(\mu)$ | Index map of the generators, $\nu(t)=x$ and $\nu(k)=y$ |
-| $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, $-iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi)$ |
-| $-R_{\vec e_z}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Product of the four generators, $-i$ times the chirality cell |
-| $\mathsf D=i\sum_\mu\bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\bigr)\partial/\partial x_\mu$ | Lorentz-frame Dirac operator, $\mathsf D^2=\Box I_4$ |
-| $iR_{\vec e_x}^{\mathrm{axf}}k_{0}-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}k_{k}$ | Symbol of $\mathsf D$ on a plane wave, $k_\mu=(\omega/c,\vec k)$ |
-| $\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{axf}}$ | Single-square roots (pseudoscalar mass) |
-| $\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I$ | Scalar-mass factors (chiral pair) |
-| $S\cong\mathbb{C}^2$ | Minimal left ideal (biquaternion spinor module) |
-| $L_a,R_b$ | Left and right multiplication operators |
-| $L_{a}R_{b}$ | Two-sided cell |
+| $\mathbb{B}$ | The biquaternion algebra |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | The four units |
+| $i$ | The central imaginary unit |
+| $Q_\mu$ | The algebra coordinates |
+| $x_\mu$ | The Lorentz coordinates |
+| $\tilde\nabla$ | Biquaternionic gradient |
+| $\Box$ | d'Alembertian; its Lorentz form is derived in §*The Equation* |
+| $c$ | The speed of light in the medium |
+| $\mu$ | The mass parameter, $\mu=mc/\hbar$, the inverse reduced Compton wavelength |
+| $k_\mu$ | The wave covector of a plane wave |
+| $\psi$ | A general element of $\mathbb{B}$, on which the root acts |
+| $\psi_L,\psi_R$ | The two parts of an element, the two values of the label |
+| $G_0:\psi\mapsto i\psi\vec e_x$ | Time generator, a multiplication on the right |
+| $G_k:\psi\mapsto i\vec e_k\psi\vec e_y$ | The three spatial generators |
+| $\mathsf D$ | Derivative part of the root, $\mathsf D^2=\Box$ |
+| $\mathsf D(k)$ | Symbol of $\mathsf D$ at the wave covector $k$ |
+| $\mathsf B$ | Zero-order term of a first-order operator, a fixed map with no derivative |
+| $\mathsf D_{\mathrm{ps},\pm}\psi=\mathsf D\psi\pm\mu\psi\vec e_z$ | Single-square roots, pseudoscalar mass |
+| $\mathsf D_{\mathrm{sc},\pm}\psi=\mathsf D\psi\pm\mu\psi$ | Scalar-mass factors, the chiral pair |
+| $\tilde\Phi$ | The field of the Klein–Gordon equation, an element of $\mathbb{B}$ |
+| the label | $L$ or $R$, two values, carried by the parts of an element |
 
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the first-order equation and its second-order consequence.
 - O. Klein, "Elektrodynamik und Wellenmechanik vom Standpunkt des Korrespondenzprinzips," *Zeitschrift für Physik* **41** (1927) 407–442, and W. Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the second-order relativistic wave equation.
-- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the identity $(\mathsf D-\mu)(\mathsf D+\mu)=\Box-\mu^2$ and the plane-wave spinors.
+- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the identity $(\mathsf D-\mu)(\mathsf D+\mu)=\Box-\mu^2$ and the plane-wave solutions.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Clifford algebra, the gamma matrices, and the mass shell.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the classification of Clifford algebras, the minimal modules, and the square root of the wave operator.
 - H. B. Lawson and M.-L. Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the complex and real Clifford algebras and their irreducible modules.
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the periodicity and the module dimensions.
 - V. V. Kravchenko, *Quaternionic Analysis and Its Applications* (Birkhäuser, 2003), for the quaternionic Dirac operator and its relation to the Euclidean Clifford algebra.
 - The corpus articles *The Klein–Gordon Equation in Biquaternionic Form*, *Klein–Gordon from the Dirac Square in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form*, *The Biquaternion D'Alembertian and Its Green's Functions*, and *Algebra and Element Conventions* for the conventions and the results this article builds on.
-- The corpus articles *Two-Sided Operators on the Biquaternion Algebra*, *Element and Operator Representations: The Three Actions*, and *The Polarized Module of the Biquaternion Algebra* for the two-sided algebra, the nilpotent that swaps the minimal left ideals, and the $M_2$/$M_4$ dictionary.
+- The corpus articles *Two-Sided Operators on the Biquaternion Algebra*, *Element and Operator Representations: The Three Actions*, and *The Polarized Module of the Biquaternion Algebra* for the two-sided algebra, the nilpotent that exchanges the two parts of an element, and the change of display between the two bases.
+

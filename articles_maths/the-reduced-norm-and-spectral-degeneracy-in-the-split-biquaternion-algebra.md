@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ carries two quadratic conditions on one element. The **reduced norm** $\Delta(\tilde Q)=|Q_+|^2|Q_-|^2$ is real, non-negative, multiplicative, and vanishes exactly when a half vanishes. The **component invariants** $|\vec q_\pm|^2$ are the squared lengths of the two vector parts; each vanishes exactly when its half is scalar. The first decides invertibility, the second detects scalar halves. The **spectrum** is regular when the reduced characteristic polynomial has no repeated root.
+The split-biquaternion algebra $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ carries two quadratic conditions on one element. The **reduced norm** $\Delta(\tilde Q)=|Q_+|^2|Q_-|^2$ is real, non-negative, multiplicative, and vanishes exactly when a half vanishes. The **component invariants** $|\vec q_\pm|^2$ are the squared lengths of the two vector parts; each vanishes exactly when its half is scalar. The first decides invertibility, the second detects scalar halves. The **spectrum** is regular when the reduced characteristic polynomial has no repeated root.
 
 This article compares these invariants. Spectral regularity forces $\Delta\neq0$, but $\Delta\neq0$ does not force spectral regularity. Hence the cell "reduced-norm-degenerate, spectrally regular" is empty, while its opposite is not: a vanishing reduced norm forces a whole half to vanish, and a vanishing half is scalar, hence spectrally degenerate. The biquaternion algebra differs: its norm is a sum, not a product, and its Hermitian idempotents are norm-degenerate with simple spectra.
 
@@ -185,7 +185,7 @@ $$
 
 Since $E^2=E$ and $E\neq0,1$, its minimal polynomial is $X(X-1)$, so the spectrum $\{0,1\}$ is simple. Thus $E$ is norm-degenerate and spectrally regular: it lies in the biquaternion $\Sigma_{01}$, the cell that is empty in the split algebra. These idempotents are non-central, form a two-sphere, and are rank-one projections in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$.
 
-A sum can cancel: $Q_t^2$ and $B^2$ can be opposite non-zero complex numbers, whereas a product of non-negative reals needs a zero factor. And $\mathbb{H}_{\mathbb{D}}$ has only the four central idempotents $0,\tilde\Pi_1,\tilde\Pi_2,1$, because each division algebra has only $0$ and $1$; a non-zero idempotent of the split algebra has a zero half. The biquaternion matrix algebra has non-central idempotents, and the Hermitian ones are the witnesses the split algebra cannot produce.
+A sum can cancel: $Q_t^2$ and $B^2$ can be opposite non-zero complex numbers, whereas a product of non-negative reals needs a zero factor. And $\mathbb{B}^{\mathrm{spl}}$ has only the four central idempotents $0,\tilde\Pi_1,\tilde\Pi_2,1$, because each division algebra has only $0$ and $1$; a non-zero idempotent of the split algebra has a zero half. The biquaternion matrix algebra has non-central idempotents, and the Hermitian ones are the witnesses the split algebra cannot produce.
 
 ## Summary
 
@@ -199,7 +199,7 @@ The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\t
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
+| $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
 | $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ | Idempotent decomposition |
 | $Q_\pm=t_\pm+\vec q_\pm$ | A half |
 | $\lvert Q_\pm\rvert^2=t_\pm^2+\lvert\vec q_\pm\rvert^2$ | Quaternion norm of a half |

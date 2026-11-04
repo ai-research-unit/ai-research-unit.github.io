@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The dual-number algebra $\mathbb{D}'_R=R[\varepsilon]/(\varepsilon^2)$ carries two invariants that are easy to confuse because both are degenerate. The **norm** is $\langle Q\rangle=Q\bar Q=a^2$; it is multiplicative, of rank one, and it vanishes exactly on the maximal ideal $\mathrm{M}=\{a=0\}$. **Spectral degeneracy** is the repetition of the eigenvalue; for $Q=a+b\varepsilon$ the characteristic polynomial is $(X-a)^2$, so it holds for every element and carries no information at all. The informative companion of the norm is therefore not spectral degeneracy but **defect**, the failure of an eigenbasis: the minimal polynomial is $X-a$ on the real axis and $(X-a)^2$ off it, so the defective set is
+The dual-number algebra $\mathbb{C}^{\mathrm{dua}}_R=R[\varepsilon]/(\varepsilon^2)$ carries two invariants that are easy to confuse because both are degenerate. The **norm** is $\langle Q\rangle=Q\bar Q=a^2$; it is multiplicative, of rank one, and it vanishes exactly on the maximal ideal $\mathrm{M}=\{a=0\}$. **Spectral degeneracy** is the repetition of the eigenvalue; for $Q=a+b\varepsilon$ the characteristic polynomial is $(X-a)^2$, so it holds for every element and carries no information at all. The informative companion of the norm is therefore not spectral degeneracy but **defect**, the failure of an eigenbasis: the minimal polynomial is $X-a$ on the real axis and $(X-a)^2$ off it, so the defective set is
 
 $$
-D=\{a+b\varepsilon : b\neq0\}=\mathbb{D}'_R\setminus R\cdot1.
+D=\{a+b\varepsilon : b\neq0\}=\mathbb{C}^{\mathrm{dua}}_R\setminus R\cdot1.
 $$
 
 This article compares the norm and the defect. The comparison has a sharp answer. A unit can be defective: every $a+b\varepsilon$ with $a\neq0$ and $b\neq0$ is a unit and has minimal polynomial $(X-a)^2$. The only semisimple non-unit is the origin. Consequently the two invariants are independent only in the direction of the unit group: the combination "unit and defective" is open and dense, while the combination "non-unit and semisimple" is a single point. The sector table has three non-empty cells and one empty one when read on the non-zero elements, the empty cell being the origin. The chain of invariants runs from the element through the minimal polynomial and the characteristic polynomial to the norm, and each step forgets something: the minimal polynomial forgets the value of the infinitesimal part, the characteristic polynomial forgets the defect, and the norm forgets the sign of the eigenvalue.
 
-**Notation and scope.** The algebra is $\mathbb{D}'_R$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$, equal to $q+\varepsilon q'$ in the prime notation of *Dual-Numbers Algebra*. The norm is $\langle Q\rangle=Q\bar Q=a^2$, the conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. The spectral theory is *Spectral Regularity and Degeneracy in the Dual-Number Algebra*, the defect is *The Defective Sector of the Dual-Number Algebra*, and the norm is *Dual-Numbers Norm and Invertibility*. The four sectors of the biquaternion algebra, used only for comparison at the end, are *Relations between the N Norm and Spectral Regularity and Degeneracy*.
+**Notation and scope.** The algebra is $\mathbb{C}^{\mathrm{dua}}_R$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$, equal to $q+\varepsilon q'$ in the prime notation of *Dual-Numbers Algebra*. The norm is $\langle Q\rangle=Q\bar Q=a^2$, the conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. The spectral theory is *Spectral Regularity and Degeneracy in the Dual-Number Algebra*, the defect is *The Defective Sector of the Dual-Number Algebra*, and the norm is *Dual-Numbers Norm and Invertibility*. The four sectors of the biquaternion algebra, used only for comparison at the end, are *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
-**A word on the two tables.** The **norm/spectrum** table of article 1 has two empty cells, $\Sigma_{11}$ and $\Sigma_{01}$, because spectral regularity is impossible in $\mathbb{D}'_R$. The table of this article that has three non-empty cells and one empty one is the **norm/defect** table, not the norm/spectrum table. The two tables are distinguished in §*The Sector Tables*.
+**A word on the two tables.** The **norm/spectrum** table of article 1 has two empty cells, $\Sigma_{11}$ and $\Sigma_{01}$, because spectral regularity is impossible in $\mathbb{C}^{\mathrm{dua}}_R$. The table of this article that has three non-empty cells and one empty one is the **norm/defect** table, not the norm/spectrum table. The two tables are distinguished in §*The Sector Tables*.
 
 ## The Norm
 
@@ -65,7 +65,7 @@ $$
 $$
 m_Q(X)=\begin{cases}X-a,&b=0,\\ (X-a)^2,&b\neq0,\end{cases}
 \qquad
-D=\{a+b\varepsilon : b\neq0\}=\mathbb{D}'_R\setminus R\cdot1.
+D=\{a+b\varepsilon : b\neq0\}=\mathbb{C}^{\mathrm{dua}}_R\setminus R\cdot1.
 $$
 
 *Proof.* This is *The Defective Sector of the Dual-Number Algebra*, §*The Defective Set*: $Q-a=b\varepsilon$ has square zero and is non-zero exactly when $b\neq0$.
@@ -137,7 +137,7 @@ The other two combinations, "norm-regular and semisimple" and "norm-degenerate a
 So the algebra is the disjoint union of four sets,
 
 $$
-\mathbb{D}'_R=R^\times\ \sqcup\ D_1\ \sqcup\ (\mathrm{M}\setminus\{0\})\ \sqcup\ \{0\},
+\mathbb{C}^{\mathrm{dua}}_R=R^\times\ \sqcup\ D_1\ \sqcup\ (\mathrm{M}\setminus\{0\})\ \sqcup\ \{0\},
 $$
 
 and the two invariants are the two coordinates of this decomposition: the norm decides between the first two sets and the last two, and the defect decides between the first and third and the second and fourth. The norm and the defect are not functions of one another: $1$ and $1+\varepsilon$ have the same norm and different defect; $\varepsilon$ and $1+\varepsilon$ have the same defect and different norm. They are both functions of the minimal polynomial, and the minimal polynomial is their common refinement.
@@ -148,12 +148,12 @@ and the two invariants are the two coordinates of this decomposition: the norm d
 
 **Definition (the norm/spectrum sectors).** For $i,j\in\{0,1\}$, the sector $\Sigma_{ij}$ is the set of elements with $\langle Q\rangle\neq0$ if $i=1$ and $\langle Q\rangle=0$ if $i=0$, and with $Q$ spectrally regular if $j=1$ and spectrally degenerate if $j=0$.
 
-**Theorem (the norm/spectrum table).** In $\mathbb{D}'_R$,
+**Theorem (the norm/spectrum table).** In $\mathbb{C}^{\mathrm{dua}}_R$,
 
 $$
 \Sigma_{11}=\varnothing,\qquad
 \Sigma_{01}=\varnothing,\qquad
-\Sigma_{10}=\{a\neq0\}=(\mathbb{D}'_R)^\times,\qquad
+\Sigma_{10}=\{a\neq0\}=(\mathbb{C}^{\mathrm{dua}}_R)^\times,\qquad
 \Sigma_{00}=\mathrm{M}=\{a=0\}.
 $$
 
@@ -246,9 +246,9 @@ The count of patterns is the count of degeneration types, not of values: the cha
 
 ## Summary
 
-The norm is $\langle Q\rangle=a^2$, a degenerate quadratic form of rank one, multiplicative, with radical $\mathrm{M}$, non-zero exactly on the units and blind to the infinitesimal part. The defect is the failure of an eigenbasis, decided by the minimal polynomial; the defective set is $D=\{b\neq0\}=\mathbb{D}'\setminus R\cdot1$, blind to the real part and carried by the nilpotent part $b\varepsilon\in\mathrm{M}$. The punctured maximal ideal is the nilpotent stratum, not the whole defective set.
+The norm is $\langle Q\rangle=a^2$, a degenerate quadratic form of rank one, multiplicative, with radical $\mathrm{M}$, non-zero exactly on the units and blind to the infinitesimal part. The defect is the failure of an eigenbasis, decided by the minimal polynomial; the defective set is $D=\{b\neq0\}=\mathbb{C}^{\mathrm{dua}}\setminus R\cdot1$, blind to the real part and carried by the nilpotent part $b\varepsilon\in\mathrm{M}$. The punctured maximal ideal is the nilpotent stratum, not the whole defective set.
 
-The interaction is exhausted by four statements: a non-zero norm-degenerate element is defective; a non-zero semisimple element is a unit; a unit can be defective ($1+\varepsilon$ is the simplest witness); and the only semisimple non-unit is the origin. Hence $\mathbb{D}'=R^\times\sqcup D_1\sqcup(\mathrm{M}\setminus\{0\})\sqcup\{0\}$. The norm/spectrum table has two empty cells, $\Sigma_{11}$ and $\Sigma_{01}$, and two non-empty cells, $\Sigma_{10}$ and $\Sigma_{00}$. The norm/defect table has $T_{11}=R^\times$, $T_{10}=D_1$, $T_{01}=\{0\}$, $T_{00}=\mathrm{M}\setminus\{0\}$; on the non-zero elements it has three non-empty cells and one empty one, the empty cell being the origin.
+The interaction is exhausted by four statements: a non-zero norm-degenerate element is defective; a non-zero semisimple element is a unit; a unit can be defective ($1+\varepsilon$ is the simplest witness); and the only semisimple non-unit is the origin. Hence $\mathbb{C}^{\mathrm{dua}}=R^\times\sqcup D_1\sqcup(\mathrm{M}\setminus\{0\})\sqcup\{0\}$. The norm/spectrum table has two empty cells, $\Sigma_{11}$ and $\Sigma_{01}$, and two non-empty cells, $\Sigma_{10}$ and $\Sigma_{00}$. The norm/defect table has $T_{11}=R^\times$, $T_{10}=D_1$, $T_{01}=\{0\}$, $T_{00}=\mathrm{M}\setminus\{0\}$; on the non-zero elements it has three non-empty cells and one empty one, the empty cell being the origin.
 
 The chain is $(a,b)\mapsto m_Q\mapsto p_Q\mapsto\langle Q\rangle$. The minimal polynomial fixes the eigenvalue and the defect bit but not $b$; the characteristic polynomial is $(X-a)^2$ in both defect cases, so it loses the defect, and it has one independent coefficient because the norm is the square of half the trace; the norm loses the sign of the eigenvalue. The minimal polynomial is the first invariant that sees the defect, and the norm is the last that still sees the eigenvalue, up to sign.
 
@@ -256,7 +256,7 @@ The chain is $(a,b)\mapsto m_Q\mapsto p_Q\mapsto\langle Q\rangle$. The minimal p
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{D}'_R=R[\varepsilon]/(\varepsilon^2)$ | the dual-number algebra over $R$ |
+| $\mathbb{C}^{\mathrm{dua}}_R=R[\varepsilon]/(\varepsilon^2)$ | the dual-number algebra over $R$ |
 | $Q=a+b\varepsilon$ | a general element, equal to $q+\varepsilon q'$ in the prime notation |
 | $a=\operatorname{Re}Q$, $b=\operatorname{Inf}Q$ | real and infinitesimal parts |
 | $\langle Q\rangle=Q\bar Q=a^2$ | the norm, the dual norm |

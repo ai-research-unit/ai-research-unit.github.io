@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-complex algebra $\mathbb{D}=\mathbb{R}[x]/(x^2-1)=\mathbb{R}[j]$, $j^2=+1$, is commutative, associative and two-dimensional over $\mathbb{R}$. The idempotent decomposition $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ makes it isomorphic to $\mathbb{R}\oplus\mathbb{R}$. This article reads the **eigenvalue decomposition** of a split-complex number $Q=q+jq'$ in the distinct case $q'\neq0$: the writing
+The split-complex algebra $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)=\mathbb{R}[j]$, $j^2=+1$, is commutative, associative and two-dimensional over $\mathbb{R}$. The idempotent decomposition $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ makes it isomorphic to $\mathbb{R}\oplus\mathbb{R}$. This article reads the **eigenvalue decomposition** of a split-complex number $Q=q+jq'$ in the distinct case $q'\neq0$: the writing
 
 $$
 Q=\lambda_+\Pi_+ + \lambda_-\Pi_-,
@@ -14,30 +14,30 @@ $$
 
 Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi_\pm$ are the eigenprojections. The eigenvalues are therefore the idempotent coordinates, and their values are displayed with them throughout. The article is the two-dimensional commutative counterpart of *The Biquaternion Eigenvalue Decomposition* and the real analogue of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*. The general definition, the existence theorem and the uniqueness theorem are those of *The Eigenvalue Decomposition of an Element*. The split-complex content is that, in the distinct case, the eigenprojections are the standard idempotents $\Pi_\pm$, that these idempotents are central, and that the Peirce decomposition relative to either of them is the decomposition of the whole algebra. There is no vector part, the generator $j$ is part of the presentation rather than a root extracted from the element, and there is no continuous family of idempotents: the algebra has exactly four idempotents, and the nontrivial pair is unique.
 
-**The results.** The spectrum of $Q=q+jq'$ is $\{q+q',q-q'\}$, and in the distinct case $q'\neq0$ the two eigenprojections are the standard idempotents $\Pi_\pm=\tfrac12(1\pm j)$. They are central and independent of $Q$, the eigenvalue decomposition is the direct-product decomposition $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ read on the element, and the Peirce decomposition relative to $\Pi_+$ has two vanishing off-diagonal corners. The polynomial calculus is the componentwise calculus on $\mathbb{R}\times\mathbb{R}$, and the unit group is $\mathbb{R}^\times\times\mathbb{R}^\times$. The idempotents form an eigenbasis of the multiplication operator, with eigenvalues $\lambda_+$ and $\lambda_-$. The scalar regime has a repeated eigenvalue, the zero-divisor regime keeps a two-term decomposition with one zero eigenvalue, and there is no nilpotent regime. The two minimal ideals $S_\pm=\mathbb{R}\Pi_\pm$ are the spinor spaces: a spinor is a single real coefficient on one of them, and after complexification a single complex coefficient.
+**The results.** The spectrum of $Q=q+jq'$ is $\{q+q',q-q'\}$, and in the distinct case $q'\neq0$ the two eigenprojections are the standard idempotents $\Pi_\pm=\tfrac12(1\pm j)$. They are central and independent of $Q$, the eigenvalue decomposition is the direct-product decomposition $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ read on the element, and the Peirce decomposition relative to $\Pi_+$ has two vanishing off-diagonal corners. The polynomial calculus is the componentwise calculus on $\mathbb{R}\times\mathbb{R}$, and the unit group is $\mathbb{R}^\times\times\mathbb{R}^\times$. The idempotents form an eigenbasis of the multiplication operator, with eigenvalues $\lambda_+$ and $\lambda_-$. The scalar regime has a repeated eigenvalue, the zero-divisor regime keeps a two-term decomposition with one zero eigenvalue, and there is no nilpotent regime. The two minimal ideals $S_\pm=\mathbb{R}\Pi_\pm$ are the spinor spaces: a spinor is a single real coefficient on one of them, and after complexification a single complex coefficient.
 
 | Question | Answer |
 |---|---|
-| Algebra | $\mathbb{D}=\mathbb{R}[x]/(x^2-1)\cong\mathbb{R}\times\mathbb{R}$ |
+| Algebra | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)\cong\mathbb{R}\times\mathbb{R}$ |
 | Element | $Q=q+jq'$ |
 | Spectrum | $\sigma(Q)=\{\lambda_+,\lambda_-\}=\{q+q',q-q'\}$ |
 | Distinctness | $\lambda_+\neq\lambda_-\iff q'\neq0$ |
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$, independent of $Q$ |
 | Eigenprojections central? | yes |
 | Eigenvalue decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
-| Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$, with zero off-diagonal corners |
+| Peirce decomposition | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$, with zero off-diagonal corners |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
 | Matrix model | $M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, two real lines; one real spinor coordinate per Peirce copy |
-| Unit group | $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
+| Unit group | ${\mathbb{C}^{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 
-**Conventions.** The notation is fixed in *Algebra and Element Conventions*: the algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.
+**Conventions.** The notation is fixed in *Algebra and Element Conventions*: the algebra is $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.
 
 **Boundaries.** The complex case is the subject of *Eigenvalues and Diagonalisation*; the reduced biquaternion case is *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*; the biquaternion case is *The Biquaternion Eigenvalue Decomposition*; the Peirce and ideal theory is *Ideals and Peirce Decomposition of the Split-Complex Algebra*; the exponential and the logarithm built on the decomposition are those of *Split-Complex Exponential and Lie Group Structure*; and the polar forms are those of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. The general definition, existence and uniqueness of the eigenvalue decomposition are those of *The Eigenvalue Decomposition of an Element* and are not restated.
 
 ## The Spectrum and the Characteristic Polynomial
 
-**Definition.** Let $Q\in\mathbb{D}$. A real number $\mu$ is an **eigenvalue** of $Q$ if $Q-\mu$ is not invertible in $\mathbb{D}$; the set of eigenvalues is the **spectrum** $\sigma(Q)$. This is the definition of *The Eigenvalue Decomposition of an Element*, §*The Eigenvalues of an Element*.
+**Definition.** Let $Q\in\mathbb{C}^{\mathrm{spl}}$. A real number $\mu$ is an **eigenvalue** of $Q$ if $Q-\mu$ is not invertible in $\mathbb{C}^{\mathrm{spl}}$; the set of eigenvalues is the **spectrum** $\sigma(Q)$. This is the definition of *The Eigenvalue Decomposition of an Element*, §*The Eigenvalues of an Element*.
 
 **Notation.** The two eigenvalues are written $\lambda_\pm=q\pm q'$ when their values are exhibited, and $Q_\pm$ when they are read as idempotent coordinates. The test scalar of the definition is $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues.
 
@@ -108,7 +108,7 @@ $$
 \Pi_+^2=\Pi_+,\qquad \Pi_-^2=\Pi_-,\qquad \Pi_+\Pi_-=\Pi_-\Pi_+=0,\qquad \Pi_++\Pi_-=1.
 $$
 
-They are therefore **complementary orthogonal idempotents**. In $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ each is a minimal idempotent, and the pair $(\Pi_+,\Pi_-)$ is a **resolution of the identity** into minimal idempotents. Since $\mathbb{D}$ is commutative, $\Pi_\pm$ are **central**. By the classification of *Square Roots of One and the Idempotents of the Split-Complex Algebra*, §*The Classification of the Idempotents*, the algebra has exactly four idempotents, $0,1,\Pi_+,\Pi_-$, so $\{\Pi_+,\Pi_-\}$ is the only nontrivial complementary pair.
+They are therefore **complementary orthogonal idempotents**. In $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$ each is a minimal idempotent, and the pair $(\Pi_+,\Pi_-)$ is a **resolution of the identity** into minimal idempotents. Since $\mathbb{C}^{\mathrm{spl}}$ is commutative, $\Pi_\pm$ are **central**. By the classification of *Square Roots of One and the Idempotents of the Split-Complex Algebra*, §*The Classification of the Idempotents*, the algebra has exactly four idempotents, $0,1,\Pi_+,\Pi_-$, so $\{\Pi_+,\Pi_-\}$ is the only nontrivial complementary pair.
 
 For $q'\neq0$, they are the **eigenprojections** of $Q$, with eigenvalues $\lambda_+=q+q'$ and $\lambda_-=q-q'$:
 
@@ -212,54 +212,54 @@ The data of the decomposition are collected in the table.
 
 **The Peirce decomposition relative to $\Pi_+$ is the direct product $\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$, with vanishing mixed corners.**
 
-Let $e=\Pi_+$, so that $1-e=\Pi_-$. The **Peirce decomposition** of the algebra $\mathbb{D}$ relative to $e$ is
+Let $e=\Pi_+$, so that $1-e=\Pi_-$. The **Peirce decomposition** of the algebra $\mathbb{C}^{\mathrm{spl}}$ relative to $e$ is
 
 $$
-\mathbb{D}
+\mathbb{C}^{\mathrm{spl}}
 =
-e\mathbb{D}e\oplus e\mathbb{D}(1-e)\oplus(1-e)\mathbb{D}e\oplus(1-e)\mathbb{D}(1-e).
+e\mathbb{C}^{\mathrm{spl}}e\oplus e\mathbb{C}^{\mathrm{spl}}(1-e)\oplus(1-e)\mathbb{C}^{\mathrm{spl}}e\oplus(1-e)\mathbb{C}^{\mathrm{spl}}(1-e).
 $$
 
-Write $\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau$ for $\sigma,\tau\in\{+,-\}$, in the notation of *Ideals and Peirce Decomposition of the Split-Complex Algebra*, §*The Peirce Decomposition*. Because $\mathbb{D}$ is commutative and $\Pi_+\Pi_-=0$, the off-diagonal Peirce components vanish:
+Write $\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}=\Pi_\sigma\mathbb{C}^{\mathrm{spl}}\Pi_\tau$ for $\sigma,\tau\in\{+,-\}$, in the notation of *Ideals and Peirce Decomposition of the Split-Complex Algebra*, §*The Peirce Decomposition*. Because $\mathbb{C}^{\mathrm{spl}}$ is commutative and $\Pi_+\Pi_-=0$, the off-diagonal Peirce components vanish:
 
 $$
-\mathbb{D}_{+-}=\Pi_+\mathbb{D}\Pi_-=0,
+\mathbb{C}^{\mathrm{spl}}_{+-}=\Pi_+\mathbb{C}^{\mathrm{spl}}\Pi_-=0,
 \qquad
-\mathbb{D}_{-+}=\Pi_-\mathbb{D}\Pi_+=0.
+\mathbb{C}^{\mathrm{spl}}_{-+}=\Pi_-\mathbb{C}^{\mathrm{spl}}\Pi_+=0.
 $$
 
 Hence the Peirce decomposition collapses to a **direct sum of algebras**
 
 $$
-\mathbb{D}
+\mathbb{C}^{\mathrm{spl}}
 =
-\mathbb{D}_{++}\oplus\mathbb{D}_{--}
+\mathbb{C}^{\mathrm{spl}}_{++}\oplus\mathbb{C}^{\mathrm{spl}}_{--}
 =
 \mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-,
 $$
 
-of total dimension $1+1+0+0=2$. The summands $\mathbb{D}_{\pm\pm}=\mathbb{R}\Pi_\pm$ are the minimal two-sided ideals of $\mathbb{D}$, as in *Ideals and Peirce Decomposition of the Split-Complex Algebra*, §*The Two-Sided Ideals*.
+of total dimension $1+1+0+0=2$. The summands $\mathbb{C}^{\mathrm{spl}}_{\pm\pm}=\mathbb{R}\Pi_\pm$ are the minimal two-sided ideals of $\mathbb{C}^{\mathrm{spl}}$, as in *Ideals and Peirce Decomposition of the Split-Complex Algebra*, §*The Two-Sided Ideals*.
 
 The four corners are collected in the table.
 
 | Corner | Definition | Value | Dimension over $\mathbb{R}$ |
 |---|---|---|---|
-| $\mathbb{D}_{++}$ | $\Pi_+\mathbb{D}\Pi_+$ | $\mathbb{R}\Pi_+$ | $1$ |
-| $\mathbb{D}_{+-}$ | $\Pi_+\mathbb{D}\Pi_-$ | $0$ | $0$ |
-| $\mathbb{D}_{-+}$ | $\Pi_-\mathbb{D}\Pi_+$ | $0$ | $0$ |
-| $\mathbb{D}_{--}$ | $\Pi_-\mathbb{D}\Pi_-$ | $\mathbb{R}\Pi_-$ | $1$ |
+| $\mathbb{C}^{\mathrm{spl}}_{++}$ | $\Pi_+\mathbb{C}^{\mathrm{spl}}\Pi_+$ | $\mathbb{R}\Pi_+$ | $1$ |
+| $\mathbb{C}^{\mathrm{spl}}_{+-}$ | $\Pi_+\mathbb{C}^{\mathrm{spl}}\Pi_-$ | $0$ | $0$ |
+| $\mathbb{C}^{\mathrm{spl}}_{-+}$ | $\Pi_-\mathbb{C}^{\mathrm{spl}}\Pi_+$ | $0$ | $0$ |
+| $\mathbb{C}^{\mathrm{spl}}_{--}$ | $\Pi_-\mathbb{C}^{\mathrm{spl}}\Pi_-$ | $\mathbb{R}\Pi_-$ | $1$ |
 
 The element $Q$ and every polynomial in $Q$ lie in the diagonal part
 
 $$
-\mathbb{D}_{++}\oplus\mathbb{D}_{--}
+\mathbb{C}^{\mathrm{spl}}_{++}\oplus\mathbb{C}^{\mathrm{spl}}_{--}
 =
 \operatorname{span}_{\mathbb{R}}\{\Pi_+,\Pi_-\}
 =
-\mathbb{D}.
+\mathbb{C}^{\mathrm{spl}}.
 $$
 
-The last equality is the commutative phenomenon: the diagonal part is the whole algebra, because the off-diagonal corners vanish. Since $\mathbb{D}$ is commutative, the centraliser of $Q$ is $\mathbb{D}$ for every $Q$. The subalgebra generated by $Q$ is different: $\mathbb{R}[Q]=\mathbb{D}$ when $q'\neq0$, since $\{1,Q\}$ is then a basis, while $\mathbb{R}[Q]=\mathbb{R}$ in the scalar regime $q'=0$.
+The last equality is the commutative phenomenon: the diagonal part is the whole algebra, because the off-diagonal corners vanish. Since $\mathbb{C}^{\mathrm{spl}}$ is commutative, the centraliser of $Q$ is $\mathbb{C}^{\mathrm{spl}}$ for every $Q$. The subalgebra generated by $Q$ is different: $\mathbb{R}[Q]=\mathbb{C}^{\mathrm{spl}}$ when $q'\neq0$, since $\{1,Q\}$ is then a basis, while $\mathbb{R}[Q]=\mathbb{R}$ in the scalar regime $q'=0$.
 
 On $Q$ the Peirce decomposition reads
 
@@ -272,7 +272,7 @@ with zero mixed components. The eigenvalue decomposition is therefore the Peirce
 
 ## The Eigenbasis
 
-**In the distinct case the fixed idempotents $\Pi_\pm$ form a basis of $\mathbb{D}$, and in this basis multiplication by $Q$ is diagonal.**
+**In the distinct case the fixed idempotents $\Pi_\pm$ form a basis of $\mathbb{C}^{\mathrm{spl}}$, and in this basis multiplication by $Q$ is diagonal.**
 
 ### The Basis
 
@@ -288,7 +288,7 @@ and they are complete, $\Pi_++\Pi_-=1$. They are linearly independent: from $a\P
 $$
 (\Pi_+,\Pi_-)
 $$
-is a basis of the plane $\mathbb{D}$.
+is a basis of the plane $\mathbb{C}^{\mathrm{spl}}$.
 
 **Coordinates.** Expanding a general element $Q_2=x_0+x_1j$ gives
 $$
@@ -303,7 +303,7 @@ $$
 
 ### The Action of $Q$ and the Eigenbasis
 
-**Definition.** An **eigenvector** of $Q$ is a nonzero $Q_2$ with $QQ_2=\mu Q_2$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $Q$ is a basis of $\mathbb{D}$ consisting of eigenvectors.
+**Definition.** An **eigenvector** of $Q$ is a nonzero $Q_2$ with $QQ_2=\mu Q_2$ for some scalar $\mu$, and $\mu$ is the **eigenvalue**. An **eigenbasis** of $Q$ is a basis of $\mathbb{C}^{\mathrm{spl}}$ consisting of eigenvectors.
 
 In the basis $(\Pi_+,\Pi_-)$ the action is diagonal:
 $$
@@ -343,21 +343,21 @@ The decomposition $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ gives every power, every pol
 
 The eigenbasis is the basis in which the two Peirce coordinates of $Q$ are the two eigenvalues.
 
-**Nilpotents.** There are none. If $N=\nu_+\Pi_++\nu_-\Pi_-$ satisfies $N^2=0$, then $\nu_+^2=\nu_-^2=0$, and over $\mathbb{R}$ this forces $\nu_+=\nu_-=0$, hence $N=0$. The off-diagonal Peirce corners $\mathbb{D}_{+-}$ and $\mathbb{D}_{-+}$ both vanish, so there is no off-diagonal direction in which a nilpotent could live. The nilpotent construction that the biquaternion case requires has no analogue in the split-complex algebra.
+**Nilpotents.** There are none. If $N=\nu_+\Pi_++\nu_-\Pi_-$ satisfies $N^2=0$, then $\nu_+^2=\nu_-^2=0$, and over $\mathbb{R}$ this forces $\nu_+=\nu_-=0$, hence $N=0$. The off-diagonal Peirce corners $\mathbb{C}^{\mathrm{spl}}_{+-}$ and $\mathbb{C}^{\mathrm{spl}}_{-+}$ both vanish, so there is no off-diagonal direction in which a nilpotent could live. The nilpotent construction that the biquaternion case requires has no analogue in the split-complex algebra.
 
 ### The Spinor Spaces
 
-**A spinor space of $\mathbb{D}$ is a minimal nonzero ideal; the two spinor spaces are the real lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and a spinor is one real coefficient on one of them.**
+**A spinor space of $\mathbb{C}^{\mathrm{spl}}$ is a minimal nonzero ideal; the two spinor spaces are the real lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and a spinor is one real coefficient on one of them.**
 
-Since $\mathbb{D}$ is commutative, its left, right and two-sided ideals coincide. The minimal nonzero ideals are
+Since $\mathbb{C}^{\mathrm{spl}}$ is commutative, its left, right and two-sided ideals coincide. The minimal nonzero ideals are
 $$
-S_+=\mathbb{D}\Pi_+=\mathbb{R}\Pi_+,
+S_+=\mathbb{C}^{\mathrm{spl}}\Pi_+=\mathbb{R}\Pi_+,
 \qquad
-S_-=\mathbb{D}\Pi_-=\mathbb{R}\Pi_-,
+S_-=\mathbb{C}^{\mathrm{spl}}\Pi_-=\mathbb{R}\Pi_-,
 $$
 each one-dimensional over $\mathbb{R}$, and
 $$
-\mathbb{D}=S_+\oplus S_-.
+\mathbb{C}^{\mathrm{spl}}=S_+\oplus S_-.
 $$
 The notation $S_\pm$ is reserved for these two spaces.
 
@@ -391,7 +391,7 @@ a_2\longmapsto\lambda_-a_2.
 $$
 A general element $Q_2=\xi_++\xi_-$ is not a spinor of one Peirce copy: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
 
-**Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $a_1,a_2\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
+**Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{C}^{\mathrm{spl}}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $a_1,a_2\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
 $$
 S_+^{\mathbb{C}}=\mathbb{C}\Pi_+,
 \qquad
@@ -442,7 +442,7 @@ P^{-1}[L_Q]_{(1,j)}P=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
 The matrix $[L_Q]_{(1,j)}$ is symmetric, and it is conformal for the split form $g=\operatorname{diag}(1,-1)$: $[L_Q]_{(1,j)}^{T}g[L_Q]_{(1,j)}=\langle Q\rangle_{*}g$. The eigenbasis diagonalises it. The vanishing of the off-diagonal entries is the matrix statement that the Peirce decomposition has no mixed part.
 
-**Nilpotents in the matrix model.** Since the image of the Peirce model is the diagonal subalgebra, no nonzero nilpotent matrix is in it: a diagonal matrix with square zero is zero. The matrix units $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{R})$, but they are not in the image of $\mathbb{D}$. The absence is the matrix form of the reducedness of the algebra.
+**Nilpotents in the matrix model.** Since the image of the Peirce model is the diagonal subalgebra, no nonzero nilpotent matrix is in it: a diagonal matrix with square zero is zero. The matrix units $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{R})$, but they are not in the image of $\mathbb{C}^{\mathrm{spl}}$. The absence is the matrix form of the reducedness of the algebra.
 
 ## Powers, Polynomial Calculus, and the Group of Units
 
@@ -481,7 +481,7 @@ since $\bar Q=\lambda_-\Pi_+ + \lambda_+\Pi_-$ and $\langle Q\rangle_{*}=\lambda
 **The group of units.** The map
 
 $$
-\mathbb{D}^\times\longrightarrow\mathbb{R}^\times\times\mathbb{R}^\times,
+{\mathbb{C}^{\mathrm{spl}}}^\times\longrightarrow\mathbb{R}^\times\times\mathbb{R}^\times,
 \qquad
 Q\longmapsto(\lambda_+,\lambda_-)=(q+q',q-q')
 $$
@@ -495,21 +495,21 @@ The results are collected in the table.
 | Powers | $Q^n=\lambda_+^n\Pi_++\lambda_-^n\Pi_-$ | $n\geq0$ |
 | Polynomials | $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ | every $f\in\mathbb{R}[X]$ |
 | Inverse | $Q^{-1}=\lambda_+^{-1}\Pi_++\lambda_-^{-1}\Pi_-$ | $Q$ a unit |
-| Unit criterion | $Q\in\mathbb{D}^\times\iff\lambda_+\lambda_-\neq0$ | — |
-| Group of units | $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ | — |
+| Unit criterion | $Q\in{\mathbb{C}^{\mathrm{spl}}}^\times\iff\lambda_+\lambda_-\neq0$ | — |
+| Group of units | ${\mathbb{C}^{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ | — |
 
 ## The Algebraic Fibre of the Decomposition
 
 **The eigenvalue coordinates and the basis coordinates are two linear coordinate systems on the same algebra.**
 
-Fix the pair, that is, fix the labelling of $\Pi_+$ and $\Pi_-$. Every element of $\mathbb{D}$ is
+Fix the pair, that is, fix the labelling of $\Pi_+$ and $\Pi_-$. Every element of $\mathbb{C}^{\mathrm{spl}}$ is
 
 $$
 Q_2=\mu_+\Pi_+ + \mu_-\Pi_-,
 \qquad \mu_\pm\in\mathbb{R},
 $$
 
-and the map $(\mu_+,\mu_-)\mapsto Q_2$ is an $\mathbb{R}$-linear isomorphism $\mathbb{R}^2\to\mathbb{D}$. For $\mu_+\neq\mu_-$ this is the eigenvalue decomposition of $Q_2$, with the eigenprojections $\Pi_\pm$ and the eigenvalue data $(\mu_+,\mu_-)$. For $\mu_+=\mu_-=a$ the element is $Q_2=a$, scalar; the two-term writing is still valid, but its coefficients are not distinct, so it is not an eigenvalue decomposition in the sense of the general definition. The eigenvalue decomposition is then the one-term writing $Q_2=a\cdot1$ of §*The Scalar Regime*.
+and the map $(\mu_+,\mu_-)\mapsto Q_2$ is an $\mathbb{R}$-linear isomorphism $\mathbb{R}^2\to\mathbb{C}^{\mathrm{spl}}$. For $\mu_+\neq\mu_-$ this is the eigenvalue decomposition of $Q_2$, with the eigenprojections $\Pi_\pm$ and the eigenvalue data $(\mu_+,\mu_-)$. For $\mu_+=\mu_-=a$ the element is $Q_2=a$, scalar; the two-term writing is still valid, but its coefficients are not distinct, so it is not an eigenvalue decomposition in the sense of the general definition. The eigenvalue decomposition is then the one-term writing $Q_2=a\cdot1$ of §*The Scalar Regime*.
 
 The unordered spectrum is the image of the map $(\mu_+,\mu_-)\mapsto\{\mu_+,\mu_-\}$. Off the diagonal it is two-to-one: the two preimages of $\{\mu_+,\mu_-\}$ are $\mu_+\Pi_+ + \mu_-\Pi_-$ and $\mu_-\Pi_+ + \mu_+\Pi_-$, which differ by $(\mu_+-\mu_-)(\Pi_+-\Pi_-)=(\mu_+-\mu_-)j\neq0$. The ambiguity is exactly the exchange of the two labels.
 
@@ -563,7 +563,7 @@ The lattice $L$ is a coordinate lattice, not an intrinsic invariant of $Q$. Nor 
 
 **On the identity component the decomposition is the hyperbolic polar form $Q=r(\cosh t+j\sinh t)$.**
 
-Let $Q$ be a unit with $\langle Q\rangle_{*}>0$ and $q>0$, so that $Q$ lies in the identity component of $\mathbb{D}^\times$. Then $\lambda_+=q+q'>0$ and $\lambda_-=q-q'>0$. Put
+Let $Q$ be a unit with $\langle Q\rangle_{*}>0$ and $q>0$, so that $Q$ lies in the identity component of ${\mathbb{C}^{\mathrm{spl}}}^\times$. Then $\lambda_+=q+q'>0$ and $\lambda_-=q-q'>0$. Put
 
 $$
 r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}=\sqrt{\lambda_+\lambda_-}>0,
@@ -607,7 +607,7 @@ q=\frac{\lambda_++\lambda_-}{2},
 q'=\frac{\lambda_+-\lambda_-}{2}.
 $$
 
-The four components of $\mathbb{D}^\times$ are cut out by the signs of $\lambda_+$ and $\lambda_-$, in the patterns $(+,+)$, $(-,-)$, $(+,-)$ and $(-,+)$. The identity component is the pattern $(+,+)$. On the opposite timelike component, where $\langle Q\rangle_{*}>0$ and $q<0$, the pattern is $(-,-)$, and with the same $r$ and $t=\operatorname{artanh}(q'/q)$ the writing $Q=-r(\cosh t+j\sinh t)$ gives $\lambda_\pm=-r\exp(\pm t)$. In the spacelike regime $\langle Q\rangle_{*}<0$, the two eigenvalues have opposite signs; with the same modulus $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and with $\varepsilon=\operatorname{sgn}q'\in\{\pm1\}$, one has $q=r\sinh s$, $q'=\varepsilon r\cosh s$, and
+The four components of ${\mathbb{C}^{\mathrm{spl}}}^\times$ are cut out by the signs of $\lambda_+$ and $\lambda_-$, in the patterns $(+,+)$, $(-,-)$, $(+,-)$ and $(-,+)$. The identity component is the pattern $(+,+)$. On the opposite timelike component, where $\langle Q\rangle_{*}>0$ and $q<0$, the pattern is $(-,-)$, and with the same $r$ and $t=\operatorname{artanh}(q'/q)$ the writing $Q=-r(\cosh t+j\sinh t)$ gives $\lambda_\pm=-r\exp(\pm t)$. In the spacelike regime $\langle Q\rangle_{*}<0$, the two eigenvalues have opposite signs; with the same modulus $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and with $\varepsilon=\operatorname{sgn}q'\in\{\pm1\}$, one has $q=r\sinh s$, $q'=\varepsilon r\cosh s$, and
 
 $$
 \lambda_+=\varepsilon r\exp(\varepsilon s),
@@ -682,15 +682,15 @@ even though it is not a unit. This is not a failure of the eigenvalue decomposit
 
 **There are no nonzero nilpotent elements, so there is no Jordan-block regime.**
 
-The algebra $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ is a product of fields, hence reduced: it has **no nonzero nilpotent elements**. Indeed, if $Q^2=0$ then $\lambda_+^2=\lambda_-^2=0$, so $\lambda_+=\lambda_-=0$ and $Q=0$. Therefore the nilpotent (Jordan-block) regime of the biquaternion case has no analogue here. Every element of $\mathbb{D}$ has a squarefree minimal polynomial and is semisimple: $p_Q=(X-\lambda_+)(X-\lambda_-)$ for $q'\neq0$ (which is $X(X-2q)$ in the zero-divisor subcase, where $\{\lambda_+,\lambda_-\}=\{2q,0\}$), and $X-q=X-\lambda_+$ for $q'=0$. The only failure of distinct eigenvalues is the scalar case $q'=0$, where $\lambda_+=\lambda_-=q$.
+The algebra $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is a product of fields, hence reduced: it has **no nonzero nilpotent elements**. Indeed, if $Q^2=0$ then $\lambda_+^2=\lambda_-^2=0$, so $\lambda_+=\lambda_-=0$ and $Q=0$. Therefore the nilpotent (Jordan-block) regime of the biquaternion case has no analogue here. Every element of $\mathbb{C}^{\mathrm{spl}}$ has a squarefree minimal polynomial and is semisimple: $p_Q=(X-\lambda_+)(X-\lambda_-)$ for $q'\neq0$ (which is $X(X-2q)$ in the zero-divisor subcase, where $\{\lambda_+,\lambda_-\}=\{2q,0\}$), and $X-q=X-\lambda_+$ for $q'=0$. The only failure of distinct eigenvalues is the scalar case $q'=0$, where $\lambda_+=\lambda_-=q$.
 
 ## Remarks
 
-1. **Relation to the model algebra.** Under $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$, the eigenvalue decomposition is literally the product decomposition: $\lambda_+=q+q'$ and $\lambda_-=q-q'$ are the two components, $\Pi_+$ and $\Pi_-$ are the standard minimal idempotents, and the Lagrange–Sylvester formulas are the interpolation formulas in the product algebra.
+1. **Relation to the model algebra.** Under $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$, the eigenvalue decomposition is literally the product decomposition: $\lambda_+=q+q'$ and $\lambda_-=q-q'$ are the two components, $\Pi_+$ and $\Pi_-$ are the standard minimal idempotents, and the Lagrange–Sylvester formulas are the interpolation formulas in the product algebra.
 
-2. **Centrality and the Peirce decomposition.** The idempotents $\Pi_\pm$ are central, so the Peirce decomposition is a direct sum of two-sided ideals $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-\cong\mathbb{R}\oplus\mathbb{R}$, and the off-diagonal Peirce components vanish. This is the commutative shadow of the biquaternion Peirce decomposition, where the idempotents are noncentral and the off-diagonal components are nonzero.
+2. **Centrality and the Peirce decomposition.** The idempotents $\Pi_\pm$ are central, so the Peirce decomposition is a direct sum of two-sided ideals $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-\cong\mathbb{R}\oplus\mathbb{R}$, and the off-diagonal Peirce components vanish. This is the commutative shadow of the biquaternion Peirce decomposition, where the idempotents are noncentral and the off-diagonal components are nonzero.
 
-3. **Uniqueness and labelling.** The pair $\{\Pi_+,\Pi_-\}$ is the only nontrivial complementary pair of idempotents in $\mathbb{D}$. The labels are exchanged by $j\mapsto-j$, which sends $q'$ to $-q'$ and exchanges $\lambda_+=q+q'$ and $\lambda_-=q-q'$. Unlike the biquaternion case, there is no non-discrete family of eigenprojections.
+3. **Uniqueness and labelling.** The pair $\{\Pi_+,\Pi_-\}$ is the only nontrivial complementary pair of idempotents in $\mathbb{C}^{\mathrm{spl}}$. The labels are exchanged by $j\mapsto-j$, which sends $q'$ to $-q'$ and exchanges $\lambda_+=q+q'$ and $\lambda_-=q-q'$. Unlike the biquaternion case, there is no non-discrete family of eigenprojections.
 
 4. **Degenerate regimes.** The eigenvalue decomposition with distinct eigenvalues requires $q'\neq0$, equivalently $\lambda_+\neq\lambda_-$. The scalar regime $q'=0$ has the repeated eigenvalue $\lambda_+=\lambda_-=q$, the one-term eigenprojection $1$, and a unique two-term refinement. The zero-divisor regime $\langle Q\rangle_{*}=0$, $Q\neq0$, consists of scalar multiples of idempotents and still admits an eigenvalue decomposition, with eigenvalues $2q$ and $0$. There is no Jordan or nilpotent regime, because the algebra is reduced, and every element is semisimple.
 
@@ -726,13 +726,13 @@ which are real; they are distinct exactly when $q'\neq0$. In that case the idemp
 | Distinctness | $\lambda_+\neq\lambda_-\iff q'\neq0$ |
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
 | Eigenvalue decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-=(q+q')\Pi_++(q-q')\Pi_-$ |
-| Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ |
+| Peirce decomposition | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
 | Matrix model | $M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
 | Nilpotents | none; the algebra is reduced, so $N^2=0$ implies $N=0$ |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, the two minimal ideals; spinors $a_1\Pi_+$ and $a_2\Pi_-$ |
 | Polynomial calculus | $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ |
-| Group of units | $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
+| Group of units | ${\mathbb{C}^{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 
 ### Regimes
 
@@ -746,7 +746,7 @@ The zero-divisor row is a subcase of the distinct row, separated because one eig
 | Jordan | absent: the algebra is reduced | — | — | — |
 | Nilpotent | absent; only $Q=0$ | — | — | — |
 
-The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau$. Its off-diagonal corners vanish, and its diagonal part is the whole algebra $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The element $Q$ has the diagonal coordinates $\lambda_+=q+q'$ and $\lambda_-=q-q'$ and zero mixed coordinates. The centraliser of $Q$ is all of $\mathbb{D}$; the subalgebra $\mathbb{R}[Q]$ is all of $\mathbb{D}$ exactly when $Q$ is not scalar. The polynomial calculus, the inverse and the group isomorphism $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ all follow from the decomposition. The hyperbolic polar form gives the same data as $\lambda_\pm=r \exp(\pm t)$ on the identity component.
+The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}=\Pi_\sigma\mathbb{C}^{\mathrm{spl}}\Pi_\tau$. Its off-diagonal corners vanish, and its diagonal part is the whole algebra $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The element $Q$ has the diagonal coordinates $\lambda_+=q+q'$ and $\lambda_-=q-q'$ and zero mixed coordinates. The centraliser of $Q$ is all of $\mathbb{C}^{\mathrm{spl}}$; the subalgebra $\mathbb{R}[Q]$ is all of $\mathbb{C}^{\mathrm{spl}}$ exactly when $Q$ is not scalar. The polynomial calculus, the inverse and the group isomorphism ${\mathbb{C}^{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ all follow from the decomposition. The hyperbolic polar form gives the same data as $\lambda_\pm=r \exp(\pm t)$ on the identity component.
 
 ### Comparison with the Neighbouring Cases
 
@@ -776,7 +776,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$ | Split-complex algebra, dimension $2$ over $\mathbb{R}$ |
+| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ | Split-complex algebra, dimension $2$ over $\mathbb{R}$ |
 | $Q=q+jq'$ | General split-complex number, $q,q'\in\mathbb{R}$ |
 | $\bar Q=q-jq'$ | Split-complex conjugate |
 | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2=\lambda_+\lambda_-$ | Norm, signature $(1,1)$ |
@@ -793,11 +793,11 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $E_{ij}$ | Matrix units of the $2\times2$ model |
 | $a_1,a_2$ | Spinor coordinates on $S_+$ and $S_-$, the two diagonal entries of the matrix in the eigenbasis |
 | $\alpha,\beta$ | Scales of the eigenbasis $(\alpha\Pi_+,\beta\Pi_-)$ |
-| $S_\pm=\mathbb{D}\Pi_\pm=\mathbb{R}\Pi_\pm$ | The two spinor spaces, the two minimal ideals (real lines) |
-| $\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau$ | Peirce corners of the pair $\Pi_\pm$, $\sigma,\tau\in\{+,-\}$ |
+| $S_\pm=\mathbb{C}^{\mathrm{spl}}\Pi_\pm=\mathbb{R}\Pi_\pm$ | The two spinor spaces, the two minimal ideals (real lines) |
+| $\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}=\Pi_\sigma\mathbb{C}^{\mathrm{spl}}\Pi_\tau$ | Peirce corners of the pair $\Pi_\pm$, $\sigma,\tau\in\{+,-\}$ |
 | $\mathbb{R}[Q]$ | Subalgebra generated by $Q$ |
-| $C(Q)=\mathbb{D}$ | Centraliser; the algebra is commutative |
-| $\mathbb{D}^\times=\{Q\in\mathbb{D}:\langle Q\rangle_{*}\neq0\}$ | Group of units, characterised by $\lambda_+\lambda_-\neq0$ |
+| $C(Q)=\mathbb{C}^{\mathrm{spl}}$ | Centraliser; the algebra is commutative |
+| ${\mathbb{C}^{\mathrm{spl}}}^\times=\{Q\in\mathbb{C}^{\mathrm{spl}}:\langle Q\rangle_{*}\neq0\}$ | Group of units, characterised by $\lambda_+\lambda_-\neq0$ |
 | $L=\{(m/2,n/2):m,n\in\mathbb{Z},\ m\equiv n\pmod2\}$ | Lattice of basis-coordinate data for integral eigenvalue coordinates $\mu_\pm\in\mathbb{Z}$ |
 | $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $t=\operatorname{artanh}(q'/q)$ | Modulus and hyperbolic angle, with $\lambda_\pm=r \exp(\pm t)$ on the identity component |
 | $Q_2=a_1\Pi_++a_2\Pi_-$ | General element in the spinor coordinates, with matrix $\operatorname{diag}(a_1,a_2)$ |

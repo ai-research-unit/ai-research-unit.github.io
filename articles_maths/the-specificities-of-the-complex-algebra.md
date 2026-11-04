@@ -42,7 +42,7 @@ The algebraic closure of $\mathbb{C}$ is the second specificity: every non-const
 
 **Proof.** Of $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, the algebra $\mathbb{H}$ is not commutative, and $\mathbb{R}$ is ordered by its usual order, which is compatible with its multiplication; the field $\mathbb{C}$ is commutative and carries no order compatible with its multiplication, since a compatible order would force $-1=i^{2}>0$ from $i\neq0$. Hence $\mathbb{C}$ is the only algebra in the list with both properties.
 
-Frobenius's theorem is cited as standard, as it is in *Complex Algebra*; the non-orderability of $\mathbb{C}$ is *Complex Algebra* and *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The octonions are omitted, the theorem being stated for the associative algebras, and the split system $\mathbb{D}$ is excluded because it is not a division algebra. The place of $\mathbb{C}$ in the list is the reason the chapter is short: the complex field is the largest of the three that is commutative, so that non-commutativity, which is the source of ten of the twelve structures, has no instance here.
+Frobenius's theorem is cited as standard, as it is in *Complex Algebra*; the non-orderability of $\mathbb{C}$ is *Complex Algebra* and *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The octonions are omitted, the theorem being stated for the associative algebras, and the split system $\mathbb{C}^{\mathrm{spl}}$ is excluded because it is not a division algebra. The place of $\mathbb{C}$ in the list is the reason the chapter is short: the complex field is the largest of the three that is commutative, so that non-commutativity, which is the source of ten of the twelve structures, has no instance here.
 
 ## The Consequences
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The two forms of the split-complex space, the symmetric bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the conjugate-symmetric Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$, are read here on the four distinguished lines of the algebra — the real line $\mathbb{R}_{\mathbb{D}}$, the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, and the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$ — one line to a section, with the table of the restrictions below and the value on a general pair displayed for each.
+The two forms of the split-complex space, the symmetric bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the conjugate-symmetric Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$, are read here on the four distinguished lines of the algebra — the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, and the two idempotent lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$ — one line to a section, with the table of the restrictions below and the value on a general pair displayed for each.
 
 The forms and their norms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*; the four lines, their bases and dimensions are *Split-Complexoid Subspaces*; the restriction of a form to a subspace is stated once and is not re-derived. The products read on the same lines are *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*, above this article in this category. This article owns the **value of the two forms on each line, their ranks and their null sets, and the picture of the level sets of the Hermitian norm**.
 
@@ -16,11 +16,11 @@ $$
 \varphi|_U(Q_1,Q_2)=\varphi(Q_1,Q_2)\big|_{Q_1,Q_2\in U},
 $$
 
-and restricting changes only the two arguments. Symmetry is inherited by the bilinear form and conjugate-symmetry by the Hermitian form; the value on a general pair is read off the coordinates of the two elements. This is the restriction rule of the two forms, quoted here and not re-proved. The only thing that is new on $\mathbb{D}$ is that the two forms, which agree on the real line, differ elsewhere, and that the two idempotent lines annihilate the Hermitian form.
+and restricting changes only the two arguments. Symmetry is inherited by the bilinear form and conjugate-symmetry by the Hermitian form; the value on a general pair is read off the coordinates of the two elements. This is the restriction rule of the two forms, quoted here and not re-proved. The only thing that is new on $\mathbb{C}^{\mathrm{spl}}$ is that the two forms, which agree on the real line, differ elsewhere, and that the two idempotent lines annihilate the Hermitian form.
 
 ## The Real Subspace
 
-On $\mathbb{R}_{\mathbb{D}}$ the elements are real, $Q_1=q_1$, $Q_2=q_2$, with $q'_1,q'_2=0$. The two forms coincide and are the product of the two real coordinates:
+On $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ the elements are real, $Q_1=q_1$, $Q_2=q_2$, with $q'_1,q'_2=0$. The two forms coincide and are the product of the two real coordinates:
 
 $$
 \langle q_1,q_2\rangle=q_1q_2,
@@ -32,7 +32,7 @@ Both are real-valued, symmetric, non-degenerate and of **rank $1$**; the algebra
 
 ## The Split Imaginary Subspace
 
-On $j\mathbb{R}_{\mathbb{D}}$ the elements are $Q_1=jq'_1$, $Q_2=jq'_2$. The product is computed with $j^2=+1$, and the conjugation is $\overline{jq'_2}=-jq'_2$:
+On $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ the elements are $Q_1=jq'_1$, $Q_2=jq'_2$. The product is computed with $j^2=+1$, and the conjugation is $\overline{jq'_2}=-jq'_2$:
 
 $$
 \boxed{\;
@@ -76,8 +76,8 @@ a non-zero element of the line for $\lambda,\mu\neq0$, so the restriction of $\l
 
 | line | $\langle\cdot,\cdot\rangle$ on a general pair | $\langle\cdot,\cdot\rangle_{*}$ on a general pair | rank $\langle\cdot,\cdot\rangle$ | rank $\langle\cdot,\cdot\rangle_{*}$ | null set of $\langle\cdot,\cdot\rangle_{*}$ |
 |---|---|---|---|---|---|
-| $\mathbb{R}_{\mathbb{D}}$ | $q_1q_2$ | $q_1q_2$ | $1$ | $1$ | $\{0\}$ |
-| $j\mathbb{R}_{\mathbb{D}}$ | $q'_1q'_2$ | $-q'_1q'_2$ | $1$ | $1$ | $\{0\}$ |
+| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $q_1q_2$ | $q_1q_2$ | $1$ | $1$ | $\{0\}$ |
+| $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $q'_1q'_2$ | $-q'_1q'_2$ | $1$ | $1$ | $\{0\}$ |
 | $\mathbb{R}\Pi_1$ | $\lambda\mu\Pi_1$ | $0$ | $1$ | $0$ | the whole line |
 | $\mathbb{R}\Pi_2$ | $\lambda\mu\Pi_2$ | $0$ | $1$ | $0$ | the whole line |
 
@@ -89,7 +89,7 @@ $$
 \boxed{\; \langle Q\rangle_{*}=c\iff q^2-q'^2=c \;}.
 $$
 
-For $c>0$ this is a pair of hyperbolas with transverse axis the real line $\mathbb{R}_{\mathbb{D}}$, with vertices at $q=\sqrt c$ and $q=-\sqrt c$; for $c<0$ a pair of hyperbolas with transverse axis the split imaginary line $j\mathbb{R}_{\mathbb{D}}$; and for $c=0$ the degenerate pair of lines $q=q'$ and $q=-q'$, which are the two idempotent lines. So the **two families of hyperbolas**, one spacelike and one timelike, replace the two families of circles of the complex case, and the degenerate level $c=0$ is the null cone itself, the pair of lines on which the form is isotropic and the ring has its zero divisors.
+For $c>0$ this is a pair of hyperbolas with transverse axis the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, with vertices at $q=\sqrt c$ and $q=-\sqrt c$; for $c<0$ a pair of hyperbolas with transverse axis the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$; and for $c=0$ the degenerate pair of lines $q=q'$ and $q=-q'$, which are the two idempotent lines. So the **two families of hyperbolas**, one spacelike and one timelike, replace the two families of circles of the complex case, and the degenerate level $c=0$ is the null cone itself, the pair of lines on which the form is isotropic and the ring has its zero divisors.
 
 On $\mathbb{C}$ the same construction gives $\lvert A\rvert^2=c$, a circle for every $c>0$ and the single point $A=0$ for $c=0$. The difference is the sign: the complex form is definite, so its positive level sets are circles and the zero level is a point; the split form is indefinite, so its two non-zero level sets are the two families of hyperbolas and its zero level is the two lines. The unit level $c=1$, the unit hyperbola, is the carrier of the group of hyperbolic rotations of *The Matrix Element Representations of the Split-Complexoid*, above this article in this category.
 
@@ -97,13 +97,13 @@ On $\mathbb{C}$ the same construction gives $\lvert A\rvert^2=c$, a circle for e
 
 On the complex field the Hermitian form is definite on both of its subspaces: $\langle a\rangle_{*}=a^2$ on the real line and $\langle ia'\rangle_{*}=a'^2$ on the pure imaginary line, both positive definite with null set the origin, and $\mathbb{C}$ has no idempotent line at all, because it has no non-trivial idempotents. So on $\mathbb{C}$ the Hermitian form is definite everywhere, and the level sets are circles.
 
-On $\mathbb{D}$ the Hermitian form is definite on each of the two eigenlines, with **opposite signs** — positive on $\mathbb{R}_{\mathbb{D}}$, negative on $j\mathbb{R}_{\mathbb{D}}$ — and is identically zero on each of the two idempotent lines. It is therefore not definite on $\mathbb{D}$, and the difference is produced by the two objects that $\mathbb{D}$ has and $\mathbb{C}$ does not: the sign $j^2=+1$, which flips the anti-fixed line to negative, and the two idempotents $\Pi_{1,2}$, on whose lines the form collapses to the zero form. The bilinear form, by contrast, is positive definite on both eigenlines and non-degenerate on both idempotent lines, and it is the form that stays faithful to the product everywhere.
+On $\mathbb{C}^{\mathrm{spl}}$ the Hermitian form is definite on each of the two eigenlines, with **opposite signs** — positive on $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, negative on $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ — and is identically zero on each of the two idempotent lines. It is therefore not definite on $\mathbb{C}^{\mathrm{spl}}$, and the difference is produced by the two objects that $\mathbb{C}^{\mathrm{spl}}$ has and $\mathbb{C}$ does not: the sign $j^2=+1$, which flips the anti-fixed line to negative, and the two idempotents $\Pi_{1,2}$, on whose lines the form collapses to the zero form. The bilinear form, by contrast, is positive definite on both eigenlines and non-degenerate on both idempotent lines, and it is the form that stays faithful to the product everywhere.
 
 ## Summary
 
 The symmetric bilinear form $\langle\cdot,\cdot\rangle$ and the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ of the split-complex space are read on the four distinguished lines. On the real line the two forms coincide and are the product $q_1q_2$, positive definite of rank $1$ with null set the origin. On the split imaginary line they part, $\langle\cdot,\cdot\rangle=+q'_1q'_2$ and $\langle\cdot,\cdot\rangle_{*}=-q'_1q'_2$, both of rank $1$ and null set the origin, the one positive definite and the other negative definite; this sign is the split sign. On the two idempotent lines the Hermitian form vanishes identically, each line being totally isotropic of rank $0$, while the bilinear form has rank $1$ with null set the origin and is orthogonal on the two lines.
 
-The level sets of the Hermitian norm $\langle\cdot\rangle_{*}=q^2-q'^2$ are two families of hyperbolas, spacelike for $c>0$ and timelike for $c<0$, with the degenerate level $\langle\cdot\rangle_{*}=0$ the two idempotent lines, the null cone of the zero divisors; they replace the circles of the complex case, whose definite Hermitian form has circles as positive level sets and a point as its zero level. The Hermitian form is definite on each eigenline but of opposite signs on the two, and zero on the idempotent lines, so on $\mathbb{D}$ it is not definite; the bilinear form, definite on the eigenlines and non-degenerate on the idempotent lines, is the one the product leaves faithful.
+The level sets of the Hermitian norm $\langle\cdot\rangle_{*}=q^2-q'^2$ are two families of hyperbolas, spacelike for $c>0$ and timelike for $c<0$, with the degenerate level $\langle\cdot\rangle_{*}=0$ the two idempotent lines, the null cone of the zero divisors; they replace the circles of the complex case, whose definite Hermitian form has circles as positive level sets and a point as its zero level. The Hermitian form is definite on each eigenline but of opposite signs on the two, and zero on the idempotent lines, so on $\mathbb{C}^{\mathrm{spl}}$ it is not definite; the bilinear form, definite on the eigenlines and non-degenerate on the idempotent lines, is the one the product leaves faithful.
 
 ## Summary of Notation
 
@@ -111,7 +111,7 @@ The level sets of the Hermitian norm $\langle\cdot\rangle_{*}=q^2-q'^2$ are two 
 |---|---|
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | the symmetric bilinear form |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\overline{Q_2}$ | the Hermitian form |
-| $\mathbb{R}_{\mathbb{D}}$, $j\mathbb{R}_{\mathbb{D}}$ | the real and split imaginary lines |
+| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | the real and split imaginary lines |
 | $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ | the idempotent lines, totally isotropic for $\langle\cdot,\cdot\rangle_{*}$ |
 | $\langle Q\rangle_{*}=q^2-q'^2$ | the Hermitian norm, the algebraic norm of $\langle\cdot\rangle_{*}$ |
 | $q=q'$ and $q=-q'$ | the null cone, the two idempotent lines |

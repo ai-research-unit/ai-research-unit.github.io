@@ -5,17 +5,17 @@
 
 The split-complex numbers are a commutative ring, and that ring is the subject of *Split-Complex Algebra*. The same underlying set, read as an algebra over $\mathbb{R}$, carries structures the ring axioms do not name: a real-linear product structure, a second product beside the multiplication, two pairings with their algebraic norms, a ternary operation, a pair of real matrix models, and a lattice of distinguished subspaces. This category gathers those structures, and this article states what they are and how they hang together.
 
-The guiding distinction is the one the whole synthetic part of the corpus draws: a *number system* is one object and its *algebraic structures* are the several algebras the same carrier admits. For $\mathbb{D}$ the carrier is the plane $\mathbb{D}_{\mathbb{R}}$ of real dimension two, and the structures are obtained from the single datum of the algebra together with its conjugation. The split sign $j^2=+1$ is the whole difference from the complex field, and it is the source of every degeneracy recorded below: the carrier is a ring and not a field, the Hermitian form is indefinite, the commutator lies on the split imaginary line, and no definite multiplicative norm exists. There is no third product and no hidden operation: the count below is exhaustive.
+The guiding distinction is the one the whole synthetic part of the corpus draws: a *number system* is one object and its *algebraic structures* are the several algebras the same carrier admits. For $\mathbb{C}^{\mathrm{spl}}$ the carrier is the plane $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ of real dimension two, and the structures are obtained from the single datum of the algebra together with its conjugation. The split sign $j^2=+1$ is the whole difference from the complex field, and it is the source of every degeneracy recorded below: the carrier is a ring and not a field, the Hermitian form is indefinite, the commutator lies on the split imaginary line, and no definite multiplicative norm exists. There is no third product and no hidden operation: the count below is exhaustive.
 
 ## The Split-Complexoid
 
-**Definition.** The **split-complexoid** is the pair $(\mathbb{D}, \bar\cdot)$ read as an algebra over $\mathbb{R}$: the real vector space $\mathbb{D}_{\mathbb{R}}$ together with the involution $\bar\cdot$. Every structure of this category is built from that pair alone.
+**Definition.** The **split-complexoid** is the pair $(\mathbb{C}^{\mathrm{spl}}, \bar\cdot)$ read as an algebra over $\mathbb{R}$: the real vector space $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ together with the involution $\bar\cdot$. Every structure of this category is built from that pair alone.
 
-**Proposition.** The realification doubles no structure and loses none: $\mathbb{D}_{\mathbb{R}}$ has real basis $1, j$ and real dimension $2$, and the real-linear multiplication by $j$ is the operator $J(Q_1) = jQ_1$, an involution of square $+\operatorname{id}$ with the two real eigenlines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. A real-linear map of the plane is $\mathbb{D}$-linear exactly when it commutes with $J$ and conjugate-linear exactly when it anticommutes; the $\mathbb{D}$-linear endomorphisms are the multiplications by an element and form the plane $\operatorname{End}_{\mathbb{D}}(\mathbb{D}) \cong \mathbb{D}$, the conjugate-linear ones form the complementary plane, and together they fill $\operatorname{End}_{\mathbb{R}}(\mathbb{D}) \cong M_2(\mathbb{R})$.
+**Proposition.** The realification doubles no structure and loses none: $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ has real basis $1, j$ and real dimension $2$, and the real-linear multiplication by $j$ is the operator $J(Q_1) = jQ_1$, an involution of square $+\operatorname{id}$ with the two real eigenlines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. A real-linear map of the plane is $\mathbb{C}^{\mathrm{spl}}$-linear exactly when it commutes with $J$ and conjugate-linear exactly when it anticommutes; the $\mathbb{C}^{\mathrm{spl}}$-linear endomorphisms are the multiplications by an element and form the plane $\operatorname{End}_{\mathbb{C}^{\mathrm{spl}}}(\mathbb{C}^{\mathrm{spl}}) \cong \mathbb{C}^{\mathrm{spl}}$, the conjugate-linear ones form the complementary plane, and together they fill $\operatorname{End}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}}) \cong M_2(\mathbb{R})$.
 
-**Proof.** That $1, j$ is a real basis and that $\dim_{\mathbb{R}}\mathbb{D} = 2$ is immediate. The map $J$ is $\mathbb{R}$-linear, $J^2(Q_1) = j(jQ_1) = j^2Q_1 = Q_1$, and $J(Q_1) = \lambda Q_1$ forces $\lambda = +1$ or $\lambda=-1$ for $Q_1\neq0$, the eigenspaces being $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. A real-linear $T$ commutes with $J$ exactly when $T(jQ_1) = jT(Q_1)$, which is $\mathbb{D}$-linearity, and anticommutes exactly when $T(jQ_1) = -jT(Q_1)$; the two classes are the $+1$ and $-1$ eigenspaces of conjugation by $J$ on $\operatorname{End}_{\mathbb{R}}(\mathbb{D})$, of dimensions $2$ and $2$. The commuting maps are $Q_1\mapsto \lambda Q_1$, and the two-dimensional space is $\mathbb{D}$. The whole development is *The Split-Complexoid as a Vector Space over $\mathbb{R}$*.
+**Proof.** That $1, j$ is a real basis and that $\dim_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}} = 2$ is immediate. The map $J$ is $\mathbb{R}$-linear, $J^2(Q_1) = j(jQ_1) = j^2Q_1 = Q_1$, and $J(Q_1) = \lambda Q_1$ forces $\lambda = +1$ or $\lambda=-1$ for $Q_1\neq0$, the eigenspaces being $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$. A real-linear $T$ commutes with $J$ exactly when $T(jQ_1) = jT(Q_1)$, which is $\mathbb{C}^{\mathrm{spl}}$-linearity, and anticommutes exactly when $T(jQ_1) = -jT(Q_1)$; the two classes are the $+1$ and $-1$ eigenspaces of conjugation by $J$ on $\operatorname{End}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}})$, of dimensions $2$ and $2$. The commuting maps are $Q_1\mapsto \lambda Q_1$, and the two-dimensional space is $\mathbb{C}^{\mathrm{spl}}$. The whole development is *The Split-Complexoid as a Vector Space over $\mathbb{R}$*.
 
-**Remark.** The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\times\mathbb{C}$ is **not** a field: the polynomial $x^2-1$ already factors over $\mathbb{R}$, and the extension of scalars carries the zero divisors with it. The complex field is the other rung of the ladder, where the adjoined root does not exist over $\mathbb{R}$; the passage between the two rungs is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
+**Remark.** The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\cong\mathbb{C}\times\mathbb{C}$ is **not** a field: the polynomial $x^2-1$ already factors over $\mathbb{R}$, and the extension of scalars carries the zero divisors with it. The complex field is the other rung of the ladder, where the adjoined root does not exist over $\mathbb{R}$; the passage between the two rungs is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
 ## The Two Products
 
@@ -25,7 +25,7 @@ $$
 Q_1Q_2 = (q_1q_2 + q'_1q'_2) + (q_1q'_2 + q'_1q_2)j, \qquad\qquad Q_1\bar Q_2 = (q_1q_2 - q'_1q'_2) + (q'_1q_2 - q_1q'_2)j .
 $$
 
-**Theorem.** The product $Q_1Q_2$ is $\mathbb{D}$-bilinear, associative, commutative and unital; it is the multiplication of the algebra, and $\mathbb{D}$ is a ring with zero divisors and not a field. The product $Q_1\bar Q_2$ is $\mathbb{D}$-linear in the first slot and conjugate-linear in the second, conjugate-commutative, right-unital but not left-unital, and not associative.
+**Theorem.** The product $Q_1Q_2$ is $\mathbb{C}^{\mathrm{spl}}$-bilinear, associative, commutative and unital; it is the multiplication of the algebra, and $\mathbb{C}^{\mathrm{spl}}$ is a ring with zero divisors and not a field. The product $Q_1\bar Q_2$ is $\mathbb{C}^{\mathrm{spl}}$-linear in the first slot and conjugate-linear in the second, conjugate-commutative, right-unital but not left-unital, and not associative.
 
 **Proof.** The formulas are the ring multiplication and the same multiplication with $Q_2$ replaced by $\bar Q_2$. Bilinearity, associativity, commutativity and the two-sided unit $1$ for $Q_1Q_2$ are the ring axioms, and the zero divisors $\Pi_1\Pi_2=0$ show that the ring is not a field. For $Q_1\bar Q_2$, linearity in $Q_1$ and conjugate-linearity in $Q_2$ are read from the formula, conjugate-commutativity $Q_1\bar Q_2 = \overline{Q_2\bar Q_1}$ follows by conjugating, the right unit is $1$ since $Q_1\bar 1 = Q_1$, and $1$ is not a left unit since $1\bar j = -j \neq j$; associativity fails at the witness $(1,1,j)$, where $(1\star1)\star j = -j$ against $1\star(1\star j) = j$. The two products and their property table are *The Two Products of the Split-Complexoid Space* and *Relations and Comparison Between the Two Products of the Split-Complexoid Space*.
 
@@ -37,7 +37,7 @@ Q_1Q_2 \leftrightarrow (q_{1+}q_{2+}, q_{1-}q_{2-}), \qquad\qquad Q_1\bar Q_2 \l
 \;},
 $$
 
-which is the reason $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ and the reason the sesquilinear product has no left unit and cannot be associative.
+which is the reason $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ and the reason the sesquilinear product has no left unit and cannot be associative.
 
 ## The Two Forms and Their Algebraic Norms
 
@@ -49,13 +49,13 @@ $$
 
 named the **general plain bilinear form** and the **Hermitian form**; their **algebraic norms** are the values at the two equal arguments, $\langle Q_1\rangle = Q_1^2$ and $\langle Q_1\rangle_{*} = Q_1\bar Q_1 = \langle Q_1\rangle_{\natural*}$.
 
-**Theorem.** $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ have the same Gram matrix $[1]$ in the basis $1$ and are separated by their symmetry alone, $\langle\cdot,\cdot\rangle$ symmetric and $\langle\cdot\rangle_{*}$ conjugate-symmetric. Their algebraic norms are $\langle Q_1\rangle = Q_1^2$, $\mathbb{D}$-valued and anisotropic, and $\langle Q_1\rangle_{*} = q_1^2 - q'^2_1$, real and indefinite. **Both are multiplicative**, and **neither is a definite real norm**: the $\mathbb{D}$-valued $\langle\cdot\rangle$ defines no order and the real $\langle\cdot\rangle_{*}$ is indefinite, while what is definite is the realified *form* $\operatorname{Re}B$, of signature $(2,0)$, against the indefinite realification $\operatorname{Re}H$ of signature $(1,1)$.
+**Theorem.** $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$ have the same Gram matrix $[1]$ in the basis $1$ and are separated by their symmetry alone, $\langle\cdot,\cdot\rangle$ symmetric and $\langle\cdot\rangle_{*}$ conjugate-symmetric. Their algebraic norms are $\langle Q_1\rangle = Q_1^2$, $\mathbb{C}^{\mathrm{spl}}$-valued and anisotropic, and $\langle Q_1\rangle_{*} = q_1^2 - q'^2_1$, real and indefinite. **Both are multiplicative**, and **neither is a definite real norm**: the $\mathbb{C}^{\mathrm{spl}}$-valued $\langle\cdot\rangle$ defines no order and the real $\langle\cdot\rangle_{*}$ is indefinite, while what is definite is the realified *form* $\operatorname{Re}B$, of signature $(2,0)$, against the indefinite realification $\operatorname{Re}H$ of signature $(1,1)$.
 
-**Proof.** The Gram matrix is $[\langle 1,1\rangle] = [1]$ and $[\langle 1,1\rangle_{*}] = [1]$. Symmetry of $\langle\cdot,\cdot\rangle$ is commutativity of the ring; conjugate-symmetry $\langle Q_1,Q_2\rangle_{*} = \overline{\langle Q_2,Q_1\rangle_{*}}$ is conjugate-commutativity. The form $\langle Q_1\rangle = (q_1+jq'_1)^2$ vanishes only at $Q_1 = 0$ but takes values in $\mathbb{D}$ and defines no order; $\langle Q_1\rangle_{*} = q_1^2-q'^2_1$ is real, changes sign, and vanishes exactly on the union of the two null lines, which is the zero-divisor set. Multiplicativity is $\langle Q_1Q_2\rangle = Q_1^2Q_2^2$ and $\langle Q_1Q_2\rangle_{*} = Q_1\bar Q_1Q_2\bar Q_2 = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. The two realified signatures are computed from the real parts $\operatorname{Re}\langle Q_1,Q_2\rangle = q_1q_2+q'_1q'_2$ and $\operatorname{Re}\langle Q_1,Q_2\rangle_{*} = q_1q_2-q'_1q'_2$. That no definite multiplicative norm exists, because $\Pi_1\Pi_2=0$ would force $\nu(\Pi_1)\nu(\Pi_2)=0$, is the theorem of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*.
+**Proof.** The Gram matrix is $[\langle 1,1\rangle] = [1]$ and $[\langle 1,1\rangle_{*}] = [1]$. Symmetry of $\langle\cdot,\cdot\rangle$ is commutativity of the ring; conjugate-symmetry $\langle Q_1,Q_2\rangle_{*} = \overline{\langle Q_2,Q_1\rangle_{*}}$ is conjugate-commutativity. The form $\langle Q_1\rangle = (q_1+jq'_1)^2$ vanishes only at $Q_1 = 0$ but takes values in $\mathbb{C}^{\mathrm{spl}}$ and defines no order; $\langle Q_1\rangle_{*} = q_1^2-q'^2_1$ is real, changes sign, and vanishes exactly on the union of the two null lines, which is the zero-divisor set. Multiplicativity is $\langle Q_1Q_2\rangle = Q_1^2Q_2^2$ and $\langle Q_1Q_2\rangle_{*} = Q_1\bar Q_1Q_2\bar Q_2 = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. The two realified signatures are computed from the real parts $\operatorname{Re}\langle Q_1,Q_2\rangle = q_1q_2+q'_1q'_2$ and $\operatorname{Re}\langle Q_1,Q_2\rangle_{*} = q_1q_2-q'_1q'_2$. That no definite multiplicative norm exists, because $\Pi_1\Pi_2=0$ would force $\nu(\Pi_1)\nu(\Pi_2)=0$, is the theorem of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*.
 
 ## The General Plain Sesqualgebra and the Ternary Product
 
-**Definition.** The **general plain sesqualgebra (gps)** over $\mathbb{D}$ is the pair $(\mathbb{D}, \star)$ with the sesquilinear product $Q_1\star Q_2 = Q_1\bar Q_2$.
+**Definition.** The **general plain sesqualgebra (gps)** over $\mathbb{C}^{\mathrm{spl}}$ is the pair $(\mathbb{C}^{\mathrm{spl}}, \star)$ with the sesquilinear product $Q_1\star Q_2 = Q_1\bar Q_2$.
 
 **Theorem.** The associator of $\star$ is $[Q_1,Q_2,Q_3] = Q_1\bar Q_2(\bar Q_3 - Q_3)$, nonzero but confined to the anti-self-adjoint part of the third slot; its **ternary product** $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ is symmetric in the outer slots, Hermitian-symmetric, $\overline{\{Q_1,Q_2,Q_3\}} = \{\bar Q_1,\bar Q_2,\bar Q_3\}$, and satisfies the Jordan triple identity, so that the structure is a **$J^{*}$-algebra** (a Jordan triple with an involution).
 
@@ -67,19 +67,19 @@ named the **general plain bilinear form** and the **Hermitian form**; their **al
 
 $$
 \boxed{\;
-\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad \mathbb{R}_{\mathbb{D}} = \mathbb{R}1, \qquad j\mathbb{R}_{\mathbb{D}} = \mathbb{R}j
+\mathbb{C}^{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} \oplus j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}, \qquad \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \mathbb{R}1, \qquad j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \mathbb{R}j
 \;},
 $$
 
-of real dimension one each; the idempotent basis gives the finer decomposition $\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2$, whose two lines are the minimal ideals. The real line is closed under the product and is a copy of $\mathbb{R}$; the split imaginary line is not closed, since $j^2 = +1$ lands in $\mathbb{R}1$; the idempotent lines carry the vanishing of the norm. The four lines are pairwise independent, and every pair of distinct ones spans the algebra.
+of real dimension one each; the idempotent basis gives the finer decomposition $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2$, whose two lines are the minimal ideals. The real line is closed under the product and is a copy of $\mathbb{R}$; the split imaginary line is not closed, since $j^2 = +1$ lands in $\mathbb{R}1$; the idempotent lines carry the vanishing of the norm. The four lines are pairwise independent, and every pair of distinct ones spans the algebra.
 
-**Proof.** An element satisfies $\bar Q_1 = Q_1$ exactly when $Q_1\in\mathbb{R}1$ and $\bar Q_1 = -Q_1$ exactly when $Q_1\in\mathbb{R}j$; the two are the coordinate blocks of the basis $1, j$ and meet only at the origin. The idempotent lines are the eigenspaces of $J$ and, since $\Pi_1\Pi_2=0$, the two minimal ideals; the norm vanishes on them because $\langle \Pi_1\rangle_{\natural} = \Pi_1\bar\Pi_1 = \Pi_1\Pi_2 = 0$. That every pair of distinct lines spans $\mathbb{D}$ is the dimension count in the plane. The lattice, its collapse to a single edge, and the two decompositions are *Split-Complexoid Subspaces*, *Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid* and *Remarkable Subspaces of the Split-Complexoid and the Two Forms*.
+**Proof.** An element satisfies $\bar Q_1 = Q_1$ exactly when $Q_1\in\mathbb{R}1$ and $\bar Q_1 = -Q_1$ exactly when $Q_1\in\mathbb{R}j$; the two are the coordinate blocks of the basis $1, j$ and meet only at the origin. The idempotent lines are the eigenspaces of $J$ and, since $\Pi_1\Pi_2=0$, the two minimal ideals; the norm vanishes on them because $\langle \Pi_1\rangle_{\natural} = \Pi_1\bar\Pi_1 = \Pi_1\Pi_2 = 0$. That every pair of distinct lines spans $\mathbb{C}^{\mathrm{spl}}$ is the dimension count in the plane. The lattice, its collapse to a single edge, and the two decompositions are *Split-Complexoid Subspaces*, *Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid* and *Remarkable Subspaces of the Split-Complexoid and the Two Forms*.
 
 ## The Matrix Models
 
 **Theorem.** The algebra has two real matrix models. The **regular representation** sends $Q_1 = q_1+jq'_1$ to the hyperbolic matrix $\mathsf M_2(Q_1) = q_1I + q'_1J$ in $M_2(\mathbb{R})$, multiplicative and faithful, of determinant $\langle Q_1\rangle_{\natural} = q_1^2-q'^2_1$ and trace the algebra trace $2q_1$. The **doubled model** sends $Q_1$ to $\operatorname{diag}(\mathsf M_2(Q_1),\mathsf M_2(Q_1))$ in $M_4(\mathbb{R})$, of determinant $\langle Q_1\rangle_{\natural}^2$ and trace $4q_1$.
 
-**Proof.** Multiplication by $Q_1$ is the $\mathbb{R}$-linear map $Q_2\mapsto Q_1Q_2$, whose matrix in the basis $1, j$ is $q_1I + q'_1J$ because $J$ is multiplication by $j$ and $Q_1 = q_1 + q'_1j$; it is multiplicative since the product is associative. Its determinant is $\det(q_1I+q'_1J) = q_1^2-q'^2_1 = \langle Q_1\rangle_{\natural}$, and its trace is $2q_1$. The doubled model is that model on the module $\mathbb{D}\oplus\mathbb{D}$, whose determinant and trace are squared and doubled by the module rank. The commutant of the $2\times2$ image is the image itself, of real dimension two; the commutant of the $4\times4$ image is the ring of $2\times2$ matrices over $\mathbb{D}$, of real dimension eight. The models are *The Matrix Element Representations of the Split-Complexoid*.
+**Proof.** Multiplication by $Q_1$ is the $\mathbb{R}$-linear map $Q_2\mapsto Q_1Q_2$, whose matrix in the basis $1, j$ is $q_1I + q'_1J$ because $J$ is multiplication by $j$ and $Q_1 = q_1 + q'_1j$; it is multiplicative since the product is associative. Its determinant is $\det(q_1I+q'_1J) = q_1^2-q'^2_1 = \langle Q_1\rangle_{\natural}$, and its trace is $2q_1$. The doubled model is that model on the module $\mathbb{C}^{\mathrm{spl}}\oplus\mathbb{C}^{\mathrm{spl}}$, whose determinant and trace are squared and doubled by the module rank. The commutant of the $2\times2$ image is the image itself, of real dimension two; the commutant of the $4\times4$ image is the ring of $2\times2$ matrices over $\mathbb{C}^{\mathrm{spl}}$, of real dimension eight. The models are *The Matrix Element Representations of the Split-Complexoid*.
 
 ## Comparisons with the Ring
 
@@ -91,28 +91,28 @@ of real dimension one each; the idempotent basis gives the finer decomposition $
 
 ## Summary
 
-The split-complexoid is the pair $(\mathbb{D},\bar\cdot)$ read over $\mathbb{R}$: the plane $\mathbb{D}_{\mathbb{R}}$ of real dimension two with the product structure $J$. From that pair alone the category reads off every structure the algebra carries beside its ring axioms. The carrier has two products — the ring product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$ — whose scalar parts are two forms, the symmetric $\langle\cdot,\cdot\rangle$ and the conjugate-symmetric $\langle\cdot,\cdot\rangle_{*}$, with the same Gram matrix $[1]$. Their algebraic norms are $\langle Q_1\rangle = Q_1^2$, $\mathbb{D}$-valued and anisotropic, and $\langle Q_1\rangle_{*} = q_1^2-q'^2_1$, real and indefinite; both are multiplicative, and neither is definite. The realified signatures are $(2,0)$ for $\langle\cdot,\cdot\rangle$, which is the Euclidean form, and $(1,1)$ for $\langle\cdot,\cdot\rangle_{*}$, and the split sign exchanges them with respect to the complex case.
+The split-complexoid is the pair $(\mathbb{C}^{\mathrm{spl}},\bar\cdot)$ read over $\mathbb{R}$: the plane $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ of real dimension two with the product structure $J$. From that pair alone the category reads off every structure the algebra carries beside its ring axioms. The carrier has two products — the ring product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$ — whose scalar parts are two forms, the symmetric $\langle\cdot,\cdot\rangle$ and the conjugate-symmetric $\langle\cdot,\cdot\rangle_{*}$, with the same Gram matrix $[1]$. Their algebraic norms are $\langle Q_1\rangle = Q_1^2$, $\mathbb{C}^{\mathrm{spl}}$-valued and anisotropic, and $\langle Q_1\rangle_{*} = q_1^2-q'^2_1$, real and indefinite; both are multiplicative, and neither is definite. The realified signatures are $(2,0)$ for $\langle\cdot,\cdot\rangle$, which is the Euclidean form, and $(1,1)$ for $\langle\cdot,\cdot\rangle_{*}$, and the split sign exchanges them with respect to the complex case.
 
 The sesquilinear product is non-associative and conjugate-commutative, with associator confined to the anti-self-adjoint part of the third slot, and its ternary product $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ is a $J^{*}$-algebra. The conjugation splits the algebra into the real and the split imaginary axes, and its commutativity removes the Lie slot and collapses the involution lattice to a single edge. Two matrix models realise the algebra over $\mathbb{R}$, of determinants $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{*}^2$. The comparison of the two products reads: they coincide on the real part of the second slot and oppose on the split imaginary part.
 
 | Structure | Object | Carrier | What it is |
 |---|---|---|---|
-| Ring | $\mathbb{D}$ | $\mathbb{D}_{\mathbb{R}}$ | the product $Q_1Q_2$, $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ |
-| General plain sesqualgebra (gps) | $(\mathbb{D},\star)$ | $\mathbb{D}_{\mathbb{R}}$ | the product $Q_1\bar Q_2$ |
-| Two products | — | $\mathbb{D}_{\mathbb{R}}$ | $Q_1Q_2$, $Q_1\bar Q_2$ |
-| Two forms | $B, H$ | $\mathbb{D}_{\mathbb{R}}$ | $Q_1Q_2$, $Q_1\bar Q_2$ as forms, Gram $[1]$ |
-| Two algebraic norms | $\langle Q_1\rangle, \langle Q_1\rangle_{*}$ | $\mathbb{D}$ | $Q_1^2$ anisotropic; $q_1^2-q'^2_1$ indefinite |
-| Ternary product | $\{Q_1,Q_2,Q_3\}$ | $\mathbb{D}$ | $Q_1\bar Q_2Q_3$, a $J^{*}$-algebra |
-| Subspaces | $\mathbb{R}_{\mathbb{D}}, j\mathbb{R}_{\mathbb{D}}$ | $\mathbb{D}_{\mathbb{R}}$ | fixed and anti-fixed lines |
+| Ring | $\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ | the product $Q_1Q_2$, $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ |
+| General plain sesqualgebra (gps) | $(\mathbb{C}^{\mathrm{spl}},\star)$ | $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ | the product $Q_1\bar Q_2$ |
+| Two products | — | $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ | $Q_1Q_2$, $Q_1\bar Q_2$ |
+| Two forms | $B, H$ | $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ | $Q_1Q_2$, $Q_1\bar Q_2$ as forms, Gram $[1]$ |
+| Two algebraic norms | $\langle Q_1\rangle, \langle Q_1\rangle_{*}$ | $\mathbb{C}^{\mathrm{spl}}$ | $Q_1^2$ anisotropic; $q_1^2-q'^2_1$ indefinite |
+| Ternary product | $\{Q_1,Q_2,Q_3\}$ | $\mathbb{C}^{\mathrm{spl}}$ | $Q_1\bar Q_2Q_3$, a $J^{*}$-algebra |
+| Subspaces | $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}, j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ | fixed and anti-fixed lines |
 | Matrix models | $\mathsf M_2, \mathsf M_4$ | $M_2(\mathbb{R}), M_4(\mathbb{R})$ | determinants $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{*}^2$ |
-| Realification | $J$ | $\mathbb{D}_{\mathbb{R}}$ | multiplication by $j$, $J^2 = +\operatorname{id}$ |
+| Realification | $J$ | $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ | multiplication by $j$, $J^2 = +\operatorname{id}$ |
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $Q_1 = q_1 + jq'_1$ | element of $\mathbb{D}$ |
-| $\mathbb{D}_{\mathbb{R}}$ | $\mathbb{D}$ read as a real vector space, basis $1, j$ |
+| $Q_1 = q_1 + jq'_1$ | element of $\mathbb{C}^{\mathrm{spl}}$ |
+| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{R}}$ | $\mathbb{C}^{\mathrm{spl}}$ read as a real vector space, basis $1, j$ |
 | $J(Q_1) = jQ_1$ | the real-linear product structure, $J^2 = +\operatorname{id}$ |
 | $\Pi_1 = \tfrac12(1+j)$, $\Pi_2 = \tfrac12(1-j)$ | the idempotents, the eigenlines of $J$ |
 | $Q_1Q_2$, $Q_1\bar Q_2$ | the two products |
@@ -120,7 +120,7 @@ The sesquilinear product is non-associative and conjugate-commutative, with asso
 | $\langle Q_1\rangle = Q_1^2$, $\langle Q_1\rangle_{*} = \langle Q_1\rangle_{\natural*} = q_1^2-q'^2_1$ | the two algebraic norms |
 | $Q_1\star Q_2 = Q_1\bar Q_2$ | the sesquilinear product of the gps |
 | $\{Q_1,Q_2,Q_3\} = Q_1\bar Q_2Q_3$ | the ternary product, $J^{*}$-algebra |
-| $\mathbb{R}_{\mathbb{D}}$, $j\mathbb{R}_{\mathbb{D}}$ | real and split imaginary axes |
+| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | real and split imaginary axes |
 | $\mathsf M_2(Q_1) = q_1I + q'_1J$ | the hyperbolic matrix model |
 
 ## Further Reading

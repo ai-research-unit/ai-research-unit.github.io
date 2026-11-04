@@ -5,7 +5,7 @@
 The reduced biquaternion algebra is
 
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
+\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
 $$
 
 with basis $1,i,j,ij$, relation $j^{2}=+1$, idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. Its four general products carry the four algebraic norms
@@ -50,7 +50,7 @@ $$
 
 **Proof.** $Q_{\blacktriangle}^{2}=Q_{\blacktriangledown}^{2}$ in the field $\mathbb{C}$ has the two solutions $Q_{\blacktriangle}=\pm Q_{\blacktriangledown}$, and $Q_{\blacktriangle}^{2}=-Q_{\blacktriangledown}^{2}$ the two solutions $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$; $\langle\cdot\rangle_{*}$ is the difference of the two non-negative quantities $|Q_{\blacktriangle}|^{2}$ and $|Q_{\blacktriangledown}|^{2}$; and $\langle\cdot\rangle_{\mathrm{ts}*}$ is their sum, which vanishes only at the origin.
 
-**Corollary (the two lines of the reduced norm).** Each of $\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}$ and $\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}$ is a complex line through the origin of $\mathbb{C}^{2}$, hence a real two-plane in $\mathbb{B}_{\mathrm{r}}$, hence a projective line in $\mathbb{P}^{3}_{\mathbb{R}}$; the two lines meet only at the origin of $\mathbb{B}_{\mathrm{r}}$, so they are skew in $\mathbb{P}^{3}_{\mathbb{R}}$. They are the two minimal ideals
+**Corollary (the two lines of the reduced norm).** Each of $\{Q_{\blacktriangle}=Q_{\blacktriangledown}\}$ and $\{Q_{\blacktriangle}=-Q_{\blacktriangledown}\}$ is a complex line through the origin of $\mathbb{C}^{2}$, hence a real two-plane in $\mathbb{B}^{\mathrm{red}}$, hence a projective line in $\mathbb{P}^{3}_{\mathbb{R}}$; the two lines meet only at the origin of $\mathbb{B}^{\mathrm{red}}$, so they are skew in $\mathbb{P}^{3}_{\mathbb{R}}$. They are the two minimal ideals
 
 $$
 \boxed{\;
@@ -136,7 +136,7 @@ The reduced biquaternion algebra carries four algebraic norms. The definite one,
 
 ## Further Reading
 
-- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotent coordinates and the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$.
+- [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotent coordinates and the isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), above this article, for the four norms, their Gram matrices and their signatures.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the two minimal ideals that are the lines of the degenerate quadric.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the null cone of the reduced norm as the set of zero divisors.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article defines the **two products** carried by the split-complex space — the **general plain bilinear product** $Q_1Q_2$ and the **general plain sesquilinear product** $Q_1\overline{Q_2}$ — reads them on the coordinates, states the two structures they define, and isolates the one point that tells this pair of products from the pair carried by the complex field. The first is the multiplication of the algebra and makes $\mathbb{D}$ a commutative ring; the second is the product with the second argument conjugated and makes $\mathbb{D}$ a **sesqualgebra** over the algebra with involution $(\mathbb{D},\bar{\cdot})$. Two operations and two structures are the whole operational content of the split-complex space.
+This article defines the **two products** carried by the split-complex space — the **general plain bilinear product** $Q_1Q_2$ and the **general plain sesquilinear product** $Q_1\overline{Q_2}$ — reads them on the coordinates, states the two structures they define, and isolates the one point that tells this pair of products from the pair carried by the complex field. The first is the multiplication of the algebra and makes $\mathbb{C}^{\mathrm{spl}}$ a commutative ring; the second is the product with the second argument conjugated and makes $\mathbb{C}^{\mathrm{spl}}$ a **sesqualgebra** over the algebra with involution $(\mathbb{C}^{\mathrm{spl}},\bar{\cdot})$. Two operations and two structures are the whole operational content of the split-complex space.
 
 The two products are defined and their structures asserted here. The associator of the sesquilinear product, its ternary product, its left and right multiplications, its sandwich and its commutator are *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The forms and the norms the two products define are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the products read on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*. The ring multiplication alone, with its zero divisors, its idempotents and its ideals, is *Split-Complex Algebra* and its companions.
 
@@ -18,10 +18,10 @@ $$
 
 The two products are defined on the same coordinates and take their values in the same plane; the first is the product of the algebra, the second differs from it by the conjugation of the second argument. They are the two products of the split-complex space, the bilinear one and the sesquilinear one.
 
-**Proposition (the two products are separated by the second argument).** The product $Q_1Q_2$ is bilinear over $\mathbb{D}$, in both arguments. The product $Q_1\overline{Q_2}$ is linear in the first argument and conjugate-linear in the second,
+**Proposition (the two products are separated by the second argument).** The product $Q_1Q_2$ is bilinear over $\mathbb{C}^{\mathrm{spl}}$, in both arguments. The product $Q_1\overline{Q_2}$ is linear in the first argument and conjugate-linear in the second,
 
 $$
-Q_1\overline{\lambda Q_2} = \bar\lambda\,Q_1\overline{Q_2}, \qquad \lambda \in \mathbb{D},
+Q_1\overline{\lambda Q_2} = \bar\lambda\,Q_1\overline{Q_2}, \qquad \lambda \in \mathbb{C}^{\mathrm{spl}},
 $$
 
 and the two products coincide exactly when the second factor is real or the first factor is zero.
@@ -38,9 +38,9 @@ So the two products differ by the conjugate-linearity in the second argument, an
 
 ## The Ring Product $Q_1Q_2$
 
-**Theorem (the commutative ring).** Under the product $Q_1Q_2$ the plane $\mathbb{D}$ is a commutative, associative ring with the two-sided unit $1$, and $\mathbb{D}$ is the algebra $\mathbb{R}[x]/(x^2-1)$.
+**Theorem (the commutative ring).** Under the product $Q_1Q_2$ the plane $\mathbb{C}^{\mathrm{spl}}$ is a commutative, associative ring with the two-sided unit $1$, and $\mathbb{C}^{\mathrm{spl}}$ is the algebra $\mathbb{R}[x]/(x^2-1)$.
 
-**Proof.** Commutativity is the symmetry of the coordinate formulas, $q_1q_2+q'_1q'_2=q_2q_1+q'_2q'_1$ and $q_1q'_2+q'_1q_2=q_2q'_1+q'_2q_1$; associativity is the associativity of the polynomial algebra $\mathbb{R}[x]/(x^2-1)$, or equally the identity $Q_1(Q_2Q_3)=(Q_1Q_2)Q_3$ checked on the three coordinates; and $1\cdot Q_1=Q_1\cdot 1=Q_1$. The ring is the algebra, by definition of the multiplication of $\mathbb{D}$.
+**Proof.** Commutativity is the symmetry of the coordinate formulas, $q_1q_2+q'_1q'_2=q_2q_1+q'_2q'_1$ and $q_1q'_2+q'_1q_2=q_2q'_1+q'_2q_1$; associativity is the associativity of the polynomial algebra $\mathbb{R}[x]/(x^2-1)$, or equally the identity $Q_1(Q_2Q_3)=(Q_1Q_2)Q_3$ checked on the three coordinates; and $1\cdot Q_1=Q_1\cdot 1=Q_1$. The ring is the algebra, by definition of the multiplication of $\mathbb{C}^{\mathrm{spl}}$.
 
 The product $Q_1Q_2$ is the bilinear, commutative, associative operation with unit, the multiplication of the split-complex algebra. As a form it is the general plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, whose algebraic norm is the first algebraic norm $\langle Q_1\rangle=Q_1^2$.
 
@@ -48,7 +48,7 @@ The product $Q_1Q_2$ is the bilinear, commutative, associative operation with un
 
 | property | holds | witness |
 |---|---|---|
-| bilinear over $\mathbb{D}$ | yes | distributivity |
+| bilinear over $\mathbb{C}^{\mathrm{spl}}$ | yes | distributivity |
 | commutative | yes | $Q_1Q_2=Q_2Q_1$ |
 | associative | yes | $Q_1(Q_2Q_3)=(Q_1Q_2)Q_3$ |
 | two-sided unit | yes | $1Q_1=Q_1 1=Q_1$ |
@@ -56,11 +56,11 @@ The product $Q_1Q_2$ is the bilinear, commutative, associative operation with un
 | zero divisors | yes | $\Pi_1\Pi_2=0$ with both factors non-zero |
 | a field | no | the zero divisors are not invertible |
 
-The failure of the field condition is the subject of *Zero Divisors of the Split-Complex Algebra*; as a ring, $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ is a product of two fields, and its elements are classified in *The Classes of Element of the Split-Complex Algebra*.
+The failure of the field condition is the subject of *Zero Divisors of the Split-Complex Algebra*; as a ring, $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is a product of two fields, and its elements are classified in *The Classes of Element of the Split-Complex Algebra*.
 
 ## The Sesquilinear Product $Q_1\overline{Q_2}$
 
-**Theorem (the sesqualgebra).** Over the algebra with involution $(\mathbb{D},\bar{\cdot})$, the product $Q_1\overline{Q_2}$ is conjugate-commutative,
+**Theorem (the sesqualgebra).** Over the algebra with involution $(\mathbb{C}^{\mathrm{spl}},\bar{\cdot})$, the product $Q_1\overline{Q_2}$ is conjugate-commutative,
 
 $$
 \boxed{\; Q_1\overline{Q_2} = \overline{Q_2\overline{Q_1}} \;},
@@ -109,32 +109,32 @@ $$
 
 **Corollary (the two vanishing conditions).** $Q_1Q_2=0$ if and only if $q_{1+}q_{2+}=0$ and $q_{1-}q_{2-}=0$; $Q_1\overline{Q_2}=0$ if and only if $q_{1+}q_{2-}=0$ and $q_{1-}q_{2+}=0$. In particular $\Pi_1\overline{\Pi_1}=\Pi_1\Pi_2=0$ while $\Pi_1\Pi_1=\Pi_1$: an idempotent of the ring annihilates itself under the sesquilinear product.
 
-The componentwise form of $Q_1Q_2$ is the reason the ring is the product of two copies of $\mathbb{R}$, $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$; the exchange of coordinates in $Q_1\overline{Q_2}$ is the reason the sesquilinear product has no left unit and cannot be associative, the exchange being an involution of the coordinates and not the identity. The coordinates and the componentwise multiplication are *Split-Complex Two-Component Element Representation* and *Split-Complex Algebra*.
+The componentwise form of $Q_1Q_2$ is the reason the ring is the product of two copies of $\mathbb{R}$, $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$; the exchange of coordinates in $Q_1\overline{Q_2}$ is the reason the sesquilinear product has no left unit and cannot be associative, the exchange being an involution of the coordinates and not the identity. The coordinates and the componentwise multiplication are *Split-Complex Two-Component Element Representation* and *Split-Complex Algebra*.
 
 ## The Structures the Two Products Define
 
-The two products define the two structures carried by $\mathbb{D}$.
+The two products define the two structures carried by $\mathbb{C}^{\mathrm{spl}}$.
 
 | product | structure | commutative | associative | unit |
 |---|---|---|---|---|
 | $Q_1Q_2$ | commutative ring, and algebra over $\mathbb{R}$ | yes | yes | two-sided |
-| $Q_1\overline{Q_2}$ | sesqualgebra over $(\mathbb{D},\bar{\cdot})$ | conjugate-commutative | no | right only |
+| $Q_1\overline{Q_2}$ | sesqualgebra over $(\mathbb{C}^{\mathrm{spl}},\bar{\cdot})$ | conjugate-commutative | no | right only |
 
-The first is the **algebra** $\mathbb{D}$, the split-complex numbers with their multiplication, and its classes of element — units, zero divisors, idempotents, ideals — are the subject of the Algebra group. The second is the **sesqualgebra**, the product with the second argument conjugated, and its defect, measured by the associator, is the subject of *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The two structures are the two objects the whole operational vocabulary of the chapter describes, and no third structure occurs.
+The first is the **algebra** $\mathbb{C}^{\mathrm{spl}}$, the split-complex numbers with their multiplication, and its classes of element — units, zero divisors, idempotents, ideals — are the subject of the Algebra group. The second is the **sesqualgebra**, the product with the second argument conjugated, and its defect, measured by the associator, is the subject of *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category. The two structures are the two objects the whole operational vocabulary of the chapter describes, and no third structure occurs.
 
 ## The Point That Separates the Split Case from the Complex One
 
 On the complex field the same two identifications hold: $\mathbb{C}$ is commutative, its involution is conjugation, and the two products of the two-dimensional complex space are the field product $AC$ and the sesquilinear product $A\overline{C}$. The difference lies in **what the two products are**.
 
-The bilinear product is the multiplication of a **field** on $\mathbb{C}$: every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $1$. The same product is the multiplication of a **ring** on $\mathbb{D}$: it has the zero divisors $q^2=q'^2$, the two non-trivial idempotents $\Pi_1$ and $\Pi_2$, and the two non-trivial ideals $\mathbb{R}\Pi_1,\mathbb{R}\Pi_2$. The split sign $j^2=+1$ against $i^2=-1$ is visible not in the number of the products but in the structure of the bilinear one.
+The bilinear product is the multiplication of a **field** on $\mathbb{C}$: every non-zero element is a unit, there are no zero divisors, and the only idempotents are $0$ and $1$. The same product is the multiplication of a **ring** on $\mathbb{C}^{\mathrm{spl}}$: it has the zero divisors $q^2=q'^2$, the two non-trivial idempotents $\Pi_1$ and $\Pi_2$, and the two non-trivial ideals $\mathbb{R}\Pi_1,\mathbb{R}\Pi_2$. The split sign $j^2=+1$ against $i^2=-1$ is visible not in the number of the products but in the structure of the bilinear one.
 
 **Remark.** The comparison is exact at the level of the products and not at the level of their structures: the products $AC$ and $A\overline{C}$ are defined by the same formulas over any commutative algebra with involution, and it is the sign of the square of the generator, entering only through the conjugation, that decides whether the surviving objects are a field and a division-like sesqualgebra or a ring with zero divisors and a sesqualgebra with a right unit alone.
 
 ## Summary
 
-The split-complex space carries two products, defined on the same coordinates: the general plain bilinear product $Q_1Q_2=(q_1q_2+q'_1q'_2)+(q_1q'_2+q'_1q_2)j$, the multiplication of the algebra, and the general plain sesquilinear product $Q_1\overline{Q_2}=(q_1q_2-q'_1q'_2)+(q'_1q_2-q_1q'_2)j$, with the second argument conjugated. They are separated by the second argument — $Q_1Q_2$ is bilinear over $\mathbb{D}$, $Q_1\overline{Q_2}$ is conjugate-linear in the second argument — and they coincide exactly when the second factor is real or the first is zero.
+The split-complex space carries two products, defined on the same coordinates: the general plain bilinear product $Q_1Q_2=(q_1q_2+q'_1q'_2)+(q_1q'_2+q'_1q_2)j$, the multiplication of the algebra, and the general plain sesquilinear product $Q_1\overline{Q_2}=(q_1q_2-q'_1q'_2)+(q'_1q_2-q_1q'_2)j$, with the second argument conjugated. They are separated by the second argument — $Q_1Q_2$ is bilinear over $\mathbb{C}^{\mathrm{spl}}$, $Q_1\overline{Q_2}$ is conjugate-linear in the second argument — and they coincide exactly when the second factor is real or the first is zero.
 
-The product $Q_1Q_2$ makes $\mathbb{D}$ a commutative, associative ring with two-sided unit $1$; the product $Q_1\overline{Q_2}$ makes $\mathbb{D}$ a sesqualgebra over $(\mathbb{D},\bar{\cdot})$, conjugate-commutative, with the right unit $1$ and no left unit, and not associative, its associator measured by $(1\overline{1})\overline{j}=-j$ against $1\overline{(1\overline{j})}=j$. In the idempotent coordinates $Q_1Q_2$ is componentwise and $Q_1\overline{Q_2}$ exchanges the coordinates of the second factor. On the complex field the same two values occur, and the difference is not in the count but in the structures: the surviving bilinear product is a field multiplication on $\mathbb{C}$ and a ring multiplication with zero divisors on $\mathbb{D}$.
+The product $Q_1Q_2$ makes $\mathbb{C}^{\mathrm{spl}}$ a commutative, associative ring with two-sided unit $1$; the product $Q_1\overline{Q_2}$ makes $\mathbb{C}^{\mathrm{spl}}$ a sesqualgebra over $(\mathbb{C}^{\mathrm{spl}},\bar{\cdot})$, conjugate-commutative, with the right unit $1$ and no left unit, and not associative, its associator measured by $(1\overline{1})\overline{j}=-j$ against $1\overline{(1\overline{j})}=j$. In the idempotent coordinates $Q_1Q_2$ is componentwise and $Q_1\overline{Q_2}$ exchanges the coordinates of the second factor. On the complex field the same two values occur, and the difference is not in the count but in the structures: the surviving bilinear product is a field multiplication on $\mathbb{C}$ and a ring multiplication with zero divisors on $\mathbb{C}^{\mathrm{spl}}$.
 
 ## Summary of Notation
 

@@ -1,0 +1,479 @@
+# __The Gradient, the D'Alembertian and the Cell Operator__
+
+## Introduction
+
+Three operators stand at the head of the biquaternion calculus, and they are confused with one another, because all three are built from the same four coordinate derivatives and the same four units. This article separates them, states what each one is, and computes what each one does to the same field.
+
+The **gradient** $\tilde\nabla$ is an element of the algebra whose four coefficients are derivatives. It acts by left multiplication. Its square is not a scalar.
+
+The **d'Alembertian** $\Box$ is a scalar differential operator of the second order. It is the norm of the gradient against its conjugate, $\Box=\tilde\nabla\tilde\nabla^{\natural}$, and it is a product of two first-order factors.
+
+The **cell operator** is an operator of the algebra built from four frame cells instead of four units. It acts on both sides. Its square is a scalar, in one copy, and that is the property neither of the other two has.
+
+**Why the confusion is not a matter of taste.** Two names are overloaded, and the overload is what makes the three look like one. The corpus writes $\mathbb{D}$ in *Operator and Calculus Conventions* for the pair operator on $\mathbb{B}\oplus\mathbb{B}$, and in *Product and Form Conventions* for the split-complex numbers. The source of the subluminal article writes $\partial$ for the cell operator. A page that says "the Dirac operator" without saying which of the three it means cannot be read, and no amount of algebra repairs that.
+
+**What the article establishes.** The three differ in two ways that matter, and both are computed here: in what they are (an element, a scalar, an operator of the algebra) and in how they square (not scalar, itself, scalar in one copy). The metric is not one of the differences. The algebra has one metric, the Euclidean one, and the Lorentzian form of the material display is that same metric read after $Q_t=ict'$. The light cone is common to the gradient and to the cells, and §*What a Plane Wave Sees* computes both symbols and gets one cone. What the cells buy is anticommutation, and §*Why Four Cells and Not Four Units* proves that no element can buy it.
+
+The order of the article is the order of increasing structure: the metric, which is the algebra's and not an operator's, then the gradient, then its norm, then the cell contraction, then why the cells are needed at all, then what a plane wave sees, then the three side by side, then the arrays, then the pair operator. Every claim is recomputed on a field before it is asserted.
+
+## Three Kinds of Object
+
+**Two algebras, one of them ambient.** The biquaternion algebra $\mathbb{B}$ is a complex vector space of dimension four, with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\vec e_k^2=-e_t$. The operators of $\mathbb{B}$ form $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, of complex dimension sixteen. An element of $\mathbb{B}$ is not an operator of $\mathbb{B}$; it *generates* one, and the generation has two sides, the left multiplication $L_a\psi=a\psi$ and the right multiplication $R_b\psi=\psi b$, with the two-sided $L_aR_b\psi=a\psi b$ (*Operator and Calculus Conventions*, §*The Operators*).
+
+**Why the distinction is the whole article.** An element multiplies from one side only, so a sum of elements with derivative coefficients is a first-order operator of one side. A sum of cells is an operator already, and a cell may act from both sides at once. The first is confined to the algebra; the second is not, because a cell is a frame object and not an element of $\mathbb{B}$. That is the difference between the gradient and the cell operator, and everything else follows from it.
+
+**The five objects, in one table.** The last column is the determinant of the symbol, that is of the array obtained by replacing each derivative by $ik_\mu$; it is computed in §*What a Plane Wave Sees*.
+
+| operator | what it is | order | square | $\det$ of its symbol |
+|---|---|---|---|---|
+| $\tilde\nabla$ | an element of $\mathbb{B}$, coefficients are derivatives | $1$ | $\Box-2\Delta-\frac{2i}{c}\vec e_k\frac{\partial^2}{\partial t'\partial q_k}$, not scalar | $(k_0^2-\lvert\vec k\rvert^2)^2$ |
+| $\Box$ | a scalar differential operator | $2$ | — | $k_0^2-\lvert\vec k\rvert^2$ |
+| $G$ | an operator of $\mathbb{B}$, four frame cells | $1$ | $-\Box$ | $(k_0^2-\lvert\vec k\rvert^2)^2$ |
+| $iG$ | the same, in the normalisation that squares to $\Box$ | $1$ | $+\Box$ | $(k_0^2-\lvert\vec k\rvert^2)^2$ |
+| $\mathbb{D}$ | an operator of $\mathbb{B}\oplus\mathbb{B}$, the pair | $1$ | $\Box I$ | $(k_0^2-\lvert\vec k\rvert^2)^2$ per block |
+
+**The last column is the same in every row, and that is the finding, not an omission.** The symbol does not separate the three operators, and neither does the light cone, which is what the determinant measures. The **column of squares** is what separates them, and it is the reason the source needs the cells: a first-order equation in one field needs a first-order operator whose square is already scalar, and on a single field only $G$ and $iG$ are that.
+
+## The Metric Is Euclidean
+
+**One metric, and it is Euclidean.** The form of $\mathbb{B}$ is $\sum_\mu Q_\mu^2$, with all four coefficients $+1$: the metric is $(1,1,1,1)$. On real coefficients that is the ordinary Euclidean metric, positive definite, and no direction is singled out by a sign (*Frame Conventions*, §*The $\mathbb{B}$ Frame*; *Conceptual Conventions*, §*Preferred Concepts*). This is the default of the algebra, it is not chosen per operator, and no operator in this article is the place where it is stored.
+
+**Where the Lorentzian display comes from.** On $\mathbb{M}_-$ the time coordinate is $Q_t=ict'$. The $i$ does not disappear when the display is written in real coordinates: its square becomes the sign of the time term, $i^2=-1$, and the form reads $-c^2t'^2+q_x^2+q_y^2+q_z^2$, signature $(-1,+1,+1,+1)$. That is not a second metric. It is the Euclidean metric after the substitution $Q_t=ict'$, and $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$ records the substitution (*Frame Conventions*, §*The $\mathbb{M}_-$ Frame*, kept for convenience of display).
+
+**The d'Alembertian is one operator with two readings.** It is $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ in the $\mathbb{B}$ frame and $\Delta-c^{-2}\partial^2/\partial t'^2$ on $\mathbb{M}_-$: the same operator, the same metric, one substitution between the two writings. Nothing is added to the content between them.
+
+**The consequence for this article.** Neither the gradient nor the cells introduces a metric of its own, because there is no second metric for one to introduce. Both work in the metric the algebra already has, the one in the norm $\langle\tilde Q\rangle_\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, and the difference between them is not a signature. Anyone who says the metric must be put somewhere has missed that it is already there; what the cells supply is a different property altogether, and §*Why Four Cells and Not Four Units* identifies it.
+
+## The Gradient
+
+**The definition.** The gradient is the element
+
+$$
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+$$
+
+with $Q_\mu=q_\mu+iq'_\mu$, and its quaternion conjugate, the involution of the norm,
+
+$$
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},\qquad \varepsilon=(1,-1,-1,-1).
+$$
+
+On the material sector, where $Q_t=ict'$ and $Q_k=q_k$, the two read
+
+$$
+\tilde\nabla\big|_{\mathbb{M}_-}=-\frac{i}{c}e_t\frac{\partial}{\partial t'}+\sum_k\vec e_k\frac{\partial}{\partial q_k},
+\qquad
+\tilde\nabla^{\natural}\big|_{\mathbb{M}_-}=-\frac{i}{c}e_t\frac{\partial}{\partial t'}-\sum_k\vec e_k\frac{\partial}{\partial q_k}.
+$$
+
+Every statement below is on $\mathbb{M}_-$, which is where the series does its work.
+
+**It is an element, and it acts on one side.** Its four coefficients are units, so it multiplies its argument from the left and never from the right. There is no cell in it, no matrix, and no second side. Applying it to a field is multiplying that field by an element whose coefficients happen to be derivatives.
+
+**Its square is neither scalar nor the d'Alembertian.** Two applications, computed on a general element-valued field, give the exact identity
+
+$$
+\tilde\nabla^2=\Box-2\Delta-\frac{2i}{c}\sum_k\vec e_k\frac{\partial^2}{\partial t'\,\partial q_k},
+$$
+
+with $\Box=\Delta-c^{-2}\partial^2/\partial t'^2$ and $\Delta=\partial^2/\partial q_x^2+\partial^2/\partial q_y^2+\partial^2/\partial q_z^2$. The first two terms are scalars; the third is not, because $\vec e_k$ is a unit and the term survives. So the square is not a scalar, and it is not $\Box$: the two differ by $2\Delta$ and by the whole cross term.
+
+**The cross term is the whole story.** It has one origin. The time unit is the identity, so $e_t$ commutes with each spatial unit instead of anticommuting with it,
+
+$$
+e_t\vec e_k+\vec e_k e_t=2\vec e_k ,
+$$
+
+and the two orders of a mixed derivative therefore add instead of cancelling. Each spatial unit squares to $-e_t$ as well, which is the second half of the reason: the diagonal part of the square comes out with the wrong sign on the Laplacian.
+
+**What the conjugate repairs, and how.** The conjugate flips the three spatial units, and the two cross terms then cancel between the two orders,
+
+$$
+\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box .
+$$
+
+Both orders agree, because the two factors commute on their squares. This is why the conventions define the d'Alembertian as the norm taken with the conjugate and not as the square (*Operator and Calculus Conventions*, §*The Quaternionic Bilinear Product*): the plain square is not available.
+
+**Worked cases.** With $c=1$ and the field written in the units, the gradient acts as follows. The rule is short: constants die, and a coordinate times a unit returns the product of the unit with that coordinate's unit.
+
+| field $\psi$ | $\tilde\nabla\psi$ | how |
+|---|---|---|
+| $\vec e_z$ | $0$ | no coordinate in it |
+| $q_x\vec e_y$ | $\vec e_z$ | $\vec e_x\vec e_y=\vec e_z$ |
+| $q_x\vec e_x$ | $-e_t$ | $\vec e_x\vec e_x=-e_t$ |
+| $q_x\vec e_z$ | $-\vec e_y$ | $\vec e_x\vec e_z=-\vec e_y$ |
+| $q_y\vec e_x$ | $-\vec e_z$ | $\vec e_y\vec e_x=-\vec e_z$ |
+| $t'\vec e_x$ | $-i\vec e_x$ | the time coefficient is $-i/c$, and $e_t\vec e_x=\vec e_x$ |
+| $q_xq_y\vec e_z$ | $q_x\vec e_x-q_y\vec e_y$ | two live terms, one per coordinate |
+| $q_xq_y\vec e_x$ | $-q_ye_t-q_x\vec e_z$ | two live terms, both scalar-or-unit |
+| $\sin q_x\,\vec e_x$ | $-\cos q_x\,e_t$ | the derivative of the sine |
+| $t'^2\vec e_x$ | $-2it'\,\vec e_x$ | the derivative of the square |
+
+Two of these are worth reading slowly. On $q_xq_y\vec e_z$ the operator returns a sum of two units, which is what "element-valued" means: the output is again an element, not a scalar. On $t'\vec e_x$ the output carries the factor $-i$, which is the $1/c$ and the $i$ of the material time in one coefficient.
+
+**The array of the gradient.** In the coefficient basis the gradient has an array, and its entries are derivatives:
+
+$$
+L^{\mathrm{axf}}(\tilde\nabla)=
+\begin{pmatrix}
+\partial_t&-\partial_x&-\partial_y&-\partial_z\\
+\partial_x&\partial_t&-\partial_z&\partial_y\\
+\partial_y&\partial_z&\partial_t&-\partial_x\\
+\partial_z&-\partial_y&\partial_x&\partial_t
+\end{pmatrix}.
+$$
+
+This array is $L^{\mathrm{axf}}$ of an element, so it is the multiplication table of the units read with derivative coefficients (*Matrix Representations Conventions*, §*The Left Family*). Its first column is the gradient itself, because $\tilde\nabla e_t=\tilde\nabla$; the other three columns are its products with the three spatial units. Its symmetry is the symmetry of that table, and it is not the symmetry of a metric.
+
+## The D'Alembertian
+
+**The definition.** The d'Alembertian is the scalar operator
+
+$$
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\sum_{\mu}\frac{\partial^2}{\partial Q_\mu^2},
+$$
+
+and on the material sector it reads
+
+$$
+\Box\big|_{\mathbb{M}_-}=\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2},
+$$
+
+a plus on the spatial part and a minus on the time part (*Operator and Calculus Conventions*, §*The Norm*).
+
+**It is of the second order, and that is a limit, not a defect.** $\Box$ is a product of two first-order operators, so every equation it writes has order two. A first-order equation cannot be written with it, and no rearrangement helps, because the order is a property of the object and not of its display.
+
+**It is scalar, and it stays in the algebra.** $\Box$ multiplies no element: it acts on each coefficient of a field and returns a field of the same kind. Nothing in it leaves $\mathbb{B}$, and no frame is chosen to write it.
+
+**What it does to the same fields.** Only the two fields with a second derivative in a single coordinate survive; everything linear dies.
+
+| field $\psi$ | $\Box\psi$ |
+|---|---|
+| $\vec e_z$, $q_x\vec e_y$, $q_x\vec e_x$, $q_x\vec e_z$, $q_y\vec e_x$ | $0$ |
+| $q_xq_y\vec e_z$, $q_xq_y\vec e_x$ | $0$ |
+| $\sin q_x\,\vec e_x$ | $-\sin q_x\,\vec e_x$ |
+| $t'^2\vec e_x$ | $-\frac{2}{c^2}\vec e_x$ |
+
+**The wave equation is its kernel.** $\Box\psi=0$ is the wave equation, and on a plane wave $e^{i\phi}$ with $\phi=k_0x_0-\vec k\cdot\vec q$ it reads
+
+$$
+\Box\,e^{i\phi}=\left(k_0^2-\lvert\vec k\rvert^2\right)e^{i\phi},
+$$
+
+so the kernel is exactly the light cone. That is the condition a massless field must meet, and it is the condition the cell operator will reproduce at first order.
+
+## The Cell Operator
+
+**The five cells, four of which a derivative uses.** The corpus's five frame cells are
+
+$$
+iL_{e_t}R_{\vec e_x}=iR_{\vec e_x},\qquad
+iL_{\vec e_x}R_{\vec e_y},\qquad
+iL_{\vec e_y}R_{\vec e_y},\qquad
+iL_{\vec e_z}R_{\vec e_y},\qquad
+-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+$$
+
+and the order is timelike, the three spatial, chirality. The first four correspond to the four coordinates and are the ones a derivative can be contracted with; the fifth is the chirality and is contracted with nothing (*Matrix Representations Conventions*, §*The Clifford Structure*; *Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form* writes the four $G_\mu$). Write
+
+$$
+G_0=iR_{\vec e_x},\qquad G_k=iL_{\vec e_k}R_{\vec e_y},
+$$
+
+and the cell operator is the contraction
+
+$$
+G=\sum_\mu G_\mu\frac{\partial}{\partial x_\mu},
+\qquad x_0=ct',\quad x_k=q_k .
+$$
+
+**Written out.** The time cell is a right multiplication by $\vec e_x$; each spatial cell is a left multiplication by $\vec e_k$ and a right multiplication by $\vec e_y$:
+
+$$
+G\psi=\frac{i}{c}\frac{\partial\psi}{\partial t'}\vec e_x+\sum_k i\,\vec e_k\frac{\partial\psi}{\partial q_k}\vec e_y .
+$$
+
+The time derivative acts from the right only; the three spatial derivatives act from both sides at once. That is what a cell is, and it is the reason the square can be scalar.
+
+**What the cells supply is the anticommutation, and only that.** The four cells satisfy
+
+$$
+G_\mu G_\nu+G_\nu G_\mu=0\quad(\mu\ne\nu),
+$$
+
+in **both** frames, and this is the property the algebra cannot supply to any four of its elements (§*Why Four Cells and Not Four Units*). It is what makes the cross terms of $G^2$ cancel between the two orders of a mixed derivative.
+
+**The squares are not a cell property.** In the $\mathbb{B}$ frame the four cells are $iR_{\vec e_x}$ and $-L_{\vec e_k}R_{\vec e_y}$, and all four square to $+1$. The three spatial ones are multiplied by $i$ on passing to the $\mathbb{M}_-$ frame, so there they square to $-1$, and the reader who takes $G_0^2=+1$, $G_k^2=-1$ for an intrinsic fact of the cells has been misled by the frame. That $i$ is the $i$ of $Q_t=ict'$, the same one that turns the Euclidean form into the Lorentzian one, and $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$ records both at once. The sign vector $\varepsilon=(1,-1,-1,-1)$ is the metric of the frame in the cell display, and it is not a second metric.
+
+**With these squares, the contraction squares to a scalar.** In the $\mathbb{M}_-$ frame the signs add the way the material metric does, and
+
+$$
+G^2=\frac{\partial^2}{\partial x_0^2}-\Delta=-\Box .
+$$
+
+**The normalisation.** Multiplying by $i$ gives the operator whose square is $+\Box$,
+
+$$
+(iG)^2=\Box ,
+$$
+
+and this is the operator the Bhabha article writes $\mathbb{D}=i\sum_\mu G_\mu\partial/\partial x_\mu$.
+
+**Worked cases.** The same ten fields, through the cell operator. The rule is as short as before: a coordinate times a unit gives $i$ times a unit, but the unit is now produced by two multiplications instead of one.
+
+| field $\psi$ | $G\psi$ | how |
+|---|---|---|
+| $\vec e_z$ | $0$ | no coordinate in it |
+| $q_x\vec e_y$ | $-i\vec e_x$ | $\vec e_x\vec e_y\vec e_y=-\vec e_x$ |
+| $q_x\vec e_x$ | $-i\vec e_y$ | $\vec e_x\vec e_x\vec e_y=-\vec e_y$ |
+| $q_x\vec e_z$ | $ie_t$ | $\vec e_x\vec e_z\vec e_y=e_t$ |
+| $q_y\vec e_x$ | $i\vec e_x$ | $\vec e_y\vec e_x\vec e_y=\vec e_x$ |
+| $t'\vec e_x$ | $-ie_t$ | the right unit is $\vec e_x$ |
+| $q_xq_y\vec e_z$ | $iq_ye_t+iq_x\vec e_z$ | two live terms |
+| $q_xq_y\vec e_x$ | $iq_x\vec e_x-iq_y\vec e_y$ | two live terms |
+| $\sin q_x\,\vec e_x$ | $-i\cos q_x\,\vec e_y$ | the derivative of the sine |
+| $t'^2\vec e_x$ | $-2it'\,e_t$ | the derivative of the square |
+
+**One case read in full.** On $q_x\vec e_y$ only the $x$ term is live, and the two multiplications are visible:
+
+$$
+G\bigl(q_x\vec e_y\bigr)=i\,\vec e_x\bigl(\partial_x q_x\bigr)\vec e_y=i\,\vec e_x\vec e_y\vec e_y=i\,\vec e_x(-e_t)=-i\vec e_x .
+$$
+
+**Two terms at once.** A product of two coordinates shows the sum and shows the mixing of the two parts of the algebra:
+
+$$
+G\bigl(q_xq_y\vec e_z\bigr)=i\,\vec e_x\,q_y\vec e_z\vec e_y+i\,\vec e_y\,q_x\vec e_z\vec e_y=i\,q_ye_t+i\,q_x\vec e_z ,
+$$
+
+using $\vec e_x\vec e_z\vec e_y=e_t$ and $\vec e_y\vec e_z\vec e_y=\vec e_z$. One term is a scalar and one is a unit. A single application mixes the two parts, and the square being scalar is a property of the four cells together and not of one step.
+
+**One cell is diagonal, and the fifth is the chirality.** In the coefficient basis $G_y$ is diagonal,
+
+$$
+G_y=-i\operatorname{diag}(1,-1,1,-1),
+$$
+
+which is a property of the display and not an extra structure: $G_y$ is the fourth cell, and it commutes with itself. The cell that carries the chirality is the fifth of the five frame cells, $\chi=-iR_{\vec e_z}$. It squares to $+1$, its eigenvalues are $\pm1$ of multiplicity two each, and it anticommutes with every one of the four $G_\mu$. That oddness is what splits the module into the two halves, and it is the reason a single cell equation can hold the two chiral equations at once.
+
+## Why Four Cells and Not Four Units
+
+**The requirement.** A first-order equation in one field needs a first-order operator whose square is a scalar. Only then does the equation imply a second-order one, and only then can a mass be subtracted as a scalar, $(\partial-m)\psi=0$ giving $(\Box-m^2)\psi=0$.
+
+**What the algebra offers.** Write an element as $a=\alpha+\vec a$. Then
+
+$$
+a^2=\alpha^2-\lvert\vec a\rvert^2+2\alpha\vec a ,
+$$
+
+so $a^2$ is scalar exactly when $\alpha=0$ or $\vec a=0$. The second case is a central element, which multiplies every direction alike and cannot build a wave operator; the usable case is $\alpha=0$, a pure vector, and a pure vector has **three** components.
+
+**The three-component operator, and why it fails.** The spatial gradient $\sum_k\vec e_k\partial_{q_k}$ has the scalar square $-\Delta$, so it meets the first requirement and fails the second: it carries no time derivative. Its symbol is $-\lvert\vec k\rvert^2$, which vanishes only at $\vec k=0$, so it annihilates no wave and describes no propagation. A fourth generator is needed.
+
+**Why the fourth cannot be an element.** The four generators must anticommute in pairs, or the cross terms of the square survive and the square stops being scalar. Two pure vectors anticommute exactly when they are orthogonal, so four mutually anticommuting generators would be four mutually orthogonal nonzero directions of a three-dimensional space. There are three at most. Inside $\mathbb{B}$, of complex dimension four, the count cannot be met.
+
+**Where the fourth does fit.** In $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, of complex dimension sixteen. The cells are elements of that larger space: $G_0=iR_{\vec e_x}$ acts from the right, the three $G_k=iL_{\vec e_k}R_{\vec e_y}$ act from both sides, and the four anticommute. That is the entire reason the operator of a first-order wave equation is a contraction of cells and not of units, and it is a dimension count about the algebra, not a statement about signs.
+
+**What this does not say.** It does not say the cells are needed for the light cone: §*What a Plane Wave Sees* shows that the gradient annihilates the same null plane waves and that both symbols have the same determinant. The cells are needed for the **square**, so that one equation can be first order and still carry a mass.
+
+## What a Plane Wave Sees
+
+**The symbol.** Replacing each derivative by $ik_\mu$ turns a first-order operator into an array of numbers, its *symbol*, and the symbol says which plane waves the operator annihilates. The step is a substitution of $ik_\mu$ and not of $k_\mu$: the $i$ must be kept, and dropping it is the commonest error in this calculation.
+
+**Both first-order operators give the same determinant.** Take $\phi=k_0x_0-\vec k\cdot\vec q$ and $x_0=ct'$.
+
+| operator | symbol | $\det$ |
+|---|---|---|
+| $\tilde\nabla$ | the element $ik_\mu e_\mu$, of natural norm $k_0^2-\lvert\vec k\rvert^2$ | $(k_0^2-\lvert\vec k\rvert^2)^2$ |
+| $\Box$ | $k_0^2-\lvert\vec k\rvert^2$ | $k_0^2-\lvert\vec k\rvert^2$ |
+| $G$ | $\sum_\mu iG_\mu k_\mu$ | $(k_0^2-\lvert\vec k\rvert^2)^2$ |
+
+**The finding.** The light cone is common to the gradient and to the cells, and the Lorentzian form is not a property of either of them. This deserves to be stated plainly because the opposite is a natural guess. The gradient's symbol is the element $ik_\mu e_\mu$, whose natural norm is $k_0^2-\lvert\vec k\rvert^2$; a nonzero element is a zero divisor exactly when its natural norm vanishes, so the gradient annihilates a plane wave exactly when $k$ is null. The cell symbol squares to $-\left(k_0^2-\lvert\vec k\rvert^2\right)I_4$, so it is singular exactly when $k$ is null. Both conditions are the cone, and both determinants are the square of the same scalar.
+
+**Both have a two-dimensional kernel there.** At $k=(1,1,0,0)$ the gradient's symbol is the zero divisor $e_t+i\vec e_x$ and the cell symbol is singular, and neither symbol is zero:
+
+$$
+\tilde\nabla\text{ at }k:\ e_t+i\vec e_x,\quad \text{kernel }\operatorname{span}\left\{ie_t+\vec e_x,\ i\vec e_y+\vec e_z\right\},
+$$
+
+$$
+G\text{ at }k:\ \operatorname{rank}2,\quad \text{kernel }\operatorname{span}\left\{e_t+\vec e_y,\ \vec e_x+\vec e_z\right\}.
+$$
+
+The two kernels are different two-planes of the same four-dimensional space, and that is the correct picture: the two equations are different equations with the same cone. The gradient's kernel is computed by left multiplication, $\ker L(a)=\{m:am=0\}$, and it is two-dimensional because $a$ is of rank one, so its kernel is a line and each of the two columns of $m$ must lie in that line. The cell kernel is two-dimensional because the symbol squares to zero on the cone, so it is a nonzero nilpotent and its rank is two. Neither count is an accident, and neither distinguishes the operators.
+
+**Off the cone both are invertible.** At $k=(2,1,0,0)$, where $k_0^2-\lvert\vec k\rvert^2=3$, the cell symbol has determinant $9$ and the gradient's symbol has natural norm $3$, so no plane wave of that wave vector survives either operator.
+
+**What the cone does not decide.** The mass. On a null wave both operators annihilate something, so both can write a massless equation; the difference appears at the next order, where the gradient's square carries the cross term and no scalar mass can be subtracted from it, while $(iG)^2=\Box$ lets $(iG-m)\psi=0$ imply $(\Box-m^2)\psi=0$. The cone is shared; the square is not. Any argument for the cells that runs through the light cone is measuring the $i$ of $Q_t=ict'$ and not the difference between the operators.
+
+## One Field, Three Answers
+
+The three operators side by side, on the same ten fields, with $c=1$. This is the table to consult when a formula is ambiguous.
+
+| field $\psi$ | $\tilde\nabla\psi$ | $G\psi$ | $\Box\psi$ |
+|---|---|---|---|
+| $\vec e_z$ | $0$ | $0$ | $0$ |
+| $q_x\vec e_y$ | $\vec e_z$ | $-i\vec e_x$ | $0$ |
+| $q_x\vec e_x$ | $-e_t$ | $-i\vec e_y$ | $0$ |
+| $q_x\vec e_z$ | $-\vec e_y$ | $ie_t$ | $0$ |
+| $q_y\vec e_x$ | $-\vec e_z$ | $i\vec e_x$ | $0$ |
+| $t'\vec e_x$ | $-i\vec e_x$ | $-ie_t$ | $0$ |
+| $q_xq_y\vec e_z$ | $q_x\vec e_x-q_y\vec e_y$ | $iq_ye_t+iq_x\vec e_z$ | $0$ |
+| $q_xq_y\vec e_x$ | $-q_ye_t-q_x\vec e_z$ | $iq_x\vec e_x-iq_y\vec e_y$ | $0$ |
+| $\sin q_x\,\vec e_x$ | $-\cos q_x\,e_t$ | $-i\cos q_x\,\vec e_y$ | $-\sin q_x\,\vec e_x$ |
+| $t'^2\vec e_x$ | $-2it'\,\vec e_x$ | $-2it'\,e_t$ | $-\frac{2}{c^2}\vec e_x$ |
+
+**How to read the table.** The first column is always an element, and it is the field multiplied by an element on the left: that is why its entries look like products of units. The second is an element too, but produced by two multiplications, and that is why its entries are shorter, with the intermediate units cancelled. The third is a scalar times the field, and that is why it repeats the field's unit whenever it is nonzero.
+
+**Two checks that catch most errors.** On a constant field all three vanish, so any computed value that does not is a mistake. On a field linear in one coordinate the third vanishes and the first two do not, so a nonzero $\Box$ on a linear field is a mistake.
+
+**The squares, on the same fields.** The three squares, side by side:
+
+| field $\psi$ | $\tilde\nabla^2\psi$ | $G^2\psi$ | $\Box\psi$ |
+|---|---|---|---|
+| $q_x\vec e_y$ | $0$ | $0$ | $0$ |
+| $q_x^2\vec e_y$ | $-2\vec e_y$ | $-2\vec e_y$ | $2\vec e_y$ |
+| $q_xq_y\vec e_z$ | $0$ | $0$ | $0$ |
+| $\sin q_x\,\vec e_x$ | $\sin q_x\,\vec e_x$ | $\sin q_x\,\vec e_x$ | $-\sin q_x\,\vec e_x$ |
+| $t'^2\vec e_x$ | $-\frac{2}{c^2}\vec e_x$ | $+\frac{2}{c^2}\vec e_x$ | $-\frac{2}{c^2}\vec e_x$ |
+
+**How the three squares differ.** The cell square is $-\Box$ exactly. The gradient's square agrees with it on the spatial part and differs on the time part, because its diagonal is $-\Delta-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}$ where $-\Box$ is $-\Delta+\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}$; on a field with no time dependence the two coincide, which is why the first four rows show the same value in the first two columns, and on a field with no space dependence they separate, which is the fifth row. On top of that the gradient's square carries the cross term $\frac{2i}{c}\vec e_k\frac{\partial^2}{\partial t'\partial q_k}$, which no field of this table has in a single coordinate and which no purely spatial or purely temporal field can show: it needs a product of the time with a spatial coordinate.
+
+## The Arrays
+
+**Three arrays, three kinds of entry.** All three operators have a $4\times4$ array in the coefficient basis, and the arrays differ in what an entry is.
+
+- The gradient's array has **derivatives** for entries, arranged by the multiplication table of the units. It is $L^{\mathrm{axf}}$ of an element.
+- The cell operator's array has **constants** for entries, because a cell is a fixed operator and the derivative stands outside it. The array of the operator is $\sum_\mu G_\mu^{\mathrm{axf}}\partial_\mu$, a matrix of operators with constant matrices.
+- The d'Alembertian's array is $\Box I_4$: the scalar times the identity.
+
+**The four cells as arrays.** In the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,
+
+$$
+G_0=\begin{pmatrix}0&-i&0&0\\ i&0&0&0\\0&0&0&i\\0&0&-i&0\end{pmatrix},\qquad
+G_x=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&-i&0&0\\ i&0&0&0\end{pmatrix},
+$$
+
+$$
+G_y=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+G_z=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix}.
+$$
+
+Each is $i$ times a real signed permutation matrix of determinant $1$, and each is one of the sixteen cells $L_{e_\mu}R_{\vec e_{\nu(\mu)}}$ read in the coefficient basis.
+
+**The squares, at array level.** The four arrays satisfy
+
+$$
+G_0^2=I_4,\qquad G_k^2=-I_4,\qquad G_\mu G_\nu+G_\nu G_\mu=0 ,
+$$
+
+and the contracted array obeys
+
+$$
+\left(\sum_\mu G_\mu\partial_\mu\right)^2=\left(\frac{\partial^2}{\partial x_0^2}-\Delta\right)I_4=-\Box I_4 .
+$$
+
+**The array acts on the coordinate column.** Applying the operator to an element and reading the coordinate column of the result gives the same column as multiplying the four arrays into the coordinate columns of the derivatives:
+
+$$
+\bigl[G\psi\bigr]=\sum_\mu G_\mu\bigl[\partial_\mu\psi\bigr].
+$$
+
+This is the identity that makes the arrays a display and not a definition. The operator is the object; the array is what it looks like in the basis.
+
+**The gradient has no constant array, and that is the point.** There is no $4\times4$ array of numbers representing $\tilde\nabla$, because $\tilde\nabla$ is an element with derivative coefficients and not an operator with constant ones. Its array is a matrix of differential operators, and its entries are the multiplication table. The determinant of that array is the square of the natural norm, $\langle\tilde Q\rangle_\natural^2$, which is the Euclidean form $(1,1,1,1)$ in the $\mathbb{B}$ frame: the metric is read from the array, it is the same metric for the cells, and no operator in this article is where it is stored.
+
+## The Pair Operator
+
+**The fourth object.** The corpus's $\mathbb{D}$ is neither of the three. It is one operator on the direct sum $\mathbb{B}\oplus\mathbb{B}$,
+
+$$
+\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),\qquad \Psi=(\Psi_L,\Psi_R),
+$$
+
+and it squares to the scalar on the sum,
+
+$$
+\mathbb{D}^2\Psi=\bigl(\tilde\nabla\tilde\nabla^{\natural}\Psi_L,\ \tilde\nabla^{\natural}\tilde\nabla\Psi_R\bigr)=\Box\,\Psi .
+$$
+
+**Its array is block diagonal**, with the gradient's array in one block and the conjugate's in the other. No cell appears, and none is needed: the two sides of the pair are two factors of the sum, and the chirality is a place in the sum rather than a cell acting on it.
+
+**Why it is not a fourth physics.** The pair and the cell operator have the same square and the same massless content. They differ in where the two chiral halves sit: in the pair they are the two summands, so the operator is one-sided on each; in the cell operator they are the two eigenspaces of $G_y$, so the operator is two-sided on one module. Both are correct, and the corpus keeps the pair as the definition and the cell equation as its representative on the single module (*Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form*, §*The Two Dirac Equations*).
+
+**The one-line test.** If the object acts on a pair of fields, it is $\mathbb{D}$. If it acts on one field and its square is scalar in one copy, it is the cell operator. If it acts on one field, is an element, and its square is not scalar, it is the gradient.
+
+## The Source's Letter
+
+**What it is.** The source writes one letter, $\partial$, and the letter is the cell operator with the three spatial cells taken with the minus sign:
+
+$$
+\partial=G_0\frac{\partial}{\partial x_0}-\sum_k G_k\frac{\partial}{\partial x_k}
+=\frac{i}{c}R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_k iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial q_k}.
+$$
+
+**The sign is a reflection and changes nothing that matters.** Each spatial term enters the square squared, so the sign of the three spatial cells does not touch the square:
+
+$$
+\partial^2=\frac{\partial^2}{\partial x_0^2}-\Delta=-\Box,
+$$
+
+the same square as $G$. Neither does it touch the null condition, because the sign of the three spatial components of a wave vector leaves $k_0^2-\lvert\vec k\rvert^2$ unchanged. The two operators are the same device in two sign conventions, and the corpus's convention is the one with the plus.
+
+**Why the letter is not $\mathbb{D}$.** The letter is a cell contraction on one field, and $\mathbb{D}$ is the pair on two. They square to opposite signs, $-\Box$ against $+\Box$, which is the difference between a contraction of cells with the metric's signs and a product of the gradient with its conjugate.
+
+**How to cite it.** A page that quotes the source writes the letter and says, once, that it is $G$ with the spatial cells negated; a page that computes writes $G$, $iG$ or $\Box$. Mixed use without the note is what makes the three operators look like one.
+
+**Why the letter has to be there at all.** Not for the light cone, which the gradient reaches too, but for the square. The source wants one first-order equation in one field, with a mass in it, and the mass can only be a scalar subtracted from an operator whose square is a scalar. That operator must have four pairwise anticommuting generators, and §*Why Four Cells and Not Four Units* shows that the algebra contains no such four. The letter is that operator, and it is a contraction of cells because only the cells provide the fourth generator.
+
+## The Five Traps
+
+**The first trap: $\tilde\nabla^2=\Box$.** False. The square is $\Box-2\Delta-\frac{2i}{c}\vec e_k\partial^2_{t'q_k}$, which is neither scalar nor $\Box$. The d'Alembertian is the product with the conjugate, and the order of the two factors is the whole content of the definition.
+
+**The second trap: the sign of the cell square.** $G^2=-\Box$ and $(iG)^2=+\Box$. Both are correct, and a page that mixes them flips the sign of every mass term. The sign comes from the frame and not from the cells: the three spatial cells of $\mathbb{M}_-$ are $i$ times those of $\mathbb{B}$, so they square to $-1$ there and to $+1$ in $\mathbb{B}$, and the $i$ that flips them is the $i$ of $Q_t=ict'$.
+
+**The third trap: calling the cell operator $\mathbb{D}$.** In this corpus $\mathbb{D}$ is the pair on $\mathbb{B}\oplus\mathbb{B}$, and in *Product and Form Conventions* it is the split-complex numbers. The cell contraction has no reserved letter, and $G$ or $iG$ names it without ambiguity.
+
+**The fourth trap: "the metric must sit somewhere."** It must not, because it is already there. The algebra carries the Euclidean metric $(1,1,1,1)$ in its natural norm, and the Lorentzian form of a material display is that metric after $Q_t=ict'$, one substitution and not a sign put into an operator. The gradient and the cells carry the same $i$, so neither of them is where the metric sits, and both annihilate the same null waves. What the cells supply is four anticommuting generators, which no element can supply; that is a dimension count, and it is not a signature.
+
+**The fifth trap: treating a cell as an element.** No element of $\mathbb{B}$ can play the part of $G_k$. Write an element as $\alpha+\vec a$; then $(\alpha+\vec a)^2=\alpha^2-\lvert\vec a\rvert^2+2\alpha\vec a$. An element with $\vec a=0$ is central, so it commutes with everything and cannot anticommute with a second generator; an element with $\alpha=0$ is a pure vector, and two pure vectors anticommute exactly when they are orthogonal. Four anticommuting generators would therefore be four mutually orthogonal nonzero vectors of a three-dimensional space, and four such do not exist. That is why the cells are operators of the algebra and not elements of it, and why the cell operator cannot be rewritten as a sum of elements with derivative coefficients.
+
+## Summary
+
+**The gradient** is an element with derivative coefficients. It acts on the left, it stays in the algebra, and its square is not scalar; its symbol has the same light cone as the cells'.
+
+**The d'Alembertian** is the scalar second-order operator $\Box=\tilde\nabla\tilde\nabla^{\natural}$. It stays in the algebra, it is scalar, and its kernel is the light cone.
+
+**The cell operator** is a first-order operator of the algebra built from four frame cells. It acts on both sides, it leaves the algebra for the frame, and its square is scalar in one copy; the gain is anticommutation, not a signature, and its symbol has the same light cone as the gradient's.
+
+**The pair operator** $\mathbb{D}$ is one operator on $\mathbb{B}\oplus\mathbb{B}$ whose square is $\Box I$; it is the pair written once and contains no cell.
+
+**The rule of use.** A first-order equation in one field *with a mass* needs the cells; a second-order equation in one field needs $\Box$; a first-order pair needs the gradient with its conjugate and the direct sum. All three write the same light cone, so the choice is never about the cone and always about the square.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $\tilde\nabla$ | the biquaternionic gradient, $\sum_\mu e_\mu\partial/\partial Q_\mu$; an element with derivative coefficients |
+| $\langle\tilde Q\rangle_\natural$ | the natural norm $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the Euclidean form $(1,1,1,1)$; the determinant of the left array is its square |
+| $\tilde\nabla^{\natural}$ | its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$ |
+| $\Box$ | the d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\Delta-c^{-2}\partial^2/\partial t'^2$ on $\mathbb{M}_-$ |
+| $Q_\mu$, $q_\mu$ | the algebra coordinates and their real parts; $Q_t=ict'$ and $Q_k=q_k$ on $\mathbb{M}_-$ |
+| $x_0$, $x_k$ | the material coordinates $x_0=ct'$ and $x_k=q_k$ |
+| $L_a$, $R_b$ | left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
+| $G_\mu$ | the four frame cells a derivative contracts with, $G_0=iR_{\vec e_x}$ and $G_k=iL_{\vec e_k}R_{\vec e_y}$ |
+| $G$ | the cell operator, $\sum_\mu G_\mu\partial/\partial x_\mu$; $G^2=-\Box$ |
+| $iG$ | the cell operator normalised to square to $+\Box$; the Bhabha article's $\mathbb{D}$ |
+| $\mathbb{D}$ | *in the conventions*, the pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}^2=\Box I$ |
+| $\partial$ | *the source's letter*, the cell operator $G_0\partial_0-\sum_k G_k\partial_k$ |
+| $L^{\mathrm{axf}}$, $R^{\mathrm{axf}}$ | the left and right arrays in the coefficient basis; the label is a name, not an exponent |
+| symbol | the array obtained by $\partial_\mu\mapsto ik_\mu$; its determinant decides invertibility on a plane wave |
+| $\varepsilon=(1,-1,-1,-1)$ | the sign vector, carried by the units in the conjugate and by the cells in their squares in the $\mathbb{M}_-$ frame; it is that frame's metric, not an intrinsic sign of a cell |
+
+## Further Reading
+
+- [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient, its conjugate, the four norms and the pair operator.
+- [Matrix Representations Conventions](matrix-representations-conventions.html), for the cells, the five frame cells and the coefficient-basis arrays.
+- [Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form](bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html), for the cell operator $\mathbb{D}$ and its relation to the chiral pair.
+- [The Biquaternion D'Alembertian and Its Green's Functions](the-biquaternion-dalembertian-and-its-greens-functions.html), for $\Box$ as an operator with a kernel and a Green function.
+- [Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form](subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html), for the source's calculus in the article that uses the letter $\partial$.

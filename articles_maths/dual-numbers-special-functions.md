@@ -7,13 +7,13 @@ This article introduces the dual numbers special functions as a collection of na
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. No specific dimensions. Dual numbers analysis is assumed from the preceding article, and the maximal ideal is used throughout. The functions are defined over the real numbers $\mathbb{R}$, where the exponential, logarithmic and trigonometric series converge and the structure theorem for dual differentiable functions applies; the polynomial identities they satisfy hold over any commutative $\mathbb{Q}$-algebra.
 
-Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and the split complex algebra is denoted $\mathbb{D}$. The unit of $\mathbb{D}'$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
+Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dua}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dua}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
 
 ## Preliminary: The Structure of Dual Functions
 
 Before defining any special function, it is worth recalling the structural theorem from dual numbers analysis, because it determines the shape of every function in this article.
 
-**Theorem (Structure of dual differentiable functions).** A dual differentiable function $f : \Omega \to \mathbb{D}'$ on a domain $\Omega \subseteq \mathbb{D}'$ is of the form
+**Theorem (Structure of dual differentiable functions).** A dual differentiable function $f : \Omega \to \mathbb{C}^{\mathrm{dua}}$ on a domain $\Omega \subseteq \mathbb{C}^{\mathrm{dua}}$ is of the form
 
 $$
 f(q + \varepsilon q') = u(q) + \left( q' u'(q) + c(q) \right) \varepsilon,
@@ -32,7 +32,7 @@ The functions defined below are of two kinds:
 
 ### Definition
 
-The **dual exponential** is defined for $Q \in \mathbb{D}'$ by
+The **dual exponential** is defined for $Q \in \mathbb{C}^{\mathrm{dua}}$ by
 
 $$
 \exp(Q) = \sum_{n=0}^\infty \frac{Q^n}{n!}.
@@ -129,7 +129,7 @@ There is no dual analogue of the argument of a complex number, because the dual 
 
 ### Definition
 
-For $Q_1$ in the domain of the dual logarithm and $Q_2 \in \mathbb{D}'$, the **dual power** is
+For $Q_1$ in the domain of the dual logarithm and $Q_2 \in \mathbb{C}^{\mathrm{dua}}$, the **dual power** is
 
 $$
 Q_1^{Q_2} = \exp(Q_2 \log Q_1).
@@ -531,7 +531,7 @@ The section on the structure principle states what organises all of the definiti
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}'$ | Dual number algebra |
+| $\mathbb{C}^{\mathrm{dua}}$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
 | $Q = q + \varepsilon q'$ | General dual number, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
 | $\exp(Q), \log Q$ | Dual exponential, logarithm |

@@ -12,7 +12,7 @@ Beside the four-vector, the matrix and the polar readings, the reduced biquatern
 
 **Definition.** Let $Cl_{1,0}$ be the real Clifford algebra of one generator $f$ with $f^{2}=+1$, and $Cl_{0,1}$ the real Clifford algebra of one generator $e$ with $e^{2}=-1$. The **Clifford identification** of the reduced biquaternions is
 $$
-\mathbb{B}_{\mathrm{r}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1},
+\mathbb{B}^{\mathrm{red}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1},
 $$
 the tensor product of the split-complex and the complex Clifford algebras.
 
@@ -22,21 +22,21 @@ the tensor product of the split-complex and the complex Clifford algebras.
 $$
 f\otimes 1\mapsto j,\qquad 1\otimes e\mapsto i,\qquad f\otimes e\mapsto ij
 $$
-extends to an isomorphism of real algebras $\mathbb{B}_{\mathrm{r}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$.
+extends to an isomorphism of real algebras $\mathbb{B}^{\mathrm{red}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$.
 
-*Proof.* $f\otimes1$ and $1\otimes e$ square to $f^{2}\otimes1=+1$ and $1\otimes e^{2}=-1$, matching $j^{2}=+1$ and $i^{2}=-1$, and they commute because they sit in the two different tensor factors; the tensor product is spanned by $1\otimes1$, $f\otimes1$, $1\otimes e$ and $f\otimes e$, four real dimensions, and so is $\mathbb{B}_{\mathrm{r}}$; the map is an algebra homomorphism on the generators and a bijection on a spanning set, hence an isomorphism.
+*Proof.* $f\otimes1$ and $1\otimes e$ square to $f^{2}\otimes1=+1$ and $1\otimes e^{2}=-1$, matching $j^{2}=+1$ and $i^{2}=-1$, and they commute because they sit in the two different tensor factors; the tensor product is spanned by $1\otimes1$, $f\otimes1$, $1\otimes e$ and $f\otimes e$, four real dimensions, and so is $\mathbb{B}^{\mathrm{red}}$; the map is an algebra homomorphism on the generators and a bijection on a spanning set, hence an isomorphism.
 
 **Corollary (the factorisation of the algebra).** $Cl_{1,0}\cong\mathbb{R}[f]/(f^{2}-1)\cong\mathbb{R}\times\mathbb{R}$, split by $f\mapsto(1,-1)$, and $Cl_{0,1}\cong\mathbb{R}[e]/(e^{2}+1)\cong\mathbb{C}$; the tensor product is
 $$
 (\mathbb{R}\times\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}.
 $$
-This is the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$ read on the Clifford side, and the zero divisors of the algebra are the Clifford elements one of whose two components vanishes.
+This is the isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ read on the Clifford side, and the zero divisors of the algebra are the Clifford elements one of whose two components vanishes.
 
 *Proof.* The two factors are the standard presentations of the split-complex numbers and the complex numbers; the tensor product of $\mathbb{R}\times\mathbb{R}$ with $\mathbb{C}$ is $\mathbb{C}\times\mathbb{C}$; and a product ring has zero divisors exactly at the elements with a vanishing component, which are the images of the two idempotent lines.
 
 ### The Dictionary of the Basis
 
-| $\mathbb{B}_{\mathrm{r}}$ | $Cl_{1,0}\otimes Cl_{0,1}$ | square |
+| $\mathbb{B}^{\mathrm{red}}$ | $Cl_{1,0}\otimes Cl_{0,1}$ | square |
 |---|---|---|
 | $1$ | $1\otimes1$ | $+1$ |
 | $i$ | $1\otimes e$ | $-1$ |
@@ -57,7 +57,7 @@ It places the reduced biquaternions in the Clifford family as the commutative sq
 $$
 \operatorname{idem}(\breve Q)=(Q_{+},Q_{-}),\qquad \breve Q=Q_{+}\Pi_++Q_{-}\Pi_-,
 $$
-a map $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\times\mathbb{C}$.
+a map $\mathbb{B}^{\mathrm{red}}\to\mathbb{C}\times\mathbb{C}$.
 
 **Theorem.** $\operatorname{idem}$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\times\mathbb{C}$: it is $\mathbb{C}$-linear, bijective, $\operatorname{idem}(1)=(1,1)$, and $\operatorname{idem}(\breve Q_{1}\breve Q_{2})=(Q_{1+}Q_{2+},\,Q_{1-}Q_{2-})=\operatorname{idem}(\breve Q_{1})\operatorname{idem}(\breve Q_{2})$, where $Q_{i+}$ and $Q_{i-}$ are the two coordinates of $\breve Q_{i}$.
 
@@ -73,18 +73,18 @@ a map $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\times\mathbb{C}$.
 
 **Definition.** Let $\mathbb{R}[x,y]$ be the polynomial ring in two commuting indeterminates. The **quotient presentation** of the reduced biquaternions is
 $$
-\mathbb{B}_{\mathrm{r}}\cong\mathbb{R}[x,y]\big/\bigl(x^{2}+1,\ y^{2}-1\bigr),
+\mathbb{B}^{\mathrm{red}}\cong\mathbb{R}[x,y]\big/\bigl(x^{2}+1,\ y^{2}-1\bigr),
 $$
 the classes of $x$ and $y$ being $i$ and $j$.
 
-**Theorem.** The quotient is a four-dimensional real algebra isomorphic to $\mathbb{B}_{\mathrm{r}}$.
+**Theorem.** The quotient is a four-dimensional real algebra isomorphic to $\mathbb{B}^{\mathrm{red}}$.
 
 *Proof.* The relations are exactly the defining relations $i^{2}=-1$ and $j^{2}=+1$ of the basis $1,i,j,ij$, and the commutativity of the polynomial ring is $ji=ij$; the classes of $1,x,y,xy$ form a real basis of the quotient, four-dimensional.
 
 **Corollary (the factorisation of the quotient).** $x^{2}+1$ is irreducible over $\mathbb{R}$ and $y^{2}-1=(y-1)(y+1)$ splits, so
 $$
 \boxed{\;
-\mathbb{B}_{\mathrm{r}}\cong\mathbb{R}[x]/(x^{2}+1)\otimes_{\mathbb{R}}\mathbb{R}[y]/(y^{2}-1)\cong\mathbb{C}\otimes_{\mathbb{R}}(\mathbb{R}\times\mathbb{R})\cong\mathbb{C}\times\mathbb{C}
+\mathbb{B}^{\mathrm{red}}\cong\mathbb{R}[x]/(x^{2}+1)\otimes_{\mathbb{R}}\mathbb{R}[y]/(y^{2}-1)\cong\mathbb{C}\otimes_{\mathbb{R}}(\mathbb{R}\times\mathbb{R})\cong\mathbb{C}\times\mathbb{C}
 \;},
 $$
 the definite factor giving the field and the split factor giving the two idempotent lines. The ring is **commutative** and **has zero divisors**, and it is **not a domain**; it is the same algebra as the Clifford identification of §*The Clifford Identification*, written with indeterminates.
@@ -95,7 +95,7 @@ the definite factor giving the field and the split factor giving the two idempot
 
 **The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, and the two complex factors are the two complex structures of the same space.**
 
-**Theorem (the two complex structures and their product).** The real algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ carries two commuting complex structures, the multiplications by $i$ and by $ij$,
+**Theorem (the two complex structures and their product).** The real algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ carries two commuting complex structures, the multiplications by $i$ and by $ij$,
 $$
 \boxed{\;
 J_{1}(\breve Q)=i\breve Q,\qquad J_{2}(\breve Q)=ij\breve Q,\qquad J_{1}^{2}=J_{2}^{2}=-\mathrm{id},\qquad J_{1}J_{2}=J_{2}J_{1}
@@ -117,7 +117,7 @@ is a **real structure**, $(J_{1}J_{2})^{2}=+\mathrm{id}$, the multiplication by 
 
 **A matrix of several reduced biquaternions is a pair of complex matrices, and the array ring is the product of two full matrix rings.**
 
-**Definition.** A **reduced biquaternion array** is an $n\times n$ matrix $M=\bigl((\breve Q)_{rs}\bigr)$ with entries in $\mathbb{B}_{\mathrm{r}}$. The **array representation** is the map
+**Definition.** A **reduced biquaternion array** is an $n\times n$ matrix $M=\bigl((\breve Q)_{rs}\bigr)$ with entries in $\mathbb{B}^{\mathrm{red}}$. The **array representation** is the map
 $$
 M\mapsto\bigl(\operatorname{idem}(M_{rs})\bigr)=\bigl(M^{+},M^{-}\bigr),\qquad (M^{\pm})_{rs}=\lambda_{\pm}\bigl((\breve Q)_{rs}\bigr),
 $$
@@ -126,12 +126,12 @@ sending the array to a pair of $n\times n$ complex matrices, the $Q_{+}$-part an
 **Theorem (the array ring).** The array representation is an isomorphism of rings
 $$
 \boxed{\;
-M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})
+M_{n}(\mathbb{B}^{\mathrm{red}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})
 \;},
 $$
 it is compatible with the product, with the identity, and with the determinant in the sense $\det M=(\det M^{+},\det M^{-})\in\mathbb{C}\times\mathbb{C}$; the array is invertible exactly when both complex matrices are.
 
-*Proof.* The entries of $\mathbb{B}_{\mathrm{r}}$ are pairs of complex numbers and the operations are componentwise, so $M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C}\times\mathbb{C})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})$; the determinant over the commutative ring $\mathbb{C}\times\mathbb{C}$ computes componentwise, whence the pair of determinants and the invertibility criterion.
+*Proof.* The entries of $\mathbb{B}^{\mathrm{red}}$ are pairs of complex numbers and the operations are componentwise, so $M_{n}(\mathbb{B}^{\mathrm{red}})\cong M_{n}(\mathbb{C}\times\mathbb{C})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})$; the determinant over the commutative ring $\mathbb{C}\times\mathbb{C}$ computes componentwise, whence the pair of determinants and the invertibility criterion.
 
 **Corollary (the repeated-block form).** Through the regular representation each entry becomes a $2\times2$ complex matrix, so the array becomes a $2n\times2n$ complex matrix with the $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$ blocks; the array representation by the pair $(M^{+},M^{-})$ is the diagonalised form of that matrix, the passage being the simultaneous change of basis of every entry of *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*.
 
@@ -139,7 +139,7 @@ it is compatible with the product, with the identity, and with the determinant i
 
 ## Relations Between the Representations
 
-**The four presentations are the same isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\times\mathbb{C}$ in four alphabets, and the table places them.**
+**The four presentations are the same isomorphism $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$ in four alphabets, and the table places them.**
 
 | presentation | the element read as | dimension over $\mathbb{C}$ | coordinate ring |
 |---|---|---|---|
@@ -160,7 +160,7 @@ The Clifford identification chooses which generator squares to $+1$ and which to
 
 ## Summary
 
-The reduced biquaternions carry three algebraic presentations beside the four-vector, the matrix and the polar readings: the **Clifford identification** $\mathbb{B}_{\mathrm{r}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$, with $Cl_{1,0}\cong\mathbb{R}\times\mathbb{R}$ split and $Cl_{0,1}\cong\mathbb{C}$ definite; the **idempotent-coordinate representation** $\breve Q\mapsto(Q_{+},Q_{-})$, the algebra isomorphism onto $\mathbb{C}\times\mathbb{C}$ whose two coordinates are the two characters; and the **quotient presentation** $\mathbb{R}[x,y]/(x^{2}+1,y^{2}-1)\cong\mathbb{C}\times\mathbb{C}$. To these the **array representation** adds $M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})$, with $\det M=(\det M^{+},\det M^{-})$ and the invertibility read on the two complex matrices. The four agree on the two coordinates $Q_{+}$ and $Q_{-}$; they involve only the choice of naming the two generators, which does not change the algebra, and the multiplication is **commutative**, **has zero divisors** and is **not a division algebra** in every presentation.
+The reduced biquaternions carry three algebraic presentations beside the four-vector, the matrix and the polar readings: the **Clifford identification** $\mathbb{B}^{\mathrm{red}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$, with $Cl_{1,0}\cong\mathbb{R}\times\mathbb{R}$ split and $Cl_{0,1}\cong\mathbb{C}$ definite; the **idempotent-coordinate representation** $\breve Q\mapsto(Q_{+},Q_{-})$, the algebra isomorphism onto $\mathbb{C}\times\mathbb{C}$ whose two coordinates are the two characters; and the **quotient presentation** $\mathbb{R}[x,y]/(x^{2}+1,y^{2}-1)\cong\mathbb{C}\times\mathbb{C}$. To these the **array representation** adds $M_{n}(\mathbb{B}^{\mathrm{red}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})$, with $\det M=(\det M^{+},\det M^{-})$ and the invertibility read on the two complex matrices. The four agree on the two coordinates $Q_{+}$ and $Q_{-}$; they involve only the choice of naming the two generators, which does not change the algebra, and the multiplication is **commutative**, **has zero divisors** and is **not a division algebra** in every presentation.
 
 ## Summary of Notation
 

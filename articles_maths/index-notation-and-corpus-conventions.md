@@ -154,7 +154,7 @@ The table is an index of labels and not a list of tokens: a label names an objec
 
 ## The Subscripts
 
-A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone. A subscript label is written in the upright roman of the caret labels, and the two lists are read together (§*The Three-Letter Labels*). The family letters $L$ and $R$ of a regular matrix are labels of that kind, and they are written italic as the letters of the operators rather than upright as a word; they follow the size in the same subscript, $\mathsf M_{4L}$ and $\mathsf M_{4R}$.
+A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}^{\mathrm{red}}$, because a bare underscore would take the first character alone. A subscript label is written in the upright roman of the caret labels, and the two lists are read together (§*The Three-Letter Labels*). The family letters $L$ and $R$ of a regular matrix are labels of that kind, and they are written italic as the letters of the operators rather than upright as a word; they follow the size in the same subscript, $\mathsf M_{4L}$ and $\mathsf M_{4R}$.
 
 **A subscript is never a partial derivative.** The subscript is an index or a label, a partial derivative is written with $\partial$, and the rule is fixed in *Operator and Calculus Conventions*, §*Conventions for Derivation*.
 
@@ -162,7 +162,7 @@ A subscript is written with the underscore, `_`, inside the math delimiters, and
 
 **It is allowed to add subscripts when several elements of the same kind are used.** The permission covers the units, the roots, the idempotents and the nilpotents as well as the general elements: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.
 
-**A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm b}$.
+**A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\mathbb{B}^{\mathrm{red}}$ and $\tilde U_{\mathrm b}$.
 
 **A role-labelled element carries its label in its coefficients.** The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.
 
@@ -178,7 +178,7 @@ The forms a subscript takes are these.
 | a letter | $Q_k$, $Q_\mu$ |
 | two indices | $Q_{ab}$ |
 | a sign | $\tilde\Pi_\pm$ |
-| an upright word | $\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm b}$ |
+| an upright word | $\mathbb{B}^{\mathrm{red}}$, $\tilde U_{\mathrm b}$ |
 | a grouped expression | $Q_{n+1}$ |
 
 **The size and the family share one subscript.** A regular matrix carries the size of its array and the letters of its family in the same subscript, the size first and the family after it with no separator: $\mathsf M_{4L}$ and $\mathsf M_{4R}$ for the one-sided families, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$ for the two-sided one. The family letters keep the italic capitals of the operators $L$ and $R$, against the upright roman of a role label, and the caret is left free for the frame, $\mathsf M_{4L}^{\mathrm{pau}}$. A bare size, as in $M_4(\mathbb{C})$, names a matrix algebra and no family.

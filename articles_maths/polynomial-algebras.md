@@ -92,7 +92,7 @@ The bound fails over a ring with zero divisors, and this failure is precisely wh
 **Example (the two-dimensional algebras).** The three two-dimensional commutative unital real algebras are quotients by a quadratic:
 
 $$
-\mathbb{C} = \frac{\mathbb{R}[x]}{(x^2+1)}, \qquad \mathbb{D} = \frac{\mathbb{R}[x]}{(x^2-1)}, \qquad \mathbb{D}' = \frac{\mathbb{R}[x]}{(x^2)} .
+\mathbb{C} = \frac{\mathbb{R}[x]}{(x^2+1)}, \qquad \mathbb{C}^{\mathrm{spl}} = \frac{\mathbb{R}[x]}{(x^2-1)}, \qquad \mathbb{C}^{\mathrm{dua}} = \frac{\mathbb{R}[x]}{(x^2)} .
 $$
 
 The first is a field because $x^2+1$ is irreducible over $\mathbb{R}$; the second is $\mathbb{R}\times\mathbb{R}$ because $x^2-1 = (x-1)(x+1)$ is a product of distinct linear factors; the third has a nilpotent because $x^2$ is a square. These are the three cases, and they exhaust the two-dimensional cases by the same discriminant argument.
@@ -105,7 +105,7 @@ $$
 
 as $k$-algebras. In particular, $k[x]/(f)$ is a product of field extensions of $k$ if and only if $f$ is squarefree; the factors are then the fields $k[x]/(f_i)$ for the distinct irreducible factors $f_i$ of $f$.
 
-The decomposition of $\mathbb{D}$ into $\mathbb{R}\times\mathbb{R}$ is the case $f = x^2 - 1 = (x-1)(x+1)$, and the failure of $\mathbb{D}'$ to decompose is the case $f = x^2$, where the two factors coincide.
+The decomposition of $\mathbb{C}^{\mathrm{spl}}$ into $\mathbb{R}\times\mathbb{R}$ is the case $f = x^2 - 1 = (x-1)(x+1)$, and the failure of $\mathbb{C}^{\mathrm{dua}}$ to decompose is the case $f = x^2$, where the two factors coincide.
 
 ## Several Variables
 

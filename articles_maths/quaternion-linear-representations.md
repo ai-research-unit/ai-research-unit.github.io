@@ -270,11 +270,11 @@ The representation theory of $\mathbb{H}$ differs from that of the complex and s
 
 **Number of irreducibles.** The complex algebra has one irreducible representation, as does the quaternion algebra. The split complex algebra has two.
 
-**Endomorphism rings.** The endomorphism ring of the regular representation of $\mathbb{C}$ is $\mathbb{C}$ itself. The endomorphism ring of the regular representation of $\mathbb{H}$ is $\mathbb{H}$ itself. The endomorphism ring of the regular representation of $\mathbb{D}$ is $\mathbb{R} \oplus \mathbb{R}$.
+**Endomorphism rings.** The endomorphism ring of the regular representation of $\mathbb{C}$ is $\mathbb{C}$ itself. The endomorphism ring of the regular representation of $\mathbb{H}$ is $\mathbb{H}$ itself. The endomorphism ring of the regular representation of $\mathbb{C}^{\mathrm{spl}}$ is $\mathbb{R} \oplus \mathbb{R}$.
 
 **Tensor products.** The tensor product of two representations is again a representation in all three cases; for $\mathbb{H}$ this uses the diagonal action, which is an algebra homomorphism whether or not the algebra is commutative.
 
-**Representation rings.** $R(\mathbb{C}) \cong \mathbb{Z}$. $R(\mathbb{H})$ is $\mathbb{Z}$ as a group, with the multiplication $m \cdot n = 4 mn$, which has no identity element. $R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}$. The three are not isomorphic.
+**Representation rings.** $R(\mathbb{C}) \cong \mathbb{Z}$. $R(\mathbb{H})$ is $\mathbb{Z}$ as a group, with the multiplication $m \cdot n = 4 mn$, which has no identity element. $R(\mathbb{C}^{\mathrm{spl}}) \cong \mathbb{Z} \oplus \mathbb{Z}$. The three are not isomorphic.
 
 ## Summary
 

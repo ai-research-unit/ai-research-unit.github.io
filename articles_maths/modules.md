@@ -64,7 +64,7 @@ The bijection is the identity map on subsets of $R$, so it is an isomorphism of 
 
 **(f)** For a group $G$ and commutative ring $R$, the group ring $R[G]$ is an $R$-algebra, and $R[G]$-modules are exactly the $R$-linear representations of $G$.
 
-**(g)** A division ring $D$ has no zero divisors, so $D$-modules are $D$-vector spaces (§19); a field is the commutative case. Rings with zero divisors, such as the split-complex numbers $\mathbb{D}$, are not division rings, and their module theory follows their ideal structure. The quaternion algebra is treated in *Division Algebras*.
+**(g)** A division ring $D$ has no zero divisors, so $D$-modules are $D$-vector spaces (§19); a field is the commutative case. Rings with zero divisors, such as the split-complex numbers $\mathbb{C}^{\mathrm{spl}}$, are not division rings, and their module theory follows their ideal structure. The quaternion algebra is treated in *Division Algebras*.
 
 ## 4. Submodules
 

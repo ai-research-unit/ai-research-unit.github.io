@@ -8,14 +8,14 @@ The Clifford description of the algebra and of $\mathrm{Cl}(3)$ is *Complex Spli
 
 The article owns the parity grading of the algebra, the even–odd formula of the quadratic family, the invariance of the even part, the two decompositions and their Hadamard relation, the identification of the quaternion fractal with the diagonal slice, and the symmetry by the volume element.
 
-**Standing convention.** $\mathbb{H}_{\mathbb{D}}=\mathrm{Cl}(0,3)$ with generators $E_\mu=j\vec e_\mu$ satisfying $E_\mu^2=-1$ and $E_\mu E_\nu=-E_\nu E_\mu$; the scalar is $e_t$, the bivectors are $\vec e_x,\vec e_y,\vec e_z$ and the trivector is $\omega=E_1E_2E_3=-j$. The even part is $\mathrm{Cl}^0=\operatorname{span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}\cong\mathbb{H}$ and the odd part is $\mathrm{Cl}^1=\operatorname{span}\{je_t,j\vec e_x,j\vec e_y,j\vec e_z\}=j\mathbb{H}$. A split biquaternion is written $\tilde Q=\tilde q+j\tilde q'$ with $\tilde q,\tilde q'\in\mathbb{H}$, so that $\tilde q$ is the even part and $j\tilde q'$ the odd part; a numbered element carries its number on both halves, $\tilde Q_1=\tilde q_1+j\tilde q_1'$.
+**Standing convention.** $\mathbb{B}^{\mathrm{spl}}=\mathrm{Cl}(0,3)$ with generators $E_\mu=j\vec e_\mu$ satisfying $E_\mu^2=-1$ and $E_\mu E_\nu=-E_\nu E_\mu$; the scalar is $e_t$, the bivectors are $\vec e_x,\vec e_y,\vec e_z$ and the trivector is $\omega=E_1E_2E_3=-j$. The even part is $\mathrm{Cl}^0=\operatorname{span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}\cong\mathbb{H}$ and the odd part is $\mathrm{Cl}^1=\operatorname{span}\{je_t,j\vec e_x,j\vec e_y,j\vec e_z\}=j\mathbb{H}$. A split biquaternion is written $\tilde Q=\tilde q+j\tilde q'$ with $\tilde q,\tilde q'\in\mathbb{H}$, so that $\tilde q$ is the even part and $j\tilde q'$ the odd part; a numbered element carries its number on both halves, $\tilde Q_1=\tilde q_1+j\tilde q_1'$.
 
 ## The Parity Grading and the Even Part
 
 **Proposition (the graded decomposition).** The algebra is the direct sum of its even and odd parts,
 
 $$
-\mathbb{H}_{\mathbb{D}}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1=\mathbb{H}\oplus j\mathbb{H},
+\mathbb{B}^{\mathrm{spl}}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1=\mathbb{H}\oplus j\mathbb{H},
 $$
 
 and the even part is a subalgebra isomorphic to the quaternion algebra, hence a division algebra; the odd part is a module over the even part. The product of two even elements is even, of an even and an odd element is odd, and of two odd elements is even.
@@ -44,7 +44,7 @@ $$
 
 ## The Quaternion Fractal as the Diagonal
 
-**Theorem (the diagonal slice).** Under the idempotent identification $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$, the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is the diagonal $\{(\tilde q,\tilde q)\}$, and the slice of the fractal is
+**Theorem (the diagonal slice).** Under the idempotent identification $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$, the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is the diagonal $\{(\tilde q,\tilde q)\}$, and the slice of the fractal is
 
 $$
 \boxed{\;
@@ -78,7 +78,7 @@ So the two ideals $\mathbb{H}\tilde\Pi_{1,2}$ are the eigenspaces of the volume 
 
 **Proof.** $j$ is central and $j^2=e_t$, so $\omega=-j$ is central with $\omega^2=e_t$; the action on the idempotents is $-j\tilde\Pi_1 = -\tfrac12(j+j^2)=-\tfrac12(j+1)=-\tilde\Pi_1$ and $-j\tilde\Pi_2=-\tfrac12(j-1)=+\tilde\Pi_2$.
 
-**Corollary (the complexification and the two chiral summands).** The complexified algebra splits as $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong\mathbb{B}\oplus\mathbb{B}$, the two summands being the two chiral halves, each isomorphic to the biquaternion algebra; the parity and the chirality together are the two gradings of the complexification.
+**Corollary (the complexification and the two chiral summands).** The complexified algebra splits as $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{spl}}\cong\mathbb{B}\oplus\mathbb{B}$, the two summands being the two chiral halves, each isomorphic to the biquaternion algebra; the parity and the chirality together are the two gradings of the complexification.
 
 **Theorem (the symmetry by the volume element).** Multiplication by $j$ is an isometry of the Euclidean norm and satisfies
 
@@ -104,7 +104,7 @@ The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, grade
 
 | symbol | meaning |
 |---|---|
-| $\mathrm{Cl}(0,3)=\mathbb{H}_{\mathbb{D}}$ | the Clifford description of the algebra |
+| $\mathrm{Cl}(0,3)=\mathbb{B}^{\mathrm{spl}}$ | the Clifford description of the algebra |
 | $E_\mu=j\vec e_\mu$, $E_\mu^2=-1$ | the Clifford vectors |
 | $\vec e_x,\vec e_y,\vec e_z$ | the bivectors, generating the even part |
 | $\omega=E_1E_2E_3=-j$ | the volume element |

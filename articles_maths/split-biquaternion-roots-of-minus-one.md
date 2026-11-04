@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article determines the roots of $-1$ in the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, that is, the elements $\tilde\Xi \in \mathbb{H}_{\mathbb{D}}$ satisfying
+This article determines the roots of $-1$ in the split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$, that is, the elements $\tilde\Xi \in \mathbb{B}^{\mathrm{spl}}$ satisfying
 
 $$
 \tilde\Xi^2 = -1.
@@ -11,7 +11,7 @@ $$
 
 It follows the article on split biquaternion zero divisors, where the structure of the algebra and its zero divisors are established, and it uses the idempotent decomposition of the algebra into two copies of the quaternion algebra.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its idempotent decomposition.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}^{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its idempotent decomposition.
 
 Throughout, a split biquaternion is written
 
@@ -33,7 +33,7 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quatern
 
 ### Statement
 
-A **root of $-1$** in $\mathbb{H}_{\mathbb{D}}$ is an element $\tilde\Xi \in \mathbb{H}_{\mathbb{D}}$ satisfying
+A **root of $-1$** in $\mathbb{B}^{\mathrm{spl}}$ is an element $\tilde\Xi \in \mathbb{B}^{\mathrm{spl}}$ satisfying
 
 $$
 \tilde\Xi^2 = -1.
@@ -59,13 +59,13 @@ $$
 
 where $\xi_\pm \in \mathbb{H}$ are ordinary quaternions, and $-1$ is understood as $-e_t = -1_{\mathbb{H}}$ in each copy of $\mathbb{H}$.
 
-So the roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are exactly the pairs $(\xi_+, \xi_-)$ where $\xi_+$ and $\xi_-$ are roots of $-1$ in the quaternion algebra $\mathbb{H}$.
+So the roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are exactly the pairs $(\xi_+, \xi_-)$ where $\xi_+$ and $\xi_-$ are roots of $-1$ in the quaternion algebra $\mathbb{H}$.
 
 ### Reduction to the Quaternion Case
 
 The problem therefore reduces to the problem of finding the roots of $-1$ in $\mathbb{H}$, which is a solved problem: the roots of $-1$ in $\mathbb{H}$ are exactly the unit pure quaternions, i.e., the elements $\mu \in \mathbb{H}$ with $\mu^2 = -1$ and $\mu \in \mathbb{R}^3_{\mathbb{H}}$.
 
-So the roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are the elements
+So the roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are the elements
 
 $$
 \tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2,
@@ -77,7 +77,7 @@ where $\mu_+, \mu_- \in \mathbb{H}$ are unit pure real quaternions.
 
 ### Statement
 
-**Theorem.** The roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form
+**Theorem.** The roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are exactly the elements of the form
 
 $$
 \boxed{\;
@@ -95,7 +95,7 @@ $$
 
 with $\mu_\pm$ unit pure real quaternions.
 
-There are no other roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$.
+There are no other roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$.
 
 ### Proof
 
@@ -107,7 +107,7 @@ There are no other roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$.
 
 ### The Scalar Part
 
-A root $\tilde\Xi$ of $-1$ in $\mathbb{H}_{\mathbb{D}}$ has the form
+A root $\tilde\Xi$ of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ has the form
 
 $$
 \tilde\Xi = \frac{1}{2}(\mu_+ + \mu_-) + \frac{j}{2}(\mu_+ - \mu_-).
@@ -127,7 +127,7 @@ $$
 
 which is a purely split-imaginary quaternion.
 
-So a root of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is an element with:
+So a root of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ is an element with:
 - A scalar part that is a real quaternion (not necessarily a real number).
 - A vector part that is purely split-imaginary.
 
@@ -165,15 +165,15 @@ $$
 
 So the scalar roots of $-1$ are exactly the unit pure real quaternions $\mu \in \mathbb{H}$. This is a two-dimensional family.
 
-But wait: the scalar roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde\Xi = \mu$ with $\mu^2 = -1$ in $\mathbb{H}$. These are the quaternion roots of $-1$ embedded in $\mathbb{H}_{\mathbb{D}}$. They are not the "scalar imaginary" $i$ of the biquaternion case; there is no single scalar root, because the split complex algebra $\mathbb{D}$ has no square root of $-1$.
+But wait: the scalar roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ are the elements $\tilde\Xi = \mu$ with $\mu^2 = -1$ in $\mathbb{H}$. These are the quaternion roots of $-1$ embedded in $\mathbb{B}^{\mathrm{spl}}$. They are not the "scalar imaginary" $i$ of the biquaternion case; there is no single scalar root, because the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ has no square root of $-1$.
 
-So the scalar roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ form a two-dimensional family, and the pure roots form another two-dimensional family. The general root is a combination of the two, parametrized by a pair of unit pure real quaternions, which is a four-dimensional family.
+So the scalar roots of $-1$ in $\mathbb{B}^{\mathrm{spl}}$ form a two-dimensional family, and the pure roots form another two-dimensional family. The general root is a combination of the two, parametrized by a pair of unit pure real quaternions, which is a four-dimensional family.
 
 ### Dimension of the Root Set
 
 The root set is parametrized by a pair of unit pure real quaternions $\mu_+, \mu_-$, each of which has $N = 1$. So the root set has real dimension $2 + 2 = 4$.
 
-This is a four-dimensional real algebraic subset of the eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$; its manifold structure is established in *Split-Biquaternion Analysis*.
+This is a four-dimensional real algebraic subset of the eight-dimensional algebra $\mathbb{B}^{\mathrm{spl}}$; its manifold structure is established in *Split-Biquaternion Analysis*.
 
 ### Comparison with the Biquaternion Case
 
@@ -184,19 +184,19 @@ In the biquaternion algebra $\mathbb{B}$, the roots of $-1$ are:
 
 The biquaternion root set has a much richer structure, with degenerate roots, real roots, and non-trivial roots. The split biquaternion root set is simpler: it is the product of two copies of the quaternion root set, i.e., a pair of unit pure real quaternions.
 
-The reason for the difference is that the split complex algebra $\mathbb{D}$ has no square root of $-1$, so there is no "scalar imaginary" root. In the biquaternion case, the scalar imaginary $i$ is a root of $-1$, and it generates the non-trivial roots by combination with the quaternion roots. In the split biquaternion case, there is no such scalar root, and the root set is simply the product of two quaternion root sets.
+The reason for the difference is that the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ has no square root of $-1$, so there is no "scalar imaginary" root. In the biquaternion case, the scalar imaginary $i$ is a root of $-1$, and it generates the non-trivial roots by combination with the quaternion roots. In the split biquaternion case, there is no such scalar root, and the root set is simply the product of two quaternion root sets.
 
 ## The Relation to the Idempotents
 
-### The Idempotents of $\mathbb{H}_{\mathbb{D}}$
+### The Idempotents of $\mathbb{B}^{\mathrm{spl}}$
 
-The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde Q$ with $\tilde Q^2 = \tilde Q$. In the idempotent basis, an element $\tilde Q = \tilde Q_+ \tilde\Pi_1 + \tilde Q_- \tilde\Pi_2$ is idempotent if and only if
+The idempotents of $\mathbb{B}^{\mathrm{spl}}$ are the elements $\tilde Q$ with $\tilde Q^2 = \tilde Q$. In the idempotent basis, an element $\tilde Q = \tilde Q_+ \tilde\Pi_1 + \tilde Q_- \tilde\Pi_2$ is idempotent if and only if
 
 $$
 \tilde Q_+^2 = \tilde Q_+, \qquad \tilde Q_-^2 = \tilde Q_-.
 $$
 
-In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements
+In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{B}^{\mathrm{spl}}$ are the four elements
 
 $$
 \boxed{\;
@@ -220,7 +220,7 @@ In the split biquaternion case, the idempotents are the fixed elements $0, \tild
 
 The relation between the roots of $-1$ and the idempotents is therefore different in the two cases:
 - In $\mathbb{B}$, the roots of $-1$ generate the idempotents.
-- In $\mathbb{H}_{\mathbb{D}}$, the roots of $-1$ and the idempotents are independent structures.
+- In $\mathbb{B}^{\mathrm{spl}}$, the roots of $-1$ and the idempotents are independent structures.
 
 This is a reflection of the fact that the biquaternion algebra is simple (and its idempotents come from the roots of $-1$), while the split biquaternion algebra is semisimple (and its idempotents come from the split complex algebra).
 
@@ -232,7 +232,7 @@ A root $\tilde\Xi$ of $-1$ satisfies $\tilde\Xi^2 = -1$. In the idempotent basis
 
 The inverse of $\tilde\Xi$ is $\tilde\Xi^{-1} = -\tilde\Xi = -\mu_+ \tilde\Pi_1 - \mu_- \tilde\Pi_2$.
 
-So the roots of $-1$ are invertible elements, and they lie in the group of units $\mathbb{H}_{\mathbb{D}}^\times$.
+So the roots of $-1$ are invertible elements, and they lie in the group of units ${\mathbb{B}^{\mathrm{spl}}}^\times$.
 
 ### The Idempotents Are Zero Divisors
 
@@ -240,11 +240,11 @@ The nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are zero divisors: $\
 
 ### The Cones
 
-The roots of $-1$ form a four-dimensional real algebraic subset of $\mathbb{H}_{\mathbb{D}}$. The idempotents form a finite set of four points. The relation between the two is not a map from roots to idempotents, as in the biquaternion case, but rather the two structures are independent.
+The roots of $-1$ form a four-dimensional real algebraic subset of $\mathbb{B}^{\mathrm{spl}}$. The idempotents form a finite set of four points. The relation between the two is not a map from roots to idempotents, as in the biquaternion case, but rather the two structures are independent.
 
 ## Comparison with the Biquaternion Case
 
-| | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
+| | $\mathbb{B}$ | $\mathbb{B}^{\mathrm{spl}}$ |
 |---|---|---|
 | Extra unit | $i$, $i^2 = -1$ | $j$, $j^2 = +1$ |
 | Scalar roots of $-1$ | $\pm i$ | None |
@@ -263,7 +263,7 @@ The key differences are:
 
 ## Summary
 
-The roots of $-1$ in the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form
+The roots of $-1$ in the split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ are exactly the elements of the form
 
 $$
 \tilde\Xi = \mu_+ \tilde\Pi_1 + \mu_- \tilde\Pi_2,
@@ -289,7 +289,7 @@ The split biquaternion root set is simpler than the biquaternion root set, becau
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra |
+| $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternion algebra |
 | $\tilde\Xi$ | Root of $-1$ |
 | $\xi_\pm = \tilde\Xi \tilde\Pi_{1,2}$ | Idempotent components |
 | $\mu, \mu_+, \mu_-$ | Unit pure real quaternions |

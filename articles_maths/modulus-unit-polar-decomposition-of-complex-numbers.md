@@ -211,7 +211,7 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
 | $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'^2$, definite | $\sqrt{\langle Q\rangle_{*}}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{D}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*} \neq 0$ | $\{\langle Q\rangle_{*} = \pm1\}$ | four components, non-compact |
+| $\mathbb{C}^{\mathrm{spl}}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*} \neq 0$ | $\{\langle Q\rangle_{*} = \pm1\}$ | four components, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | sum of four squares, definite | $\sqrt{N}$ | $S^3$ | sphere, compact and connected |
 
 The complex column is the only one of the four in which the norm is definite and the unit set is a circle. The split-complex column has an indefinite norm, so its modulus uses an absolute value, its unit set has four components, and the decomposition is restricted to the complement of the null cone; the quaternion column is definite, but its unit set is a three-dimensional sphere rather than a circle.

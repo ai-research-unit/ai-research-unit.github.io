@@ -31,7 +31,7 @@ $$
 
 *Proof.* The product is $q\bar q$, and the difference is $\lambda_+-\lambda_-=2b$.
 
-**Proposition (multiplicativity).** For $q_1,q_2\in\mathbb{D}$, $(q_1q_2)\overline{(q_1q_2)}=(q_1\bar q_1)(q_2\bar q_2)$.
+**Proposition (multiplicativity).** For $q_1,q_2\in\mathbb{C}^{\mathrm{spl}}$, $(q_1q_2)\overline{(q_1q_2)}=(q_1\bar q_1)(q_2\bar q_2)$.
 
 *Proof.* The conjugation is an automorphism and the algebra is commutative: $(q_1q_2)\overline{(q_1q_2)}=q_1q_2\bar q_2\bar q_1=q_1\bar q_1q_2\bar q_2$.
 
@@ -67,7 +67,7 @@ $$
 \Sigma_{00}=\{q\bar q=0,\ b=0\}
 $$
 
-are all non-empty, and $\mathbb{D}$ is their disjoint union.
+are all non-empty, and $\mathbb{C}^{\mathrm{spl}}$ is their disjoint union.
 
 *Proof.* The witnesses lie in the first three, and $0$ lies in the fourth. Each element has one truth value for each condition, so it lies in one combination. The first index is the split norm, $1$ for non-vanishing and $0$ for vanishing; the second is the spectral condition, with the same convention.
 
@@ -150,7 +150,7 @@ Consequently the minimal polynomial separates exactly the four sectors and adds 
 
 *Proof.* The coefficients $2t$ and $q\bar q$ give $t$ and $b^2=t^2-q\bar q$; the eigenvalues $t\pm b$ follow up to order. If $b\neq0$, the minimal polynomial is $p_q$; if $b=0$, it is $X-t$ and its square is $p_q$. The four root patterns are two distinct non-zero roots, two distinct roots with one zero, a double non-zero root, and a double root at zero; they are the four sectors.
 
-In the biquaternion algebra, as *[The Spectrum](the-spectrum.html)* proves, the minimal polynomial refines the degenerate cone into a scalar, a nilpotent and a unipotent stratum, and the last two are defective. In $\mathbb{D}$ no refinement exists, because the algebra is reduced and every element is semisimple.
+In the biquaternion algebra, as *[The Spectrum](the-spectrum.html)* proves, the minimal polynomial refines the degenerate cone into a scalar, a nilpotent and a unipotent stratum, and the last two are defective. In $\mathbb{C}^{\mathrm{spl}}$ no refinement exists, because the algebra is reduced and every element is semisimple.
 
 ## The Place of the Case Among the Algebras of the Corpus
 
@@ -159,14 +159,14 @@ In the biquaternion algebra, as *[The Spectrum](the-spectrum.html)* proves, the 
 | algebra | norm | spectral-degenerate locus | defective elements | $\Sigma_{01}$ non-empty |
 |---|---|---|---|---|
 | $\mathbb{C}$ | $t^2+b^2$, positive definite | real axis | none | no |
-| $\mathbb{D}$ | $t^2-b^2$, indefinite | real axis | none | yes |
+| $\mathbb{C}^{\mathrm{spl}}$ | $t^2-b^2$, indefinite | real axis | none | yes |
 | $\mathbb{H}$ | $t^2+\lVert\vec v\rVert^2$, positive definite | real axis | none | no |
-| $\mathbb{H}_{\mathrm{s}}$ | indefinite | the cone $\langle\vec v\rangle_{\natural}=0$ | non-zero null vector part | yes |
+| $\mathbb{H}^{\mathrm{spl}}$ | indefinite | the cone $\langle\vec v\rangle_{\natural}=0$ | non-zero null vector part | yes |
 | $\mathbb{B}$ | $Q_t^2+B^2$, complex-valued | the cone $B^2=0$ | nilpotent and unipotent strata | yes |
 
-In $\mathbb{C}$ and $\mathbb{H}$ the norm is positive definite and vanishes only at the origin; $\Sigma_{01}$ is empty and the picture has three non-empty cells, with $\Sigma_{00}=\{0\}$. In $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ the mixed sectors are non-empty, but the degenerate locus is a cone carrying defective elements. In $\mathbb{D}$ the norm is indefinite, the conditions are independent, the degenerate locus is a line, and every element is semisimple. The plane is therefore the unique algebra with four non-empty sectors and no defective stratum; the geometry of the sectors is *The Four Sectors of the Split-Complex Algebra*.
+In $\mathbb{C}$ and $\mathbb{H}$ the norm is positive definite and vanishes only at the origin; $\Sigma_{01}$ is empty and the picture has three non-empty cells, with $\Sigma_{00}=\{0\}$. In $\mathbb{H}^{\mathrm{spl}}$ and $\mathbb{B}$ the mixed sectors are non-empty, but the degenerate locus is a cone carrying defective elements. In $\mathbb{C}^{\mathrm{spl}}$ the norm is indefinite, the conditions are independent, the degenerate locus is a line, and every element is semisimple. The plane is therefore the unique algebra with four non-empty sectors and no defective stratum; the geometry of the sectors is *The Four Sectors of the Split-Complex Algebra*.
 
-The sign of $j^2$ separates the definite norm and complex spectrum of $\mathbb{C}$ from the indefinite norm and real spectrum of $\mathbb{D}$.
+The sign of $j^2$ separates the definite norm and complex spectrum of $\mathbb{C}$ from the indefinite norm and real spectrum of $\mathbb{C}^{\mathrm{spl}}$.
 
 ## Summary
 
@@ -180,7 +180,7 @@ The four combinations are $\Sigma_{11}$, $\Sigma_{01}$, $\Sigma_{10}$ and $\Sigm
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ | the split-complex algebra |
+| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$ | the split-complex algebra |
 | $q=t+bj$ | a general element, $t,b\in\mathbb{R}$ |
 | $\bar q=t-bj$ | the conjugation |
 | $q\bar q=t^2-b^2$ | the split norm |

@@ -5,11 +5,11 @@
 
 This article works the structural facts of the split-complex algebra in explicit numbers. It is the computational companion of *Split-Complex Algebra*: the general theory is established in the earlier articles, and here it is exercised on named elements, so that a reader can see the involutions, the idempotents, the minimal ideals, the zero divisors and the hyperbolic and parabolic elements in full. The norm, the unit criterion and the polar decomposition are a form and a distance and belong to *Norm and Invertibility in the General Split-Complex Algebra* and to *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; the examples below use only the algebra.
 
-Every computation below uses the conventions of the category: $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+jq'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-jq'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$.
+Every computation below uses the conventions of the category: $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$, basis $1$, $j$, $j^2 = +1$; general element $Q = q+jq'$ with $q = \operatorname{Re}Q$, $q' = \operatorname{Im}Q$; conjugate $\bar Q = q-jq'$; idempotents $\Pi_\pm = \tfrac12(1\pm j)$; idempotent coordinates $Q_\pm = q\pm q'$.
 
 ## The Two Involutions and Their Fixed Spaces
 
-The algebra carries two involutions: the split-complex conjugation $\bar{Q}$, and the idempotent conjugation (the swap) $\tilde{Q} = (q-q')\Pi_+ + (q+q')\Pi_-$. The first computation is that on $\mathbb{D}$ they coincide.
+The algebra carries two involutions: the split-complex conjugation $\bar{Q}$, and the idempotent conjugation (the swap) $\tilde{Q} = (q-q')\Pi_+ + (q+q')\Pi_-$. The first computation is that on $\mathbb{C}^{\mathrm{spl}}$ they coincide.
 
 **Example.** Take $Q = 3+2j$. Then
 
@@ -28,13 +28,13 @@ So $Q = \bar Q$ for this element; since the identity is polynomial in $Q$, it ho
 **The fixed spaces.** An element is fixed by $\bar{\cdot}$ iff $q-j q' = q+j q'$, i.e. $q'=0$; the fixed space is
 
 $$
-\mathbb{R}_{\mathbb{D}} = \{q : q \in \mathbb{R}\},
+\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{q : q \in \mathbb{R}\},
 $$
 
 the real line. An element is anti-fixed iff $q=0$; the anti-fixed space is
 
 $$
-j\mathbb{R}_{\mathbb{D}} = \{j q' : q' \in \mathbb{R}\},
+j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{j q' : q' \in \mathbb{R}\},
 $$
 
 the split imaginary line. For $Q = 3+2j$ the projections are $Q_r = \tfrac12(Q+\bar Q) = 3$ and $j Q_i = \tfrac12(Q-\bar Q) = 2j$, so $Q = 3 + 2j$ recovers the coordinates.
@@ -66,7 +66,7 @@ $$
 \mathbb{R}\Pi_+ = \{(t,t) : t \in \mathbb{R}\}, \qquad \mathbb{R}\Pi_- = \{(t,-t) : t \in \mathbb{R}\},
 $$
 
-in the coordinates $(q,q')$; their product is zero, and $\mathbb{D} = \mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The isomorphism with $\mathbb{R}\oplus\mathbb{R}$ is realised numerically by $\varphi(3+2j) = (5, 1)$; the multiplication is componentwise, $\varphi(QB) = (Q_+B_+, Q_-B_-)$.
+in the coordinates $(q,q')$; their product is zero, and $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The isomorphism with $\mathbb{R}\oplus\mathbb{R}$ is realised numerically by $\varphi(3+2j) = (5, 1)$; the multiplication is componentwise, $\varphi(QB) = (Q_+B_+, Q_-B_-)$.
 
 ## Explicit Zero-Divisor Pairs
 
@@ -98,7 +98,7 @@ so the whole family of examples is $\{\lambda \Pi_+\}\times\{\mu \Pi_-\}$; and t
 
 ## Worked Hyperbolic and Parabolic Elements
 
-An element of $\mathbb{D}$ is classified by the signs of its two idempotent coordinates: a **hyperbolic** element is a unit with $Q_+Q_- > 0$, the coordinates having the same sign; an **elliptic** element is a unit with $Q_+Q_- < 0$, the coordinates having opposite signs; a **parabolic** element is a non-zero element with $Q_+Q_- = 0$, that is, a zero divisor. The product $Q_+Q_-$ is the algebraic reading of the quadratic form of *Norm and Invertibility in the General Split-Complex Algebra*, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the unit group.
+An element of $\mathbb{C}^{\mathrm{spl}}$ is classified by the signs of its two idempotent coordinates: a **hyperbolic** element is a unit with $Q_+Q_- > 0$, the coordinates having the same sign; an **elliptic** element is a unit with $Q_+Q_- < 0$, the coordinates having opposite signs; a **parabolic** element is a non-zero element with $Q_+Q_- = 0$, that is, a zero divisor. The product $Q_+Q_-$ is the algebraic reading of the quadratic form of *Norm and Invertibility in the General Split-Complex Algebra*, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the unit group.
 
 **Hyperbolic example.** Let $Q = \tfrac54 + \tfrac34 j$. Its coordinates are
 
@@ -130,7 +130,7 @@ which is the same computation in the idempotent basis, $Q^n = 2^n\Pi_+ = 2^{n-1}
 
 ## Summary
 
-This article worked the algebra in explicit numbers. The two involutions of $\mathbb{D}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $Q = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{D}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. The idempotents $\Pi_\pm$ were exhibited, the decomposition $3+2j = 5\Pi_+ + 1\Pi_-$ computed, and the minimal ideals $\mathbb{R}\Pi_\pm$ identified.
+This article worked the algebra in explicit numbers. The two involutions of $\mathbb{C}^{\mathrm{spl}}$, the split-complex conjugation and the idempotent swap, were shown to coincide on $Q = 3+2j$ and hence throughout, with fixed space the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and anti-fixed space the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$. The idempotents $\Pi_\pm$ were exhibited, the decomposition $3+2j = 5\Pi_+ + 1\Pi_-$ computed, and the minimal ideals $\mathbb{R}\Pi_\pm$ identified.
 
 Explicit zero-divisor pairs were given, $Q_1 = 1+j = 2\Pi_+$ and $Q_2 = 2-2j = 4\Pi_-$ with $Q_1Q_2 = 0$, and the general pair $(\lambda \Pi_+)(\mu \Pi_-) = 0$. Finally, the hyperbolic element $Q = \tfrac54 + \tfrac34 j$, of coordinates $(2, \tfrac12)$ and powers $Q^n = 2^n\Pi_+ + 2^{-n}\Pi_-$, was compared with the parabolic element $1+j$, of coordinates $(2,0)$, with $Q^n = 2^{n-1}Q$ and no inverse.
 
@@ -138,16 +138,16 @@ Explicit zero-divisor pairs were given, $Q_1 = 1+j = 2\Pi_+$ and $Q_2 = 2-2j = 4
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | Split complex algebra |
+| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
 | $Q = q + j q'$ | General split complex number |
 | $\bar Q = q - j q'$ | Split-complex conjugation (unique non-trivial involution) |
 | $Q = (q-q')\Pi_+ + (q+q')\Pi_-$ | Idempotent conjugation; equal to $\bar Q$ |
-| $\mathbb{R}_{\mathbb{D}}, j\mathbb{R}_{\mathbb{D}}$ | Fixed and anti-fixed spaces of the involution |
+| $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}, j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | Fixed and anti-fixed spaces of the involution |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
 | $Q_\pm = q\pm q'$ | Idempotent coordinates, $Q = Q_+\Pi_+ + Q_-\Pi_-$ |
 | $\mathbb{R}\Pi_+, \mathbb{R}\Pi_-$ | Minimal ideals / null lines |
 | $Q_+Q_-$ | Product of the idempotent coordinates; its sign classes the unit |
-| $\mathbb{D}^\times$ | Group of units, the elements with both coordinates nonzero |
+| ${\mathbb{C}^{\mathrm{spl}}}^\times$ | Group of units, the elements with both coordinates nonzero |
 | hyperbolic, elliptic, parabolic | Unit with $Q_+Q_- > 0$, unit with $Q_+Q_- < 0$, zero divisor with $Q_+Q_- = 0$ |
 
 ## Further Reading

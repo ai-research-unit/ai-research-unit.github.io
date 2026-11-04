@@ -49,7 +49,7 @@ The algebra is reduced: the only nilpotent is $0$ (*The Specificities of the Spl
 
 Every elementary function of this article, and every higher special function of *Split-Complex Higher Special Functions*, is read on the two eigenvalues. The rule is stated once.
 
-**Theorem (Idempotent Principle).** Let $\Phi(x)=\sum_{n\geq0}c_nx^n$ be a real power series with radius of convergence $\rho$, and let $Q\in\mathbb{D}$ have eigenvalues $\lambda_\pm$ with $\lvert\lambda_\pm\rvert<\rho$. Then the series $\sum c_nQ^n$ converges and
+**Theorem (Idempotent Principle).** Let $\Phi(x)=\sum_{n\geq0}c_nx^n$ be a real power series with radius of convergence $\rho$, and let $Q\in\mathbb{C}^{\mathrm{spl}}$ have eigenvalues $\lambda_\pm$ with $\lvert\lambda_\pm\rvert<\rho$. Then the series $\sum c_nQ^n$ converges and
 
 $$
 \Phi(Q)=\Phi(\lambda_+)\Pi_++\Phi(\lambda_-)\Pi_-.
@@ -74,7 +74,7 @@ The principle is the spectral calculus of the algebra. It converts every functio
 
 ### Definition
 
-The **split-complex exponential** is defined for $Q\in\mathbb{D}$ by
+The **split-complex exponential** is defined for $Q\in\mathbb{C}^{\mathrm{spl}}$ by
 
 $$
 \exp(Q)=\sum_{n=0}^\infty \frac{Q^n}{n!}.
@@ -115,7 +115,7 @@ The exponential is injective. In the spectral form, $\exp(Q_1)=\exp(Q_2)$ forces
 | Injective | yes |
 | Surjective onto the image | yes |
 
-The exponential is therefore an isomorphism from $(\mathbb{D},+)$ onto $(F,\cdot)$.
+The exponential is therefore an isomorphism from $(\mathbb{C}^{\mathrm{spl}},+)$ onto $(F,\cdot)$.
 
 ### Properties
 
@@ -134,7 +134,7 @@ The norm row uses the split-complex norm $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$
 
 ### Definition
 
-A **logarithm** of $Q\in\mathbb{D}$ is an element $Q_{\log}$ with $\exp(Q_{\log})=Q$. The exponential is injective (§*The Kernel and the Image*), so a logarithm is unique when it exists; the only question is its domain. Throughout, $\log$ applied to a positive real number is the ordinary real logarithm.
+A **logarithm** of $Q\in\mathbb{C}^{\mathrm{spl}}$ is an element $Q_{\log}$ with $\exp(Q_{\log})=Q$. The exponential is injective (§*The Kernel and the Image*), so a logarithm is unique when it exists; the only question is its domain. Throughout, $\log$ applied to a positive real number is the ordinary real logarithm.
 
 Write the unknown logarithm with the coefficient convention,
 
@@ -244,7 +244,7 @@ with the ordinary real logarithm at each positive eigenvalue. It is real-analyti
 
 ### The Principal Domain
 
-The principal domain — the domain of the principal logarithm — is the future cone $F$ itself. The exponential maps $\mathbb{D}$ bijectively onto $F$, so $\exp:\mathbb{D}\to F$ is bijective and $\log:F\to\mathbb{D}$ is its inverse. On $F$ there is one logarithm and no branch to choose; the principal domain and the domain of the logarithm coincide.
+The principal domain — the domain of the principal logarithm — is the future cone $F$ itself. The exponential maps $\mathbb{C}^{\mathrm{spl}}$ bijectively onto $F$, so $\exp:\mathbb{C}^{\mathrm{spl}}\to F$ is bijective and $\log:F\to\mathbb{C}^{\mathrm{spl}}$ is its inverse. On $F$ there is one logarithm and no branch to choose; the principal domain and the domain of the logarithm coincide.
 
 ### The Two Compositions
 
@@ -253,12 +253,12 @@ Both inverse identities hold exactly, with no remainder.
 | Identity | Holds | Example |
 |---|---|---|
 | $\exp(\log Q)=Q$ | on the future cone $F$ | $Q=5+3j$ |
-| $\log(\exp Q_{\log})=Q_{\log}$ | for every $Q_{\log}\in\mathbb{D}$ | $Q_{\log}=-1+0.3j$ |
+| $\log(\exp Q_{\log})=Q_{\log}$ | for every $Q_{\log}\in\mathbb{C}^{\mathrm{spl}}$ | $Q_{\log}=-1+0.3j$ |
 | $\log(\exp Q_{\log})=Q_{\log}$ modulo the kernel | always, and there is no kernel to remove | — |
 
 **Right inverse.** For $Q$ in the future cone and $Q_{\log}$ its logarithm, $\exp(Q_{\log})=Q$ by the construction of §*The Eigenvalue Formula*.
 
-**Left inverse.** For every $Q_{\log}\in\mathbb{D}$,
+**Left inverse.** For every $Q_{\log}\in\mathbb{C}^{\mathrm{spl}}$,
 
 $$
 \log(\exp(Q_{\log}))=Q_{\log}.
@@ -274,7 +274,7 @@ $$
 
 so it returns $Q_{\log}$. Equivalently, $\exp(\log(\exp Q_{\log}))=\exp Q_{\log}$, and $\exp$ is injective.
 
-There is no integer to lose: the kernel of the exponential is $\{0\}$. In group language, $\exp$ is an injective homomorphism from $(\mathbb{D},+)$ to the future cone, and $\log$ is its inverse.
+There is no integer to lose: the kernel of the exponential is $\{0\}$. In group language, $\exp$ is an injective homomorphism from $(\mathbb{C}^{\mathrm{spl}},+)$ to the future cone, and $\log$ is its inverse.
 
 For instance, $Q = 5+3j$ has $Q_{\log} = \ln 4 + j\ln 2$, and $\exp(Q_{\log}) = 5+3j$. In the other direction, $Q_{\log} = -1+0.3j$ gives $Q = \exp(Q_{\log}) = 0.3845585 + 0.1120268\,j$, whose logarithm is $Q_{\log}$ again.
 
@@ -342,7 +342,7 @@ Both laws hold whenever the arguments stay in the future cone. The first follows
 
 For $n\geq1$, a **root** of $Q$ is an element $R$ with $R^n=Q$.
 
-**Theorem (the roots).** Let $n\ge1$ and let $Q\in\mathbb{D}$.
+**Theorem (the roots).** Let $n\ge1$ and let $Q\in\mathbb{C}^{\mathrm{spl}}$.
 
 1. If $n$ is odd, there is exactly one root.
 2. If $n$ is even and both eigenvalues are positive, there are exactly four roots.
@@ -364,7 +364,7 @@ For odd $n$ the unique root is $R=\lambda_+^{1/n}\Pi_++\lambda_-^{1/n}\Pi_-$, wi
 
 ## The Trigonometric and Hyperbolic Functions
 
-In $\mathbb{D}$ the square of the imaginary unit is $+1$, so the exponential of $j\theta$ is hyperbolic, $\exp(j\theta)=\cosh\theta+j\sinh\theta$. The hyperbolic pair is the intrinsic family of the algebra and plays the role that the sine and cosine play in the complex and reduced biquaternion cases. The circular pair is defined by the same real power series; its periodic geometry is the geometry of the complexified direction, and it is included in the tables for comparison with the neighbouring cases. Both pairs are entire, and both are read at the two eigenvalues by the Idempotent Principle.
+In $\mathbb{C}^{\mathrm{spl}}$ the square of the imaginary unit is $+1$, so the exponential of $j\theta$ is hyperbolic, $\exp(j\theta)=\cosh\theta+j\sinh\theta$. The hyperbolic pair is the intrinsic family of the algebra and plays the role that the sine and cosine play in the complex and reduced biquaternion cases. The circular pair is defined by the same real power series; its periodic geometry is the geometry of the complexified direction, and it is included in the tables for comparison with the neighbouring cases. Both pairs are entire, and both are read at the two eigenvalues by the Idempotent Principle.
 
 ### Definitions
 
@@ -458,7 +458,7 @@ $$
 \operatorname{csch}Q=\frac{1}{\sinh Q}.
 $$
 
-They are defined wherever the denominator is a unit. The eigenvalues of $\cosh Q$ are $\cosh\lambda_\pm\geq1$, so $\cosh Q$ is a unit for every $Q$ and $\tanh$ is defined on all of $\mathbb{D}$. The eigenvalues of $\sin Q$, $\cos Q$ and $\sinh Q$ can vanish on the sets of the table, and there the corresponding quotient is undefined; for $\coth$ this is the null cone. On the intrinsic hyperbolic pair the coefficient forms are
+They are defined wherever the denominator is a unit. The eigenvalues of $\cosh Q$ are $\cosh\lambda_\pm\geq1$, so $\cosh Q$ is a unit for every $Q$ and $\tanh$ is defined on all of $\mathbb{C}^{\mathrm{spl}}$. The eigenvalues of $\sin Q$, $\cos Q$ and $\sinh Q$ can vanish on the sets of the table, and there the corresponding quotient is undefined; for $\coth$ this is the null cone. On the intrinsic hyperbolic pair the coefficient forms are
 
 $$
 \tanh Q=\frac{\tanh q+j\tanh q'}{1+j\tanh q\tanh q'},\qquad
@@ -471,13 +471,13 @@ The inverse functions are the real inverse functions read at the two eigenvalues
 
 | Function | Formula | Domain |
 |---|---|---|
-| $\operatorname{arsinh}Q$ | $\log\left(Q+\sqrt{Q^2+1}\right)$ | all $\mathbb{D}$ |
+| $\operatorname{arsinh}Q$ | $\log\left(Q+\sqrt{Q^2+1}\right)$ | all $\mathbb{C}^{\mathrm{spl}}$ |
 | $\operatorname{arcosh}Q$ | $\log\left(Q+\sqrt{Q^2-1}\right)$ | $\lambda_+\geq1$ and $\lambda_-\geq1$ |
 | $\operatorname{artanh}Q$ | $\dfrac{1}{2}\log\dfrac{1+Q}{1-Q}$ | $\lvert\lambda_+\rvert<1$ and $\lvert\lambda_-\rvert<1$ |
 
 The square roots are the split-complex square roots of §*The Roots*, with the non-negative root in each eigenvalue. In each row the argument of the logarithm has positive eigenvalues: for $\operatorname{arsinh}$, the eigenvalues are $\lambda_\pm+\sqrt{\lambda_\pm^2+1}>0$; for $\operatorname{arcosh}$, they are $\lambda_\pm+\sqrt{\lambda_\pm^2-1}>0$ when $\lambda_\pm\geq1$; for $\operatorname{artanh}$, they are $(1+\lambda_\pm)/(1-\lambda_\pm)>0$ when $\lvert\lambda_\pm\rvert<1$. The inverse functions are therefore single-valued on their domains, like the logarithm.
 
-The circular inverses are not functions on $\mathbb{D}$: their formulas require the scalar imaginary $i$, which is not in the algebra. They belong to the complexification and are not listed.
+The circular inverses are not functions on $\mathbb{C}^{\mathrm{spl}}$: their formulas require the scalar imaginary $i$, which is not in the algebra. They belong to the complexification and are not listed.
 
 ## Relations to the Neighbouring Cases
 
@@ -497,11 +497,11 @@ The restriction is the diagonal of the pair of real functions, and it is the rea
 
 ### The Complex Case
 
-The complex case is not a subalgebra of $\mathbb{D}$: the complexification $\mathbb{D}\otimes\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ is the algebra of the reduced biquaternions, where the same spectral formulas are read with two complex eigenvalues (*Reduced Biquaternion Elementary Functions*, §*Relations to the Neighbouring Cases*). The exponential, the logarithm, the powers and the four functions have the same eigenvalue formulas there; the difference is that the two eigenvalues are independent complex numbers, so the logarithm acquires the lattice $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$ and the powers acquire the matching ambiguity.
+The complex case is not a subalgebra of $\mathbb{C}^{\mathrm{spl}}$: the complexification $\mathbb{C}^{\mathrm{spl}}\otimes\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ is the algebra of the reduced biquaternions, where the same spectral formulas are read with two complex eigenvalues (*Reduced Biquaternion Elementary Functions*, §*Relations to the Neighbouring Cases*). The exponential, the logarithm, the powers and the four functions have the same eigenvalue formulas there; the difference is that the two eigenvalues are independent complex numbers, so the logarithm acquires the lattice $2\pi i(\mathbb{Z}\Pi_+\oplus\mathbb{Z}\Pi_-)$ and the powers acquire the matching ambiguity.
 
 ### The Relation Between the Two
 
-The real case is the fixed set of the conjugation inside $\mathbb{D}$; the complex case is the scalar extension. The two are the two ends of the comparison table of §*Summary*: the real eigenvalues are the diagonal of the complex pair, and the reduced biquaternion formulas reduce to the split-complex ones when both eigenvalues are real.
+The real case is the fixed set of the conjugation inside $\mathbb{C}^{\mathrm{spl}}$; the complex case is the scalar extension. The two are the two ends of the comparison table of §*Summary*: the real eigenvalues are the diagonal of the complex pair, and the reduced biquaternion formulas reduce to the split-complex ones when both eigenvalues are real.
 
 ## Summary
 
@@ -533,18 +533,18 @@ Every elementary function of a split-complex variable is a pair of ordinary real
 
 | Function | Value | Domain |
 |---|---|---|
-| $\exp Q$ | $\exp q(\cosh q'+j\sinh q')$ | all $\mathbb{D}$ |
+| $\exp Q$ | $\exp q(\cosh q'+j\sinh q')$ | all $\mathbb{C}^{\mathrm{spl}}$ |
 | $\log Q$ | $\tfrac12\ln(q^2-q'^2)+\tfrac12 j\ln\dfrac{q+q'}{q-q'}$ | $q>\lvert q'\rvert$ |
 | $Q^P$ | $\exp(P\log Q)$ | $q>\lvert q'\rvert$ |
-| $\sin Q$ | $\sin q\cos q'+j\cos q\sin q'$ | all $\mathbb{D}$ |
-| $\cos Q$ | $\cos q\cos q'-j\sin q\sin q'$ | all $\mathbb{D}$ |
-| $\sinh Q$ | $\sinh q\cosh q'+j\cosh q\sinh q'$ | all $\mathbb{D}$ |
-| $\cosh Q$ | $\cosh q\cosh q'+j\sinh q\sinh q'$ | all $\mathbb{D}$ |
+| $\sin Q$ | $\sin q\cos q'+j\cos q\sin q'$ | all $\mathbb{C}^{\mathrm{spl}}$ |
+| $\cos Q$ | $\cos q\cos q'-j\sin q\sin q'$ | all $\mathbb{C}^{\mathrm{spl}}$ |
+| $\sinh Q$ | $\sinh q\cosh q'+j\cosh q\sinh q'$ | all $\mathbb{C}^{\mathrm{spl}}$ |
+| $\cosh Q$ | $\cosh q\cosh q'+j\sinh q\sinh q'$ | all $\mathbb{C}^{\mathrm{spl}}$ |
 | $\tan Q$ | $\sin Q/\cos Q$ | $\lambda_\pm\notin\frac{\pi}{2}+\pi\mathbb{Z}$ |
 | $\cot Q$ | $\cos Q/\sin Q$ | $\lambda_\pm\notin\pi\mathbb{Z}$ |
-| $\tanh Q$ | $\sinh Q/\cosh Q$ | all $\mathbb{D}$ |
+| $\tanh Q$ | $\sinh Q/\cosh Q$ | all $\mathbb{C}^{\mathrm{spl}}$ |
 | $\coth Q$ | $\cosh Q/\sinh Q$ | $q\neq\pm q'$ |
-| $\operatorname{arsinh}Q$ | $\log(Q+\sqrt{Q^2+1})$ | all $\mathbb{D}$ |
+| $\operatorname{arsinh}Q$ | $\log(Q+\sqrt{Q^2+1})$ | all $\mathbb{C}^{\mathrm{spl}}$ |
 | $\operatorname{arcosh}Q$ | $\log(Q+\sqrt{Q^2-1})$ | $\lambda_\pm\geq1$ |
 | $\operatorname{artanh}Q$ | $\tfrac12\log\dfrac{1+Q}{1-Q}$ | $\lvert\lambda_\pm\rvert<1$ |
 
@@ -572,7 +572,7 @@ The table compares the elementary functions across the three algebras; in the bi
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | Split-complex algebra |
+| $\mathbb{C}^{\mathrm{spl}}$ | Split-complex algebra |
 | $j$ | Split imaginary unit, $j^2=+1$ |
 | $Q=q+jq'$ | General split-complex number, $q=\operatorname{Re}Q$, $q'=\operatorname{Im}Q$ |
 | $\lambda_\pm=q\pm q'=Q_\pm$ | Eigenvalues, equal to the idempotent coordinates |

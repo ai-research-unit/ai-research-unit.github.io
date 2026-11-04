@@ -12,7 +12,7 @@ The Euclidean topology of the reduced biquaternion algebra is the topology of th
 $$
 \breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}\mapsto(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})
 $$
-is an isometry of $\mathbb{B}_{\mathrm{r}}$ with the norm $\lVert\cdot\rVert$ onto $\mathbb{R}^{4}$ with its standard Euclidean norm, and it is an isomorphism of real vector spaces.
+is an isometry of $\mathbb{B}^{\mathrm{red}}$ with the norm $\lVert\cdot\rVert$ onto $\mathbb{R}^{4}$ with its standard Euclidean norm, and it is an isomorphism of real vector spaces.
 
 *Proof.* $\lVert \breve Q\rVert^{2}=q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}$ is the sum of the squares of the four coordinates, which is the square of the standard Euclidean norm of the quadruple; the map is a bijective real-linear map by *The Four-Vector Element Representation of the Reduced Biquaternions*, and it preserves the norm by the display.
 
@@ -58,7 +58,7 @@ $$
 
 **The algebra is contractible, being a real vector space.**
 
-**Theorem.** The homotopy $\langle \breve Q,s\rangle_{*}=(1-s)\breve Q$ for $s\in[0,1]$ contracts $\mathbb{B}_{\mathrm{r}}$ to the origin, and it is continuous in $(\breve Q,s)$; hence the space is contractible, and its homotopy groups vanish.
+**Theorem.** The homotopy $\langle \breve Q,s\rangle_{*}=(1-s)\breve Q$ for $s\in[0,1]$ contracts $\mathbb{B}^{\mathrm{red}}$ to the origin, and it is continuous in $(\breve Q,s)$; hence the space is contractible, and its homotopy groups vanish.
 
 *Proof.* The map is the multiplication by a real scalar and is jointly continuous in the element and the parameter; at $s=0$ it is the identity and at $s=1$ it is the constant map to $0$.
 
@@ -73,7 +73,7 @@ $$
 **Theorem (the unit group).** The unit group
 $$
 \boxed{\;
-\mathbb{B}_{\mathrm{r}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}=\{\breve Q:Q_{+}\neq0,\ Q_{-}\neq0\}
+{\mathbb{B}^{\mathrm{red}}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}=\{\breve Q:Q_{+}\neq0,\ Q_{-}\neq0\}
 \;}
 $$
 is open and dense, and it is a topological group: the multiplication and the inversion are continuous.
@@ -148,7 +148,7 @@ where $P_-=\mathbb{C}\Pi_-$ is the plane $\{Q_{\blacktriangle}+Q_{\blacktriangle
 $$
 \breve Q\mapsto \langle \breve Q,\cdot\rangle_{\mathrm{ts}*},\qquad \breve Q_{2}\mapsto \langle \breve Q,\breve Q_{2}\rangle_{\mathrm{ts}*},
 $$
-is a conjugate-linear isomorphism of $\mathbb{B}_{\mathrm{r}}$ onto its dual; through it each element is a linear functional and each functional is an element.
+is a conjugate-linear isomorphism of $\mathbb{B}^{\mathrm{red}}$ onto its dual; through it each element is a linear functional and each functional is an element.
 
 *Proof.* $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ is positive definite and sesquilinear, hence non-degenerate; the map sends $\breve Q$ to the functional $\breve Q_{2}\mapsto \langle \breve Q,\breve Q_{2}\rangle_{\mathrm{ts}*}$, and non-degeneracy makes it injective, while equal finite dimensions make it bijective.
 
@@ -168,7 +168,7 @@ The Euclidean topology of the reduced biquaternion algebra is the topology of th
 | $\mathcal Z=P_-\cup P_+$ | the zero-divisor set, the union of the two planes $Q_{+}=0$ and $Q_{-}=0$ |
 | $S^{3}=\{\langle \breve Q\rangle_{\mathrm{ts}*}=1\}$ | the Euclidean unit sphere |
 | $\{Q_{+}=0,\lvert Q_{-}\rvert=\sqrt2\}\cup\{Q_{-}=0,\lvert Q_{+}\rvert=\sqrt2\}$ | the two circles of zero divisors on the sphere |
-| $\mathbb{B}_{\mathrm{r}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the unit group, a topological group |
+| ${\mathbb{B}^{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the unit group, a topological group |
 
 ## Further Reading
 

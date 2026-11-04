@@ -160,16 +160,18 @@ When $m\neq0$ the gauge symmetry is absent: the field equation is not invariant 
 The canonical momentum conjugate to $\psi_\mu$ is, from the standard Rarita–Schwinger Lagrangian,
 
 $$
-\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial t'\,\psi_\mu)}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,T_{\nu t\mu} ,
+\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial t'\,\psi_\mu)}=\sum_\lambda T_{\lambda t\mu}\bigl(\bar\psi_\lambda\bigr),
+\qquad
+\bar\psi_\lambda:=\psi_\lambda^{\dagger}iR_{\vec e_x}^{\mathrm{axf}} ,
 $$
 
-where $T$ is the antisymmetrized triple of cells,
+the element the triple produces from the Dirac adjoint, with the normalization of the Lagrangian left free. The triple is the antisymmetrized product of three plain cells,
 
 $$
-T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\,L_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}} ,
+T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\,L_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}} .
 $$
 
-$\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu=\psi_\nu^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ is the Dirac adjoint, and the normalization of the Lagrangian is left free. The triple is totally antisymmetric in its three indices and vanishes when two of them coincide; its factors are plain cells rather than frame cells, and $(-i)^3=i$. The $i$ of the adjoint and the three of the triple multiply to $i^4=1$, so no imaginary unit survives in the display of the momentum and none is left as a double $i$. The canonical analysis gives the primary constraint $\pi_0\approx 0$ — automatic here, since the antisymmetrized triple carrying two timelike cells vanishes — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
+It is antisymmetric in its three indices and vanishes when two of them coincide. The cells anticommute, so the six terms of the sum are one and the same element, and the display is the definition that shows the antisymmetry; when two indices coincide the terms come in cancelling pairs. Its factors are plain cells rather than frame cells, so it carries no imaginary unit: the only one in the momentum is the $i$ of the adjoint, the same single $i$ that the Dirac article's momentum carries. The canonical analysis gives the primary constraint $\pi_0\approx0$ — automatic here, since $T_{\lambda t\mu}$ carries the time index in its middle slot, and $\mu=t$ puts it in the last slot too — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
 
 $$
 \{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\chi_a\}_P\,(\Delta^{-1})_{ab}\,\{\chi_b,B\}_P ,
@@ -414,8 +416,8 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\mathrm{rank}\,P=12=16-4$ | Verified by Gaussian elimination over $\mathbb{C}$ |
 | $V\otimes S$, $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ | Spatial part of the carrier and its decomposition; $3\cdot2=4+2$ |
 | $\psi_\mu\mapsto\psi_\mu+\partial/\partial x_\mu\,\epsilon$ | Massless gauge symmetry; spinor parameter |
-| $T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}L_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}}$, $\pi_\mu=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu T_{\nu t\mu}$ | Antisymmetrized triple of cells and the canonical momentum; $i\cdot i^3=1$, so no imaginary unit survives |
-| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu=\psi_\nu^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint |
+| $T_{\mu\nu\rho}$ | Antisymmetrized triple of three plain cells; antisymmetric, zero when two indices coincide, and $i\gamma_{[\mu\nu\rho]}$ in the gamma dictionary |
+| $\pi_\mu=\sum_\lambda T_{\lambda t\mu}(\bar\psi_\lambda)$, $\bar\psi_\lambda:=\psi_\lambda^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
 | $\vec x:=x\vec e_x+y\vec e_y+z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $\Delta_{ab}=\{\chi_a,\chi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Fermionic mode algebra |

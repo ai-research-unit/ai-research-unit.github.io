@@ -47,7 +47,7 @@ $$
 W_N(n, u) = \exp\left(-2\pi \rho \frac{nu}{N}\right), \qquad n, u \in \{0, 1, \ldots, N-1\},
 $$
 
-where the exponential is the split biquaternion exponential and $\rho$ is viewed as an element of $\mathbb{H}_{\mathbb{D}}$ via the embedding $\mathbb{H} \hookrightarrow \mathbb{H}_{\mathbb{D}}$.
+where the exponential is the split biquaternion exponential and $\rho$ is viewed as an element of $\mathbb{B}^{\mathrm{spl}}$ via the embedding $\mathbb{H} \hookrightarrow \mathbb{B}^{\mathrm{spl}}$.
 
 In the idempotent basis, the kernel decomposes:
 
@@ -99,13 +99,13 @@ The three choices are related by the quaternion multiplication, and they corresp
 
 ### The Kernel in the Split Complex Subspace
 
-If the signal takes values in the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ (i.e., if all coefficients are split complex scalars), then the kernel acts on each coefficient separately. The kernel is the quaternion kernel $\cos\theta - \sin\theta \rho$, and it multiplies the split complex coefficients. Since the root $\rho$ is a real quaternion, it commutes with the split complex coefficients, and the transform reduces to the ordinary complex Fourier transform applied to each of the four complex coefficients (after splitting into real and split parts).
+If the signal takes values in the split complex subspace $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ (i.e., if all coefficients are split complex scalars), then the kernel acts on each coefficient separately. The kernel is the quaternion kernel $\cos\theta - \sin\theta \rho$, and it multiplies the split complex coefficients. Since the root $\rho$ is a real quaternion, it commutes with the split complex coefficients, and the transform reduces to the ordinary complex Fourier transform applied to each of the four complex coefficients (after splitting into real and split parts).
 
 ## The Discrete Transform Pair
 
 ### Definition
 
-Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{D}}$ be a split-biquaternion-valued sequence. The **discrete split-biquaternion Fourier transform** of $f$ is the sequence $F : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{D}}$ defined by
+Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{B}^{\mathrm{spl}}$ be a split-biquaternion-valued sequence. The **discrete split-biquaternion Fourier transform** of $f$ is the sequence $F : \{0, 1, \ldots, N-1\} \to \mathbb{B}^{\mathrm{spl}}$ defined by
 
 $$
 F[u] = \sum_{n=0}^{N-1} W_N(n, u) f[n], \qquad u \in \{0, 1, \ldots, N-1\},
@@ -173,9 +173,9 @@ This is a **linear** condition in the idempotent basis, in contrast to the quadr
 
 ### Symmetry of the Spectrum
 
-For a signal $f$ that takes values in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ (i.e., all coefficients are real) and a root $\rho$, the spectrum satisfies a **conjugate symmetry** analogous to the Hermitian symmetry of the ordinary Fourier transform of a real signal.
+For a signal $f$ that takes values in the quaternion subspace $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ (i.e., all coefficients are real) and a root $\rho$, the spectrum satisfies a **conjugate symmetry** analogous to the Hermitian symmetry of the ordinary Fourier transform of a real signal.
 
-**Theorem (conjugate symmetry).** Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ be a real quaternion-valued signal, and let $F$ be its discrete split-biquaternion Fourier transform with respect to a root $\rho$. Then
+**Theorem (conjugate symmetry).** Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ be a real quaternion-valued signal, and let $F$ be its discrete split-biquaternion Fourier transform with respect to a root $\rho$. Then
 
 $$
 \boxed{\;
@@ -269,7 +269,7 @@ The factorization is a computational result, but it also has a structural meanin
 
 ### Definition of Convolution
 
-Let $f, g : \mathbb{Z} \to \mathbb{H}_{\mathbb{D}}$ be two split-biquaternion-valued sequences, extended to $\mathbb{Z}$ by $f[n] = g[n] = 0$ outside the support $\{0, 1, \ldots, N-1\}$. The **convolution** of $f$ and $g$ is
+Let $f, g : \mathbb{Z} \to \mathbb{B}^{\mathrm{spl}}$ be two split-biquaternion-valued sequences, extended to $\mathbb{Z}$ by $f[n] = g[n] = 0$ outside the support $\{0, 1, \ldots, N-1\}$. The **convolution** of $f$ and $g$ is
 
 $$
 (f * g)[n] = \sum_{m \in \mathbb{Z}} f[m] g[n - m].
@@ -352,13 +352,13 @@ The precise condition under which the transform is invertible on a signal with z
 
 The vanishing-norm issue is a genuinely split biquaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split biquaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a complex cone of complex dimension $3$ (real dimension $6$).
 
-The issue can be avoided by restricting the signals to a subspace where the split-biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero sample is invertible, and the transform is invertible on all signals.
+The issue can be avoided by restricting the signals to a subspace where the split-biquaternion norm is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$. On the quaternion subspace, every nonzero sample is invertible, and the transform is invertible on all signals.
 
 ## The Two-Dimensional Transform
 
 ### Definition
 
-For a split-biquaternion-valued image $f : \{0, 1, \ldots, M-1\} \times \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{D}}$, the **two-dimensional discrete split-biquaternion Fourier transform** is
+For a split-biquaternion-valued image $f : \{0, 1, \ldots, M-1\} \times \{0, 1, \ldots, N-1\} \to \mathbb{B}^{\mathrm{spl}}$, the **two-dimensional discrete split-biquaternion Fourier transform** is
 
 $$
 F[u, v] = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} W_M(m, u) \, f[m, n] \, W_N(n, v),
@@ -420,10 +420,10 @@ The discrete transform is the discrete analogue of the continuous transform of t
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}^{\mathrm{spl}}$ |
 | $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |

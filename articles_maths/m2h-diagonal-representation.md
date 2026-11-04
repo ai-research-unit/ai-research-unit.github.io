@@ -6,9 +6,9 @@
 
 **The algebra.** The split biquaternion algebra is
 $$
-\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H},
+\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H},
 $$
-with $\mathbb{D}=\mathbb{R}[j]/(j^{2}-1)$ the split-complex algebra, $j$ central, of real dimension eight. Its two idempotents are
+with $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^{2}-1)$ the split-complex algebra, $j$ central, of real dimension eight. Its two idempotents are
 $$
 \tilde\Pi_{1}=\tfrac12(1+j),\qquad \tilde\Pi_{2}=\tfrac12(1-j),
 $$
@@ -65,7 +65,7 @@ read over $\mathbb{H}$: it acts on the two blocks and does not touch the quatern
 
 **The two blocks.** The algebra is the direct sum of the two ideals
 $$
-\mathbb{H}_{\mathbb{D}}\,\tilde\Pi_{1}=\mathbb{H}\tilde\Pi_{1}\cong\mathbb{H},\qquad \mathbb{H}_{\mathbb{D}}\,\tilde\Pi_{2}=\mathbb{H}\tilde\Pi_{2}\cong\mathbb{H},
+\mathbb{B}^{\mathrm{spl}}\,\tilde\Pi_{1}=\mathbb{H}\tilde\Pi_{1}\cong\mathbb{H},\qquad \mathbb{B}^{\mathrm{spl}}\,\tilde\Pi_{2}=\mathbb{H}\tilde\Pi_{2}\cong\mathbb{H},
 $$
 and there are no other proper ideals. Each is a division ring, so each is a minimal ideal, and the sum is direct: the algebra is a product of two division rings, which is the structure the model displays.
 
@@ -77,7 +77,7 @@ and the two off-diagonal units are **zero**. The reason is one line: an element 
 
 **The image.** The image is
 $$
-\mathsf M(\mathbb{H}_{\mathbb{D}})=\left\{\begin{pmatrix}u&0\\ 0&v\end{pmatrix}:u,v\in\mathbb{H}\right\},
+\mathsf M(\mathbb{B}^{\mathrm{spl}})=\left\{\begin{pmatrix}u&0\\ 0&v\end{pmatrix}:u,v\in\mathbb{H}\right\},
 $$
 of real dimension eight inside the sixteen of $M_{2}(\mathbb{H})$, and the membership test is the vanishing of the two off-diagonal blocks, four real equations:
 $$
@@ -87,17 +87,17 @@ The test is **linear** and it is stricter than any determinantal condition: the 
 
 **The centraliser.** The matrices of $M_{2}(\mathbb{H})$ commuting with every diagonal matrix are the diagonal matrices, because the blocks are division rings and a nonzero off-diagonal entry would have to annihilate a unit. So
 $$
-\mathsf M(\mathbb{H}_{\mathbb{D}})'=\mathsf M(\mathbb{H}_{\mathbb{D}}),\qquad \mathsf M(\mathbb{H}_{\mathbb{D}})''=\mathsf M(\mathbb{H}_{\mathbb{D}}),
+\mathsf M(\mathbb{B}^{\mathrm{spl}})'=\mathsf M(\mathbb{B}^{\mathrm{spl}}),\qquad \mathsf M(\mathbb{B}^{\mathrm{spl}})''=\mathsf M(\mathbb{B}^{\mathrm{spl}}),
 $$
 and the image is self-centralising, in the same position as the diagonal subalgebra of $M_{2}(\mathbb{C})$, but noncommutative. A maximal subalgebra is not the right word here, because the image is not commutative; the right word is self-centralising.
 
-**The ambient is simple and the image is not.** This is the sentence to keep: $M_{2}(\mathbb{H})$ is simple and $\mathbb{H}_{\mathbb{D}}$ is not, so no injective homomorphism can be surjective, and the deficiency is structural and not an accident of the choice of basis. The comparison table is short.
+**The ambient is simple and the image is not.** This is the sentence to keep: $M_{2}(\mathbb{H})$ is simple and $\mathbb{B}^{\mathrm{spl}}$ is not, so no injective homomorphism can be surjective, and the deficiency is structural and not an accident of the choice of basis. The comparison table is short.
 
-| | $\mathbb{H}_{\mathbb{D}}$ | $M_{2}(\mathbb{H})$ |
+| | $\mathbb{B}^{\mathrm{spl}}$ | $M_{2}(\mathbb{H})$ |
 |---|---|---|
 | simple | no, a product of two | yes |
 | real dimension | $8$ | $16$ |
-| centre | $\mathbb{D}$, of real dimension two | $\mathbb{R}$ |
+| centre | $\mathbb{C}^{\mathrm{spl}}$, of real dimension two | $\mathbb{R}$ |
 | matrix units | $\tilde E_{12}=\tilde E_{21}=0$ | all four nonzero |
 | model | the diagonal subalgebra | the whole algebra |
 
@@ -113,7 +113,7 @@ where $L_{u}$ and $R_{v}$ are the left and right multiplications of the quaterni
 
 **The module.** The regular module is the free module $\mathbb{H}^{2}$ over $\mathbb{H}$ with basis $(1,j)$, and as a module over the algebra it is
 $$
-\mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2},
+\mathbb{B}^{\mathrm{spl}}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2},
 $$
 a direct sum of two simple modules, each of quaternionic dimension one, each annihilated by the other idempotent. The series splits and there is no extension: the module theory is trivial, and the whole content is the two blocks.
 
@@ -141,9 +141,9 @@ $$
 
 *Proof.* The left multiplication is a homomorphism of the algebra into the endomorphisms of the module, and in the basis $(1,j)$ its matrix is diagonal with the two block multiplications on the diagonal. Injectivity holds because the two diagonal entries are the two idempotent coordinates.
 
-**The algebra separates.** The consequence is that the algebra has no cross-block structure at all: sums, products, inverses, powers and polynomials act blockwise, and every question about $\mathbb{H}_{\mathbb{D}}$ is two questions about $\mathbb{H}$. The Peirce decomposition is therefore not a convenience but an isomorphism,
+**The algebra separates.** The consequence is that the algebra has no cross-block structure at all: sums, products, inverses, powers and polynomials act blockwise, and every question about $\mathbb{B}^{\mathrm{spl}}$ is two questions about $\mathbb{H}$. The Peirce decomposition is therefore not a convenience but an isomorphism,
 $$
-\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\times\mathbb{H},\qquad \tilde Q\longmapsto(\tilde Q_{+},\tilde Q_{-}),
+\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\times\mathbb{H},\qquad \tilde Q\longmapsto(\tilde Q_{+},\tilde Q_{-}),
 $$
 and the matrix model is that isomorphism written as a diagonal matrix.
 
@@ -169,7 +169,7 @@ the four diagonal matrices with entries in $\{0,1\}$, exactly as in the reduced 
 
 **Theorem (the trace).** For every $\tilde Q$,
 $$
-\operatorname{tr}\mathsf M(\tilde Q)=\tilde Q_{+}+\tilde Q_{-}=2\sum_{\mu}q_{\mu}e_{\mu}=2\,\mathrm{Re}_{\mathbb{D}}\tilde Q,
+\operatorname{tr}\mathsf M(\tilde Q)=\tilde Q_{+}+\tilde Q_{-}=2\sum_{\mu}q_{\mu}e_{\mu}=2\,\mathrm{Re}_{\mathbb{C}^{\mathrm{spl}}}\tilde Q,
 $$
 a quaternion, whose scalar part is $2q_{t}$. The realification has the trace $8q_{t}$.
 
@@ -181,7 +181,7 @@ $$
 $$
 a real number. The correct statement of the category is therefore that the trace is not central and that the reduced trace is the invariant, and the determinant below is the object that carries the real information.
 
-**The kernel of the trace.** The quaternionic trace vanishes exactly when $\sum_{\mu}q_{\mu}e_{\mu}=0$, that is when the four $\mathbb{D}$-real coefficients vanish: the kernel is the four-dimensional real subspace
+**The kernel of the trace.** The quaternionic trace vanishes exactly when $\sum_{\mu}q_{\mu}e_{\mu}=0$, that is when the four $\mathbb{C}^{\mathrm{spl}}$-real coefficients vanish: the kernel is the four-dimensional real subspace
 $$
 \ker\operatorname{tr}=j\mathbb{H},
 $$
@@ -234,7 +234,7 @@ The three values are attained: $0$ at the zero element, $4$ on the union of the 
 
 **The unit group.** The determinant is nonzero exactly when both blocks are nonzero, so
 $$
-\mathbb{H}_{\mathbb{D}}^{\times}\cong\mathbb{H}^{\times}\times\mathbb{H}^{\times}\cong\bigl(SU(2)\times\mathbb{R}_{>0}\bigr)^{2},
+{\mathbb{B}^{\mathrm{spl}}}^{\times}\cong\mathbb{H}^{\times}\times\mathbb{H}^{\times}\cong\bigl(SU(2)\times\mathbb{R}_{>0}\bigr)^{2},
 $$
 of real dimension eight, and the retract is $SU(2)\times SU(2)=S^{3}\times S^{3}$. This is the object the operators article uses: the unit group is not connected, it has four components distinguished by the signs of the two real parts, and its compact retract is a product of two three-spheres and not a torus.
 
@@ -356,7 +356,7 @@ whose null cone is the light cone. On the **Hermitian subspace** $\tilde Q=q_{t}
 
 | subspace | algebra condition | block condition | model | real dim |
 |---|---|---|---|---|
-| split-complex $\mathbb{D}$ | $\tilde Q^{\natural}=\tilde Q$, vector part zero | $\tilde Q_{+}=\tilde Q_{-}=Q_{t}\in\mathbb{D}$ | $\mathrm{diag}(Q_{t},Q_{t})$ | $2$ |
+| split-complex $\mathbb{C}^{\mathrm{spl}}$ | $\tilde Q^{\natural}=\tilde Q$, vector part zero | $\tilde Q_{+}=\tilde Q_{-}=Q_{t}\in\mathbb{C}^{\mathrm{spl}}$ | $\mathrm{diag}(Q_{t},Q_{t})$ | $2$ |
 | quaternion $\mathbb{H}$ | $\bar{\tilde Q}=\tilde Q$, coefficients real | $\tilde Q_{+}=\tilde Q_{-}=q\in\mathbb{H}$ | $\mathrm{diag}(q,q)$ | $4$ |
 | Hermitian $\mathbb{M}_{+}$ | $\tilde Q^{*}=\tilde Q$ | $\tilde Q_{-}=\tilde Q_{+}^{\natural}$ | $\mathrm{diag}(u,u^{\natural})$ | $4$ |
 | anti-Hermitian $\mathbb{M}_{-}$ | $\tilde Q^{\flat}=\tilde Q$ | $\tilde Q_{-}=-\tilde Q_{+}^{\natural}$ | $\mathrm{diag}(u,-u^{\natural})$ | $4$ |
@@ -368,7 +368,7 @@ whose null cone is the light cone. On the **Hermitian subspace** $\tilde Q=q_{t}
 
 **The three decompositions.** The algebra splits in three canonical ways, and the model sees two of them as the same decomposition:
 $$
-\mathbb{H}_{\mathbb{D}}=\mathbb{H}\oplus j\mathbb{H}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2}=\mathbb{M}_{+}\oplus\mathbb{M}_{-},
+\mathbb{B}^{\mathrm{spl}}=\mathbb{H}\oplus j\mathbb{H}=\mathbb{H}\tilde\Pi_{1}\oplus\mathbb{H}\tilde\Pi_{2}=\mathbb{M}_{+}\oplus\mathbb{M}_{-},
 $$
 the first into the quaternion subspace and its translate, the second into the two ideals, the third into the Hermitian and the anti-Hermitian subspaces. The first and the third are decompositions into two subspaces with no algebra structure preserved, the second is a decomposition into two ideals and is the only one that is an isomorphism of algebras. The model diagonalises with respect to the second and reads the first and the third as the equal-blocks and conjugate-blocks conditions.
 
@@ -378,11 +378,11 @@ the first into the quaternion subspace and its translate, the second into the tw
 
 ## Summary
 
-1. The algebra is $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$, semisimple and not simple, of real dimension eight, with the two central idempotents $\tilde\Pi_{1},\tilde\Pi_{2}$ and the two quaternionic coordinates $\tilde Q_{\pm}$.
+1. The algebra is $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$, semisimple and not simple, of real dimension eight, with the two central idempotents $\tilde\Pi_{1},\tilde\Pi_{2}$ and the two quaternionic coordinates $\tilde Q_{\pm}$.
 2. The model is the diagonal subalgebra of $M_{2}(\mathbb{H})$, of real dimension eight inside sixteen; the membership test is the vanishing of the two off-diagonal blocks, a linear test of codimension eight.
 3. The matrix units of the algebra are degenerate, $\tilde E_{12}=\tilde E_{21}=0$, and the reason is that each block is a division ring, so no element connects the two blocks.
 4. The product is blockwise and the algebra separates as $\mathbb{H}\times\mathbb{H}$; the model is faithful and not surjective, and no sum or product of models fills the off-diagonal corners.
-5. The trace is the quaternion $\tilde Q_{+}+\tilde Q_{-}=2\,\mathrm{Re}_{\mathbb{D}}\tilde Q$, not central, with reduced trace $2q_{t}$, realified trace $8q_{t}$, and kernel the subspace $j\mathbb{H}$; the reduced trace form has signature $(4,4)$ and is nondegenerate.
+5. The trace is the quaternion $\tilde Q_{+}+\tilde Q_{-}=2\,\mathrm{Re}_{\mathbb{C}^{\mathrm{spl}}}\tilde Q$, not central, with reduced trace $2q_{t}$, realified trace $8q_{t}$, and kernel the subspace $j\mathbb{H}$; the reduced trace form has signature $(4,4)$ and is nondegenerate.
 6. The determinant is $N(\tilde Q_{+})N(\tilde Q_{-})$, a nonnegative real, multiplicative, vanishing exactly on the union of the two ideals; the realified determinant is its square, and the rank ladder is $\{0,4,8\}$.
 7. The two central idempotents are the spectral projectors, the spectrum is two independent conjugate pairs, Lagrange's formula degenerates on the quaternion subspace of real dimension four, and the projectors exist there nonetheless.
 8. The inverse is blockwise and stays in the algebra; the adjugate is $\mathrm{diag}(N(\tilde Q_{-})\tilde Q_{+}^{\natural},N(\tilde Q_{+})\tilde Q_{-}^{\natural})$ and is **not** the model of a conjugation, because the determinant is a product of the two norms and the cofactors cross.
@@ -393,7 +393,7 @@ the first into the quaternion subspace and its translate, the second into the tw
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | the split biquaternion algebra, real dimension eight | *Split-Biquaternion Algebra* |
+| $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | the split biquaternion algebra, real dimension eight | *Split-Biquaternion Algebra* |
 | $\tilde Q=\tilde Q_{+}\tilde\Pi_{1}+\tilde Q_{-}\tilde\Pi_{2}$ | the idempotent decomposition, two quaternionic coordinates | *Split-Biquaternion Algebra* |
 | $\tilde\Pi_{1},\tilde\Pi_{2}$ | the two central idempotents $\tfrac12(1\pm j)$ | *Split-Biquaternion Idempotents and Projections* |
 | $\mathsf M(\tilde Q)$ | the diagonal model in $M_{2}(\mathbb{H})$ | this article |

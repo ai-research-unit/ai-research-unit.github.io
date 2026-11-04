@@ -3,18 +3,18 @@
 
 ## Introduction
 
-This article compares the polar decompositions of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$. It states the polar decomposition of an element into a modulus and a unit factor, the number of factors of the parametrisation and the group each factor carries, the positive scale, the elliptic, hyperbolic and parabolic phases, the hyperbolic rotation and the rotor, the domain of the decomposition and its boundary, and the place of each algebra in the definite and the indefinite polar series, in tables with the eight algebras as columns in the fixed order of *The Eight Algebras Compared*. Every entry restates a result of the eight polar decomposition articles cited in the explanations. The article stops at the decomposition of an element: the norm itself and the group of units are the subject of *Comparison of Norms and Invertibility*, and the exponential of the unit factor and the Lie group structure of the group of units are the subject of *Comparison of the Exponential and Lie Group Structure*.
+This article compares the polar decompositions of the eight algebras $\mathbb{R}, \mathbb{C}, \mathbb{C}^{\mathrm{spl}}, \mathbb{C}^{\mathrm{dua}}, \mathbb{H}, \mathbb{H}^{\mathrm{spl}}, \mathbb{B}, \mathbb{B}^{\mathrm{spl}}$. It states the polar decomposition of an element into a modulus and a unit factor, the number of factors of the parametrisation and the group each factor carries, the positive scale, the elliptic, hyperbolic and parabolic phases, the hyperbolic rotation and the rotor, the domain of the decomposition and its boundary, and the place of each algebra in the definite and the indefinite polar series, in tables with the eight algebras as columns in the fixed order of *The Eight Algebras Compared*. Every entry restates a result of the eight polar decomposition articles cited in the explanations. The article stops at the decomposition of an element: the norm itself and the group of units are the subject of *Comparison of Norms and Invertibility*, and the exponential of the unit factor and the Lie group structure of the group of units are the subject of *Comparison of the Exponential and Lie Group Structure*.
 
-The organising thread is the **number and the character of the factors**. Every element of non-vanishing norm is written $\tilde Q=\rho u$ with a positive modulus $\rho$ and a unit factor $u$, but the unit factor splits further: it is discrete in $\mathbb{R}$, circular in $\mathbb{C}$, a sphere in $\mathbb{H}$, a hyperbola or a shear in the split cases, and a product of a central phase, a hyperbolic rotation in the Hermitian subspace and a rotor in $\mathbb{B}$. The columns divide into the **definite polar series** $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$, whose unit factor carries a compact rotor, and the **indefinite polar series** $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$, whose unit factor carries a non-compact hyperbolic or parabolic factor.
+The organising thread is the **number and the character of the factors**. Every element of non-vanishing norm is written $\tilde Q=\rho u$ with a positive modulus $\rho$ and a unit factor $u$, but the unit factor splits further: it is discrete in $\mathbb{R}$, circular in $\mathbb{C}$, a sphere in $\mathbb{H}$, a hyperbola or a shear in the split cases, and a product of a central phase, a hyperbolic rotation in the Hermitian subspace and a rotor in $\mathbb{B}$. The columns divide into the **definite polar series** $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$, whose unit factor carries a compact rotor, and the **indefinite polar series** $\mathbb{C}^{\mathrm{spl}}, \mathbb{C}^{\mathrm{dua}}, \mathbb{H}^{\mathrm{spl}}, \mathbb{B}^{\mathrm{spl}}$, whose unit factor carries a non-compact hyperbolic or parabolic factor.
 
 **The symbols of the comparison.** Throughout, $e_t$ is the algebra unit of whichever algebra is in view, and the element is a name of that algebra.
 
-- **The element.** $q \in \mathbb{R}$ (second coefficient $q' \in \mathbb{R}$ for $\mathbb{D}$), $Q \in \mathbb{C}$, $\mathbb{D}$ or $\mathbb{D}'$, $\tilde q \in \mathbb{H}$ or $\mathbb{H}_{\mathrm{s}}$, $\tilde Q \in \mathbb{B}$ or $\mathbb{H}_{\mathbb{D}}$.
+- **The element.** $q \in \mathbb{R}$ (second coefficient $q' \in \mathbb{R}$ for $\mathbb{C}^{\mathrm{spl}}$), $Q \in \mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ or $\mathbb{C}^{\mathrm{dua}}$, $\tilde q \in \mathbb{H}$ or $\mathbb{H}^{\mathrm{spl}}$, $\tilde Q \in \mathbb{B}$ or $\mathbb{B}^{\mathrm{spl}}$.
 - **The generating units.** The quaternion units $\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$; the complex unit $i$ with $i^2 = -1$; the split-complex unit $j$ with $j^2 = +1$, central; and the nilpotent unit $\varepsilon$ with $\varepsilon^2 = 0$.
-- **The norm.** $N$, the norm of the algebra in view: for $\mathbb{R}$ and $\mathbb{D}'$ the real form $q^2$, for $\mathbb{C}$ and $\mathbb{H}$ the definite form, for $\mathbb{D}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ the split or biquaternion form.
+- **The norm.** $N$, the norm of the algebra in view: for $\mathbb{R}$ and $\mathbb{C}^{\mathrm{dua}}$ the real form $q^2$, for $\mathbb{C}$ and $\mathbb{H}$ the definite form, for $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{H}^{\mathrm{spl}}$ and $\mathbb{B}$ the split or biquaternion form.
 - **The polar factors.** The modulus $\rho > 0$ off the origin, and the unit factor $u$, of norm one for the definite forms and of norm $\pm1$ for the indefinite ones.
-- **The $\mathbb{H}_{\mathbb{D}}$ column.** The letters $\tilde q,\tilde q' \in \mathbb{H}$ denote the quaternion and split-quaternion parts of $\tilde Q = \tilde q + j\tilde q'$, whose idempotent components are $\tilde\Pi_{1,2} = \tfrac12(1\pm j)$ and whose modulus components are $\rho_\pm = |\tilde q\pm \tilde q'|$.
-- **The further symbols of the exponential table.** $\mu$, a unit pure quaternion (a root of $-e_t$ in $\mathbb{H}$); $\sigma \in \operatorname{span}\{\vec e_y,\vec e_z\}$; $\mu_\pm$, unit pure real quaternions, and $\theta_\pm \in \mathbb{R}$, the two rotation angles of $\mathbb{H}_{\mathbb{D}}$; $s \in R$, the shear parameter of $\mathbb{D}'$; and $B_+$, the set of unit boosts $\exp(\mathbb{M}_+\cap\{\text{traceless}\}) = H^3$.
+- **The $\mathbb{B}^{\mathrm{spl}}$ column.** The letters $\tilde q,\tilde q' \in \mathbb{H}$ denote the quaternion and split-quaternion parts of $\tilde Q = \tilde q + j\tilde q'$, whose idempotent components are $\tilde\Pi_{1,2} = \tfrac12(1\pm j)$ and whose modulus components are $\rho_\pm = |\tilde q\pm \tilde q'|$.
+- **The further symbols of the exponential table.** $\mu$, a unit pure quaternion (a root of $-e_t$ in $\mathbb{H}$); $\sigma \in \operatorname{span}\{\vec e_y,\vec e_z\}$; $\mu_\pm$, unit pure real quaternions, and $\theta_\pm \in \mathbb{R}$, the two rotation angles of $\mathbb{B}^{\mathrm{spl}}$; $s \in R$, the shear parameter of $\mathbb{C}^{\mathrm{dua}}$; and $B_+$, the set of unit boosts $\exp(\mathbb{M}_+\cap\{\text{traceless}\}) = H^3$.
 
 The symbols are those of the eight polar articles and are defined there; the sets they carry are the columns of the tables.
 
@@ -49,28 +49,28 @@ The following table writes the word of each algebra as a product of exponentials
 |---|---|---|
 | $\mathbb{R}$ | $q = \exp(\ln\lvert q\rvert)\cdot(\pm e_t)$ | the scale has the hyperbolic unit $e_t$; the sign is **not** an exponential, since $\exp(\mathbb{R})=\mathbb{R}_{>0}$ misses $-1$ |
 | $\mathbb{C}$ | $Q = \exp(\ln\sqrt{\langle Q\rangle_{*}})\,\exp(i\theta)$ | the cosine root $i$, trigonometric |
-| $\mathbb{D}$ | $Q = \exp(\ln\sqrt{\lvert\langle Q\rangle_{*}\rvert})\cdot\bigl(\pm\exp(j\phi)\bigr)$ for $\langle Q\rangle_{*}>0$, $\bigl(\pm j\exp(j\phi)\bigr)$ for $\langle Q\rangle_{*}<0$ | the hyperbolic root $j$, hyperbolic; the sign is the discrete component, and the factor $j$ is the second component for $\langle Q\rangle_{*}<0$ |
-| $\mathbb{D}'$ | $Q = \exp(\ln\lvert q\rvert)\,\bigl(\pm\exp(\varepsilon s)\bigr)$ | the nilpotent root $\varepsilon$, parabolic; the sign is the component of the unit group |
+| $\mathbb{C}^{\mathrm{spl}}$ | $Q = \exp(\ln\sqrt{\lvert\langle Q\rangle_{*}\rvert})\cdot\bigl(\pm\exp(j\phi)\bigr)$ for $\langle Q\rangle_{*}>0$, $\bigl(\pm j\exp(j\phi)\bigr)$ for $\langle Q\rangle_{*}<0$ | the hyperbolic root $j$, hyperbolic; the sign is the discrete component, and the factor $j$ is the second component for $\langle Q\rangle_{*}<0$ |
+| $\mathbb{C}^{\mathrm{dua}}$ | $Q = \exp(\ln\lvert q\rvert)\,\bigl(\pm\exp(\varepsilon s)\bigr)$ | the nilpotent root $\varepsilon$, parabolic; the sign is the component of the unit group |
 | $\mathbb{H}$ | $\tilde q = \exp(\ln\sqrt{N})\,\exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ | the cosine root $\mu$, a unit pure quaternion, trigonometric |
-| $\mathbb{H}_{\mathrm{s}}$ | $\tilde q = \exp(\ln\sqrt{\lvert N\rvert})\,\exp(\sigma)\cdot\bigl(\exp(\tfrac{\theta}{2} \vec e_x)\bigr)\cdot(\text{optional } \vec e_y)$ | the hyperbolic exponent $\sigma\in\operatorname{span}\{\vec e_y,\vec e_z\}$ and the cosine root $\vec e_x$; the reflection $\vec e_y$ is discrete |
+| $\mathbb{H}^{\mathrm{spl}}$ | $\tilde q = \exp(\ln\sqrt{\lvert N\rvert})\,\exp(\sigma)\cdot\bigl(\exp(\tfrac{\theta}{2} \vec e_x)\bigr)\cdot(\text{optional } \vec e_y)$ | the hyperbolic exponent $\sigma\in\operatorname{span}\{\vec e_y,\vec e_z\}$ and the cosine root $\vec e_x$; the reflection $\vec e_y$ is discrete |
 | $\mathbb{B}$ | $\tilde Q = \exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_t$ and $i\vec u_{\mathrm b}$, the cosine roots $i$ and $\vec u_{\mathrm r}$ |
-| $\mathbb{H}_{\mathbb{D}}$ | $\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1+\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr)$ | the hyperbolic roots $e_t$ and $j$, the cosine roots $\mu_+\tilde\Pi_1$ and $\mu_-\tilde\Pi_2$ |
+| $\mathbb{B}^{\mathrm{spl}}$ | $\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1+\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr)$ | the hyperbolic roots $e_t$ and $j$, the cosine roots $\mu_+\tilde\Pi_1$ and $\mu_-\tilde\Pi_2$ |
 
 The table is the exponential reading of the two parametrisation tables. Three features of it are worth separating.
 
 - **The scale is present in every column.** It is the one factor common to all eight columns, and it is the degenerate hyperbolic exponential, $\exp(\ln\rho)=\rho$.
-- **The split algebras carry a factor that no exponential produces.** The sign group of $\mathbb{R}$ and the finite component of $\mathbb{D}$ and of $\mathbb{H}_{\mathrm{s}}$ are the boundary of the exponential, and the polar word keeps them as factors because the representation counts components and not only connected parameters.
-- **Only $\mathbb{D}'$ occupies the parabolic row.** It does so because its unit factor is a shear $1+\varepsilon s$, which is $\exp(\varepsilon s)$ exactly by the truncation of the series.
+- **The split algebras carry a factor that no exponential produces.** The sign group of $\mathbb{R}$ and the finite component of $\mathbb{C}^{\mathrm{spl}}$ and of $\mathbb{H}^{\mathrm{spl}}$ are the boundary of the exponential, and the polar word keeps them as factors because the representation counts components and not only connected parameters.
+- **Only $\mathbb{C}^{\mathrm{dua}}$ occupies the parabolic row.** It does so because its unit factor is a shear $1+\varepsilon s$, which is $\exp(\varepsilon s)$ exactly by the truncation of the series.
 
 The remaining columns occupy the trigonometric row for their compact factors and the hyperbolic row for their non-compact ones, and the count of the two rows is the count of the factors recorded in the two tables below.
 
-**Two of the eight columns have exponents that do not commute.** In $\mathbb{B}$ the boost exponent and the rotor exponent fail to, and in $\mathbb{H}_{\mathrm{s}}$ the boost exponent and the rotation exponent fail to; in those two columns the order of the factors is part of the information, and the exponents may not be amalgamated into a single exponent. In the other six columns the exponents commute, so the order is free, and — the discrete signs and reflections of $\mathbb{R}$, $\mathbb{D}$ and $\mathbb{D}'$ excepted, these not being exponentials at all — the word is a single exponential. The six are the columns in which a non-scalar exponent is central or is the only non-scalar exponent of the word; the two are the columns in which two non-scalar exponents with a non-vanishing bracket occur together. Over $60$ random elements the largest coefficient of the bracket of the non-commuting exponents is $3.58$ in the biquaternion column and $6.59$ in the split-quaternion column, and in neither case does the sum rule hold.
+**Two of the eight columns have exponents that do not commute.** In $\mathbb{B}$ the boost exponent and the rotor exponent fail to, and in $\mathbb{H}^{\mathrm{spl}}$ the boost exponent and the rotation exponent fail to; in those two columns the order of the factors is part of the information, and the exponents may not be amalgamated into a single exponent. In the other six columns the exponents commute, so the order is free, and — the discrete signs and reflections of $\mathbb{R}$, $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dua}}$ excepted, these not being exponentials at all — the word is a single exponential. The six are the columns in which a non-scalar exponent is central or is the only non-scalar exponent of the word; the two are the columns in which two non-scalar exponents with a non-vanishing bracket occur together. Over $60$ random elements the largest coefficient of the bracket of the non-commuting exponents is $3.58$ in the biquaternion column and $6.59$ in the split-quaternion column, and in neither case does the sum rule hold.
 
 ## The Polar Parametrisation
 
 The following table compares the polar parametrisation of the eight algebras: the modulus, the unit factor, the number of factors, the domain of the decomposition and the series to which the algebra belongs. The eight algebras are the columns, in the fixed order.
 
-| datum | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
+| datum | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{dua}}$ | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{B}$ | $\mathbb{B}^{\mathrm{spl}}$ |
 |---|---|---|---|---|---|---|---|---|
 | modulus | $\lvert q\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\lvert q\rvert$ | $\sqrt{N}$ | $\sqrt{\lvert N\rvert}$ | $\sqrt{\lvert N\rvert}$ | $\rho_\pm=\lvert\tilde q\pm \tilde q'\rvert$, scale $\lambda=\sqrt{\rho_+\rho_-}$ |
 | unit factor | $\{\pm1\}$ | $\mathrm{U}(1)$ | $\{N=\pm1\}$ | $\{\pm1\}\cdot(1+\mathrm{M})$ | $Sp(1)$ | $\{N=\pm1\}$ | $\mathrm{U}(1)\cdot B_+\cdot Sp(1)$ | $\exp(j\tau)\cdot(\mathrm{Sp}(1)\times\mathrm{Sp}(1))$ |
@@ -80,17 +80,17 @@ The following table compares the polar parametrisation of the eight algebras: th
 
 The table records the two-factor shape of the decomposition in seven columns and its sharpening in the eighth.
 
-- **The modulus.** It is the square root of the norm — the absolute value of it when the form is indefinite — and it is positive real whenever it is a scalar. In $\mathbb{B}$ the argument of the complex norm is carried by the central phase of the unit factor; in $\mathbb{H}_{\mathbb{D}}$ the modulus is the pair $\rho_\pm=\lvert\tilde q\pm \tilde q'\rvert$ of the idempotent components whose geometric mean is the positive scale $\lambda$ (*Real Polar Decomposition*; *Modulus–Unit Polar Decomposition of Complex Numbers*; *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; *Dual-Numbers Polar Decomposition*; *Modulus–Unit Polar Decomposition of Quaternions*; *Split-Quaternion Polar Decomposition*; *The Polar Decomposition of an N-Regular Biquaternion*; *Split-Biquaternion Polar Decomposition*).
+- **The modulus.** It is the square root of the norm — the absolute value of it when the form is indefinite — and it is positive real whenever it is a scalar. In $\mathbb{B}$ the argument of the complex norm is carried by the central phase of the unit factor; in $\mathbb{B}^{\mathrm{spl}}$ the modulus is the pair $\rho_\pm=\lvert\tilde q\pm \tilde q'\rvert$ of the idempotent components whose geometric mean is the positive scale $\lambda$ (*Real Polar Decomposition*; *Modulus–Unit Polar Decomposition of Complex Numbers*; *Modulus–Unit Polar Decomposition of Split-Complex Numbers*; *Dual-Numbers Polar Decomposition*; *Modulus–Unit Polar Decomposition of Quaternions*; *Split-Quaternion Polar Decomposition*; *The Polar Decomposition of an N-Regular Biquaternion*; *Split-Biquaternion Polar Decomposition*).
 - **The unit factor.** It is the set of **unit elements**, that is, of elements of norm one for the norm in view, up to the sign when the norm is indefinite (*Norm and Unitary Conventions*, §*The Unitary Convention*); it is not the **group of units**, which is the wider set of invertible elements treated in *Comparison of Norms and Invertibility*.
-- **The domain.** The decomposition $\tilde Q=\rho u$ exists exactly on the elements of non-vanishing norm, so its domain is the complement of the origin in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, the complement of the null cone in $\mathbb{D}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$, the complement of the maximal ideal in $\mathbb{D}'$, and the whole algebra in $\mathbb{H}_{\mathbb{D}}$, whose modulus needs no branch and whose decomposition exists for every element (*Split-Biquaternion Polar Decomposition*, §*The Theorem*).
-- **The number of factors** is two in seven columns. $\mathbb{B}$ is the one column with four factors, the scale, the central phase, the hyperbolic rotation in the Hermitian subspace and the rotor; $\mathbb{H}_{\mathbb{D}}$ has the two factors of the central modulus and the rotor, the scale and the hyperbolic phase together forming the central factor (*The Polar Decomposition of an N-Regular Biquaternion*; *Split-Biquaternion Polar Decomposition*, §*Why Two Factors*).
-- **The series.** The columns divide into the definite series $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ and the indefinite series $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$.
+- **The domain.** The decomposition $\tilde Q=\rho u$ exists exactly on the elements of non-vanishing norm, so its domain is the complement of the origin in $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, the complement of the null cone in $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{H}^{\mathrm{spl}}$ and $\mathbb{B}$, the complement of the maximal ideal in $\mathbb{C}^{\mathrm{dua}}$, and the whole algebra in $\mathbb{B}^{\mathrm{spl}}$, whose modulus needs no branch and whose decomposition exists for every element (*Split-Biquaternion Polar Decomposition*, §*The Theorem*).
+- **The number of factors** is two in seven columns. $\mathbb{B}$ is the one column with four factors, the scale, the central phase, the hyperbolic rotation in the Hermitian subspace and the rotor; $\mathbb{B}^{\mathrm{spl}}$ has the two factors of the central modulus and the rotor, the scale and the hyperbolic phase together forming the central factor (*The Polar Decomposition of an N-Regular Biquaternion*; *Split-Biquaternion Polar Decomposition*, §*Why Two Factors*).
+- **The series.** The columns divide into the definite series $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ and the indefinite series $\mathbb{C}^{\mathrm{spl}}, \mathbb{C}^{\mathrm{dua}}, \mathbb{H}^{\mathrm{spl}}, \mathbb{B}^{\mathrm{spl}}$.
 
 ## The Factors and Their Groups
 
 The following table compares the factor groups of the polar decompositions of the eight algebras: the positive scale, the elliptic, hyperbolic and parabolic phases, the hyperbolic rotation and the rotor. The eight algebras are the columns, in the fixed order, with the marker **—** where a factor does not occur.
 
-| factor | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{D}'$ | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{B}$ | $\mathbb{H}_{\mathbb{D}}$ |
+| factor | $\mathbb{R}$ | $\mathbb{C}$ | $\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{dua}}$ | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{B}$ | $\mathbb{B}^{\mathrm{spl}}$ |
 |---|---|---|---|---|---|---|---|---|
 | scale | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ | $\mathbb{R}_{>0}$ |
 | elliptic phase | — | $\mathrm{U}(1)$ | — | — | — | — | $\mathrm{U}(1)$ | — |
@@ -118,33 +118,33 @@ The split biquaternion column is the only one whose polar data has no hyperbolic
 
 ## Summary
 
-Every element of non-vanishing norm has a polar decomposition $\tilde Q=\rho u$ into a modulus and a unit factor, and the modulus is the square root of the norm — its absolute value when the form is indefinite, and a pair of real absolute values in $\mathbb{H}_{\mathbb{D}}$. The decomposition has two factors in seven columns and four in $\mathbb{B}$, the scale, the central phase, the hyperbolic rotation in the Hermitian subspace and the rotor; in $\mathbb{H}_{\mathbb{D}}$ the two factors are the central modulus, whose scale and hyperbolic phase are the components of the split complex modulus, and the rotor $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$.
+Every element of non-vanishing norm has a polar decomposition $\tilde Q=\rho u$ into a modulus and a unit factor, and the modulus is the square root of the norm — its absolute value when the form is indefinite, and a pair of real absolute values in $\mathbb{B}^{\mathrm{spl}}$. The decomposition has two factors in seven columns and four in $\mathbb{B}$, the scale, the central phase, the hyperbolic rotation in the Hermitian subspace and the rotor; in $\mathbb{B}^{\mathrm{spl}}$ the two factors are the central modulus, whose scale and hyperbolic phase are the components of the split complex modulus, and the rotor $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$.
 
 The factor groups are
 
 - the positive scale $\mathbb{R}_{>0}$, present in every column;
 - the elliptic phase $\mathrm{U}(1)$ of $\mathbb{C}$ and $\mathbb{B}$;
-- the hyperbolic phase $\exp(\phi j)$ of $\mathbb{D}$ and $\exp(j\tau)$ of $\mathbb{H}_{\mathbb{D}}$;
-- the parabolic phase $1+\mathrm{M}$ of $\mathbb{D}'$;
-- the hyperbolic rotation of $\mathbb{H}_{\mathrm{s}}$ and of $\mathbb{B}$;
-- the rotor, discrete in $\mathbb{R}$, the circle $\mathrm{U}(1)$ in $\mathbb{H}_{\mathrm{s}}$, and the sphere $Sp(1)$ or the product $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ in $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$.
+- the hyperbolic phase $\exp(\phi j)$ of $\mathbb{C}^{\mathrm{spl}}$ and $\exp(j\tau)$ of $\mathbb{B}^{\mathrm{spl}}$;
+- the parabolic phase $1+\mathrm{M}$ of $\mathbb{C}^{\mathrm{dua}}$;
+- the hyperbolic rotation of $\mathbb{H}^{\mathrm{spl}}$ and of $\mathbb{B}$;
+- the rotor, discrete in $\mathbb{R}$, the circle $\mathrm{U}(1)$ in $\mathbb{H}^{\mathrm{spl}}$, and the sphere $Sp(1)$ or the product $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ in $\mathbb{H}$, $\mathbb{B}$ and $\mathbb{B}^{\mathrm{spl}}$.
 
-The decompositions fall into the definite series $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ and the indefinite series $\mathbb{D}, \mathbb{D}', \mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathbb{D}}$, and only the last column has the whole algebra as its domain.
+The decompositions fall into the definite series $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}$ and the indefinite series $\mathbb{C}^{\mathrm{spl}}, \mathbb{C}^{\mathrm{dua}}, \mathbb{H}^{\mathrm{spl}}, \mathbb{B}^{\mathrm{spl}}$, and only the last column has the whole algebra as its domain.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\rho$ | the modulus of the polar decomposition |
-| $\lambda$ | the positive scale of $\mathbb{H}_{\mathbb{D}}$, $\sqrt{\rho_+\rho_-}$ |
+| $\lambda$ | the positive scale of $\mathbb{B}^{\mathrm{spl}}$, $\sqrt{\rho_+\rho_-}$ |
 | $u$ | the unit factor of the decomposition |
 | $\rho_\pm=\lvert\tilde q\pm \tilde q'\rvert$ | the two idempotent components of the modulus of $\tilde Q=\tilde q+j\tilde q'$ |
 | $\mathrm{U}(1)$ | the unit circle, the compact elliptic phase of $\mathbb{C}$ and $\mathbb{B}$ |
 | $\mathrm{Sp}(1)=\{\tilde q\in\mathbb{H}:\tilde q\tilde q^{\natural}=1\}$ | the unit real quaternions, the compact rotor of $\mathbb{H}$ and $\mathbb{B}$ |
-| $\exp(\phi j),\exp(j\tau)$ | the hyperbolic phase of $\mathbb{D}$ and of $\mathbb{H}_{\mathbb{D}}$ |
-| $1+\mathrm{M}$ | the parabolic phase of $\mathbb{D}'$, $\mathrm{M}=(\varepsilon)$ |
+| $\exp(\phi j),\exp(j\tau)$ | the hyperbolic phase of $\mathbb{C}^{\mathrm{spl}}$ and of $\mathbb{B}^{\mathrm{spl}}$ |
+| $1+\mathrm{M}$ | the parabolic phase of $\mathbb{C}^{\mathrm{dua}}$, $\mathrm{M}=(\varepsilon)$ |
 | $B_+$ | the Hermitian positive subspace of $\mathbb{B}$ carrying the hyperbolic rotation |
-| $\mathrm{U}(1)$ | the rotor of $\mathbb{H}_{\mathrm{s}}$ from the elliptic direction $\vec e_x$ |
+| $\mathrm{U}(1)$ | the rotor of $\mathbb{H}^{\mathrm{spl}}$ from the elliptic direction $\vec e_x$ |
 | $N$ | the norm of the algebra |
 | `—` | an empty cell, stated and never filled |
 

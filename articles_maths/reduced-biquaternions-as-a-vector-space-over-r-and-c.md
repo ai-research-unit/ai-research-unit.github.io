@@ -16,7 +16,7 @@ The article keeps the space and drops the product. Addition, the two scalar acti
 
 **Definition.** The reduced biquaternion space, read over the complex scalars, is the set
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}=\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\},
+\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}=\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}\},
 $$
 with the addition of the algebra and the scalar action
 $$
@@ -52,7 +52,7 @@ and the pair $(Q_{+},Q_{-})$ is the **idempotent coordinate pair**. Both pairs a
 
 **Definition.** The reduced biquaternion space, read over the real scalars, is the set
 $$
-\mathbb{B}_{\mathrm{r}}=\{q_{\blacktriangle}+q'_{\blacktriangle}i+q_{\blacktriangledown}j+q'_{\blacktriangledown}ij:q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}\in\mathbb{R}\},
+\mathbb{B}^{\mathrm{red}}=\{q_{\blacktriangle}+q'_{\blacktriangle}i+q_{\blacktriangledown}j+q'_{\blacktriangledown}ij:q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown}\in\mathbb{R}\},
 $$
 with the addition of the algebra and the scalar action $\lambda(Q_{\blacktriangle}+jQ_{\blacktriangledown})=\lambda Q_{\blacktriangle}+j\lambda Q_{\blacktriangledown}$ for $\lambda\in\mathbb{R}$.
 
@@ -100,13 +100,13 @@ The involution $S$ is **not** a conjugation in the sense of the four marks of th
 
 **Proposition (the dimensions).** The realification has real dimension twice the complex dimension,
 $$
-\boxed{\; \dim_{\mathbb{R}}\mathbb{B}_{\mathrm{r}}=2\dim_{\mathbb{C}}\mathbb{B}_{\mathrm{r}}=4 \;},
+\boxed{\; \dim_{\mathbb{R}}\mathbb{B}^{\mathrm{red}}=2\dim_{\mathbb{C}}\mathbb{B}^{\mathrm{red}}=4 \;},
 $$
 and the passage is exactly the reading of the complex basis $\{1,j\}$ on the real basis $\{1,i,j,ij\}$, namely $1=1$ and $j=j$ with the two complex scalar coordinates split into four real ones by $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$.
 
 *Proof.* The real basis is obtained from the complex one by replacing each complex basis element by its real and imaginary parts: $1$ is already real, and $j$ gives $j$ and $ij$. The two complex coordinates $Q_{\blacktriangle},Q_{\blacktriangledown}$ give the four real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ of the proposition on the real coordinates. The inverse passage is the insertion of $J$, which reads two real directions as one complex one.
 
-**Remark (the ring-based readings are not this).** The realification and the complexification are passages between the two **field-based** readings of the same set. The set read as a module over the ring $\mathbb{B}_{\mathrm{r}}$ itself, with the scalar action the multiplication of the algebra, is a different object, and it is not part of this article. The warning is the one of the introduction, and the distinction is the same as in the biquaternion category between the complex vector space and the module over the algebra.
+**Remark (the ring-based readings are not this).** The realification and the complexification are passages between the two **field-based** readings of the same set. The set read as a module over the ring $\mathbb{B}^{\mathrm{red}}$ itself, with the scalar action the multiplication of the algebra, is a different object, and it is not part of this article. The warning is the one of the introduction, and the distinction is the same as in the biquaternion category between the complex vector space and the module over the algebra.
 
 ## The Coordinate Systems
 
@@ -150,7 +150,7 @@ The six fixed and anti-fixed spaces of the bar, the tessarine sign and the star 
 
 - the fixed space of the **tessarine sign** is the **scalar line** $\mathbb{C}=\{A:A\in\mathbb{C}\}$, of real dimension two, spanned by $1,i$;
 - the anti-fixed space of the **tessarine sign** is the **$j$-line**, of real dimension two, spanned by $j,ij$;
-- the fixed space of the **bar** is the **real subalgebra** $\{a+bj:a,b\in\mathbb{R}\}$, of real dimension two, the split-complex numbers inside $\mathbb{B}_{\mathrm{r}}$.
+- the fixed space of the **bar** is the **real subalgebra** $\{a+bj:a,b\in\mathbb{R}\}$, of real dimension two, the split-complex numbers inside $\mathbb{B}^{\mathrm{red}}$.
 
 **Remark (the algebra is commutative, so its ring centre is not a proper subspace).** Unlike the biquaternion algebra, whose centre is the scalar line $\mathbb{C}e_t$ and one of its remarkable subspaces, the reduced biquaternion algebra is commutative, so its **ring centre is the whole algebra** and the scalar line is not its centre but its scalar line. Where the biquaternion category reads a *central* subspace, this category reads the **scalar line**, and the difference is taken up in *Subspaces and Decompositions*. The warning is stated here because it bears on every later use of the word *central*: in this category *central* names an element of the scalar line $\mathbb{C}$, or the property of commuting with everything, which here is shared by every element.
 
@@ -189,4 +189,4 @@ A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in wh
 - [The Four-Vector Element Representation of the Reduced Biquaternions](the-four-vector-element-representation-of-the-reduced-biquaternions.html), for the real quadruple and the complex pair as element representations.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), §*The Elements and their Coefficients*, for the scalar part, the $j$-part and the two complex coordinates.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
-- [The Split-Complexoid as a Vector Space over $\mathbb{R}$](the-split-complexoid-as-a-vector-space-over-r.html), for the real companion $\mathbb{D}$ and its self-interpretation over the algebra.
+- [The Split-Complexoid as a Vector Space over $\mathbb{R}$](the-split-complexoid-as-a-vector-space-over-r.html), for the real companion $\mathbb{C}^{\mathrm{spl}}$ and its self-interpretation over the algebra.

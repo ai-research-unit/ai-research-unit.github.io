@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Two predicates cut the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ into four cells: the reduced norm $\Delta=|Q_+|^2|Q_-|^2$ is zero or non-zero, and the reduced characteristic polynomial $p_{\tilde Q}=p_+p_-$ has a repeated root or not. The four cells are the **sectors** $\Sigma_{ij}$, with $i=1$ for $\Delta\neq0$ and $j=1$ for spectral regularity. Three of them are non-empty; the fourth, $\Sigma_{01}$, is empty. This article defines the sectors, proves that three are non-empty and one is empty, and describes each one with its dimension and closure. The spectral criterion is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the comparison is *[The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html)*.
+Two predicates cut the split-biquaternion algebra $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ into four cells: the reduced norm $\Delta=|Q_+|^2|Q_-|^2$ is zero or non-zero, and the reduced characteristic polynomial $p_{\tilde Q}=p_+p_-$ has a repeated root or not. The four cells are the **sectors** $\Sigma_{ij}$, with $i=1$ for $\Delta\neq0$ and $j=1$ for spectral regularity. Three of them are non-empty; the fourth, $\Sigma_{01}$, is empty. This article defines the sectors, proves that three are non-empty and one is empty, and describes each one with its dimension and closure. The spectral criterion is *[Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html)*; the comparison is *[The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra.html)*.
 
 **Conventions.** The split complex unit is $j$, with $j^2=1$, and $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$, and $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2$. The spectrum is $\{t_+\pm i|\vec q_+|\}\cup\{t_-\pm i|\vec q_-|\}$, and a repeated root occurs exactly when $\vec q_+=0$, or $\vec q_-=0$, or $t_+=t_-$ and $|\vec q_+|=|\vec q_-|$. The algebra is *[Split-Biquaternion Algebra](split-biquaternion-algebra.html)*; the norm and zero divisors are *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)* and *[Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html)*.
 
@@ -42,7 +42,7 @@ $$
 **Theorem (partition).** The algebra is the disjoint union
 
 $$
-\mathbb{H}_{\mathbb{D}}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{01}\sqcup\Sigma_{00}.
+\mathbb{B}^{\mathrm{spl}}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{01}\sqcup\Sigma_{00}.
 $$
 
 *Proof.* Each element has exactly one truth value for $\Delta\neq0$ and exactly one for "spectrally regular", hence lies in exactly one of the four combinations.
@@ -62,7 +62,7 @@ For $\Sigma_{01}$, suppose $\Delta=0$. By the zero criterion, $Q_+=0$ or $Q_-=0$
 **Corollary (three sectors).** The algebra is the disjoint union of the three non-empty sectors
 
 $$
-\mathbb{H}_{\mathbb{D}}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{00}.
+\mathbb{B}^{\mathrm{spl}}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{00}.
 $$
 
 The fourth cell is empty, so the partition has three members.
@@ -71,7 +71,7 @@ The fourth cell is empty, so the partition has three members.
 
 **Description.** $\Sigma_{11}$ consists of the units whose two halves are both non-scalar and whose half-spectra are disjoint. It is the complement of the set where one half is scalar or the two spectra meet.
 
-**Theorem (dimension and topology).** $\Sigma_{11}$ is open and dense in $\mathbb{H}_{\mathbb{D}}\cong\mathbb{R}^8$, has real dimension $8$, and its complement $S$ is closed of real dimension $6$. Hence $\Sigma_{11}$ has full measure and is the generic sector.
+**Theorem (dimension and topology).** $\Sigma_{11}$ is open and dense in $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{R}^8$, has real dimension $8$, and its complement $S$ is closed of real dimension $6$. Hence $\Sigma_{11}$ has full measure and is the generic sector.
 
 *Proof.* Let
 
@@ -134,7 +134,7 @@ which meet only at $0$.
 
 **Theorem (dimension, closure and nilpotents).** $\Sigma_{00}$ is closed, has real dimension $4$, and is the union of two $4$-planes that meet at the origin. It contains no non-zero nilpotent. Every element of $\Sigma_{00}$ is semisimple.
 
-*Proof.* The condition $Q_+=0$ is four real linear equations, so $Z_+$ has dimension $4$; likewise $Z_-$. Their intersection is $Q_+=Q_-=0$, the origin. The set $\Sigma_{00}=Z_+\cup Z_-$ is closed, and its dimension is $4$. If $\tilde Q^2=0$, then $Q_+^2=0$ and $Q_-^2=0$; a division algebra has no non-zero nilpotent, so $Q_+=Q_-=0$ and $\tilde Q=0$. Semisimplicity is the general theorem for all elements of $\mathbb{H}_{\mathbb{D}}$.
+*Proof.* The condition $Q_+=0$ is four real linear equations, so $Z_+$ has dimension $4$; likewise $Z_-$. Their intersection is $Q_+=Q_-=0$, the origin. The set $\Sigma_{00}=Z_+\cup Z_-$ is closed, and its dimension is $4$. If $\tilde Q^2=0$, then $Q_+^2=0$ and $Q_-^2=0$; a division algebra has no non-zero nilpotent, so $Q_+=Q_-=0$ and $\tilde Q=0$. Semisimplicity is the general theorem for all elements of $\mathbb{B}^{\mathrm{spl}}$.
 
 **Proposition (spectrum).** Every element of $\Sigma_{00}$ is spectrally degenerate. If $Q_+=0$ and $Q_-\neq0$, the spectrum is $\{0\}\cup\{t_-\pm i|\vec q_-|\}$, and the value $0$ is repeated; the same holds with the halves exchanged.
 
@@ -146,7 +146,7 @@ which meet only at $0$.
 
 **Definition (defective).** An element is **defective** when it is not semisimple, equivalently when its minimal polynomial has a repeated factor.
 
-**Theorem (no defective stratum).** Every element of $\mathbb{H}_{\mathbb{D}}$ is semisimple. Hence no sector contains a defective stratum.
+**Theorem (no defective stratum).** Every element of $\mathbb{B}^{\mathrm{spl}}$ is semisimple. Hence no sector contains a defective stratum.
 
 *Proof.* Each half lies in the division algebra $\mathbb{H}$ and is semisimple. The minimal polynomial of the pair is the least common multiple of the two half-minimal-polynomials, and a least common multiple of squarefree polynomials is squarefree.
 
@@ -171,7 +171,7 @@ The dimensions are $8$, $6$ and $4$. $\Sigma_{11}$ is open and dense; $\Sigma_{1
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
+| $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ | Split-biquaternion algebra |
 | $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ | Idempotent decomposition |
 | $Q_\pm=t_\pm+\vec q_\pm$ | A half |
 | $\Delta=\lvert Q_+\rvert^2\lvert Q_-\rvert^2$ | Reduced norm |

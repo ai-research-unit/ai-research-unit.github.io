@@ -18,7 +18,9 @@ $$
 Q\mapsto i e_t\,Q\,\vec e_x,\qquad Q\mapsto i\vec e_x\,Q\,\vec e_y,\qquad Q\mapsto i\vec e_y\,Q\,\vec e_y,\qquad Q\mapsto i\vec e_z\,Q\,\vec e_y,
 $$
 
-in the order $t,x,y,z$. Two of the five — the four generators and the chirality — are single multipliers, because $e_t$ is the unit of the algebra: the timelike generator is $Q\mapsto iQ\vec e_x$, and the chirality is $Q\mapsto-iQ\vec e_z$. **Each generator carries one factor $i$, so a product of two carries $i^2=-1$ and a product of four carries $i^4=+1$**; the collapses below use this.
+in the order $t,x,y,z$, with $\nu(t)=x$ and $\nu(k)=y$ for the three spatial indices.
+
+Two of the five actions — the four generators and the chirality — are single multipliers, because $e_t$ is the unit of the algebra: the timelike generator is $Q\mapsto iQ\vec e_x$ and the chirality is $Q\mapsto-iQ\vec e_z$, while the three spatial generators act on both sides. **Each generator carries one factor $i$, so a product of two carries $i^2=-1$ and a product of four carries $i^4=+1$**; the collapses below use this.
 
 Three facts organise the article. The first is that the dagger is **even**: it preserves the parity, so the grading is a symmetry of the Hermitian structure, and the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the corpus are its fixed and anti-fixed loci. The second is that the parity is a **scalar sign**, $\alpha(x)=\varepsilon_x x$, and that it is invisible on the algebra, because every element of $\mathbb{B}$ is even. The third is that the twist is a conjugation, by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$; it sits on the element and never on the operator, so the sandwich is the only operator the physics uses.
 
@@ -73,13 +75,13 @@ so the operator scales the quaternionic norm by the factor $\lvert \langle x\ran
 
 The sign $\varepsilon_x=(-1)^{\lvert x\rvert}$ is usually introduced as the abstract grade involution, equal to $+1$ on the even slot and $-1$ on the odd slot. In the ambient algebra it is an ordinary conjugation.
 
-**Theorem (the grade involution is a conjugation).** The volume element of $\mathrm{Cl}_{1,3}$ is the product of the four generators, and read as an action on the algebra it is
+**Theorem (the grade involution is a conjugation).** The volume element $\Omega$ of $\mathrm{Cl}_{1,3}$ is the product of the four generators, and its action on the algebra is right multiplication by $-\vec e_z$:
 
 $$
-\Omega:\;Q\mapsto-Q\,\vec e_z ,
+Q\mapsto-Q\,\vec e_z .
 $$
 
-that is, right multiplication by $-\vec e_z$. Then $\Omega^2=-1$, $\Omega$ commutes with the even slot and anticommutes with every generator, and for every homogeneous $x$
+Then $\Omega^2=-1$, $\Omega$ commutes with the even slot and anticommutes with every generator, and for every homogeneous $x$
 
 $$
 \Omega\,x\,\Omega^{-1}=(-1)^{\lvert x\rvert}\,x=\alpha(x).
@@ -152,7 +154,7 @@ $$
 
 *Proof.* $\Theta_a(v)=a\,v\,a^{*}=a\,v\,(-a)=-a\,v\,a=-2b(a,v)\,a+a^{2}v=q(a)\,v-2b(a,v)\,a=q(a)\,\rho_a(v)$, using $a^{*}=-a$ on the vectors and $a^{2}=q(a)$.
 
-**Corollary (which reflection carries which sign).** On the timelike generator $q=+1$ and the sandwich is the reflection itself; on each spatial generator $q=-1$ and the sandwich is minus the reflection. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the last worked case, where two odd steps compose to a rotation.
+**Corollary (which reflection carries which sign).** On the timelike generator $q=+1$ and the sandwich is the reflection itself; on each spatial generator $q=-1$ and the sandwich is minus the reflection. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the worked case below, where two odd steps compose to a rotation.
 
 **Remark (the same statement on the algebra).** The algebra carries a Euclidean quadratic structure of its own on the three Hermitian elements $i\vec e_k$ of the informational sector, each of which squares to $+e_t$; there the vector identity reads $\Theta_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
 
@@ -192,7 +194,7 @@ Let $x=i\vec e_x$, a boost, with $\langle x\rangle_{\natural}=-1$ and $x^{*}=x$.
 
 ### Two Fermionic Steps Compose to a Bosonic One
 
-The generators of $x_x$ and $x_y$ — the actions $Q\mapsto i\vec e_xQ\vec e_y$ and $Q\mapsto i\vec e_yQ\vec e_y$ — are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, because $q=-1$ on each spatial generator; the two minus signs multiply to $+1$ in the composite. The composite of the two actions reduces by $i^2=-1$,
+The generators for the coordinates $x_x$ and $x_y$ — the actions $Q\mapsto i\vec e_xQ\vec e_y$ and $Q\mapsto i\vec e_yQ\vec e_y$ — are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, because $q=-1$ on each spatial generator; the two minus signs multiply to $+1$ in the composite. The composite of the two actions reduces by $i^2=-1$,
 
 $$
 Q\mapsto i\vec e_x\bigl(i\vec e_y\,Q\,\vec e_y\bigr)\vec e_y

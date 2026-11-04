@@ -2,55 +2,55 @@
 
 ## Introduction
 
-This article studies the ideals and the Peirce decomposition of the split-complex algebra $\mathbb{D}$. It follows *Square Roots of One and the Idempotents of the Split-Complex Algebra*, which supplied the two idempotents, and *Zero Divisors of the Split-Complex Algebra*, which supplied the two null lines; the ideals are the two lines, and the Peirce decomposition is the projection onto them.
+This article studies the ideals and the Peirce decomposition of the split-complex algebra $\mathbb{C}^{\mathrm{spl}}$. It follows *Square Roots of One and the Idempotents of the Split-Complex Algebra*, which supplied the two idempotents, and *Zero Divisors of the Split-Complex Algebra*, which supplied the two null lines; the ideals are the two lines, and the Peirce decomposition is the projection onto them.
 
-The algebra is commutative and two-dimensional, and the ideal theory is the simplest nontrivial one of the family: there are exactly four ideals, $0$, the two minimal ideals $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and $\mathbb{D}$; the lattice is the four-element Boolean lattice; the algebra is Artinian, semisimple, reduced and of module length two; and it is **not simple**, because the two minimal ideals are proper. The Peirce decomposition with respect to the standard idempotent $\Pi_{+}$ collapses to the direct sum of the two minimal ideals, the two off-diagonal components vanishing because the idempotents are central and orthogonal.
+The algebra is commutative and two-dimensional, and the ideal theory is the simplest nontrivial one of the family: there are exactly four ideals, $0$, the two minimal ideals $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and $\mathbb{C}^{\mathrm{spl}}$; the lattice is the four-element Boolean lattice; the algebra is Artinian, semisimple, reduced and of module length two; and it is **not simple**, because the two minimal ideals are proper. The Peirce decomposition with respect to the standard idempotent $\Pi_{+}$ collapses to the direct sum of the two minimal ideals, the two off-diagonal components vanishing because the idempotents are central and orthogonal.
 
-**The results.** The ideals of $\mathbb{D}$ are exactly
-
-$$
-0,\qquad \mathbb{R}\Pi_{+},\qquad \mathbb{R}\Pi_{-},\qquad \mathbb{D},
-$$
-
-the two middle ones being minimal, maximal and isomorphic to $\mathbb{R}$. The algebra is the direct product $\mathbb{D}\cong\mathbb{R}\Pi_{+}\times\mathbb{R}\Pi_{-}\cong\mathbb{R}\times\mathbb{R}$, hence semisimple and not simple; it is Artinian and Noetherian, of length two, with zero Jacobson radical, zero nilradical and zero prime radical. For an idempotent $\Pi$ with complement $\Pi'=1-\Pi$ the Peirce decomposition is
+**The results.** The ideals of $\mathbb{C}^{\mathrm{spl}}$ are exactly
 
 $$
-\mathbb{D}=\mathbb{D}_{++}\oplus\mathbb{D}_{+-}\oplus\mathbb{D}_{-+}\oplus\mathbb{D}_{--},\qquad
-\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau,
+0,\qquad \mathbb{R}\Pi_{+},\qquad \mathbb{R}\Pi_{-},\qquad \mathbb{C}^{\mathrm{spl}},
 $$
 
-with $\Pi_+=\Pi$ and $\Pi_-=\Pi'$; the multiplication table is $\mathbb{D}_{\sigma\tau}\mathbb{D}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}$. For $\Pi=\Pi_{+}$ the two off-diagonal components vanish and the decomposition is $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$; the two idempotents are the diagonal matrix units of the decomposition, and the conjugation swaps the two components. The lattice of ideals is Boolean, and the radical is zero.
+the two middle ones being minimal, maximal and isomorphic to $\mathbb{R}$. The algebra is the direct product $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\Pi_{+}\times\mathbb{R}\Pi_{-}\cong\mathbb{R}\times\mathbb{R}$, hence semisimple and not simple; it is Artinian and Noetherian, of length two, with zero Jacobson radical, zero nilradical and zero prime radical. For an idempotent $\Pi$ with complement $\Pi'=1-\Pi$ the Peirce decomposition is
+
+$$
+\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}_{++}\oplus\mathbb{C}^{\mathrm{spl}}_{+-}\oplus\mathbb{C}^{\mathrm{spl}}_{-+}\oplus\mathbb{C}^{\mathrm{spl}}_{--},\qquad
+\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}=\Pi_\sigma\mathbb{C}^{\mathrm{spl}}\Pi_\tau,
+$$
+
+with $\Pi_+=\Pi$ and $\Pi_-=\Pi'$; the multiplication table is $\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}\mathbb{C}^{\mathrm{spl}}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{C}^{\mathrm{spl}}_{\sigma\nu}$. For $\Pi=\Pi_{+}$ the two off-diagonal components vanish and the decomposition is $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$; the two idempotents are the diagonal matrix units of the decomposition, and the conjugation swaps the two components. The lattice of ideals is Boolean, and the radical is zero.
 
 | Question | Answer |
 |---|---|
-| Two-sided ideals | $0,\mathbb{R}\Pi_+,\mathbb{R}\Pi_-,\mathbb{D}$ |
+| Two-sided ideals | $0,\mathbb{R}\Pi_+,\mathbb{R}\Pi_-,\mathbb{C}^{\mathrm{spl}}$ |
 | Minimal and maximal ideals | $\mathbb{R}\Pi_+,\mathbb{R}\Pi_-$ |
 | Simple? | no |
-| Semisimple? | yes, $J(\mathbb{D})=0$ |
+| Semisimple? | yes, $J(\mathbb{C}^{\mathrm{spl}})=0$ |
 | Module length | $2$ |
 | Idempotents | $0,1,\Pi_+,\Pi_-$ |
-| Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ |
+| Peirce decomposition | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ |
 | Ideal lattice | the four-element Boolean lattice |
 
 **Boundaries.** The algebra is *Split-Complex Algebra*; the idempotents and the halving map are *Square Roots of One and the Idempotents of the Split-Complex Algebra*; the zero divisors are *Zero Divisors of the Split-Complex Algebra*; the annihilators are *Annihilators of the Split-Complex Algebra*; the norm, the criterion of invertibility and the group of units are *Norm and Invertibility in the General Split-Complex Algebra*; and the general theory of the Peirce decomposition, with the orthogonal, complete and primitive families, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Hermitian Idempotent and the Peirce Decomposition*.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=+1$, with basis $1,j$, general element $Q=q+jq'$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ with $Q_{\pm}=q\pm q'$. The base is the field $\mathbb{R}$; the algebra is commutative, so no distinction between left, right and two-sided ideals arises for the ambient ring. The **standard pair** is $\Pi_+,\Pi_-$, with $\Pi_-=1-\Pi_+$.
+**Conventions.** The algebra is $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, with basis $1,j$, general element $Q=q+jq'$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ with $Q_{\pm}=q\pm q'$. The base is the field $\mathbb{R}$; the algebra is commutative, so no distinction between left, right and two-sided ideals arises for the ambient ring. The **standard pair** is $\Pi_+,\Pi_-$, with $\Pi_-=1-\Pi_+$.
 
 ## Ideals in an Algebra
 
-**An ideal of the commutative algebra is an additive subgroup closed under multiplication by every element; the left, the right and the two-sided notions coincide, and the ideals of $\mathbb{D}$ are the additive subgroups stable under the two coordinate projections.**
+**An ideal of the commutative algebra is an additive subgroup closed under multiplication by every element; the left, the right and the two-sided notions coincide, and the ideals of $\mathbb{C}^{\mathrm{spl}}$ are the additive subgroups stable under the two coordinate projections.**
 
-**Definition.** A subset $I\subseteq\mathbb{D}$ is an **ideal** when
+**Definition.** A subset $I\subseteq\mathbb{C}^{\mathrm{spl}}$ is an **ideal** when
 
 $$
 I\text{ is an additive subgroup},\qquad B\in I\Longrightarrow QB\in I\text{ and }BQ\in I.
 $$
 
-Since $\mathbb{D}$ is commutative, the two closure conditions coincide, and every ideal is two-sided; there is no separate theory of left and right ideals. The ideals $0$ and $\mathbb{D}$ are the **trivial** ideals; an ideal is **proper** when it is neither, **maximal** when it is proper and contained in no larger proper ideal, and **minimal** when it is nonzero and contains no smaller nonzero ideal.
+Since $\mathbb{C}^{\mathrm{spl}}$ is commutative, the two closure conditions coincide, and every ideal is two-sided; there is no separate theory of left and right ideals. The ideals $0$ and $\mathbb{C}^{\mathrm{spl}}$ are the **trivial** ideals; an ideal is **proper** when it is neither, **maximal** when it is proper and contained in no larger proper ideal, and **minimal** when it is nonzero and contains no smaller nonzero ideal.
 
-A **principal** ideal is one generated by a single element, written $(Q)=Q\mathbb{D}=\mathbb{D}Q$. The lattice of all ideals, ordered by inclusion, is $\mathrm{Id}(\mathbb{D})$, with meet $I\cap J$ and join $I+J$.
+A **principal** ideal is one generated by a single element, written $(Q)=Q\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}Q$. The lattice of all ideals, ordered by inclusion, is $\mathrm{Id}(\mathbb{C}^{\mathrm{spl}})$, with meet $I\cap J$ and join $I+J$.
 
-**Proposition (the coordinate reading).** An additive subgroup $I\subseteq\mathbb{D}$ is an ideal exactly when it is stable under multiplication by $\Pi_{+}$ and by $\Pi_{-}$.
+**Proposition (the coordinate reading).** An additive subgroup $I\subseteq\mathbb{C}^{\mathrm{spl}}$ is an ideal exactly when it is stable under multiplication by $\Pi_{+}$ and by $\Pi_{-}$.
 
 **Proof.** If $I$ is an ideal, it is stable under multiplication by every element, in particular by the two idempotents. Conversely, if $I$ is stable under $\Pi_{\pm}$ and $B\in I$, then
 
@@ -64,40 +64,40 @@ So an ideal is a subgroup that is a union of coordinate lines: it is determined 
 
 ## The Two-Sided Ideals
 
-**The ideals of $\mathbb{D}$ are exactly $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$ and $\mathbb{D}$; the two middle ones are minimal, maximal and isomorphic to $\mathbb{R}$, and the algebra is not simple.**
+**The ideals of $\mathbb{C}^{\mathrm{spl}}$ are exactly $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$ and $\mathbb{C}^{\mathrm{spl}}$; the two middle ones are minimal, maximal and isomorphic to $\mathbb{R}$, and the algebra is not simple.**
 
-**Theorem (the ideals).** The ideals of $\mathbb{D}$ are exactly
+**Theorem (the ideals).** The ideals of $\mathbb{C}^{\mathrm{spl}}$ are exactly
 
 $$
-\boxed{\;0,\qquad \mathbb{R}\Pi_{+}=\mathbb{D}\Pi_{+},\qquad \mathbb{R}\Pi_{-}=\mathbb{D}\Pi_{-},\qquad \mathbb{D}\;}.
+\boxed{\;0,\qquad \mathbb{R}\Pi_{+}=\mathbb{C}^{\mathrm{spl}}\Pi_{+},\qquad \mathbb{R}\Pi_{-}=\mathbb{C}^{\mathrm{spl}}\Pi_{-},\qquad \mathbb{C}^{\mathrm{spl}}\;}.
 $$
 
 | Ideal | Generator | Dimension over $\mathbb{R}$ | Minimal | Maximal | Quotient |
 |---|---|---|---|---|---|
-| $0$ | none | $0$ | no | no | $\mathbb{D}$ |
+| $0$ | none | $0$ | no | no | $\mathbb{C}^{\mathrm{spl}}$ |
 | $\mathbb{R}\Pi_{+}$ | $\Pi_{+}$ | $1$ | yes | yes | $\mathbb{R}\Pi_{-}\cong\mathbb{R}$ |
 | $\mathbb{R}\Pi_{-}$ | $\Pi_{-}$ | $1$ | yes | yes | $\mathbb{R}\Pi_{+}\cong\mathbb{R}$ |
-| $\mathbb{D}$ | $1$ | $2$ | no | no | $0$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | $1$ | $2$ | no | no | $0$ |
 
-**Proof.** Each of the three nontrivial sets is an ideal: $\mathbb{R}\Pi_{+}$ is closed under addition, and $Q(\lambda\Pi_{+})=\lambda Q\Pi_{+}=\lambda Q_{+}\Pi_{+}\in\mathbb{R}\Pi_{+}$ for every $Q$; the same argument gives $\mathbb{R}\Pi_{-}$; and $\mathbb{D}$ is trivially an ideal.
+**Proof.** Each of the three nontrivial sets is an ideal: $\mathbb{R}\Pi_{+}$ is closed under addition, and $Q(\lambda\Pi_{+})=\lambda Q\Pi_{+}=\lambda Q_{+}\Pi_{+}\in\mathbb{R}\Pi_{+}$ for every $Q$; the same argument gives $\mathbb{R}\Pi_{-}$; and $\mathbb{C}^{\mathrm{spl}}$ is trivially an ideal.
 
-Conversely, let $I\neq0$ be an ideal and choose $Q\in I$ nonzero. If both idempotent coordinates of $Q$ are nonzero, then $Q$ is a unit by *Norm and Invertibility in the General Split-Complex Algebra*, so $1=Q^{-1}Q\in I$ and $I=\mathbb{D}$. Otherwise one coordinate of $Q$ vanishes, and $Q$ is a nonzero multiple of $\Pi_{+}$ or of $\Pi_{-}$ by the idempotent classification; say $Q=\lambda\Pi_{+}$ with $\lambda\neq0$, so that $\Pi_{+}=\lambda^{-1}Q\in I$. Now take any $B\in I$. If there is such a $B$ with $B_{-}\neq0$, then $B\Pi_{-}=B_{-}\Pi_{-}\in I$, so $\Pi_{-}=B_{-}^{-1}B\Pi_{-}\in I$, and then $1=\Pi_{+}+\Pi_{-}\in I$, giving $I=\mathbb{D}$. If on the other hand every $B\in I$ has $B_{-}=0$, then $I\subseteq\mathbb{R}\Pi_{+}$; since $I\neq0$ and $\Pi_{+}\in I$, we get $I=\mathbb{R}\Pi_{+}$. The case $Q=\lambda\Pi_{-}$ is the same with the roles of $+$ and $-$ exchanged and gives $I=\mathbb{R}\Pi_{-}$ or $I=\mathbb{D}$. So the list is complete.
+Conversely, let $I\neq0$ be an ideal and choose $Q\in I$ nonzero. If both idempotent coordinates of $Q$ are nonzero, then $Q$ is a unit by *Norm and Invertibility in the General Split-Complex Algebra*, so $1=Q^{-1}Q\in I$ and $I=\mathbb{C}^{\mathrm{spl}}$. Otherwise one coordinate of $Q$ vanishes, and $Q$ is a nonzero multiple of $\Pi_{+}$ or of $\Pi_{-}$ by the idempotent classification; say $Q=\lambda\Pi_{+}$ with $\lambda\neq0$, so that $\Pi_{+}=\lambda^{-1}Q\in I$. Now take any $B\in I$. If there is such a $B$ with $B_{-}\neq0$, then $B\Pi_{-}=B_{-}\Pi_{-}\in I$, so $\Pi_{-}=B_{-}^{-1}B\Pi_{-}\in I$, and then $1=\Pi_{+}+\Pi_{-}\in I$, giving $I=\mathbb{C}^{\mathrm{spl}}$. If on the other hand every $B\in I$ has $B_{-}=0$, then $I\subseteq\mathbb{R}\Pi_{+}$; since $I\neq0$ and $\Pi_{+}\in I$, we get $I=\mathbb{R}\Pi_{+}$. The case $Q=\lambda\Pi_{-}$ is the same with the roles of $+$ and $-$ exchanged and gives $I=\mathbb{R}\Pi_{-}$ or $I=\mathbb{C}^{\mathrm{spl}}$. So the list is complete.
 
-**Corollary (failure of simplicity).** $\mathbb{D}$ is **not simple**: it has exactly two nontrivial proper ideals, both minimal and both maximal. The algebra is the direct product of the two fields
+**Corollary (failure of simplicity).** $\mathbb{C}^{\mathrm{spl}}$ is **not simple**: it has exactly two nontrivial proper ideals, both minimal and both maximal. The algebra is the direct product of the two fields
 
 $$
-\boxed{\;\mathbb{D}\cong\mathbb{R}\Pi_{+}\times\mathbb{R}\Pi_{-},\qquad \mathbb{R}\Pi_{+}\cong\mathbb{R},\quad \mathbb{R}\Pi_{-}\cong\mathbb{R}\;},
+\boxed{\;\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\Pi_{+}\times\mathbb{R}\Pi_{-},\qquad \mathbb{R}\Pi_{+}\cong\mathbb{R},\quad \mathbb{R}\Pi_{-}\cong\mathbb{R}\;},
 $$
 
 and each of the two ideals is a field in its own right.
 
 **The reason.** The algebra is commutative and generated by an element $j$ satisfying the reducible polynomial $x^{2}-1=(x-1)(x+1)$; the generator therefore has two distinct eigenvalues $+1$ and $-1$ already in the base field, and the algebra splits as the product of the corresponding eigencomponents. The split-complex algebra is the commutative, reducible, low-dimensional member of the family.
 
-**Corollary (maximal ideals).** The maximal ideals of $\mathbb{D}$ are exactly $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and
+**Corollary (maximal ideals).** The maximal ideals of $\mathbb{C}^{\mathrm{spl}}$ are exactly $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and
 
 $$
-\mathbb{D}/\mathbb{R}\Pi_{+}\cong\mathbb{R}\Pi_{-}\cong\mathbb{R},\qquad
-\mathbb{D}/\mathbb{R}\Pi_{-}\cong\mathbb{R}\Pi_{+}\cong\mathbb{R}.
+\mathbb{C}^{\mathrm{spl}}/\mathbb{R}\Pi_{+}\cong\mathbb{R}\Pi_{-}\cong\mathbb{R},\qquad
+\mathbb{C}^{\mathrm{spl}}/\mathbb{R}\Pi_{-}\cong\mathbb{R}\Pi_{+}\cong\mathbb{R}.
 $$
 
 **Proof.** A maximal ideal is a proper ideal not contained in a larger proper ideal; the only proper nonzero ideals are the two lines, and neither contains the other. The quotient by one line is the other, by the direct-product decomposition.
@@ -110,42 +110,42 @@ $$
 |---|---|
 | Artinian | yes, the dimension is finite |
 | Noetherian | yes, the dimension is finite |
-| Semisimple | yes, $J(\mathbb{D})=0$ |
+| Semisimple | yes, $J(\mathbb{C}^{\mathrm{spl}})=0$ |
 | Simple | no |
 | Length as a module over itself | $2$ |
 | Simple modules | two, $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$ |
 | Radical | $0$ |
 | Reduced | yes, no nonzero nilpotent |
 
-Since $\mathbb{D}$ is finite-dimensional over the field $\mathbb{R}$, it is **Artinian** as a ring: every descending chain of ideals stabilises. It is also **Noetherian** for the same reason.
+Since $\mathbb{C}^{\mathrm{spl}}$ is finite-dimensional over the field $\mathbb{R}$, it is **Artinian** as a ring: every descending chain of ideals stabilises. It is also **Noetherian** for the same reason.
 
-**Proposition (semisimplicity).** $\mathbb{D}$ is **semisimple** in the sense of having zero Jacobson radical, and it is the product of the two simple algebras $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$.
+**Proposition (semisimplicity).** $\mathbb{C}^{\mathrm{spl}}$ is **semisimple** in the sense of having zero Jacobson radical, and it is the product of the two simple algebras $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$.
 
-**Proof.** The Jacobson radical of a product of fields is zero, since a field has no nonzero nilpotent elements and its only maximal ideal is $0$; and $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ via the idempotent decomposition.
+**Proof.** The Jacobson radical of a product of fields is zero, since a field has no nonzero nilpotent elements and its only maximal ideal is $0$; and $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ via the idempotent decomposition.
 
-**Proposition (length).** As a module over itself, $\mathbb{D}$ has **length two**, with composition series
+**Proposition (length).** As a module over itself, $\mathbb{C}^{\mathrm{spl}}$ has **length two**, with composition series
 
 $$
-0\subset\mathbb{R}\Pi_{+}\subset\mathbb{D},\qquad
+0\subset\mathbb{R}\Pi_{+}\subset\mathbb{C}^{\mathrm{spl}},\qquad
 \mathbb{R}\Pi_{+}\cong\mathbb{R},\qquad
-\mathbb{D}/\mathbb{R}\Pi_{+}\cong\mathbb{R}\Pi_{-}\cong\mathbb{R}.
+\mathbb{C}^{\mathrm{spl}}/\mathbb{R}\Pi_{+}\cong\mathbb{R}\Pi_{-}\cong\mathbb{R}.
 $$
 
-**Proof.** The inclusion is proper at each step, $\mathbb{R}\Pi_{+}$ is simple as a module because it is a field summand, and the quotient $\mathbb{D}/\mathbb{R}\Pi_{+}$ is isomorphic to $\mathbb{R}\Pi_{-}$ through $Q\mapsto Q\Pi_{-}$, again simple. No shorter or longer chain is possible because the dimension is $2$ and every nonzero proper ideal is one-dimensional.
+**Proof.** The inclusion is proper at each step, $\mathbb{R}\Pi_{+}$ is simple as a module because it is a field summand, and the quotient $\mathbb{C}^{\mathrm{spl}}/\mathbb{R}\Pi_{+}$ is isomorphic to $\mathbb{R}\Pi_{-}$ through $Q\mapsto Q\Pi_{-}$, again simple. No shorter or longer chain is possible because the dimension is $2$ and every nonzero proper ideal is one-dimensional.
 
-**Proposition (the simple modules).** Up to isomorphism there are exactly two simple modules over $\mathbb{D}$, the two lines $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and every module is a direct sum of copies of them.
+**Proposition (the simple modules).** Up to isomorphism there are exactly two simple modules over $\mathbb{C}^{\mathrm{spl}}$, the two lines $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and every module is a direct sum of copies of them.
 
 **Proof.** A simple module is a quotient of the regular module by a maximal left ideal; the maximal ideals are the two lines, and the quotients are the other line. The algebra is semisimple, so every module is a direct sum of simples.
 
 ## Idempotents and Orthogonal Idempotents
 
-**The idempotents of $\mathbb{D}$ are $0,1,\Pi_{+},\Pi_{-}$; the standard pair is orthogonal, complete, central and primitive, and it is the pair that carries the Peirce decomposition.**
+**The idempotents of $\mathbb{C}^{\mathrm{spl}}$ are $0,1,\Pi_{+},\Pi_{-}$; the standard pair is orthogonal, complete, central and primitive, and it is the pair that carries the Peirce decomposition.**
 
-**Definition.** An element $e\in\mathbb{D}$ is an **idempotent** when $e^{2}=e$. Two idempotents $e,f$ are **orthogonal** when $ef=fe=0$; a family is **pairwise orthogonal** when its members are pairwise orthogonal and **complete** when in addition their sum is $1$; a nonzero idempotent is **primitive** when it is not the sum of two nonzero orthogonal idempotents.
+**Definition.** An element $e\in\mathbb{C}^{\mathrm{spl}}$ is an **idempotent** when $e^{2}=e$. Two idempotents $e,f$ are **orthogonal** when $ef=fe=0$; a family is **pairwise orthogonal** when its members are pairwise orthogonal and **complete** when in addition their sum is $1$; a nonzero idempotent is **primitive** when it is not the sum of two nonzero orthogonal idempotents.
 
-**Proposition (the four idempotents).** The idempotents of $\mathbb{D}$ are exactly $0,1,\Pi_{+},\Pi_{-}$; the nontrivial pair $\Pi_{+},\Pi_{-}$ is orthogonal and complete, and each member is primitive and central.
+**Proposition (the four idempotents).** The idempotents of $\mathbb{C}^{\mathrm{spl}}$ are exactly $0,1,\Pi_{+},\Pi_{-}$; the nontrivial pair $\Pi_{+},\Pi_{-}$ is orthogonal and complete, and each member is primitive and central.
 
-**Proof.** The classification is *Square Roots of One and the Idempotents of the Split-Complex Algebra*, §*The Classification of the Idempotents*. The identities $\Pi_{+}^{2}=\Pi_{+}$, $\Pi_{-}^{2}=\Pi_{-}$, $\Pi_{+}\Pi_{-}=0$ and $\Pi_{+}+\Pi_{-}=1$ are direct computations. Centrality is commutativity. Primitivity follows from $\Pi_{+}\mathbb{D}\Pi_{+}=\mathbb{R}\Pi_{+}\cong\mathbb{R}$, a field, and the same for $\Pi_{-}$.
+**Proof.** The classification is *Square Roots of One and the Idempotents of the Split-Complex Algebra*, §*The Classification of the Idempotents*. The identities $\Pi_{+}^{2}=\Pi_{+}$, $\Pi_{-}^{2}=\Pi_{-}$, $\Pi_{+}\Pi_{-}=0$ and $\Pi_{+}+\Pi_{-}=1$ are direct computations. Centrality is commutativity. Primitivity follows from $\Pi_{+}\mathbb{C}^{\mathrm{spl}}\Pi_{+}=\mathbb{R}\Pi_{+}\cong\mathbb{R}$, a field, and the same for $\Pi_{-}$.
 
 | Idempotent | Form | Complement | Central | Primitive | Matrix model |
 |---|---|---|---|---|---|
@@ -167,15 +167,15 @@ $$
 \Pi_{+}^{2}=\Pi_{+},\quad \Pi_{-}^{2}=\Pi_{-},\quad \Pi_{+}\Pi_{-}=\Pi_{-}\Pi_{+}=0,\quad \Pi_{+}+\Pi_{-}=I.
 $$
 
-Because $\mathbb{D}$ is commutative, the two off-diagonal units $E_{12}$ and $E_{21}$ are absent, and the algebra is not a full matrix algebra.
+Because $\mathbb{C}^{\mathrm{spl}}$ is commutative, the two off-diagonal units $E_{12}$ and $E_{21}$ are absent, and the algebra is not a full matrix algebra.
 
 ## The Peirce Decomposition
 
-**For an idempotent $\Pi$ with complement $\Pi'=1-\Pi$ the Peirce spaces $\Pi\mathbb{D}\Pi$, $\Pi\mathbb{D}\Pi'$, $\Pi'\mathbb{D}\Pi$ and $\Pi'\mathbb{D}\Pi'$ are defined and multiply by the matrix-unit rule; in the commutative algebra $\mathbb{D}$ the two off-diagonal spaces coincide as sets and vanish for every idempotent, so the decomposition is the direct sum of the two diagonal ideals.**
+**For an idempotent $\Pi$ with complement $\Pi'=1-\Pi$ the Peirce spaces $\Pi\mathbb{C}^{\mathrm{spl}}\Pi$, $\Pi\mathbb{C}^{\mathrm{spl}}\Pi'$, $\Pi'\mathbb{C}^{\mathrm{spl}}\Pi$ and $\Pi'\mathbb{C}^{\mathrm{spl}}\Pi'$ are defined and multiply by the matrix-unit rule; in the commutative algebra $\mathbb{C}^{\mathrm{spl}}$ the two off-diagonal spaces coincide as sets and vanish for every idempotent, so the decomposition is the direct sum of the two diagonal ideals.**
 
 ### One Idempotent
 
-Let $\Pi$ be an idempotent of $\mathbb{D}$ and write $\Pi'=1-\Pi$ for its complement. The sign $+$ names $\Pi$ and the sign $-$ names $\Pi'$. Every element expands as
+Let $\Pi$ be an idempotent of $\mathbb{C}^{\mathrm{spl}}$ and write $\Pi'=1-\Pi$ for its complement. The sign $+$ names $\Pi$ and the sign $-$ names $\Pi'$. Every element expands as
 
 $$
 Q=\Pi Q\Pi+\Pi Q\Pi'+\Pi'Q\Pi+\Pi'Q\Pi',
@@ -184,34 +184,34 @@ $$
 so the algebra splits into the four **Peirce spaces**
 
 $$
-\mathbb{D}=\mathbb{D}_{++}\oplus\mathbb{D}_{+-}\oplus\mathbb{D}_{-+}\oplus\mathbb{D}_{--},
+\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}_{++}\oplus\mathbb{C}^{\mathrm{spl}}_{+-}\oplus\mathbb{C}^{\mathrm{spl}}_{-+}\oplus\mathbb{C}^{\mathrm{spl}}_{--},
 \qquad
-\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau,
+\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}=\Pi_\sigma\mathbb{C}^{\mathrm{spl}}\Pi_\tau,
 $$
 
-with $\Pi_+=\Pi$ and $\Pi_-=\Pi'$. This is the **Peirce decomposition** of $\mathbb{D}$ with respect to $\Pi$. It refines the two-term decomposition $\mathbb{D}=\mathbb{D}\Pi\oplus\mathbb{D}\Pi'$: the summand $\mathbb{D}\Pi$ is $\mathbb{D}_{++}\oplus\mathbb{D}_{-+}$ and the summand $\mathbb{D}\Pi'$ is $\mathbb{D}_{+-}\oplus\mathbb{D}_{--}$.
+with $\Pi_+=\Pi$ and $\Pi_-=\Pi'$. This is the **Peirce decomposition** of $\mathbb{C}^{\mathrm{spl}}$ with respect to $\Pi$. It refines the two-term decomposition $\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\Pi\oplus\mathbb{C}^{\mathrm{spl}}\Pi'$: the summand $\mathbb{C}^{\mathrm{spl}}\Pi$ is $\mathbb{C}^{\mathrm{spl}}_{++}\oplus\mathbb{C}^{\mathrm{spl}}_{-+}$ and the summand $\mathbb{C}^{\mathrm{spl}}\Pi'$ is $\mathbb{C}^{\mathrm{spl}}_{+-}\oplus\mathbb{C}^{\mathrm{spl}}_{--}$.
 
 **Proposition (the Peirce multiplication).** For $\sigma,\tau,\mu,\nu\in\{+,-\}$,
 
 $$
-\boxed{\;\mathbb{D}_{\sigma\tau}\mathbb{D}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}\;}.
+\boxed{\;\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}\mathbb{C}^{\mathrm{spl}}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{C}^{\mathrm{spl}}_{\sigma\nu}\;}.
 $$
 
-**Proof.** An element of $\mathbb{D}_{\sigma\tau}$ is $\Pi_\sigma Q\Pi_\tau$ and an element of $\mathbb{D}_{\mu\nu}$ is $\Pi_\mu B\Pi_\nu$. The product is $\Pi_\sigma Q\Pi_\tau\Pi_\mu B\Pi_\nu$; the middle factor is $\Pi_\tau\Pi_\mu=\delta_{\tau\mu}\Pi_\tau$, because the two idempotents are orthogonal and complete. The result is $\delta_{\tau\mu}\Pi_\sigma(Q\Pi_\tau B)\Pi_\nu\in\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}$.
+**Proof.** An element of $\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}$ is $\Pi_\sigma Q\Pi_\tau$ and an element of $\mathbb{C}^{\mathrm{spl}}_{\mu\nu}$ is $\Pi_\mu B\Pi_\nu$. The product is $\Pi_\sigma Q\Pi_\tau\Pi_\mu B\Pi_\nu$; the middle factor is $\Pi_\tau\Pi_\mu=\delta_{\tau\mu}\Pi_\tau$, because the two idempotents are orthogonal and complete. The result is $\delta_{\tau\mu}\Pi_\sigma(Q\Pi_\tau B)\Pi_\nu\in\delta_{\tau\mu}\mathbb{C}^{\mathrm{spl}}_{\sigma\nu}$.
 
-**Corollary (the two-term decomposition).** The subspaces $\mathbb{D}\Pi=\mathbb{D}_{++}\oplus\mathbb{D}_{-+}$ and $\mathbb{D}\Pi'=\mathbb{D}_{+-}\oplus\mathbb{D}_{--}$ are ideals, and $\mathbb{D}=\mathbb{D}\Pi\oplus\mathbb{D}\Pi'$ is a direct product decomposition; in the commutative algebra $\mathbb{D}$ every idempotent is central, so the two ideals are two-sided.
+**Corollary (the two-term decomposition).** The subspaces $\mathbb{C}^{\mathrm{spl}}\Pi=\mathbb{C}^{\mathrm{spl}}_{++}\oplus\mathbb{C}^{\mathrm{spl}}_{-+}$ and $\mathbb{C}^{\mathrm{spl}}\Pi'=\mathbb{C}^{\mathrm{spl}}_{+-}\oplus\mathbb{C}^{\mathrm{spl}}_{--}$ are ideals, and $\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\Pi\oplus\mathbb{C}^{\mathrm{spl}}\Pi'$ is a direct product decomposition; in the commutative algebra $\mathbb{C}^{\mathrm{spl}}$ every idempotent is central, so the two ideals are two-sided.
 
 ### A Complete Orthogonal Family
 
 For a finite complete orthogonal family $\Pi_1,\dots,\Pi_n$ of central idempotents, the same construction gives
 
 $$
-\mathbb{D}=\bigoplus_{i,j=1}^{n}\Pi_i\mathbb{D}\Pi_j,
+\mathbb{C}^{\mathrm{spl}}=\bigoplus_{i,j=1}^{n}\Pi_i\mathbb{C}^{\mathrm{spl}}\Pi_j,
 \qquad
-(\Pi_i\mathbb{D}\Pi_j)(\Pi_k\mathbb{D}\Pi_l)\subseteq\delta_{jk}\,\Pi_i\mathbb{D}\Pi_l,
+(\Pi_i\mathbb{C}^{\mathrm{spl}}\Pi_j)(\Pi_k\mathbb{C}^{\mathrm{spl}}\Pi_l)\subseteq\delta_{jk}\,\Pi_i\mathbb{C}^{\mathrm{spl}}\Pi_l,
 $$
 
-and the off-diagonal components vanish, because $\Pi_i\Pi_j=0$ for $i\neq j$. The algebra is then the direct sum of the $n$ ideals $\Pi_i\mathbb{D}\Pi_i$, and the Peirce decomposition is the direct product decomposition. In $\mathbb{D}$ the only nontrivial complete orthogonal family is $\{\Pi_{+},\Pi_{-}\}$, with $n=2$.
+and the off-diagonal components vanish, because $\Pi_i\Pi_j=0$ for $i\neq j$. The algebra is then the direct sum of the $n$ ideals $\Pi_i\mathbb{C}^{\mathrm{spl}}\Pi_i$, and the Peirce decomposition is the direct product decomposition. In $\mathbb{C}^{\mathrm{spl}}$ the only nontrivial complete orthogonal family is $\{\Pi_{+},\Pi_{-}\}$, with $n=2$.
 
 ### The Split-Complex Case
 
@@ -220,26 +220,26 @@ and the off-diagonal components vanish, because $\Pi_i\Pi_j=0$ for $i\neq j$. Th
 Take $\Pi=\Pi_+$ and $\Pi'=\Pi_-$, the standard pair. Then
 
 $$
-\Pi_+\mathbb{D}\Pi_+=\mathbb{R}\Pi_+,\qquad
-\Pi_-\mathbb{D}\Pi_-=\mathbb{R}\Pi_-,\qquad
-\Pi_+\mathbb{D}\Pi_-=0,\qquad
-\Pi_-\mathbb{D}\Pi_+=0.
+\Pi_+\mathbb{C}^{\mathrm{spl}}\Pi_+=\mathbb{R}\Pi_+,\qquad
+\Pi_-\mathbb{C}^{\mathrm{spl}}\Pi_-=\mathbb{R}\Pi_-,\qquad
+\Pi_+\mathbb{C}^{\mathrm{spl}}\Pi_-=0,\qquad
+\Pi_-\mathbb{C}^{\mathrm{spl}}\Pi_+=0.
 $$
 
 The two **off-diagonal** Peirce spaces vanish, because $\Pi_+\Pi_-=0$ annihilates every product alternating between the two idempotents, and the decomposition collapses to
 
 $$
-\mathbb{D}=\mathbb{D}_{++}\oplus\mathbb{D}_{--}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-,
+\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}_{++}\oplus\mathbb{C}^{\mathrm{spl}}_{--}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-,
 $$
 
 of total dimension $1+1+0+0=2$. The four spaces are collected in the table.
 
 | Corner | Definition | Basis | Dimension over $\mathbb{R}$ | Matrix unit |
 |---|---|---|---|---|
-| $\mathbb{D}_{++}$ | $\Pi_+\mathbb{D}\Pi_+$ | $\Pi_+$ | $1$ | $E_{11}$ |
-| $\mathbb{D}_{+-}$ | $\Pi_+\mathbb{D}\Pi_-$ | none | $0$ | $0$ |
-| $\mathbb{D}_{-+}$ | $\Pi_-\mathbb{D}\Pi_+$ | none | $0$ | $0$ |
-| $\mathbb{D}_{--}$ | $\Pi_-\mathbb{D}\Pi_-$ | $\Pi_-$ | $1$ | $E_{22}$ |
+| $\mathbb{C}^{\mathrm{spl}}_{++}$ | $\Pi_+\mathbb{C}^{\mathrm{spl}}\Pi_+$ | $\Pi_+$ | $1$ | $E_{11}$ |
+| $\mathbb{C}^{\mathrm{spl}}_{+-}$ | $\Pi_+\mathbb{C}^{\mathrm{spl}}\Pi_-$ | none | $0$ | $0$ |
+| $\mathbb{C}^{\mathrm{spl}}_{-+}$ | $\Pi_-\mathbb{C}^{\mathrm{spl}}\Pi_+$ | none | $0$ | $0$ |
+| $\mathbb{C}^{\mathrm{spl}}_{--}$ | $\Pi_-\mathbb{C}^{\mathrm{spl}}\Pi_-$ | $\Pi_-$ | $1$ | $E_{22}$ |
 
 With respect to the idempotent $0$ or $1$ the Peirce decomposition is trivial: for $\Pi=1$ the only nonzero component is the whole algebra, and for $\Pi=0$ it is the zero ideal.
 
@@ -250,7 +250,7 @@ With respect to the idempotent $0$ or $1$ the Peirce decomposition is trivial: f
 The idempotent $\Pi'=1-\Pi$ gives the same decomposition with the two signs exchanged:
 
 $$
-\Pi'\mathbb{D}\Pi'=\mathbb{D}_{--},\quad \Pi'\mathbb{D}\Pi=\mathbb{D}_{-+},\quad \Pi\mathbb{D}\Pi'=\mathbb{D}_{+-},\quad \Pi\mathbb{D}\Pi=\mathbb{D}_{++}.
+\Pi'\mathbb{C}^{\mathrm{spl}}\Pi'=\mathbb{C}^{\mathrm{spl}}_{--},\quad \Pi'\mathbb{C}^{\mathrm{spl}}\Pi=\mathbb{C}^{\mathrm{spl}}_{-+},\quad \Pi\mathbb{C}^{\mathrm{spl}}\Pi'=\mathbb{C}^{\mathrm{spl}}_{+-},\quad \Pi\mathbb{C}^{\mathrm{spl}}\Pi=\mathbb{C}^{\mathrm{spl}}_{++}.
 $$
 
 The two ordered readings differ by the swap $+\leftrightarrow-$. For the standard pair the two readings are the same up to the exchange of $\Pi_+$ and $\Pi_-$.
@@ -261,14 +261,14 @@ The two ordered readings differ by the swap $+\leftrightarrow-$. For the standar
 
 The entry in row $S$ and column $T$ is the space containing the products of an element of $S$ with an element of $T$:
 
-| $\cdot$ | $\mathbb{D}_{++}$ | $\mathbb{D}_{+-}$ | $\mathbb{D}_{-+}$ | $\mathbb{D}_{--}$ |
+| $\cdot$ | $\mathbb{C}^{\mathrm{spl}}_{++}$ | $\mathbb{C}^{\mathrm{spl}}_{+-}$ | $\mathbb{C}^{\mathrm{spl}}_{-+}$ | $\mathbb{C}^{\mathrm{spl}}_{--}$ |
 |---|---|---|---|---|
-| $\mathbb{D}_{++}$ | $\mathbb{D}_{++}$ | $0$ | $0$ | $0$ |
-| $\mathbb{D}_{+-}$ | $0$ | $0$ | $0$ | $0$ |
-| $\mathbb{D}_{-+}$ | $0$ | $0$ | $0$ | $0$ |
-| $\mathbb{D}_{--}$ | $0$ | $0$ | $0$ | $\mathbb{D}_{--}$ |
+| $\mathbb{C}^{\mathrm{spl}}_{++}$ | $\mathbb{C}^{\mathrm{spl}}_{++}$ | $0$ | $0$ | $0$ |
+| $\mathbb{C}^{\mathrm{spl}}_{+-}$ | $0$ | $0$ | $0$ | $0$ |
+| $\mathbb{C}^{\mathrm{spl}}_{-+}$ | $0$ | $0$ | $0$ | $0$ |
+| $\mathbb{C}^{\mathrm{spl}}_{--}$ | $0$ | $0$ | $0$ | $\mathbb{C}^{\mathrm{spl}}_{--}$ |
 
-For the standard pair only the two diagonal entries survive: $\mathbb{D}_{++}\mathbb{D}_{++}\subseteq\mathbb{D}_{++}$ and $\mathbb{D}_{--}\mathbb{D}_{--}\subseteq\mathbb{D}_{--}$, all other products zero. The table is the specialisation of the rule $\delta_{\tau\mu}$ to the vanishing off-diagonal spaces.
+For the standard pair only the two diagonal entries survive: $\mathbb{C}^{\mathrm{spl}}_{++}\mathbb{C}^{\mathrm{spl}}_{++}\subseteq\mathbb{C}^{\mathrm{spl}}_{++}$ and $\mathbb{C}^{\mathrm{spl}}_{--}\mathbb{C}^{\mathrm{spl}}_{--}\subseteq\mathbb{C}^{\mathrm{spl}}_{--}$, all other products zero. The table is the specialisation of the rule $\delta_{\tau\mu}$ to the vanishing off-diagonal spaces.
 
 ### The Peirce Coordinates
 
@@ -290,7 +290,7 @@ so the Peirce coordinates are the idempotent coordinates, and the algebra is dia
 
 ### The Decomposition as a Grading
 
-**The splitting $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ is an algebra decomposition, and it is equivalent to the $\mathbb{Z}_{2}$-grading whose even part is the real line and whose odd part is the split imaginary line.**
+**The splitting $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ is an algebra decomposition, and it is equivalent to the $\mathbb{Z}_{2}$-grading whose even part is the real line and whose odd part is the split imaginary line.**
 
 **Definition.** A $\mathbb{Z}_{2}$-**grading** of an algebra is a direct sum $\mathcal A=\mathcal A_{0}\oplus\mathcal A_{1}$ of subspaces with $\mathcal A_{\epsilon}\mathcal A_{\delta}\subseteq\mathcal A_{\epsilon+\delta}$ for the sum modulo $2$.
 
@@ -302,13 +302,13 @@ $$
 
 the algebra is $\mathbb{Z}_{2}$-graded: $1\cdot1=1$, $1\cdot j=j$ and $j\cdot j=1$ put the even part in itself, the even part times the odd part in the odd part, and the odd part times itself in the even part.
 
-**Proof.** The multiplication table of the basis $1,j$ is $1\cdot1=1$, $1\cdot j=j\cdot1=j$, $j\cdot j=1$, which is exactly the grading condition; the two spaces are independent and span $\mathbb{D}$ over $\mathbb{R}$.
+**Proof.** The multiplication table of the basis $1,j$ is $1\cdot1=1$, $1\cdot j=j\cdot1=j$, $j\cdot j=1$, which is exactly the grading condition; the two spaces are independent and span $\mathbb{C}^{\mathrm{spl}}$ over $\mathbb{R}$.
 
 The central splitting into the two idempotent lines and the $\mathbb{Z}_{2}$-grading into the scalar and $j$-lines are two presentations of the same algebra decomposition: the idempotent coordinates are the diagonalising coordinates of the grading.
 
 ### The Involutions on the Peirce Spaces
 
-**The conjugation is the only nontrivial involution of $\mathbb{D}$; it exchanges the two standard idempotents, hence the two diagonal Peirce spaces, and it fixes the two off-diagonal spaces, both zero.**
+**The conjugation is the only nontrivial involution of $\mathbb{C}^{\mathrm{spl}}$; it exchanges the two standard idempotents, hence the two diagonal Peirce spaces, and it fixes the two off-diagonal spaces, both zero.**
 
 The conjugation $\bar\cdot$ swaps the two standard idempotents,
 
@@ -316,15 +316,15 @@ $$
 \overline{\Pi_{+}}=\Pi_{-},\qquad \overline{\Pi_{-}}=\Pi_{+},
 $$
 
-so it maps $\mathbb{D}_{++}=\mathbb{R}\Pi_{+}$ to $\mathbb{D}_{--}=\mathbb{R}\Pi_{-}$ and back, and it maps the off-diagonal spaces to themselves. The action is collected in the table.
+so it maps $\mathbb{C}^{\mathrm{spl}}_{++}=\mathbb{R}\Pi_{+}$ to $\mathbb{C}^{\mathrm{spl}}_{--}=\mathbb{R}\Pi_{-}$ and back, and it maps the off-diagonal spaces to themselves. The action is collected in the table.
 
-| Involution | $\Pi_{+}$ | $\Pi_{-}$ | $\mathbb{D}_{++}$ | $\mathbb{D}_{--}$ | $\mathbb{D}_{+-}$ | $\mathbb{D}_{-+}$ |
+| Involution | $\Pi_{+}$ | $\Pi_{-}$ | $\mathbb{C}^{\mathrm{spl}}_{++}$ | $\mathbb{C}^{\mathrm{spl}}_{--}$ | $\mathbb{C}^{\mathrm{spl}}_{+-}$ | $\mathbb{C}^{\mathrm{spl}}_{-+}$ |
 |---|---|---|---|---|---|---|
-| bar $\bar{\cdot}$ | $\Pi_{-}$ | $\Pi_{+}$ | $\mathbb{D}_{--}$ | $\mathbb{D}_{++}$ | $0$ | $0$ |
+| bar $\bar{\cdot}$ | $\Pi_{-}$ | $\Pi_{+}$ | $\mathbb{C}^{\mathrm{spl}}_{--}$ | $\mathbb{C}^{\mathrm{spl}}_{++}$ | $0$ | $0$ |
 
-The fixed subspace of the conjugation is the real line $\mathbb{R}_{\mathbb{D}}$, and the anti-fixed subspace is the split imaginary line $j\mathbb{R}_{\mathbb{D}}$; the conjugation does not preserve the ordered Peirce decomposition, it swaps its two components.
+The fixed subspace of the conjugation is the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, and the anti-fixed subspace is the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$; the conjugation does not preserve the ordered Peirce decomposition, it swaps its two components.
 
-**Proposition.** The fixed algebra of the conjugation is $\mathbb{R}_{\mathbb{D}}$, and the anti-fixed subspace is $j\mathbb{R}_{\mathbb{D}}$; the conjugation exchanges the two minimal ideals.
+**Proposition.** The fixed algebra of the conjugation is $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, and the anti-fixed subspace is $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$; the conjugation exchanges the two minimal ideals.
 
 **Proof.** $\bar Q=Q$ gives $q-jq'=q+jq'$, hence $q'=0$; $\bar Q=-Q$ gives $q=0$. The exchange of the ideals is $\overline{\Pi_{+}}=\Pi_{-}$.
 
@@ -341,7 +341,7 @@ $$
 which is diagonal in the idempotent basis with eigenvalues $Q_{+}$ and $Q_{-}$, the scalar coefficients of the Peirce coordinates (*The Matrix Element Representations of the Split-Complexoid*). The Peirce components are the two eigenspaces:
 
 $$
-\mathbb{D}_{++}=\mathbb{R}\Pi_{+},\qquad \mathbb{D}_{--}=\mathbb{R}\Pi_{-}.
+\mathbb{C}^{\mathrm{spl}}_{++}=\mathbb{R}\Pi_{+},\qquad \mathbb{C}^{\mathrm{spl}}_{--}=\mathbb{R}\Pi_{-}.
 $$
 
 The projectors are
@@ -351,7 +351,7 @@ P_{+}=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
 P_{-}=\frac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix},
 $$
 
-with $P_{+}+P_{-}=I$ and $P_{+}P_{-}=0$. The off-diagonal Peirce components, which would be the off-diagonal matrix units, are absent: the model is a commutative subalgebra of $M_2(\mathbb{R})$, not the full matrix algebra. In particular, $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{R})$, but no nonzero nilpotent matrix lies in the image: a diagonal matrix with square zero is zero. This is the matrix form of the reducedness of $\mathbb{D}$.
+with $P_{+}+P_{-}=I$ and $P_{+}P_{-}=0$. The off-diagonal Peirce components, which would be the off-diagonal matrix units, are absent: the model is a commutative subalgebra of $M_2(\mathbb{R})$, not the full matrix algebra. In particular, $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{R})$, but no nonzero nilpotent matrix lies in the image: a diagonal matrix with square zero is zero. This is the matrix form of the reducedness of $\mathbb{C}^{\mathrm{spl}}$.
 
 **The eigenbasis and the change of basis.** The idempotent basis $(\Pi_+,\Pi_-)$ is an eigenbasis of $Q$: the columns of the matrix
 $$
@@ -370,18 +370,18 @@ The Peirce coordinates of $Q$ in the idempotent basis are therefore the eigenval
 **Proposition.** The principal ideals
 
 $$
-\mathbb{D}\Pi_{+}=\mathbb{R}\Pi_{+},\qquad \mathbb{D}\Pi_{-}=\mathbb{R}\Pi_{-}
+\mathbb{C}^{\mathrm{spl}}\Pi_{+}=\mathbb{R}\Pi_{+},\qquad \mathbb{C}^{\mathrm{spl}}\Pi_{-}=\mathbb{R}\Pi_{-}
 $$
 
-are the two nontrivial minimal ideals of $\mathbb{D}$, and
+are the two nontrivial minimal ideals of $\mathbb{C}^{\mathrm{spl}}$, and
 
 $$
-\mathbb{D}=\mathbb{D}\Pi_{+}\oplus\mathbb{D}\Pi_{-}
+\mathbb{C}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\Pi_{+}\oplus\mathbb{C}^{\mathrm{spl}}\Pi_{-}
 $$
 
 as a direct sum of ideals, the two summands being the two copies of $\mathbb{R}$.
 
-**Proof.** Every $Q$ satisfies $Q=Q(\Pi_{+}+\Pi_{-})=Q\Pi_{+}+Q\Pi_{-}$, so the two ideals span; their intersection is zero because $\Pi_{+}\Pi_{-}=0$: if $Q\Pi_{+}=B\Pi_{-}$ then multiplying by $\Pi_{+}$ gives $Q\Pi_{+}=0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{D}\Pi_{+}$ contains some $\lambda\Pi_{+}$ with $\lambda\neq0$, hence contains $\Pi_{+}$ and equals $\mathbb{R}\Pi_{+}$; so each is minimal.
+**Proof.** Every $Q$ satisfies $Q=Q(\Pi_{+}+\Pi_{-})=Q\Pi_{+}+Q\Pi_{-}$, so the two ideals span; their intersection is zero because $\Pi_{+}\Pi_{-}=0$: if $Q\Pi_{+}=B\Pi_{-}$ then multiplying by $\Pi_{+}$ gives $Q\Pi_{+}=0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{C}^{\mathrm{spl}}\Pi_{+}$ contains some $\lambda\Pi_{+}$ with $\lambda\neq0$, hence contains $\Pi_{+}$ and equals $\mathbb{R}\Pi_{+}$; so each is minimal.
 
 The two ideals are the two **minimal ideals** in the sense of the lattice of all ideals, and they are the images of the two idempotents. The quotient by one is the other, and the algebra is the product of the two. They are the two spinor spaces of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*The Spinor Spaces*: each is a real line, and a spinor is a single real coefficient on one of them.
 
@@ -389,38 +389,38 @@ The two ideals are the two **minimal ideals** in the sense of the lattice of all
 
 **The four ideals form the four-element Boolean lattice $\mathcal{P}(\{+,-\})$, with meet intersection and join sum.**
 
-The four ideals of $\mathbb{D}$ are $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{D}$, with the inclusions
+The four ideals of $\mathbb{C}^{\mathrm{spl}}$ are $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{C}^{\mathrm{spl}}$, with the inclusions
 
 $$
-0\subset\mathbb{R}\Pi_{+}\subset\mathbb{D},\qquad
-0\subset\mathbb{R}\Pi_{-}\subset\mathbb{D},
+0\subset\mathbb{R}\Pi_{+}\subset\mathbb{C}^{\mathrm{spl}},\qquad
+0\subset\mathbb{R}\Pi_{-}\subset\mathbb{C}^{\mathrm{spl}},
 $$
 
 and no inclusion between $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$ (they are independent, and their intersection is $0$).
 
 | Meet | Value | Join | Value |
 |---|---|---|---|
-| $\mathbb{R}\Pi_{+}\cap\mathbb{R}\Pi_{-}$ | $0$ | $\mathbb{R}\Pi_{+}+\mathbb{R}\Pi_{-}$ | $\mathbb{D}$ |
-| $\mathbb{R}\Pi_{+}\cap\mathbb{D}$ | $\mathbb{R}\Pi_{+}$ | $\mathbb{R}\Pi_{+}+\mathbb{D}$ | $\mathbb{D}$ |
+| $\mathbb{R}\Pi_{+}\cap\mathbb{R}\Pi_{-}$ | $0$ | $\mathbb{R}\Pi_{+}+\mathbb{R}\Pi_{-}$ | $\mathbb{C}^{\mathrm{spl}}$ |
+| $\mathbb{R}\Pi_{+}\cap\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{R}\Pi_{+}$ | $\mathbb{R}\Pi_{+}+\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{spl}}$ |
 | $0\cap I$ | $0$ | $0+I$ | $I$ |
 
-**Theorem.** The lattice $\mathrm{Id}(\mathbb{D})$ is a **Boolean lattice** with four elements, isomorphic to the power set of a two-point set:
+**Theorem.** The lattice $\mathrm{Id}(\mathbb{C}^{\mathrm{spl}})$ is a **Boolean lattice** with four elements, isomorphic to the power set of a two-point set:
 
 $$
-\mathrm{Id}(\mathbb{D})\cong\mathcal{P}(\{+,-\}),\qquad
+\mathrm{Id}(\mathbb{C}^{\mathrm{spl}})\cong\mathcal{P}(\{+,-\}),\qquad
 0\leftrightarrow\varnothing,\quad
 \mathbb{R}\Pi_{+}\leftrightarrow\{+\},\quad
 \mathbb{R}\Pi_{-}\leftrightarrow\{-\},\quad
-\mathbb{D}\leftrightarrow\{+,-\}.
+\mathbb{C}^{\mathrm{spl}}\leftrightarrow\{+,-\}.
 $$
 
-**Proof.** The map is the ideal generated by the indicator subset under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$: the ideal of $\mathbb{R}\oplus\mathbb{R}$ generated by the indicator vector of a subset $S$ is the set of pairs supported on $S$, and these four sets are exactly the ideals. Under this identification the complement of the ideal associated with $S$ is the ideal associated with the complementary subset $S^{\mathrm{c}}$, meets are intersections and joins are unions, so the lattice is the power-set lattice $\mathcal{P}(\{+,-\})$, which is Boolean.
+**Proof.** The map is the ideal generated by the indicator subset under the isomorphism $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$: the ideal of $\mathbb{R}\oplus\mathbb{R}$ generated by the indicator vector of a subset $S$ is the set of pairs supported on $S$, and these four sets are exactly the ideals. Under this identification the complement of the ideal associated with $S$ is the ideal associated with the complementary subset $S^{\mathrm{c}}$, meets are intersections and joins are unions, so the lattice is the power-set lattice $\mathcal{P}(\{+,-\})$, which is Boolean.
 
-The lattice is finite, distributive and complemented. In $\mathbb{D}$ the left, right and two-sided ideals coincide, so there is a single finite lattice, and it is the Boolean one above.
+The lattice is finite, distributive and complemented. In $\mathbb{C}^{\mathrm{spl}}$ the left, right and two-sided ideals coincide, so there is a single finite lattice, and it is the Boolean one above.
 
 ## The Radical
 
-**The Jacobson radical, the nilradical and the prime radical of $\mathbb{D}$ all vanish.**
+**The Jacobson radical, the nilradical and the prime radical of $\mathbb{C}^{\mathrm{spl}}$ all vanish.**
 
 **Proposition.** The nilradical is $0$, the Jacobson radical is $0$, and the prime radical is $0$.
 
@@ -432,7 +432,7 @@ The lattice is finite, distributive and complemented. In $\mathbb{D}$ the left, 
 
 **Proof.** The nilradical is the set of nilpotent elements. If $Q^{n}=0$, write $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$; then $Q^{n}=Q_{+}^{n}\Pi_{+}+Q_{-}^{n}\Pi_{-}=0$, so $Q_{+}^{n}=0$ and $Q_{-}^{n}=0$ in $\mathbb{R}$, whence $Q_{+}=Q_{-}=0$ and $Q=0$. Hence the nilradical is $0$. The Jacobson radical of the product of fields $\mathbb{R}\times\mathbb{R}$ is zero, since the maximal ideals are the two coordinate ideals and their intersection is zero. The prime radical of a commutative ring is the intersection of the prime ideals, which is the nilradical, hence zero.
 
-So $\mathbb{D}$ is **reduced** (no nonzero nilpotent) and **semiprime**. This is the opposite of the dual-number algebra $\mathbb{D}'=\mathbb{R}[\varepsilon]/(\varepsilon^{2})$, whose maximal ideal is nonzero and nilpotent, and it is the reason $\mathbb{D}$ is much closer in behaviour to a product of fields than to a local ring.
+So $\mathbb{C}^{\mathrm{spl}}$ is **reduced** (no nonzero nilpotent) and **semiprime**. This is the opposite of the dual-number algebra $\mathbb{C}^{\mathrm{dua}}=\mathbb{R}[\varepsilon]/(\varepsilon^{2})$, whose maximal ideal is nonzero and nilpotent, and it is the reason $\mathbb{C}^{\mathrm{spl}}$ is much closer in behaviour to a product of fields than to a local ring.
 
 ## The Real Structure
 
@@ -441,19 +441,19 @@ So $\mathbb{D}$ is **reduced** (no nonzero nilpotent) and **semiprime**. This is
 The algebra is defined over $\mathbb{R}$ and is already real; the **real structure** is the conjugation $\bar\cdot$, an involutive automorphism. Its fixed subspace is
 
 $$
-\mathbb{D}^{\bar\cdot}=\{Q:\bar Q=Q\}=\mathbb{R}_{\mathbb{D}},
+{\mathbb{C}^{\mathrm{spl}}}^{\bar\cdot}=\{Q:\bar Q=Q\}=\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}},
 $$
 
 the real line, and its anti-fixed subspace is
 
 $$
-\mathbb{D}^{-\bar\cdot}=\{Q:\bar Q=-Q\}=j\mathbb{R}_{\mathbb{D}},
+{\mathbb{C}^{\mathrm{spl}}}^{-\bar\cdot}=\{Q:\bar Q=-Q\}=j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}},
 $$
 
 the split imaginary line. The two are the eigenspaces of the conjugation with eigenvalues $+1$ and $-1$, and
 
 $$
-\mathbb{D}=\mathbb{R}_{\mathbb{D}}\oplus j\mathbb{R}_{\mathbb{D}}
+\mathbb{C}^{\mathrm{spl}}=\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}\oplus j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}
 $$
 
 is the eigenspace decomposition. The conjugation exchanges the two minimal ideals, $\overline{\mathbb{R}\Pi_{+}}=\mathbb{R}\Pi_{-}$, and it maps the Peirce decomposition with respect to $\Pi_{+}$ to the one with respect to $\Pi_{-}$; the unordered Peirce decomposition is preserved. The real structure is the algebraic form of the split sign: the fixed line is the real axis, the anti-fixed line is the split imaginary axis, and the conjugation exchanges the two null lines.
@@ -462,37 +462,37 @@ is the eigenspace decomposition. The conjugation exchanges the two minimal ideal
 
 | Statement | Result |
 |---|---|
-| Algebra | $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=1$ |
-| Two-sided ideals | $0,\ \mathbb{R}\Pi_{+},\ \mathbb{R}\Pi_{-},\ \mathbb{D}$ |
+| Algebra | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=1$ |
+| Two-sided ideals | $0,\ \mathbb{R}\Pi_{+},\ \mathbb{R}\Pi_{-},\ \mathbb{C}^{\mathrm{spl}}$ |
 | Simple? | no |
-| Semisimple? | yes, $J(\mathbb{D})=0$ |
+| Semisimple? | yes, $J(\mathbb{C}^{\mathrm{spl}})=0$ |
 | Length over itself | $2$ |
 | Idempotents | $0,1,\Pi_{+},\Pi_{-}$ |
-| Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$ |
-| Grading | $\mathbb{D}=\mathbb{R}\cdot1\oplus\mathbb{R}\cdot j$ |
+| Peirce decomposition | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$ |
+| Grading | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\cdot1\oplus\mathbb{R}\cdot j$ |
 | Jacobson radical | $0$ |
 
-An ideal of the commutative algebra $\mathbb{D}$ is a two-sided ideal, and there are exactly four: $0$, the two minimal ones $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and $\mathbb{D}$. The two minimal ideals are the summands of the direct product $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$, the maximal ideals are the same two, and the lattice of ideals is the four-element Boolean lattice of subsets of $\{+,-\}$. The algebra is Artinian, Noetherian, semisimple and reduced, of module length two, with zero Jacobson radical, zero nilradical and zero prime radical; it is not simple.
+An ideal of the commutative algebra $\mathbb{C}^{\mathrm{spl}}$ is a two-sided ideal, and there are exactly four: $0$, the two minimal ones $\mathbb{R}\Pi_{+}$ and $\mathbb{R}\Pi_{-}$, and $\mathbb{C}^{\mathrm{spl}}$. The two minimal ideals are the summands of the direct product $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$, the maximal ideals are the same two, and the lattice of ideals is the four-element Boolean lattice of subsets of $\{+,-\}$. The algebra is Artinian, Noetherian, semisimple and reduced, of module length two, with zero Jacobson radical, zero nilradical and zero prime radical; it is not simple.
 
-With respect to an idempotent $\Pi$ and its complement $\Pi'=1-\Pi$, the Peirce decomposition splits $\mathbb{D}$ into the four spaces $\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau$, with the multiplication table $\mathbb{D}_{\sigma\tau}\mathbb{D}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{D}_{\sigma\nu}$; for the standard pair $\Pi_+,\Pi_-$ the two off-diagonal spaces vanish and the decomposition collapses to $\mathbb{D}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$. The idempotents $\Pi_{\pm}$ are central, orthogonal, complete and primitive, and they are the diagonal matrix units of the decomposition; the conjugation swaps them and exchanges the two ideals. The Peirce coordinates are the idempotent coordinates and, in the regular matrix model, the two eigenvalues.
+With respect to an idempotent $\Pi$ and its complement $\Pi'=1-\Pi$, the Peirce decomposition splits $\mathbb{C}^{\mathrm{spl}}$ into the four spaces $\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}=\Pi_\sigma\mathbb{C}^{\mathrm{spl}}\Pi_\tau$, with the multiplication table $\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}\mathbb{C}^{\mathrm{spl}}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{C}^{\mathrm{spl}}_{\sigma\nu}$; for the standard pair $\Pi_+,\Pi_-$ the two off-diagonal spaces vanish and the decomposition collapses to $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\Pi_{+}\oplus\mathbb{R}\Pi_{-}$. The idempotents $\Pi_{\pm}$ are central, orthogonal, complete and primitive, and they are the diagonal matrix units of the decomposition; the conjugation swaps them and exchanges the two ideals. The Peirce coordinates are the idempotent coordinates and, in the regular matrix model, the two eigenvalues.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | Split-complex algebra |
+| $\mathbb{C}^{\mathrm{spl}}$ | Split-complex algebra |
 | $Q=q+jq'$ | General split-complex number |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Standard idempotents |
-| $I$, $(Q)=Q\mathbb{D}$ | Ideal, principal ideal |
-| $\mathrm{Id}(\mathbb{D})$ | Lattice of ideals, Boolean of four elements |
+| $I$, $(Q)=Q\mathbb{C}^{\mathrm{spl}}$ | Ideal, principal ideal |
+| $\mathrm{Id}(\mathbb{C}^{\mathrm{spl}})$ | Lattice of ideals, Boolean of four elements |
 | $\mathbb{R}\Pi_{+},\mathbb{R}\Pi_{-}$ | The two minimal and maximal proper ideals |
-| $\mathbb{D}_{++}=\Pi_{+}\mathbb{D}\Pi_{+}$ | Peirce space, $=\mathbb{R}\Pi_{+}$ |
-| $\mathbb{D}_{--}=\Pi_{-}\mathbb{D}\Pi_{-}$ | Peirce space, $=\mathbb{R}\Pi_{-}$ |
-| $\mathbb{D}_{+-},\mathbb{D}_{-+}$ | Off-diagonal Peirce spaces, both $0$ |
+| $\mathbb{C}^{\mathrm{spl}}_{++}=\Pi_{+}\mathbb{C}^{\mathrm{spl}}\Pi_{+}$ | Peirce space, $=\mathbb{R}\Pi_{+}$ |
+| $\mathbb{C}^{\mathrm{spl}}_{--}=\Pi_{-}\mathbb{C}^{\mathrm{spl}}\Pi_{-}$ | Peirce space, $=\mathbb{R}\Pi_{-}$ |
+| $\mathbb{C}^{\mathrm{spl}}_{+-},\mathbb{C}^{\mathrm{spl}}_{-+}$ | Off-diagonal Peirce spaces, both $0$ |
 | $\Pi'=1-\Pi$ | Complement of an idempotent |
-| $\operatorname{rad}(\mathbb{D})$ | Jacobson radical, $=0$; nilradical and prime radical vanish |
-| $\mathbb{D}^{\bar\cdot}=\mathbb{R}_{\mathbb{D}}$ | Fixed algebra of the conjugation |
-| $\mathbb{D}^{-\bar\cdot}=j\mathbb{R}_{\mathbb{D}}$ | Anti-fixed subspace |
+| $\operatorname{rad}(\mathbb{C}^{\mathrm{spl}})$ | Jacobson radical, $=0$; nilradical and prime radical vanish |
+| ${\mathbb{C}^{\mathrm{spl}}}^{\bar\cdot}=\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | Fixed algebra of the conjugation |
+| ${\mathbb{C}^{\mathrm{spl}}}^{-\bar\cdot}=j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ | Anti-fixed subspace |
 
 ## Further Reading
 

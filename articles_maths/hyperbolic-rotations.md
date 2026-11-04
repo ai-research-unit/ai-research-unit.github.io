@@ -3,20 +3,20 @@
 
 ## Introduction
 
-This article describes the group of linear transformations of the split complex plane that preserve the split norm, and its realisation by the algebra $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$. It is the split complex counterpart of *Rotations and Reflections in the Complex Plane*, written in parallel: there the unit circle acts by multiplication and its group is identified with the compact rotation group $SO(2)$, whereas here the unit hyperbola acts by multiplication and its identity component is identified with $SO(1,1)$, a group isomorphic to the additive line. The transformations are the **hyperbolic rotations**, and they are treated here only as a group of linear transformations of a plane, with no physical interpretation invoked.
+This article describes the group of linear transformations of the split complex plane that preserve the split norm, and its realisation by the algebra $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It is the split complex counterpart of *Rotations and Reflections in the Complex Plane*, written in parallel: there the unit circle acts by multiplication and its group is identified with the compact rotation group $SO(2)$, whereas here the unit hyperbola acts by multiplication and its identity component is identified with $SO(1,1)$, a group isomorphic to the additive line. The transformations are the **hyperbolic rotations**, and they are treated here only as a group of linear transformations of a plane, with no physical interpretation invoked.
 
-The split complex algebra and its conjugation $\bar Q = q - jq'$ are taken from *Split-Complex Algebra*; the split norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$, its polarisation and the group of units are the form and the distance of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $q, q'$ of $Q = q + jq'$ are always real, and $\mathbb{D}$ is written in the basis $\{1, j\}$.
+The split complex algebra and its conjugation $\bar Q = q - jq'$ are taken from *Split-Complex Algebra*; the split norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$, its polarisation and the group of units are the form and the distance of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $q, q'$ of $Q = q + jq'$ are always real, and $\mathbb{C}^{\mathrm{spl}}$ is written in the basis $\{1, j\}$.
 
-Two features distinguish the theory from its complex counterpart and organise everything below. The norm $\langle\cdot\rangle_{*}$ is indefinite, of signature $(1,1)$, so the set $\{\langle Q\rangle_{*} = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the unit group $\{\langle Q\rangle_{*} = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{D}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
+Two features distinguish the theory from its complex counterpart and organise everything below. The norm $\langle\cdot\rangle_{*}$ is indefinite, of signature $(1,1)$, so the set $\{\langle Q\rangle_{*} = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the unit group $\{\langle Q\rangle_{*} = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{C}^{\mathrm{spl}}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
 
 ## The Form and Its Isometries
 
 ### The Bilinear Form
 
-The **split bilinear form** on $\mathbb{D}$ is the polarisation of the norm $\langle\cdot\rangle_{*}$ of *Norm and Invertibility in the General Split-Complex Algebra*; in explicit terms it is
+The **split bilinear form** on $\mathbb{C}^{\mathrm{spl}}$ is the polarisation of the norm $\langle\cdot\rangle_{*}$ of *Norm and Invertibility in the General Split-Complex Algebra*; in explicit terms it is
 
 $$
-g(Q, B) = \operatorname{Re}(\bar Q B) = \frac{1}{2}\big(\langle Q + B\rangle_{*} - \langle Q\rangle_{*} - \langle B\rangle_{*}\big), \qquad Q, B \in \mathbb{D}.
+g(Q, B) = \operatorname{Re}(\bar Q B) = \frac{1}{2}\big(\langle Q + B\rangle_{*} - \langle Q\rangle_{*} - \langle B\rangle_{*}\big), \qquad Q, B \in \mathbb{C}^{\mathrm{spl}}.
 $$
 
 In the real basis $\{1, j\}$, with $Q = q + jq'$ and $B = b + jb'$,
@@ -46,12 +46,12 @@ The two null lines are the real spans of $\Pi_+$ and of $\Pi_-$ respectively. Th
 **Definition.** The **orthogonal group** of the form is
 
 $$
-O(1,1) = \{T \in GL_2(\mathbb{R}) : \langle TQ\rangle_{*} = \langle Q\rangle_{*} \text{ for all } Q \in \mathbb{D}\}.
+O(1,1) = \{T \in GL_2(\mathbb{R}) : \langle TQ\rangle_{*} = \langle Q\rangle_{*} \text{ for all } Q \in \mathbb{C}^{\mathrm{spl}}\}.
 $$
 
 The **special orthogonal group** is $SO(1,1) = \{T \in O(1,1) : \det T = 1\}$, and $SO^+(1,1)$ is its identity component.
 
-**Proposition.** For a linear map $T : \mathbb{D} \to \mathbb{D}$ the condition $\langle TQ\rangle_{*} = \langle Q\rangle_{*}$ for all $Q$ is equivalent to $g(TQ, TB) = g(Q, B)$ for all $Q, B$. Consequently every element of $O(1,1)$ is invertible, and $O(1,1)$ is a group.
+**Proposition.** For a linear map $T : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$ the condition $\langle TQ\rangle_{*} = \langle Q\rangle_{*}$ for all $Q$ is equivalent to $g(TQ, TB) = g(Q, B)$ for all $Q, B$. Consequently every element of $O(1,1)$ is invertible, and $O(1,1)$ is a group.
 
 **Proof.** If $\langle\cdot\rangle_{*} \circ T = \langle\cdot\rangle_{*}$ then, by bilinearity of $g$ and linearity of $T$,
 
@@ -65,7 +65,7 @@ The determinant of an isometry is $\pm 1$, since $(\det T)^2 \det G = \det G$ an
 
 ### Isometries Are Multiplications and Reflections
 
-**Theorem.** A bijective linear map $T : \mathbb{D} \to \mathbb{D}$ is an isometry of $\langle\cdot,\cdot\rangle_{*}$ if and only if there exists $u \in \mathbb{D}$ with $\langle u\rangle_{*} = 1$ such that either
+**Theorem.** A bijective linear map $T : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}$ is an isometry of $\langle\cdot,\cdot\rangle_{*}$ if and only if there exists $u \in \mathbb{C}^{\mathrm{spl}}$ with $\langle u\rangle_{*} = 1$ such that either
 
 $$
 \boxed{\; T(Q) = uQ \quad \text{for all } Q, \qquad \text{or} \qquad T(Q) = u\bar Q \quad \text{for all } Q \;}.
@@ -83,20 +83,20 @@ $$
 
 so $\lambda = \pm 1$. If $\lambda = 1$ then $T$ fixes $1 \mapsto u$ and $j \mapsto ju$, hence by linearity $T(Q) = uQ$ for $Q = q + jq'$. If $\lambda = -1$ then $T(j) = -ju$, and $T(Q) = qu - q'ju = u(q - jq') = u\bar Q$.
 
-The two families are the rotations and the reflections. They are disjoint, since a map of the first form is $\mathbb{D}$-linear while a map of the second is not: $S_u(j\cdot 1) = S_u(j) = -ju \neq j S_u(1) = ju$. Every isometry is therefore either a rotation or a reflection, and the determinant distinguishes the two.
+The two families are the rotations and the reflections. They are disjoint, since a map of the first form is $\mathbb{C}^{\mathrm{spl}}$-linear while a map of the second is not: $S_u(j\cdot 1) = S_u(j) = -ju \neq j S_u(1) = ju$. Every isometry is therefore either a rotation or a reflection, and the determinant distinguishes the two.
 
 ## The Unit Hyperbola and Its Branches
 
 ### The Units and the Norm-One Group
 
-By *Norm and Invertibility in the General Split-Complex Algebra*, an element $Q \in \mathbb{D}$ is a unit exactly when $\langle Q\rangle_{*} \neq 0$, with $Q^{-1} = \bar Q/\langle Q\rangle_{*}$, and the norm is a surjective group homomorphism $N : \mathbb{D}^\times \to \mathbb{R}^\times$ with kernel the norm-one group $\mathcal{H} = \{u : \langle u\rangle_{*} = 1\}$. So $\mathbb{D}^\times$ is the complement of the null cone, and $\langle\cdot\rangle_{*}$ presents it as an extension of $\mathbb{R}^\times$ by $\mathcal{H}$; the unit group, its four components and its exponential parametrisation are treated in *Norm and Invertibility in the General Split-Complex Algebra* and *Split-Complex Exponential and Lie Group Structure*.
+By *Norm and Invertibility in the General Split-Complex Algebra*, an element $Q \in \mathbb{C}^{\mathrm{spl}}$ is a unit exactly when $\langle Q\rangle_{*} \neq 0$, with $Q^{-1} = \bar Q/\langle Q\rangle_{*}$, and the norm is a surjective group homomorphism $N : {\mathbb{C}^{\mathrm{spl}}}^\times \to \mathbb{R}^\times$ with kernel the norm-one group $\mathcal{H} = \{u : \langle u\rangle_{*} = 1\}$. So ${\mathbb{C}^{\mathrm{spl}}}^\times$ is the complement of the null cone, and $\langle\cdot\rangle_{*}$ presents it as an extension of $\mathbb{R}^\times$ by $\mathcal{H}$; the unit group, its four components and its exponential parametrisation are treated in *Norm and Invertibility in the General Split-Complex Algebra* and *Split-Complex Exponential and Lie Group Structure*.
 
 ### The Unit Hyperbola
 
 **Definition.** The **unit hyperbola** is
 
 $$
-\mathcal{H} = \{u \in \mathbb{D} : \langle u\rangle_{*} = 1\} = \{u = q + jq' : q^2 - q'^2 = 1\}.
+\mathcal{H} = \{u \in \mathbb{C}^{\mathrm{spl}} : \langle u\rangle_{*} = 1\} = \{u = q + jq' : q^2 - q'^2 = 1\}.
 $$
 
 **Theorem.** The map
@@ -116,7 +116,7 @@ The parameter $\phi$ is the **hyperbolic angle** of the unit $u$; it is also cal
 **Theorem.** The unit group has exactly four connected components, and
 
 $$
-\mathbb{D}^\times \cong \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2
+{\mathbb{C}^{\mathrm{spl}}}^\times \cong \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2
 $$
 
 as a group, with the isomorphism sending $Q$ to $(\rho, \phi, \sigma_+, \sigma_-)$ where $\rho = \sqrt{|\langle Q\rangle_{*}|}$, $\sigma_\pm = \operatorname{sgn} Q_\pm \in \{\pm 1\}$ and
@@ -125,7 +125,7 @@ $$
 Q = \rho\,\big(\sigma_+ \Pi_+ + \sigma_- \Pi_-\big)\exp(\phi j).
 $$
 
-**Proof.** The map $Q \mapsto (Q_+, Q_-)$ is a ring isomorphism $\mathbb{D} \to \mathbb{R} \times \mathbb{R}$, hence restricts to an isomorphism of unit groups, and $(Q^{-1})_\pm = Q_\pm^{-1}$. Each factor $\mathbb{R}^\times$ is $\mathbb{R}_{>0} \times \{\pm1\}$ through $t \mapsto (|t|, t/|t|)$. Hence $\mathbb{D}^\times \cong \mathbb{R}_{>0}^2 \times (\mathbb{Z}/2)^2$, which has four components and is isomorphic to $\mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2)^2$ because $\mathbb{R}_{>0}^2 \cong \mathbb{R}_{>0} \times \mathbb{R}_{>0}$ and $\mathbb{R}_{>0} \cong \mathbb{R}$ by the logarithm. In the coordinates $(Q_+, Q_-)$ the identity component is $Q_+ > 0$, $Q_- > 0$, and the norm there is positive; transporting back through $\exp(\phi j)$ gives the stated form. The factors of the isomorphism are the two moduli $\lvert Q_+ \rvert, \lvert Q_- \rvert$, written as the geometric mean $\rho$ and the ratio $\exp(2\phi)$, and the two signs $\sigma_\pm$.
+**Proof.** The map $Q \mapsto (Q_+, Q_-)$ is a ring isomorphism $\mathbb{C}^{\mathrm{spl}} \to \mathbb{R} \times \mathbb{R}$, hence restricts to an isomorphism of unit groups, and $(Q^{-1})_\pm = Q_\pm^{-1}$. Each factor $\mathbb{R}^\times$ is $\mathbb{R}_{>0} \times \{\pm1\}$ through $t \mapsto (|t|, t/|t|)$. Hence ${\mathbb{C}^{\mathrm{spl}}}^\times \cong \mathbb{R}_{>0}^2 \times (\mathbb{Z}/2)^2$, which has four components and is isomorphic to $\mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2)^2$ because $\mathbb{R}_{>0}^2 \cong \mathbb{R}_{>0} \times \mathbb{R}_{>0}$ and $\mathbb{R}_{>0} \cong \mathbb{R}$ by the logarithm. In the coordinates $(Q_+, Q_-)$ the identity component is $Q_+ > 0$, $Q_- > 0$, and the norm there is positive; transporting back through $\exp(\phi j)$ gives the stated form. The factors of the isomorphism are the two moduli $\lvert Q_+ \rvert, \lvert Q_- \rvert$, written as the geometric mean $\rho$ and the ratio $\exp(2\phi)$, and the two signs $\sigma_\pm$.
 
 For non-zero $Q$, the factorisation $Q = \rho u$ with $\rho > 0$ and $\langle u\rangle_{*} = \pm 1$ is the **polar decomposition** of a split complex number, the analogue of $Q = \sqrt{\langle Q\rangle_{*}}\,u$ in the complex case, with the circle replaced by the union of the two hyperbolas $N = 1$ and $N = -1$. The unit group is not compact, because the branch $\mathcal{H}^+$ is a hyperbola, and it is abelian, as the multiplicative group of a commutative ring must be.
 
@@ -142,7 +142,7 @@ For non-zero $Q$, the factorisation $Q = \rho u$ with $\rho > 0$ and $\langle u\
 **Definition.** For $u \in \mathcal{H}$ the **hyperbolic rotation** determined by $u$ is
 
 $$
-R_u : \mathbb{D} \to \mathbb{D}, \qquad R_u(Q) = uQ.
+R_u : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}, \qquad R_u(Q) = uQ.
 $$
 
 **Theorem.** For every $u \in \mathcal{H}$, the map $R_u$ is an isometry of $\langle\cdot,\cdot\rangle_{*}$, with $R_u R_v = R_{uv}$ and $R_u^{-1} = R_{u^{-1}} = R_{\bar u}$. Consequently
@@ -282,16 +282,16 @@ The quantity $s = \tanh\phi$ is bounded, while $\phi$ is not, and the group law 
 **Definition.** For $u \in \mathcal{H}$ the **reflection** determined by $u$ is
 
 $$
-S_u : \mathbb{D} \to \mathbb{D}, \qquad S_u(Q) = u\bar Q.
+S_u : \mathbb{C}^{\mathrm{spl}} \to \mathbb{C}^{\mathrm{spl}}, \qquad S_u(Q) = u\bar Q.
 $$
 
-**Theorem.** For every $u \in \mathcal{H}$ the map $S_u$ is an isometry of $\langle\cdot,\cdot\rangle_{*}$ with $\det S_u = -1$ and $S_u^2 = \mathrm{id}$; it is $\mathbb{R}$-linear but not $\mathbb{D}$-linear. In the basis $\{1,j\}$ it has the matrix
+**Theorem.** For every $u \in \mathcal{H}$ the map $S_u$ is an isometry of $\langle\cdot,\cdot\rangle_{*}$ with $\det S_u = -1$ and $S_u^2 = \mathrm{id}$; it is $\mathbb{R}$-linear but not $\mathbb{C}^{\mathrm{spl}}$-linear. In the basis $\{1,j\}$ it has the matrix
 
 $$
 M_u\, \kappa, \qquad \kappa = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
 $$
 
-**Proof.** $\langle u\bar Q\rangle_{*} = \langle u\rangle_{*}\langle \bar Q\rangle_{*} = \langle Q\rangle_{*}$, since $\langle \bar Q\rangle_{*} = \langle Q\rangle_{*}$. Conjugation has matrix $\kappa$ and determinant $-1$, the matrix $M_u$ has determinant $1$, so $\det S_u = -1$. That $S_u$ is an involution is $u\overline{u\bar Q} = u\bar u Q = Q$ because $u\bar u = \langle u\rangle_{*} = 1$. Finally $S_u(j) = u\bar j = -uj = -j u \neq jS_u(1) = ju$, so $S_u$ is not $\mathbb{D}$-linear.
+**Proof.** $\langle u\bar Q\rangle_{*} = \langle u\rangle_{*}\langle \bar Q\rangle_{*} = \langle Q\rangle_{*}$, since $\langle \bar Q\rangle_{*} = \langle Q\rangle_{*}$. Conjugation has matrix $\kappa$ and determinant $-1$, the matrix $M_u$ has determinant $1$, so $\det S_u = -1$. That $S_u$ is an involution is $u\overline{u\bar Q} = u\bar u Q = Q$ because $u\bar u = \langle u\rangle_{*} = 1$. Finally $S_u(j) = u\bar j = -uj = -j u \neq jS_u(1) = ju$, so $S_u$ is not $\mathbb{C}^{\mathrm{spl}}$-linear.
 
 So the reflections are the anti-linear isometries, exactly as in the complex plane, where they are the maps $Q \mapsto u\bar Q$. The element $u = 1$ gives the plain conjugation $\bar\cdot$, whose matrix is $\kappa$.
 
@@ -418,7 +418,7 @@ So the rotation subgroup is normal and its complement is a single coset, the ext
 
 ### The Null Cone
 
-**Proposition.** The null cone $\{\langle Q\rangle_{*} = 0\}$ is the union of the two lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; its non-zero elements are exactly the zero divisors of $\mathbb{D}$, and $\Pi_+$ and $\Pi_-$ are the primitive idempotents.
+**Proposition.** The null cone $\{\langle Q\rangle_{*} = 0\}$ is the union of the two lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; its non-zero elements are exactly the zero divisors of $\mathbb{C}^{\mathrm{spl}}$, and $\Pi_+$ and $\Pi_-$ are the primitive idempotents.
 
 **Proof.** $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when $Q_+ = 0$ or $Q_- = 0$; these are the lines spanned by $\Pi_-$ and $\Pi_+$ respectively. An element $B$ is a zero divisor exactly when it is not a unit, that is, when $\langle B\rangle_{*} = 0$, by the unit criterion.
 
@@ -467,7 +467,7 @@ The complex rotation group is compact and the angle is periodic, so a rotation i
 
 ## Summary
 
-The split plane carries the indefinite **norm** $\langle q+jq'\rangle_{*} = q^2 - q'^2$ of signature $(1,1)$ and its **polar form** $g(Q,B) = qb - q'b'$. The **isometries** of $\langle\cdot,\cdot\rangle_{*}$ are exactly the maps $Q \mapsto uQ$ and $Q \mapsto u\bar Q$ with $\langle u\rangle_{*} = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **unit group** $\mathbb{D}^\times$ is the complement of the null cone, with four components and polar decomposition $Q = \rho u$, $\rho > 0$, $\langle u\rangle_{*} = \pm 1$.
+The split plane carries the indefinite **norm** $\langle q+jq'\rangle_{*} = q^2 - q'^2$ of signature $(1,1)$ and its **polar form** $g(Q,B) = qb - q'b'$. The **isometries** of $\langle\cdot,\cdot\rangle_{*}$ are exactly the maps $Q \mapsto uQ$ and $Q \mapsto u\bar Q$ with $\langle u\rangle_{*} = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **unit group** ${\mathbb{C}^{\mathrm{spl}}}^\times$ is the complement of the null cone, with four components and polar decomposition $Q = \rho u$, $\rho > 0$, $\langle u\rangle_{*} = \pm 1$.
 
 The **unit hyperbola** $\mathcal{H} = \{\langle Q\rangle_{*} = 1\}$ has two branches, parametrised by the **hyperbolic angle** through $u = \exp(\phi j) = \cosh\phi + j\sinh\phi$, and $\mathcal{H}^+ \cong \mathbb{R}$ via the additive angle. The **hyperbolic rotation** $R_u(Q) = uQ$ is an isometry, realises $\mathcal{H}$ as $SO(1,1)$ through $u \mapsto R_u$, and in the idempotent coordinates is the diagonal map $(Q_+, Q_-) \mapsto (\exp(\phi)Q_+, \exp(-\phi)Q_-)$, a squeeze that preserves the product $Q_+Q_-$ and hence the form. The composition law is the addition of angles, $SO^+(1,1) \cong (\mathbb{R},+)$, and the group law transported to the interval $(-1,1)$ by $s = \tanh\phi$ is $s \star t = (s+t)/(1+st)$. The Lie algebra is $\mathrm{SO}(1,1) = \mathbb{R}J$ with $J^2 = I$, and the exponential is a bijection onto the identity component.
 
@@ -477,7 +477,7 @@ The **reflection** $S_u(Q) = u\bar Q$ has determinant $-1$, is an involution, fi
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
+| $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\bar Q = q - jq'$ | Split complex conjugate |
 | $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, signature $(1,1)$ |
@@ -486,7 +486,7 @@ The **reflection** $S_u(Q) = u\bar Q$ has determinant $-1$, is an involution, fi
 | $\{\langle Q\rangle_{*} = 0\}$ | Null cone, the zero-divisor set |
 | $\Pi_+ = \tfrac12(1+j), \ \Pi_- = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_+\Pi_- = 0$ |
 | $Q = Q_+\Pi_+ + Q_-\Pi_-$, $Q_+ = q+q'$, $Q_- = q-q'$ | Idempotent decomposition and coordinates |
-| $\mathbb{D}^\times$, $\mathbb{R}^\times$ | Unit groups of $\mathbb{D}$ and of $\mathbb{R}$; $\mathbb{R}_{>0}$ the positive reals |
+| ${\mathbb{C}^{\mathrm{spl}}}^\times$, $\mathbb{R}^\times$ | Unit groups of $\mathbb{C}^{\mathrm{spl}}$ and of $\mathbb{R}$; $\mathbb{R}_{>0}$ the positive reals |
 | $\mathbb{Z}/2\mathbb{Z}$, $\rtimes$ | The two-element group, and the semidirect product |
 | $O(1,1)$ | Orthogonal group of $\langle\cdot,\cdot\rangle_{*}$ |
 | $SO(1,1)$, $SO^+(1,1)$ | Determinant-one subgroup and its identity component |

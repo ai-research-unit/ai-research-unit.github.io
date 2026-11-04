@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The approximation of an inconsistent linear system by a solvable one is the least squares problem, and its two refinements are the total least squares problem, in which the data matrix as well as the right-hand side is allowed to be wrong, and the mixed problem, in which only some of the columns of the data matrix are wrong. This article reads the three problems over the reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, where the system is
+The approximation of an inconsistent linear system by a solvable one is the least squares problem, and its two refinements are the total least squares problem, in which the data matrix as well as the right-hand side is allowed to be wrong, and the mixed problem, in which only some of the columns of the data matrix are wrong. This article reads the three problems over the reduced biquaternion algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, where the system is
 
 $$
-AX\approx B,\qquad A\in\mathbb{B}_{\mathrm{r}}^{m\times n},\quad B\in\mathbb{B}_{\mathrm{r}}^{m\times d},\quad m\ge n+d,
+AX\approx B,\qquad A\in{\mathbb{B}^{\mathrm{red}}}^{m\times n},\quad B\in{\mathbb{B}^{\mathrm{red}}}^{m\times d},\quad m\ge n+d,
 $$
 
 and where the residual and the perturbations are measured by the positive definite norm $\langle\cdot\rangle_{\mathrm{ts}*}$ of the four products. The least squares problem minimises the size of the residual $AX-B$; the total least squares problem perturbs both $A$ and $B$ by the smallest amount that makes the system consistent; the mixed problem perturbs $B$ and a prescribed block of the columns of $A$ while leaving the rest exact.
@@ -27,7 +27,7 @@ For matrices the form is read entrywise, $K_{\mathrm F}(M,N)=\sum_{r,s}\langle M
 **Definition (the least squares problem).** Given $A$ and $B$, the **reduced biquaternion least squares problem** is
 
 $$
-\min_{X\in\mathbb{B}_{\mathrm{r}}^{n\times d}}K_{\mathrm F}(AX-B),
+\min_{X\in{\mathbb{B}^{\mathrm{red}}}^{n\times d}}K_{\mathrm F}(AX-B),
 $$
 
 and any minimiser $X$ is a **least squares solution**. The minimum measures the residual that no $X$ can remove.
@@ -38,7 +38,7 @@ $$
 \min_{X,E,G}K_{\mathrm F}\bigl([E,G]\bigr)\quad\text{subject to}\quad (A+E)X=B+G,
 $$
 
-where $E\in\mathbb{B}_{\mathrm{r}}^{m\times n}$ and $G\in\mathbb{B}_{\mathrm{r}}^{m\times d}$, and $[E,G]$ is the horizontal concatenation. Any $X$ of a minimising triple is a **total least squares solution**. The minimum is the smallest perturbation of the pair $(A,B)$ that makes the system consistent.
+where $E\in{\mathbb{B}^{\mathrm{red}}}^{m\times n}$ and $G\in{\mathbb{B}^{\mathrm{red}}}^{m\times d}$, and $[E,G]$ is the horizontal concatenation. Any $X$ of a minimising triple is a **total least squares solution**. The minimum is the smallest perturbation of the pair $(A,B)$ that makes the system consistent.
 
 **Definition (the mixed problem).** Partition $A=[A_{a},A_{b}]$ into its first $n_{1}$ columns $A_{a}$ and its last $n_{2}$ columns $A_{b}$, with $n_{1}+n_{2}=n$, and partition $X$ by rows accordingly, $X=\begin{pmatrix}X_{a}\\ X_{b}\end{pmatrix}$. The **reduced biquaternion mixed least squares and total least squares problem** is
 
@@ -46,7 +46,7 @@ $$
 \min_{X_{a},X_{b},E_{b},G}K_{\mathrm F}\bigl([E_{b},G]\bigr)\quad\text{subject to}\quad A_{a}X_{a}+(A_{b}+E_{b})X_{b}=B+G,
 $$
 
-with $E_{b}\in\mathbb{B}_{\mathrm{r}}^{m\times n_{2}}$; any $X$ of a minimising tuple is a **mixed solution**. The columns $A_{a}$ are held exact and only $A_{b}$ and $B$ are perturbed.
+with $E_{b}\in{\mathbb{B}^{\mathrm{red}}}^{m\times n_{2}}$; any $X$ of a minimising tuple is a **mixed solution**. The columns $A_{a}$ are held exact and only $A_{b}$ and $B$ are perturbed.
 
 ### The One Parameter
 
@@ -64,7 +64,7 @@ The three problems are therefore the three values of one parameter, the number $
 
 ### The Two Coordinates of a Matrix
 
-Each entry of a matrix over $\mathbb{B}_{\mathrm{r}}$ has two idempotent coordinates, and applying the coordinates entrywise splits the matrix.
+Each entry of a matrix over $\mathbb{B}^{\mathrm{red}}$ has two idempotent coordinates, and applying the coordinates entrywise splits the matrix.
 
 **Definition.** Write $M=M_{0}+M_{1}i+M_{2}j+M_{3}ij$ with real matrices $M_{0},M_{1},M_{2},M_{3}$. The **idempotent components** of $M$ are the complex matrices
 
@@ -75,7 +75,7 @@ $$
 **Proposition (the array isomorphism).** The map $M\mapsto(M^{+},M^{-})$ is an isomorphism of rings
 
 $$
-M_{m\times n}(\mathbb{B}_{\mathrm{r}})\longrightarrow M_{m\times n}(\mathbb{C})\times M_{m\times n}(\mathbb{C}),
+M_{m\times n}(\mathbb{B}^{\mathrm{red}})\longrightarrow M_{m\times n}(\mathbb{C})\times M_{m\times n}(\mathbb{C}),
 $$
 
 and $M=M^{+}\Pi_++M^{-}\Pi_-$ with the identity and the zero of the pair the identity and the zero matrices.
@@ -86,7 +86,7 @@ This is the array representation of *Reduced Biquaternion Other Algebraic Elemen
 
 ### The Multiplication Decouples
 
-**Theorem (the multiplication is componentwise).** For $M\in\mathbb{B}_{\mathrm{r}}^{m\times p}$ and $N\in\mathbb{B}_{\mathrm{r}}^{p\times n}$,
+**Theorem (the multiplication is componentwise).** For $M\in{\mathbb{B}^{\mathrm{red}}}^{m\times p}$ and $N\in{\mathbb{B}^{\mathrm{red}}}^{p\times n}$,
 
 $$
 (MN)^{+}=M^{+}N^{+},\qquad (MN)^{-}=M^{-}N^{-}.
@@ -94,7 +94,7 @@ $$
 
 *Proof.* Write $M=M^{+}\Pi_++M^{-}\Pi_-$ and $N=N^{+}\Pi_++N^{-}\Pi_-$; multiplying with $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$ and $\Pi_+\Pi_-=\Pi_-\Pi_+=0$ gives $MN=M^{+}N^{+}\Pi_++M^{-}N^{-}\Pi_-$, and the components are read off. Equivalently, the entrywise multiplication of the four real coefficient blocks is exactly the two complex matrix products of the components.
 
-The theorem is the reason every linear-algebraic problem over $\mathbb{B}_{\mathrm{r}}$ decouples: it is a statement about the algebra, not about the problem.
+The theorem is the reason every linear-algebraic problem over $\mathbb{B}^{\mathrm{red}}$ decouples: it is a statement about the algebra, not about the problem.
 
 ### The Metric Splits
 
@@ -106,7 +106,7 @@ $$
 K_{\mathrm F}(M,N)=\sum_{r=1}^{m}\sum_{s=1}^{n}\langle M_{rs},N_{rs}\rangle_{\mathrm{ts}*},
 $$
 
-with matrix norm $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$. Its real part is a real inner product on $\mathbb{B}_{\mathrm{r}}^{m\times n}$, read on the $4mn$ real coefficients.
+with matrix norm $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$. Its real part is a real inner product on ${\mathbb{B}^{\mathrm{red}}}^{m\times n}$, read on the $4mn$ real coefficients.
 
 **Theorem (the metric splits).** Let $M=M_{0}+M_{1}i+M_{2}j+M_{3}ij$. Then
 
@@ -158,7 +158,7 @@ The two theorems together are the statement that the reduced biquaternion approx
 
 The reduction is a statement about a form, and the form has an adjoint.
 
-**Proposition (the adjoint is the bar-transpose).** Equip $\mathbb{B}_{\mathrm{r}}^{m\times n}$ with the real inner product $\mathrm{Re}\,K_{\mathrm F}$. Then the adjoint of the left multiplication $X\mapsto AX$, $A\in\mathbb{B}_{\mathrm{r}}^{m\times n}$, is the left multiplication by
+**Proposition (the adjoint is the bar-transpose).** Equip ${\mathbb{B}^{\mathrm{red}}}^{m\times n}$ with the real inner product $\mathrm{Re}\,K_{\mathrm F}$. Then the adjoint of the left multiplication $X\mapsto AX$, $A\in{\mathbb{B}^{\mathrm{red}}}^{m\times n}$, is the left multiplication by
 
 $$
 A^{\dagger}=\bar A^{\mathsf T},\qquad (A^{\dagger})_{rs}=\overline{A_{sr}},
@@ -202,7 +202,7 @@ The normal equations of the theorem are the classical ones the article started f
 
 The reduction of the two theorems holds for an arbitrary reduced biquaternion unknown, in which the two components are free. Two smaller unknowns are obtained by imposing conditions, and they are the cases met in applications.
 
-**Definition.** An unknown matrix is **reduced biquaternion** if it ranges over $\mathbb{B}_{\mathrm{r}}^{n\times d}$; **complex** if it is fixed by the tessarine sign, $X_{\mathrm{ts}}=X$, equivalently $X^{+}=X^{-}$ with the common value a complex matrix; and **real** if it is fixed by the tessarine sign and the bar, equivalently $X^{+}=X^{-}$ is a real matrix, equivalently the coefficient blocks $X_{1},X_{2},X_{3}$ vanish.
+**Definition.** An unknown matrix is **reduced biquaternion** if it ranges over ${\mathbb{B}^{\mathrm{red}}}^{n\times d}$; **complex** if it is fixed by the tessarine sign, $X_{\mathrm{ts}}=X$, equivalently $X^{+}=X^{-}$ with the common value a complex matrix; and **real** if it is fixed by the tessarine sign and the bar, equivalently $X^{+}=X^{-}$ is a real matrix, equivalently the coefficient blocks $X_{1},X_{2},X_{3}$ vanish.
 
 **Theorem (the nesting).** The complex unknown is the reduced biquaternion unknown with the two components constrained to be equal, and the real unknown is the complex unknown with the common component constrained to be real:
 
@@ -232,7 +232,7 @@ The source works with the third row of the table, the real unknown, and its real
 
 ### The Coefficient Stack
 
-**Definition.** The **coefficient stack** of $M\in\mathbb{B}_{\mathrm{r}}^{m\times n}$ is the real matrix
+**Definition.** The **coefficient stack** of $M\in{\mathbb{B}^{\mathrm{red}}}^{m\times n}$ is the real matrix
 
 $$
 C_{M}=\begin{pmatrix}M_{0}\\ M_{1}\\ M_{2}\\ M_{3}\end{pmatrix}\in\mathbb{R}^{4m\times n},
@@ -262,7 +262,7 @@ $$
 
 *Proof.* The four blocks of the product are the four coefficient blocks of $MN$, computed from the multiplication of the algebra on the coefficient blocks; the same rule reproduces the four block rows of $M^{R}N^{R}$. The first block column of $M^{R}$ is the column of the four blocks $M_{0},M_{1},M_{2},M_{3}$.
 
-**Proposition (the rank of the stack).** The matrix $A\in\mathbb{B}_{\mathrm{r}}^{m\times n}$ has full column rank — the map $X\mapsto AX$ is injective on $\mathbb{B}_{\mathrm{r}}^{n\times d}$ — if and only if the coefficient stack $C_{A}$ has full real column rank $n$, equivalently if and only if both complex components $A^{+}$ and $A^{-}$ have full complex column rank.
+**Proposition (the rank of the stack).** The matrix $A\in{\mathbb{B}^{\mathrm{red}}}^{m\times n}$ has full column rank — the map $X\mapsto AX$ is injective on ${\mathbb{B}^{\mathrm{red}}}^{n\times d}$ — if and only if the coefficient stack $C_{A}$ has full real column rank $n$, equivalently if and only if both complex components $A^{+}$ and $A^{-}$ have full complex column rank.
 
 *Proof.* Injectivity of $X\mapsto AX$ is injectivity in both components, so it holds if and only if the two complex matrices have full column rank. The real and imaginary parts of $A^{+}$ and of $A^{-}$ stack, after an invertible real row operation, into the four coefficient blocks $A_{0},A_{1},A_{2},A_{3}$; an invertible row operation preserves the column rank, so the compound of the two complex stacks has rank $n$ exactly when $C_{A}$ does.
 
@@ -370,7 +370,7 @@ For the arbitrary reduced biquaternion unknown the algorithm is two complex ones
 
 ### The Complex Field
 
-**Corollary (the complex problems are the special case).** The complex weighted and total least squares problems are the reduced biquaternion ones for an unknown in the fixed space of the tessarine sign and data whose absent coordinates vanish, since the complex field is the subalgebra $\mathbb{C}$ of $\mathbb{B}_{\mathrm{r}}$ and the two components of such data coincide. The developed methods therefore solve the complex least squares, total least squares and mixed problems as the degenerate case.
+**Corollary (the complex problems are the special case).** The complex weighted and total least squares problems are the reduced biquaternion ones for an unknown in the fixed space of the tessarine sign and data whose absent coordinates vanish, since the complex field is the subalgebra $\mathbb{C}$ of $\mathbb{B}^{\mathrm{red}}$ and the two components of such data coincide. The developed methods therefore solve the complex least squares, total least squares and mixed problems as the degenerate case.
 
 *Proof.* For data with $A^{+}=A^{-}=A$ and $B^{+}=B^{-}=B$ the two complex factor problems coincide, and their common solution is the complex solution; the unknown in the fixed space of the tessarine sign is the complex unknown.
 
@@ -382,7 +382,7 @@ For the arbitrary reduced biquaternion unknown the algorithm is two complex ones
 
 The source restricts to a real unknown, and the reduced biquaternion case adds a phenomenon the division-algebra layers cannot show.
 
-**Proposition (invertibility is componentwise).** A square matrix $X\in M_{n}(\mathbb{B}_{\mathrm{r}})$ is invertible if and only if both components $X^{+}$ and $X^{-}$ are nonsingular complex matrices, and then $X^{-1}=(X^{+})^{-1}\Pi_++(X^{-})^{-1}\Pi_-$; otherwise $X$ is a zero divisor of the algebra of matrices. In particular the least squares or total least squares solution of a square unknown can be a zero divisor.
+**Proposition (invertibility is componentwise).** A square matrix $X\in M_{n}(\mathbb{B}^{\mathrm{red}})$ is invertible if and only if both components $X^{+}$ and $X^{-}$ are nonsingular complex matrices, and then $X^{-1}=(X^{+})^{-1}\Pi_++(X^{-})^{-1}\Pi_-$; otherwise $X$ is a zero divisor of the algebra of matrices. In particular the least squares or total least squares solution of a square unknown can be a zero divisor.
 
 *Proof.* The array isomorphism carries invertibility to invertibility in each factor, and an element of a direct product of rings is a unit exactly when both its entries are; a non-unit in the finite-dimensional algebra of matrices annihilates a nonzero matrix, so it is a zero divisor. For the example, take $B$ with vanishing $B^{-}$, so that $B=B_{0}(1+j)$ and $B^{-}=0$; then the least squares solution has $X^{-}=(A^{-})_{\mathrm{MP}}B^{-}=0$, so $X=X^{+}\Pi_+$ is annihilated by $\Pi_-$ on either side and is a zero divisor, although the problem is well posed and its residual is finite. For the single element unknown, $n=d=1$, the same example gives a nonzero $X$ with reduced norm $\langle X\rangle_{\mathrm{ts}}=\langle X^{+}\Pi_+\rangle_{\mathrm{ts}}=0$, a nonzero zero divisor of the algebra.
 
@@ -404,7 +404,7 @@ The numerical ordering of the three methods was recomputed on random instances; 
 
 ## Summary
 
-The three approximation problems over the reduced biquaternion algebra — least squares, total least squares and the mixed problem interpolating between them — all reduce, through the idempotent decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, to two complex problems, because the multiplication is componentwise and the norm $K$ splits as half the sum of the two squared complex Frobenius norms. For an arbitrary reduced biquaternion unknown the two complex problems are independent, for a complex unknown they share one complex unknown, and for a real unknown they share one real unknown; the minimum is nondecreasing along that chain. The form $K$ is a real inner product whose adjoint is the bar-transpose, so the normal equations decouple, and the Moore–Penrose inverse is the pair of the two complex pseudoinverses. The real unknown is the source's case: it is a classical real problem on the coefficient stack, whose algorithm is a Householder reduction of the exact block followed by a singular value decomposition of the reduced block, and whose existence and uniqueness hold exactly when the two spectral gaps separate and the block $V_{22}$ is nonsingular in each component. The coefficient stack and the real representation are the real readings of the matrix, and the complex representation $M^{C}$ is the complex one, with the two homogeneous components of $M$ in the hyperbolic unit as its blocks and the pair $(M^{+},M^{-})$ as its diagonalisation, the norm ladder being $\lVert M\rVert_{F}=\tfrac12\lVert M^{R}\rVert_{F}=\tfrac{1}{\sqrt2}\lVert M^{C}\rVert_{F}$. The complex field is the degenerate case of the construction, one right-hand side removes the matrix structure of the unknown, and the solution, unlike its counterparts in the division-algebra layers, may be a zero divisor of the algebra of matrices.
+The three approximation problems over the reduced biquaternion algebra — least squares, total least squares and the mixed problem interpolating between them — all reduce, through the idempotent decomposition $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, to two complex problems, because the multiplication is componentwise and the norm $K$ splits as half the sum of the two squared complex Frobenius norms. For an arbitrary reduced biquaternion unknown the two complex problems are independent, for a complex unknown they share one complex unknown, and for a real unknown they share one real unknown; the minimum is nondecreasing along that chain. The form $K$ is a real inner product whose adjoint is the bar-transpose, so the normal equations decouple, and the Moore–Penrose inverse is the pair of the two complex pseudoinverses. The real unknown is the source's case: it is a classical real problem on the coefficient stack, whose algorithm is a Householder reduction of the exact block followed by a singular value decomposition of the reduced block, and whose existence and uniqueness hold exactly when the two spectral gaps separate and the block $V_{22}$ is nonsingular in each component. The coefficient stack and the real representation are the real readings of the matrix, and the complex representation $M^{C}$ is the complex one, with the two homogeneous components of $M$ in the hyperbolic unit as its blocks and the pair $(M^{+},M^{-})$ as its diagonalisation, the norm ladder being $\lVert M\rVert_{F}=\tfrac12\lVert M^{R}\rVert_{F}=\tfrac{1}{\sqrt2}\lVert M^{C}\rVert_{F}$. The complex field is the degenerate case of the construction, one right-hand side removes the matrix structure of the unknown, and the solution, unlike its counterparts in the division-algebra layers, may be a zero divisor of the algebra of matrices.
 
 ## Summary of Notation
 

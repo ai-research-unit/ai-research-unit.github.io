@@ -230,7 +230,7 @@ a finite product of Artinian local rings, where $R_{\mathrm{M}_i}$ is the locali
 
 **(b)** The ring $k[x]/(x^3)$ is local Artinian with maximal ideal $(x)$ and nilradical $(x)$; its elements are the classes of $a_0 + a_1 x + a_2 x^2$.
 
-**(c)** The dual numbers $\mathbb{D}'_F = F[x]/(x^2)$ of *Dual Numbers Algebra* are local Artinian with maximal ideal $(\varepsilon)$ of square zero. This is the smallest local Artinian ring that is not a field, and it is the model for the infinitesimal thickening used in deformation theory.
+**(c)** The dual numbers $\mathbb{C}^{\mathrm{dua}}_F = F[x]/(x^2)$ of *Dual Numbers Algebra* are local Artinian with maximal ideal $(\varepsilon)$ of square zero. This is the smallest local Artinian ring that is not a field, and it is the model for the infinitesimal thickening used in deformation theory.
 
 **(d)** A finite product of fields is reduced Artinian; over a field $k$, $k \times k$ is Artinian with two maximal ideals.
 
@@ -287,7 +287,7 @@ The intermediate notion is finite length: a ring has a composition series exactl
 | $I_0 \supsetneq \cdots \supsetneq I_\ell$ | Composition series of length $\ell$ |
 | $\ell(R)$ | Length of a ring of finite length |
 | $\dim R$ | Krull dimension (defined here; developed) |
-| $\mathbb{D}'_F = F[x]/(x^2)$ | Dual numbers, a local Artinian ring |
+| $\mathbb{C}^{\mathrm{dua}}_F = F[x]/(x^2)$ | Dual numbers, a local Artinian ring |
 | $\operatorname{Spec}(R)$ | The set of prime ideals of $R$ |
 
 

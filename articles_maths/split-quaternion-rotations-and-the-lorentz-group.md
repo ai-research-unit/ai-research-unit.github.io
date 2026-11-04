@@ -12,13 +12,13 @@ The split-quaternion algebra, its vector subspace $V$, its split-quaternion norm
 **Definition.** The **norm-one group** of the algebra is
 
 $$
-\mathrm{U} = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = 1\},
+\mathrm{U} = \{\tilde q \in \mathbb{H}^{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 1\},
 $$
 
 and the set of elements of norm $\pm 1$ is
 
 $$
-\mathrm{U}^{\pm} = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{SL}_2^{\pm}(\mathbb{R}).
+\mathrm{U}^{\pm} = \{\tilde q \in \mathbb{H}^{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{SL}_2^{\pm}(\mathbb{R}).
 $$
 
 Both are groups under multiplication, and $\mathrm{U}$ is a subgroup of $\mathrm{U}^{\pm}$.
@@ -34,7 +34,7 @@ $$
 and the two components are interchanged by multiplication by $\vec e_y$. The full group of units is
 
 $$
-\mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\},
+{\mathbb{H}^{\mathrm{spl}}}^{\times} = \{N \neq 0\},
 $$
 
 its centre is $\mathbb{R}^{\times}$, and it has the two components $\{N > 0\}$ and $\{N < 0\}$.
@@ -54,7 +54,7 @@ $$
 **Theorem (The Adjoint Representation).** For every unit $\tilde u$, the map $\Theta(\tilde u)$ is a real-linear automorphism of $V$ preserving the form $\langle\cdot\rangle_{\natural}$; the assignment $\tilde u \mapsto \Theta(\tilde u)$ is a group homomorphism
 
 $$
-\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \longrightarrow O(V, N) \cong O(2,1),
+\Theta : {\mathbb{H}^{\mathrm{spl}}}^{\times} \longrightarrow O(V, N) \cong O(2,1),
 $$
 
 whose kernel is the centre $\mathbb{R}^{\times}$ and whose image lies in $SO(2,1)$. On the norm-one group the restriction
@@ -67,31 +67,31 @@ $$
 
 has kernel $\{\pm 1\}$.
 
-**Proof.** *The maps land in $V$.* Conjugation by $\tilde u$ is an algebra automorphism, and it commutes with the conjugation, since $\overline{\tilde u\vec q\tilde u^{-1}} = \tilde u^{\natural}\,\vec q^{\natural}\,(\tilde u^{\natural})^{-1}$ and $\overline{\tilde u^{-1}} = (\tilde u^{\natural})^{-1}$. The vector subspace is the $-1$ eigenspace of the conjugation by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), so it is mapped to itself. *The form is preserved.* $\langle \tilde u\vec q\tilde u^{-1}\rangle_{\natural} = \langle\tilde u\rangle_{\natural}\langle\vec q\rangle_{\natural}\langle\tilde u\rangle_{\natural}^{-1} = \langle\vec q\rangle_{\natural}$ by multiplicativity, since $\langle\cdot\rangle_{\natural}$ is real and nonzero on a unit. Hence $\Theta(\tilde u) \in O(V,N)$. *Kernel.* If $\Theta(\tilde u) = \mathrm{id}$ then $\tilde u$ commutes with every element of $V$; since $1$ and $V$ generate the algebra, $\tilde u$ is central, so $\tilde u \in \mathbb{R}^{\times}$. Conversely every nonzero scalar is in the kernel. *Determinant.* The map $\det\circ\,\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \to \{\pm 1\}$ is a continuous homomorphism. Its domain has the two components $\{N>0\}$ and $\{N<0\}$; the first is connected, so $\det\Theta \equiv 1$ there. On the second component, the computation of (*Split-Quaternion Algebra*, §*The Multiplication Table*) gives $\vec e_y \vec e_x \vec e_y = -\vec e_x$, $\vec e_y \vec e_y \vec e_y = \vec e_y$, $\vec e_y \vec e_z \vec e_y = -\vec e_z$, so $\Theta(\vec e_y) = \operatorname{diag}(-1,1,-1)$ in the basis $\vec e_x,\vec e_y,\vec e_z$ and $\det\Theta(\vec e_y) = +1$. Hence $\det\Theta \equiv 1$ and the image lies in $SO(2,1)$. *The restricted kernel.* The kernel on $\mathrm{U}$ is the centre intersected with $\{N=1\}$, that is $\{\pm 1\}$.
+**Proof.** *The maps land in $V$.* Conjugation by $\tilde u$ is an algebra automorphism, and it commutes with the conjugation, since $\overline{\tilde u\vec q\tilde u^{-1}} = \tilde u^{\natural}\,\vec q^{\natural}\,(\tilde u^{\natural})^{-1}$ and $\overline{\tilde u^{-1}} = (\tilde u^{\natural})^{-1}$. The vector subspace is the $-1$ eigenspace of the conjugation by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), so it is mapped to itself. *The form is preserved.* $\langle \tilde u\vec q\tilde u^{-1}\rangle_{\natural} = \langle\tilde u\rangle_{\natural}\langle\vec q\rangle_{\natural}\langle\tilde u\rangle_{\natural}^{-1} = \langle\vec q\rangle_{\natural}$ by multiplicativity, since $\langle\cdot\rangle_{\natural}$ is real and nonzero on a unit. Hence $\Theta(\tilde u) \in O(V,N)$. *Kernel.* If $\Theta(\tilde u) = \mathrm{id}$ then $\tilde u$ commutes with every element of $V$; since $1$ and $V$ generate the algebra, $\tilde u$ is central, so $\tilde u \in \mathbb{R}^{\times}$. Conversely every nonzero scalar is in the kernel. *Determinant.* The map $\det\circ\,\Theta : {\mathbb{H}^{\mathrm{spl}}}^{\times} \to \{\pm 1\}$ is a continuous homomorphism. Its domain has the two components $\{N>0\}$ and $\{N<0\}$; the first is connected, so $\det\Theta \equiv 1$ there. On the second component, the computation of (*Split-Quaternion Algebra*, §*The Multiplication Table*) gives $\vec e_y \vec e_x \vec e_y = -\vec e_x$, $\vec e_y \vec e_y \vec e_y = \vec e_y$, $\vec e_y \vec e_z \vec e_y = -\vec e_z$, so $\Theta(\vec e_y) = \operatorname{diag}(-1,1,-1)$ in the basis $\vec e_x,\vec e_y,\vec e_z$ and $\det\Theta(\vec e_y) = +1$. Hence $\det\Theta \equiv 1$ and the image lies in $SO(2,1)$. *The restricted kernel.* The kernel on $\mathrm{U}$ is the centre intersected with $\{N=1\}$, that is $\{\pm 1\}$.
 
 **Corollary (The Image of the Unit Group).** The image of the full unit group is
 
 $$
 \boxed{\;
-\Theta(\mathbb{H}_{\mathrm{s}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R})
+\Theta({\mathbb{H}^{\mathrm{spl}}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R})
 \;},
 $$
 
 and the image of the norm-one group is $\Theta(\mathrm{U}) = SO^{+}(2,1)$, the identity component.
 
-**Proof.** The image of $\mathbb{H}_{\mathrm{s}}^{\times}$ is a subgroup of $SO(2,1)$ containing the image of the connected group $\mathrm{U}$, which is connected and contains the identity, so the image contains the identity component; the domain has exactly two components and the image lies in $SO(2,1)$, which has two components, so the image is all of $SO(2,1)$. The second statement is proved below, where $\Theta(\mathrm{U})$ is identified with $\mathrm{SO}^{+}(2,1)$ through the double cover.
+**Proof.** The image of ${\mathbb{H}^{\mathrm{spl}}}^{\times}$ is a subgroup of $SO(2,1)$ containing the image of the connected group $\mathrm{U}$, which is connected and contains the identity, so the image contains the identity component; the domain has exactly two components and the image lies in $SO(2,1)$, which has two components, so the image is all of $SO(2,1)$. The second statement is proved below, where $\Theta(\mathrm{U})$ is identified with $\mathrm{SO}^{+}(2,1)$ through the double cover.
 
 ## The Multiplication Operators
 
 The adjoint action is not the only way an element acts on the algebra: left and right multiplication also realise it as operators on itself.
 
-**Definition.** For $\tilde q \in \mathbb{H}_{\mathrm{s}}$ the **left multiplication operator** and the **right multiplication operator** are
+**Definition.** For $\tilde q \in \mathbb{H}^{\mathrm{spl}}$ the **left multiplication operator** and the **right multiplication operator** are
 
 $$
 L_{\tilde q} : \tilde q_2 \mapsto \tilde q \tilde q_2, \qquad R_{\tilde q} : \tilde q_2 \mapsto \tilde q_2\tilde q .
 $$
 
-Both are $\mathbb{R}$-linear endomorphisms of the four-dimensional space, and the assignments $\tilde q \mapsto L_{\tilde q}$, $\tilde q \mapsto R_{\tilde q}$ are $\mathbb{R}$-algebra (anti-)homomorphisms into $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$; the first is the **left regular representation**. Multiplication differs from the adjoint action in kind: it is not an algebra automorphism, since it does not carry $1$ to $1$, whereas the adjoint action fixes the scalar line pointwise.
+Both are $\mathbb{R}$-linear endomorphisms of the four-dimensional space, and the assignments $\tilde q \mapsto L_{\tilde q}$, $\tilde q \mapsto R_{\tilde q}$ are $\mathbb{R}$-algebra (anti-)homomorphisms into $\operatorname{End}_{\mathbb{R}}(\mathbb{H}^{\mathrm{spl}})$; the first is the **left regular representation**. Multiplication differs from the adjoint action in kind: it is not an algebra automorphism, since it does not carry $1$ to $1$, whereas the adjoint action fixes the scalar line pointwise.
 
 **Proposition.** Both $L_{\tilde q}$ and $R_{\tilde q}$ have trace $4\operatorname{Sc}(\tilde q) = 4q_t$ and determinant $\langle\tilde q\rangle_{\natural}^2$, and $L_{\tilde q}$ is invertible if and only if $\tilde q$ is a unit.
 
@@ -206,7 +206,7 @@ Each nontrivial orbit is a level set of $\langle\cdot\rangle_{\natural}$ scaled 
 
 ## Invariants and the Action on the Distinguished Subspaces
 
-Conjugation by a unit is an automorphism of the whole algebra, not only a linear map of $V$ (*Split-Quaternion Automorphisms and Derivations*), so it preserves the two summands of $\mathbb{H}_{\mathrm{s}} = S\oplus V$ separately and never mixes them: it acts trivially on the scalar line $S$, which it fixes pointwise, and by the Lorentz action on $V$. On the whole algebra the invariants of the adjoint action are therefore the scalar part $q_t$ and the split-quaternion norm $\langle\tilde q\rangle_{\natural}$, the first because $S$ is fixed and the second because the action is an automorphism; this is why the whole group-theoretic content of the operator sits on the vector subspace.
+Conjugation by a unit is an automorphism of the whole algebra, not only a linear map of $V$ (*Split-Quaternion Automorphisms and Derivations*), so it preserves the two summands of $\mathbb{H}^{\mathrm{spl}} = S\oplus V$ separately and never mixes them: it acts trivially on the scalar line $S$, which it fixes pointwise, and by the Lorentz action on $V$. On the whole algebra the invariants of the adjoint action are therefore the scalar part $q_t$ and the split-quaternion norm $\langle\tilde q\rangle_{\natural}$, the first because $S$ is fixed and the second because the action is an automorphism; this is why the whole group-theoretic content of the operator sits on the vector subspace.
 
 The adjoint action on the distinguished subspaces is as follows.
 
@@ -215,9 +215,9 @@ The adjoint action on the distinguished subspaces is as follows.
 | $S = \mathbb{R}\cdot 1$ | $S$ | yes, pointwise | the centre is fixed |
 | $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $V$ | yes | the Lorentz action of signature $(2,1)$ |
 | a line $\mathbb{R} \vec q \subset V$ | a line $\mathbb{R}\,\Theta(g)\vec q$ | yes as a class | the sign of $\langle \vec q\rangle_{\natural}$ is preserved |
-| $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ | a conjugate split-complex plane | only if $g$ normalises it | automorphisms permute the split-complex planes |
-| $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | a conjugate split-complex plane | only if $g$ normalises it | as above |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ | a minimal left ideal | only if $g$ normalises it | idempotents map to idempotents |
+| $\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1,\vec e_y\}$ | a conjugate split-complex plane | only if $g$ normalises it | automorphisms permute the split-complex planes |
+| $\mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1,\vec e_z\}$ | a conjugate split-complex plane | only if $g$ normalises it | as above |
+| $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$ | a minimal left ideal | only if $g$ normalises it | idempotents map to idempotents |
 
 The first three rows are the content of the preceding sections. The remaining rows record that an automorphism sends a subalgebra to a subalgebra of the same isomorphism type: the split-complex planes are permuted among their conjugates, since the split Cartan subalgebras of $M_2(\mathbb{R})$ are conjugate, and a unit normalises a given plane exactly when it preserves the pair of isotropic lines of that plane. The idempotents form a single orbit-like set under the automorphism group and the minimal left ideals are permuted accordingly; this is developed alongside the idempotent theory in *Split-Quaternion Ideals and Peirce Decomposition*.
 
@@ -229,7 +229,7 @@ Every nonzero split-quaternion has a polar decomposition $\tilde q = \rho \tilde
 
 ### The Quaternion Case
 
-| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ |
+| | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ |
 |---|---|---|
 | unit group | $Sp(1) \cong S^3$, compact, simply connected | $\mathrm{SL}_2(\mathbb{R})$, non-compact, not simply connected |
 | norm levels | $N = 1$ only | $N = \pm 1$, two components |
@@ -242,7 +242,7 @@ The quaternion column is the classical description of the unit quaternions as th
 
 ### The Split-Biquaternion Case
 
-The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$ of the notation table is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here. The one thing worth stating from the conventions is a warning about size: the present article's isometry group is the three-dimensional $\mathrm{SO}^{+}(2,1)$ acting on the three-dimensional vector subspace of a four-dimensional algebra, and the eight-dimensional relative is a different system with its own, larger, geometry, treated later. The name *split quaternions* belongs to the four-dimensional algebra of this category and not to $\mathbb{H}_{\mathbb{D}}$.
+The eight-dimensional algebra $\mathbb{B}^{\mathrm{spl}}$ of the notation table is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here. The one thing worth stating from the conventions is a warning about size: the present article's isometry group is the three-dimensional $\mathrm{SO}^{+}(2,1)$ acting on the three-dimensional vector subspace of a four-dimensional algebra, and the eight-dimensional relative is a different system with its own, larger, geometry, treated later. The name *split quaternions* belongs to the four-dimensional algebra of this category and not to $\mathbb{B}^{\mathrm{spl}}$.
 
 ## Summary
 
@@ -260,7 +260,7 @@ The roots of $\tilde\xi^2 = -1$ generate the compact (elliptic) one-parameter su
 |---|---|---|
 | $\mathrm{U} = \{N=1\}$ | the norm-one group, $\cong \mathrm{SL}_2(\mathbb{R})$ | *Split-Quaternion Norm and Invertibility* |
 | $\mathrm{U}^{\pm} = \{N = \pm 1\}$ | $\mathrm{SL}_2^{\pm}(\mathbb{R})$, two components | this article |
-| $\mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\}$ | the group of units | *Split-Quaternion Norm and Invertibility* |
+| ${\mathbb{H}^{\mathrm{spl}}}^{\times} = \{N \neq 0\}$ | the group of units | *Split-Quaternion Norm and Invertibility* |
 | $\Theta(\tilde u)\vec q = \tilde u\vec q\tilde u^{-1}$ | the adjoint action on $V$ | this article |
 | $L_{\tilde q}(\tilde q_2) = \tilde q\tilde q_2$, $R_{\tilde q}(\tilde q_2) = \tilde q_2\tilde q$ | left and right multiplication operators; trace $4q_t$, determinant $\langle\tilde q\rangle_{\natural}^2$ | this article |
 | $(V,N) \cong \mathbb{R}^{2,1}$ | the vector subspace with its signature-$(2,1)$ form | *Split-Quaternion Algebra* |

@@ -14,7 +14,7 @@ $$
 \lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangledown}\bar Q_{\blacktriangledown}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}
 \;}
 $$
-is a norm on $\mathbb{B}_{\mathrm{r}}$: it is non-negative and vanishes only at $\breve Q=0$, it is homogeneous, $\lVert\lambda \breve Q\rVert=\lvert\lambda\rvert\lVert \breve Q\rVert$ for real $\lambda$, and it satisfies the triangle inequality.
+is a norm on $\mathbb{B}^{\mathrm{red}}$: it is non-negative and vanishes only at $\breve Q=0$, it is homogeneous, $\lVert\lambda \breve Q\rVert=\lvert\lambda\rvert\lVert \breve Q\rVert$ for real $\lambda$, and it satisfies the triangle inequality.
 
 *Proof.* $\langle \breve Q\rangle_{\mathrm{ts}*}=Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangledown}\bar Q_{\blacktriangledown}$ is a sum of four squares of real numbers, non-negative and vanishing only when all four vanish, which is $\breve Q=0$; homogeneity is the homogeneity of a square root of a sum of squares under real scaling; and the square root of a positive definite quadratic form is the Euclidean norm of the coordinate quadruple, for which the triangle inequality is the Cauchy–Schwarz inequality.
 
@@ -26,11 +26,11 @@ is a norm on $\mathbb{B}_{\mathrm{r}}$: it is non-negative and vanishes only at 
 
 **All norms on the finite-dimensional space are equivalent, so the topology they give is unique.**
 
-**Theorem (equivalence).** Any two norms on $\mathbb{B}_{\mathrm{r}}$ are equivalent: there are constants such that each is bounded by a constant multiple of the other, so they define the same open sets, the same convergent sequences and the same continuous functions.
+**Theorem (equivalence).** Any two norms on $\mathbb{B}^{\mathrm{red}}$ are equivalent: there are constants such that each is bounded by a constant multiple of the other, so they define the same open sets, the same convergent sequences and the same continuous functions.
 
 *Proof.* On a finite-dimensional real vector space every norm is equivalent to the Euclidean one, by the compactness of the unit sphere; the space here is $\mathbb{R}^{4}$ through the coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$.
 
-**Corollary (the topology is the standard one).** The topology of $\mathbb{B}_{\mathrm{r}}$ is the standard topology of $\mathbb{R}^{4}$, independent of the norm chosen; it is metrisable, and the metric of $\langle\cdot\rangle_{\mathrm{ts}*}$,
+**Corollary (the topology is the standard one).** The topology of $\mathbb{B}^{\mathrm{red}}$ is the standard topology of $\mathbb{R}^{4}$, independent of the norm chosen; it is metrisable, and the metric of $\langle\cdot\rangle_{\mathrm{ts}*}$,
 $$
 \boxed{\;
 d(\breve Q_{1},\breve Q_{2})=\lVert \breve Q_{1}-\breve Q_{2}\rVert=\sqrt{\langle \breve Q_{1}-\breve Q_{2}\rangle_{\mathrm{ts}*}}
@@ -42,7 +42,7 @@ is one of the compatible metrics. The space is complete and locally compact.
 
 ## The Topology
 
-**Definition.** The **Euclidean topology** of $\mathbb{B}_{\mathrm{r}}$ is the topology induced by the norm $\lVert\cdot\rVert$; the **open ball** of centre $\breve Q$ and radius $r>0$ is $B(\breve Q,r)=\{\breve Q_{2}:\lVert \breve Q-\breve Q_{2}\rVert<r\}$, and the **closed ball** is its closure.
+**Definition.** The **Euclidean topology** of $\mathbb{B}^{\mathrm{red}}$ is the topology induced by the norm $\lVert\cdot\rVert$; the **open ball** of centre $\breve Q$ and radius $r>0$ is $B(\breve Q,r)=\{\breve Q_{2}:\lVert \breve Q-\breve Q_{2}\rVert<r\}$, and the **closed ball** is its closure.
 
 **Theorem (the basic properties).** The space is connected and path-connected, indeed contractible, as a real vector space; it is not compact; and it is homeomorphic to $\mathbb{R}^{4}$, hence to the open ball and to the open four-dimensional cube.
 
@@ -56,7 +56,7 @@ is one of the compatible metrics. The space is complete and locally compact.
 
 **The four products are continuous, and the three conjugations are isometries.**
 
-**Theorem (continuity of the products).** The four general products, as maps $\mathbb{B}_{\mathrm{r}}\times\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}}$, are continuous; so is the addition, and so is the multiplication by a scalar. The algebra is a topological algebra for the Euclidean topology.
+**Theorem (continuity of the products).** The four general products, as maps $\mathbb{B}^{\mathrm{red}}\times\mathbb{B}^{\mathrm{red}}\to\mathbb{B}^{\mathrm{red}}$, are continuous; so is the addition, and so is the multiplication by a scalar. The algebra is a topological algebra for the Euclidean topology.
 
 *Proof.* Each product is bilinear or sesquilinear over $\mathbb{C}$ with constant coordinates, hence a continuous map of the finite-dimensional space, by the continuity of the polynomial and conjugate-polynomial coordinate functions; the addition is continuous as the addition of $\mathbb{R}^{4}$.
 
@@ -66,11 +66,11 @@ $$
 \lVert\bar{\breve Q}\rVert=\lVert \breve Q_{\mathrm{ts}}\rVert=\lVert \breve Q^{*}\rVert=\lVert \breve Q\rVert
 \;},
 $$
-so each is an isometry of $\mathbb{B}_{\mathrm{r}}$ onto itself, and the three form a Klein four-group of isometries.
+so each is an isometry of $\mathbb{B}^{\mathrm{red}}$ onto itself, and the three form a Klein four-group of isometries.
 
 *Proof.* $\langle \breve Q\rangle_{\mathrm{ts}*}=Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangledown}\bar Q_{\blacktriangledown}$; the bar replaces $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ by their conjugates, leaving the two moduli; the tessarine sign negates $Q_{\blacktriangledown}$, leaving the two moduli; the star is their composite, so it too preserves them. The metric is $\lVert \breve Q-\breve Q_{2}\rVert$, and each involution is linear or antilinear and preserves the norm, hence the metric; the Klein group is *The Two Involutions and the Group of Involutions*.
 
-**Corollary (the unit group is open and the zero divisors closed).** The unit group $\mathbb{B}_{\mathrm{r}}^{\times}$ is open, and its complement, the zero-divisor set, is closed; the zero-divisor set has empty interior, so the unit group is dense.
+**Corollary (the unit group is open and the zero divisors closed).** The unit group ${\mathbb{B}^{\mathrm{red}}}^{\times}$ is open, and its complement, the zero-divisor set, is closed; the zero-divisor set has empty interior, so the unit group is dense.
 
 *Proof.* The zero-divisor set is $\{\langle \breve Q\rangle_{\mathrm{ts}}=0\}=\{Q_{+}=0\}\cup\{Q_{-}=0\}$, the union of two real planes through the origin, which is closed as the vanishing set of the continuous functions $Q_{+}$ and $Q_{-}$; a plane has empty interior, and a finite union of sets of empty interior has empty interior, so the unit group is dense. The openness is the complement of a closed set.
 
@@ -78,7 +78,7 @@ so each is an isometry of $\mathbb{B}_{\mathrm{r}}$ onto itself, and the three f
 
 **Each product is continuous and induces the same topology, the Euclidean one.**
 
-**Theorem.** For each of the four products $\circ$, the operation $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ is a homeomorphism of $\mathbb{B}_{\mathrm{r}}$ onto itself when $\breve Q$ is a unit, and the topology attached to the product is the Euclidean topology; the four products give one and the same topology.
+**Theorem.** For each of the four products $\circ$, the operation $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ is a homeomorphism of $\mathbb{B}^{\mathrm{red}}$ onto itself when $\breve Q$ is a unit, and the topology attached to the product is the Euclidean topology; the four products give one and the same topology.
 
 *Proof.* A continuous bijection of $\mathbb{R}^{4}$ whose inverse is the multiplication by $\breve Q^{-1}$, also continuous, is a homeomorphism; and the topology is the unique vector-space topology, so all four agree. The differences between the four are in the metric-like quantities they carry, not in the topology, as *Topology and Metric for Each of the Operations* records.
 
@@ -97,7 +97,7 @@ The reduced biquaternion algebra carries the Euclidean topology of $\mathbb{R}^{
 | $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}$ | the Euclidean norm, from the positive definite form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ |
 | $d(\breve Q_{1},\breve Q_{2})=\lVert \breve Q_{1}-\breve Q_{2}\rVert$ | the metric |
 | $B(\breve Q,r)$ | the open ball of centre $\breve Q$ and radius $r$ |
-| $\mathbb{B}_{\mathrm{r}}^{\times}$ | the unit group, open and dense |
+| ${\mathbb{B}^{\mathrm{red}}}^{\times}$ | the unit group, open and dense |
 | $\{Q_{+}=0\}\cup\{Q_{-}=0\}$ | the zero-divisor set, closed with empty interior |
 
 ## Further Reading

@@ -153,7 +153,7 @@ The norm, the characteristic polynomial and the minimal polynomial form a strict
 
 | symbol | meaning |
 |---|---|
-| $\mathbb H_{\mathrm s}$ | the split-quaternion algebra |
+| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra |
 | $q=t+\vec v$ | a general element |
 | $S=\vec v^2=-q_x^2+q_y^2+q_z^2$ | the square of the vector part |
 | $q\bar q=t^2-S$ | the split-quaternion norm |

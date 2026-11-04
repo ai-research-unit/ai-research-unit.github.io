@@ -10,17 +10,17 @@ Throughout the basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the 
 
 **The algebra carries two commuting complex structures, and the two idempotent coordinates are the two independent complex variables of the theory.**
 
-**Definition.** On the real algebra $\mathbb{B}_{\mathrm{r}}$ define the two real-linear maps
+**Definition.** On the real algebra $\mathbb{B}^{\mathrm{red}}$ define the two real-linear maps
 $$
 J_{i}(\breve Q)=i\breve Q,\qquad J_{ij}(\breve Q)=ij\breve Q .
 $$
 They are the **two complex structures** of the algebra, and they commute.
 
-**Theorem (the coordinate structure).** $J_{i}$ and $J_{ij}$ are real-linear, satisfy $J_{i}^{2}=J_{ij}^{2}=-\mathrm{id}$, and commute, so each makes $\mathbb{B}_{\mathrm{r}}$ a two-dimensional complex vector space. The maps $\breve Q\mapsto Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\breve Q\mapsto Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ are complex-linear isomorphisms onto $\mathbb{C}$, and
+**Theorem (the coordinate structure).** $J_{i}$ and $J_{ij}$ are real-linear, satisfy $J_{i}^{2}=J_{ij}^{2}=-\mathrm{id}$, and commute, so each makes $\mathbb{B}^{\mathrm{red}}$ a two-dimensional complex vector space. The maps $\breve Q\mapsto Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\breve Q\mapsto Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ are complex-linear isomorphisms onto $\mathbb{C}$, and
 $$
 \breve Q\longmapsto(Q_{+},Q_{-})
 $$
-is a complex-linear isomorphism $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}^{2}$ under which the multiplication is componentwise and the norm is $K=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$.
+is a complex-linear isomorphism $\mathbb{B}^{\mathrm{red}}\to\mathbb{C}^{2}$ under which the multiplication is componentwise and the norm is $K=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$.
 
 *Proof.* $i^{2}=-1$ and $(ij)^{2}=i^{2}j^{2}=-1$, and the two multiplications commute because the algebra is commutative. The coordinates $Q_{+},Q_{-}$ are the two characters $\lambda_+,\lambda_-$, and the idempotents $\Pi_+,\Pi_-$ diagonalise the product, $(Q_{+}\Pi_++Q_{-}\Pi_-)(Q_{+}'\Pi_++Q_{-}'\Pi_-)=Q_{+}Q_{+}'\Pi_++Q_{-}Q_{-}'\Pi_-$; the norm statement is $K=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$ with $Q_{\blacktriangle}=\tfrac12(Q_{+}+Q_{-})$ and $Q_{\blacktriangledown}=\tfrac12(Q_{+}-Q_{-})$.
 
@@ -69,7 +69,7 @@ $$
 
 ## Regular Functions and the System of Equations
 
-**Definition.** Let $\Omega$ be a domain and $f:\Omega\to\mathbb{B}_{\mathrm{r}}$ of class $C^{1}$. Then $f$ is **regular** if $\bar\partial f=0$ on $\Omega$. Because the algebra is **commutative**, the right operator equals the left one, $f\bar\partial=\bar\partial f$, so no distinction of left and right regularity arises.
+**Definition.** Let $\Omega$ be a domain and $f:\Omega\to\mathbb{B}^{\mathrm{red}}$ of class $C^{1}$. Then $f$ is **regular** if $\bar\partial f=0$ on $\Omega$. Because the algebra is **commutative**, the right operator equals the left one, $f\bar\partial=\bar\partial f$, so no distinction of left and right regularity arises.
 
 **Theorem (the regularity system).** Writing $f=g_{1}\Pi_++g_{2}\Pi_-$, the function $f$ is regular if and only if
 $$
@@ -151,7 +151,7 @@ The reduced biquaternion algebra carries two commuting complex structures, $J_{i
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ | Reduced biquaternion algebra |
+| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ | Reduced biquaternion algebra |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | Element, $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ |
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | Idempotent coordinates |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |

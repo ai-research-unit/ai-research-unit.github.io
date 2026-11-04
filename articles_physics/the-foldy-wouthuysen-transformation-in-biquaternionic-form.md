@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The Dirac equation describes particles and antiparticles on the same footing, and its four-component solutions mix the two. The Foldy–Wouthuysen (FW) transformation, introduced by Leslie Foldy and Siegfried Wouthuysen in 1950, is the $*$-unitary transformation that separates them. It block-diagonalises the Dirac Hamiltonian: the upper two components become the positive-frequency (particle) sector and the lower two the negative-frequency (antiparticle) sector. In doing so it produces the systematic expansion of the relativistic Hamiltonian in powers of $1/c$ whose leading terms are the Schrödinger and Pauli Hamiltonians. The non-relativistic reductions of this corpus are built on it, and the companion articles on the electron and on the hydrogen atom presuppose it.
+The Dirac equation describes particles and antiparticles on the same footing, and its solutions mix the two. The Foldy–Wouthuysen (FW) transformation, introduced by Leslie Foldy and Siegfried Wouthuysen in 1950, is the $*$-unitary transformation that separates them. It diagonalises the Dirac Hamiltonian: one part of the field becomes the positive-frequency (particle) sector and the other the negative-frequency (antiparticle) sector. In doing so it produces the systematic expansion of the relativistic Hamiltonian in powers of $1/c$ whose leading terms are the Schrödinger and Pauli Hamiltonians. The non-relativistic reductions of this corpus are built on it, and the companion articles on the electron and on the hydrogen atom presuppose it.
 
-The transformation is worth a biquaternion article for a structural reason. The biquaternionic Dirac equation is a **chiral pair**: the mass couples $\tilde{\Psi}_L$ to $\tilde{\Psi}_R$, and the two chiral halves are the minimal left ideal $S$ and its conjugate $S^{\mathrm{c}}$ — not the two Peirce carriers, which are two copies of $S$. The FW transformation, by contrast, separates **positive from negative frequency**, and the two pieces into which it splits the field are not the two chiralities. The article therefore keeps two gradings apart. The **chirality grading** is the one in which the mass is off-diagonal and the biquaternion pair is written. The **frame grading** is the one fixed by the timelike frame cell $iR_{\vec e_x}^{\mathrm{axf}}$, in which the FW transformation works and the mass is diagonal. Conflating the two is the standard way to misread either, and making the distinction explicit is the biquaternion content of the transformation.
+The transformation is worth a biquaternion article for a structural reason. The biquaternionic Dirac equation is a **pair**: the mass couples $\tilde{\Psi}_L$ to $\tilde{\Psi}_R$, and the two parts are the two values of the subscript of *Special Element Conventions*, §*The Chirality Convention*. The FW transformation, by contrast, separates **positive from negative frequency**, and the two pieces into which it splits the field are not the two values of the subscript. The article therefore keeps two splits apart. The **subscript split** is the one the mass exchanges, and in it the biquaternion pair is written. The **frame split** is the one fixed by the timelike frame cell $iR_{\vec e_x}^{\mathrm{axf}}$, in which the FW transformation works and the mass term is a multiple of that cell. Conflating the two is the standard way to misread either, and making the distinction explicit is the biquaternion content of the transformation.
 
-**Two Dirac equations.** The corpus carries two, and they must not be read as one. The equation used here is the **one-sided** chiral pair of *Operator and Calculus Conventions*, in which the gradient acts by left multiplication and the mass is the off-diagonal pairing of $S$ and $S^{\mathrm{c}}$. The **two-sided** equation is Kravchenko's, in which the time derivative and the spatial gradient act from the left, the mass acts by right multiplication through $\vec e_z$, and a componentwise conjugation supplies the antilinear part (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The two are related by the dictionary $A$ and describe the same physics in different representations. The Hamiltonian form is read off the one-sided pair, so the transformation below is stated for that pair; the two-sided equation is the same dynamics in the representation in which the analytic machinery acts. What the transformation diagonalises in either reading is the frame grading; what it leaves alone is the chirality grading.
+**Two Dirac equations.** The corpus carries two, and they must not be read as one. The equation used here is the **one-sided** chiral pair of *Operator and Calculus Conventions*, in which the gradient acts by left multiplication and the mass couples the $L$ part of the field to the $R$ part. The **two-sided** equation is Kravchenko's, in which the time derivative and the spatial gradient act from the left, the mass acts by right multiplication through $\vec e_z$, and a componentwise conjugation supplies the antilinear part (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The two are related by the dictionary $A$ and describe the same physics in different representations. The Hamiltonian form is read off the one-sided pair, so the transformation below is stated for that pair; the two-sided equation is the same dynamics in the representation in which the analytic machinery acts. What the transformation diagonalises in either reading is the frame grading; what it leaves alone is the subscript.
 
 The scope is the transformation itself: its generator, its free-particle closed form, the mean position operator it defines, and the interpretation of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*, and the relativistic qubit and the informational interpretation to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* and are only summarised here.
 
@@ -14,7 +14,7 @@ The scope is the transformation itself: its generator, its free-particle closed 
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. In the $\mathbb{M}_-$ frame, where $x_0=ct'$, $Q_t=ix_0$ and the metric is $(-1,1,1,1)$, the Dirac operator is
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. In the $\mathbb{M}_-$ frame the Dirac operator is
 
 $$
 \mathcal{D}=i\sum_\mu\bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\bigr)\frac{\partial}{\partial x_\mu},
@@ -66,25 +66,19 @@ p_k=-i\hbar\frac{\partial}{\partial Q_k}.
 \;}
 $$
 
-In the Dirac basis the timelike frame cell is diagonal and the velocity cells are off-diagonal, with matrix images
+The identities used below are cells, and they are derived forms of the cell table of *Matrix Representations Conventions*, §*The Sixteen Products in This Frame*:
 
 $$
-iR_{\vec e_x}^{\mathrm{axf}}\mapsto\begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},
-\qquad
-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\mapsto\begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0\end{pmatrix}.
+(iR_{\vec e_x}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\quad
+(L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\quad
+\{L_{\vec e_j}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\}=2\delta_{jk}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\quad
+\{iR_{\vec e_x}^{\mathrm{axf}},L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\}=0 .
 $$
 
-The identities used below read, in the same images,
-
-$$
-(iR_{\vec e_x}^{\mathrm{axf}})^2\mapsto I_4,
-\quad
-(L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})^2\mapsto I_4,
-\quad
-\{L_{\vec e_j}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\}\mapsto2\delta_{jk}I_4,
-\quad
-\{iR_{\vec e_x}^{\mathrm{axf}},L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\}\mapsto0 .
-$$
+Each velocity cell squares to the unit, the three anticommute in pairs, and each anticommutes with the timelike frame cell.
 
 The Hamiltonian splits into an **even** part and an **odd** part,
 
@@ -100,23 +94,15 @@ $$
 O\ \text{odd}:\ iR_{\vec e_x}^{\mathrm{axf}}O\,iR_{\vec e_x}^{\mathrm{axf}}=-O .
 $$
 
-The odd part $O$ is what couples the upper and lower components, and hence what makes the positive- and negative-frequency sectors talk to each other. The FW transformation is the $*$-unitary transformation that removes $O$ order by order.
+The odd part $O$ is what exchanges the $+1$ and $-1$ parts of the timelike frame cell, and hence what makes the positive- and negative-frequency sectors talk to each other. The FW transformation is the $*$-unitary transformation that removes $O$ order by order.
 
-It is important to say at once which grading this is, because several $\mathbb{Z}/2$'s are in play. Conjugation by the timelike frame cell defines the **frame grading**, the large/small split of the Foldy–Wouthuysen transformation; it is a frame-dependent split and not one of the algebra's gradings. It is **not** the Clifford parity. In the Clifford reading $iR_{\vec e_x}^{\mathrm{axf}}$ is itself Clifford-odd — it is one of the five generators — while the kinetic part $O=c\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k$ is a product of two generators, hence Clifford-even and Hermitian, so as a biquaternion $O$ lies in $\mathbb{M}_+$. It is the product $(iR_{\vec e_x}^{\mathrm{axf}})O$ that is Clifford-odd and anti-Hermitian, and it is that product, not $O$, that has no representative in $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$. The parity of *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form* is a third thing again. Nor does frame parity coincide with the $*$-grading: the spacelike frame cells $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ are frame-odd and yet Hermitian, hence in $\mathbb{M}_+$, so "odd" is not another word for "anti-Hermitian".
+It is important to say at once which split this is, because several $\mathbb{Z}/2$'s are in play. Conjugation by the timelike frame cell defines the **frame grading**, the large/small split of the Foldy–Wouthuysen transformation; it is a frame-dependent split and not one of the algebra's own gradings. It is **not** the split by the conjugation $\natural$: the velocity cells $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ are frame-odd and yet Hermitian, hence in $\mathbb{M}_+$, so "odd" is not another word for "anti-Hermitian". The parity of *The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form* is a third thing again.
 
-Nor is the frame grading the chirality. The chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}=i\,\omega$, where $\omega=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is the pseudoscalar of the algebra, with $\omega^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$; the scalar $i$ of the chirality cell multiplies that cell from outside. It is the product of the four frame cells:
-
-$$
-(iR_{\vec e_x}^{\mathrm{axf}})(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-R_{\vec e_z}^{\mathrm{axf}},
-\qquad
--iR_{\vec e_z}^{\mathrm{axf}}=i\cdot\bigl(-R_{\vec e_z}^{\mathrm{axf}}\bigr),
-$$
-
-the four factors of $i$ multiplying to $i^4=1$ and leaving the real cell $-R_{\vec e_z}^{\mathrm{axf}}$; the chirality cell is that cell times the scalar $i$. The chirality cell anticommutes with all four frame cells, the timelike one included. On the Dirac module it is the operator $\chi=\operatorname{diag}(-I_2,I_2)$; the parent article states the value as a label and computes no cell (*The Dirac Equation in Biquaternionic Form*, §*The Two Values of the Subscript*), and the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ is the form of the same grading in the double. Either way it is an element of the algebra and not a Clifford matrix. The mass term is even under the frame grading and off-diagonal between the two chiral halves under the chirality, and that is the whole of the distinction: a reader who identifies "odd" with "chirality-changing" will misread the transformation the whole way through.
+Nor is the frame grading the subscript. The chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$, the volume cell of the frame (*Special Element Conventions*, §*The Chirality Convention*). It anticommutes with all four frame cells, the timelike one included. The parent article states the value as a label and computes no cell (*The Dirac Equation in Biquaternionic Form*, §*The Two Values of the Subscript*), and the central form of the same split is $\chi=i\tilde\Xi_{\mathrm{ad}}$. Either way it is an element of the algebra, not an array. The mass term is even under the frame grading, and it exchanges the $L$ part and the $R$ part: a reader who identifies "odd" with "value-changing" will misread the transformation the whole way through.
 
 ### The Hamiltonian as One Frame Cell Times a Bracket
 
-The identification of $O$ as the frame-odd part can be written directly in the algebra. In the dictionary of *Matrix Representations Conventions*, §*The 2×2 Matrix Representation*, $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, so the $2\times2$ reading of the cells gives $L_{e_t}\mapsto I_4$ and $L_{\vec e_k}\mapsto I_2\otimes(-i\sigma_k)$, its Peirce arrays,. With that reading fixed, the two parts of the kinetic operator are
+The identification of $O$ as the frame-odd part can be written directly in the algebra. The two parts of the kinetic operator are
 
 $$
 O=c\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k,
@@ -130,11 +116,11 @@ $$
 H=c\,(iR_{\vec e_x}^{\mathrm{axf}})\Bigl(mc+\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\pi_k\Bigr).
 $$
 
-The two pieces of the bracket differ in frame parity, and that difference is what the outer cell exposes: the scalar piece becomes the mass term, the vector piece the kinetic term $c\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k$. After the transformation the Hamiltonian is the timelike frame cell times the energy alone, so the frame-odd piece is gone from it, and that is the algebraic content of the block diagonalisation.
+The two pieces of the bracket differ in frame parity, and that difference is what the outer cell exposes: the scalar piece becomes the mass term, the vector piece the kinetic term $c\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k$. After the transformation the Hamiltonian is the timelike frame cell times the energy alone, so the frame-odd piece is gone from it, and that is the algebraic content of the diagonalisation.
 
 ## The Transformation and Its Generator
 
-Let $U=\exp(iS)$, with $S=S_1+S_2+\cdots$ Hermitian so that $U$ is $*$-unitary. The letter $S$ is the FW generator here, as in the literature; the spinor ideal $S$ of the introduction appears only there, always with its conjugate or as the ideal. The transformed Hamiltonian is
+Let $U=\exp(iS)$, with $S=S_1+S_2+\cdots$ Hermitian so that $U$ is $*$-unitary. The letter $S$ is the FW generator here, as in the literature. The transformed Hamiltonian is
 
 $$
 H_2=UHU^\dagger-i\hbar\,U\frac{\partial}{\partial t'}U^\dagger ,
@@ -200,7 +186,7 @@ $$
 S_2=-\frac{i}{2mc^2}(iR_{\vec e_x}^{\mathrm{axf}})O_1 ,
 $$
 
-which is **even**, and therefore does not reintroduce the large/small mixing it is meant to remove; by the same computation as for $S_1$, with $O_1$ in place of $O$, it gives $i[S_2,iR_{\vec e_x}^{\mathrm{axf}}mc^2]=-O_1$. The reason is visible in the algebra: $O_1$ carries one factor $(iR_{\vec e_x}^{\mathrm{axf}})$, so $(iR_{\vec e_x}^{\mathrm{axf}})O_1$ carries two, and the two cancel. Explicitly, $[O,\mathcal{E}]=i\hbarϙc\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}E_k$ and
+which is **even**, and therefore does not reintroduce the mixing it is meant to remove; by the same computation as for $S_1$, with $O_1$ in place of $O$, it gives $i[S_2,iR_{\vec e_x}^{\mathrm{axf}}mc^2]=-O_1$. The reason is visible in the algebra: $O_1$ carries one factor $(iR_{\vec e_x}^{\mathrm{axf}})$, so $(iR_{\vec e_x}^{\mathrm{axf}})O_1$ carries two, and the two cancel. Explicitly, $[O,\mathcal{E}]=i\hbarϙc\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}E_k$ and
 
 $$
 S_2=\frac{\hbarϙ}{4m^2c^3}\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}E_k ,
@@ -212,9 +198,9 @@ $$
 H_2=iR_{\vec e_x}^{\mathrm{axf}}\Bigl(mc^2+\frac{\vec p^2}{2m}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
 $$
 
-whose first two terms are the free-particle Schrödinger Hamiltonian in the upper block and its negative in the lower block, and whose $\vec p^4$ term is the first relativistic correction to the kinetic energy. The expansion is in powers of $(\vec p/mc)^2$, i.e. in $v^2/c^2$; the residual odd terms are smaller by two powers of $v/c$.
+whose first two terms are the free-particle Schrödinger Hamiltonian on the $+1$ part of the timelike frame cell and its negative on the $-1$ part, and whose $\vec p^4$ term is the first relativistic correction to the kinetic energy. The expansion is in powers of $(\vec p/mc)^2$, i.e. in $v^2/c^2$; the residual odd terms are smaller by two powers of $v/c$.
 
-The generator has a transparent physical meaning in the algebra. The operator $(iR_{\vec e_x}^{\mathrm{axf}})O$ is the piece of the Hamiltonian that flips the large and small components. The generator $S_1=-\frac{i}{2mc^2}(iR_{\vec e_x}^{\mathrm{axf}})O$ is proportional to it, and that product is Clifford-odd, so $S_1$ lies outside the even subalgebra $\mathrm{Cl}_{1,3}^{+}$ and the transformation cannot be read as one of the algebra's rotors. It is the rotation whose angle measures how much large/small mixing the kinetic term produces. For a slowly moving particle the angle is small and the transformation is close to the identity; in the ultra-relativistic regime the expansion breaks down, which is the signal that the non-relativistic separation is no longer meaningful.
+The generator has a transparent physical meaning in the algebra. The operator $(iR_{\vec e_x}^{\mathrm{axf}})O$ is the piece of the Hamiltonian that exchanges the $+1$ and $-1$ parts of the timelike frame cell. The generator $S_1=-\frac{i}{2mc^2}(iR_{\vec e_x}^{\mathrm{axf}})O$ is proportional to it, and it anticommutes with $iR_{\vec e_x}^{\mathrm{axf}}$: the generator is frame-odd, and the transformation it generates does not leave the frame cell fixed. It is the rotation whose angle measures how much mixing of the two frequency parts the kinetic term produces. For a slowly moving particle the angle is small and the transformation is close to the identity; in the ultra-relativistic regime the expansion breaks down, which is the signal that the non-relativistic separation is no longer meaningful.
 
 It is worth recording why one generator is not enough. With $U=e^{iS_1}$ taken exactly, the odd remainder $O_1$ survives: the leading generator removes the leading odd term and nothing more, and the displayed $H_2$ is what remains at that order. The generator is a series, $S=S_1+S_2+\cdots$, and each term removes one order. The free particle is the exception, and the next section is about it: there the series terminates and a single closed-form exponential does the whole job at once.
 
@@ -226,7 +212,7 @@ $$
 \frac{|\vec\pi|}{mc}\ll1 ,
 $$
 
-i.e. particle momenta small compared with $mc$. When the criterion fails the iteration still exists term by term but no longer converges to a useful separation: the notion of a particle component is momentum-dependent and becomes meaningless in the ultra-relativistic regime.
+i.e. particle momenta small compared with $mc$. When the criterion fails the iteration still exists term by term but no longer converges to a useful separation: the notion of a particle part is momentum-dependent and becomes meaningless in the ultra-relativistic regime.
 
 Two features of the iteration are worth keeping in view. First, the transformation is **asymptotic, not exact**, unless the theory is free, or the background has a special symmetry: the series is what the non-relativistic limit means. Second, the even terms are not unique as operators until the ordering of the non-commuting factors is fixed — $\vec E$ and $\vec\pi$ do not commute, and only the Hermitian, symmetrised combination is physical. The biquaternion framework reads the first feature as the statement that the frame grading is only approximately aligned with the dynamics, and the second as the statement that the cells multiply the field, so it is the field's own non-commutativity that the ordering ambiguity expresses.
 
@@ -287,7 +273,7 @@ UHU^\dagger
 \end{aligned}
 $$
 
-that is, $UHU^\dagger=(iR_{\vec e_x}^{\mathrm{axf}})\sqrt{\vec p^2c^2+m^2c^4}$ exactly. In this language the exact generator is $S=S_1\,\theta/\tan\theta$, since $S_1=-\tfrac{i}{2}A\tan\theta$ and $iS=\tfrac{1}{2}A\theta$; it reduces to $S_1$ as $\theta\to0$; the factor $\theta/\tan\theta\le1$ is the whole of the relativistic correction to the non-relativistic generator. The upper block is the relativistic energy $+E$, the lower block is $-E$, and the odd part has been removed to all orders. The leading expansion of the closed form reproduces the result of the previous section:
+that is, $UHU^\dagger=(iR_{\vec e_x}^{\mathrm{axf}})\sqrt{\vec p^2c^2+m^2c^4}$ exactly. In this language the exact generator is $S=S_1\,\theta/\tan\theta$, since $S_1=-\tfrac{i}{2}A\tan\theta$ and $iS=\tfrac{1}{2}A\theta$; it reduces to $S_1$ as $\theta\to0$; the factor $\theta/\tan\theta\le1$ is the whole of the relativistic correction to the non-relativistic generator. The $+1$ part of $iR_{\vec e_x}^{\mathrm{axf}}$ is the relativistic energy $+E$, the $-1$ part is $-E$, and the odd part has been removed to all orders. The leading expansion of the closed form reproduces the result of the previous section:
 
 $$
 (iR_{\vec e_x}^{\mathrm{axf}})E=(iR_{\vec e_x}^{\mathrm{axf}})\Bigl(mc^2+\frac{\vec p^2}{2m}-\frac{\vec p^4}{8m^3c^2}+\cdots\Bigr),
@@ -297,7 +283,7 @@ the $\vec p^4$ term being the first relativistic correction to the kinetic energ
 
 ## The Mean Position Operator
 
-The transformation does more than block-diagonalise the Hamiltonian: it also changes which operator plays the role of position. Write the position as the material vector $\vec q=\sum_kQ_k\vec e_k$, with $Q_k$ the operator of multiplication by the coordinate. In the transformed frame that multiplication is the coordinate, so the operator carrying it back to the original frame is obtained by conjugating with $U^\dagger$, not with $U$:
+The transformation does more than diagonalise the Hamiltonian: it also changes which operator plays the role of position. Write the position as the material vector $\vec q=\sum_kQ_k\vec e_k$, with $Q_k$ the operator of multiplication by the coordinate. In the transformed frame that multiplication is the coordinate, so the operator carrying it back to the original frame is obtained by conjugating with $U^\dagger$, not with $U$:
 
 $$
 \vec X=U^\dagger\vec q\,U=\vec q-i[S_1,\vec q]-\frac{1}{2}[S_1,[S_1,\vec q]]+\cdots .
@@ -335,31 +321,31 @@ $$
 
 In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the mean position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the mean position.
 
-The correction $\frac{\hbar}{2mc}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ is itself worth reading in the algebra. It is an odd, spinorial displacement: it contains the same odd cells that generate the transformation, it anticommutes with the timelike frame cell, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the block-diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
+The correction $\frac{\hbar}{2mc}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ is itself worth reading in the algebra. It is a frame-odd displacement: it contains the same odd cells that generate the transformation, it anticommutes with the timelike frame cell, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec X$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec q$ and a configuration-space position on the module.
 
 ## The Biquaternion Reading
 
-The transformation can now be located in the two gradings of the algebra, and the location is the content of the article.
+The transformation can now be located in the two splits of the algebra, and the location is the content of the article.
 
-**The chirality basis is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$. In the chiral (Weyl) basis the timelike frame cell is off-diagonal, so the mass term of the Hamiltonian, $mc^2(iR_{\vec e_x}^{\mathrm{axf}})$, is the off-diagonal matrix
+**The subscript is where the biquaternion pair lives.** The massive biquaternionic Dirac equation is the pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$. The mass term of the Hamiltonian is $mc^2(iR_{\vec e_x}^{\mathrm{axf}})$, and the timelike frame cell acts on the right by $\vec e_x$, so it exchanges the two values of the subscript. All four frame cells exchange them, each acting on the right by $\vec e_x$ or by $\vec e_y$. The velocity cells $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ act on the right by $\vec e_z$ and keep the value. Under the subscript the mass and the four frame cells cross from one value to the other, and the velocity cells stay.
 
-$$
-mc^2\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},
-$$
+**The frame split is where the FW transformation works.** Conjugation by the timelike frame cell separates the mass from the kinetic term: the mass term commutes with $iR_{\vec e_x}^{\mathrm{axf}}$, and the velocity cells anticommute with it. The fixed $*$-unitary $\frac{1}{\sqrt2}(iR_{\vec e_x}^{\mathrm{axf}}-iR_{\vec e_z}^{\mathrm{axf}})$ is its own inverse and conjugates $iR_{\vec e_x}^{\mathrm{axf}}$ to $-iR_{\vec e_z}^{\mathrm{axf}}$ and back. The FW transformation is the momentum-dependent completion of that exchange: it conjugates the field so that the mass, which exchanges the two values, becomes the term that commutes with the timelike frame cell, while the kinetic term, which keeps the value, becomes the first-order perturbation. Removing the odd part is exactly the statement that the mass is the large term and the mixing is small.
 
-and all four frame cells are block off-diagonal there, so the first-order operator $\mathcal{D}$ is block off-diagonal too, while the velocity cells $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ are block diagonal. This is the basis in which the two components are the minimal left ideal $S$ and its conjugate $S^{\mathrm{c}}$, and in which the mass couples them: the mass, and the gradient, are the **off-diagonal** objects in this basis.
-
-**The frame basis is where the FW transformation works.** In the Dirac (large/small) basis the timelike frame cell is diagonal, $iR_{\vec e_x}^{\mathrm{axf}}\mapsto\mathrm{diag}(I_2,-I_2)$, and the mass term $mc^2(iR_{\vec e_x}^{\mathrm{axf}})$ is diagonal; the kinetic term $c\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k$ is the off-diagonal odd piece. The two bases are related by the fixed $*$-unitary $\frac{1}{\sqrt2}(iR_{\vec e_x}^{\mathrm{axf}}-iR_{\vec e_z}^{\mathrm{axf}})$, which is its own inverse and exchanges $iR_{\vec e_x}^{\mathrm{axf}}$ with $-iR_{\vec e_z}^{\mathrm{axf}}$, together with the relabelling of the four components that brings the two large ones together — the unitary alone gives the diagonal $\mathrm{diag}(-1,1,-1,1)$, not $\mathrm{diag}(I_2,-I_2)$. The FW transformation is the momentum-dependent completion of that exchange: it rotates the field so that the mass — off-diagonal in chirality — becomes diagonal, while the kinetic term, which was diagonal in chirality, becomes the first-order perturbation. Removing the odd part is exactly the statement that the mass is the large term and the mixing is small.
-
-**The transformation does not separate chirality.** After the transformation the Hamiltonian is block diagonal in the large/small basis, not in the chiral basis. The chirality cell in the transformed basis is momentum-dependent:
+**The transformation does not separate the two values.** After the transformation the Hamiltonian commutes with $iR_{\vec e_x}^{\mathrm{axf}}$, and it does not commute with the chirality cell. The chirality cell in the transformed frame is momentum-dependent:
 
 $$
 (-iR_{\vec e_z}^{\mathrm{axf}})^{FW}=U(-iR_{\vec e_z}^{\mathrm{axf}})U^\dagger=(-iR_{\vec e_z}^{\mathrm{axf}})\exp(-A\theta).
 $$
 
-Read in the Dirac basis, its upper block is $(\boldsymbol\sigma\cdot\vec u_p)\sin\theta=(\boldsymbol\sigma\cdot\vec u_p)\,|\vec p|c/E$ — the helicity for a massless field, reduced by the factor $|\vec p|c/E$ for a massive one — and its off-block part is $\cos\theta\,I_2=(mc^2/E)I_2$, which is the chirality-mixing term and is of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency**, the two signs of the timelike frame cell, and not left from right. In the algebra, the grading it diagonalises is the grading by $iR_{\vec e_x}^{\mathrm{axf}}$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the chirality grading is the grading by $-iR_{\vec e_z}^{\mathrm{axf}}$, a different reflection, and no $*$-unitary rotation of the field can diagonalise both at once because the two cells anticommute. The FW basis and the chiral basis are complementary, and the mass is the object that measures their incompatibility.
+Its part that commutes with $iR_{\vec e_x}^{\mathrm{axf}}$ is $-\sin\theta\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}u_k$, which on the $+1$ part is the helicity $i\sin\theta\sum_kL_{\vec e_k}^{\mathrm{axf}}u_k$ with $\sin\theta=|\vec p|c/E$ — the value for a massless field, reduced by that factor for a massive one. Its part that anticommutes with $iR_{\vec e_x}^{\mathrm{axf}}$ is $\cos\theta\,(-iR_{\vec e_z}^{\mathrm{axf}})=(mc^2/E)(-iR_{\vec e_z}^{\mathrm{axf}})$, and that is the term that exchanges the two values, of relative order $m/|\vec p|$ in the ultra-relativistic regime. The FW transformation therefore separates **positive from negative frequency**, the two values of the frame cell, and not $L$ from $R$. In the algebra, the split it diagonalises is the split by $iR_{\vec e_x}^{\mathrm{axf}}$, the reflection of *The Reflection and the Rotation in Biquaternionic Form*; the subscript is read by $-iR_{\vec e_z}^{\mathrm{axf}}$, a different reflection, and no $*$-unitary rotation of the field can diagonalise both at once because the two cells anticommute. The two splits are complementary, and the mass is the object that measures their incompatibility.
 
-**The generator lies outside the algebra's rotors.** The biquaternion rotors are the even, unit-norm elements of $\mathbb{B}$; they act on the module and generate the Lorentz group. The FW generator $S_1=\frac{1}{2mc}\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\pi_k$ is a sum of odd cells and does not belong to the even subalgebra $\mathrm{Cl}^{+}_{1,3}$. The FW transformation is therefore not one of the algebra's own rotations: it is a transformation in the full cell algebra that adjoins the odd part. The biquaternion content it carries is not a new rotor but the identification of the odd part $O$ with the frame-odd mixing term and of the diagonal mass with the frame-even large term. This is consistent with the reflection article's finding that the frame is required to state chirality and parity: the FW transformation needs the frame for the same reason.
+**The generator is frame-odd.** The FW generator $S_1=\frac{1}{2mc}\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\pi_k$ is a sum of the spacelike frame cells, and every spacelike frame cell anticommutes with $iR_{\vec e_x}^{\mathrm{axf}}$. Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ therefore reverses the sign of $S_1$, and the generator does not leave the frame cell fixed: since $U=\exp(iS_1)$,
+
+$$
+U(iR_{\vec e_x}^{\mathrm{axf}})U^{*}=(iR_{\vec e_x}^{\mathrm{axf}})\exp(-2iS_1).
+$$
+
+The biquaternion content it carries is not a new rotation of the frame but the identification of the odd part $O$ with the frame-odd mixing term and of the mass with the frame-even large term. This is consistent with the reflection article's finding that the frame is required to state the two values and parity: the FW transformation needs the frame for the same reason.
 
 ## The Pauli Limit and the Residual Terms
 
@@ -369,7 +355,7 @@ $$
 L_{\vec e_j}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\,L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\delta_{jk}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+i\,\epsilon_{jkl}\,(iL_{\vec e_l}^{\mathrm{axf}}),
 $$
 
-which squares to $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and, in the Dirac basis, is $\sigma_l$ in each $2\times2$ block. The symmetric part of the product gives $\vec\pi^2$; the antisymmetric part contracts with the commutator of the momenta and survives:
+and the spin cell squares to $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. The symmetric part of the product gives $\vec\pi^2$; the antisymmetric part contracts with the commutator of the momenta and survives:
 
 $$
 O^2=c^2\Bigl(\vec\pi^2-ϙ\hbar\sum_l(iL_{\vec e_l}^{\mathrm{axf}})B_l\Bigr),
@@ -377,35 +363,35 @@ O^2=c^2\Bigl(\vec\pi^2-ϙ\hbar\sum_l(iL_{\vec e_l}^{\mathrm{axf}})B_l\Bigr),
 [\pi_j,\pi_k]=i\hbarϙ\,\epsilon_{jkl}B_l .
 $$
 
-Since $iL_{\vec e_l}^{\mathrm{axf}}$ is block diagonal, each $2\times2$ block sees $\sigma_l$, and $\frac{(iR_{\vec e_x}^{\mathrm{axf}})O^2}{2mc^2}$ already contains the Zeeman coupling $-\frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B$ with the gyromagnetic factor $g=2$. The second transformation, with the generator $S_2$ above, adds the terms of relative order $v^2/c^2$. To this order the upper block is the Pauli Hamiltonian
+The spin cell commutes with the timelike frame cell, so the spin terms are frame-even, and $\frac{(iR_{\vec e_x}^{\mathrm{axf}})O^2}{2mc^2}$ already contains the Zeeman coupling $-\frac{ϙ\hbar}{2m}\sum_l(iL_{\vec e_l}^{\mathrm{axf}})B_l$ with the gyromagnetic factor $g=2$. The second transformation, with the generator $S_2$ above, adds the terms of relative order $v^2/c^2$. To this order the effective Hamiltonian on the $+1$ part of the timelike frame cell is the Pauli Hamiltonian
 
 $$
 \boxed{\;
 \begin{aligned}
 H_{\mathrm{Pauli}}
-&=\frac{\vec\pi^2}{2m}+ϙA_0-\frac{ϙ\hbar}{2m}\boldsymbol\sigma\cdot\vec B\\[2pt]
-&\quad-\frac{ϙ\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
+&=\frac{\vec\pi^2}{2m}+ϙA_0-\frac{ϙ\hbar}{2m}\sum_l(iL_{\vec e_l}^{\mathrm{axf}})B_l\\[2pt]
+&\quad-\frac{ϙ\hbar}{4m^2c^2}\sum_l(iL_{\vec e_l}^{\mathrm{axf}})(\vec E\times\vec\pi)_l
 +\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA_0),
 \end{aligned}
 \;}
 $$
 
-whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k\bigr)^4/(8m^3c^2)$, which in the upper block reads $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$ and is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The difference between that and $\vec\pi^4$ is itself of order $c^{-2}$, because $O^2/c^2$ differs from $\vec\pi^2$ by the Zeeman term, so it is the spinor form that belongs at this order. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\nabla A_0$, the Darwin term has the equivalent forms
+whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k\bigr)^4/(8m^3c^2)$, which on the $+1$ part reads $-\bigl(\sum_l(iL_{\vec e_l}^{\mathrm{axf}})\pi_l\bigr)^4/(8m^3c^2)$ and is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The difference between that and $\vec\pi^4$ is itself of order $c^{-2}$, because $O^2/c^2$ differs from $\vec\pi^2$ by the Zeeman term, so it is the form with the spin cell that belongs at this order. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\nabla A_0$, the Darwin term has the equivalent forms
 
 $$
 \frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA_0)=-\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E .
 $$
 
-The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, none couples the large and small blocks — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
+The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, and none exchanges the two frequency parts — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
 
-The lower block is the same Hamiltonian with the sign of the timelike frame cell reversed: it is $-E=-mc^2-\vec\pi^2/(2m)+\cdots$, the mirror image of the upper block, separated from it by the mass gap $2mc^2$. Factoring out the rest-energy phase, as the companion article does, gives the antiparticle Hamiltonian: the same kinetic and spin terms, and the opposite charge, so that the potential term is $-ϙA_0$. That sign reversal is charge conjugation, and it is what the two sectors differ by once the rest energy is removed. This is the sense in which the FW transformation separates particles from antiparticles: not by projecting them apart, which the fields do not allow, but by diagonalising the Hamiltonian so that the gap is manifest and the mixing is small.
+The $-1$ part is the same Hamiltonian with the sign of the timelike frame cell reversed: it is $-E=-mc^2-\vec\pi^2/(2m)+\cdots$, the mirror image of the $+1$ part, separated from it by the mass gap $2mc^2$. Factoring out the rest-energy phase, as the companion article does, gives the antiparticle Hamiltonian: the same kinetic and spin terms, and the opposite charge, so that the potential term is $-ϙA_0$. That sign reversal is charge conjugation, and it is what the two sectors differ by once the rest energy is removed. This is the sense in which the FW transformation separates particles from antiparticles: not by splitting the field into two pieces that never talk, which the fields do not allow, but by diagonalising the Hamiltonian so that the gap is manifest and the mixing is small.
 
 ## What Is Standard and What the Algebra Adds
 
 The transformation, the generator $S_1$, the leading Hamiltonian $iR_{\vec e_x}^{\mathrm{axf}}mc^2+(iR_{\vec e_x}^{\mathrm{axf}})O^2/(2mc^2)$, the closed free-particle form $(iR_{\vec e_x}^{\mathrm{axf}})E$, the mean position operator and the Pauli limit are all standard results, transcribed here from the relativistic-quantum-physics literature and cited as such. The biquaternion contribution is not a new formula but a placing:
 
-- The **two gradings** are kept distinct. The FW transformation diagonalises the frame grading (large/small, $iR_{\vec e_x}^{\mathrm{axf}}$); the biquaternion mass pair is the chirality grading (left/right, $-iR_{\vec e_z}^{\mathrm{axf}}$). They anticommute, so the transformation cannot diagonalise both, and the mass is the obstruction.
-- The **mass term** appears in the transformation as the large, frame-even term whose diagonal form is the non-relativistic gap; in the chiral basis the same mass is the off-diagonal coupling of the biquaternion pair. The passage between the two descriptions starts from the fixed $*$-unitary $\frac{1}{\sqrt2}(iR_{\vec e_x}^{\mathrm{axf}}-iR_{\vec e_z}^{\mathrm{axf}})$ that exchanges the two cells, and the FW transformation is its momentum-dependent completion.
+- The **two splits** are kept distinct. The FW transformation diagonalises the frame grading (large/small, $iR_{\vec e_x}^{\mathrm{axf}}$); the biquaternion mass pair is the subscript ($L$/$R$, read by $-iR_{\vec e_z}^{\mathrm{axf}}$). The two cells anticommute, so the transformation cannot diagonalise both, and the mass is the obstruction.
+- The **mass term** appears in the transformation as the large, frame-even term whose diagonal form is the non-relativistic gap; under the subscript the same mass is the term that exchanges the $L$ part and the $R$ part. The passage between the two descriptions starts from the fixed $*$-unitary $\frac{1}{\sqrt2}(iR_{\vec e_x}^{\mathrm{axf}}-iR_{\vec e_z}^{\mathrm{axf}})$ that exchanges the two cells, and the FW transformation is its momentum-dependent completion.
 - The **residual odd part** is the frame-odd mixing term $O$, and its removal order by order is the statement that positive and negative frequency decouple in the non-relativistic limit.
 - The **exact free form** shows that the separation, for a free field, is exact: $UHU^\dagger=(iR_{\vec e_x}^{\mathrm{axf}})\sqrt{\vec p^2c^2+m^2c^4}$ with $U=\exp\bigl(\frac{\theta}{2}(iR_{\vec e_x}^{\mathrm{axf}})\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}u_k\bigr)$ and $\tan\theta=|\vec p|/(mc)$. The expansion used by the non-relativistic reduction is the expansion of this closed form in $|\vec p|/(mc)$.
 
@@ -510,7 +496,7 @@ the last two with the convention that repeated indices are read separately, sinc
 
 ## Summary
 
-The Foldy–Wouthuysen transformation is the $*$-unitary $U=\exp(iS)$ that block-diagonalises the Dirac Hamiltonian in the frame grading, separating the positive- and negative-frequency sectors. With
+The Foldy–Wouthuysen transformation is the $*$-unitary $U=\exp(iS)$ that diagonalises the Dirac Hamiltonian in the frame grading, separating the positive- and negative-frequency parts. With
 
 $$
 H=iR_{\vec e_x}^{\mathrm{axf}}mc^2+O+\mathcal{E},
@@ -530,7 +516,7 @@ $$
 H_2=iR_{\vec e_x}^{\mathrm{axf}}mc^2+\mathcal{E}+\frac{(iR_{\vec e_x}^{\mathrm{axf}})O^2}{2mc^2};
 $$
 
-in the free case $\mathcal{E}=0$ this is the Schrödinger Hamiltonian in the upper block and its negative in the lower block. For the free particle the transformation is exact:
+in the free case $\mathcal{E}=0$ this is the Schrödinger Hamiltonian on the $+1$ part and its negative on the $-1$ part. For the free particle the transformation is exact:
 
 $$
 U=\cos\frac{\theta}{2}+(iR_{\vec e_x}^{\mathrm{axf}})\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}u_k\sin\frac{\theta}{2},
@@ -542,7 +528,7 @@ $$
 \boxed{\;UHU^\dagger=(iR_{\vec e_x}^{\mathrm{axf}})\sqrt{\vec p^2c^2+m^2c^4}\;},
 $$
 
-checked to machine precision by direct matrix computation. The mean position is the operator whose image in the transformed frame is multiplication by the coordinate,
+checked to machine precision by direct computation. The mean position is the operator whose image in the transformed frame is multiplication by the coordinate,
 
 $$
 \vec X=U^\dagger\vec q\,U=\sum_kX_k\vec e_k,
@@ -552,7 +538,7 @@ $$
 
 whose Heisenberg velocity commutes with the Hamiltonian and so has no trembling term; the Zitterbewegung resides in the difference $\vec q-\vec X$.
 
-The biquaternion interpretation turns on two gradings that must not be conflated. The frame grading, conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$, is what the FW transformation diagonalises and in which the mass is diagonal; the chirality grading, $-iR_{\vec e_z}^{\mathrm{axf}}$, is what the biquaternion mass pair is written in and in which the mass is off-diagonal. The two gradings anticommute, so no single $*$-unitary diagonalises both, and the mass term is the measure of their incompatibility. The FW generator is a sum of odd cells and therefore lies outside the even subalgebra $\mathrm{Cl}_{1,3}^{+}$: the transformation is not one of the algebra's Lorentz rotors but a transformation in the full cell algebra that adjoins the odd part.
+The biquaternion interpretation turns on two splits that must not be conflated. The frame grading, conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$, is what the FW transformation diagonalises and in which the mass term is a multiple of the frame cell; the subscript, read by $-iR_{\vec e_z}^{\mathrm{axf}}$, is where the biquaternion mass pair is written and in which the mass exchanges $L$ and $R$. The two cells anticommute, so no single $*$-unitary diagonalises both, and the mass term is the measure of their incompatibility. The FW generator is a sum of odd cells, each of which anticommutes with $iR_{\vec e_x}^{\mathrm{axf}}$: it is frame-odd, and the transformation it generates does not leave the frame cell fixed.
 
 ## Summary of Notation
 
@@ -564,8 +550,8 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ | Timelike frame cell; $(iR_{\vec e_x}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Velocity cells; $(L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=(iR_{\vec e_x}^{\mathrm{axf}})(L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})$ | Spacelike frame cells; square $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
-| $iL_{\vec e_l}^{\mathrm{axf}}$ | Spin cell: left multiplication by $i\vec e_l$; $(iL_{\vec e_l}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, block-wise $\sigma_l$ |
-| $-iR_{\vec e_z}^{\mathrm{axf}}=i\,\omega$, $\omega=(iR_{\vec e_x}^{\mathrm{axf}})(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell; $(-iR_{\vec e_z}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $iL_{\vec e_l}^{\mathrm{axf}}$ | Spin cell: left multiplication by $i\vec e_l$; $(iL_{\vec e_l}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, the volume cell of the frame (*Special Element Conventions*, §*The Chirality Convention*); $(-iR_{\vec e_z}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $ϙ$ | Charge of the field; $A_\mu=(A_0,-\vec A)$ |
 | $\varepsilon=(1,-1,-1,-1)$ | sign vector of the cells; used only in *The Legacy Pauli Gamma Formulation* |
 | $\mathcal{D}=i\sum_\mu\bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\bigr)\partial/\partial x_\mu$ | Dirac operator; $\mathcal{D}^2=\Box$ |
@@ -580,7 +566,7 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
 | $\vec q = \sum_kQ_k\vec e_k$ | Material position |
 | $X_k = Q_k-\frac{\hbar}{2mc}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
-| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | One-sided mass pair (chirality grading) |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | One-sided mass pair (the subscript) |
 | $\Box$ | Series d'Alembertian |
 
 ## Further Reading

@@ -418,7 +418,7 @@ The Cayley matrix $M(s)=(I-sK)(I+sK)^{-1}$ is symmetric, has determinant $1$, an
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{D}$ | the split-complex algebra, $j^2=+1$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $\langle Q\rangle_{*}=q^2-q'^2$ | the norm |
 | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus |

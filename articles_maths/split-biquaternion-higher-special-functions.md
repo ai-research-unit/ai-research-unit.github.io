@@ -7,7 +7,7 @@ This article introduces the higher special functions of a split biquaternion var
 
 The goal is to define the Bessel functions, the orthogonal polynomials, the hypergeometric function, the gamma function, and the zeta function, and to establish their basic properties. The article is honest about what is fully understood and what is still open.
 
-The treatment is purely mathematical. No physics is invoked. No examples are given. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, together with its conjugations, its four fixed-point subspaces, and its idempotent decomposition. The elementary functions are assumed from the preceding article.
+The treatment is purely mathematical. No physics is invoked. No examples are given. The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ is assumed from the basic algebra article, together with its conjugations, its four fixed-point subspaces, and its idempotent decomposition. The elementary functions are assumed from the preceding article.
 
 The key structural fact is the **idempotent decomposition**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $\tilde\Pi_{1,2}$ commute with everything. So every function defined by a power series in the split biquaternion variable, with coefficients that are split complex scalars, reduces to the corresponding function of two ordinary quaternions, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case.
 
@@ -37,7 +37,7 @@ $$
 J_\nu(\tilde{Q}) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m! \, \Gamma(m + \nu + 1)} \left(\frac{\tilde{Q}}{2}\right)^{2m+\nu}.
 $$
 
-For integer order the series converges for every $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$, its terms decaying like $\|\tilde{Q}\|_E^{2m}/(4^m (m+n)!)$ up to a bounded factor. For non-integer $\nu$ the individual powers are defined through the power function $\exp((2m+\nu)\log \tilde{Q})$, which requires $\tilde{Q}$ to lie in the domain of the logarithm, so the series converges absolutely whenever the powers are defined: in the idempotent decomposition this means that both components $\tilde{Q}_\pm$ are nonzero, i.e. that $\tilde{Q}$ is not a zero divisor. The order is taken in $\mathbb{R}$ (or, more generally, $\nu \in \mathbb{D}$), since $\mathbb{D}$ contains no square root of $-1$ and hence no copy of $\mathbb{C}$.
+For integer order the series converges for every $\tilde{Q} \in \mathbb{B}^{\mathrm{spl}}$, its terms decaying like $\|\tilde{Q}\|_E^{2m}/(4^m (m+n)!)$ up to a bounded factor. For non-integer $\nu$ the individual powers are defined through the power function $\exp((2m+\nu)\log \tilde{Q})$, which requires $\tilde{Q}$ to lie in the domain of the logarithm, so the series converges absolutely whenever the powers are defined: in the idempotent decomposition this means that both components $\tilde{Q}_\pm$ are nonzero, i.e. that $\tilde{Q}$ is not a zero divisor. The order is taken in $\mathbb{R}$ (or, more generally, $\nu \in \mathbb{C}^{\mathrm{spl}}$), since $\mathbb{C}^{\mathrm{spl}}$ contains no square root of $-1$ and hence no copy of $\mathbb{C}$.
 
 ### Computation via the Idempotent Decomposition
 
@@ -51,7 +51,7 @@ $$
 
 where $\nu = \nu_+ \tilde\Pi_1 + \nu_- \tilde\Pi_2$ and $J_{\nu_\pm}(\tilde{Q}_\pm)$ is the ordinary quaternion Bessel function of the component $\tilde{Q}_\pm$ with the order $\nu_\pm$ belonging to that component. The quaternion Bessel function is defined by the same power series, with $\tilde{Q}_\pm$ in place of $\tilde{Q}$, and it can be computed in closed form in the two regimes (pure oscillatory and pure nilpotent), as discussed in the biquaternion higher special functions article.
 
-The split complex order $\nu \in \mathbb{D}$ is decomposed in the idempotent basis as $\nu = \nu_+ \tilde\Pi_1 + \nu_- \tilde\Pi_2$ with $\nu_\pm \in \mathbb{R}$ (or, more generally, $\nu_\pm \in \mathbb{H}$), and the Bessel function of the component is taken with the corresponding order.
+The split complex order $\nu \in \mathbb{C}^{\mathrm{spl}}$ is decomposed in the idempotent basis as $\nu = \nu_+ \tilde\Pi_1 + \nu_- \tilde\Pi_2$ with $\nu_\pm \in \mathbb{R}$ (or, more generally, $\nu_\pm \in \mathbb{H}$), and the Bessel function of the component is taken with the corresponding order.
 
 So the split biquaternion Bessel function is the pair of the quaternion Bessel functions of the two idempotent components. This is the cleanest form of the function, and it is the reason the split biquaternion Bessel function is simpler than the biquaternion Bessel function.
 
@@ -145,7 +145,7 @@ with $L_0 = e_t$ and $L_1 = e_t - \tilde{Q}$. The same analysis applies.
 
 ### The General Principle for Polynomials
 
-The orthogonal polynomials are defined by three-term recurrences involving only the multiplication and addition of split biquaternions. So they are defined for every $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$, and they decompose in the idempotent basis:
+The orthogonal polynomials are defined by three-term recurrences involving only the multiplication and addition of split biquaternions. So they are defined for every $\tilde{Q} \in \mathbb{B}^{\mathrm{spl}}$, and they decompose in the idempotent basis:
 
 $$
 P_n(\tilde{Q}) = P_n(\tilde{Q}_+) \tilde\Pi_1 + P_n(\tilde{Q}_-) \tilde\Pi_2,
@@ -165,7 +165,7 @@ $$
 {}_2F_1(a, b; c; \tilde{Q}) = \sum_{n=0}^{\infty} \frac{(a)_n (b)_n}{(c)_n} \frac{\tilde{Q}^n}{n!},
 $$
 
-where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{D}$. The series converges for $\|\tilde{Q}\|_E < 1$.
+where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol, and $a, b, c \in \mathbb{C}^{\mathrm{spl}}$. The series converges for $\|\tilde{Q}\|_E < 1$.
 
 ### Computation via the Idempotent Decomposition
 
@@ -295,7 +295,7 @@ Almost nothing is known about the split biquaternion zeta function. The followin
 
 ### The Setting
 
-The analysis article defined the split biquaternion gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$. The solutions of the equations
+The analysis article defined the split biquaternion gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}^{\mathrm{spl}}$. The solutions of the equations
 
 $$
 \tilde{\nabla}F = 0, \qquad \Box F = 0
@@ -395,10 +395,10 @@ The split biquaternion special functions are therefore a partially developed sub
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}^{\mathrm{spl}}$ |
 | $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \sum_\mu (q_\mu \pm q'_\mu) e_\mu$ | Idempotent components |
 | $\exp, \log$ | Exponential and logarithm of a split biquaternion |

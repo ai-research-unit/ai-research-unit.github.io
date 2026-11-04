@@ -3,13 +3,13 @@
 
 ## Introduction
 
-This article introduces the integration theory of split-biquaternion-valued functions. It follows the article on split biquaternion analysis, which defined limits, continuity, and the differential operators on a four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$. The goal here is to define the integral of a split-biquaternion-valued function, establish the standard properties, and derive the integral formulas that are the counterparts of the Cauchy integral formula and its consequences.
+This article introduces the integration theory of split-biquaternion-valued functions. It follows the article on split biquaternion analysis, which defined limits, continuity, and the differential operators on a four-dimensional real subspace $V \subset \mathbb{B}^{\mathrm{spl}}$. The goal here is to define the integral of a split-biquaternion-valued function, establish the standard properties, and derive the integral formulas that are the counterparts of the Cauchy integral formula and its consequences.
 
 The treatment is purely mathematical. The independent variables are four real variables. They are the coordinates of $\mathbb{R}^4$, and they are independent of any physical interpretation. The split complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
 
 Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
-The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
+The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
 
 The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -23,10 +23,10 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quatern
 
 ### Definition
 
-Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. Let $F^{\mathrm{fn}} : V \to \mathbb{H}_{\mathbb{D}}$ be a split-biquaternion-valued function, written in components as
+Let $V$ be a four-dimensional real subspace of $\mathbb{B}^{\mathrm{spl}}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. Let $F^{\mathrm{fn}} : V \to \mathbb{B}^{\mathrm{spl}}$ be a split-biquaternion-valued function, written in components as
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}) = \sum_{\mu\in\{t,x,y,z\}} F_\mu(Q_t, Q_x, Q_y, Q_z) e_\mu, \qquad F_\mu \in \mathbb{D}.
+F^{\mathrm{fn}}(\tilde{Q}) = \sum_{\mu\in\{t,x,y,z\}} F_\mu(Q_t, Q_x, Q_y, Q_z) e_\mu, \qquad F_\mu \in \mathbb{C}^{\mathrm{spl}}.
 $$
 
 Let $\Omega \subset V$ be a domain. The **integral** of $F^{\mathrm{fn}}$ over $\Omega$ is
@@ -47,7 +47,7 @@ The integral is defined component-wise. It exists whenever each of the eight rea
 
 ### Linearity
 
-**Theorem (linearity).** For any $\alpha, \beta \in \mathbb{D}$ and integrable functions $F^{\mathrm{fn}}, G^{\mathrm{fn}}$,
+**Theorem (linearity).** For any $\alpha, \beta \in \mathbb{C}^{\mathrm{spl}}$ and integrable functions $F^{\mathrm{fn}}, G^{\mathrm{fn}}$,
 
 $$
 \int_\Omega (\alpha F^{\mathrm{fn}} + \beta G^{\mathrm{fn}}) \, dV = \alpha \int_\Omega F^{\mathrm{fn}} \, dV + \beta \int_\Omega G^{\mathrm{fn}} \, dV.
@@ -425,7 +425,7 @@ where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total
 
 ### The Residue
 
-The Cauchy integral formula for a function that is regular except at isolated singularities leads to a residue theory. However, the non-commutativity of $\mathbb{H}_{\mathbb{D}}$ and the presence of the zero divisor set make the definition of the residue more delicate than in the complex case.
+The Cauchy integral formula for a function that is regular except at isolated singularities leads to a residue theory. However, the non-commutativity of $\mathbb{B}^{\mathrm{spl}}$ and the presence of the zero divisor set make the definition of the residue more delicate than in the complex case.
 
 **Definition (isolated singularity).** A point $\tilde{Q}_0$ is an **isolated singularity** of $F^{\mathrm{fn}}$ if $F^{\mathrm{fn}}$ is defined and regular on a punctured neighborhood $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < r$ of $\tilde{Q}_0$.
 
@@ -461,7 +461,7 @@ where each of the two residues is the quaternion residue of the corresponding co
 
 ## The Role of the Zero Divisors
 
-The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the integration theory, the zero divisors play the following roles.
+The zero divisor set of $\mathbb{B}^{\mathrm{spl}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the integration theory, the zero divisors play the following roles.
 
 **In the fundamental solution.** The fundamental solution $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_t$ fails (for $\tilde{Q} = 1 + j$ one has $\tilde{Q}^{\natural}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}G^{\mathrm{fn}} = 0$; the only singularity of $G^{\mathrm{fn}}$ is the origin.
 
@@ -483,13 +483,13 @@ The integration theory developed in this article is the split biquaternion analo
 
 ## The Relation to the Split Complex Case
 
-In the split complex algebra $\mathbb{D}$, the integration theory is different because the algebra is two-dimensional. The Cauchy integral formula for split complex functions involves the kernel $1/(A - A_0)$, whose singular locus is the translate $A_0 + \mathbb{R}(1 \pm j)$ of the zero divisor set of $\mathbb{D}$. The integral formula is
+In the split complex algebra $\mathbb{C}^{\mathrm{spl}}$, the integration theory is different because the algebra is two-dimensional. The Cauchy integral formula for split complex functions involves the kernel $1/(A - A_0)$, whose singular locus is the translate $A_0 + \mathbb{R}(1 \pm j)$ of the zero divisor set of $\mathbb{C}^{\mathrm{spl}}$. The integral formula is
 
 $$
-f(A_0) = \frac{1}{2\pi i_{\mathbb{D}}} \oint_\gamma \frac{f(A)}{A - A_0} \, dA,
+f(A_0) = \frac{1}{2\pi i_{\mathbb{C}^{\mathrm{spl}}}} \oint_\gamma \frac{f(A)}{A - A_0} \, dA,
 $$
 
-where $i_{\mathbb{D}}$ is the "imaginary" unit of the split complex algebra. But the split complex algebra has no imaginary unit, so the formula is not directly analogous to the complex case. Instead, the split complex integration theory is expressed in the idempotent basis, where it reduces to two copies of the real integration theory.
+where $i_{\mathbb{C}^{\mathrm{spl}}}$ is the "imaginary" unit of the split complex algebra. But the split complex algebra has no imaginary unit, so the formula is not directly analogous to the complex case. Instead, the split complex integration theory is expressed in the idempotent basis, where it reduces to two copies of the real integration theory.
 
 The split biquaternion integration theory is the extension of the split complex integration theory by the quaternion units. The idempotent decomposition reduces it to two copies of the quaternion integration theory, which is the cleanest way to understand its structure.
 
@@ -513,7 +513,7 @@ The following questions are not answered in this article and are left for later 
 
 ## Summary
 
-The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\nabla^{R}$ after the function it differentiates, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
+The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{B}^{\mathrm{spl}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\nabla^{R}$ after the function it differentiates, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
 
 The **fundamental solution** of the gradient operator is $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, the distributional identity established above.
 
@@ -521,10 +521,10 @@ The **fundamental solution** of the gradient operator is $G^{\mathrm{fn}}(\tilde
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternion algebra, $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{C}^{\mathrm{spl}}$ |
 | $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$, $F_\mu = u_\mu + j v_\mu$ | Split complex coefficients and values |
 | ${}^{\natural}, \bar{\cdot}, {}^\dagger, {}^\flat$ | The four conjugations |

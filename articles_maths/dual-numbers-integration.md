@@ -3,17 +3,17 @@
 
 ## Introduction
 
-This article develops integration for functions of one dual variable. It follows *Dual-Numbers Analysis*, which fixed the dual plane, its Euclidean topology, dual differentiability and the dual Cauchy–Riemann equations, and it follows *Dual-Numbers Algebra* for the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$, the dual conjugation and the norm $\langle Q\rangle = q^2$. The contour integral was introduced there as a definition; here it is developed as a subject in its own right, and the question addressed is exactly how much of the Cauchy theory survives when the coefficient ring has nilpotents and is not a field.
+This article develops integration for functions of one dual variable. It follows *Dual-Numbers Analysis*, which fixed the dual plane, its Euclidean topology, dual differentiability and the dual Cauchy–Riemann equations, and it follows *Dual-Numbers Algebra* for the ring $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$, the dual conjugation and the norm $\langle Q\rangle = q^2$. The contour integral was introduced there as a definition; here it is developed as a subject in its own right, and the question addressed is exactly how much of the Cauchy theory survives when the coefficient ring has nilpotents and is not a field.
 
-The algebraic statements below hold over any commutative ring $R$, but the integral itself is an analytic object and requires a complete ordered field of coefficients. Throughout, therefore, the base is $\mathbb{R}$ and the algebra is $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$; the algebraic ingredients — the local structure, the group of units and the derivations — specialise to any such ring unchanged. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and $\mathbb{D}$, is the subject of *Hypercomplex Integration*, and the closest neighbouring case, where the coefficient ring has zero divisors but no nilpotents, is *Split-Complex Integration*.
+The algebraic statements below hold over any commutative ring $R$, but the integral itself is an analytic object and requires a complete ordered field of coefficients. Throughout, therefore, the base is $\mathbb{R}$ and the algebra is $\mathbb{C}^{\mathrm{dua}} = \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$; the algebraic ingredients — the local structure, the group of units and the derivations — specialise to any such ring unchanged. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and $\mathbb{C}^{\mathrm{spl}}$, is the subject of *Hypercomplex Integration*, and the closest neighbouring case, where the coefficient ring has zero divisors but no nilpotents, is *Split-Complex Integration*.
 
-Two algebraic facts govern everything that follows. First, $\mathbb{D}'$ is a **local ring**: it has the unique maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$, which is nilpotent of index two, $\mathrm{M}^2 = 0$, and the augmentation
+Two algebraic facts govern everything that follows. First, $\mathbb{C}^{\mathrm{dua}}$ is a **local ring**: it has the unique maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$, which is nilpotent of index two, $\mathrm{M}^2 = 0$, and the augmentation
 
 $$
-\pi : \mathbb{D}' \to \mathbb{R}, \qquad \pi(q + \varepsilon q') = q,
+\pi : \mathbb{C}^{\mathrm{dua}} \to \mathbb{R}, \qquad \pi(q + \varepsilon q') = q,
 $$
 
-is a ring homomorphism whose kernel is $\mathrm{M}$. The algebra is the trivial extension $\mathbb{D}' = \mathbb{R} \oplus \mathrm{M}$ of the field $\mathbb{R}$ by the square-zero ideal $\mathrm{M}$. Second, the norm $\langle Q\rangle = Q\bar Q = q^2$ is **degenerate**: it vanishes on the whole of $\mathrm{M}$, so it does not detect the infinitesimal part.
+is a ring homomorphism whose kernel is $\mathrm{M}$. The algebra is the trivial extension $\mathbb{C}^{\mathrm{dua}} = \mathbb{R} \oplus \mathrm{M}$ of the field $\mathbb{R}$ by the square-zero ideal $\mathrm{M}$. Second, the norm $\langle Q\rangle = Q\bar Q = q^2$ is **degenerate**: it vanishes on the whole of $\mathrm{M}$, so it does not detect the infinitesimal part.
 
 These two facts divide the classical Cauchy theory cleanly. The **vanishing** statement — the integral of a dual differentiable function over a closed path is zero — survives, and it holds on every domain, with no simple-connectivity hypothesis. But it is *soft*: its hypothesis is the differentiability condition, which forces the function into a form in which a primitive can be written down explicitly, so the theorem excludes nothing and constrains no topology. The **reconstruction** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the nilpotent ideal. The Cauchy kernel $(\zeta - Q_0)^{-1}$ is defined only where $\zeta - Q_0$ is a unit, that is only off the fibre $\pi^{-1}(\pi(Q_0))$; no contour of non-zero winding about $Q_0$ avoids that fibre.
 
@@ -27,9 +27,9 @@ Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$, $\bar Q = q - \v
 
 ### Paths and Contours
 
-**Definition.** A **path** is a continuous map $\gamma : [a,b] \to \mathbb{D}'$. It is **piecewise continuously differentiable**, written piecewise $C^1$, if there is a finite subdivision $a = t_0 < t_1 < \cdots < t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$. A path is **closed** if $\gamma(a) = \gamma(b)$ and **simple** if it is injective on $[a,b)$; a simple closed path is a **contour**.
+**Definition.** A **path** is a continuous map $\gamma : [a,b] \to \mathbb{C}^{\mathrm{dua}}$. It is **piecewise continuously differentiable**, written piecewise $C^1$, if there is a finite subdivision $a = t_0 < t_1 < \cdots < t_n = b$ such that $\gamma$ is continuously differentiable on each closed subinterval $[t_{k-1}, t_k]$. A path is **closed** if $\gamma(a) = \gamma(b)$ and **simple** if it is injective on $[a,b)$; a simple closed path is a **contour**.
 
-The **trace** of $\gamma$ is the compact set $\gamma^* = \gamma([a,b])$. The **opposite** path $-\gamma$ is $t \mapsto \gamma(a + b - t)$, and if $\gamma_1 : [a,b] \to \mathbb{D}'$ and $\gamma_2 : [b,c] \to \mathbb{D}'$ agree at $b$, their **concatenation** $\gamma_1 + \gamma_2$ follows first one and then the other. The **length** of a piecewise $C^1$ path is
+The **trace** of $\gamma$ is the compact set $\gamma^* = \gamma([a,b])$. The **opposite** path $-\gamma$ is $t \mapsto \gamma(a + b - t)$, and if $\gamma_1 : [a,b] \to \mathbb{C}^{\mathrm{dua}}$ and $\gamma_2 : [b,c] \to \mathbb{C}^{\mathrm{dua}}$ agree at $b$, their **concatenation** $\gamma_1 + \gamma_2$ follows first one and then the other. The **length** of a piecewise $C^1$ path is
 
 $$
 L(\gamma) = \int_a^b \|\gamma'(t)\|_E \, dt,
@@ -39,7 +39,7 @@ finite because $\gamma'$ is piecewise continuous on a compact interval. Two path
 
 ### Construction from the Riemann Sum
 
-**Definition.** Let $\gamma : [a,b] \to \mathbb{D}'$ be piecewise $C^1$ and let $f$ be continuous on a neighbourhood of $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the **Riemann sum**
+**Definition.** Let $\gamma : [a,b] \to \mathbb{C}^{\mathrm{dua}}$ be piecewise $C^1$ and let $f$ be continuous on a neighbourhood of $\gamma^*$. Given a subdivision $a = t_0 < t_1 < \cdots < t_n = b$ and sample points $\tau_k \in [t_{k-1}, t_k]$, set $Q_k = \gamma(t_k)$ and form the **Riemann sum**
 
 $$
 S = \sum_{k=1}^{n} f(\gamma(\tau_k))\,(Q_k - Q_{k-1}).
@@ -57,7 +57,7 @@ $$
 \int_\gamma f(Q)\,dQ = \int_a^b f(\gamma(t))\,\gamma'(t)\,dt.
 $$
 
-**Proof.** The product in $\mathbb{D}'$ is bilinear and $f$ is continuous, so the argument of the complex case applies verbatim. On each smooth piece,
+**Proof.** The product in $\mathbb{C}^{\mathrm{dua}}$ is bilinear and $f$ is continuous, so the argument of the complex case applies verbatim. On each smooth piece,
 
 $$
 Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\|_E \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
@@ -65,11 +65,11 @@ $$
 
 with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\|_E \,\omega(\|\Delta\|)(b-a) \to 0$.
 
-The integral exists because $\mathbb{D}'$ is a complete normed space under $\|\cdot\|_E$, exactly as $\mathbb{C}$ is under the modulus. Completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the nilpotence of $\varepsilon$.
+The integral exists because $\mathbb{C}^{\mathrm{dua}}$ is a complete normed space under $\|\cdot\|_E$, exactly as $\mathbb{C}$ is under the modulus. Completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the nilpotence of $\varepsilon$.
 
 ### Basic Properties
 
-Linearity, reversal, additivity and reparametrisation hold exactly as in *Dual-Numbers Analysis*: the integral is $\mathbb{D}'$-linear in the integrand, changes sign under $-\gamma$, is additive under concatenation, and is invariant under a piecewise $C^1$ orientation-preserving reparametrisation (with a sign change if the orientation is reversed). The one property that needs care is estimation, because the Euclidean norm is not multiplicative.
+Linearity, reversal, additivity and reparametrisation hold exactly as in *Dual-Numbers Analysis*: the integral is $\mathbb{C}^{\mathrm{dua}}$-linear in the integrand, changes sign under $-\gamma$, is additive under concatenation, and is invariant under a piecewise $C^1$ orientation-preserving reparametrisation (with a sign change if the orientation is reversed). The one property that needs care is estimation, because the Euclidean norm is not multiplicative.
 
 **Estimation.** If $\|f(Q)\|_E \leq m$ on $\gamma^*$, then
 
@@ -97,13 +97,13 @@ $$
 
 with equality, for instance, at $Q_1 = Q_2 = \sqrt{2/3} + \varepsilon\,\sqrt{1/3}$. Applying this to $f(\gamma(t))\gamma'(t)$ and integrating gives the estimate.
 
-**Remark.** The Euclidean norm is **not** submultiplicative on $\mathbb{D}'$, and $2/\sqrt3$ is the best constant. In particular the naive estimate $\|\int_\gamma f\,dQ\|_E \leq M L(\gamma)$, obtained by bounding $\|f(\gamma(t))\gamma'(t)\|_E$ pointwise by $\|f\|_E\|\gamma'\|_E$, is not available, because that pointwise inequality is false; the factor $2/\sqrt3$ is exactly what replaces it. This is the first sign that the Euclidean metric and the nilpotent multiplication are not aligned. In $\mathbb{C}$ the modulus is multiplicative and the constant is $1$; in $\mathbb{D}$ the best constant is $\sqrt2$, attained on the null cone; in $\mathbb{D}'$ it is $2/\sqrt3$, which lies between them, and it is attained when $Q_1 = Q_2$ and $\operatorname{Re}(Q_2)^2 = 2\operatorname{Inf}(Q_2)^2$, so no element of the zero-divisor set is extremal. The constant is a feature of the algebra alone and has no counterpart in the complex theory.
+**Remark.** The Euclidean norm is **not** submultiplicative on $\mathbb{C}^{\mathrm{dua}}$, and $2/\sqrt3$ is the best constant. In particular the naive estimate $\|\int_\gamma f\,dQ\|_E \leq M L(\gamma)$, obtained by bounding $\|f(\gamma(t))\gamma'(t)\|_E$ pointwise by $\|f\|_E\|\gamma'\|_E$, is not available, because that pointwise inequality is false; the factor $2/\sqrt3$ is exactly what replaces it. This is the first sign that the Euclidean metric and the nilpotent multiplication are not aligned. In $\mathbb{C}$ the modulus is multiplicative and the constant is $1$; in $\mathbb{C}^{\mathrm{spl}}$ the best constant is $\sqrt2$, attained on the null cone; in $\mathbb{C}^{\mathrm{dua}}$ it is $2/\sqrt3$, which lies between them, and it is attained when $Q_1 = Q_2$ and $\operatorname{Re}(Q_2)^2 = 2\operatorname{Inf}(Q_2)^2$, so no element of the zero-divisor set is extremal. The constant is a feature of the algebra alone and has no counterpart in the complex theory.
 
 ## Integration Along the Fibre
 
 ### The Augmentation and Its Fibres
 
-The augmentation $\pi : \mathbb{D}' \to \mathbb{R}$ is the unique unital ring homomorphism onto $\mathbb{R}$, and its kernel is the maximal ideal $\mathrm{M}$. Its **fibres** are the sets
+The augmentation $\pi : \mathbb{C}^{\mathrm{dua}} \to \mathbb{R}$ is the unique unital ring homomorphism onto $\mathbb{R}$, and its kernel is the maximal ideal $\mathrm{M}$. Its **fibres** are the sets
 
 $$
 \pi^{-1}(q) = q + \mathrm{M} = \{q + \varepsilon q' : q' \in \mathbb{R}\},
@@ -177,7 +177,7 @@ Equivalently, iterating the fibre integration multiplies two infinitesimal incre
 
 ### The Exterior Derivative of $f\,dQ$
 
-A $\mathbb{D}'$-valued $1$-form on $\Omega$ is an expression $P_1\,dq + P_2\,dq'$ with $P_1, P_2 : \Omega \to \mathbb{D}'$; it is **closed** if $d\omega = 0$, that is if $\partial/\partial q' P_1 = \partial/\partial q P_2$ on $\Omega$, and **exact** if $\omega = dF$ for some dual-valued function $F$. A closed form is exact on a simply connected domain, and for the forms $f\,dQ$ considered here exactness holds on every domain, by the primitive constructed below. A direct computation gives the closedness criterion.
+A $\mathbb{C}^{\mathrm{dua}}$-valued $1$-form on $\Omega$ is an expression $P_1\,dq + P_2\,dq'$ with $P_1, P_2 : \Omega \to \mathbb{C}^{\mathrm{dua}}$; it is **closed** if $d\omega = 0$, that is if $\partial/\partial q' P_1 = \partial/\partial q P_2$ on $\Omega$, and **exact** if $\omega = dF$ for some dual-valued function $F$. A closed form is exact on a simply connected domain, and for the forms $f\,dQ$ considered here exactness holds on every domain, by the primitive constructed below. A direct computation gives the closedness criterion.
 
 **Theorem.** Let $f = u + v\varepsilon$ be $C^1$ on a domain $\Omega$. Then the form $f\,dQ = P_1\,dq + P_2\,dq'$ with $P_1 = u + v\varepsilon$ and $P_2 = u\varepsilon$ is closed if and only if
 
@@ -185,7 +185,7 @@ $$
 \frac{\partial u}{\partial q'} = 0, \qquad \frac{\partial v}{\partial q'} = \frac{\partial u}{\partial q}.
 $$
 
-**Proof.** For a $\mathbb{D}'$-valued form $P_1\,dq + P_2\,dq'$ with $C^1$ coefficients, closedness is equivalent to $\partial/\partial q' P_1 = \partial/\partial q P_2$; this is the two-variable real criterion applied to each of the two components. Here $\partial/\partial q' P_1 = u_{q'} + v_{q'}\varepsilon$ and $\partial/\partial q P_2 = u_q\varepsilon$, and the two agree exactly when the real parts agree, $u_{q'} = 0$, and the coefficients of $\varepsilon$ agree, $v_{q'} = u_q$.
+**Proof.** For a $\mathbb{C}^{\mathrm{dua}}$-valued form $P_1\,dq + P_2\,dq'$ with $C^1$ coefficients, closedness is equivalent to $\partial/\partial q' P_1 = \partial/\partial q P_2$; this is the two-variable real criterion applied to each of the two components. Here $\partial/\partial q' P_1 = u_{q'} + v_{q'}\varepsilon$ and $\partial/\partial q P_2 = u_q\varepsilon$, and the two agree exactly when the real parts agree, $u_{q'} = 0$, and the coefficients of $\varepsilon$ agree, $v_{q'} = u_q$.
 
 Equivalently, with the dual Wirtinger operator of *Dual-Numbers Analysis*,
 
@@ -245,7 +245,7 @@ $$
 
 ### The Softness of the Theorem
 
-The Cauchy–Goursat theorem holds in $\mathbb{D}'$ for a reason that gives it no force. The primitive exists on **every** domain, with no simple-connectivity hypothesis, because each of the two functions $u, c$ is a function of a single real variable and a continuous one-variable function always has an antiderivative. Consequently:
+The Cauchy–Goursat theorem holds in $\mathbb{C}^{\mathrm{dua}}$ for a reason that gives it no force. The primitive exists on **every** domain, with no simple-connectivity hypothesis, because each of the two functions $u, c$ is a function of a single real variable and a continuous one-variable function always has an antiderivative. Consequently:
 
 - The theorem is a statement about the differentiability of $f$, not about the shape of $\Omega$; the fundamental group of the domain never enters.
 - Since the primitive exists everywhere, there is no obstruction theory and no period: no closed integral can be non-zero for a differentiable integr, on any domain.
@@ -259,7 +259,7 @@ What does survive of path independence is therefore only the positive direction.
 
 The Cauchy–Goursat theorem has a partial converse, and in the dual case — as in the split complex case — it stops one step short of differentiability.
 
-**Theorem (rectangle criterion).** For a continuous $f : \Omega \to \mathbb{D}'$ the following are equivalent.
+**Theorem (rectangle criterion).** For a continuous $f : \Omega \to \mathbb{C}^{\mathrm{dua}}$ the following are equivalent.
 
 1. $\oint_{\partial R} f(Q)\,dQ = 0$ for every axis-parallel rectangle $R \subseteq \Omega$.
 2. $f = F'$ for some dual differentiable $F$ on $\Omega$; equivalently $f = A'(q) + (q'A''(q) + C'(q))\varepsilon$, where $F = A(q) + (q'A'(q) + C(q))\varepsilon$ is the structure form of $F$.
@@ -298,7 +298,7 @@ The detector returns an area, not an integer winding number: the quantity that s
 
 ### The Dual Cauchy Kernel
 
-**Proposition.** Let $Q_0 \in \mathbb{D}'$. The element $\zeta - Q_0$ is a unit if and only if $\operatorname{Re}\zeta \neq \operatorname{Re} Q_0$, and for such $\zeta$
+**Proposition.** Let $Q_0 \in \mathbb{C}^{\mathrm{dua}}$. The element $\zeta - Q_0$ is a unit if and only if $\operatorname{Re}\zeta \neq \operatorname{Re} Q_0$, and for such $\zeta$
 
 $$
 (\zeta - Q_0)^{-1} = \frac{1}{\operatorname{Re}(\zeta - Q_0)} - \frac{\operatorname{Inf}(\zeta - Q_0)}{\operatorname{Re}(\zeta - Q_0)^2}\,\varepsilon.
@@ -316,7 +316,7 @@ The kernel is undefined on an entire line through $Q_0$, not merely at $Q_0$.
 
 ### No Contour Avoids the Fibre
 
-**Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{D}'$ that recovers $f(Q_0)$ from a contour integral of $f$ against the kernel $(\zeta - Q_0)^{-1}$ along a contour $\gamma$ winding once about $Q_0$.
+**Theorem (obstruction).** There is no Cauchy integral formula in $\mathbb{C}^{\mathrm{dua}}$ that recovers $f(Q_0)$ from a contour integral of $f$ against the kernel $(\zeta - Q_0)^{-1}$ along a contour $\gamma$ winding once about $Q_0$.
 
 **Proof.** A closed contour with non-zero winding number about $Q_0$ meets both open half-planes $\{\operatorname{Re}\zeta > \operatorname{Re} Q_0\}$ and $\{\operatorname{Re}\zeta < \operatorname{Re} Q_0\}$; otherwise it would lie in a closed half-plane whose boundary contains $Q_0$, a convex set in which $Q_0$ has no interior, and a curve in such a set has winding number zero about $Q_0$. Hence the continuous real function $\operatorname{Re}\gamma(t) - \operatorname{Re} Q_0$ takes both signs, and by the intermediate value theorem there is a parameter at which it vanishes, that is a point at which $\gamma$ meets the fibre $L_{Q_0}$. At that point $\zeta - Q_0$ is not a unit, the kernel $(\zeta - Q_0)^{-1}$ is undefined, and the contour integral does not exist.
 
@@ -328,7 +328,7 @@ The following are consequences of the obstruction. None of them has an analogue 
 
 - **No Cauchy integral formula.** As above.
 - **No residue and no winding number.** A circle of small radius about $Q_0$ meets the fibre in two points, where the integrand of a would-be residue is undefined; and the surviving area detector returns a real area rather than an integer.
-- **No Cauchy estimates and no Liouville theorem.** The function $f(Q) = \sin(q)\,\varepsilon$ is dual differentiable on all of $\mathbb{D}'$, because its real part vanishes and its infinitesimal part is independent of $q'$. It satisfies $\|f\|_E = |\sin q| \leq 1$, yet it is not constant. So a bounded dual differentiable function on the whole plane need not be constant.
+- **No Cauchy estimates and no Liouville theorem.** The function $f(Q) = \sin(q)\,\varepsilon$ is dual differentiable on all of $\mathbb{C}^{\mathrm{dua}}$, because its real part vanishes and its infinitesimal part is independent of $q'$. It satisfies $\|f\|_E = |\sin q| \leq 1$, yet it is not constant. So a bounded dual differentiable function on the whole plane need not be constant.
 - **No mean value property and no maximum principle.** Both would be consequences of the integral formula. The real part of a differentiable function depends only on $q$, so its average over a circle of radius $r$ about a point of real part $q_0$ is the weighted average $\frac{1}{2\pi}\int_0^{2\pi}u(q_0 + r\cos t)\,dt$ of $u$ over the interval $[q_0-r, q_0+r]$, which need not equal $u(q_0)$: for $u(q) = q^2$ it is $q_0^2 + r^2/2$.
 - **No Laurent expansion at a point.** The negative powers $(\zeta - Q_0)^{-n}$ are undefined on the whole fibre through $Q_0$, so a Laurent series in $(\zeta - Q_0)$ does not exist. Power series in non-negative powers do exist wherever the two real functions are real-analytic.
 - **No identity theorem.** Distinctness of the zero set from the whole plane does not force a function to vanish. Let $c$ be a smooth function that vanishes for $|q| < 1$ and is positive outside that interval; then $f(Q) = c(q)\,\varepsilon$ is dual differentiable, because its real part vanishes and its infinitesimal part is independent of $q'$, and it vanishes on the open strip $|q| < 1$ while being non-zero outside it. So a differentiable function may vanish on a non-empty open set without vanishing identically, and no accumulation argument for zero sets is available.
@@ -425,7 +425,7 @@ $$
 \partial^{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'.
 $$
 
-It is the derivation determined by $\partial^{\mathrm{nil}}(1) = 0$ and $\partial^{\mathrm{nil}}(\varepsilon) = \varepsilon$; its kernel is the real submodule $\mathbb{R}$, and its image is the maximal ideal $\mathrm{M}$. It is idempotent, $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$, and it is **not** the formal derivative $d/\varepsilon d$ of the truncated polynomial ring: the formal derivative would send $\varepsilon$ to $1$, and the Leibniz rule would then force $0 = d(\varepsilon^2)/\varepsilon d = 2\varepsilon$, which fails. The only derivations of $\mathbb{D}'$ are the multiples $c\,\partial^{\mathrm{nil}}$ of this one; $\partial^{\mathrm{nil}}$ itself is idempotent rather than nilpotent, and $c\,\partial^{\mathrm{nil}}$ is idempotent exactly for $c = 0$ and $c = 1$.
+It is the derivation determined by $\partial^{\mathrm{nil}}(1) = 0$ and $\partial^{\mathrm{nil}}(\varepsilon) = \varepsilon$; its kernel is the real submodule $\mathbb{R}$, and its image is the maximal ideal $\mathrm{M}$. It is idempotent, $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$, and it is **not** the formal derivative $d/\varepsilon d$ of the truncated polynomial ring: the formal derivative would send $\varepsilon$ to $1$, and the Leibniz rule would then force $0 = d(\varepsilon^2)/\varepsilon d = 2\varepsilon$, which fails. The only derivations of $\mathbb{C}^{\mathrm{dua}}$ are the multiples $c\,\partial^{\mathrm{nil}}$ of this one; $\partial^{\mathrm{nil}}$ itself is idempotent rather than nilpotent, and $c\,\partial^{\mathrm{nil}}$ is idempotent exactly for $c = 0$ and $c = 1$.
 
 The relation between this derivation and the fibre integral is the following.
 
@@ -451,9 +451,9 @@ So the fibre integral returns the real part and the derivation recovers the infi
 
 ### Higher Nilpotent Truncations
 
-The simplicity of the derived substitute is a consequence of truncation at order two. For the **truncated polynomial algebra** $\mathbb{D}'_{R,n} = R[\varepsilon]/(\varepsilon^{n+1})$ of *Dual-Numbers Algebra*, with $n \geq 1$, an element of the ideal $(\varepsilon)$ is nilpotent of index at most $n+1$, so the expansion in the nilpotent direction truncates at order $n$ rather than at order one.
+The simplicity of the derived substitute is a consequence of truncation at order two. For the **truncated polynomial algebra** $\mathbb{C}^{\mathrm{dua}}_{R,n} = R[\varepsilon]/(\varepsilon^{n+1})$ of *Dual-Numbers Algebra*, with $n \geq 1$, an element of the ideal $(\varepsilon)$ is nilpotent of index at most $n+1$, so the expansion in the nilpotent direction truncates at order $n$ rather than at order one.
 
-**Theorem (truncated expansion).** Let $f$ be dual differentiable on a neighbourhood of the real point $q$ in $\mathbb{D}'_{R,n}$, and suppose that the iterated algebraic derivatives $f, f', \dots, f^{(n)}$ are dual differentiable on the fibre segment $\{q + th : 0 \leq t \leq 1\}$ for every $h \in (\varepsilon)$. Then
+**Theorem (truncated expansion).** Let $f$ be dual differentiable on a neighbourhood of the real point $q$ in $\mathbb{C}^{\mathrm{dua}}_{R,n}$, and suppose that the iterated algebraic derivatives $f, f', \dots, f^{(n)}$ are dual differentiable on the fibre segment $\{q + th : 0 \leq t \leq 1\}$ for every $h \in (\varepsilon)$. Then
 
 $$
 f(q + h) = \sum_{k=0}^{n} \frac{f^{(k)}(q)}{k!}\,h^k \qquad (h \in (\varepsilon)),
@@ -481,7 +481,7 @@ plays the role of the residue in the derived variable: it is a linear functional
 
 ## Comparison with Complex Integration
 
-The differences are consequences of the single relation $\varepsilon^2 = 0$ against $i^2 = -1$, which makes $\mathbb{C}$ a field and $\mathbb{D}'$ a local ring with a nilpotent maximal ideal.
+The differences are consequences of the single relation $\varepsilon^2 = 0$ against $i^2 = -1$, which makes $\mathbb{C}$ a field and $\mathbb{C}^{\mathrm{dua}}$ a local ring with a nilpotent maximal ideal.
 
 | Property | Complex | Dual |
 |---|---|---|
@@ -508,9 +508,9 @@ $$
 D = \partial/\partial a' + \sum_{k \geq 1} B_k \partial/\partial x_k, \qquad B_j B_k + B_k B_j = -2\delta_{jk}, \qquad B_k^2 = -1,
 $$
 
-whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution is a Cauchy kernel singular at a point. The hypothesis $B_k^2 = -1$ is exactly the hypothesis that the system be elliptic, and it is exactly what fails for $\mathbb{D}'$.
+whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution is a Cauchy kernel singular at a point. The hypothesis $B_k^2 = -1$ is exactly the hypothesis that the system be elliptic, and it is exactly what fails for $\mathbb{C}^{\mathrm{dua}}$.
 
-**Proposition.** There is no element $Q \in \mathbb{D}'$ with $Q^2 = -1$. Hence the dual system cannot be presented as an elliptic hypercomplex system in the sense of the general theory, and no choice of generators $B_k$ satisfies the general hypotheses.
+**Proposition.** There is no element $Q \in \mathbb{C}^{\mathrm{dua}}$ with $Q^2 = -1$. Hence the dual system cannot be presented as an elliptic hypercomplex system in the sense of the general theory, and no choice of generators $B_k$ satisfies the general hypotheses.
 
 **Proof.** Write $Q = q + \varepsilon q'$. Then $Q^2 = q^2 + 2qq'\,\varepsilon$. The equation $Q^2 = -1$ requires $q^2 = -1$, impossible for real $q$.
 
@@ -522,7 +522,7 @@ $$
 
 which is the degenerate second-order operator in the $q'$-direction and not the Laplacian $\Delta = \partial^2/\partial q^2 + \partial^2/\partial q'^2$ of the plane. So the dual system is not elliptic, and no scalar multiple of $D$ has an elliptic principal symbol.
 
-The consequences are those of the preceding sections. The general **Cauchy–Goursat** theorem applies to the dual system, because $\mathbb{D}'$ is commutative and every dual differentiable function has an explicit primitive; but it carries no information there, since the vanishing half of the theory is soft. The general **residue theory** and **Cauchy integral formula**, by contrast, have no dual analogue, because their proofs use the point singularity of the fundamental solution and here the singular support is the fibre. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $\{\xi = 0\}$, for $\mathbb{D}$ it is the null cone, and for $\mathbb{D}'$ it is the line $\xi_{q'} = 0$. The dual theory is thus the most degenerate case of the general theory: the characteristic set is a line, the group of units modulo scaling is one-dimensional and unipotent, and the integral reduces to a pair of ordinary real integrals of which the real part is always exact.
+The consequences are those of the preceding sections. The general **Cauchy–Goursat** theorem applies to the dual system, because $\mathbb{C}^{\mathrm{dua}}$ is commutative and every dual differentiable function has an explicit primitive; but it carries no information there, since the vanishing half of the theory is soft. The general **residue theory** and **Cauchy integral formula**, by contrast, have no dual analogue, because their proofs use the point singularity of the fundamental solution and here the singular support is the fibre. The mechanism of the failure is the constant in the characteristic equation: for $\mathbb{C}$ the characteristic set of $D$ is the single point $\{\xi = 0\}$, for $\mathbb{C}^{\mathrm{spl}}$ it is the null cone, and for $\mathbb{C}^{\mathrm{dua}}$ it is the line $\xi_{q'} = 0$. The dual theory is thus the most degenerate case of the general theory: the characteristic set is a line, the group of units modulo scaling is one-dimensional and unipotent, and the integral reduces to a pair of ordinary real integrals of which the real part is always exact.
 
 ## Summary
 
@@ -540,21 +540,21 @@ The form $f\,dQ$ is **closed** exactly when $f$ is **dual differentiable**, that
 
 The **obstruction** to the reconstruction half of the theory is the nilpotent ideal. The kernel $(\zeta - Q_0)^{-1}$ is defined exactly off the fibre through $Q_0$, and no contour of non-zero winding avoids that fibre, so there is no **Cauchy integral formula**, no residue, no winding number, no Cauchy estimates, no Liouville theorem, no mean value property, no maximum principle, no Laurent expansion and no identity theorem. Analytically the same obstruction is the **fundamental solution** of the dual Cauchy–Riemann operator $D = \partial/\partial q' - \varepsilon\partial/\partial q$, which is supported on a ray of the fibre and not at a point; the pair $D, \bar D = \partial/\partial q' \pm \varepsilon\partial/\partial q$ satisfies $D\bar D = \bar D D = \partial^2/\partial q'^2$ and not $\Delta$, so $D$ is not elliptic.
 
-What replaces the reconstruction half is the **derived** statement. A dual differentiable function is determined by its restriction to the real axis through $f(q + \varepsilon q') = u(q) + (q'u'(q)+c(q))\varepsilon$, its expansion in the nilpotent direction is exact, and the fibre integral evaluates while the derivation $\partial^{\mathrm{nil}}$ differentiates; for higher truncations $R[\varepsilon]/(\varepsilon^{n+1})$ the same scheme returns an exact $n$-jet and the residue functional becomes coefficient extraction in the derived variable. Finally, the dual system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{D}'$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to a soft vanishing theorem with no reconstruction theorem.
+What replaces the reconstruction half is the **derived** statement. A dual differentiable function is determined by its restriction to the real axis through $f(q + \varepsilon q') = u(q) + (q'u'(q)+c(q))\varepsilon$, its expansion in the nilpotent direction is exact, and the fibre integral evaluates while the derivation $\partial^{\mathrm{nil}}$ differentiates; for higher truncations $R[\varepsilon]/(\varepsilon^{n+1})$ the same scheme returns an exact $n$-jet and the residue functional becomes coefficient extraction in the derived variable. Finally, the dual system fails the ellipticity hypothesis $B_k^2 = -1$ of *Hypercomplex Integration* — $\mathbb{C}^{\mathrm{dua}}$ contains no square root of $-1$ — and it is the case in which the general theory degenerates to a soft vanishing theorem with no reconstruction theorem.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual number algebra, $\varepsilon^2 = 0$ |
-| $\mathbb{D}'_{R,n} = R[\varepsilon]/(\varepsilon^{n+1})$ | Truncated polynomial algebra |
+| $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual number algebra, $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dua}}_{R,n} = R[\varepsilon]/(\varepsilon^{n+1})$ | Truncated polynomial algebra |
 | $Q = q + \varepsilon q'$ | General dual number, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
 | $\bar Q = q - \varepsilon q'$ | Dual conjugate |
 | $\langle Q\rangle = Q\bar Q = q^2$ | Degenerate norm |
 | $\|Q\|_E = \sqrt{q^2+q'^2}$ | Euclidean modulus |
 | $\mathrm{M} = \varepsilon\mathbb{R}$ | Maximal ideal, nilpotent, $\mathrm{M}^2 = 0$ |
-| $\pi : \mathbb{D}' \to \mathbb{R}$ | Augmentation, kernel $\mathrm{M}$ |
-| $\gamma : [a,b] \to \mathbb{D}'$ | Piecewise $C^1$ path |
+| $\pi : \mathbb{C}^{\mathrm{dua}} \to \mathbb{R}$ | Augmentation, kernel $\mathrm{M}$ |
+| $\gamma : [a,b] \to \mathbb{C}^{\mathrm{dua}}$ | Piecewise $C^1$ path |
 | $\gamma^*$, $-\gamma$, $\gamma_1+\gamma_2$ | Trace, opposite path, concatenation |
 | $L(\gamma) = \int_a^b \|\gamma'(t)\|_E\,dt$ | Euclidean length |
 | $\int_\gamma f\,dQ$ | Dual integral |
@@ -566,7 +566,7 @@ What replaces the reconstruction half is the **derived** statement. A dual diffe
 | $F = A + (q'u + C)\varepsilon$ | Primitive of a differentiable $f$, with $A' = u$, $C' = c$ |
 | $E = H(q')\delta(q) + q'_+\delta'(q)\varepsilon$ | Fundamental solution of $D$, supported on a fibre ray |
 | $\operatorname{Area}(\gamma)$ | Signed area enclosed by a closed contour; $\oint_\gamma \bar Q\,dQ = 2\operatorname{Area}(\gamma)\varepsilon$ |
-| $\ell_n(f)$ | Coefficient of $\varepsilon^n$ in $f$, the residue functional of $\mathbb{D}'_{R,n}$ |
+| $\ell_n(f)$ | Coefficient of $\varepsilon^n$ in $f$, the residue functional of $\mathbb{C}^{\mathrm{dua}}_{R,n}$ |
 
 ## Further Reading
 

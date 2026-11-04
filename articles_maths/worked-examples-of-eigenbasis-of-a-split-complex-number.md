@@ -100,18 +100,18 @@ $$
 The Peirce corners relative to $\Pi_+$ are
 
 $$
-\mathbb{D}_{++}=\mathbb{R}\Pi_+,
+\mathbb{C}^{\mathrm{spl}}_{++}=\mathbb{R}\Pi_+,
 \qquad
-\mathbb{D}_{--}=\mathbb{R}\Pi_-,
+\mathbb{C}^{\mathrm{spl}}_{--}=\mathbb{R}\Pi_-,
 \qquad
-\mathbb{D}_{+-}=\mathbb{D}_{-+}=0.
+\mathbb{C}^{\mathrm{spl}}_{+-}=\mathbb{C}^{\mathrm{spl}}_{-+}=0.
 $$
 
 The two mixed corners vanish because the algebra is commutative. The eigenvalue decomposition is therefore the Peirce decomposition read on the element, and the two Peirce coordinates of $Q$ are its two eigenvalues.
 
 ### The Eigenbasis
 
-The pair $(\Pi_+,\Pi_-)$ is a basis of $\mathbb{D}$, and in this basis multiplication by $Q$ is diagonal:
+The pair $(\Pi_+,\Pi_-)$ is a basis of $\mathbb{C}^{\mathrm{spl}}$, and in this basis multiplication by $Q$ is diagonal:
 
 $$
 Q\Pi_+=\lambda_+\Pi_+,
@@ -806,11 +806,11 @@ and in particular $Q^2=2Q=2+2j$. There is no inverse. The two spinor spaces read
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | the split-complex algebra, $j^2=+1$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $\lambda_\pm=q\pm q'$ | the two eigenvalues |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the two eigenprojections |
-| $\mathbb{D}_{\sigma\tau}$ | the Peirce corners |
+| $\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}$ | the Peirce corners |
 | $S_\pm=\mathbb{R}\Pi_\pm$ | the two spinor spaces |
 | $M_Q$ | the matrix of multiplication by $Q$ in the basis $(1,j)$ |
 | $C$ | the change to the eigenbasis |

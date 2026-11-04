@@ -43,7 +43,7 @@ It is central: $u, v, w$ each anticommute with one another and the only central 
 
 **(d) The biquaternions are not central over $\mathbb{R}$.** The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ has centre $\mathbb{C}$, so it is simple but not central over $\mathbb{R}$; over $\mathbb{C}$ it is $M_2(\mathbb{C})$ and is central simple. This is the distinction that the phrase "central *over* $F$" records, and it is why the ground field is named at each step.
 
-**(e) A non-example.** The split-complex algebra $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$ is commutative and the dual numbers $\mathbb{D}' = \mathbb{R}[x]/(x^2)$ are not simple. Neither is central simple. The group algebra $\mathbb{C}[G]$ of a finite group is central simple only in the trivial case $G = 1$: otherwise it is a product of two or more ideals.
+**(e) A non-example.** The split-complex algebra $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$ is commutative and the dual numbers $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[x]/(x^2)$ are not simple. Neither is central simple. The group algebra $\mathbb{C}[G]$ of a finite group is central simple only in the trivial case $G = 1$: otherwise it is a product of two or more ideals.
 
 ### The dimension is a square
 

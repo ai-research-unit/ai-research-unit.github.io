@@ -5,12 +5,12 @@
 This article treats the **modulus–unit polar decomposition** of a split-complex number: the writing
 
 $$
-Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{D}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
+Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}^{\mathrm{spl}}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
 $$
 
-with $r$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of *Modulus–Unit Polar Decomposition of Complex Numbers*.
+with $r$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of *Modulus–Unit Polar Decomposition of Complex Numbers*.
 
-The norm of $\mathbb{D}$ is indefinite of signature $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of units is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.
+The norm of $\mathbb{C}^{\mathrm{spl}}$ is indefinite of signature $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of units is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.
 
 The article defines the norm and the two regimes (§*The Two Factors*), proves existence and uniqueness (§*Existence and Uniqueness*), describes the group of units and its maximal compact subgroup (§*The Group of Units and the Unit Set*), records the two axes (§*The Two Axes*), gives the matrix picture (§*The Matrix Picture*), computes examples (§*Worked Examples*) and compares the family (§*The Other Algebras*).
 
@@ -73,7 +73,7 @@ $$
 The **unit set** is therefore
 
 $$
-\mathbb{D}^{(\pm1)} = \{\,u \in \mathbb{D} : \lvert \langle u\rangle_{*}\rvert = 1\,\} = \{\langle u\rangle_{*} = 1\} \sqcup \{\langle u\rangle_{*} = -1\},
+{\mathbb{C}^{\mathrm{spl}}}^{(\pm1)} = \{\,u \in \mathbb{C}^{\mathrm{spl}} : \lvert \langle u\rangle_{*}\rvert = 1\,\} = \{\langle u\rangle_{*} = 1\} \sqcup \{\langle u\rangle_{*} = -1\},
 $$
 
 the union of the two hyperbolas $q^2-q'^2 = 1$ and $q'^2-q^2 = 1$. Each hyperbola has two branches, so the unit set has four connected components. With the hyperbolic angle $\phi \in \mathbb{R}$,
@@ -86,7 +86,7 @@ $$
 \langle u\rangle_{*} = -1: \quad u = \pm j\exp(\phi j) = \pm\bigl(\sinh\phi + j\cosh\phi\bigr).
 $$
 
-The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*.
+The sign in front of the exponential is the branch sign, and $\phi$ is a coordinate on the branch, not a periodic angle. The phrase **unit factor** names the unit elements for the norm in view, the split norm $N$. It is not the **group of units** ${\mathbb{C}^{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*.
 
 ### The Count of the Parameters
 
@@ -100,22 +100,22 @@ The decomposition has two real parameters on each component: the modulus $r>0$ a
 
 **Uniqueness.** Suppose $Q = ru = r_1u_1$ with $r,r_1>0$ and $\lvert \langle u\rangle_{*}\rvert = \lvert \langle u_1\rangle_{*}\rvert = 1$. Taking absolute values of the norm gives $r^2 = \lvert \langle Q\rangle_{*}\rvert = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.
 
-The pair $(r,u)$ is unique, with no sign or branch ambiguity. The sign of the norm is a **regime**, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$, so the modulus is always positive and the sign is carried by the unit factor. A negative real has positive modulus and unit factor $-1$; $j$ has modulus $1$ and unit factor $j$. The decomposition is defined exactly on $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$; on the null cone the modulus vanishes and the unit factor does not exist.
+The pair $(r,u)$ is unique, with no sign or branch ambiguity. The sign of the norm is a **regime**, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$, so the modulus is always positive and the sign is carried by the unit factor. A negative real has positive modulus and unit factor $-1$; $j$ has modulus $1$ and unit factor $j$. The decomposition is defined exactly on ${\mathbb{C}^{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$; on the null cone the modulus vanishes and the unit factor does not exist.
 
 ## The Group of Units and the Unit Set
 
 ### The Idempotent Coordinates and the Components
 
-The group of units is $\mathbb{D}^\times = \{Q : \langle Q\rangle_{*}\neq0\}$. In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$ the multiplication is componentwise and
+The group of units is ${\mathbb{C}^{\mathrm{spl}}}^\times = \{Q : \langle Q\rangle_{*}\neq0\}$. In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$ the multiplication is componentwise and
 
 $$
-\mathbb{D}^\times \cong \mathbb{R}^\times \times \mathbb{R}^\times, \qquad Q \longmapsto (Q_+,Q_-).
+{\mathbb{C}^{\mathrm{spl}}}^\times \cong \mathbb{R}^\times \times \mathbb{R}^\times, \qquad Q \longmapsto (Q_+,Q_-).
 $$
 
 Each factor $\mathbb{R}^\times$ has two components, so the product has four. The components are indexed by the signs of $Q_+$ and $Q_-$, equivalently by the four quadrants of the $(Q_+,Q_-)$ plane. Each component is an open quadrant in the $(Q_+,Q_-)$ coordinates, hence contractible and diffeomorphic to $\mathbb{R}^2$. The identity component is
 
 $$
-(\mathbb{D}^\times)_0 = \{Q : Q_+>0,\ Q_->0\} = \{q>\lvert q'\rvert\} = \{\langle Q\rangle_{*}>0,\ q>0\},
+({\mathbb{C}^{\mathrm{spl}}}^\times)_0 = \{Q : Q_+>0,\ Q_->0\} = \{q>\lvert q'\rvert\} = \{\langle Q\rangle_{*}>0,\ q>0\},
 $$
 
 the future cone of the indefinite form. It is the image of the exponential, treated in *Split-Complex Exponential and Lie Group Structure* and in *Exponential Polar Decomposition of Split-Complex Numbers*.
@@ -137,28 +137,28 @@ $$
 with $\epsilon_1\epsilon_2$ computed in the four-element group $\{\pm1,\pm j\}$, where $j^2 = 1$. Hence the polar decomposition read as a map is a group isomorphism
 
 $$
-\boxed{\;\mathbb{D}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (r,\phi,\epsilon)\;}.
+\boxed{\;{\mathbb{C}^{\mathrm{spl}}}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (r,\phi,\epsilon)\;}.
 $$
 
 Equivalently, the map $(Q_+,Q_-)\mapsto(r,\phi,\operatorname{sign}Q_+,\operatorname{sign}Q_-)$ with $r=\sqrt{\lvert Q_+Q_-\rvert}$ and $\phi=\tfrac12\ln\lvert Q_+/Q_-\rvert$ is a diffeomorphism of $\mathbb{R}^\times\times\mathbb{R}^\times$ onto $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2)^2$. The first factor is the scale, the second is the hyperbolic angle or rapidity, and the last two are the branch signs. The angle has no period: the unit factor ranges over a line, not over a circle.
 
 ### The Maximal Compact Subgroup
 
-**Theorem.** The maximal compact subgroup of $\mathbb{D}^\times$ is the four-element group $\{\pm1,\pm j\}$, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.
+**Theorem.** The maximal compact subgroup of ${\mathbb{C}^{\mathrm{spl}}}^\times$ is the four-element group $\{\pm1,\pm j\}$, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.
 
-**Proof.** Let $K\subset\mathbb{D}^\times$ be compact and let $Q = r\epsilon\exp(\phi j)$ be its polar form. The modulus $r : \mathbb{D}^\times\to\mathbb{R}_{>0}$ is a continuous homomorphism, so $r(K)$ is a compact subgroup of $\mathbb{R}_{>0}$, and the only such subgroup is $\{1\}$. The angle $\phi : \mathbb{D}^\times\to\mathbb{R}$ is also a continuous homomorphism, so $\phi(K)$ is a compact subgroup of the additive group $\mathbb{R}$, which is $\{0\}$. Hence $r=1$ and $\phi=0$ on $K$, and $K\subset\{\pm1,\pm j\}$. That four-element set is itself a compact subgroup, so it is the maximal one.
+**Proof.** Let $K\subset{\mathbb{C}^{\mathrm{spl}}}^\times$ be compact and let $Q = r\epsilon\exp(\phi j)$ be its polar form. The modulus $r : {\mathbb{C}^{\mathrm{spl}}}^\times\to\mathbb{R}_{>0}$ is a continuous homomorphism, so $r(K)$ is a compact subgroup of $\mathbb{R}_{>0}$, and the only such subgroup is $\{1\}$. The angle $\phi : {\mathbb{C}^{\mathrm{spl}}}^\times\to\mathbb{R}$ is also a continuous homomorphism, so $\phi(K)$ is a compact subgroup of the additive group $\mathbb{R}$, which is $\{0\}$. Hence $r=1$ and $\phi=0$ on $K$, and $K\subset\{\pm1,\pm j\}$. That four-element set is itself a compact subgroup, so it is the maximal one.
 
 The contrast with the complex case is exact. There the group of units is $\mathbb{C}^\times\cong\mathbb{R}_{>0}\times\mathrm{U}(1)$, and the maximal compact subgroup is the circle $\mathrm{U}(1)$, connected and one-dimensional. Here the maximal compact subgroup is discrete of order four. There is no continuous compact factor: every compact subgroup lies in the four-element group.
 
 ### The Deformation Retraction
 
-The unit set $\mathbb{D}^{(\pm1)}$ is a subgroup of $\mathbb{D}^\times$, because the product of two elements of norm $\pm1$ has norm $\pm1$, and the inverse of such an element has the same norm. The map
+The unit set ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ is a subgroup of ${\mathbb{C}^{\mathrm{spl}}}^\times$, because the product of two elements of norm $\pm1$ has norm $\pm1$, and the inverse of such an element has the same norm. The map
 
 $$
-H : [0,1]\times\mathbb{D}^\times \longrightarrow \mathbb{D}^\times, \qquad H(t,Q) = \Bigl((1-t)+\frac{t}{r(Q)}\Bigr)Q,
+H : [0,1]\times{\mathbb{C}^{\mathrm{spl}}}^\times \longrightarrow {\mathbb{C}^{\mathrm{spl}}}^\times, \qquad H(t,Q) = \Bigl((1-t)+\frac{t}{r(Q)}\Bigr)Q,
 $$
 
-is continuous, fixes every point of $\mathbb{D}^{(\pm1)}$ at every $t$, is the identity at $t=0$, and lands in $\mathbb{D}^{(\pm1)}$ at $t=1$. The group of units therefore deformation retracts onto the unit set. The unit set has four components, each homeomorphic to a line; a second retraction $\epsilon\exp(\phi j)\mapsto \epsilon\exp((1-t)\phi j)$ contracts each branch to its vertex, so $\mathbb{D}^\times$ deformation retracts onto $\{\pm1,\pm j\}$ and has the homotopy type of four points. In the complex case the same construction retracts $\mathbb{C}^\times$ onto the circle, which is already the maximal compact subgroup; here the first retract is the non-compact unit set of four branches, and a second retraction is needed.
+is continuous, fixes every point of ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ at every $t$, is the identity at $t=0$, and lands in ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ at $t=1$. The group of units therefore deformation retracts onto the unit set. The unit set has four components, each homeomorphic to a line; a second retraction $\epsilon\exp(\phi j)\mapsto \epsilon\exp((1-t)\phi j)$ contracts each branch to its vertex, so ${\mathbb{C}^{\mathrm{spl}}}^\times$ deformation retracts onto $\{\pm1,\pm j\}$ and has the homotopy type of four points. In the complex case the same construction retracts $\mathbb{C}^\times$ onto the circle, which is already the maximal compact subgroup; here the first retract is the non-compact unit set of four branches, and a second retraction is needed.
 
 ## The Two Axes
 
@@ -176,13 +176,13 @@ $$
 
 the imaginary part vanishes when $qq' = 0$. The solutions are listed in the following table.
 
-| equation | roots in $\mathbb{D}$ | row of the exponential | image of $t\mapsto\exp(\nu t)$ |
+| equation | roots in $\mathbb{C}^{\mathrm{spl}}$ | row of the exponential | image of $t\mapsto\exp(\nu t)$ |
 |---|---|---|---|
 | $\nu^2 = -1$ | none | trigonometric | empty |
 | $\nu^2 = 0$ | $\nu = 0$ | parabolic | $\{1\}$ |
 | $\nu^2 = +1$ | $\nu = \pm1,\ \pm j$ | hyperbolic | $\mathbb{R}_{>0}$ for $\pm1$; the future branch of the hyperbola for $\pm j$ |
 
-The trigonometric row is empty: $\mathbb{D}$ has no square root of $-1$. The parabolic row is degenerate: the only square-zero element is $0$, and $\exp(0)=1$. The hyperbolic row has four roots. The roots $\pm1$ generate the positive real scale $\exp(t)$, and the roots $\pm j$ generate the future branch $\exp(tj)=\cosh t+j\sinh t$ of the unit hyperbola; the past branch is reached by multiplying by $-1$. This is the exact exchange of the complex case, where $-1$ has the two roots $\pm i$ and $+1$ has the two roots $\pm1$; the split algebra moves the circle to the hyperbola and the compact generator to a non-compact one.
+The trigonometric row is empty: $\mathbb{C}^{\mathrm{spl}}$ has no square root of $-1$. The parabolic row is degenerate: the only square-zero element is $0$, and $\exp(0)=1$. The hyperbolic row has four roots. The roots $\pm1$ generate the positive real scale $\exp(t)$, and the roots $\pm j$ generate the future branch $\exp(tj)=\cosh t+j\sinh t$ of the unit hyperbola; the past branch is reached by multiplying by $-1$. This is the exact exchange of the complex case, where $-1$ has the two roots $\pm i$ and $+1$ has the two roots $\pm1$; the split algebra moves the circle to the hyperbola and the compact generator to a non-compact one.
 
 ### Position and Signature
 
@@ -191,9 +191,9 @@ The two independent dichotomies of the family, position with respect to conjugat
 | algebra | Hermitian direction | anti-Hermitian direction | unit factor |
 |---|---|---|---|
 | $\mathbb{C}$ | $\nu = \pm1$, $\nu^2 = +1$: the scale | $\nu = \pm i$, $\nu^2 = -1$ | anti-Hermitian, signature $-1$: the circle |
-| $\mathbb{D}$ | $\nu = \pm1$, $\nu^2 = +1$: the scale | $\nu = \pm j$, $\nu^2 = +1$ | anti-Hermitian, signature $+1$: the hyperbola |
+| $\mathbb{C}^{\mathrm{spl}}$ | $\nu = \pm1$, $\nu^2 = +1$: the scale | $\nu = \pm j$, $\nu^2 = +1$ | anti-Hermitian, signature $+1$: the hyperbola |
 
-In $\mathbb{D}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic signature. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every unit group is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.
+In $\mathbb{C}^{\mathrm{spl}}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic signature. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every unit group is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.
 
 ## The Matrix Picture
 
@@ -320,7 +320,7 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
 | $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'^2$, definite | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{D}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four branches, non-compact |
+| $\mathbb{C}^{\mathrm{spl}}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four branches, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | sum of four squares, definite | $\sqrt{N}$ | $S^3$ | sphere, compact and connected |
 
 The split column is the only one in which the norm is indefinite and the unit set has four components. The complex and quaternion columns are definite and their unit sets are compact and connected, a circle and a three-sphere. The split column has a non-empty null cone, a non-compact unit set, and a maximal compact subgroup of four points.
@@ -332,7 +332,7 @@ Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one 
 The group of units splits as
 
 $$
-\mathbb{D}^\times \cong \mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2,
+{\mathbb{C}^{\mathrm{spl}}}^\times \cong \mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2,
 $$
 
 the first factor the modulus, the second the hyperbolic angle, the last the four components. The maximal compact subgroup is $\{\pm1,\pm j\}\cong(\mathbb{Z}/2)^2$, discrete of order four, and it is a deformation retract of the group. There is no continuous compact factor: the complex circle has become four points.
@@ -343,7 +343,7 @@ Both axes are definite: the real axis has positive norm, the split-imaginary axi
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{D}$ | the split-complex algebra, basis $1$, $j$, $j^2=+1$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | the split-complex algebra, basis $1$, $j$, $j^2=+1$ |
 | $Q = q+jq'$ | a split-complex number, $q$ and $q'$ real |
 | $\bar Q = q-jq'$ | the split-complex conjugate |
 | $\langle Q\rangle_{*} = Q\bar Q = q^2-q'^2$ | the norm, indefinite of signature $(1,1)$ |
@@ -353,9 +353,9 @@ Both axes are definite: the real axis has positive norm, the split-imaginary axi
 | $u = Q/r$ | the unit factor, $\lvert \langle u\rangle_{*}\rvert=1$ |
 | $\epsilon$ | the component sign, an element of $\{\pm1,\pm j\}$ |
 | $\phi$ | the hyperbolic angle or rapidity, $\phi\in\mathbb{R}$ |
-| $\mathbb{D}^{(\pm1)}$ | the unit set $\{\lvert \langle Q\rangle_{*}\rvert=1\}$, four branches |
-| $\mathbb{D}^\times = \{\langle Q\rangle_{*}\neq0\}$ | the group of units |
-| $(\mathbb{D}^\times)_0 = \{q>\lvert q'\rvert\}$ | the identity component, the future cone |
+| ${\mathbb{C}^{\mathrm{spl}}}^{(\pm1)}$ | the unit set $\{\lvert \langle Q\rangle_{*}\rvert=1\}$, four branches |
+| ${\mathbb{C}^{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$ | the group of units |
+| $({\mathbb{C}^{\mathrm{spl}}}^\times)_0 = \{q>\lvert q'\rvert\}$ | the identity component, the future cone |
 | $K = \begin{pmatrix}0&1\\1&0\end{pmatrix}$ | the reflection matrix of multiplication by $j$, $K^2=I$ |
 | $M_Q = qI+q'K$ | the matrix of multiplication by $Q$, $\det M_Q=\langle Q\rangle_{*}$ |
 | $M_u = xI+yK$ | the matrix of a unit, symmetric, generally not orthogonal |

@@ -16,35 +16,62 @@ The corpus records the programme and does not endorse it. Its value here lies in
 
 The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The units, the central $i$ and the sign vector $\varepsilon=(1,-1,-1,-1)$ are those of *Conventions in the Biquaternion Universe*; the field $F$, the spinor $\psi$ and the volume element $\omega$ are elements of the biquaternion algebra $\mathbb{B}$.
 
-The source writes its whole calculus with one letter, $\partial$. It is the series' own four-dimensional gradient, with four cells in place of the four units.
+The source writes its whole calculus with one letter, $\partial$. It is a cell operator: the four frame cells contracted with the four derivatives. The pieces are in the conventions; the assembled operator is not; and the name usually given to it is already taken. Why a cell operator and not a gradient is the subject of *The Gradient, the D'Alembertian and the Cell Operator*; the short answer is that a first-order operator with a scalar square needs four pairwise anticommuting generators, and the algebra contains no such four. An element squaring to a scalar is a scalar or a pure vector, a pure vector has three components, and four mutually anticommuting elements would need four mutually orthogonal directions in a three-dimensional space. The cells live in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of dimension sixteen, where the four exist. So the letter is a cell contraction, and the light cone has nothing to do with the choice: the gradient annihilates the same null plane waves, and the metric is the algebra's single Euclidean form $(1,1,1,1)$, made Lorentzian in the material display by $i^2=-1$ in $Q_t=ict'$.
 
-**The gradient, and the substitution of units.** The series' gradient is a sum of four terms, one unit per coordinate derivative, $\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z}$ (*Operator and Calculus Conventions*). The source's letter is the same sum with the four units replaced by the four frame cells of §*The Legacy Pauli Gamma Formulation*:
+**What the conventions hold, and what they do not.** The four cells are corpus objects. *Matrix Representations Conventions* introduces $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$ as the replacement for matrices, one left and one right multiplication per unit, and their signs follow from that definition alone: $iR_{\vec e_x}$ squares to $+1$, each $iL_{\vec e_k}R_{\vec e_y}$ squares to $-1$, and any two distinct cells anticommute. The operator made by contracting those four cells with the four derivatives is not in the conventions. The article *Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form* builds it and calls it $\mathbb{D}$.
 
-$$
-\partial=iR_{\vec e_x}\frac{\partial}{\partial t'}-iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x}-iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial y}-iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial z},
-$$
-
-with $t'$ the time coordinate and units $c=1$. The four coefficients are the frame cells of §*The Legacy Pauli Gamma Formulation*, $iR_{\vec e_x}$ and the three $iL_{\vec e_k}R_{\vec e_y}$; nothing is added to the gradient but those cells, one per coordinate.
-
-**Acting.** Written out on an element, the time cell multiplies on the right and the three spatial cells on both sides:
+**The name is overloaded, and neither meaning is this operator.** *Operator and Calculus Conventions* uses $\mathbb{D}$ for the pair operator on $\mathbb{B}\oplus\mathbb{B}$,
 
 $$
-\partial\psi=i\,\frac{\partial\psi}{\partial t'}\vec e_x-\sum_k i\,\vec e_k\frac{\partial\psi}{\partial x_k}\vec e_y .
+\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),\qquad \mathbb{D}^2=\Box I,
 $$
 
-One example fixes the reading. On $\psi=x\vec e_z$ the spatial gradient is $\vec e_x\vec e_z=-\vec e_y$, so $\partial\psi=i\vec e_y\vec e_y=-i e_t$.
+and describes it there as one-sided, with no matrix generator. *Product and Form Conventions* uses $\mathbb{D}$ for the split-complex numbers $q+jq'$. So $\mathbb{D}$ in the conventions is either the pair or the split-complex line, and neither is the cell contraction.
 
-**Why the substitution is the whole point.** The four cells anticommute: $iR_{\vec e_x}$ squares to $+1$, each $iL_{\vec e_k}R_{\vec e_y}$ squares to $-1$, and any two distinct cells anticommute. Those are the signs and the anticommutation of a frame with $\varepsilon=(1,-1,-1,-1)$, so every cross term cancels pairwise between the two orders of its mixed derivative, and one copy of the operator squares to the wave operator:
+**The operator.** With $x_0=ct'$,
 
 $$
-\partial^2=\frac{\partial^2}{\partial t'^2}-\Delta=-\Box .
+\partial=i\left(\frac{1}{c}R_{\vec e_x}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial q_k}\right),
 $$
 
-The series' units do not have that property, because $e_t$ is the identity and so commutes rather than anticommutes with the spatial units: $e_t\vec e_k+\vec e_k e_t=2\vec e_k$. The cross terms of $\tilde\nabla^2$ survive, $2\vec e_k\,\partial^2/\partial Q_t\partial Q_k$, so it is not scalar. That is why the series composes the gradient with its conjugate, $\Box=\tilde\nabla\tilde\nabla^{\natural}$, where the sign vector $\varepsilon$ of the conjugate kills the cross terms. Two pieces are needed there; one suffices here.
+and the bracket is the Bhabha cell contraction with the sign of its time term reversed. That bracket squares to $+\Box$; the $i$ in front then gives
 
-**What that buys, and what the body does with it.** The source's first-order spinorial equation has no room for a conjugate, so it needs a single first-order operator whose square is already the wave operator, and only the substitution of the frame cells gives one. The letter is therefore kept for that equation, §*The Field as a Spinor Bilinear*, where $\partial\psi\,\omega=\ldots$ and the right factor $\omega$ is the content. Every other equation is written in the series' operators, which are the same objects: the free field equation $\tilde\nabla\tilde F=0$, the potential equation $\Box\pi=0$, the sourced equation $\tilde\nabla\tilde F=\tilde J$, and the contractions of the gradient.
+$$
+\partial^2=-\Box .
+$$
 
-The source's **volume element** is the product of its four generators, and the bookkeeping is short. The four $i$'s are central and give $i^4=+1$, so only the units matter. The left factors multiply in their printed order to $\vec e_x\vec e_y\vec e_z=\vec e_x\vec e_x=-e_t$, and the right factors, which compose in the reverse order, to $\vec e_y\vec e_y\vec e_y\vec e_x=-\vec e_y\vec e_x=+\vec e_z$. The two pieces give $-\vec e_z$, with no scalar left over, so the volume element is the element
+The corpus reaches the same square through two factors, $\Box=\tilde\nabla\tilde\nabla^{\natural}$, and the source reaches it through one cell contraction. One factor against two is the whole difference, and it is why the source's equation can be first order in a single field.
+
+**Worked examples.** The unit table is short, and it is read straight off the definition. Constants die; a coordinate times a unit gives $i$ times a unit. The table is written with $c=1$, as the source does; the time entries carry $1/c$ otherwise.
+
+| $\psi$ | $\partial\psi$ | $\psi$ | $\partial\psi$ |
+|---|---|---|---|
+| $t'\vec e_x$ | $-i e_t$ | $q_x\vec e_x$ | $i\vec e_y$ |
+| $t'\vec e_y$ | $-i\vec e_z$ | $q_x\vec e_y$ | $i\vec e_x$ |
+| $t'\vec e_z$ | $i\vec e_y$ | $q_x\vec e_z$ | $-i e_t$ |
+| $\vec e_z$ | $0$ | $q_y\vec e_x$ | $-i\vec e_x$ |
+
+The pattern is the cells at work. On $q_x\vec e_y$ the time slot is empty, and the spatial cell does all of it: $-\vec e_x(\vec e_y)\vec e_y i=+\vec e_x i$. On $t'\vec e_x$ the spatial slots are empty and the time cell acts alone, $\vec e_x\vec e_x i=-i$.
+
+**Two terms at once.** A product of two coordinates shows the sum:
+
+$$
+\partial\bigl(q_xq_y\vec e_z\bigr)=-i\,\vec e_x\,q_y\vec e_z\vec e_y-i\,\vec e_y\,q_x\vec e_z\vec e_y=-i\bigl(q_y+q_x\vec e_z\bigr),
+$$
+
+using $\vec e_x\vec e_z\vec e_y=e_t$ and $\vec e_y\vec e_z\vec e_y=\vec e_z$. The first term is a scalar and the second a unit: one application leaves the two parts of the algebra mixed, which is why the square being scalar is a property of the cells and not of a single step.
+
+**Its square in action.** Two applications return the wave operator applied to $\psi$,
+
+$$
+\partial^2\psi=\Bigl(\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}-\Delta\Bigr)\psi=-\Box\psi ,
+$$
+
+and two examples show it. On $\psi=\sin q_x\,\vec e_x$ the Laplacian gives $-\psi$, so $\partial^2\psi=+\psi$; on $\psi=t'^2\vec e_x$ the time derivative gives $\partial^2\psi=\frac{2}{c^2}\vec e_x$. The cross terms are absent in both, which is the property the four cells were chosen for.
+
+**What the body does.** The letter is kept where the source's own equation is quoted, §*The Field as a Spinor Bilinear*, and read as the cell operator above; everywhere else the series' operators are used, $\tilde\nabla\tilde F=0$ for the free equation, $\Box\pi=0$ for the potential, $\tilde\nabla\tilde F=\tilde J$ for the sourced one, and the contractions of the gradient.
+
+The source's **volume element** is the product of its four generators, and the bookkeeping is short. The four $i$'s are central and give $i^4=+1$, so only the units matter. The left factors multiply in their printed order to $\vec e_x\vec e_y\vec e_z=\vec e_x\vec e_x=-e_t$, and the right factors, which compose in the reverse order, to $\vec e_y\vec e_y\vec e_y\vec e_x=-\vec e_y\vec e_x=+\vec e_z$. The two pieces give $-\vec e_z$, with no scalar left over, so the volume element is
 
 $$
 \omega=-\vec e_z,\qquad \omega^2=\vec e_z^2=-e_t ,
@@ -552,7 +579,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\varepsilon=(1,-1,-1,-1)$ | sign vector of the layer |
 | $\omega=-\vec e_z$ | Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", the duality |
 | $-\vec e_z$ | Fixed spin-plane bivector, the source's product of its second generator with its first; as the element $\omega$ it multiplies the spinor on the right |
-| $\partial$ | The source's letter for its Dirac operator: the series' gradient $\tilde\nabla$ with its four units replaced by the four frame cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$. Those four cells anticommute, so one copy squares to the wave operator, $\partial^2=-\Box$ |
+| $\partial$ | The source's letter for its Dirac operator: the four frame cells of the conventions contracted with the four derivatives, with the sign of the time term reversed relative to the cell operator of the Bhabha article. The cells anticommute, so one copy is scalar, $\partial^2=-\Box$. The conventions' own $\mathbb{D}$ is a different object, the pair operator |
 | $F$, $F_0$, $F_e$, $F_+$ | Field 2-form; the stationary subluminal solution; the electron field; the field of the $+$ branch |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |
@@ -577,6 +604,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The Gradient, the D'Alembertian and the Cell Operator](the-gradient-the-dalembertian-and-the-cell-operator.html), for the three operators that are confused with one another, and for why the cell operator is the one a first-order equation needs.
 - Waldyr Alves Rodrigues Jr. and Jayme Vaz Jr., "Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum", arXiv:hep-th/9607231 (1996), the source of this article.
 - J. Vaz Jr. and W. A. Rodrigues Jr., "Maxwell and Dirac Theories as an Already Unified Theory", *Advances in Applied Clifford Algebras* (1995), for the equivalence of the Maxwell and massless Dirac equations underlying the spinor representation.
 - W. A. Rodrigues Jr. and J.-Y. Lu, "On the Existence of Undistorted Progressive Waves (UPWs) of Arbitrary Speeds $0\le|v|\le\infty$ in Nature", RP 12/96, IMECC-UNICAMP (1996), for the UPW and X-wave family and their generation.

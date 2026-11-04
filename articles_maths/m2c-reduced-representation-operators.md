@@ -4,7 +4,7 @@
 
 **The carrier is a commutative semisimple algebra of complex dimension two, and every operator of the pair is a single multiplication, so the whole operator theory of this category is the theory of a two-dimensional subspace of a four-dimensional ambient.**
 
-**The three facts that shape the article.** First, left and right multiplication coincide, so the envelope $\mathbb{B}_{\mathrm r}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm r}$ acts through the product and its image is the **algebra itself**, a two-dimensional linear subspace of $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r})=M_{2}(\mathbb{C})$ and not a cone: the family of two-sided operators is closed under sums. Second, the model is symmetric, $L_{\breve Q}^{\mathsf T}=L_{\breve Q}$, so the transpose leaves the family pointwise fixed and all three adjoints of the article — the transpose one, the Frobenius one and the $J$-conjugated one — stay inside it. Third, the algebra is reduced, so the family contains no nilpotent but zero, and the sandwich is injective.
+**The three facts that shape the article.** First, left and right multiplication coincide, so the envelope $\mathbb{B}^{\mathrm{red}}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{red}}$ acts through the product and its image is the **algebra itself**, a two-dimensional linear subspace of $\mathrm{End}_{\mathbb{C}}(\mathbb{B}^{\mathrm{red}})=M_{2}(\mathbb{C})$ and not a cone: the family of two-sided operators is closed under sums. Second, the model is symmetric, $L_{\breve Q}^{\mathsf T}=L_{\breve Q}$, so the transpose leaves the family pointwise fixed and all three adjoints of the article — the transpose one, the Frobenius one and the $J$-conjugated one — stay inside it. Third, the algebra is reduced, so the family contains no nilpotent but zero, and the sandwich is injective.
 
 **What follows and what fails.** There is no length ladder beyond one: $\ell\in\{0,1\}$ inside the family, and no length outside it, because sums of multiplications are multiplications. There is no Kronecker support beyond a two-block pattern: the Kronecker display is $M_{2}(\mathbb{C})^{\mathsf T}\otimes M_{2}(\mathbb{C})$ of rank in $\{0,1,2,4\}$, so the second rank is not vacuous even though the first is. There is no derivation and no nonzero skew-adjoint member for the transpose form; the isometry groups are the torus $T^{2}$ for the Frobenius form and the four-group $\{\pm1,\pm j\}$ for the transpose form; and the normaliser of the family in $GL_{2}(\mathbb{C})$ induces only the identity and the tessarine sign, so the outer automorphism group is $\mathbb{Z}_{2}$.
 
@@ -14,13 +14,13 @@
 
 **The carrier is two-dimensional over $\mathbb{C}$ and the ambient is four-dimensional; the family sits in the ambient as a maximal commutative unital subalgebra.**
 
-**The dimensions.** The carrier is $\mathbb{B}_{\mathrm r}$, of complex dimension two and real dimension four. The ambient is
+**The dimensions.** The carrier is $\mathbb{B}^{\mathrm{red}}$, of complex dimension two and real dimension four. The ambient is
 $$
-\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r})=M_{2}(\mathbb{C}),\qquad \dim_{\mathbb{C}}=4,\quad \dim_{\mathbb{R}}=8,
+\mathrm{End}_{\mathbb{C}}(\mathbb{B}^{\mathrm{red}})=M_{2}(\mathbb{C}),\qquad \dim_{\mathbb{C}}=4,\quad \dim_{\mathbb{R}}=8,
 $$
 and the realification doubles both numbers. The family of one-sided operators is
 $$
-L(\mathbb{B}_{\mathrm r})=\{L_{\breve Q}:\breve Q\in\mathbb{B}_{\mathrm r}\}=\mathsf M(\mathbb{B}_{\mathrm r})=\mathbb{C}\{\mathrm I_{2},\sigma_{1}\},
+L(\mathbb{B}^{\mathrm{red}})=\{L_{\breve Q}:\breve Q\in\mathbb{B}^{\mathrm{red}}\}=\mathsf M(\mathbb{B}^{\mathrm{red}})=\mathbb{C}\{\mathrm I_{2},\sigma_{1}\},
 $$
 of complex dimension two: half of the ambient over $\mathbb{C}$ and half of it over $\mathbb{R}$, so the deficit is proportionally the same in the two readings and is larger in absolute terms over $\mathbb{R}$.
 
@@ -38,7 +38,7 @@ L_{\breve Q}R_{\breve P}(\breve X)=\breve Q\breve X\breve P=L_{\breve Q\breve P}
 $$
 so the family of two-sided operators is
 $$
-\{L_{\breve Q}R_{\breve P}\}=\mathrm{im}\,\beta=\{L_{\breve R}:\breve R\in\mathbb{B}_{\mathrm r}\}=L(\mathbb{B}_{\mathrm r}),
+\{L_{\breve Q}R_{\breve P}\}=\mathrm{im}\,\beta=\{L_{\breve R}:\breve R\in\mathbb{B}^{\mathrm{red}}\}=L(\mathbb{B}^{\mathrm{red}}),
 $$
 the same two-dimensional family. The image of the bilinear map $\beta$ is therefore a **linear subspace** and not a cone, and the phrase "the cone of the two-sided operators", which is the correct one in the biquaternion and dual-number categories, is the wrong one here. The reason is the same in both commutative categories: the product of two elements is an element, and the set of products of a subspace with itself is a subspace.
 
@@ -130,9 +130,9 @@ so the two circular components of the unit are the sum and the difference of the
 $$
 L_{\breve Q}R_{\breve P}=R_{\breve P}L_{\breve Q}=L_{\breve Q\breve P},
 $$
-so the bilinear map $\beta:\mathbb{B}_{\mathrm r}\times\mathbb{B}_{\mathrm r}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r})$ factors through the multiplication,
+so the bilinear map $\beta:\mathbb{B}^{\mathrm{red}}\times\mathbb{B}^{\mathrm{red}}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B}^{\mathrm{red}})$ factors through the multiplication,
 $$
-\mathbb{B}_{\mathrm r}\times\mathbb{B}_{\mathrm r}\ \xrightarrow{\ \cdot\ }\ \mathbb{B}_{\mathrm r}\ \xrightarrow{\ L\ }\ \mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm r}),
+\mathbb{B}^{\mathrm{red}}\times\mathbb{B}^{\mathrm{red}}\ \xrightarrow{\ \cdot\ }\ \mathbb{B}^{\mathrm{red}}\ \xrightarrow{\ L\ }\ \mathrm{End}_{\mathbb{C}}(\mathbb{B}^{\mathrm{red}}),
 $$
 and the first arrow is surjective. So the image of $\beta$ is the image of $L$, of complex dimension two, and the fibre of $\beta$ over a point of the image is the fibre of the multiplication over the corresponding element.
 
@@ -156,7 +156,7 @@ $$
 $$
 which is a torsor over the unit group: if $(\breve Q_{0},\breve P_{0})$ is one solution then every solution is $(u\breve Q_{0},u^{-1}\breve P_{0})$ with $u$ a unit, so the fibre is a copy of $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, of complex dimension two, retracting onto the torus $T^{2}$. The dimension count is
 $$
-4=\dim_{\mathbb{C}}\bigl(\mathbb{B}_{\mathrm r}\times\mathbb{B}_{\mathrm r}\bigr)=\dim_{\mathbb{C}}\operatorname{im}\beta+\dim_{\mathbb{C}}\text{fibre}=2+2,
+4=\dim_{\mathbb{C}}\bigl(\mathbb{B}^{\mathrm{red}}\times\mathbb{B}^{\mathrm{red}}\bigr)=\dim_{\mathbb{C}}\operatorname{im}\beta+\dim_{\mathbb{C}}\text{fibre}=2+2,
 $$
 so the parameter space of dimension four maps onto a two-dimensional family with two-dimensional fibres. Over a zero divisor the fibre is larger and reducible, because the equation $Q_{+}P_{+}=0$ in one slot is satisfied by a pair of lines rather than by a single point, and the fibre then contains a piece of dimension three.
 
@@ -212,7 +212,7 @@ its kernel is the torus $T^{2}$ of the two phases, and its image is the **quadra
 
 **The Kronecker display of the pair is a two-block matrix of four blocks, of rank in $\{0,1,2,4\}$, and the coefficient array is degenerate of kernel two.**
 
-**The display.** For the pair $(\breve Q,\breve P)$ the operator $L_{\breve Q}R_{\breve P}$ on the four-dimensional space $\mathbb{B}_{\mathrm r}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm r}$ has the matrix
+**The display.** For the pair $(\breve Q,\breve P)$ the operator $L_{\breve Q}R_{\breve P}$ on the four-dimensional space $\mathbb{B}^{\mathrm{red}}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{red}}$ has the matrix
 $$
 \mathsf K(\breve Q,\breve P)=\mathsf M(\breve P)^{\mathsf T}\otimes\mathsf M(\breve Q),
 $$
@@ -288,23 +288,23 @@ So the two ranks are proportional and not unrelated, which is the opposite of th
 
 **The algebra has no derivation and two automorphisms, and the ambient realises the nontrivial one by a conjugation with an element outside the family.**
 
-**The automorphisms.** A $\mathbb{C}$-algebra automorphism of $\mathbb{B}_{\mathrm r}\cong\mathbb{C}\times\mathbb{C}$ permutes the two factors, so
+**The automorphisms.** A $\mathbb{C}$-algebra automorphism of $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$ permutes the two factors, so
 $$
-\operatorname{Aut}_{\mathbb{C}}\bigl(\mathbb{B}_{\mathrm r}\bigr)=\{\mathrm{id},{}_{\mathrm{ts}}\}\cong\mathbb{Z}_{2},
+\operatorname{Aut}_{\mathbb{C}}\bigl(\mathbb{B}^{\mathrm{red}}\bigr)=\{\mathrm{id},{}_{\mathrm{ts}}\}\cong\mathbb{Z}_{2},
 $$
 the nontrivial one being the tessarine sign. In the model,
 $$
-J\,\mathsf M(\breve Q)\,J=\mathsf M(\breve Q_{\mathrm{ts}}),\qquad J=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}\notin\mathsf M(\mathbb{B}_{\mathrm r}),
+J\,\mathsf M(\breve Q)\,J=\mathsf M(\breve Q_{\mathrm{ts}}),\qquad J=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}\notin\mathsf M(\mathbb{B}^{\mathrm{red}}),
 $$
 so the automorphism is induced by a conjugation with an element of $GL_{2}(\mathbb{C})$ that is **not** in the family. The other conjugations by units of the family are trivial, because the family is commutative, so the map
 $$
-N\bigl(\mathsf M(\mathbb{B}_{\mathrm r})\bigr)/\mathsf M(\mathbb{B}_{\mathrm r}^{\times})\ \longrightarrow\ \operatorname{Aut}_{\mathbb{C}}\bigl(\mathbb{B}_{\mathrm r}\bigr)
+N\bigl(\mathsf M(\mathbb{B}^{\mathrm{red}})\bigr)/\mathsf M({\mathbb{B}^{\mathrm{red}}}^{\times})\ \longrightarrow\ \operatorname{Aut}_{\mathbb{C}}\bigl(\mathbb{B}^{\mathrm{red}}\bigr)
 $$
 from the normaliser quotient onto the automorphism group is an isomorphism, and the normaliser is generated by the units of the family and $J$. The outer automorphism is therefore inner in the ambient and outer in the algebra — the same phenomenon as in the dual-number category, where the automorphisms were conjugation by diagonal matrices, with the difference that here the group is of order two and not a continuum.
 
-**The derivations.** A derivation of $\mathbb{B}_{\mathrm r}$ is zero, because the algebra is a finite product of fields and an étale algebra has no derivations, and in the model
+**The derivations.** A derivation of $\mathbb{B}^{\mathrm{red}}$ is zero, because the algebra is a finite product of fields and an étale algebra has no derivations, and in the model
 $$
-\mathsf M\bigl(D(\breve Q)\bigr)=[N,\mathsf M(\breve Q)]\ \text{for all }\breve Q\ \Longrightarrow\ N\in\mathsf M(\mathbb{B}_{\mathrm r})',
+\mathsf M\bigl(D(\breve Q)\bigr)=[N,\mathsf M(\breve Q)]\ \text{for all }\breve Q\ \Longrightarrow\ N\in\mathsf M(\mathbb{B}^{\mathrm{red}})',
 $$
 so a derivation of the ambient that preserves the family is a commutator with an element of its centraliser, which is the family, and the commutator with an element of a commutative family is zero. So the space of derivations of the family realised inside the ambient is zero, and the derivation slot of the category is empty.
 
@@ -330,7 +330,7 @@ that is, the family is carried by an **orthogonal** change of basis to the diago
 
 **The double centraliser.** Two computations close the structure. The centraliser of the family is the family, and the double centraliser is the family again,
 $$
-\mathsf M(\mathbb{B}_{\mathrm r})'=\mathsf M(\mathbb{B}_{\mathrm r}),\qquad \mathsf M(\mathbb{B}_{\mathrm r})''=\mathsf M(\mathbb{B}_{\mathrm r}),
+\mathsf M(\mathbb{B}^{\mathrm{red}})'=\mathsf M(\mathbb{B}^{\mathrm{red}}),\qquad \mathsf M(\mathbb{B}^{\mathrm{red}})''=\mathsf M(\mathbb{B}^{\mathrm{red}}),
 $$
 so the bicommutant theorem holds for a reason that has nothing to do with finite-dimensionality: the family is maximal commutative. In the biquaternion category the corresponding computation gave the whole of $M_{2}(\mathbb{C})$ on both sides, and the difference between the two answers is the difference between a maximal commutative subalgebra and a simple algebra.
 
@@ -372,7 +372,7 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{B}_{\mathrm r}$ | the carrier, of complex dimension two | *Reduced Biquaternion Space* |
+| $\mathbb{B}^{\mathrm{red}}$ | the carrier, of complex dimension two | *Reduced Biquaternion Space* |
 | $L_{\breve Q},R_{\breve Q}$ | the left and right multiplications, equal because the algebra is commutative | this article |
 | $L_{\breve Q}R_{\breve P}$ | the two-sided operator $\breve X\mapsto\breve Q\breve X\breve P$ | this article |
 | $L_{e_{\mu}}R_{e_{\nu}}$ | the four basis products, with $L_{e_1}R_{e_1}=L_{e_2}R_{e_2}$ and $L_{e_1}R_{e_2}=L_{e_2}R_{e_1}$ | this article |

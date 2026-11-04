@@ -5,14 +5,14 @@
 
 This article studies the zero divisors of the split-quaternion algebra. It defines them, proves the criterion $\langle\tilde q\rangle_{\natural} = 0$ that identifies them with the null cone, exhibits the two families of minimal one-sided ideals into which the zero divisor set splits, proves the existence of nonzero nilpotents, and describes the distribution of the zero divisors among the distinguished subspaces.
 
-The split-quaternion algebra, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and its idempotents $\tilde\pi_{1,2}$ and subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra*, and the metrical reading of $\langle\cdot\rangle_{\natural}$ from *Split-Quaternion Norm and Invertibility*. The invertibility criterion is assumed from *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; it is not re-proved here. The ideal theory of $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is assumed from *Split-Quaternion Ideals and Peirce Decomposition*. Nothing physical is invoked.
+The split-quaternion algebra, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and its idempotents $\tilde\pi_{1,2}$ and subspaces $S$, $V$, $\mathbb{C}^{\mathrm{spl}}_2$, $\mathbb{C}^{\mathrm{spl}}_3$ are assumed from *Split-Quaternion Algebra*, and the metrical reading of $\langle\cdot\rangle_{\natural}$ from *Split-Quaternion Norm and Invertibility*. The invertibility criterion is assumed from *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; it is not re-proved here. The ideal theory of $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ is assumed from *Split-Quaternion Ideals and Peirce Decomposition*. Nothing physical is invoked.
 
 ## Definition and Criterion
 
-**Definition.** A nonzero element $\tilde q \in \mathbb{H}_{\mathrm{s}}$ is a **zero divisor** if there exists a nonzero $\tilde q_1 \in \mathbb{H}_{\mathrm{s}}$ with $\tilde q \tilde q_1 = 0$ or a nonzero $\tilde q_2 \in \mathbb{H}_{\mathrm{s}}$ with $\tilde q_2\tilde q = 0$. The **zero divisor set** is
+**Definition.** A nonzero element $\tilde q \in \mathbb{H}^{\mathrm{spl}}$ is a **zero divisor** if there exists a nonzero $\tilde q_1 \in \mathbb{H}^{\mathrm{spl}}$ with $\tilde q \tilde q_1 = 0$ or a nonzero $\tilde q_2 \in \mathbb{H}^{\mathrm{spl}}$ with $\tilde q_2\tilde q = 0$. The **zero divisor set** is
 
 $$
-Z = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \tilde q \neq 0 \text{ and } \tilde q \text{ is a zero divisor}\}.
+Z = \{\tilde q \in \mathbb{H}^{\mathrm{spl}} : \tilde q \neq 0 \text{ and } \tilde q \text{ is a zero divisor}\}.
 $$
 
 **Theorem (The Criterion).** Let $\tilde q$ be nonzero. Then $\tilde q$ is a zero divisor if and only if $\langle\tilde q\rangle_{\natural} = 0$. Equivalently, the zero divisor set is the null cone with the origin removed:
@@ -31,7 +31,7 @@ $$
 \mathcal{N} = \{\tilde q : \langle\tilde q\rangle_{\natural} = 0\} = Z \cup \{0\}
 $$
 
-is the **null cone** of the product $\langle\cdot\rangle_{\natural}$. It is a cone: if $\langle\tilde q\rangle_{\natural} = 0$ then $\langle\lambda \tilde q\rangle_{\natural} = \lambda^2 \langle\tilde q\rangle_{\natural} = 0$ for every real $\lambda$. It has real dimension $3$, the expected dimension of one equation in four real variables. That it is closed, that its only singular point is the origin, and that the complement of $Z$ in $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ is open, dense and of full measure are topological statements and belong to *Split-Quaternion Topology* and *Split-Quaternion Norm and Invertibility*, §*Distribution of the Invertible Elements*.
+is the **null cone** of the product $\langle\cdot\rangle_{\natural}$. It is a cone: if $\langle\tilde q\rangle_{\natural} = 0$ then $\langle\lambda \tilde q\rangle_{\natural} = \lambda^2 \langle\tilde q\rangle_{\natural} = 0$ for every real $\lambda$. It has real dimension $3$, the expected dimension of one equation in four real variables. That it is closed, that its only singular point is the origin, and that the complement of $Z$ in $\mathbb{H}^{\mathrm{spl}} \setminus \{0\}$ is open, dense and of full measure are topological statements and belong to *Split-Quaternion Topology* and *Split-Quaternion Norm and Invertibility*, §*Distribution of the Invertible Elements*.
 
 That the zero divisor set is connected is a topological statement and belongs to *Split-Quaternion Topology*. What is used here is the algebraic parametrisation of *Split-Quaternion Norm and Invertibility*, §*Isotropy*: every zero divisor $\tilde q$ is a positive multiple of a vector $(\cos\alpha, \sin\alpha, \cos\beta, \sin\beta)$.
 
@@ -41,7 +41,7 @@ The zero divisors are exactly the elements with a nonzero annihilator: $\tilde q
 
 **Theorem (The Left Annihilator Is a Minimal Left Ideal).** Let $\tilde q \neq 0$ be a zero divisor. Then the left annihilator $P_{\tilde q} = \{\tilde q_1 : \tilde q_1\tilde q = 0\}$ is a two-dimensional minimal left ideal, and the right annihilator is a two-dimensional minimal right ideal. Consequently the zero divisor set is the union of the nonzero elements of the minimal one-sided ideals, with the origin removed.
 
-**Proof.** The left annihilator is a left ideal, since $\tilde q_1\tilde q = 0$ implies $\tilde q_2\tilde q_1\tilde q = 0$. It is nonzero: the central product is symmetric, $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = \langle\tilde q\rangle_{\natural}$, and $\langle\tilde q\rangle_{\natural} = 0$ by the criterion, so the conjugate $\tilde{q}^{\natural}$ is nonzero and lies in it. It is proper, because $1 \cdot \tilde q = \tilde q \neq 0$ excludes $\tilde q_1 = 1$. In $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ every nonzero proper left ideal is a minimal left ideal and every minimal left ideal is two-dimensional, by *Split-Quaternion Ideals and Peirce Decomposition*; hence $P_{\tilde q}$ is two-dimensional and minimal. The right annihilator is the image of a left annihilator under the conjugation, which reverses the order of multiplication, so it is a two-dimensional minimal right ideal. Every nonzero element of a left annihilator $P_{\tilde q}$ satisfies $\tilde q_1\tilde q = 0$ with $\tilde q \neq 0$, hence is a zero divisor; conversely every zero divisor lies in its own annihilator. Since the annihilator depends only on the line $\mathbb{R}\tilde q$, the zero divisor set is the union of the nonzero elements of the minimal left and right ideals.
+**Proof.** The left annihilator is a left ideal, since $\tilde q_1\tilde q = 0$ implies $\tilde q_2\tilde q_1\tilde q = 0$. It is nonzero: the central product is symmetric, $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = \langle\tilde q\rangle_{\natural}$, and $\langle\tilde q\rangle_{\natural} = 0$ by the criterion, so the conjugate $\tilde{q}^{\natural}$ is nonzero and lies in it. It is proper, because $1 \cdot \tilde q = \tilde q \neq 0$ excludes $\tilde q_1 = 1$. In $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ every nonzero proper left ideal is a minimal left ideal and every minimal left ideal is two-dimensional, by *Split-Quaternion Ideals and Peirce Decomposition*; hence $P_{\tilde q}$ is two-dimensional and minimal. The right annihilator is the image of a left annihilator under the conjugation, which reverses the order of multiplication, so it is a two-dimensional minimal right ideal. Every nonzero element of a left annihilator $P_{\tilde q}$ satisfies $\tilde q_1\tilde q = 0$ with $\tilde q \neq 0$, hence is a zero divisor; conversely every zero divisor lies in its own annihilator. Since the annihilator depends only on the line $\mathbb{R}\tilde q$, the zero divisor set is the union of the nonzero elements of the minimal left and right ideals.
 
 ## The Two Families
 
@@ -53,7 +53,7 @@ $$
 
 and each depends only on the line $L$ and not on the chosen representative $\tilde q$.
 
-**Theorem (The Two Families).** For every zero-divisor line $L$ the subspaces $\mathcal{K}_L$ and $\mathcal{R}_L$ are two-dimensional minimal one-sided ideals. Every minimal left ideal of $\mathbb{H}_{\mathrm{s}}$ is a $\mathcal{K}_L$ and every minimal right ideal is an $\mathcal{R}_L$. The collections
+**Theorem (The Two Families).** For every zero-divisor line $L$ the subspaces $\mathcal{K}_L$ and $\mathcal{R}_L$ are two-dimensional minimal one-sided ideals. Every minimal left ideal of $\mathbb{H}^{\mathrm{spl}}$ is a $\mathcal{K}_L$ and every minimal right ideal is an $\mathcal{R}_L$. The collections
 
 $$
 \mathcal{K} = \{\mathcal{K}_L\}, \qquad \mathcal{R} = \{\mathcal{R}_L\},
@@ -61,15 +61,15 @@ $$
 
 each parametrised by the projective line, are the **two families**; the two families are disjoint.
 
-**Proof.** The left annihilator is the minimal left ideal $P_{\tilde q}$ of the preceding theorem, hence two-dimensional. The right annihilator is the image of the left annihilator of $\tilde{q}^{\natural}$ under the conjugation, which reverses the order of multiplication and preserves $\langle\cdot\rangle_{\natural}$, so it has the same properties. The condition $\tilde q_1(\lambda\tilde q) = 0$ for $\lambda \neq 0$ is the condition $\tilde q_1\tilde q = 0$, so the annihilator depends only on the zero-divisor line. The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has two families of minimal one-sided ideals, the left and the right, each parametrised by the projective line, by *Split-Quaternion Ideals and Peirce Decomposition*. The two annihilator constructions realise the two families.
+**Proof.** The left annihilator is the minimal left ideal $P_{\tilde q}$ of the preceding theorem, hence two-dimensional. The right annihilator is the image of the left annihilator of $\tilde{q}^{\natural}$ under the conjugation, which reverses the order of multiplication and preserves $\langle\cdot\rangle_{\natural}$, so it has the same properties. The condition $\tilde q_1(\lambda\tilde q) = 0$ for $\lambda \neq 0$ is the condition $\tilde q_1\tilde q = 0$, so the annihilator depends only on the zero-divisor line. The algebra $\mathbb{H}^{\mathrm{spl}} \cong M_2(\mathbb{R})$ has two families of minimal one-sided ideals, the left and the right, each parametrised by the projective line, by *Split-Quaternion Ideals and Peirce Decomposition*. The two annihilator constructions realise the two families.
 
 **Corollary (Each Zero-Divisor Line Lies in One Ideal of Each Family).** Through each zero-divisor line pass exactly two minimal one-sided ideals, one from each family; the zero divisor set is the union of their nonzero elements. Two ideals of opposite families meet in a line, and two distinct ideals of the same family meet only at the origin.
 
 **Proof.** Every zero-divisor line consists of the multiples of one zero divisor, which by the preceding theorem has a two-dimensional annihilator in each family; the incidence is that of the one-sided ideals of $M_2(\mathbb{R})$ (*Split-Quaternion Ideals and Peirce Decomposition*).
 
-**Corollary (The Minimal Ideals Are Members of the Families).** Both minimal left ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$ are members of the family $\mathcal{K}$, and both minimal right ideals $\tilde\pi_{1,2}\mathbb{H}_{\mathrm{s}}$ are members of the family $\mathcal{R}$.
+**Corollary (The Minimal Ideals Are Members of the Families).** Both minimal left ideals $\mathbb{H}^{\mathrm{spl}}\tilde\pi_{1,2}$ are members of the family $\mathcal{K}$, and both minimal right ideals $\tilde\pi_{1,2}\mathbb{H}^{\mathrm{spl}}$ are members of the family $\mathcal{R}$.
 
-**Proof.** A left ideal is closed under left multiplication, so $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$ is the left annihilator of a zero-divisor line; it is a two-dimensional minimal left ideal by *Split-Quaternion Ideals and Peirce Decomposition*. The right ideals are the images of left ideals under the conjugation and lie in $\mathcal{R}$.
+**Proof.** A left ideal is closed under left multiplication, so $\mathbb{H}^{\mathrm{spl}}\tilde\pi_{1,2}$ is the left annihilator of a zero-divisor line; it is a two-dimensional minimal left ideal by *Split-Quaternion Ideals and Peirce Decomposition*. The right ideals are the images of left ideals under the conjugation and lie in $\mathcal{R}$.
 
 **Corollary (The Anti-Automorphism $\tau$ Swaps the Families).** The assignment on the generators
 
@@ -117,11 +117,11 @@ The nilpotent set is the level set $N = 0$ in $V$; by *Split-Quaternion Norm and
 
 The existence of nilpotents is the sharpest structural contrast the category has.
 
-**Theorem (No Nilpotents in the Division Algebras).** The quaternion algebra $\mathbb{H}$ has no nonzero nilpotent, and the eight-dimensional $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ has no nonzero nilpotent.
+**Theorem (No Nilpotents in the Division Algebras).** The quaternion algebra $\mathbb{H}$ has no nonzero nilpotent, and the eight-dimensional $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ has no nonzero nilpotent.
 
 **Proof.** The quaternion algebra is a division algebra by *Quaternion Algebra*, so $\tilde q \neq 0$ implies $\tilde q$ invertible, and $\tilde q^2 = 0$ would give $\tilde q = 0$ after multiplying by $\tilde q^{-1}$. The eight-dimensional algebra is a product of two copies of $\mathbb{H}$ by the dictionary of *The Number Systems as Clifford Algebras*, and a nilpotent in a product of algebras would have a nilpotent component in one of the factors; a division algebra has none, so the product has none.
 
-**Remark.** The comparison isolates the phenomenon. A **simple** real algebra with nilpotents, such as $\mathbb{H}_{\mathrm{s}}$, and a **semisimple, non-simple** product of division algebras without nilpotents, such as $\mathbb{H}_{\mathbb{D}}$, lie on opposite sides of the line that the nilpotent draws. The eight-dimensional algebra is treated later in Part V, under Split-Biquaternions; nothing of it is used here beyond the identification already stated in *The Number Systems as Clifford Algebras*.
+**Remark.** The comparison isolates the phenomenon. A **simple** real algebra with nilpotents, such as $\mathbb{H}^{\mathrm{spl}}$, and a **semisimple, non-simple** product of division algebras without nilpotents, such as $\mathbb{B}^{\mathrm{spl}}$, lie on opposite sides of the line that the nilpotent draws. The eight-dimensional algebra is treated later in Part V, under Split-Biquaternions; nothing of it is used here beyond the identification already stated in *The Number Systems as Clifford Algebras*.
 
 ## Distribution of the Zero Divisors
 
@@ -131,9 +131,9 @@ The zero divisors are distributed over the distinguished subspaces as follows. T
 |---|---|---|
 | $S = \mathbb{R}\cdot 1$ | none | every nonzero scalar is a unit |
 | $V$ | the nonzero vectors with $q_x^2 = q_y^2 + q_z^2$ | the level set $N = 0$, a two-dimensional cone, every nonzero point of which is nilpotent |
-| $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ | the nonzero multiples of $1 \pm \vec e_y$ | two zero-divisor lines |
-| $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | the nonzero multiples of $1 \pm \vec e_z$ | two zero-divisor lines |
-| $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ | the whole subspace minus the origin | four minimal one-sided ideals |
+| $\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1,\vec e_y\}$ | the nonzero multiples of $1 \pm \vec e_y$ | two zero-divisor lines |
+| $\mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1,\vec e_z\}$ | the nonzero multiples of $1 \pm \vec e_z$ | two zero-divisor lines |
+| $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}^{\mathrm{spl}}$ | the whole subspace minus the origin | four minimal one-sided ideals |
 | $\tilde\pi_{1,2}$ themselves | $\tilde\pi_1$ and $\tilde\pi_2$ | the two non-central idempotents |
 
 The table is completed by the following observations.
@@ -152,7 +152,7 @@ A nonzero split-quaternion is a zero divisor exactly when $\langle\tilde q\rangl
 
 The zero divisor set splits into the two families of minimal one-sided ideals, each parametrised by the projective line; each ideal is two-dimensional and minimal, and the two families are the two rulings of the projective zero set. Every zero-divisor line lies in exactly one member of each family, the two families are exchanged by the anti-automorphism $\tau$, and the four minimal ideals of the algebra are members of the families.
 
-The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when it lies in the vector subspace and on the level set $N = 0$, and $(\vec e_x + \vec e_z)^2 = 0$. The quaternion algebra and the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ have no nonzero nilpotent, the first because it is a division algebra and the second because it is a product of division algebras. The zero divisor set is a connected three-dimensional cone of measure zero, the nilpotents form its two-dimensional subcone inside $V$, and the two non-central idempotents are two further points of it.
+The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when it lies in the vector subspace and on the level set $N = 0$, and $(\vec e_x + \vec e_z)^2 = 0$. The quaternion algebra and the eight-dimensional $\mathbb{B}^{\mathrm{spl}}$ have no nonzero nilpotent, the first because it is a division algebra and the second because it is a product of division algebras. The zero divisor set is a connected three-dimensional cone of measure zero, the nilpotents form its two-dimensional subcone inside $V$, and the two non-central idempotents are two further points of it.
 
 ## Summary of Notation
 

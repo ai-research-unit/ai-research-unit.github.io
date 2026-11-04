@@ -9,35 +9,35 @@ The treatment is purely mathematical. No physics is invoked; the "Lorentz group"
 
 ## The Algebra as a Lie Algebra and Its Two Halves
 
-**Definition.** The **commutator bracket** on $\mathbb{H}_{\mathbb{D}}$ is $[\tilde Q_1,\tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$. With this bracket $\mathbb{H}_{\mathbb{D}}$ is a real Lie algebra of dimension $8$, and it is the Lie algebra of its own group of units.
+**Definition.** The **commutator bracket** on $\mathbb{B}^{\mathrm{spl}}$ is $[\tilde Q_1,\tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$. With this bracket $\mathbb{B}^{\mathrm{spl}}$ is a real Lie algebra of dimension $8$, and it is the Lie algebra of its own group of units.
 
-**Theorem.** In the components of the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ the bracket is componentwise,
+**Theorem.** In the components of the isomorphism $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$ the bracket is componentwise,
 
 $$
 \left[(\tilde Q_{1+},\tilde Q_{1-}), (\tilde Q_{2+},\tilde Q_{2-})\right] = \left([\tilde Q_{1+},\tilde Q_{2+}], [\tilde Q_{1-},\tilde Q_{2-}]\right) ,
 $$
 
-so that the two halves $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are commuting ideals and $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ as Lie algebras.
+so that the two halves $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$ are commuting ideals and $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$ as Lie algebras.
 
 **Proof.** The decomposition is a ring direct sum, so the commutator of pairs is the pair of commutators.
 
-**Corollary.** The centre of the Lie algebra is $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathbb{D}$, of dimension $2$; the derived algebra is $[\mathbb{H}_{\mathbb{D}}, \mathbb{H}_{\mathbb{D}}] = \mathrm{Im}\,\mathbb{H} \oplus \mathrm{Im}\,\mathbb{H} \cong \mathrm{SO}(3) \oplus \mathrm{SO}(3) \cong \mathrm{SO}(4)$, of dimension $6$; and
+**Corollary.** The centre of the Lie algebra is $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}} \cong \mathbb{C}^{\mathrm{spl}}$, of dimension $2$; the derived algebra is $[\mathbb{B}^{\mathrm{spl}}, \mathbb{B}^{\mathrm{spl}}] = \mathrm{Im}\,\mathbb{H} \oplus \mathrm{Im}\,\mathbb{H} \cong \mathrm{SO}(3) \oplus \mathrm{SO}(3) \cong \mathrm{SO}(4)$, of dimension $6$; and
 
 $$
 \boxed{\;
-\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^2 \oplus \mathrm{SO}(3) \oplus \mathrm{SO}(3)
+\mathbb{B}^{\mathrm{spl}} \cong \mathbb{R}^2 \oplus \mathrm{SO}(3) \oplus \mathrm{SO}(3)
 \;},
 $$
 
 a reductive Lie algebra whose semisimple part is $\mathrm{SO}(4)$.
 
-**Proof.** In the quaternion Lie algebra $\mathbb{H}$ the commutator of two elements is the vector product of their vector parts, so the centre is $\mathbb{R}e_t$ and the derived algebra is $\mathrm{Im}\,\mathbb{H} \cong \mathrm{SU}(2) \cong \mathrm{SO}(3)$; taking two copies, the centre is $\mathbb{R} \tilde\Pi_1 \oplus \mathbb{R} \tilde\Pi_2 = \mathbb{D} e_t$ and the derived algebra is the sum of the two copies of $\mathrm{SO}(3)$. The isomorphism $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ is standard.
+**Proof.** In the quaternion Lie algebra $\mathbb{H}$ the commutator of two elements is the vector product of their vector parts, so the centre is $\mathbb{R}e_t$ and the derived algebra is $\mathrm{Im}\,\mathbb{H} \cong \mathrm{SU}(2) \cong \mathrm{SO}(3)$; taking two copies, the centre is $\mathbb{R} \tilde\Pi_1 \oplus \mathbb{R} \tilde\Pi_2 = \mathbb{C}^{\mathrm{spl}} e_t$ and the derived algebra is the sum of the two copies of $\mathrm{SO}(3)$. The isomorphism $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$ is standard.
 
 ## The Exponential
 
 ### The Series and the Closed Form
 
-**Definition.** For $\tilde Q \in \mathbb{H}_{\mathbb{D}}$ the **exponential** is $\exp(\tilde Q) = \sum_{n\geq0} \tilde Q^n/n!$, and it converges for every $\tilde Q$ because the algebra is finite-dimensional.
+**Definition.** For $\tilde Q \in \mathbb{B}^{\mathrm{spl}}$ the **exponential** is $\exp(\tilde Q) = \sum_{n\geq0} \tilde Q^n/n!$, and it converges for every $\tilde Q$ because the algebra is finite-dimensional.
 
 **Theorem.** $\exp$ commutes with the splitting: $\exp(\tilde Q_+,\tilde Q_-) = (\exp\tilde Q_+, \exp\tilde Q_-)$. For a quaternion $\tilde q = a + \vec q$ with $a \in \mathbb{R}$ and $\vec q \in \mathrm{Im}\,\mathbb{H}$,
 
@@ -53,13 +53,13 @@ So the exponential in the split biquaternion algebra is the pair of quaternion e
 
 ### The Group Law
 
-**Theorem.** For $\tilde Q_1, \tilde Q_2 \in \mathbb{H}_{\mathbb{D}}$, if $[\tilde Q_1,\tilde Q_2] = 0$ then $\exp(\tilde Q_1)\exp(\tilde Q_2) = \exp(\tilde Q_1+\tilde Q_2)$; conversely, if $\exp(t\tilde Q_1)\exp(t\tilde Q_2) = \exp(t(\tilde Q_1+\tilde Q_2))$ for all real $t$, then $[\tilde Q_1,\tilde Q_2] = 0$. In general $\exp(\tilde Q_1)\exp(\tilde Q_2) = \exp\left(\tilde Q_1 + \tilde Q_2 + \tfrac{1}{2}[\tilde Q_1,\tilde Q_2] + \cdots\right)$ by the Baker–Campbell–Hausdorff formula, so the commutator is the first obstruction.
+**Theorem.** For $\tilde Q_1, \tilde Q_2 \in \mathbb{B}^{\mathrm{spl}}$, if $[\tilde Q_1,\tilde Q_2] = 0$ then $\exp(\tilde Q_1)\exp(\tilde Q_2) = \exp(\tilde Q_1+\tilde Q_2)$; conversely, if $\exp(t\tilde Q_1)\exp(t\tilde Q_2) = \exp(t(\tilde Q_1+\tilde Q_2))$ for all real $t$, then $[\tilde Q_1,\tilde Q_2] = 0$. In general $\exp(\tilde Q_1)\exp(\tilde Q_2) = \exp\left(\tilde Q_1 + \tilde Q_2 + \tfrac{1}{2}[\tilde Q_1,\tilde Q_2] + \cdots\right)$ by the Baker–Campbell–Hausdorff formula, so the commutator is the first obstruction.
 
 **Proof.** The equality holds for commuting elements termwise in the series. For the converse, comparing the second derivative at $t = 0$ of the two sides of $\exp(t\tilde Q_1)\exp(t\tilde Q_2) = \exp(t(\tilde Q_1+\tilde Q_2))$ gives $\tilde Q_1^2 + 2\tilde Q_1\tilde Q_2 + \tilde Q_2^2 = \tilde Q_1^2 + \tilde Q_1\tilde Q_2 + \tilde Q_2\tilde Q_1 + \tilde Q_2^2$, hence $\tilde Q_1\tilde Q_2 = \tilde Q_2\tilde Q_1$.
 
 ### Surjectivity and the Kernel
 
-**Theorem.** $\exp : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}^{\times}$ is surjective, and its kernel is
+**Theorem.** $\exp : \mathbb{B}^{\mathrm{spl}} \to {\mathbb{B}^{\mathrm{spl}}}^{\times}$ is surjective, and its kernel is
 
 $$
 \ker\exp = \left\{ (\tilde Q_+, \tilde Q_-) : \exp\tilde Q_+ = \exp\tilde Q_- = 1 \right\} ,
@@ -77,7 +77,7 @@ The kernel is therefore a union of a point and countably many two-spheres in eac
 
 $$
 \boxed{\;
-\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^{2} \times S^{3} \times S^{3}
+{\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^{2} \times S^{3} \times S^{3}
 \;},
 $$
 
@@ -85,11 +85,11 @@ a connected real Lie group of dimension $8$.
 
 **Proof.** An element of a product ring is a unit exactly when both components are units, and $\mathbb{H}^{\times}$ is the set of nonzero quaternions, which by the polar form is $\mathbb{R}_{>0} \times S^3$.
 
-The unit group is connected and, since $\mathbb{R}_{>0}$ is contractible and $S^3$ is simply connected, it is simply connected; its Lie algebra is $\mathbb{H}_{\mathbb{D}}$ with the commutator bracket, of dimension $8$.
+The unit group is connected and, since $\mathbb{R}_{>0}$ is contractible and $S^3$ is simply connected, it is simply connected; its Lie algebra is $\mathbb{B}^{\mathrm{spl}}$ with the commutator bracket, of dimension $8$.
 
 ## The Norm-One Group
 
-**Definition.** The **norm-one group** of the algebra is $G_1 = \{ \tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \langle\tilde{Q}\rangle_{\natural} = e_t \}$.
+**Definition.** The **norm-one group** of the algebra is $G_1 = \{ \tilde{Q} \in \mathbb{B}^{\mathrm{spl}} : \langle\tilde{Q}\rangle_{\natural} = e_t \}$.
 
 **Theorem.** $G_1 = S^3 \times S^3 \cong \mathrm{Spin}(4)$, a compact connected six-dimensional Lie group.
 
@@ -117,7 +117,7 @@ The hyperbolic one-parameter subgroups are thus generated by the central element
 
 ## Polar and Exponential Parametrisation
 
-**Theorem.** Every nonzero $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$ has a componentwise polar form
+**Theorem.** Every nonzero $\tilde{Q} \in \mathbb{B}^{\mathrm{spl}}$ has a componentwise polar form
 
 $$
 \boxed{\;
@@ -137,20 +137,20 @@ In the biquaternion case the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simpl
 
 ## Summary
 
-The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}\cong\mathbb{D}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $\exp(a)(\cos|\vec q| + \vec u\sin|\vec q|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\vec u$. The group of units is $\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_t$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\vec u$; the hyperbolic ones are generated by the central $j$ with square $+e_t$, the only noncentral solutions of $\tilde Q^2 = e_t$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.
+The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}\cong\mathbb{C}^{\mathrm{spl}}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $\exp(a)(\cos|\vec q| + \vec u\sin|\vec q|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\vec u$. The group of units is ${\mathbb{B}^{\mathrm{spl}}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_t$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\vec u$; the hyperbolic ones are generated by the central $j$ with square $+e_t$, the only noncentral solutions of $\tilde Q^2 = e_t$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H} \cong \mathbb{H}\oplus\mathbb{H}$ | Split biquaternion algebra |
+| $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H} \cong \mathbb{H}\oplus\mathbb{H}$ | Split biquaternion algebra |
 | $[\tilde Q_1,\tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$ | Commutator, the Lie bracket |
 | $\mathrm{Im}\,\mathbb{H}$ | Imaginary quaternions, $\cong \mathrm{SO}(3)$ |
-| $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^2\oplus\mathrm{SO}(4)$ | Reductive Lie algebra structure |
+| $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{R}^2\oplus\mathrm{SO}(4)$ | Reductive Lie algebra structure |
 | $\exp(\tilde Q) = \sum \tilde Q^n/n!$ | Exponential map |
 | $\exp(t\vec u) = \cos t + \sin t\,\vec u$ | Elliptic one-parameter subgroup, $\vec u^2 = -e_t$ |
 | $\exp(tj) = \cosh t + \sinh t\,j$ | Hyperbolic one-parameter subgroup, $j^2 = +e_t$ |
-| $\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of units, connected, dimension $8$ |
+| ${\mathbb{B}^{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of units, connected, dimension $8$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $G_1 = \{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = e_t \} = S^3\times S^3 \cong \mathrm{Spin}(4)$ | Norm-one group |
 | $\ker\exp$ | Pairs of quaternions $2\pi k\vec u$ |

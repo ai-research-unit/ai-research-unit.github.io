@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article solves the square-root problem in the multiplication of the general plain algebra: given $\breve Q\in\mathbb{B}_{\mathrm{r}}$, find every $X\in\mathbb{B}_{\mathrm{r}}$ with
+This article solves the square-root problem in the multiplication of the general plain algebra: given $\breve Q\in\mathbb{B}^{\mathrm{red}}$, find every $X\in\mathbb{B}^{\mathrm{red}}$ with
 
 $$
 X^{2}=\breve Q .
@@ -152,7 +152,7 @@ The square-root problem $X^{2}=\breve Q$ in the multiplication is solved by the 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm{r}}$ | Reduced biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ |
+| $\mathbb{B}^{\mathrm{red}}$ | Reduced biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | The radicand, $Q_{\blacktriangle},Q_{\blacktriangledown}\in\mathbb{C}$ |
 | $X=p\Pi_++q\Pi_-$ | A square root, in the idempotent coordinates |
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\ Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | The idempotent coordinates of $\breve Q$, with $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ |

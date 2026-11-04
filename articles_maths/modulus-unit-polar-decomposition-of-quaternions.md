@@ -297,9 +297,9 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 |---|---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $(1,0)$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
 | $\mathbb{C}$ | $Q=q+iq'$ | $q^2+q'^2$ | $(2,0)$ | $\sqrt{\langle Q\rangle_{*}}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{D}$ | $Q=q+jq'$ | $q^2-q'^2$ | $(1,1)$ | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four components, non-compact |
+| $\mathbb{C}^{\mathrm{spl}}$ | $Q=q+jq'$ | $q^2-q'^2$ | $(1,1)$ | $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $\langle Q\rangle_{*}\neq0$ | $\{\langle Q\rangle_{*}=\pm1\}$ | four components, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | $\sqrt{\langle\tilde q\rangle_{\natural}}$ | $S^3=\mathrm{Sp}(1)$ | sphere, compact, connected, simply connected |
-| $\mathbb{H}_{\mathrm{s}}$ | $\tilde q$ | $q_t^2+q_x^2-q_y^2-q_z^2$ | $(2,2)$ | $\sqrt{\lvert\langle\tilde q\rangle_{\natural}\rvert}$, $\langle\tilde q\rangle_{\natural}\neq0$ | $\{\langle\tilde q\rangle_{\natural}=\pm1\}$ | two components, non-compact |
+| $\mathbb{H}^{\mathrm{spl}}$ | $\tilde q$ | $q_t^2+q_x^2-q_y^2-q_z^2$ | $(2,2)$ | $\sqrt{\lvert\langle\tilde q\rangle_{\natural}\rvert}$, $\langle\tilde q\rangle_{\natural}\neq0$ | $\{\langle\tilde q\rangle_{\natural}=\pm1\}$ | two components, non-compact |
 
 The quaternion column is the first definite column whose unit set is neither finite nor a circle. The split-complex column has an indefinite norm, so its modulus uses an absolute value, its unit set has four components, and the decomposition is restricted to the complement of the null cone. The split-quaternion column has signature $(2,2)$; its norm-one set is $\mathrm{SL}_2(\mathbb{R})$, a non-compact three-dimensional group, and its full unit set $\{\langle\tilde q\rangle_{\natural}=\pm1\}$ has two connected components. Only the real, complex and quaternion columns have a definite norm, and among them the quaternion unit set is the only one that is non-abelian.
 

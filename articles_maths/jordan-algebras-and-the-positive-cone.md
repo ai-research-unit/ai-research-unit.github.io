@@ -26,7 +26,7 @@ $$
 
 for every finite family $x_i \in J$. Since a sum of finitely many squares can be written as a single square only in special cases, the condition is stated for finite sums. It is equivalent to: $-1$ is not a sum of squares; and, for $J$ finite dimensional and unital, to the trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ being positive definite. The last equivalence is the criterion used in the classification, and it is standard.
 
-**Example.** $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ and the spin factors of positive definite forms are formally real. The algebra $H_3(\mathbb{O})$ is formally real. On the other hand, $M_n(\mathbb{R})^+$ and the dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ are not formally real: for $n \geq 2$ the matrix with a single entry $1$ in position $(1,2)$ is nonzero with square zero, and in $\mathbb{D}'$ the element $\varepsilon \neq 0$ has $\varepsilon^2 = 0$. Each exhibits a nonzero element whose square is zero, hence a sum of squares equal to zero.
+**Example.** $H_n(\mathbb{R})$, $H_n(\mathbb{C})$, $H_n(\mathbb{H})$ and the spin factors of positive definite forms are formally real. The algebra $H_3(\mathbb{O})$ is formally real. On the other hand, $M_n(\mathbb{R})^+$ and the dual numbers $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ are not formally real: for $n \geq 2$ the matrix with a single entry $1$ in position $(1,2)$ is nonzero with square zero, and in $\mathbb{C}^{\mathrm{dua}}$ the element $\varepsilon \neq 0$ has $\varepsilon^2 = 0$. Each exhibits a nonzero element whose square is zero, hence a sum of squares equal to zero.
 
 ### The Trace Form and the Order
 
@@ -269,7 +269,7 @@ In a formally real Jordan algebra $J$ the set of squares $J_+ = \{x^2 : x\in J\}
 | Primitive idempotent | Nonzero idempotent not a sum of two orthogonal nonzero idempotents |
 | $J_1(e)$ | Peirce-1 space of an idempotent $e$ |
 | $N(x)$ | Generic norm; determinant for $H_3(\mathbb{O})$ |
-| $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual numbers, the standard non-formally-real example |
+| $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual numbers, the standard non-formally-real example |
 | $F_4$ | Automorphism group of the Albert algebra, compact, of dimension $52$ |
 | $\operatorname{Str}(H_3(\mathbb{O}))$, $E_6\cdot\mathbb{R}_{>0}$ | Structure group of the Albert cone, norm similitudes of dimension $79$ |
 | $E_6$ | Norm-preserving part of the structure group of the Albert algebra, of dimension $78$ |

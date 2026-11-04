@@ -22,7 +22,7 @@ The bar and the tessarine sign are the two generators, and the star is their com
 
 **An involution of the algebra splits the real space into the fixed and the anti-fixed space, and the two are complementary.**
 
-**Definition.** For an involution $\sigma$ of $\mathbb{B}_{\mathrm{r}}$ the **fixed space** is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the **anti-fixed space** is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.
+**Definition.** For an involution $\sigma$ of $\mathbb{B}^{\mathrm{red}}$ the **fixed space** is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the **anti-fixed space** is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.
 
 **Proposition.** For an involution $\sigma$ the fixed and the anti-fixed space are real subspaces, they meet in $\{0\}$, and their sum is the whole space; over $\mathbb{R}$ they are the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$, and the projections onto them are
 $$
@@ -135,11 +135,11 @@ and for every pair $\dim(L+M)=\dim L+\dim M-\dim(L\cap M)=4-\dim(L\cap M)$.
 
 **Corollary (the three complementary pairs).** Exactly three pairs of distinct planes sum to the whole real space, namely the three pairs of one involution:
 $$
-\boxed{\; \mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}_{\mathrm{r}} \;}.
+\boxed{\; \mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}^{\mathrm{red}} \;}.
 $$
 All the other pairs sum to a real three-dimensional space, since their intersection is a line.
 
-**Corollary (the idempotent lines).** The idempotent lines meet the whole space as $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-=\mathbb{B}_{\mathrm{r}}$ and $\mathbb{C}\Pi_+\cap\mathbb{C}\Pi_-=0$; each idempotent line meets a coordinate plane either in a real line or in $\{0\}$, since it is diagonal and the coordinate planes are not.
+**Corollary (the idempotent lines).** The idempotent lines meet the whole space as $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-=\mathbb{B}^{\mathrm{red}}$ and $\mathbb{C}\Pi_+\cap\mathbb{C}\Pi_-=0$; each idempotent line meets a coordinate plane either in a real line or in $\{0\}$, since it is diagonal and the coordinate planes are not.
 
 ### The Norm on the Spaces
 

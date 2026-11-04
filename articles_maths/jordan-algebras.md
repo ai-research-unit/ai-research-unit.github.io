@@ -222,7 +222,7 @@ A **Jordan algebra** is a commutative $R$-algebra $(J, \bullet)$ satisfying the 
 | $x^2 = x \bullet x$ | Square in a Jordan algebra |
 | $x^n$ | Jordan powers, defined by $x^{n+1} = x \bullet x^n$ |
 | $A^+$ | Symmetrisation of an associative algebra, $x \bullet y = xy + yx$ |
-| $D$ | A composition algebra: $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ or $\mathbb{O}$; distinct from $\mathbb{D}$, the split complex numbers |
+| $D$ | A composition algebra: $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ or $\mathbb{O}$; distinct from $\mathbb{C}^{\mathrm{spl}}$, the split complex numbers |
 | $H_n(D)$ | Hermitian $n \times n$ matrices over $D$ |
 | $JSpin_n$, $JSpin(V)$ | Spin factor of a quadratic form; constructed in *Spin Factors and the Clifford Envelope with Inner Conjugation* (Part II) |
 | $H_3(\mathbb{O})$ | Albert algebra, the exceptional $27$-dimensional Jordan algebra |

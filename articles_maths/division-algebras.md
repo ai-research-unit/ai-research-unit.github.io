@@ -21,7 +21,7 @@ For a finite-dimensional $D$ this is equivalent to the absence of zero divisors,
 
 *Proof.* If $I \neq 0$ is a left ideal and $0 \neq a \in I$, then $1 = a^{-1}a \in I$, so $I = A$. Injectivity of a homomorphism $\varphi$ follows because $\ker\varphi$ is a proper two-sided ideal, hence $0$. The last statement is Wedderburn–Artin: a simple finite-dimensional algebra is $M_n(D)$ for a division algebra $D$, and $M_n(D)$ is a division algebra only for $n = 1$.
 
-**Example.** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and every field are division algebras. The algebras $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for nontrivial finite $G$ are not, by the zero divisors listed in *Examples of Algebras*. The pattern is instructive: $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ are the division algebras among the number systems.
+**Example.** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and every field are division algebras. The algebras $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for nontrivial finite $G$ are not, by the zero divisors listed in *Examples of Algebras*. The pattern is instructive: $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ are the division algebras among the number systems.
 
 ## Finite-Dimensional Division Algebras over $\mathbb{R}$: Frobenius
 

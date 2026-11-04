@@ -4,7 +4,7 @@
 
 The reduced biquaternion algebra carries **two** involutions of the coefficient sector and a group of four maps they generate. The **bar** conjugates the two complex coordinates, $\overline{Q_{\blacktriangle}+jQ_{\blacktriangledown}}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$; the **tessarine sign** negates the second slot, $(Q_{\blacktriangle}+jQ_{\blacktriangledown})_{\mathrm{ts}}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$. Their composite is the **star**, ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$, $(Q_{\blacktriangle}+jQ_{\blacktriangledown})^{*}=\bar Q_{\blacktriangle}-j\bar Q_{\blacktriangledown}$; and the negative of the star is the **flat**, ${}^{\flat}=-{}^{*}$. The star and the bar and the tessarine sign generate the **Klein four-group** $\{\mathrm{id},\bar{\cdot},{}_{\mathrm{ts}},{}^{*}\}$, and the flat stands outside it as the reversal of the star.
 
-The two involutions are what make this layer richer than a single-conjugation algebra. The **tessarine sign** is the **intrinsic conjugate** of the space: it fixes the scalar line $\mathbb{C}$ and negates the $j$-line $\mathbb{C}j$ (*Algebra and Element Conventions*, §*The Conjugations*). The **bar** is the coefficient conjugation, and it exists because the coefficients are complex; the split-complex numbers $\mathbb{D}$ have no coefficient conjugation, their coefficients being real, and the complex numbers $\mathbb{C}$ have no tessarine sign, so the reduced biquaternions are the first layer carrying the two maps independently. The two are independent, they commute, and their composite is a third involution, the star, which is the one the two sesquilinear products use.
+The two involutions are what make this layer richer than a single-conjugation algebra. The **tessarine sign** is the **intrinsic conjugate** of the space: it fixes the scalar line $\mathbb{C}$ and negates the $j$-line $\mathbb{C}j$ (*Algebra and Element Conventions*, §*The Conjugations*). The **bar** is the coefficient conjugation, and it exists because the coefficients are complex; the split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ have no coefficient conjugation, their coefficients being real, and the complex numbers $\mathbb{C}$ have no tessarine sign, so the reduced biquaternions are the first layer carrying the two maps independently. The two are independent, they commute, and their composite is a third involution, the star, which is the one the two sesquilinear products use.
 
 This article fixes the four maps, their fixed and anti-fixed spaces and the group they generate, following *The Group of Involutions* of the biquaternion category article for article. The four general products and the forms and algebraic norms they carry are *The Four Products, Their Forms and Their Algebraic Norms*, below this article in this category; the four maps are named there and proved here. The remarkable subspaces as subspaces are *Subspaces and Decompositions*, below this article in this category; the fixed spaces are computed here because they are what fixes the involutions.
 
@@ -28,7 +28,7 @@ $$
 
 *Proof.* Applying the bar twice returns $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, so it is an involution; it is real-linear because the complex conjugation is; it is antilinear because $\overline{\lambda Q_{\blacktriangle}}=\bar\lambda\bar Q_{\blacktriangle}$; and on the basis $1=1+0j$, $i=i+0j$, $j=0+1j$, $ij=i\cdot j$ it gives $\bar1=1$, $\bar i=-i$, $\bar j=j$, $\overline{ij}=\bar i\bar j=(-i)j=-ij$. The multiplicativity is the multiplicativity of the complex conjugation on the two coordinates together with the commutativity of the product.
 
-The bar is the involution of the **coefficient sector**. It is the only one of the four maps that has a sense over any complex algebra, and over the split-complex numbers $\mathbb{D}$ the coefficientwise conjugation degenerates to the identity because the coefficients are real.
+The bar is the involution of the **coefficient sector**. It is the only one of the four maps that has a sense over any complex algebra, and over the split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ the coefficientwise conjugation degenerates to the identity because the coefficients are real.
 
 ### The Natural Sign
 
@@ -78,7 +78,7 @@ $$
 
 **Each involution splits the real four-dimensional space into a fixed and an anti-fixed space, each of real dimension two, and the three splits are the three ways of cutting the space into a plane and its complement.**
 
-**Definition.** For an involution $\sigma$ of $\mathbb{B}_{\mathrm{r}}$, the **fixed space** is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the **anti-fixed space** is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.
+**Definition.** For an involution $\sigma$ of $\mathbb{B}^{\mathrm{red}}$, the **fixed space** is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the **anti-fixed space** is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.
 
 **Theorem (the six spaces).** The fixed and anti-fixed spaces of the bar, the tessarine sign and the star are the following real subspaces, each of real dimension two:
 
@@ -151,7 +151,7 @@ so each is a ring automorphism, the tessarine sign over $\mathbb{C}$ and the bar
 
 *Proof.* The multiplicativity of each is the last display of the three propositions above. The identity is fixed by all three, as read on the basis. For the scalar action, the tessarine sign is linear and the bar and the star are antilinear. The word **automorphism** replaces the word **anti-automorphism** of the biquaternion category because $\breve Q_{1}\breve Q_{2}=\breve Q_{2}\breve Q_{1}$, so the order of the factors never has to be reversed.
 
-**Remark (what the automorphism group of the algebra is).** The three involutions of the group are automorphisms, and they are not all the automorphisms of $\mathbb{B}_{\mathrm{r}}$: the componentwise permutations of the two copies of $\mathbb{C}$ in $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$ that are continuous, and the other automorphisms of the algebra, are *Reduced Biquaternion Automorphisms and Derivations*, below this article in this category. This article keeps only the four maps of the group and their eigenspaces.
+**Remark (what the automorphism group of the algebra is).** The three involutions of the group are automorphisms, and they are not all the automorphisms of $\mathbb{B}^{\mathrm{red}}$: the componentwise permutations of the two copies of $\mathbb{C}$ in $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ that are continuous, and the other automorphisms of the algebra, are *Reduced Biquaternion Automorphisms and Derivations*, below this article in this category. This article keeps only the four maps of the group and their eigenspaces.
 
 **Corollary (the idempotents under the involutions).** The tessarine sign and the star both exchange the two idempotents, $\Pi_{+,\mathrm{ts}}=\Pi_-=\Pi_+^{*}$ and $\Pi_{-,\mathrm{ts}}=\Pi_+=\Pi_-^{*}$; only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$.
 

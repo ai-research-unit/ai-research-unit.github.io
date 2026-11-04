@@ -8,7 +8,7 @@ This article states the basis, proves its uniqueness, gives the coordinates and 
 
 ## The Definition
 
-**Definition.** A **Peirce basis** of $\mathbb{B}_{\mathrm r}$ relative to the family $\Pi_{+},\Pi_{-}$ is a family $E_{\sigma\tau}\in\mathbb{B}_{\sigma\tau}$, one element for each pair, with
+**Definition.** A **Peirce basis** of $\mathbb{B}^{\mathrm{red}}$ relative to the family $\Pi_{+},\Pi_{-}$ is a family $E_{\sigma\tau}\in\mathbb{B}_{\sigma\tau}$, one element for each pair, with
 
 $$
 E_{\sigma\tau}E_{\mu\nu}=\delta_{\tau\mu}E_{\sigma\nu},\qquad E_{\sigma\sigma}=\Pi_{\sigma}.
@@ -60,7 +60,7 @@ which is the matrix product of the diagonal arrays. The coordinates are the idem
 
 ## The Dimension Count
 
-**The family.** The idempotents of $\mathbb{B}_{\mathrm r}\cong\mathbb{C}\times\mathbb{C}$ are $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$. The nontrivial complete orthogonal pairs are $(\Pi_{+},\Pi_{-})$ and $(\Pi_{-},\Pi_{+})$, the same unordered family, with the two labelings exchanged by $j\mapsto-j$. The unordered family space is a single point.
+**The family.** The idempotents of $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$ are $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$. The nontrivial complete orthogonal pairs are $(\Pi_{+},\Pi_{-})$ and $(\Pi_{-},\Pi_{+})$, the same unordered family, with the two labelings exchanged by $j\mapsto-j$. The unordered family space is a single point.
 
 **The frame.** The Peirce basis is unique, so the frame space is a single point.
 
@@ -72,7 +72,7 @@ $$
 0=0+0 .
 $$
 
-The automorphism group of $\mathbb{B}_{\mathrm r}$ is $\{1,\varsigma\}$ with $\varsigma(j)=-j$; it has order $2$ and swaps the two lines. It fixes the unordered family and acts on the two labelings. There is no continuous parameter, no torus and no projective family.
+The automorphism group of $\mathbb{B}^{\mathrm{red}}$ is $\{1,\varsigma\}$ with $\varsigma(j)=-j$; it has order $2$ and swaps the two lines. It fixes the unordered family and acts on the two labelings. There is no continuous parameter, no torus and no projective family.
 
 ## What the Basis Is Not
 

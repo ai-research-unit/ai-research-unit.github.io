@@ -244,15 +244,15 @@ The idempotents are not central in $M_3(\mathbb{Q})$. For instance, $\varepsilon
 
 ### The split-complex and the dual numbers
 
-The split-complex algebra $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ is $\mathbb{R}[x]/(x^2-1)$ with $j$ the class of $x$. The minimal polynomial is $(x-1)(x+1)$, so
+The split-complex algebra $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ is $\mathbb{R}[x]/(x^2-1)$ with $j$ the class of $x$. The minimal polynomial is $(x-1)(x+1)$, so
 
 $$
-\mathbb{D} \cong \mathbb{R} \times \mathbb{R}, \qquad \Pi_1 = \frac{1+j}{2}, \quad \Pi_2 = \frac{1-j}{2},
+\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}, \qquad \Pi_1 = \frac{1+j}{2}, \quad \Pi_2 = \frac{1-j}{2},
 $$
 
-with $\Pi_1 + \Pi_2 = 1$ and $\Pi_1\Pi_2 = 0$. Since $\mathbb{D}$ is commutative, the idempotents are central, and the Chinese remainder decomposition is a decomposition of the whole algebra. This is the smallest case in which the decomposition is visible as a product of algebras.
+with $\Pi_1 + \Pi_2 = 1$ and $\Pi_1\Pi_2 = 0$. Since $\mathbb{C}^{\mathrm{spl}}$ is commutative, the idempotents are central, and the Chinese remainder decomposition is a decomposition of the whole algebra. This is the smallest case in which the decomposition is visible as a product of algebras.
 
-The dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ have minimal polynomial $x^2$, a single factor with exponent two. There is no nontrivial idempotent and no product decomposition; the algebra is local. The contrast between $\mathbb{D}$ and $\mathbb{D}'$ is the contrast between a split squarefree polynomial and a repeated factor, and it is the reason the eigenvalue decomposition needs distinct roots while the Jordan–Chevalley decomposition does not.
+The dual numbers $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ have minimal polynomial $x^2$, a single factor with exponent two. There is no nontrivial idempotent and no product decomposition; the algebra is local. The contrast between $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dua}}$ is the contrast between a split squarefree polynomial and a repeated factor, and it is the reason the eigenvalue decomposition needs distinct roots while the Jordan–Chevalley decomposition does not.
 
 ### The complex numbers as a real algebra
 

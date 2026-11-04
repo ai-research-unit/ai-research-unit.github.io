@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$, element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$. Its general plain sesquilinear form
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$, element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ and idempotent coordinates $(Q_{+},Q_{-})=(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$. Its general plain sesquilinear form
 
 $$
 \langle \breve Q_{1},\breve Q_{2}\rangle_{*}=\mathrm{Sc}(\breve Q_{1}\breve Q_{2}^{*})=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}-Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown},
@@ -26,14 +26,14 @@ The article owns the signature pattern of the indefinite form, the split-complex
 
 ## The Split-Complex Subalgebra and the Hyperbolic Line
 
-**Proposition (the subalgebra).** The real span $\mathbb{D}=\mathbb{R}\{1,j\}$ is a subalgebra of $\mathbb{B}_{\mathrm{r}}$ isomorphic to the split-complex numbers, and so is its translate $i\mathbb{D}=\mathbb{R}\{i,ij\}$; the multiplication preserves each of them.
+**Proposition (the subalgebra).** The real span $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\{1,j\}$ is a subalgebra of $\mathbb{B}^{\mathrm{red}}$ isomorphic to the split-complex numbers, and so is its translate $i\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\{i,ij\}$; the multiplication preserves each of them.
 
 **Proof.** $j^{2}=1$, so $\mathbb{R}\{1,j\}$ is closed under the multiplication, and the multiplication table is that of $\mathbb{R}[j]/(j^{2}-1)$; multiplying by $i$ is an algebra isomorphism onto $\mathbb{R}\{i,ij\}$ with $(ij)^{2}=i^{2}j^{2}=-1$.
 
 **Theorem (the hyperbolic line).** In the split-complex subalgebra the level set of the negative norm is the hyperbola
 
 $$
-\{\breve Q\in\mathbb{D}:\langle \breve Q\rangle_{*}=-1\}=\{q_{\blacktriangle}+jq_{\blacktriangledown}:q_{\blacktriangle}^{2}-q_{\blacktriangledown}^{2}=-1\},
+\{\breve Q\in\mathbb{C}^{\mathrm{spl}}:\langle \breve Q\rangle_{*}=-1\}=\{q_{\blacktriangle}+jq_{\blacktriangledown}:q_{\blacktriangle}^{2}-q_{\blacktriangledown}^{2}=-1\},
 $$
 
 with its two branches $q_{\blacktriangledown}\geq1$ and $q_{\blacktriangledown}\leq-1$; each branch is a hyperbolic line under the metric whose distance is
@@ -46,9 +46,9 @@ $$
 
 and its isometry group is $O(1,1)$, of four components.
 
-**Proof.** The bilinear form restricted to $\mathbb{D}$ is $\operatorname{diag}(1,-1)$; the level set is a hyperbola of two branches, and the standard hyperboloid model of the hyperbolic line carries the metric $\cosh d=-(\cdot,\cdot)$, because the form is negative of signature $(1,1)$ on the sheet and the conditions of the model hold; the isometry group of a form of signature $(1,1)$ in two variables has $2^{2}=4$ components, distinguished by the signs of the two isotropic coordinates.
+**Proof.** The bilinear form restricted to $\mathbb{C}^{\mathrm{spl}}$ is $\operatorname{diag}(1,-1)$; the level set is a hyperbola of two branches, and the standard hyperboloid model of the hyperbolic line carries the metric $\cosh d=-(\cdot,\cdot)$, because the form is negative of signature $(1,1)$ on the sheet and the conditions of the model hold; the isometry group of a form of signature $(1,1)$ in two variables has $2^{2}=4$ components, distinguished by the signs of the two isotropic coordinates.
 
-**Proposition (the boosts are the translations).** For a real parameter $\phi$ the element $\exp(j\phi)=\cosh\phi+j\sinh\phi$ is a unit of norm one, and its multiplication acts on the coordinates $(q_{\blacktriangle},q_{\blacktriangledown})$ of $\mathbb{D}$ by
+**Proposition (the boosts are the translations).** For a real parameter $\phi$ the element $\exp(j\phi)=\cosh\phi+j\sinh\phi$ is a unit of norm one, and its multiplication acts on the coordinates $(q_{\blacktriangle},q_{\blacktriangledown})$ of $\mathbb{C}^{\mathrm{spl}}$ by
 
 $$
 \boxed{\;
@@ -58,9 +58,9 @@ $$
 
 which is the translation by $\phi$ along the hyperbolic line; the elements $\exp(j\phi)$ form a one-parameter subgroup isomorphic to $\mathbb{R}$, the identity component of $O(1,1)$.
 
-**Proof.** $\exp(j\phi)$ has $Q_{+}=\exp(\phi)$ and $Q_{-}=\exp(-\phi)$, so $N=Q_{+}Q_{-}=1$; the multiplication in $\mathbb{D}$ gives the displayed matrix, which is the standard boost; the map $\phi\mapsto \exp(j\phi)$ is an injective continuous homomorphism $\mathbb{R}\to\mathbb{B}_{\mathrm{r}}^{\times}$ because $\exp(j\phi)\exp(j\psi)=\exp(j(\phi+\psi))$, and the connected component of the identity in $O(1,1)$ is one-dimensional.
+**Proof.** $\exp(j\phi)$ has $Q_{+}=\exp(\phi)$ and $Q_{-}=\exp(-\phi)$, so $N=Q_{+}Q_{-}=1$; the multiplication in $\mathbb{C}^{\mathrm{spl}}$ gives the displayed matrix, which is the standard boost; the map $\phi\mapsto \exp(j\phi)$ is an injective continuous homomorphism $\mathbb{R}\to{\mathbb{B}^{\mathrm{red}}}^{\times}$ because $\exp(j\phi)\exp(j\psi)=\exp(j(\phi+\psi))$, and the connected component of the identity in $O(1,1)$ is one-dimensional.
 
-**Proposition (the reflections).** On the plane $\mathbb{D}=\mathbb{R}\{1,j\}$, whose coefficients are real, the tessarine sign restricts to the reflection
+**Proposition (the reflections).** On the plane $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\{1,j\}$, whose coefficients are real, the tessarine sign restricts to the reflection
 
 $$
 {}_{\mathrm{ts}}:q_{\blacktriangle}+jq_{\blacktriangledown}\longmapsto q_{\blacktriangle}-jq_{\blacktriangledown},
@@ -68,11 +68,11 @@ $$
 
 while the coefficient conjugation restricts to the identity; the second reflection of the hyperbolic line, $q_{\blacktriangle}+jq_{\blacktriangledown}\mapsto-q_{\blacktriangle}+jq_{\blacktriangledown}$, is the negative of the star, the flat, which is a linear isometry of the form but not an algebra automorphism. The boosts together with these two reflections generate all of $O(1,1)$.
 
-**Proof.** On $\mathbb{D}$ the two coefficients $q_{\blacktriangle}$ and $q_{\blacktriangledown}$ are real, so the bar fixes them and is the identity, while the tessarine sign negates the second slot and sends $q_{\blacktriangle}+jq_{\blacktriangledown}$ to $q_{\blacktriangle}-jq_{\blacktriangledown}$; the star sends $q_{\blacktriangle}+jq_{\blacktriangledown}$ to $q_{\blacktriangle}-jq_{\blacktriangledown}$ there as well, and its negative sends $q_{\blacktriangle}+jq_{\blacktriangledown}$ to $-q_{\blacktriangle}+jq_{\blacktriangledown}$, of determinant $-1$, which preserves the form because $-1$ times a linear isometry is a linear isometry; the identity component is the boosts, and adjoining the two reflections generates the four components of $O(1,1)$.
+**Proof.** On $\mathbb{C}^{\mathrm{spl}}$ the two coefficients $q_{\blacktriangle}$ and $q_{\blacktriangledown}$ are real, so the bar fixes them and is the identity, while the tessarine sign negates the second slot and sends $q_{\blacktriangle}+jq_{\blacktriangledown}$ to $q_{\blacktriangle}-jq_{\blacktriangledown}$; the star sends $q_{\blacktriangle}+jq_{\blacktriangledown}$ to $q_{\blacktriangle}-jq_{\blacktriangledown}$ there as well, and its negative sends $q_{\blacktriangle}+jq_{\blacktriangledown}$ to $-q_{\blacktriangle}+jq_{\blacktriangledown}$, of determinant $-1$, which preserves the form because $-1$ times a linear isometry is a linear isometry; the identity component is the boosts, and adjoining the two reflections generates the four components of $O(1,1)$.
 
 ## The Hyperboloid Model, the Metric and the Geodesics
 
-**Proposition (the geodesics).** The geodesics of the hyperbolic line are the intersections of the hyperboloid with the two-dimensional subspaces of $\mathbb{D}$ through the origin, that is the hyperbolae $\{q_{\blacktriangle}^{2}-q_{\blacktriangledown}^{2}=-1\}\cap\{q_{\blacktriangle}=sq_{\blacktriangledown}\}$ for $s$ with $s^{2}<1$, and the null asymptotic directions $q_{\blacktriangle}=\pm q_{\blacktriangledown}$ are the boundary points.
+**Proposition (the geodesics).** The geodesics of the hyperbolic line are the intersections of the hyperboloid with the two-dimensional subspaces of $\mathbb{C}^{\mathrm{spl}}$ through the origin, that is the hyperbolae $\{q_{\blacktriangle}^{2}-q_{\blacktriangledown}^{2}=-1\}\cap\{q_{\blacktriangle}=sq_{\blacktriangledown}\}$ for $s$ with $s^{2}<1$, and the null asymptotic directions $q_{\blacktriangle}=\pm q_{\blacktriangledown}$ are the boundary points.
 
 **Proof.** The geodesics of the hyperboloid model are the intersections with the totally geodesic submanifolds, which are the linear subspaces; in signature $(1,1)$ a linear subspace carries a geodesic exactly when it is timelike, that is when the restriction of the form to it has signature $(1,1)$, which for a line means $s^{2}<1$.
 
@@ -90,7 +90,7 @@ and the sphere of radius $t$ about $P$ is the intersection of the hyperboloid wi
 
 ## The Boundary, the Conformal Picture and the Doubly Ruled Quadric
 
-**Proposition (the boundary of the line).** The null set of $\langle\cdot\rangle_{*}$ inside $\mathbb{D}$ is the pair of lines $q_{\blacktriangle}=\pm q_{\blacktriangledown}$, the two isotropic lines; its projectivisation is the two-point boundary of the hyperbolic line, $\partial\mathbb{H}^{1}=\mathbb{P}^{1}_{\mathbb{R}}(\mathbb{D})$, and the two points are the directions $q_{\blacktriangle}=q_{\blacktriangledown}$ and $q_{\blacktriangle}=-q_{\blacktriangledown}$.
+**Proposition (the boundary of the line).** The null set of $\langle\cdot\rangle_{*}$ inside $\mathbb{C}^{\mathrm{spl}}$ is the pair of lines $q_{\blacktriangle}=\pm q_{\blacktriangledown}$, the two isotropic lines; its projectivisation is the two-point boundary of the hyperbolic line, $\partial\mathbb{H}^{1}=\mathbb{P}^{1}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}})$, and the two points are the directions $q_{\blacktriangle}=q_{\blacktriangledown}$ and $q_{\blacktriangle}=-q_{\blacktriangledown}$.
 
 **Proof.** $q_{\blacktriangle}^{2}-q_{\blacktriangledown}^{2}=0$ gives $q_{\blacktriangle}=\pm q_{\blacktriangledown}$; each is a real line of the algebra, hence a point in the projective space; those are the two points at infinity of the two branches.
 
@@ -110,7 +110,7 @@ and the sphere of radius $t$ about $P$ is the intersection of the hyperboloid wi
 
 **Proof.** The condition $p\bar q=1$ is solved by the polar pair $(\exp(i\theta),r^{-1}\exp(i\theta))$, and the multiplication by such an element acts diagonally in the idempotent coordinates, hence by the displayed matrices on the invariant planes; the classification of an isometry of an indefinite form is by the vanishing of the two invariants, the modulus and the argument, and in the plane $\mathbb{R}\{1,j\}$ of signature $(1,1)$ the identity component of $O(1,1)$ is one-dimensional and consists of the boosts.
 
-**Remark (what the algebra does not reach).** The hyperbolic line's isometry group $O(1,1)$ is reached by the subalgebra $\mathbb{D}$ itself, but the hyperbolic plane's isometry group $O(2,1)$ is not reached by any subspace: the multiplication by an element preserves a three-space of signature $(2,1)$ only when the element is $\pm1$, because preservation would force the second idempotent-free coefficient of the multiplier to vanish and the first to be a real scalar, which then acts as a similitude and is an isometry only for $\pm1$.
+**Remark (what the algebra does not reach).** The hyperbolic line's isometry group $O(1,1)$ is reached by the subalgebra $\mathbb{C}^{\mathrm{spl}}$ itself, but the hyperbolic plane's isometry group $O(2,1)$ is not reached by any subspace: the multiplication by an element preserves a three-space of signature $(2,1)$ only when the element is $\pm1$, because preservation would force the second idempotent-free coefficient of the multiplier to vanish and the first to be a real scalar, which then acts as a similitude and is an isometry only for $\pm1$.
 
 ## The Signature-$(2,1)$ Subspaces and Why No Hyperbolic Plane Is Carried
 
@@ -124,7 +124,7 @@ and the sphere of radius $t$ about $P$ is the intersection of the hyperboloid wi
 
 ## Comparison with the Sibling Cases
 
-**Remark (split-complex, split-biquaternion, biquaternion).** The split-complex numbers are the subalgebra $\mathbb{D}$ itself, so the hyperbolic line of this article is the classical hyperbolic line of *Hyperbolic Geometry*. In the split-biquaternion algebra the anti-Hermitian subspace is four-real-dimensional of signature $(1,3)$, and its level set of the Hermitian norm is a hyperboloid of three sheets, the hyperbolic three-space of *Split-Biquaternions and Hyperbolic Geometry*, with isometry group the restricted Lorentz group. In the biquaternion algebra the same construction gives hyperbolic three-space through the Hermitian matrices and $SL_{2}(\mathbb{C})$. The reduced biquaternion algebra is the case in which the Hermitian form has signature $(2,2)$, the anti-invariant subspaces have signature $(1,1)$, and the hyperbolic geometry is therefore the hyperbolic line and not the hyperbolic three-space: the dimension drops by two.
+**Remark (split-complex, split-biquaternion, biquaternion).** The split-complex numbers are the subalgebra $\mathbb{C}^{\mathrm{spl}}$ itself, so the hyperbolic line of this article is the classical hyperbolic line of *Hyperbolic Geometry*. In the split-biquaternion algebra the anti-Hermitian subspace is four-real-dimensional of signature $(1,3)$, and its level set of the Hermitian norm is a hyperboloid of three sheets, the hyperbolic three-space of *Split-Biquaternions and Hyperbolic Geometry*, with isometry group the restricted Lorentz group. In the biquaternion algebra the same construction gives hyperbolic three-space through the Hermitian matrices and $SL_{2}(\mathbb{C})$. The reduced biquaternion algebra is the case in which the Hermitian form has signature $(2,2)$, the anti-invariant subspaces have signature $(1,1)$, and the hyperbolic geometry is therefore the hyperbolic line and not the hyperbolic three-space: the dimension drops by two.
 
 ## Summary
 
@@ -136,9 +136,9 @@ The indefinite form of the reduced biquaternion algebra, $\langle\cdot\rangle_{*
 |---|---|
 | $\langle \breve Q\rangle_{*}=\lvert Q_{\blacktriangle}\rvert^{2}-\lvert Q_{\blacktriangledown}\rvert^{2}$ | the indefinite form, of signature $(2,2)$ on the algebra |
 | $\langle \breve Q_{1},\breve Q_{2}\rangle_{*}=\mathrm{Sc}(\breve Q_{1}\breve Q_{2}^{*})=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}-Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown}$ | its sesquilinear pairing |
-| $\mathbb{D}=\mathbb{R}\{1,j\}$ | the split-complex subalgebra, $j^{2}=1$ |
-| $i\mathbb{D}=\mathbb{R}\{i,ij\}$ | the second split-complex subalgebra |
-| $\{\langle\breve Q\rangle_{*}=-1\}$ in $\mathbb{D}$ | the hyperbola, the hyperbolic line |
+| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\{1,j\}$ | the split-complex subalgebra, $j^{2}=1$ |
+| $i\mathbb{C}^{\mathrm{spl}}=\mathbb{R}\{i,ij\}$ | the second split-complex subalgebra |
+| $\{\langle\breve Q\rangle_{*}=-1\}$ in $\mathbb{C}^{\mathrm{spl}}$ | the hyperbola, the hyperbolic line |
 | $\cosh d(P,Q)=-\langle P,Q\rangle_{*}$ | the distance in the hyperboloid model |
 | $\exp(j\phi)=\cosh\phi+j\sinh\phi$ | the boost, a translation of the hyperbolic line |
 | $O(1,1)$ | the isometry group of the hyperbolic line, four components |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article solves the square-root problem in the split-complex algebra $\mathbb{D}$: given $Q\in\mathbb{D}$, find every $\Xi\in\mathbb{D}$ with
+This article solves the square-root problem in the split-complex algebra $\mathbb{C}^{\mathrm{spl}}$: given $Q\in\mathbb{C}^{\mathrm{spl}}$, find every $\Xi\in\mathbb{C}^{\mathrm{spl}}$ with
 
 $$
 \Xi^{2}=Q .
@@ -28,7 +28,7 @@ The article is algebraic. The two central values are recovered in §*The Three C
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked.
 
-Throughout, the algebra is $\mathbb{D}=\mathbb{R}[j]$, $j^{2}=+1$, a general element is $Q=q+jq'$, the conjugation is $\bar Q=q-jq'$, and the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, with idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ and $Q_{\pm}=q\pm q'$. A root is written $\Xi=x+jx'$, with idempotent coordinates $\Xi_{\pm}=x\pm x'$.
+Throughout, the algebra is $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, a general element is $Q=q+jq'$, the conjugation is $\bar Q=q-jq'$, and the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, with idempotent coordinates $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ and $Q_{\pm}=q\pm q'$. A root is written $\Xi=x+jx'$, with idempotent coordinates $\Xi_{\pm}=x\pm x'$.
 
 The equation $\Xi^{2}=Q$ names a product, so the root is relative to it. The plain square $\Xi\Xi$ and the general definition with the roots of a central value are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; throughout this article the square is the one of the general plain bilinear product $\Xi\Xi$, the multiplication of the split-complex algebra, and the other product of the space and its root problem are *Relations and Comparison Between the Two Products of the Split-Complexoid Space*.
 
@@ -254,7 +254,7 @@ The three central values give the cardinalities $4,1,0$: four roots of $+1$, the
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | Split complex algebra |
+| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
 | $Q=q+jq'$ | Radicand |
 | $\Xi=x+jx'$ | Root |
 | $Q_{\pm}=q\pm q'$ | Idempotent coordinates of the radicand |

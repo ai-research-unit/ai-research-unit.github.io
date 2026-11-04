@@ -5,7 +5,7 @@
 
 This article studies the split-biquaternion norm of the algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the four forms and the four norms of the layer — the plain, the quaternionic, the Hermitian and the Krein — to establish the criterion for invertibility, and to describe the group of units. The split-biquaternion norm is the quaternionic norm of the layer, and it is the one that decides invertibility.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}^{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
 
 Throughout, a split biquaternion is written
 
@@ -45,7 +45,7 @@ where $\tilde{Q}^{\natural}$ is the quaternion conjugate.
 
 **Basic properties.**
 
-- $\langle\tilde{Q}\rangle_{\natural}$ is a split complex number in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ or in the imaginary translate $j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and outside their union it need not be real.
+- $\langle\tilde{Q}\rangle_{\natural}$ is a split complex number in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ or in the imaginary translate $j \mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$, and outside their union it need not be real.
 - $\langle\tilde{Q}\rangle_{\natural}$ is **anisotropic**: it vanishes only when $\tilde{Q} = 0$, so the split-biquaternion norm does not by itself detect the zero divisors. Those are described by the idempotent criterion below, and are studied in the article on split biquaternion zero divisors.
 - $\langle\tilde{Q}\rangle_{\natural}$ is invariant under quaternion conjugation: $\langle\tilde{Q}^{\natural}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$.
 - $\langle\tilde{Q}\rangle_{\natural}$ is not invariant under split complex conjugation: $\langle\bar{\tilde{Q}}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}^*$.
@@ -83,7 +83,7 @@ $$
 \tilde{Q}_1 \langle\tilde{Q}_2\rangle_{\natural} \tilde{Q}_1^{\natural} = \langle\tilde{Q}_2\rangle_{\natural} \tilde{Q}_1 \tilde{Q}_1^{\natural} = \langle\tilde{Q}_2\rangle_{\natural} \langle\tilde{Q}_1\rangle_{\natural}.
 $$
 
-**Corollary.** If $\langle\tilde{Q}_1\rangle_{\natural}$ and $\langle\tilde{Q}_2\rangle_{\natural}$ are invertible in $\mathbb{D}$, then $\langle\tilde{Q}_1 \bullet \tilde{Q}_2\rangle_{\natural}$ is invertible in $\mathbb{D}$.
+**Corollary.** If $\langle\tilde{Q}_1\rangle_{\natural}$ and $\langle\tilde{Q}_2\rangle_{\natural}$ are invertible in $\mathbb{C}^{\mathrm{spl}}$, then $\langle\tilde{Q}_1 \bullet \tilde{Q}_2\rangle_{\natural}$ is invertible in $\mathbb{C}^{\mathrm{spl}}$.
 
 **Corollary.** If $\langle\tilde{Q}_1\rangle_{\natural} = 0$ or $\langle\tilde{Q}_2\rangle_{\natural} = 0$, then $\langle\tilde{Q}_1 \bullet \tilde{Q}_2\rangle_{\natural} = 0$. In particular, the product of a zero divisor with any split biquaternion is either zero or a zero divisor.
 
@@ -115,15 +115,15 @@ $$
 
 In the corpus notation it is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, the quaternionic form of the layer. The **quadratic space** so defined is the split complex quadratic space of dimension $4$ whose form is anisotropic: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ forces $\tilde{Q} = 0$, since the real part of $\langle\tilde{Q}\rangle_{\natural}$ is a sum of squares of the eight real coordinates. This is the same construction as in the biquaternion case, with the split complex algebra in place of the complex field and $j^2 = +1$ in place of $i^2 = -1$.
 
-**Proposition.** The polarisation $\langle\cdot,\cdot\rangle_{\natural}$ is $\mathbb{D}$-bilinear, symmetric and non-degenerate, and the unit basis is orthonormal:
+**Proposition.** The polarisation $\langle\cdot,\cdot\rangle_{\natural}$ is $\mathbb{C}^{\mathrm{spl}}$-bilinear, symmetric and non-degenerate, and the unit basis is orthonormal:
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \tfrac{1}{2}\left(\tilde Q_1 \tilde Q_2^{\natural} + \tilde Q_2 \tilde Q_1^{\natural}\right), \qquad \langle e_\mu, e_\nu\rangle_{\natural} = \delta_{\mu\nu}.
 $$
 
-**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $\langle e_\mu, e_\nu\rangle_{\natural} = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $\langle e_\mu, e_\mu\rangle_{\natural} = e_t$ is a unit of $\mathbb{D}$.
+**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $\langle e_\mu, e_\nu\rangle_{\natural} = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $\langle e_\mu, e_\mu\rangle_{\natural} = e_t$ is a unit of $\mathbb{C}^{\mathrm{spl}}$.
 
-**Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $\langle\cdot\rangle_{\natural}$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $\langle\cdot,\cdot\rangle_{\natural}$ is the honest $\mathbb{D}$-valued bilinear form and not a trace form.
+**Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $\langle\cdot\rangle_{\natural}$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $\langle\cdot,\cdot\rangle_{\natural}$ is the honest $\mathbb{C}^{\mathrm{spl}}$-valued bilinear form and not a trace form.
 
 ### The Real Forms and Their Signatures
 
@@ -141,12 +141,12 @@ For the two split-complex-valued norms the table gives the real part and its sig
 
 | Subspace | Condition | $\langle\cdot\rangle$ | $\langle\cdot\rangle_{\natural}$ | $\langle\cdot\rangle_{*}$ | $\langle\cdot\rangle_{\natural*}$ |
 |---|---|---|---|---|---|
-| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $Q_x=Q_y=Q_z=0$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 - q'^2_t$ $(1,1)$ | $q_t^2 - q'^2_t$ $(1,1)$ |
-| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $q'_\mu = 0$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ |
+| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ | $Q_x=Q_y=Q_z=0$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 + q'^2_t$ $(2,0)$ | $q_t^2 - q'^2_t$ $(1,1)$ | $q_t^2 - q'^2_t$ $(1,1)$ |
+| $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ | $q'_\mu = 0$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $\sum_\mu q_\mu^2$ $(4,0)$ | $q_t^2 - \sum_k q_k^2$ $(1,3)$ |
 | $\mathbb{M}_+$ | $q'_t = 0$, $q_k = 0$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ |
 | $\mathbb{M}_-$ | $q_t = 0$, $q'_k = 0$ | $q'^2_t - \sum_k q_k^2$ $(1,3)$ | $q'^2_t + \sum_k q_k^2$ $(4,0)$ | $-q'^2_t + \sum_k q_k^2$ $(3,1)$ | $-q'^2_t - \sum_k q_k^2$ $(0,4)$ |
 
-On the centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of signature $(4,0)$, the plain norm is Lorentzian of signature $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, while the Krein form is $(4,0)$ on $\mathbb{M}_+$ and $(0,4)$ on $\mathbb{M}_-$.
+On the centre $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of signature $(4,0)$, the plain norm is Lorentzian of signature $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{M}_+$ and $(3,1)$ on $\mathbb{M}_-$, while the Krein form is $(4,0)$ on $\mathbb{M}_+$ and $(0,4)$ on $\mathbb{M}_-$.
 
 ## The Hermitian and Krein Forms
 
@@ -163,7 +163,7 @@ where $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ is the Hermitian conjugate
 **Basic properties.**
 
 - The norm $\langle\tilde Q\rangle_{*}$ is real, the difference between the sum of the squares of the real parts and the sum of the squares of the split parts; the full product $\tilde{Q} \tilde{Q}^{*}$ need not be real.
-- The norm is **not positive-definite**: it can be positive, negative, or zero. Its signature is $(4, 4)$ on the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$.
+- The norm is **not positive-definite**: it can be positive, negative, or zero. Its signature is $(4, 4)$ on the eight-dimensional real space $\mathbb{B}^{\mathrm{spl}}$.
 - The product $\tilde{Q} \tilde{Q}^{*}$ vanishes exactly when one of the idempotent components vanishes, that is on the union of two four-dimensional subspaces; the norm vanishes on the quadric hypersurface $\sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu$, of dimension $7$.
 - It is **not multiplicative**: neither $\tilde{Q} \tilde{Q}^{*}$ nor $\langle\tilde Q\rangle_{*}$ satisfies a product formula.
 
@@ -184,7 +184,7 @@ $$
 \sum_{\mu\in\{t,x,y,z\}} q_\mu^2 = \sum_{\mu\in\{t,x,y,z\}} q'^2_\mu.
 $$
 
-This is a quadric hypersurface of dimension $7$ in $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$, the analogue of the null cone of a Lorentzian four-space, with signature $(4, 4)$ instead of $(1, 3)$.
+This is a quadric hypersurface of dimension $7$ in $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{R}^8$, the analogue of the null cone of a Lorentzian four-space, with signature $(4, 4)$ instead of $(1, 3)$.
 
 ### The Hermitian Pairing
 
@@ -235,7 +235,7 @@ The four forms are one pattern, $\langle X_1,X_2\rangle_{\sigma_1\sigma_2}=\math
 | Hermitian | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | $\langle\tilde Q\rangle_{*}$ | $\sum_\mu Q_\mu\bar Q_\mu$ |
 | Krein | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | $\langle\tilde Q\rangle_{\natural*}$ | $Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ |
 
-The plain and the quaternionic norms are split complex-valued; the Hermitian and the Krein norms are real of signature $(4,4)$. **Only the quaternionic norm is multiplicative**, and it is the split-biquaternion norm: it is anisotropic, vanishes only at the origin, and its value being a unit of $\mathbb{D}$ is the invertibility criterion. The plain norm is the scalar part of the plain product and is not multiplicative. The Hermitian and the Krein norms are neither multiplicative nor anisotropic. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form does not control the topological structure either; the Euclidean norm, defined separately, does.
+The plain and the quaternionic norms are split complex-valued; the Hermitian and the Krein norms are real of signature $(4,4)$. **Only the quaternionic norm is multiplicative**, and it is the split-biquaternion norm: it is anisotropic, vanishes only at the origin, and its value being a unit of $\mathbb{C}^{\mathrm{spl}}$ is the invertibility criterion. The plain norm is the scalar part of the plain product and is not multiplicative. The Hermitian and the Krein norms are neither multiplicative nor anisotropic. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form does not control the topological structure either; the Euclidean norm, defined separately, does.
 
 ## The Euclidean Norm
 
@@ -247,7 +247,7 @@ $$
 \|\tilde{Q}\|_E = \sqrt{\sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 + q'^2_\mu)}.
 $$
 
-It is a genuine norm on the real vector space $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one.
+It is a genuine norm on the real vector space $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one.
 
 ### Relation to the Split-Biquaternion Norm and the Hermitian Form
 
@@ -259,7 +259,7 @@ $$
 
 which is not the Euclidean norm squared.
 
-The Euclidean norm is defined separately, and it is the ordinary Euclidean norm on the underlying real vector space. It is the Euclidean norm that defines the topology of $\mathbb{H}_{\mathbb{D}}$, the convergence of sequences, and the completeness of the algebra as a metric space.
+The Euclidean norm is defined separately, and it is the ordinary Euclidean norm on the underlying real vector space. It is the Euclidean norm that defines the topology of $\mathbb{B}^{\mathrm{spl}}$, the convergence of sequences, and the completeness of the algebra as a metric space.
 
 ### Multiplicativity
 
@@ -285,21 +285,21 @@ In a general non-commutative algebra, the notions of left inverse, right inverse
 
 ### Criterion for Invertibility
 
-**Theorem.** A split biquaternion $\tilde Q_1$ is invertible if and only if its split-biquaternion norm is invertible in $\mathbb{D}$:
+**Theorem.** A split biquaternion $\tilde Q_1$ is invertible if and only if its split-biquaternion norm is invertible in $\mathbb{C}^{\mathrm{spl}}$:
 
 $$
 \boxed{\;
-\langle\tilde Q_1\rangle_{\natural} \in \mathbb{D}^\times
+\langle\tilde Q_1\rangle_{\natural} \in {\mathbb{C}^{\mathrm{spl}}}^\times
 \;}.
 $$
 
-**Proof.** Suppose $\langle\tilde Q_1\rangle_{\natural}$ is invertible in $\mathbb{D}$. Define
+**Proof.** Suppose $\langle\tilde Q_1\rangle_{\natural}$ is invertible in $\mathbb{C}^{\mathrm{spl}}$. Define
 
 $$
 \tilde Q_2 = \tilde Q_1^{\natural} \, \langle\tilde Q_1\rangle_{\natural}^{-1}.
 $$
 
-This is legitimate because $\langle\tilde Q_1\rangle_{\natural}$ is a unit of $\mathbb{D}$: mere non-vanishing would not suffice, since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then
+This is legitimate because $\langle\tilde Q_1\rangle_{\natural}$ is a unit of $\mathbb{C}^{\mathrm{spl}}$: mere non-vanishing would not suffice, since $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then
 
 $$
 \tilde Q_1 \bullet \tilde Q_2 = \langle\tilde Q_1\rangle_{\natural} \langle\tilde Q_1\rangle_{\natural}^{-1} = e_t,
@@ -313,13 +313,13 @@ $$
 \langle\tilde Q_1\rangle_{\natural} \langle\tilde Q_1^{-1}\rangle_{\natural} = \langle e_t\rangle_{\natural} = 1,
 $$
 
-so $\langle\tilde Q_1\rangle_{\natural}$ is invertible in $\mathbb{D}$, with inverse $\langle\tilde Q_1^{-1}\rangle_{\natural}$.
+so $\langle\tilde Q_1\rangle_{\natural}$ is invertible in $\mathbb{C}^{\mathrm{spl}}$, with inverse $\langle\tilde Q_1^{-1}\rangle_{\natural}$.
 
-**Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $\langle\tilde{Q}\rangle_{\natural} \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_1$ one has $\langle\tilde{Q}\rangle_{\natural} = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde\Pi_1$ is a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $\tilde\Pi_1 \tilde\Pi_2 = 0$.
+**Remark.** The hypothesis is not simply $\tilde{Q} \neq 0$, nor $\langle\tilde{Q}\rangle_{\natural} \neq 0$, which is the same thing by anisotropy. For $\tilde{Q} = \tilde\Pi_1$ one has $\langle\tilde{Q}\rangle_{\natural} = \tilde\Pi_1$, a nonzero zero divisor of $\mathbb{C}^{\mathrm{spl}}$, and $\tilde\Pi_1$ is a zero divisor of $\mathbb{B}^{\mathrm{spl}}$, since $\tilde\Pi_1 \tilde\Pi_2 = 0$.
 
 ### The Inverse Formula
 
-When $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$, equivalently when $\tilde{Q}$ is invertible, the inverse is
+When $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{C}^{\mathrm{spl}}$, equivalently when $\tilde{Q}$ is invertible, the inverse is
 
 $$
 \tilde{Q}^{-1} = \tilde{Q}^{\natural} \, \langle\tilde{Q}\rangle_{\natural}^{-1}.
@@ -335,7 +335,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_1 + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_2.
 $$
 
-Since $\langle\tilde{Q}_\pm\rangle_{\natural}$ are non-negative real numbers, $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
+Since $\langle\tilde{Q}_\pm\rangle_{\natural}$ are non-negative real numbers, $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
 
 $$
 \langle\tilde{Q}_+\rangle_{\natural} \neq 0 \quad \text{and} \quad \langle\tilde{Q}_-\rangle_{\natural} \neq 0.
@@ -349,7 +349,7 @@ $$
 
 This is the cleanest form of the invertibility criterion. It is a **linear** condition in the idempotent basis: the element is invertible if and only if neither of its two idempotent components vanishes.
 
-**Comparison with the biquaternion case.** In the biquaternion algebra, the invertibility criterion $\langle\tilde{Q}\rangle_{\natural} \neq 0$ is a **quadratic** condition, and the zero divisor set is a complex cone of complex dimension 3 (real dimension 6). In the split biquaternion algebra, the invertibility criterion is a linear condition in the idempotent basis, and the zero divisor set is a union of two four-dimensional linear subspaces. The difference is a consequence of the fact that $\mathbb{H}_{\mathbb{D}}$ is semisimple while $\mathbb{B}$ is simple.
+**Comparison with the biquaternion case.** In the biquaternion algebra, the invertibility criterion $\langle\tilde{Q}\rangle_{\natural} \neq 0$ is a **quadratic** condition, and the zero divisor set is a complex cone of complex dimension 3 (real dimension 6). In the split biquaternion algebra, the invertibility criterion is a linear condition in the idempotent basis, and the zero divisor set is a union of two four-dimensional linear subspaces. The difference is a consequence of the fact that $\mathbb{B}^{\mathrm{spl}}$ is semisimple while $\mathbb{B}$ is simple.
 
 ### The Reduced Norm
 
@@ -359,9 +359,9 @@ $$
 \tilde{Q}^{-1} = \tilde{Q}^{\natural} \, \langle\tilde{Q}\rangle_{\natural}^{-1}
 $$
 
-requires $\langle\tilde{Q}\rangle_{\natural}$ to be invertible in $\mathbb{D}$, not merely nonzero: since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $\langle\tilde{Q}\rangle_{\natural}$ is a nonzero zero divisor of $\mathbb{D}$ and $\langle\tilde{Q}\rangle_{\natural}^{-1}$ does not exist.
+requires $\langle\tilde{Q}\rangle_{\natural}$ to be invertible in $\mathbb{C}^{\mathrm{spl}}$, not merely nonzero: since $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $\langle\tilde{Q}\rangle_{\natural}$ is a nonzero zero divisor of $\mathbb{C}^{\mathrm{spl}}$ and $\langle\tilde{Q}\rangle_{\natural}^{-1}$ does not exist.
 
-In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \langle\tilde{Q}_\pm\rangle_{\natural} \in \mathbb{R}$,
+In the idempotent basis the inverse of a unit of $\mathbb{C}^{\mathrm{spl}}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \langle\tilde{Q}_\pm\rangle_{\natural} \in \mathbb{R}$,
 
 $$
 \langle\tilde{Q}\rangle_{\natural}^{-1} = \frac{\tilde\Pi_1}{N_+} + \frac{\tilde\Pi_2}{N_-} = \frac{\langle\tilde{Q}\rangle_{\natural}^*}{\Delta(\tilde{Q})},
@@ -387,7 +387,7 @@ $$
 \tilde{Q} \text{ is invertible} \iff \Delta(\tilde{Q}) \neq 0 \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
 $$
 
-The difference from the biquaternion algebra is the field. There $\mathbb{C}$ is a field, so $\langle\tilde{Q}\rangle_{\natural} \neq 0$ is already the criterion, and the zero divisors are exactly the nonzero elements with $\langle\tilde{Q}\rangle_{\natural} = 0$. Here the split-biquaternion norm takes values in $\mathbb{D}$, which is not a field, so the criterion is the invertibility of $\langle\tilde{Q}\rangle_{\natural}$ in $\mathbb{D}$, equivalently $\Delta(\tilde{Q}) \neq 0$.
+The difference from the biquaternion algebra is the field. There $\mathbb{C}$ is a field, so $\langle\tilde{Q}\rangle_{\natural} \neq 0$ is already the criterion, and the zero divisors are exactly the nonzero elements with $\langle\tilde{Q}\rangle_{\natural} = 0$. Here the split-biquaternion norm takes values in $\mathbb{C}^{\mathrm{spl}}$, which is not a field, so the criterion is the invertibility of $\langle\tilde{Q}\rangle_{\natural}$ in $\mathbb{C}^{\mathrm{spl}}$, equivalently $\Delta(\tilde{Q}) \neq 0$.
 
 ### A Worked Element
 
@@ -397,13 +397,13 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = (1 + j)^2 + 2^2 + (1 - j)^2 + 0^2 = (2 + 2j) + 4 + (2 - 2j) = 8.
 $$
 
-Since $8 \in \mathbb{D}^\times$, the element is a unit, and
+Since $8 \in {\mathbb{C}^{\mathrm{spl}}}^\times$, the element is a unit, and
 
 $$
 \tilde{Q} \tilde{Q}^{\natural} = 8 e_t, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural} = \tfrac{1}{8}\big(1 - 2 \vec e_x - \vec e_y\big) + \tfrac{j}{8}\big(1 + \vec e_y\big).
 $$
 
-The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde\Pi_1$ one has $\langle\tilde\Pi_1\rangle_{\natural} = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-unit of $\mathbb{D}$ and so does not lie in $\mathbb{D}^\times$. In the idempotent basis $\langle\tilde{Q}_+\rangle_{\natural} = \langle\tilde{Q}_-\rangle_{\natural} = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
+The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde\Pi_1$ one has $\langle\tilde\Pi_1\rangle_{\natural} = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-unit of $\mathbb{C}^{\mathrm{spl}}$ and so does not lie in ${\mathbb{C}^{\mathrm{spl}}}^\times$. In the idempotent basis $\langle\tilde{Q}_+\rangle_{\natural} = \langle\tilde{Q}_-\rangle_{\natural} = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
 
 ### Corollaries
 
@@ -417,11 +417,11 @@ The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. 
 
 ### Definition
 
-The **group of units** of $\mathbb{H}_{\mathbb{D}}$ is the set of invertible elements:
+The **group of units** of $\mathbb{B}^{\mathrm{spl}}$ is the set of invertible elements:
 
 $$
-\mathbb{H}_{\mathbb{D}}^\times = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \langle\tilde{Q}\rangle_{\natural} \in \mathbb{D}^\times\}
-= \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \langle\tilde{Q}_+\rangle_{\natural} \neq 0 \text{ and } \langle\tilde{Q}_-\rangle_{\natural} \neq 0\}.
+{\mathbb{B}^{\mathrm{spl}}}^\times = \{\tilde{Q} \in \mathbb{B}^{\mathrm{spl}} : \langle\tilde{Q}\rangle_{\natural} \in {\mathbb{C}^{\mathrm{spl}}}^\times\}
+= \{\tilde{Q} \in \mathbb{B}^{\mathrm{spl}} : \langle\tilde{Q}_+\rangle_{\natural} \neq 0 \text{ and } \langle\tilde{Q}_-\rangle_{\natural} \neq 0\}.
 $$
 
 It is a group under multiplication, with identity $e_t$.
@@ -432,7 +432,7 @@ It is a group under multiplication, with identity $e_t$.
 
 $$
 \boxed{\;
-\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times \times \mathbb{H}^\times
+{\mathbb{B}^{\mathrm{spl}}}^\times \cong \mathbb{H}^\times \times \mathbb{H}^\times
 \;},
 $$
 
@@ -442,29 +442,29 @@ where $\mathbb{H}^\times = \mathbb{H} \setminus \{0\}$ is the group of nonzero q
 
 ### Basic Properties
 
-**Openness.** The group of units is an open subset of $\mathbb{H}_{\mathbb{D}}$ in the Euclidean topology. Indeed, the invertibility condition is that both idempotent components are nonzero, which is an open condition.
+**Openness.** The group of units is an open subset of $\mathbb{B}^{\mathrm{spl}}$ in the Euclidean topology. Indeed, the invertibility condition is that both idempotent components are nonzero, which is an open condition.
 
 **Non-compactness.** The group of units is not compact, because it contains the real line $\{a e_t : a \in \mathbb{R}, a \neq 0\}$, which is unbounded.
 
-**Connected components.** The group of units is connected. Indeed, in the idempotent basis, an invertible element is a pair $(\tilde{Q}_+, \tilde{Q}_-)$ with both components nonzero, and $\mathbb{H} \setminus \{0\} \cong S^3 \times (0, \infty)$ is connected; the group of units is therefore homeomorphic to $(\mathbb{H} \setminus \{0\}) \times (\mathbb{H} \setminus \{0\})$, with a single component. (The group $\mathbb{D}^\times$ of split complex scalars, by contrast, does have four components.)
+**Connected components.** The group of units is connected. Indeed, in the idempotent basis, an invertible element is a pair $(\tilde{Q}_+, \tilde{Q}_-)$ with both components nonzero, and $\mathbb{H} \setminus \{0\} \cong S^3 \times (0, \infty)$ is connected; the group of units is therefore homeomorphic to $(\mathbb{H} \setminus \{0\}) \times (\mathbb{H} \setminus \{0\})$, with a single component. (The group ${\mathbb{C}^{\mathrm{spl}}}^\times$ of split complex scalars, by contrast, does have four components.)
 
-**Centre.** The centre of $\mathbb{H}_{\mathbb{D}}^\times$ is the group of invertible split complex scalars, which is the group of units of $\mathbb{D}$:
+**Centre.** The centre of ${\mathbb{B}^{\mathrm{spl}}}^\times$ is the group of invertible split complex scalars, which is the group of units of $\mathbb{C}^{\mathrm{spl}}$:
 
 $$
-Z(\mathbb{H}_{\mathbb{D}}^\times) = \mathbb{D}^\times = \{Q_t \in \mathbb{D} : Q_t \neq 0\}.
+Z({\mathbb{B}^{\mathrm{spl}}}^\times) = {\mathbb{C}^{\mathrm{spl}}}^\times = \{Q_t \in \mathbb{C}^{\mathrm{spl}} : Q_t \neq 0\}.
 $$
 
-The group of units of $\mathbb{D}$ has four connected components, corresponding to the four sign combinations of the real and split parts.
+The group of units of $\mathbb{C}^{\mathrm{spl}}$ has four connected components, corresponding to the four sign combinations of the real and split parts.
 
 ## The Three-Way Classification
 
-Combining the criterion for invertibility with the definition of the zero element, the elements of $\mathbb{H}_{\mathbb{D}}$ are partitioned into three classes:
+Combining the criterion for invertibility with the definition of the zero element, the elements of $\mathbb{B}^{\mathrm{spl}}$ are partitioned into three classes:
 
 | Condition on $\langle\tilde{Q}\rangle_{\natural}$ | Condition on $\tilde{Q}$ | Conclusion |
 |---|---|---|
-| $\langle\tilde{Q}\rangle_{\natural} \in \mathbb{D}^\times$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
+| $\langle\tilde{Q}\rangle_{\natural} \in {\mathbb{C}^{\mathrm{spl}}}^\times$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
 | $\langle\tilde{Q}\rangle_{\natural} = 0$ | $\tilde{Q} = 0$ | $\tilde{Q}$ is the zero element |
-| $\langle\tilde{Q}\rangle_{\natural}$ a nonzero zero divisor of $\mathbb{D}$ | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
+| $\langle\tilde{Q}\rangle_{\natural}$ a nonzero zero divisor of $\mathbb{C}^{\mathrm{spl}}$ | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
 
 The zero divisors are the subject of the article on split biquaternion zero divisors.
 
@@ -472,20 +472,20 @@ The zero divisors are the subject of the article on split biquaternion zero divi
 
 By definition, a **division algebra** is an algebra in which every nonzero element is invertible. Equivalently, an algebra is a division algebra if and only if it contains no zero divisors.
 
-The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ contains zero divisors, so it is **not** a division algebra. This is in contrast to the quaternion algebra $\mathbb{H}$, which is a division algebra, and to the biquaternion algebra $\mathbb{B}$, which is also not a division algebra.
+The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}}$ contains zero divisors, so it is **not** a division algebra. This is in contrast to the quaternion algebra $\mathbb{H}$, which is a division algebra, and to the biquaternion algebra $\mathbb{B}$, which is also not a division algebra.
 
 The Frobenius theorem states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The split biquaternion algebra is a fourth finite-dimensional associative real algebra, but it is not a division algebra, because it contains zero divisors.
 
 ## Distribution of the Invertible Elements
 
-We now examine how the invertible elements are distributed among the four fixed-point subspaces of $\mathbb{H}_{\mathbb{D}}$ defined in the preceding article. The criterion is the same in all cases: an element is invertible if and only if its split-biquaternion norm is invertible in $\mathbb{D}$, equivalently if and only if both of its idempotent components are nonzero.
+We now examine how the invertible elements are distributed among the four fixed-point subspaces of $\mathbb{B}^{\mathrm{spl}}$ defined in the preceding article. The criterion is the same in all cases: an element is invertible if and only if its split-biquaternion norm is invertible in $\mathbb{C}^{\mathrm{spl}}$, equivalently if and only if both of its idempotent components are nonzero.
 
-### The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$
+### The Split Complex Subspace $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$
 
-An element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ has the form
+An element of $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ has the form
 
 $$
-\tilde{Q} = Q_t e_t, \qquad Q_t \in \mathbb{D}.
+\tilde{Q} = Q_t e_t, \qquad Q_t \in \mathbb{C}^{\mathrm{spl}}.
 $$
 
 The split-biquaternion norm is
@@ -494,13 +494,13 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = Q_t^2.
 $$
 
-Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, this vanishes only when $Q_t = 0$; the element $Q_t e_t$ is a zero divisor if and only if $Q_t$ is a zero divisor in $\mathbb{D}$, that is a nonzero multiple of $1 \pm j$, which need not be detected by $\langle\cdot\rangle_{\natural}$ vanishing. So the split complex subspace contains the zero divisors $Q_t e_t$ with $Q_t = t(1 \pm j)$ for $t \neq 0$, inherited from the split complex algebra.
+Since $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, this vanishes only when $Q_t = 0$; the element $Q_t e_t$ is a zero divisor if and only if $Q_t$ is a zero divisor in $\mathbb{C}^{\mathrm{spl}}$, that is a nonzero multiple of $1 \pm j$, which need not be detected by $\langle\cdot\rangle_{\natural}$ vanishing. So the split complex subspace contains the zero divisors $Q_t e_t$ with $Q_t = t(1 \pm j)$ for $t \neq 0$, inherited from the split complex algebra.
 
-The invertible elements of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ are those with $Q_t$ not a multiple of $1 \pm j$, i.e., with $Q_t$ invertible in $\mathbb{D}$.
+The invertible elements of $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ are those with $Q_t$ not a multiple of $1 \pm j$, i.e., with $Q_t$ invertible in $\mathbb{C}^{\mathrm{spl}}$.
 
-### The Quaternion Subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$
+### The Quaternion Subspace $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$
 
-An element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ has the form
+An element of $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ has the form
 
 $$
 \tilde{Q} = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_\mu \in \mathbb{R}.
@@ -512,7 +512,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2.
 $$
 
-This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e., if and only if $\tilde{Q} = 0$. So the quaternion subspace contains no zero divisors, and every nonzero element is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a copy of the division algebra $\mathbb{H}$.
+This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e., if and only if $\tilde{Q} = 0$. So the quaternion subspace contains no zero divisors, and every nonzero element is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ is a copy of the division algebra $\mathbb{H}$.
 
 ### The Hermitian Subspace $\mathbb{M}_+$
 
@@ -558,8 +558,8 @@ which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishe
 
 Of the four fixed-point subspaces:
 
-- $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ contains zero divisors (inherited from $\mathbb{D}$), and the invertible elements are those whose scalar part is invertible in $\mathbb{D}$.
-- $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a division algebra: every nonzero element is invertible.
+- $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ contains zero divisors (inherited from $\mathbb{C}^{\mathrm{spl}}$), and the invertible elements are those whose scalar part is invertible in $\mathbb{C}^{\mathrm{spl}}$.
+- $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ is a division algebra: every nonzero element is invertible.
 - $\mathbb{M}_+$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
 - $\mathbb{M}_-$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
 
@@ -569,7 +569,7 @@ The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \til
 
 The four forms are the plain, the quaternionic, the Hermitian and the Krein, and the four norms are their values at equal arguments. The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu Q_\mu\bar Q_\mu$ is real of signature $(4,4)$, and the Krein norm $\langle\tilde Q\rangle_{\natural*} = Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ is real of the same signature; the plain norm $Q_t^2-\sum_k Q_k^2$ is split complex-valued. Only the quaternionic norm is multiplicative. None of the four defines a Euclidean norm; the Euclidean norm is defined separately and is positive-definite but not multiplicative.
 
-The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{D}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural}$ is nonzero, equivalently if and only if both idempotent components are nonzero:
+The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{C}^{\mathrm{spl}}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural}$ is nonzero, equivalently if and only if both idempotent components are nonzero:
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -577,9 +577,9 @@ $$
 
 This is a linear condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case.
 
-The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. The group of units $\mathbb{H}_{\mathbb{D}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
+The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. The group of units ${\mathbb{B}^{\mathrm{spl}}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
 
-The algebra $\mathbb{H}_{\mathbb{D}}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, the quaternion subspace is a division algebra, the split complex subspace contains zero divisors inherited from $\mathbb{D}$, and the Hermitian and anti-Hermitian subspaces are positive-definite and contain no zero divisors.
+The algebra $\mathbb{B}^{\mathrm{spl}}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, the quaternion subspace is a division algebra, the split complex subspace contains zero divisors inherited from $\mathbb{C}^{\mathrm{spl}}$, and the Hermitian and anti-Hermitian subspaces are positive-definite and contain no zero divisors.
 
 The zero divisors themselves are studied in the article on split biquaternion zero divisors, and the roots of $-1$ are studied in the article on split biquaternion roots of minus one.
 
@@ -587,7 +587,7 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra |
+| $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternion algebra |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
 | $\tilde{Q}^{\natural}$ | Quaternion conjugate |
@@ -605,12 +605,12 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
 | $\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |
-| $\mathbb{H}_{\mathbb{D}}^\times$ | Group of units |
+| ${\mathbb{B}^{\mathrm{spl}}}^\times$ | Group of units |
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
 | $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
-| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Split complex subspace |
-| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace |
+| $\mathbb{C}^{\mathrm{spl}}_{\mathbb{B}^{\mathrm{spl}}}$ | Split complex subspace |
+| $\mathbb{H}_{\mathbb{B}^{\mathrm{spl}}}$ | Quaternion subspace |
 | $\mathbb{M}_+$ | Hermitian subspace |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace |
 

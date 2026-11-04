@@ -88,22 +88,22 @@ is the unique doubly degenerate point. The origin is the only non-unit of $\math
 
 ## The Place among the Eight Algebras
 
-The eight algebras are $\mathbb R$, $\mathbb C$, $\mathbb D$, $\mathbb D'$, $\mathbb H$, $\mathbb H_{\mathrm{s}}$, $\mathbb B$ and $\mathbb H_{\mathbb D}$. The table records the two conditions; for $\mathbb H_{\mathbb D}$ the norm is split-complex valued and the spectral column is read on the two quaternion factors.
+The eight algebras are $\mathbb R$, $\mathbb C$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$, $\mathbb H$, $\mathbb{H}^{\mathrm{spl}}$, $\mathbb B$ and $\mathbb{B}^{\mathrm{spl}}$. The table records the two conditions; for $\mathbb{B}^{\mathrm{spl}}$ the norm is split-complex valued and the spectral column is read on the two quaternion factors.
 
 | algebra | norm | norm-degenerate | spectrally degenerate | $\Sigma_{01}$ |
 |---|---|---|---|---|
 | $\mathbb R$ | $a^2$ | $\{0\}$ | all | $\varnothing$ |
 | $\mathbb C$ | $a^2+b^2$ | $\{0\}$ | real axis | $\varnothing$ |
-| $\mathbb D$ | $a^2-b^2$ | $a=\pm b$ | real axis | nonempty |
-| $\mathbb D'$ | $a^2$ | imaginary axis | all | $\varnothing$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | $a^2-b^2$ | $a=\pm b$ | real axis | nonempty |
+| $\mathbb{C}^{\mathrm{dua}}$ | $a^2$ | imaginary axis | all | $\varnothing$ |
 | $\mathbb H$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $\{0\}$ | real axis | $\varnothing$ |
-| $\mathbb H_{\mathrm{s}}$ | $q_t^2+q_x^2-q_y^2-q_z^2$ | null cone | isotropic cone of $\vec q$ | nonempty |
+| $\mathbb{H}^{\mathrm{spl}}$ | $q_t^2+q_x^2-q_y^2-q_z^2$ | null cone | isotropic cone of $\vec q$ | nonempty |
 | $\mathbb B$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ (complex) | null cone | $Q_x^2+Q_y^2+Q_z^2=0$ | nonempty |
-| $\mathbb H_{\mathbb D}$ | split-complex valued, anisotropic | $\{0\}$ | read on the factors | — |
+| $\mathbb{B}^{\mathrm{spl}}$ | split-complex valued, anisotropic | $\{0\}$ | read on the factors | — |
 
-**Theorem (the place of $\mathbb H$).** Among the eight, $\mathbb H$ is the only noncommutative division algebra, the only one whose norm is positive definite and whose spectral form has rank three. It is one of the four rows with $\Sigma_{01}=\varnothing$, the others being $\mathbb R$, $\mathbb C$ and $\mathbb D'$. The three rows with $\Sigma_{01}\ne\varnothing$ are $\mathbb D$, $\mathbb H_{\mathrm{s}}$ and $\mathbb B$.
+**Theorem (the place of $\mathbb H$).** Among the eight, $\mathbb H$ is the only noncommutative division algebra, the only one whose norm is positive definite and whose spectral form has rank three. It is one of the four rows with $\Sigma_{01}=\varnothing$, the others being $\mathbb R$, $\mathbb C$ and $\mathbb{C}^{\mathrm{dua}}$. The three rows with $\Sigma_{01}\ne\varnothing$ are $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{H}^{\mathrm{spl}}$ and $\mathbb B$.
 
-*Proof.* The norms and signatures are those of [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html). The emptiness of $\Sigma_{01}$ in $\mathbb H$ is the implication of the previous section; in $\mathbb R$, $\mathbb C$ and $\mathbb D'$ it follows from the table. The nonemptiness in $\mathbb D$ is witnessed by $1+j$, with norm $0$ and eigenvalues $2,0$; in $\mathbb H_{\mathrm{s}}$ by $1+\vec e_y$, with norm $0$ and $\vec q^2=+1$; in $\mathbb B$ by $1+i\vec e_x$, with norm $0$ and $B^2=-1$.
+*Proof.* The norms and signatures are those of [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html). The emptiness of $\Sigma_{01}$ in $\mathbb H$ is the implication of the previous section; in $\mathbb R$, $\mathbb C$ and $\mathbb{C}^{\mathrm{dua}}$ it follows from the table. The nonemptiness in $\mathbb{C}^{\mathrm{spl}}$ is witnessed by $1+j$, with norm $0$ and eigenvalues $2,0$; in $\mathbb{H}^{\mathrm{spl}}$ by $1+\vec e_y$, with norm $0$ and $\vec q^2=+1$; in $\mathbb B$ by $1+i\vec e_x$, with norm $0$ and $B^2=-1$.
 
 ## The Chain of Invariants
 
@@ -123,7 +123,7 @@ The partition, its dimensions and its closures are the subject of [The Three Sec
 
 The quaternion norm $q_t^2+s^2$ and the spectral form $s^2$ are independent quadratic forms: neither is proportional to the other, and neither determines the other. The norm is positive definite with radical $\{0\}$; the spectral form is positive semidefinite of rank three with radical the real axis. Hence the norm-degenerate set is $\{0\}$ and the spectral-degenerate set is $\mathbb R$, with $\{0\}\subsetneq\mathbb R$. The real axis minus the origin is exactly the set of norm-regular, spectrally degenerate elements; these are the nonzero real scalars, all units and all semisimple. The origin is the only doubly degenerate point, the only non-unit and the only element of the norm-degenerate set, which contains no zero divisor.
 
-Among the eight, $\mathbb H$ is the only noncommutative division algebra with both forms positive definite. The cell $\Sigma_{01}$ is empty for $\mathbb R,\mathbb C,\mathbb D',\mathbb H$ and nonempty for $\mathbb D,\mathbb H_{\mathrm{s}},\mathbb B$. The chain
+Among the eight, $\mathbb H$ is the only noncommutative division algebra with both forms positive definite. The cell $\Sigma_{01}$ is empty for $\mathbb R,\mathbb C,\mathbb{C}^{\mathrm{dua}},\mathbb H$ and nonempty for $\mathbb{C}^{\mathrm{spl}},\mathbb{H}^{\mathrm{spl}},\mathbb B$. The chain
 $$\tilde q=0\iff|\tilde q|^2=0\implies s^2=0\iff\tilde q\in\mathbb R$$
 has one strict implication, whose failure is $\mathbb R^\times$.
 
@@ -139,8 +139,8 @@ has one strict implication, whose failure is $\mathbb R^\times$.
 | $\Sigma_{10}=\mathbb R^\times$ | norm-regular, spectrally degenerate |
 | $\Sigma_{00}=\{0\}$ | doubly degenerate |
 | $\Sigma_{01}=\varnothing$ | norm-degenerate, spectrally regular |
-| $\mathbb D,\mathbb D'$ | split-complex and dual numbers |
-| $\mathbb H_{\mathrm{s}},\mathbb B,\mathbb H_{\mathbb D}$ | split-quaternion, biquaternion, split-biquaternion algebras |
+| $\mathbb{C}^{\mathrm{spl}},\mathbb{C}^{\mathrm{dua}}$ | split-complex and dual numbers |
+| $\mathbb{H}^{\mathrm{spl}},\mathbb B,\mathbb{B}^{\mathrm{spl}}$ | split-quaternion, biquaternion, split-biquaternion algebras |
 
 ## Further Reading
 

@@ -223,24 +223,24 @@ $$
 \mathrm{Cl}(\mathbb{R}, 0) \cong \mathbb{R}[\varepsilon]/(\varepsilon^2), \qquad \varepsilon^2 = 0,
 $$
 
-which is the algebra of **dual numbers** $\mathbb{D}'$. This is the one-dimensional degenerate Clifford algebra, and its unit $\varepsilon$ is the radical generator; the algebra is local with maximal ideal $(\varepsilon)$, and it is the smallest example of a Clifford algebra with a nonzero radical. It is recorded in the number-system dictionary of the companion entry with this article.
+which is the algebra of **dual numbers** $\mathbb{C}^{\mathrm{dua}}$. This is the one-dimensional degenerate Clifford algebra, and its unit $\varepsilon$ is the radical generator; the algebra is local with maximal ideal $(\varepsilon)$, and it is the smallest example of a Clifford algebra with a nonzero radical. It is recorded in the number-system dictionary of the companion entry with this article.
 
 ### A Degenerate Form in Two Variables
 
-Let $V = \mathbb{R}^2$ with $\mathfrak{Q}(x, y) = x^2$. The polar form is $B((x, y), (x', y')) = xx'$, whose kernel is the line $\{(0, y)\} = \operatorname{rad}(q)$; a complement is the line spanned by $e_1$ with $\bar{q}(e_1) = 1$, so $\mathrm{Cl}(W, \bar{q}) \cong \mathbb{R}[t]/(t^2 - 1) \cong \mathbb{R}\times\mathbb{R}$, the split complex algebra $\mathbb{D}$. Write $e$ for the generator of the complement, $e^2 = 1$, and $\varepsilon$ for the generator of the radical, $\varepsilon^2 = 0$. The decomposition is
+Let $V = \mathbb{R}^2$ with $\mathfrak{Q}(x, y) = x^2$. The polar form is $B((x, y), (x', y')) = xx'$, whose kernel is the line $\{(0, y)\} = \operatorname{rad}(q)$; a complement is the line spanned by $e_1$ with $\bar{q}(e_1) = 1$, so $\mathrm{Cl}(W, \bar{q}) \cong \mathbb{R}[t]/(t^2 - 1) \cong \mathbb{R}\times\mathbb{R}$, the split complex algebra $\mathbb{C}^{\mathrm{spl}}$. Write $e$ for the generator of the complement, $e^2 = 1$, and $\varepsilon$ for the generator of the radical, $\varepsilon^2 = 0$. The decomposition is
 
 $$
-\mathrm{Cl}(\mathbb{R}^2, x^2) \cong \mathbb{D}\,\hat{\otimes}\,\Lambda(\mathbb{R}), \qquad e^2 = 1, \quad \varepsilon^2 = 0, \quad e\varepsilon = -\varepsilon e,
+\mathrm{Cl}(\mathbb{R}^2, x^2) \cong \mathbb{C}^{\mathrm{spl}}\,\hat{\otimes}\,\Lambda(\mathbb{R}), \qquad e^2 = 1, \quad \varepsilon^2 = 0, \quad e\varepsilon = -\varepsilon e,
 $$
 
-a four-dimensional algebra. The grading of $\mathbb{D}$ is nontrivial — its generator $e$ is odd — so the graded tensor product is not the ordinary tensor product, and the algebra is not the product of two copies of $\mathbb{R}[\varepsilon]/(\varepsilon^2)$: the idempotents $(1 \pm e)/2$ are not central, since $e\varepsilon = -\varepsilon e$, and the centre is only $\mathbb{R}$. The radical generator spans the nonzero nilpotent ideal $\mathrm{N} = \operatorname{span}\{\varepsilon, e\varepsilon\}$ with $\mathrm{N}^2 = 0$, and the reduced form is the one-dimensional form of square $+1$, in agreement with the rank count $2^2 = 4$.
+a four-dimensional algebra. The grading of $\mathbb{C}^{\mathrm{spl}}$ is nontrivial — its generator $e$ is odd — so the graded tensor product is not the ordinary tensor product, and the algebra is not the product of two copies of $\mathbb{R}[\varepsilon]/(\varepsilon^2)$: the idempotents $(1 \pm e)/2$ are not central, since $e\varepsilon = -\varepsilon e$, and the centre is only $\mathbb{R}$. The radical generator spans the nonzero nilpotent ideal $\mathrm{N} = \operatorname{span}\{\varepsilon, e\varepsilon\}$ with $\mathrm{N}^2 = 0$, and the reduced form is the one-dimensional form of square $+1$, in agreement with the rank count $2^2 = 4$.
 
 ### A Radical of Rank Two
 
-Let $V = \mathbb{R}^3$ with $\mathfrak{Q}(x, y, z) = x^2$, so that $\operatorname{rad}(q)$ is spanned by $e_2, e_3$ and the complement $W = \langle e_1\rangle$ carries the form of square $1$, whose Clifford algebra is the split complex algebra $\mathbb{D}$. The decomposition reads
+Let $V = \mathbb{R}^3$ with $\mathfrak{Q}(x, y, z) = x^2$, so that $\operatorname{rad}(q)$ is spanned by $e_2, e_3$ and the complement $W = \langle e_1\rangle$ carries the form of square $1$, whose Clifford algebra is the split complex algebra $\mathbb{C}^{\mathrm{spl}}$. The decomposition reads
 
 $$
-\mathrm{Cl}(\mathbb{R}^3, x^2) \cong \mathbb{D} \,\hat{\otimes}\, \Lambda(\mathbb{R}^2), \qquad \text{rank } 2 \cdot 4 = 8 = 2^3,
+\mathrm{Cl}(\mathbb{R}^3, x^2) \cong \mathbb{C}^{\mathrm{spl}} \,\hat{\otimes}\, \Lambda(\mathbb{R}^2), \qquad \text{rank } 2 \cdot 4 = 8 = 2^3,
 $$
 
 with generators $e$ of square $1$ and $\varepsilon, \eta$ of square $0$, all three odd and mutually anticommuting. The nilpotent ideal has rank $6$, spanned by the elements containing a radical generator; its square is spanned by the two elements $\varepsilon\eta$ and $e\varepsilon\eta$ and is nonzero, while its cube vanishes. So the nilpotency index is $3 = r_0 + 1$, the value predicted by the theorem, and the nilpotent factor has index greater than $2$. The centre is $\Lambda^{\mathrm{ev}}(\operatorname{rad}(q)) \oplus \mathbb{R}\omega = \operatorname{span}\{1, \varepsilon\eta, e\varepsilon\eta\}$, of rank $3$, in agreement with the formula for odd $n$.
@@ -267,7 +267,7 @@ $$
 
 the graded tensor product of the Clifford algebra of the reduced non-degenerate form and the exterior algebra on the radical. It follows both from the splitting theorem for orthogonal sums and from the three families of fundamental relations among vectors of $W$ and of the radical. The isomorphism depends on the choice of complement, although different complements give isomorphic factors.
 
-The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is nilpotent in positive degree. In fact $\mathrm{N}^k = \mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ and the nilpotency index is exactly $\operatorname{rank}\operatorname{rad}(q) + 1$ when the radical is free. The radical generates a nilpotent two-sided ideal $\mathrm{N}$, the quotient by which is the non-degenerate factor; over a field of characteristic not $2$, $\mathrm{N}$ is the Jacobson radical and $\mathrm{Cl}(V, \mathfrak{Q})$ is semisimple if and only if $q$ is non-degenerate. The **centre** is the even part of the exterior algebra on the radical, of rank $2^{r_0 - 1}$ for $r_0 \geq 1$, together with the span of the volume element when $n$ is odd, which reduces to the classical $R$ or $R \oplus R\omega$ when the radical vanishes. The **rank** of the algebra is $2^n$ whether or not the form is degenerate, since the dimension lost by the reduced form is recovered by the exterior factor. The extreme case is the zero form, for which $\mathrm{Cl}(V, 0) = \Lambda(V)$; the one-dimensional case is the algebra of dual numbers $\mathbb{D}'$.
+The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is nilpotent in positive degree. In fact $\mathrm{N}^k = \mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ and the nilpotency index is exactly $\operatorname{rank}\operatorname{rad}(q) + 1$ when the radical is free. The radical generates a nilpotent two-sided ideal $\mathrm{N}$, the quotient by which is the non-degenerate factor; over a field of characteristic not $2$, $\mathrm{N}$ is the Jacobson radical and $\mathrm{Cl}(V, \mathfrak{Q})$ is semisimple if and only if $q$ is non-degenerate. The **centre** is the even part of the exterior algebra on the radical, of rank $2^{r_0 - 1}$ for $r_0 \geq 1$, together with the span of the volume element when $n$ is odd, which reduces to the classical $R$ or $R \oplus R\omega$ when the radical vanishes. The **rank** of the algebra is $2^n$ whether or not the form is degenerate, since the dimension lost by the reduced form is recovered by the exterior factor. The extreme case is the zero form, for which $\mathrm{Cl}(V, 0) = \Lambda(V)$; the one-dimensional case is the algebra of dual numbers $\mathbb{C}^{\mathrm{dua}}$.
 
 ## Summary of Notation
 
@@ -291,8 +291,8 @@ The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is
 | $M_2(\mathbb{R})$ | $2 \times 2$ real matrices, $\mathrm{Cl}$ of the hyperbolic plane |
 | $\omega$ | Volume element $e_1 \cdots e_n$ of an orthogonal basis of $V$, central when $n$ is odd |
 | $\omega_W$, $\omega_{\operatorname{rad}}$ | Volume elements of the reduced factor and of the radical |
-| $\mathbb{D}'$ | Dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
-| $\mathbb{D}$ | Split complex numbers, $\mathbb{R}[t]/(t^2-1)$ |
+| $\mathbb{C}^{\mathrm{dua}}$ | Dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | Split complex numbers, $\mathbb{R}[t]/(t^2-1)$ |
 | $\mathbb{R}$ | Real numbers |
 
 

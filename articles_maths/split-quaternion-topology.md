@@ -3,21 +3,21 @@
 
 ## Introduction
 
-The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is a four-dimensional real vector space with an indefinite norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$. Its topology is therefore simple wherever it is the topology of the underlying vector space, and interesting only where the split-quaternion norm cuts out the group of units, the norm-one group and the null cone. This article collects those topological facts: the contractibility of the algebra, the two components of the group of units, the circle that the norm-one group retracts onto, the torus that is the link of the null cone, the two families of isotropic lines, and the radial structure of the algebra near the null cone.
+The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$ is a four-dimensional real vector space with an indefinite norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$. Its topology is therefore simple wherever it is the topology of the underlying vector space, and interesting only where the split-quaternion norm cuts out the group of units, the norm-one group and the null cone. This article collects those topological facts: the contractibility of the algebra, the two components of the group of units, the circle that the norm-one group retracts onto, the torus that is the link of the null cone, the two families of isotropic lines, and the radial structure of the algebra near the null cone.
 
 The article owns the topological statements of the category. It relies on *Split-Quaternion Norm and Invertibility* for the group of units, on *Split-Quaternion Exponential and Lie Group Structure* for the norm-one group and the Lorentz double cover, and on *Split-Quaternion Null Quadric and Projective Geometry* for the ruling of the null quadric. All the invariants below are standard; the signs of the indefinite form and the reality of the algebra are what distinguish the picture from the biquaternion one. No physics is invoked.
 
 ## The Underlying Space and Its Contractibility
 
-**Theorem.** As a topological space, $\mathbb{H}_{\mathrm{s}}$ is homeomorphic to $\mathbb{R}^4$ and is therefore **contractible**: $\pi_t(\mathbb{H}_{\mathrm{s}})$ is a point and $\pi_k(\mathbb{H}_{\mathrm{s}}) = 0$ for every $k \geq 1$.
+**Theorem.** As a topological space, $\mathbb{H}^{\mathrm{spl}}$ is homeomorphic to $\mathbb{R}^4$ and is therefore **contractible**: $\pi_t(\mathbb{H}^{\mathrm{spl}})$ is a point and $\pi_k(\mathbb{H}^{\mathrm{spl}}) = 0$ for every $k \geq 1$.
 
 **Proof.** The coordinate map $\tilde q \mapsto (q_t,q_x,q_y,q_z)$ is a homeomorphism onto $\mathbb{R}^4$, and the straight-line homotopy $\langle\tilde q,t\rangle_{*} = (1-t)\tilde q$ contracts the algebra to the origin.
 
-Consequently every interesting invariant of the article comes from a *deleted* set or a *level set* of $\langle\cdot\rangle_{\natural}$, not from the algebra itself. The punctured algebra $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ has the homotopy type of the Euclidean sphere $\Sigma^3$, by the radial deformation retraction $\tilde q \mapsto \tilde q/|\tilde q|_E$.
+Consequently every interesting invariant of the article comes from a *deleted* set or a *level set* of $\langle\cdot\rangle_{\natural}$, not from the algebra itself. The punctured algebra $\mathbb{H}^{\mathrm{spl}} \setminus \{0\}$ has the homotopy type of the Euclidean sphere $\Sigma^3$, by the radial deformation retraction $\tilde q \mapsto \tilde q/|\tilde q|_E$.
 
 ## The Group of Units and Its Components
 
-**Theorem.** The group of units $\mathbb{H}_{\mathrm{s}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$ has exactly two connected components, $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$. Each component deformation retracts onto its intersection with $\Sigma^3$, and each is homotopy equivalent to a circle:
+**Theorem.** The group of units ${\mathbb{H}^{\mathrm{spl}}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$ has exactly two connected components, $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$. Each component deformation retracts onto its intersection with $\Sigma^3$, and each is homotopy equivalent to a circle:
 
 $$
 \boxed{\;
@@ -25,13 +25,13 @@ $$
 \;}.
 $$
 
-Hence $\pi_t(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}/2$ and $\pi_x(\mathbb{H}_{\mathrm{s}}^\times) = \mathbb{Z}$ on each component, so $\pi_x$ of the group is free abelian of rank two.
+Hence $\pi_t({\mathbb{H}^{\mathrm{spl}}}^\times) = \mathbb{Z}/2$ and $\pi_x({\mathbb{H}^{\mathrm{spl}}}^\times) = \mathbb{Z}$ on each component, so $\pi_x$ of the group is free abelian of rank two.
 
 **Proof.** The map $\tilde q \mapsto \tilde q/|\tilde q|_E$ retracts $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ onto the set $\{\langle\tilde q\rangle_{\natural} = \pm 1\} \cap \Sigma^3$ without changing the sign of $\langle\tilde q\rangle_{\natural}$, componentwise. The component $\{\langle\tilde q\rangle_{\natural}>0\}$ retracts onto its maximal compact subgroup $SO(2)$ by the Gram–Schmidt process, and the component $\{\langle\tilde q\rangle_{\natural}<0\}$ is the coset $\vec e_y\{\langle\tilde q\rangle_{\natural}>0\}$, homeomorphic to the first. A circle has $\pi_t$ a point and $\pi_x = \mathbb{Z}$.
 
 ## The Norm-One Group
 
-**Theorem.** The norm-one group $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$ is a connected three-dimensional submanifold of $\mathbb{H}_{\mathrm{s}}$, diffeomorphic to $S^1 \times \mathbb{R}^2$; it deformation retracts onto its maximal compact subgroup $SO(2)$,
+**Theorem.** The norm-one group $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$ is a connected three-dimensional submanifold of $\mathbb{H}^{\mathrm{spl}}$, diffeomorphic to $S^1 \times \mathbb{R}^2$; it deformation retracts onto its maximal compact subgroup $SO(2)$,
 
 $$
 \boxed{\;
@@ -94,7 +94,7 @@ The link of the null cone and the two rulings are the same object seen twice: th
 Every nonzero split-quaternion has the radial decomposition $\tilde q = \rho\, \tilde u$ with $\rho = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0$ and $\tilde u$ a unit of norm $\pm 1$. The map
 
 $$
-\mathbb{H}_{\mathrm{s}} \setminus \{0\} \longrightarrow \mathbb{R}_{>0} \times \{\, \tilde u : \langle \tilde u\rangle_{\natural} = \pm 1 \,\}, \qquad \tilde q \mapsto (\rho, \tilde q/\rho),
+\mathbb{H}^{\mathrm{spl}} \setminus \{0\} \longrightarrow \mathbb{R}_{>0} \times \{\, \tilde u : \langle \tilde u\rangle_{\natural} = \pm 1 \,\}, \qquad \tilde q \mapsto (\rho, \tilde q/\rho),
 $$
 
 is a homeomorphism, and the second factor is the two-sheeted unit slice of *Split-Quaternion Norm and Invertibility*.
@@ -107,7 +107,7 @@ The unit slice of the second factor has two connected components, $\{\langle\til
 
 ## Comparison with the Topology of $\mathbb{B}$
 
-The biquaternion article *The Topology of the Zero-Divisor Cone* treats the eight-dimensional algebra $\mathbb{B}$, its Euclidean unit sphere $S^7$, the null cone of the complex quadratic form and the reality conditions on the pure biquaternions. The split-quaternion picture is the four-dimensional real analogue. The algebra is $\mathbb{R}^4$ in place of $\mathbb{R}^8$, with Euclidean sphere $\Sigma^3 = S^3$ in place of $S^7$; the group of units $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ has **two** components (retracting onto two circles) where the biquaternion unit group is connected; the norm-one group retracts onto the circle $SO(2)$ with infinite cyclic fundamental group, where the biquaternion norm-one group retracts onto the simply connected $SU(2)$; and the link of the null cone is the torus $T^2$, of the same type as the biquaternion link because both come from a quadric of split type, but realised in one real dimension less. The two rulings and the two-component structure of the units are the topological shadow of the indefinite form, and its algebraic root is that no positive-definite form on $\mathbb{H}_{\mathrm{s}}$ is multiplicative (*Split-Quaternion Norm and Invertibility*, §*No Positive-Definite Multiplicative Form*), so definiteness and multiplicativity sit in two different forms; nothing biquaternion-specific — no complex structure, no Hermitian reality condition, no $S^7$ — is imported.
+The biquaternion article *The Topology of the Zero-Divisor Cone* treats the eight-dimensional algebra $\mathbb{B}$, its Euclidean unit sphere $S^7$, the null cone of the complex quadratic form and the reality conditions on the pure biquaternions. The split-quaternion picture is the four-dimensional real analogue. The algebra is $\mathbb{R}^4$ in place of $\mathbb{R}^8$, with Euclidean sphere $\Sigma^3 = S^3$ in place of $S^7$; the group of units $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ has **two** components (retracting onto two circles) where the biquaternion unit group is connected; the norm-one group retracts onto the circle $SO(2)$ with infinite cyclic fundamental group, where the biquaternion norm-one group retracts onto the simply connected $SU(2)$; and the link of the null cone is the torus $T^2$, of the same type as the biquaternion link because both come from a quadric of split type, but realised in one real dimension less. The two rulings and the two-component structure of the units are the topological shadow of the indefinite form, and its algebraic root is that no positive-definite form on $\mathbb{H}^{\mathrm{spl}}$ is multiplicative (*Split-Quaternion Norm and Invertibility*, §*No Positive-Definite Multiplicative Form*), so definiteness and multiplicativity sit in two different forms; nothing biquaternion-specific — no complex structure, no Hermitian reality condition, no $S^7$ — is imported.
 
 ## Summary
 
@@ -117,9 +117,9 @@ The split-quaternion algebra is $\mathbb{R}^4$ and is contractible, so its only 
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ | the split-quaternion algebra, contractible | *Split-Quaternion Algebra* |
+| $\mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^4$ | the split-quaternion algebra, contractible | *Split-Quaternion Algebra* |
 | $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
-| $\mathbb{H}_{\mathrm{s}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$ | the group of units, two components | this article |
+| ${\mathbb{H}^{\mathrm{spl}}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$ | the group of units, two components | this article |
 | $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$ | the norm-one group, $\simeq S^1$ | *Split-Quaternion Exponential and Lie Group Structure* |
 | $\mathcal{N} = \{\langle\tilde q\rangle_{\natural}=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |
 | $\mathcal{N} \cap \Sigma^3 = T^2$ | the link of the null cone, a torus | this article |

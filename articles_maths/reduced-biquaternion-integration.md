@@ -8,7 +8,7 @@ Throughout the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ 
 
 ## The Integral of a Reduced-Biquaternion-Valued Function
 
-**Definition.** For a domain $\Omega$ and a Bochner-measurable $f:\Omega\to\mathbb{B}_{\mathrm{r}}$, the **integral** $\int_{\Omega}f\,\mathrm{d}\mu$ is the element whose four real coordinates are the integrals of the four coordinate functions. The space $L^{1}(\Omega)$ consists of the $f$ with $\int_{\Omega}\lVert f\rVert\,\mathrm{d}\mu<\infty$, where $\lVert f\rVert=\sqrt{K(f)}$.
+**Definition.** For a domain $\Omega$ and a Bochner-measurable $f:\Omega\to\mathbb{B}^{\mathrm{red}}$, the **integral** $\int_{\Omega}f\,\mathrm{d}\mu$ is the element whose four real coordinates are the integrals of the four coordinate functions. The space $L^{1}(\Omega)$ consists of the $f$ with $\int_{\Omega}\lVert f\rVert\,\mathrm{d}\mu<\infty$, where $\lVert f\rVert=\sqrt{K(f)}$.
 
 **Theorem (linearity, additivity and the estimate).** The integral is $\mathbb{R}$-linear, additive on disjoint domains, and satisfies
 $$

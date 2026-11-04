@@ -28,7 +28,7 @@ A **division algebra** over a field $k$ is a $k$-algebra with identity in which 
 | $\mathbb{C}$ | dimension $2$; the only two-dimensional real division algebra; commutative and algebraically closed | *The Complex Numbers* |
 | $\mathbb{H}$ | dimension $4$; the only non-commutative real division algebra; a division ring but not a field | *Quaternion Algebra* |
 | Frobenius' theorem | the complete list $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ of real division algebras | *Division Algebras* |
-| Non-example: the split biquaternions $\mathbb{H}_{\mathbb{D}}$ | have zero divisors: they are $\mathbb{H}\oplus\mathbb{H}$, so not a division algebra, and they have no nonzero nilpotents | *Split-Biquaternion Algebra* |
+| Non-example: the split biquaternions $\mathbb{B}^{\mathrm{spl}}$ | have zero divisors: they are $\mathbb{H}\oplus\mathbb{H}$, so not a division algebra, and they have no nonzero nilpotents | *Split-Biquaternion Algebra* |
 | Non-example: the biquaternions $\mathbb{B}$ | have zero divisors: $\mathbb{B} \cong M_2(\mathbb{C})$ is not a division algebra | *The Biquaternion Algebra* |
 
 ## The Finite Division Rings: Wedderburn's Little Theorem
@@ -90,7 +90,7 @@ The hypotheses are not redundant: dropping associativity from Frobenius' theorem
 
 ## Summary
 
-The list gathers the division algebras and division rings of the corpus. The real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, by Frobenius' theorem, with the split biquaternions $\mathbb{H}_{\mathbb{D}}$ and the biquaternions as the non-examples that have zero divisors. The finite division rings are the finite fields, by Wedderburn's little theorem, which forces every skew field that is not a field to be infinite. The normed division algebras are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$, by Hurwitz' theorem, with the octonions recorded as a division algebra that is not a ring and the sedenions as the first system with zero divisors. The central division algebras over a general field are the division algebras $D$ with $M_n(D)$ central simple, the quaternion and cyclic algebras among them, classified up to similarity by the Brauer group with its index and exponent, and the division ring of fractions of an Ore domain is the non-commutative example that is not finite-dimensional over its centre. The non-examples — the split biquaternions $\mathbb{H}_{\mathbb{D}}$, the biquaternions, the sedenions, a quaternion algebra that splits to $M_2(F)$, the octonions as a non-ring, and the biquaternions as not central over $\mathbb{R}$ — each name the failure.
+The list gathers the division algebras and division rings of the corpus. The real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, by Frobenius' theorem, with the split biquaternions $\mathbb{B}^{\mathrm{spl}}$ and the biquaternions as the non-examples that have zero divisors. The finite division rings are the finite fields, by Wedderburn's little theorem, which forces every skew field that is not a field to be infinite. The normed division algebras are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$, by Hurwitz' theorem, with the octonions recorded as a division algebra that is not a ring and the sedenions as the first system with zero divisors. The central division algebras over a general field are the division algebras $D$ with $M_n(D)$ central simple, the quaternion and cyclic algebras among them, classified up to similarity by the Brauer group with its index and exponent, and the division ring of fractions of an Ore domain is the non-commutative example that is not finite-dimensional over its centre. The non-examples — the split biquaternions $\mathbb{B}^{\mathrm{spl}}$, the biquaternions, the sedenions, a quaternion algebra that splits to $M_2(F)$, the octonions as a non-ring, and the biquaternions as not central over $\mathbb{R}$ — each name the failure.
 
 ## Summary of Notation
 
@@ -106,7 +106,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $M_n(D)$ | matrix algebra over a division algebra |
 | $N(x)$, $x^{-1} = \bar x/N(x)$ | norm and inverse in a normed division algebra |
 | $\mathrm{CD}(A)$ | Cayley–Dickson double |
-| $\mathbb{B}$, $\mathbb{H}_{\mathbb{D}}$ | biquaternions and split biquaternions |
+| $\mathbb{B}$, $\mathbb{B}^{\mathrm{spl}}$ | biquaternions and split biquaternions |
 
 ## Further Reading
 

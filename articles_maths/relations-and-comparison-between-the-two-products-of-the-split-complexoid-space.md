@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This article collects the **relations** between the two products $Q_1Q_2$ and $Q_1\overline{Q_2}$ and the **comparison** of their laws: each of the two products determines the other through the conjugation, the conjugation and the exchange of the two slots act differently on the two, the sum and the difference of the two values are the two coordinates of one of the factors, and a short list of identities holds for the one product and fails for the other. The comparison closes with the property table of the two products and with the collapse of the four tables of the four general products onto the two tables of these two. It is where the operational difference of the two products is stated in full. It closes with the two slots the construction has on $\mathbb{D}$, whose first slot is empty, and with the two pairings and the two adjoints the two products carry.
+This article collects the **relations** between the two products $Q_1Q_2$ and $Q_1\overline{Q_2}$ and the **comparison** of their laws: each of the two products determines the other through the conjugation, the conjugation and the exchange of the two slots act differently on the two, the sum and the difference of the two values are the two coordinates of one of the factors, and a short list of identities holds for the one product and fails for the other. The comparison closes with the property table of the two products and with the collapse of the four tables of the four general products onto the two tables of these two. It is where the operational difference of the two products is stated in full. It closes with the two slots the construction has on $\mathbb{C}^{\mathrm{spl}}$, whose first slot is empty, and with the two pairings and the two adjoints the two products carry.
 
 The two products and their structures are *The Two Products of the Split-Complexoid Space*, the article preceding this one; the associator, the ternary product, the left and right multiplications, the sandwich and the commutator of the sesquilinear product are *The Sesquilinear Product of the Split-Complexoid Space*, both below this article in this category. The degree-two reading of the two products, that is the two forms and the two algebraic norms, is *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, and the products on the distinguished subspaces are *Remarkable Subspaces and the Two Products of the Split-Complexoid Space*. The only computations the article adds are the two adjoints of §*The Two Pairings and the Two Adjoints*.
 
 ## The Products Determine Each Other
 
-**Proposition (the two products are related by the bar).** For all $Q_1,Q_2\in\mathbb{D}$,
+**Proposition (the two products are related by the bar).** For all $Q_1,Q_2\in\mathbb{C}^{\mathrm{spl}}$,
 
 $$
 \boxed{\;
@@ -94,7 +94,7 @@ A short list of identities holds for the ring product, for the reason the ring i
 | alternative: $f(Q_1,f(Q_1,Q_2))=f(f(Q_1,Q_1),Q_2)$ | holds | fails | $Q_1=Q_2=j$: $-j$ against $j$ |
 | flexible: $f(f(Q_1,Q_2),Q_1)=f(Q_1,f(Q_2,Q_1))$ | holds | fails | $Q_1=j,Q_2=1$: $-1$ against $1$ |
 
-**Proof.** The ring column is the associativity, commutativity and unit of $\mathbb{D}$ under $Q_1Q_2$, together with the multiplicativity of the bar on the ring product; the two products are both $\mathbb R$-bilinear maps into $\mathbb D$, and the matrix column is the multiplicativity of $\mathsf M_2$ read on each. The sesquilinear column is the list of failures: the bar of the product is $\bar Q_1Q_2$ and not $\bar Q_1\bar Q_2$; the plain exchange conjugates the value; the element $1$ satisfies $1\overline{Q_2}=\bar Q_2$; and the associator with $Q_1=Q_2=1$, $Q_3=j$ does not vanish, so the associativity, power-associativity, alternativity and flexibility all fail on the displayed witnesses.
+**Proof.** The ring column is the associativity, commutativity and unit of $\mathbb{C}^{\mathrm{spl}}$ under $Q_1Q_2$, together with the multiplicativity of the bar on the ring product; the two products are both $\mathbb R$-bilinear maps into $\mathbb{C}^{\mathrm{spl}}$, and the matrix column is the multiplicativity of $\mathsf M_2$ read on each. The sesquilinear column is the list of failures: the bar of the product is $\bar Q_1Q_2$ and not $\bar Q_1\bar Q_2$; the plain exchange conjugates the value; the element $1$ satisfies $1\overline{Q_2}=\bar Q_2$; and the associator with $Q_1=Q_2=1$, $Q_3=j$ does not vanish, so the associativity, power-associativity, alternativity and flexibility all fail on the displayed witnesses.
 
 The single row that holds for both is the matrix row, and it holds for the trivial reason that both products are built from the algebra operations and $\mathsf M_2$ is multiplicative: each product is the image of the corresponding matrix product, $\mathsf M_2(Q_1Q_2)=\mathsf M_2(Q_1)\mathsf M_2(Q_2)$ and $\mathsf M_2(Q_1\bar Q_2)=\mathsf M_2(Q_1)\mathsf M_2(\bar Q_2)$. The failures of the sesquilinear column are all confined to the sesquilinear shape and are owned by *The Sesquilinear Product of the Split-Complexoid Space*, below this article in this category.
 
@@ -129,25 +129,25 @@ $$
 
 where $\langle\cdot\rangle_{\natural*}$ is the identity or the conjugation and the first slot carries the conjugation of the coefficient ring.
 
-**Theorem (the two settings on $\mathbb{D}$).** The coefficients of $\mathbb{D}$ are real, so the first slot is the identity and only the second switches, giving the two products of this article:
+**Theorem (the two settings on $\mathbb{C}^{\mathrm{spl}}$).** The coefficients of $\mathbb{C}^{\mathrm{spl}}$ are real, so the first slot is the identity and only the second switches, giving the two products of this article:
 
 $$
 \star_{\mathrm{id}}=Q_1Q_2, \qquad \star_{\bar{\cdot}}=Q_1\bar Q_2 .
 $$
 
-The construction with both slots alive has four settings; on $\mathbb{D}$ the first slot is empty and the four collapse two-and-two onto the ring product and the sesquilinear product.
+The construction with both slots alive has four settings; on $\mathbb{C}^{\mathrm{spl}}$ the first slot is empty and the four collapse two-and-two onto the ring product and the sesquilinear product.
 
 **Theorem (the second slot rules the composition and the form).** With $\langle\cdot,\cdot\rangle_{\natural*}=\mathrm{id}$ the product is associative, commutative and two-sidedly unital, and the form it carries is symmetric; with $\langle\cdot,\cdot\rangle_{\natural*}=\bar{\cdot}$ it is non-associative, conjugate-commutative and right-unital alone, and the form it carries is conjugate-symmetric.
 
 **Proof.** The two settings are $Q_1Q_2$ and $Q_1\bar Q_2$, and their laws are the two columns of the property table above: the first column is the ring, whose laws are *The Specificities of the Split-Complex Algebra*, and the second is the sesquilinear product of *The Sesquilinear Product of the Split-Complexoid Space*.
 
-**Remark (the empty first slot and the centre).** The first slot carries the conjugation of the coefficient ring; the coefficients of $\mathbb{D}$ are real, so that conjugation is the identity and the first slot contributes nothing. What survives of it is the centre: the real scalars are the centre of the algebra, the two products are the construction read on the centre, and the collapse of the first slot is the statement that the centre is fixed by the conjugation.
+**Remark (the empty first slot and the centre).** The first slot carries the conjugation of the coefficient ring; the coefficients of $\mathbb{C}^{\mathrm{spl}}$ are real, so that conjugation is the identity and the first slot contributes nothing. What survives of it is the centre: the real scalars are the centre of the algebra, the two products are the construction read on the centre, and the collapse of the first slot is the statement that the centre is fixed by the conjugation.
 
 ## The Collapse of the Four Tables
 
 The four general products each carry a property table, and on the split-complex space the collapse happens at the level of the tables: the settings with the conjugated first slot coincide with the plain ones, so the four tables become two.
 
-| family of the four general products | the table it carries on $\mathbb{D}$ |
+| family of the four general products | the table it carries on $\mathbb{C}^{\mathrm{spl}}$ |
 |---|---|
 | the bilinear family | the table of $Q_1Q_2$ |
 | the sesquilinear family | the table of $Q_1\overline{Q_2}$ |
@@ -164,7 +164,7 @@ $$
 \;},
 $$
 
-the first bilinear and symmetric, $\mathbb{D}$-valued with Gram matrix $[1]$ in the basis $1$, the second sesquilinear and conjugate-symmetric. Their real scalar parts are
+the first bilinear and symmetric, $\mathbb{C}^{\mathrm{spl}}$-valued with Gram matrix $[1]$ in the basis $1$, the second sesquilinear and conjugate-symmetric. Their real scalar parts are
 
 $$
 \operatorname{Sc}\langle Q_1,Q_2\rangle=q_1q_2+q'_1q'_2, \qquad \operatorname{Sc}\langle Q_1,Q_2\rangle_{*}=q_1q_2-q'_1q'_2=g(Q_1,Q_2),
@@ -174,7 +174,7 @@ and the second, the form of the Hermitian side, is of signature $(1,1)$ in the b
 
 **Proof.** The pairings are the two products followed by the scalar part, $\operatorname{Sc}(Q_1Q_2)=q_1q_2+q'_1q'_2$ and $\operatorname{Sc}(Q_1\bar Q_2)=q_1q_2-q'_1q'_2$, the first symmetric and the second conjugate-symmetric, since the $j$-part of $Q_1\bar Q_2$ changes sign under the exchange of the two arguments. The Gram values are $\langle 1,1\rangle=\langle j,j\rangle=1$ and $\langle 1,j\rangle=0$, giving $\mathrm{diag}(1,1)$ for the scalar part of $\langle\cdot,\cdot\rangle$, and $\langle 1,1\rangle_{*}=1$, $\langle j,j\rangle_{*}=-1$ and $\langle 1,j\rangle_{*}=0$, giving $\mathrm{diag}(1,-1)$, of signature $(1,1)$. The form theory, including the realification of the two forms, is *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space* and *The Hermitian Form and the Cone of the Split-Complexoid Algebra*.
 
-**Definition.** For a real-linear map $F$ the **transpose** $F^{\mathrm T}$ is defined by $\langle FX,Y\rangle=B(X,F^{\mathrm T}Y)$, and the **adjoint** $F^{\dagger}$ by $\langle FX,Y\rangle_{*}=\langle X,F^{\dagger}Y\rangle_{*}$ for a $\mathbb{D}$-linear $F$ and by $\langle FX,Y\rangle_{*}=\overline{\langle X,F^{\dagger}Y\rangle_{*}}$ for a $\bar\cdot$-semilinear $F$.
+**Definition.** For a real-linear map $F$ the **transpose** $F^{\mathrm T}$ is defined by $\langle FX,Y\rangle=B(X,F^{\mathrm T}Y)$, and the **adjoint** $F^{\dagger}$ by $\langle FX,Y\rangle_{*}=\langle X,F^{\dagger}Y\rangle_{*}$ for a $\mathbb{C}^{\mathrm{spl}}$-linear $F$ and by $\langle FX,Y\rangle_{*}=\overline{\langle X,F^{\dagger}Y\rangle_{*}}$ for a $\bar\cdot$-semilinear $F$.
 
 **Theorem (the two adjoints of the ordinary and of the sesquilinear right multiplication).** For the ordinary left multiplication $L^{\mathrm{alg}}_{Q}(X)=QX$ and the sesquilinear right multiplication $R_{Q}(X)=X\bar Q$,
 
@@ -211,7 +211,7 @@ The comparison table lists the two columns: the ring product is bilinear, symmet
 | $\mathsf M_2(Q_1Q_2)=\mathsf M_2(Q_1)\mathsf M_2(Q_2)$, $\mathsf M_2(Q_1\bar Q_2)=\mathsf M_2(Q_1)\mathsf M_2(\bar Q_2)$ | $\mathsf M_2$ carries both products |
 | $x\star_{K}y=xK(y)$ | the general product of two slots |
 | $K\in\{\mathrm{id},\bar\cdot\}$ | the switch of the second slot, the first slot being the identity |
-| $\langle Q_1,Q_2\rangle=Q_1Q_2$, $\operatorname{Sc}B=q_1q_2+q'_1q'_2$ | the bilinear pairing, $\mathbb{D}$-valued, Gram matrix $[1]$ |
+| $\langle Q_1,Q_2\rangle=Q_1Q_2$, $\operatorname{Sc}B=q_1q_2+q'_1q'_2$ | the bilinear pairing, $\mathbb{C}^{\mathrm{spl}}$-valued, Gram matrix $[1]$ |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, $\operatorname{Sc}H=q_1q_2-q'_1q'_2=g$ | the Hermitian pairing, realified signature $(1,1)$ |
 | ${}^{\mathrm T}$, ${}^{\dagger}$ | the transpose for $\langle\cdot,\cdot\rangle$ and the adjoint for $\langle\cdot,\cdot\rangle_{*}$ |
 

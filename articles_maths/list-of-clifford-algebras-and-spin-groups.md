@@ -38,7 +38,7 @@ The complex classification is periodic of period two and the real one of period 
 | complex periodicity | $\mathbb{C}\mathrm{l}_{2m} \cong M_{2^m}(\mathbb{C})$ and $\mathbb{C}\mathrm{l}_{2m+1} \cong M_{2^m}(\mathbb{C}) \times M_{2^m}(\mathbb{C})$; period two | *Bott Periodicity and the Classification*; *Spin Representations and Clifford Modules with Inner Conjugation* |
 | real periodicity | the sequence $\mathrm{Cl}_{n,m}$ is periodic of period eight in $n - m$ | *Bott Periodicity and the Classification* |
 | the periodicity algebra | $\mathrm{Cl}_{0,8} \cong \mathrm{Cl}_{8,0} \cong M_{16}(F)$ | *Bott Periodicity and the Classification* |
-| the one-, two- and three-dimensional cases | $\mathrm{Cl}_{0,1} \cong \mathbb{C}$ and $\mathrm{Cl}_{1,0} \cong \mathbb{D} = F\times F$; $\mathrm{Cl}_{0,2} \cong \mathbb{H}$; $\mathrm{Cl}_{3,0} \cong \mathbb{B} = M_2(\mathbb{C})$ | *The Low-Dimensional Classification*; *The Number Systems as Clifford Algebras* |
+| the one-, two- and three-dimensional cases | $\mathrm{Cl}_{0,1} \cong \mathbb{C}$ and $\mathrm{Cl}_{1,0} \cong \mathbb{C}^{\mathrm{spl}} = F\times F$; $\mathrm{Cl}_{0,2} \cong \mathbb{H}$; $\mathrm{Cl}_{3,0} \cong \mathbb{B} = M_2(\mathbb{C})$ | *The Low-Dimensional Classification*; *The Number Systems as Clifford Algebras* |
 | the eightfold class of a form | the division algebra $D$ of the irreducible module is read from $d = p - q \bmod 8$ | *Bott Periodicity and the Classification* |
 | the module type over $\mathbb{R}$ | the irreducible module is real for $d \equiv 0,1,2$; complex for $d \equiv 3,7$; quaternionic for $d \equiv 4,5,6$ (mod $8$) | *Real Spinors and Reality Conditions with Inner Conjugation*; *Bott Periodicity and the Classification* |
 | the dimension of the spinor module | $\dim_\mathbb{R}\Delta = k\dim_\mathbb{R}D$ from $\mathrm{Cl}_{n,m} \cong M_k(D)$, and $2^{\lfloor n/2\rfloor}$ over $\mathbb{C}$ | *Bott Periodicity and the Classification*; *Spin Representations and Clifford Modules with Inner Conjugation* |
@@ -137,7 +137,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\Delta = \Lambda^\bullet W$, $\Delta_\pm$ | the spinor module and its chiral halves |
 | $c(v)$, $\rho$, $d\rho$ | the Clifford action, the spin representation, its differential |
 | $J$, $J^2 = \pm1$ | the reality structure; real and quaternionic type |
-| $\mathbb{D}$, $\mathbb{H}$, $\mathbb{B}$, $M_k(D)$ | split complex, quaternion, biquaternion algebras; matrix algebras |
+| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{H}$, $\mathbb{B}$, $M_k(D)$ | split complex, quaternion, biquaternion algebras; matrix algebras |
 
 ## Further Reading
 

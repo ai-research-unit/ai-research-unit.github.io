@@ -4,7 +4,7 @@
 
 The reduced biquaternion algebra
 $$
-\mathbb{B}_{\mathrm r}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}
+\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}
 $$
 is commutative, associative and unital, of complex dimension two. An element is
 $$
@@ -21,11 +21,11 @@ This article studies the eigenvalue problem of $\breve Q$ and the one condition 
 
 ## The Eigenvalue Problem in Idempotent Coordinates
 
-**Definition (eigenvalue).** A complex scalar $\lambda$ is an **eigenvalue** of $\breve Q$ if $\breve Q-\lambda 1$ is not a unit of $\mathbb{B}_{\mathrm r}$. The set of eigenvalues is the **spectrum** $\sigma(\breve Q)$.
+**Definition (eigenvalue).** A complex scalar $\lambda$ is an **eigenvalue** of $\breve Q$ if $\breve Q-\lambda 1$ is not a unit of $\mathbb{B}^{\mathrm{red}}$. The set of eigenvalues is the **spectrum** $\sigma(\breve Q)$.
 
-**Definition (eigenvector and eigenspace).** A nonzero $v\in\mathbb{B}_{\mathrm r}$ is an **eigenvector** for $\lambda$ if $\breve Qv=\lambda v$. The **eigenspace** is
+**Definition (eigenvector and eigenspace).** A nonzero $v\in\mathbb{B}^{\mathrm{red}}$ is an **eigenvector** for $\lambda$ if $\breve Qv=\lambda v$. The **eigenspace** is
 $$
-E_\lambda=\{v\in\mathbb{B}_{\mathrm r}:\breve Qv=\lambda v\},
+E_\lambda=\{v\in\mathbb{B}^{\mathrm{red}}:\breve Qv=\lambda v\},
 $$
 a $\mathbb{C}$-linear subspace. The algebra is commutative, so the left and right eigenvalue problems coincide and there is only one notion of eigenvector.
 
@@ -69,7 +69,7 @@ so the product $(X-Q_+)(X-Q_-)$ annihilates $\breve Q$ because $\Pi_+\Pi_-=0$. N
 
 **Definition (defective).** An element is **defective** when its minimal polynomial has a repeated root.
 
-**Corollary (semisimplicity).** Every element of $\mathbb{B}_{\mathrm r}$ is semisimple. There are no defective elements.
+**Corollary (semisimplicity).** Every element of $\mathbb{B}^{\mathrm{red}}$ is semisimple. There are no defective elements.
 
 *Proof.* By the definition, a defective element has a minimal polynomial with a repeated root. By the theorem, every minimal polynomial is squarefree. Equivalently, the matrix of $L_{\breve Q}$ in the basis $(\Pi_+,\Pi_-)$ is diagonal, so every element is diagonalisable in its regular representation.
 
@@ -117,7 +117,7 @@ show that any spectral idempotents are forced; equivalently, $\Pi_\pm$ are the o
 $$
 E_{Q_+}=\mathbb{C}\Pi_+,\qquad E_{Q_-}=\mathbb{C}\Pi_-,
 $$
-each of complex dimension one. If $Q_+=Q_-$, then $E_{Q_+}=\mathbb{B}_{\mathrm r}$, of complex dimension two.
+each of complex dimension one. If $Q_+=Q_-$, then $E_{Q_+}=\mathbb{B}^{\mathrm{red}}$, of complex dimension two.
 
 *Proof.* Write $v=v_+\Pi_+ +v_-\Pi_-$. Then
 $$
@@ -125,7 +125,7 @@ $$
 $$
 For $\lambda=Q_+$, the equation $\breve Qv=Q_+v$ is $(Q_--Q_+)v_-\Pi_-=0$, hence $v_-=0$ when $Q_+\neq Q_-$; thus $v=v_+\Pi_+\in\mathbb{C}\Pi_+$. The other eigenvalue is the same with the signs exchanged. If $Q_+=Q_-$, then $\breve Q=Q_+1$ and every $v$ satisfies $\breve Qv=Q_+v$.
 
-**Corollary (eigenbasis).** If $Q_+\neq Q_-$, the pair $(\Pi_+,\Pi_-)$ is a $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm r}$ consisting of eigenvectors, with eigenvalues $(Q_+,Q_-)$. If $Q_+=Q_-$, every $\mathbb{C}$-basis of $\mathbb{B}_{\mathrm r}$ is an eigenbasis.
+**Corollary (eigenbasis).** If $Q_+\neq Q_-$, the pair $(\Pi_+,\Pi_-)$ is a $\mathbb{C}$-basis of $\mathbb{B}^{\mathrm{red}}$ consisting of eigenvectors, with eigenvalues $(Q_+,Q_-)$. If $Q_+=Q_-$, every $\mathbb{C}$-basis of $\mathbb{B}^{\mathrm{red}}$ is an eigenbasis.
 
 *Proof.* The idempotents $\Pi_\pm$ are nonzero, orthogonal and complete, hence linearly independent and spanning; they are eigenvectors by the theorem. In the scalar case every vector is an eigenvector.
 
@@ -145,11 +145,11 @@ $$
 p_{\breve Q}(X)=(X-Q_\blacktriangle)^{2},\qquad
 m_{\breve Q}(X)=X-Q_\blacktriangle.
 $$
-The spectral decomposition is the one-term writing $\breve Q=Q_\blacktriangle1$, the eigenspace is all of $\mathbb{B}_{\mathrm r}$, and every basis is an eigenbasis. Conversely, every spectrally degenerate element lies on the scalar line.
+The spectral decomposition is the one-term writing $\breve Q=Q_\blacktriangle1$, the eigenspace is all of $\mathbb{B}^{\mathrm{red}}$, and every basis is an eigenbasis. Conversely, every spectrally degenerate element lies on the scalar line.
 
 *Proof.* The spectrum, the polynomials and the eigenspace are the formulas of the previous sections at $Q_+=Q_-=Q_\blacktriangle$. The converse is the spectral criterion.
 
-**Remark (the scalar line is not the centre).** The algebra is commutative, so its centre is the whole algebra $\mathbb{B}_{\mathrm r}$. The line $\mathbb{C}\cdot1$ is the canonical copy of $\mathbb{C}$ inside the algebra, and the word *central* in *central line* refers to its scalar elements, not to the centre. Every element is central, but only the scalar line is spectrally degenerate.
+**Remark (the scalar line is not the centre).** The algebra is commutative, so its centre is the whole algebra $\mathbb{B}^{\mathrm{red}}$. The line $\mathbb{C}\cdot1$ is the canonical copy of $\mathbb{C}$ inside the algebra, and the word *central* in *central line* refers to its scalar elements, not to the centre. Every element is central, but only the scalar line is spectrally degenerate.
 
 **Remark (the two-term refinement).** A scalar can also be written $Q_\blacktriangle1=Q_\blacktriangle\Pi_+ +Q_\blacktriangle\Pi_-$, but the coefficients are equal, so this is not a spectral decomposition; it is the idempotent decomposition with a repeated eigenvalue.
 
@@ -159,7 +159,7 @@ The spectral decomposition is the one-term writing $\breve Q=Q_\blacktriangle1$,
 
 In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, write $\tilde Q=Q_te_t+\vec Q$ and $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. The characteristic polynomial is $(X-Q_t)^{2}+B^{2}$, with eigenvalues $Q_t\pm iB$ and discriminant $-4B^{2}$. On the cone $\mathcal{S}=\{B^{2}=0\}$ with $\vec Q\neq0$ the minimal polynomial is $(X-Q_t)^{2}$: the element is defective, the left multiplication has Jordan type $(2,2)$, and there is no eigenbasis. This is a genuine defective cone, of complex dimension three and real dimension six, minus its scalar line. The details are *The Spectrum*, §*The Two Cases*.
 
-**Why the reduced algebra has none.** The algebra $\mathbb{B}_{\mathrm r}\cong\mathbb{C}\oplus\mathbb{C}$ is a product of two fields, hence **reduced**: its only nilpotent is zero, because a nilpotent has both idempotent coordinates nilpotent and a field has none. A defective element of a finite-dimensional algebra over $\mathbb{C}$ has a nonzero nilpotent part (*Nilpotent Elements and the Jordan–Chevalley Decomposition*). In $\mathbb{B}_{\mathrm r}$ the direct argument is shorter: a repeated eigenvalue means $Q_+=Q_-$, so $\breve Q=Q_+1$ is scalar, and a scalar is semisimple.
+**Why the reduced algebra has none.** The algebra $\mathbb{B}^{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$ is a product of two fields, hence **reduced**: its only nilpotent is zero, because a nilpotent has both idempotent coordinates nilpotent and a field has none. A defective element of a finite-dimensional algebra over $\mathbb{C}$ has a nonzero nilpotent part (*Nilpotent Elements and the Jordan–Chevalley Decomposition*). In $\mathbb{B}^{\mathrm{red}}$ the direct argument is shorter: a repeated eigenvalue means $Q_+=Q_-$, so $\breve Q=Q_+1$ is scalar, and a scalar is semisimple.
 
 **The role of the matrix algebra.** The algebra $M_2(\mathbb{C})$ is not reduced: $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has square zero, and the nilpotent vector parts with $B^{2}=0$ are these nonzero nilpotents. Simplicity is not the point: $M_2(\mathbb{C})$ is simple and defective, while $\mathbb{C}\oplus\mathbb{C}$ is not simple and reduced. Both are semisimple; only the second is reduced, and reducedness removes the defect.
 
@@ -175,7 +175,7 @@ The biquaternion algebra $M_2(\mathbb{C})$ has a genuine defective cone at $B^{2
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm r}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ | the reduced biquaternion algebra |
+| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ | the reduced biquaternion algebra |
 | $\breve Q=Q_\blacktriangle+jQ_\blacktriangledown$ | a general element |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the two complementary idempotents |
 | $Q_\pm=Q_\blacktriangle\pm Q_\blacktriangledown$ | the idempotent coordinates |

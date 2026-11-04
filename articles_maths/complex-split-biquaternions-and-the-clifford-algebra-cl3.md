@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ is the Clifford algebra of three generators of square $-1$. Its three anticommuting generators are the elements $j \vec e_x, j \vec e_y, j \vec e_z$, where $\vec e_x, \vec e_y, \vec e_z$ are the quaternion units and $j$ is the central split unit of $\mathbb{D}$ with $j^2 = +1$; the product of the three is $-j$, the central split unit again. This article studies the **complexification** of that algebra,
+The split biquaternion algebra $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ is the Clifford algebra of three generators of square $-1$. Its three anticommuting generators are the elements $j \vec e_x, j \vec e_y, j \vec e_z$, where $\vec e_x, \vec e_y, \vec e_z$ are the quaternion units and $j$ is the central split unit of $\mathbb{C}^{\mathrm{spl}}$ with $j^2 = +1$; the product of the three is $-j$, the central split unit again. This article studies the **complexification** of that algebra,
 $$
-\mathrm{Cl}(3) := \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H},
+\mathrm{Cl}(3) := \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{spl}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H},
 $$
 the **complex split biquaternions**. Over $\mathbb{C}$ the algebra is eight-dimensional, and its structure is fixed by a single fact: the volume element is central with square $+1$ instead of square $-1$. The centrality splits the algebra into two copies,
 $$
@@ -13,25 +13,25 @@ $$
 $$
 each copy isomorphic to the biquaternion algebra. Where $\mathrm{Cl}(2)$ is simple, $\mathrm{Cl}(3)$ is not; where $\mathrm{Cl}(2)$ has a single family of minimal left ideals, $\mathrm{Cl}(3)$ has two, and the two are interchanged by the parity automorphism $\vec e_\mu\mapsto -\vec e_\mu$ and distinguished by the sign of the volume element. That pair is the algebraic content of the two **chiralities** of the four-dimensional spinor representation, and it is the reason the algebra is of interest to the physics of the left-right symmetric extension of the Standard Model, treated in *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions*.
 
-The article is the Clifford entry of the split biquaternion system, the higher rung of the pair whose lower rung is *Biquaternion Versors and the Orthogonal Group*. The split biquaternion algebra, its conjugations, its idempotents $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$ and its isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its idempotents and its off-diagonal elements are *The Biquaternion Algebra* and *Peirce Decompositions of the Biquaternion Algebra*, and its minimal left ideals are *The Polarized Module of the Biquaternion Algebra*; the complex Clifford algebra $\mathrm{Cl}(2)\cong\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$, its volume element and its grade structure are *Biquaternion Versors and the Orthogonal Group*; and the maximal totally isotropic subspace, the ladder operators and the charge operator are *Peirce Carriers and Inner Conjugation*.
+The article is the Clifford entry of the split biquaternion system, the higher rung of the pair whose lower rung is *Biquaternion Versors and the Orthogonal Group*. The split biquaternion algebra, its conjugations, its idempotents $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$ and its isomorphism $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its idempotents and its off-diagonal elements are *The Biquaternion Algebra* and *Peirce Decompositions of the Biquaternion Algebra*, and its minimal left ideals are *The Polarized Module of the Biquaternion Algebra*; the complex Clifford algebra $\mathrm{Cl}(2)\cong\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$, its volume element and its grade structure are *Biquaternion Versors and the Orthogonal Group*; and the maximal totally isotropic subspace, the ladder operators and the charge operator are *Peirce Carriers and Inner Conjugation*.
 
 ## The Algebra and Its Generators
 
-**Proposition (the split biquaternion generators).** In $\mathbb{H}_{\mathbb{D}}$ the three elements
+**Proposition (the split biquaternion generators).** In $\mathbb{B}^{\mathrm{spl}}$ the three elements
 $$
 E_1 := j \vec e_x, \qquad E_2 := j \vec e_y, \qquad E_3 := j \vec e_z
 $$
-satisfy $E_\mu^2=-1$ and $E_\mu E_\nu=-E_\nu E_\mu$ for $\mu\neq\nu$. Hence they generate a copy of $\mathrm{Cl}(0,3)$ inside $\mathbb{H}_{\mathbb{D}}$, and $\mathbb{H}_{\mathbb{D}}\cong\mathrm{Cl}(0,3)$.
+satisfy $E_\mu^2=-1$ and $E_\mu E_\nu=-E_\nu E_\mu$ for $\mu\neq\nu$. Hence they generate a copy of $\mathrm{Cl}(0,3)$ inside $\mathbb{B}^{\mathrm{spl}}$, and $\mathbb{B}^{\mathrm{spl}}\cong\mathrm{Cl}(0,3)$.
 
 *Proof.* Since $j$ is central with $j^2=+1$ and the quaternion units anticommute with $\vec e_\mu^2=-1$,
 $$
 E_\mu^2 = j^2\vec e_\mu^2 = -1, \qquad E_\mu E_\nu = j^2\vec e_\mu \vec e_\nu = \vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu = -E_\nu E_\mu \quad(\mu\neq\nu).
 $$
-The eight monomials are independent and span $\mathbb{H}_{\mathbb{D}}$, so the generated algebra is the whole of it. The split biquaternion algebra is therefore the Clifford algebra of a three-dimensional negative definite space.
+The eight monomials are independent and span $\mathbb{B}^{\mathrm{spl}}$, so the generated algebra is the whole of it. The split biquaternion algebra is therefore the Clifford algebra of a three-dimensional negative definite space.
 
 **Proposition (the complex split biquaternions).** The complexification
 $$
-\mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}
+\mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{spl}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}
 $$
 is the complex Clifford algebra generated by the same $E_\mu$, with complex coefficients; it has complex dimension $8$ and real dimension $16$, and
 $$
@@ -62,7 +62,7 @@ $$
 $$
 where $E_3E_1=-E_1E_3$, $E_2E_1=-E_1E_2$, $E_3E_2=-E_2E_3$ and $E_1^2=E_2^2=E_3^2=-1$ were used successively. This is the general formula $(-1)^{n(n-1)/2}c^n$ for the square of a product of $n$ anticommuting generators of square $c$, at $n=3$, $c=-1$. Finally, $\omega^{\dagger}=E_3^{\dagger}E_2^{\dagger}E_1^{\dagger}=(-E_3)(-E_2)(-E_1)=-E_3E_2E_1=+E_1E_2E_3=\omega$, since reversing three anticommuting factors costs one sign. Every identity was checked on the eight monomials of the algebra with zero residual.
 
-The two properties, centrality and $\omega^2=+1$, are exactly what a **split** unit has, and they are the reason the complexified algebra behaves like the split biquaternions rather than like the biquaternions. Since $\omega=-j$ (because $E_1E_2E_3=(j\vec e_x)(j\vec e_y)(j\vec e_z)=j^3(\vec e_x \vec e_y)\vec e_z=-j$), the involution $\omega$ of $\mathrm{Cl}(3)$ is the central split unit of $\mathbb{H}_{\mathbb{D}}$ up to sign.
+The two properties, centrality and $\omega^2=+1$, are exactly what a **split** unit has, and they are the reason the complexified algebra behaves like the split biquaternions rather than like the biquaternions. Since $\omega=-j$ (because $E_1E_2E_3=(j\vec e_x)(j\vec e_y)(j\vec e_z)=j^3(\vec e_x \vec e_y)\vec e_z=-j$), the involution $\omega$ of $\mathrm{Cl}(3)$ is the central split unit of $\mathbb{B}^{\mathrm{spl}}$ up to sign.
 
 **Theorem (the central splitting).** Define
 $$
@@ -92,7 +92,7 @@ $$
 
 *Proof.* Because $\Pi_{1,2}$ are central, the left, right and two-sided ideals they generate agree; the summands are simple matrix algebras and have no proper nonzero ideal, so no further ideals occur. The lattice is then the diamond, as in *Split-Biquaternion Ideals and Peirce Decomposition*.
 
-**Theorem (the two summands are the two halves).** The idempotents $\Pi_{1,2}$ of $\mathrm{Cl}(3)$ coincide, with the indices reversed, with the split biquaternion idempotents $\tilde\Pi_{1,2}=\tfrac12(1\mp j)$ of $\mathbb{H}_{\mathbb{D}}$ promoted to the complexification, and the central splitting is the complexification of the splitting of the split biquaternion algebra:
+**Theorem (the two summands are the two halves).** The idempotents $\Pi_{1,2}$ of $\mathrm{Cl}(3)$ coincide, with the indices reversed, with the split biquaternion idempotents $\tilde\Pi_{1,2}=\tfrac12(1\mp j)$ of $\mathbb{B}^{\mathrm{spl}}$ promoted to the complexification, and the central splitting is the complexification of the splitting of the split biquaternion algebra:
 $$
 \boxed{\;
 \mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_1\bigr) \oplus \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_2\bigr) \cong \mathbb{B}\oplus\mathbb{B}
@@ -190,7 +190,7 @@ The theorem shows that the two-sided structure of the algebra has two rungs. On 
 
 The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
-The gammas are a frame of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, not a different algebra.
+The gammas are a frame of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{spl}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, not a different algebra.
 
 $$
 \gamma_\mu[\mathbb{M}_-]=iE_\mu=i\,j\vec e_\mu,\qquad
@@ -206,7 +206,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the generators $E_\mu=j\vec 
 
 The complex split biquaternions are the complexification of the split biquaternion algebra,
 $$
-\mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}
+\mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{spl}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}
 \cong \mathrm{Cl}_3(\mathbb{C}),
 $$
 of complex dimension $8$. Its generators $E_\mu=j\vec e_\mu$ satisfy $\{E_\mu,E_\nu\}=-2\delta_{\mu\nu}$, and its volume element $\omega=E_1E_2E_3$ is central, self-adjoint and an involution, $\omega^2=1$. The centrality gives the complete family of orthogonal central idempotents $\Pi_{1,2}=\tfrac12(1\pm\omega)$ and the splitting
@@ -219,11 +219,11 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | Split complex algebra, unit $j$, $j^2=+1$ |
+| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra, unit $j$, $j^2=+1$ |
 | $\mathbb{H}$ | Quaternion algebra, units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-1$, $\vec e_x \vec e_y=\vec e_z$ |
-| $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | Split biquaternion algebra, ${}\cong\mathrm{Cl}(0,3)\cong\mathbb{H}\oplus\mathbb{H}$ |
+| $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | Split biquaternion algebra, ${}\cong\mathrm{Cl}(0,3)\cong\mathbb{H}\oplus\mathbb{H}$ |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, ${}\cong M_2(\mathbb{C})\cong\mathbb{C}\mathrm{l}_2$ |
-| $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$ | Complex split biquaternions, ${}\cong\mathrm{Cl}_3(\mathbb{C})$ |
+| $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{spl}}$ | Complex split biquaternions, ${}\cong\mathrm{Cl}_3(\mathbb{C})$ |
 | $E_1,E_2,E_3=j\vec e_x,j\vec e_y,j\vec e_z$ | Clifford generators, $E_\mu^2=-1$, $E_\mu E_\nu=-E_\nu E_\mu$ |
 | $iE_\mu$ | Hermitian rescaled generators, $(iE_\mu)^{\dagger}=iE_\mu$, $\{iE_\mu,iE_\nu\}=2\delta_{\mu\nu}$ |
 | $\dagger$ | Hermitian adjoint, $E_\mu^{\dagger}=-E_\mu$, $i^{\dagger}=-i$ |
@@ -244,8 +244,8 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 - V. Vaibhav and T. P. Singh, "Left-Right Symmetric Fermions and Sterile Neutrinos from Complex Split Biquaternions and Bioctonions," arXiv:2108.01858, for the construction of this article's algebra as a two-chirality fermion algebra and its physics reading.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification $\mathrm{Cl}_3(\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the volume element of an odd complex Clifford algebra, and the centrality that produces the splitting.
 - H. B. Lawson and M.-L. Michelsohn, *Spin Geometry* (Princeton, 1989), for the volume element, the chirality grading and the two pinor representations of an odd Clifford algebra.
-- J. H. Conway and D. A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the split biquaternions and their isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$.
+- J. H. Conway and D. A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the split biquaternions and their isomorphism $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$.
 - Companion article [Split-Biquaternion Algebra](split-biquaternion-algebra.html), for the algebra being complexified, its conjugations and its idempotents.
-- Companion article [Split-Biquaternion Ideals and Peirce Decomposition](split-biquaternion-ideals-and-peirce-decomposition.html), for the splitting $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and its diamond of ideals.
+- Companion article [Split-Biquaternion Ideals and Peirce Decomposition](split-biquaternion-ideals-and-peirce-decomposition.html), for the splitting $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ and its diamond of ideals.
 - Companion article [The Biquaternion Algebra](the-biquaternion-algebra.html) and [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for $\mathbb{B}\cong\mathbb{C}\mathrm{l}_2$, its idempotents and its minimal left ideals.
 - Companion article [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the left and right multiplications, their commuting, and $\mathbb{B}^{\mathrm{e}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.

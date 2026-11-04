@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The remarkable subspaces of *Subspaces and Decompositions* organise the reduced biquaternion space in three ways, and this article writes the three decompositions and compares them. The first is the **block decomposition along the two involutions**: the bar and the tessarine sign are two commuting involutions, so the real four-dimensional space splits into the **four common eigenspaces**, each a real line, and each labelled by the pair of its eigenvalues under the two involutions. The second is the **decomposition along a single involution**, the **halving** of the space into the fixed and the anti-fixed space of that involution; there are three halvings, those of the bar, the tessarine sign and the star, and each is a grouping of the four blocks two by two. The third is the **decomposition along the idempotents**, the splitting $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ by the two eigenlines of the multiplication by $j$, and it is the only one of the three that is a decomposition of the **algebra** and not only of the space.
+The remarkable subspaces of *Subspaces and Decompositions* organise the reduced biquaternion space in three ways, and this article writes the three decompositions and compares them. The first is the **block decomposition along the two involutions**: the bar and the tessarine sign are two commuting involutions, so the real four-dimensional space splits into the **four common eigenspaces**, each a real line, and each labelled by the pair of its eigenvalues under the two involutions. The second is the **decomposition along a single involution**, the **halving** of the space into the fixed and the anti-fixed space of that involution; there are three halvings, those of the bar, the tessarine sign and the star, and each is a grouping of the four blocks two by two. The third is the **decomposition along the idempotents**, the splitting $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ by the two eigenlines of the multiplication by $j$, and it is the only one of the three that is a decomposition of the **algebra** and not only of the space.
 
 **The results.** The four blocks are the four real lines
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{R}\ \oplus\ \mathbb{R}i\ \oplus\ \mathbb{R}j\ \oplus\ \mathbb{R}ij,
+\mathbb{B}^{\mathrm{red}}=\mathbb{R}\ \oplus\ \mathbb{R}i\ \oplus\ \mathbb{R}j\ \oplus\ \mathbb{R}ij,
 $$
 the common eigenspaces of the bar and the tessarine sign, the first two being also the eigenspaces of the star with the signs $+$ and $-$. The three halvings are
 $$
-\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}_{\mathrm{r}},
+\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}=\mathbb{B}^{\mathrm{red}},
 $$
 the decompositions of the tessarine sign, the bar and the star; each is the grouping of the four blocks two by two according to the sign of the involution, and each is a **$\mathbb{Z}_{2}$-grading** of the algebra but not a decomposition of it into two subalgebras, because the homogeneous spaces of degree one are not closed under the product. The idempotent decomposition
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-
+\mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-
 $$
 is of the other kind: it is the product of the two minimal ideals, it is the unique algebra direct-product decomposition, and its two summands are the two simple modules of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The two kinds differ in what is closed: in a grading only the products of the same parity are constrained, while in a direct product each summand is a subalgebra and the mixed products vanish.
 
@@ -27,7 +27,7 @@ is of the other kind: it is the product of the two minimal ideals, it is the uni
 **Theorem (simultaneous diagonalisation).** The bar $\bar{\cdot}$ and the tessarine sign ${}_{\mathrm{ts}}$ commute, ${}_{\mathrm{ts}}\bar{\cdot}=\bar{\cdot}{}_{\mathrm{ts}}$, and each has square one; hence the real space decomposes into the four **common eigenspaces**
 $$
 \boxed{\;
-\mathbb{B}_{\mathrm{r}}=\bigoplus_{(\varepsilon_{1},\varepsilon_{2})\in\{\pm1\}^{2}}\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})},\qquad
+\mathbb{B}^{\mathrm{red}}=\bigoplus_{(\varepsilon_{1},\varepsilon_{2})\in\{\pm1\}^{2}}\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})},\qquad
 \mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}=\{\breve Q:\bar{\breve Q}=\varepsilon_{1}\breve Q,\ \breve Q_{\mathrm{ts}}=\varepsilon_{2}\breve Q\}
 \;},
 $$
@@ -61,7 +61,7 @@ for the tessarine sign, the bar and the star respectively.
 
 **Theorem (the halvings).** The three involutions give the three decompositions
 $$
-\boxed{\; \mathbb{B}_{\mathrm{r}}=\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{B}_{\mathrm{r}}=\mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\} \;},
+\boxed{\; \mathbb{B}^{\mathrm{red}}=\mathbb{C}\oplus\mathbb{C}j,\qquad \mathbb{B}^{\mathrm{red}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\},\qquad \mathbb{B}^{\mathrm{red}}=\mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\} \;},
 $$
 of the tessarine sign, the bar and the star, each into a fixed plane and an anti-fixed plane of real dimension two.
 
@@ -87,7 +87,7 @@ so the halving is a $\mathbb{Z}_{2}$-grading; the anti-fixed plane is not closed
 
 **Theorem (the idempotent decomposition).** With $\Pi_{\pm}=\tfrac12(1\pm j)$,
 $$
-\boxed{\; \mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,\qquad \Pi_++\Pi_-=1,\qquad \Pi_+\Pi_-=0,\qquad \Pi_+^{2}=\Pi_+,\ \Pi_-^{2}=\Pi_- \;},
+\boxed{\; \mathbb{B}^{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,\qquad \Pi_++\Pi_-=1,\qquad \Pi_+\Pi_-=0,\qquad \Pi_+^{2}=\Pi_+,\ \Pi_-^{2}=\Pi_- \;},
 $$
 and the two summands are the two minimal ideals, the images of the two Peirce projections of the family $\{\Pi_+,\Pi_-\}$.
 
@@ -101,14 +101,14 @@ and the two summands are the two minimal ideals, the images of the two Peirce pr
 
 **Theorem (the two kinds).**
 
-1. A **direct product** decomposition $\mathbb{B}_{\mathrm{r}}=\mathrm A\oplus\mathrm B$ has each summand a subalgebra, $\mathrm A^{2}\subseteq\mathrm A$, $\mathrm B^{2}\subseteq\mathrm B$, and the mixed product zero, $\mathrm A\mathrm B=0$; equivalently the projections are **algebra** homomorphisms.
-2. A **grading** $\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{+}\oplus\mathbb{B}_{-}$ has only the three parity inclusions of §*Each Halving Is a Grading*; the projections are not algebra homomorphisms, and the mixed product is not zero.
+1. A **direct product** decomposition $\mathbb{B}^{\mathrm{red}}=\mathrm A\oplus\mathrm B$ has each summand a subalgebra, $\mathrm A^{2}\subseteq\mathrm A$, $\mathrm B^{2}\subseteq\mathrm B$, and the mixed product zero, $\mathrm A\mathrm B=0$; equivalently the projections are **algebra** homomorphisms.
+2. A **grading** $\mathbb{B}^{\mathrm{red}}=\mathbb{B}_{+}\oplus\mathbb{B}_{-}$ has only the three parity inclusions of §*Each Halving Is a Grading*; the projections are not algebra homomorphisms, and the mixed product is not zero.
 
 The idempotent decomposition is a direct product; the three halvings are gradings and not direct products.
 
 *Proof.* For the idempotent decomposition the summands are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, closed under the product, with $\mathbb{C}\Pi_+\cdot\mathbb{C}\Pi_-=\mathbb{C}\Pi_+\Pi_-=0$; the projections are $\breve Q\mapsto\Pi_+\breve Q$ and $\breve Q\mapsto\Pi_-\breve Q$; each is multiplicative, $\Pi_+(\breve Q_{1}\breve Q_{2})=(\Pi_+\breve Q_{1})(\Pi_+\breve Q_{2})$ and $\Pi_-(\breve Q_{1}\breve Q_{2})=(\Pi_-\breve Q_{1})(\Pi_-\breve Q_{2})$, because $\Pi_\pm^{2}=\Pi_\pm$ and $\Pi_+\Pi_-=0$, so they are algebra homomorphisms. For the halvings the anti-fixed plane is not closed by §*Each Halving Is a Grading* and the mixed product is the anti-fixed plane, which is nonzero.
 
-**Corollary (why the idempotents are central).** The two projections of the idempotent decomposition are the algebra homomorphisms $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\Pi_+$ and $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\Pi_-$, and the decomposition is the one of the direct product $\mathbb{C}\times\mathbb{C}$; the halving projections are only linear. The central idempotents are exactly the ones for which the split is a decomposition of the algebra, and this is the content of *The Specificities of the Algebra of the Reduced Biquaternions*, §*The Associative Interpretation*.
+**Corollary (why the idempotents are central).** The two projections of the idempotent decomposition are the algebra homomorphisms $\mathbb{B}^{\mathrm{red}}\to\mathbb{C}\Pi_+$ and $\mathbb{B}^{\mathrm{red}}\to\mathbb{C}\Pi_-$, and the decomposition is the one of the direct product $\mathbb{C}\times\mathbb{C}$; the halving projections are only linear. The central idempotents are exactly the ones for which the split is a decomposition of the algebra, and this is the content of *The Specificities of the Algebra of the Reduced Biquaternions*, §*The Associative Interpretation*.
 
 ## The Projections and the Changes of Basis
 

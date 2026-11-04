@@ -4,7 +4,7 @@
 
 The reduced biquaternion algebra
 $$
-\mathbb{B}_{\mathrm r}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}
+\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}
 $$
 carries two quadratic conditions on an element $\breve Q=Q_\blacktriangle+jQ_\blacktriangledown$:
 $$
@@ -105,7 +105,7 @@ the reduced norm is $\nu=Q_+^{2}\neq0$, so the element is a unit; the spectrum i
 
 *Proof.* The identities $Q_+=Q_-$ and $Q_+\neq0$ give $Q_\blacktriangle=Q_+\neq0$ and $Q_\blacktriangledown=0$, hence $\nu=Q_+^{2}\neq0$. The spectrum, the characteristic polynomial and the minimal polynomial are those of the scalar line in *Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra*, §*The Scalar Stratum*. The minimal polynomial is linear, hence squarefree, so the element is semisimple.
 
-**Theorem (the origin is doubly degenerate).** At $\breve Q=0$, both conditions degenerate: $\nu(0)=0$ and $\delta(0)=0$. The spectrum is $\{0\}$, the characteristic polynomial is $X^{2}$, the minimal polynomial is $X$, the eigenspace is all of $\mathbb{B}_{\mathrm r}$, and the spectral decomposition is the one-term writing $0=0\cdot1$.
+**Theorem (the origin is doubly degenerate).** At $\breve Q=0$, both conditions degenerate: $\nu(0)=0$ and $\delta(0)=0$. The spectrum is $\{0\}$, the characteristic polynomial is $X^{2}$, the minimal polynomial is $X$, the eigenspace is all of $\mathbb{B}^{\mathrm{red}}$, and the spectral decomposition is the one-term writing $0=0\cdot1$.
 
 *Proof.* The values follow from $Q_+=Q_-=0$. The spectrum is the singleton $\{0\}$, and $X$ is the monic polynomial of least degree annihilating $0$, so the minimal polynomial is $X$. Every vector $v$ satisfies $0v=0$, so the eigenspace is the whole algebra.
 

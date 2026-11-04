@@ -40,7 +40,7 @@ r=\sqrt{\lvert\lambda_+\lambda_-\rvert},
 \phi=\tfrac12\ln\left\lvert\frac{\lambda_+}{\lambda_-}\right\rvert,
 $$
 
-and $\epsilon$ is the component determined by the signs of $\lambda_\pm$. The product of the eigenvalues is $\lambda_+\lambda_-=q^2-q'^2=(q+q')(q-q')$, and the ratio is the exponential of twice the hyperbolic angle, up to the sign of $q^2-q'^2$. The dictionary is a bijection between the four components of $\mathbb{D}^\times$ and the four sign patterns.
+and $\epsilon$ is the component determined by the signs of $\lambda_\pm$. The product of the eigenvalues is $\lambda_+\lambda_-=q^2-q'^2=(q+q')(q-q')$, and the ratio is the exponential of twice the hyperbolic angle, up to the sign of $q^2-q'^2$. The dictionary is a bijection between the four components of ${\mathbb{C}^{\mathrm{spl}}}^\times$ and the four sign patterns.
 
 | Question | Answer |
 |---|---|
@@ -92,7 +92,7 @@ with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statem
 
 ### The Exponential Polar Decomposition
 
-Every unit $Q\in\mathbb{D}^\times=\{q^2-q'^2\neq0\}$ has a unique writing
+Every unit $Q\in{\mathbb{C}^{\mathrm{spl}}}^\times=\{q^2-q'^2\neq0\}$ has a unique writing
 
 $$
 Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\phi j),
@@ -104,7 +104,7 @@ with $r>0$, $\phi\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The factor $r=\
 
 | Polar item | Value |
 |---|---|
-| Domain | $\mathbb{D}^\times=\{Q:q^2-q'^2\neq0\}$ |
+| Domain | ${\mathbb{C}^{\mathrm{spl}}}^\times=\{Q:q^2-q'^2\neq0\}$ |
 | Decomposition | $Q=r\,\epsilon\exp(\phi j)$ |
 | Modulus | $r=\sqrt{\lvert q^2-q'^2\rvert}>0$ |
 | Angle | $\phi\in\mathbb{R}$ |
@@ -339,7 +339,7 @@ The algebra is $\mathbb{R}\times\mathbb{R}$, hence reduced. There is no nonzero 
 
 ### The Kernel
 
-The exponential of $\mathbb{D}$ has trivial kernel, $\ker\exp=\{0\}$ (*Split-Complex Elementary Functions*, §*The Exponential*). In spectral terms, if $X=x+jy$ then
+The exponential of $\mathbb{C}^{\mathrm{spl}}$ has trivial kernel, $\ker\exp=\{0\}$ (*Split-Complex Elementary Functions*, §*The Exponential*). In spectral terms, if $X=x+jy$ then
 
 $$
 \exp(X)=e^{x}\bigl(\cosh y+j\sinh y\bigr),
@@ -368,7 +368,7 @@ Q=\epsilon\exp(Q_{\log}),
 Q_{\log}=\operatorname{Log}(\epsilon Q).
 $$
 
-The fibre of the exponential is therefore one point on $F$ and empty on the other three components. The extended polar map $(\epsilon,X)\mapsto\epsilon\exp X$ is a bijection from $\{\pm1,\pm j\}\times\mathbb{R}^2$ onto $\mathbb{D}^\times$; its "fibre" over $Q$ is the single pair $(\epsilon,Q_{\log})$.
+The fibre of the exponential is therefore one point on $F$ and empty on the other three components. The extended polar map $(\epsilon,X)\mapsto\epsilon\exp X$ is a bijection from $\{\pm1,\pm j\}\times\mathbb{R}^2$ onto ${\mathbb{C}^{\mathrm{spl}}}^\times$; its "fibre" over $Q$ is the single pair $(\epsilon,Q_{\log})$.
 
 | Item | Value |
 |---|---|
@@ -518,7 +518,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}=\mathbb{R}[j]$, $j^2=1$ | the split-complex algebra |
+| $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^2=1$ | the split-complex algebra |
 | $Q=q+jq'$ | a split-complex number |
 | $\lambda_\pm=q\pm q'$ | the eigenvalues |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | the fixed central idempotents |

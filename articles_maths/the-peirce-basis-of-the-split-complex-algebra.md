@@ -8,13 +8,13 @@ It assumes *The Peirce Decomposition of the Split-Complex Algebra*. The spinors 
 
 ## The Definition
 
-**Definition.** A **Peirce basis** of $\mathbb{D}$ relative to the family $\Pi_{+},\Pi_{-}$ is a family $E_{\sigma\tau}\in\mathbb{D}_{\sigma\tau}$, one element for each pair, with
+**Definition.** A **Peirce basis** of $\mathbb{C}^{\mathrm{spl}}$ relative to the family $\Pi_{+},\Pi_{-}$ is a family $E_{\sigma\tau}\in\mathbb{C}^{\mathrm{spl}}_{\sigma\tau}$, one element for each pair, with
 
 $$
 E_{\sigma\tau}E_{\mu\nu}=\delta_{\tau\mu}E_{\sigma\nu},\qquad E_{\sigma\sigma}=\Pi_{\sigma}.
 $$
 
-**The off-diagonal elements do not exist.** Since $\mathbb{D}_{+-}=\mathbb{D}_{-+}=0$, the only possible elements are $E_{++}$ and $E_{--}$, and the definition forces
+**The off-diagonal elements do not exist.** Since $\mathbb{C}^{\mathrm{spl}}_{+-}=\mathbb{C}^{\mathrm{spl}}_{-+}=0$, the only possible elements are $E_{++}$ and $E_{--}$, and the definition forces
 
 $$
 E_{++}=\Pi_{+},\qquad E_{--}=\Pi_{-}.
@@ -26,7 +26,7 @@ So the Peirce basis is the pair $\{\Pi_{+},\Pi_{-}\}$.
 
 **Theorem.** The Peirce basis exists and is unique.
 
-**Proof.** The diagonal line $\mathbb{D}_{++}=\mathbb{R}\Pi_{+}$ contains the two idempotents $0$ and $\Pi_{+}$; a basis element is nonzero, so it is $\Pi_{+}$. The same argument gives $E_{--}=\Pi_{-}$. The product rule is satisfied because $\Pi_{+}\Pi_{-}=0$ and $\Pi_{\pm}^{2}=\Pi_{\pm}$. There is no other choice, because there is no other line.
+**Proof.** The diagonal line $\mathbb{C}^{\mathrm{spl}}_{++}=\mathbb{R}\Pi_{+}$ contains the two idempotents $0$ and $\Pi_{+}$; a basis element is nonzero, so it is $\Pi_{+}$. The same argument gives $E_{--}=\Pi_{-}$. The product rule is satisfied because $\Pi_{+}\Pi_{-}=0$ and $\Pi_{\pm}^{2}=\Pi_{\pm}$. There is no other choice, because there is no other line.
 
 **There is no gauge.** In the general theory two bases of the same family differ by $E_{\sigma\tau}\mapsto t_{\sigma}t_{\tau}^{-1}E_{\sigma\tau}$. Here the only entries are diagonal, and the replacement reads
 
@@ -60,7 +60,7 @@ which is the matrix product of the diagonal arrays. The coordinates are the idem
 
 ## The Dimension Count
 
-**The family.** The idempotents of $\mathbb{D}\cong\mathbb{R}\times\mathbb{R}$ are $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$. The nontrivial complete orthogonal pairs are $(\Pi_{+},\Pi_{-})$ and $(\Pi_{-},\Pi_{+})$, which are the same unordered family, with the two labelings exchanged by $j\mapsto-j$. The unordered family space is a single point.
+**The family.** The idempotents of $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ are $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$. The nontrivial complete orthogonal pairs are $(\Pi_{+},\Pi_{-})$ and $(\Pi_{-},\Pi_{+})$, which are the same unordered family, with the two labelings exchanged by $j\mapsto-j$. The unordered family space is a single point.
 
 **The frame.** The Peirce basis is unique, so the frame space is a single point.
 
@@ -72,7 +72,7 @@ $$
 0=0+0 .
 $$
 
-The automorphism group of $\mathbb{D}$ is $\{1,\varsigma\}$ with $\varsigma(j)=-j$; it has order $2$ and swaps the two lines. It fixes the unordered family and acts on the two labelings. There is no continuous parameter, no torus and no projective family.
+The automorphism group of $\mathbb{C}^{\mathrm{spl}}$ is $\{1,\varsigma\}$ with $\varsigma(j)=-j$; it has order $2$ and swaps the two lines. It fixes the unordered family and acts on the two labelings. There is no continuous parameter, no torus and no projective family.
 
 ## What the Basis Is Not
 

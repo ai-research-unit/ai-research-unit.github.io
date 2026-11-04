@@ -140,7 +140,7 @@ The kernel of $\Gamma$ is the **Jacobson radical** — the intersection of the m
 
 ### The Split-Complex Numbers
 
-Let $A = \mathbb D = R[x]/(x^2-1)$ over $R = \mathbb R$, with basis $1, j$ and $j^2 = 1$. In this basis
+Let $A = \mathbb{C}^{\mathrm{spl}} = R[x]/(x^2-1)$ over $R = \mathbb R$, with basis $1, j$ and $j^2 = 1$. In this basis
 
 $$
 L_1 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad
@@ -148,7 +148,7 @@ L_j = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
 L_{a+bj} = \begin{pmatrix} a & b \\ b & a \end{pmatrix} ,
 $$
 
-so $L(A)$ is the algebra of matrices of the form $\binom{a\ b}{b\ a}$, a two-dimensional commutative subalgebra of $M_2(\mathbb R)$. The characters are the two homomorphisms $\chi_\pm$ with $\chi_\pm(j) = \pm 1$, and the eigenvalues of $L_j$ are $1$ and $-1$, so $L_j$ is a reflection, of order two. The Gelfand transform sends $a+bj$ to the pair $(\chi_+,\chi_-) = (a+b, a-b)$, which is the isomorphism $\mathbb D \cong \mathbb R \times \mathbb R$ of the idempotent decomposition.
+so $L(A)$ is the algebra of matrices of the form $\binom{a\ b}{b\ a}$, a two-dimensional commutative subalgebra of $M_2(\mathbb R)$. The characters are the two homomorphisms $\chi_\pm$ with $\chi_\pm(j) = \pm 1$, and the eigenvalues of $L_j$ are $1$ and $-1$, so $L_j$ is a reflection, of order two. The Gelfand transform sends $a+bj$ to the pair $(\chi_+,\chi_-) = (a+b, a-b)$, which is the isomorphism $\mathbb{C}^{\mathrm{spl}} \cong \mathbb R \times \mathbb R$ of the idempotent decomposition.
 
 ### A Split Polynomial Algebra
 
@@ -192,7 +192,7 @@ $$
 
 **Corollary.** The family $L(A)$ is a commutative subalgebra of the space of operators self-adjoint for $T$. When $T$ is non-degenerate the adjoint operation makes $\operatorname{End}_R(A)$ an algebra with an involution, and $L(A)$ lies in its self-adjoint part; the involution is developed in the `* Operator Theory` group of this category, where the pairing and the adjoint are read with the involution of the elements.
 
-**Example.** For $A = k^n$ the multiplication operator $L_a$ with $a = (a_1, \dots, a_n)$ is the diagonal matrix $\operatorname{diag}(a_1, \dots, a_n)$, and $T(a,b) = \sum_i a_i b_i$; the trace pairing is the standard bilinear form on $k^n$. For $A = \mathbb D$ above, $T(a+bj, c+dj) = 2(ac+bd)$ by the matrix form of $L$, the factor $2$ being the rank.
+**Example.** For $A = k^n$ the multiplication operator $L_a$ with $a = (a_1, \dots, a_n)$ is the diagonal matrix $\operatorname{diag}(a_1, \dots, a_n)$, and $T(a,b) = \sum_i a_i b_i$; the trace pairing is the standard bilinear form on $k^n$. For $A = \mathbb{C}^{\mathrm{spl}}$ above, $T(a+bj, c+dj) = 2(ac+bd)$ by the matrix form of $L$, the factor $2$ being the rank.
 
 ## Summary
 

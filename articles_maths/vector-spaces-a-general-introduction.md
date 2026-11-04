@@ -175,7 +175,7 @@ An $R$-module $M$ is **free** if it has a basis. If $M$ has a basis of cardinali
 - $R^n$ is a free $R$-module of rank $n$.
 - Every vector space over a field is free.
 - Over $\mathbb{Z}$, the free modules are the groups $\mathbb{Z}^n$.
-- Over $\mathbb{D}$, the free modules are the modules $\mathbb{D}^n$.
+- Over $\mathbb{C}^{\mathrm{spl}}$, the free modules are the modules ${\mathbb{C}^{\mathrm{spl}}}^n$.
 
 **Non-examples.**
 
@@ -246,15 +246,15 @@ $$
 
 for some $r \geq 0$ and $n_1, \ldots, n_k \geq 2$.
 
-## 15. The Case of $\mathbb{D}$
+## 15. The Case of $\mathbb{C}^{\mathrm{spl}}$
 
-When $R = \mathbb{D}$, the split complex numbers, the theory of $\mathbb{D}$-modules is more subtle because $\mathbb{D}$ has zero divisors. A $\mathbb{D}$-module need not be free, and torsion can occur. But since $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ as a ring, every $\mathbb{D}$-module decomposes as a pair of $\mathbb{R}$-vector spaces:
+When $R = \mathbb{C}^{\mathrm{spl}}$, the split complex numbers, the theory of $\mathbb{C}^{\mathrm{spl}}$-modules is more subtle because $\mathbb{C}^{\mathrm{spl}}$ has zero divisors. A $\mathbb{C}^{\mathrm{spl}}$-module need not be free, and torsion can occur. But since $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$ as a ring, every $\mathbb{C}^{\mathrm{spl}}$-module decomposes as a pair of $\mathbb{R}$-vector spaces:
 
 $$
 \boxed{\;M \cong M_1 \times \mathsf{M}_2\;}
 $$
 
-where $M_1$ and $\mathsf{M}_2$ are real vector spaces. This reduces the theory of $\mathbb{D}$-modules to the theory of real vector spaces.
+where $M_1$ and $\mathsf{M}_2$ are real vector spaces. This reduces the theory of $\mathbb{C}^{\mathrm{spl}}$-modules to the theory of real vector spaces.
 
 ---
 
@@ -291,7 +291,7 @@ Commutative rings are the natural setting for:
 
 The article develops the theory of vector spaces over a commutative ring. An $R$-module is an abelian group with a scalar multiplication by $R$, and the treatment begins by carrying the vocabulary of linear algebra into that setting: submodules, quotient modules, homomorphisms, linear independence, free modules, rank and torsion, with their elementary properties and the isomorphism theorems.
 
-The second half separates what survives the passage from a field to a ring from what does not. Submodules, quotients, homomorphisms and the isomorphism theorems carry over unchanged; free modules need not exist, not every submodule is a direct summand, and rank is well defined only when the ring has the invariant basis property. The comparison with the field case is recorded together with the two cases the rest of the corpus uses: the ring $\mathbb{Z}$, where the theory is the theory of abelian groups and the structure theorem classifies the finitely generated ones, and the split complex algebra $\mathbb{D}$, where the zero divisors make torsion and non-freeness possible.
+The second half separates what survives the passage from a field to a ring from what does not. Submodules, quotients, homomorphisms and the isomorphism theorems carry over unchanged; free modules need not exist, not every submodule is a direct summand, and rank is well defined only when the ring has the invariant basis property. The comparison with the field case is recorded together with the two cases the rest of the corpus uses: the ring $\mathbb{Z}$, where the theory is the theory of abelian groups and the structure theorem classifies the finitely generated ones, and the split complex algebra $\mathbb{C}^{\mathrm{spl}}$, where the zero divisors make torsion and non-freeness possible.
 
 The article closes with the role of commutative rings in the wider corpus, among them algebraic geometry, number theory, and the theory of quadratic forms and Clifford algebras over rings.
 

@@ -37,13 +37,13 @@ Thus the Fueter operator is a square root not of the Laplacian but of a wave ope
 
 ### Relation to the Cauchy–Riemann Operator
 
-On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator of *Split-Quaternion Regular Functions*: its symbol $s(\xi) = \xi_t + \xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z$ satisfies $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_t$, so it is **not** elliptic and its characteristic set is the null cone $\mathcal{N}$. In Clifford language, $\mathbb{H}_{\mathrm{s}}$ is the even subalgebra of $\mathrm{Cl}_{2,2}$ up to the standard identification, and the Fueter-regular functions are its **monogenic** functions.
+On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator of *Split-Quaternion Regular Functions*: its symbol $s(\xi) = \xi_t + \xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z$ satisfies $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_t$, so it is **not** elliptic and its characteristic set is the null cone $\mathcal{N}$. In Clifford language, $\mathbb{H}^{\mathrm{spl}}$ is the even subalgebra of $\mathrm{Cl}_{2,2}$ up to the standard identification, and the Fueter-regular functions are its **monogenic** functions.
 
 ## Fueter-Regular Functions
 
 ### Left and Right Regularity
 
-**Definition.** Let $\Omega$ be open in $\mathbb{R}^4$, and let $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ be continuously differentiable. Then $F$ is **left-Fueter-regular** if $\nabla F = 0$; **right-Fueter-regular** if $F\nabla := \sum_\mu\partial/\partial q_\mu\,F\,e_\mu = 0$; and **anti-regular** if $\bar\nabla F = 0$. As in the rest of the category, **regular** means left-regular, and the first-order operator $\nabla$ is the one inverted.
+**Definition.** Let $\Omega$ be open in $\mathbb{R}^4$, and let $F : \Omega \to \mathbb{H}^{\mathrm{spl}}$ be continuously differentiable. Then $F$ is **left-Fueter-regular** if $\nabla F = 0$; **right-Fueter-regular** if $F\nabla := \sum_\mu\partial/\partial q_\mu\,F\,e_\mu = 0$; and **anti-regular** if $\bar\nabla F = 0$. As in the rest of the category, **regular** means left-regular, and the first-order operator $\nabla$ is the one inverted.
 
 ### The Componentwise System
 
@@ -65,7 +65,7 @@ with the divergence, gradient and curl taken for the indefinite form $N|_V$. Lef
 
 **Definition.** An **imaginary unit** is an element $I$ with $I^2 = -1$, and a **slice** is a real plane $\mathbb{C}_I = \mathbb{R} + I\mathbb{R}$ spanned by $1$ and an imaginary unit.
 
-**Theorem.** The imaginary units of $\mathbb{H}_{\mathrm{s}}$ are the elements of the vector subspace
+**Theorem.** The imaginary units of $\mathbb{H}^{\mathrm{spl}}$ are the elements of the vector subspace
 
 $$
 \boxed{\;
@@ -131,13 +131,13 @@ and the second sum is not a scalar multiple of $\vec u$ but has the nonzero vect
 
 ## Power Series Representations
 
-**Theorem (right-coefficient series).** A series $F(\tilde q) = \sum_{n\geq0} \tilde q^n a_n$ with coefficients $a_n \in \mathbb{H}_{\mathrm{s}}$ on the right converges absolutely and normally on $\|\tilde q\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, and its sum is **slice-regular** (Cullen-regular): holomorphic on each slice.
+**Theorem (right-coefficient series).** A series $F(\tilde q) = \sum_{n\geq0} \tilde q^n a_n$ with coefficients $a_n \in \mathbb{H}^{\mathrm{spl}}$ on the right converges absolutely and normally on $\|\tilde q\|_E < R$, where $R^{-1} = \limsup_n\|a_n\|_E^{1/n}$, and its sum is **slice-regular** (Cullen-regular): holomorphic on each slice.
 
 **Proof.** The Euclidean operator norm is submultiplicative, so $\|\tilde q^n\|_E \le \|\tilde q\|_E^n$ and the series is dominated by the scalar series $\sum\|a_n\|_E\|\tilde q\|_E^n$; on a slice, $\tilde q = A$ and the sum is a power series in the slice variable.
 
 **Proposition.** The coordinate function $\tilde q$ is slice-regular but not Fueter-regular: $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_t^2+\vec e_x^2+\vec e_y^2+\vec e_z^2 = 1-1+1+1 = 2e_t \neq 0$. In general the slice-regular class is strictly larger than the Fueter-regular class, and the Fueter construction is the operation that converts the first into the second.
 
-**Theorem (Fischer decomposition).** Let $\mathcal{P}_k$ be the $\mathbb{H}_{\mathrm{s}}$-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \nabla P = 0\}$ the **monogenic homogeneous polynomials**. Then
+**Theorem (Fischer decomposition).** Let $\mathcal{P}_k$ be the $\mathbb{H}^{\mathrm{spl}}$-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \nabla P = 0\}$ the **monogenic homogeneous polynomials**. Then
 
 $$
 \boxed{\;
@@ -163,7 +163,7 @@ The Fueter operator $\nabla = \sum_\mu e_\mu\,\partial/\partial q_\mu$ and its c
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
+| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\nabla = \partial/\partial q_t + \vec D$, $\bar\nabla = \partial/\partial q_t - \vec D$ | the Fueter (Cauchy–Riemann–Fueter) operator and its conjugate | *Split-Quaternion Regular Functions* |
 | $\vec D = \sum_\mu \vec e_\mu\,\partial/\partial q_\mu$ | the vector-derivative part | this article |
 | $\Box = \partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ | the ultrahyperbolic operator, signature $(2,2)$ | this article |

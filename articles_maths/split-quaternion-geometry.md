@@ -12,7 +12,7 @@ The split-quaternion algebra, its vector subspace $V$, its split-quaternion norm
 **Definition.** The two quadratic forms of the system are
 
 $$
-N : \mathbb{H}_{\mathrm{s}} \to \mathbb{R}, \quad \langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2,
+N : \mathbb{H}^{\mathrm{spl}} \to \mathbb{R}, \quad \langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2,
 $$
 
 of signature $(2,2)$ on the four-dimensional algebra, and its restriction
@@ -61,7 +61,7 @@ The quadric is the projective image of the ruling by maximal isotropic planes, a
 
 **Theorem (The Group Action on the Quadric).** The unit group acts on $\mathcal{Q}$ by conjugation, and the action descends to an action of $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$, of dimension three, on the torus $\mathcal{Q}$; the kernel of the action is the centre $\mathbb{R}^{\times}$ of the unit group.
 
-**Proof.** Conjugation by a unit is an algebra automorphism and preserves $\langle\cdot\rangle_{\natural}$, so it maps isotropic lines to isotropic lines; this gives the action of $\mathbb{H}_{\mathrm{s}}^{\times}$ on $\mathcal{Q}$. The kernel of the action on the projective space is the set of units acting trivially on all lines of $\mathbb{H}_{\mathrm{s}}$, which is the centre $\mathbb{R}^{\times}$; the quotient is $\mathrm{PGL}_2(\mathbb{R})$ by the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*.
+**Proof.** Conjugation by a unit is an algebra automorphism and preserves $\langle\cdot\rangle_{\natural}$, so it maps isotropic lines to isotropic lines; this gives the action of ${\mathbb{H}^{\mathrm{spl}}}^{\times}$ on $\mathcal{Q}$. The kernel of the action on the projective space is the set of units acting trivially on all lines of $\mathbb{H}^{\mathrm{spl}}$, which is the centre $\mathbb{R}^{\times}$; the quotient is $\mathrm{PGL}_2(\mathbb{R})$ by the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*.
 
 ## The Unit Hyperboloids and Their Metrics
 
@@ -70,7 +70,7 @@ The level sets of the two forms carry metrics of opposite character.
 **Theorem (The Level Set in the Algebra).** The set
 
 $$
-U = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = 1\}
+U = \{\tilde q \in \mathbb{H}^{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 1\}
 $$
 
 is a connected smooth three-dimensional submanifold of $\mathbb{R}^4$, equal as a set to the norm-one group $\mathrm{SL}_2(\mathbb{R})$. The polar form $\langle\cdot,\cdot\rangle$ restricts to a pseudo-Riemannian metric of signature $(2,1)$ on it, and the metric is bi-invariant under left and right translations, so that $U$ is a three-dimensional Lorentzian group manifold.
@@ -139,7 +139,7 @@ The geometry of $V$ is three-dimensional Lorentzian geometry, and its features a
 
 The two families of maximal isotropic planes give the quadric an incidence structure, and it is the projective geometry of the product $\mathbb{P}^1\times\mathbb{P}^1$.
 
-**Theorem (The Incidence of the Two Families).** Every plane of one family meets every plane of the other family in a line of $\mathbb{H}_{\mathrm{s}}$, whose projectivisation is exactly one point of the quadric, and the resulting map
+**Theorem (The Incidence of the Two Families).** Every plane of one family meets every plane of the other family in a line of $\mathbb{H}^{\mathrm{spl}}$, whose projectivisation is exactly one point of the quadric, and the resulting map
 
 $$
 \mathcal{K} \times \mathcal{R} \longrightarrow Q, \qquad (P, P') \longmapsto \mathbb{P}(P \cap P'),
@@ -162,9 +162,9 @@ Every distinguished subspace of the algebra inherits a form, and the inherited f
 | $S = \mathbb{R}\cdot 1$ | $q_t^2$ | definite; the unit level set is $\{\pm 1\}$ |
 | $V$ | $q_x^2 - q_y^2 - q_z^2$, signature $(2,1)$ | the Lorentzian geometry of the vector subspace |
 | $\mathbb{R}[\vec e_x] = \operatorname{span}\{1,\vec e_x\}$ | $q_t^2 + q_x^2$ | definite; a copy of the complex plane as a metric plane |
-| $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ | $q_t^2 - q_y^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm \vec e_y)$; the unit hyperbola $q_t^2 - q_y^2 = 1$ |
-| $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | $q_t^2 - q_z^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm \vec e_z)$ |
-| $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$, $\tilde\pi_{1,2}\mathbb{H}_{\mathrm{s}}$ | identically zero | isotropic planes, ruling the quadric |
+| $\mathbb{C}^{\mathrm{spl}}_2 = \operatorname{span}\{1,\vec e_y\}$ | $q_t^2 - q_y^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm \vec e_y)$; the unit hyperbola $q_t^2 - q_y^2 = 1$ |
+| $\mathbb{C}^{\mathrm{spl}}_3 = \operatorname{span}\{1,\vec e_z\}$ | $q_t^2 - q_z^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm \vec e_z)$ |
+| $\mathbb{H}^{\mathrm{spl}}\tilde\pi_{1,2}$, $\tilde\pi_{1,2}\mathbb{H}^{\mathrm{spl}}$ | identically zero | isotropic planes, ruling the quadric |
 
 **Theorem (The Two-Dimensional Geometries).** On each split-complex subalgebra the inherited form has signature $(1,1)$; the null lines are the lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$, and they are the two isotropic lines of the subalgebra. The isometry group of the subalgebra form is the group $O(1,1)$ of hyperbolic rotations, acting on the hyperbola $q_t^2 - q_y^2 = 1$ with two orbits, the two branches; the distance on a branch is the logarithm of the ratio of the two coordinates in the null basis. The subalgebra $\mathbb{R}[\vec e_x]$ is definite, its form is positive definite, and its geometry is Euclidean; its unit circle is the compact group $SO(2)$ of the elliptic subgroup of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
 
@@ -172,7 +172,7 @@ Every distinguished subspace of the algebra inherits a form, and the inherited f
 
 ## Comparison with the Neighbouring Systems
 
-| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ |
+| | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ |
 |---|---|---|
 | form on the algebra | definite, signature $(4,0)$ | indefinite, signature $(2,2)$ |
 | null quadric | empty | a torus, doubly ruled |
@@ -182,7 +182,7 @@ Every distinguished subspace of the algebra inherits a form, and the inherited f
 | causality | none | the full trichotomy |
 | isometry group of the vector form | $O(3)$ | $O(2,1)$, with identity component $\mathrm{PSL}_2(\mathbb{R})$ |
 
-The quaternion column is the definite geometry of *Quaternion Geometry*, in which the unit sphere is compact and there is no cone. The single cause of every difference is the sign pattern of the form. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ of the notation table is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here; the geometry of the present system is the three-dimensional Lorentzian geometry of the vector subspace together with the ruled quadric of the algebra, and the eight-dimensional system carries a different geometry.
+The quaternion column is the definite geometry of *Quaternion Geometry*, in which the unit sphere is compact and there is no cone. The single cause of every difference is the sign pattern of the form. The eight-dimensional relative $\mathbb{B}^{\mathrm{spl}}$ of the notation table is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here; the geometry of the present system is the three-dimensional Lorentzian geometry of the vector subspace together with the ruled quadric of the algebra, and the eight-dimensional system carries a different geometry.
 
 ## Summary
 

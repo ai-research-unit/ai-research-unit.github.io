@@ -544,7 +544,7 @@ As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger sc
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm{r}}$ | the reduced biquaternion algebra, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ |
+| $\mathbb{B}^{\mathrm{red}}$ | the reduced biquaternion algebra, $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | a reduced biquaternion |
 | $Q_{\blacktriangle},Q_{\blacktriangledown}$ | the two complex coordinates |
 | $C_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | the two complex components |

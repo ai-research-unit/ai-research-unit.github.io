@@ -9,7 +9,7 @@ The split-quaternion algebra, its split-quaternion norm, its conjugation and its
 
 ## Volume Integrals and the Orientation
 
-**Definition.** Let $\Omega \subset \mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ be a domain with piecewise smooth boundary. The **volume integral** of a split-quaternion-valued function $f$ on $\Omega$ is defined componentwise in the basis $1, \vec e_x, \vec e_y, \vec e_z$:
+**Definition.** Let $\Omega \subset \mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^4$ be a domain with piecewise smooth boundary. The **volume integral** of a split-quaternion-valued function $f$ on $\Omega$ is defined componentwise in the basis $1, \vec e_x, \vec e_y, \vec e_z$:
 
 $$
 \int_\Omega f = \Big(\int_\Omega f_t\Big) + \Big(\int_\Omega f_x\Big) \vec e_x + \Big(\int_\Omega f_y\Big) \vec e_y + \Big(\int_\Omega f_z\Big) \vec e_z ,
@@ -17,7 +17,7 @@ $$
 
 and it is the Bochner integral of a function with values in the finite-dimensional normed space with the Euclidean norm of *Split-Quaternion Analysis*, §*The Metric Structure*.
 
-**Definition (Orientation).** The algebra $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ is oriented by the frame $(1, \vec e_x, \vec e_y, \vec e_z)$, so the volume element is $\mathrm{d}q_t\,\mathrm{d}q_x\,\mathrm{d}q_y\,\mathrm{d}q_z$. The vector subspace $V$ with the coordinates $(q_x,q_y,q_z)$ is oriented by $(\vec e_x,\vec e_y,\vec e_z)$; the form restricted to it is $q_x^2-q_y^2-q_z^2$, and this is the three-dimensional Lorentzian space whose Lorentz group is $\mathrm{SO}^{+}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*. Both orientations are fixed once and for all; no factor of $i$ or of any other non-real element is introduced into any integral in this article.
+**Definition (Orientation).** The algebra $\mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^4$ is oriented by the frame $(1, \vec e_x, \vec e_y, \vec e_z)$, so the volume element is $\mathrm{d}q_t\,\mathrm{d}q_x\,\mathrm{d}q_y\,\mathrm{d}q_z$. The vector subspace $V$ with the coordinates $(q_x,q_y,q_z)$ is oriented by $(\vec e_x,\vec e_y,\vec e_z)$; the form restricted to it is $q_x^2-q_y^2-q_z^2$, and this is the three-dimensional Lorentzian space whose Lorentz group is $\mathrm{SO}^{+}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*. Both orientations are fixed once and for all; no factor of $i$ or of any other non-real element is introduced into any integral in this article.
 
 **Theorem (The Boundary and the Normal).** Let $\partial\Omega$ be a piecewise smooth hypersurface with outward unit normal $(n_{q_t},n_{q_x},n_{q_y},n_{q_z})$ in the Euclidean metric of $\mathbb{R}^4$, and let
 
@@ -250,7 +250,7 @@ is a distribution of degree zero supported on the null cone; in the standard reg
 
 ## Comparison with the Quaternion and Split-Complex Cases
 
-| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{D}$ |
+| | $\mathbb{H}$ | $\mathbb{H}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{spl}}$ |
 |---|---|---|---|
 | operator | Cauchy–Riemann, elliptic | wave operator, hyperbolic | wave operator in one variable |
 | fundamental solution | Poisson kernel, singular at a point | distribution supported on the cone | supported on the two characteristic lines |
@@ -259,7 +259,7 @@ is a distribution of degree zero supported on the null cone; in the standard reg
 | compactly supported solutions of the monogenic equation | none, by Liouville | many: the kernel of $D$ is large | many, by the same zero-divisor mechanism |
 | singularities of solutions | off a point, removable | on characteristic surfaces | on characteristic lines |
 
-The quaternion column is the content of *Quaternion Integration* and the split-complex column that of *Split-Complex Integration*. The single cause of the difference is again the indefiniteness of the form, equivalently the presence of the zero divisors: the characteristic cone of the operator is the zero divisor set, and the fundamental solution must be singular along it. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.
+The quaternion column is the content of *Quaternion Integration* and the split-complex column that of *Split-Complex Integration*. The single cause of the difference is again the indefiniteness of the form, equivalently the presence of the zero divisors: the characteristic cone of the operator is the zero divisor set, and the fundamental solution must be singular along it. The eight-dimensional relative $\mathbb{B}^{\mathrm{spl}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.
 
 ## Summary
 

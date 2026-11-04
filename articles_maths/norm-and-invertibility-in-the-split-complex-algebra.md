@@ -14,11 +14,11 @@ the first of the two algebraic norms of the space and not the second, $\langle Q
 
 The invertibility is where the article records an **absence**. The plain product is associative and unital, so its invertible elements and its group of units are defined; but the algebraic norm of the product does **not** decide them. The element $1+j$ is a zero divisor and satisfies $\langle 1+j\rangle=2(1+j)\neq0$: the non-vanishing of the algebraic norm is not sufficient for invertibility. The converse failure cannot occur, because $\langle Q\rangle=0$ forces $Q=0$ over the reals; the norm is anisotropic and sees only the origin. The article states that absence rather than a criterion. The criterion of the plain product is furnished by the other algebraic norm, $\langle Q\rangle_{*}=Q\bar Q$, which is not the algebraic norm of the plain product and is studied in *Norm and Invertibility in the General Split-Complex Algebra*; the zero divisors are *Zero Divisors of the Split-Complex Algebra*.
 
-**The results.** The plain product carries one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$, $\mathbb{D}$-valued, anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$ in the basis $1,j$. It is **multiplicative**, $\langle QB\rangle=\langle Q\rangle\langle B\rangle$, by associativity of the ring. It is **not a real norm**: its value is not real in general, it defines no order and no modulus, and its vanishing set is the single point $\{0\}$. It does **not** decide invertibility: $\langle Q\rangle\neq0$ does not force $Q$ to be a unit, the witness being the zero divisor $1+j$. Each section below states its result first and then proves it.
+**The results.** The plain product carries one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$, $\mathbb{C}^{\mathrm{spl}}$-valued, anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$ in the basis $1,j$. It is **multiplicative**, $\langle QB\rangle=\langle Q\rangle\langle B\rangle$, by associativity of the ring. It is **not a real norm**: its value is not real in general, it defines no order and no modulus, and its vanishing set is the single point $\{0\}$. It does **not** decide invertibility: $\langle Q\rangle\neq0$ does not force $Q$ to be a unit, the witness being the zero divisor $1+j$. Each section below states its result first and then proves it.
 
 ## The Algebraic Norm of the Plain Product
 
-**The general plain bilinear product carries exactly one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$; it is $\mathbb{D}$-valued and anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$, and its vanishing set is the origin.**
+**The general plain bilinear product carries exactly one algebraic norm, the diagonal of its general plain bilinear form, $\langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j$; it is $\mathbb{C}^{\mathrm{spl}}$-valued and anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$, and its vanishing set is the origin.**
 
 ### Definition
 
@@ -40,14 +40,14 @@ $$
 \langle Q\rangle=(q+jq')^{2}=q^{2}+q'^{2}+2qq'j,
 $$
 
-so the algebraic norm takes its value in the whole algebra $\mathbb{D}$ and not in the base field.
+so the algebraic norm takes its value in the whole algebra $\mathbb{C}^{\mathrm{spl}}$ and not in the base field.
 
 **Basic properties.** Each is a direct reading of the definition.
 
-- $\langle Q\rangle$ is **$\mathbb{D}$-valued**; it is real exactly when $qq'=0$, that is on the real line $\mathbb{R}_{\mathbb{D}}$ or on the split imaginary line $j\mathbb{R}_{\mathbb{D}}$.
+- $\langle Q\rangle$ is **$\mathbb{C}^{\mathrm{spl}}$-valued**; it is real exactly when $qq'=0$, that is on the real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ or on the split imaginary line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$.
 - $\langle\cdot\rangle$ is **homogeneous of degree two**, $\langle\lambda Q\rangle=\lambda^{2}\langle Q\rangle$ for $\lambda\in\mathbb{R}$, and its polarisation is the form of the same letter, $\langle Q+B\rangle-\langle Q\rangle-\langle B\rangle=2\langle Q,B\rangle=2QB$.
 - $\langle\cdot\rangle$ is **anisotropic**: it vanishes only at $Q=0$. It is therefore not indefinite, but it is not a real norm either, because its value is not real.
-- Its **realified Gram matrix** on the basis $1,j$ is the identity $\operatorname{diag}(1,1)$, since the real part of $Q_2Q_1$ is $q_2q_1+q'_2q'_1$. The full $\mathbb{D}$-valued form has the symmetric Gram matrix $\begin{pmatrix}1&j\\j&1\end{pmatrix}$.
+- Its **realified Gram matrix** on the basis $1,j$ is the identity $\operatorname{diag}(1,1)$, since the real part of $Q_2Q_1$ is $q_2q_1+q'_2q'_1$. The full $\mathbb{C}^{\mathrm{spl}}$-valued form has the symmetric Gram matrix $\begin{pmatrix}1&j\\j&1\end{pmatrix}$.
 - Its **vanishing set** is $\{Q:\langle Q\rangle=0\}=\{0\}$.
 
 ### The Polarisation
@@ -58,7 +58,7 @@ $$
 \boxed{\; \langle Q_2,Q_1\rangle=\tfrac12\bigl(\langle Q_2+Q_1\rangle-\langle Q_2\rangle-\langle Q_1\rangle\bigr)=Q_2Q_1 \;},
 $$
 
-and it is $\mathbb{D}$-valued and symmetric.
+and it is $\mathbb{C}^{\mathrm{spl}}$-valued and symmetric.
 
 **Proof.** Expand $(Q_2+Q_1)^{2}=Q_2^{2}+Q_2Q_1+Q_1Q_2+Q_1^{2}$; the algebra is commutative, so the two middle terms are equal and the half-difference is $Q_2Q_1$.
 
@@ -67,7 +67,7 @@ and it is $\mathbb{D}$-valued and symmetric.
 **Theorem.** The algebraic norm of the plain product is multiplicative:
 
 $$
-\boxed{\;\langle QB\rangle=\langle Q\rangle\langle B\rangle,\qquad Q,B\in\mathbb{D}\;}.
+\boxed{\;\langle QB\rangle=\langle Q\rangle\langle B\rangle,\qquad Q,B\in\mathbb{C}^{\mathrm{spl}}\;}.
 $$
 
 **Proof.** By associativity and commutativity of the ring,
@@ -84,7 +84,7 @@ The multiplicativity is the multiplicativity of the square in any commutative as
 
 ## The Algebraic Norm Is Not a Real Norm
 
-**The algebraic norm is $\mathbb{D}$-valued, not real; its real part is the Euclidean form $q^{2}+q'^{2}$, positive definite, and its imaginary part is $2qq'$. It is therefore not a norm of the real vector space, although it is multiplicative.**
+**The algebraic norm is $\mathbb{C}^{\mathrm{spl}}$-valued, not real; its real part is the Euclidean form $q^{2}+q'^{2}$, positive definite, and its imaginary part is $2qq'$. It is therefore not a norm of the real vector space, although it is multiplicative.**
 
 ### The Real and the Imaginary Parts
 
@@ -152,11 +152,11 @@ while $Q$ is a zero divisor, $(1+j)(1-j)=1-j^{2}=0$, hence not invertible.
 
 ## The Unit and the Group of Units
 
-**The plain product is associative and unital, with the two-sided unit $1$, and its invertible elements form the group of units $\mathbb{D}^{\times}$, a proper subset of $\mathbb{D}\setminus\{0\}$ because the product has zero divisors.**
+**The plain product is associative and unital, with the two-sided unit $1$, and its invertible elements form the group of units ${\mathbb{C}^{\mathrm{spl}}}^{\times}$, a proper subset of $\mathbb{C}^{\mathrm{spl}}\setminus\{0\}$ because the product has zero divisors.**
 
 The unit of the plain product is $1$: it is a two-sided unit, $Q1=1Q=Q$, and it is the only one. The product is associative and commutative, so the inverse of an element is unique when it exists and the invertible elements form the **group of units** of the plain product, an abelian group.
 
-The plain product has zero divisors: the identity $(1+j)(1-j)=0$ exhibits a product of two nonzero elements that is zero. The plain algebra is therefore not a division algebra, and the group of units is a proper subset of $\mathbb{D}\setminus\{0\}$. The zero divisors, their two families and their geometry are *Zero Divisors of the Split-Complex Algebra*, and they are cited here, not read.
+The plain product has zero divisors: the identity $(1+j)(1-j)=0$ exhibits a product of two nonzero elements that is zero. The plain algebra is therefore not a division algebra, and the group of units is a proper subset of $\mathbb{C}^{\mathrm{spl}}\setminus\{0\}$. The zero divisors, their two families and their geometry are *Zero Divisors of the Split-Complex Algebra*, and they are cited here, not read.
 
 The group is described by the other algebraic norm: an element is a unit exactly when $\langle Q\rangle_{*}=Q\bar Q\neq0$, and then $Q^{-1}=\bar Q/\langle Q\rangle_{*}$. That criterion, the four components of the group and the distribution of the units among the distinguished subspaces are the subject of *Norm and Invertibility in the General Split-Complex Algebra*; the present article only records that the group exists and that its boundary is not the vanishing set of $\langle\cdot\rangle$.
 
@@ -168,7 +168,7 @@ $$
 \langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j,
 $$
 
-$\mathbb{D}$-valued, anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$ and vanishing set the origin. It is multiplicative, $\langle QB\rangle=\langle Q\rangle\langle B\rangle$, by associativity of the ring, and invariant under the conjugation, $\langle\bar Q\rangle=\overline{\langle Q\rangle}$.
+$\mathbb{C}^{\mathrm{spl}}$-valued, anisotropic, of realified Gram matrix $\operatorname{diag}(1,1)$ and vanishing set the origin. It is multiplicative, $\langle QB\rangle=\langle Q\rangle\langle B\rangle$, by associativity of the ring, and invariant under the conjugation, $\langle\bar Q\rangle=\overline{\langle Q\rangle}$.
 
 It is **not a real norm**: its value is not real in general, its real part is the Euclidean form $q^{2}+q'^{2}$ and its imaginary part is $2qq'$, and it defines no order and no modulus. It does **not** decide invertibility: the zero divisor $1+j$ has $\langle 1+j\rangle=2+2j\neq0$, so non-vanishing is not sufficient; the implication $\langle Q\rangle=0\Rightarrow Q=0$ holds, but it only says that the origin is not a unit. The plain product is associative and unital, with unit $1$ and a genuine abelian group of units; the criterion is carried by the other algebraic norm $\langle Q\rangle_{*}=Q\bar Q$, which is not the algebraic norm of the plain product.
 
@@ -183,7 +183,7 @@ It is **not a real norm**: its value is not real in general, its real part is th
 | $\operatorname{diag}(1,1)$ | the realified Gram matrix of $\langle\cdot\rangle$ in the basis $1,j$ |
 | $\{Q:\langle Q\rangle=0\}=\{0\}$ | the vanishing set of the algebraic norm; not the zero-divisor set |
 | $1$ | the two-sided unit of the plain product |
-| $\mathbb{D}^{\times}$ | the group of units of the plain product, not read from $\langle\cdot\rangle$ |
+| ${\mathbb{C}^{\mathrm{spl}}}^{\times}$ | the group of units of the plain product, not read from $\langle\cdot\rangle$ |
 | $1+j$ | the witness: a zero divisor with $\langle 1+j\rangle=2+2j\neq0$ |
 
 ## Further Reading

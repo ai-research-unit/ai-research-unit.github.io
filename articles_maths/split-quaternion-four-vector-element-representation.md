@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is the four-dimensional real algebra with basis $1, \vec e_x, \vec e_y, \vec e_z$, where $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = +1$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$. A general element is written
+The split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$ is the four-dimensional real algebra with basis $1, \vec e_x, \vec e_y, \vec e_z$, where $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = +1$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$. A general element is written
 
 $$
 \tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
@@ -11,7 +11,7 @@ $$
 
 The algebra, its three involutions, its distinguished subspaces and its split-quaternion norm are those of the companion articles *Split-Quaternion Algebra* and *Split-Quaternion Scalar and Vector Subspaces*, and nothing of that structure is re-derived here except where the coordinate realization requires it.
 
-This article presents the **four-vector realization** of $\mathbb{H}_{\mathrm{s}}$: the split-quaternion read off as its list of four real coefficients. The word *representation* is used in the sense of a concrete realization of the algebra as computable objects, the sense in which *Split-Quaternion Other Algebraic Element Representations* uses it, and not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of *Split-Quaternion Linear Representations*. The article owns the coefficient space, the column and the dual row, the component form of the product, the three involutions in coordinates, the distinguished subspaces as coordinate conditions, and the split-quaternion norm with its signatures. It introduces no physical vocabulary.
+This article presents the **four-vector realization** of $\mathbb{H}^{\mathrm{spl}}$: the split-quaternion read off as its list of four real coefficients. The word *representation* is used in the sense of a concrete realization of the algebra as computable objects, the sense in which *Split-Quaternion Other Algebraic Element Representations* uses it, and not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of *Split-Quaternion Linear Representations*. The article owns the coefficient space, the column and the dual row, the component form of the product, the three involutions in coordinates, the distinguished subspaces as coordinate conditions, and the split-quaternion norm with its signatures. It introduces no physical vocabulary.
 
 ## The Coefficient Space
 
@@ -21,13 +21,13 @@ $$
 \tilde q_\mu = (q_t, q_x, q_y, q_z), \qquad \tilde q_0 = q_t, \quad (\tilde q_1, \tilde q_2, \tilde q_3) = (q_x, q_y, q_z),
 $$
 
-where $\tilde q_0$ is the **scalar component** and $\tilde q_1, \tilde q_2, \tilde q_3$ are the **vector components**. Unlike the biquaternion case, every component is a real number, because $\mathbb{H}_{\mathrm{s}}$ has no central imaginary unit and no complex structure.
+where $\tilde q_0$ is the **scalar component** and $\tilde q_1, \tilde q_2, \tilde q_3$ are the **vector components**. Unlike the biquaternion case, every component is a real number, because $\mathbb{H}^{\mathrm{spl}}$ has no central imaginary unit and no complex structure.
 
-**Proposition.** The map $\tilde q \mapsto \tilde q_\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{H}_{\mathrm{s}}$ onto $\mathbb{R}^4$. Consequently the coefficient space has real dimension $4$.
+**Proposition.** The map $\tilde q \mapsto \tilde q_\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{H}^{\mathrm{spl}}$ onto $\mathbb{R}^4$. Consequently the coefficient space has real dimension $4$.
 
 **Proof.** The map sends the basis $1, \vec e_x, \vec e_y, \vec e_z$ to the standard basis of $\mathbb{R}^4$ and is extended by linearity; it is bijective on bases.
 
-The coefficient space $\mathbb{R}^4$ is **not** the simple module of $\mathbb{H}_{\mathrm{s}}$. The simple module has real dimension $2$ and is the subject of *Split-Quaternion Matrix Element Representations*; the coefficient space is the algebra itself, of real dimension $4$. The number $4$ recurs as the size of the matrix of the regular action on this space, and it is the same four for a different reason: the algebra has real dimension $4$, so the matrix of its left action on itself is $4 \times 4$.
+The coefficient space $\mathbb{R}^4$ is **not** the simple module of $\mathbb{H}^{\mathrm{spl}}$. The simple module has real dimension $2$ and is the subject of *Split-Quaternion Matrix Element Representations*; the coefficient space is the algebra itself, of real dimension $4$. The number $4$ recurs as the size of the matrix of the regular action on this space, and it is the same four for a different reason: the algebra has real dimension $4$, so the matrix of its left action on itself is $4 \times 4$.
 
 ## The Column and the Dual Row
 
@@ -94,8 +94,8 @@ The four distinguished subspaces are cut out by coordinate conditions:
 |---|---|---|
 | $S$ | $\tilde q_1 = \tilde q_2 = \tilde q_3 = 0$ | $(q_t,0,0,0)$ |
 | $V$ | $\tilde q_0 = 0$ | $(0,q_x,q_y,q_z)$ |
-| $\mathbb{D}_2$ | $\tilde q_1 = \tilde q_3 = 0$ | $(q_t,0,q_y,0)$ |
-| $\mathbb{D}_3$ | $\tilde q_1 = \tilde q_2 = 0$ | $(q_t,0,0,q_z)$ |
+| $\mathbb{C}^{\mathrm{spl}}_2$ | $\tilde q_1 = \tilde q_3 = 0$ | $(q_t,0,q_y,0)$ |
+| $\mathbb{C}^{\mathrm{spl}}_3$ | $\tilde q_1 = \tilde q_2 = 0$ | $(q_t,0,0,q_z)$ |
 
 So the scalar subspace is the first coordinate axis, the vector subspace is the hyperplane $\tilde q_0 = 0$, and the two split-complex planes are the coordinate planes $(q_t,q_y)$ and $(q_t,q_z)$. The fourth coordinate plane, $(q_t,q_x)$, is the definite plane $\mathbb{R}[\vec e_x] \cong \mathbb{C}$, which is not among the four distinguished subspaces. The involutions of the previous section preserve each of these coordinate conditions, as the sign table shows.
 
@@ -117,8 +117,8 @@ The restrictions to the distinguished subspaces read off the coordinates:
 |---|---|---|
 | $S$ | $q_t^2$ | positive definite |
 | $V$ | $q_x^2 - q_y^2 - q_z^2$ | $(2,1)$ |
-| $\mathbb{D}_2$ | $q_t^2 - q_y^2$ | $(1,1)$ |
-| $\mathbb{D}_3$ | $q_t^2 - q_z^2$ | $(1,1)$ |
+| $\mathbb{C}^{\mathrm{spl}}_2$ | $q_t^2 - q_y^2$ | $(1,1)$ |
+| $\mathbb{C}^{\mathrm{spl}}_3$ | $q_t^2 - q_z^2$ | $(1,1)$ |
 
 Only the scalar restriction is definite; the others are indefinite, and their null sets are the zero-divisor sets of the respective subspaces.
 
@@ -136,7 +136,7 @@ and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}
 
 **Proof.** The identity $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ gives $\tilde q \cdot (\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = 1$ whenever $\langle\tilde q\rangle_{\natural} \neq 0$; conversely, if $\langle\tilde q\rangle_{\natural} = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.
 
-The non-invertible nonzero four-vectors are exactly those on the **null cone** $q_t^2 + q_x^2 = q_y^2 + q_z^2$; on the vector subspace $q_t = 0$ this is the null cone $q_x^2 = q_y^2 + q_z^2$ of the Minkowski form, and in the split-complex plane $\mathbb{D}_2$ it is the pair of isotropic lines $q_t = \pm q_y$.
+The non-invertible nonzero four-vectors are exactly those on the **null cone** $q_t^2 + q_x^2 = q_y^2 + q_z^2$; on the vector subspace $q_t = 0$ this is the null cone $q_x^2 = q_y^2 + q_z^2$ of the Minkowski form, and in the split-complex plane $\mathbb{C}^{\mathrm{spl}}_2$ it is the pair of isotropic lines $q_t = \pm q_y$.
 
 ## The Analogue of the Four-Vector Representation of $\mathbb{B}$
 
@@ -144,15 +144,15 @@ The biquaternion article *The Biquaternion Algebra*, §*The Coordinate Systems*,
 
 ## Summary
 
-The four-vector realization reads a split-quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ as the quadruple $(q_t,q_x,q_y,q_z) \in \mathbb{R}^4$, an $\mathbb{R}$-linear isomorphism $\mathbb{H}_{\mathrm{s}} \to \mathbb{R}^4$ with no complex structure. The column $X$ is the quadruple written vertically and the row $X^{\mathsf{T}}$ is its dual under the non-degenerate pairing $\langle\cdot,\cdot\rangle_{\natural}$ with matrix $G = \operatorname{diag}(1,1,-1,-1)$.
+The four-vector realization reads a split-quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ as the quadruple $(q_t,q_x,q_y,q_z) \in \mathbb{R}^4$, an $\mathbb{R}$-linear isomorphism $\mathbb{H}^{\mathrm{spl}} \to \mathbb{R}^4$ with no complex structure. The column $X$ is the quadruple written vertically and the row $X^{\mathsf{T}}$ is its dual under the non-degenerate pairing $\langle\cdot,\cdot\rangle_{\natural}$ with matrix $G = \operatorname{diag}(1,1,-1,-1)$.
 
-The product is computed in components by the displayed formula, whose scalar part is $\langle\tilde q_1,\tilde q_2^{\natural}\rangle$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_x,q_y,q_z)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_t$-axis ($S$), $\tilde q_0=0$ ($V$), and the $(q_t,q_y)$-, $(q_t,q_z)$-planes ($\mathbb{D}_2, \mathbb{D}_3$). The split-quaternion norm is $q_t^2 + q_x^2 - q_y^2 - q_z^2$ of signature $(2,2)$, restricting to $q_t^2$, $q_x^2-q_y^2-q_z^2$, $q_t^2-q_y^2$ and $q_t^2-q_z^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \tilde{q}^{\natural}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.
+The product is computed in components by the displayed formula, whose scalar part is $\langle\tilde q_1,\tilde q_2^{\natural}\rangle$ and whose vector part is the antisymmetric remainder. The three involutions act by independent sign flips of $(q_x,q_y,q_z)$: conjugation by $(-,-,-)$, the principal involution by $(-,-,+)$, and the reversal by $(+,+,-)$, with the scalar component always fixed. The distinguished subspaces are the coordinate conditions $q_t$-axis ($S$), $\tilde q_0=0$ ($V$), and the $(q_t,q_y)$-, $(q_t,q_z)$-planes ($\mathbb{C}^{\mathrm{spl}}_2, \mathbb{C}^{\mathrm{spl}}_3$). The split-quaternion norm is $q_t^2 + q_x^2 - q_y^2 - q_z^2$ of signature $(2,2)$, restricting to $q_t^2$, $q_x^2-q_y^2-q_z^2$, $q_t^2-q_y^2$ and $q_t^2-q_z^2$ on the four subspaces, and it gives the unit criterion $N \neq 0$ with $\tilde q^{-1} = \tilde{q}^{\natural}/N$. This is the real, indefinite analogue of the complex four-vector representation of $\mathbb{B}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
+| $\mathbb{H}^{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a general split-quaternion | *Split-Quaternion Algebra* |
 | $\tilde q_\mu = (q_t,q_x,q_y,q_z)$ | the four-vector of $\tilde q$ | this article |
 | $\tilde q_0 = q_t$, $(\tilde q_1,\tilde q_2,\tilde q_3) = (q_x,q_y,q_z)$ | the scalar and vector components | this article |
@@ -161,7 +161,7 @@ The product is computed in components by the displayed formula, whose scalar par
 | $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 | $\langle\tilde q_1,\tilde q_2\rangle$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
 | ${}^{\natural}, \alpha, \rho$ | the three involutions as sign flips | *Split-Quaternion Subspaces and the Involutions* |
-| $S, V, \mathbb{D}_2, \mathbb{D}_3$ | the distinguished subspaces as coordinate conditions | *Split-Quaternion Relations Between Subspaces* |
+| $S, V, \mathbb{C}^{\mathrm{spl}}_2, \mathbb{C}^{\mathrm{spl}}_3$ | the distinguished subspaces as coordinate conditions | *Split-Quaternion Relations Between Subspaces* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading

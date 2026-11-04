@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The corpus studies, for each algebraic structure of the twelve, the classes of element singled out by the multiplication: the units and the zero divisors, the idempotents, the nilpotents, the square roots of the three central values $-1$, $0$ and $+1$, and the square roots of a general element. This article is the **hub** of those classes for the split-complex algebra $\mathbb{D}$, the two-dimensional member of the family. It names each class with its pointer, records the inclusions and the disjointness among the classes, and owns the one object that none of the specialised articles carries: the **order cone of squares**.
+The corpus studies, for each algebraic structure of the twelve, the classes of element singled out by the multiplication: the units and the zero divisors, the idempotents, the nilpotents, the square roots of the three central values $-1$, $0$ and $+1$, and the square roots of a general element. This article is the **hub** of those classes for the split-complex algebra $\mathbb{C}^{\mathrm{spl}}$, the two-dimensional member of the family. It names each class with its pointer, records the inclusions and the disjointness among the classes, and owns the one object that none of the specialised articles carries: the **order cone of squares**.
 
 **The classes and their articles.** The classes are now developed in the articles of the block, one subject per article:
 
@@ -16,24 +16,24 @@ The corpus studies, for each algebraic structure of the twelve, the classes of e
 
 This article does not restate the proofs of those articles. It records the **relations among the classes**, which no single article owns, and the order cone of squares, which is the image of the square map and the order that the algebra carries.
 
-**The results.** The elements of $\mathbb{D}$ fall into the three disjoint classes: the units, the zero element, and the zero divisors. The idempotents are the four elements $0,1,\Pi_{+},\Pi_{-}$; the nontrivial ones are the primitive zero divisors, and $0$ is an idempotent but not a zero divisor. There are no nonzero nilpotents, so the nilpotent class is empty; the square-zero elements are exactly $\{0\}$, which is the root of $0$ and is not a nilpotent under the corpus convention. The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $-1$ are empty; the roots of a general element exist exactly on the forward cone $\mathcal{C}=\{q\ge|q'|\}$, with four, two, one or no roots according to the position in the cone. The forward cone is a pointed closed convex cone, the image of the square map, and the order it defines is compatible with addition and with multiplication by elements of the cone.
+**The results.** The elements of $\mathbb{C}^{\mathrm{spl}}$ fall into the three disjoint classes: the units, the zero element, and the zero divisors. The idempotents are the four elements $0,1,\Pi_{+},\Pi_{-}$; the nontrivial ones are the primitive zero divisors, and $0$ is an idempotent but not a zero divisor. There are no nonzero nilpotents, so the nilpotent class is empty; the square-zero elements are exactly $\{0\}$, which is the root of $0$ and is not a nilpotent under the corpus convention. The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $-1$ are empty; the roots of a general element exist exactly on the forward cone $\mathcal{C}=\{q\ge|q'|\}$, with four, two, one or no roots according to the position in the cone. The forward cone is a pointed closed convex cone, the image of the square map, and the order it defines is compatible with addition and with multiplication by elements of the cone.
 
 ## The Classes and Their Articles
 
 **The classes are organised by the equation that defines them and by the article that owns them; the table is the index of the block.**
 
-| class | defining equation or condition | set in $\mathbb{D}$ | article |
+| class | defining equation or condition | set in $\mathbb{C}^{\mathrm{spl}}$ | article |
 |---|---|---|---|
 | units | $QB=1$ soluble | $\{Q_{+}Q_{-}\neq0\}$ | *Norm and Invertibility in the General Split-Complex Algebra* |
 | zero divisors | $Q\neq0$, $QB=0$ with $B\neq0$ | $\mathbb{R}^{\times}\Pi_{+}\cup\mathbb{R}^{\times}\Pi_{-}$ | *Zero Divisors of the Split-Complex Algebra* |
-| annihilators | $\{B:QB=0\}$ | $\{0\}$ off $\mathcal{N}$, the opposite line on $\mathcal{N}\setminus\{0\}$, and $\mathbb{D}$ at $0$ | *Annihilators of the Split-Complex Algebra* |
+| annihilators | $\{B:QB=0\}$ | $\{0\}$ off $\mathcal{N}$, the opposite line on $\mathcal{N}\setminus\{0\}$, and $\mathbb{C}^{\mathrm{spl}}$ at $0$ | *Annihilators of the Split-Complex Algebra* |
 | idempotents | $\Pi^{2}=\Pi$ | $\{0,1,\Pi_{+},\Pi_{-}\}$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
 | roots of $+1$ | $\Xi^{2}=1$ | $\{1,-1,j,-j\}$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
 | roots of $0$ | $\Xi^{2}=0$ | $\{0\}$ | *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* |
 | nilpotents | $\Upsilon\neq0$, $\Upsilon^{n}=0$ | $\varnothing$ | *Square Roots of Zero and the Nilpotents of the Split-Complex Algebra* |
 | roots of $-1$ | $\Xi^{2}=-1$ | $\varnothing$ | *Square Roots of One and the Idempotents of the Split-Complex Algebra* |
 | roots of a general $Q$ | $\Xi^{2}=Q$ | $\varepsilon_{+}\sqrt{Q_{+}}\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\Pi_{-}$ over the real signs; nonempty exactly when $Q_{+},Q_{-}\ge0$ | *Square Roots of a General Element in the Split-Complex Algebra* |
-| ideals | additive subgroups closed under multiplication | $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{D}$ | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |
+| ideals | additive subgroups closed under multiplication | $0$, $\mathbb{R}\Pi_{+}$, $\mathbb{R}\Pi_{-}$, $\mathbb{C}^{\mathrm{spl}}$ | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |
 
 ## The Inclusions and the Disjointness
 
@@ -41,7 +41,7 @@ This article does not restate the proofs of those articles. It records the **rel
 
 ### The Partition by Invertibility
 
-For $Q\in\mathbb{D}$ exactly one of the following holds:
+For $Q\in\mathbb{C}^{\mathrm{spl}}$ exactly one of the following holds:
 
 1. $Q$ is a unit: $Q_{+}Q_{-}\neq0$;
 2. $Q=0$;
@@ -85,14 +85,14 @@ The two algebraic norms see different classes, and the difference is the source 
 
 | norm | value | vanishing set | class it decides |
 |---|---|---|---|
-| $\langle Q\rangle=Q^{2}$ | $\mathbb{D}$-valued | $\{0\}$ | none; it does not decide invertibility |
+| $\langle Q\rangle=Q^{2}$ | $\mathbb{C}^{\mathrm{spl}}$-valued | $\{0\}$ | none; it does not decide invertibility |
 | $\langle Q\rangle_{*}=Q\bar Q$ | real, signature $(1,1)$ | $\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$ | the units (value $\neq0$) and the null cone (value $0$); the zero divisors are the punctured cone |
 
 The first norm is anisotropic and sees only the origin; the second is indefinite and sees the null cone. The zero divisors are $\mathcal{N}\setminus\{0\}$, the units are the complement of $\mathcal{N}$, and the origin is the only element that lies on neither side of the dichotomy.
 
 ## The Order Cone of Squares
 
-**The image of the square map is the forward cone $\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{Q:q\ge|q'|\}$, a pointed closed convex cone; it defines a partial order on $\mathbb{D}$ compatible with addition and with multiplication by elements of the cone, and a radicand has a square root exactly when it lies in $\mathcal{C}$.**
+**The image of the square map is the forward cone $\mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{Q:q\ge|q'|\}$, a pointed closed convex cone; it defines a partial order on $\mathbb{C}^{\mathrm{spl}}$ compatible with addition and with multiplication by elements of the cone, and a radicand has a square root exactly when it lies in $\mathcal{C}$.**
 
 ### The Image of the Square
 
@@ -126,7 +126,7 @@ The cone is **not** the whole plane and **not** a half-plane: it has nonempty in
 
 ### The Order
 
-The cone defines a partial order on $\mathbb{D}$ by
+The cone defines a partial order on $\mathbb{C}^{\mathrm{spl}}$ by
 
 $$
 Q\succeq B\iff Q-B\in\mathcal{C}\iff Q_{+}\ge B_{+}\text{ and }Q_{-}\ge B_{-} .
@@ -134,7 +134,7 @@ $$
 
 **Proposition.** The relation $\preceq$ is a partial order, it is compatible with addition, and it is compatible with multiplication by non-negative real scalars. It is also compatible with multiplication by elements of $\mathcal{C}$: if $Q\succeq Q'$ and $B\succeq0$ then $QB\succeq Q'B$.
 
-**Proof.** The order is the componentwise order of $\mathbb{R}^{2}$ transported by the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$, so the first two properties are the componentwise order of the plane. For the third, the idempotent coordinates of a product are the products of the coordinates, and the product of two non-negative reals is non-negative.
+**Proof.** The order is the componentwise order of $\mathbb{R}^{2}$ transported by the isomorphism $\mathbb{C}^{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$, so the first two properties are the componentwise order of the plane. For the third, the idempotent coordinates of a product are the products of the coordinates, and the product of two non-negative reals is non-negative.
 
 The order is not total: $\Pi_{+}$ and $\Pi_{-}$ are incomparable, since their difference $j$ has coordinates $(1,-1)$ and neither $j$ nor $-j$ lies in $\mathcal{C}$.
 
@@ -150,7 +150,7 @@ The order cone is therefore the exact domain of the square-root problem: the for
 
 ### The Order and the Classes
 
-| region of $\mathbb{D}$ | condition | class |
+| region of $\mathbb{C}^{\mathrm{spl}}$ | condition | class |
 |---|---|---|
 | interior of $\mathcal{C}$ | $q>|q'|$ | units that are squares; four roots |
 | boundary minus $0$ | $q=|q'|\neq0$ | zero divisors; two roots |
@@ -187,7 +187,7 @@ the image of the square map, a pointed closed convex cone. It defines the compon
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{D}$ | Split complex algebra |
+| $\mathbb{C}^{\mathrm{spl}}$ | Split complex algebra |
 | $Q=q+jq'$ | General split complex number |
 | $Q_{\pm}=q\pm q'$ | Idempotent coordinates |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |

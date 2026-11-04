@@ -39,8 +39,8 @@ which are a complex-linear change of coordinates on the element. The decompositi
 
 | Item | Value |
 |---|---|
-| Algebra | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, basis $1,i,j,ij$ |
-| Domain | $\mathbb{B}_{\mathrm{r}}^\times=\{\breve Q:N=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ |
+| Algebra | $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, basis $1,i,j,ij$ |
+| Domain | ${\mathbb{B}^{\mathrm{red}}}^\times=\{\breve Q:N=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ |
 | Decomposition | $\breve Q=\breve r\,u=\rho(\cosh\phi+j\sinh\phi)\exp(i\alpha)\exp(ij\beta)$ |
 | Parameters | $\rho>0$, $\phi\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^2/\Lambda$ |
 | Unit factor | $u=\exp(i\alpha)\exp(ij\beta)=Q/\breve r$, in $T^2$ |
@@ -48,7 +48,7 @@ which are a complex-linear change of coordinates on the element. The decompositi
 | Existence | every unit has a decomposition |
 | Uniqueness | unique in the principal diamond $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$ |
 | Kernel | $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^2$ |
-| Group | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{R}^2\times T^2$ |
+| Group | ${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$ |
 | Companion | *Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion*, for the reading through the two complex components |
 | Worked examples | *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*, for the eight cases and the reconstruction tables |
 
@@ -71,7 +71,7 @@ the reduced Euler formula of the algebra. The table collects the properties used
 | Property | Value |
 |---|---|
 | Closed form | $\exp(X_{\blacktriangle}+jX_{\blacktriangledown})=\exp(X_{\blacktriangle})(\cosh X_{\blacktriangledown}+j\sinh X_{\blacktriangledown})$ |
-| Image | the unit group $\mathbb{B}_{\mathrm{r}}^\times=\{N\neq0\}$ |
+| Image | the unit group ${\mathbb{B}^{\mathrm{red}}}^\times=\{N\neq0\}$ |
 | Kernel | $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^2$ |
 | Logarithm | exists for every unit, unique modulo the kernel |
 | Principal domain | $\lvert\alpha\rvert+\lvert\beta\rvert\le\pi$, boundary half-open |
@@ -170,7 +170,7 @@ The real dimension is four, the real dimension of the group of units. The coordi
 
 ### The Definition
 
-**Definition.** An **exponential polar decomposition** of $\breve Q\in\mathbb{B}_{\mathrm{r}}^\times$ is a writing
+**Definition.** An **exponential polar decomposition** of $\breve Q\in{\mathbb{B}^{\mathrm{red}}}^\times$ is a writing
 
 $$
 \breve Q=\breve r\,u,
@@ -325,7 +325,7 @@ D=\Bigl\{\ln\rho+j\phi+i\alpha+ij\beta:\rho>0,\ \phi\in\mathbb{R},\ \lvert\alpha
 
 $$
 
-onto the unit group $\mathbb{B}_{\mathrm{r}}^\times$; the boundary of the diamond is taken half-open, so that each pair of angles $(\theta_+,\theta_-)\in(-\pi,\pi]^2$ has exactly one representative.
+onto the unit group ${\mathbb{B}^{\mathrm{red}}}^\times$; the boundary of the diamond is taken half-open, so that each pair of angles $(\theta_+,\theta_-)\in(-\pi,\pi]^2$ has exactly one representative.
 
 **Existence.** Let $\breve Q$ be a unit, so $C_+\neq0$ and $C_-\neq0$. Put
 
@@ -521,13 +521,13 @@ $$
 The radii multiply, the boosts add, and the phases add on the torus. In the components the law is the pair of complex laws $C_\pm(\breve Q_1\breve Q_2)=C_\pm(\breve Q_1)C_\pm(\breve Q_2)$. The group of units is therefore
 
 $$
-\boxed{\;\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{R}^2\times T^2\;},
+\boxed{\;{\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2\;},
 $$
 
 with the two real coordinates $\ln\rho$ and $\phi$ and the two torus coordinates $(\alpha,\beta)$ modulo $\Lambda$. The exponential exhibits the group as the quotient of the additive group $\mathbb{R}^4$ by the kernel lattice,
 
 $$
-\mathbb{B}_{\mathrm{r}}^\times
+{\mathbb{B}^{\mathrm{red}}}^\times
 \cong\mathbb{R}^4\big/2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}.
 $$
 
@@ -539,7 +539,7 @@ The four coordinates obey the following laws.
 | Boost $\phi$ | adds |
 | Phases $(\alpha,\beta)$ | add modulo $\Lambda$ |
 | Exponent | adds |
-| Group | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{R}^2\times T^2$ |
+| Group | ${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$ |
 
 ## The Matrix Picture
 
@@ -635,7 +635,7 @@ The formula is the exact analogue of $\operatorname{Log}'Q=1/Q$ in $\mathbb{C}$,
 |---|---|---|---|---|---|---|
 | Modulus–unit | $\breve Q=\breve r u$ | $\breve r\in P$, $u\in T^2$ | all units | unique | square roots | $P\times T^2$ |
 | Rational-chart | $\breve Q=\breve r\,u(s_1,s_2)$ | $\breve r\in P$, $(s_1,s_2)\in\mathbb{R}^2$ | units with $C_+,C_-\notin(-\infty,0]$ | unique on the chart | rational | four charts on $T^2$ |
-| Exponential | $\breve Q=\exp\breve Q_{\log}$ | $\breve Q_{\log}$ modulo $\ker\exp$ | all units | unique in the principal domain | exponential and logarithm | $\mathbb{B}_{\mathrm{r}}/\ker\exp$ |
+| Exponential | $\breve Q=\exp\breve Q_{\log}$ | $\breve Q_{\log}$ modulo $\ker\exp$ | all units | unique in the principal domain | exponential and logarithm | $\mathbb{B}^{\mathrm{red}}/\ker\exp$ |
 
 ### The Modulus–Unit Form
 
@@ -797,7 +797,7 @@ The algebra carries two commuting complex structures: the left multiplication by
 
 | Result | Statement |
 |---|---|
-| Domain | the units $\breve Q\in\mathbb{B}_{\mathrm{r}}^\times$, that is $C_+C_-\neq0$ |
+| Domain | the units $\breve Q\in{\mathbb{B}^{\mathrm{red}}}^\times$, that is $C_+C_-\neq0$ |
 | Components | $C_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ |
 | Decomposition | $\breve Q=\rho(\cosh\phi+j\sinh\phi)\exp(i\alpha)\exp(ij\beta)$ |
 | Parameters | $\rho>0$, $\phi\in\mathbb{R}$, $(\alpha,\beta)\in\mathbb{R}^2/\Lambda$ |
@@ -808,7 +808,7 @@ The algebra carries two commuting complex structures: the left multiplication by
 | Kernel | $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^2$ |
 | Fibre | $\operatorname{Log}\breve Q+\ker\exp\cong\mathbb{Z}^2$ |
 | Group law | the exponents add, modulo the kernel |
-| Group | $\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{R}^2\times T^2$ |
+| Group | ${\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$ |
 | Matrix picture | block matrix in $\{1,j\}$; $\det d\exp=\rho^4$ |
 | Coordinates | $(\ln\rho,\phi,\alpha,\beta)$, with volume $\rho^3\,d\rho\,d\phi\,d\alpha\,d\beta$ |
 | Component form | two independent complex polar decompositions, $C_\pm=\rho_\pm e^{i\theta_\pm}$ |
@@ -878,7 +878,7 @@ generated by $2\pi i$ and $\pi i(1+j)$. The scalar and split periods $2\pi i$ an
 The group law is addition in the exponential coordinates,
 
 $$
-\mathbb{B}_{\mathrm{r}}^\times\cong\mathbb{R}^2\times T^2
+{\mathbb{B}^{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2
 \cong\mathbb{R}^4\big/2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}.
 $$
 
@@ -902,7 +902,7 @@ The table compares the three exponential polar decompositions; in the split-comp
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the reduced biquaternion algebra |
+| $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ | the reduced biquaternion algebra |
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | the element, with scalar part $Q_{\blacktriangle}$ and split part $Q_{\blacktriangledown}$ |
 | $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ | the two complex coefficients |
 | $C_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | the two complex components |
