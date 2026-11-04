@@ -269,15 +269,15 @@ The Hermitian condition has a grade reading. The biquaternion star fixes the rea
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
 
 $$
-\gamma_\mu\mapsto i\vec e_\mu,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_\mu\gamma_\nu\mapsto-\vec e_\mu\vec e_\nu .
+\gamma_\mu[\mathbb{M}_-]\mapsto i\vec e_\mu,\qquad \gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]\mapsto i,\qquad \gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\mapsto-\vec e_\mu\vec e_\nu .
 $$
 
-The body writes each generator as an orthonormal vector $\eta_\mu$ and the volume element as $\omega=\eta_1\eta_2\eta_3$; the dictionary back to the gammas is $\eta_\mu=\gamma_\mu$ for $\mu=1,2,3$ and $\omega=\gamma_1\gamma_2\gamma_3$.
+The body writes each generator as an orthonormal vector $\eta_\mu$ and the volume element as $\omega=\eta_1\eta_2\eta_3$; the dictionary back to the gammas is $\eta_\mu=\gamma_\mu[\mathbb{M}_-]$ for $\mu=1,2,3$ and $\omega=\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the frame is $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$, and its complexification is $\mathrm{Cl}_{3}(\mathbb{C})\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$.
 

@@ -648,44 +648,44 @@ Read further, the local complex structure is an **emergent metric** in the sense
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas generate $\mathrm{Cl}_{3,1}(\mathbb{C})=M_4(\mathbb{C})$; they are not a different algebra. In the display below $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products that the gammas generate:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the companion articles cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$ and with $g_{ab}$ the cells' weight, $\operatorname{diag}(1,-1,-1,-1)$,
 $$
-\{\gamma_a,\gamma_b\}=2g_{ab}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_a,\gamma_5\}=0,
+\{\gamma_a[\mathbb{M}_-],\gamma_b[\mathbb{M}_-]\}=2g_{ab}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_a[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-[\gamma_a,\gamma_b]=2\gamma_a\gamma_b\quad(a\ne b),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_a[\mathbb{M}_-],\gamma_b[\mathbb{M}_-]]=2\gamma_a[\mathbb{M}_-]\gamma_b[\mathbb{M}_-]\quad(a\ne b),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_a\gamma_b)=4g_{ab},\qquad
-\mathrm{tr}(\gamma_5\gamma_a\gamma_b\gamma_c\gamma_d)=-4i\,\epsilon_{abcd},
+\mathrm{tr}(\gamma_a[\mathbb{M}_-]\gamma_b[\mathbb{M}_-])=4g_{ab},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_a[\mathbb{M}_-]\gamma_b[\mathbb{M}_-]\gamma_c[\mathbb{M}_-]\gamma_d[\mathbb{M}_-])=-4i\,\epsilon_{abcd},
 $$
 $$
-\mathrm{tr}(\gamma_a\gamma_b\gamma_c\gamma_d)
+\mathrm{tr}(\gamma_a[\mathbb{M}_-]\gamma_b[\mathbb{M}_-]\gamma_c[\mathbb{M}_-]\gamma_d[\mathbb{M}_-])
 =4\bigl(g_{ab}g_{cd}-g_{ac}g_{bd}+g_{ad}g_{bc}\bigr).
 $$
 The **contraction sums** are frame statements, because the square of a cell depends on the frame. In the Euclidean frame $E_0=iR_{\vec e_x}^{\mathrm{pau}}$, $E_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ ($k=1,2,3$), where every cell squares to $+I_4$,
@@ -697,7 +697,7 @@ $$
 \sum_a E_aE_bE_cE_a=4\delta_{bc}I_4,\qquad
 \sum_a E_aE_dE_cE_bE_a=+2E_dE_cE_b\quad(b,c,d\ \text{distinct}).
 $$
-In the $\gamma$ frame, where the metric enters, $\sum_a\gamma_a\gamma_a=-2I_4$.
+In the $\gamma$ frame, where the metric enters, $\sum_a\gamma_a[\mathbb{M}_-]\gamma_a[\mathbb{M}_-]=-2I_4$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

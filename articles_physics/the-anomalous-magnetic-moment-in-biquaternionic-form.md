@@ -368,102 +368,102 @@ The on-shell spinors were built as $w=(iR_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$. The cells below are the frame cells of §*The Clifford Structure and the Frame* of the conventions article, with the chirality cell added.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
 $$
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 In the axis-free display:
 
 $$
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 The five are generators, not a basis: the basis is the sixteen products. A product of cells is again a cell, and that closure is what makes the reduction of a loop numerator terminate.
 
-The reference-frame cell of the chirality operator is $\gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+The reference-frame cell of the chirality operator is $\gamma_5[\mathbb{M}_-]$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is $\mathbb{R}$-linear, not $\mathbb{C}$-linear; over $\mathbb{R}$ the sixteen products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$: two real Clifford algebras, each of real dimension $16$.
 
 **The bivector and the generator.** The vertex is written in the bivector
 
 $$
-\sigma_{\mu\nu}=\tfrac i2\big[\gamma_\mu,\gamma_\nu\big]=i\,\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),
+\sigma_{\mu\nu}=\tfrac i2\big[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\big]=i\,\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),
 $$
 
 which carries the factor $i$; the Lorentz generator is half of it,
 
 $$
-S_{\mu\nu}=\tfrac12\sigma_{\mu\nu}=\tfrac i4\big[\gamma_\mu,\gamma_\nu\big],
+S_{\mu\nu}=\tfrac12\sigma_{\mu\nu}=\tfrac i4\big[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\big],
 $$
 
-and the conventions article writes that generator as one quarter of the commutator, $\tfrac14[\gamma_\mu,\gamma_\nu]$, which is $-iS_{\mu\nu}$. The two symbols $\sigma_{\mu\nu}$, the one here and the one of the conventions article, differ by the factor $2i$, the $i$ in it being the exchange of the sectors; that is why the article states which one it uses at every display. The product identity that separates the two vertex structures is
+and the conventions article writes that generator as one quarter of the commutator, $\tfrac14[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]$, which is $-iS_{\mu\nu}$. The two symbols $\sigma_{\mu\nu}$, the one here and the one of the conventions article, differ by the factor $2i$, the $i$ in it being the exchange of the sectors; that is why the article states which one it uses at every display. The product identity that separates the two vertex structures is
 
 $$
-\gamma_\mu\gamma_\nu=g_{\mu\nu}I_4-i\sigma_{\mu\nu}\qquad(\mu\ne\nu),
+\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]=g_{\mu\nu}I_4-i\sigma_{\mu\nu}\qquad(\mu\ne\nu),
 $$
 
 and the commutators of the generators are
 
 $$
-\big[\gamma_\mu,\gamma_\nu\big]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),
+\big[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\big]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),
 \qquad
-\big[\gamma_a,S_{cd}\big]=i\big(g_{ac}\gamma_d-g_{ad}\gamma_c\big).
+\big[\gamma_a[\mathbb{M}_-],S_{cd}\big]=i\big(g_{ac}\gamma_d[\mathbb{M}_-]-g_{ad}\gamma_c[\mathbb{M}_-]\big).
 $$
 
 **The identities the body cites.** In the $\gamma$ realisation, with $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
 **The four contractions.** They are frame statements, since a product of cells is again a cell, and the weight $\varepsilon$ is what carries the metric into the sum:
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
+\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4I_4,\qquad
+\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\alpha[\mathbb{M}_-],
 $$
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_\mu=-2\gamma_\rho\gamma_\beta\gamma_\alpha .
+\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\rho[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-] .
 $$
 
-In the $\mathbb{B}$ frame every cell squares to $+I_4$, the weight is $+1$, and the same four sums give $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\rho\gamma_\beta\gamma_\alpha$. The unweighted sum $\sum_\mu\gamma_\mu\gamma_\mu$ equals $-2I_4$ in the frame used here and $+4I_4$ in the $\mathbb{B}$ frame; it is a third object, not one of the four.
+In the $\mathbb{B}$ frame every cell squares to $+I_4$, the weight is $+1$, and the same four sums give $4I_4$, $-2\gamma_\alpha[\mathbb{M}_-]$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\rho[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$. The unweighted sum $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]$ equals $-2I_4$ in the frame used here and $+4I_4$ in the $\mathbb{B}$ frame; it is a third object, not one of the four.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

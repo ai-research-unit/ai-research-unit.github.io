@@ -413,98 +413,98 @@ The transformation was constructed here with the large term being the mass. If a
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article that uses them; every other statement is written in cells.
 
 Here $L_a$ and $R_b$ are the left and right multiplications.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 A single product is a pure tensor, a cell of rank one; a general element is a sum of at most four of them, one for each term of the rank decomposition of its coefficient matrix in the cell basis.
 
-In terms of the vector generators this is the standard $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ of the $(+,-,-,-)$ convention: the product $\gamma_0\gamma_1\gamma_2\gamma_3$ is the cell $-R_{\vec e_z}^{\mathrm{pau}}$ computed above, so $i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5$. Thus $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell itself. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+In terms of the vector generators this is the standard $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ of the $(+,-,-,-)$ convention: the product $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ is the cell $-R_{\vec e_z}^{\mathrm{pau}}$ computed above, so $i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5[\mathbb{M}_-]$. Thus $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell itself. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The $\gamma$'s are a complex frame, not a real one: they generate $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$ over $\mathbb{C}$, whereas the cells with real coefficients generate the real algebra $\mathrm{Cl}_{3,1}(\mathbb{R})=M_4(\mathbb{R})$. It is the complexification that makes the scalar $i$ central, and that is why each generator is written as $i$ times a real cell.
 
 **The identities the series uses.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-Four contraction sums accompany them, and they are frame statements, because a cell's square is. Writing $\gamma_\mu^2=\epsilon_\mu I_4$ and $S=\sum_\mu\epsilon_\mu$, the sums over a product $\Gamma$ of $p$ distinct frame cells are
+Four contraction sums accompany them, and they are frame statements, because a cell's square is. Writing $\gamma_\mu[\mathbb{M}_-]^2=\epsilon_\mu I_4$ and $S=\sum_\mu\epsilon_\mu$, the sums over a product $\Gamma$ of $p$ distinct frame cells are
 
 $$
-\sum_\mu\gamma_\mu\Gamma\gamma_\mu=(-1)^p\Bigl(S-2\sum_{i\in\Gamma}\epsilon_i\Bigr)\Gamma ,
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\Gamma\gamma_\mu[\mathbb{M}_-]=(-1)^p\Bigl(S-2\sum_{i\in\Gamma}\epsilon_i\Bigr)\Gamma ,
 $$
 
 where the second sum runs over the indices carried by $\Gamma$. The rule is checked in the $\mathbb{M}_-$ frame, $\epsilon=(+1,-1,-1,-1)$ and $S=-2$:
 
 $$
-\sum_\mu\gamma_\mu\gamma_\mu=S\,I_4=-2I_4,
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=S\,I_4=-2I_4,
 \qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=\bigl(2\epsilon_\alpha-S\bigr)\gamma_\alpha ,
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=\bigl(2\epsilon_\alpha-S\bigr)\gamma_\alpha[\mathbb{M}_-] ,
 $$
 
 $$
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=\bigl(S-2\epsilon_\alpha-2\epsilon_\beta\bigr)\gamma_\alpha\gamma_\beta\quad(\alpha\ne\beta),
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=\bigl(S-2\epsilon_\alpha-2\epsilon_\beta\bigr)\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\quad(\alpha\ne\beta),
 $$
 
 $$
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu
-=\bigl(2\epsilon_\alpha+2\epsilon_\beta+2\epsilon_\gamma-S\bigr)\gamma_\alpha\gamma_\beta\gamma_\gamma
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]
+=\bigl(2\epsilon_\alpha+2\epsilon_\beta+2\epsilon_\gamma-S\bigr)\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]
 \quad(\alpha,\beta,\gamma\ \text{distinct}).
 $$
 
-The second sum is $4\gamma_0$ for $\alpha=0$ and vanishes for spacelike $\alpha$; the third is $2\gamma_\alpha\gamma_\beta$ when both indices are spacelike and $-2\gamma_\alpha\gamma_\beta$ when one of them is timelike; the fourth is $-4\gamma_\alpha\gamma_\beta\gamma_\gamma$ for a spacelike triple and zero when a timelike index appears. In a Euclidean frame, where every cell squares to $+I_4$ and $S=4$, the bracket is $4-2p$ and the textbook values follow:
+The second sum is $4\gamma_0[\mathbb{M}_-]$ for $\alpha=0$ and vanishes for spacelike $\alpha$; the third is $2\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]$ when both indices are spacelike and $-2\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]$ when one of them is timelike; the fourth is $-4\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]$ for a spacelike triple and zero when a timelike index appears. In a Euclidean frame, where every cell squares to $+I_4$ and $S=4$, the bracket is $4-2p$ and the textbook values follow:
 
 $$
-\sum_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\delta_{\alpha\beta}I_4,
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4I_4,\qquad
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\alpha[\mathbb{B}],\qquad
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4\delta_{\alpha\beta}I_4,
 $$
 
 $$
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=-2\,\gamma_\gamma\gamma_\beta\gamma_\alpha ,
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\,\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-] ,
 $$
 
-the last two with the convention that repeated indices are read separately, since $\gamma_\alpha\gamma_\alpha=\epsilon_\alpha$ and the sum then collapses to the lower grade.
+the last two with the convention that repeated indices are read separately, since $\gamma_\alpha[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]=\epsilon_\alpha$ and the sum then collapses to the lower grade.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

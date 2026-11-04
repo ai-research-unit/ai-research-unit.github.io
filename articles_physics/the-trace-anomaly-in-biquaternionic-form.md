@@ -231,19 +231,19 @@ The first identity is exact, so the second and third are exact; a central differ
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra.
 
 Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_aR_b$ is the two-sided cell, $L_aR_b\psi=a\psi b$. The five reference cells are
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 **The squares are uses of $i^2=-1$.** Each generator carries two factors of $i$ when it is squared, and the sign is the product of those two with the signs of the two multiplications:
@@ -267,32 +267,32 @@ $$
 (iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=i^2(L_{\vec e_k}^{\mathrm{axf}})^2(R_{\vec e_y}^{\mathrm{axf}})^2=(-1)(-1)(-1)=-e_t,
 $$
 
-for $k=x,y,z$, so the four generators carry the metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple,
+for $k=x,y,z$, so the four generators carry the metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$ and $\gamma_5[\mathbb{M}_-]^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5[\mathbb{M}_-]$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple,
 \qquad \varepsilon=(1,-1,-1,-1),$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}},
 \qquad
-\gamma_5=+i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}},
+\gamma_5[\mathbb{M}_-]=+i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}},
 $$
 
 Read in the axis-free display:
 
 $$
-\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{axf}},
 \qquad
-\gamma_5=+i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{axf}},
+\gamma_5[\mathbb{M}_-]=+i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}},
 $$
 
-the sign convention in which $\gamma_5^2=+e_t$; the opposite sign is an equally good chirality and differs only by which of the two chiralities is called left.
+the sign convention in which $\gamma_5[\mathbb{M}_-]^2=+e_t$; the opposite sign is an equally good chirality and differs only by which of the two chiralities is called left.
 
-**Chirality is the right multiplication.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality is a pure right multiplication, and it is the one cell the one-sided pair displayed above cannot contain, because that pair uses left multiplications only. The two-sided representative does contain it, and the chiral halves of the module decouple because it anticommutes with the operator:
+**Chirality is the right multiplication.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality is a pure right multiplication, and it is the one cell the one-sided pair displayed above cannot contain, because that pair uses left multiplications only. The two-sided representative does contain it, and the chiral halves of the module decouple because it anticommutes with the operator:
 $$
-\{\gamma_5,\mathbb{D}\}=0,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}.
+\{\gamma_5[\mathbb{M}_-],\mathbb{D}\}=0,\qquad \gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same expressions, in the axis-free display:
 
 $$
-\{\gamma_5,\mathbb{D}\}=0,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}.
+\{\gamma_5[\mathbb{M}_-],\mathbb{D}\}=0,\qquad \gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 That anticommutator is the algebraic content of "only the two-sided equation carries a chirality": a cell built from left multiplications alone could not produce it.

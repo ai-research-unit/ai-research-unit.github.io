@@ -593,41 +593,41 @@ The remaining physical items are recorded as the author's claims. The boost, the
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The body is written in the cells $L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the frame names are attached to the cells here and nowhere else:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
 $$
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5=\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5[\mathbb{M}_-]=\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 In the axis-free display:
 
 $$
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5[\mathbb{M}_-]=\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The four frame cells satisfy the cell relation of $\varepsilon=(1,-1,-1,-1)$, and their squares are $\pm I_4$:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_k)^2=-I_4\quad(k=1,2,3),
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad (\gamma_0[\mathbb{M}_-])^2=I_4,\qquad (\gamma_k[\mathbb{M}_-])^2=-I_4\quad(k=1,2,3),
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
-The squares spend the central unit once, $i^2=-1$: the plain cells $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ square to $I_4$, and the factor $i$ turns the second family into $-I_4$. The chirality is the cell $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, with $\chi^2=I_4$ and $\{\gamma_\mu,\chi\}=0$; $L_{e_t}^{\mathrm{pau}}$ is the identity, so the cell is a pure right multiplication, written in full to keep the frame uniform. It is the cell that the two-sided equation of *The Two Dirac Equations, and Where the Cyclic Form Sits* multiplies on the right. The body's longitudinal boost operator $L=N\exp(\theta)+\bar N\exp(-\theta)$ is a different symbol from the left cell $L_a$; the subscript distinguishes them, and no formula in the body mixes the two.
+The squares spend the central unit once, $i^2=-1$: the plain cells $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and $L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ square to $I_4$, and the factor $i$ turns the second family into $-I_4$. The chirality is the cell $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, with $\chi^2=I_4$ and $\{\gamma_\mu[\mathbb{M}_-],\chi\}=0$; $L_{e_t}^{\mathrm{pau}}$ is the identity, so the cell is a pure right multiplication, written in full to keep the frame uniform. It is the cell that the two-sided equation of *The Two Dirac Equations, and Where the Cyclic Form Sits* multiplies on the right. The body's longitudinal boost operator $L=N\exp(\theta)+\bar N\exp(-\theta)$ is a different symbol from the left cell $L_a$; the subscript distinguishes them, and no formula in the body mixes the two.
 
 A single product $L_aR_b$ is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The central grading is a different object from the chirality cell. $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is represented by $\gamma_5$ on the Dirac module, while $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the module cell. The abstract sign is central and squares to the identity of the algebra; its representative is a cell and squares to the identity of the module.
+The central grading is a different object from the chirality cell. $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module, while $\chi=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the module cell. The abstract sign is central and squares to the identity of the algebra; its representative is a cell and squares to the identity of the module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

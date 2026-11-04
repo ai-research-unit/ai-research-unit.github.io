@@ -79,7 +79,7 @@ The **KO-dimension** of the triple is the residue $n\bmod8$ determined by the si
 
 **Theorem.** The signs $(\varepsilon,\varepsilon',\varepsilon'')$ are the invariants of the real structure, and the KO-dimension is periodic of period eight. For the commutative spectral triple of a closed spin manifold of dimension $m$, the KO-dimension is $m\bmod8$.
 
-**Proof sketch.** The existence of $J$ with prescribed signs is the statement that the spinor bundle carries a charge conjugation compatible with the Clifford action, which is the eightfold periodic reality condition of the classification; the compatibility of the signs with the Clifford relations forces period eight, as in *Bott Periodicity and the Classification*. For the spin manifold the real structure is the charge conjugation on the spinor bundle, and a direct computation of its square and its commutation with the chirality gives the residue of the dimension.
+**Proof sketch.** The existence of $J$ with prescribed signs is the statement that the spinor bundle carries a charge conjugation compatible with the Clifford action, which is the eightfold periodic reality condition of the classification; the compatibility of the signs with the anticommutation relations forces period eight, as in *Bott Periodicity and the Classification*. For the spin manifold the real structure is the charge conjugation on the spinor bundle, and a direct computation of its square and its commutation with the chirality gives the residue of the dimension.
 
 **Remark.** The KO-dimension is the spectral form of the eightfold way: it is the same period eight that appears in the real Clifford classification, in the reality types of *Real Spinors and Reality Conditions with Inner Conjugation*, and in the real $KO$-theory of *The Atiyah–Singer Index Theorem and K-Theory*. The table records the two signs $\varepsilon$ and $\varepsilon''$ that the charge conjugation carries, arranged by the dimension modulo eight; the trichotomy of real, complex and quaternionic type appears in the commuting normalisation of the Clifford module, where the classes without a commuting conjugation are the complex ones. Its eightfold repetition is the reason the finite geometries of the applications fall into a finite list.
 
@@ -183,19 +183,19 @@ is a spectral triple, the **almost commutative** geometry. Its dimension spectru
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}R_{\vec e_x},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

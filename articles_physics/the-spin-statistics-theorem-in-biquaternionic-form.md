@@ -66,7 +66,7 @@ The $2\pi$ rotation is the nontrivial element of the kernel $\{\pm e_t\}$ of the
 
 The sign is not an artefact of a basis. It is the image of the nontrivial element of $\pi_1(SO^+(1,3))\cong\mathbb{Z}/2$ under the covering homomorphism, and it is why a spinor has no single-valued representative.
 
-For an **observable** the sign cancels. The gauge-invariant bilinears of a spinor field are quadratic, $\bar\psi\,\mathcal{O}\psi$ with $\mathcal{O}$ a fixed operator of the frame, and under $\psi\mapsto-\psi$ they are unchanged. This is the precise sense in which $\psi$ and $-\psi$ are physically indistinguishable, and it is why the classical spinor field contains no information about whether its quanta are bosons or fermions. The $2\pi$ sign is a representation-theoretic fact about the spinor module; it is *half* of the spin–statistics connection, not the whole of it.
+For an **observable** the sign cancels. The gauge-invariant bilinears of a spinor field are quadratic, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathcal{O}\psi$ with $\mathcal{O}$ a fixed operator of the frame, and under $\psi\mapsto-\psi$ they are unchanged. This is the precise sense in which $\psi$ and $-\psi$ are physically indistinguishable, and it is why the classical spinor field contains no information about whether its quanta are bosons or fermions. The $2\pi$ sign is a representation-theoretic fact about the spinor module; it is *half* of the spin–statistics connection, not the whole of it.
 
 At the level of the operator algebra the two signs are worth distinguishing, because they act on different objects. A rotation by $2\pi$ multiplies the field by $-e_t$, so $\psi^{\mathrm{fop}}\mapsto-\psi^{\mathrm{fop}}$. The parity element $(-1)^F$ acts by inner automorphism on the algebra of the single mode, and it flips exactly the odd elements: $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and likewise $\vec\Upsilon_y$, while $\tilde\Pi_-$ and $e_t$ are fixed. Both operations are $-\mathrm{id}$ on the odd part and $+\mathrm{id}$ on the even part, and that is the operator-level form of $(-1)^{2s}=(-1)^F$ at $s=\tfrac12$. It is a consistency of two structures; it does not yet say that the bracket *must* anticommute.
 
@@ -225,9 +225,9 @@ $$
 with $\tilde\Psi_L$ the left-handed half. The two are the two Dirac equations of the framework, one per chirality, and each is a one-sided action: the first is the left action of the gradient on the right-handed half, the second the left action of its conjugate on the left-handed half. They are displayed separately because they act on different objects: one equation per chirality, both from the left, and the conjugate gradient $\natural$ is what separates them. Together they are the pair operator $\mathbb{D}$ acting on $(\tilde\Psi_R,\tilde\Psi_L)$, with $\mathbb{D}^2=\Box$, and the mass is the off-diagonal coupling of the two halves rather than a term inside either. With the field quantized by anticommutators, the general two-point functions are
 
 $$
-\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y),
+\{\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)iR_{\vec e_x}^{\mathrm{axf}}\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y),
 \qquad
-\langle0|[\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)]|0\rangle=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y),
+\langle0|[\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)iR_{\vec e_x}^{\mathrm{axf}}]|0\rangle=(\mathbb{D}+m)\,G_{\mathrm{S}}(x-y),
 $$
 
 where $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases — the Pauli–Jordan-type kernel, supported inside the light cone and vanishing for spacelike separation — and $G_{\mathrm{S}}$ is the symmetric combination, which does not vanish there. The anticommutator is a $c$-number and equals its own vacuum expectation; under anticommutation relations the commutator is not a $c$-number, and the second identity is its vacuum expectation, whose $c$-number part is what carries $G_{\mathrm{S}}$. The anticommutator inherits the vanishing of $\Delta_{\mathrm{A}}$; the commutator's vacuum expectation inherits the non-vanishing of $G_{\mathrm{S}}$. At equal times these reduce to the delta and to the Bessel kernel computed above. The exact normalizations of $\Delta_{\mathrm{A}}$ and $G_{\mathrm{S}}$ carry the conventional factor of $i$; the covariant form is the standard textbook identity and is recorded as such, and the equal-time form is what was recomputed here.
@@ -281,7 +281,7 @@ The table also displays what the framework does and does not explain. The *spin 
 **Transcribed, not derived.**
 
 - That the bracket is *forced* by the conjunction of locality, positivity and Lorentz invariance. The article exhibits the failure of the wrong choices; it does not prove that no other structure evades it.
-- The covariant identities $\{\psi^{\mathrm{fop}},\bar{\psi^{\mathrm{fop}}}\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}$ and $[\psi^{\mathrm{fop}},\bar{\psi^{\mathrm{fop}}}]=(\mathbb{D}+m)G_{\mathrm{S}}$, and the Pauli–Jordan-type and symmetric kernels.
+- The covariant identities $\{\psi^{\mathrm{fop}},\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}\}=(\mathbb{D}+m)\Delta_{\mathrm{A}}$ and $[\psi^{\mathrm{fop}},\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}]=(\mathbb{D}+m)G_{\mathrm{S}}$, and the Pauli–Jordan-type and symmetric kernels.
 - The scalar-field and Maxwell-field contrast, and the standard microcausality argument for integer spin.
 
 **Gap, left visible.**
@@ -305,7 +305,7 @@ The table also displays what the framework does and does not explain. The *spin 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra, and this section is the only place where they are named: in the body the cells do the work, and the five symbols below are the same five objects.
 
@@ -314,24 +314,24 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, 
 With $L_a\psi=a\psi$ and $R_b\psi=\psi b$ the left and right multiplications, and with $c(M)$ the coefficient matrix of $M$ in the basis of the sixteen products,
 
 $$
-\gamma_0=c_0=iR_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_k=c_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=c_5=-iR_{\vec e_z}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]=c_0=iR_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_k[\mathbb{M}_-]=c_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_5[\mathbb{M}_-]=c_5=-iR_{\vec e_z}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=c_0=iR_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_k=c_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=c_5=-iR_{\vec e_z}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]=c_0=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_k[\mathbb{M}_-]=c_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5[\mathbb{M}_-]=c_5=-iR_{\vec e_z}^{\mathrm{axf}},
 $$
 
 with $c_5$ the fifth cell, the one that anticommutes with the four and squares to $+I_4$. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 ### The Chirality
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 ### The Real Forms
 
@@ -341,23 +341,23 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0\ (\mu=0,1,2,3),
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0\ (\mu=0,1,2,3),
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
 ### The Contraction Sums
@@ -365,18 +365,18 @@ $$
 The sums below contract a product with the four cells, and their values are frame statements, because each term is fixed by the square of a cell. In the Euclidean frame, where every cell squares to $+I_4$,
 
 $$
-\sum_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4I_4,\qquad
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\alpha[\mathbb{B}],
 $$
 
 $$
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\gamma_\mu\gamma_\delta\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\alpha\gamma_\beta\gamma_\delta .
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\delta[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\delta[\mathbb{B}] .
 $$
 
-The first three are one rule: a pure $k$-vector picks up $(-1)^k(4-2k)$, that is $+4$, $-2$, $0$ for $k=0,1,2$. At $k=2$ the coefficient vanishes when $\alpha\ne\beta$, and only $\alpha=\beta$ survives, where $\gamma_\alpha\gamma_\beta=I_4$ is a scalar and takes the $k=0$ coefficient, which is the $4\delta_{\alpha\beta}$ of the third line. The fourth sum is the $k=3$ case, and its indices come back reversed: the result is $-2\gamma_\alpha\gamma_\beta\gamma_\delta$, not $-2$ times the product in the order it was written. For three distinct indices the reversal costs one sign, and the sum is $+2\gamma_\delta\gamma_\beta\gamma_\alpha$, the form in which the identity is usually quoted; the exact form is the one displayed.
+The first three are one rule: a pure $k$-vector picks up $(-1)^k(4-2k)$, that is $+4$, $-2$, $0$ for $k=0,1,2$. At $k=2$ the coefficient vanishes when $\alpha\ne\beta$, and only $\alpha=\beta$ survives, where $\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]=I_4$ is a scalar and takes the $k=0$ coefficient, which is the $4\delta_{\alpha\beta}$ of the third line. The fourth sum is the $k=3$ case, and its indices come back reversed: the result is $-2\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\delta[\mathbb{M}_-]$, not $-2$ times the product in the order it was written. For three distinct indices the reversal costs one sign, and the sum is $+2\gamma_\delta[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$, the form in which the identity is usually quoted; the exact form is the one displayed.
 
-In the frame of the cells themselves, where $c_0$ squares to $+I_4$ and $c_k$ to $-I_4$, only the first two keep a closed form. The first stays scalar, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$. The second picks up the metric factor, $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(g_{\alpha\alpha}+1)\gamma_\alpha$, which is $4\gamma_0$ for the time index and $0$ for a spatial one. The third is no longer proportional to $\delta_{\alpha\beta}I_4$: for $\alpha\ne\beta$ it does not vanish. The fourth is no longer $-2\gamma_\alpha\gamma_\beta\gamma_\delta$; the metric enters term by term.
+In the frame of the cells themselves, where $c_0$ squares to $+I_4$ and $c_k$ to $-I_4$, only the first two keep a closed form. The first stays scalar, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$. The second picks up the metric factor, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2(g_{\alpha\alpha}+1)\gamma_\alpha[\mathbb{M}_-]$, which is $4\gamma_0[\mathbb{M}_-]$ for the time index and $0$ for a spatial one. The third is no longer proportional to $\delta_{\alpha\beta}I_4$: for $\alpha\ne\beta$ it does not vanish. The fourth is no longer $-2\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\delta[\mathbb{M}_-]$; the metric enters term by term.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
@@ -409,7 +409,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $c_0=iR_{\vec e_x}^{\mathrm{axf}}$, $c_k=iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $c_5=-iR_{\vec e_z}^{\mathrm{axf}}$, $L_aR_b\psi=a\psi b$ | Cells of the reference frame, $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$; $\{c_\mu,c_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ for each pair, $\varepsilon=(1,-1,-1,-1)$ |
 | $\slashed p=c_0p_0-\sum_kc_kp_k$, $i(c_0\nabla_t+\sum_kc_k\nabla_k)\psi=m\psi$ | Momentum cell and field equation; on a plane wave $\slashed pw=mw$, $(\slashed p+m)v=0$ |
 | $\nabla_k=\partial/\partial\Delta_k$ | Gradient with respect to the spatial separation |
-| $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$ | Quantized spinor-module field and its Dirac adjoint |
+| $\psi^{\mathrm{fop}}$, $\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}=\psi^{\mathrm{fop}\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$ | Quantized spinor-module field and its Dirac adjoint |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}\dagger}_r(\vec p)$ | Annihilation and antiparticle creation operators |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (from the parents) |
 | $\sum_r w^{(r)}\bar w^{(r)}=E_{\vec p}c_0-\sum_k p_kc_k+m$, $\sum_r v^{(r)}\bar v^{(r)}=E_{\vec p}c_0-\sum_k p_kc_k-m$ | Spin sums; multiplied on the right by $c_0$ they give $E_{\vec p}I_4+m\,c_0+c_0\sum_k c_kp_k$ for $w$ and the same with $-m\,c_0$ for $v$ |

@@ -29,10 +29,10 @@ $$
 and
 
 $$
-\bar u u = 1, \qquad \bar v v = -1, \qquad \bar u v = 0,
+u^{\dagger}C_0u = 1, \qquad v^{\dagger}C_0v = -1, \qquad u^{\dagger}C_0v = 0,
 $$
 
-where $\bar\Psi = i(\Psi^\dagger e_t)\vec e_x = \Psi^\dagger C_0$ is the Dirac conjugate (left unit $e_t$, right unit $\vec e_x$), so that $\bar u u$ above is the Dirac bilinear of the unit semi-spinor. Write $a_0=e_t$, $a_k=\vec e_k$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator cell** of index $\mu$ is
+where $i(\Psi^\dagger e_t)\vec e_x = \Psi^\dagger C_0$ is the Dirac conjugate (left unit $e_t$, right unit $\vec e_x$), so that $u^{\dagger}C_0u$ above is the Dirac bilinear of the unit semi-spinor. Write $a_0=e_t$, $a_k=\vec e_k$ for the units a four-vector index multiplies on the left, and $b_0=\vec e_x$, $b_k=\vec e_y$ for those it multiplies on the right. The **generator cell** of index $\mu$ is
 $$
 C_\mu := iL_{a_\mu}R_{b_\mu},
 \qquad
@@ -59,7 +59,7 @@ $$
 u = (1,0,0,0)^{\mathsf T}, \quad v = (0,0,i,0)^{\mathsf T}, \quad k_\mu = (1,0,0,0), \quad j_\mu = (0,0,0,-1),
 $$
 
-all these relations hold. With $i^2=-1$ the two null spinors are real in this frame, $r=u+iv=(1,0,-1,0)^{\mathsf T}$ and $l=u-iv=(1,0,1,0)^{\mathsf T}$, which is the explicit form of the two pure spinors. The signs are the covariant ones: the contravariant $j$ is $(0,0,0,1)$, and $g_{\mu\nu}$ supplies the minus. The source writes $\mathcal{D}(j)v=u$ with a real $v$; in the frame above $v$ is purely imaginary and the same relation appears with the factor $i$, which is the convention the source leaves implicit. The two pure spinors are null, $\bar r r = \bar l l = 0$.
+all these relations hold. With $i^2=-1$ the two null spinors are real in this frame, $r=u+iv=(1,0,-1,0)^{\mathsf T}$ and $l=u-iv=(1,0,1,0)^{\mathsf T}$, which is the explicit form of the two pure spinors. The signs are the covariant ones: the contravariant $j$ is $(0,0,0,1)$, and $g_{\mu\nu}$ supplies the minus. The source writes $\mathcal{D}(j)v=u$ with a real $v$; in the frame above $v$ is purely imaginary and the same relation appears with the factor $i$, which is the convention the source leaves implicit. The two pure spinors are null, $r^{\dagger}C_0r = l^{\dagger}C_0l = 0$.
 
 ### The Null Basis
 
@@ -72,7 +72,7 @@ $$
 for which
 
 $$
-\bar r l = \bar l r = 2, \qquad k_\pm{}_\mu g_{\mu\nu}k_\pm{}_\nu = 0, \qquad k_\pm{}_\mu g_{\mu\nu}k_\mp{}_\nu = \tfrac12,
+r^{\dagger}C_0l = l^{\dagger}C_0r = 2, \qquad k_\pm{}_\mu g_{\mu\nu}k_\pm{}_\nu = 0, \qquad k_\pm{}_\mu g_{\mu\nu}k_\mp{}_\nu = \tfrac12,
 $$
 
 and
@@ -93,8 +93,8 @@ $$
 where $B^\flat_\nu=\sum_\mu g_{\mu\nu}B_\mu$ and $N^\flat_\nu=\sum_\mu g_{\mu\nu}N_\mu$, with
 
 $$
-B_\mu = \tfrac12\bigl(\bar v\, iC_\mu\Psi - \bar\Psi\, iC_\mu v\bigr), \qquad
-N_\mu = \tfrac12\bigl(\bar\Psi\, iC_\mu u - \bar u\, iC_\mu\Psi\bigr) .
+B_\mu = \tfrac12\bigl(v^{\dagger}C_0\, iC_\mu\Psi - \Psi^{\dagger}C_0\, iC_\mu v\bigr), \qquad
+N_\mu = \tfrac12\bigl(\Psi^{\dagger}C_0\, iC_\mu u - u^{\dagger}C_0\, iC_\mu\Psi\bigr) .
 $$
 
 The projection uses $iC_\mu=-L_{a_\mu}R_{b_\mu}$, the real cell: with $C_\mu$ alone the coefficients would come out $i$ times real, and the product $i\cdot i=-1$ is exactly what makes them real. The two coefficients $B_\mu$ and $N_\mu$ are **real four-vectors**, and the reconstruction $\Psi \mapsto (B, N) \mapsto \Psi$ is exact. This is the first half of the statement that a Dirac spinor is a pair of real four-vectors.
@@ -168,10 +168,10 @@ These are the relations of the **matrix realisation**, not of the biquaternion u
 The two real four-vectors $B_\mu$ and $N_\mu$ are the *vector representation* of the two semi-spinors. The quadratic form of the spinor space reads
 
 $$
-\bar\Psi\Psi = -B_\mu g_{\mu\nu}B_\nu + N_\mu g_{\mu\nu}N_\nu,
+\Psi^{\dagger}C_0\Psi = -B_\mu g_{\mu\nu}B_\nu + N_\mu g_{\mu\nu}N_\nu,
 $$
 
-so the two vectors enter with opposite signs, and $\bar\Psi\Psi = N^2 - B^2$ is the difference of two norms. Neither sign is fixed by the spinor: in the rest frame $\Psi=(1,0,0,0)$ the vector $B$ is purely spatial and $N$ vanishes, while for $\Psi=(0,0,1,0)$ the vector $B$ is timelike. The labels *timelike* and *spacelike* that the source attaches to the two semi-spinors belong to its own metric convention; what is convention-free is the opposite sign with which the two enter $\bar\Psi\Psi$.
+so the two vectors enter with opposite signs, and $\Psi^{\dagger}C_0\Psi = N^2 - B^2$ is the difference of two norms. Neither sign is fixed by the spinor: in the rest frame $\Psi=(1,0,0,0)$ the vector $B$ is purely spatial and $N$ vanishes, while for $\Psi=(0,0,1,0)$ the vector $B$ is timelike. The labels *timelike* and *spacelike* that the source attaches to the two semi-spinors belong to its own metric convention; what is convention-free is the opposite sign with which the two enter $\Psi^{\dagger}C_0\Psi$.
 
 The complex vector $G_\mu = B_\mu + iN_\mu$ is the combined object, and its real and imaginary parts are the two semi-spinors. The chiral split of the spinor is a second, independent split, by the chirality cell:
 $$
@@ -186,26 +186,26 @@ and the corresponding projections $R_\mu, L_\mu$ of $G_\mu$ are the subject of �
 The reward of the s-vector representation is that every Dirac bilinear becomes a bilinear in $G$ and $G^*$ with the structure constants $c$ and $\check c$, where $\Gamma:\Psi\mapsto-i e_t\Psi\vec e_z=-iR_{\vec e_z}^{\mathrm{axf}}\Psi$ is the chirality cell:
 
 $$
-\bar\Psi\Psi = -\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu + G^*_\nu G^{*}_{\nu}\bigr),
+\Psi^{\dagger}C_0\Psi = -\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu + G^*_\nu G^{*}_{\nu}\bigr),
 \qquad
-\bar\Psi\Gamma\Psi = +\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu - G^*_\nu G^{*}_{\nu}\bigr),
+\Psi^{\dagger}C_0\Gamma\Psi = +\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu - G^*_\nu G^{*}_{\nu}\bigr),
 $$
 
 $$
-\bar\Psi\, C_\mu\Psi = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, c_{\lambda\mu\nu}\, G^*_\nu,
+\Psi^{\dagger}C_0\, C_\mu\Psi = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, c_{\lambda\mu\nu}\, G^*_\nu,
 \qquad
-\bar\Psi\,\Gamma C_\mu\Psi = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, \check c_{\lambda\mu\nu}\, G^*_\nu .
+\Psi^{\dagger}C_0\,\Gamma C_\mu\Psi = \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, G_\lambda\, \check c_{\lambda\mu\nu}\, G^*_\nu .
 $$
 Here $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ and $C_\mu=iL_{a_\mu}R_{b_\mu}$, so $\Gamma C_\mu=(-i)(i)L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}L_{a_\mu}R_{b_\mu}=L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}L_{a_\mu}R_{b_\mu}$: the two factors of $i$ cancel by $i^2=-1$, and the axial bilinear carries no explicit imaginary unit. The slot order is the one fixed above: the first slot of $c$ belongs to the left factor, here $G_\lambda$, the middle slot to the output index $\mu$, and the last slot to the right factor, here $G^*_\nu$. Because the two factors commute as complex numbers, the sum is unchanged if the two are exchanged together with the first and last slots; it is changed if only one of the two is moved. With the opposite attachment, $\sum\epsilon_\nu\epsilon_\lambda G^*_\nu\check c_{\nu\mu\lambda}G_\lambda$, the same sum appears with the opposite sign, and the two readings must not be mixed.
 
-The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G_\rho c_{\rho\mu\sigma}G^*_\sigma = e\,\bar\Psi C_\mu\Psi$, the source's first bilinear, and it is the vector identity above with the summation indices renamed $\lambda\to\rho$, $\nu\to\sigma$. The chirality cell is the ordered product of the four generator cells up to the factor $i$,
+The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\sigma\, G_\rho c_{\rho\mu\sigma}G^*_\sigma = e\,\Psi^{\dagger}C_0C_\mu\Psi$, the source's first bilinear, and it is the vector identity above with the summation indices renamed $\lambda\to\rho$, $\nu\to\sigma$. The chirality cell is the ordered product of the four generator cells up to the factor $i$,
 $$
 \Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 and it anticommutes with each $C_\mu$, so it separates the two chiral halves of every spinor. Its representative on the reference frame, written in §The Legacy Pauli Gamma Formulation, is the usual fifth gamma. The source further rewrites the mass form as
 
 $$
-\bar\Psi\Psi = \sum_\mu\epsilon_\mu\, K_\mu\,\bar\Psi\, C_\mu\Psi
+\Psi^{\dagger}C_0\Psi = \sum_\mu\epsilon_\mu\, K_\mu\,\Psi^{\dagger}C_0\, C_\mu\Psi
 $$
 
 for a unit complex vector $K_\mu$ built from $\Psi$; that interpretation — the mass as a unit vector, hence as a non-integrable phase — is recorded in *The Dirac Equation in Biquaternionic Form*, and this article takes it as the entry into the same construction.
@@ -221,7 +221,7 @@ $$
 which leaves the trilinear form
 
 $$
-A_\mu\bigl(\bar\Psi_{(1)}\, C_\mu\Psi_{(2)} + \bar\Psi_{(2)}\, C_\mu\Psi_{(1)}\bigr)
+A_\mu\bigl(\Psi^{\dagger}C_0_{(1)}\, C_\mu\Psi_{(2)} + \Psi^{\dagger}C_0_{(2)}\, C_\mu\Psi_{(1)}\bigr)
 = 2\sum_{\nu,\lambda,\sigma}\epsilon_\nu\epsilon_\lambda\epsilon_\sigma\, A_\mu\, \varepsilon_{\lambda\mu\nu\sigma}N_\lambda B_\nu k_\sigma
 $$
 
@@ -235,7 +235,7 @@ $$
 $$
 and the form is
 $$
-C = \sum_\mu A_\mu\,\bar\Psi\, C_\mu\Psi
+C = \sum_\mu A_\mu\,\Psi^{\dagger}C_0\, C_\mu\Psi
 = \sum_{\mu,\nu,\lambda}\epsilon_\nu\epsilon_\lambda\, A_\mu\, G_\lambda\, c_{\lambda\mu\nu}\, G^*_\nu .
 $$
 For real $A$ its real part is the source's cubic form,
@@ -249,7 +249,7 @@ with the symmetric $t'$ pairing each semi-spinor with itself and the antisymmetr
 Passing from the spinor to the s-vector representation turns the Dirac Lagrangian into
 
 $$
-\tfrac12\sum_\mu\epsilon_\mu\bigl[\bar\Psi\, C_\mu(\partial/\partial x_\mu - ieA_\mu)\Psi - \bigl((\partial/\partial x_\mu + ieA_\mu)\bar\Psi\bigr) C_\mu\Psi\bigr] - m\bar\Psi\Psi
+\tfrac12\sum_\mu\epsilon_\mu\bigl[\Psi^{\dagger}C_0\, C_\mu(\partial/\partial x_\mu - ieA_\mu)\Psi - \bigl((\partial/\partial x_\mu + ieA_\mu)\Psi^{\dagger}C_0\bigr) C_\mu\Psi\bigr] - m\Psi^{\dagger}C_0\Psi
 $$
 
 $$
@@ -418,15 +418,15 @@ $$
 \bigl(\cos\alpha - i c_5\sin\alpha\bigr)^n = \cos n\alpha - i c_5\sin n\alpha .
 $$
 
-The mass term $m\bar\Psi\Psi = -\tfrac{m}{2}(G^*G^* + GG) = -\tfrac{m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\alpha)$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\alpha}G_\mu$, which multiplies $q$ by $e^{2i\alpha}$.
+The mass term $m\Psi^{\dagger}C_0\Psi = -\tfrac{m}{2}(G^*G^* + GG) = -\tfrac{m}{2}\bigl[q(G)+q(G^*)\bigr]$ is invariant under $M(\alpha)$ for that reason, and it is *not* invariant under the ordinary phase $G_\mu\mapsto e^{i\alpha}G_\mu$, which multiplies $q$ by $e^{2i\alpha}$.
 
-The source identifies $M(\alpha)$ with the image of the spinor's vector $\mathrm{U}(1)$, $\Psi\mapsto\Psi\exp(i\alpha)$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\Psi\mapsto\exp(-ia\Gamma)\Psi$ becomes the ordinary phase $G_\mu\mapsto e^{ia}G_\mu$, and $\Psi\mapsto\exp(ia\Gamma)\Psi$ becomes $G_\mu\mapsto e^{-ia}G_\mu$. The vector phase does not act diagonally on $G$ at all. Since $\bar v\,iC_\mu\Psi$ and $\bar\Psi\,iC_\mu v$ are conjugate up to sign, $B_\mu$ is the real part of $X_\mu:=\bar v\,iC_\mu\Psi$, and the phase sends
+The source identifies $M(\alpha)$ with the image of the spinor's vector $\mathrm{U}(1)$, $\Psi\mapsto\Psi\exp(i\alpha)$. The dictionary is narrower than that. The exact correspondence runs through the *chiral* transformation: $\Psi\mapsto\exp(-ia\Gamma)\Psi$ becomes the ordinary phase $G_\mu\mapsto e^{ia}G_\mu$, and $\Psi\mapsto\exp(ia\Gamma)\Psi$ becomes $G_\mu\mapsto e^{-ia}G_\mu$. The vector phase does not act diagonally on $G$ at all. Since $v^{\dagger}C_0\,iC_\mu\Psi$ and $\Psi^{\dagger}C_0\,iC_\mu v$ are conjugate up to sign, $B_\mu$ is the real part of $X_\mu:=v^{\dagger}C_0\,iC_\mu\Psi$, and the phase sends
 
 $$
 B_\mu \mapsto B_\mu\cos\alpha - \operatorname{Im}(X_\mu)\sin\alpha,
 $$
 
-with $N_\mu$ treated the same way through $Z_\mu:=\bar\Psi\,iC_\mu u$: a mixing of the two semi-spinors, not a rotation of each. So $M(\alpha)$ is the transformation the mass form invites, and it is the one to use in the algebra, but it is not the image of a spinor symmetry.
+with $N_\mu$ treated the same way through $Z_\mu:=\Psi^{\dagger}C_0\,iC_\mu u$: a mixing of the two semi-spinors, not a rotation of each. So $M(\alpha)$ is the transformation the mass form invites, and it is the one to use in the algebra, but it is not the image of a spinor symmetry.
 
 ## The Dual Transformation and the Two Semi-Spinors
 
@@ -436,7 +436,7 @@ $$
 B \mapsto N, \qquad N \mapsto -B, \qquad m \mapsto -m
 $$
 
-leaves the quadratic form $m\bar\Psi\Psi = m\sum_\nu\epsilon_\nu(N_\nu N_\nu - B_\nu B_\nu)$, the cubic form $\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda V_\mu B_\nu N_\lambda\varepsilon_{\nu\mu\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the semi-spinor of the first type is *dual* to the semi-spinor of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
+leaves the quadratic form $m\Psi^{\dagger}C_0\Psi = m\sum_\nu\epsilon_\nu(N_\nu N_\nu - B_\nu B_\nu)$, the cubic form $\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda V_\mu B_\nu N_\lambda\varepsilon_{\nu\mu\lambda}$ and hence the Lagrangian and the equation of motion invariant. The source reads this as the statement that the semi-spinor of the first type is *dual* to the semi-spinor of the second type, on the model of the electromagnetic duality that exchanges $\vec E$ and $\vec H$ while exchanging $e$ and a magnetic coupling. It is the first-order shadow of the parent-action duality between the Dirac Lagrangian and the second-order topologically massive gauge Lagrangian, and it is the reason the two Lagrangians can describe the same propagating modes.
 
 ## What the Construction Does and Does Not Supply
 
@@ -468,23 +468,23 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
-The four gammas are the generator cells of the body, $\gamma_\mu=C_\mu$, and together they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+The four gammas are the generator cells of the body, $\gamma_\mu[\mathbb{M}_-]=C_\mu$, and together they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 Here $L_{a}R_{b}$ multiplies on the left by $a$ and on the right by $b$: $L_{a}R_{b}\Psi=a\Psi b$. A single product $L_aR_b$ is a pure tensor; the pure tensors form the cone of rank at most one, and a general element is a sum of at most four of them.
 
-$\gamma_5$ is the reference-frame representative of the chirality cell: the ordered product $i\gamma_0\gamma_1\gamma_2\gamma_3$, which is $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ written in the frame; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality cell in the algebra, and $\gamma_5$ is its representative on the reference frame. This is why no $\gamma$ symbol appears in the body of the article.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame representative of the chirality cell: the ordered product $i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, which is $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ written in the frame; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality cell in the algebra, and $\gamma_5[\mathbb{M}_-]$ is its representative on the reference frame. This is why no $\gamma$ symbol appears in the body of the article.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -506,8 +506,8 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | $g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1)$ | Generator metric of the frame (the source's $\eta$); not the $ict'$ metric |
 | $V\cdot W = \sum_{\mu,\nu}V_\mu g_{\mu\nu}W_\nu = \sum_\mu\epsilon_\mu V_\mu W_\mu$ | Minkowski dot product |
 | $k_\mu, j_\mu$ | Timelike and spacelike unit neutral vectors, $k\cdot k = -j\cdot j = 1$, $k\cdot j = 0$ |
-| $u, v$ | Unit semi-spinors, $\bar u u = 1$, $\bar v v = -1$, $\bar u v = 0$ |
-| $r = u+iv$, $l = u-iv$ | Pure spinors, $\bar r l = \bar l r = 2$ |
+| $u, v$ | Unit semi-spinors, $u^{\dagger}C_0u = 1$, $v^{\dagger}C_0v = -1$, $u^{\dagger}C_0v = 0$ |
+| $r = u+iv$, $l = u-iv$ | Pure spinors, $r^{\dagger}C_0l = l^{\dagger}C_0r = 2$ |
 | $k_\pm{}_\mu = \tfrac12(k_\mu\pm j_\mu)$ | Null vectors formed from the neutral pair |
 | $e_t, \vec e_k$ | The algebra units, $e_t = 1$, $\vec e_k^2 = -e_t$ |
 | $a_\mu, b_\mu$ | Left and right units of the index: $a_0 = e_t$, $a_k = \vec e_k$, $b_0 = \vec e_x$, $b_k = \vec e_y$ |

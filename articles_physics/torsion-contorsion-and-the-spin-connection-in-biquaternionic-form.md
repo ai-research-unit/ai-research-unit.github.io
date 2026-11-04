@@ -150,11 +150,11 @@ The two are not interchangeable — the natural abbreviation $D_\mu=\partial/\pa
 
 In the Einstein–Cartan–Sciama–Kibble theory the torsion is not free: it is sourced *algebraically* by the spin density of matter. For a Dirac field the spin density is the completely antisymmetric bilinear
 $$
-\Sigma_{\lambda\mu\nu} = \bar\psi\,\operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr]\,\psi ,
+\Sigma_{\lambda\mu\nu} = \psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr]\,\psi ,
 $$
 in which $C_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the frame cell of the coordinate $x_\mu$, and $\operatorname{Alt}$ is the **normalised** antisymmetrisation, the average over the six permutations weighted by the sign of the permutation, $\operatorname{Alt}[C_\lambda C_\mu C_\nu]=\tfrac16\sum_{\sigma}\operatorname{sgn}(\sigma)\,C_{\lambda_{\sigma(1)}}C_{\lambda_{\sigma(2)}}C_{\lambda_{\sigma(3)}}$ with $(\lambda_1,\lambda_2,\lambda_3)=(\lambda,\mu,\nu)$ and $\sigma$ running over the six permutations. The Dirac adjoint is
 $$
-\bar\psi = \psi^\dagger\, iR_{\vec e_x}^{\mathrm{axf}} .
+\psi^\dagger\, iR_{\vec e_x}^{\mathrm{axf}} .
 $$
 The normalisation of $\operatorname{Alt}$ matters: without the $1/3!$ the duality below carries an extra factor six and the squared display an extra thirty-six.
 
@@ -164,7 +164,7 @@ $$
 $$
 the last form writing it as one $i$ times the four frame cells in the order $C_tC_xC_yC_z$. Each of the four cells carries one $i$ and $i^4=+1$, so the four multiply to the product of the four bare cells; the single $i$ in front is what makes the left side the chirality cell. It anticommutes with each $C_\mu$, $\chi C_\mu=-C_\mu\chi$, which is what grades the four cells. The axial current is the same cell inserted instead of a fourth one,
 $$
-A_\mu = \bar\psi\,\chi\,C_\mu\,\psi .
+A_\mu = \psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\chi\,C_\mu\,\psi .
 $$
 
 **The antisymmetric spin density is the dual of the axial current.**
@@ -177,7 +177,7 @@ The identity is exact, and the constant is $-i$. The cells carry the reason them
 $$
 \operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr] = -\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\chi\,C_\rho ,
 $$
-with $\chi$ the chirality cell. That is an operator identity, exact at every index triple, and it accounts for its own unit: in bare cells, $\beta_\mu=L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, the same identity reads $\operatorname{Alt}[\beta_\lambda\beta_\mu\beta_\nu]=+\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho\,R_{\vec e_z}^{\mathrm{axf}}\beta_\rho$ with no unit left at all, because $\chi C_\rho=(-i)(i)R_{\vec e_z}^{\mathrm{axf}}\beta_\rho=+R_{\vec e_z}^{\mathrm{axf}}\beta_\rho$ cancels the two units and leaves a sign. The $-i$ of the display is therefore exactly the $i^3=-i$ of the three cells on the left, and nothing else. Sandwiching it between $\bar\psi$ and $\psi$ gives $\Sigma$ on the left and $A_\rho$ on the right, so the display above holds with $-i$ and there is nothing left to choose. The same identity in the Clifford reading is displayed in *The Legacy Pauli Gamma Formulation*.
+with $\chi$ the chirality cell. That is an operator identity, exact at every index triple, and it accounts for its own unit: in bare cells, $\beta_\mu=L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, the same identity reads $\operatorname{Alt}[\beta_\lambda\beta_\mu\beta_\nu]=+\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho\,R_{\vec e_z}^{\mathrm{axf}}\beta_\rho$ with no unit left at all, because $\chi C_\rho=(-i)(i)R_{\vec e_z}^{\mathrm{axf}}\beta_\rho=+R_{\vec e_z}^{\mathrm{axf}}\beta_\rho$ cancels the two units and leaves a sign. The $-i$ of the display is therefore exactly the $i^3=-i$ of the three cells on the left, and nothing else. Sandwiching it between $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ and $\psi$ gives $\Sigma$ on the left and $A_\rho$ on the right, so the display above holds with $-i$ and there is nothing left to choose. The same identity in the Clifford reading is displayed in *The Legacy Pauli Gamma Formulation*.
 
 The weight is what carries the sign. Without it the same display with $+i$ holds on the eighteen triples whose free index is spacelike and fails on the six whose free index is timelike; the sign vector is exactly the raised index that repairs those six.
 
@@ -243,55 +243,55 @@ The two open items this article was written against stand as follows. The first 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. With $L_a$ and $R_b$ the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, they are
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each single one is invertible with determinant one: $L_a$ and $R_b$ with $|a|=|b|=1$ are invertible, and the scalar $i$ enters a $4\times4$ determinant as $i^4=+1$. A frame cell is therefore a full-rank operator, and the rank-one cone of "pure tensors" belongs to the sandwich family $M\Theta M^\dagger$, not here.
 
-These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu=C_\mu$ and $\gamma_5=\chi$, the last being the chirality cell. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde\Xi_{\mathrm{ad}}$ with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.
+These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu[\mathbb{M}_-]=C_\mu$ and $\gamma_5[\mathbb{M}_-]=\chi$, the last being the chirality cell. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde\Xi_{\mathrm{ad}}$ with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5[\mathbb{M}_-]$ is its representative on the Dirac module.
 
-The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $\varepsilon=(1,-1,-1,-1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a[\mathbb{M}_-],\gamma_b[\mathbb{M}_-]\}=2g_{ab}I_4$ with $\varepsilon=(1,-1,-1,-1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
 ## Summary
 
 A connection with torsion splits into a metric part, the Christoffel symbols, and a remainder, the contorsion $K_{\lambda\mu\nu}$. The torsion fixes only the antisymmetric part of the remainder in its last pair, twenty-four of sixty-four components; the unique metric-compatible connection for a given torsion is the Einstein–Cartan contorsion $K_{\lambda\mu\nu}=\tfrac12(T_{\lambda\mu\nu}-T_{\mu\nu\lambda}+T_{\nu\lambda\mu})$, exact for any torsion, antisymmetric in the first and third slots, and collapsing to $\tfrac12T$ exactly when the torsion is totally antisymmetric. Writing $T_{\lambda\mu\nu}=2K_{\lambda\mu\nu}$ throughout is the further choice of the sector in which the Christoffel symbols are the whole symmetric part of the connection; inside it the covariant derivative of the metric, $\nabla_\mu g_{\nu\rho} = -(g_{\nu\lambda}K_{\lambda\mu\rho} + g_{\rho\lambda}K_{\lambda\mu\nu})$, vanishes for every index order exactly when the contorsion is totally antisymmetric, and the 24 components are cut to four. **Inside the sector, metric compatibility is the condition of total antisymmetry**, and that is the precise meaning of the corpus's statement that metric compatibility is a condition and not a consequence.
 
 The tetrad postulate ties the affine and spin connections, and the spin connection splits as $\omega = \omega(e) + K$ with the contorsion in frame indices; $\omega$ with its first frame slot lowered is antisymmetric in the frame pair exactly in the metric-compatible case, so the two conditions of the previous paragraph have one face in world indices and one in frame indices. The Weitzenböck connection $\Gamma_{\lambda\mu\nu} = \sum_a e_{a\lambda} \partial/\partial x_\mu \exp(a){}_\nu$ has exactly zero curvature and nonzero torsion; in the Weitzenböck gauge the full spin connection vanishes and the contorsion is minus the Levi-Civita spin connection of the tetrad.
 
-The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma_{\lambda\mu\nu} = \bar\psi \operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr]\psi$, with $C_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ the frame cell of $x_\mu$ and $\operatorname{Alt}$ the normalised antisymmetrisation. It is the dual of the axial current, $\Sigma_{\lambda\mu\nu} = -i\,\epsilon_{\lambda\mu\nu\rho}\,A^\rho$ with $A_\mu = \bar\psi\,\chi\,C_\mu\,\psi$, and its full contraction is six times the contracted square of the axial current, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$, the factor six coming from $\sum_{\lambda,\mu,\nu}\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma}=6\delta_{\rho\sigma}$ and the sign from $(-i)^2=-1$ together with $\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\varepsilon_\rho=-1$ on the nonzero terms. The Einstein–Cartan torsion–spin relation $T = \kappa\Sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
+The spin density of a Dirac field is the completely antisymmetric bilinear $\Sigma_{\lambda\mu\nu} = \psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr]\psi$, with $C_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ the frame cell of $x_\mu$ and $\operatorname{Alt}$ the normalised antisymmetrisation. It is the dual of the axial current, $\Sigma_{\lambda\mu\nu} = -i\,\epsilon_{\lambda\mu\nu\rho}\,A^\rho$ with $A_\mu = \psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\chi\,C_\mu\,\psi$, and its full contraction is six times the contracted square of the axial current, $\sum_{\lambda,\mu,\nu}\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\Sigma_{\lambda\mu\nu}\Sigma_{\lambda\mu\nu} = 6\sum_\rho\varepsilon_\rho A_\rho A_\rho$, the factor six coming from $\sum_{\lambda,\mu,\nu}\epsilon_{\lambda\mu\nu\rho}\epsilon_{\lambda\mu\nu\sigma}=6\delta_{\rho\sigma}$ and the sign from $(-i)^2=-1$ together with $\varepsilon_\lambda\varepsilon_\mu\varepsilon_\nu\varepsilon_\rho=-1$ on the nonzero terms. The Einstein–Cartan torsion–spin relation $T = \kappa\Sigma$ is therefore algebraic, and the elimination of the torsion leaves the axial–axial contact term whose coefficient the nonlinear-Dirac article owns.
 
 Two statements bound the article. The commutator of the quaternion units is a constant of the algebra and not the torsion of a manifold; the algebra carries the connection and the torsion but generates neither, selects no connection, and supplies no action. The identities above are exact and recomputed; the dynamics is not here and is not claimed.
 
@@ -315,9 +315,9 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | frame cell of $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$: $iR_{\vec e_x}^{\mathrm{axf}}$ at $\mu=t$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ at $\mu=k$ |
 | $C_\mu C_\nu$, $\mu<\nu$ | the six Lorentz bivectors; the six generators are half of them |
 | $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ | chirality cell, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\,(iR_{\vec e_x}^{\mathrm{axf}})(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})$ |
-| $\bar\psi=\psi^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint |
-| $\Sigma_{\lambda\mu\nu}$ | Dirac spin density, $\bar\psi \operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr]\psi$, normalised antisymmetrisation |
-| $A_\mu$ | axial current, $\bar\psi\,\chi\,C_\mu\,\psi$ |
+| $\psi^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint |
+| $\Sigma_{\lambda\mu\nu}$ | Dirac spin density, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr]\psi$, normalised antisymmetrisation |
+| $A_\mu$ | axial current, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\chi\,C_\mu\,\psi$ |
 | $\varepsilon$, $\varepsilon_\mu$ | sign vector, $\varepsilon_t=+1$ and $\varepsilon_k=-1$; $\varepsilon_\mu A_\mu$ is the raised $A^\mu$ |
 | $\kappa = 8\pi G$ | Einstein gravitational constant, $c=1$ |
 

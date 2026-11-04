@@ -18,7 +18,7 @@ $$
 \Gamma_t:=iR_{\vec e_x}^{\mathrm{axf}},\qquad \Gamma_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \chi:=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame, so the display label is written at first mention and dropped. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\chi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu[\mathbb{M}_-]=\Gamma_\mu$ and $\gamma_5[\mathbb{M}_-]=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
+the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame, so the display label is written at first mention and dropped. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\chi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu[\mathbb{M}_-]=\Gamma_\mu$ and $\gamma_5[\mathbb{M}_-]=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
 
 ## The Process, the Contact and the Rates
 
@@ -27,7 +27,7 @@ the label $\mathrm{axf}$ naming the axis-free frame of the regular representatio
 The weak charged current carries one unit of charge and one unit of the weak isospin ladder. In the standard notation, read in the frame declared above, with $u$ the upper and $d$ the lower member of a doublet,
 
 $$
-J^{+}_\mu=\bar{\psi}_{\mathrm u}\,\gamma_\mu(1-\gamma_5)\psi_{\mathrm d},
+J^{+}_\mu=\psi^{\dagger}iR_{\vec e_x}_{\mathrm u}\,\gamma_\mu[\mathbb{M}_-](1-\gamma_5[\mathbb{M}_-])\psi_{\mathrm d},
 $$
 
 and the interaction Lagrangian is $\mathcal{L}_{\mathrm{cc}}=-\frac{g}{2\sqrt2}\sum_\mu\varepsilon_\mu\big(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\big)$, with $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. Eliminating the W at momenta small against its mass replaces the propagator by $-g_{\mu\nu}/M_W^2$ and leaves a contact,
@@ -141,7 +141,7 @@ with $\tilde\Pi_+$ Hermitian. The product of the two right multipliers, in the n
 
 ## The Neutral Current Is Not Null
 
-The neutral current has the same shape, $J_{Z\mu}=\bar\psi\,\Gamma_\mu(g_V-g_A\chi)\psi$, with the weights the theory supplies, $g_V=T_3-2ϙ\sin^2\theta_W$ and $g_A=T_3$, in place of the equal $g_V=g_A=1$ of the charged current. The criterion above applies directly: the vertex is null if and only if $|g_A/g_V|=1$, which is
+The neutral current has the same shape, $J_{Z\mu}=\psi^{\dagger}iR_{\vec e_x}\,\Gamma_\mu(g_V-g_A\chi)\psi$, with the weights the theory supplies, $g_V=T_3-2ϙ\sin^2\theta_W$ and $g_A=T_3$, in place of the equal $g_V=g_A=1$ of the charged current. The criterion above applies directly: the vertex is null if and only if $|g_A/g_V|=1$, which is
 
 $$
 \Big|\frac{g_A}{g_V}\Big|=\Big|1-4\sin^2\theta_W\Big|^{-1},
@@ -174,7 +174,7 @@ A theory is parity invariant when its vertex is its own image, which requires $g
 The Dirac mass term pairs the two chiralities, so it is odd under $\chi$ and vanishes on a field of definite chirality; the companion article derives this and the selection rule that follows, the two chiral charges equal for a gauge-invariant bare mass. This article adds only where the two facts meet. Both are properties of the one element $\chi$. The projectors are idempotent, $P_L^2=P_L$, and the adjoint passes through them to the other side, $P_LR_{\vec e_x}=R_{\vec e_x}P_R$, verified, so the bilinear of two left-handed fields is
 
 $$
-\bar\psi_L\psi_L=\psi^{\dagger}P_L\,iR_{\vec e_x}P_L\psi=\psi^{\dagger}iR_{\vec e_x}P_RP_L\psi=0 ,
+\psi_L^{\dagger}iR_{\vec e_x}\psi_L=\psi^{\dagger}P_L\,iR_{\vec e_x}P_L\psi=\psi^{\dagger}iR_{\vec e_x}P_RP_L\psi=0 ,
 $$
 
 a mass term with nothing to pair. The same cell supplies the vertex its nilpotent multiplier. A field of definite chirality is therefore massless and its weak vertex is null, and both statements are read off the one idempotent.
@@ -236,8 +236,8 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $\Gamma_\mu(g_V-g_A\chi)$ | Chiral vertex of weights $g_V,g_A$; $g_A=+g_V$ is $V-A$ |
 | $\big(\Gamma_\mu(g_V-g_A\chi)\big)^2=g_{\mu\mu}(g_V^2-g_A^2)I_4$ | Square identity; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
 | $g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,1,1,1)$ | Frame metric of the $\mathbb{M}_-$ frame |
-| $J^{+}_\mu=\bar\psi_{\mathrm u}\Gamma_\mu(1-\chi)\psi_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
-| $\bar\psi=\psi^{\dagger}iR_{\vec e_x}$ | Dirac adjoint |
+| $J^{+}_\mu=\psi^{\dagger}iR_{\vec e_x}_{\mathrm u}\Gamma_\mu(1-\chi)\psi_{\mathrm d}$ | Charged current, $V-A$, the case $g_A=+g_V$ |
+| $\psi^{\dagger}iR_{\vec e_x}$ | Dirac adjoint |
 | $\mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_\mu\varepsilon_\mu J^{+}_\mu J^{-}_\mu$ | Four-fermion contact |
 | $G_{\mathrm F}/\sqrt2=g^2/(8M_W^2)$ | Contact coefficient |
 | $G_{\mathrm F}=1.1663787\times10^{-5}$ GeV$^{-2}$ | Fermi constant |

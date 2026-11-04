@@ -229,7 +229,7 @@ a product of Lebesgue measures on the coefficients, one per biquaternion compone
 
 **Fermionic fields.** On the spinor-module representative of the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, with $\mathbb{D}$ the pair operator of the conventions article, the functional integral is over Grassmann-valued spinors, and the Gaussian integral returns a determinant rather than an inverse square root,
 $$
-\int\mathcal{D}\bar\psi\,\mathcal{D}\psi\;\exp\big(\bar\psi\,(\mathbb{D}-m)\,\psi\big) = \det(\mathbb{D}-m),
+\int\mathcal{D}\psi^{\dagger}\,\mathcal{D}\psi\;\exp\big(\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(\mathbb{D}-m)\,\psi\big) = \det(\mathbb{D}-m),
 $$
 with the spinor structure carried by the module and the mass term linear and chirality-off-diagonal as the conventions require. The Grassmann integral and the determinant are standard; the biquaternion content is the spinor module on which the operator acts and the mass term's right-multiplication form. The fermionic path integral is developed in its own place in the corpus and is not rebuilt here.
 

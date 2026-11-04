@@ -22,7 +22,7 @@ which project onto the slice orthogonal to $j$ and onto $j$ itself, since $j\cdo
 $$
 C_\mu=L_{a_\mu}R_{b_\mu},\qquad a_0=e_t,\quad a_k=\vec e_k,\qquad b_0=\vec e_x,\quad b_k=\vec e_y,\qquad C_\mu\Psi=a_\mu\Psi b_\mu,
 $$
-and $\mathcal{D}(w)=\sum_\mu w_\mu\,iC_\mu$ contracts the four generators with the components $w_\mu$. The cells obey the Clifford relations $\{iC_\mu,iC_\nu\}=2\epsilon_\mu\delta_{\mu\nu}e_t$, so the metric sits inside the generator and a cell bilinear carries no explicit $\epsilon$. The chirality cell is
+and $\mathcal{D}(w)=\sum_\mu w_\mu\,iC_\mu$ contracts the four generators with the components $w_\mu$. The cells obey the anticommutation relations $\{iC_\mu,iC_\nu\}=2\epsilon_\mu\delta_{\mu\nu}e_t$, so the metric sits inside the generator and a cell bilinear carries no explicit $\epsilon$. The chirality cell is
 $$
 \Gamma=-iC_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad \Gamma^2=e_t,\qquad \Gamma\,C_\mu=-C_\mu\Gamma,\qquad \Gamma=iC_0C_1C_2C_3 .
 $$
@@ -34,12 +34,12 @@ The gammas are a frame of this algebra. They appear once, in §The Legacy Pauli 
 
 $G_\mu$ is the Dirac field in the vector representation, the **s-vector**: a complex four-vector with the bilinears of the companion article,
 $$
-\bar\Psi\Psi=-\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu+G^*_\nu G^*_\nu\bigr),\qquad
-\bar\Psi\,iC_\mu\Psi=\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,G_\lambda\,c_{\lambda\mu\nu}\,G^*_\nu,
+\Psi^{\dagger}C_0\Psi=-\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu+G^*_\nu G^*_\nu\bigr),\qquad
+\Psi^{\dagger}C_0\,iC_\mu\Psi=\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,G_\lambda\,c_{\lambda\mu\nu}\,G^*_\nu,
 \qquad
-\bar\Psi\,\Gamma\,iC_\mu\Psi=\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,G_\lambda\,\check c_{\lambda\mu\nu}\,G^*_\nu,
+\Psi^{\dagger}C_0\,\Gamma\,iC_\mu\Psi=\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,G_\lambda\,\check c_{\lambda\mu\nu}\,G^*_\nu,
 $$
-in the companion's slot order — $G$ in the first slot, $G^*$ in the last — and the axial one by $\Gamma\,iC_\mu=(-iC_5)(iC_\mu)=-i^2C_5C_\mu=C_5C_\mu$, one factor of $i$ spent on $i^2=-1$.
+with $\Psi$ the companion's Dirac spinor, $\Psi^{\dagger}$ its conjugation and $C_0$ the timelike cell, so that $\Psi^{\dagger}C_0$ is the Dirac adjoint. The three sit in the companion's slot order — $G$ in the first slot, $G^*$ in the last — and the axial one by $\Gamma\,iC_\mu=(-iC_5)(iC_\mu)=-i^2C_5C_\mu=C_5C_\mu$, one factor of $i$ spent on $i^2=-1$.
 
 The opposite attachment, $\sum\epsilon\epsilon\,G^*_\nu\check c_{\nu\mu\lambda}G_\lambda$, is a different sum, and the difference is exact — verified:
 $$
@@ -132,7 +132,7 @@ and the scalar obeys its own massive equation, decoupled from $B$.
 
 The overall normalisation is the source's: the kinetic term carries $1/m$, so the mass appears in the denominator of the Maxwell term and in the numerator of the Chern–Simons term. Rescaling $F$ or $B$ moves the $m$ to one side or the other, and the invariant statement is the ratio.
 
-**Quoted, recomputed, and open.** The two parent actions, the four varied equations and the four Lagrangians are the source's, Eqs. (55)–(61), (71), (77)–(81) and (88). This pass recomputed the algebra those expressions use — the cell Clifford relations, $\Gamma\,iC_\mu=C_5C_\mu$, the split $i\check c=\varepsilon j+i\,t'j$, the anti-self-duality of $H_{[\mu\nu]}$ and its complex rank three, the trace $H_{(\mu\nu)}=-\phi^*g_{\mu\nu}$, the reconstruction $G^*_\mu=\sum_\nu\epsilon_\nu H_{\mu\nu}j_\nu$, the total antisymmetry of $\check\varepsilon_{\nu\mu\lambda}$, the symmetries of $t'$ and the exact condition under which it vanishes against an antisymmetric pair, the exchange identity $\check c_{\nu\mu\lambda}-\check c_{\lambda\mu\nu}=-2i\varepsilon_{\nu\mu\lambda\rho}j_\rho$ — and not the eliminations themselves, which are a variational computation on the source's field content. One claim was tested and did not reproduce: the normalisation $K\cdot K=1$ of Eq. (93), with the corpus's metric weights, so it is carried as the source's own.
+**Quoted, recomputed, and open.** The two parent actions, the four varied equations and the four Lagrangians are the source's, Eqs. (55)–(61), (71), (77)–(81) and (88). This pass recomputed the algebra those expressions use — the cell anticommutation relations, $\Gamma\,iC_\mu=C_5C_\mu$, the split $i\check c=\varepsilon j+i\,t'j$, the anti-self-duality of $H_{[\mu\nu]}$ and its complex rank three, the trace $H_{(\mu\nu)}=-\phi^*g_{\mu\nu}$, the reconstruction $G^*_\mu=\sum_\nu\epsilon_\nu H_{\mu\nu}j_\nu$, the total antisymmetry of $\check\varepsilon_{\nu\mu\lambda}$, the symmetries of $t'$ and the exact condition under which it vanishes against an antisymmetric pair, the exchange identity $\check c_{\nu\mu\lambda}-\check c_{\lambda\mu\nu}=-2i\varepsilon_{\nu\mu\lambda\rho}j_\rho$ — and not the eliminations themselves, which are a variational computation on the source's field content. One claim was tested and did not reproduce: the normalisation $K\cdot K=1$ of Eq. (93), with the corpus's metric weights, so it is carried as the source's own.
 
 ## Why the Mass Is Topological
 
@@ -214,7 +214,7 @@ $$
 \qquad\Longrightarrow\qquad
 \tilde\nabla^{\natural}F=m\,\Gamma\,\overline F ,
 $$
-one factor of $i$ spent on $i^2=-1$. The mass therefore acts by right multiplication by the **chirality cell**, on the conjugate field, and it is the same cell that appears in $\bar\Psi\,\Gamma\,iC_\mu\Psi$ above. $\Gamma$ is a pure right multiplication, and right multiplications by orthogonal units anticommute, so it anticommutes with all four generators: it is the chirality, not a fifth generator.
+one factor of $i$ spent on $i^2=-1$. The mass therefore acts by right multiplication by the **chirality cell**, on the conjugate field, and it is the same cell that appears in $\Psi^{\dagger}C_0\,\Gamma\,iC_\mu\Psi$ above. $\Gamma$ is a pure right multiplication, and right multiplications by orthogonal units anticommute, so it anticommutes with all four generators: it is the chirality, not a fifth generator.
 
 **Which one the parent action uses.** The first-order Dirac equation of the parent action is the single compact equation of the s-vector carrier,
 $$
@@ -235,7 +235,7 @@ The conjugation on the first line is what makes the mass phase of $R$ the conjug
 
 $K_\mu$ is built from the two chiral halves, as in the source's Eq. (100):
 $$
-K_\mu=\frac{\bar\Psi_R\,iC_\mu\Psi_R}{2\bar\Psi_R\Psi_L}+\frac{\bar\Psi_L\,iC_\mu\Psi_L}{2\bar\Psi_L\Psi_R},
+K_\mu=\frac{\Psi_R^{\dagger}C_0\,iC_\mu\Psi_R}{2\Psi_R^{\dagger}C_0\Psi_L}+\frac{\Psi_L^{\dagger}C_0\,iC_\mu\Psi_L}{2\Psi_L^{\dagger}C_0\Psi_R},
 $$
 two currents weighted by the two chiral cross-norms. The source's normalisation is $K\cdot K=\sum_\mu\epsilon_\mu K_\mu K_\mu=1$ (Eq. 93), and its ground is the algebra's normed condition (Eq. 90), which equates the norm of the spinor to the norm of its current; a unit $K$ exists because the two are the same number. That normalisation is quoted here and not recomputed: the corpus's metric weights on the bilinears fix the direction of $K$ through the two terms of Eq. (100), and a numerical check of the normalisation in those weights did not reproduce the value one, so the statement is recorded as the source's.
 
@@ -247,7 +247,7 @@ R_\mu=R^0_\mu\exp\Bigl(-i\!\int\bigl(eA_\nu+mK_\nu\bigr)^*dx_\nu\Bigr),
 \qquad
 L_\mu=L^0_\mu\exp\Bigl(i\!\int\bigl(eA_\nu+mK_\nu\bigr)dx_\nu\Bigr),
 $$
-which depends on the path from a fixed initial point, and $K$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\bar\Psi\Psi$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a gauge transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the spinor are the two halves of one complex vector.
+which depends on the path from a fixed initial point, and $K$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\Psi^{\dagger}C_0\Psi$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a gauge transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the spinor are the two halves of one complex vector.
 
 The topological mass of the gauge field and the phase mass of the Dirac field are then the same object read in the two reductions: in both, the mass is a first-order coupling carried by a direction that the algebra supplies and that no gauge transformation removes. In the gauge reduction that direction is the neutral spacelike $j$, on which the Chern–Simons symbol is built; in the Dirac reduction it is the complex unit vector $K$, on which the phase is built. Both are directions the algebra fixes, not parameters put in by hand.
 
@@ -275,41 +275,41 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-The four $\gamma_\mu$ are the generators $iC_\mu$ of the body, and $\gamma_5$ is the representative of the chirality cell $\Gamma$. They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\{\gamma_5,\gamma_\mu\}=0$, the second being the same anticommutation that $\Gamma$ obeys as a cell: right multiplications by orthogonal units anticommute. The product of the four is the chirality,
+The four $\gamma_\mu[\mathbb{M}_-]$ are the generators $iC_\mu$ of the body, and $\gamma_5[\mathbb{M}_-]$ is the representative of the chirality cell $\Gamma$. They satisfy $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0$, the second being the same anticommutation that $\Gamma$ obeys as a cell: right multiplications by orthogonal units anticommute. The product of the four is the chirality,
 \qquad \varepsilon=(1,-1,-1,-1),$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5 ,
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-] ,
 $$
 which is the cell identity $\Gamma=iC_0C_1C_2C_3$ read on the module.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality cell in the algebra and $\gamma_5$ is its representative on the reference frame. This is why no $\gamma$ symbol appears in the body of the article.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module. The symbol $\Gamma$ is not a gamma matrix: $\Gamma$ is the chirality cell in the algebra and $\gamma_5[\mathbb{M}_-]$ is its representative on the reference frame. This is why no $\gamma$ symbol appears in the body of the article.
 
 The squares are cells, and $i^2=-1$ does the sign:
 $$
-\gamma_0^2=i^2R_{\vec e_x^2}^{\mathrm{pau}}=(-1)(-1)I_4=I_4,
+\gamma_0[\mathbb{M}_-]^2=i^2R_{\vec e_x^2}^{\mathrm{pau}}=(-1)(-1)I_4=I_4,
 \qquad
-\gamma_5^2=(-i)^2R_{\vec e_z^2}^{\mathrm{pau}}=(-1)(-1)I_4=I_4 .
+\gamma_5[\mathbb{M}_-]^2=(-i)^2R_{\vec e_z^2}^{\mathrm{pau}}=(-1)(-1)I_4=I_4 .
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0^2=i^2R_{\vec e_x^2}^{\mathrm{axf}}=(-1)(-1)I_4=I_4,
+\gamma_0[\mathbb{M}_-]^2=i^2R_{\vec e_x^2}^{\mathrm{axf}}=(-1)(-1)I_4=I_4,
 \qquad
-\gamma_5^2=(-i)^2R_{\vec e_z^2}^{\mathrm{axf}}=(-1)(-1)I_4=I_4 .
+\gamma_5[\mathbb{M}_-]^2=(-i)^2R_{\vec e_z^2}^{\mathrm{axf}}=(-1)(-1)I_4=I_4 .
 $$
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
@@ -351,7 +351,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $H_{\mu\nu}=\sum_\lambda\epsilon_\lambda G^*_\lambda\check c_{\lambda\mu\nu}$ | Two-form of the s-vector; $H_{(\mu\nu)}=-\phi^*g_{\mu\nu}$ and $H_{[\mu\nu]}$ anti-self-dual |
 | $\phi^*=G^*\cdot j$ | Trace of the two-form, $\phi^*=\sum_\mu\epsilon_\mu G^*_\mu j_\mu$; the complex scalar $\phi=G\cdot j$ with a star |
 | $F_{\mu\nu}=\partial B_\nu/\partial x_\mu-\partial B_\mu/\partial x_\nu+iaj_\mu B^*_\nu-iaj_\nu B^*_\mu$ | Field strength of the dual potential |
-| $\bar\Psi\Psi=\sum_\nu\epsilon_\nu(N_\nu N_\nu-B_\nu B_\nu)$ | Dirac bilinear |
+| $\Psi^{\dagger}C_0\Psi=\sum_\nu\epsilon_\nu(N_\nu N_\nu-B_\nu B_\nu)$ | Dirac bilinear |
 | $K_\mu$ | Complex vector of Eq. (100) carrying the mass as a non-integrable phase; normalised to $K\cdot K=1$ in the source |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |
 | $m$, $a$ | Fermion mass (equated to the topological gauge mass) and the auxiliary real constant $a\ne m$ |

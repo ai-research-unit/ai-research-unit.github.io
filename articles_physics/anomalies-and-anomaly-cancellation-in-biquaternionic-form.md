@@ -16,7 +16,7 @@ The framework's contribution is structural, and is stated at the outset.
 
 **The order of the article.** A section states the anomaly as a quantum failure of a classical symmetry and exhibits the Clifford trace behind it. A section gives the axial anomaly, its current, its density, and the identification of the density with $I_2$. A section sets out the triangle coefficient and computes the group factors. A section states the gauge cancellation conditions and verifies them on the Standard Model spectrum. A section proves the framework's own gauge structure anomaly-free. A section treats the anomaly as a topological density, a section the non-abelian consistency conditions, and a section the 't Hooft vertex. A section separates the two traces the article uses from the one it does not. A table collects what the framework supplies, transcribes, and does not supply; the closing sections are the Gamma Formulation, the Summary, the Summary of Notation, and Further Reading.
 
-**Notation, once.** The imaginary unit has $i^2=-1$. It is the only imaginary unit in the article, and where two of them meet in a product they are reduced before the formula is read: the four generator cells of a four-fold product contribute $i^4=+1$, so such a product is a product of four plain cells and carries no residual $i$. The two-sided cells act by $L_{a}R_{b}\psi=a\psi b$; the generator cell of the coordinate $x_\mu$ is $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ with $\tau(t)=x$ and $\tau(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$; the module spinor is $\psi=\psi_L+\psi_R$, with $\psi_L$ and $\psi_R$ its two chiral components; and the Dirac bar is $\bar{\psi}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. The four generator cells carry the cell relation of $\varepsilon=(1,-1,-1,-1)$. The same objects, under their Clifford frame names, are collected in the closing section *The Legacy Pauli Gamma Formulation*, and none of those names is used before it.
+**Notation, once.** The imaginary unit has $i^2=-1$. It is the only imaginary unit in the article, and where two of them meet in a product they are reduced before the formula is read: the four generator cells of a four-fold product contribute $i^4=+1$, so such a product is a product of four plain cells and carries no residual $i$. The two-sided cells act by $L_{a}R_{b}\psi=a\psi b$; the generator cell of the coordinate $x_\mu$ is $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ with $\tau(t)=x$ and $\tau(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$; the module spinor is $\psi=\psi_L+\psi_R$, with $\psi_L$ and $\psi_R$ its two chiral components; and the Dirac adjoint is $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$. The four generator cells carry the cell relation of $\varepsilon=(1,-1,-1,-1)$. The same objects, under their Clifford frame names, are collected in the closing section *The Legacy Pauli Gamma Formulation*, and none of those names is used before it.
 
 The volume cell is the product of the four generator cells, taken in the order $t,x,y,z$, and the four factors of $i$ multiply to $i^4=+1$:
 $$
@@ -109,14 +109,14 @@ for a biquaternion field $F$ — the two-sided Dirac field, not the component fi
 **The currents.** For the one-sided pair, the common phase is a symmetry at every $m$, because the mass is central and passes through it, so the vector current
 
 $$
-j_{\mu}=\bar{\psi}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,\psi
+j_{\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,\psi
 $$
 
 is conserved at every $m$. An axial rotation assigns opposite phases to the two chiralities, so the mass term, which pairs them, is not invariant under it; the axial current therefore carries the chirality cell,
 
 $$
-j_{5\mu}=\bar{\psi}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,(-iR_{\vec e_z}^{\mathrm{axf}})\,\psi
-=\bar{\psi}\,L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,\psi ,
+j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,(-iR_{\vec e_z}^{\mathrm{axf}})\,\psi
+=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,\psi ,
 $$
 
 where the two imaginary units have been reduced by $i(-i)=+1$. The surviving right multiplier is the product $\vec e_z\vec e_{\tau(\mu)}$, in that order: right multipliers compose in the order in which they act, and $\vec e_z\vec e_{\tau(\mu)}=-\vec e_{\tau(\mu)}\vec e_z$, so writing the pair the other way around flips the sign of the current. With $\tau(t)=x$ and $\tau(k)=y$ the product is $\vec e_y$ on the time coordinate and $-\vec e_x$ on the three space coordinates. The current is conserved only at $m=0$.
@@ -124,7 +124,7 @@ where the two imaginary units have been reduced by $i(-i)=+1$. The surviving rig
 **The result.** For a Dirac fermion of electric charge $e$ in four dimensions, with $\tilde J_5=\sum_\mu j_{5\mu}e_\mu$ and with $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu$ the divergence — the plain sum, because the metric is already spent inside the cells, $(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}})^2=g_{\mu\mu}I_4$, so an extra sign vector would apply it a second time —
 
 $$
-\boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2m\,\bar{\psi}\,R_{\vec e_z}^{\mathrm{axf}}\,\psi \;-\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
+\boxed{\;\langle\tilde\nabla,\tilde J_5\rangle_{\natural} \;=\; 2m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,R_{\vec e_z}^{\mathrm{axf}}\,\psi \;-\; \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}\;}
 $$
 
 where the mass term has been reduced in the same way, $2im(-iR_{\vec e_z}^{\mathrm{axf}})=2mR_{\vec e_z}^{\mathrm{axf}}$. The first term is the classical explicit breaking by the mass; the second is the anomaly, present even at $m=0$, and its coefficient is the standard Adler–Bell–Jackiw one, quoted from the standard literature rather than derived. The minus in front of it is bookkeeping, not physics: the standard statement carries the contraction with the upper-index symbol, and the corpus writes every index low. The next paragraph does that bookkeeping once.
@@ -316,10 +316,10 @@ where $D$ is the massless Dirac operator of the pair above, the module represent
 **The vertex.** The axial anomaly can be written as an effective interaction. For $N_f$ massless flavours, a single instanton of the colour gauge field generates a $2N_f$-fermion vertex — the 't Hooft determinant — which is chirally non-invariant:
 
 $$
-\mathcal{L}_{\text{'t Hooft}} \;\propto\; \det_{f,f'}\big(\bar{\psi}_{fL}\psi_{f'R}\big) + \text{h.c.},
+\mathcal{L}_{\text{'t Hooft}} \;\propto\; \det_{f,f'}\big(\psi_{fL}^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi_{f'R}\big) + \text{h.c.},
 $$
 
-with one factor of each left- and each right-handed field, the determinant running over the flavour labels $f,f'$. The operator has the quantum numbers of the anomaly, it breaks the axial $\mathrm{U}(1)_A$, and it leaves the non-abelian chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ intact. In the fermion sector this is the anomalous counterpart of the condensate: where the condensate breaks the axial symmetry **spontaneously**, the 't Hooft vertex breaks its axial $\mathrm{U}(1)$ subgroup **explicitly**, and the two together are what resolve the $\mathrm{U}(1)_A$ problem of quantum chromodynamics. The vertex is a six-fermion operator for $N_f=3$; the framework carries it as a product of the bilinears it already has, since each factor $\bar{\psi}_{fL}\psi_{f'R}$ is the linear chiral pairing of the mass term.
+with one factor of each left- and each right-handed field, the determinant running over the flavour labels $f,f'$. The operator has the quantum numbers of the anomaly, it breaks the axial $\mathrm{U}(1)_A$, and it leaves the non-abelian chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ intact. In the fermion sector this is the anomalous counterpart of the condensate: where the condensate breaks the axial symmetry **spontaneously**, the 't Hooft vertex breaks its axial $\mathrm{U}(1)$ subgroup **explicitly**, and the two together are what resolve the $\mathrm{U}(1)_A$ problem of quantum chromodynamics. The vertex is a six-fermion operator for $N_f=3$; the framework carries it as a product of the bilinears it already has, since each factor $\psi_{fL}^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi_{f'R}$ is the linear chiral pairing of the mass term.
 
 **What is not treated.** The resolution of the $\mathrm{U}(1)_A$ problem in full involves the $\theta$ parameter, the vacuum angle, and — if it is a symmetry — the axion; the $\theta$ parameter belongs to the corpus's general gauge apparatus, and the axion to the spin-$0$ subcategory. This article states only the fermion-sector fact: the anomaly generates a chirally non-invariant multifermion vertex, and the divergence identity of the section *The Axial Anomaly* is its local form.
 
@@ -353,59 +353,59 @@ so the chirality-weighted trace is the **difference** of the two Weyl traces. Fo
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the four generator cells and the chirality cell of the body become
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The body's cells under their gamma names.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality cell of the body is the gamma-five cell itself, and the identity $\mathrm{tr}(\gamma_5)=0$ of the traces section is its vanishing signed trace. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and the volume cell is $\gamma_0\gamma_1\gamma_2\gamma_3=\omega=-i\gamma_5$. The single collapse behind every simplification in the body is
+**The body's cells under their gamma names.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality cell of the body is the gamma-five cell itself, and the identity $\mathrm{tr}(\gamma_5[\mathbb{M}_-])=0$ of the traces section is its vanishing signed trace. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu[\mathbb{M}_-]$, and the volume cell is $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=\omega=-i\gamma_5[\mathbb{M}_-]$. The single collapse behind every simplification in the body is
 
 $$
-i\,\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}} ,
+i\,\gamma_\mu[\mathbb{M}_-]=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}} ,
 $$
 
 In the axis-free display:
 
 $$
-i\,\gamma_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} ,
+i\,\gamma_\mu[\mathbb{M}_-]=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} ,
 $$
 
 so multiplying a generator cell by $i$ trades it for a plain one; four such cells therefore carry $i^4=+1$ and no residual unit. Under these names the boxed trace of the body is the five-index trace in the display of traces below, and the body's $\mathrm{tr}$ is the matrix trace of $M_4(\mathbb{C})$.
 
 **The identities the body cites.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The first display is the Clifford relations the body's cells obey, together with the chirality cell's square and its anticommutation; the second gives the Lorentz generators $S_{cd}$ and their commutator with a generator; the last two give the traces used, and the five-index trace is the boxed trace under its gamma names. All of them were recomputed on the module's explicit $4\times4$ representation, the trace identity over all $4^4$ index assignments.
+The first display is the anticommutation relations the body's cells obey, together with the chirality cell's square and its anticommutation; the second gives the Lorentz generators $S_{cd}$ and their commutator with a generator; the last two give the traces used, and the five-index trace is the boxed trace under its gamma names. All of them were recomputed on the module's explicit $4\times4$ representation, the trace identity over all $4^4$ index assignments.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
@@ -414,7 +414,7 @@ The first display is the Clifford relations the body's cells obey, together with
 An anomaly is a quantum breaking of a classical symmetry. The axial anomaly is the failure of the chiral rotation to preserve the measure; for a charged Dirac fermion its divergence is the standard Adler–Bell–Jackiw result,
 
 $$
-\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2m\,\bar{\psi}\,R_{\vec e_z}^{\mathrm{axf}}\,\psi - \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+\langle\tilde\nabla,\tilde J_5\rangle_{\natural} = 2m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,R_{\vec e_z}^{\mathrm{axf}}\,\psi - \frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
 where the two imaginary units of the mass term have been reduced by $i(-i)=+1$. The contraction in it evaluates to $+8\,\vec E\cdot\vec B$ all-low, so the anomaly density is $-\frac{e^2}{2\pi^2}\,I_2$, the textbook value, a fixed multiple of the framework's second field invariant $I_2=\vec E\cdot\vec B$: the anomaly's pseudoscalar density is the biquaternion field's own pseudoscalar invariant. The Clifford identity behind every anomaly, the boxed trace, and the identification $-iR_{\vec e_z}^{\mathrm{axf}}=i\omega$ of the chirality cell with the volume cell, are supplied by the framework's Clifford structure; the trace was recomputed on the $4^4$ index assignments and the identification is exact.
@@ -435,7 +435,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$, $\tau(t)=x$, $\tau(k)=y$ | Generator cell of the coordinate $x_\mu$; the four carry the cell relation of $g$ |
 | $\psi=\psi_L+\psi_R$ | Module spinor; $\psi_L$ and $\psi_R$ are its two chiral components |
 | $-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell; equals $i\omega$ |
-| $\bar{\psi}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac bar on the module |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint on the module |
 | $\Delta=S\oplus\bar{S}$; $-iR_{\vec e_z}^{\mathrm{axf}}=\mathrm{diag}(-I_2,I_2)$ in the Peirce display | Dirac module and chirality cell |
 | $\tilde\nabla\psi_R=m\psi_L$, $\tilde\nabla^{\natural}\psi_L=m\psi_R$ | The one-sided Dirac pair, one equation per chirality |
 | $\tilde\nabla^{\natural}F=m\chi\bar{F}$, $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ | Two-sided Dirac equation; mass by right multiplication |
@@ -443,8 +443,8 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\mathrm{tr}$, $\mathrm{Tr}_R$ | Clifford trace over the module; matrix trace over the gauge representation |
 | $\mathrm{tr}(-iR_{\vec e_z}^{\mathrm{axf}}\,L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}\,L_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\tau(\rho)}}^{\mathrm{axf}}\,L_{e_\sigma}^{\mathrm{axf}}R_{\vec e_{\tau(\sigma)}}^{\mathrm{axf}})=-4i\epsilon_{\mu\nu\rho\sigma}$ | The boxed Clifford trace behind the anomaly; the four generator cells are reduced by $i^4=+1$, and the trace was recomputed on the $4^4$ index assignments |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, written all-low with $\epsilon_{0123}=+1$; raising all four indices multiplies it by $g^{00}g^{11}g^{22}g^{33}=-1$, so the textbook's upper-index contraction is the negative of the all-low one, and the anomaly term carries an explicit minus in this notation |
-| $j_{\mu}=\bar{\psi}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\psi$, $j_{5\mu}=\bar{\psi}\,L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{axf}}\psi$ | Vector and axial currents; the axial current is the reduced form of $\bar\psi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}(-iR_z)\psi$, the right multiplier being $\vec e_z\vec e_{\tau(\mu)}$ in that order |
-| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2m\bar{\psi}R_{\vec e_z}^{\mathrm{axf}}\psi-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the cells |
+| $j_{\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\psi$, $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{axf}}\psi$ | Vector and axial currents; the axial current is the reduced form of $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}(-iR_z)\psi$, the right multiplier being $\vec e_z\vec e_{\tau(\mu)}$ in that order |
+| $\langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2m\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\psi-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the cells |
 | $F_{\mu\nu}=\partial \mathcal{A}_\nu/\partial x_\mu-\partial \mathcal{A}_\mu/\partial x_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa=ϙ/\hbar$ | Non-abelian field strength, in components |
 | $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |

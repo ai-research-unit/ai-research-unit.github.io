@@ -5,7 +5,7 @@
 An **electric dipole moment** (EDM) is a permanent electric dipole along the spin axis of a particle. For a spin-$\tfrac12$ particle the interaction is
 
 $$
-\mathcal{L}_{\mathrm{EDM}} = -\frac{i}{2}\,d\;\bar{\psi}\,\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\,\psi\;F_{\mu\nu},
+\mathcal{L}_{\mathrm{EDM}} = -\frac{i}{2}\,d\;\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\,\psi\;F_{\mu\nu},
 \qquad
 H_{\mathrm{NR}} = -\,d\,\vec E\cdot\boldsymbol{\sigma},
 $$
@@ -94,7 +94,7 @@ The framework results used here are those of the companion articles:
 **The interaction.** The EDM is a CP-odd coupling of the electromagnetic field strength to the spin. Its Lorentz-covariant form is
 
 $$
-\mathcal{L}_{\mathrm{EDM}} = -\frac{i}{2}\,d\,\bar{\psi}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi F_{\mu\nu},
+\mathcal{L}_{\mathrm{EDM}} = -\frac{i}{2}\,d\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi F_{\mu\nu},
 $$
 
 and its nonrelativistic limit is the Hamiltonian
@@ -155,7 +155,7 @@ where $(\lambda,\mu)$ is the spatial pair complementary to $k$, so that $(0,k,\l
 With that identity the EDM Lagrangian of the Introduction reads
 
 $$
-\mathcal{L}_{\mathrm{EDM}} = +\frac{1}{2}\,d\;\bar{\psi}\,(\star\sigma_{\mu\nu})\,\psi\;F_{\mu\nu},
+\mathcal{L}_{\mathrm{EDM}} = +\frac{1}{2}\,d\;\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(\star\sigma_{\mu\nu})\,\psi\;F_{\mu\nu},
 $$
 
 the magnetic coupling with the dual insertion, since $-i\times i=+1$. This is the precise sense in which the EDM is the dual observable of the magnetic moment.
@@ -192,7 +192,7 @@ $$
 
 verified for $k=1,2,3$ with residual exactly zero. The EDM insertion is thus not merely anti-Hermitian and therefore material; up to a sign it is the Clifford image of one of the three vector basis elements $\vec e_k$ of $\mathbb{M}_-$ — the same elements that carry the spatial directions of the material sector. The rotation insertions are the central imaginary times those same images, $\sigma_{ij}=iL_{\vec e_m}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ with $m$ the third spatial index, and since multiplication by the central $i$ exchanges the sectors, $i\mathbb{M}_-=\mathbb{M}_+$, the insertion is read in the informational sector. The scalar $i$ and the cell $i\vec e_k$ are different objects: the dictionary is $\mathbb{R}$-linear, so the image of $i\vec e_k$ is the cell $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ and not $i$ times $L_{\vec e_k}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. The even part of the Clifford algebra is exactly this span: the eight cells with a spatial right multiplier, $L_{e_\mu}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $L_{e_\mu}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, such as $L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, lie in the odd part instead and have no preimage in $\mathbb{B}$.
 
-**The $i$ and the Hermiticity of the Lagrangian.** Because the EDM insertion is anti-Hermitian, the bilinear $\bar{\psi}\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})\psi$ is anti-Hermitian as a classical bilinear, and the Lagrangian density $-\tfrac{i}{2}d\,\bar{\psi}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi F_{\mu\nu}$ is Hermitian for real $d$ precisely because the explicit $i$ makes $i\times(\text{anti-Hermitian})$ Hermitian. The magnetic-moment Lagrangian has no such $i$, because its insertion is already Hermitian. **The factor of $i$ is the biquaternion signature of the EDM**: the operator is the CP-odd member of a dual pair, its material-sector placement is the anti-Hermiticity, and the Hermiticity of the action is restored by the central imaginary.
+**The $i$ and the Hermiticity of the Lagrangian.** Because the EDM insertion is anti-Hermitian, the bilinear $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})\psi$ is anti-Hermitian as a classical bilinear, and the Lagrangian density $-\tfrac{i}{2}d\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi F_{\mu\nu}$ is Hermitian for real $d$ precisely because the explicit $i$ makes $i\times(\text{anti-Hermitian})$ Hermitian. The magnetic-moment Lagrangian has no such $i$, because its insertion is already Hermitian. **The factor of $i$ is the biquaternion signature of the EDM**: the operator is the CP-odd member of a dual pair, its material-sector placement is the anti-Hermiticity, and the Hermiticity of the action is restored by the central imaginary.
 
 ## The Nonrelativistic Reduction
 
@@ -219,15 +219,15 @@ verified for the three components. The three $\Sigma_k$ are therefore a Pauli tr
 **The factor of two and the sign.** The sum over the pair $(\mu,\nu)$ counts the electric pair twice, as $(0,k)$ and as $(k,0)$, and the two contributions are equal, because $\sigma_{k0}=-\sigma_{0k}$ and $F_{k0}=-F_{0k}$ change sign together. With $F_{0k}=E_k$ the Lagrangian therefore contains
 
 $$
-\mathcal{L}_{\mathrm{EDM}} \supset -\,i\,d\,E_k\,\bar{\psi}\,\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})\psi .
+\mathcal{L}_{\mathrm{EDM}} \supset -\,i\,d\,E_k\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})\psi .
 $$
 
 Substituting the spin identity and multiplying the two factors of $i$, with $i^2=-1$,
 
 $$
--\,i\,d\,E_k\,\bar{\psi}\,(i\Sigma_k)\psi
-= -\,i^2\,d\,E_k\,\bar{\psi}\Sigma_k\psi
-= +\,d\,E_k\,\bar{\psi}\Sigma_k\psi .
+-\,i\,d\,E_k\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(i\Sigma_k)\psi
+= -\,i^2\,d\,E_k\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Sigma_k\psi
+= +\,d\,E_k\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Sigma_k\psi .
 $$
 
 For a positive-energy spinor normalized to $u^\dagger u=1$ the bilinear reduces to the spin density, $\bar{u}\Sigma_ku=\xi^\dagger\sigma_k\xi$ at rest and to leading order in $p/m$, so
@@ -249,26 +249,26 @@ the stated nonrelativistic limit. The chain is a derivation of the limit from th
 **The bilinears.** The sixteen bilinears fall into five shapes — scalar, vector, tensor, axial vector, pseudoscalar — and the chirality cell pairs the two that carry one free index and the two that carry two: the vector with the axial vector, the tensor with the pseudotensor. The four that enter here are
 
 $$
-\text{(vector)}\ \bar{\psi}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\psi,\qquad
-\text{(tensor)}\ \bar{\psi}\sigma_{\mu\nu}\psi,
+\text{(vector)}\ \psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\psi,\qquad
+\text{(tensor)}\ \psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}\psi,
 $$
 
 $$
-\text{(axial)}\ \bar{\psi}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}(-iR_{\vec e_z}^{\mathrm{axf}})\psi,\qquad
-\text{(pseudotensor)}\ \bar{\psi}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi .
+\text{(axial)}\ \psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}(-iR_{\vec e_z}^{\mathrm{axf}})\psi,\qquad
+\text{(pseudotensor)}\ \psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi .
 $$
 
 A bilinear with free indices has no parity of its own, since its timelike and its spatial components transform oppositely; the parities are therefore those of the gauge-invariant operators, bilinear times field:
 
 | Operator | Bilinear | $\mathbf{P}$ | $\mathbf{T}$ | $\mathbf{C}$ | $\mathbf{CP}$ | Insertion |
 |---|---|---|---|---|---|---|
-| $\bar{\psi}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\psi\,A_\mu$ (charge) | vector | even | even | even | even | $iR_{\vec e_x}^{\mathrm{axf}}$ for $\mu=0$, Hermitian; $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $\mu=k$, anti-Hermitian |
-| $\bar{\psi}\sigma_{\mu\nu}\psi\,F_{\mu\nu}$ (magnetic) | tensor | even | even | even | even | $\sigma_{ij}$ (Hermitian) |
-| $i\,\bar{\psi}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi\,F_{\mu\nu}$ (EDM) | pseudotensor | odd | odd | even | odd | $\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})$ (anti-Hermitian) |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\psi\,A_\mu$ (charge) | vector | even | even | even | even | $iR_{\vec e_x}^{\mathrm{axf}}$ for $\mu=0$, Hermitian; $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $\mu=k$, anti-Hermitian |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}\psi\,F_{\mu\nu}$ (magnetic) | tensor | even | even | even | even | $\sigma_{ij}$ (Hermitian) |
+| $i\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi\,F_{\mu\nu}$ (EDM) | pseudotensor | odd | odd | even | odd | $\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})$ (anti-Hermitian) |
 
 The EDM is the pseudotensor bilinear, the tensor times the chirality cell, and the table is the parity bookkeeping of the Hodge duality: the chirality cell is what flips the parity and the CP character, and the factor $i$ that accompanies it is what keeps the Hermiticity class.
 
-**Two operators, not four.** The list has two entries because the tensor and the pseudotensor are duals, not independent: the EDM insertion is $i$ times the dual of the tensor, and contracting a dual bivector with $F$ is the same as contracting the bivector with the dual of $F$. A Hermitian Lagrangian therefore carries two dimension-five couplings of different parity, and both coefficients are real: $\frac{1}{2}\mu\,\bar\psi\sigma_{\mu\nu}\psi F_{\mu\nu}$ and $\frac{1}{2}d\,\bar\psi(\star\sigma_{\mu\nu})\psi F_{\mu\nu}$. Written with the chirality cell instead of the dual, the second is $-i\,d$ times the tensor, and the $i$ of that writing is the duality's, not a separate phase. The other two combinations of bilinear and field are their conjugates. This is why the EDM is *the* CP-odd electromagnetic observable at this order, and why its bound is the sharpest test of new CP violation in the fermion sector. The anapole and the charge-radius terms join the list one dimension higher, are CP-even, and are not dipole moments.
+**Two operators, not four.** The list has two entries because the tensor and the pseudotensor are duals, not independent: the EDM insertion is $i$ times the dual of the tensor, and contracting a dual bivector with $F$ is the same as contracting the bivector with the dual of $F$. A Hermitian Lagrangian therefore carries two dimension-five couplings of different parity, and both coefficients are real: $\frac{1}{2}\mu\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}\psi F_{\mu\nu}$ and $\frac{1}{2}d\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\star\sigma_{\mu\nu})\psi F_{\mu\nu}$. Written with the chirality cell instead of the dual, the second is $-i\,d$ times the tensor, and the $i$ of that writing is the duality's, not a separate phase. The other two combinations of bilinear and field are their conjugates. This is why the EDM is *the* CP-odd electromagnetic observable at this order, and why its bound is the sharpest test of new CP violation in the fermion sector. The anapole and the charge-radius terms join the list one dimension higher, are CP-even, and are not dipole moments.
 
 **The framework's real structure and CP.** The framework's conjugation enters the bilinears through the module's real structure: a CP transformation is a charge conjugation accompanied by a parity reflection, and in the module language it uses the antilinear real structure. The EDM's bilinear is the one that changes sign under this operation, and the coefficient that keeps the action invariant is the real number $d$ on the dual insertion, which is $-i\,d$ on the chirality-cell one. The framework statement is therefore precise: the EDM is the coefficient of a CP-odd, anti-Hermitian, material-sector bilinear, and its measurement is the measurement of a central imaginary's coupling to the spin.
 
@@ -382,76 +382,76 @@ for an order-one phase and no loop suppression. This is the standard statement t
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 The five are generators, not a basis: the basis is the sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$, one for each ordered pair of units, linearly independent over $\mathbb{C}$ and spanning the sixteen complex dimensions. A product of two cells is again a cell up to sign, and a general element is a complex linear combination of the sixteen.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is $\mathbb{R}$-linear, not $\mathbb{C}$-linear; over $\mathbb{R}$ the sixteen products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, two real Clifford algebras of real dimension sixteen each.
 
 **The identities.** With $\epsilon_{0123}=+1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-**The normalisation of $\sigma_{\mu\nu}$.** The tensor is the Dirac one, $\sigma_{\mu\nu}=\frac{i}{2}[\gamma_\mu,\gamma_\nu]=i\gamma_\mu\gamma_\nu$ for $\mu\ne\nu$. The companion *Matrix Representations Conventions* writes the same symbol for the half bivector $\frac14[\gamma_\mu,\gamma_\nu]=\frac12\gamma_\mu\gamma_\nu$, which is $-\frac{i}{2}\sigma_{\mu\nu}$. The factor is complex rather than real, so the two symbols carry opposite Hermiticity: with the half-bivector convention the electric family is Hermitian and the magnetic family anti-Hermitian. The sector assignment stated in this article belongs to the Dirac tensor, the object that enters the bilinear.
+**The normalisation of $\sigma_{\mu\nu}$.** The tensor is the Dirac one, $\sigma_{\mu\nu}=\frac{i}{2}[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=i\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]$ for $\mu\ne\nu$. The companion *Matrix Representations Conventions* writes the same symbol for the half bivector $\frac14[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=\frac12\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]$, which is $-\frac{i}{2}\sigma_{\mu\nu}$. The factor is complex rather than real, so the two symbols carry opposite Hermiticity: with the half-bivector convention the electric family is Hermitian and the magnetic family anti-Hermitian. The sector assignment stated in this article belongs to the Dirac tensor, the object that enters the bilinear.
 
-**The four contractions.** The weight $\varepsilon$ is what carries the metric into the sum, and the Clifford relations do the rest:
-
-$$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
-$$
+**The four contractions.** The weight $\varepsilon$ is what carries the metric into the sum, and the anticommutation relations do the rest:
 
 $$
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\varepsilon_\mu\,\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\rho\gamma_\mu=-2\gamma_\rho\gamma_\beta\gamma_\alpha .
+\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4I_4,\qquad
+\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\alpha[\mathbb{M}_-],
 $$
 
-In the $\mathbb{B}$ frame every cell squares to $+I_4$, the weight is $+1$, and the same four sums give $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\rho\gamma_\beta\gamma_\alpha$. The unweighted sum $\sum_\mu\gamma_\mu\gamma_\mu$ equals $-2I_4$ in the frame used here and $+4I_4$ in the $\mathbb{B}$ frame; it is a third object, not one of the four.
+$$
+\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\rho[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-] .
+$$
+
+In the $\mathbb{B}$ frame every cell squares to $+I_4$, the weight is $+1$, and the same four sums give $4I_4$, $-2\gamma_\alpha[\mathbb{M}_-]$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\rho[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$. The unweighted sum $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]$ equals $-2I_4$ in the frame used here and $+4I_4$ in the $\mathbb{B}$ frame; it is a third object, not one of the four.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
@@ -460,7 +460,7 @@ In the $\mathbb{B}$ frame every cell squares to $+I_4$, the weight is $+1$, and 
 The electric dipole moment is the CP-odd, dimension-five coupling of a spin-$\tfrac12$ particle to the electromagnetic field,
 
 $$
-\mathcal{L}_{\mathrm{EDM}} = -\,\frac{i}{2}\,d\,\bar{\psi}\,\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\,\psi\,F_{\mu\nu},
+\mathcal{L}_{\mathrm{EDM}} = -\,\frac{i}{2}\,d\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\,\psi\,F_{\mu\nu},
 \qquad
 H_{\mathrm{NR}} = -\,d\,\vec E\cdot\boldsymbol{\sigma}.
 $$
@@ -502,7 +502,7 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $\Sigma_k=-i\,\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})=iL_{\vec e_k}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, which is $\mathrm{diag}(\sigma_k,\sigma_k)$ in the Peirce display | Spin operator of the nonrelativistic reduction, Hermitian, $\mathbb{M}_+$ |
 | $e_t\mapsto I_4$, $\vec e_k\mapsto L_{\vec e_k}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $ie_t\mapsto R_{\vec e_z}^{\mathrm{axf}}$, $i\vec e_k\mapsto L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | The dictionary, $\mathbb{R}$-linear and multiplicative |
 | $\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})=-L_{\vec e_k}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | The EDM insertion as the image of $-\vec e_k\in\mathbb{M}_-$ |
-| $-\tfrac{i}{2}d\,\bar{\psi}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi F_{\mu\nu}$ | EDM Lagrangian |
+| $-\tfrac{i}{2}d\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})\psi F_{\mu\nu}$ | EDM Lagrangian |
 | $H_{\mathrm{NR}}=-d\,\vec E\cdot\boldsymbol{\sigma}$ | EDM nonrelativistic Hamiltonian |
 | $F_1,F_2,F_3$ | Charge, anomalous magnetic moment, EDM form factors |
 | $d=\tfrac{e}{2m}F_3(0)$, $\mu=\tfrac{e}{2m}(1+F_2(0))$ | EDM and magnetic moment |

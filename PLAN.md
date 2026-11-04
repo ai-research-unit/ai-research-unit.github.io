@@ -88,6 +88,16 @@ Then the agent writes the article .md file. Here are editorial preferences :
 
   - prefer "physical interpretation" to "physical reading"
 
+Plain declarative prose that argues one claim from the start.
+
+Sentences are short, active, one idea per paragraph.
+
+It argues by contrast, and it names the strongest objection before answering it.
+
+Every claim carries a warrant: a proof, a check, or a stated reading of the conventions.
+
+Vocabulary is plain and consistent. No filler, no flourish.
+
 
 During this phase, the agent modifies the article, and the menu if necessary.
 
@@ -109,9 +119,19 @@ For example, for a physics article, among the articles to read, they are always 
 
 If needed, the agent then gathers interesting complementary information from the internet.
 
-Then the agent reviews the article .md file. He searches for errors, notational inconsistencies and incoherences and he corrects them. 
+Then the agent reviews the article .md file. He searches for errors, notational inconsistencies and incoherences and he corrects them.
 
 The agent respects the format of the article.
+
+Plain declarative prose that argues one claim from the start.
+
+Sentences are short, active, one idea per paragraph.
+
+It argues by contrast, and it names the strongest objection before answering it.
+
+Every claim carries a warrant: a proof, a check, or a stated reading of the conventions.
+
+Vocabulary is plain and consistent. No filler, no flourish.
 
 During this phase, the agent modifies the article, and the menu if necessary.
 

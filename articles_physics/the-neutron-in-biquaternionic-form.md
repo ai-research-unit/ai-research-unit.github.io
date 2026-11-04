@@ -140,7 +140,7 @@ so its spectrum is $\{ϙ_L,ϙ_R\}$, each with multiplicity two. A single-particl
 - If $ϙ_R=0$ and $ϙ_L\neq0$, then $\ker Ϙ = \bar{S}$, the right-handed block.
 - If $ϙ_L=ϙ_R=0$ the whole module is neutral (the trivially uncoupled case).
 
-Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**: the chirality cell restricted to the neutral block is a multiple of the identity there. When $ϙ_L=0$ the neutral space is $S$, on which $-iR_{\vec e_z}^{\mathrm{axf}}=-I_2$; when $ϙ_R=0$ it is $\bar{S}$, with $-iR_{\vec e_z}^{\mathrm{axf}}=+I_2$. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed): each of its two products pairs a left half with a right half, and one half is absent. So the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
+Neutrality on the module is therefore not a generic property: it requires one chirality to be uncoupled from the abelian charge. And, apart from the trivially uncoupled case $ϙ_L=ϙ_R=0$, the state that achieves it is **chirality-definite**: the chirality cell restricted to the neutral block is a multiple of the identity there. When $ϙ_L=0$ the neutral space is $S$, on which $-iR_{\vec e_z}^{\mathrm{axf}}=-I_2$; when $ϙ_R=0$ it is $\bar{S}$, with $-iR_{\vec e_z}^{\mathrm{axf}}=+I_2$. The Dirac mass bilinear $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ vanishes on any definite-chirality state, exactly (recomputed): each of its two products pairs a left half with a right half, and one half is absent. So the neutral single-particle state of the module carries no Dirac mass bilinear. Whether it can carry a mass at all then rests on a Majorana-type coupling built on the algebra's real structure $\flat$, which pairs the field with its conjugate rather than with an opposite-chirality partner, and whether the framework's real structure carries such a physical coupling is the open question inherited from the chiral-fermion article.
 
 The framework therefore does not cleanly supply a **massive neutral spin-$\tfrac12$ single particle**: on the module, neutrality and the massive Dirac interpretation pull in opposite directions.
 
@@ -218,57 +218,57 @@ Finally, the standing **empirical-contact** gap applies with full force. Nothing
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body written as letters, and this section is the only place in the article where they appear: every section above is written in cells.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-**Every $i$ in that display is the central scalar, $i^{2}=-1$, and it is what fixes the signs.** Since $L_{e_t}^{\mathrm{pau}}$ is the identity, two of the five collapse to a one-sided multiplier, $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. A gamma is one product, and each of its multipliers squares to the minus of $\vec e^{2}=-e_t$, so
+**Every $i$ in that display is the central scalar, $i^{2}=-1$, and it is what fixes the signs.** Since $L_{e_t}^{\mathrm{pau}}$ is the identity, two of the five collapse to a one-sided multiplier, $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$. A gamma is one product, and each of its multipliers squares to the minus of $\vec e^{2}=-e_t$, so
 
 $$
-\gamma_0^{2}=i^{2}(R_{\vec e_x}^{\mathrm{pau}})^{2}=(-1)(-I_4)=I_4,
+\gamma_0[\mathbb{M}_-]^{2}=i^{2}(R_{\vec e_x}^{\mathrm{pau}})^{2}=(-1)(-I_4)=I_4,
 \qquad
-\gamma_k^{2}=i^{2}(L_{\vec e_k}^{\mathrm{pau}})^{2}(R_{\vec e_y}^{\mathrm{pau}})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(k=1,2,3).
+\gamma_k[\mathbb{M}_-]^{2}=i^{2}(L_{\vec e_k}^{\mathrm{pau}})^{2}(R_{\vec e_y}^{\mathrm{pau}})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(k=1,2,3).
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0^{2}=i^{2}(R_{\vec e_x}^{\mathrm{axf}})^{2}=(-1)(-I_4)=I_4,
+\gamma_0[\mathbb{M}_-]^{2}=i^{2}(R_{\vec e_x}^{\mathrm{axf}})^{2}=(-1)(-I_4)=I_4,
 \qquad
-\gamma_k^{2}=i^{2}(L_{\vec e_k}^{\mathrm{axf}})^{2}(R_{\vec e_y}^{\mathrm{axf}})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(k=1,2,3).
+\gamma_k[\mathbb{M}_-]^{2}=i^{2}(L_{\vec e_k}^{\mathrm{axf}})^{2}(R_{\vec e_y}^{\mathrm{axf}})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(k=1,2,3).
 $$
 
-The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$.
+The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$.
 
-The fifth gamma is not a fifth frame vector but their product. The four defining $i$'s contribute $i^{4}=1$ and the cells contribute $\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}$, so
+The fifth gamma is not a fifth frame vector but their product. The four defining $i$'s contribute $i^{4}=1$ and the cells contribute $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}}$, so
 
 $$
-i\,\gamma_0\gamma_1\gamma_2\gamma_3 \;=\; -iR_{\vec e_z}^{\mathrm{pau}} \;=\; \gamma_5 ,
+i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-] \;=\; -iR_{\vec e_z}^{\mathrm{pau}} \;=\; \gamma_5[\mathbb{M}_-] ,
 $$
 
 The same identities in the axis-free display:
 
 $$
-i\,\gamma_0\gamma_1\gamma_2\gamma_3 \;=\; -iR_{\vec e_z}^{\mathrm{axf}} \;=\; \gamma_5 ,
+i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-] \;=\; -iR_{\vec e_z}^{\mathrm{axf}} \;=\; \gamma_5[\mathbb{M}_-] ,
 $$
 
 the chirality cell of the neutrality section.
 
-**The charge operator in gammas.** With $\gamma_5=P_R-P_L$ the two projectors read $P_L=\tfrac12(I_4-\gamma_5)$ and $P_R=\tfrac12(I_4+\gamma_5)$, so $Ϙ=ϙ_LP_L+ϙ_RP_R$ is diagonal in the gamma grading and the neutrality constraint $Ϙ\psi=0$ is the statement that the neutral state lies in one chirality eigenspace of $\gamma_5$.
+**The charge operator in gammas.** With $\gamma_5[\mathbb{M}_-]=P_R-P_L$ the two projectors read $P_L=\tfrac12(I_4-\gamma_5[\mathbb{M}_-])$ and $P_R=\tfrac12(I_4+\gamma_5[\mathbb{M}_-])$, so $Ϙ=ϙ_LP_L+ϙ_RP_R$ is diagonal in the gamma grading and the neutrality constraint $Ϙ\psi=0$ is the statement that the neutral state lies in one chirality eigenspace of $\gamma_5[\mathbb{M}_-]$.
 
-Two objects must not be confused here. $\gamma_5$ is the reference-frame cell of the chirality $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$. The central grading is $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, so that $\chi^{2}=i^{2}\tilde\Xi_{\mathrm{ad}}^{2}=(-1)(-e_t)=e_t$; $\chi$ is also the difference $e_+-e_-$ of the two central idempotents. It is a different object, central and not an element of $\mathbb{B}$, and $\gamma_5$ is only its representative on the Dirac module.
+Two objects must not be confused here. $\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$. The central grading is $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, so that $\chi^{2}=i^{2}\tilde\Xi_{\mathrm{ad}}^{2}=(-1)(-e_t)=e_t$; $\chi$ is also the difference $e_+-e_-$ of the two central idempotents. It is a different object, central and not an element of $\mathbb{B}$, and $\gamma_5[\mathbb{M}_-]$ is only its representative on the Dirac module.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -308,9 +308,9 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $Ϙ = ϙ_LP_L+ϙ_RP_R = \mathrm{diag}(ϙ_L,ϙ_L,ϙ_R,ϙ_R)$ | Charge operator on the module; $ϙ_L,ϙ_R$ unfixed parameters |
 | $D_\mu = \partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ | Covariant derivative of the chiral charge; $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$ |
 | $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
-| $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
+| $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
 | $\mathcal{N}F = (i\partial/\partial t'+D_3)F - m_n i\,\overline{F}\,\vec e_z$ | Two-sided Dirac equation, $F\in\mathbb{B}$; bar is the coefficientwise conjugation |
-| $\gamma_\mu$, $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Legacy Pauli Gamma Formulation* |
+| $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |

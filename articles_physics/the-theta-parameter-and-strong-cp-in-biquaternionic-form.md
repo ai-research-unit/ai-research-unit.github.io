@@ -136,7 +136,7 @@ $$
 \psi_R\longmapsto \exp(+i\alpha)\psi_R .
 $$
 
-The two lines are one operator read on the two halves: $\Gamma$ is $-I_4$ on $\psi_L$ and $+I_4$ on $\psi_R$, so the single right multiplication becomes the pair of left phases. Under this rotation the mass matrix in the fermion bilinear $\bar\psi_L M_q\psi_R$ transforms as
+The two lines are one operator read on the two halves: $\Gamma$ is $-I_4$ on $\psi_L$ and $+I_4$ on $\psi_R$, so the single right multiplication becomes the pair of left phases. Under this rotation the mass matrix in the fermion bilinear $\psi_L^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M_q\psi_R$ transforms as
 
 $$
 M_q\;\longmapsto\;\exp(2i\alpha)M_q ,
@@ -163,7 +163,7 @@ This is why $\bar\theta$ is the renormalisation-invariant physical parameter, an
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The body writes the theta density as a scalar built from the field strength; its operator content is carried by cells, and the gamma names are attached to the frame cells only here.
 
@@ -183,9 +183,9 @@ because $R_vR_x=R_{xv}$. The body's displays are in the $\mathbb{B}$ frame, whos
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}. &&
+\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_5[\mathbb{M}_-] &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}. &&
 \end{aligned}
 $$
 
@@ -193,63 +193,63 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}. &&
+\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_5[\mathbb{M}_-] &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}. &&
 \end{aligned}
 $$
 
 Every generator carries exactly one factor of $i$, so a product of two generators carries $i^2=-1$ and is a plain cell:
 
 $$
-\gamma_0\gamma_1=i^2L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=i^2L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}
 =-L_{\vec e_x}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0\gamma_1=i^2L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=i^2L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}
 =-L_{\vec e_x}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}=+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-The same collapse gives the squares and the Clifford relations, with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell — the algebra's unit $e_t$ read as an operator on the module,
+The same collapse gives the squares and the anticommutation relations, with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell — the algebra's unit $e_t$ read as an operator on the module,
 
 $$
-\gamma_0^2=I_4,\qquad
-\gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad
-\gamma_5^2=I_4,
+\gamma_0[\mathbb{M}_-]^2=I_4,\qquad
+\gamma_1[\mathbb{M}_-]^2=\gamma_2[\mathbb{M}_-]^2=\gamma_3[\mathbb{M}_-]^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,
 $$
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}[\mathbb{M}_-]I_4,\qquad
-\{\gamma_5,\gamma_\mu\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}[\mathbb{M}_-]I_4,\qquad
+\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
 and the volume element
 
 $$
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5 .
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-] .
 $$
 
 A single $i$ also collapses when it multiplies a generator:
 
 $$
-i\gamma_0=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-i\gamma_1=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_2=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_3=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_5=+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+i\gamma_0[\mathbb{M}_-]=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+i\gamma_1[\mathbb{M}_-]=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+i\gamma_2[\mathbb{M}_-]=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+i\gamma_3[\mathbb{M}_-]=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+i\gamma_5[\mathbb{M}_-]=+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same identities in the axis-free display:
 
 $$
-i\gamma_0=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-i\gamma_1=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_2=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_3=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_5=+L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+i\gamma_0[\mathbb{M}_-]=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+i\gamma_1[\mathbb{M}_-]=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+i\gamma_2[\mathbb{M}_-]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+i\gamma_3[\mathbb{M}_-]=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+i\gamma_5[\mathbb{M}_-]=+L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 Write a two-sided operator $M$ in the basis of the sixteen cells as
@@ -266,7 +266,7 @@ $$
 
 and let $C(M)=(C_{\mu\nu}(M))$ be its $4\times4$ coefficient matrix and $\ell(M)=\operatorname{rank}C(M)$ its length. A single cell is a pure tensor of rank one. The pure tensors form the seven-dimensional cone $\{\operatorname{rank}C(M)\le1\}$ in $M_4(\mathbb{C})$, and a general operator is a sum of at most four of them, and of no fewer than $\operatorname{rank}C(M)$, since the tensor rank of a matrix is at least its rank.
 
-$\gamma_5$ is the cell $\Gamma$ of the chirality operator, the involution that grades the Dirac module $\Delta=S\oplus S^{\mathrm c}$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=+e_t$ — is the difference of the two central idempotents of the complexified algebra and is a different object, represented by $\gamma_5$ on that module.
+$\gamma_5[\mathbb{M}_-]$ is the cell $\Gamma$ of the chirality operator, the involution that grades the Dirac module $\Delta=S\oplus S^{\mathrm c}$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=+e_t$ — is the difference of the two central idempotents of the complexified algebra and is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on that module.
 
 **The two Dirac equations.** The two families carry the corpus's two Dirac equations. The one-sided pair acts with the left family alone, which the corpus writes with the gradient in place and no cell mark,
 
@@ -291,7 +291,7 @@ $$
 
 where the derivative acts from the left, the mass acts from the right through $\vec e_z$, $\overline{\tilde Q_{\mathrm f}}$ is the coefficient conjugate, and the time derivative carries the unit of $\partial/\partial t'$ in natural units, $c=1$, as in *The Dirac Equation in Biquaternionic Form*. The two equations share the frame but not the operator: the one-sided pair splits the field into chirality halves; the two-sided equation is antilinear in its mass term and carries the chirality in the right multiplication.
 
-The identification is complex-linear: over $\mathbb{C}$ the products of the gammas and the sixteen cells both span $M_4(\mathbb{C})$. Over $\mathbb{R}$ the sixteen graded products $1,\gamma_\mu,\gamma_{\mu\nu},\gamma_{\mu\nu\rho},\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$ span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells span the other real form, $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The identification is complex-linear: over $\mathbb{C}$ the products of the gammas and the sixteen cells both span $M_4(\mathbb{C})$. Over $\mathbb{R}$ the sixteen graded products $1,\gamma_\mu[\mathbb{M}_-],\gamma_{\mu\nu}[\mathbb{M}_-],\gamma_{\mu\nu\rho}[\mathbb{M}_-],\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-]$ span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells span the other real form, $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

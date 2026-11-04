@@ -47,7 +47,7 @@ $$
 D_3=\sum_k\vec e_k\frac{\partial}{\partial Q_k},
 $$
 
-is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, to be read apart from the Dirac adjoint $\bar\psi=\psi^\dagger C_0$ of the sections below. The two are related by the dictionary $A$ of the parent article's section *An Explicit Dictionary with Conjugation in the Mass Term*, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
+is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, the coefficient conjugation, and it is not the Dirac adjoint $\psi^\dagger C_0$ of the sections below. The two are related by the dictionary $A$ of the parent article's section *An Explicit Dictionary with Conjugation in the Mass Term*, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
 
 The companion solutions article works with the spinor-module representative of the pair, the four-component complex Dirac spinor $\psi\in\Delta\cong\mathbb{C}^4$. The frame cells act on that four-dimensional space; its two chiral halves are the two-component spinor modules $S$ and $S^{\mathrm{c}}$, and it is on those that the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts. There the pair is transcribed as the single cell equation
 
@@ -104,11 +104,11 @@ Each term of $\mathbb{D}$ carries the product $i\cdot i=-1$: the explicit $i$ of
 The classical field theory is defined by the Lagrangian density
 
 $$
-\mathcal{L}=\bar{\psi}\,(\mathbb{D}-m)\,\psi
+\mathcal{L}=\psi^{\dagger}C_0\,(\mathbb{D}-m)\,\psi
 =\psi^\dagger\Big(i\frac{\partial}{\partial t'}+i\sum_kC_0C_k\frac{\partial}{\partial Q_k}-mC_0\Big)\psi ,
 $$
 
-in which the three coefficient matrices are visible: the identity on the time derivative, the cell $C_0C_k$ on each spatial derivative, and $-mC_0$ on the field itself. Variation with respect to $\bar{\psi}$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$; variation with respect to $\psi$ returns the conjugate equation $\bar\psi(\mathbb{D}-m)=0$, in which the operator acts on $\bar\psi$ from the left; it is the Hermitian conjugate of the first.
+in which the three coefficient matrices are visible: the identity on the time derivative, the cell $C_0C_k$ on each spatial derivative, and $-mC_0$ on the field itself. Variation with respect to $\psi^{\dagger}C_0$ returns the Dirac equation $(\mathbb{D}-m)\psi=0$; variation with respect to $\psi$ returns the conjugate equation $\psi^{\dagger}C_0(\mathbb{D}-m)=0$, in which the operator acts on $\psi^{\dagger}C_0$ from the left; it is the Hermitian conjugate of the first.
 
 The Lagrangian is **real up to a four-divergence**. The mass term is Hermitian outright, because $C_0$ is Hermitian and $m$ real. Each derivative term carries an explicit $i$ and a Hermitian coefficient matrix, so each differs from its conjugate by a divergence, and
 
@@ -127,7 +127,7 @@ $$
 which says that the cell is self-adjoint for the $C_0$-twisted pairing and not for the ordinary one: $C_0C_\mu$ is Hermitian for every $\mu$, while $C_0$ is already Hermitian and the spatial cells $C_k$ are anti-Hermitian. Multiplying by $C_0$ therefore turns the anti-Hermitian cells into Hermitian ones, so $C_0\mathbb{D}_p$ is Hermitian while $\mathbb{D}_p$ is not. The Dirac adjoint is
 
 $$
-\bar{\psi}=\psi^\dagger C_0,\qquad
+\psi^\dagger C_0,\qquad
 C_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},
 $$
 
@@ -144,7 +144,7 @@ $$
 The step is worth displaying, because it is the origin of the entire fermionic structure. The only term of $\mathcal{L}$ that carries a time derivative is the one with $\partial/\partial t'$. In the cells it is
 
 $$
-\bar\psi\,iC_0\frac{\partial}{\partial t'}\psi
+\psi^{\dagger}C_0\,iC_0\frac{\partial}{\partial t'}\psi
 =\psi^\dagger C_0\,iC_0\frac{\partial}{\partial t'}\psi
 =i\,\psi^\dagger\frac{\partial}{\partial t'}\psi,
 $$
@@ -208,7 +208,7 @@ $$
 
 unbounded below: adding antiparticles would lower the energy without limit, and no stable vacuum would exist. If the modes anticommute, the same product is $1-b^{\mathrm{fop}\dagger}_r(\vec p)b^{\mathrm{fop}}_r(\vec p)$, and the same expression becomes a positive sum plus a constant. The anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea.
 
-**2. Microcausality.** For a field of spin $\tfrac12$, the commutator $[\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)]$ does **not** vanish for spacelike separated $x,y$, so quantizing with commutators would correlate measurements in causally disconnected regions. The anticommutator $\{\psi^{\mathrm{fop}}(x),\bar{\psi^{\mathrm{fop}}}(y)\}$ does vanish there, and it is the quantity that must be local for a fermion field. This is the content of Pauli's 1940 argument: the requirement that the fields commute or anticommute outside the light cone, together with the transformation properties of the spinor representation, selects anticommutation for half-integer spin.
+**2. Microcausality.** For a field of spin $\tfrac12$, the commutator $[\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)C_0]$ does **not** vanish for spacelike separated $x,y$, so quantizing with commutators would correlate measurements in causally disconnected regions. The anticommutator $\{\psi^{\mathrm{fop}}(x),\psi^{\mathrm{fop}\dagger}(y)C_0\}$ does vanish there, and it is the quantity that must be local for a fermion field. This is the content of Pauli's 1940 argument: the requirement that the fields commute or anticommute outside the light cone, together with the transformation properties of the spinor representation, selects anticommutation for half-integer spin.
 
 **3. Positivity of the inner product.** Quantizing a half-integer-spin field with commutators produces states of negative norm; the anticommutator is what makes the Fock inner product positive-definite. This is the Hilbert-space form of the same obstruction.
 
@@ -349,12 +349,12 @@ The conserved energy of the free Dirac field is
 
 $$
 H=\int d^3X\;\psi^{\mathrm{fop}\dagger}\Big(-i\sum_k C_0C_k\frac{\partial}{\partial Q_k}+mC_0\Big)\psi^{\mathrm{fop}}
-=\int d^3X\;\bar{\psi^{\mathrm{fop}}}\Big(-i\sum_k C_k\frac{\partial}{\partial Q_k}+m\Big)\psi^{\mathrm{fop}} .
+=\int d^3X\;\psi^{\mathrm{fop}\dagger}C_0\Big(-i\sum_k C_k\frac{\partial}{\partial Q_k}+m\Big)\psi^{\mathrm{fop}} .
 $$
 
 The integrand is the $00$ component of the canonical energy–momentum tensor, equivalently the Legendre transform $\pi\,\partial \psi/\partial t'-\mathcal{L}$ of the Lagrangian fixed in the section *The Lagrangian*: the two time-derivative terms cancel, and what is left is the expression above.
 
-The two forms are the same operator. In the first the spatial derivative is multiplied by $C_0C_k$; in the second the $C_0$ has been absorbed into $\bar\psi$, and since $C_0^2=I_4$ the operator standing between $\psi^\dagger$ and $\psi$ is again $C_0C_k$. That matrix is Hermitian,
+The two forms are the same operator. In the first the spatial derivative is multiplied by $C_0C_k$; in the second the $C_0$ has been absorbed into $\psi^{\dagger}C_0$, and since $C_0^2=I_4$ the operator standing between $\psi^\dagger$ and $\psi$ is again $C_0C_k$. That matrix is Hermitian,
 
 $$
 (C_0C_k)^\dagger=C_k^\dagger C_0^\dagger=(-C_k)C_0=C_0C_k ,
@@ -398,7 +398,7 @@ $$
 \Big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\Big),\qquad p_\mu=(E_{\vec p},\vec p),
 $$
 
-and the normal-ordered electric charge, from $j_\mu=\bar\psi C_\mu\psi$ with $j_0=\psi^\dagger C_0C_0\psi=\psi^\dagger\psi$, is
+and the normal-ordered electric charge, from $j_\mu=\psi^{\dagger}C_0C_\mu\psi$ with $j_0=\psi^\dagger C_0C_0\psi=\psi^\dagger\psi$, is
 
 $$
 :\!Ϙ^{\mathrm{fop}}\!:\;=\sum_{r}\int\!\frac{d^3p}{(2\pi)^3}
@@ -492,7 +492,7 @@ Because the question addressed here is itself an open question of the framework,
 
 **Standard quantum field theory, transcribed.**
 
-- The Lagrangian $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ and the conjugate momentum $\pi=i\psi^\dagger$, together with the second-class constraint $\pi-i\psi^\dagger\approx0$.
+- The Lagrangian $\mathcal{L}=\psi^{\dagger}C_0(\mathbb{D}-m)\psi$ and the conjugate momentum $\pi=i\psi^\dagger$, together with the second-class constraint $\pi-i\psi^\dagger\approx0$.
 - The equal-time anticommutation relations, imposed and verified, and the three reasons anticommutation rather than commutation is forced.
 - The mode expansion in the parent article's plane-wave solutions, with the covariant normalization $\bar w w=2m$, $w^\dagger w=2E$, and the parent's spin sums.
 - The mode-operator anticommutators, the Fock space, and Pauli exclusion as the algebraic identity $(a^{\mathrm{fop}\dagger})^2=0$.
@@ -513,36 +513,36 @@ The extension attempted here is therefore **not canonical** in the framework: th
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body:
 
 $$
-\gamma_0=C_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1=C_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2=C_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3=C_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]=C_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1[\mathbb{M}_-]=C_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2[\mathbb{M}_-]=C_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3[\mathbb{M}_-]=C_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=C_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1=C_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2=C_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3=C_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]=C_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1[\mathbb{M}_-]=C_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2[\mathbb{M}_-]=C_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3[\mathbb{M}_-]=C_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
 $$
 
 The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixes its sign and its cell:
 
 $$
-\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5[\mathbb{M}_-]:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 In the axis-free display:
 
 $$
-\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5[\mathbb{M}_-]:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives; the cell that results is $-iR_{\vec e_z}^{\mathrm{pau}}$, the chirality cell of the solutions article.
@@ -550,12 +550,12 @@ The four cells in the product carry $i^4=1$, so the single $i$ of the definition
 The pair operator of the body is the same cell operator, written in gammas:
 
 $$
-\mathbb{D}=i\gamma_0\frac{\partial}{\partial t'}+i\sum_k\gamma_k\frac{\partial}{\partial Q_k},
+\mathbb{D}=i\gamma_0[\mathbb{M}_-]\frac{\partial}{\partial t'}+i\sum_k\gamma_k[\mathbb{M}_-]\frac{\partial}{\partial Q_k},
 \qquad
-\mathbb{D}_p=\gamma_0E_{\vec p}-\sum_k\gamma_kp_k,
+\mathbb{D}_p=\gamma_0[\mathbb{M}_-]E_{\vec p}-\sum_k\gamma_k[\mathbb{M}_-]p_k,
 $$
 
-with $p_0=E_{\vec p}$ and $p_k$ the physical momentum components. Written in cells, each term $i\gamma_\mu=iC_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}$ has already spent the product $i\cdot i=-1$, so the operator is
+with $p_0=E_{\vec p}$ and $p_k$ the physical momentum components. Written in cells, each term $i\gamma_\mu[\mathbb{M}_-]=iC_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}$ has already spent the product $i\cdot i=-1$, so the operator is
 
 $$
 \mathbb{D}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
@@ -567,40 +567,40 @@ $$
 \mathbb{D}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
 $$
 
-with no imaginary unit left in any term. The collapse removes the $i$, not the cell: $i\gamma_0=-R_{\vec e_x}^{\mathrm{pau}}\ne-I_4$, so the time derivative is multiplied by the right multiplication by $\vec e_x$, not by a number.
+with no imaginary unit left in any term. The collapse removes the $i$, not the cell: $i\gamma_0[\mathbb{M}_-]=-R_{\vec e_x}^{\mathrm{pau}}\ne-I_4$, so the time derivative is multiplied by the right multiplication by $\vec e_x$, not by a number.
 
 In the matrix representation of the frame, a single product of basis units is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$; a general element is a sum of at most four of them, and $\ell(M)=\operatorname{rank}c(M)$.
 
-The cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is also the module representative of the central chirality sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$: $\chi$ is the difference of the two central idempotents of the complexified algebra, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$. The sign $\chi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$; the cell is its representative on the Dirac module, not its definition.
+The cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$ is also the module representative of the central chirality sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$: $\chi$ is the difference of the two central idempotents of the complexified algebra, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t$. The sign $\chi$ is central and lies outside $\mathbb{B}_{\mathbb{R}}$; the cell is its representative on the Dirac module, not its definition.
 
 The map from the sixteen products of the biquaternion basis to the gamma frame is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real left–right products $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
 ## Summary
 
-The biquaternion Dirac field is quantized by promoting its spinor-module representative to an operator-valued field. The equation quantized is the one-sided chiral pair, written on the module as $(\mathbb{D}-m)\psi=0$; Kravchenko's two-sided equation is a different operator and is not quantized here. The classical theory has Lagrangian $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ and conjugate momentum $\pi=i\psi^\dagger$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators,
+The biquaternion Dirac field is quantized by promoting its spinor-module representative to an operator-valued field. The equation quantized is the one-sided chiral pair, written on the module as $(\mathbb{D}-m)\psi=0$; Kravchenko's two-sided equation is a different operator and is not quantized here. The classical theory has Lagrangian $\mathcal{L}=\psi^{\dagger}C_0(\mathbb{D}-m)\psi$ and conjugate momentum $\pi=i\psi^\dagger$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators,
 
 $$
 \{\psi^{\mathrm{fop}}_a(X,t'),\psi^{\mathrm{fop}\dagger}_b(Y,t')\}=\delta_{ab}\delta^{(3)}(X-Y)
@@ -633,7 +633,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$ | d'Alembertian, $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$; in $t'$ it is $\Delta_Q-\partial^2/\partial t'^2$ |
 | $\tilde{\Psi}$ | Classical Dirac field, valued in $\Delta=S\oplus S^{\mathrm{c}}$ |
 | $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger C_0$ | Dirac spinor (spinor module) and its adjoint |
+| $\psi=(\psi_L,\psi_R)$, $\psi^\dagger C_0$ | Dirac spinor (spinor module) and its adjoint |
 | $e_\mu$ | Basis unit: $e_t$ for $\mu=t$, $\vec e_k$ for $\mu=k$ |
 | $\kappa(\mu)$ | Right multiplier of the cell: $\kappa(t)=x$, $\kappa(k)=y$ |
 | $C_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}$, $C_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells, acting on the spinor module |
@@ -642,7 +642,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $g_{\mu\nu}[\mathbb{M}_-]$ | Spacetime metric of the $ict'$ gradient |
 | $\mathbb{D}=iC_0\partial/\partial t'+i\sum_kC_k\partial/\partial Q_k=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$ | Pair operator on the module; $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p=C_0E_{\vec p}-\sum_kC_kp_k$ | Momentum symbol of $\mathbb{D}$ on a plane wave; $\mathbb{D}_p^2=p^2$ |
-| $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |
+| $\mathcal{L}=\psi^{\dagger}C_0(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial\psi/\partial t')=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
 | $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |

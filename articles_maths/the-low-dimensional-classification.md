@@ -231,7 +231,7 @@ $$
 
 the complex Clifford algebra of the complexified form, and the complexification depends only on $N=\dim V$, not on the signature.
 
-**Proof.** The complexification of the tensor algebra is $T(V)\otimes_{\mathbb{R}}\mathbb{C}\cong T(V\otimes_{\mathbb{R}}\mathbb{C})$, and the ideal of the Clifford relations is carried to the ideal of the relations $v^2=\mathfrak{Q}(v)1$ over $\mathbb{C}$; the quotient is $\mathbb{C}\mathrm{l}(V\otimes_{\mathbb{R}}\mathbb{C})$. For the second statement, over $\mathbb{C}$ every non-degenerate form can be put in the form $z_1^2+\cdots+z_N^2$ by a linear change of coordinates, since $\pm1$ are both squares over $\mathbb{C}$; hence the complex Clifford algebra depends only on $N$.
+**Proof.** The complexification of the tensor algebra is $T(V)\otimes_{\mathbb{R}}\mathbb{C}\cong T(V\otimes_{\mathbb{R}}\mathbb{C})$, and the ideal of the anticommutation relations is carried to the ideal of the relations $v^2=\mathfrak{Q}(v)1$ over $\mathbb{C}$; the quotient is $\mathbb{C}\mathrm{l}(V\otimes_{\mathbb{R}}\mathbb{C})$. For the second statement, over $\mathbb{C}$ every non-degenerate form can be put in the form $z_1^2+\cdots+z_N^2$ by a linear change of coordinates, since $\pm1$ are both squares over $\mathbb{C}$; hence the complex Clifford algebra depends only on $N$.
 
 **The complex classification.** Writing $\mathbb{C}\mathrm{l}_N$ for the complex Clifford algebra of an $N$-dimensional non-degenerate form, the complex case is periodic of period two:
 
@@ -280,12 +280,12 @@ Echoing the one-dimensional case, one has $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are the generators of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra, the literature frame of $\mathbb{B}\cong M_2(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_k\mapsto ie_k,\qquad \gamma_1\gamma_2\gamma_3\mapsto i,\qquad \gamma_j\gamma_k\mapsto-e_je_k .
+\gamma_k[\mathbb{M}_-]\mapsto ie_k,\qquad \gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]\mapsto i,\qquad \gamma_j[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]\mapsto-e_je_k .
 $$
 
 The native object is the triple $(e_1,e_2,e_3)$ of quaternion units; a generator is one of them multiplied by $i$, and a bivector is, up to sign, the product of two of them.

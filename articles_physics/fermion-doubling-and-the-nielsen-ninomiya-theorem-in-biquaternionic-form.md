@@ -205,47 +205,47 @@ The framework supplies a continuum equation and a multivector structure whose na
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are the frame cells of the body, written as single letters; they form a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 The Euclidean frame of the lattice sections is built from these cells, with a factor of $i$ on the three spatial legs:
 
 $$
-\gamma^E_4=\gamma_0=iR_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma^E_k=i\gamma_k=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=1,2,3),\qquad
+\gamma^E_4=\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma^E_k=i\gamma_k[\mathbb{M}_-]=-L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\quad(k=1,2,3),\qquad
 \gamma^E_5=\gamma^E_4\gamma^E_1\gamma^E_2\gamma^E_3=iR_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 In the axis-free display:
 
 $$
-\gamma^E_4=\gamma_0=iR_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma^E_k=i\gamma_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=1,2,3),\qquad
+\gamma^E_4=\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma^E_k=i\gamma_k[\mathbb{M}_-]=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=1,2,3),\qquad
 \gamma^E_5=\gamma^E_4\gamma^E_1\gamma^E_2\gamma^E_3=iR_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The four cells anticommute, so moving $\gamma^E_4$ to the right past the other three flips the sign:
 $$
-\gamma^E_1\gamma^E_2\gamma^E_3\gamma^E_4=-\gamma^E_5=\gamma_5 .
+\gamma^E_1\gamma^E_2\gamma^E_3\gamma^E_4=-\gamma^E_5=\gamma_5[\mathbb{M}_-] .
 $$
-In particular $\gamma^E_5=-\gamma_5$, and a right-chiral projector written with the Euclidean chirality reads $P_R=\tfrac12(I_4-\gamma^E_5)=\tfrac12(I_4+\gamma_5)$.
+In particular $\gamma^E_5=-\gamma_5[\mathbb{M}_-]$, and a right-chiral projector written with the Euclidean chirality reads $P_R=\tfrac12(I_4-\gamma^E_5)=\tfrac12(I_4+\gamma_5[\mathbb{M}_-])$.
 
-The sixteen graded products of the five cells — the unit, the four cells, the six products of two, the four products of three and $\gamma_5$ — form a basis of $M_4(\mathbb{C})$, so every two-sided operator is a complex combination of them.
+The sixteen graded products of the five cells — the unit, the four cells, the six products of two, the four products of three and $\gamma_5[\mathbb{M}_-]$ — form a basis of $M_4(\mathbb{C})$, so every two-sided operator is a complex combination of them.
 
-$\gamma_5$ is the reference-frame representative of the chirality operator. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5$.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame representative of the chirality operator. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5[\mathbb{M}_-]$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -256,12 +256,12 @@ $$
 \tilde{\nabla}^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
 $$
 
-On the spinor module the pair reduces to the single cell equation $(\mathbb{D}-m)\psi=0$, with $\mathbb{D}=i\gamma\cdot\partial$, the dot product being the metric contraction $\gamma\cdot\partial=\sum_\mu\varepsilon_\mu\gamma_\mu\partial/\partial x_\mu$ and $\varepsilon_\mu=-g_{\mu\mu}$; in the letter this is $(i\gamma\cdot\partial-m)\psi=0$. The letter and the cells are the same operator: expanding the metric sum gives back $-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$.
+On the spinor module the pair reduces to the single cell equation $(\mathbb{D}-m)\psi=0$, with $\mathbb{D}=i\gamma\cdot\partial$, the dot product being the metric contraction $\gamma\cdot\partial=\sum_\mu\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]\partial/\partial x_\mu$ and $\varepsilon_\mu=-g_{\mu\mu}$; in the letter this is $(i\gamma\cdot\partial-m)\psi=0$. The letter and the cells are the same operator: expanding the metric sum gives back $-R_{\vec e_x}^{\mathrm{pau}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\partial/\partial x_k$.
 
 The pair and the cell equation are the same statement in two readings. The two lines of the pair are the two chiral halves of $\psi$: with
 
 $$
-P_R=\tfrac12(I_4+\gamma_5),\qquad P_L=\tfrac12(I_4-\gamma_5),\qquad \psi_R=P_R\psi,\qquad \psi_L=P_L\psi,
+P_R=\tfrac12(I_4+\gamma_5[\mathbb{M}_-]),\qquad P_L=\tfrac12(I_4-\gamma_5[\mathbb{M}_-]),\qquad \psi_R=P_R\psi,\qquad \psi_L=P_L\psi,
 $$
 
 the projections of the cell equation are
@@ -271,41 +271,41 @@ i\gamma\cdot\partial\,\psi_R=m\psi_L,\qquad
 i\gamma\cdot\partial\,\psi_L=m\psi_R .
 $$
 
-The gradient anticommutes with $\gamma_5$, so it carries each chirality into the other, and the mass couples the two lines. At $m=0$ each line stands alone, $\tilde{\nabla}\tilde\Psi_R=0$ and $\tilde{\nabla}^{\natural}\tilde\Psi_L=0$, and the two chiralities decouple.
+The gradient anticommutes with $\gamma_5[\mathbb{M}_-]$, so it carries each chirality into the other, and the mass couples the two lines. At $m=0$ each line stands alone, $\tilde{\nabla}\tilde\Psi_R=0$ and $\tilde{\nabla}^{\natural}\tilde\Psi_L=0$, and the two chiralities decouple.
 
 **The identities of the frame.** In the $\gamma$ reading the indices run over $\mu=0,1,2,3$, so the lattice direction $\mu=4$ of the previous sections is $\mu=0$ here. With $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,\Sigma_{cd}]=g_{ac}\gamma_d-g_{ad}\gamma_c,\qquad
-\Sigma_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],\Sigma_{cd}]=g_{ac}\gamma_d[\mathbb{M}_-]-g_{ad}\gamma_c[\mathbb{M}_-],\qquad
+\Sigma_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 The spin generators are the $S_{cd}$ of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$*, renamed $\Sigma_{cd}$ here because $S_\nu$ and $S_A$ are the taste generators.
 
-The four contraction sums follow from the Clifford relations. In the Euclidean frame, where every cell squares to $+I_4$, every $\gamma$ in these sums is read as its Euclidean cell $\gamma^E$,
+The four contraction sums follow from the anticommutation relations. In the Euclidean frame, where every cell squares to $+I_4$, every $\gamma$ in these sums is read as its Euclidean cell $\gamma^E$,
 $$
-\sum_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\delta_{\alpha\beta}I_4,
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4I_4,\qquad
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-2\gamma_\alpha[\mathbb{B}],\qquad
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}]=4\delta_{\alpha\beta}I_4,
 $$
 and, for distinct $\alpha,\beta,\gamma$,
 $$
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=2\gamma_\alpha\gamma_\beta\gamma_\gamma .
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-] .
 $$
-In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
+In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

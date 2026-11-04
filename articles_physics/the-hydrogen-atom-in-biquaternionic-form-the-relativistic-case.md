@@ -426,7 +426,7 @@ Three entries deserve a sentence. The first is that the algebraic content is rea
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -434,9 +434,9 @@ Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_5[\mathbb{M}_-] &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
 
@@ -444,42 +444,42 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_5[\mathbb{M}_-] &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 \end{aligned}
 $$
 
-Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the cell algebra, two of them collapse: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$, which is the $\beta$ of the Hamiltonian above, $\beta=\gamma_0$; and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$, which is the chirality cell of the axial current. The remaining three are genuinely two-sided.
+Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the cell algebra, two of them collapse: $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$, which is the $\beta$ of the Hamiltonian above, $\beta=\gamma_0[\mathbb{M}_-]$; and $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$, which is the chirality cell of the axial current. The remaining three are genuinely two-sided.
 
 The squares use $i^2=-1$, the cell rule $L_aR_bL_cR_d=L_{ac}R_{db}$, and $\vec e_k^2=-e_t$, with $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity of the cell algebra:
 
 $$
-\gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x\vec e_x}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x\vec e_x}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x\vec e_x}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x\vec e_x}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
 $$
-\gamma_k^2=i^2L_{\vec e_k\vec e_k}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
+\gamma_k[\mathbb{M}_-]^2=i^2L_{\vec e_k\vec e_k}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
 $$
 
 The same identities in the axis-free display:
 
 $$
-\gamma_k^2=i^2L_{\vec e_k\vec e_k}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
+\gamma_k[\mathbb{M}_-]^2=i^2L_{\vec e_k\vec e_k}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
 $$
 
-The timelike generator squares to the identity and the three spatial ones to minus the identity, so the frame has the signature $(+,-,-,-)$. The mixed products vanish for the same reason: in $\{\gamma_0,\gamma_j\}$ the left factors $e_t$ and $\vec e_j$ commute while the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, and in $\{\gamma_i,\gamma_j\}$, $i\neq j$, the right factor $\vec e_y$ is common while the left factors $\vec e_i$ and $\vec e_j$ anticommute.
+The timelike generator squares to the identity and the three spatial ones to minus the identity, so the frame has the signature $(+,-,-,-)$. The mixed products vanish for the same reason: in $\{\gamma_0[\mathbb{M}_-],\gamma_j[\mathbb{M}_-]\}$ the left factors $e_t$ and $\vec e_j$ commute while the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, and in $\{\gamma_i[\mathbb{M}_-],\gamma_j[\mathbb{M}_-]\}$, $i\neq j$, the right factor $\vec e_y$ is common while the left factors $\vec e_i$ and $\vec e_j$ anticommute.
 
 One product of all four is worth writing out, because it fixes the sign of the chirality cell:
 
 $$
-\gamma_0\gamma_1\gamma_2\gamma_3
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]
 = L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{pau}}
 = L_{-e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
 = -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
@@ -488,7 +488,7 @@ $$
 Read in the axis-free display:
 
 $$
-\gamma_0\gamma_1\gamma_2\gamma_3
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]
 = L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{axf}}
 = L_{-e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
 = -L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
@@ -497,26 +497,26 @@ $$
 so that
 
 $$
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \qquad
-\gamma_5^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\gamma_5[\mathbb{M}_-]^2=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
-\{\gamma_5,\gamma_\mu\}=0 .
+\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0 .
 $$
 
 The same expressions, in the axis-free display:
 
 $$
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 \qquad
-\gamma_5^2=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\gamma_5[\mathbb{M}_-]^2=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad
-\{\gamma_5,\gamma_\mu\}=0 .
+\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0 .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

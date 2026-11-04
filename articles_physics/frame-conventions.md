@@ -38,7 +38,7 @@ Every coefficient is $+1$, and the value is complex in general. The tuple is a c
 
 **The general frame, and its form is Euclidean.** The $\mathbb{B}$ frame is the frame of the biquaternion universe itself, not of one sector of it; the $\mathbb{M}_-$ frame is this one read on a sector. Its form is $\sum_\mu Q_\mu^2$, with all four coefficients $+1$. On real coefficients that is the ordinary Euclidean metric: positive definite, with no direction singled out by a sign. The coefficients are complex in general, so the form is the complexified Euclidean form; a real signature appears only when a sector is imposed. A Lorentzian signature is not a property of this frame.
 
-**The four generators all square to $+I_4$.** In this frame the Clifford metric is the identity, $g_{\mu\nu}=\delta_{\mu\nu}$, so
+**The four generators all square to $+I_4$.** In this frame the frame metric is the identity, $g_{\mu\nu}=\delta_{\mu\nu}$, so
 $$
 (\gamma_\mu[\mathbb{B}])^2=+I_4,\qquad \{\gamma_\mu[\mathbb{B}],\gamma_\nu[\mathbb{B}]\}=2\delta_{\mu\nu}I_4 .
 $$
@@ -64,7 +64,7 @@ with $t',q_k$ real. On the material case $Q_t=ix_0$ and $Q_k=x_k$ for $k=1,2,3$:
 $$
 -x_0^2+x_1^2+x_2^2+x_3^2 ,
 $$
-with coefficients $(-1,1,1,1)$, the negative of the Clifford metric. The sign is now explicit in the coordinate. The interval is the metric up to one overall sign: $-x_0^2+x_1^2+x_2^2+x_3^2=g_{\mu\nu}x_\mu x_\nu$ with $g=(-1,1,1,1)$, and the generators of the $\mathbb{M}_-$ frame realise exactly that $g$. The frame fixes the tuple; it does not offer a choice of tuple. Read on $\mathbb{M}_-$, this is the "metric of the two real sectors" of the series, not a third frame metric; on $\mathbb{M}_+$ the same form is read on the informational coordinate.
+with coefficients $(-1,1,1,1)$, the negative of the frame metric. The sign is now explicit in the coordinate. The interval is the metric up to one overall sign: $-x_0^2+x_1^2+x_2^2+x_3^2=g_{\mu\nu}x_\mu x_\nu$ with $g=(-1,1,1,1)$, and the generators of the $\mathbb{M}_-$ frame realise exactly that $g$. The frame fixes the tuple; it does not offer a choice of tuple. Read on $\mathbb{M}_-$, this is the "metric of the two real sectors" of the series, not a third frame metric; on $\mathbb{M}_+$ the same form is read on the informational coordinate.
 
 **The squares split.** In this frame
 $$
@@ -110,7 +110,7 @@ and it is linear over the coefficient field of its frame: complex for $\mathbb{B
 
 **The image is four-dimensional and not closed.** Four elements span four dimensions, and $M_4(\mathbb{C})$ has sixteen. A product of two distinct images is a bivector, and it leaves the image. The image is a subspace, not a subalgebra, and not a basis: the basis is the sixteen graded products, $1+4+6+4+1$. Writing the four as "the basis" hides both the count and the place each product lands.
 
-**The metric is read from the map.** The Clifford metric is read from the anticommutator, equivalently $4g_{\mu\nu}=\operatorname{tr}\bigl(\mathsf{K}(e_\mu)\mathsf{K}(e_\nu)\bigr)$ in the defining representation. The map carries no metric of its own: the frame supplies it, and the same algebra carries both tuples.
+**The metric is read from the map.** The frame metric is read from the anticommutator, equivalently $4g_{\mu\nu}=\operatorname{tr}\bigl(\mathsf{K}(e_\mu)\mathsf{K}(e_\nu)\bigr)$ in the defining representation. The map carries no metric of its own: the frame supplies it, and the same algebra carries both tuples.
 
 **The change of base is one matrix.** On the material sector the change of frame is $Q_t=ix_0$; read on the generators it is
 $$
@@ -123,7 +123,7 @@ $$
 $$
 The frame label is written in brackets, as it is on the generators, so no spacetime index is raised. A display that changes frame writes $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ once; it does not choose a second metric by hand.
 
-**The fifth is a product, not a direction.** In each frame $\gamma_5$ is the product $i\gamma_0\gamma_1\gamma_2\gamma_3$ of that frame's four images, so it is fixed by them and is not a fifth image of the map. In the $\mathbb{B}$ frame the fifth is $-i$ times the fifth of the $\mathbb{M}_-$ frame, so its square is $-I_4$ there and $+I_4$ in the $\mathbb{M}_-$ frame, while the volume element $\Pi=\gamma_0\gamma_1\gamma_2\gamma_3$ of that frame has the opposite sign in each: $+I_4$ in the $\mathbb{B}$ frame and $-I_4$ in the $\mathbb{M}_-$ frame.
+**The fifth is a product, not a direction.** In each frame $\gamma_5[\mathbb{M}_-]$ is the product $i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ of that frame's four images, so it is fixed by them and is not a fifth image of the map. In the $\mathbb{B}$ frame the fifth is $-i$ times the fifth of the $\mathbb{M}_-$ frame, so its square is $-I_4$ there and $+I_4$ in the $\mathbb{M}_-$ frame, while the volume element $\Pi=\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ of that frame has the opposite sign in each: $+I_4$ in the $\mathbb{B}$ frame and $-I_4$ in the $\mathbb{M}_-$ frame.
 
 **Which map is displayed.** The physics articles display $\mathsf{K}_{\mathbb{M}_-}$ by default, because the coordinate there is real. An article that displays $\mathsf{K}_{\mathbb{B}}$ says so at the display. The two are never mixed in one display.
 
@@ -162,7 +162,7 @@ The metric is carried by the frame, and it is the tuple of the interval. The $\m
 | $x_\mu$ | The coordinate of the $\mathbb{M}_-$ frame, on $\mathbb{M}_-$, $x_0=ct'$, $x_k=q_k$; metric $(-1,1,1,1)$ |
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the same in both frames |
 | $\langle\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2$ | The quaternionic interval; coefficients $(1,1,1,1)$ in the $\mathbb{B}$ frame (complex in general), $(-1,1,1,1)$ in the $\mathbb{M}_-$ frame |
-| $g_{\mu\nu}[\mathbb{B}]$, $g_{\mu\nu}[\mathbb{M}_-]$ | The Clifford metric of the frame; $(1,1,1,1)$ in the $\mathbb{B}$ frame, $(-1,1,1,1)$ in the $\mathbb{M}_-$ frame, $g[\mathbb{M}_-]=\Lambda\,g[\mathbb{B}]\,\Lambda^{\mathsf T}$; the frame is in brackets, as on the generators |
+| $g_{\mu\nu}[\mathbb{B}]$, $g_{\mu\nu}[\mathbb{M}_-]$ | The frame metric of the frame; $(1,1,1,1)$ in the $\mathbb{B}$ frame, $(-1,1,1,1)$ in the $\mathbb{M}_-$ frame, $g[\mathbb{M}_-]=\Lambda\,g[\mathbb{B}]\,\Lambda^{\mathsf T}$; the frame is in brackets, as on the generators |
 | $\gamma_\mu[\mathbb{B}]$, $\gamma_\mu[\mathbb{M}_-]$ | The values of the Clifford map in each frame, $\gamma_k[\mathbb{B}]=i\gamma_k[\mathbb{M}_-]$; the index is always low |
 | $\mathsf{K}_{\mathbb{B}}$, $\mathsf{K}_{\mathbb{M}_-}$ | The Clifford map, $\mathsf{K}_{\mathbb{B}}(e_\mu)=\gamma_\mu[\mathbb{B}]$ and $\mathsf{K}_{\mathbb{M}_-}(e_\mu)=\gamma_\mu[\mathbb{M}_-]$; a dictionary from the four directions into $M_4(\mathbb{C})$, not a structure of $\mathbb{B}$ |
 | $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ | $\mathrm{diag}(1,-i,-i,-i)$, the base change $\gamma_\mu[\mathbb{M}_-]=\sum_\nu\Lambda_{\mu\nu}\gamma_\nu[\mathbb{B}]$ |

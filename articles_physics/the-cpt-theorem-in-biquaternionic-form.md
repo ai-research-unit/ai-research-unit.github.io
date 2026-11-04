@@ -148,7 +148,7 @@ $$
 $$
 Because $\psi^{*}$ enters, $C$ is anti-linear. The internal factor $\eta_C$ is odd, so $C$ anticommutes with $\Gamma$: charge conjugation flips chirality.
 
-**The representative depends on the realization.** The condition above fixes $\eta_C$ only inside a realization of the generators, meaning a choice of the conjugation that $\psi^{*}$ denotes. This article's realization is the cell frame, where $\psi^{*}$ is the module conjugation — the anti-linear map that carries the chiral half $S$ onto $\bar S$. The same cells read against the **coefficient conjugation** of the algebra give a different answer: every generator $iL_{a}R_{b}$ is purely imaginary, so that conjugation negates all four, the condition reduces to a commutation requirement, and *every* nonzero scalar satisfies it; the involution condition $\eta_C^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ then narrows the scalar to $\pm1$. The transposed form $\psi_c=\eta\,\bar\psi^{T}$ carries the cell $\eta=R_{\vec e_x}^{\mathrm{axf}}$ in the cell frame, with $\eta^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. Neither formula may be carried across the change of conjugation: $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ conjugates through $\psi^{*}$, and the transposed $\eta$ through the transpose, and the two conjugations do not agree on which cells they fix. Writing $-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $\eta_C$ is right; reading that cell against the coefficient conjugation instead of the module conjugation is the error this paragraph exists to prevent.
+**The representative depends on the realization.** The condition above fixes $\eta_C$ only inside a realization of the generators, meaning a choice of the conjugation that $\psi^{*}$ denotes. This article's realization is the cell frame, where $\psi^{*}$ is the module conjugation — the anti-linear map that carries the chiral half $S$ onto $\bar S$. The same cells read against the **coefficient conjugation** of the algebra give a different answer: every generator $iL_{a}R_{b}$ is purely imaginary, so that conjugation negates all four, the condition reduces to a commutation requirement, and *every* nonzero scalar satisfies it; the involution condition $\eta_C^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ then narrows the scalar to $\pm1$. The transposed form $\psi_c=\eta\,(\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}})^{T}$ carries the cell $\eta=R_{\vec e_x}^{\mathrm{axf}}$ in the cell frame, with $\eta^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. Neither formula may be carried across the change of conjugation: $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ conjugates through $\psi^{*}$, and the transposed $\eta$ through the transpose, and the two conjugations do not agree on which cells they fix. Writing $-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $\eta_C$ is right; reading that cell against the coefficient conjugation instead of the module conjugation is the error this paragraph exists to prevent.
 
 ### Parity
 
@@ -194,7 +194,7 @@ The three operations are collected below. The last column records the chirality 
 | $P$ | $G_0\,\psi(t',-\vec x)$ | $G_0$ (odd) | linear | flips |
 | $T$ | $-L_{\vec e_y}^{\mathrm{axf}}\,\psi^{*}(-t',\vec x)$ | $-L_{\vec e_y}^{\mathrm{axf}}$ (even) | anti-linear | preserves |
 
-Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not fixed by the requirement that the equation be preserved; only the commutation conditions are, and they fix the internal factor only up to an arbitrary nonzero complex multiple. The companion on the electron writes charge conjugation in the transposed form $\eta\,\bar{\psi}^{T}$ with $\eta=R_{\vec e_x}^{\mathrm{axf}}$; that is the transposed realization of the same operation, not a different operation, and the free phase relates the two realizations. Second, the individual phases are not observable; what is observable is the composition, and changing a phase changes the internal factor of the composition, which is why the composition must be checked independently (next section).
+Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not fixed by the requirement that the equation be preserved; only the commutation conditions are, and they fix the internal factor only up to an arbitrary nonzero complex multiple. The companion on the electron writes charge conjugation in the transposed form $\eta\,(\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}})^{T}$ with $\eta=R_{\vec e_x}^{\mathrm{axf}}$; that is the transposed realization of the same operation, not a different operation, and the free phase relates the two realizations. Second, the individual phases are not observable; what is observable is the composition, and changing a phase changes the internal factor of the composition, which is why the composition must be checked independently (next section).
 
 ## Each Operation Preserves the Free Equation
 
@@ -314,7 +314,7 @@ the **complex conjugation** of the algebra element followed by the inner automor
 - **Spin–statistics.** That article establishes that the spinor module is the carrier of the double-valued representation and that the fermionic bracket is imposed; the discrete operations here act on the same module and are insensitive to the bracket. The anti-unitarity of $T$ is the one place where the complex structure of the module enters the discrete symmetries directly.
 - **Chiral fermions.** That article's real structure — the conjugation relating $S$ to $\bar S$ — is exactly the $\bar{\cdot}$ that supplies the anti-linear part of $C$ and $T$; the framework's mass term, now the linear chiral pair, is not built on it. The present article adds that $C$ and $P$ flip chirality, $T$ preserves it, and $CPT$ preserves it: the discrete operations do not mix the chirality question with the sector question, and the two decompositions remain distinct.
 - **Canonical quantization.** The mode expansion there gives the operator-level interpretation of $C$: because $\eta_Cu^{*}$ is a negative-frequency amplitude, $C$ exchanges $a^{\mathrm{fop}}$ and $b^{\mathrm{fop}}$ and reverses the normal-ordered charge. This is the operator form of the classical statement.
-- **The electron.** That article's charge conjugation, generated by the cell $R_{\vec e_x}^{\mathrm{axf}}$ on $\bar\psi^{T}$, is the transposed realization of the same operation; the untransposed realization used here carries $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the two are related by the change of realization described in the charge-conjugation section, with the free phase that the condition leaves. Its observation that the energy-sign projector is an odd Clifford element with no representative in $\mathbb{B}$ is the same odd/even distinction that governs the table above.
+- **The electron.** That article's charge conjugation, generated by the cell $R_{\vec e_x}^{\mathrm{axf}}$ on $(\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}})^{T}$, is the transposed realization of the same operation; the untransposed realization used here carries $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the two are related by the change of realization described in the charge-conjugation section, with the free phase that the condition leaves. Its observation that the energy-sign projector is an odd Clifford element with no representative in $\mathbb{B}$ is the same odd/even distinction that governs the table above.
 - **Charge conjugation and the division ring.** That companion develops the one feature of the pseudoautomorphism that the present article leaves untouched: the dependence of its square, and of its very character, on the division ring of the underlying real Clifford algebra. It is the reason charge conjugation can be trivial on a class of particles — the *truly neutral* ones — and it refines the eight-element group above by a representation-theoretic trichotomy.
 
 ## What the Framework Establishes, Transcribes, and Does Not
@@ -362,94 +362,94 @@ the **complex conjugation** of the algebra element followed by the inner automor
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article that uses them; the bodies above and below are written in the cells. In this frame the generators are the same four cells, with the $i$ written out rather than carried in the name:
 $$
-\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell written $\Gamma$ above; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell written $\Gamma$ above; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The dictionary to the cells of this article.** The generators are the cells named $G_\mu$ above,
 $$
-\gamma_0=G_0,\qquad \gamma_1=G_1,\qquad \gamma_2=G_2,\qquad \gamma_3=G_3,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=\Gamma,
+\gamma_0[\mathbb{M}_-]=G_0,\qquad \gamma_1[\mathbb{M}_-]=G_1,\qquad \gamma_2[\mathbb{M}_-]=G_2,\qquad \gamma_3[\mathbb{M}_-]=G_3,\qquad \gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}=\Gamma,
 $$
 
 In the axis-free display:
 
 $$
-\gamma_0=G_0,\qquad \gamma_1=G_1,\qquad \gamma_2=G_2,\qquad \gamma_3=G_3,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=\Gamma,
+\gamma_0[\mathbb{M}_-]=G_0,\qquad \gamma_1[\mathbb{M}_-]=G_1,\qquad \gamma_2[\mathbb{M}_-]=G_2,\qquad \gamma_3[\mathbb{M}_-]=G_3,\qquad \gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}=\Gamma,
 $$
 
 and the composite entries are where $i^{2}=-1$ is spent, twice over:
 $$
-\gamma_1\gamma_3=(i)(i)\,L_{\vec e_x\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{\vec e_x\vec e_z}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{\vec e_x\vec e_z}^{\mathrm{pau}}=L_{-\vec e_y}^{\mathrm{pau}}=-L_{\vec e_y}^{\mathrm{pau}}=\eta_T,
+\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i)(i)\,L_{\vec e_x\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{\vec e_x\vec e_z}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{\vec e_x\vec e_z}^{\mathrm{pau}}=L_{-\vec e_y}^{\mathrm{pau}}=-L_{\vec e_y}^{\mathrm{pau}}=\eta_T,
 $$
 
 The same identities in the axis-free display:
 
 $$
-\gamma_1\gamma_3=(i)(i)\,L_{\vec e_x\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{\vec e_x\vec e_z}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{\vec e_x\vec e_z}^{\mathrm{axf}}=L_{-\vec e_y}^{\mathrm{axf}}=-L_{\vec e_y}^{\mathrm{axf}}=\eta_T,
+\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i)(i)\,L_{\vec e_x\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{\vec e_x\vec e_z}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{\vec e_x\vec e_z}^{\mathrm{axf}}=L_{-\vec e_y}^{\mathrm{axf}}=-L_{\vec e_y}^{\mathrm{axf}}=\eta_T,
 $$
 
 $$
-\gamma_2\gamma_3=(i)(i)\,L_{\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{\vec e_y\vec e_z}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{\vec e_y\vec e_z}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}},
+\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i)(i)\,L_{\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{\vec e_y\vec e_z}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{\vec e_y\vec e_z}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}},
 $$
 
 Read in the axis-free display:
 
 $$
-\gamma_2\gamma_3=(i)(i)\,L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{\vec e_y\vec e_z}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}},
+\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i)(i)\,L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{\vec e_y\vec e_z}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}},
 $$
 
 $$
-i\gamma_2=i\,(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=\eta_C,\qquad
-\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}=\omega=-i\Gamma .
+i\gamma_2[\mathbb{M}_-]=i\,(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=\eta_C,\qquad
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}}=\omega=-i\Gamma .
 $$
 
 The same expressions, in the axis-free display:
 
 $$
-i\gamma_2=i\,(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=\eta_C,\qquad
-\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{axf}}=\omega=-i\Gamma .
+i\gamma_2[\mathbb{M}_-]=i\,(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=\eta_C,\qquad
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{axf}}=\omega=-i\Gamma .
 $$
 
-Each reduction is a single cell with no $i$ left, and the mechanism is the same in all four: the two factors of $i$ multiply to $-1$, the factor $R_{\vec e_y\vec e_y}^{\mathrm{pau}}=R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ contributes a second $-1$, and the two cancel, leaving the quaternion product of the two arguments. That is the rule that decides the parity of a product: a product of an even number of generators is real, a product of an odd number is purely imaginary, so an odd product such as $\gamma_1$ or $i\gamma_2$ needs its explicit $i$ and an even product such as $\gamma_1\gamma_3$ never has one. The mechanical rules are $L_aR_bL_cR_d=L_{ac}R_{db}$, $\vec e_j\vec e_k=\epsilon_{jkl}\vec e_l$ for $j\ne k$ and $\vec e_k^{2}=-e_t$, together with $L_{e_t}^{\mathrm{pau}}=R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ for the identity.
+Each reduction is a single cell with no $i$ left, and the mechanism is the same in all four: the two factors of $i$ multiply to $-1$, the factor $R_{\vec e_y\vec e_y}^{\mathrm{pau}}=R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ contributes a second $-1$, and the two cancel, leaving the quaternion product of the two arguments. That is the rule that decides the parity of a product: a product of an even number of generators is real, a product of an odd number is purely imaginary, so an odd product such as $\gamma_1[\mathbb{M}_-]$ or $i\gamma_2[\mathbb{M}_-]$ needs its explicit $i$ and an even product such as $\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ never has one. The mechanical rules are $L_aR_bL_cR_d=L_{ac}R_{db}$, $\vec e_j\vec e_k=\epsilon_{jkl}\vec e_l$ for $j\ne k$ and $\vec e_k^{2}=-e_t$, together with $L_{e_t}^{\mathrm{pau}}=R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ for the identity.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
 ## Summary
 
 The biquaternion framework carries the three discrete operations on its spinor-module Dirac field, and they are written in cells throughout. Charge conjugation is $C[\psi]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi^{*}$; parity is $P[\psi](x)=G_0\psi(t',-\vec x)$; time reversal is $T[\psi](x)=-L_{\vec e_y}^{\mathrm{axf}}\psi^{*}(-t',\vec x)$. Each was verified separately to preserve the free equation $(\mathbb{D}-m)\psi=0$, on the differential equation, for three on-shell momenta and on a superposition of both frequency branches. The field map of time reversal is anti-linear, $T[i\psi]=-i\,T[\psi]$, and its induced operator is anti-unitary; it conjugates the framework's scalar imaginary. Charge conjugation and parity anticommute with the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ and exchange the chiral halves; time reversal commutes with $\Gamma$; the composition preserves chirality.

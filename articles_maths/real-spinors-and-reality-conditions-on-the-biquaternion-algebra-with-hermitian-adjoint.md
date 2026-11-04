@@ -46,7 +46,7 @@ Since $S$ carries no reality structure, the structure that exists is the conjuga
 
 **Proposition ($\kappa$ produces the conjugate representation).** The map $\overline{c}(v)=\kappa\,c(v)\,\kappa^{-1}$ is again a representation of $\mathrm{Cl}_{3,0}$ on $S$, the **conjugate representation**, and it is not equal to $c$: on the generators $\overline{c}(i\vec e_x)=+c(i\vec e_x)$, $\overline{c}(i\vec e_y)=-c(i\vec e_y)$, $\overline{c}(i\vec e_z)=+c(i\vec e_z)$, the minus occurring at the one generator whose matrix $\sigma_2$ is purely imaginary. Hence $S$ carries the **conjugate module** $\bar S$, the same complex vector space with the action $\overline{c}$.
 
-*Proof.* $\kappa$ is an automorphism and the Clifford relations are real, so $\overline{c}$ satisfies the same relations; the signs follow because $\sigma_1$ and $\sigma_3$ are real, so $\overline{\sigma_k}=\sigma_k$, while $\sigma_2$ is purely imaginary, so $\overline{\sigma_2}=-\sigma_2$.
+*Proof.* $\kappa$ is an automorphism and the anticommutation relations are real, so $\overline{c}$ satisfies the same relations; the signs follow because $\sigma_1$ and $\sigma_3$ are real, so $\overline{\sigma_k}=\sigma_k$, while $\sigma_2$ is purely imaginary, so $\overline{\sigma_2}=-\sigma_2$.
 
 **Proposition (the conjugate module, and its type).** The map $\overline{c}$ makes the same complex space $S$ into a second module $\bar S$, the **conjugate module**. The two modules are **isomorphic as real representations and inequivalent as complex modules**, and the distinction is the type. As real $\mathrm{Cl}_{3,0}$-modules they are canonically isomorphic: the coordinate conjugation $s\mapsto\bar s$ is antilinear and satisfies $\overline{c}(v)\bar s=\overline{c(v)s}$, so it is an intertwiner with the conjugate action. As complex modules they are inequivalent: a $\mathbb{C}$-linear $T$ with $T\overline{c}(v)=c(v)T$ would satisfy $T\sigma_1=\sigma_1T$ and $T\sigma_3=\sigma_3T$, hence $T=\lambda I$, and then $T\sigma_2=-\sigma_2T$ forces $\lambda=0$, so the only such map is zero. By the general criterion, an irreducible complex module is self-conjugate exactly when its commutant is not $\mathbb{C}$; the complex type is exactly the non-self-conjugate case (*Real Spinors and Reality Conditions with Inner Conjugation*). The pair becomes two genuinely different simple modules after **complexification**: $\mathbb{C}\mathrm{l}_3\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$ has two simple factors whose modules are $\mathbb{C}^2$ and its conjugate, and the conjugation of the complexification swaps the central idempotents $\tfrac12(1\pm i\omega)$ and so exchanges the factors.
 
@@ -124,15 +124,15 @@ Four limits must be stated. First, the type table of this article is the **commu
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
-The gammas are the generators $\gamma_k=i\vec e_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
+The gammas are the generators $\gamma_k[\mathbb{M}_-]=i\vec e_k$, $k=1,2,3$, of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the literature frame of the same algebra, not a different algebra.
 
 On the Peirce carrier the generator is a left multiplication, a cell with a trivial right multiplier,
 $$
-\gamma_k=L_{i\vec e_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k)=\sigma_k ,
+\gamma_k[\mathbb{M}_-]=L_{i\vec e_k}R_{e_t}=iL_{\vec e_k},\qquad c(\gamma_k[\mathbb{M}_-])=\sigma_k ,
 $$
-and the volume element is the central element $\omega=\gamma_1\gamma_2\gamma_3=(i\vec e_x)(i\vec e_y)(i\vec e_z)=ie_t$, with $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{e_t}=L_a$.
+and the volume element is the central element $\omega=\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i\vec e_x)(i\vec e_y)(i\vec e_z)=ie_t$, with $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{e_t}=L_a$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the generators $i\vec e_k$ span $\mathrm{Cl}_{3,0}(\mathbb{R})\cong M_2(\mathbb{C})$ and the basis $\vec e_k$ spans $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$.
 

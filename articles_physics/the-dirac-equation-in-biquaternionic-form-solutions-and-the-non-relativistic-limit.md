@@ -148,11 +148,11 @@ The two bases fixed above are the ones used throughout: the chiral basis for the
 The Dirac adjoint is the Hermitian pairing twisted by the timelike cell,
 
 $$
-\bar{\psi}\phi = \langle\psi,\phi\rangle_{\mathrm D} = \mathrm{Tr}\bigl(\tilde\Psi^{*}\tilde\Phi\,i\vec e_x\bigr)
+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\phi = \langle\psi,\phi\rangle_{\mathrm D} = \mathrm{Tr}\bigl(\tilde\Psi^{*}\tilde\Phi\,i\vec e_x\bigr)
 = \psi_L^\dagger\phi_R + \psi_R^\dagger\phi_L ,
 $$
 
-so that $\bar{\psi}\psi$ is a Lorentz scalar. The amplitude equation for a plane wave follows by substituting; we carry this out in the next section.
+so that $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi$ is a Lorentz scalar. The amplitude equation for a plane wave follows by substituting; we carry this out in the next section.
 
 ## Plane-wave solutions
 
@@ -315,24 +315,24 @@ From a spinor and its adjoint one forms the standard bilinears, classified by th
 
 | Bilinear | Lorentz character |
 |---|---|
-| $\bar{\psi}\psi$ | scalar |
-| $i\,\bar{\psi}\,(-iR_{\vec e_z}^{\mathrm{axf}})\psi$ | pseudoscalar |
-| $\bar{\psi}\,\Gamma_\mu\psi$ | four-vector |
-| $\bar{\psi}\,\Gamma_\mu(-iR_{\vec e_z}^{\mathrm{axf}})\psi$ | axial four-vector (pseudovector) |
-| $\bar{\psi}\sigma_{\mu\nu}\psi$, $\ \sigma_{\mu\nu} = \tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu]$ | antisymmetric rank-two tensor |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi$ | scalar |
+| $i\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(-iR_{\vec e_z}^{\mathrm{axf}})\psi$ | pseudoscalar |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\Gamma_\mu\psi$ | four-vector |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\Gamma_\mu(-iR_{\vec e_z}^{\mathrm{axf}})\psi$ | axial four-vector (pseudovector) |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\sigma_{\mu\nu}\psi$, $\ \sigma_{\mu\nu} = \tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu]$ | antisymmetric rank-two tensor |
 
-The pseudoscalar is written with the explicit factor of $i$ because, in the convention used here, $\bar{\psi}\,-iR_{\vec e_z}^{\mathrm{axf}}\psi$ is purely imaginary and $i\bar{\psi}\,-iR_{\vec e_z}^{\mathrm{axf}}\psi$ is real. The vector bilinear is the conserved current of the preceding section; the tensor bilinear governs the spin contribution to the current and, as shown below, the magnetic moment.
+The pseudoscalar is written with the explicit factor of $i$ because, in the convention used here, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,-iR_{\vec e_z}^{\mathrm{axf}}\psi$ is purely imaginary and $i\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,-iR_{\vec e_z}^{\mathrm{axf}}\psi$ is real. The vector bilinear is the conserved current of the preceding section; the tensor bilinear governs the spin contribution to the current and, as shown below, the magnetic moment.
 
 ### The chiral components
 
 In the chiral basis the bilinears separate into the two Weyl spinors, and the identities are worth recording because they are the ones the chirality exercise will use. With $\psi = (\psi_L,\psi_R)$ one has
 
 $$
-\bar{\psi}\psi = \psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L = 2\,\mathrm{Re}\!\left(\psi_L^\dagger\psi_R\right),
+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi = \psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L = 2\,\mathrm{Re}\!\left(\psi_L^\dagger\psi_R\right),
 $$
 
 $$
-\bar{\psi}\,-iR_{\vec e_z}^{\mathrm{axf}}\psi = \psi_L^\dagger\psi_R - \psi_R^\dagger\psi_L = 2i\,\mathrm{Im}\!\left(\psi_L^\dagger\psi_R\right),
+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,-iR_{\vec e_z}^{\mathrm{axf}}\psi = \psi_L^\dagger\psi_R - \psi_R^\dagger\psi_L = 2i\,\mathrm{Im}\!\left(\psi_L^\dagger\psi_R\right),
 $$
 
 and the vector current has components
@@ -349,7 +349,7 @@ j_5^0 = \psi_R^\dagger\psi_R - \psi_L^\dagger\psi_L, \qquad
 \vec j_5 = \psi_L^\dagger\boldsymbol{\sigma}\psi_L + \psi_R^\dagger\boldsymbol{\sigma}\psi_R .
 $$
 
-The scalar and pseudoscalar pair are seen to be the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$: a purely left-handed or purely right-handed field has $\bar{\psi}\psi = 0$. The vector and axial vector similarly recombine the same two Weyl currents with relative signs, which is the algebraic content of the chiral decomposition of the Dirac current.
+The scalar and pseudoscalar pair are seen to be the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$: a purely left-handed or purely right-handed field has $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi = 0$. The vector and axial vector similarly recombine the same two Weyl currents with relative signs, which is the algebraic content of the chiral decomposition of the Dirac current.
 
 ### The spin bilinear and the informational sector
 
@@ -527,51 +527,51 @@ select the two components; on the four-component carrier they act as the Peirce 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $-iR_{\vec e_z}^{\mathrm{pau}}$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $-iR_{\vec e_z}^{\mathrm{pau}}$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
 ## Summary
 
 The biquaternionic Dirac equation, on its spinor module, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The pair is one-sided, with both gradients acting on the left; the two-sided form of the companion article is a different operator and is not used here. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\,\langle w,\cdot\rangle_{\mathrm D} = P+m$, $\sum_r v\,\langle v,\cdot\rangle_{\mathrm D} = P-m$.
@@ -613,7 +613,7 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 | $\sigma_{\mu\nu} = \tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu]$ | Antisymmetric product of two generators; operator of the tensor bilinear |
 | $g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,+1,+1,+1)$ | sign vector of the generators |
 | $g_{\mu\nu}[\mathbb{M}_-]$ | Spacetime metric of the $ict'$ gradient |
-| $\bar{\psi}\phi = \langle\psi,\phi\rangle_{\mathrm D} = \psi_L^\dagger\phi_R+\psi_R^\dagger\phi_L$ | Dirac adjoint, the Hermitian pairing twisted by $\Gamma_0$ |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\phi = \langle\psi,\phi\rangle_{\mathrm D} = \psi_L^\dagger\phi_R+\psi_R^\dagger\phi_L$ | Dirac adjoint, the Hermitian pairing twisted by $\Gamma_0$ |
 | $w^{(r)}(\vec p),\, v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
 | $\xi^{(r)}$, $\eta^{(r)}$, $\chi_\pm$, $\vec u_p = \vec p/\lvert\vec p\rvert$ | Rest spinors, helicity eigenspinors and momentum direction |
 | $\phi$, $\chi$ | Large and small two-component parts in the non-relativistic limit |

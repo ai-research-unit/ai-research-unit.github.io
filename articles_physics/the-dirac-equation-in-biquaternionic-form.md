@@ -64,7 +64,7 @@ $$
 \left(\Box - m^2\right)\tilde{\Psi}_R = 0
 $$
 
-in these units; with $\hbar$ and $c$ restored the operator is $\Box-m^2c^2/\hbar^2$. The same holds for $\tilde{\Psi}_L$. So each chiral half obeys the Klein–Gordon equation, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ is the central scalar. The factorisation is the one the algebra supplies; no matrix square is used and no Clifford metric enters.
+in these units; with $\hbar$ and $c$ restored the operator is $\Box-m^2c^2/\hbar^2$. The same holds for $\tilde{\Psi}_L$. So each chiral half obeys the Klein–Gordon equation, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ is the central scalar. The factorisation is the one the algebra supplies; no matrix square is used and no frame metric enters.
 
 ### Spinors and the Lorentz Group
 
@@ -106,7 +106,7 @@ The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar of $\ma
 
 A frame of the cell algebra is a set of five cells, not an element of $\mathbb{B}$ alone. The biquaternion algebra is $\mathrm{Cl}^+_{1,3}$; the cell algebra is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, and its elements act on a state $\psi$ by $L_{a}R_{b}\psi=a\psi b$. The frame used in this article is one frame of that algebra, written once in the Gamma section; a different frame is related to it by a change of basis.
 
-The Clifford relations are then the quaternion relations in disguise. The square of a cell is the cell of the squares, $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$; since $e_t^2=e_t$, a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. From the multiplication table and $\vec e_k^2 = -e_t$,
+The anticommutation relations are then the quaternion relations in disguise. The square of a cell is the cell of the squares, $(L_{a}R_{b})^2=L_{a^2}R_{b^2}$; since $e_t^2=e_t$, a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. From the multiplication table and $\vec e_k^2 = -e_t$,
 
 $$
 (L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})^2 = -L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}, \qquad (L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2 = +L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
@@ -229,7 +229,7 @@ $$
 
 The three cells of the first display are the timelike-spacelike bivectors; the second display is the source's volume element $iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$.
 
-Each of the three bivector entries is a left multiplication by a unit of the algebra composed with the scalar imaginary, so the three bivector images are complex-linear. The timelike Clifford generator is the only antilinear entry: its image is the complex conjugation $C$. The volume element is a third kind of entry — a **right** multiplication, on the side and through the unit that the mass term of $\mathcal{N}$ already carries. The signs of the three bivectors are not uniform — two take $-i$ and the third $+i$ — and the exception falls on the third axis, the unit $\vec e_z$ of the mass term. That pattern is a property of the definition of $A$ and not of the Clifford relations, which do not distinguish the three spatial directions among themselves: the dictionary singles out the third axis on its own, and it is the same axis that the mass term couples to from the right.
+Each of the three bivector entries is a left multiplication by a unit of the algebra composed with the scalar imaginary, so the three bivector images are complex-linear. The timelike Clifford generator is the only antilinear entry: its image is the complex conjugation $C$. The volume element is a third kind of entry — a **right** multiplication, on the side and through the unit that the mass term of $\mathcal{N}$ already carries. The signs of the three bivectors are not uniform — two take $-i$ and the third $+i$ — and the exception falls on the third axis, the unit $\vec e_z$ of the mass term. That pattern is a property of the definition of $A$ and not of the anticommutation relations, which do not distinguish the three spatial directions among themselves: the dictionary singles out the third axis on its own, and it is the same axis that the mass term couples to from the right.
 
 **The chirality sign.** The source's volume element is the negative of the corpus's: it takes $iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, whereas the representative of the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ in the frame of *Chirality and the Central Sign* below is the chirality cell $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$. In the corpus's convention the last identity above therefore reads $A(-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\Phi) = +iA(\Phi)\,\vec e_z$, and the sign has to be carried along whenever the two are compared. The entry is a dictionary identity, not the definition of chirality: the dictionary's volume element acts by a right multiplication through the unit $\vec e_z$, whereas $\chi$ is central and acts on $\Delta$ as $\operatorname{diag}(-I_2,I_2)$. What does not depend on the sign is the structure the entry states: the volume element of the dictionary acts by a right multiplication, exactly as the mass term does, and not by a left multiplication like the three spatial generators.
 
@@ -848,10 +848,10 @@ The biquaternion formulation adds three things:
 A different representation of the same spinor makes the mass look like a *phase*. Liu Yu-Fen's observation is that the mass term of the massive Dirac equation can be written as a coupling to a four-vector built from the field itself,
 
 $$
-m\,\bar\Psi\Psi = \bar\Psi\bigl(iK_t\,e_t\Psi \vec e_x + i\sum_k K_k\,\vec e_k\Psi \vec e_y\bigr),
+m\,\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi = \Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\bigl(iK_t\,e_t\Psi \vec e_x + i\sum_k K_k\,\vec e_k\Psi \vec e_y\bigr),
 $$
 
-with $K_\mu$ a unit complex four-vector. Read this way the massive equation is the massless equation with the ordinary derivative replaced by a "covariant" derivative along $K$, and the mass is a phase rather than a scalar. The phase is **non-integrable**: if $K_\mu = \partial/\partial Q_\mu\,\theta$ were a gradient, the change of variable $\Psi \mapsto \exp(i\theta)\Psi$ would remove it and the field would be massless; the mass is exactly the statement that $K$ is not a gradient, and the obstruction is the field strength $\partial/\partial Q_\mu K_\nu - \partial/\partial Q_\nu K_\mu$.
+with $\Psi^{\dagger}$ the conjugation of the column and $iR_{\vec e_x}^{\mathrm{axf}}$ the timelike cell, so that $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ is the Dirac adjoint, and $K_\mu$ a unit complex four-vector. Read this way the massive equation is the massless equation with the ordinary derivative replaced by a "covariant" derivative along $K$, and the mass is a phase rather than a scalar. The phase is **non-integrable**: if $K_\mu = \partial/\partial Q_\mu\,\theta$ were a gradient, the change of variable $\Psi \mapsto \exp(i\theta)\Psi$ would remove it and the field would be massless; the mass is exactly the statement that $K$ is not a gradient, and the obstruction is the field strength $\partial/\partial Q_\mu K_\nu - \partial/\partial Q_\nu K_\mu$.
 
 The on-shell content of the interpretation is verified and simple: for a plane wave of momentum $p_\mu$ satisfying the mass shell $p^2 = m^2$, the vector
 
@@ -883,15 +883,15 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_5[\mathbb{M}_-] &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
 
@@ -899,15 +899,15 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_5[\mathbb{M}_-] &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 \end{aligned}
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The cell dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -927,7 +927,7 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R=0, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=0,
 $$
 
-one for each chirality; the single equation $\tilde{\nabla}\tilde{\Psi}=0$ is the right-handed member. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the cell $\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$; the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of $\mathbb{B}[j]$ is the same operator written centrally, and on the module the cell acts as $\operatorname{diag}(-I_2,I_2)$. The right-handed massless equation has the same form as the source-free biquaternion Maxwell equation; the left-handed equation is its conjugate. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to the even subalgebra of $\mathrm{Cl}_{1,3}$. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
+one for each chirality; the single equation $\tilde{\nabla}\tilde{\Psi}=0$ is the right-handed member. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the cell $\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$; the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of $\mathbb{B}[j]$ is the same operator written centrally, and on the module the cell acts as $\operatorname{diag}(-I_2,I_2)$. The right-handed massless equation has the same form as the source-free biquaternion Maxwell equation; the left-handed equation is its conjugate. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to the even subalgebra of $\mathrm{Cl}_{1,3}$. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
 
 The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{R} = ict'\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural}$.
 
@@ -980,7 +980,7 @@ The same construction has two consequences that belong to the equation rather th
 | $D_{3,\alpha}$, $\alpha=-i\omega\,\vec e_x$ | Shifted amplitude operator of the massless harmonic spinor field, in the source's normalization |
 | $K_\omega = A^{-1} K A$ | Its Cauchy-type operator; the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion $\psi = K_\omega\psi$ on $\Gamma$ hold for it |
 | $\tilde{P}/\hbar$ | Wave biquaternion |
-| $K_\mu$ | Unit complex four-vector carrying the mass term, $m\bar\Psi\Psi=\bar\Psi(iK_t\,e_t\Psi \vec e_x+i\sum_k K_k\,\vec e_k\Psi \vec e_y)$; $K_\mu=p_\mu/m$ on shell, $\sum_\mu\varepsilon_\mu K_\mu K_\mu=1$ |
+| $K_\mu$ | Unit complex four-vector carrying the mass term, $m\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi=\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}(iK_t\,e_t\Psi \vec e_x+i\sum_k K_k\,\vec e_k\Psi \vec e_y)$; $K_\mu=p_\mu/m$ on shell, $\sum_\mu\varepsilon_\mu K_\mu K_\mu=1$ |
 | $B_\mu, N_\mu$ | The two real four-vectors of the semi-spinors, $\Psi_1=-\sum_{\mu,\nu}B_\mu g_{\mu\nu}e_\nu v e_\bullet$, $\Psi_2=-\sum_{\mu,\nu}N_\mu g_{\mu\nu}e_\nu u e_\bullet$, with $e_\bullet=\vec e_x$ on the timelike index and $\vec e_y$ on the spatial ones |
 | $G_\mu = B_\mu + iN_\mu$ | s-Vector, the vector representation of the same spinor |
 | $\lvert F\rvert^2 = \langle F\rangle_{*} = \sum_\mu\lvert F_\mu\rvert^2$ | Hermitian norm of the biquaternion field; the Dirac probability density under the dictionary |
@@ -1010,5 +1010,5 @@ The same construction has two consequences that belong to the equation rather th
 - V. V. Kravchenko, *Applied Quaternionic Analysis* (Research and Exposition in Mathematics 28, Heldermann, 2003), §§4.2.1–4.2.2.1, for the four standard Dirac potentials — electric, scalar, pseudoscalar, magnetic — in quaternionic form, for the single constant transformation that relates the classical and quaternionic Dirac operators with potentials, and for the reduction of the pseudoscalar-potential equation to a pair of scalar-coefficient equations.
 - V. V. Kravchenko and M. P. Ramirez Tachiquin, "On a quaternionic reformulation of the Dirac equation and its relationship with Maxwell's system," *Bulletin de la Société des Sciences et des Lettres de Łódź* **53** (2003) 101–114, for the **reality** of the conjugation-free quaternionic Dirac operator — $R = D-\partial/\partial t'M_{i_1}-mM_{i_2}$, the source's $D$ being the $D_3$ of this article, with coefficients in the real quaternion algebra, hence $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ — and for the **involutive symmetry** $\Phi_{\mathrm{inv}}=iZ_c\Phi$ that follows, the symmetry itself attributed there to J. Niederle and A. G. Nikitin, "Involutive symmetries, supersymmetries and reductions of the Dirac equation," *J. Phys. A: Math. Gen.* **30** (1997) 999–1010; for the correspondence between the massive Dirac equation with an electric or a scalar potential and the static sourceless Maxwell system of an isotropic inhomogeneous medium, with the permittivity $\epsilon=\exp(2G(x_1))$, $dG/dx_1=g$; for the condition $k^2=\alpha^2$ under which the massive Dirac field and the time-harmonic Maxwell field share the same projection identity, that condition being the mass shell; and for the quaternionic current-conservation equation $\partial/\partial t'|F|^2 = -\hbar[(DF^{\dagger})F+F^{*}(DF)]$ with the identity $|F|^2=|\Phi|^2$ of the biquaternion modulus and the Dirac density. The paper's factors $u^{\pm}$ of the factorisation $\mathcal{N}=u^{+}Ru^{-}$ and its explicit action of $A^{-1}$ on $\mathrm{Re}\,F$ are quoted, not reproduced: the available copy is a scan without a text layer.
 - V. G. Bagrov and D. M. Gitman, *Exact Solutions of Relativistic Wave Equations* (Kluwer, Dordrecht, 1990), for the encyclopaedic compendium and review of the known exact solutions of the Dirac equation up to the late 1980s.
-- Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the interpretation of the mass term as a coupling $\bar\Psi(iK_t\,e_t\Psi \vec e_x+i\sum_k K_k\,\vec e_k\Psi \vec e_y)$ to a unit vector, hence as a non-integrable phase; and for the vector representation of the spinor built on it, recorded in the companion *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*.
+- Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), for the interpretation of the mass term as a coupling $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}(iK_t\,e_t\Psi \vec e_x+i\sum_k K_k\,\vec e_k\Psi \vec e_y)$ to a unit vector, hence as a non-integrable phase; and for the vector representation of the spinor built on it, recorded in the companion *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*.
 - Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the same interpretation in the order-$\ell$ ding language, and for the parent-action duality recorded in *Dual Equivalence of the Dirac and Topologically Massive Gauge Fields*.

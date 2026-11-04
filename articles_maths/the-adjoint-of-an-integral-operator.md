@@ -166,7 +166,7 @@ parts; the example shows that the kernel involution is the sharpening of the ope
 operators.
 
 **Example (rank one).** For $K(x,y)=\varphi(x)\overline{\psi(y)}$ the operator is
-$T_Kf=\varphi\int\bar\psi f$, and the adjoint kernel is
+$T_Kf=\varphi\int\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}f$, and the adjoint kernel is
 $\overline{K(y,x)}=\overline{\varphi(y)}\psi(x)$, so that $T_K^\dagger g=\psi\int\bar\varphi g$; the two
 coincide with $K$ when $\varphi=\psi$ and $\lVert\varphi\rVert=1$, which recovers the orthogonal projection
 of rank one as the self-adjoint case.

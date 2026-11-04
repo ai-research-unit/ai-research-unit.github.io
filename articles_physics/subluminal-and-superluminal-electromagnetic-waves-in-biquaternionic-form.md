@@ -429,60 +429,60 @@ The boundaries are these. The Clifford-bundle route is an **external formalism**
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Each is a **cell**, a left multiplication times a right one, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The gammas then obey the cell relations of $\varepsilon=(1,-1,-1,-1)$:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
-$$
-
-**The symbol $\gamma_5$ is the one place where the two notations collide.** The source's $\gamma_5$ is its volume element, the product of the four generators, and that product is the cell $\omega$ itself; the corpus's own $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$, which is $i\omega$. The two differ by the central $i$, and that is the whole of the difference:
-
-$$
-\omega=-i\gamma_5,\qquad \omega^2=-1,\qquad \gamma_5^2=i^2\omega^2=+1 .
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-Every $\omega$ in the body is the source's $\gamma_5$. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a third object again, represented by $\gamma_5$ on the Dirac module.
-
-The article's frame is the source's: the volume element above is the body's $\omega$, and the fixed bivector is $\gamma_2\gamma_1=-\vec e_z$, the source's $\gamma_{21}$. The cell identities the body uses are
+**The symbol $\gamma_5[\mathbb{M}_-]$ is the one place where the two notations collide.** The source's $\gamma_5[\mathbb{M}_-]$ is its volume element, the product of the four generators, and that product is the cell $\omega$ itself; the corpus's own $\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$, which is $i\omega$. The two differ by the central $i$, and that is the whole of the difference:
 
 $$
-\gamma_2\gamma_1=L_{-\vec e_z}^{\mathrm{pau}},\qquad \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=R_{-\vec e_z}^{\mathrm{pau}},\qquad (iR_{\vec e_x}^{\mathrm{pau}})^2=R_{i^2\vec e_x^2}^{\mathrm{pau}}=R_{(-1)(-1)}=I_4,
+\omega=-i\gamma_5[\mathbb{M}_-],\qquad \omega^2=-1,\qquad \gamma_5[\mathbb{M}_-]^2=i^2\omega^2=+1 .
+$$
+
+Every $\omega$ in the body is the source's $\gamma_5[\mathbb{M}_-]$. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a third object again, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
+
+The article's frame is the source's: the volume element above is the body's $\omega$, and the fixed bivector is $\gamma_2[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=-\vec e_z$, the source's $\gamma_{21}[\mathbb{M}_-]$. The cell identities the body uses are
+
+$$
+\gamma_2[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=L_{-\vec e_z}^{\mathrm{pau}},\qquad \gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-]=R_{-\vec e_z}^{\mathrm{pau}},\qquad (iR_{\vec e_x}^{\mathrm{pau}})^2=R_{i^2\vec e_x^2}^{\mathrm{pau}}=R_{(-1)(-1)}=I_4,
 $$
 
 In the axis-free display:
 
 $$
-\gamma_2\gamma_1=L_{-\vec e_z}^{\mathrm{axf}},\qquad \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=R_{-\vec e_z}^{\mathrm{axf}},\qquad (iR_{\vec e_x}^{\mathrm{axf}})^2=R_{i^2\vec e_x^2}^{\mathrm{axf}}=R_{(-1)(-1)}=I_4,
+\gamma_2[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=L_{-\vec e_z}^{\mathrm{axf}},\qquad \gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-]=R_{-\vec e_z}^{\mathrm{axf}},\qquad (iR_{\vec e_x}^{\mathrm{axf}})^2=R_{i^2\vec e_x^2}^{\mathrm{axf}}=R_{(-1)(-1)}=I_4,
 $$
 
 so the pair the source prints composes to left multiplication by $-\vec e_z$, while the right multiplication by the same bivector is the volume element itself.

@@ -7,7 +7,7 @@ The companion article *The Path Integral in Biquaternionic Form* settles what th
 This article applies those findings to the spin-$\tfrac12$ field, where the histories are **anticommuting**. The fermionic path integral differs from the bosonic one in exactly one structural place — the integration variables are odd, so the integral is Berezin's rather than Lebesgue's — and that one difference propagates into every formula. The article establishes:
 
 - **The action and its sector.** The biquaternion Dirac action as a bilinear; the **one-sided** chiral pair, which is what the integral integrates, and the **two-sided** (Kravchenko) equation, which it does not; the phase $iS$ as an element of $\mathbb{M}_-$ along the $ict'$ axis; and the action as an even (bosonic) functional of the fermionic field.
-- **The Berezin measure.** Fermionic histories are Grassmann-valued biquaternion fields; the measure is the Berezin measure on the Grassmann extension of the coefficient algebra, and in the finite-mode reduction it is $\prod_a d\bar\psi_a\,d\psi_a$ with the convention fixed once.
+- **The Berezin measure.** Fermionic histories are Grassmann-valued biquaternion fields; the measure is the Berezin measure on the Grassmann extension of the coefficient algebra, and in the finite-mode reduction it is $\prod_a d\psi_a^{\dagger}\,d\psi_a$ with the convention fixed once.
 - **The Gaussian integral and the determinant.** Completing the square in the Grassmann algebra gives the free generating functional, the two-point function as the inverse kernel, and the determinant of the Dirac operator; the finite-mode statements were recomputed exactly.
 - **The Pfaffian and the real structure.** For a field whose quadratic form is antisymmetric — the Majorana case, for which the algebra supplies the field-to-its-conjugate pairing — the integral is a Pfaffian, with $\mathrm{Pf}^2=\det$ and a sign that carries physical content.
 - **The Euclidean integral and the parity sectors.** Wick rotation and the antiperiodic (Matsubara) boundary conditions, the two fermion-parity traces and the boundary conditions that select them, and the phase of the determinant.
@@ -21,7 +21,7 @@ Throughout, $i$ is the central scalar imaginary of $\mathbb{B}$, with $i^2=-1$. 
 The classical field theory is defined by the parent article's Lagrangian density,
 
 $$
-\mathcal{L}=\bar\psi\,(\mathbb{D}-m)\,\psi ,
+\mathcal{L}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,(\mathbb{D}-m)\,\psi ,
 $$
 
 a real Lorentz scalar whose variation returns $(\mathbb{D}-m)\psi=0$, with conjugate momentum $\pi=i\psi^\dagger$. For the path integral this is the object whose integral is the phase.
@@ -38,7 +38,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-two equations because there are two chiral halves. Both gradients act from the left, the field is the module-valued $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, the mass pairs the two chiral halves, and chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, the central grading of the complexified algebra being that operator's central form. The Lagrangian above is the spinor-module representative of this pair, not a second dynamics.
+two equations because there are two chiral halves. Both gradients act from the left, the field is the module-valued $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, the mass pairs the two chiral halves, and chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$, the central grading of the complexified algebra being that operator's central form. The Lagrangian above is the spinor-module representative of this pair, not a second dynamics.
 
 **Its module form.** On the module the pair becomes one equation, because the single cell operator $\mathbb{D}$ carries both gradients. The gradient operator is odd under the chirality grading — it carries each chiral half into the other — while the mass is a multiple of the identity on the pair and so is even; in the chiral basis $\mathbb{D}-m$ is therefore the block matrix with $-m$ on the diagonal and the two gradients off it,
 
@@ -90,27 +90,27 @@ Three properties of the action are used below.
 
 **Its phase is central.** $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.
 
-**Its Hermiticity structure.** $\bar\psi\,\mathbb{D}\,\psi$ is Hermitian up to a total derivative and $\bar\psi m\psi$ is Hermitian. Both statements use the Dirac adjoint $\bar\psi=\psi^{\dagger}(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})$ of the parent article: the cell $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ is Hermitian and converts the conjugate into a Hermitian bilinear, while the spatial cells $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ are anti-Hermitian, which is why the derivative term needs the total-derivative caveat. That same cell anticommutes with the chirality cell, so $\bar\psi$ sits in the chiral half opposite to $\psi$, and the mass bilinear $\bar\psi m\psi$ mixes the two halves even though the operator $m$ is even. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean kinetic operator anticommutes with the chirality grading (the central grading of the complexified algebra), so its spectrum is symmetric about zero; its eigenvalues are $\pm i\mu$ with $\mu$ real, and each pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$, so the determinant of $\mathbb{D}_{\mathrm{E}}+m$ is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks that symmetry and gives the determinant a phase; the phase is the subject of §*Parity Sectors, the Phase and the Sign Problem*.
+**Its Hermiticity structure.** $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\mathbb{D}\,\psi$ is Hermitian up to a total derivative and $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}m\psi$ is Hermitian. Both statements use the Dirac adjoint $\psi^{\dagger}(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})$ of the parent article: the cell $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ is Hermitian and converts the conjugate into a Hermitian bilinear, while the spatial cells $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ are anti-Hermitian, which is why the derivative term needs the total-derivative caveat. That same cell anticommutes with the chirality cell, so $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ sits in the chiral half opposite to $\psi$, and the mass bilinear $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}m\psi$ mixes the two halves even though the operator $m$ is even. After Wick rotation the kinetic operator is anti-Hermitian and the mass term remains Hermitian. The Euclidean kinetic operator anticommutes with the chirality grading (the central grading of the complexified algebra), so its spectrum is symmetric about zero; its eigenvalues are $\pm i\mu$ with $\mu$ real, and each pair contributes $(m+i\mu)(m-i\mu)=m^2+\mu^2$, so the determinant of $\mathbb{D}_{\mathrm{E}}+m$ is real and positive for real $m$. A non-Hermitian deformation — a chemical potential, or a complex mass — breaks that symmetry and gives the determinant a phase; the phase is the subject of §*Parity Sectors, the Phase and the Sign Problem*.
 
 ### Sources
 
 The sources are Grassmann-valued: the generating functional
 
 $$
-Z[\eta,\bar\eta]=\int\mathcal{D}\bar\psi\,\mathcal{D}\psi\;\exp\Big[iS+i\!\int d^4x\,\big(\bar\eta\psi+\bar\psi\eta\big)\Big]
+Z[\eta,\bar\eta]=\int\mathcal{D}\psi^{\dagger}\,\mathcal{D}\psi\;\exp\Big[iS+i\!\int d^4x\,\big(\bar\eta\psi+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\eta\big)\Big]
 $$
 
-requires $\eta,\bar\eta$ to be odd, since they multiply $\psi,\bar\psi$ respectively and the linear terms must be even. This is the same requirement as in the finite-mode reduction below, now at the level of the functional: the source term is a bilinear in one external odd and one integration variable, hence even, and the sources consequently lie in the odd part of the same Grassmann extension.
+requires $\eta,\bar\eta$ to be odd, since they multiply $\psi,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ respectively and the linear terms must be even. This is the same requirement as in the finite-mode reduction below, now at the level of the functional: the source term is a bilinear in one external odd and one integration variable, hence even, and the sources consequently lie in the odd part of the same Grassmann extension.
 
 ## The Berezin Measure
 
-The histories are $\mathbb{B}$-valued fields whose coefficients are Grassmann numbers: for each spacetime point and each module component, $\psi_a(x)$ and $\bar\psi_a(x)$ are odd elements of the Grassmann algebra generated by the countably many generators $\{\theta_{a,x},\theta^*_{a,x}\}$, one pair per component and point. The measure is the product of Berezin measures,
+The histories are $\mathbb{B}$-valued fields whose coefficients are Grassmann numbers: for each spacetime point and each module component, $\psi_a(x)$ and $\psi_a^{\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}$ are odd elements of the Grassmann algebra generated by the countably many generators $\{\theta_{a,x},\theta^*_{a,x}\}$, one pair per component and point. The measure is the product of Berezin measures,
 
 $$
-\mathcal{D}\bar\psi\,\mathcal{D}\psi=\prod_{x}\prod_{a}d\bar\psi_a(x)\,d\psi_a(x) ,
+\mathcal{D}\psi^{\dagger}\,\mathcal{D}\psi=\prod_{x}\prod_{a}d\psi_a^{\dagger}(x)\,d\psi_a(x) ,
 $$
 
-with the normalization $\int d\bar\psi_a\,d\psi_a\;\psi_a\bar\psi_a=1$ for each pair, mode by mode. The product is formal, exactly as the sum over paths is; what is finite and exact is the reduction to a finite number of modes, which is what the computations below use.
+with the normalization $\int d\psi_a^{\dagger}\,d\psi_a\;\psi_a\psi_a^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}=1$ for each pair, mode by mode. The product is formal, exactly as the sum over paths is; what is finite and exact is the reduction to a finite number of modes, which is what the computations below use.
 
 Three consequences of oddness are worth isolating, because they are the whole difference between this integral and the bosonic one.
 
@@ -125,45 +125,45 @@ Three consequences of oddness are worth isolating, because they are the whole di
 For a finite set of modes, write the quadratic action as
 
 $$
-S_0=\sum_{a,b}\bar\psi_a M_{ab}\psi_b ,
+S_0=\sum_{a,b}\psi_a^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M_{ab}\psi_b ,
 $$
 
 where $M$ is the matrix of the bilinear. In Euclidean signature $M=\mathbb{D}_{\mathrm{E}}+m$, and in Minkowski signature $M=-i(\mathbb{D}-m)$; the factor $-i$ is a field-independent constant of unit modulus, so in Minkowski the determinant is that of $\mathbb{D}-m$ up to that constant. The Gaussian Berezin integral is the determinant:
 
 $$
-\boxed{\;\int\prod_ad\bar\psi_a\,d\psi_a\;\exp(-\bar\psi M\psi)=\det M\;}.
+\boxed{\;\int\prod_ad\psi_a^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,d\psi_a\;\exp(-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi)=\det M\;}.
 $$
 
-The derivation is the terminating expansion: $\exp(-\bar\psi M\psi)=1-\bar\psi M\psi+\tfrac12(\bar\psi M\psi)^2-\cdots$, and only the term with exactly one of every generator survives the integral, whose coefficient is the Leibniz sum that defines $\det M$. The identity was verified for a general complex $2\times2$ matrix in the stated convention: the two sides agree to machine precision, ratio $1+0i$.
+The derivation is the terminating expansion: $\exp(-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi)=1-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi+\tfrac12(\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi)^2-\cdots$, and only the term with exactly one of every generator survives the integral, whose coefficient is the Leibniz sum that defines $\det M$. The identity was verified for a general complex $2\times2$ matrix in the stated convention: the two sides agree to machine precision, ratio $1+0i$.
 
 **The two-point function.** Dressing the Gaussian by one pair of fields gives the inverse kernel:
 
 $$
-\langle\psi_a\,\bar\psi_b\rangle=\frac{\int\prod d\bar\psi d\psi\;\exp(-\bar\psi M\psi)\,\psi_a\bar\psi_b}{\int\prod d\bar\psi d\psi\;\exp(-\bar\psi M\psi)}=\big(M^{-1}\big)_{ab} .
+\langle\psi_a\,\psi_b^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\rangle=\frac{\int\prod d\psi^{\dagger}d\psi\;\exp(-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi)\,\psi_a\psi_b}^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}{\int\prod d\psi^{\dagger}d\psi\;\exp(-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi)}=\big(M^{-1}\big)_{ab} .
 $$
 
-The index order is part of the statement and was checked: for a random complex $2\times2$ $M$ the four amplitudes are the four entries of $M^{-1}$, in the order $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, to nine decimals. The two off-diagonal amplitudes are sensitive to it because $M$ need not be symmetric: they are $(M^{-1})_{01}$ and $(M^{-1})_{10}$, and the anticommuting order of the measure is what fixes which field contracts with which index.
+The index order is part of the statement and was checked: for a random complex $2\times2$ $M$ the four amplitudes are the four entries of $M^{-1}$, in the order $\langle\psi_a\psi_b^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\rangle=(M^{-1})_{ab}$, to nine decimals. The two off-diagonal amplitudes are sensitive to it because $M$ need not be symmetric: they are $(M^{-1})_{01}$ and $(M^{-1})_{10}$, and the anticommuting order of the measure is what fixes which field contracts with which index.
 
-**The generating functional.** Completing the square in the Grassmann algebra — a finite algebraic operation, since the shift $\psi\to\psi+M^{-1}\eta$, $\bar\psi\to\bar\psi+\bar\eta M^{-1}$ is a shift by odd constants — gives the algebraic identity
+**The generating functional.** Completing the square in the Grassmann algebra — a finite algebraic operation, since the shift $\psi\to\psi+M^{-1}\eta$, $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\to\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}+\bar\eta M^{-1}$ is a shift by odd constants — gives the algebraic identity
 
 $$
-\boxed{\;\int\prod d\bar\psi\,d\psi\;\exp\!\big(-\bar\psi M\psi+\bar\eta\psi+\bar\psi\eta\big)=\det M\;\exp\!\big[\bar\eta\,M^{-1}\eta\big]\;},
+\boxed{\;\int\prod d\psi^{\dagger}\,d\psi\;\exp\!\big(-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi+\bar\eta\psi+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\eta\big)=\det M\;\exp\!\big[\bar\eta\,M^{-1}\eta\big]\;},
 $$
 
 with the exponential terminating at the top degree in the sources: the bilinear $\bar\eta M^{-1}\eta$ has degree two, so the series stops at degree two for one mode and at degree $2N$ for $N$ modes.
 
-The physical weight of §*Sources* replaces $-\bar\psi M\psi$ by $iS$ and $\bar\eta\psi+\bar\psi\eta$ by $i\!\int(\bar\eta\psi+\bar\psi\eta)$. Each source therefore carries an explicit $i$, and the two multiply to $i^2=-1$: the exponent of the result changes sign. With $M=-i(\mathbb{D}-m)$ and $M^{-1}=S_F$,
+The physical weight of §*Sources* replaces $-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi$ by $iS$ and $\bar\eta\psi+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\eta$ by $i\!\int(\bar\eta\psi+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\eta)$. Each source therefore carries an explicit $i$, and the two multiply to $i^2=-1$: the exponent of the result changes sign. With $M=-i(\mathbb{D}-m)$ and $M^{-1}=S_F$,
 
 $$
 Z[\eta,\bar\eta]=\det M\;\exp\!\big[-\bar\eta\,M^{-1}\eta\big]
 =\det(\mathbb{D}-m)\;\exp\!\Big[-\int d^4x\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big]
 $$
 
-up to a field-independent constant. The Euclidean functional, with weight $\exp(-S_{\mathrm E}+\bar\eta\psi+\bar\psi\eta)$, is the one that carries the plus sign.
+up to a field-independent constant. The Euclidean functional, with weight $\exp(-S_{\mathrm E}+\bar\eta\psi+\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\eta)$, is the one that carries the plus sign.
 
 ### A Finite-Mode Computation
 
-The statements above are finite algebraic identities, and it is worth exhibiting one instance with explicit numbers. Take two complex modes — four generators $\bar\psi_1,\psi_1,\bar\psi_2,\psi_2$ — and the kernel
+The statements above are finite algebraic identities, and it is worth exhibiting one instance with explicit numbers. Take two complex modes — four generators $\psi_1^{\dagger}iR_{\vec e_x}^{\mathrm{axf}},\psi_1,\psi_2^{\dagger}iR_{\vec e_x}^{\mathrm{axf}},\psi_2$ — and the kernel
 
 $$
 M=\begin{pmatrix}1.3+0.2i & 0.4-0.1i\\ 0.7+0.3i & 0.9\end{pmatrix},
@@ -174,7 +174,7 @@ $$
 The representation used is the Grassmann algebra on the four generators with monomials represented by subsets and the Koszul sign carried by the reordering, and Berezin integration defined as the coefficient of the top form in the stated normalization. Then
 
 $$
-\int d\bar\psi_2d\psi_2d\bar\psi_1d\psi_1\;\exp(-\bar\psi M\psi)=0.86+0.13i=\det M ,
+\int d\psi_2d^{\dagger}\psi_2d\psi_1d^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi_1\;\exp(-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi)=0.86+0.13i=\det M ,
 $$
 
 to machine precision (ratio $1+0i$), and the four two-point amplitudes divided by $\det M$, in the order $(a,b)=(0,0),(0,1),(1,0),(1,1)$, are $1.023132849-0.154659617i$, $-0.437541309+0.182419035i$, $-0.847323199-0.22075347i$ and $1.512227363+0.003965631i$, which are exactly $(M^{-1})_{00},(M^{-1})_{01},(M^{-1})_{10},(M^{-1})_{11}$. The middle two differ, as the index order requires: $M$ is not symmetric.
@@ -249,7 +249,7 @@ Second, the algebra's own statement is the *existence* of the antisymmetric pair
 $$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
 \qquad
-S_{\mathrm{E}}=\int d\tau\,d^3x\;\bar\psi\big(\mathbb{D}_{\mathrm{E}}+m\big)\psi ,
+S_{\mathrm{E}}=\int d\tau\,d^3x\;\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\big(\mathbb{D}_{\mathrm{E}}+m\big)\psi ,
 $$
 
 with the kinetic operator anti-Hermitian and the mass term Hermitian. The Euclidean determinant is therefore real, and positive for real $m$; a continuous phase appears only when a non-Hermitian deformation is added.
@@ -265,7 +265,7 @@ which is the same statement as the Matsubara frequencies $\omega_n=(2n+1)\pi/\be
 **The partition function.** On the Euclidean circle the free integral is a determinant,
 
 $$
-Z(\beta)=\int_{\text{antiperiodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})
+Z(\beta)=\int_{\text{antiperiodic}}\mathcal{D}\psi^{\dagger}\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})
 =\det\big(\mathbb{D}_{\mathrm{E}}+m\big)_{\text{AP}} ,
 $$
 
@@ -273,17 +273,17 @@ whose logarithm gives the free energy up to the factor $-\beta$. The identity is
 
 ## Parity Sectors, the Phase and the Sign Problem
 
-The measure carries the parity, and the two fermion-parity sectors appear as a **relative sign**, not as two integrands. In the paired measure an integral of an odd element vanishes, so the Gaussian integrand $\exp(-\bar\psi M\psi)$, being even, is the same functional in both sectors; what distinguishes them is the *boundary condition* in imaginary time. The two basic traces are
+The measure carries the parity, and the two fermion-parity sectors appear as a **relative sign**, not as two integrands. In the paired measure an integral of an odd element vanishes, so the Gaussian integrand $\exp(-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi)$, being even, is the same functional in both sectors; what distinguishes them is the *boundary condition* in imaginary time. The two basic traces are
 
 $$
 \boxed{\;\mathrm{Tr}\,\exp(-\beta H^{\mathrm{fop}})
-=\int_{\text{antiperiodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}}) ,
+=\int_{\text{antiperiodic}}\mathcal{D}\psi^{\dagger}\mathcal{D}\psi\;\exp(-S_{\mathrm{E}}) ,
 \qquad
 \mathrm{Tr}\,(-1)^{F^{\mathrm{fop}}}\exp(-\beta H^{\mathrm{fop}})
-=\int_{\text{periodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})\;},
+=\int_{\text{periodic}}\mathcal{D}\psi^{\dagger}\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})\;},
 $$
 
-so the antiperiodic fields compute the ordinary thermal trace and the periodic fields the parity-weighted (Witten) trace; the two differ by the relative sign of the even and odd sectors. This is the path-integral form of the parity grading that the parent Fock-space article records. It is also the reason a **Majorana** field's integral is a Pfaffian while a **Dirac** field's is a determinant: the Dirac field's $\psi$ and $\bar\psi$ are independent, so its measure pairs two independent sets of generators and yields a determinant; the Majorana field is its own conjugate, so the same pairing is antisymmetric within one set and yields the square root. Chirality enters separately, through the mass term, which couples the two chiral halves.
+so the antiperiodic fields compute the ordinary thermal trace and the periodic fields the parity-weighted (Witten) trace; the two differ by the relative sign of the even and odd sectors. This is the path-integral form of the parity grading that the parent Fock-space article records. It is also the reason a **Majorana** field's integral is a Pfaffian while a **Dirac** field's is a determinant: the Dirac field's $\psi$ and $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ are independent, so its measure pairs two independent sets of generators and yields a determinant; the Majorana field is its own conjugate, so the same pairing is antisymmetric within one set and yields the square root. Chirality enters separately, through the mass term, which couples the two chiral halves.
 
 **Where the determinant sits.** The fermionic partition function carries $\det M$ in the numerator, whereas a bosonic one carries $(\det M)^{-1/2}$ for a real field or $(\det M)^{-1}$ for a complex field. In the exponent of $Z$ the fermion therefore contributes $+\mathrm{Tr}\ln M$ and a complex boson $-\mathrm{Tr}\ln K$ (a real boson $-\tfrac12\mathrm{Tr}\ln K$), so the two enter loop corrections with opposite signs. This is not a bookkeeping accident but a consequence of the measure: the bosonic measure is a positive weight and the integral of a decaying Gaussian is small when the kernel is large, while the Berezin integral of a Gaussian is the determinant itself. It is the origin, at the level of the generating functional, of the opposite vacuum-energy contributions of bosons and fermions, and it was checked in the finite-mode computation above, where the integral returned $\det M$ rather than its inverse.
 
@@ -318,33 +318,33 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are written with the left and right multiplications of the module, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on it:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-They obey the Clifford relations of the frame — $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$ — and $\gamma_5^2=I_4$ with $\{\gamma_5,\gamma_\mu\}=0$. The relations were checked on the cells, so the frame is the body's cell algebra in another notation, not a larger one.
+They obey the anticommutation relations of the frame — $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]+\gamma_\nu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2g_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$ — and $\gamma_5[\mathbb{M}_-]^2=I_4$ with $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0$. The relations were checked on the cells, so the frame is the body's cell algebra in another notation, not a larger one.
 
 The pair operator of the body is the same cell operator, written in gammas:
 
 $$
-\mathbb{D}=i\gamma_0\frac{\partial}{\partial t'}+i\sum_k\gamma_k\frac{\partial}{\partial Q_k},
+\mathbb{D}=i\gamma_0[\mathbb{M}_-]\frac{\partial}{\partial t'}+i\sum_k\gamma_k[\mathbb{M}_-]\frac{\partial}{\partial Q_k},
 \qquad
-\slashed p=\gamma_0E-\sum_k\gamma_kp_k .
+\slashed p=\gamma_0[\mathbb{M}_-]E-\sum_k\gamma_k[\mathbb{M}_-]p_k .
 $$
 
-Each term $i\gamma_\mu=i\,(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}})=i^2L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ has already spent the product $i^2=-1$, so the cell form has no imaginary unit left. The collapse removes the $i$, not the cell: $i\gamma_0=-R_{\vec e_x}^{\mathrm{pau}}\neq-I_4$, so the time derivative is multiplied by the right multiplication by $\vec e_x$, not by a number.
+Each term $i\gamma_\mu[\mathbb{M}_-]=i\,(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}})=i^2L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ has already spent the product $i^2=-1$, so the cell form has no imaginary unit left. The collapse removes the $i$, not the cell: $i\gamma_0[\mathbb{M}_-]=-R_{\vec e_x}^{\mathrm{pau}}\neq-I_4$, so the time derivative is multiplied by the right multiplication by $\vec e_x$, not by a number.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -354,7 +354,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The equation integrated is the **one-sided** chiral pair; Kravchenko's **two-sided** equation is a different operator, related to it by a real-linear dictionary, and is not integrated here. The phase is central and lies in $\mathbb{M}_-$ along the $ict'$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
 
-The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the propagator companion's
+The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\psi_b^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[-\bar\eta M^{-1}\eta]$ in the Minkowski weight, with the plus sign in the Euclidean one; and for the field the kernel is the propagator companion's
 
 $$
 S_F(p)=\frac{\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu-im}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
@@ -370,16 +370,16 @@ The algebra contributes the centrality of the phase, the sector location of the 
 
 | Symbol | Meaning |
 |---|---|
-| $S=\int d^4x\,\bar\psi(\mathbb{D}-m)\psi$ | Biquaternion Dirac action (bilinear) |
+| $S=\int d^4x\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}(\mathbb{D}-m)\psi$ | Biquaternion Dirac action (bilinear) |
 | $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ | Action as a trace reading of the Hermitian form |
 | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | One-sided chiral pair; the equation integrated |
 | $-\tilde\nabla^{\natural}F-mi\,\bar F\,\vec e_z=0$ | Two-sided (Kravchenko) equation; different operator, not integrated |
 | $\exp(iS)$ | Path-integral phase; central, in $\mathbb{C}_{\mathbb{B}}$, exponent along $ict'$ |
 | $\eta,\bar\eta$ | Odd (Grassmann) sources |
-| $\mathcal{D}\bar\psi\mathcal{D}\psi=\prod_x\prod_ad\bar\psi_a(x)d\psi_a(x)$ | Berezin measure |
+| $\mathcal{D}\psi^{\dagger}\mathcal{D}\psi=\prod_x\prod_ad\psi_a^{\dagger}(x)iR_{\vec e_x}^{\mathrm{axf}}d\psi_a(x)$ | Berezin measure |
 | $\int d\theta^*d\theta\,\theta\theta^*=1$ | Berezin normalization used throughout |
-| $\int\prod d\bar\psi d\psi\,\exp(-\bar\psi M\psi)=\det M$ | Gaussian = determinant |
-| $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
+| $\int\prod d\psi^{\dagger}d\psi\,\exp(-\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M\psi)=\det M$ | Gaussian = determinant |
+| $\langle\psi_a\psi_b^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
 | $Z_0[\eta,\bar\eta]=\det(\mathbb{D}-m)\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu$, $\varepsilon=(+1,-1,-1,-1)$ | Frame cells; the sign vector $\varepsilon_\mu=-g_{\mu\mu}$ carried by every contraction of two lower indices, so that $\sum_\mu\varepsilon_\mu iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=iR_{\vec e_x}^{\mathrm{axf}}E-i\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$ |

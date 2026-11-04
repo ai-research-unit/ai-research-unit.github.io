@@ -77,27 +77,27 @@ so $\chi$ grades the Clifford set of generator cells: it anticommutes with the g
 
 Here $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\tau(t)=x$ and $\tau(k)=y$; the companion articles denote the same map by $\nu$.
 
-**Lorentz invariance, with or without a mass.** A projector is easy to check on the equation that suggested it, namely the massless Dirac equation, where the two halves decouple and the projector merely selects one of the two resulting Weyl equations. The claim that survives the mass term is different, and it is the one worth stating: chirality is carried by the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, which commutes with every Lorentz generator, so it is **Lorentz-invariant** and not a property of the massless limit. The Lorentz generators are the bivector cells, products of two generator cells, $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}$, and $\chi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}\,\chi$ holds identically, with or without a mass. The mass does not enter the commutator that makes chirality Lorentz invariant; what the mass does is to make the two halves visible to each other, and that is a statement about the equation, not about the invariance of the label.
+**Lorentz invariance, with or without a mass.** A projector is easy to check on the equation that suggested it, namely the massless Dirac equation, where the two halves decouple and the projector merely selects one of the two resulting Weyl equations. The claim that survives the mass term is different, and it is the one worth stating: chirality is carried by the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$, which commutes with every Lorentz generator, so it is **Lorentz-invariant** and not a property of the massless limit. The Lorentz generators are the bivector cells, products of two generator cells, $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}$, and $\chi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}\,\chi$ holds identically, with or without a mass. The mass does not enter the commutator that makes chirality Lorentz invariant; what the mass does is to make the two halves visible to each other, and that is a statement about the equation, not about the invariance of the label.
 
-**What the mass term does to a chirality-definite state.** Let $\bar{\Psi} = \Psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$, the adjoint built with the time-like generator cell $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$. In a basis in which the chirality cell is diagonal and $iR_{\vec e_x}^{\mathrm{axf}}$ swaps the two blocks identically, $iR_{\vec e_x}^{\mathrm{axf}}(\psi_L,0)=(0,\psi_L)$ and $iR_{\vec e_x}^{\mathrm{axf}}(0,\psi_R)=(\psi_R,0)$,
-
-$$
-\bar{\Psi}\Psi = \Psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L,
-$$
-
-the **Dirac mass bilinear**. Since $iR_{\vec e_x}^{\mathrm{axf}}$ anticommutes with $\chi$, it maps each chiral half into the other, and the bilinear is off-diagonal in the chiral blocks: it pairs $\psi_L$ with $\psi_R$ and never a half with itself. Under the discrete chirality transformation $\Psi\mapsto \chi\Psi$ one has $\bar{\Psi}\mapsto-\bar{\Psi}\chi$, since $\chi$ is Hermitian and $iR_{\vec e_x}^{\mathrm{axf}}\chi=-\chi\,iR_{\vec e_x}^{\mathrm{axf}}$, so
+**What the mass term does to a chirality-definite state.** Let $\Psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$, the adjoint built with the time-like generator cell $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$. In a basis in which the chirality cell is diagonal and $iR_{\vec e_x}^{\mathrm{axf}}$ swaps the two blocks identically, $iR_{\vec e_x}^{\mathrm{axf}}(\psi_L,0)=(0,\psi_L)$ and $iR_{\vec e_x}^{\mathrm{axf}}(0,\psi_R)=(\psi_R,0)$,
 
 $$
-\bar{\Psi}\Psi \;\longmapsto\; (-\bar{\Psi}\chi)(\chi\Psi) = -\bar{\Psi}\Psi :
+\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi = \Psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}\Psi = \psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L,
+$$
+
+the **Dirac mass bilinear**. Since $iR_{\vec e_x}^{\mathrm{axf}}$ anticommutes with $\chi$, it maps each chiral half into the other, and the bilinear is off-diagonal in the chiral blocks: it pairs $\psi_L$ with $\psi_R$ and never a half with itself. Under the discrete chirality transformation $\Psi\mapsto \chi\Psi$ one has $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\mapsto-\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\chi$, since $\chi$ is Hermitian and $iR_{\vec e_x}^{\mathrm{axf}}\chi=-\chi\,iR_{\vec e_x}^{\mathrm{axf}}$, so
+
+$$
+\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi \;\longmapsto\; (-\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\chi)(\chi\Psi) = -\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi :
 $$
 
 the mass bilinear is **chirality-odd**. Equivalently, if $\Psi$ has definite chirality, $\chi\Psi=\pm\Psi$, then the two blocks are $\Psi=( \psi_L,0)$ or $(0,\psi_R)$ and
 
 $$
-\bar{\Psi}\Psi = 0 .
+\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi = 0 .
 $$
 
-A field of definite chirality has no Dirac mass bilinear at all. This is the precise sense in which a lone Weyl field cannot carry a **Dirac** mass, and it is the algebra behind the Standard Model's chiral matter. It is not a statement that such a field is massless: a Majorana mass pairs the field with its own conjugate and needs no second chirality, which is why it is built on the charge conjugation below rather than on $\bar{\Psi}\Psi$.
+A field of definite chirality has no Dirac mass bilinear at all. This is the precise sense in which a lone Weyl field cannot carry a **Dirac** mass, and it is the algebra behind the Standard Model's chiral matter. It is not a statement that such a field is massless: a Majorana mass pairs the field with its own conjugate and needs no second chirality, which is why it is built on the charge conjugation below rather than on $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi$.
 
 **Framework caution.** Chirality is not visible to the algebra $\mathbb{B}$ alone. The algebra is simple, with one simple module; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and it carries the two associated idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, whose sum is $e_t$; the two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the *same* defining representation. The chiral halves are $S$ and $\bar{S}$, and the distinction between them is a **conjugation** distinction: it appears only when complex conjugation is taken into account, or when the algebra is complexified, where the central idempotents
 
@@ -184,10 +184,10 @@ $$
 \psi_L \longmapsto \exp(iϙ_L\Gamma/\hbar)\psi_L, \qquad \psi_R \longmapsto \exp(iϙ_R\Gamma/\hbar)\psi_R,
 $$
 
-so that the coefficient of $\psi_L^{\dagger}\psi_R$ acquires a position-dependent phase while its conjugate acquires the inverse phase. Since $\bar{\Psi}\Psi$ is real and equals $2\,\mathrm{Re}(\psi_L^{\dagger}\psi_R)$,
+so that the coefficient of $\psi_L^{\dagger}\psi_R$ acquires a position-dependent phase while its conjugate acquires the inverse phase. Since $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi$ is real and equals $2\,\mathrm{Re}(\psi_L^{\dagger}\psi_R)$,
 
 $$
-\bar{\Psi}\Psi
+\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi
 \;\longmapsto\;
 2\,\mathrm{Re}\!\left(\exp(\frac{i}{\hbar}(ϙ_R-ϙ_L)\Gamma)\,\psi_L^{\dagger}\psi_R\right),
 $$
@@ -200,7 +200,7 @@ $$
 
 This is the **mass selection rule**: a bare Dirac mass is compatible with the gauge symmetry exactly when the two chiralities carry the same charge, i.e. exactly when the fermion is vector-like. A genuinely chiral fermion, $ϙ_R\neq ϙ_L$, has no gauge-invariant bare mass; its mass must wait for a field carrying the compensating charge $ϙ_L-ϙ_R$ (the mass bilinear acquires the phase $\exp(i(ϙ_R-ϙ_L)\Gamma/\hbar)$), which is what the Higgs mechanism supplies. The rule was checked on both branches: it holds for all $\Gamma$ when $ϙ_L=ϙ_R$ (the vector-like case, including $ϙ_L=ϙ_R=0$), and it fails for the chiral case $ϙ_L\neq ϙ_R$, including the axial assignment $ϙ_R=-ϙ_L$. In particular the rule is not merely "some charge is preserved": an axial $\mathrm{U}(1)$, which carries opposite charges on the two halves and is the natural first guess for a chiral symmetry, does not preserve the mass either.
 
-**No opposite-chirality partner.** A field of definite chirality has $\bar{\Psi}\Psi=0$ identically, so even before the gauge symmetry is imposed there is nothing for the mass to multiply. The two statements — the bilinear vanishes on a chiral state, and it is not gauge invariant when the charges differ — are the algebraic form of the single physical fact that a chiral fermion is massless in the unbroken phase.
+**No opposite-chirality partner.** A field of definite chirality has $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi=0$ identically, so even before the gauge symmetry is imposed there is nothing for the mass to multiply. The two statements — the bilinear vanishes on a chiral state, and it is not gauge invariant when the charges differ — are the algebraic form of the single physical fact that a chiral fermion is massless in the unbroken phase.
 
 ## What the Centre Supplies: A Vector-Like Abelian Sector
 
@@ -248,9 +248,9 @@ The **one-sided** mass term is linear in the field and off-diagonal in chirality
 
 $$
 \sum_\mu \frac{\partial j_{5\mu}}{\partial Q_\mu}
-= 2im\,\bar{\Psi}\,\chi\Psi,
+= 2im\,\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\chi\Psi,
 \qquad
-j_{5\mu}=\bar{\Psi}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,\chi\,\Psi,
+j_{5\mu}=\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,\chi\,\Psi,
 $$
 
 and the right-hand side vanishes only at $m=0$. The vector current is conserved at every $m$, the axial current only at $m=0$. The mass term is also what distinguishes the massive biquaternionic equation from the massless one, which is identical in form to the source-free Maxwell equation.
@@ -261,7 +261,7 @@ $$
 \tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*},
 $$
 
-a $\mathbb{C}$-**antilinear** involution, order-reversing with a sign, $\left(\tilde{Q}\tilde{Q}_3\right)^{\flat}=-\tilde{Q}_3^{\flat}\tilde{Q}^{\flat}$, fixing the anti-Hermitian sector $\mathbb{M}_-$ and negating the Hermitian sector $\mathbb{M}_+$; its fixed space is $\mathbb{M}_-$. A coupling built on $\flat$ pairs the algebra field with its **conjugate** rather than with an independent field of the same charge, and its phase behaviour is the opposite of a linear term's: since $\lambda^{\flat}=-\bar\lambda$ for a central phase, $(\lambda F)^{\flat}=\bar\lambda F^{\flat}$, so an antilinear piece of an equation transforms with $\bar\lambda$ while the derivative piece transforms with $\lambda$. The two match only when $\lambda=\bar\lambda$, that is $\lambda=\pm1$: the continuous central phase is broken to a sign. In the standard classification this has the quantum numbers of a **Majorana-type** mass: it is allowed only for a neutral fermion, and it breaks the continuous fermion-number $\mathrm{U}(1)$ to a sign. A mass that pairs $\psi_L$ with an independent $\psi_R$ of equal charge is a **Dirac** mass, and it preserves that $\mathrm{U}(1)$. The parent's mass is of the second type — the linear off-diagonal pair above, whose bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ carries the selection rule of the preceding section.
+a $\mathbb{C}$-**antilinear** involution, order-reversing with a sign, $\left(\tilde{Q}\tilde{Q}_3\right)^{\flat}=-\tilde{Q}_3^{\flat}\tilde{Q}^{\flat}$, fixing the anti-Hermitian sector $\mathbb{M}_-$ and negating the Hermitian sector $\mathbb{M}_+$; its fixed space is $\mathbb{M}_-$. A coupling built on $\flat$ pairs the algebra field with its **conjugate** rather than with an independent field of the same charge, and its phase behaviour is the opposite of a linear term's: since $\lambda^{\flat}=-\bar\lambda$ for a central phase, $(\lambda F)^{\flat}=\bar\lambda F^{\flat}$, so an antilinear piece of an equation transforms with $\bar\lambda$ while the derivative piece transforms with $\lambda$. The two match only when $\lambda=\bar\lambda$, that is $\lambda=\pm1$: the continuous central phase is broken to a sign. In the standard classification this has the quantum numbers of a **Majorana-type** mass: it is allowed only for a neutral fermion, and it breaks the continuous fermion-number $\mathrm{U}(1)$ to a sign. A mass that pairs $\psi_L$ with an independent $\psi_R$ of equal charge is a **Dirac** mass, and it preserves that $\mathrm{U}(1)$. The parent's mass is of the second type — the linear off-diagonal pair above, whose bilinear $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ carries the selection rule of the preceding section.
 
 A coupling of the first type is a separate equation built on the real structure, $\tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^{\flat}$. The companion article *Antilinear Structure and the Two Kinds of Mass* shows that its central-phase plane waves sit on the spacelike locus rather than on the physical mass shell, so the single-field equation is not a physical mass. What $\flat$ supplies is the **shape** of a conjugate pairing on the algebra, not a fermion-number-breaking mass on the module. The operation that exchanges the two chiral halves is the module charge conjugation $\mathcal C:S\leftrightarrow\bar{S}$, not $\flat$: $\flat$ is order-reversing and acts with opposite signs on the two sectors $\mathbb{M}_\pm$, while $\mathcal C$ is the antilinear map between the halves. A physical Majorana mass must be built on $\mathcal C$.
 
@@ -335,65 +335,65 @@ The chiral projectors and the Peirce projectors are both right multiplications o
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra. In cell notation,
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
 $$
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
 $$
 
 In the axis-free display:
 
 $$
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\chi .
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\chi .
 $$
 
-A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance $\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$, and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\chi$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.
+A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0[\mathbb{M}_-],\dots,\gamma_3[\mathbb{M}_-]$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$, and the same four steps give $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\chi$, that is $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$.
 
-$\gamma_5$ is the reference-frame representative of the chirality operator. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the frame cell $\gamma_5=\chi$. The distinction is the one between the abstract central sign and its representative.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame representative of the chirality operator. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the frame cell $\gamma_5[\mathbb{M}_-]=\chi$. The distinction is the one between the abstract central sign and its representative.
 
 The cell dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
 ## Summary
 
 A chiral fermion is one whose left- and right-handed components carry inequivalent gauge representations. In the biquaternion framework the chiral decomposition lives in the spinor module: the Dirac module is $\Delta=S\oplus\bar{S}$, the chirality cell is $\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$, acting by $\chi\Psi=-i\,e_t\Psi\vec e_z$ with $\chi^2=I_4$, and the projectors are the cells
@@ -403,15 +403,15 @@ P_L=\tfrac12(I_4-\chi)=\tfrac12(I_4+iR_{\vec e_z}^{\mathrm{axf}}),\qquad
 P_R=\tfrac12(I_4+\chi)=\tfrac12(I_4-iR_{\vec e_z}^{\mathrm{axf}}),
 $$
 
-equivalently $P_L\Psi=\tfrac12(\Psi+i\Psi\vec e_z)$ and $P_R\Psi=\tfrac12(\Psi-i\Psi\vec e_z)$. They are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $\chi$ commutes with the bivector cells that generate the Lorentz action — it anticommutes with the generator cells themselves. The Dirac mass bilinear $\bar{\Psi}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.
+equivalently $P_L\Psi=\tfrac12(\Psi+i\Psi\vec e_z)$ and $P_R\Psi=\tfrac12(\Psi-i\Psi\vec e_z)$. They are idempotent, orthogonal, complete, of rank two, and Lorentz invariant, because $\chi$ commutes with the bivector cells that generate the Lorentz action — it anticommutes with the generator cells themselves. The Dirac mass bilinear $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi=\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ is chirality-odd and vanishes on a state of definite chirality.
 
-A chiral abelian gauge symmetry with independent charges is consistent on the module: with $Ϙ=ϙ_LP_L+ϙ_RP_R$, the covariant derivative $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ satisfies $D_{2,\mu}(\Lambda\Psi)=\Lambda D_\mu\Psi$ for arbitrary $ϙ_L,ϙ_R$, and $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. The charge operator is itself a right multiplication, $Ϙ=R_b$ with $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$, so it coincides with a left multiplication, and hence with the parent's connection, only when $ϙ_L=ϙ_R$. But under the gauge transformation $\bar{\Psi}\Psi$ acquires the position-dependent phase $\exp(\tfrac{i}{\hbar}(ϙ_R-ϙ_L)\Gamma)$, so it is gauge invariant **iff $ϙ_L=ϙ_R$**: a chiral fermion has no bare Dirac mass. This is the framework's form of the Standard Model's requirement that fermion masses arise through a compensating scalar. The two occurrences of the condition $ϙ_L=ϙ_R$ — one for the mass, one for the side of the connection — are the same statement seen twice.
+A chiral abelian gauge symmetry with independent charges is consistent on the module: with $Ϙ=ϙ_LP_L+ϙ_RP_R$, the covariant derivative $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ satisfies $D_{2,\mu}(\Lambda\Psi)=\Lambda D_\mu\Psi$ for arbitrary $ϙ_L,ϙ_R$, and $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$. The charge operator is itself a right multiplication, $Ϙ=R_b$ with $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$, so it coincides with a left multiplication, and hence with the parent's connection, only when $ϙ_L=ϙ_R$. But under the gauge transformation $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi$ acquires the position-dependent phase $\exp(\tfrac{i}{\hbar}(ϙ_R-ϙ_L)\Gamma)$, so it is gauge invariant **iff $ϙ_L=ϙ_R$**: a chiral fermion has no bare Dirac mass. This is the framework's form of the Standard Model's requirement that fermion masses arise through a compensating scalar. The two occurrences of the condition $ϙ_L=ϙ_R$ — one for the mass, one for the side of the connection — are the same statement seen twice.
 
 The framework's *own* abelian gauge group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, and a central element acts as a scalar on $M_2(\mathbb{C})$, giving every component the same charge. The canonically available abelian sector is therefore **vector-like** and cannot be chiral; a chiral gauge group requires a non-central action beyond the scalar centre — precisely the structure the read-list gauge article leaves open. The framework's mass term is the linear chiral pair, through which the continuous central phase passes: the vector $\mathrm{U}(1)$ is conserved for the massive field, and what the mass breaks is the axial symmetry,
 
 $$
 \sum_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}
-=2im\,\bar{\Psi}\,\chi\Psi,
+=2im\,\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\chi\Psi,
 $$
 
 which vanishes only at $m=0$. The algebra's antilinear involution is the real structure $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$: it pairs an algebra element with its conjugate, is not invariant under the continuous central phase, and has the quantum numbers of a conjugate-pairing (Majorana-type) term. It does not, however, exchange the two chiral halves; that exchange is the module charge conjugation $\mathcal C$. Its single-field equation is not a physical mass, because its plane waves are spacelike.
@@ -436,7 +436,7 @@ Two gaps are left visible. First, without a non-central gauge structure the fram
 | $L_a\Psi=a\Psi,\ R_b\Psi=\Psi b,\ L_{a}R_{b}$ | Left, right and two-sided multipliers; $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$ |
 | $\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, $\chi\Psi=-i\,e_t\Psi\vec e_z$, $\chi^2=I_4$ |
 | $P_L=\tfrac12(I_4-\chi)=\tfrac12(I_4+iR_{\vec e_z}^{\mathrm{axf}})$, $P_R=\tfrac12(I_4+\chi)=\tfrac12(I_4-iR_{\vec e_z}^{\mathrm{axf}})$ | Chiral projectors |
-| $\bar{\Psi} = \Psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$, $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac adjoint and mass bilinear (chirality-odd) |
+| $\Psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$, $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac adjoint and mass bilinear (chirality-odd) |
 | $\mathcal C$ | Module charge conjugation, the antilinear map $S\leftrightarrow\bar S$; its fixed space is the Majorana spinor space |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ | Generator cells: $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, with $\tau(t)=x$, $\tau(k)=y$ |
 | $g_{\mu\nu}=\mathrm{diag}(+,-,-,-)$ | Metric; the generator cells satisfy $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}+iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}} iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |

@@ -386,7 +386,7 @@ This does not contradict the one-way statement of *What the Square Carries and W
 
 If the first half is called a potential and the second a field strength, the pair says that the field is the derivative of the potential. The gradient alone suggests the redundancy such a description usually carries: if $\tilde\nabla\kappa = 0$, the potentials $\tilde\Psi_R$ and $\tilde\Psi_R + \kappa$ generate the same second half. The freedom does not survive the pair, and it is the mass shell that removes it. The condition $\tilde\nabla\kappa = 0$ is the massless Weyl equation, so $\kappa$ obeys $\Box\kappa = 0$ while the potential obeys $\Box\tilde\Psi_R = m^2\tilde\Psi_R$; the sum obeys neither, and the second member fails by exactly $m\kappa$. A potential off the mass shell generates no solution of the pair. In the two-term form there is therefore no redundancy to quotient out: the first half is physical data, and the pair fixes the whole field from it.
 
-The four-scalar form of the same construction, in Kassandrov's treatment, does carry a genuine redundancy, and the difference is worth recording because it is where the phrase *the Dirac field is a gauge field* comes from. There the potential is a quadruple $\phi$ of Klein–Gordon scalars and the field is $\chi = D^*\phi$, with $D^* = i\gamma^\mu\partial/\partial x_\mu + m$ and $DD^* = \Box - m^2$ in the gamma frame of *The Legacy Pauli Gamma Formulation* below. Two potentials differing by $\kappa$ with $D^*\kappa = 0$ give the same field, and such a $\kappa$ is itself a Klein–Gordon solution, since $DD^*\kappa = 0$. The kernel of $D^*$ is the conjugate Dirac equation, which is the shape the electromagnetic case takes: there the potentials are defined up to $\partial\alpha$, the field is blind to it, and the gauge functions that survive the Lorenz condition are the ones with $\Box\alpha = 0$ — the same two-step structure, with the constraint on the gauge function carried by the field equation instead of by a subsidiary condition. The corpus keeps the two-term form, which is sharper, a doublet rather than a quadruple, and which has nothing to quotient out.
+The four-scalar form of the same construction, in Kassandrov's treatment, does carry a genuine redundancy, and the difference is worth recording because it is where the phrase *the Dirac field is a gauge field* comes from. There the potential is a quadruple $\phi$ of Klein–Gordon scalars and the field is $\chi = D^*\phi$, with $D^* = i\gamma^\mu[\mathbb{M}_-]\partial/\partial x_\mu + m$ and $DD^* = \Box - m^2$ in the gamma frame of *The Legacy Pauli Gamma Formulation* below. Two potentials differing by $\kappa$ with $D^*\kappa = 0$ give the same field, and such a $\kappa$ is itself a Klein–Gordon solution, since $DD^*\kappa = 0$. The kernel of $D^*$ is the conjugate Dirac equation, which is the shape the electromagnetic case takes: there the potentials are defined up to $\partial\alpha$, the field is blind to it, and the gauge functions that survive the Lorenz condition are the ones with $\Box\alpha = 0$ — the same two-step structure, with the constraint on the gauge function carried by the field equation instead of by a subsidiary condition. The corpus keeps the two-term form, which is sharper, a doublet rather than a quadruple, and which has nothing to quotient out.
 
 One step of the source's argument is not adopted. Kassandrov reads the construction as evidence that the spinor transformation law is not forced, taking the generating half to transform as a scalar doublet and the generated half then transforming nonlinearly. The corpus does not need that step and does not take it: the Lorentz action used here is the left action of the unit-norm biquaternions on the module, one action for every field, and a second realization on the components is a different theory of the transformation law rather than a consequence of the pair.
 
@@ -434,81 +434,81 @@ The source builds infinite chains of solutions by feeding the generated half bac
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the previous section under their Clifford names, together with their product:
 
 $$
-\gamma_0 = C_t = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1 = C_x = iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2 = C_y = iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3 = C_z = iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-] = C_t = iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1[\mathbb{M}_-] = C_x = iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2[\mathbb{M}_-] = C_y = iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3[\mathbb{M}_-] = C_z = iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0 = C_t = iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1 = C_x = iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2 = C_y = iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3 = C_z = iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-] = C_t = iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1[\mathbb{M}_-] = C_x = iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2[\mathbb{M}_-] = C_y = iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3[\mathbb{M}_-] = C_z = iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
 $$
-\gamma_5 = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_5[\mathbb{M}_-] = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 In the axis-free display:
 
 $$
-\gamma_5 = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_5[\mathbb{M}_-] = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-The volume cell is the product of the four, $C_tC_xC_yC_z = -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$: the four $i$'s of the product reduce as $i^4 = +1$, so the product is a real cell, and the one further $i$ that turns it into $\gamma_5$ is the $i$ displayed.
+The volume cell is the product of the four, $C_tC_xC_yC_z = -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$: the four $i$'s of the product reduce as $i^4 = +1$, so the product is a real cell, and the one further $i$ that turns it into $\gamma_5[\mathbb{M}_-]$ is the $i$ displayed.
 
 A cell is a pure tensor, and the coefficient matrix $c(M)$ of an element $M$ in the basis of the sixteen products has rank at most four, so a general element is a sum of at most four cells; the cells alone are the cone $\operatorname{rank}c(M)\le1$, of dimension seven. The dictionary between the cell reading and the gamma reading is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities.** In the $\gamma$ reading, with the Clifford indices $\mu,\nu,\rho,\sigma\in\{0,1,2,3\}$ — the label $0$ is the timelike slot, the cell $C_t$ — and $\epsilon_{0123} = +1$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-\gamma_0^2 = I_4,\qquad
-(\gamma_k)^2 = -I_4,\qquad
-\gamma_5^2 = I_4,\qquad
-\{\gamma_\mu,\gamma_5\} = 0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\} = 2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+\gamma_0[\mathbb{M}_-]^2 = I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2 = -I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2 = I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\} = 0,
 $$
 
 $$
-[\gamma_\mu,\gamma_\nu] = 2\gamma_\mu\gamma_\nu\ \ (\mu\neq\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd} = \tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]] = 2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\ \ (\mu\neq\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd} = \tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu) = 4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma) = -4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]) = 4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-]) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-= 4\left(g_{\mu\nu}g_{\rho\sigma} - g_{\mu\rho}g_{\nu\sigma} + g_{\mu\sigma}g_{\nu\rho}\right).
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+= 4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-The four contraction sums depend on the frame, because they involve $g_{\mu\mu}$. In the Euclidean frame, where every cell squares to $+I_4$ and $g = \delta$, each $\gamma$ in the sums is read as its Euclidean cell, $\gamma^E_0 = \gamma_0$ and $\gamma^E_k = i\gamma_k$, and they are
+The four contraction sums depend on the frame, because they involve $g_{\mu\mu}$. In the Euclidean frame, where every cell squares to $+I_4$ and $g = \delta$, each $\gamma$ in the sums is read as its Euclidean cell, $\gamma^E_0 = \gamma_0[\mathbb{M}_-]$ and $\gamma^E_k = i\gamma_k[\mathbb{M}_-]$, and they are
 
 $$
-\sum_\mu\gamma_\mu\gamma_\mu = 4I_4,
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}] = 4I_4,
 \qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu = -2\gamma_\alpha,
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}] = -2\gamma_\alpha[\mathbb{B}],
 $$
 
 $$
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu = 4\delta_{\alpha\beta}I_4,
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\mu[\mathbb{B}] = 4\delta_{\alpha\beta}I_4,
 \qquad
-\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu = -2\gamma_\gamma\gamma_\beta\gamma_\alpha .
+\sum_\mu\gamma_\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\gamma[\mathbb{B}]\gamma_\mu[\mathbb{B}] = -2\gamma_\gamma[\mathbb{B}]\gamma_\beta[\mathbb{B}]\gamma_\alpha[\mathbb{B}] .
 $$
 
-In the $\mathbb{M}_-$ frame, with $\varepsilon=(1,-1,-1,-1)$, the signs of the cells enter: the first sum is $\sum_\mu\gamma_\mu\gamma_\mu = -2I_4$, and the second is $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu = 2\left(1+g_{\alpha\alpha}\right)\gamma_\alpha$, which is $4\gamma_0$ for $\alpha = 0$ and vanishes for a spatial $\alpha$. The third and fourth are stated in the Euclidean frame only; in the $\mathbb{M}_-$ frame they do not take the Euclidean form with $g$ written for $\delta$. The body uses the anticommutator, the chirality cell and the volume element; the contraction sums are recorded for reference.
+In the $\mathbb{M}_-$ frame, with $\varepsilon=(1,-1,-1,-1)$, the signs of the cells enter: the first sum is $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-] = -2I_4$, and the second is $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-] = 2\left(1+g_{\alpha\alpha}\right)\gamma_\alpha[\mathbb{M}_-]$, which is $4\gamma_0[\mathbb{M}_-]$ for $\alpha = 0$ and vanishes for a spatial $\alpha$. The third and fourth are stated in the Euclidean frame only; in the $\mathbb{M}_-$ frame they do not take the Euclidean form with $g$ written for $\delta$. The body uses the anticommutator, the chirality cell and the volume element; the contraction sums are recorded for reference.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

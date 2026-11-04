@@ -40,7 +40,7 @@ $$
 C_\mu C_\nu = i^2\,L_{a_\mu a_\nu}R_{b_\nu b_\mu} = -L_{a_\mu a_\nu}R_{b_\nu b_\mu} .
 $$
 
-The two prefactors multiply to $i^2 = -1$, and what survives is a plain cell. That minus is the whole of the double $i$: it is used once, here, and it never appears in a display. The four generators obey the Clifford relations
+The two prefactors multiply to $i^2 = -1$, and what survives is a plain cell. That minus is the whole of the double $i$: it is used once, here, and it never appears in a display. The four generators obey the anticommutation relations
 
 $$
 C_\mu C_\nu + C_\nu C_\mu = 2\varepsilon_\mu\delta_{\mu\nu},
@@ -78,7 +78,7 @@ so the form vanishes whenever one of its three arguments is proportional to $k$.
 
 ### The Geometric Interpretation
 
-The interpretation is Cartan's, in four dimensions. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the Clifford action composed with the invariant spinor pairing. Here the trilinear form on $M \times S_1 \times S_2$ is the cell action $A_\mu\,\bar\Psi_{(1)}C_\mu\Psi_{(2)}$, symmetrised in the two semi-spinors and evaluated on the neutral element $k$. It is the same construction in four dimensions, and it is the lowest-order invariant the four cells supply.
+The interpretation is Cartan's, in four dimensions. In the $\mathrm{Spin}(8)$ case the invariant trilinear form on $8_v \times 8_s \times 8_c$ is the Clifford action composed with the invariant spinor pairing. Here the trilinear form on $M \times S_1 \times S_2$ is the cell action $A_\mu\,\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_{(1)}C_\mu\Psi_{(2)}$, symmetrised in the two semi-spinors and evaluated on the neutral element $k$. It is the same construction in four dimensions, and it is the lowest-order invariant the four cells supply.
 
 ## The Cubic Form and the Dictionary
 
@@ -87,7 +87,7 @@ The interpretation is Cartan's, in four dimensions. In the $\mathrm{Spin}(8)$ ca
 Evaluated on a single spinor rather than on a triple, the same cells give the cubic form of the interaction. This object is quadratic in $B$ and $N$ and linear in $A$, and it splits:
 
 $$
-C = A_\mu\,\bar\Psi\,C_\mu\Psi
+C = A_\mu\,\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,C_\mu\Psi
 = A_\mu\,t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda .
 $$
 
@@ -114,21 +114,21 @@ The first is symmetric under the interchange of its two index pairs, the second 
 The two quadratic forms are read on the same cells, with $\Gamma : \Psi \mapsto -i e_t\Psi\vec e_z = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ the chirality,
 
 $$
-\bar\Psi\Psi = N_\mu g_{\mu\nu}N_\nu - B_\mu g_{\mu\nu}B_\nu ,
+\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi = N_\mu g_{\mu\nu}N_\nu - B_\mu g_{\mu\nu}B_\nu ,
 $$
 
 $$
-\bar\Psi\Gamma\Psi = -2i\,B_\mu g_{\mu\nu}N_\nu .
+\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Gamma\Psi = -2i\,B_\mu g_{\mu\nu}N_\nu .
 $$
 
 The first is the quadratic form of the spinor and is real, of indefinite sign. The second is the pseudoscalar and is purely imaginary, because $\Gamma$ anticommutes with every generator cell, $\Gamma C_\mu + C_\mu\Gamma = 0$. Written in the s-vector $G_\mu = B_\mu + iN_\mu$, with $G^{*}_\mu = B_\mu - iN_\mu$, the pair reads
 
 $$
-\bar\Psi\Psi = -\tfrac12\bigl(G_\mu g_{\mu\nu}G_\nu + G^{*}_\mu g_{\mu\nu}G^{*}_\nu\bigr),
+\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi = -\tfrac12\bigl(G_\mu g_{\mu\nu}G_\nu + G^{*}_\mu g_{\mu\nu}G^{*}_\nu\bigr),
 $$
 
 $$
-\bar\Psi\Gamma\Psi = -\tfrac12\bigl(G_\mu g_{\mu\nu}G_\nu - G^{*}_\mu g_{\mu\nu}G^{*}_\nu\bigr),
+\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Gamma\Psi = -\tfrac12\bigl(G_\mu g_{\mu\nu}G_\nu - G^{*}_\mu g_{\mu\nu}G^{*}_\nu\bigr),
 $$
 
 so the quadratic form is minus the real part of $G_\mu g_{\mu\nu}G_\nu$ and the pseudoscalar is minus $i$ times its imaginary part. With the trilinear form and the two quadratic forms, $C$ is the complete invariant content of the algebra: the quadratic forms define the metric on the two semi-spinor spaces, and $C$ is the triality-invariant coupling of the vector to the pair. The dictionary of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form* exhibits all of these as $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$.
@@ -212,25 +212,25 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and in the cell notation they are the four generator cells with a name:
 
 $$
-\gamma_\mu = C_\mu, \qquad
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_\mu[\mathbb{M}_-] = C_\mu, \qquad
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_\mu = C_\mu, \qquad
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_\mu[\mathbb{M}_-] = C_\mu, \qquad
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 Here $L_{c}R_{d}$ multiplies on the left by $c$ and on the right by $d$: $L_{c}R_{d}\psi=c\psi d$. A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
-The frame obeys the Clifford relations $\{\gamma_\mu,\gamma_\nu\} = 2\varepsilon_\mu\delta_{\mu\nu}$ and the chirality relations $\gamma_5^2 = e_t$ and $\{\gamma_5,\gamma_\mu\} = 0$, with $\gamma_5 = i\gamma_0\gamma_1\gamma_2\gamma_3$; the sign in the last identity is the one that makes $\gamma_5$ the fifth generator and not its negative. $\gamma_5$ is the chirality $\Gamma$ itself, $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = \gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+The frame obeys the anticommutation relations $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\} = 2\varepsilon_\mu\delta_{\mu\nu}$ and the chirality relations $\gamma_5[\mathbb{M}_-]^2 = e_t$ and $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\} = 0$, with $\gamma_5[\mathbb{M}_-] = i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$; the sign in the last identity is the one that makes $\gamma_5[\mathbb{M}_-]$ the fifth generator and not its negative. $\gamma_5[\mathbb{M}_-]$ is the chirality $\Gamma$ itself, $\Gamma = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = \gamma_5[\mathbb{M}_-]$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -247,7 +247,7 @@ $$
 alternating in its three arguments and equal to twice the determinant of the three spatial parts in a frame where $k=(1,0,0,0)$; its evaluation on a single spinor is the cubic form
 
 $$
-C = A_\mu\bar\Psi\,C_\mu\Psi = A_\mu t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda,
+C = A_\mu\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,C_\mu\Psi = A_\mu t_{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\varepsilon_{\nu\mu\lambda}B_\nu N_\lambda,
 $$
 
 with $t$ and $\varepsilon$ the generator traces contracted with $k$. The order-three map $J : A \mapsto B \mapsto N \mapsto A$ permutes the three spaces and leaves $\varepsilon$ invariant; this is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and it exists because the three modules have equal real dimension in $1+3$. The order-four maps $q_x : (A,B,N) \mapsto (-B,A,N)$ and $q_y : (A,B,N) \mapsto (A,-N,B)$ satisfy $q_x^4 = q_y^4 = 1$ and the braid relation $q_xq_yq_x = q_yq_xq_y$; their product is $q_xq_y = J^2$, so the order-three and the order-four moves generate one group, of order $24$, and the word $q_xq_yq_yq_x = q_y^2$ leaves the cubic form invariant — "Dirac's game".
@@ -275,7 +275,7 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol of the generators, $\varepsilon_{0123} = 1$ |
 | $t_{\nu\mu\lambda}$, $\varepsilon_{\nu\mu\lambda}$ | The same tensors contracted with $k_\sigma$ |
 | $\varepsilon(A,B,N) = 2A_\mu\varepsilon_{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$ | Order-three ding (the invariant trilinear form) |
-| $C = A_\mu\bar\Psi\,C_\mu\Psi$ | Cubic form |
+| $C = A_\mu\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,C_\mu\Psi$ | Cubic form |
 | $J : A \mapsto B \mapsto N \mapsto A$ | Order-three ding map (the four-dimensional triality) |
 | $q_x : (A,B,N)\mapsto(-B,A,N)$ | Order-four braid map |
 | $q_y : (A,B,N)\mapsto(A,-N,B)$ | Order-four braid map |

@@ -298,7 +298,7 @@ $$
 \vec v_{CA}=\left(0.5,\ 0.34641,\ 0\right)c ,
 $$
 
-which is the textbook value $v_{y}=v_{y}'/[\gamma_{BA}(1+\beta_{BA}\beta_{x}')]$ with $\beta_{x}'=0$, the composed Lorentz factor being $\gamma_{CA}=1/\sqrt{1-0.5^2-0.34641^2}=1.2599$. The transverse part keeps its direction and loses the factor $\gamma_{BA}$, and no transverse velocity appears in the denominator because the component of $\vec v_{CB}$ along $\vec v_{BA}$ vanishes.
+which is the textbook value $v_{y}=v_{y}'/[\gamma_{BA}[\mathbb{M}_-](1+\beta_{BA}\beta_{x}')]$ with $\beta_{x}'=0$, the composed Lorentz factor being $\gamma_{CA}[\mathbb{M}_-]=1/\sqrt{1-0.5^2-0.34641^2}=1.2599$. The transverse part keeps its direction and loses the factor $\gamma_{BA}[\mathbb{M}_-]$, and no transverse velocity appears in the denominator because the component of $\vec v_{CB}$ along $\vec v_{BA}$ vanishes.
 
 **The composite is not a boost.** $\tilde U_{CA}$ is a product of two Hermitian elements, hence Hermitian only when they commute. It is nevertheless of norm one, $\langle\tilde U_{CA}\rangle_{\natural}=1$, because the norm is multiplicative and each factor has norm one. Its polar word in the corpus's fixed order is
 
@@ -319,7 +319,7 @@ the order of the factors being immaterial. Writing each factor as $\gamma(e_t+\b
 $$
 \beta_{CA}=\frac{\beta_{BA}+\beta_{CB}}{1+\beta_{BA}\beta_{CB}},
 \qquad
-\gamma_{CA}=\gamma_{BA}\gamma_{CB}\left(1+\beta_{BA}\beta_{CB}\right),
+\gamma_{CA}[\mathbb{M}_-]=\gamma_{BA}[\mathbb{M}_-]\gamma_{CB}[\mathbb{M}_-]\left(1+\beta_{BA}\beta_{CB}\right),
 $$
 
 which is the source's collinear composition law, written with the frame labels rather than with the indices $1,2$ of the source.
@@ -336,57 +336,57 @@ The one genuinely new object in the source's programme is not a change of basis 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas of this section are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and they are **cells**, not elements. The section of the same name in *The Number Systems as Clifford Algebras* uses the word for the **elements** $i\vec e_k$; here it names the cells that represent those elements on the Dirac module. The module is what tells the two apart, and the cells act on it while the elements are multiplied. In the corpus's notation they are
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-Their Clifford relations, their chirality and their volume product are
+Their anticommutation relations, their chirality and their volume product are
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 \qquad
-\gamma_5^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+\gamma_5[\mathbb{M}_-]^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 \qquad
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-]=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 In the axis-free display:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 \qquad
-\gamma_5^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\gamma_5[\mathbb{M}_-]^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 \qquad
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-]=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-The signs here are the mostly-minus $\varepsilon=(1,-1,-1,-1)$, in which $\gamma_0^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. It is not the $g_{\mu\nu}[\mathbb{M}_-]$ of the material sector; the two differ by an overall sign, $g_{\mu\nu}[\mathbb{M}_-]$, and the sign shows up as the sign of $\gamma_0^2$. A frame whose time cell squares to $+1$ carries $g$; one whose time cell squares to $-1$ carries $\eta$.
+The signs here are the mostly-minus $\varepsilon=(1,-1,-1,-1)$, in which $\gamma_0[\mathbb{M}_-]^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k[\mathbb{M}_-]^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. It is not the $g_{\mu\nu}[\mathbb{M}_-]$ of the material sector; the two differ by an overall sign, $g_{\mu\nu}[\mathbb{M}_-]$, and the sign shows up as the sign of $\gamma_0[\mathbb{M}_-]^2$. A frame whose time cell squares to $+1$ carries $g$; one whose time cell squares to $-1$ carries $\eta$.
 
 The letter $\gamma$ is also used, in the algebra-of-physical-space literature, for the three **generators** of that algebra. That is a different object: the element
 
@@ -394,7 +394,7 @@ $$
 i\vec e_k,\qquad k=x,y,z,
 $$
 
-generates $\mathrm{Cl}_{3,0}$ inside $\mathbb{B}$, with $(i\vec e_j)(i\vec e_k)+(i\vec e_k)(i\vec e_j)=2\delta_{jk}e_t$, $(i\vec e_k)^2=+e_t$ and $(i\vec e_x)(i\vec e_y)(i\vec e_z)=i$. The two uses of the letter are irreconcilable and both are standard, so this article keeps them apart: the four gamma cells appear only in this section, and everywhere else the three generators are written $i\vec e_k$. Read as an operator, a generator is the single left cell $L_{i\vec e_k}^{\mathrm{pau}}$, and the Clifford relations of the elements are the relations of those cells:
+generates $\mathrm{Cl}_{3,0}$ inside $\mathbb{B}$, with $(i\vec e_j)(i\vec e_k)+(i\vec e_k)(i\vec e_j)=2\delta_{jk}e_t$, $(i\vec e_k)^2=+e_t$ and $(i\vec e_x)(i\vec e_y)(i\vec e_z)=i$. The two uses of the letter are irreconcilable and both are standard, so this article keeps them apart: the four gamma cells appear only in this section, and everywhere else the three generators are written $i\vec e_k$. Read as an operator, a generator is the single left cell $L_{i\vec e_k}^{\mathrm{pau}}$, and the anticommutation relations of the elements are the relations of those cells:
 
 $$
 L_{i\vec e_j}^{\mathrm{pau}}L_{i\vec e_k}^{\mathrm{pau}}+L_{i\vec e_k}^{\mathrm{pau}}L_{i\vec e_j}^{\mathrm{pau}}=2\delta_{jk}\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}.
@@ -424,9 +424,9 @@ $$
 D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k},
 $$
 
-a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the chirality is the $\gamma_5$ cell, and on the Dirac module it splits the field into two halves; in the second equation there is no split at all, and the chirality is the volume cell $-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field.
+a single equation on $\mathbb{B}$ whose left side is one-sided and whose mass term is a right multiplication by $\vec e_z$ accompanied by the componentwise complex conjugation. The distinction is not decoration. In the first equation the chirality is the $\gamma_5[\mathbb{M}_-]$ cell, and on the Dirac module it splits the field into two halves; in the second equation there is no split at all, and the chirality is the volume cell $-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The first is one-sided in the operator and doubled in the field; the second is two-sided in the operator and single in the field.
 
-The paravector reading supplies the one-sided half: a paravector multiplying from the left is a cell $L_p$, and the whole of the boost rule is one-sided. What it does not supply is the doubling. A chirality is a grading: it must separate the module into two halves, so it must be an operator that anticommutes with the generators and squares to the identity. The volume element $i$ of the algebra of physical space is central and squares to $-1$; it multiplies every element by the same scalar and separates nothing. The two objects are often confused, and the confusion has a visible cause: in the cell formulation $\gamma_5^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ while $\gamma_5$ anticommutes with the four generating cells, and in the element formulation $i^2=-e_t$ while $i$ commutes with everything. A scalar and a grading cannot be the same object, and it is the reason the paravector literature writes one Dirac equation where the cell formulation writes two. The full account is in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, §*The Two Equations of the Corpus*.
+The paravector reading supplies the one-sided half: a paravector multiplying from the left is a cell $L_p$, and the whole of the boost rule is one-sided. What it does not supply is the doubling. A chirality is a grading: it must separate the module into two halves, so it must be an operator that anticommutes with the generators and squares to the identity. The volume element $i$ of the algebra of physical space is central and squares to $-1$; it multiplies every element by the same scalar and separates nothing. The two objects are often confused, and the confusion has a visible cause: in the cell formulation $\gamma_5[\mathbb{M}_-]^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ while $\gamma_5[\mathbb{M}_-]$ anticommutes with the four generating cells, and in the element formulation $i^2=-e_t$ while $i$ commutes with everything. A scalar and a grading cannot be the same object, and it is the reason the paravector literature writes one Dirac equation where the cell formulation writes two. The full account is in *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, §*The Two Equations of the Corpus*.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

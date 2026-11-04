@@ -53,20 +53,20 @@ The four spinors carry the same eight real fields in four different arrangements
 
 $$
 \Psi_{\{3\}}=\Pi\,\Psi_{\{0\}},\qquad
-\Psi_{\{2\}}=J_2\,\bar\Psi_{\{0\}},\qquad
-\Psi_{\{1\}}=J_1\,\bar\Psi_{\{0\}},
+\Psi_{\{2\}}=J_2\,\Psi_{\{0\}}^{\dagger},\qquad
+\Psi_{\{1\}}=J_1\,\Psi_{\{0\}}^{\dagger},
 $$
 
 so that two of the three are **antilinear**, and the third, $\Pi$, is a real permutation, hence complex-linear. The options therefore form two classes under complex-linear equivalence, $\{0\}\sim\{3\}$ and $\{2\}\sim\{1\}$, and all four transitions between the classes are conjugations; the section *Why the Matrix Formulation Mixes the Options* reads that as the failure of the matrix formalism. The three relations were recomputed on generic real fields.
 
-**The four equations, in cells.** With the frame cells and the chirality cell of the notation paragraph, and with $\bar\Psi$ the coefficient conjugate, the four options satisfy the four equations
+**The four equations, in cells.** With the frame cells and the chirality cell of the notation paragraph, and with $\Psi^{\dagger}$ the coefficient conjugation of the column, the four options satisfy the four equations
 
 $$
 \boxed{\;\begin{aligned}
-\{2\}&\quad \mathcal{D}R_{e_{21}}\Psi+ϙA\Psi+m\,\chi\bar\Psi=0, && e^+_\uparrow,\\[2pt]
-\{0\}&\quad -\mathcal{D}R_{e_{21}}\Psi+ϙA\Psi+m\,\chi\bar\Psi=0, && e^+_\downarrow,\\[2pt]
-\{3\}&\quad \mathcal{D}R_{e_{21}}\Psi-ϙA\Psi+m\,\chi\bar\Psi=0, && e^-_\uparrow,\\[2pt]
-\{1\}&\quad -\mathcal{D}R_{e_{21}}\Psi-ϙA\Psi+m\,\chi\bar\Psi=0, && e^-_\downarrow.
+\{2\}&\quad \mathcal{D}R_{e_{21}}\Psi+ϙA\Psi+m\,\chi\Psi^{\dagger}=0, && e^+_\uparrow,\\[2pt]
+\{0\}&\quad -\mathcal{D}R_{e_{21}}\Psi+ϙA\Psi+m\,\chi\Psi^{\dagger}=0, && e^+_\downarrow,\\[2pt]
+\{3\}&\quad \mathcal{D}R_{e_{21}}\Psi-ϙA\Psi+m\,\chi\Psi^{\dagger}=0, && e^-_\uparrow,\\[2pt]
+\{1\}&\quad -\mathcal{D}R_{e_{21}}\Psi-ϙA\Psi+m\,\chi\Psi^{\dagger}=0, && e^-_\downarrow.
 \end{aligned}\;}
 $$
 
@@ -76,17 +76,17 @@ $$
 R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-i\,\chi .
 $$
 
-The mass term is written as the chirality cell acting on the conjugated field, $m\chi\bar\Psi$, which is the corpus's representative of Parra's $m\Psi e_0$; the section *The Two Dirac Equations* gives the reason for the replacement and its price. The sign pattern of the four options is unaffected by it, because the mass term is common to all four.
+The mass term is written as the chirality cell acting on the conjugated field, $m\chi\Psi^{\dagger}$, which is the corpus's representative of Parra's $m\Psi e_0$; the section *The Two Dirac Equations* gives the reason for the replacement and its price. The sign pattern of the four options is unaffected by it, because the mass term is common to all four.
 
 The final column is Parra's identification of each equation with a "particle": the sign $\pm$ distinguishes electron from positron and the arrow $\uparrow\downarrow$ distinguishes spin up from spin down. The identification is a choice — one may exchange the two labels within each pair — and the corpus records it as Parra's interpretation rather than as a derivation.
 
 **Proposition (the options are one theory in four sign conventions).** The four equations differ only in the **sign of the gradient term** ($\mathcal{D}$ or $-\mathcal{D}$) and the **sign of the coupling term** ($+ϙA$ or $-ϙA$), while the spin cell and the mass term are the same in all four. Consequently each option is a solution of the Dirac equation in its own conventions: reading the sign of the gradient as defining the orientation of the frame and the sign of $ϙA$ as the charge convention, the four options become the same equation.
 
-*Proof.* Compare the four equations term by term; they have the same structure and differ in the two signs displayed. The mass term $m\chi\bar\Psi$ and the spin cell $R_{e_{21}}$ are common to all four, and the kinetic operator is the same up to its overall sign.
+*Proof.* Compare the four equations term by term; they have the same structure and differ in the two signs displayed. The mass term $m\chi\Psi^{\dagger}$ and the spin cell $R_{e_{21}}$ are common to all four, and the kinetic operator is the same up to its overall sign.
 
 **Corollary (which options the corpus already knows).** Option $\{2\}$ **is** the Dirac–Hestenes equation. In Parra's writing, with the mass left on his side, option $\{2\}$ is $\nabla\Psi e_{21}+ϙA\Psi+m\Psi e_0=0$, and the corpus's display $L_\nabla R_{\omega\sigma_3}\psi-eL_A\psi=mR_{v_0}\psi$ of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form* carries the same two right multipliers, the spin plane $\omega\sigma_3$ and the velocity $v_0$; the two differ only in the two sign conventions of the charge and the mass: with $ϙ=-e$ both coupling terms read $-eA\Psi$, and with $m\to-m$ both mass terms read $-m$ times the field, so the two coincide term by term, the spin bivector $e_{21}$ being identified with $\omega\sigma_3$ as Fauser states. Option $\{1\}$ **is** the Daviau equation $\nabla\varphi\,i\sigma_1=m\varphi^{*}+qA\varphi$ of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation* — the charge is written $q$ there — upon the passage between the two formulations described in that article. That two of the corpus's three formulations appear as two of Parra's four options, and the other two options are new, is the article's first structural result.
 
-**Remark (the right action is common to all four).** In every option the spin cell $R_{e_{21}}=-i\chi$ multiplies $\Psi$ and the chirality cell $\chi$ multiplies $\bar\Psi$, both **on the right**, while the gradient and the coupling act on the left. This is the bi-module structure of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, and it is the same feature the corpus records for the Dirac–Hestenes equation. The four options do not differ in the left/right pattern; they differ only in the two signs.
+**Remark (the right action is common to all four).** In every option the spin cell $R_{e_{21}}=-i\chi$ multiplies $\Psi$ and the chirality cell $\chi$ multiplies $\Psi^{\dagger}$, both **on the right**, while the gradient and the coupling act on the left. This is the bi-module structure of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, and it is the same feature the corpus records for the Dirac–Hestenes equation. The four options do not differ in the left/right pattern; they differ only in the two signs.
 
 ## The Two Dirac Equations
 
@@ -116,7 +116,7 @@ $$
 
 The first identity is the dictionary of *The Legacy Pauli Gamma Formulation*: the spin bivector is the frame product $e_2e_1=-\vec e_z$, and the cell of a product is the composition of the cells, $R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}}$. The two squares are the second point. Right multiplication by the spin bivector is a **complex structure** on the module, and right multiplication by the chirality cell is an **involution**; the two differ by a factor $i$, and $i^2=-1$ is the whole of the difference. The corpus's Hestenes article separates the same two objects by the same test, giving the phase to the spin plane, $(\omega\sigma_3)^2=-1$, and not to the chirality; in the cell language the test is the square, $-I_4$ against $I_4$. That is the precise sense in which the options join the two-sided operator theory to chirality: the object Parra multiplies on the right and the object the two-sided equation multiplies on the right are the same cell up to the central sign.
 
-**The odd velocity.** Parra's mass term multiplies by the velocity $e_0$, an odd element, and an even field multiplied on the right by an odd element leaves the even carrier, so the term sits in the odd sector of the algebra. The corpus writes the same structure inside the even carrier as the chirality cell acting on the conjugated field, $m\chi\bar\Psi$: the conjugation absorbs the oddness, and the fixed direction plays the part of the velocity — a conjugation and a fixed direction, and nothing else. Daviau's $m\varphi^{*}$ is the same replacement in the space Clifford algebra. The two mass terms are one structure in two carriers, and the article writes the corpus's representative throughout. What the passage costs is linearity: Parra's mass term is linear in the field and the corpus's is antilinear, which is the difference the companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* records between the two kinds of mass.
+**The odd velocity.** Parra's mass term multiplies by the velocity $e_0$, an odd element, and an even field multiplied on the right by an odd element leaves the even carrier, so the term sits in the odd sector of the algebra. The corpus writes the same structure inside the even carrier as the chirality cell acting on the conjugated field, $m\chi\Psi^{\dagger}$: the conjugation absorbs the oddness, and the fixed direction plays the part of the velocity — a conjugation and a fixed direction, and nothing else. Daviau's $m\varphi^{*}$ is the same replacement in the space Clifford algebra. The two mass terms are one structure in two carriers, and the article writes the corpus's representative throughout. What the passage costs is linearity: Parra's mass term is linear in the field and the corpus's is antilinear, which is the difference the companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* records between the two kinds of mass.
 
 ## The Discrete Group and the Discrete Symmetries
 
@@ -222,7 +222,7 @@ Fauser draws a structural conclusion from the four options. In the geometric-alg
 
 3. **The discrete symmetries as a permutation group.** The corpus has each of $P$, $C$, $T$ acting on one field. Does the extension to a group acting on the set of four equations reproduce the corpus's $C$ (the $\flat$ real structure and the right multiplication by a bivector) and its $P$, $T$ (the reflections of the grading article) with the correct permutation, and which of the three real-linear maps between the options is the charge conjugation? Two of the three are antilinear, so the question is a sharp one.
 
-4. **The odd velocity inside the even carrier.** The mass term $m\chi\bar\Psi$ replaces $m\Psi e_0$ by a conjugation together with the chirality cell. Is that replacement unique, or is it one of several even-carrier representatives of the same odd structure, and does the choice leave the four options' orbit intact?
+4. **The odd velocity inside the even carrier.** The mass term $m\chi\Psi^{\dagger}$ replaces $m\Psi e_0$ by a conjugation together with the chirality cell. Is that replacement unique, or is it one of several even-carrier representatives of the same odd structure, and does the choice leave the four options' orbit intact?
 
 5. **Spin polarisation and second quantisation.** The four options are four first-quantised equations. Is there a sense in which the four creation and annihilation operator pairs of the second quantised theory — one per type — are the four Fourier components of the option orbit, and does the corpus's path-integral formalism see them?
 
@@ -232,46 +232,46 @@ Fauser draws a structural conclusion from the four options. In the geometric-alg
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the four frame cells and the chirality cell of the body become
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
 $$
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
 $$
 
 In the axis-free display:
 
 $$
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
 $$
 
 The four frame cells satisfy the cell relation of $\varepsilon=(1,-1,-1,-1)$, and their squares are $\pm I_4$:
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_k)^2=-I_4\ \ (k=1,2,3) ,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad (\gamma_0[\mathbb{M}_-])^2=I_4,\qquad (\gamma_k[\mathbb{M}_-])^2=-I_4\ \ (k=1,2,3) ,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
 The chirality cell is the fifth: it is the cell $\chi$ of the body, and it anticommutes with all four,
 
 $$
-\gamma_5=\chi=-iR_{\vec e_z}^{\mathrm{pau}},\qquad \gamma_5^2=I_4,\qquad \{\gamma_\mu,\gamma_5\}=0 .
+\gamma_5[\mathbb{M}_-]=\chi=-iR_{\vec e_z}^{\mathrm{pau}},\qquad \gamma_5[\mathbb{M}_-]^2=I_4,\qquad \{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0 .
 $$
 
 The same identities in the axis-free display:
 
 $$
-\gamma_5=\chi=-iR_{\vec e_z}^{\mathrm{axf}},\qquad \gamma_5^2=I_4,\qquad \{\gamma_\mu,\gamma_5\}=0 .
+\gamma_5[\mathbb{M}_-]=\chi=-iR_{\vec e_z}^{\mathrm{axf}},\qquad \gamma_5[\mathbb{M}_-]^2=I_4,\qquad \{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0 .
 $$
 
 All of these were recomputed on the module's explicit $4\times4$ representation. The cells of the body are sums of such products: a single product $L_aR_b$ is a pure tensor, the pure tensors form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element of $M_4(\mathbb C)$ is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
@@ -279,18 +279,18 @@ All of these were recomputed on the module's explicit $4\times4$ representation.
 **The spin bivector.** The identity behind the body's spin cell is read off the frame,
 
 $$
-\gamma_2\gamma_1=-L_{\vec e_z}^{\mathrm{pau}},\qquad\text{hence}\qquad e_{21}=-\vec e_z,\qquad R_{e_{21}}=R_{-\vec e_z}^{\mathrm{pau}}=-i\,\chi ,
+\gamma_2[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=-L_{\vec e_z}^{\mathrm{pau}},\qquad\text{hence}\qquad e_{21}=-\vec e_z,\qquad R_{e_{21}}=R_{-\vec e_z}^{\mathrm{pau}}=-i\,\chi ,
 $$
 
 Read in the axis-free display:
 
 $$
-\gamma_2\gamma_1=-L_{\vec e_z}^{\mathrm{axf}},\qquad\text{hence}\qquad e_{21}=-\vec e_z,\qquad R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-i\,\chi ,
+\gamma_2[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=-L_{\vec e_z}^{\mathrm{axf}},\qquad\text{hence}\qquad e_{21}=-\vec e_z,\qquad R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-i\,\chi ,
 $$
 
 using $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ and $R_{-\vec e_z}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}}$ in the last step. As an operator the bivector is the left multiplication by the frame product; as an element of the even algebra it is $-\vec e_z$. The spin *cell* that Parra's equation applies to the field is the right multiplication by that element, and it coincides with the chirality cell up to the central factor. That is the whole of the correspondence, and it needs no second imaginary unit: $(-i\chi)^2=(-i)^2\chi^2=-I_4$ while $\chi^2=I_4$, the factor $i^2=-1$ being the only place a sign is spent.
 
-**The chirality operator and its representative.** $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The corpus writes the two with the same letter and separates them by the subscript (*The Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form*); this article keeps that spelling. The abstract sign is central and squares to the identity of the algebra; its representative is a cell and squares to the identity of the module.
+**The chirality operator and its representative.** $\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module. The corpus writes the two with the same letter and separates them by the subscript (*The Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form*); this article keeps that spelling. The abstract sign is central and squares to the identity of the algebra; its representative is a cell and squares to the identity of the module.
 
 The dictionary is complex-linear: over $\mathbb{R}$ the sixteen products of the frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and over $\mathbb{C}$ they span $M_4(\mathbb{C})$.
 
@@ -321,7 +321,7 @@ The options are permuted by the discrete quotient $D=\Gamma_{1,3}/\Gamma^{0}_{1,
 | $\Gamma_{1,3}$, $\Gamma^{+}_{1,3}$, $\Gamma^{0}_{1,3}$ | Clifford–Lipschitz group, its even part, and the component of its identity |
 | $D=\Gamma_{1,3}/\Gamma^{0}_{1,3}$ | The discrete quotient; order four, permuting the four options |
 | $e^{\pm}_{\uparrow\downarrow}$ | Parra's particle labels: electron/positron, spin up/down |
-| $\Pi$, $J_2$, $J_1$ | The real permutation and the two signed permutations relating the four spinors: $\Psi_{\{3\}}=\Pi\Psi_{\{0\}}$ complex-linearly, $\Psi_{\{2\}}=J_2\bar\Psi_{\{0\}}$ and $\Psi_{\{1\}}=J_1\bar\Psi_{\{0\}}$ antilinearly |
+| $\Pi$, $J_2$, $J_1$ | The real permutation and the two signed permutations relating the four spinors: $\Psi_{\{3\}}=\Pi\Psi_{\{0\}}$ complex-linearly, $\Psi_{\{2\}}=J_2\Psi_{\{0\}}^{\dagger}$ and $\Psi_{\{1\}}=J_1\Psi_{\{0\}}^{\dagger}$ antilinearly |
 | $\Psi_r=q_{r1}+i\bar q_{r2}$ | The quaternion form of the Parra spinor; $\bar q$ is quaternion conjugation in that display only |
 | $T_{\mathrm m},T_{\mathrm i},X_{\mathrm m},X_{\mathrm i}$ | The four blocks: material time $\mathbb R(ie_t)$, informational time $\mathbb R(e_t)$, material space, informational space $iX_{\mathrm m}$ |
 | $\eta=L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=R_{\vec e_x}^{\mathrm{axf}}$ | The **even** cell of the charge-conjugation bilinear, $\psi^{\mathsf T}\eta\psi$; $\eta^2=-I_4$ |

@@ -93,7 +93,7 @@ $$
 
 The constraint is not an equation of motion; it removes the spin-$\tfrac12$ components that a bare vector-spinor would contain. The fully antisymmetric form of the Rarita–Schwinger equation — the antisymmetrized triple contracted with the derivative and the antisymmetrized pair multiplying the mass — is the Lagrangian origin of the system. For $m\neq0$ it implies the component equation and the trace constraint, and the pair and the constraint displayed above are the reduced form; the companion article gives the reduction. For quantization the pair and the constraint are the starting point.
 
-In the algebra's own terms the constraint is the single element $\tilde\Psi_0+\sum_k\vec e_k\tilde\Psi_k\vec e_z=0$ of the companion article: one left multiplication of the cell trace by the invertible cell $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$ returns exactly that element, since $\gamma_0\gamma_0=I_4$ and $\gamma_0\gamma_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, so the two forms vanish together. The element needs no frame; the cell trace does, and the frame it uses is that of the cells. The constraint displayed is the form the projector below annihilates — and it is the metric-weighted contraction, $\sum_\mu\varepsilon_\mu\gamma_\mu\psi_\mu$, that the projector annihilates; without the sign vector the contraction is not annihilated.
+In the algebra's own terms the constraint is the single element $\tilde\Psi_0+\sum_k\vec e_k\tilde\Psi_k\vec e_z=0$ of the companion article: one left multiplication of the cell trace by the invertible cell $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{axf}}$ returns exactly that element, since $\gamma_0[\mathbb{M}_-]\gamma_0[\mathbb{M}_-]=I_4$ and $\gamma_0[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, so the two forms vanish together. The element needs no frame; the cell trace does, and the frame it uses is that of the cells. The constraint displayed is the form the projector below annihilates — and it is the metric-weighted contraction, $\sum_\mu\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]\psi_\mu$, that the projector annihilates; without the sign vector the contraction is not annihilated.
 
 ### Transversality from the Constraint
 
@@ -183,7 +183,7 @@ When $m\neq0$ the gauge symmetry is absent: the field equation is not invariant 
 The canonical momentum conjugate to $\psi_\mu$ is, from the standard Rarita–Schwinger Lagrangian,
 
 $$
-\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial t'\,\psi_\mu)}=\bar\psi_\nu\,T_{\nu t\mu} ,
+\pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial t'\,\psi_\mu)}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,T_{\nu t\mu} ,
 $$
 
 where $T$ is the antisymmetrized triple of cells,
@@ -192,7 +192,7 @@ $$
 T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\,L_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}} ,
 $$
 
-$\bar\psi_\nu=\psi_\nu^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ is the Dirac adjoint, and the normalization of the Lagrangian is left free. The triple is totally antisymmetric in its three indices and vanishes when two of them coincide; its factors are plain cells rather than frame cells, and $(-i)^3=i$. The $i$ of the adjoint and the three of the triple multiply to $i^4=1$, so no imaginary unit survives in the display of the momentum and none is left as a double $i$. The canonical analysis gives the primary constraint $\pi_0\approx 0$ — automatic here, since the antisymmetrized triple carrying two timelike cells vanishes — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
+$\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu=\psi_\nu^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ is the Dirac adjoint, and the normalization of the Lagrangian is left free. The triple is totally antisymmetric in its three indices and vanishes when two of them coincide; its factors are plain cells rather than frame cells, and $(-i)^3=i$. The $i$ of the adjoint and the three of the triple multiply to $i^4=1$, so no imaginary unit survives in the display of the momentum and none is left as a double $i$. The canonical analysis gives the primary constraint $\pi_0\approx 0$ — automatic here, since the antisymmetrized triple carrying two timelike cells vanishes — together with the trace constraint and the conjugate constraints. The constraint algebra is second class for $m\neq0$, so the equal-time bracket is the Dirac bracket
 
 $$
 \{A,B\}_D = \{A,B\}_P-\sum_{a,b}\{A,\chi_a\}_P\,(\Delta^{-1})_{ab}\,\{\chi_b,B\}_P ,
@@ -322,29 +322,29 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are the frame cells of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 $$
-\gamma_\mu:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu[\mathbb{M}_-]:=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}\quad(\nu(t)=x,\ \nu(k)=y),
 \qquad
-\gamma_5:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_5[\mathbb{M}_-]:=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\quad(\nu(t)=x,\ \nu(k)=y),
+\gamma_\mu[\mathbb{M}_-]:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\quad(\nu(t)=x,\ \nu(k)=y),
 \qquad
-\gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_5[\mathbb{M}_-]:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-that is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $k=1,2,3$. No display of the body uses the letter: there the cells are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+that is $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_k[\mathbb{M}_-]=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ for $k=1,2,3$. No display of the body uses the letter: there the cells are written as their two multipliers, and the letter is read once, here. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. It anticommutes with each of the four frame cells and commutes with every even element, hence with the whole biquaternion image; its eigenspaces are the chiral halves of the spinor space, and it is the cell that exchanges the two lines of the chiral pair. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module. It anticommutes with each of the four frame cells and commutes with every even element, hence with the whole biquaternion image; its eigenspaces are the chiral halves of the spinor space, and it is the cell that exchanges the two lines of the chiral pair. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The composites of the body.** The letter absorbs the imaginary unit of the cell, $i\gamma_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, the two imaginary units multiplying to $-1$. The four composites named in the body are therefore
+**The composites of the body.** The letter absorbs the imaginary unit of the cell, $i\gamma_\mu[\mathbb{M}_-]=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, the two imaginary units multiplying to $-1$. The four composites named in the body are therefore
 
 $$
 \mathbb{D}=i\gamma\cdot\partial,
@@ -353,7 +353,7 @@ $$
 \qquad
 \Sigma(\psi)=\gamma\cdot\psi,
 \qquad
-T_{\mu\nu\rho}=i\gamma_{[\mu\nu\rho]},
+T_{\mu\nu\rho}=i\gamma_{[\mu\nu\rho]}[\mathbb{M}_-],
 $$
 
 with $\gamma\cdot\partial$ and $\gamma\cdot p$ the metric contractions. $\mathbb{D}_p$ is $\mathbb{D}$ read at $\partial/\partial x_\mu\to-ip_\mu$, and that substitution is the single $i$ that separates the two; the triple $T$ differs from the antisymmetrized triple of frame cells by the same bookkeeping, three factors giving $(-i)^3=i$.
@@ -361,24 +361,24 @@ with $\gamma\cdot\partial$ and $\gamma\cdot p$ the metric contractions. $\mathbb
 **The identities.** With $\varepsilon=(1,-1,-1,-1)$ and the sign vector $\varepsilon_\mu=-g_{\mu\mu}$,
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,
 \qquad
-\gamma_\mu^2=\varepsilon_\mu I_4,
+\gamma_\mu[\mathbb{M}_-]^2=\varepsilon_\mu I_4,
 \qquad
-\gamma_\mu(\gamma\cdot p)=2p_\mu-(\gamma\cdot p)\gamma_\mu,
+\gamma_\mu[\mathbb{M}_-](\gamma\cdot p)=2p_\mu-(\gamma\cdot p)\gamma_\mu[\mathbb{M}_-],
 $$
 
 $$
-\gamma_5^2=I_4,
+\gamma_5[\mathbb{M}_-]^2=I_4,
 \qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 \qquad
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},
 $$
 
-with $\gamma_{\mu\nu}:=\tfrac12[\gamma_\mu,\gamma_\nu]$ for a pair and $\gamma_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma_\mu\gamma_\nu\gamma_\rho$ for a triple. The third entry of the first display is the identity the transversality argument uses, written with the letter.
+with $\gamma_{\mu\nu}[\mathbb{M}_-]:=\tfrac12[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]$ for a pair and $\gamma_{\mu\nu\rho}[\mathbb{M}_-]:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]$ for a triple. The third entry of the first display is the identity the transversality argument uses, written with the letter.
 
-**The two Dirac equations.** The pair is one matrix equation written twice. With the chiral projectors $P_{L}:=\tfrac12(I_4-\gamma_5)$ and $P_{R}:=\tfrac12(I_4+\gamma_5)$, the two lines of the pair are the two chiral halves of $(i\gamma\cdot\partial-m)\psi_\mu=0$, the halves being $P_L\psi_\mu$ and $P_R\psi_\mu$; $\gamma_5$ anticommutes with the frame cells and exchanges the halves, so the single matrix equation carries both, and the cell equation of the body, which multiplies on both sides, is its transcription in cells.
+**The two Dirac equations.** The pair is one matrix equation written twice. With the chiral projectors $P_{L}:=\tfrac12(I_4-\gamma_5[\mathbb{M}_-])$ and $P_{R}:=\tfrac12(I_4+\gamma_5[\mathbb{M}_-])$, the two lines of the pair are the two chiral halves of $(i\gamma\cdot\partial-m)\psi_\mu=0$, the halves being $P_L\psi_\mu$ and $P_R\psi_\mu$; $\gamma_5[\mathbb{M}_-]$ anticommutes with the frame cells and exchanges the halves, so the single matrix equation carries both, and the cell equation of the body, which multiplies on both sides, is its transcription in cells.
 
 **The displays of the body.** In the letter, the equation, the constraint, the projector and the momentum are
 
@@ -387,9 +387,9 @@ $$
 \qquad
 \gamma\cdot\psi=0,
 \qquad
-P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu,
+P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-],
 \qquad
-\pi_\mu=i\bar\psi_\nu\,\gamma_{[\nu t\mu]},
+\pi_\mu=i\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu\,\gamma_{[\nu t\mu]}[\mathbb{M}_-],
 $$
 
 and the polarization equations, the completeness relation and the propagator are
@@ -437,8 +437,8 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\mathrm{rank}\,P=12=16-4$ | Verified by Gaussian elimination over $\mathbb{C}$ |
 | $V\otimes S$, $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ | Spatial part of the carrier and its decomposition; $3\cdot2=4+2$ |
 | $\psi_\mu\mapsto\psi_\mu+\partial/\partial x_\mu\,\epsilon$ | Massless gauge symmetry; spinor parameter |
-| $T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}L_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}}$, $\pi_\mu=\bar\psi_\nu T_{\nu t\mu}$ | Antisymmetrized triple of cells and the canonical momentum; $i\cdot i^3=1$, so no imaginary unit survives |
-| $\bar\psi_\nu=\psi_\nu^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint |
+| $T_{\mu\nu\rho}:=\tfrac1{3!}\sum_{\mathrm{perms}}\pm L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}L_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}L_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}}$, $\pi_\mu=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu T_{\nu t\mu}$ | Antisymmetrized triple of cells and the canonical momentum; $i\cdot i^3=1$, so no imaginary unit survives |
+| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}_\nu=\psi_\nu^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint |
 | $\vec x:=x\vec e_x+y\vec e_y+z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $\Delta_{ab}=\{\chi_a,\chi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Fermionic mode algebra |
@@ -447,7 +447,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
 | $G_{\mu\nu}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
 | $\varepsilon=(1,-1,-1,-1)$ | sign vector of the generators; the $ict'$ metric is $g_{\mu\nu}[\mathbb{M}_-]$ |
-| $\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | The gammas of *The Legacy Pauli Gamma Formulation*: the same frame cells written as letters; $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
+| $\gamma_\mu[\mathbb{M}_-]:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\gamma_5[\mathbb{M}_-]:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | The gammas of *The Legacy Pauli Gamma Formulation*: the same frame cells written as letters; $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{axf}}$, $\gamma_k[\mathbb{M}_-]=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
 
 ## Further Reading
 

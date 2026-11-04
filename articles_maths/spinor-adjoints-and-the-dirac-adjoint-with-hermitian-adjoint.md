@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A Hermitian Clifford module carries a form for which the Clifford action is self-adjoint. Attached to the form are two further structures that the physical literature names separately. The first is the **spinor adjoint**: the conjugate-linear identification of the module with its dual that the form induces, $s\mapsto(s,\cdot)$, which is the unique Clifford-equivariant pairing of the module with itself up to a scalar and is the algebraic object every spin-invariant bilinear form is built from. The second is the **Dirac adjoint**: the pairing of two spinors obtained by inserting a fixed vector $v$ before the form, $s,t\mapsto \mathrm{Sc}(s^{\dagger}v t)$, written in the physical normalisation as $\bar\psi = \psi^{\dagger}v_0$, with $v_0$ the time-like vector, and whose scalar part $\bar\psi\psi$ is the invariant mass term. This article treats both, together with the way they repair the isotropy of the naive scalar form on a spinor module and the way they interact with the self-adjointness of the Dirac operator.
+A Hermitian Clifford module carries a form for which the Clifford action is self-adjoint. Attached to the form are two further structures that the physical literature names separately. The first is the **spinor adjoint**: the conjugate-linear identification of the module with its dual that the form induces, $s\mapsto(s,\cdot)$, which is the unique Clifford-equivariant pairing of the module with itself up to a scalar and is the algebraic object every spin-invariant bilinear form is built from. The second is the **Dirac adjoint**: the pairing of two spinors obtained by inserting a fixed vector $v$ before the form, $s,t\mapsto \mathrm{Sc}(s^{\dagger}v t)$, written in the physical normalisation as $\psi^{\dagger}v_0$, with $v_0$ the time-like vector, and whose scalar part $\psi^{\dagger}v_0\psi$ is the invariant mass term. This article treats both, together with the way they repair the isotropy of the naive scalar form on a spinor module and the way they interact with the self-adjointness of the Dirac operator.
 
 The two constructions are the resolution of a difficulty raised in *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*: the restriction of the scalar form $\mathrm{Sc}(s^{\dagger}t)$ to a minimal left ideal is invariant but **totally isotropic** whenever $\pi^{\dagger}\pi = 0$, so the naive form is not the Hermitian structure of a general spinor module. The spinor adjoint supplies the missing non-degeneracy: it is the choice of a self-adjoint idempotent, equivalently of a Hermitian form on the module of the correct type. The type — orthogonal, symplectic or unitary — is exactly the type of the involution of the algebra, and the classification of the possible forms is the classification of Hermitian forms over a division algebra with involution.
 
@@ -91,7 +91,7 @@ $$
 
 **Proof.** Non-degeneracy follows because $\mathrm{Sc}(s^{\dagger}v t)$ is $\mathrm{Sc}$ composed with the invertible multiplications by $v$ and by the dagger; invariance is $\beta_{v}(us,ut) = \mathrm{Sc}(s^{\dagger}u^{\dagger}v u t) = \mathrm{Sc}(s^{\dagger}v t)$ for $u^{\dagger}v u = v$.
 
-**Corollary (the physical Dirac adjoint).** In the Lorentzian case the stabiliser of a time-like $v_0$ is the maximal compact subgroup $\mathrm{Spin}(m)\subseteq\mathrm{Spin}(1,m)$, and $\beta_{v_0}$ is the $\mathrm{Spin}(m)$-invariant skew-Hermitian pairing whose normalisation by $i$ and by $v_0^{2}$ gives the Hermitian form of the quantum theory; the object $\bar\psi = \psi^{\dagger}v_0$ is the Dirac adjoint of the physics literature, and the Lorentz-invariant bilinear $\bar\psi\chi$ is $\beta_{v_0}$. This is the reason the invariant pairing of the spinor module is indefinite while the form used for the Hilbert space is positive definite on the maximal compact part. The physical reading of $\bar\psi\psi$, of the current and of the mass term is in the physics menu and is not used here.
+**Corollary (the physical Dirac adjoint).** In the Lorentzian case the stabiliser of a time-like $v_0$ is the maximal compact subgroup $\mathrm{Spin}(m)\subseteq\mathrm{Spin}(1,m)$, and $\beta_{v_0}$ is the $\mathrm{Spin}(m)$-invariant skew-Hermitian pairing whose normalisation by $i$ and by $v_0^{2}$ gives the Hermitian form of the quantum theory; the object $\psi^{\dagger}v_0$ is the Dirac adjoint of the physics literature, and the Lorentz-invariant bilinear $\psi^{\dagger}v_0\chi$ is $\beta_{v_0}$. This is the reason the invariant pairing of the spinor module is indefinite while the form used for the Hilbert space is positive definite on the maximal compact part. The physical reading of $\psi^{\dagger}v_0\psi$, of the current and of the mass term is in the physics menu and is not used here.
 
 ### The Dirac Adjoint and the Dirac Operator
 
@@ -125,19 +125,19 @@ In $\mathrm{Cl}_{1,3}(\mathbb{R})$ with $\vec e_x^{2} = 1$ and $\vec e_y^{2} = \
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}R_{\vec e_x},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z} .
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

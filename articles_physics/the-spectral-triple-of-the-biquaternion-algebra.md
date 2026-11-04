@@ -108,7 +108,7 @@ $$
 $$
 with the mass acting on the right through conjugation. The dictionary between the two-sided field and the chiral pair is $\tilde\Psi_R=-i\overline{F}\,\vec e_z$, so the three displays describe one physics: the first is the chirality form, the second the pair operator written once, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added.
 
-**The chirality.** The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign of the double,
+**The chirality.** The chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign of the double,
 $$
 \chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-,
 \qquad
@@ -296,7 +296,7 @@ CE_4C^{-1}=-E_4^{\mathsf T}.
 $$
 Three minus signs and one plus. Uniformity of those signs, not the sign of the square, is where this cell fails the definition of a charge conjugation.
 
-Two of the three signs are reached here, and they come out as a pair. The chirality $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ is Hermitian, and in the coefficient basis of the cells its entries are purely imaginary, so $K$ maps it to $-\chi$; $C$ is real in that basis and commutes with it, hence $J_C\chi J_C^{-1}=C\bar\chi C^{-1}=-\chi$ and $\epsilon''=-1$. The value is not an accident of this frame, but showing that needs the right transformation rule. An antilinear map with matrix $M$, $J\psi=M\bar\psi$, changes frame as $M\mapsto U^{-1}M\bar U$ rather than by conjugation, and with that rule $J_C^2$ and $J_C\chi J_C^{-1}$ are carried to themselves. Transforming $C$ and $K$ separately, as though $J_C$ were a product of two linear factors, gives a different antilinear map and in general a different sign. That is why the block form $\chi=\operatorname{diag}(-I_2,I_2)$, convenient for $D_F$ and for the tables, is not the frame in which to read $\epsilon''$ off the matrix $C$ alone.
+Two of the three signs are reached here, and they come out as a pair. The chirality $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ is Hermitian, and in the coefficient basis of the cells its entries are purely imaginary, so $K$ maps it to $-\chi$; $C$ is real in that basis and commutes with it, hence $J_C\chi J_C^{-1}=C\bar\chi C^{-1}=-\chi$ and $\epsilon''=-1$. The value is not an accident of this frame, but showing that needs the right transformation rule. An antilinear map with matrix $M$, $J\psi=M\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$, changes frame as $M\mapsto U^{-1}M\bar U$ rather than by conjugation, and with that rule $J_C^2$ and $J_C\chi J_C^{-1}$ are carried to themselves. Transforming $C$ and $K$ separately, as though $J_C$ were a product of two linear factors, gives a different antilinear map and in general a different sign. That is why the block form $\chi=\operatorname{diag}(-I_2,I_2)$, convenient for $D_F$ and for the tables, is not the frame in which to read $\epsilon''$ off the matrix $C$ alone.
 
 Two properties of $J_C$ are then immediate. The cell $C$ is unitary, so $J_C$ is an isometry; and $J_C^2=C\bar C=C^2=-1$ because $C$ is real. A rescaling $J_C\mapsto\lambda J_C$ with $|\lambda|=1$ changes neither $J_C^2$, where the factor is $|\lambda|^2=1$, nor $J_C\chi J_C^{-1}$, where the phase cancels. Both signs are therefore properties of the pair $(C,\chi)$, and the pair $(\epsilon,\epsilon'')=(-1,-1)$ is the $n\equiv2$ line of Connes' table, not the $n\equiv4$ one.
 
@@ -449,37 +449,37 @@ This was verified explicitly: the anticommutator vanishes identically, and $D_F^
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The body of this article is written in cells. The gammas are collected here, as a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-They satisfy $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $\{\gamma_5,\gamma_\mu\}=0$, and $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$; $\gamma_0$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
+They satisfy $\gamma_0[\mathbb{M}_-]^2=I_4$, $\gamma_k[\mathbb{M}_-]^2=-I_4$, $\gamma_5[\mathbb{M}_-]^2=I_4$, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0$, and $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-]$; $\gamma_0[\mathbb{M}_-]$ and $\gamma_5[\mathbb{M}_-]$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the reference-frame cell of the chirality, and it is the chirality cell $\chi$ of the body; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$, the difference of the two central idempotents of the complexified algebra, so that $\chi^2=e_t$ while $\tilde\Xi_{\mathrm{ad}}$ itself is the root of $-1$ — that is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$ is the reference-frame cell of the chirality, and it is the chirality cell $\chi$ of the body; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$, the difference of the two central idempotents of the complexified algebra, so that $\chi^2=e_t$ while $\tilde\Xi_{\mathrm{ad}}$ itself is the root of $-1$ — that is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
 
-The dictionary is complex-linear. The four generators of the Euclidean frame all square to $+1$, so over $\mathbb{R}$ they generate $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The real cells of *The Majorana Equation in Biquaternionic Form* are $c_0=R_{\vec e_x}^{\mathrm{pau}}$ and $c_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, one of square $-1$ and three of square $+1$, and those generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$; the Euclidean frame is $E_4=ic_0$ and $E_k=-c_k$, that is the Majorana frame with the time cell multiplied by $i$ and the three spatial cells negated. The corpus's $\mathrm{Cl}_{1,3}$ generators are $ic_\mu$, with the opposite pattern of squares, and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. The gammas are the same cells with the powers of $i$ collected — $\gamma_0=E_4$ and $\gamma_k=-iE_k$ — so they carry the Minkowski pattern of squares: this is the frame of the body's $\chi$, not a second algebra.
+The dictionary is complex-linear. The four generators of the Euclidean frame all square to $+1$, so over $\mathbb{R}$ they generate $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The real cells of *The Majorana Equation in Biquaternionic Form* are $c_0=R_{\vec e_x}^{\mathrm{pau}}$ and $c_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, one of square $-1$ and three of square $+1$, and those generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$; the Euclidean frame is $E_4=ic_0$ and $E_k=-c_k$, that is the Majorana frame with the time cell multiplied by $i$ and the three spatial cells negated. The corpus's $\mathrm{Cl}_{1,3}$ generators are $ic_\mu$, with the opposite pattern of squares, and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. The gammas are the same cells with the powers of $i$ collected — $\gamma_0[\mathbb{M}_-]=E_4$ and $\gamma_k[\mathbb{M}_-]=-iE_k$ — so they carry the Minkowski pattern of squares: this is the frame of the body's $\chi$, not a second algebra.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

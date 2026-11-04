@@ -148,7 +148,7 @@ $$
 -\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k},
 $$
 
-whose coefficients square to $(-1,+1,+1,+1)$. The cell form is kept because it is the one whose Clifford relations are $2g_{\mu\nu}$; the minus sign is carried by the metric there, and is not a separate convention.
+whose coefficients square to $(-1,+1,+1,+1)$. The cell form is kept because it is the one whose anticommutation relations are $2g_{\mu\nu}$; the minus sign is carried by the metric there, and is not a separate convention.
 
 This is the form in which the root condition is solved, not the most general first-order operator: a general constant-coefficient operator $\sum_\mu A_\mu\partial/\partial x_\mu+B$ whose square is $(\Box-\mu^2)I$ has $\{A_\mu,A_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I$ with $\varepsilon=(1,-1,-1,-1)$, so its $A_\mu$ form a Clifford system conjugate to the frame cells, and $\mathsf D$ is the representative of that class. The coefficients are constant because the classification below is a classification of the algebraic form; position-dependent coefficients are a separate problem, taken up in §*What the Root Does Not Carry*.
 
@@ -362,7 +362,7 @@ $$
 -iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
 $$
 
-so the pseudoscalar mass reads $\mu R_{\vec e_z}^{\mathrm{axf}}=i\mu(-iR_{\vec e_z}^{\mathrm{axf}})\leftrightarrow i\mu\chi$ in the biquaternion dictionary; here $i\cdot(-i)=-i^2=+1$ is what cancels the two imaginary units. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; the central element $\chi$ is its central form, and the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative in the reference frame.
+so the pseudoscalar mass reads $\mu R_{\vec e_z}^{\mathrm{axf}}=i\mu(-iR_{\vec e_z}^{\mathrm{axf}})\leftrightarrow i\mu\chi$ in the biquaternion dictionary; here $i\cdot(-i)=-i^2=+1$ is what cancels the two imaginary units. The chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$; the central element $\chi$ is its central form, and the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative in the reference frame.
 
 The term is parity-odd. A parity-odd mass is not the mass of the Dirac equation, and it is not the mass the Standard Model generates. The single root exists, but it is not the physical one.
 
@@ -471,7 +471,7 @@ The identities were recomputed before they were written. The cell frame was buil
 | $(-iR_{\vec e_z}^{\mathrm{axf}})^{2}-I_4$ and $\{-iR_{\vec e_z}^{\mathrm{axf}},iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\}$ | $0$ (exact) |
 | $-iR_{\vec e_z}^{\mathrm{axf}}+R_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | $0$ (exact) |
 | $\mathsf D+R_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$ | $0$ (exact) |
-| Tensor dictionary reproduces the five cells and satisfies the same Clifford relations | $0$ (exact) |
+| Tensor dictionary reproduces the five cells and satisfies the same anticommutation relations | $0$ (exact) |
 | Anticommutant of all four generators | rank $15$, nullity $1$ |
 | $\{\mu R_{\vec e_z}^{\mathrm{axf}},iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\}$ and $(\mu R_{\vec e_z}^{\mathrm{axf}})^2+\mu^2I_4$ | $0$ (exact) |
 | $\mathsf D_{\mathrm{ps},+}^2-(\Box-\mu^2)I_4$ on $100$ random $K$ | $4.0\times10^{-15}$ |
@@ -485,79 +485,79 @@ The numerical checks are checks of polynomial identities at random points. The p
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The five are the frame cells written as matrices:
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $(\gamma_0)^2=+I_4$, $(\gamma_k)^2=-I_4$, $\{\gamma_\mu,\gamma_5\}=0$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The product of the first four is $\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}$, and $i$ times it is $\gamma_5$; the corpus's volume element $-iR_{\vec e_z}^{\mathrm{pau}}$ is $\gamma_5$ itself.
+They satisfy $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $(\gamma_0[\mathbb{M}_-])^2=+I_4$, $(\gamma_k[\mathbb{M}_-])^2=-I_4$, $\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0$ and $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$. The product of the first four is $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}}$, and $i$ times it is $\gamma_5[\mathbb{M}_-]$; the corpus's volume element $-iR_{\vec e_z}^{\mathrm{pau}}$ is $\gamma_5[\mathbb{M}_-]$ itself.
 
 In the tensor frame the same five are the images under $L_{a}R_{b}\mapsto\mathsf M_2(b)^{\mathsf T}\otimes\mathsf M_2(a)$,
 $$
-\gamma_0=\sigma_1\otimes I_2,\qquad
-\gamma_k=i\sigma_2\otimes\sigma_k,\qquad
-\gamma_5=-\sigma_3\otimes I_2,
+\gamma_0[\mathbb{M}_-]=\sigma_1\otimes I_2,\qquad
+\gamma_k[\mathbb{M}_-]=i\sigma_2\otimes\sigma_k,\qquad
+\gamma_5[\mathbb{M}_-]=-\sigma_3\otimes I_2,
 $$
 and the split between the two sides is the cell table of §*Four Generators*.
 
 The root and the mass conditions read in gammas as
 $$
-\mathsf D=i\sum_\mu\gamma_\mu\frac{\partial}{\partial x_\mu}=i\gamma_\mu\frac{\partial}{\partial x_\mu},\qquad
-\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{pau}},\qquad
+\mathsf D=i\sum_\mu\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu}=i\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu},\qquad
+\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5[\mathbb{M}_-]=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{pau}},\qquad
 \mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I,
 $$
 
 In the axis-free display:
 
 $$
-\mathsf D=i\sum_\mu\gamma_\mu\frac{\partial}{\partial x_\mu}=i\gamma_\mu\frac{\partial}{\partial x_\mu},\qquad
-\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{axf}},\qquad
+\mathsf D=i\sum_\mu\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu}=i\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu},\qquad
+\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5[\mathbb{M}_-]=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{axf}},\qquad
 \mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I,
 $$
 
-The only single-square mass term is $B=c\gamma_5$ with $c=\pm i\mu$; the second equality for $\mathsf D_{\mathrm{ps},\pm}$ uses $i\gamma_5=R_{\vec e_z}^{\mathrm{pau}}$.
+The only single-square mass term is $B=c\gamma_5[\mathbb{M}_-]$ with $c=\pm i\mu$; the second equality for $\mathsf D_{\mathrm{ps},\pm}$ uses $i\gamma_5[\mathbb{M}_-]=R_{\vec e_z}^{\mathrm{pau}}$.
 
-The checks of §*Verification*, transcribed into these symbols, are $\{\gamma_\mu,\gamma_\nu\}-2g_{\mu\nu}I_4$, $\gamma_5^2-I_4$, $\{\gamma_5,\gamma_\mu\}$, $\gamma_5-i\gamma_0\gamma_1\gamma_2\gamma_3$ and $(\sum_\mu \gamma_\mu k_\mu)^2-g_{\mu\nu}k_\mu k_\nu I_4$; the first and the last are polynomial identities in the symbol $k$, so they hold for every $k$, not only on shell.
+The checks of §*Verification*, transcribed into these symbols, are $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}-2g_{\mu\nu}I_4$, $\gamma_5[\mathbb{M}_-]^2-I_4$, $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}$, $\gamma_5[\mathbb{M}_-]-i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ and $(\sum_\mu \gamma_\mu[\mathbb{M}_-] k_\mu)^2-g_{\mu\nu}k_\mu k_\nu I_4$; the first and the last are polynomial identities in the symbol $k$, so they hold for every $k$, not only on shell.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
-\mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
 ## Summary
 
 The first-order root of the biquaternion Klein–Gordon operator exists, and its carrier is fixed by the Clifford relation. The root acts on a module of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, whose minimal module is $\mathbb{C}^4$. The biquaternion algebra supplies the three spatial generators $\vec e_x,\vec e_y,\vec e_z$, and no fourth; the fourth (time) generator acts on the multiplicity factor and, in the regular picture, is the right multiplication $R_{i\vec e_x}^{\mathrm{axf}}$, which lies in the commutant $\mathbb{B}_R$. The root therefore lives in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, while the Klein–Gordon operator itself remains central.
