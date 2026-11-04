@@ -6,251 +6,251 @@ The **CPT theorem** is the statement that a relativistic quantum field theory on
 
 This article asks what the biquaternion framework supplies for the theorem. The framework carries **more involutions than the standard four**, and they are easy to conflate. Alongside $C$, $P$ and $T$ the algebra provides the **complex conjugate** $\bar{\cdot}$ (conjugation of the four coefficients), the **quaternion conjugate** ${}^{\natural}$, and the **Hermitian conjugate** ${}^{*}=({}^{\natural})^{\,*}$. Building $C$, $P$ and $T$ therefore requires more than writing three arrays: each must be separated from the algebra's own conjugations, with which it shares the operation of complex conjugation but not the operation's meaning. The known trap, recorded in the companion on the Klein–Gordon equation, is to read a conjugate pair through the two-sector split $\mathbb{M}_+/\mathbb{M}_-$ — the temptation to place a field and its conjugate one in each sector. It is a trap because *none* of the three conjugations exchanges the sectors; the sector swap is multiplication by the central scalar imaginary $i$, which is neither a conjugation nor anti-linear. That fact, and not the notation, is what forbids the identification.
 
-The field is one element of the algebra, $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, where the $L$ part is the $-1$ value of the chirality and the $R$ part the $+1$ value. Two equations act on it, and the article keeps them apart from the first line.
+**The operator, fixed once.** Every derivative in this article is the biquaternionic gradient of *Operator and Calculus Conventions*, §*The Gradient*,
+$$
+\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+$$
 
-- **The one-sided equation.** The dynamics of the algebra is the chiral pair
-  $$
-  \tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\qquad
-  \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
-  $$
-  two first-order equations on the two parts, with massless limit $\tilde{\nabla}\tilde{\Psi}_R=0$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=0$. Each gradient acts by **left** multiplication, so the pair is a one-sided equation in the algebra. Chirality is not an operator of this one-sided form: both gradients multiply on the left, and the chirality is a right multiplication, so the pair has no place to write it.
-- **The two-sided equation.** The same element carries the single equation $(\mathbb{D}-m)\tilde\Psi=0$, where $\mathbb{D}$ is built from **two-sided** cells — a left multiplication for the gradient and a right multiplication for the chirality. This is the equation the three operations are defined on and checked against.
+with its quaternion conjugate and the scalar d'Alembertian
+$$
+\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
+\qquad
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
+$$
 
-The passage between the two is what the two-sided operator theory supplies, and it is the reason the two-sided equation can carry a chirality while the one-sided pair cannot. We build each of $C$, $P$ and $T$ explicitly, verify each one separately against the free equation, and then check the composition $CPT$ explicitly rather than inferring it from the three factors. The composition check is not redundant, for a reason that is easy to miss: $C$ and $T$ are **anti-linear**, so the internal factor of the product is $\eta_C\eta_P^*\eta_T^*$, not $\eta_C\eta_P\eta_T$, and the two differ whenever the phases are not fixed by the conjugation.
+the last read on the material sector $\mathbb{M}_-$, where $Q_t=ict'$, as $\Delta-c^{-2}\partial^2/\partial t'^2$. The gradient is an element with derivative coefficients, it acts by **left** multiplication, and no other action of it is meant anywhere below. No second derivative operator is introduced, and no list of generators is used.
 
-We work in the **cell frame** of the canonical-quantization and spin–statistics articles. With $L_a\tilde\Psi=a\tilde\Psi$, $R_b\tilde\Psi=\tilde\Psi b$ and the two-sided cell $L_aR_b$, so that $L_aR_b\tilde\Psi=a\tilde\Psi b$, the four generator cells of the field are
+**The field, its two parts and the pair.** The field is one element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, and the dynamics is the **chiral pair**
 $$
-G_0=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-G_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-G_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-G_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
 $$
-Each carries one factor of $i$, and naming them $G_\mu$ is what keeps that factor from being written out again in every product. The factor is structural: it is what gives the four generators the metric $g$ rather than its negative, since without it the first would square to $-1$ and the other three to $+1$.
-$$
-G_0^{2}=1,\qquad G_1^{2}=G_2^{2}=G_3^{2}=-1,\qquad G_\mu G_\nu=-G_\nu G_\mu\quad(\mu\ne\nu),
-$$
-which are the cell relations of the sign vector $\varepsilon=(1,-1,-1,-1)$. A product of two generators is where $i^{2}=-1$ is spent: the two factors of $i$ give $-1$, and that sign combines with $\vec e_k^{2}=-e_t$ and with $\vec e_j\vec e_k=\pm\vec e_l$ so that the product is again a single cell, this time with no $i$ in it. The three such products are the three spatial units,
-$$
-G_2G_3=L_{\vec e_x}^{\mathrm{axf}},\qquad G_3G_1=L_{\vec e_y}^{\mathrm{axf}},\qquad G_1G_2=L_{\vec e_z}^{\mathrm{axf}},
-$$
-and the product of all four is the volume element, $G_0G_1G_2G_3=-R_{\vec e_z}^{\mathrm{axf}}$. This is used repeatedly below: the generators themselves are not written out again, only $G_\mu$ and the plain cells $L_aR_b$ that the internal factors need. The closing comparison section is the only place this article writes the other notation, and it uses it for exactly these four cells.
 
-The chirality cell and the volume element are
+two first-order equations, one per part, with massless limit $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$. Written once, the two lines are the pair operator of *Operator and Calculus Conventions*, §*The Gradient*, on $\mathbb{B}\oplus\mathbb{B}$,
 $$
-\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad
-\omega=-R_{\vec e_z}^{\mathrm{axf}},\qquad
-\Gamma=i\omega,\qquad
-\Gamma^2=1.
+\mathbb{D}(\Psi_L,\Psi_R)=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),\qquad \mathbb{D}^2=\Box I,\qquad(\mathbb{D}-m)\Psi=0,
 $$
-and $\Gamma$ anticommutes with each $G_\mu$. The framework identifies $\omega$ with the scalar imaginary: the identification is a reading of the conventions, and what it buys here is one line about the two parts. Since $\omega=-i\Gamma$, the volume element multiplies $\tilde\Psi_L$ by $i$ and $\tilde\Psi_R$ by $-i$, and the chirality cell takes the value $-1$ on the first part and $+1$ on the second. That is the whole of what the article needs about either cell. Every derivative in a cell display below is with respect to $x_\mu=(t',x,y,z)$; the $ict'$ normalization $Q_t=ict'$ is used only where it is named. We work in natural units $\hbar=c=1$ except in the mass-shell relation, and borrow the plane-wave amplitudes and the spin sums of the solutions article unchanged.
+
+and that operator is the two lines written once, not a new object. The pair cannot be shortened to one equation on one part, because the square of the gradient is not scalar: $e_t$ commutes with the spatial units and the mixed derivatives add,
+$$
+\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2e_t\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\partial Q_k},
+$$
+
+whose last term is a pure vector. The free equation therefore stays first order in one part, $\tilde\nabla\tilde\Psi_R=0$, the massive equation is the pair, and this algebra carries no one-field first-order massive equation.
+
+**The chirality is a right action, and the gradient cannot see it.** The chirality is the right multiplication by the element
+$$
+\omega=-\vec e_z,\qquad\omega^2=-e_t,\qquad \Gamma=i\omega=-i\vec e_z,\qquad\Gamma^2=e_t,
+$$
+
+so that the **chirality operator** is $\psi\mapsto\psi\Gamma=-i\psi\vec e_z$, a right action written out and not a glyph for a map. Right multiplication by $\omega$ has the two eigenvalues $\pm i$, and its two eigenspaces are the two parts: $\tilde\Psi_L$ is the part on which $\omega$ multiplies by $i$, which is the $-1$ value of $\Gamma$, and $\tilde\Psi_R$ is the part on which $\omega$ multiplies by $-i$, the $+1$ value. The identification sometimes made between $\omega$ and the scalar imaginary is a reading of the conventions and not an identity of elements: $\omega$ is an element with $\omega^2=-e_t$, right multiplication by it is $+i$ on one part and $-i$ on the other, and the scalar imaginary $i$ stays central and remains available. Every left multiplication commutes with every right multiplication, so the gradient preserves each part, and the chirality has no place in the pair. That is the reason the pair carries no chirality operator, and it is why the discrete operations below are defined on the pair and their chirality is read from **which part each one carries the field into**.
+
+The field is one element of the algebra and not a column, and nothing is introduced to hold the two parts. Every derivative in a display below belongs to the gradient and is taken with respect to the coordinates $Q_\mu$; the $ict'$ normalization $Q_t=ict'$ is used only where it is named, and a derivative with respect to $x_\mu=(t',x,y,z)$ is written out when it is meant. We work in natural units $\hbar=c=1$ except in the mass-shell relation, and borrow the plane-wave amplitudes and the spin sums of the solutions article unchanged.
 
 The division between what is established and what is only transcribed is kept explicit throughout.
 
-- **Established, and recomputed below.** The three operations on the field are
-  $$
-  C[\tilde\Psi]=-\vec e_y\,\tilde\Psi^{J}\,\vec e_y,\qquad
-  P[\tilde\Psi](t',\vec x)=i\,\tilde\Psi(t',-\vec x)\,\vec e_x,\qquad
-  T[\tilde\Psi](t',\vec x)=-\vec e_y\,\tilde\Psi^{J}(-t',\vec x),
-  $$
-  with $\vec x=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The mark ${}^{J}$ denotes the **conjugation of the field**: $J$ is the anti-linear map this article's realization supplies, and $\tilde\Xi^{J}$ is $J$ applied to the element $\tilde\Xi$. It is fixed up to a scalar by its action on the four generator cells, where it keeps three of them and negates the second spatial one,
-  $$
-  G_0^{J}=G_0,\qquad G_1^{J}=G_1,\qquad G_2^{J}=-G_2,\qquad G_3^{J}=G_3 .
-  $$
-  $J$ is not one of the algebra's three conjugations, and no multiplication by an element realizes it; the paragraph on the realization in the section on charge conjugation returns to this. The three internal factors are
-  $$
-  \eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-  \eta_P=G_0=iR_{\vec e_x}^{\mathrm{axf}},\qquad
-  \eta_T=-L_{\vec e_y}^{\mathrm{axf}},
-  $$
-  which square to $\eta_C^2=1$, $\eta_P^2=1$ and $\eta_T^2=-1$. Each operation maps every solution of the free equation $(\mathbb{D}-m)\tilde\Psi=0$ to a solution, verified separately on the differential equation, on three on-shell momenta and on a superposition of both frequency branches. The field map $T$ is anti-linear, $T[i\tilde\Psi]=-i\,T[\tilde\Psi]$, so it conjugates the scalar imaginary; the operator it induces on the mode algebra is anti-unitary. $C$ and $P$ anticommute with $\Gamma$ and exchange the two parts; $T$ commutes with $\Gamma$ and preserves them; hence $CPT$ preserves chirality. $C$ exchanges the two frequency branches, so at the operator level it exchanges the particle and antiparticle modes. Of the internal factors, $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$ is a left multiplication by the element $-\vec e_y\in\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$; $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ multiplies on both sides and $\eta_P=iR_{\vec e_x}^{\mathrm{axf}}$ on the right, so neither is a left multiplication by an element of $\mathbb{B}$. The composition $\Theta=C\circ P\circ T$ acts as $\Theta[\tilde\Psi](x)=\eta_{CPT}\,\tilde\Psi(-x)$ with $\eta_{CPT}=\eta_C\eta_P^{J}\eta_T^{J}$; in the phase convention above,
-  $$
-  \eta_{CPT}=\eta_C\eta_P\eta_T=\Gamma=i\omega .
-  $$
+- **Established, and recomputed below.** The field's conjugation is the algebra's conjugation of the coefficients, $J=\bar{\cdot}$, an anti-linear involution and an automorphism, $\overline{ab}=\bar a\,\bar b$. The three operations on the pair are
+    $$
+    C[\tilde\Psi]=\bigl(\tilde\Psi_R^{\,J},\ \tilde\Psi_L^{\,J}\bigr),\qquad
+    P[\tilde\Psi](t',\vec x)=\bigl(\tilde\Psi_R(t',-\vec x),\ \tilde\Psi_L(t',-\vec x)\bigr),
+    $$
+    $$
+    T[\tilde\Psi](t',\vec x)=\bigl(-\tilde\Psi_L^{\,J}(-t',\vec x),\ \tilde\Psi_R^{\,J}(-t',\vec x)\bigr),
+    $$
+    with $\vec x=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. $C$ and $P$ **exchange the two parts** and carry no internal factor beyond a scalar; $T$ **keeps the two parts** and its internal factor is the chirality, $-1$ on the left part and $+1$ on the right part, up to an overall scalar. Each operation maps every solution of the pair to a solution, verified on eight solutions per momentum at three on-shell momenta and on the differential equation itself, at residual $1.8\times10^{-15}$ or smaller. $C$ and $T$ are anti-linear, $C[i\tilde\Psi]=-i\,C[\tilde\Psi]$ and $T[i\tilde\Psi]=-i\,T[\tilde\Psi]$, and $P$ is linear; the operator induced on the mode algebra by $T$ is anti-unitary and the one induced by $C$ is unitary, which is transcribed. The composition
+    $$
+    \Theta=C\circ P\circ T,\qquad \Theta[\tilde\Psi](x)=\Gamma\,\tilde\Psi(-x),
+    $$
+    is linear, reverses the spacetime argument, and preserves the two parts, its internal factor being the chirality itself.
 - **Transcribed, not derived.** The CPT theorem itself, together with the hypotheses that prove it: locality, Hermiticity of the Lagrangian, Lorentz invariance, positivity and spin–statistics. The computation below exhibits the composition as a symmetry of *one* free equation; it does not show that the composition survives interactions, which is the content of the theorem. Nothing here derives CPT from the biquaternion algebra. Also transcribed is the classification of the eight operations as the identity, the algebra's three conjugations and their composites with charge conjugation, which is recorded below as a second interpretation of the same eight operations and as the source of their $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group structure.
-- **Gap, left visible.** The framework does not fix a $\mathbb{B}$-intrinsic form of $C$ and $P$: neither of their internal factors is a left multiplication by an element of $\mathbb{B}$, so they are operations of the cell algebra rather than inner operations of the biquaternion algebra. Whether they admit a $\mathbb{B}$-intrinsic realization is unbuilt. Separately, the parent's mass term is the linear chiral pair of the Dirac article, whose two-sided form is the massive Dirac equation verified above to be $C$-invariant; the algebra's anti-linear object is the real structure $\flat=-{}^{*}$, a separate Majorana-type pairing, and whether $C$ is a symmetry of the single-field equation built on $\flat$ is the open reading developed in the neutrino companion.
+- **Gap, left visible.** The two operations that exchange the parts are carried by the exchange itself: no multiplication by an element of $\mathbb{B}$, on either side, exchanges the two parts, since every multiplication preserves them. So $C$ and $P$ are not inner operations of the biquaternion algebra, and whether they admit a $\mathbb{B}$-intrinsic realization, on an enlarged structure, is unbuilt. Separately, the parent's mass term is the linear chiral pair of the Dirac article, whose two-sided form is the massive Dirac equation verified above to be $C$-invariant; the algebra's anti-linear object is the real structure $\flat=-{}^{*}$, a separate Majorana-type pairing, and whether $C$ is a symmetry of the single-field equation built on $\flat$ is the open reading developed in the neutrino companion.
 
 ## The Discrete Operations and the Algebra
 
 Three different structures are in play, and the article's first task is to keep them apart.
 
-### The One-Sided Equation and the Two-Sided Equation
+### The One-Sided Equation and the Pair
 
-The two equations are the two levels of one dynamics, and the notation of each is closed.
+The two readings of one dynamics are the pair and the pair operator, and the notation of each is closed.
 
-**The one-sided equation.** The gradient $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ acts by left multiplication, and its quaternion conjugate $\tilde{\nabla}^{\natural}$ squares with it to the scalar d'Alembertian, $\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\Box$. The chiral pair is the first-order dynamics of the algebra, and its two members are one-sided: no right multiplication appears in it, so no chirality operator appears either.
+**The pair.** The gradient $\tilde\nabla$ acts by left multiplication, and its quaternion conjugate squares with it to the scalar d'Alembertian. The chiral pair is the first-order dynamics of the algebra, and its two members are one-sided: no right multiplication appears in it, so no chirality operator appears either. Each member is first order, both are linear in the field, and the mass is the only term that carries the field from one part to the other. Applying $\tilde\nabla^{\natural}$ to the first member and substituting the second gives
+$$
+\tilde\nabla^{\natural}\tilde\nabla\tilde\Psi_R=\Box\tilde\Psi_R=m\,\tilde\nabla^{\natural}\tilde\Psi_L=m^2\tilde\Psi_R,
+\qquad\text{that is}\qquad\bigl(\Box-m^2\bigr)\tilde\Psi_R=0,
+$$
 
-**The two-sided equation.** The two members of the pair are one operator on one element. In the cell frame the operator reads
+and the same holds for $\tilde\Psi_L$: each part obeys the Klein–Gordon equation, and the completion of one part is the other,
 $$
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\,\partial/\partial t'-\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,\partial/\partial x_k ,
+\tilde\Psi_L=\frac{1}{m}\tilde\nabla\tilde\Psi_R,\qquad\tilde\Psi_R=\frac{1}{m}\tilde\nabla^{\natural}\tilde\Psi_L .
 $$
-and written as an action, for an element $\tilde\Psi$,
-$$
-\mathbb{D}\tilde\Psi=-\frac{\partial\tilde\Psi}{\partial t'}\,\vec e_x-\sum_k\vec e_k\,\frac{\partial\tilde\Psi}{\partial x_k}\,\vec e_y ,
-$$
-with $\mathbb{D}^{2}=-\Box$. The spatial terms multiply on both sides, the time term is a pure right multiplication, and the frame is completed by the chirality, itself a pure right multiplication, $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$. The four minus signs of the cell form are what the factors of $i$ inside the generators contribute, since $-R_{\vec e_x}^{\mathrm{axf}}=iG_0$ and $-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=iG_k$; written in the generators, the operator is the single contraction
-$$
-\mathbb{D}=i\,G_\mu\,\partial/\partial x_\mu=i\Bigl(G_0\,\partial/\partial t'+\sum_kG_k\,\partial/\partial x_k\Bigr),
-$$
-which has no metric sign anywhere because the metric is already in the generators, $G_0^{2}=1$ and $G_k^{2}=-1$. On the plane wave $e^{-ip\cdot x}$ with $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$ the factors of $i$ cancel again, and the operator acts on the amplitude by
-$$
-A(\vec p)=G_0E_{\vec p}-\sum_k G_kp_k ,
-$$
-the amplitude that appears in the verification below.
 
-The two-sided operator theory is what lets the two levels be written in one frame, and it is also what separates them. The cells $L_aR_b$ carry the left multiplication of the one-sided equation and the right multiplication of the chirality: the four generators are of that form, the chirality $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ is a pure right multiplication, and the mass is the scalar $m$ times the identity. A one-sided equation has no room for a pure right multiplication, so chirality belongs to the two-sided equation; a two-sided cell can carry both. **The discrete operations below are operations on the two-sided equation, not on the one-sided pair.**
+**The pair operator.** The two members are one operator on the pair, $\mathbb{D}(\Psi_L,\Psi_R)=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$, with $\mathbb{D}^2=\Box I$ because the two compositions $\tilde\nabla\tilde\nabla^{\natural}$ and $\tilde\nabla^{\natural}\tilde\nabla$ are both the same scalar. The massive equation is $(\mathbb{D}-m)\Psi=0$, and its two components are the pair. Nothing else is meant by a two-sided operator in this article: the operator is the pair written once, it contains no matrix generator, and its carrier is the pair $(\Psi_L,\Psi_R)\in\mathbb{B}\oplus\mathbb{B}$.
 
-**Operators, not elements.** The sixteen products of the four generators span a real algebra of dimension sixteen, and the sixteen two-sided cells $L_{a}R_{b}$ span another of the same dimension. Both are sets of operators on the field, while the field is an element. The three spatial units appear among the cells as the pure left multiplications $L_{\vec e_k}$, and the volume element as $-R_{\vec e_z}$; the field's two parts appear in neither, because they are the two values of the chirality, which is a cell and not an entry of anything.
+**The plane wave.** On $e^{-ip\cdot x}$ with $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$, the gradient acts by left multiplication by its symbol
+$$
+\tilde K=-E_{\vec p}\,e_t+i\vec p,\qquad
+\tilde K^{\natural}=-E_{\vec p}\,e_t-i\vec p,\qquad
+\tilde K^{\natural}\tilde K=E_{\vec p}^2-\vec p^2=m^2 ,
+$$
+
+the last on the mass shell. The symbol is an element of the algebra, its square is not scalar, and its quaternion norm is the mass shell. This is the amplitude used in the verification below.
+
+### The Two Parts, the Sides, and What No Element Does
+
+**The sides are position.** The gradient multiplies on the left, $\tilde\nabla\tilde\Psi$; the chirality multiplies on the right, $\tilde\Psi\Gamma$. A left multiplication and a right multiplication commute, and that single fact decides the structure of the article: the pair's dynamics is blind to the chirality, and the chirality is a separate right action read on the field.
+
+**The parts are preserved by every multiplication.** For any element $\tilde a$, the products $\tilde a\tilde\Psi_L$ and $\tilde\Psi_L\tilde a$ lie in the left part, and likewise for the right part, because both eigenspaces of right multiplication by $\omega$ are stable under every multiplication. So no multiplication by an element exchanges the two parts. The only things that exchange them are the conjugations composed with the exchange itself, which is what $C$ and $P$ are.
+
+**Operators, not elements.** The two parts are two values read from the chirality, and the field is one element; a map of the field is a combination of a conjugation, a reflection of the argument, and the exchange of the two parts. The exchange is not a multiplication, and it is the one ingredient of $C$ and $P$ that the algebra does not supply.
 
 ## The Three Operations Built Explicitly
 
-Let $\tilde\Psi$ solve the free equation $(\mathbb{D}-m)\tilde\Psi=0$, with $\mathbb{D}$ the two-sided operator above. A discrete operation is a map $\tilde\Psi\mapsto\tilde\Psi_2$ whose output also solves the equation. We take the operations in the standard form: $C$ is local and anti-linear, $P$ is a spatial reflection and linear, $T$ is a time reflection and anti-linear. Each is defined by an internal cell $\eta$ fixed by the requirement that the transformed field satisfy the same equation, and the requirement determines $\eta$ up to a phase, which is a convention.
+Let $\tilde\Psi$ solve the pair, with $m$ the mass. A discrete operation is a map $\tilde\Psi\mapsto\tilde\Psi_2$ whose output also solves the pair. We take the operations in the standard form: $C$ is local and anti-linear, $P$ is a spatial reflection and linear, $T$ is a time reflection and anti-linear. Each is defined by the part it carries the field into, the conjugation it applies, and an internal factor fixed by the requirement that the transformed field satisfy the same pair; that requirement determines the factor up to a nonzero scalar multiplying both parts, which is a convention.
 
-The three conditions are commutation conditions, because each internal cell is invertible. The generators are $G_\mu$, $\mu=0,1,2,3$, and $G_\mu^{J}$ is the conjugate of $G_\mu$ under the field's conjugation. For a field map of the form $\tilde\Psi\mapsto\eta\,\tilde\Psi^{J}(\Lambda x)$ the transformed field solves the equation precisely when
-$$
-\eta^{-1}G_\mu\,\eta=\pm\,G_\mu^{J}
-$$
-holds on each generator, the sign being fixed by the reflection of the argument and the conjugate present because $C$ and $T$ are anti-linear; for parity, which is linear, the same test reads $\eta^{-1}G_\mu\eta=\pm G_\mu$ with no conjugate. Since each $\eta$ squares to $\pm1$ and is therefore its own inverse up to sign, the identity reduces on each generator to a commutation or an anticommutation, which is an algebraic fact about the cells and does not depend on the realization. The conjugate signs are the ones the field's conjugation gives,
-$$
-G_0^{J}=G_0,\qquad G_1^{J}=G_1,\qquad G_3^{J}=G_3,\qquad G_2^{J}=-G_2,
-$$
-in the realization used here: three of the four generators are fixed and the second spatial one is negated.
+The test is a substitution. Because the two members of the pair differ by the quaternion conjugate of the gradient, a map that exchanges the parts trades one member for the other, and that is the whole mechanism of $C$ and $P$: on $e^{-ip\cdot x}$ the exchange turns $\tilde K$ into $\tilde K^{\natural}$ and $\tilde K^{\natural}$ into $\tilde K$, which is exactly the passage from one member to the other, and no internal factor is left over. A map that keeps the parts leaves the members in place, and the conjugation and the reflection must then cancel: the conjugated symbol is $\bar{\tilde K}=\tilde K^{\natural}$, while the time reflection carries $E_{\vec p}$ to $-E_{\vec p}$, so the transformed field carries $-\bar{\tilde K}$ where the member needs $\bar{\tilde K}$. The deficit is the sign $-1$, and it must be supplied on exactly one of the two parts, which is what the chirality does. That a relative sign is available at all is the reason the second member of the pair carries the quaternion conjugate of the gradient.
 
 ### Charge conjugation
 
 Define
 $$
-C[\tilde\Psi]=\eta_C\,\tilde\Psi^{J}=-\vec e_y\,\tilde\Psi^{J}\,\vec e_y,\qquad \eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+C[\tilde\Psi]=\bigl(\tilde\Psi_R^{\,J},\ \tilde\Psi_L^{\,J}\bigr),
 $$
-The equation is complex-conjugated, so the condition on the generators is $\eta_C^{-1}G_\mu\eta_C=-G_\mu^{J}$. It holds because $\eta_C$ **anticommutes** with the three generators the conjugation fixes and **commutes** with the one it negates:
-$$
-\eta_C^{-1}G_0\,\eta_C=-G_0,\qquad
-\eta_C^{-1}G_1\,\eta_C=-G_1,\qquad
-\eta_C^{-1}G_2\,\eta_C=+G_2,\qquad
-\eta_C^{-1}G_3\,\eta_C=-G_3 .
-$$
-Because $\tilde\Psi^{J}$ enters, $C$ is anti-linear. The internal factor carries a right multiplication by $\vec e_y$, which anticommutes with the right multiplication by $\vec e_z$ that $\Gamma$ carries: charge conjugation flips chirality.
 
-**The representative depends on the realization.** The condition above fixes $\eta_C$ only inside a realization of the generators, meaning a choice of the conjugation that $\tilde\Psi^{J}$ denotes. This article's realization is the cell frame, where the conjugation is the anti-linear map that carries $\tilde\Psi_L$ onto the $R$ part. The same cells read against the **coefficient conjugation** of the algebra give a different answer: every generator $iL_{a}R_{b}$ is purely imaginary, so that conjugation negates all four, the condition reduces to a commutation requirement, and *every* nonzero scalar satisfies it; the involution condition $\eta_C^{2}=1$ then narrows the scalar to $\pm1$. Neither formula may be carried across the change of conjugation: $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ conjugates through $\tilde\Psi^{J}$, and the two conjugations do not agree on which cells they fix. Writing $-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $\eta_C$ is right; reading that cell against the coefficient conjugation instead of the field's conjugation is the error this paragraph exists to prevent.
+with $J=\bar{\cdot}$ the conjugation of the coefficients. The equation is complex-conjugated and the two parts are exchanged, so the first member becomes the second and the second becomes the first: on the symbol,
+$$
+\overline{\tilde K\Psi_R}=\bar{\tilde K}\,\bar\Psi_R=\tilde K^{\natural}\bar\Psi_R ,
+$$
+
+because the coefficients $E_{\vec p}$ and $\vec p$ are real, so that $\bar{\tilde K}=\tilde K^{\natural}$. Charge conjugation is therefore the conjugation alone, with the exchange and no internal factor:
+$$
+C:\ (\tilde\Psi_L,\tilde\Psi_R)\longmapsto(\tilde\Psi_R^{\,J},\tilde\Psi_L^{\,J}),\qquad C^2=\mathrm{id}.
+$$
+
+Because $\tilde\Psi^{J}$ enters, $C$ is anti-linear, and the operator it induces on the mode algebra is unitary. It exchanges the two parts, and therefore flips the chirality.
+
+**The conjugation is the algebra's.** $\bar{\cdot}$ is an anti-linear automorphism of $\mathbb{B}$, $\overline{ab}=\bar a\,\bar b$, of order two, and it preserves each of the two parts because it commutes with right multiplication by $\omega$. It is not the quaternion conjugate, which is linear and reverses the order of a product, and it is not the Hermitian conjugate, which is $\bar{\cdot}$ followed by ${}^{\natural}$ and reverses the order as well. Verified on a random pair of elements: order two, automorphism and anti-linearity at residual $0$, and $\natural=\bar{\cdot}\circ{}^{*}$ at residual $0$.
+
+**The representative depends on the conjugation.** The condition above fixes the internal factor only inside a choice of the anti-linear map that $\tilde\Psi^{J}$ denotes. This article's choice is the conjugation of the coefficients, and it is the one that carries each member of the pair onto the other. Read against the quaternion conjugate instead, which is linear and does not interchange the two members, the same exchange fails: the residual of the pair on the transformed field is $6.0$ for $m=3$ and $\vec p=(1,2,2)$, not zero. Neither formula may be carried across a change of conjugation, and the conjugation is therefore stated once, here, and used everywhere below.
 
 ### Parity
 
 Define
 $$
-P[\tilde\Psi](t',\vec x)=\eta_P\,\tilde\Psi(t',-\vec x)=i\,\tilde\Psi(t',-\vec x)\,\vec e_x,\qquad \eta_P=G_0=iR_{\vec e_x}^{\mathrm{axf}}.
+P[\tilde\Psi](t',\vec x)=\bigl(\tilde\Psi_R(t',-\vec x),\ \tilde\Psi_L(t',-\vec x)\bigr).
 $$
-Only the spatial derivatives change sign, and the field is not conjugated, so the condition is $\eta_P^{-1}G_0\eta_P=G_0$ and $\eta_P^{-1}G_k\eta_P=-G_k$ for the three spatial generators. It holds because $\eta_P$ **commutes** with the time generator and **anticommutes** with each spatial one:
+
+Only the spatial derivatives change sign, the field is not conjugated, and the two parts are exchanged. On the symbol the reflection sends $\tilde K=-E_{\vec p}e_t+i\vec p$ to $-E_{\vec p}e_t-i\vec p=\tilde K^{\natural}$, so the reflected first member is the second member at the reflected argument, and the reflected second member is the first:
 $$
-\eta_P^{-1}G_0\,\eta_P=G_0,\qquad
-\eta_P^{-1}G_k\,\eta_P=-G_k\quad(k=1,2,3).
+P:\ (\tilde\Psi_L,\tilde\Psi_R)(t',\vec x)\longmapsto(\tilde\Psi_R,\tilde\Psi_L)(t',-\vec x),\qquad P^2=\mathrm{id}.
 $$
-Parity is linear, and since $\eta_P$ is a right multiplication it anticommutes with $\Gamma$: parity flips chirality.
+
+Parity is linear, it keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$, and it exchanges the two parts: parity flips the chirality.
 
 ### Time reversal
 
 Define
 $$
-T[\tilde\Psi](t',\vec x)=\eta_T\,\tilde\Psi^{J}(-t',\vec x)=-\vec e_y\,\tilde\Psi^{J}(-t',\vec x),\qquad \eta_T=-L_{\vec e_y}^{\mathrm{axf}}=G_1G_3.
+T[\tilde\Psi](t',\vec x)=\bigl(-\tilde\Psi_L^{\,J}(-t',\vec x),\ \tilde\Psi_R^{\,J}(-t',\vec x)\bigr).
 $$
-The time derivative changes sign, the spatial derivatives do not, and the field is conjugated, so the condition is $\eta_T^{-1}G_0\eta_T=G_0^{J}$ and $\eta_T^{-1}G_k\eta_T=-G_k^{J}$. It holds because $\eta_T$ **commutes** with the time generator and with the second spatial one, and **anticommutes** with the first and third:
+
+The time derivative changes sign, the spatial derivatives do not, and the field is conjugated. The parts are not exchanged, so the internal factor is what must carry the condition, and the requirement fixes it:
 $$
-\eta_T^{-1}G_0\,\eta_T=G_0,\qquad
-\eta_T^{-1}G_2\,\eta_T=G_2,\qquad
-\eta_T^{-1}G_1\,\eta_T=-G_1,\qquad
-\eta_T^{-1}G_3\,\eta_T=-G_3 .
+T:\ (\tilde\Psi_L,\tilde\Psi_R)(t',\vec x)\longmapsto\bigl(-\tilde\Psi_L^{\,J},\ \tilde\Psi_R^{\,J}\bigr)(-t',\vec x),\qquad T^2=\mathrm{id}.
 $$
-Since $\eta_T$ is a left multiplication, it commutes with $\Gamma$: time reversal preserves chirality. Note that $\eta_T^{2}=-1$, so the internal factor is a complex structure on the field; only the operation is of order two up to the free phase.
+
+The factor $-1$ on the left part and $+1$ on the right part is the chirality, $\Gamma$ up to an overall scalar, and it is not free: with the same sign on the two parts the transformed field does not solve the pair, the residual being $8.5$ for $m=3$ and $\vec p=(1,2,2)$. Since the factor is diagonal on the two parts, time reversal preserves the chirality.
+
+**Why the factor is the chirality.** Under $t'\mapsto-t'$ the symbol becomes $+E_{\vec p}e_t+i\vec p$, which is $-\bar{\tilde K}$, and the conjugated field carries $\bar{\tilde K}$. The two differ by the sign that the time reflection puts on the $e_t$ term, and that sign is the one the chirality supplies on the two parts: the left part carries $-1$ and the right part $+1$, and the product of the two signs is what restores the member. The internal factor is therefore not a scalar but the chirality, and $\Gamma$ is a right multiplication by the element $-i\vec e_z$, which is a multiplication by an element of the algebra and needs nothing further.
 
 ### $T$ is anti-linear
 
-The conjugation in $T$ is not a calculational convenience; it is what makes the field map anti-linear, the classical counterpart of the anti-unitary operator. With $i$ the scalar imaginary,
+The conjugation in $T$ is not a calculational convenience; it is what makes the field map anti-linear, the classical counterpart of the anti-unitary operator. With $i$ the scalar imaginary and $J=\bar{\cdot}$,
 $$
-T[i\tilde\Psi]=\eta_T(i\tilde\Psi)^{J}=\eta_T(-i)\tilde\Psi^{J}=-i\,\eta_T\tilde\Psi^{J}=-i\,T[\tilde\Psi].
+T[i\tilde\Psi]=T\bigl[(i\tilde\Psi_L,\ i\tilde\Psi_R)\bigr]=\bigl(-(-i)\tilde\Psi_L^{\,J},\ (-i)\tilde\Psi_R^{\,J}\bigr)=-i\bigl(-\tilde\Psi_L^{\,J},\ \tilde\Psi_R^{\,J}\bigr)=-i\,T[\tilde\Psi].
 $$
-Both $C$ and $T$ are anti-linear, and both conjugate the scalar imaginary. The difference between them appears when the field map is promoted to an operator on the mode algebra: the operator induced by $T$ is anti-unitary, while the operator induced by $C$ is unitary. The reason is that $T$ reverses the sign of the evolution phase $e^{-iHt}$, and the conjugation is what turns the reversed evolution into a symmetry; $C$ only exchanges the particle and antiparticle labels at fixed energy, so its induced operator is linear. This article constructs the field maps, so it records the anti-linearity of both and leaves the mode operators aside. The framework's single scalar imaginary $i$ — the same $i$ that appears in the $ict'$ gradient and in the volume element $\omega$ — is exactly what the conjugation negates. A time reversal written without the conjugation (as $T:\tilde\Psi\mapsto\eta_T\tilde\Psi(-t',\vec x)$) is a different, linear map, and is *not* a symmetry of the Dirac equation.
 
-The three operations are collected below. The last entry of each row records the chirality action that follows from the internal cell.
+Both $C$ and $T$ are anti-linear, and both conjugate the scalar imaginary. The difference between them appears when the field map is promoted to an operator on the mode algebra: the operator induced by $T$ is anti-unitary, while the operator induced by $C$ is unitary. The reason is that $T$ reverses the sign of the evolution phase $e^{-iHt}$, and the conjugation is what turns the reversed evolution into a symmetry; $C$ only exchanges the particle and antiparticle labels at fixed energy, so its induced operator is linear. This article constructs the field maps, so it records the anti-linearity of both and leaves the mode operators aside. The framework's single scalar imaginary $i$ — the same $i$ that appears in the gradient through $Q_t=ict'$ and in the chirality $\Gamma=i\omega$ — is exactly what the conjugation negates. A time reversal written without the conjugation, as $\tilde\Psi\mapsto(-\tilde\Psi_L,\tilde\Psi_R)(-t',\vec x)$, is a different, linear map, and is *not* a symmetry of the pair.
 
-| Operation | Action on $\tilde\Psi$ | Internal cell | Linear? | Chirality |
+The three operations are collected below. The last entry of each row records the chirality action that follows from the part the field is carried into.
+
+| Operation | Action on $(\tilde\Psi_L,\tilde\Psi_R)$ | Internal factor | Linear? | Chirality |
 |---|---|---|---|---|
-| $C$ | $-\vec e_y\,\tilde\Psi^{J}\,\vec e_y$ | $-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | anti-linear | flips |
-| $P$ | $i\,\tilde\Psi(t',-\vec x)\,\vec e_x$ | $G_0$ | linear | flips |
-| $T$ | $-\vec e_y\,\tilde\Psi^{J}(-t',\vec x)$ | $-L_{\vec e_y}^{\mathrm{axf}}$ | anti-linear | preserves |
+| $C$ | $(\tilde\Psi_R^{\,J},\tilde\Psi_L^{\,J})$ | $1$ | anti-linear | flips |
+| $P$ | $(\tilde\Psi_R,\tilde\Psi_L)(t',-\vec x)$ | $1$ | linear | flips |
+| $T$ | $(-\tilde\Psi_L^{\,J},\tilde\Psi_R^{\,J})(-t',\vec x)$ | $\Gamma$ | anti-linear | preserves |
 
-Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not fixed by the requirement that the equation be preserved; only the commutation conditions are, and they fix the internal factor only up to an arbitrary nonzero complex multiple. Second, the individual phases are not observable; what is observable is the composition, and changing a phase changes the internal factor of the composition, which is why the composition must be checked independently (next section).
+Two remarks on conventions. First, the phases are not fixed by the requirement that the pair be preserved; only the exchange, the conjugation and the relative sign are, and a nonzero scalar multiplying both parts is arbitrary. Second, the individual phases are not observable; what is observable is the composition, and changing a scalar phase changes the internal factor of the composition, which is why the composition must be checked independently, in the next section.
 
 ## Each Operation Preserves the Free Equation
 
-The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was the general solution
+The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was fixed by one part, the other being its completion,
 $$
-\tilde\Psi=\bigl(A(\vec p)+m\bigr)\chi\,e^{-ip\cdot x}+\bigl(A(\vec p)-m\bigr)\chi_2\,e^{+ip\cdot x},
+\tilde\Psi_R=\chi\,e^{-ip\cdot x}+\chi_2\,e^{+ip\cdot x},\qquad
+\tilde\Psi_L=\frac{1}{m}\tilde\nabla\tilde\Psi_R
+=\frac{1}{m}\bigl(\tilde K\chi\,e^{-ip\cdot x}+\tilde K_+\chi_2\,e^{+ip\cdot x}\bigr),
 $$
+
 with
 $$
-A(\vec p)=G_0E_{\vec p}-\sum_k G_kp_k,\qquad
-p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\qquad E_{\vec p}^2=\vec p^2+m^2,
+\tilde K=-E_{\vec p}\,e_t+i\vec p,\qquad \tilde K_+=+E_{\vec p}\,e_t+i\vec p,\qquad
+p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x,\qquad E_{\vec p}^2=\vec p^2+m^2,
 $$
-and $\chi,\chi_2$ arbitrary constant elements of $\mathbb{B}$. The first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(\mathbb{D}-m)$ acting on each transform was evaluated and found to vanish to machine precision, in every case below. The checks were run for the three parameter sets
+
+and $\chi,\chi_2$ arbitrary constant elements of $\mathbb{B}$. The first branch is positive-frequency and the second negative-frequency; their sum is a general solution of the pair by linearity, and the second member holds because $\tilde K^{\natural}\tilde K=\tilde K_+^{\natural}\tilde K_+=m^2$ on shell. Substituting, conjugating, exchanging and reflecting as the definitions require, the residual of $(\mathbb{D}-m)$ acting on each transform was evaluated and found to vanish to machine precision in every case. The checks were run for the three parameter sets
 $$
 (m,\vec p)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
 $$
-each with the corresponding $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with both frequency branches present simultaneously. All three operations passed on all three cases.
+
+each with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, on the four basis polarizations of each part with both frequency branches present: eight solutions per momentum. All three operations passed on all three cases, at residual $4.4\times10^{-16}$, $1.8\times10^{-15}$ and $4.4\times10^{-16}$ respectively.
 
 The individual checks are worth a word each, because they test different parts of the structure.
 
-- **$C$.** The commutation conditions above were verified as cell identities, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces. On shell $A(\vec p)^2=E_{\vec p}^2-\vec p^2=m^2$, so the two factors in the decomposition satisfy $\bigl(A(\vec p)\mp m\bigr)\bigl(A(\vec p)\pm m\bigr)=0$. Conjugation by $\eta_C$ sends $A(\vec p)^{J}$ to $-A(\vec p)$, because it sends each generator to minus its conjugate; hence
-  $$
-  \eta_C\,w^{J}=\eta_C\bigl(A(\vec p)^{J}+m\bigr)\chi^{J}=\bigl(-A(\vec p)+m\bigr)\eta_C\chi^{J},
-  $$
-  which is annihilated by $A(\vec p)+m$: the transform is an amplitude of the **other branch**. So $C$ exchanges the two branches; in the mode expansion it exchanges the particle operator $a^{\mathrm{fop}}$ with the antiparticle operator $b^{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign. This was checked on the same three cases.
-- **$P$.** The commutation with the time generator and the anticommutation with the three spatial ones were verified, and the reflected field was confirmed to solve the equation. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$.
-- **$T$.** The four commutation conditions were verified, and the conjugated-reflected field was confirmed to solve the equation. Because $T$ is anti-linear, the check on the superposition is the sharpest one: a linear map that ignored the conjugation would send the negative-frequency branch to the wrong sign.
+- **$C$.** The exchange of the parts was verified as an identity on the symbol, $\bar{\tilde K}=\tilde K^{\natural}$, and the transformed field was confirmed to solve the pair. The transform keeps the energy and the momentum and conjugates the polarization. On shell a solution is fixed by its left part alone, and $C$ sends the right part $\tilde\Psi_R$ to the left part of the image, $\bar{\tilde\Psi}_R$, whose completion is $\frac{1}{m}\tilde K^{\natural}\bar{\tilde\Psi}_R=\bar{\tilde\Psi}_L$ because $\bar{\tilde K}=\tilde K^{\natural}$ and $\tilde K^{\natural}\tilde K=m^2$: the image is closed. In the mode expansion $C$ exchanges the particle operator $a^{\mathrm{fop}}$ with the antiparticle operator $b^{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign; that statement is transcribed, and the field-level check is the one performed here.
+- **$P$.** The reflection of the argument and the exchange of the parts were verified, and the reflected field was confirmed to solve the pair. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$.
+- **$T$.** The time reflection, the conjugation and the internal factor $\Gamma$ were verified, and the conjugated-reflected field was confirmed to solve the pair. Because $T$ is anti-linear, the check on a superposition is the sharpest one: a linear map that ignored the conjugation would send the negative-frequency branch with the wrong sign.
 
-Two negative results belong here, to prevent a future pass from claiming more than was checked.
+Two negative results belong here, to prevent a later pass from claiming more than was checked.
 
-- The verification is of the **free** equation. Nothing was checked for a field with a local interaction, and no claim is made there. The reason the free check cannot be promoted is stated at the end of this article: the CPT theorem is precisely the statement that the composition survives interactions when the factors do not, and a free-field identity contains no information about that.
-- The operation $T$ was *not* defined as the linear map $\tilde\Psi\mapsto\eta_T\tilde\Psi(-t',\vec x)$ that is sometimes written. That map does not preserve the equation; the check was performed with the conjugation present.
+- The verification is of the **free** pair. Nothing was checked for a field with a local interaction, and no claim is made there. The reason the free check cannot be promoted is stated below: the CPT theorem is precisely the statement that the composition survives interactions when the factors do not, and a free-field identity contains no information about that.
+- The operation $T$ was *not* defined as the linear map $\tilde\Psi\mapsto(-\tilde\Psi_L,\tilde\Psi_R)(-t',\vec x)$ that is sometimes written. That map does not preserve the pair; the check was performed with the conjugation present, and the residual without it is $8.5$ for $m=3$ and $\vec p=(1,2,2)$.
 
 ## The Algebra's Conjugations Are Not the Discrete Operations
 
 The temptation that the trap names is to identify one of the operations $C$, $P$, $T$ with one of the algebra's conjugations, or to read the particle–antiparticle pair as the sector pair. Three independent facts close the identification.
 
-**First, the conjugations preserve both sectors.** For a general element $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, membership in $\mathbb{M}_-$ means $Q_t$ purely imaginary and $Q_x,Q_y,Q_z$ real, and membership in $\mathbb{M}_+$ means $Q_t$ real and $Q_x,Q_y,Q_z$ purely imaginary. Each of ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ maps either condition to itself: conjugation negates the scalar or the vector coefficients but does not interchange the two patterns. The Hermitian conjugate is the identity on $\mathbb{M}_+$ and minus the identity on $\mathbb{M}_-$, so it *defines* the sectors rather than exchanging them. The map that interchanges them is $i\,\mathbb{M}_\pm=\mathbb{M}_\mp$, and $i$ is central, hence not a conjugation and not anti-linear. A particle–antiparticle or chiral-conjugate pair therefore cannot be placed one member in each sector.
+**First, the conjugations preserve both sectors.** For a general element $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, membership in $\mathbb{M}_-$ means $Q_t$ purely imaginary and $Q_x,Q_y,Q_z$ real, and membership in $\mathbb{M}_+$ means $Q_t$ real and $Q_x,Q_y,Q_z$ purely imaginary. Each of ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ maps either condition to itself: a conjugation negates the scalar or the vector coefficients but does not interchange the two patterns. The Hermitian conjugate is the identity on $\mathbb{M}_+$ and minus the identity on $\mathbb{M}_-$, so it *defines* the sectors rather than exchanging them. The map that interchanges them is multiplication by $i$, with $i\,\mathbb{M}_\pm=\mathbb{M}_\mp$, and $i$ is central, hence not a conjugation and not anti-linear. A particle–antiparticle or chiral-conjugate pair therefore cannot be placed one member in each sector.
 
-**Second, the sector split and the chirality split are different decompositions of one object.** The sector split is a condition on the coefficients, the sign of ${}^{*}$ read on each slot. The chirality split is the two values of $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$: $\tilde\Psi_L$ is the $-1$ value and $\tilde\Psi_R$ the $+1$ value, and the cell that produces them multiplies on the right. No coefficient condition produces them, and no conjugation produces the split: a map of the algebra reaches the coefficients, and the chirality is a cell. Recorded here only because a reader who has just seen $C$ and $P$ exchange the two parts might try to read that exchange as a sector exchange; it is not one.
+**Second, the sector split and the chirality split are different decompositions of one object.** The sector split is a condition on the coefficients, the sign of ${}^{*}$ read on the coefficients. The chirality split is the split into the two eigenspaces of right multiplication by $\omega=-\vec e_z$: $\tilde\Psi_L$ is the part on which $\omega$ multiplies by $i$, the $-1$ value of $\Gamma=-i\vec e_z$, and $\tilde\Psi_R$ the part on which it multiplies by $-i$, the $+1$ value. No coefficient condition produces these two eigenspaces, and no conjugation produces the split: a conjugation reaches the coefficients, and the chirality is a right action. The point is recorded only because a reader who has just seen $C$ and $P$ exchange the two parts might try to read that exchange as a sector exchange; it is not one.
 
-**Third, only $T$'s internal factor is a left multiplication by an element.** $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$ is left multiplication by $-\vec e_y$, an element of $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$, so the operation is carried by the algebra's own left action. $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ multiplies on both sides, and $\eta_P=iR_{\vec e_x}^{\mathrm{axf}}$ multiplies on the right; neither equals $L_a$ for any element $a$ of $\mathbb{B}$, so neither operation is a left multiplication, and the algebra's left action does not contain them. This is the sharp form of the framework's difficulty with the discrete operations: the algebra contains the operation that preserves chirality ($T$) and does not contain those that exchange it ($C$ and $P$). The electroweakly relevant fact that $C$ and $P$ are precisely the operations Nature violates separately, while their product with $T$ is the one that survives, is not explained by this structure; it is the theorem's content, and it is imported.
+**Third, only the part-preserving factor is a multiplication by an element.** $T$'s internal factor is the chirality, $\Gamma$ up to a scalar, and the chirality is right multiplication by the element $-i\vec e_z$, so that operation is carried by the algebra's own multiplication together with the conjugation. $C$ and $P$ carry no internal factor at all: what they need is the **exchange of the two parts**, and no multiplication by an element performs that exchange, on either side, because every multiplication preserves both parts. Verified: over the six trial elements $1,\vec e_x,\vec e_y,\vec e_z,i,i\vec e_x\vec e_y$, the residual of the pair on the transformed field is $5.8$ for each non-scalar, at $m=3$ and $\vec p=(1,2,2)$, and $0$ only for the scalars. This is the sharp form of the framework's difficulty with the discrete operations: the algebra contains the factor that preserves the chirality and does not contain the operation that exchanges it. The fact that $C$ and $P$ are precisely the operations Nature violates separately, while the product with $T$ is the one that survives, is not explained by this structure; it is the theorem's content, and it is imported.
 
-The anti-linear part of $C$ and of $T$ is exactly the algebra's complex conjugation $\bar{\cdot}$, read on the coefficients. That is the same real-structure operation that relates the two parts of the field and that distinguishes them inside the algebra, and it is what supplies the anti-linear part of the discrete operations. It is *not* the mass. The parent's mass term is the linear chiral pair of the Dirac article, and the algebra's anti-linear real structure $\flat=-{}^{*}$ is a separate, order-reversing conjugation whose pairing is a Majorana-type coupling. The discrete operations are symmetries of the kinetic equation; the real structure is a dynamical pairing.
+The anti-linear part of $C$ and of $T$ is exactly the algebra's conjugation of the coefficients $\bar{\cdot}$. That is the same real-structure operation that distinguishes the two parts inside the algebra, and it is what supplies the anti-linear part of the discrete operations. It is *not* the mass. The parent's mass term is the linear chiral pair of the Dirac article, and the algebra's anti-linear real structure $\flat=-{}^{*}$ is a separate, order-reversing conjugation whose pairing is a Majorana-type coupling. The discrete operations are symmetries of the kinetic equation; the real structure is a dynamical pairing.
 
 ## The Composition CPT, Checked as a Composition
 
 Compose the three operations by applying $T$ first, then $P$, then $C$, and write $\Theta=C\circ P\circ T$. Because $C$ and $T$ are anti-linear, the composition must be evaluated as a composition, not by multiplying the three internal factors. Applied to a field $\tilde\Psi$,
 $$
-\tilde\Psi
-\xrightarrow{\;T\;}\eta_T\,\tilde\Psi^{J}(-t',\vec x)
-\xrightarrow{\;P\;}\eta_P\eta_T\,\tilde\Psi^{J}(-t',-\vec x)
-\xrightarrow{\;C\;}\eta_C(\eta_P\eta_T)^{J}\tilde\Psi(-t',-\vec x),
+(\tilde\Psi_L,\tilde\Psi_R)
+\xrightarrow{\;T\;}\bigl(-\tilde\Psi_L^{\,J},\ \tilde\Psi_R^{\,J}\bigr)(-t',\vec x)
+\xrightarrow{\;P\;}\bigl(\tilde\Psi_R^{\,J},\ -\tilde\Psi_L^{\,J}\bigr)(-t',-\vec x)
+\xrightarrow{\;C\;}\bigl(-\tilde\Psi_L,\ \tilde\Psi_R\bigr)(-x),
 $$
+
 so that
 $$
-\boxed{\;\Theta[\tilde\Psi](x)=\eta_{CPT}\,\tilde\Psi(-x),\qquad
-\eta_{CPT}=\eta_C\,\eta_P^{J}\,\eta_T^{J}\;}.
+\Theta[\tilde\Psi](x)=\Gamma\,\tilde\Psi(-x),
 $$
-The internal factor is built from the **conjugates** of $\eta_P$ and $\eta_T$, written $\eta^{J}=J\eta J^{-1}$ for a cell, which is the bookkeeping that a naive product $\eta_C\eta_P\eta_T$ would miss. In the convention of this article, $\eta_P=G_0$ and $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$ are cells that the field's conjugation fixes, so $\eta_P^{J}=\eta_P$ and $\eta_T^{J}=\eta_T$, and
-$$
-\boxed{\;\eta_{CPT}=\eta_C\eta_P\eta_T=(-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})\,G_0\,(-L_{\vec e_y}^{\mathrm{axf}})=\Gamma\;}.
-$$
-The agreement with the naive product in *this* convention is an accident of internal factors that the conjugation fixes, and should not be taken as general. If, for example, the phase convention $\eta_T'=i\eta_T$ is used — equally admissible, since the equation-preservation condition leaves the phase of the internal factor free — then the true composition has $\eta_{CPT}=\eta_C\eta_P^{J}(\eta_T')^{J}=-i\Gamma=\omega$, while the naive product gives $i\Gamma=-\omega$. The two differ by a sign. The operation $T$ and the composition were re-verified in that convention as well, and both still map solutions to solutions; the point is that the internal factor is a convention-dependent phase and can only be read off from the composition itself. This is the concrete sense in which verifying $C$, $P$, $T$ individually and multiplying is not the same as verifying $CPT$.
+
+with $\Gamma$ the chirality: $-1$ on the left part and $+1$ on the right part. The internal factor is read off the composition, and its agreement with the product of the three internal factors, $1\cdot1\cdot\Gamma$, is an accident of this alignment and should not be taken as general: the free scalar phase of each operation enters the composition through the conjugation, which does not commute with the exchange of the parts. Under the equally admissible convention $T'\tilde\Psi=\bigl(\tilde\Psi_L^{\,J},-\tilde\Psi_R^{\,J}\bigr)(-t',\vec x)$, which differs from $T$ by the overall sign, the composition carries the internal factor $-\Gamma$ and the naive product gives $+\Gamma$: the two differ by a sign, and both map solutions to solutions. That is the concrete sense in which verifying $C$, $P$ and $T$ individually and multiplying is not the same as verifying $CPT$.
 
 The composition has the following verified properties.
 
-- **It is a symmetry of the free equation.** $\Theta[\tilde\Psi]$ solves $(\mathbb{D}-m)\tilde\Psi=0$ whenever $\tilde\Psi$ does. This was checked on all three parameter sets and with both frequency branches present.
-- **It is complex-linear.** $\Theta[i\tilde\Psi]=+i\,\Theta[\tilde\Psi]$: the two anti-linear factors $C$ and $T$ combine into a linear map on the field, since $\Theta[\tilde\Psi](x)=\eta_{CPT}\tilde\Psi(-x)$ carries no conjugation. (The standard $CPT$ *operator* on the mode algebra is anti-unitary; that operator is not constructed here, and it is the field map that this article defines.)
-- **It reverses both the spacetime argument and the charge.** The argument is $-x$, and because $C$ exchanges the frequency branches, a particle is mapped to an antiparticle.
-- **It preserves chirality.** $C$ and $P$ each anticommute with $\Gamma$ and $T$ commutes with it; the composition anticommutes twice. Equivalently, $\eta_{CPT}=\Gamma$ commutes with $\Gamma$.
-- **Its internal factor is a phase times the volume element, and the chirality cell in this convention.** The volume element $\omega=-R_{\vec e_z}^{\mathrm{axf}}=-i\Gamma$ is the element the framework identifies with the scalar imaginary $i$: it multiplies $\tilde\Psi_L$ by $i$ and $\tilde\Psi_R$ by $-i$, which is what the scalar imaginary does on the two parts. In the convention above the internal factor is $\eta_{CPT}=\Gamma=i\omega$, the chirality cell itself. The factor is fixed only up to the free phases of $\eta_C$ and $\eta_T$; its identification with the volume element is the algebra statement, and its action as the chirality cell is the statement about the two parts.
+- **It is a symmetry of the pair.** $\Theta[\tilde\Psi]$ solves the pair whenever $\tilde\Psi$ does. This was checked on all three parameter sets and on the eight solutions per momentum.
+- **It is complex-linear.** $\Theta[i\tilde\Psi]=+i\,\Theta[\tilde\Psi]$: the two anti-linear factors $C$ and $T$ combine into a linear map on the field, since $\Theta[\tilde\Psi](x)=\Gamma\tilde\Psi(-x)$ carries no conjugation. The standard $CPT$ *operator* on the mode algebra is anti-unitary; that operator is not constructed here, and it is the field map that this article defines.
+- **It reverses the spacetime argument and the charge.** The argument is $-x$, and $C$ exchanges the particle and antiparticle labels at fixed energy, a particle being mapped to an antiparticle.
+- **It preserves the chirality.** $C$ and $P$ each exchange the two parts and $T$ keeps them, so the composition exchanges twice. Equivalently, the internal factor $\Gamma$ is diagonal on the two parts, so the image of the left part is the left part.
+- **Its internal factor is the chirality.** $\Gamma=-i\vec e_z=i\omega$ is the right multiplication that multiplies $\tilde\Psi_L$ by $-1$ and $\tilde\Psi_R$ by $+1$, equivalently multiplies the two parts by $i$ and $-i$ through $\omega$. The factor is fixed only up to the scalar phases of the three operations; its identification with the chirality is the statement about the algebra, and its diagonal action on the two parts is the statement about the field.
 
-**What this does and does not establish.** It establishes that the free biquaternion Dirac equation carries three discrete operations whose composition is a symmetry, that the composition's internal factor is a phase times the volume element (the chirality cell in the convention above), and that the anti-linearity resides in the factors $C$ and $T$ alone, where it is the algebra's complex conjugation $\bar{\cdot}$; the parent's mass term is linear, so the discrete anti-linearity is not shared with it.
+**What this does and does not establish.** It establishes that the free biquaternion Dirac pair carries three discrete operations whose composition is a symmetry, that the composition's internal factor is the chirality up to the free scalar, and that the anti-linearity resides in the factors $C$ and $T$ alone, where it is the algebra's conjugation of the coefficients; the parent's mass term is linear, so the discrete anti-linearity is not shared with it.
 
 It does **not** establish the CPT theorem. A free equation is a special case in which $C$, $P$ and $T$ are separately symmetries, so the composition is a symmetry for the trivial reason. The theorem's content is that $CPT$ remains a symmetry when $C$, $P$ and $T$ do not, and that statement rests on locality, Hermiticity, Lorentz invariance and spin–statistics, none of which is derived here. The correct summary is that the framework *exhibits* CPT on the free field and *transcribes* the theorem.
 
@@ -258,172 +258,81 @@ It does **not** establish the CPT theorem. A free equation is a special case in 
 
 A second reading of the same eight operations comes from the classification of the order-two maps of the algebra, and it is recorded beside the construction above because it supplies the one thing that construction does not: a reason the operations close into a group, and a reason that group is the eight-element $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$.
 
-**The three conjugations of the algebra are order-two maps that commute.** Each of $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$ is its own inverse, and any two of them commute, so with the identity they form a $\mathbb{Z}_2\times\mathbb{Z}_2$; the Hermitian conjugate is the composite of the other two, $\natural=\bar{\cdot}\circ{}^{*}$. This is a computation on the coefficients, and it is the whole of the algebra's supply of involutions: there are exactly three, and no fourth.
+**The three conjugations of the algebra are order-two maps that commute.** Each of $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$ is its own inverse, and any two of them commute, so with the identity they form a $\mathbb{Z}_2\times\mathbb{Z}_2$; the Hermitian conjugate is the composite of the other two, $\natural=\bar{\cdot}\circ{}^{*}$. This is a computation on the coefficients, verified at residual $0$, and it is the whole of the algebra's supply of involutions: there are exactly three, and no fourth.
 
-**The discrete operations are those four maps and their composites with $C$.** Read on the field, the eight products $\{1,P,T,PT,C,CP,CT,CPT\}$ close on themselves, each factor is of order two up to the free phase that the internal cell carries, and the eight form
+**The discrete operations are those four maps and their composites with $C$.** Read on the field, the eight products $\{1,P,T,PT,C,CP,CT,CPT\}$ close on themselves, and each factor is of order two: $C^2=P^2=T^2=\mathrm{id}$, verified on the field at residual $0$. The composition rules are not all commutative. $C$ and $P$ commute exactly, and $T$ anticommutes with each of them, so the entries $CT$ and $TC$ differ by the overall sign $-1$, and so do $PT$ and $TP$. The sign belongs to the product and not to either factor, so the eight operations form
 $$
-\boxed{\;\{1,\,P,\,T,\,PT,\,C,\,CP,\,CT,\,CPT\}\;\cong\;\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2\;}.
+\{1,\,P,\,T,\,PT,\,C,\,CP,\,CT,\,CPT\}\;/\;\{\pm1\}\;\cong\;\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2,
 $$
-This is the group-theoretic fact behind the standard statement that the discrete operations form an eight-element group. It is stated as a classification and not derived here: the products close because each of the three operations is an involution on the field, and the algebra supplies no further involution to enlarge the set.
 
-**$C$ is not one of the three.** The one operation of the eight that is not built from the algebra's conjugations alone is charge conjugation: its internal factor multiplies on both sides by units drawn from the frame, so it is a cell and not a coefficient map, and it therefore does not appear in the $\mathbb{Z}_2\times\mathbb{Z}_2$ above. That is the classification's form of this article's operational finding, that $\eta_C$ is not a left multiplication by an element and $C$ is not an inner operation of the algebra.
+with the sign a free phase of the composition. This is the group-theoretic fact behind the standard statement that the discrete operations form an eight-element group. It is stated as a classification and not derived here: the products close because each of the three operations is an involution on the field, and the algebra supplies no further involution to enlarge the set.
 
-**The level distinction, kept explicit.** The classification is a statement about the maps of the algebra; the operations of this article are maps of the field, defined by internal cells and verified on the free equation. Passing from one to the other is a matter of the representation theory — of which cell implements a given map of the algebra on the field — and this article does not carry it out. The correspondence above is therefore recorded as **transcribed**, and it is stated as a correspondence of classifications rather than as a derivation of $\eta_C$ or $\eta_T$ from the algebra's involutions. What it adds to the explicit computation is structural: the eight operations are the identity, the three conjugations and their charge-conjugation twists, so the "more involutions than the standard four" of this article's opening is not an embarrassment but a count.
+**$C$ is not one of the three.** The one operation of the eight that is not built from the algebra's conjugations alone is charge conjugation: beside the conjugation it applies, it **exchanges the two parts**, and no multiplication by an element exchanges them, so it is not a coefficient map and does not appear in the $\mathbb{Z}_2\times\mathbb{Z}_2$ above. That is the classification's form of this article's operational finding, that $C$ is not an inner operation of the algebra.
+
+**The level distinction, kept explicit.** The classification is a statement about the maps of the algebra; the operations of this article are maps of the field, defined by an exchange of parts, a conjugation and an internal factor, and verified on the pair. Passing from one to the other is a matter of the representation theory — of which map of the field implements a given involution of the algebra — and this article does not carry it out. The correspondence above is therefore recorded as **transcribed**, and it is stated as a correspondence of classifications rather than as a derivation of $C$, $P$ or $T$ from the algebra's involutions. What it adds to the explicit computation is structural: the eight operations are the identity, the three conjugations and their charge-conjugation twists, so the "more involutions than the standard four" of this article's opening is not an embarrassment but a count.
 
 ## Relation to the Companion Articles
 
-- **The S-matrix.** The companion raises as an open question the biquaternion realization of the anti-unitary discrete symmetries, and locates it in "the planned companions on CPT and on the discrete symmetries". This article answers part of that: it gives the anti-linear field map $T$ and the composition $CPT$ on the free field, with the anti-linearity identified with the algebra's $\bar{\cdot}$ and the induced operator of $T$ anti-unitary. It does not give the action on the S-matrix.
-- **Spin–statistics.** That article establishes that the double-valued representation is carried by the field's two parts and that the fermionic bracket is imposed; the discrete operations here act on the same field and are insensitive to the bracket. The anti-unitarity of $T$ is the one place where the complex structure of the field enters the discrete symmetries directly.
-- **Chiral fermions.** That article's real structure — the conjugation relating the two parts — is exactly the $\bar{\cdot}$ that supplies the anti-linear part of $C$ and $T$; the framework's mass term, now the linear chiral pair, is not built on it. The present article adds that $C$ and $P$ flip chirality, $T$ preserves it, and $CPT$ preserves it: the discrete operations do not mix the chirality question with the sector question, and the two decompositions remain distinct.
-- **Canonical quantization.** The mode expansion there gives the operator-level interpretation of $C$: because $\eta_C\chi^{J}$ is an amplitude of the other branch, $C$ exchanges $a^{\mathrm{fop}}$ and $b^{\mathrm{fop}}$ and reverses the normal-ordered charge. This is the operator form of the classical statement.
-- **The electron.** That article's charge conjugation, generated by the cell $R_{\vec e_x}^{\mathrm{axf}}$, is the transposed realization of the same operation; the untransposed realization used here carries $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the two are related by the change of realization described in the charge-conjugation section, with the free phase that the condition leaves. Its observation that the energy-sign cell is not a left multiplication by an element of $\mathbb{B}$ is the same distinction that governs the table above.
-- **Charge conjugation and the division ring.** That companion develops the one feature of the operation that the present article leaves untouched: the dependence of its square, and of its very character, on the division ring of the algebra it is read in. It is the reason charge conjugation can be trivial on a class of particles — the *truly neutral* ones — and it refines the eight-element group above by a representation-theoretic trichotomy.
+- **The S-matrix.** The companion raises as an open question the biquaternion realization of the anti-unitary discrete symmetries, and locates it in "the planned companions on CPT and on the discrete symmetries". This article answers part of that: it gives the anti-linear field map $T$ and the composition $CPT$ on the free field, with the anti-linearity identified with the algebra's conjugation of the coefficients. It does not give the action on the S-matrix.
+- **Spin–statistics.** That article establishes that the double-valued representation is carried by the field's two parts and that the fermionic bracket is imposed; the discrete operations here act on the same field and are insensitive to the bracket. The anti-unitarity of the induced operator of $T$ is the one place where the complex structure of the field enters the discrete symmetries directly.
+- **Chiral fermions.** That article's real structure — the conjugation relating the two parts — is exactly the $\bar{\cdot}$ that supplies the anti-linear part of $C$ and $T$; the framework's mass term, now the linear chiral pair, is not built on it. The present article adds that $C$ and $P$ exchange the two parts, $T$ preserves them, and $CPT$ preserves them: the discrete operations do not mix the chirality question with the sector question, and the two decompositions remain distinct.
+- **Canonical quantization.** The mode expansion there gives the operator-level interpretation of $C$: because $C$ exchanges the two parts, it exchanges the mode operators $a^{\mathrm{fop}}$ and $b^{\mathrm{fop}}$, which reverses the normal-ordered charge. This is the operator form of the classical statement.
+- **The electron.** That article's charge conjugation is the transposed realization of the same operation, related to the one used here by the change of realization described in the charge-conjugation section, with the free phase that the condition leaves. Its observation that the energy-sign operator is not a left multiplication by an element of $\mathbb{B}$ is the same distinction that governs the table above.
+- **Charge conjugation and the division ring.** That companion develops the one feature of the operation which the present article leaves untouched: the dependence of its square, and of its very character, on the division ring of the algebra it is read in. It is the reason charge conjugation can be trivial on a class of particles — the *truly neutral* ones — and it refines the eight-element group above by a representation-theoretic trichotomy.
 
 ## What the Framework Establishes, Transcribes, and Does Not
 
 **Established, and recomputed.**
 
-- The three operations $C[\tilde\Psi]=\eta_C\tilde\Psi^{J}=-\vec e_y\tilde\Psi^{J}\vec e_y$ with $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $P[\tilde\Psi]=\eta_P\tilde\Psi(t',-\vec x)=i\tilde\Psi(t',-\vec x)\vec e_x$ with $\eta_P=G_0$, and $T[\tilde\Psi]=\eta_T\tilde\Psi^{J}(-t',\vec x)=-\vec e_y\tilde\Psi^{J}(-t',\vec x)$ with $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$, each preserve the free Dirac equation, verified on the differential equation for three on-shell momenta and on a superposition of both frequency branches.
-- The field map $T$ is anti-linear, $T[i\tilde\Psi]=-i\,T[\tilde\Psi]$, and the operator it induces is anti-unitary; $C$ is anti-linear with a unitary induced operator; $P$ is linear.
-- $C$ and $P$ anticommute with $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ and exchange the two parts of the field; $T$ commutes with $\Gamma$; $CPT$ preserves chirality.
-- $C$ exchanges the frequency branches, hence the particle and antiparticle modes.
-- Of the internal factors, $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$ is left multiplication by $-\vec e_y\in\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$, while $\eta_C$ multiplies on both sides and $\eta_P$ on the right; neither of the last two is a left multiplication by an element of $\mathbb{B}$.
+- The three operations $C[\tilde\Psi]=(\tilde\Psi_R^{\,J},\tilde\Psi_L^{\,J})$ with $J=\bar{\cdot}$, $P[\tilde\Psi](t',\vec x)=(\tilde\Psi_R,\tilde\Psi_L)(t',-\vec x)$ and $T[\tilde\Psi](t',\vec x)=(-\tilde\Psi_L^{\,J},\tilde\Psi_R^{\,J})(-t',\vec x)$ each preserve the free chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, verified on the differential equation for three on-shell momenta, on the four basis polarizations of each part and on both frequency branches: eight solutions per momentum, three momenta, residual at most $1.8\times10^{-15}$.
+- $C$ and $T$ are anti-linear, $C[i\tilde\Psi]=-i\,C[\tilde\Psi]$ and $T[i\tilde\Psi]=-i\,T[\tilde\Psi]$, and $P$ is linear; the operator induced by $T$ is anti-unitary and the one induced by $C$ is unitary.
+- $C$ and $P$ exchange the two parts and $T$ keeps them, so $C$ and $P$ flip the chirality, $T$ preserves it, and the composition preserves it. The chirality is the right action $\psi\mapsto\psi\Gamma=-i\psi\vec e_z$, the two parts being the eigenspaces of right multiplication by $\omega=-\vec e_z$ with eigenvalues $i$ and $-i$.
+- The composition $\Theta=C\circ P\circ T$ acts as $\Theta[\tilde\Psi](x)=\Gamma\tilde\Psi(-x)$; it is complex-linear, reverses the argument, and its internal factor is the chirality, $-1$ on the left part and $+1$ on the right part, up to the free scalar phase of the three operations.
+- The gradient is a left action and preserves both parts, and its square is not scalar, $\tilde\nabla^2=\partial^2/\partial Q_t^2-\Delta_Q+2e_t\sum_k\vec e_k\partial^2/(\partial Q_t\partial Q_k)$; the massive equation is therefore the pair, and the pair operator $\mathbb{D}$ of the conventions has $\mathbb{D}^2=\Box I$.
 - The algebra's conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ preserve both sectors; ${}^{*}$ is $+1$ on $\mathbb{M}_+$ and $-1$ on $\mathbb{M}_-$; the sector swap is the central multiplication by $i$. No discrete operation is a sector swap.
-- The composition $\Theta=C\circ P\circ T$ acts as $\eta_{CPT}\tilde\Psi(-x)$ with $\eta_{CPT}=\eta_C\eta_P^{J}\eta_T^{J}$, verified as a composition; in the aligned convention $\eta_{CPT}=\Gamma=i\omega$, with $\omega=-R_{\vec e_z}^{\mathrm{axf}}$ the volume element identified with the scalar imaginary. The naive product differs from the true composition once the phases are not fixed by the conjugation.
 - The algebra's three conjugations are order-two maps that commute pairwise, with $\natural=\bar{\cdot}\circ{}^{*}$, so they and the identity form a $\mathbb{Z}_2\times\mathbb{Z}_2$. This is a computation on the coefficients, and it is the one point where the classification below and the algebra meet without transcription.
 
 **Transcribed, not derived.**
 
 - The CPT theorem itself, and the hypotheses (locality, Hermiticity, Lorentz invariance, positivity, spin–statistics) that prove it.
-- The internal factors and phases of $C$ and $T$, which are the standard objects of the discrete symmetries; the free-field computation is the standard one expressed in the framework's notation.
-- The intertwiners, which are the standard relations $\eta_C\,G_\mu^{J}\eta_C^{-1}=-G_\mu$ on the generators and their analogues.
-- The **classification** of the operations: $P$ as one order-two map of the algebra, $T$ as another, $PT$ as their composite, $C$ as the twisted one, and the group $\{1,P,T,PT,C,CP,CT,CPT\}\cong\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ that they generate. The classification is a statement about the maps of the algebra; the passage from those maps to the internal cells $\eta_P,\eta_T$ is representation theory that this article does not carry out.
+- The exchange of the particle and antiparticle modes by $C$, and the anti-unitarity of the operator induced by $T$ on the mode algebra.
+- The free-field computation, which is the standard one expressed in the framework's notation: the internal factors, their phases, and the massless decoupling.
+- The **classification** of the operations: $P$ as one order-two map of the field, $T$ as another, $PT$ as their composite, $C$ as the twisted one, and the group $\{1,P,T,PT,C,CP,CT,CPT\}$ that they generate, which is $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ up to the sign of the product. The classification is a statement about the maps; the passage from those maps to the exchange of parts and the internal factor $\Gamma$ is representation theory that this article does not carry out.
 
 **Gap, left visible.**
 
-- No $\mathbb{B}$-intrinsic form of $C$ and $P$. Because neither of their internal factors is a left multiplication by an element, they cannot be operations of the algebra's left action; whether the framework can realize them on an enlarged structure, or only on the cell algebra, is not built.
+- No $\mathbb{B}$-intrinsic form of $C$ and $P$. What they need is the exchange of the two parts, and no multiplication by an element exchanges them; whether the framework can realize the exchange on an enlarged structure, or only as an operation on the pair, is not built.
 - No action on the S-matrix, and no treatment of $CP$ violation.
 - No derivation of CPT from the algebra. Whether locality and positivity are expressible as properties of $\mathbb{B}$ in a way that yields the theorem is open.
-- The massive case: the parent's mass term is the linear chiral pair, whose two-sided form is the massive Dirac equation that $C$, $P$ and $T$ were each verified to preserve; the open question is whether $C$ is a symmetry of the single-field equation built on the algebra's antilinear real structure $\flat$, the same Majorana-versus-Dirac interpretation as before.
+- The massive case: the parent's mass term is the linear chiral pair, whose two-sided form is the massive Dirac equation that $C$, $P$ and $T$ were each verified to preserve; the open question is whether $C$ is a symmetry of the single-field equation built on the algebra's anti-linear real structure $\flat$, the same Majorana-versus-Dirac reading as before.
 
 ## Open Questions
 
-1. **Is there a $\mathbb{B}$-intrinsic $C$ and $P$?** Neither internal factor is a left multiplication by an element of $\mathbb{B}$. Does an enlargement of the algebra (a larger cell algebra, or a doubling of the field) carry them as left multiplications, or are charge conjugation and parity irreducibly external to the biquaternion structure? This is the structural counterpart of the electron article's observation that the energy-sign cell has no element.
+1. **Is there a $\mathbb{B}$-intrinsic $C$ and $P$?** What they need is the exchange of the two parts, and no multiplication by an element exchanges them. Does an enlargement of the algebra — a doubling of the field, or a module on which the exchange is inner — carry them as multiplications, or are charge conjugation and parity irreducibly external to the biquaternion structure? This is the structural counterpart of the electron article's observation that the energy-sign operator has no element.
 
-2. **Is $C$ a symmetry of the real structure's pairing?** The algebra's real structure $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$ is anti-linear, while the parent's mass term is the linear chiral pair, and $C$ preserves the massive equation written as a two-sided operator. Whether the separate single-field equation built on the real structure is $C$-invariant, and whether that pairing is Majorana-type or a real-form Dirac mass, decide whether the framework's fermion number is conserved. The companion on the neutrino and Majorana fermions is the natural place.
+2. **Is $C$ a symmetry of the real structure's pairing?** The algebra's real structure $\tilde\Psi^{\flat}=-\tilde\Psi^{*}$ is anti-linear, while the parent's mass term is the linear chiral pair, and $C$ preserves the massive pair. Whether the separate single-field equation built on the real structure is $C$-invariant, and whether that pairing is Majorana-type or a real-form Dirac mass, decide whether the framework's fermion number is conserved. The companion on the neutrino and Majorana fermions is the natural place.
 
 3. **Can CPT be derived rather than transcribed?** The theorem follows from locality, Hermiticity, Lorentz invariance and positivity. Are any of these native to $\mathbb{B}$, or does the framework only host the notation? A derivation would be the framework's first genuine theorem of this kind.
 
-4. **The phase of charge conjugation and the grading.** The phase of $\eta_C$ is conventional, but $C$ and the fermion-parity element $(-1)^F$ both act on the field with a sign, and the two signs are related in the single-mode algebra. Is the phase of $\eta_C$ fixed by the requirement that $C$ commute with the grading, or is it free?
+4. **The phase of charge conjugation and the grading.** The phase of the internal factor is conventional, but $C$ and the fermion-parity element $(-1)^F$ both act on the field with a sign, and the two signs are related in the single-mode algebra. Is the phase of $C$ fixed by the requirement that $C$ commute with the grading, or is it free?
 
 5. **Where would $CP$ violation live?** The free equation is $CP$-invariant. If the framework has a place for a complex phase in the mass or coupling structure — the Majorana question above is one candidate — does it admit the standard $CP$-violating invariants, and is there a biquaternion statement of them?
 
 6. **Empirical contact.** The construction reproduces standard field theory. Any deviation would have to appear where the framework is used beyond transcription, for instance in the relation between the discrete operations and the mass term; none is visible at the level developed here.
 
-7. **Do the three conjugations derive the internal cells?** The algebra's three conjugations are order-two maps that commute, and the discrete operations are assigned to them. On the field the same operations are implemented by the cells $\eta_P=G_0$ and $\eta_T=G_1G_3=-L_{\vec e_y}^{\mathrm{axf}}$, of which only the second is a left multiplication by an element. Whether a cell can be *read off* a conjugation — so that $\eta_P$ and $\eta_T$ are derived rather than matched — is the representation-theoretic step this article does not take. If it can be taken, the correspondences become a derivation; if it cannot, the classification remains a structural companion rather than a source.
-
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article that uses them; the bodies above and below are written in the cells. In this frame the generators are the same four cells, with the $i$ written out rather than carried in the name:
-$$
-\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
-$$
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell written $\Gamma$ above; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The dictionary to the cells of this article.** The generators are the cells named $G_\mu$ above,
-$$
-\gamma_0[\mathbb{M}_-]=G_0,\qquad \gamma_1[\mathbb{M}_-]=G_1,\qquad \gamma_2[\mathbb{M}_-]=G_2,\qquad \gamma_3[\mathbb{M}_-]=G_3,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=\Gamma,
-$$
-
-In the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=G_0,\qquad \gamma_1[\mathbb{M}_-]=G_1,\qquad \gamma_2[\mathbb{M}_-]=G_2,\qquad \gamma_3[\mathbb{M}_-]=G_3,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=\Gamma,
-$$
-
-and the composite entries are where $i^{2}=-1$ is spent, twice over:
-$$
-\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i)(i)\,L_{\vec e_x\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{\vec e_x\vec e_z}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{\vec e_x\vec e_z}^{\mathrm{pau}}=L_{-\vec e_y}^{\mathrm{pau}}=-L_{\vec e_y}^{\mathrm{pau}}=\eta_T,
-$$
-
-The same identities in the axis-free display:
-
-$$
-\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i)(i)\,L_{\vec e_x\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{\vec e_x\vec e_z}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{\vec e_x\vec e_z}^{\mathrm{axf}}=L_{-\vec e_y}^{\mathrm{axf}}=-L_{\vec e_y}^{\mathrm{axf}}=\eta_T,
-$$
-
-$$
-\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i)(i)\,L_{\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{\vec e_y\vec e_z}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{\vec e_y\vec e_z}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}},
-$$
-
-Read in the axis-free display:
-
-$$
-\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=(i)(i)\,L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{\vec e_y\vec e_z}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}},
-$$
-
-$$
-i\gamma_2[\mathbb{M}_-]=i\,(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=\eta_C,\qquad
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}}=\omega=-i\Gamma .
-$$
-
-The same expressions, in the axis-free display:
-
-$$
-i\gamma_2[\mathbb{M}_-]=i\,(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=\eta_C,\qquad
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{axf}}=\omega=-i\Gamma .
-$$
-
-Each reduction is a single cell with no $i$ left, and the mechanism is the same in all four: the two factors of $i$ multiply to $-1$, the factor $R_{\vec e_y\vec e_y}^{\mathrm{pau}}=R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ contributes a second $-1$, and the two cancel, leaving the quaternion product of the two arguments. That is the rule that decides the parity of a product: a product of an even number of generators is real, a product of an odd number is purely imaginary, so an odd product such as $\gamma_1[\mathbb{M}_-]$ or $i\gamma_2[\mathbb{M}_-]$ needs its explicit $i$ and an even product such as $\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ never has one. The mechanical rules are $L_aR_bL_cR_d=L_{ac}R_{db}$, $\vec e_j\vec e_k=\epsilon_{jkl}\vec e_l$ for $j\ne k$ and $\vec e_k^{2}=-e_t$, together with $L_{e_t}^{\mathrm{pau}}=R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ for the identity.
-
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
-$$
-$$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
-$$
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
-$$
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
-$$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
+7. **Do the three conjugations derive the internal factor?** The algebra's three conjugations are order-two maps that commute, and the discrete operations are assigned to them. On the field the same operations are implemented by the conjugation of the coefficients together with the exchange of the parts for $C$ and $P$, and by the conjugation together with the chirality for $T$. Whether a multiplication can be *read off* a conjugation — so that the internal factor is derived rather than matched — is the representation-theoretic step this article does not take. If it can be taken, the correspondences become a derivation; if it cannot, the classification remains a structural companion rather than a source.
 
 ## Summary
 
-The biquaternion framework carries the three discrete operations on one field, $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, an element of $\mathbb{B}$ whose two parts are the $-1$ and $+1$ values of the chirality. Charge conjugation is $C[\tilde\Psi]=-\vec e_y\tilde\Psi^{J}\vec e_y$; parity is $P[\tilde\Psi](x)=i\tilde\Psi(t',-\vec x)\vec e_x$; time reversal is $T[\tilde\Psi](x)=-\vec e_y\tilde\Psi^{J}(-t',\vec x)$. Each was verified separately to preserve the free equation $(\mathbb{D}-m)\tilde\Psi=0$, on the differential equation, for three on-shell momenta and on a superposition of both frequency branches. The field map of time reversal is anti-linear, $T[i\tilde\Psi]=-i\,T[\tilde\Psi]$, and its induced operator is anti-unitary; it conjugates the framework's scalar imaginary. Charge conjugation and parity anticommute with the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ and exchange the two parts; time reversal commutes with $\Gamma$; the composition preserves chirality.
+The biquaternion framework carries the three discrete operations on one field, $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, an element of $\mathbb{B}$ whose two parts are the two eigenspaces of right multiplication by $\omega=-\vec e_z$, the left part being the $-1$ value of the chirality $\Gamma=-i\vec e_z$ and the right part the $+1$ value. Charge conjugation is the conjugation of the coefficients together with the exchange of the two parts; parity is the spatial reflection together with the exchange; time reversal is the conjugation together with the time reflection and the internal factor $\Gamma$. Each was verified separately to preserve the free chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, on the differential equation, for three on-shell momenta, on the four basis polarizations of each part and on both frequency branches. $C$ and $T$ are anti-linear, and the operator induced by $T$ is anti-unitary; $C$ and $P$ exchange the two parts and flip the chirality, $T$ preserves it, and the composition preserves it.
 
-The two equations are kept apart. The one-sided equation is the chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, in which every derivative acts by left multiplication and chirality has no room to appear. The two-sided equation is $(\mathbb{D}-m)\tilde\Psi=0$, written out as $\mathbb{D}\tilde\Psi=-\partial_{t'}\tilde\Psi\,\vec e_x-\sum_k\vec e_k\partial_k\tilde\Psi\,\vec e_y$; the chirality is the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, which is what the two-sided operator theory adds. The discrete operations act on the two-sided equation.
+The pair is not a choice. The gradient acts by left multiplication and its square is not scalar, so the free equation stays first order in one part, $\tilde\nabla\tilde\Psi_R=0$, and the massive equation is the pair, written once as the pair operator $\mathbb{D}(\Psi_L,\Psi_R)=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$ with $\mathbb{D}^2=\Box I$. The chirality commutes with the gradient and therefore appears in neither member; it is a right action, read on the field, and it is what names the two parts.
 
-The operations are kept distinct from the algebra's own conjugations. The quaternion, complex and Hermitian conjugates all preserve both sectors $\mathbb{M}_-$ and $\mathbb{M}_+$, and the Hermitian conjugate defines them; the sector swap is multiplication by the central scalar imaginary $i$, which is not a conjugation. The transition between the two sectors is therefore not the particle–antiparticle or chiral-conjugate transition; the temptation to read it so is the trap the companion articles record, and it is refuted by the fixed-point definitions. Of the internal factors, only $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$ is left multiplication by an element of the algebra, namely $-\vec e_y$; $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ multiplies on both sides and $\eta_P=G_0$ on the right, so charge conjugation and parity are not operations of the algebra's left action.
+The operations are kept distinct from the algebra's own conjugations. The quaternion, complex and Hermitian conjugates all preserve both sectors $\mathbb{M}_-$ and $\mathbb{M}_+$, and the Hermitian conjugate defines them; the sector swap is multiplication by the central scalar imaginary $i$, which is not a conjugation. The transition between the two sectors is therefore not the particle–antiparticle or chiral-conjugate transition; the temptation to read it so is the trap the companion articles record, and it is refuted by the fixed-point definitions. Of the three operations, only the factor of $T$ is a multiplication by an element, namely the chirality's right multiplication by $-i\vec e_z$; $C$ and $P$ need the exchange of the two parts, which no multiplication performs, so charge conjugation and parity are not operations of the algebra's own action.
 
-The composition was checked as a composition. Because $C$ and $T$ are anti-linear, $\Theta=C\circ P\circ T$ has internal factor $\eta_{CPT}=\eta_C\eta_P^{J}\eta_T^{J}$, equal to $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}=i\omega$ in the convention used here, where $\omega=-R_{\vec e_z}^{\mathrm{axf}}$ is the volume element the framework identifies with the scalar imaginary; $\omega$ multiplies $\tilde\Psi_L$ by $i$ and $\tilde\Psi_R$ by $-i$. The composition is complex-linear, maps particles to antiparticles, and preserves chirality. What the framework establishes is that the free Dirac equation carries these operations and their composition, with the anti-linearity supplied by the algebra's complex conjugation in $C$ and $T$; what it transcribes is the CPT theorem. A free-field check is not the theorem, whose content is the survival of the composition under interactions, and the intrinsic forms of $C$ and $P$ remain open.
+The composition was checked as a composition. Because $C$ and $T$ are anti-linear, $\Theta=C\circ P\circ T$ is evaluated on the field and not by multiplying absolute phases; it acts as $\Theta[\tilde\Psi](x)=\Gamma\tilde\Psi(-x)$ in the convention used here, where $\Gamma=-i\vec e_z=i\omega$ is the chirality, $-1$ on the left part and $+1$ on the right. The composition is complex-linear, maps particles to antiparticles, and preserves the chirality. What the framework establishes is that the free Dirac pair carries these operations and their composition, with the anti-linearity supplied by the algebra's conjugation of the coefficients in $C$ and $T$; what it transcribes is the CPT theorem. A free-field check is not the theorem, whose content is the survival of the composition under interactions, and the intrinsic forms of $C$ and $P$ remain open.
 
-The classification supplies a second reading of the same eight operations: they are the identity, the algebra's three conjugations $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$ — three order-two maps that commute pairwise, so a $\mathbb{Z}_2\times\mathbb{Z}_2$ — and their composites with charge conjugation, and the eight generate $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$. The algebra's own conjugations are the untwisted maps, while $C$ is the twisted one, which is the algebraic form of the article's finding that $C$ is not a left multiplication by an element. That classification is transcribed, and the step from it to the internal cells is left open.
+The classification supplies a second reading of the same eight operations: they are the identity, the algebra's three conjugations $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$ — three order-two maps that commute pairwise, so a $\mathbb{Z}_2\times\mathbb{Z}_2$ — and their composites with charge conjugation, and the eight form $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ up to the sign of a product. The algebra's own conjugations are the untwisted maps, while $C$ is the twisted one, which is the algebraic form of the article's finding that $C$ needs the exchange of the parts. That classification is transcribed, and the step from it to the exchange and the internal factor is left open.
 
 ## Summary of Notation
 
@@ -431,36 +340,32 @@ The classification supplies a second reading of the same eight operations: they 
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ $(j\ne k)$ |
-| $i$ | The scalar imaginary, identified here with the volume element $\omega$ |
+| $i$ | The central scalar imaginary |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Real-quaternion subspace; centre |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations; order two, commuting pairwise, $\natural=\bar{\cdot}\circ{}^{*}$ |
 | $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, $\mathbb{C}$-antilinear and order-reversing |
-| $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ | The Dirac field, an element of $\mathbb{B}$; $L$ is the $-1$ value of $\Gamma$ and $R$ the $+1$ value; $(\mathbb{D}-m)\tilde\Psi=0$ |
-| $J$, $\tilde\Xi^{J}$ | The conjugation of the field: the anti-linear map of the realization, which keeps $G_0$, $G_1$, $G_3$ and negates $G_2$ |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
-| $L_{a}$, $R_{b}$, $L_{a}R_{b}$ | Left multiplication, right multiplication, and the two-sided cell that applies both |
-| $G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | The four generator cells; $G_0^{2}=1$, $G_k^{2}=-1$, distinct ones anticommute; $G_2G_3=L_{\vec e_x}$, $G_3G_1=L_{\vec e_y}$, $G_1G_2=L_{\vec e_z}$ |
-| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial_{t'}-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial_k=iG_\mu\partial/\partial x_\mu$ | The Dirac operator; $\mathbb{D}\tilde\Psi=-\partial_{t'}\tilde\Psi\,\vec e_x-\sum_k\vec e_k\partial_k\tilde\Psi\,\vec e_y$; $\mathbb{D}^{2}=-\Box$ |
-| $A(\vec p)=G_0E_{\vec p}-\sum_k G_kp_k$ | Plane-wave amplitude, $E_{\vec p}^2=\vec p^2+m^2$; $p\cdot x=E_{\vec p}t'-\vec p\cdot\vec x$ |
-| $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, $\omega=-R_{\vec e_z}^{\mathrm{axf}}=-i\Gamma$ | Chirality cell and volume element; $\Gamma^2=1$; $\Gamma$ anticommutes with each $G_\mu$; $\omega\tilde\Psi_L=i\tilde\Psi_L$, $\omega\tilde\Psi_R=-i\tilde\Psi_R$; $\eta_{CPT}=\Gamma=i\omega$ |
-| $C[\tilde\Psi]=-\vec e_y\tilde\Psi^{J}\vec e_y$ | Charge conjugation (anti-linear, $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $\eta_C^2=1$, flips chirality) |
-| $P[\tilde\Psi]=i\tilde\Psi(t',-\vec x)\vec e_x$ | Parity (linear, $\eta_P=G_0$, $\eta_P^2=1$, flips chirality) |
-| $T[\tilde\Psi]=-\vec e_y\tilde\Psi^{J}(-t',\vec x)$ | Time reversal (anti-linear field map, $\eta_T=-L_{\vec e_y}^{\mathrm{axf}}$, $\eta_T^2=-1$, preserves chirality) |
-| $\Theta=C\circ P\circ T$ | CPT composition; $\Theta[\tilde\Psi](x)=\eta_{CPT}\tilde\Psi(-x)$ |
-| $\eta_{CPT}=\eta_C\eta_P^{J}\eta_T^{J}$ | Internal factor of the composition; $=\Gamma$ in the aligned convention |
-| $\{1,P,T,PT,C,CP,CT,CPT\}\cong\mathbb{Z}_2^3$ | The group of the eight discrete operations |
+| $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | Biquaternionic gradient, acting on the left, and d'Alembertian |
+| $\tilde\Psi_L$, $\tilde\Psi_R$ | The two parts of the field: the eigenspaces of right multiplication by $\omega$ with eigenvalues $i$ and $-i$, the $-1$ and $+1$ values of the chirality |
+| $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ | The Dirac field, one element of $\mathbb{B}$; dynamics $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ |
+| $\omega=-\vec e_z$, $\Gamma=i\omega=-i\vec e_z$ | $\omega^2=-e_t$; the chirality is the right action $\psi\mapsto\psi\Gamma=-i\psi\vec e_z$, $\Gamma^2=e_t$, $-1$ on the left part and $+1$ on the right |
+| $\mathbb{D}(\Psi_L,\Psi_R)=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$ | The pair operator on $\mathbb{B}\oplus\mathbb{B}$; $\mathbb{D}^2=\Box I$; $(\mathbb{D}-m)\Psi=0$ is the pair |
+| $\tilde K=-E_{\vec p}e_t+i\vec p$ | Symbol of $\tilde\nabla$ on $e^{-ip\cdot x}$; $\tilde K^{\natural}\tilde K=E_{\vec p}^2-\vec p^2=m^2$ |
+| $J=\bar{\cdot}$, $\tilde\Xi^{J}$ | The conjugation of the field: the coefficient conjugation, anti-linear and an automorphism, which carries each member of the pair onto the other |
+| $C[\tilde\Psi]=(\tilde\Psi_R^{\,J},\tilde\Psi_L^{\,J})$ | Charge conjugation (anti-linear, exchanges the parts, flips chirality) |
+| $P[\tilde\Psi](t',\vec x)=(\tilde\Psi_R,\tilde\Psi_L)(t',-\vec x)$ | Parity (linear, exchanges the parts, flips chirality) |
+| $T[\tilde\Psi](t',\vec x)=(-\tilde\Psi_L^{\,J},\tilde\Psi_R^{\,J})(-t',\vec x)$ | Time reversal (anti-linear, internal factor $\Gamma$, preserves chirality) |
+| $\Theta=C\circ P\circ T$ | CPT composition; $\Theta[\tilde\Psi](x)=\Gamma\tilde\Psi(-x)$ |
+| $\{1,P,T,PT,C,CP,CT,CPT\}/\{\pm1\}\cong\mathbb{Z}_2^3$ | The group of the eight discrete operations, up to the sign of a product |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - G. Lüders and B. Zumino, "Connection between Spin and Statistics," *Physical Review* **110** (1958) 1450–1453, for the general proof of the CPT theorem in the axiomatic setting.
 - R. F. Streater and A. S. Wightman, *PCT, Spin and Statistics, and All That* (Benjamin, 1964), for the Wightman-axiomatic treatment from which the theorem's hypotheses — locality, positivity, Lorentz invariance — are read.
 - J. J. Sakurai, *Invariance Principles and Elementary Particles* (Princeton, 1964), for the classic operator treatment of the discrete symmetries and of CPT.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the CPT theorem in the Lagrangian setting and the role of the anti-unitary operations.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), and C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Dirac-field implementations of $C$, $P$ and $T$ used here.
-- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the plane-wave amplitudes, the charge-conjugation cell and the mode exchange.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), and Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the structure of $\mathrm{Cl}_{1,3}$ and the volume element.
+- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the plane-wave amplitudes, the charge-conjugation operation and the mode exchange.
 - P. K. Rashevskii, "The theory of spinors," *Uspekhi Matematicheskikh Nauk* **10** (1955) 3–110 (*American Mathematical Society Translations* (2) **6** (1957) 1–110), for the classification of the intrinsic order-two maps of the algebra, which the section above reads as the discrete operations.
 - V. V. Varlamov, "Spinor Structure and Internal Symmetries," *International Journal of Theoretical Physics* **54** (2015) 3533–3576 (arXiv:1409.1400), for the assignment of the discrete operations to the intrinsic maps of the algebra and to the charge-conjugation pseudoautomorphism, and for the group structure $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$.
-- Companion articles: *Charge Conjugation and the Division Ring*; [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html); [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html); [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html); [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html); [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html); [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html); [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html); [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html); [Exercise: Chirality and the Weyl Spinors](exercise-chirality-and-the-weyl-spinors.html); [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html); [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html); [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html); [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html); *Clifford Algebra Representation*.
+- Companion articles: *Charge Conjugation and the Division Ring*; [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html); [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html); [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html); [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html); [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html); [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html); [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html); [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html); [Exercise: Chirality and the Weyl Spinors](exercise-chirality-and-the-weyl-spinors.html); [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html); [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html); [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html); [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html).

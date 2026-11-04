@@ -8,9 +8,19 @@ This article records the equations, the spin chains they live on, and the third 
 
 It is worth separating this article from the companion that shares the name Bhabha. *Bhabha Scattering in Biquaternionic Form* is about the elastic scattering of an electron and a positron; the present article is about Bhabha's *wave equations*, a different piece of work by the same author. The two are cross-referenced and not merged.
 
-**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$. Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, the three squaring to $-e_t$. The two-sided cells act by $L_aR_b\psi=a\psi b$, and the **generator cell** of the coordinate $x_\mu$ is $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$. The gammas are the frame names of the same cells and appear only in the section *The Legacy Pauli Gamma Formulation*; no gamma-matrix is used before it.
+**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$. Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, the three squaring to $-e_t$. Every derivative of a field with values in $\mathbb{B}$ is the **biquaternionic gradient**
 
-**The order of the article.** A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction and settles its metric and its index order. A fourth works the proton chain and writes the Dirac limit in its two forms, the one-sided chiral pair and the two-sided cell equation. A fifth states the biquaternion interpretation and separates what is established from what is transcribed; the gammas are collected in a section of their own before the summary.
+$$
+\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\qquad
+\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
+$$
+
+with the **d'Alembertian** $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta_Q$, where $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ is the Laplacian in the three vector coordinates; on the material sector, where $Q_t=ict'$, it reads $\Delta_Q-c^{-2}\,\partial^2/\partial {t'}^2$. The Laplacian always carries the subscript, and $\Delta$ without one is the Dirac module of the fourth section, never an operator. The square of $\tilde\nabla$ alone is **not** scalar, $\tilde\nabla^2=\partial^2/\partial Q_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial Q_t\partial Q_k$, because $e_t$ commutes with the three spatial units and the mixed derivatives add. The first-order operator whose square is $\Box$ is therefore the **pair operator** on two fields, not a gradient acting on one.
+
+**Which fields the gradient acts on.** The gradient is the derivative of every field valued in $\mathbb{B}$, and the Dirac field of the fourth section is one: its four complex components are those of a biquaternion, so left multiplication by $\tilde\nabla$ acts on it. The source's fields at a general $\tau^{l\bar l}$ are columns of the representation, not elements of $\mathbb{B}$, and their derivative — $\partial/\partial x_\mu$ in Minkowski space, $\partial/\partial a_j$ in $\mathbb{R}^6$ — is therefore quoted as printed rather than rewritten as a gradient. No derivative in the article acts on the field from the right.
+
+**The order of the article.** A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction and settles its metric and its index order. A fourth works the proton chain and writes the Dirac limit as the chiral pair, together with the pair operator that states it once. A fifth states the biquaternion interpretation and separates what is established from what is transcribed.
 
 **The articles it leans on.**
 
@@ -174,7 +184,7 @@ which lists the three boosts first and the three rotations second: the pairs $10
 
 The inertia $(3,3)$ is the inertia of the Lorentz Lie algebra's Killing form, in the same order: three negative directions for the non-compact boosts and three positive for the compact rotations. The bivector space is $\mathbb{R}^6$ as a real vector space; the identification with $\mathbb{C}^3$ needs a complex structure, and the metric is not the positive-definite form that a Hermitian metric on $\mathbb{C}^3$ would give — it is the split form, with three directions of each sign. The two structures are therefore not interchangeable: $\mathbb{C}^3$ names a complex structure on $\mathbb{R}^6$, and the metric $g_{\alpha\beta\gamma\delta}$ is a separate choice on the same space.
 
-**A note on the two orders of the coordinates.** The corpus's cell frame lists the time coordinate first and writes $\varepsilon=(1,-1,-1,-1)$, the opposite of the source's order; the two metrics are the same metric written in opposite orders. The article keeps each order where it is used and never mixes them in one display.
+**A note on the two orders of the coordinates.** The corpus's frame lists the time coordinate first and writes $\varepsilon=(1,-1,-1,-1)$, the opposite of the source's order; the two metrics are the same metric written in opposite orders. The article keeps each order where it is used and never mixes them in one display.
 
 ### The Equations in $\mathbb{R}^6$
 
@@ -184,7 +194,17 @@ $$
 \Pi_j := M^{l}_j\otimes\mathbf{1}_{2\bar l+1}-\mathbf{1}_{2l+1}\otimes M^{\bar l}_j,
 $$
 
-in which $M^{l}_j$ and $M^{\bar l}_j$ are the generators of the two factors. With $a_j$ the three complex coordinates of $\mathbb{C}^3$, $a_j^*$ their conjugates, $\dot\psi$ the conjugate field and $\tilde a_j$ the dual coordinates, the source's equation and its conjugate read
+in which $M^{l}_j$ and $M^{\bar l}_j$ are the generators of the two factors.
+
+**This is the one two-sided operator in the article.** A field of the source is valued in $V\otimes\bar V$, and with $V\otimes\bar V\cong M_2(\mathbb{C})\cong\mathbb{B}$ that value is a matrix, so the generator acts by
+
+$$
+\Pi_j\psi=\psi\,(M^{l}_j)^{\mathsf T}-M^{\bar l}_j\,\psi,
+$$
+
+one multiplication of the field from the right by $(M^{l}_j)^{\mathsf T}$, one from the left by $M^{\bar l}_j$. The two forms agree as maps, exactly and not up to a basis choice, and the operator is nonzero against both sides, so it is neither a left action nor a right one. It is the source's own generator, quoted as the source writes it, and it is not rewritten as a gradient: the gradient acts on fields valued in $\mathbb{B}$, and this operator would remain two-sided on those as well. Reading the two sides is what shows why this equation is not a gradient equation.
+
+With $a_j$ the three complex coordinates of $\mathbb{C}^3$, $a_j^*$ their conjugates, $\dot\psi$ the conjugate field and $\tilde a_j$ the dual coordinates, the source's equation and its conjugate read
 
 $$
 \boxed{\;
@@ -199,11 +219,11 @@ $$
 
 Here $\Pi_j^{*}$ is $\Pi_j$ with both factors conjugated.
 
-**The two lines are written in opposite orders.** The first line's generator puts the unbarred factor first, $M^{l}_j\otimes\mathbf{1}_{2\bar l+1}-\mathbf{1}_{2l+1}\otimes M^{\bar l}_j$. The source's second line puts the barred factor first, $M^{\bar l}_j\otimes\mathbf{1}_{2l+1}-\mathbf{1}_{2\bar l+1}\otimes M^{l}_j$: the same operator on the same space, with the two tensor factors interchanged. Each line is dimensionally consistent on its own, and the interchange is legitimate, because the conjugate field $\dot\psi$ is written on $\bar V\otimes V$ rather than on $V\otimes\bar V$. The display above keeps one ordering for both lines; the interchange is a choice of basis, not a correction.
+**The two lines are written in opposite orders.** The first line's generator puts the unbarred factor first, $M^{l}_j\otimes\mathbf{1}_{2\bar l+1}-\mathbf{1}_{2l+1}\otimes M^{\bar l}_j$. The source's second line puts the barred factor first, $M^{\bar l}_j\otimes\mathbf{1}_{2l+1}-\mathbf{1}_{2\bar l+1}\otimes M^{l}_j$: the same operator on the same space, with the two tensor factors interchanged. Each line is dimensionally consistent on its own, and the interchange is legitimate, because the conjugate field $\dot\psi$ is written on $\bar V\otimes V$ rather than on $V\otimes\bar V$. In the two-sided reading of the previous paragraph the interchange also swaps the sides: the right multiplication becomes the left one and the left one becomes the right, so the two lines differ in which factor acts from which side and not only in the order of the factors. The display above keeps one ordering for both lines; the interchange is a choice of basis, not a correction.
 
-**A check of the imaginary units.** The $i$ of the second sum is not decorative, and the source's own conventions do not decide whether it can be removed. Alongside the equation it writes $g_4=ia_1,\dots,g_6=ia_3$ and $a_1^*=-ig_4,\dots,a_3^*=-ig_6$; the two relations together give $a_j^*=a_j$, which cannot be a conjugation, so at least one of them is a slip. With $a_j^*=-ig_{j+3}$ read as the definition, $\partial/\partial a_j^*=i\,\partial/\partial g_{j+3}$; the $i$ of the second sum then meets the chain-rule $i$, and $i^2=-1$ replaces the pair by a minus. If instead $g_{j+3}=ia_j^*$ is taken as the coordinate, the pair of relations is consistent and the same reduction holds. Either correction removes the $i$; the printed pair, read literally, does not. The display above keeps the $i$ as printed, and the open question below records which relation is meant to be the definition.
+**A check of the imaginary units.** The $i$ of the second sum is a scalar coefficient, standing in front of the matrix $\Pi_j^{*}$; whether it is read as the central $i$ or as the pseudoscalar $\omega$ changes nothing in the display, and the reduction below uses only $i^2=-1$. It is not decorative, and the source's own conventions do not decide whether it can be removed. Alongside the equation it writes $g_4=ia_1,\dots,g_6=ia_3$ and $a_1^*=-ig_4,\dots,a_3^*=-ig_6$; the two relations together give $a_j^*=a_j$, which cannot be a conjugation, so at least one of them is a slip. With $a_j^*=-ig_{j+3}$ read as the definition, $\partial/\partial a_j^*=i\,\partial/\partial g_{j+3}$; the $i$ of the second sum then meets the chain-rule $i$, and $i^2=-1$ replaces the pair by a minus. If instead $g_{j+3}=ia_j^*$ is taken as the coordinate, the pair of relations is consistent and the same reduction holds. Either correction removes the $i$; the printed pair, read literally, does not. The display above keeps the $i$ as printed, and the open question below records which relation is meant to be the definition.
 
-The equations are defined in the three-dimensional complex space $\mathbb{C}^3$, which is the bivector space in its complex form; the generalised spin is $s=|l-\bar l|$ and the mass is $m$, exactly as in Minkowski space. The structure of the equations — a difference of two tensor-product generators contracted with a derivative — is the structure that becomes the generator cells of the Dirac equation at the first chain member.
+The equations are defined in the three-dimensional complex space $\mathbb{C}^3$, which is the bivector space in its complex form; the generalised spin is $s=|l-\bar l|$ and the mass is $m$, exactly as in Minkowski space. The structure of the equations — two tensor-product generators, one from each factor, contracted with the derivatives of one field — is the structure the Dirac equation carries at the first chain member, where the two operators are the gradient and its conjugate and the one equation is the chiral pair. The correspondence is stated, not derived here: the source's generator is two-sided on the matrix-valued field, its two sides are the two factors of the tensor product, and it is not a derivative, so this equation is not a gradient equation and its Dirac limit is written separately below.
 
 ## The Proton Chain and the Dirac Limit
 
@@ -221,73 +241,56 @@ $$
 
 The first member is the **fundamental doublet**: the representation $\tau^{\frac12,0}\oplus\tau^{0,\frac12}$, four complex components in all — the two spin projections $\pm\frac12$ in two copies, one copy from each factor — which is the **electron**. The Dirac field reads the two copies as the two chiralities, which in the massless limit are the two helicities. Each single arrow is one interlocking step, adding $\frac12$ to both labels; each double arrow pairs a representation with its conjugate.
 
-### The Two Dirac Equations
+### The Dirac Equation on the Doublet
 
-On the fundamental doublet the Bhabha equation is the Dirac equation, and the corpus writes that equation in two forms that must not be read as one.
+On the fundamental doublet the Bhabha equation is the Dirac equation. The corpus writes it as a pair, one member for each chirality, and the reason is the one stated in the notation: a first-order equation on a single field has no scalar square.
 
-**The chiral pair.** On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$, with $\psi=\psi_L+\psi_R$, $\psi_L\in S$ and $\psi_R\in S^{\mathrm{c}}$, the equation is the one-sided pair
+**The chiral pair.** On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$, with $\psi=\psi_L+\psi_R$, $\psi_L\in S$ and $\psi_R\in S^{\mathrm{c}}$, the equation is the pair
 
 $$
 \boxed{\;\tilde\nabla\psi_R=m_e\psi_L,\qquad \tilde\nabla^{\natural}\psi_L=m_e\psi_R\;}
 $$
 
-with
-
-$$
-\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z}
-$$
-
-and $\tilde\nabla^{\natural}$ its conjugate, the natural conjugation $\natural$ applied to the units. One equation per chirality; the mass couples the two. At $m_e=0$ the pair decouples into $\tilde\nabla\psi_R=0$ and $\tilde\nabla^{\natural}\psi_L=0$. Applying $\tilde\nabla^{\natural}$ to the first member and using the second gives
+with $\tilde\nabla$ the gradient of the notation and $\tilde\nabla^{\natural}$ its natural conjugate, the conjugation $\natural$ applied to the units. One equation per chirality; the mass couples the two. At $m_e=0$ the pair decouples into $\tilde\nabla\psi_R=0$ and $\tilde\nabla^{\natural}\psi_L=0$. Applying $\tilde\nabla^{\natural}$ to the first member and using the second gives
 
 $$
 \Box\psi_R=m_e^2\psi_R,
 \qquad
 \Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla
-=\frac{\partial^2}{\partial Q_t^2}+\Delta ,
+=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
 $$
 
 so each chiral half obeys the Klein–Gordon equation.
 
-**The two-sided cell equation.** On the same module the pair is one equation in which the derivatives act through two-sided cells. In the real coordinates $x_0=ct'$, with $Q_t=ix_0$ and $\partial/\partial Q_t=-i\,\partial/\partial x_0$, it is
+**The pair operator.** The two members are one operator on the pair. Write $\Psi=(\psi_L,\psi_R)$ and
 
 $$
-\boxed{\;(\mathbb{D}-m_e)\psi=0,\qquad
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_0}-\sum_{k=1}^{3}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k}\;}
+\boxed{\;\mathbb{D}(\psi_L,\psi_R)=\bigl(\tilde\nabla\psi_R,\ \tilde\nabla^{\natural}\psi_L\bigr),\qquad
+\mathbb{D}^2=\Box\,I,\qquad
+(\mathbb{D}-m_e)\Psi=0\;}
 $$
 
-The operator is the four generator cells contracted with the four derivatives; the $i$ of each cell cancels the $i$ in front, and the expanded form has no imaginary unit:
+The operator is **off-diagonal** in the two halves: it carries each half into the other, and its square is the d'Alembertian on each, because $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$. Hence $(\mathbb{D}-m_e)\Psi=0$ implies $(\Box-m_e^2)\Psi=0$, the same Klein–Gordon consequence as the pair. The mass enters with the scalar coefficient $-m_e$. The operator is the pair written once; it is not a new object, and it carries no matrix generator.
+
+**Why one equation needs two fields.** A single gradient will not do this work. Its square is not scalar, $\tilde\nabla^2=\partial^2/\partial Q_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial Q_t\partial Q_k$, because $e_t$ commutes with the three spatial units and the mixed derivatives survive. So a first-order equation on one field cannot be turned into the Klein–Gordon equation by squaring it, and the first-order operator whose square is $\Box$ lives on the pair. This is why the massive equation is a pair, while the massless equation alone stays first order, $\tilde\nabla\psi_R=0$ and $\tilde\nabla^{\natural}\psi_L=0$, one equation on one field.
+
+**The parity of the two terms.** The sign of the two summands of $\Delta$ is the diagonal operator $\mathrm{diag}(1,-1)$,
 
 $$
-G_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
-G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\mathbb{D}=i\sum_{\mu=0}^{3}G_\mu\frac{\partial}{\partial x_\mu}.
+\mathrm{diag}(1,-1)(\psi_L,\psi_R)=(\psi_L,-\psi_R),\qquad \mathrm{diag}(1,-1)^2=I,
 $$
 
-The cells carry the cell relation of $\varepsilon=(1,-1,-1,-1)$,
+with eigenvalues $\pm1$, each twice on $\Delta$. The pair operator is off-diagonal by construction, so conjugating it by the sign returns its negative,
 
 $$
-\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad G_0^2=I_4,\qquad G_k^2=-I_4,
+\mathrm{diag}(1,-1)\,\mathbb{D}\,\mathrm{diag}(1,-1)=-\mathbb{D},
 $$
 
-so distinct cells anticommute, the cross terms of $\mathbb{D}^2$ vanish, and
+and the single equation $(\mathbb{D}-m_e)\Psi=0$ is the two equations $\tilde\nabla\psi_R=m_e\psi_L$ and $\tilde\nabla^{\natural}\psi_L=m_e\psi_R$. The mass term $m_eI$ is diagonal and therefore even under the sign, while the gradient term is odd. It is exactly that mismatch of parity that makes one equation carry two coupled equations rather than two separate ones. The sign is a matrix on the pair and carries no element of $\mathbb{B}$; it is not the central chirality, and the letter used for that one is left free.
 
-$$
-\mathbb{D}^2=-\frac{\partial^2}{\partial x_0^2}+\Delta=\Box .
-$$
+**How the two are one.** The pair is the definition on the two chiral halves; the pair operator is the same pair written once on $\mathbb{B}\oplus\mathbb{B}$. The two have the same square and the same massless content, and neither is a second physics: each member is a single left multiplication by the gradient or by its conjugate, no derivative acts from the right, and the mass is the only term that couples the two halves.
 
-Hence $(\mathbb{D}-m_e)\psi=0$ implies $(\Box-m_e^2)\psi=0$, the same Klein–Gordon consequence as the pair. The mass enters with the scalar coefficient $-m_e$.
-
-The chirality is the right multiplication $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$, an involution with eigenvalues $\pm1$ of multiplicity two that splits $\Delta$ into the two chiral halves. It anticommutes with every generator cell, and therefore with $\mathbb{D}$,
-
-$$
-\chi\mathbb{D}\chi=-\mathbb{D},
-$$
-
-so the single equation is the pair $\mathbb{D}\psi_R=m_e\psi_L$ and $\mathbb{D}\psi_L=m_e\psi_R$: $\mathbb{D}\psi_R$ lies in the left half, where $m_e\psi_L$ lives, and $\mathbb{D}\psi_L$ lies in the right. The mass is a scalar and therefore even under $\chi$; it is exactly because $\mathbb{D}$ is odd and $m_e$ even that one equation links the halves at all. Chirality supplies the two equations, and the two-sided operator is what lets one equation hold them.
-
-**How the two are one.** The pair is the definition on the two chiral halves; the cell equation is its representative on the single module $\Delta$. The two are related by the dictionary of *The Dirac Equation in Biquaternionic Form*, they have the same square and the same massless content, and neither is a second physics. What distinguishes them is the side of the action: the pair is one-sided, left multiplication by $\tilde\nabla$ or $\tilde\nabla^{\natural}$, while the cell equation uses the two-sided cells, the time derivative acting from the right and the spatial derivatives from both sides.
-
-The two squares are one operator in two coordinates, and one substitution shows it. In the complex coordinate $Q_t=ix_0$ the pair's square is $\partial^2/\partial Q_t^2+\Delta$, and $\partial/\partial Q_t=(1/i)\,\partial/\partial x_0$ gives $\partial^2/\partial Q_t^2=-\partial^2/\partial x_0^2$, which is the cell operator's square. The product $\tilde\nabla\tilde\nabla^{\natural}$ equals $\tilde\nabla^{\natural}\tilde\nabla$, so the order in which the pair is squared does not matter.
+The two squares are one operator in two coordinates, and one substitution shows it. In the complex coordinate $Q_t=ix_0$ the pair's square is $\partial^2/\partial Q_t^2+\Delta_Q$, and $\partial/\partial Q_t=(1/i)\,\partial/\partial x_0$ gives $\partial^2/\partial Q_t^2=-\partial^2/\partial x_0^2$, which is $-\partial^2/\partial x_0^2+\Delta_Q$, the Klein–Gordon operator in the real time $x_0=ct'$. The product $\tilde\nabla\tilde\nabla^{\natural}$ equals $\tilde\nabla^{\natural}\tilde\nabla$, so the order in which the pair is squared does not matter.
 
 ### The Proton
 
@@ -340,7 +343,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)=(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$, and its non-injectivity across spin lines; for the proton's first factor $60\times59=3540$.
 - The $\pm$ pairing of the eigenvalues of $M_0$, derived from the evenness in $p_0$ of the rest-frame determinant.
 - The bivector metric's $(3,3)$ inertia, and the printed diagonal as the componentwise image in the order $10,20,30,23,31,12$; recomputed for all six collective indices.
-- The Dirac limit's cells: $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $iG_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\mathbb{D}^2=\Box$, the product of the four generator cells equal to $-R_{\vec e_z}^{\mathrm{axf}}$, and the reduction to the Pauli matrices at $c_{\frac12,\frac12}=2$; recomputed on the explicit $4\times4$ cell representation.
+- The Dirac limit: the gradient identities $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ and the non-scalar square $\tilde\nabla^2=\partial^2/\partial Q_t^2-\Delta_Q+2\sum_k\vec e_k\,\partial^2/\partial Q_t\partial Q_k$, the pair operator's $\mathbb{D}^2=\Box\,I$, and the sign's $\mathrm{diag}(1,-1)\mathbb{D}\mathrm{diag}(1,-1)=-\mathbb{D}$ with eigenvalues $\pm1$ each twice; recomputed on the $4\times4$ coefficient representation over $300$ random complex four-momenta, the gradient identities, the square $\mathbb{D}^2-\Box I$ and the sign at residual $4.0\times10^{-15}$, and the anticommutation exactly.
 - The proton-to-electron mass ratio: the product $(l+\frac12)(\bar l+\frac12)$ is $30\times29.5=885$ at $(59/2,29)$ and $1\times\frac12$ at the electron's $(1/2,0)$, so the ratio is $885/\frac12=1770$.
 
 **Transcribed, not derived.**
@@ -375,85 +378,13 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 
 6. **The Maxwell–Dirac package.** The corpus's *Bispinor Fields* article derives the Maxwell–Dirac solution in the corpus's form. Does the programme's massless limit coincide with it exactly, including the conventions of the axial current?
 
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the four generator cells and the chirality cell of the body become
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-Thus $\gamma_\mu[\mathbb{M}_-]=G_\mu$, and the Dirac operator of the body reads
-
-$$
-\mathbb{D}=i\sum_{\mu=0}^{3}\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu}.
-$$
-
-The dictionary between the two names is the single collapse
-
-$$
-i\,\gamma_\mu[\mathbb{M}_-]=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}},
-$$
-
-In the axis-free display:
-
-$$
-i\,\gamma_\mu[\mathbb{M}_-]=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},
-$$
-
-so multiplying a generator cell by $i$ trades it for a plain cell, and the four imaginary units of a four-fold product reduce by $i^4=+1$. In particular the volume cell is
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}}=\omega=-i\gamma_5 .
-$$
-
-The same identities in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{axf}}=\omega=-i\gamma_5 .
-$$
-
-$\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=\chi$ is the chirality cell on the module; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ and $\chi_{\mathrm{ad}}$ the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$, is a different object; being central, it acts on the module as a sign, and $\gamma_5$ is its representative there.
-
-The anticommutation relations in the gamma reading are
-
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
-$$
-
-with $\varepsilon=(1,-1,-1,-1)$.
-
-**The sign of $\gamma_5$.** With all four indices lowered the volume relation is $\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, equivalently $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5$. The textbook form is $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$, with raised indices; raising the three spatial gammas costs three signs, so applying that convention to the same cells gives $-\gamma_5$. The overall sign of $\gamma_5$ is a labelling convention, and no equation of the body uses it. What does use it is the naming of the halves: a reader comparing with a textbook should flip the labels of $\psi_L$ and $\psi_R$.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
 ## Summary
 
 The Bhabha–Gel'fand–Yaglom wave equations place a field in an arbitrary Lorentz representation $\tau^{l\bar l}$, carried by coefficients of symmetric spintensors of degree $(k+1)(r+1)=(2l+1)(2\bar l+1)$, and give it a matrix mass whose determinant is a polynomial in $s^2=p^2$ with roots $m_i^2$. The $\pm$ pairing of the eigenvalues is a consequence of the determinant's evenness at rest; the source's reading of the masses from those eigenvalues is not the determinant's, and is recorded as an open question. The representations are organised into interlocking chains — the Bose and Fermi schemes — and the fields of type $(l,\bar l)\oplus(\bar l,l)$ carry generalised spin $s=|l-\bar l|$.
 
 The equations can be mapped into the six-dimensional bivector space $\mathbb{R}^6\cong\mathbb{C}^3$. The printed bivector metric is the componentwise image of the Minkowski metric under the boost-first collective order $10,20,30,23,31,12$; the order printed in the source interleaves the two classes and does not reproduce it. With the corrected order, the three boosts carry $-1$ and the three rotations $+1$, which is the $(3,3)$ split of the Lorentz parameter space. The $\mathbb{R}^6$ equation keeps the source's explicit $i$ in its second sum: the source's two relations for the conjugate coordinate are mutually inconsistent, so the reduction of that pair of imaginary units by $i^2=-1$ is stated as a consequence of one reading and left open, rather than performed silently.
 
-The first chain member is the electron's Dirac doublet, and the Dirac equation has two forms. The **chiral pair** $\tilde\nabla\psi_R=m_e\psi_L$, $\tilde\nabla^{\natural}\psi_L=m_e\psi_R$ is the one-sided definition on the two chiral halves. The **cell equation** $(\mathbb{D}-m_e)\psi=0$ is its two-sided representative on the single module, with $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$ and $\mathbb{D}^2=\Box$. The two have the same square, the same massless content, and neither is a second physics: the chirality cell anticommutes with $\mathbb{D}$, and that oddness is what turns the single equation into the pair. The nucleon is taken at the chain member $(59/2,29)$ of degree $3540$; the ratio $m_p/m_e=1770$ is $3.6\%$ below the measured value.
+The first chain member is the electron's Dirac doublet, and its Dirac equation is the **chiral pair** $\tilde\nabla\psi_R=m_e\psi_L$, $\tilde\nabla^{\natural}\psi_L=m_e\psi_R$, one left multiplication per member and one equation per chirality. The two members are one operator on the pair, the **pair operator** $\mathbb{D}(\psi_L,\psi_R)=(\tilde\nabla\psi_R,\tilde\nabla^{\natural}\psi_L)$ with $\mathbb{D}^2=\Box\,I$ and $(\mathbb{D}-m_e)\Psi=0$. The pair is the definition and the operator is the same pair written once, so neither is a second physics. The single gradient cannot do the work alone: $\tilde\nabla^2$ is not scalar, the mixed derivatives through $e_t$ survive, so no first-order equation on one field has a scalar square, and the massive equation is necessarily a pair. The nucleon is taken at the chain member $(59/2,29)$ of degree $3540$; the ratio $m_p/m_e=1770$ is $3.6\%$ below the measured value.
 
 The framework's relation to this is the fundamental doublet's factor: $\mathbb{C}^2$ is the defining module of the biquaternion algebra, the bivector space is the corpus's field-strength space, and the equations' massless limit is the corpus's Weyl pair, with the Maxwell field in spinor form as the programme's companion identification. The higher chain members lie outside $\mathbb{B}$, and the physical assignments are choices fixed by the mass ratio.
 
@@ -471,18 +402,16 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 | $\mu_0$, $\lambda_i$ | Mass scale and eigenvalues of $M_0$ |
 | $g_{ab}$, order $10,20,30,23,31,12$ | Bivector-space metric and its boost-first collective order |
 | $a_j$, $a_j^*$ | Three complex bivector coordinates and their conjugates |
-| $\Pi_j=M^{l}_j\otimes\mathbf{1}-\mathbf{1}\otimes M^{\bar l}_j$ | Tensor-product generator of the $\mathbb{R}^6$ equation |
+| $\Pi_j=M^{l}_j\otimes\mathbf{1}-\mathbf{1}\otimes M^{\bar l}_j$, $\Pi_j\psi=\psi(M^{l}_j)^{\mathsf T}-M^{\bar l}_j\psi$ | Tensor-product generator of the $\mathbb{R}^6$ equation; two-sided, the article's one such operator |
 | $\mathbb{C}^3\cong\mathbb{R}^6$ | Complex form of the bivector space, Lorentz parameter space |
 | $(59/2,29)$, degree $3540$ | The proton's chain member |
-| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient, its natural conjugate, and the scalar d'Alembertian |
-| $\tilde\nabla\psi_R=m\psi_L$, $\tilde\nabla^{\natural}\psi_L=m\psi_R$ | The one-sided Dirac pair, one equation per chirality |
-| $L_aR_b\psi=a\psi b$, $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\nu(t)=x$, $\nu(k)=y$ | Two-sided cells and the generator cells |
-| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$, $\mathbb{D}^2=\Box$ | Two-sided cell Dirac operator; $(\mathbb{D}-m)\psi=0$ |
-| $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell on the module, $\chi^2=I_4$, eigenvalues $\pm1$ |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ | Gradient, its natural conjugate, and the scalar d'Alembertian |
+| $\tilde\nabla\psi_R=m\psi_L$, $\tilde\nabla^{\natural}\psi_L=m\psi_R$ | The chiral pair: each member one left multiplication, one equation per chirality |
+| $\mathbb{D}(\psi_L,\psi_R)=(\tilde\nabla\psi_R,\tilde\nabla^{\natural}\psi_L)$, $\mathbb{D}^2=\Box\,I$ | The pair operator; $(\mathbb{D}-m)\Psi=0$ |
+| $\mathrm{diag}(1,-1)$ | The sign of the two summands of $\Delta$; a matrix on the pair, eigenvalues $\pm1$, each twice |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. J. Bhabha, "Relativistic wave equations for the elementary particles," *Reviews of Modern Physics* **17** (1945) 200–216, for the finite-dimensional relativistic wave equations and their multi-mass spectra.
 - I. M. Gel'fand and A. M. Yaglom, "General relativistic-invariant equations with a mass spectrum," *Zhurnal Eksperimentalnoi i Teoreticheskoi Fiziki* **18** (1948) 703–733, for the general theory of the equations with a mass spectrum.
 - E. Majorana, "Teoria relativistica di particelle con momento intrinseco arbitrario," *Nuovo Cimento* **9** (1932) 335–344, for the infinite-component equation.

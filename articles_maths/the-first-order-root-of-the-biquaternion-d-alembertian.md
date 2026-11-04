@@ -10,24 +10,40 @@ $$
 =\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
 $$
 
-the quaternionic norm of the gradient. On the material sector $\mathbb{M}_-$, where $Q_t=iq'_t$, the same operator is
+the quaternionic norm of the gradient. On the material sector, where $Q_t=iq'_t$, the same operator is
 
 $$
-\Box=-\sum_{\mu,\nu}(g^{-1})_{\mu\nu}\,\partial^2/\partial Q_\mu\partial Q_\nu
-=-\frac{\partial^2}{\partial(q'_t)^2}+\Delta ,
+\Box=-\frac{\partial^2}{\partial (q'_t)^2}+\Delta .
+$$
+
+Every derivative in this article is the corpus gradient. With the units $e_t,\vec e_x,\vec e_y,\vec e_z$ and the coordinates $Q_\mu$,
+
+$$
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
 \qquad
-\varepsilon=(1,-1,-1,-1).
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\qquad
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla ,
 $$
 
-This article works in the real coordinates $x_\mu=(q'_t,x,y,z)$; the $Q$ form is the Euclidean transcription, with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$. This article asks for a first-order operator $D$ whose square is $\Box$, or the shifted operator $\Box-\lambda$ for a complex number $\lambda$.
+with $\Delta_Q=\sum_{k\in\{x,y,z\}}\partial^2/\partial Q_k^2$ and $\varepsilon=(1,-1,-1,-1)$. The gradient is an element with derivative coefficients, and it multiplies its argument on the left. No other letter names it.
 
-The question has two answers, and they are different. A **single square** is one first-order operator $D$ with $D^2=(\Box-\lambda)I$. A **factorisation** is a product $D_-D_+=(\Box-\lambda)I$ of two first-order operators. The single square is the stronger equation: its kernel is a chiral half of the second-order solution space. The factorisation is the weaker pair: when the two factors are distinct, the two first-order equations together are equivalent to the second-order equation. At $\lambda=0$ the two coincide at the level of the operator, but the kernel of the root is still a half. A **Clifford root** is a first-order operator of the form $D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)+B$ whose coefficient cells and zero-order matrix $B$ are constant; this article classifies the Clifford roots.
+This article asks for a first-order operator $D$ whose square is $\Box-\lambda$, or for a factorisation of $\Box-\lambda$ into two first-order operators. The two answers differ. A **single square** is one first-order operator $D$ with $D^2=(\Box-\lambda)e_t$, where both $D$ and its coefficients are read in the algebra; if it existed, its kernel would sit inside the second-order solution space. A **factorisation** is a product $D_-D_+$ of two first-order operators, each a left multiplication by an element with derivative coefficients, whose product is $(\Box-\lambda)e_t$. At $\lambda=0$ the algebra supplies it with $D_+=\tilde\nabla$ and $D_-=\tilde\nabla^{\natural}$. When the two factors are distinct, the two first-order equations together are equivalent to the second-order equation.
 
-**The results.** The d'Alembertian has no Clifford root on the two-dimensional simple module of $\mathbb{B}$. The minimal carrier is four-dimensional, the regular module $\mathbb{B}\cong S_+\oplus S_-$. The three elements $\vec e_k$ supply a three-generator Clifford system inside the algebra; the fourth generator is not a left multiplication by an element of $\mathbb{B}$, but the two-sided direction that exchanges the two minimal left ideals. On the regular module the unshifted cell root is $\mathsf D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)$, with $\mathsf D^2=\Box I$. The coefficients of $\mathsf D$ are cells of the enveloping algebra $\mathbb{B}^{\mathrm e}$, not elements of $\mathbb{B}$; the biquaternion object is the gradient, and the biquaternion factorisation of the unshifted operator is $\tilde\nabla\tilde\nabla^{\natural}=\Box$. The single square is the cell root. The shifted operator has a single root exactly when the zero-order term is a pseudoscalar $c\,(-iR_{\vec e_z})$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)$.
+**The results.** The algebra admits the factorisation and not the single square. A scalar square needs four elements of $\mathbb{B}$ that anticommute pairwise, with squares $+e_t$ and $-e_t$ in the ratio one to three. The algebra supplies the three of the minus sign, the spatial units $\vec e_k$, and no fourth: the three generate $\mathbb{B}$, and an element that anticommutes with all three is zero. The obstruction sits in the second order, where the zero-order term cannot reach, so no constant-coefficient first-order operator with element coefficients has a scalar square. The gradient is the first-order operator of the algebra. Its square carries a vector remainder, while its product with the conjugate is $\Box$. The free equation stays first order in one field, $\tilde\nabla\tilde\Psi=0$. The massive equation is the chiral pair
 
-**The two matrix sizes.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ (*The Polarized Module of the Biquaternion Algebra*). The gradient takes values in that algebra, and the d'Alembertian is its scalar norm; the target representation is $M_2(\mathbb{C})$, not $M_4(\mathbb{C})$. The four-dimensional space of this article is the regular module $\mathbb{B}$, on which the algebra acts by left multiplication. The $M_4(\mathbb{C})$ that appears below is the algebra of **operators** on that module, the enveloping algebra $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, not a second representation of $\mathbb{B}$. The distinction is the reason the root is two-sided: the d'Alembertian is a scalar operator read in the algebra, while the root lives in the operator algebra of the regular module.
+$$
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
+\qquad
+\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+\qquad \lambda=m^2 .
+$$
 
-The article is mathematics. The d'Alembertian is the norm of the gradient, and no physical interpretation is used. The conventions are those of *Algebra and Element Conventions* and *Operator and Calculus Conventions*; the two-sided operators are *Two-Sided Operators on the Biquaternion Algebra* and *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the minimal left ideals are *The Polarized Module of the Biquaternion Algebra* and *The Polarized Module of the Biquaternion Algebra*.
+On the doubled carrier $\mathbb{B}\oplus\mathbb{B}$ the pair operator $\mathbb{D}$ satisfies $\mathbb{D}^2=\Box I$, and the mass is its shift, $(\mathbb{D}-m)(\mathbb{D}+m)=(\Box-m^2)I$.
+
+**The two matrix sizes.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ (*The Polarized Module of the Biquaternion Algebra*). A field of this article is an element of that algebra, four complex dimensions. The gradient takes values in the algebra, and the d'Alembertian is its scalar norm. The operator algebra $\mathrm{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ is the algebra of maps of that field; it is not a second representation of $\mathbb{B}$, and this article uses no matrix carrier. A first-order root with matrix coefficients would be a map outside the algebra and outside the one-sided calculus.
+
+The article is mathematics. The d'Alembertian is the norm of the gradient; the mass is the name of the shift parameter, and no other physical interpretation is used. The conventions are those of *Algebra and Element Conventions* and *Operator and Calculus Conventions*; the calculus is one-sided, and every equation is written on the left.
 
 ## The D'Alembertian and Its Symbol
 
@@ -39,99 +55,61 @@ $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu ,
 $$
 
-with complex coefficients $Q_\mu$. The coordinate derivative is written $\partial/\partial Q_\mu$, and the derivative along the fourth coordinate is $\partial/\partial Q_t$; on the material sector, where $Q_t=iq'_t$, it reads $\partial/\partial Q_t=-i\,\partial/\partial q'_t$. The biquaternionic gradient is
+with complex coefficients $Q_\mu$. The gradient and its conjugate are the two operators of the introduction. On the material sector, where $Q_t=iq'_t$, the derivative along the fourth coordinate reads $\partial/\partial Q_t=-i\,\partial/\partial q'_t$.
 
-$$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu} ,
-$$
-
-and its quaternion conjugate is
-
-$$
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
-\qquad \varepsilon=(1,-1,-1,-1).
-$$
-
-The d'Alembertian is the quaternionic norm of the gradient,
-
-$$
-\Box=\langle\tilde\nabla\rangle_{\natural}
-=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\nabla\bigr)
-=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla^{\natural}\bigr)
-=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial Q_\mu^2}
-=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
-$$
-
-with $\Delta_Q=\sum_{k\in\{x,y,z\}}\partial^2/\partial Q_k^2$. The operator is scalar: it multiplies by $e_t$ and acts coefficient by coefficient.
-
-**The d'Alembertian is not the partner operator.** The plain bilinear norm of the gradient is $\partial^2/\partial Q_t^2-\Delta_Q$, a different operator, and its root is a different Clifford system. This article treats $\Box$ only. The two operators are distinguished in *Operator and Calculus Conventions*, and the distinction is fixed by the form, not by a choice of sign.
+The d'Alembertian is scalar: it multiplies by $e_t$ and acts coefficient by coefficient. **The d'Alembertian is not the partner operator.** The plain bilinear norm of the gradient is $\partial^2/\partial Q_t^2-\Delta_Q$, a different operator, and its root is a different problem. This article treats $\Box$ only. The two operators are distinguished in *Operator and Calculus Conventions*, and the distinction is fixed by the form, not by a choice of sign.
 
 ### The Symbol
 
-For a constant-coefficient operator, the **symbol** is the matrix polynomial obtained by replacing $i\partial/\partial Q_\mu$ by a complex variable $q_\mu$, equivalently $\partial/\partial Q_\mu$ by $-iq_\mu$. The symbol of $\Box$ is
+On a plane wave $\exp\bigl(i(q_0x_0-\vec q\cdot\vec x)\bigr)$, where $x_0=q'_t$ and $x_k=Q_k$, the substitution is $\partial/\partial Q_t\mapsto q_0$ and $\partial/\partial Q_k\mapsto-iq_k$. The symbol of the gradient is left multiplication by the element
 
 $$
-\sigma(\Box)(q)=(g^{-1})_{\mu\nu}q_\mu q_\nu=q_0^2-q_1^2-q_2^2-q_3^2 ,
+\tilde K=q_0e_t-i\sum_k q_k\vec e_k=q_0-i\vec q ,
+\qquad
+\tilde K^{\natural}=q_0+i\vec q ,
 $$
 
-and the symbol of a first-order operator
+and its quaternionic norm is
 
 $$
-D=i\Bigl(iR_{\vec e_x}\frac{\partial}{\partial x_0}-\sum_k iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}\Bigr)+B,
-\qquad B\in M_n(\mathbb{C})\ \text{constant},
+\tilde K^{\natural}\tilde K=\tilde K\tilde K^{\natural}=\bigl(q_0^2-\lvert\vec q\rvert^2\bigr)e_t .
 $$
 
-is
+The same expression is the symbol of $\Box$, because $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$. The square of the symbol is not scalar:
 
 $$
-\sigma(D)(q)=q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}+B .
+\tilde K^2=\bigl(q_0^2+\lvert\vec q\rvert^2\bigr)e_t-2iq_0\vec q .
 $$
 
-For constant coefficients the symbol of a composition is the product of the symbols, so $\sigma(D^2)(q)=\sigma(D)(q)^2$. The operator identity $D^2=(\Box-\lambda)I_n$ is therefore equivalent to the matrix identity
+The mass shell is the quadric $q_0^2-\lvert\vec q\rvert^2=\lambda$; at $\lambda=0$ it is the null cone of the quaternionic norm.
+
+**The zero divisor on the cone.** Off the cone, $\tilde K$ is a unit, with inverse $\tilde K^{\natural}/(\tilde K^{\natural}\tilde K)$, and the map $\psi\mapsto\tilde K\psi$ is invertible. On the cone the norm vanishes and $\tilde K$ is a zero divisor. In the representation $\mathbb{B}\cong M_2(\mathbb{C})$ the determinant of an element is its quaternionic norm, so a nonzero null element is a matrix of rank one, and left multiplication by a rank-one matrix has rank two. For a nonzero null covector the map $\psi\mapsto\tilde K\psi$ therefore has rank two and a two-dimensional kernel. The free equation $\tilde\nabla\tilde\Psi=0$ has a nonzero plane-wave solution exactly on the cone, and it selects two of the four complex dimensions there.
+
+### The Square of the Gradient
+
+Because the partial derivatives commute,
 
 $$
-\Bigl(q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}+B\Bigr)^2
-=\Bigl((g^{-1})_{\mu\nu}q_\mu q_\nu-\lambda\Bigr)I_n
+\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\,\partial Q_k}.
 $$
 
-for every $q\in\mathbb{C}^4$.
+The square is the partner operator plus the mixed term, and both separate it from $\Box$. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial Q_t\partial Q_k$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.
 
-**Proposition (the root condition).** Let $D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)+B$ with constant $iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y},B\in M_n(\mathbb{C})$. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the cell relation of $\varepsilon=(1,-1,-1,-1)$; see the Gamma section. Then $D^2=(\Box-\lambda)I_n$ if and only if
-$$
-\boxed{\;\{iR_{\vec e_x},B\}=\{iL_{\vec e_k}R_{\vec e_y},B\}=0,\qquad
-B^2=-\lambda I_n.\;}
-$$
-
-*Proof.* Expanding the square gives
+On the material sector, where $Q_t=ix_0$ and $\partial/\partial Q_t=-i\,\partial/\partial x_0$, the same operator is
 
 $$
-D^2=-\frac{\partial^2}{\partial x_0^2}+\sum_k\frac{\partial^2}{\partial x_k^2}
-+i\{iR_{\vec e_x},B\}\frac{\partial}{\partial x_0}-i\sum_k\{iL_{\vec e_k}R_{\vec e_y},B\}\frac{\partial}{\partial x_k}+B^2 .
+\tilde\nabla^2=\Box-2\Delta-2i\sum_k\vec e_k\frac{\partial^2}{\partial x_0\,\partial x_k}.
 $$
 
-The partial derivatives commute, and the monomials $\partial^2/\partial x_\mu\partial x_\nu$, $\partial/\partial x_\mu$ and $1$ are independent over the constants, so the coefficients of each monomial must agree with those of $(\Box-\lambda)I_n$. The second derivatives give $(iR_{\vec e_x})^2=I_n$, $(iL_{\vec e_k}R_{\vec e_y})^2=-I_n$, $\{iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y}\}=0$ and $\{iL_{\vec e_j}R_{\vec e_y},iL_{\vec e_k}R_{\vec e_y}\}=2\delta_{jk}I_n$; the first derivatives give the anticommutator with $B$; and the constant term gives the square. The converse is the same computation read backwards.
+**The product with the conjugate is scalar.** Read on the units, the two operators differ only by the sign of the three spatial terms, and the product is central because $\varepsilon_\mu e_\mu^2=\varepsilon_\mu^2e_t=e_t$ for every $\mu$:
 
-The three conditions separate. The first is the **Clifford condition**; it involves neither $B$ nor $\lambda$. The second says that the zero-order term anticommutes with every generator. The third fixes its square. The shift enters the first-order term only through the anticommutator, and its value only through the square.
+$$
+\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box .
+$$
 
-**The principal symbol.** The principal symbol of $D$ is $q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}$. The Clifford condition says that its square is $(g_{\mu\nu}q_\mu q_\nu)I_n$. The zero-order term and the shift are lower order. A root is therefore a four-generator Clifford system before it is a shifted d'Alembertian; the shift is a condition on the constant term, not on the principal symbol.
+## The Clifford Obstruction
 
-**The material sector.** On $\mathbb{M}_-$, where $Q_t=iq'_t$, the same d'Alembertian reads $\Box=\Delta-\partial^2/\partial(q'_t)^2$. The article works in these real coordinates, where the Clifford relation is $2(g^{-1})_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$; the $Q$ coordinates carry the Euclidean transcription and are not used for the root.
-
-## The Clifford Algebra and the Minimal Carrier
-
-### The Classification
-
-**Theorem.** Four matrices satisfying the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the cell relation of $\varepsilon=(1,-1,-1,-1)$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. Its smallest faithful module is $\mathbb{C}^4$, and no such quadruple exists in $M_n(\mathbb{C})$ with $n<4$.
-
-*Proof.* The monomials
-
-the identity, the four generator cells, the six bivectors $\sigma_{\mu\nu}$ with $\mu<\nu$, the four trivector products, and the chirality cell $-iR_{\vec e_z}$, with $-iR_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$
-
-are sixteen in number: one identity, four generators, six products of two, four products of three and the volume element. They form a basis of the Clifford algebra, which is simple; a nonzero representation is faithful, so the sixteen matrices are linearly independent. Sixteen independent matrices in $M_n(\mathbb{C})$ require $n^2\ge16$, hence $n\ge4$. The bound is attained by the frame of §*The Four Generators* below.
-
-**Corollary.** The carrier of a root of $\Box-\lambda$ has complex dimension at least four. On $\mathbb{C}^4$ the root is unique up to similarity: any two faithful modules of $M_4(\mathbb{C})$ are isomorphic, and the frames are related by $GL_4(\mathbb{C})$.
-
-### The Three Generators Inside the Algebra
+### The Three Spatial Units
 
 **Proposition.** The elements $\vec e_k$, $k=x,y,z$, satisfy
 
@@ -139,11 +117,13 @@ $$
 \vec e_k^2=-e_t,\qquad \{\vec e_j,\vec e_k\}=0\quad(j\ne k).
 $$
 
-They generate $\mathbb{B}$ itself, and the left action gives the isomorphism $\mathbb{B}\cong\mathrm{End}_{\mathbb{C}}(S)=M_2(\mathbb{C})$ on the simple module $S=\mathbb{C}^2$. The complex Clifford algebra $\mathrm{Cl}_3(\mathbb{C})$ is $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$; the three generators generate one of the two summands, and that summand is $\mathbb{B}$.
+They generate $\mathbb{B}$ itself.
 
-*Proof.* The square is $\vec e_k^2=-e_t$. For $j\ne k$, the product is $\vec e_j\vec e_k$, and the anticommutator is $\{\vec e_j,\vec e_k\}=0$. The three generators and their products span the four-dimensional algebra $\mathbb{B}=\mathrm{End}_{\mathbb{C}}(S)$, which is $M_2(\mathbb{C})$.
+*Proof.* The square is $\vec e_k^2=-e_t$. For $j\ne k$ the product is $\vec e_j\vec e_k$, and the anticommutator is $\{\vec e_j,\vec e_k\}=0$. The three generators and their products span the four-dimensional algebra $\mathbb{B}$.
 
-**Proposition (no fourth left multiplication).** No element $X\in\mathbb{B}$ anticommutes with all three $\vec e_k$.
+### No Fourth Element
+
+**Proposition.** No element $X\in\mathbb{B}$ anticommutes with all three $\vec e_k$.
 
 *Proof.* Write $X=a_te_t+a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ with $a_\mu\in\mathbb{C}$. The anticommutator with $\vec e_x$ is
 
@@ -153,469 +133,205 @@ $$
 
 so $a_t=a_x=0$. The anticommutator with $\vec e_y$ then gives $a_y=0$, and $X=a_z\vec e_z$ commutes with $\vec e_z$, so $a_z=0$. Hence $X=0$.
 
-**Corollary.** The left regular image $L(\mathbb{B})$ has complex dimension four and contains no four-generator Clifford system. The fourth generator of a root is not a left multiplication by an element of $\mathbb{B}$.
+The proposition is stated for the three spatial units. It holds for every quaternionic triple: if $b_k$ satisfy $b_k^2=-e_t$ and pairwise anticommutation, they generate $\mathbb{B}$, and an element that anticommutes with all three lies in the commutant of $\mathbb{B}$, which is $\mathbb{C}e_t$; since $e_t$ commutes, it is zero.
 
-*Proof.* The map $L$ is injective because $\mathbb{B}$ has a unit, so its image has complex dimension four and is spanned by $L_{e_t},L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}$. A four-generator Clifford system would generate sixteen independent operators, which a four-dimensional image cannot contain.
+### No Single Square
 
-**The two-dimensional module fails.** On $S$ the left action of the gradient is a first-order operator, but its square is not $\Box I$. The square of $\tilde\nabla$ is
+**Theorem.** Let $D=\sum_\mu a_\mu\partial/\partial Q_\mu+b$ with $a_\mu,b\in\mathbb{B}$ constant. Then $D^2$ is not $(\Box-\lambda)e_t$ for any $\lambda\in\mathbb{C}$.
 
-$$
-\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q
-+2\frac{\partial}{\partial Q_t}\sum_{k}\vec e_k\frac{\partial}{\partial Q_k},
-$$
-
-so it carries a vector remainder and the spatial part has the opposite sign. The principal-symbol obstruction is the dimension count: four anticommuting $2\times2$ matrices do not exist. The sign is a symptom, not the cause.
-
-## The Regular Module and the Two-Sided Direction
-
-### The Two Minimal Left Ideals
-
-Let $\tilde\Pi_+$ and $\tilde\Pi_-$ be the primitive idempotents of the algebra and let
+*Proof.* Because the partial derivatives commute, the second-order part of $D^2$ is
 
 $$
-S_+=\mathbb{B}\tilde\Pi_+,\qquad S_-=\mathbb{B}\tilde\Pi_- .
+\frac12\sum_{\mu,\nu}\bigl(a_\mu a_\nu+a_\nu a_\mu\bigr)\frac{\partial^2}{\partial Q_\mu\partial Q_\nu}.
 $$
 
-The algebra is their direct sum as a left module,
+Matching it to $(\Box-\lambda)e_t=\sum_\mu\partial^2/\partial Q_\mu^2-\lambda e_t$ gives
 
 $$
-\mathbb{B}=S_+\oplus S_-,
+a_\mu a_\nu+a_\nu a_\mu=2\delta_{\mu\nu}e_t .
 $$
 
-and each summand is a copy of the simple module $S=\mathbb{C}^2$. Left multiplication by any element preserves each summand, because $\tilde Q_1(\tilde Q_2\tilde\Pi_\pm)=(\tilde Q_1\tilde Q_2)\tilde\Pi_\pm$. A four-generator Clifford system must therefore use the multiplicity of the two summands: the three left multiplications generate only the three-generator system on each copy, and the fourth generator cannot be a left multiplication by the proposition above. The multiplicity is realised by two two-sided operators, the exchange $R_u$ and the grading $G$ below.
+In particular the three spatial coefficients anticommute pairwise and square to $e_t$. Multiply them by the central $i$: the three $b_k=ia_k$ anticommute pairwise and square to $-e_t$. They form a quaternionic triple, so they generate $\mathbb{B}$, and no element anticommutes with all three. Hence no $a_t$ anticommutes with all three $a_k$, and the relation $a_ta_k+a_ka_t=0$ is impossible for a nonzero $a_t$. The zero-order term $b$ enters only the first-order and constant parts, $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial Q_\mu+b^2$, and cannot repair the second order. The contradiction is therefore independent of $b$ and $\lambda$.
 
-### The Swap and the Grading
+The same argument covers the material-sector signature. Multiplying every coefficient by $i$ flips the sign of every square and preserves every anticommutator, so a quadruple of one signature exists exactly when one of the opposite signature does.
 
-The standard pair is fixed once for the article:
+### The Carrier Is Four-Dimensional
+
+A field that carries the four units is an element of $\mathbb{B}$, four complex dimensions. The gradient has four coefficients, one per unit, and it acts on the four coefficients of the field. A field whose value is one complex number has no first-order equation of the series: $\tilde\nabla\phi=0$ reads
 
 $$
-\tilde\Pi_\pm=\tfrac12\left(e_t\pm i\vec e_z\right),
+\tilde\nabla\phi=\sum_\mu e_\mu\frac{\partial\phi}{\partial Q_\mu}=0,
+$$
+
+and the four units are independent, so all four partial derivatives vanish and the field is constant.
+
+The carrier of a first-order operator with element coefficients is therefore $\mathbb{B}$, and it is not enlarged by the root. The root changes the action, not the carrier. A larger carrier would require coefficients that are maps of the carrier, not elements of $\mathbb{B}$; those maps lie outside the one-sided calculus, and this article does not use them.
+
+## The Factorisation
+
+### The Two Factors
+
+The product of the gradient and its conjugate is the d'Alembertian:
+
+$$
+\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box .
+$$
+
+The identity is exact, and it is the whole factorisation of $\Box$ that the algebra supplies. Each factor is left multiplication by an element with derivative coefficients, and the product is composition on the field: the right factor acts first, the left factor acts on the result, and no derivative acts on a coefficient, since all coefficients are constant. The factorisation has two factors, and neither is a root by itself: the square of either one alone carries the vector remainder of §*The Square of the Gradient*. That is the sense in which the root exists: as a pair of first-order operators, not as one operator.
+
+### The Pair Operator
+
+The two equations of the massive case are one operator on $\mathbb{B}\oplus\mathbb{B}$. Write $\Psi=(\tilde\Psi_L,\tilde\Psi_R)$ and
+
+$$
+\mathbb{D}\Psi=\bigl(\tilde\nabla\tilde\Psi_R,\ \tilde\nabla^{\natural}\tilde\Psi_L\bigr).
+$$
+
+Then
+
+$$
+\mathbb{D}^2=\Box I,
 \qquad
-\vec\Upsilon_{+-}=\vec\Upsilon_x=\tfrac12\left(i\vec e_x-\vec e_y\right),
+(\mathbb{D}-m)(\mathbb{D}+m)=\bigl(\Box-m^2\bigr)I .
+$$
+
+The pair is $(\mathbb{D}-m)\Psi=0$. The operator $\mathbb{D}$ is the pair operator on $\mathbb{B}\oplus\mathbb{B}$ of the conventions; it is a map of the doubled carrier and not an element of $\mathbb{B}$.
+
+### The Chiral Pair
+
+The two parts are two fields, $\tilde\Psi_L$ and $\tilde\Psi_R$, written together as $\Psi=(\tilde\Psi_L,\tilde\Psi_R)$; each is an element of $\mathbb{B}$ and no relation between them is assumed in advance. The massive equation is the pair
+
+$$
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
 \qquad
-\vec\Upsilon_{-+}=\vec\Upsilon_y=\tfrac12\left(i\vec e_x+\vec e_y\right),
+\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
 $$
 
-so that $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$. The mixed Peirce units obey
+Substituting the first relation into the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde\Psi_R=m^2\tilde\Psi_R$, that is
 
 $$
-\tilde\Pi_+\vec\Upsilon_{+-}=\vec\Upsilon_{+-},\qquad
-\vec\Upsilon_{+-}\tilde\Pi_-=\vec\Upsilon_{+-},
+\Box\tilde\Psi_R=m^2\tilde\Psi_R ,
 $$
 
-$$
-\tilde\Pi_-\vec\Upsilon_{-+}=\vec\Upsilon_{-+},\qquad
-\vec\Upsilon_{-+}\tilde\Pi_+=\vec\Upsilon_{-+},
-$$
+and the first relation then defines $\tilde\Psi_L=m^{-1}\tilde\nabla\tilde\Psi_R$. Each part satisfies the shifted d'Alembertian, and the pair is a bijection with the second-order solutions of one part, not a new restriction. At $m=0$ the two relations decouple: $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$.
+
+The two labels $L$ and $R$ are the two slots of the pair. They are not the eigenspaces of a chirality: the chirality is the right action
 
 $$
-\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_+,\qquad
-\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_- .
+\psi\longmapsto-i\psi\vec e_z=i\psi\omega ,
 $$
 
-Put
-
-$$
-u=\vec\Upsilon_{+-}+\vec\Upsilon_{-+}=i\vec e_x .
-$$
-
-**Proposition.** The element $u$ satisfies $u^2=e_t$, and the right multiplication $R_u$ is an involution that exchanges $S_+$ and $S_-$. In the adapted bases $(\tilde\Pi_+,\vec\Upsilon_{-+})$ of $S_+$ and $(\vec\Upsilon_{+-},\tilde\Pi_-)$ of $S_-$, it is the identity across the two summands.
-
-*Proof.* The square is $u^2=\vec\Upsilon_{+-}^2+\vec\Upsilon_{-+}^2+\vec\Upsilon_{+-}\vec\Upsilon_{-+}+\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_++\tilde\Pi_-=e_t$, the mixed squares vanishing. For $\tilde Q_1=a\tilde\Pi_++c\vec\Upsilon_{-+}\in S_+$,
-
-$$
-\tilde Q_1u=a\tilde\Pi_+u+c\vec\Upsilon_{-+}u
-=a\vec\Upsilon_{+-}+c\tilde\Pi_- \in S_- ,
-$$
-
-and for $\eta=b\vec\Upsilon_{+-}+d\tilde\Pi_-\in S_-$,
-
-$$
-\eta u=b\vec\Upsilon_{+-}u+d\tilde\Pi_-u
-=b\tilde\Pi_++d\vec\Upsilon_{-+}\in S_+ .
-$$
-
-The coordinates $(a,c)$ and $(b,d)$ are preserved, so $R_u$ is the identity across the summands in the adapted bases, and applying it twice returns the original element.
-
-**Proposition.** Let $G=R_{\tilde\Pi_+}-R_{\tilde\Pi_-}$. Then $G^2=I$, $G$ acts as $+1$ on $S_+$ and as $-1$ on $S_-$, and $R_uG=-GR_u$.
-
-*Proof.* Since $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$,
-
-$$
-G^2=R_{(\tilde\Pi_+-\tilde\Pi_-)^2}=R_{\tilde\Pi_++\tilde\Pi_-}=I .
-$$
-
-For $\tilde Q_1\in S_+$, $\tilde Q_1\tilde\Pi_+=\tilde Q_1$ and $\tilde Q_1\tilde\Pi_-=0$, so $G\tilde Q_1=\tilde Q_1$; for $\tilde Q_2\in S_-$, $G\tilde Q_2=-\tilde Q_2$. The exchange gives $\tilde\Pi_+u=\vec\Upsilon_{+-}=u\tilde\Pi_-$ and $\tilde\Pi_-u=\vec\Upsilon_{-+}=u\tilde\Pi_+$. Using $R_aR_b=R_{ba}$,
-
-$$
-R_uG=R_{\tilde\Pi_+u}-R_{\tilde\Pi_-u}
-=R_{u\tilde\Pi_-}-R_{u\tilde\Pi_+}=-GR_u .
-$$
-
-### The Four Generators
-
-Define
-
-$$
-iR_{\vec e_x}=R_u,\qquad
-iL_{\vec e_k}R_{\vec e_y}=L_{\vec e_k}G\quad(k=x,y,z).
-$$
-
-**Theorem.** The four operators $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ satisfy The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the cell relation of $\varepsilon=(1,-1,-1,-1)$; see the Gamma section. They are two-sided operators, and they generate $M_4(\mathbb{C})$. The cell root acts on the regular module $\mathbb{B}$.
-
-*Proof.* The square of $iR_{\vec e_x}$ is $R_u^2=R_{u^2}=I$. The square of $iL_{\vec e_k}R_{\vec e_y}$ is $L_{\vec e_k}^2G^2=-I$, because $\vec e_k^2=-e_t$ and $G^2=I$. For $j\ne k$,
-
-$$
-\{iL_{\vec e_j}R_{\vec e_y},iL_{\vec e_k}R_{\vec e_y}\}
-=\bigl(L_{\vec e_j}L_{\vec e_k}+L_{\vec e_k}L_{\vec e_j}\bigr)G^2=0 .
-$$
-
-The mixed anticommutator is
-
-$$
-iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}+iL_{\vec e_k}R_{\vec e_y}\,iR_{\vec e_x}
-=R_uL_{\vec e_k}G+L_{\vec e_k}GR_u
-=L_{\vec e_k}(R_uG+GR_u)=0,
-$$
-
-because left and right multiplications commute and $R_uG=-GR_u$. Hence the anticommutation relations hold. The operators are two-sided:
-
-$$
-iR_{\vec e_x}=L_{e_t}R_{u},\qquad
-iL_{\vec e_k}R_{\vec e_y}=L_{\vec e_k}R_{\tilde\Pi_+}-L_{\vec e_k}R_{\tilde\Pi_-},
-$$
-
-so they lie in the enveloping algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$. The sixteen monomials are independent by the anticommutation relations, so they generate the whole of $M_4(\mathbb{C})$.
-
-**The cells.** With $L_{a}R_{b}$, the same frame is a set of cells of the two-sided algebra. The volume element of the frame is
-
-$$
--iR_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}=iL_{e_t}R_{\vec e_y},
-$$
-
-and the split of each operator between the two sides is
-
-| $T$ | $L$ | $R$ |
-|---|---|---|
-| $iR_{\vec e_x}=L_{e_t}R_{u}$ | $L_{e_t}=I$ | $R_u$ |
-| $iL_{\vec e_k}R_{\vec e_y}=L_{\vec e_k}R_{\tilde\Pi_+}-L_{\vec e_k}R_{\tilde\Pi_-}$ | $L_{\vec e_k}$ | $R_{\tilde\Pi_+}-R_{\tilde\Pi_-}=G$ |
-| $-iR_{\vec e_z}=iL_{e_t}R_{\vec e_y}$ | $L_{e_t}=I$ | $iR_{\vec e_y}$ |
-
-The fourth generator is the cell $L_{e_t}R_{u}$, a pure right multiplication: its left factor is the identity, and it lies in the commutant of the left copy.
-
-**The matrix frame.** In the adapted basis of the two summands,
-
-$$
-iR_{\vec e_x}=\sigma_1\otimes I_2,\qquad
-iL_{\vec e_k}R_{\vec e_y}=\sigma_3\otimes\vec e_k,\qquad
--iR_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}=-\sigma_2\otimes I_2 .
-$$
-
-Each generator squares to $\pm I$, with $iR_{\vec e_x}$ positive and the three spatial generators negative; distinct generators anticommute, and $-iR_{\vec e_z}$ anticommutes with all four and squares to the identity. The matrices $\sigma_1,\sigma_2,\sigma_3$ act on the multiplicity factor, and the elements $\vec e_k$ act on the simple module $S$.
-
-**Remark (why the grading).** The exchange $R_u$ commutes with every left multiplication, so it cannot anticommute with $L_{\vec e_k}$. The grading turns the commutation into an anticommutation, which is why the spatial generators are $L_{\vec e_k}G$ and not $L_{\vec e_k}$. This is the precise sense in which the fourth direction is two-sided: the three spatial generators use both sides, and the fourth is the exchange.
-
-**Remark (the chiral halves are not the ideals).** The eigenspaces of $-iR_{\vec e_z}$ are two-dimensional and mix $S_+$ and $S_-$; they are not left ideals. The minimal left ideals are the two copies of $S$, and the chiral projectors of $-iR_{\vec e_z}$ are a different split. The distinction is the one of *The Two Chiralities of $M_4(\mathbb{C})$*, read on the regular module.
-
-## The Unshifted Cell Root
-
-**Theorem.** Let
-
-$$
-\mathsf D=i\Bigl(iR_{\vec e_x}\frac{\partial}{\partial x_0}-\sum_k iL_{\vec e_k}R_{\vec e_y}\frac{\partial}{\partial x_k}\Bigr).
-$$
-
-Then $\mathsf D^2=\Box I_4$.
-
-*Proof.* The Clifford relation gives
-
-$$
-\mathsf D^2=-\frac{\partial^2}{\partial x_0^2}+\sum_k\frac{\partial^2}{\partial x_k^2}I_4
-=\Box I_4 .
-$$
-
-The operator $\mathsf D$ is a two-sided differential operator: each coefficient is a cell of the form $L_{a}R_{b}$, a two-sided constant operator, so $\mathsf D$ is a sum of terms $L_{a}R_{b}\partial/\partial x_\mu$. It acts on $\mathbb{B}$-valued fields, and its square is the scalar d'Alembertian. It is not left multiplication by an element of $\mathbb{B}$: the timelike generator is the exchange $R_u$, and the spatial generators are left multiplications corrected by the grading. Its coefficients are cells of $\mathbb{B}^{\mathrm e}$, and the gradient $\tilde\nabla$ is the element of $\mathbb{B}$ that supplies the factorisation $\tilde\nabla\tilde\nabla^{\natural}=\Box$.
-
-**The kernel at $\lambda=0$.** The equation $\mathsf D\psi=0$ is the unshifted cell root. In the chiral frame of §*The Chiral Form* it decouples into $D_-\psi_-=0$ and $D_+\psi_+=0$; its kernel is a chiral half of the full solution space of $\Box\psi=0$, in the dimensional sense: two complex dimensions out of four. At $\lambda=0$ the kernel also commutes with the chirality, so it splits into one state of each chirality. For $\lambda\ne0$ the kernel keeps its two dimensions and its free data is still one chiral component, but it no longer commutes with the chirality, and the two components of a solution are mixed.
-
-**Non-uniqueness.** The cell root is unique up to similarity, not canonical. A formula that names a particular frame is therefore frame data; the invariant statement is the factorisation in $\mathbb{B}$. The canonical frame fixes the Peirce basis, and the root still depends on the exchange $u$; the biquaternion structure gives a canonical decomposition into the two minimal left ideals, but not a canonical root. The sign of $-iR_{\vec e_z}$ and the exchange of $c$ with $-c$ give the same operator up to a change of frame.
-
-## The Shifted D'Alembertian
-
-### The Single Square
-
-**Theorem.** Let $\lambda\in\mathbb{C}$ and let $c\in\mathbb{C}$ satisfy $c^2=-\lambda$. Then
-
-$$
-\mathsf D_\lambda=\mathsf D+c\,(-iR_{\vec e_z})
-$$
-
-satisfies
-
-$$
-\mathsf D_\lambda^2=(\Box-\lambda)I_4 .
-$$
-
-*Proof.* Every generator anticommutes with $-iR_{\vec e_z}$, so $\mathsf D(-iR_{\vec e_z})+(-iR_{\vec e_z})\mathsf D=0$. Since $(-iR_{\vec e_z})^{2}=I$,
-
-$$
-\mathsf D_\lambda^2=\mathsf D^2+c(\mathsf D(-iR_{\vec e_z})+(-iR_{\vec e_z})\mathsf D)+c^2\,(-iR_{\vec e_z})^{2}
-=\Box I_4+c^2I_4=(\Box-\lambda)I_4 .
-$$
-
-**Theorem (the converse).** Every constant-coefficient root of $\Box-\lambda$ with principal symbol $q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}$ is of the form $\mathsf D_\lambda=\mathsf D+c\,(-iR_{\vec e_z})$ with $c^2=-\lambda$, up to similarity.
-
-*Proof.* By the root condition, $B$ anticommutes with every generator cell. Then $B(-iR_{\vec e_z})$ commutes with every generator cell, hence with the algebra they generate, which is $M_4(\mathbb{C})$. The commutant of $M_4(\mathbb{C})$ is the scalars, so $B(-iR_{\vec e_z})=cI$ and $B=c\,(-iR_{\vec e_z})$. The condition $B^2=-\lambda I$ gives $c^2=-\lambda$.
-
-**The type of the shift.** The zero-order term is necessarily a multiple of the volume element; it cannot be a central scalar unless $\lambda=0$. Over $\mathbb{C}$ every $\lambda$ has a root $c$, and the two roots are opposite. If $\lambda$ is real and positive, $c$ is imaginary; if $\lambda$ is real and negative, $c$ is real. The two signs of $c$ give the two roots $\mathsf D\pm c\,(-iR_{\vec e_z})$; the algebra prefers neither.
-
-### The Scalar Shift
-
-**Theorem.** For every $\kappa\in\mathbb{C}$,
-
-$$
-(\mathsf D-\kappa I)(\mathsf D+\kappa I)=\bigl(\Box-\kappa^2\bigr)I .
-$$
-
-No single operator of the form $\mathsf D+\kappa I$ squares to $(\Box-\kappa^2)I$ when $\kappa\ne0$.
-
-*Proof.* The product is $\mathsf D^2-\kappa^2I$ because $\mathsf D$ commutes with the scalar $\kappa I$. For the second statement, the cross term of $(\mathsf D+\kappa I)^2$ is $2\kappa\mathsf D$, which does not vanish for $\kappa\ne0$. In the language of the root condition, the failure is the second of the three: $\kappa I$ commutes with every generator, so $\{\kappa I,\Gamma\}=2\kappa\Gamma\ne0$ and the zero-order term must anticommute rather than commute. A scalar shift is therefore in the even part of the algebra, and the odd part cannot supply it.
-
-At $\lambda=0$, $\kappa=0$, and the two pictures coincide: $\mathsf D^2=\Box$. The scalar factorisation is a product of two first-order factors whose product is the shifted d'Alembertian; each factor alone is not a root. The single square is one first-order operator whose zero-order term anticommutes with the generators; it is a root, but its zero-order term is pseudoscalar.
-
-### The Chiral Form
-
-The volume element defines the chiral projectors
-
-$$
-P_+=\frac12(I-iR_{\vec e_z}),\qquad P_-=\frac12(I+iR_{\vec e_z}),
-\qquad P_++P_-=I,\quad P_\pm^2=P_\pm .
-$$
-
-Because $\mathsf D$ anticommutes with $-iR_{\vec e_z}$, it exchanges the two chiral halves. In the chiral basis, where $-iR_{\vec e_z}=\operatorname{diag}(I_2,-I_2)$, write
-
-$$
-\mathsf D=\begin{pmatrix}0&D_-\\ D_+&0\end{pmatrix},
-\qquad
-D_-D_+=D_+D_-=\Box I_2 .
-$$
-
-The last identity is the chiral block form of $\mathsf D^2=\Box I_4$. The cell root is
-
-$$
-\mathsf D_\lambda=\begin{pmatrix}cI_2&D_-\\ D_+&-cI_2\end{pmatrix}.
-$$
-
-**The two rows.** Write $\psi=(\psi_+,\psi_-)$ in the chiral decomposition. The equation $\mathsf D_\lambda\psi=0$ is the pair
-
-$$
-D_-\psi_-=-c\psi_+,\qquad
-D_+\psi_+=c\psi_- .
-$$
-
-For $c\ne0$, the second row determines $\psi_-$ from $\psi_+$,
-
-$$
-\psi_-=\frac1cD_+\psi_+ ,
-$$
-
-and the first row is then equivalent to
-
-$$
-(\Box-\lambda)\psi_+=0 ,
-$$
-
-because $D_-\psi_-=\frac1cD_-D_+\psi_+=\frac1c\Box\psi_+$ and $\lambda=-c^2$. The projection $\psi\mapsto\psi_+$ is an isomorphism from $\ker \mathsf D_\lambda$ onto the solution space of the shifted d'Alembertian on one chiral component; the other component is determined. The kernel of the single root is therefore a **chiral half** of the full four-component solution space. At $c=0$ the two rows decouple, $D_-\psi_-=0$ and $D_+\psi_+=0$, and the kernel is still a half.
-
-**The factorisation kernel.** For $\kappa\ne0$, on the solution space of $(\Box-\kappa^2)\psi=0$, define
-
-$$
-Q_+=\frac{1}{2\kappa}(\kappa I+\mathsf D),\qquad
-Q_-=\frac{1}{2\kappa}(\kappa I-\mathsf D).
-$$
-
-Then $Q_++Q_-=I$, $Q_\pm^2=Q_\pm$, and
-
-$$
-(\mathsf D-\kappa I)Q_+=0,\qquad
-(\mathsf D+\kappa I)Q_-=0 .
-$$
-
-The solution space of the shifted d'Alembertian is the direct sum
-
-$$
-\ker(\Box-\kappa^2)=\ker(\mathsf D-\kappa I)\oplus\ker(\mathsf D+\kappa I),
-$$
-
-and the two factors together capture the whole second-order kernel. These projectors are the spectral projectors of $\mathsf D$ on the shell; they are not the chiral projectors. The single root captures one chiral half, while the scalar factorisation captures the full space as the sum of its two first-order halves. At $\kappa=0$ the projectors are undefined, the two factors coincide, and the kernel of $\Box$ is strictly larger than the kernel of $\mathsf D$.
-
-**The characteristic variety.** The symbol of $\mathsf D_\lambda$ is $q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}+c\,(-iR_{\vec e_z})$. Its determinant is $(g_{\mu\nu}q_\mu q_\nu-\lambda)^2$, so the first-order operator is singular exactly on the quadric $g_{\mu\nu}q_\mu q_\nu=\lambda$. On that quadric the symbol of $\mathsf D_\lambda$ has a two-dimensional kernel, while the symbol of $\Box-\lambda$ has a four-dimensional kernel; the factor of two is the chiral half.
+where $\omega=-\vec e_z$ is the pseudoscalar, $\omega^2=-e_t$. The right action has square the identity, and its two eigenspaces are the two chiral halves: $\psi\vec e_z=i\psi$ for the eigenvalue $+1$ and $\psi\vec e_z=-i\psi$ for the eigenvalue $-1$. It commutes with every left multiplication, so it commutes with the gradient and preserves each kernel; at a nonzero null covector the two-dimensional kernel carries one state of each chirality. The mass couples the two labels, and because the gradient preserves the chirality, each label-$L$ part and its label-$R$ partner carry the same chirality; the pair does not exchange the two chiralities. The corpus calculus writes every equation on the left, so the right action is used here only to label the halves; it is a single right action, not a two-sided operator.
 
 ### The Determinant
 
-In the chiral frame the determinant of the block matrix is
+On a plane wave the symbol of $\mathbb{D}$ is the block matrix with the maps $\psi\mapsto\tilde K\psi$ and $\psi\mapsto\tilde K^{\natural}\psi$ off the diagonal. Its determinant is
 
 $$
-\det \mathsf D_\lambda
-=\det(cI_2)\det\Bigl(-cI_2-\frac1cD_+D_-\Bigr)
-=c^2\Bigl(-c-\frac{\Box}{c}\Bigr)^2
-=(\Box-\lambda)^2 .
+\det\bigl(\mathbb{D}(\tilde K)-m\bigr)
+=\bigl(q_0^2-\lvert\vec q\rvert^2-m^2\bigr)^4 ,
 $$
 
-At $\lambda=0$ this is $\det\mathsf D=\Box^2$. The same expression is the determinant of the left regular matrix of the gradient,
+the fourth power of the symbol of $\Box-m^2$. The fourth power is the signature of the doubled carrier: eliminating one block leaves the Schur complement $(q_0^2-\lvert\vec q\rvert^2-m^2)$ times the four-dimensional identity.
+
+The determinant of the left action of $\tilde K$ on $\mathbb{B}$ is the square of its quaternionic norm,
 
 $$
-\det\mathsf M_{4L}(\tilde\nabla)=\langle\tilde\nabla\rangle_{\natural}^2=\Box^2 ,
+\det\bigl(\psi\mapsto\tilde K\psi\bigr)
+=\bigl(\tilde K^{\natural}\tilde K\bigr)^2
+=\bigl(q_0^2-\lvert\vec q\rvert^2\bigr)^2 ,
 $$
 
-read on the symbol, because the determinant of the left regular matrix of an element is the square of its quaternionic norm (*The Polarized Module of the Biquaternion Algebra*). The agreement is a consistency check, not a construction: the determinant sees the square of the shifted d'Alembertian, while the kernel of the single root is a chiral half. A determinant identity is not a square root.
+because the determinant of the left regular matrix of an element is the square of its norm (*The Polarized Module of the Biquaternion Algebra*). The two identities are consistency checks. A determinant identity is not a square root: it says that a power of the scalar symbol is the determinant of a first-order operator, not that one first-order operator has the scalar as its square.
 
-## The Classification of Carriers
+## The Classification of Fields
 
-The table classifies the carriers on which the constant-coefficient Clifford ansatz of this article can be solved. The **carrier** is the complex vector space on which the root acts; the **Clifford system** is the number of anticommuting generators available on it. The central scalar is the one-dimensional carrier $\mathbb{C}e_t$; the simple module is $S=\mathbb{B}\tilde\Pi$, of complex dimension two; the regular module is $\mathbb{B}=S_+\oplus S_-$, of complex dimension four.
+| field | first-order equation | root? |
+|---|---|---|
+| one complex number | $\tilde\nabla\phi=0$, which forces $\partial\phi/\partial Q_\mu=0$ | no, it forces a constant |
+| element of $\mathbb{B}$, massless | $\tilde\nabla\tilde\Psi=0$ | yes, one factor of $\Box$ |
+| element of $\mathbb{B}$, massive | the pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | yes, the pair |
 
-| carrier | complex dimension | Clifford system | root of $\Box$ | single root of $\Box-\lambda$, $\lambda\ne0$ | scalar factorisation |
-|---|---|---|---|---|---|
-| $\mathbb{C}e_t$ | $1$ | none | no | no | no |
-| $S=\mathbb{B}\tilde\Pi$ | $2$ | three generators | no | no | no |
-| $\mathbb{B}=S_+\oplus S_-$ | $4$ | four generators | yes | yes, pseudoscalar shift | yes, scalar shift |
-| $\mathbb{B}^{\oplus m}$, $m>1$ | $4m$ | four generators | yes | yes | yes, not minimal |
-
-**The minimal carrier.** The regular module is minimal. Any larger carrier is a direct sum of copies of it, and the cell root acts componentwise; the Clifford system has the same four generators, and the root is not new. The simple module carries the three-generator system generated by the three $\vec e_k$, but no four-generator system, by the dimension count. The central scalar carries none.
-
-**The scope.** The table is a classification of the carriers of the Clifford ansatz, not a classification of all first-order operators whose square is scalar. A first-order operator with a non-Clifford principal symbol is outside the article.
-
-## The Freedom of the Frame
-
-The Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})$ has a unique irreducible module up to isomorphism, so any two frames of the root are related by an invertible matrix, with $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ the generator cell of the coordinate $x_\mu$ and $\nu(t)=x$, $\nu(k)=y$:
-
-$$
-iL_{e_\mu}R_{\vec e_{\nu(\mu)}}'=S\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,S^{-1},\qquad B'=SBS^{-1},\qquad S\in GL_4(\mathbb{C}).
-$$
-
-The biquaternion structure does not select a canonical matrix frame. It selects the decomposition $\mathbb{B}=S_+\oplus S_-$, the exchange $u=i\vec e_x$, and the grading $G=R_{i\vec e_z}$; the adapted basis and the identification of the two summands with $S$ are choices. The physics twin, *The First-Order Root of the Biquaternion Klein–Gordon Operator*, writes another frame of the same algebra, the cells $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$ and $-iL_{e_t}R_{\vec e_z}$, related to the frame above by a similarity that is unique up to a scalar. The volume element is canonical up to the sign of the orientation of the four generators, and the two signs of $c$ give the same operator up to the exchange $-iR_{\vec e_z}\mapsto\,iR_{\vec e_z}$. The root is unique up to similarity, not canonical.
-
-**The two signs.** The sign of $c$ selects one of the two opposite roots. The sign of $-iR_{\vec e_z}$ is the orientation of the four generators, and it changes the chiral decomposition and the pair of rows. Neither sign changes the operator identity $\mathsf D_\lambda^2=(\Box-\lambda)I$.
+**The scope.** The table classifies the fields on which the constant-coefficient first-order ansatz of this article can be solved. It is not a classification of all first-order operators whose square is scalar. A first-order operator with matrix coefficients, or with a non-constant coefficient, is outside the article. The free equation stays first order in one field, and the mass is carried by the pair; no single field carries a scalar mass.
 
 ## Worked Examples
 
-**A plane wave.** Let $\psi(x)=\exp(-i\sum_\mu q_\mu x_\mu)v$ with $v\in\mathbb{C}^4$ constant and $q_\mu\in\mathbb{C}$. Then
+**A plane wave.** Let $\psi(x)=\exp\bigl(i(q_0x_0-\vec q\cdot\vec x)\bigr)v$ with $v\in\mathbb{B}$ constant. Then
 
 $$
-\mathsf D\psi=\bigl(q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}\bigr)\psi,
+\tilde\nabla\psi=\tilde K\psi,
 \qquad
-\mathsf D_\lambda\psi=\bigl(q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}+c\,(-iR_{\vec e_z})\bigr)\psi .
+\Box\psi=\bigl(q_0^2-\lvert\vec q\rvert^2\bigr)\psi .
 $$
 
-The first-order equation has a nonzero solution exactly when the determinant vanishes, that is on the quadric $(g^{-1})_{\mu\nu}q_\mu q_\nu=\lambda$. On the quadric the symbol has a two-dimensional kernel.
+The free equation has a nonzero solution exactly when $\tilde K$ is a zero divisor, that is on the cone $q_0^2-\lvert\vec q\rvert^2=0$. At a nonzero null covector the map $\psi\mapsto\tilde K\psi$ has rank two, and the solution space is two-dimensional.
 
-**The unshifted cell root on a constant spinor.** A constant $v\in\mathbb{C}^4$ satisfies $\mathsf D v=0$ and $\Box v=0$. The example shows that the cell root has a nontrivial kernel already at $\lambda=0$. The constant solutions of $\Box$ are all of $\mathbb{C}^4$, and $\mathsf D$ vanishes on all of them, so the constant part of the kernel does not distinguish the chiral halves; the half appears on the non-constant solutions of §*The Chiral Form*.
+**A constant element.** A constant $v\in\mathbb{B}$ satisfies $\tilde\nabla v=0$ and $\Box v=0$. The example shows that the free equation has a nontrivial kernel already at $\lambda=0$. The constant part of the kernel is all of $\mathbb{B}$, the degenerate case of the cone at $q=0$; at a nonzero null covector the kernel is two-dimensional, one state of each chirality.
 
-**Promotion of a chiral solution.** Let $\psi_+$ solve $(\Box-\lambda)\psi_+=0$ with $c\ne0$, and put $\psi_-=\frac1cD_+\psi_+$. Then
-
-$$
-D_+\psi_+=c\psi_-,\qquad
-D_-\psi_-=\frac1cD_-D_+\psi_+=\frac1c\Box\psi_+=-c\psi_+,
-$$
-
-so $\mathsf D_\lambda(\psi_+,\psi_-)=0$. The example exhibits the isomorphism between the kernel of the single root and the solution space of the shifted d'Alembertian on one chiral component.
-
-**The scalar factorisation.** Let $\kappa\ne0$ and let $v$ satisfy $(q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}-\kappa I)v=0$ for a covector $q$ with $g_{\mu\nu}q_\mu q_\nu=\kappa^2$. Then $(\mathsf D-\kappa I)\psi=0$ for the corresponding plane wave, and the product $(\mathsf D+\kappa I)(\mathsf D-\kappa I)\psi=0$. The other factor is obtained by $\kappa\mapsto-\kappa$. The example shows the two halves of the factorisation.
-
-**The determinant at $\lambda=0$.** For the constant-coefficient operator $\mathsf D$, the determinant of the symbol is
+**Promotion of a solution.** Let $\tilde\Psi_R$ solve $(\Box-m^2)\tilde\Psi_R=0$ with $m\ne0$, and put $\tilde\Psi_L=m^{-1}\tilde\nabla\tilde\Psi_R$. Then
 
 $$
-\det\Bigl(q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}\Bigr)
-=\Bigl((g^{-1})_{\mu\nu}q_\mu q_\nu\Bigr)^2 ,
-$$
-
-the square of the symbol of $\Box$, the same expression as the determinant of the left regular matrix of the gradient. At $\lambda\ne0$ the determinant is $\bigl((g^{-1})_{\mu\nu}q_\mu q_\nu-\lambda\bigr)^2$.
-
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The generators of the body are the gammas of the matrix frame,
-$$
-\gamma_t[\mathbb{M}_-]=R_u,\qquad
-\gamma_k[\mathbb{M}_-]=L_{\vec e_k}G\quad(k=x,y,z),
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
 \qquad
-\gamma_5=i\gamma_t[\mathbb{M}_-]\gamma_x[\mathbb{M}_-]\gamma_y[\mathbb{M}_-]\gamma_z[\mathbb{M}_-]=iL_{e_t}R_{\vec e_y},
+\tilde\nabla^{\natural}\tilde\Psi_L=\frac1m\Box\tilde\Psi_R=m\tilde\Psi_R,
 $$
-with $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I$ and $\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0$.
 
-The physics twin writes another frame,
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}R_{\vec e_x}=iR_x,\qquad
-\gamma_k[\mathbb{M}_-]=iL_{\vec e_k}R_{\vec e_y},\qquad
-\gamma_5=-iL_{e_t}R_{\vec e_z},
-$$
-related to the frame above by a similarity $\gamma_\mu[\mathbb{M}_-]'=S\gamma_\mu[\mathbb{M}_-] S^{-1}$.
+so the pair is satisfied. The example exhibits the bijection between the solutions of the shifted d'Alembertian on one part and the solutions of the pair.
 
-Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$; the root lives in the enveloping algebra $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$.
+**The determinant.** For the symbol $\tilde K$, the determinant of the left action is $(q_0^2-\lvert\vec q\rvert^2)^2$, and the determinant of the pair operator shifted by $m$ is $(q_0^2-\lvert\vec q\rvert^2-m^2)^4$. At $q=(2,1,0,0)$ the norm is $3$, the first determinant is $9$, and at $m=1$ the second determinant is $(3-1)^4=16$.
 
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
-$$
-$$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
-$$
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
-$$
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
-$$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
+## Verification
+
+The identities were recomputed before they were written. The algebra multiplication and the left action were built as four-dimensional complex matrices, and the symbol reductions were checked at random covectors. The residuals are the largest absolute difference over the stated samples.
+
+| check | result |
+|---|---|
+| $\tilde K^{\natural}\tilde K-(q_0^2-\lvert\vec q\rvert^2)e_t$ on $100$ random covectors | $8.9\times10^{-16}$ |
+| $\tilde K^2-\bigl((q_0^2+\lvert\vec q\rvert^2)e_t-2iq_0\vec q\bigr)$ on $100$ random covectors | $3.6\times10^{-15}$ |
+| rank and kernel of $\psi\mapsto\tilde K\psi$ at five nonzero null covectors | rank $2$, kernel $2$ |
+| the same off the cone, at $q=(2,1,0,0)$ | rank $4$ |
+| $\det(\psi\mapsto\tilde K\psi)-(q_0^2-\lvert\vec q\rvert^2)^2$ on $100$ random covectors | $1.2\times10^{-13}$ |
+| no element anticommutes with the three spatial units | kernel dimension $0$ |
+| the same for $100$ generic quaternionic triples | kernel dimension $0$ |
+| $\mathbb{D}(\tilde K)^2-\Box I$ on $100$ random covectors | $3.6\times10^{-15}$ |
+| $\det(\mathbb{D}(\tilde K)-m)-(q_0^2-\lvert\vec q\rvert^2-m^2)^4$ on $100$ random covectors | $1.8\times10^{-10}$ |
+| the chirality $\psi\mapsto-i\psi\vec e_z$ on the null kernel | eigenvalues $+1$ and $-1$, one each |
+
+The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription.
+
 ## Summary
 
-The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}g_{\mu\nu}\,\partial^2/\partial x_\mu\partial x_\nu$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra itself is $M_2(\mathbb{C})$; the four-dimensional carrier is its regular module, and the $M_4(\mathbb{C})$ of the root is the operator algebra on that module, not a second representation of $\mathbb{B}$. It has no Clifford root on the two-dimensional simple module of $\mathbb{B}$: the three generators $\vec e_k$ supply a three-generator Clifford system, and no fourth element of the algebra anticommutes with all three. The minimal carrier is the four-dimensional regular module $\mathbb{B}=S_+\oplus S_-$; the fourth generator is the two-sided exchange of the two minimal left ideals, and the three spatial generators are the left multiplications corrected by the grading. The unshifted cell root is $\mathsf D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)$, with $\mathsf D^2=\Box I$; its coefficients lie in the enveloping algebra $\mathbb{B}^{\mathrm e}$, not in $\mathbb{B}$, and the biquaternion object is the factorisation of the unshifted operator, $\tilde\nabla\tilde\nabla^{\natural}=\Box$. The shifted operator $\Box-\lambda$ has a single root exactly when the zero-order term is the pseudoscalar $c\,(-iR_{\vec e_z})$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=(\Box-\kappa^2)I$. The single root has a chiral half as its kernel; for $\kappa\ne0$, the scalar factorisation captures the full second-order kernel as the sum of its two first-order factors. The determinant of the single root is $(\Box-\lambda)^2$, the same expression as the determinant of the left regular matrix of the gradient at $\lambda=0$. The cell root is unique up to similarity, not canonical; the biquaternion structure supplies the decomposition and the exchange, not a preferred matrix frame, and a formula naming a particular frame is frame data.
+The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q=-\partial^2/\partial(q'_t)^2+\Delta$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra admits no single first-order root: a scalar square needs four elements that anticommute pairwise, one of square $+e_t$ and three of square $-e_t$, the algebra supplies the three spatial units, and no fourth element anticommutes with all three. The obstruction sits in the second order, where the zero-order term cannot reach.
+
+The first-order operator of the algebra is the gradient. Its square is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. Its product with the conjugate is $\Box$, and that product is the factorisation of the d'Alembertian that the algebra supplies. The free equation is first order in one field, $\tilde\nabla\tilde\Psi=0$; at a nonzero null covector it selects two of the four complex dimensions of the second-order solution space, one state of each chirality.
+
+The mass is a central scalar, and a central scalar commutes with every derivative. A scalar zero-order term therefore changes only the constant term of a square; it cannot remove the vector remainder of $\tilde\nabla^2$, so no scalar shift makes the gradient square to $\Box$. The mass acts instead as the coupling of the two parts, and the pair operator $\mathbb{D}$ carries it, with $(\mathbb{D}-m)(\mathbb{D}+m)=(\Box-m^2)I$. Eliminating one member returns $\Box\tilde\Psi_R=m^2\tilde\Psi_R$, so the pair and the second-order equation on one part are equivalent.
+
+The determinant of the left action of the symbol is the square of the quaternionic norm, and the determinant of the pair operator is the fourth power of the symbol of $\Box-m^2$. A determinant identity is not a square root. The results are a classification of form, and no mass, coupling or dynamics is predicted.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
-| $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | the biquaternionic gradient |
-| $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ | its quaternion conjugate, $\varepsilon=(1,-1,-1,-1)$ |
-| $\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ | the d'Alembertian $\partial^2/\partial Q_t^2+\Delta_Q=-\sum_{\mu,\nu}(g^{-1})_{\mu\nu}\,\partial^2/\partial Q_\mu\partial Q_\nu$ |
-| $x_\mu=(q'_t,x,y,z)$ | the real coordinates, $Q_t=iq'_t$ |
-| $g_{\mu\nu}[\mathbb{M}_-]$ | the frame metric $\mathrm{diag}(-1,+1,+1,+1)$; the cells square to its negative |
-| $q_\mu$ | the complex symbol variable dual to $i\partial/\partial Q_\mu$ |
-| $\vec e_k$ | the three generators inside $\mathbb{B}$, $\vec e_k^2=-e_t$ |
-| the generator cell | the four generators of the root on the regular module |
-| $-iR_{\vec e_z}=i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y}$ | the chirality cell, $(-iR_{\vec e_z})^{2}=I_4$ |
-| $L_{a}R_{b}$ | the two-sided cell, acting by $\tilde Q\mapsto a\tilde Qb$ |
-| $iR_{\vec e_x}=L_{e_t}R_{u}$, $iL_{\vec e_k}R_{\vec e_y}=L_{\vec e_k}R_{\tilde\Pi_+}-L_{\vec e_k}R_{\tilde\Pi_-}$, $-iR_{\vec e_z}=iL_{e_t}R_{\vec e_y}$ | the frame as cells of $T$ |
-| $\mathsf D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)$ | the unshifted **cell** root in $\mathbb{B}^{\mathrm e}$, $\mathsf D^2=\Box I$; not an element of $\mathbb{B}$ |
-| $\mathsf D_\lambda=\mathsf D+c\,(-iR_{\vec e_z})$, $c^2=-\lambda$ | the single root of $\Box-\lambda$ |
-| $\kappa$, $(\mathsf D-\kappa)(\mathsf D+\kappa)$ | the scalar shift and its factorisation |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two minimal left ideals, the two copies of the simple module |
-| $u=\vec\Upsilon_{+-}+\vec\Upsilon_{-+}=i\vec e_x$ | the exchange, $u^2=e_t$, $R_u=R_{i\vec e_x}$ |
-| $R_u$, $G=R_{\tilde\Pi_+}-R_{\tilde\Pi_-}=R_{i\vec e_z}$ | the exchange operator and the grading |
-| $P_\pm=\frac12\bigl(I\mp iR_{\vec e_z}\bigr)$ | the chiral projectors |
-| $Q_\pm=\frac{1}{2\kappa}(\kappa I\pm\mathsf D)$ | the spectral projectors of the scalar factorisation, $\kappa\ne0$ |
+| $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | the biquaternionic gradient, an element with derivative coefficients, acting on the left |
+| $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ | its quaternion conjugate, the second factor of $\Box$ |
+| $\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$ | the d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$ |
+| $Q_\mu$ | the algebra coordinates, $Q_t=iq'_t$ |
+| $x_\mu=(q'_t,x,y,z)$ | the real coordinates |
+| $q_\mu$ | the wave covector of a plane wave |
+| $\vec e_k$ | the three spatial units, $\vec e_k^2=-e_t$ |
+| $\omega=-\vec e_z$ | the pseudoscalar, $\omega^2=-e_t$ |
+| $\tilde K=q_0-i\vec q$ | the symbol of the gradient |
+| $\lambda$, $m$ | the shift and the mass, $\lambda=m^2$ |
+| $\tilde\Psi_L,\tilde\Psi_R$ | the two slots of the pair, each an element of $\mathbb{B}$ |
+| $I$ | the identity map of the carrier, an operator and not an element |
+| $\mathbb{D}$ | the pair operator on $\mathbb{B}\oplus\mathbb{B}$, $\mathbb{D}(\tilde\Psi_L,\tilde\Psi_R)=(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$, with $\mathbb{D}^2=\Box I$ |
+| $\psi\mapsto-i\psi\vec e_z$ | the chirality, a single right multiplication; its eigenspaces are $\psi\vec e_z=\pm i\psi$ |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the derivative conventions and the gradient.
-- [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the target representation of the algebra; the two summands of the regular module; the Peirce bases, the mixed units and the exchange.
 - [Biquaternion Analysis](biquaternion-analysis.html), for the gradient, its conjugate and the d'Alembertian at length.
 - [Conventions of the Operators and the Differential Calculus](operator-and-calculus-conventions.html), for the four forms, the four norms and the definition of the d'Alembertian.
-- [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operators $L_{\tilde Q_1}R_{\tilde Q_2}$ and their composition.
-- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the spanning theorem.
-- [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the gamma set, the volume element and its place among the sixteen cells.
-- [Bott Periodicity and the Classification](bott-periodicity-and-the-classification.html), for $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$ and the minimal module.
-- [Operators on a Clifford Module](operators-on-a-clifford-module.html), for the Clifford action and the symbol.
-- [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chiral split and the distinction from the minimal left ideals.
+- [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the target representation of the algebra and the determinant of the left regular matrix.

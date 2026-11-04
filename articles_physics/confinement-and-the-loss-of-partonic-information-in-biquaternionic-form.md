@@ -13,7 +13,7 @@ Four qualifications discipline the article, and they are stated at the outset be
 - **The two confinement pictures are not the same object.** The absent mechanism is the non-perturbative gauge dynamics behind the loop. There is a second picture, the **bag**, in which confinement is a linear **boundary condition** on the field inside a bounded region; that picture is a boundary-value problem, and it is the one piece of confinement the framework's own function theory does reach. The article keeps the two apart rather than letting "no mechanism" cover both.
 - **The loss of partonic information is a statement in standard quantum field theory.** Colour, confinement, and the colour-singlet structure of the asymptotic algebra are imported. What the framework contributes is the carrier on which the order parameter is built and the informational language in which the loss is described; the physics of the loss is cited as standard.
 
-The article proceeds as follows. The order parameter is reviewed and the two laws are given their information-theoretic interpretation, with the scaling of the loop's "information cost" recomputed. The loss of the partonic labels is then formulated as a superselection statement and made precise with the relative entropy of the accessible restrictions, recomputed on generic states. The scale-dependence of the parton picture is stated as an ultraviolet-to-infrared coarse-graining, and confinement is modelled as an effectively idempotent channel onto the colour-neutral algebra, with the decoherence article as the closest written model. The other confinement picture — the bag as a linear boundary condition, the two Dirac equations it uses (the one-sided chiral pair and the two-sided dictionary), and its reduction to a boundary equation in the algebra — is then given, because it is the part of confinement the framework houses. The framework's own objects are then separated from the imports in a ledger, and the ceiling that makes the colour group a no-route obstacle is recorded there.
+The article proceeds as follows. The order parameter is reviewed and the two laws are given their information-theoretic interpretation, with the scaling of the loop's "information cost" recomputed. The loss of the partonic labels is then formulated as a superselection statement and made precise with the relative entropy of the accessible restrictions, recomputed on generic states. The scale-dependence of the parton picture is stated as an ultraviolet-to-infrared coarse-graining, and confinement is modelled as an effectively idempotent channel onto the colour-neutral algebra, with the decoherence article as the closest written model. The other confinement picture — the bag as a linear boundary condition, the two Dirac equations it uses (the one-sided chiral pair and the two-sided equation the dictionary produces), and its reduction to a boundary equation in the algebra — is then given, because it is the part of confinement the framework houses. The framework's own objects are then separated from the imports in a ledger, and the ceiling that makes the colour group a no-route obstacle is recorded there.
 
 $$
 U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right),
@@ -335,11 +335,11 @@ $$
 \qquad(\vec q\in\partial\Omega),
 $$
 
-where $\vec u$ is the unit outward normal. For a unit normal that element squares to $-e_t$, so $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$ is an idempotent of rank two of four and the condition is the projector condition $\Phi_\omega=P_{\vec u}\Phi_\omega$: one half of the field is kept at the surface and one half is removed, and that removal is the ban on the flow. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $\Phi_\omega$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm?
+where $\vec u$ is the unit outward normal. The source's operator carried a constant right factor beside the left one; no right factor is carried here, because the dictionary's spatial coefficient is left multiplication by $\vec e_k$ — the same coefficient that carries the spatial derivative in $\mathcal N$ above — and not a left factor times a fixed right one. For a unit normal the element squares to $-e_t$, so $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$ is an idempotent of rank two of four and the condition is the projector condition $\Phi_\omega=P_{\vec u}\Phi_\omega$: one half of the field is kept at the surface and one half is removed, and that removal is the ban on the flow. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $\Phi_\omega$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm?
 
 ### The Biquaternionic Reduction
 
-The reduction of the model to the algebra is due to V. V. Kravchenko (1995), and its steps are worth separating, because each is a place where the framework's own objects do the work.
+The reduction of the model to the algebra is due to V. V. Kravchenko (1995), and its steps are worth separating, because each is a place where the framework's own objects do the work. Four letters of the source are operators and not elements, and they are flagged once here: $u^{\pm}$ are the two operator-matrix halves of the change of variables, acting on the pair (field, conjugate); $S^{\pm}$, $S_\alpha$ and $K_\alpha$ are operator projectors and integral operators on the module; and $P_\alpha=\tfrac12(I+S_\alpha)$ is an operator, with $I$ the identity operator. None of them is an element of the algebra, and none of them is written as one.
 
 **A real-linear bijection of the spinor module onto the algebra.** There is a bijection $A$ from bispinors $\Phi: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[\Phi]$, and it is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: the central imaginary of the bispinor becomes a right action of the algebra,
 
@@ -374,7 +374,7 @@ R = D_3 + i\frac{\partial}{\partial t'}\,M_{i\vec e_x} - m M_{\vec e_y}
 = D_3 - \frac{\partial}{\partial t'}M_{\vec e_x} - m M_{\vec e_y},
 $$
 
-where the single step $i\cdot i=-1$ is the only place that the central imaginary enters, and it cancels: $R$ has no complex coefficient. The factors $u^{\pm}$ are the two halves of that change of variables, and they carry the bar; it has been moved off the operator and onto the field.
+where the single step $i\cdot i=-1$ is the only place that the central imaginary enters, and it cancels: $R$ has no complex coefficient. The factors $u^{\pm}$ are the two operator-matrix halves of that change of variables, and they carry the bar; it has been moved off the operator and onto the field.
 
 For a time-harmonic field the equation reduces, after that change of variables, to the **shifted Moisil–Teodoresco equation** with the source's parameter,
 
@@ -423,7 +423,7 @@ $$
 S^-\tilde{p} = 0 \ \text{ on } \partial\Omega, \qquad\text{equivalently}\qquad \tilde{p} = S^+\tilde{p},
 $$
 
-where $S^\pm$ are complementary projectors assembled from the boundary normal and a fixed unit direction. The bag model then meets the boundary-value theory of $D_\alpha$, which supplies a criterion: a Hölder function on $\partial\Omega$ is the boundary value of a $D_\alpha$-regular function in $\Omega$ if and only if $P_\alpha f = f$, where $P_\alpha = \tfrac12(I + S_\alpha)$ and $S_\alpha$ is the operator of singular integration with the biquaternionic parameter, built from the Cauchy-type operator $K_\alpha$. Combined with that criterion, the bag model reduces to the single boundary equation. There the criterion's $P_\alpha$ and the bag's $S^+$ coincide on the boundary data the model admits; that coincidence is the source's result, not an identity of the two constructions in general,
+where $S^\pm$ are complementary projector operators on the module — operators, not elements of the algebra — assembled from the boundary normal and a fixed unit direction. The bag model then meets the boundary-value theory of $D_\alpha$, which supplies a criterion: a Hölder function on $\partial\Omega$ is the boundary value of a $D_\alpha$-regular function in $\Omega$ if and only if $P_\alpha f = f$, where $P_\alpha = \tfrac12(I + S_\alpha)$ and $S_\alpha$ is the operator of singular integration with the biquaternionic parameter, built from the Cauchy-type operator $K_\alpha$. Combined with that criterion, the bag model reduces to the single boundary equation. There the criterion's $P_\alpha$ and the bag's $S^+$ coincide on the boundary data the model admits; that coincidence is the source's result, not an identity of the two constructions in general,
 
 $$
 \boxed{\;\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p} \qquad \text{on } \partial\Omega\;}.
@@ -530,14 +530,14 @@ What the framework supplies here is the function theory, the reduction and the F
 | $D_3=\sum_k\vec e_k\partial/\partial Q_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |
-| $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$ |
+| $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$; $u^{\pm}$ are the operator matrices of the change of variables |
 | $\vec q=x\vec e_x+y\vec e_y+z\vec e_z$ | Position in the bag domain |
 | $D_\alpha = D + M_\alpha$, $D = i\sum_k \vec e_k\,\partial/\partial Q_k$ | Shifted Moisil–Teodoresco operator; $M_b$ is the right action $f\mapsto fb$ |
 | $\alpha = -(i\omega \vec e_x + m \vec e_y)$ | Bag parameter; $\alpha\in\mathcal Z \iff \omega^2 = m^2$ |
 | $\mathcal Z = \{\tilde Q\neq0 : \langle\tilde Q\rangle_{\natural}=0\}$ | Zero-divisor set; the mass shell in parameter space |
 | $P^\pm = \tfrac12 M_{(e_t\pm i\vec e_x)}$ | Idempotents of the right action, used in removing the bar |
-| $S^\pm$, $P_\alpha = \tfrac12(I+S_\alpha)$ | Boundary projectors; $P_\alpha$ built from the Cauchy-type operator $K_\alpha$ |
-| $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$ | Boundary projector of the linear condition; $\Phi_\omega=P_{\vec u}\Phi_\omega$ |
+| $S^\pm$, $P_\alpha = \tfrac12(I+S_\alpha)$ | Boundary projector operators on the module; $P_\alpha$ built from the Cauchy-type operator $K_\alpha$ |
+| $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$ | Element of the algebra, acting on the left; $\Phi_\omega=P_{\vec u}\Phi_\omega$ is the linear condition |
 | $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ | The bag reduced to one boundary integral equation |
 | **Standard QCD notation, not framework objects** | |
 | $SU(3)$, $N_c = 3$, $\mathbf{3}$, $\mathbf{8}$ | Colour group, number of colours, quark, gluon — no route yet |

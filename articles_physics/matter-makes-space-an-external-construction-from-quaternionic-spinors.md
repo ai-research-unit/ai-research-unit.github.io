@@ -59,7 +59,14 @@ $$
 G_0=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
 G_k=\begin{pmatrix}0&q_k\\-q_k&0\end{pmatrix},
 $$
-which the source writes with the letter $\gamma$ and a frame bracket of its own. They are written $G_\mu$ here because the source's arrays are not the corpus's frame actions. Read as actions on the field, $G_0$ is the left multiplication $\psi\mapsto i\vec e_x\psi$ and each $G_k$ is one two-sided product $L_aR_b$; all four are of that form, with the right factor trivial for $G_0$, and none of them is $C_\mu$, whose time member acts from the right. Section 2.2 asserts the anticommutation relations $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$ from them, with signature $(+,-,-,-)$. Four displays in that section and the next are tested here; three of them fail outright, and the fourth holds and is empty.
+which the source writes with the letter $\gamma$ and a frame bracket of its own. They are written $G_\mu$ here because the source's arrays are not the corpus's frame actions. Read as actions on the field, each is one left multiplication and at most one right multiplication,
+$$
+G_0:\psi\mapsto i\vec e_x\psi,\qquad
+G_x:\psi\mapsto-\vec e_y\psi\vec e_x,\qquad
+G_y:\psi\mapsto \vec e_y\psi\vec e_y,\qquad
+G_z:\psi\mapsto-\vec e_y\psi\vec e_z ,
+$$
+each verified as an operator identity at residual zero. The three spatial ones share their left factor up to the joint sign the decomposition leaves free, and none of the four is $C_\mu$: the corpus's spatial actions put $\vec e_k$ on the left and a fixed $\vec e_y$ on the right, and its time action is a right multiplication alone where the source's is a left one. That is also where the printed square comes from: no step of this kind carries a unit $i$, and two factors that each square to $-1$ then square to $+1$. Section 2.2 asserts the anticommutation relations $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$ from them, with signature $(+,-,-,-)$. Four displays in that section and the next are tested here; three of them fail outright, and the fourth holds and is empty.
 
 **The block map is off by the factor $i$.** The printed spatial block squares to
 $$
@@ -109,7 +116,7 @@ e^a{}_\mu=\kappa^{-1}\,\mathrm{ReTr}\bigl\langle\Psi,\,C_a\,\partial \Psi/\parti
 T_\rho{}_{\mu\nu}=\kappa\,\mathrm{ReTr}\bigl\langle\Psi,\,\tfrac12[q_\mu,q_\nu]\,q_\rho\,\Psi\bigr\rangle,\qquad
 K_{\mu ab}=\kappa\,\mathrm{ReTr}\bigl\langle\Psi,\,\sigma_{ab}\,\partial \Psi/\partial x_\mu\bigr\rangle,
 $$
-and identifies them with the tetrad, the torsion tensor and the contorsion. The frame action $C_a$ carries the tetrad's frame slot, and $\sigma_{ab}=\tfrac12[C_a,C_b]$ is the bivector slot, so the contorsion needs no new letter. In Eq. (5) the multipliers are the units and not the actions: $q_\mu$ acts by left multiplication, $\psi\mapsto e_\mu\psi$, and the product $\tfrac12[q_\mu,q_\nu]q_\rho$ is an element of the algebra. Throughout, the tetrad of Eq. (4) is written $\exp(a){}_\mu$ for the source's $e^a{}_\mu$, the frame index in parentheses so that it does not collide with the basis unit $e_\mu$, and $e$ is $\det\exp(a){}_\mu$.
+and identifies them with the tetrad, the torsion tensor and the contorsion. The frame action $C_a$ carries the tetrad's frame slot, and $\sigma_{ab}=\tfrac12[C_a,C_b]$ is the bivector slot, so the contorsion needs no new letter. In Eq. (5) the multipliers are the units and not the actions: $q_\mu$ acts by left multiplication, $\psi\mapsto e_\mu\psi$, and the product $\tfrac12[q_\mu,q_\nu]q_\rho$ is an element of the algebra. The whole element then multiplies $\Psi$ from the left, and within it the rightmost factor is the one nearest the field, which is why the free index is the last one written in $[q_\lambda,q_\mu]q_\nu$. The letters $q$ name elements here and never a side: only the position of the element relative to $\Psi$ does. Throughout, the tetrad of Eq. (4) is written $\exp(a){}_\mu$ for the source's $e^a{}_\mu$, the frame index in parentheses so that it does not collide with the basis unit $e_\mu$, and $e$ is $\det\exp(a){}_\mu$.
 
 The source then matches the composites to the standard Einstein–Cartan–Sciama–Kibble objects by $T_\rho{}_{\mu\nu}=\kappa\,\sigma_\rho{}_{\mu\nu}$, with $\sigma_\rho{}_{\mu\nu}$ the totally antisymmetric spin density of three frame actions,
 $$
@@ -198,7 +205,7 @@ $$
 \qquad
 \Delta=\sum_k\partial^2/\partial x_k^2 ,
 $$
-and on the solutions of the equation it is $m^2$, which is the Klein–Gordon shell the signature of $g$ requires. The square is scalar, and it is scalar for the source's operator and not for the gradient: $\tilde\nabla^2$ is not $\Box$, which is why the corpus carries no one-field first-order massive equation and why its mass sits in the off-diagonal pair of the next display. The source's equation is
+and on the solutions of the equation it is $m^2$, which is the Klein–Gordon shell the signature of $g$ requires. The square is scalar, and it is scalar for the source's operator and not for the gradient: on a generic wavevector the source's square departs from a multiple of $I_4$ by $9\times10^{-16}$, while $\tilde\nabla^2$ departs from one by $0.9$. That $\tilde\nabla^2$ is not $\Box$ is why the corpus carries no one-field first-order massive equation and why its mass sits in the off-diagonal pair of the next display. The source's equation is
 $$
 iC^a\frac{\partial\Psi}{\partial x_a}=m\Psi .
 $$
@@ -233,7 +240,7 @@ a coefficient $2\kappa=16\pi G$ where the printed target $G_{\mu\nu}=8\pi G T_{\
 
 Section 9.1 adds a Lagrange multiplier $\Theta_{\mu\nu ab}$ enforcing $\mathrm{Riem}_{\mu\nu ab}(\omega)=0$, so that the geometry is teleparallel, and identifies the Weitzenböck gauge $\omega_{\mu ab}=0$ with the contorsion given by minus the Levi-Civita spin connection of the tetrad, $K_{\mu ab}=-\omega_{\mu ab}(e)$. Both statements of geometry are correct and standard: the Weitzenböck connection
 $$
-\Gamma_{\lambda\mu\nu}=\sum_a e_{a\lambda}\,\partial/\partial x_\mu\,\exp(a){}_\nu
+\Gamma_{\lambda\mu\nu}=\sum_a e_{a\lambda}\,\frac{\partial \exp(a){}_\nu}{\partial x_\mu}
 $$
 is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
 
@@ -371,7 +378,7 @@ $$
 $$
 so there the channel count and the conclusion agree.
 
-The disagreement begins where an index repeats. On the twenty-four triples in which the first index coincides with exactly one of the other two, the epsilon vanishes and the bilinear does not: $B_{001}$ is nonzero and real for a generic spinor, because $\langle\Psi,C_0\sigma_{01}\Psi\rangle=\Psi^{\dagger}C_tC_0\sigma_{01}\Psi=\Psi^{\dagger}\sigma_{01}\Psi$ — the dagger form is the pairing written out, with $\Psi^{\dagger}C_t$ the source's adjoint and $C_tC_0=I$ — and $\sigma_{01}$ is Hermitian. The bivectors split by type: $\sigma_{0k}$ is Hermitian and $\sigma_{ij}$ anti-Hermitian, on all six combinations. So $B$ is not the epsilon channel, and the printed display cannot be an identity for the bilinear altogether: it holds on forty of the sixty-four triples, and the twenty-four that fail are exactly those where the first index coincides with one — not both — of the other two. What does hold, exactly and at every index triple, is the statement for the antisymmetrised projection,
+The disagreement begins where an index repeats. On the twenty-four triples in which the first index coincides with exactly one of the other two, the epsilon vanishes and the bilinear does not: $B_{001}$ is nonzero and real for a generic spinor. The reason is that $C_0\sigma_{01}=C_0^2C_1=C_1$: on a repeated first index the product collapses to a **single frame action** and not to the bivector, and $\langle\Psi,C_k\Psi\rangle$ is real on every spinor tested, to machine precision. The bare bivector would not do the job: $\langle\Psi,\sigma_{\mu\nu}\Psi\rangle$ is pure imaginary on all six pairs, the pairing contributing one unit $i$ and the bivector two. Hermiticity is a statement about the source's own adjoint form and not about this pairing: $\Psi^{\dagger}\sigma_{0k}\Psi$ is real because $\sigma_{0k}$ is Hermitian, and $\Psi^{\dagger}\sigma_{ij}\Psi$ is pure imaginary because $\sigma_{ij}$ is anti-Hermitian, on all six pairs. So $B$ is not the epsilon channel, and the printed display cannot be an identity for the bilinear altogether: it holds on forty of the sixty-four triples, and the twenty-four that fail are exactly those where the first index coincides with one — not both — of the other two. What does hold, exactly and at every index triple, is the statement for the antisymmetrised projection,
 $$
 \operatorname{Alt}\bigl\langle\Psi,\,C_\lambda C_\mu C_\nu\,\Psi\bigr\rangle
 =-\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,A_\rho ,
@@ -457,8 +464,10 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $C_\mu$ | the frame action, $C_t:\psi\mapsto i\psi\vec e_x$ and $C_k:\psi\mapsto i\vec e_k\psi\vec e_y$ |
 | $\chi$ | the chirality action $\psi\mapsto-i\psi\vec e_z$ |
 | $\Gamma_A$ | the sixteen products of the $G_\mu$, read as arrays: the Clifford basis of Appendix B.1, and the basis in which the source declares the constraint term zero |
-| $G_\mu$ | the source's four arrays, Eq. (1), read as actions: $G_0$ the left multiplication $\psi\mapsto i\vec e_x\psi$, the three $G_k$ single two-sided products |
+| $G_\mu$ | the source's four arrays, Eq. (1), read as the actions displayed in the text: $G_0:\psi\mapsto i\vec e_x\psi$, $G_x:\psi\mapsto-\vec e_y\psi\vec e_x$, $G_y:\psi\mapsto\vec e_y\psi\vec e_y$, $G_z:\psi\mapsto-\vec e_y\psi\vec e_z$ |
 | $\sigma_{\mu\nu}$ | the commutator $\tfrac12[C_\mu,C_\nu]$ of two frame actions, the slot of the source's $\tfrac12[q_\mu,q_\nu]$: the product $C_\mu C_\nu$ for distinct indices, left multiplication by the bivector for two spatial indices, two-sided for one time and one spatial index |
+| $\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box$ | the corpus's gradient, conjugate gradient and d'Alembertian, defined in the introduction: the only derivative operators this article uses of its own, all acting from the left |
+| $D_\mu$ | the source's covariant derivative, a derivative and not an action: it carries the spin connection and is never a cell |
 | $\operatorname{Alt}$ | the normalised antisymmetrisation, the average over the six permutations with signs |
 | $\varepsilon_\mu$ | the sign vector $\varepsilon_t=+1$, $\varepsilon_k=-1$, which writes a raised index low |
 | $\kappa=8\pi G$ | the source's single coupling, used both as $\kappa$ and as $\kappa^{-1}$ |
