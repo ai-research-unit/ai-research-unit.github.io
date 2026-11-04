@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spinors as Peirce Coordinates in the Biquaternion Algebra — Biquaternion Universe</title>
+  <title>The Polarized Module of the Biquaternion Algebra — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,15 +68,38 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="spinors-as-peirce-coordinates-in-the-biquaternion-algebra"><strong>Spinors as Peirce Coordinates in the Biquaternion Algebra</strong></h1>
+        <h1 id="the-polarized-module-of-the-biquaternion-algebra"><strong>The Polarized Module of the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A <strong>spinor</strong> of the biquaternion algebra $\mathbb{B}$ is an element of one of the two Peirce spaces</p>
+<p><strong>The subject.</strong> The carrier of the left action of $\mathbb{B}$ is four complex dimensional and splits into two planes in many ways and canonically in none; <em>The Unpolarized Module of the Biquaternion Algebra</em> established that, and this article makes one choice and reads what the choice yields. A <strong>polarization</strong> of the carrier is a pair of distinct points of its projective line, that is an unordered pair of complementary minimal left ideals. Once such a pair is named, the carrier is the direct sum of two submodules of dimension two, each carrying a copy of the simple module $S$, and every statement the corpus makes about a spinor, a Weyl component or a Peirce coordinate is written in this chart.</p>
+<p><strong>What the choice buys.</strong> The two halves are left ideals, they are minimal, and every minimal left ideal is one of their kind: $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$. The algebra is their direct sum as a left module, and the whole family of minimal left ideals is a projective line, so the choice made here is one point of a family and not a structure of the algebra. Inside one half the Peirce family splits the space canonically into a diagonal line and a mixed line; a Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the freedom that remains; the ladder is left multiplication by the mixed units; and the intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line.</p>
+<p><strong>What the choice costs.</strong> The choice is a point of a projective line, so a statement proved in it is a statement about the point until its invariance is shown, and a change of point destroys exactly the statements that are not invariant. The cost is paid once and stated here rather than in each section: the adapted bases, the coordinates and the gauge are chart data.</p>
+<p><strong>What the choice does not buy.</strong> The polarization is <strong>not</strong> a chirality. The two halves are both copies of $S$, so the pair is a <strong>copy index</strong>: it distinguishes the halves and does not distinguish their nature, and an automorphism of the module carries one pair of points into any other. The word chirality belongs to the conjugate pair, which is not a splitting of this carrier at all and is treated in <em>The Unpolarized Module of the Biquaternion Algebra</em>, §<em>The Conjugate Pair</em>. A reader who takes the Peirce pair for the two chiralities counts a choice of basis as a structure of the algebra, which is the error the three-article arrangement is meant to prevent.</p>
+<p><strong>Boundaries.</strong> The regular module, its left and right actions, its two-sided ideals and the embedding of the ideals among the subspaces are <em>The Regular Module in the Biquaternion Algebra</em>; the carrier with no point chosen, the projective line of all polarizations, the trace form and the conjugate pair are <em>The Unpolarized Module of the Biquaternion Algebra</em>; the one point that the Pauli display chooses silently, and the tensor notation it brings, are <em>The Pauli Module of the Biquaternion Algebra</em>; the classification of all modules is <em>The Category of Modules in the Biquaternion Algebra</em>. The family of idempotents and the four Peirce lines are <em>The Peirce Decomposition of the Biquaternion Algebra</em>; the choice of one element in each line is <em>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</em>; right multiplication as an operator is <em>Operator Chirality on the Biquaternion Algebra</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the notation are those of <em>The Unpolarized Module of the Biquaternion Algebra</em>, §<em>Introduction</em>: $\mathbb{B}$ with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, the central $i$, and $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ the standard pair of a complete family. The word <em>spinor</em> is the name of an element of one of the two carriers and carries no physical claim.</p>
+<h2 id="the-two-minimal-left-ideals">The Two Minimal Left Ideals</h2>
+<p><strong>The two spinor spaces are left ideals, they are minimal, and the algebra is their direct sum as a left module.</strong></p>
+<p>A <strong>minimal left ideal</strong> is a nonzero left ideal containing no nonzero proper left ideal.</p>
+<p>The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ are left ideals, because $\mathbb{B}S_\pm=\mathbb{B}\mathbb{B}\tilde\Pi_\pm=\mathbb{B}\tilde\Pi_\pm=S_\pm$. Their sum is direct by §<em>The Two Spinor Spaces</em> below, so</p>
 <p>$$
-S_{+}=\mathbb{B}\tilde\Pi_{+}=\mathbb{B}_{++}\oplus\mathbb{B}_{-+},\qquad
-S_{-}=\mathbb{B}\tilde\Pi_{-}=\mathbb{B}_{+-}\oplus\mathbb{B}_{--},
+\mathbb{B}=S_+\oplus S_-=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-
 $$</p>
-<p>where $\tilde\Pi_{+},\tilde\Pi_{-}$ is a nondegenerate complete family of idempotents and $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$ are the four Peirce lines. The family fixes the two spaces and their splitting into a diagonal line and a mixed line. The diagonal line is spanned by the idempotent; the mixed line has no canonical generator. A Peirce basis chooses one, and the choice is the gauge of <em>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</em>. The spinor is the algebra element; its Peirce coordinates are its coefficients in the adapted basis. The coordinates depend on the basis, the element does not.</p>
-<p>The article defines the two spaces and their canonical splitting, gives the adapted bases and the gauge action, computes the ladder by the mixed units, identifies the invariants of a single spinor, reads the Peirce index as a right index, treats right multiplication and the exchange, and says what the spinor is not. An example is given at the end.</p>
+<p>as a left module. Each summand has complex dimension two and real dimension four.</p>
+<p><strong>Minimality.</strong> Let $0\neq J\subseteq S_+$ be a left ideal. In the $M_2(\mathbb{C})$ model $S_+$ is the first column, and a nonzero element of the column has a nonzero entry. Left multiplication by a matrix unit selects that entry and produces $E_{11}$ or $E_{21}$, so the ideal generated by the element is the whole column. Hence $J=S_+$, and $S_+$ is minimal. The same argument with the second column gives $S_-$.</p>
+<p>The minimality is the primitive character of the pair. A nonzero idempotent is primitive when it is not a sum of two nonzero orthogonal idempotents, and in a finite-dimensional semisimple algebra the left ideal generated by a primitive idempotent is minimal (<em>Primitive Idempotents and Minimal Left Ideals</em>, §<em>The division ring criterion</em>). The idempotents $\tilde\Pi_+,\tilde\Pi_-$ are primitive by <em>Idempotents</em>, §<em>The Classification of the Idempotents</em>.</p>
+<h2 id="all-minimal-left-ideals">All Minimal Left Ideals</h2>
+<p><strong>Every left ideal is a direct sum of minimal left ideals, every minimal left ideal is $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$, and all are isomorphic.</strong></p>
+<p>Over $\mathbb{C}$ the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is semisimple (<em>The Regular Module</em>, §<em>Artinian, Semisimple, and Length Two</em>), so every left ideal is a direct sum of minimal ones (<em>Simple and Semisimple Modules</em>, §<em>Semisimple Algebras and Wedderburn–Artin</em>).</p>
+<p>Every minimal left ideal is of the form $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$ (<em>Primitive Idempotents and Minimal Left Ideals</em>). The examples are $S_+$ and $S_-$ above.</p>
+<p>All minimal left ideals are isomorphic as left $\mathbb{B}$-modules. A general one is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent, and $\tilde\Pi$ is the image of $\tilde\Pi_+$ under an inner automorphism of $\mathbb{B}$ (<em>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</em>, §<em>Systems of Matrix Units</em>), which carries $\mathbb{B}\tilde\Pi_+$ to $\mathbb{B}\tilde\Pi$. There is therefore one isomorphism class of simple left modules and, dually, one of simple right modules.</p>
+<p>Being nonzero proper one-sided ideals, none is two-sided; this is the abundance of one-sided ideals that the simplicity of <em>The Regular Module</em>, §<em>The Two-Sided Ideals</em> permits.</p>
+<h2 id="the-simple-module">The Simple Module</h2>
+<p><strong>The simple module is $\mathbb{C}^2$, the central imaginary acts on it as the scalar $i$, and its endomorphisms are the complex scalars.</strong></p>
+<p>With the basis $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ the left module $S_+$ is $\mathbb{C}^2$ and the central element $i$ acts as the scalar $i$:</p>
+<p>$$
+i\,(\alpha\tilde\Pi_++\beta\vec\Upsilon_+)=(i\alpha)\tilde\Pi_++(i\beta)\vec\Upsilon_+ .
+$$</p>
+<p>So the simple module underlying each minimal left ideal is the standard two-dimensional one, with $i$ acting by the identity matrix.</p>
+<p>By Schur's lemma the endomorphisms of the simple module are the scalars, $\operatorname{End}_{\mathbb{B}}(S_+)=\mathbb{C}$ (<em>Simple and Semisimple Modules</em>, §<em>Schur's lemma</em>). The general classification of the modules, the multiplicity and the Morita equivalence are <em>The Category of Modules</em>.</p>
 <h2 id="the-two-spinor-spaces">The Two Spinor Spaces</h2>
 <p><strong>Definition.</strong> The two <strong>spinor spaces</strong> of the family are</p>
 <p>$$
@@ -226,7 +249,7 @@ $$</p>
 <p>the right Peirce row of $\tilde\Pi_{+}$, not $S_{-}=\mathbb{B}\tilde\Pi_{-}$. The two spaces are different subspaces: the row contains $\mathbb{B}_{++}\oplus\mathbb{B}_{+-}$ and $S_{-}$ contains $\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$. They share the mixed line $\mathbb{B}_{+-}$ but are not equal. Chirality belongs to the left grouping, not to the involution.</p>
 <h2 id="what-the-spinor-is-not">What the Spinor Is Not</h2>
 <p><strong>It is not a state vector in an external space.</strong> The spinor is an element of the algebra, in one of the two Peirce spaces. Its coordinates are the Peirce coordinates in an adapted basis. There is no separate Hilbert space here; a Hermitian form, when it is used, is a form on the algebra.</p>
-<p><strong>It is not a column of a matrix.</strong> A column appears when $\mathbb{B}$ is written as $M_{2}(\mathbb{C})$ and the spinor space is read as a column of the matrix. That is one picture of the same element; the algebra element and its Peirce coordinates are the definition. The matrix picture belongs to <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>.</p>
+<p><strong>It is not a column of a matrix.</strong> A column appears when $\mathbb{B}$ is written as $M_{2}(\mathbb{C})$ and the spinor space is read as a column of the matrix. That is one picture of the same element; the algebra element and its Peirce coordinates are the definition. The matrix picture is §<em>Example: The Standard Family</em> below.</p>
 <p><strong>It is not defined by an auxiliary element.</strong> The family defines the two spaces and their splitting. The mixed line has no canonical element, and a basis is a choice. No element outside the family is part of the definition.</p>
 <h2 id="example-the-standard-family">Example: The Standard Family</h2>
 <p>For the standard family</p>
@@ -267,7 +290,9 @@ $$</p>
 \mathrm{Sc}(\psi_{-}\psi_{-}^{*})=\frac12\bigl(|b|^{2}+|d|^{2}\bigr).
 $$</p>
 <h2 id="summary">Summary</h2>
-<p>A spinor is an element of one of the two Peirce spaces $S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$. The family splits each space canonically into a diagonal line and a mixed line, $S_{+}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{B}_{-+}$ and $S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{-}$. A Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the reciprocal scaling of the two mixed units. The ladder is left multiplication by the mixed units, and its composites are the two projections. The intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line; the mixed coordinate is gauge-dependent. The Peirce index is the right index. Right multiplication preserves a spinor space under a corner condition and exchanges the two spaces by the mixed units; the star does not exchange them.</p>
+<p>The two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two Peirce carriers, and in this algebra they are the two minimal left ideals, of complex dimension two; the algebra is their direct sum as a left module, $\mathbb{B}=S_+\oplus S_-$. Every left ideal is a direct sum of minimal left ideals, every minimal left ideal is $\mathbb{B}\tilde\Pi$ for a primitive idempotent, and all of them are isomorphic to the simple module $\mathbb{C}^2$, on which $i$ acts as the scalar $i$. The family of them is a projective line, so the pair of points that this article fixes is a choice and not a structure.</p>
+<p>A spinor is an element of one of the two spaces. The family splits each space canonically into a diagonal line and a mixed line, $S_{+}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{B}_{-+}$ and $S_{-}=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Pi_{-}$. A Peirce basis chooses a generator of the mixed line and gives the adapted coordinates; the gauge is the reciprocal scaling of the two mixed units. The ladder is left multiplication by the mixed units, and its composites are the two projections. The intrinsic data of a single spinor are the diagonal coefficient and the element of the mixed line; the mixed coordinate is gauge-dependent. The Peirce index is the right index. Right multiplication preserves a spinor space under a corner condition and exchanges the two spaces by the mixed units; the star does not exchange them.</p>
+<p>The index that the choice supplies is a copy index and not a chirality: the two halves are isomorphic, so no observation inside the algebra distinguishes them, and the pair is moved by the automorphisms of the module. Chirality is carried by the conjugate pair and by the cell $\gamma_5=-iR_{\vec e_z}$, not by this splitting.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -278,41 +303,56 @@ $$</p>
 </thead>
 <tbody>
 <tr>
+<td>$\mathbb{B}\tilde\Pi$</td>
+<td>the minimal left ideal of the primitive idempotent $\tilde\Pi$</td>
+</tr>
+<tr>
 <td>$S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$</td>
-<td>The two spinor spaces</td>
+<td>the two Peirce carriers, the minimal left ideals, the spinor spaces</td>
 </tr>
 <tr>
 <td>$\psi_{\pm}$</td>
-<td>A spinor of the corresponding space</td>
+<td>a spinor of the corresponding space</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_{\pm}$</td>
-<td>The idempotents of the family</td>
+<td>the idempotents of the family</td>
 </tr>
 <tr>
 <td>$\vec\Upsilon_{+-},\vec\Upsilon_{-+}$</td>
-<td>The mixed units of a basis</td>
+<td>the mixed units of a basis</td>
+</tr>
+<tr>
+<td>$\mathcal{C}_\pm$</td>
+<td>the couple of Peirce vectors spanning $S_\pm$</td>
 </tr>
 <tr>
 <td>$a,c$</td>
-<td>The coordinates of a positive spinor</td>
+<td>the coordinates of a positive spinor</td>
 </tr>
 <tr>
 <td>$b,d$</td>
-<td>The coordinates of a negative spinor</td>
+<td>the coordinates of a negative spinor</td>
 </tr>
 <tr>
 <td>$t$</td>
-<td>The gauge parameter, with $|t|=1$ in the Hermitian case</td>
+<td>the gauge parameter, with $\lvert t\rvert=1$ in the Hermitian case</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$</td>
+<td>the four Peirce lines</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="the-unpolarized-module-of-the-biquaternion-algebra.html">The Unpolarized Module of the Biquaternion Algebra</a>, for the carrier before the choice, the projective line of all polarizations, the trace form and the conjugate pair.</li>
+<li><a href="the-pauli-module-of-the-biquaternion-algebra.html">The Pauli Module of the Biquaternion Algebra</a>, for the one root that the Pauli display chooses silently.</li>
+<li><a href="the-regular-module.html">The Regular Module in the Biquaternion Algebra</a>, for the ideals as submodules and the simplicity of the algebra.</li>
+<li><a href="the-category-of-modules.html">The Category of Modules in the Biquaternion Algebra</a>, for the classification of all modules and the lattice of left ideals.</li>
 <li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">Peirce Decompositions of the Biquaternion Algebra</a>, for the family, the four lines and the product rule.</li>
 <li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</a>, for the basis, the gauge and the coordinates.</li>
-<li><a href="spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Biquaternion Algebra</a>, for the matrix picture of the two spaces.</li>
-<li><a href="the-minimal-left-ideals.html">The Minimal Left Ideals</a>, for the identification of the two spaces as minimal left ideals.</li>
+<li><a href="primitive-idempotents-and-minimal-left-ideals.html">Primitive Idempotents and Minimal Left Ideals</a>, for the general criterion.</li>
 <li><a href="the-commutator-operator.html">The Commutator Operator</a>, for the right multiplication and the exchange as operators.</li>
 <li><a href="idempotents.html">Idempotents</a>, for the classification of the idempotents and the standard pair.</li>
 </ul>

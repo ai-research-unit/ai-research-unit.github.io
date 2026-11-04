@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pauli Module of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pauli-module-of-the-biquaternion-algebra"><strong>The Pauli Module of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> <em>The Unpolarized Module of the Biquaternion Algebra</em> shows that a splitting of the carrier is a point of a projective line and that the algebra prefers none of them; <em>The Polarized Module of the Biquaternion Algebra</em> fixes one pair of points and develops what follows. This article treats the one point that a particular frame makes for free. The frame is the Pauli frame, the point is the root $\vec\Xi=i\vec e_z$, and the effect of the frame is that one polarization of the carrier arrives already chosen and cannot be seen to have been chosen.</p>
+<p><strong>The result in one line.</strong> The Pauli display writes the left action as $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, so the carrier arrives as $\mathbb{C}^2\otimes\mathbb{C}^2$ with one factor untouched; the untouched factor is the Peirce index of the root $\vec\Xi=i\vec e_z$, not a chirality, and a statement about "the two components" made in this display is a statement about the root until it is shown to be invariant.</p>
+<p><strong>Why the article is separate.</strong> The display is exact, useful and used throughout the corpus, and the mistake it invites is not in the display but in the reading of it. Separating the article from the polarized one keeps the two claims apart: that a polarization can be named (the polarized article) and that one particular frame names one silently (this article). Merged, the second claim would be read as a corollary of the first, and the whole point is that it is not.</p>
+<p><strong>Boundaries.</strong> The carrier, the projective line of all polarizations and the argument that no point is canonical are <em>The Unpolarized Module of the Biquaternion Algebra</em>; the chosen pair, the minimal left ideals and the spinors are <em>The Polarized Module of the Biquaternion Algebra</em>; the frames as matrices are <em>Families of Matrix Representations</em> and <em>$M_4(\mathbb{C})$ Pauli Representation</em>; the root and the Peirce family are <em>Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</em> and <em>The Peirce Decomposition of $M_4(\mathbb{C})$</em>; the swap and its matrix are <em>Operator Chirality on the Biquaternion Algebra</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the notation are those of <em>The Unpolarized Module of the Biquaternion Algebra</em>, §<em>Introduction</em>. The labels $\mathrm{axf}$ and $\mathrm{pau}$ are those of <em>Matrix Representations Conventions</em>.</p>
+<h2 id="the-root-and-the-frame">The Root and the Frame</h2>
+<p><strong>One datum.</strong> The Pauli frame is generated by a single element, the root</p>
+<p>$$
+\vec\Xi=i\vec e_z,\qquad \vec\Xi^2=e_t,\qquad \vec\Xi^{\natural}=\vec\Xi ,
+$$</p>
+<p>which is Hermitian, traceless and of square $e_t$. It gives the two idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)=\tfrac12(e_t\pm i\vec e_z)$ and the two mixed units $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, and the four together are the Peirce frame</p>
+<p>$$
+\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-).
+$$</p>
+<p>Nothing else enters. The root fixes the frame, the frame fixes the display, and every property the display shows is a property of the root first.</p>
+<p><strong>Nothing chooses $z$.</strong> A root of $e_t$ in the pure imaginary part is $i\vec n$ for a unit vector $\vec n$, and $\mathrm{SU}(2)$ acts transitively on the unit sphere, so every direction gives an equally good root, an equally good Peirce frame and an equally good display. The choice of $\vec e_z$ is a convention of writing and not a fact of the algebra; it is the same convention that writes the diagonal of a matrix first. The corpus states this in <em>The Unpolarized Module of the Biquaternion Algebra</em>, §<em>The Polarizations of the Corpus</em>, and this article is the concrete case.</p>
+<p><strong>The display.</strong> The left action in the frame is the tensor product of the identity on the first factor with the $2\times2$ matrix of the element,</p>
+<p>$$
+L^{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q),
+$$</p>
+<p>the first factor being the block index; the four matrices $\mathsf M_2(\vec e_k)=-i\sigma_k$ are written out in §<em>The Display Polarizes for Free</em>. The right action in the same frame is $\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$, so the two actions sit on different factors, and that asymmetry is the subject of <em>Operator Chirality on the Biquaternion Algebra</em>; here only the left one is used.</p>
+<p><strong>What the frame makes visible.</strong> Two things, and they are the reason the frame is used. The Peirce structure becomes a tensor index, so the two planes $S_\pm$ are the two slots and every computation in the algebra becomes a $2\times2$ computation of matrices; and the switch of the frame becomes the pure swap $\mathsf P$, so the transpose identity of the companion article can be read as a matrix identity.</p>
+<h2 id="the-display-polarizes-for-free">The Display Polarizes for Free</h2>
+<p><strong>The display.</strong> In the Pauli frame the left matrix is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, with
+$$
+\mathsf M_2(e_t)=\mathrm I_2,\qquad
+\mathsf M_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+\mathsf M_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf M_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+$$</p>
+<p><strong>The spectator factor.</strong> The matrix $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ acts on the second tensor factor and leaves the first untouched. The carrier therefore arrives already split, $V=(\mathbb{C}e_1\otimes\mathbb{C}^2)\oplus(\mathbb{C}e_2\otimes\mathbb{C}^2)$, the two blocks of the display, and the split is invisible to left multiplication: no element of $\mathbb{B}$ carries one summand into the other, because every element acts as the identity on the index that separates them. The index is not bookkeeping. It is the Peirce index: the frame of the display is $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, the one the root $\vec\Xi=i\vec e_z$ generates, and the two summands are $S_+$ and $S_-$. The factorization is the root, moved into the display, and the display has nothing left to choose.</p>
+<p><strong>Why this is the source of the illusion.</strong> A splitting that no left multiplication can see looks like a property of the algebra. It is not: it is a property of the display, and it is the only splitting the display has. Every statement proved in the Pauli frame about "the two components" is a statement about the root that built the frame, until it is shown to be invariant, and the invariance is exactly what a change of root destroys.</p>
+<p><strong>The same defect, seen in the block.</strong> The diagonal of the $2\times2$ block is $\operatorname{diag}(Q_t-iQ_z,\,Q_t+iQ_z)$, repeated twice: the scalar and the $z$ coordinate sit on the same two positions, so neither can be read off an entry alone, while $x$ and $y$ sit off the diagonal and enter as a symmetric and an antisymmetric pair. The display has written one direction, $\vec e_z$, where the scalar sits. The three directions are not treated alike, and this is the flaw a reader takes for a property of the algebra: the symmetry is not broken, since $\mathrm{SU}(2)$ moves the three generators transitively, it is only hidden by the frame. A display that writes all four coordinates on one pattern cannot hide it, which is the case made in <em>The Unpolarized Module of the Biquaternion Algebra</em>, §<em>The Axis-Free Frame Displays None</em>.</p>
+<h2 id="what-the-display-is-not">What the Display Is Not</h2>
+<p><strong>The two slots are the Peirce index.</strong> The first tensor factor is untouched by the left action, and the index that separates the two slots is the Peirce plane index of the root. The two summands are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a copy of $S$, and the display's "two components" are those two copies. The index is therefore a <strong>copy index</strong>: it distinguishes the halves, and nothing inside the algebra distinguishes the halves from any other pair of halves, because an automorphism of the module moves the root and carries the pair with it.</p>
+<p><strong>It is not the chirality.</strong> The chirality is the conjugate pair, whose grading is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ with eigenspaces $S$ and $S^{\mathrm{c}}$, and whose two halves are not isomorphic over $\mathbb{R}$. The display's two slots are both of type $S$; the pair $(S_+,S_-)$ is a polarization and the pair $(S,S^{\mathrm{c}})$ is a chirality, and the projective-line argument of <em>The Unpolarized Module of the Biquaternion Algebra</em> is exactly the statement that no change of frame turns the first into the second.</p>
+<p><strong>Where the confusion comes from.</strong> In the Dirac reading of the frame the cell $\gamma_5$ is represented by $\operatorname{diag}(-I_2,I_2)$ in the Peirce display, so the display that shows the copy index also shows the chirality, on the same two slots. The coincidence is a coincidence of <em>display</em> and not of <em>object</em>: the two slots are the Peirce planes, and the $\pm$ of $\gamma_5$ is a second, independent labelling of the same four positions. A computation that reads the slots as chiralities is a computation about the root dressed as a statement about the algebra, and it is invariant only if it survives the change of root, which the slot reading does not.</p>
+<p><strong>The test.</strong> Take the statement, replace $\vec e_z$ by a general unit $\vec n$, and see whether it still reads the same way. A statement about the Peirce index survives as a statement about $\vec n$, which is what it always was. A statement about chirality does not change at all, because $\gamma_5$ is built from $R_{\vec e_z}$ and the frame it uses, and it anticommutes with the four generators whatever root the display was built from. The two behaviours are different, and the difference is the whole content of this article.</p>
+<p><strong>What the frame is good for, stated honestly.</strong> It makes the Peirce structure computable, it makes the switch and the transpose identity explicit, and it is the frame in which the matrix model of the algebra is written. It is not a frame in which chirality is free, and no frame is: chirality is a cell, and a cell is named, not displayed.</p>
+<h2 id="summary">Summary</h2>
+<p>The Pauli frame is generated by the single root $\vec\Xi=i\vec e_z$, which gives the idempotents $\tilde\Pi_\pm$ and the mixed units $\vec\Upsilon_\pm$ and hence the Peirce frame $\mathcal{P}$. In that frame the left action is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, the carrier arrives as $\mathbb{C}^2\otimes\mathbb{C}^2$, and one tensor factor is untouched by the algebra: the display polarizes the carrier for free. Nothing in the algebra prefers the root, because $\mathrm{SU}(2)$ moves the unit vectors transitively, so the free splitting is a property of the display and not of the module.</p>
+<p>The two slots of the display are the two Peirce planes $S_\pm=\mathbb{B}\tilde\Pi_\pm$, both copies of $S$; the index that separates them is a copy index. It is not the chirality, which is the conjugate pair graded by the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ with eigenspaces $S$ and $S^{\mathrm{c}}$. The two objects coincide on the same two slots of the display, because $\gamma_5$ is $\operatorname{diag}(-I_2,I_2)$ in the Peirce frame, and the coincidence of display is not a coincidence of object. A statement about the slots is a statement about the root until it is shown invariant, and the test of invariance is the change of root.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec\Xi=i\vec e_z$</td>
+<td>the root of $e_t$ that generates the Pauli frame, $\vec\Xi^2=e_t$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$</td>
+<td>the two Peirce idempotents of the root</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$</td>
+<td>the two mixed units of the frame</td>
+</tr>
+<tr>
+<td>$\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$</td>
+<td>the Peirce frame, the frame of the display</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(\tilde Q)$</td>
+<td>the $2\times2$ matrix of the element, of which $L^{\mathrm{pau}}$ is two copies</td>
+</tr>
+<tr>
+<td>$L^{\mathrm{pau}}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$</td>
+<td>the left action in the Pauli frame</td>
+</tr>
+<tr>
+<td>$S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>the two slots of the display, the two Peirce planes, both copies of $S$</td>
+</tr>
+<tr>
+<td>$\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$</td>
+<td>the chirality cell, $\operatorname{diag}(-I_2,I_2)$ in the display; not a slot label</td>
+</tr>
+<tr>
+<td>$\mathsf P$</td>
+<td>the switch of the frame, the pure swap in the Pauli display</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-unpolarized-module-of-the-biquaternion-algebra.html">The Unpolarized Module of the Biquaternion Algebra</a>, for the carrier, the projective line of all polarizations, and the proof that no point is canonical.</li>
+<li><a href="the-polarized-module-of-the-biquaternion-algebra.html">The Polarized Module of the Biquaternion Algebra</a>, for the minimal left ideals, the spinors and their Peirce coordinates.</li>
+<li><a href="m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a>, for the frame written out as matrices at the element size.</li>
+<li><a href="m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a>, for the compression to the $2\times2$ block.</li>
+<li><a href="families-of-matrix-representations.html">Families of Matrix Representations</a>, for the two sides, the change of frame and the switch.</li>
+<li><a href="operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the right action in the display, the swap and the transpose identity.</li>
+<li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the four Peirce lines of a complete family.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</a>, for the root and its projectors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
