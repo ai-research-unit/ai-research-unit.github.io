@@ -71,15 +71,11 @@
         <h1 id="operator-chirality-on-the-biquaternion-algebra"><strong>Operator Chirality on the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The question.</strong> Every operator of the biquaternion algebra is built from left and right multiplications, $L_aR_b$, and the two sides are symmetric in the definition and asymmetric in the results. This article asks what chirality means for such an operator, and answers with the operator alone.</p>
-<p><strong>The answer in one line.</strong> Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The chirality operator of a frame is its volume cell, $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}$ in the axis-free frame, and it is a pure right multiplier. The swap $\sigma$ is the operator that exchanges the two sides, and the natural conjugation is the operator that exchanges them while reversing the units.</p>
+<p><strong>The answer in one line.</strong> Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The chirality operator of a frame is its volume cell $\mathsf{V}^{\mathrm{vol}}$, $i$ times the product of the four cells of the frame, and in the axis-free frame it is the pure right multiplier $-iR_{\vec e_z}$. The swap $\sigma$ is the operator that exchanges the two sides, and the natural conjugation is the operator that exchanges them while reversing the units.</p>
 <p><strong>What the article is not about.</strong> The notion is defined on the endomorphism algebra of $\mathbb{B}$ and needs nothing else. Section §<em>What Operator Chirality Is Not</em> separates it, one object at a time, from a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal and a Clifford algebra, and records the single coincidence of arrays that makes the confusion possible.</p>
 <p><strong>The order of the article.</strong> Section §<em>The Two Slots</em> defines the sides, their dimensions and their overlap. Section §<em>The Chirality Operator of the Frame</em> reads the volume cell as a pure right multiplier and lists what it satisfies. Section §<em>The Subscript on an Element</em> gives the two values of that cell on the elements, $L$ and $R$. Section §<em>Conjugation Exchanges the Sides</em> proves that the natural conjugate of a left multiplier is a right multiplier, which is the second side-exchanging map and the origin of the phases. Sections §<em>The Swap of the Two Sides</em> to §<em>The Swap on the Frame</em> prove the exchange operator, its matrix, its two eigenspaces and its action on the frame. Section §<em>The Bivectors Are Not Stable</em> records what the swap moves. Section §<em>What Operator Chirality Is Not</em> is the separation. Section §<em>Why the Slot Label Is Not a Grading</em> fixes what the sides can and cannot supply.</p>
 <p><strong>Boundaries.</strong> The cells, the two families and the switch are <em>Families of Matrix Representations</em>; the frames are <em>$M_4(\mathbb{C})$ Axis-Free Representation</em> and <em>$M_4(\mathbb{C})$ Pauli Representation</em>, with their operator articles <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em> and <em>$M_4(\mathbb{C})$ Pauli Representation : Operators</em>; the carrier and its splittings are <em>The Unpolarized Module of the Biquaternion Algebra</em>; the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is <em>The Endomorphisms of the Biquaternion Algebra</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, and $i$ central. The cells are $L_aR_b$ with $L_aR_b\tilde X=a\tilde Xb$, and the sixteen of them are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. In the axis-free frame the gamma frame is
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}R_{\vec e_x},\qquad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}R_{\vec e_y},\qquad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}R_{\vec e_y},\qquad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}R_{\vec e_y},\qquad \gamma_5[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z},
-$$
-with $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}$ and $\varepsilon=(1,-1,-1,-1)$, so that $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$. The anticommutation is a computed property of these five cells, not an axiom: no Clifford algebra enters the definitions of this article. The Peirce sign of the third axis is $P=R_{i\vec e_z}=iR_{\vec e_z}$, and it is used only where it is named.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, and $i$ central. The cells are $L_aR_b$ with $L_aR_b\tilde X=a\tilde Xb$, and the sixteen of them are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The volume cell of the frame is written $\mathsf{V}^{\mathrm{vol}}$, the upright superscript being the label of the cell, and in the axis-free frame it is $-iR_{\vec e_z}$, a pure right multiplier. No other frame cell is named, and no relation among the frame cells enters any definition here. The Peirce sign of the third axis is $P=R_{i\vec e_z}=iR_{\vec e_z}$, and it is used only where it is named.</p>
 <h2 id="the-two-slots">The Two Slots</h2>
 <p><strong>The cell and its two slots.</strong> A cell is $L_aR_b$, that is $\tilde X\mapsto a\tilde Xb$, and it has two slots: the left one, where $a$ multiplies, and the right one, where $b$ multiplies. The sixteen cells are linearly independent, so every operator has one coefficient array and the two slots are the two indices of that array.</p>
 <p><strong>The two one-sided families.</strong> An operator is a pure left multiplier when only the left slot is occupied, $c\,L_a$, and a pure right multiplier when only the right slot is occupied, $c\,R_b$. The two families are four-dimensional each and they overlap in one dimension, the centre:</p>
@@ -124,15 +120,15 @@ with $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\del
 <p><strong>What the label is not.</strong> The slot is a name, not a quantity. It is two-valued on the one-sided part and undefined outside it, it is not additive, and it carries no sign: $L_a+L_b$ and $L_a-L_b$ both have the left slot, and no linear functional separates a left multiplier from a right one by a sign. Section §<em>Why the Slot Label Is Not a Grading</em> proves the algebraic reason.</p>
 <p><strong>The centre is both sides.</strong> The scalars are simultaneously pure left and pure right multipliers, since $\lambda\tilde X=\lambda\tilde X=\tilde X\lambda$ for central $\lambda$. The overlap is not a defect of the definition: a scalar has no side, and the one-dimensional intersection is exactly the set of operators for which the question has no answer.</p>
 <h2 id="the-chirality-operator-of-the-frame">The Chirality Operator of the Frame</h2>
-<p><strong>The volume cell.</strong> The product of the four generators of the frame is a cell, because a product of left multipliers is a left multiplier and a product of right multipliers is a right multiplier:
+<p><strong>The volume cell.</strong> A product of cells is a cell, because a product of left multipliers is a left multiplier and a product of right multipliers is a right multiplier. The four cells of the frame multiply on the left by $e_t,\vec e_x,\vec e_y,\vec e_z$ and on the right by $\vec e_x,\vec e_y,\vec e_y,\vec e_y$; the right multipliers compose in the reverse order, $R_aR_b=R_{ba}$. Their four phases multiply to $i^4=1$, and their product is the cell
 $$
-\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}.
+L_{e_t\vec e_x\vec e_y\vec e_z}\,R_{\vec e_y\vec e_y\vec e_y\vec e_x}=L_{-\vec e_t}R_{\vec e_z}=-L_{e_t}R_{\vec e_z},
 $$
-In the axis-free frame $L_{e_t}=\mathrm I$, so
+and $i$ times that product is the volume cell,
 $$
-\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z},
+\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z},
 $$
-a <strong>pure right multiplier</strong>. That is the whole content of the operator: the chirality operator of the frame multiplies on the right by the third direction, with the phase $-i$.</p>
+a <strong>pure right multiplier</strong>, because $L_{e_t}$ is the identity. That is the whole content of the operator: the chirality operator of the frame multiplies on the right by the third direction, with the phase $-i$.</p>
 <p><strong>What it satisfies.</strong> Four properties, each read off the display:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -144,31 +140,31 @@ a <strong>pure right multiplier</strong>. That is the whole content of the opera
 <tbody>
 <tr>
 <td>square</td>
-<td>$\gamma_5[\mathbb{M}_-]^2=\mathrm I$</td>
+<td>$(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$</td>
 </tr>
 <tr>
 <td>trace</td>
-<td>$\operatorname{tr}\gamma_5[\mathbb{M}_-]=0$</td>
+<td>$\operatorname{tr}\mathsf{V}^{\mathrm{vol}}=0$</td>
 </tr>
 <tr>
 <td>spectrum</td>
 <td>$+1$ and $-1$, two dimensions each</td>
 </tr>
 <tr>
-<td>with the frame</td>
-<td>$\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0$ for $\mu=0,1,2,3$</td>
+<td>with the right multipliers</td>
+<td>$R_{\vec e_x}$ and $R_{\vec e_y}$ anticommute with it, and $R_{\vec e_z}$ commutes</td>
 </tr>
 </tbody>
 </table></div>
-<p>The anticommutation says that the four generators of the frame are odd under the right multiplication by $\vec e_z$. It is a consequence, computed on five cells, and it is not a definition: nothing in this article is built by asking which operators anticommute with what.</p>
-<p><strong>Only the frame is used.</strong> The four generators and their product. No root, no idempotent, no subspace of $\mathbb{B}$, no decomposition of anything, no carrier, and no Clifford algebra: the relation $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}$ holds for these five cells as an identity of matrices, and the chirality operator is the fifth of them. The operator is available as soon as the frame is declared, and a frame is a basis: the weakest of the choices the algebra offers.</p>
-<p><strong>The side is the point.</strong> A reader who writes $\gamma_5[\mathbb{M}_-]$ as a diagonal matrix with two $+1$'s and two $-1$'s is reading the array of the operator in a basis where it is diagonal. The operator itself is $R_{\vec e_z}$ up to a phase, and its content is the side: it multiplies on the right. The gradient of the frame, $L(\tilde\nabla)$, multiplies on the left. That difference of sides is operator chirality, and it survives every change of basis.</p>
+<p>The anticommutation is a property of right multiplication and not a definition: $R_aR_b=R_{ba}$, so $R_{\vec e_z}$ anticommutes with $R_{\vec e_k}$ exactly when the unit $\vec e_k$ anticommutes with $\vec e_z$, which is the case for the two remaining directions and not for the third. Nothing in this article is built by asking which operators anticommute with what.</p>
+<p><strong>Only the frame is used.</strong> The four cells and their product. No root, no idempotent, no subspace of $\mathbb{B}$, no decomposition of anything, no carrier, and no Clifford algebra: the four cells are declared together with the frame, their product is computed in one line, and no relation among them is assumed. The operator is available as soon as the frame is declared, and a frame is a basis: the weakest of the choices the algebra offers.</p>
+<p><strong>The side is the point.</strong> A reader who writes $\mathsf{V}^{\mathrm{vol}}$ as a diagonal array with two $+1$'s and two $-1$'s is reading the operator in a basis where it is diagonal. The operator itself is $R_{\vec e_z}$ up to a phase, and its content is the side: it multiplies on the right. The gradient of the frame, $L(\tilde\nabla)$, multiplies on the left. That difference of sides is operator chirality, and it survives every change of basis.</p>
 <h2 id="the-subscript-on-an-element">The Subscript on an Element</h2>
 <p><strong>Chirality is the subscript.</strong> The volume cell acts on an element by
 $$
-\gamma_5[\mathbb{M}_-]\tilde X=-i\,\tilde X\vec e_z ,
+\mathsf{V}^{\mathrm{vol}}\tilde X=-i\,\tilde X\vec e_z ,
 $$
-and an element is $L$ or $R$, which are the two values of the subscript. The letters are the Dirac ones: in the display where $\gamma_5[\mathbb{M}_-]=\operatorname{diag}(-I_2,I_2)$ the $L$ part is the upper block, as $\psi_L$ is in <em>The Dirac Equation in Biquaternionic Form</em>. Every element is a sum of one of each, and only the zero element is both.</p>
+so an element is $L$ when right multiplication by $\vec e_z$ returns $-i$ times it, and $R$ when it returns $+i$ times it. Those are the two values of the subscript. The letters are the Dirac ones: $L$ is the minus value, the convention in which $\psi_L$ is the left part in <em>The Dirac Equation in Biquaternionic Form</em>. Every element is a sum of one of each, and only the zero element is both.</p>
 <p><strong>The rules.</strong> A product takes the letter of its right factor, $(\tilde X\tilde Y)\vec e_z=\tilde X(\tilde Y\vec e_z)$, and left multiplication keeps the letter. A unit, a product and a general element therefore carry the subscript as well as a state does, because the subscript is a function of the element and of the declared frame and of nothing else.</p>
 <p><strong>Three uses of the two letters.</strong> The corpus writes $L$ and $R$ in three ways, told apart by position.</p>
 <div class="table-scroll"><table>
@@ -321,90 +317,78 @@ so the negated space is closed under the commutator. It is a Lie algebra of dime
 </table></div>
 <p><strong>What the pair is.</strong> The decomposition $\operatorname{End}_{\mathbb{C}}V=\operatorname{Sym}^2V\oplus\Lambda^2V$ is the standard one for a nondegenerate symmetric form, and the swap is its reflection. The content specific to this algebra is that in the axis-free frame the form is the trace form on the cells and that the reflection is the exchange of the two sides, so the decomposition of the endomorphism algebra is read off the two-sided structure rather than imposed.</p>
 <h2 id="the-swap-on-the-frame">The Swap on the Frame</h2>
-<p><strong>The three multipliers.</strong> The left multipliers of the frame are the three cells $L_{\vec e_k}$. The swap carries each to the right multiplier of the same unit, and the right multipliers are identified with the gamma frame by the dictionary of the frame articles:</p>
+<p><strong>The three multipliers.</strong> The left multipliers of the frame are the three cells $L_{\vec e_k}$. The swap carries each to the right multiplier of the same unit, and that is the whole table:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Cell</th>
 <th>Swap</th>
-<th>In the gamma frame</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$L_{\vec e_x}$</td>
 <td>$R_{\vec e_x}$</td>
-<td>$-i\gamma_0[\mathbb{M}_-]$</td>
 </tr>
 <tr>
 <td>$L_{\vec e_y}$</td>
 <td>$R_{\vec e_y}$</td>
-<td>$i\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$</td>
 </tr>
 <tr>
 <td>$L_{\vec e_z}$</td>
 <td>$R_{\vec e_z}$</td>
-<td>$i\gamma_5[\mathbb{M}_-]$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The reading.</strong> The three left multipliers are the spacelike bivectors themselves, $L_{\vec e_x}=\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, $L_{\vec e_y}=\gamma_3[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$, $L_{\vec e_z}=\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$, so the rotation generators $\vec e_k/2$ are half of them. The swap sends them to a vector, a trivector and the chirality operator. So the exchange of the two sides does not preserve the kind of object: it permutes the degrees of a Clifford algebra, taking a bivector to a vector, to a trivector and to a four-form.</p>
-<p><strong>The inverse direction.</strong> Applying the table backwards, $\gamma_0[\mathbb{M}_-]\mapsto iL_{\vec e_x}$, and $i\gamma_5[\mathbb{M}_-]\mapsto L_{\vec e_z}$. The four-form and the chirality operator are the same cell, since $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}$ and $L_{e_t}=\mathrm I$.</p>
-<p><strong>The single identity that matters.</strong> Combining the last row with the definitions,
+<p><strong>The reading.</strong> The two columns hold cells of different shape. A left multiplier is a cell with a vector unit in the left slot and the identity $e_t$ in the right slot, $L_{\vec e_k}R_{e_t}$; a right multiplier is a cell with the identity in the left slot and the same vector unit in the right slot, $L_{e_t}R_{\vec e_k}$. The swap moves the unit from one slot to the other and changes nothing else. So the exchange of the two sides carries a left multiplier to a right multiplier of the same unit and never back to a left multiplier.</p>
+<p><strong>The single identity that matters.</strong> Combining the last row with the volume cell,
 $$
-\sigma(L_{\vec e_z})=R_{\vec e_z}=i\gamma_5[\mathbb{M}_-]=-iP .
+\sigma(L_{\vec e_z})=R_{\vec e_z}=i\mathsf{V}^{\mathrm{vol}}=-iP .
 $$
 The swap of the rotation generator about the third axis is $i$ times the chirality operator, and $-i$ times the Peirce sign. Both signs are correct, and their coincidence is examined in §<em>What Operator Chirality Is Not</em>.</p>
 <h2 id="the-bivectors-are-not-stable">The Bivectors Are Not Stable</h2>
-<p><strong>The six bivectors are cells.</strong> Each $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]$ is a product of two cells, hence a cell with coefficient $\pm1$, and the six of them are</p>
+<p><strong>The six bivectors are cells.</strong> The six bivectors of the frame of <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em> are six products of two distinct frame cells, hence six cells with coefficient $\pm1$. Read as cells they are</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Bivector</th>
-<th>As a cell</th>
+<th>Bivector, as a cell</th>
 <th>Its swap</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$</td>
 <td>$L_{\vec e_x}R_{\vec e_z}$</td>
 <td>$L_{\vec e_z}R_{\vec e_x}$</td>
 </tr>
 <tr>
-<td>$\gamma_0[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$</td>
 <td>$L_{\vec e_y}R_{\vec e_z}$</td>
 <td>$L_{\vec e_z}R_{\vec e_y}$</td>
 </tr>
 <tr>
-<td>$\gamma_0[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$</td>
 <td>$L_{\vec e_z}R_{\vec e_z}$</td>
 <td>$L_{\vec e_z}R_{\vec e_z}$</td>
 </tr>
 <tr>
-<td>$\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$</td>
 <td>$L_{\vec e_z}R_{e_t}$</td>
 <td>$L_{e_t}R_{\vec e_z}$</td>
 </tr>
 <tr>
-<td>$\gamma_1[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$</td>
 <td>$-L_{\vec e_y}R_{e_t}$</td>
 <td>$-L_{e_t}R_{\vec e_y}$</td>
 </tr>
 <tr>
-<td>$\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$</td>
 <td>$L_{\vec e_x}R_{e_t}$</td>
 <td>$L_{e_t}R_{\vec e_x}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Exactly one is fixed.</strong> Of the six, only $\gamma_0[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=L_{\vec e_z}R_{\vec e_z}$ is carried to itself, because it is the one whose two units agree. The other five are moved, each to a cell that is not in the bivector span.</p>
-<p><strong>The two six-dimensional spaces.</strong> Let $\mathcal{B}$ be the span of the six bivectors, and $\sigma\mathcal{B}$ its image. Both have dimension six, their intersection has dimension one — the line of $\gamma_0[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ — and their sum has dimension eleven:
+<p><strong>Exactly one is fixed.</strong> Of the six, only $L_{\vec e_z}R_{\vec e_z}$ is carried to itself, because it is the one whose two units agree. The other five are moved, each to a cell that is not in the bivector span.</p>
+<p><strong>The two six-dimensional spaces.</strong> Let $\mathcal{B}$ be the span of the six bivectors, and $\sigma\mathcal{B}$ its image. Both have dimension six, their intersection has dimension one — the line of $L_{\vec e_z}R_{\vec e_z}$ — and their sum has dimension eleven:
 $$
 \dim\mathcal{B}=6,\qquad \dim\sigma\mathcal{B}=6,\qquad \dim(\mathcal{B}\cap\sigma\mathcal{B})=1,\qquad \dim(\mathcal{B}+\sigma\mathcal{B})=11 .
 $$
 So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of the frame is not an invariant of the unpolarized algebra: it is a choice, and the swap moves it to a different six-dimensional space.</p>
-<p><strong>The consequence for the symmetry articles.</strong> This is the algebraic statement behind the observation of the symmetry articles that the left multipliers are bivectors and the right ones are a vector, a trivector and a four-form. The pair of multipliers is not a pair of bivectors, and no reading of the two $\mathrm{SU}(2)$'s as the self-dual and anti-self-dual halves can repair it: the swap sends a rotation generator to the chirality operator, and the self-dual split would require it to stay inside the bivectors.</p>
+<p><strong>The consequence for the symmetry articles.</strong> This is the algebraic statement behind the observation of the symmetry articles that the two families do not hold the same kind of cell: a left multiplier carries the vector unit in the left slot, a right multiplier carries it in the right slot, and the bivector span holds cells of both shapes. The pair of multipliers is not a pair of bivectors, and no reading of the two $\mathrm{SU}(2)$'s as the self-dual and anti-self-dual halves can repair it: the swap sends a rotation generator to the chirality operator, and the self-dual split would require it to stay inside the bivectors.</p>
 <p><strong>Why this is the sharpest test.</strong> The natural guess is that the exchange of the two sides preserves the kind of object, since the two sides are constructed by the same rule. It does not, and the failure is measured: five of six. A reader who assumes the symmetry of the construction implies a symmetry of the objects will compute the wrong algebra, and the table above is the correction.</p>
 <h2 id="what-operator-chirality-is-not">What Operator Chirality Is Not</h2>
 <p><strong>The list.</strong> The notion is one line long — the side — and it is routinely attached to eight other objects. The table states what each of them is and why it is not needed.</p>
@@ -420,12 +404,12 @@ So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of th
 <tr>
 <td>a root</td>
 <td>an element $\tilde\Xi$ with $\tilde\Xi^2=e_t$</td>
-<td>$\gamma_5[\mathbb{M}_-]$ is a cell of the frame, and a root is an element chosen later</td>
+<td>$\mathsf{V}^{\mathrm{vol}}$ is a cell of the frame, and a root is an element chosen later</td>
 </tr>
 <tr>
 <td>an idempotent</td>
 <td>an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$</td>
-<td>the operator satisfies $\gamma_5[\mathbb{M}_-]^2=\mathrm I$, which is not $\gamma_5[\mathbb{M}_-]^2=\gamma_5[\mathbb{M}_-]$</td>
+<td>the operator satisfies $(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$, which is not $(\mathsf{V}^{\mathrm{vol}})^2=\mathsf{V}^{\mathrm{vol}}$</td>
 </tr>
 <tr>
 <td>a Peirce decomposition</td>
@@ -450,43 +434,43 @@ So $\mathcal{B}$ is not stable under the swap, and the Lorentz Lie algebra of th
 <tr>
 <td>an ideal</td>
 <td>a subspace of $\mathbb{B}$, here a point of a projective line</td>
-<td>a subspace is chosen; $\gamma_5[\mathbb{M}_-]$ chooses no point</td>
+<td>a subspace is chosen; $\mathsf{V}^{\mathrm{vol}}$ chooses no point</td>
 </tr>
 <tr>
 <td>a Clifford algebra</td>
 <td>the algebra generated by vectors with $\{e_i,e_j\}=2g_{ij}$, here $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$</td>
-<td>the anticommutation of the frame is a property of five cells, and no Clifford relation is used to define the side</td>
+<td>the frame is four declared cells, their anticommutators are computed and not assumed, and no Clifford relation is used to define the side</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Not a root.</strong> A root is an element of the algebra and it enters when a Peirce decomposition is wanted. The chirality operator is a cell of the frame and the frame is declared before any root is mentioned. Changing the root changes nothing in $\gamma_5[\mathbb{M}_-]$; there is no root in its definition to change.</p>
-<p><strong>Not an idempotent.</strong> The operator satisfies $\gamma_5[\mathbb{M}_-]^2=\mathrm I$ and an idempotent satisfies $\tilde\Pi^2=\tilde\Pi$. The two conditions are different, and the difference is not cosmetic: from $\gamma_5[\mathbb{M}_-]$ one can build the projectors $\tfrac12(\mathrm I\pm\gamma_5[\mathbb{M}_-])$, which are idempotents, but they are derived objects. The pair of the previous section is written without them.</p>
+<p><strong>Not a root.</strong> A root is an element of the algebra and it enters when a Peirce decomposition is wanted. The chirality operator is a cell of the frame and the frame is declared before any root is mentioned. Changing the root changes nothing in $\mathsf{V}^{\mathrm{vol}}$; there is no root in its definition to change.</p>
+<p><strong>Not an idempotent.</strong> The operator satisfies $(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$ and an idempotent satisfies $\tilde\Pi^2=\tilde\Pi$. The two conditions are different, and the difference is not cosmetic: from $\mathsf{V}^{\mathrm{vol}}$ one can build the projectors $\tfrac12(\mathrm I\pm\mathsf{V}^{\mathrm{vol}})$, which are idempotents, but they are derived objects. The pair of the previous section is written without them.</p>
 <p><strong>Not a Peirce decomposition, not a Peirce basis.</strong> A Peirce decomposition needs two idempotents and returns four lines, of dimensions one, one, one and one. The two sides are two, they are not subspaces of $\mathbb{B}$ but parts of an operator, and no Peirce line is a side: the Peirce lines are corners $\mathbb{B}_{st}$, and the sides are the slots of a multiplication.</p>
 <p><strong>Not a spinor.</strong> A spinor is an element of a minimal left ideal, and a minimal left ideal is produced by a rank-one idempotent, that is by a point of a projective line. The side lives one level up, in the endomorphism algebra, and it is defined without any point being chosen.</p>
 <p><strong>Not a Pauli matrix.</strong> The Pauli display is a frame, the tensor factorisation $\mathbb{C}^2\otimes\mathbb{C}^2$, and a Pauli matrix is the array of a cell in that display. The chirality operator exists in the axis-free frame, where it is the single cell $-iR_{\vec e_z}$, and in the Pauli frame where it is the same array written with two factors. The display changes; the side does not.</p>
 <p><strong>Not an ideal.</strong> A left ideal of $\mathbb{B}$ is a subspace, and the minimal ones are indexed by the points of a projective line, with no point distinguished. An operator that multiplied on one side and selected a point would be an ideal in disguise. The chirality operator selects nothing: it multiplies, and its two eigenspaces are two-dimensional subspaces of the coefficient space $\mathbb{C}^4$, present in every frame.</p>
-<p><strong>Not a Clifford algebra.</strong> A Clifford algebra is generated by vectors subject to $\{e_i,e_j\}=2g_{ij}$, and it is offered as the natural home of chirality, with $\gamma_5[\mathbb{M}_-]$ as the product of the generators. In this algebra the relation is a theorem about five cells of the frame, verified by multiplying them, and it is not used in any definition. The reason is structural: the relation fixes the squares and the anticommutators of four cells and says nothing about the side on which an operator multiplies, which is the only datum operator chirality needs. A Clifford algebra also fixes a dimension and a signature; the sides exist in every dimension and are read from the cells alone. So the Clifford reading is a frame in which the algebra is displayed, and the chirality of a frame is the same statement in that display.</p>
+<p><strong>Not a Clifford algebra.</strong> A Clifford algebra is generated by vectors subject to $\{e_i,e_j\}=2g_{ij}$, and it is offered as the natural home of chirality, with the volume cell as the product of the generators. In this algebra the frame is four declared cells, and their squares and anticommutators are computed from the multiplication of the units; no Clifford relation is used in any definition. The reason is structural: the relation fixes the squares and the anticommutators of four cells and says nothing about the side on which an operator multiplies, which is the only datum operator chirality needs. A Clifford algebra also fixes a dimension and a signature; the sides exist in every dimension and are read from the cells alone. So the Clifford reading is a frame in which the algebra is displayed, and the chirality of a frame is the same statement in that display.</p>
 <p><strong>Why no anticommutation gives it.</strong> A reader might expect the chirality operator to be characterised by anticommuting with the frame. It cannot be, and the reason is one line: $L(e_t)=\mathrm I$ is one of the operators that a candidate would have to anticommute with, and an operator that anticommutes with the identity is zero. So the sign in this algebra is never produced by an anticommutator; it is produced by the side, which is what the slots supply and what no Clifford relation can supply.</p>
 <p><strong>The one coincidence, and why it matters.</strong> There is a single place where the two families of notions touch, and it must be stated or the whole section is misleading. For the root aligned with the volume direction, $\tilde\Xi=i\vec e_z$, the Peirce sign is
 $$
-P=R_{i\vec e_z}=iR_{\vec e_z}=-\gamma_5[\mathbb{M}_-],
+P=R_{i\vec e_z}=iR_{\vec e_z}=-\mathsf{V}^{\mathrm{vol}},
 $$
 and the projector on the ideal of $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is
 $$
-R(\tilde\Pi_+)=\tfrac12(\mathrm I+P)=\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-]).
+R(\tilde\Pi_+)=\tfrac12(\mathrm I+P)=\tfrac12(\mathrm I-\mathsf{V}^{\mathrm{vol}}).
 $$
-So for that one root the Peirce projector and the chiral projector are the same operator. For any other root they are not: with $\tilde\Xi=i\vec e_x$ the Peirce projector is $\tfrac12(\mathrm I+iR_{\vec e_x})$, which is neither $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$ nor $\tfrac12(\mathrm I+\gamma_5[\mathbb{M}_-])$.</p>
+So for that one root the Peirce projector and the chiral projector are the same operator. For any other root they are not: with $\tilde\Xi=i\vec e_x$ the Peirce projector is $\tfrac12(\mathrm I+iR_{\vec e_x})$, which is neither $\tfrac12(\mathrm I-\mathsf{V}^{\mathrm{vol}})$ nor $\tfrac12(\mathrm I+\mathsf{V}^{\mathrm{vol}})$.</p>
 <p><strong>The moral.</strong> The coincidence is a coincidence of arrays for one root out of the projective line, and it is the origin of every statement in the corpus that the Peirce sign and the chirality operator agree up to a phase. The two notions share a value there and share no definition: one is a subspace choice, the other is a side. Writing the side first, as this article does, keeps the shared value visible as a coincidence instead of letting it stand as an identity.</p>
 <h2 id="why-the-slot-label-is-not-a-grading">Why the Slot Label Is Not a Grading</h2>
 <p><strong>A grading would need a multiplicative sign.</strong> A $\mathbb{Z}/2$ grading of an algebra is a homomorphism to $\{\pm1\}$, that is a linear functional with $\varepsilon(XY)=\varepsilon(X)\varepsilon(Y)$. No such functional separates the left multipliers from the right ones: the two families overlap in the scalars, and a scalar is neither $+1$ nor $-1$ by virtue of its side.</p>
 <p><strong>What the swap gives instead.</strong> It gives the decomposition into the self-adjoint and the skew-adjoint part for the switch form, of dimensions ten and six, and that is a decomposition of the underlying space with two different closing operations. It is an exchange, not a sign: $\sigma(L_a)=R_a$, so the swap carries one side to the other and answers the question "which side" by moving it, not by labelling it.</p>
-<p><strong>What supplies the sign.</strong> An operator with $\gamma_5[\mathbb{M}_-]^2=\mathrm I$ and $\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0$, which is the volume cell. It is a single operator of the algebra, its two eigenspaces have equal dimension, and its array is diagonal in a basis that diagonalises it. So the sign is one operator, not a functional on the algebra, and that is why no grading is ever exhibited: there is none to exhibit.</p>
-<p><strong>The division of labour.</strong> The slot is the frame-independent statement: it says where an operator multiplies, and every cell has its two slots before a frame is declared. The sign is the frame-dependent statement: it is the volume cell of the frame, $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}$, and its array depends on the frame. Confusing the two is what produces the impression that chirality is a diagonal matrix. Separating them is what the identity $\gamma_5[\mathbb{M}_-]=-i\sigma(L_{\vec e_z})$ accomplishes, and it is the reason the swap belongs in an article about chirality.</p>
+<p><strong>What supplies the sign.</strong> An operator with $(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$ and eigenvalues $+1$ and $-1$ of equal multiplicity, which is the volume cell. It is a single operator of the algebra, its two eigenspaces have equal dimension, and its array is diagonal in a basis that diagonalises it. So the sign is one operator, not a functional on the algebra, and that is why no grading is ever exhibited: there is none to exhibit.</p>
+<p><strong>The division of labour.</strong> The slot is the frame-independent statement: it says where an operator multiplies, and every cell has its two slots before a frame is declared. The sign is the frame-dependent statement: it is the volume cell of the frame, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, and its array depends on the frame. Confusing the two is what produces the impression that chirality is a diagonal matrix. Separating them is what the identity $\mathsf{V}^{\mathrm{vol}}=-i\sigma(L_{\vec e_z})$ accomplishes, and it is the reason the swap belongs in an article about chirality.</p>
 <h2 id="summary">Summary</h2>
 <p>Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The pure left multipliers form a four-dimensional family, the pure right multipliers another, the two overlap in the scalars, and their sum is seven-dimensional inside a sixteen-dimensional endomorphism algebra; the remaining nine directions carry both slots and have no side.</p>
-<p>The chirality operator of a frame is its volume cell, $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}$, which in the axis-free frame is the pure right multiplier $-iR_{\vec e_z}$. It squares to the identity, has trace zero, splits the coefficient space two and two, and anticommutes with the four generators. On the elements it is the subscript: $\tilde X$ is $L$ or $R$, two values and no more, and a product takes the letter of its right factor. A pure left multiplier is the operator $L(a)$ for an element $a$; its natural conjugate is the right multiplier $\mathsf C\,L(a^{\natural})\,\mathsf C=R(a)$, so the conjugation is the second map that exchanges the sides, and the two maps differ by the sign of the three vector units. Neither the definition nor either exchange uses a module, a projector, an idempotent or a Clifford relation.</p>
-<p>The swap $\sigma(L_aR_b)=L_bR_a$ is well defined on the cells, involutive, anti-multiplicative and independent of the frame; it is the transpose read through the switch, it has four fixed cells, trace four and determinant one, and its eigenspaces are the self-adjoint and skew-adjoint operators of dimensions ten and six. It carries the rotation generator $L_{\vec e_z}$ to $i\gamma_5[\mathbb{M}_-]$, which is the identity that ties the swap to chirality.</p>
-<p>The notion is unrelated to the eight objects that usually carry the name: a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal and a Clifford algebra. It touches them once, at the root aligned with the volume direction, where $P=-\gamma_5[\mathbb{M}_-]$ and the Peirce projector equals $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$; that single coincidence of arrays is the source of the confusion, and it is not an identity of notions.</p>
+<p>The chirality operator of a frame is its volume cell $\mathsf{V}^{\mathrm{vol}}$, $i$ times the product of the four cells of the frame, which in the axis-free frame is the pure right multiplier $-iR_{\vec e_z}$. It squares to the identity, has trace zero, splits the coefficient space two and two, and anticommutes with two of the three right multipliers of the frame. On the elements it is the subscript: $\tilde X$ is $L$ or $R$, two values and no more, and a product takes the letter of its right factor. A pure left multiplier is the operator $L(a)$ for an element $a$; its natural conjugate is the right multiplier $\mathsf C\,L(a^{\natural})\,\mathsf C=R(a)$, so the conjugation is the second map that exchanges the sides, and the two maps differ by the sign of the three vector units. Neither the definition nor either exchange uses a module, a projector, an idempotent or a Clifford relation.</p>
+<p>The swap $\sigma(L_aR_b)=L_bR_a$ is well defined on the cells, involutive, anti-multiplicative and independent of the frame; it is the transpose read through the switch, it has four fixed cells, trace four and determinant one, and its eigenspaces are the self-adjoint and skew-adjoint operators of dimensions ten and six. It carries the rotation generator $L_{\vec e_z}$ to $R_{\vec e_z}$, which is $i$ times the volume cell, and that identity ties the swap to chirality.</p>
+<p>The notion is unrelated to the eight objects that usually carry the name: a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal and a Clifford algebra. It touches them once, at the root aligned with the volume direction, where $P=-\mathsf{V}^{\mathrm{vol}}$ and the Peirce projector equals $\tfrac12(\mathrm I-\mathsf{V}^{\mathrm{vol}})$; that single coincidence of arrays is the source of the confusion, and it is not an identity of notions.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -509,16 +493,16 @@ So for that one root the Peirce projector and the chiral projector are the same 
 <td>operator chirality: on which side an operator multiplies</td>
 </tr>
 <tr>
-<td>$\gamma_5[\mathbb{M}_-]$</td>
+<td>$\mathsf{V}^{\mathrm{vol}}$</td>
 <td>the volume cell of the frame, $-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$ in the axis-free frame, a pure right multiplier</td>
 </tr>
 <tr>
-<td>$\gamma_5[\mathbb{M}_-]\tilde X=-i\tilde X\vec e_z$</td>
+<td>$\mathsf{V}^{\mathrm{vol}}\tilde X=-i\tilde X\vec e_z$</td>
 <td>the action of the volume cell on an element, of spectrum $+1,+1,-1,-1$</td>
 </tr>
 <tr>
 <td>$\tilde X_L$, $\tilde X_R$</td>
-<td>the parts of an element, $\gamma_5[\mathbb{M}_-]\tilde X_L=-\tilde X_L$ and $\gamma_5[\mathbb{M}_-]\tilde X_R=+\tilde X_R$, of dimension two each; the same subscript as $\psi_L$, $\psi_R$ in the Dirac literature, and available on every element of $\mathbb B$</td>
+<td>the parts of an element, $\mathsf{V}^{\mathrm{vol}}\tilde X_L=-\tilde X_L$ and $\mathsf{V}^{\mathrm{vol}}\tilde X_R=+\tilde X_R$, of dimension two each; the same subscript as $\psi_L$, $\psi_R$ in the Dirac literature, and available on every element of $\mathbb B$</td>
 </tr>
 <tr>
 <td>$\mathsf C$</td>
@@ -562,7 +546,7 @@ So for that one root the Peirce projector and the chiral projector are the same 
 </tr>
 <tr>
 <td>$P=R_{i\vec e_z}=iR_{\vec e_z}$</td>
-<td>the Peirce sign of the third axis; $P=-\gamma_5[\mathbb{M}_-]$, and it is not used in the definition of chirality</td>
+<td>the Peirce sign of the third axis; $P=-\mathsf{V}^{\mathrm{vol}}$, and it is not used in the definition of chirality</td>
 </tr>
 </tbody>
 </table></div>
@@ -574,6 +558,7 @@ So for that one root the Peirce projector and the chiral projector are the same 
 <li><a href="families-of-matrix-representations.html">Families of Matrix Representations</a>, for the two sides, the switch and the change of frame.</li>
 <li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the general theory of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and the two-sided operators.</li>
 <li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the labels and the conventions of the category.</li>
+<li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the five frame cells of a frame and their two displays.</li>
 </ul>
       </div>
     </main>

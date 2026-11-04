@@ -1,0 +1,1910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pauli and Gamma Infestation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="pauli-and-gamma-infestation"><strong>Pauli and Gamma Infestation</strong></h1>
+<h2 id="scope">Scope</h2>
+<p>This file is an <strong>inventory</strong>, not an article and not an entry of a menu. It counts every use of a Pauli matrix and of a gamma matrix that stands <strong>outside a legacy section</strong>, in the two published corpora, and gives a direct link to each article that carries one.</p>
+<p>The rule counted here is the one of <em>Matrix Representations Conventions</em>, §<em>The Rule on Pauli and Gamma Matrices</em>: no Pauli matrix and no gamma matrix is written in the body of an article, and the two formulations appear in a legacy section only. A legacy section is allowed, and it is not counted. Four files are exempt and are counted nowhere: the two <em>Matrix Representations Conventions</em> articles, which state the arrays once; <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>, whose subject is the defect; and <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em>, whose subject is the gamma frame.</p>
+<h2 id="how-the-count-is-made">How the Count Is Made</h2>
+<p><strong>What counts.</strong> A token of the gamma family, $\gamma_0$ to $\gamma_5$, $\gamma_\mu$, $\gamma_\nu$, $\gamma_\lambda$, $\gamma_\rho$; a token of the Pauli family, $\sigma_x$, $\sigma_y$, $\sigma_z$, $\sigma_1$, $\sigma_2$, $\sigma_3$, $\sigma_i$, $\sigma_j$, $\sigma_k$. Each occurrence counts once, whether it stands in a display or in a line of text.</p>
+<p><strong>What is excluded.</strong> Anything inside a section whose heading holds the word <em>legacy</em>, at any depth, and anything inside a fenced code block. The heading is read as a state: a legacy section stays open until a heading of the same level or a higher one arrives.</p>
+<p><strong>Which articles are scanned.</strong> The articles of the two corpora that belong to the biquaternion programme, that is those that mention $\mathbb{B}$, the biquaternion, a Peirce object, $M_4(\mathbb{C})$ or one of the two sectors. This keeps out the general mathematics of the same folder, where $\sigma$ and $\gamma$ are other symbols: a braid generator $\sigma_i$ in <em>Braid Groups</em>, a divided power $\gamma_n$ in <em>Divided Powers</em>, a singular value $\sigma_1$ in the fractal articles.</p>
+<p><strong>The dagger.</strong> A row marked † holds no gamma token and never uses the word <em>Pauli</em>. Its $\sigma$ may belong to another subject, and the row is a suspicion and not a finding: the article is read before it is edited. 44 maths rows and 52 physics rows carry the dagger, and they hold 413 and 220 occurrences.</p>
+<p><strong>The count is a floor.</strong> A symbol built on an array without the array's own token, and a sentence that names a gamma matrix in words alone, are not counted. The true number is slightly higher than the tables give.</p>
+<h2 id="the-maths-corpus">The Maths Corpus</h2>
+<p>The maths corpus carries <strong>977 occurrences outside a legacy section, in 83 articles</strong>. 39 of those articles hold at least one certain array, and they carry 564 occurrences. The other 44 are marked †.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\gamma$</th>
+<th>$\sigma$</th>
+<th>Total</th>
+<th>Legacy section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/m4c-pauli-representation-operators.html">$M_4(\mathbb{C})$ Pauli Representation : Operators</a></td>
+<td>59</td>
+<td>21</td>
+<td>80</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/matrix-sesqualgebras.html">Matrix Sesqualgebras</a></td>
+<td></td>
+<td>77</td>
+<td>77</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html">Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</a></td>
+<td></td>
+<td>70</td>
+<td>70</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/frame-conventions.html">Frame Conventions</a></td>
+<td>50</td>
+<td></td>
+<td>50</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-forms-the-norms-and-the-singular-set-of-m3c.html">The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$</a></td>
+<td></td>
+<td>48</td>
+<td>48 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html">The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$</a></td>
+<td></td>
+<td>44</td>
+<td>44 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</a></td>
+<td></td>
+<td>38</td>
+<td>38 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a></td>
+<td></td>
+<td>36</td>
+<td>36</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html">The Biquaternion Mandelbrot Set and the Connectedness Locus</a></td>
+<td></td>
+<td>29</td>
+<td>29 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-special-decomposition-of-a-biquaternion-under-a-peirce-basis.html">The Special Decomposition of a Biquaternion under a Peirce Basis</a></td>
+<td></td>
+<td>28</td>
+<td>28</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/bott-periodicity-and-the-classification.html">Bott Periodicity and the Classification</a></td>
+<td></td>
+<td>27</td>
+<td>27 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-forms-the-norms-and-the-singular-set-of-m6c.html">The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$</a></td>
+<td></td>
+<td>24</td>
+<td>24 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-defining-representation.html">$M_2(\mathbb{C})$ Defining Representation</a></td>
+<td></td>
+<td>23</td>
+<td>23</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a></td>
+<td></td>
+<td>20</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</a></td>
+<td></td>
+<td>19</td>
+<td>19 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-reduced-representation.html">$M_2(\mathbb{C})$ Reduced Representation</a></td>
+<td></td>
+<td>18</td>
+<td>18 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-modules-over-the-biquaternion-algebra-with-hermitian-adjoint.html">Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</a></td>
+<td></td>
+<td>16</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html">The Unpolarized Module of the Biquaternion Algebra</a></td>
+<td>16</td>
+<td></td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-reduced-representation-operators.html">$M_2(\mathbb{C})$ Reduced Representation : Operators</a></td>
+<td></td>
+<td>15</td>
+<td>15 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/bilinear-operators-on-the-general-plain-sesqualgebra.html">Bilinear Operators on the General Plain Sesqualgebra</a></td>
+<td></td>
+<td>13</td>
+<td>13</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-low-dimensional-classification.html">The Low-Dimensional Classification</a></td>
+<td></td>
+<td>13</td>
+<td>13</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a></td>
+<td></td>
+<td>12</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2h-diagonal-representation-operators.html">$M_2(\mathbb{H})$ Diagonal Representation : Operators</a></td>
+<td></td>
+<td>12</td>
+<td>12 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html">Spinors and Dirac Spinors in the Biquaternion Algebra</a></td>
+<td></td>
+<td>12</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-m3-m3-and-m2-m4-corners-of-m6c.html">The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$</a></td>
+<td></td>
+<td>11</td>
+<td>11 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-polar-decomposition-of-m4c.html">The Polar Decomposition of $M_4(\mathbb{C})$</a></td>
+<td></td>
+<td>11</td>
+<td>11 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/reduced-biquaternion-integration.html">Reduced Biquaternion Integration</a></td>
+<td>10</td>
+<td></td>
+<td>10</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-singular-value-decomposition-of-a-reduced-biquaternion-tensor.html">The Singular Value Decomposition of a Reduced Biquaternion Tensor</a></td>
+<td></td>
+<td>10</td>
+<td>10 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-representation-the-general-plain-sesqualgebra-of-biquaternions.html">$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions</a></td>
+<td></td>
+<td>9</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-general-quaternionic-algebra-in-the-4x4-left-regular-representation.html">The General Quaternionic Algebra in the $4\times4$ Left Regular Representation</a></td>
+<td></td>
+<td>9</td>
+<td>9 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operators-on-the-biquaternion-algebra.html">The One-Sided Operators on the Biquaternion Algebra</a></td>
+<td></td>
+<td>8</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html">The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</a></td>
+<td></td>
+<td>8</td>
+<td>8 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-unitary-group-of-the-reduced-biquaternion-algebra.html">The Unitary Group of the Reduced Biquaternion Algebra</a></td>
+<td>4</td>
+<td>4</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/worked-examples-of-exponential-polar-decomposition-of-quaternions.html">Worked Examples of Exponential Polar Decomposition of Quaternions</a></td>
+<td></td>
+<td>8</td>
+<td>8 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/comparison-of-element-representations-and-matrix-models.html">Comparison of Element Representations and Matrix Models</a></td>
+<td></td>
+<td>7</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-left-regular-representation.html">The General Quaternionic Sesqualgebra in the $4\times4$ Left Regular Representation</a></td>
+<td></td>
+<td>7</td>
+<td>7 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html">Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion</a></td>
+<td></td>
+<td>6</td>
+<td>6 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html">Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion</a></td>
+<td></td>
+<td>6</td>
+<td>6 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a></td>
+<td></td>
+<td>6</td>
+<td>6 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html">The First-Order Root of the Biquaternion D'Alembertian</a></td>
+<td></td>
+<td>6</td>
+<td>6</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-form-adjoint-of-the-multiplications.html">The Form-Adjoint of the Multiplications</a></td>
+<td></td>
+<td>6</td>
+<td>6 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-polar-decomposition-of-m6c.html">The Polar Decomposition of $M_6(\mathbb{C})$</a></td>
+<td></td>
+<td>6</td>
+<td>6 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html">Angular Momentum and Spin in the Biquaternion Algebra</a></td>
+<td></td>
+<td>5</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a></td>
+<td>5</td>
+<td></td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/conceptual-conventions.html">Conceptual Conventions</a></td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2h-diagonal-representation.html">$M_2(\mathbb{H})$ Diagonal Representation</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</a></td>
+<td>4</td>
+<td></td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-coordinates-in-m3c.html">Spinors as Coordinates in $M_3(\mathbb{C})$</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.html">The Escape Radius and the Green's Function for the Biquaternions</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html">The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</a></td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html">Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint</a></td>
+<td></td>
+<td>3</td>
+<td>3 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/determinants-in-jordan-matrix-algebras.html">Determinants in Jordan Matrix Algebras</a></td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/families-of-matrix-representations.html">Families of Matrix Representations</a></td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/nilpotents.html">Nilpotents</a></td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-degenerate-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Degenerate Biquaternion</a></td>
+<td></td>
+<td>3</td>
+<td>3 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-exponential-polar-decomposition-of-m6c.html">The Exponential Polar Decomposition of $M_6(\mathbb{C})$</a></td>
+<td></td>
+<td>3</td>
+<td>3 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html">The Fierz–Kofink Identities and the Classification of Spinors</a></td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-product-of-two-unipotent-elements-and-its-spectrum.html">The Product of Two Unipotent Elements and Its Spectrum</a></td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/operator-family-conventions.html">Operator Family Conventions</a></td>
+<td>2</td>
+<td></td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-coordinates-in-m5c.html">Spinors as Coordinates in $M_5(\mathbb{C})$</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operators-of-an-n-regular-spectrally-regular-biquaternion.html">The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion</a></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-peirce-decomposition-of-m5c.html">The Peirce Decomposition of $M_5(\mathbb{C})$</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html">The Sandwich of an N-Regular, Spectrally Regular Biquaternion</a></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/unitary-and-isometric-operators-of-the-form.html">Unitary and Isometric Operators of the Form</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/analysis-on-m5c.html">Analysis on $M_5(\mathbb{C})$</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-sesqualgebra.html">Ideals and Peirce Decomposition of the General Plain Sesqualgebra</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/index-notation-and-corpus-conventions.html">Index, Notation and Corpus Conventions</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-representation-the-general-quaternionic-algebra-of-biquaternions.html">$M_2(\mathbb{C})$ Representation : The General Quaternionic Algebra of Biquaternions</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-representation-the-general-quaternionic-sesqualgebra-of-biquaternions.html">$M_2(\mathbb{C})$ Representation : The General Quaternionic Sesqualgebra of Biquaternions</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html">The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html">The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-idempotent-decomposition-and-the-split-fractal-of-the-reduced-biquaternions.html">The Idempotent Decomposition and the Split Fractal of the Reduced Biquaternions</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operators-of-an-n-degenerate-spectrally-degenerate-biquaternion.html">The One-Sided Operators of an N-Degenerate, Spectrally Degenerate Biquaternion</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operators-of-an-n-degenerate-spectrally-regular-biquaternion.html">The One-Sided Operators of an N-Degenerate, Spectrally Regular Biquaternion</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-pauli-module-of-the-biquaternion-algebra.html">The Pauli Module of the Biquaternion Algebra</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-regular-biquaternion.html">The Sandwich of an N-Degenerate, Spectrally Regular Biquaternion</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-split-quaternion-iterated-function-systems.html">The Split-Quaternion Iterated Function Systems</a></td>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra-of-the-biquaternions.html">The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra of the Biquaternions</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td>## The Physics Corpus</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>The physics corpus carries <strong>1694 occurrences outside a legacy section, in 155 articles</strong>. 103 of those articles hold at least one certain array, and they carry 1474 occurrences. The other 52 are marked †.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$\gamma$</th>
+<th>$\sigma$</th>
+<th>Total</th>
+<th>Legacy section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
+<td></td>
+<td>154</td>
+<td>154</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a></td>
+<td>124</td>
+<td>21</td>
+<td>145</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
+<td>4</td>
+<td>92</td>
+<td>96</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-correlation-function-of-the-bell-states.html">Exercise: The Correlation Function of the Bell States</a></td>
+<td></td>
+<td>65</td>
+<td>65</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html">Spin-1/2 Quantum Physics in Biquaternionic Form</a></td>
+<td></td>
+<td>53</td>
+<td>53</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a></td>
+<td></td>
+<td>53</td>
+<td>53</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</a></td>
+<td>1</td>
+<td>50</td>
+<td>51</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frame-conventions.html">Frame Conventions</a></td>
+<td>50</td>
+<td></td>
+<td>50</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
+<td>1</td>
+<td>48</td>
+<td>49</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></td>
+<td></td>
+<td>38</td>
+<td>38</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a></td>
+<td></td>
+<td>37</td>
+<td>37 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a></td>
+<td>33</td>
+<td>3</td>
+<td>36</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pauli-correspondence-and-the-matrix-image.html">The Pauli Correspondence and the Matrix Image</a></td>
+<td></td>
+<td>34</td>
+<td>34</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
+<td></td>
+<td>32</td>
+<td>32</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html">The General Polar Decomposition, the Amplitude and the Operator-to-State Map</a></td>
+<td></td>
+<td>28</td>
+<td>28 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
+<td></td>
+<td>25</td>
+<td>25</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a></td>
+<td></td>
+<td>24</td>
+<td>24</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>2</td>
+<td>22</td>
+<td>24</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html">The Bell Basis as the Idempotent Basis of B⊗B</a></td>
+<td></td>
+<td>24</td>
+<td>24</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gates-and-circuits-in-biquaternionic-form.html">Quantum Gates and Circuits in Biquaternionic Form</a></td>
+<td></td>
+<td>22</td>
+<td>22</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a></td>
+<td></td>
+<td>18</td>
+<td>18</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.html">Exercise: The Electromagnetic Energy–Momentum Tensor</a></td>
+<td></td>
+<td>17</td>
+<td>17 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td>17</td>
+<td></td>
+<td>17</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-chsh-inequality-and-tsirelsons-bound.html">Exercise: The CHSH Inequality and Tsirelson's Bound</a></td>
+<td></td>
+<td>16</td>
+<td>16</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a></td>
+<td></td>
+<td>16</td>
+<td>16 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a></td>
+<td></td>
+<td>15</td>
+<td>15</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a></td>
+<td>14</td>
+<td></td>
+<td>14</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html">The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form</a></td>
+<td>14</td>
+<td></td>
+<td>14</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a></td>
+<td>13</td>
+<td></td>
+<td>13</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/superdense-coding-in-biquaternionic-form.html">Superdense Coding in Biquaternionic Form</a></td>
+<td></td>
+<td>13</td>
+<td>13</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td>10</td>
+<td>3</td>
+<td>13</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a></td>
+<td></td>
+<td>13</td>
+<td>13</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html">The Spinor Representation of the Lorentz Group in Biquaternionic Form</a></td>
+<td>1</td>
+<td>12</td>
+<td>13</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td></td>
+<td>12</td>
+<td>12</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
+<td>6</td>
+<td>6</td>
+<td>12</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a></td>
+<td>11</td>
+<td></td>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a></td>
+<td></td>
+<td>10</td>
+<td>10</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html">The First-Order Root of the Biquaternion Klein–Gordon Operator</a></td>
+<td>1</td>
+<td>9</td>
+<td>10</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.html">The Lyapunov Exponent and Information Loss in the Biquaternion Framework</a></td>
+<td></td>
+<td>10</td>
+<td>10 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-spin-precession-in-a-magnetic-field.html">Exercise: Spin Precession in a Magnetic Field</a></td>
+<td></td>
+<td>9</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-two-spins-in-the-singlet-state.html">Exercise: Two Spins in the Singlet State</a></td>
+<td></td>
+<td>9</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-physics-foundations-and-structure.html">Quantum Physics: Foundations and Structure</a></td>
+<td></td>
+<td>9</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a></td>
+<td></td>
+<td>9</td>
+<td>9 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a></td>
+<td></td>
+<td>9</td>
+<td>9</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-two-body-problem-in-biquaternionic-form.html">The Relativistic Two-Body Problem in Biquaternionic Form</a></td>
+<td>9</td>
+<td></td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/two-spin-half-particles-in-biquaternionic-form.html">Two Spin-Half Particles in Biquaternionic Form</a></td>
+<td></td>
+<td>9</td>
+<td>9</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form.html">Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form</a></td>
+<td></td>
+<td>8</td>
+<td>8</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td></td>
+<td>8</td>
+<td>8</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.html">Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</a></td>
+<td></td>
+<td>7</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html">Cosmology under the Biquaternion Framework — A Research Agenda</a></td>
+<td></td>
+<td>7</td>
+<td>7 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-measuring-spin-along-an-arbitrary-direction.html">Exercise: Measuring Spin Along an Arbitrary Direction</a></td>
+<td></td>
+<td>7</td>
+<td>7</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/squeezing-beyond-the-biquaternion-algebra.html">Squeezing Beyond the Biquaternion Algebra</a></td>
+<td></td>
+<td>7</td>
+<td>7 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td></td>
+<td>7</td>
+<td>7</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a></td>
+<td></td>
+<td>6</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html">Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form</a></td>
+<td>3</td>
+<td>3</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/element-and-operator-representations-the-three-actions.html">Element and Operator Representations: The Three Actions</a></td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-entanglement-entropy-and-the-partial-trace.html">Exercise: Entanglement Entropy and the Partial Trace</a></td>
+<td></td>
+<td>6</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a></td>
+<td></td>
+<td>6</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/special-element-conventions.html">Special Element Conventions</a></td>
+<td>6</td>
+<td></td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td></td>
+<td>6</td>
+<td>6</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a></td>
+<td>5</td>
+<td></td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td></td>
+<td>5</td>
+<td>5</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html">Parra's Four Options of the Dirac Equation and the Discrete Symmetries</a></td>
+<td></td>
+<td>5</td>
+<td>5</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/relative-entropy-and-the-biquaternion-framework.html">Relative Entropy and the Biquaternion Framework</a></td>
+<td></td>
+<td>5</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td></td>
+<td>5</td>
+<td>5</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td></td>
+<td>5</td>
+<td>5</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
+<td></td>
+<td>5</td>
+<td>5</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
+<td></td>
+<td>5</td>
+<td>5</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-weak-interaction-in-biquaternionic-form.html">The Weak Interaction in Biquaternionic Form</a></td>
+<td>5</td>
+<td></td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.html">Addition of Angular Momenta and Clebsch–Gordan Coefficients in Biquaternionic Form</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-four-momentum-conservation-in-a-collision.html">Exercise: Four-Momentum Conservation in a Collision</a></td>
+<td>4</td>
+<td></td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-quantum-channels-and-dephasing-in-m.html">Exercise: Quantum Channels and Dephasing in M+</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-successive-measurements-of-spin.html">Exercise: Successive Measurements of Spin</a></td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-bloch-ball-and-the-geometry-of-mixed-states.html">Exercise: The Bloch Ball and the Geometry of Mixed States</a></td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a></td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.html">Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/geometric-phases-of-non-relativistic-spin-in-biquaternionic-form.html">Geometric Phases of Non-Relativistic Spin in Biquaternionic Form</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/grassmann-coherent-states-in-biquaternionic-form.html">Grassmann Coherent States in Biquaternionic Form</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>4</td>
+<td></td>
+<td>4</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes Between the Poisson Bracket and the Quantum Commutator</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/strong-subadditivity-in-the-biquaternion-framework.html">Strong Subadditivity in the Biquaternion Framework</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-independence-not-a-defect.html">The Biquaternion Framework and the Canonical Commutation Relation: Independence, Not a Defect</a></td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-universe-as-an-improvement-of-the-quaternionic-quantum-theory.html">The Biquaternion Universe as an Improvement of the Quaternionic Quantum Theory</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bloch-ball-as-the-normalised-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a></td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a></td>
+<td>4</td>
+<td></td>
+<td>4</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</a></td>
+<td></td>
+<td>4</td>
+<td>4 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html">The Relativistic Particle in an External Field, in Biquaternionic Form</a></td>
+<td>4</td>
+<td></td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unit-index-and-notation-conventions.html">Unit, Index and Notation Conventions</a></td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conceptual-conventions.html">Conceptual Conventions</a></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
+<td>3</td>
+<td></td>
+<td>3</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html">Null Electromagnetic Fields and the Shear-Free Congruence</a></td>
+<td></td>
+<td>3</td>
+<td>3 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-error-correction-and-the-stabilizer-formalism-in-biquaternionic-form.html">Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form</a></td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a></td>
+<td></td>
+<td>3</td>
+<td>3 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html">The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</a></td>
+<td>3</td>
+<td></td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-representation-in-biquaternionic-form.html">The Majorana Representation in Biquaternionic Form</a></td>
+<td></td>
+<td>3</td>
+<td>3 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a></td>
+<td></td>
+<td>3</td>
+<td>3 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html">The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</a></td>
+<td></td>
+<td>3</td>
+<td>3</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/a-brief-history-of-biquaternions-in-physics.html">A Brief History of Biquaternions in Physics</a></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html">SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</a></td>
+<td>2</td>
+<td></td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a></td>
+<td>2</td>
+<td></td>
+<td>2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html">The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></td>
+<td>2</td>
+<td></td>
+<td>2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism in Biquaternionic Form</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.html">The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html">The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.html">The Stern–Gerlach Experiment in Biquaternionic Form</a></td>
+<td></td>
+<td>2</td>
+<td>2 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a></td>
+<td>2</td>
+<td></td>
+<td>2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
+<td></td>
+<td>2</td>
+<td>2</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html">Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/magnetic-resonance-and-rabi-oscillations-in-biquaternionic-form.html">Magnetic Resonance and Rabi Oscillations in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html">Maxwell's Theory on Non-Commutative Spaces and Quaternions</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/one-dimensional-scattering-in-biquaternionic-form.html">One-Dimensional Scattering in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-discord-and-correlations-beyond-entanglement-in-biquaternionic-form.html">Quantum Discord and Correlations Beyond Entanglement in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-teleportation-in-biquaternionic-form.html">Quantum Teleportation in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bell-inequality-for-continuous-variables-in-biquaternionic-form.html">The Bell Inequality for Continuous Variables in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html">The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-computational-cost-of-biquaternion-arithmetic.html">The Computational Cost of Biquaternion Arithmetic</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-double-slit-experiment-in-biquaternionic-form.html">The Double-Slit Experiment in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-free-particle-and-wave-packets-in-biquaternionic-form.html">The Free Particle and Wave Packets in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-generalized-bloch-ball-for-spin-1-in-the-biquaternion-framework.html">The Generalized Bloch Ball for Spin 1 in the Biquaternion Framework</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-harmonic-oscillator-in-biquaternionic-form.html">The Harmonic Oscillator in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material-Informational Split as a Superselection Structure in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html">The Modular Hamiltonian in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-path-integral-in-biquaternionic-form.html">The Path Integral in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-qubit-in-biquaternionic-form.html">The Relativistic Qubit in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-half-path-integral-in-biquaternionic-form.html">The Spin-Half Path Integral in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-helicity-formalism-and-biquaternions.html">The Spinor-Helicity Formalism and Biquaternions</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wigner-rotation-and-the-information-content-of-a-boost-in-biquaternionic-form.html">The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-zeeman-and-stark-effects-in-biquaternionic-form.html">The Zeeman and Stark Effects in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a></td>
+<td></td>
+<td>1</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/why-the-multipole-tower-is-infinite-but-the-biquaternion-algebra-is-not.html">Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops in Biquaternionic Form</a></td>
+<td></td>
+<td>1</td>
+<td>1 †</td>
+<td></td>
+</tr>
+<tr>
+<td>## The Sizes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Maths.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Articles</th>
+<th>Occurrences</th>
+<th>Of which marked †</th>
+<th>Already with a legacy section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–4</td>
+<td>39</td>
+<td>85</td>
+<td>22</td>
+<td>2</td>
+</tr>
+<tr>
+<td>5–9</td>
+<td>16</td>
+<td>110</td>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10–29</td>
+<td>20</td>
+<td>339</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>30–59</td>
+<td>5</td>
+<td>216</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>60 and above</td>
+<td>3</td>
+<td>227</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td><strong>83</strong></td>
+<td><strong>977</strong></td>
+<td><strong>44</strong></td>
+<td><strong>7</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Physics.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Band</th>
+<th>Articles</th>
+<th>Occurrences</th>
+<th>Of which marked †</th>
+<th>Already with a legacy section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–4</td>
+<td>85</td>
+<td>190</td>
+<td>44</td>
+<td>22</td>
+</tr>
+<tr>
+<td>5–9</td>
+<td>31</td>
+<td>207</td>
+<td>3</td>
+<td>11</td>
+</tr>
+<tr>
+<td>10–29</td>
+<td>25</td>
+<td>404</td>
+<td>4</td>
+<td>10</td>
+</tr>
+<tr>
+<td>30–59</td>
+<td>10</td>
+<td>433</td>
+<td>1</td>
+<td>6</td>
+</tr>
+<tr>
+<td>60 and above</td>
+<td>4</td>
+<td>460</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td><strong>155</strong></td>
+<td><strong>1694</strong></td>
+<td><strong>52</strong></td>
+<td><strong>52</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Together the two corpora carry <strong>2671 occurrences in 238 articles</strong>, and 59 of those articles already carry a legacy section. Those 59 are the cheapest work: the array moves into a section that exists, and no display is recomputed.</p>
+<h2 id="what-blocks-the-work">What Blocks the Work</h2>
+<p><strong>The four generators have no gamma-free name.</strong> The chirality article was cleaned by naming the volume cell $\mathsf{V}^{\mathrm{vol}}$, and the same move is open for the four cells whose product it is. Until that name is fixed in <em>Special Element and Peirce Conventions</em>, every article that writes $\gamma_\mu$ waits.</p>
+<p><strong>Seven articles have the arrays as their subject.</strong> <em>$M_2(\mathbb{C})$ Pauli Representation</em>; <em>$M_2(\mathbb{C})$ Pauli Representation : Operators</em>; <em>$M_4(\mathbb{C})$ Pauli Representation</em>; <em>$M_4(\mathbb{C})$ Pauli Representation : Operators</em>; <em>Exercise: The Non-Relativistic Limit and the Pauli Equation</em>; <em>The Pauli Correspondence and the Matrix Image</em>; <em>The Pauli Module of the Biquaternion Algebra</em>. Whether such an article becomes a whole legacy article, or keeps a legacy section that holds its body, is a decision and not an edit.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
