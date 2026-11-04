@@ -16,21 +16,33 @@ The corpus records the programme and does not endorse it. Its value here lies in
 
 The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The units, the central $i$ and the sign vector $\varepsilon=(1,-1,-1,-1)$ are those of *Conventions in the Biquaternion Universe*; the field $F$, the spinor $\psi$ and the volume element $\omega$ are elements of the biquaternion algebra $\mathbb{B}$.
 
-The source writes its whole calculus with one letter, $\partial$, the Dirac operator of its bundle of forms, $d-\delta$, with $d$ the exterior derivative and $\delta$ the coderivative. That letter is not a symbol of the series, and the article says exactly what it buys before using it, because it is the one place where the two notations meet.
+The source writes its whole calculus with one letter, $\partial$. It is the series' own four-dimensional gradient, with four cells in place of the four units.
 
-**It is not one of the series' operators, and it cannot be replaced by one.** The series' derivative operators are the gradient $\tilde\nabla$ and the d'Alembertian $\Box$ (*Operator and Calculus Conventions*). The gradient is a single left multiplication, $\tilde\nabla\psi=-\frac{i}{c}\frac{\partial\psi}{\partial t'}+\sum_k\vec e_k\frac{\partial\psi}{\partial x_k}$ on the material sector, and the d'Alembertian is its norm, second order and scalar. The source's $\partial$ is first order and **two-sided**: its time term multiplies the differentiated field on the right by $\vec e_x$, and its three spatial terms multiply on the left by $\vec e_k$ and on the right by $\vec e_y$. No left multiplication by the gradient, composed with one right multiplier, gives it, and the check is two lines. On $\psi=\vec e_x t'$ both sides are constant, and the right multiplier is forced to be $-\vec e_x$; on $\psi=\vec e_y x$ the operator gives $i\vec e_x$ and the forced multiplier gives $-\vec e_y$. One multiplier cannot serve, because the source's operator carries two.
-
-**Written out, it is the four frame cells of the Pauli display.** Its four terms are four cells: the time term multiplies on the right by $\vec e_x$ alone; each spatial term multiplies on the left by the spatial unit of its own coordinate and on the right by $\vec e_y$. The right multiplier $\vec e_y$ is therefore common to the three spatial terms, and $\vec e_x$ is the right multiplier of the time term — which is exactly the pair of jobs the closing block's five frame cells give to $\vec e_y$ and to $\vec e_x$ (§*The Legacy Pauli Gamma Formulation*). The symbol therefore does not buy an operator: it buys back the defect of the display, and the body does not compute with it.
-
-**So the article splits its uses.** The four field equations are the series' own, and are written as such: the free field equation is $\tilde\nabla\tilde F=0$; the potential equation $\partial^2\pi=0$ is $\Box\pi=0$, since $\partial^2=-\Box$; the sourced equation $\partial F=J$ is $\tilde\nabla\tilde F=\tilde J$; and the contractions $\partial\cdot j$, $\partial\cdot g$, $\partial\cdot J$ are the series' contractions of the gradient with the three currents. The one equation that stays in the source's letter is the spinorial one of §*The Field as a Spinor Bilinear*, $\partial\psi\,\omega=\ldots$, because there the operator is the subject: it is two-sided, and its right factor is the whole content of the equation. Even there the letter is read through the cells above, never as a black box.
-
-For the record, its action on an element is the four products, one per coordinate. With the time coordinate written $t'$ — the source's $t$ — and in units $c=1$,
+**The gradient, and the substitution of units.** The series' gradient is a sum of four terms, one unit per coordinate derivative, $\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z}$ (*Operator and Calculus Conventions*). The source's letter is the same sum with the four units replaced by the four frame cells of §*The Legacy Pauli Gamma Formulation*:
 
 $$
-\psi\mapsto i\,\frac{\partial\psi}{\partial t'}\vec e_x-\sum_k i\,\vec e_k\frac{\partial\psi}{\partial x_k}\vec e_y ,
+\partial=iR_{\vec e_x}\frac{\partial}{\partial t'}-iL_{\vec e_x}R_{\vec e_y}\frac{\partial}{\partial x}-iL_{\vec e_y}R_{\vec e_y}\frac{\partial}{\partial y}-iL_{\vec e_z}R_{\vec e_y}\frac{\partial}{\partial z},
 $$
 
-the spatial terms multiplying on both sides and the time term on the right. That the four right multipliers are the two just named is the whole of the check that the operator is two-sided.
+with $t'$ the time coordinate and units $c=1$. The four coefficients are the frame cells of §*The Legacy Pauli Gamma Formulation*, $iR_{\vec e_x}$ and the three $iL_{\vec e_k}R_{\vec e_y}$; nothing is added to the gradient but those cells, one per coordinate.
+
+**Acting.** Written out on an element, the time cell multiplies on the right and the three spatial cells on both sides:
+
+$$
+\partial\psi=i\,\frac{\partial\psi}{\partial t'}\vec e_x-\sum_k i\,\vec e_k\frac{\partial\psi}{\partial x_k}\vec e_y .
+$$
+
+One example fixes the reading. On $\psi=x\vec e_z$ the spatial gradient is $\vec e_x\vec e_z=-\vec e_y$, so $\partial\psi=i\vec e_y\vec e_y=-i e_t$.
+
+**Why the substitution is the whole point.** The four cells anticommute: $iR_{\vec e_x}$ squares to $+1$, each $iL_{\vec e_k}R_{\vec e_y}$ squares to $-1$, and any two distinct cells anticommute. Those are the signs and the anticommutation of a frame with $\varepsilon=(1,-1,-1,-1)$, so every cross term cancels pairwise between the two orders of its mixed derivative, and one copy of the operator squares to the wave operator:
+
+$$
+\partial^2=\frac{\partial^2}{\partial t'^2}-\Delta=-\Box .
+$$
+
+The series' units do not have that property, because $e_t$ is the identity and so commutes rather than anticommutes with the spatial units: $e_t\vec e_k+\vec e_k e_t=2\vec e_k$. The cross terms of $\tilde\nabla^2$ survive, $2\vec e_k\,\partial^2/\partial Q_t\partial Q_k$, so it is not scalar. That is why the series composes the gradient with its conjugate, $\Box=\tilde\nabla\tilde\nabla^{\natural}$, where the sign vector $\varepsilon$ of the conjugate kills the cross terms. Two pieces are needed there; one suffices here.
+
+**What that buys, and what the body does with it.** The source's first-order spinorial equation has no room for a conjugate, so it needs a single first-order operator whose square is already the wave operator, and only the substitution of the frame cells gives one. The letter is therefore kept for that equation, §*The Field as a Spinor Bilinear*, where $\partial\psi\,\omega=\ldots$ and the right factor $\omega$ is the content. Every other equation is written in the series' operators, which are the same objects: the free field equation $\tilde\nabla\tilde F=0$, the potential equation $\Box\pi=0$, the sourced equation $\tilde\nabla\tilde F=\tilde J$, and the contractions of the gradient.
 
 The source's **volume element** is the product of its four generators, and the bookkeeping is short. The four $i$'s are central and give $i^4=+1$, so only the units matter. The left factors multiply in their printed order to $\vec e_x\vec e_y\vec e_z=\vec e_x\vec e_x=-e_t$, and the right factors, which compose in the reverse order, to $\vec e_y\vec e_y\vec e_y\vec e_x=-\vec e_y\vec e_x=+\vec e_z$. The two pieces give $-\vec e_z$, with no scalar left over, so the volume element is the element
 
@@ -540,7 +552,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $\varepsilon=(1,-1,-1,-1)$ | sign vector of the layer |
 | $\omega=-\vec e_z$ | Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", the duality |
 | $-\vec e_z$ | Fixed spin-plane bivector, the source's product of its second generator with its first; as the element $\omega$ it multiplies the spinor on the right |
-| $\partial$ | The source's letter for the Dirac operator $d-\delta$ of its bundle of forms, $d$ the exterior derivative and $\delta$ the coderivative. Not one of the series' two derivative operators: first order, and two-sided, its time term multiplying on the right by $\vec e_x$ and its three spatial terms on the left by $\vec e_k$ and on the right by $\vec e_y$. Its square is the wave operator, $\partial^2=-\Box$. Used below for the spinorial equation only; the field equations are written $\tilde\nabla\tilde F=\tilde J$ |
+| $\partial$ | The source's letter for its Dirac operator: the series' gradient $\tilde\nabla$ with its four units replaced by the four frame cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$. Those four cells anticommute, so one copy squares to the wave operator, $\partial^2=-\Box$ |
 | $F$, $F_0$, $F_e$, $F_+$ | Field 2-form; the stationary subluminal solution; the electron field; the field of the $+$ branch |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |

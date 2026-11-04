@@ -833,7 +833,7 @@
 <!-- the standard Rarita–Schwinger field; the vector-spinor field in the framework; the rest-frame reduction; the spin-three-halves projector; the massless case and the gauge freedom; the massive case; comparison with spin one and spin one-half. -->
 
 <a href="articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-zero-and-one-half.html">Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half</a>
-<!-- the algebra and its defining module; the spin content of the modules; where spin zero lives; tensor products and the generation of higher spin; the explicit cases; tensor powers of the algebra; why the ceiling; the same ceiling in the Clifford algebra.  The two commuting $\mathbb{H}$-actions are read as the two spinor index families, the failure of full bilinearity the obstruction to their independence. -->
+<!-- the algebra and its defining module; the spin content of the modules; the adjoint action and the spin-one algebra it carries, and why that is a carrier and not a module; where spin zero lives; tensor products and the generation of higher spin; the explicit cases; tensor powers of the algebra; why the ceiling; the same ceiling in the Clifford algebra.  The two commuting $\mathbb{H}$-actions are read as the two spinor index families, the failure of full bilinearity the obstruction to their independence. -->
 
 ### Focus on informational aspects
 

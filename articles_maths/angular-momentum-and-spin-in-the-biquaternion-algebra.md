@@ -433,8 +433,8 @@ Four objects in this corpus are called a spin. They are one definition applied t
 
 | use | what it labels | structure | values |
 |---|---|---|---|
-| highest weight | the representation | a module structure on a carrier | $0,\ \tfrac12,\ 1$ |
-| adjoint action | the vector carrier | conjugation on the algebra | $1$ |
+| highest weight | the representation | either module structure | $0,\ \tfrac12,\ 1$ |
+| adjoint action | the scalar and the vector carriers | conjugation by $G$ on the algebra | $0,\ 1$ |
 | Peirce index | the copy | right multiplication by $i\vec u$ | $+$ or $-$ |
 | chirality | the Lorentz half | a central sign in $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ | $+$ or $-$ |
 
@@ -508,7 +508,7 @@ The rotation algebra inside $\mathbb{B}$ has two normalisations: the anti-Hermit
 
 The subcarriers of the regular module are exactly these three, and $1+2+3=6>4$ shows that no single structure contains all three. The minimal left ideals are parametrised by the sphere, and each is a copy of the spin-half module. The orbital part is an outer derivation of the polynomial algebra; the spin part is the inner derivation $\operatorname{ad}_{\tilde S_k}$.
 
-The tensor square of the adjoint module contains a spin-two summand, and the multiplication map kills it: the product of two biquaternions carries no spin two. That vanishing, and not the dimension count, is the algebraic reason the algebra realises the three subcarrier types and no fourth.
+The tensor square of the adjoint module contains a spin-two summand, and the multiplication map kills it: the product of two biquaternions carries no spin two. That vanishing is why the tensor-square route yields no fourth type; the dimension count is why no other route can.
 
 The word spin has four uses in this corpus, and only the first two record a value of $s$. The highest weight of a module structure is the definition; the adjoint action is its instance on $\mathbb{B}=Z\oplus V$; the Peirce index and the chirality are signs, one an inner copy label and one a central Lorentz label, and neither is a value of $s$.
 
