@@ -29,31 +29,21 @@ The answer developed here is narrower than the title might suggest, and it is wo
 
 **What this article is and is not.** It is a computation of how the frame route of the parent article linearizes, and a comparison of the result with standard linearized gravity. It is not a derivation of general relativity from the biquaternion algebra, and it does not claim that the algebra predicts the linearized Einstein equation. The linear theory is transcribed into the framework's notation; the framework's contribution is the sector structure of the carrier and the form of the gauge transformation, both of which are checked, and neither of which is a dynamics.
 
-The body is written in the biquaternion algebra of the reference frame, equivalently in its left–right cells $L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$. The gamma matrices appear only in the final section, *The Legacy Pauli Gamma Formulation*, which is a translation table and not a second formulation.
+The body is written in the biquaternion algebra. An action on an element is written as it acts, $\tilde Q\mapsto a\tilde Qb$, and a cell appears only where the operator itself is the subject, in *The Fermionic Coupling at First Order*. The gamma matrices appear only in the final section, *The Legacy Pauli Gamma Formulation*, which is a translation table and not a second formulation.
 
-Two further conventions are needed and are fixed once, here. First, the **material basis** of $\mathbb{M}_-$ is
+The framework's conventions are used here and are not restated. The material basis $\varepsilon_\mu$ of $\mathbb{M}_-$, its Gram matrix $g_{\mu\nu}[\mathbb{M}_-]$, the real coordinates $x_\mu=(ct',x,y,z)$ of the material frame and the biquaternionic d'Alembertian $\Box$ are those of *Frame Conventions* and *Operator and Calculus Conventions*, and every pairing written here is the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ of *Norm and Pairing Conventions*. The plain form is a different pairing and is not used. The one symbol this article fixes for itself is the dual material basis $\hat\varepsilon_\lambda$, fixed by $\langle\hat\varepsilon_\lambda,\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$; it carries the trace and the surjectivity of the frame map below.
 
-$$
-\varepsilon_0 = i\,e_t, \qquad \varepsilon_1 = \vec e_x, \qquad \varepsilon_2 = \vec e_y, \qquad \varepsilon_3 = \vec e_z,
-$$
-
-which is the basis used in the parent article. The bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, with $\tilde Q^{\natural}$ the quaternion conjugate; on $\mathbb{M}_-$ the two conjugate orders agree, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, and the form is real and symmetric there. Its Gram matrix, $g_{\mu\nu}[\mathbb{M}_-] = \langle \varepsilon_\mu, \varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1, 1, 1, 1)$, is the metric of the material sector and the flat background of the linearized theory. The dual basis is $\hat\varepsilon_\lambda = g_{\lambda\lambda}[\mathbb{M}_-]\varepsilon_\lambda$ (no sum), so that $\langle\hat\varepsilon_\lambda,\varepsilon_\rho\rangle_{\natural} = \delta_{\lambda\rho}$. Second, the coordinates in which the components $h_{\mu\nu}$ are written are the **real** components of the frame, $x_\mu = (ct', x, y, z)$, so that a four-vector is $\tilde{Q} = X_\mu\varepsilon_\mu$ and $X_0 = ct'$. The framework's imaginary time is $i x_0$, so
+One derived form is needed repeatedly, and it is recorded once. The framework's imaginary time is $Q_t=ix_0$, so $\partial/\partial Q_t=-i\,\partial/\partial x_0$ and the biquaternionic d'Alembertian is the tensorial wave operator,
 
 $$
-\partial/\partial Q_t = -i\,\partial/\partial x_0, \qquad \partial/\partial x_0= \frac{\partial}{\partial(ct')},
+\Box = \partial^2/\partial Q_t^2 + \Delta = \sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\,\partial^2/\partial x_\mu\partial x_\nu .
 $$
 
-and therefore
-
-$$
-\Box = \partial^2/\partial Q_t^2 + \Delta = -\partial^2/\partial(x_0)^2 + \Delta = \sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\partial^2/\partial x_\mu\partial x_\nu .
-$$
-
-Both the biquaternionic d'Alembertian and the tensorial wave operator are the same operator in these coordinates; only the naming of the time variable differs. A product $k_\lambda x_\lambda$ below is the invariant contraction $\sum_{\lambda,\rho}g_{\lambda\rho}[\mathbb{M}_-]k_\lambda x_\rho$, not a sum of like components. Every pairing written in this article is $\langle\cdot,\cdot\rangle_{\natural}$. The corpus's plain form $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different pairing: on $\mathbb{M}_-$ it is minus the Euclidean inner product of the four real coefficients, negative definite in these coordinates, and none of the formulas below uses it.
+A product $k_\lambda x_\lambda$ below is the invariant contraction $\sum_{\lambda,\rho}g_{\lambda\rho}[\mathbb{M}_-]k_\lambda x_\rho$, not a sum of like components.
 
 ## Linearized Gravity in Standard Form
 
-This section fixes the target. It is the standard linear theory, written in the coordinate convention just fixed, and every formula displayed here was checked by direct computation. Nothing in the section is biquaternionic; it is the theory that the next sections try to write in the framework's notation.
+This section fixes the target. It is the standard linear theory, written in the coordinate convention named above, and every formula displayed here was checked by direct computation. Nothing in the section is biquaternionic; it is the theory that the next sections try to write in the framework's notation.
 
 ### The Gauge Freedom
 
@@ -70,7 +60,7 @@ This is the **linearized gauge transformation**, and it is a diffeomorphism: it 
 At linear order the Christoffel symbols are
 
 $$
-\Gamma_{\lambda\mu\nu} = \tfrac{1}{2}\sum_\rhog_{\lambda\rho}[\mathbb{M}_-]\left(\partial/\partial x_\mu h_{\nu\rho} + \partial/\partial x_\nu h_{\mu\rho} - \partial/\partial x_\rho h_{\mu\nu}\right),
+\Gamma_{\lambda\mu\nu} = \tfrac{1}{2}\sum_\rho g_{\lambda\rho}[\mathbb{M}_-]\left(\partial/\partial x_\mu h_{\nu\rho} + \partial/\partial x_\nu h_{\mu\rho} - \partial/\partial x_\rho h_{\mu\nu}\right),
 $$
 
 where the first slot is the connection's upper slot, contracted here with $g_{\lambda\rho}[\mathbb{M}_-]$ and written low in the all-low labelling of this article. The Riemann tensor is
@@ -83,8 +73,8 @@ Contraction, with the sign convention used here, gives the linearized Ricci tens
 
 $$
 \begin{aligned}
-\mathrm{Ric}_{\mu\nu} = \tfrac{1}{2}\Bigl(&\partial/\partial x_\mu\,\sum_\lambdag_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda h_{\lambda\nu}
-+\partial/\partial x_\nu\,\sum_\lambdag_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda h_{\lambda\mu}\\
+\mathrm{Ric}_{\mu\nu} = \tfrac{1}{2}\Bigl(&\partial/\partial x_\mu\,\sum_\lambda g_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda h_{\lambda\nu}
++\partial/\partial x_\nu\,\sum_\lambda g_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda h_{\lambda\mu}\\
 &-\Box h_{\mu\nu}-\partial^2/\partial x_\mu\partial x_\nu h\Bigr),
 \qquad h = \sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]h_{\mu\nu},
 \end{aligned}
@@ -112,8 +102,8 @@ so that the map is its own inverse, $\bar{\bar h}_{\mu\nu} = h_{\mu\nu}$, and on
 $$
 \begin{aligned}
 G_{\mu\nu} = \mathrm{Ric}_{\mu\nu} - \tfrac{1}{2}g_{\mu\nu}[\mathbb{M}_-]\mathrm{Ric}
-= \tfrac{1}{2}\Bigl(&\partial/\partial x_\mu\,\sum_\lambdag_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\nu}
-+\partial/\partial x_\nu\,\sum_\lambdag_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\mu}\\
+= \tfrac{1}{2}\Bigl(&\partial/\partial x_\mu\,\sum_\lambda g_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\nu}
++\partial/\partial x_\nu\,\sum_\lambda g_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\mu}\\
 &-\Box\bar{h}_{\mu\nu}
 -g_{\mu\nu}[\mathbb{M}_-]\sum_{\rho,\sigma}g_{\rho\rho}[\mathbb{M}_-]g_{\sigma\sigma}[\mathbb{M}_-]\partial^2/\partial x_\rho\partial x_\sigma\bar{h}_{\rho\sigma}\Bigr).
 \end{aligned}
@@ -122,7 +112,7 @@ $$
 The **harmonic gauge** is the condition
 
 $$
-\sum_\lambdag_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0,
+\sum_\lambda g_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0,
 $$
 
 which is four conditions on the ten components of $\bar{h}_{\mu\nu}$ and can always be imposed. In it $G_{\mu\nu} = -\tfrac{1}{2}\Box\bar{h}_{\mu\nu}$, and the linearized Einstein equation $G_{\mu\nu} = \tfrac{8\pi G}{c^4}T_{\mu\nu}$ becomes
@@ -147,7 +137,7 @@ $$
 h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x_\lambda), \qquad \sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]k_\mu k_\nu = 0,
 $$
 
-with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $\sum_\mug_{\mu\mu}[\mathbb{M}_-]k_\mu A_{\mu\nu} = 0$ and $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]A_{\mu\nu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (ct', x, y, z)$, so that the phase is $\omega(z/c - t')$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\mu\nu} = 0$, while $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
+with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $\sum_\mu g_{\mu\mu}[\mathbb{M}_-]k_\mu A_{\mu\nu} = 0$ and $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]A_{\mu\nu} = 0$. For propagation in the $+z$ direction, $k_\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x_\mu = (ct', x, y, z)$, so that the phase is $\omega(z/c - t')$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $\mathrm{Ric}_{\mu\nu} = 0$, while $\mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
 
 This is the theory that the framework's frame route will now be asked to contain.
 
@@ -175,7 +165,7 @@ $$
 The right-hand side is automatically symmetric in $\mu\nu$, because the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ is symmetric. The map is also surjective onto symmetric perturbations: given any symmetric $h_{\mu\nu}$, the choice
 
 $$
-\delta\tilde{E}_\mu = \tfrac{1}{2}\sum_\lambda h_{\mu\lambda}\,\hat\varepsilon_\lambda, \qquad \langle\hat\varepsilon_\lambda,\varepsilon_\rho\rangle_{\natural} = \delta_{\lambda\rho},
+\delta\tilde{E}_\mu = \tfrac{1}{2}\sum_\lambda h_{\mu\lambda}\,\hat\varepsilon_\lambda ,
 $$
 
 reproduces it exactly, since $\sum_\lambda\langle \varepsilon_\mu, \tfrac{1}{2}h_{\nu\lambda}\hat\varepsilon_\lambda\rangle_{\natural} = \tfrac{1}{2}h_{\nu\mu}$ and the two terms add to $h_{\mu\nu}$. Both statements were checked numerically: the symmetry on random perturbations, the surjectivity on random symmetric $h$, and the rank of the map on the sixteen frame directions, which is $10$ with a kernel of dimension $6$.
@@ -224,25 +214,17 @@ with the exact expansion $g_{\mu\nu} = g_{\mu\nu}[\mathbb{M}_-] + h_{\mu\nu} + \
 
 ### The Fermionic Coupling at First Order
 
-The construction above is pure geometry: it linearizes the frame and reads the metric perturbation off it. Where matter attaches to that frame, the parent article's attachment is the one-sided covariant derivative on the spinor module, $D_\mu\psi = \partial/\partial x_\mu\,\psi + \vec\Gamma_\mu\psi$, with $\vec\Gamma_\mu$ the spin connection. An external source shows that this attachment has two inequivalent forms, and the difference is not a higher-order subtlety here.
+The construction above is pure geometry: it linearizes the frame and reads the metric perturbation off it. Where matter attaches to that frame, the parent article's attachment is the one-sided covariant derivative $D_\mu\tilde\Psi = \partial/\partial x_\mu\,\tilde\Psi + \vec\Gamma_\mu\tilde\Psi$ on an element-valued Dirac field, with $\vec\Gamma_\mu$ the spin connection. An external source shows that this attachment has two inequivalent forms, and the difference is not a higher-order subtlety here.
 
-For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term $\{iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{axf}},S_{cd}\}$ between the frame cell and the Lorentz generator, which the substituted equation does not. In the cells, with the sign vector $\varepsilon=(1,-1,-1,-1)=-\eta$ and using $i^2=-1$ to remove the pair of imaginary units from the generator,
-
-$$
-S_{cd}=\tfrac14\bigl[iL_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{axf}},iL_{e_d}R_{\vec e_{\nu(d)}}^{\mathrm{axf}}\bigr]
-=-\tfrac14\bigl[L_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{axf}},L_{e_d}R_{\vec e_{\nu(d)}}^{\mathrm{axf}}\bigr],
-$$
-
-the relevant commutator is
+For the standard vierbein coupling of a Dirac fermion to gravity, gauging the flat equation and varying the gauged action **do not commute**: the varied equation carries an anticommutator term between the generator cell of a coordinate and the Lorentz generator, which the substituted equation does not. The generator cell of the coordinate $x_\mu$ is the frame cell $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$, and $S_{ab}$ is the Lorentz generator those cells build, the quarter-commutator displayed in *Matrix Representations Conventions*, §*The Clifford Structure*. The relevant commutator is, with $\varepsilon=(1,-1,-1,-1)$ the plain weight of the frame,
 
 $$
 \bigl[L_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{axf}},S_{ab}\bigr]
-=g_{ca}\,L_{e_b}R_{\vec e_{\nu(b)}}^{\mathrm{axf}}-g_{cb}\,L_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{axf}},
+=\varepsilon_c\delta_{ca}\,L_{e_b}R_{\vec e_{\nu(b)}}^{\mathrm{axf}}
+-\varepsilon_c\delta_{cb}\,L_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{axf}},
 $$
 
 which is nonzero whenever $c$ equals exactly one of $a,b$, rather than vanishing (J. Fredsted, arXiv:1906.12200v3 [physics.gen-ph], 2019; recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*). Both the frame perturbation $\delta\tilde{E}_\mu$ and the spin connection $\vec\Gamma_\mu$ are **first order** in the perturbation of this article, and the discrepancy is linear in the connection, so it is first order as well: it does not disappear as the perturbation is taken small. A linearized system that couples a Dirac field to $h_{\mu\nu}$ therefore has to say which of the two forms it linearizes, and the corpus's own curved Dirac equation — the one-sided chirality pair displayed in *The Legacy Pauli Gamma Formulation* — is the substituted one.
-
-Here $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
 
 This is recorded as an external caution and is not resolved here. Nothing constructed in this article changes, because the construction above contains no matter coupling at all; what changes is the interpretation of the article's own gap list, where "a derivation of the coupling to matter" has to be strengthened — the coupling is not merely underived, it is not unique in the standard formulation.
 
@@ -360,7 +342,7 @@ $$
 \Box\bar{h}_{\mu\nu} = \langle\varepsilon_\mu, \Box\bar{\delta\tilde{E}}_\nu\rangle_{\natural} + \langle\Box\bar{\delta\tilde{E}}_\mu, \varepsilon_\nu\rangle_{\natural} .
 $$
 
-Consequently $\Box\bar{h}_{\mu\nu} = 0$ holds if and only if $\Box\bar{\delta\tilde{E}}_\mu$ lies in the local-Lorentz kernel of the map to $h$: a frame perturbation whose $\Box$ is a pure local Lorentz transformation produces no metric perturbation. If the local Lorentz freedom is fixed — for instance by demanding that $\delta\tilde{E}_\mu$ and $\varepsilon_\mu$ be related by a symmetric matrix, as in the surjectivity construction above — then the wave equation takes the direct form
+Consequently $\Box\bar{h}_{\mu\nu} = 0$ holds if and only if $\Box\bar{\delta\tilde{E}}_\mu$ lies in the local-Lorentz kernel of the map to $h$: a frame perturbation whose $\Box$ is a pure local Lorentz transformation produces no metric perturbation. If the local Lorentz freedom is fixed — for instance by demanding that $\delta\tilde{E}_\mu$ and $\varepsilon_\mu$ be related by coefficients symmetric in their two indices, as in the surjectivity construction above — then the wave equation takes the direct form
 
 $$
 \boxed{\;\Box\,\bar{\delta\tilde{E}}_\mu = 0\;}.
@@ -380,7 +362,7 @@ $$
 h_{11} = -h_{22} = A\cos\!\left(\omega\left(\tfrac{z}{c} - t'\right)\right), \qquad h_{0\mu}=0, \qquad h_{3\mu}=0,
 $$
 
-with the other components zero. The wave vector is null, $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]k_\mu k_\nu = 0$, and the amplitude is transverse, $\sum_\mug_{\mu\mu}[\mathbb{M}_-]k_\mu A_{\mu\nu} = 0$, and traceless, $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]A_{\mu\nu} = 0$. A direct computation gives
+with the other components zero. The wave vector is null, $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]k_\mu k_\nu = 0$, and the amplitude is transverse, $\sum_\mu g_{\mu\mu}[\mathbb{M}_-]k_\mu A_{\mu\nu} = 0$, and traceless, $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]A_{\mu\nu} = 0$. A direct computation gives
 
 $$
 \mathrm{Ric}_{\mu\nu} = 0, \qquad \mathrm{Riem}_{\mu\nu\rho\sigma} \ne 0,
@@ -408,7 +390,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 2. **The non-abelian curvature and the gauge article's gap.** The linearized gravitational field strength is an $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$-Lie-algebra-valued two-form. The gauge article records that the framework supplies non-commutativity but not a compactness or reality condition selecting a gauge algebra. Does the local Lorentz algebra, which is non-compact and selected by the metric, meet that gap, or is it a different structure that the electromagnetic case cannot use?
 
-3. **A biquaternionic harmonic condition.** The harmonic condition $\sum_\lambdag_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0$ is four conditions on the frame. Is there a distinguished biquaternionic differential operator — a divergence on $\mathbb{M}_-$-valued one-forms — that produces it naturally, in the way that $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$ produces the Lorenz condition for the electromagnetic potential?
+3. **A biquaternionic harmonic condition.** The harmonic condition $\sum_\lambda g_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0$ is four conditions on the frame. Is there a distinguished biquaternionic differential operator — a divergence on $\mathbb{M}_-$-valued one-forms — that produces it naturally, in the way that $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = 0$ produces the Lorenz condition for the electromagnetic potential?
 
 4. **The Weyl tensor in the algebra.** The propagating content of linearized gravity is the Weyl tensor, and its natural biquaternionic encoding is through the self-dual and anti-self-dual bivectors. Can the five Newman–Penrose scalars be written as components of biquaternion objects, and does the algebra's decomposition into $\mathbb{M}_+$ and $\mathbb{M}_-$ organise them?
 
@@ -545,7 +527,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $g_{\mu\nu}[\mathbb{M}_-] = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ | Flat metric of the material sector |
 | $\tilde Q^{\natural}$, $\bar{\tilde Q}$, $\tilde Q^{*}$ | Quaternion conjugation, complex conjugation, and Hermitian conjugation $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$ |
 | $\hat\varepsilon_\nu$ | Dual material basis, $\langle\hat\varepsilon_\lambda,\varepsilon_\rho\rangle_{\natural}=\delta_{\lambda\rho}$ |
-| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the frame cells, used in *The Fermionic Coupling at First Order* and *The Legacy Pauli Gamma Formulation* |
+| $\varepsilon=(1,-1,-1,-1)$ | The plain weight of the frame, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; used in *The Fermionic Coupling at First Order* and *The Legacy Pauli Gamma Formulation* |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
 | $x_\mu = (ct',x,y,z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; the framework's imaginary time is $i x_0$ |
 | $\partial/\partial Q_t = -i\partial/\partial x_0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x_0$ |
@@ -557,13 +539,13 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12g_{\mu\nu}[\mathbb{M}_-]h$, $\bar{h} = -h$ | Trace-reversed perturbation; here the overbar marks trace reversal, not complex conjugation |
 | $\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14 h\,\varepsilon_\mu$ | Trace-reversed frame perturbation |
 | $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$ | Infinitesimal local Lorentz generator (complex pure vector) |
-| $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $L_{a}R_{b}$ | Frame cells, $L_a$ and $R_b$ the left and right multiplications |
+| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | The generator cell of the coordinate $x_\mu$, in the axis-free display of *Matrix Representations Conventions*; it is a cell, that is, an operator |
 | $\tilde Q_{\mathrm d} \in \mathbb{M}_-$ | Gauge four-vector, $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial x_\mu\,\tilde Q_{\mathrm d}$ |
 | $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x_\mu\,\xi_\nu - \partial/\partial x_\nu\,\xi_\mu$, $\xi_\nu = \langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | Linearized gauge transformation |
 | $\mathrm{Riem}_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |
 | $\mathrm{Ric}_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Ricci tensor and Einstein tensor |
 | $\tilde C_{\mu\nu} = \tfrac12\sum_{\rho\sigma}\mathrm{Riem}_{\mu\nu\rho\sigma}\varepsilon_\rho^{\natural}\varepsilon_\sigma$ | Curvature as a bivector-valued two-form |
-| $\sum_\lambdag_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0$ | Harmonic gauge |
+| $\sum_\lambda g_{\lambda\lambda}[\mathbb{M}_-]\partial/\partial x_\lambda\bar{h}_{\lambda\nu} = 0$ | Harmonic gauge |
 | $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ | Linearized Einstein equation |
 | $A_{\mu\nu}$, plus/cross | Plane-wave amplitude; the two polarizations |
 | $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ | Trace reading of the Hermitian form on the informational sector |

@@ -7,12 +7,12 @@ The proton is the stable charged baryon: spin-$\tfrac{1}{2}$, electric charge $+
 The framework is a research programme, not a completed theory, and three of its existing results bear directly on any claim about the proton.
 
 - **It has a non-abelian gauge construction inside the algebra** — a connection, a curvature containing the commutator term, the adjoint transformation law, the Bianchi identity and a gauge-invariant Yang–Mills density — built on the compact factor $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ of the material sector (*Non-Abelian Gauge Fields in Biquaternionic Form*).
-- **It has a chirality structure on the Dirac module and a charge operator on that module**, $Ϙ=ϙ_LP_L+ϙ_RP_R$, with the mass selection rule $ϙ_L=ϙ_R$: a massive Dirac field in the framework is vector-like (*Chiral Fermions in the Biquaternion Framework*).
-- **It has no colour group, no confinement mechanism, and no quark content.** The compact algebra available inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$ of real dimension $4$; every $\mathbb{B}$-module has even complex dimension, so no three-dimensional colour module exists within the present construction; and nothing in the series derives $SU(3)$ or a confinement mechanism (*Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*).
+- **It gives each value of the field its own charge**, $ϙ_L$ on the L part and $ϙ_R$ on the R part, with the mass selection rule $ϙ_L=ϙ_R$: a massive Dirac field in the framework is vector-like (*Chiral Fermions in the Biquaternion Framework*).
+- **It has no colour group, no confinement mechanism, and no quark content.** The compact algebra available inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$ of real dimension $4$; every carrier of $\mathbb{B}$ has even complex dimension, so no three-dimensional colour carrier exists within the present construction; and nothing in the series derives $SU(3)$ or a confinement mechanism (*Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*).
 
 The consequence for the proton is stated at the outset, because the article depends on it.
 
-- **Representable, and checked below.** The proton can be placed in the framework as a massive spin-$\tfrac{1}{2}$ Dirac field. Its spin-$\tfrac{1}{2}$ representation content is the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$; its electric charge is the eigenvalue of the module charge operator; and, being massive, it is necessarily vector-like on the module. The value $+1$ is a value the operator carries, and this is verified explicitly.
+- **Representable, and checked below.** The proton can be placed in the framework as a massive spin-$\tfrac{1}{2}$ Dirac field. Its spin-$\tfrac{1}{2}$ content comes from the algebra's single simple carrier; its electric charge is the value its charge element carries; and, being massive, the field is necessarily vector-like. The value $+1$ is a value the operator carries, and this is verified explicitly.
 - **Not derived.** Nothing in the algebra selects $ϙ_p=+1$, relates it to the electron's charge $-1$, or makes it an integer. The free biquaternion Dirac equation contains no charge at all, so the proton and the neutron satisfy the *same* free equation and differ only in an inserted coupling. The charge value is a parameter, exactly as the electron's charge is a parameter.
 - **Outside the framework.** The proton's compositeness — its quark content, its colour, its binding, its anomalous magnetic moment, and the fact that it is a bound state at all — is not in the framework. These are standard-physics imports, and the QCD agenda records that the framework has no route to them.
 
@@ -20,7 +20,13 @@ This is a deliberately modest accounting, and it is the honest one. The sharpest
 
 ## The Proton as a Spin-$\tfrac{1}{2}$ Biquaternion Dirac Field
 
-The proton enters the framework the way any massive spin-$\tfrac12$ fermion does: as a biquaternion field $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R$, whose two chiral halves lie in the minimal left ideal $S$ and in its conjugate $S^{\mathrm{c}}$ respectively, satisfying the biquaternion Dirac equation
+The proton enters the framework the way any massive spin-$\tfrac12$ fermion does: as an element of the algebra,
+
+$$
+\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R\in\mathbb{B},
+$$
+
+whose two parts carry the two values of the chirality, $\tilde{\Psi}_L$ the value L and $\tilde{\Psi}_R$ the value R, at the declared axis $\vec u$ (*Special Element Conventions*, §*The Chirality Convention*); every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality cell is the volume cell of the material frame $\mathbb{M}_-$. The free propagation is the biquaternion Dirac equation
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R=m_p\,\tilde{\Psi}_L,
@@ -32,45 +38,38 @@ In this section we record what is structural about placing it there and what is 
 
 ### The One-Sided and the Two-Sided Equation
 
-The article carries two Dirac equations, and they must not be read as one. They share the cells and the mass coefficient; they differ in the object the operator acts on and in where chirality lives.
+The article carries two Dirac equations, and they must not be read as one. They share the operator and the mass coefficient; they differ in how many times the operator is written.
 
-The **one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two halves rather than a term inside either. Chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, which on $\Delta$ acts as $\operatorname{diag}(-I_2,I_2)$ and so separates $\tilde{\Psi}_L\in S$ from $\tilde{\Psi}_R\in S^{\mathrm{c}}$; its central form is the sign of the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}\cong\mathbb{B}\oplus\mathbb{B}$, which is not an element of $\mathbb{B}$. What is not available is a grading by an element of $\mathbb{B}$ acting on one side: the element that suggests itself, $i\vec e_z$, has square $+e_t$ and grades the two *copies* of $S$ in the Peirce decomposition, not $S$ against $S^{\mathrm{c}}$.
+**The one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two values rather than a term inside either. The two values are read from the chirality cell and from nothing else; the label is not an element of the algebra, because the element that suggests itself, $i\vec e_z$, has square $+e_t$ and the split it gives is the index of the decomposition and not the chirality (*Special Element Conventions*, §*The Chirality Convention*, the paragraph *What the word does not name*).
 
-The **two-sided equation** is the transcription of the same pair on the module, as one equation. The field is written $\psi$ without the tilde there, because it is read as the module spinor $\Delta=S\oplus S^{\mathrm{c}}$ rather than as an algebra element. The pair operator is the one of *Conventions of the Operators and the Calculus*; for $\psi=(\psi_L,\psi_R)$ it is
+**The two-sided equation** writes the same pair once, on the same element. The pair operator of *Conventions of the Operators and the Calculus*, §*The Gradient*, carries the L value by $\tilde{\nabla}^{\natural}$ and the R value by $\tilde{\nabla}$,
 
 $$
-\mathbb{D}\psi=\left(\tilde{\nabla}\psi_R,\ \tilde{\nabla}^{\natural}\psi_L\right),
+\mathbb{D}\tilde{\Psi}=m_p\,\tilde{\Psi},
 \qquad
-\mathbb{D}^2=\Box\,I_4 ,
+\mathbb{D}^2=\Box
 $$
 
-and the pair reads
+on each value, so the pair reads
 
 $$
-\left(\mathbb{D}-m_p\right)\psi=0 .
+\left(\mathbb{D}-m_p\right)\tilde{\Psi}=0 .
 $$
 
-The operator is now a single object acting on the pair: it is the pair written once, and it contains no matrix generator. The module is also where chirality becomes an operator, the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$. That is what the two-sided reading adds: the algebra carries the mass term and the mass shell, the module carries chirality, the charge operator and the bilinears. The two forms are related by a change of representation, not by a change of physics.
+The operator is a single object acting on the element: it is the pair written once, and it contains no matrix generator. What the one-operator reading adds is the charge and the bilinears, which are read on the element. The algebra carries the mass term and the mass shell, and the two readings are related by a change of the operator, not by a change of physics.
 
-| Quantity | One-sided equation | Two-sided equation |
+| | One-sided equation | Two-sided equation |
 |---|---|---|
-| Equation | $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$ | $(\mathbb{D}-m_p)\psi=0$ |
-| Field | $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R\in\Delta=S\oplus S^{\mathrm{c}}$ | $\psi=(\psi_L,\psi_R)$ in $\Delta=S\oplus S^{\mathrm{c}}$ |
-| Mass | the off-diagonal pairing of the two halves | the same coefficient, off-diagonal in the two blocks |
-| Operator | left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ | one operator on the pair, $\mathbb{D}^2=\Box I_4$ |
-| Chirality | the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, acting as $\operatorname{diag}(-I_2,I_2)$; no element of $\mathbb{B}$ grades the halves | the same cell, the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ |
-| Use | the definition, the mass term, the mass shell | the charge operator, the projectors, the bilinears |
+| Equation | $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$ | $(\mathbb{D}-m_p)\tilde{\Psi}=0$ |
+| Field | $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R\in\mathbb{B}$, two values | the same element, the same two values |
+| Mass | the off-diagonal pairing of the two values | the same coefficient, off-diagonal in the two values |
+| Operator | left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ | one operator, $\mathbb{D}^2=\Box$ on each value |
+| Chirality | the value carried by each part | the same values |
+| Use | the definition, the mass term, the mass shell | the charge, the charge value, the bilinears |
 
-**The spin-$\tfrac12$ representation content is forced once the field is placed in the module.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, of complex dimension $2$, and its group of unit-norm biquaternions, $\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$ — under $\mathsf{M}_2$ the group $\det=1$ — is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field in $\Delta=S\oplus S^{\mathrm{c}}$ transforms in the two inequivalent two-component representations
+**The spin-$\tfrac12$ content follows from the algebra and not from the proton.** The elements of norm one, $\tilde U\tilde U^{\natural}=e_t$, form $\mathrm{SL}(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group; the left multiplications act on each value with weights $\pm\tfrac12$, and a rotation by $2\pi$ is the element $-e_t$. Left multiplication by $-e_t$ carries the field to $-\tilde\Psi$, while the conjugation action of the same element on the four-vectors of $\mathbb{M}_-$, $\tilde V\mapsto\tilde U\tilde V\tilde U^{-1}$, returns $+\tilde V$. The half-integral, double-valued character of the proton's spin is therefore a consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as an element of $\mathbb{B}$, its spin is $\tfrac12$.
 
-$$
-\Delta=\left(\tfrac12,0\right)\oplus\left(0,\tfrac12\right),
-\qquad \dim_\mathbb{C}\Delta=4,
-$$
-
-so it carries spin $\tfrac12$, and a rotation by $2\pi$ acts as $-e_t$ on the module while acting as $+e_t$ on the four-vectors of $\mathbb{M}_-$. The half-integral, double-valued character of the proton's spin is therefore a representation-theoretic consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as a field in the module, its spin is $\tfrac12$.
-
-**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the coefficient $m_p$ of the linear term that couples the two chiral halves, $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{\Psi}=\tilde{\Psi}_++\tilde{\Psi}_-$ with $\tilde{\Psi}_\pm\in\mathbb{M}_\pm$ one has $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
+**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the coefficient $m_p$ of the linear term that couples the two values, $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$; it is the only mass term in the free equation. The algebra's real structure $\flat=-{}^{*}$ is a different object: for $\tilde{\Psi}=\tilde{\Psi}_++\tilde{\Psi}_-$ with $\tilde{\Psi}_\pm\in\mathbb{M}_\pm$ one has $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
 
 The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free field lies on the mass shell
 
@@ -80,80 +79,57 @@ $$
 
 in the corpus's four-momentum convention $\tilde{P}=iE/c\,e_t+\vec p$, where the product is $-E^2/c^2+|\vec p|^2$ and the relation is $E^2=|\vec p|^2c^2+m_p^2c^4$: the *form* of the mass shell is structural, the number in it is an import.
 
-**The free equation contains no charge.** Neither the one-sided pair nor the two-sided equation $(\mathbb{D}-m_p)\psi=0$ contains a coupling. The mass coefficient $m_p$ is the only parameter, and it is central.
+**The free equation contains no charge.** Neither the one-sided pair nor the two-sided equation $(\mathbb{D}-m_p)\tilde\Psi=0$ contains a coupling. The mass coefficient $m_p$ is the only parameter, and it is central.
 
-Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge operator to *carry* the value $+1$, not an ability to produce it.
+Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge element to *carry* the value $+1$, not an ability to produce it.
 
-## The Charge Operator on the Dirac Module
+## The Charge Operator on the Field
 
-The cells act by left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so a two-sided cell is $L_aR_b\psi=a\psi b$. The chirality cell of the module is the pure right multiplication
+The charge of the framework multiplies each value of the field by its own number,
 
 $$
-\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
+\tilde{\Psi}_L\mapsto ϙ_L\tilde{\Psi}_L,
 \qquad
-\Gamma\psi=-i\,e_t\,\psi\,\vec e_z,
-\qquad
-\Gamma^2=I_4 ,
+\tilde{\Psi}_R\mapsto ϙ_R\tilde{\Psi}_R,
 $$
 
-whose two eigenspaces are the chiral halves. The projectors onto them are
+with independent couplings $ϙ_L,ϙ_R\in\mathbb{R}$ that the algebra does not fix (*Chiral Fermions in the Biquaternion Framework*).
+
+**The two rules are one right multiplication.** The action is $\tilde\Psi\mapsto\tilde\PsiϘ$, by the element
 
 $$
-P_L=\tfrac12\left(I_4-\Gamma\right)=\tfrac12\left(I_4+iR_{\vec e_z}^{\mathrm{axf}}\right),
-\qquad
-P_R=\tfrac12\left(I_4+\Gamma\right)=\tfrac12\left(I_4-iR_{\vec e_z}^{\mathrm{axf}}\right),
+Ϙ=\tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z\;\in\;\mathbb{M}_+ ,
 $$
 
-so that $P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$, and $\Gamma=P_R-P_L=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis. $\Gamma$ is Hermitian, so with $\Gamma^2=I_4$ the two $P$ are orthogonal projectors. The charge operator of *Chiral Fermions in the Biquaternion Framework* is then the module operator
+a derived form: $Ϙ=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $Ϙ$ is Hermitian, and it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. The covariant derivative carries it,
 
 $$
-Ϙ=ϙ_LP_L+ϙ_RP_R,
-\qquad
-ϙ_L,ϙ_R\in\mathbb{R},
+D_\mu\tilde\Psi=\frac{\partial\tilde\Psi}{\partial Q_\mu}+\frac{i}{\hbar}A_\mu\,\tilde\PsiϘ .
 $$
 
-and the covariant derivative is $D_\mu=\partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$. The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{C}_{\mathbb{B}}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two halves alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
+The framework's own abelian gauge structure — the one drawn from the central line $\mathbb{C}_{\mathbb{B}}$ — is the specialization $ϙ_L=ϙ_R$: a central phase multiplies the two values alike, so it is vector-like by construction, and an axial coupling would have to sit outside the centre.
 
-Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the chiral basis,
-
-$$
-Ϙ=\frac{ϙ_L+ϙ_R}{2}I_4+\frac{ϙ_R-ϙ_L}{2}\,\Gamma,
-\qquad
-[\,Ϙ,\Gamma\,]=0,
-$$
-
-with spectrum $\{ϙ_L\ (\text{twice}),\,ϙ_R\ (\text{twice})\}$. Second, the **mass selection rule**. The bilinears are built with the Dirac adjoint $\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$, where $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ are the four generator cells of the coordinates, $\nu(t)=x$ and $\nu(k)=y$. Under the chiral gauge transformation $\psi_L\mapsto\exp(iϙ_L\lambda/\hbar)\psi_L$, $\psi_R\mapsto\exp(iϙ_R\lambda/\hbar)\psi_R$, with $\lambda(\tilde{Q})$ a real gauge function, only the relative phase of the two halves changes:
-
-$$
-\begin{aligned}
-\psi_L^{\dagger}G_t\psi_R &\longmapsto \exp\!\left(\frac{i}{\hbar}(ϙ_R-ϙ_L)\lambda\right)\psi_L^{\dagger}G_t\psi_R,\\[4pt]
-\psi^{\dagger}G_t\psi=\psi_L^{\dagger}G_t\psi_R+\psi_R^{\dagger}G_t\psi_L
-&\longmapsto
-2\,\mathrm{Re}\!\left(\exp\!\left(\frac{i}{\hbar}(ϙ_R-ϙ_L)\lambda\right)\psi_L^{\dagger}G_t\psi_R\right).
-\end{aligned}
-$$
-
-The $G_t$ is not decoration: it anticommutes with $\Gamma$, so it is what carries one chiral half into the other, and without it $\psi_L^{\dagger}\psi_R=0$ because the two projectors are orthogonal; it is also Hermitian, so the two terms of $\psi^{\dagger}G_t\psi$ are conjugates. The mass bilinear is therefore gauge invariant for every gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge operator collapses to a multiple of the identity,
+Two structural facts about $Ϙ$ are inherited from the chiral-fermion article and are used here. First, $Ϙ$ is Hermitian and diagonal in the two values: it commutes with the chirality cell $\Gamma=-iR_{\vec e_z}$, and it acts on the L value by $ϙ_L$ and on the R value by $ϙ_R$. Second, the **mass selection rule**. The mass term is the only term of the free pair that links the two values, so it is the only place where the two charges meet. Under a gauge transformation the L value picks up the phase $\exp(iϙ_L\lambda/\hbar)$ and the R value the phase $\exp(iϙ_R\lambda/\hbar)$; the derivative terms are made covariant by the transformed potential, but the mass term $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$ then carries one phase on each side, so it is invariant for every real gauge function $\lambda$ **if and only if** $ϙ_R=ϙ_L$. A framework fermion that carries a mass is thus *forced* to be vector-like, and its charge element collapses to the central element,
 
 $$
 \boxed{\;ϙ_L=ϙ_R=ϙ
 \quad\Longrightarrow\quad
-Ϙ=ϙ\,I_4\;}.
+Ϙ=ϙ\,e_t\;}.
 $$
 
-This much is a derivation: the mass term of the framework and the charge operator of the framework are not independent, and for the proton — which is massive — they force the vector-like form. It is the structural reason a colour interaction, which is vector-like, sits comfortably with massive baryons, just as the QCD agenda records. One qualification belongs to the step: the selection rule is a statement about the Dirac mass bilinear, and the proton's mass term is precisely that bilinear — the linear chiral pair — so the vector-like forcing follows directly. The open real-form question of the chiral-fermion article concerns a separate conjugate pairing built on the algebra's real structure $\flat$, a neutral-fermion coupling that does not enter the charged proton's Dirac mass; it is carried into the open questions below.
+This much is a derivation: the mass term of the framework and the charge element of the framework are not independent, and for the proton — which is massive — they force the vector-like form. It is the structural reason a colour interaction, which is vector-like, sits comfortably with massive baryons, just as the QCD agenda records. One qualification belongs to the step: the selection rule is a statement about the Dirac mass term, and the proton's mass term is precisely that term — the linear pair of the two values — so the vector-like forcing follows directly. The open real-form question of the chiral-fermion article concerns a separate conjugate pairing built on the algebra's real structure $\flat$, a neutral-fermion coupling that does not enter the charged proton's Dirac mass; it is carried into the open questions below.
 
 **The check on the values $+1$ and $0$.** The proton's charge is $+1$ and the neutron's is $0$, in units of the elementary charge. Substituting the two assignments into the operator gives
 
 $$
-\boxed{\;Ϙ_p=Ϙ\big|_{ϙ=+1}=I_4,
+\boxed{\;Ϙ_p=Ϙ\big|_{ϙ=+1}=+e_t,
 \qquad
 Ϙ_n=Ϙ\big|_{ϙ=0}=0\;},
 $$
 
-with spectra $\{+1\ (\text{multiplicity }4)\}$ and $\{0\ (\text{multiplicity }4)\}$ respectively. The spectrum is that of the one-particle module; the antiproton's $-1$ is not a second eigenvalue of $Ϙ$, but the charge of the conjugate field, an import from the second-quantized reading. Each operator is Hermitian, each commutes with $\Gamma$, each is a multiple of the identity (hence vector-like, hence compatible with the mass selection rule), and the two are distinct. This was recomputed exactly in the faithful representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, together with the projector algebra ($P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$, $\Gamma=P_R-P_L$) and the selection rule on both branches (the vector-like branch $ϙ_L=ϙ_R$ and the axial branch $ϙ_R=-ϙ_L$). So the operator *carries* the proton's $+1$; the value is an eigenvalue the framework's charge operator has.
+two central elements, the first of which carries every element of the algebra to $+1$ times itself and the second to zero. Each is Hermitian, each is blind to the chirality label, each is compatible with the mass selection rule, and the two are distinct. The spectrum is that of the one-particle field; the antiproton's $-1$ is not a second value of $Ϙ$, but the charge of the conjugate field, an import from the second-quantized reading. This was recomputed exactly on a hundred generic elements: the two multiplications, the element $Ϙ$, its Hermiticity, its centrality in the vector-like case, and the covariance of the free pair on the vector-like branch $ϙ_L=ϙ_R$ against its failure on the axial branch $ϙ_R=-ϙ_L$. So the operator *carries* the proton's $+1$; the value is a number the framework's charge element has.
 
-**The honest qualification.** Carrying a value is not selecting it. The eigenvalue $ϙ$ is a free real parameter of the framework; nothing in $\mathbb{B}$, in the Dirac equation, or in the gauge principle fixes it to $+1$ for the proton, to $0$ for the neutron, or to any integer at all. The framework does not relate $ϙ_p$ to the electron's $ϙ_e$, so the equality of their magnitudes and the opposite signs — a striking and measured fact about the world — are not framework results; the electron article records the same absence for the electron. Nor does the framework explain why the proton's charge is an integer while a hypothetical fractionally charged constituent would not be; charge quantisation is not derived anywhere in the series. And the framework cannot *distinguish* the proton's field from the neutron's: the two are the same kind of object in the unique simple module, differing only in the value of an inserted coupling, exactly as the electron and muon are the same kind of object differing only in mass. In short, the sharpest test the proton offers is passed as a statement about the operator's spectrum and failed as a derivation. That is the result, and it is a negative one about derivation.
+**The honest qualification.** Carrying a value is not selecting it. The value $ϙ$ is a free real parameter of the framework; nothing in $\mathbb{B}$, in the Dirac equation, or in the gauge principle fixes it to $+1$ for the proton, to $0$ for the neutron, or to any integer at all. The framework does not relate $ϙ_p$ to the electron's $ϙ_e$, so the equality of their magnitudes and the opposite signs — a striking and measured fact about the world — are not framework results; the electron article records the same absence for the electron. Nor does the framework explain why the proton's charge is an integer while a hypothetical fractionally charged constituent would not be; charge quantisation is not derived anywhere in the series. And the framework cannot *distinguish* the proton's field from the neutron's: the two are the same kind of element of the algebra, differing only in the value of an inserted coupling, exactly as the electron and muon are the same kind of element differing only in mass. In short, the sharpest test the proton offers is passed as a statement about the operator's value and failed as a derivation. That is the result, and it is a negative one about derivation.
 
 ## Which Generator Carries the Electric Charge
 
@@ -167,31 +143,31 @@ $$
 \mathrm{U}(1)=\{\exp(i\theta e_t):\ \theta\in\mathbb{R}\},
 $$
 
-and the infinitesimal generator of the gauge transformation is the central element $ie_t\in\mathbb{M}_-$, anti-Hermitian as a Lie-algebra generator must be. On the module the corresponding Hermitian charge operator is the multiple of the identity $Ϙ=ϙI_4$, whose generator is the central Hermitian element $e_t$, with $\mathsf{M}_2(e_t)=I_2$. The two differ by the factor $\pm i$, $e_t=-i(ie_t)$, and that factor is the convention which turns an anti-Hermitian algebra element into a Hermitian observable. The electric charge is therefore carried by the **abelian factor** of the algebra — the central line — and not by the non-abelian factor.
+and the infinitesimal generator of the gauge transformation is the central element $ie_t\in\mathbb{M}_-$, anti-Hermitian as a Lie-algebra generator must be. The corresponding Hermitian charge is the central $Ϙ=ϙe_t$, whose generator is $e_t$ itself, the unit of the algebra. The two differ by the factor $\pm i$, $e_t=-i(ie_t)$, and that factor is the convention which turns an anti-Hermitian algebra element into a Hermitian observable. The electric charge is therefore carried by the **abelian factor** of the algebra — the central line — and not by the non-abelian factor.
 
-The non-abelian factor cannot be the electric charge, and this is checked, not asserted. The generators of the compact factor are $T_a=\tfrac12e_a$; they are anti-Hermitian, and in the faithful representation
+The non-abelian factor cannot be the electric charge, and this is checked, not asserted. The generators of the compact factor are $T_a=\tfrac12\vec e_a$; they are anti-Hermitian, and each squares to minus a quarter of the unit,
 
 $$
-\boxed{\;\mathsf{M}_2(T_a)=-\tfrac{i}{2}\sigma_a,
+\boxed{\;T_a^2=\tfrac14\vec e_a^2=-\tfrac14 e_t,
 \qquad
-\text{eigenvalues } \pm \tfrac{i}{2}\ \ (\text{purely imaginary})\;}.
+\text{values } \pm\tfrac{i}{2}\ \ (\text{purely imaginary})\;}.
 $$
 
-A charge operator is an observable: it must be Hermitian with real eigenvalues. The $T_a$ fail the first condition and have imaginary spectra, so no $\mathrm{SU}(2)$ generator in $\mathbb{M}_-$ can be the electric charge. Their Hermitian partners are the isospin-like generators $iT_a=\tfrac12 ie_a\in\mathbb{M}_+$, with
+A charge operator is an observable: it must be Hermitian with real values. The $T_a$ fail the first condition and have imaginary values, so no $\mathrm{SU}(2)$ generator in $\mathbb{M}_-$ can be the electric charge. Their Hermitian partners are the isospin-like generators $iT_a=\tfrac12i\vec e_a\in\mathbb{M}_+$, with
 
 $$
-\mathsf{M}_2(iT_a)=\tfrac12\sigma_a,
+(iT_a)^2=+\tfrac14 e_t,
 \qquad
-\text{eigenvalues } \pm\tfrac12,
+\text{values } \pm\tfrac12,
 $$
 
-which are Hermitian but have *half-integer* spectra; they cannot carry the proton's integer charge $+1$ either. All three $T_a$ and all three $iT_a$ were checked in the faithful representation. The conclusion is sharp: the proton's electric charge lives on the central $\mathrm{U}(1)$, the $\mathrm{SU}(2)$ generators are a different set of quantum numbers, and identifying the two would be an error the framework's own spectrum forbids.
+which are Hermitian but have *half-integer* values; they cannot carry the proton's integer charge $+1$ either. All three $T_a$ and all three $iT_a$ were checked, from the square alone: an element whose square is $-\tfrac14e_t$ has the two values $\pm\tfrac{i}{2}$, and an element whose square is $+\tfrac14e_t$ has the two values $\pm\tfrac12$. The conclusion is sharp: the proton's electric charge lives on the central $\mathrm{U}(1)$, the $\mathrm{SU}(2)$ generators are a different set of quantum numbers, and identifying the two would be an error the framework's own spectrum forbids.
 
 Three further distinctions belong here, because the framework has several conserved-looking quantities and they are easy to conflate.
 
-- **Electric charge versus chirality.** The operator $Ϙ$ is diagonal in the chiral basis and commutes with $\Gamma$ for every $ϙ_L,ϙ_R$; the axial combination $ϙ_R=-ϙ_L$ makes $Ϙ=-ϙ_L\Gamma$, proportional to the chirality cell. But $\Gamma$ is the chirality cell, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to chirality.
-- **Electric charge versus the $\mathrm{SU}(2)$ generators.** As above, these are real-spectrum (after multiplication by $i$) but half-integer-valued; they are isospin-like, not electric.
-- **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond the central phase, and no composite quantum number at all. The central phase does pass through the linear chiral pair, so the proton's electric charge is conserved by the massive free equation; but that is a statement about the $\mathrm{U}(1)$ of electromagnetism, not about baryon number, which is not constructed here.
+- **Electric charge versus chirality.** The element $Ϙ$ is diagonal in the two values and commutes with the chirality cell for every $ϙ_L,ϙ_R$; the axial combination $ϙ_R=-ϙ_L$ makes $Ϙ=-ϙ_L\,\Gamma$, proportional to the chirality cell. But $\Gamma$ is the chirality cell, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to the chirality.
+- **Electric charge versus the $\mathrm{SU}(2)$ generators.** As above, these have imaginary or half-integer values; they are isospin-like, not electric.
+- **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond the central phase, and no composite quantum number at all. The central phase does pass through the linear pair, so the proton's electric charge is conserved by the massive free equation; but that is a statement about the $\mathrm{U}(1)$ of electromagnetism, not about baryon number, which is not constructed here.
 
 ## The Isospin Partner, and Why It Is Not in This Equation
 
@@ -201,10 +177,10 @@ $$
 \tilde{\nabla}\tilde Q_1=m\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2=m\tilde Q_1,
 $$
 
-one takes the two idempotent superpositions of the companion articles. With $\sigma=\tfrac12(e_t+i\vec{\nu})$ the idempotent along a unit vector $\vec{\nu}$, so that $\sigma^2=\sigma$ because $(i\vec{\nu})^2=i^2\vec{\nu}^2=(-e_t)(-e_t)=e_t$, with $\bar{\sigma}=e_t-\sigma=\tfrac12(e_t-i\vec{\nu})$ its conjugate and $\sigma\bar{\sigma}=0$, and with $\vec{\tau}$ any unit vector orthogonal to $\vec{\nu}$:
+one takes the two superpositions of the companion articles. With $\sigma=\tfrac12(e_t+i\vec{\nu})$ the state along a unit direction $\vec{\nu}$, so that $\sigma^2=\sigma$ because $(i\vec{\nu})^2=i^2\vec{\nu}^2=(-e_t)(-e_t)=e_t$, with $\bar{\sigma}=e_t-\sigma=\tfrac12(e_t-i\vec{\nu})$ its complementary state, of zero product $\sigma\bar{\sigma}=0$, and with $\vec{\tau}$ any unit direction orthogonal to $\vec{\nu}$:
 
 $$
-D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad N=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau}.
+\tilde\Psi_p=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde\Psi_n=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau}.
 $$
 
 These are Gürsey's proton and neutron. Both descend from the one system with the one mass parameter $m$, so they have **equal mass by construction**; the relative sign and the factor $i\vec{\tau}$ place them in orthogonal isospin directions. The transformations that preserve both superpositions form a two-parameter group, found by Nishijima in a different context,
@@ -213,25 +189,27 @@ $$
 G_N=\sigma\,\exp(i\alpha)+\bar{\sigma}\,\exp(i\beta),
 $$
 
-which multiplies each idempotent by its own phase and annihilates the other,
+which acts by right multiplication, multiplies each state by its own phase and annihilates the other,
 
 $$
-D\,G_N=e^{i\alpha}\tilde{Q}_1\sigma+e^{i\beta}\tilde{Q}_2^{*}\bar{\sigma}.
+\tilde\Psi_p\,G_N=e^{i\alpha}\tilde{Q}_1\sigma+e^{i\beta}\tilde{Q}_2^{*}\bar{\sigma}.
 $$
 
 The two superpositions therefore carry two independent abelian phases, and with them two independent charges, while the single mass parameter $m$ gives them equal mass. The source's interpretation is that Lanczos's "doubling" of the spin-$\tfrac12$ field was isospin in 1929, three decades early.
 
-The corpus's own position is not overturned by this, and it becomes sharper. The isospin of the doubled system is **not** the material sector's $\mathrm{SU}(2)$: it acts by *right* multiplication on the two biquaternions $\tilde Q_1$, $\tilde Q_2$ of the doubled field, whereas the rotation and gauge $\mathrm{SU}(2)$ of the previous section acts on the algebra's own module by left multiplication and commutator. The corpus's refusal to identify flavour isospin with that $\mathrm{SU}(2)$ therefore stands unchanged. What the doubled route shows is that the near-degeneracy need not be imported *if* the two particles are taken as the two superpositions of one Lanczos pair — at the price of doubling the field and of a mass parameter the algebra still does not fix. In the single-field equation used here, the pair must be inserted; that is the choice this article makes, and the doubling is the alternative.
+**The price of that reading.** The two phases are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde\Psi_p$ and $\tilde\Psi_n$. The first Lanczos equation then becomes $\tilde{\nabla}\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. The doubled system with $m\neq0$ is therefore invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass stand together only as a kinematic statement, which is the same phenomenon the charge section records: a mass term, being a link between the two values, breaks the relative phase.
+
+The corpus's own position is not overturned by this, and it becomes sharper. The isospin of the doubled system is **not** the material sector's $\mathrm{SU}(2)$: it acts by *right* multiplication on the two biquaternions $\tilde Q_1$, $\tilde Q_2$ of the doubled field, whereas the rotation and gauge $\mathrm{SU}(2)$ of the previous section acts on the algebra by left multiplication and commutator. The corpus's refusal to identify flavour isospin with that $\mathrm{SU}(2)$ therefore stands unchanged. What the doubled route shows is that the near-degeneracy need not be imported *if* the two particles are taken as the two superpositions of one Lanczos pair — at the price of doubling the field and of a mass parameter the algebra still does not fix. In the single-field equation used here, the pair must be inserted; that is the choice this article makes, and the doubling is the alternative.
 
 ## What the Framework Does Not Supply: Compositeness and Colour
 
 The proton is not an elementary field in nature; it is a bound state. Nothing in the biquaternion framework represents that, and the omission is not a gap with a known route.
 
-**No colour group.** The compact algebra available inside $\mathbb{B}$ is the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$, namely $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$, of real dimension $4$; a $\mathrm{SU}(3)$ of dimension $8$ does not embed in it. The matter side has the matching ceiling: $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, its unique simple module is $\mathbb{C}^2$, every $\mathbb{B}$-module is a direct sum of copies of it, and therefore every module has even complex dimension, so a three-dimensional colour module does not exist. (This was spot-checked: a minimal left ideal $\mathbb{B}\tilde\Pi_+$ has complex dimension $2$, and the anti-Hermitian $2\times2$ matrices span a real four-dimensional space.) The framework has no colour triplet and no gluon octet.
+**No colour group.** The compact algebra available inside $\mathbb{B}$ is the maximal compact subalgebra of $\mathrm{GL}(2,\mathbb{C})$, namely $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$, of real dimension $4$; a $\mathrm{SU}(3)$ of dimension $8$ does not embed in it. The matter side has the matching ceiling: $\mathbb{B}$ is simple, so every carrier is a sum of copies of the unique simple one, of complex dimension two, and therefore every carrier has even complex dimension, so a three-dimensional colour carrier does not exist. (This was spot-checked on the elements: the three units close under the commutator, $[\vec e_a,\vec e_b]$ lying in their own span, and with $ie_t$ that is the whole compact part, of real dimension four.) The framework has no colour triplet and no gluon octet.
 
 **No confinement.** There is no Wilson loop, no area law, no string tension, no mass gap, and no gauge-fixing principle in the series, and the QCD agenda classifies confinement as an obstacle with no route yet. The zero-divisor cone of $\mathbb{M}_-$ is not an area law.
 
-**No quark content.** Nothing derives a quark, a flavour, or a fractional charge. The identification "proton $=uud$" is standard physics, and the framework can only transcribe the phrase. Since the framework cannot even host a three-dimensional internal module, it cannot host the triplet in which a quark would sit.
+**No quark content.** Nothing derives a quark, a flavour, or a fractional charge. The identification "proton $=uud$" is standard physics, and the framework can only transcribe the phrase. Since the framework cannot even host a three-dimensional internal carrier, it cannot host the triplet in which a quark would sit.
 
 **No bound-state structure.** The framework has no two-body or many-body bound-state formalism on which a baryon could be built, and no action, measure or gauge-invariant regulator of the kind the QCD agenda names as prerequisites. The proton must therefore be represented as an *effective* elementary spin-$\tfrac12$ field, with all composite physics absorbed into imported parameters.
 
@@ -239,7 +217,7 @@ The consequence is that the proton's compositeness — the reason its mass is 93
 
 ## Spin, Statistics and the Magnetic Moment
 
-**Spin.** The spin-$\tfrac12$ representation content is derived conditionally, as in the first section: it follows from the module, not from any proton-specific structure. The spin-statistics theorem is transcribed rather than derived (*The Spin–Statistics Theorem in Biquaternionic Form*), but the framework does identify the half-integer representations as native to the module, on which a rotation by $2\pi$ acts as $-e_t$, whereas the adjoint action on $\mathbb{M}_-$, the carrier of integer spin, returns $+e_t$. The proton, placed in the module, is a fermion for exactly the same structural reason as the electron; the framework does not derive that this particular composite is a fermion.
+**Spin.** The spin-$\tfrac12$ content is derived conditionally, as in the first section: it follows from the algebra, not from any proton-specific structure. The spin-statistics theorem is transcribed rather than derived (*The Spin–Statistics Theorem in Biquaternionic Form*), but the framework does identify the half-integer weights as native to the algebra, on which a rotation by $2\pi$ acts by left multiplication as $-e_t$, whereas the conjugation action on $\mathbb{M}_-$, the carrier of integer spin, returns $+e_t$. The proton, written as an element, is a fermion for exactly the same structural reason as the electron; the framework does not derive that this particular composite is a fermion.
 
 **The magnetic moment.** Carrying the biquaternion Dirac equation to the non-relativistic regime produces the tree-level gyromagnetic factor $g=2$ for any structureless spin-$\tfrac12$ field with the inserted charge, exactly as for the electron (*The Electron in Biquaternionic Form*). Applied to the proton's effective field this gives a magnetic moment $\vec\mu_p=(e\,ϙ_p/m_p)\vec S$ with $ϙ_p=+1$, of one nuclear magneton $\mu_N=e\hbar/2m_p$ when $\vec S$ is aligned with the field. The measured proton moment is $2.7928\,\mu_N$, i.e. $g_p\approx5.586$. The deviation is *not* a small radiative correction of the kind the electron's $g-2$ is: it is a large strong-interaction and compositeness effect, produced by the quark and gluon dynamics of the bound state, and the framework supplies none of it. For the proton, therefore, even the tree-level value is not a prediction about the real object — it is the value the framework would assign to a fictitious elementary field of the same mass and charge.
 
@@ -249,12 +227,12 @@ The table sorts the proton's properties by the status they have in the framework
 
 | Property of the proton | Status in the framework | Where it comes from |
 |---|---|---|
-| Spin-$\tfrac12$ representation content | Represented (forced once modelled) | unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
-| Mass term is off-diagonal in chirality; real structure acts $+1/-1$ on $\mathbb{M}_\mp$ | Derived | linear chiral pair; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$; Weyl decomposition |
-| Vector-like charge operator $Ϙ=ϙI_4$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$ |
-| Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\psi^{\dagger}G_t\,G_\mu\psi$, with $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ the generator cell of the coordinate $x_\mu$ ($\nu(t)=x$, $\nu(k)=y$); $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$ |
-| Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathrm{SU}(2)$ generators have imaginary/half-integer spectra |
+| Spin-$\tfrac12$ content | Represented (forced once modelled) | the algebra's single simple carrier; the left multiplications act on each value with weights $\pm\tfrac12$ |
+| Spin states, observables, Born rule | Derived | the states of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
+| Mass term is off-diagonal in the two values; real structure acts $+1/-1$ on $\mathbb{M}_\mp$ | Derived | the linear pair of the two values; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$ |
+| Vector-like charge element $Ϙ=ϙ\,e_t$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$, from the covariance of the mass term |
+| Conserved current, an element of $\mathbb{M}_-$ | Quoted (framework) | the sesquilinear commutator of *Product and Form Conventions*, §*The Twelve Products and Their Names*: $\tilde J=i[\tilde\Psi^{*}(\tilde\nabla\tilde\Psi)-(\tilde\nabla\tilde\Psi^{*})\tilde\Psi]$ |
+| Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; the $\mathrm{SU}(2)$ generators have imaginary or half-integer values |
 | Charge value $ϙ_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
 | $\lvert ϙ_p\rvert=\lvert ϙ_e\rvert$, opposite signs | Outside | no framework structure; independent parameters |
 | Charge quantisation (integrality) | Outside | not derived in the framework |
@@ -262,14 +240,14 @@ The table sorts the proton's properties by the status they have in the framework
 | Compositeness; quark content $uud$; colour; confinement | Outside | standard QCD; no route in the framework |
 | Anomalous magnetic moment $g_p\approx5.586$ | Outside | strong-interaction / composite dynamics |
 | Baryon number | Outside | not constructed |
-| Conservation of the charge under the framework's own mass | Derived | linear chiral pair passes the continuous central phase; the real structure's separate pairing is the open interpretation |
+| Conservation of the charge under the framework's own mass | Derived | the mass term is the linear pair of the two values, through which the continuous central phase passes; the real structure's separate pairing is the open interpretation |
 | Empirical contact | Outside | no prediction distinguishing the framework from standard physics |
 
 ## Open Questions
 
 1. **Is the charge value derivable at all?** The framework's charge operator carries $+1$ for the proton and $0$ for the neutron, but no principle of the algebra selects those values. Is there a framework-internal quantisation condition — an anomaly, a topological constraint, or a compactness condition on the central $\mathrm{U}(1)$ — that would fix $ϙ$ to integers, or to the specific integer $+1$ for the proton? None is known, and none is proposed here.
 
-2. **Is there any relation between $ϙ_p$ and $ϙ_e$?** The measured equality $|ϙ_p|=|ϙ_e|$ and the opposite signs are not explained. In the framework the proton and electron are independent fields in the same module, with independent couplings; nothing ties them.
+2. **Is there any relation between $ϙ_p$ and $ϙ_e$?** The measured equality $|ϙ_p|=|ϙ_e|$ and the opposite signs are not explained. In the framework the proton and electron are independent elements of the same algebra, with independent couplings; nothing ties them.
 
 3. **Which generator, in the end?** This article shows that the electric charge must be the central $\mathrm{U}(1)$ generator, because the $\mathrm{SU}(2)$ generators and their Hermitian partners have imaginary and half-integer spectra. Is that identification forced, or could an enlarged carrier host a different Hermitian generator with integer spectrum that also plays the role of electric charge? The ceiling result of the QCD agenda suggests not within $\mathbb{B}$, but the enlarged-carrier question is open.
 
@@ -303,7 +281,7 @@ Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the module, the first and th
 
 The generator cells $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu$: $G_t=\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $G_k=\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The anticommutator of the notation table is therefore the Clifford relation below.
 
-**Chirality, three objects and one representative.** $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ *is* the chirality cell $\Gamma$ of the charge section, so the fifth cell and the fifth gamma are one object in two readings. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object: it is central, it belongs to the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}$, and it is not an element of $\mathbb{B}$. The chain is $\chi$ in the double, $\Gamma=\mathrm{diag}(-I_2,I_2)$ its representative on the module $\Delta$, and $\gamma_5$ that representative written as a cell.
+**Chirality, three objects and one representative.** $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ *is* the chirality cell $\Gamma$ of the charge section, so the fifth cell and the fifth gamma are one object in two readings. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object: it is central, it belongs to the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}$, and it is not an element of $\mathbb{B}$. The chain is $\chi$ in the double, $\Gamma=\mathrm{diag}(-I_2,I_2)$ its representative on the Dirac module, and $\gamma_5$ that representative written as a cell.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -345,71 +323,66 @@ With the summed index raised the weights become signs, $\gamma^\mu=-\varepsilon_
 
 ## Summary
 
-The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$ and on the module as the two-sided equation $(\mathbb{D}-m_p)\psi=0$. The framework makes three structural statements about it. The spin-$\tfrac12$ representation content follows from the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$; the mass term is the chirality-mixing linear pair of the two chiral halves; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$ on the Dirac module collapses to a multiple of the identity,
+The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, written in the algebra as the one-sided pair $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$ and as the single equation $(\mathbb{D}-m_p)\tilde\Psi=0$ with $\mathbb{D}^2=\Box$. The framework makes three structural statements about it. The spin-$\tfrac12$ content follows from the algebra's single class of simple carrier, on which the left multiplications act with weights $\pm\tfrac12$; the mass term is the linear pair of the two values of the field; and, being massive, the proton is forced by the mass selection rule $ϙ_L=ϙ_R$ to be vector-like, so the general charge element, which multiplies the L value by $ϙ_L$ and the R value by $ϙ_R$, collapses to the central element,
 
 $$
-\boxed{\;Ϙ=ϙ_p\,I_4\;},
+\boxed{\;Ϙ=ϙ_p\,e_t\;},
 $$
 
 the coupling sitting on the central element $ie_t\in\mathbb{M}_-$ and not on the compact $\mathrm{SU}(2)$.
 
-On the sharpest available test, the framework's charge operator gives $+1$ for the proton and $0$ for the neutron as exact eigenvalues: $Ϙ_p=I_4$, spectrum $\{+1\}$, and $Ϙ_n=0$, spectrum $\{0\}$, both Hermitian, both chirality-blind, both compatible with the mass selection rule. This was verified exactly in the faithful representation, together with the projector algebra and the selection rule on the vector-like and axial branches. But the *selection* of the values is not a framework result: $ϙ$ is a free parameter, nothing fixes it to $+1$ or to an integer, nothing relates $ϙ_p$ to the electron's charge, and the free equation contains no charge at all. The test is therefore passed as a statement about the operator's spectrum and failed as a derivation — a negative result, stated plainly.
+On the sharpest available test, the framework's charge gives $+1$ for the proton and $0$ for the neutron as exact values: $Ϙ_p=+e_t$ and $Ϙ_n=0$, both central elements, both blind to the chirality, both compatible with the mass selection rule. This was verified on a hundred generic elements, together with the covariance of the free pair on the vector-like branch and its failure on the axial one. But the *selection* of the values is not a framework result: $ϙ$ is a free parameter, nothing fixes it to $+1$ or to an integer, nothing relates $ϙ_p$ to the electron's charge, and the free equation contains no charge at all. The test is therefore passed as a statement about the operator's value and failed as a derivation — a negative result, stated plainly.
 
-It was also shown that the electric charge cannot be carried by the non-abelian factor: the $\mathrm{SU}(2)$ generators $T_a=\tfrac12e_a$ have purely imaginary spectra $\pm\tfrac i2$, and their Hermitian partners $iT_a$ have half-integer spectra $\pm\tfrac12$, so neither can be the proton's integer electric charge. The charge lives on the central line $\mathbb{C}_{\mathbb{B}}$. This settles the "which generator" question within the present construction.
+It was also shown that the electric charge cannot be carried by the non-abelian factor: the $\mathrm{SU}(2)$ generators $T_a=\tfrac12\vec e_a$ have square $-\tfrac14e_t$ and purely imaginary values $\pm\tfrac i2$, and their Hermitian partners $iT_a$ have square $+\tfrac14e_t$ and half-integer values $\pm\tfrac12$, so neither can be the proton's integer electric charge. The charge lives on the central line $\mathbb{C}_{\mathbb{B}}$. This settles the "which generator" question within the present construction.
 
-What the framework does not supply is everything that makes the proton a proton. There is no colour group — the compact algebra inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$, of real dimension $4$, and every $\mathbb{B}$-module has even complex dimension, so no colour triplet exists. There is no confinement mechanism, no colour representation, no quark content, no bound-state formalism, and no baryon number. The proton's mass $938.272$ MeV, its charge $+1$, the equality of its charge magnitude with the electron's, the integrality of that charge, its quark content, and its anomalous magnetic moment $g_p\approx5.586$ are all imports from standard physics. The framework represents an effective elementary proton; it does not derive one, and it cannot explain why the effective object exists.
+What the framework does not supply is everything that makes the proton a proton. There is no colour group — the compact algebra inside $\mathbb{B}$ is at most $\mathfrak{u}(2)$, of real dimension $4$, and every carrier of $\mathbb{B}$ has even complex dimension, so no colour triplet exists. There is no confinement mechanism, no colour carrier, no quark content, no bound-state formalism, and no baryon number. The proton's mass $938.272$ MeV, its charge $+1$, the equality of its charge magnitude with the electron's, the integrality of that charge, its quark content, and its anomalous magnetic moment $g_p\approx5.586$ are all imports from standard physics. The framework represents an effective elementary proton; it does not derive one, and it cannot explain why the effective object exists.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
+| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, simple, of complex dimension four |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
+| $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian (electric-charge) factor |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator), acting on the left |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
-| $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Faithful matrix representation used in the checks |
-| $S=\mathbb{C}^2=(\tfrac12,0)$ | Unique simple left $\mathbb{B}$-module (left-handed Weyl) |
-| $S^{\mathrm{c}}=(0,\tfrac12)$ | Conjugate module, right-handed Weyl; $S$ with the conjugate scalar action |
-| $\Delta=S\oplus S^{\mathrm{c}}$ | Dirac spinor module, $\dim_\mathbb{C}\Delta=4$ |
-| $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate |
+| $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R$ | The field, an element of $\mathbb{B}$; $\tilde{\Psi}_L$ the value L, $\tilde{\Psi}_R$ the value R, at the axis $\vec e_z$ |
+| $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$ | The algebra's real structure |
+| $\tilde\Pi_\pm(\vec e_z)$ | The two chirality states at the axis; $\tilde\Pi_+$ the L state, $\tilde\Pi_-$ the R state |
+| $Ϙ=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$ | The charge element, in $\mathbb{M}_+$; the charge is the right multiplication by it |
+| $D_\mu\tilde\Psi=\partial\tilde\Psi/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu\tilde\PsiϘ$ | Covariant derivative of the chiral charge |
+| $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); a massive field forces $ϙ_L=ϙ_R$ |
+| $Ϙ=ϙ\,e_t$, $ϙ_p=+1$ | Vector-like charge element; the proton's value (inserted, not derived) |
 | $m_p$ | Proton mass (a parameter) |
 | $\tilde{P}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}\tilde{P}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
-| $L_{a}R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms, $L_aR_b\psi=a\psi b$ |
-| $\mathbb{D}\psi=(\tilde{\nabla}\psi_R,\tilde{\nabla}^{\natural}\psi_L)$, $\mathbb{D}^2=\Box I_4$ | Pair operator of the two-sided equation $(\mathbb{D}-m_p)\psi=0$ |
-| $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Chirality cell, $\Gamma\psi=-i\,e_t\psi\vec e_z$, $\Gamma^2=I_4$, $\Gamma=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis |
-| $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Generator cell of $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $\varepsilon=(1,-1,-1,-1)$ |
-| $P_L=\tfrac12(I_4-\Gamma)$, $P_R=\tfrac12(I_4+\Gamma)$ | Chiral projectors |
-| $\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint of the module spinor $\psi=\psi_L+\psi_R$; $G_t$ is what pairs the two halves |
-| $Ϙ=ϙ_LP_L+ϙ_RP_R$ | Charge operator on $\Delta$ |
-| $ϙ_L, ϙ_R$ | Chiral couplings (real parameters); massive field forces $ϙ_L=ϙ_R$ |
-| $ϙ_p=+1$ | Proton charge eigenvalue (inserted, not derived) |
-| $ϙ_L=ϙ_R \Rightarrow Ϙ=ϙI_4$ | Vector-like specialization forced by the mass selection rule |
-| $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ |
-| $\mathsf{M}_2(T_a)=-\tfrac i2\sigma_a$, $\mathsf{M}_2(iT_a)=\tfrac12\sigma_a$ | Imaginary and half-integer spectra; neither is the electric charge |
+| $\mathbb{D}$, $\mathbb{D}^2=\Box$ | The pair operator of the two-sided equation $(\mathbb{D}-m_p)\tilde\Psi=0$; it carries the L value by $\tilde\nabla^{\natural}$ and the R value by $\tilde\nabla$ |
+| $\Gamma=-iR_{\vec e_z}$ | The chirality cell, the cell that reads the two values; the legacy section writes it $\gamma_5$ |
+| $\tilde J=i[\tilde\Psi^{*}(\tilde\nabla\tilde\Psi)-(\tilde\nabla\tilde\Psi^{*})\tilde\Psi]$ | The sesquilinear current of the field, an element of $\mathbb{M}_-$ (*Product and Form Conventions*) |
+| $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
+| $iT_a=\tfrac12 i e_a\in\mathbb{M}_+$ | $(iT_a)^2=+\tfrac14e_t$, values $\pm\tfrac12$; neither is the electric charge |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Inherited informational trace reading |
+| $G_N=\sigma\exp(i\alpha)+\bar\sigma\exp(i\beta)$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
-- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the charge operator $Ϙ=ϙ_LP_L+ϙ_RP_R$ on the Dirac module, the mass selection rule $ϙ_L=ϙ_R$, and the real-structure question that the separate pairing poses.
-- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the biquaternion Dirac equation in its linear chiral-pair form, the spinor module, the mass term, and the mass-shell relation used here.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the charge on each value of the field, the mass selection rule $ϙ_L=ϙ_R$, and the real-structure question that the separate pairing poses.
+- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the biquaternion Dirac equation in its linear chiral-pair form, the mass term, and the mass-shell relation used here.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the $\mathrm{SU}(2)$ generators $T_a=\tfrac12e_a$, their spectra, and the compact factor of the material sector whose distinction from the charge generator this article checks.
 - [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) — the ceiling on the compact gauge algebra, the absence of a colour triplet and of confinement, and the three-way classification of what the framework reaches and what it does not.
 - [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html) — the sibling accounting, in which charge and mass are likewise parameters, and the statement that nothing in the algebra fixes $|ϙ_e|=|ϙ_p|$.
-- [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html) — half-integer representations as native to the module, and the sense in which the spin–statistics theorem is transcribed rather than derived.
-- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the module $\Delta=S\oplus S^{\mathrm{c}}$ and the Lorentz action that fixes the spin-$\tfrac12$ representation content.
+- [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html) — half-integer weights as native to the algebra, and the sense in which the spin–statistics theorem is transcribed rather than derived.
+- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the two values of the field and the Lorentz action that fixes the spin-$\tfrac12$ content.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge group as the $*$-unitary part of the centre, on which the electric-charge identification rests.
-- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_\mu=\tfrac\hbar2 i\vec e_\mu$ and the idempotent state structure used implicitly here.
+- [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_\mu=\tfrac\hbar2 i\vec e_\mu$ and the state structure used implicitly here.
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the real structure and the Majorana-versus-Dirac interpretation that bears on charge conservation.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the two sectors, their bases and the normalised Hermitian form, with its trace reading, inherited unchanged.
-- [Conventions of the Operators and the Calculus](operator-and-calculus-conventions.html) — the pair operator $\mathbb{D}$, the square $\mathbb{D}^2=\Box$ written here as $\Box I_4$, and the one-operator reading of the massive equation, taken over unchanged.
+- [Conventions of the Operators and the Calculus](operator-and-calculus-conventions.html) — the pair operator $\mathbb{D}$, the square $\mathbb{D}^2=\Box$, and the one-operator reading of the massive equation, taken over unchanged.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the conjugations and the sector split in which the whole construction is set.
 - C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system whose doubling is the isospin of the section *The Isospin Partner, and Why It Is Not in This Equation*.
-- F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, and "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, for the proton and neutron as the two idempotent superpositions of Lanczos's doubled system.
+- F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, and "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, for the proton and neutron as the two superpositions of Lanczos's doubled system.
 - K. Nishijima, "On the theory of leptons," *Nuovo Cimento* **5** (1957) 1349–1354, for the two-parameter group $G_N=\sigma \exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ that leaves the proton and neutron superpositions intact.
 - A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the interpretation of Lanczos's doubling as isospin and for the explicit neutron construction $N=(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma)i\vec{\tau}$.

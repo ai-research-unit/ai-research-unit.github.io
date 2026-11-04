@@ -120,15 +120,13 @@ The model of the next subsection does not use colour at all. It uses the framewo
 
 ### The Restricted State and the Vanishing Relative Entropy
 
-The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let the charge along the axis $\vec u$ be the Hermitian element $\vec u\cdot\vec S=u_k\tilde S_k=\tfrac12\,i\,u_k\vec e_k$ of $\mathbb{M}_+$, in the units $\hbar=c=1$ used throughout, so that the charge rotation is rotor conjugation,
+The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let the charge along the axis $\vec u$ be the Hermitian element $\vec u\cdot\vec S$ of $\mathbb{M}_+$, the generator of *Special Element Conventions*, in the units $\hbar=c=1$ used throughout, so that the charge rotation is rotor conjugation,
 
 $$
 \tilde{Ϛ}\;\longmapsto\;U\tilde{Ϛ}\,U^{*},
-\qquad
-U=\exp\!\left(-i\theta\,\vec u\cdot\vec S\right)=\exp\!\left(\frac{\theta}{2}\,u_k\vec e_k\right),
 $$
 
-where the second form uses $i^2=-1$: the two imaginary factors multiply to $-1$, and $U=\cos(\theta/2)+\sin(\theta/2)\,u_k\vec e_k$ is the corpus's rotation rotor, a real unit quaternion with $U^{*}=U^{-1}$. The **accessible** state is the restriction of $\tilde{Ϛ}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
+with $U$ the corpus's rotation rotor about $\vec u$ by $\theta$, a real unit quaternion with $U^{*}=U^{-1}$. The **accessible** state is the restriction of $\tilde{Ϛ}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
 
 $$
 \vec r \;\longmapsto\; (\vec r\cdot\vec u)\,\vec u,
@@ -140,7 +138,7 @@ $$
 \boxed{\;\vec r\cdot\vec u = (\mathsf{R}_{\vec u}(\theta)\vec r)\cdot\vec u\;},
 $$
 
-because the rotation of the Bloch vector induced by conjugation with $U$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. The relative entropy is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=\mathrm{Tr}\,\tilde{Ϛ}_1(\log\tilde{Ϛ}_1-\log\tilde{Ϛ}_2)$, and it was evaluated on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}\|\tilde{Ϛ}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly, both $(0,0,0.4)$.
+because the rotation $\mathsf{R}_{\vec u}(\theta)$ of the Bloch vector induced by conjugation with $U$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. The relative entropy is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=\mathrm{Tr}\,\tilde{Ϛ}_1(\log\tilde{Ϛ}_1-\log\tilde{Ϛ}_2)$, and it was evaluated on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}\|\tilde{Ϛ}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly, both $(0,0,0.4)$.
 
 The lesson is the article's thesis in its sharpest form. A rotation by the framework's charge is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the change is invisible to the accessible algebra, and the accessible algebra is the whole of what survives to asymptotic observation. The information lost is exactly the component of the state along the unobservable charge directions, and no re-description recovers it.
 
@@ -252,7 +250,7 @@ $$
 \qquad \dim_\mathbb{R} = 4 ,
 $$
 
-and the matter side has the matching ceiling: $\mathbb{B}\cong M_2(\mathbb{C})$ is simple with unique simple module $\mathbb{C}^2$, so every $\mathbb{B}$-module has complex dimension $2k$ and a three-dimensional colour module does not exist. No $\mathrm{SU}(3)$ subgroup and no colour triplet are available on the present construction. The consequence for this article is direct: the partonic information whose loss confinement describes is not present in the framework at all, so the framework's own loss statement is at best the corresponding statement for a $\mathrm{U}(2)$ theory, which is not QCD. The area law, the string tension, the flux tube, the mass gap, and the colour-singlet structure are imports.
+and the matter side has the matching ceiling: $\mathbb{B}$ is simple, with a unique simple module of complex dimension two, so every $\mathbb{B}$-module has complex dimension $2k$ and a three-dimensional colour module does not exist. No $\mathrm{SU}(3)$ subgroup and no colour triplet are available on the present construction. The consequence for this article is direct: the partonic information whose loss confinement describes is not present in the framework at all, so the framework's own loss statement is at best the corresponding statement for a $\mathrm{U}(2)$ theory, which is not QCD. The area law, the string tension, the flux tube, the mass gap, and the colour-singlet structure are imports.
 
 This is exactly the position the QCD agenda records, and the information-theoretic interpretation does not change it. It sharpens it: the loss of partonic information is a statement about which labels the asymptotic algebra contains, and the framework's asymptotic algebra — whatever it is — is built on a carrier that has no colour labels to lose.
 
@@ -306,7 +304,7 @@ $$
 \Phi(t',\vec q)=\Phi_\omega(\vec q)\,e^{\,i\omega t'},
 $$
 
-obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector: there $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t'$, so $i\partial/\partial t'=-\partial/\partial Q_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial Q_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{\Phi_\omega e^{i\omega t'}}=\overline{\Phi_\omega}\,e^{-i\omega t'}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
+obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector, where the time derivative carries the $i$, so $i\partial/\partial t'=-\partial/\partial Q_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial Q_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{\Phi_\omega e^{i\omega t'}}=\overline{\Phi_\omega}\,e^{-i\omega t'}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
 
 The confinement of the field to $\Omega$ is a **linear boundary condition**: a fixed value for the field's direction along the outward normal, which forbids the flow of the particle through the surface. Translated from the source's frame, the condition is the action of the element $\sum_k u_k\vec e_k$,
 
@@ -357,7 +355,7 @@ $$
 \boxed{\;\langle \alpha\rangle_{\natural} = \alpha_x^{2}+\alpha_y^{2} = (-i\omega)^2+(-m)^2 = -\omega^2+m^2 = m^2 - \omega^2\;},
 $$
 
-where $(-i\omega)^2=i^2\omega^2=-\omega^2$ uses $i^2=-1$. For an element with no scalar part the algebra square is minus the natural norm, since the cross terms of $Q=\sum_k q_k\vec e_k$ cancel in pairs and leave $Q^2=-\langle Q\rangle_{\natural}e_t$; hence
+where $(-i\omega)^2=i^2\omega^2=-\omega^2$ uses $i^2=-1$. For an element with no scalar part the algebra square is minus the natural norm, $Q^2=-\langle Q\rangle_{\natural}e_t$, as *Product and Form Conventions* records; hence
 
 $$
 \alpha^{2}=(\omega^2-m^2)e_t .
@@ -455,7 +453,7 @@ What the framework cannot supply is the colour theory itself. The compact algebr
 
 The two confinement pictures must be kept apart, and the framework houses one of them. The non-perturbative gauge-dynamics picture is the one the QCD agenda rules out: a loop expectation value, an area law, a string tension and a mass gap, none of which the framework can derive.
 
-The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose chirality is the right action $\tilde\Psi\mapsto-i\tilde\Psi\vec e_z$ and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\bigl(\sum_k u_k\vec e_k\bigr)\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
+The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose subscripts $L$ and $R$ are the two values of the chirality and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\bigl(\sum_k u_k\vec e_k\bigr)\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
 
 That condition is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995). A real-linear bijection carries the source's four-component field to a biquaternion; the mass term carries the componentwise complex conjugation $\overline{\cdot}$; factoring the equation removes it; the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$; the bag condition becomes the boundary condition $S^-\tilde{p}=0$; and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$.
 

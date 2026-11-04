@@ -16,21 +16,7 @@ $$
 
 together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$. This article takes the connection $\tilde{A}$ and the covariant derivative $D$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
 
-**Notation, once.** The derivative letters are those of *Operator and Calculus Conventions*: the biquaternionic gradient, its quaternion conjugate, and the d'Alembertian the two compose.
-
-$$
-\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
-\qquad
-\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
-$$
-
-$$
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
-\qquad
-\Delta_Q=\sum_k\frac{\partial^2}{\partial Q_k^2},
-$$
-
-with $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$ on the material sector. Every derivative below is one of these three, or the covariant derivative $D$ built on them and its quaternion conjugate $\bar D$; no other letter names a derivative.
+**Notation, once.** The derivative letters are those of *Operator and Calculus Conventions*, §*The Gradient*: the biquaternionic gradient $\tilde\nabla$, its quaternion conjugate $\tilde\nabla^{\natural}$, the d'Alembertian $\Box$ the two compose, and the Laplacian $\Delta_Q$ in the three vector coordinates, read on the material sector as that section reads them. This article uses the four glyphs as the convention fixes them and adds no derivative of its own: every derivative below is one of them, or the covariant derivative $D$ built on them and its quaternion conjugate $\bar D$. No other letter names a derivative.
 
 The article develops the two objects in four directions that the gauge principle article did not pursue.
 
@@ -58,7 +44,7 @@ D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}
   =: \sum_{\mu\in\{t,x,y,z\}} e_\mu\, D_\mu,
 $$
 
-where $\partial/\partial Q_t = \partial/\partial(ict')$ and $\partial/\partial Q_k = \partial/\partial x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,
+where the coordinate is that of the material frame of *Frame Conventions*, $Q_t = ict'$ and $Q_k = x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,
 
 $$
 D\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi},
@@ -78,7 +64,7 @@ The following table collects the components and their meanings.
 
 | Object | Expression | Role |
 |---|---|---|
-| Gradient | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$ | Ordinary derivative |
+| Gradient | $\tilde{\nabla}$ | The ordinary derivative of *Operator and Calculus Conventions* |
 | Connection | $\tilde{A} = \sum_\mu A_\mu e_\mu \in \mathbb{M}_-$ | Compensating field |
 | Covariant derivative | $D = \sum_\mu e_\mu D_\mu$ | $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ |
 | Time component $\mu = t$ | $D_t = \partial/\partial Q_t + \frac{iϙ}{\hbar}A_t = \partial/\partial Q_t - \frac{ϙ\phi}{\hbar c}$ | $A_t = i\phi/c$ |
@@ -248,11 +234,9 @@ Define the **quaternion conjugate** of the covariant derivative by conjugating t
 
 $$
 \bar D := \sum_\mu \bar{e}_\mu D_\mu = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural},
-\qquad
-\tilde{A}^{\natural} = A_t e_t - A_x \vec e_x - A_y \vec e_y - A_z \vec e_z .
 $$
 
-Here $\tilde{A}^{\natural} \neq -\tilde{A}$ in general; quaternion conjugation is not charge conjugation, and $\bar D$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
+the conjugation $\natural$ being that of *Product and Form Conventions*, applied to the basis elements and to the coefficients alike. Here $\tilde{A}^{\natural} \neq -\tilde{A}$ in general; quaternion conjugation is not charge conjugation, and $\bar D$ is the quaternion conjugate of the operator, not the operator for the opposite charge. With this definition the exact operator identity
 
 $$
 \boxed{\;\bar D D = \sum_{\mu\in\{t,x,y,z\}} D_\mu^{2} + \frac{iϙ}{\hbar}\tilde{F}\;}
@@ -299,7 +283,7 @@ The structural similarity to the identity that the square of a Dirac operator is
 
 One equation carries the mass under these conventions, and it is the chiral pair.
 
-**The chiral pair** on the algebra. Both members act by left multiplication, the second is the quaternion conjugate of the first, and the mass couples the two chiral halves:
+**The chiral pair** on the algebra. Both members act by left multiplication, the second is the quaternion conjugate of the first, and the mass couples the $L$ part to the $R$ part:
 
 $$
 D\tilde\Psi_R = m\tilde\Psi_L,
@@ -307,19 +291,17 @@ D\tilde\Psi_R = m\tilde\Psi_L,
 \bar D\tilde\Psi_L = m\tilde\Psi_R .
 $$
 
-Squaring its first member with the second gives the boxed identity on the right-handed half, $\bar D D\tilde\Psi_R = m^2\tilde\Psi_R$. The second member is not a new equation: it is the first written on the conjugate field, $\natural$ is what separates them, and both act from the left.
+Squaring its first member with the second gives the boxed identity on the $R$ part, $\bar D D\tilde\Psi_R = m^2\tilde\Psi_R$. The second member is not a new equation: it is the first written on the conjugate field, $\natural$ is what separates them, and both act from the left.
 
 **Why the mass couples two fields.** A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla\tilde\Psi = m\tilde\Psi$ and apply $\tilde\nabla^{\natural}$: the result is $\Box\tilde\Psi = m\,\tilde\nabla^{\natural}\tilde\Psi$, an equation in two different objects, and nothing reduces it to $\Box\tilde\Psi = m^2\tilde\Psi$, because $\tilde\nabla^{\natural}\tilde\Psi = m\tilde\Psi$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_k\vec e_k\,\partial/\partial Q_k\tilde\Psi = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $\bar D$ to $D\tilde\Psi_R = m\tilde\Psi_L$ returns $\bar D D\tilde\Psi_R = m\bar D\tilde\Psi_L = m^2\tilde\Psi_R$, which is the boxed identity.
 
-The square of the gradient, the operator left when the connection is switched off, is not scalar, and it is not $\Box$. On a scalar function,
+The square of the gradient, the operator left when the connection is switched off, is not scalar, and it is not $\Box$. On a scalar function it reads
 
 $$
 \tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\,\frac{\partial^2}{\partial Q_t\partial Q_k},
-\qquad
-\Box=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
 $$
 
-The identity holds with residual $0$ on random polynomial scalar functions. The Laplacian enters with opposite signs because the spatial legs of $\tilde\nabla$ square to $-e_t$ while $\bar e_\mu e_\mu = e_t$ for every $\mu$, and the mixed derivatives leave a vector part wherever they do not vanish. Writing $\tilde\nabla^2 = \Box$ would therefore be wrong by $2\Delta_Q$ in the scalar part and by that vector part.
+which is $\Box$ with the sign of $\Delta_Q$ reversed and a vector part added. The expression is derived here from the squares of the units, and it was checked with residual $0$ on random polynomial scalar functions. The Laplacian enters with opposite signs because the spatial legs of $\tilde\nabla$ square to $-e_t$ while $\bar e_\mu e_\mu = e_t$ for every $\mu$, and the mixed derivatives leave a vector part wherever they do not vanish. Writing $\tilde\nabla^2 = \Box$ would therefore be wrong by $2\Delta_Q$ in the scalar part and by that vector part.
 
 **The minimal coupling** replaces $\tilde\nabla$ by $D$ and $\tilde\nabla^{\natural}$ by $\bar D$ in the pair, which is the coupled pair of *Gauge Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_\mu$ are central and pass through the units.
 
@@ -355,11 +337,11 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 1. **The covariant wave operator for a charged scalar.** Does the framework use $\mathrm{Sc}(\bar D D) = \sum_\mu D_\mu^2$ as the covariant d'Alembertian for a scalar, or must a charged scalar be a general biquaternion with vector components induced by the curvature? The two interpretations differ by the term $\frac{iϙ}{\hbar}\tilde{F}\phi$, which is nonzero wherever the field strength is.
 
-2. **The non-abelian extension.** The commutator of covariant derivatives acquires $[A_\mu,A_\nu]$ when the connection is $\mathbb{B}$-valued, and the algebra already contains the required non-commutativity. What is not derived is a reality and tracelessness condition that would select a compact gauge algebra; the commutator algebra of $\mathbb{B} \cong M_2(\mathbb{C})$ is $\mathfrak{gl}(2,\mathbb{C})$, not compact. The reality conditions natural in the biquaternion framework, and which simple gauge algebras they admit, are left to the planned companions on non-abelian fields and Yang–Mills.
+2. **The non-abelian extension.** The commutator of covariant derivatives acquires $[A_\mu,A_\nu]$ when the connection is $\mathbb{B}$-valued, and the algebra already contains the required non-commutativity. What is not derived is a reality and tracelessness condition that would select a compact gauge algebra; the commutator algebra of $\mathbb{B}$ is $\mathfrak{gl}(2,\mathbb{C})$, not compact. The reality conditions natural in the biquaternion framework, and which simple gauge algebras they admit, are left to the planned companions on non-abelian fields and Yang–Mills.
 
-3. **The matter representation.** The covariant derivative acts by left multiplication, and in the abelian case left and right agree. For the charged massive field the parent's linear chiral pair is written with the left action, which makes the left action the natural one there. For a non-abelian connection the two differ, and the representation carried by the matter field must be specified; what fixes it for a general matter field is open, and the chiral-fermion article's module formulation and the minimal-coupling article's left/right analysis are the concrete settings in which the question is posed.
+3. **The matter representation.** The covariant derivative acts by left multiplication, and in the abelian case left and right agree. For the charged massive field the parent's linear chiral pair is written with the left action, which makes the left action the natural one there. For a non-abelian connection the two differ, and the representation carried by the matter field must be specified; what fixes it for a general matter field is open, and the chiral-fermion article's treatment of the two values of the subscript and the minimal-coupling article's left/right analysis are the concrete settings in which the question is posed.
 
-4. **Dynamical content of the covariant square.** The curvature term $\frac{iϙ}{\hbar}\tilde{F}$ in $\bar D D$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a Pauli-type coupling — or is it a rewriting of the commutator identity with no independent consequence?
+4. **Dynamical content of the covariant square.** The curvature term $\frac{iϙ}{\hbar}\tilde{F}$ in $\bar D D$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a magnetic-moment coupling — or is it a rewriting of the commutator identity with no independent consequence?
 
 5. **The one-form and the holonomy.** The connection one-form $\sum_\mu A_\mu\,dx_\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $ict'$ convention in disguise? No answer is offered here.
 
@@ -397,7 +379,7 @@ The identity is the square of the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
+| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
@@ -417,7 +399,7 @@ The identity is the square of the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $
 | $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A} = \sum_\mu e_\mu D_\mu$ | Covariant derivative |
 | $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = \partial/\partial(ict')$ |
 | $\bar D = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ | Quaternion conjugate of $D$ |
-| $\tilde{A}^{\natural} = A_t e_t - \sum_{k=x,y,z} A_k\vec e_k$ | Quaternion conjugate of the connection |
+| $\tilde{A}^{\natural}$ | Quaternion conjugate of the connection, by *Product and Form Conventions* |
 | $[D_\mu, f] = \partial/\partial Q_\mu f$ | Derivation property |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S_2 = S - \Box\Gamma$ | Gauge scalar; pure gauge |
 | $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, gauge invariant |
@@ -437,7 +419,7 @@ The identity is the square of the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the massless field equation $\tilde{\nabla}\tilde{\Psi} = 0$ and the minimal-coupling question.
 - [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) — the coupled Dirac equation, the left/right matter-representation question, and the companion that names the covariant-derivative article.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$ whose covariantization is the gap discussed here.
-- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative on the spinor module and the charge-operator representation.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the covariant derivative read on the two values of the subscript, and the charge-operator representation.
 - [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which bounds the gauge orbit treated here.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the sector decomposition, the four-vectors, and the trace formula.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article, and the record of the Lorentz-gauging / Euler–Lagrange ambiguity.

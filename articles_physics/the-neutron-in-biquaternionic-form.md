@@ -36,7 +36,7 @@ with $m_n$ the neutron mass. The other, Kravchenko's **two-sided equation**, is 
 **Where the near-degeneracy does live, and its price.** The single-field equation of this article has no partner inside it. The doubled Lanczos system does. The companion article *The Proton in Biquaternionic Form* records Gürsey's construction in the section *The Isospin Partner, and Why It Is Not in This Equation*: from the Lanczos pair $\tilde\nabla\tilde Q_1=m\tilde Q_2$, $\tilde\nabla\tilde Q_2=m\tilde Q_1$, one forms the two superpositions
 
 $$
-D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad N=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau},
+\tilde\Psi_p=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad \tilde\Psi_n=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau},
 $$
 
 with $\sigma=\tilde\Pi_+(\vec\nu)$ and $\bar\sigma=\tilde\Pi_-(\vec\nu)=e_t-\tilde\Pi_+(\vec\nu)$ the two complementary states along the unit direction $\vec\nu$, of zero product, $\sigma\bar\sigma=0$, and $\vec{\tau}$ a unit direction orthogonal to $\vec{\nu}$.
@@ -44,14 +44,14 @@ with $\sigma=\tilde\Pi_+(\vec\nu)$ and $\bar\sigma=\tilde\Pi_-(\vec\nu)=e_t-\til
 The group that preserves both forms is Nishijima's two-parameter group $G_N=\sigma\exp(i\alpha)+\bar\sigma\exp(i\beta)$, acting by right multiplication. Because the two states are complementary and of zero product, each term picks up its own phase and the other term dies,
 
 $$
-D\,G_N=e^{i\alpha}\tilde Q_1\sigma+e^{i\beta}\tilde Q_2^{*}\bar{\sigma},
+\tilde\Psi_p\,G_N=e^{i\alpha}\tilde Q_1\sigma+e^{i\beta}\tilde Q_2^{*}\bar{\sigma},
 \qquad
-\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)G_N=e^{i\beta}\tilde Q_1\bar{\sigma}-e^{i\alpha}\tilde Q_2^{*}\sigma ,
+\tilde\Psi_n\,G_N=e^{i\beta}\tilde Q_1\bar{\sigma}-e^{i\alpha}\tilde Q_2^{*}\sigma ,
 $$
 
-so the bracket of $N$ is preserved up to the same two phases before the trailing $i\vec{\tau}$ is applied. Equivalently, $\exp(-\vec{\nu}\alpha)\sigma=\sigma\exp(i\alpha)$ and $\exp(+\vec{\nu}\beta)\bar{\sigma}=\bar{\sigma}\exp(i\beta)$, since $\vec{\nu}^{2}=-e_t$ gives $\exp(\pm\vec{\nu}\theta)=\cos\theta\pm\vec{\nu}\sin\theta$. Each of the two states therefore carries its own abelian phase, and with it its own charge, while the form of both superpositions is unchanged.
+so the second superposition is preserved up to the same two phases before the trailing $i\vec{\tau}$ is applied. Equivalently, $\exp(-\vec{\nu}\alpha)\sigma=\sigma\exp(i\alpha)$ and $\exp(+\vec{\nu}\beta)\bar{\sigma}=\bar{\sigma}\exp(i\beta)$, since $\vec{\nu}^{2}=-e_t$ gives $\exp(\pm\vec{\nu}\theta)=\cos\theta\pm\vec{\nu}\sin\theta$. Each of the two states therefore carries its own abelian phase, and with it its own charge, while the form of both superpositions is unchanged.
 
-A price is paid. The two parameters are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $D$ and $N$. The first Lanczos equation then becomes $\tilde\nabla\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. So the doubled system with $m\neq0$ is invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass therefore stand together only as a kinematic statement, which is the same phenomenon the charge section records below: a mass term, being a link between the two values, breaks the relative phase.
+A price is paid. The two parameters are independent on the superpositions, but the common mass links the two Lanczos fields. Read on those fields, the re-phasing is $\tilde Q_1\mapsto e^{i\alpha}\tilde Q_1$ and $\tilde Q_2\mapsto e^{-i\beta}\tilde Q_2$, the minus sign coming from the conjugation in $\tilde\Psi_p$ and $\tilde\Psi_n$. The first Lanczos equation then becomes $\tilde\nabla\bigl(e^{i\alpha}\tilde Q_1\bigr)=m\,e^{-i\beta}\tilde Q_2$, which is the original equation only when $\alpha+\beta=0$. So the doubled system with $m\neq0$ is invariant on that one line of the $(\alpha,\beta)$ plane, and the orthogonal combination is a symmetry of the superpositions' *form* alone. Two independent phases and one common mass therefore stand together only as a kinematic statement, which is the same phenomenon the charge section records below: a mass term, being a link between the two values, breaks the relative phase.
 
 Two qualifications keep this from overturning the paragraph above. First, the isospin of that construction acts by **right** multiplication on $\tilde Q_1$, $\tilde Q_2$ of the doubled field, not by the left multiplication and commutator of the material sector's $\mathrm{SU}(2)$, so the two groups remain different objects. Second, the route doubles the field and still does not fix $m$. The precise statement is that the near-degeneracy is an **import in this equation** and a **structural feature of the doubled one**: this article uses the single-field equation, and that choice is why $m_n$ is a parameter here.
 
@@ -67,7 +67,7 @@ $$
 \Bigl(i\frac{\partial}{\partial t'}+\nabla\Bigr)F-m_n\,i\,\bar{F}\,\vec e_z=0,
 $$
 
-with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-\tilde\nabla^{\natural}$, so the equation is $\tilde\nabla^{\natural}F=-m_n i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde\Psi_L=F$ and $\tilde\Psi_R=-i\bar F\vec e_z$. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
+with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-\tilde\nabla^{\natural}$, so the equation is $\tilde\nabla^{\natural}F=-m_n i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde\Psi_L=F$ and $\tilde\Psi_R=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
@@ -88,13 +88,15 @@ $$
 \tilde\Psi_L\mapsto ϙ_L\tilde\Psi_L,\qquad \tilde\Psi_R\mapsto ϙ_R\tilde\Psi_R,
 $$
 
-with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix: they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$. The two rules are one right multiplication, $\tilde\Psi\mapsto\tilde\Psi b$, by the element
+with independent chirality charges $ϙ_L,ϙ_R$ that the algebra does not fix: they are parameters, and the bare Dirac mass is gauge invariant if and only if $ϙ_L=ϙ_R$.
+
+**The two rules are one right multiplication.** The action is $\tilde\Psi\mapsto\tilde\Psi b$, by the element
 
 $$
 b \;=\; \tfrac{ϙ_L+ϙ_R}{2}\,e_t+\tfrac{i}{2}\left(ϙ_L-ϙ_R\right)\vec e_z \;\in\; \mathbb{M}_+ ,
 $$
 
-a derived form, $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$ in the two states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
+a derived form: $b=ϙ_L\tilde\Pi_+(\vec e_z)+ϙ_R\tilde\Pi_-(\vec e_z)$, the two chirality states at the axis of the previous section. The element $b$ is Hermitian; it is central only in the vector-like case $ϙ_L=ϙ_R$, where the action is also a left multiplication. That is why the parent's left-multiplied connection arises exactly for a vector-like fermion. The covariant derivative and its curvature carry the same element,
 
 $$
 D_\mu\tilde\Psi=\frac{\partial\tilde\Psi}{\partial Q_\mu}+\frac{i}{\hbar}A_\mu\,\tilde\Psi b,
@@ -303,4 +305,4 @@ The neutron's composite character is not reached. The framework has no colour gr
 - [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html) — the equal-time anticommutators, the mode expansion, and the field's quantization, the fermionic setting in which the neutron would have to be a state.
 - V. V. Kravchenko, "On a Biquaternionic Bag Model," *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, for the two-sided biquaternionic Dirac equation with the conjugation in the mass term, the form quoted in *The Two Dirac Equations, and Which One the Neutron Uses*.
 - F. Gürsey, "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, and K. Nishijima, "On the theory of leptons," *Nuovo Cimento* **5** (1957) 1349–1354, for the neutron as the second superposition of Lanczos's doubled system, and for the two-parameter group $G_N=\sigma \exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ under which the proton and neutron superpositions keep their form while the two states take independent phases.
-- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the relation of the doubled Lanczos system to isospin and for the neutron construction $N=(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma)i\vec{\tau}$.
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the relation of the doubled Lanczos system to isospin and for the neutron construction $\tilde\Psi_n=(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma)i\vec{\tau}$, written $N$ there.

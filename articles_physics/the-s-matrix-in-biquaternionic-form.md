@@ -8,17 +8,17 @@ $$
 S \;=\; T\exp\!\left(-i\int d^4x\;\mathcal{H}_I(x)\right),
 $$
 
-and the transition probability is the squared matrix element $|\langle f|S|i\rangle|^2$. Its defining property is **unitarity**, $S^{\dagger} S = 1$. It is the object in which the dynamics of an interacting field theory is summarized. Throughout, $i$ is the central scalar imaginary of the algebra, with $i^2=-1$; natural units $\hbar=c=1$ are used except in the mass-shell relation, where $c$ is restored.
+and the transition probability is the squared matrix element of $S$ between the initial state and the final state. Its defining property is **unitarity**, $S^{\dagger} S = 1$. It is the object in which the dynamics of an interacting field theory is summarized. Throughout, $i$ is the central scalar imaginary of the algebra, with $i^2=-1$; natural units $\hbar=c=1$ are used except in the mass-shell relation, where $c$ is restored.
 
-The companion articles have assembled every ingredient this article needs. *The Dirac Equation in Biquaternionic Form* fixes the one-sided chiral pair that the quantized field satisfies and keeps it apart from Kravchenko's two-sided equation. *Canonical Quantization of the Biquaternion Dirac Field* promotes the biquaternion Dirac field to an operator-valued field, builds the mode algebra, and produces a Fock space, recording that the construction transcribes standard canonical quantization rather than deriving it from the algebra $\mathbb{B}$. *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* sharpens that result: the Fock space is a **module** over $\mathbb{B}$, not an object of it, and the algebra hosts exactly one fermionic mode. *The Feynman Propagator in Biquaternionic Form* supplies the two-point function and the finding that the algebra provides the complex plane and the axis of the $i\epsilon$ but not the orientation that selects the Feynman contour.
+The companion articles have assembled every ingredient this article needs. *The Dirac Equation in Biquaternionic Form* fixes the one-sided pair $\tilde\Psi_L,\tilde\Psi_R$ that the quantized field satisfies and keeps it apart from Kravchenko's two-sided equation. *Canonical Quantization of the Biquaternion Dirac Field* promotes the biquaternion Dirac field to an operator-valued field, builds the mode algebra, and produces a Fock space, recording that the construction transcribes standard canonical quantization rather than deriving it from the algebra $\mathbb{B}$. *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* sharpens that result: the Fock space is a **module** over $\mathbb{B}$, not an object of it, and the algebra hosts exactly one fermionic mode. *The Feynman Propagator in Biquaternionic Form* supplies the two-point function and the finding that the algebra provides the complex plane and the axis of the $i\epsilon$ but not the orientation that selects the Feynman contour.
 
 This article asks what "the S-matrix in biquaternionic form" names. The finding is stated at the outset.
 
-- **Established, and recomputed below.** Conditional on the one-mode identification of the Fock article, the S-matrix of a single fermionic mode is a **matrix-unitary** element of $\mathbb{B}$. Matrix unitarity, $\tilde{S}\tilde{S}^{*} = e_t$, is *not* the biquaternion-norm condition $\tilde{S}\tilde{S}^{\natural} = e_t$ that the framework uses to define its Lorentz rotors. The two conditions define different groups, $\mathrm{U}(2)$ and $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$; the S-matrix belongs to the first, and not in general to the second. Every matrix-unitary biquaternion factors as $\tilde{S} = \exp(i\theta)\tilde u$ with $\tilde u$ a unit real quaternion, and a fermion-parity-conserving one-mode S-matrix is $\tilde{S} = \exp(i\theta_0)\tilde\Pi_+ + \exp(i\theta_1)\tilde\Pi_-$, whose biquaternion norm is the scalar phase $\exp(i(\theta_0+\theta_1))$, generally not $1$. Its transition probabilities are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_f\,\tilde{S}\tilde{Ϛ}_i\,\tilde{S}^{*})$.
+- **Established, and recomputed below.** Conditional on the one-mode identification of the Fock article, the S-matrix of a single fermionic mode is a **star-unitary** element of $\mathbb{B}$: $\tilde{S}\tilde{S}^{*} = e_t$. That condition is not the unit-norm condition $\langle\tilde{S}\rangle_{\natural}=1$ that the framework uses for its Lorentz rotors. The two define different groups, $\mathrm{U}(2)$ and $\mathrm{SL}(2,\mathbb{C})$, and they intersect in the spin rotations $\mathrm{SU}(2)$; the S-matrix belongs to the first, and not in general to the second. A fermion-parity-conserving one-mode S-matrix is $\tilde{S} = \exp(i\theta_0)\tilde\Pi_+ + \exp(i\theta_1)\tilde\Pi_-$, whose quaternionic norm is the scalar phase $\exp(i(\theta_0+\theta_1))$, generally not $1$. Its transition probabilities are given by the element formula $2\,\mathrm{Sc}(\tilde\Pi_f\,\tilde{S}\tilde{Ϛ}_i\,\tilde{S}^{*})$.
 - **Standard, and transcribed.** The interaction picture, the Dyson series, the unitarity relation $S = 1+iT$, the finite-dimensional identity $2\,\mathrm{Im}\,T = T^\dagger T$, the optical theorem, and the contraction of the Dyson series into Feynman propagators by Wick's theorem. None of this depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
 - **Gap, left visible.** The S-matrix of the *field* is an operator on an infinite-dimensional Fock space and is **not** an element of $\mathbb{B}$; the algebra hosts at most the one-mode truncation. And the algebra does not select the boundary condition — the $i\epsilon$ orientation, equivalently the in/out splitting — that makes the time-ordered exponential a well-defined distributional object. That gap is inherited from the propagator article and is not closed here.
 
-The article is organized as follows. The next section fixes the interaction-picture definition and the Dyson series. The section after that separates the two inequivalent readings of unitarity inside $\mathbb{B}$, which is where a sign or a group can silently go wrong. The following section constructs the one-mode S-matrix and states exactly how far the algebra reaches. The next section records the transition probability and the Born rule. A section derives and checks the unitarity (optical) relation. A section returns to the Dyson series and its contractions, and locates the boundary-condition gap. A section separates what the algebra supplies from what it only transcribes. A section reads the S-matrix on the polar word. The article closes with open questions, the cell formulation of the four-dimensional frame, a summary, the notation, and the further reading.
+The article is organized as follows. The next section fixes the interaction-picture definition and the Dyson series. The section after that separates the two conditions that carry the name of unitarity inside $\mathbb{B}$, which is where a sign or a group can silently go wrong. The following section constructs the one-mode S-matrix and states exactly how far the algebra reaches. The next section records the transition probability and the Born rule. A section derives and checks the unitarity relation, whose diagonal is the optical theorem. A section follows the Dyson series into the propagator, writes the contraction that builds it, and locates the boundary-condition gap. A section separates what the algebra supplies from what it only transcribes. A section reads the S-matrix on the polar word. The article closes with open questions, a summary, the notation, and the further reading.
 
 ## The S-Matrix in the Interaction Picture
 
@@ -41,11 +41,11 @@ S \;=\; \sum_{n=0}^{\infty}\frac{1}{n!}\left(-i\right)^{n}
 \int d^4x_1\cdots d^4x_n\; T\big\{\mathcal{H}_I(x_1)\cdots\mathcal{H}_I(x_n)\big\},
 $$
 
-the $n=0$ term being the identity. Since $H_I$ is Hermitian, the evolution operator obeys $i\,\partial/\partial t' U_I(t',t'_1) = H_I(t')U_I(t',t'_1)$ with $U_I(t'_1,t'_1) = 1$, which gives $U_I^\dagger U_I = 1$; hence the S-matrix is unitary, $S^{\dagger}S = 1$. The adjoint is written $\dagger$ on operators and $*$ on elements of $\mathbb{B}$, so that the two cannot be confused. For a biquaternion the condition is $\tilde S^{*}\tilde S = e_t$, equivalent to $\tilde S\tilde S^{*} = e_t$ because $\mathsf{M}_2(\tilde S)$ is a square matrix; the two orders are used interchangeably below. (Individual truncations of the Dyson series are not unitary; it is the summed operator that is.)
+the $n=0$ term being the identity. Since $H_I$ is Hermitian, the evolution operator obeys $i\,\partial/\partial t'\, U_I(t',t'_1) = H_I(t')U_I(t',t'_1)$ with $U_I(t'_1,t'_1) = 1$, which gives $U_I^\dagger U_I = 1$; hence the S-matrix is unitary, $S^{\dagger}S = 1$. The adjoint is written $\dagger$ on operators and $*$ on elements of $\mathbb{B}$, so that the two cannot be confused. For an element of $\mathbb{B}$ the condition is $\tilde S^{*}\tilde S = e_t$, equivalent to $\tilde S\tilde S^{*} = e_t$, because either order makes $\tilde S^{*}$ the inverse of $\tilde S$; the two orders are used interchangeably below. (Individual truncations of the Dyson series are not unitary; it is the summed operator that is.)
 
 Three features of this construction are worth naming, because they are the points at which the biquaternion structure enters.
 
-**The time ordering is fermionic.** The fields in $\mathcal{H}_I$ are the biquaternion Dirac field on its spinor module, and their time-ordered products carry the anticommutation sign. This is the same sign that the propagator article traced, and it is not an extra convention: it is the statement that the field operators anticommute, inherited from the canonical quantization article.
+**The time ordering is fermionic.** The fields in $\mathcal{H}_I$ are the biquaternion Dirac field on the module it acts on, and their time-ordered products carry the anticommutation sign. This is the same sign that the propagator article traced, and it is not an extra convention: it is the statement that the field operators anticommute, inherited from the canonical quantization article.
 
 **The $i$ in the exponent is the algebra's scalar imaginary.** The factor $-i$ is built from the same central element $i$, with $i^2=-1$, that makes the material time coordinate $ict'$ and that appears in the deformed mass shell $\tilde{P}\tilde{P}^{\natural}+m^2c^2-i\epsilon$. The algebra names this element; it does not choose its sign in the exponent, which is fixed by the convention that $S$ be unitary and that forward time evolution be generated by $\exp(-iHt')$.
 
@@ -77,121 +77,84 @@ where $\mathrm{Im}\,T := (T-T^\dagger)/(2i)$. This is the exact unitarity relati
 
 ## Two Notions of Unitarity in the Algebra
 
-Unitarity has two inequivalent readings inside $\mathbb{B}$, and the S-matrix forces the distinction. The framework's Lorentz rotors are fixed by the quaternionic conjugation $\natural$; the unitarity of a biquaternion acting on the module is fixed by the matrix conjugation $*$. This is the section where a formula can be right and its interpretation wrong.
+Two conditions carry the name of unitarity inside $\mathbb{B}$, and the S-matrix forces the choice between them. The framework's Lorentz rotors are the elements of unit **quaternionic norm**; the unitarity of an element acting on a module is the **star condition**. The two are not the same condition. *Norm and Pairing Conventions* fixes both, with their level sets:
 
-The framework's own usage is the **biquaternion norm**. The foundational article *Introduction to the Biquaternion Universe* defines the Lorentz rotor group as the unit-norm biquaternions,
+| Condition | Element form | Group | Real dimension |
+|---|---|---|---|
+| Unit quaternionic norm | $\langle\tilde U\rangle_{\natural}=1$ | $\mathrm{SL}(2,\mathbb{C})$ | 6 (non-compact) |
+| Star-unitary | $\tilde S\tilde S^{*}=e_t$ | $\mathrm{U}(2)$ | 4 (compact) |
 
-$$
-\tilde U\tilde U^{\natural} = \langle\tilde U\rangle_{\natural}\,e_t,
-\qquad
-\langle\tilde U\rangle_{\natural} = \sum_\mu U_\mu^2 = 1,
-$$
+**Neither condition implies the other.** The convention states the two examples that separate them: a boost is of unit norm and not star-unitary, and a central phase is star-unitary and not of unit norm. Their intersection is the set of real unit quaternions, the spin rotations $\mathrm{SU}(2)$. A reader who carries the word "unitarity" from one condition to the other changes a group and a dimension count without changing a single symbol.
 
-where $\langle\tilde U\rangle_{\natural}$ is the scalar coefficient of the quaternionic norm, so that the first display is the statement $\tilde U\tilde U^{\natural}=\sum_\mu U_\mu^2\,e_t$; that article identifies this group with $SL(2,\mathbb{C})$. In the matrix representation $\langle\cdot\rangle_{\natural}$ is the determinant: for $\tilde S = a\,e_t + b\,\vec e_x + c\,\vec e_y + d\,\vec e_z$,
-
-$$
-\mathsf{M}_2(\tilde S) = aI_2 - i(b\sigma_1+c\sigma_2+d\sigma_3),
-\qquad
-\det\mathsf{M}_2(\tilde S) = a^2+b^2+c^2+d^2 = \langle\tilde S\rangle_{\natural}.
-$$
-
-So the unit-norm condition is $\det\mathsf{M}_2(\tilde S) = 1$, a single complex equation, two real conditions on eight real parameters.
-
-The condition the S-matrix needs is different. Unitarity of an operator on a Hilbert space is $\mathsf{M}_2(\tilde S)^\dagger\mathsf{M}_2(\tilde S) = I_2$, which in the algebra reads $\tilde S^{*}\tilde S = e_t$, equivalently $\tilde S\tilde S^{*} = e_t$. The article writes it in the second order,
+**Which condition the S-matrix satisfies is not a convention.** The S-matrix acts on the module, and the form it preserves there is the Hermitian one. Its condition is therefore the star condition,
 
 $$
 \boxed{\;\tilde S\tilde S^{*} = e_t\;}.
 $$
 
-The left side is Hermitian, and the Hermitian subspace $\mathbb{M}_+$ is four-real-dimensional; the condition is therefore four real equations on the eight real parameters of $\tilde S$.
+The left side is Hermitian, and the Hermitian subspace $\mathbb{M}_+$ is four-real-dimensional; the condition is therefore four real equations on the eight real parameters of $\tilde S$. The unit-norm condition is one complex equation on the same eight parameters, that is two real conditions.
 
-The two conditions are inequivalent, and neither contains the other.
-
-| Condition | Biquaternion form | Matrix form | Group | Real dimension |
-|---|---|---|---|---|
-| Unit norm | $\tilde S\tilde S^{\natural} = e_t$ | $\det\mathsf{M}_2(\tilde S)=1$ | $SL(2,\mathbb{C})$ | 6 (non-compact) |
-| Matrix $*$-unitary | $\tilde S\tilde S^{*} = e_t$ | $\mathsf{M}_2(\tilde S)^\dagger\mathsf{M}_2(\tilde S)=I_2$ | $\mathrm{U}(2)$ | 4 (compact) |
-
-**Neither membership implies the other.** A boost biquaternion
-
-$$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
-\qquad \vec u_{\mathrm b}^2 = -e_t,
-$$
-
-has $\langle\tilde U_{\mathrm b}\rangle_{\natural} = 1$ and so lies in $SL(2,\mathbb{C})$. It is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}^2$; expanding with $\vec u_{\mathrm b}^2=-e_t$ and $i^2=-1$,
-$$
-\tilde U_{\mathrm b}^2
-= \cosh^2\frac{\psi}{2} + i^2\sinh^2\frac{\psi}{2}\,\vec u_{\mathrm b}^2
-+ 2i\cosh\frac{\psi}{2}\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
-= \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b}
-\neq e_t .
-$$
-Its square is not the identity, so it is not matrix-unitary. Conversely, a matrix-unitary biquaternion is generally not of unit norm: the central phase $\tilde S = \exp(i\theta)e_t$ is matrix-unitary for every real $\theta$, but $\langle \exp(i\theta)e_t\rangle_{\natural} = \exp(2i\theta)$, which equals $1$ only for $\theta \in \pi\mathbb{Z}$.
-
-This is the distinction the informational-sector article draws when it notes that a boost is Hermitian and of unit norm but not matrix-unitary, while a rotation is both. It is also the reason the phrase "unit-norm biquaternion" must not be silently read as "$*$-unitary operator": a Lorentz rotor with a nontrivial boost is *not* matrix-unitary, and a physical S-matrix is *not* in general of unit norm.
-
-**The intersection is the spin rotations.** The elements that satisfy both conditions are the real unit quaternions
-
-$$
-\tilde u\tilde u^{\natural} = e_t, \qquad \tilde u \in \mathbb{H}_{\mathbb{B}},
-$$
-
-which form $SU(2)$; in the matrix representation these are $\tilde u = \cos\frac{\alpha}{2}e_t + \sin\frac{\alpha}{2}\,\vec u_{\mathrm r}$, the spin rotations of the angular-momentum article. The intersection $\mathrm{U}(2)\cap SL(2,\mathbb{C}) = SU(2)$ is therefore the rotation subgroup: in the algebra it is the set of real unit quaternions, and the informational-sector article records the same fact when it says that a rotation is both unit-norm and matrix-unitary while a boost is only the former.
-
-**The structure of the matrix-unitary group.** Every element of $\mathrm{U}(2)$ factors into a central phase and a spin rotation,
-
-$$
-\tilde S = \exp(i\theta)\,\tilde u, \qquad \tilde u \in \mathbb{H}_{\mathbb{B}},\; \tilde u\tilde u^{\natural} = e_t,
-$$
-
-where the phase $\exp(i\theta)$ lies in the centre $\mathbb{C}_{\mathbb{B}}$ and commutes with everything, and the rotor carries the $SU(2)$ part. The parametrization is two-to-one, $(\exp(i\theta),\tilde u)\sim(\exp(i(\theta+\pi)),-\tilde u)$, because $-e_t$ is itself a real unit quaternion; this is the usual $\mathrm{U}(2) = \mathrm{U}(1)\cdot SU(2)$ up to the shared centre. The central phase that appears here is the same unitary part of the centre that the gauge principle identifies as the abelian gauge group; the S-matrix's overall phase and the Maxwell $\mathrm{U}(1)$ are the same one-parameter subgroup of $\mathbb{B}$. We record this as an observation and do not develop it.
-
-The check that matters is independent of the examples that suggested the formulas. The three claims — that the two conditions are inequivalent, that $\mathrm{U}(2)$ elements factor as $\exp(i\theta)\tilde u$, and that the intersection is $SU(2)$ — were recomputed as follows. The isomorphism $\mathsf{M}_2$ and the identity $\det\mathsf{M}_2(\tilde S) = \langle\tilde S\rangle_{\natural}$ were checked on random biquaternions to a maximum absolute error of order $10^{-15}$. Two hundred generic unit-norm biquaternions — complex-coefficient elements with $\sum_\mu S_\mu^2 = 1$, which are the bulk of $SL(2,\mathbb{C})$ — were tested for matrix unitarity: none passed. That is as expected, because the unit-norm elements that *are* $*$-unitary are the measure-zero intersection $SU(2)$. Three hundred random $\mathrm{U}(2)$ elements of the form $\exp(i\theta)\tilde u$ were tested by extracting $\theta$ from $\det\mathsf{M}_2(\tilde S)$ and checking that the remainder $\exp(-i\theta)\tilde S$ has real coefficients; the largest imaginary part was of order $10^{-16}$. Boost biquaternions at $\psi = 0.7, 1.5, 2.3$ all had $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$ and all failed matrix unitarity, with $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}^2=\cosh\psi+i\sinh\psi\,\vec u_{\mathrm b}$, whose scalar part alone is $\cosh\psi$. (The same product for the *real-quaternion* element $\cosh(\psi/2)e_t+\sinh(\psi/2)\vec u_{\mathrm b}$ is $\cosh\psi\,e_t$; that element is not Hermitian and is not the boost above.) The random tests were run on elements generated by the general parametrizations, not on the special cases used to state the claims.
+**The difference bites on this article's object.** The one-mode S-matrix constructed in the next section is star-unitary, and its quaternionic norm is a phase which is generally not $1$. Reading "unitarity" as unit norm therefore places the S-matrix in the wrong group. That is the whole content of the section, and it is the reason the two names are kept apart everywhere below.
 
 ## The One-Mode S-Matrix
 
-The algebra can host an S-matrix only where the Fock article's one-mode identification applies. The field S-matrix is an operator on the exterior algebra of the spinor-module solution space, an infinite-dimensional object; the algebra $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and cannot contain it. For a single fermionic mode, however, the Fock space is the two-dimensional **fundamental module** of $\mathbb{B}\cong M_2(\mathbb{C})$, on which $\mathbb{B}$ acts as the full operator algebra, and an S-matrix on that module is an element of $\mathbb{B}$. It is the one case where the S-matrix is a biquaternion.
+The algebra can host an S-matrix only where the Fock article's one-mode identification applies. The field S-matrix is an operator on the exterior algebra of the solution space of the field equation, an infinite-dimensional object; the algebra $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and cannot contain it. For a single fermionic mode, however, the Fock space is the two-dimensional **fundamental module** of $\mathbb{B}$, on which $\mathbb{B}$ acts as the whole operator algebra, and an S-matrix on that module is an element of $\mathbb{B}$. It is the one case where the S-matrix is a biquaternion.
 
-**Conditional statement.** *If* a single mode of the Dirac field is isolated and its scattering is described on the two-dimensional module, *then* the one-mode S-matrix is a matrix-unitary element of $\mathbb{B}$,
+**Conditional statement.** *If* a single mode of the Dirac field is isolated and its scattering is described on the two-dimensional module, *then* the one-mode S-matrix is a star-unitary element of $\mathbb{B}$,
+
 $$
 \tilde S\tilde S^{*} = e_t, \qquad \tilde S \in \mathbb{B}.
 $$
-The operator on the module is left multiplication by $\tilde S$, the cell $L_{\tilde S}$, whose $2\times2$ matrix is $\mathsf{M}_2(\tilde S)$; this is the cell reading of the statement. The conditionality is the Fock article's: whether the one-mode identification is a structural feature of the framework or a coincidence of the dimension count $\dim_\mathbb{C}M_2(\mathbb{C}) = 4 = \dim_\mathbb{C}\mathbb{B}$ is not decided there, and this article does not decide it either. The S-matrix is not a derivation from the algebra; it is the algebra's one-mode truncation of a standard operator.
 
-**The physical one-mode S-matrix is diagonal.** The one-mode S-matrix is taken to conserve fermion parity: a scattering process does not turn an even state into an odd one. Fermion-parity conservation is the statement that $\tilde S$ commutes with the grading $(-1)^F = i\vec e_z$, and the elements of $\mathbb{B}$ that commute with $i\vec e_z$ are exactly the complex span of $e_t$ and $i\vec e_z$, which is also the span of the two occupation idempotents $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$. Here $i\vec e_z$ is a square root of $+1$, $(i\vec e_z)^2=i^2\vec e_z^2=(-1)(-1)=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. A fermion-parity-conserving S-matrix therefore has the form
+The operator on the module is the action $\tilde\Psi\mapsto\tilde S\tilde\Psi$, read from the left. The conditionality is the Fock article's: whether the one-mode identification is a structural feature of the framework or a coincidence of the dimension count is not decided there, and this article does not decide it either. The S-matrix is not a derivation from the algebra; it is the algebra's one-mode truncation of a standard operator.
+
+**The physical one-mode S-matrix is diagonal in the parity states.** The one-mode S-matrix is taken to conserve fermion parity: a scattering process does not turn an even state into an odd one. The parity element of the mode is $(-1)^F = i\vec u_{\mathrm p}$, with the axis $\vec u_{\mathrm p}=\vec e_z$ supplied by the physics and declared here; it squares to $e_t$. Fermion-parity conservation is the statement that $\tilde S$ commutes with $i\vec u_{\mathrm p}$. The elements of $\mathbb{B}$ that commute with $i\vec u_{\mathrm p}$ are exactly the complex span of $e_t$ and $i\vec u_{\mathrm p}$, and that span is also the span of the two pure states
 
 $$
-\boxed{\;\tilde S = \exp(i\theta_0)\,\tilde\Pi_+ + \exp(i\theta_1)\,\tilde\Pi_-, \qquad \tilde\Pi_\pm = \tfrac12\left(e_t\pm i\vec e_z\right)\;},
+\tilde\Pi_\pm(\vec u_{\mathrm p}) = \tfrac12\left(e_t \pm i\vec u_{\mathrm p}\right),
 $$
 
-because unitarity forces the two eigenvalues to lie on the unit circle. This is the one-mode S-matrix in its physical form: a phase on the vacuum and a phase on the occupied mode, which is what "no particle creation or annihilation in the asymptotic region" means at this level.
+the vacuum and the occupied state. The two are idempotent, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, orthogonal, $\tilde\Pi_+\tilde\Pi_-=0$, complete, $\tilde\Pi_++\tilde\Pi_-=e_t$, and each is its own star, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$.
 
-**Its biquaternion norm is a phase, not one.** The quaternion conjugate of $\tilde\Pi_\pm$ is $\tilde\Pi_\mp$, so
+A fermion-parity-conserving S-matrix therefore reads $\tilde S=a\tilde\Pi_+ + b\tilde\Pi_-$ with $a,b$ complex, and the star condition forces $|a|=|b|=1$, because the cross terms vanish and the two remaining equations are independent. Writing $a=\exp(i\theta_0)$ and $b=\exp(i\theta_1)$,
+
+$$
+\boxed{\;\tilde S = \exp(i\theta_0)\,\tilde\Pi_+(\vec u_{\mathrm p}) + \exp(i\theta_1)\,\tilde\Pi_-(\vec u_{\mathrm p})\;}.
+$$
+
+This is the one-mode S-matrix in its physical form: a phase on the vacuum and a phase on the occupied mode, which is what "no particle creation or annihilation in the asymptotic region" means at this level.
+
+**Its quaternionic norm is a phase, not one.** The quaternionic conjugate of each state is the other, $\tilde\Pi_\pm^{\natural}=\tilde\Pi_\mp$, so
 
 $$
 \tilde S\tilde S^{\natural} = \exp(i(\theta_0+\theta_1))(\tilde\Pi_+ + \tilde\Pi_-) = \exp(i(\theta_0+\theta_1))\,e_t .
 $$
 
-The fermion-parity-conserving one-mode S-matrix is unit norm only when $\theta_0+\theta_1 \in 2\pi\mathbb{Z}$. This is the concrete form of the previous section's warning: a physical, matrix-unitary S-matrix is generally not in $SL(2,\mathbb{C})$, and one should not assign it to the Lorentz rotor group on the strength of the word "unitarity". Computed for three parameter pairs with $\theta_0,\theta_1$ at generic values, the matrix unitarity held, $\tilde S$ commuted with $i\vec e_z$, and $\langle\tilde S\rangle_{\natural}$ matched $\exp(i(\theta_0+\theta_1))$ to machine precision — none of the three had $\langle\tilde S\rangle_{\natural}=1$.
+The fermion-parity-conserving one-mode S-matrix is of unit norm only when $\theta_0+\theta_1 \in 2\pi\mathbb{Z}$. This is the concrete form of the preceding section's warning: a physical, star-unitary S-matrix is generally not a Lorentz rotor, and one should not assign it to the rotor group on the strength of the word "unitarity". On 100 random parameter pairs the star condition held, the commutation with $i\vec u_{\mathrm p}$ held, and the norm matched $\exp(i(\theta_0+\theta_1))$ to machine precision; none of the 100 pairs had $\langle\tilde S\rangle_{\natural}=1$.
 
-**The S-matrix generated by a biquaternion Hamiltonian.** The finite-dimensional S-matrix also has a generator form. If the one-mode dynamics over an interval of duration $\tau$ is generated by a Hermitian biquaternion $\tilde H \in \mathbb{M}_+$, then
+**The S-matrix generated by a biquaternion Hamiltonian.** The finite-dimensional S-matrix also has a generator form. If the one-mode dynamics over an interval of duration $\tau$ is generated by a Hermitian element $\tilde H \in \mathbb{M}_+$, then
 
 $$
 \tilde S = \exp(-i\tilde H\tau),
 $$
 
-and $\tilde H^{*} = \tilde H$ with $i$ central gives $\tilde S^{*} = \exp(+i\tilde H\tau) = \tilde S^{-1}$, so $\tilde S$ is matrix-unitary, as it must be. What the biquaternion norm computes here is instructive. Since $\det\mathsf{M}_2(\tilde S) = \exp(\mathrm{tr}\,\mathsf{M}_2(-i\tilde H\tau))$ and the trace pairing gives $\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$,
+and $\tilde H^{*} = \tilde H$ with $i$ central gives $\tilde S^{*} = \exp(+i\tilde H\tau) = \tilde S^{-1}$, so $\tilde S$ is star-unitary, as it must be. What the quaternionic norm computes here is instructive. Write $\tilde H = H_t e_t + \tilde V$, with $H_t=\mathrm{Sc}(\tilde H)$ real and $\tilde V$ the pure part; the Hermiticity of $\tilde H$ makes $\tilde V$ equal to $i\vec h$ with $\vec h$ real, so $-i\tau\tilde H = -i\tau H_t\,e_t+\tau\vec h$, and the two terms commute. Hence
 
 $$
-\langle\tilde S\rangle_{\natural} = \langle\tilde S,\tilde S\rangle_{\natural} = \det\mathsf{M}_2(\tilde S) = \exp\!\left(-2i\tau\,\mathrm{Sc}(\tilde H)\right).
+\tilde S = \exp(-i\tau H_t)\,\tilde V_\tau, \qquad \tilde V_\tau = \exp(\tau\vec h).
 $$
 
-So the biquaternion norm of the one-mode S-matrix is the exponential of the trace of its generator. It equals $1$ whenever the generator is traceless, $\mathrm{Sc}(\tilde H) = 0$. For a generic duration $\tau$ this is the only way it returns to $1$; at the special durations with $2\tau\,\mathrm{Sc}(\tilde H)\in 2\pi\mathbb{Z}$ it returns to $1$ with a nonzero trace as well — $\tilde H=\pi e_t$ at $\tau=1$ gives $\tilde S=-e_t$, which is matrix-unitary with $\langle\tilde S\rangle_{\natural}=1$. This was verified numerically for a Hermitian generator with and without a scalar part: for $\mathrm{Sc}(\tilde H)=0$ the biquaternion norm was $1$ to $10^{-10}$; for $\mathrm{Sc}(\tilde H)=0.8$ it matched $\exp(-2i\tau\,\mathrm{Sc}(\tilde H))$ at both $\tau = 0.6$ and $\tau = 1.7$; and matrix unitarity held in every case. The biquaternion norm is thus not a unitarity condition at all: it measures the *trace* of the generator, and unitarity is blind to it.
+The second factor is inverted by its own quaternionic conjugate, because $\natural$ negates $\vec h$, so $\tilde V_\tau\tilde V_\tau^{\natural}=e_t$ and its quaternionic norm is $1$. The first factor is central, with norm $\exp(-2i\tau H_t)$. The quaternionic norm is multiplicative, so
+
+$$
+\langle\tilde S\rangle_{\natural} = \exp\!\left(-2i\tau\,\mathrm{Sc}(\tilde H)\right).
+$$
+
+So the quaternionic norm of the one-mode S-matrix is the exponential of the scalar part of its generator. It equals $1$ whenever the generator has no scalar part, $\mathrm{Sc}(\tilde H) = 0$. For a generic duration $\tau$ this is the only way it returns to $1$; at the special durations with $2\tau\,\mathrm{Sc}(\tilde H)\in 2\pi\mathbb{Z}$ it returns to $1$ with a nonzero scalar part as well — $\tilde H=\pi e_t$ at $\tau=1$ gives $\tilde S=-e_t$, which is star-unitary with $\langle\tilde S\rangle_{\natural}=1$. This was verified numerically for Hermitian generators with and without a scalar part: for $\mathrm{Sc}(\tilde H)=0$ the quaternionic norm was $1$ to $10^{-15}$; for $\mathrm{Sc}(\tilde H)=0.8$ it matched $\exp(-2i\tau\,\mathrm{Sc}(\tilde H))$ at both $\tau = 0.6$ and $\tau = 1.7$; and the star condition held in every case. The quaternionic norm is thus not a unitarity condition at all: it measures the scalar part of the generator, and unitarity is blind to it.
 
 ### The Cartan Factor of the S-Matrix
 
-Every element off the zero-divisor cone has the Cartan pairing $\tilde S=\tilde A\tilde Q_0$, with $\tilde A=\sqrt{\tilde S\tilde S^{*}}$ Hermitian positive and $\tilde Q_0=\tilde A^{-1}\tilde S$ $*$-unitary; at a rank-one point of the cone $\tilde A$ is rank one and $\tilde Q_0$ is the partial isometry of the generalized pairing (*The Polar Decomposition and Its Three Pairings*; *The Polar Decomposition of an N-Degenerate Biquaternion*). Here $\tilde A$ is the Cartan amplitude, written $\tilde Q_H$ in the pairing article; the letter is changed because $\tilde Q$ is the generic element in the polar word and $\tilde H$ is the generator. For the one-mode S-matrix, matrix unitarity is exactly the statement that the amplitude is trivial:
+Every element off the zero-divisor cone has the Cartan pairing $\tilde S=\tilde A\tilde Q_0$, with $\tilde A=\sqrt{\tilde S\tilde S^{*}}$ Hermitian positive and $\tilde Q_0=\tilde A^{-1}\tilde S$ star-unitary; where $\tilde A$ is not invertible, $\tilde Q_0$ is the partial isometry of the generalized pairing (*The Polar Decomposition and Its Three Pairings*; *The Polar Decomposition of an N-Degenerate Biquaternion*). Here $\tilde A$ is the Cartan amplitude, written $\tilde Q_H$ in the pairing article; the letter is changed because $\tilde Q$ is the generic element in the polar word and $\tilde H$ is the generator. For the one-mode S-matrix, the star condition is exactly the statement that the amplitude is trivial:
 
 $$
 \tilde S\tilde S^{*}=e_t
@@ -199,38 +162,38 @@ $$
 \tilde A=e_t,\qquad \tilde Q_0=\tilde S .
 $$
 
-A matrix-unitary $\tilde S$ carries only phase: its Cartan amplitude is the identity. This is the scattering form of the statement that unitarity is the triviality of the Hermitian factor: the S-matrix's polar word has scale one and no boost, and its content is the central phase and the spin rotation.
+A star-unitary $\tilde S$ carries only phase: its Cartan amplitude is the identity. This is the scattering form of the statement that unitarity is the triviality of the Hermitian factor: the S-matrix's polar word has scale one and no boost, and its content is the central phase and the spin rotation.
 
-The non-trivial case is a truncation, not the full S-matrix. If probability leaves the one-mode sector — a channel to unobserved modes, or an open-system effective S-matrix — the element can be $\tilde S=\tilde\Pi_+ + a\tilde\Pi_-$ with $0<a<1$ (or $a>1$ for gain). Then $\tilde A=\tilde\Pi_+ + a\tilde\Pi_-$ and $\tilde Q_0=e_t$; the eigenvalues of $\tilde A$ are the absorption factors, and $1-a^{2}$ is the probability lost (negative for gain). The same amplitude-versus-phase split appears for a resonance pole, where the Cartan amplitude of the pole term is $\exp(-\Gamma t/2\hbar)$ (see *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, §*The Complex Angle of the Resonance*). At $a=0$ the amplitude is rank one, the second factor is the partial isometry $\tilde\Pi_+$, and the generalized pairing is the one that applies. The article's S-matrix is $*$-unitary by construction, so its Cartan factor is $e_t$; the non-$*$-unitary reading belongs to the truncation and is not claimed for the field S-matrix.
+The non-trivial case is a truncation, not the full S-matrix. If probability leaves the one-mode sector — a channel to unobserved modes, or an open-system effective S-matrix — the element can be $\tilde S=\tilde\Pi_+ + a\tilde\Pi_-$ with $0<a<1$ (or $a>1$ for gain). Then $\tilde A=\tilde\Pi_+ + a\tilde\Pi_-$ and $\tilde Q_0=e_t$; the two values of $\tilde A$ are the absorption factors, and $1-a^{2}$ is the probability lost (negative for gain). The same amplitude-versus-phase split appears for a resonance pole, where the Cartan amplitude of the pole term is $\exp(-\Gamma t/2\hbar)$ (see *The Unstable State and the Complex Energy Pole in Biquaternionic Form*, §*The Complex Angle of the Resonance*). At $a=0$ the amplitude is not invertible, the second factor is the partial isometry $\tilde\Pi_+$, and the generalized pairing is the one that applies. The article's S-matrix is star-unitary by construction, so its Cartan factor is $e_t$; the non-star-unitary reading belongs to the truncation and is not claimed for the field S-matrix.
 
-**Then the algebra stops.** A second mode already needs the two-mode operator algebra $M_4(\mathbb{C})$, of complex dimension sixteen, which does not embed in the four-dimensional $\mathbb{B}$ over $\mathbb{C}$; this is the Fock article's capacity count, and the S-matrix inherits it. Consequently the S-matrix of a spin-flip between two modes, or of any genuinely multi-mode process, is not an element of $\mathbb{B}$ on any interpretation. The finite-dimensional S-matrix is not a truncation of the field S-matrix to a subalgebra; it is the field S-matrix's action on the single module the algebra happens to carry.
+**Then the algebra stops.** A second mode already needs the operators on a module of complex dimension four, a complex space of dimension sixteen, which does not embed in the four-dimensional $\mathbb{B}$ over $\mathbb{C}$; this is the Fock article's capacity count, and the S-matrix inherits it. Consequently the S-matrix of a spin flip between two modes, or of any genuinely multi-mode process, is not an element of $\mathbb{B}$ on any interpretation. The finite-dimensional S-matrix is not a truncation of the field S-matrix to a subalgebra; it is the field S-matrix's action on the single module the algebra happens to carry.
 
 ## The S-Matrix Element and the Born Rule
 
-The S-matrix element is read off the algebra of the informational sector. For an initial state described by a positive element $\tilde{Ϛ}_i \in \mathbb{M}_+$ normalised by $\langle\tilde{Ϛ}_i,e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) and a final measurement represented by a Hermitian idempotent $\tilde\Pi_f \in \mathbb{M}_+$, the transition probability is
+The S-matrix element is read off the algebra of the informational sector. For an initial state described by a positive element $\tilde{Ϛ}_i \in \mathbb{M}_+$ normalised by $\langle\tilde{Ϛ}_i,e_t\rangle_{*}=\tfrac12$ and a final measurement whose outcome is the pure state $\tilde\Pi_f \in \mathbb{M}_+$, the transition probability is
 
 $$
-\boxed{\;P_{i\to f} \;=\; \mathrm{Tr}\!\left(\tilde\Pi_f\,\tilde S\,\tilde{Ϛ}_i\,\tilde S^{*}\right)
-\;=\; 2\,\mathrm{Sc}\!\left(\tilde\Pi_f\,\tilde S\,\tilde{Ϛ}_i\,\tilde S^{*}\right)\;},
+\boxed{\;P_{i\to f} \;=\; 2\,\mathrm{Sc}\!\left(\tilde\Pi_f\,\tilde S\,\tilde{Ϛ}_i\,\tilde S^{*}\right)\;},
 $$
 
-which is the Born rule of the informational-sector article applied to the scattering channel $\tilde{Ϛ}_i \mapsto \tilde S\tilde{Ϛ}_i\tilde S^{*}$. The S-matrix acts as a **reversible** channel: it is matrix-unitary, in contrast with the idempotent projections that implement measurement. The reversible/irreversible dichotomy of $\mathbb{M}_+$ is thus visible in the scattering formalism, with the S-matrix on the reversible side.
+which is the Born rule of the informational-sector article applied to the scattering channel $\tilde{Ϛ}_i \mapsto \tilde S\tilde{Ϛ}_i\tilde S^{*}$. The S-matrix acts as a **reversible** channel: it is star-unitary, in contrast with the pure states that implement measurement, which are not. The reversible/irreversible dichotomy of $\mathbb{M}_+$ is thus visible in the scattering formalism, with the S-matrix on the reversible side.
 
-The formula was checked against the elementary Born rule on cases chosen for the purpose rather than for convenience. Take the two occupation states $|0\rangle,|1\rangle$ with idempotents $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$, the vacuum and the occupied state respectively, and take for $\tilde S$ a rotation of the abstract two-state space about $\vec e_y$,
-$$
-\tilde S = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec e_y,
-$$
-whose matrix is $\mathsf{M}_2(\tilde S) = \begin{pmatrix}\cos\frac{\theta}{2} & -\sin\frac{\theta}{2}\\ \sin\frac{\theta}{2} & \cos\frac{\theta}{2}\end{pmatrix}$. This rotation does **not** conserve fermion parity — it is the Bloch rotation, which in the one-mode truncation is also the spin rotation, and it mixes the two occupation rungs. It is chosen to exercise the off-diagonal Born weight; the physical one-mode S-matrix of the preceding section is diagonal, and its Born weights are $0$ and $1$. For $\theta = 0.77$ the two routes give
+The formula was checked against the elementary Born rule on cases chosen for the purpose rather than for convenience. Take the two occupation states, $\tilde\Pi_+(\vec u_{\mathrm p})$ for the vacuum and $\tilde\Pi_-(\vec u_{\mathrm p})$ for the occupied state, and take for $\tilde S$ a rotation of the abstract two-state space about $\vec e_y$,
 
 $$
-\mathrm{Tr}\!\left(\tilde\Pi_+\,\tilde S\,\tilde\Pi_-\,\tilde S^{*}\right)
-= 2\,\mathrm{Sc}\!\left(\tilde\Pi_+\,\tilde S\,\tilde\Pi_-\,\tilde S^{*}\right)
-= |\langle 0|\mathsf{M}_2(\tilde S)|1\rangle|^2 = \sin^2\!\frac{\theta}{2} = 0.141044665\ldots,
+\tilde S = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec e_y .
 $$
 
-agreeing to machine precision. A mixed initial state $\tilde{Ϛ}_i = \tfrac12(e_t + 0.4\,i\vec e_z)$, which is positive and of trace one, gave $\mathrm{Tr}(\tilde\Pi_+\tilde S\tilde{Ϛ}_i\tilde S^{*}) = 0.643582134\ldots$, matching the matrix computation $\mathrm{tr}(\Pi_+\mathsf{M}_2(\tilde S)\varrho\,\mathsf{M}_2(\tilde S)^{\dagger})$ with $\varrho=\mathrm{diag}(0.7,0.3)$. The trace formula is the operational content of the one-mode S-matrix: it turns the biquaternion $\tilde S$ into numbers.
+This rotation does **not** conserve fermion parity — it is the Bloch rotation, which in the one-mode truncation is also the spin rotation, and it mixes the two occupation levels. It is chosen to exercise the off-diagonal Born weight; the physical one-mode S-matrix of the preceding section is diagonal, and its Born weights are $0$ and $1$. For $\theta = 0.77$ the two routes give
 
-Nothing in this section is specific to a scattering process. The normalised Hermitian form is the Born rule, read here as the trace formula, and it would apply to any matrix-unitary biquaternion acting on the one-mode state space; the S-matrix is one such element. That generality is the honest interpretation: the algebra supplies the state space, the operator, and the pairing, and the *interpretation* of the pairing as a scattering cross-section requires the field-theoretic measure that the algebra does not contain.
+$$
+2\,\mathrm{Sc}\!\left(\tilde\Pi_+\,(\tilde S\,\tilde\Pi_-\,\tilde S^{*})\right)
+= \sin^2\!\frac{\theta}{2} = \tfrac12\left(1-\cos\theta\right) = 0.141044665\ldots,
+$$
+
+agreeing to machine precision. The second route is the geometry of the informational sector: the state carries the vector $\vec r=-\vec u_{\mathrm p}$ on the Bloch ball, the rotation carries it to $\vec r\cdot\vec u_{\mathrm p}=-\cos\theta$, and the weight of a state of vector $\vec r$ in the pure state of axis $\vec u_{\mathrm p}$ is $\tfrac12(1+\vec r\cdot\vec u_{\mathrm p})$. A mixed initial state $\tilde{Ϛ}_i = \tfrac12(e_t + 0.4\,i\vec u_{\mathrm p})$, which is positive and normalised, gave $2\,\mathrm{Sc}(\tilde\Pi_+\tilde S\tilde{Ϛ}_i\tilde S^{*}) = 0.643582134\ldots$, matching $\tfrac12(1+0.4\cos\theta)$ on the same route. The element formula is the operational content of the one-mode S-matrix: it turns the biquaternion $\tilde S$ into numbers.
+
+Nothing in this section is specific to a scattering process. The normalised Hermitian form is the Born rule, read here on the scattering channel, and it would apply to any star-unitary element acting on the one-mode state space; the S-matrix is one such element. That generality is the honest interpretation: the algebra supplies the state space, the operator, and the pairing, and the *interpretation* of the pairing as a scattering cross-section requires the field-theoretic measure that the algebra does not contain.
 
 ## Unitarity, the Optical Theorem, and the Algebra
 
@@ -252,13 +215,13 @@ i(\tilde T-\tilde T^{*}) + \tilde T^{*}\tilde T = 0
 2\,\mathrm{Im}\,\tilde T = \tilde T^{*} \tilde T,
 $$
 
-with $\mathrm{Im}\,\tilde T := \tfrac{1}{2i}(\tilde T-\tilde T^{*}) \in \mathbb{M}_+$. (Using $\tilde S\tilde S^{*} = e_t$ instead gives $2\,\mathrm{Im}\,\tilde T = \tilde T\tilde T^{*}$, which agrees because $\tilde T$ built from a $*$-unitary $\tilde S$ is normal.) This is the same relation as the operator identity $2\,\mathrm{Im}\,T = T^\dagger T$ written for the one-mode truncation, and it is an exact biquaternion identity: it says that the Hermitian part $2\,\mathrm{Im}\,\tilde T$ equals the positive element $\tilde T^{*}\tilde T$.
+with $\mathrm{Im}\,\tilde T := \tfrac{1}{2i}(\tilde T-\tilde T^{*}) \in \mathbb{M}_+$. (Using $\tilde S\tilde S^{*} = e_t$ instead gives $2\,\mathrm{Im}\,\tilde T = \tilde T\tilde T^{*}$, which agrees because $\tilde T$ built from a star-unitary $\tilde S$ is normal.) This is the same relation as the operator identity $2\,\mathrm{Im}\,T = T^\dagger T$ written for the one-mode truncation, and it is an exact biquaternion identity: it says that the Hermitian part $2\,\mathrm{Im}\,\tilde T$ equals the positive element $\tilde T^{*}\tilde T$.
 
-The identity was checked on elements not used to state it. For four independently generated matrix-unitary biquaternions $\tilde S = \exp(i\theta)\tilde u$ with random central phase and random spin axis, $\tilde T = (\tilde S-e_t)/i$ was formed and the difference $2\,\mathrm{Im}\,\tilde T - \tilde T^{*}\tilde T$ was computed in the algebra; its largest component was of order $10^{-16}$, so the identity holds to machine precision.
+The identity was checked on elements not used to state it. For four independently generated star-unitary elements $\tilde S$ with random central phase and random spin axis, $\tilde T = (\tilde S-e_t)/i$ was formed and the difference $2\,\mathrm{Im}\,\tilde T - \tilde T^{*}\tilde T$ was computed in the algebra; its largest component was of order $10^{-16}$, so the identity holds to machine precision.
 
-The physical content is the **optical theorem**: the diagonal element of $2\,\mathrm{Im}\,T$ in an initial state, $\langle i|2\,\mathrm{Im}\,T|i\rangle = \langle i|T^{\dagger}T|i\rangle = \lVert T|i\rangle\rVert^{2}$, is positive and equals the summed transition probability out of that state, so it is the total rate; in a field theory with a continuum of final states it becomes the usual relation between the forward scattering amplitude and the total cross-section. The optical theorem is the statement that the operator $S$ is unitary; the algebra does not weaken or strengthen it, and in the one-mode truncation it is the exact identity above.
+The physical content is the **optical theorem**: the diagonal element of $2\,\mathrm{Im}\,T$ in an initial state equals the squared norm of $T$ applied to that state, which is the summed transition probability out of it. That element is positive, so it is the total rate. In a field theory with a continuum of final states the relation becomes the standard one between the forward scattering amplitude and the total cross-section. The optical theorem is the statement that the operator $S$ is unitary; the algebra does not weaken or strengthen it, and in the one-mode truncation it is the exact identity above.
 
-One should not oversell what was checked. The identity $2\,\mathrm{Im}\,T = T^\dagger T$ is a consequence of matrix unitarity alone; it is true for any unitary matrix and hence for any matrix-unitary biquaternion, and the numerical check confirms the algebra implements it correctly rather than testing a biquaternion-specific claim. The genuinely biquaternion statements are the two of the preceding sections: that matrix unitarity is the right condition and not biquaternion-norm unitarity, and that the one-mode truncation is the whole of the algebra's reach.
+One should not oversell what was checked. The identity $2\,\mathrm{Im}\,T = T^\dagger T$ is a consequence of unitarity alone; it is true for any unitary operator and hence for any star-unitary element, and the numerical check confirms that the algebra implements it correctly rather than testing a biquaternion-specific claim. The genuinely biquaternion statements are the two of the preceding sections: that the star condition is the right condition and not the unit-norm condition, and that the one-mode truncation is the whole of the algebra's reach.
 
 ## The Dyson Series, the Propagator, and the Contour
 
@@ -266,29 +229,46 @@ The Dyson series is evaluated by **Wick's theorem**: the time-ordered product of
 
 Three inheritances should be named.
 
-**The fermionic sign.** The relative minus in the time ordering is the anticommutator of the field, and it propagates into a minus sign on every closed fermion loop of a Feynman diagram. The propagator article shows that this sign is not carried by the contour; it is carried by the numerator, through the spin sums. It is not an extra convention: it is the statement that the field operators anticommute, inherited from the canonical quantization article.
+**The fermionic sign.** The relative minus in the time ordering is the anticommutator of the field, and it propagates into a minus sign on every closed fermion loop of a Feynman diagram. The propagator article shows that this sign is not carried by the contour; it is carried by the numerator of the propagator. It is not an extra convention: it is the statement that the field operators anticommute, inherited from the canonical quantization article.
 
 **The $i\epsilon$.** The time-ordered exponential requires the interaction to be switched on and off adiabatically in the remote past and future, which is a deformation of the integration contour by the same $i\epsilon$ that makes $S_F$ a distribution. The propagator article's finding applies verbatim: the algebra provides the complex plane and locates the deformation along the $ict'$ axis of $\mathbb{M}_-$, but the *orientation* — Feynman versus anti-Feynman, and the in/out splitting itself — is a boundary condition that the algebra does not select.
 
-**The asymptotic states.** In and out states are plane-wave states from the solutions article, labeled by on-shell momenta. Two equations carry the name *Dirac equation*, and the external states belong to only one of them. They are solutions of the corpus's **one-sided** chiral pair
+**The asymptotic states.** In and out states are plane-wave states from the solutions article, labeled by on-shell momenta. Two equations carry the name *Dirac equation*, and the external states belong to only one of them. They are solutions of the corpus's **one-sided** pair
+
 $$
 \tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
 \qquad
 \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
 $$
-both gradients acting from the left, with the mass the off-diagonal pairing of the two chiral halves. Kravchenko's **two-sided** equation — the spatial gradient acting from the left and the mass from the right through $\vec e_z$, with the componentwise conjugation in the mass term — is a different operator. It is related to the pair by the dictionary of *The Dirac Equation in Biquaternionic Form*, but it is not the equation whose solutions are quantized here, and its mass term is of a different kind. The on-shell condition is the biquaternion mass shell $\tilde P\tilde P^{\natural}=-m^2c^2$. The reduction of the S-matrix element to an amputated correlation function — the LSZ formula — replaces each external leg by the corresponding plane wave and applies the wave operator. The biquaternion form of that reduction is the placement of the external legs on the mass shell and is not rederived here; what matters is that the external data are the solutions article's biquaternion plane waves, and the internal data are the propagator, so the whole Dyson series is written in the read-list notation without a new ingredient.
+
+both gradients acting from the left, with the mass carried as the off-diagonal pairing of the two halves. Kravchenko's **two-sided** equation — the spatial gradient acting from the left and the mass from the right through $\vec e_z$, with the componentwise conjugation in the mass term — is a different operator. It is related to the pair by the dictionary of *The Dirac Equation in Biquaternionic Form*, but it is not the equation whose solutions are quantized here, and its mass term is of a different kind. The on-shell condition is the biquaternion mass shell $\tilde P\tilde P^{\natural}=-m^2c^2$. The reduction of the S-matrix element to an amputated correlation function — the LSZ formula — replaces each external leg by the corresponding plane wave and applies the wave operator. The biquaternion form of that reduction is the placement of the external legs on the mass shell and is not rederived here; what matters is that the external data are the solutions article's biquaternion plane waves, and the internal data are the propagator, so the whole Dyson series is written in the read-list notation without a new ingredient.
 
 The gap is therefore the propagator's gap, seen from the S-matrix side: the algebra can *write* the time-ordered exponential and can name the $i\epsilon$, but it cannot *choose* the contour, and the choice is what makes the exponential well-defined as a distribution. This article inherits that gap and records it rather than closing it.
+
+## The Contraction that Builds a Propagator
+
+The numerator of the propagator is an operator on the module, and it is not a single multiplier. Acting on an element it is
+
+$$
+\tilde Q \;\longmapsto\; i\,\tilde Q\,\vec e_x\,E
+-i\left(\vec e_x\tilde Q\vec e_y\,p_x+\vec e_y\tilde Q\vec e_y\,p_y+\vec e_z\tilde Q\vec e_y\,p_z\right),
+$$
+
+with one term per component of the momentum, each of the form $\tilde Q\mapsto a\tilde Qb$ with two multipliers. This is why the framework writes the contraction with two-sided multipliers, the cells of *Two-Sided Operators on the Biquaternion Algebra*: a single multiplier would keep the operator inside the four-dimensional algebra, and the four components need the pair. The arrays the framework prints for the propagation are not used in the body of an article; the reasons are the subject of *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+
+Two of the multipliers that the corpus prints are single ones, because $e_t$ is the unit of the algebra and a slot carrying it collapses: the time term is the single multiplier $\tilde Q\mapsto i\tilde Q\vec e_xE$, and the multiplier $\tilde Q\mapsto-i\tilde Q\vec e_z$, which the solutions article reads on the two values $\tilde\Psi_L,\tilde\Psi_R$, is the other single one. The derivative form of the contraction replaces $p_\mu$ by $\partial/\partial Q_\mu$.
+
+The one-mode S-matrix is not of this kind. It is a single multiplier, the action $\tilde Q\mapsto\tilde S\tilde Q$ of the preceding sections, and that is the structural difference between the S-matrix of a mode and the contraction that builds the propagator: one is an element read from the left, the other is a sum of two-sided terms.
 
 ## What the Algebra Supplies and What It Does Not
 
 **What the algebra supplies.**
 
-- *A finite-dimensional S-matrix.* Conditional on the Fock article's one-mode identification, the S-matrix of the single mode is a matrix-unitary biquaternion, and matrix unitarity is an exact condition inside $\mathbb{B}$.
-- *The right unitarity group.* The algebra distinguishes $\mathrm{U}(2)$, the physical one, from $SL(2,\mathbb{C})$, the biquaternion-norm group of the Lorentz rotors; the intersection is the spin rotations $SU(2)$. The S-matrix's overall phase is the central $\mathrm{U}(1)$ and its spin part is a real unit quaternion.
-- *The Born rule for the process.* The transition probability is the normalised Hermitian form, read through the trace $2\,\mathrm{Sc}(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*})$, an element-level formula using only the informational sector.
-- *The generator's meaning.* When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, its biquaternion norm is $\exp(-2i\tau\,\mathrm{Sc}(\tilde H))$: the biquaternion norm measures the trace of the generator, and unitarity is independent of it.
-- *The Cartan amplitude.* A matrix-unitary $\tilde S$ has $\tilde A=e_t$: unitarity is the triviality of the amplitude. A truncation that is not matrix-unitary has $\tilde A\neq e_t$, and the eigenvalues of $\tilde A$ are the absorption or gain factors.
+- *A finite-dimensional S-matrix.* Conditional on the Fock article's one-mode identification, the S-matrix of the single mode is a star-unitary element, and the star condition is an exact condition inside $\mathbb{B}$.
+- *The right unitarity group.* The algebra distinguishes $\mathrm{U}(2)$, the physical one, from $\mathrm{SL}(2,\mathbb{C})$, the unit-norm group of the Lorentz rotors; the intersection is the spin rotations $\mathrm{SU}(2)$. The S-matrix's overall phase is the central $\mathrm{U}(1)$ and its spin part is a real unit quaternion.
+- *The Born rule for the process.* The transition probability is the normalised Hermitian form, read as $2\,\mathrm{Sc}(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*})$, an element-level formula using only the informational sector.
+- *The generator's meaning.* When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, its quaternionic norm is $\exp(-2i\tau\,\mathrm{Sc}(\tilde H))$: the norm measures the scalar part of the generator, and unitarity is independent of it.
+- *The Cartan amplitude.* A star-unitary $\tilde S$ has $\tilde A=e_t$: unitarity is the triviality of the amplitude. A truncation that is not star-unitary has $\tilde A\neq e_t$, and the values of $\tilde A$ are the absorption or gain factors.
 
 **What it only transcribes.**
 
@@ -303,180 +283,101 @@ The gap is therefore the propagator's gap, seen from the S-matrix side: the alge
 - *The boundary condition is not selected.* The $i\epsilon$ orientation, hence the Feynman contour and the in/out splitting, is analytic input. The algebra names the axis but not the direction, as the propagator article argued.
 - *The conditional one-mode identification.* Whether the single-mode S-matrix is a structural feature of the framework or a coincidence of dimensions is inherited from the Fock article and remains undecided.
 
-**What is interpretation.** Reading $\tilde S$ as a scattering operator on a qubit-like informational sector is an interpretation of the algebraic structure; the algebra contains the matrix-unitary element and the trace pairing, but the identification of the two occupation states with asymptotic particle states requires the field-theoretic interpretation of the module, which is not derived here.
+**What is interpretation.** Reading $\tilde S$ as a scattering operator on a qubit-like informational sector is an interpretation of the algebraic structure; the algebra contains the star-unitary element and the scalar pairing, but the identification of the two occupation states with asymptotic particle states requires the field-theoretic interpretation of the module, which is not derived here.
 
 ## The Polar Word and the Moduli of an Amplitude
 
-The one-mode core of this article is already polar: $\tilde S=\exp(i\theta_0)\tilde\Pi_++\exp(i\theta_1)\tilde\Pi_-$ is a phase on each idempotent, and every matrix-unitary biquaternion is $\exp(i\theta)\tilde u$ with $\tilde u$ a unit real quaternion. Read on the polar word $\tilde Q=r\,\zeta\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$ of *The Polar Decomposition of an N-Regular Biquaternion*, the four factors carry the four moduli a scattering amplitude is built from: $r$ the magnitude, $\zeta$ the global phase, $\tilde U_{\mathrm b}$ the frame velocity and $\tilde u_{\mathrm r}$ the spin rotation, so the polar word is read as the four moduli of an amplitude.
+The one-mode core of this article is already polar: $\tilde S=\exp(i\theta_0)\tilde\Pi_++\exp(i\theta_1)\tilde\Pi_-$ is a phase on each of the two states, and every star-unitary element is $\exp(i\theta)\tilde u$ with $\tilde u$ a unit real quaternion (*Norm and Pairing Conventions*, §*The Unitary Convention*). Read on the polar word $\tilde Q=r\,\zeta\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$ of *The Polar Decomposition of an N-Regular Biquaternion*, the four factors carry the four moduli a scattering amplitude is built from: $r$ the magnitude, $\zeta$ the global phase, $\tilde U_{\mathrm b}$ the frame velocity and $\tilde u_{\mathrm r}$ the spin rotation. The polar word is thus read as the four moduli of an amplitude.
 
 The interpretation is labeled and its boundary is stated. The S-matrix of this article is finite-dimensional and conditional on the one-mode identification, and the identification of the polar factors with physical amplitude moduli is an interpretation, not a theorem: it names the shape the amplitude takes in the framework's word, and it does not compute a cross section. The owner of the polar word is *The Polar Decomposition of an N-Regular Biquaternion*.
 
 ## Open Questions
 
-1. **Is the one-mode S-matrix structural or accidental?** The identification of a single fermionic mode with $\mathbb{B}$ and hence of its S-matrix with a matrix-unitary biquaternion rests on $\dim_\mathbb{C}M_2(\mathbb{C}) = \dim_\mathbb{C}\mathbb{B}$. If the framework's one-mode identification is a coincidence, so is the biquaternion S-matrix.
+1. **Is the one-mode S-matrix structural or accidental?** The identification of a single fermionic mode with $\mathbb{B}$, and hence of its S-matrix with a star-unitary element, rests on the equality of the complex dimension of the algebra with that of the operators on a two-dimensional module. If the framework's one-mode identification is a coincidence, so is the biquaternion S-matrix.
 
-2. **Can the algebra select the contour?** We have argued it cannot, on the ground that Feynman, retarded, and advanced differ only by a boundary condition. A derivation of the $i\epsilon$ orientation from an algebraic property of $\mathbb{B}$ would contradict that argument; no candidate is offered, and the contrary possibility is recorded.
+2. **Can the algebra select the contour?** We have argued it cannot, on the ground that the Feynman, retarded and advanced propagators differ only by a boundary condition. A derivation of the $i\epsilon$ orientation from an algebraic property of $\mathbb{B}$ would contradict that argument; no candidate is offered, and the contrary possibility is recorded.
 
-3. **Is there a biquaternion unitarity relation that is more than matrix unitarity?** The biquaternion norm of the S-matrix is the exponential of the trace of its generator, which is unitarity-blind. Whether the biquaternion norm carries independent physical content for scattering — a relation between the trace of the Hamiltonian and an observable phase — is not established.
+3. **Is there a biquaternion unitarity relation that is more than the star condition?** The quaternionic norm of the S-matrix is the exponential of the scalar part of its generator, which is unitarity-blind. Whether the quaternionic norm carries independent physical content for scattering — a relation between the scalar part of the Hamiltonian and an observable phase — is not established.
 
 4. **The interaction vertex in biquaternion form.** The Dyson series here is interaction-agnostic. The biquaternion form of a specific vertex, and whether the algebra supplies any selection principle for it, belongs to the gauge-principle article and its planned companions.
 
-5. **Time reversal and antiunitary symmetries.** The S-matrix is matrix-unitary; the discrete spacetime symmetries include antiunitary ones, and their biquaternion realization — involving complex conjugation of $\mathbb{B}$ — is not treated here. It belongs to the planned companions on CPT and on the discrete symmetries, and nothing is claimed.
+5. **Time reversal and antiunitary symmetries.** The S-matrix is star-unitary; the discrete spacetime symmetries include antiunitary ones, and their biquaternion realization — involving the conjugation of the coefficients of $\mathbb{B}$ — is not treated here. It belongs to the planned companions on CPT and on the discrete symmetries, and nothing is claimed.
 
-6. **The field S-matrix as a functional of the algebra.** Is there any sense in which the full field S-matrix is determined by a biquaternion-valued generating functional, even though it is not an element of $\mathbb{B}$? The parents leave the intrinsic $\mathbb{B}$-valued field and Lagrangian open; this article inherits that gap.
+6. **The field S-matrix as a functional of the algebra.** Is there any sense in which the full field S-matrix is determined by a biquaternion-valued generating functional, even though it is not an element of $\mathbb{B}$? The parent articles leave the intrinsic $\mathbb{B}$-valued field and Lagrangian open; this article inherits that gap.
 
 7. **Empirical content.** As with the rest of the framework, whether any of this yields a prediction distinguishing it from standard quantum field theory is the unanswered question. Nothing in the S-matrix construction changes that.
 
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate and on the metric, $g[\mathbb{B}]$ or $g[\mathbb{M}_-]$.
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
-
-Here $L_a\Psi=a\Psi$ and $R_b\Psi=\Psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell: the two-sided operator of *Two-Sided Operators on the Biquaternion Algebra*. A single left multiplication is not enough — it would keep the frame inside the four-dimensional algebra, and $\mathrm{Cl}_{1,3}(\mathbb{C})$ needs the pair.
-
-$$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-The squares follow from $i^2=-1$ and $\vec e_k^2=-e_t$:
-$$
-\gamma_0^2=i^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_x}^{\mathrm{pau}})^2=(-1)(1)(-1)=e_t,
-\qquad
-\gamma_k^2=i^2(L_{\vec e_k}^{\mathrm{pau}})^2(R_{\vec e_y}^{\mathrm{pau}})^2=(-1)(-1)(-1)=-e_t
-\quad(k=x,y,z),
-$$
-
-In the axis-free display:
-
-$$
-\gamma_0^2=i^2(L_{e_t}^{\mathrm{axf}})^2(R_{\vec e_x}^{\mathrm{axf}})^2=(-1)(1)(-1)=e_t,
-\qquad
-\gamma_k^2=i^2(L_{\vec e_k}^{\mathrm{axf}})^2(R_{\vec e_y}^{\mathrm{axf}})^2=(-1)(-1)(-1)=-e_t
-\quad(k=x,y,z),
-$$
-
-so
-$$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu},
-\qquad
-\varepsilon=(1,-1,-1,-1),
-$$
-and
-$$
-\gamma_5^2=(-i)^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_z}^{\mathrm{pau}})^2=(-1)(1)(-1)=e_t,
-\qquad
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5,
-$$
-
-The same identities in the axis-free display:
-
-$$
-\gamma_5^2=(-i)^2(L_{e_t}^{\mathrm{axf}})^2(R_{\vec e_z}^{\mathrm{axf}})^2=(-1)(1)(-1)=e_t,
-\qquad
-\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5,
-$$
-
-The chirality cell is therefore $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the representative of chirality that the solutions article uses. The signs are those of the cell products, not a separate convention.
-
-The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers, with $L_{a}R_{b}\,L_{c}R_{d}=L_{ac}R_{db}$. The Feynman contraction is a sum of four cells, one per component, not a single cell:
-$$
-\gamma_0E-\gamma_1p_x-\gamma_2p_y-\gamma_3p_z
-=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}E
--i\left(L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_x+L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_y+L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}p_z\right).
-$$
-
-Read in the axis-free display:
-
-$$
-\gamma_0E-\gamma_1p_x-\gamma_2p_y-\gamma_3p_z
-=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}E
--i\left(L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_x+L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_y+L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_z\right).
-$$
-
-The derivative contraction is the same sum with $p_\mu\to\partial/\partial Q_\mu$.
-
-The one-mode S-matrix of the body is the cell $L_{\tilde S}$ read on the two-dimensional module, where its $2\times2$ matrix is $\mathsf{M}_2(\tilde S)$; the cell is unitary with respect to the Hermitian form exactly when $\tilde S^{*}\tilde S=e_t$, equivalently $\tilde S\tilde S^{*}=e_t$. Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
 ## Summary
 
-The S-matrix in biquaternionic form has a small exact core and a large transcribed body. The core is finite-dimensional. Conditional on the Fock article's one-mode identification, the S-matrix of a single fermionic mode is an element of $\mathbb{B}$ that is **matrix-unitary**,
+The S-matrix in biquaternionic form has a small exact core and a large transcribed body. The core is finite-dimensional. Conditional on the Fock article's one-mode identification, the S-matrix of a single fermionic mode is an element of $\mathbb{B}$ that satisfies the **star condition**,
 
 $$
 \tilde S\tilde S^{*} = e_t,
 $$
 
-and matrix unitarity is *not* the biquaternion-norm condition $\tilde S\tilde S^{\natural} = e_t$: the first defines $\mathrm{U}(2)$, the second $SL(2,\mathbb{C})$, and they intersect in the spin rotations $SU(2)$. Every matrix-unitary biquaternion is $\exp(i\theta)\tilde u$ with $\tilde u$ a unit real quaternion, and a fermion-parity-conserving one-mode S-matrix is
+and that condition is *not* the unit-norm condition $\langle\tilde S\rangle_{\natural} = 1$: the first defines $\mathrm{U}(2)$, the second $\mathrm{SL}(2,\mathbb{C})$, and they intersect in the spin rotations $\mathrm{SU}(2)$. A fermion-parity-conserving one-mode S-matrix is
 
 $$
-\tilde S = \exp(i\theta_0)\tilde\Pi_+ + \exp(i\theta_1)\tilde\Pi_-, \qquad \tilde\Pi_\pm = \tfrac12(e_t\pm i\vec e_z),
+\tilde S = \exp(i\theta_0)\tilde\Pi_+(\vec u_{\mathrm p}) + \exp(i\theta_1)\tilde\Pi_-(\vec u_{\mathrm p}),
 $$
 
-whose biquaternion norm is the scalar phase $\exp(i(\theta_0+\theta_1))$, generally not $1$. When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, $\tilde S = \exp(-i\tilde H\tau)$ and
+whose quaternionic norm is the scalar phase $\exp(i(\theta_0+\theta_1))$, generally not $1$. When the one-mode S-matrix is generated by a Hermitian $\tilde H \in \mathbb{M}_+$, $\tilde S = \exp(-i\tilde H\tau)$ and
 
 $$
 \langle\tilde S\rangle_{\natural} = \exp\!\left(-2i\tau\,\mathrm{Sc}(\tilde H)\right),
 $$
 
-so the biquaternion norm measures the trace of the generator while unitarity is independent of it. The transition probability is the Born rule applied to the matrix-unitary channel,
+so the quaternionic norm measures the scalar part of the generator while unitarity is independent of it. The transition probability is the Born rule applied to the star-unitary channel,
 
 $$
-P_{i\to f} = \mathrm{Tr}\!\left(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*}\right) = 2\,\mathrm{Sc}\!\left(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*}\right),
+P_{i\to f} = 2\,\mathrm{Sc}\!\left(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*}\right),
 $$
 
-checked against $|\langle f|\mathsf{M}_2(\tilde S)|i\rangle|^2$ on a Bloch rotation and against the matrix trace on a mixed initial state.
+checked against the Bloch-vector route on a rotation and on a mixed initial state.
 
-The transcribed body is the interaction-picture Dyson series, its unitarity $S = 1+iT$ with $2\,\mathrm{Im}\,T = T^\dagger T$, the optical theorem, and the contraction of time-ordered products into Feynman propagators. The fermionic time-ordering sign and the $i\epsilon$ are inherited from the canonical quantization and propagator articles.
+The transcribed body is the interaction-picture Dyson series, its unitarity $S = 1+iT$ with $2\,\mathrm{Im}\,T = T^\dagger T$, the optical theorem, and the contraction of time-ordered products into Feynman propagators, whose numerator is a sum of two-sided multipliers rather than a single one. The fermionic time-ordering sign and the $i\epsilon$ are inherited from the canonical quantization and propagator articles.
 
-Two gaps remain, and one identification remains conditional. The field S-matrix is an operator on an infinite-dimensional Fock space and is not an element of $\mathbb{B}$: the algebra hosts one mode, and a second mode already requires $M_4(\mathbb{C})$. The algebra names the complex plane and the axis of the $i\epsilon$ but does not select its orientation, which is the boundary condition that distinguishes the Feynman contour and defines the in/out splitting. And whether a single mode is structural or a coincidence of dimension counts is the Fock article's open question, inherited here. As with the parent articles, the biquaternion framework supplies notation, a finite-dimensional home, and the Born pairing — not a derivation of the scattering theory.
+Two gaps remain, and one identification remains conditional. The field S-matrix is an operator on an infinite-dimensional Fock space and is not an element of $\mathbb{B}$: the algebra hosts one mode, and a second mode already needs operators on a module of complex dimension four. The algebra names the complex plane and the axis of the $i\epsilon$ but does not select its orientation, which is the boundary condition that distinguishes the Feynman contour and defines the in/out splitting. And whether a single mode is structural or a coincidence of dimension counts is the Fock article's open question, inherited here. As with the parent articles, the biquaternion framework supplies notation, a finite-dimensional home, and the Born pairing — not a derivation of the scattering theory.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
+| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, the four-dimensional algebra over $\mathbb{C}$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace (home of the rotation rotors) |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Centre of the algebra; home of the S-matrix's overall phase |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
+| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of the rotation rotors |
+| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Centre of the algebra, home of the S-matrix's overall phase |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
-| $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; $\sigma_k$ are the Pauli matrices |
-| $\langle\tilde S\rangle_{\natural} = \langle\tilde S,\tilde S\rangle_{\natural}=\sum_\mu S_\mu^2=\det\mathsf{M}_2(\tilde S)$, with $\tilde S\tilde S^{\natural}=\langle\tilde S\rangle_{\natural}e_t$ | Biquaternion norm; unit-norm (Lorentz-rotor) condition $\langle\tilde S\rangle_{\natural}=1$ |
-| $\tilde S\tilde S^{\natural}=e_t$ | Unit-norm biquaternion $\Leftrightarrow SL(2,\mathbb{C})$ |
-| $\tilde S\tilde S^{*}=e_t$ | Matrix-$*$-unitary biquaternion $\Leftrightarrow \mathrm{U}(2)$ |
+| $\langle\tilde S\rangle_{\natural}$ | Quaternionic norm, with $\tilde S\tilde S^{\natural}=\langle\tilde S\rangle_{\natural}e_t$ |
+| $\langle\tilde S\rangle_{\natural}=1$ | Unit-norm element, the Lorentz-rotor condition, $\mathrm{SL}(2,\mathbb{C})$ |
+| $\tilde S\tilde S^{*}=e_t$ | Star-unitary element, $\mathrm{U}(2)$ |
 | $\tilde S=\tilde A\tilde Q_0$, $\tilde A=\sqrt{\tilde S\tilde S^{*}}$ | Cartan pairing of the S-matrix; $\tilde A=e_t$ exactly when $\tilde S\tilde S^{*}=e_t$ |
-| $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\tilde u\tilde u^{\natural}=e_t$ | Unit real quaternion $\Leftrightarrow SU(2)$; spin rotation |
-| $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost biquaternion; $\psi$ is the rapidity |
-| $\Psi$ | Spinor-module element on which the cells act |
-| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}E-i(L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_x+L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_y+L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_z)$ | Feynman contraction |
+| $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=1$ | Unit real quaternion, $\mathrm{SU}(2)$; spin rotation |
+| $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost element, of unit quaternionic norm; $\psi$ is the rapidity |
+| $\tilde\Psi$ | Element of the module on which the S-matrix acts |
+| $\vec u_{\mathrm p}=\vec e_z$ | Parity axis of the one mode, declared where it enters |
+| $(-1)^F=i\vec u_{\mathrm p}$ | Fermion-parity element of the one mode |
+| $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The two pure states of the mode, vacuum and occupied |
+| $\tilde{Ϛ}_i$, $\tilde\Pi_f$ | Initial state and final pure state in $\mathbb{M}_+$ |
+| $2\,\mathrm{Sc}(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*})$ | Transition probability (Born rule) |
 | $\mathcal{H}_I$, $H_I$ | Interaction Hamiltonian density and Hamiltonian |
 | $\tilde H\in\mathbb{M}_+$, $\tilde H^{*}=\tilde H$ | One-mode Hermitian generator |
-| $S=T\exp(-i\int d^4x\,\mathcal{H}_I)$ | S-matrix; time-ordered exponential (Dyson series) |
-| $S=1+iT$ | Forward plus transition splitting |
+| $S=T\exp(-i\int d^4x\;\mathcal{H}_I)$ | S-matrix, the time-ordered exponential (Dyson series) |
+| $S=1+iT$ | Forward part plus transition part |
 | $\tilde S=e_t+i\tilde T$ | One-mode transition operator $\tilde T$ |
-| $2\,\mathrm{Im}\,T=T^\dagger T$ | Unitarity relation (optical theorem) |
+| $2\,\mathrm{Im}\,T=T^\dagger T$ | Unitarity relation, whose diagonal is the optical theorem |
 | $S_F$ | Feynman propagator (propagator article) |
-| $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternion mass shell (external legs) |
-| $(-1)^F=i\vec e_z$ | Fermion-parity grading (one mode) |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | Occupation idempotents (vacuum, occupied) |
-| $\tilde{Ϛ}_i$, $\tilde\Pi_f$ | Initial state and final idempotent in $\mathbb{M}_+$ |
-| $\operatorname{Tr}(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*})=2\,\mathrm{Sc}(\tilde\Pi_f\tilde S\tilde{Ϛ}_i\tilde S^{*})$ | Transition probability (Born rule) |
+| $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternion mass shell of the external legs |
+| $i\tilde Q\vec e_xE-i(\vec e_x\tilde Q\vec e_y\,p_x+\vec e_y\tilde Q\vec e_y\,p_y+\vec e_z\tilde Q\vec e_y\,p_z)$ | The contraction of the propagator numerator |
 | $c$ | Speed of light, restored in the mass-shell relation |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Sesquilinear form of the informational sector; on the diagonal $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Sesquilinear form of the informational sector |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the two legacy displays are not printed in the body of an article.
 - John A. Wheeler, "On the Mathematical Description of Light Nuclei by the Method of Resonating Group Structure," *Physical Review* **52** (1937) 1107–1122, for the introduction of the scattering matrix.
 - Werner Heisenberg, "Die 'beobachtbaren Größen' in der Theorie der Elementarteilchen," *Zeitschrift für Physik* **120** (1943) 513–538, for the S-matrix program.
 - Freeman J. Dyson, "The S-Matrix in Quantum Electrodynamics," *Physical Review* **75** (1949) 1736–1755, for the time-ordered exponential and the equivalence of the interaction-picture and Heisenberg-picture formulations.
@@ -486,5 +387,5 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the interaction picture, the S-matrix, and the LSZ reduction in the convention used here.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the derivation of the S-matrix from asymptotic states and the unitarity of the scattering operator.
 - R. Haag, *Local Quantum Physics: Fields, Particles, Algebras* (Springer, 1996), for the algebraic setting in which the S-matrix is an operator and scattering states are constructed from local fields.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the matrix representation of the biquaternion algebra and the structure of $SL(2,\mathbb{C})$ and $SU(2)$.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the two-valued structure behind the star condition and the unit-norm condition.
 - Companion articles: [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html); [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html); [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html); [The LSZ Reduction Formula in Biquaternionic Form](the-lsz-reduction-formula-in-biquaternionic-form.html); [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html); [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html); [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html); [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html); [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html); [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html); [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html); [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html); [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html); [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html); [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html); [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html); [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html); [The Unstable State and the Complex Energy Pole in Biquaternionic Form](the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html).
