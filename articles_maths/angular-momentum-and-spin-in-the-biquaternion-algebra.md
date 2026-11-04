@@ -73,16 +73,16 @@ $$
 
 They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form. The triple is read as one vector, $\vec S$ with components $\tilde S_k$, so that $\vec u\cdot\vec S=u_k\tilde S_k$ for a unit $\vec u$; the glyph is arrowed and carries no tilde, because each component is a pure element (*Algebra and Element Conventions*, §*The Centre and the Vector Subspace*).
 
-**Proposition (the exponential).** For a unit $\vec u\in\mathfrak{g}$ and real $\theta$,
+**Proposition (the exponential).** For a unit $\vec u\in\mathfrak{g}$ and real $\theta$, the rotation through $\theta$ about $\vec u$ is
 
 $$
-\exp(\theta\,\vec u\cdot\vec g)=\cos\tfrac{\theta}{2}\,e_t-\sin\tfrac{\theta}{2}\,\vec u\cdot\vec e
-=\exp(i\theta\,\vec u\cdot\vec S),
+\exp(-\theta\,\vec u\cdot\vec g)=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u\cdot\vec e
+=\exp(-i\theta\,\vec u\cdot\vec S),
 $$
 
-and the result is a unit real quaternion.
+a unit real quaternion, whose adjoint action turns a vector through $+\theta$ about $\vec u$.
 
-*Proof.* The element $\vec u\cdot\vec e$ is a pure real quaternion with square $-e_t$, so the power series splits into the cosine and sine series. The two expressions agree because $\tilde S_k=-ig_k$.
+*Proof.* The element $\vec u\cdot\vec e$ is a pure real quaternion with square $-e_t$, so the power series splits into the cosine and sine series. The two expressions agree because $\tilde S_k=-ig_k$. The sense of the turn is that of $\operatorname{Ad}_{\tilde q}$ for $\tilde q=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ (*Quaternion Rotations and Reflections*, §*The Adjoint Action*), which is the same element.
 
 The group generated is $G=SU(2)$, which is the double cover of $SO(3)$.
 
@@ -217,7 +217,7 @@ $$
 
 The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$: each is a vector of its own copy, and they are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.
 
-**The double cover.** On $S_+$, $\exp(2\pi i\tilde S_3)=-e_t$. On the adjoint module of the next section, $\exp(2\pi i\operatorname{ad}_{\tilde S_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.
+**The double cover.** On $S_+$, $\exp(-2\pi i\tilde S_3)=-e_t$. On the adjoint module of the next section, $\exp(-2\pi i\operatorname{ad}_{\tilde S_3})=\operatorname{id}$. The first is the spinor sign and the second is the vector sign; the algebra produces both, and the difference is the parity of the weights.
 
 *Proof.* The eigenvalues of $\tilde S_3$ on $S_+$ are $\pm\tfrac12$, so the exponential is $e^{\pm\pi i}=-1$. The eigenvalues of $\operatorname{ad}_{\tilde S_3}$ on $\mathbb{B}$ are $0,\pm1$, so the exponential is $1$.
 

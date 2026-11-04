@@ -78,13 +78,13 @@ $$
 [g_\mu,g_\nu] = \tfrac{1}{4}[\vec e_\mu,\vec e_\nu] = \tfrac{1}{2}\epsilon_{\mu\nu\lambda} \vec e_\lambda = -\epsilon_{\mu\nu\lambda} g_\lambda .
 $$
 
-This is the standard **anti-Hermitian** convention for the generators of $SU(2)$, familiar from $\mathrm{SU}(2)$ in its matrix form $g_k \leftrightarrow \tfrac{i}{2}\sigma_k$. Exponentiating a generator gives a group element:
+This is the standard **anti-Hermitian** convention for the generators of $SU(2)$, familiar from $\mathrm{SU}(2)$ in its matrix form $g_k \leftrightarrow \tfrac{i}{2}\sigma_k$. Exponentiating a generator with the standard sign of the rotation operator gives the rotation through $\theta$ about $\vec u$:
 
 $$
-\exp\!\left(\theta\,\sum_k \vec u_k g_k\right) = \exp\!\left(-\tfrac{\theta}{2}\sum_k \vec u_k \vec e_k\right) = \cos\tfrac{\theta}{2}\,e_t - \sin\tfrac{\theta}{2}\,\sum_k \vec u_k \vec e_k ,
+\exp\!\left(-\theta\,\sum_k \vec u_k g_k\right) = \exp\!\left(\tfrac{\theta}{2}\sum_k \vec u_k \vec e_k\right) = \cos\tfrac{\theta}{2}\,e_t + \sin\tfrac{\theta}{2}\,\sum_k \vec u_k \vec e_k ,
 $$
 
-where $\vec u$ is a unit real vector. This is a **unit real quaternion**: it lies in $\mathbb{H}_{\mathbb{B}}$ and has unit quaternion norm. The set of all such elements is exactly the group $SU(2)$ of unit quaternions, which is the double cover of the rotation group $SO(3)$. The exponential was computed with $\sum_k \vec u_k \vec e_k$ a pure real quaternion of square $-e_t$, so that the power series splits into the trigonometric series.
+where $\vec u$ is a unit real vector, and the adjoint action of that element turns a vector through $+\theta$ about $\vec u$ (*Quaternion Rotations and Reflections*, §*The Adjoint Action*). This is a **unit real quaternion**: it lies in $\mathbb{H}_{\mathbb{B}}$ and has unit quaternion norm. The set of all such elements is exactly the group $SU(2)$ of unit quaternions, which is the double cover of the rotation group $SO(3)$. The exponential was computed with $\sum_k \vec u_k \vec e_k$ a pure real quaternion of square $-e_t$, so that the power series splits into the trigonometric series.
 
 The **observables** are obtained by multiplying the generators by $-i\hbar$:
 
@@ -333,7 +333,7 @@ $$
 
 The coefficients are pure numbers; they do not depend on the biquaternion representation of the spin factor, which enters only through the operators $\tilde S_k$ generating the suitable matrix action. In this respect the addition of angular momenta is standard quantum physics expressed in biquaternion language, with one genuinely algebraic ingredient: the spin-1/2 factor is the fundamental module of $\mathbb{B}$, so the spin operators used in the coupling are the elements $\tilde S_k$ of $\mathbb{M}_+$ constructed above.
 
-Two structural points should be stated precisely. First, the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has as irreducible modules only the trivial one and the fundamental two-dimensional one; it therefore realises, as modules, only $s=0$ and $s=\tfrac12$. The vector representation $s=1$ is present not as a $\mathbb{B}$-module but as the adjoint action of the $*$-unitary subgroup on the imaginary quaternions, and higher $s_{\mathrm{tot}}$ require tensor products or symmetric powers. Second, the orbital representation is not a biquaternion module at all (except for $l=0$); it is the standard rotation representation carried by the position dependence of the wavefunction. The biquaternion content of the coupled system is therefore confined to the spin factor, while the orbital factor and the Clebsch–Gordan coefficients are carried over unchanged from standard quantum physics.
+Two structural points should be stated precisely. First, the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, so it has a **single** irreducible module, the fundamental two-dimensional one; there is no one-dimensional unital module, because a unital algebra map $M_2(\mathbb{C})\to\mathbb{C}$ would have a two-sided kernel. The algebra therefore realises, as a module, only $s=\tfrac12$. The scalar $s=0$ is present instead in the centre of the algebra, and the vector representation $s=1$ is present not as a $\mathbb{B}$-module but as the adjoint action of the $*$-unitary subgroup on the imaginary quaternions; higher $s_{\mathrm{tot}}$ require tensor products or symmetric powers. Second, the orbital representation is not a biquaternion module at all (except for $l=0$); it is the standard rotation representation carried by the position dependence of the wavefunction. The biquaternion content of the coupled system is therefore confined to the spin factor, while the orbital factor and the Clebsch–Gordan coefficients are carried over unchanged from standard quantum physics.
 
 ## The Rotor Realisation of Rotations
 

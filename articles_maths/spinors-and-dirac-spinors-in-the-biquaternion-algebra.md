@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra carries two objects that the literature calls a spinor, and the difference between them is a factor of two in dimension and one algebraic datum. An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly, with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{i\theta\vec u\cdot\vec S}$. A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of the biquaternion algebra $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into minimal left ideals; each part is an elementary spinor of complex dimension two.
+The biquaternion algebra carries two objects that the literature calls a spinor, and the difference between them is a factor of two in dimension and one algebraic datum. An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly, with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$. A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of the biquaternion algebra $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into minimal left ideals; each part is an elementary spinor of complex dimension two.
 
 This article fixes both definitions, proves what they imply, and separates them from the three pictures that stand in their place in the older literature: the column of a matrix model, the gamma matrices, and a second rotation triple attached to the conjugate part. Three results carry the content. A vector carrier has the weights $0$ and $\pm1$, a spinor carrier has $\pm\tfrac12$, and the parity of the weights is what separates them. The two parts of a Dirac spinor are not two independent carriers but two copies of one, because in adapted bases the same left multiplication has the same matrix on both. And no left multiplication carries one part into the other, so the operator that couples them multiplies on the right.
 
@@ -26,7 +26,7 @@ The asymmetry is the reason the definitions are possible. A left multiplication 
 
 ## The Elementary Spinor
 
-**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{i\theta\vec u\cdot\vec S}$.
+**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$.
 
 Three things are packed into that sentence, and each is a theorem below: what the carrier is, that the weights are exactly $\pm\tfrac12$, and that the rotation is a left multiplication with the half-angle. The vector $\vec u$ stands also for the pure quaternion $u_x\vec e_x+u_y\vec e_y+u_z\vec e_z$, as it does throughout the corpus, so that $i\vec u$ is an element of the algebra.
 
@@ -60,12 +60,12 @@ the first because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\v
 **The rotation is a multiplication with the half-angle.** The rotation through $\theta$ about $\vec u$ is the exponential of the generator,
 
 $$
-\exp\bigl(i\theta\,\vec u\cdot\vec S\bigr)
-=\exp\bigl(-\tfrac{\theta}{2}\,\vec u\bigr)
-=\cos\tfrac{\theta}{2}\,e_t-\sin\tfrac{\theta}{2}\,\vec u ,
+\exp\bigl(-i\theta\,\vec u\cdot\vec S\bigr)
+=\exp\bigl(\tfrac{\theta}{2}\,\vec u\bigr)
+=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u ,
 $$
 
-and the elementary spinor is multiplied by that element on the left. The multiplier is a unit quaternion, so it acts on a vector by the adjoint action, turning it through a full angle, while on the spinor it acts by left multiplication with the eigenvalues $e^{\pm i\theta/2}$, the half-angle. The exponential is the corpus's own (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*), and the sense of the turn follows from it. The adjoint action of $\cos\tfrac{\alpha}{2}+\vec u\sin\tfrac{\alpha}{2}$ turns a vector through $+\alpha$ about $\vec u$ (*Quaternion Rotations and Reflections*), so the multiplier above, being that element at $-\vec u$, turns a vector through $-\theta$: the spinor's rotation and the vector's rotation carry opposite signs under the one generator. That is a sign convention of the generator, and nothing below depends on it. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with the opposite sign; at $\theta=4\pi$ it returns unchanged. That is the double cover, and no vector carries it: a vector is returned to itself by a full turn, while a spinor is returned to its negative (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*).
+and the elementary spinor is multiplied by that element on the left. The multiplier is a unit quaternion, so it acts on a vector by the adjoint action, turning it through a full angle, while on the spinor it acts by left multiplication with the eigenvalues $e^{\mp i\theta/2}$, the half-angle. The exponential is the corpus's own (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*), and the sense of the turn follows from it. The adjoint action of $\cos\tfrac{\alpha}{2}+\vec u\sin\tfrac{\alpha}{2}$ turns a vector through $+\alpha$ about $\vec u$ (*Quaternion Rotations and Reflections*, §*The Adjoint Action*), and that is the multiplier above at $\alpha=\theta$: the spinor and the vector turn through the same angle and in the same sense, and the half-angle appears only in the eigenvalues of the multiplier. At $\theta=2\pi$ the multiplier is $-e_t$ and the spinor returns with the opposite sign; at $\theta=4\pi$ it returns unchanged. That is the double cover, and no vector carries it: a vector is returned to itself by a full turn, while a spinor is returned to its negative (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Rotation Generators*).
 
 **Coordinates.** In the carrier $S_+(\vec u)$ an element is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$ and $\nu$ the companion nilpotent, so an elementary spinor is a pair of complex numbers, a coordinate vector $(d_0;d_1)$ on the carrier. The number is two because the spin is $\tfrac12$; it is not a free choice of the model.
 
@@ -178,7 +178,7 @@ The definition of an elementary spinor names the axis that selects its carrier, 
 
 ## Summary
 
-An elementary spinor is an element of a complex two-dimensional carrier on which the left multiplications act irreducibly with weights $\pm\tfrac12$. In $\mathbb{B}$ the carriers are the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, the weight string is $(+\tfrac12,-\tfrac12)$, the spin is $\tfrac12$ and the dimension is $2=2s+1$. A rotation through $\theta$ about $\vec u$ multiplies the spinor by $\cos\tfrac{\theta}{2}e_t-\sin\tfrac{\theta}{2}\vec u$, so the multiplier carries the half-angle and a full turn returns the element with the opposite sign.
+An elementary spinor is an element of a complex two-dimensional carrier on which the left multiplications act irreducibly with weights $\pm\tfrac12$. In $\mathbb{B}$ the carriers are the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, the weight string is $(+\tfrac12,-\tfrac12)$, the spin is $\tfrac12$ and the dimension is $2=2s+1$. A rotation through $\theta$ about $\vec u$ multiplies the spinor by $\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u$, so the multiplier carries the half-angle and a full turn returns the element with the opposite sign.
 
 A Dirac spinor is an element of $\mathbb{B}$ whose two parts are its two components in the decomposition of $\mathbb{B}$ into the minimal left ideals at a declared axis, and each part is an elementary spinor. The parts are the two columns of the matrix model at $\vec u=\vec e_z$, the algebra is their direct sum, and the four coordinates are two pairs.
 

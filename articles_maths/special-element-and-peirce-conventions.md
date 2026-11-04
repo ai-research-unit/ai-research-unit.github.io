@@ -271,7 +271,7 @@ for a unit real vector $\vec u$; each is a complex two-dimensional space on whic
 
 ### The Spinor Convention
 
-**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{i\theta\vec u\cdot\vec S}$. In $\mathbb{B}$ such a space is a minimal left ideal $S_+(\vec u)$ or $S_-(\vec u)$, and the axis $\vec u$ is part of the datum.
+**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{-i\theta\vec u\cdot\vec S}$. In $\mathbb{B}$ such a space is a minimal left ideal $S_+(\vec u)$ or $S_-(\vec u)$, and the axis $\vec u$ is part of the datum.
 
 **The coordinates.** An element of $S_+(\vec u)$ is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$ and $\nu$ the companion nilpotent, so an elementary spinor is a pair $(d_0;d_1)$. A column of two components is that pair written in a chosen carrier and is not a second definition; the tuple of Peirce coordinates is its form at the array level, §*The General Peirce Convention*.
 
