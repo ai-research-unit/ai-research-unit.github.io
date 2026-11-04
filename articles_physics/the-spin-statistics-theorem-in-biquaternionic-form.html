@@ -71,10 +71,10 @@
         <h1 id="the-spinstatistics-theorem-in-biquaternionic-form"><strong>The Spin–Statistics Theorem in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>spin–statistics theorem</strong> is the statement that the spin of a field and the bracket that quantizes it are not independent. In a relativistic quantum field theory on Minkowski space whose inner product is positive definite and whose Hamiltonian is bounded below, a field of integer spin must be quantized with <strong>commutators</strong> and a field of half-integer spin with <strong>anticommutators</strong>: integer-spin fields are bosons, half-integer-spin fields are fermions. The theorem is a statement about the <em>choice of bracket</em>, not about the representation of the Lorentz group; the representation fixes the spin, and the theorem says that locality, positivity and Lorentz invariance together fix the bracket that goes with it.</p>
-<p>The theorem is not among the results the companion articles derive. <em>Canonical Quantization of the Biquaternion Dirac Field</em> imposes anticommutation relations on the free biquaternion spinor field and lists the boundedness of the energy, together with microcausality and positivity, among the reasons the anticommutator is the appropriate one; it explicitly leaves the theorem itself to a dedicated article. <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> finds that the algebra $\mathbb{B}$ hosts exactly one fermionic mode and no bosonic mode, and is careful to say that this is a <em>realization</em> and not a derivation of fermionic statistics. <em>The KMS Condition and the Biquaternion Framework</em> identifies a $\mathbb{Z}/2$ grading of the operator algebra as an additional structure that the biquaternion algebra does not by itself supply. This article is the dedicated treatment those three forward references call for. It does not rederive the parents' quantizations, plane waves or spin sums, which are used unchanged.</p>
+<p>The theorem is not among the results the companion articles derive. <em>Canonical Quantization of the Biquaternion Dirac Field</em> imposes anticommutation relations on the free biquaternion field and lists the boundedness of the energy, together with microcausality and positivity, among the reasons the anticommutator is the appropriate one; it explicitly leaves the theorem itself to a dedicated article. <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> finds that the algebra $\mathbb{B}$ hosts exactly one fermionic mode and no bosonic mode, and is careful to say that this is a <em>realization</em> and not a derivation of fermionic statistics. <em>The KMS Condition and the Biquaternion Framework</em> identifies a $\mathbb{Z}/2$ grading of the operator algebra as an additional structure that the biquaternion algebra does not by itself supply. This article is the dedicated treatment those three forward references call for. It does not rederive the parents' quantizations, plane waves or spin sums, which are used unchanged.</p>
 <p>The division between what is established and what is only transcribed is stated at the outset and kept explicit.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The rotation group acts inside $\mathbb{B}$ through the rotor group of unit real quaternions, which is the double cover of $SO(3)$; the rotor through $2\pi$ about any axis is $-e_t$. Under the rotor action the half-integer-spin representations are the odd tensor powers of the spinor module, on which $-e_t$ acts as $-\mathrm{id}$, while the integer-spin representations — the material sector and the even tensor powers — are the ones that descend to the Lorentz group, on which $-e_t$ acts as $+\mathrm{id}$. For the free spin-$\tfrac12$ field the equal-time <strong>anticommutator</strong> is a delta and the equal-time <strong>commutator</strong> is not: the former receives a $\delta^{(3)}(\vec\Delta)$ from the even time term of the spin sum, the latter only a Bessel kernel that is nonzero at every spatial separation. In the single-mode truncation of the algebra the spin ladder operators <em>are</em> the mode ladder operators, $\vec\Upsilon_x=\tilde S_+/\hbar$, with $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, and the fermion-parity grading is the inner automorphism by the Hermitian involution $(-1)^F=i\vec e_z=2\tilde S_z/\hbar$. The algebra hosts one such fermionic mode and no bosonic mode, for a reason that is a trace identity.</li>
+<li><strong>Established, and recomputed below.</strong> The rotation group acts inside $\mathbb{B}$ through the rotor group of unit real quaternions, which is the double cover of $SO(3)$; the rotor through $2\pi$ about any axis is $-e_t$. Under the rotor action the half-integer-spin representations are the odd tensor powers of the defining module, on which $-e_t$ acts as $-\mathrm{id}$, while the integer-spin representations — the material sector and the even tensor powers — are the ones that descend to the Lorentz group, on which $-e_t$ acts as $+\mathrm{id}$. For the free spin-$\tfrac12$ field the equal-time <strong>anticommutator</strong> is a delta and the equal-time <strong>commutator</strong> is not: the former receives a $\delta^{(3)}(\vec\Delta)$ from the even time term of the spin sum, the latter only a Bessel kernel that is nonzero at every spatial separation. In the single-mode truncation of the algebra the spin ladder operators <em>are</em> the mode ladder operators, $\vec\Upsilon_x=\tilde S_+/\hbar$, with $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, and the fermion-parity grading is the inner automorphism by the Hermitian involution $(-1)^F=i\vec e_z=2\tilde S_z/\hbar$. The algebra hosts one such fermionic mode and no bosonic mode, for a reason that is a trace identity.</li>
 <li><strong>Transcribed, not derived.</strong> The force of the theorem — that among the four pairings of spin class with bracket only two survive — is imported from relativistic quantum field theory. What the biquaternion presentation adds is that the two surviving pairings are the two <em>inequivalent structures the algebra actually carries</em>: the double-valued module for half-integer spin and the single-valued rotations of the material sector for integer spin, together with the trace identity that decides which bracket the finite algebra can host.</li>
 <li><strong>Gap, left visible.</strong> The article does not <em>derive</em> spin–statistics from the biquaternion algebra. The one-mode coincidence is exact but finite-dimensional, and it does not lift to the field. This gap is stated in the sections where it arises and collected in the open questions.</li>
 </ul>
@@ -82,22 +82,22 @@
 <p>The theorem has three independent inputs, and it is useful to record which of them the biquaternion framework supplies.</p>
 <ol>
 <li><strong>The Lorentz representation.</strong> Spin is the intrinsic angular momentum of a particle: in the rest frame it is the label $s$ of the $SU(2)$ little-group representation, with $S^2=\hbar^2s(s+1)$ and $S_z=\hbar m_s$, and for a massless particle it is helicity. In the biquaternion framework that label is carried by the representation of the double cover $SL(2,\mathbb{C})$ of the restricted Lorentz group. The covering homomorphism has kernel $\{\pm e_t\}$, so a representation either descends to $SO^+(1,3)$ — the integer-spin case — or is a genuine two-valued representation of the cover — the half-integer-spin case.</li>
-<li><strong>Locality (microcausality).</strong> Observables at spacelike separation must commute. A spinor field is not an observable; its bilinears are. If $\tilde\Psi$ anticommutes with itself at spacelike separation the bilinears commute, while if it commutes the bilinears do not, because the spinor commutator is then a nonzero kernel. Locality therefore bears on the bracket, but only through the bilinears, and it is one of two constraints that must agree.</li>
+<li><strong>Locality (microcausality).</strong> Observables at spacelike separation must commute. The field is not an observable; its bilinears are. If $\tilde\Psi$ anticommutes with itself at spacelike separation the bilinears commute, while if it commutes the bilinears do not, because the field's commutator is then a nonzero kernel. Locality therefore bears on the bracket, but only through the bilinears, and it is one of two constraints that must agree.</li>
 <li><strong>Positivity.</strong> The inner product on the state space must be positive definite and the Hamiltonian bounded below. For a half-integer-spin field, commuting modes give negative-norm states and a Hamiltonian unbounded below; anticommuting modes give the positive-definite fermionic Fock space and a bounded Hamiltonian.</li>
 </ol>
-<p>The third ingredient is what makes the theorem non-trivial: the two-valuedness of the spinor makes $\tilde\Psi$ and $-\tilde\Psi$ physically indistinguishable, so the sign that separates commuting from anticommuting quantization is invisible in the classical field, and it has to be recovered from the bilinear $\bar{\tilde\Psi}\tilde\Psi$, that is from the norm. Locality and positivity are logically independent, and the theorem is the assertion that they always select the same bracket; for spin $\tfrac12$ both exclude the commuting one, and both exclusions are computed below.</p>
+<p>The third ingredient is what makes the theorem non-trivial: the two-valuedness of the field makes $\tilde\Psi$ and $-\tilde\Psi$ physically indistinguishable, so the sign that separates commuting from anticommuting quantization is invisible in the classical field, and it has to be recovered from the bilinear $\bar{\tilde\Psi}\tilde\Psi$, that is from the norm. Locality and positivity are logically independent, and the theorem is the assertion that they always select the same bracket; for spin $\tfrac12$ both exclude the commuting one, and both exclusions are computed below.</p>
 <p>The biquaternion framework supplies the first ingredient geometrically and the third ingredient only at the level of the finite single-mode algebra; it transcribes the second with the parents' plane-wave fields. The five sections that follow take them up in the order representation, mode, locality, positivity.</p>
 <h2 id="spin-as-a-representation-of-the-rotor-group">Spin as a Representation of the Rotor Group</h2>
 <p>Rotations are realised in $\mathbb{B}$ by rotor conjugation. A rotation through $\theta$ about the unit axis $\vec u$ is generated by the unit real quaternion</p>
 <p>$$
 \tilde u(\theta,\vec u)=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\sum_k \vec u_k\vec e_k\in\mathbb{H}_{\mathbb{B}},\qquad \tilde u\tilde u^{*}=e_t .
 $$</p>
-<p>It is the exponential of the spin angular momentum along $\vec u$. With $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k\in\mathbb{M}_+$ for $k=x,y,z$,</p>
+<p>It is the exponential of the spin angular momentum along $\vec u$. With the spin operators $\tilde S_k$ of <em>Special Element Conventions</em>,</p>
 <p>$$
 \tilde u(\theta,\vec u)=\exp\Big(-i\theta\sum_k\vec u_k\tilde S_k/\hbar\Big)=\exp\Big(\tfrac{\theta}{2}\sum_k\vec u_k\vec e_k\Big),
 $$</p>
-<p>the second form following from the first because $-i\tilde S_k/\hbar=\tfrac12\vec e_k$: the two imaginary units cancel, one from the exponent and one from $\tilde S_k$, by $i^2=-1$. Conjugation by $\tilde u$ rotates the vectors of the material sector $\mathbb{M}_-$, while left multiplication by $\tilde u$ acts on the spinor module and hence on states; the map $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$ on $\mathbb{M}_-$ has kernel $\{\pm e_t\}$ and is the covering homomorphism onto the rotation group. The rotation group is the quotient of the rotor group, which is $SU(2)$, by $\{\pm e_t\}$. These facts are established in the companion articles on angular momentum and on the Lorentz group, and are recalled here because the spin–statistics dichotomy is a statement about which side of the cover a representation lives on.</p>
-<p>The representations of the cover split into two classes, and the theorem's spin input is exactly that split. The biquaternion algebra acts on itself by left multiplication, and this is where its irreducible modules live. As a module over $\mathbb{B}$, the algebra affords only $s=\tfrac12$ — the defining module $S$, since $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and its left regular module is $S\oplus S$ — so the half-integer-spin structure is <strong>native to the algebra as a module</strong>, and it is double-valued, because $-e_t$ acts on a module element as $-\mathrm{id}$. The integer-spin representations are not modules of the algebra. $s=0$ is the centre under conjugation, where every rotor acts trivially; $s=1$ is the <strong>adjoint action</strong> on the three vector units $\vec e_k$ — equivalently on the three imaginary units $i\vec e_k$, since the central $i$ passes through a conjugation unchanged; and conjugation on the four-dimensional $\mathbb{M}_-$ is the direct sum $0\oplus1$ under rotations, the scalar $e_t$ fixed and the vector $\vec e_k$ rotating, which is the four-vector once the boosts are included. Tensor powers fill the rest. The $n$-fold tensor power of the module splits into spins $s=\tfrac{n}{2},\tfrac{n}{2}-1,\dots$, down to $\tfrac12$ for odd $n$ and to $0$ for even $n$, and on every summand $-e_t$ acts as $(-1)^{n}$, one factor of $-1$ from each of the $n$ module elements. So the odd powers carry only half-integer spins and the even powers only integer ones, and the dichotomy is the parity of the power.</p>
+<p>the second form following from the first because $\tilde S_k$ is $\tfrac{\hbar}{2}i\vec e_k$ there, so $-i\tilde S_k/\hbar=\tfrac12\vec e_k$: the two imaginary units cancel, one from the exponent and one from $\tilde S_k$, by $i^2=-1$. Conjugation by $\tilde u$ rotates the vectors of the material sector $\mathbb{M}_-$, while left multiplication by $\tilde u$ acts on the algebra read as a left module, and hence on states; the map $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$ on $\mathbb{M}_-$ has kernel $\{\pm e_t\}$ and is the covering homomorphism onto the rotation group. The rotation group is the quotient of the rotor group, which is $SU(2)$, by $\{\pm e_t\}$. These facts are established in the companion articles on angular momentum and on the Lorentz group, and are recalled here because the spin–statistics dichotomy is a statement about which side of the cover a representation lives on.</p>
+<p>The representations of the cover split into two classes, and the theorem's spin input is exactly that split. The algebra acts on itself by left multiplication, and that action is where its irreducible modules live. Read as a left module over itself, $\mathbb{B}$ affords only $s=\tfrac12$: since $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, the algebra is two copies of the defining module $S$, so the half-integer-spin structure is <strong>native to the algebra as a module</strong>, and it is double-valued, because $-e_t$ acts on every element as $-\mathrm{id}$. The integer-spin representations are not modules of the algebra. $s=0$ is the centre under conjugation, where every rotor acts trivially; $s=1$ is the <strong>adjoint action</strong> on the three vector units $\vec e_k$ — equivalently on the three imaginary units $i\vec e_k$, since the central $i$ passes through a conjugation unchanged; and conjugation on the four-dimensional $\mathbb{M}_-$ is the direct sum $0\oplus1$ under rotations, the scalar $e_t$ fixed and the vector $\vec e_k$ rotating, which is the four-vector once the boosts are included. Tensor powers fill the rest. The $n$-fold tensor power of $S$ splits into spins $s=\tfrac{n}{2},\tfrac{n}{2}-1,\dots$, down to $\tfrac12$ for odd $n$ and to $0$ for even $n$, and on every summand $-e_t$ acts as $(-1)^{n}$, one factor of $-1$ from each of the $n$ factors. So the odd powers carry only half-integer spins and the even powers only integer ones, and the dichotomy is the parity of the power.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -110,15 +110,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Defining spinor module</td>
-<td>$\mathbb{C}^2$ (module)</td>
-<td>left multiplication $\psi\mapsto\tilde U\psi$</td>
+<td>Defining module</td>
+<td>$\mathbb{B}$ as a left module, two copies of $S$</td>
+<td>left multiplication $X\mapsto\tilde uX$</td>
 <td>$-\mathrm{id}$</td>
 <td>$\tfrac12$</td>
 </tr>
 <tr>
 <td>Odd tensor powers</td>
-<td>tensors over the module</td>
+<td>tensor powers of $S$</td>
 <td>left multiplication</td>
 <td>$-\mathrm{id}$</td>
 <td>half-integer</td>
@@ -126,13 +126,13 @@ $$</p>
 <tr>
 <td>Vector (adjoint)</td>
 <td>the vector units $\vec e_k$</td>
-<td>conjugation $\vec Q\mapsto\tilde U\vec Q\tilde U^{*}$</td>
+<td>conjugation $\vec Q\mapsto\tilde u\vec Q\tilde u^{*}$</td>
 <td>$+\mathrm{id}$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>Even tensor powers</td>
-<td>tensors over the module</td>
+<td>tensor powers of $S$</td>
 <td>tensor action</td>
 <td>$+\mathrm{id}$</td>
 <td>integer</td>
@@ -148,14 +148,14 @@ $$</p>
 <p>The $2\pi$ rotation is the nontrivial element of the kernel $\{\pm e_t\}$ of the covering, whatever the axis. Its action therefore separates the two classes of the table above in the sharpest possible way.</p>
 <ul>
 <li>On a <strong>four-vector</strong> $\tilde{Q}\in\mathbb{M}_-$, conjugation by $-e_t$ is trivial, $(-e_t)\tilde{Q}(-e_t)^{*}=\tilde{Q}$. A rotation by $2\pi$ returns a vector to itself; the vector representation is single-valued.</li>
-<li>On a <strong>spinor</strong> $\psi$ in the module, $2\pi$ means left multiplication by $-e_t$, so $\psi\mapsto-\psi$. The spinor representation is double-valued; only a rotation by $4\pi$ returns the spinor to itself.</li>
+<li>On an <strong>element</strong> $X$ of $\mathbb{B}$ read as a left module, $2\pi$ means left multiplication by $-e_t$, so $X\mapsto-X$. The left action of the cover is double-valued; only a rotation by $4\pi$ returns the element to itself.</li>
 </ul>
-<p>The sign is not an artefact of a basis. It is the image of the nontrivial element of $\pi_1(SO^+(1,3))\cong\mathbb{Z}/2$ under the covering homomorphism, and it is why a spinor has no single-valued representative.</p>
-<p>For an <strong>observable</strong> the sign cancels. The gauge-invariant bilinears of a spinor field are quadratic, $\bar{\tilde\Psi}\,\mathcal{O}\,\tilde\Psi$ with $\mathcal{O}$ a fixed element of the algebra and $\bar{\tilde\Psi}X=\mathrm{Sc}(\tilde\Psi^{*}iX\vec e_x)$ the Dirac adjoint, and under $\tilde\Psi\mapsto-\tilde\Psi$ they are unchanged. This is the precise sense in which $\tilde\Psi$ and $-\tilde\Psi$ are physically indistinguishable, and it is why the classical spinor field contains no information about whether its quanta are bosons or fermions. The $2\pi$ sign is a representation-theoretic fact about the spinor module; it is <em>half</em> of the spin–statistics connection, not the whole of it.</p>
+<p>The sign is not an artefact of a basis. It is the image of the nontrivial element of $\pi_1(SO^+(1,3))\cong\mathbb{Z}/2$ under the covering homomorphism, and it is why the left action of the cover has no single-valued representative on the algebra.</p>
+<p>For an <strong>observable</strong> the sign cancels. The gauge-invariant bilinears of the field are quadratic, $\bar{\tilde\Psi}\,\mathcal{O}\,\tilde\Psi$ with $\mathcal{O}$ a fixed element of the algebra and $\bar{\tilde\Psi}X=\mathrm{Sc}(\tilde\Psi^{*}iX\vec e_x)$ the Dirac adjoint, and under $\tilde\Psi\mapsto-\tilde\Psi$ they are unchanged. This is the precise sense in which $\tilde\Psi$ and $-\tilde\Psi$ are physically indistinguishable, and it is why the classical field contains no information about whether its quanta are bosons or fermions. The $2\pi$ sign is a representation-theoretic fact about the defining module; it is <em>half</em> of the spin–statistics connection, not the whole of it.</p>
 <p>At the level of the operator algebra the two signs are worth distinguishing, because they act on different objects. A rotation by $2\pi$ multiplies the field by $-e_t$, so $\tilde\Psi^{\mathrm{fop}}\mapsto-\tilde\Psi^{\mathrm{fop}}$. The parity element $(-1)^F$ acts by inner automorphism on the algebra of the single mode, and it flips exactly the odd elements: $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and likewise $\vec\Upsilon_y$, while $\tilde\Pi_-$ and $e_t$ are fixed. Both operations are $-\mathrm{id}$ on the odd part and $+\mathrm{id}$ on the even part, and that is the operator-level form of $(-1)^{2s}=(-1)^F$ at $s=\tfrac12$. It is a consistency of two structures; it does not yet say that the bracket <em>must</em> anticommute.</p>
 <h2 id="the-algebras-own-one-fermionic-mode">The Algebra's Own One Fermionic Mode</h2>
 <p>The finite-dimensional algebra contains one fermionic mode, and the mode operators are the spin ladder operators. This is the finding of the Fock-space article, and it is the one place where the spin-$\tfrac12$ structure and the fermionic canonical relation are the same elements of $\mathbb{B}$ rather than two structures placed side by side.</p>
-<p>The spin operators are $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k\in\mathbb{M}_+$ for $k=x,y,z$, with the ladder combinations $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$. The Fock-space article's truncated ladder is</p>
+<p>The spin operators are the elements $\tilde S_k\in\mathbb{M}_+$ of <em>Special Element Conventions</em>, with the ladder combinations $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$. The Fock-space article's truncated ladder is the standard pair $\vec\Upsilon_x,\vec\Upsilon_y$ of the same convention, §<em>The Nilpotent Convention</em>,</p>
 <p>$$
 \vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)=\frac{\tilde S_+}{\hbar},\qquad
 \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)=\frac{\tilde S_-}{\hbar},
@@ -171,26 +171,20 @@ $$</p>
 \tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z),\qquad
 (-1)^F=e_t-2\tilde\Pi_-=i\vec e_z=\frac{2\tilde S_z}{\hbar},
 $$</p>
-<p>with $\tilde\Pi_-^2=\tilde\Pi_-$, so that $\tilde\Pi_-$ is a pure-state idempotent and the single-mode occupation is valued in $\{0,1\}$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The parity element is Hermitian, squares to $e_t$, and gives the $\mathbb{Z}/2$ grading by inner automorphism,</p>
+<p>with $\tilde\Pi_-^2=\tilde\Pi_-$ and spectrum $\{0,1\}$, so the single-mode occupation is valued in $\{0,1\}$. The parity element is Hermitian, squares to $e_t$, and gives the $\mathbb{Z}/2$ grading by inner automorphism,</p>
 <p>$$
 (-1)^F\vec\Upsilon_x\,(-1)^F=-\vec\Upsilon_x,\qquad
 (-1)^F\tilde\Pi_-\,(-1)^F=\tilde\Pi_-.
 $$</p>
 <p>This is a sharp statement about the $\mathbb{Z}/2$ grading that the KMS article identifies as missing: for one mode it is not missing at all. It is realized <strong>inside</strong> $\mathbb{B}$ as conjugation by a Hermitian involution of the informational sector, and its odd subspace is the two-complex-dimensional span of $\vec\Upsilon_x$ and $\vec\Upsilon_y$. What the KMS article requires for a field is a grading on the <em>operator algebra of all modes</em>; the single-mode element above is not that, and the field grading is not an element of $\mathbb{B}$ by the dimension count. The two statements are compatible: the grading is algebraic for one mode and external for the field.</p>
-<p>The bosonic counterpart fails for a sharper reason, a trace identity, worth recording separately from the dimension count. In $\mathbb{B}$ a canonical commutator would have to be central, $[\vec\Upsilon_x,\vec\Upsilon_y]=c\,e_t$ with $c\in\mathbb{C}$, since the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. It is not central: the computed value is $i\vec e_z$, which anticommutes with $\vec e_x$ and with $\vec e_y$ and so lies outside the centre. That alone rules the relation out. The trace argument then rules out a central value independently, and it is worth recording because it uses nothing but linearity: with $\operatorname{Tr}_2$ the trace on the $2\times2$ reading of an element, $\operatorname{Tr}_2(e_t)=2\,\mathrm{Sc}(e_t)=2$, so</p>
+<p>The bosonic counterpart fails for a sharper reason, a trace identity, worth recording separately from the dimension count. In $\mathbb{B}$ a canonical commutator would have to be central, $[\vec\Upsilon_x,\vec\Upsilon_y]=c\,e_t$ with $c\in\mathbb{C}$, since the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. It is not central: the computed value is $i\vec e_z$, which anticommutes with $\vec e_x$ and with $\vec e_y$ and so lies outside the centre. That alone rules the relation out. The trace argument then rules out a central value independently, and it uses nothing but linearity: the scalar part annihilates every commutator, $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$, while $\mathrm{Sc}(c\,e_t)=c$, so</p>
 <p>$$
-0=\operatorname{Tr}_2\big([\vec\Upsilon_x,\vec\Upsilon_y]\big)=c\,\operatorname{Tr}_2(e_t)=2c,
+0=\mathrm{Sc}\big([\vec\Upsilon_x,\vec\Upsilon_y]\big)=c,
 $$</p>
 <p>and hence $c=0$. No pair in $\mathbb{B}$ realizes the Heisenberg relation. The algebra hosts one fermionic mode and no bosonic mode; the second relation, $\vec\Upsilon_x\vec\Upsilon_y=e_t-\vec\Upsilon_y\vec\Upsilon_x$, which a fermionic mode satisfies and a bosonic mode cannot, is the identity that decides it.</p>
 <p>The dimension count makes the same point. $\dim_\mathbb{C}M_2(\mathbb{C})=4=\dim_\mathbb{C}\mathbb{B}$, and the four elements $e_t,\vec\Upsilon_x,\vec\Upsilon_y,\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ span the algebra; one mode saturates it, so no second mode can be added, since $m$ fermionic modes generate $M_{2^m}(\mathbb{C})$, of dimension $4^m$, which exceeds four as soon as $m\ge2$. Whether the framework <em>selects</em> the fermionic structure, or merely has room for exactly one instance of it, is the open question the Fock-space article raises and this article does not decide. The single-mode coincidence is exact; it is a coincidence of dimensions until something more is said.</p>
 <h2 id="microcausality-the-equal-time-brackets">Microcausality: The Equal-Time Brackets</h2>
-<p>The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$, fixed once here and used unchanged below:</p>
-<p>$$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu}
-=\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},\qquad
-\tilde\nabla^{\natural}=\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
-$$</p>
-<p>with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$ and $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$; on the material sector $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$, so $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$. No other derivative operator is written.</p>
+<p>The operator-level content of the theorem is a computation with the parents' free field. Every derivative of the field in this article is the corpus gradient $\tilde\nabla$ or its conjugate $\tilde\nabla^{\natural}$ of <em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>, with $\Box=\tilde\nabla\tilde\nabla^{\natural}$ the d'Alembertian there; on the material sector $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$, so $\Box=\Delta_Q-c^{-2}\partial^2/\partial t'^2$. No other derivative operator is written.</p>
 <p>The field is the element-valued map $\tilde\Psi^{\mathrm{fop}}:\mathbb{R}^{1,3}\to\mathbb{B}$ of <em>Canonical Quantization of the Biquaternion Dirac Field</em>, with the mode expansion</p>
 <p>$$
 \tilde\Psi^{\mathrm{fop}}(X,t')=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
@@ -203,7 +197,7 @@ $$</p>
 \tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad
 \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
 $$</p>
-<p>the mass being the off-diagonal coupling of the two halves. On the single element that carries the four components of the spinor it is one two-sided action, written with both elements in position:</p>
+<p>the mass being the off-diagonal coupling of the two halves. On the single element that carries the four complex components of the field it is one two-sided action, written with both elements in position:</p>
 <p>$$
 \mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial Q_k}\vec e_y .
 $$</p>
@@ -263,7 +257,7 @@ $$</p>
 $$</p>
 <p>with $\bar{\tilde\Psi}^{\mathrm{fop}}(y)=\tilde\Psi^{\mathrm{fop}\dagger}(y)\,i\vec e_x$ the Dirac adjoint written with its right multiplication in position. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases — the Pauli–Jordan-type kernel, supported inside the light cone and vanishing for spacelike separation — and $G_{\mathrm{S}}$ is the symmetric combination, which does not vanish there. The anticommutator is a $c$-number and equals its own vacuum expectation; under anticommutation relations the commutator is not a $c$-number, and the second identity is its vacuum expectation, whose $c$-number part is what carries $G_{\mathrm{S}}$. The anticommutator inherits the vanishing of $\Delta_{\mathrm{A}}$; the commutator's vacuum expectation inherits the non-vanishing of $G_{\mathrm{S}}$. At equal times these reduce to the delta and to the Bessel kernel computed above. The exact normalizations of $\Delta_{\mathrm{A}}$ and $G_{\mathrm{S}}$ carry the conventional factor of $i$; the covariant form is the standard textbook identity and is recorded as such, and the equal-time form is what was recomputed here.</p>
 <h2 id="the-energy-and-the-norm">The Energy and the Norm</h2>
-<p>The third ingredient is positivity, and it is where the finite algebra has a native statement. With the mode expansion, the Hamiltonian of the free spinor field is</p>
+<p>The third ingredient is positivity, and it is where the finite algebra has a native statement. With the mode expansion, the Hamiltonian of the free field is</p>
 <p>$$
 H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,
 \big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r-b^{\mathrm{fop}}_rb^{\mathrm{fop}\dagger}_r\big).
@@ -274,7 +268,7 @@ H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,
 \big(a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r+b^{\mathrm{fop}\dagger}_rb^{\mathrm{fop}}_r\big)+E_0,
 $$</p>
 <p>which is non-negative on the Fock space up to the c-number $E_0$ that normal ordering removes. With the <strong>Bose choice</strong>, $b^{\mathrm{fop}}b^{\mathrm{fop}\dagger}=1+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}}$, and the antiparticle contribution enters with the opposite sign, $a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}}$: the energy is unbounded below as antiparticle number grows, and the vacuum is unstable. The same sign appears in the norm: the anticommutator gives the positive-definite fermionic Fock space, the commutator gives an indefinite metric. This is the parent quantization article's argument, and it is stated here because it is half of the theorem's force.</p>
-<p>The finite algebra shows the same identity in miniature. The single fermionic mode satisfies $\vec\Upsilon_x\vec\Upsilon_y=e_t-\vec\Upsilon_y\vec\Upsilon_x$, so the normal-ordered Hamiltonian of one mode is $\hbar\omega\,\vec\Upsilon_y\vec\Upsilon_x\ge 0$ on the module, with spectrum $\{0,\hbar\omega\}$ because $\tilde\Pi_-$ is an idempotent. Its would-be bosonic partner would need $\vec\Upsilon_x\vec\Upsilon_y=e_t+\vec\Upsilon_y\vec\Upsilon_x$, i.e. $[\vec\Upsilon_x,\vec\Upsilon_y]=e_t$, which the trace identity excludes. The positivity of the energy and the fermionic bracket are the same statement about the sign in $\vec\Upsilon_x\vec\Upsilon_y=e_t\mp\vec\Upsilon_y\vec\Upsilon_x$.</p>
+<p>The finite algebra shows the same identity in miniature. The single fermionic mode satisfies $\vec\Upsilon_x\vec\Upsilon_y=e_t-\vec\Upsilon_y\vec\Upsilon_x$, so the normal-ordered Hamiltonian of one mode is $\hbar\omega\,\vec\Upsilon_y\vec\Upsilon_x\ge 0$ on the algebra, with spectrum $\{0,\hbar\omega\}$ because $\tilde\Pi_-^2=\tilde\Pi_-$. Its would-be bosonic partner would need $\vec\Upsilon_x\vec\Upsilon_y=e_t+\vec\Upsilon_y\vec\Upsilon_x$, i.e. $[\vec\Upsilon_x,\vec\Upsilon_y]=e_t$, which the trace identity excludes. The positivity of the energy and the fermionic bracket are the same statement about the sign in $\vec\Upsilon_x\vec\Upsilon_y=e_t\mp\vec\Upsilon_y\vec\Upsilon_x$.</p>
 <h2 id="the-four-quantizations">The Four Quantizations</h2>
 <p>Collecting the two spin classes and the two brackets, four pairings are possible, and the theorem is the statement that two of them fail.</p>
 <div class="table-scroll"><table>
@@ -296,13 +290,13 @@ $$</p>
 <tr>
 <td>Half-integer</td>
 <td>Anticommutator</td>
-<td>genuine spin rep, $-e_t\mapsto-1$</td>
+<td>genuine two-valued representation, $-e_t\mapsto-1$</td>
 <td>consistent: Dirac field, positive norm, bounded energy</td>
 </tr>
 <tr>
 <td>Half-integer</td>
 <td>Commutator</td>
-<td>genuine spin rep</td>
+<td>genuine two-valued representation</td>
 <td>fails microcausality (Bessel kernel above) and has unbounded energy</td>
 </tr>
 <tr>
@@ -313,16 +307,16 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The integer-spin row is the parents' integer-spin case. The biquaternion Maxwell field lives in $\mathbb{M}_-$, the vector representation, on which $-e_t$ acts trivially, and its canonical quantization uses commutators; the scalar (Klein–Gordon) field has a commutator equal to the antisymmetric Pauli–Jordan kernel, which vanishes for spacelike separation, while its symmetric kernel does not. The half-integer rows are the spinor-module case computed above. The two surviving pairings are precisely the two inequivalent structures the algebra carries: the double-valued module paired with anticommutators, and the single-valued material-sector representation paired with commutators.</p>
+<p>The integer-spin row is the parents' integer-spin case. The biquaternion Maxwell field lives in $\mathbb{M}_-$, the vector representation, on which $-e_t$ acts trivially, and its canonical quantization uses commutators; the scalar (Klein–Gordon) field has a commutator equal to the antisymmetric Pauli–Jordan kernel, which vanishes for spacelike separation, while its symmetric kernel does not. The half-integer rows are the defining-module case computed above. The two surviving pairings are precisely the two inequivalent structures the algebra carries: the double-valued module paired with anticommutators, and the single-valued material-sector representation paired with commutators.</p>
 <p>The table also displays what the framework does and does not explain. The <em>spin class</em> column is algebraic: integer versus half-integer is the descent condition for the rotor action, and the $2\pi$ sign is the action of $-e_t$, both recomputed in $\mathbb{B}$. The <em>bracket</em> column is transcribed from field theory; the algebra does not, at the level developed here, force the pairing. And the two columns are tied together only through the theorem, which is why the one-mode coincidence of <em>The Algebra's Own One Fermionic Mode</em> is suggestive but not decisive: it exhibits one entry of the table — half-integer spin, anticommutator — inside $\mathbb{B}$, and says nothing about the other three.</p>
 <h2 id="what-the-framework-establishes-and-what-it-only-transcribes">What the Framework Establishes and What It Only Transcribes</h2>
 <p><strong>Established, and recomputed.</strong></p>
 <ul>
 <li>The rotor group of unit real quaternions is the double cover of the rotation group; the rotor through $2\pi$ about any axis is $-e_t$, and through $4\pi$ is $e_t$.</li>
-<li>Under the rotor action, the half-integer-spin representations live on the odd tensor powers of the spinor module, where $-e_t$ acts as $(-1)^{2s}=-1$, while the integer-spin representations live on the material sector $\mathbb{M}_-$ and on the even tensor powers, where $-e_t$ acts as $+1$. The algebra affords $s=\tfrac12$ as a module, $s=0$ on the centre under conjugation, and $s=1$ through the adjoint action on the three vector units $\vec e_k$, the spatial part of $\mathbb{M}_-$.</li>
-<li>The single-mode ladder operators are the spin ladder operators, $\vec\Upsilon_x=\tilde S_+/\hbar$, and satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$; the number operator is the idempotent $\tilde\Pi_-$; and the fermion-parity grading is the inner automorphism by $(-1)^F=i\vec e_z=2\tilde S_z/\hbar$, an element of $\mathbb{M}_+$.</li>
-<li>No bosonic mode exists in $\mathbb{B}$. The target relation $[\vec\Upsilon_x,\vec\Upsilon_y]=e_t$ has $\operatorname{Tr}_2=2$, while the trace of any commutator is $0$; and the computed commutator $i\vec e_z$ is not central, so no rescaling of it can produce a central value either.</li>
-<li>For the free spin-$\tfrac12$ field built on the module, the equal-time anticommutator is $\delta_{\mu\nu}\delta^{(3)}(\vec\Delta)$ and the equal-time commutator is a nonzero kernel at every $\vec\Delta\ne 0$. The spatial part of $\mathbb{D}_p$ and the mass term are odd in $\vec p$ and cancel, while the time part is even and survives.</li>
+<li>Under the rotor action, the half-integer-spin representations live on the odd tensor powers of the defining module, where $-e_t$ acts as $(-1)^{2s}=-1$, while the integer-spin representations live on the material sector $\mathbb{M}_-$ and on the even tensor powers, where $-e_t$ acts as $+1$. The algebra affords $s=\tfrac12$ as a module, $s=0$ on the centre under conjugation, and $s=1$ through the adjoint action on the three vector units $\vec e_k$, the spatial part of $\mathbb{M}_-$.</li>
+<li>The single-mode ladder operators are the spin ladder operators, $\vec\Upsilon_x=\tilde S_+/\hbar$, and satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$; the number operator is $\tilde\Pi_-$, with $\tilde\Pi_-^2=\tilde\Pi_-$; and the fermion-parity grading is the inner automorphism by $(-1)^F=i\vec e_z=2\tilde S_z/\hbar$, an element of $\mathbb{M}_+$.</li>
+<li>No bosonic mode exists in $\mathbb{B}$. The target relation $[\vec\Upsilon_x,\vec\Upsilon_y]=e_t$ has $\mathrm{Sc}=1$, while the scalar part of any commutator is $0$; and the computed commutator $i\vec e_z$ is not central, so no rescaling of it can produce a central value either.</li>
+<li>For the free spin-$\tfrac12$ field built on the algebra, the equal-time anticommutator is $\delta_{\mu\nu}\delta^{(3)}(\vec\Delta)$ and the equal-time commutator is a nonzero kernel at every $\vec\Delta\ne 0$. The spatial part of $\mathbb{D}_p$ and the mass term are odd in $\vec p$ and cancel, while the time part is even and survives.</li>
 <li>The sign in $\vec\Upsilon_x\vec\Upsilon_y=e_t\mp\vec\Upsilon_y\vec\Upsilon_x$ is the sign of the antiparticle term in the Hamiltonian and the sign that decides positivity of the norm.</li>
 </ul>
 <p><strong>Transcribed, not derived.</strong></p>
@@ -344,7 +338,7 @@ $$</p>
 <p><strong>5. The massless limit and chirality.</strong> The microcausality failure of the commutator was computed at $m>0$, where the surviving function is built on the Bessel kernel $K_1$. As $m\to 0$ the function $F$ becomes $1/(2\pi^2|\vec\Delta|^2)$ and still does not vanish, so the massless case is not qualitatively different. At $m=0$ the chiral pair decouples into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, each carrying one helicity; how the chiral pair and the helicity–chirality locking enter the theorem is not developed here.</p>
 <p><strong>6. Empirical content.</strong> The construction reproduces standard field theory. Any deviation would have to appear where the algebra is used beyond transcription — for example in a modification of the one-mode identification or in the coupling to the material sector; none is visible at the level developed here.</p>
 <h2 id="summary">Summary</h2>
-<p>The spin–statistics theorem pairs half-integer spin with anticommutators and integer spin with commutators. In the biquaternion framework the spin half of the theorem is algebraic and exact: the rotor group of unit real quaternions is the double cover of the rotation group, the rotor through $2\pi$ is $-e_t$, half-integer-spin representations live on the odd tensor powers of the spinor module, where $-e_t$ acts as $-\mathrm{id}$, and integer-spin representations live on the material sector $\mathbb{M}_-$ and on the even tensor powers, where it acts as $+\mathrm{id}$. The framework's finite algebra also contains one fermionic mode, whose ladder operators are the spin ladder operators, $\vec\Upsilon_x=\tilde S_+/\hbar$, and whose parity grading is the Hermitian element $(-1)^F=i\vec e_z=2\tilde S_z/\hbar$; no bosonic mode exists, because a canonical commutator would be central and traceless.</p>
+<p>The spin–statistics theorem pairs half-integer spin with anticommutators and integer spin with commutators. In the biquaternion framework the spin half of the theorem is algebraic and exact: the rotor group of unit real quaternions is the double cover of the rotation group, the rotor through $2\pi$ is $-e_t$, half-integer-spin representations live on the odd tensor powers of the defining module, where $-e_t$ acts as $-\mathrm{id}$, and integer-spin representations live on the material sector $\mathbb{M}_-$ and on the even tensor powers, where it acts as $+\mathrm{id}$. The framework's finite algebra also contains one fermionic mode, whose ladder operators are the spin ladder operators, $\vec\Upsilon_x=\tilde S_+/\hbar$, and whose parity grading is the Hermitian element $(-1)^F=i\vec e_z=2\tilde S_z/\hbar$; no bosonic mode exists, because a canonical commutator would be central and traceless.</p>
 <p>The statistics half is transcribed with the parents' field. For the free spin-$\tfrac12$ field, the equal-time anticommutator is $\delta_{\mu\nu}\delta^{(3)}(\vec\Delta)$, the spatial part of $\mathbb{D}_p$ and the mass term cancelling as odd functions of $\vec p$; the equal-time commutator, by contrast, leaves the kernel $i\,mF(\vec\Delta)\,\vec e_x-i\sum_k\vec e_k\vec e_z\,\nabla_kF(\vec\Delta)$ and fails to vanish at any spatial separation. The same sign that selects the anticommutator selects the positive sign in $\vec\Upsilon_x\vec\Upsilon_y=e_t-\vec\Upsilon_y\vec\Upsilon_x$, and hence a bounded Hamiltonian and a positive-definite norm.</p>
 <p>What the framework establishes is that the two pairings which survive the theorem are the two inequivalent structures the algebra actually carries, and that the $2\pi$ sign which distinguishes them is an element of the algebra. What it does not establish is that the algebra forces the pairing; spin–statistics is exhibited in biquaternionic form, not derived from it. The one-mode coincidence is the visible edge of the question, and it is left as the article's central open problem.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -377,12 +371,8 @@ $$</p>
 <td>Real-quaternion subspace; centre $\mathbb{C}e_t$</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i\vec e_k)=\sigma_k$, $k=x,y,z$</td>
-<td>Isomorphism with $M_2(\mathbb{C})$; $\sigma_k$ are the three Pauli matrices</td>
-</tr>
-<tr>
-<td>$\operatorname{Tr}_2(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$</td>
-<td>Trace reading of the plain form on the informational sector; $\operatorname{Tr}_2$ is the $2\times2$ trace, the $4\times4$ one being four times the scalar part</td>
+<td>$\mathrm{Sc}(X)=X_t$</td>
+<td>Scalar part of an element; it annihilates every commutator, $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$</td>
 </tr>
 <tr>
 <td>$\tilde u(\theta,\vec u)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\sum_k \vec u_k\vec e_k$</td>
@@ -390,7 +380,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde u(2\pi,\vec u)=-e_t$, $\tilde u(4\pi,\vec u)=e_t$</td>
-<td>The two-valued sign of the spinor module</td>
+<td>The two-valued sign of the left action on the algebra</td>
 </tr>
 <tr>
 <td>$\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$</td>
@@ -402,7 +392,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$</td>
-<td>Single-mode number operator (idempotent)</td>
+<td>Single-mode number operator, with $\tilde\Pi_-^2=\tilde\Pi_-$</td>
 </tr>
 <tr>
 <td>$(-1)^F=i\vec e_z=e_t-2\tilde\Pi_-=2\tilde S_z/\hbar$</td>
@@ -413,8 +403,8 @@ $$</p>
 <td>Fermionic mode relation; failure of the bosonic relation</td>
 </tr>
 <tr>
-<td>$\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$, $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$</td>
-<td>Corpus gradient, its quaternion conjugate and the d'Alembertian; $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$</td>
+<td>$\tilde\nabla$, $\tilde\nabla^{\natural}$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$</td>
+<td>Corpus gradient, its quaternion conjugate and the d'Alembertian (<em>Operator and Calculus Conventions</em>, §<em>The Gradient</em>)</td>
 </tr>
 <tr>
 <td>$\mathbb{D}\tilde X=-\partial\tilde X/\partial t'\,\vec e_x-\sum_k\vec e_k\,\partial\tilde X/\partial Q_k\,\vec e_y$</td>
@@ -487,7 +477,7 @@ $$</p>
 <li>R. Haag, <em>Local Quantum Physics</em> (2nd ed., Springer, 1996), for the algebraic formulation and the role of the grading.</li>
 <li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1 (Cambridge, 1995), and M. E. Peskin and D. V. Schroeder, <em>An Introduction to Quantum Field Theory</em> (Addison-Wesley, 1995), for the standard equal-time and covariant two-point functions used here.</li>
 <li>J. D. Bjorken and S. D. Drell, <em>Relativistic Quantum Fields</em> (McGraw–Hill, 1965), for the spin sums, the Pauli–Jordan function and the microcausality computation.</li>
-<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the Clifford-algebra origin of the spin group and its double cover.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the origin of the spin group and its double cover.</li>
 <li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the rotor realization of rotations and its two-valuedness.</li>
 <li>Companion articles: <a href="canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>; <a href="fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a>; <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>; <a href="angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a>; <a href="the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a>; <a href="the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a>; <a href="the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html">The Spinor Representation of the Lorentz Group in Biquaternionic Form</a>; <a href="the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a>; <a href="canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a>; <a href="the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>.</li>
 </ul>

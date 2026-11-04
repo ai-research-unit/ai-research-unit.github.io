@@ -92,17 +92,17 @@ $$
 \mathcal{M}(\tilde P)=0\iff p^2=m^2\iff E_{\vec p}^2=\vec p^{\,2}+m^2,
 $$
 with the wave biquaternion $\tilde P=iEe_t+\vec p$ and its quaternion conjugate $\tilde P^{\natural}=iEe_t-\vec p$. The sign comes from the central unit, $(iE)^2=i^2E^2=-E^2$, and $\vec p^{\,2}=p_x^2+p_y^2+p_z^2$ is the Euclidean square: the quaternion square is $\vec p\,\vec p=-\vec p^{\,2}$, which is why the product reads $-E^2+\vec p^{\,2}$ and not $-E^2-\vec p^{\,2}$. The product is central, $\tilde P\tilde P^{\natural}=(-E^2+\vec p^{\,2})e_t=-p^2e_t$, so the mass shell is a <strong>level set of the biquaternion norm</strong>.</li>
-<li><strong>Established (algebra).</strong> For a scalar field, amputation is multiplication by $\mathcal{M}(\tilde P)$, the inverse of the propagator $D_F=1/(\mathcal{M}(\tilde P)-i\epsilon)$. On real momenta $\mathcal{M}$ is a <strong>real</strong> central scalar, so it multiplies all four complex components identically and commutes with the conjugation $\flat$, hence with the sector projections. Relative to the standard wave operator it carries a factor $-1$ per leg, which is a sign convention on the external states and not a physical difference.</li>
+<li><strong>Established (algebra).</strong> For a scalar field, amputation is multiplication by $\mathcal{M}(\tilde P)$, the inverse of the propagator $D_F=1/(\mathcal{M}(\tilde P)-i\epsilon)$. On real momenta $\mathcal{M}$ is a <strong>real</strong> central scalar, so it multiplies all four complex components identically and commutes with the conjugation $\flat$, hence with the two sectors. Relative to the standard wave operator it carries a factor $-1$ per leg, which is a sign convention on the external states and not a physical difference.</li>
 <li><strong>Established (algebra).</strong> The wave-function renormalization is the residue at the biquaternion-norm pole,
 $$
 Z=\lim_{p^2\to m^2}\big(m^2-p^2\big)\,D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}(\tilde P)\,D_F,
 $$
 and the asymptotic field carries $\sqrt Z$ per leg, which is the factor the formula's $Z^{-1/2}$ removes. Checked on a model propagator with a nonzero residue and a regular part.</li>
-<li><strong>Established (algebra).</strong> For a <strong>scalar</strong> biquaternion field the amputation is a real central scalar, so the reduction is one scalar reduction repeated on the four components, with no mixing; the two sectors are related by multiplication by the central $i$ rather than being independent field copies. For a <strong>spinor</strong> field the amputation is the cell $\mathcal{D}(p)-m$. Its pole is still the central scalar $p^2=m^2$; its residue is the cell $\mathcal{D}(p)+m$, which the spin sum writes as $\sum_r w^{(r)}\bar w^{(r)}$. The residue is therefore rank two, not scalar: a spinor leg is a sum of two spin-state reductions with a common pole, and the chirality is the cell that anticommutes with $\mathcal{D}(p)$ and commutes with the mass.</li>
-<li><strong>One-mode truncation.</strong> Conditional on the one-mode identification of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, the LSZ reduction for a single mode is a $2\times2$ matrix statement, and the algebra hosts at most that one mode. The field-level reduction is an operation on the module, not an element of $\mathbb{B}$; the same module gap that the S-matrix, Fock, Wick, and Bogoliubov articles record.</li>
+<li><strong>Established (algebra).</strong> For a <strong>scalar</strong> biquaternion field the amputation is a real central scalar, so the reduction is one scalar reduction repeated on the four coefficients, with no mixing; the two sectors are related by multiplication by the central $i$ rather than being independent field copies. For a field <strong>with spin</strong> the amputation is the action $\mathcal{A}_p-m$ on the element. Its pole is still the central scalar $p^2=m^2$; its residue is the action $\mathcal{A}_p+m$, which the spin sum writes as $\sum_r \tilde W^{(r)}\bar{\tilde W}^{(r)}$. The residue is therefore of rank two, not scalar: a leg of that field is a sum of two spin-state reductions with a common pole, and the momentum action exchanges the two values of the chirality while the mass keeps each of them.</li>
+<li><strong>One-mode truncation.</strong> Conditional on the one-mode identification of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, the LSZ reduction for a single mode closes inside $\mathbb{B}$: the residue is the unit of the algebra times $i$, so $Z=1$ exactly, and the algebra hosts at most that one mode. The field-level reduction is an operation on the Fock space, not an element of $\mathbb{B}$; the same gap that the S-matrix, Fock, Wick, and Bogoliubov articles record.</li>
 <li><strong>Standard, and transcribed.</strong> The derivation of LSZ from the asymptotic conditions, the adiabatic switching, the $Z$ factors, the free-field limit, and the momentum-conservation delta functions. The algebra supplies the mass-shell symbol and the plane waves, not the reduction theorem.</li>
 </ul>
-<p>The article proceeds as follows. The next section states the formula and sketches its derivation from asymptotic fields. A section identifies the amputation with the inverse mass-shell operator. A section fixes the external wavefunctions as biquaternion plane waves. A section treats the wave-function renormalization as a residue, verified numerically. A section treats the scalar case and the spinor case, the latter with the two Dirac equations of the corpus and with the chirality split. A section treats the one-mode truncation and the module gap. Two sections treat the reduction from the functional integral and the spectral representation. A section separates what is established from what is interpretation, and the Gamma Formulation names the frame cells used in the body.</p>
+<p>The article proceeds as follows. The next section states the formula and sketches its derivation from asymptotic fields. A section identifies the amputation with the inverse mass-shell operator. A section fixes the external wavefunctions as biquaternion plane waves. A section treats the wave-function renormalization as a residue, verified numerically. A section treats the scalar case and the spin case, the latter with the two Dirac equations of the corpus and with the two values of the chirality. A section treats the one-mode truncation and the gap. Two sections treat the reduction from the functional integral and the spectral representation. A section separates what is established from what is interpretation, and the closing section states the Pauli and gamma formulation that the body replaces by elements of $\mathbb{B}$.</p>
 <h2 id="the-lsz-formula">The LSZ Formula</h2>
 <p>The reduction is a statement about the asymptotic behaviour of correlation functions, and it is worth stating the logic before using it.</p>
 <p><strong>Asymptotic fields.</strong> A renormalized field $\tilde\Phi$ is supposed to approach, at early and late times, a free field of the same mass,
@@ -127,7 +127,7 @@ so multiplying by $\mathcal{M}(p^2)=m^2-p^2$, equivalently by $-(p^2-m^2)$, and 
 $$
 \big(\Box-m^2\big) \;\longrightarrow\; p^2-m^2 \;=\; -\big(\tilde P\tilde P^{\natural}+m^2\big) \;=\; -\,\mathcal{M}(\tilde P) ,
 $$
-so the amputation is multiplication by the inverse propagator $\mathcal{M}(\tilde P)$ in momentum space, equivalently by the negative of the wave operator's symbol. The two conventions differ by a factor $-1$ per leg, which is the same sign convention on the external states; no pole and no residue is affected. The mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=m^2-p^2$ is the object whose vanishing is the shell, $\mathcal{M}(\tilde P)=0$, i.e. $\tilde P\tilde P^{\natural}=-m^2$. The remaining sections spell out the consequence: the amputation <em>operator</em> is a real central scalar for a scalar field and a cell for a spinor field, while the pole $\mathcal{M}(\tilde P)=0$ is the same central scalar in both cases.</p>
+so the amputation is multiplication by the inverse propagator $\mathcal{M}(\tilde P)$ in momentum space, equivalently by the negative of the wave operator's symbol. The two conventions differ by a factor $-1$ per leg, which is the same sign convention on the external states; no pole and no residue is affected. The mass-shell operator $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=m^2-p^2$ is the object whose vanishing is the shell, $\mathcal{M}(\tilde P)=0$, i.e. $\tilde P\tilde P^{\natural}=-m^2$. The remaining sections spell out the consequence: the amputation is a real central scalar for a scalar field and an action on the element for a field with spin, while the pole $\mathcal{M}(\tilde P)=0$ is the same central scalar in both cases.</p>
 <h2 id="amputation-as-the-inverse-mass-shell-operator">Amputation as the Inverse Mass-Shell Operator</h2>
 <p>The propagator and the mass-shell operator are algebraic inverses, and LSZ is the statement of that inversion.</p>
 <p><strong>The inversion.</strong> In momentum space the Feynman propagator is
@@ -143,7 +143,7 @@ and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathca
 $$
 \big(\mathcal{M}\tilde\Phi\big)^{\flat} = \bar{\mathcal{M}}\,\tilde\Phi^{\flat} = \mathcal{M}\,\tilde\Phi^{\flat},
 $$
-the twist of $\flat$ cancelling $\mathcal{M}^{\flat}=-\bar{\mathcal{M}}$ on a central factor, so it maps each sector into itself and commutes with the sector projections, $\big(\mathcal{M}\tilde\Phi\big)_{\pm}=\mathcal{M}\,\tilde\Phi_{\pm}$ with $\tilde\Phi_{\pm}=\tfrac12(\tilde\Phi\pm\tilde\Phi^{\flat})$ (the $+$ part is the one fixed by $\flat$, hence in $\mathbb{M}_-$). A central scalar that is not real does the opposite: the unit $i$ exchanges the two sectors, $i\,\mathbb{M}_{-}=\mathbb{M}_{+}$, because it flips the Hermiticity of an element. The $i\epsilon$ of the prescription is the one complex central factor in the operator: it displaces the pole, and being non-real it exchanges the sectors like the unit $i$ itself, so it does not split the field into two independent copies. This distinction — central for all, real for the split — is the algebraic content of the scalar reduction below.</p>
+the twist of $\flat$ cancelling $\mathcal{M}^{\flat}=-\bar{\mathcal{M}}$ on a central factor, so it maps each sector into itself and acts on the two sector parts $\tilde\Phi_\pm$ as the same number, the part fixed by $\flat$ lying in $\mathbb{M}_-$ (<em>Algebra and Element Conventions</em>). A central scalar that is not real does the opposite: the unit $i$ exchanges the two sectors, $i\,\mathbb{M}_{-}=\mathbb{M}_{+}$, because it flips the Hermiticity of an element. The $i\epsilon$ of the prescription is the one complex central factor in the operator: it displaces the pole, and being non-real it exchanges the sectors like the unit $i$ itself, so it does not split the field into two independent copies. This distinction — central for all, real for the split — is the algebraic content of the scalar reduction below.</p>
 <p><strong>The pole set is a biquaternion-norm level set.</strong> The mass shell $\mathcal{M}(\tilde P)=0$ is the statement $\tilde P\tilde P^{\natural}=-m^2$, a level set of the biquaternion norm. For $m=0$ it is the zero set of the biquaternion norm, i.e. the zero-divisor cone, the light cone of <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>. The reduction formula thus places the external legs on a level set of the same biquaternion norm that determines the algebra's singular elements, the metric, and the zero-divisor cone; the mass shell and the light cone are the $m\ne0$ and $m=0$ members of one family. A numerical check with $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ gives $\vec p^{\,2}=2.11$ and $E_{\vec p}^2=2.60$, hence
 $$
 \tilde P\tilde P^{\natural} = (iE)^2+\vec p^{\,2} = -2.60+2.11 = -0.490000 = -m^2 ,
@@ -162,7 +162,7 @@ $$
 \big(\Box-m^2\big)\tilde\Phi_{\tilde P} \;\longrightarrow\; -\big(\tilde P\tilde P^{\natural}+m^2\big)\tilde\Phi_{\tilde P} = -\,\mathcal{M}(\tilde P)\,\tilde\Phi_{\tilde P},
 $$
 which vanishes for $\tilde P\tilde P^{\natural}=-m^2$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde{R})=-p\cdot x$ with $p\cdot x=Et'-\vec p\cdot\vec x$, the corpus's four-vector notation, so $\exp(i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{R}))=\exp(-ip\cdot x)$ is the positive-frequency mode and the wave is a <strong>central-phase</strong> plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central. Being complex, the phase is central but not real: it multiplies every component by the same complex number, and because that number is not real it re-mixes the two sectors instead of preserving them, so the sector split is a split of the field and never of the phase.</p>
-<p><strong>The one-particle states.</strong> The asymptotic states are one-particle states of the Fock module of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, labeled by on-shell momenta and by the internal (spinor or helicity) label carried by the module. The external wavefunction is the constant amplitude $\tilde Q^{\mathrm{amp}}$ times the central phase; for a scalar field it is an element of $\mathbb{B}$, while for a spinor field the same slot carries the spinor $w^{(r)}$ of the spinor case below, bare by the rule that a spinor carries no tilde. The LSZ integral projects a correlation function onto that amplitude.</p>
+<p><strong>The one-particle states.</strong> The asymptotic states are one-particle states of the Fock space constructed in <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, labelled by on-shell momenta and by the internal spin label of the one-particle state. The external wavefunction is the constant amplitude $\tilde Q^{\mathrm{amp}}$ times the central phase; for a scalar field it is an element of $\mathbb{B}$, while for a field with spin the same slot carries the spin amplitude $\tilde W^{(r)}$ of the spin case below. The LSZ integral projects a correlation function onto that amplitude.</p>
 <p><strong>Momentum conservation.</strong> The integrals over the leg positions produce the momentum-conserving delta function
 $$
 (2\pi)^4\delta^{(4)}\Big(\sum p_i-\sum p_j\Big),
@@ -178,7 +178,7 @@ the wave-function renormalization is
 $$
 Z = \lim_{p^2\to m^2}\big(m^2-p^2\big)\,D_F(p^2) = \lim_{\mathcal{M}\to0}\mathcal{M}(\tilde P)\,D_F,
 $$
-the coefficient of the simple pole. In the framework the pole is at $\mathcal{M}(\tilde P)=0$, i.e. at $p^2=m^2$. For a scalar field the residue is a central scalar, real for real momenta; for a spinor field it is a cell, and the spinor section takes that case. The physical normalization is $\sqrt Z$ per external leg in either case.</p>
+the coefficient of the simple pole. In the framework the pole is at $\mathcal{M}(\tilde P)=0$, i.e. at $p^2=m^2$. For a scalar field the residue is a central scalar, real for real momenta; for a field with spin it is an action on the element, and the spin case below takes that form. The physical normalization is $\sqrt Z$ per external leg in either case.</p>
 <p><strong>Free field.</strong> For the free field $Z=1$: the two-point function is the free propagator $D_F=1/(\mathcal{M}-i\epsilon)$, and the amputated two-point function is the constant $1$: amputation removes the only propagator there was, so the free S-matrix is the identity. This was checked directly: multiplying the free $D_F$ by $\mathcal{M}=m^2-p^2$ and cancelling gives $1$, with a residual of order $\epsilon/|\mathcal{M}|$.</p>
 <p><strong>Interacting field, checked.</strong> For the model propagator
 $$
@@ -192,90 +192,80 @@ $$
 \delta D(\delta)\big|_{\delta=-10^{-6}} = 2.2999996 ,
 $$
 approaching $Z=2.3$ from both sides as the step is refined, and the second-order term in the step is what the two values differ by. The residue is insensitive to the regular part and to the direction of approach, as it must be; the framework's contribution is that the pole is the biquaternion-norm condition and the residue is central.</p>
-<p><strong>Sector splitting of $Z$.</strong> For a scalar field whose self-energy commutes with $\flat$, the two-point function is block diagonal on the sector split, $D_F=D_{F-}+D_{F+}$, because a $\flat$-commuting operator has no cross part; each block carries its own residue, and the total residue is the sum $Z=Z_-+Z_+$. Each external leg then carries a $\sqrt{Z_\pm}$ from the sector it propagates in, and the amplitude's normalization is the product of those factors along the legs. For a self-energy with a part that does not commute with $\flat$ — one whose internal factor mixes the two chiralities, as a chirality-changing mass does — $Z$ does not split and the residue is a cell in the internal space. The assumption, not the algebra, is what produces the split: the algebra states that $\mathcal{M}$ is real central, and the split follows only for a dynamics that respects $\flat$.</p>
-<h2 id="the-scalar-and-spinor-reductions">The Scalar and Spinor Reductions</h2>
-<p>The two cases differ in exactly one place: whether the amputation operator is a scalar or a cell.</p>
-<p><strong>Scalar case: one scalar factor, four components.</strong> For a scalar biquaternion field the amputation operator is the real central scalar $\mathcal{M}(\tilde P)$. It multiplies each of the four complex components of a correlation function by the same factor, so the reduction is component-wise: one scalar reduction, repeated four times, with no mixing and no preferred basis. The sector parts $\tilde\Phi_\pm$ are amputated by the same scalar, since $\mathcal{M}$ is real; the relation between the sectors remains multiplication by the central $i$, an isomorphism of real four-spaces and not a second, independent field. This is the LSZ counterpart of the central kinetic operator of the functional integral, which is also a single scalar multiplying every component. Its content is a component count: the biquaternion scalar's four complex components enter the reduction separately, and the algebra fixes nothing beyond that. It is <strong>not</strong> a statement that a biquaternion scalar is a multiplicity of complex scalars, for the reason the functional-integral and harmonic-oscillator articles give.</p>
-<p><strong>Spinor case: the cell, and which Dirac equation.</strong> For a spinor field the amputation operator is a cell, and the reduction must name the equation whose cell it is. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $L_aR_b$ for the cell $\psi\mapsto a\psi b$. The cells act on $\mathbb{B}$ read as a four-complex-dimensional module, which is the Dirac module $\Delta=S\oplus S^{\mathrm c}$, whose two summands are the two chiralities. The <strong>momentum cell</strong> is
+<p><strong>Sector splitting of $Z$.</strong> For a scalar field whose self-energy commutes with $\flat$, the two-point function is the sum of one part on each sector, $D_F=D_{F-}+D_{F+}$, because an action commuting with $\flat$ has no cross part; each part carries its own residue, and the total residue is the sum $Z=Z_-+Z_+$. Each external leg then carries a $\sqrt{Z_\pm}$ from the sector it propagates in, and the amplitude's normalization is the product of those factors along the legs. For a self-energy with a part that does not commute with $\flat$ — one whose action exchanges the two values of the chirality, as a mass that changes the value does — $Z$ does not split and the residue is an action on the element. The assumption, not the algebra, is what produces the split: the algebra states that $\mathcal{M}$ is real central, and the split follows only for a dynamics that respects $\flat$.</p>
+<h2 id="the-scalar-case-and-the-spin-case">The Scalar Case and the Spin Case</h2>
+<p>The two cases differ in exactly one place: whether the amputation is a scalar or an action on the element.</p>
+<p><strong>Scalar case: one scalar factor, four components.</strong> For a scalar biquaternion field the amputation operator is the real central scalar $\mathcal{M}(\tilde P)$. It multiplies each of the four complex components of a correlation function by the same factor, so the reduction is component-wise: one scalar reduction, repeated four times, with no mixing and no axis singled out. The sector parts $\tilde\Phi_\pm$ are amputated by the same scalar, since $\mathcal{M}$ is real; the relation between the sectors remains multiplication by the central $i$, a one-to-one map of real four-spaces and not a second, independent field. This is the LSZ counterpart of the central kinetic operator of the functional integral, which is also a single scalar multiplying every component. Its content is a component count: the biquaternion scalar's four complex components enter the reduction separately, and the algebra fixes nothing beyond that. It is <strong>not</strong> a statement that a biquaternion scalar is a multiplicity of complex scalars, for the reason the functional-integral and harmonic-oscillator articles give.</p>
+<p><strong>Spin case: the action, and which Dirac equation.</strong> For a field with spin the amputation is not a scalar: it is an action on the element, and the reduction must name the equation whose action it is. Write the two multiplications of $\mathbb{B}$ out, $a\tilde\Psi$ on the left and $\tilde\Psi b$ on the right. The <strong>momentum action</strong> $\mathcal{A}_p$ is the element formula
 $$
-\mathcal{D}(p)=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}p_0-\sum_{k=x,y,z}iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k ,
+\mathcal{A}_p\,\tilde\Psi=i p_0\,\tilde\Psi\,\vec e_x-\sum_{k=x,y,z}i p_k\,\vec e_k\,\tilde\Psi\,\vec e_y ,
 \qquad
-\mathcal{D}(p)^2=p^2\,\mathbf{1} ,
+\mathcal{A}_p^2\tilde\Psi=p^2\,\tilde\Psi ,
 \qquad
 p^2=p_0^2-\vec p^{\,2},
 $$
-with $\mathbf{1}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ the identity cell. Since $L_{e_t}^{\mathrm{axf}}$ is the identity map, the cell is the propagator article's momentum cell $iR_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$, with that identity written out. It is the momentum symbol of the pair operator $\mathbb{D}$ of <em>Conventions of the Operators and the Calculus</em>, $\mathbb{D}\Psi=(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$ with $\mathbb{D}^2=\Box\,\mathbf{1}$; the operator $\mathcal{D}(p)-m$ is the symbol of the inverse propagator. The energy enters as the component $p_0=E$ and not as the on-shell value $E_{\vec p}$, because the amputation is an off-shell operation; the two coincide only on the shell. The signs are the frame's. The energy cell squares to $+1$ because $i^2=-1$ is met by $\vec e_x^2=-e_t$, and each spatial cell squares to $-1$ because the two quaternion squares give $(-e_t)(-e_t)=+e_t$ and the sign is the central $i^2$ alone.</p>
-<p><strong>The two Dirac equations.</strong> The corpus carries two, and they are not the same operator (see <em>The Dirac Equation in Biquaternionic Form</em>, §<em>The One-Sided and the Two-Sided Equation</em>). The <strong>one-sided</strong> form is the chiral pair
+where the left factor of the energy term is $e_t$ and is not written. It is the momentum symbol of the pair operator $\mathbb{D}$ of <em>Conventions of the Operators and the Calculus</em>, in the second of the two writings that the propagator article distinguishes: the pair operator reads that symbol on the two parts of the element and the action reads it on the element itself, the two are not the same map, and each squares to multiplication by $p^2$, so the pole set is common. The action $\mathcal{A}_p-m$ is the symbol of the inverse propagator. The energy enters as the coefficient $p_0=E$ and not as the on-shell value $E_{\vec p}$, because the amputation is an off-shell operation; the two coincide only on the shell. The signs are the frame's. The energy term squares to $+p_0^2$ because the central $i^2=-1$ is met by $\vec e_x^2=-e_t$, and each spatial term squares to $-p_k^2$ because the two quaternion squares give $(-e_t)(-e_t)=+e_t$ and the sign is the central $i^2$ alone.</p>
+<p><strong>The two Dirac equations.</strong> The corpus carries two, and they are not the same operator (see <em>The Dirac Equation in Biquaternionic Form</em>, §<em>The One-Sided and the Two-Sided Equation</em>). The <strong>one-sided</strong> form is the pair
 $$
 \tilde\nabla\tilde\Psi_R=m\tilde\Psi_L ,
 \qquad
 \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R ,
 $$
-in which the gradient acts by left multiplication on the module and the mass is the off-diagonal pairing of the two chiral halves. The <strong>two-sided</strong> form is the single equation
+in which the gradient acts by left multiplication and the mass is the pairing of the two parts. The <strong>two-sided</strong> form is the single equation
 $$
 -\tilde\nabla^{\natural}F-m\,i\,\overline{F}\,\vec e_z=0 ,
 $$
-in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green matrix the propagator article inverts, $(\mathbb{D}-m)\mathcal{S}=\delta I$ (the conventions article's $I$ is the identity cell written $\mathbf 1$ here), and whose momentum symbol is $\mathcal{D}(p)$. The two-sided equation is a change of representation, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it.</p>
-<p><strong>The pole is central; the residue is a cell.</strong> On a central-phase plane wave $\tilde\nabla$ acts as left multiplication by $i\tilde P$ and $\tilde\nabla^{\natural}$ by $i\tilde P^{\natural}$, so the pair becomes
+in which the time derivative and the spatial gradient act by left multiplication, the mass acts by right multiplication through $\vec e_z$, and the componentwise conjugation $\bar F$ supplies an antilinear part. The reduction of this article is the one-sided pair: it is the pair whose Green element the propagator article inverts, and whose momentum symbol, in the second writing, is the action $\mathcal{A}_p$. The two-sided equation is another writing of the same one, and its mass is a multiplication together with a conjugation rather than a multiplication alone; a reduction in that form would have to carry the conjugation through every leg, and the corpus does not attempt it.</p>
+<p><strong>The pole is central; the residue is an action.</strong> On a central-phase plane wave the four coefficients $p_\mu$ are constants, so $\mathcal{A}_p$ is a constant action and $\mathcal{A}_p^2$ is multiplication by $p^2$. The equation $\mathcal{A}_p\tilde\Psi=m\tilde\Psi$ then gives
 $$
-i\tilde P\tilde\Psi_0^R=m\tilde\Psi_0^L ,
+\big(\mathcal{A}_p^2-m^2\big)\tilde\Psi=(p^2-m^2)\tilde\Psi=0 ,
+$$
+so the second-order operator of the pair is the central scalar of the scalar case: the pole of every leg of the field with spin sits on the same biquaternion-norm level set $\mathcal{M}(\tilde P)=0$. What is not scalar is the residue. The inverse of the action $\mathcal{A}_p-m$ is
+$$
+\big(\mathcal{A}_p-m\big)^{-1}=\frac{\mathcal{A}_p+m}{p^2-m^2}=\frac{\mathcal{A}_p+m}{-\,\mathcal{M}(\tilde P)} ,
+$$
+so the residue of the propagator at $\mathcal{M}=0$ is the action $\mathcal{A}_p+m$, up to the overall $-i$, the product of the $-1$ in $\mathcal{M}=-(p^2-m^2)$ and the $i$ of the Feynman normalization. The spin-sum identity of the propagator article, which holds on the shell, writes that action as a sum of two terms of rank one,
+$$
+\mathcal{A}_p+m=\sum_{r=1}^{2}\tilde W^{(r)}(\vec p)\,\bar{\tilde W}^{(r)}(\vec p) ,
 \qquad
-i\tilde P^{\natural}\tilde\Psi_0^L=m\tilde\Psi_0^R .
+\mathcal{A}_p-m=\sum_{r=1}^{2}\tilde V^{(r)}(\vec p)\,\bar{\tilde V}^{(r)}(\vec p) ,
 $$
-Eliminating one half, $\tilde P^{\natural}\tilde P\tilde\Psi_0^R=-m^2\tilde\Psi_0^R$, and since $\tilde P^{\natural}\tilde P=\tilde P\tilde P^{\natural}=-p^2$ is central, $(p^2-m^2)\tilde\Psi_0^R=0$. The second-order operator of the pair is therefore the central scalar of the scalar case: the pole of every spinor leg sits on the same biquaternion-norm level set $\mathcal{M}(\tilde P)=0$. What is not scalar is the residue. The inverse of the pair operator in momentum space is
+each product $\tilde W\bar{\tilde W}$ being read as the action $\tilde\Psi\mapsto \tilde W\tilde\Psi\bar{\tilde W}$, and the second sum being the numerator for a $\tilde\Psi^{\natural}$ leg. A leg of the field with spin is thus a sum of two spin-state reductions with a common central pole: not one scalar reduction, and not an unfactorizable object either, since the action splits into the two spin states. That factorization is what lets the reduction put one external spin amplitude on each leg, $\tilde W^{(r)}$ on a positive-frequency leg and $\tilde V^{(r)}$ on a negative-frequency one, and the reduction reads
 $$
-\big(\mathcal{D}(p)-m\big)^{-1}=\frac{\mathcal{D}(p)+m}{p^2-m^2}=\frac{\mathcal{D}(p)+m}{-\,\mathcal{M}(\tilde P)} ,
-$$
-so the residue of the propagator at $\mathcal{M}=0$ is the cell $\mathcal{D}(p)+m$, up to the overall $-i$, the product of the $-1$ in $\mathcal{M}=-(p^2-m^2)$ and the $i$ of the Feynman normalization. The spin-sum identity of the propagator article, which holds on the shell, writes that cell as a sum of two rank-one terms,
-$$
-\mathcal{D}(p)+m=\sum_{r=1}^{2}w^{(r)}(\vec p)\,\bar w^{(r)}(\vec p) ,
-\qquad
-\mathcal{D}(p)-m=\sum_{r=1}^{2}v^{(r)}(\vec p)\,\bar v^{(r)}(\vec p) ,
-$$
-the second being the numerator for a $\tilde\Psi^{\natural}$ leg. A spinor leg is thus a sum of two spin-state reductions with a common central pole: not one scalar reduction, and not an unfactorizable object either, since the cell factors into the two spin states. That factorization is what lets the reduction put one external spinor on each leg, $w^{(r)}$ on a positive-frequency leg and $v^{(r)}$ on a negative-frequency one, and the reduction reads
-$$
-\langle f|S|i\rangle_{\text{spinor}}
-= \Big[\prod_{\text{legs}}\int d^4x_j\,\exp(\sigma_j ip_j\cdot x_j)\Big]
-\Big[\prod_{\text{legs}}\big(\mathcal{D}_j-\varepsilon_j m\big)\Big]
+\langle f|S|i\rangle_{\text{spin}}
+= \Big[\prod_{\text{legs}}\int d^4x_j\,\exp(s_j ip_j\cdot x_j)\Big]
+\Big[\prod_{\text{legs}}\big(\mathcal{A}_{p_j}-\varepsilon_j m\big)\Big]
 \big\langle 0\big|T\,\tilde\Psi(x_1)\cdots\tilde\Psi^{\natural}(x_{n+m})\big|0\big\rangle\Big|_{\text{on shell}} ,
 $$
-with two independent signs per leg: $\sigma_j=+1$ on an outgoing leg and $-1$ on an incoming one, from the Fourier phase, and $\varepsilon_j=+1$ on a $\tilde\Psi$ leg and $-1$ on a $\tilde\Psi^{\natural}$ leg, from the numerator the leg carries. The two are unrelated: a $\tilde\Psi^{\natural}$ leg may be incoming or outgoing.</p>
-<p><strong>Chirality.</strong> The chirality is the cell $\chi_{\mathrm{c}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, the representative of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of <em>The Dirac Equation in Biquaternionic Form</em>, and the fifth cell of the frame written in the Gamma Formulation. It squares to the identity cell, and direct computation gives
+with two independent signs per leg: $s_j=+1$ on an outgoing leg and $-1$ on an incoming one, from the Fourier phase, and $\varepsilon_j=+1$ on a $\tilde\Psi$ leg and $-1$ on a $\tilde\Psi^{\natural}$ leg, from the numerator the leg carries. The two are unrelated: a $\tilde\Psi^{\natural}$ leg may be incoming or outgoing.</p>
+<p><strong>Chirality.</strong> The chirality is the value of the subscript, $L$ or $R$: $L$ is the minus value, $R$ the plus one, every element is the sum of one of each, and only $0$ is both. The closing section prints the frame cell whose two values these are. The momentum action exchanges the two values and the mass keeps each of them, so the equation $\mathcal{A}_p\tilde\Psi=m\tilde\Psi$ splits into the two lines
 $$
-\{\chi_{\mathrm{c}},\mathcal{D}(p)\}=0 ,
+\mathcal{A}_p\tilde\Psi_R=m\tilde\Psi_L ,
 \qquad
-[\chi_{\mathrm{c}},m\,\mathbf{1}]=0 .
+\mathcal{A}_p\tilde\Psi_L=m\tilde\Psi_R .
 $$
-The momentum cell is therefore chirality-off-diagonal and the mass is chirality-diagonal: with $P_\pm=\tfrac12(\mathbf 1\pm\chi_{\mathrm{c}})$, one has $\mathcal{D}(p)P_+=P_-\mathcal{D}(p)$, and the equation $\mathcal{D}(p)\psi=m\psi$ splits into the two lines
+Each line pairs a kinetic term that changes the value with a mass term that keeps it, and the two lines are one equation on one element: they are written apart because each holds on a different part. That is the momentum-space form of the one-sided pair displayed above, written by value instead of by the gradient, and it is not two dynamics.</p>
+<p><strong>A consistency check.</strong> The identity behind the amputation is
 $$
-P_-\,\mathcal{D}(p)\,\psi_+=m\,\psi_- ,
-\qquad
-P_+\,\mathcal{D}(p)\,\psi_-=m\,\psi_+ ,
+(\mathcal{A}_p-m)(\mathcal{A}_p+m)\tilde\Psi=(p^2-m^2)\tilde\Psi=-\,\mathcal{M}(\tilde P)\,\tilde\Psi .
 $$
-with $\psi_\pm=P_\pm\psi$. That is the cell form of the chiral pair: the momentum cell carries one chirality into the other, while the mass multiplies each chirality by itself, so each line pairs a chirality-flipping kinetic term with a mass term of one chirality. The two lines are the momentum-space form of the chiral pair displayed above, and they are one equation in the module; they are split because they act on different objects, not because there are two dynamics.</p>
-<p><strong>A consistency check.</strong> The identity behind the amputation is $(\mathcal{D}(p)-m)(\mathcal{D}(p)+m)=(p^2-m^2)\mathbf{1}=-\,\mathcal{M}(\tilde P)\mathbf{1}$. Recomputed on $100$ random real four-momenta, the largest deviation is of order $10^{-15}$ for both $\mathcal{D}(p)^2=p^2\mathbf 1$ and the product identity; the cell anticommutators hold exactly: every entry of $\chi_{\mathrm c}$ is $\pm i$ and every entry of $\mathcal D(p)$ is $\pm i$ times one momentum component, so each entry of the anticommutator is the sum of two cancelling products. The framework adds nothing to the identity; it identifies the module, the mass cell, and the chirality cell on which it acts.</p>
-<h2 id="the-one-mode-truncation-and-the-module-gap">The One-Mode Truncation and the Module Gap</h2>
+Recomputed on $100$ random real four-momenta, the largest deviation is of order $10^{-15}$ for both $\mathcal{A}_p^2\tilde\Psi=p^2\tilde\Psi$ and this product identity. The value test is exact: right multiplication by $\vec e_z$ passes through the action and reverses its sign, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$ and $\vec e_y\vec e_z=-\vec e_z\vec e_y$, so an $R$ element is carried into an $L$ element and an $L$ element into an $R$ element, on the same $100$ momenta. The framework adds nothing to the identity; it identifies the element the action acts on, the mass that keeps the value, and the two values between which the action moves.</p>
+<h2 id="the-one-mode-truncation-and-the-gap">The One-Mode Truncation and the Gap</h2>
 <p>Conditional on the one-mode identification of the Fock article, the reduction has a finite-dimensional shadow, and the shadow is exact.</p>
-<p><strong>The one-mode statement.</strong> For a single fermionic mode the field is replaced by the pair of ladders $\vec\Upsilon_x,\vec\Upsilon_y$ of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, and the correlator by the trace over the mode. Direct computation gives
+<p><strong>The one-mode statement.</strong> For a single fermionic mode the field is replaced by the pair of ladders of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, which in the frame are $\ell_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\ell_y=\tfrac12(i\vec e_x+\vec e_y)$, and the correlator by the trace over the mode. Direct computation gives
 $$
-\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+ ,
+\ell_x\ell_y+\ell_y\ell_x=e_t ,
 \qquad
-\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_- ,
+(\ell_x\ell_y)(\ell_y\ell_x)=0 ,
 \qquad
-\tilde\Pi_\pm^2=\tilde\Pi_\pm ,
-\qquad
-\tilde\Pi_++\tilde\Pi_-=e_t ,
-\qquad
-\tilde\Pi_+\tilde\Pi_-=0 ,
-\qquad
-\mathrm{Sc}\,\tilde\Pi_\pm=\tfrac12 ,
+\mathrm{Sc}\,\ell_x\ell_y=\mathrm{Sc}\,\ell_y\ell_x=\tfrac12 ,
 $$
-so the two orderings are the two minimal idempotents: $\tilde\Pi_+=\vec\Upsilon_x\vec\Upsilon_y$ is the vacuum rung and $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$ the occupation-number operator, which the Fock article gives as $\tfrac12(e_t-i\vec e_z)$. The time-ordered two-point function is $\theta(t')\tilde\Pi_+-\theta(-t')\tilde\Pi_-$, whose vacuum expectation is $\theta(t')$: the vacuum is the rung $\tilde\Pi_+$, on which the normalized state functional returns one, and the other rung annihilates it. Its Fourier transform is
+so the two orderings are the vacuum of the mode and its occupation-number element, each of scalar part one half, which the Fock article writes as $\tfrac12(e_t-i\vec e_z)$ for the second. The time-ordered two-point function is $\theta(t')\ell_x\ell_y-\theta(-t')\ell_y\ell_x$, whose vacuum value is $\theta(t')$: the normalized state functional returns one on the vacuum ordering and zero on the other. Its Fourier transform is
 $$
-D(\omega)=\frac{i\,\tilde\Pi_+}{\omega+i\epsilon}+\frac{i\,\tilde\Pi_-}{\omega-i\epsilon} ,
+D(\omega)=\frac{i\,\ell_x\ell_y}{\omega+i\epsilon}+\frac{i\,\ell_y\ell_x}{\omega-i\epsilon} ,
 $$
-so the residue at $\omega=0$, read by multiplying by $\omega$ with the prescription removed, is $i(\tilde\Pi_++\tilde\Pi_-)=i\,e_t$: the identity cell of the mode algebra, times the overall $i$ that the Feynman normalization carries. The wave-function renormalization, the coefficient of the identity, is therefore $Z=1$ exactly, because the truncated space has no continuum to renormalize into. This is the finite-dimensional instance of LSZ, and it is exact rather than approximate.</p>
-<p><strong>The gap.</strong> The S-matrix of a <em>field</em> is an operator on an infinite-dimensional Fock space, and the LSZ reduction is a statement about that operator; neither is an element of $\mathbb{B}$. The algebra provides the mass-shell symbol, the plane waves, and the internal module of the external legs; it does not provide the reduction theorem, which is a statement about the asymptotics of an infinite-dimensional theory. This is the same module gap as in the Fock, S-matrix, Wick, and Bogoliubov articles, here located at the step where the external legs are placed on shell.</p>
+so the residue at $\omega=0$, read by multiplying by $\omega$ with the prescription removed, is $i(\ell_x\ell_y+\ell_y\ell_x)=i\,e_t$: the unit of the algebra, times the overall $i$ that the Feynman normalization carries. The wave-function renormalization, the coefficient of the unit, is therefore $Z=1$ exactly, because the truncated space has no continuum to renormalize into. This is the finite-dimensional instance of LSZ, and it is exact rather than approximate.</p>
+<p><strong>The gap.</strong> The S-matrix of a <em>field</em> is an operator on an infinite-dimensional Fock space, and the LSZ reduction is a statement about that operator; neither is an element of $\mathbb{B}$. The algebra provides the mass-shell symbol, the plane waves, and the spin amplitudes of the external legs; it does not provide the reduction theorem, which is a statement about the asymptotics of an infinite-dimensional theory. This is the same gap as in the Fock, S-matrix, Wick, and Bogoliubov articles, here located at the step where the external legs are placed on shell.</p>
 <h2 id="the-reduction-from-the-functional-integral">The Reduction from the Functional Integral</h2>
 <p>The reduction can be read off the source derivative of the generating functional, and in the framework the source is an element of the algebra, not a c-number.</p>
 <p><strong>The source and the correlator.</strong> Add to the action a source term $\int\langle\tilde J,\tilde\Phi\rangle$, with $\tilde J\in\mathbb{B}$ a source paired by the plain bilinear form, $\langle\tilde J,\tilde\Phi\rangle=\mathrm{Sc}(\tilde J\tilde\Phi)$. The first derivative of $W[\tilde J]$ is the classical field $\tilde\Phi_{\mathrm{cl}}=\delta W/\delta\tilde J$ of the effective-action article, and the $(n+m)$-fold derivative at $\tilde J=0$ is the connected $(n+m)$-point function $G^{(n+m)}$.</p>
@@ -289,7 +279,7 @@ $$
 where $G^{(n+m)}(p_1,\dots,p_{n+m})$ is the Fourier transform of the position-space correlator of the earlier section, the argument distinguishing the two writings, the limits are taken on the external momenta and not on the source, and the $Z_j^{-1/2}$ per leg cancels the $\sqrt{Z_j}$ that the leg carries, the residue $Z_j$ being the square of it. Equivalently the poles sit in the correlator and the limits select its residue: for each leg, $G^{(n+m)}$ has a simple pole in $\mathcal{M}(\tilde P_j)$ whose residue is the one-particle projection of that leg.</p>
 <p>Reading the formula this way separates what the algebra supplies — the element-valued source, the central mass-shell operator, the residues — from what is the standard LSZ theorem: that the on-shell residue of the source derivative is the physical amplitude, which rests on the asymptotic conditions and is not an algebraic fact.</p>
 <h2 id="the-spectral-representation-and-the-residue">The Spectral Representation and the Residue</h2>
-<p>The residue $Z$ is the one-particle weight in the <strong>Källén–Lehmann spectral representation</strong>, and the framework's spectral function is a sum over the module's states.</p>
+<p>The residue $Z$ is the one-particle weight in the <strong>Källén–Lehmann spectral representation</strong>, and the framework's spectral function is a sum over the states.</p>
 <p>Insert a complete set of intermediate states into the two-point function. In the normalization used here, where the $2\pi$ of the spectral density is cancelled by the measure, the result is
 $$
 D_F(p^2) = \int_0^\infty \frac{d\mu^2}{2\pi}\,\frac{\rho(\mu^2)}{\mu^2-p^2-i\epsilon} = -\int_0^\infty \frac{d\mu^2}{2\pi}\,\frac{\rho(\mu^2)}{p^2-\mu^2+i\epsilon},
@@ -301,20 +291,20 @@ $$
 \rho(\mu^2) = 2\pi\,Z\,\delta(\mu^2-m^2) + \rho_{\mathrm{continuum}}(\mu^2),
 $$
 so that the one-particle term reproduces $D_F=Z/(m^2-p^2-i\epsilon)$ and the residue of the pole is the one-particle weight. The continuum's threshold is the multiparticle branch point. This is standard (Källén 1952, Lehmann 1954) and is cited.</p>
-<p><strong>Biquaternion content.</strong> The intermediate states are states of the Fock module of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, and the matrix element $\langle n|\tilde\Phi(0)|0\rangle$ is a module-valued amplitude whose norm enters. The one-particle contribution is the module vector projected onto the on-shell momentum, i.e. the external wavefunction of the earlier section; the residue $Z$ is its norm squared. For a scalar field with a $\flat$-commuting self-energy the spectral function splits into the two sectors' contributions, $\rho=\rho_-+\rho_+$, consistent with $Z=Z_-+Z_+$. The positivity of $\rho$ is the positivity of the inner product of the state space, which the GNS article constructs; the spectral representation is thus where the LSZ residue and the state-space positivity meet.</p>
+<p><strong>Biquaternion content.</strong> The intermediate states are states of the Fock space of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, and the matrix element $\langle n|\tilde\Phi(0)|0\rangle$ is an amplitude valued in $\mathbb{B}$ whose norm enters. The one-particle contribution is the state projected onto the on-shell momentum, i.e. the external wavefunction of the earlier section; the residue $Z$ is its norm squared. For a scalar field with a $\flat$-commuting self-energy the spectral function splits into the two sectors' contributions, $\rho=\rho_-+\rho_+$, consistent with $Z=Z_-+Z_+$. The positivity of $\rho$ is the positivity of the inner product of the state space, which the GNS article constructs; the spectral representation is thus where the LSZ residue and the state-space positivity meet.</p>
 <h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
 <p><strong>Established (algebra).</strong>
 - The mass shell is the biquaternion-norm level set $\tilde P\tilde P^{\natural}=-m^2$, equivalently $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=0$, with $\tilde P\tilde P^{\natural}=(iE)^2+\vec p^{\,2}$ and $(iE)^2=-E^2$; checked numerically ($-0.490000$ versus $-m^2=-0.49$).
-- Amputation is multiplication by the inverse propagator: the real central scalar $\mathcal{M}(\tilde P)$ for a scalar field, the cell $\mathcal{D}(p)-m$ for a spinor field, with $D_F=1/(\mathcal{M}-i\epsilon)$ in the scalar case; the two conventions differ by a factor $-1$ per leg.
+- Amputation is multiplication by the inverse propagator: the real central scalar $\mathcal{M}(\tilde P)$ for a scalar field, the action $\mathcal{A}_p-m$ for a field with spin, with $D_F=1/(\mathcal{M}-i\epsilon)$ in the scalar case; the two conventions differ by a factor $-1$ per leg.
 - The wave-function renormalization is the residue at the biquaternion-norm pole; checked for a model propagator ($Z=2.3$ recovered from both sides) and for the free field ($Z=1$, amputated two-point function $1$).
 - For a scalar field the reduction is component-wise, with one real central scalar multiplying all four complex components; the sector split is preserved by that scalar and exchanged by the central $i$.
-- For a spinor field the pole is the same central scalar, the residue is the rank-two cell $\mathcal{D}(p)+m=\sum_r w^{(r)}\bar w^{(r)}$, and the chirality cell anticommutes with $\mathcal{D}(p)$ and commutes with the mass; checked on $100$ random four-momenta.
-- The one-mode truncation gives the exact free result $Z=1$, the residue being the identity cell of the mode algebra.</p>
+- For a field with spin the pole is the same central scalar, the residue is the rank-two action $\mathcal{A}_p+m=\sum_r \tilde W^{(r)}\bar{\tilde W}^{(r)}$, and the momentum action exchanges the two values of the chirality while the mass keeps each of them; checked on $100$ random four-momenta.
+- The one-mode truncation gives the exact free result $Z=1$, the residue being the unit of the algebra.</p>
 <p><strong>Standard, and transcribed.</strong>
-- The LSZ theorem itself: the asymptotic conditions, adiabatic switching, the derivation from the interpolating field, the $\sqrt Z$ factors, the momentum-conservation delta functions, and the spinor reduction formula.</p>
+- The LSZ theorem itself: the asymptotic conditions, adiabatic switching, the derivation from the interpolating field, the $\sqrt Z$ factors, the momentum-conservation delta functions, and the reduction formula of the field with spin.</p>
 <p><strong>Interpretation.</strong>
 - Reading the mass shell as a level set of the biquaternion norm, so that the massless case is the zero-divisor cone, is the framework's own identification; it is consistent with the material-sector article.
-- Reading the spinor residue as a sum over spin states rather than as a scalar factor is the framework's reading of the spin sums; the spin sums themselves are the propagator article's.
+- Reading the residue of the field with spin as a sum over spin states rather than as a scalar factor is the framework's reading of the spin sums; the spin sums themselves are the propagator article's.
 - The component-wise scalar reduction is the LSZ counterpart of the functional-integral factorization; stated as such.</p>
 <p><strong>Open.</strong>
 - The framework has no independent derivation of the asymptotic conditions; they are assumed as in the standard theory.
@@ -341,7 +331,7 @@ the mass-shell operator is minus the product of the two shifted cells,
 $$
 \mathcal{M}(\tilde P)=-\big(\slashed p-m\big)\big(\slashed p+m\big)=m^2-p^2 ,
 $$
-a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r w^{(r)}\bar w^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. That $g$ is minus the $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.</p>
+a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r \tilde W^{(r)}\bar{\tilde W}^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf 1$ with $\varepsilon=(1,-1,-1,-1)$. That $g$ is minus the $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.</p>
 <p>$\gamma_5$ is the reference-frame cell of the chirality; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module. It squares to the identity cell, anticommutes with every $\gamma_\mu$ and hence with $\slashed p$, and commutes with the mass. The two chiralities are its $\pm1$ eigenspaces, projected by $\tfrac12(\mathbf 1\pm\gamma_5)$; the momentum cell is off-diagonal between them and the mass is diagonal, which is the frame's form of the chiral pair of the spinor section.</p>
 <p>The dictionary is complex-linear, and the frame carries the central $i$ in each $\gamma_\mu$: the four are $i$ times real cells, so together with $i$ they span the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$ of the section's first line. The real cells $L_aR_b$ alone, without the $i$, are real matrices and span all of $M_4(\mathbb{R})$; nothing is lost by writing the frame with the $i$ attached.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
@@ -354,8 +344,8 @@ $$
 \qquad
 \tilde P\tilde P^{\natural}=(iE)^2+\vec p^{\,2}=(-E^2+\vec p^{\,2})e_t=-p^2e_t ,
 $$
-verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign being the central unit's, $(iE)^2=-E^2$. Amputation is multiplication by the real central mass-shell operator $\mathcal{M}(\tilde P)$, the inverse of the propagator $D_F=1/(\mathcal{M}-i\epsilon)$; the wave-function renormalization is the residue at the biquaternion-norm pole, checked to give $Z=2.3$ for a model propagator and $Z=1$ for the free field, where the amputated two-point function is exactly $1$. For a scalar biquaternion field the reduction is one real central scalar multiplying the four complex components, so it is component-wise and preserves the sector split. For a spinor field the amputation is the cell $\mathcal{D}(p)-m$: the pole remains the central scalar $p^2=m^2$, the residue, on the shell, is the rank-two cell $\mathcal{D}(p)+m=\sum_r w^{(r)}\bar w^{(r)}$, so a leg is a sum of two spin-state reductions, and the chirality cell anticommutes with $\mathcal{D}(p)$ and commutes with the mass. The one-mode truncation gives the exact free result $Z=1$.</p>
-<p>The reduction theorem itself — the asymptotic conditions, the adiabatic switching, the $\sqrt Z$ normalization — is standard and transcribed. The algebra supplies the mass-shell symbol, the central-phase plane waves, the mass cell and the chirality cell; the field-level S-matrix and its reduction live on the Fock module and not in $\mathbb{B}$.</p>
+verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign being the central unit's, $(iE)^2=-E^2$. Amputation is multiplication by the real central mass-shell operator $\mathcal{M}(\tilde P)$, the inverse of the propagator $D_F=1/(\mathcal{M}-i\epsilon)$; the wave-function renormalization is the residue at the biquaternion-norm pole, checked to give $Z=2.3$ for a model propagator and $Z=1$ for the free field, where the amputated two-point function is exactly $1$. For a scalar biquaternion field the reduction is one real central scalar multiplying the four complex components, so it is component-wise and preserves each sector. For a field with spin the amputation is the action $\mathcal{A}_p-m$ on the element: the pole remains the central scalar $p^2=m^2$, the residue, on the shell, is the rank-two action $\mathcal{A}_p+m=\sum_r \tilde W^{(r)}\bar{\tilde W}^{(r)}$, so a leg is a sum of two spin-state reductions, and the momentum action exchanges the two values of the chirality while the mass keeps each of them. The one-mode truncation gives the exact free result $Z=1$.</p>
+<p>The reduction theorem itself — the asymptotic conditions, the adiabatic switching, the $\sqrt Z$ normalization — is standard and transcribed. The algebra supplies the mass-shell symbol, the central-phase plane waves, the mass and the two values of the chirality; the field-level S-matrix and its reduction live on the Fock space and not in $\mathbb{B}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -366,20 +356,24 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign bein
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
-<td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
+<td>$\mathbb{B}$</td>
+<td>The biquaternion algebra (<em>Algebra and Element Conventions</em>)</td>
 </tr>
 <tr>
-<td>$i$, $i^2=-1$</td>
-<td>Central scalar imaginary; the sign of every $E^2$ and of every cell square</td>
+<td>$e_t$</td>
+<td>The unit of the algebra</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>The central scalar imaginary unit; it carries the sign of every $E^2$ and of every term of the momentum action</td>
 </tr>
 <tr>
 <td>$\tilde P=iEe_t+\vec p$, $\tilde P^{\natural}=iEe_t-\vec p$</td>
 <td>Wave biquaternion and its quaternion conjugate</td>
 </tr>
 <tr>
-<td>$\vec p^{\,2}=p_x^2+p_y^2+p_z^2$</td>
-<td>Euclidean square of the vector part; the quaternion square is $\vec p\,\vec p=-\vec p^{\,2}$</td>
+<td>$\vec p^{\,2}$</td>
+<td>Euclidean square of the vector part</td>
 </tr>
 <tr>
 <td>$\tilde P\tilde P^{\natural}=(-E^2+\vec p^{\,2})e_t=-p^2e_t$</td>
@@ -394,8 +388,8 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign bein
 <td>Mass shell, a biquaternion-norm level set</td>
 </tr>
 <tr>
-<td>$\Box=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{\natural})=\partial^2/\partial Q_t^2+\Delta$</td>
-<td>d'Alembertian, the series convention, with symbol $\Box\to p^2$ on the material sector</td>
+<td>$\Box$</td>
+<td>The d'Alembertian (<em>Operator and Calculus Conventions</em>), with symbol $p^2$ on the material sector</td>
 </tr>
 <tr>
 <td>$g_{\mu\nu}[\mathbb{M}_-]$</td>
@@ -403,11 +397,11 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign bein
 </tr>
 <tr>
 <td>$\mathbb{M}_-$, $\mathbb{M}_+$</td>
-<td>Anti-Hermitian and Hermitian sectors, the fixed spaces of $\flat$ and of ${}^{*}$; $\tilde\Phi_\pm=\tfrac12(\tilde\Phi\pm\tilde\Phi^{\flat})$</td>
+<td>The anti-Hermitian and Hermitian sectors (<em>Algebra and Element Conventions</em>); $\tilde\Phi_\pm$ are the two sector parts</td>
 </tr>
 <tr>
-<td>$\flat=-{}^{*}$</td>
-<td>The anti-Hermitian conjugation; antilinear, with the twist $(AB)^{\flat}=-B^{\flat}A^{\flat}$</td>
+<td>$\flat$</td>
+<td>The anti-Hermitian conjugation (<em>Algebra and Element Conventions</em>), antilinear</td>
 </tr>
 <tr>
 <td>$D_F(\tilde P)=1/(\mathcal{M}(\tilde P)-i\epsilon)=-1/(p^2-m^2+i\epsilon)$</td>
@@ -426,8 +420,8 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign bein
 <td>S-matrix element from the reduction</td>
 </tr>
 <tr>
-<td>$\sigma_j$, $\varepsilon_j$</td>
-<td>The two signs of leg $j$: $\sigma_j=\pm1$ from the Fourier phase (out/in), $\varepsilon_j=\pm1$ from the numerator ($\tilde\Psi$/$\tilde\Psi^{\natural}$); independent</td>
+<td>$s_j$, $\varepsilon_j$</td>
+<td>The two signs of leg $j$: $s_j=\pm1$ from the Fourier phase (out/in), $\varepsilon_j=\pm1$ from the numerator ($\tilde\Psi$/$\tilde\Psi^{\natural}$); independent</td>
 </tr>
 <tr>
 <td>$\exp(i\,\mathrm{Sc}(\tilde P^{\natural}\tilde R))=\exp(-ip\cdot x)$</td>
@@ -439,35 +433,27 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign bein
 </tr>
 <tr>
 <td>$L_a$, $R_b$, $L_aR_b$</td>
-<td>Left multiplication $a\psi$, right multiplication $\psi b$, and the cell $\psi\mapsto a\psi b$</td>
+<td>Left multiplication, right multiplication and the cell (closing section only)</td>
 </tr>
 <tr>
-<td>$\mathbf{1}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
-<td>Identity cell</td>
-</tr>
-<tr>
-<td>$\mathcal{D}(p)=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$</td>
-<td>Momentum cell, the momentum symbol of $\mathbb{D}$; $\mathcal{D}(p)^2=p^2\mathbf 1$</td>
+<td>$\mathcal{A}_p\tilde\Psi=i p_0\tilde\Psi\vec e_x-\sum_k i p_k\vec e_k\tilde\Psi\vec e_y$</td>
+<td>Momentum action, the second writing of the momentum symbol of $\mathbb{D}$; $\mathcal{A}_p^2\tilde\Psi=p^2\tilde\Psi$</td>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>
-<td>Pair operator, $\mathbb{D}\Psi=(\tilde\nabla\tilde\Psi_R,\tilde\nabla^{\natural}\tilde\Psi_L)$, $\mathbb{D}^2=\Box\,\mathbf 1$</td>
+<td>The pair operator of <em>Operator and Calculus Conventions</em>, whose square is $\Box$</td>
 </tr>
 <tr>
-<td>$\chi_{\mathrm{c}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
-<td>Chirality cell, the module representative of the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$; $\{\chi_{\mathrm c},\mathcal{D}(p)\}=0$, $\chi_{\mathrm c}^2=\mathbf 1$</td>
+<td>$L$, $R$</td>
+<td>The two values of the chirality subscript; $L$ the minus value, $R$ the plus one</td>
 </tr>
 <tr>
-<td>$\Delta=S\oplus S^{\mathrm c}$</td>
-<td>Dirac module, the two chiralities</td>
+<td>$\tilde W^{(r)},\tilde V^{(r)}$</td>
+<td>External spin amplitudes, elements of $\mathbb{B}$; $\sum_r \tilde W^{(r)}\bar{\tilde W}^{(r)}=\mathcal{A}_p+m$ and $\sum_r \tilde V^{(r)}\bar{\tilde V}^{(r)}=\mathcal{A}_p-m$ on the shell, each product read as the action $\tilde\Psi\mapsto \tilde W\tilde\Psi\bar{\tilde W}$</td>
 </tr>
 <tr>
-<td>$w^{(r)},v^{(r)}$</td>
-<td>External spinors; $\sum_r w^{(r)}\bar w^{(r)}=\mathcal{D}(p)+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\mathcal{D}(p)-m$, evaluated on the shell</td>
-</tr>
-<tr>
-<td>$\vec\Upsilon_x,\vec\Upsilon_y$, $\tilde\Pi_\pm$</td>
-<td>One-mode ladders and rungs; $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$</td>
+<td>$\ell_x,\ell_y$</td>
+<td>The two ladders of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, $\ell_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\ell_y=\tfrac12(i\vec e_x+\vec e_y)$; $\ell_x\ell_y+\ell_y\ell_x=e_t$, and the two orderings multiply to $0$</td>
 </tr>
 <tr>
 <td>$\rho(\mu^2)$, $Z=Z_-+Z_+$</td>
@@ -479,7 +465,7 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$, the sign bein
 </tr>
 <tr>
 <td>$\langle\tilde Q_1,\tilde Q_2\rangle$</td>
-<td>The plain bilinear form, the scalar part of the plain bilinear product: $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
+<td>The plain bilinear form (<em>Product and Form Conventions</em>)</td>
 </tr>
 </tbody>
 </table></div>
