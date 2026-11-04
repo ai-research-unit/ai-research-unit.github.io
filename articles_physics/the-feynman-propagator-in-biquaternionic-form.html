@@ -89,7 +89,7 @@ $$</p>
 <p>Everything below is written for the one-sided pair, whose spinor-module representative is the ordinary $(\slashed p-m)\psi=0$. That is the form written on the chiral halves $S$ and $S^{\mathrm{c}}$, which is the decomposition the chirality grading of section <em>The Legacy Pauli Gamma Formulation</em> labels.</p>
 <p>This article is about the next object in that quantization: the <strong>two-point function</strong> of the quantized field on the spinor-module representative, the Feynman propagator</p>
 <p>$$
-\boxed{\;S_F(x-y)\;=\;\langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar\psi^{\mathrm{fop}}(y)\,|0\rangle\;},
+\boxed{\;S_F(x-y)\;=\;\langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(y)\,|0\rangle\;},
 $$</p>
 <p>with $T$ the fermionic time-ordering operator. The two-point function is where the boundary condition of the theory is stored. Its momentum-space amplitude is not a function but a distribution, and what makes it the <em>Feynman</em> amplitude rather than the retarded or advanced one is a contour prescription in the complex energy plane — the $i\epsilon$.</p>
 <p>The specific question this article asks is a question about the algebra. The biquaternion framework already carries a complex structure: the scalar imaginary $i$ is a fixed central element with $i^2=-1$, it is what turns the material time coordinate into $ict'$, and it is what lets the mass shell be written as the single quadratic condition $\tilde P\tilde P^{\natural}=-m^2$ whose two roots in the energy are the positive- and negative-frequency branches (the particle and antiparticle modes in the standard interpretation). The Feynman prescription is also an insertion of $i$: $m^2\mapsto m^2-i\epsilon$. Are these the same $i$ doing the same work? Is the contour deformation the algebra's own complex structure, or is it an independent analytic input that the algebra can only write down?</p>
@@ -103,7 +103,7 @@ $$</p>
 \sum_{r=1}^{2}\Big[a_r^{\mathrm{fop}}(\vec p)\,w^{(r)}(\vec p)\,\exp(-ip\cdot x)
 +b_r^{\mathrm{fop}\dagger}(\vec p)\,v^{(r)}(\vec p)\,\exp(+ip\cdot x)\Big],
 $$</p>
-<p>with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$. Its adjoint is $\bar\psi^{\mathrm{fop}}=\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}$: the Hermitian conjugate, then the timelike cell of the reference frame.</p>
+<p>with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$. Its adjoint is $\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}=\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}$: the Hermitian conjugate, then the timelike cell of the reference frame.</p>
 <p>Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the two multiplications of $\mathbb{B}$, and $\nu(t)=x$, $\nu(k)=y$ for the cells of the reference frame. The <strong>momentum cell</strong> is the signed sum of the frame cells contracted with the four-momentum. The sign vector of the frame is $(+,-,-,-)$, so the energy takes the timelike cell with a plus and each momentum component a spatial cell with a minus, and the sum is named rather than left to a repeated index:</p>
 <p>$$
 \slashed p\;:=\;iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}p_0-\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k
@@ -149,12 +149,12 @@ $$</p>
 <p>the momentum cell being on the mass shell, $p_0=E_{\vec p}$.</p>
 <p>Contracting the mode operators against the vacuum gives the two elementary two-point functions. The <strong>positive-frequency</strong> piece is</p>
 <p>$$
-W_+(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}}(x)\,\bar\psi^{\mathrm{fop}}(y)\,|0\rangle
+W_+(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}}(x)\,\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(y)\,|0\rangle
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\slashed p+m\big)\,\exp(-ip\cdot(x-y)),
 $$</p>
 <p>in which only the $a^{\mathrm{fop}} a^{\mathrm{fop}\dagger}$ contraction survives, and the <strong>negative-frequency</strong> piece is</p>
 <p>$$
-W_-(x-y)\;=\;\langle 0|\,\bar\psi^{\mathrm{fop}}(y)\,\psi^{\mathrm{fop}}(x)\,|0\rangle
+W_-(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(y)\,\psi^{\mathrm{fop}}(x)\,|0\rangle
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\slashed p-m\big)\,\exp(+ip\cdot(x-y)),
 $$</p>
 <p>in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expressions the momentum cell is on shell, because the free mode expansion contains the on-shell modes and nothing else. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.</p>
@@ -339,33 +339,33 @@ $$</p>
 <li><strong>Empirical content.</strong> As with the rest of the framework, whether any of this yields a prediction distinguishing it from standard quantum field theory is open, and the present article changes nothing about it.</li>
 </ul>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
-<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$</p>
 <p>The same in the axis-free display:</p>
 <p>$$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
-<p>$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
+<p>$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <p>The body's momentum cell then reads</p>
 <p>$$
-\slashed p=\gamma_0p_0-\sum_k\gamma_kp_k ,
+\slashed p=\gamma_0[\mathbb{M}_-]p_0-\sum_k\gamma_k[\mathbb{M}_-]p_k ,
 $$</p>
 <p>the spatial signs being those of $\varepsilon=(1,-1,-1,-1)$. The frame satisfies the Clifford relation</p>
 <p>$$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf{1},
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}\mathbf{1},
 $$</p>
-<p>which is the frame-cell anticommutator of the body: $\gamma_\mu$ <em>is</em> the cell $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, so this is the same statement, given here in its named form. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu\gamma_\nu$ and $\gamma_\nu\gamma_\mu$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.</p>
+<p>which is the frame-cell anticommutator of the body: $\gamma_\mu[\mathbb{M}_-]$ <em>is</em> the cell $iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$, so this is the same statement, given here in its named form. It is not an extra input. For $\mu\neq\nu$ the two products $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]$ and $\gamma_\nu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]$ differ by a single transposition — on the left when one index is $t$, on the right when both are spatial — and a transposition reverses a quaternion sign, so they cancel; for $\mu=\nu$ each square is $\pm\mathbf{1}$, the sign coming from $e_t^2=e_t$ and $\vec e_k^2=-e_t$.</p>
 <p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point function</p>
 <p>$$
-S_F(x-y)=\langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\bar\psi^{\mathrm{fop}}(y)\,|0\rangle .
+S_F(x-y)=\langle 0|\,T\,\psi^{\mathrm{fop}}(x)\,\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(y)\,|0\rangle .
 $$</p>
 <p>Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:</p>
 <p>$$
@@ -448,7 +448,7 @@ $$</p>
 <td>Biquaternion Dirac field on $\Delta=S\oplus S^{\mathrm c}$ and its anti-Hermitian conjugate</td>
 </tr>
 <tr>
-<td>$\psi$, $\bar\psi=\psi^\dagger iR_{\vec e_x}^{\mathrm{axf}}$</td>
+<td>$\psi$, $\psi^\dagger iR_{\vec e_x}^{\mathrm{axf}}$</td>
 <td>Spinor-module representative and its adjoint</td>
 </tr>
 <tr>
@@ -476,7 +476,7 @@ $$</p>
 <td>Positive- and negative-frequency two-point functions</td>
 </tr>
 <tr>
-<td>$S_F(x-y)=\langle 0|T\,\psi^{\mathrm{fop}}(x)\bar\psi^{\mathrm{fop}}(y)|0\rangle$</td>
+<td>$S_F(x-y)=\langle 0|T\,\psi^{\mathrm{fop}}(x)\psi^{\mathrm{fop}\dagger}iR_{\vec e_x}^{\mathrm{axf}}(y)|0\rangle$</td>
 <td>Feynman propagator</td>
 </tr>
 <tr>

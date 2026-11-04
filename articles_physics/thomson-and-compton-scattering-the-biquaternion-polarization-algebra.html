@@ -386,22 +386,22 @@ the photon polarizations entering through this pairing and the electron spin thr
 <p>The <strong>mass enters as the one external scale</strong>: the Klein–Nishina function depends only on $x = \hbar\omega/mc^2$, and the Thomson cross-section is its $x\to0$ limit, in which the recoil is negligible and the electron is effectively at rest. In the biquaternion-norm language the electron's mass is $\langle\tilde P_e\rangle_{\natural} = -m^2c^2$ and the photon's is $\langle\tilde P_{\mathrm{ph}}\rangle_{\natural} = 0$, so the kinematics joins a timelike momentum to a null one, and $x$ is the photon's energy in units of the electron's rest energy.</p>
 <p>What the framework does <strong>not</strong> supply is the dynamics. The Thomson cross-section and the Klein–Nishina formula are consequences of the Maxwell–Dirac action and its quantisation, not of the algebra; the algebra organises the polarization bookkeeping and exhibits the states, the observables, and the geometric factors as elements of one structure, but the $r_e^2$ and the $(\omega_{\mathrm{out}}/\omega)^2$ come from the field theory. This is the same boundary the photon article draws: the framework transcribes the standard physics faithfully, and the specific facts attached to the photon and the electron are supplied from outside.</p>
 <h2 id="the-legacy-pauli-gamma-formulation">The Legacy Pauli Gamma Formulation</h2>
-<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
+<p>The Pauli and gamma formulation is legacy: the reasons are explained in the article <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one cell,
 $$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
+\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$</p>
 <p>The same in the axis-free display:</p>
 <p>$$
-\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$</p>
 <p>with the metric and orientation
 $$
@@ -410,66 +410,61 @@ $$
 The time generator is a <strong>right</strong> multiplication, the three spatial ones are <strong>left-times-right</strong>, and the mass unit $L_{e_t}^{\mathrm{pau}}$ is the identity: the asymmetry is the frame, not a choice, and it is why the gradient $\tilde\nabla$ and the momentum $\tilde P$ enter the cell formulation with one generator of each type.</p>
 <p>Every factor of $i$ in these cells is the same central unit, so $i^2=-1$; the squares then come out with the metric's signs, and the two minus signs involved are distinct. For the time generator,
 $$
-(\gamma_0)^2 = i^2\,R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{pau}} = i^2\,R_{-e_t}^{\mathrm{pau}} = (-1)(-1)\,I_4 = +I_4 ,
+(\gamma_0[\mathbb{M}_-])^2 = i^2\,R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{pau}} = i^2\,R_{-e_t}^{\mathrm{pau}} = (-1)(-1)\,I_4 = +I_4 ,
 $$</p>
 <p>In the axis-free display:</p>
 <p>$$
-(\gamma_0)^2 = i^2\,R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{axf}} = i^2\,R_{-e_t}^{\mathrm{axf}} = (-1)(-1)\,I_4 = +I_4 ,
+(\gamma_0[\mathbb{M}_-])^2 = i^2\,R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{axf}} = i^2\,R_{-e_t}^{\mathrm{axf}} = (-1)(-1)\,I_4 = +I_4 ,
 $$</p>
 <p>the first minus from $i^2=-1$ and the second from $\vec e_x^2=-e_t$; for a spatial generator,
 $$
-(\gamma_k)^2 = i^2\,L_{\vec e_k}^{\mathrm{pau}}L_{\vec e_k}^{\mathrm{pau}}\,R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}} = i^2\,(+I_4) = -I_4 ,
+(\gamma_k[\mathbb{M}_-])^2 = i^2\,L_{\vec e_k}^{\mathrm{pau}}L_{\vec e_k}^{\mathrm{pau}}\,R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}} = i^2\,(+I_4) = -I_4 ,
 $$</p>
 <p>The same identities in the axis-free display:</p>
 <p>$$
-(\gamma_k)^2 = i^2\,L_{\vec e_k}^{\mathrm{axf}}L_{\vec e_k}^{\mathrm{axf}}\,R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = i^2\,(+I_4) = -I_4 ,
+(\gamma_k[\mathbb{M}_-])^2 = i^2\,L_{\vec e_k}^{\mathrm{axf}}L_{\vec e_k}^{\mathrm{axf}}\,R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = i^2\,(+I_4) = -I_4 ,
 $$</p>
-<p>because both quaternion squares are $-e_t$ and their product is $+I_4$. This is the whole content of the signature: the time cell squares to $+I_4$ and the spatial cells to $-I_4$, so the frame is the Minkowski one and the Clifford relations below are consistent with the metric above.</p>
+<p>because both quaternion squares are $-e_t$ and their product is $+I_4$. This is the whole content of the signature: the time cell squares to $+I_4$ and the spatial cells to $-I_4$, so the frame is the Minkowski one and the anticommutation relations below are consistent with the metric above.</p>
 <p>A product $M=ab$ of two elements has the coefficient matrix $c(M)_{ij}=a_ib_j$, of rank one: the products therefore fill the seven-dimensional cone $\operatorname{rank}c(M)\le1$ inside the sixteen-dimensional algebra, a general element is a sum of at most four of them, and $\ell(M)=\operatorname{rank}c(M)$ is that number.</p>
-<p>The central grading of the complexified algebra, $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $\chi^2=e_t$, is a different object from $\gamma_5$: $\chi$ lives in the algebra, where the two central idempotents are $\tfrac12(e_t\pm\chi)$, while $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is its representative on the Dirac module. That $\gamma_5$ is the same cell as the chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$ of the spin section is why one factor separates the two helicities of the photon and the two spin states of the electron.</p>
+<p>The central grading of the complexified algebra, $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $\chi^2=e_t$, is a different object from $\gamma_5[\mathbb{M}_-]$: $\chi$ lives in the algebra, where the two central idempotents are $\tfrac12(e_t\pm\chi)$, while $\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is its representative on the Dirac module. That $\gamma_5[\mathbb{M}_-]$ is the same cell as the chirality cell $-iR_{\vec e_z}^{\mathrm{pau}}$ of the spin section is why one factor separates the two helicities of the photon and the two spin states of the electron.</p>
 <p>The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
-<p><strong>The identities the bodies cite.</strong>
+<p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu,\gamma_5\}=0,
-\qquad \varepsilon=(1,-1,-1,-1),$$
-$$
-[\gamma_\mu,\gamma_\nu]=2\gamma_\mu\gamma_\nu\quad(\mu\ne\nu),\qquad
-[\gamma_a,S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d-\varepsilon_a\delta_{ad}\gamma_c,\qquad
-S_{cd}=\tfrac14[\gamma_c,\gamma_d],
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
+(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
+\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
 $$
 $$
-\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\qquad
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
-$$</p>
-<p>Read in the axis-free display:</p>
-<p>$$
-\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad
-\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
-$$</p>
-<p>$$
-\mathrm{Tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{Tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
+[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
+[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
+S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
-\mathrm{Tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
-=4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
-The four contraction sums are frame statements, because a cell's square is. In a Euclidean frame, where all four generators (written $\Gamma_\mu$ here) square to $+I_4$, they take the textbook values,
+$$
+\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
+=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
+-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
++\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
+$$
+The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.</p>
+<p>The volume cell is $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, the same cell written in the two displays.</p>
+<p>The four contraction sums are frame statements, because a cell's square is. In a Euclidean frame, where all four generators (written $\Gamma_\mu$ here) square to $+I_4$, they take the textbook values,
 $$
 \sum_\mu\Gamma_\mu\Gamma_\mu=4I_4,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\mu=-2\Gamma_\alpha,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\mu=4\delta_{\alpha\beta}I_4,\qquad
 \sum_\mu\Gamma_\mu\Gamma_\alpha\Gamma_\beta\Gamma_\gamma\Gamma_\mu=-2\Gamma_\gamma\Gamma_\beta\Gamma_\alpha .
 $$
-In the Minkowski frame of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, since $\gamma_0^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones are frame-dependent as written, and the two that follow from $g$ are worth recording because the naive substitution of $g$ for $\delta$ fails there: with all indices down,
+In the Minkowski frame of this article only the even one is a plain trace: $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$, since $\gamma_0[\mathbb{M}_-]^2=+I_4$ and the three spatial squares are $-I_4$. The odd ones are frame-dependent as written, and the two that follow from $g$ are worth recording because the naive substitution of $g$ for $\delta$ fails there: with all indices down,
 $$
-\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=4\gamma_0,\qquad
-\sum_\mu\gamma_\mu\gamma_k\gamma_\mu=0 ,
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_0[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4\gamma_0[\mathbb{M}_-],\qquad
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=0 ,
 $$
-verified for the four directions. The covariant forms are recovered by raising one index, $\sum_\mu\gamma^\mu\gamma^\alpha\gamma_\mu=-2\gamma^\alpha$, also verified.</p>
+verified for the four directions. The covariant forms are recovered by raising one index, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma^\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma^\alpha[\mathbb{M}_-]$, also verified.</p>
 <p><strong>The two Dirac equations.</strong> Two equations carry the name in this series, and the frame is what separates them. The first is the corpus's <strong>one-sided</strong> chiral pair,
 $$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L ,\qquad
@@ -477,24 +472,24 @@ $$
 $$
 in which the gradient acts by left multiplication only, the field is a section of $\Delta = S\oplus S^{\mathrm c}$, and the mass is the off-diagonal pairing of the two chiral halves. Its plane-wave reduction is the eigenvalue problem of the symbol cell of the spin section,
 $$
-D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}} ,
+D(p) = p_{0}\,\gamma_0[\mathbb{M}_-]-\sum_k p_{k}\,\gamma_k[\mathbb{M}_-]+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}} ,
 \qquad
 D(p)\tilde\Psi = 2m\,\tilde\Psi \ \ \text{on the positive-frequency solutions},
 $$</p>
 <p>The same expressions, in the axis-free display:</p>
 <p>$$
-D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} ,
+D(p) = p_{0}\,\gamma_0[\mathbb{M}_-]-\sum_k p_{k}\,\gamma_k[\mathbb{M}_-]+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} ,
 \qquad
 D(p)\tilde\Psi = 2m\,\tilde\Psi \ \ \text{on the positive-frequency solutions},
 $$</p>
-<p>and the cell obeys $D(p)^2 = 2m\,D(p)$ on shell, so $D(p)/2m$ is the projector of rank two that the previous section uses. Its chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi = i\tilde\Xi_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\chi)$ are its central idempotents.</p>
+<p>and the cell obeys $D(p)^2 = 2m\,D(p)$ on shell, so $D(p)/2m$ is the projector of rank two that the previous section uses. Its chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$, whose projectors $\tfrac12(1\pm\gamma_5[\mathbb{M}_-])$ separate the chiral halves; the central sign $\chi = i\tilde\Xi_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\chi)$ are its central idempotents.</p>
 <p>The second is Kravchenko's <strong>two-sided</strong> equation, the dictionary form on $\mathbb{B}$,
 $$
 \mathcal{N}F = \Bigl(i\frac{\partial}{\partial t'}+D_3\Bigr)F - mi\,\overline{F}\,\vec e_z = 0 ,
 \qquad\text{that is}\qquad
 -\tilde\nabla^{\natural}F - mi\,\overline{F}\,\vec e_z = 0
 $$
-in natural units, where $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, its chirality is the chirality cell $\gamma_5=i\omega$, with $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume cell, and its analytic machinery is the Cauchy theory of the dictionary article.</p>
+in natural units, where $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ is the three-dimensional Cauchy–Riemann operator, the bar is the componentwise conjugation and $\vec e_z$ multiplies from the right. Its mass term is a conjugation together with a fixed direction rather than an off-diagonal pairing, its chirality is the chirality cell $\gamma_5[\mathbb{M}_-]=i\omega$, with $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume cell, and its analytic machinery is the Cauchy theory of the dictionary article.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -522,7 +517,7 @@ in natural units, where $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ is the three
 <tr>
 <td>Chirality</td>
 <td>the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$</td>
-<td>the chirality cell $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\omega$, with $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume cell; in the axis-free display $\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega$, with $\omega=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
+<td>the chirality cell $\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\omega$, with $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume cell; in the axis-free display $\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega$, with $\omega=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>Use</td>
