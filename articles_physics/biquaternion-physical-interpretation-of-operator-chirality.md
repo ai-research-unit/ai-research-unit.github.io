@@ -19,7 +19,7 @@ $$
 $$
 \tilde\nabla=e_t\partial_t+\vec e_x\partial_x+\vec e_y\partial_y+\vec e_z\partial_z,
 $$
-with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(1,-1,-1,-1)$, so that $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The label $\mathrm{pau}$ marks the Peirce display wherever an array is printed, because those are the arrays the literature prints.
+with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(1,-1,-1,-1)$, so that $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. An array, where one is printed, is printed in the Peirce display, labelled $\mathrm{pau}$, beside its axis-free twin, labelled $\mathrm{axf}$.
 
 ## The Results It Uses
 
@@ -149,11 +149,11 @@ e_\pm=\tfrac12(1\pm i\tilde\Xi_{\mathrm{ad}}),\qquad \chi=i\tilde\Xi_{\mathrm{ad
 $$
 and reads $\chi$ on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operatorname{diag}(-I_2,I_2)$.
 
-**What it got right.** The array. The operator chirality has the same array in the same frame,
+**What it got right.** The array. The operator chirality is the same cell,
 $$
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\operatorname{diag}(-I_2,I_2)=\rho(\chi),
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
 $$
-and the two readings agree on every number they print.
+whose Peirce array is $\operatorname{diag}(-I_2,I_2)$ — the section that reads it in that display is §*The Gamma Formulation* — and whose axis-free array is a signed permutation. The two readings agree on every number they print.
 
 **What it cost.** Three structures that the physics does not need: an adjoined root, a complexification of the real algebra, and a declaration of a module. Each of them is a choice, and each of them is invisible in the array, which is why the two readings were taken for one another for as long as they were.
 
@@ -196,7 +196,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 | their relation | commutation, because the sides differ | anticommutation in the Clifford display |
 | the mass | a central scalar, no side | the term that couples the halves |
 
-**The display.** Where this article prints an array it prints the Peirce display, labelled $\mathrm{pau}$, because those are the arrays the literature prints. The body of the article writes the same operators in the axis-free display, and the change of display is a conjugation, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, which preserves every product, every trace and every determinant. A statement about the side is therefore a statement about both displays at once, and an array is a statement about one.
+**The display.** Where this article prints an array it prints both displays: the Peirce one, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and the axis-free one after it, labelled $\mathrm{axf}$, which is the display of the body. The body of the article writes the same operators in the axis-free display, and the change of display is a conjugation, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, which preserves every product, every trace and every determinant. A statement about the side is therefore a statement about both displays at once, and an array is a statement about one.
 
 ## Summary
 

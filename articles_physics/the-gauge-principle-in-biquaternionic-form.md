@@ -351,11 +351,24 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 The factors of $i$ are reduced before the squares are read, $i^2=-1$:
 
 $$
 \gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)(+1)(-1)I_4=I_4,\qquad
 \gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)(-1)(-1)I_4=-I_4,
+$$
+
+In the axis-free display:
+
+$$
+\gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^2}^{\mathrm{axf}}=(-1)(+1)(-1)I_4=I_4,\qquad
+\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{axf}}R_{\vec e_y^2}^{\mathrm{axf}}=(-1)(-1)(-1)I_4=-I_4,
 $$
 
 so the frame carries the Lorentzian signature. With $\mu,\nu\in\{0,1,2,3\}$ in this section only, the five cells satisfy
@@ -373,7 +386,7 @@ $\gamma_5$ is the chirality cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ used in th
 
 The correspondence with the matrix algebra is complex-linear. Over $\mathbb{R}$ the products of the four generator cells, with real coefficients, span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the cells $L_aR_b$ with $a,b$ in the real quaternion algebra span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$; with biquaternion parameters the cells span all of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

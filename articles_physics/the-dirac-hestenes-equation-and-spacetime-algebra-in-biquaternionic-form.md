@@ -12,7 +12,7 @@ where $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplication
 
 The connection to the biquaternion framework is closer than for any other topic in this series. The **even subalgebra** of the spacetime algebra is, as a real algebra, the **biquaternion algebra** $\mathbb{B}=\mathbb{C}\otimes_\mathbb R\mathbb H$ of the companion articles. The Dirac–Hestenes spinor $\psi$ is an even multivector; it *is* a biquaternion, with the same eight real components as the framework's field. Moreover the pseudoscalar $\omega$ commutes with every even element and squares to $-1$, so on the even subalgebra it serves as the **central imaginary unit** of $\mathbb B$, which the conventions send to $-i$. The Dirac–Hestenes equation and the framework's equation are therefore two interpretations of the same algebra, and this article identifies where they agree and where they do not.
 
-The article keeps three equations apart, because the corpus now carries more than one and they must not be read as one. The corpus's own equation is the **one-sided chiral pair**, in which the gradient acts on the left and chirality is the central sign, which on the module splits the field into two halves. Kravchenko's equation is **two-sided**, with the derivative on the left, the mass on the right through a fixed direction, and a conjugation in the mass term. The Dirac–Hestenes equation is a third form: its derivative acts on the left, but its spin plane and its mass act on the right. It is the spacetime-algebra face of the chiral formulation, not a rewriting of Kravchenko's equation. The two-sided structure is the subject of the section *The Two Equations of the Corpus*.
+The article keeps three equations apart, because the corpus now carries more than one and they must not be read as one. The corpus's own equation is the **one-sided chiral pair**, in which the gradient acts on the left and chirality is the cell $-iR_{\vec e_z}^{\mathrm{axf}}$, which splits the field into two halves. Kravchenko's equation is **two-sided**, with the derivative on the left, the mass on the right through a fixed direction, and a conjugation in the mass term. The Dirac–Hestenes equation is a third form: its derivative acts on the left, but its spin plane and its mass act on the right. It is the spacetime-algebra face of the chiral formulation, not a rewriting of Kravchenko's equation. The two-sided structure is the subject of the section *The Two Equations of the Corpus*.
 
 What this buys the framework is a sharper statement of one of its open questions. The Dirac–Hestenes equation is not written with left multiplication alone: the terms $\psi\omega\sigma_3$ and $m\psi v_0$ multiply the spinor on the **right**, by a fixed bivector and by the fixed **odd** vector $v_0$. The companion article on minimal coupling records, as an unresolved choice, whether the framework's matter field sits with the gradient on the left or on the right, and records that the conserved current needs an odd element. The Dirac–Hestenes equation is the standard formulation in which exactly that structure is explicit. This article does not resolve the framework's choice; it exhibits the formulation in which the choice is forced.
 
@@ -158,7 +158,7 @@ L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L,
 L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R,
 $$
 
-in which the gradient acts by left multiplication on each chiral half, and the mass is the off-diagonal pairing of the two halves. The field is $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R\in\Delta=S\oplus S^{\mathrm c}$. Chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, the grading of the complexified algebra; on the module it is the splitting of the field into the two halves, and the value of the mass is what mixes them. The operator is one-sided, and the two lines are the two chiralities.
+in which the gradient acts by left multiplication on each chiral half, and the mass is the off-diagonal pairing of the two halves. The field is $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R\in\Delta=S\oplus S^{\mathrm c}$. Chirality is the cell $\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplication; on the module it splits the field into the two halves, and the value of the mass is what mixes them. Its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, and it is one operator in two writings. The operator is one-sided, and the two lines are the two chiralities.
 
 ### The two-sided equation
 
@@ -315,10 +315,20 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb C)=M_4(\mathbb C)$, not a d
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1=iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2=iL_{e_y}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3=iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+$$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The article's frame is $v_\mu=\gamma_\mu$ and its pseudoscalar is $\omega=-i\gamma_5$. The cell $\gamma_5$ is the chirality cell $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
@@ -333,17 +343,33 @@ $$
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 
+In the axis-free display:
+
+$$
+\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\qquad
+\gamma_5^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$
+
 and the volume product is
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
+The same identities in the axis-free display:
+
+$$
+\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=\omega=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+$$
+
 The factors of $i$ are reduced by $i^2=-1$ wherever they meet in a product.
 
 The dictionary is $\mathbb R$-linear, as *Conventions of the Matrix Models* states; the gammas are single cells, and their real span is the real Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb R)$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

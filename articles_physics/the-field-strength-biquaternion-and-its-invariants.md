@@ -544,6 +544,12 @@ $$
 M=\sum_{\mu,\nu}c_{\mu\nu}(M)\,L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}},
 $$
 
+The same in the axis-free display:
+
+$$
+M=\sum_{\mu,\nu}c_{\mu\nu}(M)\,L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}},
+$$
+
 where $e_\mu$ runs over the four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$, so the coefficient matrix $c(M)$ is unique. A cell is a pure tensor of rank one; the cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four cells.
 
 The gamma cells are
@@ -556,11 +562,28 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
+In the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+$$
+
 Every generator carries exactly one factor of $i$, so a product of two generators carries $i^2=-1$ and is a plain cell. For example,
 
 $$
 \gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}
 =-L_{\vec e_x}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+$$
+
+The same identities in the axis-free display:
+
+$$
+\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}
+=-L_{\vec e_x}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}=+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The same collapse gives the squares and the Clifford relations,
@@ -592,6 +615,16 @@ i\gamma_3=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 i\gamma_5=+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
+Read in the axis-free display:
+
+$$
+i\gamma_0=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+i\gamma_1=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+i\gamma_2=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+i\gamma_3=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+i\gamma_5=+L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+$$
+
 $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell $\Gamma$, the involution that grades the Dirac module (*Chirality: The Conjugate Pair*). The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; being central, it acts on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operatorname{diag}(-I_2,I_2)$, and $\gamma_5$ is its representative there.
 
 **The two Dirac equations.** The two families separate the corpus's two Dirac equations. The one-sided pair acts with the left family alone,
@@ -608,11 +641,18 @@ $$
 -mi\,R_{\vec e_z}^{\mathrm{pau}}\bar F=0,
 $$
 
+The same expressions, in the axis-free display:
+
+$$
+\left(iL_{e_t}^{\mathrm{axf}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}\right)F
+-mi\,R_{\vec e_z}^{\mathrm{axf}}\bar F=0,
+$$
+
 where the derivative acts from the left, the mass acts from the right through $\vec e_z$, and $\bar F$ is the coefficient conjugate. The two equations share the frame but not the operator: the one-sided pair splits the field into chirality halves; the two-sided equation is antilinear in its mass term and carries the chirality in the right multiplication.
 
 The dictionary is complex-linear, so over $\mathbb{C}$ the five generators generate the whole of $M_4(\mathbb{C})$. Over $\mathbb{R}$ the sixteen products of the five generators span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ (*Matrix Representations and Conventions*).
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

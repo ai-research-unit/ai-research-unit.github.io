@@ -226,6 +226,12 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 **Every $i$ in that display is the central scalar, $i^{2}=-1$, and it is what fixes the signs.** Since $L_{e_t}^{\mathrm{pau}}$ is the identity, two of the five collapse to a one-sided multiplier, $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. A gamma is one product, and each of its multipliers squares to the minus of $\vec e^{2}=-e_t$, so
 
 $$
@@ -234,12 +240,26 @@ $$
 \gamma_k^{2}=i^{2}(L_{\vec e_k}^{\mathrm{pau}})^{2}(R_{\vec e_y}^{\mathrm{pau}})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(k=1,2,3).
 $$
 
+In the axis-free display:
+
+$$
+\gamma_0^{2}=i^{2}(R_{\vec e_x}^{\mathrm{axf}})^{2}=(-1)(-I_4)=I_4,
+\qquad
+\gamma_k^{2}=i^{2}(L_{\vec e_k}^{\mathrm{axf}})^{2}(R_{\vec e_y}^{\mathrm{axf}})^{2}=(-1)(-I_4)(-I_4)=-I_4\quad(k=1,2,3).
+$$
+
 The time gamma has one multiplier, and its minus cancels $i^{2}=-1$; the spatial gammas have two, whose two minus signs multiply to $+I_4$ and leave $i^{2}=-1$ standing. The products of distinct gammas anticommute, so the frame obeys $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(1,-1,-1,-1)$.
 
 The fifth gamma is not a fifth frame vector but their product. The four defining $i$'s contribute $i^{4}=1$ and the cells contribute $\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}$, so
 
 $$
 i\,\gamma_0\gamma_1\gamma_2\gamma_3 \;=\; -iR_{\vec e_z}^{\mathrm{pau}} \;=\; \gamma_5 ,
+$$
+
+The same identities in the axis-free display:
+
+$$
+i\,\gamma_0\gamma_1\gamma_2\gamma_3 \;=\; -iR_{\vec e_z}^{\mathrm{axf}} \;=\; \gamma_5 ,
 $$
 
 the chirality cell of the neutrality section.
@@ -252,7 +272,7 @@ A single product is a pure tensor; the products form the seven-dimensional cone 
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

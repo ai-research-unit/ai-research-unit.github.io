@@ -231,7 +231,7 @@ in natural units, with $D_3 = \sum_k\vec e_k\,\partial/\partial Q_k$ and the bar
 | Field | $\tilde\Psi\in\Delta=S\oplus S^{\mathrm{c}}$ | $F\in\mathbb{B}$ |
 | Mass | the off-diagonal pairing of $S$ and $S^{\mathrm{c}}$ | $-mi\,\overline{F}\,\vec e_z$: a conjugation and a direction |
 | Derivative | left, by $\tilde\nabla$ and $\tilde\nabla^{\natural}$ | left by $i\partial/\partial t'$ and $D_3$; right by $\vec e_z$ in the mass |
-| Chirality | the central sign of the complexified algebra | the dictionary's volume element, a right multiplication by $\vec e_z$ |
+| Chirality | the cell $\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, acting as $\operatorname{diag}(-I_2,I_2)$ | the same cell, the dictionary's volume element, a right multiplication by $\vec e_z$ |
 | Use | the definition, the kinematics, and the mass term | the analytic theory and the integral representation |
 
 The two are related by an explicit real-linear dictionary, not by an identity of operators. The one-sided pair is the definition, and the two-sided single equation is the form in which the analytic machinery acts. The electron's mass is the same coefficient $m_e$ in both; what changes is the representation, not the physics.
@@ -344,6 +344,12 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 $\gamma_5$ is the cell of the chirality operator $\Gamma:\psi\mapsto -i\,e_t\,\psi\,\vec e_z = -iR_{\vec e_z}^{\mathrm{pau}}$, which acts on the Dirac module. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, where $\tilde\Xi_{\mathrm{ad}}$ is the central root of $-1$ that complexifies the real subalgebra $\mathbb{B}_{\mathbb{R}}=\mathbb{H}_{\mathbb{B}}$ ($\tilde\Xi_{\mathrm{ad}}^2=-1$, $[\tilde\Xi_{\mathrm{ad}},i]=0$), is the difference of the two central idempotents of the complexified algebra, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-1)=e_t$. The grading $\chi$ is central and belongs to the algebra, $\Gamma$ is its representative on the module, and $\gamma_5$ is that representative written as a cell.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The generator cells $G_\mu$ of the charge section are these gammas, $G_\mu=\gamma_\mu$, and the charge-conjugation cell is $C = -iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
@@ -384,7 +390,7 @@ $$
 
 In the $\mathbb{M}_-$ frame the metric enters through $\varepsilon=(1,-1,-1,-1)$, and the same sums read $4I_4$, $-2\gamma_\alpha$, $4g_{\alpha\beta}I_4$ and $-2\gamma_\rho\gamma_\beta\gamma_\alpha$, while the unweighted sum is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

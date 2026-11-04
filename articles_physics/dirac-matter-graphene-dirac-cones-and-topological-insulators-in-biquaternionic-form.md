@@ -65,7 +65,7 @@ The physical electron additionally carries its genuine spin, so the full low-ene
 
 ### The framework's ideals
 
-The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, whose Peirce carriers are the two columns, the minimal left ideals here. The parent's Dirac field is a pair of Weyl spinors, one per ideal, and that pair is what the framework calls **chirality**: the left and right components that the mass term mixes. The framework therefore has, natively, exactly one two-fold internal structure — the chirality pair — and its mass is the term that couples the two ideals.
+The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, whose Peirce carriers are the two columns, the minimal left ideals here. The parent's Dirac field is a pair of Weyl spinors, one in $S=\mathbb{B}\tilde\Pi_+$ and one in $S^{\mathrm{c}}$, and that pair is what the framework calls **chirality**: the left and right components that the mass term mixes. The second Peirce ideal $\mathbb{B}\tilde\Pi_-$ is a second copy of $S$ and carries no chirality. The framework therefore has, natively, exactly one two-fold internal structure — the chirality pair $S$ and $S^{\mathrm{c}}$ — and its mass is the term that couples them.
 
 ### Counting versus identification
 
@@ -126,9 +126,9 @@ The low-energy equations of Dirac matter are the framework's Dirac equation with
 
 Three things, none of them a derivation from first principles.
 
-- **The location of the mass.** The framework says exactly which term opens the gap: the term coupling the two minimal left ideals. Sublattice-symmetry breaking in graphene is that term, and saying so is a genuine identification rather than a relabelling, because both are the unique chirality-mixing bilinear.
+- **The location of the mass.** The framework says exactly which term opens the gap: the term coupling the two chiral halves, $S$ and $S^{\mathrm{c}}$. Sublattice-symmetry breaking in graphene is that term, and saying so is a genuine identification rather than a relabelling, because both are the unique chirality-mixing bilinear.
 - **The sign structure of protection.** The framework's Kramers article places $\mathcal T^2=-e_t$ in the algebra and identifies the commutant as a quaternionic line, which is the algebraic content of $\mathbb Z_2$ protection.
-- **A counting caution.** The eight real components of the biquaternion field do not decompose into sublattice and valley the way graphene's spinor does; the framework's second ideal is chirality, not valley. This negative statement disciplines any attempt to derive valleytronics from the algebra.
+- **A counting caution.** The eight real components of the biquaternion field do not decompose into sublattice and valley the way graphene's spinor does; the framework's second Peirce ideal is a copy of $S$, not a valley label. This negative statement disciplines any attempt to derive valleytronics from the algebra.
 
 ### What the framework does not supply
 

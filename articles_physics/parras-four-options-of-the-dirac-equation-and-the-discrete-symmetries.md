@@ -238,8 +238,20 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+$$
+
 $$
 \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
+$$
+
+In the axis-free display:
+
+$$
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
 $$
 
 The four frame cells satisfy the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$, and their squares are $\pm I_4$:
@@ -254,6 +266,12 @@ $$
 \gamma_5=\chi=-iR_{\vec e_z}^{\mathrm{pau}},\qquad \gamma_5^2=I_4,\qquad \{\gamma_\mu,\gamma_5\}=0 .
 $$
 
+The same identities in the axis-free display:
+
+$$
+\gamma_5=\chi=-iR_{\vec e_z}^{\mathrm{axf}},\qquad \gamma_5^2=I_4,\qquad \{\gamma_\mu,\gamma_5\}=0 .
+$$
+
 All of these were recomputed on the module's explicit $4\times4$ representation. The cells of the body are sums of such products: a single product $L_aR_b$ is a pure tensor, the pure tensors form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element of $M_4(\mathbb C)$ is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 **The spin bivector.** The identity behind the body's spin cell is read off the frame,
@@ -262,13 +280,19 @@ $$
 \gamma_2\gamma_1=-L_{\vec e_z}^{\mathrm{pau}},\qquad\text{hence}\qquad e_{21}=-\vec e_z,\qquad R_{e_{21}}=R_{-\vec e_z}^{\mathrm{pau}}=-i\,\chi ,
 $$
 
+Read in the axis-free display:
+
+$$
+\gamma_2\gamma_1=-L_{\vec e_z}^{\mathrm{axf}},\qquad\text{hence}\qquad e_{21}=-\vec e_z,\qquad R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-i\,\chi ,
+$$
+
 using $\chi=-iR_{\vec e_z}^{\mathrm{pau}}$ and $R_{-\vec e_z}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}}$ in the last step. As an operator the bivector is the left multiplication by the frame product; as an element of the even algebra it is $-\vec e_z$. The spin *cell* that Parra's equation applies to the field is the right multiplication by that element, and it coincides with the chirality cell up to the central factor. That is the whole of the correspondence, and it needs no second imaginary unit: $(-i\chi)^2=(-i)^2\chi^2=-I_4$ while $\chi^2=I_4$, the factor $i^2=-1$ being the only place a sign is spent.
 
 **The chirality operator and its representative.** $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. The corpus writes the two with the same letter and separates them by the subscript (*The Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form*); this article keeps that spelling. The abstract sign is central and squares to the identity of the algebra; its representative is a cell and squares to the identity of the module.
 
 The dictionary is complex-linear: over $\mathbb{R}$ the sixteen products of the frame cells span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and over $\mathbb{C}$ they span $M_4(\mathbb{C})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

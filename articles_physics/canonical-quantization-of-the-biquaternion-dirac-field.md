@@ -522,10 +522,25 @@ $$
 \gamma_3=C_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=C_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1=C_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2=C_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3=C_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+$$
+
 The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixes its sign and its cell:
 
 $$
 \gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
+$$
+
+In the axis-free display:
+
+$$
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives; the cell that results is $-iR_{\vec e_z}^{\mathrm{pau}}$, the chirality cell of the solutions article.
@@ -542,6 +557,12 @@ with $p_0=E_{\vec p}$ and $p_k$ the physical momentum components. Written in cel
 
 $$
 \mathbb{D}=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
+$$
+
+The same identities in the axis-free display:
+
+$$
+\mathbb{D}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
 $$
 
 with no imaginary unit left in any term. The collapse removes the $i$, not the cell: $i\gamma_0=-R_{\vec e_x}^{\mathrm{pau}}\ne-I_4$, so the time derivative is multiplied by the right multiplication by $\vec e_x$, not by a number.
@@ -598,7 +619,7 @@ $$
 
 the second being $4\gamma_0$ for $\alpha=0$ and zero for $\alpha=k$. The all-lower four- and five-gamma sums are then neither $4g_{\alpha\beta}I_4$ nor $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$, and they are not recorded: the body does not use them. In the Euclidean frame, where the metric is $\delta$ and lowering changes nothing, the two index conventions coincide and every sum takes the standard form displayed first.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

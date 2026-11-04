@@ -443,8 +443,23 @@ $$
 \gamma_3 = C_z = iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0 = C_t = iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1 = C_x = iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2 = C_y = iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3 = C_z = iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+$$
+
 $$
 \gamma_5 = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+$$
+
+In the axis-free display:
+
+$$
+\gamma_5 = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 The volume cell is the product of the four, $C_tC_xC_yC_z = -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$: the four $i$'s of the product reduce as $i^4 = +1$, so the product is a real cell, and the one further $i$ that turns it into $\gamma_5$ is the $i$ displayed.
@@ -493,7 +508,7 @@ $$
 
 In the $\mathbb{M}_-$ frame, with $g = (+1,-1,-1,-1)$, the metric enters: the first sum is $\sum_\mu\gamma_\mu\gamma_\mu = -2I_4$, and the second is $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu = 2\left(1+g_{\alpha\alpha}\right)\gamma_\alpha$, which is $4\gamma_0$ for $\alpha = 0$ and vanishes for a spatial $\alpha$. The third and fourth are stated in the Euclidean frame only; in the $\mathbb{M}_-$ frame they do not take the Euclidean form with $g$ written for $\delta$. The body uses the anticommutator, the chirality cell and the volume element; the contraction sums are recorded for reference.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

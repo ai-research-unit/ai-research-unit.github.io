@@ -296,8 +296,18 @@ Here $L_a$ and $R_b$ are the left and right multiplications of §*The Module and
 $$
 \begin{aligned}
 \gamma_0 &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2 &= iL_{e_y}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
 \gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\end{aligned}
+$$
+
+The same in the axis-free display:
+
+$$
+\begin{aligned}
+\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 \end{aligned}
 $$
 
@@ -306,6 +316,13 @@ The four $\gamma_\mu$ are the images of the frame vectors $v_\mu$ in the represe
 $$
 \gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^{2}}^{\mathrm{pau}}=i^2L_{e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4,\qquad
 \gamma_k^2=i^2L_{\vec e_k^{2}}^{\mathrm{pau}}R_{\vec e_y^{2}}^{\mathrm{pau}}=i^2L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=-I_4 .
+$$
+
+In the axis-free display:
+
+$$
+\gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^{2}}^{\mathrm{axf}}=i^2L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4,\qquad
+\gamma_k^2=i^2L_{\vec e_k^{2}}^{\mathrm{axf}}R_{\vec e_y^{2}}^{\mathrm{axf}}=i^2L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=-I_4 .
 $$
 
 Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_k$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the metric $g=\operatorname{diag}(+1,-1,-1,-1)$, and
@@ -320,6 +337,12 @@ $$
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-R_{\vec e_z}^{\mathrm{pau}},
+$$
+
+The same identities in the axis-free display:
+
+$$
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}},
 $$
 
 and the single $i$ of the definition gives $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$. The cell $\Gamma:=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell of the module, and in this frame $\gamma_5=\Gamma$.
@@ -357,7 +380,7 @@ which is the second member of the pair with its left field read as $-i\overline{
 
 **The cells and the cone.** A single product is a pure tensor. Writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$. The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

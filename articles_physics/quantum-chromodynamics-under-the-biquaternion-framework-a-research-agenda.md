@@ -202,7 +202,7 @@ The question for this agenda is how much of that is a *QCD* obstacle. The answer
 
 **What does bear on QCD is the missing colour representation of the quark.** The chiral-fermion article constructs its chiral covariant derivative on the module for an *abelian* phase, with a charge operator $Ϙ = ϙ_LP_L + ϙ_RP_R$. The non-abelian article constructs a connection with values in $\mathrm{SU}(2)$ but explicitly leaves the matter representation open: its open question 3 states that for a non-abelian connection the left and right actions differ and the representation carried by the matter field must be specified, and that the non-abelian charge operator is not constructed. QCD needs the quark in the **fundamental of the colour group**, with the covariant derivative acting on the colour index. By the ceiling of §"The Colour Group", a colour triplet is not a $\mathbb{B}$-module, so this representation must live on an enlarged carrier. The matter representation and the colour group therefore share a single settling object: a construction, on whatever carrier is justified, of a field transforming in the colour fundamental with the connection acting on the internal index.
 
-**The global chiral sector of QCD is a further, distinct obstacle.** Beyond the gauge representation, the quarks carry an approximate global chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ (for the light flavours), which is spontaneously broken and whose consequences — light Goldstone pions, the $\eta_{\mathrm s}$ mass, the axial anomaly, the $\theta$-vacuum — are central to QCD. The framework supplies the chirality cell and the projectors on the module, and it records that the chirality label is invisible to $\mathbb{B}$ alone and appears only through the real structure or the complexification.
+**The global chiral sector of QCD is a further, distinct obstacle.** Beyond the gauge representation, the quarks carry an approximate global chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ (for the light flavours), which is spontaneously broken and whose consequences — light Goldstone pions, the $\eta_{\mathrm s}$ mass, the axial anomaly, the $\theta$-vacuum — are central to QCD. The framework supplies the chirality cell and the projectors on the module, and it records that the chirality is a cell of the two-sided algebra, invisible to $\mathbb{B}$ alone, whose central form appears through the complexification.
 
 The **anomaly** is now partly supplied, and the position has to be stated carefully because it has moved. The chiral-fermion article attempted no biquaternion formulation of it; the companion *Anomalies and Anomaly Cancellation in Biquaternionic Form* does. It writes the Adler–Bell–Jackiw divergence in the framework's own objects,
 
@@ -275,10 +275,26 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
 \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+$$
+
 $$
 \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\Gamma .
+$$
+
+In the axis-free display:
+
+$$
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\Gamma .
 $$
 
 Every sign among their products comes from $i^2=-1$ together with $\vec e_k^2=-e_t$, and the double units are spent before the product is read: $\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$ is a plain cell with no residual unit, and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\Gamma$, that is $\Gamma=i\gamma_0\gamma_1\gamma_2\gamma_3$. The four generators satisfy
@@ -297,7 +313,7 @@ $\gamma_5$ is the reference-frame representative of the chirality cell. The abst
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

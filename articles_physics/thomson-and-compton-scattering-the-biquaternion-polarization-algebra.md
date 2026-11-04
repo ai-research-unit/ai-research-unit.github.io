@@ -392,6 +392,17 @@ $$
 \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+$$
+
 with the metric and orientation
 $$
 g_{\mu\nu}=\mathrm{diag}(+1,-1,-1,-1),\qquad \epsilon_{0123}=+1 .
@@ -402,10 +413,24 @@ Every factor of $i$ in these cells is the same central unit, so $i^2=-1$; the sq
 $$
 (\gamma_0)^2 = i^2\,R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{pau}} = i^2\,R_{-e_t}^{\mathrm{pau}} = (-1)(-1)\,I_4 = +I_4 ,
 $$
+
+In the axis-free display:
+
+$$
+(\gamma_0)^2 = i^2\,R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} = i^2\,R_{\vec e_x\vec e_x}^{\mathrm{axf}} = i^2\,R_{-e_t}^{\mathrm{axf}} = (-1)(-1)\,I_4 = +I_4 ,
+$$
+
 the first minus from $i^2=-1$ and the second from $\vec e_x^2=-e_t$; for a spatial generator,
 $$
 (\gamma_k)^2 = i^2\,L_{\vec e_k}^{\mathrm{pau}}L_{\vec e_k}^{\mathrm{pau}}\,R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}} = i^2\,(+I_4) = -I_4 ,
 $$
+
+The same identities in the axis-free display:
+
+$$
+(\gamma_k)^2 = i^2\,L_{\vec e_k}^{\mathrm{axf}}L_{\vec e_k}^{\mathrm{axf}}\,R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}} = i^2\,(+I_4) = -I_4 ,
+$$
+
 because both quaternion squares are $-e_t$ and their product is $+I_4$. This is the whole content of the signature: the time cell squares to $+I_4$ and the spatial cells to $-I_4$, so the frame is the Minkowski one and the Clifford relations below are consistent with the metric above.
 
 A product $M=ab$ of two elements has the coefficient matrix $c(M)_{ij}=a_ib_j$, of rank one: the products therefore fill the seven-dimensional cone $\operatorname{rank}c(M)\le1$ inside the sixteen-dimensional algebra, a general element is a sum of at most four of them, and $\ell(M)=\operatorname{rank}c(M)$ is that number.
@@ -430,6 +455,14 @@ $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},\qquad
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
+
+Read in the axis-free display:
+
+$$
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+$$
+
 $$
 \mathrm{Tr}(\gamma_\mu\gamma_\nu)=4g_{\mu\nu},\qquad
 \mathrm{Tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma},
@@ -463,7 +496,16 @@ D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{e_t}^{\mathrm{pau}}R_{e_t}^{
 \qquad
 D(p)\tilde\Psi = 2m\,\tilde\Psi \ \ \text{on the positive-frequency solutions},
 $$
-and the cell obeys $D(p)^2 = 2m\,D(p)$ on shell, so $D(p)/2m$ is the projector of rank two that the previous section uses. Its chirality is the central sign $\chi = i\tilde\Xi_{\mathrm{ad}}$, whose two central idempotents $\tfrac12(e_t\pm\chi)$ separate the chiral halves.
+
+The same expressions, in the axis-free display:
+
+$$
+D(p) = p_{0}\,\gamma_0-\sum_k p_{k}\,\gamma_k+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} ,
+\qquad
+D(p)\tilde\Psi = 2m\,\tilde\Psi \ \ \text{on the positive-frequency solutions},
+$$
+
+and the cell obeys $D(p)^2 = 2m\,D(p)$ on shell, so $D(p)/2m$ is the projector of rank two that the previous section uses. Its chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose projectors $\tfrac12(1\pm\gamma_5)$ separate the chiral halves; the central sign $\chi = i\tilde\Xi_{\mathrm{ad}}$ is the same operator written centrally, and $\tfrac12(e_t\pm\chi)$ are its central idempotents.
 
 The second is Kravchenko's **two-sided** equation, the dictionary form on $\mathbb{B}$,
 $$
@@ -478,12 +520,12 @@ in natural units, where $D_3=\sum_k\vec e_k\,\partial/\partial Q_k$ is the three
 | Form | $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | $\mathcal{N}F=0$, that is $-\tilde\nabla^{\natural}F-mi\,\overline{F}\,\vec e_z=0$ |
 | Multiplication | left, by $\tilde\nabla$ and $\tilde\nabla^\natural$ | left, plus right by $\vec e_z$ in the mass term, plus the antilinear bar |
 | Mass | off-diagonal pairing of $S$ and $S^{\mathrm c}$ | $-mi\,\overline{F}\,\vec e_z$ |
-| Chirality | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the chirality cell $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\omega$, with $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume cell |
+| Chirality | the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the chirality cell $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\omega$, with $\omega=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ the volume cell; in the axis-free display $\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\omega$, with $\omega=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ |
 | Use | kinematics, spin sums, and this article | the dictionary, the Cauchy theory, the integral representation |
 
 The two are related by the dictionary and are not the same operator; the scattering problem uses only the first, with the second entering exclusively through the identity of the chirality cell.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

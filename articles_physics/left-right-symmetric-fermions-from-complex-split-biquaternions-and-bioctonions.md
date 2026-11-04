@@ -65,7 +65,7 @@ the complexified Dirac algebra, of complex dimension $16$. These statements were
 
 ## The Left-Right Symmetric Interpretation
 
-**The two copies as the two chiralities.** The doubling is the construction's answer to the chirality problem. Where the single chain algebra $\mathrm{Cl}(6)$ of *The Particle Roster of the Complex Octonionic Chain Algebra* carries one generation in one chirality and needs a second ideal plus an enlarged supercharge sector to become chiral, the doubled algebra carries the two chiralities as its two simple summands. The interpretation is that one summand is the left-handed sector and the other the right-handed sector. The parity automorphism $\sigma$, which interchanges them, is then the discrete left-right symmetry of the left-right symmetric model. The two summands carry the same intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$ and the same charge spectrum, because the ladder operators, the number operator and the $\mathrm{su}(3)$ generators all commute with the volume element $J$ — the centrality established above — so that the two sectors differ in chirality and in nothing else. The states of one summand are
+**The two copies as the two chiralities.** The doubling is the construction's answer to the chirality problem. Where the single chain algebra $\mathrm{Cl}(6)$ of *The Particle Roster of the Complex Octonionic Chain Algebra* carries one generation in one chirality, and reaching the second chirality there takes another ideal together with an enlarged supercharge sector; the doubled algebra carries the two chiralities as its two simple summands. The interpretation is that one summand is the left-handed sector and the other the right-handed sector. The parity automorphism $\sigma$, which interchanges them, is then the discrete left-right symmetry of the left-right symmetric model. The two summands carry the same intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$ and the same charge spectrum, because the ladder operators, the number operator and the $\mathrm{su}(3)$ generators all commute with the volume element $J$ — the centrality established above — so that the two sectors differ in chirality and in nothing else. The states of one summand are
 
 $$
 \boxed{\;1(0),\quad 3(\tfrac13),\quad 3(\tfrac23),\quad 1(1)\;}.
@@ -282,6 +282,16 @@ $$
 \gamma_3&=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, & \gamma_5&=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
 \end{aligned}
 $$
+
+The same in the axis-free display:
+
+$$
+\begin{aligned}
+\gamma_0&=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, & \gamma_1&=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, & \gamma_2&=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\
+\gamma_3&=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, & \gamma_5&=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\chi .
+\end{aligned}
+$$
+
 Every gamma is a single cell. The single cells are the pure tensors; they form the seven-dimensional cone $\ell(M)\le1$, and a general element of the algebra is a sum of at most four of them.
 
 **The relations, and where the signs come from.** With $g=\mathrm{diag}(+1,-1,-1,-1)$,
@@ -298,6 +308,16 @@ $$
 \gamma_1\gamma_0&=i^2\,L_{\vec e_x}^{\mathrm{pau}}L_{e_t}^{\mathrm{pau}}\,R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \end{aligned}
 $$
+
+In the axis-free display:
+
+$$
+\begin{aligned}
+\gamma_0\gamma_1&=i^2\,L_{e_t}^{\mathrm{axf}}L_{\vec e_x}^{\mathrm{axf}}\,R_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=-L_{\vec e_x}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}=+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\\
+\gamma_1\gamma_0&=i^2\,L_{\vec e_x}^{\mathrm{axf}}L_{e_t}^{\mathrm{axf}}\,R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\end{aligned}
+$$
+
 since $L_{e_t}^{\mathrm{pau}}=I_4$ and $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=R_{-\vec e_z}^{\mathrm{pau}}$ while $R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=R_{\vec e_z}^{\mathrm{pau}}$, the two right multiplications themselves anticommuting; the signs come from $i^2=-1$ in each product.
 
 **Chirality.** $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi$ is the chirality cell of the section *The Two Dirac Equations in Cells*, and the product of the four frame cells returns it,
@@ -314,7 +334,7 @@ $$
 
 **The dictionary.** It is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

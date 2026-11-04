@@ -383,10 +383,22 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+$$
+
 The fifth gamma is not a fifth frame vector but their product. The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives and fixes the sign,
 
 $$
 \gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
+$$
+
+In the axis-free display:
+
+$$
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
 $$
 
 and $\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=e_+-e_-$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
@@ -403,6 +415,14 @@ with $p_0=E_{\vec p}$. Each term carries its own collapse, $i\gamma_\mu=iC_\mu=-
 
 $$
 \mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
+\qquad
+\mathbb{D}_p^2=p^2 .
+$$
+
+The same identities in the axis-free display:
+
+$$
+\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
 \qquad
 \mathbb{D}_p^2=p^2 .
 $$
@@ -454,7 +474,7 @@ $$
 
 The raised index is not decoration. With the index down on the summed gamma, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ but $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=4\gamma_0$ for $\alpha=0$ and $0$ for spatial $\alpha$, because $\gamma_0^2=+I_4$ while $\gamma_k^2=-I_4$; the four sums above are the ones that are covariant.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

@@ -439,7 +439,7 @@ What the algebra does supply is the location of the two terms: the convection te
 
 1. **A biquaternion-natural current.** Is there a $\mathbb{B}$-valued current whose symmetric/antisymmetric split reproduces the Gordon split without the two-sided cell $iR_{\vec e_x}^{\mathrm{axf}}$? This is the same question the minimal-coupling article leaves open for the current itself, and a positive answer here would be a positive answer there.
 
-2. **The massless spinor-helicity form.** In the massless case the spin term is a curl and the transport term is an energy-weighted derivative. Does the biquaternion algebra, whose two Peirce carriers are the two chiralities, write the massless decomposition more naturally than the four-component spinor does, and does the helix of a Weyl particle appear as an idempotent of $\mathbb{M}_+$?
+2. **The massless spinor-helicity form.** In the massless case the spin term is a curl and the transport term is an energy-weighted derivative. Does the biquaternion algebra, whose module carries the two chiralities as the eigenspaces of the cell, write the massless decomposition more naturally than the four-component spinor does, and does the helix of a Weyl particle appear as an idempotent of $\mathbb{M}_+$?
 
 3. **The factor of two.** The $g = 2$ asymmetry between the current and the momentum density is a mismatch between two coefficients of the same bivector, one in the current and one in the momentum density. Is there an algebraic statement that fixes the factor of two, or is it one more coefficient the algebra transcribes?
 
@@ -457,10 +457,20 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1=iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2=iL_{e_y}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3=iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+$$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 These are the cells of the conventions under their usual names: $\gamma_\mu$ is $iL_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}$ and $\gamma_5$ is the chirality cell, so the dictionary between the two spellings is a subscript — $\delta_t=\vec e_x$ and $\delta_k=\vec e_y$ — together with a factor of $i$. In these names the relations read $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$, $\gamma_\mu\gamma_\nu=g_{\mu\nu}-i\sigma_{\mu\nu}$, $\{\gamma_\mu,\gamma_5\}=0$, the equation $i\sum_\mu\varepsilon_\mu\gamma_\mu\nabla_\mu\psi=m\psi$, and the current $\bar\psi\gamma_\mu\psi$ with $\bar\psi=\psi^\dagger\gamma_0$. The mixed products of the proof are $\gamma_\mu L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}=-ig_{\mu\nu}-\sigma_{\mu\nu}$ and $L_{e_\nu}^{\mathrm{pau}}R_{\delta_\nu}\gamma_\mu=-ig_{\mu\nu}+\sigma_{\mu\nu}$, and the axial vertex is $\gamma_\mu\gamma_5$, the product that the collapse $i\cdot(-i)=1$ writes as the real cell $L_{e_\mu}^{\mathrm{pau}}R_{\delta_\mu}R_{\vec e_z}^{\mathrm{pau}}$.
@@ -471,7 +481,7 @@ The reference-frame cell of the chirality operator is $\gamma_5$; the central gr
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

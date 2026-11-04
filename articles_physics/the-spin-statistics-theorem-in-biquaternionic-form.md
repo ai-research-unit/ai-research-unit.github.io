@@ -317,6 +317,14 @@ $$
 \gamma_5=c_5=-iR_{\vec e_z}^{\mathrm{pau}},
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=c_0=iR_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_k=c_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5=c_5=-iR_{\vec e_z}^{\mathrm{axf}},
+$$
+
 with $c_5$ the fifth cell, the one that anticommutes with the four and squares to $+I_4$. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 ### The Chirality
@@ -368,7 +376,7 @@ The first three are one rule: a pure $k$-vector picks up $(-1)^k(4-2k)$, that is
 
 In the frame of the cells themselves, where $c_0$ squares to $+I_4$ and $c_k$ to $-I_4$, only the first two keep a closed form. The first stays scalar, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$. The second picks up the metric factor, $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(g_{\alpha\alpha}+1)\gamma_\alpha$, which is $4\gamma_0$ for the time index and $0$ for a spatial one. The third is no longer proportional to $\delta_{\alpha\beta}I_4$: for $\alpha\ne\beta$ it does not vanish. The fourth is no longer $-2\gamma_\alpha\gamma_\beta\gamma_\delta$; the metric enters term by term.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

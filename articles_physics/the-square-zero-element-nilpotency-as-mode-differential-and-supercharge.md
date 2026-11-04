@@ -366,7 +366,7 @@ The supercharge is the case in which the square-zero is paired with the Hamilton
 
 - **The cohomology is the zero-mode space.** For $H$ positive semidefinite and the complex elliptic, $\ker Q=\ker H\oplus\mathrm{im}\,Q$, so $\ker Q/\mathrm{im}\,Q\cong\ker H$. The cohomology is the space of zero modes, and the cohomological index is its graded dimension. The supercharge's content is not the whole spectrum but the part of it that the grading protects.
 - **The splitting is by the Hamiltonian.** The mode's anticommutator is the identity and splits the identity into two rungs; the supercharge's anticommutator is $H$, and the splitting is by the spectral projectors of $H$; the zero modes are the corner that survives.
-- **The grading is chirality.** The supercharge is odd under $\Gamma$; the mode is odd under $(-1)^F=i\vec e_z$. The cell $\Gamma$ is the representative of the grading on the Dirac module: the chiral projectors are $P_\pm=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\pm\Gamma)$, idempotent, orthogonal and complete. The physical grading is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ (the adjoined root $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, from *Chirality: The Conjugate Pair*), with $\chi^2=e_t$, which is not an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. The cell $\Gamma=\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative on the module. In the one-mode truncation the two gradings can be represented by the same cell on the module, but they remain different objects: they act on different spaces and have different physical meanings. The coincidence of the cell is not a coincidence of the role.
+- **The grading is chirality.** The supercharge is odd under $\Gamma$; the mode is odd under $(-1)^F=i\vec e_z$. The cell $\Gamma$ is the representative of the grading on the Dirac module: the chiral projectors are $P_\pm=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\pm\Gamma)$, idempotent, orthogonal and complete. The grading is the operator, the cell $\Gamma$; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ (the adjoined root $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, $\tilde\Xi_{\mathrm{ad}}\notin\mathbb{B}$, from *Chirality: The Conjugate Pair*), with $\chi^2=e_t$, which is not an element of $\mathbb{B}$; no element of $\mathbb{B}$ acts as $\chi$. The cell $\Gamma=\chi_{\mathrm{cell}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative on the module. In the one-mode truncation the two gradings can be represented by the same cell on the module, but they remain different objects: they act on different spaces and have different physical meanings. The coincidence of the cell is not a coincidence of the role.
 
 ## The Label
 
@@ -612,12 +612,26 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 The frame is a Clifford frame. Using $i^2=-1$, the cell rule and $\vec e_k^2=-e_t$, the squares are
 
 $$
 \gamma_0^2=i^2L_{e_t}^{\mathrm{pau}}R_{\vec e_x^2}^{\mathrm{pau}}=(-1)\bigl(-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)=+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 \gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{pau}}R_{\vec e_y^2}^{\mathrm{pau}}=(-1)\bigl(+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\bigr)=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+$$
+
+In the axis-free display:
+
+$$
+\gamma_0^2=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x^2}^{\mathrm{axf}}=(-1)\bigl(-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\qquad
+\gamma_k^2=i^2L_{\vec e_k^2}^{\mathrm{axf}}R_{\vec e_y^2}^{\mathrm{axf}}=(-1)\bigl(+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
 for $k=1,2,3$, and the mixed anticommutators vanish: for $\{\gamma_0,\gamma_j\}$ the left factors commute and the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, while for $\{\gamma_i,\gamma_j\}$ the left factors anticommute and the common right factor $\vec e_y^2$ is central. The product of the four is
@@ -627,6 +641,15 @@ $$
 =i^4\,L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{pau}}
 =(+1)\,L_{-\vec e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}
 =-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+$$
+
+The same identities in the axis-free display:
+
+$$
+\gamma_0\gamma_1\gamma_2\gamma_3
+=i^4\,L_{e_t\vec e_x\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y\vec e_y\vec e_x}^{\mathrm{axf}}
+=(+1)\,L_{-\vec e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
+=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
 with $i^4=(i^2)^2=(-1)^2=+1$, so that
@@ -639,6 +662,16 @@ $$
 \{\gamma_5,\gamma_\mu\}=0\quad(\mu=0,1,2,3).
 $$
 
+Read in the axis-free display:
+
+$$
+\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\qquad
+\gamma_5^2=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\qquad
+\{\gamma_5,\gamma_\mu\}=0\quad(\mu=0,1,2,3).
+$$
+
 A single cell $L_aR_b$ is a pure tensor; the cells form the seven-dimensional cone $\{\operatorname{rank}c(M)\le1\}$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 The parity of this frame is visible in the right factor. Every even product of the frame is a single cell $L_aR_b$ with $b\in\mathrm{span}\{e_t,\vec e_z\}$, and every odd product is a single cell with $b\in\mathrm{span}\{\vec e_x,\vec e_y\}$. The even part of the algebra generated by the frame is therefore $\mathbb{B}\otimes\mathrm{span}\{e_t,\vec e_z\}$, of complex dimension eight. The left multipliers $L_a=L_aR_{e_t}^{\mathrm{pau}}$ are the copy of $\mathbb{B}$ inside it. This is the complexified even Clifford algebra; the real one, of real dimension eight, is the $\mathbb{B}$ of §*The Occupation Parity*.
@@ -647,7 +680,7 @@ $\gamma_5$ is the reference-frame cell of the chirality: $\gamma_5=\Gamma=\chi_{
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the sixteen real cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

@@ -13,10 +13,10 @@ Two Dirac equations are in play, and the article keeps them apart from the first
   \tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\qquad
   \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
   $$
-  two first-order equations on the two chiral halves, with massless limit $\tilde{\nabla}\tilde{\Psi}_R=0$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=0$. Each gradient acts by **left** multiplication, so the pair is a one-sided equation in the algebra. Chirality is invisible here: a right multiplication does not act on $\mathbb{B}$.
+  two first-order equations on the two chiral halves, with massless limit $\tilde{\nabla}\tilde{\Psi}_R=0$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=0$. Each gradient acts by **left** multiplication, so the pair is a one-sided equation in the algebra. Chirality is not an operator of this one-sided form: both gradients multiply on the left, and the cell is a right multiplication. It acts on the module and splits $\tilde\Psi$ into the two halves; a biquaternion $F\in\mathbb{B}$ carries no chirality of its own.
 - **The module equation.** The framework's Dirac field is treated here, as in the companion articles on canonical quantization and on spin–statistics, through its **spinor-module representative** $\psi$, because the discrete operations act on the module. On the module the pair is the single four-component equation $(\mathbb{D}-m)\psi=0$, and the operator $\mathbb{D}$ is built from **two-sided** cells — a left multiplication for the gradient and a right multiplication for the chirality. This is the equation the three operations are defined on and checked against.
 
-The passage between the two is what the two-sided operator theory supplies, and it is the reason the module equation can carry a chirality label while the algebra equation cannot. We build each of $C$, $P$ and $T$ explicitly, verify each one separately against the free module equation, and then check the composition $CPT$ explicitly rather than inferring it from the three factors. The composition check is not redundant, for a reason that is easy to miss: $C$ and $T$ are **anti-linear**, so the internal factor of the product is $\eta_C\eta_P^*\eta_T^*$, not $\eta_C\eta_P\eta_T$, and the two differ whenever the phases are not fixed by the conjugation.
+The passage between the two is what the two-sided operator theory supplies, and it is the reason the module equation can carry a chirality operator while the algebra equation cannot. We build each of $C$, $P$ and $T$ explicitly, verify each one separately against the free module equation, and then check the composition $CPT$ explicitly rather than inferring it from the three factors. The composition check is not redundant, for a reason that is easy to miss: $C$ and $T$ are **anti-linear**, so the internal factor of the product is $\eta_C\eta_P^*\eta_T^*$, not $\eta_C\eta_P\eta_T$, and the two differ whenever the phases are not fixed by the conjugation.
 
 We work in the **cell frame** of the canonical-quantization and spin–statistics articles. With $L_a\psi=a\psi$, $R_b\psi=\psi b$ and the two-sided cell $L_aR_b$, so that $L_aR_b\psi=a\psi b$, the four generator cells of the module are
 $$
@@ -96,7 +96,7 @@ The two-sided operator theory is what lets the two levels be written in one fram
 $$
 \vec e_x\mapsto G_2G_3=L_{\vec e_x}^{\mathrm{axf}},\qquad \vec e_y\mapsto G_3G_1=L_{\vec e_y}^{\mathrm{axf}},\qquad \vec e_z\mapsto G_1G_2=L_{\vec e_z}^{\mathrm{axf}},
 $$
-and the scalar imaginary to the volume element $\omega=G_0G_1G_2G_3=-R_{\vec e_z}^{\mathrm{axf}}$ — the corpus's identification, which belongs to this isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ and is not a statement about the matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ used elsewhere in this article. The three entries are the whole point of the $i$ bookkeeping: $G_2G_3$ is $(i)(i)L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}$, the $i^{2}$ gives $-1$, the factor $R_{\vec e_y\vec e_y}^{\mathrm{axf}}=R_{-e_t}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ gives a second $-1$, the two cancel, and the quaternion product $\vec e_y\vec e_z=\vec e_x$ leaves the single cell $L_{\vec e_x}^{\mathrm{axf}}$. Each image squares to $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and the three multiply as the quaternion units do, $\vec e_x\vec e_y=\vec e_z$ included, so the assignment is a homomorphism on the generators; what matters below is only that it is one. The **odd part** — the span of the individual generators — is *not* contained in $\mathbb{B}$. This matters below: an even element acts on the Dirac module block-diagonally, preserving each chiral half, while an odd element acts off-diagonally and **exchanges the two chiral halves**. The chirality cell $\Gamma$ anticommutes with every generator and hence commutes with every even element; it is a Lorentz-invariant label.
+and the scalar imaginary to the volume element $\omega=G_0G_1G_2G_3=-R_{\vec e_z}^{\mathrm{axf}}$ — the corpus's identification, which belongs to this isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ and is not a statement about the matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ used elsewhere in this article. The three entries are the whole point of the $i$ bookkeeping: $G_2G_3$ is $(i)(i)L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}$, the $i^{2}$ gives $-1$, the factor $R_{\vec e_y\vec e_y}^{\mathrm{axf}}=R_{-e_t}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ gives a second $-1$, the two cancel, and the quaternion product $\vec e_y\vec e_z=\vec e_x$ leaves the single cell $L_{\vec e_x}^{\mathrm{axf}}$. Each image squares to $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and the three multiply as the quaternion units do, $\vec e_x\vec e_y=\vec e_z$ included, so the assignment is a homomorphism on the generators; what matters below is only that it is one. The **odd part** — the span of the individual generators — is *not* contained in $\mathbb{B}$. This matters below: an even element acts on the Dirac module block-diagonally, preserving each chiral half, while an odd element acts off-diagonally and **exchanges the two chiral halves**. The chirality cell $\Gamma$ anticommutes with every generator and hence commutes with every even element, so the chirality it carries is Lorentz-invariant.
 
 **The three conjugations of the algebra.** They are distinct maps, and they behave differently on the sectors and on the scalar imaginary:
 
@@ -366,6 +366,13 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 $$
 \gamma_0=iR_{\vec e_x}^{\mathrm{pau}}=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell written $\Gamma$ above; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
@@ -376,17 +383,46 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 $$
 \gamma_0=G_0,\qquad \gamma_1=G_1,\qquad \gamma_2=G_2,\qquad \gamma_3=G_3,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=\Gamma,
 $$
+
+In the axis-free display:
+
+$$
+\gamma_0=G_0,\qquad \gamma_1=G_1,\qquad \gamma_2=G_2,\qquad \gamma_3=G_3,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=\Gamma,
+$$
+
 and the composite entries are where $i^{2}=-1$ is spent, twice over:
 $$
 \gamma_1\gamma_3=(i)(i)\,L_{\vec e_x\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{\vec e_x\vec e_z}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{\vec e_x\vec e_z}^{\mathrm{pau}}=L_{-\vec e_y}^{\mathrm{pau}}=-L_{\vec e_y}^{\mathrm{pau}}=\eta_T,
 $$
+
+The same identities in the axis-free display:
+
+$$
+\gamma_1\gamma_3=(i)(i)\,L_{\vec e_x\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{\vec e_x\vec e_z}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{\vec e_x\vec e_z}^{\mathrm{axf}}=L_{-\vec e_y}^{\mathrm{axf}}=-L_{\vec e_y}^{\mathrm{axf}}=\eta_T,
+$$
+
 $$
 \gamma_2\gamma_3=(i)(i)\,L_{\vec e_y\vec e_z}^{\mathrm{pau}}R_{\vec e_y\vec e_y}^{\mathrm{pau}}=-L_{\vec e_y\vec e_z}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}}=+L_{\vec e_y\vec e_z}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}},
 $$
+
+Read in the axis-free display:
+
+$$
+\gamma_2\gamma_3=(i)(i)\,L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{\vec e_y\vec e_y}^{\mathrm{axf}}=-L_{\vec e_y\vec e_z}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=+L_{\vec e_y\vec e_z}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}},
+$$
+
 $$
 i\gamma_2=i\,(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=\eta_C,\qquad
 \gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}=\omega=-i\Gamma .
 $$
+
+The same expressions, in the axis-free display:
+
+$$
+i\gamma_2=i\,(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=\eta_C,\qquad
+\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{axf}}=\omega=-i\Gamma .
+$$
+
 Each reduction is a single cell with no $i$ left, and the mechanism is the same in all four: the two factors of $i$ multiply to $-1$, the factor $R_{\vec e_y\vec e_y}^{\mathrm{pau}}=R_{-e_t}^{\mathrm{pau}}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ contributes a second $-1$, and the two cancel, leaving the quaternion product of the two arguments. That is the rule that decides the parity of a product: a product of an even number of generators is real, a product of an odd number is purely imaginary, so an odd product such as $\gamma_1$ or $i\gamma_2$ needs its explicit $i$ and an even product such as $\gamma_1\gamma_3$ never has one. The mechanical rules are $L_aR_bL_cR_d=L_{ac}R_{db}$, $\vec e_j\vec e_k=\epsilon_{jkl}\vec e_l$ for $j\ne k$ and $\vec e_k^{2}=-e_t$, together with $L_{e_t}^{\mathrm{pau}}=R_{e_t}^{\mathrm{pau}}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ for the identity.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
@@ -411,7 +447,7 @@ $$
 $$
 The four contraction sums are frame statements, because the square of a cell depends on the frame. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

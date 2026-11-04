@@ -398,6 +398,16 @@ $$
 \gamma_5 = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0 = iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1 = iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2 = iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3 = iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_5 = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 The right factor $\vec e_y$ of the three spatial gammas is the frame's common direction and the left factor is the direction of the coordinate, so the four vectors $L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$, $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, $L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ climb a staircase through the two-sided index pairs — a row in neither factor, and not a diagonal. That staircase is the choice of frame, not a feature of the gammas: the repetition of $\vec e_y$ is in the frame. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le 1$, and a general element is a sum of at most four, with $\ell(M) = \operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi = i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2 = e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
@@ -425,6 +435,14 @@ $$
 \mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
+In the axis-free display:
+
+$$
+\gamma_0\gamma_1\gamma_2\gamma_3 = -i\,\gamma_5 = -R_{\vec e_z}^{\mathrm{axf}},\qquad
+\mathrm{tr}(\gamma_\mu\gamma_\nu) = 4g_{\mu\nu},\qquad
+\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma) = -4i\,\epsilon_{\mu\nu\rho\sigma},
+$$
+
 $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 = 4\left(g_{\mu\nu}g_{\rho\sigma} - g_{\mu\rho}g_{\nu\sigma} + g_{\mu\sigma}g_{\nu\rho}\right).
@@ -447,7 +465,7 @@ $$
 
 so that the four values are $4I_4$, $-2\gamma_\alpha$, $0$ and $+2\gamma_\alpha\gamma_\beta\gamma_\gamma$. The two-gamma entry is the one that vanishes, and it is where the dimension enters: the two contracted gammas are moved past the $n$ fixed ones, which gives the $(-1)^n$, and what is left is the contraction of the string with itself, which counts $4-2n$. In the Euclidean frame, where every cell squares to $+I_4$ and no index is raised, the four are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$: the two-gamma entry counts the degenerate string $\gamma_\alpha\gamma_\alpha=+I_4$, which is a square rather than a bivector, and so is $4I_4$ on the diagonal and $0$ off it, while the last is the rule with the three indices reversed. In the $\mathbb{M}_-$ frame the rule changes when the contracted index is lowered, because then the square of a generator carries the metric: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(1+g_{\alpha\alpha})\gamma_\alpha$, which is $4\gamma_0$ for the time direction and vanishes for the three spatial ones. The one-gamma sum, unlike the two-gamma sum, is therefore not a statement about four dimensions alone but about the signature as well.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

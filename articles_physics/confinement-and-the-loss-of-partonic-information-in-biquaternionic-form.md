@@ -280,7 +280,7 @@ $$
 \tilde\nabla\tilde\nabla^\natural=\tilde\nabla^\natural\tilde\nabla=\Box .
 $$
 
-The gradient acts by left multiplication, the mass is the off-diagonal pairing of the two chiral halves, and chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, not a frame cell; its frame representative is named only in the section *The Gamma Formulation* of this article. At $m=0$ the pair decouples into
+The gradient acts by left multiplication, the mass is the off-diagonal pairing of the two chiral halves, The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, and the frame cell is where that sign is read. $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, not a frame cell; its frame representative is named only in the section *The Gamma Formulation* of this article. At $m=0$ the pair decouples into
 
 $$
 \tilde\nabla\tilde\Psi_R=0,
@@ -489,12 +489,26 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 The squares follow from $i^2=-1$ and the quaternion relations,
 
 $$
 \gamma_0^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
 \gamma_1^{2}=\gamma_2^{2}=\gamma_3^{2}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+$$
+
+In the axis-free display:
+
+$$
+\gamma_0^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\qquad
+\gamma_1^{2}=\gamma_2^{2}=\gamma_3^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
 so the frame carries the Clifford form $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(1,-1,-1,-1)$. The time cell of the bag equation is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and its three spatial cells are $\gamma_1,\gamma_2,\gamma_3$; the boundary condition of the bag is therefore the frame's linear condition, written above without the gammas.
@@ -505,7 +519,7 @@ $\gamma_5$ is the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\
 
 The comparison with the frame is complex-linear — the coefficients of an element in the basis of the sixteen products are complex numbers — although the dictionary $A$ of the bag is only $\mathbb{R}$-linear. Over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -519,7 +533,7 @@ What the framework cannot supply is the colour theory itself. The compact algebr
 
 The two confinement pictures must be kept apart, and the framework houses one of them. The non-perturbative gauge-dynamics picture is the one the QCD agenda rules out: a loop expectation value, an area law, a string tension and a mass gap, none of which the framework can derive.
 
-The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose chirality is the central sign $\chi$ and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\sum_k u_k\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
+The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\sum_k u_k\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
 
 That condition is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995). A real-linear bijection carries the bispinor to a biquaternion; the mass term carries the componentwise complex conjugation $\overline{\cdot}$; factoring the equation removes it; the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$; the bag condition becomes the projector condition $S^-\tilde{p}=0$; and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$.
 
@@ -553,7 +567,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace of a product in the matrix representation; $\mathrm{Tr}(e_t) = 2$ |
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from bispinors to biquaternion-valued functions (bag model) |
-| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | One-sided Dirac pair; chirality is the central sign $\chi$ |
+| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | One-sided Dirac pair; chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is $\chi$ |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | Central chiral grading |
 | $D_3=\sum_k\vec e_k\partial/\partial Q_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |

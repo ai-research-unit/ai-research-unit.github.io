@@ -77,7 +77,7 @@ so $\chi$ grades the Clifford set of generator cells: it anticommutes with the g
 
 Here $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\tau(t)=x$ and $\tau(k)=y$; the companion articles denote the same map by $\nu$.
 
-**Lorentz invariance, with or without a mass.** A projector is easy to check on the equation that suggested it, namely the massless Dirac equation, where the two halves decouple and the projector merely selects one of the two resulting Weyl equations. The claim that survives the mass term is different, and it is the one worth stating: chirality is a **Lorentz-invariant** label, not a property of the massless limit. The Lorentz generators are the bivector cells, products of two generator cells, $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}$, and $\chi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}\,\chi$ holds identically, with or without a mass. The mass does not enter the commutator that makes chirality Lorentz invariant; what the mass does is to make the two halves visible to each other, and that is a statement about the equation, not about the invariance of the label.
+**Lorentz invariance, with or without a mass.** A projector is easy to check on the equation that suggested it, namely the massless Dirac equation, where the two halves decouple and the projector merely selects one of the two resulting Weyl equations. The claim that survives the mass term is different, and it is the one worth stating: chirality is carried by the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, which commutes with every Lorentz generator, so it is **Lorentz-invariant** and not a property of the massless limit. The Lorentz generators are the bivector cells, products of two generator cells, $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}$, and $\chi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}}\,\chi$ holds identically, with or without a mass. The mass does not enter the commutator that makes chirality Lorentz invariant; what the mass does is to make the two halves visible to each other, and that is a statement about the equation, not about the invariance of the label.
 
 **What the mass term does to a chirality-definite state.** Let $\bar{\Psi} = \Psi^{\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$, the adjoint built with the time-like generator cell $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$. In a basis in which the chirality cell is diagonal and $iR_{\vec e_x}^{\mathrm{axf}}$ swaps the two blocks identically, $iR_{\vec e_x}^{\mathrm{axf}}(\psi_L,0)=(0,\psi_L)$ and $iR_{\vec e_x}^{\mathrm{axf}}(0,\psi_R)=(\psi_R,0)$,
 
@@ -341,10 +341,26 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
 \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+$$
+
 $$
 \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
+$$
+
+In the axis-free display:
+
+$$
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\chi .
 $$
 
 A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance $\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$, and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\chi$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.
@@ -384,7 +400,7 @@ $$
 
 With all indices lowered, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the difference is the metric used to raise the contracted index. In the Euclidean frame, where $\gamma_\mu^2=+I_4$ for every $\mu$, the same sums read $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

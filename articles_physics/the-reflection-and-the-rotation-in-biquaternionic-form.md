@@ -299,7 +299,7 @@ under which a finite-dimensional representation is labelled by a pair $(j_1,j_2)
 | right Weyl spinor | $(0,\tfrac12)$ | in the second factor alone |
 | vector | $(\tfrac12,\tfrac12)$ | in both factors equally |
 
-This is the precise sense in which chirality is tied to spin $\tfrac12$: the two Weyl spinors are the two smallest nontrivial modules of the two factors, and "left-handed" *means* "$(\tfrac12,0)$". A scalar carries no chirality because it sits in neither factor, and a vector is chirality-blind because it sits in both equally. The link between spin $\tfrac12$ and chirality is not a coincidence to be explained; they are the two coordinates of one label.
+This is the precise sense in which chirality is tied to spin $\tfrac12$: the two Weyl spinors are the two smallest nontrivial modules of the two factors, and "left-handed" *means* "$(\tfrac12,0)$". A scalar carries no chirality because it sits in neither factor, and a vector is chirality-blind because it sits in both equally. The link between spin $\tfrac12$ and chirality is not a coincidence to be explained: each chiral half is a minimal module of one factor, and the cell is what tells the two factors apart.
 
 The exchange of the two factors is an orientation-reversing operation, which is why it takes a reflection. **Parity is exactly that reflection.** It fixes the time direction and reverses the three spatial ones, and it exchanges the two spinor modules,
 $$
@@ -338,6 +338,13 @@ Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 Each generator is a single cell product, and every element of the cell algebra is a sum of at most four cell products, one for each term of the rank decomposition of its coefficient matrix in the cell basis.
 
 $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell itself. The central grading $\chi$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
@@ -394,7 +401,7 @@ $$
 $$
 which is $-2\gamma_0\gamma_k$ for one timelike and one spacelike index, $+2\gamma_j\gamma_k$ for two spacelike ones, and $-2\varepsilon_\alpha I_4$ for $\alpha=\beta$. The raised-index display is the one to compute with, and the lowered one the one to read in the Euclidean literature.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

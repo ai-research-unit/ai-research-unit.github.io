@@ -28,7 +28,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$
 
-in which every derivative acts by left multiplication and the mass is the off-diagonal pairing of the two minimal left ideals. Chirality is present, but not as a cell of the frame: it is the split into those ideals, carried algebraically by the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$. The **module equation** is the single two-sided cell equation $(\mathbb{D}-mc/\hbar)\psi=0$, in which the frame cells multiply on both sides and whose two chiral projections are two lines; there the chirality is the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, and the large/small split is the frame grading: $\beta=iR_{\vec e_x}^{\mathrm{axf}}$ is diagonal in the basis in which the two-spinors are the large and small components. The oscillator is a problem in the module equation, because the substitution is built from $\beta$ and from the velocity cells, and both are two-sided objects. The algebra pair is recorded here because its square is the Klein–Gordon operator on which the whole construction rests; the oscillator itself is never posed in it, and apart from the dictionary drawn in *The Gamma Formulation* it makes no further appearance.
+in which every derivative acts by left multiplication and the mass is the off-diagonal pairing of the two minimal left ideals. Chirality is the cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ in every form of the equation, and it is an operator and not the split into the Peirce copies: the cell acts as $\operatorname{diag}(-I_2,I_2)$ on the Dirac module, separating $S$ from $S^{\mathrm{c}}$, while the two minimal left ideals are both copies of $S$. In the algebra pair the same chirality is written centrally as the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$. The **module equation** is the single two-sided cell equation $(\mathbb{D}-mc/\hbar)\psi=0$, in which the frame cells multiply on both sides and whose two chiral projections are two lines; there the chirality is the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, and the large/small split is the frame grading: $\beta=iR_{\vec e_x}^{\mathrm{axf}}$ is diagonal in the basis in which the two-spinors are the large and small components. The oscillator is a problem in the module equation, because the substitution is built from $\beta$ and from the velocity cells, and both are two-sided objects. The algebra pair is recorded here because its square is the Klein–Gordon operator on which the whole construction rests; the oscillator itself is never posed in it, and apart from the dictionary drawn in *The Gamma Formulation* it makes no further appearance.
 
 **Conventions.** These are the series conventions. A cell is the two-sided multiplication
 
@@ -318,6 +318,12 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
@@ -366,12 +372,18 @@ $$
 \mathbb{D}\psi_L=\frac{mc}{\hbar}\psi_R .
 $$
 
-$\mathbb{D}$ anticommutes with $\gamma_5$, so it carries each chirality into the other, and the mass couples the two lines; at $m=0$ each line stands alone. The two lines have the shape of the algebra pair, and the difference between the formulations sits in the operator. The algebra needs the conjugate $\tilde{\nabla}^{\natural}$ for its second line, because the quaternion conjugate is what reverses the spacelike directions. On the module the **same** cell operator serves both lines, and what swaps the chiralities is the anticommutation: chirality there is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$, a pure right multiplication, whereas in the algebra it is the split into the two ideals, carried by $\chi$, and no cell of the frame represents it.
+$\mathbb{D}$ anticommutes with $\gamma_5$, so it carries each chirality into the other, and the mass couples the two lines; at $m=0$ each line stands alone. The two lines have the shape of the algebra pair, and the difference between the formulations sits in the operator. The algebra needs the conjugate $\tilde{\nabla}^{\natural}$ for its second line, because the quaternion conjugate is what reverses the spacelike directions. On the module the **same** cell operator serves both lines, and what swaps the chiralities is the anticommutation: chirality there is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$, a pure right multiplication, and in the algebra the same chirality is written centrally as the sign $\chi$; the cell and the sign are one operator in two writings, while the split into the two Peirce copies is neither.
 
 **The oscillator in the $\gamma$ reading.** The frame cell is $\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$ and the velocity cells are $\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, so $\beta=\gamma_0$, $\alpha_k=\gamma_0\gamma_k$, and
 
 $$
 L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\gamma_k .
+$$
+
+In the axis-free display:
+
+$$
+L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=-i\gamma_k .
 $$
 
 The added term of the substitution, with its explicit $i$ as in the introduction, therefore reads
@@ -384,7 +396,7 @@ because $\alpha_k\beta=-\gamma_k$ and the two factors of $i$ give $-1$. The $i$ 
 
 **What the frame cell is not.** $\gamma_0=\beta=iR_{\vec e_x}^{\mathrm{pau}}$ is the frame cell and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell; the two anticommute. The mass term $\beta mc^2$ is diagonal in the frame grading and off-diagonal in the chirality grading: the Foldy–Wouthuysen transformation can diagonalise it in the frame grading, but no chirality projection can, and the mass is not a chirality.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

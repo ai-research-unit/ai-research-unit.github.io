@@ -893,13 +893,23 @@ $$
 \end{aligned}
 $$
 
+The same in the axis-free display:
+
+$$
+\begin{aligned}
+\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\end{aligned}
+$$
+
 A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
 $\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The cell dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -915,11 +925,11 @@ $$
 \tilde{\nabla}\tilde{\Psi}_R=0, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L=0,
 $$
 
-one for each chirality; the single equation $\tilde{\nabla}\tilde{\Psi}=0$ is the right-handed member. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of $\mathbb{B}[j]$; the chirality cell $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative. The right-handed massless equation has the same form as the source-free biquaternion Maxwell equation; the left-handed equation is its conjugate. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to the even subalgebra of $\mathrm{Cl}_{1,3}$. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
+one for each chirality; the single equation $\tilde{\nabla}\tilde{\Psi}=0$ is the right-handed member. The two Peirce components are copies of $S$ and are not the chiral pair. Chirality is the cell $\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$; the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of $\mathbb{B}[j]$ is the same operator written centrally, and on the module the cell acts as $\operatorname{diag}(-I_2,I_2)$. The right-handed massless equation has the same form as the source-free biquaternion Maxwell equation; the left-handed equation is its conjugate. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to the even subalgebra of $\mathrm{Cl}_{1,3}$. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi}_{L,R} = 0$.
 
 The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{R} = ict'\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural}$.
 
-The plane-wave solutions of the right-handed massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ with $\tilde P\tilde\Psi_0/\hbar = 0$ (nonzero solutions only for null $\tilde{P}/\hbar$), giving the two spin states of the Weyl spinor; the left-handed equation has the conjugate plane waves, and the two chiralities are the two helicities. The massive plane waves satisfy the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
+The plane-wave solutions of the right-handed massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ with $\tilde P\tilde\Psi_0/\hbar = 0$ (nonzero solutions only for null $\tilde{P}/\hbar$), giving the two spin states of the Weyl spinor; the left-handed equation has the conjugate plane waves, and the two chiralities are the two halves $\psi_L$ and $\psi_R$, whose helicities a massless plane wave fixes to $-\tfrac12$ and $+\tfrac12$. The massive plane waves satisfy the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
 
 The spherical and cylindrical solutions are constructed by the methods of Clifford analysis, via the monogenic completion of harmonic functions. They describe the angular momentum states of the fermion field and the waveguide modes, respectively.
 
@@ -937,7 +947,7 @@ The same construction has two consequences that belong to the equation rather th
 | $\mathbb{B}$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Chirality, the central sign of the double; $\chi^2=e_t$; its representative on $\Delta$ is the chirality cell $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}$ | The central form of the chirality; $\chi^2=e_t$; the chirality itself is the cell $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which represents $\chi$ on $\Delta$ |
 | $i_1,i_2,i_3$ | The source's symbols for the quaternion units $\vec e_x,\vec e_y,\vec e_z$; the scalar imaginary is its $i$ as here |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |

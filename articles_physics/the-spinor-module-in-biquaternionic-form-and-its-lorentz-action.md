@@ -634,7 +634,7 @@ The distinction between the two actions matters for four reasons.
 1. **It is the double cover.** The kernel of the vector action is $\{\pm e_t\}$; the kernel of the spinor action is $\{e_t\}$. The sign that the vector action cannot see is exactly the sign that distinguishes a spinor from its negative.
 2. **It is the difference between a sandwich and a product.** The four-vector action is a sandwich, and it maps $\mathbb{M}_-$ into itself. The spinor action is a single left multiplication by an element of the even subalgebra, and the even subalgebra does not preserve the exterior grading: a bivector multiplied into a vector produces a vector plus a trivector, so grades are mixed in pairs. The spinor module is a Clifford module, not an exterior module.
 3. **It is a difference of real form.** Both representations are four-real-dimensional, and they are different in kind. The vector representation is a **real form**: it is real four-dimensional, and its complexification is $S\otimes\bar{S}=(\tfrac12,\tfrac12)$, of complex dimension four; the four-vector space is the Hermitian slice of that complex representation. The spinor representation is genuinely complex two-dimensional, and it carries no invariant real structure, because such a structure would be an isomorphism $S\cong\bar{S}$ and the two halves are not isomorphic. Equal real dimension, different kind.
-4. **It is the origin of chirality.** The odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities. The chirality is the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra; on the Dirac module it is the cell $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which is a cell and not an element of $\mathbb{B}$ and which the frame of §*The Gamma Formulation* displays as the fifth of its five cells. The Peirce sign $R_{i\vec e_z}^{\mathrm{axf}}$ is a different, inner sign; it grades the two minimal left ideals, not the two chiral halves.
+4. **It is the origin of chirality.** The odd part of the Clifford algebra, which is not contained in the even subalgebra $\mathbb{B}$, exchanges the two chiralities. The chirality is the cell $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which on the Dirac module acts as $\operatorname{diag}(-I_2,I_2)$; its central form is the grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, which is a cell and not an element of $\mathbb{B}$ and which the frame of §*The Gamma Formulation* displays as the fifth of its five cells. The Peirce sign $R_{i\vec e_z}^{\mathrm{axf}}$ is a different, inner sign; it grades the two minimal left ideals, not the two chiral halves.
 
 The last point is the precise sense in which "the gamma matrices" and "the spinor module" are not two theories. The gamma matrices are a frame of the same cell algebra that contains $L_{\tilde U}$; the spinor module is the carrier on which the one-sided cells act. The frame is displayed once, in the next section, and the body of the article needs none of it.
 
@@ -680,6 +680,16 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+$$
+
 Each is a one-cell product, and each satisfies the Clifford relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\eta_{\mu\nu}I_4$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Two Chiral Halves* — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\chi$ of the complexification, which is not a gamma matrix; the body of the article uses $\chi$ and never needs a gamma symbol.
 
 A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance
@@ -688,11 +698,17 @@ $$
 \gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
+In the axis-free display:
+
+$$
+\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+$$
+
 and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\Gamma$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\Gamma$ the chirality cell.
 
 The dictionary is complex-linear: the five cells are a complex frame, and their sixteen products are the sixteen-element Clifford basis. What the frame does **not** fix is the real slice. Both $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ are real forms of the same complex algebra $\mathrm{Cl}_{4}(\mathbb{C})\cong M_4(\mathbb{C})$, and they are not isomorphic to one another. The signs in the display above are the ones that make $\vec e_x,\vec e_y,\vec e_z$ spacelike bivectors, that is the signature $(1,3)$; the other choice of signs describes the other real form, and the complex frame cannot tell the two apart. The choice is made once, in [Matrix Representations: Conventions](matrix-representations-conventions.html), and it is held throughout the series.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

@@ -447,10 +447,20 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1=iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2=iL_{e_y}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3=iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+$$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 **The body's cells under their gamma names.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality cell of the body is the gamma-five cell itself. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, so the vector current of the body is $\bar\psi\gamma_\mu\psi$, and the Dirac bar is $\psi^{\dagger}\gamma_0$, since $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$. The axial current's cell is a product of two frame cells, and the reduction $i\cdot(-i)=+1$ of the body is exactly that product:
@@ -461,10 +471,24 @@ $$
 = \gamma_\mu\gamma_5 ,
 $$
 
+In the axis-free display:
+
+$$
+\bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\bigr)\bigl(-iR_{\vec e_z}^{\mathrm{axf}}\bigr)
+= L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{axf}}
+= \gamma_\mu\gamma_5 ,
+$$
+
 so the two imaginary units the body cancels are the two that the gamma names carry, and $j_{5\mu}=\bar\psi\gamma_\mu\gamma_5\psi$. The single collapse behind it, and behind every simplification of the frame, is
 
 $$
 i\,\gamma_\mu = -L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}} ,
+$$
+
+The same identities in the axis-free display:
+
+$$
+i\,\gamma_\mu = -L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} ,
 $$
 
 by $i^2=-1$: multiplying a generator cell by $i$ trades it for a plain one, which is why a product of four generator cells carries $i^4=+1$ and no residual unit. Under the same identity the mass term of the two-sided equation, $-mi\,\bar F\vec e_z$ in the body, is $m\,\bar F\gamma_5$ in the frame: right multiplication by $\vec e_z$ is the cell $i\gamma_5$, so $(-mi)(i\gamma_5)\bar F=-m\,i^2\gamma_5\bar F=+m\,\gamma_5\bar F$.
@@ -487,7 +511,7 @@ the anticommutation with $\gamma_5$ being what makes the chirality cell the axia
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the plain cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the two Clifford algebras that differ by that relative $i$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

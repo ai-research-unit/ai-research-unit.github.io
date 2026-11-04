@@ -238,30 +238,66 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+$$
+
 **The squares are uses of $i^2=-1$.** Each generator carries two factors of $i$ when it is squared, and the sign is the product of those two with the signs of the two multiplications:
 $$
 (iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})^2=i^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_x}^{\mathrm{pau}})^2=(-1)(+1)(-1)=+e_t,
 $$
+
+In the axis-free display:
+
+$$
+(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})^2=i^2(L_{e_t}^{\mathrm{axf}})^2(R_{\vec e_x}^{\mathrm{axf}})^2=(-1)(+1)(-1)=+e_t,
+$$
+
 $$
 (iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=i^2(L_{\vec e_k}^{\mathrm{pau}})^2(R_{\vec e_y}^{\mathrm{pau}})^2=(-1)(-1)(-1)=-e_t,
 $$
+
+The same identities in the axis-free display:
+
+$$
+(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=i^2(L_{\vec e_k}^{\mathrm{axf}})^2(R_{\vec e_y}^{\mathrm{axf}})^2=(-1)(-1)(-1)=-e_t,
+$$
+
 for $k=x,y,z$, so the four generators carry the metric $g=\mathrm{diag}(+1,-1,-1,-1)=-\eta$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}},
 \qquad
 \gamma_5=+i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{pau}},
 $$
+
+Read in the axis-free display:
+
+$$
+\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{axf}},
+\qquad
+\gamma_5=+i\,\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}^{\mathrm{axf}},
+$$
+
 the sign convention in which $\gamma_5^2=+e_t$; the opposite sign is an equally good chirality and differs only by which of the two chiralities is called left.
 
 **Chirality is the right multiplication.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality is a pure right multiplication, and it is the one cell the one-sided pair displayed above cannot contain, because that pair uses left multiplications only. The two-sided representative does contain it, and the chiral halves of the module decouple because it anticommutes with the operator:
 $$
 \{\gamma_5,\mathbb{D}\}=0,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}.
 $$
+
+The same expressions, in the axis-free display:
+
+$$
+\{\gamma_5,\mathbb{D}\}=0,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}.
+$$
+
 That anticommutator is the algebraic content of "only the two-sided equation carries a chirality": a cell built from left multiplications alone could not produce it.
 
 **The trace.** The trace of a product is a linear functional on cells, $\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ on the four-dimensional module, so a spinor trace is a product of scalar parts and $\operatorname{tr}e_t=4$. On the two-dimensional module the same cell has trace $2\,\mathrm{Sc}(ab)$, which is the informational formula of the body; the numbers $2$ and $4$ are the dimensions of the two spaces, not two normalisations of one trace. The dictionary is complex-linear: over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

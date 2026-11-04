@@ -301,6 +301,15 @@ $$
 \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+$$
+
 with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $g=\mathrm{diag}(1,-1,-1,-1)$. All four carry the same factor $i$, so the Lorentzian signs come from $i^2=-1$ together with $\vec e_k^2=-e_t$ alone. In the $\mathbb{B}$ frame, whose Clifford metric is $\delta_{\mu\nu}$, the four are
 
 $$
@@ -308,6 +317,15 @@ $$
 \gamma_x[\mathbb{B}]=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_y[\mathbb{B}]=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_z[\mathbb{B}]=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
+$$
+
+In the axis-free display:
+
+$$
+\gamma_t[\mathbb{B}]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
+\gamma_x[\mathbb{B}]=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_y[\mathbb{B}]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
+\gamma_z[\mathbb{B}]=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
 and $\gamma_k[\mathbb{B}]=i\gamma_k[\mathbb{M}_-]$ for the three spatial directions. These four are the cells written $G_\mu$ in the body of the article.
@@ -318,6 +336,12 @@ $$
 \chi=i\gamma_5[\mathbb{B}]=\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
+The same identities in the axis-free display:
+
+$$
+\chi=i\gamma_5[\mathbb{B}]=\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+$$
+
 which squares to $+L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and anticommutes with the four cells of either frame.
 
 A single product is a pure tensor: writing $c(M)$ for the coefficient matrix of $M$ in the basis of the sixteen products, the products are exactly the elements with $\operatorname{rank}c(M)\le1$, a seven-dimensional cone, and a general element is a sum of at most four of them, with $\ell(M)=\operatorname{rank}c(M)$. Every sign in the products comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for one example, $\gamma_0\gamma_1=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$, where the minus sign is the square of the imaginary unit and the ordering of the right factors is the reverse of the cells'.
@@ -326,7 +350,7 @@ $\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central gr
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

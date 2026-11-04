@@ -113,7 +113,7 @@ $$
 
 both signs using $i^2=-1$. The $2\times2$ image is the left action alone and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$; the cell acts from both sides and carries both.
 
-The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}^{\mathrm{axf}}$. Since $R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}}$, and $R_{\vec e_z}^{\mathrm{axf}}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the central sign of the complexified algebra, it is not an element of $\mathbb{B}$, and it is represented on the Dirac module by the same cell up to an overall sign; the relation is recorded in *The Gamma Formulation* below.
+The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}^{\mathrm{axf}}$. Since $R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}}$, and $R_{\vec e_z}^{\mathrm{axf}}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplication; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, and on the Dirac module the two agree up to an overall sign. The relation is recorded in *The Gamma Formulation* below.
 
 The one-site identification is exact inside the algebra, and its $2\times2$ image is exact as well:
 
@@ -292,7 +292,7 @@ is the product of the on-site parities and commutes with $H_{XY}$; the two secto
 - *The one-site identity.* The parents' $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ is the one-site Jordan–Wigner map, an identity inside $\mathbb{B}$; the transformation has a one-site fixed point.
 - *The string as the product of one-site parities.* $\prod_{k<j}(\sigma_z)_{k}=\prod_{k<j}(-1)^{F_k}$, with $(-1)^F=i\vec e_z$ the parent's algebra element. The string is the tensor product of the algebra's parities, and its non-diagonality is the external grading the spin–statistics companion records.
 - *The grading statement.* The parity is available on both sides, $(-1)^{F}=\prod_j(\sigma_z)_{j}$, and the map respects it: $(\sigma_z)_{j}$ is even, the transverse spins are odd, the modes are odd. What the map does not preserve is the site structure, since a one-site spin operator becomes a string-laden fermion operator.
-- *The two readings.* The $2\times2$ image is one-sided and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$, while the cell $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ acts on the two Peirce carriers with opposite signs, $-\sigma_k$ on one and $+\sigma_k$ on the other. The difference is right multiplication by $i\vec e_z$, the Peirce copy index; the chirality is the central sign, and the two agree on the Dirac module up to an overall sign.
+- *The two readings.* The $2\times2$ image is one-sided and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$, while the cell $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ acts on the two Peirce carriers with opposite signs, $-\sigma_k$ on one and $+\sigma_k$ on the other. The difference is right multiplication by $i\vec e_z$, the Peirce copy index; the chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, and the two agree on the Dirac module up to an overall sign.
 
 **Open.**
 
@@ -321,12 +321,29 @@ $$
 \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+$$
+
 The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixes its sign and its cell. Multiplying cells, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with $\vec e_x\vec e_x=\vec e_y\vec e_y=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$,
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \qquad
 \gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=i\bigl(-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\bigr)=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
+$$
+
+In the axis-free display:
+
+$$
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
+\qquad
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=i\bigl(-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\bigr)=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The four gammas carry $i^4=1$, so the single $i$ of the definition survives, and no second factor of $i$ is left over: the cell that results is $-iR_{\vec e_z}^{\mathrm{pau}}$, in which the left multiplier is the identity and the cell has collapsed to a right multiplication.
@@ -339,7 +356,15 @@ $$
 P^2=I_4 ,
 $$
 
-and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not, it is the central sign of the complexified algebra.
+The same identities in the axis-free display:
+
+$$
+\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=-P ,
+\qquad
+P^2=I_4 ,
+$$
+
+and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra.
 
 The frame is Clifford, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell:
 
@@ -375,7 +400,7 @@ The two act from the left; what separates them is the conjugation $\natural$, no
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

@@ -382,6 +382,16 @@ $$
 \end{aligned}
 $$
 
+The same in the axis-free display:
+
+$$
+\begin{aligned}
+\gamma_0 &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1 &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_2 &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3 &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
+\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\end{aligned}
+$$
+
 A single product $L_{a}R_{b}$ is a pure tensor; the pure tensors form the seven-dimensional cone of rank at most one in $M_4(\mathbb{C})$, and a general element is a sum of at most four of them, and of no fewer than $\operatorname{rank}c(M)$, since the tensor rank of a matrix is at least its rank.
 
 Every generator is $i$ times a real cell, so $i^2 = -1$ fixes the signs: $(iL_{a}R_{b})^{2} = -L_{a^{2}}R_{b^{2}}$, and the square of an imaginary cell is minus the square of the real one. That one line gives both signs of the frame,
@@ -392,6 +402,14 @@ $$
 \gamma_k^{2} = -L_{\vec e_k^{2}}^{\mathrm{pau}}R_{\vec e_y^{2}}^{\mathrm{pau}} = -L_{-e_t}^{\mathrm{pau}}R_{-e_t}^{\mathrm{pau}} = -I_4.
 $$
 
+In the axis-free display:
+
+$$
+\gamma_0^{2} = -L_{e_t^{2}}^{\mathrm{axf}}R_{\vec e_x^{2}}^{\mathrm{axf}} = -L_{e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}} = +I_4,
+\qquad
+\gamma_k^{2} = -L_{\vec e_k^{2}}^{\mathrm{axf}}R_{\vec e_y^{2}}^{\mathrm{axf}} = -L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}} = -I_4.
+$$
+
 $\gamma_5$ is the reference-frame cell of the chirality; the central grading is a different object. It is $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, so that $\chi^2=e_t$ and $e_\pm=\tfrac12(e_t\pm\chi)$ are the two central idempotents; on the Dirac module it is represented by $\gamma_5$.
 
 **The two conjugation cells in the frame.** The cells of the previous sections are two of these products, and reading them off settles the signs:
@@ -400,6 +418,14 @@ $$
 \eta=L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\gamma_0 ,
 \qquad
 \eta_C=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=i\gamma_2 .
+$$
+
+The same identities in the axis-free display:
+
+$$
+\eta=L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=-i\gamma_0 ,
+\qquad
+\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i\gamma_2 .
 $$
 
 Their squares are then the frame signs at once: $(-i\gamma_0)^{2}=-\gamma_0^{2}=-I_4$, and $(i\gamma_2)^{2}=-\gamma_2^{2}=+I_4$. So the division-ring sign of the bilinear, $\eta^{2}=-I_4$, and the cancellation that makes $\mathcal{C}[\psi]$ an involution, $\eta_C^{2}=+I_4$, are one line of the frame: the timelike generator squares to $+I_4$ and the spatial one to $-I_4$, and each square is read with the extra minus of $i^2=-1$.
@@ -443,7 +469,7 @@ $$
 
 In the Euclidean frame, where every generator squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the frame above, where the timelike generator squares to $+I_4$ and the spatial ones to $-I_4$, the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=(1-3)I_4=-2I_4$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

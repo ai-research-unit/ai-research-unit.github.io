@@ -362,7 +362,7 @@ $$
 -iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
 $$
 
-so the pseudoscalar mass reads $\mu R_{\vec e_z}^{\mathrm{axf}}=i\mu(-iR_{\vec e_z}^{\mathrm{axf}})\leftrightarrow i\mu\chi$ in the biquaternion dictionary; here $i\cdot(-i)=-i^2=+1$ is what cancels the two imaginary units. The chirality is the central element $\chi$; the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative in the reference frame.
+so the pseudoscalar mass reads $\mu R_{\vec e_z}^{\mathrm{axf}}=i\mu(-iR_{\vec e_z}^{\mathrm{axf}})\leftrightarrow i\mu\chi$ in the biquaternion dictionary; here $i\cdot(-i)=-i^2=+1$ is what cancels the two imaginary units. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; the central element $\chi$ is its central form, and the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative in the reference frame.
 
 The term is parity-odd. A parity-odd mass is not the mass of the Dirac equation, and it is not the mass the Standard Model generates. The single root exists, but it is not the physical one.
 
@@ -493,6 +493,17 @@ $$
 \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+$$
+
 They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $(\gamma_0)^2=+I_4$, $(\gamma_k)^2=-I_4$, $\{\gamma_\mu,\gamma_5\}=0$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The product of the first four is $\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}$, and $i$ times it is $\gamma_5$; the corpus's volume element $-iR_{\vec e_z}^{\mathrm{pau}}$ is $\gamma_5$ itself.
 
 In the tensor frame the same five are the images under $L_{a}R_{b}\mapsto\mathsf M_2(b)^{\mathsf T}\otimes\mathsf M_2(a)$,
@@ -509,6 +520,15 @@ $$
 \mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{pau}},\qquad
 \mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I,
 $$
+
+In the axis-free display:
+
+$$
+\mathsf D=i\sum_\mu\gamma_\mu\frac{\partial}{\partial x_\mu}=i\gamma_\mu\frac{\partial}{\partial x_\mu},\qquad
+\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{axf}},\qquad
+\mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I,
+$$
+
 The only single-square mass term is $B=c\gamma_5$ with $c=\pm i\mu$; the second equality for $\mathsf D_{\mathrm{ps},\pm}$ uses $i\gamma_5=R_{\vec e_z}^{\mathrm{pau}}$.
 
 The checks of §*Verification*, transcribed into these symbols, are $\{\gamma_\mu,\gamma_\nu\}-2g_{\mu\nu}I_4$, $\gamma_5^2-I_4$, $\{\gamma_5,\gamma_\mu\}$, $\gamma_5-i\gamma_0\gamma_1\gamma_2\gamma_3$ and $(\sum_\mu \gamma_\mu k_\mu)^2-g_{\mu\nu}k_\mu k_\nu I_4$; the first and the last are polynomial identities in the symbol $k$, so they hold for every $k$, not only on shell.
@@ -547,7 +567,7 @@ $$
 $$
 The sign of the last sum is the parity of the label pattern, not a convention: three distinct labels give $+2\gamma_\delta\gamma_\beta\gamma_\alpha$, and any repeated label gives $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. All four sums were recomputed in the Euclidean frame, with zero residual for every label pattern. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

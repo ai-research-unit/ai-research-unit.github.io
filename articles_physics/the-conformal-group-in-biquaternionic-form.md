@@ -346,14 +346,37 @@ $$
 \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
 $$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+$$
+
 $$
 \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+$$
+
+In the axis-free display:
+
+$$
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The factors of $i$ are reduced by $i^2=-1$ before a product is read, so a product of two frame cells is a plain cell, with no $i$ left in it:
 $$
 \gamma_0\gamma_1=i^2L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
+
+The same identities in the axis-free display:
+
+$$
+\gamma_0\gamma_1=i^2L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}=-L_{\vec e_x}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}=+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+$$
+
 The same collapse gives the squares and the Clifford relations, with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell, the algebra's unit read as an operator on the module,
 $$
 \gamma_0^2=I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=I_4,
@@ -378,11 +401,18 @@ The **two-sided** equation is the cell equation: the same dynamics on the Dirac 
 $$
 \left(iL_{e_t}^{\mathrm{pau}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}\right)\tilde Q_{\mathrm f}-mi\,R_{\vec e_z}^{\mathrm{pau}}\overline{\tilde Q_{\mathrm f}}=0,
 $$
+
+Read in the axis-free display:
+
+$$
+\left(iL_{e_t}^{\mathrm{axf}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}\right)\tilde Q_{\mathrm f}-mi\,R_{\vec e_z}^{\mathrm{axf}}\overline{\tilde Q_{\mathrm f}}=0,
+$$
+
 where the derivative acts from the left, the mass from the right through $\vec e_z$, and $\overline{\tilde Q_{\mathrm f}}$ is the coefficient conjugate. The two share the frame but not the operator: the one-sided pair splits the field into chirality halves, while the two-sided equation is antilinear in its mass term and carries the chirality in the right multiplication $\Gamma$, not in a left factor.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 

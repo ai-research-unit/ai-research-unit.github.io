@@ -160,7 +160,7 @@ The normalisation of $\operatorname{Alt}$ matters: without the $1/3!$ the dualit
 
 The **chirality cell** is the single product
 $$
-\chi = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} = -iR_{\vec e_z}^{\mathrm{axf}} = i\,\bigl(iR_{\vec e_x}^{\mathrm{axf}}\bigr)\bigl(iL_{e_x}R_{\vec e_y}^{\mathrm{axf}}\bigr)\bigl(iL_{e_y}R_{\vec e_y}^{\mathrm{axf}}\bigr)\bigl(iL_{e_z}R_{\vec e_y}^{\mathrm{axf}}\bigr),
+\chi = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} = -iR_{\vec e_z}^{\mathrm{axf}} = i\,\bigl(iR_{\vec e_x}^{\mathrm{axf}}\bigr)\bigl(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\bigr)\bigl(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\bigr)\bigl(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\bigr),
 $$
 the last form writing it as one $i$ times the four frame cells in the order $C_tC_xC_yC_z$. Each of the four cells carries one $i$ and $i^4=+1$, so the four multiply to the product of the four bare cells; the single $i$ in front is what makes the left side the chirality cell. It anticommutes with each $C_\mu$, $\chi C_\mu=-C_\mu\chi$, which is what grades the four cells. The axial current is the same cell inserted instead of a fourth one,
 $$
@@ -248,6 +248,12 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each single one is invertible with determinant one: $L_a$ and $R_b$ with $|a|=|b|=1$ are invertible, and the scalar $i$ enters a $4\times4$ determinant as $i^4=+1$. A frame cell is therefore a full-rank operator, and the rank-one cone of "pure tensors" belongs to the sandwich family $M\Theta M^\dagger$, not here.
 
 These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu=C_\mu$ and $\gamma_5=\chi$, the last being the chirality cell. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde\Xi_{\mathrm{ad}}$ with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.
@@ -289,7 +295,7 @@ $$
 $$
 All three follow from one fact and one sum: the square $(\gamma_\mu)^2=\varepsilon_\mu I_4$, unsummed, with $\varepsilon_t=+1$ and $\varepsilon_k=-1$, and the sum $\sum_\mu\varepsilon_\mu=-2$. In the first, $(\gamma_\mu)^2=\varepsilon_\mu I_4$ term by term and the sum of the four signs is $-2$. In the third, $\gamma_\mu\gamma_5=-\gamma_5\gamma_\mu$ gives $\gamma_\mu\gamma_5\gamma_\mu=-\gamma_5(\gamma_\mu)^2=-\varepsilon_\mu\gamma_5$ term by term, and the sum of the signs gives $+2\gamma_5$; no weight is needed there, because the sign is already carried by the product. In the second the free index $\alpha$ is not summed, and the weight is what makes the four terms add: the term with $\mu=\alpha$ is $+\gamma_\alpha$ and each of the other three is $-\gamma_\alpha$, so the total is $\gamma_\alpha-3\gamma_\alpha=-2\gamma_\alpha$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -320,7 +326,7 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $L_{a}R_{b}$ | two-sided cell, $L_{a}R_{b}\psi=a\psi b$ |
 | $C_\mu = iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | frame cell of $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$: $iR_{\vec e_x}^{\mathrm{axf}}$ at $\mu=t$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ at $\mu=k$ |
 | $C_\mu C_\nu$, $\mu<\nu$ | the six Lorentz bivectors; the six generators are half of them |
-| $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ | chirality cell, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\,(iR_{\vec e_x}^{\mathrm{axf}})(iL_{e_x}R_{\vec e_y}^{\mathrm{axf}})(iL_{e_y}R_{\vec e_y}^{\mathrm{axf}})(iL_{e_z}R_{\vec e_y}^{\mathrm{axf}})$ |
+| $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ | chirality cell, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=i\,(iR_{\vec e_x}^{\mathrm{axf}})(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})$ |
 | $\bar\psi=\psi^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac adjoint |
 | $\Sigma_{\lambda\mu\nu}$ | Dirac spin density, $\bar\psi \operatorname{Alt}\bigl[C_\lambda C_\mu C_\nu\bigr]\psi$, normalised antisymmetrisation |
 | $A_\mu$ | axial current, $\bar\psi\,\chi\,C_\mu\,\psi$ |

@@ -34,7 +34,7 @@ In this section we record what is structural about placing it there and what is 
 
 The article carries two Dirac equations, and they must not be read as one. They share the cells and the mass coefficient; they differ in the object the operator acts on and in where chirality lives.
 
-The **one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two halves rather than a term inside either. Chirality is visible only as the label: $\tilde{\Psi}_L$ lies in $S$ and $\tilde{\Psi}_R$ in $S^{\mathrm{c}}$, and no element of $\mathbb{B}$ grades one against the other. The element that suggests itself, $i\vec e_z$, has square $+e_t$ and grades the two *copies* of $S$ in the Peirce decomposition, not $S$ against $S^{\mathrm{c}}$; the operator that does grade them is the central sign of the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}\cong\mathbb{B}\oplus\mathbb{B}$, which is not an element of $\mathbb{B}$. That is why the one-sided equation carries no chirality *operator*.
+The **one-sided equation** is the pair displayed above, and it is the corpus's definition. Every derivative acts by left multiplication, and the mass is the off-diagonal pairing of the two halves rather than a term inside either. Chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, which on $\Delta$ acts as $\operatorname{diag}(-I_2,I_2)$ and so separates $\tilde{\Psi}_L\in S$ from $\tilde{\Psi}_R\in S^{\mathrm{c}}$; its central form is the sign of the double $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_\mathbb{R}\cong\mathbb{B}\oplus\mathbb{B}$, which is not an element of $\mathbb{B}$. What is not available is a grading by an element of $\mathbb{B}$ acting on one side: the element that suggests itself, $i\vec e_z$, has square $+e_t$ and grades the two *copies* of $S$ in the Peirce decomposition, not $S$ against $S^{\mathrm{c}}$.
 
 The **two-sided equation** is the transcription of the same pair on the module, as one equation. The field is written $\psi$ without the tilde there, because it is read as the module spinor $\Delta=S\oplus S^{\mathrm{c}}$ rather than as an algebra element. The pair operator is the one of *Conventions of the Operators and the Calculus*; for $\psi=(\psi_L,\psi_R)$ it is
 
@@ -58,7 +58,7 @@ The operator is now a single object acting on the pair: it is the pair written o
 | Field | $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R\in\Delta=S\oplus S^{\mathrm{c}}$ | $\psi=(\psi_L,\psi_R)$ in $\Delta=S\oplus S^{\mathrm{c}}$ |
 | Mass | the off-diagonal pairing of the two halves | the same coefficient, off-diagonal in the two blocks |
 | Operator | left multiplication by $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ | one operator on the pair, $\mathbb{D}^2=\Box I_4$ |
-| Chirality | the label of the half; no operator | the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ |
+| Chirality | the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, acting as $\operatorname{diag}(-I_2,I_2)$; no element of $\mathbb{B}$ grades the halves | the same cell, the pure right multiplication $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ |
 | Use | the definition, the mass term, the mass shell | the charge operator, the projectors, the bilinears |
 
 **The spin-$\tfrac12$ representation content is forced once the field is placed in the module.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, of complex dimension $2$, and its group of unit-norm biquaternions, $\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$ — under $\mathsf{M}_2$ the group $\det=1$ — is $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field in $\Delta=S\oplus S^{\mathrm{c}}$ transforms in the two inequivalent two-component representations
@@ -189,7 +189,7 @@ which are Hermitian but have *half-integer* spectra; they cannot carry the proto
 
 Three further distinctions belong here, because the framework has several conserved-looking quantities and they are easy to conflate.
 
-- **Electric charge versus chirality.** The operator $Ϙ$ is diagonal in the chiral basis and commutes with $\Gamma$ for every $ϙ_L,ϙ_R$; the axial combination $ϙ_R=-ϙ_L$ makes $Ϙ=-ϙ_L\Gamma$, proportional to the chirality cell. But $\Gamma$ is a chirality label, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to chirality.
+- **Electric charge versus chirality.** The operator $Ϙ$ is diagonal in the chiral basis and commutes with $\Gamma$ for every $ϙ_L,ϙ_R$; the axial combination $ϙ_R=-ϙ_L$ makes $Ϙ=-ϙ_L\Gamma$, proportional to the chirality cell. But $\Gamma$ is the chirality cell, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to chirality.
 - **Electric charge versus the $\mathrm{SU}(2)$ generators.** As above, these are real-spectrum (after multiplication by $i$) but half-integer-valued; they are isospin-like, not electric.
 - **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond the central phase, and no composite quantum number at all. The central phase does pass through the linear chiral pair, so the proton's electric charge is conserved by the massive free equation; but that is a statement about the $\mathrm{U}(1)$ of electromagnetism, not about baryon number, which is not constructed here.
 
@@ -256,7 +256,7 @@ The table sorts the proton's properties by the status they have in the framework
 | Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j_\mu=\bar{\psi}\,G_\mu\psi$, with $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ the generator cell of the coordinate $x_\mu$ ($\nu(t)=x$, $\nu(k)=y$); $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$ |
 | Electric charge generator is the central $\mathrm{U}(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathrm{SU}(2)$ generators have imaginary/half-integer spectra |
 | Charge value $ϙ_p=+1$ | Represented (parameter) | inserted coupling; not selected by the algebra |
-| $|ϙ_p|=|ϙ_e|$, opposite signs | Outside | no framework structure; independent parameters |
+| $\lvert ϙ_p\rvert=\lvert ϙ_e\rvert$, opposite signs | Outside | no framework structure; independent parameters |
 | Charge quantisation (integrality) | Outside | not derived in the framework |
 | Mass value $m_p$ | Represented (parameter) | inserted into the Dirac equation |
 | Compositeness; quark content $uud$; colour; confinement | Outside | standard QCD; no route in the framework |
@@ -289,6 +289,12 @@ Each gamma is a single cell $L_aR_b$, the operator $\psi\mapsto a\psi b$. The fr
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+$$
+
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $g=\mathrm{diag}(+1,-1,-1,-1)$ — and that is why the Dirac bar of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one cell and not a sum of cells, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
@@ -333,7 +339,7 @@ $$
 
 In the Euclidean frame the spatial gammas are $i\gamma_k$, so every cell squares to $+I_4$; the same four sums then hold with every weight equal to $+1$ and $g$ replaced by $\delta$, giving $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\rho\gamma_\beta\gamma_\alpha$, with the Euclidean gammas in place of the Minkowski ones. Without weights in $\mathbb{M}_-$ the sum is $\sum_\mu\gamma_\mu\gamma_\mu=(1-1-1-1)I_4=-2I_4$: the metric has left the cells and entered the sum.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
@@ -369,7 +375,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\Delta=S\oplus S^{\mathrm{c}}$ | Dirac spinor module, $\dim_\mathbb{C}\Delta=4$ |
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate |
 | $m_p$ | Proton mass (a parameter) |
-| $\tilde{P}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}\tilde{P}^{\natural}=-m_p^2c^2$, that is $E^2=|\vec p|^2c^2+m_p^2c^4$ |
+| $\tilde{P}=iE/c\,e_t+\vec p$ | Four-momentum; the mass shell is $\tilde{P}\tilde{P}^{\natural}=-m_p^2c^2$, that is $E^2=\lvert\vec p\rvert^2c^2+m_p^2c^4$ |
 | $L_{a}R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms, $L_aR_b\psi=a\psi b$ |
 | $\mathbb{D}\psi=(\tilde{\nabla}\psi_R,\tilde{\nabla}^{\natural}\psi_L)$, $\mathbb{D}^2=\Box I_4$ | Pair operator of the two-sided equation $(\mathbb{D}-m_p)\psi=0$ |
 | $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Chirality cell, $\Gamma\psi=-i\,e_t\psi\vec e_z$, $\Gamma^2=I_4$, $\Gamma=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis |

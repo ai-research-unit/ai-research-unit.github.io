@@ -57,7 +57,7 @@ $$
 S(\tilde U^{\mathrm{lor}}) = \begin{pmatrix} g & 0\\ 0 & \mathsf{M}_2(\bar{\tilde U}^{\mathrm{lor}})\end{pmatrix}, \qquad g = \mathsf{M}_2(\tilde U^{\mathrm{lor}}),
 $$
 
-so it commutes with $\Gamma$ and with each $P_{L,R}$. Chirality is therefore a Lorentz-invariant label: a Lorentz transformation never mixes the two halves.
+so it commutes with $\Gamma$ and with each $P_{L,R}$. Chirality is therefore Lorentz-invariant: the cell commutes with every Lorentz generator, so a Lorentz transformation never mixes the two halves.
 
 **Why the halves are not the ideals.** The projectors above are not the Peirce idempotents $\tilde\Pi_+,\tilde\Pi_-$. The minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$, and left multiplication by $\tilde U^{\mathrm{lor}}$ acts on each by the *same* defining representation; the chiral projectors instead act on the four-dimensional Dirac module and distinguish $\psi\mapsto g\psi$ from $\chi\mapsto\mathsf{M}_2(\bar{\tilde U}^{\mathrm{lor}})\chi$. This distinction is invisible to the simple algebra $\mathbb{B}$ and appears only through the conjugate module — as the parent article stresses.
 
@@ -426,6 +426,12 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
+The same in the axis-free display:
+
+$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+$$
+
 On the chiral pair $(\psi_L,\psi_R)$, with the left-handed block first, the same five objects are the matrices
 
 $$
@@ -434,7 +440,17 @@ $$
 \gamma_5=\begin{pmatrix}-I_2&0\\0&I_2\end{pmatrix},
 $$
 
-where $\sigma_k$ is the matrix of $i\vec e_k$. These are the arrays of the four coordinate cells $C_\mu$ of Problem 2, $\gamma_0=C_t$ and $\gamma_k=C_k$, together with the chirality cell $\gamma_5$.
+where $\sigma_k$ is the matrix of $i\vec e_k$, and these are the Peirce arrays. In the axis-free display, which is the display of the body, the same five are
+$$
+\gamma_0=\begin{pmatrix}0&-i&0&0\\i&0&0&0\\0&0&0&i\\0&0&-i&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&-i&0&0\\i&0&0&0\end{pmatrix},
+$$
+$$
+\gamma_2=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+\gamma_5=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
+$$
+the signed permutations $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_{\nu(k)}}^{\mathrm{axf}}$, carried into the Peirce arrays by $C_{\Pi}$. These are the arrays of the four coordinate cells $C_\mu$ of Problem 2, $\gamma_0=C_t$ and $\gamma_k=C_k$, together with the chirality cell $\gamma_5$.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
@@ -469,7 +485,7 @@ $$
 
 The four contraction sums are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.
 
-**The display.** Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.
+**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
 ## Summary
 
