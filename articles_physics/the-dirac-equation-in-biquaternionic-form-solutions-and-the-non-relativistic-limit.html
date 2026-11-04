@@ -112,11 +112,11 @@ $$</p>
 $$</p>
 <p>The mixed products anticommute: in a time–space pair the left factor $e_t$ commutes with every unit while the right factors $\vec e_x$ and $\vec e_y$ anticommute, and in a space–space pair the right factor $\vec e_y$ is common to both while the left factors $\vec e_k$ anticommute. Hence</p>
 <p>$$
-\{\Gamma_\mu,\Gamma_\nu\} = 2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
+\{\Gamma_\mu,\Gamma_\nu\} = 2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}, \qquad g = \mathrm{diag}(-1,+1,+1,+1),
 $$</p>
 <p>the metric sign being the convention noted in the companion article.</p>
 <p><strong>The two bases.</strong> The frame above is the <strong>chiral (Weyl) basis</strong>. The chirality is the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$; on the Peirce planes $\mathbb{B}\tilde\Pi_\pm$, with $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, it acts as $-1$ on $\mathbb{B}\tilde\Pi_+$ and as $+1$ on $\mathbb{B}\tilde\Pi_-$, so the upper two-component block is left-handed and the lower is right-handed. The <strong>Dirac basis</strong> is obtained by the $*$-unitary change of basis $R_{\tilde W}$ with $\tilde W=(e_t+\vec e_y)/\sqrt2$. It diagonalizes the timelike cell $\Gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$, which becomes $+1$ on the upper block and $-1$ on the lower, and it mixes the two chiralities. The plane-wave spinors are simplest in the Dirac basis; the massless equations are simplest in the chiral one.</p>
-<p><strong>The two metrics, and the two sectors.</strong> Two metric symbols appear, and they carry the same information with opposite sign. The Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ is the one in the anticommutator of the cells. The spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ is its negative, $\eta=-g$, and it is the metric of the $ict'$ gradient. The relative sign is the freedom the companion article flags as convention.</p>
+<p><strong>The two metrics, and the two sectors.</strong> Two metric symbols appear, and they carry the same information with opposite sign. The Clifford metric $g=\mathrm{diag}(-1,+1,+1,+1)$ is the one in the anticommutator of the cells. The spacetime metric $g_{\mu\nu}[\mathbb{M}_-]$ is its negative, $g_{\mu\nu}[\mathbb{M}_-]$, and it is the metric of the $ict'$ gradient. The relative sign is the freedom the companion article flags as convention.</p>
 <p>Two sectors recur. The material sector $\mathbb{M}_-$ is the anti-Hermitian part of $\mathbb{B}$, the fixed space of $\flat$; the informational sector $\mathbb{M}_+$ is its Hermitian partner, and it is where the spin observables of this article live.</p>
 <p>On the momentum cell the sign difference of the two metrics is the relative minus between the time and the space terms. With $p_0=E$ and $\vec p=(p_1,p_2,p_3)$,</p>
 <p>$$
@@ -126,7 +126,7 @@ $$</p>
 <p>$$
 P^2=\Gamma_0^2p_0^2+\sum_k\Gamma_k^2p_k^2=p_0^2-\vec p^2 .
 $$</p>
-<p>The last expression is $g^{\mu\nu}p_\mu p_\nu$, and equally $-\eta^{\mu\nu}p_\mu p_\nu$; the two metrics differ only in which of them carries the minus.</p>
+<p>The last expression is $g^{\mu\nu}p_\mu p_\nu$, and equally $g^{\mu\nu}[\mathbb{M}_-]p_\mu p_\nu$; the two agree, and the minus sits in the spatial signs alone.</p>
 <p>On derivatives the same cells give the wave operator of the material sector. On a plane wave $p_0\to i\partial/\partial t'$ and $p_k\to-i\partial/\partial Q_k$, so $P\to\slashed p$ with</p>
 <p>$$
 \slashed p=i\Gamma_0\,\partial/\partial t'+\sum_k i\Gamma_k\,\partial/\partial Q_k,
@@ -136,14 +136,14 @@ $$</p>
 =\Box\big|_{\mathbb{M}_-}.
 $$</p>
 <p>Since $Q_k=x,y,z$, the two writings $\partial/\partial Q_k$ and $\partial/\partial x_k$ name the same derivative, and the display is $\slashed p=i\Gamma_\mu\partial/\partial x_\mu$ with the four derivatives $(\partial/\partial t',\partial/\partial x,\partial/\partial y,\partial/\partial z)$. No sign enters beyond $i^2=-1$ and the two cell squares.</p>
-<p>A reader who prefers to attach $\eta$ to the generators multiplies the frame by $i$. Since $i^2=-1$,</p>
+<p>A reader who prefers the $(+1,-1,-1,-1)$ convention on the generators multiplies the frame by $i$. Since $i^2=-1$,</p>
 <p>$$
 i\Gamma_0=i^2L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
 i\Gamma_k=i^2L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$</p>
 <p>and the anticommutator flips sign,</p>
 <p>$$
-\{i\Gamma_\mu,i\Gamma_\nu\}=2\eta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
+\{i\Gamma_\mu,i\Gamma_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
 $$</p>
 <p>The physics is unchanged; only the placement of the signs differs.</p>
 <p>In the sections that construct the solutions we use natural units $\hbar = c = 1$; the dimensionally explicit forms are given where they carry physical meaning, namely in the mass-shell relation, in the Pauli equation and in the Weyl equations.</p>
@@ -568,11 +568,11 @@ $$</p>
 <td>Antisymmetric product of two generators; operator of the tensor bilinear</td>
 </tr>
 <tr>
-<td>$g = \mathrm{diag}(+1,-1,-1,-1)$</td>
-<td>Clifford metric of the generators; note $g = -\eta$</td>
+<td>$g_{\mu\nu}[\mathbb{M}_-] = \mathrm{diag}(-1,+1,+1,+1)$</td>
+<td>Clifford metric of the generators</td>
 </tr>
 <tr>
-<td>$\eta = \mathrm{diag}(-1,+1,+1,+1)$</td>
+<td>$g_{\mu\nu}[\mathbb{M}_-]$</td>
 <td>Spacetime metric of the $ict'$ gradient</td>
 </tr>
 <tr>

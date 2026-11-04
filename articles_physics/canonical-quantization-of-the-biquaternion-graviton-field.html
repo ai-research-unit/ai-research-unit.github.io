@@ -88,17 +88,17 @@ $$</p>
 </ul>
 <h2 id="the-linearized-field-and-its-gauge-symmetry">The Linearized Field and Its Gauge Symmetry</h2>
 <h3 id="the-field-and-the-quadratic-action">The Field and the Quadratic Action</h3>
-<p>The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$, the action is</p>
+<p>The linearized theory is the expansion of the Einstein–Hilbert action to second order in the perturbation. With $g_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+h_{\mu\nu}$, the action is</p>
 <p>$$
 S = \frac12\int d^4x\left(\sum_{\mu,\nu,\rho}\partial/\partial Q_\mu h_{\nu\rho}\partial/\partial Q_\mu h_{\nu\rho}
 -2\sum_{\mu,\nu,\rho}\partial/\partial Q_\mu h_{\mu\nu}\partial/\partial Q_\rho h_{\nu\rho}
 +2\sum_{\mu,\nu}\partial/\partial Q_\mu h_{\mu\nu}\partial/\partial Q_\nu h
 -\sum_\mu\partial/\partial Q_\mu h\,\partial/\partial Q_\mu h\right),
 $$</p>
-<p>with $h=\sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu}$ the trace, and the field equation is the linearized Einstein equation</p>
+<p>with $h=\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]h_{\mu\nu}$ the trace, and the field equation is the linearized Einstein equation</p>
 <p>$$
 \Box h_{\mu\nu}-2\sum_\rho\partial/\partial Q_{(\mu}\,\partial/\partial Q_\rho h_{\nu)\rho}+\partial/\partial Q_\mu\,\partial/\partial Q_\nu h
--\eta_{\mu\nu}\left(\Box h-\sum_{\rho,\sigma}\partial^2/\partial Q_\rho\partial Q_\sigma h_{\rho\sigma}\right)
+-g_{\mu\nu}[\mathbb{M}_-]\left(\Box h-\sum_{\rho,\sigma}\partial^2/\partial Q_\rho\partial Q_\sigma h_{\rho\sigma}\right)
 = -\kappa^2\,T_{\mu\nu} .
 $$</p>
 <p>The equation is the linearization of the Einstein equation about flat space, and its solutions are the gravitational waves.</p>
@@ -112,7 +112,7 @@ $$</p>
 \mathrm{Riem}_{\mu\nu\rho\sigma} = \tfrac12\left(\partial/\partial Q_\nu\,\partial/\partial Q_\rho h_{\mu\sigma}+\partial/\partial Q_\mu\,\partial/\partial Q_\sigma h_{\nu\rho}
 -\partial/\partial Q_\nu\,\partial/\partial Q_\sigma h_{\mu\rho}-\partial/\partial Q_\mu\,\partial/\partial Q_\rho h_{\nu\sigma}\right),
 $$</p>
-<p>which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ simplifies the equation, and the <strong>de Donder</strong> (harmonic) gauge $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.</p>
+<p>which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12g_{\mu\nu}[\mathbb{M}_-]h$ simplifies the equation, and the <strong>de Donder</strong> (harmonic) gauge $\sum_\mu\partial/\partial Q_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.</p>
 <h3 id="the-gauge-symmetry-as-coordinate-freedom">The Gauge Symmetry as Coordinate Freedom</h3>
 <p>The graviton's gauge symmetry has an interpretation that the vector case does not share. The parameter $\xi_\mu$ is the infinitesimal displacement of a coordinate transformation, $x_\mu\mapsto x_\mu+\xi_\mu$, so that the transformation of $h_{\mu\nu}$ is not a symmetry of a physical field but a relabeling of the coordinates: two tensor fields related by the shift describe the same geometry. The gauge redundancy is therefore the statement that the metric's components overcount the geometry by the freedom to choose coordinates, and the equivalence principle — the statement that the gravitational field can be transformed away locally — is the physical content of the redundancy.</p>
 <p>The framework's interpretation is that the gauge parameter is a <strong>material vector</strong>: the coordinate displacement lies in the same representation as the field's indices, and the transformation is the symmetric gradient of that vector. This is the structural difference from the vector field's gauge symmetry, whose parameter is a scalar function, and from the non-abelian case, whose parameter is a Lie-algebra element; for the graviton the parameter and the field live in the same material representation, which is why the gauge structure is the one of diffeomorphisms rather than of an internal group. What the framework does not supply is the interpretation: that the redundancy is coordinate freedom, and that it is the equivalence principle, are imported statements about gravity, not algebraic consequences.</p>
@@ -190,10 +190,10 @@ $$</p>
 <h3 id="the-propagator">The Propagator</h3>
 <p>In the de Donder gauge the quadratic form is inverted by the graviton propagator, whose numerator is the standard de Donder structure</p>
 <p>$$
-\mathcal{P}_{\mu\nu,\rho\sigma} = \tfrac12\left(\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho}\right)
--\frac{1}{D-2}\eta_{\mu\nu}\eta_{\rho\sigma} ,
+\mathcal{P}_{\mu\nu,\rho\sigma} = \tfrac12\left(g_{\mu\rho}[\mathbb{M}_-]g_{\nu\sigma}[\mathbb{M}_-]+g_{\mu\sigma}[\mathbb{M}_-]g_{\nu\rho}[\mathbb{M}_-]\right)
+-\frac{1}{D-2}g_{\mu\nu}[\mathbb{M}_-]g_{\rho\sigma}[\mathbb{M}_-] ,
 $$</p>
-<p>in $D$ dimensions, with the coefficient of the trace term determined by the gauge-fixing procedure; the propagator is $\mathcal{P}_{\mu\nu,\rho\sigma}/p^2$ with the $i\epsilon$ prescription, together with the gauge-dependent terms that the de Donder condition fixes. The detailed form, with the gauge-fixing parameter and the dimensional dependence, is standard and is cited below. What the framework contributes is the observation that the trace term of the numerator is the trace that the bilinear form removes from the symmetric square: the numerator is the symmetric metric pairing minus a term proportional to $\eta_{\mu\nu}\eta_{\rho\sigma}$, and the trace removal of $V\odot V$ is the algebraic form of that subtraction of the trace direction.</p>
+<p>in $D$ dimensions, with the coefficient of the trace term determined by the gauge-fixing procedure; the propagator is $\mathcal{P}_{\mu\nu,\rho\sigma}/p^2$ with the $i\epsilon$ prescription, together with the gauge-dependent terms that the de Donder condition fixes. The detailed form, with the gauge-fixing parameter and the dimensional dependence, is standard and is cited below. What the framework contributes is the observation that the trace term of the numerator is the trace that the bilinear form removes from the symmetric square: the numerator is the symmetric metric pairing minus a term proportional to $g_{\mu\nu}[\mathbb{M}_-]g_{\rho\sigma}[\mathbb{M}_-]$, and the trace removal of $V\odot V$ is the algebraic form of that subtraction of the trace direction.</p>
 <h3 id="the-massive-case-and-the-discontinuity">The Massive Case and the Discontinuity</h3>
 <p>A massive spin-two field, described by the Fierz–Pauli theory, has five polarizations — the helicities $\pm2,\pm1,0$ — and no gauge symmetry, the mass term breaking it. The massless limit of the massive theory does not smoothly reduce to the massless theory: the longitudinal and scalar modes do not decouple, and the theory retains an extra scalar contribution to the interaction between sources, the van Dam–Veltman–Zakharov discontinuity. This is the same phenomenon that the spin-$\tfrac32$ field exhibits, and it is the standard reason that a graviton with a small mass is not simply a graviton with a small mass. In the framework's terms the discontinuity is the statement that the three non-transverse components of the five-dimensional carrier do not decouple in the massless limit unless the gauge symmetry is exact; when the mass vanishes, the gauge removes them, and the count drops from five to two discontinuously.</p>
 <h3 id="the-coupled-theory">The Coupled Theory</h3>
@@ -260,11 +260,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$, $\kappa^2=16\pi G$</td>
+<td>$g_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+h_{\mu\nu}$, $\kappa^2=16\pi G$</td>
 <td>Metric perturbation and the coupling of its source</td>
 </tr>
 <tr>
-<td>$h=\sum_{\mu,\nu}\eta_{\mu\nu}h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$</td>
+<td>$h=\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]h_{\mu\nu}$, $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12g_{\mu\nu}[\mathbb{M}_-]h$</td>
 <td>Trace and trace-reversed field</td>
 </tr>
 <tr>
@@ -308,7 +308,7 @@ $$</p>
 <td>Bosonic mode algebra</td>
 </tr>
 <tr>
-<td>$\mathcal{P}_{\mu\nu,\rho\sigma}=\tfrac12(\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho})-\tfrac{1}{D-2}\eta_{\mu\nu}\eta_{\rho\sigma}$</td>
+<td>$\mathcal{P}_{\mu\nu,\rho\sigma}=\tfrac12(g_{\mu\rho}[\mathbb{M}_-]g_{\nu\sigma}[\mathbb{M}_-]+g_{\mu\sigma}[\mathbb{M}_-]g_{\nu\rho}[\mathbb{M}_-])-\tfrac{1}{D-2}g_{\mu\nu}[\mathbb{M}_-]g_{\rho\sigma}[\mathbb{M}_-]$</td>
 <td>Propagator numerator in the de Donder gauge; the coefficient of the trace term is fixed by the gauge fixing</td>
 </tr>
 <tr>

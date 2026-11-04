@@ -123,7 +123,7 @@ $$</p>
 <p>Varying with respect to $A_\nu$ gives $\sum_\mu\partial/\partial Q_\mu F_{\mu\nu}=0$, the inhomogeneous Maxwell equations, and varying with respect to $F_{\mu\nu}$ gives $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$, the definition that makes the homogeneous equations automatic; on shell the integrand is $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$. The field strength is present as an independent variable, but the potential reappears as its Lagrange multiplier, carrying no kinetic term of its own. The gauge freedom is not removed by this route; it is relocated. There is no local action in four dimensions in which the gauge-invariant field strength alone is varied and Maxwell's equations, rather than $\tilde{F}=0$, follow.</p>
 <p>This is the first finding of the article. The biquaternion formulation writes the theory in its most compact and most covariant form, first order in a gauge-invariant object; canonical quantization cannot start from that object. It must either return to the potential and accept the gauge redundancy, or use the first-order formulation and accept the potential as a multiplier. In neither case does the algebra supply the missing structure.</p>
 <h2 id="the-constraint-structure">The Constraint Structure</h2>
-<p>The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. In natural units and with the metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the conjugate momenta are</p>
+<p>The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. In natural units and with the metric $g_{\mu\nu}[\mathbb{M}_-]$, the conjugate momenta are</p>
 <p>$$
 \pi_\mu=\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_t A_\mu)}=-F_{t\mu},
 $$</p>
@@ -171,7 +171,7 @@ A_\mu(x)=\int\!\frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
 \left[\epsilon^{(r)}_\mu(\vec k)\,a^{\mathrm{fop}}_r(\vec k)\,\exp(-ik\cdot x)
 +\epsilon^{(r)*}_\mu(\vec k)\,a^{\mathrm{fop}\dagger}_r(\vec k)\,\exp(+ik\cdot x)\right],
 $$</p>
-<p>with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\sum_{\mu,\nu}\eta_{\mu\nu}\epsilon^{(r)}_\mu\epsilon^{(s)}_\nu=\zeta_r\delta_{rs}$, where $(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1)$. The mode operators carry the corresponding commutators,</p>
+<p>with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\epsilon^{(r)}_\mu\epsilon^{(s)}_\nu=\zeta_r\delta_{rs}$, where $(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1)$. The mode operators carry the corresponding commutators,</p>
 <p>$$
 \boxed{\;\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
 =\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)\;},
@@ -301,7 +301,7 @@ $$</p>
 <td>Gauge degree of freedom; Lorenz gauge $S=0$</td>
 </tr>
 <tr>
-<td>$\eta=\mathrm{diag}(-1,+1,+1,+1)$</td>
+<td>$g_{\mu\nu}[\mathbb{M}_-]$</td>
 <td>$ict'$ spacetime metric; biquaternion norm on $\mathbb{M}_-$</td>
 </tr>
 <tr>

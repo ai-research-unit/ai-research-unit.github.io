@@ -73,7 +73,7 @@
 <p>The companion articles of the relativistic quantum series build the biquaternion Dirac algebra and use it: <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure</em>, fixes the comparison between the biquaternions and the even Clifford algebra; <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> constructs the module on which the algebra acts; <em>Exercise: Chirality and the Weyl Spinors</em> develops the chiral projectors. This article is about a structure that all three use but none names: the <strong>grading of the Dirac algebra by reflection parity</strong>, and the identification of one element, the timelike frame cell $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, as the hinge on which the whole structure turns. Here $L_{a}R_{b}$ is the cell that multiplies on the left by $a$ and on the right by $b$, $L_{a}R_{b}\psi=a\psi b$, and $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.</p>
 <p>The subject is one observation, made precise. The biquaternion algebra $\mathbb{B}$ is isomorphic to the <strong>even</strong> part of the Clifford algebra $\mathrm{Cl}_{1,3}$. Its rotors, the elements of unit norm, act on four-vectors by conjugation, and the same rotors are the points of $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group. The generators $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, by contrast, are <strong>odd</strong>: none of them lies in the even part, whose cells are those whose right multiplier lies in $\mathrm{span}\{e_t,\vec e_z\}$, and none of them is a rotor. They act on spinors and they <strong>exchange the two chiralities</strong>. The odd/even split of the Clifford algebra is therefore not a bookkeeping device. It is the split between the transformations that <em>turn</em> and the transformations that <em>reflect</em>, and chirality — the property that separates the two Weyl spinors — is precisely what the odd part changes and the even part preserves.</p>
 <p>The article is organized as follows. §<em>One Algebra, Read Twice</em> reconciles the two ways in which a single element of the algebra is used, as an object and as an operator. §<em>The Grading by Reflection Count</em> establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. §<em>The Frame Cell and the Hermitian Sector</em> introduces the frame cell $iR_{\vec e_x}^{\mathrm{axf}}$ and shows that the Clifford metric is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. §<em>Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ Is the Bar</em> shows that conjugation by the frame cell is the conjugation of the coefficients, so that the frame, the sector swap and the reflection are one operator. §<em>The Spaces of Rotations and of Reflections</em> and §<em>How Many Reflections?</em> describe the two spaces and answer the question of how many reflections a given Lorentz transformation needs. §<em>Why Chirality Needs a Reflection</em> draws the consequence for chirality, and §<em>Why the Pauli Algebra Cannot Carry Chirality</em> shows that no chirality element exists there. A closing §<em>The Legacy Gamma Formulation</em> translates the results into the matrix notation of the literature, and it is the only section of the article that uses it; every other statement is written in cells.</p>
-<p>The conventions are those of the series: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$; the scalar imaginary $i$, with $i^2=-1$; the sectors $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$; the Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ of the generators; and the dictionary of <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure</em>, which is the $\mathbb{R}$-linear comparison with the even subalgebra.</p>
+<p>The conventions are those of the series: the algebra, the units, the sectors and the generator metric are those of <em>Algebra and Element Conventions</em> and <em>Frame Conventions</em>, and none is restated here. The comparison with the even subalgebra is the dictionary of <em>Matrix Representations Conventions</em>, §<em>The Clifford Structure</em>.</p>
 <p>As the series writes it, the comparison is given by its values and never by a symbol,
 $$
 e_t\mapsto L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad \vec e_k\mapsto L_{\vec e_k}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad i\mapsto L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
@@ -192,15 +192,15 @@ $$
 \langle\tilde Q\rangle_{\natural}\ \text{on}\ (e_t, i\vec e_x, i\vec e_y, i\vec e_z) = \mathrm{diag}(+1,-1,-1,-1) = g,
 $$
 $$
-\langle\tilde Q\rangle_{\natural}\ \text{on}\ (ie_t, \vec e_x, \vec e_y, \vec e_z) = \mathrm{diag}(-1,+1,+1,+1) = \eta = -g .
+\langle\tilde Q\rangle_{\natural}\ \text{on}\ (ie_t, \vec e_x, \vec e_y, \vec e_z) = \mathrm{diag}(-1,+1,+1,+1) = g_{\mu\nu}[\mathbb{M}_-] .
 $$
-The minus signs of $g$ are those of $i^2$ on the three spatial directions, and nothing else. The Clifford metric of the generators is therefore not an independent convention laid on top of the algebra: <strong>it is the biquaternion norm of the Hermitian sector</strong>, and the $ict'$ metric of the material sector is its negative, the biquaternion norm of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: the material coordinates carry $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the generators, which are Hermitian objects, carry $g = \mathrm{diag}(+1,-1,-1,-1)$. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.</p>
+The minus signs of $g$ are those of $i^2$ on the three spatial directions, and nothing else. The Clifford metric of the generators is therefore not an independent convention laid on top of the algebra: <strong>it is the biquaternion norm of the Hermitian sector</strong>, and the $ict'$ metric of the material sector is its negative, the biquaternion norm of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: the material coordinates carry $g_{\mu\nu}[\mathbb{M}_-]$, and the generators, which are Hermitian objects, carry $g = \mathrm{diag}(-1,+1,+1,+1)$. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.</p>
 <p>The same fact appears in the vector square. For $w$ as above,
 $$
 \left(x_\mu iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\right)^2 = \langle w\rangle_{\natural}\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} = \left(x_t^2 - x_x^2 - x_y^2 - x_z^2\right)L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} ,
 $$
 with no relative sign between the Clifford square and the biquaternion norm. The absence of that sign is the signature $g$ showing through.</p>
-<h2 id="conjugation-by-math149-is-the-bar">Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ Is the Bar</h2>
+<h2 id="conjugation-by-math138-is-the-bar">Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ Is the Bar</h2>
 <p>The frame cell $iR_{\vec e_x}^{\mathrm{axf}}$ is not merely a bookkeeping element. It has a definite action on the algebra, and it is the action that defines the split $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$.</p>
 <p>For every $\tilde{Q}\in\mathbb{B}$,
 $$
@@ -553,7 +553,7 @@ which is $-2\gamma_0\gamma_k$ for one timelike and one spacelike index, $+2\gamm
 <p><strong>The grading is the reflection count.</strong> By Cartan–Dieudonné, an orthogonal transformation is a product of reflections and its determinant is $(-1)^{\text{count}}$. The split $\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+}\oplus\mathrm{Cl}_{1,3}^{-}$ is that parity.</p>
 </li>
 <li>
-<p><strong>The frame and the metric.</strong> Every vector is $iR_{\vec e_x}^{\mathrm{axf}}$ times the image of $w\in\mathbb{M}_+$, and the image of $\mathbb{M}_+$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $g = \mathrm{diag}(+1,-1,-1,-1)$, its minus signs being those of $i^2$, and on the material basis $\eta = -g$. The Clifford metric is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.</p>
+<p><strong>The frame and the metric.</strong> Every vector is $iR_{\vec e_x}^{\mathrm{axf}}$ times the image of $w\in\mathbb{M}_+$, and the image of $\mathbb{M}_+$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $g = \mathrm{diag}(-1,+1,+1,+1)$, its minus signs being those of $i^2$, and on the material basis $g_{\mu\nu}[\mathbb{M}_-]$. The Clifford metric is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.</p>
 </li>
 <li>
 <p><strong>Conjugation by $iR_{\vec e_x}^{\mathrm{axf}}$ is the bar.</strong> Conjugating the image of $\tilde{Q}$ by $iR_{\vec e_x}^{\mathrm{axf}}$ gives the image of $\bar{\tilde{Q}}$: it fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, hence preserves each of $\mathbb{M}_{\pm}$. Together with reversal, which is quaternion conjugation, it composes into the Hermitian conjugation ${}^{*}$. The real structure $\flat = -{}^{*}$ therefore carries the frame within it.</p>
@@ -589,11 +589,11 @@ which is $-2\gamma_0\gamma_k$ for one timelike and one spacelike index, $+2\gamm
 <td>Clifford algebra and its even/odd parts</td>
 </tr>
 <tr>
-<td>$g = \mathrm{diag}(+1,-1,-1,-1)$</td>
+<td>$g = \mathrm{diag}(-1,+1,+1,+1)$</td>
 <td>Clifford metric of the generators</td>
 </tr>
 <tr>
-<td>$\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$</td>
+<td>$g_{\mu\nu}[\mathbb{M}_-]$</td>
 <td>$ict'$ metric of the material coordinates</td>
 </tr>
 <tr>

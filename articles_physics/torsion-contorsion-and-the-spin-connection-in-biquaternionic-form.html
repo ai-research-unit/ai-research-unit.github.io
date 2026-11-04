@@ -130,7 +130,7 @@ antisymmetric in all three slots, and the map between torsion and contorsion bec
 $$
 \sum_\mu\exp(a){}_\mu e_{b\mu} = \delta_{ab},\qquad \sum_a\exp(a){}_\mu e_{a\nu} = \delta_{\mu\nu},
 $$
-and it builds the metric as $g_{\mu\nu} = \sum_{a,b}\eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$, with $\eta=\mathrm{diag}(+1,-1,-1,-1)$. The frame pair of a frame-indexed object is lowered with $\eta$, so a repeated frame label is summed with $\varepsilon$ exactly as a repeated world label is. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, and the two connections are tied by the <strong>tetrad postulate</strong>,</p>
+and it builds the metric as $g_{\mu\nu} = \sum_{a,b}g_{ab}[\mathbb{M}_-]\,\exp(a){}_\mu \exp(b){}_\nu$, with $g_{\mu\nu}[\mathbb{M}_-]$. The frame pair of a frame-indexed object is lowered with $g_{ab}[\mathbb{M}_-]$, so a repeated frame label is summed with $\varepsilon$ exactly as a repeated world label is. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, and the two connections are tied by the <strong>tetrad postulate</strong>,</p>
 <p>$$
 \nabla_\mu \exp(a){}_\nu = \partial/\partial x_\mu \exp(a){}_\nu - \sum_\lambda\Gamma_{\lambda\mu\nu} \exp(a){}_\lambda + \sum_b\omega_{ab\mu} \exp(b){}_\nu = 0 ,
 $$</p>
@@ -152,7 +152,7 @@ $$
 $$
 and the orthonormality relation it rests on is
 $$
-\sum_\lambda E_{a\lambda}\, e_{b\lambda} = \eta_{ab},
+\sum_\lambda E_{a\lambda}\, e_{b\lambda} = g_{ab}[\mathbb{M}_-],
 $$
 in which the lowering matters: without the factor $\varepsilon_a$ the same sum is $\delta_{ab}$, and it is the two signs of $\eta$ that the antisymmetry statement is about.</p>
 <p>The sum $\omega_{ab\mu}+\omega_{ba\mu}$ is the frame-space carrier of the non-metricity, and it vanishes exactly when $\nabla_\mu g_{\nu\rho}$ does: the lowered array is antisymmetric in the frame pair exactly when the lowered contorsion is antisymmetric in the first and third world slots, which is the condition of the contorsion section. What does <em>not</em> follow outside that sector is the further step to total antisymmetry, and the Weitzenböck connection of <em>Teleparallel Geometry</em> is the case that shows it: the array vanishes there while the torsion is not totally antisymmetric. What it is <em>not</em> is the plain frame image of $\nabla_\mu g_{\nu\rho}$, $\sum_{\nu,\rho}\exp(a){}_\nu\exp(b){}_\rho\nabla_\mu g_{\nu\rho}$: that equality holds only in the metric-compatible case, where both sides vanish, and it fails as soon as a contorsion with a non-antisymmetric part is present, because the frame image carries metric factors that the frame metric does not. The implication is the one that is used, and it was checked on sixteen contorsions: the Levi-Civita one, seven metric-compatible ones built from axial and from general torsions, four confined to the sector and four with no symmetry at all. The sum vanished in exactly the eight metric-compatible cases and in none of the others — including the metric-compatible ones whose contorsion is <em>not</em> antisymmetric in its last pair, which is why the equivalence is with antisymmetry in the first and third slots and not with total antisymmetry. The tetrad used for the check is deliberately not symmetric, so that no index convention is degenerate. That antisymmetrised part $\tfrac12(\omega_{ab\mu}-\omega_{ba\mu})$ is the one place the torsion enters the matter equation, and it is why a contorsion with a non-antisymmetric part carries a piece, the symmetric part, that no spinor couples to.</p>
@@ -260,7 +260,7 @@ $$</p>
 $$</p>
 <p>The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each single one is invertible with determinant one: $L_a$ and $R_b$ with $|a|=|b|=1$ are invertible, and the scalar $i$ enters a $4\times4$ determinant as $i^4=+1$. A frame cell is therefore a full-rank operator, and the rank-one cone of "pure tensors" belongs to the sandwich family $M\Theta M^\dagger$, not here.</p>
 <p>These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu=C_\mu$ and $\gamma_5=\chi$, the last being the chirality cell. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde\Xi_{\mathrm{ad}}$ with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.</p>
-<p>The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
+<p>The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.</p>
 <p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
@@ -338,8 +338,8 @@ All three follow from one fact and one sum: the square $(\gamma_\mu)^2=\varepsil
 <td>affine covariant derivative, acting on the world label only</td>
 </tr>
 <tr>
-<td>$g_{\mu\nu} = \eta_{ab}\exp(a){}_\mu \exp(b){}_\nu$</td>
-<td>metric from the tetrad, $\eta = \mathrm{diag}(+1,-1,-1,-1)$</td>
+<td>$g_{\mu\nu} = g_{ab}[\mathbb{M}_-]\exp(a){}_\mu \exp(b){}_\nu$</td>
+<td>metric from the tetrad, $g_{\mu\nu}[\mathbb{M}_-]$</td>
 </tr>
 <tr>
 <td>$\omega^{a}{}_{b\mu}$</td>

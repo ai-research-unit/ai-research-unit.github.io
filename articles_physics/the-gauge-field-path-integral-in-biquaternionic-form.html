@@ -150,7 +150,7 @@ $$</p>
 <p>$$
 \mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla,\tilde A\rangle_{\natural} + \tfrac{\xi}{2}B^2 ,
 $$</p>
-<p>the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\xi}(\langle\tilde\nabla,\tilde A\rangle_{\natural})^2$, whose momentum-space quadratic form $K_{\mu\nu}=p^2\eta_{\mu\nu}+(1-\xi^{-1})p_\mu p_\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.</p>
+<p>the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\xi}(\langle\tilde\nabla,\tilde A\rangle_{\natural})^2$, whose momentum-space quadratic form $K_{\mu\nu}=p^2g_{\mu\nu}[\mathbb{M}_-]+(1-\xi^{-1})p_\mu p_\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.</p>
 <h3 id="the-non-abelian-determinant">The Non-Abelian Determinant</h3>
 <p>For a non-abelian theory the determinant is not constant. With the gauge-fixing condition $G_a[\tilde{A}]=\sum_\mu\partial/\partial Q_\mu A_{\mu a}-\omega_a$, the variation under a gauge transformation is</p>
 <p>$$
@@ -171,7 +171,7 @@ S_2 = \tfrac12\int\frac{d^4p}{(2\pi)^4}\;\tilde{A}_\mu(-p)\,
 K_{\mu\nu}(p)\,
 \tilde{A}_\nu(p),
 \qquad
-K_{\mu\nu}(p) = p^2\eta_{\mu\nu} + \left(1-\frac{1}{\xi}\right)p_\mu p_\nu ,
+K_{\mu\nu}(p) = p^2g_{\mu\nu}[\mathbb{M}_-] + \left(1-\frac{1}{\xi}\right)p_\mu p_\nu ,
 $$</p>
 <p>with $\xi$ the gauge parameter, the Gaussian integration gives</p>
 <p>$$
@@ -179,11 +179,11 @@ Z_2 = \left(\det K\right)^{-1/2}
 $$</p>
 <p>up to the field-independent factors, so that the two-point function is the inverse of $K$,</p>
 <p>$$
-\boxed{\;D_{\mu\nu}(p) = \frac{1}{p^2}\left(\eta_{\mu\nu}+\frac{(1-\xi)p_\mu p_\nu}{p^2}\right)\;},
+\boxed{\;D_{\mu\nu}(p) = \frac{1}{p^2}\left(g_{\mu\nu}[\mathbb{M}_-]+\frac{(1-\xi)p_\mu p_\nu}{p^2}\right)\;},
 $$</p>
 <p>the momentum-space propagator. The residue structure is worth separating into its two pieces. The first is the <strong>transverse projector</strong></p>
 <p>$$
-P_{\mu\nu} = \eta_{\mu\nu}+\frac{p_\mu p_\nu}{p^2},
+P_{\mu\nu} = g_{\mu\nu}[\mathbb{M}_-]+\frac{p_\mu p_\nu}{p^2},
 $$</p>
 <p>which is idempotent, has trace three off shell, and annihilates $p_\nu$:</p>
 <p>$$
@@ -262,7 +262,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The functional integral over a gauge field is ill-defined as it stands, because the action and the measure are invariant along gauge orbits and the integral contains the infinite volume of the gauge group. The Faddeev–Popov construction inserts a gauge-fixing condition together with a determinant, $\Delta[\tilde{A}]$, which is gauge invariant; after a shift of the integration variable the integral becomes $\int\mathcal{D}\tilde{A}\,\Delta[\tilde{A}]\,\delta(G[\tilde{A}])\,\exp(iS[\tilde{A}])$, finite and normalized.</p>
 <p>In the biquaternion framework the potential is a material-sector four-vector, the measure is a product over the scalar and vector directions of $\mathbb{M}_-$, and the gauge transformation is the gradient shift $\tilde{A}\mapsto\tilde{A}-\tilde{\nabla}\Gamma$. For the abelian field the Faddeev–Popov determinant is the determinant of the central scalar d'Alembertian, $\Delta=\det(-\Box)$, independent of the potential; it is a constant and no ghosts appear. For the non-abelian field it is $\Delta=\det(\partial\cdot D)$, a functional of the potential through the gauge algebra realized in the informational sector $\mathbb{M}_+$, and it is represented by Grassmann-odd ghosts living in the envelope of the algebra. The division between the two cases is the abelian–non-abelian division, and the biquaternion content of the determinant is exhausted by the centrality of $\Box$ and the realization of the algebra by the commutator.</p>
-<p>The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator $D_{\mu\nu}=p^{-2}(\eta_{\mu\nu}+(1-\xi)p_\mu p_\nu/p^2)$. The transverse projector $P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/p^2$ is idempotent, of trace three off shell, and annihilates the momentum; the gauge parameter multiplies only the longitudinal projector. Because the difference of two propagators is proportional to $p_\mu p_\nu$, it vanishes when contracted with a conserved current, and the gauge-parameter dependence drops out of physical amplitudes. On shell the longitudinal direction decouples for the massless field and the two transverse polarizations remain. What the algebra supplies is the carrier, the gauge transformation, the centrality that makes the abelian determinant constant, and the transverse projector; what it does not supply is the gauge group, the gauge parameter, the odd coordinates, the general functional-integral apparatus, or any empirical content.</p>
+<p>The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator $D_{\mu\nu}=p^{-2}(g_{\mu\nu}[\mathbb{M}_-]+(1-\xi)p_\mu p_\nu/p^2)$. The transverse projector $P_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+p_\mu p_\nu/p^2$ is idempotent, of trace three off shell, and annihilates the momentum; the gauge parameter multiplies only the longitudinal projector. Because the difference of two propagators is proportional to $p_\mu p_\nu$, it vanishes when contracted with a conserved current, and the gauge-parameter dependence drops out of physical amplitudes. On shell the longitudinal direction decouples for the massless field and the two transverse polarizations remain. What the algebra supplies is the carrier, the gauge transformation, the centrality that makes the abelian determinant constant, and the transverse projector; what it does not supply is the gauge group, the gauge parameter, the odd coordinates, the general functional-integral apparatus, or any empirical content.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -321,15 +321,15 @@ $$</p>
 <td>Gauge parameter; multiplies the longitudinal projector</td>
 </tr>
 <tr>
-<td>$K_{\mu\nu}=p^2\eta_{\mu\nu}+(1-1/\xi)p_\mu p_\nu$</td>
+<td>$K_{\mu\nu}=p^2g_{\mu\nu}[\mathbb{M}_-]+(1-1/\xi)p_\mu p_\nu$</td>
 <td>Gauge-fixed quadratic form; $K=p^2(P+L/\xi)$</td>
 </tr>
 <tr>
-<td>$D_{\mu\nu}=p^{-2}(\eta_{\mu\nu}+(1-\xi)p_\mu p_\nu/p^2)$</td>
+<td>$D_{\mu\nu}=p^{-2}(g_{\mu\nu}[\mathbb{M}_-]+(1-\xi)p_\mu p_\nu/p^2)$</td>
 <td>Gauge-field propagator; $D=p^{-2}(P+\xi L)$</td>
 </tr>
 <tr>
-<td>$P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/p^2$, $P^2=P$, $\mathrm{tr}P=3$, $P_{\mu\nu}p_\nu=0$</td>
+<td>$P_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+p_\mu p_\nu/p^2$, $P^2=P$, $\mathrm{tr}P=3$, $P_{\mu\nu}p_\nu=0$</td>
 <td>Transverse projector (verified)</td>
 </tr>
 <tr>
