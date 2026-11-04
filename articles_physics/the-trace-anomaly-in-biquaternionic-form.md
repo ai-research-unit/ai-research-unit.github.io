@@ -8,7 +8,7 @@ This article asks what the biquaternion framework contributes to that statement.
 
 1. **The quantum trace is a property of the determinant, not of the algebra.** The anomaly arises from the regularisation of $\log\det S^{(2)}$, which is the object of *The Functional Determinant in Biquaternionic Form*. The divergence of that determinant is controlled by the heat-kernel coefficient $a_{d/2}$, and the anomalous trace is the conformal variation of the renormalised determinant. The algebra contributes neither the regularisation nor the divergence; it contributes the **operator on which the determinant is taken** and the **trace** that reads off the answer. This is the same division of labour the functional-integral and determinant articles record, and it is stated here at the outset so that the anomaly is not misattributed to the algebra.
 
-2. **The trace that computes an anomaly is the trace of the space the field lives in, and the framework's informational formula is that trace on the two-dimensional module.** The series defines the trace through the $2\times2$ image, $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\,\tilde Q=2Q_t$, so that $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ and $\operatorname{Tr}(e_t)=2$. The trace of a biquaternion therefore sees only its scalar part, because the $2\times2$ image of a pure quaternion is traceless; that is a property of the trace and not a truncation of it. This is the trace on the module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, and it is the state-and-observable pairing of the Hermitian sector $\mathbb{M}_+$. A four-component Dirac field lives on the four-dimensional Dirac module, whose Clifford trace is $\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ with $\operatorname{tr}e_t=4$; that trace, not the informational one, is the trace the spinor anomaly uses. The anomaly coefficient counts the components of whichever space the trace runs over, and the count is fixed by the algebra: a biquaternion field has four complex coefficients, hence eight real components, four per sector, and the two module dimensions are related exactly by $\dim_\mathbb{C}\mathbb{B}=2\dim_\mathbb{C}\text{module}$. *Anomalies and Anomaly Cancellation in Biquaternionic Form* keeps the two traces apart; this article uses its separation.
+2. **The trace that computes an anomaly is the trace of the space the field lives in, and the framework's informational formula is that trace on the two-dimensional module.** The series defines the trace through the $2\times2$ image, $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\,\tilde Q=2Q_t$, so that $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ and $\operatorname{Tr}(e_t)=2$. The trace of a biquaternion therefore sees only its scalar part, because the $2\times2$ image of a pure quaternion is traceless; that is a property of the trace and not a truncation of it. This is the trace on the module $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, and it is the state-and-observable pairing of the Hermitian sector $\mathbb{M}_+$. A four-component Dirac field lives on the four-dimensional Dirac module, where the trace of the two-sided action $\psi\mapsto a\psi b$ is $4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ and $\operatorname{tr}e_t=4$; that trace, not the informational one, is the trace the spinor anomaly uses. The anomaly coefficient counts the components of whichever space the trace runs over, and the count is fixed by the algebra: a biquaternion field has four complex coefficients, hence eight real components, four per sector, and the two module dimensions are related exactly by $\dim_\mathbb{C}\mathbb{B}=2\dim_\mathbb{C}\text{module}$. *Anomalies and Anomaly Cancellation in Biquaternionic Form* keeps the two traces apart; this article uses its separation.
 
 3. **The Weyl transformation is a level-1 statement, and it must not be confused with the $ict'$ construction of the metric.** The framework obtains the Lorentzian signature from the level-1 form read on the material sector with the time coordinate written $ict'$: the minus sign is one use of $i^2=-1$, since $(ict')^2=-c^2t'^2$, and the metric is an output rather than an input. A Weyl rescaling changes the level-1 form, and therefore changes the level-2 interpretation; it does not change the $ict'$ assignment or the sector split. The anomaly is a statement about the level-1 form's variation under a rescaling, and it is the one place in this subcategory where a conformal rescaling of the primary convention is contemplated. The three levels are kept apart throughout.
 
@@ -16,7 +16,7 @@ This article asks what the biquaternion framework contributes to that statement.
 
 5. **The anomaly and the $\theta$ vacuum are the two structural quantum effects of this group.** The trace anomaly is the failure of a *conformal* symmetry; the $\theta$ vacuum of the next article is the failure of a *topological* triviality. Both arise from the same place — the regularised determinant, and in particular its non-central part — and the determinant article's distinction between the central case (a determinant that factors) and the non-central case (a determinant with a phase) is what separates them. The trace anomaly is a central statement about a non-central operator; the $\theta$ vacuum is a statement about the phase that the non-central operator acquires.
 
-The article proceeds as follows. The next section fixes what is meant by the trace and recalls the classical vanishing. A section derives the quantum trace from the conformal variation of the determinant and gives the heat-kernel origin of the coefficient, and a section evaluates the coefficient in two and four dimensions. A section identifies the trace of the space the field lives on with the counting of components, and a section treats the Weyl transformation at the three metric levels. A section relates the anomaly to the renormalisation-group $\beta$ function of *The Renormalization Group in Biquaternionic Form*, and a section records the proper-time representation and the finite-dimensional check of the counting. A section separates what is established from what is interpretation. *The Legacy Pauli Gamma Formulation* then records the Clifford dictionary used elsewhere in the series, and the summary, the notation table, and the literature close the article.
+The article proceeds as follows. The next section fixes what is meant by the trace and recalls the classical vanishing. A section derives the quantum trace from the conformal variation of the determinant and gives the heat-kernel origin of the coefficient, and a section evaluates the coefficient in two and four dimensions. A section identifies the trace of the space the field lives on with the counting of components, and a section treats the Weyl transformation at the three metric levels. A section relates the anomaly to the renormalisation-group $\beta$ function of *The Renormalization Group in Biquaternionic Form*, and a section records the proper-time representation and the finite-dimensional check of the counting. A section separates what is established from what is interpretation, and the summary, the notation table, and the literature close the article.
 
 ## The Classical Trace and Its Vanishing
 
@@ -46,9 +46,9 @@ T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \xi\big(g_{\mu\nu}\Box -
 \qquad
 \xi=\frac{d-2}{4(d-1)},
 $$
-produces $T_\mu{}_\mu=0$ on shell, the bracket reducing to $g_{\mu\nu}[\mathbb{M}_-]\partial^2-\partial^2/\partial x_\mu\partial x_\nu$ in flat coordinates. The arithmetic is short. The added trace is $\xi(d-1)\Box\phi^2$, which on shell is $2\xi(d-1)(\partial\phi)^2$ because $\Box\phi^2=2(\partial\phi)^2+2\phi\,\Box\phi$ and the second term vanishes for a massless field; the canonical trace is $-\tfrac{d-2}{2}(\partial\phi)^2$; and $\xi=(d-2)/(4(d-1))$ is exactly the value that cancels the two, giving $\xi=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
+produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $g_{\mu\nu}[\mathbb{M}_-]\Box-\partial^2/\partial x_\mu\partial x_\nu$, with $\Box$ read on the flat background. The arithmetic is short. The added trace is $\xi(d-1)\Box\phi^2$, which on shell is $2\xi(d-1)\sum_\mu(\partial\phi/\partial Q_\mu)^2$, because $\Box\phi^2=2\sum_\mu(\partial\phi/\partial Q_\mu)^2+2\phi\,\Box\phi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\phi/\partial Q_\mu)^2$; the value $\xi=(d-2)/(4(d-1))$ cancels the two, giving $\xi=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
 
-**The $ict'$ interpretation.** In the framework's coordinates the flat metric is the level-2 interpretation $g_{\mu\nu}[\mathbb{M}_-]$ of the level-1 form, obtained from $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, where $(ict')^2=i^2c^2t'^2=-c^2t'^2$. The trace $T_\mu{}_\mu$ is the contraction with $\eta$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is *not* a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.
+**The $ict'$ interpretation.** In the framework's coordinates the flat metric is the level-2 interpretation $g_{\mu\nu}[\mathbb{M}_-]$ of the level-1 form, obtained from $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, where $(ict')^2=i^2c^2t'^2=-c^2t'^2$. The trace $T_\mu{}_\mu$ is the contraction with $g_{\mu\nu}[\mathbb{M}_-]$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is *not* a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.
 
 ## The Quantum Trace as the Conformal Variation of the Determinant
 
@@ -116,9 +116,9 @@ $$
 $$
 The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. The trace of any biquaternion sees only its scalar part, because the $2\times2$ image of a pure quaternion is traceless; that is a property of the matrix trace, not a truncation of the functional. On the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, of complex dimension $2$, this *is* the operator trace, and it is the pairing used for expectation values in $\mathbb{M}_+$.
 
-**The trace that computes an anomaly.** A four-component field lives on the four-dimensional Dirac module, and the trace that computes its anomaly is the Clifford trace there,
+**The trace that computes an anomaly.** A four-component field lives on the four-dimensional Dirac module, and the trace that computes its anomaly is the Clifford trace there. On that module the two-sided action is $\psi\mapsto a\psi b$, and its trace is the product of the scalar parts of its two factors,
 $$
-\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b),
+\operatorname{tr}\bigl(\psi\mapsto a\psi b\bigr)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b),
 \qquad
 \operatorname{tr}e_t=4 .
 $$
@@ -153,7 +153,7 @@ $$
 $$
 The minus is one use of $i^2=-1$ and nothing else. A Weyl rescaling acts on this interpretation too — the level-2 metric is rescaled along with the level-1 form — but the $ict'$ assignment is unchanged, and no minus sign in the anomaly formula is to be "corrected" on the basis of the level-1 form. The two levels are consistent by construction; the minus comes from $i^2$, not from the anomaly.
 
-**Level 3.** The Clifford tool, whose four generators carry the frame metric $\mathrm{diag}(-1,+1,+1,+1)$, is a translation of the algebra adopted where an article writes in a Clifford frame; it is set out once in *The Legacy Pauli Gamma Formulation* below and is not a convention of the body. The tool enters the anomaly through the spin factor of a fermionic field's heat kernel, where the Dirac operator's $a_{d/2}$ carries the spinor trace, and it does not dictate the framework's conventions. A calculation performed in the Clifford frame and a calculation performed with the biquaternion operators must agree on the anomaly, because the anomaly is a physical coefficient; where they appear to disagree it is the translation that is wrong, as the conventions article insists.
+**Level 3.** The Clifford tool is the frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$ in which a legacy article prints the same objects as $4\times4$ matrices. It is a translation of the algebra, adopted where an article writes in a Clifford frame, and it is not a convention of the body; *Operator and Calculus Conventions*, §*The Legacy Pauli Gamma Formulation*, states the dictionary and the reason it is legacy. The tool enters the anomaly through the spin factor of a fermionic field's heat kernel, where the Dirac operator's $a_{d/2}$ carries the spinor trace, and it does not dictate the framework's conventions. A calculation performed in the Clifford frame and a calculation performed with the biquaternion operators must agree on the anomaly, because the anomaly is a physical coefficient; where they appear to disagree it is the translation that is wrong, as the conventions article insists.
 
 **What the transformation is not.** A Weyl rescaling is not a coordinate transformation, since it changes distances without changing coordinates; not the Wick rotation, which in this series is either the exchange of the real and imaginary sectors or the continuation $t'\mapsto-i\tau$ of one coordinate, and which rotates rather than rescales all of them; and not a Lorentz transformation, which preserves the level-1 form. Keeping these apart is the content of the section.
 
@@ -171,15 +171,33 @@ where $O$ is the operator multiplying the coupling. The relation is standard (th
 
 **The anomaly's one-loop exactness.** In a conformal theory the anomaly is one-loop exact: the higher loops do not add new terms of the anomalous form. This is the statement that $a_{d/2}$ is local and that the conformal variation of the determinant is exhausted by it, and it is standard. It is also the reason an anomaly computed at one loop in the framework is final, and it is worth stating because it is the exception rather than the rule for one-loop results.
 
-**The non-central case.** Where the determinant does not factor — the chirality-off-diagonal Dirac mass, or any operator mixing the two minimal left ideals — the determinant acquires a phase, the eta invariant of the operator family. The trace anomaly remains the curvature statement; the phase is its topological partner, and the $\theta$ vacuum is what reads it. The mass term is the one-sided pair
+**The non-central case.** Where the determinant does not factor — the Dirac mass, which couples the two minimal left ideals of the algebra — the determinant acquires a phase, the eta invariant of the operator family. The trace anomaly remains the curvature statement; the phase is its topological partner, and the $\theta$ vacuum is what reads it.
+
+The derivatives in what follows are the two operators of *Operator and Calculus Conventions*, §*The Gradient*: the biquaternionic gradient and its quaternion conjugate,
+$$
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+\qquad
+\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\qquad
+\varepsilon=(1,-1,-1,-1),
+$$
+with $\Box=\tilde\nabla\tilde\nabla^{\natural}$. The mass term is the chiral pair of *The Dirac Equation in Biquaternionic Form*,
 $$
 \tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
 $$
-on the algebra, and the two-sided cell equation
+and the pair is the whole of the massive dynamics. Its two subscripts name the two copies of the spinor module, the two minimal left ideals: a copy index, not a chirality. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar: in the coordinates $Q_\mu$ it is
 $$
-(\mathbb{D}-m)\psi=0,\qquad \mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_{k}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
+\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\,\partial Q_k},
 $$
-on the module. These are the two Dirac equations of the series: the pair is the one-sided statement, the cell equation is its two-sided representative, and only the second carries a chirality. The phase, and not the curvature coefficient, is the subject of the next article, and the determinant article's central/non-central distinction is what separates them. The framework's statement is that the trace anomaly is the *central* statement (a scalar coefficient multiplying curvature invariants) while the $\theta$ vacuum is the *phase* statement, and that the two are read from the same determinant.
+where $\Delta_Q$ is the Laplacian in the three vector coordinates and the mixed term survives because $e_t$ commutes with the spatial units; only the composition with the conjugate is scalar, $\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q=\Box$. In the $2\times2$ image $\mathsf M_2$ of *Matrix Representations Conventions* the two copies are the two columns of the matrix, and, read on the whole element rather than on its two parts, the mass term is the two-sided action
+$$
+\psi\longmapsto m\,\psi\,(i\vec e_x),
+$$
+whose right slot $i\vec e_x$ exchanges the two columns. **The chirality** is the other right action of the frame,
+$$
+\psi\longmapsto -i\psi\vec e_z=\psi(-i\vec e_z),
+$$
+multiplication on the right by $i\omega$ with $\omega=-\vec e_z$ the pseudoscalar of the frame, $\omega^2=-e_t$; it squares to $+e_t$, and it takes the value $-1$ on the first column and $+1$ on the second. Which side the multiplication sits on decides both statements that follow. A left multiplication and a right multiplication commute, so the gradient commutes with the chirality and the free pair carries each copy into itself. The mass does not commute with it: the composition in one order sends the field to $-\psi\vec e_y$ and in the other to $+\psi\vec e_y$, because $\vec e_x\vec e_z=-\vec e_y$ and $\vec e_z\vec e_x=+\vec e_y$. The mass is therefore off-diagonal in the grading the chirality defines, the massive operator mixes the two copies, and the determinant has no factorization. The phase, and not the curvature coefficient, is the subject of the next article, and the determinant article's central/non-central distinction is what separates them. The framework's statement is that the trace anomaly is the *central* statement (a scalar coefficient multiplying curvature invariants) while the $\theta$ vacuum is the *phase* statement, and that the two are read from the same determinant.
 
 ## The Proper-Time Representation and the Finite-Dimensional Check
 
@@ -206,7 +224,7 @@ The first identity is exact, so the second and third are exact; a central differ
 **Established (framework and algebra).**
 
 - The Weyl transformation rescales the level-1 biquaternion norm and leaves the algebra, the basis, the $ict'$ assignment, and the sector split unchanged; a rescaling is not the Wick rotation and not a Lorentz transformation.
-- The trace of a biquaternion is the $2\times2$ trace, $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q$, so that $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ and $\operatorname{Tr}(e_t)=2$; it is the trace on the two-dimensional module, while the Clifford trace on the four-dimensional Dirac module is $\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ with $\operatorname{tr}e_t=4$. The two numbers are related by $\dim_\mathbb{C}\mathbb{B}=2\dim_\mathbb{C}\text{module}=4$, and neither trace is a truncation of the other: they run over spaces of different dimension.
+- The trace of a biquaternion is the $2\times2$ trace, $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q$, so that $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ and $\operatorname{Tr}(e_t)=2$; it is the trace on the two-dimensional module, while the Clifford trace on the four-dimensional Dirac module is $4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ for the two-sided action $\psi\mapsto a\psi b$, with $\operatorname{tr}e_t=4$. The two numbers are related by $\dim_\mathbb{C}\mathbb{B}=2\dim_\mathbb{C}\text{module}=4$, and neither trace is a truncation of the other: they run over spaces of different dimension.
 - A field valued on the algebra has four complex coefficients, hence eight real components and four per sector; a field valued on the module has two complex coefficients, four real. The anomaly's multiplicity is the dimension of whichever of the two spaces the determinant is taken over, and it is a component count and not a multiplicity of complex scalars, for the reason *The Functional Integral in Biquaternionic Form*, *The Partition Function in Biquaternionic Form*, and *The Harmonic Oscillator in Biquaternionic Form* give.
 - The conformal variation of a finite-dimensional Gaussian determinant is proportional to the dimension of the space, $\partial/\partial s\,\log\det(\exp(s)K)\big|_{s=0}=\dim$; the identity is exact, and a central difference returns $4$ for a $4\times4$ complex $K$ and $2$ for a $2\times2$ complex $K$ to ten digits, with the determinant derivative equal to $\dim\cdot\det K$. This is the finite-dimensional shadow of the statement that the anomaly's coefficient counts components.
 
@@ -229,78 +247,6 @@ The first identity is exact, so the second and third are exact; a central differ
 - The anomaly of a genuinely non-central biquaternion operator, and whether its eta-invariant part has a framework-specific form, is left to the $\theta$-vacuum article.
 - The scheme-independent coefficients of the biquaternion scalar and spinor fields are not computed here; only the counting that fixes them is identified.
 
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra.
-
-Here $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplications, and $L_aR_b$ is the two-sided cell, $L_aR_b\psi=a\psi b$. The five reference cells are
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-**The squares are uses of $i^2=-1$.** Each generator carries two factors of $i$ when it is squared, and the sign is the product of those two with the signs of the two multiplications:
-$$
-(iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}})^2=i^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_x}^{\mathrm{pau}})^2=(-1)(+1)(-1)=+e_t,
-$$
-
-In the axis-free display:
-
-$$
-(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}})^2=i^2(L_{e_t}^{\mathrm{axf}})^2(R_{\vec e_x}^{\mathrm{axf}})^2=(-1)(+1)(-1)=+e_t,
-$$
-
-$$
-(iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})^2=i^2(L_{\vec e_k}^{\mathrm{pau}})^2(R_{\vec e_y}^{\mathrm{pau}})^2=(-1)(-1)(-1)=-e_t,
-$$
-
-The same identities in the axis-free display:
-
-$$
-(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=i^2(L_{\vec e_k}^{\mathrm{axf}})^2(R_{\vec e_y}^{\mathrm{axf}})^2=(-1)(-1)(-1)=-e_t,
-$$
-
-for $k=x,y,z$, so the four generators carry the metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple,
-\qquad \varepsilon=(1,-1,-1,-1),$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}},
-\qquad
-\gamma_5=+i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}},
-$$
-
-Read in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{axf}},
-\qquad
-\gamma_5=+i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}},
-$$
-
-the sign convention in which $\gamma_5^2=+e_t$; the opposite sign is an equally good chirality and differs only by which of the two chiralities is called left.
-
-**Chirality is the right multiplication.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality is a pure right multiplication, and it is the one cell the one-sided pair displayed above cannot contain, because that pair uses left multiplications only. The two-sided representative does contain it, and the chiral halves of the module decouple because it anticommutes with the operator:
-$$
-\{\gamma_5,\mathbb{D}\}=0,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-The same expressions, in the axis-free display:
-
-$$
-\{\gamma_5,\mathbb{D}\}=0,\qquad \gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-That anticommutator is the algebraic content of "only the two-sided equation carries a chirality": a cell built from left multiplications alone could not produce it.
-
-**The trace.** The trace of a product is a linear functional on cells, $\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ on the four-dimensional module, so a spinor trace is a product of scalar parts and $\operatorname{tr}e_t=4$. On the two-dimensional module the same cell has trace $2\,\mathrm{Sc}(ab)$, which is the informational formula of the body; the numbers $2$ and $4$ are the dimensions of the two spaces, not two normalisations of one trace. The dictionary is complex-linear: over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
 ## Summary
 
 The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\operatorname{Tr}\log S^{(2)}[\phi;g]$ has the conformal variation
@@ -320,19 +266,22 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace on the two-dimensional module; $\operatorname{Tr}(e_t)=2$; the $\mathbb{M}_+$ pairing |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | Level-1 quaternionic norm, $\mathrm{diag}(+1,+1,+1,+1)$; $\dim_\mathbb{C}\mathbb{B}=4$ |
 | $g_{\mu\nu}[\mathbb{M}_-]$ | Level-2 $ict'$ metric; an output of $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
+| $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$ | The biquaternionic gradient; on $\mathbb{M}_-$, $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$ |
+| $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ | Quaternion conjugate of the gradient, $\varepsilon=(1,-1,-1,-1)$ |
+| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ | The chiral pair, the massive dynamics of the field |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
 | $\Gamma_1=\tfrac12\operatorname{Tr}\log S^{(2)}$ | One-loop effective action whose variation is the anomaly |
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
 | $\xi=(d-2)/(4(d-1))$ | Improvement coupling; $\xi=1/6$ at $d=4$ |
-| $\operatorname{tr}L_aR_b=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Clifford trace on the Dirac module; $\operatorname{tr}e_t=4$ |
-| $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$ | Cell Dirac operator of the module |
+| $\operatorname{tr}(\psi\mapsto a\psi b)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Clifford trace of the two-sided action on the four-dimensional Dirac module; $\operatorname{tr}e_t=4$ |
+| $\psi\mapsto m\psi(i\vec e_x)$ | The mass term read on the whole element: a two-sided action whose right slot exchanges the two copies |
+| $\omega=-\vec e_z$, $\omega^2=-e_t$ | Pseudoscalar of the frame; the chirality is the right action $\psi\mapsto-i\psi\vec e_z=\psi(i\omega)$ |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients; the two-dimensional central charge is a different $c$ |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - S. L. Adler, "Axial-vector vertex in spinor electrodynamics," *Physical Review* **177** (1969) 2426–2438, for the axial anomaly and the origin of anomalous Ward identities.
 - J. S. Bell and R. Jackiw, "A PCAC puzzle: $\pi^0\to\gamma\gamma$ in the $\sigma$-model," *Il Nuovo Cimento A* **60** (1969) 47–61, for the independent discovery of the axial anomaly.
 - D. M. Capper and M. J. Duff, "Trace anomalies in dimensional regularization," *Il Nuovo Cimento A* **23** (1974) 173–183, for the trace anomaly in dimensional regularisation.
@@ -343,4 +292,4 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 - B. S. DeWitt, *The Global Approach to Quantum Field Theory* (Oxford University Press, 2003), for the heat-kernel expansion and the Seeley–DeWitt coefficients.
 - D. V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* **388** (2003) 279–360, for the heat-kernel coefficients used in the anomaly.
 - J. Zinn-Justin, *Quantum Field Theory and Critical Phenomena* (Oxford University Press, 2002), for the renormalisation of the effective action and the trace anomaly.
-- Companion articles: [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), for the regularised determinant whose variation is the anomaly; [The Generating Functional and the Effective Action in Biquaternionic Form](the-generating-functional-and-the-effective-action-in-biquaternionic-form.html), for $\Gamma_1=\tfrac12\operatorname{Tr}\log S^{(2)}$; [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), for the $\beta$ function the anomaly is read against; [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the three metric levels and the trace of a biquaternion; [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html), for the phase of the non-central determinant; [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) and [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the sector interpretation of the component count.
+- Companion articles: [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), for the regularised determinant whose variation is the anomaly; [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair and the chirality of the module; [The Generating Functional and the Effective Action in Biquaternionic Form](the-generating-functional-and-the-effective-action-in-biquaternionic-form.html), for $\Gamma_1=\tfrac12\operatorname{Tr}\log S^{(2)}$; [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), for the $\beta$ function the anomaly is read against; [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the three metric levels and the trace of a biquaternion; [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html), for the phase of the non-central determinant; [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) and [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the sector interpretation of the component count.

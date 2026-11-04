@@ -13,7 +13,7 @@ Four qualifications discipline the article, and they are stated at the outset be
 - **The two confinement pictures are not the same object.** The absent mechanism is the non-perturbative gauge dynamics behind the loop. There is a second picture, the **bag**, in which confinement is a linear **boundary condition** on the field inside a bounded region; that picture is a boundary-value problem, and it is the one piece of confinement the framework's own function theory does reach. The article keeps the two apart rather than letting "no mechanism" cover both.
 - **The loss of partonic information is a statement in standard quantum field theory.** Colour, confinement, and the colour-singlet structure of the asymptotic algebra are imported. What the framework contributes is the carrier on which the order parameter is built and the informational language in which the loss is described; the physics of the loss is cited as standard.
 
-The article proceeds as follows. The order parameter is reviewed and the two laws are given their information-theoretic interpretation, with the scaling of the loop's "information cost" recomputed. The loss of the partonic labels is then formulated as a superselection statement and made precise with the relative entropy of the accessible restrictions, recomputed on generic states. The scale-dependence of the parton picture is stated as an ultraviolet-to-infrared coarse-graining, and confinement is modelled as an effectively idempotent channel onto the colour-neutral algebra, with the decoherence article as the closest written model. The other confinement picture — the bag as a linear boundary condition, the two Dirac equations it uses (the one-sided chiral pair and the two-sided dictionary), and its reduction to a boundary equation in the algebra — is then given, because it is the part of confinement the framework houses. The frame in which the literature states the same operators is then written once, in the Clifford frame of the cell algebra, before the framework's own objects are separated from the imports in a ledger; the ceiling that makes the colour group a no-route obstacle is recorded there.
+The article proceeds as follows. The order parameter is reviewed and the two laws are given their information-theoretic interpretation, with the scaling of the loop's "information cost" recomputed. The loss of the partonic labels is then formulated as a superselection statement and made precise with the relative entropy of the accessible restrictions, recomputed on generic states. The scale-dependence of the parton picture is stated as an ultraviolet-to-infrared coarse-graining, and confinement is modelled as an effectively idempotent channel onto the colour-neutral algebra, with the decoherence article as the closest written model. The other confinement picture — the bag as a linear boundary condition, the two Dirac equations it uses (the one-sided chiral pair and the two-sided dictionary), and its reduction to a boundary equation in the algebra — is then given, because it is the part of confinement the framework houses. The framework's own objects are then separated from the imports in a ledger, and the ceiling that makes the colour group a no-route obstacle is recorded there.
 
 $$
 U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right),
@@ -22,6 +22,18 @@ W(C) = \mathrm{Tr}\,U(C),
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$ the plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\geq0$, $\mathrm{Tr}\tilde{Ϛ} = 1$, and are parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
+
+The derivative of the article is the corpus's gradient, and every other first-order operator in it is written from this one, by a shift or by the central imaginary. It is the element-valued operator
+
+$$
+\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\qquad
+\tilde\nabla^\natural=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\qquad
+\Box=\tilde\nabla\tilde\nabla^\natural,
+$$
+
+acting on a field by left multiplication, with $\Box=\partial^2/\partial Q_t^2+\Delta_Q$; on the material sector $\Delta_Q=\Delta$ and $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$, so that there $\Box=\Delta-c^{-2}\partial^2/\partial t'^2$. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.
 
 ## Confinement and the Order Parameter
 
@@ -135,10 +147,10 @@ $$
 the projection of the Bloch vector onto the axis, which is the full-dephasing limit of the companion article on idempotent projection. Two states that differ by a charge rotation have **the same accessible state**:
 
 $$
-\boxed{\;\vec r\cdot\vec u = (R_{\vec u}(\theta)\vec r)\cdot\vec u\;},
+\boxed{\;\vec r\cdot\vec u = (\mathsf{R}_{\vec u}(\theta)\vec r)\cdot\vec u\;},
 $$
 
-because $R_{\vec u}(\theta)$, the rotation of the Bloch vector induced by conjugation with $U$, preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. The relative entropy is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=\mathrm{Tr}\,\tilde{Ϛ}_1(\log\tilde{Ϛ}_1-\log\tilde{Ϛ}_2)$, and it was evaluated on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}\|\tilde{Ϛ}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly, both $(0,0,0.4)$.
+because $\mathsf{R}_{\vec u}(\theta)$, the rotation matrix of the Bloch vector induced by conjugation with $U$, preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. The relative entropy is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=\mathrm{Tr}\,\tilde{Ϛ}_1(\log\tilde{Ϛ}_1-\log\tilde{Ϛ}_2)$, and it was evaluated on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}\|\tilde{Ϛ}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly, both $(0,0,0.4)$.
 
 The lesson is the article's thesis in its sharpest form. A rotation by the framework's charge is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the change is invisible to the accessible algebra, and the accessible algebra is the whole of what survives to asymptotic observation. The information lost is exactly the component of the state along the unobservable charge directions, and no re-description recovers it.
 
@@ -280,7 +292,7 @@ $$
 \tilde\nabla\tilde\nabla^\natural=\tilde\nabla^\natural\tilde\nabla=\Box .
 $$
 
-The gradient acts by left multiplication, the mass is the off-diagonal pairing of the two chiral halves, The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, and the frame cell is where that sign is read. $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, not a frame cell; its frame representative is named only in the section *The Legacy Pauli Gamma Formulation* of this article. At $m=0$ the pair decouples into
+The gradient acts by left multiplication, and the mass is the off-diagonal pairing of the two chiral halves. The chirality is the right action $\tilde\Psi\mapsto-i\tilde\Psi\vec e_z$ of the module, whose element $-i\vec e_z$ squares to $e_t$; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, and the right action is where that sign is read on the module. The left action of the same element, $\tilde\Psi\mapsto-i\vec e_z\tilde\Psi$, is a different operator, and only the right one is the chirality. At $m=0$ the pair decouples into
 
 $$
 \tilde\nabla\tilde\Psi_R=0,
@@ -288,14 +300,14 @@ $$
 \tilde\nabla^\natural\tilde\Psi_L=0,
 $$
 
-one equation per chirality; the second is the conjugate of the first.
+one equation per chirality; the second is the conjugate of the first, and the subscripts $R$ and $L$ name the chirality and not a side of multiplication.
 
 **The two-sided form.** The bag uses Kravchenko's dictionary. A real-linear bijection $A$ carries a bispinor $\Phi$ to a biquaternion-valued function $F=A[\Phi]$, under which the Dirac equation becomes the single equation
 
 $$
 \mathcal NF=\left(i\frac{\partial}{\partial t'}+D_3\right)F-mi\,\overline{F}\,\vec e_z=0,
 \qquad
-D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k},
+D_3=\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}.
 $$
 
 Since $i\partial/\partial t'=-\partial/\partial Q_t$ on the material sector in the natural units $\hbar=c=1$, the same operator reads
@@ -314,42 +326,30 @@ $$
 \Phi(t',\vec q)=\Phi_\omega(\vec q)\,e^{\,i\omega t'},
 $$
 
-obeying the massive Dirac equation in the frame cells (the bispinor is read in the Dirac module $\Delta$),
+obeying the massive Dirac equation in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The source writes that equation in its own frame; in the conventions it is the two-sided $\mathcal NF=0$ of the previous subsection, and its derivative part is the gradient alone. The source's time term, with its two imaginary factors, is the $e_t$ term of $\tilde\nabla$ read on the material sector: there $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t'$, so $i\partial/\partial t'=-\partial/\partial Q_t$ and the free part is $-\tilde\nabla^\natural$. The spatial derivative is the sum $\sum_k\vec e_k\,\partial/\partial Q_k$ that $\tilde\nabla$ carries, acting from the left. The mass is the conjugation together with the direction $-\vec e_z$, and it does not commute with the phase, $\overline{\Phi_\omega e^{i\omega t'}}=\overline{\Phi_\omega}\,e^{-i\omega t'}$. The amplitude is therefore taken on the complex-linear operator that the reduction below produces, and not on $\mathcal N$ directly; that is why the source reduces before he applies the ansatz.
+
+The confinement of the field to $\Omega$ is a **linear boundary condition**: a fixed value for the field's direction along the outward normal, which forbids the flow of the particle through the surface. Translated from the source's frame, the condition is the action of the element $\sum_k u_k\vec e_k$,
 
 $$
-\left(i\omega\,iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}
--\sum_{k=1}^{3}iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}
-+im\right)\Phi_\omega=0
-$$
-
-in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. Here $L_aR_b$ are the cells, $L_aR_b\psi=a\psi b$, so $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ are the frame cells. The time term carries two imaginary factors, and $i^2=-1$ collapses them,
-
-$$
-i\omega\,iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=i^2\omega\,L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=-\omega\,R_{\vec e_x}^{\mathrm{axf}},
-$$
-
-since $L_{e_t}^{\mathrm{axf}}$ is the identity; no residual scalar sign is hidden in the display. The confinement of the field to $\Omega$ is the boundary condition
-
-$$
-\sum_{k=1}^{3}u_k\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,\Phi_\omega(\vec q)=i\,\Phi_\omega(\vec q)
+\left(\sum_{k=1}^{3}u_k\,\vec e_k\right)\Phi_\omega(\vec q)=i\,\Phi_\omega(\vec q)
 \qquad(\vec q\in\partial\Omega),
 $$
 
-where $\vec u$ is the unit outward normal; the condition forbids the flow of the particle through the surface of the confining region. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $\Phi_\omega$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm?
+where $\vec u$ is the unit outward normal. For a unit normal that element squares to $-e_t$, so $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$ is an idempotent of rank two of four and the condition is the projector condition $\Phi_\omega=P_{\vec u}\Phi_\omega$: one half of the field is kept at the surface and one half is removed, and that removal is the ban on the flow. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $\Phi_\omega$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm?
 
 ### The Biquaternionic Reduction
 
 The reduction of the model to the algebra is due to V. V. Kravchenko (1995), and its steps are worth separating, because each is a place where the framework's own objects do the work.
 
-**A real-linear bijection of the spinor module onto the algebra.** There is a bijection $A$ from bispinors $\Phi: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[\Phi]$, under which the spatial cells act by left multiplication by the imaginary units and the timelike cell acts **antilinearly**, by complex conjugation:
+**A real-linear bijection of the spinor module onto the algebra.** There is a bijection $A$ from bispinors $\Phi: G\subset\mathbb{R}^4 \to \mathbb{C}^4$ onto biquaternion-valued functions $F = A[\Phi]$, and it is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: the central imaginary of the bispinor becomes a right action of the algebra,
 
 $$
-A\bigl(iR_{\vec e_x}^{\mathrm{axf}}\Phi\bigr) = \overline{A(\Phi)}, \qquad A(i\Phi) = -A(\Phi)\,\vec e_z ,
+A(i\Phi) = -A(\Phi)\,\vec e_z ,
 $$
 
-where $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The second identity says that $A$ is $\mathbb{R}$-linear and not $\mathbb{C}$-linear. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
+that is $\psi\mapsto-\psi\vec e_z$ on the image. The dictionary has a second ingredient, the coefficient conjugation, which is not an operation of the algebra and which the equation carries in its mass term. Here $\overline{\cdot}$ is the componentwise complex conjugation — the corpus's bar, distinct from the Hermitian star $^{*}$ and from the algebra's real structure $\flat$. The equation consequently carries the mass term $-mi\,\overline{F}\,\vec e_z$, and that antilinear factor is the price of the dictionary. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from both $\flat$ and $^{*}$.
 
-**Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Factoring $\mathcal N$ as a $2\times 2$ operator matrix with the bar in the off-diagonal slots turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The pair is reduced to a single complex-linear operator by the two complementary idempotents, taken as **right multiplication operators**,
+**Removal of the conjugation operator.** Because the bar is antilinear, $\mathcal N$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Factoring $\mathcal N$ as a $2\times 2$ operator matrix with the bar in the off-diagonal slots turns the single antilinear equation into a coupled pair of **complex-linear** equations, one for the field and one for its conjugate. The pair is reduced to a single complex-linear operator by the two complementary idempotents, taken in the **right action** $M_b:\psi\mapsto\psi b$,
 
 $$
 P^\pm = \tfrac12 M_{(e_t \pm i \vec e_x)},
@@ -383,7 +383,7 @@ D_\alpha \tilde{p} = 0, \qquad \alpha = -(i\omega \vec e_x + m \vec e_y)\in\math
 \qquad D_\alpha = D + M_\alpha ,
 $$
 
-with $D=iD_3=i\sum_{k=1}^{3}\vec e_k\,\partial/\partial Q_k$ ($D^2=\Delta$) and $M_\alpha$ right multiplication by $\alpha$. A direct reduction of $R$ gives $\alpha'=\omega\vec e_x-im\vec e_y=i\alpha$. The operators $D_{\alpha'}$ and $D_\alpha$ are not the same, but their degeneracy loci are, since $\langle i\alpha\rangle_{\natural}=-\langle\alpha\rangle_{\natural}$, so the mass-shell statement is unchanged. The source writes $\alpha$, and that normalization is kept below. So the massive time-harmonic Dirac field is, after one change of variables, an $\alpha$-hyperholomorphic biquaternionic function, and the whole boundary-value theory of $D_\alpha$ — the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas, the Cauchy integral theorem, the Morera theorem and the boundary-value criterion — becomes available to the bag.
+with $D=iD_3=i\sum_{k=1}^{3}\vec e_k\,\partial/\partial Q_k$ ($D^2=\Delta$) and $M_\alpha$ the right action $f\mapsto f\alpha$. A direct reduction of $R$ gives $\alpha'=\omega\vec e_x-im\vec e_y=i\alpha$. The operators $D_{\alpha'}$ and $D_\alpha$ are not the same, but their degeneracy loci are, since $\langle i\alpha\rangle_{\natural}=-\langle\alpha\rangle_{\natural}$, so the mass-shell statement is unchanged. The source writes $\alpha$, and that normalization is kept below. So the massive time-harmonic Dirac field is, after one change of variables, an $\alpha$-hyperholomorphic biquaternionic function, and the whole boundary-value theory of $D_\alpha$ — the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas, the Cauchy integral theorem, the Morera theorem and the boundary-value criterion — becomes available to the bag.
 
 ### The Mass Shell Is the Zero-Divisor Condition
 
@@ -439,7 +439,7 @@ That is the shape of the result: a linear bag model becomes a **boundary singula
 
 ## What the Algebra Supplies, Transcribes, and Does Not Supply
 
-**Supplied by the algebra, and recomputed here.** The Wilson loop as a two-sector bilinear: a material-sector connection integrated along a curve, exponentiated into the informational realization of the group, traced to a gauge-invariant number. The information-theoretic interpretation of the two laws, with the scaling of $I(C) = -\log|\langle W(C)\rangle|$ recomputed: $I/T\to$ constant for the perimeter law and $I/T\to\sigma L$ for the area law, in both cases to the stated accuracy. The superselection structure of a charge rotation on the informational sector, with the accessible state as the dephasing along the charge axis and the accessible relative entropy vanishing while the full relative entropy is positive — recomputed on explicit states. The conditional expectation onto the charge-neutral subalgebra as an idempotent channel — realized on the framework's own compact algebra $\mathrm{SU}(2)\subset\mathbb{M}_+$, the group whose singlets the framework's own superselection analysis selects, and only transcribed for a colour group — and the monotonicity of relative entropy under it, cited from the companion articles. And, in the bag picture, the boundary-value theory of the shifted operator $D_\alpha$: the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion, with the reduction of the linear bag model to the boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ — the reduction and the criterion are the source's, the algebra they use is the corpus's, and the three algebraic facts the reduction rests on (the right-multiplication idempotents $P^\pm=\tfrac12M_{(e_t\pm i\vec e_x)}$, the collapse $i\cdot i=-1$ that makes $R$ real, and the identity $\langle \alpha\rangle_{\natural} = m^2-\omega^2$) were recomputed here.
+**Supplied by the algebra, and recomputed here.** The Wilson loop as a two-sector bilinear: a material-sector connection integrated along a curve, exponentiated into the informational realization of the group, traced to a gauge-invariant number. The information-theoretic interpretation of the two laws, with the scaling of $I(C) = -\log|\langle W(C)\rangle|$ recomputed: $I/T\to$ constant for the perimeter law and $I/T\to\sigma L$ for the area law, in both cases to the stated accuracy. The superselection structure of a charge rotation on the informational sector, with the accessible state as the dephasing along the charge axis and the accessible relative entropy vanishing while the full relative entropy is positive — recomputed on explicit states. The conditional expectation onto the charge-neutral subalgebra as an idempotent channel — realized on the framework's own compact algebra $\mathrm{SU}(2)\subset\mathbb{M}_+$, the group whose singlets the framework's own superselection analysis selects, and only transcribed for a colour group — and the monotonicity of relative entropy under it, cited from the companion articles. And, in the bag picture, the boundary-value theory of the shifted operator $D_\alpha$: the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas and the boundary-value criterion, with the reduction of the linear bag model to the boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ — the reduction and the criterion are the source's, the algebra they use is the corpus's, and the three algebraic facts the reduction rests on (the idempotents $P^\pm=\tfrac12M_{(e_t\pm i\vec e_x)}$ of the right action, the collapse $i\cdot i=-1$ that makes $R$ real, and the identity $\langle \alpha\rangle_{\natural} = m^2-\omega^2$) were recomputed here.
 
 **Transcribed from standard physics.** Confinement itself: the area law as the criterion, the flux tube, the linearly rising potential, the string tension, the lattice strong-coupling argument that establishes the area law, the mass gap, the colour group and its representations, the partonic description and its scale dependence, and the running of the colour coupling. The bag model is transcribed too: the confining region, the hadron as a bounded domain, and the linear boundary condition that bans the flow through its surface are imports from nuclear physics, and the model derives neither an area law nor a colour group. The colour-singlet structure of the asymptotic algebra and the superselection of colour are standard. All of these are imports and are flagged as such throughout.
 
@@ -479,50 +479,6 @@ That is the shape of the result: a linear bag model becomes a **boundary singula
 
 8. **The zero-divisor branch.** The bag's parameter $\alpha$ lies in the zero-divisor set $\mathcal Z$ exactly on the mass shell, so the relevant branch of $T_\alpha$ and $K_\alpha$ is the one where the parameter has no inverse. Does the on-shell degeneracy of the shift have an interpretation of its own — the mass shell as a locus where the function theory changes character — or is it only the algebraic form of the dispersion relation? The zero-divisor articles treat the cone as a physical locus for a *field*; here it is the *parameter* that is singular, which is a different interpretation.
 
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The whole article is written in the cells, without gammas. This section writes the same objects in the gamma frame once, so that the correspondence with the standard notation is on record. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and this is the only section in which they are named.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
-$$
-
-The squares follow from $i^2=-1$ and the quaternion relations,
-
-$$
-\gamma_0[\mathbb{M}_-]^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
-\qquad
-\gamma_1[\mathbb{M}_-]^{2}=\gamma_2[\mathbb{M}_-]^{2}=\gamma_3[\mathbb{M}_-]^{2}=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
-$$
-
-In the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
-\qquad
-\gamma_1[\mathbb{M}_-]^{2}=\gamma_2[\mathbb{M}_-]^{2}=\gamma_3[\mathbb{M}_-]^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
-$$
-
-so the frame carries the Clifford form $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $\varepsilon=(1,-1,-1,-1)$. The time cell of the bag equation is $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$ and its three spatial cells are $\gamma_1[\mathbb{M}_-],\gamma_2[\mathbb{M}_-],\gamma_3[\mathbb{M}_-]$; the boundary condition of the bag is therefore the frame's linear condition, written above without the gammas.
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, and $L_{e_t}^{\mathrm{pau}}$ is the identity, so $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi$ as a central sign, while the mass term of the two-sided equation is $m\,\overline{F}\,\gamma_5$. The two coincide in one step: $\vec e_z=i\gamma_5$, so $-mi\,\overline{F}\,\vec e_z=-mi\,\overline{F}\,(i\gamma_5)=-m\,i^2\,\overline{F}\,\gamma_5=m\,\overline{F}\,\gamma_5$, by the same $i^2=-1$.
-
-The comparison with the frame is complex-linear — the coefficients of an element in the basis of the sixteen products are complex numbers — although the dictionary $A$ of the bag is only $\mathbb{R}$-linear. Over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
 ## Summary
 
 Confinement is the absence of the coloured degrees of freedom from the asymptotic spectrum, diagnosed by the Wilson loop: a perimeter law for a screened phase and an area law for a confining one, with the rectangular loop giving the static potential. In the biquaternion framework the loop is a two-sector bilinear — a material-sector connection integrated around a curve, exponentiated into the informational realization of the gauge group, and traced to a gauge-invariant number — so the order parameter is housed exactly.
@@ -535,11 +491,11 @@ What the framework cannot supply is the colour theory itself. The compact algebr
 
 The two confinement pictures must be kept apart, and the framework houses one of them. The non-perturbative gauge-dynamics picture is the one the QCD agenda rules out: a loop expectation value, an area law, a string tension and a mass gap, none of which the framework can derive.
 
-The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\sum_k u_k\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
+The **bag** picture is different in kind. Two Dirac equations are kept apart there: the one-sided chiral pair, whose chirality is the right action $\tilde\Psi\mapsto-i\tilde\Psi\vec e_z$ and whose mass is the off-diagonal pairing, and the two-sided operator $\mathcal N$, whose mass term is a complex conjugation together with a direction. The picture is a bounded region and a **linear boundary condition**, $\bigl(\sum_k u_k\vec e_k\bigr)\Phi_\omega = i\Phi_\omega$ on the surface, which bans the flow of the field out of the region.
 
 That condition is a boundary-value problem, and it was reduced to the algebra by Kravchenko (1995). A real-linear bijection carries the bispinor to a biquaternion; the mass term carries the componentwise complex conjugation $\overline{\cdot}$; factoring the equation removes it; the time-harmonic amplitude obeys $D_\alpha\tilde{p}=0$ with $\alpha = -(i\omega \vec e_x + m \vec e_y)$; the bag condition becomes the projector condition $S^-\tilde{p}=0$; and the boundary-value criterion for $D_\alpha$ turns the model into the single boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ on $\partial\Omega$.
 
-What the framework supplies here is the function theory, the reduction and the Fredholm question; what it still does not supply is the confining dynamics, since the bag assumes the region rather than explaining it. The three facts the reduction leans on were recomputed: the right-multiplication idempotents $P^\pm=\tfrac12M_{(e_t\pm i\vec e_x)}$ are complementary, the step $i\cdot i=-1$ leaves $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$ free of complex coefficients, and $\langle \alpha\rangle_{\natural} = m^2-\omega^2$, so the parameter of the reduced bag equation lies in the **zero-divisor set $\mathcal Z$ exactly on the mass shell**.
+What the framework supplies here is the function theory, the reduction and the Fredholm question; what it still does not supply is the confining dynamics, since the bag assumes the region rather than explaining it. The three facts the reduction leans on were recomputed: the idempotents $P^\pm=\tfrac12M_{(e_t\pm i\vec e_x)}$ of the right action are complementary, the step $i\cdot i=-1$ leaves $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$ free of complex coefficients, and $\langle \alpha\rangle_{\natural} = m^2-\omega^2$, so the parameter of the reduced bag equation lies in the **zero-divisor set $\mathcal Z$ exactly on the mass shell**.
 
 ## Summary of Notation
 
@@ -548,7 +504,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
-| $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
+| $\tilde\nabla$, $\tilde\nabla^\natural$, $\Box$ | Gradient $e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ and its conjugate $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$; $\Box=\tilde\nabla\tilde\nabla^\natural$, left action on a field |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Informational and material sectors |
 | $\tilde{A} = \sum_\mu A_\mu e_\mu\in\mathbb{M}_-$ | Gauge connection (material sector) |
 | $T_a = i\vec e_a\in\mathbb{M}_+$ | Generators realized in the informational sector |
@@ -569,18 +525,19 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace of a product in the matrix representation; $\mathrm{Tr}(e_t) = 2$ |
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from bispinors to biquaternion-valued functions (bag model) |
-| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | One-sided Dirac pair; chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is $\chi$ |
+| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$ | One-sided Dirac pair; chirality is the right action $\tilde\Psi\mapsto-i\tilde\Psi\vec e_z$, whose central form is $\chi$ |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$, $\chi^2=e_t$ | Central chiral grading |
 | $D_3=\sum_k\vec e_k\partial/\partial Q_k$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial t'+D_3)F-mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |
 | $R=D_3-\partial M_{\vec e_x}/\partial t'-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$ |
 | $\vec q=x\vec e_x+y\vec e_y+z\vec e_z$ | Position in the bag domain |
-| $D_\alpha = D + M_\alpha$, $D = i\sum_k \vec e_k\,\partial/\partial Q_k$ | Shifted Moisil–Teodoresco operator; $M_\alpha$ right multiplication by $\alpha$ |
+| $D_\alpha = D + M_\alpha$, $D = i\sum_k \vec e_k\,\partial/\partial Q_k$ | Shifted Moisil–Teodoresco operator; $M_b$ is the right action $f\mapsto fb$ |
 | $\alpha = -(i\omega \vec e_x + m \vec e_y)$ | Bag parameter; $\alpha\in\mathcal Z \iff \omega^2 = m^2$ |
 | $\mathcal Z = \{\tilde Q\neq0 : \langle\tilde Q\rangle_{\natural}=0\}$ | Zero-divisor set; the mass shell in parameter space |
-| $P^\pm = \tfrac12 M_{(e_t\pm i\vec e_x)}$ | Right-multiplication idempotents used in removing the bar |
+| $P^\pm = \tfrac12 M_{(e_t\pm i\vec e_x)}$ | Idempotents of the right action, used in removing the bar |
 | $S^\pm$, $P_\alpha = \tfrac12(I+S_\alpha)$ | Boundary projectors; $P_\alpha$ built from the Cauchy-type operator $K_\alpha$ |
+| $P_{\vec u}=\tfrac12\bigl(e_t-i\sum_k u_k\vec e_k\bigr)$ | Boundary projector of the linear condition; $\Phi_\omega=P_{\vec u}\Phi_\omega$ |
 | $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ | The bag reduced to one boundary integral equation |
 | **Standard QCD notation, not framework objects** | |
 | $SU(3)$, $N_c = 3$, $\mathbf{3}$, $\mathbf{8}$ | Colour group, number of colours, quark, gluon — no route yet |
@@ -588,7 +545,6 @@ What the framework supplies here is the function theory, the reduction and the F
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Kenneth G. Wilson, "Confinement of Quarks," *Physical Review D* **10** (1974) 2445–2459, for the Wilson loop, the area law, and confinement as a criterion.
 - V. V. Kravchenko, "On a Biquaternionic Bag Model," *Zeitschrift für Analysis und ihre Anwendungen* **14** (1995), no. 1, 3–14, DOI 10.4171/ZAA/658, for the real-linear dictionary from bispinors to biquaternions, the removal of the conjugation operator in the mass term, the reduction of the linear bag model to the boundary equation $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$, and the invertibility and Fredholm questions for the shifted operator $D_\alpha$.
 - V. V. Kravchenko and M. V. Shapiro, *Integral Representations for Spatial Models of Mathematical Physics* (Pitman Research Notes in Mathematics 351, Addison-Wesley Longman, 1996), for the Teodorescu transform, the Cauchy-type operator and the operator of singular integration with a biquaternionic parameter, and the boundary-value criteria the bag reduction uses.

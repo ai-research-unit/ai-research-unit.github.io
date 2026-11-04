@@ -11,7 +11,7 @@ This article takes up that question. It does not repeat the quantization, which 
 - **The operator-valued observables.** The energy–momentum, the charge and the current are operator-valued; the energy–momentum sits in the material sector $\mathbb{M}_-$, the charge in the centre $\mathbb{C}_{\mathbb{B}}$, and the current is a bilinear read as the scalar part of an element product, carrying fixed units of the frame. Their normal ordering has a definite sign.
 - **The two-point function as an operator-valued distribution.** The covariant anticommutator of the field is a $c$-number, and its biquaternion form is the deformed mass-shell scalar of the propagator article.
 
-The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c=1$, and $\hbar$ is kept explicit only in the spin operator.
+The division between what is standard and what belongs to the algebra is kept explicit throughout, as in the parents. Throughout, $c=1$, $\hbar$ is kept explicit only in the spin operator, and every derivative of the field is the corpus gradient $\tilde\nabla$ with its natural conjugate $\tilde\nabla^{\natural}$; the only other derivative operator written is the one inside the source's own equation, quoted once below and not used.
 
 ## The Operator-Valued Field
 
@@ -90,7 +90,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde\Psi^{\mathrm{fop}}_L=m\tilde\Psi^{\mathrm{fop}}_R\;},
 $$
 
-the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde\Psi^{\mathrm{fop}}_L,\tilde\Psi^{\mathrm{fop}}_R\bigr)$ it is $(\mathbb{D}-m)$, with $\mathbb{D}$ the pair operator of *Conventions of the Operators and the Calculus*, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
+the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is one operator equation and not two: read on the pair $\bigl(\tilde\Psi^{\mathrm{fop}}_L,\tilde\Psi^{\mathrm{fop}}_R\bigr)$ it is $(\mathbb{D}-m)$, with $\mathbb{D}$ the pair operator of *Operator and Calculus Conventions*, and the operator adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
 
 Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:
 
@@ -270,6 +270,16 @@ It is Hermitian and even, and it is the operator whose classical limit is the sp
 
 ## The Two-Point Function
 
+**The operator written on an element.** The pair operator $\mathbb{D}$ of *Operator and Calculus Conventions* is defined there on the pair $\mathbb{B}\oplus\mathbb{B}$. Read on one element, which is the carrier of the field, its action is written out with the side in position,
+
+$$
+\mathbb{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\,\frac{\partial\tilde X}{\partial Q_k}\vec e_y ,
+\qquad
+\mathbb{D}_p:\ \tilde X\longmapsto iE_{\vec p}\,\tilde X\vec e_x-i\sum_k p_k\,\vec e_k\tilde X\vec e_y ,
+$$
+
+the first the operator and the second its value on the plane wave $\exp(-iE_{\vec p}t'+i\vec p\cdot\vec x)$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_k$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the units, and both squares are scalars, $\mathbb{D}^2=\Box$ and $\mathbb{D}_p^2=p^2$, the cross terms cancelling between the time term and the three spatial ones.
+
 The covariant anticommutator of the free quantized field is the object that carries the canonical structure, and it has two properties that the biquaternion framework reads directly.
 
 **It is a $c$-number and it is local.** Every term of the product $\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x\tilde\Psi^{\mathrm{fop}}(x)$ or $\tilde\Psi^{\mathrm{fop}}(x)\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x$ is a product of at most two mode operators with $c$-number amplitudes. Terms carrying one particle and one antiparticle operator, $a^{\mathrm{fop}}b^{\mathrm{fop}}$ or $a^{\mathrm{fop}\dagger}b^{\mathrm{fop}\dagger}$, reverse sign when the two field factors are exchanged and cancel in the anticommutator; terms with one creation and one annihilation operator of the same species collapse to $c$-numbers through the anticommutators. Hence, for every element $\tilde X$,
@@ -278,7 +288,7 @@ $$
 \boxed{\;\bigl\{\tilde\Psi^{\mathrm{fop}}(x)\ \mathrm{Sc}\bigl(\tilde\Psi^{\mathrm{fop}\dagger}(y)i\vec e_x\,\tilde X\bigr)\bigr\}=(\mathbb{D}+m)\,\Delta_{\mathrm{A}}(x-y)\ \tilde X\;},
 $$
 
-an element times the identity of $\mathcal{A}$ for every $\tilde X$: the field at $x$ multiplied by the number that pairs the field at $y$ with the test element, and on the right the pair operator applied to the same element. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.
+an element times the identity of $\mathcal{A}$ for every $\tilde X$: the field at $x$ multiplied by the number that pairs the field at $y$ with the test element, and on the right the operator of the display above applied to the same element. Here $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch phases, supported inside the light cone and vanishing for spacelike separation. This is the spin–statistics companion's covariant form, and it is the statement of microcausality for the anticommuting field.
 
 **The commutator is a $c$-number as well, but it is not local.** Replacing the anticommutator by the commutator gives, for every element $\tilde X$,
 
@@ -296,7 +306,7 @@ F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{\cos(\vec p\cdot\vec\Delta)}{E_
 =\frac{m}{2\pi^2|\vec\Delta|}K_1\!\bigl(m|\vec\Delta|\bigr),
 $$
 
-a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0$. The mass term is the difference of the two spin sums of the solutions article, which is twice the mass, taken against the cosine. The gradient term is their sum, the pair operator at the wave biquaternion, whose spatial part is odd in $\vec p$ and survives against the sine that the difference of the two phases leaves; the integration is the companion's identity $\int\frac{d^3p}{(2\pi)^3}\frac{p_k\sin(\vec p\cdot\vec\Delta)}{E_{\vec p}}=-\partial F/\partial\Delta_k$. The anticommutator pairs equal phases instead, keeps only the cosine, and is a contact term at equal times. The quantized biquaternion Dirac field, like any field of spin $\tfrac12$, therefore has a local anticommutator and a nonlocal commutator; both are $c$-numbers, and microcausality is the statement about the anticommutator.
+a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0$. The trailing $\vec e_x$ multiplies the whole bracket on the right, so every term is read with its sides in position: the mass term is a single right multiplication by $i\vec e_x$ once the outer $i$ is placed against it, with no factor on the left, and each spatial term, since $\vec e_y\vec e_x=-\vec e_z$, carries $\vec e_k$ on the left and $\vec e_z$ on the right — the same reduction the frame paragraph records. The mass term is the difference of the two spin sums of the solutions article, which is twice the mass, taken against the cosine. The gradient term is their sum, the spatial part of $\mathbb{D}$ read on the element with the derivative in place of the momentum; being odd in $\vec p$, it survives against the sine that the difference of the two phases leaves, and the integration is the companion's identity $\int\frac{d^3p}{(2\pi)^3}\frac{p_k\sin(\vec p\cdot\vec\Delta)}{E_{\vec p}}=-\partial F/\partial\Delta_k$. The anticommutator pairs equal phases instead, keeps only the cosine, and is a contact term at equal times. The quantized biquaternion Dirac field, like any field of spin $\tfrac12$, therefore has a local anticommutator and a nonlocal commutator; both are $c$-numbers, and microcausality is the statement about the anticommutator.
 
 **The biquaternion form.** Writing the wave biquaternion (the $c$-number symbol) $\tilde P=iE_{\vec p}\,e_t+\vec p$, with $p_0=E_{\vec p}$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is the map
 
@@ -306,7 +316,7 @@ S_F(p):\ \tilde X\longmapsto
 =-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_k i\vec e_k\tilde X\vec e_y p_{k}+m\,\tilde X\bigr)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}.
 $$
 
-Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_k\vec e_k\tilde X\vec e_y p_k+i m\tilde X$. The numerator is the pair operator at the wave biquaternion together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $ict'$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
+Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_k\vec e_k\tilde X\vec e_y p_k+i m\tilde X$. The numerator is $(\mathbb{D}_p+m)\tilde X$, the momentum symbol of the display above together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $ict'$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
 
 ## What Is Standard and What Is the Algebra's
 
@@ -336,111 +346,6 @@ Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent 
 - Companion article *The Electron in Biquaternionic Form*, for the one-particle sector interpretation of the spin bilinear.
 - *The Dirac Equation in Biquaternionic Form*, for the one-sided chiral pair and the two-sided dictionary that separates the two equations.
 
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The gamma symbols appear only in this section; everywhere else the same operators are written as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
-$$
-
-The fifth gamma is not a fifth frame vector but their product. The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives and fixes the sign,
-
-$$
-\gamma_5:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
-$$
-
-In the axis-free display:
-
-$$
-\gamma_5:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
-$$
-
-and $\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=e_+-e_-$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The pair operator is the same cell operator written in gammas,
-
-$$
-\mathbb{D}=i\gamma_0[\mathbb{M}_-]\frac{\partial}{\partial t'}+i\sum_k\gamma_k[\mathbb{M}_-]\frac{\partial}{\partial Q_k},
-\qquad
-\mathbb{D}_p=\gamma_0[\mathbb{M}_-]E_{\vec p}-\sum_k\gamma_k[\mathbb{M}_-]p_k,
-$$
-
-with $p_0=E_{\vec p}$. Each term carries its own collapse, $i\gamma_\mu[\mathbb{M}_-]=iC_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}$, so the operator has no imaginary unit left:
-
-$$
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
-\qquad
-\mathbb{D}_p^2=p^2 .
-$$
-
-The same identities in the axis-free display:
-
-$$
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
-\qquad
-\mathbb{D}_p^2=p^2 .
-$$
-
-The collapse removes the $i$, not the cell: $i\gamma_0[\mathbb{M}_-]=-R_{\vec e_x}^{\mathrm{pau}}\ne-I_4$, so the time derivative is multiplied by a right multiplication by $\vec e_x$ and not by a number. The numerator of $S_F$ in the preceding section is $i(\mathbb{D}_p+m)$, the same collapse read backwards.
-
-A single product of cells is a pure tensor; the pure products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four of them, the least such number being the cell rank $\ell(M)=\operatorname{rank}c(M)$.
-
-The dictionary from the sixteen products to the gamma frame is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the real left–right products $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}$, without the central $i$, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The identities of the frame.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
-
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
-\qquad \varepsilon=(1,-1,-1,-1),$$
-
-$$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
-$$
-
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
-$$
-
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
-$$
-
-These identities raise and lower indices with $g$, and that matters here: $\gamma^0[\mathbb{M}_-]=-\gamma_0[\mathbb{M}_-]$ while $\gamma^k[\mathbb{M}_-]=+\gamma_k[\mathbb{M}_-]$, because $g^{00}=-1$ and $g^{kk}=+1$. The four contraction sums carry the raised index on the summed gamma, and in the frame $g=(-1,+1,+1,+1)$ they are
-
-$$
-\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4,
-\qquad
-\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\alpha[\mathbb{B}]\gamma_\mu[\mathbb{B}]=2\gamma_\alpha[\mathbb{B}],
-$$
-
-$$
-\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,
-\qquad
-\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-].
-$$
-
-The raised index is not decoration. With the index down on the summed gamma, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$ but $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=4\gamma_0[\mathbb{M}_-]$ for $\alpha=0$ and $0$ for spatial $\alpha$, because $\gamma_0[\mathbb{M}_-]^2=+I_4$ while $\gamma_k[\mathbb{M}_-]^2=-I_4$; the four sums above are the ones that are covariant.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
 ## Summary
 
 The quantized biquaternion Dirac field is the operator-valued element of $\mathcal{A}\otimes\mathbb{B}$ whose expansion in the biquaternion plane waves carries the parent article's mode anticommutators and spin sums. It is an element of $\mathbb{B}$ at every point multiplied by an operator, it satisfies the free field equation as an operator identity, and its four conjugations act with the operator ordering included: the particle–antiparticle exchange is Hermitian conjugation, $\tilde\Psi^{\mathrm{fop}}\leftrightarrow\tilde\Psi^{\mathrm{fop}\dagger}$, and not the algebra's real structure.
@@ -469,15 +374,15 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre |
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
-| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\,\vec e_k\,\partial/\partial Q_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
-| $\mathbb{D}$ | Pair operator of the operator conventions; the pair is $(\mathbb{D}-m)$ on $(\tilde\Psi^{\mathrm{fop}}_L,\tilde\Psi^{\mathrm{fop}}_R)$ |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla$, $\nabla=\sum_k\,\vec e_k\,\partial/\partial Q_k$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\nabla$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its spatial part, its natural conjugate, and the d'Alembertian |
+| $\mathbb{D}$ | Pair operator of the operator conventions, defined there on $\mathbb{B}\oplus\mathbb{B}$, where the pair is $(\mathbb{D}-m)$ on $(\tilde\Psi^{\mathrm{fop}}_L,\tilde\Psi^{\mathrm{fop}}_R)$; read on one element, $\mathbb{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial t'}\vec e_x-\sum_k\vec e_k\frac{\partial\tilde X}{\partial Q_k}\vec e_y$, with $\mathbb{D}^2=\Box$ |
+| $\mathbb{D}_p$ | Momentum symbol at $p_0=E_{\vec p}$: $\mathbb{D}_p:\tilde X\mapsto iE_{\vec p}\tilde X\vec e_x-i\sum_kp_k\vec e_k\tilde X\vec e_y$, with $\mathbb{D}_p^2=p^2$ |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\bigl(i\partial/\partial t'+\nabla\bigr)F-m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
 | $\tilde\Psi^{\mathrm{fop}}$ | Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde\Psi^{\mathrm{fop}}_L$, $\tilde\Psi^{\mathrm{fop}}_R$ |
 | $\tilde\Psi^{\mathrm{fop}\dagger}$, $\tilde\Psi^{\mathrm{fop}\dagger}i\vec e_x$ | Hermitian conjugate of the field; Dirac adjoint |
 | $\tilde\Psi^{(r)}_{\pm}(\vec p)$ | The two branches of the biquaternion plane wave (solutions article) |
 | $\mathcal{A}$ | Fermionic operator algebra generated by the mode operators |
-| $\kappa(\mu)$ | Right multiplier of the frame member in the closing block: $\kappa(t)=x$, $\kappa(k)=y$ |
 | $J_\mu$ | Current bilinear: $\mathrm{Sc}(\tilde\Psi^{\mathrm{fop}\dagger}\tilde\Psi^{\mathrm{fop}})$ at $\mu=t$, $\mathrm{Sc}(\tilde\Psi^{\mathrm{fop}\dagger}\vec e_k\tilde\Psi^{\mathrm{fop}}\vec e_z)$ at $\mu=k$ |
 | $a^{\mathrm{fop}}_r(\vec p),b^{\mathrm{fop}}_r(\vec p)$ | Particle and antiparticle annihilation operators |
 | $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ | Mode anticommutator |
@@ -497,7 +402,6 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the equation whose quantized field this article describes.
 - W. Pauli, "The connection between spin and statistics," *Physical Review* **58** (1940) 716–722, for the theorem that fixes the anticommutator for half-integer spin.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the canonical quantization of the Dirac field, the $c$-number anticommutator, and the conserved current.

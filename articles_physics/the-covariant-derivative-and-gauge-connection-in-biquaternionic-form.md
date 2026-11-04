@@ -16,6 +16,22 @@ $$
 
 together with the identification of the field strength with the curvature, $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$. This article takes the connection $\tilde{A}$ and the covariant derivative $D$ produced by that localization and studies them as objects in their own right. Nothing inherited from the gauge principle is rederived, renamed, or corrected here; the transformation law, the covariance, and the curvature identity are used as input.
 
+**Notation, once.** The derivative letters are those of *Operator and Calculus Conventions*: the biquaternionic gradient, its quaternion conjugate, and the d'Alembertian the two compose.
+
+$$
+\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\qquad
+\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
+$$
+
+$$
+\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
+\qquad
+\Delta_Q=\sum_k\frac{\partial^2}{\partial Q_k^2},
+$$
+
+with $\partial/\partial Q_t=-(i/c)\,\partial/\partial t'$ on the material sector. Every derivative below is one of these three, or the covariant derivative $D$ built on them and its quaternion conjugate $\bar D$; no other letter names a derivative.
+
 The article develops the two objects in four directions that the gauge principle article did not pursue.
 
 - **The derivative as an operator.** $D$ is a first-order differential operator, not an element of $\mathbb{B}$. It is a derivation on the algebra of fields, and the connection is precisely the difference between $D$ and $\tilde{\nabla}$: $[D_\mu, f] = \partial/\partial Q_\mu f$ for a scalar function $f$.
@@ -279,11 +295,11 @@ The structural similarity to the identity that the square of a Dirac operator is
 
 **A gap for the charged scalar.** The gauge principle article's clean realization of the global symmetry was the complex scalar biquaternion field $\tilde{\Phi} = \phi\,e_t$ obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$; the free equation is examined in the Klein–Gordon article, which does not gauge it. Covariantizing the *scalar operator* gives $\left(\sum_\mu D_\mu^2 - (mc/\hbar)^2\right)\phi\,e_t = 0$, which is consistent. But $\bar D D(\phi e_t) = \left(\sum_\mu D_\mu^2\phi\right)e_t + \frac{iϙ}{\hbar}\phi\,\tilde{F}$, and the second term is a pure vector whenever $\tilde{F} \neq 0$. A purely scalar field therefore cannot satisfy $\left(\bar D D - (mc/\hbar)^2\right)\tilde{\Phi} = 0$ in a region of nonzero curvature; only the scalar projection $\mathrm{Sc}(\bar D D)$ acts on scalars, or the charged scalar must acquire vector components. Which of these the framework intends is **not settled here**. It is a genuine gap: the minimal coupling of a scalar is not the same statement as the minimal coupling of a biquaternion, and the difference is the curvature.
 
-### The Two Dirac Equations
+### The Chiral Pair and Why the Mass Couples Two Fields
 
-The square has two roots, because the framework carries the Dirac equation in two forms and the boxed identity is the square of both.
+One equation carries the mass under these conventions, and it is the chiral pair.
 
-The first is the **chiral pair** on the algebra, the form of the two-sided operator theory. Both members act by left multiplication, the second is the quaternion conjugate of the first, and the mass couples the two chiral halves:
+**The chiral pair** on the algebra. Both members act by left multiplication, the second is the quaternion conjugate of the first, and the mass couples the two chiral halves:
 
 $$
 D\tilde\Psi_R = m\tilde\Psi_L,
@@ -291,29 +307,21 @@ D\tilde\Psi_R = m\tilde\Psi_L,
 \bar D\tilde\Psi_L = m\tilde\Psi_R .
 $$
 
-The pair is one matrix equation written in two halves, and squaring its first member with the second gives the boxed identity on the right-handed half, $\bar D D\tilde\Psi_R = m^2\tilde\Psi_R$.
+Squaring its first member with the second gives the boxed identity on the right-handed half, $\bar D D\tilde\Psi_R = m^2\tilde\Psi_R$. The second member is not a new equation: it is the first written on the conjugate field, $\natural$ is what separates them, and both act from the left.
 
-The second is the **single equation on the four-component module**, the form the chirality supplies and the one written in cells. It needs no pair, because a column carries both halves. In the coordinates $Q_\mu$ its four cells are
+**Why the mass couples two fields.** A first-order equation on a single field does not close on a second-order equation for that field. Write $\tilde\nabla\tilde\Psi = m\tilde\Psi$ and apply $\tilde\nabla^{\natural}$: the result is $\Box\tilde\Psi = m\,\tilde\nabla^{\natural}\tilde\Psi$, an equation in two different objects, and nothing reduces it to $\Box\tilde\Psi = m^2\tilde\Psi$, because $\tilde\nabla^{\natural}\tilde\Psi = m\tilde\Psi$ is the second equation and not a consequence of the first. If both members were imposed on one field, their difference would give $2\sum_k\vec e_k\,\partial/\partial Q_k\tilde\Psi = 0$, so the field would not vary in space and the remaining time equation would be exponential rather than oscillatory: no wave survives. Two fields close the system instead, and applying $\bar D$ to $D\tilde\Psi_R = m\tilde\Psi_L$ returns $\bar D D\tilde\Psi_R = m\bar D\tilde\Psi_L = m^2\tilde\Psi_R$, which is the boxed identity.
+
+The square of the gradient, the operator left when the connection is switched off, is not scalar, and it is not $\Box$. On a scalar function,
 
 $$
-c_t = iR_{\vec e_x}^{\mathrm{axf}},
+\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\,\frac{\partial^2}{\partial Q_t\partial Q_k},
 \qquad
-c_k = -L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
-\qquad
-c_\mu^2 = L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
-\qquad
-c_\mu c_\nu + c_\nu c_\mu = 0 \quad (\mu \ne \nu),
+\Box=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q,
 $$
 
-where $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ is the identity cell. The spatial cell is $i$ times the generator cell $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, the two imaginary units collapsing by $i^2=-1$, so the four cells square to the identity and anticommute. Hence $\left(\sum_\mu c_\mu\,\partial/\partial Q_\mu\right)^2 = \Box$ and the equation is
+The identity holds with residual $0$ on random polynomial scalar functions. The Laplacian enters with opposite signs because the spatial legs of $\tilde\nabla$ square to $-e_t$ while $\bar e_\mu e_\mu = e_t$ for every $\mu$, and the mixed derivatives leave a vector part wherever they do not vanish. Writing $\tilde\nabla^2 = \Box$ would therefore be wrong by $2\Delta_Q$ in the scalar part and by that vector part.
 
-$$
-\left(iR_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial Q_t}-\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}\right)\psi = -m\psi .
-$$
-
-The two are not two dynamics. The column equation is the module form of the pair, and the mass signs differ because the dictionary between the algebra and the cells carries factors of $i$: the cells $c_\mu$ are the frame cells of the Euclidean reading, each carrying an $i$ on its spatial legs. Squaring either form returns $\Box = m^2$. What separates them is not the physics but the algebra the chirality lives in — the pair needs both conjugates and acts on the algebra, the single equation needs one column and acts on the module.
-
-The minimal coupling keeps the distinction without changing it: it replaces $\tilde\nabla$ by $D$ in the pair, which is the coupled pair of *Gauge Covariance and What It Forces*, and $\partial/\partial Q_\mu$ by $D_\mu$ in the column equation, which is legitimate because the coefficients $A_\mu$ are central and pass through the cells.
+**The minimal coupling** replaces $\tilde\nabla$ by $D$ and $\tilde\nabla^{\natural}$ by $\bar D$ in the pair, which is the coupled pair of *Gauge Covariance and What It Forces*. The replacement holds term by term because the coefficients $A_\mu$ are central and pass through the units.
 
 ## What the Algebra Supplies, Transcribes, and Only Interprets
 
@@ -331,16 +339,13 @@ The word "connection" is used in the framework for two different objects, and co
 
 The connection of this article is **one-sided**: $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ acts by left multiplication, and it can be written this way only because the abelian connection is central, so left and right multiplication agree. The connection of the curved-spacetime article of the corpus is **two-sided**: a biquaternionic covariant derivative on the material sector must be written $D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*}$, because the Lorentz generators act on $\mathbb{M}_-$ by the two-sided infinitesimal action $G\tilde{Q} + \tilde{Q}G^{*}$ and not by the commutator; the two differ precisely for the boosts. The gauge connection of this article is a $\mathrm{U}(1)$ connection of the centre; the gravitational connection lies in the six-dimensional traceless subspace of $\mathbb{B}$. They are distinct objects that happen to share a name, and no relation between them is asserted here.
 
-The distinction has a consequence the corpus had not recorded, and an external source names it. Here $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
-
-For an internal gauge force — this article's abelian case, and the non-abelian case it opens onto — the substitution $\partial/\partial Q_\mu \to D_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the internal generators commute with the frame cell $iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{axf}}$. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term $\{iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{axf}},S_{cd}\}$ between the frame cell and the Lorentz generator $S_{cd}=\tfrac14[iL_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{axf}},iL_{e_d}R_{\vec e_{\nu(d)}}^{\mathrm{axf}}]$, which the substituted equation does not have, because
+The distinction has a consequence the corpus had not recorded, and an external source names it. For an internal gauge force, the abelian case of this article, the substitution $\partial/\partial Q_\mu \to D_\mu$ gives the same physics whether it is applied to the action or to the Euler–Lagrange equations, because the connection is central: it multiplies from the side the derivative already multiplies from, and it passes through every unit. For the standard gravitational coupling in the vierbein formulation, the two procedures **do not commute**: the varied equation acquires an anticommutator term between the frame element and the Lorentz generator, which the substituted equation does not have. The difference is settled by one test, whether the generator commutes with the four units, and the test separates the two cases cleanly. The centre of $\mathbb{B}$ is the real span of $e_t$ and $ie_t$, so the six-dimensional traceless subspace, where the Lorentz generator lives, contains no central element at all; the traceless units themselves do not even commute with one another, $[\vec e_x,\vec e_y]=2\vec e_z$ and cyclically, whereas the central element commutes with everything,
 
 $$
-[iL_{e_c}R_{\vec e_{\nu(c)}}^{\mathrm{axf}},S_{ab}]
-= g_{ca}\,iL_{e_b}R_{\vec e_{\nu(b)}}^{\mathrm{axf}} - g_{cb}\,iL_{e_a}R_{\vec e_{\nu(a)}}^{\mathrm{axf}} ,
+[\vec e_x,\vec e_y]=2\vec e_z\neq0,
+\qquad
+[ie_t,\tilde Q]=0\ \text{ for every } \tilde Q\in\mathbb{B}.
 $$
-
-rather than vanishing: the commutator is nonzero whenever $c$ is one of $a$ or $b$.
 
 J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and reads it as a tension with the equivalence principle; the construction is recorded, with its world-index repair, in *Curved Spacetime and the Biquaternion Framework*. It is the sharpest available answer to the question this section raises: the one-sided central connection of this article is exactly the case in which localization is unambiguous, and the two-sided gravitational connection is exactly the case in which it is not.
 
@@ -362,55 +367,6 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 7. **Empirical contact.** As everywhere in the framework, the open question is whether any of this yields a prediction distinguishing it from standard gauge theory. The construction above is a reformulation; the question of empirical contact is untouched by it.
 
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
-$$
-
-In these names the four cells of the column equation of *The Two Dirac Equations* are $\gamma_0[\mathbb{M}_-]$, $i\gamma_1[\mathbb{M}_-]$, $i\gamma_2[\mathbb{M}_-]$ and $i\gamma_3[\mathbb{M}_-]$: the temporal leg is a gamma and each spatial leg is a gamma multiplied by $i$. That is why those four cells square to $+I_4$ in the coordinates $Q_\mu$ while the gammas of the $\mathbb{M}_-$ frame square to $(+1,-1,-1,-1)$.
-
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
-$$
-$$
-[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
-[\gamma_a[\mathbb{M}_-],S_{cd}]=\varepsilon_a\delta_{ac}\gamma_d[\mathbb{M}_-]-\varepsilon_a\delta_{ad}\gamma_c[\mathbb{M}_-],\qquad
-S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
-$$
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
-$$
-$$
-\mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
-=4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}
--\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
-+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
-$$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_\mu[\mathbb{M}_-]$, so that $\sum_\mu\gamma^\mu[\mathbb{B}]\gamma_\mu[\mathbb{B}]=-4I_4$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\alpha[\mathbb{M}_-]$, $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu[\mathbb{M}_-]\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2\gamma_\gamma[\mathbb{M}_-]\gamma_\beta[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]$.
 ## Summary
 
 The connection and the covariant derivative produced by localizing the central phase of the biquaternion algebra are studied here as objects in their own right. The covariant derivative is the first-order operator
@@ -435,7 +391,7 @@ $$
 
 with the scalar part the covariant d'Alembertian and the vector part the curvature. Two gaps are left visible: the covariant wave operator for a charged scalar is ambiguous between the scalar projection and a bivector-valued field, and the non-abelian extension still needs a reality condition selecting a compact gauge algebra. The gauge connection of this article is one-sided and abelian; it is not the two-sided gravitational connection of the curved-spacetime article.
 
-The identity is the square of two equations that the framework keeps apart: the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar D\tilde\Psi_L = m\tilde\Psi_R$, written on the algebra by left multiplication in the two-sided operator theory, and the single equation on the four-component module, written in the frame cells $iR_{\vec e_x}^{\mathrm{axf}}$ and $-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, whose square is $\Box = m^2$ as the square of the pair is.
+The identity is the square of the chiral pair $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar D\tilde\Psi_L = m\tilde\Psi_R$, written on the algebra by left multiplication, the second member being the first on the conjugate field. It is not the square of a single field: the conjugate derivative applied to $\tilde\nabla\tilde\Psi = m\tilde\Psi$ returns $\Box\tilde\Psi = m\tilde\nabla^{\natural}\tilde\Psi$, a second-order equation in two objects rather than one, and $\tilde\nabla^2$ is not $\Box$ — its scalar part is $\partial^2/\partial Q_t^2-\Delta_Q$ against the $\partial^2/\partial Q_t^2+\Delta_Q$ of $\Box$, and its vector part does not vanish. That is why the mass couples two fields.
 
 ## Summary of Notation
 
@@ -450,6 +406,8 @@ The identity is the square of two equations that the framework keeps apart: the 
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
+| $\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\partial Q_k}$ | Square of the gradient; not scalar, and not $\Box$ |
+| $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$ | Laplacian in the three vector coordinates |
 | $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_t + \vec A$ | Connection / potential biquaternion, in $\mathbb{M}_-$ |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase (abelian) |
@@ -468,15 +426,11 @@ The identity is the square of two equations that the framework keeps apart: the 
 | $\sum_\mu D_\mu^2 = \mathrm{Sc}(\bar D D)$ | Covariant d'Alembertian |
 | $\bar D D = \sum_\mu D_\mu^2 + \frac{iϙ}{\hbar}\tilde{F}$ | Covariant square identity |
 | $\bar{e}_t = e_t, \bar{e}_\mu = -\vec e_\mu$ | Conjugate basis |
-| $L_a, R_b$ | Left and right multiplication, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
-| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$ |
-| $c_t=iR_{\vec e_x}^{\mathrm{axf}}$, $c_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | The four cells of the column Dirac equation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the informational sector |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the origin of the connection, the transformation law, the covariance, and the curvature identity inherited here.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the potential, the field strength, the gauge scalar $S$, and the Maxwell equation.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the gauge-invariant content of $\tilde{F}$, which this article uses but does not develop.

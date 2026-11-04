@@ -43,13 +43,21 @@ $$
 \tilde{\nabla} = e_t\frac{\partial}{\partial Q_t} + \vec e_x\frac{\partial}{\partial Q_x} + \vec e_y\frac{\partial}{\partial Q_y} + \vec e_z\frac{\partial}{\partial Q_z}
 $$
 
-be the biquaternionic gradient and $\tilde{\nabla}^{\natural}$ its quaternion conjugate. The construction is
+be the biquaternionic gradient, with quaternion conjugate $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ and d'Alembertian
+
+$$
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \frac{\partial^2}{\partial Q_t^2} + \Delta_Q,
+\qquad
+\Delta_Q = \frac{\partial^2}{\partial Q_x^2} + \frac{\partial^2}{\partial Q_y^2} + \frac{\partial^2}{\partial Q_z^2}.
+$$
+
+The construction is
 
 $$
 \tilde{F} = \frac{1}{\sqrt{\mu}}\Bigl(\tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)\Bigr).
 $$
 
-This is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ divided by $\sqrt\mu$. In cell notation the same construction is $L_{\tilde{\nabla}^{\natural}}\tilde{A}$ with the scalar part removed, where $L_a$ is the left multiplication $L_a\psi=a\psi$. In Heaviside–Lorentz units, where the two medium parameters are $1$, this is the familiar $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ of the companion articles. In a medium with $\sqrt\mu\ne1$ the division is not optional, because $\tilde{F}$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ then differ in dimension.
+This is the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ divided by $\sqrt\mu$. The gradient stands to the left of the potential. The product is the algebra product, and no operator beyond the gradient and its conjugate enters. In Heaviside–Lorentz units, where the two medium parameters are $1$, this is the familiar $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ of the companion articles. In a medium with $\sqrt\mu\ne1$ the division is not optional, because $\tilde{F}$ and $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ then differ in dimension.
 
 In tensor language the same object is the antisymmetric rank-two tensor
 
@@ -266,7 +274,7 @@ $$
 \end{aligned}
 $$
 
-The factor $\gamma$ here is a number, not one of the frame cells that carry the $\gamma$ names in *The Legacy Pauli Gamma Formulation* below. The components parallel to the boost are unchanged, while the transverse components acquire a contribution from the other field. Substituting these expressions into $I_1$ and $I_2$ and using $1-v^2/c^2=1/\gamma^2$, the cross terms cancel and the factors combine, giving
+The factor $\gamma$ here is the Lorentz factor, a number and not an element of the algebra. The components parallel to the boost are unchanged, while the transverse components acquire a contribution from the other field. Substituting these expressions into $I_1$ and $I_2$ and using $1-v^2/c^2=1/\gamma^2$, the cross terms cancel and the factors combine, giving
 
 $$
 \vec E_2^2 - c^2\vec B_2^2 = \vec E^2 - c^2\vec B^2,
@@ -522,140 +530,6 @@ which is the quickest check of a computed flow. The characteristic polynomial is
 
 **Boundary.** The section adds an interpretation and no dynamics. It does not refine the classification of the paragraphs above, and it computes no flow that the field equations ask for. What it records is that the pair which already fixed the frame displaying the field also fixes what the field generates: the invariants are the spectral data of the flow. The standard forms of the four types, their normalisations and their classification up to conjugacy are not developed here; they are Minguzzi's, and *Further Reading* cites them.
 
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The body of this article writes the field as an element of $\mathbb{B}$; its cell reading is the left multiplication $L_{\tilde F}$. The gamma names are attached to the frame cells only here.
-
-The cells come in two families, the left multiplications $L_a$ and the right multiplications $R_b$,
-
-$$
-L_a\psi=a\psi,\qquad R_b\psi=\psi b .
-$$
-
-Two cells multiply by multiplying the left factors and the right factors, with the right order reversed,
-
-$$
-L_aR_b\,L_cR_d=L_{ac}R_{db},
-$$
-
-because $R_bR_d=R_{db}$. Every two-sided operator is a sum of the sixteen products,
-
-$$
-M=\sum_{\mu,\nu}c_{\mu\nu}(M)\,L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}},
-$$
-
-The same in the axis-free display:
-
-$$
-M=\sum_{\mu,\nu}c_{\mu\nu}(M)\,L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}},
-$$
-
-where $e_\mu$ runs over the four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$, so the coefficient matrix $c(M)$ is unique. A cell is a pure tensor of rank one; the cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four cells.
-
-The gamma cells are
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-In the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-Every generator carries exactly one factor of $i$, so a product of two generators carries $i^2=-1$ and is a plain cell. For example,
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}
-=-L_{\vec e_x}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-The same identities in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=i^2L_{e_t\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}
-=-L_{\vec e_x}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}=+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-The same collapse gives the squares and the anticommutation relations,
-
-$$
-\gamma_0[\mathbb{M}_-]^2=e_t,\qquad
-\gamma_1[\mathbb{M}_-]^2=\gamma_2[\mathbb{M}_-]^2=\gamma_3[\mathbb{M}_-]^2=-e_t,\qquad
-\gamma_5^2=e_t,
-$$
-
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}[\mathbb{M}_-]e_t,\qquad
-\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0,
-\qquad \varepsilon=(1,-1,-1,-1),$$
-
-with $g_{\mu\nu}[\mathbb{M}_-]$, and the volume element
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5 .
-$$
-
-A single $i$ also collapses when it multiplies a generator:
-
-$$
-i\gamma_0[\mathbb{M}_-]=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-i\gamma_1[\mathbb{M}_-]=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_2[\mathbb{M}_-]=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_3[\mathbb{M}_-]=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_5=+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-Read in the axis-free display:
-
-$$
-i\gamma_0[\mathbb{M}_-]=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-i\gamma_1[\mathbb{M}_-]=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_2[\mathbb{M}_-]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_3[\mathbb{M}_-]=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_5=+L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-$\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell $\Gamma$, the involution that grades the Dirac module (*The Unpolarized Module of the Biquaternion Algebra*). The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; being central, it acts on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operatorname{diag}(-I_2,I_2)$, and $\gamma_5$ is its representative there.
-
-**The two Dirac equations.** The two families separate the corpus's two Dirac equations. The one-sided pair acts with the left family alone,
-
-$$
-L_{\tilde\nabla}\tilde\Psi_R=m\tilde\Psi_L,\qquad
-L_{\tilde\nabla^{\natural}}\tilde\Psi_L=m\tilde\Psi_R,
-$$
-
-where both derivatives act from the left, the mass is $m$, and $\tilde\Psi_R$ and $\tilde\Psi_L$ are the two chirality halves. The two-sided equation carries the mass through the right family. It holds for a biquaternion-valued Dirac field $F$, which is not the field strength $\tilde F$ of this article,
-
-$$
-\left(iL_{e_t}^{\mathrm{pau}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}\right)F
--mi\,R_{\vec e_z}^{\mathrm{pau}}\bar F=0,
-$$
-
-The same expressions, in the axis-free display:
-
-$$
-\left(iL_{e_t}^{\mathrm{axf}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}\right)F
--mi\,R_{\vec e_z}^{\mathrm{axf}}\bar F=0,
-$$
-
-where the derivative acts from the left, the mass acts from the right through $\vec e_z$, and $\bar F$ is the coefficient conjugate. The two equations share the frame but not the operator: the one-sided pair splits the field into chirality halves; the two-sided equation is antilinear in its mass term and carries the chirality in the right multiplication.
-
-The dictionary is complex-linear, so over $\mathbb{C}$ the five generators generate the whole of $M_4(\mathbb{C})$. Over $\mathbb{R}$ the sixteen products of the five generators span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells $L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}}$ span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ (*Matrix Representations and Conventions*).
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
 ## Summary
 
 The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure-vector biquaternion with vanishing scalar part. It lies in the six-dimensional real vector part of $\mathbb{B}$, decomposed into an imaginary electric piece in the Hermitian subspace $\mathbb{M}_+$ and a real magnetic piece in the anti-Hermitian subspace $\mathbb{M}_-$. This is why the field strength is neither a four-vector nor an element of $\mathbb{M}_-$: it is an antisymmetric rank-two tensor, whose two halves occupy the two complementary sectors of the algebra.
@@ -677,7 +551,7 @@ The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silbers
 
 Duality is the rotation $\vec N\mapsto \exp(-i\theta)\vec N$; at $\theta = \pi/2$ it is the classical electric–magnetic duality. It is a symmetry of the source-free Maxwell equations, and it rotates the pair $(I_1, 2cI_2)$ by the angle $-2\theta$, leaving $I_1^2 + 4c^2I_2^2$ invariant.
 
-The field also has a polar reading, $\tilde F=\tilde F_H\tilde F_0$: the amplitude carries the intensity and the invariant modulus, and the phase carries the duality angle and the polarization. The gamma cells supply the Clifford frame, in which the field has a cell reading and the two Dirac equations are the one-sided pair and the two-sided equation.
+The field also has a polar reading, $\tilde F=\tilde F_H\tilde F_0$: the amplitude carries the intensity and the invariant modulus, and the phase carries the duality angle and the polarization.
 
 Finally, the invariants classify the field into null, electric, magnetic, and generic types, and fix the field magnitudes in the frame that displays each type; they are the complete set of local, derivative-free invariants, but they are not a complete description of the field. The same pair fixes what the field generates: since the field is an element of the Lorentz Lie algebra, its exponential is a one-parameter subgroup whose type — hyperbolic, elliptic, parabolic or loxodromic — is the type of the field, so the classification followed through the exponential agrees row by row with the classification in the algebra.
 
@@ -693,6 +567,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\Box$ | The d'Alembertian, $\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta_Q$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |
@@ -710,19 +585,13 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\tilde{\Sigma} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W e_t + \tfrac{i}{c}\vec S$ | Energy–momentum biquaternion (Hermitian); $\langle\tilde{\Sigma}\rangle_{\natural} = W^2 - \|\vec S\|^2/c^2$ |
 | $\tilde F_H, \tilde F_0$ | Amplitude and phase of the general polar decomposition, $\tilde F=\tilde F_H\tilde F_0$ |
 | $\tilde u_{\mathrm r}$ | Unit real quaternion rotor, the polarization factor of $\tilde F_0$ |
-| $\gamma = 1/\sqrt{1-v^2/c^2}$ | Lorentz factor (a number, not a gamma cell) |
+| $\gamma = 1/\sqrt{1-v^2/c^2}$ | Lorentz factor (a number, not an element of the algebra) |
 | $\vec v$ | Boost velocity, speed $v=\lvert\vec v\rvert$ |
-| $L_a, R_b$ | Left and right multiplication cells, $L_a\psi=a\psi$, $R_b\psi=\psi b$ |
-| $\gamma_0[\mathbb{M}_-],\dots,\gamma_3[\mathbb{M}_-],\gamma_5$ | The five gamma generators, frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, listed in §*The Legacy Pauli Gamma Formulation* |
-| $c(M)$ | Coefficient matrix of the two-sided operator $M$ |
-| $\Gamma = \gamma_5 = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, representative of $\chi_{\mathrm{ad}}$ on the Dirac module |
-| $F$ | Biquaternion-valued Dirac field of the two-sided equation, not the field strength |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | The general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | The general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Ludwik Silberstein, "Elektromagnetische Grundgleichungen in bivektorieller Behandlung", *Annalen der Physik* 22 (1907) 579–586, and 24 (1907) 783–784, for the original complex-vector formulation of the electromagnetic field.
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001, for a modern account of the complex-vector and duality structure.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the standard treatment of the field invariants and the transformation of the fields.
@@ -730,8 +599,6 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the spacetime-algebra treatment of the field strength and its invariants.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of Lorentz transformations and the bivector structure of the field.
 - [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-the-amplitude-and-the-operator-to-state-map.html), for the state that a non-Hermitian operator defines and its purity strata.
-- [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html), for the gamma frame, the central grading and the chiral halves.
-- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the one-sided and two-sided equations and the mass term.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the self-dual and anti-self-dual decomposition of the field tensor.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the representation theory of the Lorentz group and its two three-dimensional complex representations.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation of the field equations.

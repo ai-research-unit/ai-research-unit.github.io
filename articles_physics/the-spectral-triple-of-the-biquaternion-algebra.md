@@ -10,13 +10,13 @@ This article asks whether the biquaternion algebra $\mathbb{B}$ supports such a 
     $$
     \mathcal{D}=i\tilde\nabla+D_F,
     $$
-    with $\tilde\nabla=\sum_\mu L_{e_\mu}^{\mathrm{axf}}\partial/\partial Q_\mu$ the biquaternion gradient and $D_F$ the chirality-odd mass. Self-adjointness for the Hermitian form is not automatic, $(i\tilde\nabla)^{\dagger}=i\tilde\nabla^{\natural}$, and the candidate fails it: the coefficient $ie_t$ is anti-Hermitian, as the criterion requires, and the three $i\vec e_k$ are Hermitian, so the operator is self-adjoint in the time direction and skew in the spatial ones. It is self-adjoint for the indefinite Dirac form instead. The algebra acts through its real form $\mathbb{B}_{\mathbb{R}}$, by the defining representation on $S$ and by the conjugate on $S^{\mathrm{c}}$. A candidate triple therefore exists: $(\mathbb{B}_{\mathbb{R}},L^2(\Delta),\mathcal{D})$, or its almost-commutative generalisation $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$. The simple module $S$ alone cannot carry the chirality: every $\mathbb{B}$-linear operator on it is scalar, so the only grading of $S$ is trivial; the two Peirce copies $S_+\cong S_-$ are copies, not chiral halves. What the article checks is which axioms this candidate satisfies and which it does not. Three of them fail: the boundedness of the commutators with the non-central matrix elements under the left action, the first-order condition on the chiral module, and the oddness of the operator under a grading of its own module. Self-adjointness fails as well, and it fails for a reason of the same kind: the Clifford coefficients are algebra elements and their Hermiticity is the signature.
+    with $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$ the biquaternion gradient, acting on the left, and $D_F$ the chirality-odd mass. Self-adjointness for the Hermitian form is not automatic, $(i\tilde\nabla)^{\dagger}=i\tilde\nabla^{\natural}$, and the candidate fails it: the coefficient $ie_t$ is anti-Hermitian, as the criterion requires, and the three $i\vec e_k$ are Hermitian, so the operator is self-adjoint in the time direction and skew in the spatial ones. It is self-adjoint for the indefinite Dirac form instead. The algebra acts through its real form $\mathbb{B}_{\mathbb{R}}$, by the defining representation on $S$ and by the conjugate on $S^{\mathrm{c}}$. A candidate triple therefore exists: $(\mathbb{B}_{\mathbb{R}},L^2(\Delta),\mathcal{D})$, or its almost-commutative generalisation $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$. The simple module $S$ alone cannot carry the chirality: every $\mathbb{B}$-linear operator on it is scalar, so the only grading of $S$ is trivial; the two Peirce copies $S_+\cong S_-$ are copies, not chiral halves. What the article checks is which axioms this candidate satisfies and which it does not. Three of them fail: the boundedness of the commutators with the non-central matrix elements under the left action, the first-order condition on the chiral module, and the oddness of the operator under a grading of its own module. Self-adjointness fails as well, and it fails for a reason of the same kind: the Clifford coefficients are algebra elements and their Hermiticity is the signature.
 
 2. **The framework's real-form involution $\flat$ is an antilinear involution, and this is the article's sharpest algebraic point.** The spectral triple's real structure $J$ is an antilinear operator whose sign $J^2=\pm1$, together with the two signs of its commutation with $D$ and with the chirality, gives the triple's **KO-dimension**. The framework's real-form involution is $\flat=-{}^{*}$, and it was verified explicitly that
     $$
     \flat^2 = +1
     $$
-    on the algebra. The Euclidean frame's candidate charge conjugation is the cell $C=-L_{\vec e_z}^{\mathrm{axf}}$; it is real and antisymmetric in the frame of the four units, squares to $-1$, and commutes with the chirality, so the associated antilinear operator $J_C=CK$ has $J_C^2=-1$ and $J_C\chi=-\chi J_C$. That pair is the quaternionic class of Connes' table, $n\equiv2$ with $(\epsilon,\epsilon'')=(-1,-1)$, and it is the class the Standard-Model finite geometry uses at $n\equiv6$; four-dimensional Euclidean geometry is the real class $n\equiv4$ with $(\epsilon,\epsilon',\epsilon'')=(+1,+1,+1)$, whose sign agrees with the framework's. So $\flat$ is of the real type that four-dimensional geometry has, and what it cannot supply is the quaternionic sign the Standard-Model finite geometry needs: reaching $\epsilon=-1$ requires the module's quaternionic (right) structure, which is exactly the framework's statement that the Clifford algebra is $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. A central phase cannot supply the minus, because $(\lambda\flat)^2=|\lambda|^2\flat^2=+1$. Stating this precisely is the article's main contribution, and it is a genuine, checkable statement about the algebra rather than a re-description.
+    on the algebra. The Euclidean frame's candidate charge conjugation is the left action $\psi\mapsto-\vec e_z\psi$; it is real and antisymmetric in the frame of the four units, squares to $-1$, and commutes with the chirality, so the associated antilinear operator $J_C=CK$ has $J_C^2=-1$ and $J_C\chi=-\chi J_C$. That pair is the quaternionic class of Connes' table, $n\equiv2$ with $(\epsilon,\epsilon'')=(-1,-1)$, and it is the class the Standard-Model finite geometry uses at $n\equiv6$; four-dimensional Euclidean geometry is the real class $n\equiv4$ with $(\epsilon,\epsilon',\epsilon'')=(+1,+1,+1)$, whose sign agrees with the framework's. So $\flat$ is of the real type that four-dimensional geometry has, and what it cannot supply is the quaternionic sign the Standard-Model finite geometry needs: reaching $\epsilon=-1$ requires the module's quaternionic (right) structure, which is exactly the framework's statement that the Clifford algebra is $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. A central phase cannot supply the minus, because $(\lambda\flat)^2=|\lambda|^2\flat^2=+1$. Stating this precisely is the article's main contribution, and it is a genuine, checkable statement about the algebra rather than a re-description.
 
 3. **The spectral dimension is four, and the framework's metric-as-output is the spectral triple's distance formula read backwards.** The triple's dimension is read from the eigenvalue growth of $D$: if the eigenvalues grow like $n^{1/d}$, the triple has dimension $d$. For the biquaternion Dirac operator on four-dimensional spacetime — that is, for the almost-commutative triple, the finite factor alone having spectral dimension zero — the eigenvalues grow like $n^{1/4}$ and the spectral dimension is four. The same Seeley–DeWitt data that control the heat-kernel coefficients of *The Functional Determinant in Biquaternionic Form* and *The Trace Anomaly in Biquaternionic Form* control this growth: the exponent $d$ of the small-$t'$ expansion is the spectral dimension, and the coefficient that expansion marks as divergent is $a_{d/2}$, which at $d=4$ is $a_2$. The framework's claim that the Minkowski signature is an *output* of the level-1 form read on the material sector is the same shape of statement as the spectral triple's claim that the distance is an output of $D$: in both cases the geometric data is extracted from the algebraic one.
 
@@ -24,7 +24,7 @@ This article asks whether the biquaternion algebra $\mathbb{B}$ supports such a 
 
 5. **The article stands apart from the rest of the subcategory, and is last for that reason.** Everything before it has been quantum field theory: states, operator algebras, path integrals, finite-temperature and non-equilibrium machinery, and the two structural quantum effects. The spectral triple is a construction in non-commutative geometry, and its appearance here is as the algebraic interpretation of the framework's objects. It is included because the biquaternion algebra's non-commutativity and its module make the construction natural, and it is placed last because it uses the objects the other articles establish without being used by them.
 
-The sections that follow treat, in order: the definition and the axioms; the biquaternion candidate and its elementary properties; the real structure and the KO signs; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations and the spectral action; the almost-commutative triple and the finite geometry; the ledger of what is established and what is interpretation; and a closing section, *The Legacy Pauli Gamma Formulation*, where the cells are written out as gamma matrices, followed by a summary and a table of notation.
+The sections that follow treat, in order: the definition and the axioms; the biquaternion candidate and its elementary properties; the real structure and the KO signs; the spectral dimension and the heat kernel; the distance formula and the metric as output; inner fluctuations and the spectral action; the almost-commutative triple and the finite geometry; the ledger of what is established and what is interpretation; and a closing section, *The Legacy Pauli Gamma Formulation*, where the two-sided frame is written out as gamma matrices, followed by a summary and a table of notation.
 
 ## Spectral Triples and Their Axioms
 
@@ -50,15 +50,13 @@ whose signs give the **KO-dimension** of the triple, with $\chi$ the chirality o
 
 The candidate is assembled from objects the rest of the series already uses, and the assembly is checked before any axiom is asserted.
 
-**Cells.** Write $L_a\psi=a\psi$, $R_b\psi=\psi b$, and $L_aR_b\psi=a\psi b$ for the two-sided action. The product is
-$$
-L_aR_bL_cR_d=L_{ac}R_{db},
-$$
-and left and right multiplications commute, $[L_a,R_b]=0$. The article is written in cells. Every $\mathbb{C}$-linear operator on the regular module is a sum of cells, the sixteen $L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}}$ being a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and a single cell is the reading in which the two-sided action is displayed. A block matrix appears only where a cell cannot represent the object: for the mass operator, which is not $\mathbb{B}_{\mathbb{R}}$-linear, and for the block form of the grading it opposes.
+**The two actions.** An element $a$ acts on an element $\psi$ of the algebra in three ways: on the left, $\psi\mapsto a\psi$; on the right, $\psi\mapsto\psi b$; and on both sides at once, $\psi\mapsto a\psi b$. The left and right actions commute, $(a\psi)b=a(\psi b)$. They are not of one kind: a right action commutes with every left action and is a map of the left module $\mathbb{B}$ to itself, while a left action commutes with every right action and is a map of the right module, failing to commute with left multiplication by a non-central element. Below, $a\cdot$ denotes the left action and $\cdot b$ the right action. The distinction between the sides is the article's subject, and it is stated once here and used throughout: an action is named by the side it acts on and by the element it uses, never by a letter that stands for an operator.
+
+Two facts are used below. The sixteen maps $\psi\mapsto e_\mu\psi e_\nu$, one for each pair of units, span all $\mathbb{C}$-linear maps of $\mathbb{B}$ to itself, which is $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, so every operator this article writes is one of them or a sum. And because a right action commutes with every left action, a grading that is a right action is invisible to a gradient that acts on the left — which is where the grading of this triple fails. A block matrix appears only where no action of the algebra on itself can represent the object: for the mass operator, which is not $\mathbb{B}_{\mathbb{R}}$-linear, and for the block form of the grading it opposes.
 
 **The algebra and the module.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ as a complex algebra, and its real form is $\mathbb{B}_{\mathbb{R}}$. The representation is the defining one on $S$ and its conjugate on $S^{\mathrm{c}}$: for $a\in\mathbb{B}_{\mathbb{R}}$,
 $$
-L_a(s,t)=(as,\bar a\,t),\qquad s\in S,\ t\in S^{\mathrm{c}},
+a\cdot(s,t)=(as,\bar a\,t),\qquad s\in S,\ t\in S^{\mathrm{c}},
 $$
 with $\bar a$ the complex conjugate, which is the action on the conjugate module.
 The module $\Delta=S\oplus S^{\mathrm{c}}$ is four-complex-dimensional, and the two summands are conjugate, not copies. That is the difference between $\Delta$ and the regular module $S\oplus S$: the regular module's two summands are the Peirce copies, and the chiral module's two summands are a representation and its conjugate.
@@ -80,9 +78,9 @@ It is the Hermitian form of *Norm and Pairing Conventions*, not the plain biline
 $$
 \mathcal{D}=i\tilde\nabla+D_F,
 \qquad
-\tilde\nabla=\sum_\mu L_{e_\mu}^{\mathrm{axf}}\frac{\partial}{\partial Q_\mu},
+\tilde\nabla=\sum_\mu e_\mu\,\frac{\partial}{\partial Q_\mu},
 $$
-with $D_F$ the mass of the next paragraph. With respect to the Hermitian form the gradient's adjoint reverses its units,
+with $D_F$ the mass of the next paragraph. The gradient is an element with derivative coefficients, and $\tilde\nabla\psi$ means its left action on $\psi$; no other action is meant anywhere below. With respect to the Hermitian form the gradient's adjoint reverses its units,
 $$
 \tilde\nabla^{\dagger}=-\tilde\nabla^{\natural},
 \qquad
@@ -108,7 +106,11 @@ $$
 $$
 with the mass acting on the right through conjugation. The dictionary between the two-sided field and the chiral pair is $\tilde\Psi_R=-i\overline{F}\,\vec e_z$, so the three displays describe one physics: the first is the chirality form, the second the pair operator written once, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added.
 
-**The chirality.** The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign of the double,
+**The chirality.** The chirality is right multiplication by the element $-i\vec e_z$,
+$$
+\chi:\psi\longmapsto-i\psi\vec e_z=\psi\,(-i\vec e_z),
+$$
+the second form holding because $i$ is central; its central form is the sign of the double,
 $$
 \chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-,
 \qquad
@@ -116,22 +118,18 @@ $$
 $$
 and it is represented differently on the two modules, which is why the article carries two forms of it.
 
-- On the regular module it is the cell
-    $$
-    \chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
-    $$
-    a right multiplication: self-adjoint for the Hermitian form, of square $I_4$, and commuting with every left multiplication.
+- On the regular module it is that right action, $\psi\mapsto-i\psi\vec e_z$: self-adjoint for the Hermitian form, of square $I_4$, and commuting with every left action.
 - On the chiral module $\Delta$ it is the block matrix $\operatorname{diag}(-I_2,I_2)$, because it grades the two summands $S$ and $S^{\mathrm{c}}$.
 
-The two matrices are unitarily equivalent — both are Hermitian with eigenvalues $+1,+1,-1,-1$ — and neither form is a decoration. The block form is the eigenbasis form, which is why it is the one used for $D_F$ and in the tables; the cell form shows $\chi$ to be a right multiplication, and that is what decides on which side a grading can work.
+The two matrices are unitarily equivalent — both are Hermitian with eigenvalues $+1,+1,-1,-1$ — and neither form is a decoration. The block form is the eigenbasis form, which is why it is the one used for $D_F$ and in the tables; the regular-module form shows $\chi$ to be a right action, and that is what decides on which side a grading can work.
 
-The Peirce index is the cell
+The Peirce index is right multiplication by $i\vec e_z$,
 $$
-P=R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}},
+P:\psi\longmapsto i\psi\vec e_z,
 $$
-so as cells $\chi=-P$. The two gradings are the same cell up to sign, and they grade different modules: $P$ grades the regular module's two Peirce copies $S_+\cong S_-$, while $\chi$ grades the chiral halves $S$ and $S^{\mathrm{c}}$ of $\Delta$. The Peirce index is therefore a copy label, and only the grading $\chi$ is the chirality; the difference is the module, not the cell. On $\Delta$ the pattern is the almost-commutative one: the grading is the finite chirality, $[\chi,L_a]=0$ and $\{\chi,D_F\}=0$, so the mass is odd and the gradient, being a sum of left multiplications, is even. Neither statement is available for the right action, for a reason visible in cells: $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ is itself a right multiplication, so it commutes with $R_{e_t}^{\mathrm{axf}}$ and $R_{\vec e_z}^{\mathrm{axf}}$ and anticommutes with $R_{\vec e_x}^{\mathrm{axf}}$ and $R_{\vec e_y}^{\mathrm{axf}}$, the commutator attaining size $2$ there.
+so as maps $\chi=-P$. The two gradings are the same action up to sign, and they grade different modules: $P$ grades the regular module's two Peirce copies $S_+\cong S_-$, while $\chi$ grades the chiral halves $S$ and $S^{\mathrm{c}}$ of $\Delta$. The Peirce index is therefore a copy label, and only the grading $\chi$ is the chirality; the difference is the module, not the action. On $\Delta$ the pattern is the almost-commutative one: the grading is the finite chirality, it commutes with every left action and anticommutes with the mass, so the mass is odd and the gradient, being a left action, is even. Neither statement is available for the right action, and the reason is immediate: $\chi$ is itself a right action, so it commutes with right multiplication by $e_t$ and by $\vec e_z$ and anticommutes with right multiplication by $\vec e_x$ and by $\vec e_y$, the commutator attaining size $2$ there.
 
-**What $\chi$ does not grade.** The gradient is even under $\chi$ and the mass is odd, so $\mathcal{D}=i\tilde\nabla+D_F$ is neither, and the reason is algebraic rather than a choice of signs: $\chi$ is a right multiplication and the gradient a sum of left multiplications, so they commute whatever the coefficients. The operator that differentiates therefore cannot see the grading, and within $\mathcal{D}$ only the mass sees it. This is why a graded triple needs $\Gamma=G_M\otimes\chi$: the oddness of $D$ is carried by the manifold chirality $G_M$ and not by $\mathcal{D}$ alone. The finite triple $(\mathbb{B}_{\mathbb{R}},\Delta,D_F)$ is graded and odd; it is the whole operator on $\Delta$ that has no grading. This is the same collapse seen from the other side: the framework has one module where the construction has two factors.
+**What $\chi$ does not grade.** The gradient is even under $\chi$ and the mass is odd, so $\mathcal{D}=i\tilde\nabla+D_F$ is neither, and the reason is algebraic rather than a choice of signs: $\chi$ is a right action and the gradient a left action, so they commute whatever the coefficients. The operator that differentiates therefore cannot see the grading, and within $\mathcal{D}$ only the mass sees it. This is why a graded triple needs $\Gamma=G_M\otimes\chi$: the oddness of $D$ is carried by the manifold chirality $G_M$ and not by $\mathcal{D}$ alone. The finite triple $(\mathbb{B}_{\mathbb{R}},\Delta,D_F)$ is graded and odd; it is the whole operator on $\Delta$ that has no grading. This is the same collapse seen from the other side: the framework has one module where the construction has two factors.
 
 **The mass.** The mass is the off-diagonal operator
 $$
@@ -145,22 +143,22 @@ between the two summands; in the block basis $(S,S^{\mathrm{c}})$ it is
 $$
 D_F=\begin{pmatrix}0&m\\ \bar m&0\end{pmatrix}.
 $$
-This is the matrix of the operator, not a cell: a cell $L_aR_b$ is $\mathbb{B}_{\mathbb{R}}$-linear, and $D_F$ is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$. It is Hermitian, $D_F^2=|m|^2I$, its eigenvalues are $\pm|m|$ each with multiplicity two, and it is odd under the chirality,
+This is the matrix of the operator, not an action of the algebra on itself: $D_F$ is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$. It is Hermitian, $D_F^2=|m|^2I$, its eigenvalues are $\pm|m|$ each with multiplicity two, and it is odd under the chirality,
 $$
 \chi D_F+D_F\chi=0.
 $$
 
-**The commutator with the algebra.** For $a\in\mathbb{B}_{\mathbb{R}}$ the left multiplication $L_a$ acts as $a$ on $S$ and $\bar a$ on $S^{\mathrm{c}}$, and the two terms separate,
+**The commutator with the algebra.** For $a\in\mathbb{B}_{\mathbb{R}}$ the left action $a\cdot$ is $a$ on $S$ and $\bar a$ on $S^{\mathrm{c}}$, and the two terms separate,
 $$
-[\mathcal{D},L_a]=[i\tilde\nabla,L_a]+[D_F,L_a].
+[\mathcal{D},a\cdot]=[i\tilde\nabla,a\cdot]+[D_F,a\cdot].
 $$
 The mass term is explicit in the $S,S^{\mathrm{c}}$ blocks,
 $$
-[D_F,L_a](s,t)=\bigl(m(\bar a-a)t,\ \bar m(a-\bar a)s\bigr),
+[D_F,a\cdot](s,t)=\bigl(m(\bar a-a)t,\ \bar m(a-\bar a)s\bigr),
 $$
 written for the central mass $m\in\mathbb{C}$; for a biquaternionic mass the order matters, and $m(\bar a-a)$ is replaced by $m\bar a-am$. The asymmetry between $a$ and $\bar a$ is the whole content: the two halves of $\Delta$ carry the defining representation and its conjugate, and it is because they differ that the mass fails to commute with the algebra. On the regular module the same matrix would act as $a$ on both halves, and the commutator would vanish.
 
-The commutator is not, however, nonzero for every non-scalar $a$, and saying which elements it does vanish on is worth the precision. The conjugation here is the one carried by the coordinate identification $S^{\mathrm{c}}\to S$, and on the four units it reads $\overline{e_t}=e_t$, $\overline{\vec e_y}=\vec e_y$, $\overline{\vec e_x}=-\vec e_x$, $\overline{\vec e_z}=-\vec e_z$. So $[D_F,L_a]=0$ exactly when $a$ lies in $\mathbb{R}[\vec e_y]$, the copy of $\mathbb{C}$ spanned over $\mathbb{R}$ by $\vec e_y$ inside $\mathbb{B}_{\mathbb{R}}$ — a commutative subalgebra, and the largest one on which the mass commutes with the left action. For $\vec e_x$ and $\vec e_z$ the commutator is $2m$ times an off-diagonal block. The parallel with Connes' two-point space is exact in this one respect: there the finite algebra $\mathbb{C}\oplus\mathbb{C}$ is abelian and the condition holds. What the mass tolerates is a commutative subalgebra, and the non-abelian part of $\mathbb{B}_{\mathbb{R}}$ is where it fails.
+The commutator is not, however, nonzero for every non-scalar $a$, and saying which elements it does vanish on is worth the precision. The conjugation here is the one carried by the coordinate identification $S^{\mathrm{c}}\to S$, and on the four units it reads $\overline{e_t}=e_t$, $\overline{\vec e_y}=\vec e_y$, $\overline{\vec e_x}=-\vec e_x$, $\overline{\vec e_z}=-\vec e_z$. So $[D_F,a\cdot]=0$ exactly when $a$ lies in $\mathbb{R}[\vec e_y]$, the copy of $\mathbb{C}$ spanned over $\mathbb{R}$ by $\vec e_y$ inside $\mathbb{B}_{\mathbb{R}}$ — a commutative subalgebra, and the largest one on which the mass commutes with the left action. For $\vec e_x$ and $\vec e_z$ the commutator is $2m$ times an off-diagonal block. The parallel with Connes' two-point space is exact in this one respect: there the finite algebra $\mathbb{C}\oplus\mathbb{C}$ is abelian and the condition holds. What the mass tolerates is a commutative subalgebra, and the non-abelian part of $\mathbb{B}_{\mathbb{R}}$ is where it fails.
 
 **The same fact in the companion's coordinates.** *The Unpolarized Module of the Biquaternion Algebra* writes the conjugate action in the $\epsilon$-dressed model,
 $$
@@ -168,7 +166,7 @@ $$
 \qquad
 \epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
 $$
-On the four units the dressing changes nothing, $\epsilon\overline{\mathsf M_2(e_\mu)}\epsilon^{-1}=\mathsf M_2(e_\mu)$, so the two blocks look alike and the algebra appears to act in the same way on both halves. It does not: the dressing conjugates the coefficient of $e_t$, so $\rho(i)=\operatorname{diag}(iI_2,-iI_2)$, and $\rho(a)\ne\operatorname{diag}(\mathsf M_2(a),\mathsf M_2(a))$ for a general $a\in\mathbb{B}_{\mathbb{R}}$. The two frames differ by the cell $\operatorname{diag}(I_2,\epsilon)$ in the second summand; under it the mass is no longer the plain matrix but
+On the four units the dressing changes nothing, $\epsilon\overline{\mathsf M_2(e_\mu)}\epsilon^{-1}=\mathsf M_2(e_\mu)$, so the two blocks look alike and the algebra appears to act in the same way on both halves. It does not: the dressing conjugates the coefficient of $e_t$, so $\rho(i)=\operatorname{diag}(iI_2,-iI_2)$, and $\rho(a)\ne\operatorname{diag}(\mathsf M_2(a),\mathsf M_2(a))$ for a general $a\in\mathbb{B}_{\mathbb{R}}$. The two frames differ by the matrix $\operatorname{diag}(I_2,\epsilon)$ in the second summand; under it the mass is no longer the plain matrix but
 $$
 \begin{pmatrix}0&m\epsilon\\ \bar m\epsilon^{-1}&0\end{pmatrix},
 $$
@@ -176,7 +174,7 @@ and the commutator is the one computed above, zero on $\mathbb{R}[\vec e_y]$ and
 
 **The order of the gradient commutator.** The gradient term is *not* zeroth order, and this is the first place where the algebra meets the Clifford coefficients. Because $a$ is a constant of the finite algebra, $\partial/\partial x_\mu(a\psi)=a\,\partial \psi/\partial x_\mu$, so
 $$
-[i\tilde\nabla,L_a]\psi=i\sum_\mu L_{[e_\mu,a]}\,\frac{\partial\psi}{\partial Q_\mu},
+[i\tilde\nabla,a\cdot]\psi=i\sum_\mu[e_\mu,a]\,\frac{\partial\psi}{\partial Q_\mu},
 $$
 which carries a derivative whenever $a$ fails to commute with the units. The principal symbol states the criterion exactly: the symbol of $\tilde\nabla$ is Clifford multiplication by $\sum_\mu\xi_\mu e_\mu$, so the commutator is bounded precisely when
 $$
@@ -184,24 +182,24 @@ $$
 $$
 that is, precisely when $a$ commutes with all four units. The centralizer of the units in $\mathbb{B}$ is the complex line $\mathbb{C}e_t$, and the three cases follow.
 
-- A scalar multiplier $f$ commutes with the units, and the commutator is the zeroth-order $[i\tilde\nabla,L_f]=iL_{\tilde\nabla f}$, hence bounded. This is the classical statement for functions, and it is the reason the naive formula $[i\tilde\nabla,L_a]=iL_{\tilde\nabla a}$ holds for them and fails for the rest of the algebra.
+- A scalar multiplier $f$ commutes with the units, and the commutator is the zeroth-order $[i\tilde\nabla,f\cdot]=i\,(\tilde\nabla f)\cdot$, hence bounded. This is the classical statement for functions, and it is the reason the naive formula $[i\tilde\nabla,a\cdot]=i\,(\tilde\nabla a)\cdot$ holds for them and fails for the rest of the algebra.
 - A non-central matrix multiplier $a\in\mathbb{B}_{\mathbb{R}}$ gives a first-order commutator, hence an unbounded one on the field-theoretic module: the **bounded-commutator condition fails for the left action of the matrix factor**. On the finite module the condition is vacuous — every operator on $\mathbb{C}^4$ is bounded — so the failure is a statement about $L^2(\Delta)$, the sections over spacetime, and not about the finite geometry. Note what makes it fail: in Connes' almost-commutative triple the continuum operator is $D_M\otimes I_F$ and carries no element of the finite algebra, so its commutators with the finite factor vanish. Here the Clifford coefficients of the gradient are themselves elements of the algebra and are four of them, and that is what turns the commutator first order.
-- The right action passes: for the constant factor $[\tilde\nabla,R_a]=0$ identically, and for a function the commutator is the bounded cell $[\tilde\nabla,R_f]=\sum_\mu L_{e_\mu}^{\mathrm{axf}}R_{\partial f/\partial Q_\mu}$.
+- The right action passes: for a constant factor $[\tilde\nabla,\cdot a]=0$ identically, and for a function the commutator is the bounded two-sided action $[\tilde\nabla,\cdot f]\psi=\sum_\mu e_\mu\psi\,\partial f/\partial Q_\mu$.
 
 The asymmetry is the structural point. The four units are the Clifford coefficients and elements of the algebra at once, so an action on the same side as the units is seen by them; the side that the Clifford coefficients do not see is the right one. The symbol check is exact, and it is read in the defining $2\times2$ representation: at $\xi=(0.3,-0.7,1.1,0.4)$, the largest entry of $[\sum_\mu\xi_\mu e_\mu,a]$ is $2.2$ for $\vec e_x$, $1.4$ for $\vec e_y$, $2.6$ for $\vec e_z$, and exactly $0$ for $e_t$ and for the central scalars such as $ie_t$. The commutator is bilinear, so a general $a$ scales these numbers by its own coefficients; the units are the meaningful comparison, and none of the three non-central units gives zero.
 
 **The first-order condition.** With the candidate real structure read from $\flat$, written $J_{\flat}$ on the module, the condition is
 $$
-[[\mathcal{D},L_a],J_{\flat}b^{*}J_{\flat}^{-1}]=0.
+[[\mathcal{D},a\cdot],J_{\flat}b^{*}J_{\flat}^{-1}]=0.
 $$
 The two minus signs from $\flat=-{}^{*}$ cancel in the combination, so $J_{\flat}b^{*}J_{\flat}^{-1}$ is the opposite action. What the opposite action *is* depends on the module, and the two candidates sit on different modules; that is the whole subtlety of this axiom here.
 
-- **On the regular module** it is the cell $R_b$, and left and right multiplications commute. The gradient's commutator is a sum of cells times derivatives and a derivative commutes with $R_b$, so
+- **On the regular module** it is the right action $\cdot b$, and left and right actions commute. The gradient's commutator is a left action times derivatives, and a derivative commutes with a right action, so
     $$
-    \bigl[[i\tilde\nabla,L_a],R_b\bigr]=0
+    \bigl[[i\tilde\nabla,a\cdot],\cdot b\bigr]=0
     $$
     identically (maximum entry over the sixteen index pairs: $0$), and the condition is decided by the mass.
-- **On $\Delta$** it is not a cell but $\operatorname{diag}(b^{\mathsf T},\bar b^{\mathsf T})$, transposition on $S$ and its conjugate on $S^{\mathrm{c}}$. No left multiplication commutes with that unless it is central, so the gradient's commutator survives:
+- **On $\Delta$** it is not an action but $\operatorname{diag}(b^{\mathsf T},\bar b^{\mathsf T})$, transposition on $S$ and its conjugate on $S^{\mathrm{c}}$. No left multiplication commutes with that unless it is central, so the gradient's commutator survives:
     $$
     \Bigl[\pi\Bigl(\bigl[\textstyle\sum_\mu\xi_\mu e_\mu,a\bigr]\Bigr),\ \operatorname{diag}(b^{\mathsf T},\bar b^{\mathsf T})\Bigr]=0
     $$
@@ -209,16 +207,16 @@ The two minus signs from $\flat=-{}^{*}$ cancel in the combination, so $J_{\flat
 
 The two candidates therefore separate, and they separate at different places.
 
-- **The vector-like candidate** lives on the regular module, where its mass is the right multiplication $R_m$ with $m$ central and real, so that $R_m$ is self-adjoint for the Hermitian form, $R_m^{\dagger}=R_{\bar m}$. That commutes with every left multiplication, so $[D_F,L_a]=0$ and
+- **The vector-like candidate** lives on the regular module, where its mass is the right action $\cdot m$ with $m$ central and real, which is self-adjoint for the Hermitian form. A right action commutes with every left action, so $[D_F,a\cdot]=0$ and
     $$
-    \boxed{\;[[\mathcal{D},L_a],R_b]=0\quad\text{for all }a,b\in\mathbb{B}_{\mathbb{R}}\;}
+    \boxed{\;[[\mathcal{D},a\cdot],\cdot b]=0\quad\text{for all }a,b\in\mathbb{B}_{\mathbb{R}}\;}
     $$
-    Both terms vanish exactly rather than approximately, so the condition holds for this candidate on this module. The bounded-commutator condition of the previous paragraph still fails for its left action, and the boxed statement is a statement about the regular module: it does not transfer to $\Delta$. Nor is the success free of charge. The regular module's only grading is the Peirce index $P=iR_{\vec e_z}^{\mathrm{axf}}$, and $R_m$ commutes with it, as does the gradient, both being right multiplications; the whole operator is therefore even under $P$, and this candidate has no odd grading at all. On $\Delta$ the finite part is at least odd, because the mass is off-diagonal there. The two candidates therefore fail different axioms: the vector-like one keeps the first-order condition and loses every grading, and the chiral one keeps the odd finite part and loses the first-order condition.
-- **The chiral triple** lives on $\Delta$, and there the condition is the intersection of two. The gradient admits the centre $\mathbb{C}e_t$ only, because a scalar symbol is what the transposition cannot see; the mass admits the fixed set $\mathbb{R}[\vec e_y]$ only, because $[D_F,L_a]$ is the off-diagonal $m(\bar a-a)$ and the conjugation fixes $e_t$ and $\vec e_y$. Neither set contains the other, and their intersection is the real scalars $\mathbb{R}e_t$: $a=\vec e_y$ passes the mass and fails the gradient, and $a=(1+i)e_t$ passes the gradient and fails the mass, since $\bar a\ne a$ for a non-real scalar and the second summand sees $\bar\lambda$. **The chiral triple therefore satisfies the first-order condition exactly on $\mathbb{R}e_t$, and fails it on every other element of $\mathbb{B}_{\mathbb{R}}$.**
+    Both terms vanish exactly rather than approximately, so the condition holds for this candidate on this module. The bounded-commutator condition of the previous paragraph still fails for its left action, and the boxed statement is a statement about the regular module: it does not transfer to $\Delta$. Nor is the success free of charge. The regular module's only grading is the Peirce index $P$, and the mass commutes with it, as does the gradient: the mass is a right action and right actions commute with one another, and the gradient is a left action. The whole operator is therefore even under $P$, and this candidate has no odd grading at all. On $\Delta$ the finite part is at least odd, because the mass is off-diagonal there. The two candidates therefore fail different axioms: the vector-like one keeps the first-order condition and loses every grading, and the chiral one keeps the odd finite part and loses the first-order condition.
+- **The chiral triple** lives on $\Delta$, and there the condition is the intersection of two. The gradient admits the centre $\mathbb{C}e_t$ only, because a scalar symbol is what the transposition cannot see; the mass admits the fixed set $\mathbb{R}[\vec e_y]$ only, because $[D_F,a\cdot]$ is the off-diagonal $m(\bar a-a)$ and the conjugation fixes $e_t$ and $\vec e_y$. Neither set contains the other, and their intersection is the real scalars $\mathbb{R}e_t$: $a=\vec e_y$ passes the mass and fails the gradient, and $a=(1+i)e_t$ passes the gradient and fails the mass, since $\bar a\ne a$ for a non-real scalar and the second summand sees $\bar\lambda$. **The chiral triple therefore satisfies the first-order condition exactly on $\mathbb{R}e_t$, and fails it on every other element of $\mathbb{B}_{\mathbb{R}}$.**
 
 **What the candidate does not supply.** Five things are worth separating from what it does supply.
 
-- The side on which the matrix factor can act is constrained. Bounded commutators hold for the right action and fail for the left on the non-central elements, while the grading holds for the left action and fails for the right, because $\chi$ is itself a right multiplication. No single side carries both, and the obstruction in both cases is the same: the Clifford coefficients are elements of the algebra. The first-order condition is a third, separate failure: on $\Delta$ the gradient's symbol already breaks it for every element outside the real scalars, because the opposite action there is a transposition rather than a right multiplication.
+- The side on which the matrix factor can act is constrained. Bounded commutators hold for the right action and fail for the left on the non-central elements, while the grading holds for the left action and fails for the right, because $\chi$ is itself a right action. No single side carries both, and the obstruction in both cases is the same: the Clifford coefficients are elements of the algebra. The first-order condition is a third, separate failure: on $\Delta$ the gradient's symbol already breaks it for every element outside the real scalars, because the opposite action there is a transposition rather than a right multiplication.
 - The operator has no grading on its own module. $\chi$ commutes with the gradient and anticommutes with the mass, so $\mathcal{D}$ is neither even nor odd under $\chi$; the grading of a full triple is $G_M\otimes\chi$, which grades the product $L^2(S)\otimes\Delta$ and not $\Delta$ alone.
 - The Hilbert space and the operator do not decide the finite geometry. In Connes' construction the finite algebra and the finite Dirac operator are constrained by the axioms and by the requirement that the spectral action reproduce the Standard Model; here the finite operator is the framework's mass, and the finite algebra is $\mathbb{B}_{\mathbb{R}}$, but the constraints are not imposed and the particle content is not derived.
 - The algebra is matrix-like, and the finite geometry of the Standard Model is not a matrix algebra. The Standard-Model finite algebra is $\mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C})$, and $\mathbb{B}_{\mathbb{R}}$ is not that algebra; the two can be compared, but not identified.
@@ -254,26 +252,27 @@ $$
 $$
 On the module that involution is the antilinear operator $J_{\flat}(\psi)=-\psi^{*}$, of square $+1$, and the two minus signs cancel in the order-one combination:
 $$
-J_{\flat}b^{*}J_{\flat}^{-1}=R_b.
+J_{\flat}b^{*}J_{\flat}^{-1}=\cdot b,
 $$
+the right action.
 The global minus is therefore immaterial for the first-order condition, but it must be kept in the signs of the algebra and in the product rule above.
 
-**The Euclidean candidate.** For comparison, the Euclidean frame carries an antisymmetric cell of square $-1$, offered in the literature as a charge conjugation. In that frame
+**The Euclidean candidate.** For comparison, the Euclidean frame carries an antisymmetric operator of square $-1$, offered in the literature as a charge conjugation. In that frame
 $$
-E_4=iR_{\vec e_x}^{\mathrm{axf}},
+E_4:\psi\longmapsto i\psi\vec e_x,
 \qquad
-E_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
-\quad(k=1,2,3)
+E_k:\psi\longmapsto-\vec e_k\psi\vec e_y
+\quad(k=1,2,3),
 $$
-all four generators are Hermitian, square to $+1$, and pairwise anticommute. Their product is the chirality,
+and the four are not of one kind: $E_4$ is a right action, while the three $E_k$ act on both sides. All four are Hermitian, square to $+1$, and pairwise anticommute. Their product is the chirality,
 $$
-E_1E_2E_3E_4=-iR_{\vec e_z}^{\mathrm{axf}},
+E_1E_2E_3E_4:\psi\longmapsto-i\psi\vec e_z,
 \qquad
-(E_1E_2E_3E_4)^2=I_4.
+(E_1E_2E_3E_4)^2=I_4,
 $$
-The candidate for the charge-conjugation cell is
+a right action. The candidate for the charge conjugation is the left action
 $$
-C=-L_{\vec e_z}^{\mathrm{axf}}=E_1E_2,
+C:\psi\longmapsto-\vec e_z\psi=E_1E_2,
 \qquad
 C^2=-I_4,
 \qquad
@@ -284,7 +283,7 @@ The antilinear operator built from it is $J_C=CK$, with $K$ complex conjugation,
 $$
 J_C^2=C\bar C=C^2=-1.
 $$
-The cell $C$ conjugates each generator to its transpose up to sign, and the signs are not uniform in this frame:
+The operator $C$ conjugates each generator to its transpose up to sign, and the signs are not uniform in this frame:
 $$
 CE_1C^{-1}=-E_1^{\mathsf T},
 \quad
@@ -294,17 +293,17 @@ CE_3C^{-1}=+E_3^{\mathsf T},
 \quad
 CE_4C^{-1}=-E_4^{\mathsf T}.
 $$
-Three minus signs and one plus. Uniformity of those signs, not the sign of the square, is where this cell fails the definition of a charge conjugation.
+Three minus signs and one plus. Uniformity of those signs, not the sign of the square, is where this operator fails the definition of a charge conjugation.
 
-Two of the three signs are reached here, and they come out as a pair. The chirality $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ is Hermitian, and in the coefficient basis of the cells its entries are purely imaginary, so $K$ maps it to $-\chi$; $C$ is real in that basis and commutes with it, hence $J_C\chi J_C^{-1}=C\bar\chi C^{-1}=-\chi$ and $\epsilon''=-1$. The value is not an accident of this frame, but showing that needs the right transformation rule. An antilinear map with matrix $M$, $J\psi=M\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$, changes frame as $M\mapsto U^{-1}M\bar U$ rather than by conjugation, and with that rule $J_C^2$ and $J_C\chi J_C^{-1}$ are carried to themselves. Transforming $C$ and $K$ separately, as though $J_C$ were a product of two linear factors, gives a different antilinear map and in general a different sign. That is why the block form $\chi=\operatorname{diag}(-I_2,I_2)$, convenient for $D_F$ and for the tables, is not the frame in which to read $\epsilon''$ off the matrix $C$ alone.
+Two of the three signs are reached here, and they come out as a pair. The chirality $\chi$ is Hermitian, and in the basis of the four units its matrix has purely imaginary entries, so $K$ maps it to $-\chi$; $C$ is real in that basis and commutes with it, hence $J_C\chi J_C^{-1}=C\bar\chi C^{-1}=-\chi$ and $\epsilon''=-1$. The value is not an accident of this frame, but showing that needs the right transformation rule. An antilinear map changes frame by conjugating its matrix, $M\mapsto U^{-1}M\bar U$, and not by transforming the two factors separately; with that rule $J_C^2$ and $J_C\chi J_C^{-1}$ are carried to themselves, whereas transforming $C$ and $K$ apart, as though $J_C$ were a product of two linear factors, gives a different antilinear map and in general a different sign. That is why the block form $\chi=\operatorname{diag}(-I_2,I_2)$, convenient for $D_F$ and for the tables, is not the frame in which to read $\epsilon''$ off the matrix $C$ alone.
 
-Two properties of $J_C$ are then immediate. The cell $C$ is unitary, so $J_C$ is an isometry; and $J_C^2=C\bar C=C^2=-1$ because $C$ is real. A rescaling $J_C\mapsto\lambda J_C$ with $|\lambda|=1$ changes neither $J_C^2$, where the factor is $|\lambda|^2=1$, nor $J_C\chi J_C^{-1}$, where the phase cancels. Both signs are therefore properties of the pair $(C,\chi)$, and the pair $(\epsilon,\epsilon'')=(-1,-1)$ is the $n\equiv2$ line of Connes' table, not the $n\equiv4$ one.
+Two properties of $J_C$ are then immediate. The operator $C$ is unitary, so $J_C$ is an isometry; and $J_C^2=C\bar C=C^2=-1$ because $C$ is real. A rescaling $J_C\mapsto\lambda J_C$ with $|\lambda|=1$ changes neither $J_C^2$, where the factor is $|\lambda|^2=1$, nor $J_C\chi J_C^{-1}$, where the phase cancels. Both signs are therefore properties of the pair $(C,\chi)$, and the pair $(\epsilon,\epsilon'')=(-1,-1)$ is the $n\equiv2$ line of Connes' table, not the $n\equiv4$ one.
 
 What is compared with the framework's $\flat$ is consequently $\epsilon$ alone, the sign of $J_C^2=C\bar C$, which for real $C$ is the sign of $C^2$; the sign $\epsilon'$ of $J_CD=\epsilon'DJ_C$ involves $D$ itself and is not computed.
 
 **Which table.** The two dictionaries that matter here disagree, and the disagreement is not about this frame. Connes' table gives $(+1,+1,+1)$ for $n\equiv4$ and $(-1,+1,-1)$ for $n\equiv6$, so four-dimensional Euclidean spin geometry is of the real class and the Standard-Model finite geometry, which sits at $n=6$, is of the quaternionic one. The table of *Spectral Triples and Noncommutative Geometry* prints $(-1,+1,+1)$ at $n=4$ and $(+1,+1,-1)$ at $n=6$, that is the two rows exchanged: its $\epsilon$ at $n=4$ is minus where Connes' is plus, and its $\epsilon$ at $n=6$ is plus where Connes' is minus. Under Connes' table the four-dimensional sign is $+1$, the same as $\flat^2$, and this is what the geometry says: a four-dimensional Euclidean triple has $J^2=+1$.
 
-**What the cell shows.** The cell's pattern settles the question of what it is. $C$ has $C^2=-1$ and commutes with $\chi$, and its transposition signs are not uniform; a charge conjugation proper needs a single sign for all four generators and, in four dimensions, $J^2=+1$. This $C$ is therefore not the dimension-four charge conjugation, and the frame's $-1$ is not a normalisation slip to be corrected: it is the quaternionic sign, and it belongs to the module's quaternionic structure, which is the class the Standard-Model finite geometry needs. So the comparison resolves, and it resolves against the corpus's row rather than against the frame.
+**What $C$ shows.** The pattern settles the question of what it is. $C$ has $C^2=-1$ and commutes with $\chi$, and its transposition signs are not uniform; a charge conjugation proper needs a single sign for all four generators and, in four dimensions, $J^2=+1$. This operator is therefore not the dimension-four charge conjugation, and the frame's $-1$ is not a normalisation slip to be corrected: it is the quaternionic sign, and it belongs to the module's quaternionic structure, which is the class the Standard-Model finite geometry needs. So the comparison resolves, and it resolves against the corpus's row rather than against the frame.
 
 **The reconciliation.** The framework's $\flat^2=+1$ is the real sign, and the sign it does not give is the quaternionic one, $\epsilon=-1$. The difference is a fact about the algebra and the module rather than a relabelling. The module carries a quaternionic structure, an antilinear map $\mathcal{J}$ with $\mathcal{J}^2=-1$, and it is this structure, not the central circle, that can supply the missing minus. A central phase $\lambda$ cannot: composing $\flat$ with it gives
 $$
@@ -385,11 +384,7 @@ D=D_M\otimes I_F+G_M\otimes D_F,
 $$
 with $D_M$ the Dirac operator of the manifold, $G_M$ the chirality of its spinor factor, written with a capital to distinguish it from the finite chirality $\chi$, $D_F$ a finite matrix acting on $\mathcal{H}_F$, and the second term the only coupling to the finite geometry. The two gradings must not be confused: $G_M$ grades $L^2(S)$, while $\chi$ grades the chiral halves of $\Delta$, and it is $G_M$ that makes $D$ odd with respect to the manifold spinors. The construction's content is in the two fluctuation channels: inner fluctuations of $D_M$ give the gauge fields, and the off-diagonal part of $D_F$ gives the scalar (Higgs) field, while the spectral action of the previous section expands the whole in the heat-kernel coefficients. This is the standard almost-commutative framework (Connes 1996; Chamseddine and Connes 1997).
 
-**The finite operator is the framework's mass term.** For the biquaternion candidate, $\mathcal{A}_F=\mathbb{B}_{\mathbb{R}}$ and $\mathcal{H}_F=\Delta=S\oplus S^{\mathrm{c}}\cong\mathbb{C}^4$, so $D_F$ is a $4\times4$ matrix with two $2\times2$ off-diagonal blocks. The requirement that $D_F$ be odd under the chirality — that it anticommute with $\chi$ — fixes the block form. In cells the chirality is
-$$
-\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
-$$
-and the mass is the off-diagonal operator
+**The finite operator is the framework's mass term.** For the biquaternion candidate, $\mathcal{A}_F=\mathbb{B}_{\mathbb{R}}$ and $\mathcal{H}_F=\Delta=S\oplus S^{\mathrm{c}}\cong\mathbb{C}^4$, so $D_F$ is a $4\times4$ matrix with two $2\times2$ off-diagonal blocks. The requirement that $D_F$ be odd under the chirality — that it anticommute with $\chi$ — fixes the block form. On the regular module the chirality is the right action by $-i\vec e_z$, and the mass is the off-diagonal operator
 $$
 D_F=m\,\beta+\bar m\,\beta^{*},
 \qquad
@@ -416,12 +411,12 @@ This was verified explicitly: the anticommutator vanishes identically, and $D_F^
 **Established (framework and algebra).**
 
 - The biquaternion candidate triple: algebra $\mathbb{B}_{\mathbb{R}}$ (or $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$), Hilbert space the completion of $\Delta=S\oplus S^{\mathrm{c}}$ under the Hermitian form, operator $\mathcal{D}=i\tilde\nabla+D_F$. The Hilbert space and the operator are the series' own objects, and no new structure is introduced; $\tilde\nabla^{\dagger}=-\tilde\nabla^{\natural}$, so $i\tilde\nabla$ has adjoint $i\tilde\nabla^{\natural}$, and $i\tilde\nabla$ is not self-adjoint for the Hermitian form: the criterion asks for anti-Hermitian coefficients, which $ie_t$ is and the three $i\vec e_k$ are not.
-- The framework's real-form involution satisfies $\flat^2=+1$ exactly: $\flat(\tilde Q)=-\tilde Q^{*}$ gives $\flat(\flat(\tilde Q))=\tilde Q$; verified on explicit quaternion matrices, so the candidate real structure $J_{\flat}$ has $\epsilon=+1$, the sign of a four-dimensional Euclidean geometry. The product rule is $(\tilde Q_1\tilde Q_2)^\flat=-\tilde Q_2^\flat\tilde Q_1^\flat$, and on the module the two minus signs cancel in $J_{\flat}b^{*}J_{\flat}^{-1}=R_b$.
-- The Euclidean frame's antisymmetric cell of square $-1$ is $C=-L_{\vec e_z}^{\mathrm{axf}}=E_1E_2$ in the frame $E_4=iR_{\vec e_x}^{\mathrm{axf}}$, $E_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. The four frame cells are Hermitian, square to $+1$, and pairwise anticommute; the chirality $E_1E_2E_3E_4=-iR_{\vec e_z}^{\mathrm{axf}}$ squares to $+1$; $C$ is real and antisymmetric in the frame of the four units, $C^2=-I_4$, and $[C,E_1E_2E_3E_4]=0$. $C$ conjugates each generator to its transpose up to sign, and the sign is not uniform in this frame. The antilinear operator $J=CK$ therefore has $J^2=C^2=-1$ and $J\chi=-\chi J$, the quaternionic pattern $(\epsilon,\epsilon'')=(-1,-1)$. Both signs are fixed by the pair $(C,\chi)$ alone: they are invariant under a rescaling of $J$ and under a change of frame, so neither is a normalisation. $\epsilon'$ is not reached, because it involves $D$. The pattern is Connes' $n\equiv2$ (equivalently $n\equiv6$), while four-dimensional Euclidean geometry is $n\equiv4$ with $(+1,+1,+1)$; the table of *Spectral Triples and Noncommutative Geometry* has these two rows exchanged, and that disagreement is reported at the end of the section. The framework's own sign is $+1$: it agrees with the four-dimensional Euclidean sign and is not the quaternionic one, and the quaternionic sign can come only from the module's structure (equivalently $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$), not from a central phase, since composition with a central phase leaves $\epsilon=+1$.
-- The order of the gradient commutator is decided by the Clifford coefficients: $[i\tilde\nabla,L_a]=i\sum_\mu L_{[e_\mu,a]}\partial/\partial Q_\mu$ is zeroth order exactly when $a$ commutes with all four units, so the left action of the matrix factor fails the bounded-commutator condition and only the central scalars and the functions pass it. The right action passes it identically for the constant factor and by a cell for functions, and it fails the grading, since the chirality is itself a right multiplication. The symbol check is exact: at $\xi=(0.3,-0.7,1.1,0.4)$ the largest entry of $[\sum_\mu\xi_\mu e_\mu,a]$ in the defining representation is $2.2$ for $\vec e_x$, $1.4$ for $\vec e_y$, $2.6$ for $\vec e_z$, between $1.9$ and $7.5$ for generic non-central elements, and $0$ for $e_t$ and $ie_t$; being bilinear in $a$, the commutator scales with $a$'s coefficients.
-- The first-order condition is decided by the module. On the regular module the gradient contributes nothing, $[[i\tilde\nabla,L_a],R_b]=0$ identically, because its commutator is a sum of cells and cells commute with right multiplications; there the condition holds for the vector-like candidate, whose mass is a central right multiplication. On $\Delta$ the opposite action is $\operatorname{diag}(b^{\mathsf T},\bar b^{\mathsf T})$ rather than a cell, the gradient's symbol survives, and the condition holds only on $\mathbb{R}e_t$: the gradient admits the centre $\mathbb{C}e_t$, the mass admits $\mathbb{R}[\vec e_y]$, and the condition is their intersection.
-- The grading is a finite one. The chirality $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ commutes with every left multiplication and so with the gradient, and anticommutes with the mass, $\{\chi,D_F\}=0$ (verified, residual $0$); $\mathcal{D}$ on $\Delta$ is therefore neither even nor odd under $\chi$. The finite triple $(\mathbb{B}_{\mathbb{R}},\Delta,D_F)$ is graded and odd; the grading of a full triple is $G_M\otimes\chi$ with $G_M$ the manifold chirality.
-- The series' off-diagonal mass is a finite Dirac operator: $D_F=m\beta+\bar m\beta^{*}$ on $\Delta=S\oplus S^{\mathrm{c}}$ is $\left(\begin{smallmatrix}0&m\\ \bar m&0\end{smallmatrix}\right)$ in the block basis, anticommutes with the chirality $\chi=-iR_{\vec e_z}^{\mathrm{axf}}=\operatorname{diag}(-I_2,I_2)$, and satisfies $D_F^2=|m|^2I$ with eigenvalues $\pm|m|$, each twice; both by inspection in the block form. The framework's mass is therefore the almost-commutative triple's finite part and not an added ingredient.
+- The framework's real-form involution satisfies $\flat^2=+1$ exactly: $\flat(\tilde Q)=-\tilde Q^{*}$ gives $\flat(\flat(\tilde Q))=\tilde Q$; verified on explicit quaternion matrices, so the candidate real structure $J_{\flat}$ has $\epsilon=+1$, the sign of a four-dimensional Euclidean geometry. The product rule is $(\tilde Q_1\tilde Q_2)^\flat=-\tilde Q_2^\flat\tilde Q_1^\flat$, and on the module the two minus signs cancel in $J_{\flat}b^{*}J_{\flat}^{-1}=\cdot b$, the right action.
+- The Euclidean frame's antisymmetric operator of square $-1$ is $C:\psi\mapsto-\vec e_z\psi=E_1E_2$ in the frame $E_4:\psi\mapsto i\psi\vec e_x$, $E_k:\psi\mapsto-\vec e_k\psi\vec e_y$. The four frame operators are Hermitian, square to $+1$, and pairwise anticommute; the chirality $E_1E_2E_3E_4$, the right action by $-i\vec e_z$, squares to $+1$; $C$ is real and antisymmetric in the frame of the four units, $C^2=-I_4$, and $[C,E_1E_2E_3E_4]=0$. $C$ conjugates each generator to its transpose up to sign, and the sign is not uniform in this frame. The antilinear operator $J_C=CK$ therefore has $J_C^2=C^2=-1$ and $J_C\chi=-\chi J_C$, the quaternionic pattern $(\epsilon,\epsilon'')=(-1,-1)$. Both signs are fixed by the pair $(C,\chi)$ alone: they are invariant under a rescaling of $J$ and under a change of frame, so neither is a normalisation. $\epsilon'$ is not reached, because it involves $D$. The pattern is Connes' $n\equiv2$ (equivalently $n\equiv6$), while four-dimensional Euclidean geometry is $n\equiv4$ with $(+1,+1,+1)$; the table of *Spectral Triples and Noncommutative Geometry* has these two rows exchanged, and that disagreement is reported at the end of the section. The framework's own sign is $+1$: it agrees with the four-dimensional Euclidean sign and is not the quaternionic one, and the quaternionic sign can come only from the module's structure (equivalently $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$), not from a central phase, since composition with a central phase leaves $\epsilon=+1$.
+- The order of the gradient commutator is decided by the Clifford coefficients: $[i\tilde\nabla,a\cdot]=i\sum_\mu[e_\mu,a]\partial/\partial Q_\mu$ is zeroth order exactly when $a$ commutes with all four units, so the left action of the matrix factor fails the bounded-commutator condition and only the central scalars and the functions pass it. The right action passes it identically for a constant factor and by a two-sided action for functions, and it fails the grading, since the chirality is itself a right action. The symbol check is exact: at $\xi=(0.3,-0.7,1.1,0.4)$ the largest entry of $[\sum_\mu\xi_\mu e_\mu,a]$ in the defining representation is $2.2$ for $\vec e_x$, $1.4$ for $\vec e_y$, $2.6$ for $\vec e_z$, and exactly $0$ for $e_t$ and $ie_t$. Being bilinear in $a$, the commutator scales with $a$'s coefficients, so only the units give a scale-free comparison.
+- The first-order condition is decided by the module. On the regular module the gradient contributes nothing, $[[i\tilde\nabla,a\cdot],\cdot b]=0$ identically, because its commutator is a left action and a left action commutes with a right one; there the condition holds for the vector-like candidate, whose mass is a central right action. On $\Delta$ the opposite action is $\operatorname{diag}(b^{\mathsf T},\bar b^{\mathsf T})$ rather than a right action, the gradient's symbol survives, and the condition holds only on $\mathbb{R}e_t$: the gradient admits the centre $\mathbb{C}e_t$, the mass admits $\mathbb{R}[\vec e_y]$, and the condition is their intersection.
+- The grading is a finite one. The chirality $\chi$, the right action by $-i\vec e_z$, commutes with every left action and so with the gradient, and anticommutes with the mass, $\{\chi,D_F\}=0$ (verified, residual $0$); $\mathcal{D}$ on $\Delta$ is therefore neither even nor odd under $\chi$. The finite triple $(\mathbb{B}_{\mathbb{R}},\Delta,D_F)$ is graded and odd; the grading of a full triple is $G_M\otimes\chi$ with $G_M$ the manifold chirality.
+- The series' off-diagonal mass is a finite Dirac operator: $D_F=m\beta+\bar m\beta^{*}$ on $\Delta=S\oplus S^{\mathrm{c}}$ is $\left(\begin{smallmatrix}0&m\\ \bar m&0\end{smallmatrix}\right)$ in the block basis, anticommutes with the chirality $\chi=\operatorname{diag}(-I_2,I_2)$, and satisfies $D_F^2=|m|^2I$ with eigenvalues $\pm|m|$, each twice; both by inspection in the block form. The framework's mass is therefore the almost-commutative triple's finite part and not an added ingredient.
 - The finite algebra's module $\Delta$ is four-complex-dimensional and its finite triple has spectral dimension zero; a dimension-four triple requires the almost-commutative algebra and a first-order elliptic operator. The spectral dimension is the exponent of the growth and $a_{d/2}$ the coefficient of the logarithmic divergence in one and the same small-$t'$ expansion.
 - The framework's metric-as-output (a signature from the level-1 form on the material sector) and the triple's distance formula (a distance from $D$) are similar in shape and different in content; the framework derives a signature, not a distance.
 
@@ -449,39 +444,27 @@ This was verified explicitly: the anticommutator vanishes identically, and $D_F^
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. A gamma is an array in a chosen basis and not an object of the algebra; the arrays below are written in the basis of the four units, and no statement in this article depends on the choice.
 
-The body of this article is written in cells. The gammas are collected here, as a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+This article needs no gamma matrix, and they are collected here only for comparison with the literature, as a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$ and not as a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-The same in the axis-free display:
+Each gamma is the array, in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ of the algebra over $\mathbb{C}$, of one two-sided action:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0:\psi\longmapsto ie_t\psi\vec e_x,\qquad
+\gamma_1:\psi\longmapsto i\vec e_x\psi\vec e_y,\qquad
+\gamma_2:\psi\longmapsto i\vec e_y\psi\vec e_y,\qquad
+\gamma_3:\psi\longmapsto i\vec e_z\psi\vec e_y,\qquad
+\gamma_5:\psi\longmapsto-ie_t\psi\vec e_z.
 $$
 
-They satisfy $\gamma_0[\mathbb{M}_-]^2=I_4$, $\gamma_k[\mathbb{M}_-]^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0$, and $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5$; $\gamma_0[\mathbb{M}_-]$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
+They satisfy $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $\{\gamma_5,\gamma_\mu\}=0$, and $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$; $\gamma_0$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus. All of it was checked on the arrays.
 
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+$\gamma_5$ is the chiral right action written as an array. The chirality of the body is right multiplication by $-i\vec e_z$, and $\gamma_5$ multiplies by $-i\vec e_z$ as well, from the right; the factor $e_t$ in front changes nothing, $e_t$ being the identity of the algebra. The central grading is a different object, $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$, the difference of the two central idempotents of the complexified algebra, with $\chi^2=e_t$ while $\tilde\Xi_{\mathrm{ad}}$ itself is a root of $-1$.
 
-$\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the reference-frame cell of the chirality, and it is the chirality cell $\chi$ of the body; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$, the difference of the two central idempotents of the complexified algebra, so that $\chi^2=e_t$ while $\tilde\Xi_{\mathrm{ad}}$ itself is the root of $-1$ — that is a different object, represented by $\gamma_5$ on the Dirac module.
+The dictionary is complex-linear. Writing $c(M)$ for the coefficient array of $M$ in the basis of the sixteen products, a single product is a pure tensor, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-The dictionary is complex-linear. The four generators of the Euclidean frame all square to $+1$, so over $\mathbb{R}$ they generate $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The real cells of *The Majorana Equation in Biquaternionic Form* are $c_0=R_{\vec e_x}^{\mathrm{pau}}$ and $c_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, one of square $-1$ and three of square $+1$, and those generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$; the Euclidean frame is $E_4=ic_0$ and $E_k=-c_k$, that is the Majorana frame with the time cell multiplied by $i$ and the three spatial cells negated. The corpus's $\mathrm{Cl}_{1,3}$ generators are $ic_\mu$, with the opposite pattern of squares, and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. The gammas are the same cells with the powers of $i$ collected — $\gamma_0[\mathbb{M}_-]=E_4$ and $\gamma_k[\mathbb{M}_-]=-iE_k$ — so they carry the Minkowski pattern of squares: this is the frame of the body's $\chi$, not a second algebra.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+The four generators of the Euclidean frame all square to $+1$, so over $\mathbb{R}$ they generate $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The real operators of *The Majorana Equation in Biquaternionic Form* are right multiplication by $\vec e_x$ and the three maps $\psi\mapsto\vec e_k\psi\vec e_y$, one of square $-1$ and three of square $+1$, and those generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$; the Euclidean frame is that frame with the first multiplied by $i$ and the three spatial operators negated. The corpus's $\mathrm{Cl}_{1,3}$ generators are $i$ times those, with the opposite pattern of squares, and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. The gammas are the same operators with the powers of $i$ collected — $\gamma_0$ is $E_4$ and $\gamma_k$ is $-iE_k$ — so they carry the Minkowski pattern of squares: this is the frame of the body's $\chi$, not a second algebra.
 
 ## Summary
 
@@ -499,9 +482,9 @@ $$
 $$
 and it is antilinear, so the candidate real structure $J_{\flat}$ has $J_{\flat}^2=+1$, that is $\epsilon=+1$, the sign that four-dimensional Euclidean geometry carries.
 
-The sign that the algebra does not carry is the quaternionic one. The Euclidean frame's own cell gives the antilinear operator $J_C=CK$ with $J_C^2=-1$ and $J_C\chi=-\chi J_C$, and that is not a four-dimensional charge conjugation but the pattern the Standard-Model finite geometry carries at $n\equiv6$. Both signs were verified explicitly, and reaching the quaternionic one requires the module's structure, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, not a central phase.
+The sign that the algebra does not carry is the quaternionic one. The Euclidean frame's own operator gives the antilinear operator $J_C=CK$ with $J_C^2=-1$ and $J_C\chi=-\chi J_C$, and that is not a four-dimensional charge conjugation but the pattern the Standard-Model finite geometry carries at $n\equiv6$. Both signs were verified explicitly, and reaching the quaternionic one requires the module's structure, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, not a central phase.
 
-Three conditions fail, and they fail for one reason: the Clifford coefficients are elements of the algebra. The bounded-commutator condition holds for the functions and fails for the non-central matrix elements under the left action, while the right action passes it and loses the grading. The first-order condition holds for the vector-like candidate on the regular module, where the opposite action is a cell, but for the chiral triple on $\Delta$ only on the real scalars. There the opposite action is a transposition, so the gradient admits the centre $\mathbb{C}e_t$ and the mass admits $\mathbb{R}[\vec e_y]$, and the condition is their intersection. The grading itself is the finite chirality $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$, which commutes with the gradient and anticommutes with the mass, so the finite triple is graded and odd while the whole operator on $\Delta$ is graded by nothing, and a graded triple would need $G_M\otimes\chi$.
+Three conditions fail, and they fail for one reason: the Clifford coefficients are elements of the algebra. The bounded-commutator condition holds for the functions and fails for the non-central matrix elements under the left action, while the right action passes it and loses the grading. The first-order condition holds for the vector-like candidate on the regular module, where the opposite action is a right action, but for the chiral triple on $\Delta$ only on the real scalars. There the opposite action is a transposition, so the gradient admits the centre $\mathbb{C}e_t$ and the mass admits $\mathbb{R}[\vec e_y]$, and the condition is their intersection. The grading itself is the finite chirality $\chi$, the right action by $-i\vec e_z$, which commutes with the gradient and anticommutes with the mass, so the finite triple is graded and odd while the whole operator on $\Delta$ is graded by nothing, and a graded triple would need $G_M\otimes\chi$.
 
 The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t'D^2)\sim {t'}^{-d/2}$ and coincides with the Seeley–DeWitt data of the determinant and anomaly articles, giving $d=4$ for the almost-commutative triple and $d=0$ for the bare finite algebra. The distance formula's metric-as-output is the spectral triple's counterpart of the framework's signature-as-output, similar in shape and different in content. Inner fluctuations, the gauge group, and the spectral action $\mathrm{Tr}f(D_A/\Lambda)$ are the standard neighbouring construction, cited and not developed here.
 
@@ -518,11 +501,11 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t
 | $J_{\flat}$ | The framework's real structure on the module, from $\flat=-{}^{*}$; $J_{\flat}^2=+1$ |
 | $J_C$ | The Euclidean frame's real structure, $J_C=CK$; $J_C^2=-1$ |
 | $\epsilon,\epsilon',\epsilon''$ | Signs $J^2=\epsilon$, $JD=\epsilon'DJ$, $J\chi=\epsilon''\chi J$; they fix the KO-dimension |
-| $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$, represented by $-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality operator of the triple, $\operatorname{diag}(-I_2,I_2)$ on $\Delta$; $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $\chi^2=e_t$ |
-| $P=iR_{\vec e_z}^{\mathrm{axf}}$ | Peirce index; $\chi=-P$ as cells, grading the regular module |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$; on the regular module the right action $\psi\mapsto-i\psi\vec e_z$ | Chirality operator of the triple, $\operatorname{diag}(-I_2,I_2)$ on $\Delta$; $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and $\chi^2=e_t$ |
+| $P$ | Peirce index, the right action $\psi\mapsto i\psi\vec e_z$; $\chi=-P$ as maps, grading the regular module |
 | $\mathbb{R}[\vec e_y]$ | The copy of $\mathbb{C}$ inside $\mathbb{B}_{\mathbb{R}}$; the fixed set of the conjugation, and the largest subalgebra on which $D_F$ commutes with the left action |
 | $\flat=-{}^{*}$ | The framework's real-form involution; $\flat^2=+1$ |
-| $\tilde\nabla=\sum_\mu L_{e_\mu}^{\mathrm{axf}}\partial/\partial Q_\mu$ | Biquaternion gradient; symbol $\sum_\mu\xi_\mu e_\mu$ of quaternion norm $\lvert\xi\rvert^2$ |
+| $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial Q_\mu$ | Biquaternion gradient; symbol $\sum_\mu\xi_\mu e_\mu$ of quaternion norm $\lvert\xi\rvert^2$ |
 | $\beta:S^{\mathrm{c}}\to S$ | The invariant pairing $\beta(s,t)=s^{\dagger}t$ of *The Unpolarized Module of the Biquaternion Algebra*, i.e. the identity on the underlying spinors; its adjoint is the other off-diagonal block |
 | $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ | Quaternionic structure of the module |
 | $d(\varphi,\omega)=\sup_{a\in\mathcal{A}}\{\lvert\varphi(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\}$ | Distance formula between two states |
@@ -533,11 +516,11 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t
 | $D_F=m\beta+\bar m\beta^{*}$ | Mass operator; in the block basis $\left(\begin{smallmatrix}0&m\\ \bar m&0\end{smallmatrix}\right)$ |
 | $D=D_M\otimes I_F+G_M\otimes D_F$ | Product geometry of an almost-commutative triple; $G_M$ the manifold chirality |
 | $\Gamma=G_M\otimes\chi$ | Grading of a full triple; $D$ odd in it, while $\mathcal{D}$ alone is odd in neither factor |
-| $L_a,R_b$ | Left and right multiplication; $[L_a,R_b]=0$ |
-| $L_aR_b$ | Cell of the two-sided action, $L_aR_b\psi=a\psi b$; $L_aR_bL_cR_d=L_{ac}R_{db}$ |
-| $E_4=iR_{\vec e_x}^{\mathrm{axf}}$, $E_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Euclidean frame in cells, four Hermitian generators with $E_\mu^2=+1$ |
-| $C=-L_{\vec e_z}^{\mathrm{axf}}=E_1E_2$ | Euclidean candidate charge conjugation; real and antisymmetric, $C^2=-1$, $[C,E_1E_2E_3E_4]=0$ |
-| $E_1E_2E_3E_4=-iR_{\vec e_z}^{\mathrm{axf}}$ | Euclidean chirality; its square is $+1$ |
+| $a\cdot$, $\cdot b$ | Left action $\psi\mapsto a\psi$ and right action $\psi\mapsto\psi b$; they commute |
+| $a\,\cdot\,b$ | Two-sided action $\psi\mapsto a\psi b$; the sixteen $\psi\mapsto e_\mu\psi e_\nu$ span $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ |
+| $E_4:\psi\mapsto i\psi\vec e_x$, $E_k:\psi\mapsto-\vec e_k\psi\vec e_y$ | Euclidean frame, four Hermitian generators with $E_\mu^2=+1$ |
+| $C:\psi\mapsto-\vec e_z\psi=E_1E_2$ | Euclidean candidate charge conjugation; real and antisymmetric, $C^2=-1$, $[C,E_1E_2E_3E_4]=0$ |
+| $E_1E_2E_3E_4$, the right action by $-i\vec e_z$ | Euclidean chirality; its square is $+1$ |
 
 ## Further Reading
 

@@ -30,7 +30,35 @@ with all indices summed in the $ict'$ convention as in the companion gauge artic
 
 Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
-**Notation, once.** The tensor displays are read in the $\mathbb{B}$ frame; the operator displays are read in cells. The imaginary unit is $i$, with $i^2=-1$; wherever two imaginary units meet in a product they are reduced before the display is read, so a four-fold product of generators carries $i^4=+1$ and no residual unit. A cell multiplies on the left by one element and on the right by another, $L_u\psi=u\psi$, $R_v\psi=\psi v$, $L_uR_v\psi=u\psi v$, and two cells multiply as $L_uR_v\,L_wR_x=L_{uw}R_{xv}$, the right factors in reverse order. The chirality cell of the body is $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$, the second equality because $L_{e_t}^{\mathrm{axf}}=I_4$; it acts on the right, $\Gamma\psi=-i\psi\vec e_z$. The four generator cells, $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ with $\nu(t)=x$ and $\nu(k)=y$, are named only in *The Legacy Pauli Gamma Formulation*, together with their gamma names, and no gamma name is used before it.
+**Notation, once.** The tensor displays are read in the $\mathbb{B}$ frame, whose sums use the Kronecker delta. The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient**,
+
+$$
+\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
+\qquad
+\tilde\nabla^{\natural}=e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z},
+$$
+
+an element of the algebra whose coefficients are derivatives, and it acts from the left, $\tilde\nabla\psi$; it is never applied on the right. On the material sector, where $Q_t=ict'$ and $Q_k=q_k$, its time coefficient is $\frac{\partial}{\partial Q_t}=-\frac{i}{c}\frac{\partial}{\partial t'}$, with the same element and the same side. Its norm against the conjugate is the d'Alembertian, $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta_Q$, which on the material sector is $\Delta-c^{-2}\partial^2/\partial {t'}^2$.
+
+**The free equation and the massive one.** The free equation is first order in one field, $\tilde\nabla\tilde F=0$. The massive equation is not, because $\tilde\nabla^2$ is not scalar: $e_t$ commutes with the three spatial units, so the two orders of a mixed derivative add a vector term instead of cancelling, and the diagonal part is not the d'Alembertian either. The massive equation is the **chiral pair**
+
+$$
+\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
+\qquad
+\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+$$
+
+both acting from the left, and each half satisfies $\Box\tilde\Psi=m^2\tilde\Psi$ by the other. A source that writes the mass as a right multiplication prints a two-sided equation related to the pair by a change of variable, not a second dynamics (*The Dirac Equation in Biquaternionic Form*). The corpus writes the pair, and no one-field first-order massive equation is written here.
+
+**The pseudoscalar and the side.** The **pseudoscalar** of the algebra is $\omega=-\vec e_z$, with $\omega^2=-\vec e_t$; it is the element a two-sided source prints as $i$. That letter is not the central unit: it does not commute with the spatial units, and the source's spin plane applies it on the right, $\psi\mapsto-\psi\vec e_z$. The chirality operation used below multiplies on the right and not on the left. It is a map of the field, written with its side in the display and not identified with an element,
+
+$$
+\Gamma:\;\psi\longmapsto\psi\,(i\omega)=-i\psi\vec e_z ,
+\qquad
+\Gamma^2=\mathrm{id},
+$$
+
+an involution of the field, since $(i\omega)^2=i^2\omega^2=(-1)(-\vec e_t)=e_t$ and the right multiplier $e_t$ is the identity. The left multiplication $\psi\mapsto-\vec e_z\psi$ is a different map, and it is not the one meant: the two do not agree, so the side belongs to the definition. The material time enters through $Q_t=ict'$, so the corpus's time term carries $-\frac{i}{c}\partial/\partial t'$; a display that prints $+i\partial/\partial t'$ differs by that sign, and the corpus's sign is the one kept.
 
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the invariant $I_2=\vec E\cdot\vec B$.
 - Companion article *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*, for the theta vacuum and its periodicity.
@@ -122,13 +150,13 @@ The problem is not that $\bar\theta$ is nonzero but that it is unnaturally small
 
 ## The Chiral Rotation and the Invariance of the Physical Parameter
 
-The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. In cells, the generator of the common axial rotation of the quark fields is the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$. Its square is the identity, $\Gamma^2=(-i)^2(R_{\vec e_z}^{\mathrm{axf}})^2=(-1)(-I_4)=+I_4$, so the exponential $\exp(i\alpha\Gamma)$ is periodic in $\alpha$ — a rotation and not a boost. Since $(R_{\vec e_z}^{\mathrm{axf}})^2=R_{\vec e_z^2}^{\mathrm{axf}}=-I_4$, the rotation reads
+The reason $\bar\theta$ and not $\theta$ is the physical parameter is the anomaly. The generator of the common axial rotation of the quark fields is the chirality involution $\Gamma$ of the introduction, whose square is the identity, so the exponential $\exp(i\alpha\Gamma)$ is periodic in $\alpha$ — a rotation and not a boost. The rotation reads
 
 $$
 \exp(i\alpha\Gamma)\psi=\psi\,(\cos\alpha+\sin\alpha\,\vec e_z) .
 $$
 
-On the two chiral halves the same cell is a scalar phase, with opposite signs; split from the line above,
+On the two chiral halves the same involution is a scalar phase, with opposite signs; split from the line above,
 
 $$
 \psi_L\longmapsto \exp(-i\alpha)\psi_L ,
@@ -136,7 +164,7 @@ $$
 \psi_R\longmapsto \exp(+i\alpha)\psi_R .
 $$
 
-The two lines are one operator read on the two halves: $\Gamma$ is $-I_4$ on $\psi_L$ and $+I_4$ on $\psi_R$, so the single right multiplication becomes the pair of left phases. Under this rotation the mass matrix in the fermion bilinear $\psi_L^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}M_q\psi_R$ transforms as
+The two lines are one operation read on the two halves: $\Gamma$ is $-\mathrm{id}$ on $\psi_L$ and $+\mathrm{id}$ on $\psi_R$, so the single right multiplication becomes the pair of left phases. Under this rotation the mass matrix in the fermion bilinear $\psi_L^{\dagger}\,i\,(M_q\psi_R)\,\vec e_x$, in which the timelike insertion $i\vec e_x$ carries one chiral half into the other and is written on the right, transforms as
 
 $$
 M_q\;\longmapsto\;\exp(2i\alpha)M_q ,
@@ -159,141 +187,7 @@ $$
 
 This is why $\bar\theta$ is the renormalisation-invariant physical parameter, and why a theory with $\theta=0$ and complex masses is equivalent to one with $\theta\ne0$ and real masses: the rotation moves the phase between the two terms without changing the physics. The invariance is the standard anomaly argument; the measure's non-invariance belongs to the spin-half programme of the corpus, where the anomalous divergence and the Jacobian are computed, and it is not re-derived here.
 
-**What the framework contributes.** The axial rotation is generated by the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, whose square is the identity and which acts on the two chiral halves $S$ and $S^{\mathrm c}$ of the Dirac module with opposite signs; the mass term is the chirality-off-diagonal coupling between them, as *The Dirac Equation in Biquaternionic Form* records. The cell is not the central sign itself: the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, is an operator on the module and not multiplication by an element of $\mathbb B$; the two coincide in the one-mode truncation, where a single symbol represents both. The cell with the central $+i$ instead of $-i$ is the **Peirce sign** $P=R_{i\vec e_z}^{\mathrm{axf}}$, which grades the two copies of one minimal left ideal $S_+\cong S_-\cong S$ with $\pm I_4$ and is a copy index, not a chirality. The two cells are one cell up to the overall sign, $P=-\Gamma$; what separates them is the module they are read on, not the cell. $P$ is read on $\mathbb B$ as the left module $S\oplus S$, where it separates the two copies, and $\Gamma$ on $\Delta=S\oplus S^{\mathrm c}$, where it separates the module from its conjugate. The shift of $\theta$ is therefore a rotation of the two chiral halves against each other, and the invariance of $\bar\theta$ is the statement that the physics depends only on the product of the theta phase and the mass-matrix phase. The algebra makes the structure of the rotation visible — the central generator, the off-diagonal mass, the two halves — while the anomaly that makes the rotation non-trivial for the measure is imported from the quantum theory.
-
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The body writes the theta density as a scalar built from the field strength; its operator content is carried by cells, and the gamma names are attached to the frame cells only here.
-
-The cells come in two families, the left multiplications $L_u$ and the right multiplications $R_v$,
-
-$$
-L_u\psi=u\psi,\qquad R_v\psi=\psi v .
-$$
-
-Two cells multiply by multiplying the left factors and the right factors, with the right order reversed,
-
-$$
-L_uR_v\,L_wR_x=L_{uw}R_{xv},
-$$
-
-because $R_vR_x=R_{xv}$. The body's displays are in the $\mathbb{B}$ frame, whose sums use the Kronecker delta; the gammas are the $\mathbb{M}_-$ frame cells, whose metric is $g_{\mu\nu}[\mathbb{M}_-]$. The change of frame is $\gamma_\mu[\mathbb{M}_-]=\sum_\nu\Lambda_{\mu\nu}\gamma_\nu[\mathbb{B}]$ with $\Lambda=\operatorname{diag}(1,-i,-i,-i)$, so the three spatial cells carry an extra $-i$. The gamma cells are, split over three lines,
-
-$$
-\begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}. &&
-\end{aligned}
-$$
-
-The same in the axis-free display:
-
-$$
-\begin{aligned}
-\gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}. &&
-\end{aligned}
-$$
-
-Every generator carries exactly one factor of $i$, so a product of two generators carries $i^2=-1$ and is a plain cell:
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=i^2L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}
-=-L_{\vec e_x}^{\mathrm{pau}}R_{-\vec e_z}^{\mathrm{pau}}=+L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-In the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=i^2L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}
-=-L_{\vec e_x}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}=+L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-The same collapse gives the squares and the anticommutation relations, with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell — the algebra's unit $e_t$ read as an operator on the module,
-
-$$
-\gamma_0[\mathbb{M}_-]^2=I_4,\qquad
-\gamma_1[\mathbb{M}_-]^2=\gamma_2[\mathbb{M}_-]^2=\gamma_3[\mathbb{M}_-]^2=-I_4,\qquad
-\gamma_5^2=I_4,
-$$
-
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}[\mathbb{M}_-]I_4,\qquad
-\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0,
-\qquad \varepsilon=(1,-1,-1,-1),$$
-
-and the volume element
-
-$$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5 .
-$$
-
-A single $i$ also collapses when it multiplies a generator:
-
-$$
-i\gamma_0[\mathbb{M}_-]=-L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad
-i\gamma_1[\mathbb{M}_-]=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_2[\mathbb{M}_-]=-L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_3[\mathbb{M}_-]=-L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-i\gamma_5=+L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
-$$
-
-The same identities in the axis-free display:
-
-$$
-i\gamma_0[\mathbb{M}_-]=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
-i\gamma_1[\mathbb{M}_-]=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_2[\mathbb{M}_-]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_3[\mathbb{M}_-]=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-i\gamma_5=+L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
-$$
-
-Write a two-sided operator $M$ in the basis of the sixteen cells as
-
-$$
-M=\sum_{\mu,\nu}C_{\mu\nu}(M)L_{e_\mu}^{\mathrm{pau}}R_{e_\nu}^{\mathrm{pau}},
-$$
-
-Read in the axis-free display:
-
-$$
-M=\sum_{\mu,\nu}C_{\mu\nu}(M)L_{e_\mu}^{\mathrm{axf}}R_{e_\nu}^{\mathrm{axf}},
-$$
-
-and let $C(M)=(C_{\mu\nu}(M))$ be its $4\times4$ coefficient matrix and $\ell(M)=\operatorname{rank}C(M)$ its length. A single cell is a pure tensor of rank one. The pure tensors form the seven-dimensional cone $\{\operatorname{rank}C(M)\le1\}$ in $M_4(\mathbb{C})$, and a general operator is a sum of at most four of them, and of no fewer than $\operatorname{rank}C(M)$, since the tensor rank of a matrix is at least its rank.
-
-$\gamma_5$ is the cell $\Gamma$ of the chirality operator, the involution that grades the Dirac module $\Delta=S\oplus S^{\mathrm c}$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, so $\chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=+e_t$ — is the difference of the two central idempotents of the complexified algebra and is a different object, represented by $\gamma_5$ on that module.
-
-**The two Dirac equations.** The two families carry the corpus's two Dirac equations. The one-sided pair acts with the left family alone, which the corpus writes with the gradient in place and no cell mark,
-
-$$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,\qquad
-\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
-$$
-
-where both derivatives act from the left, the mass is $m$, and $\tilde\Psi_R$ and $\tilde\Psi_L$ are the two chirality halves. The two-sided equation carries the mass through the right family; for a generic algebra-valued field $\tilde Q_{\mathrm f}$,
-
-$$
-\left(iL_{e_t}^{\mathrm{pau}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{pau}}\frac{\partial}{\partial Q_k}\right)\tilde Q_{\mathrm f}
--mi\,R_{\vec e_z}^{\mathrm{pau}}\overline{\tilde Q_{\mathrm f}}=0,
-$$
-
-The same expressions, in the axis-free display:
-
-$$
-\left(iL_{e_t}^{\mathrm{axf}}\frac{\partial}{\partial t'}+\sum_kL_{\vec e_k}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}\right)\tilde Q_{\mathrm f}
--mi\,R_{\vec e_z}^{\mathrm{axf}}\overline{\tilde Q_{\mathrm f}}=0,
-$$
-
-where the derivative acts from the left, the mass acts from the right through $\vec e_z$, $\overline{\tilde Q_{\mathrm f}}$ is the coefficient conjugate, and the time derivative carries the unit of $\partial/\partial t'$ in natural units, $c=1$, as in *The Dirac Equation in Biquaternionic Form*. The two equations share the frame but not the operator: the one-sided pair splits the field into chirality halves; the two-sided equation is antilinear in its mass term and carries the chirality in the right multiplication.
-
-The identification is complex-linear: over $\mathbb{C}$ the products of the gammas and the sixteen cells both span $M_4(\mathbb{C})$. Over $\mathbb{R}$ the sixteen graded products $1,\gamma_\mu[\mathbb{M}_-],\gamma_{\mu\nu}[\mathbb{M}_-],\gamma_{\mu\nu\rho}[\mathbb{M}_-],\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5$ span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells span the other real form, $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**What the framework contributes.** The axial rotation is generated by the involution $\Gamma$ of the introduction, whose square is the identity; it is $-\mathrm{id}$ on $\psi_L$ and $+\mathrm{id}$ on $\psi_R$, so the mass term is the chirality-off-diagonal coupling between the two halves, as *The Dirac Equation in Biquaternionic Form* records. The involution multiplies on the right, and the multiplier is the element $i\omega$; it is not the central grading, because $\omega$ anticommutes with $\vec e_x$ and $\vec e_y$, so the rotation cannot be absorbed into a redefinition of the central unit. The central object of the corpus is $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the adjoined central root of $-e_t$, so $\chi^2=e_t$ and $e_\pm=\tfrac12(e_t\pm\chi)$ are the two central idempotents; it commutes with every unit and is a different object from $\Gamma$, the two coinciding only in the one-mode truncation, where a single symbol represents both. The shift of $\theta$ is therefore a rotation of the two chiral halves against each other, and the invariance of $\bar\theta$ is the statement that the physics depends only on the product of the theta phase and the mass-matrix phase. The algebra makes the structure of the rotation visible — the pseudoscalar generator, the off-diagonal mass, the two halves — while the anomaly that makes the rotation non-trivial for the measure is imported from the quantum theory.
 
 ## Summary
 
@@ -309,7 +203,7 @@ Because it is the integral of a parity-odd density, the theta term violates $P$ 
 
 The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$ and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
 
-The operator content is carried by cells: the axial rotation is generated by the chirality cell $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, and the gamma names of the frame cells are collected in *The Legacy Pauli Gamma Formulation* and are used nowhere else.
+The operator content is carried by the gradient and by one involution: the axial rotation is generated by $\Gamma$, right multiplication by the pseudoscalar $\omega=-\vec e_z$, and the massive equation is the chiral pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, since $\tilde\nabla^2$ is not scalar.
 
 ## Summary of Notation
 
@@ -327,17 +221,18 @@ The operator content is carried by cells: the axial rotation is generated by the
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix (imported) |
-| $L_u,R_v$ | Left and right multiplication, $L_uR_v\psi=u\psi v$; $L_uR_vL_wR_x=L_{uw}R_{xv}$ |
-| $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell, $\Gamma^2=I_4$, acting on the right |
-| $P=R_{i\vec e_z}^{\mathrm{axf}}=-\Gamma$ | Peirce sign, $\pm I_4$ on the two copies of $S$; a copy index, not the chirality |
-| $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Central grading of the algebra, $\chi^2=e_t$; represented by $\Gamma$ on $\Delta$ |
-| $\Delta=S\oplus S^{\mathrm c}$ | Dirac module, with its two chiral halves |
+| $\tilde\nabla=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z}$ | Biquaternionic gradient; an element with derivative coefficients, acting from the left |
+| $\tilde\nabla^{\natural}$ | Its quaternion conjugate, $e_t\frac{\partial}{\partial Q_t}-\vec e_x\frac{\partial}{\partial Q_x}-\vec e_y\frac{\partial}{\partial Q_y}-\vec e_z\frac{\partial}{\partial Q_z}$ |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | D'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$; $\Delta-c^{-2}\partial^2/\partial {t'}^2$ on $\mathbb{M}_-$ |
+| $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-\vec e_t$; the source's $i$, kept distinct from the central unit |
+| $\Gamma:\psi\mapsto\psi(i\omega)=-i\psi\vec e_z$ | Chirality involution; a right multiplication and not an element, $\Gamma^2=\mathrm{id}$, $-\mathrm{id}$ on $\psi_L$, $+\mathrm{id}$ on $\psi_R$ |
+| $\psi_L,\psi_R$ | Chiral halves, the $\mp\mathrm{id}$ eigenspaces of $\Gamma$; the subscripts name the part and not a multiplication |
+| $\chi=i\tilde\Xi_{\mathrm{ad}}$ | Central grading, the adjoined central root of $-e_t$; $\chi^2=e_t$, $e_\pm=\tfrac12(e_t\pm\chi)$; not the involution $\Gamma$ |
 | $a,b,c$ | Colour indices, written low; every contraction over them is an explicit sum. The speed of light is also $c$ and is a scalar, not an index. |
 | $f_{abc}$ | Structure constants of the gauge factor, written low |
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Gerard 't Hooft, "Symmetry breaking through Bell–Jackiw anomalies", *Physical Review Letters* 37 (1976) 8–11, for the theta dependence and the anomaly.
 - Roberto D. Peccei and Helen R. Quinn, "CP conservation in the presence of pseudoparticles", *Physical Review Letters* 38 (1977) 1440–1443, for the Peccei–Quinn mechanism that resolves strong CP.
 - Steven Weinberg, "A new light boson?", *Physical Review Letters* 40 (1978) 223–226, and Frank Wilczek, "Problem of strong $P$ and $T$ invariance in the presence of instantons", *Physical Review Letters* 40 (1978) 279–282, for the axion.

@@ -39,7 +39,7 @@ $$
 \mathcal{A}_{2,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1},
 $$
 
-which reduces to the abelian law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Lambda$ when $\tilde U=e^{i\kappa\Lambda}$ is central — the gauge function is written $\Lambda$ here so that $\Gamma$ stays reserved for the chirality cell below. The field strength
+which reduces to the abelian law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Lambda$ when $\tilde U=e^{i\kappa\Lambda}$ is central — the gauge function is written $\Lambda$ here so that $\chi$ stays reserved for the chirality below. The field strength
 
 $$
 F_{\mu\nu} = \partial/\partial Q_\mu \mathcal{A}_\nu - \partial/\partial Q_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],
@@ -81,7 +81,7 @@ This is the precise ceiling of the present construction, and it is what makes th
 
 The read-list article *Chiral Fermions in the Biquaternion Framework* establishes the following, and this agenda inherits it without change.
 
-**The two Dirac equations.** The framework carries two first-order equations for the same field. They are not two dynamics: they differ in which side of the multiplication acts, and that difference is what the two-sided operator algebra is for.
+**The two Dirac equations.** The framework writes the Dirac equation in two forms, and they are one dynamics: the chiral pair on the algebra, and the pair operator written once on the pair of fields. The pair is the defining form.
 
 The **gradient equation** is the chiral pair written on the algebra, as two left actions,
 
@@ -92,54 +92,74 @@ $$
 \tilde\nabla^{\natural}\tilde\Psi_L = m\,\tilde\Psi_R .
 $$
 
-Each member is a left multiplication. The second member is the biquaternion conjugate of the first: conjugation reverses the order of the factors, so the conjugate of a left action is a right action, and it is written again as a left action on the conjugate field — which is why the second derivative is $\tilde\nabla^{\natural}$ rather than $\tilde\nabla$, and why the two halves carry opposite conjugation. The mass is the off-diagonal pairing of the two chiral halves, the pair is complete as written, and eliminating one half returns the mass shell, $\Box\tilde\Psi_R=m^2\tilde\Psi_R$. No chirality cell appears, because no right multiplication is one of the terms.
+Each member is a left multiplication. The second member is the biquaternion conjugate of the first: conjugation reverses the order of the factors, so the conjugate of a left action is a right action, and it is written again as a left action on the conjugate field — which is why the second derivative is $\tilde\nabla^{\natural}$ rather than $\tilde\nabla$, and why the two halves carry opposite conjugation. The mass is the off-diagonal pairing of the two chiral halves, the pair is complete as written, and eliminating one half returns the mass shell, $\Box\tilde\Psi_R=m^2\tilde\Psi_R$. No chirality enters, because no right multiplication is one of the terms.
 
-The **cell equation** is the same dynamics on the Dirac module $\Delta=S\oplus\bar{S}$, $S=\mathbb{C}^2$, written as one four-component equation whose derivative is a two-sided cell. In the real frame $x_\mu=(t',x,y,z)$ and units $c=1$,
-
-$$
-(\mathbb{D}-m)\psi=0,\qquad
-\mathbb{D}=i\sum_\mu G_\mu\frac{\partial}{\partial x_\mu}
-=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k},
-$$
-
-with the generator cells $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$, $\tau(t)=x$ and $\tau(k)=y$. The second form is the first with every double $i$ spent: $i\,G_0=i^2R_{\vec e_x}^{\mathrm{axf}}=-R_{\vec e_x}^{\mathrm{axf}}$ and $i\,G_k=i^2L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, each generator contributing $i^2=-1$. That is where the four minus signs come from, and with the metric inside the generators $\mathbb{D}^2=\Box$.
-
-**The chirality cell.** Chirality is an object of the cell equation only. It is the cell
+**The pair operator.** The two members are one operator on the pair $(\Psi_L,\Psi_R)$, and it is the pair operator of *Operator and Calculus Conventions*:
 
 $$
-\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
+\mathbb{D}(\Psi_L,\Psi_R)=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),
 \qquad
-\Gamma\psi=-i\,\psi\,\vec e_z ,
-$$
-
-where $L_X\psi=X\psi$ and $R_X\psi=\psi X$; the left factor is the identity, so the two spellings are one cell. Its square is
-
-$$
-\Gamma^2=(-i)^2(R_{\vec e_z}^{\mathrm{axf}})^{\,2}=(-1)(-I_4)=I_4 ,
-$$
-
-the two minus signs being $i^2=-1$ and $\vec e_z^2=-e_t$. It anticommutes with every generator, $\{\Gamma,G_\mu\}=0$, hence $\{\Gamma,\mathbb{D}\}=0$ and $[\Gamma,\mathbb{D}^2]=0$, and on $\Delta$ it is $\mathrm{diag}(-I_2,I_2)$: minus on $\psi_L$, plus on $\psi_R$. The projectors are half the identity minus and plus $\Gamma$,
-
-$$
-P_L=\tfrac12(I_4-\Gamma)=\tfrac12(I_4+iR_{\vec e_z}^{\mathrm{axf}}),
+\mathbb{D}^2=\Box\,I,
 \qquad
-P_R=\tfrac12(I_4+\Gamma)=\tfrac12(I_4-iR_{\vec e_z}^{\mathrm{axf}}),
+(\mathbb{D}-m)\Psi=0 .
 $$
 
-idempotent, orthogonal, complete, of rank two, and Lorentz invariant — $\Gamma$ commutes with every even product of generators, hence with the Lorentz action. These were rechecked on the read-list's representation: $P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$.
+Its square is the d'Alembertian because $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$; no two-sided operator and no matrix generator enters.
 
-The Dirac mass bilinear $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi = \psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L$ is chirality-odd and vanishes on a state of definite chirality. On the module a chiral abelian symmetry with independent charges is consistent, with $D_\mu = \partial/\partial Q_\mu + \tfrac{i}{\hbar}A_\mu Ϙ$ and $Ϙ = ϙ_LP_L+ϙ_RP_R$; the mass bilinear is gauge invariant **if and only if $ϙ_L = ϙ_R$**.
+**Why one field carries the massless case and not the massive one.** The gradient's own square is not scalar. Multiplying the two sums,
+
+$$
+\tilde\nabla^2=\Box-2e_t\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\partial Q_k},
+\qquad
+\Box=e_t\Bigl(\frac{\partial^2}{\partial Q_t^2}+\Delta_Q\Bigr),
+$$
+
+the three pairs of one and the same spatial unit giving $\vec e_k^2=-e_t$ once each, the pairs of two distinct spatial units cancelling by antisymmetry, and the time–space pairs adding because $e_t$ commutes with the three spatial units. Hence $\tilde\nabla^2\neq\Box$ — the square is not even scalar — and a scalar square is what a one-field first-order massive equation would need. The **free** equation therefore stays first order in one field, $\tilde\nabla\tilde F=0$; the **massive** equation is the chiral pair above, two fields and one mass; and a one-field first-order massive equation does not exist here. This article writes none.
+
+**The chirality.** Chirality is a right multiplication. Fix the frame; the pseudoscalar of the frame is $\omega=-\vec e_z$, with $\omega^2=-e_t$, and the chirality of an element is
+
+$$
+\chi:\psi\longmapsto-i\,\psi\,\vec e_z=\psi\,(-i\vec e_z)=i\,\psi\,\omega ,
+\qquad
+\chi\bigl(\chi\psi\bigr)=\psi\,(-i\vec e_z)^{2}=\psi\,(-1)(-e_t)=\psi .
+$$
+
+The two minus signs are $i^2=-1$ and $\vec e_z^2=-e_t$, and the $i$ in front is the central scalar of the algebra and not the pseudoscalar. The side is position: the chirality multiplies on the right, and the left multiplication $\psi\mapsto-i\vec e_z\psi$ is a different element, not used here. On the module it is $\mathrm{diag}(-I_2,I_2)$, minus on $\psi_L$ and plus on $\psi_R$, and it is Lorentz invariant: the Lorentz action on the module multiplies on the left, $\psi\mapsto\tilde U^{\mathrm{lor}}\psi$, while $\chi$ multiplies on the right; a left multiplication and a right multiplication commute, so $[\chi,\tilde\nabla]=0$ and the chirality is a constant of the equation.
+
+**The projectors.** The two values are cut out by two elements,
+
+$$
+p_L=\tfrac12(e_t+i\vec e_z),\qquad p_R=\tfrac12(e_t-i\vec e_z),\qquad \psi_L=\psi p_L,\quad \psi_R=\psi p_R ,
+$$
+
+idempotent, orthogonal and complete, $p_L^2=p_L$, $p_R^2=p_R$, $p_Lp_R=0$, $p_L+p_R=e_t$, each acting on the module by right multiplication of rank two, with $\chi$ the right multiplication by $-i\vec e_z=2p_R-e_t$. These were rechecked on the read-list's representation: $p_L^2=p_L$, $p_R^2=p_R$, $p_Lp_R=0$, $p_L+p_R=e_t$, and both ranks are two.
+
+The Dirac mass bilinear is the frame's scalar with the timelike unit inserted on the right,
+
+$$
+B(\tilde\Psi)=\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x\bigr),
+$$
+
+and it is chirality-odd: it changes sign under $\tilde\Psi\mapsto-i\tilde\Psi\vec e_z$, and it vanishes on a field of a single value, so it pairs one part of each value. Both statements were rechecked on the defining representation: $B$ is real, $B(\chi\tilde\Psi)=-B(\tilde\Psi)$ to machine zero, and $B(\tilde\Psi p_L)=B(\tilde\Psi p_R)=0$. On the module a chiral abelian symmetry with independent charges is consistent, with the charge element $Ϙ=ϙ_Lp_L+ϙ_Rp_R=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ multiplying on the right, $D_\mu:\psi\mapsto\bigl(\partial/\partial Q_\mu\bigr)\psi+\tfrac{i}{\hbar}\,A_\mu\,\psi\,Ϙ$, the gradient and the connection acting on the left and the charge on the right; the element $Ϙ$ is central if and only if $ϙ_L=ϙ_R$, and the mass bilinear is gauge invariant **if and only if $ϙ_L = ϙ_R$**.
 
 Two further results of that article are the ones that bear on QCD.
 
 - **The canonically available gauge group is vector-like.** The framework's own abelian gauge group is the $*$-unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, which acts as a *scalar* on $M_2(\mathbb{C})$; every component of the module receives the same charge. Chirality requires a non-central action, hence a non-abelian gauge structure — the structure the non-abelian article supplies for $\mathrm{SU}(2)$ but does not dress with matter.
-- **The framework's mass term is chirality-exchanging.** The mass is the off-diagonal pairing of the gradient equation, and it is the real-form expression of an ordinary Dirac mass. Because it couples the two chiralities it breaks the **axial** (chiral) symmetry, while the vector phase $\mathrm{U}(1)$ — fermion number — passes through the linear mass and is exact for the massive field. With the axial current $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,\Gamma\,\psi$,
+- **The framework's mass term is chirality-exchanging.** The mass is the off-diagonal pairing of the gradient equation, and it is the real-form expression of an ordinary Dirac mass. Because it couples the two chiralities it breaks the **axial** (chiral) symmetry, while the vector phase $\mathrm{U}(1)$ — fermion number — passes through the linear mass and is exact for the massive field. With the axial current $j_{5\mu}$,
 
     $$
-    \sum_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}=2im\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\Gamma\,\psi=2m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,R_{\vec e_z}^{\mathrm{axf}}\,\psi ,
+    j_{50}=\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,(-i\vec e_z)\bigr),
+    \qquad
+    j_{5k}=\mathrm{Sc}\bigl(i\tilde\Psi^{*}\vec e_k\tilde\Psi\bigr),
     $$
 
-    a plain sum, because the metric is already spent inside the cells, and the last step spends $i(-i)=+1$. The right-hand side vanishes only at $m=0$. A genuinely antilinear Majorana-type pairing lives instead on the algebra's real structure $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus.
+    the time component multiplying on the right and the three spatial ones on the left, and
+
+    $$
+    \sum_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}=2im\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,\vec e_y\bigr),
+    $$
+
+    a plain sum, because the signs are carried by the units inside the bilinears and not by the sum. The insertion is $\vec e_y$ where the mass bilinear carries $i\vec e_x$, and the chirality relates the two: its multiplier $-i\vec e_z$ followed by $i\vec e_x$ gives $\vec e_y$, $(-i\vec e_z)(i\vec e_x)=\vec e_y$. The density $\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi\vec e_y)$ is imaginary, so the $i$ of the coefficient makes the product real. It vanishes only at $m=0$. A genuinely antilinear Majorana-type pairing lives instead on the algebra's real structure $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus.
 
 The anomaly, finally, is where QCD's chirality is physically indispensable; the series' position on it is recorded in §"The Chiral-Fermion Issue and the Quark Couplings".
 
@@ -200,20 +220,20 @@ The question for this agenda is how much of that is a *QCD* obstacle. The answer
 
 **The gauge-chirality obstruction is not itself a colour obstruction.** Colour is a **vector-like** interaction: the left- and right-handed components of a quark carry the *same* colour representation, so a colour gauge transformation acts identically on $\psi_L$ and $\psi_R$. The chiral-fermion article's finding that the centre is scalar and vector-like, and cannot generate a chiral gauge group, is therefore not an obstruction to colour; if anything it is the opposite, since a vector-like action is exactly what colour needs. It is worth saying this plainly so that the chiral-fermion result is not over-read: the framework's inability to make a *chiral gauge group* bears on the electroweak sector, not on colour.
 
-**What does bear on QCD is the missing colour representation of the quark.** The chiral-fermion article constructs its chiral covariant derivative on the module for an *abelian* phase, with a charge operator $Ϙ = ϙ_LP_L + ϙ_RP_R$. The non-abelian article constructs a connection with values in $\mathrm{SU}(2)$ but explicitly leaves the matter representation open: its open question 3 states that for a non-abelian connection the left and right actions differ and the representation carried by the matter field must be specified, and that the non-abelian charge operator is not constructed. QCD needs the quark in the **fundamental of the colour group**, with the covariant derivative acting on the colour index. By the ceiling of §"The Colour Group", a colour triplet is not a $\mathbb{B}$-module, so this representation must live on an enlarged carrier. The matter representation and the colour group therefore share a single settling object: a construction, on whatever carrier is justified, of a field transforming in the colour fundamental with the connection acting on the internal index.
+**What does bear on QCD is the missing colour representation of the quark.** The chiral-fermion article constructs its chiral covariant derivative on the module for an *abelian* phase, with a charge element $Ϙ = ϙ_Lp_L + ϙ_Rp_R$. The non-abelian article constructs a connection with values in $\mathrm{SU}(2)$ but explicitly leaves the matter representation open: its open question 3 states that for a non-abelian connection the left and right actions differ and the representation carried by the matter field must be specified, and that the non-abelian charge operator is not constructed. QCD needs the quark in the **fundamental of the colour group**, with the covariant derivative acting on the colour index. By the ceiling of §"The Colour Group", a colour triplet is not a $\mathbb{B}$-module, so this representation must live on an enlarged carrier. The matter representation and the colour group therefore share a single settling object: a construction, on whatever carrier is justified, of a field transforming in the colour fundamental with the connection acting on the internal index.
 
-**The global chiral sector of QCD is a further, distinct obstacle.** Beyond the gauge representation, the quarks carry an approximate global chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ (for the light flavours), which is spontaneously broken and whose consequences — light Goldstone pions, the $\eta_{\mathrm s}$ mass, the axial anomaly, the $\theta$-vacuum — are central to QCD. The framework supplies the chirality cell and the projectors on the module, and it records that the chirality is a cell of the two-sided algebra, invisible to $\mathbb{B}$ alone, whose central form appears through the complexification.
+**The global chiral sector of QCD is a further, distinct obstacle.** Beyond the gauge representation, the quarks carry an approximate global chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ (for the light flavours), which is spontaneously broken and whose consequences — light Goldstone pions, the $\eta_{\mathrm s}$ mass, the axial anomaly, the $\theta$-vacuum — are central to QCD. The framework supplies the chirality $\chi$, the right multiplication by $-i\vec e_z$, and the projectors $p_L,p_R$ on the module. It also records the price: a right multiplication is not an element acting on the left, so the chirality is invisible to the algebra's left action, and it appears in central form only through the complexification.
 
 The **anomaly** is now partly supplied, and the position has to be stated carefully because it has moved. The chiral-fermion article attempted no biquaternion formulation of it; the companion *Anomalies and Anomaly Cancellation in Biquaternionic Form* does. It writes the Adler–Bell–Jackiw divergence in the framework's own objects,
 
 $$
 \langle\tilde\nabla,\tilde J_5\rangle_{\natural}=\sum_\mu\frac{\partial j_{5\mu}}{\partial Q_\mu}
-=2im\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\Gamma\,\psi-\frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
+=2im\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,\vec e_y\bigr)-\frac{e^2}{16\pi^2}\,\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma},
 $$
 
 identifies the anomaly density with the second biquaternion invariant $I_2=\vec E\cdot\vec B$, exhibits the 't Hooft vertex as a product of the bilinears the framework already carries, and verifies the Standard Model's cancellation conditions generation by generation. What is imported there is the coefficient, quoted from standard field theory rather than derived, and the triangle coefficient $\mathrm{Tr}_R[T_a\{T_b,T_c\}]$ runs over the representation $R$ of whatever gauge group is supplied — for colour, a group the framework does not own. The $\theta$-angle and strong $CP$ lie outside that article by its own statement. So the QCD-specific gap is narrower than it was and is still real: the anomaly is formulated at the level of a single abelian current, and the **colour-dressed** coefficient, the flavour-singlet $\mathrm{U}(1)_A$ at $N_f$ flavours, and the strong $CP$ question remain unbuilt.
 
-**The framework's mass term interacts with both.** The mass is the off-diagonal pairing of the gradient equation written in §"The chiral-fermion issue"; it is the real-form expression of an ordinary Dirac mass, so the interpretation is settled. The framework therefore carries a conserved fermion number — the central phase passes through the linear mass and the vector $\mathrm{U}(1)$ is exact for the massive field — and what the mass breaks is the **axial** charge, with the divergence $\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2m\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,R_{\vec e_z}^{\mathrm{axf}}\,\psi$ established there, which vanishes only at $m=0$. That is the framework's transcription of exactly the chiral-symmetry breaking that organises the light-hadron spectrum. The companion article *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form* takes the next step and identifies the condensate with a dynamically generated coefficient of this same linear pair, but it transcribes the gap equation, and the scale, the interaction and the Goldstone counting are standard input rather than framework results. The genuinely antilinear pairing lives on the algebra's real structure $\flat$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus; that is a different equation from the gradient equation, and it is not the framework's mass term.
+**The framework's mass term interacts with both.** The mass is the off-diagonal pairing of the gradient equation written in §"The chiral-fermion issue"; it is the real-form expression of an ordinary Dirac mass, so the interpretation is settled. The framework therefore carries a conserved fermion number — the central phase passes through the linear mass and the vector $\mathrm{U}(1)$ is exact for the massive field — and what the mass breaks is the **axial** charge, with the divergence $\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2im\,\mathrm{Sc}\bigl(\tilde\Psi^{*}\tilde\Psi\,\vec e_y\bigr)$ established there, which vanishes only at $m=0$. That is the framework's transcription of exactly the chiral-symmetry breaking that organises the light-hadron spectrum. The companion article *The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form* takes the next step and identifies the condensate with a dynamically generated coefficient of this same linear pair, but it transcribes the gap equation, and the scale, the interaction and the Goldstone counting are standard input rather than framework results. The genuinely antilinear pairing lives on the algebra's real structure $\flat$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus; that is a different equation from the gradient equation, and it is not the framework's mass term.
 
 **What would settle it.** Three computations, in order of dependence:
 
@@ -265,58 +285,6 @@ With those two settled, the rest of the agenda becomes ordinary work: construct 
 
 Finally, the genre's standing caution applies here in its strongest form. *The Empirical Status of the Biquaternion Framework* records that on every domain developed, the framework is so far empirically equivalent to the standard theory it reformulates. A biquaternionic colour theory, if one is ever constructed, would inherit that position unless it makes a prediction standard QCD does not; and a theory whose colour group, matter content, coupling, and confinement mechanism are all imported has no prospect of doing so. The agenda's most useful output may be to make that consequence visible early, rather than to produce a construction that appears to answer QCD while assuming all of it.
 
-## The Legacy Pauli Gamma Formulation
-
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The bracket is the frame, on the generators as on the metric, $\gamma_\mu[\mathbb{M}_-]$ or $\gamma_\mu[\mathbb{B}]$, so that a glyph names a display and not an object of the algebra.
-
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame names of the five cells used above, and they are used in this section and nowhere else in the article.
-
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Two cells multiply by multiplying each side, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the identity is $L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$.
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\qquad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},
-$$
-
-The same in the axis-free display:
-
-$$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-\gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
-$$
-
-$$
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\Gamma .
-$$
-
-In the axis-free display:
-
-$$
-\gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\Gamma .
-$$
-
-Every sign among their products comes from $i^2=-1$ together with $\vec e_k^2=-e_t$, and the double units are spent before the product is read: $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]=i^2L_{e_t\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}=-L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y\vec e_x}^{\mathrm{pau}}$ is a plain cell with no residual unit, and the same four steps give $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\Gamma$, that is $\Gamma=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$. The four generators satisfy
-
-$$
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-\gamma_5^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
-$$
-
-with $\varepsilon=(1,-1,-1,-1)$; the last relation is the statement $\{\Gamma,G_\mu\}=0$ of the preceding sections, read once in frame names. The chirality-odd trace behind every axial bilinear is $\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma}$, with $\epsilon_{0123}=+1$.
-
-A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four of them, with $\ell(M)=\operatorname{rank}c(M)$.
-
-$\gamma_5$ is the reference-frame representative of the chirality cell. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented on the Dirac module by $\gamma_5=\Gamma$. The distinction is the one between the abstract central sign and its representative.
-
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
-
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
-
 ## Summary
 
 This article is a research agenda for quantum chromodynamics inside the biquaternion framework. Its finding is that the framework reaches the general machinery of a non-abelian gauge theory and stops before colour.
@@ -342,7 +310,7 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; the vector-like abelian factor |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\tilde\nabla = e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$, $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$ with $(\varepsilon_t,\varepsilon_x,\varepsilon_y,\varepsilon_z)=(1,-1,-1,-1)$ | Biquaternionic gradient and its quaternion conjugate; $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$, while $\tilde\nabla^2=\Box-2e_t\Delta_Q+2\sum_k\vec e_k\partial^2/\partial Q_t\partial Q_k$, with $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ the Laplacian |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{M}_-$ |
 | $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=ϙ/\hbar$ | Non-abelian connection and coupling (read list) |
@@ -351,11 +319,13 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 | $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Available compact gauge algebra (dimension 4) |
 | $\mathrm{GL}(2,\mathbb{C}) = \mathrm{U}(2)\oplus i\,\mathrm{U}(2)$ | Cartan decomposition fixing the ceiling: maximal compact subalgebra $\mathrm{U}(2)$ |
 | $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$ | Dirac module and its unique simple summand; every $\mathbb{B}$-module has dimension $2k$ |
-| $L_aR_b\psi=a\psi b$, $L_aR_b\,L_cR_d=L_{ac}R_{db}$ | Two-sided cells; the derivative and the chirality are both cells |
-| $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}$, $\tau(t)=x$, $\tau(k)=y$ | Generator cells; $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
-| $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$, $P_L=\tfrac12(I_4-\Gamma)$, $P_R=\tfrac12(I_4+\Gamma)$ | Chirality cell and projectors (read list); $\Gamma^2=I_4$, $\{\Gamma,G_\mu\}=0$, $\Gamma=\mathrm{diag}(-I_2,I_2)$ |
-| $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi$, $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\Gamma\psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R$ | Chirality-odd mass bilinear; axial current, $\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2m\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\psi$; chiral charge operator; selection rule $ϙ_L=ϙ_R$ |
-| $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ (gradient equation); $(\mathbb{D}-m)\psi=0$, $\mathbb{D}=i\sum_\mu G_\mu\partial/\partial x_\mu$ (cell equation); $\tilde\Psi^{\flat}=-\tilde\Psi^{*}$ | The two Dirac equations; the mass is the linear off-diagonal chirality coupling; $\flat$ is the algebra's real structure, not the mass |
+| $\omega=-\vec e_z$, $\omega^2=-e_t$ | Pseudoscalar of the frame; the chirality is the right multiplication by $i\omega=-i\vec e_z$ |
+| $\chi:\psi\mapsto-i\psi\vec e_z=\psi(-i\vec e_z)$ | Chirality, a right multiplication; $\chi^2=e_t$, $\chi=\mathrm{diag}(-I_2,I_2)$ on the module, $[\chi,\tilde\nabla]=0$ |
+| $p_L=\tfrac12(e_t+i\vec e_z)$, $p_R=\tfrac12(e_t-i\vec e_z)$, $\psi_L=\psi p_L$, $\psi_R=\psi p_R$ | The two values; idempotent, orthogonal, complete, each a right multiplier of rank two; the chirality is the right multiplication by $-i\vec e_z=2p_R-e_t$ |
+| $B=\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi\,i\vec e_x)$ | Dirac mass bilinear; chirality-odd, $B(\chi\tilde\Psi)=-B(\tilde\Psi)$, and zero on a field of one value |
+| $j_{50}=\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi(-i\vec e_z))$, $j_{5k}=\mathrm{Sc}(i\tilde\Psi^{*}\vec e_k\tilde\Psi)$, $Ϙ=ϙ_Lp_L+ϙ_Rp_R$ | Axial current, $\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2im\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Psi\vec e_y)$; charge element, central iff $ϙ_L=ϙ_R$ |
+| $\mathbb{D}(\Psi_L,\Psi_R)=(\tilde\nabla\Psi_R,\tilde\nabla^{\natural}\Psi_L)$, $\mathbb{D}^2=\Box I$ | Pair operator; $(\mathbb{D}-m)\Psi=0$ is the chiral pair written once; the gradient's own square is not scalar, see the gradient row |
+| $\tilde\Psi^{\flat}=-\tilde\Psi^{*}$ | The algebra's real structure; the single-field equation built on it is not the mass |
 | $\tilde{Q}\tilde{Q}^{\natural}$ | Central biquaternion-norm invariant; the cutoff is imposed on it |
 | $\beta_g=-(g^3/16\pi^2)b_0$, $b_0=\tfrac{11}{3}C_2(G)-\tfrac{2}{3}\sum_{\text{Weyl}}T(r)$ | Non-abelian one-loop beta function (transcribed) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |
@@ -368,11 +338,10 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the gauge-invariant density, and the open matter-representation question this agenda inherits.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian origin of the connection and the reality-condition gap the non-abelian construction takes up.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the module's chirality structure, the vector-like centre, the mass selection rule, the linear chirality-coupling mass term, and the anomaly it leaves unformulated.
-- [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the Adler–Bell–Jackiw divergence written in the framework's own cells, the anomaly density as the second field invariant $I_2=\vec E\cdot\vec B$, the 't Hooft vertex, and the Standard Model cancellation conditions; the coefficient is quoted rather than derived, and $\theta$ and strong $CP$ lie outside its scope.
+- [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the Adler–Bell–Jackiw divergence written in the framework's own elements, the anomaly density as the second field invariant $I_2=\vec E\cdot\vec B$, the 't Hooft vertex, and the Standard Model cancellation conditions; the coefficient is quoted rather than derived, and $\theta$ and strong $CP$ lie outside its scope.
 - [The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form](the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html) — the condensate as a dynamically generated coefficient of the same linear chiral pair, with the gap equation and the Goldstone counting transcribed.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) — the one-loop non-abelian beta function, $C_2(G)=N$, the QCD coefficient and threshold, and the article's own statement that these are transcribed with the group and matter as inputs; the source of the running-coupling item.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension is the parent's starting point.
