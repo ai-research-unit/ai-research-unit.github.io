@@ -87,7 +87,7 @@ The losses accumulate from the first row to the last: the commutative theory of 
 |---|---|---|
 | $\mathbb{S}$, the sedenions | not associative, and with zero divisors | *Division Algebras* |
 | $\mathbb{C}^{\mathrm{spl}}$, the split-complex numbers | commutative, with zero divisors | *Split-Complex Algebra* |
-| $\mathbb{C}^{\mathrm{dua}}$, the dual numbers | commutative, with a nilpotent | *Dual-Numbers Algebra* |
+| $\mathbb{C}^{\mathrm{dln}}$, the dual numbers | commutative, with a nilpotent | *Dual-Numbers Algebra* |
 | $\mathbb{Z}/6\mathbb{Z}$ | commutative, with zero divisors | *Modular Arithmetic and the Ring of Residues* |
 | every commutative ring | not on this list: commutativity is the criterion for exclusion | *Commutative Rings* |
 

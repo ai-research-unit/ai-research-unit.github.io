@@ -252,7 +252,7 @@ $$
 
 with $\Pi_1 + \Pi_2 = 1$ and $\Pi_1\Pi_2 = 0$. Since $\mathbb{C}^{\mathrm{spl}}$ is commutative, the idempotents are central, and the Chinese remainder decomposition is a decomposition of the whole algebra. This is the smallest case in which the decomposition is visible as a product of algebras.
 
-The dual numbers $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ have minimal polynomial $x^2$, a single factor with exponent two. There is no nontrivial idempotent and no product decomposition; the algebra is local. The contrast between $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dua}}$ is the contrast between a split squarefree polynomial and a repeated factor, and it is the reason the eigenvalue decomposition needs distinct roots while the Jordan–Chevalley decomposition does not.
+The dual numbers $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ have minimal polynomial $x^2$, a single factor with exponent two. There is no nontrivial idempotent and no product decomposition; the algebra is local. The contrast between $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$ is the contrast between a split squarefree polynomial and a repeated factor, and it is the reason the eigenvalue decomposition needs distinct roots while the Jordan–Chevalley decomposition does not.
 
 ### The complex numbers as a real algebra
 

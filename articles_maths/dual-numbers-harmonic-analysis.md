@@ -5,18 +5,18 @@
 
 This article introduces harmonic analysis on the dual plane as the study of the Fourier transform, convolution, and the function spaces on which they act, with the nilpotent structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The analytic content is stated on the dual plane over $\mathbb{R}$, the locally compact abelian group $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}^2$ underlying every transform below.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The analytic content is stated on the dual plane over $\mathbb{R}$, the locally compact abelian group $\mathbb{C}^{\mathrm{dln}} \cong \mathbb{R}^2$ underlying every transform below.
 
-Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dua}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dua}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
+Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dln}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dln}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
 
 ## The Dual Plane as a Locally Compact Abelian Group
 
 ### Additive Structure
 
-The dual plane $\mathbb{C}^{\mathrm{dua}}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{C}^{\mathrm{dua}}$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:
+The dual plane $\mathbb{C}^{\mathrm{dln}}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{C}^{\mathrm{dln}}$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:
 
 $$
-\chi_\xi(Q) = \exp(2\pi i \langle \xi, Q \rangle), \qquad \xi \in \mathbb{C}^{\mathrm{dua}},
+\chi_\xi(Q) = \exp(2\pi i \langle \xi, Q \rangle), \qquad \xi \in \mathbb{C}^{\mathrm{dln}},
 $$
 
 where the exponential is the ordinary complex exponential, and the pairing is
@@ -31,10 +31,10 @@ So at the level of the additive group, dual harmonic analysis is the same as Fou
 
 ### The Dual Characters
 
-The **dual characters** are the homomorphisms into the multiplicative monoid of $\mathbb{C}^{\mathrm{dua}}$:
+The **dual characters** are the homomorphisms into the multiplicative monoid of $\mathbb{C}^{\mathrm{dln}}$:
 
 $$
-\chi_\xi(Q) = \exp(\langle \xi, Q \rangle \varepsilon), \qquad \xi \in \mathbb{C}^{\mathrm{dua}},
+\chi_\xi(Q) = \exp(\langle \xi, Q \rangle \varepsilon), \qquad \xi \in \mathbb{C}^{\mathrm{dln}},
 $$
 
 where the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is
@@ -43,7 +43,7 @@ $$
 \chi_\xi(Q) = 1 + \langle \xi, Q \rangle \varepsilon.
 $$
 
-These characters take values in the affine line $1 + \mathbb{C}^{\mathrm{dua}} \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, Q \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.
+These characters take values in the affine line $1 + \mathbb{C}^{\mathrm{dln}} \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, Q \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.
 
 So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the affine line $1 + \mathrm{M}$, so their deviation from the identity lies in the nilpotent maximal ideal.
 
@@ -51,16 +51,16 @@ So the dual case is intermediate between the complex case, where the characters 
 
 ### Definition
 
-The **dual Fourier transform** of a function $f : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$ is
+The **dual Fourier transform** of a function $f : \mathbb{C}^{\mathrm{dln}} \to \mathbb{C}^{\mathrm{dln}}$ is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{dua}}} f(Q) \exp(- \langle \xi, Q \rangle \varepsilon) \, dQ,
+(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{dln}}} f(Q) \exp(- \langle \xi, Q \rangle \varepsilon) \, dQ,
 $$
 
-where $dQ$ is Lebesgue measure on $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is
+where $dQ$ is Lebesgue measure on $\mathbb{C}^{\mathrm{dln}} \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{dua}}} f(Q) (1 - \langle \xi, Q \rangle \varepsilon) \, dQ.
+(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{dln}}} f(Q) (1 - \langle \xi, Q \rangle \varepsilon) \, dQ.
 $$
 
 So the dual Fourier transform is the ordinary two-dimensional Fourier transform of the real part, plus an infinitesimal correction given by the first moment of the function.
@@ -136,13 +136,13 @@ This is the fundamental limitation of dual harmonic analysis: the nilpotence of 
 
 ### Definition
 
-The **convolution** of $f, g : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$ is
+The **convolution** of $f, g : \mathbb{C}^{\mathrm{dln}} \to \mathbb{C}^{\mathrm{dln}}$ is
 
 $$
-(f * g)(Q_1) = \int_{\mathbb{C}^{\mathrm{dua}}} f(Q_1 - Q_2) g(Q_2) \, dQ_2,
+(f * g)(Q_1) = \int_{\mathbb{C}^{\mathrm{dln}}} f(Q_1 - Q_2) g(Q_2) \, dQ_2,
 $$
 
-whenever the integral converges. This is the convolution on the additive group $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}^2$.
+whenever the integral converges. This is the convolution on the additive group $\mathbb{C}^{\mathrm{dln}} \cong \mathbb{R}^2$.
 
 ### Basic Properties
 
@@ -186,49 +186,49 @@ So the zeroth moment of the convolution is the product of the zeroth moments, an
 
 ### Approximate Identities
 
-A sequence $(\phi_n)$ in $L^1(\mathbb{C}^{\mathrm{dua}})$ is an **approximate identity** if
+A sequence $(\phi_n)$ in $L^1(\mathbb{C}^{\mathrm{dln}})$ is an **approximate identity** if
 
 $$
-\int_{\mathbb{C}^{\mathrm{dua}}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Q\|_E > \delta} |\phi_n(Q)| \, dQ \to 0
+\int_{\mathbb{C}^{\mathrm{dln}}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Q\|_E > \delta} |\phi_n(Q)| \, dQ \to 0
 $$
 
 for every $\delta > 0$.
 
-**Theorem.** If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 \leq p < \infty$, then
+**Theorem.** If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{C}^{\mathrm{dln}})$ for $1 \leq p < \infty$, then
 
 $$
 \|f * \phi_n - f\|_p \to 0.
 $$
 
-This is the same as in the real case, because the additive group of $\mathbb{C}^{\mathrm{dua}}$ is just $\mathbb{R}^2$.
+This is the same as in the real case, because the additive group of $\mathbb{C}^{\mathrm{dln}}$ is just $\mathbb{R}^2$.
 
 ## Distributions
 
 ### Definition
 
-A **tempered distribution** on $\mathbb{C}^{\mathrm{dua}}$ is a continuous linear functional on the Schwartz space $\mathcal{S}(\mathbb{C}^{\mathrm{dua}})$. The space of tempered distributions is denoted $\mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$. It includes all functions in $L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 \leq p \leq \infty$, all finite measures, and all derivatives of such objects.
+A **tempered distribution** on $\mathbb{C}^{\mathrm{dln}}$ is a continuous linear functional on the Schwartz space $\mathcal{S}(\mathbb{C}^{\mathrm{dln}})$. The space of tempered distributions is denoted $\mathcal{S}'(\mathbb{C}^{\mathrm{dln}})$. It includes all functions in $L^{n}(\mathbb{C}^{\mathrm{dln}})$ for $1 \leq p \leq \infty$, all finite measures, and all derivatives of such objects.
 
 ### Operations on Distributions
 
-**Differentiation.** For $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$ and $\phi \in \mathcal{S}(\mathbb{C}^{\mathrm{dua}})$,
+**Differentiation.** For $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dln}})$ and $\phi \in \mathcal{S}(\mathbb{C}^{\mathrm{dln}})$,
 
 $$
 \langle \partial/\partial q T, \phi \rangle = -\langle T, \partial/\partial q \phi \rangle, \qquad \langle \partial/\partial q' T, \phi \rangle = -\langle T, \partial/\partial q' \phi \rangle.
 $$
 
-**Multiplication by a function.** For $f \in C^\infty(\mathbb{C}^{\mathrm{dua}})$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$,
+**Multiplication by a function.** For $f \in C^\infty(\mathbb{C}^{\mathrm{dln}})$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dln}})$,
 
 $$
 \langle f T, \phi \rangle = \langle T, f \phi \rangle.
 $$
 
-**Dual Fourier transform.** For $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$ and $\phi \in \mathcal{S}(\mathbb{C}^{\mathrm{dua}})$,
+**Dual Fourier transform.** For $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dln}})$ and $\phi \in \mathcal{S}(\mathbb{C}^{\mathrm{dln}})$,
 
 $$
 \langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle.
 $$
 
-Because the transform truncates to a moment map, it is **not** a bijection on $\mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$: its real part is constant, its infinitesimal part is affine in $\xi$, and it is therefore far from injective.
+Because the transform truncates to a moment map, it is **not** a bijection on $\mathcal{S}'(\mathbb{C}^{\mathrm{dln}})$: its real part is constant, its infinitesimal part is affine in $\xi$, and it is therefore far from injective.
 
 ### The Delta Distribution
 
@@ -262,9 +262,9 @@ $$
 
 where p.v. denotes the Cauchy principal value. This is the ordinary real Hilbert transform, and it acts on the real part of the dual function.
 
-### The Dual Hilbert Transform on $\mathbb{C}^{\mathrm{dua}}$
+### The Dual Hilbert Transform on $\mathbb{C}^{\mathrm{dln}}$
 
-For $f : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$, the dual Hilbert transform is defined by
+For $f : \mathbb{C}^{\mathrm{dln}} \to \mathbb{C}^{\mathrm{dln}}$, the dual Hilbert transform is defined by
 
 $$
 Hf(Q) = Hf_r(q) + Hf_i(q) \varepsilon,
@@ -274,7 +274,7 @@ where $f_r$ and $f_i$ are the real and infinitesimal parts of $f$. So the dual H
 
 ### Basic Properties
 
-**Boundedness.** $H$ is bounded on $L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 < p < \infty$, with
+**Boundedness.** $H$ is bounded on $L^{n}(\mathbb{C}^{\mathrm{dln}})$ for $1 < p < \infty$, with
 
 $$
 \|Hf\|_p \leq C_p \|f\|_p.
@@ -292,7 +292,7 @@ where $\operatorname{sgn}$ is the sign function on the real part.
 
 ### The Dual Maximal Function
 
-The **dual Hardy–Littlewood maximal function** of $f \in L^1_{\mathrm{loc}}(\mathbb{C}^{\mathrm{dua}})$ is
+The **dual Hardy–Littlewood maximal function** of $f \in L^1_{\mathrm{loc}}(\mathbb{C}^{\mathrm{dln}})$ is
 
 $$
 Mf(Q_1) = \sup_{r > 0} \frac{1}{|B(Q_1, r)|} \int_{B(Q_1, r)} \|f(Q_2)\|_E \, dQ_2,
@@ -302,7 +302,7 @@ where $B(Q_1, r)$ is the Euclidean ball of radius $r$ centred at $Q_1$, and $|B(
 
 ### The Maximal Inequality
 
-**Theorem (Hardy–Littlewood, dual version).** There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{C}^{\mathrm{dua}})$ and every $\lambda > 0$,
+**Theorem (Hardy–Littlewood, dual version).** There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{C}^{\mathrm{dln}})$ and every $\lambda > 0$,
 
 $$
 \boxed{\;
@@ -310,7 +310,7 @@ $$
 \;}.
 $$
 
-This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 < p \leq \infty$.
+This is a **weak $(1,1)$** estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}^{\mathrm{dln}})$ for $1 < p \leq \infty$.
 
 **Theorem.** For $1 < p \leq \infty$, there exists $C_p > 0$ such that
 
@@ -322,16 +322,16 @@ $$
 
 ### The Structure of the Maximal Function
 
-Because the additive group of $\mathbb{C}^{\mathrm{dua}}$ is just $\mathbb{R}^2$, the maximal function theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.
+Because the additive group of $\mathbb{C}^{\mathrm{dln}}$ is just $\mathbb{R}^2$, the maximal function theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.
 
 ## The Calderón–Zygmund Theory
 
 ### Singular Integrals
 
-A **dual Calderón–Zygmund operator** is a bounded operator $T : L^2(\mathbb{C}^{\mathrm{dua}}) \to L^2(\mathbb{C}^{\mathrm{dua}})$ with a kernel $K : \mathbb{C}^{\mathrm{dua}} \times \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$ such that
+A **dual Calderón–Zygmund operator** is a bounded operator $T : L^2(\mathbb{C}^{\mathrm{dln}}) \to L^2(\mathbb{C}^{\mathrm{dln}})$ with a kernel $K : \mathbb{C}^{\mathrm{dln}} \times \mathbb{C}^{\mathrm{dln}} \to \mathbb{C}^{\mathrm{dln}}$ such that
 
 $$
-Tf(Q_1) = \int_{\mathbb{C}^{\mathrm{dua}}} K(Q_1, Q_2) f(Q_2) \, dQ_2
+Tf(Q_1) = \int_{\mathbb{C}^{\mathrm{dln}}} K(Q_1, Q_2) f(Q_2) \, dQ_2
 $$
 
 for $Q_1 \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates
@@ -346,13 +346,13 @@ $$
 
 and the analogous estimate in the second variable, for some $\delta > 0$.
 
-**Theorem (Calderón–Zygmund, dual version).** Every dual Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.
+**Theorem (Calderón–Zygmund, dual version).** Every dual Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}^{\mathrm{dln}})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.
 
 **Examples.** The dual Hilbert transform, the dual Riesz transforms, and the Beurling–Ahlfors transform are dual Calderón–Zygmund operators.
 
 ### The Structure of the Theory
 
-Because the additive group of $\mathbb{C}^{\mathrm{dua}}$ is just $\mathbb{R}^2$, the Calderón–Zygmund theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the theory, because the kernel estimates are in terms of the Euclidean norm, which does not see the algebra structure.
+Because the additive group of $\mathbb{C}^{\mathrm{dln}}$ is just $\mathbb{R}^2$, the Calderón–Zygmund theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the theory, because the kernel estimates are in terms of the Euclidean norm, which does not see the algebra structure.
 
 So the dual Calderón–Zygmund theory is the real theory on $\mathbb{R}^2$, stated in dual notation. This is a general phenomenon: whenever the analysis depends only on the additive group structure and the Euclidean norm, the dual case is identical to the real case. The nilpotence of $\varepsilon$ only matters when the algebra structure enters, as in the Fourier transform and the convolution theorem.
 
@@ -360,7 +360,7 @@ So the dual Calderón–Zygmund theory is the real theory on $\mathbb{R}^2$, sta
 
 ### Definition
 
-The **dual Mellin transform** of a function $f : (0, \infty) \to \mathbb{C}^{\mathrm{dua}}$ is
+The **dual Mellin transform** of a function $f : (0, \infty) \to \mathbb{C}^{\mathrm{dln}}$ is
 
 $$
 \mathcal{M} f(s) = \int_0^\infty t^{s-1} f(t) \, dt,
@@ -388,7 +388,7 @@ where $g(a) = \exp(\sigma a) f(\exp(a))$. So the Mellin transform is the dual Fo
 
 ### Definition
 
-The **dual Radon transform** of a function $f : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$ is
+The **dual Radon transform** of a function $f : \mathbb{C}^{\mathrm{dln}} \to \mathbb{C}^{\mathrm{dln}}$ is
 
 $$
 Rf(\theta, t) = \int_{L(\theta, t)} f(Q) \, ds,
@@ -451,7 +451,7 @@ The inversion formula reconstructs $f$ from its wavelet transform.
 In the dual setting, the wavelet $\psi$ is allowed to be dual-valued, and the transform becomes
 
 $$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}^{\mathrm{dua}}} f(Q) \overline{\psi\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in (\mathbb{C}^{\mathrm{dua}})^\times, \; b \in \mathbb{C}^{\mathrm{dua}}.
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}^{\mathrm{dln}}} f(Q) \overline{\psi\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in (\mathbb{C}^{\mathrm{dln}})^\times, \; b \in \mathbb{C}^{\mathrm{dln}}.
 $$
 
 The dual wavelet transform is used in infinitesimal signal processing, where it provides both the value and the derivative information.
@@ -472,7 +472,7 @@ This is the fundamental limitation of dual harmonic analysis: the nilpotence of 
 
 ## Summary
 
-Harmonic analysis on the dual plane $\mathbb{C}^{\mathrm{dua}}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the nilpotent structure in an essential role. The dual plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters are the exponentials built from $\varepsilon$.
+Harmonic analysis on the dual plane $\mathbb{C}^{\mathrm{dln}}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the nilpotent structure in an essential role. The dual plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters are the exponentials built from $\varepsilon$.
 
 The dual Fourier transform is defined by a kernel that truncates in the infinitesimal direction, and it is developed both on the full plane and on a bounded interval, together with convolution, the Schwartz space and its tempered distributions, the Hilbert transform, the Hardy–Littlewood maximal function, and the Calderón–Zygmund theory of singular integrals. The transform is then extended to the Mellin transform on the multiplicative half-line, the Radon transform along lines, and the continuous wavelet transform.
 
@@ -482,7 +482,7 @@ The section on the structure principle states what organises the subject: whenev
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dua}}$ | Dual number algebra |
+| $\mathbb{C}^{\mathrm{dln}}$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
 | $Q = q + \varepsilon q'$ | General dual number, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
 | $Q_1 = q_1 + \varepsilon q'_1$ | Second dual number, $q_1 = \operatorname{Re} Q_1$, $q'_1 = \operatorname{Inf} Q_1$ |

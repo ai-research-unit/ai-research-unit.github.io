@@ -7,13 +7,13 @@ The vector space $\mathbb{R}^2$ carries exactly three commutative unital algebra
 
 This article develops the three cases side by side: the algebra, its units, its norm, the parametrisation of the group of norm-one units, the matrix of multiplication, the orbit of a point and the fixed lines. It then explains the two structural facts that make the picture what it is: multiplicative rotation belongs to dimension two because a multiplicative norm on the plane has only the three possible signatures, and the same construction in dimension three forces one to give up commutativity, the smallest algebra that serves being the four-dimensional quaternions.
 
-Throughout, the generator of the algebra is written $\omega$ with $\omega^2 = \sigma$, where $\sigma = -1$ for $\mathbb{C}$, $\sigma = +1$ for $\mathbb{C}^{\mathrm{spl}}$ and $\sigma = 0$ for $\mathbb{C}^{\mathrm{dua}}$. A general element is $z = x + \omega y$ with $x, y \in \mathbb{R}$, and the three algebras are the quotient algebras
+Throughout, the generator of the algebra is written $\omega$ with $\omega^2 = \sigma$, where $\sigma = -1$ for $\mathbb{C}$, $\sigma = +1$ for $\mathbb{C}^{\mathrm{spl}}$ and $\sigma = 0$ for $\mathbb{C}^{\mathrm{dln}}$. A general element is $z = x + \omega y$ with $x, y \in \mathbb{R}$, and the three algebras are the quotient algebras
 
 $$
-\mathbb{C} = \frac{\mathbb{R}[\omega]}{(\omega^2+1)}, \qquad \mathbb{C}^{\mathrm{spl}} = \frac{\mathbb{R}[\omega]}{(\omega^2-1)}, \qquad \mathbb{C}^{\mathrm{dua}} = \frac{\mathbb{R}[\omega]}{(\omega^2)} .
+\mathbb{C} = \frac{\mathbb{R}[\omega]}{(\omega^2+1)}, \qquad \mathbb{C}^{\mathrm{spl}} = \frac{\mathbb{R}[\omega]}{(\omega^2-1)}, \qquad \mathbb{C}^{\mathrm{dln}} = \frac{\mathbb{R}[\omega]}{(\omega^2)} .
 $$
 
-The symbol $\mathbb{C}^{\mathrm{spl}}$ denotes the split complex numbers and $\mathbb{C}^{\mathrm{dua}}$ the dual numbers, as fixed in the corpus.
+The symbol $\mathbb{C}^{\mathrm{spl}}$ denotes the split complex numbers and $\mathbb{C}^{\mathrm{dln}}$ the dual numbers, as fixed in the corpus.
 
 ## Multiplication by a Unit
 
@@ -109,13 +109,13 @@ $$
 u(t) = 1 + \varepsilon t, \qquad \langle u(t)\rangle_{*} = 1,
 $$
 
-and $u(t)u(s) = u(t+s)$ because $\varepsilon^2 = 0$; thus the identity component of $G_{\mathbb{C}^{\mathrm{dua}}}$ is a copy of $\mathbb{R}$, and the second branch is $-(1 + \varepsilon t)$. The matrix of multiplication is
+and $u(t)u(s) = u(t+s)$ because $\varepsilon^2 = 0$; thus the identity component of $G_{\mathbb{C}^{\mathrm{dln}}}$ is a copy of $\mathbb{R}$, and the second branch is $-(1 + \varepsilon t)$. The matrix of multiplication is
 
 $$
 M(u(t)) = \begin{pmatrix} 1 & 0 \\ t & 1 \end{pmatrix},
 $$
 
-a transvection, with $\det M = 1$. The one-parameter group of transvections is the parabolic rotation group, a copy of $(\mathbb{R},+)$; it is the degenerate limit of both the elliptic and the hyperbolic families as the quadratic form degenerates, and it is a unipotent group preserving the flag $0 \subset \mathbb{R}\varepsilon \subset \mathbb{C}^{\mathrm{dua}}$.
+a transvection, with $\det M = 1$. The one-parameter group of transvections is the parabolic rotation group, a copy of $(\mathbb{R},+)$; it is the degenerate limit of both the elliptic and the hyperbolic families as the quadratic form degenerates, and it is a unipotent group preserving the flag $0 \subset \mathbb{R}\varepsilon \subset \mathbb{C}^{\mathrm{dln}}$.
 
 The same one-parameter group is the shear group of the degenerate plane: the transvection $(x,y) \mapsto (x, tx+y)$ shears the second coordinate by an amount proportional to the first while fixing the first, exactly as the elliptic rotation mixes the two coordinates through a bounded periodic angle and the hyperbolic rotation mixes them through an unbounded parameter. The composition law is the distinguishing feature: the parameter is additive in all three cases, $u(t_1)u(t_2) = u(t_1 + t_2)$, and what separates the cases is the range over which the parameter runs — a circle of length $2\pi$ in the elliptic case, a line in the hyperbolic case, and a line of unipotent transformations in the parabolic case. It is that additive law, with the parameter range left unrestricted, that makes the shear the parabolic member of the trichotomy of angle-addition laws.
 
@@ -125,7 +125,7 @@ The same one-parameter group is the shear group of the degenerate plane: the tra
 
 The three cases differ in every feature that the quadratic form controls.
 
-| | $\mathbb{C}$ | $\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{dua}}$ |
+| | $\mathbb{C}$ | $\mathbb{C}^{\mathrm{spl}}$ | $\mathbb{C}^{\mathrm{dln}}$ |
 |---|---|---|---|
 | generator square $\sigma$ | $-1$ | $+1$ | $0$ |
 | norm $\langle\cdot\rangle_{*}$ | $x^2+y^2$ | $x^2-y^2$ | $x^2$ |
@@ -143,7 +143,7 @@ The definite case gives a compact rotation group with no fixed direction and clo
 
 The three cases are not merely three examples; they are all the examples.
 
-**Theorem (classification in dimension two).** Let $A$ be a two-dimensional commutative unital associative algebra over $\mathbb{R}$. Then $A$ is isomorphic to exactly one of $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dua}}$.
+**Theorem (classification in dimension two).** Let $A$ be a two-dimensional commutative unital associative algebra over $\mathbb{R}$. Then $A$ is isomorphic to exactly one of $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$.
 
 *Proof.* Write $A = \mathbb{R}\cdot 1 \oplus V$ with $V$ one-dimensional, and choose a generator $\omega$ spanning $V$. Then $\omega^2 = p\cdot 1 + c\,\omega$ for some $p, c \in \mathbb{R}$, so $A \cong \mathbb{R}[\omega]/(\omega^2 - p\omega - c)$ and $A$ is determined up to isomorphism by the polynomial $\omega^2 - p\omega - c$, hence by the sign of its discriminant $p^2 + 4c$. If $p^2 + 4c < 0$ the polynomial is irreducible over $\mathbb{R}$ and
 
@@ -151,7 +151,7 @@ $$
 \boxed{\;A \cong \mathbb{R}[\omega]/(\omega^2+1) = \mathbb{C}\;};
 $$
 
-if $p^2+4c > 0$ the polynomial has two distinct real roots and $A \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{C}^{\mathrm{spl}}$; if $p^2 + 4c = 0$ the polynomial is a square, $(\omega - p/2)^2 = 0$ after completing the square, so $A \cong \mathbb{R}[\omega]/(\omega^2) = \mathbb{C}^{\mathrm{dua}}$.
+if $p^2+4c > 0$ the polynomial has two distinct real roots and $A \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{C}^{\mathrm{spl}}$; if $p^2 + 4c = 0$ the polynomial is a square, $(\omega - p/2)^2 = 0$ after completing the square, so $A \cong \mathbb{R}[\omega]/(\omega^2) = \mathbb{C}^{\mathrm{dln}}$.
 
 The three kinds of rotation therefore exhaust the rotations implemented by multiplication in the plane, and the type of the rotation is the sign of the discriminant of the quadratic form: positive definite gives elliptic, indefinite gives hyperbolic, degenerate gives parabolic.
 
@@ -181,7 +181,7 @@ The three two-dimensional theories thus sit at the bottom of a hierarchy: the co
 
 ## Summary
 
-The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $\langle u\rangle_{*} = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : \langle u\rangle_{*}=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong \mathrm{U}(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{C}^{\mathrm{spl}}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{C}^{\mathrm{dua}}$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
+The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $\langle u\rangle_{*} = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : \langle u\rangle_{*}=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong \mathrm{U}(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{C}^{\mathrm{spl}}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{C}^{\mathrm{dln}}$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
 
 Passing to dimension three is impossible in the commutative setting: there is no three-dimensional commutative real division algebra, and the Hurwitz theorem restricts positive-definite multiplicative norms to dimensions $1, 2, 4, 8$. The rotations of $\mathbb{R}^3$ are instead obtained from the non-commutative quaternions, acting by conjugation $\rho_q(p) = qpq^{-1}$ on the imaginary subspace, with $SO(3) \cong S^3/\{\pm 1\}$.
 
@@ -190,8 +190,8 @@ Passing to dimension three is impossible in the commutative setting: there is no
 | Symbol | Meaning |
 |---|---|
 | $\omega$ | Generator of a two-dimensional algebra, $\omega^2 = \sigma$ |
-| $\sigma$ | $-1$ for $\mathbb{C}$, $+1$ for $\mathbb{C}^{\mathrm{spl}}$, $0$ for $\mathbb{C}^{\mathrm{dua}}$ |
-| $i, j, \varepsilon$ | Generators of $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$ |
+| $\sigma$ | $-1$ for $\mathbb{C}$, $+1$ for $\mathbb{C}^{\mathrm{spl}}$, $0$ for $\mathbb{C}^{\mathrm{dln}}$ |
+| $i, j, \varepsilon$ | Generators of $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ |
 | $z = x+\omega y$ | General element |
 | $L_u$ | Left multiplication by $u$ |
 | $M(u) = \begin{pmatrix} a & \sigma b\\ b & a\end{pmatrix}$ | Matrix of $L_u$ in the basis $(1,\omega)$ |

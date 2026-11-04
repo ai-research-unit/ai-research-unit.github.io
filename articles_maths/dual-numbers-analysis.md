@@ -7,7 +7,7 @@ This article introduces dual numbers analysis as the study of differentiable fun
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The analytic content — topology, limits, continuity, differentiation, integration — is stated over the real numbers, where the Euclidean modulus is available; the purely algebraic statements hold over an arbitrary commutative ring $R$ in which $2$ is invertible, and no finiteness assumption is made unless stated.
 
-Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dua}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dua}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
+Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dln}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dln}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
 
 ## The Dual Number Plane
 
@@ -27,7 +27,7 @@ $$
 \|Q\|_E = \sqrt{q^2 + q'^2},
 $$
 
-which is the ordinary Euclidean norm on the underlying module $\mathbb{C}^{\mathrm{dua}} \cong R^2$, defined when $R$ is an ordered ring. It is not multiplicative with respect to the dual product.
+which is the ordinary Euclidean norm on the underlying module $\mathbb{C}^{\mathrm{dln}} \cong R^2$, defined when $R$ is an ordered ring. It is not multiplicative with respect to the dual product.
 
 The **dual distance** between two dual numbers $Q_1$ and $Q_2$ is
 
@@ -35,37 +35,37 @@ $$
 d(Q_1, Q_2) = \|Q_1 - Q_2\|_E.
 $$
 
-This makes $\mathbb{C}^{\mathrm{dua}}$ a metric space when $R = \mathbb{R}$, isometric to $\mathbb{R}^2$. The topology of $\mathbb{C}^{\mathrm{dua}}$ is the ordinary Euclidean topology of the plane.
+This makes $\mathbb{C}^{\mathrm{dln}}$ a metric space when $R = \mathbb{R}$, isometric to $\mathbb{R}^2$. The topology of $\mathbb{C}^{\mathrm{dln}}$ is the ordinary Euclidean topology of the plane.
 
 ### Balls and Neighborhoods
 
 The **open ball** of radius $r > 0$ centred at $Q_0$ is
 
 $$
-B(Q_0, r) = \{Q \in \mathbb{C}^{\mathrm{dua}} : \|Q - Q_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}^{\mathrm{dln}} : \|Q - Q_0\|_E < r\}.
 $$
 
-It is an open disk in the dual plane, exactly as in the complex plane. The topology of $\mathbb{C}^{\mathrm{dua}}$ is the ordinary Euclidean topology, because the algebra is two-dimensional over $\mathbb{R}$ and the Euclidean norm is a genuine norm on the underlying real vector space.
+It is an open disk in the dual plane, exactly as in the complex plane. The topology of $\mathbb{C}^{\mathrm{dln}}$ is the ordinary Euclidean topology, because the algebra is two-dimensional over $\mathbb{R}$ and the Euclidean norm is a genuine norm on the underlying real vector space.
 
 ### Open and Closed Sets
 
-A set $\Omega \subseteq \mathbb{C}^{\mathrm{dua}}$ is **open** if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.
+A set $\Omega \subseteq \mathbb{C}^{\mathrm{dln}}$ is **open** if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.
 
-A set $F \subseteq \mathbb{C}^{\mathrm{dua}}$ is **closed** if its complement $\mathbb{C}^{\mathrm{dua}} \setminus F$ is open.
+A set $F \subseteq \mathbb{C}^{\mathrm{dln}}$ is **closed** if its complement $\mathbb{C}^{\mathrm{dln}} \setminus F$ is open.
 
 Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.
 
 ### Connectedness and Domains
 
-A set $\Omega \subseteq \mathbb{C}^{\mathrm{dua}}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is **path-connected** if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{C}^{\mathrm{dua}}$, connectedness and path-connectedness are equivalent.
+A set $\Omega \subseteq \mathbb{C}^{\mathrm{dln}}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is **path-connected** if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{C}^{\mathrm{dln}}$, connectedness and path-connectedness are equivalent.
 
-A **domain** is a non-empty open connected subset of $\mathbb{C}^{\mathrm{dua}}$. Domains are the natural setting for dual numbers analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.
+A **domain** is a non-empty open connected subset of $\mathbb{C}^{\mathrm{dln}}$. Domains are the natural setting for dual numbers analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.
 
 ### Compactness
 
-A set $K \subseteq \mathbb{C}^{\mathrm{dua}}$ is **compact** if every open cover of $K$ has a finite subcover.
+A set $K \subseteq \mathbb{C}^{\mathrm{dln}}$ is **compact** if every open cover of $K$ has a finite subcover.
 
-**Theorem (Heine–Borel).** A subset of $\mathbb{C}^{\mathrm{dua}}$ is compact iff it is closed and bounded in the Euclidean norm.
+**Theorem (Heine–Borel).** A subset of $\mathbb{C}^{\mathrm{dln}}$ is compact iff it is closed and bounded in the Euclidean norm.
 
 **Theorem.** A continuous dual-valued function on a compact set is bounded and attains its maximum and minimum Euclidean modulus.
 
@@ -73,7 +73,7 @@ A set $K \subseteq \mathbb{C}^{\mathrm{dua}}$ is **compact** if every open cover
 
 ### Limits of Sequences
 
-A sequence $(Q_n)$ of dual numbers **converges** to $L \in \mathbb{C}^{\mathrm{dua}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
+A sequence $(Q_n)$ of dual numbers **converges** to $L \in \mathbb{C}^{\mathrm{dln}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that
 
 $$
 n \geq N \implies \|Q_n - L\|_E < \epsilon.
@@ -99,7 +99,7 @@ $$
 Q_{1,n} + Q_{2,n} \to L_1 + L_2, \qquad Q_{1,n} Q_{2,n} \to L_1 L_2.
 $$
 
-There is no quotient rule in general, because $\mathbb{C}^{\mathrm{dua}}$ has zero divisors.
+There is no quotient rule in general, because $\mathbb{C}^{\mathrm{dln}}$ has zero divisors.
 
 ### Cauchy Sequences
 
@@ -109,11 +109,11 @@ $$
 m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
 $$
 
-**Theorem.** In $\mathbb{C}^{\mathrm{dua}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}^{\mathrm{dua}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and infinitesimal parts.
+**Theorem.** In $\mathbb{C}^{\mathrm{dln}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}^{\mathrm{dln}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and infinitesimal parts.
 
 ### Limits of Functions
 
-Let $f : D \to \mathbb{C}^{\mathrm{dua}}$ with $D \subseteq \mathbb{C}^{\mathrm{dua}}$, and let $Q_0$ be a limit point of $D$. We say
+Let $f : D \to \mathbb{C}^{\mathrm{dln}}$ with $D \subseteq \mathbb{C}^{\mathrm{dln}}$, and let $Q_0$ be a limit point of $D$. We say
 
 $$
 \lim_{Q \to Q_0} f(Q) = L
@@ -133,7 +133,7 @@ $$
 
 ### Continuity
 
-A function $f : D \to \mathbb{C}^{\mathrm{dua}}$ is **continuous at** $Q_0 \in D$ if
+A function $f : D \to \mathbb{C}^{\mathrm{dln}}$ is **continuous at** $Q_0 \in D$ if
 
 $$
 \lim_{Q \to Q_0} f(Q) = f(Q_0).
@@ -155,7 +155,7 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 
 ### Uniform Continuity
 
-A function $f : D \to \mathbb{C}^{\mathrm{dua}}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
+A function $f : D \to \mathbb{C}^{\mathrm{dln}}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
 Q_1, Q_2 \in D, \; \|Q_1 - Q_2\|_E < \delta \implies \|f(Q_1) - f(Q_2)\|_E < \epsilon.
@@ -167,7 +167,7 @@ $$
 
 ### The Derivative
 
-Let $f : \Omega \to \mathbb{C}^{\mathrm{dua}}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The **derivative** of $f$ at $Q_0$ is
+Let $f : \Omega \to \mathbb{C}^{\mathrm{dln}}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The **derivative** of $f$ at $Q_0$ is
 
 $$
 \frac{df}{dQ}(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
@@ -175,7 +175,7 @@ $$
 
 provided the limit exists. If it does, $f$ is **dual differentiable** at $Q_0$, or **holomorphic** at $Q_0$ in the dual sense.
 
-The limit is taken in the dual plane, so $h$ can approach $0$ from any direction. But because $\mathbb{C}^{\mathrm{dua}}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.
+The limit is taken in the dual plane, so $h$ can approach $0$ from any direction. But because $\mathbb{C}^{\mathrm{dln}}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.
 
 **Theorem.** Dual differentiability implies continuity. The converse fails.
 
@@ -245,7 +245,7 @@ $$
 
 ### The Maximal Ideal
 
-The **maximal ideal** of $\mathbb{C}^{\mathrm{dua}}$ is
+The **maximal ideal** of $\mathbb{C}^{\mathrm{dln}}$ is
 
 $$
 \mathrm{M} = (\varepsilon) = \{\varepsilon q' : q' \in R\}.
@@ -264,26 +264,26 @@ The maximal ideal is the infinitesimal direction, and it is the obstruction to t
 The **infinitesimal part** of a dual number $Q = q + \varepsilon q'$ is the component $\varepsilon q'$ in the maximal ideal. The projection
 
 $$
-\pi : \mathbb{C}^{\mathrm{dua}} \to R, \qquad \pi(q + \varepsilon q') = q,
+\pi : \mathbb{C}^{\mathrm{dln}} \to R, \qquad \pi(q + \varepsilon q') = q,
 $$
 
-is the **augmentation map**, and its kernel is the maximal ideal. The augmentation is a ring homomorphism, and it is the unique one from $\mathbb{C}^{\mathrm{dua}}$ to $R$.
+is the **augmentation map**, and its kernel is the maximal ideal. The augmentation is a ring homomorphism, and it is the unique one from $\mathbb{C}^{\mathrm{dln}}$ to $R$.
 
 ### The Infinitesimal Translation
 
 For $h \in \mathrm{M}$, the map
 
 $$
-T_h : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}, \qquad T_h(Q) = Q + h,
+T_h : \mathbb{C}^{\mathrm{dln}} \to \mathbb{C}^{\mathrm{dln}}, \qquad T_h(Q) = Q + h,
 $$
 
-is the **infinitesimal translation** by $h$. It is a bijection of $\mathbb{C}^{\mathrm{dua}}$ onto itself, and it preserves differences: $T_h(Q_1) - T_h(Q_2) = Q_1 - Q_2$. The infinitesimal translations form a group isomorphic to the additive group of the maximal ideal.
+is the **infinitesimal translation** by $h$. It is a bijection of $\mathbb{C}^{\mathrm{dln}}$ onto itself, and it preserves differences: $T_h(Q_1) - T_h(Q_2) = Q_1 - Q_2$. The infinitesimal translations form a group isomorphic to the additive group of the maximal ideal.
 
 ## Integration
 
 ### Contour Integrals
 
-Let $\gamma : [a, b] \to \mathbb{C}^{\mathrm{dua}}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The **contour integral** of $f$ along $\gamma$ is
+Let $\gamma : [a, b] \to \mathbb{C}^{\mathrm{dln}}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The **contour integral** of $f$ along $\gamma$ is
 
 $$
 \int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \frac{d\gamma}{dt} \, dt.
@@ -330,7 +330,7 @@ However, if the function is written in the form $f(q + \varepsilon q') = u(q) + 
 A **power series** centred at $Q_0$ is
 
 $$
-\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{C}^{\mathrm{dua}}.
+\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{C}^{\mathrm{dln}}.
 $$
 
 The **radius of convergence** is
@@ -418,7 +418,7 @@ The article develops what the nilpotent structure supports: contour integrals al
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dua}}$ | Dual number algebra |
+| $\mathbb{C}^{\mathrm{dln}}$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$ | Real part |
@@ -428,7 +428,7 @@ The article develops what the nilpotent structure supports: contour integrals al
 | $\frac{df}{dQ}$ | Dual derivative |
 | $\partial/\partial Q, \partial/\partial \bar{Q}$ | Dual Wirtinger derivatives |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
-| $\pi : \mathbb{C}^{\mathrm{dua}} \to R$ | Augmentation map |
+| $\pi : \mathbb{C}^{\mathrm{dln}} \to R$ | Augmentation map |
 | $\int_\gamma f(Q) \, dQ$ | Contour integral |
 
 ## Further Reading

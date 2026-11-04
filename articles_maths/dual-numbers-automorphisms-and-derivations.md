@@ -5,23 +5,23 @@
 
 This article computes the two standard invariants of the dual-number algebra: the group of algebra **automorphisms** and the Lie algebra of **derivations**. It follows *Dual-Numbers Algebra*, where the derivation module is determined, and *Dual-Numbers Ideals and the Maximal Ideal*, where the maximal ideal is shown to be the unique proper nonzero ideal. The comparison throughout is with the complex algebra, whose automorphism group is $\mathbb{Z}/2$ and whose derivation space vanishes; here the algebra is commutative and local, and both invariants are correspondingly small.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{C}^{\mathrm{dua}}$. A general dual number is
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{C}^{\mathrm{dln}}$. A general dual number is
 
 $$
 Q = q + \varepsilon q', \qquad q, q' \in R,
 $$
 
-with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$, real submodule $R_{\mathbb{C}^{\mathrm{dua}}}$ and infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$.
+with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$, real submodule $R_{\mathbb{C}^{\mathrm{dln}}}$ and infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$.
 
 ## The Automorphism Group
 
 ### Definition
 
-**Definition.** An **$R$-algebra automorphism** of $\mathbb{C}^{\mathrm{dua}}_R$ is a bijective $R$-linear map $\varphi : \mathbb{C}^{\mathrm{dua}}_R \to \mathbb{C}^{\mathrm{dua}}_R$ with $\varphi(Q_1Q_2) = \varphi(Q_1)\varphi(Q_2)$ and $\varphi(1) = 1$. They form a group under composition, written $\operatorname{Aut}_R(\mathbb{C}^{\mathrm{dua}}_R)$; when $R = \mathbb{R}$ we write $\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}})$.
+**Definition.** An **$R$-algebra automorphism** of $\mathbb{C}^{\mathrm{dln}}_R$ is a bijective $R$-linear map $\varphi : \mathbb{C}^{\mathrm{dln}}_R \to \mathbb{C}^{\mathrm{dln}}_R$ with $\varphi(Q_1Q_2) = \varphi(Q_1)\varphi(Q_2)$ and $\varphi(1) = 1$. They form a group under composition, written $\operatorname{Aut}_R(\mathbb{C}^{\mathrm{dln}}_R)$; when $R = \mathbb{R}$ we write $\operatorname{Aut}(\mathbb{C}^{\mathrm{dln}})$.
 
 ### The Automorphisms
 
-**Theorem.** Every automorphism of $\mathbb{C}^{\mathrm{dua}}_R$ is determined by its value on $\varepsilon$, and
+**Theorem.** Every automorphism of $\mathbb{C}^{\mathrm{dln}}_R$ is determined by its value on $\varepsilon$, and
 
 $$
 \varphi(q + \varepsilon q') = q + q'c\,\varepsilon, \qquad c \in R^\times,
@@ -30,7 +30,7 @@ $$
 so the assignment $\varphi \mapsto c$ is a group isomorphism
 
 $$
-\boxed{\; \operatorname{Aut}_R(\mathbb{C}^{\mathrm{dua}}_R) \;\cong\; R^\times \;}.
+\boxed{\; \operatorname{Aut}_R(\mathbb{C}^{\mathrm{dln}}_R) \;\cong\; R^\times \;}.
 $$
 
 **Proof.** An automorphism must fix $R$ pointwise, since it is $R$-linear and unital, so it is determined by $\varphi(\varepsilon)$. Writing $\varphi(\varepsilon) = Q_1 = q_1 + \varepsilon q'_1$, the relation $\varepsilon^2 = 0$ is preserved only if
@@ -41,37 +41,37 @@ $$
 
 that is, $q_1^2 = 0$ and $2q_1q'_1 = 0$. The scalar $q'_1$ is a unit: $\varphi(q + \varepsilon q') = (q + q'q_1) + q'q'_1\,\varepsilon$ has $\varepsilon$-component $q'q'_1$, and surjectivity of $\varphi$ forces $q' \mapsto q'q'_1$ to be onto $R$, which happens only for $q'_1 \in R^\times$. With $q'_1$ a unit and $2$ invertible, $q_1q'_1 = 0$ gives $q_1 = 0$, so $\varphi(\varepsilon) = q'_1\varepsilon$ and $\varphi(q + \varepsilon q') = q + q'q'_1\varepsilon$. This is bijective exactly when multiplication by $q'_1$ is, that is, exactly when $q'_1 \in R^\times$. Composition corresponds to multiplication of the scalars, so $\varphi \mapsto q'_1$ is an isomorphism onto $R^\times$; writing the multiplier as $c$ gives the stated form $\varphi(q + \varepsilon q') = q + q'c\,\varepsilon$.
 
-**Corollary.** Over $\mathbb{R}$ the automorphism group is $\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}}) \cong \mathbb{R}^\times$, a one-dimensional abelian Lie group with exactly two connected components, distinguished by the sign of the scalar $c$; the identity component is $\{c > 0\} \cong \mathbb{R}_{>0}$.
+**Corollary.** Over $\mathbb{R}$ the automorphism group is $\operatorname{Aut}(\mathbb{C}^{\mathrm{dln}}) \cong \mathbb{R}^\times$, a one-dimensional abelian Lie group with exactly two connected components, distinguished by the sign of the scalar $c$; the identity component is $\{c > 0\} \cong \mathbb{R}_{>0}$.
 
 ### Action on the Distinguished Submodules
 
-**Proposition.** Every automorphism fixes the real submodule $R_{\mathbb{C}^{\mathrm{dua}}}$ pointwise and acts on the infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ by the scalar $c$:
+**Proposition.** Every automorphism fixes the real submodule $R_{\mathbb{C}^{\mathrm{dln}}}$ pointwise and acts on the infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ by the scalar $c$:
 
 $$
-\varphi(R_{\mathbb{C}^{\mathrm{dua}}}) = R_{\mathbb{C}^{\mathrm{dua}}}, \qquad \varphi(\varepsilon q') = c \varepsilon q'.
+\varphi(R_{\mathbb{C}^{\mathrm{dln}}}) = R_{\mathbb{C}^{\mathrm{dln}}}, \qquad \varphi(\varepsilon q') = c \varepsilon q'.
 $$
 
 **Proof.** $\varphi(q) = q$ by $R$-linearity and unitality, and $\varphi(\varepsilon q') = q'\varphi(\varepsilon) = q' \varepsilon c$.
 
-So the automorphism group acts trivially on the quotient $\mathbb{C}^{\mathrm{dua}}_R/\mathrm{M} \cong R$ and by the full group of scalars on $\mathrm{M}$. This is the algebraic reason that an automorphism cannot exchange the two submodules: the identity $1$ is fixed, so the real submodule is stable, and the class of $\varepsilon$ in the quotient is nonzero, so the infinitesimal submodule is stable.
+So the automorphism group acts trivially on the quotient $\mathbb{C}^{\mathrm{dln}}_R/\mathrm{M} \cong R$ and by the full group of scalars on $\mathrm{M}$. This is the algebraic reason that an automorphism cannot exchange the two submodules: the identity $1$ is fixed, so the real submodule is stable, and the class of $\varepsilon$ in the quotient is nonzero, so the infinitesimal submodule is stable.
 
 ## Derivations
 
 ### Definition
 
-**Definition.** An **$R$-linear derivation** of $\mathbb{C}^{\mathrm{dua}}_R$ is an $R$-linear map $D : \mathbb{C}^{\mathrm{dua}}_R \to \mathbb{C}^{\mathrm{dua}}_R$ with the Leibniz rule
+**Definition.** An **$R$-linear derivation** of $\mathbb{C}^{\mathrm{dln}}_R$ is an $R$-linear map $D : \mathbb{C}^{\mathrm{dln}}_R \to \mathbb{C}^{\mathrm{dln}}_R$ with the Leibniz rule
 
 $$
 D(Q_1Q_2) = D(Q_1)\,Q_2 + Q_1\,D(Q_2).
 $$
 
-The set of all such maps is an $R$-module written $\operatorname{Der}_R(\mathbb{C}^{\mathrm{dua}}_R)$, and it is a Lie algebra under the commutator $[D_1, D_2] = D_1 D_2 - D_2 D_1$.
+The set of all such maps is an $R$-module written $\operatorname{Der}_R(\mathbb{C}^{\mathrm{dln}}_R)$, and it is a Lie algebra under the commutator $[D_1, D_2] = D_1 D_2 - D_2 D_1$.
 
 Every derivation satisfies $D(1) = 0$, since $D(1) = D(1\cdot 1) = 2D(1)$ and $2$ is invertible.
 
 ### The Derivation Space
 
-**Theorem.** Every derivation of $\mathbb{C}^{\mathrm{dua}}_R$ is of the form
+**Theorem.** Every derivation of $\mathbb{C}^{\mathrm{dln}}_R$ is of the form
 
 $$
 D(q + \varepsilon q') = c \varepsilon q'
@@ -80,7 +80,7 @@ $$
 for a unique $c \in R$. The module of derivations is therefore free of rank one,
 
 $$
-\boxed{\; \operatorname{Der}_R(\mathbb{C}^{\mathrm{dua}}_R) \;\cong\; R \;},
+\boxed{\; \operatorname{Der}_R(\mathbb{C}^{\mathrm{dln}}_R) \;\cong\; R \;},
 $$
 
 generated by the derivation
@@ -103,13 +103,13 @@ $$
 
 The map $D \mapsto q'_1$ is an $R$-linear isomorphism onto $R$, so the module is free of rank one and generated by $\partial^{\mathrm{nil}}$, the case $q'_1 = 1$.
 
-**Remark (dimension).** The derivation module is free of rank one over $R$, so as a real vector space of derivations of $\mathbb{C}^{\mathrm{dua}}$ over $\mathbb{R}$ it is one-dimensional, $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$, of real dimension one. This agrees with the computation in *Dual-Numbers Algebra* and in *Shears and Parabolic Rotations*: the single relation $\varepsilon^2 = 0$ carries exactly one independent derivation, and the derivation space is spanned by $\partial^{\mathrm{nil}}$. The count is one because the derivation is determined by the single value $D(\varepsilon)$, which is constrained to lie in the one-dimensional maximal ideal; a two-dimensional derivation space would require a second independent relation, and there is none.
+**Remark (dimension).** The derivation module is free of rank one over $R$, so as a real vector space of derivations of $\mathbb{C}^{\mathrm{dln}}$ over $\mathbb{R}$ it is one-dimensional, $\operatorname{Der}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$, of real dimension one. This agrees with the computation in *Dual-Numbers Algebra* and in *Shears and Parabolic Rotations*: the single relation $\varepsilon^2 = 0$ carries exactly one independent derivation, and the derivation space is spanned by $\partial^{\mathrm{nil}}$. The count is one because the derivation is determined by the single value $D(\varepsilon)$, which is constrained to lie in the one-dimensional maximal ideal; a two-dimensional derivation space would require a second independent relation, and there is none.
 
 ### No Inner Derivations
 
-**Proposition.** Every inner derivation of $\mathbb{C}^{\mathrm{dua}}_R$ vanishes: $\operatorname{ad}_{Q_1}(Q_2) = [Q_1, Q_2] = 0$ for all $Q_1, Q_2$. Consequently **no nonzero derivation of $\mathbb{C}^{\mathrm{dua}}_R$ is inner**, and the whole derivation space consists of outer derivations.
+**Proposition.** Every inner derivation of $\mathbb{C}^{\mathrm{dln}}_R$ vanishes: $\operatorname{ad}_{Q_1}(Q_2) = [Q_1, Q_2] = 0$ for all $Q_1, Q_2$. Consequently **no nonzero derivation of $\mathbb{C}^{\mathrm{dln}}_R$ is inner**, and the whole derivation space consists of outer derivations.
 
-**Proof.** $\mathbb{C}^{\mathrm{dua}}_R$ is commutative, so $Q_1Q_2 = Q_2Q_1$ and the commutator is identically zero; the kernel of $\operatorname{ad}$ is all of $\mathbb{C}^{\mathrm{dua}}_R$, and $\partial^{\mathrm{nil}} \neq 0$ is outer.
+**Proof.** $\mathbb{C}^{\mathrm{dln}}_R$ is commutative, so $Q_1Q_2 = Q_2Q_1$ and the commutator is identically zero; the kernel of $\operatorname{ad}$ is all of $\mathbb{C}^{\mathrm{dln}}_R$, and $\partial^{\mathrm{nil}} \neq 0$ is outer.
 
 Here the algebra is commutative and no derivation is inner.
 
@@ -121,7 +121,7 @@ Here the algebra is commutative and no derivation is inner.
 
 **Proposition.** The derivation $\partial^{\mathrm{nil}}$ satisfies
 
-- $\ker(\partial^{\mathrm{nil}}) = R_{\mathbb{C}^{\mathrm{dua}}}$ and $\operatorname{im}(\partial^{\mathrm{nil}}) = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \mathrm{M}$;
+- $\ker(\partial^{\mathrm{nil}}) = R_{\mathbb{C}^{\mathrm{dln}}}$ and $\operatorname{im}(\partial^{\mathrm{nil}}) = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \mathrm{M}$;
 - $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$, so it is a projection and is **not** nilpotent;
 - its matrix in the basis $(1, \varepsilon)$ is $\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$.
 
@@ -137,10 +137,10 @@ $$
 \exp(t\,\partial^{\mathrm{nil}})(q + \varepsilon q') = q + q'\,\exp(t)\,\varepsilon,
 $$
 
-and $\{\exp(t\,\partial^{\mathrm{nil}}) : t \in \mathbb{R}\}$ is exactly the identity component of $\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}})$. Hence
+and $\{\exp(t\,\partial^{\mathrm{nil}}) : t \in \mathbb{R}\}$ is exactly the identity component of $\operatorname{Aut}(\mathbb{C}^{\mathrm{dln}})$. Hence
 
 $$
-\boxed{\; \operatorname{Lie}\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}}) = \operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}} \;}.
+\boxed{\; \operatorname{Lie}\operatorname{Aut}(\mathbb{C}^{\mathrm{dln}}) = \operatorname{Der}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{R}\,\partial^{\mathrm{nil}} \;}.
 $$
 
 **Proof.** Since $(\partial^{\mathrm{nil}})^k(\varepsilon) = \varepsilon$ for every $k \geq 1$, the exponential series gives $\exp(t\,\partial^{\mathrm{nil}})(\varepsilon) = \sum_{k \geq 0} t^k\varepsilon/k! = \exp(t)\varepsilon$, and $\exp(t\,\partial^{\mathrm{nil}})(a) = a$. The resulting automorphism is $\varphi_{\exp(t)}$ in the notation of the automorphism theorem, and as $t$ ranges over $\mathbb{R}$ the scalar $\exp(t)$ ranges over $\mathbb{R}_{>0}$, the identity component of $\mathbb{R}^\times$.
@@ -155,33 +155,33 @@ The derivation $\partial^{\mathrm{nil}}$ rescales the infinitesimal direction an
 
 The two theories are complementary extremes.
 
-| | $\mathbb{C}^{\mathrm{dua}}$ over $\mathbb{R}$ | $\mathbb{C}$ over $\mathbb{R}$ |
+| | $\mathbb{C}^{\mathrm{dln}}$ over $\mathbb{R}$ | $\mathbb{C}$ over $\mathbb{R}$ |
 |---|---|---|
 | Algebra | commutative, local, $\dim_{\mathbb{R}} = 2$ | a field, $\dim_{\mathbb{R}} = 2$ |
 | Automorphism group | $\mathbb{R}^\times$, dimension $1$, two components | $\{\operatorname{id}, \bar{\cdot}\} \cong \mathbb{Z}/2$, dimension $0$ |
-| Derivation space | $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$, dimension $1$ | $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$ |
+| Derivation space | $\operatorname{Der}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$, dimension $1$ | $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$ |
 | Inner derivations | all zero | all zero |
 | Generators of $\operatorname{Aut}$ | $\exp(t\,\partial^{\mathrm{nil}})$, $t \in \mathbb{R}$ | none (the group is discrete) |
 
-Two structural facts account for the difference. First, the complex algebra is a field, so its automorphism group is the Galois group $\mathbb{Z}/2$ and its derivation space vanishes; the dual algebra is commutative and local, so its automorphism group is the scalar group $R^\times$ and all of its derivations are outer. Second, the dual derivation space has dimension equal to the number of independent relations, one. A useful sanity check is the standard dimension count for a local algebra: the tangent space of $k[\varepsilon]/(\varepsilon^2)$ at its closed point is the dual of $\mathrm{M}/\mathrm{M}^2$, and $\mathrm{M}^2 = 0$ gives $\mathrm{M}/\mathrm{M}^2 = \mathrm{M}$, of dimension one, so the tangent space is one-dimensional; the derivation module $\operatorname{Der}_k(\mathbb{C}^{\mathrm{dua}}_k)$, determined by the single value $D(\varepsilon) \in \mathrm{M}$, is one-dimensional as well, and the two counts agree. The nontrivial statement in the dual case is not the size of the derivation space but the fact that its single generator is exactly the nilpotent-direction derivative $\partial^{\mathrm{nil}}$.
+Two structural facts account for the difference. First, the complex algebra is a field, so its automorphism group is the Galois group $\mathbb{Z}/2$ and its derivation space vanishes; the dual algebra is commutative and local, so its automorphism group is the scalar group $R^\times$ and all of its derivations are outer. Second, the dual derivation space has dimension equal to the number of independent relations, one. A useful sanity check is the standard dimension count for a local algebra: the tangent space of $k[\varepsilon]/(\varepsilon^2)$ at its closed point is the dual of $\mathrm{M}/\mathrm{M}^2$, and $\mathrm{M}^2 = 0$ gives $\mathrm{M}/\mathrm{M}^2 = \mathrm{M}$, of dimension one, so the tangent space is one-dimensional; the derivation module $\operatorname{Der}_k(\mathbb{C}^{\mathrm{dln}}_k)$, determined by the single value $D(\varepsilon) \in \mathrm{M}$, is one-dimensional as well, and the two counts agree. The nontrivial statement in the dual case is not the size of the derivation space but the fact that its single generator is exactly the nilpotent-direction derivative $\partial^{\mathrm{nil}}$.
 
 ## Summary
 
-The unital algebra automorphisms of $\mathbb{C}^{\mathrm{dua}}_R$ are exactly the maps $\varphi_c(q + \varepsilon q') = q + q'c\,\varepsilon$ with $c \in R^\times$, and $\operatorname{Aut}_R(\mathbb{C}^{\mathrm{dua}}_R) \cong R^\times$; over $\mathbb{R}$ this is $\mathbb{R}^\times$, a one-dimensional abelian Lie group with two contractible components. Every automorphism fixes the real submodule pointwise and scales the infinitesimal submodule by $c$,  The $R$-linear derivations are exactly the maps $D(q + \varepsilon q') = c \varepsilon q'$ with $c \in R$; the derivation module is free of rank one, $\operatorname{Der}_R(\mathbb{C}^{\mathrm{dua}}_R) \cong R$, generated by $\partial^{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$. As a space of derivations of $\mathbb{C}^{\mathrm{dua}}$ over $\mathbb{R}$ it is the one-dimensional space $\mathbb{R}\,\partial^{\mathrm{nil}}$, since $\varepsilon^2 = 0$ is the single defining relation of the algebra. Since $\mathbb{C}^{\mathrm{dua}}$ is commutative, every inner derivation vanishes and the unique generator is outer. The derivation $\partial^{\mathrm{nil}}$ is a projection onto the nilpotent direction with kernel the real submodule, and its exponential realises the identity component of the automorphism group, $\exp(t\,\partial^{\mathrm{nil}})(\varepsilon) = \exp(t)\varepsilon$, so $\operatorname{Lie}\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}}) = \operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$. Here the automorphism group is the scalars and the derivation space is a single line of outer derivations.
+The unital algebra automorphisms of $\mathbb{C}^{\mathrm{dln}}_R$ are exactly the maps $\varphi_c(q + \varepsilon q') = q + q'c\,\varepsilon$ with $c \in R^\times$, and $\operatorname{Aut}_R(\mathbb{C}^{\mathrm{dln}}_R) \cong R^\times$; over $\mathbb{R}$ this is $\mathbb{R}^\times$, a one-dimensional abelian Lie group with two contractible components. Every automorphism fixes the real submodule pointwise and scales the infinitesimal submodule by $c$,  The $R$-linear derivations are exactly the maps $D(q + \varepsilon q') = c \varepsilon q'$ with $c \in R$; the derivation module is free of rank one, $\operatorname{Der}_R(\mathbb{C}^{\mathrm{dln}}_R) \cong R$, generated by $\partial^{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$. As a space of derivations of $\mathbb{C}^{\mathrm{dln}}$ over $\mathbb{R}$ it is the one-dimensional space $\mathbb{R}\,\partial^{\mathrm{nil}}$, since $\varepsilon^2 = 0$ is the single defining relation of the algebra. Since $\mathbb{C}^{\mathrm{dln}}$ is commutative, every inner derivation vanishes and the unique generator is outer. The derivation $\partial^{\mathrm{nil}}$ is a projection onto the nilpotent direction with kernel the real submodule, and its exponential realises the identity component of the automorphism group, $\exp(t\,\partial^{\mathrm{nil}})(\varepsilon) = \exp(t)\varepsilon$, so $\operatorname{Lie}\operatorname{Aut}(\mathbb{C}^{\mathrm{dln}}) = \operatorname{Der}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$. Here the automorphism group is the scalars and the derivation space is a single line of outer derivations.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
-| $\mathbb{C}^{\mathrm{dua}} = \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
+| $\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dln}} = \mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\bar{Q} = q - \varepsilon q'$ | Dual conjugation |
-| $R_{\mathbb{C}^{\mathrm{dua}}}$, $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ | Real and infinitesimal submodules |
+| $R_{\mathbb{C}^{\mathrm{dln}}}$, $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ | Real and infinitesimal submodules |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
-| $\operatorname{Aut}_R(\mathbb{C}^{\mathrm{dua}}_R) \cong R^\times$ | Group of unital algebra automorphisms, $\varphi_c(\varepsilon) = \varepsilon c$ |
-| $\operatorname{Der}_R(\mathbb{C}^{\mathrm{dua}}_R) \cong R$ | Module of derivations, free of rank one |
+| $\operatorname{Aut}_R(\mathbb{C}^{\mathrm{dln}}_R) \cong R^\times$ | Group of unital algebra automorphisms, $\varphi_c(\varepsilon) = \varepsilon c$ |
+| $\operatorname{Der}_R(\mathbb{C}^{\mathrm{dln}}_R) \cong R$ | Module of derivations, free of rank one |
 | $\partial^{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$ | The derivation in the nilpotent direction |
 | $\varphi_c$ | Automorphism with $\varphi_c(\varepsilon) = \varepsilon c$, $c \in R^\times$ |
 | $\operatorname{ad}_{Q_1}(Q_2) = [Q_1, Q_2]$ | Inner derivation, identically zero here |

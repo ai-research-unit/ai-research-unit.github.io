@@ -432,7 +432,7 @@ The lattice is finite, distributive and complemented. In $\mathbb{C}^{\mathrm{sp
 
 **Proof.** The nilradical is the set of nilpotent elements. If $Q^{n}=0$, write $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$; then $Q^{n}=Q_{+}^{n}\Pi_{+}+Q_{-}^{n}\Pi_{-}=0$, so $Q_{+}^{n}=0$ and $Q_{-}^{n}=0$ in $\mathbb{R}$, whence $Q_{+}=Q_{-}=0$ and $Q=0$. Hence the nilradical is $0$. The Jacobson radical of the product of fields $\mathbb{R}\times\mathbb{R}$ is zero, since the maximal ideals are the two coordinate ideals and their intersection is zero. The prime radical of a commutative ring is the intersection of the prime ideals, which is the nilradical, hence zero.
 
-So $\mathbb{C}^{\mathrm{spl}}$ is **reduced** (no nonzero nilpotent) and **semiprime**. This is the opposite of the dual-number algebra $\mathbb{C}^{\mathrm{dua}}=\mathbb{R}[\varepsilon]/(\varepsilon^{2})$, whose maximal ideal is nonzero and nilpotent, and it is the reason $\mathbb{C}^{\mathrm{spl}}$ is much closer in behaviour to a product of fields than to a local ring.
+So $\mathbb{C}^{\mathrm{spl}}$ is **reduced** (no nonzero nilpotent) and **semiprime**. This is the opposite of the dual-number algebra $\mathbb{C}^{\mathrm{dln}}=\mathbb{R}[\varepsilon]/(\varepsilon^{2})$, whose maximal ideal is nonzero and nilpotent, and it is the reason $\mathbb{C}^{\mathrm{spl}}$ is much closer in behaviour to a product of fields than to a local ring.
 
 ## The Real Structure
 

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article collects the submodule structure of the dual-number algebra $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$ and the relations among its distinguished submodules. It follows *Dual-Numbers Algebra* for the two conjugations and the two distinguished submodules, *Dual-Numbers Norm and Invertibility* for the norm, and *Dual-Numbers Ideals and the Maximal Ideal* for the ideal structure. Its structural model is *Subspaces and Decompositions*, in which a lattice of remarkable subspaces is organized by the four conjugations; here only one nontrivial conjugation exists, and the lattice is correspondingly small.
+This article collects the submodule structure of the dual-number algebra $\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$ and the relations among its distinguished submodules. It follows *Dual-Numbers Algebra* for the two conjugations and the two distinguished submodules, *Dual-Numbers Norm and Invertibility* for the norm, and *Dual-Numbers Ideals and the Maximal Ideal* for the ideal structure. Its structural model is *Subspaces and Decompositions*, in which a lattice of remarkable subspaces is organized by the four conjugations; here only one nontrivial conjugation exists, and the lattice is correspondingly small.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{C}^{\mathrm{dua}}$. A general dual number is
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the geometric specialisation is $R = \mathbb{R}$, and then the algebra is written $\mathbb{C}^{\mathrm{dln}}$. A general dual number is
 
 $$
 Q = q + \varepsilon q', \qquad q, q' \in R,
@@ -14,7 +14,7 @@ $$
 with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, norm $\langle Q\rangle = Q\bar Q = q^2$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are
 
 $$
-R_{\mathbb{C}^{\mathrm{dua}}} = R\cdot 1 = \{Q : \bar Q = Q\}, \qquad \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \varepsilon R = \{Q : \bar Q = -Q\}.
+R_{\mathbb{C}^{\mathrm{dln}}} = R\cdot 1 = \{Q : \bar Q = Q\}, \qquad \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \varepsilon R = \{Q : \bar Q = -Q\}.
 $$
 
 The scope boundaries are these. This article owns the submodule lattice, the relations among the submodules, and the analysis that the two submodules carry. The ideals and the Peirce-type decomposition belong to *Dual-Numbers Ideals and the Maximal Ideal*; the classification of the zero divisors belongs to *Dual-Numbers Zero Divisors*; limits, continuity and the Cauchy–Riemann system as whole-plane notions belong to *Dual-Numbers Analysis*; the global integration theory belongs to *Dual-Numbers Integration*. The two submodules are treated first as $R$-linear objects and then as the carriers of the differential operators, and the reader is referred elsewhere for their ideal-theoretic role. The article uses throughout the corpus coordinates $Q = q + \varepsilon q'$; the second half passes from the constant coefficients to the variable element of *Dual-Numbers Analysis*, the change being one of role rather than of letters.
@@ -23,11 +23,11 @@ The scope boundaries are these. This article owns the submodule lattice, the rel
 
 ### The Conjugate Decomposition
 
-Dual conjugation $\bar{\cdot}$ is an involution of $\mathbb{C}^{\mathrm{dua}}_R$ with eigenvalues $+1$ and $-1$, and its eigenspace decomposition is
+Dual conjugation $\bar{\cdot}$ is an involution of $\mathbb{C}^{\mathrm{dln}}_R$ with eigenvalues $+1$ and $-1$, and its eigenspace decomposition is
 
 $$
 \boxed{\;
-\mathbb{C}^{\mathrm{dua}}_R = R_{\mathbb{C}^{\mathrm{dua}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}, \qquad Q = \underbrace{q}_{+1} + \underbrace{\varepsilon q'}_{-1}
+\mathbb{C}^{\mathrm{dln}}_R = R_{\mathbb{C}^{\mathrm{dln}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}, \qquad Q = \underbrace{q}_{+1} + \underbrace{\varepsilon q'}_{-1}
 \;}.
 $$
 
@@ -38,39 +38,39 @@ The two projections are $Q \mapsto \tfrac{1}{2}(Q + \bar Q) = \operatorname{Re}(
 The same decomposition is the **real–infinitesimal decomposition**, written in the coordinates of the basis:
 
 $$
-Q = q + \varepsilon q', \qquad q \in R_{\mathbb{C}^{\mathrm{dua}}}, \quad \varepsilon q' \in \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}.
+Q = q + \varepsilon q', \qquad q \in R_{\mathbb{C}^{\mathrm{dln}}}, \quad \varepsilon q' \in \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}.
 $$
 
 It is not a second decomposition but the same one: the two names record the two ways of describing the same pair of eigenspaces.
 
 ### There Is No Third Decomposition
 
-Over a field $k$, $\mathbb{C}^{\mathrm{dua}}_k$ has exactly one nontrivial involution, namely dual conjugation, and hence exactly one pairing of eigenspaces. There is no analogue of a second involution distinct from it, nor of the Hermitian and anti-Hermitian subspaces. So the single decomposition above is the whole of the submodule structure.
+Over a field $k$, $\mathbb{C}^{\mathrm{dln}}_k$ has exactly one nontrivial involution, namely dual conjugation, and hence exactly one pairing of eigenspaces. There is no analogue of a second involution distinct from it, nor of the Hermitian and anti-Hermitian subspaces. So the single decomposition above is the whole of the submodule structure.
 
 ## The Two Submodules at a Glance
 
 | Submodule | Description | $R$-rank | Generator | Square in itself | Closed under $Q \mapsto \varepsilon Q$ |
 |---|---|---|---|---|---|
-| $R_{\mathbb{C}^{\mathrm{dua}}}$ | $+1$-eigenspace of $\bar{\cdot}$ | $1$ | $1$ | yes (it is a subalgebra) | no ($\varepsilon \notin R_{\mathbb{C}^{\mathrm{dua}}}$) |
-| $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ | $-1$-eigenspace of $\bar{\cdot}$ | $1$ | $\varepsilon$ | yes (it squares to $0$) | yes (it is an ideal) |
+| $R_{\mathbb{C}^{\mathrm{dln}}}$ | $+1$-eigenspace of $\bar{\cdot}$ | $1$ | $1$ | yes (it is a subalgebra) | no ($\varepsilon \notin R_{\mathbb{C}^{\mathrm{dln}}}$) |
+| $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ | $-1$-eigenspace of $\bar{\cdot}$ | $1$ | $\varepsilon$ | yes (it squares to $0$) | yes (it is an ideal) |
 
 The two submodules have the same rank, and they differ in every structural respect that matters: one contains the identity and is a subalgebra, the other is nilpotent and is an ideal.
 
 ### The Basis and the Dimension
 
-**Proposition.** $\{1, \varepsilon\}$ is an $R$-basis of $\mathbb{C}^{\mathrm{dua}}_R$, and $\{1\}$, $\{\varepsilon\}$ are $R$-bases of $R_{\mathbb{C}^{\mathrm{dua}}}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ respectively. Hence $\dim_R R_{\mathbb{C}^{\mathrm{dua}}} = \dim_R \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = 1$ and $\dim_R \mathbb{C}^{\mathrm{dua}}_R = 2$.
+**Proposition.** $\{1, \varepsilon\}$ is an $R$-basis of $\mathbb{C}^{\mathrm{dln}}_R$, and $\{1\}$, $\{\varepsilon\}$ are $R$-bases of $R_{\mathbb{C}^{\mathrm{dln}}}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ respectively. Hence $\dim_R R_{\mathbb{C}^{\mathrm{dln}}} = \dim_R \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = 1$ and $\dim_R \mathbb{C}^{\mathrm{dln}}_R = 2$.
 
 **Proof.** $R[\varepsilon]/(\varepsilon^2)$ has $\{1, \varepsilon\}$ as a free basis by construction, and the two eigenspaces are spanned by the two basis vectors.
 
 ## The Coordinate Blocks
 
-With respect to the basis $(1, \varepsilon)$, the group $\mathbb{C}^{\mathrm{dua}}_R$ is the free module $R \oplus R$, and a general element is the coordinate pair $(q, q')$:
+With respect to the basis $(1, \varepsilon)$, the group $\mathbb{C}^{\mathrm{dln}}_R$ is the free module $R \oplus R$, and a general element is the coordinate pair $(q, q')$:
 
 $$
 Q = q + \varepsilon q' \;\longleftrightarrow\; (q, q') \in R \oplus R.
 $$
 
-The two submodules are the coordinate axes: $R_{\mathbb{C}^{\mathrm{dua}}} = \{q' = 0\}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{q = 0\}$. Multiplication in coordinates is
+The two submodules are the coordinate axes: $R_{\mathbb{C}^{\mathrm{dln}}} = \{q' = 0\}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \{q = 0\}$. Multiplication in coordinates is
 
 $$
 (q_1, q'_1)(q_2, q'_2) = (q_1 q_2,\; q_1 q'_2 + q'_1 q_2),
@@ -80,27 +80,27 @@ the truncated polynomial product. The conjugation is the coordinatewise sign cha
 
 ## The Intersections
 
-**Proposition.** $R_{\mathbb{C}^{\mathrm{dua}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{0\}$; this is the only intersection of distinct positive-dimensional submodules, and it is the intersection of the two eigenspaces of an involution.
+**Proposition.** $R_{\mathbb{C}^{\mathrm{dln}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \{0\}$; this is the only intersection of distinct positive-dimensional submodules, and it is the intersection of the two eigenspaces of an involution.
 
 **Proof.** An element of the intersection has $q' = 0$ and $q = 0$, hence is $0$.
 
 **Proposition.** The intersections with the maximal ideal are
 
 $$
-R_{\mathbb{C}^{\mathrm{dua}}} \cap \mathrm{M} = \{0\}, \qquad \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} \cap \mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}.
+R_{\mathbb{C}^{\mathrm{dln}}} \cap \mathrm{M} = \{0\}, \qquad \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} \cap \mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}.
 $$
 
-**Proof.** $\mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$, so the second identity is immediate; the first is the preceding proposition.
+**Proof.** $\mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$, so the second identity is immediate; the first is the preceding proposition.
 
 So the maximal ideal coincides with one of the two submodules and meets the other only at the origin.
 
 ## The Sums
 
-**Proposition.** $R_{\mathbb{C}^{\mathrm{dua}}} + \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \mathbb{C}^{\mathrm{dua}}_R$, and the sum is direct. The maximal ideal satisfies $\mathrm{M} + R_{\mathbb{C}^{\mathrm{dua}}} = \mathbb{C}^{\mathrm{dua}}_R$.
+**Proposition.** $R_{\mathbb{C}^{\mathrm{dln}}} + \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \mathbb{C}^{\mathrm{dln}}_R$, and the sum is direct. The maximal ideal satisfies $\mathrm{M} + R_{\mathbb{C}^{\mathrm{dln}}} = \mathbb{C}^{\mathrm{dln}}_R$.
 
-**Proof.** Direct from the basis $\{1, \varepsilon\}$ and the identity $\mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$.
+**Proof.** Direct from the basis $\{1, \varepsilon\}$ and the identity $\mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$.
 
-**Corollary.** Every element of $\mathbb{C}^{\mathrm{dua}}_R$ is uniquely a sum of an element of $R_{\mathbb{C}^{\mathrm{dua}}}$ and an element of $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$; the uniqueness is the statement that the sum is direct, and it is equivalent to the intersection being zero.
+**Corollary.** Every element of $\mathbb{C}^{\mathrm{dln}}_R$ is uniquely a sum of an element of $R_{\mathbb{C}^{\mathrm{dln}}}$ and an element of $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$; the uniqueness is the statement that the sum is direct, and it is equivalent to the intersection being zero.
 
 ## The Involutions as Sign Patterns
 
@@ -110,9 +110,9 @@ $$
 (+,+) : (q, q') \mapsto (q, q') \qquad \text{(identity)}, \qquad (+,-) : (q, q') \mapsto (q, -q') \qquad \text{(dual conjugation)}.
 $$
 
-There are exactly two over a field, and the second is the unique nontrivial one; over a general commutative ring there may be further involutions, one for every unit $c$ with $c^2 = 1$. The reason $\mathbb{C}^{\mathrm{dua}}_R$ has so few is that it has only one unit $\varepsilon$ of square zero up to scaling.
+There are exactly two over a field, and the second is the unique nontrivial one; over a general commutative ring there may be further involutions, one for every unit $c$ with $c^2 = 1$. The reason $\mathbb{C}^{\mathrm{dln}}_R$ has so few is that it has only one unit $\varepsilon$ of square zero up to scaling.
 
-**Remark.** The sign pattern $(+,+)$ fixes both submodules pointwise, and $(+,-)$ fixes $R_{\mathbb{C}^{\mathrm{dua}}}$ pointwise while negating $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$. Only the diagonal entries are free; an automorphism of $\mathbb{C}^{\mathrm{dua}}_R$ cannot exchange the two submodules, because $1$ must be fixed and $\varepsilon$ must go to a multiple of $\varepsilon$. This is the submodule-theoretic content of the automorphism group $\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}}_R) \cong R^\times$ computed in *Dual-Numbers Automorphisms and Derivations*.
+**Remark.** The sign pattern $(+,+)$ fixes both submodules pointwise, and $(+,-)$ fixes $R_{\mathbb{C}^{\mathrm{dln}}}$ pointwise while negating $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$. Only the diagonal entries are free; an automorphism of $\mathbb{C}^{\mathrm{dln}}_R$ cannot exchange the two submodules, because $1$ must be fixed and $\varepsilon$ must go to a multiple of $\varepsilon$. This is the submodule-theoretic content of the automorphism group $\operatorname{Aut}(\mathbb{C}^{\mathrm{dln}}_R) \cong R^\times$ computed in *Dual-Numbers Automorphisms and Derivations*.
 
 ## How the Operations Act on the Splits
 
@@ -121,10 +121,10 @@ There are exactly two over a field, and the second is the unique nontrivial one;
 The operator $E = \varepsilon\cdot$ acts on the two submodules as
 
 $$
-E : R_{\mathbb{C}^{\mathrm{dua}}} \longrightarrow \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}, \qquad q \mapsto \varepsilon q, \qquad E : \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} \longrightarrow 0, \qquad \varepsilon q' \mapsto 0.
+E : R_{\mathbb{C}^{\mathrm{dln}}} \longrightarrow \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}, \qquad q \mapsto \varepsilon q, \qquad E : \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} \longrightarrow 0, \qquad \varepsilon q' \mapsto 0.
 $$
 
-So $E$ has $\ker E = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ and $\operatorname{im}E = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$: the kernel and the image coincide. This is the submodule form of the nilpotence $\mathrm{M}^2 = 0$.
+So $E$ has $\ker E = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ and $\operatorname{im}E = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$: the kernel and the image coincide. This is the submodule form of the nilpotence $\mathrm{M}^2 = 0$.
 
 ### The Norm on the Splits
 
@@ -137,17 +137,17 @@ $$
 On the two submodules,
 
 $$
-\langle R_{\mathbb{C}^{\mathrm{dua}}}\rangle \subseteq R_{\mathbb{C}^{\mathrm{dua}}}, \qquad \langle \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}\rangle = 0.
+\langle R_{\mathbb{C}^{\mathrm{dln}}}\rangle \subseteq R_{\mathbb{C}^{\mathrm{dln}}}, \qquad \langle \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}\rangle = 0.
 $$
 
 So the norm restricts to a multiplicative form on the real submodule and vanishes identically on the infinitesimal submodule; this is the submodule statement of the degeneracy of $\langle\cdot\rangle$.
 
 ### The Product and the Bracket
 
-Since $\mathbb{C}^{\mathrm{dua}}_R$ is commutative, the commutator bracket vanishes: $[Q_1, Q_2] = Q_1 Q_2 - Q_2 Q_1 = 0$ for all $Q_1, Q_2$. The product respects the splits in the sense that
+Since $\mathbb{C}^{\mathrm{dln}}_R$ is commutative, the commutator bracket vanishes: $[Q_1, Q_2] = Q_1 Q_2 - Q_2 Q_1 = 0$ for all $Q_1, Q_2$. The product respects the splits in the sense that
 
 $$
-R_{\mathbb{C}^{\mathrm{dua}}} \cdot R_{\mathbb{C}^{\mathrm{dua}}} \subseteq R_{\mathbb{C}^{\mathrm{dua}}}, \qquad R_{\mathbb{C}^{\mathrm{dua}}} \cdot \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} \subseteq \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}, \qquad \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} \cdot \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = 0.
+R_{\mathbb{C}^{\mathrm{dln}}} \cdot R_{\mathbb{C}^{\mathrm{dln}}} \subseteq R_{\mathbb{C}^{\mathrm{dln}}}, \qquad R_{\mathbb{C}^{\mathrm{dln}}} \cdot \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} \subseteq \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}, \qquad \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} \cdot \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = 0.
 $$
 
 So the real submodule is a subalgebra, the infinitesimal submodule is an ideal, and the product of two infinitesimal elements vanishes.
@@ -156,15 +156,15 @@ So the real submodule is a subalgebra, the infinitesimal submodule is an ideal, 
 
 ### The Decomposition
 
-For $Q = 2 + 3\varepsilon$ the conjugate decomposition is $Q = 2 + 3\varepsilon$ with $2 \in R_{\mathbb{C}^{\mathrm{dua}}}$ and $3\varepsilon \in \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$; the projections are $\tfrac{1}{2}(Q + \bar Q) = 2$ and $\tfrac{1}{2}(Q - \bar Q) = 3\varepsilon$.
+For $Q = 2 + 3\varepsilon$ the conjugate decomposition is $Q = 2 + 3\varepsilon$ with $2 \in R_{\mathbb{C}^{\mathrm{dln}}}$ and $3\varepsilon \in \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$; the projections are $\tfrac{1}{2}(Q + \bar Q) = 2$ and $\tfrac{1}{2}(Q - \bar Q) = 3\varepsilon$.
 
 ### An Intersection
 
-$R_{\mathbb{C}^{\mathrm{dua}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{0\}$: the element $q + \varepsilon q'$ lies in both submodules only if $q' = 0$ and $q = 0$.
+$R_{\mathbb{C}^{\mathrm{dln}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \{0\}$: the element $q + \varepsilon q'$ lies in both submodules only if $q' = 0$ and $q = 0$.
 
 ### A Pair That Spans the Algebra
 
-$1 \in R_{\mathbb{C}^{\mathrm{dua}}}$ and $\varepsilon \in \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ are linearly independent and span $\mathbb{C}^{\mathrm{dua}}$.
+$1 \in R_{\mathbb{C}^{\mathrm{dln}}}$ and $\varepsilon \in \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ are linearly independent and span $\mathbb{C}^{\mathrm{dln}}$.
 
 ### A Mixed Element and Its Blocks
 
@@ -178,19 +178,19 @@ $$
 Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$
 
-with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$. The augmentation is $\pi(Q) = q$, the maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R} = \{q = 0\}$, and the two distinguished submodules are $R_{\mathbb{C}^{\mathrm{dua}}} = \{q' = 0\}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \mathrm{M} = \{q = 0\}$. A function is written
+with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$. The augmentation is $\pi(Q) = q$, the maximal ideal is $\mathrm{M} = \varepsilon\mathbb{R} = \{q = 0\}$, and the two distinguished submodules are $R_{\mathbb{C}^{\mathrm{dln}}} = \{q' = 0\}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \mathrm{M} = \{q = 0\}$. A function is written
 
 $$
 f = u + v\varepsilon, \qquad u, v : \Omega \to \mathbb{R},
 $$
 
-on an open set $\Omega \subseteq \mathbb{C}^{\mathrm{dua}}$, its two components real-valued.
+on an open set $\Omega \subseteq \mathbb{C}^{\mathrm{dln}}$, its two components real-valued.
 
 ## The Coordinate Operators
 
 ### The Two Partial Derivatives
 
-The algebra $\mathbb{C}^{\mathrm{dua}}$ is $\mathbb{R}^2$ with the coordinates $(q, q')$ of $Q = q + \varepsilon q'$. On smooth functions the **coordinate operators** are
+The algebra $\mathbb{C}^{\mathrm{dln}}$ is $\mathbb{R}^2$ with the coordinates $(q, q')$ of $Q = q + \varepsilon q'$. On smooth functions the **coordinate operators** are
 
 $$
 \partial/\partial q = \frac{\partial}{\partial q}, \qquad \partial/\partial q' = \frac{\partial}{\partial q'},
@@ -202,14 +202,14 @@ $$
 \partial/\partial q\, f = u_q + v_q \varepsilon, \qquad \partial/\partial q'\, f = u_{q'} + v_{q'} \varepsilon.
 $$
 
-Both are $\mathbb{R}$-linear derivations of the algebra of smooth functions, and they commute, $[\partial/\partial q, \partial/\partial q'] = 0$. They are the coordinate form of the derivations of the algebra: every $\mathbb{R}$-linear derivation of $\mathbb{C}^{\mathrm{dua}}$ is a multiple of $\partial^{\mathrm{nil}}$ by *Dual-Numbers Automorphisms and Derivations*, whereas $\partial/\partial q$ and $\partial/\partial q'$ are the derivations of the algebra of functions on the plane and are the two coordinate directions of that derivation.
+Both are $\mathbb{R}$-linear derivations of the algebra of smooth functions, and they commute, $[\partial/\partial q, \partial/\partial q'] = 0$. They are the coordinate form of the derivations of the algebra: every $\mathbb{R}$-linear derivation of $\mathbb{C}^{\mathrm{dln}}$ is a multiple of $\partial^{\mathrm{nil}}$ by *Dual-Numbers Automorphisms and Derivations*, whereas $\partial/\partial q$ and $\partial/\partial q'$ are the derivations of the algebra of functions on the plane and are the two coordinate directions of that derivation.
 
 ### Restriction to the Submodules
 
 The two submodules carry the two coordinate directions, and the operators restrict to them as follows.
 
-- Along $R_{\mathbb{C}^{\mathrm{dua}}} = \{q' = 0\}$ the operator $\partial/\partial q$ acts as the ordinary derivative $d/dq$; the restriction of $f$ to $R_{\mathbb{C}^{\mathrm{dua}}}$ is the function $u(q, 0)$.
-- Along $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{q = 0\}$ the operator $\partial/\partial q'$ acts as the ordinary derivative $d/dq'$; the restriction of $f$ to $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ is the function $v(0, q')\varepsilon$.
+- Along $R_{\mathbb{C}^{\mathrm{dln}}} = \{q' = 0\}$ the operator $\partial/\partial q$ acts as the ordinary derivative $d/dq$; the restriction of $f$ to $R_{\mathbb{C}^{\mathrm{dln}}}$ is the function $u(q, 0)$.
+- Along $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \{q = 0\}$ the operator $\partial/\partial q'$ acts as the ordinary derivative $d/dq'$; the restriction of $f$ to $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ is the function $v(0, q')\varepsilon$.
 - Both coordinate operators preserve the summands, each sending the real part into the real part and the infinitesimal part into the infinitesimal part; neither mixes the two submodules, because the coordinates separate them.
 
 The two restrictions of a function are therefore independent, and a function on the dual plane is the same datum as a pair of functions on the two lines together with the off-line values.
@@ -276,19 +276,19 @@ $$
 f(q + \varepsilon q') = u(q) + \bigl(q'\,u'(q) + c(q)\bigr)\varepsilon,
 $$
 
-where $u$ and $c$ are ordinary differentiable functions of $q$. The formula is that of *Dual-Numbers Analysis*, restated as a statement about the two submodules: the restriction of $f$ to $R_{\mathbb{C}^{\mathrm{dua}}}$ is $u$, and the slope of its restriction to the fibre $\pi^{-1}(q)$ along the infinitesimal direction is $u'(q)$.
+where $u$ and $c$ are ordinary differentiable functions of $q$. The formula is that of *Dual-Numbers Analysis*, restated as a statement about the two submodules: the restriction of $f$ to $R_{\mathbb{C}^{\mathrm{dln}}}$ is $u$, and the slope of its restriction to the fibre $\pi^{-1}(q)$ along the infinitesimal direction is $u'(q)$.
 
 ## The Reduction to the Real Line
 
 ### The First-Order Neighbourhood
 
-The infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ is the **first-order neighbourhood** of the origin: it is the radical of the norm and it is square-zero, $\mathrm{M}^2 = 0$. The dual plane is the trivial square-zero extension
+The infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ is the **first-order neighbourhood** of the origin: it is the radical of the norm and it is square-zero, $\mathrm{M}^2 = 0$. The dual plane is the trivial square-zero extension
 
 $$
-\mathbb{C}^{\mathrm{dua}} = \mathbb{R} \oplus \eta\,\mathbb{R}, \qquad \eta^2 = 0,
+\mathbb{C}^{\mathrm{dln}} = \mathbb{R} \oplus \eta\,\mathbb{R}, \qquad \eta^2 = 0,
 $$
 
-in the variable $\eta = \varepsilon$, and the first-order neighbourhood of a point $q \in R_{\mathbb{C}^{\mathrm{dua}}}$ is the fibre $q + \mathrm{M} = \{q + \varepsilon q' : q' \in \mathbb{R}\}$.
+in the variable $\eta = \varepsilon$, and the first-order neighbourhood of a point $q \in R_{\mathbb{C}^{\mathrm{dln}}}$ is the fibre $q + \mathrm{M} = \{q + \varepsilon q' : q' \in \mathbb{R}\}$.
 
 ### The Taylor Truncation Is Exact
 
@@ -310,9 +310,9 @@ so that the first-order neighbourhood of $\mathbb{R}$ is the algebraic model of 
 
 ### The Reduction
 
-**Theorem.** A regular function $f$ on an open set $\Omega \subseteq \mathbb{C}^{\mathrm{dua}}$ is determined by its restriction to $\Omega \cap R_{\mathbb{C}^{\mathrm{dua}}}$ and the restriction of its infinitesimal part to one transversal to the infinitesimal direction, that is by two ordinary functions of one real variable.
+**Theorem.** A regular function $f$ on an open set $\Omega \subseteq \mathbb{C}^{\mathrm{dln}}$ is determined by its restriction to $\Omega \cap R_{\mathbb{C}^{\mathrm{dln}}}$ and the restriction of its infinitesimal part to one transversal to the infinitesimal direction, that is by two ordinary functions of one real variable.
 
-**Proof.** By the structure formula $f(q + \varepsilon q') = u(q) + (q'\,u'(q) + c(q))\varepsilon$, the pair $(u, c)$ of functions of $q$ determines $f$, and $f$ restricts to $u$ on $R_{\mathbb{C}^{\mathrm{dua}}}$ and to $c(q)\varepsilon$ on the section $q' = 0$ of the infinitesimal direction.
+**Proof.** By the structure formula $f(q + \varepsilon q') = u(q) + (q'\,u'(q) + c(q))\varepsilon$, the pair $(u, c)$ of functions of $q$ determines $f$, and $f$ restricts to $u$ on $R_{\mathbb{C}^{\mathrm{dln}}}$ and to $c(q)\varepsilon$ on the section $q' = 0$ of the infinitesimal direction.
 
 So the analysis of the dual algebra reduces to the analysis of the real line together with its first-order neighbourhood, and it never reduces to a pair of independent real analyses as in the split complex case below.
 
@@ -381,13 +381,13 @@ So the maximal ideal controls the operator theory, the harmonicity theory and th
 
 ### Along the Real Line
 
-The restriction of the analysis to the real submodule is the ordinary real analysis: for $f$ with restriction $u$ to $R_{\mathbb{C}^{\mathrm{dua}}}$,
+The restriction of the analysis to the real submodule is the ordinary real analysis: for $f$ with restriction $u$ to $R_{\mathbb{C}^{\mathrm{dln}}}$,
 
 $$
 \int_a^b f(q)\,\mathrm{d}q = \int_a^b u(q)\,\mathrm{d}q,
 $$
 
-and the fundamental theorem of calculus holds on the real line. This is the ordinary real analysis carried by the subalgebra $R_{\mathbb{C}^{\mathrm{dua}}}$.
+and the fundamental theorem of calculus holds on the real line. This is the ordinary real analysis carried by the subalgebra $R_{\mathbb{C}^{\mathrm{dln}}}$.
 
 ### Along the Fibre
 
@@ -407,9 +407,9 @@ The integration on the submodules is therefore the following pair: the ordinary 
 
 The split complex algebra $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, has the two idempotents $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ and the decomposition $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. Its analysis correspondingly splits into a pair of independent real analyses: the Wirtinger-type operators $\partial/\partial\pi_1$ and $\partial/\partial\pi_2$ act on the two components separately and the Cauchy–Riemann equation is equivalent to a pair of ordinary differential equations on two independent lines.
 
-The dual algebra has only the idempotent $1$, so the two-component splitting is unavailable. What replaces the second component is the *first-order neighbourhood* of the first: the real submodule $R_{\mathbb{C}^{\mathrm{dua}}}$ is the retract on which the augmentation is a ring homomorphism, and $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ is the square-zero direction over it. The analysis reduces to the real line and one nilpotent direction rather than to two lines, and the Cauchy–Riemann operator couples the direction to the line through its nilpotent component instead of separating the two. The two degeneracies that follow are the ones established above: no factorisation of the Laplacian, and no ellipticity.
+The dual algebra has only the idempotent $1$, so the two-component splitting is unavailable. What replaces the second component is the *first-order neighbourhood* of the first: the real submodule $R_{\mathbb{C}^{\mathrm{dln}}}$ is the retract on which the augmentation is a ring homomorphism, and $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ is the square-zero direction over it. The analysis reduces to the real line and one nilpotent direction rather than to two lines, and the Cauchy–Riemann operator couples the direction to the line through its nilpotent component instead of separating the two. The two degeneracies that follow are the ones established above: no factorisation of the Laplacian, and no ellipticity.
 
-| | Split complex $\mathbb{C}^{\mathrm{spl}}$ | Dual $\mathbb{C}^{\mathrm{dua}}$ |
+| | Split complex $\mathbb{C}^{\mathrm{spl}}$ | Dual $\mathbb{C}^{\mathrm{dln}}$ |
 |---|---|---|
 | Idempotents | two, $\pi_{1,2}$ | one, $1$ |
 | Decomposition | $\mathbb{R} \oplus \mathbb{R}$, two lines | $\mathbb{R} \oplus \varepsilon\mathbb{R}$, line plus first-order neighbourhood |
@@ -420,30 +420,30 @@ The dual algebra has only the idempotent $1$, so the two-component splitting is 
 
 ## Summary
 
-The dual-number algebra $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$ carries exactly one nontrivial involution, dual conjugation, and hence exactly one decomposition into eigenspaces,
+The dual-number algebra $\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$ carries exactly one nontrivial involution, dual conjugation, and hence exactly one decomposition into eigenspaces,
 
 $$
-\mathbb{C}^{\mathrm{dua}}_R = R_{\mathbb{C}^{\mathrm{dua}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dua}}},
+\mathbb{C}^{\mathrm{dln}}_R = R_{\mathbb{C}^{\mathrm{dln}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dln}}},
 $$
 
-the real and infinitesimal submodules, of $R$-rank one each. The only intersection of the two positive-dimensional submodules is $R_{\mathbb{C}^{\mathrm{dua}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = 0$, and their sum is the whole algebra; the maximal ideal $\mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ coincides with the infinitesimal submodule and meets the real submodule only at the origin. Multiplication by $\varepsilon$ has kernel and image both equal to $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$, the submodule form of $\mathrm{M}^2 = 0$; the norm restricts multiplicatively to $R_{\mathbb{C}^{\mathrm{dua}}}$ and vanishes on $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$. With a single nontrivial involution there are only two submodules and the two sign patterns $(+,+)$ and $(+,-)$, so a remarkable-subspace lattice is unavailable for structural reasons and not for lack of interest.
+the real and infinitesimal submodules, of $R$-rank one each. The only intersection of the two positive-dimensional submodules is $R_{\mathbb{C}^{\mathrm{dln}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = 0$, and their sum is the whole algebra; the maximal ideal $\mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ coincides with the infinitesimal submodule and meets the real submodule only at the origin. Multiplication by $\varepsilon$ has kernel and image both equal to $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$, the submodule form of $\mathrm{M}^2 = 0$; the norm restricts multiplicatively to $R_{\mathbb{C}^{\mathrm{dln}}}$ and vanishes on $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$. With a single nontrivial involution there are only two submodules and the two sign patterns $(+,+)$ and $(+,-)$, so a remarkable-subspace lattice is unavailable for structural reasons and not for lack of interest.
 
-The differential operators of the dual algebra act on the two submodules $R_{\mathbb{C}^{\mathrm{dua}}}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ as the coordinate operators $\partial/\partial q$ and $\partial/\partial q'$, and the Cauchy–Riemann operator $\bar{\partial} = \partial/\partial q' - \varepsilon\partial/\partial q$ is the sum of the real operator $\partial/\partial q'$ and the nilpotent component $\varepsilon\partial/\partial q$, nilpotent of index two because $\varepsilon^2 = 0$. Regularity is the pair of equations $u_{q'} = 0$, $v_{q'} = u_q$, and a regular function is determined by two ordinary functions of one variable, $f(q + \varepsilon q') = u(q) + (q'\,u'(q) + c(q))\varepsilon$. The reduction of the analysis is to the real line and its first-order neighbourhood: the infinitesimal submodule is the first-order neighbourhood of the origin, and the extension of a function of one variable to it is the exact first-order Taylor truncation $g(q + \varepsilon q') = g(q) + q'\,g'(q)\varepsilon$. The maximal ideal controls everything at once — it is the kernel of the augmentation, the image of the nilpotent component, the radical of the norm and the first-order neighbourhood — and every degeneracy is the single fact $\mathrm{M}^2 = 0$. Two consequences are established: the dual Laplacian does not imply harmonicity of regular functions, and it admits no factorisation into dual-conjugate first-order operators, in contrast with the complex case; and the principal symbol of $\bar{\partial}$ vanishes on the co-normal of the infinitesimal line, so the operator is not elliptic. Integration on the submodules is the ordinary integral on the real line together with the fibre average on the first-order neighbourhood. Compared with the split complex case, where the analysis splits into two independent real analyses, the dual analysis reduces to one real line and one nilpotent direction, the two components being coupled through the nilpotent component rather than separated.
+The differential operators of the dual algebra act on the two submodules $R_{\mathbb{C}^{\mathrm{dln}}}$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ as the coordinate operators $\partial/\partial q$ and $\partial/\partial q'$, and the Cauchy–Riemann operator $\bar{\partial} = \partial/\partial q' - \varepsilon\partial/\partial q$ is the sum of the real operator $\partial/\partial q'$ and the nilpotent component $\varepsilon\partial/\partial q$, nilpotent of index two because $\varepsilon^2 = 0$. Regularity is the pair of equations $u_{q'} = 0$, $v_{q'} = u_q$, and a regular function is determined by two ordinary functions of one variable, $f(q + \varepsilon q') = u(q) + (q'\,u'(q) + c(q))\varepsilon$. The reduction of the analysis is to the real line and its first-order neighbourhood: the infinitesimal submodule is the first-order neighbourhood of the origin, and the extension of a function of one variable to it is the exact first-order Taylor truncation $g(q + \varepsilon q') = g(q) + q'\,g'(q)\varepsilon$. The maximal ideal controls everything at once — it is the kernel of the augmentation, the image of the nilpotent component, the radical of the norm and the first-order neighbourhood — and every degeneracy is the single fact $\mathrm{M}^2 = 0$. Two consequences are established: the dual Laplacian does not imply harmonicity of regular functions, and it admits no factorisation into dual-conjugate first-order operators, in contrast with the complex case; and the principal symbol of $\bar{\partial}$ vanishes on the co-normal of the infinitesimal line, so the operator is not elliptic. Integration on the submodules is the ordinary integral on the real line together with the fibre average on the first-order neighbourhood. Compared with the split complex case, where the analysis splits into two independent real analyses, the dual analysis reduces to one real line and one nilpotent direction, the two components being coupled through the nilpotent component rather than separated.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
-| $\mathbb{C}^{\mathrm{dua}} = \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
+| $\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra over $R$; $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dln}} = \mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}$ | Dual-number algebra over $\mathbb{R}$ |
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\bar{Q} = q - \varepsilon q'$ | Dual conjugation, the unique nontrivial involution |
-| $R_{\mathbb{C}^{\mathrm{dua}}} = R\cdot 1$ | Real submodule, $+1$-eigenspace of $\bar{\cdot}$ |
-| $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \varepsilon R$ | Infinitesimal submodule, $-1$-eigenspace of $\bar{\cdot}$ |
-| $\mathrm{M} = (\varepsilon)$ | Maximal ideal, equal to $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ and to the first-order neighbourhood |
-| $\langle Q\rangle = q^2$ | Norm, vanishes on $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$, radical $\mathrm{M}$ |
-| $E = \varepsilon\cdot$ | Nilpotent operator, $\ker E = \operatorname{im}E = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$ |
+| $R_{\mathbb{C}^{\mathrm{dln}}} = R\cdot 1$ | Real submodule, $+1$-eigenspace of $\bar{\cdot}$ |
+| $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \varepsilon R$ | Infinitesimal submodule, $-1$-eigenspace of $\bar{\cdot}$ |
+| $\mathrm{M} = (\varepsilon)$ | Maximal ideal, equal to $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ and to the first-order neighbourhood |
+| $\langle Q\rangle = q^2$ | Norm, vanishes on $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$, radical $\mathrm{M}$ |
+| $E = \varepsilon\cdot$ | Nilpotent operator, $\ker E = \operatorname{im}E = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$ |
 | $Q = q + \varepsilon q'$ | The dual variable, in the algebraic and the analytic reading alike, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
 | $\pi(Q) = q$ | Augmentation, kernel $\mathrm{M}$ |
 | $f = u + v\varepsilon$ | Function of the dual variable, $u, v$ real-valued |

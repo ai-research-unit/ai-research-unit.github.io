@@ -13,7 +13,7 @@ A **domain** is a commutative ring with $1 \neq 0$ and no zero divisors; the obj
 | Object | The property above it, and the failure | Introduced in |
 |---|---|---|
 | Split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ | not a domain: $\pi_1 \pi_2 = 0$ for $\pi_{1,2} = \tfrac12(1\pm t)$, both nonzero | *Split-Complex Algebra* |
-| Dual numbers $\mathbb{C}^{\mathrm{dua}}$ | not a domain: $\varepsilon^2 = 0$ with $\varepsilon \neq 0$ | *Dual Numbers Algebra* |
+| Dual numbers $\mathbb{C}^{\mathrm{dln}}$ | not a domain: $\varepsilon^2 = 0$ with $\varepsilon \neq 0$ | *Dual Numbers Algebra* |
 | $\mathbb{Z}/n\mathbb{Z}$ for composite $n$ | not a domain: the residue classes of the proper factors of $n$ multiply to $0$ | *Examples of Rings and Fields* |
 | $\mathbb{Z}/4\mathbb{Z}$ | not reduced: the class of $2$ is a nonzero nilpotent | *Reduced Rings and the Nilradical* |
 | The exterior algebra $\Lambda(V)$, $\dim V \geq 1$ | not a domain: $v \wedge v = 0$ for $v \in V$ | *The Exterior Algebra* |
@@ -29,8 +29,8 @@ A ring is **reduced** when its only nilpotent element is $0$; the objects here c
 |---|---|---|
 | $\mathbb{Z}/4\mathbb{Z}$ | not reduced: $2^2 = 0$ | *Reduced Rings and the Nilradical* |
 | $\mathbb{Z}/p^n\mathbb{Z}$, $n \geq 2$ | not reduced: the class of $p$ is nilpotent | *Reduced Rings and the Nilradical* |
-| $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | not reduced: $\varepsilon^2 = 0$ | *Dual Numbers Algebra* |
-| $\mathbb{C}^{\mathrm{dua}}_F = F[\varepsilon]/(\varepsilon^n)$ | not reduced: $\varepsilon$ is nilpotent of index $n$ | *Noetherian and Artinian Rings* |
+| $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | not reduced: $\varepsilon^2 = 0$ | *Dual Numbers Algebra* |
+| $\mathbb{C}^{\mathrm{dln}}_F = F[\varepsilon]/(\varepsilon^n)$ | not reduced: $\varepsilon$ is nilpotent of index $n$ | *Noetherian and Artinian Rings* |
 | A degenerate Clifford algebra | not semisimple: the radical is a nonzero nilpotent ideal | *Degenerate Clifford Algebras and the Radical* |
 | Non-example: $\mathbb{Z}/6\mathbb{Z}$ as non-reduced | it is not: $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/3\mathbb{Z}$ is reduced, a product of fields | *Reduced Rings and the Nilradical* |
 
@@ -98,7 +98,7 @@ A **field** is a commutative division ring; the objects here are domains or divi
 | $k[x]$, $k[[x]]$ | principal ideal domains but not fields: $x$ is not a unit | *Polynomial Rings and Rational Functions* |
 | $\mathbb{Z}[\sqrt{-5}]$ | a domain but not a field, and not a unique factorisation domain | *Unique Factorisation Domains* |
 | The zero ring | not a field: $1 = 0$ | *Rings* |
-| Non-example: $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dua}}$ as fields | fail already the domain axiom: a field is a domain | *Split-Complex Algebra* |
+| Non-example: $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$ as fields | fail already the domain axiom: a field is a domain | *Split-Complex Algebra* |
 | Non-example: $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_p$ as non-fields | they are fields: the failures above are not generic | *Fields* |
 
 ## Not Associative and Not Commutative
@@ -126,7 +126,7 @@ A **semisimple** algebra is a product of matrix algebras over division rings; by
 | $k[x]/(x^2)$ | not semisimple: the radical is $(x)$ | *Simple and Semisimple Modules* |
 | A degenerate Clifford algebra | not semisimple: the radical is nonzero | *Degenerate Clifford Algebras and the Radical* |
 | $\mathbb{Z}/4\mathbb{Z}$ | not semisimple as a ring over itself: the radical is $(2)$ | *Noetherian and Artinian Rings* |
-| The dual numbers $\mathbb{C}^{\mathrm{dua}}$ | not semisimple: local with a nilpotent maximal ideal | *Dual Numbers Algebra* |
+| The dual numbers $\mathbb{C}^{\mathrm{dln}}$ | not semisimple: local with a nilpotent maximal ideal | *Dual Numbers Algebra* |
 | Non-example: a semisimple algebra over a field of characteristic $0$ | it is semisimple: Maschke's theorem holds when the characteristic does not divide the group order | *Group Algebras* |
 
 ## Summary
@@ -141,7 +141,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 |---|---|
 | $\mathbb{Z}[\sqrt{-5}]$, $\overline{\mathbb{Z}}$ | the standard non-unique-factorisation domain, the algebraic integers |
 | $\mathbb{Z}[x]$, $k[x_1,\dots,x_n]$ | polynomial rings, unique factorisation domains that are not principal |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$ | split-complex numbers, dual numbers |
+| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | split-complex numbers, dual numbers |
 | $M_2(\mathbb{R})$, $\mathbb{B}$ | matrix algebra, biquaternions |
 | $\mathbb{H}$, $\mathbb{O}$, $\mathbb{S}$ | quaternions, octonions, sedenions |
 | $\Lambda(V)$, $k\langle x_1,\dots,x_n\rangle$ | exterior algebra, free algebra |

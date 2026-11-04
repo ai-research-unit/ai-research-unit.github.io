@@ -76,7 +76,7 @@ Beside the division chain the corpus develops the split and degenerate systems, 
 | Number system | Commutative, associative, alternative, power-associative; zero divisors; division algebra; field | Introduced in |
 |---|---|---|
 | $\mathbb{C}^{\mathrm{spl}}$ split-complex | commutative, associative; **has zero divisors**, $\cong \mathbb{R}\times\mathbb{R}$; not a division algebra, not a field | *Split-Complex Algebra* |
-| $\mathbb{C}^{\mathrm{dua}}$ dual numbers | commutative, associative; **has nilpotents**, local; not a division algebra, not a field | *Dual Numbers Algebra* |
+| $\mathbb{C}^{\mathrm{dln}}$ dual numbers | commutative, associative; **has nilpotents**, local; not a division algebra, not a field | *Dual Numbers Algebra* |
 | Split biquaternions $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | associative; **has zero divisors**, $\cong \mathbb{H}\oplus\mathbb{H}$, and no nonzero nilpotents; not a division algebra, not a field | *Split-Biquaternion Algebra* |
 | Split-octonions | alternative; **has zero divisors**; not a division algebra, not associative | *Normed Division Algebras and the Hurwitz Theorem* |
 | $\mathbb{B}$ biquaternions | associative; **has zero divisors**, $\cong M_2(\mathbb{C})$; not a division algebra, not a field | *The Biquaternion Algebra* |
@@ -98,7 +98,7 @@ The properties are independent, and the table records which system has which; ea
 | $\mathbb{O}$ | no | no | yes | yes | yes | yes | no |
 | $\mathbb{S}$ | no | no | no | yes | no | no | no |
 | $\mathbb{C}^{\mathrm{spl}}$ | yes | yes | yes | yes | no | no | no |
-| $\mathbb{C}^{\mathrm{dua}}$ | yes | yes | yes | yes | no | no | no |
+| $\mathbb{C}^{\mathrm{dln}}$ | yes | yes | yes | yes | no | no | no |
 | $\mathbb{B}^{\mathrm{spl}}$ | no | yes | yes | yes | no | no | no |
 | split-octonions | no | no | yes | yes | no | no | no |
 | $\mathbb{B}$ | no | yes | yes | yes | no | no | no |
@@ -114,7 +114,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$ | naturals, integers, rationals, reals |
-| $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$ | complex, split-complex, dual numbers |
+| $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | complex, split-complex, dual numbers |
 | $\mathbb{H}$, $\mathbb{O}$, $\mathbb{S}$ | quaternions, octonions, sedenions |
 | $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | split biquaternions, of real dimension $8$ |
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | biquaternions |

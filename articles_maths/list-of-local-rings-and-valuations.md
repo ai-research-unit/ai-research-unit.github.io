@@ -13,7 +13,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 
 | Local ring | Maximal ideal | Residue field | Valuation ring? | Introduced in |
 |---|---|---|---|---|
-| $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | $(\varepsilon)$ | $\mathbb{R}$ | no | *Dual-Numbers Algebra* |
+| $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | $(\varepsilon)$ | $\mathbb{R}$ | no | *Dual-Numbers Algebra* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $(2)$ | $\mathbb{F}_2$ | no | *Reduced Rings and the Nilradical* |
 | $k[x]/(x^n)$ | $(x)$ | $k$ | no for $n \geq 2$ | *Noetherian and Artinian Rings* |
 | $\mathbb{F}_2[C_2]$ | the augmentation ideal | $\mathbb{F}_2$ | no | *Examples of Rings and Fields* |
@@ -110,7 +110,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathcal{O}_{K,\mathrm{P}}$, $\mathcal{O}_K$ | Localisation of the ring of integers, ring of integers |
 | $\overline{\mathbb{Q}_p}$, $\overline{\mathbb{Z}_p}$, $\overline{\mathbb{F}_p}$ | Algebraic closures and their valuation ring |
 | $\widehat{F}$, $R^h$ | Completion, henselization |
-| $\mathbb{C}^{\mathrm{dua}}$ | The dual numbers, a local ring that is not a valuation ring |
+| $\mathbb{C}^{\mathrm{dln}}$ | The dual numbers, a local ring that is not a valuation ring |
 
 ## Further Reading
 

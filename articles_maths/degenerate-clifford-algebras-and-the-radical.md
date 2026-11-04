@@ -223,7 +223,7 @@ $$
 \mathrm{Cl}(\mathbb{R}, 0) \cong \mathbb{R}[\varepsilon]/(\varepsilon^2), \qquad \varepsilon^2 = 0,
 $$
 
-which is the algebra of **dual numbers** $\mathbb{C}^{\mathrm{dua}}$. This is the one-dimensional degenerate Clifford algebra, and its unit $\varepsilon$ is the radical generator; the algebra is local with maximal ideal $(\varepsilon)$, and it is the smallest example of a Clifford algebra with a nonzero radical. It is recorded in the number-system dictionary of the companion entry with this article.
+which is the algebra of **dual numbers** $\mathbb{C}^{\mathrm{dln}}$. This is the one-dimensional degenerate Clifford algebra, and its unit $\varepsilon$ is the radical generator; the algebra is local with maximal ideal $(\varepsilon)$, and it is the smallest example of a Clifford algebra with a nonzero radical. It is recorded in the number-system dictionary of the companion entry with this article.
 
 ### A Degenerate Form in Two Variables
 
@@ -267,7 +267,7 @@ $$
 
 the graded tensor product of the Clifford algebra of the reduced non-degenerate form and the exterior algebra on the radical. It follows both from the splitting theorem for orthogonal sums and from the three families of fundamental relations among vectors of $W$ and of the radical. The isomorphism depends on the choice of complement, although different complements give isomorphic factors.
 
-The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is nilpotent in positive degree. In fact $\mathrm{N}^k = \mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ and the nilpotency index is exactly $\operatorname{rank}\operatorname{rad}(q) + 1$ when the radical is free. The radical generates a nilpotent two-sided ideal $\mathrm{N}$, the quotient by which is the non-degenerate factor; over a field of characteristic not $2$, $\mathrm{N}$ is the Jacobson radical and $\mathrm{Cl}(V, \mathfrak{Q})$ is semisimple if and only if $q$ is non-degenerate. The **centre** is the even part of the exterior algebra on the radical, of rank $2^{r_0 - 1}$ for $r_0 \geq 1$, together with the span of the volume element when $n$ is odd, which reduces to the classical $R$ or $R \oplus R\omega$ when the radical vanishes. The **rank** of the algebra is $2^n$ whether or not the form is degenerate, since the dimension lost by the reduced form is recovered by the exterior factor. The extreme case is the zero form, for which $\mathrm{Cl}(V, 0) = \Lambda(V)$; the one-dimensional case is the algebra of dual numbers $\mathbb{C}^{\mathrm{dua}}$.
+The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is nilpotent in positive degree. In fact $\mathrm{N}^k = \mathrm{Cl}(W, \bar{q}) \otimes \bigoplus_{j\geq k}\Lambda^j(\operatorname{rad}(q))$ and the nilpotency index is exactly $\operatorname{rank}\operatorname{rad}(q) + 1$ when the radical is free. The radical generates a nilpotent two-sided ideal $\mathrm{N}$, the quotient by which is the non-degenerate factor; over a field of characteristic not $2$, $\mathrm{N}$ is the Jacobson radical and $\mathrm{Cl}(V, \mathfrak{Q})$ is semisimple if and only if $q$ is non-degenerate. The **centre** is the even part of the exterior algebra on the radical, of rank $2^{r_0 - 1}$ for $r_0 \geq 1$, together with the span of the volume element when $n$ is odd, which reduces to the classical $R$ or $R \oplus R\omega$ when the radical vanishes. The **rank** of the algebra is $2^n$ whether or not the form is degenerate, since the dimension lost by the reduced form is recovered by the exterior factor. The extreme case is the zero form, for which $\mathrm{Cl}(V, 0) = \Lambda(V)$; the one-dimensional case is the algebra of dual numbers $\mathbb{C}^{\mathrm{dln}}$.
 
 ## Summary of Notation
 
@@ -291,7 +291,7 @@ The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is
 | $M_2(\mathbb{R})$ | $2 \times 2$ real matrices, $\mathrm{Cl}$ of the hyperbolic plane |
 | $\omega$ | Volume element $e_1 \cdots e_n$ of an orthogonal basis of $V$, central when $n$ is odd |
 | $\omega_W$, $\omega_{\operatorname{rad}}$ | Volume elements of the reduced factor and of the radical |
-| $\mathbb{C}^{\mathrm{dua}}$ | Dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
+| $\mathbb{C}^{\mathrm{dln}}$ | Dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
 | $\mathbb{C}^{\mathrm{spl}}$ | Split complex numbers, $\mathbb{R}[t]/(t^2-1)$ |
 | $\mathbb{R}$ | Real numbers |
 

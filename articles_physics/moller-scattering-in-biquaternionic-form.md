@@ -6,7 +6,7 @@
 
 This article treats Møller scattering in the biquaternion framework. The framework's contribution is structural. Its minimal-coupling and quantization articles supply the ingredients — a $\mathrm{U}(1)$ coupling localised in the centre, a quantized Maxwell field, a Fock space with creation and annihilation operators, and a propagator — and the Møller amplitude is then a product of **two material-sector currents** contracted by the photon propagator. The **relative minus sign** between the two diagrams is the antisymmetry of fermion exchange, which the framework's canonical quantization already carries as the identity $(a^{\mathrm{fop}\dagger})^2=0$ on the mode algebra. And **crossing symmetry** is the framework's charge conjugation on the doubled module, read backwards. What the framework does not do is evaluate loops: the corpus's scattering content is tree-level, and the present article stays there.
 
-**Every vertex below is one action, written out.** A vertex acts on an element $Q$ of $\mathbb{B}$ by $Q\mapsto aQb$, with $a$ and $b$ elements of the algebra, and each action is printed in full where it enters. The five actions the amplitude uses are written out in §*Kinematics*; the closing section writes the same five in the older display, for comparison only, and nothing in the body depends on it. Throughout, $i^2=-1$ is the central imaginary of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, so every $i$ in an action is that one central unit and no separate imaginary of a display enters.
+**Every vertex below is one action, written out.** A vertex acts on an element $Q$ of $\mathbb{B}$ by $Q\mapsto aQb$, with $a$ and $b$ elements of the algebra, and each action is printed in full where it enters. The five actions the amplitude uses are written out in §*Kinematics*; the closing section writes the same five in the older display, for comparison only, and nothing in the body depends on it. Throughout, $i$ is the central imaginary of $\mathbb{B}$, so every $i$ in an action is that one central unit and no separate imaginary of a display enters.
 
 The article is organised as follows. The next section sets up the two diagrams, the kinematics, the mass equation of the external elements and the minus sign. The third computes the spin-summed matrix element. The fourth gives the cross section and its two limits. The fifth treats the weak correction and the parity-violating asymmetry. The sixth is the biquaternion interpretation. The seventh is the closing comparison, and the remaining sections are the open questions, the summary, the notation table and the literature.
 
@@ -14,7 +14,7 @@ The article is organised as follows. The next section sets up the two diagrams, 
 
 ### Kinematics
 
-Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electrons $p_3,p_4$, with $p_i^2=m^2$ and $m=m_e$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central imaginary $i$, $i^2=-1$.
+Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electrons $p_3,p_4$, with $p_i^2=m^2$ and $m=m_e$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the scalar unit $e_t$, the three vector units and the central imaginary $i$, as *Algebra and Element Conventions* fixes them.
 
 **The four insertions.** The four vertex insertions are the four actions
 
@@ -23,7 +23,7 @@ $$
 \Phi_k:\ Q\mapsto i\vec e_kQ\vec e_y\quad(k=1,2,3),
 $$
 
-with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$, so each square spends $i^2=-1$ once, and the remaining signs come from $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$: $\Phi_t^2$ is the identity, $\Phi_k^2$ is minus the identity, and $\Phi_\mu\Phi_\nu+\Phi_\nu\Phi_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
+with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of *Algebra and Element Conventions*: $\Phi_t^2$ is the identity, $\Phi_k^2$ is minus the identity, and $\Phi_\mu\Phi_\nu+\Phi_\nu\Phi_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
 
 **The momentum insertion.** The insertion of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the action
 
@@ -80,7 +80,7 @@ $$
 \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
 $$
 
-where $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ is its quaternion conjugate. The two subscripts are the two values of the chirality of the declared frame: $\tilde\Psi_L$ is the part of value $L$, the minus one, and $\tilde\Psi_R$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**.
+where $\tilde\nabla$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, in the sense of *Algebra and Element Conventions*. The two subscripts are the two values of the chirality of the declared frame: $\tilde\Psi_L$ is the part of value $L$, the minus one, and $\tilde\Psi_R$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**.
 
 **The mass on the right.** Read on the whole algebra rather than on the carrier of the field, the same physics is the single equation
 
@@ -144,27 +144,27 @@ $$
 
 that is, the momentum insertion $P(p)$ plus the scalar $m$. The mass term is a scalar multiple of the unit and therefore acts on the right and on the left alike. This identity is what turns a sum over the spins of a product of two vertex currents into a trace of the corresponding composite, and it is the only place where the two external elements enter the squared amplitude.
 
-**The trace.** The traces below are the traces of composites of these actions on the carrier of the field, in the normalisation in which the identity action has trace four. Let $\Phi_i$ be the action $Q\mapsto a_iQb_i$. The trace of the composite $\Phi_1\Phi_2\cdots\Phi_n$ is four times the product of the scalar parts of the two multiplier strings,
+**The trace.** The traces below are the operator traces of composites of these actions, in the normalisation of *Matrix Representations Conventions*, where the identity action has trace four. The factorisation is a derived form, read off the two slots: with $\Phi_i$ the action $Q\mapsto a_iQb_i$, the trace of the composite $\Phi_1\Phi_2\cdots\Phi_n$ is four times the product of the scalar parts of the two multiplier strings,
 
 $$
-\operatorname{Tr}\bigl[\Phi_1\Phi_2\cdots\Phi_n\bigr]
+\operatorname{tr}\bigl[\Phi_1\Phi_2\cdots\Phi_n\bigr]
 =4\,\mathrm{Sc}\bigl(a_1a_2\cdots a_n\bigr)\,\mathrm{Sc}\bigl(b_n\cdots b_2b_1\bigr),
 $$
 
 the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $\Phi^t=\Phi_t$ and $\Phi^k=-\Phi_k$, the three trace combinations are
 
 $$
-L_t:=\operatorname{Tr}\bigl[\Phi^\mu D(p_1)\Phi^\nu D(p_3)\bigr]\,
-\operatorname{Tr}\bigl[\Phi_\mu D(p_2)\Phi_\nu D(p_4)\bigr],
+L_t:=\operatorname{tr}\bigl[\Phi^\mu D(p_1)\Phi^\nu D(p_3)\bigr]\,
+\operatorname{tr}\bigl[\Phi_\mu D(p_2)\Phi_\nu D(p_4)\bigr],
 $$
 
 $$
-L_u:=\operatorname{Tr}\bigl[\Phi^\mu D(p_2)\Phi^\nu D(p_3)\bigr]\,
-\operatorname{Tr}\bigl[\Phi_\mu D(p_1)\Phi_\nu D(p_4)\bigr],
+L_u:=\operatorname{tr}\bigl[\Phi^\mu D(p_2)\Phi^\nu D(p_3)\bigr]\,
+\operatorname{tr}\bigl[\Phi_\mu D(p_1)\Phi_\nu D(p_4)\bigr],
 $$
 
 $$
-L_{tu}:=\operatorname{Tr}\bigl[D(p_3)\Phi^\mu D(p_1)\Phi^\nu D(p_4)\Phi_\mu D(p_2)\Phi_\nu\bigr],
+L_{tu}:=\operatorname{tr}\bigl[D(p_3)\Phi^\mu D(p_1)\Phi^\nu D(p_4)\Phi_\mu D(p_2)\Phi_\nu\bigr],
 $$
 
 with the sum over the two repeated Lorentz indices, and the trace of an odd number of insertions vanishes. Then
@@ -177,8 +177,8 @@ $$
 The traces are evaluated with the standard four-dimensional identities, which follow from the anticommutation relations of the insertions alone,
 
 $$
-\operatorname{Tr}(\Phi_\mu\Phi_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\operatorname{Tr}(\Phi_\mu\Phi_\nu\Phi_\rho\Phi_\sigma)
+\operatorname{tr}(\Phi_\mu\Phi_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\operatorname{tr}(\Phi_\mu\Phi_\nu\Phi_\rho\Phi_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr),
 $$
 
@@ -278,7 +278,7 @@ j_\mu=\mathrm{Sc}\bigl(\psi^{*}i\vec e_x\,\Phi_\mu\psi\bigr),
 \bar\psi=\psi^{*}i\vec e_x,
 $$
 
-where $\Phi_\mu$ are the four insertions of §*Kinematics*. The current is a material-sector object, $\tilde J=ic\,j_0e_t+\vec j\in\mathbb M_-$, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+where $\Phi_\mu$ are the four insertions of §*Kinematics*. The current is the material-sector four-current $\tilde J\in\mathbb M_-$ of *Algebra and Element Conventions*, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -403,7 +403,7 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $\mathcal M_t,\mathcal M_u$ | $t$- and $u$-channel amplitudes |
 | $\mathcal M=\mathcal M_t-\mathcal M_u$ | Total amplitude with the exchange sign |
 | $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element, factor $\tfrac14$ included |
-| $\operatorname{Tr}$ | Trace of a composite of actions on the carrier of the field |
+| $\operatorname{tr}$ | The operator trace of a composite of actions, four times the product of the two scalar parts |
 | $L_t,L_u,L_{tu}$ | Trace combinations of the spin sum |
 | $\alpha=e^2/4\pi$ | Fine-structure constant |
 | $A_{\mathrm{PV}}$ | Parity-violating asymmetry; $\theta_{\mathrm W}$ the weak mixing angle |

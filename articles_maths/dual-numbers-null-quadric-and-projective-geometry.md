@@ -5,13 +5,13 @@
 
 The norm $\langle q + \varepsilon q'\rangle = q^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in *Dual-Numbers Norm and Invertibility* and the zero-divisor classification in *Dual-Numbers Zero Divisors*. This article treats the form geometrically. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, a general dual number is
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, a general dual number is
 
 $$
 Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$
 
-with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, the norm $\langle Q\rangle = Q\bar Q = q^2$ and its polar form $\langle Q_1, Q_2\rangle = q_1 q_2$ (a form and a distance, defined in *Dual-Numbers Norm and Invertibility*), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{C}^{\mathrm{dua}}}$ and infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in *Shears and Parabolic Rotations*.
+with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, the norm $\langle Q\rangle = Q\bar Q = q^2$ and its polar form $\langle Q_1, Q_2\rangle = q_1 q_2$ (a form and a distance, defined in *Dual-Numbers Norm and Invertibility*), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{C}^{\mathrm{dln}}}$ and infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in *Shears and Parabolic Rotations*.
 
 ## The Degenerate Isotropic Cone
 
@@ -20,7 +20,7 @@ with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\
 **Definition.** The **isotropic set** of the norm is
 
 $$
-\mathcal{N} = \{Q \in \mathbb{C}^{\mathrm{dua}} : \langle Q\rangle = 0\} = \{Q : q = 0\} = \mathrm{M},
+\mathcal{N} = \{Q \in \mathbb{C}^{\mathrm{dln}} : \langle Q\rangle = 0\} = \{Q : q = 0\} = \mathrm{M},
 $$
 
 the maximal ideal. Its punctured part is the zero-divisor set $\mathcal{Z} = \mathrm{M} \setminus \{0\}$.
@@ -40,7 +40,7 @@ For a non-degenerate binary quadratic form $q^2 - \sigma q'^2$ with $\sigma \neq
 **Definition.** The **projective dual line** is
 
 $$
-\mathbb{P}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{P}^1(\mathbb{R}) = \{[q : q'] : (q,q') \neq (0,0)\},
+\mathbb{P}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{P}^1(\mathbb{R}) = \{[q : q'] : (q,q') \neq (0,0)\},
 $$
 
 the space of lines through the origin of the dual plane; it is a one-dimensional projective space homeomorphic to a circle.
@@ -111,7 +111,7 @@ So the parabolic one-parameter group of the dual numbers is exactly the unipoten
 
 The contrast is with the non-degenerate forms of the higher members of the family. In the dual case the form has rank one on a real vector space of dimension two. The consequences are the following, and they are all forced by the rank:
 
-| | a non-degenerate form (over $\mathbb{C}$) | $\mathbb{C}^{\mathrm{dua}}$ (rank $1$, dim $2$ over $\mathbb{R}$) |
+| | a non-degenerate form (over $\mathbb{C}$) | $\mathbb{C}^{\mathrm{dln}}$ (rank $1$, dim $2$ over $\mathbb{R}$) |
 |---|---|---|
 | Polar form $\langle\cdot,\cdot\rangle$ | non-degenerate | degenerate, $\operatorname{rad} B = \mathrm{M}$ |
 | Isotropic set | null cone, codimension $2$ | single line $\mathrm{M}$, codimension $1$ |
@@ -135,7 +135,7 @@ The norm $\langle q + \varepsilon q'\rangle = q^2$ of the dual numbers has the p
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra; $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra; $\varepsilon^2 = 0$ |
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\langle Q\rangle = Q\bar Q = q^2$ | Norm, rank one |
@@ -143,7 +143,7 @@ The norm $\langle q + \varepsilon q'\rangle = q^2$ of the dual numbers has the p
 | $[B] = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$ | Matrix of the polar form $\langle\cdot,\cdot\rangle$ in the basis $(1,\varepsilon)$ |
 | $\mathrm{M} = (\varepsilon) = \operatorname{rad}(B)$ | Maximal ideal, radical, isotropic line |
 | $\mathcal{N} = \mathrm{M}$ | Isotropic set, the double line $q^2 = 0$ |
-| $\mathbb{P}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{P}^1(\mathbb{R})$ | Projective dual line |
+| $\mathbb{P}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{P}^1(\mathbb{R})$ | Projective dual line |
 | $[q : q']$ | Homogeneous coordinates; $[\varepsilon] = [0:1]$ |
 | $t = q'/q$ | Affine coordinate on $\{q \neq 0\}$ |
 | $S(s)$ | Shear, parabolic projectivity $t \mapsto t + s$ |

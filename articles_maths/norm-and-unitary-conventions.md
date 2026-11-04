@@ -36,9 +36,9 @@ In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The pla
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}^{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'^2$ | $(2,0)$ | definite; topology; not multiplicative |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$ | $(1,1)$ | multiplicative; invertibility; null cone |
 
-The two brackets exchange their signatures with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the units and is not a norm. Over the dual numbers $\mathbb{C}^{\mathrm{dua}}$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
+The two brackets exchange their signatures with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the units and is not a norm. Over the dual numbers $\mathbb{C}^{\mathrm{dln}}$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
 
-**The modulus of an element is a square root of its algebraic norm**: $\sqrt{\langle Q\rangle_{*}}$ over $\mathbb{C}$ and $\mathbb{C}^{\mathrm{dua}}$, and $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ over the indefinite $\mathbb{C}^{\mathrm{spl}}$; the modulus is defined through the algebraic norm.
+**The modulus of an element is a square root of its algebraic norm**: $\sqrt{\langle Q\rangle_{*}}$ over $\mathbb{C}$ and $\mathbb{C}^{\mathrm{dln}}$, and $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ over the indefinite $\mathbb{C}^{\mathrm{spl}}$; the modulus is defined through the algebraic norm.
 
 **Bars around a complex element are the ordinary complex modulus.** For $Q=q+iq'$,
 
@@ -96,7 +96,7 @@ The collapse of the names is the same. The quaternionic norm is the split-quater
 
 The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology; the plain and the Krein norms are the remaining two, complex and indefinite respectively. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. The split-biquaternion layer $\mathbb{B}^{\mathrm{spl}}$ keeps the same four brackets, its coefficients being split-complex instead of complex, so the two bilinear norms take split-complex values and the two sesquilinear ones stay real.
 
-**The one-line rule.** Write the bracket with the intrinsic conjugation of the layer: the star in $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dua}}$, where the natural sign is the identity; the natural sign in $\mathbb{H}$ and $\mathbb{H}^{\mathrm{spl}}$, where the bar is the identity; the tessarine sign in $\mathbb{B}^{\mathrm{red}}$; and both marks, all four brackets, in $\mathbb{B}$ and $\mathbb{B}^{\mathrm{spl}}$.
+**The one-line rule.** Write the bracket with the intrinsic conjugation of the layer: the star in $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{C}^{\mathrm{dln}}$, where the natural sign is the identity; the natural sign in $\mathbb{H}$ and $\mathbb{H}^{\mathrm{spl}}$, where the bar is the identity; the tessarine sign in $\mathbb{B}^{\mathrm{red}}$; and both marks, all four brackets, in $\mathbb{B}$ and $\mathbb{B}^{\mathrm{spl}}$.
 
 ### The Unitary Convention
 
@@ -111,7 +111,7 @@ A unit element carries its own glyph, the **$u$** in the two cases, beside the r
 | $\mathbb{R}$ | — | $\langle q\rangle=q^{2}$ | $q=\pm1$ | $\{\pm1\}=O(1)$ |
 | $\mathbb{C}$ | $U$ | $\lvert Q\rvert=(Q\bar Q)^{1/2}$, the modulus | $\lvert Q\rvert=1$ | $\mathrm{U}(1)=S^{1}$ |
 | $\mathbb{C}^{\mathrm{spl}}$, split-complex | $U$ | $Q\bar Q=q^{2}-q'^{2}$, the split norm | $Q\bar Q=1$ | the unit hyperbola, two branches |
-| $\mathbb{C}^{\mathrm{dua}}$, dual | $U$ | $\langle Q\rangle=q^{2}$ | $q=\pm1$, $q'$ free | the two lines $\pm1+\mathrm{M}$; the identity component is the shear group |
+| $\mathbb{C}^{\mathrm{dln}}$, dual | $U$ | $\langle Q\rangle=q^{2}$ | $q=\pm1$, $q'$ free | the two lines $\pm1+\mathrm{M}$; the identity component is the shear group |
 | $\mathbb{B}^{\mathrm{red}}$, reduced biquaternion | $U$ | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | $\langle\breve Q\rangle_{\mathrm{ts}}=1$ | the reduced-norm quadric |
 | $\mathbb{H}$, quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $Sp(1)=S^{3}=\mathrm{SU}(2)$ |
 | $\mathbb{H}^{\mathrm{spl}}$, split-quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $\mathrm{SL}_{2}(\mathbb{R})$, non-compact |

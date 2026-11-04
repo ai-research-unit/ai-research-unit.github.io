@@ -110,7 +110,7 @@ When $A$ is a $k$-algebra over a commutative ring $k$, the derivations that are 
 
 **Proof.** A $k$-linear derivation is $k$-linear as an operator and satisfies the Leibniz rule; both conditions are preserved by $k$-linear combinations, and the bracket of two $k$-linear maps is $k$-linear. The last identity records that $\mathbb{Z}$-linearity is additivity.
 
-**Examples of Lie algebras of derivations.** $\operatorname{Der}_R(R[x])$ is the free $R[x]$-module on $\frac{d}{dx}$ with bracket $0$, since all the elements are $R[x]$-multiples of one derivation and commute. For the algebra of dual numbers $\mathbb{C}^{\mathrm{dua}} = R[\varepsilon]/(\varepsilon^2)$ the derivations that kill $R$ form the one-dimensional space $R\cdot\partial^{\mathrm{nil}}$, again abelian. For $M_n(R)$ the derivations are inner and the Lie algebra $\operatorname{Der}(M_n(R))$ is the quotient of $\mathfrak{gl}_n(R) = M_n(R)$ by the scalars.
+**Examples of Lie algebras of derivations.** $\operatorname{Der}_R(R[x])$ is the free $R[x]$-module on $\frac{d}{dx}$ with bracket $0$, since all the elements are $R[x]$-multiples of one derivation and commute. For the algebra of dual numbers $\mathbb{C}^{\mathrm{dln}} = R[\varepsilon]/(\varepsilon^2)$ the derivations that kill $R$ form the one-dimensional space $R\cdot\partial^{\mathrm{nil}}$, again abelian. For $M_n(R)$ the derivations are inner and the Lie algebra $\operatorname{Der}(M_n(R))$ is the quotient of $\mathfrak{gl}_n(R) = M_n(R)$ by the scalars.
 
 ## Inner Derivations
 

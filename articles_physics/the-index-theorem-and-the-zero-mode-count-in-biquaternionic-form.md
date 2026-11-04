@@ -6,9 +6,9 @@ The Hopf fibration of the companion article *The Hopf Fibration and the Biquater
 
 The framework enters through three points, two of which are its own and one of which is not.
 
-- **The operator is the framework's.** The Dirac operator in biquaternionic form is built from the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and its coupling to the connection, and its square returns the d'Alembertian: the framework's spinor module carries it, and *The Dirac Equation in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action* fix it. The index is a property of that operator.
+- **The operator is the framework's.** The Dirac operator in biquaternionic form is built from the biquaternionic gradient of *Operator and Calculus Conventions*, §*The Gradient*, and its coupling to the connection, and its square returns the d'Alembertian of the same section. Its carrier is the algebra itself, and *The Dirac Equation in Biquaternionic Form* fixes the equation. The index is a property of that operator.
 - **The counting is by the topological density, which the framework already has.** The index density is a total derivative whose integral is the instanton number, and the abelian form of the density is the framework's invariant $I_2=\vec E\cdot\vec B$. This was established in *Instantons and Solitons in Biquaternionic Form* and is not repeated here.
-- **The trace is the matrix trace, and the framework's biquaternion norm does not supply it.** The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $\langle\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$, is a rank-two bilinear of a *single* algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.
+- **The trace is the matrix trace, and the framework's biquaternion norm does not supply it.** The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm of *Algebra and Element Conventions*, is a bilinear form of a *single* algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.
 
 The article states the theorem as the standard result it is, derives the specialisations that the framework uses, and keeps the framework's own content apart from the standard content.
 
@@ -21,121 +21,58 @@ The article states the theorem as the standard result it is, derives the special
 
 ## The Dirac Operator and Its Index
 
-**Notation, once.** The imaginary unit has $i^2=-1$, and it is the only imaginary unit in the article. Where two of them meet in a product they are reduced before the formula is read. A two-sided cell acts by $L_aR_b\psi=a\psi b$, and cells compose by $L_aR_bL_cR_d=L_{ac}R_{db}$, so
+**Notation.** The imaginary unit has $i^2=-1$, and it is the only imaginary unit in the article. Where two of them meet in a product they are reduced before the formula is read. A field is an element of $\mathbb{B}$, and an action on it is written out, $\psi\mapsto a\psi b$. The letter $R$ labels a representation, on $\mathcal D_R$, $T(R)$ and $\mathrm{Tr}_R$; the same letter as a subscript on a field is the chirality value of the section below.
+
+**Frame.** Displays are read in the $\mathbb{B}$ frame of *Frame Conventions*, with the four complex coordinates $Q_\mu$ and the positive-definite metric that frame carries. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.
+
+**The four frame cells.** The four are the frame cells of the $\mathbb{B}$ frame. *Matrix Representations Conventions* fixes the five frame cells with their squares and anticommutators, and the four used here are the four that carry the four coordinates. Written as actions on a field, they are
 
 $$
-(iL_aR_b)^2=i^2L_{a^2}R_{b^2}=-L_{a^2}R_{b^2},
+G_t:\psi\mapsto i\psi\vec e_x,\qquad
+G_x:\psi\mapsto-\vec e_x\psi\vec e_y,\qquad
+G_y:\psi\mapsto-\vec e_y\psi\vec e_y,\qquad
+G_z:\psi\mapsto-\vec e_z\psi\vec e_y .
 $$
 
-and with $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ the two signs of the frame below follow from that one line. A product of four such cells carries $i^4=+1$ and no residual $i$. The representation label is $R$, written on $\mathcal D_R$, $T(R)$ and $\mathrm{Tr}_R$; the same letter with an element subscript, $R_b$, is the right multiplication, and the subscript is what distinguishes the two.
-
-**Frame.** Displays are read in the $\mathbb{B}$ frame: the four coordinates $Q_\mu$ are complex, and the sign vector of the cells is $g_{\mu\nu}=\delta_{\mu\nu}$, the positive-definite one. The index is a property of an elliptic operator on a Riemannian manifold, and this is the frame whose flat slice is Euclidean.
-
-**The four frame cells.** Write
-
-$$
-G_t:=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\qquad
-G_x:=-L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-G_y:=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-G_z:=-L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
-$$
-
-On a field $\psi$ they act as $\psi\mapsto G_\mu\psi$: the time cell multiplies on the right by $i\,\vec e_x$, and each spatial cell multiplies on the left by $-\vec e_k$ and on the right by $\vec e_y$. Their squares and anticommutators are
-
-$$
-G_\mu^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
-\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
-$$
-
-the first from $i^2=-1$ together with $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, the second from $\vec e_j\vec e_k+\vec e_k\vec e_j=-2\delta_{jk}e_t$.
+The time cell is a single right multiplication, by $i\vec e_x$; each spatial cell multiplies on the left by $-\vec e_k$ and on the right by $\vec e_y$.
 
 **The operator.** The twisted Dirac operator in the representation $R$ is
 
 $$
-\mathcal D_R=\sum_{\mu}G_\mu D_\mu,\qquad
-D_\mu=\frac{\partial}{\partial Q_\mu}+i\kappa\,\mathcal A_\mu,
+\mathcal D_R\psi=\sum_{\mu}G_\mu\bigl(D_\mu\psi\bigr),\qquad
+D_\mu\psi=\frac{\partial\psi}{\partial Q_\mu}+i\kappa\,\mathcal A_\mu\psi,
 $$
 
-with the sum over $\mu\in\{t,x,y,z\}$ and the connection $\mathcal A_\mu$ valued in the gauge algebra, multiplying the field from the left; and
+with the sum over $\mu\in\{t,x,y,z\}$ and the connection $\mathcal A_\mu$ valued in the gauge algebra, multiplying the field from the left. The components are those of the gauge-covariant derivative of *Algebra and Element Conventions*, and
 
 $$
-[D_\mu,D_\nu]=i\kappa\,F_{\mu\nu},\qquad
+[D_\mu,D_\nu]\psi=i\kappa\,F_{\mu\nu}\psi,\qquad
 F_{\mu\nu}=\frac{\partial\mathcal A_\nu}{\partial Q_\mu}-\frac{\partial\mathcal A_\mu}{\partial Q_\nu}+i\kappa[\mathcal A_\mu,\mathcal A_\nu].
 $$
 
-The principal symbol at a covector $\xi$ is $\sum_\mu G_\mu\xi_\mu$, whose square is $\lvert\xi\rvert^2L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$; it is invertible for $\xi\neq0$, so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. Its square is
+The principal symbol at a covector $\xi$ is the action $\sum_\mu\xi_\mu G_\mu$, whose square is $\lvert\xi\rvert^2$ times the identity; it is invertible for $\xi\neq0$, so the operator is elliptic, and on a closed manifold its kernel and cokernel are finite-dimensional. Its square is
 
 $$
-\mathcal D_R^2=\sum_\mu D_\mu^2+\frac{i\kappa}{2}\sum_{\mu,\nu}G_\mu G_\nu F_{\mu\nu},
+\mathcal D_R^2\psi=\sum_\mu D_\mu^2\psi+\frac{i\kappa}{2}\sum_{\mu,\nu}G_\mu G_\nu\bigl(F_{\mu\nu}\psi\bigr),
 $$
 
-so where the field strength vanishes the second term is absent, and for the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial x_\mu$ the covariant derivative acts as $D_\mu\psi=u^{-1}\partial/\partial x_\mu(u\psi)$, so the operator is a conjugation of the free one: $\mathcal D_R=u^{-1}\bigl(\sum_\mu G_\mu\partial/\partial x_\mu\bigr)u$, whence
+for a connection that commutes with the four cells; a connection that does not adds a first-order term, which changes no principal symbol and therefore no index. Where the field strength vanishes the curvature term is absent. For the pure-gauge connection $\mathcal A_\mu=(i\kappa)^{-1}u^{-1}\partial u/\partial Q_\mu$ the covariant derivative is a conjugation of the free one, $D_\mu\psi=u^{-1}\partial(u\psi)/\partial Q_\mu$, and the free operator squares to the framework's d'Alembertian,
 
 $$
-\mathcal D_R^2=u^{-1}\,\Box\,u,\qquad
-\Box=\frac{\partial^2}{\partial Q_t^2}+\Delta,\qquad
-\Delta=\frac{\partial^2}{\partial Q_x^2}+\frac{\partial^2}{\partial Q_y^2}+\frac{\partial^2}{\partial Q_z^2}.
+\Bigl(\sum_\mu G_\mu\frac{\partial}{\partial Q_\mu}\Bigr)^2=\Box ,
 $$
 
-The algebra element $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ satisfies $\tilde\nabla\tilde\nabla^{\natural}=\Box$ as well; the frame cells are chosen so that the operator has the same square, and the operator is the square root of the framework's d'Alembertian.
+so the operator is a square root of the d'Alembertian of *Operator and Calculus Conventions*.
 
-**The chirality.** The grading is the cell
-
-$$
-\chi:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
-$$
-
-acting as $\psi\mapsto-i\psi\vec e_z$. The two signs in its square cancel — $i^2=-1$ and $\vec e_z^2=-e_t$ — and it is odd for the operator:
+**The chirality.** Chirality is the subscript, and it takes two values. A field is $L$ or $R$, written $\psi_L$ and $\psi_R$: $L$ is the minus value and $R$ the plus value, in the Dirac letters, and every field is the sum of one part of each, with only the zero field both (*Special Element Conventions*, §*The Chirality Convention*). The cell that fixes the two values is $\chi=-iR_{\vec e_z}$ in the axis-free frame, named here for the closing section; the body works with the subscript alone. The operator is odd, and carries $\psi_L$ to the $R$ part and $\psi_R$ to the $L$ part, as the chiral pair of *Operator and Calculus Conventions* records it. So the algebra splits by chirality, $\mathbb{B}=\mathbb{B}_L\oplus\mathbb{B}_R$, and an odd operator has no diagonal part. Write $A$ for the map from $\mathbb{B}_R$ to $\mathbb{B}_L$ and $B$ for the map from $\mathbb{B}_L$ to $\mathbb{B}_R$; then
 
 $$
-\chi^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
-\{\chi,G_\mu\}=0,\qquad
-[\chi,D_\mu]=0,\qquad
-\chi\,\mathcal D_R=-\mathcal D_R\,\chi .
-$$
-
-The first three statements give the last: the grading carries only a right multiplication, so it commutes with every left multiplication, hence with the connection, while it anticommutes with each cell. Because $\chi$ is an involution the module splits, $M=M_+\oplus M_-$, and an odd operator has no diagonal blocks,
-
-$$
-\mathcal D_R=\begin{pmatrix}0&A\\ B&0\end{pmatrix},
-\qquad
-A:M_+\to M_-,
-\qquad
-B:M_-\to M_+,
-\qquad
-n_+=\dim\ker A,\quad n_-=\dim\ker B .
+n_+=\dim\ker A,\qquad n_-=\dim\ker B .
 $$
 
 For an elliptic operator $A$ the cokernel is the kernel of the formal adjoint, so the pair is the kernel count of a map and of its adjoint, and nothing forces the two dimensions to agree: that asymmetry is what the index measures.
 
-**The two Dirac equations.** The framework's Dirac equation is not a single line, and the two lines are different operators. The first is the one-sided chiral pair, which is the definition,
-
-$$
-\begin{aligned}
-\tilde\nabla\tilde\Psi_R&=m\tilde\Psi_L,\\
-\tilde\nabla^{\natural}\tilde\Psi_L&=m\tilde\Psi_R,
-\end{aligned}
-$$
-
-each member acting from the left, the mass coupling the two chiral halves. At $m=0$ the pair decouples into $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one equation for each chirality.
-
-The second is the two-sided form, in which the derivative acts from the left and the mass from the right through the chirality cell,
-
-$$
-\tilde\nabla^{\natural}F=m\,\bigl(-i\,\overline F\,\vec e_z\bigr),
-$$
-
-where $\overline\cdot$ is the coefficient conjugation. It is the same pair with the second field read as $-i\overline F\vec e_z$; it is antilinear in the mass term, and it is the form in which a right multiplication, not an off-diagonal pairing, carries the chirality coupling.
-
-The third reading is the pair operator on the module, $\mathbb{D}$ in the notation of *Conventions of the Operators and the Calculus*,
-
-$$
-\mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),
-\qquad
-(\mathbb{D}-m)\Psi=0 .
-$$
-
-The mass is the off-diagonal pairing of the two halves, and it does not move the index: it is a zeroth-order term, and the index of an elliptic first-order operator is fixed by its symbol, which the mass leaves untouched. The index computed below is therefore the index of $\mathbb{D}$, and the four cells of the section above are that operator read in the frame, with the same four derivatives at the same order and the same square $\Box$.
+**The two Dirac equations.** The framework's equation is the chiral pair of *Operator and Calculus Conventions*, §*The Gradient*, each member acting from the left and the mass coupling the two parts; the pair operator $\mathbb{D}$ of the same article is the two equations written once. The mass is the pairing of the two parts and a zeroth-order term, and it does not move the index: the index of an elliptic first-order operator is fixed by its symbol, which the mass leaves untouched. The index computed below is therefore the index of $\mathbb{D}$, and the four cells of the section above are that operator read in the frame, with the same four derivatives at the same order and the same square $\Box$.
 
 **The index.** The index is the difference
 
@@ -246,7 +183,7 @@ $$
 
 since the $\hat A$-genus of a surface is $1$. The count of zero modes is therefore $\lvert n\rvert$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a charge-$n$ background binds one fermion mode per unit charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.
 
-The zero modes can be exhibited explicitly. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article the two-component equation $\mathcal D\psi=0$ separates, and for $n>0$ the positive-chirality solutions are the monopole spinor harmonics of lowest angular momentum,
+The zero modes can be exhibited explicitly. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article the field equation $\mathcal D\psi=0$ separates, and for $n>0$ the $R$ solutions are the lowest monopole harmonics of the field,
 
 $$
 \psi_n^{(m)}=f_n(\theta)\,\exp(im\phi),
@@ -256,7 +193,7 @@ m=-j,\dots,j,
 j=\frac{n-1}{2},
 $$
 
-which number $2j+1=n$, matching the index; for $n=1$ the single mode is the constant section allowed in the patch where the connection is regular. The count is not the degeneracy of the scalar lowest Landau level in the same flux, which is $n+1$: the Dirac operator counts spinor harmonics, and the shift by one is the spin. What the framework supplies here is the identification of the bundle, its connection and the charged spinor with the Hopf data already computed; the counting itself is the standard one.
+which number $2j+1=n$, matching the index; for $n=1$ the single mode is the constant section allowed in the patch where the connection is regular. The count is not the degeneracy of the scalar lowest Landau level in the same flux, which is $n+1$: the Dirac operator counts the harmonics of a field of spin one half, and the shift by one is the spin. What the framework supplies here is the identification of the bundle, its connection and the charged field with the Hopf data already computed; the counting itself is the standard one.
 
 ## The Index and the Instanton Moduli: $4k$ Adjoint Modes
 
@@ -280,11 +217,11 @@ Two consequences follow and are used in the later articles. First, the adjoint z
 
 ## The Biquaternion Reading and the Rank-Two Limitation
 
-The framework's contribution to the index theorem is not the theorem but the identification of its ingredients. The operator is the four-cell operator $\mathcal D_R$ above, whose free part squares to $\Box$; the carrier is the algebra $\mathbb{B}$ read as a left module, $\mathbb{B}\cong S\oplus S$, and this is the Dirac module $\Delta=S\oplus\bar S$ of *The Spinor Module in Biquaternionic Form and Its Lorentz Action* read on the regular module, with $S\cong\mathbb{C}^2$ the unique simple module and the two chiral halves the two summands. The adjoint representation is the three-dimensional real subspace $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb M_-$ that the algebra carries as its own commutator algebra; and the group theory that produces the Dynkin indices is read directly from the quaternion commutators $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$. The zero-mode counts $k$ and $4k$ are therefore a statement about the algebra's modules: the defining module gives one mode per unit charge, and the adjoint, being the algebra acting on itself, gives four.
+The framework's contribution to the index theorem is not the theorem but the identification of its ingredients. The operator is the four-cell operator $\mathcal D_R$ above, whose free part squares to $\Box$; the carrier is the algebra $\mathbb{B}$ read as a module over itself, and the two chiral halves are its two parts $\mathbb{B}_L$ and $\mathbb{B}_R$, which is the reading of *The Dirac Equation in Biquaternionic Form* on the regular module. The adjoint representation is the three-dimensional real subspace $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb M_-$ that the algebra carries as its own commutator algebra; and the group theory that produces the Dynkin indices is read directly from the quaternion commutators $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$. The zero-mode counts $k$ and $4k$ are therefore a statement about the algebra's modules: the defining module gives one mode per unit charge, and the adjoint, being the algebra acting on itself, gives four.
 
 What the framework does not supply is the *invariant* expression of the non-abelian index density. The density $\mathrm{Tr}(F\wedge F)$ requires the matrix trace over the gauge factor and the wedge of two algebra-valued two-forms, and the framework's biquaternion norm cannot produce it. The biquaternion norm pairs a single algebra element with its conjugate through the quaternion product and returns one scalar; it has one algebra slot. The index density needs two. This is the same rank-two limitation that the companion article found for the topological density and that the energy–momentum-tensor article found for the stress tensor: the framework's quadratic invariant is rank-two and single-slot, while the non-abelian index density is traced over a second algebra factor. The consequence is precise: the framework can write the index density in components with the matrix trace, and it can identify its integral as the topological charge, but the density is not an object of the biquaternion-norm invariant calculus. The zero-mode count is expressible; the invariant whose integral computes it, in the non-abelian case, is not one of the framework's invariants.
 
-A second place where the count is imported is the fermion itself. The index theorem counts zero modes of a Dirac operator, and the operator presupposes a spinor field, a Clifford structure and the chirality grading; those are supplied by *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and *Chiral Fermions in the Biquaternion Framework*, and the physical identification of the counted modes with fermionic states is standard quantum field theory. The relevant anomaly statement — that the divergence of the axial current is proportional to the same density — belongs to the spin-half programme of the corpus and is not derived here; the index theorem is its Euclidean, elliptic counterpart, and the two are related by the standard argument.
+A second place where the count is imported is the fermion itself. The index theorem counts zero modes of a Dirac operator, and the operator presupposes a field valued in the algebra, the multiplication that acts on it and the chirality label; those are supplied by *The Dirac Equation in Biquaternionic Form* and *Chiral Fermions in the Biquaternion Framework*, and the physical identification of the counted modes with fermionic states is standard quantum field theory. The relevant anomaly statement — that the divergence of the axial current is proportional to the same density — belongs to the spin-half programme of the corpus and is not derived here; the index theorem is its Euclidean, elliptic counterpart, and the two are related by the standard argument.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -373,16 +310,15 @@ The index density is a total derivative whose integral equals the instanton char
 | $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Biquaternionic gradient; its free part is the Dirac operator |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (B frame) |
 | $\Delta=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ | Laplacian in the three vector coordinates |
-| $L_aR_b$, $L_aR_b\psi=a\psi b$ | Two-sided cell; $L_aR_bL_cR_d=L_{ac}R_{db}$ |
-| $G_t=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $G_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | The four frame cells; $G_\mu^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $\{G_\mu,G_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $G_t:\psi\mapsto i\psi\vec e_x$, $G_k:\psi\mapsto-\vec e_k\psi\vec e_y$ | The four frame cells, written as actions; each squares to the identity and distinct cells anticommute |
 | $\mathcal D_R=\sum_\mu G_\mu D_\mu$ | Twisted Dirac operator in the representation $R$, in frame cells |
 | $D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu$ | Covariant derivative; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
-| $\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality; $\psi\mapsto-i\psi\vec e_z$, $\chi^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $\psi_L$, $\psi_R$ | The two values of the chirality subscript; $R$ is the plus value |
 | $n_\pm$ | Dimensions of the positive/negative chirality zero-mode spaces |
 | $\mathrm{ind}\,\mathcal D_R=n_+-n_-$ | Index of the Dirac operator |
 | $\hat A(TM)\wedge\mathrm{ch}(E_R)$ | Index density; $\hat A=1$ on the flat slice |
 | $T(R)$ | Dynkin index; $T(\text{defining})=\tfrac12$, $T(\text{adjoint})=2$ |
-| $R$ | Representation label, defining (dim $2$) or adjoint (dim $3$); the right multiplication is $R_b$, distinguished by its element subscript |
+| $R$ | Representation label, defining (dim $2$) or adjoint (dim $3$) |
 | $\kappa$ | Coupling constant of the gauge field |
 | $\mathcal F=d\mathcal A+i\kappa\,\mathcal A\wedge\mathcal A$ | Field-strength two-form |
 | $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal A_\nu-\partial/\partial Q_\nu\,\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$ | Its components; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |

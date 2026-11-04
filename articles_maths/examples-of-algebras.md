@@ -5,7 +5,7 @@
 
 The preceding articles developed the general theory of algebras over a commutative ring: ideals and quotients, the centre, units and zero divisors, automorphisms and derivations, the tensor constructions, the topological layer and the operator-algebraic layer. This article collects the standard examples and records, for each, the data the theory associates with it — the dimension, the centre, the group of units, the zero divisors, the ideals, and the position of the algebra in the classification into division, simple and semisimple algebras. It is a reference article: the individual algebras are treated in their own articles, and the purpose here is to make the data comparable at a glance.
 
-The ground ring is a field $k$ unless a different ring is stated, and the finite-dimensional algebras are over their ground field. The number systems are those of the shared conventions: $\mathbb{R}$, $\mathbb{C}$, the split complex numbers $\mathbb{C}^{\mathrm{spl}}$ with unit $j$, $j^2 = +1$, the dual numbers $\mathbb{C}^{\mathrm{dua}}$ with unit $\varepsilon$, $\varepsilon^2 = 0$, the quaternions $\mathbb{H}$, the split biquaternions $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_\mathbb{R}\mathbb{H}$, and the biquaternions $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
+The ground ring is a field $k$ unless a different ring is stated, and the finite-dimensional algebras are over their ground field. The number systems are those of the shared conventions: $\mathbb{R}$, $\mathbb{C}$, the split complex numbers $\mathbb{C}^{\mathrm{spl}}$ with unit $j$, $j^2 = +1$, the dual numbers $\mathbb{C}^{\mathrm{dln}}$ with unit $\varepsilon$, $\varepsilon^2 = 0$, the quaternions $\mathbb{H}$, the split biquaternions $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_\mathbb{R}\mathbb{H}$, and the biquaternions $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
 
 ## The Data Table
 
@@ -16,7 +16,7 @@ The following table is the summary; each entry is justified in the sections belo
 | $\mathbb{R}$ | $1$ | $\mathbb{R}$ | $\mathbb{R}\setminus\{0\}$ | none | $0,\ \mathbb{R}$ | field, division |
 | $\mathbb{C}$ | $2$ | $\mathbb{C}$ | $\mathbb{C}\setminus\{0\}$ | none | $0,\ \mathbb{C}$ | field, division |
 | $\mathbb{C}^{\mathrm{spl}}$ | $2$ | $\mathbb{C}^{\mathrm{spl}}$ | $\langle u\rangle_{*} \neq 0$ | yes | $0,\ \mathbb{C}^{\mathrm{spl}}\Pi_{1,2},\ \mathbb{C}^{\mathrm{spl}}$ | semisimple, not simple |
-| $\mathbb{C}^{\mathrm{dua}}$ | $2$ | $\mathbb{C}^{\mathrm{dua}}$ | $x \neq 0$ | yes | $(\varepsilon^m)$ | local, not semisimple |
+| $\mathbb{C}^{\mathrm{dln}}$ | $2$ | $\mathbb{C}^{\mathrm{dln}}$ | $x \neq 0$ | yes | $(\varepsilon^m)$ | local, not semisimple |
 | $\mathbb{H}$ | $4$ | $\mathbb{R}$ | $\mathbb{H}\setminus\{0\}$ | none | $0,\ \mathbb{H}$ | division, simple |
 | $\mathbb{B}^{\mathrm{spl}}$ | $8$ | $\mathbb{C}^{\mathrm{spl}}$ | $\langle u\rangle_{\natural} \in {\mathbb{C}^{\mathrm{spl}}}^\times$ | yes | two maximal ideals | semisimple, not simple |
 | $\mathbb{B}$ | $8$ (over $\mathbb{R}$) | $\mathbb{C}$ | $\langle\tilde{Q}\rangle_{\natural} \neq 0$ | yes | $0,\ \mathbb{B}$ | simple, not division |
@@ -52,13 +52,13 @@ satisfy $\Pi_x^2 = \Pi_x$, $\Pi_y^2 = \Pi_y$, $\Pi_x\Pi_y = 0$, $\Pi_x + \Pi_y =
 
 ### The Dual Numbers
 
-$\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[x]/(x^2)$ is two-dimensional and commutative, with unit $\varepsilon$, $\varepsilon^2 = 0$. The element $x + \varepsilon y$ is a unit exactly when $x \neq 0$, with
+$\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[x]/(x^2)$ is two-dimensional and commutative, with unit $\varepsilon$, $\varepsilon^2 = 0$. The element $x + \varepsilon y$ is a unit exactly when $x \neq 0$, with
 
 $$
 (x + \varepsilon y)^{-1} = \frac{1}{x} - \frac{y}{x^2}\,\varepsilon,
 $$
 
-and every element of the maximal ideal $(\varepsilon)$ is nilpotent, hence a zero divisor. The ideals of $\mathbb{C}^{\mathrm{dua}}$ are the powers $(\varepsilon^m)$, $m = 0, 1, 2$, so the algebra is a local ring with unique maximal ideal $(\varepsilon)$; it is not semisimple, because its Jacobson radical $(\varepsilon)$ is nonzero and nilpotent. Unlike $\mathbb{C}^{\mathrm{spl}}$, the algebra $\mathbb{C}^{\mathrm{dua}}$ cannot be decomposed as a product of fields, and the obstruction is exactly the nilpotent.
+and every element of the maximal ideal $(\varepsilon)$ is nilpotent, hence a zero divisor. The ideals of $\mathbb{C}^{\mathrm{dln}}$ are the powers $(\varepsilon^m)$, $m = 0, 1, 2$, so the algebra is a local ring with unique maximal ideal $(\varepsilon)$; it is not semisimple, because its Jacobson radical $(\varepsilon)$ is nonzero and nilpotent. Unlike $\mathbb{C}^{\mathrm{spl}}$, the algebra $\mathbb{C}^{\mathrm{dln}}$ cannot be decomposed as a product of fields, and the obstruction is exactly the nilpotent.
 
 ## The Four-Dimensional and Higher Real Algebras
 
@@ -96,7 +96,7 @@ where the $D_i$ are finite-dimensional division algebras over $k$. The algebra i
 
 **Theorem (Jacobson radical, standard).** The radical $J(A)$ of a finite-dimensional $k$-algebra is a nilpotent two-sided ideal containing every nilpotent one-sided ideal, and $A$ is semisimple if and only if $J(A) = 0$. For a finite-dimensional algebra this is equivalent to the absence of a nonzero nilpotent two-sided ideal, and for a commutative algebra it is equivalent to the algebra being a product of fields.
 
-These two theorems explain the entries of the table. The split complex numbers decompose as $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}\times\mathbb{R}$, a product of two fields, hence $r = 2$, $n_1 = n_2 = 1$, $D_1 = D_2 = \mathbb{R}$; the split biquaternions decompose as $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H}\times\mathbb{H}$, hence $r = 2$ and $D_1 = D_2 = \mathbb{H}$; the biquaternions are $M_2(\mathbb{C})$, hence $r = 1$; and the dual numbers have $J(\mathbb{C}^{\mathrm{dua}}) = (\varepsilon)\neq0$, so they are not semisimple. The classification is not a mere list: each algebra is placed by its decomposition into matrix algebras over division algebras.
+These two theorems explain the entries of the table. The split complex numbers decompose as $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}\times\mathbb{R}$, a product of two fields, hence $r = 2$, $n_1 = n_2 = 1$, $D_1 = D_2 = \mathbb{R}$; the split biquaternions decompose as $\mathbb{B}^{\mathrm{spl}} \cong \mathbb{H}\times\mathbb{H}$, hence $r = 2$ and $D_1 = D_2 = \mathbb{H}$; the biquaternions are $M_2(\mathbb{C})$, hence $r = 1$; and the dual numbers have $J(\mathbb{C}^{\mathrm{dln}}) = (\varepsilon)\neq0$, so they are not semisimple. The classification is not a mere list: each algebra is placed by its decomposition into matrix algebras over division algebras.
 
 ## The Centre Computed
 
@@ -129,12 +129,12 @@ The unit group is determined in each of the division-algebra-like cases, and the
 | Algebra | Unit criterion | Example of a non-unit |
 |---|---|---|
 | $\mathbb{C}^{\mathrm{spl}}$ | $(x+y)(x-y) \neq 0$ | $1 + j$ |
-| $\mathbb{C}^{\mathrm{dua}}$ | $x \neq 0$ | $\varepsilon$ |
+| $\mathbb{C}^{\mathrm{dln}}$ | $x \neq 0$ | $\varepsilon$ |
 | $\mathbb{H}$ | $q \neq 0$ | none |
 | $\mathbb{B}^{\mathrm{spl}}$ | the relevant value is a unit of $\mathbb{C}^{\mathrm{spl}}$ | $1 + j$ |
 | $\mathbb{B}$ | the relevant value is nonzero | $ie_t + \vec e_x$ |
 
-In each case the inverse is the conjugate divided by the relevant product, and the criterion is that the division be legitimate. For $\mathbb{C}^{\mathrm{spl}}$, the elements on the two null lines have no inverse and are zero divisors; for $\mathbb{C}^{\mathrm{dua}}$, the whole maximal ideal consists of non-units, all nilpotent; for $\mathbb{H}$, there are no non-units besides $0$; for $\mathbb{B}$ the zero divisors are precisely the nonzero elements with vanishing conjugate product. For $\mathbb{B}^{\mathrm{spl}}$ the relevant product takes values in $\mathbb{C}^{\mathrm{spl}}$ whose real part $\sum_\mu(q_\mu^2 + q'^2_\mu)$ is positive definite, so it vanishes only at $u = 0$ and does not single out the zero divisors: a nonzero $u$ is a zero divisor exactly when its value is a nonzero zero divisor of $\mathbb{C}^{\mathrm{spl}}$, as for $u = 1+j$, with value $2 + 2j$.
+In each case the inverse is the conjugate divided by the relevant product, and the criterion is that the division be legitimate. For $\mathbb{C}^{\mathrm{spl}}$, the elements on the two null lines have no inverse and are zero divisors; for $\mathbb{C}^{\mathrm{dln}}$, the whole maximal ideal consists of non-units, all nilpotent; for $\mathbb{H}$, there are no non-units besides $0$; for $\mathbb{B}$ the zero divisors are precisely the nonzero elements with vanishing conjugate product. For $\mathbb{B}^{\mathrm{spl}}$ the relevant product takes values in $\mathbb{C}^{\mathrm{spl}}$ whose real part $\sum_\mu(q_\mu^2 + q'^2_\mu)$ is positive definite, so it vanishes only at $u = 0$ and does not single out the zero divisors: a nonzero $u$ is a zero divisor exactly when its value is a nonzero zero divisor of $\mathbb{C}^{\mathrm{spl}}$, as for $u = 1+j$, with value $2 + 2j$.
 
 ## Matrix Algebras
 
@@ -168,7 +168,7 @@ one factor for each irreducible complex representation, of size equal to its deg
 
 ## Summary
 
-The examples fall into a small number of structural types. The **division algebras** among them are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the **fields** are the commutative ones, and the **simple algebras** are those with no nontrivial two-sided ideals, namely $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B} \cong M_2(\mathbb{C})$ and $M_n(k)$. The algebras with **zero divisors or nilpotents** — $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n\geq2$, $k[G]$ for $|G|\geq2$ — are exactly the ones that are not division algebras, and the two criteria of size of the centre and existence of zero divisors separate the cases: $\mathbb{H}$ is a division algebra with centre $\mathbb{R}$, $\mathbb{B}$ is simple but not a division algebra with centre $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ is semisimple but not simple with centre $\mathbb{C}^{\mathrm{spl}}$, and $\mathbb{C}^{\mathrm{dua}}$ is local with a nilpotent radical.
+The examples fall into a small number of structural types. The **division algebras** among them are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the **fields** are the commutative ones, and the **simple algebras** are those with no nontrivial two-sided ideals, namely $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B} \cong M_2(\mathbb{C})$ and $M_n(k)$. The algebras with **zero divisors or nilpotents** — $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n\geq2$, $k[G]$ for $|G|\geq2$ — are exactly the ones that are not division algebras, and the two criteria of size of the centre and existence of zero divisors separate the cases: $\mathbb{H}$ is a division algebra with centre $\mathbb{R}$, $\mathbb{B}$ is simple but not a division algebra with centre $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$ is semisimple but not simple with centre $\mathbb{C}^{\mathrm{spl}}$, and $\mathbb{C}^{\mathrm{dln}}$ is local with a nilpotent radical.
 
 The table at the head of the article records the data for each algebra.
 
@@ -179,7 +179,7 @@ The table at the head of the article records the data for each algebra.
 | $k$ | Ground field |
 | $\mathbb{R}, \mathbb{C}$ | Real and complex numbers |
 | $\mathbb{C}^{\mathrm{spl}}$ | Split complex numbers, unit $j$, $j^2 = +1$ |
-| $\mathbb{C}^{\mathrm{dua}}$ | Dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dln}}$ | Dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$ |
 | $\mathbb{H}$ | Quaternions, basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ |
 | $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternions, $\mathbb{C}^{\mathrm{spl}}\otimes_\mathbb{R}\mathbb{H}$, $\dim_\mathbb{R} = 8$ |
 | $\mathbb{B}$ | Biquaternions, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ |

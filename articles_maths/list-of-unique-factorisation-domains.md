@@ -88,7 +88,7 @@ The first two are the reason the ladder of *List of Structures from Rings to Fie
 | Object | Why it is not a unique factorisation domain of this list | Introduced in |
 |---|---|---|
 | $M_2(\mathbb{R})$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{B}^{\mathrm{spl}}$ | not commutative, and the matrix, biquaternion and split-biquaternion rings have zero divisors | *Matrix Algebras*, *Quaternion Algebra*, *The Biquaternion Algebra*, *Split-Biquaternion Algebra* |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$ | not domains: the split-complex numbers have $\Pi_1\Pi_2 = 0$ and the dual numbers a nilpotent | *Split-Complex Algebra*, *Dual-Numbers Algebra* |
+| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | not domains: the split-complex numbers have $\Pi_1\Pi_2 = 0$ and the dual numbers a nilpotent | *Split-Complex Algebra*, *Dual-Numbers Algebra* |
 | $\mathbb{Z}/6\mathbb{Z}$ | not a domain: $2 \cdot 3 = 0$ | *Modular Arithmetic and the Ring of Residues* |
 | a general Dedekind domain $\mathcal{O}_K$ | a UFD exactly when its class number is $1$ | *Dedekind Domains and Ideal Class Groups* |
 

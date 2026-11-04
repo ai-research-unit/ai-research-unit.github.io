@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A deformation of an algebraic object is a family of objects over a parameter, all specialising to the given one, and the algebraic theory of deformations studies these families when the parameter ring is local and the fibre over the closed point is the object deformed. The leading example is the deformation of an associative $k$-algebra $A$ over the dual numbers $\mathbb{C}^{\mathrm{dua}}=k[\varepsilon]/(\varepsilon^2)$: a multiplication on $A\otimes_k\mathbb{C}^{\mathrm{dua}}$ reducing to the multiplication of $A$ modulo $\varepsilon$ is a first-order deformation, and the set of such deformations, up to the isomorphisms that are the identity modulo $\varepsilon$, is described by a cohomology group, $HH^2(A,A)$ in the associative case and $\operatorname{Ext}^1_A(M,M)$ in the case of a module. When one asks instead for deformations over a thicker parameter ring the obstruction to extending a first-order deformation is a class in the next cohomology group, $HH^3(A,A)$ or $\operatorname{Ext}^2_A(M,M)$, and this is the whole content of the theory in the associative case: deformations are the Maurer–Cartan solutions of a differential graded Lie algebra, gauge equivalence is the action of the degree-zero part, and the obstructions are the brackets.
+A deformation of an algebraic object is a family of objects over a parameter, all specialising to the given one, and the algebraic theory of deformations studies these families when the parameter ring is local and the fibre over the closed point is the object deformed. The leading example is the deformation of an associative $k$-algebra $A$ over the dual numbers $\mathbb{C}^{\mathrm{dln}}=k[\varepsilon]/(\varepsilon^2)$: a multiplication on $A\otimes_k\mathbb{C}^{\mathrm{dln}}$ reducing to the multiplication of $A$ modulo $\varepsilon$ is a first-order deformation, and the set of such deformations, up to the isomorphisms that are the identity modulo $\varepsilon$, is described by a cohomology group, $HH^2(A,A)$ in the associative case and $\operatorname{Ext}^1_A(M,M)$ in the case of a module. When one asks instead for deformations over a thicker parameter ring the obstruction to extending a first-order deformation is a class in the next cohomology group, $HH^3(A,A)$ or $\operatorname{Ext}^2_A(M,M)$, and this is the whole content of the theory in the associative case: deformations are the Maurer–Cartan solutions of a differential graded Lie algebra, gauge equivalence is the action of the degree-zero part, and the obstructions are the brackets.
 
 This article develops the deformation functor of an algebra and of a module, first-order deformations and their cohomological description, the Maurer–Cartan equation and the differential graded Lie algebra of Hochschild cochains, gauge equivalence and the versal deformation, the obstruction calculus in degrees two and three, the deformation of a module over a deformed algebra, the rigidity criterion and the examples of the polynomial ring, the matrix algebra and the dual numbers. It follows *Hochschild Homology*, *Cyclic Homology*, *Ext and Tor*, *Derived Categories*, and it prepares the representation-theoretic articles of the category.
 
@@ -27,7 +27,7 @@ $$
 a*b=ab+\varepsilon f(a,b)
 $$
 
-on $A\otimes_k\mathbb{C}^{\mathrm{dua}}$ that is associative and reduces to the given product modulo $\varepsilon$. The bilinear form $f:A\times A\to A$ is a **first-order deformation cocycle**, and $f$ satisfies
+on $A\otimes_k\mathbb{C}^{\mathrm{dln}}$ that is associative and reduces to the given product modulo $\varepsilon$. The bilinear form $f:A\times A\to A$ is a **first-order deformation cocycle**, and $f$ satisfies
 $$
 af(b,c)-f(ab,c)+f(a,bc)-f(a,b)c=0,
 $$
@@ -35,7 +35,7 @@ which is the cocycle condition for $HH^2(A,A)$ up to sign, and the associativity
 
 **Theorem.** The first-order deformations of $A$ up to equivalence are in natural bijection with $HH^2(A,A)$, the equivalence being the difference by a Hochschild coboundary. The trivial deformation $a*b=ab$ corresponds to the class $0$.
 
-*Proof.* For each $f$, the associativity of $*$ on $A\otimes\mathbb{C}^{\mathrm{dua}}$ is equivalent to the cocycle condition on $f$ once the products of the three elements are expanded and the $\varepsilon$-linear terms collected. An equivalence between the deformation given by $f$ and the deformation given by $f'$ is an isomorphism of $\mathbb{C}^{\mathrm{dua}}$-algebras that is the identity modulo $\varepsilon$, hence of the form $a+\varepsilon g(a)$ for a $k$-linear $g:A\to A$; conjugating the product by it changes $f$ to $f+\partial g$, where $\partial g(a,b)=ag(b)-g(ab)+g(a)b$ is the Hochschild coboundary. Hence the deformations modulo equivalence are the classes in $HH^2(A,A)$.
+*Proof.* For each $f$, the associativity of $*$ on $A\otimes\mathbb{C}^{\mathrm{dln}}$ is equivalent to the cocycle condition on $f$ once the products of the three elements are expanded and the $\varepsilon$-linear terms collected. An equivalence between the deformation given by $f$ and the deformation given by $f'$ is an isomorphism of $\mathbb{C}^{\mathrm{dln}}$-algebras that is the identity modulo $\varepsilon$, hence of the form $a+\varepsilon g(a)$ for a $k$-linear $g:A\to A$; conjugating the product by it changes $f$ to $f+\partial g$, where $\partial g(a,b)=ag(b)-g(ab)+g(a)b$ is the Hochschild coboundary. Hence the deformations modulo equivalence are the classes in $HH^2(A,A)$.
 
 **Example.** For the polynomial algebra $A=k[x_1,\dots,x_m]$ the second Hochschild cohomology is, by the Hochschild–Kostant–Rosenberg theorem, the direct sum $HH^2(A,A)\cong\bigoplus_{p+q=2}\Lambda^p\operatorname{Der}_k(A)\otimes_A\Omega^q_{A/k}=\Lambda^2\operatorname{Der}\oplus(\operatorname{Der}\otimes_A\Omega^1)\oplus\Omega^2$ of the bivectors, the derivations twisted by the one-forms, and the two-forms; every bivector $\sum_{i<j}c_{ij}\partial/\partial x_i\wedge\partial/\partial x_j$ with $c_{ij}\in A$ gives a first-order deformation by the product
 $$
@@ -73,7 +73,7 @@ where $m_0$ is the multiplication of $A$ and $\partial=[m_0,-]$ is the Hochschil
 
 ### First-Order Module Deformations
 
-**Definition.** Let $A$ be a $k$-algebra and $M$ a finite-dimensional $A$-module (over a field $k$). A **deformation** of $M$ over $R=k[\varepsilon]/(\varepsilon^2)$ is an $A\otimes_kR$-module $M_R$, flat over $R$, with $M_R\otimes_Rk\cong M$; equivalently an $A$-module structure on $M\otimes_k\mathbb{C}^{\mathrm{dua}}$ of the form
+**Definition.** Let $A$ be a $k$-algebra and $M$ a finite-dimensional $A$-module (over a field $k$). A **deformation** of $M$ over $R=k[\varepsilon]/(\varepsilon^2)$ is an $A\otimes_kR$-module $M_R$, flat over $R$, with $M_R\otimes_Rk\cong M$; equivalently an $A$-module structure on $M\otimes_k\mathbb{C}^{\mathrm{dln}}$ of the form
 
 $$
 a\cdot_\varepsilon m=a m+\varepsilon\varphi(a,m),
@@ -85,7 +85,7 @@ with $\varphi:A\times M\to M$ satisfying $a\varphi(b,m)-\varphi(ab,m)+\varphi(a,
 
 *Proof.* The set of extensions $0\to M\to M_\varepsilon\to M\to0$ of $A_\varepsilon$-modules with $\varepsilon$ acting by the two-step filtration is the usual description of the deformations, and two deformations are equivalent when the corresponding extensions are isomorphic as $A$-module extensions of $M$ by $M$; the Yoneda description of $\operatorname{Ext}^1_A(M,M)$ as the classes of such extensions of *Ext and Tor* gives the bijection. The obstruction to lifting an extension across a square-zero extension of the parameter ring is the Yoneda product with the class of the extension, which lies in $\operatorname{Ext}^2_A(M,M)$.
 
-**Example.** For $A=k[x]$ and $M=k[x]/(x)$ the module $M$ is simple and $\operatorname{Ext}^1_A(M,M)\cong k$: the resolution $0\to A\xrightarrow{\,x\,}A\to M\to0$ gives $\operatorname{Ext}^1\cong A/(x)\cong k$. The corresponding deformation is the $A\otimes_k\mathbb{C}^{\mathrm{dua}}$-module $k[x]/(x-\varepsilon)\otimes_k\mathbb{C}^{\mathrm{dua}}\cong\mathbb{C}^{\mathrm{dua}}$ on which $x$ acts as multiplication by $\varepsilon$.
+**Example.** For $A=k[x]$ and $M=k[x]/(x)$ the module $M$ is simple and $\operatorname{Ext}^1_A(M,M)\cong k$: the resolution $0\to A\xrightarrow{\,x\,}A\to M\to0$ gives $\operatorname{Ext}^1\cong A/(x)\cong k$. The corresponding deformation is the $A\otimes_k\mathbb{C}^{\mathrm{dln}}$-module $k[x]/(x-\varepsilon)\otimes_k\mathbb{C}^{\mathrm{dln}}\cong\mathbb{C}^{\mathrm{dln}}$ on which $x$ acts as multiplication by $\varepsilon$.
 
 **Example.** For the same $A=k[x]$ and $M=A$ the module $A$ is free, hence projective, so $\operatorname{Ext}^1_A(A,A)=0$ and the free module of rank one is rigid as a module. This must not be confused with the deformations of $A$ as an **algebra**, which are governed by the Hochschild group $HH^2(A,A)$ of the previous section and do not vanish; the two functors are different, one taken over $A$ and the other over the enveloping algebra $A^{\mathrm{e}}$.
 
@@ -156,7 +156,7 @@ For a module $M$ over $A$ the same picture holds with $\operatorname{Ext}$ in pl
 | Symbol | Meaning |
 |---|---|
 | $k$ | commutative ground ring with $1\neq0$ |
-| $\mathbb{C}^{\mathrm{dua}}=k[\varepsilon]/(\varepsilon^2)$ | dual numbers, the first-order parameter ring |
+| $\mathbb{C}^{\mathrm{dln}}=k[\varepsilon]/(\varepsilon^2)$ | dual numbers, the first-order parameter ring |
 | $A$, $A_S$, $A_\varepsilon$ | algebra, deformation over $S$, over the dual numbers |
 | $\operatorname{Def}_A(R)$ | deformation functor on Artinian local $k$-algebras |
 | $f(a,b)$, $m_t$ | deformation cocycle, formal multiplication |

@@ -6,9 +6,9 @@ The **Zitterbewegung** — the "trembling motion" — is the oscillatory part of
 
 The biquaternion framework of these articles splits $\mathbb{B}$ by Hermitian conjugation into two sectors, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, which multiplication by the central $i$ exchanges. The natural suggestion is that this is the same split the Zitterbewegung exploits: that the positive- and negative-energy parts of the field *are* its $\mathbb{M}_-$ and $\mathbb{M}_+$ parts, and that the trembling is therefore the observable face of the complexification.
 
-This article tests that suggestion rather than assuming it. The finding is mixed, and it is stated plainly from the outset. The oscillation can be derived and its frequency checked, and the mass does set the sector rotation: the rest-energy phase turns the two sectors into one another at $mc^2/\hbar$; but the identification of the $\pm$-energy parts with the two sectors does **not** hold, because the energy sign is fixed by a cell that multiplies the field on the right, while the sector is fixed by a conjugation of its value. The two splits have the same physical scale — the mass — and that is why the suggestion is tempting, but they are splits of different objects by different operations. Section *Does the Sector Split Do Real Work?* gives the argument, and Section *What Survives* separates the claims that hold from the one that does not.
+This article tests that suggestion rather than assuming it. The finding is mixed, and it is stated plainly from the outset. The oscillation can be derived and its frequency checked, and the mass does set the sector rotation: the rest-energy phase turns the two sectors into one another at $mc^2/\hbar$; but the identification of the $\pm$-energy parts with the two sectors does **not** hold, because the energy sign is fixed by a map that multiplies the field on the right, while the sector is fixed by a conjugation of its value. The two splits have the same physical scale — the mass — and that is why the suggestion is tempting, but they are splits of different objects by different operations. Section *Does the Sector Split Do Real Work?* gives the argument, and Section *What Survives* separates the claims that hold from the one that does not.
 
-The article is organised as follows. The next section recalls the standard picture, writes the Heisenberg velocity identity, and records the three contested readings of the effect. The section after fixes the biquaternion setting and the plane-wave branches, following the parent. The following section recomputes the oscillation in cells, reduces every factor of $i$ with $i^2=-1$, and checks the frequency and the amplitude on cases chosen independently of the rest case. A short section then isolates the genuinely algebraic content — the real structure as a diagonal action with opposite signs on the sectors, and the rest-energy phase as a rotation between them — and shows that the Zitterbewegung phase is the square of the free-evolution phase, so its frequency is twice the sector-rotation frequency. The central section tests the sector identification and reports its failure. The closing sections record the relation to the companion article on the electron, set the cell notation alongside the standard Dirac notation in one place and for comparison only, and summarise the statements that survive. Nothing here depends on the electron article; the connection is noted where relevant.
+The article is organised as follows. The next section recalls the standard picture, writes the Heisenberg velocity identity, and records the three contested readings of the effect. The section after fixes the biquaternion setting and the plane-wave branches, following the parent. The following section recomputes the oscillation with the maps written out, reduces every factor of $i$ with $i^2=-1$, and checks the frequency and the amplitude on cases chosen independently of the rest case. A short section then isolates the genuinely algebraic content — the real structure as a diagonal action with opposite signs on the sectors, and the rest-energy phase as a rotation between them — and shows that the Zitterbewegung phase is the square of the free-evolution phase, so its frequency is twice the sector-rotation frequency. The central section tests the sector identification and reports its failure. The closing sections record the relation to the companion article on the electron, set the cell notation alongside the standard Dirac notation in one place and for comparison only, and summarise the statements that survive. Nothing here depends on the electron article; the connection is noted where relevant.
 
 ## The Standard Picture
 
@@ -24,13 +24,13 @@ $$
 i\hbar\,\frac{\partial\tilde{\Psi}}{\partial t'} = H\tilde{\Psi}, \qquad H = c\sum_{k=x,y,z}p_k\,\alpha_k + \beta\,mc^2,
 $$
 
-with $p_k=-i\hbar\,\partial/\partial x_k$ and the cells
+with $p_k=-i\hbar\,\partial/\partial x_k$ and the two maps
 
 $$
-\alpha_k = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}, \qquad \beta = iR_{\vec e_x}^{\mathrm{axf}} .
+\alpha_k:\ \tilde Q\mapsto\vec e_k\,\tilde Q\,\vec e_z, \qquad \beta:\ \tilde Q\mapsto i\,\tilde Q\,\vec e_x .
 $$
 
-The action of a cell and the composition of two cells are those of *Operator and Calculus Conventions*, §*The Operators* and *Operator Family Conventions*, §*The Slots*, and are not restated here. The left slot of $\beta$ is occupied by the time unit and adds nothing, so $\beta$ acts as the single right multiplication $iR_{\vec e_x}^{\mathrm{axf}}$. Every factor of $i$ in a product of cells is reduced with $i^2=-1$ and the quaternion relations, as in the explicit simplification of the section *Recomputing the Oscillation* below. The cells satisfy
+The composition of two such maps is that of *Operator Family Conventions*, §*The Slots*, and is not restated here. The map $\beta$ multiplies on the right only: the time unit it would carry on the left adds nothing. The maps satisfy
 
 $$
 \{\alpha_j,\alpha_k\} = 2\delta_{jk}\,\mathrm{id}, \qquad \{\alpha_k,\beta\} = 0, \qquad (\alpha_k)^2 = \mathrm{id},
@@ -41,7 +41,7 @@ so the velocity $c\alpha_k$ has eigenvalues $\pm c$ and the Hamiltonian has eige
 The oscillation follows from the Heisenberg equation. Because $\{\alpha_k,H\} = 2cp_k\,\mathrm{id}$, the velocity in the Heisenberg picture has the exact form, with $\hbar$ kept explicit
 
 $$
-\alpha_k(t') = \frac{cp_k}{H} + \exp(iH t'/\hbar)\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'/\hbar),
+\boxed{\;\alpha_k(t') = \frac{cp_k}{H} + \exp(iH t'/\hbar)\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'/\hbar)\;},
 $$
 
 in which the first term is the constant drift velocity and the second is the *trembling* term; $cp_k/H$ is the operator $cp_kH^{-1} = cp_kH/E^2$. Write $A_k=\alpha_k(0)-cp_k/H$. Because $A_k$ anticommutes with $H$, the second term can be written in either of the equivalent forms
@@ -53,7 +53,7 @@ $$
 and the last form is what makes the integration below elementary. On the two energy branches the eigenvalues of the oscillating factor are $\exp(\pm 2iEt'/\hbar)$, so the angular frequency is $2E/\hbar$, and integrating once gives the position
 
 $$
-\boxed{\;x_k(t') = x_k(0) + \frac{c^2p_k}{H}\,t' \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH t'/\hbar)-1\Big)\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\;}.
+\boxed{\;x_k(t') = x_k(0) + \frac{c^2p_k}{H}\,t' \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH t'/\hbar)-1\Big)A_k\;}.
 $$
 
 At rest, $H = \beta mc^2$ and the oscillating term has frequency $2mc^2/\hbar$ and amplitude of order $\hbar/(2mc)$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-iEt'/\hbar)$ and a negative-frequency component $\exp(+iEt'/\hbar)$ beat at $2E/\hbar$, and the trembling term is exactly that beat.
@@ -107,7 +107,7 @@ One fact about the field will be needed throughout, and it is the sector action 
 
 ## Recomputing the Oscillation
 
-The parent's generators, written as cells, are the time cell $\beta = iR_{\vec e_x}^{\mathrm{axf}}$ and the three spatial cells $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. They satisfy
+The generators of the parent are the map $\beta$ of *The Standard Picture* and three spatial maps, written in cells as $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. With the action, the composition and the unit of *Operator Family Conventions*, and with the structure constants of the units, they give
 
 $$
 \left(iR_{\vec e_x}^{\mathrm{axf}}\right)^2 = \mathrm{id}, \qquad
@@ -115,37 +115,18 @@ $$
 \{iR_{\vec e_x}^{\mathrm{axf}},\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\} = 0,
 $$
 
-which is the cell relation with $\varepsilon=(1,-1,-1,-1)$. Every sign in this display is a reduction of $i^2=-1$ and of the quaternion relations. For the time cell,
+so the four maps carry the sign pattern of the frame, $\varepsilon=(1,-1,-1,-1)$. The product of the time map with a spatial map is the map $\alpha_k$ of the Hamiltonian. It is one line, the two factors $i$ and the order of the two spatial units,
 
 $$
-\left(iR_{\vec e_x}^{\mathrm{axf}}\right)^2
-=i^2\,R_{\vec e_x^2}^{\mathrm{axf}}
-=i^2\,R_{-e_t}^{\mathrm{axf}}
-=-R_{-e_t}^{\mathrm{axf}}
-=R_{e_t}^{\mathrm{axf}},
-$$
-
-and right multiplication by the time unit is the identity action, so the square of the time cell is $\mathrm{id}$. The product of the time cell with a spatial cell is the cell $\alpha_k$ of the Hamiltonian,
-
-$$
-\begin{aligned}
-\alpha_k &= \beta\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
+\beta\, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
 = i^2\,L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}
-= i^2\,L_{\vec e_k}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}} \\[2pt]
-&= -L_{\vec e_k}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}
+= -L_{\vec e_k}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}
 = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
-\end{aligned}
 $$
 
-where $\vec e_y\vec e_x=-\vec e_z$ and $R_{-b}=-R_b$. The relations $\{\alpha_j,\alpha_k\} = 2\delta_{jk}\,\mathrm{id}$, $\{\alpha_k,\beta\} = 0$ and $H^2 = E^2\,\mathrm{id}$ all follow, and each was checked numerically.
+because $\vec e_y\vec e_x=-\vec e_z$ and a cell is linear in its second multiplier; the last cell is the map $\alpha_k$ of *The Standard Picture*. The relations $\{\alpha_j,\alpha_k\} = 2\delta_{jk}\,\mathrm{id}$, $\{\alpha_k,\beta\} = 0$ and $H^2 = E^2\,\mathrm{id}$ all follow, and each was checked numerically.
 
-The operator identity for the Heisenberg velocity is the exact statement
-
-$$
-\boxed{\;\alpha_k(t') = \frac{cp_k}{H} + \exp(iH t'/\hbar)\Big(\alpha_k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'/\hbar)\;},
-$$
-
-in which $cp_k/H$ denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is an operator and not a scalar. Because $H$ anticommutes with $\alpha_k - cp_k/H$, the oscillating factor evolves on each energy eigenspace as $\exp(\pm 2iEt'/\hbar)$.
+The identity boxed in *The Standard Picture* is exact, and $cp_k/H$ in it denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is an operator and not a scalar. The three equivalent forms of that section rest on $\{\alpha_k-cp_k/H,\,H\}=0$, which the relations above give.
 
 The identity was checked by direct computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $t' = 0.017, 0.05, 0.23$ in units of $\hbar/(mc^2)$. The left side $\exp(iHt'/\hbar)\alpha_k \exp(-iHt'/\hbar)$ and both equivalent forms on the right agreed to machine precision, the largest coefficient of the difference below $10^{-15}$ over all three components and all times. The integrated position formula was checked the same way, against a direct integration of $c\alpha_k(t')$ from the eigen-decomposition of $H$; the largest coefficient of the difference was below $5\times10^{-16}$. The rest case is then a consequence, $E = mc^2$, not an input.
 
@@ -158,7 +139,7 @@ $$
 
 which is the standard value. On a relativistic case chosen independently, with Lorentz factor $2$ so $E = 2mc^2$, the formula gives $2E/\hbar = 4m_ec^2/\hbar = 3.10538\times10^{21}\ \text{rad s}^{-1}$ — twice the rest value, as the formula requires and as the rest case alone would not reveal. The oscillation amplitude is $\hbar/(2mc)$, which for the electron is $193.1$ fm, half the reduced Compton wavelength $386.2$ fm. Both the frequency and the amplitude are the standard ones; the biquaternion notation reproduces them without alteration.
 
-It should be said clearly that this derivation uses the time cell $\beta$, which multiplies the field on the right, and that no left multiplication by an element of $\mathbb{B}$ does the same. That will matter in the test that follows.
+It should be said clearly that this derivation uses the map $\beta$ of *The Standard Picture*, which multiplies the field on the right, and that no left multiplication by an element of $\mathbb{B}$ does the same. That will matter in the test that follows.
 
 ## The Complexification and the Rest-Energy Phase
 
@@ -190,7 +171,7 @@ The claim to test is: *the positive- and negative-energy parts of the field are 
 
 **They are splits of different objects.** The energy sign separates two terms of a solution by their dependence on $t'$: a term of positive frequency carries the factor $\exp(-iEt'/\hbar)$ and one of negative frequency the factor $\exp(+iEt'/\hbar)$, and $E$ moves with the momentum. It is a split of the solutions of the pair. The sector split separates the value of one element at one point, by Hermitian conjugation; it is pointwise and knows nothing of $t'$ or of $\vec p$. A split of a family of functions and a split of the values the functions take are different objects, and no dictionary is stated that would identify them.
 
-**The energy sign is fixed by a multiplication on the right, the sector by an involution of the value.** The Hamiltonian contains the time cell $\beta = iR_{\vec e_x}^{\mathrm{axf}}$, and its kinetic terms multiply on the right by $\vec e_z$. No element of the algebra acts as $\beta$ by left multiplication: a cell is fixed by its pair of multipliers up to one central scalar, so a cell whose second slot carries $\vec e_x$ is not a cell whose second slot carries $e_t$, and the left multipliers are exactly the cells whose second slot is the time unit (checked on twenty random pairs). The energy sign is therefore decided by an operator built from right multiplications, and the sector by the conjugation of the value, which is not an action at all. $\beta$ is a cell and not an element, so it lies in neither sector; the sectors are properties of elements.
+**The energy sign is fixed by a multiplication on the right, the sector by an involution of the value.** The Hamiltonian contains the map $\beta$, which multiplies on the right by $\vec e_x$, and its kinetic terms multiply on the right by $\vec e_z$. No element of the algebra acts as $\beta$ by left multiplication, and two units already show it. If some $c$ gave $c\tilde Q=i\tilde Q\vec e_x$ for every $\tilde Q$, the value at $\tilde Q=e_t$ would force $c=i\vec e_x$; at $\tilde Q=\vec e_z$ that $c$ gives $c\vec e_z=i\vec e_x\vec e_z=-i\vec e_y$, while $\beta$ gives $i\vec e_z\vec e_x=+i\vec e_y$, and the two differ. A left multiplier that agrees with $\beta$ on one element fails on another. So the energy sign is decided by a map built from right multiplications, and the sector by the conjugation of the value, which is not a map at all. $\beta$ is a map on the algebra and not an element of it, so it lies in neither sector; the sectors are properties of elements.
 
 **A momentum argument reinforces this.** The sector split is momentum-independent: whether an element is Hermitian is a property of the element, not of any wave it carries. The energy sign is momentum-dependent through the $\vec p$ of the kinetic term. A momentum-independent split cannot be a momentum-dependent one except at $\vec p = 0$, and even there the two rest branches land in the same sector, as the next paragraph shows.
 
@@ -209,14 +190,14 @@ The following table separates the claims.
 | The real structure $\flat$ acts with opposite signs on $\mathbb{M}_\pm$ | Established; it is the sector action of the conjugation |
 | The rest-energy phase rotates the sectors at $mc^2/\hbar$ | Established; with $\theta=mc^2t'/\hbar$, $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
 | The Zitterbewegung phase is the square of the free-evolution phase | Established; hence the frequency is doubled |
-| $\pm$-energy parts **are** the $\mathbb{M}_\mp$ sectors | False as an identity; the energy sign is fixed by a cell that multiplies on the right, the sector by a conjugation of the value |
+| $\pm$-energy parts **are** the $\mathbb{M}_\mp$ sectors | False as an identity; the energy sign is fixed by a map that multiplies on the right, the sector by a conjugation of the value |
 | The $\mathbb{M}_\pm$ split does work beyond relabelling the Hermitian decomposition | Not established; the interference is between energy branches, which are not the sectors |
 
 What survives is a relation of *scale and phase*, not of identity. The mass sets both the sector-rotation rate and the gap whose interference is the trembling; the trembling frequency is twice the sector-rotation frequency because the trembling phase is the square of the evolution phase. This makes the Zitterbewegung a place where the mass term and the two sectors are simultaneously visible, and it is a legitimate point of contact between the Dirac solutions and the sector decomposition. It does not make the trembling the observable face of the complexification in the strong sense proposed.
 
 ## Zitterbewegung and the Electron
 
-The Zitterbewegung is usually introduced as a property of the electron, and a [companion article on the electron in biquaternionic form](the-electron-in-biquaternionic-form.html) has since been written in this group. Nothing in the present article depends on it. If the sector decomposition is to acquire physical content, the electron article is the natural place to look: the electron's rest energy is the scale of both the sector rotation and the trembling, so any attempt to identify an observable with the informational sector would have to pass through that scale. The present negative result is a constraint on that attempt, not a substitute for it.
+The Zitterbewegung is usually introduced as a property of the electron, and a [companion article on the electron in biquaternionic form](the-electron-in-biquaternionic-form.html) has since been written in this group. Nothing in the present article depends on it. The two agree on the result: the electron article records the same frequencies and amplitudes, reports that the identification of the energy branches with the sectors fails, and keeps the relation of scale and phase. Its electron gives the numbers $1.55269\times10^{21}\ \text{rad s}^{-1}$ and $193.1$ fm, which are the ones computed above, and its rest energy is the scale of both the sector rotation and the trembling.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -279,8 +260,8 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde\nabla$ | The biquaternionic gradient (Dirac operator), *Operator and Calculus Conventions* |
 | $L_{a}R_{b}$ | A two-sided cell; its action and its composition are *Operator and Calculus Conventions* and *Operator Family Conventions* |
 | $\mathrm{id}$ | The identity map |
-| $\beta = iR_{\vec e_x}^{\mathrm{axf}}$ | Time cell, one right multiplication |
-| $\alpha_k = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Spatial generators |
+| $\beta:\tilde Q\mapsto i\tilde Q\vec e_x$ | The time map, one right multiplication |
+| $\alpha_k:\tilde Q\mapsto\vec e_k\tilde Q\vec e_z$ | The three spatial maps |
 | $H = c\sum_k p_k\,\alpha_k + \beta mc^2$ | Hamiltonian, $H^2 = E^2\,\mathrm{id}$ |
 | $A_k = \alpha_k(0) - cp_k/H$ | Anticommuting part of the velocity, $\{A_k,H\}=0$ |
 | $\omega_Z = 2E/\hbar$ | Zitterbewegung angular frequency |

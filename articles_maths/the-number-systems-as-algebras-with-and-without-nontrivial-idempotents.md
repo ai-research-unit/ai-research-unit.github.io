@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The number systems of the shared conventions — the real numbers $\mathbb{R}$, the complex numbers $\mathbb{C}$, the split complex numbers $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$ with $j^2=+1$, the dual numbers $\mathbb{C}^{\mathrm{dua}}=\mathbb{R}[\varepsilon]$ with $\varepsilon^2=0$, the quaternions $\mathbb{H}$, the split biquaternions $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_\mathbb{R}\mathbb{H}$, and the biquaternions $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ — look alike as vector spaces and differ sharply as algebras. This article compares them through one invariant: the set of idempotents. The comparison is a small dictionary of structural algebra. The idempotents of $\mathbb{C}^{\mathrm{spl}}$ are four and all central; the idempotents of $\mathbb{B}^{\mathrm{spl}}$ are four and all central; the idempotents of $\mathbb{B}$ are a two-parameter family and almost all noncentral; the idempotents of $\mathbb{C}$ and $\mathbb{H}$ are only $0$ and $1$; and the idempotents of the dual numbers $\mathbb{C}^{\mathrm{dua}}$ are also only $0$ and $1$, although $\mathbb{C}^{\mathrm{dua}}$ is not a division algebra.
+The number systems of the shared conventions — the real numbers $\mathbb{R}$, the complex numbers $\mathbb{C}$, the split complex numbers $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$ with $j^2=+1$, the dual numbers $\mathbb{C}^{\mathrm{dln}}=\mathbb{R}[\varepsilon]$ with $\varepsilon^2=0$, the quaternions $\mathbb{H}$, the split biquaternions $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_\mathbb{R}\mathbb{H}$, and the biquaternions $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ — look alike as vector spaces and differ sharply as algebras. This article compares them through one invariant: the set of idempotents. The comparison is a small dictionary of structural algebra. The idempotents of $\mathbb{C}^{\mathrm{spl}}$ are four and all central; the idempotents of $\mathbb{B}^{\mathrm{spl}}$ are four and all central; the idempotents of $\mathbb{B}$ are a two-parameter family and almost all noncentral; the idempotents of $\mathbb{C}$ and $\mathbb{H}$ are only $0$ and $1$; and the idempotents of the dual numbers $\mathbb{C}^{\mathrm{dln}}$ are also only $0$ and $1$, although $\mathbb{C}^{\mathrm{dln}}$ is not a division algebra.
 
 The last example is the point of the article. "No nontrivial idempotents" is not the same as "division algebra". The division algebras have no nontrivial idempotents because they have no zero divisors; the dual numbers have no nontrivial idempotents because they are local, with the nilpotent ideal $(\varepsilon)$ and the unit $1$ primitive. The matrix algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has many nontrivial idempotents although it is simple. The split complex numbers $\mathbb{C}^{\mathrm{spl}}$ have two nontrivial central idempotents and decompose as $\mathbb{R}\times\mathbb{R}$; the split biquaternions $\mathbb{B}^{\mathrm{spl}}$ have two nontrivial central idempotents and decompose as $\mathbb{H}\times\mathbb{H}$. The invariant that decides the question is the existence of a proper direct summand of the algebra as a left module over itself, equivalently the primitivity of the unit.
 
@@ -62,7 +62,7 @@ The following table records the roots of $1$ and the idempotents. The count "man
 | $\mathbb{C}$ | $\pm1$ | $0,1$ |
 | $\mathbb{H}$ | $\pm1$ | $0,1$ |
 | $\mathbb{C}^{\mathrm{spl}}$ | $\pm1,\ \pm j$ | $0,1,\ \Pi_+,\ \Pi_-$ |
-| $\mathbb{C}^{\mathrm{dua}}$ | $\pm1$ | $0,1$ |
+| $\mathbb{C}^{\mathrm{dln}}$ | $\pm1$ | $0,1$ |
 | $\mathbb{B}^{\mathrm{spl}}$ | $(\pm1,\pm1)$ | $0,1,\ \Pi_+,\ \Pi_-$ |
 | $\mathbb{B}$ | many | many |
 
@@ -96,7 +96,7 @@ which is a two-sphere. The halving map sends the roots of $1$ to idempotents and
 
 ### The dual numbers
 
-Let $\mathbb{C}^{\mathrm{dua}}=\mathbb{R}[\varepsilon]/(\varepsilon^2)$. An element is $a+b\varepsilon$, with $a,b\in\mathbb{R}$. Its square is $a^2+2ab\varepsilon$, so the idempotents satisfy
+Let $\mathbb{C}^{\mathrm{dln}}=\mathbb{R}[\varepsilon]/(\varepsilon^2)$. An element is $a+b\varepsilon$, with $a,b\in\mathbb{R}$. Its square is $a^2+2ab\varepsilon$, so the idempotents satisfy
 
 $$
 a^2=a, \qquad 2ab=b.
@@ -104,15 +104,15 @@ $$
 
 If $a=0$, then $b=0$; if $a=1$, then $2b=b$, so $b=0$ in characteristic not two. Hence the only idempotents are $0$ and $1$. The algebra has a nonzero nilpotent $\varepsilon$, so it is not a division algebra; it is not a field; it has zero divisors; but it has no nontrivial idempotents.
 
-**Theorem.** The algebra $\mathbb{C}^{\mathrm{dua}}$ is local with maximal ideal $(\varepsilon)$, and a local algebra has no nontrivial idempotents.
+**Theorem.** The algebra $\mathbb{C}^{\mathrm{dln}}$ is local with maximal ideal $(\varepsilon)$, and a local algebra has no nontrivial idempotents.
 
-*Proof.* The ideal $(\varepsilon)$ is the set of nonunits: $a+b\varepsilon$ is a unit exactly when $a\neq0$, with inverse $a^{-1}-a^{-2}b\varepsilon$. The quotient $\mathbb{C}^{\mathrm{dua}}/(\varepsilon)\cong\mathbb{R}$ is a field, so $(\varepsilon)$ is the unique maximal ideal. If $e$ is an idempotent in a local algebra with maximal ideal $\mathfrak{m}$, then $e$ and $1-e$ cannot both lie in $\mathfrak{m}$, because their sum is $1\notin\mathfrak{m}$; hence one of them is a unit. If $e$ is a unit and $e^2=e$, then $e=1$; if $1-e$ is a unit and $e(1-e)=0$, then $e=0$. Hence $e=0$ or $1$.
+*Proof.* The ideal $(\varepsilon)$ is the set of nonunits: $a+b\varepsilon$ is a unit exactly when $a\neq0$, with inverse $a^{-1}-a^{-2}b\varepsilon$. The quotient $\mathbb{C}^{\mathrm{dln}}/(\varepsilon)\cong\mathbb{R}$ is a field, so $(\varepsilon)$ is the unique maximal ideal. If $e$ is an idempotent in a local algebra with maximal ideal $\mathfrak{m}$, then $e$ and $1-e$ cannot both lie in $\mathfrak{m}$, because their sum is $1\notin\mathfrak{m}$; hence one of them is a unit. If $e$ is a unit and $e^2=e$, then $e=1$; if $1-e$ is a unit and $e(1-e)=0$, then $e=0$. Hence $e=0$ or $1$.
 
 **Corollary.** The dual numbers have exactly the idempotents $0$ and $1$, and the unit $1$ is primitive.
 
 *Proof.* The theorem gives the idempotents; $1$ is not the sum of two nonzero orthogonal idempotents because there are no nonzero idempotents other than $1$.
 
-**Remark.** The dual numbers are the standard example of an algebra that is indecomposable but not simple and not a division algebra. The left ideals are $0$, $(\varepsilon)$ and $\mathbb{C}^{\mathrm{dua}}$; the ideal $(\varepsilon)$ is nilpotent, so it is not a direct summand, and the algebra is local. The example shows that "no nontrivial idempotents" is a statement about the absence of direct sum decompositions, not about the absence of zero divisors.
+**Remark.** The dual numbers are the standard example of an algebra that is indecomposable but not simple and not a division algebra. The left ideals are $0$, $(\varepsilon)$ and $\mathbb{C}^{\mathrm{dln}}$; the ideal $(\varepsilon)$ is nilpotent, so it is not a direct summand, and the algebra is local. The example shows that "no nontrivial idempotents" is a statement about the absence of direct sum decompositions, not about the absence of zero divisors.
 
 ## The Split Complex Numbers
 
@@ -246,7 +246,7 @@ The following table collects the structural properties. "Local" means a unique m
 | $\mathbb{C}$ | yes | yes | yes | yes | no |
 | $\mathbb{H}$ | yes | yes | yes | yes | no |
 | $\mathbb{C}^{\mathrm{spl}}$ | no | no | no | yes | yes |
-| $\mathbb{C}^{\mathrm{dua}}$ | no | yes | no | no | no |
+| $\mathbb{C}^{\mathrm{dln}}$ | no | yes | no | no | no |
 | $\mathbb{B}$ | no | no | yes | yes | yes |
 | $\mathbb{B}^{\mathrm{spl}}$ | no | no | no | yes | yes |
 
@@ -270,7 +270,7 @@ The first chain is the content of §*Division Algebras Have None* and §*Local A
 
 The table also records the failures of the converses, and these failures are the reason the article exists.
 
-- **Not division does not imply a nontrivial idempotent.** The dual numbers $\mathbb{C}^{\mathrm{dua}}$ are not a division algebra, and they have no nontrivial idempotents. They are local.
+- **Not division does not imply a nontrivial idempotent.** The dual numbers $\mathbb{C}^{\mathrm{dln}}$ are not a division algebra, and they have no nontrivial idempotents. They are local.
 - **Simple does not imply no nontrivial idempotents.** The biquaternions $\mathbb{B}\cong M_2(\mathbb{C})$ are simple, and they have many nontrivial idempotents. They are a full matrix algebra of size two.
 - **Semisimple does not imply no nontrivial idempotents.** The split complex numbers $\mathbb{C}^{\mathrm{spl}}$ and the split biquaternions $\mathbb{B}^{\mathrm{spl}}$ are semisimple, and they have nontrivial idempotents. They are products of two algebras.
 - **No nontrivial idempotents does not imply simple.** The dual numbers have no nontrivial idempotents and are not simple; the ideal $(\varepsilon)$ is nontrivial.
@@ -298,7 +298,7 @@ The pattern behind the failures is the same: the existence of a nontrivial idemp
 
 ## Summary
 
-The number systems split into two groups by their idempotents. The algebras without nontrivial idempotents are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{C}^{\mathrm{dua}}$; the algebras with them are $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{B}$ and $\mathbb{B}^{\mathrm{spl}}$. The division algebras $\mathbb{R},\mathbb{C},\mathbb{H}$ have none because they have no zero divisors; the dual numbers have none because they are local, with the nilpotent maximal ideal $(\varepsilon)$ and the primitive unit; the split complex numbers have the two central idempotents $\frac12(1\pm j)$ and decompose as $\mathbb{R}\times\mathbb{R}$; the biquaternions $\mathbb{B}\cong M_2(\mathbb{C})$ have a two-parameter family of noncentral rank-one projections and only the central idempotents $0,1$; and the split biquaternions $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\times\mathbb{H}$ have exactly four idempotents, all central, the characteristic functions of the two quaternion factors. The halving bijection $e\mapsto2e-1$ identifies the idempotents with the roots of $1$, so the question is the question of the roots of $x^2-1$: two roots in a division algebra or a local algebra, four in a product of two fields, and many in a matrix algebra. The exact criterion is that the unit is primitive, equivalently the left regular module is indecomposable; for a finite-dimensional algebra this is equivalent to locality. The comparison is the companion of *Examples of Algebras*, *Unital Algebras*, *Division Algebras*, *Split Complex Idempotents and Projections*, *Split-Biquaternion Idempotents and Projections* and *Square Roots of One and the Idempotents of the Quaternion Algebra*.
+The number systems split into two groups by their idempotents. The algebras without nontrivial idempotents are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{C}^{\mathrm{dln}}$; the algebras with them are $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{B}$ and $\mathbb{B}^{\mathrm{spl}}$. The division algebras $\mathbb{R},\mathbb{C},\mathbb{H}$ have none because they have no zero divisors; the dual numbers have none because they are local, with the nilpotent maximal ideal $(\varepsilon)$ and the primitive unit; the split complex numbers have the two central idempotents $\frac12(1\pm j)$ and decompose as $\mathbb{R}\times\mathbb{R}$; the biquaternions $\mathbb{B}\cong M_2(\mathbb{C})$ have a two-parameter family of noncentral rank-one projections and only the central idempotents $0,1$; and the split biquaternions $\mathbb{B}^{\mathrm{spl}}\cong\mathbb{H}\times\mathbb{H}$ have exactly four idempotents, all central, the characteristic functions of the two quaternion factors. The halving bijection $e\mapsto2e-1$ identifies the idempotents with the roots of $1$, so the question is the question of the roots of $x^2-1$: two roots in a division algebra or a local algebra, four in a product of two fields, and many in a matrix algebra. The exact criterion is that the unit is primitive, equivalently the left regular module is indecomposable; for a finite-dimensional algebra this is equivalent to locality. The comparison is the companion of *Examples of Algebras*, *Unital Algebras*, *Division Algebras*, *Split Complex Idempotents and Projections*, *Split-Biquaternion Idempotents and Projections* and *Square Roots of One and the Idempotents of the Quaternion Algebra*.
 
 ## Summary of Notation
 
@@ -306,7 +306,7 @@ The number systems split into two groups by their idempotents. The algebras with
 |---|---|
 | $\mathbb{R},\mathbb{C},\mathbb{H}$ | the real, complex and quaternion division algebras |
 | $\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]$, $j^2=1$ | the split complex numbers |
-| $\mathbb{C}^{\mathrm{dua}}=\mathbb{R}[\varepsilon]$, $\varepsilon^2=0$ | the dual numbers |
+| $\mathbb{C}^{\mathrm{dln}}=\mathbb{R}[\varepsilon]$, $\varepsilon^2=0$ | the dual numbers |
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | the biquaternions |
 | $\mathbb{B}^{\mathrm{spl}}=\mathbb{C}^{\mathrm{spl}}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{H}\times\mathbb{H}$ | the split biquaternions |
 | $\Pi_\pm=\frac12(1\pm j)$ | the two nontrivial idempotents of $\mathbb{C}^{\mathrm{spl}}$ |

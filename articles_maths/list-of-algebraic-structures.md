@@ -39,7 +39,7 @@ A **ring** is an abelian group carrying a second operation, a multiplication tha
 | Field | a commutative ring with $1 \neq 0$ in which every nonzero element is invertible | *Fields*, §1 |
 | Non-example: $\mathbb{Z}$ | an integral domain that fails the field axiom: $2$ has no inverse | *The Integers* (Part V); *Rings* |
 | Non-example: the split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ | a commutative ring that fails the domain axiom: $(1+j)(1-j) = 0$ | *Examples of Rings and Fields* |
-| Non-example: the dual numbers $\mathbb{C}^{\mathrm{dua}}$ | a commutative ring that fails the domain axiom: $\varepsilon^2 = 0$ | *Examples of Rings and Fields* |
+| Non-example: the dual numbers $\mathbb{C}^{\mathrm{dln}}$ | a commutative ring that fails the domain axiom: $\varepsilon^2 = 0$ | *Examples of Rings and Fields* |
 | Non-example: the matrix ring $M_2(\mathbb{R})$ | a ring that fails commutativity and fails inverses for nonzero elements | *Examples of Algebras* |
 | Non-example: the quaternions $\mathbb{H}$ | a division ring that fails commutativity, hence is not a field | *Division Algebras* |
 
@@ -112,7 +112,7 @@ The article denotes its objects by name; the symbols that appear in the tables a
 |---|---|
 | $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$ | the naturals, the integers, the rationals, the reals |
 | $\mathbb{C}^{\mathrm{spl}}$ | the split-complex numbers, unit $j$, $j^2 = +1$ |
-| $\mathbb{C}^{\mathrm{dua}}$ | the dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dln}}$ | the dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$ |
 | $\mathbb{H}$ | the real quaternions |
 | $\mathbb{O}$ | the octonions |
 | $S_n$ | the symmetric group on $n$ letters |

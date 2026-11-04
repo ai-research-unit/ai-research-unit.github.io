@@ -35,7 +35,7 @@ The associative algebras of the corpus are the field itself, the matrix algebras
 | Group algebra $k[G]$ | dimension $|G|$; centre spanned by the conjugacy-class sums; the augmentation ideal is nontrivial | *Group Algebras* |
 | Quaternions $\mathbb{H}$ | dimension $4$ over $\mathbb{R}$; centre $\mathbb{R}$; no nontrivial ideals; division algebra | *Quaternion Algebra* |
 | Split-complex numbers $\mathbb{C}^{\mathrm{spl}}$ | dimension $2$; centre the whole algebra; the ideals $(1 \pm t)$; not a field | *Split-Complex Algebra* |
-| Dual numbers $\mathbb{C}^{\mathrm{dua}}$ | dimension $2$; centre the whole algebra; the nilpotent ideal $(\varepsilon)$; local | *Dual Numbers Algebra* |
+| Dual numbers $\mathbb{C}^{\mathrm{dln}}$ | dimension $2$; centre the whole algebra; the nilpotent ideal $(\varepsilon)$; local | *Dual Numbers Algebra* |
 | Biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $4$ over $\mathbb{C}$; centre $\mathbb{C}$; isomorphic to $M_2(\mathbb{C})$; simple | *The Biquaternion Algebra* |
 | Central simple algebra | finite-dimensional, centre the field, no nontrivial two-sided ideals | *Central Simple Algebras and the Brauer Group* |
 | Non-example: $\mathbb{C}^{\mathrm{spl}}$ as a field | fails: it has zero divisors $(1-t)(1+t)=0$ | *Split-Complex Algebra* |
@@ -107,7 +107,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $\mathbb{Z}$ | the integers, as in the $\mathbb{Z}/2$-grading of a Clifford algebra |
 | $\operatorname{Br}(F)$ | Brauer group |
 | $k[G]$ | group algebra |
-| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$, $\mathbb{H}$, $\mathbb{O}$, $\mathbb{B}$ | real, complex, split-complex, dual, quaternion, octonion and biquaternion algebras |
+| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{O}$, $\mathbb{B}$ | real, complex, split-complex, dual, quaternion, octonion and biquaternion algebras |
 | $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | split biquaternions, of real dimension $8$ |
 
 ## Further Reading

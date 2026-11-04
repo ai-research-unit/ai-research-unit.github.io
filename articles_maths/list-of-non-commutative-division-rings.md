@@ -86,7 +86,7 @@ The Cayley–Dickson doubling chain loses commutativity at the quaternions and a
 | $M_n(k)$, $n \geq 2$ | the matrix units $E_{11}E_{22} = 0$ are zero divisors | *Matrix Algebras* |
 | $\mathbb{B}$, the biquaternions | zero divisors; not every nonzero element is invertible | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
 | $\mathbb{B}^{\mathrm{spl}}$, the split-biquaternions | the idempotents $\tilde\Pi_{1,2}$ satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ | *Split-Biquaternion Zero Divisors* |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$, $\mathbb{Z}/6\mathbb{Z}$ | commutative, with zero divisors; not even domains | *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Modular Arithmetic and the Ring of Residues* |
+| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{Z}/6\mathbb{Z}$ | commutative, with zero divisors; not even domains | *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{O}$, $\mathbb{S}$ | normed division algebras whose multiplication is not associative, so not rings | *Division Algebras* |
 | the group ring $k[G]$ | has zero divisors whenever $G$ has torsion | *Group Algebras* |
 | $k[G]$ with $G$ torsion-free and nontrivial | a domain, but not every nonzero element is a unit: $g - 1$ has augmentation $0$ | *Non-Commutative Domains* |

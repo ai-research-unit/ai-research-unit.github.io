@@ -6,7 +6,7 @@
 
 Bhabha scattering is the workhorse of electron–positron colliders: because its small-angle cross section is large, exactly calculable and dominated by the $1/t^2$ photon propagator, it is used as the **luminosity monitor** of the machine. This is the counterpart of the companion article *Møller Scattering in Biquaternionic Form*, and the biquaternion interpretation is largely shared: the amplitude is a product of material-sector currents joined by the framework's photon propagator, and the two structural features the framework owns are the **fermion sign** — here appearing as the relative sign between exchange and annihilation — and **crossing symmetry**, which is the framework's charge conjugation $\mathcal C$, the real structure that pairs an element with its conjugate.
 
-The article is organised as follows. The next section sets up the kinematics, the frame cells and the equation of the external states, then the two amplitudes with their relative sign. The section after that gives the spin sum, the traces and the cross section with its small-angle behaviour. Then comes the crossing relation to Møller, with the exact check, followed by the biquaternion interpretation, including the annihilation channel's relation to charge conjugation and to bound-state physics, and then the open questions. A closing dictionary carries the five cells into the display of the older literature; nothing before it needs that display. The summary, the notation table and the literature close the article.
+The article is organised as follows. The next section sets up the kinematics, the frame cells and the equations of the external states, then the two amplitudes with their relative sign. The section after that gives the spin sum, the traces and the cross section with its small-angle behaviour. Then comes the crossing relation to Møller, with the exact check, followed by the biquaternion interpretation, including the annihilation channel's relation to charge conjugation and to bound-state physics, and then the open questions. A closing dictionary carries the five cells into the display of the older literature; nothing before it needs that display. The summary, the notation table and the literature close the article.
 
 ## The Process and Its Two Amplitudes
 
@@ -105,9 +105,9 @@ $$
 
 with $\bar F$ the coefficient conjugate. The derivative acts on the left, the mass acts on the right by the unit $-i\vec e_z$, and the conjugation supplies the antilinear part. The two forms are different operators: the pair is linear in the field, the two-sided form is antilinear in $F$ because the mass term carries $\bar F$.
 
-The subscript on an element takes the two values $L$ and $R$, and the conjugation takes each letter to the other. The mass term carries $\bar F$ and is therefore the only term that relates the two parts: the conjugation plays the part of the second field of the pair, and the unit $-i\vec e_z$ the part of the mass. That is why the two-sided reading is one equation for one element rather than a pair, and why it is antilinear.
+The subscript on an element takes the two values $L$ and $R$: the value of $\mathsf{V}^{\mathrm{vol}}$ is $-1$ on the $L$ part and $+1$ on the $R$ part. The conjugation takes each letter to the other, because it sends $-i\vec e_z$ to $+i\vec e_z$. The mass term carries $\bar F$ and is therefore the only term that relates the two parts: the conjugation plays the part of the second field of the pair, and the unit $-i\vec e_z$ the part of the mass. That is why the two-sided reading is one equation for one element rather than a pair, and why it is antilinear.
 
-**The equation of the external states.** In the frame cells the two states satisfy
+**The frame-cell reading.** In the frame cells the two states satisfy
 
 $$
 P(p)\,\tilde u(p)=m\,\tilde u(p),
@@ -115,7 +115,7 @@ P(p)\,\tilde u(p)=m\,\tilde u(p),
 P(k)\,\tilde v(k)=-m\,\tilde v(k),
 $$
 
-the momentum cell acting on the element by the action that defines it. The two lines are distinguished by the sign of the mass term, because $\tilde u$ carries the positive-frequency factor $e^{-ip\cdot x}$ and $\tilde v$ the negative-frequency factor $e^{+ip\cdot x}$; the opposite sign is the crossing, not a second mass. The mass couples the two parts of each state. This is not the two-sided equation: there the mass acts on the right by a unit and the field is conjugated, here the mass is the central scalar $m$ and the field is not.
+with the momentum cell acting on the element as defined. The two lines are distinguished by the sign of the mass term, because $\tilde u$ carries the positive-frequency factor $e^{-ip\cdot x}$ and $\tilde v$ the negative-frequency factor $e^{+ip\cdot x}$; the opposite sign is the crossing, not a second mass. This is not the two-sided equation: there the mass acts on the right by a unit and the field is conjugated, here the mass is the central scalar $m$ and the field is not.
 
 ### The two amplitudes
 
@@ -127,16 +127,16 @@ J_t(a,b):=\mathrm{Sc}\bigl(a^{*}b\bigr),
 J_k(a,b):=\mathrm{Sc}\bigl(a^{*}\,\vec e_k\,b\,\vec e_z\bigr)\quad(k=1,2,3),
 $$
 
-with $a$ the element of the outgoing line, $b$ that of the incoming one, and $\mathrm{Sc}$ the scalar part. The time component is the Hermitian pairing of the two elements and the three spatial components carry one unit on each side, so no factor $i$ survives: the factor that the frame cell carries and the factor that the pairing carries spend each other. Every one of the four is a single complex number, and the brackets below are ordinary products.
+with $a$ the element of the outgoing line and $b$ that of the incoming one. The time component is the Hermitian form of *Product and Form Conventions* read with its two arguments exchanged, $J_t(a,b)=\langle b,a\rangle_{*}$. The four numbers are the frame-cell bilinears reduced to the algebra, a derived form: the central $i$ of the cell cancels the central $i$ of the adjoint, and the product $\vec e_y\vec e_x=-\vec e_z$ turns the right multiplier of a spatial cell into $\vec e_z$. Every one of the four is a single complex number, and the brackets below are ordinary products.
 
 Two currents contract with the sign vector,
 
 $$
-J(a,b)\cdot J(c,d)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\,J_\mu(a,b)\,J_\mu(c,d),
+J(a,b)\cdot J(c,d)=\sum_{\mu\in\{t,1,2,3\}}\varepsilon_\mu\,J_\mu(a,b)\,J_\mu(c,d),
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
-the time component entering with $+$ and the three spatial ones with $-$. The positron line uses the same four numbers with the order of the two elements reversed, $J_\mu(k,k_2)$.
+the time component entering with $+$ and the three spatial ones with $-$. The positron line uses the same four numbers with the order of the two elements reversed, $J_\mu(k,k_2)$, because there the conjugated element is the incoming one.
 
 With this notation the $t$-channel and $s$-channel amplitudes are
 
@@ -156,7 +156,7 @@ The first term is the **scattering** diagram, with coefficient $-e^2$ and denomi
 
 ## The Spin Sum and the Cross Section
 
-Averaging over the two states of each incoming particle and summing over the two of each outgoing particle costs the factor $\tfrac14$. The sum over the two states of a particle is the standard one, and in the massless limit it contributes the momentum cell: with $m=0$ the four external pairs give the four momentum cells, and the cross section below is the massless one. The squared amplitude is then
+Averaging over the two states of each incoming particle and summing over the two of each outgoing particle costs the factor $\tfrac14$. The sum over the two states of a line is the standard completeness relation, and in the massless limit it is the momentum cell that expresses it: $P(p)$ is then nilpotent of rank two, so the two states of the line exhaust it. The squared amplitude is then
 
 $$
 \frac14\sum_{\mathrm{states}}|\mathcal M|^2
@@ -184,13 +184,13 @@ $$
 
 where $\varepsilon=(1,-1,-1,-1)$ is the sign vector and $\operatorname{Tr}$ is the trace of the action on the four-dimensional complex space $\mathbb{B}$.
 
-Each factor is a cell, and a product of cells is a cell: the action $X\mapsto aXb$ followed by $X\mapsto cXd$ is $X\mapsto acXdb$, so the left multipliers multiply in order and the right multipliers in reverse. The trace of a cell is four times the product of the scalar parts of its two multipliers,
+Each factor is a cell, and a product of cells is a cell: the action $X\mapsto aXb$ followed by $X\mapsto cXd$ is $X\mapsto caXbd$, a derived form, so the left multipliers multiply in the order reverse to the order of application and the right multipliers in that order. The trace of a cell is four times the product of the scalar parts of its two multipliers,
 
 $$
 \operatorname{Tr}\bigl[X\mapsto aXb\bigr]=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b),
 $$
 
-a derived form obtained by expanding $aXb$ on the four units and reading the diagonal. Every one of the three combinations is therefore a finite sum of products of scalar parts, and the massless on-shell conditions $P(p)^2=P(p_2)^2=P(k)^2=P(k_2)^2=0$ reduce each sum to a monomial in the invariants. The three results are
+a derived form obtained by expanding $aXb$ on the four units and reading the diagonal. Every one of the three combinations is therefore a finite sum of products of scalar parts, and the massless on-shell conditions $P(p)^2=P(p_2)^2=P(k)^2=P(k_2)^2=0$ reduce each sum to a quadratic in the invariants. The three results are
 
 $$
 \frac14 T_t=2(s^2+u^2),\qquad
@@ -381,7 +381,7 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $\mathsf{V}^{\mathrm{vol}}: X\mapsto -iX\vec e_z$ | Volume cell of the frame |
 | $P(p): X\mapsto p_0iX\vec e_x-\sum_kp_ki\vec e_kX\vec e_y$ | Momentum cell; $P(p)^2=p_0^2-\vec p^2$ |
 | $J_\mu(a,b)$ | Current of a line, $J_t=\mathrm{Sc}(a^*b)$, $J_k=\mathrm{Sc}(a^*\vec e_kb\vec e_z)$ |
-| $J(a,b)\cdot J(c,d)$ | Contraction with the sign vector, $\sum_\mu\varepsilon_\mu J_\mu J_\mu$ |
+| $J(a,b)\cdot J(c,d)$ | Contraction with the sign vector, $\sum_\mu\varepsilon_\mu J_\mu(a,b)J_\mu(c,d)$ |
 | $\tilde u(p)$, $\tilde v(k)$ | Electron and positron state elements |
 | $\mathcal M_t,\mathcal M_s$ | Exchange and annihilation amplitudes |
 | $\mathcal M=\mathcal M_t+\mathcal M_s$ | Total amplitude with the relative sign |
@@ -397,7 +397,7 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. J. Bhabha, "The scattering of positrons by electrons with exchange on Dirac's theory of the positron," *Proceedings of the Royal Society A* **154** (1936) 195–206, for the original derivation.
-- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the spinor algebra of electron–positron scattering.
+- J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard treatment of electron–positron scattering.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the cross section, crossing symmetry and the annihilation channel.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the trace identities and the relative sign of the exchange and annihilation diagrams.
 - The companion articles of this series: [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html), [The Relativistic Two-Body Problem in Biquaternionic Form](the-relativistic-two-body-problem-in-biquaternionic-form.html), [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html), [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html), [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html), [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), and [Real Spinors and Reality Conditions with Inner Conjugation](../articles_maths/real-spinors-and-reality-conditions-with-inner-conjugation.html).

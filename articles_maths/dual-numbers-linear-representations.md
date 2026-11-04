@@ -6,16 +6,16 @@ This article introduces the representation theory of the dual number algebra. Th
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The article is stated for an arbitrary commutative ring $R$ in which $2$ is invertible, and no finiteness assumption is made unless stated.
 
-Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dua}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The notation is chosen so that the two do not collide. The unit of $\mathbb{C}^{\mathrm{dua}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
+Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dln}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The notation is chosen so that the two do not collide. The unit of $\mathbb{C}^{\mathrm{dln}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.
 
-## Representations of $\mathbb{C}^{\mathrm{dua}}$
+## Representations of $\mathbb{C}^{\mathrm{dln}}$
 
 ### Definition
 
-A **representation** of $\mathbb{C}^{\mathrm{dua}}$ is an $R$-module $V$ together with a bilinear map
+A **representation** of $\mathbb{C}^{\mathrm{dln}}$ is an $R$-module $V$ together with a bilinear map
 
 $$
-\rho : \mathbb{C}^{\mathrm{dua}} \times V \to V, \qquad \rho(Q, v) = Q \cdot v,
+\rho : \mathbb{C}^{\mathrm{dln}} \times V \to V, \qquad \rho(Q, v) = Q \cdot v,
 $$
 
 satisfying
@@ -27,10 +27,10 @@ $$
 Equivalently, a representation is an algebra homomorphism
 
 $$
-\rho : \mathbb{C}^{\mathrm{dua}} \to \operatorname{End}_R(V).
+\rho : \mathbb{C}^{\mathrm{dln}} \to \operatorname{End}_R(V).
 $$
 
-Since $\mathbb{C}^{\mathrm{dua}}$ is commutative, the image of $\rho$ is a commutative subalgebra of $\operatorname{End}_R(V)$.
+Since $\mathbb{C}^{\mathrm{dln}}$ is commutative, the image of $\rho$ is a commutative subalgebra of $\operatorname{End}_R(V)$.
 
 ### The Action of the Nilpotent
 
@@ -46,23 +46,23 @@ $$
 E^2 = 0.
 $$
 
-So a representation of $\mathbb{C}^{\mathrm{dua}}$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $q + \varepsilon q'$ is
+So a representation of $\mathbb{C}^{\mathrm{dln}}$ is the same thing as an $R$-module $V$ together with a nilpotent endomorphism $E$ of index at most two. The action of a general dual number $q + \varepsilon q'$ is
 
 $$
 (q + \varepsilon q') \cdot v = q v + q' E(v).
 $$
 
-This is the fundamental structural fact about representations of $\mathbb{C}^{\mathrm{dua}}$: they are determined by a single square-zero endomorphism.
+This is the fundamental structural fact about representations of $\mathbb{C}^{\mathrm{dln}}$: they are determined by a single square-zero endomorphism.
 
 ### The Regular Representation
 
-The **regular representation** of $\mathbb{C}^{\mathrm{dua}}$ is $\mathbb{C}^{\mathrm{dua}}$ acting on itself by left multiplication:
+The **regular representation** of $\mathbb{C}^{\mathrm{dln}}$ is $\mathbb{C}^{\mathrm{dln}}$ acting on itself by left multiplication:
 
 $$
-\rho^{\mathrm{reg}}(Q_1) Q_2 = Q_1 Q_2, \qquad Q_1, Q_2 \in \mathbb{C}^{\mathrm{dua}}.
+\rho^{\mathrm{reg}}(Q_1) Q_2 = Q_1 Q_2, \qquad Q_1, Q_2 \in \mathbb{C}^{\mathrm{dln}}.
 $$
 
-This is the representation $\rho^{\mathrm{reg}} : \mathbb{C}^{\mathrm{dua}} \to \operatorname{End}_R(\mathbb{C}^{\mathrm{dua}})$ given by $\rho^{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{C}^{\mathrm{dua}}$ on a free $R$-module of rank two. The nilpotent $E = \rho^{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $q + \varepsilon q'$ to $q \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.
+This is the representation $\rho^{\mathrm{reg}} : \mathbb{C}^{\mathrm{dln}} \to \operatorname{End}_R(\mathbb{C}^{\mathrm{dln}})$ given by $\rho^{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{C}^{\mathrm{dln}}$ on a free $R$-module of rank two. The nilpotent $E = \rho^{\mathrm{reg}}(\varepsilon)$ is the endomorphism that sends $q + \varepsilon q'$ to $q \varepsilon$, i.e. it kills the infinitesimal part and maps the real part to the infinitesimal submodule.
 
 ### The Trivial Representation
 
@@ -82,13 +82,13 @@ $$
 \rho_{\mathrm{std}}(q + \varepsilon q') = q.
 $$
 
-This coincides with the trivial representation. In the dual case, there is no non-trivial one-dimensional representation, because every algebra homomorphism $\mathbb{C}^{\mathrm{dua}} \to R$ must send $\varepsilon$ to an element $c \in R$ with $c^2 = 0$, and the only such element in a reduced ring is $c = 0$. So the trivial representation is the only one-dimensional representation.
+This coincides with the trivial representation. In the dual case, there is no non-trivial one-dimensional representation, because every algebra homomorphism $\mathbb{C}^{\mathrm{dln}} \to R$ must send $\varepsilon$ to an element $c \in R$ with $c^2 = 0$, and the only such element in a reduced ring is $c = 0$. So the trivial representation is the only one-dimensional representation.
 
 ## Classification
 
 ### The Classification Theorem
 
-**Theorem.** Let $V$ be an $R$-module. The representations of $\mathbb{C}^{\mathrm{dua}}$ on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, via the correspondence
+**Theorem.** Let $V$ be an $R$-module. The representations of $\mathbb{C}^{\mathrm{dln}}$ on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, via the correspondence
 
 $$
 \boxed{\;
@@ -110,7 +110,7 @@ $$
 
 since $E^2 = 0$. The two agree.
 
-So the representation theory of $\mathbb{C}^{\mathrm{dua}}$ is equivalent to the theory of square-zero endomorphisms. This is the reason the representation theory is both simple and rich: simple because the endomorphism is square-zero, rich because there are many such endomorphisms.
+So the representation theory of $\mathbb{C}^{\mathrm{dln}}$ is equivalent to the theory of square-zero endomorphisms. This is the reason the representation theory is both simple and rich: simple because the endomorphism is square-zero, rich because there are many such endomorphisms.
 
 ### Direct Sums
 
@@ -124,7 +124,7 @@ It satisfies $(E \oplus F)^2 = E^2 \oplus F^2 = 0$, so it is again a representat
 
 ### Irreducible Representations
 
-**Theorem.** The only irreducible representation of $\mathbb{C}^{\mathrm{dua}}$ is the trivial representation on $R$.
+**Theorem.** The only irreducible representation of $\mathbb{C}^{\mathrm{dln}}$ is the trivial representation on $R$.
 
 **Proof.** Let $(V, E)$ be irreducible. If $E \neq 0$, then $\ker E$ is a non-zero proper subrepresentation, because $E^2 = 0$ implies $\ker E \neq 0$ and $\operatorname{im} E \subseteq \ker E$ implies $\ker E \neq V$ when $E \neq 0$. This contradicts irreducibility. So $E = 0$, and the representation is the trivial representation on $V$. For it to be irreducible, $V$ must be one-dimensional over $R$ when $R$ is a field.
 
@@ -134,7 +134,7 @@ So the irreducible representations are exactly the trivial ones, indexed by the 
 
 A representation $(V, E)$ is **indecomposable** if it cannot be written as a direct sum of two non-zero subrepresentations.
 
-**Theorem.** Let $R$ be a field. The indecomposable representations of $\mathbb{C}^{\mathrm{dua}}$ are, up to isomorphism:
+**Theorem.** Let $R$ be a field. The indecomposable representations of $\mathbb{C}^{\mathrm{dln}}$ are, up to isomorphism:
 
 - The trivial representation on $R$ (with $E = 0$).
 - The regular representation on $R^2$ (with $E$ the nilpotent Jordan block of size two).
@@ -145,7 +145,7 @@ So over a field, there are exactly two indecomposable representations, and the c
 
 ### The Jordan Form
 
-Over a field, a square-zero endomorphism $E$ has a Jordan form consisting of blocks of size one (corresponding to the trivial representation) and blocks of size two (corresponding to the regular representation). So an arbitrary representation of $\mathbb{C}^{\mathrm{dua}}$ decomposes as
+Over a field, a square-zero endomorphism $E$ has a Jordan form consisting of blocks of size one (corresponding to the trivial representation) and blocks of size two (corresponding to the regular representation). So an arbitrary representation of $\mathbb{C}^{\mathrm{dln}}$ decomposes as
 
 $$
 \boxed{\;
@@ -159,9 +159,9 @@ This is the complete classification over a field: the representation is determin
 
 ## Schur's Lemma
 
-**Theorem (Schur).** Every $\mathbb{C}^{\mathrm{dua}}$-linear endomorphism of an irreducible representation of $\mathbb{C}^{\mathrm{dua}}$ is a scalar multiple of the identity.
+**Theorem (Schur).** Every $\mathbb{C}^{\mathrm{dln}}$-linear endomorphism of an irreducible representation of $\mathbb{C}^{\mathrm{dln}}$ is a scalar multiple of the identity.
 
-**Proof.** Let $(V, E)$ be irreducible and let $T : V \to V$ be $\mathbb{C}^{\mathrm{dua}}$-linear, i.e. $T E = E T$. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible and $E = 0$ on $V$, the only subrepresentations are $0$ and $V$. So $T$ is either zero or an isomorphism. In the second case, $T$ is an isomorphism of one-dimensional $R$-modules when $R$ is a field, hence multiplication by a non-zero scalar.
+**Proof.** Let $(V, E)$ be irreducible and let $T : V \to V$ be $\mathbb{C}^{\mathrm{dln}}$-linear, i.e. $T E = E T$. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible and $E = 0$ on $V$, the only subrepresentations are $0$ and $V$. So $T$ is either zero or an isomorphism. In the second case, $T$ is an isomorphism of one-dimensional $R$-modules when $R$ is a field, hence multiplication by a non-zero scalar.
 
 **Corollary.** The endomorphism ring of the trivial representation is $R$ itself.
 
@@ -171,23 +171,23 @@ $$
 \begin{pmatrix} a & 0 \\ b & a \end{pmatrix}, \qquad a, b \in R.
 $$
 
-This is a two-dimensional $R$-algebra, isomorphic to $\mathbb{C}^{\mathrm{dua}}$ itself. So the endomorphism ring of the regular representation is $\mathbb{C}^{\mathrm{dua}}$.
+This is a two-dimensional $R$-algebra, isomorphic to $\mathbb{C}^{\mathrm{dln}}$ itself. So the endomorphism ring of the regular representation is $\mathbb{C}^{\mathrm{dln}}$.
 
 ## The Representation Ring
 
 ### Definition
 
-The **representation ring** $R(\mathbb{C}^{\mathrm{dua}})$ is the Grothendieck ring of finite-dimensional representations of $\mathbb{C}^{\mathrm{dua}}$ over a field. As an abelian group, it is generated by the isomorphism classes of the indecomposable representations:
+The **representation ring** $R(\mathbb{C}^{\mathrm{dln}})$ is the Grothendieck ring of finite-dimensional representations of $\mathbb{C}^{\mathrm{dln}}$ over a field. As an abelian group, it is generated by the isomorphism classes of the indecomposable representations:
 
 $$
-R(\mathbb{C}^{\mathrm{dua}}) \cong \mathbb{Z} \oplus \mathbb{Z},
+R(\mathbb{C}^{\mathrm{dln}}) \cong \mathbb{Z} \oplus \mathbb{Z},
 $$
 
 with generators $[\rho_{\mathrm{triv}}]$ and $[\rho^{\mathrm{reg}}]$, corresponding to the trivial representation and the regular representation.
 
 ### Ring Structure
 
-The product in $R(\mathbb{C}^{\mathrm{dua}})$ is given by the tensor product of representations:
+The product in $R(\mathbb{C}^{\mathrm{dln}})$ is given by the tensor product of representations:
 
 $$
 [V] \cdot [W] = [V \otimes W].
@@ -205,15 +205,15 @@ $$
 (E \otimes \mathrm{id}_W + \mathrm{id}_V \otimes F)^2 = E^2 \otimes \mathrm{id}_W + 2 E \otimes F + \mathrm{id}_V \otimes F^2 = 2 E \otimes F,
 $$
 
-which is zero only when $2 = 0$ or $E \otimes F = 0$. So the tensor product of two representations of $\mathbb{C}^{\mathrm{dua}}$ is not automatically a representation of $\mathbb{C}^{\mathrm{dua}}$, unless one of the factors is trivial.
+which is zero only when $2 = 0$ or $E \otimes F = 0$. So the tensor product of two representations of $\mathbb{C}^{\mathrm{dln}}$ is not automatically a representation of $\mathbb{C}^{\mathrm{dln}}$, unless one of the factors is trivial.
 
-**This is a key difference from the semisimple case.** For a semisimple algebra, the tensor product of two representations is again a representation, because the coproduct is an algebra homomorphism. For $\mathbb{C}^{\mathrm{dua}}$, the coproduct is not an algebra homomorphism, because $\varepsilon$ is not primitive: the diagonal map $\Delta(\varepsilon) = \varepsilon \otimes 1 + 1 \otimes \varepsilon$ satisfies
+**This is a key difference from the semisimple case.** For a semisimple algebra, the tensor product of two representations is again a representation, because the coproduct is an algebra homomorphism. For $\mathbb{C}^{\mathrm{dln}}$, the coproduct is not an algebra homomorphism, because $\varepsilon$ is not primitive: the diagonal map $\Delta(\varepsilon) = \varepsilon \otimes 1 + 1 \otimes \varepsilon$ satisfies
 
 $$
 \Delta(\varepsilon)^2 = 2 \varepsilon \otimes \varepsilon \neq 0.
 $$
 
-So $\mathbb{C}^{\mathrm{dua}}$ is not a Hopf algebra, and its representation category is not monoidal in the naive way. The tensor product is defined, but it is not a representation of $\mathbb{C}^{\mathrm{dua}}$ in general.
+So $\mathbb{C}^{\mathrm{dln}}$ is not a Hopf algebra, and its representation category is not monoidal in the naive way. The tensor product is defined, but it is not a representation of $\mathbb{C}^{\mathrm{dln}}$ in general.
 
 **The modified tensor product.** To obtain a monoidal structure, one uses a **deformation** of the coproduct, or one restricts to a subcategory of representations on which the tensor product is well-behaved. This is the starting point of the theory of **Hopf algebroids** and **quantum groups**, where the dual numbers appear as the simplest non-trivial example of a non-cocommutative or non-primitive structure.
 
@@ -255,39 +255,39 @@ $$
 T \circ E = F \circ T.
 $$
 
-The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(V, W)$.
+The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(V, W)$.
 
 ### Basic Properties
 
-**Composition.** If $T \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(V, U)$.
+**Composition.** If $T \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(V, U)$.
 
-**Schur's lemma.** If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(V, V) \cong R$.
+**Schur's lemma.** If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(V, V) \cong R$.
 
 **Dimension count over a field.** For $V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}$ and $W \cong R^{\oplus r} \oplus (R^2)^{\oplus s}$,
 
 $$
-\dim_R \operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(V, W) = pr + ps + qr + 2qs.
+\dim_R \operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(V, W) = pr + ps + qr + 2qs.
 $$
 
-The factor of $2$ comes from the endomorphisms of the regular representation, which form a two-dimensional algebra. The cross terms $ps$ and $qr$ come from the one-dimensional spaces $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(R, R^2)$ and $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(R^2, R)$, which are non-zero even though the two indecomposables are non-isomorphic: Schur's lemma constrains only homomorphisms between **irreducible** modules, and the regular representation is not irreducible.
+The factor of $2$ comes from the endomorphisms of the regular representation, which form a two-dimensional algebra. The cross terms $ps$ and $qr$ come from the one-dimensional spaces $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(R, R^2)$ and $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(R^2, R)$, which are non-zero even though the two indecomposables are non-isomorphic: Schur's lemma constrains only homomorphisms between **irreducible** modules, and the regular representation is not irreducible.
 
-**Proof.** A homomorphism is a block matrix with four types of blocks. The blocks $R^{\oplus p} \to R^{\oplus r}$ give $M_p(R)$, of dimension $pr$; the blocks $(R^2)^{\oplus q} \to (R^2)^{\oplus s}$ give matrices over $\operatorname{End}_{\mathbb{C}^{\mathrm{dua}}}(R^2) \cong \mathbb{C}^{\mathrm{dua}}$, of dimension $2qs$. For the cross blocks, $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(R, R^2) \cong \ker E \cong R$ (the image of the generator must lie in the kernel of $E$) and $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(R^2, R) \cong R$ (the map must vanish on the image of $E$), so those contribute $ps$ and $qr$.
+**Proof.** A homomorphism is a block matrix with four types of blocks. The blocks $R^{\oplus p} \to R^{\oplus r}$ give $M_p(R)$, of dimension $pr$; the blocks $(R^2)^{\oplus q} \to (R^2)^{\oplus s}$ give matrices over $\operatorname{End}_{\mathbb{C}^{\mathrm{dln}}}(R^2) \cong \mathbb{C}^{\mathrm{dln}}$, of dimension $2qs$. For the cross blocks, $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(R, R^2) \cong \ker E \cong R$ (the image of the generator must lie in the kernel of $E$) and $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(R^2, R) \cong R$ (the map must vanish on the image of $E$), so those contribute $ps$ and $qr$.
 
 ### The Endomorphism Ring
 
-The **endomorphism ring** of a representation $(V, E)$ is $\operatorname{End}_{\mathbb{C}^{\mathrm{dua}}}(V) = \operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(V, V)$. For $V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}$ over a field it has dimension
+The **endomorphism ring** of a representation $(V, E)$ is $\operatorname{End}_{\mathbb{C}^{\mathrm{dln}}}(V) = \operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(V, V)$. For $V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}$ over a field it has dimension
 
 $$
-\dim_R \operatorname{End}_{\mathbb{C}^{\mathrm{dua}}}(V) = p^2 + 2pq + 2q^2.
+\dim_R \operatorname{End}_{\mathbb{C}^{\mathrm{dln}}}(V) = p^2 + 2pq + 2q^2.
 $$
 
-It contains $M_p(R)$ (acting on the trivial summands) and $M_q(\mathbb{C}^{\mathrm{dua}})$ (acting on the regular summands) as subalgebras, but it is **not** their direct sum when $n, m > 0$: the cross-homomorphisms contribute the extra $2pq$ dimensions. This is not semisimple when $q > 0$, because $\mathbb{C}^{\mathrm{dua}}$ is not semisimple.
+It contains $M_p(R)$ (acting on the trivial summands) and $M_q(\mathbb{C}^{\mathrm{dln}})$ (acting on the regular summands) as subalgebras, but it is **not** their direct sum when $n, m > 0$: the cross-homomorphisms contribute the extra $2pq$ dimensions. This is not semisimple when $q > 0$, because $\mathbb{C}^{\mathrm{dln}}$ is not semisimple.
 
 ## The Category of Representations
 
 ### The Abelian Category
 
-The representations of $\mathbb{C}^{\mathrm{dua}}$ form an abelian category $\mathrm{Rep}(\mathbb{C}^{\mathrm{dua}})$. The category is not semisimple when $\mathbb{C}^{\mathrm{dua}}$ is not semisimple, i.e. when $\varepsilon \neq 0$. So there are non-split short exact sequences.
+The representations of $\mathbb{C}^{\mathrm{dln}}$ form an abelian category $\mathrm{Rep}(\mathbb{C}^{\mathrm{dln}})$. The category is not semisimple when $\mathbb{C}^{\mathrm{dln}}$ is not semisimple, i.e. when $\varepsilon \neq 0$. So there are non-split short exact sequences.
 
 ### The Standard Non-Split Extension
 
@@ -299,59 +299,59 @@ $$
 
 where the first map is the inclusion of $\ker E$ and the second is the quotient by $\operatorname{im} E$. This sequence does not split, because the regular representation is not the direct sum of two copies of the trivial representation.
 
-The extension class of this sequence is the generator of $\operatorname{Ext}^1_{\mathbb{C}^{\mathrm{dua}}}(\rho_{\mathrm{triv}}, \rho_{\mathrm{triv}}) \cong R$. This is the algebraic content of the nilpotence of $\varepsilon$: the extension is non-trivial precisely because $\varepsilon^2 = 0$ but $\varepsilon \neq 0$.
+The extension class of this sequence is the generator of $\operatorname{Ext}^1_{\mathbb{C}^{\mathrm{dln}}}(\rho_{\mathrm{triv}}, \rho_{\mathrm{triv}}) \cong R$. This is the algebraic content of the nilpotence of $\varepsilon$: the extension is non-trivial precisely because $\varepsilon^2 = 0$ but $\varepsilon \neq 0$.
 
 ### The Ext Algebra
 
-The **Ext algebra** of $\mathbb{C}^{\mathrm{dua}}$ is
+The **Ext algebra** of $\mathbb{C}^{\mathrm{dln}}$ is
 
 $$
 \boxed{\;
-\operatorname{Ext}^\bullet_{\mathbb{C}^{\mathrm{dua}}}(R, R) \cong R[x]
+\operatorname{Ext}^\bullet_{\mathbb{C}^{\mathrm{dln}}}(R, R) \cong R[x]
 \;},
 $$
 
-the polynomial algebra on one generator of degree one. So $\operatorname{Ext}^i_{\mathbb{C}^{\mathrm{dua}}}(R, R) \cong R$ in every degree $i \geq 0$: the minimal free resolution $\cdots \to \mathbb{C}^{\mathrm{dua}} \xrightarrow{\varepsilon} \mathbb{C}^{\mathrm{dua}} \xrightarrow{\varepsilon} \mathbb{C}^{\mathrm{dua}} \to R \to 0$ has one free module in each degree, and after applying $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(-, R)$ all the differentials vanish because $\varepsilon$ acts as zero on $R$. This is a general phenomenon: for a local ring with maximal ideal $\mathrm{M}$ satisfying $\mathrm{M}^2 = 0$, the Ext algebra of the residue field is the Koszul dual, which is the symmetric algebra on the dual of $\mathrm{M}$ (untruncated).
+the polynomial algebra on one generator of degree one. So $\operatorname{Ext}^i_{\mathbb{C}^{\mathrm{dln}}}(R, R) \cong R$ in every degree $i \geq 0$: the minimal free resolution $\cdots \to \mathbb{C}^{\mathrm{dln}} \xrightarrow{\varepsilon} \mathbb{C}^{\mathrm{dln}} \xrightarrow{\varepsilon} \mathbb{C}^{\mathrm{dln}} \to R \to 0$ has one free module in each degree, and after applying $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(-, R)$ all the differentials vanish because $\varepsilon$ acts as zero on $R$. This is a general phenomenon: for a local ring with maximal ideal $\mathrm{M}$ satisfying $\mathrm{M}^2 = 0$, the Ext algebra of the residue field is the Koszul dual, which is the symmetric algebra on the dual of $\mathrm{M}$ (untruncated).
 
-So the representation theory of $\mathbb{C}^{\mathrm{dua}}$ is controlled by the Ext algebra, and the nilpotence of $\varepsilon$ is the source of the non-semisimplicity.
+So the representation theory of $\mathbb{C}^{\mathrm{dln}}$ is controlled by the Ext algebra, and the nilpotence of $\varepsilon$ is the source of the non-semisimplicity.
 
 ## Comparison with the Split Complex Case
 
-The representation theory of $\mathbb{C}^{\mathrm{dua}}$ differs from that of the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ in several ways.
+The representation theory of $\mathbb{C}^{\mathrm{dln}}$ differs from that of the split complex algebra $\mathbb{C}^{\mathrm{spl}}$ in several ways.
 
 **Idempotents versus nilpotents.** The split complex algebra has two non-trivial idempotents $\Pi_1$ and $\Pi_2$, which give two one-dimensional representations. The dual algebra has no non-trivial idempotents, and the only irreducible representation is the trivial one.
 
 **Semisimplicity.** The split complex algebra over a field is isomorphic to $F \oplus F$, which is semisimple. Its representations are direct sums of copies of the two irreducible representations. Over a field the dual algebra is local, with nilpotent maximal ideal, and its representations are not semisimple in general.
 
-**Number of indecomposables.** The split complex algebra has two indecomposable representations (the two one-dimensional ones). The dual algebra has two indecomposable representations (the trivial one and the regular one). So both have two, but the structure is different: for $\mathbb{C}^{\mathrm{spl}}$, the two are irreducible; for $\mathbb{C}^{\mathrm{dua}}$, only one is irreducible, and the other is a non-split extension.
+**Number of indecomposables.** The split complex algebra has two indecomposable representations (the two one-dimensional ones). The dual algebra has two indecomposable representations (the trivial one and the regular one). So both have two, but the structure is different: for $\mathbb{C}^{\mathrm{spl}}$, the two are irreducible; for $\mathbb{C}^{\mathrm{dln}}$, only one is irreducible, and the other is a non-split extension.
 
 **Tensor products.** The split complex algebra is a Hopf algebra with the componentwise coproduct, and the tensor product of two representations is again a representation. The dual algebra is not a Hopf algebra with the primitive coproduct, because $\varepsilon$ is not primitive. So the tensor product is not a representation in general.
 
-**The representation ring.** For $\mathbb{C}^{\mathrm{spl}}$, the representation ring is $\mathbb{Z} \oplus \mathbb{Z}$, with the two irreducibles as generators, and the multiplication is componentwise. For $\mathbb{C}^{\mathrm{dua}}$, the representation ring is also $\mathbb{Z} \oplus \mathbb{Z}$, but the multiplication is not defined in the same way, because the tensor product of two non-trivial representations is not a representation.
+**The representation ring.** For $\mathbb{C}^{\mathrm{spl}}$, the representation ring is $\mathbb{Z} \oplus \mathbb{Z}$, with the two irreducibles as generators, and the multiplication is componentwise. For $\mathbb{C}^{\mathrm{dln}}$, the representation ring is also $\mathbb{Z} \oplus \mathbb{Z}$, but the multiplication is not defined in the same way, because the tensor product of two non-trivial representations is not a representation.
 
 ## Summary
 
-A representation of $\mathbb{C}^{\mathrm{dua}}$ is an $R$-module $V$ together with a bilinear action of the algebra on it, equivalently a unital algebra homomorphism $\mathbb{C}^{\mathrm{dua}} \to \operatorname{End}_R(V)$. The classification reduces the theory to linear algebra: the representations on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, the representation being recovered from $E$ as the action of $\varepsilon$.
+A representation of $\mathbb{C}^{\mathrm{dln}}$ is an $R$-module $V$ together with a bilinear action of the algebra on it, equivalently a unital algebra homomorphism $\mathbb{C}^{\mathrm{dln}} \to \operatorname{End}_R(V)$. The classification reduces the theory to linear algebra: the representations on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, the representation being recovered from $E$ as the action of $\varepsilon$.
 
-The theory is not semisimple. Over a field, because $\mathbb{C}^{\mathrm{dua}}$ is a local ring with nilpotent maximal ideal rather than a field, the category of representations is abelian but not semisimple, and the indecomposable representations are not the irreducible ones. Schur's lemma still holds, so an endomorphism of an irreducible representation is a scalar multiple of the identity, while the classification of the indecomposables is governed by the Jordan structure of the nilpotent $E$.
+The theory is not semisimple. Over a field, because $\mathbb{C}^{\mathrm{dln}}$ is a local ring with nilpotent maximal ideal rather than a field, the category of representations is abelian but not semisimple, and the indecomposable representations are not the irreducible ones. Schur's lemma still holds, so an endomorphism of an irreducible representation is a scalar multiple of the identity, while the classification of the indecomposables is governed by the Jordan structure of the nilpotent $E$.
 
-The article also records the representation ring $R(\mathbb{C}^{\mathrm{dua}})$, the dual or contragredient representation on $V^*$, and the homomorphisms, the $R$-linear maps $T$ with $T \circ E = F \circ T$. The final section compares the theory with that of the split complex algebra, where the two nontrivial idempotents take the place of the nilpotent and the algebra is correspondingly decomposable.
+The article also records the representation ring $R(\mathbb{C}^{\mathrm{dln}})$, the dual or contragredient representation on $V^*$, and the homomorphisms, the $R$-linear maps $T$ with $T \circ E = F \circ T$. The final section compares the theory with that of the split complex algebra, where the two nontrivial idempotents take the place of the nilpotent and the algebra is correspondingly decomposable.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dua}}$ | Dual number algebra |
+| $\mathbb{C}^{\mathrm{dln}}$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
 | $Q = q + \varepsilon q'$ | General dual number |
 | $V$ | Representation space |
 | $E = \rho(\varepsilon)$ | Square-zero endomorphism |
 | $\rho^{\mathrm{reg}}$ | Regular representation |
 | $\rho_{\mathrm{triv}}$ | Trivial representation |
-| $\operatorname{End}_{\mathbb{C}^{\mathrm{dua}}}(V)$ | Endomorphism ring |
-| $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dua}}}(V, W)$ | Space of homomorphisms |
-| $\operatorname{Ext}^\bullet_{\mathbb{C}^{\mathrm{dua}}}(R, R)$ | Ext algebra |
-| $R(\mathbb{C}^{\mathrm{dua}})$ | Representation ring |
+| $\operatorname{End}_{\mathbb{C}^{\mathrm{dln}}}(V)$ | Endomorphism ring |
+| $\operatorname{Hom}_{\mathbb{C}^{\mathrm{dln}}}(V, W)$ | Space of homomorphisms |
+| $\operatorname{Ext}^\bullet_{\mathbb{C}^{\mathrm{dln}}}(R, R)$ | Ext algebra |
+| $R(\mathbb{C}^{\mathrm{dln}})$ | Representation ring |
 
 ## Further Reading
 

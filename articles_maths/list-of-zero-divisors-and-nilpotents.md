@@ -23,7 +23,7 @@ Every nonzero nilpotent is a zero divisor, since $a \cdot a^{n-1} = 0$ with $a^{
 
 | Ring | The nilpotent | Its index | Introduced in |
 |---|---|---|---|
-| $\mathbb{C}^{\mathrm{dua}}$, the dual numbers | $\varepsilon$, with $\varepsilon^2 = 0$ | $2$ | *Dual-Numbers Algebra* |
+| $\mathbb{C}^{\mathrm{dln}}$, the dual numbers | $\varepsilon$, with $\varepsilon^2 = 0$ | $2$ | *Dual-Numbers Algebra* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $2$, with $2^2 = 0$ | $2$ | *Reduced Rings and the Nilradical* |
 | $\mathbb{Z}/8\mathbb{Z}$ | $2$, with $2^3 = 0$ | $3$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}/p^n\mathbb{Z}$ | $p$, with $p^n = 0$ | $n$ | *Modular Arithmetic and the Ring of Residues* |
@@ -113,7 +113,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\varepsilon$ | The nilpotent generator of the dual numbers, $\varepsilon^2 = 0$ |
 | $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{C}^{\mathrm{spl}}$, $\tilde\Pi_{1,2}$ in $\mathbb{B}^{\mathrm{spl}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
 | $E_{11}$, $E_{22}$, $E_{12}$ | Matrix units; $E_{12}$ is nilpotent |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$ | Split-complex numbers, dual numbers |
+| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | Split-complex numbers, dual numbers |
 | $\mathbb{B}$, $\mathbb{B}^{\mathrm{spl}}$ | Biquaternions with nilpotents, split-biquaternions without |
 | $\mathbb{H}$ | The quaternions, with neither |
 | $\tilde{Q}$ | A biquaternion |

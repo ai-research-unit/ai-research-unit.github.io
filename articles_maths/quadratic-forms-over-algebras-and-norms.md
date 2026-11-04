@@ -314,7 +314,7 @@ The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu d^{\natu
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central complex unit, $i^2 = -1$, in $\mathbb{B}$ |
 | $j$ | Split unit, $j^2 = +1$, in $\mathbb{C}^{\mathrm{spl}}$ and $\mathbb{B}^{\mathrm{spl}}$ |
-| $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}, \mathbb{C}^{\mathrm{spl}}, \mathbb{C}^{\mathrm{dua}}$ | Real, complex, quaternion, biquaternion, split complex, dual numbers |
+| $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}, \mathbb{C}^{\mathrm{spl}}, \mathbb{C}^{\mathrm{dln}}$ | Real, complex, quaternion, biquaternion, split complex, dual numbers |
 | $\mathbb{B}^{\mathrm{spl}}$ | Split biquaternions, $\mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | $\mathbb{O}$ | Octonions, the double of $\mathbb{H}$ |
 | $A'$ | Double of $A$: $A \oplus A$ with the Cayley–Dickson product |

@@ -83,7 +83,7 @@ A division ring is a domain in which every nonzero element is a unit; the class 
 | $\mathbb{B}^{\mathrm{spl}}$, the split-biquaternions | the idempotents $\tilde\Pi_{1,2}$ satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ | *Split-Biquaternion Zero Divisors* |
 | $k[C_2]$ over a field of characteristic $\neq 2$ | $k[C_2] \cong k \times k$ | *Examples of Rings and Fields* |
 | $\mathbb{C}^{\mathrm{spl}}$, the split-complex numbers | $\Pi_1\Pi_2 = 0$; commutative, so an integral-domain failure | *Split-Complex Algebra* |
-| $\mathbb{C}^{\mathrm{dua}}$, the dual numbers | $\varepsilon$ is a nonzero nilpotent | *Dual-Numbers Algebra* |
+| $\mathbb{C}^{\mathrm{dln}}$, the dual numbers | $\varepsilon$ is a nonzero nilpotent | *Dual-Numbers Algebra* |
 | $\mathbb{Z}/6\mathbb{Z}$ | $2 \cdot 3 = 0$ | *Modular Arithmetic and the Ring of Residues* |
 
 The matrix ring $M_2(\mathbb{R})$ is the standard non-commutative ring with zero divisors, and the biquaternions and split-biquaternions are the standard eight-dimensional ones. None of them is a domain, and none of them is an integral domain either.
@@ -114,7 +114,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $k[G]$, $k[F_n]$, $k[C_2]$ | Group rings; $F_n$ free, $C_2$ of order two |
 | $M_2(\mathbb{R})$ | The $2 \times 2$ real matrix ring; not a domain |
 | $\mathbb{Z}$, $\mathbb{Z}[i]$, $k[x]$ | Commutative domains, on the ladder of *List of Integral Domains* |
-| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$ | Split-complex numbers, dual numbers; not domains |
+| $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$ | Split-complex numbers, dual numbers; not domains |
 
 ## Further Reading
 

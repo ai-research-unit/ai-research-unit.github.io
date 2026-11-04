@@ -3,15 +3,15 @@
 
 ## Introduction
 
-This article collects the topology of the dual-number algebra $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ as a space: its contractibility, the Euclidean unit sphere, the norm-one set, the group of units and its homotopy, the maximal ideal as a closed nilpotent direction, and the boundary of the group of units. It uses the algebra and its submodules of *Dual-Numbers Algebra* and *Dual-Number Subspaces*, the norm and unit criterion of *Dual-Numbers Norm and Invertibility*, the maximal ideal of *Dual-Numbers Ideals and the Maximal Ideal*, the zero-divisor set of *Dual-Numbers Zero Divisors*, and the boundary of the unit group. The structural model is *The Topology of the Zero-Divisor Cone*, which studies the Euclidean sphere and the null cone.
+This article collects the topology of the dual-number algebra $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ as a space: its contractibility, the Euclidean unit sphere, the norm-one set, the group of units and its homotopy, the maximal ideal as a closed nilpotent direction, and the boundary of the group of units. It uses the algebra and its submodules of *Dual-Numbers Algebra* and *Dual-Number Subspaces*, the norm and unit criterion of *Dual-Numbers Norm and Invertibility*, the maximal ideal of *Dual-Numbers Ideals and the Maximal Ideal*, the zero-divisor set of *Dual-Numbers Zero Divisors*, and the boundary of the unit group. The structural model is *The Topology of the Zero-Divisor Cone*, which studies the Euclidean sphere and the null cone.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{C}^{\mathrm{dua}}$ over $\mathbb{R}$, a general dual number is
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{C}^{\mathrm{dln}}$ over $\mathbb{R}$, a general dual number is
 
 $$
 Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$
 
-with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\|_E = \sqrt{q^2 + q'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{C}^{\mathrm{dua}})^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.
+with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\|_E = \sqrt{q^2 + q'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{C}^{\mathrm{dln}})^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.
 
 ## The Dual Plane as a Topological Space
 
@@ -23,9 +23,9 @@ $$
 Q = q + \varepsilon q' \longmapsto (q, q')
 $$
 
-is a linear isometry of $(\mathbb{C}^{\mathrm{dua}}, \|\cdot\|_E)$ onto $\mathbb{R}^2$ with the Euclidean metric. So the topology of $\mathbb{C}^{\mathrm{dua}}$ is the ordinary Euclidean topology of the plane, and the basis $(1, \varepsilon)$ is an orthonormal basis for $\|\cdot\|_E$.
+is a linear isometry of $(\mathbb{C}^{\mathrm{dln}}, \|\cdot\|_E)$ onto $\mathbb{R}^2$ with the Euclidean metric. So the topology of $\mathbb{C}^{\mathrm{dln}}$ is the ordinary Euclidean topology of the plane, and the basis $(1, \varepsilon)$ is an orthonormal basis for $\|\cdot\|_E$.
 
-**Proposition.** The product is bilinear, hence continuous, so $\mathbb{C}^{\mathrm{dua}}$ is a topological algebra over $\mathbb{R}$. Inversion is continuous on the units, so $(\mathbb{C}^{\mathrm{dua}})^\times$ is a topological group and the shear subgroup $1 + \mathrm{M}$ is a closed subgroup.
+**Proposition.** The product is bilinear, hence continuous, so $\mathbb{C}^{\mathrm{dln}}$ is a topological algebra over $\mathbb{R}$. Inversion is continuous on the units, so $(\mathbb{C}^{\mathrm{dln}})^\times$ is a topological group and the shear subgroup $1 + \mathrm{M}$ is a closed subgroup.
 
 **Proof.** Bilinearity gives continuity of the product from the continuity of the algebra operations on $\mathbb{R}^2$. The inverse $q + \varepsilon q' \mapsto q^{-1} - q^{-2}\varepsilon q'$ is continuous where $q \neq 0$; $1 + \mathrm{M} = \{q = 1\}$ is closed.
 
@@ -38,7 +38,7 @@ The norm $\langle Q\rangle = q^2$ and the Euclidean form $q^2 + q'^2$ induce dif
 **Definition.** The **Euclidean unit sphere** is
 
 $$
-S^1_E = \{Q \in \mathbb{C}^{\mathrm{dua}} : \|Q\|_E = 1\} = \{(q,q') : q^2 + q'^2 = 1\} \cong S^1.
+S^1_E = \{Q \in \mathbb{C}^{\mathrm{dln}} : \|Q\|_E = 1\} = \{(q,q') : q^2 + q'^2 = 1\} \cong S^1.
 $$
 
 It is a closed, compact, connected one-manifold.
@@ -47,13 +47,13 @@ It is a closed, compact, connected one-manifold.
 
 **Proof.** For $Q = 1 + \varepsilon$ one has $\|Q\|_E = \sqrt{2}$ and $Q^2 = 1 + 2\varepsilon$ with $\|Q^2\|_E = \sqrt{5} \neq 2 = \|Q\|_E^2$. For closure, $\varepsilon$ lies on $S^1_E$ because $\|\varepsilon\|_E = 1$, but $\varepsilon^2 = 0 \notin S^1_E$.
 
-So $S^1_E$ is not a subgroup of $(\mathbb{C}^{\mathrm{dua}})^\times$; indeed $\varepsilon \in S^1_E$ is a zero divisor, so $S^1_E \not\subseteq (\mathbb{C}^{\mathrm{dua}})^\times$. The sphere that *is* a union of group components is the norm-one set of the next section, not the Euclidean sphere.
+So $S^1_E$ is not a subgroup of $(\mathbb{C}^{\mathrm{dln}})^\times$; indeed $\varepsilon \in S^1_E$ is a zero divisor, so $S^1_E \not\subseteq (\mathbb{C}^{\mathrm{dln}})^\times$. The sphere that *is* a union of group components is the norm-one set of the next section, not the Euclidean sphere.
 
 ## Contractibility
 
 ### The Algebra
 
-**Theorem.** $\mathbb{C}^{\mathrm{dua}}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}^{\mathrm{dua}}) = 0$ for all $n \geq 1$.
+**Theorem.** $\mathbb{C}^{\mathrm{dln}}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}^{\mathrm{dln}}) = 0$ for all $n \geq 1$.
 
 **Proof.** The straight-line homotopy
 
@@ -63,7 +63,7 @@ $$
 
 is continuous, with $H(0, Q) = Q$ and $H(1, Q) = 0$; so the identity is homotopic to the constant map at $0$.
 
-So every map into $\mathbb{C}^{\mathrm{dua}}$ is null-homotopic, and every subset of $\mathbb{C}^{\mathrm{dua}}$ that is star-shaped with respect to the origin is contractible by the same homotopy.
+So every map into $\mathbb{C}^{\mathrm{dln}}$ is null-homotopic, and every subset of $\mathbb{C}^{\mathrm{dln}}$ that is star-shaped with respect to the origin is contractible by the same homotopy.
 
 ### The Distinguished Subsets
 
@@ -71,7 +71,7 @@ The two submodules are star-shaped, hence contractible, and homeomorphic to $\ma
 
 $$
 \boxed{\;
-R_{\mathbb{C}^{\mathrm{dua}}} = \{q' = 0\} \cong \mathbb{R}, \qquad \mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{q = 0\} \cong \mathbb{R}
+R_{\mathbb{C}^{\mathrm{dln}}} = \{q' = 0\} \cong \mathbb{R}, \qquad \mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \{q = 0\} \cong \mathbb{R}
 \;}.
 $$
 
@@ -84,7 +84,7 @@ So the two eigenspaces of dual conjugation carry no topology beyond that of the 
 **Definition.** The **norm-one set** is
 
 $$
-H = \{Q \in \mathbb{C}^{\mathrm{dua}} : \langle Q\rangle = 1\} = \{q + \varepsilon q' : q = \pm 1\},
+H = \{Q \in \mathbb{C}^{\mathrm{dln}} : \langle Q\rangle = 1\} = \{q + \varepsilon q' : q = \pm 1\},
 $$
 
 the union of the two parallel lines $q = 1$ and $q = -1$.
@@ -97,25 +97,25 @@ So the norm-one set of the dual numbers is not a circle, as in the complex case,
 
 ### The Group of Units
 
-**Theorem.** The group of units is $(\mathbb{C}^{\mathrm{dua}})^\times = \{q \neq 0\}$, the complement of the maximal ideal; as a space it is the disjoint union of the two open half-planes $\{q > 0\}$ and $\{q < 0\}$, each contractible. The homotopy type of $(\mathbb{C}^{\mathrm{dua}})^\times$ is that of $S^0 = \{\pm 1\}$, onto which it deformation retracts by $Q \mapsto \operatorname{sgn}(q)$; hence
+**Theorem.** The group of units is $(\mathbb{C}^{\mathrm{dln}})^\times = \{q \neq 0\}$, the complement of the maximal ideal; as a space it is the disjoint union of the two open half-planes $\{q > 0\}$ and $\{q < 0\}$, each contractible. The homotopy type of $(\mathbb{C}^{\mathrm{dln}})^\times$ is that of $S^0 = \{\pm 1\}$, onto which it deformation retracts by $Q \mapsto \operatorname{sgn}(q)$; hence
 
 $$
 \boxed{\;
-\pi_0\bigl((\mathbb{C}^{\mathrm{dua}})^\times\bigr) = \mathbb{Z}/2, \qquad \pi_n\bigl((\mathbb{C}^{\mathrm{dua}})^\times\bigr) = 0 \quad (n \geq 1)
+\pi_0\bigl((\mathbb{C}^{\mathrm{dln}})^\times\bigr) = \mathbb{Z}/2, \qquad \pi_n\bigl((\mathbb{C}^{\mathrm{dln}})^\times\bigr) = 0 \quad (n \geq 1)
 \;}.
 $$
 
-**Proof.** $(\mathbb{C}^{\mathrm{dua}})^\times = \mathbb{C}^{\mathrm{dua}} \setminus \mathrm{M}$ is the complement of the closed line $\mathrm{M}$, hence two open half-planes, each star-shaped with respect to $\pm 1$ and contractible. The map $H(t, Q) = (1-t)Q + t\operatorname{sgn}(q)$ is a continuous deformation retraction onto $\{\pm 1\}$.
+**Proof.** $(\mathbb{C}^{\mathrm{dln}})^\times = \mathbb{C}^{\mathrm{dln}} \setminus \mathrm{M}$ is the complement of the closed line $\mathrm{M}$, hence two open half-planes, each star-shaped with respect to $\pm 1$ and contractible. The map $H(t, Q) = (1-t)Q + t\operatorname{sgn}(q)$ is a continuous deformation retraction onto $\{\pm 1\}$.
 
-**Corollary.** The maximal compact subgroup of $(\mathbb{C}^{\mathrm{dua}})^\times$ is $\{\pm 1\} \cong S^0$, and the unit group has trivial fundamental group despite being disconnected: on each contractible component every loop is null-homotopic.
+**Corollary.** The maximal compact subgroup of $(\mathbb{C}^{\mathrm{dln}})^\times$ is $\{\pm 1\} \cong S^0$, and the unit group has trivial fundamental group despite being disconnected: on each contractible component every loop is null-homotopic.
 
 ### The Boundary of the Unit Group
 
-The group of units is $\mathbb{C}^{\mathrm{dua}} \setminus \mathrm{M}$, an open dense subset of the plane with two connected components, distinguished by the sign of the real part. Its complement, hence its boundary, is the maximal ideal:
+The group of units is $\mathbb{C}^{\mathrm{dln}} \setminus \mathrm{M}$, an open dense subset of the plane with two connected components, distinguished by the sign of the real part. Its complement, hence its boundary, is the maximal ideal:
 
 $$
 \boxed{\;
-\partial\bigl((\mathbb{C}^{\mathrm{dua}})^\times\bigr) = \mathrm{M}
+\partial\bigl((\mathbb{C}^{\mathrm{dln}})^\times\bigr) = \mathrm{M}
 \;}.
 $$
 
@@ -129,7 +129,7 @@ $$
 
 ### The Maximal Ideal
 
-**Theorem.** The maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$ is a closed, connected, contractible subset of $\mathbb{C}^{\mathrm{dua}}$, homeomorphic to the real line. It has empty interior and its complement $(\mathbb{C}^{\mathrm{dua}})^\times$ is open and dense.
+**Theorem.** The maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$ is a closed, connected, contractible subset of $\mathbb{C}^{\mathrm{dln}}$, homeomorphic to the real line. It has empty interior and its complement $(\mathbb{C}^{\mathrm{dln}})^\times$ is open and dense.
 
 **Proof.** $\mathrm{M} = \{q = 0\}$ is closed, since $\operatorname{Re}$ is continuous; it is homeomorphic to $\mathbb{R}$ via $\varepsilon q' \leftrightarrow q'$, hence contractible. A line has empty interior in the plane, and the complement of a line is open and dense.
 
@@ -163,19 +163,19 @@ The topology of the dual numbers sits at the degenerate end of the family.
 |---|---|---|---|---|
 | $\mathbb{C}$ | $\mathbb{R}^2$, contractible | $\mathbb{C}^\times \simeq S^1$ | circle $S^1$ | $\varnothing$ (no null directions) |
 | $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$ | $\mathbb{R}^2$, contractible | $4$ contractible components, $\simeq S^0 \times S^0$ | hyperbola, two branches, $\simeq S^0$ | four points (two null lines) |
-| $\mathbb{C}^{\mathrm{dua}}$ | $\mathbb{R}^2$, contractible | $2$ contractible components, $\simeq S^0$ | two parallel lines, $\simeq S^0$ | two points (a doubled pair) |
+| $\mathbb{C}^{\mathrm{dln}}$ | $\mathbb{R}^2$, contractible | $2$ contractible components, $\simeq S^0$ | two parallel lines, $\simeq S^0$ | two points (a doubled pair) |
 
 Three features distinguish the dual row. First, the unit group has exactly two components, one fewer than the split complex case, because the norm has rank one rather than two; in both cases the components are contractible, so all higher homotopy is trivial. Second, the norm-one set is a pair of parallel lines, the degenerate limit of the hyperbola, with the same homotopy type $S^0$. Third, the isotropic set is a line whose link is two points rather than a sphere; the projective isotropic set is a single point of multiplicity two, so the link counts it twice.
 
 ## Summary
 
-The dual-number algebra $\mathbb{C}^{\mathrm{dua}}$, with its Euclidean topology, is a contractible topological algebra homeomorphic to $\mathbb{R}^2$, with all homotopy groups trivial. The Euclidean unit sphere is the circle $S^1 \cong S^1_E$, on which the zero divisor $\varepsilon$ lies, so the sphere is not contained in the group of units, and the Euclidean form is not multiplicative. The norm-one set is the pair of parallel lines $q = \pm 1$, with identity component the shear line $1 + \mathrm{M}$; it has the homotopy type of $S^0$. The group of units is the complement of the maximal ideal, two contractible open half-planes, with homotopy type $S^0$, fundamental group trivial, and maximal compact subgroup $\{\pm 1\}$. The maximal ideal is a closed nilpotent direction, homeomorphic to $\mathbb{R}$, contractible, of empty interior, and it is the null line of the norm; its link in the Euclidean sphere is the two-point space $\{\pm\varepsilon\}$, the double count of the degenerate isotropic line. The maximal ideal is exactly the boundary of the group of units. In the family of the corpus's number systems the dual row is the degenerate member: two contractible unit-group components against the split complex's four, and a doubled point link.
+The dual-number algebra $\mathbb{C}^{\mathrm{dln}}$, with its Euclidean topology, is a contractible topological algebra homeomorphic to $\mathbb{R}^2$, with all homotopy groups trivial. The Euclidean unit sphere is the circle $S^1 \cong S^1_E$, on which the zero divisor $\varepsilon$ lies, so the sphere is not contained in the group of units, and the Euclidean form is not multiplicative. The norm-one set is the pair of parallel lines $q = \pm 1$, with identity component the shear line $1 + \mathrm{M}$; it has the homotopy type of $S^0$. The group of units is the complement of the maximal ideal, two contractible open half-planes, with homotopy type $S^0$, fundamental group trivial, and maximal compact subgroup $\{\pm 1\}$. The maximal ideal is a closed nilpotent direction, homeomorphic to $\mathbb{R}$, contractible, of empty interior, and it is the null line of the norm; its link in the Euclidean sphere is the two-point space $\{\pm\varepsilon\}$, the double count of the degenerate isotropic line. The maximal ideal is exactly the boundary of the group of units. In the family of the corpus's number systems the dual row is the degenerate member: two contractible unit-group components against the split complex's four, and a doubled point link.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra; $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra; $\varepsilon^2 = 0$ |
 | $Q = q + \varepsilon q'$ | General dual number |
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\langle Q\rangle = q^2$ | Norm |
@@ -184,10 +184,10 @@ The dual-number algebra $\mathbb{C}^{\mathrm{dua}}$, with its Euclidean topology
 | $H = \{\langle Q\rangle = 1\}$ | Norm-one set, lines $q = \pm 1$, $\simeq S^0$ |
 | $\mathrm{M} = (\varepsilon) = \{q = 0\}$ | Maximal ideal, null line, $\cong \mathbb{R}$ |
 | $\mathcal{Z} = \mathrm{M}\setminus\{0\}$ | Zero-divisor set |
-| $(\mathbb{C}^{\mathrm{dua}})^\times = \{q \neq 0\}$ | Group of units, two contractible components |
+| $(\mathbb{C}^{\mathrm{dln}})^\times = \{q \neq 0\}$ | Group of units, two contractible components |
 | $1 + \mathrm{M} = \{q = 1\}$ | Shear line, identity component of $H$ |
 | $L = \mathrm{M} \cap S^1_E = \{\pm\varepsilon\}$ | Link of the null line, $\cong S^0$ |
-| $\pi_0((\mathbb{C}^{\mathrm{dua}})^\times) = \mathbb{Z}/2$ | Component count of the unit group |
+| $\pi_0((\mathbb{C}^{\mathrm{dln}})^\times) = \mathbb{Z}/2$ | Component count of the unit group |
 | $\mathbb{C}^{\mathrm{spl}}$ | The split complex system, the closest comparison |
 
 ## Further Reading

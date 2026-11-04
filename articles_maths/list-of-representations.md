@@ -62,7 +62,7 @@ A representation of an associative algebra $A$ is a left $A$-module, and the str
 | Representations of a matrix algebra | the modules over $M_n(k)$, all of the form $k^n \otimes W$ | *Representations of Algebras* |
 | Semisimple algebra | an algebra whose every module is semisimple; a product of matrix algebras | *Simple and Semisimple Modules* |
 | Group algebra representation | the case $A = F[G]$, reducing to group representations | *Representations of Algebras* |
-| Non-example: a representation of the dual numbers $\mathbb{C}^{\mathrm{dua}}$ | fails semisimplicity: the module $k[x]/x^2$ is not a direct sum of simples | *Simple and Semisimple Modules* |
+| Non-example: a representation of the dual numbers $\mathbb{C}^{\mathrm{dln}}$ | fails semisimplicity: the module $k[x]/x^2$ is not a direct sum of simples | *Simple and Semisimple Modules* |
 | Non-example: a module over a non-semisimple algebra | fails to be a direct sum of simples: the radical is nonzero | *Simple and Semisimple Modules* |
 
 ## Representations over the Number Systems
@@ -110,7 +110,7 @@ The article denotes its representations by name; the symbols appearing in the ta
 | $\operatorname{ad}$ | adjoint representation |
 | $M_n(k)$ | matrix algebra |
 | $\operatorname{End}_A(S)$, $\operatorname{End}_A(M)$ | endomorphism ring of a simple module, of a module |
-| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$, $\mathbb{H}$, $\mathbb{B}$ | real, complex, split-complex, dual, quaternion and biquaternion scalars |
+| $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{B}$ | real, complex, split-complex, dual, quaternion and biquaternion scalars |
 | $\operatorname{Rep}_F(G)$, $\operatorname{Mod}(A)$ | categories of representations and modules |
 
 ## Further Reading

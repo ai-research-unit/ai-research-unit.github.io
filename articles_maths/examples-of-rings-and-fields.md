@@ -12,7 +12,7 @@ $$
 
 reverses, and that the Noetherian condition is independent of all of them except as the theorems demand it.
 
-The background is *Rings*, *Integral Domains*, *Unique Factorisation Domains*, *Localization and the Fraction Field*, *Finite Fields*, *Algebraically Closed Fields*, *Real-Closed and Complete Ordered Fields*, *Dedekind Domains and Ideal Class Groups*, *Valuation Theory and Henselian Rings* and *Algebraic Number Theory*. Throughout, all rings have $1 \neq 0$ and are commutative unless stated otherwise; the zero ring is excluded by this convention and is not an example of anything below. The symbols $\mathbb{C}^{\mathrm{spl}}$ (split complex numbers, unit $j$, $j^2 = +1$) and $\mathbb{C}^{\mathrm{dua}}$ (dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$) are those fixed in *Dual Numbers Algebra*; they are two distinct two-dimensional rings and the notation is chosen so that they do not collide.
+The background is *Rings*, *Integral Domains*, *Unique Factorisation Domains*, *Localization and the Fraction Field*, *Finite Fields*, *Algebraically Closed Fields*, *Real-Closed and Complete Ordered Fields*, *Dedekind Domains and Ideal Class Groups*, *Valuation Theory and Henselian Rings* and *Algebraic Number Theory*. Throughout, all rings have $1 \neq 0$ and are commutative unless stated otherwise; the zero ring is excluded by this convention and is not an example of anything below. The symbols $\mathbb{C}^{\mathrm{spl}}$ (split complex numbers, unit $j$, $j^2 = +1$) and $\mathbb{C}^{\mathrm{dln}}$ (dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$) are those fixed in *Dual Numbers Algebra*; they are two distinct two-dimensional rings and the notation is chosen so that they do not collide.
 
 ---
 
@@ -52,7 +52,7 @@ and the four factors are irreducible, since the norm $N(a+b\sqrt{-5}) = a^2+5b^2
 
 **Example (power series).** The ring $K[[x]]$ of formal power series is an integral domain in which every series with nonzero constant term is a unit; consequently it is a local ring with maximal ideal $(x)$, and every nonzero ideal is $(x^n)$ for some $n$, so $K[[x]]$ is a principal ideal domain and a unique factorisation domain: its only irreducible element is $x$, up to multiplication by units. This is the prototype of a discrete valuation ring, as in *Valuation Theory and Henselian Rings*; the ring is not a field, and $x$ is a nonunit that is not a zero divisor.
 
-**Example (quotients of a polynomial ring).** For $K$ a field and $f \in K[x]$ nonzero of degree $m$, the quotient $K[x]/(f)$ has dimension $m$ over $K$ and is a field exactly when $f$ is irreducible; it is a product of fields exactly when $f$ is squarefree. Thus $\mathbb{R}[x]/(x^2+1) \cong \mathbb{C}$, $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R}\times\mathbb{R}$, and $\mathbb{R}[x]/(x^2) \cong \mathbb{C}^{\mathrm{dua}}$, the dual numbers, whose elements are $a+b\varepsilon$ with $\varepsilon^2 = 0$, of which the units are those with $a \neq 0$ and the nonunits are all nilpotent.
+**Example (quotients of a polynomial ring).** For $K$ a field and $f \in K[x]$ nonzero of degree $m$, the quotient $K[x]/(f)$ has dimension $m$ over $K$ and is a field exactly when $f$ is irreducible; it is a product of fields exactly when $f$ is squarefree. Thus $\mathbb{R}[x]/(x^2+1) \cong \mathbb{C}$, $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R}\times\mathbb{R}$, and $\mathbb{R}[x]/(x^2) \cong \mathbb{C}^{\mathrm{dln}}$, the dual numbers, whose elements are $a+b\varepsilon$ with $\varepsilon^2 = 0$, of which the units are those with $a \neq 0$ and the nonunits are all nilpotent.
 
 **Example (split complex numbers).** The split complex numbers $\mathbb{C}^{\mathrm{spl}}$ have basis $1, j$ with $j^2 = +1$; the assignment $j \mapsto (1,-1)$ identifies
 
@@ -60,7 +60,7 @@ $$
 \boxed{\;\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\times\mathbb{R}\;},
 $$
 
-so that $\mathbb{C}^{\mathrm{spl}}$ is a product of two fields, with the nontrivial idempotents $\pi_{1,2} = \frac12(1\pm j)$ satisfying $\pi_1\pi_2 = 0$, $\pi_1^2 = \pi_1$, $\pi_2^2 = \pi_2$. The contrast with $\mathbb{C}^{\mathrm{dua}}$ is instructive: $j^2 = +1$ splits into two fields, while $\varepsilon^2 = 0$ gives a ring with a nilpotent; the two rings are the two possible two-dimensional quotients of $\mathbb{R}[x]$ by a nonconstant polynomial up to isomorphism, corresponding to a squarefree and to a nonsquarefree quadratic.
+so that $\mathbb{C}^{\mathrm{spl}}$ is a product of two fields, with the nontrivial idempotents $\pi_{1,2} = \frac12(1\pm j)$ satisfying $\pi_1\pi_2 = 0$, $\pi_1^2 = \pi_1$, $\pi_2^2 = \pi_2$. The contrast with $\mathbb{C}^{\mathrm{dln}}$ is instructive: $j^2 = +1$ splits into two fields, while $\varepsilon^2 = 0$ gives a ring with a nilpotent; the two rings are the two possible two-dimensional quotients of $\mathbb{R}[x]$ by a nonconstant polynomial up to isomorphism, corresponding to a squarefree and to a nonsquarefree quadratic.
 
 ---
 
@@ -101,13 +101,13 @@ The following table records, for the examples above, the properties discussed in
 | $K[[x]]$ | yes | yes | yes | yes | yes | no | $0$ | nonzero constant term |
 | $\mathbb{Z}_{(p)}$ | yes | yes | yes | yes | yes | no | $0$ | $a/b$, $p\nmid a,b$ |
 | $K[x]/(x^m)$ | no | yes | — | — | yes | no | — | $a_0\neq0$ |
-| $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}[x]/(x^2)$ | no | yes | — | — | yes | no | $0$ | $a\neq0$ in $a+b\varepsilon$ |
+| $\mathbb{C}^{\mathrm{dln}} \cong \mathbb{R}[x]/(x^2)$ | no | yes | — | — | yes | no | $0$ | $a\neq0$ in $a+b\varepsilon$ |
 | $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R}\times\mathbb{R}$ | no | yes | — | — | no | no | $0$ | $a^2>b^2$ in $a+bj$ |
 | $\mathbb{Q}[C_2] \cong \mathbb{Q}\times\mathbb{Q}$ | no | yes | — | — | no | no | $0$ | $(a,b)$ with $ab\neq0$ |
 | $M_2(\mathbb{R})$ | no | yes | — | — | no | no | $0$ | $\det\neq0$ |
 | $k[x_1,x_2,\ldots]$ | yes | no | no | yes | no | no | $0$ | $k^\times$ |
 
-**Remark.** The table shows the independence of the four chain conditions: $\mathbb{Z}[x]$ is a unique factorisation domain that is not principal; $\mathbb{Z}[\sqrt{-5}]$ is Noetherian but not a unique factorisation domain; $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{C}^{\mathrm{dua}}$ are local and not domains; $M_2(\mathbb{R})$ is Noetherian with zero divisors; and $k[x_1,x_2,\ldots]$ is a unique factorisation domain that is not Noetherian.
+**Remark.** The table shows the independence of the four chain conditions: $\mathbb{Z}[x]$ is a unique factorisation domain that is not principal; $\mathbb{Z}[\sqrt{-5}]$ is Noetherian but not a unique factorisation domain; $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{C}^{\mathrm{dln}}$ are local and not domains; $M_2(\mathbb{R})$ is Noetherian with zero divisors; and $k[x_1,x_2,\ldots]$ is a unique factorisation domain that is not Noetherian.
 
 ---
 
@@ -115,7 +115,7 @@ The following table records, for the examples above, the properties discussed in
 
 The examples of this article exhibit the separation of the basic properties of rings. $\mathbb{Z}$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{-2}]$ and $K[x]$ are Euclidean and hence principal ideal domains; $\mathbb{Z}[x]$ and $K[x,y]$ are unique factorisation domains that are not principal, the ideals $(2,x)$ and $(x,y)$ being the standard witnesses; $\mathbb{Z}[\sqrt{-5}]$ is a Noetherian integral domain that is not a unique factorisation domain, with $6 = 2\cdot3 = (1+\sqrt{-5})(1-\sqrt{-5})$ two factorisations into irreducible and pairwise nonassociate elements, and it is a Dedekind domain of class number two whose ideals do factor uniquely; and $k[x_1,x_2,\ldots]$ is a unique factorisation domain that is not Noetherian. The finite rings $\mathbb{Z}/n\mathbb{Z}$ are fields exactly for $n$ prime and have zero divisors otherwise; the quotients $K[x]/(f)$ are fields exactly when $f$ is irreducible and products of fields exactly when $f$ is squarefree, which makes $\mathbb{R}[x]/(x^2+1) \cong \mathbb{C}$ and $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R}\times\mathbb{R}$.
 
-The two two-dimensional rings fixed by the conventions appear in their proper places: the dual numbers $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[x]/(x^2)$, a local ring whose nonunits are nilpotent and whose unit group consists of the elements with nonzero constant term, and the split complex numbers $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\times\mathbb{R}$, a product of two fields with the idempotents $\frac12(1\pm j)$. $\mathbb{Z}_{(p)}$ and $K[[x]]$ are the discrete valuation rings of the list, local principal ideal domains; $M_2(R)$ and the upper triangular matrices are the noncommutative rings with zero divisors; the skew fields, which are the noncommutative division rings, belong to the algebra layer. Group rings interpolate between the two behaviours according to the characteristic: $\mathbb{Q}[C_2] \cong \mathbb{Q}\times\mathbb{Q}$ and $\mathbb{Q}[C_3]\cong\mathbb{Q}\times\mathbb{Q}(\zeta_3)$ are products of fields, while $\mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x+1)^2$ is local with a nilpotent.
+The two two-dimensional rings fixed by the conventions appear in their proper places: the dual numbers $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[x]/(x^2)$, a local ring whose nonunits are nilpotent and whose unit group consists of the elements with nonzero constant term, and the split complex numbers $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1) \cong \mathbb{R}\times\mathbb{R}$, a product of two fields with the idempotents $\frac12(1\pm j)$. $\mathbb{Z}_{(p)}$ and $K[[x]]$ are the discrete valuation rings of the list, local principal ideal domains; $M_2(R)$ and the upper triangular matrices are the noncommutative rings with zero divisors; the skew fields, which are the noncommutative division rings, belong to the algebra layer. Group rings interpolate between the two behaviours according to the characteristic: $\mathbb{Q}[C_2] \cong \mathbb{Q}\times\mathbb{Q}$ and $\mathbb{Q}[C_3]\cong\mathbb{Q}\times\mathbb{Q}(\zeta_3)$ are products of fields, while $\mathbb{F}_2[C_2] \cong \mathbb{F}_2[x]/(x+1)^2$ is local with a nilpotent.
 
 ## Summary of Notation
 
@@ -131,7 +131,7 @@ The two two-dimensional rings fixed by the conventions appear in their proper pl
 | $\mathbb{Z}_{(p)}$ | Localisation of $\mathbb{Z}$ at $p$ |
 | $K[x]$, $K[x,y]$, $K[[x]]$ | Polynomial and power series rings |
 | $\mathbb{C}^{\mathrm{spl}}$ | Split complex numbers, $j^2 = +1$, $\pi_{1,2} = \frac12(1\pm j)$ |
-| $\mathbb{C}^{\mathrm{dua}}$ | Dual numbers, $\varepsilon^2 = 0$ |
+| $\mathbb{C}^{\mathrm{dln}}$ | Dual numbers, $\varepsilon^2 = 0$ |
 | $M_n(R)$ | Ring of $n\times n$ matrices over $R$ |
 | $K[G]$ | Group ring of a finite group |
 | $\zeta_n$ | Primitive $n$-th root of unity |
