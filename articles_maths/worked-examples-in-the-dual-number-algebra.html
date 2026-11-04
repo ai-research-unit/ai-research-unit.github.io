@@ -70,12 +70,12 @@
       <div class="article-body">
         <h1 id="worked-examples-in-the-dual-number-algebra"><strong>Worked Examples in the Dual-Number Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article collects explicit computations in the dual-number algebra $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$, in the spirit of the worked computation that accompanies the algebra of a number system. It follows <em>Dual-Numbers Algebra</em> for the conventions, <em>Dual-Numbers Norm and Invertibility</em> for the criterion for invertibility, <em>Dual-Numbers Ideals and the Maximal Ideal</em> for the ideal structure, <em>Dual-Numbers Zero Divisors</em> for the zero-divisor classification. Every computation was recomputed in exact rational arithmetic; where a floating-point value appears it is flagged.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Unless a statement is labelled otherwise, the base is $R = \mathbb{R}$ and the algebra is $\mathbb{C}^{\mathrm{dua}} = \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}}$. A general dual number is</p>
+<p>This article collects explicit computations in the dual-number algebra $\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$, in the spirit of the worked computation that accompanies the algebra of a number system. It follows <em>Dual-Numbers Algebra</em> for the conventions, <em>Dual-Numbers Norm and Invertibility</em> for the criterion for invertibility, <em>Dual-Numbers Ideals and the Maximal Ideal</em> for the ideal structure, <em>Dual-Numbers Zero Divisors</em> for the zero-divisor classification. Every computation was recomputed in exact rational arithmetic; where a floating-point value appears it is flagged.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Unless a statement is labelled otherwise, the base is $R = \mathbb{R}$ and the algebra is $\mathbb{C}^{\mathrm{dln}} = \mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}$. A general dual number is</p>
 <p>$$
 Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$</p>
-<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, unit criterion $q \neq 0$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are $R_{\mathbb{C}^{\mathrm{dua}}} = \mathbb{R}\cdot 1$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \varepsilon\mathbb{R}$.</p>
+<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, unit criterion $q \neq 0$, and maximal ideal $\mathrm{M} = (\varepsilon)$. The two distinguished submodules are $R_{\mathbb{C}^{\mathrm{dln}}} = \mathbb{R}\cdot 1$ and $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \varepsilon\mathbb{R}$.</p>
 <p>Each computation below is a worked instance of a general result proved in a companion article; the instance is stated with its reference, so that the article remains a table of examples rather than a second proof of the theory.</p>
 <h2 id="the-algebra-in-coordinates">The Algebra in Coordinates</h2>
 <h3 id="the-basis-and-the-product">The Basis and the Product</h3>
@@ -120,7 +120,7 @@ $$</p>
 $$</p>
 <h2 id="the-two-involutions">The Two Involutions</h2>
 <h3 id="the-identity-involution">The Identity Involution</h3>
-<p>The identity map $\operatorname{id}(Q) = Q$ is an involutive algebra automorphism. Its fixed-point submodule is the whole algebra $\mathbb{C}^{\mathrm{dua}}$, and the associated $\pm1$-eigenspace decomposition is the trivial one, with eigenvalue $+1$ everywhere.</p>
+<p>The identity map $\operatorname{id}(Q) = Q$ is an involutive algebra automorphism. Its fixed-point submodule is the whole algebra $\mathbb{C}^{\mathrm{dln}}$, and the associated $\pm1$-eigenspace decomposition is the trivial one, with eigenvalue $+1$ everywhere.</p>
 <h3 id="the-dual-conjugation">The Dual Conjugation</h3>
 <p>Dual conjugation is</p>
 <p>$$
@@ -130,12 +130,12 @@ $$</p>
 <h3 id="the-fixed-point-submodules">The Fixed-Point Submodules</h3>
 <p><strong>Proposition.</strong> The $+1$-eigenspace of dual conjugation is the real submodule</p>
 <p>$$
-R_{\mathbb{C}^{\mathrm{dua}}} = \{Q : \bar Q = Q\} = \{q : q \in \mathbb{R}\},
+R_{\mathbb{C}^{\mathrm{dln}}} = \{Q : \bar Q = Q\} = \{q : q \in \mathbb{R}\},
 $$</p>
 <p>and the $-1$-eigenspace is the infinitesimal submodule</p>
 <p>$$
 \boxed{\;
-\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{Q : \bar Q = -Q\} = \{\varepsilon q' : q' \in \mathbb{R}\}
+\varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \{Q : \bar Q = -Q\} = \{\varepsilon q' : q' \in \mathbb{R}\}
 \;}.
 $$</p>
 <p><strong>Proof.</strong> $\bar{q + \varepsilon q'} = q - \varepsilon q'$ equals $q + \varepsilon q'$ exactly when $q' = 0$, and equals $-(q + \varepsilon q')$ exactly when $q = 0$; the two sets are as displayed.</p>
@@ -145,9 +145,9 @@ $$</p>
 $$</p>
 <p>and indeed $2 + 3\varepsilon = Q$.</p>
 <h3 id="the-intersection">The Intersection</h3>
-<p><strong>Proposition.</strong> $R_{\mathbb{C}^{\mathrm{dua}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{0\}$, and $\mathbb{C}^{\mathrm{dua}} = R_{\mathbb{C}^{\mathrm{dua}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$.</p>
+<p><strong>Proposition.</strong> $R_{\mathbb{C}^{\mathrm{dln}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \{0\}$, and $\mathbb{C}^{\mathrm{dln}} = R_{\mathbb{C}^{\mathrm{dln}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$.</p>
 <p><strong>Proof.</strong> An element of the intersection satisfies $q' = 0$ and $q = 0$, so it is zero. The sum decomposition is the worked projection identity above.</p>
-<p>So the algebra has exactly <strong>one</strong> nontrivial involution, and the two submodules are the eigenspaces; the lattice degenerates to two submodules and the single relation $R_{\mathbb{C}^{\mathrm{dua}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = 0$.</p>
+<p>So the algebra has exactly <strong>one</strong> nontrivial involution, and the two submodules are the eigenspaces; the lattice degenerates to two submodules and the single relation $R_{\mathbb{C}^{\mathrm{dln}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = 0$.</p>
 <h2 id="the-nilpotents-and-the-maximal-ideal">The Nilpotents and the Maximal Ideal</h2>
 <h3 id="squaring-the-maximal-ideal">Squaring the Maximal Ideal</h3>
 <p><strong>Example (worked).</strong> Every element of $\mathrm{M} = \varepsilon\mathbb{R}$ is nilpotent of index two:</p>
@@ -274,16 +274,16 @@ $$</p>
 $$</p>
 <p>and in the factorised form $2^3\bigl(1 + \tfrac{3}{2}\varepsilon\bigr)^3 = 8\bigl(1 + 3\cdot\tfrac{3}{2}\varepsilon\bigr) = 8 + 36\varepsilon$, the two computations agreeing.</p>
 <h3 id="the-hyperbolic-case-degenerates">The Hyperbolic Case Degenerates</h3>
-<p>In the split-complex algebra the units $a + jb$ satisfy $a^2 - b^2 = 1$ and form a hyperbola, a one-parameter multiplicative family with a genuine hyperbolic parameter; in the complex algebra the units form a circle. In $\mathbb{C}^{\mathrm{dua}}$ the corresponding family of units is the pair of parallel lines $q = \pm 1$, and each line is carried by the parabolic family $1 + s\varepsilon$ with the additive parameter $s$. The hyperbola and the circle have both degenerated to lines, the hyperbolic parameter being replaced by the shear parameter; this is the arithmetic content of $\varepsilon^2 = 0$.</p>
+<p>In the split-complex algebra the units $a + jb$ satisfy $a^2 - b^2 = 1$ and form a hyperbola, a one-parameter multiplicative family with a genuine hyperbolic parameter; in the complex algebra the units form a circle. In $\mathbb{C}^{\mathrm{dln}}$ the corresponding family of units is the pair of parallel lines $q = \pm 1$, and each line is carried by the parabolic family $1 + s\varepsilon$ with the additive parameter $s$. The hyperbola and the circle have both degenerated to lines, the hyperbolic parameter being replaced by the shear parameter; this is the arithmetic content of $\varepsilon^2 = 0$.</p>
 <h2 id="relation-between-the-decompositions">Relation Between the Decompositions</h2>
 <p>The two decompositions of the dual-number algebra coincide, and the worked examples make the coincidence explicit.</p>
 <ul>
-<li>The <strong>conjugate decomposition</strong> is $\mathbb{C}^{\mathrm{dua}} = R_{\mathbb{C}^{\mathrm{dua}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$, from the eigenspaces of $\bar{\cdot}$; worked for $Q = 2 + 3\varepsilon$ as $Q = 2 + 3\varepsilon$.</li>
+<li>The <strong>conjugate decomposition</strong> is $\mathbb{C}^{\mathrm{dln}} = R_{\mathbb{C}^{\mathrm{dln}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$, from the eigenspaces of $\bar{\cdot}$; worked for $Q = 2 + 3\varepsilon$ as $Q = 2 + 3\varepsilon$.</li>
 <li>The <strong>real–infinitesimal decomposition</strong> is the same identity written as $Q = \operatorname{Re}(Q) + \operatorname{Inf}(Q)\varepsilon$.</li>
 </ul>
-<p>There is no third decomposition, and no nontrivial Peirce decomposition: the only idempotents are $0$ and $1$, so the corners of <em>Dual-Numbers Ideals and the Maximal Ideal</em> are trivial. The single relation $R_{\mathbb{C}^{\mathrm{dua}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \{0\}$ is the only intersection of the two submodules, and the worked example $2 + 3\varepsilon = Q$ is its arithmetic content.</p>
+<p>There is no third decomposition, and no nontrivial Peirce decomposition: the only idempotents are $0$ and $1$, so the corners of <em>Dual-Numbers Ideals and the Maximal Ideal</em> are trivial. The single relation $R_{\mathbb{C}^{\mathrm{dln}}} \cap \varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \{0\}$ is the only intersection of the two submodules, and the worked example $2 + 3\varepsilon = Q$ is its arithmetic content.</p>
 <h2 id="summary">Summary</h2>
-<p>The worked computations in the dual-number algebra are these. The two involutions are the identity and dual conjugation; the identity has fixed set all of $\mathbb{C}^{\mathrm{dua}}$, while dual conjugation has $+1$-eigenspace $R_{\mathbb{C}^{\mathrm{dua}}} = \mathbb{R}$ and $-1$-eigenspace $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \varepsilon\mathbb{R}$, meeting only in $0$. Every element of the maximal ideal is nilpotent of index two, $(\varepsilon q')^2 = 0$, while a mixed element has $(q + \varepsilon q')^n = q^n + n q^{n-1}\varepsilon q'$ and is never nilpotent unless $q = 0$. The zero divisors are the nonzero elements $\varepsilon q'$ of $\mathrm{M}$, and any two of them multiply to zero; for instance $(2\varepsilon)(5\varepsilon) = 0$. The criterion for a unit is $q \neq 0$, and the inverse is $q^{-1} - q^{-2}\varepsilon q'$; the check $(2 + 3\varepsilon)(\tfrac{1}{2} - \tfrac{3}{4}\varepsilon) = 1$ is the worked instance. Under the matrix model $\Phi(q + \varepsilon q') = \begin{pmatrix} q & q' \\ 0 & q \end{pmatrix}$ the worked product $\Phi(2 + 3\varepsilon)\Phi(4 + 5\varepsilon) = \Phi(8 + 22\varepsilon)$ reproduces the coordinate product, and multiplication by the unit $q(1 + s\varepsilon)$ acts as the dilation by $q$ followed by the shear $(q, q') \mapsto (q, q' + s q)$. The two decompositions of the algebra coincide, and no nontrivial Peirce decomposition exists.</p>
+<p>The worked computations in the dual-number algebra are these. The two involutions are the identity and dual conjugation; the identity has fixed set all of $\mathbb{C}^{\mathrm{dln}}$, while dual conjugation has $+1$-eigenspace $R_{\mathbb{C}^{\mathrm{dln}}} = \mathbb{R}$ and $-1$-eigenspace $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}} = \varepsilon\mathbb{R}$, meeting only in $0$. Every element of the maximal ideal is nilpotent of index two, $(\varepsilon q')^2 = 0$, while a mixed element has $(q + \varepsilon q')^n = q^n + n q^{n-1}\varepsilon q'$ and is never nilpotent unless $q = 0$. The zero divisors are the nonzero elements $\varepsilon q'$ of $\mathrm{M}$, and any two of them multiply to zero; for instance $(2\varepsilon)(5\varepsilon) = 0$. The criterion for a unit is $q \neq 0$, and the inverse is $q^{-1} - q^{-2}\varepsilon q'$; the check $(2 + 3\varepsilon)(\tfrac{1}{2} - \tfrac{3}{4}\varepsilon) = 1$ is the worked instance. Under the matrix model $\Phi(q + \varepsilon q') = \begin{pmatrix} q & q' \\ 0 & q \end{pmatrix}$ the worked product $\Phi(2 + 3\varepsilon)\Phi(4 + 5\varepsilon) = \Phi(8 + 22\varepsilon)$ reproduces the coordinate product, and multiplication by the unit $q(1 + s\varepsilon)$ acts as the dilation by $q$ followed by the shear $(q, q') \mapsto (q, q' + s q)$. The two decompositions of the algebra coincide, and no nontrivial Peirce decomposition exists.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -294,7 +294,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>$\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
 <td>Dual-number algebra; $\varepsilon^2 = 0$</td>
 </tr>
 <tr>
@@ -310,7 +310,7 @@ $$</p>
 <td>Dual conjugation, the nontrivial involution</td>
 </tr>
 <tr>
-<td>$R_{\mathbb{C}^{\mathrm{dua}}}$, $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$</td>
+<td>$R_{\mathbb{C}^{\mathrm{dln}}}$, $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$</td>
 <td>Real and infinitesimal submodules</td>
 </tr>
 <tr>

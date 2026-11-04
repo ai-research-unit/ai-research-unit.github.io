@@ -151,7 +151,7 @@ $$</p>
 \|xyw\|_1 = \|x(yw)\|_1 \leq \|x\|\,\|yw\|_1 \leq \|x\|\,\|y\|\,\|w\|_1 .
 $$</p>
 <p>Completeness follows from finite dimension and equivalence of the norm with $\|\cdot\|_1$. The last statement is the standard equivalence of all norms on a finite-dimensional $\mathbb{K}$-vector space.</p>
-<p><strong>Corollary.</strong> Every finite-dimensional unital $\mathbb{K}$-algebra — in particular $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$, every matrix algebra $M_n(\mathbb{K})$ and every Clifford algebra $\mathrm{Cl}_{n,m}$ — is a Banach algebra in its unique vector-space topology, and every $\mathbb{K}$-linear map between finite-dimensional algebras is continuous.</p>
+<p><strong>Corollary.</strong> Every finite-dimensional unital $\mathbb{K}$-algebra — in particular $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, every matrix algebra $M_n(\mathbb{K})$ and every Clifford algebra $\mathrm{Cl}_{n,m}$ — is a Banach algebra in its unique vector-space topology, and every $\mathbb{K}$-linear map between finite-dimensional algebras is continuous.</p>
 <p>The uniqueness of the topology means that for finite-dimensional algebras the topological notions of convergence, continuity and differentiability do not depend on the norm chosen. This is what permits the hypercomplex-analysis entries to speak of the Euclidean topology on $\mathbb{H}$ or $\mathbb{B}$ without further qualification.</p>
 <h2 id="the-unit-group-and-the-exponential">The Unit Group and the Exponential</h2>
 <p><strong>Theorem.</strong> Let $A$ be a unital Banach algebra. Then $A^\times$ is an open subset of $A$, inversion is continuous, and $A^\times$ is a topological group under multiplication. Moreover $A^\times$ is a <strong>Banach Lie group</strong>, and its Lie algebra is $A$ itself with the commutator bracket</p>
@@ -214,7 +214,7 @@ $$</p>
 <td>$4$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dua}}$</td>
+<td>$\mathbb{C}^{\mathrm{dln}}$</td>
 <td>$a \neq 0$</td>
 <td>$2$</td>
 </tr>
@@ -287,7 +287,7 @@ $$</p>
 \|\tilde{Q}\|_E = \Bigl(\sum_{\mu} |Q_\mu|^2\Bigr)^{1/2} = \Bigl(\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})\Bigr)^{1/2}
 $$</p>
 <p>is a genuine norm, positive definite and vanishing only at $\tilde{Q} = 0$; it is not multiplicative, and it carries no information about divisibility: an element can be a zero divisor while having large Euclidean norm. This is the reason $\mathbb{B}$ is a Banach algebra but not a normed division algebra, and it is why the analysis over $\mathbb{B}$ must work with the norm and the quadratic structure rather than with a multiplicative absolute value.</p>
-<p><strong>Example (the split complex and dual numbers).</strong> For $\mathbb{C}^{\mathrm{spl}}$ the form $\langle a+bj\rangle_{*} = a^2 - b^2$ is indefinite, so it is not a norm; for $\mathbb{C}^{\mathrm{dua}}$ the form $\langle a + b\varepsilon\rangle_{*} = a^2$ vanishes on the maximal ideal $(\varepsilon)$. In both cases the Euclidean norm of the underlying $\mathbb{R}^2$ is a genuine norm, submultiplicative after a rescaling, but not multiplicative; the zero divisors are detected by the vanishing of the norm $\langle\cdot\rangle_{*}$, not by the Euclidean norm.</p>
+<p><strong>Example (the split complex and dual numbers).</strong> For $\mathbb{C}^{\mathrm{spl}}$ the form $\langle a+bj\rangle_{*} = a^2 - b^2$ is indefinite, so it is not a norm; for $\mathbb{C}^{\mathrm{dln}}$ the form $\langle a + b\varepsilon\rangle_{*} = a^2$ vanishes on the maximal ideal $(\varepsilon)$. In both cases the Euclidean norm of the underlying $\mathbb{R}^2$ is a genuine norm, submultiplicative after a rescaling, but not multiplicative; the zero divisors are detected by the vanishing of the norm $\langle\cdot\rangle_{*}$, not by the Euclidean norm.</p>
 <h2 id="summary">Summary</h2>
 <p>A <strong>topological algebra</strong> is a $\mathbb{K}$-algebra whose addition, scalar multiplication and product are continuous, and a <strong>normed algebra</strong> is one whose norm is submultiplicative, which makes the product jointly continuous. A <strong>Banach algebra</strong> is a complete normed algebra; the completion of a normed algebra is a Banach algebra. Every finite-dimensional $\mathbb{K}$-algebra is a Banach algebra in a unique topology, all norms on it being equivalent, so the number systems, the matrix algebras and the Clifford algebras are all Banach algebras.</p>
 <p>In a unital normed algebra the <strong>unit group</strong> $A^\times$ is open and inversion is continuous, by the Neumann series; in a unital Banach algebra $A^\times$ is a Banach Lie group with Lie algebra $A$ under the commutator bracket, and the <strong>exponential</strong> $\exp(x) = \sum x^n/n!$ converges everywhere, satisfies $\exp(x+y) = \exp(x)\exp(y)$ for commuting $x,y$, and is a local diffeomorphism at $0$; inner derivations exponentiate to inner automorphisms, as in <em>Automorphisms and Derivations of Algebras</em>. The <strong>Gelfand–Mazur theorem</strong> states that a unital complex Banach algebra in which every nonzero element is invertible is $\mathbb{C}$; with Hurwitz and Frobenius this pins the normed real division algebras to $\mathbb{R}, \mathbb{C}, \mathbb{H}$ (associative) and to $\mathbb{O}$ as well without associativity.</p>

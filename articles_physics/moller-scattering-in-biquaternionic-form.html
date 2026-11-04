@@ -72,17 +72,17 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>Møller scattering</strong> is electron–electron scattering, $e^-e^-\to e^-e^-$, in quantum electrodynamics. Christian Møller derived it in 1932, in the same paper that treated the passage of fast electrons through matter. It is the paradigmatic two-electron process: the electron repulsion inside the helium atom is its non-relativistic face, and electron–electron colliders were built around it. At the tree level it receives two contributions, the <strong>$t$-channel</strong> and <strong>$u$-channel</strong> diagrams in which the two electrons exchange a photon. The two diagrams differ by the exchange of the two final electrons and therefore enter with a relative <strong>minus sign</strong>, the Pauli exchange sign of identical fermions. By <strong>crossing symmetry</strong> the Møller amplitude and the Bhabha amplitude, $e^+e^-\to e^+e^-$, are the same amplitude read with different particle labels; the companion article <em>Bhabha Scattering in Biquaternionic Form</em> uses that correspondence.</p>
 <p>This article treats Møller scattering in the biquaternion framework. The framework's contribution is structural. Its minimal-coupling and quantization articles supply the ingredients — a $\mathrm{U}(1)$ coupling localised in the centre, a quantized Maxwell field, a Fock space with creation and annihilation operators, and a propagator — and the Møller amplitude is then a product of <strong>two material-sector currents</strong> contracted by the photon propagator. The <strong>relative minus sign</strong> between the two diagrams is the antisymmetry of fermion exchange, which the framework's canonical quantization already carries as the identity $(a^{\mathrm{fop}\dagger})^2=0$ on the mode algebra. And <strong>crossing symmetry</strong> is the framework's charge conjugation on the doubled module, read backwards. What the framework does not do is evaluate loops: the corpus's scattering content is tree-level, and the present article stays there.</p>
-<p><strong>Every vertex below is one action, written out.</strong> A vertex acts on an element $Q$ of $\mathbb{B}$ by $Q\mapsto aQb$, with $a$ and $b$ elements of the algebra, and each action is printed in full where it enters. The five actions the amplitude uses are written out in §<em>Kinematics</em>; the closing section writes the same five in the older display, for comparison only, and nothing in the body depends on it. Throughout, $i^2=-1$ is the central imaginary of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, so every $i$ in an action is that one central unit and no separate imaginary of a display enters.</p>
+<p><strong>Every vertex below is one action, written out.</strong> A vertex acts on an element $Q$ of $\mathbb{B}$ by $Q\mapsto aQb$, with $a$ and $b$ elements of the algebra, and each action is printed in full where it enters. The five actions the amplitude uses are written out in §<em>Kinematics</em>; the closing section writes the same five in the older display, for comparison only, and nothing in the body depends on it. Throughout, $i$ is the central imaginary of $\mathbb{B}$, so every $i$ in an action is that one central unit and no separate imaginary of a display enters.</p>
 <p>The article is organised as follows. The next section sets up the two diagrams, the kinematics, the mass equation of the external elements and the minus sign. The third computes the spin-summed matrix element. The fourth gives the cross section and its two limits. The fifth treats the weak correction and the parity-violating asymmetry. The sixth is the biquaternion interpretation. The seventh is the closing comparison, and the remaining sections are the open questions, the summary, the notation table and the literature.</p>
 <h2 id="the-process-and-its-two-diagrams">The Process and Its Two Diagrams</h2>
 <h3 id="kinematics">Kinematics</h3>
-<p>Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electrons $p_3,p_4$, with $p_i^2=m^2$ and $m=m_e$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central imaginary $i$, $i^2=-1$.</p>
+<p>Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electrons $p_3,p_4$, with $p_i^2=m^2$ and $m=m_e$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the scalar unit $e_t$, the three vector units and the central imaginary $i$, as <em>Algebra and Element Conventions</em> fixes them.</p>
 <p><strong>The four insertions.</strong> The four vertex insertions are the four actions</p>
 <p>$$
 \Phi_t:\ Q\mapsto iQ\vec e_x,\qquad
 \Phi_k:\ Q\mapsto i\vec e_kQ\vec e_y\quad(k=1,2,3),
 $$</p>
-<p>with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$, so each square spends $i^2=-1$ once, and the remaining signs come from $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$: $\Phi_t^2$ is the identity, $\Phi_k^2$ is minus the identity, and $\Phi_\mu\Phi_\nu+\Phi_\nu\Phi_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the <strong>chirality action</strong>, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.</p>
+<p>with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$ and one or two vector units, so its square is read from the unit squares and the unit products of <em>Algebra and Element Conventions</em>: $\Phi_t^2$ is the identity, $\Phi_k^2$ is minus the identity, and $\Phi_\mu\Phi_\nu+\Phi_\nu\Phi_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$. Those three derived forms are what every identity below uses. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the <strong>chirality action</strong>, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.</p>
 <p><strong>The momentum insertion.</strong> The insertion of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the action</p>
 <p>$$
 P(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{k=1}^3 p_k\,i\vec e_kQ\vec e_y ,
@@ -122,7 +122,7 @@ $$</p>
 \qquad
 \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
 $$</p>
-<p>where $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ is its quaternion conjugate. The two subscripts are the two values of the chirality of the declared frame: $\tilde\Psi_L$ is the part of value $L$, the minus one, and $\tilde\Psi_R$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is <strong>one-sided</strong>.</p>
+<p>where $\tilde\nabla$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ its quaternion conjugate, in the sense of <em>Algebra and Element Conventions</em>. The two subscripts are the two values of the chirality of the declared frame: $\tilde\Psi_L$ is the part of value $L$, the minus one, and $\tilde\Psi_R$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is <strong>one-sided</strong>.</p>
 <p><strong>The mass on the right.</strong> Read on the whole algebra rather than on the carrier of the field, the same physics is the single equation</p>
 <p>$$
 \tilde\nabla^{\natural}F=-i\,m\,\bar F\vec e_z ,
@@ -163,22 +163,22 @@ $$</p>
 D(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{k=1}^3 p_k\,i\vec e_kQ\vec e_y+m\,Q ,
 $$</p>
 <p>that is, the momentum insertion $P(p)$ plus the scalar $m$. The mass term is a scalar multiple of the unit and therefore acts on the right and on the left alike. This identity is what turns a sum over the spins of a product of two vertex currents into a trace of the corresponding composite, and it is the only place where the two external elements enter the squared amplitude.</p>
-<p><strong>The trace.</strong> The traces below are the traces of composites of these actions on the carrier of the field, in the normalisation in which the identity action has trace four. Let $\Phi_i$ be the action $Q\mapsto a_iQb_i$. The trace of the composite $\Phi_1\Phi_2\cdots\Phi_n$ is four times the product of the scalar parts of the two multiplier strings,</p>
+<p><strong>The trace.</strong> The traces below are the operator traces of composites of these actions, in the normalisation of <em>Matrix Representations Conventions</em>, where the identity action has trace four. The factorisation is a derived form, read off the two slots: with $\Phi_i$ the action $Q\mapsto a_iQb_i$, the trace of the composite $\Phi_1\Phi_2\cdots\Phi_n$ is four times the product of the scalar parts of the two multiplier strings,</p>
 <p>$$
-\operatorname{Tr}\bigl[\Phi_1\Phi_2\cdots\Phi_n\bigr]
+\operatorname{tr}\bigl[\Phi_1\Phi_2\cdots\Phi_n\bigr]
 =4\,\mathrm{Sc}\bigl(a_1a_2\cdots a_n\bigr)\,\mathrm{Sc}\bigl(b_n\cdots b_2b_1\bigr),
 $$</p>
 <p>the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $\Phi^t=\Phi_t$ and $\Phi^k=-\Phi_k$, the three trace combinations are</p>
 <p>$$
-L_t:=\operatorname{Tr}\bigl[\Phi^\mu D(p_1)\Phi^\nu D(p_3)\bigr]\,
-\operatorname{Tr}\bigl[\Phi_\mu D(p_2)\Phi_\nu D(p_4)\bigr],
+L_t:=\operatorname{tr}\bigl[\Phi^\mu D(p_1)\Phi^\nu D(p_3)\bigr]\,
+\operatorname{tr}\bigl[\Phi_\mu D(p_2)\Phi_\nu D(p_4)\bigr],
 $$</p>
 <p>$$
-L_u:=\operatorname{Tr}\bigl[\Phi^\mu D(p_2)\Phi^\nu D(p_3)\bigr]\,
-\operatorname{Tr}\bigl[\Phi_\mu D(p_1)\Phi_\nu D(p_4)\bigr],
+L_u:=\operatorname{tr}\bigl[\Phi^\mu D(p_2)\Phi^\nu D(p_3)\bigr]\,
+\operatorname{tr}\bigl[\Phi_\mu D(p_1)\Phi_\nu D(p_4)\bigr],
 $$</p>
 <p>$$
-L_{tu}:=\operatorname{Tr}\bigl[D(p_3)\Phi^\mu D(p_1)\Phi^\nu D(p_4)\Phi_\mu D(p_2)\Phi_\nu\bigr],
+L_{tu}:=\operatorname{tr}\bigl[D(p_3)\Phi^\mu D(p_1)\Phi^\nu D(p_4)\Phi_\mu D(p_2)\Phi_\nu\bigr],
 $$</p>
 <p>with the sum over the two repeated Lorentz indices, and the trace of an odd number of insertions vanishes. Then</p>
 <p>$$
@@ -187,8 +187,8 @@ $$</p>
 $$</p>
 <p>The traces are evaluated with the standard four-dimensional identities, which follow from the anticommutation relations of the insertions alone,</p>
 <p>$$
-\operatorname{Tr}(\Phi_\mu\Phi_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\operatorname{Tr}(\Phi_\mu\Phi_\nu\Phi_\rho\Phi_\sigma)
+\operatorname{tr}(\Phi_\mu\Phi_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\operatorname{tr}(\Phi_\mu\Phi_\nu\Phi_\rho\Phi_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr),
 $$</p>
 <p>with odd traces vanishing; <em>The Legacy Pauli Gamma Formulation</em> records them with the rest of the dictionary. Evaluating the three traces gives the closed form, in which the factor $\tfrac14$ of the spin average is already included:</p>
@@ -257,7 +257,7 @@ j_\mu=\mathrm{Sc}\bigl(\psi^{*}i\vec e_x\,\Phi_\mu\psi\bigr),
 \qquad
 \bar\psi=\psi^{*}i\vec e_x,
 $$</p>
-<p>where $\Phi_\mu$ are the four insertions of §<em>Kinematics</em>. The current is a material-sector object, $\tilde J=ic\,j_0e_t+\vec j\in\mathbb M_-$, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.</p>
+<p>where $\Phi_\mu$ are the four insertions of §<em>Kinematics</em>. The current is the material-sector four-current $\tilde J\in\mathbb M_-$ of <em>Algebra and Element Conventions</em>, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.</p>
 <h3 id="the-relative-minus-sign-is-the-mode-algebras-antisymmetry">The relative minus sign is the mode algebra's antisymmetry</h3>
 <p>The single structural feature the framework owns here is the exchange sign. The corpus's canonical-quantization article of the Dirac field obtains <strong>Pauli exclusion as the algebraic identity</strong> $(a^{\mathrm{fop}\dagger}_r)^2=0$, together with the $\mathbb Z/2$ grading of the mode algebra by fermion parity. That identity is exactly the statement that two fermionic mode operators anticommute, and the relative minus sign between the $t$- and $u$-channel amplitudes is its momentum-space consequence: exchanging two identical external fermions costs a sign. The framework therefore does not merely transcribe the minus sign; the sign is the shadow of the graded structure the corpus establishes on the operator algebra. This is the same $\mathbb Z/2$ grading that the corpus's KMS and fermion-parity articles treat.</p>
 <h3 id="crossing-symmetry-is-charge-conjugation">Crossing symmetry is charge conjugation</h3>
@@ -412,8 +412,8 @@ $$</p>
 <td>Spin-averaged squared matrix element, factor $\tfrac14$ included</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}$</td>
-<td>Trace of a composite of actions on the carrier of the field</td>
+<td>$\operatorname{tr}$</td>
+<td>The operator trace of a composite of actions, four times the product of the two scalar parts</td>
 </tr>
 <tr>
 <td>$L_t,L_u,L_{tu}$</td>

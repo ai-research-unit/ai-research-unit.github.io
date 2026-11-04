@@ -128,8 +128,8 @@ $$</p>
 <td>commutative</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dua}}$</td>
-<td>$\mathbb{C}^{\mathrm{dua}}$</td>
+<td>$\mathbb{C}^{\mathrm{dln}}$</td>
+<td>$\mathbb{C}^{\mathrm{dln}}$</td>
 <td>commutative</td>
 </tr>
 <tr>
@@ -204,7 +204,7 @@ $$</p>
 <td>four components, $\cong \mathbb{R}^\times \times \mathbb{R}^\times$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dua}}$</td>
+<td>$\mathbb{C}^{\mathrm{dln}}$</td>
 <td>$a \neq 0$</td>
 <td>$\{a + b\varepsilon : a \neq 0\}$, an abelian group</td>
 </tr>
@@ -229,7 +229,7 @@ $$</p>
 <p>$$
 u \cdot \bar{u}\,(u\bar u)^{-1} = (u\bar u)\,(u\bar u)^{-1} = 1, \qquad \bar{u}\,(u\bar u)^{-1}\cdot u = (u\bar u)^{-1}\,\bar{u}u = 1,
 $$</p>
-<p>using $u\bar{u} = \bar{u}u \in R$ and its centrality. For $\mathbb{C}^{\mathrm{dua}}$ the element $a + b\varepsilon$ has $(a + b\varepsilon)(a - b\varepsilon) = a^2$, which is a unit of $\mathbb{R}$ exactly when $a \neq 0$; the inverse is $a^{-1} - b a^{-2}\varepsilon$.</p>
+<p>using $u\bar{u} = \bar{u}u \in R$ and its centrality. For $\mathbb{C}^{\mathrm{dln}}$ the element $a + b\varepsilon$ has $(a + b\varepsilon)(a - b\varepsilon) = a^2$, which is a unit of $\mathbb{R}$ exactly when $a \neq 0$; the inverse is $a^{-1} - b a^{-2}\varepsilon$.</p>
 <h2 id="zero-divisors">Zero Divisors</h2>
 <p><strong>Definition.</strong> Let $A$ be an $R$-algebra. A nonzero element $z \in A$ is a <strong>left zero divisor</strong> if there exists $0 \neq w \in A$ with $zw = 0$, and a <strong>right zero divisor</strong> if there exists $0 \neq w$ with $wz = 0$. It is a <strong>zero divisor</strong> if it is a left or a right zero divisor. An algebra with no zero divisors is a <strong>domain</strong>, and a commutative unital associative algebra with no zero divisors is an <strong>integral domain</strong>.</p>
 <p>In a commutative algebra the two notions coincide. A left zero divisor cannot be a unit, and by the proposition above a unit cannot be a zero divisor; the two classes are disjoint. They need not exhaust the algebra: in $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ the elements are $0$, the units $a + b\varepsilon$ with $a \neq 0$, and the zero divisors $b\varepsilon$ with $b \neq 0$, but in general there are elements that are neither — in $\mathbb{Z}$, the element $2$ is neither a unit nor a zero divisor.</p>
@@ -253,7 +253,7 @@ $$</p>
 (1 + j)(1 - j) = 1 - j^2 = 0.
 $$</p>
 <p>Since every zero divisor of $\mathbb{C}^{\mathrm{spl}}$ has $a^2 = b^2$, the zero divisors of $\mathbb{C}^{\mathrm{spl}}$ are exactly the nonzero multiples of $1 + j$ and of $1 - j$, that is, the two lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$. In the idempotent basis $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ these are the ideals $\mathbb{C}^{\mathrm{spl}}\pi_{1,2}$.</p>
-<p><strong>Example (zero divisors in $\mathbb{C}^{\mathrm{dua}}$).</strong> For $z = a + b\varepsilon$ one has $z \cdot b\varepsilon = ab\varepsilon$, so if $a \neq 0$ then $z$ is a unit, and if $a = 0$ and $b \neq 0$ then $z^2 = 0$ and $z$ is a zero divisor. The zero divisors of $\mathbb{C}^{\mathrm{dua}}$ are exactly the nonzero elements of the maximal ideal $(\varepsilon) = \mathbb{R}\varepsilon$, which is a square-zero ideal.</p>
+<p><strong>Example (zero divisors in $\mathbb{C}^{\mathrm{dln}}$).</strong> For $z = a + b\varepsilon$ one has $z \cdot b\varepsilon = ab\varepsilon$, so if $a \neq 0$ then $z$ is a unit, and if $a = 0$ and $b \neq 0$ then $z^2 = 0$ and $z$ is a zero divisor. The zero divisors of $\mathbb{C}^{\mathrm{dln}}$ are exactly the nonzero elements of the maximal ideal $(\varepsilon) = \mathbb{R}\varepsilon$, which is a square-zero ideal.</p>
 <p><strong>Example (zero divisors in $\mathbb{B}$).</strong> For a biquaternion $\tilde{Q}$ the product $\tilde{Q}\tilde{Q}^{\natural}$ is multiplicative. Hence if $\tilde{Q}\tilde{Q}^{\natural} = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}^{\natural} \neq 0$ and $\tilde{Q}$ is a zero divisor; and conversely, since $\tilde{Q}\tilde{Q}^{\natural} \neq 0$ makes $\tilde{Q}$ a unit, every nonzero $\tilde{Q}$ with $\tilde{Q}\tilde{Q}^{\natural} = 0$ is a zero divisor. The algebra $\mathbb{B}$ is thus partitioned into $\{0\}$, the units $\tilde{Q}\tilde{Q}^{\natural} \neq 0$, and the zero divisors $\tilde{Q}\tilde{Q}^{\natural} = 0$. The explicit pairs are exhibited .</p>
 <p><strong>Example (zero divisors in $\mathbb{B}^{\mathrm{spl}}$).</strong> The split biquaternions contain the central split complex scalars, and the zero divisors of $\mathbb{C}^{\mathrm{spl}}$ are inherited: with $j$ central and $j^2 = +1$,</p>
 <p>$$
@@ -284,10 +284,10 @@ $$</p>
 <p>so $ba = bc = 1$ and $b$ is a two-sided inverse of $a$.</p>
 <p><strong>Corollary.</strong> Let $A$ be a finite-dimensional unital associative algebra over a field $F$. Then $A$ is a division algebra if and only if $A_A$ is simple if and only if $A$ has no zero divisors.</p>
 <p>Because $A_A$ is simple for a division algebra, a division algebra has no nonzero proper right ideal, and by the same argument no nonzero proper two-sided ideal: every division algebra is <strong>simple</strong>. The converse fails. The matrix algebra $M_n(k)$ over a field $k$ is simple, asshows, but $A_A$ is not simple as a module — its nonzero proper right ideals are the column-type subspaces — and $M_n(k)$ has zero divisors. Simplicity of the algebra and simplicity of the regular module are therefore genuinely different conditions; the second is the division condition.</p>
-<p><strong>Example.</strong> The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ over their own ground fields, and their finite-dimensional extensions are not covered here. The algebras $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for $|G| \geq 2$ all have zero divisors or non-units and are not division algebras. Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ (Frobenius), so no example beyond these three exists; over $\mathbb{C}$ the only one is $\mathbb{C}$ itself (Wedderburn). The proofs are given.</p>
+<p><strong>Example.</strong> The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ over their own ground fields, and their finite-dimensional extensions are not covered here. The algebras $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dln}}$, $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for $|G| \geq 2$ all have zero divisors or non-units and are not division algebras. Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ (Frobenius), so no example beyond these three exists; over $\mathbb{C}$ the only one is $\mathbb{C}$ itself (Wedderburn). The proofs are given.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>centre</strong> $Z(A) = C_A(A)$ is the set of elements commuting with everything; for an associative algebra it is a commutative subalgebra containing the unit, and it is preserved by every algebra automorphism. An algebra is <strong>central</strong> when $Z(A) = R\cdot 1$. The standard centres are $\mathbb{R}$ for $\mathbb{H}$, $\mathbb{C}^{\mathrm{spl}}$ for $\mathbb{B}^{\mathrm{spl}}$, $\mathbb{C}$ for $\mathbb{B}$, and $k I_n$ for $M_n(k)$.</p>
-<p>A <strong>unit</strong> is an element with a two-sided inverse, and the units form the group $A^\times$; a unit is neither a zero divisor nor a member of a proper ideal. A <strong>zero divisor</strong> is a nonzero element annihilating a nonzero element on one side, and the annihilator of an element is a one-sided ideal. In $\mathbb{C}^{\mathrm{spl}}$ the zero divisors are the nonzero multiples of $1 \pm j$; in $\mathbb{C}^{\mathrm{dua}}$ they are the nonzero elements of the square-zero maximal ideal $(\varepsilon)$; in $\mathbb{B}$ they are exactly the nonzero elements with $\langle\tilde{Q}\rangle_{\natural} = 0$; in $\mathbb{B}^{\mathrm{spl}}$ they include the inherited split complex ones, beginning with $1 \pm j$.</p>
+<p>A <strong>unit</strong> is an element with a two-sided inverse, and the units form the group $A^\times$; a unit is neither a zero divisor nor a member of a proper ideal. A <strong>zero divisor</strong> is a nonzero element annihilating a nonzero element on one side, and the annihilator of an element is a one-sided ideal. In $\mathbb{C}^{\mathrm{spl}}$ the zero divisors are the nonzero multiples of $1 \pm j$; in $\mathbb{C}^{\mathrm{dln}}$ they are the nonzero elements of the square-zero maximal ideal $(\varepsilon)$; in $\mathbb{B}$ they are exactly the nonzero elements with $\langle\tilde{Q}\rangle_{\natural} = 0$; in $\mathbb{B}^{\mathrm{spl}}$ they include the inherited split complex ones, beginning with $1 \pm j$.</p>
 <p>A unital associative algebra $A$ is a <strong>division algebra</strong> exactly when every nonzero element is a unit and exactly when the regular module $A_A$ is simple; over a field, a finite-dimensional such algebra is a division algebra exactly when it has no zero divisors. Over a field and in finite dimension the non-units are the origin together with the zero divisors, so a non-unit is either $0$ or annihilates something nonzero. The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the simple algebras $M_n(k)$ and $\mathbb{B}$ fail to be division algebras because the regular module is not simple and zero divisors exist.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -339,7 +339,7 @@ $$</p>
 <td>Split complex numbers, zero divisors $\mathbb{R}(1\pm j)$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dua}}$</td>
+<td>$\mathbb{C}^{\mathrm{dln}}$</td>
 <td>Dual numbers, zero divisors the maximal ideal $(\varepsilon)$</td>
 </tr>
 <tr>

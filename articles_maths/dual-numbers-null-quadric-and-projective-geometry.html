@@ -71,16 +71,16 @@
         <h1 id="dual-numbers-null-quadric-and-projective-geometry"><strong>Dual-Numbers Null Quadric and Projective Geometry</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The norm $\langle q + \varepsilon q'\rangle = q^2$ decides invertibility in the dual-number algebra and vanishes exactly on the zero divisors together with the origin. Both statements are algebraic: the criterion is in <em>Dual-Numbers Norm and Invertibility</em> and the zero-divisor classification in <em>Dual-Numbers Zero Divisors</em>. This article treats the form geometrically. Here the algebra is two-dimensional and the form has rank one, so the quadric degenerates to a single point of multiplicity two and the whole projective picture collapses.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, a general dual number is</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, a general dual number is</p>
 <p>$$
 Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$</p>
-<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, the norm $\langle Q\rangle = Q\bar Q = q^2$ and its polar form $\langle Q_1, Q_2\rangle = q_1 q_2$ (a form and a distance, defined in <em>Dual-Numbers Norm and Invertibility</em>), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{C}^{\mathrm{dua}}}$ and infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in <em>Shears and Parabolic Rotations</em>.</p>
+<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, dual conjugation $\bar Q = q - \varepsilon q'$, the norm $\langle Q\rangle = Q\bar Q = q^2$ and its polar form $\langle Q_1, Q_2\rangle = q_1 q_2$ (a form and a distance, defined in <em>Dual-Numbers Norm and Invertibility</em>), and the maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, real submodule $R_{\mathbb{C}^{\mathrm{dln}}}$ and infinitesimal submodule $\varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$. The geometry of the dual plane itself—dilations, shears, the parabolic angle—is developed in <em>Shears and Parabolic Rotations</em>.</p>
 <h2 id="the-degenerate-isotropic-cone">The Degenerate Isotropic Cone</h2>
 <h3 id="the-isotropic-set">The Isotropic Set</h3>
 <p><strong>Definition.</strong> The <strong>isotropic set</strong> of the norm is</p>
 <p>$$
-\mathcal{N} = \{Q \in \mathbb{C}^{\mathrm{dua}} : \langle Q\rangle = 0\} = \{Q : q = 0\} = \mathrm{M},
+\mathcal{N} = \{Q \in \mathbb{C}^{\mathrm{dln}} : \langle Q\rangle = 0\} = \{Q : q = 0\} = \mathrm{M},
 $$</p>
 <p>the maximal ideal. Its punctured part is the zero-divisor set $\mathcal{Z} = \mathrm{M} \setminus \{0\}$.</p>
 <p><strong>Theorem.</strong> $\mathcal{N} = \mathrm{M}$ is a single line through the origin, closed and of real dimension one, and it is a cone with apex $0$; it is the radical of $B$. As a quadratic cone it is a <strong>double line</strong>: the equation $q^2 = 0$ is the square of the linear equation $q = 0$, so the cone is the line $q = 0$ counted twice.</p>
@@ -91,7 +91,7 @@ $$</p>
 <h3 id="the-projective-dual-line">The Projective Dual Line</h3>
 <p><strong>Definition.</strong> The <strong>projective dual line</strong> is</p>
 <p>$$
-\mathbb{P}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{P}^1(\mathbb{R}) = \{[q : q'] : (q,q') \neq (0,0)\},
+\mathbb{P}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{P}^1(\mathbb{R}) = \{[q : q'] : (q,q') \neq (0,0)\},
 $$</p>
 <p>the space of lines through the origin of the dual plane; it is a one-dimensional projective space homeomorphic to a circle.</p>
 <h3 id="the-affine-chart">The Affine Chart</h3>
@@ -138,7 +138,7 @@ $$</p>
 <tr>
 <th></th>
 <th>a non-degenerate form (over $\mathbb{C}$)</th>
-<th>$\mathbb{C}^{\mathrm{dua}}$ (rank $1$, dim $2$ over $\mathbb{R}$)</th>
+<th>$\mathbb{C}^{\mathrm{dln}}$ (rank $1$, dim $2$ over $\mathbb{R}$)</th>
 </tr>
 </thead>
 <tbody>
@@ -194,7 +194,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>$\mathbb{C}^{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
 <td>Dual-number algebra; $\varepsilon^2 = 0$</td>
 </tr>
 <tr>
@@ -226,7 +226,7 @@ $$</p>
 <td>Isotropic set, the double line $q^2 = 0$</td>
 </tr>
 <tr>
-<td>$\mathbb{P}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{P}^1(\mathbb{R})$</td>
+<td>$\mathbb{P}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{P}^1(\mathbb{R})$</td>
 <td>Projective dual line</td>
 </tr>
 <tr>

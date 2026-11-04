@@ -70,38 +70,38 @@
       <div class="article-body">
         <h1 id="dual-numbers-exponential-and-lie-group-structure"><strong>Dual-Numbers Exponential and Lie Group Structure</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{C}^{\mathrm{dua}}$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows <em>Dual-Numbers Algebra</em> for the algebra and its abelian Lie bracket, <em>Dual-Numbers Norm and Invertibility</em> for the unit group, <em>Dual-Numbers Automorphisms and Derivations</em> for the derivation algebra, and <em>Shears and Parabolic Rotations</em> for the shear. The comparison throughout is with the split complex algebra, whose unit group is the two-component quotient $\mathbb{R}^\times$; here the unit group is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the exponential is a formal series when $R$ is a commutative $\mathbb{Q}$-algebra and an analytic series over the geometric specialisation $R = \mathbb{R}$, and then the algebra is written $\mathbb{C}^{\mathrm{dua}}$. A general dual number is</p>
+<p>This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{C}^{\mathrm{dln}}$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows <em>Dual-Numbers Algebra</em> for the algebra and its abelian Lie bracket, <em>Dual-Numbers Norm and Invertibility</em> for the unit group, <em>Dual-Numbers Automorphisms and Derivations</em> for the derivation algebra, and <em>Shears and Parabolic Rotations</em> for the shear. The comparison throughout is with the split complex algebra, whose unit group is the two-component quotient $\mathbb{R}^\times$; here the unit group is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the exponential is a formal series when $R$ is a commutative $\mathbb{Q}$-algebra and an analytic series over the geometric specialisation $R = \mathbb{R}$, and then the algebra is written $\mathbb{C}^{\mathrm{dln}}$. A general dual number is</p>
 <p>$$
 Q = q + \varepsilon q', \qquad q, q' \in R,
 $$</p>
-<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = q^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$, and unit group $(\mathbb{C}^{\mathrm{dua}})^\times = \{q \neq 0\}$.</p>
+<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = q^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}^{\mathrm{dln}}}$, and unit group $(\mathbb{C}^{\mathrm{dln}})^\times = \{q \neq 0\}$.</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
 <h3 id="the-lie-bracket">The Lie Bracket</h3>
-<p><strong>Definition.</strong> The <strong>Lie bracket</strong> on $\mathbb{C}^{\mathrm{dua}}_R$ is the commutator</p>
+<p><strong>Definition.</strong> The <strong>Lie bracket</strong> on $\mathbb{C}^{\mathrm{dln}}_R$ is the commutator</p>
 <p>$$
 [Q_1, Q_2] = Q_1Q_2 - Q_2Q_1.
 $$</p>
-<p><strong>Theorem.</strong> $\mathbb{C}^{\mathrm{dua}}_R$ is a <strong>commutative</strong> algebra, so its Lie bracket vanishes identically:</p>
+<p><strong>Theorem.</strong> $\mathbb{C}^{\mathrm{dln}}_R$ is a <strong>commutative</strong> algebra, so its Lie bracket vanishes identically:</p>
 <p>$$
-[Q_1, Q_2] = 0 \qquad \text{for all } Q_1, Q_2 \in \mathbb{C}^{\mathrm{dua}}_R.
+[Q_1, Q_2] = 0 \qquad \text{for all } Q_1, Q_2 \in \mathbb{C}^{\mathrm{dln}}_R.
 $$</p>
-<p>Hence the Lie algebra $\mathrm{G} = \mathbb{C}^{\mathrm{dua}}_R$ is <strong>abelian</strong>.</p>
+<p>Hence the Lie algebra $\mathrm{G} = \mathbb{C}^{\mathrm{dln}}_R$ is <strong>abelian</strong>.</p>
 <p><strong>Proof.</strong> $Q_1Q_2 = Q_2Q_1$ for all $Q_1, Q_2$ because multiplication of dual numbers is commutative.</p>
 <h3 id="nilpotence">Nilpotence</h3>
 <p><strong>Definition.</strong> A Lie algebra $\mathrm{G}$ is <strong>nilpotent of class $c$</strong> if the descending central series $\mathrm{G}^1 = \mathrm{G}$, $\mathrm{G}^{k+1} = [\mathrm{G}, \mathrm{G}^k]$ reaches $0$ at step $c + 1$, and $\mathrm{G}$ is <strong>abelian</strong> when $[\mathrm{G}, \mathrm{G}] = 0$.</p>
-<p><strong>Proposition.</strong> $\mathrm{G} = \mathbb{C}^{\mathrm{dua}}_R$ is a nilpotent Lie algebra of class $1$; equivalently, its derived subalgebra is zero, $[\mathrm{G}, \mathrm{G}] = 0$.</p>
+<p><strong>Proposition.</strong> $\mathrm{G} = \mathbb{C}^{\mathrm{dln}}_R$ is a nilpotent Lie algebra of class $1$; equivalently, its derived subalgebra is zero, $[\mathrm{G}, \mathrm{G}] = 0$.</p>
 <p><strong>Proof.</strong> The derived subalgebra is spanned by brackets $[Q_1,Q_2]$, all of which vanish; the series is $\mathrm{G} \supset 0$.</p>
 <p>So the dual-number Lie algebra is the abelian two-dimensional real Lie algebra, the simplest nilpotent example. Its enveloping algebra is the polynomial algebra on two commuting generators, and its only Lie structure is the underlying vector space.</p>
 <h3 id="the-lie-algebra-of-a-commutative-associative-algebra">The Lie Algebra of a Commutative Associative Algebra</h3>
-<p><strong>Remark.</strong> For any associative algebra $A$ the commutator makes $A$ a Lie algebra, and the Jacobi identity is a consequence of associativity. When $A$ is commutative the bracket vanishes, so the Lie algebra records no more than the $R$-module structure. The interesting Lie theory of $\mathbb{C}^{\mathrm{dua}}$ therefore lives not in $\mathbb{C}^{\mathrm{dua}}$ itself but in its derivation algebra $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$ and in the Lie group structure of the unit group, which are treated below.</p>
+<p><strong>Remark.</strong> For any associative algebra $A$ the commutator makes $A$ a Lie algebra, and the Jacobi identity is a consequence of associativity. When $A$ is commutative the bracket vanishes, so the Lie algebra records no more than the $R$-module structure. The interesting Lie theory of $\mathbb{C}^{\mathrm{dln}}$ therefore lives not in $\mathbb{C}^{\mathrm{dln}}$ itself but in its derivation algebra $\operatorname{Der}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$ and in the Lie group structure of the unit group, which are treated below.</p>
 <h2 id="the-exponential">The Exponential</h2>
 <h3 id="definition-and-convergence">Definition and Convergence</h3>
-<p><strong>Definition.</strong> Let $R$ be a commutative $\mathbb{Q}$-algebra, so that $k!$ is invertible for every $k$. The <strong>exponential</strong> of $Q \in \mathbb{C}^{\mathrm{dua}}_R$ is the formal series</p>
+<p><strong>Definition.</strong> Let $R$ be a commutative $\mathbb{Q}$-algebra, so that $k!$ is invertible for every $k$. The <strong>exponential</strong> of $Q \in \mathbb{C}^{\mathrm{dln}}_R$ is the formal series</p>
 <p>$$
 \exp(Q) = \sum_{k \geq 0} \frac{Q^k}{k!}.
 $$</p>
-<p>Over $R = \mathbb{R}$ the series converges for every $Q$, in the topology of $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}^2$.</p>
+<p>Over $R = \mathbb{R}$ the series converges for every $Q$, in the topology of $\mathbb{C}^{\mathrm{dln}} \cong \mathbb{R}^2$.</p>
 <h3 id="closed-form">Closed Form</h3>
 <p><strong>Theorem.</strong> For every $Q = q + \varepsilon q'$,</p>
 <p>$$
@@ -117,41 +117,41 @@ $$</p>
 <p><strong>Example.</strong> $\exp(2 + 3\varepsilon) = e^{2}(1 + 3\varepsilon)$; numerically $e^{2} = 7.389056\ldots$, so the real part is $7.389056\ldots$ and the infinitesimal part is $3e^{2} = 22.167168\ldots$.</p>
 <p><strong>Example.</strong> The dual logarithm inverts the exponential on the shear group $1 + \mathrm{M}$, where it is $\log(1 + s\varepsilon) = s\varepsilon$; thus $\log(1 + 5\varepsilon) = 5\varepsilon$ and $\log(1 - \varepsilon) = -\varepsilon$.</p>
 <h3 id="the-group-homomorphism-property">The Group Homomorphism Property</h3>
-<p><strong>Theorem.</strong> The exponential is a homomorphism from the additive group $(\mathbb{C}^{\mathrm{dua}}_R, +)$ to the multiplicative group $(\mathbb{C}^{\mathrm{dua}}_R)^\times$:</p>
+<p><strong>Theorem.</strong> The exponential is a homomorphism from the additive group $(\mathbb{C}^{\mathrm{dln}}_R, +)$ to the multiplicative group $(\mathbb{C}^{\mathrm{dln}}_R)^\times$:</p>
 <p>$$
 \exp(Q_1 + Q_2) = \exp(Q_1)\exp(Q_2).
 $$</p>
-<p><strong>Proof.</strong> The exponential is the usual exponential of the commutative associative algebra $\mathbb{C}^{\mathrm{dua}}_R$, and for commuting $Q_1, Q_2$ the identity $\exp(Q_1+Q_2) = \exp(Q_1)\exp(Q_2)$ follows by the binomial theorem. Alternatively, $\exp(q_1 + \varepsilon q'_1)\exp(q_2 + \varepsilon q'_2) = \exp(q_1)(1 + \varepsilon q'_1)\exp(q_2)(1 + \varepsilon q'_2) = \exp(q_1+q_2)(1 + (q'_1+q'_2)\varepsilon) = \exp((q_1+q_2) + \varepsilon(q'_1+q'_2))$, matching $Q_1 + Q_2$.</p>
+<p><strong>Proof.</strong> The exponential is the usual exponential of the commutative associative algebra $\mathbb{C}^{\mathrm{dln}}_R$, and for commuting $Q_1, Q_2$ the identity $\exp(Q_1+Q_2) = \exp(Q_1)\exp(Q_2)$ follows by the binomial theorem. Alternatively, $\exp(q_1 + \varepsilon q'_1)\exp(q_2 + \varepsilon q'_2) = \exp(q_1)(1 + \varepsilon q'_1)\exp(q_2)(1 + \varepsilon q'_2) = \exp(q_1+q_2)(1 + (q'_1+q'_2)\varepsilon) = \exp((q_1+q_2) + \varepsilon(q'_1+q'_2))$, matching $Q_1 + Q_2$.</p>
 <p>So $\exp$ is a homomorphism of groups, and the image is a subgroup of the unit group.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="the-lie-group">The Lie Group</h3>
 <p><strong>Theorem.</strong> The group of units</p>
 <p>$$
-(\mathbb{C}^{\mathrm{dua}}_R)^\times = \{q + \varepsilon q' : q \in R^\times\}
+(\mathbb{C}^{\mathrm{dln}}_R)^\times = \{q + \varepsilon q' : q \in R^\times\}
 $$</p>
 <p>is a group under multiplication, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over $R = \mathbb{R}$ it is a two-dimensional abelian Lie group with the following structure:</p>
 <p>$$
-\boxed{\; (\mathbb{C}^{\mathrm{dua}})^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +) \;},
+\boxed{\; (\mathbb{C}^{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +) \;},
 $$</p>
 <p>the isomorphism being $q + \varepsilon q' \leftrightarrow (q,\, q'/q)$.</p>
 <p><strong>Proof.</strong> The group axioms and the inverse formula are from <em>Dual-Numbers Norm and Invertibility</em>; the isomorphism is the direct-product decomposition of <em>Shears and Parabolic Rotations</em>, where the second factor is the shear group $1 + \mathrm{M}$.</p>
 <h3 id="connected-components">Connected Components</h3>
 <p><strong>Proposition.</strong> Over $R = \mathbb{R}$ the unit group has exactly two connected components, $\{q > 0\}$ and $\{q < 0\}$, each contractible; the identity component is</p>
 <p>$$
-(\mathbb{C}^{\mathrm{dua}})^\times_0 = \{q > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}.
+(\mathbb{C}^{\mathrm{dln}})^\times_0 = \{q > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}.
 $$</p>
-<p><strong>Proof.</strong> The sign of $q$ is a continuous surjective homomorphism $(\mathbb{C}^{\mathrm{dua}})^\times \to \{\pm 1\}$; the two fibres are half-planes, hence connected and contractible.</p>
+<p><strong>Proof.</strong> The sign of $q$ is a continuous surjective homomorphism $(\mathbb{C}^{\mathrm{dln}})^\times \to \{\pm 1\}$; the two fibres are half-planes, hence connected and contractible.</p>
 <h3 id="surjectivity-of-the-exponential-onto-the-identity-component">Surjectivity of the Exponential onto the Identity Component</h3>
 <p><strong>Theorem.</strong> Over $R = \mathbb{R}$ the exponential</p>
 <p>$$
-\exp : \mathrm{G} = \mathbb{C}^{\mathrm{dua}} \longrightarrow (\mathbb{C}^{\mathrm{dua}})^\times
+\exp : \mathrm{G} = \mathbb{C}^{\mathrm{dln}} \longrightarrow (\mathbb{C}^{\mathrm{dln}})^\times
 $$</p>
-<p>is injective, with image exactly the identity component $(\mathbb{C}^{\mathrm{dua}})^\times_0 = \{q > 0\}$. It is therefore a bijection, and in fact a diffeomorphism, onto the identity component.</p>
+<p>is injective, with image exactly the identity component $(\mathbb{C}^{\mathrm{dln}})^\times_0 = \{q > 0\}$. It is therefore a bijection, and in fact a diffeomorphism, onto the identity component.</p>
 <p><strong>Proof.</strong> $\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$ has real part $\exp(q) > 0$, so the image is contained in $\{q > 0\}$. Conversely, for $Q_1 = q_1 + \varepsilon q'_1$ with $q_1 > 0$ set $q = \log q_1$ and $q' = q'_1/q_1$; then $\exp(q + \varepsilon q') = q_1(1 + \varepsilon q'_1/q_1) = q_1 + \varepsilon q'_1$, so the image is $\{q > 0\}$. For injectivity, $\exp(q + \varepsilon q') = 1$ forces $\exp(q) = 1$, hence $q = 0$, and then $\exp(q)q' = q' = 0$. The map is smooth with the explicit smooth inverse $q_1 + \varepsilon q'_1 \mapsto \log q_1 + (q'_1/q_1)\varepsilon$ on $\{q_1 > 0\}$, so it is a diffeomorphism.</p>
 <p><strong>Remark.</strong> The kernel of the exponential is trivial. This is the sharpest contrast with the complex and matrix cases, where the exponential has a nontrivial kernel: on $\mathbb{C}$ the kernel is $2\pi i\mathbb{Z}$, and on $GL_2(\mathbb{C})$ the exponential is surjective but not injective, with kernel the matrices having eigenvalues in $2\pi i\mathbb{Z}$. Here the exponential is a global diffeomorphism from the abelian Lie algebra onto the identity component, the maximal simply connected abelian case.</p>
 <h2 id="the-parabolic-one-parameter-subgroup">The Parabolic One-Parameter Subgroup</h2>
 <h3 id="definition">Definition</h3>
-<p><strong>Definition.</strong> The <strong>parabolic one-parameter subgroup</strong> of $(\mathbb{C}^{\mathrm{dua}})^\times$ is</p>
+<p><strong>Definition.</strong> The <strong>parabolic one-parameter subgroup</strong> of $(\mathbb{C}^{\mathrm{dln}})^\times$ is</p>
 <p>$$
 G = \{1 + s\varepsilon : s \in \mathbb{R}\} = 1 + \mathrm{M}.
 $$</p>
@@ -163,13 +163,13 @@ $$</p>
 <p>are inverse isomorphisms of groups, where $\mathrm{M}$ carries the additive group structure. In particular $G \cong (\mathbb{R},+)$ is a connected, simply connected, one-dimensional abelian Lie group, and it is exactly the image of the exponential of the maximal ideal, $G = \exp(\mathrm{M})$.</p>
 <p><strong>Proof.</strong> $(1 + s\varepsilon)(1 + t\varepsilon) = 1 + (s+t)\varepsilon$ because $\varepsilon^2 = 0$, so the first map is a homomorphism; it is bijective with the displayed inverse; and $\exp(s\varepsilon) = 1 + s\varepsilon$, so $G = \exp(\mathrm{M})$.</p>
 <h3 id="the-unipotent-character">The Unipotent Character</h3>
-<p><strong>Proposition.</strong> Every element of $G$ is <strong>unipotent</strong>: it differs from the identity by a nilpotent, $(1 + s\varepsilon) - 1 = s\varepsilon$ with $(s\varepsilon)^2 = 0$. The subgroup $G$ is the unique one-parameter subgroup of $(\mathbb{C}^{\mathrm{dua}})^\times$ generated by a nilpotent element of the algebra, and it is the image of the algebra's own nilpotent direction.</p>
+<p><strong>Proposition.</strong> Every element of $G$ is <strong>unipotent</strong>: it differs from the identity by a nilpotent, $(1 + s\varepsilon) - 1 = s\varepsilon$ with $(s\varepsilon)^2 = 0$. The subgroup $G$ is the unique one-parameter subgroup of $(\mathbb{C}^{\mathrm{dln}})^\times$ generated by a nilpotent element of the algebra, and it is the image of the algebra's own nilpotent direction.</p>
 <p><strong>Proof.</strong> $(1 + s\varepsilon) - 1 = s\varepsilon$ and $(s\varepsilon)^2 = s^2\varepsilon^2 = 0$, so the displacement from the identity is nilpotent of index two, which is the algebraic form of unipotence; in particular $1 + s\varepsilon$ has no eigenvalue different from $1$ as a linear map of the algebra. The generator is the nilpotent $\varepsilon$, whose exponential is polynomial.</p>
 <h2 id="the-group-of-units-modulo-scaling">The Group of Units Modulo Scaling</h2>
 <h3 id="the-quotient">The Quotient</h3>
-<p><strong>Theorem.</strong> The central scalars embed as $\mathbb{R}^\times \hookrightarrow (\mathbb{C}^{\mathrm{dua}})^\times$, $q \mapsto q$, and</p>
+<p><strong>Theorem.</strong> The central scalars embed as $\mathbb{R}^\times \hookrightarrow (\mathbb{C}^{\mathrm{dln}})^\times$, $q \mapsto q$, and</p>
 <p>$$
-\boxed{\; (\mathbb{C}^{\mathrm{dua}})^\times / \mathbb{R}^\times \;\cong\; 1 + \mathrm{M} \;\cong\; (\mathbb{R}, +) \;},
+\boxed{\; (\mathbb{C}^{\mathrm{dln}})^\times / \mathbb{R}^\times \;\cong\; 1 + \mathrm{M} \;\cong\; (\mathbb{R}, +) \;},
 $$</p>
 <p>the isomorphism being the class of $q + \varepsilon q'$ mapped to $1 + (q'/q)\varepsilon$, equivalently to the parabolic angle $s = q'/q$.</p>
 <p><strong>Proof.</strong> Every unit is $q(1 + \varepsilon q'/q)$, and multiplying by the scalar $q$ is exactly the quotient by the subgroup $\mathbb{R}^\times$; two units have the same class exactly when their shear parameters agree.</p>
@@ -180,13 +180,13 @@ $$</p>
 <p>$$
 {\mathbb{C}^{\mathrm{spl}}}^\times/\mathbb{R}^\times \cong \mathbb{R}^\times,
 $$</p>
-<p>obtained by the ratio of the two idempotent components, and it has two components—unlike the connected quotient $(\mathbb{C}^{\mathrm{dua}})^\times/\mathbb{R}^\times \cong \mathbb{R}$. The difference is the degeneracy of the norm: the split complex form has two independent directions, so the quotient retains a hyperbola-like two-component structure, while the dual form has one, so the quotient collapses to a line.</p>
+<p>obtained by the ratio of the two idempotent components, and it has two components—unlike the connected quotient $(\mathbb{C}^{\mathrm{dln}})^\times/\mathbb{R}^\times \cong \mathbb{R}$. The difference is the degeneracy of the norm: the split complex form has two independent directions, so the quotient retains a hyperbola-like two-component structure, while the dual form has one, so the quotient collapses to a line.</p>
 <h3 id="the-table">The Table</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th></th>
-<th>$\mathbb{C}^{\mathrm{dua}}$</th>
+<th>$\mathbb{C}^{\mathrm{dln}}$</th>
 <th>$\mathbb{C}^{\mathrm{spl}}$</th>
 </tr>
 </thead>
@@ -220,7 +220,7 @@ $$</p>
 </table></div>
 <p>The dual row is the two-dimensional row with the collapse of the quotient: the parabolic case replaces the hyperbolic two-component quotient of the split complex numbers by a single contractible line, while sharing with it the property that the exponential is a global diffeomorphism.</p>
 <h2 id="summary">Summary</h2>
-<p>The dual-number algebra $\mathbb{C}^{\mathrm{dua}}$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$ and is a group homomorphism from $(\mathbb{C}^{\mathrm{dua}},+)$ to the unit group. The unit group is $(\mathbb{C}^{\mathrm{dua}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{q > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{C}^{\mathrm{dua}})^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.</p>
+<p>The dual-number algebra $\mathbb{C}^{\mathrm{dln}}$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$ and is a group homomorphism from $(\mathbb{C}^{\mathrm{dln}},+)$ to the unit group. The unit group is $(\mathbb{C}^{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{q > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{C}^{\mathrm{dln}})^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -231,11 +231,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$</td>
+<td>$\mathbb{C}^{\mathrm{dln}}_R = R[\varepsilon]/(\varepsilon^2)$</td>
 <td>Dual-number algebra over $R$; $\varepsilon^2 = 0$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}^{\mathrm{dua}} = \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}}$</td>
+<td>$\mathbb{C}^{\mathrm{dln}} = \mathbb{C}^{\mathrm{dln}}_{\mathbb{R}}$</td>
 <td>Dual-number algebra over $\mathbb{R}$</td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@ $$</p>
 <td>Lie bracket, identically zero</td>
 </tr>
 <tr>
-<td>$\mathrm{G} = \mathbb{C}^{\mathrm{dua}}$</td>
+<td>$\mathrm{G} = \mathbb{C}^{\mathrm{dln}}$</td>
 <td>Abelian Lie algebra of the dual numbers</td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ $$</p>
 <td>Exponential</td>
 </tr>
 <tr>
-<td>$(\mathbb{C}^{\mathrm{dua}})^\times = \{q \neq 0\}$</td>
+<td>$(\mathbb{C}^{\mathrm{dln}})^\times = \{q \neq 0\}$</td>
 <td>Group of units</td>
 </tr>
 <tr>
@@ -275,12 +275,12 @@ $$</p>
 <td>Parabolic one-parameter subgroup $\cong (\mathbb{R},+)$</td>
 </tr>
 <tr>
-<td>$(\mathbb{C}^{\mathrm{dua}})^\times/\mathbb{R}^\times \cong \mathbb{R}$</td>
+<td>$(\mathbb{C}^{\mathrm{dln}})^\times/\mathbb{R}^\times \cong \mathbb{R}$</td>
 <td>Unit group modulo scaling</td>
 </tr>
 <tr>
 <td>$\partial^{\mathrm{nil}}$</td>
-<td>Derivation generator, $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$</td>
+<td>Derivation generator, $\operatorname{Der}(\mathbb{C}^{\mathrm{dln}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$</td>
 </tr>
 </tbody>
 </table></div>
