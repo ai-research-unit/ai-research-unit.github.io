@@ -303,7 +303,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $g, g_{\mathrm Y}$ | Weak and hypercharge couplings (standard notation; framework couplings are $\kappa$ and $ϙ$) |
 | $T, T_3, Y$ | Isospin, third component, hypercharge (standard; not framework objects) |
 | $a$ | weak-isospin index, written low; the sum over it is explicit |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric for index contractions |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

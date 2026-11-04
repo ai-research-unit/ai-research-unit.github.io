@@ -261,7 +261,7 @@ The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g
 | $L_g(\tilde q)=g\tilde q$, $R_g(\tilde q)=\tilde q g$ | Left and right multiplication |
 | $\omega(\tilde q)=\mathrm{Sc}(\tilde q^2)=q_t^2-q_x^2-q_y^2-q_z^2$ | Minkowski form of the algebra |
 | $\beta_\omega$ | Its polar form |
-| $\eta=\mathrm{diag}(1,-1,-1,-1)$ | Gram matrix of $\omega$, $\det\eta=-1$ |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | Gram matrix of $\omega$, $\det\eta=-1$ |
 | $O(\omega)=O(1,3)$ | Isometry group of the Minkowski form |
 | $Q_g(\tilde q)=\mathrm{Sc}(g\tilde qg\tilde q)$ | Quaternion metric |
 | $\beta_g$ | Polar form of $Q_g$ |

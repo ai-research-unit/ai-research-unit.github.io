@@ -6,8 +6,7 @@ This is one of the articles in the Dirac exercise series accompanying the biquat
 
 The following are assumed, with the notation of the parent article.
 
-- The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$, scalar imaginary $i$, and the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ (Hermitian). The subspaces are $\mathbb{M}_-$ (material), $\mathbb{M}_+$ (informational), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$ (the centre).
-- The matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde u_{\mathrm r}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde u_{\mathrm r})$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$.
+- The algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions*, and the matrix realization $\mathsf{M}_2$ is that of *Matrix Representations Conventions*; neither is restated here.
 - The **spinor module** $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying $\psi\mapsto\mathsf{M}_2(\tilde{Q})\psi$. Its ideal realization is $S\cong\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$, the two idempotents associated with the root of $+1$ $i\vec e_z$, $(i\vec e_z)^2 = e_t$; $\tilde\Pi_+\tilde\Pi_- = \tilde\Pi_-\tilde\Pi_+ = 0$, $\tilde\Pi_++\tilde\Pi_- = e_t$, and basis $\{\tilde\Pi_+,\,y\}$, $y = \vec e_y\tilde\Pi_+ = \tfrac12(i\vec e_x+\vec e_y)$.
 - The **two chiral halves**: the left-handed Weyl module $V_1 = (\tfrac12,0)$, carried by $S$ with action $\psi\mapsto g\psi$, $g = \mathsf{M}_2(\tilde U^{\mathrm{lor}})$ with $\tilde U^{\mathrm{lor}}$ the unit-norm biquaternion that implements the Lorentz transformation; and the right-handed module $\bar{S} = (0,\tfrac12)$, carried by $\mathbb{C}^2$ with action $\chi\mapsto\mathsf{M}_2(\bar{\tilde U}^{\mathrm{lor}})\chi$, the coefficientwise conjugate, which is $(g^{\dagger})^{-1}$ and not $g^{\dagger}$ (Problem 3). Their direct sum is the **Dirac module** $\Delta = S\oplus\bar{S}$, $\dim_{\mathbb{C}}\Delta = 4$.
 - The group $SL(2,\mathbb{C}) = \{\tilde U^{\mathrm{lor}} : \tilde U^{\mathrm{lor}}\tilde U^{\mathrm{lor}}{}^{\natural} = e_t\}$ of **unit-norm biquaternions**, and the double cover $\pi:SL(2,\mathbb{C})\to SO^{+}(1,3)$, $\pi(\tilde U^{\mathrm{lor}}):\tilde{Q}\mapsto\tilde U^{\mathrm{lor}}\tilde{Q}\tilde U^{\mathrm{lor}}{}^{*}$ on $\mathbb{M}_-$.
@@ -77,7 +76,7 @@ $$
 $C_\mu$ is the cell of the coordinate $x_\mu$. Since $e_t=1$, the timelike cell is a pure right multiplication. Each cell carries one factor of $i$, so a product of two cells spends $i^2=-1$ once. The cells satisfy
 
 $$
-C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4, \qquad g=\operatorname{diag}(+1,-1,-1,-1),
+C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4, \qquad g=\operatorname{diag}(-1,+1,+1,+1),
 $$
 
 so that $C_t^2=I_4$ and $C_k^2=-I_4$. On the chiral pair $(\psi_L,\psi_R)$ they act as

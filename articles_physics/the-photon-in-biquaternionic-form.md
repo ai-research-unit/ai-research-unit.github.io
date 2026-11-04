@@ -27,7 +27,7 @@ $$
 \mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\},
 $$
 
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The spacetime metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$.
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The spacetime metric of the $ict'$ sector is $g_{\mu\nu}[\mathbb{M}_-]$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
@@ -63,7 +63,7 @@ $$
 A_\mu(x) = \int \frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}\Bigl(a^{\mathrm{fop}}_r(\vec k)\,\epsilon^{(r)}_\mu(\vec k)\,\exp(-ik\cdot x) + a^{\mathrm{fop}\dagger}_r(\vec k)\,\epsilon^{(r)*}_\mu(\vec k)\,\exp(+ik\cdot x)\Bigr),
 $$
 
-with $\sum_{\mu,\nu}\eta_{\mu\nu}\epsilon^{(r)}_\mu\epsilon^{(s)}_\nu=\zeta_r\delta_{rs}$ and $\zeta=(-1,+1,+1,+1)$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\vec u_k$, $\epsilon^{(3)}=\vec u_k$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
+with $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\epsilon^{(r)}_\mu\epsilon^{(s)}_\nu=\zeta_r\delta_{rs}$ and $\zeta=(-1,+1,+1,+1)$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\vec u_k$, $\epsilon^{(3)}=\vec u_k$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
 
 The point of the framework is that these four directions are already present in the algebra, in the material sector. Writing a general element of $\mathbb{M}_-$ as $\tilde{Q}=iq'_te_t+\vec q$ with $q'_t$ real and $\vec q$ a real pure quaternion, its biquaternion norm is
 

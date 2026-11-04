@@ -297,7 +297,7 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $g=\mathrm{diag}(+1,-1,-1,-1)$ — and that is why the Dirac bar of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one cell and not a sum of cells, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
+Because $L_{e_t}^{\mathrm{pau}}$ is the identity of the module, the first and the last simplify: $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$. In this frame $\gamma_0$ and $\gamma_5$ are Hermitian and $\gamma_1,\gamma_2,\gamma_3$ are anti-Hermitian — the standard Dirac pattern for $g=\mathrm{diag}(-1,+1,+1,+1)$ — and that is why the Dirac bar of the charge section is built with $G_t=\gamma_0$ alone. Each gamma is one cell and not a sum of cells, which the coefficient matrix $c(\gamma)$ records by having rank one; a general element is a sum of such products, they form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and the least number of products summing to $M$ is $\operatorname{rank}c(M)$, at most four.
 
 The generator cells $G_\mu$ of the charge section are exactly these gammas, $G_\mu=\gamma_\mu$: $G_t=\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and $G_k=\gamma_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$. The anticommutator of the notation table is therefore the Clifford relation below.
 
@@ -305,7 +305,7 @@ The generator cells $G_\mu$ of the charge section are exactly these gammas, $G_\
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the body and the notation table cite.** Here $\mathrm{tr}$ is the $4\times4$ matrix trace, $I_4$ the identity of $M_4(\mathbb{C})$, $g=\mathrm{diag}(+1,-1,-1,-1)$ and $\epsilon_{0123}=+1$.
+**The identities the body and the notation table cite.** Here $\mathrm{tr}$ is the $4\times4$ matrix trace, $I_4$ the identity of $M_4(\mathbb{C})$, $g=\mathrm{diag}(-1,+1,+1,+1)$ and $\epsilon_{0123}=+1$.
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
@@ -379,7 +379,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $L_{a}R_{b}$, $L_a\psi=a\psi$, $R_b\psi=\psi b$ | Cell of the module endomorphisms, $L_aR_b\psi=a\psi b$ |
 | $\mathbb{D}\psi=(\tilde{\nabla}\psi_R,\tilde{\nabla}^{\natural}\psi_L)$, $\mathbb{D}^2=\Box I_4$ | Pair operator of the two-sided equation $(\mathbb{D}-m_p)\psi=0$ |
 | $\Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Chirality cell, $\Gamma\psi=-i\,e_t\psi\vec e_z$, $\Gamma^2=I_4$, $\Gamma=\mathrm{diag}(-I_2,I_2)$ in the chiral block basis |
-| $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Generator cell of $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$; $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Generator cell of $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$; $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(-1,+1,+1,+1)$ |
 | $P_L=\tfrac12(I_4-\Gamma)$, $P_R=\tfrac12(I_4+\Gamma)$ | Chiral projectors |
 | $\bar{\psi}=\psi^{\dagger}G_t=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac bar of the module spinor $\psi=\psi_L+\psi_R$; $G_t$ is what pairs the two halves |
 | $Ϙ=ϙ_LP_L+ϙ_RP_R$ | Charge operator on $\Delta$ |

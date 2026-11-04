@@ -8,19 +8,14 @@ The answer has three layers, and the article is organised around them. The first
 
 The article is organised as follows. A first section transcribes the standard electroweak vector-boson physics — the gauge group, the fields, the mixing, the masses, the currents, the self-couplings and the measured values — with citations to the standard literature. A second section locates the charged and neutral fields in the algebra and identifies the eigenvalue problem that supplies their charges. A third section treats the mass generation and fixes precisely what the framework supplies and what it does not. A fourth treats the currents and the vector-like obstruction. A fifth treats the trilinear and quartic gauge self-couplings, which the non-abelian structure of the material sector does supply. A closing section separates the three layers, and after it one section writes out the Clifford frame of the same module, for comparison with the literature; the argument itself needs no frame, and the summary and the notation table close the article.
 
-We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$ with $i^2=-1$; every display below in which two powers of $i$ meet collapses them by that one identity, and no other rule about $i$ is used. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The compact factor is
+We use the conventions of the companion articles: the algebra, the units, the sectors, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Frame Conventions* and *Operator and Calculus Conventions*, and none is restated here. The compact factor is
 $$
 \mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2),
 \qquad
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_- ,
 $$
-of real dimension four, with $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$ and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$; and in the Hermitian-generator realization $T_a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $\tilde S^{(\mathrm{adj})}_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below. The gradient and d'Alembertian are
-$$
-\tilde{\nabla}=e_t\frac{\partial}{\partial Q_t}+\sum_\mu \vec e_\mu\frac{\partial}{\partial Q_\mu},
-\qquad
-\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\frac{\partial^2}{\partial Q_t^2}+\Delta .
-$$
-Spacetime indices are written low and every contraction is an explicit sum, in the $ict'$ device that puts the $i$ into the time component; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. Two metrics are named when a display needs one, and they are not the same object: the Clifford metric of the frame, $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ in the frame of $\mathbb{M}_-$ and the identity in the Euclidean frame, and the interval, which is its negative, $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)=-g_{\mu\nu}$. The Dirac identities of §*The Legacy Gamma Formulation* use $g$, the polarization sums below use $\eta$, and each display names the one it uses. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions. The matrix trace on the compact factor is $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+of real dimension four, with $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$ and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$; and in the Hermitian-generator realization $T_a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $\tilde S^{(\mathrm{adj})}_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below.
+Spacetime indices are written low and every contraction is an explicit sum, in the $ict'$ device that puts the $i$ into the time component; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. Two metrics are named when a display needs one, and they are not the same object: the Clifford metric $g$ of the frame, defined in *Frame Conventions*, §*The Clifford Map*, and the interval $g_{\mu\nu}[\mathbb{M}_-]$ of the $ict'$ gradient, which is $\mathrm{diag}(-1,+1,+1,+1)$ where $g$ is $\mathrm{diag}(1,-1,-1,-1)$. The Dirac identities of §*The Legacy Gamma Formulation* use $g$, the polarization sums below use $\eta$, and each display names the one it uses. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions. The matrix trace on the compact factor is $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the boundary statement and the list of open problems.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the placement of the electroweak sector in the larger structure.
@@ -218,13 +213,13 @@ the second line being the Lorenz condition, which follows from the equation and 
 $$
 \sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu}=P_{\mu\nu},
 \qquad
-P_{\mu\nu}=\eta_{\mu\nu}+\frac{p_\mu p_\nu}{M^2},
+P_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+\frac{p_\mu p_\nu}{M^2},
 \qquad
 \sum_\rho P_{\mu\rho}P_{\rho\nu}=P_{\mu\nu},
 \qquad
 \sum_\nu P_{\mu\nu}p_\nu=0 .
 $$
-The metric contraction $\sum_{\mu,\nu}\eta_{\mu\nu}P_{\mu\nu}=3$ counts the polarizations, and the timelike sign $\sum_{\mu,\nu}\eta_{\mu\nu}p_\mu p_\nu=-M^2$ on shell is what makes $P$ idempotent.
+The metric contraction $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]P_{\mu\nu}=3$ counts the polarizations, and the timelike sign $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]p_\mu p_\nu=-M^2$ on shell is what makes $P$ idempotent.
 
 In the framework the massive vector is an element of the material sector, $\tilde{A}\in\mathbb{M}_-$, whose massive wave equation is $(\Box-\mu^2)\tilde{A}=0$ in the Lorenz gauge; the Proca companion writes it in that form. The W and Z are therefore carried by the same object as the photon — a material vector — with the mass term added; the difference between the photon and the Z is that the photon is the massless (self-dual) combination and the Z the massive one, and the difference between the Z and the W is the charge eigenvalue of the adjoint action.
 
@@ -411,9 +406,8 @@ The charged current is chiral, $J^{+}_\mu=\bar\psi_{\mathrm u}\,iL_{e_\mu}^{\mat
 | $J_{Z\mu}=\sum_f\bar f\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}(T_{3f}P_L-Q_f\sin^2\theta_W)f$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa\sum_{a,b,c}f_{abc}(\partial\mathcal{A}_{\nu a}/\partial Q_\mu-\partial\mathcal{A}_{\mu a}/\partial Q_\nu)\mathcal{A}_{\mu b}\mathcal{A}_{\nu c}$, $\mathcal{L}_4\sim\kappa^2\sum_{a,b,c,d}f_{abe}f_{cde}\mathcal{A}_{\mu a}\mathcal{A}_{\nu b}\mathcal{A}_{\mu c}\mathcal{A}_{\nu d}$ | Trilinear and quartic self-couplings, derivative pair antisymmetrized |
 | $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\tfrac12M^2\sum_\mu V_\mu V_\mu$ | Proca Lagrangian of a massive vector $V$; $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ |
-| $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness, $P$ the transverse projector |
-| $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$ | Interval metric of the frame ($ict'$, level 2) |
-| $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)=-\eta_{\mu\nu}$ | Clifford metric of the $\mathbb{M}_-$ frame, the one of the Dirac identities |
+| $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=P_{\mu\nu}=g_{\mu\nu}[\mathbb{M}_-]+p_\mu p_\nu/M^2$ | Polarization completeness, $P$ the transverse projector |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | The frame metric; $\mathrm{diag}(1,-1,-1,-1)$ in the $x_0=ct'$ coordinate, $\mathrm{diag}(-1,1,1,1)$ in the $ict'$ coordinate of the contractions |
 | $W^\pm_{\mu\nu}$, $Z_{\mu\nu}$, $A_{\mu\nu}$ | Field strengths of the charged, neutral massive and electromagnetic fields |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 | $a,b,c$; $\mu,\nu$ | Internal isospin and spacetime indices, written low; every contraction over them is an explicit sum |

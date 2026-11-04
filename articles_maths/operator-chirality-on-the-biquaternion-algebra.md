@@ -16,7 +16,7 @@
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\qquad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\qquad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\qquad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\qquad \gamma_5=-iL_{e_t}R_{\vec e_z},
 $$
-with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(1,-1,-1,-1)$, so that $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The anticommutation is a computed property of these five cells, not an axiom: no Clifford algebra enters the definitions of this article. The Peirce sign of the third axis is $P=R_{i\vec e_z}=iR_{\vec e_z}$, and it is used only where it is named.
+with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(-1,+1,+1,+1)$, so that $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. The anticommutation is a computed property of these five cells, not an axiom: no Clifford algebra enters the definitions of this article. The Peirce sign of the third axis is $P=R_{i\vec e_z}=iR_{\vec e_z}$, and it is used only where it is named.
 
 ## The Two Slots
 

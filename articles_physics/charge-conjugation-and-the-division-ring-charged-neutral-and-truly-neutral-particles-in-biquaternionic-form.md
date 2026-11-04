@@ -270,7 +270,7 @@ The dictionary is complex-linear. Over $\mathbb{R}$ it splits into two real form
 
 The central grading $\chi$ is a different object from $\gamma_5$. It is $\chi=i\tilde\Xi_{\mathrm{ad}}$, where $\tilde\Xi_{\mathrm{ad}}$ is the adjoined central root of $-1$, with $\tilde\Xi_{\mathrm{ad}}^{2}=-e_t$, so that $\chi^{2}=e_t$; it is also the difference $e_+-e_-$ of the two central idempotents. On the Dirac module it is represented by $\gamma_5$, and it is not $\Gamma$.
 
-For translation from the gamma literature, with $\epsilon_{0123}=+1$ and $g=\mathrm{diag}(1,-1,-1,-1)$:
+For translation from the gamma literature, with $\epsilon_{0123}=+1$ and $g=\mathrm{diag}(-1,+1,+1,+1)$:
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad

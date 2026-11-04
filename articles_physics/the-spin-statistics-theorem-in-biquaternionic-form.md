@@ -132,7 +132,7 @@ c_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{ax
 c_k=iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=x,y,z),
 $$
 
-and they obey $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair of indices, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and no sum implied. The index of $c_\mu$ is the coordinate index: with $x_0=t'$ the material time, $c_0$ is the cell paired with $\partial/\partial t'$ and $c_k$ the cell paired with $\partial/\partial x_k$. The same objects are the frame of *The Legacy Gamma Formulation* below, where they carry the gamma names, and where the fifth cell $c_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ joins them; only there are they called gammas.
+and they obey $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair of indices, with $g=\mathrm{diag}(-1,+1,+1,+1)$ and no sum implied. The index of $c_\mu$ is the coordinate index: with $x_0=t'$ the material time, $c_0$ is the cell paired with $\partial/\partial t'$ and $c_k$ the cell paired with $\partial/\partial x_k$. The same objects are the frame of *The Legacy Gamma Formulation* below, where they carry the gamma names, and where the fifth cell $c_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ joins them; only there are they called gammas.
 
 The field satisfies the corpus's Dirac equation in cells,
 
@@ -404,7 +404,7 @@ What the framework establishes is that the two pairings which survive the theore
 | $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z)$ | Single-mode number operator (idempotent) |
 | $(-1)^F=i\vec e_z=e_t-2\tilde\Pi_-=2\tilde S_z/\hbar$ | Fermion parity; Hermitian involution in $\mathbb{M}_+$ |
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, $[\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z$ | Fermionic mode relation; failure of the bosonic relation |
-| $c_0=iR_{\vec e_x}^{\mathrm{axf}}$, $c_k=iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $c_5=-iR_{\vec e_z}^{\mathrm{axf}}$, $L_aR_b\psi=a\psi b$ | Cells of the reference frame, $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$; $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $c_0=iR_{\vec e_x}^{\mathrm{axf}}$, $c_k=iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $c_5=-iR_{\vec e_z}^{\mathrm{axf}}$, $L_aR_b\psi=a\psi b$ | Cells of the reference frame, $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$; $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair, $g=\mathrm{diag}(-1,+1,+1,+1)$ |
 | $\slashed p=c_0p_0-\sum_kc_kp_k$, $i(c_0\nabla_t+\sum_kc_k\nabla_k)\psi=m\psi$ | Momentum cell and field equation; on a plane wave $\slashed pw=mw$, $(\slashed p+m)v=0$ |
 | $\nabla_k=\partial/\partial\Delta_k$ | Gradient with respect to the spatial separation |
 | $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\,iR_{\vec e_x}^{\mathrm{axf}}$ | Quantized spinor-module field and its Dirac adjoint |

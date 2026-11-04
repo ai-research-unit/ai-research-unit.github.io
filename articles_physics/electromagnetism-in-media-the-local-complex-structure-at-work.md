@@ -927,7 +927,7 @@ Cells compose by composing their factors, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, and in 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,
 \qquad
-g=\operatorname{diag}(+1,-1,-1,-1),
+g=\operatorname{diag}(-1,+1,+1,+1),
 $$
 
 $$

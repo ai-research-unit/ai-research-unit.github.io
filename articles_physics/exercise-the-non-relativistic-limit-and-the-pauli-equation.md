@@ -48,7 +48,7 @@ $$
 \alpha_j\alpha_k=\delta_{jk}+i\epsilon_{jkl}S_l .
 $$
 
-The Clifford metric is $g=\operatorname{diag}(+1,-1,-1,-1)$, the negative of the metric $\eta=\operatorname{diag}(-1,+1,+1,+1)$ that appears in the $ict'$ form of the biquaternionic gradient. The kinetic momentum is $\vec\pi=p-ϙ\vec A$ with $p=-i\hbar\nabla$, the charge is $ϙ$, the electrostatic potential is written $\Phi$, and the potential energy of the charge in it is $V=ϙ\Phi$. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made.
+The Clifford metric is $g=\operatorname{diag}(-1,+1,+1,+1)$, the negative of the metric $g_{\mu\nu}[\mathbb{M}_-]$ that appears in the $ict'$ form of the biquaternionic gradient. The kinetic momentum is $\vec\pi=p-ϙ\vec A$ with $p=-i\hbar\nabla$, the charge is $ϙ$, the electrostatic potential is written $\Phi$, and the potential energy of the charge in it is $V=ϙ\Phi$. Natural units $\hbar=c=1$ are used while deriving; $\hbar$ and $c$ are restored wherever a physical statement is made.
 
 ### The two Dirac equations
 
@@ -549,7 +549,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $c_0=iR_{\vec e_x}^{\mathrm{axf}}$, $c_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Coordinate cells; $c_0^2=1$, $c_k^2=-1$, $\{c_0,c_k\}=0$ |
 | $\alpha_k=c_0c_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Velocity cell, after one use of $i^2=-1$ |
 | $S_k=iL_{\vec e_k}^{\mathrm{axf}}$ | Spin cell; upper block $\sigma_k$, lower block $-\sigma_k$ |
-| $g=\operatorname{diag}(+1,-1,-1,-1)$ | Clifford metric; $g=-\eta$ |
+| $g_{\mu\nu}[\mathbb{M}_-]=\operatorname{diag}(-1,+1,+1,+1)$ | Clifford metric of the cells |
 | $\vec\pi=p-ϙ\vec A$ | Kinetic momentum |
 | $\vec B=\nabla\times\vec A$, $\vec E$ | Magnetic, electric fields |
 | $V=ϙ\Phi$ | Potential energy |

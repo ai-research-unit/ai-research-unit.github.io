@@ -254,7 +254,7 @@ $$
 \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
 $$
 
-The four frame cells satisfy the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$, and their squares are $\pm I_4$:
+The four frame cells satisfy the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$, and their squares are $\pm I_4$:
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad (\gamma_0)^2=I_4,\qquad (\gamma_k)^2=-I_4\ \ (k=1,2,3) .

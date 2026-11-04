@@ -46,9 +46,9 @@ T_{\mu\nu}^{\mathrm{imp}} = T_{\mu\nu}^{\mathrm{can}} + \xi\big(g_{\mu\nu}\Box -
 \qquad
 \xi=\frac{d-2}{4(d-1)},
 $$
-produces $T_\mu{}_\mu=0$ on shell, the bracket reducing to $\eta_{\mu\nu}\partial^2-\partial^2/\partial x_\mu\partial x_\nu$ in flat coordinates. The arithmetic is short. The added trace is $\xi(d-1)\Box\phi^2$, which on shell is $2\xi(d-1)(\partial\phi)^2$ because $\Box\phi^2=2(\partial\phi)^2+2\phi\,\Box\phi$ and the second term vanishes for a massless field; the canonical trace is $-\tfrac{d-2}{2}(\partial\phi)^2$; and $\xi=(d-2)/(4(d-1))$ is exactly the value that cancels the two, giving $\xi=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
+produces $T_\mu{}_\mu=0$ on shell, the bracket reducing to $g_{\mu\nu}[\mathbb{M}_-]\partial^2-\partial^2/\partial x_\mu\partial x_\nu$ in flat coordinates. The arithmetic is short. The added trace is $\xi(d-1)\Box\phi^2$, which on shell is $2\xi(d-1)(\partial\phi)^2$ because $\Box\phi^2=2(\partial\phi)^2+2\phi\,\Box\phi$ and the second term vanishes for a massless field; the canonical trace is $-\tfrac{d-2}{2}(\partial\phi)^2$; and $\xi=(d-2)/(4(d-1))$ is exactly the value that cancels the two, giving $\xi=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
 
-**The $ict'$ interpretation.** In the framework's coordinates the flat metric is the level-2 interpretation $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the level-1 form, obtained from $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, where $(ict')^2=i^2c^2t'^2=-c^2t'^2$. The trace $T_\mu{}_\mu$ is the contraction with $\eta$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is *not* a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.
+**The $ict'$ interpretation.** In the framework's coordinates the flat metric is the level-2 interpretation $g_{\mu\nu}[\mathbb{M}_-]$ of the level-1 form, obtained from $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, where $(ict')^2=i^2c^2t'^2=-c^2t'^2$. The trace $T_\mu{}_\mu$ is the contraction with $\eta$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is *not* a change of the $ict'$ assignment, and the two operations are different. The section on the three levels makes this precise.
 
 ## The Quantum Trace as the Conformal Variation of the Determinant
 
@@ -147,7 +147,7 @@ The three levels of the word "metric" are the place where a spurious correction 
 
 **Level 1.** The biquaternion norm $N=\mathrm{diag}(+1,+1,+1,+1)$ on the complex coefficients is the framework's primary convention. A Weyl rescaling is a change of this form's normalisation, and the anomalous trace measures the response. The rescaling is *not* a change of the algebra, of the basis, or of the trace; it is a change of the one form, and it is the only object the anomaly's definition varies.
 
-**Level 2.** The $ict'$ coordinate metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ is the level-1 form read on the material sector with the time coefficient written $ict'$:
+**Level 2.** The $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$ is the level-1 form read on the material sector with the time coefficient written $ict'$:
 $$
 \langle\tilde R\rangle_{\natural}=(ict')^2+x^2+y^2+z^2=-c^2t'^2+x^2+y^2+z^2 .
 $$
@@ -265,7 +265,7 @@ $$
 (iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=i^2(L_{\vec e_k}^{\mathrm{axf}})^2(R_{\vec e_y}^{\mathrm{axf}})^2=(-1)(-1)(-1)=-e_t,
 $$
 
-for $k=x,y,z$, so the four generators carry the metric $g=\mathrm{diag}(+1,-1,-1,-1)=-\eta$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple
+for $k=x,y,z$, so the four generators carry the metric $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$ and $\gamma_5^2=+e_t$. The anticommutators carry the same metric, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on the module, and $\gamma_5$ anticommutes with the four generators. The product of the four is a cell, and the chirality is its multiple
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}},
 \qquad
@@ -317,7 +317,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace on the two-dimensional module; $\operatorname{Tr}(e_t)=2$; the $\mathbb{M}_+$ pairing |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | Level-1 quaternionic norm, $\mathrm{diag}(+1,+1,+1,+1)$; $\dim_\mathbb{C}\mathbb{B}=4$ |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict'$ metric; an output of $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | Level-2 $ict'$ metric; an output of $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T_{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |

@@ -50,7 +50,7 @@ S[\tilde{\Phi}]
 =\int d^4x\left[-\frac{1}{2}\sum_\mu\partial/\partial Q_\mu\,\phi^*\,\partial/\partial Q_\mu\,\phi-\frac{1}{2}\mu^2\,|\phi|^2\right],
 $$
 
-with the index contracted by the level-2 $ict'$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$; in biquaternion form, using $\tilde{\Phi}^{*}=\phi^*e_t$ and $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=|\phi|^2$, this is a central scalar functional,
+with the index contracted by the level-2 $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$; in biquaternion form, using $\tilde{\Phi}^{*}=\phi^*e_t$ and $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=|\phi|^2$, this is a central scalar functional,
 
 $$
 S[\tilde{\Phi}]=\int d^4x\left[-\frac{1}{2}\sum_\mu\mathrm{Sc}\!\left(\partial/\partial Q_\mu\,\tilde{\Phi}^{*}\,\partial/\partial Q_\mu\,\tilde{\Phi}\right)-\frac{1}{2}\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\right]\in\mathbb{C}_{\mathbb{B}} .
@@ -321,7 +321,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $Z[J]$ | Generating functional; $\tilde{J}=Je_t$ a central source |
 | $G$, $G_E$ | Two-point kernels, $(\Box-\mu^2)G=-\delta^{(4)}$ and $(-\Delta_E+\mu^2)G_E=\delta^{(4)}$ |
 | $A$, $A^{-1}$ | Lattice quadratic form and its inverse (lattice propagator) |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$-coordinate metric (level 2) |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$-coordinate metric (level 2) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

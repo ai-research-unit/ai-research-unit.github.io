@@ -12,14 +12,7 @@
 
 **The order of the article.** Section §*Operator Chirality in One Page* gives the definition and the dimensions. Section §*The Chirality Operator Is Gamma Five* identifies the operator and its four properties. Section §*The Dirac Equation Reads the Sides* shows what the sides do to the equation and where the mass sits. Section §*The Eight Objects the Physics Does Not Need* takes the list of unrelated mathematical objects and states, for each, the physical reason it is not needed. Section §*What the Earlier Reading Adjoined* records the route this article replaces, and §*What the Algebra Does Not Supply* records the one thing the replacement does not buy.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and cyclic, and $i$ central. A cell is $L_aR_b$, the operator $L_aR_b\tilde X=a\tilde Xb$. In the axis-free frame the gamma frame, the gradient and the chirality operator are
-$$
-\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z},
-$$
-$$
-\tilde\nabla=e_t\partial_t+\vec e_x\partial_x+\vec e_y\partial_y+\vec e_z\partial_z,
-$$
-with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$ and $g=\operatorname{diag}(1,-1,-1,-1)$, so that $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. An array, where one is printed, is printed in the Peirce display, labelled $\mathrm{pau}$, beside its axis-free twin, labelled $\mathrm{axf}$.
+**Conventions.** The algebra, the cells and the two slots are those of *Algebra and Element Conventions* and *Operator Family Conventions*; the frame cells $\gamma_0,\dots,\gamma_3$, the gradient and the array rule are those of *Matrix Representations Conventions* and *Operator and Calculus Conventions*, and none is redefined here. This article's own glyph is the chirality cell of the axis-free frame, $\gamma_5=-iR_{\vec e_z}$, printed as $\gamma_5$ throughout.
 
 ## The Results It Uses
 
@@ -192,7 +185,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 | --- | --- | --- |
 | the chirality operator | $-iR_{\vec e_z}$ | $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ |
 | its side | right | the fifth generator of the frame |
-| the Dirac operator | $L(\tilde\nabla)$ | $i\gamma^\mu\partial_\mu$ in the Clifford display |
+| the Dirac operator | $L(\tilde\nabla)$ | $i\gamma^\mu\,\partial/\partial x_\mu$ in the Clifford display |
 | their relation | commutation, because the sides differ | anticommutation in the Clifford display |
 | the mass | a central scalar, no side | the term that couples the halves |
 

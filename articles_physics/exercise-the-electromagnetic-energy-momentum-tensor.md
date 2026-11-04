@@ -104,9 +104,9 @@ $$
 $$
 The first index is the basis element inserted between the field and its conjugate — the **row** — and the second is the basis element multiplied on the right — the **column**. The pair is ordered, and $\Pi_{\nu\mu}\ne\Pi_{\mu\nu}$ in general. For a fixed column the whole content is the four components $\Pi_{\mu\nu}$. The symmetric tensor is obtained by contracting the column with the metric,
 $$
-T_{\mu\nu} = \sum_\beta\eta_{\nu\beta}\,\Pi_{\mu\beta},
+T_{\mu\nu} = \sum_\betag_{\nu\beta}[\mathbb{M}_-]\,\Pi_{\mu\beta},
 \qquad
-\eta = \mathrm{diag}(-1,1,1,1).
+g_{\mu\nu}[\mathbb{M}_-].
 $$
 The conservation law is the four-divergence
 $$
@@ -118,7 +118,7 @@ Show that $\Pi_{00} = -W$, $\Pi_{0\nu} = \frac{1}{c}S_\nu$, $\Pi_{\nu0} = -\frac
 $$
 \sigma_{\nu\mu} = \epsilon\,E_\nu E_\mu + \mu\,H_\nu H_\mu - W\,\delta_{\nu\mu}
 $$
-is the Maxwell stress tensor. Then show that $T_{\mu\nu} = \sum_\beta\eta_{\nu\beta}\Pi_{\mu\beta}$, with $\eta = \mathrm{diag}(-1,1,1,1)$, is symmetric.
+is the Maxwell stress tensor. Then show that $T_{\mu\nu} = \sum_\betag_{\nu\beta}[\mathbb{M}_-]\Pi_{\mu\beta}$, with $g_{\mu\nu}[\mathbb{M}_-]$, is symmetric.
 
 **Solution.** Two identities are needed. The first is the Hermitian form of Problem 1,
 $$
@@ -155,11 +155,11 @@ Collecting,
 $$
 \boxed{\;\Pi_{00} = -W, \quad \Pi_{0\nu} = \frac{1}{c}S_\nu, \quad \Pi_{\nu0} = -\frac{1}{c}S_\nu, \quad \Pi_{\nu\mu} = -\sigma_{\nu\mu}\;}.
 $$
-This is the ordered object: it is **not symmetric**, and that is correct, because $\Pi_{0\nu}$ (energy flux) and $\Pi_{\nu0}$ (momentum density times $c$) are related through the metric. Contracting the column with $\eta = \mathrm{diag}(-1,1,1,1)$ gives the symmetric tensor
+This is the ordered object: it is **not symmetric**, and that is correct, because $\Pi_{0\nu}$ (energy flux) and $\Pi_{\nu0}$ (momentum density times $c$) are related through the metric. Contracting the column with $g_{\mu\nu}[\mathbb{M}_-]$ gives the symmetric tensor
 $$
 T_{00} = W, \qquad T_{0j} = T_{j0} = \frac{1}{c}S_j, \qquad T_{jk} = -\sigma_{jk},
 $$
-because $T_{00} = \eta_{00}\Pi_{00} = W$, $T_{0j} = \eta_{jj}\Pi_{0j} = \frac{1}{c}S_j$, $T_{j0} = \eta_{00}\Pi_{j0} = \frac{1}{c}S_j$, and $T_{jk} = \eta_{kk}\Pi_{jk} = -\sigma_{jk}$, which is symmetric because $\sigma$ is. This is the standard electromagnetic energy–momentum tensor in the medium: $W$ is the energy density, $\frac{1}{c}\vec S$ the energy flux and the momentum density times $c$, and $-\sigma_{\nu\mu}$ the momentum flux.
+because $T_{00} = g_{00}[\mathbb{M}_-]\Pi_{00} = W$, $T_{0j} = g_{jj}[\mathbb{M}_-]\Pi_{0j} = \frac{1}{c}S_j$, $T_{j0} = g_{00}[\mathbb{M}_-]\Pi_{j0} = \frac{1}{c}S_j$, and $T_{jk} = g_{kk}[\mathbb{M}_-]\Pi_{jk} = -\sigma_{jk}$, which is symmetric because $\sigma$ is. This is the standard electromagnetic energy–momentum tensor in the medium: $W$ is the energy density, $\frac{1}{c}\vec S$ the energy flux and the momentum density times $c$, and $-\sigma_{\nu\mu}$ the momentum flux.
 
 **Remark on what the construction is.** The insertion of $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ is what turns a single biquaternion into a rank-two object: each basis element supplies one vector direction, and the scalar part reads off the component. The two indices are treated differently by the algebra — the first through the Hermitian form $\tilde F(\,\cdot\,)\tilde F^{*}$, the second through right multiplication and scalar projection — which is why the natural object is $\Pi_{\mu\nu}$ (ordered) and not a tensor with both slots treated the same way. The parents' four-component $\tilde W = \frac{1}{2}\tilde F\tilde F^{*}$ is the time row of $T$, up to the factor $i$ carried by $\mathcal{E}_0 = ie_t$: $\Pi_{0\nu} = \frac{i}{2}\mathrm{Sc}(\tilde F\tilde F^{*}\mathcal{E}_\nu) = i\,\mathrm{Sc}(\tilde W\mathcal{E}_\nu)$. The full tensor needs all sixteen entries; twelve of them — the six independent stress components and their partners — are simply absent from any four-component object.
 
@@ -179,9 +179,9 @@ using $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$. Hence
 $$
 \boxed{\;\sum_\mu\Pi_{\mu\mu} = -W - (-W) = 0\;}.
 $$
-The tensor is traceless. With the symmetric tensor the same statement reads $\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu} = -T_{00} + \sum_kT_{kk} = -W + (-\sum_k\sigma_{kk}) = -W + W = 0$. Tracelessness holds in the medium as well as in vacuum, because $W$ and the trace part of the stress are in the fixed ratio forced by the isotropic subtraction. It is the algebraic expression of the classical fact that the electromagnetic energy–momentum tensor is traceless, which is what makes source-free Maxwell theory conformally invariant at the classical level.
+The tensor is traceless. With the symmetric tensor the same statement reads $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]T_{\mu\nu} = -T_{00} + \sum_kT_{kk} = -W + (-\sum_k\sigma_{kk}) = -W + W = 0$. Tracelessness holds in the medium as well as in vacuum, because $W$ and the trace part of the stress are in the fixed ratio forced by the isotropic subtraction. It is the algebraic expression of the classical fact that the electromagnetic energy–momentum tensor is traceless, which is what makes source-free Maxwell theory conformally invariant at the classical level.
 
-**A caution on the trace.** The trace is $\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu} = -T_{00} + \sum_kT_{kk}$, not the flat sum $T_{00} + \sum_kT_{kk}$. The metric factor sits on the time term; here $T_{00} = W$ and $T_{kk} = -\sigma_{kk} = W$, so the flat sum would be $2W$, not zero. The cancellation uses the Minkowski pairing, which is the one under which the tensor takes its standard form.
+**A caution on the trace.** The trace is $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]T_{\mu\nu} = -T_{00} + \sum_kT_{kk}$, not the flat sum $T_{00} + \sum_kT_{kk}$. The metric factor sits on the time term; here $T_{00} = W$ and $T_{kk} = -\sigma_{kk} = W$, so the flat sum would be $2W$, not zero. The cancellation uses the Minkowski pairing, which is the one under which the tensor takes its standard form.
 
 ## Problem 4: The Conservation Law
 
@@ -193,7 +193,7 @@ equivalently $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = -f_\nu$ with the **l
 $$
 f_0 = -\frac{1}{c}\,\vec E\cdot\vec J, \qquad f_k = \left(\rho\vec E + \vec J\times\vec B\right)_k ,
 $$
-whose upper time component is $+\frac{1}{c}\vec E\cdot\vec J$ (the sign is the metric's, $\eta_{00}=-1$).
+whose upper time component is $+\frac{1}{c}\vec E\cdot\vec J$ (the sign is the metric's, $g_{00}[\mathbb{M}_-]=-1$).
 In particular, for a source-free field, $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$.
 
 **Solution (energy component).** In the real frame $x_0=ct'$ the derivatives are $\partial/\partial x_0=\frac{1}{c}\partial/\partial t'$ and $\partial/\partial x_k=\partial/\partial q_k$. With $\Pi_{00}=-W$ and $\Pi_{k0}=-\frac{1}{c}S_k$,
@@ -254,7 +254,7 @@ where $W = \epsilon E_0^2\cos^2(kz-\omega t')$ for this wave and $1/(\mu c^2) = 
 $$
 \boxed{\;T_{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k_\mu k_\nu\;}.
 $$
-The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu} = -T_{00} + T_{33} = -W + W = 0$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} \propto \sum_\mu(\partial/\partial x_\mu W)k_\mu k_\nu$ with $\sum_\mu(\partial/\partial x_\mu W)k_\mu = k\left(\frac{1}{c}\partial/\partial t'W + \partial/\partial z\,W\right) = 0$, using $\partial W/\partial z = -\frac{1}{c}\partial W/\partial t'$. The direct computation confirms $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$ and $\sum_\mu\Pi_{\mu\mu} = 0$ identically in $z$ and $t'$.
+The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]T_{\mu\nu} = -T_{00} + T_{33} = -W + W = 0$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} \propto \sum_\mu(\partial/\partial x_\mu W)k_\mu k_\nu$ with $\sum_\mu(\partial/\partial x_\mu W)k_\mu = k\left(\frac{1}{c}\partial/\partial t'W + \partial/\partial z\,W\right) = 0$, using $\partial W/\partial z = -\frac{1}{c}\partial W/\partial t'$. The direct computation confirms $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu} = 0$ and $\sum_\mu\Pi_{\mu\mu} = 0$ identically in $z$ and $t'$.
 
 The rank-one character is the energy–momentum expression of the vanishing biquaternion norm. A null field, $\langle\tilde F\rangle_{\natural} = 0$, is $N$-degenerate, a zero divisor of $\mathbb{B}$, and its energy–momentum tensor is built from a single null direction. The plane wave is the model case; the general null field behaves the same way pointwise, which is the content of the first further problem below.
 
@@ -268,7 +268,7 @@ The following problems are left to the reader. They extend the construction, and
 
 **2. The tensor formula.** Using the component form of $F_{\mu\nu}$ given in the parent article, verify that
 $$
-T_{\mu\nu} = \frac{1}{\mu}\left(\sum_{\alpha,\beta}\eta_{\alpha\beta}F_{\mu\alpha}F_{\nu\beta} - \frac{1}{4}\,\eta_{\mu\nu}\sum_{\alpha,\beta}F_{\alpha\beta}F_{\alpha\beta}\right)
+T_{\mu\nu} = \frac{1}{\mu}\left(\sum_{\alpha,\beta}g_{\alpha\beta}[\mathbb{M}_-]F_{\mu\alpha}F_{\nu\beta} - \frac{1}{4}\,g_{\mu\nu}[\mathbb{M}_-]\sum_{\alpha,\beta}F_{\alpha\beta}F_{\alpha\beta}\right)
 $$
 reproduces the component table of Problem 2 up to the medium factors, and identify the normalization of the bracketed expression in terms of $W$ and $\sigma_{\nu\mu}$. This shows that the bigeneral quaternionic bilinear and the standard tensor formula are the same object.
 
@@ -330,8 +330,8 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ | Hermitian form (energy–momentum four-vector) |
 | $\Pi_{\mu\nu} = \frac{1}{2}\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$ | Energy–momentum bilinear; first index the row, second the column |
 | $\sum_\mu\partial/\partial x_\mu\Pi_{\mu\nu}$ | Divergence of the energy–momentum tensor |
-| $T_{\mu\nu} = \sum_\beta\eta_{\nu\beta}\Pi_{\mu\beta}$ | Symmetric energy–momentum tensor |
-| $\eta = \mathrm{diag}(-1,1,1,1)$ | Minkowski metric |
+| $T_{\mu\nu} = \sum_\betag_{\nu\beta}[\mathbb{M}_-]\Pi_{\mu\beta}$ | Symmetric energy–momentum tensor |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | Minkowski metric |
 | $f_0 = -\frac{1}{c}\vec E\cdot\vec J$, $f_k = (\rho\vec E+\vec J\times\vec B)_k$ | Four-force density, lower components |
 | $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural}$ | Biquaternion norm (vanishes for a null field) |
 | $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ | Trace formula |

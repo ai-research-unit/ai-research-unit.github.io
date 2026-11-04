@@ -6,7 +6,7 @@ The companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form
 
 The interest of the mechanism for the framework is exactly this economy. The algebra's scalars are central, and the central scalar is the only scalar the abelian gauge structure of the companion articles can carry. The Higgs mechanism uses the radial mode of that scalar and needs a potential and a vacuum value; the Stueckelberg mechanism uses the phase and needs only the shift. In the abelian sector the two are the two ends of one construction: the Higgs mechanism with the radial mode taken infinitely heavy reduces to the Stueckelberg mechanism, and conversely the Stueckelberg model embeds in the abelian Higgs as its low-energy limit. This article derives the invariant mass term, carries out the gauge fixing and the degree-of-freedom count, relates the mechanism to the abelian Higgs, and states what the algebra supplies and what does not carry over to the non-abelian case.
 
-We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The abelian connection is $\tilde{A}=ie_tA_0+\vec A\in\mathbb{M}_-$ with components $A_\mu$, transforming as $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$ with $\Gamma$ a real central scalar, so that $A_{2,\mu}=A_\mu-\partial/\partial Q_\mu\,\Gamma$; the covariant derivative is $D=\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\kappa=ϙ/\hbar$; the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with components $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$. The gradient and d'Alembertian are $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the general quaternionic bilinear form on $\mathbb{M}_-$ is $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed. The informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is kept distinct from the matrix trace.
+We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The abelian connection is $\tilde{A}=ie_tA_0+\vec A\in\mathbb{M}_-$ with components $A_\mu$, transforming as $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$ with $\Gamma$ a real central scalar, so that $A_{2,\mu}=A_\mu-\partial/\partial Q_\mu\,\Gamma$; the covariant derivative is $D=\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\kappa=ϙ/\hbar$; the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with components $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$. The gradient and d'Alembertian are $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu\,\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $g_{\mu\nu}[\mathbb{M}_-]$, and the general quaternionic bilinear form on $\mathbb{M}_-$ is $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed. The informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is kept distinct from the matrix trace.
 
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive field equation, the Lorenz condition and the obstruction of the explicit mass term.
 - Companion article *Canonical Quantization of the Biquaternion Proca Field*, for the three polarizations, the second-class constraint structure and the propagator.
@@ -39,7 +39,7 @@ so that the transformation changes the action by a term proportional to $\mu^2$.
 
 A massless vector has two polarizations and a massive vector has three. The third polarization of the Proca field is present as a dynamical mode of the four-component field: the primary constraint $\pi^0\approx0$ and the deformed Gauss law $\partial/\partial Q_i\,\pi_i+\mu^2A_0\approx0$ are second class, with bracket $\{\pi^0,\partial/\partial Q_i\,\pi_i+\mu^2A_0\}=-\mu^2\delta^{(3)}$, and they remove the two phase-space directions that a massless vector would remove differently, leaving three. Equivalently, the massive wave equation $(\Box-\mu^2)\tilde{A}=0$ in the Lorenz gauge propagates all three polarizations, with the completeness relation
 $$
-\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu}=\eta_{\mu\nu}+\frac{p_\mu p_\nu}{\mu^2},
+\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu}=g_{\mu\nu}[\mathbb{M}_-]+\frac{p_\mu p_\nu}{\mu^2},
 \qquad
 P^2=P,\quad\mathrm{tr}\,P=3,\quad \sum_\nu P_{\mu\nu}p_\nu=0 ,
 $$
@@ -134,7 +134,7 @@ $$
 $$
 has a vector propagator of the Proca form with a gauge-dependent longitudinal part,
 $$
-D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\eta_{\mu\nu}-\frac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right),
+D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(g_{\mu\nu}[\mathbb{M}_-]-\frac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right),
 $$
 which reduces to the Proca propagator of the companion article as $\xi\to\infty$, and a scalar with an $\xi$-dependent mass $\xi\mu^2$. The gauge parameter interpolates between the unitary gauge at $\xi\to\infty$ (the scalar mass becomes infinite and the scalar decouples, leaving the Proca propagator) and the Landau gauge at $\xi=0$ (the scalar mass vanishes). The physical amplitudes are independent of $\xi$, which is the statement that the scalar and the longitudinal vector together carry one physical mode; the demonstration is the abelian case of the gauge-parameter independence recorded in the gauge-field path-integral companion. One feature distinguishes the abelian case from the non-abelian one and is worth recording: the Faddeev–Popov determinant of an abelian gauge fixing is field independent, so the Stueckelberg model has **no ghost**. The scalar $\chi$ and the longitudinal vector are the only unphysical modes, and they cancel among themselves in the gauge-parameter dependence; in the non-abelian case the determinant is field dependent, the ghosts are dynamical, and the cancellation involves the ghost fields in addition. The framework's Stueckelberg mechanism therefore has the simplest possible unphysical sector: one scalar, no ghosts.
 
@@ -245,7 +245,7 @@ $$
 $$
 is gauge invariant for any $\Gamma$. Expanded and canonically normalized it is a massless vector, a massless scalar and a derivative mixing of strength $\mu$; the scalar's equation is the divergence of the vector's equation, so the scalar is the longitudinal mode. In the unitary gauge $\chi=0$ the Lagrangian reduces to Proca with three polarizations; in the $R_\xi$ gauge $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi=0$ the scalar has an $\xi$-dependent mass and the vector propagator
 $$
-D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\eta_{\mu\nu}-\frac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)
+D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(g_{\mu\nu}[\mathbb{M}_-]-\frac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)
 $$
 has a gauge-dependent longitudinal part, with physical amplitudes independent of $\xi$. The count is five fields, one gauge symmetry and one mass-term constraint, leaving three.
 
@@ -271,13 +271,13 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\chi=0$ | $*$-Unitary (Stueckelberg) gauge; reduces to Proca |
 | $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi$ | $R_\xi$ gauge-fixing condition |
 | $\chi=\phi/\mu$ | Canonical normalization of the scalar |
-| $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(\eta_{\mu\nu}-\dfrac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)$ | Vector propagator in the $R_\xi$ gauge; Proca at $\xi\to\infty$ |
+| $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(g_{\mu\nu}[\mathbb{M}_-]-\dfrac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)$ | Vector propagator in the $R_\xi$ gauge; Proca at $\xi\to\infty$ |
 | $m_\chi^2=\xi\mu^2$ | Gauge-dependent scalar mass |
 | $V=\beta(\varphi^*\varphi-v^2/2)^2$, $\vert\varphi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |
 | $\mu=\kappa v=ϙv/\hbar$ | Higgs origin of the mass; $\kappa=ϙ/\hbar$ |
 | $m_h^2=2\beta v^2$ | Radial-mode mass |
 | $\varphi=\rho \exp(i\vartheta)$, $\vartheta=-(\mu/v)\,\chi$ | Polar form; $\chi$ the Stueckelberg field |
-| $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric (level 2) |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric (level 2) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 
 ## Further Reading

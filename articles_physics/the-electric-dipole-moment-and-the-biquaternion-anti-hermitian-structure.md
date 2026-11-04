@@ -30,7 +30,7 @@ $$
 \nu(t)=x,\quad \nu(k)=y ,
 $$
 
-so $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the frame cell of the coordinate $x_\mu$. The frame carries the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$ and is fixed in §*The Legacy Gamma Formulation*.
+so $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the frame cell of the coordinate $x_\mu$. The frame carries the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$ and is fixed in §*The Legacy Gamma Formulation*.
 
 **The structural statement.** The biquaternion framework places the EDM operator in a definite half of its algebra. The insertion $\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})$ is **anti-Hermitian** in the field components that couple to $\vec E$, and it therefore belongs to the framework's material, anti-Hermitian sector $\mathbb{M}_-$; the magnetic-moment insertion $\sigma_{ij}$, which couples to $\vec B$, is Hermitian and belongs to the informational sector $\mathbb{M}_+$. The two are Hodge duals of each other: the EDM insertion is $i$ times the dual of the tensor, and that $i$ is what carries the dual back into the anti-Hermitian class. The article establishes this and states what it does and does not buy.
 
@@ -43,7 +43,7 @@ The sections that follow fix the operator, its dimension, and the size of the ef
 **The metric and the field strength.** The frame metric and the components are
 
 $$
-g=\mathrm{diag}(+1,-1,-1,-1),\qquad
+g=\mathrm{diag}(-1,+1,+1,+1),\qquad
 \varepsilon_\rho=g_{\rho\rho},\qquad
 \epsilon_{0123}=+1,\qquad
 F_{0i}=E_i,\qquad
@@ -117,7 +117,7 @@ where $\varphi$ is the CP-odd phase. The estimate is the one that governs the re
 
 ## The Anti-Hermitian Structure of $\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})$
 
-**The Hermiticity of the insertions.** With the block representation and $g=\mathrm{diag}(+1,-1,-1,-1)$, the generators of the Lorentz algebra split into the boosts and the rotations,
+**The Hermiticity of the insertions.** With the block representation and $g=\mathrm{diag}(-1,+1,+1,+1)$, the generators of the Lorentz algebra split into the boosts and the rotations,
 
 $$
 \sigma_{0k}\ \text{(anti-Hermitian)},\qquad
@@ -491,7 +491,7 @@ exhibits the magnetic moment $F_2$ and the EDM $F_3$ as the Hermitian and anti-H
 | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Frame cells; the last is the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$ |
 | $\sigma_{\mu\nu}=\tfrac{i}{2}[iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}]$ | Lorentz generators, the Dirac tensor; $\nu(t)=x$, $\nu(k)=y$ |
 | $\omega=-R_{\vec e_z}^{\mathrm{axf}}$, $\omega^2=-e_t$ | Volume element, the product of the four frame cells; $-iR_{\vec e_z}^{\mathrm{axf}}=i\omega$ |
-| $\varepsilon_\rho=g_{\rho\rho}$ | Signature sign; with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
+| $\varepsilon_\rho=g_{\rho\rho}$ | Signature sign; with $g=\mathrm{diag}(-1,+1,+1,+1)$, $\varepsilon_0=+1$ and $\varepsilon_k=-1$ |
 | $\sigma_{0k}$, $\sigma_{0k}(-iR_{\vec e_z}^{\mathrm{axf}})$ | Anti-Hermitian, $\mathbb{M}_-$; the second is the EDM insertion |
 | $\sigma_{ij}$, $\sigma_{ij}(-iR_{\vec e_z}^{\mathrm{axf}})$ | Hermitian, $\mathbb{M}_+$; the magnetic insertion and $i$ times its dual |
 | $\star M:=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\varepsilon_\rho\varepsilon_\sigma M_{\rho\sigma}$ | Hodge dual, the summed pair raised; on the bivectors $\star\star=-1$ |

@@ -305,7 +305,7 @@ $$
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 
-with $g=\operatorname{diag}(1,-1,-1,-1)$; the last relation is the statement $\{\Gamma,G_\mu\}=0$ of the preceding sections, read once in frame names. The chirality-odd trace behind every axial bilinear is $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma}$, with $\epsilon_{0123}=+1$.
+with $g=\operatorname{diag}(-1,+1,+1,+1)$; the last relation is the statement $\{\Gamma,G_\mu\}=0$ of the preceding sections, read once in frame names. The chirality-odd trace behind every axial bilinear is $\mathrm{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma}$, with $\epsilon_{0123}=+1$.
 
 A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four of them, with $\ell(M)=\operatorname{rank}c(M)$.
 

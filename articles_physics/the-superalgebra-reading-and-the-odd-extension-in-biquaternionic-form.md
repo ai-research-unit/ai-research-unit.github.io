@@ -325,7 +325,7 @@ $$
 \gamma_k^2=i^2L_{\vec e_k^{2}}^{\mathrm{axf}}R_{\vec e_y^{2}}^{\mathrm{axf}}=i^2L_{-e_t}^{\mathrm{axf}}R_{-e_t}^{\mathrm{axf}}=-I_4 .
 $$
 
-Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_k$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the metric $g=\operatorname{diag}(+1,-1,-1,-1)$, and
+Each square is the product of $i^{2}=-1$ with one minus for every spacelike multiplier: one such multiplier for $\gamma_0$, two for each $\gamma_k$. The products are $(-1)(-1)=+1$ and $(-1)(-1)(-1)=-1$, which is the metric sign. So the four carry the metric $g=\operatorname{diag}(-1,+1,+1,+1)$, and
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad

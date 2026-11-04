@@ -35,7 +35,7 @@ $$
 \{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
-with $g=\mathrm{diag}(+1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The cells are two-sided: $\Gamma_t$ has the central left multiplier $e_t$ and is therefore a pure right multiplication, while the three spatial cells $\Gamma_k$ have a non-central left multiplier and use both sides. The fifth frame cell, the **chirality cell**, is $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$; it is also a pure right multiplication and anticommutes with the four cells.
+with $g=\mathrm{diag}(-1,+1,+1,+1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The cells are two-sided: $\Gamma_t$ has the central left multiplier $e_t$ and is therefore a pure right multiplication, while the three spatial cells $\Gamma_k$ have a non-central left multiplier and use both sides. The fifth frame cell, the **chirality cell**, is $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$; it is also a pure right multiplication and anticommutes with the four cells.
 
 The **momentum cell** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is
 
@@ -343,7 +343,7 @@ $\gamma_5$ is the chirality cell itself, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{
 
 The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The identities the body cites.** In the $\gamma$ reading, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
+**The identities the body cites.** In the $\gamma$ reading, with $g=\mathrm{diag}(-1,+1,+1,+1)$ and $\epsilon_{0123}=+1$,
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
@@ -422,7 +422,7 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $Q_W^e=1-4\sin^2\theta_{\mathrm W}$ | Weak charge of the electron |
 | $\tilde J\in\mathbb M_-$ | Framework's conserved material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the frame cells |
+| $g=\mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric of the frame cells |
 
 ## Further Reading
 

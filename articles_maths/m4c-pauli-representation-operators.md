@@ -775,7 +775,7 @@ $$
 (\gamma_5)^2=\mathrm I_4,\qquad
 \gamma_5\gamma_\mu=-\gamma_\mu\gamma_5,
 $$
-with $g=\operatorname{diag}(1,-1,-1,-1)$, and
+with $g=\operatorname{diag}(-1,+1,+1,+1)$, and
 $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}.
 $$

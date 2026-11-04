@@ -36,7 +36,7 @@ so that a cell names both sides at once. The frame cell of the coordinate $x_\mu
 $$
 iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\,iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}+iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}=2g_{\mu\nu}I_4,
 \qquad
-g=\mathrm{diag}(+1,-1,-1,-1).
+g=\mathrm{diag}(-1,+1,+1,+1).
 $$
 
 The factor $i$ belongs to the cell and is not a choice: it is what makes the four cells the Clifford generators, and without it they would square to $-g_{\mu\nu}$. Where two cells meet, the two imaginary units multiply to $-1$,
@@ -146,7 +146,7 @@ $$
 (P\psi)_\mu=\sum_\nu\varepsilon_\nu P_{\mu\nu}\psi_\nu ,
 $$
 
-whose trace vanishes. This was verified with explicit $4\times4$ matrices of the frame cells, with $g=\mathrm{diag}(+1,-1,-1,-1)$: the idempotency with the metric-weighted composition and both annihilation conditions held to machine precision. The rank of the $16\times16$ array $P_{(\mu i)(\nu j)}$ — the projector acting on the $4\times4$ components of the vector-spinor — is
+whose trace vanishes. This was verified with explicit $4\times4$ matrices of the frame cells, with $g=\mathrm{diag}(-1,+1,+1,+1)$: the idempotency with the metric-weighted composition and both annihilation conditions held to machine precision. The rank of the $16\times16$ array $P_{(\mu i)(\nu j)}$ — the projector acting on the $4\times4$ components of the vector-spinor — is
 
 $$
 \boxed{\;\mathrm{rank}\,P = 12 = 16-4\;},
@@ -356,7 +356,7 @@ $$
 
 with $\gamma\cdot\partial$ and $\gamma\cdot p$ the metric contractions. $\mathbb{D}_p$ is $\mathbb{D}$ read at $\partial/\partial x_\mu\to-ip_\mu$, and that substitution is the single $i$ that separates the two; the triple $T$ differs from the antisymmetrized triple of frame cells by the same bookkeeping, three factors giving $(-i)^3=i$.
 
-**The identities.** With $g=\mathrm{diag}(+1,-1,-1,-1)$ and the sign vector $\varepsilon_\mu=g_{\mu\mu}$,
+**The identities.** With $g=\mathrm{diag}(-1,+1,+1,+1)$ and the sign vector $\varepsilon_\mu=g_{\mu\mu}$,
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,
@@ -444,7 +444,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\Pi_{\mu\nu}$ | Transverse traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions |
 | $\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
 | $G_{\mu\nu}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level 3); the $ict'$ metric is $\eta=-g$ |
+| $g=\mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric (level 3); the $ict'$ metric is $g_{\mu\nu}[\mathbb{M}_-]$ |
 | $\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | The gammas of *The Legacy Gamma Formulation*: the same frame cells written as letters; $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
 
 ## Further Reading

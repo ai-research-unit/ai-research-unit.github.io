@@ -116,7 +116,7 @@ $$
 The mixed products vanish because the off-diagonal units have vanishing scalar part, $\mathrm{Sc}(x)=\mathrm{Sc}(y)=0$, and the relevant products are off-diagonal matrix units. All ten inner products were recomputed from (4); the result is the off-diagonal tetrad metric
 
 $$
-\eta_{ab} = \begin{pmatrix} 0 & -1 & 0 & 0\\ -1 & 0 & 0 & 0\\ 0 & 0 & 0 & 1\\ 0 & 0 & 1 & 0\end{pmatrix}, \qquad (e_1,e_2,e_3,e_4)=(l,n,m,\bar m).
+g_{ab}[\mathrm{NP}] = \begin{pmatrix} 0 & -1 & 0 & 0\\ -1 & 0 & 0 & 0\\ 0 & 0 & 0 & 1\\ 0 & 0 & 1 & 0\end{pmatrix}, \qquad (e_1,e_2,e_3,e_4)=(l,n,m,\bar m).
 \tag{5}
 $$
 
@@ -337,7 +337,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\tilde\Pi_1,\tilde\Pi_2,\vec\Upsilon_1,\vec\Upsilon_2$ | matrix units $E_{11},E_{22},E_{12},E_{21}$ in $\mathbb{B}$ |
 | $E_{ij}$ | matrix with $1$ in position $(i,j)$ |
 | $l,n,m,\bar m$ | null tetrad legs; $l,n$ real, $m,\bar m$ complex; their components $l_a,n_a,m_a,\bar m_a$ |
-| $\eta_{ab}$ | tetrad metric, off-diagonal, (5) |
+| $g_{ab}[\mathrm{NP}]$ | tetrad metric, off-diagonal, (5) |
 | $\varepsilon(o,o')$ | symplectic pairing of the spinor module |
 | $\Gamma_{abc}=(\nabla_a e_b)\cdot e_c$ | connection coefficients in the tetrad |
 | $\kappa,\sigma,\rho,\tau,\pi,\lambda,\mu,\nu,\varepsilon,\gamma,\beta,\alpha$ | the twelve spin coefficients |

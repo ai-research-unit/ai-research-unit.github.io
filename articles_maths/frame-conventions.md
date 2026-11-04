@@ -4,7 +4,7 @@
 
 In this article a *frame* means a spacetime frame: a choice of coordinates on the biquaternion space. There are two, the $\mathbb{B}$ frame and the $\mathbb{M}_-$ frame, and every display in the corpus is written in one of them. A reader who mixes the two changes a sign or a factor of $i$ and has no way to see it in the result.
 
-This article fixes the general notion first, then the two coordinate frames. The $\mathbb{B}$ frame is the general frame of the biquaternion universe, and its metric is Euclidean. The $\mathbb{M}_-$ frame is a particular case of it on the material sector, with metric $(1,-1,-1,-1)$, kept to display familiar equations in their usual form. The article then gives the Clifford map, which translates those directions into $M_4(\mathbb{C})$ and is a dictionary rather than a structure of the algebra, and it closes with the rules that keep them apart.
+This article fixes the general notion first, then the two coordinate frames. The $\mathbb{B}$ frame is the general frame of the biquaternion universe, and its metric is Euclidean. The $\mathbb{M}_-$ frame is a particular case of it on the material sector, with metric $(-1,1,1,1)$, kept to display familiar equations in their usual form. The article then gives the Clifford map, which translates those directions into $M_4(\mathbb{C})$ and is a dictionary rather than a structure of the algebra, and it closes with the rules that keep them apart.
 
 Each frame is fixed with its metric. The metric is part of the frame, not a separate choice, and the plain weight belongs to the product and is the same in both frames.
 
@@ -18,7 +18,7 @@ The article is read after *Algebra and Element Conventions* and before *Matrix R
 
 **The two coordinate frames have names.** The names are read $\mathbb{B}$ for biquaternion and $\mathbb{M}_-$ for the material sector. The $\mathbb{B}$ frame is the biquaternion space read in its own complex coordinate: the natural complete frame, with no reality condition and all four directions on the same footing. The $\mathbb{M}_-$ frame is the material real frame, named for the sector it is defined on, reached by $Q_t=ict'$ in physics and by $Q_t=iq'_t$ in mathematics. $Q_\mu$ stays the name of the complex coordinate and $x_\mu$ the name of the real one; the frame name and the coordinate name are separate. The generators carry the frame in brackets and the index low: $\gamma_\mu[\mathbb{B}]$ and $\gamma_\mu[\mathbb{M}_-]$.
 
-**The frame and the invariant are read together.** "$\gamma_k[\mathbb{M}_-]^2=-I_4$" is a frame statement: it is true in the $\mathbb{M}_-$ frame and false for $\gamma_k[\mathbb{B}]$. "$\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2g_{\mu\nu}I_4$" is invariant in form, and the value of $g$ is what the frame supplies. Neither sentence is complete without the other.
+**The frame and the invariant are read together.** "$\gamma_k[\mathbb{M}_-]^2=-I_4$" is a frame statement: it is true in the $\mathbb{M}_-$ frame and false for $\gamma_k[\mathbb{B}]$. "$\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$" is a frame statement, and the value of $g$ is what the frame supplies: the cells square to $-g[\mathbb{M}_-]$ there, and to $+g[\mathbb{B}]$ here. Neither sentence is complete without the other.
 
 **A change of frame is a substitution with a law.** On the material sector it is $Q_t=ix_0$ and $Q_k=x_k$ for $k=1,2,3$, with the inverse $x_0=-iQ_t$ and $x_k=Q_k$. A display is read only in the frame that produced it, and the substitution is written wherever a display passes from one frame to the other.
 
@@ -58,19 +58,19 @@ x_0=q'_t,\qquad x_1=q_x,\qquad x_2=q_y,\qquad x_3=q_z ,
 $$
 with $q'_t,q_k$ real. On the material case $Q_t=ix_0$ and $Q_k=x_k$ for $k=1,2,3$: one substitution, a rotation of the time axis by $i$.
 
-**A particular case, kept for convenience.** The $\mathbb{M}_-$ frame is the $\mathbb{B}$ frame restricted to $\mathbb{M}_-$, not a second universe and not a second algebra. It is defined only after the coefficients have been put on that sector, and its one change is the time coordinate: $Q_t=iq'_t$ becomes the real $x_0=q'_t$, so a display writes $q'_t$ with no $i$ attached. The $i$ does not disappear; its square becomes the sign of the time term, $i^2=-1$, and the metric reads $(1,-1,-1,-1)$ with real coefficients. That metric is not chosen a second time: it is the Euclidean metric after the substitution, and $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$ records it. The purpose of the frame is display: to write familiar equations in their familiar shape, with a real time and a Minkowski metric. Nothing is added to the content, and the same equation is read in the notation of the textbooks.
+**A particular case, kept for convenience.** The $\mathbb{M}_-$ frame is the $\mathbb{B}$ frame restricted to $\mathbb{M}_-$, not a second universe and not a second algebra. It is defined only after the coefficients have been put on that sector, and its one change is the time coordinate: $Q_t=iq'_t$ becomes the real $x_0=q'_t$, so a display writes $q'_t$ with no $i$ attached. The $i$ does not disappear; its square becomes the sign of the time term, $i^2=-1$, and the metric reads $(-1,1,1,1)$ with real coefficients. That metric is not chosen a second time: it is the Euclidean metric after the substitution, and $\Lambda^{\mathsf T}g[\mathbb{B}]\Lambda=g[\mathbb{M}_-]$ records it. The purpose of the frame is display: to write familiar equations in their familiar shape, with a real time and a Minkowski metric. Nothing is added to the content, and the same equation is read in the notation of the textbooks.
 
-**The metric is $(1,-1,-1,-1)$, and the interval is its negative.** On $\mathbb{M}_-$ the same interval reads
+**The metric is $(-1,1,1,1)$, and it is the interval itself.** On $\mathbb{M}_-$ the same interval reads
 $$
 -x_0^2+x_1^2+x_2^2+x_3^2 ,
 $$
-with coefficients $(-1,1,1,1)$, the negative of the Clifford metric. The sign is now explicit in the coordinate. The interval is the metric up to one overall sign: $-x_0^2+x_1^2+x_2^2+x_3^2=-g_{\mu\nu}x_\mu x_\nu$ with $g=(1,-1,-1,-1)$, and the generators of the $\mathbb{M}_-$ frame realise exactly that $g$. The frame fixes the tuple; it does not offer a choice of tuple. Read on $\mathbb{M}_-$, this is the "metric of the two real sectors" of the corpus, not a third frame metric; on $\mathbb{M}_+$ the same form is read on the informational coordinate.
+with coefficients $(-1,1,1,1)$, the negative of the Clifford metric. The sign is now explicit in the coordinate. The interval is the metric up to one overall sign: $-x_0^2+x_1^2+x_2^2+x_3^2=g_{\mu\nu}x_\mu x_\nu$ with $g=(-1,1,1,1)$, and the generators of the $\mathbb{M}_-$ frame realise exactly that $g$. The frame fixes the tuple; it does not offer a choice of tuple. Read on $\mathbb{M}_-$, this is the "metric of the two real sectors" of the corpus, not a third frame metric; on $\mathbb{M}_+$ the same form is read on the informational coordinate.
 
 **The squares split.** In this frame
 $$
-(\gamma_0[\mathbb{M}_-])^2=+I_4,\qquad (\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2g_{\mu\nu}I_4 ,
+(\gamma_0[\mathbb{M}_-])^2=+I_4,\qquad (\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4 ,
 $$
-with $g=\mathrm{diag}(1,-1,-1,-1)$. One generator is singled out by its sign, and that generator is the time direction.
+with $g=\mathrm{diag}(-1,+1,+1,+1)$. One generator is singled out by its sign, and that generator is the time direction.
 
 ## The Two Frames Side by Side
 
@@ -81,10 +81,10 @@ Each column uses its own coordinate; the $\mathbb{B}$ column is the general fram
 | coordinate | $Q_\mu\in\mathbb{C}$; on $\mathbb{M}_-$, $Q_t=iq'_t$ | $x_0=q'_t$, $x_k=q_k$ on $\mathbb{M}_-$ |
 | interval $\sum_\mu Q_\mu^2$ | $(1,1,1,1)$; complex in general | $(-1,1,1,1)$ on $\mathbb{M}_-$ |
 | plain weight $\varepsilon$ | $(1,-1,-1,-1)$ | $(1,-1,-1,-1)$ |
-| Clifford metric $g$ | $(1,1,1,1)$ | $(1,-1,-1,-1)$ |
-| squares of the four | all $+I_4$ | $(+,-,-,-)$ |
+| frame metric $g$ | $(1,1,1,1)$ | $(-1,1,1,1)$ |
+| squares of the four cells | all $+I_4$, that is $g$ | $(+,-,-,-)$, that is $-g$ |
 
-**Each frame makes one coincidence and breaks the other.** In the $\mathbb{B}$ frame the interval and the Clifford metric carry the same tuple, $(1,1,1,1)$; the interval's value is complex in general, and on $\mathbb{M}_-$ it is the Minkowski interval. The plain weight is $(1,-1,-1,-1)$ and does not follow either. In the $\mathbb{M}_-$ frame the plain weight and the Clifford metric coincide, both $(1,-1,-1,-1)$, and the interval has the opposite coefficients $(-1,1,1,1)$. A reader who carries "the metric" from one frame to the other carries the wrong coincidence, and the result is a sign that no algebra check will catch.
+**Each frame is one tuple, and the cells of the frame square to it.** In the $\mathbb{B}$ frame the interval and the metric are the same tuple, $(1,1,1,1)$, and the four cells square to it. In the $\mathbb{M}_-$ frame the interval and the metric are again the same tuple, $(-1,1,1,1)$; the cells square to the opposite, $(1,-1,-1,-1)$, because the $i$ of $Q_t=ix_0$ has left the generator and become the sign of the time slot, $i^2=-1$. The plain weight $\varepsilon=(1,-1,-1,-1)$ is the square of the units, the same in both frames, and it is not the metric of either. A reader who carries a tuple from one frame to the other carries the wrong one, and the result is a sign that no algebra check will catch.
 
 **The $i$ is never put into the metric.** The coefficients above are real in both frames. What changes is which coordinate carries the $i$: on the material case it is $Q_t$, in the $\mathbb{M}_-$ frame it is none. A metric with an $i$ in it is not a metric of this corpus.
 
@@ -104,7 +104,7 @@ $$
 Its values are fixed by the anticommutator in each frame,
 $$
 \{\gamma_\mu[\mathbb{B}],\gamma_\nu[\mathbb{B}]\}=2\delta_{\mu\nu}I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(1,-1,-1,-1),
+\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4,
 $$
 and it is linear over the coefficient field of its frame: complex for $\mathbb{B}$, real in the $\mathbb{M}_-$ frame. Earlier versions called the five images the gamma frame; this article names the map the Clifford map, because the object is a map and not a frame, and calls the five the gamma set. The letter $\gamma$ stays for the four images.
 
@@ -119,7 +119,7 @@ $$
 $$
 The matrix is the image of the substitution, not a second convention. The metric follows from it,
 $$
-\Lambda\,g[\mathbb{B}]\,\Lambda^{\mathsf T}=g[\mathbb{M}_-],\qquad g[\mathbb{B}]=\mathrm{diag}(1,1,1,1),\quad g[\mathbb{M}_-]=\mathrm{diag}(1,-1,-1,-1).
+\Lambda\,g[\mathbb{B}]\,\Lambda^{\mathsf T}=g[\mathbb{M}_-],\qquad g[\mathbb{B}]=\mathrm{diag}(1,1,1,1),\quad g[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1).
 $$
 The frame label is written in brackets, as it is on the generators, so no spacetime index is raised. A display that changes frame writes $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ once; it does not choose a second metric by hand.
 
@@ -147,9 +147,9 @@ Seven rules follow.
 
 The word *frame* here means a spacetime frame: a choice of coordinates on the biquaternion space. There are two, $\mathbb{B}$ and $\mathbb{M}_-$, and each carries its metric as part of the choice.
 
-The $\mathbb{B}$ frame is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$: the natural complete frame, the general frame of the biquaternion universe, with interval coefficients $(1,1,1,1)$, the Euclidean form, every generator squaring to $+I_4$, and no reality condition. The material case is $Q_t=iq'_t$, $Q_k=q_k$, and there the interval is the Minkowski one. The $\mathbb{M}_-$ frame is a particular case of it, kept for convenience: the material real frame, $x_0=q'_t$ on $\mathbb{M}_-$ with metric $(1,-1,-1,-1)$; the time generator is the one with the positive square. On the material case the two differ by $Q_t=ix_0$.
+The $\mathbb{B}$ frame is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$: the natural complete frame, the general frame of the biquaternion universe, with interval coefficients $(1,1,1,1)$, the Euclidean form, every generator squaring to $+I_4$, and no reality condition. The material case is $Q_t=iq'_t$, $Q_k=q_k$, and there the interval is the Minkowski one. The $\mathbb{M}_-$ frame is a particular case of it, kept for convenience: the material real frame, $x_0=q'_t$ on $\mathbb{M}_-$ with metric $(-1,1,1,1)$; the time cell is the one with the positive square. On the material case the two differ by $Q_t=ix_0$.
 
-The metric is carried by the frame. The $\mathbb{B}$ frame carries $(1,1,1,1)$ and its interval is the same tuple, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$. The $\mathbb{M}_-$ frame carries $(1,-1,-1,-1)$ and its interval is the negative, $(-1,1,1,1)$; the two differ by the one sign of $Q_t=ix_0$. The plain weight $\varepsilon=(1,-1,-1,-1)$ is the exception: it belongs to the product and is the same in both frames. Naming the frame and its metric together is what keeps a sign from moving silently.
+The metric is carried by the frame, and it is the tuple of the interval. The $\mathbb{B}$ frame carries $(1,1,1,1)$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$. The $\mathbb{M}_-$ frame carries $(-1,1,1,1)$, $-x_0^2+x_1^2+x_2^2+x_3^2$. The two differ by the one sign of $Q_t=ix_0$, which is $i^2=-1$ on the time slot. The plain weight $\varepsilon=(1,-1,-1,-1)$ is the exception: it belongs to the product and is the same in both frames. Naming the frame and its metric together is what keeps a sign from moving silently.
 
 **The Clifford map carries the directions, not a basis.** It sends the four directions of a frame into $M_4(\mathbb{C})$; its image is four-dimensional and not closed, and its products leave it. It is a dictionary for the physics literature, not a map of $\mathbb{B}$: the framework studies physics by the change of frame, $\mathbb{B}$ in the general case and the real frame of $\mathbb{M}_-$ in the material case. The base change is the one matrix $\Lambda_{\mathbb{B}\to\mathbb{M}_-}=\mathrm{diag}(1,-i,-i,-i)$, the image of $Q_t=ix_0$ on the generators, and the metric transforms with it.
 
@@ -158,10 +158,10 @@ The metric is carried by the frame. The $\mathbb{B}$ frame carries $(1,1,1,1)$ a
 | Symbol | Meaning |
 |---|---|
 | $Q_\mu$ | The $\mathbb{B}$-frame coordinate, $Q_\mu\in\mathbb{C}$; material case $Q_t=iq'_t$, $Q_k=q_k$; interval coefficients $(1,1,1,1)$ |
-| $x_\mu$ | The coordinate of the $\mathbb{M}_-$ frame, on $\mathbb{M}_-$, $x_0=q'_t$, $x_k=q_k$; metric $(1,-1,-1,-1)$ |
+| $x_\mu$ | The coordinate of the $\mathbb{M}_-$ frame, on $\mathbb{M}_-$, $x_0=q'_t$, $x_k=q_k$; metric $(-1,1,1,1)$ |
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the same in both frames |
 | $\langle\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2$ | The quaternionic interval; coefficients $(1,1,1,1)$ in the $\mathbb{B}$ frame (complex in general), $(-1,1,1,1)$ in the $\mathbb{M}_-$ frame |
-| $g_{\mu\nu}$ | The Clifford metric of the frame; $(1,1,1,1)$ in the $\mathbb{B}$ frame, $(1,-1,-1,-1)$ in the $\mathbb{M}_-$ frame |
+| $g_{\mu\nu}$ | The Clifford metric of the frame; $(1,1,1,1)$ in the $\mathbb{B}$ frame, $(-1,1,1,1)$ in the $\mathbb{M}_-$ frame |
 | $\gamma_\mu[\mathbb{B}]$, $\gamma_\mu[\mathbb{M}_-]$ | The values of the Clifford map in each frame, $\gamma_k[\mathbb{B}]=i\gamma_k[\mathbb{M}_-]$; the index is always low |
 | $\mathsf{K}_{\mathbb{B}}$, $\mathsf{K}_{\mathbb{M}_-}$ | The Clifford map, $\mathsf{K}_{\mathbb{B}}(e_\mu)=\gamma_\mu[\mathbb{B}]$ and $\mathsf{K}_{\mathbb{M}_-}(e_\mu)=\gamma_\mu[\mathbb{M}_-]$; a dictionary from the four directions into $M_4(\mathbb{C})$, not a structure of $\mathbb{B}$ |
 | $\Lambda_{\mathbb{B}\to\mathbb{M}_-}$ | $\mathrm{diag}(1,-i,-i,-i)$, the base change $\gamma_\mu[\mathbb{M}_-]=\sum_\nu\Lambda_{\mu\nu}\gamma_\nu[\mathbb{B}]$ |

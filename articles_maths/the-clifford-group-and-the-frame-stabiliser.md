@@ -10,7 +10,7 @@ This article fixes the stabilisers, proves the exact sequence, computes the Lie 
 
 ## The Action on Frames
 
-**The action.** Let $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ be a frame in $M_4(\mathbb{C})$, satisfying $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4$ with $g=\operatorname{diag}(+1,-1,-1,-1)$ and $\nu(t)=x$, $\nu(k)=y$. The five cells written as two-sided operators stand in the Gamma section.
+**The action.** Let $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ be a frame in $M_4(\mathbb{C})$, satisfying $\{iL_{e_\mu}R_{\vec e_{\nu(\mu)}},iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\}=2g_{\mu\nu}I_4$ with $g=\operatorname{diag}(-1,+1,+1,+1)$ and $\nu(t)=x$, $\nu(k)=y$. The five cells written as two-sided operators stand in the Gamma section.
 For $U\in GL_4(\mathbb{C})$, put
 $$
 U\cdot iL_{e_\mu}R_{\vec e_{\nu(\mu)}}=U\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\,U^{-1}.

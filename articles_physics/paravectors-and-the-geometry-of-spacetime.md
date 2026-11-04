@@ -83,7 +83,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\langle i\,p\rangle_{\natural}=i^2\langle p\rangle_{\natural}=-\left(p_t^2-\vec p\cdot\vec p\right),
 $$
 
-because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corpus's metric is the $ict'$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, which is $-(+,-,-,-)$. A paravector is therefore timelike, lightlike or spacelike exactly when the corresponding material element is, the two conventions differing by the sign of the interval and by nothing else. The null cone is the same set in both readings, and the corpus's four-velocity normalisation $\langle\tilde V\rangle_{\natural}=-c^2$ is the material face of the paravector normalisation $\langle\tilde V_{\mathrm p}\rangle_{\natural}=1$ derived below.
+because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corpus's metric is the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$, which is $-(+,-,-,-)$. A paravector is therefore timelike, lightlike or spacelike exactly when the corresponding material element is, the two conventions differing by the sign of the interval and by nothing else. The null cone is the same set in both readings, and the corpus's four-velocity normalisation $\langle\tilde V\rangle_{\natural}=-c^2$ is the material face of the paravector normalisation $\langle\tilde V_{\mathrm p}\rangle_{\natural}=1$ derived below.
 
 **The dictionary.** The two readings name the same eight dimensions, one row to an object:
 
@@ -361,7 +361,7 @@ Their Clifford relations, their chirality and their volume product are
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
-g=\mathrm{diag}(1,-1,-1,-1),
+g=\mathrm{diag}(-1,+1,+1,+1),
 \qquad
 \gamma_5^{2}=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 \qquad
@@ -375,7 +375,7 @@ In the axis-free display:
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad
-g=\mathrm{diag}(1,-1,-1,-1),
+g=\mathrm{diag}(-1,+1,+1,+1),
 \qquad
 \gamma_5^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad
@@ -384,7 +384,7 @@ g=\mathrm{diag}(1,-1,-1,-1),
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-The metric here is the mostly-minus $g=\mathrm{diag}(1,-1,-1,-1)$, in which $\gamma_0^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. It is not the $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the material sector; the two differ by an overall sign, $\eta=-g$, and the sign shows up as the sign of $\gamma_0^2$. A frame whose time cell squares to $+1$ carries $g$; one whose time cell squares to $-1$ carries $\eta$.
+The metric here is the mostly-minus $g=\mathrm{diag}(-1,+1,+1,+1)$, in which $\gamma_0^2=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $\gamma_k^2=-L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$. It is not the $g_{\mu\nu}[\mathbb{M}_-]$ of the material sector; the two differ by an overall sign, $g_{\mu\nu}[\mathbb{M}_-]$, and the sign shows up as the sign of $\gamma_0^2$. A frame whose time cell squares to $+1$ carries $g$; one whose time cell squares to $-1$ carries $\eta$.
 
 The letter $\gamma$ is also used, in the algebra-of-physical-space literature, for the three **generators** of that algebra. That is a different object: the element
 

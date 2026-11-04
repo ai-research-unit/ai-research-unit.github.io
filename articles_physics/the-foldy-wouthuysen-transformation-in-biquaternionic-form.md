@@ -6,48 +6,15 @@ The Dirac equation describes particles and antiparticles on the same footing, an
 
 The transformation is worth a biquaternion article for a structural reason. The biquaternionic Dirac equation is a **chiral pair**: the mass couples $\tilde{\Psi}_L$ to $\tilde{\Psi}_R$, and the two chiral halves are the minimal left ideal $S$ and its conjugate $S^{\mathrm{c}}$ — not the two Peirce carriers, which are two copies of $S$. The FW transformation, by contrast, separates **positive from negative frequency**, and the two pieces into which it splits the field are not the two chiralities. The article therefore keeps two gradings apart. The **chirality grading** is the one in which the mass is off-diagonal and the biquaternion pair is written. The **frame grading** is the one fixed by the timelike frame cell $iR_{\vec e_x}^{\mathrm{axf}}$, in which the FW transformation works and the mass is diagonal. Conflating the two is the standard way to misread either, and making the distinction explicit is the biquaternion content of the transformation.
 
-**Two Dirac equations.** The corpus carries two, and they must not be read as one. The equation used here is the **one-sided** chiral pair written in the Conventions below, in which the gradient acts by left multiplication and the mass is the off-diagonal pairing of $S$ and $S^{\mathrm{c}}$. The **two-sided** equation is Kravchenko's, in which the time derivative and the spatial gradient act from the left, the mass acts by right multiplication through $\vec e_z$, and a componentwise conjugation supplies the antilinear part (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The two are related by the dictionary $A$ and describe the same physics in different representations. The Hamiltonian form is read off the one-sided pair, so the transformation below is stated for that pair; the two-sided equation is the same dynamics in the representation in which the analytic machinery acts. What the transformation diagonalises in either reading is the frame grading; what it leaves alone is the chirality grading.
+**Two Dirac equations.** The corpus carries two, and they must not be read as one. The equation used here is the **one-sided** chiral pair of *Operator and Calculus Conventions*, in which the gradient acts by left multiplication and the mass is the off-diagonal pairing of $S$ and $S^{\mathrm{c}}$. The **two-sided** equation is Kravchenko's, in which the time derivative and the spatial gradient act from the left, the mass acts by right multiplication through $\vec e_z$, and a componentwise conjugation supplies the antilinear part (*The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*). The two are related by the dictionary $A$ and describe the same physics in different representations. The Hamiltonian form is read off the one-sided pair, so the transformation below is stated for that pair; the two-sided equation is the same dynamics in the representation in which the analytic machinery acts. What the transformation diagonalises in either reading is the frame grading; what it leaves alone is the chirality grading.
 
 The scope is the transformation itself: its generator, its free-particle closed form, the mean position operator it defines, and the interpretation of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*, and the relativistic qubit and the informational interpretation to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* and are only summarised here.
 
-**Conventions.** These are the series conventions. The scalar $i$ obeys $i^2=-1$, and a product of two factors of $i$ is written out wherever it changes a sign, because that sign is what separates a frame statement from a physical one. The charge of the field is $ϙ$ and the four-potential is $A_\mu=(A_0,-\vec A)$. The d'Alembertian is $\Box=\partial^2/\partial Q_t^2+\Delta$, with $Q_t=ict'$ and $\Delta=\sum_k\partial^2/\partial Q_k^2$. A cell is the two-sided multiplication
-
-$$
-L_a\psi=a\psi,\qquad R_b\psi=\psi b,\qquad L_aR_bL_cR_d=L_{ac}R_{db},
-$$
-
-with $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ the identity; a cell is written as its two multipliers. The five cells of the frame are $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ (the timelike one), the three spacelike ones $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which is built from the other four and is treated separately below. The four cells that carry a spacetime index satisfy
-
-$$
-\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad g=\mathrm{diag}(+1,-1,-1,-1),
-$$
-
-with $\nu(t)=x$ and $\nu(k)=y$, so that
-
-$$
-(iR_{\vec e_x}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad (iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
-$$
-
-The Dirac Hamiltonian is built from the timelike frame cell $iR_{\vec e_x}^{\mathrm{axf}}$ and the velocity cells, defined from it by multiplication by a spacelike frame cell and using $i^2=-1$ once:
-
-$$
-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i^2L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y\vec e_x}^{\mathrm{axf}}=-L_{\vec e_k}^{\mathrm{axf}}R_{-\vec e_z}^{\mathrm{axf}}.
-$$
-
-Defined this way, the velocity cells anticommute with the timelike frame cell and square to $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. In natural units the one-sided equation is
-
-$$
-\boxed{\;
-\begin{aligned}
-\tilde{\nabla}\tilde{\Psi}_R &= m\tilde{\Psi}_L,\\[2pt]
-\tilde{\nabla}^{\natural}\tilde{\Psi}_L &= m\tilde{\Psi}_R .
-\end{aligned}
-\;}
-$$
+**Conventions.** The algebra, the cells and their composition, the frame cells and the metric are those of *Algebra and Element Conventions*, *Operator Family Conventions*, *Frame Conventions* and *Matrix Representations Conventions*; the gradient, the d'Alembertian and the one-sided chiral pair are those of *Operator and Calculus Conventions*, and none is redefined here. The charge is $ϙ$, the four-potential is $A_\mu=(A_0,-\vec A)$, and the cells pair with the coordinates by $\nu(t)=x$, $\nu(k)=y$. One object is this article's own, the velocity cell $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, which anticommutes with the timelike frame cell $iR_{\vec e_x}^{\mathrm{axf}}$ and squares to the identity. The equation is the one-sided pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$.
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. In the $\mathbb{M}_-$ frame, where $x_0=ct'$, $Q_t=ix_0$ and the metric is $(+1,-1,-1,-1)$, the Dirac operator is
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. In the $\mathbb{M}_-$ frame, where $x_0=ct'$, $Q_t=ix_0$ and the metric is $(-1,1,1,1)$, the Dirac operator is
 
 $$
 \mathcal{D}=i\sum_\mu\bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\bigr)\frac{\partial}{\partial x_\mu},
@@ -591,14 +558,14 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_\pm$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{M}_-$ is the material sector |
-| $L_{a}R_{b}$ | Cell: $L_{a}R_{b}\psi=a\psi b$, $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$, $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ the identity |
+| $L_{a}R_{b}$ | Cell, the two-sided multiplication of *Operator Family Conventions* |
 | $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ | Timelike frame cell; $(iR_{\vec e_x}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Velocity cells; $(L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=(iR_{\vec e_x}^{\mathrm{axf}})(L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}})$ | Spacelike frame cells; square $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $iL_{\vec e_l}^{\mathrm{axf}}$ | Spin cell: left multiplication by $i\vec e_l$; $(iL_{\vec e_l}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, block-wise $\sigma_l$ |
 | $-iR_{\vec e_z}^{\mathrm{axf}}=i\,\omega$, $\omega=(iR_{\vec e_x}^{\mathrm{axf}})(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell; $(-iR_{\vec e_z}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $ϙ$ | Charge of the field; $A_\mu=(A_0,-\vec A)$ |
-| $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric; used only in *The Legacy Gamma Formulation* |
+| $g = \mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric; used only in *The Legacy Gamma Formulation* |
 | $\mathcal{D}=i\sum_\mu\bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\bigr)\partial/\partial x_\mu$ | Dirac operator; $\mathcal{D}^2=\Box$ |
 | $H = iR_{\vec e_x}^{\mathrm{axf}}mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |
 | $O = c\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k$ | Odd (frame-anticommuting) part |
@@ -612,7 +579,7 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $\vec q = \sum_kQ_k\vec e_k$ | Material position |
 | $X_k = Q_k-\frac{\hbar}{2mc}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}+\cdots$ | Mean (Foldy–Wouthuysen) position, $k$-th component |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | One-sided mass pair (chirality grading) |
-| $\Box = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian |
+| $\Box$ | Series d'Alembertian |
 
 ## Further Reading
 

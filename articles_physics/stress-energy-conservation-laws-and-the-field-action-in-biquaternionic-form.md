@@ -28,7 +28,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2+\Delta .
 $$
 
-The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
+The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $g_{\mu\nu}[\mathbb{M}_-]$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $\mathsf{T}_{00}$ carries a sign in the $ict'$ convention: for the electromagnetic field $\mathsf{T}_{00}=-W$, while the physical energy density is $T_{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -140,10 +140,10 @@ The four conserved quantities are the components of energy–momentum (from $\nu
 For a real scalar field with the Lagrangian $\mathcal{L}_\phi$ of the previous section, the conserved, symmetric stress–energy tensor with positive energy is
 
 $$
-\boxed{\ T_{\mu\nu} = \partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\nu\,\phi + \eta_{\mu\nu}\mathcal{L}_\phi\ } ,
+\boxed{\ T_{\mu\nu} = \partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\nu\,\phi + g_{\mu\nu}[\mathbb{M}_-]\mathcal{L}_\phi\ } ,
 $$
 
-the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ and $x_0=ct'$,
+the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $g_{\mu\nu}[\mathbb{M}_-]$ and $x_0=ct'$,
 
 $$
 \boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2} + \frac12(\nabla\phi)^2 + \frac12\mu^2\phi^2 > 0\ } ,
@@ -219,7 +219,7 @@ W = \tfrac12\left(\epsilon\vec E^2+\mu\vec H^2\right),
 \vec S = \vec E\times\vec H.
 $$
 
-Contracting the second slot with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ gives the symmetric tensor
+Contracting the second slot with $g_{\mu\nu}[\mathbb{M}_-]$ gives the symmetric tensor
 
 $$
 T_{tt} = W,
@@ -234,7 +234,7 @@ which is the standard electromagnetic energy–momentum tensor in a medium: $W$ 
 **Tracelessness.** The trace in the Minkowski pairing is
 
 $$
-\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu} = -T_{tt}+T_{kk} = -W - \sigma_{kk} = -W + W = 0 ,
+\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]T_{\mu\nu} = -T_{tt}+T_{kk} = -W - \sigma_{kk} = -W + W = 0 ,
 $$
 
 because $\sigma_{kk} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
@@ -244,7 +244,7 @@ because $\sigma_{kk} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor i
 $$
 \mathsf{T}_{\mu\nu} = \tfrac12\,\mathrm{Sc}\!\left(\tilde F\,\mathcal E_\mu\,\tilde F^{*}\,\mathcal E_\nu\right) ,
 \qquad
-T_{\mu\nu} = \sum_\beta\eta_{\nu\beta}\mathsf{T}_{\mu\beta} ,
+T_{\mu\nu} = \sum_\betag_{\nu\beta}[\mathbb{M}_-]\mathsf{T}_{\mu\beta} ,
 $$
 
 the definition being exact over the field algebra up to the factors the $ict'$ basis elements carry. In the coordinates of the framework, $Q_t=ict'$ and $Q_k=q_k$, so $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$, and the divergence is
@@ -358,7 +358,7 @@ $$
 
 has the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, with $\tilde J=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $\mathsf{T}_{\mu\nu}=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\psi_a)}\partial/\partial Q_\nu\,\psi_a-\delta_{\mu\nu}\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T_{tt}>0$.
 
-The scalar stress–energy is $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\eta_{\mu\nu}\mathcal{L}_\phi$, with
+The scalar stress–energy is $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+g_{\mu\nu}[\mathbb{M}_-]\mathcal{L}_\phi$, with
 
 $$
 T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2>0,
@@ -389,7 +389,7 @@ symmetric once contracted with the metric, traceless in the Minkowski pairing, a
 | $\mathcal{E}_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Basis of $\mathbb{M}_-$; supplies the tensor index directions |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; level-1 identity on $\mathbb{C}$ |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict'$-coordinate metric |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | Level-2 $ict'$-coordinate metric |
 | $S=\int\mathcal{L}\,d^4x$ | Action; $\mathcal{L}$ the Lagrangian density |
 | $\mathcal{L}_\phi=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\tilde{\Phi}\,\partial/\partial Q_\mu\,\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural}$ | Scalar Lagrangian |
 | $\mu=mc/\hbar$ | Scalar mass parameter |
@@ -402,9 +402,9 @@ symmetric once contracted with the metric, traceless in the Minkowski pairing, a
 | $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$ | Electromagnetic stress–energy, bigeneral quaternionic bilinear |
 | $\mathsf{T}_{00}=-W$, $\mathsf{T}_{0j}=\frac1cS_j$, $\mathsf{T}_{j0}=-\frac1cS_j$, $\mathsf{T}_{jk}=-\sigma_{jk}$ | Mixed components |
 | $T_{tt}=W$, $T_{tj}=T_{jt}=\frac1cS_j$, $T_{jk}=-\sigma_{jk}$ | Symmetric components, after contraction with $\eta$ |
-| $\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu}=-T_{tt}+T_{kk}=0$ | Tracelessness (Minkowski pairing) |
+| $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]T_{\mu\nu}=-T_{tt}+T_{kk}=0$ | Tracelessness (Minkowski pairing) |
 | $\sum_\mu\partial/\partial Q_\mu T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict'$ coordinates $Q_t=ict'$ | Conservation with source per direction; Lorentz four-force |
-| $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\eta_{\mu\nu}\mathcal{L}_\phi$ | Scalar stress–energy |
+| $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+g_{\mu\nu}[\mathbb{M}_-]\mathcal{L}_\phi$ | Scalar stress–energy |
 | $T_{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

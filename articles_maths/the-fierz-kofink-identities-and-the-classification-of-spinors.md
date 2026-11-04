@@ -17,7 +17,7 @@ iL_{e_t}R_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y},\qquad
 iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y},\qquad -iL_{e_t}R_{\vec e_z},
 $$
 
-satisfying the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $\eta$, $\eta=\mathrm{diag}(+1,-1,-1,-1)$. In the **Dirac basis** of the module, the basis in which the timelike cell is diagonal, the five cells read
+satisfying the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g_{\mu\nu}[\mathbb{M}_-]$. In the **Dirac basis** of the module, the basis in which the timelike cell is diagonal, the five cells read
 
 $$
 iR_{\vec e_x}=\begin{pmatrix} I_2 & 0 \\ 0 & -I_2 \end{pmatrix},\qquad
@@ -48,7 +48,7 @@ The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscal
 
 ## The Fierz–Kofink Identities
 
-**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=\sum_\mu J_\mu J_\mu=\sum_{\mu,\nu}\eta_{\mu\nu}J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,
+**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=\sum_\mu J_\mu J_\mu=\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]J_\mu J_\nu$ and similarly for $K$ and $J\cdot K$,
 
 $$
 \boxed{\; J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 \;}.
@@ -56,7 +56,7 @@ $$
 
 *Proof.* The identity expresses two facts at once: the square of the vector $J$ equals the sum of the squares of the two scalars, and the square of the axial vector is non-positive (or zero) exactly when the square of the vector is non-negative, the two squares being opposite.
 
-**Theorem (the tensor FPK identity).** Write $\tilde S$ for the Hodge dual of $S$, $\tilde S_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}S^{\rho\sigma}$, with the orientation $\epsilon_{0123}=+1$ and the metric of the corpus, $\eta=\mathrm{diag}(+1,-1,-1,-1)$. Then
+**Theorem (the tensor FPK identity).** Write $\tilde S$ for the Hodge dual of $S$, $\tilde S_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}S^{\rho\sigma}$, with the orientation $\epsilon_{0123}=+1$ and the metric of the corpus, $g_{\mu\nu}[\mathbb{M}_-]$. Then
 
 $$
 \boxed{\; J_\mu K_\nu-J_\nu K_\mu=\omega\,S_{\mu\nu}+\sigma\,\tilde S_{\mu\nu} \;}.
@@ -205,7 +205,7 @@ A Dirac spinor carries sixteen **bilinear covariants** — a scalar, a pseudosca
 
 | Symbol | Meaning |
 |---|---|
-| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The frame cells, $L_{a}R_{b}$; the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $\eta$, $\eta=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The frame cells, $L_{a}R_{b}$; the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g_{\mu\nu}[\mathbb{M}_-]$ |
 | $-iL_{e_t}R_{\vec e_z}$ | The chirality cell (pseudoscalar) |
 | $\bar\psi=\psi^{\dagger}\,iR_{\vec e_x}$ | Dirac adjoint |
 | $\sigma=\bar\psi\psi$, $\omega=i\bar\psi\,-iR_{\vec e_z}\psi$ | Scalar and pseudoscalar densities |

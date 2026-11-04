@@ -12,7 +12,7 @@ The article is organised as follows. The next section recalls the angular-moment
 
 ## The Angular-Momentum Algebra in Biquaternion Form
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, the cyclic relations $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$, and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for distinct $\mu,\nu\in\{x,y,z\}$. The scalar imaginary $i$ is central, $i^2=-1$. The Hermitian subspace $\mathbb{M}_+$ consists of elements with real scalar part and imaginary vector part.
+The conventions are those of the companion articles: the algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions* and *Unit, Index and Notation Conventions*, and none is restated here.
 
 An angular momentum is a triple of Hermitian elements $\tilde S_{\mathrm{tot},1},\tilde S_{\mathrm{tot},2},\tilde S_{\mathrm{tot},3}\in\mathbb{M}_+$ satisfying
 

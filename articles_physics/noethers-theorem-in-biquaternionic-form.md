@@ -339,20 +339,20 @@ What makes it a phase is the $i$: the same scalar in a real exponential is a dil
 The same translation symmetry applied to the field action gives the **canonical energy–momentum**, the Noether current of spacetime translations. For the complex scalar field it is
 
 $$
-\boxed{\;T_{\mu\nu} = \frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{\partial\phi}{\partial x_\mu}\frac{\partial\phi^*}{\partial x_\nu} - \eta_{\mu\nu}\,\mathcal{L}_\phi\;}
+\boxed{\;T_{\mu\nu} = \frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{\partial\phi}{\partial x_\mu}\frac{\partial\phi^*}{\partial x_\nu} - g_{\mu\nu}[\mathbb{M}_-]\,\mathcal{L}_\phi\;}
 $$
 
 with the scalar Lagrangian of the same frame,
 
 $$
-\mathcal{L}_\phi = \sum_{\mu,\nu}\eta^{\mu\nu}\frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{m^2c^2}{\hbar^2}|\phi|^2
+\mathcal{L}_\phi = \sum_{\mu,\nu}g^{\mu\nu}[\mathbb{M}_-]\frac{\partial\phi^*}{\partial x_\mu}\frac{\partial\phi}{\partial x_\nu} + \frac{m^2c^2}{\hbar^2}|\phi|^2
 = -\frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 .
 $$
 
-Here $x_\mu=(ct',x,y,z)$ is the real frame with $\eta=\mathrm{diag}(-1,+1,+1,+1)$, distinct from the $Q_\mu$ frame of the gradient: $Q_0=ict'$ carries the $i$, while $x_0=ct'$ does not. Both indices of $T$ are low, the first the row; the derivative index of the conservation law is contracted with $\eta_{\mu\mu}$, and it is $\eta_{\mu\mu}=(-1,+1,+1,+1)=-\varepsilon_\mu$ that carries the signs, not $\varepsilon$, because the $i^2$ of the time coordinate has already been spent once in $\eta$. Translation invariance gives
+Here $x_\mu=(ct',x,y,z)$ is the real frame with $g_{\mu\nu}[\mathbb{M}_-]$, distinct from the $Q_\mu$ frame of the gradient: $Q_0=ict'$ carries the $i$, while $x_0=ct'$ does not. Both indices of $T$ are low, the first the row; the derivative index of the conservation law is contracted with $g_{\mu\mu}[\mathbb{M}_-]$, and it is $g_{\mu\mu}[\mathbb{M}_-]=(-1,+1,+1,+1)=-\varepsilon_\mu$ that carries the signs, not $\varepsilon$, because the $i^2$ of the time coordinate has already been spent once in $\eta$. Translation invariance gives
 
 $$
-\sum_\mu\eta_{\mu\mu}\frac{\partial T_{\mu\nu}}{\partial x_\mu} = 0
+\sum_\mug_{\mu\mu}[\mathbb{M}_-]\frac{\partial T_{\mu\nu}}{\partial x_\mu} = 0
 $$
 
 on shell. Its time–time component is the energy density,
@@ -361,7 +361,7 @@ $$
 T_{00} = \frac{1}{c^2}\left|\frac{\partial\phi}{\partial t'}\right|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 > 0,
 $$
 
-positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $\sum_\mu\eta_{\mu\mu}\partial T_{\mu\nu}/\partial x_\mu$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
+positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $\sum_\mug_{\mu\mu}[\mathbb{M}_-]\partial T_{\mu\nu}/\partial x_\mu$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
 
 ### Why the Framework Does Not Write It as One Biquaternion
 
@@ -412,7 +412,7 @@ $$
 whose conservation
 
 $$
-\sum_\mu\eta_{\mu\mu}\frac{\partial L_{\mu\nu\rho}}{\partial x_\mu} = 0
+\sum_\mug_{\mu\mu}[\mathbb{M}_-]\frac{\partial L_{\mu\nu\rho}}{\partial x_\mu} = 0
 $$
 
 expresses the symmetry of the energy–momentum tensor together with the conservation of spin. Being rank three, it is not a biquaternion and not even a single bilinear; the orbital and spin pieces separate, with the spin term vanishing for the classical scalar field. The particle bivector $\tilde L$ above is the finite-dimensional case where the rank-two object *is* the whole story.
@@ -495,7 +495,7 @@ by $i^2=-1$: multiplying a generator cell by $i$ trades it for a plain one, whic
 
 **The central grading.** The cell $\gamma_5$ is not the grading itself. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi_{\mathrm{ad}}$ as a central sign, while the mass of the two-sided equation is a right multiplication by the chirality cell, and the cell is the representative of the sign on the module.
 
-**The identities of the frame.** With $g=\mathrm{diag}(+1,-1,-1,-1)$,
+**The identities of the frame.** With $g=\mathrm{diag}(-1,+1,+1,+1)$,
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,
@@ -507,7 +507,7 @@ $$
 \{\gamma_\mu,\gamma_5\}=0 ,
 $$
 
-the anticommutation with $\gamma_5$ being what makes the chirality cell the axial insertion. The first relation is the quaternion multiplication table in the frame: a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, and the central $i$ of each generator flips the sign, so the timelike cell squares to $+I_4$ and the three spatial ones to $-I_4$. The frame's metric is $g=-\eta$, and the reason is again $i^2$: each $\gamma_\mu$ is $i$ times the plain cell $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$, whose own Clifford bracket is $2\eta_{\mu\nu}I_4$, so the two factors of $i$ inside the bracket turn $2\eta$ into $-2\eta$.
+the anticommutation with $\gamma_5$ being what makes the chirality cell the axial insertion. The first relation is the quaternion multiplication table in the frame: a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, and the central $i$ of each generator flips the sign, so the timelike cell squares to $+I_4$ and the three spatial ones to $-I_4$. The frame's metric is $g=-\eta$, and the reason is again $i^2$: each $\gamma_\mu$ is $i$ times the plain cell $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$, whose own Clifford bracket is $2g_{\mu\nu}[\mathbb{M}_-]I_4$, so the two factors of $i$ inside the bracket turn $2\eta$ into $-2\eta$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the plain cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the two Clifford algebras that differ by that relative $i$.
 
@@ -541,7 +541,7 @@ $$
 
 as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\mathrm{tot}}/dt' = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{K}_{\mathrm{f},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P\tilde R_0^{\natural}))$, with $\mathrm{Sc}(\tilde P\tilde R_0^{\natural}) = \vec k\cdot\vec R_0-\omega t'_0$.
 
-The field translation current is the canonical energy–momentum, $\sum_\mu\eta_{\mu\mu}\partial T_{\mu\nu}/\partial x_\mu = 0$ on shell in the real frame, with positive energy density $T_{00} = \frac{1}{c^2}|\partial\phi/\partial t'|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
+The field translation current is the canonical energy–momentum, $\sum_\mug_{\mu\mu}[\mathbb{M}_-]\partial T_{\mu\nu}/\partial x_\mu = 0$ on shell in the real frame, with positive energy density $T_{00} = \frac{1}{c^2}|\partial\phi/\partial t'|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde{\nabla}\tilde{W}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
 ## Summary of Notation
 
@@ -573,8 +573,8 @@ The field translation current is the canonical energy–momentum, $\sum_\mu\eta_
 | $\bar\psi=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}$ | The Dirac bar |
 | $j_\mu=\bar\psi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\psi$, $\tau(t)=x$, $\tau(k)=y$ | Vector current on the module |
 | $j_{5\mu}=\bar\psi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\chi\,\psi=\bar\psi\,L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{axf}}\psi$ | Axial current; $\sum_\mu\partial j_{5\mu}/\partial Q_\mu=2im\bar\psi\chi\psi$ |
-| $x_\mu = (ct',x,y,z)$, $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Real frame of the energy–momentum tensor, distinct from $Q_\mu$; $\eta_{\mu\mu}=-\varepsilon_\mu$ |
-| $T_{\mu\nu} = (\partial\phi^*/\partial x_\mu)(\partial\phi/\partial x_\nu) + (\partial\phi/\partial x_\mu)(\partial\phi^*/\partial x_\nu) - \eta_{\mu\nu}\mathcal{L}_\phi$ | Canonical energy–momentum, real frame |
+| $x_\mu = (ct',x,y,z)$, $g_{\mu\nu}[\mathbb{M}_-]$ | Real frame of the energy–momentum tensor, distinct from $Q_\mu$; $g_{\mu\mu}[\mathbb{M}_-]=-\varepsilon_\mu$ |
+| $T_{\mu\nu} = (\partial\phi^*/\partial x_\mu)(\partial\phi/\partial x_\nu) + (\partial\phi/\partial x_\mu)(\partial\phi^*/\partial x_\nu) - g_{\mu\nu}[\mathbb{M}_-]\mathcal{L}_\phi$ | Canonical energy–momentum, real frame |
 | $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S$ | Maxwell energy–momentum (time row), in $\mathbb{M}_+$; $\mathrm{Sc}(\tilde\nabla\tilde W)=\frac{i}{c}\vec J\cdot\vec E$ |
 | $L_{\mu\nu} = x_\mu p_\nu - x_\nu p_\mu$, $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$ | Angular momentum and its bivector |
 | $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, in $\mathbb{M}_-$; plane-wave phase $\mathrm{Sc}(\tilde P\tilde R^{\natural}) = \vec k\cdot\vec x-\omega t'$ |

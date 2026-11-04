@@ -259,7 +259,7 @@ the same expression with the leptonic angles and phase. The framework's structur
 
 The body of the article is written in the cells $L_aR_b$ of the Dirac module, $L_a\psi=a\psi$, $R_b\psi=\psi b$, so $L_aR_b\psi=a\psi b$. The gamma matrices are the same operators under their Clifford names. They are collected here so that a reader who comes from the matrix literature can translate, and they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
 
-**The frame and the metric.** The names below are the $\mathbb{M}_-$ frame, $g=\mathrm{diag}(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:
+**The frame and the metric.** The names below are the $\mathbb{M}_-$ frame, $g=\mathrm{diag}(-1,+1,+1,+1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu$, and $\gamma_5$ is the chirality cell:
 
 $$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
@@ -315,7 +315,7 @@ so a square spends $i^2=-1$ once, and it spends one quaternion square for $\gamm
 
 **The identities.** In the frame declared above, with $\epsilon_{0123}=+1$,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4,\qquad
 \gamma_5^2=I_4,\qquad
 \{\gamma_\mu,\gamma_5\}=0 .
 $$

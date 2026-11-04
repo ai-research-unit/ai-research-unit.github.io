@@ -86,7 +86,7 @@ The tetrad $\exp(a){}_\mu$ relates the coordinate and frame indices, with invers
 $$
 \sum_\mu\exp(a){}_\mu e_{b\mu} = \delta_{ab},\qquad \sum_a\exp(a){}_\mu e_{a\nu} = \delta_{\mu\nu},
 $$
-and it builds the metric as $g_{\mu\nu} = \sum_{a,b}\eta_{ab}\,\exp(a){}_\mu \exp(b){}_\nu$, with $\eta=\mathrm{diag}(+1,-1,-1,-1)$. The frame pair of a frame-indexed object is lowered with $\eta$, so a repeated frame label is summed with $\varepsilon$ exactly as a repeated world label is. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, and the two connections are tied by the **tetrad postulate**,
+and it builds the metric as $g_{\mu\nu} = \sum_{a,b}g_{ab}[\mathbb{M}_-]\,\exp(a){}_\mu \exp(b){}_\nu$, with $g_{\mu\nu}[\mathbb{M}_-]$. The frame pair of a frame-indexed object is lowered with $g_{ab}[\mathbb{M}_-]$, so a repeated frame label is summed with $\varepsilon$ exactly as a repeated world label is. A connection on the frame bundle is a one-form $\omega_{ab\mu}$, and the two connections are tied by the **tetrad postulate**,
 
 $$
 \nabla_\mu \exp(a){}_\nu = \partial/\partial x_\mu \exp(a){}_\nu - \sum_\lambda\Gamma_{\lambda\mu\nu} \exp(a){}_\lambda + \sum_b\omega_{ab\mu} \exp(b){}_\nu = 0 ,
@@ -112,7 +112,7 @@ $$
 $$
 and the orthonormality relation it rests on is
 $$
-\sum_\lambda E_{a\lambda}\, e_{b\lambda} = \eta_{ab},
+\sum_\lambda E_{a\lambda}\, e_{b\lambda} = g_{ab}[\mathbb{M}_-],
 $$
 in which the lowering matters: without the factor $\varepsilon_a$ the same sum is $\delta_{ab}$, and it is the two signs of $\eta$ that the antisymmetry statement is about.
 
@@ -258,7 +258,7 @@ The sixteen words in the four gammas are a basis of $M_4(\mathbb{C})$, and each 
 
 These are the frame cells of the earlier sections under their Clifford names, $\gamma_\mu=C_\mu$ and $\gamma_5=\chi$, the last being the chirality cell. The central grading of the complexified algebra is a different object: it is the difference $e_+-e_-$ of the two central idempotents, written $i\tilde\Xi_{\mathrm{ad}}$ with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so that its own square is $+e_t$. It is not a cell of the frame, and $\gamma_5$ is its representative on the Dirac module.
 
-The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear. Over $\mathbb{R}$ the products of the gammas close on a sixteen-dimensional algebra and reproduce $\{\gamma_a,\gamma_b\}=2g_{ab}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, so they span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$; the bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ anticommute the other way round, $\{\beta_a,\beta_b\}=2\eta'_{ab}I_4$ with $\eta'=\mathrm{diag}(-1,+1,+1,+1)$, and span the opposite real form $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
@@ -318,7 +318,7 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $\exp(a){}_\mu$, $e_{a\mu}$ | tetrad and its inverse |
 | $E_{a\mu}=\varepsilon_a\exp(a){}_\mu$ | tetrad with its frame slot lowered, the object whose affine derivative gives the spin connection |
 | $\mathrm{D}_\mu$ | affine covariant derivative, acting on the world label only |
-| $g_{\mu\nu} = \eta_{ab}\exp(a){}_\mu \exp(b){}_\nu$ | metric from the tetrad, $\eta = \mathrm{diag}(+1,-1,-1,-1)$ |
+| $g_{\mu\nu} = g_{ab}[\mathbb{M}_-]\exp(a){}_\mu \exp(b){}_\nu$ | metric from the tetrad, $g_{\mu\nu}[\mathbb{M}_-]$ |
 | $\omega^{a}{}_{b\mu}$ | spin connection one-form as solved, with the first frame slot raised |
 | $\omega_{ab\mu}=\varepsilon_a\omega^{a}{}_{b\mu}$ | the same array with the first frame slot lowered; antisymmetric in the frame pair exactly in the metric-compatible case |
 | $\omega_{ab\mu}(e)$ | its Levi-Civita part |

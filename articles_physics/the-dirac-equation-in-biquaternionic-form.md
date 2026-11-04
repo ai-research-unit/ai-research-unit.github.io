@@ -126,7 +126,7 @@ $$
 \{iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\}=0,
 $$
 
-and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. With $g = \mathrm{diag}(+1,-1,-1,-1)$ this is the Clifford form $\{\cdot,\cdot\}=2g$ in the cell frame. This is the opposite of the $(-,+,+,+)$ convention of the introduction, which is the metric of the gradient. The overall sign of the metric is a convention: multiplying the frame by $i$ flips the sign of $g$ and leaves the Clifford algebra unchanged, so $i$ times the frame used here carries the $(-,+,+,+)$ metric.
+and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. With $g = \mathrm{diag}(-1,+1,+1,+1)$ this is the Clifford form $\{\cdot,\cdot\}=2g$ in the cell frame. This is the opposite of the $(-,+,+,+)$ convention of the introduction, which is the metric of the gradient. The overall sign of the metric is a convention: multiplying the frame by $i$ flips the sign of $g$ and leaves the Clifford algebra unchanged, so $i$ times the frame used here carries the $(-,+,+,+)$ metric.
 
 **A change of basis.** These generators are not the standard review's: the timelike generator $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ is off-diagonal on the Dirac module, while the standard review takes the timelike generator diagonal. The two sets are related by a unitary change of basis, and the chirality cell $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is diagonal only in the present one. The biquaternion construction uses this frame because it is the one in which the chirality cell is the matrix of the central sign $\chi$ of the chiral grading.
 

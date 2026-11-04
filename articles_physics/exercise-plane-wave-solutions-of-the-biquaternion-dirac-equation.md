@@ -195,7 +195,7 @@ because $i\vec e_x\vec e_y=i\vec e_z$ and $\vec e_y\,i\vec e_x=-i\vec e_z$, and 
 $$
 L_{i\vec e_j}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,L_{i\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}+L_{i\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,L_{i\vec e_j}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{i^2(\vec e_j\vec e_k+\vec e_k\vec e_j)}^{\mathrm{axf}}=0,
 $$
-because $i$ is central and quaternion units anticommute. So $\{c_\mu,c_\nu\}=2g_{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, without a matrix.
+because $i$ is central and quaternion units anticommute. So $\{c_\mu,c_\nu\}=2g_{\mu\nu}$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, without a matrix.
 
 ## The Field and the Two Forms of the Equation
 
@@ -269,7 +269,7 @@ $$
 
 in the Dirac basis, where the operator is $E\,R_{i\vec e_z}^{\mathrm{axf}}-p_k\,L_{i\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ by the cell table above. The two pairs are the same equation in the two bases: they differ by the place of the mass, which is what the change of basis moves.
 
-**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The metric of the spacetime gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the Clifford metric of the cells is $g=-\eta$. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r)\dagger}\xi^{(s)}=\delta_{rs}$; $\eta^{(1)},\eta^{(2)}$ are the negative-frequency rest spinors, with $\eta^{(r)\dagger}\eta^{(s)}=\delta_{rs}$; $\chi_\pm$ are the helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\,\chi_\pm=\pm\chi_\pm$, with $\vec u_p=\vec p/|\vec p|$. In the $\mp$ and $\pm$ pairs below the upper sign goes with $\chi_+$ and the lower with $\chi_-$. The Hermitian conjugate $^*$ is the coefficient conjugation composed with the quaternion conjugation, $\tilde Q^*=\overline{\tilde Q^\natural}$, and under the matrix representation $\mathsf{M}_2$ it is the conjugate transpose.
+**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The metric of the spacetime gradient is $g_{\mu\nu}[\mathbb{M}_-]$, and the Clifford metric of the cells is $g=-\eta$. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r)\dagger}\xi^{(s)}=\delta_{rs}$; $\eta^{(1)},\eta^{(2)}$ are the negative-frequency rest spinors, with $\eta^{(r)\dagger}\eta^{(s)}=\delta_{rs}$; $\chi_\pm$ are the helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\,\chi_\pm=\pm\chi_\pm$, with $\vec u_p=\vec p/|\vec p|$. In the $\mp$ and $\pm$ pairs below the upper sign goes with $\chi_+$ and the lower with $\chi_-$. The Hermitian conjugate $^*$ is the coefficient conjugation composed with the quaternion conjugation, $\tilde Q^*=\overline{\tilde Q^\natural}$, and under the matrix representation $\mathsf{M}_2$ it is the conjugate transpose.
 
 ## Problem 1: The spinors at rest and at general momentum
 

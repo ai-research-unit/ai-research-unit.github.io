@@ -41,7 +41,7 @@ The article proceeds as follows. The next section records the standard Wick rout
 
 The Matsubara formalism is usually reached by a Wick rotation, and it is reached here without one. Both routes are recorded, and so is the reason the second is used.
 
-**The standard route: the Wick rotation, quoted.** The usual treatment continues the real time, $\tau=it'$ with $t'=-i\tau$: the material-time coefficient $ict'$ becomes the real $c\tau$, the Minkowski metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ becomes the Euclidean metric $\delta=\mathrm{diag}(+1,+1,+1,+1)$, and the wave biquaternion is read on the real scalar axis,
+**The standard route: the Wick rotation, quoted.** The usual treatment continues the real time, $\tau=it'$ with $t'=-i\tau$: the material-time coefficient $ict'$ becomes the real $c\tau$, the Minkowski metric $g_{\mu\nu}[\mathbb{M}_-]$ becomes the Euclidean metric $\delta=\mathrm{diag}(+1,+1,+1,+1)$, and the wave biquaternion is read on the real scalar axis,
 $$
 \tilde P_E = -\omega_n e_t+\vec p ,
 \qquad

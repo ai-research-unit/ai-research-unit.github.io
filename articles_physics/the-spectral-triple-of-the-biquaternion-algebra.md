@@ -471,7 +471,7 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-They satisfy $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\{\gamma_5,\gamma_\mu\}=0$, and $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$; $\gamma_0$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
+They satisfy $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, $\{\gamma_5,\gamma_\mu\}=0$, and $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$; $\gamma_0$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

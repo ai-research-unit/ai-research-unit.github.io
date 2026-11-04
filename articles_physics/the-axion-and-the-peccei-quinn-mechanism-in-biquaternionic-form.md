@@ -276,7 +276,7 @@ The framework's contribution is the exact global phase symmetry of the centre, t
 | $m_u, m_d, M_q$ | Light-quark masses; quark mass matrix |
 | $m_\pi, f_\pi$ | Pion mass and decay constant (chiral matching) |
 | $\Omega_ah^2\sim0.1(f_a/10^{12}\ \mathrm{GeV})^{7/6}$ | Misalignment dark-matter abundance |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric for index contractions |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
 
 ## Further Reading

@@ -18,7 +18,7 @@ $$
 ds^2 = -c^2\,d{t'}^2 + dx^2 + dy^2 + dz^2.
 $$
 
-The minus sign sits explicitly in the metric, encoded in $\eta_{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$. This is the standard convention. It is clean, it generalizes to curved spacetime, and it fits the tensor formalism.
+The minus sign sits explicitly in the metric, encoded in $g_{\mu\nu}[\mathbb{M}_-]$. This is the standard convention. It is clean, it generalizes to curved spacetime, and it fits the tensor formalism.
 
 But it was not always so. Minkowski himself, and most physicists before the 1960s, wrote the interval differently:
 

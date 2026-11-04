@@ -211,7 +211,7 @@ with $\nu(t) = x$ and $\nu(k) = y$, and the identity on the four-dimensional mod
 $$
 C_\mu C_\nu + C_\nu C_\mu = 2g_{\mu\nu}I_4,
 \qquad
-g = \mathrm{diag}(+1,-1,-1,-1),
+g = \mathrm{diag}(-1,+1,+1,+1),
 $$
 
 so $C_t^2 = I_4$ and $C_k^2 = -I_4$. The cells are indexed by the coordinate labels, $\mu\in\{t,x,y,z\}$, so $C_t$ is the timelike cell and the other three are spatial. The timelike cell carries $R_{\vec e_x}^{\mathrm{axf}}$ and the spatial cells carry $R_{\vec e_y}^{\mathrm{axf}}$; those two units anticommute, and that is why $C_t$ anticommutes with each $C_k$.

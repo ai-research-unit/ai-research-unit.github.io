@@ -375,7 +375,7 @@ $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}e_t ,
 $$
 
-with $g=\operatorname{diag}(+1,-1,-1,-1)$ and $\mu,\nu=0,1,2,3$, and
+with $g=\operatorname{diag}(-1,+1,+1,+1)$ and $\mu,\nu=0,1,2,3$, and
 
 $$
 \gamma_5^2=e_t,\qquad

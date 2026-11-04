@@ -71,7 +71,7 @@ where $L_a\psi=a\psi$ and $R_b\psi=\psi b$ are the left and right multiplication
 
 $$
 C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4,\qquad
-g=\mathrm{diag}(+1,-1,-1,-1),
+g=\mathrm{diag}(-1,+1,+1,+1),
 $$
 
 so $C_0^2=I_4$ and $C_k^2=-I_4$. A product of two cells carries a single minus sign and no leftover imaginary unit, because $i^2=-1$ is already in the cell:
@@ -661,8 +661,8 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\kappa(\mu)$ | Right multiplier of the cell: $\kappa(t)=x$, $\kappa(k)=y$ |
 | $C_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}$, $C_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells, acting on the spinor module |
 | $C_\mu C_\nu+C_\nu C_\mu=2g_{\mu\nu}I_4$ | Cell Clifford algebra, $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the cells; $g=-\eta$ |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
+| $g_{\mu\nu}[\mathbb{M}_-]=\mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric of the cells |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | Spacetime metric of the $ict'$ gradient |
 | $\mathbb{D}=iC_0\partial/\partial t'+i\sum_kC_k\partial/\partial Q_k=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial t'-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial Q_k$ | Pair operator on the module; $\mathbb{D}^2=\Box$ |
 | $\mathbb{D}_p=C_0E_{\vec p}-\sum_kC_kp_k$ | Momentum symbol of $\mathbb{D}$ on a plane wave; $\mathbb{D}_p^2=p^2$ |
 | $\mathcal{L}=\bar\psi(\mathbb{D}-m)\psi$ | Dirac Lagrangian density |

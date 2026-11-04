@@ -511,7 +511,7 @@ $$
 \gamma_1^{2}=\gamma_2^{2}=\gamma_3^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
-so the frame carries the Clifford form $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(1,-1,-1,-1)$. The time cell of the bag equation is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and its three spatial cells are $\gamma_1,\gamma_2,\gamma_3$; the boundary condition of the bag is therefore the frame's linear condition, written above without the gammas.
+so the frame carries the Clifford form $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(-1,+1,+1,+1)$. The time cell of the bag equation is $\gamma_0=iR_{\vec e_x}^{\mathrm{pau}}$ and its three spatial cells are $\gamma_1,\gamma_2,\gamma_3$; the boundary condition of the bag is therefore the frame's linear condition, written above without the gammas.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

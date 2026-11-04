@@ -14,7 +14,7 @@ Two features make the field strength worth treating separately. First, $\tilde{F
 
 This article is the declared foundation for three later articles on electromagnetism in media, on the Lorentz force, and on radiation from accelerated charges. It therefore fixes the field-strength notation once and for all. The **canonical objects** are: the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the electric and magnetic fields $\vec E$ and $\vec H$, together with the magnetic induction $\vec B = \mu\vec H$; the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$; the two invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$; and the energy density $W$ and Poynting vector $\vec S$. Nothing in this list is new notation; the first three come unchanged from the Maxwell article, and the rest are assembled from them.
 
-The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with the quaternion units and satisfying $i^2=-1$; every product of two factors of $i$ below is reduced by that relation. The three-dimensional complex **vector part** of $\mathbb{B}$ is denoted by its components $\vec F = \sum_k F_k \vec e_k$, with the usual quaternion product $\vec F\vec G = -\vec F\cdot\vec G + \vec F\times\vec G$ for pure vectors. The conjugations are the quaternion conjugate ${}^{\natural}$, the complex conjugate $\bar{\cdot}$, and the Hermitian conjugate ${}^{*} = ({}^{\natural})^{\,*} = \bar{\cdot}{}^{\natural}$, with the four real fixed-point subspaces $\mathbb{C}_{\mathbb{B}}$ (scalars), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector) and $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector). The symbol $c$ always denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$; in vacuum it reduces to $c_0 = 1/\sqrt{\epsilon_0\mu_0}$.
+The conventions are those of the read-list articles throughout: the algebra, the units, the conjugations and the product form are those of *Algebra and Element Conventions*, *Unit, Index and Notation Conventions* and *Product and Form Conventions*, and none is restated here. The three-dimensional complex **vector part** of $\mathbb{B}$ is denoted by its components $\vec F=\sum_k F_k \vec e_k$. The symbol $c$ always denotes the **speed of light in the medium**, $c=1/\sqrt{\epsilon\mu}$; in vacuum it reduces to $c_0=1/\sqrt{\epsilon_0\mu_0}$.
 
 ## The Field-Strength Biquaternion
 
@@ -595,11 +595,11 @@ $$
 $$
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}e_t,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]e_t,\qquad
 \{\gamma_5,\gamma_\mu\}=0,
 $$
 
-with $\eta=\operatorname{diag}(+1,-1,-1,-1)$, and the volume element
+with $g_{\mu\nu}[\mathbb{M}_-]$, and the volume element
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5 .

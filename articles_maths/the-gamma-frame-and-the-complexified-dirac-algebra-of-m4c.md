@@ -86,7 +86,7 @@ $$
 iR_{\vec e_x}=iL_{e_t}R_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y}=iL_{\vec e_x}R_{\vec e_y},\qquad iL_{\vec e_y}R_{\vec e_y}=iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y}=iL_{\vec e_z}R_{\vec e_y},\qquad -iR_{\vec e_z}=-iL_{e_t}R_{\vec e_z}
 $$
 
-of $M_4(\mathbb{C})$. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the Gamma section.
+of $M_4(\mathbb{C})$. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$; see the Gamma section.
 
 **The existence.** The cells exist: the product rule $L_aR_bL_{ac}R_{db}$ makes each the generator cell an explicit element of the two-sided basis, the anticommutation relations hold, and the four cells generate $M_4(\mathbb{C})$. Some $S\in GL_4(\mathbb{C})$ carries the frame to the block matrices of the chiral representation, whose blocks are built from the Pauli matrices $\sigma_i$: the first with $I_2$ in its off-diagonal blocks and the other three with $\sigma_i$ there. Both frames satisfy the same relations, and this is the non-canonicity of §*The Non-Canonicity of the Frame* in its simplest form.
 

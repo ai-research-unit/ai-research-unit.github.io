@@ -14,7 +14,7 @@ The article is organised as follows. The next section fixes the conventions: the
 
 ### The Algebra and the Cells
 
-A **cell** is the two-sided operator $L_{a}R_{b}$, with $L_a\psi = a\psi$ and $R_b\psi = \psi b$; $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ is the identity and $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$, and the dictionary $\mathsf{M}_2$ of the companion articles. A frame cell is written as its two multipliers and never as a single letter; the article stays in that spelling throughout, and the standard Greek names of the four generators are collected in §*The Legacy Gamma Formulation* and used nowhere else.
+The conventions are those of the companion articles: the algebra and the dictionary $\mathsf{M}_2$ are those of *Algebra and Element Conventions* and *Matrix Representations Conventions*, and the two-sided operator $L_{a}R_{b}$, its two free slots and its identity $I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ are those of *Operator Family Conventions*. None is restated here. A frame cell is written as its two multipliers and never as a single letter; the article stays in that spelling throughout, and the standard Greek names of the four generators are collected in §*The Legacy Gamma Formulation* and used nowhere else.
 
 ### The Generators
 
@@ -33,7 +33,7 @@ and they split into two families:
 | temporal | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}} = iR_{\vec e_x}^{\mathrm{axf}}$ | $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | spatial | $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | $-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 
-The two families anticommute, so that the four cells carry the Clifford relations of $g=\mathrm{diag}(+1,-1,-1,-1)$,
+The two families anticommute, so that the four cells carry the Clifford relations of $g=\mathrm{diag}(-1,+1,+1,+1)$,
 
 $$
 \left\{iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},\,iL_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}.
@@ -514,7 +514,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $\psi$, $\bar\psi = \psi^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Dirac spinor (spinor-module representative) and its adjoint |
 | $L_{a}R_{b}$, $L_{a}R_{b}\psi = a\psi b$ | Cell; $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ is the identity, $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$ |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu}$ | The four generator cells, with $\delta_t = \vec e_x$ and $\delta_k = \vec e_y$; the temporal one is $iR_{\vec e_x}^{\mathrm{axf}}$ |
-| $\left\{iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},iL_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right\} = 2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Clifford relations; metric $g = \mathrm{diag}(+1,-1,-1,-1)$ |
+| $\left\{iL_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},iL_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right\} = 2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Clifford relations; metric $g = \mathrm{diag}(-1,+1,+1,+1)$ |
 | $L_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu}L_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu} = -g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}} + i\sigma_{\mu\nu}$ | Split of a product of two real cells; the $i$ multiplies out of the generator product |
 | $i\sigma_{\mu\nu} = \tfrac12\left[L_{e_\mu}^{\mathrm{axf}}R_{\delta_\mu},L_{e_\nu}^{\mathrm{axf}}R_{\delta_\nu}\right]$ | The bivector without its imaginary unit, as a commutator of real cells |
 | $-iR_{\vec e_z}^{\mathrm{axf}} = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $\left(iR_{\vec e_z}^{\mathrm{axf}}\right)^2 = L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Chirality cell, anticommuting with every generator |

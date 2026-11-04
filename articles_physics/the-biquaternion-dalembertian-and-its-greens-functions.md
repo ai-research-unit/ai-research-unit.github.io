@@ -455,7 +455,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $D^+_FD^-_F = \Box_{\text{s}} + 2f\partial/\partial\tau + 2i(F,\nabla) + f^2 + (F,F)$ | Square of the mutual MD-operators; $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta = -\Box$ |
 | $\psi = \frac{1}{4\pi x}\exp(\pm i(F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - xf)\delta(\tau-x)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
 | $\Theta(t')$ | Step function selecting the future cone |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict'$ metric (not used in $\Box$) |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | Level-2 $ict'$ metric (not used in $\Box$) |
 
 ## Further Reading
 

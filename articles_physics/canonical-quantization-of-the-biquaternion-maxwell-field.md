@@ -83,7 +83,7 @@ This is the first finding of the article. The biquaternion formulation writes th
 
 ## The Constraint Structure
 
-The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. In natural units and with the metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the conjugate momenta are
+The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. In natural units and with the metric $g_{\mu\nu}[\mathbb{M}_-]$, the conjugate momenta are
 
 $$
 \pi_\mu=\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_t A_\mu)}=-F_{t\mu},
@@ -159,7 +159,7 @@ A_\mu(x)=\int\!\frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
 +\epsilon^{(r)*}_\mu(\vec k)\,a^{\mathrm{fop}\dagger}_r(\vec k)\,\exp(+ik\cdot x)\right],
 $$
 
-with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\sum_{\mu,\nu}\eta_{\mu\nu}\epsilon^{(r)}_\mu\epsilon^{(s)}_\nu=\zeta_r\delta_{rs}$, where $(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1)$. The mode operators carry the corresponding commutators,
+with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]\epsilon^{(r)}_\mu\epsilon^{(s)}_\nu=\zeta_r\delta_{rs}$, where $(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1)$. The mode operators carry the corresponding commutators,
 
 $$
 \boxed{\;\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
@@ -270,7 +270,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ | Biquaternionic Maxwell equation |
 | $\Gamma$ | Gauge function, $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$ |
 | $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S_2=S-\Box\Gamma$ | Gauge degree of freedom; Lorenz gauge $S=0$ |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ spacetime metric; biquaternion norm on $\mathbb{M}_-$ |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ spacetime metric; biquaternion norm on $\mathbb{M}_-$ |
 | $\mathcal{L}=-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$ | Maxwell Lagrangian density (potential formulation) |
 | $\pi_\mu=\partial\mathcal{L}/\partial(\partial/\partial Q_t A_\mu)=-F_{t\mu}$ | Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$ |
 | $\tilde{\pi}=\pi_0e_t+\vec\pi$ | Momentum biquaternion |

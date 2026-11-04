@@ -139,7 +139,7 @@ $$
 
 with massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. Both members act on the algebra by left multiplication, and the mass couples the two chiral ideals off-diagonally: this is the one-sided statement.
 
-On the Dirac module the same pair is one two-sided cell equation. Writing $G_\mu$ for the generator cell of the coordinate $x_\mu=(t',x,y,z)$, with $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ and $g=\mathrm{diag}(+1,-1,-1,-1)$,
+On the Dirac module the same pair is one two-sided cell equation. Writing $G_\mu$ for the generator cell of the coordinate $x_\mu=(t',x,y,z)$, with $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ and $g=\mathrm{diag}(-1,+1,+1,+1)$,
 
 $$
 G_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},

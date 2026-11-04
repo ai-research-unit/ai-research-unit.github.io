@@ -374,7 +374,7 @@ $$
 so the frame carries the Lorentzian signature. With $\mu,\nu\in\{0,1,2,3\}$ in this section only, the five cells satisfy
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),\qquad
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad g=\mathrm{diag}(-1,+1,+1,+1),\qquad
 \{\gamma_\mu,\gamma_5\}=0,\qquad
 \gamma_5^2=I_4,\qquad
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3 .

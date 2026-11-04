@@ -14,7 +14,7 @@ $$
 g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
-which is the corpus's **generator metric**, the same object the four generators of the Dirac module obey; the source writes $\eta_{\mu\nu}$ for it. It is *not* the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = \sum_{\mu,\nu}V_\mu g_{\mu\nu}W_\nu = \sum_\mu\epsilon_\mu V_\mu W_\mu$. No index is raised in this article. Where the source wrote a contraction with one index up and one down and no metric between them, the sum here carries the sign vector $\epsilon=(1,-1,-1,-1)$, written $\sum_\mu\epsilon_\mu$; where $g_{\mu\nu}$ is written, it carries the signs itself and the sum is plain. The sign vector and the Levi-Civita symbol $\varepsilon_{\mu\nu\lambda\rho}$ are different letters.
+which is the corpus's **generator metric**, the same object the four generators of the Dirac module obey; the source writes $\eta_{\mu\nu}$ for it. It is *not* the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = \sum_{\mu,\nu}V_\mu g_{\mu\nu}W_\nu = \sum_\mu\epsilon_\mu V_\mu W_\mu$. No index is raised in this article. Where the source wrote a contraction with one index up and one down and no metric between them, the sum here carries the sign vector $\epsilon=(1,-1,-1,-1)$, written $\sum_\mu\epsilon_\mu$; where $g_{\mu\nu}$ is written, it carries the signs itself and the sum is plain. The sign vector and the Levi-Civita symbol $\varepsilon_{\mu\nu\lambda\rho}$ are different letters.
 
 ## The Trinomial Unit Basis
 

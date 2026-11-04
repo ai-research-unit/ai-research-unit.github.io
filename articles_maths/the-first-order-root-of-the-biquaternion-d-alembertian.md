@@ -16,7 +16,7 @@ $$
 \Box=-\sum_{\mu,\nu}(g^{-1})_{\mu\nu}\,\partial^2/\partial Q_\mu\partial Q_\nu
 =-\frac{\partial^2}{\partial(q'_t)^2}+\Delta ,
 \qquad
-g=\mathrm{diag}(+1,-1,-1,-1).
+g=\mathrm{diag}(-1,+1,+1,+1).
 $$
 
 This article works in the real coordinates $x_\mu=(q'_t,x,y,z)$; the $Q$ form is the Euclidean transcription, with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$. This article asks for a first-order operator $D$ whose square is $\Box$, or the shifted operator $\Box-\lambda$ for a complex number $\lambda$.
@@ -96,7 +96,7 @@ $$
 
 for every $q\in\mathbb{C}^4$.
 
-**Proposition (the root condition).** Let $D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)+B$ with constant $iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y},B\in M_n(\mathbb{C})$. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the Gamma section. Then $D^2=(\Box-\lambda)I_n$ if and only if
+**Proposition (the root condition).** Let $D=i\bigl(iR_{\vec e_x}\partial/\partial x_0-\sum_k iL_{\vec e_k}R_{\vec e_y}\partial/\partial x_k\bigr)+B$ with constant $iR_{\vec e_x},iL_{\vec e_k}R_{\vec e_y},B\in M_n(\mathbb{C})$. The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$; see the Gamma section. Then $D^2=(\Box-\lambda)I_n$ if and only if
 $$
 \boxed{\;\{iR_{\vec e_x},B\}=\{iL_{\vec e_k}R_{\vec e_y},B\}=0,\qquad
 B^2=-\lambda I_n.\;}
@@ -115,13 +115,13 @@ The three conditions separate. The first is the **Clifford condition**; it invol
 
 **The principal symbol.** The principal symbol of $D$ is $q_0\,iR_{\vec e_x}-\sum_k q_k\,iL_{\vec e_k}R_{\vec e_y}$. The Clifford condition says that its square is $(g_{\mu\nu}q_\mu q_\nu)I_n$. The zero-order term and the shift are lower order. A root is therefore a four-generator Clifford system before it is a shifted d'Alembertian; the shift is a condition on the constant term, not on the principal symbol.
 
-**The material sector.** On $\mathbb{M}_-$, where $Q_t=iq'_t$, the same d'Alembertian reads $\Box=\Delta-\partial^2/\partial(q'_t)^2$. The article works in these real coordinates, where the Clifford relation is $2(g^{-1})_{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$; the $Q$ coordinates carry the Euclidean transcription and are not used for the root.
+**The material sector.** On $\mathbb{M}_-$, where $Q_t=iq'_t$, the same d'Alembertian reads $\Box=\Delta-\partial^2/\partial(q'_t)^2$. The article works in these real coordinates, where the Clifford relation is $2(g^{-1})_{\mu\nu}$ with $g=\mathrm{diag}(-1,+1,+1,+1)$; the $Q$ coordinates carry the Euclidean transcription and are not used for the root.
 
 ## The Clifford Algebra and the Minimal Carrier
 
 ### The Classification
 
-**Theorem.** Four matrices satisfying the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. Its smallest faithful module is $\mathbb{C}^4$, and no such quadruple exists in $M_n(\mathbb{C})$ with $n<4$.
+**Theorem.** Four matrices satisfying the four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. Its smallest faithful module is $\mathbb{C}^4$, and no such quadruple exists in $M_n(\mathbb{C})$ with $n<4$.
 
 *Proof.* The monomials
 
@@ -261,7 +261,7 @@ iR_{\vec e_x}=R_u,\qquad
 iL_{\vec e_k}R_{\vec e_y}=L_{\vec e_k}G\quad(k=x,y,z).
 $$
 
-**Theorem.** The four operators $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ satisfy The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$; see the Gamma section. They are two-sided operators, and they generate $M_4(\mathbb{C})$. The cell root acts on the regular module $\mathbb{B}$.
+**Theorem.** The four operators $iR_{\vec e_x},iL_{\vec e_x}R_{\vec e_y},iL_{\vec e_y}R_{\vec e_y},iL_{\vec e_z}R_{\vec e_y}$ satisfy The four cells $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$; see the Gamma section. They are two-sided operators, and they generate $M_4(\mathbb{C})$. The cell root acts on the regular module $\mathbb{B}$.
 
 *Proof.* The square of $iR_{\vec e_x}$ is $R_u^2=R_{u^2}=I$. The square of $iL_{\vec e_k}R_{\vec e_y}$ is $L_{\vec e_k}^2G^2=-I$, because $\vec e_k^2=-e_t$ and $G^2=I$. For $j\ne k$,
 

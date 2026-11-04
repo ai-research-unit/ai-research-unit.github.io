@@ -130,7 +130,7 @@ $$
 \{iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\} = 0,
 $$
 
-which is the Clifford relation with $g = \mathrm{diag}(+1,-1,-1,-1)$. Every sign in this display is a reduction of $i^2=-1$ and of the quaternion relations. For the first square,
+which is the Clifford relation with $g = \mathrm{diag}(-1,+1,+1,+1)$. Every sign in this display is a reduction of $i^2=-1$ and of the quaternion relations. For the first square,
 
 $$
 \left(iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\right)^2
@@ -269,7 +269,7 @@ $$
 \end{aligned}
 $$
 
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu,\gamma_5\}=0$.
+They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, the product $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ squares to the identity, and $\gamma_5$ anticommutes with all four: $\{\gamma_\mu,\gamma_5\}=0$.
 
 A single cell $L_aR_b$ is a pure tensor; a single product is one cell up to a phase, the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 

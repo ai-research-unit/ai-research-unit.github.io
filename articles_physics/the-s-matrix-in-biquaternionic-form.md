@@ -364,7 +364,7 @@ so
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu},
 \qquad
-g=\mathrm{diag}(+1,-1,-1,-1),
+g=\mathrm{diag}(-1,+1,+1,+1),
 $$
 and
 $$

@@ -330,7 +330,7 @@ the mass-shell operator is minus the product of the two shifted cells,
 $$
 \mathcal{M}(\tilde P)=-\big(\slashed p-m\big)\big(\slashed p+m\big)=m^2-p^2 ,
 $$
-a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r w^{(r)}\bar w^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathbf 1$ with $g=\mathrm{diag}(+1,-1,-1,-1)$. That $g$ is minus the $ict'$ coordinate metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.
+a multiple of the identity cell, and the residue of the spinor propagator is the cell $\slashed p+m$ up to the overall $-i$, which is the spin sum $\sum_r w^{(r)}\bar w^{(r)}$. The mass is the identity cell, not a fifth generator. The frame is consistent in the usual sense, $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathbf 1$ with $g=\mathrm{diag}(-1,+1,+1,+1)$. That $g$ is minus the $ict'$ coordinate metric $g_{\mu\nu}[\mathbb{M}_-]$, and the overall sign is the one that makes $\slashed p^{\,2}$ equal $p^2$, the d'Alembertian's symbol, rather than $-p^2$. Each square is a cell sign times the central one: $(\gamma_0)^2=\mathbf 1$, and $(\gamma_k)^2=-\mathbf 1$ for the three spatial cells, the two quaternion squares multiplying to $+1$ and the central $i^2=-1$ remaining.
 
 $\gamma_5$ is the reference-frame cell of the chirality; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ is a different object, represented by $\gamma_5$ on the Dirac module. It squares to the identity cell, anticommutes with every $\gamma_\mu$ and hence with $\slashed p$, and commutes with the mass. The two chiralities are its $\pm1$ eigenspaces, projected by $\tfrac12(\mathbf 1\pm\gamma_5)$; the momentum cell is off-diagonal between them and the mass is diagonal, which is the frame's form of the chiral pair of the spinor section.
 
@@ -364,7 +364,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=m^2-p^2$ | Mass-shell operator, the inverse propagator; real central on real momenta |
 | $\mathcal{M}(\tilde P)=0\iff E_{\vec p}^2=\vec p^{\,2}+m^2$ | Mass shell, a biquaternion-norm level set |
 | $\Box=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{\natural})=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, the series convention, with symbol $\Box\to p^2$ on the material sector |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ coordinate metric (level 2); the frame's component metric $g$ is minus it |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ coordinate metric (level 2); the frame's component metric $g$ is minus it |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian and Hermitian sectors, the fixed spaces of $\flat$ and of ${}^{*}$; $\tilde\Phi_\pm=\tfrac12(\tilde\Phi\pm\tilde\Phi^{\flat})$ |
 | $\flat=-{}^{*}$ | The anti-Hermitian conjugation; antilinear, with the twist $(AB)^{\flat}=-B^{\flat}A^{\flat}$ |
 | $D_F(\tilde P)=1/(\mathcal{M}(\tilde P)-i\epsilon)=-1/(p^2-m^2+i\epsilon)$ | Feynman propagator (momentum space) |

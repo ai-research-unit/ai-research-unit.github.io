@@ -31,7 +31,7 @@ So the timelike generator squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{ax
 
 $$
 \left\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}}\right\}=2g_{\mu\rho}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
-\qquad g=\mathrm{diag}(+1,-1,-1,-1).
+\qquad g=\mathrm{diag}(-1,+1,+1,+1).
 $$
 
 This is the sign the frame of the cells carries, the $\mathbb{M}_-$ frame of the conventions article. The interval reads the same numbers with the opposite overall sign, $g'=-g=(-1,+1,+1,+1)$, so that $s^2=g'_{\mu\nu}x^\mu x^\nu=-g_{\mu\nu}x^\mu x^\nu$; which of the two tuples is called $g$ is a convention, and no result depends on it.

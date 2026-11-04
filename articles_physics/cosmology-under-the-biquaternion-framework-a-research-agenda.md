@@ -140,7 +140,7 @@ This is the obstacle specific to cosmology, and it is where the framework's inva
 The Friedmann equations require the **perfect-fluid stress–energy tensor**, a symmetric rank-two tensor with two independent thermal functions $\rho$ and $p$ and a four-velocity. The framework's objects are different in kind. The algebra has no faithful rank-two object. The bilinear sum
 
 $$
-\boxed{\;\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu}\right) e_t\;}
+\boxed{\;\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]T_{\mu\nu}\right) e_t\;}
 $$
 
 collapses the whole tensor to its trace, and that collapse is the framework's most important structural limitation for cosmology: for a traceless symmetric object the packaging vanishes identically. The consequences for the cosmological source are immediate and sharp.
@@ -238,13 +238,13 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | informational and material sectors, $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | inherited |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; real-quaternion subspace | inherited |
 | $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$ | inherited |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \eta_{\mu\nu} = \mathrm{diag}(-1,1,1,1)$ | inherited |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = g_{\mu\nu}[\mathbb{M}_-]$ | inherited |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace reading, a **fibre** trace over $\mathbb{C}^2$ | inherited |
 | $\tilde{E}_\mu \in \mathbb{M}_-$, $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
 | $a(t')$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \left(da/dt'\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
-| $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\sum_{\mu,\nu}\eta_{\mu\nu}T_{\mu\nu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
+| $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\sum_{\mu,\nu}g_{\mu\nu}[\mathbb{M}_-]T_{\mu\nu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
 | $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
 | $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |
 

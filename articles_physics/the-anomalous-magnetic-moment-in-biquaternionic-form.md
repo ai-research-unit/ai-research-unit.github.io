@@ -36,7 +36,7 @@ $$
 iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},\qquad \nu(t)=x,\quad \nu(k)=y ,
 $$
 
-which is $iR_{\vec e_x}^{\mathrm{axf}}$ at $\mu=t$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ at $\mu=k$. The four cells carry the Clifford relations of $g=\mathrm{diag}(+1,-1,-1,-1)$,
+which is $iR_{\vec e_x}^{\mathrm{axf}}$ at $\mu=t$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ at $\mu=k$. The four cells carry the Clifford relations of $g=\mathrm{diag}(-1,+1,+1,+1)$,
 
 $$
 \{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}I_4 ,
@@ -336,7 +336,7 @@ All numerics are machine-precision matrix arithmetic in plain Python, in the fou
 
 | Claim | Value / result |
 |---|---|
-| Anticommutator, metric | $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+1,-1,-1,-1)$: residual $0$ |
+| Anticommutator, metric | $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(-1,+1,+1,+1)$: residual $0$ |
 | Squares | $(iR_{\vec e_x}^{\mathrm{axf}})^2=I_4$, $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-I_4$: residual $0$ |
 | Mixed product | $iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=g_{0k}I_4-i\sigma_{0k}$: residual $0$ |
 | Traces | $\mathrm{tr}L_aR_b=4\mathrm{Sc}(a)\mathrm{Sc}(b)$; $\mathrm{Tr}_2(\tilde Q_1\tilde Q_2)=2\mathrm{Sc}(\tilde Q_1\tilde Q_2)$: residual $0$ |
@@ -504,7 +504,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | $i^2=-1$ from the two factors, one more minus from $\vec e_y\vec e_x=-\vec e_z$, so the cell is positive |
 | $\bar w_2 iR_{\vec e_x}^{\mathrm{axf}}w=\bar w_2[(p+p_2)_0+i\sum_\nu\varepsilon_\nu\sigma_{0\nu}k_\nu]w/2m$ | Gordon decomposition, timelike branch |
 | $k=p_2-p$ | Momentum transfer |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric, the level-3 metric of the Dirac module |
+| $g=\mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric, the level-3 metric of the Dirac module |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | The two sectors, and the split $i\mathbb{M}_\pm=\mathbb{M}_\mp$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the index rule |
 | Four contraction identities of §*The Legacy Gamma Formulation* | Contraction identities (residual $0$) |

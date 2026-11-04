@@ -736,7 +736,7 @@ $$
 $$
 -iR_{\vec e_z}^{\mathrm{pau}}=i\,(iR_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}),
 $$
-with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display. The relations are unchanged by the conjugation, so the same six lines hold with the label $\mathrm{axf}$ throughout, and that is the spelling the physics articles print.
+with $g=\operatorname{diag}(-1,+1,+1,+1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display. The relations are unchanged by the conjugation, so the same six lines hold with the label $\mathrm{axf}$ throughout, and that is the spelling the physics articles print.
 
 **The sixteen products are the sixteen cells.** The five frame cells are five cells up to a factor $i$, and the sixteen products of the five are the sixteen cells:
 
@@ -809,7 +809,7 @@ The identity uses $\operatorname{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which 
 **Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{M}_-$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their metrics and their table, in *Frame Conventions*, and neither is a matrix frame.
 
 - The **$\mathbb{B}$ frame** is the biquaternion space read in its own coordinate, $Q_\mu\in\mathbb{C}$; on the material case $Q_t=ict'$ and $Q_k=q_k$, so $Q_t^2=-(ct')^2$. Its metric is $(1,1,1,1)$: every cell squares to $+I_4$.
-- The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(1,-1,-1,-1)$.
+- The **$\mathbb{M}_-$ frame** is the material real frame, $x_0=ct'$ and $x_k=q_k$, with $Q_t=ix_0$. Its metric is $(-1,1,1,1)$; the cells square to the opposite, $(1,-1,-1,-1)$.
 
 The five frame cells are the ones of §*The Clifford Structure* in the $\mathbb{M}_-$ frame, and their three spatial squares are $-I_4$ there. In the $\mathbb{B}$ frame the four cells that all square to $+I_4$ are
 $$
@@ -999,6 +999,17 @@ and this is the only place in the article where the trace appears. An unsubscrip
 
 **The realisation is a convention of presentation, not of content.** The isomorphisms that preserve the subspace dictionary are the $\mathsf{M}_{2,\mathrm{S}}=S\mathsf{M}_2S^{-1}$ with $S$ $*$-unitary up to a nonzero complex scalar, and an arbitrary invertible $S$ destroys the dictionary. The practical consequence is that a mistake of translation between the algebra and its matrices is repaired **here**, by correcting the assignment or the explicit factors of $i$, and never by altering the biquaternion norm, the $ict'$ assignment or the sector split.
 
+**Two models multiply.** A product of two algebras is read through the product of their images,
+$$
+\mathsf{M}_2\otimes\mathsf{M}_2:\ \mathbb{B}\otimes\mathbb{B}\longrightarrow M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong M_4(\mathbb{C}),
+$$
+and the trace factorises over the two factors,
+$$
+\operatorname{Tr}(x\otimes y)=\operatorname{Tr}(x)\,\operatorname{Tr}(y),\qquad
+\operatorname{Tr}(e_t)=2,\qquad \operatorname{Tr}(\vec e_k)=0 .
+$$
+A subscript names the factor it traces, $\operatorname{Tr}_\mathbb{B}(e_t)=2$ and $\operatorname{Tr}_\mathbb{B}(\vec e_k)=0$, and an unsubscripted $\operatorname{Tr}$ on $\mathbb{B}\otimes\mathbb{B}$ is the trace of the $4\times4$ image: on the units $\operatorname{Tr}(e_t\otimes e_t)=4$ and $\operatorname{Tr}(\vec e_j\otimes\vec e_k)=0$. The two-qubit arena of the exercises is this algebra and is read with this trace; it needs no second trace convention.
+
 **A bare $\mathsf{M}_2$ means this isomorphism and nothing else.** A plain $\mathsf{M}_2$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde\Phi=\varphi\,e_t$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde U}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\mathsf{M}_2$ is not any of them.
 
 ### The Bridge to the $4\times4$ Displays
@@ -1047,7 +1058,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R^{\mathrm{
 
 **The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{Tr}(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image. Conjugating entries on its own is not an involution of the algebra, a bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
 
-**The coordinate frames are two, and neither is a matrix frame.** The $\mathbb{B}$ frame reads $Q_\mu$ with $Q_t=ict'$ and metric $(1,1,1,1)$; the $\mathbb{M}_-$ frame reads $x_0=ct'$ with metric $(1,-1,-1,-1)$ and carries the printed gammas. A contraction stays in one frame, and the d'Alembertian is one operator in both.
+**The coordinate frames are two, and neither is a matrix frame.** The $\mathbb{B}$ frame reads $Q_\mu$ with $Q_t=ict'$ and metric $(1,1,1,1)$; the $\mathbb{M}_-$ frame reads $x_0=ct'$ with metric $(-1,1,1,1)$ and carries the printed gammas. A contraction stays in one frame, and the d'Alembertian is one operator in both.
 
 **The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$. A bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the family letter $L$ or $R$ in its subscript and the frame label $\mathrm{axf}$ or $\mathrm{pau}$ in its caret.
 

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Putting a single Dirac fermion on a lattice produces more than one fermion. The naive discretization of the Dirac action in $d$ Euclidean dimensions yields $2^d$ identical species — sixteen in four dimensions — called **tastes** of the fermion. The extra states are **doublers**, and they are not an artefact of one careless choice of difference operator: the **Nielsen–Ninomiya theorem** states that under very general assumptions no lattice regularization of chiral fermions can avoid an equal number of left- and right-handed species, so a chiral gauge theory cannot be discretized on a lattice without violating one of the assumptions. The obstruction is one of the sharpest in lattice field theory, and it is the reason lattice QCD uses modified fermions — Wilson, staggered, Ginsparg–Wilson, domain-wall, overlap, twisted-mass — each of which pays a price to the theorem rather than escaping it.
+Putting a single Dirac fermion on a lattice produces more than one fermion. The naive discretization of the Dirac action in $d$ Euclidean dimensions yields $2^d$ identical species — sixteen in four dimensions — called **tastes** of the fermion. The extra states are **doublers**, and they are not an artefact of one careless choice of difference operator: the **Nielsen–Ninomiya theorem** states that under very general assumptions no lattice regularization of chiral fermions can avoid an equal number of $L$ and $R$ species — the two values of the chirality subscript of *Matrix Representations Conventions* — so a chiral gauge theory cannot be discretized on a lattice without violating one of the assumptions. The obstruction is one of the sharpest in lattice field theory, and it is the reason lattice QCD uses modified fermions — Wilson, staggered, Ginsparg–Wilson, domain-wall, overlap, twisted-mass — each of which pays a price to the theorem rather than escaping it.
 
-This article treats fermion doubling in the biquaternion framework. The framework's honest contribution here is again a **negative** one, and it should be stated first: the biquaternion Dirac equation does **not** evade Nielsen–Ninomiya. If a lattice is imposed on the biquaternion gradient, the doubling argument applies unchanged, because the argument uses only locality, hermiticity, translation invariance and the oddness of the massless symbol about the origin — properties that the discretized biquaternion gradient shares with the standard one. The algebra is not a lattice, and it does not supply one. What the framework can do is state the obstruction in its own variables, and — this is the one positive structural point — its multivector, Clifford-algebraic form of the Dirac field places it naturally close to the **Dirac–Kähler** equation, whose simplicial discretization is exactly the staggered fermion, a lattice formulation whose doublers are reduced but not removed.
+This article treats fermion doubling in the biquaternion framework. The framework's honest contribution here is again a **negative** one, and it should be stated first: the biquaternion Dirac equation does **not** evade Nielsen–Ninomiya. If a lattice is imposed on the biquaternion gradient, the doubling argument applies unchanged, because the argument uses only locality, hermiticity, translation invariance and the oddness of the massless symbol about the origin — properties that the discretized biquaternion gradient shares with the standard one. The algebra is not a lattice, and it does not supply one. What the framework can do is state the obstruction in its own variables, and — this is the one positive structural point — its multivector form of the Dirac field places it naturally close to the **Dirac–Kähler** equation, whose simplicial discretization is exactly the staggered fermion, a lattice formulation whose doublers are reduced but not removed.
 
 The next section sets up the naive discretization, its propagator and its doublers, and the taste-exchange symmetry. The section after states the Nielsen–Ninomiya theorem and the index-theoretic idea of its proof, then surveys the resolutions and what each one sacrifices. The biquaternion reading follows: the discretization of the biquaternion gradient, the independence of the doubling from the algebra, the relation to Dirac–Kähler and staggered fermions, and the framework's index-theorem connection. The closing sections are the open questions, the gamma formulation, the summary, the notation table and the literature.
 
@@ -12,16 +12,19 @@ The next section sets up the naive discretization, its propagator and its double
 
 ### The classical action and the lattice
 
-The biquaternion field lives on the Lorentzian section. In the coordinates $x_0=ct'$, $x_k$, the frame is carried by the cells $L_{a}R_{b}$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_{a}R_{b}\psi=a\psi b$ and $L_{a}R_{b}L_{c}R_{d}=L_{ac}R_{db}$; the identity is $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. Here $i$ is the scalar imaginary, $i^2=-1$. The four Minkowski frame cells $iR_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ ($k=1,2,3$) satisfy
+The field of this article is a biquaternion, an element of $\mathbb{B}$; on the lattice it is a Grassmann-valued element at each site. Its coordinates are the material ones, $x_0=ct'$ and $x_k$, and its frame is the $\mathbb{M}_-$ frame of *Frame Conventions*. Here $i$ is the scalar imaginary, $i^2=-1$.
+
+The five frame cells are those of *Matrix Representations Conventions*: the timelike cell, the three spatial cells and the chirality cell $\chi$. Each is an action of the form $\tilde Q\mapsto a\tilde Qb$, and the action is the derived form
 
 $$
-(iR_{\vec e_x}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
-(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
-\{iR_{\vec e_x}^{\mathrm{axf}},iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\}=0,\qquad
-\{iL_{\vec e_j}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\}=-2\delta_{jk}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\tilde Q\mapsto \tilde Q\,i\vec e_x,\qquad
+\tilde Q\mapsto i\vec e_k\,\tilde Q\,\vec e_y\quad(k=1,2,3),\qquad
+\tilde Q\mapsto-i\tilde Q\vec e_z .
 $$
 
-which are the Clifford relations of $g=\mathrm{diag}(+1,-1,-1,-1)$; the chirality cell is $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$. The biquaternion Dirac equation is the chiral pair
+The first line is the timelike cell, the second the three spatial cells, the third the chirality cell $\chi$. Their squares and their anticommutator are the ones *Frame Conventions* states in the $\mathbb{M}_-$ frame, with $g=\mathrm{diag}(-1,+1,+1,+1)$; they are cited here, not rederived.
+
+The dynamics is the chiral pair of *Operator and Calculus Conventions*, §*The Gradient*,
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,
@@ -29,54 +32,28 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R,
 $$
 
-and its spinor-module representative is the single cell equation
+which this article discretizes; the subscript is the chirality label of *Matrix Representations Conventions*.
+
+On the Euclidean section the frame cells are the derived form
 
 $$
-(\mathbb{D}-m)\psi=0,\qquad
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_0}+\sum_{k=1}^3 L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k}.
+E_4:\ \tilde Q\mapsto \tilde Q\,i\vec e_x,\qquad
+E_k:\ \tilde Q\mapsto-\vec e_k\,\tilde Q\,\vec e_y\quad(k=1,2,3),
 $$
 
-The two lines are the two chiral halves of the field: the gradient $\tilde{\nabla}$ acts on the right-chiral field and its conjugate $\tilde{\nabla}^{\natural}$ on the left-chiral one, and the mass couples them. The transcription of the pair on the spinor module is the single cell equation. At $m=0$ the pair decouples into $\tilde{\nabla}\tilde{\Psi}_R=0$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=0$. The free continuum Dirac action is
+where $E_4$ is the timelike cell and $E_k$ is $i$ times the $k$-th spatial cell: a change of frame, not a change of algebra. They satisfy $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}\mathrm{I}_4$, the anticommutator of *Frame Conventions* read in the Euclidean frame. With $x_4=ix_0$, so that $\partial/\partial x_0=i\partial/\partial x_4$, the Euclidean Dirac operator is the action
 
 $$
-S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(\mathbb{D}-m\right)\psi(x)
-= \int d^4x\;\bar\psi(x)\left(-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_0}+\sum_{k=1}^3 L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k}-m\right)\psi(x).
+\psi\ \mapsto\ -\sum_{\mu=1}^4 E_\mu\frac{\partial\psi}{\partial x_\mu},
 $$
 
-On the Euclidean section the frame cells are
-
-$$
-E_4=iR_{\vec e_x}^{\mathrm{axf}},\qquad E_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=1,2,3),
-$$
-
-which satisfy $E_\mu^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$. These are the Wick-rotated frame cells, a change of frame and not a change of algebra. With $x_4=ix_0$, so that $\partial/\partial x_0=i\partial/\partial x_4$, the cell operator becomes
-
-$$
-\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial x_0}+\sum_{k=1}^3L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial x_k}
-=-\sum_{\mu=1}^4E_\mu\frac{\partial}{\partial x_\mu},
-$$
-
-so $(\mathbb{D}-m)\psi=0$ and $(\sum_\mu E_\mu\partial/\partial x_\mu+m)\psi=0$ are the same equation; the flip of the mass sign is the Wick rotation, not a new convention. The Euclidean chirality is $iR_{\vec e_z}^{\mathrm{axf}}=E_4E_1E_2E_3$, which is minus the Minkowski chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$: the four cells anticommute, so reversing their order flips the sign. The Euclidean action is
+and the Euclidean action is
 
 $$
 S^E_F[\psi,\bar\psi] = \int d^4x_E\;\bar\psi(x)\left(\sum_{\mu=1}^4 E_\mu\frac{\partial}{\partial x_\mu} + m\right)\psi(x).
 $$
 
-The lattice below discretizes $S^E_F$. In the lattice sections the index $\mu=1,\dots,4$ labels the four Euclidean directions, the fourth temporal; the doubling theorem is a statement about the symbol and does not depend on the signature.
-
-Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
-
-$$
-\partial^E/\partial x_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\vec u_\mu} - \psi_{n-\vec u_\mu}}{2a}.
-$$
-
-The naive action is then
-
-$$
-S_F^L[\psi,\bar\psi] = a^4\sum_n \bar\psi_n\left(\sum_{\mu=1}^{4}\,E_\mu\frac{\psi_{n+\vec u_\mu}-\psi_{n-\vec u_\mu}}{2a} + m\psi_n\right),
-$$
-
-which reduces to $S^E_F$ as $a\to0$. It therefore looks like a theory of a single fermion. It is not.
+The sign of the mass term flips with the Wick rotation; that is the rotation, not a new convention. The Euclidean chirality is the fifth cell, the product $E_4E_1E_2E_3$ of the four Euclidean cells; it is minus the Minkowski chirality cell $\chi$, because the four cells anticommute and reversing their order flips the sign.
 
 ### The propagator and the doubler poles
 
@@ -119,7 +96,7 @@ $$
 \qquad
 \bar\psi_n \;\to\; \bar\psi_n\,S_A^\dagger\,\exp(i\,n\cdot\pi_A),
 \qquad
-S_0 = L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\quad S_\nu = iR_{\vec e_z}^{\mathrm{axf}}E_\nu\;},
+S_0 = \mathrm{I}_4,\quad S_\nu = -\chi E_\nu\;},
 $$
 
 with $S_A$ the product of the $S_\nu$ over the indices in $A$; the lattice must be of even extent in each direction, so that the phase is single-valued. Conjugating a frame cell by $S_A$ flips its sign exactly for $\mu\in A$,
@@ -128,13 +105,13 @@ $$
 S_A^\dagger E_\mu S_A=(-1)^{\delta_{\mu\in A}}E_\mu ,
 $$
 
-which is still a representation of the Clifford algebra. Fourier transforming shows that the transformation shifts the momentum by $\pi_A$ and leaves the action unchanged. The sixteen tastes are therefore exactly degenerate in the free theory. They cannot be discarded in an interacting theory: the lattice conserves momentum only modulo $2\pi/a$, so a hard virtual gauge boson can transfer $\pi/a$ and connect the tastes.
+so the conjugation carries the frame into itself. Fourier transforming shows that the transformation shifts the momentum by $\pi_A$ and leaves the action unchanged. The sixteen tastes are therefore exactly degenerate in the free theory. They cannot be discarded in an interacting theory: the lattice conserves momentum only modulo $2\pi/a$, so a hard virtual gauge boson can transfer $\pi/a$ and connect the tastes.
 
 ## The Nielsen–Ninomiya Theorem
 
 ### Statement and assumptions
 
-The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubling. In its Hamiltonian form, consider a theory with Hamiltonian $H = \sum_{x,y}\psi^\dagger(x)F(x,y)\psi(y)$ and a charge $Q$. Then there are equal numbers of left-handed and right-handed fermions for every set of charges, provided:
+The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubling. In its Hamiltonian form, consider a theory with Hamiltonian $H = \sum_{x,y}\psi^\dagger(x)F(x,y)\psi(y)$ and a charge $Q$. Then there are equal numbers of $L$ and $R$ fermions for every set of charges, provided:
 
 - **translational invariance**, so that $F(x,y) = F(x-y)$;
 - **locality**, meaning $F(x-y)$ decays fast enough that its Fourier transform has continuous derivatives;
@@ -144,23 +121,23 @@ The **Nielsen–Ninomiya theorem** (1981) is the no-go theorem behind the doubli
 The theorem also has a Euclidean form for an action
 
 $$
-S=\sum_{x,y,\mu}\bar\psi(x)\,E_\mu F_\mu(x,y)P_R\psi(y),
+S=\sum_{x,y,\mu}\bar\psi(x)\,E_\mu F_\mu(x,y)\,\psi_R(y),
 $$
 
-under translation invariance, hermiticity ($F_\mu(-x)=F_\mu(x)^\dagger$) and locality; here $P_R=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}-iR_{\vec e_z}^{\mathrm{axf}})$ is the right-chiral projector, the projector on the $+1$ eigenvalue of the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$, and $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+iR_{\vec e_z}^{\mathrm{axf}})$ is the left-chiral one. A general version extends the statement to *all* regularization schemes: no regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of left- and right-handed Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. One consequence is that the Standard Model cannot be put on a lattice without violating one of these conditions; another is that a chirally invariant regularization makes the chiral anomaly vanish, which is wrong. The theorem does not say *how many* doublers appear — only that at least one partner is forced. When chiral fermions do not exist — odd dimensions — the theorem is vacuous, since there is no chirality operator anticommuting with all the frame generators.
+under translation invariance, hermiticity ($F_\mu(-x)=F_\mu(x)^\dagger$) and locality; here $\psi_R$ is the $R$ part of the field, the chirality subscript of *Matrix Representations Conventions*. A general version extends the statement to *all* regularization schemes: no regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of $L$ and $R$ Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. One consequence is that the Standard Model cannot be put on a lattice without violating one of these conditions; another is that a chirally invariant regularization makes the chiral anomaly vanish, which is wrong. The theorem does not say *how many* doublers appear — only that at least one partner is forced. When chiral fermions do not exist — odd dimensions — the theorem is vacuous, since there is no chirality operator anticommuting with all the frame generators.
 
 ### The proof idea
 
-The Euclidean proof uses the **Poincaré–Hopf theorem**. Locality makes the Fourier transform of the kernel, $F_\mu(k)$, a continuous vector field on the Brillouin zone; it is the inverse propagator. Its isolated zeros are the particle species, and around each zero the field is either a source/sink or a saddle, with the **index** of the vector field equal to $\pm 1$; the two signs correspond to left- and right-handedness. Poincaré–Hopf says the sum of the indices equals the Euler characteristic of the manifold the field lives on. The Brillouin zone is topologically a four-torus, whose Euler characteristic is **zero**. Hence the numbers of left- and right-handed species are equal, and the doublers are unavoidable.
+The Euclidean proof uses the **Poincaré–Hopf theorem**. Locality makes the Fourier transform of the kernel, $F_\mu(k)$, a continuous vector field on the Brillouin zone; it is the inverse propagator. Its isolated zeros are the particle species, and around each zero the field is either a source/sink or a saddle, with the **index** of the vector field equal to $\pm 1$; the two signs correspond to the values $L$ and $R$. Poincaré–Hopf says the sum of the indices equals the Euler characteristic of the manifold the field lives on. The Brillouin zone is topologically a four-torus, whose Euler characteristic is **zero**. Hence the numbers of $L$ and $R$ species are equal, and the doublers are unavoidable.
 
 ## Resolutions and What Each One Sacrifices
 
 Every lattice fermion formulation must give up at least one hypothesis of the theorem, or the bilinear form of the action that carries them. The main routes are:
 
 - **Wilson fermions** add a term proportional to the second difference, which gives the doublers a mass of order $1/a$ and removes them from the low-energy theory, at the cost of explicitly breaking chiral symmetry.
-- **Ginsparg–Wilson fermions** satisfy a remnant of chiral symmetry on the lattice, $\{D,\chi\}=a\,D\chi D$ with $D$ the lattice Dirac operator and $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$, in place of the continuum anticommutator $\{D,\chi\}=0$; the **overlap** fermions realize this with an exactly massless, index-carrying operator. Chiral symmetry is not broken explicitly; it is realized in this modified form.
+- **Ginsparg–Wilson fermions** satisfy a remnant of chiral symmetry on the lattice, $\{D,\chi\}=a\,D\chi D$ with $D$ the lattice Dirac operator and $\chi$ the chirality cell, in place of the continuum anticommutator $\{D,\chi\}=0$; the **overlap** fermions realize this with an exactly massless, index-carrying operator. Chiral symmetry is not broken explicitly; it is realized in this modified form.
 - **Domain-wall fermions** place chiral fermions on the boundaries of an extra dimension; the bulk mass term breaks chiral symmetry explicitly, but the boundary mode's chiral symmetry is restored as the extra dimension grows, and the price is the extra dimension.
-- **Staggered (Kogut–Susskind) fermions** reduce the sixteen tastes to four by distributing the four spinor components over the sites of a hypercube, which leaves only a discrete remnant of the translation symmetry.
+- **Staggered (Kogut–Susskind) fermions** reduce the sixteen tastes to four by distributing the four components of the field over the sites of a hypercube, which leaves only a discrete remnant of the translation symmetry.
 - **Twisted-mass Wilson fermions** add a chirally twisted mass term; the Wilson term removes the doublers, and the twist protects a remnant of chiral symmetry.
 - **Symmetric mass generation** is a non-perturbative interacting route that gaps the mirror fermions without breaking the symmetries, evading the bilinear assumption.
 - **Non-local formulations** (perfect, SLAC, Stacey fermions) use a discontinuous propagator and are non-local.
@@ -172,7 +149,7 @@ What survives all of this is the part with experimental consequences: the correc
 
 ### Discretizing the biquaternion gradient
 
-The framework's gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. A lattice discretization replaces each partial derivative by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial Q_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol
+The framework's gradient is $\tilde{\nabla}$, the one of *Operator and Calculus Conventions*. A lattice discretization replaces each of its four partial derivatives by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial Q_\mu$ is $i\sin(p_\mu a)/a$ in each direction, and on plane waves the biquaternion gradient acquires the symbol
 
 $$
 \boxed{\;\tilde{\nabla} \;\longrightarrow\; e_t\,\frac{i\sin(p_ta)}{a}+\sum_{k=x,y,z}\vec e_k\,\frac{i\sin(p_ka)}{a}\;}.
@@ -186,7 +163,7 @@ This is the article's central negative statement. Nothing in the derivation of t
 
 ### Dirac–Kähler and staggered fermions
 
-The one positive structural point is a proximity, not a solution. The biquaternion algebra is the even part of the real Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{R})$, $\mathrm{Cl}^{+}_{1,3}(\mathbb{R})\cong M_2(\mathbb{C})\cong\mathbb{H}\otimes\mathbb{C}$, and the biquaternion field sits in the even part of a **Dirac–Kähler** multivector, the field of the companion mathematical article. The Dirac–Kähler equation is the multivector equation; its operator is odd and couples the even and odd parts, so it does not restrict to the biquaternion field. The relation is therefore containment, not identity. What the containment gives is the natural discretization: on a simplicial complex the Dirac–Kähler equation becomes the **staggered fermion** formulation, and the even part is the framework's field. Staggered fermions do not remove doubling; they reduce the sixteen tastes to four and preserve a remnant symmetry. So the framework's multivector form places it naturally in the family of lattice formulations that *mitigate* doubling, and not in the family that evades it. This is a structural statement about the natural discretization, not a derivation of a lattice for the biquaternion equation.
+The one positive structural point is a proximity, not a solution. The biquaternion field sits in the even part of a **Dirac–Kähler** multivector, the field of the companion mathematical article. The Dirac–Kähler equation is the multivector equation; its operator is odd and couples the even and odd parts, so it does not restrict to the biquaternion field. The relation is therefore containment, not identity. What the containment gives is the natural discretization: on a simplicial complex the Dirac–Kähler equation becomes the **staggered fermion** formulation, and the even part is the framework's field. Staggered fermions do not remove doubling; they reduce the sixteen tastes to four and preserve a remnant symmetry. So the framework's multivector form places it naturally in the family of lattice formulations that *mitigate* doubling, and not in the family that evades it. This is a structural statement about the natural discretization, not a derivation of a lattice for the biquaternion equation.
 
 ### Index-theoretic connections
 
@@ -316,7 +293,7 @@ In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=
 
 ## Summary
 
-Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, are related by the taste-exchange symmetry $S_\nu=iR_{\vec e_z}^{\mathrm{axf}}E_\nu$, and are exactly degenerate in the free theory, so an interacting lattice theory cannot simply drop them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of left- and right-handed species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — gives up one of the theorem's hypotheses, and symmetric mass generation gives up the bilinear form of the action rather than a hypothesis.
+Naive discretization of the Dirac action on a $d$-dimensional lattice gives $2^d$ tastes — sixteen in four dimensions — because the difference operator's symbol $\sin(p_\mu a)$ has two zeros per period. The doublers appear as extra poles of the propagator at the Brillouin-zone corners, are related by the taste-exchange symmetry $S_\nu=-\chi E_\nu$, and are exactly degenerate in the free theory, so an interacting lattice theory cannot simply drop them. The Nielsen–Ninomiya theorem states the obstruction: a local, hermitian, translation-invariant lattice bilinear has equal numbers of $L$ and $R$ species; the Euclidean proof is a Poincaré–Hopf index count on the Brillouin-zone torus, whose Euler characteristic vanishes. Every resolution — Wilson, staggered, Ginsparg–Wilson, overlap, domain-wall, twisted-mass, symmetric mass generation, non-local, one-sided — gives up one of the theorem's hypotheses, and symmetric mass generation gives up the bilinear form of the action rather than a hypothesis.
 
 The biquaternion framework does not evade the obstruction. The doubling argument uses only locality, hermiticity, translation invariance and the oddness of the massless symbol, all of which the discretized biquaternion gradient shares; the algebra is not a lattice and supplies no alternative difference operator. The one positive structural point is that the framework's multivector field is contained in the **Dirac–Kähler** multivector, whose simplicial discretization is the **staggered fermion** formulation — a mitigation, not a solution. Two index-theoretic facts reach the framework as companions: the anomalous half-integer quantum Hall effect of graphene and the harmonic-form zero modes of the Dirac–Kähler operator.
 
@@ -326,21 +303,17 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 |---|---|
 | $a$, $n$, $\vec u_\mu$ | Lattice spacing, site index, unit lattice vector in the direction $\mu$ |
 | $S_F^L$ | Naive lattice fermion action |
-| $L_{a}R_{b}$ | Frame cells, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}\psi=a\psi b$; identity $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
-| $iR_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Minkowski frame cells; $(iR_{\vec e_x}^{\mathrm{axf}})^2=+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
-| $\chi=-iR_{\vec e_z}^{\mathrm{axf}}$ | Minkowski chirality cell; $\chi^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and $\chi$ anticommutes with the four frame cells |
-| $\mathbb{D}$ | Cell Dirac operator, $\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0+\sum_k L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$ |
-| $E_4=iR_{\vec e_x}^{\mathrm{axf}}$, $E_k=-L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Euclidean frame cells; $E_\mu^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
-| $iR_{\vec e_z}^{\mathrm{axf}}$ | Euclidean chirality, $iR_{\vec e_z}^{\mathrm{axf}}=E_4E_1E_2E_3$, the negative of the Minkowski chirality cell |
-| $P_R$, $P_L$ | Chiral projectors, $P_{R,L}=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\mp iR_{\vec e_z}^{\mathrm{axf}})$ |
+| $\tilde\nabla$ | Biquaternionic gradient, of *Operator and Calculus Conventions* |
+| $\chi$ | The chirality cell, the fifth of the frame cells; acts by $\tilde Q\mapsto-i\tilde Q\vec e_z$ |
+| $\psi_L$, $\psi_R$ | The chirality subscript of a field, of *Matrix Representations Conventions* |
+| $E_4$, $E_k$ | Euclidean frame cells, the Wick rotation of the frame cells; act by $\tilde Q\mapsto \tilde Q\,i\vec e_x$ and $\tilde Q\mapsto-\vec e_k\,\tilde Q\,\vec e_y$; $\{E_\mu,E_\nu\}=2\delta_{\mu\nu}\mathrm{I}_4$ |
+| $S_\nu=-\chi E_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |
-| $S_\nu=iR_{\vec e_z}^{\mathrm{axf}}E_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |
-| $I_4$ | Unit matrix of the four-dimensional Dirac module |
+| $\mathrm{I}_4$ | Identity operator |
 | $D$ | Lattice Dirac operator of the Ginsparg–Wilson relation |
 | $S(p)$ | Naive lattice propagator |
 | $\omega(\vec p)$ | Lattice dispersion relation |
 | $F(x,y)$, $F_\mu(k)$ | Lattice kernel and its Fourier transform (vector field on the zone) |
-| $\tilde{\nabla}$ | Biquaternionic gradient |
 | $\mathbb{M}_\pm$ | Framework sectors |
 
 ## Further Reading

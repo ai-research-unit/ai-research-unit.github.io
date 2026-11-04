@@ -330,7 +330,7 @@ $$
 \gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-They obey the Clifford relations of the frame — $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$ — and $\gamma_5^2=I_4$ with $\{\gamma_5,\gamma_\mu\}=0$. The relations were checked on the cells, so the frame is the body's cell algebra in another notation, not a larger one.
+They obey the Clifford relations of the frame — $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$ — and $\gamma_5^2=I_4$ with $\{\gamma_5,\gamma_\mu\}=0$. The relations were checked on the cells, so the frame is the body's cell algebra in another notation, not a larger one.
 
 The pair operator of the body is the same cell operator, written in gammas:
 

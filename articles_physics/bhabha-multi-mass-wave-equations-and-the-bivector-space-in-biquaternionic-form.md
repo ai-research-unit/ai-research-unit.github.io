@@ -174,7 +174,7 @@ which lists the three boosts first and the three rotations second: the pairs $10
 
 The inertia $(3,3)$ is the inertia of the Lorentz Lie algebra's Killing form, in the same order: three negative directions for the non-compact boosts and three positive for the compact rotations. The bivector space is $\mathbb{R}^6$ as a real vector space; the identification with $\mathbb{C}^3$ needs a complex structure, and the metric is not the positive-definite form that a Hermitian metric on $\mathbb{C}^3$ would give — it is the split form, with three directions of each sign. The two structures are therefore not interchangeable: $\mathbb{C}^3$ names a complex structure on $\mathbb{R}^6$, and the metric $g_{\alpha\beta\gamma\delta}$ is a separate choice on the same space.
 
-**A note on the two orders of the coordinates.** The corpus's cell frame lists the time coordinate first and writes $g=\mathrm{diag}(+1,-1,-1,-1)$, the opposite of the source's order; the two metrics are the same metric written in opposite orders. The article keeps each order where it is used and never mixes them in one display.
+**A note on the two orders of the coordinates.** The corpus's cell frame lists the time coordinate first and writes $g=\mathrm{diag}(-1,+1,+1,+1)$, the opposite of the source's order; the two metrics are the same metric written in opposite orders. The article keeps each order where it is used and never mixes them in one display.
 
 ### The Equations in $\mathbb{R}^6$
 
@@ -263,7 +263,7 @@ G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \mathbb{D}=i\sum_{\mu=0}^{3}G_\mu\frac{\partial}{\partial x_\mu}.
 $$
 
-The cells carry the Clifford relations of $g=\mathrm{diag}(+1,-1,-1,-1)$,
+The cells carry the Clifford relations of $g=\mathrm{diag}(-1,+1,+1,+1)$,
 
 $$
 \{G_\mu,G_\nu\}=2g_{\mu\nu}I_4,\qquad G_0^2=I_4,\qquad G_k^2=-I_4,
@@ -340,7 +340,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 - The spintensor degree $\dim\mathrm{sym}^{(k,r)}=(k+1)(r+1)=(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$, and its non-injectivity across spin lines; for the proton's first factor $60\times59=3540$.
 - The $\pm$ pairing of the eigenvalues of $M_0$, derived from the evenness in $p_0$ of the rest-frame determinant.
 - The bivector metric's $(3,3)$ inertia, and the printed diagonal as the componentwise image in the order $10,20,30,23,31,12$; recomputed for all six collective indices.
-- The Dirac limit's cells: $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $iG_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\mathbb{D}^2=\Box$, the product of the four generator cells equal to $-R_{\vec e_z}^{\mathrm{axf}}$, and the reduction to the Pauli matrices at $c_{\frac12,\frac12}=2$; recomputed on the explicit $4\times4$ cell representation.
+- The Dirac limit's cells: $\{G_\mu,G_\nu\}=2g_{\mu\nu}I_4$ with $g=\mathrm{diag}(-1,+1,+1,+1)$, $iG_\mu=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\mathbb{D}^2=\Box$, the product of the four generator cells equal to $-R_{\vec e_z}^{\mathrm{axf}}$, and the reduction to the Pauli matrices at $c_{\frac12,\frac12}=2$; recomputed on the explicit $4\times4$ cell representation.
 - The proton-to-electron mass ratio: the product $(l+\frac12)(\bar l+\frac12)$ is $30\times29.5=885$ at $(59/2,29)$ and $1\times\frac12$ at the electron's $(1/2,0)$, so the ratio is $885/\frac12=1770$.
 
 **Transcribed, not derived.**
@@ -437,7 +437,7 @@ $$
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 
-with $g=\mathrm{diag}(+1,-1,-1,-1)$.
+with $g=\mathrm{diag}(-1,+1,+1,+1)$.
 
 **The sign of $\gamma_5$.** With all four indices lowered the volume relation is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, equivalently $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$. The textbook form is $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$, with raised indices; raising the three spatial gammas costs three signs, so applying that convention to the same cells gives $-\gamma_5$. The overall sign of $\gamma_5$ is a labelling convention, and no equation of the body uses it. What does use it is the naming of the halves: a reader comparing with a textbook should flip the labels of $\psi_L$ and $\psi_R$.
 

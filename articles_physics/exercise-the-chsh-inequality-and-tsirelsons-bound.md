@@ -25,13 +25,7 @@ First, **the framework reproduces both bounds; it does not explain why nature st
 
 Second, the sharp bound is obtained **after** the identification $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, by the spectral norm of that matrix algebra. The framework's own positive-definite quadratic form, the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, is (up to the trace normalisation) the Frobenius norm of the matrix image, and it yields only the trivial bound $4$. This is a genuine gap in the framework's internal resources, and it is labelled as such in the biquaternion solution: the framework does not contain, by itself, the norm that gives Tsirelson's bound. What it contains is the algebra whose matrix representation carries that norm.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and the cyclic products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; $i$ is the scalar imaginary, $i^2=-1$. On a single factor the trace is twice the scalar part, $\mathrm{Tr}_\mathbb{B}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$, and on the tensor product $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, with $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$. The isomorphism is the one fixed by *Quantum Physics in Biquaternionic Form*,
-
-$$
-e_t\mapsto I_2,\qquad \vec e_x\mapsto -i\sigma_1,\qquad \vec e_y\mapsto -i\sigma_2,\qquad \vec e_z\mapsto -i\sigma_3,
-$$
-
-where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices; the image of $i\vec e_k$ is $\sigma_k$. The three Pauli matrices are also written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.
+The conventions are those of the companion articles: the algebra, the units, the sectors and the trace are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. On the tensor product the trace factorises, $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ with $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$. The isomorphism $\mathsf{M}_2$ is the one fixed by *Quantum Physics in Biquaternionic Form* (*Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation*), whose image of $i\vec e_k$ is $\sigma_k$; the three Pauli matrices are written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.
 
 ## The Exercise
 

@@ -329,7 +329,7 @@ $$
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 
-with $g=\mathrm{diag}(+1,-1,-1,-1)$, and the chirality cell is their product,
+with $g=\mathrm{diag}(-1,+1,+1,+1)$, and the chirality cell is their product,
 
 $$
 \gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3.

@@ -62,7 +62,7 @@ $$
 \Box=-\sum_{\mu,\nu}g_{\mu\nu}\frac{\partial^2}{\partial x_\mu\partial x_\nu}
 =-\frac{1}{c^2}\frac{\partial^2}{\partial t'^2}+\Delta ,
 \qquad
-g=\mathrm{diag}(+1,-1,-1,-1).
+g=\mathrm{diag}(-1,+1,+1,+1).
 $$
 The $Q$ form is the Euclidean transcription, obtained by $\partial/\partial Q_t=-ic^{-1}\partial/\partial t'$.
 
@@ -180,15 +180,15 @@ $$
 B^2=-\mu^2I_n .
 $$
 
-The first is the Clifford relation on the derivative part: the four cells $iR_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ carry the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$, with $2g_{00}=+2$ and $2g_{kk}=-2$. The second says the mass must anticommute with every generator. The third fixes the magnitude of the mass. The three are independent: the first is about the derivative part, the second about the mixing of the derivative and the mass, the third about the mass alone.
+The first is the Clifford relation on the derivative part: the four cells $iR_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ carry the Clifford relations of $g=\operatorname{diag}(-1,+1,+1,+1)$, with $2g_{00}=+2$ and $2g_{kk}=-2$. The second says the mass must anticommute with every generator. The third fixes the magnitude of the mass. The three are independent: the first is about the derivative part, the second about the mixing of the derivative and the mass, the third about the mass alone.
 
-The signs are those of $\Box$ in the $x$ coordinates, where the metric is $g=\mathrm{diag}(+1,-1,-1,-1)$. The $Q$ coordinates carry the Euclidean transcription, in which all four generators square to $+1$ and the spatial ones acquire a factor $i$; that frame is not used here.
+The signs are those of $\Box$ in the $x$ coordinates, where the metric is $g=\mathrm{diag}(-1,+1,+1,+1)$. The $Q$ coordinates carry the Euclidean transcription, in which all four generators square to $+1$ and the spatial ones acquire a factor $i$; that frame is not used here.
 
 ## Four Generators
 
 ### The Clifford algebra
 
-Four generators with $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}I_4$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. The algebra is simple, so every nonzero representation is faithful, and its smallest module is $\mathbb{C}^4$. A representation on $\mathbb{C}^2$ would be a two-dimensional module for $M_4(\mathbb{C})$, which does not exist. Hence
+Four generators with $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=-2g_{\mu\nu}[\mathbb{M}_-]I_4$ generate the complex Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$. The algebra is simple, so every nonzero representation is faithful, and its smallest module is $\mathbb{C}^4$. A representation on $\mathbb{C}^2$ would be a two-dimensional module for $M_4(\mathbb{C})$, which does not exist. Hence
 
 $$
 n\ge 4,

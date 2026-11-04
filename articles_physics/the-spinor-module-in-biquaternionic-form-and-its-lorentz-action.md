@@ -498,7 +498,7 @@ $$
 \varsigma_i\varsigma_j=\eta_{ij}I_2-i\sum_{k,l}\varepsilon_{ijk}\,\eta_{kl}\,\varsigma_l ,
 $$
 
-with $\eta=\mathrm{diag}(1,-1,-1)$ — the analogue for $SU(1,1)$ of the quaternion relations for $SU(2)$; the signs of the contraction are carried by $\eta_{kl}$, which is why the sum is written out. The compact form $\varsigma=\sigma_3(1,\sigma_1,\sigma_2)$ in the display is the useful one, because it gives
+with the source's $\eta=\mathrm{diag}(1,-1,-1)$ — the analogue for $SU(1,1)$ of the quaternion relations for $SU(2)$; the signs of the contraction are carried by $\eta_{kl}$, which is why the sum is written out. The compact form $\varsigma=\sigma_3(1,\sigma_1,\sigma_2)$ in the display is the useful one, because it gives
 
 $$
 \sigma_3\varsigma_i=(1,\sigma_1,\sigma_2)_i ,
@@ -690,7 +690,7 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-Each is a one-cell product, and each satisfies the Clifford relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2\eta_{\mu\nu}I_4$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Two Chiral Halves* — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\chi$ of the complexification, which is not a gamma matrix; the body of the article uses $\chi$ and never needs a gamma symbol.
+Each is a one-cell product, and each satisfies the Clifford relations appropriate to the signature: $\gamma_0^2=I_4$, $\gamma_k^2=-I_4$ for $k=1,2,3$, and $\gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}[\mathbb{M}_-]I_4$. The fifth is the product of the other four, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$, and it satisfies $\gamma_5^2=I_4$. As an operator, $\gamma_5$ **is** the chirality cell $\Gamma=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ of §*The Two Chiral Halves* — one operator, written once as a cell and once as a matrix of the frame. The algebra element behind the cell is the central grading $\chi$ of the complexification, which is not a gamma matrix; the body of the article uses $\chi$ and never needs a gamma symbol.
 
 A single cell $L_aR_b$ is a pure tensor of $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of tensor rank one; as an operator on $\Delta$ its rank is four whenever $a$ and $b$ are invertible, so the two ranks must not be confused. The pure cells form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four of them. Two cells multiply by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right factors in reverse order, and the products of the four frame cells $\gamma_0,\dots,\gamma_3$ give the usual sixteen-element Clifford basis. Every sign among them comes from $i^2=-1$ together with $\vec e_k^2=-e_t$: for instance
 

@@ -310,7 +310,7 @@ $$
 \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
 $$
 
-with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $g=\mathrm{diag}(1,-1,-1,-1)$. All four carry the same factor $i$, so the Lorentzian signs come from $i^2=-1$ together with $\vec e_k^2=-e_t$ alone. In the $\mathbb{B}$ frame, whose Clifford metric is $\delta_{\mu\nu}$, the four are
+with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ and $g=\mathrm{diag}(-1,+1,+1,+1)$. All four carry the same factor $i$, so the Lorentzian signs come from $i^2=-1$ together with $\vec e_k^2=-e_t$ alone. In the $\mathbb{B}$ frame, whose Clifford metric is $\delta_{\mu\nu}$, the four are
 
 $$
 \gamma_t[\mathbb{B}]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad

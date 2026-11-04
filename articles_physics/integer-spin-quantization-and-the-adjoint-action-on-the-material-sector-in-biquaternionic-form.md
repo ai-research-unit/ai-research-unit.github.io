@@ -148,7 +148,7 @@ the shift operations of the spin-one multiplet, with the matrix elements $\sqrt{
 The identification with the massive vector field of the Proca case is now immediate. The on-shell polarization vectors of a massive spin-one field are three vectors orthogonal to the momentum; in the rest frame they are the three spatial directions, and the adjoint action's triplet is exactly that three-dimensional space with its rotation action. The spin basis $\{\varepsilon_+,\varepsilon_-,\varepsilon_0\}$ is the basis in which the helicity about the third axis is diagonal; the transverse polarizations are $\varepsilon_\pm$ and the longitudinal one is $\varepsilon_0$, or a boost of it. The completeness relation of the massive vector field,
 
 $$
-\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu} = \eta_{\mu\nu}+\frac{p_\mu p_\nu}{\mu^2},
+\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu} = g_{\mu\nu}[\mathbb{M}_-]+\frac{p_\mu p_\nu}{\mu^2},
 $$
 
 is the statement that the triplet spans the spatial polarisation space, and it respects the adjoint action because both sides are rotation-invariant objects in their respective indices.

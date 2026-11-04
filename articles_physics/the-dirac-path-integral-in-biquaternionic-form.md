@@ -41,7 +41,7 @@ $$
 The frame is a choice: the right factor $\vec e_y$ is common to the three spatial cells, the left factor is the direction of the coordinate, and the time cell has $\vec e_x$ on its right. The four cells carry the Clifford relations of the level-3 (Clifford) metric,
 
 $$
-\{G_\mu,G_\nu\} = 2g_{\mu\nu}I_4, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
+\{G_\mu,G_\nu\} = 2g_{\mu\nu}I_4, \qquad g = \mathrm{diag}(-1,+1,+1,+1),
 $$
 
 which is the sense in which the component form is the standard Dirac equation. The propagator below is computed on the module and is therefore matrix-valued. The worldline parameter is $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde R = ict'\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-$.
@@ -139,7 +139,7 @@ $$
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\dot x_\mu\dot x_\mu - \mu^2\right),
 $$
 
-up to the standard normalisation of the measure and the einbein gauge choice. The tangent is contracted with the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ — the $ict'$-coordinate metric of the conventions article, read here on the real-time components $(x_0, x\,\vec e_x + y\,\vec e_y + z\,\vec e_z)$ — so that for a straight worldline
+up to the standard normalisation of the measure and the einbein gauge choice. The tangent is contracted with the level-2 form $g_{\mu\nu}[\mathbb{M}_-]$ — the $ict'$-coordinate metric of the conventions article, read here on the real-time components $(x_0, x\,\vec e_x + y\,\vec e_y + z\,\vec e_z)$ — so that for a straight worldline
 
 $$
 \dot x_\mu\dot x_\mu = -\frac{(x-x_2)^2}{T^2},
@@ -188,16 +188,16 @@ S[x,\psi] = \int_0^T d\tau\left[
 \right],
 $$
 
-with both quadratic terms contracted with the same $\eta$: the tangent and the odd pair are the two halves of one supersymmetric pair, so they share the metric, and that is why the same $\eta$ appears twice. Each half contributes its own kinetic term, the bosonic $\frac{1}{4}\dot x_\mu\dot x_\mu$ and the fermionic $\frac{i}{2}\psi_\mu\dot\psi_\mu$. Quantization of the odd variables gives the Clifford algebra
+with both quadratic terms contracted with the same $g_{\mu\nu}[\mathbb{M}_-]$: the tangent and the odd pair are the two halves of one supersymmetric pair, so they share the metric, and that is why the same metric appears twice. Each half contributes its own kinetic term, the bosonic $\frac{1}{4}\dot x_\mu\dot x_\mu$ and the fermionic $\frac{i}{2}\psi_\mu\dot\psi_\mu$. Quantization of the odd variables gives the Clifford algebra
 
 $$
-\{\psi_\mu,\psi_\nu\} = \frac{1}{2}\eta_{\mu\nu}\,I_4 ,
+\{\psi_\mu,\psi_\nu\} = \frac{1}{2}g_{\mu\nu}[\mathbb{M}_-]\,I_4 ,
 $$
 
-in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The metric here is $\eta$ and not $g$, and the difference between the two is one factor of the central $i$. Write $C_0=R_{\vec e_x}^{\mathrm{axf}}$ and $C_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for the bare multiplications, the cells without their factor of $i$: they square to $(-1,+1,+1,+1)$ and satisfy $\{C_\mu,C_\nu\}=2\eta_{\mu\nu}I_4$, while the cells of the introduction are $G_\mu=iC_\mu$ and satisfy
+in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The metric here is $\eta$ and not $g$, and the difference between the two is one factor of the central $i$. Write $C_0=R_{\vec e_x}^{\mathrm{axf}}$ and $C_k=L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for the bare multiplications, the cells without their factor of $i$: they square to $(-1,+1,+1,+1)$ and satisfy $\{C_\mu,C_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]I_4$, while the cells of the introduction are $G_\mu=iC_\mu$ and satisfy
 
 $$
-\{G_\mu,G_\nu\} = i^2\{C_\mu,C_\nu\} = -2\eta_{\mu\nu}I_4 = 2g_{\mu\nu}I_4 .
+\{G_\mu,G_\nu\} = i^2\{C_\mu,C_\nu\} = -2g_{\mu\nu}[\mathbb{M}_-]I_4 = 2g_{\mu\nu}I_4 .
 $$
 
 The central $i$ is thus exactly the change of metric that separates the worldline algebra from the Dirac operator, and the odd variable is that cell up to it and up to the normalisation of the kinetic term,
@@ -205,7 +205,7 @@ The central $i$ is thus exactly the change of metric that separates the worldlin
 $$
 \psi_\mu = \tfrac12 iG_\mu = -\tfrac12 C_\mu ,
 \qquad
-\{\psi_\mu,\psi_\nu\} = \tfrac14\{iG_\mu,iG_\nu\} = \tfrac12\eta_{\mu\nu}I_4 ,
+\{\psi_\mu,\psi_\nu\} = \tfrac14\{iG_\mu,iG_\nu\} = \tfrac12g_{\mu\nu}[\mathbb{M}_-]I_4 ,
 $$
 
 the factor $\tfrac12$ being the one that the coefficient $\tfrac{i}{2}$ of $\psi_\mu\dot\psi_\mu$ fixes. Multiplying by $i$ does not change the parity, so the even products of the odd variables span the same even subalgebra $\mathrm{Cl}_{1,3}^{+} = \mathbb{B}$, and nothing in the identification depends on which of $\eta$ and $g$ carries the minus sign.
@@ -469,7 +469,7 @@ so that the four values are $4I_4$, $-2\gamma_\alpha$, $0$ and $+2\gamma_\alpha\
 
 ## Summary
 
-The Dirac path integral is the sum over worldlines that computes the propagator $S_F$, the matrix-valued Green's function satisfying $\left(i\slashed\partial - \mu\right)S_F = i\delta^{(4)}$ with $\mu = mc/\hbar$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{M}_-$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $S_F = \left(i\slashed\partial + \mu\right)\Delta_F$, the identity following from $\left(i\slashed\partial\right)^2 = \Box$. In the **spinning-worldline** way, an odd Grassmann variable $\psi_\mu$ is added at each point with kinetic term $\frac{i}{2}\psi_\mu\dot\psi_\mu$; quantisation gives $\{\psi_\mu,\psi_\nu\} = \frac12\eta_{\mu\nu}I_4$, whose products generate the Clifford algebra; the path integral over $\psi$ is the Clifford-valued spin factor $\Phi[x]$; and the full worldline integral reproduces the Dirac propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
+The Dirac path integral is the sum over worldlines that computes the propagator $S_F$, the matrix-valued Green's function satisfying $\left(i\slashed\partial - \mu\right)S_F = i\delta^{(4)}$ with $\mu = mc/\hbar$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{M}_-$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $S_F = \left(i\slashed\partial + \mu\right)\Delta_F$, the identity following from $\left(i\slashed\partial\right)^2 = \Box$. In the **spinning-worldline** way, an odd Grassmann variable $\psi_\mu$ is added at each point with kinetic term $\frac{i}{2}\psi_\mu\dot\psi_\mu$; quantisation gives $\{\psi_\mu,\psi_\nu\} = \frac12g_{\mu\nu}[\mathbb{M}_-]I_4$, whose products generate the Clifford algebra; the path integral over $\psi$ is the Clifford-valued spin factor $\Phi[x]$; and the full worldline integral reproduces the Dirac propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
 In the biquaternion framework, the odd variables generate the Clifford algebra and the biquaternion algebra is their even part; the spin factor is the path-ordered Clifford product, even part in the even subalgebra, odd part a dressing of the boundary spinors; and multiplying the first-order operator by its conjugate returns the scalar Klein–Gordon operator — in momentum space
 
@@ -489,10 +489,10 @@ the identity of the notation table below; the scalar path integral of the compan
 | $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $G_0 = iR_{\vec e_x}^{\mathrm{axf}}$, $G_k = iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Generator cells of the canonical frame, $G_\mu=iC_\mu$ |
-| $C_0 = R_{\vec e_x}^{\mathrm{axf}}$, $C_k = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Bare cells, $\{C_\mu,C_\nu\}=2\eta_{\mu\nu}I_4$ |
+| $C_0 = R_{\vec e_x}^{\mathrm{axf}}$, $C_k = L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Bare cells, $\{C_\mu,C_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]I_4$ |
 | $G_5 = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Pseudoscalar (chirality) cell |
-| $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the cells, $\{G_\mu,G_\nu\} = 2g_{\mu\nu}I_4$ |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict'$-coordinate metric; $g = -\eta$ |
+| $g = \mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric of the cells, $\{G_\mu,G_\nu\} = 2g_{\mu\nu}I_4$ |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$-coordinate metric |
 | $\slashed p = iR_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$ | Momentum cell, $(\slashed p)^2 = p^2I_4$ |
 | $i\slashed\partial$ | First-order operator, $(i\slashed\partial)^2 = \Box$; symbol $\slashed p$ |
 | $\Delta = \sum_k \partial^2/\partial Q_k^2$ | Quaternionic Laplacian |
@@ -504,10 +504,10 @@ the identity of the notation table below; the scalar path integral of the compan
 | $(i\slashed\partial-\mu)S_F = i\delta^{(4)}$, $(\Box-\mu^2)\Delta_F = i\delta^{(4)}$ | Propagator equations |
 | $S_F = (i\slashed\partial+\mu)\Delta_F$ | Dirac propagator as the scalar kernel acted on |
 | $T$ | Proper time (Schwinger parameter) |
-| $x(\tau)$, $\dot x_\mu$ | Worldline and its tangent, contracted with $\eta$ |
+| $x(\tau)$, $\dot x_\mu$ | Worldline and its tangent, contracted with $g_{\mu\nu}[\mathbb{M}_-]$ |
 | $S_0[x] = \int_0^T d\tau\left(\tfrac14\dot x_\mu\dot x_\mu-\mu^2\right)$ | Scalar worldline action |
 | $\psi_\mu(\tau)$ | Grassmann (spin) worldline variable |
-| $\psi_\mu = \tfrac12 iG_\mu = -\tfrac12 C_\mu$, $\{\psi_\mu,\psi_\nu\} = \tfrac12\eta_{\mu\nu}I_4$ | Odd (spin) variable and the Clifford algebra it generates |
+| $\psi_\mu = \tfrac12 iG_\mu = -\tfrac12 C_\mu$, $\{\psi_\mu,\psi_\nu\} = \tfrac12g_{\mu\nu}[\mathbb{M}_-]I_4$ | Odd (spin) variable and the Clifford algebra it generates |
 | $\Phi[x] = \int\mathcal{D}\psi\exp\left(-\tfrac12\int_0^T\psi_\mu\dot\psi_\mu\,d\tau\right)$ | Spin factor (Clifford-valued path-ordered weight) |
 | $\sigma_{\mu\nu} = \tfrac{i}{2}[G_\mu,G_\nu] = iG_\mu G_\nu$ | Bivector of the spin–field coupling |
 | $K_{RR}, K_{RL}, K_{LR}, K_{LL}$ | Checkerboard propagator amplitudes |

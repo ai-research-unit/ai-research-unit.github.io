@@ -177,7 +177,7 @@ $$
 L_uR_v\,L_wR_x=L_{uw}R_{xv},
 $$
 
-because $R_vR_x=R_{xv}$. The body's displays are in the $\mathbb{B}$ frame, whose sums use the Kronecker delta; the gammas are the $\mathbb{M}_-$ frame cells, whose metric is $\eta=\operatorname{diag}(+1,-1,-1,-1)$. The change of frame is $\gamma_\mu[\mathbb{M}_-]=\sum_\nu\Lambda_{\mu\nu}\gamma_\nu[\mathbb{B}]$ with $\Lambda=\operatorname{diag}(1,-i,-i,-i)$, so the three spatial cells carry an extra $-i$. The gamma cells are, split over three lines,
+because $R_vR_x=R_{xv}$. The body's displays are in the $\mathbb{B}$ frame, whose sums use the Kronecker delta; the gammas are the $\mathbb{M}_-$ frame cells, whose metric is $g_{\mu\nu}[\mathbb{M}_-]$. The change of frame is $\gamma_\mu[\mathbb{M}_-]=\sum_\nu\Lambda_{\mu\nu}\gamma_\nu[\mathbb{B}]$ with $\Lambda=\operatorname{diag}(1,-i,-i,-i)$, so the three spatial cells carry an extra $-i$. The gamma cells are, split over three lines,
 
 $$
 \begin{aligned}
@@ -220,7 +220,7 @@ $$
 $$
 
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\eta_{\mu\nu}I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}[\mathbb{M}_-]I_4,\qquad
 \{\gamma_5,\gamma_\mu\}=0,
 $$
 

@@ -284,7 +284,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $E(\lambda) = E_2/\lambda + \lambda E_4$, $\lambda_* = \sqrt{E_2/E_4}$, $E = 2\sqrt{E_2E_4}$ | Derrick scaling and its minimum |
 | $F(0) = \pi$, $F(\infty) = 0$ | Boundary conditions of the unit-charge skyrmion |
 | Wess–Zumino–Witten term | Topological term fixing the soliton's statistics (imported) |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric for index contractions |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
 
 ## Further Reading

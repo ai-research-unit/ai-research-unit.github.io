@@ -10,7 +10,7 @@ Two invariants come out of the construction and they are not the same object. Th
 
 This article records the construction, the two invariant forms, the order-three map $J$, and the order-four braid maps that Liu calls "Dirac's game". It is the group-theoretic companion of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*, which carries the dictionary and the Lagrangian; this article carries the symmetry structure.
 
-The conventions are those of the companion articles: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$ with $i^2 = -1$, and four-vector indices $\mu = 0,1,2,3$ carry the generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$. The imaginary unit is central: it commutes with the units, so two factors of $i$ in a product are one factor $-1$, and a display never leaves a double $i$ standing. No index is raised; a sum such as $B_\mu g_{\mu\nu}B_\nu$ carries its signs in the metric, and a sum such as $\sum_\mu\epsilon_\mu B_\mu B_\mu$ carries them in the sign vector $\epsilon = (1,-1,-1,-1)$; the two are the same number.
+The conventions are those of the companion articles: the algebra, the units, the generator metric and the sign weight are those of *Algebra and Element Conventions*, *Frame Conventions* and *Operator and Calculus Conventions*, and none is restated here. Four-vector indices $\mu=0,1,2,3$ carry the generator metric $g$, and no index is raised: a sum such as $B_\mu g_{\mu\nu}B_\nu$ carries its signs in the metric, and one such as $\sum_\mu\varepsilon_\mu B_\mu B_\mu$ carries them in the sign weight $\varepsilon=(1,-1,-1,-1)$; the two are the same number.
 
 ## The Three Spaces
 

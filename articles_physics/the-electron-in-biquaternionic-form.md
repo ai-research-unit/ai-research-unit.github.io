@@ -354,7 +354,7 @@ $\gamma_5$ is the cell of the chirality operator $\Gamma:\psi\mapsto -i\,e_t\,\p
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The generator cells $G_\mu$ of the charge section are these gammas, $G_\mu=\gamma_\mu$, and the charge-conjugation cell is $C = -iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} = i\gamma_2\gamma_0$, the antisymmetric matrix with $C^2=-I_4$ that reverses all four gammas under transposition.
 
-**The identities the bodies cite.** Here $\mathrm{tr}$ is the $4\times4$ matrix trace, $I_4$ the identity of $M_4(\mathbb{C})$, $g=\mathrm{diag}(1,-1,-1,-1)$ and $\epsilon_{0123}=+1$.
+**The identities the bodies cite.** Here $\mathrm{tr}$ is the $4\times4$ matrix trace, $I_4$ the identity of $M_4(\mathbb{C})$, $g=\mathrm{diag}(-1,+1,+1,+1)$ and $\epsilon_{0123}=+1$.
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
@@ -426,7 +426,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\tilde{J} = ic\,j_0 e_t + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
 | $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$; $\vec u_x$ the radial unit vector |
 | $\tilde P/\hbar = i(\omega/c)\,e_t + \vec k$ | Four-wavevector; $\langle\tilde P/\hbar\rangle_{\natural} = -m^2c^2/\hbar^2$ |
-| $\varepsilon=(1,-1,-1,-1)$, $g=\mathrm{diag}(1,-1,-1,-1)$ | Metric weights of the $\mathbb{M}_-$ frame; metric in the gamma section |
+| $\varepsilon=(1,-1,-1,-1)$, $g=\mathrm{diag}(-1,+1,+1,+1)$ | Metric weights of the $\mathbb{M}_-$ frame; metric in the gamma section |
 | $m_e$, $e$, $\hbar$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
 | $\tilde\Psi_L$, $\tilde\Psi_R$ | Left- and right-handed Weyl halves, in $S$ and $S^{\mathrm{c}}$ |
 | $\mathcal{N}F = (i\partial/\partial t'+D_3)F - mi\,\overline{F}\,\vec e_z$, $D_3=\sum_k\vec e_k\partial/\partial Q_k$ | Two-sided Dirac equation of the dictionary form |

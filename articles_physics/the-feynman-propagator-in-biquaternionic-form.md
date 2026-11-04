@@ -93,7 +93,7 @@ The general statement behind the signs is the frame-cell anticommutator
 
 $$
 \{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}\mathbf{1},
-\qquad g=\mathrm{diag}(+1,-1,-1,-1),\qquad \mathbf{1}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\qquad g=\mathrm{diag}(-1,+1,+1,+1),\qquad \mathbf{1}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
 with $\mathbf{1}$ the identity cell. The body is written in these cells; section *The Legacy Gamma Formulation* gives their standard names.
@@ -393,7 +393,7 @@ $$
 \slashed p=\gamma_0p_0-\sum_k\gamma_kp_k ,
 $$
 
-the spatial signs being those of $g=\mathrm{diag}(+1,-1,-1,-1)$. The frame satisfies the Clifford relation
+the spatial signs being those of $g=\mathrm{diag}(-1,+1,+1,+1)$. The frame satisfies the Clifford relation
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathbf{1},
@@ -440,7 +440,7 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $L_a,R_b$ | Left and right multiplication, $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_aR_bL_cR_d=L_{ac}R_{db}$ |
 | $\mathbf{1}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Identity cell |
 | $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Frame cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$ |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the cells, $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}\mathbf{1}$ |
+| $g=\mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric of the cells, $\{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\nu(\nu)}}^{\mathrm{axf}}\}=2g_{\mu\nu}\mathbf{1}$ |
 | $\slashed p=iR_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$ | Momentum cell, $(\slashed p)^2=p^2\mathbf{1}$ |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient; $Q_t$ is the time coordinate, $ict'$ on $\mathbb{M}_-$ |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |

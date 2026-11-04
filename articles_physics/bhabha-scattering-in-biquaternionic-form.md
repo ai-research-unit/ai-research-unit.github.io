@@ -71,7 +71,7 @@ $$
 \{\Gamma_\mu,\Gamma_\nu\}=2g_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
-with $g=\mathrm{diag}(+1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The cells are two-sided: $\Gamma_t$ has the central left multiplier $e_t$ and is therefore a pure right multiplication, while the three spatial cells $\Gamma_k$ have a non-central left multiplier and use both sides. The chirality cell is also a pure right multiplication and anticommutes with the four frame cells.
+with $g=\mathrm{diag}(-1,+1,+1,+1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The cells are two-sided: $\Gamma_t$ has the central left multiplier $e_t$ and is therefore a pure right multiplication, while the three spatial cells $\Gamma_k$ have a non-central left multiplier and use both sides. The chirality cell is also a pure right multiplication and anticommutes with the four frame cells.
 
 The **momentum cell** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is
 
@@ -347,7 +347,7 @@ $$
 
 These are the body's own cells — $\Gamma_t=\gamma_0$, $\Gamma_k=\gamma_k$ for $k=1,2,3$, and $\chi=\gamma_5$ — so nothing in the body needs the gammas: the reading is a bookkeeping device for the traces, and $\mathrm{tr}$ is the $4\times4$ matrix trace of this reading, the same number as the body's module trace $\mathrm{Tr}$.
 
-**The trace identities.** In the $\gamma$ reading, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and $\epsilon_{0123}=+1$,
+**The trace identities.** In the $\gamma$ reading, with $g=\mathrm{diag}(-1,+1,+1,+1)$ and $\epsilon_{0123}=+1$,
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
@@ -416,7 +416,7 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | $\mathrm{Tr}$ | Trace on the four-dimensional complex module of the cells |
 | $\tilde J\in\mathbb M_-$ | Framework's material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the frame cells |
+| $g=\mathrm{diag}(-1,+1,+1,+1)$ | Clifford metric of the frame cells |
 | $i^2=-1$ | Central imaginary of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 
 ## Further Reading

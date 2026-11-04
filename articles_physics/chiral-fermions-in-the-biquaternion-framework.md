@@ -67,7 +67,7 @@ $$
 iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}} + iL_{e_\nu}^{\mathrm{axf}}R_{\vec e_{\tau(\nu)}}^{\mathrm{axf}} iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} = 2g_{\mu\nu}I_4,
 $$
 
-with $g=\mathrm{diag}(+,-,-,-)$. The chirality cell anticommutes with each generator,
+with $g=\mathrm{diag}(-,+,+,+)$. The chirality cell anticommutes with each generator,
 
 $$
 \chi\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}+iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\,\chi=0,

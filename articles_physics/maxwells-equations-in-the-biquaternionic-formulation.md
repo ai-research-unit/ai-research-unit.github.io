@@ -878,7 +878,7 @@ $$
 \gamma_0^2=+I_4,\qquad \gamma_1^2=\gamma_2^2=\gamma_3^2=-I_4,\qquad \gamma_5^2=+I_4,
 $$
 
-with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(+1,-1,-1,-1)$, and $\{\gamma_5,\gamma_\mu\}=0$. The four frame cells multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
+with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $g=\mathrm{diag}(-1,+1,+1,+1)$, and $\{\gamma_5,\gamma_\mu\}=0$. The four frame cells multiply to $-i\gamma_5$, that is, $\gamma_5$ is $i$ times their product,
 
 $$
 \gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5,

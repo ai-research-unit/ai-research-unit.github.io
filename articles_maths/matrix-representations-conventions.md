@@ -707,7 +707,7 @@ $$
 $$
 -iR_{\vec e_z}^{\mathrm{pau}}=i\,(iR_{\vec e_x}^{\mathrm{pau}})(iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}})(iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}),
 $$
-with $g=\operatorname{diag}(1,-1,-1,-1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display.
+with $g=\operatorname{diag}(-1,+1,+1,+1)$. No index is raised or lowered: the metric is the sign vector inside the product, not a tensor in the display.
 
 **The sixteen products are the sixteen cells.** The five frame cells are five cells up to a factor $i$, and the sixteen products of the five are the sixteen cells:
 

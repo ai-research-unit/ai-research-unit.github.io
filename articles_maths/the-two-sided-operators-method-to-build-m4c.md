@@ -507,7 +507,7 @@ $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-**The Clifford relations.** With the metric $g=\operatorname{diag}(1,-1,-1,-1)$,
+**The Clifford relations.** With the metric $g=\operatorname{diag}(-1,+1,+1,+1)$,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}\mathrm{I}_4,
 \qquad

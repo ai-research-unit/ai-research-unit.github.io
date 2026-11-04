@@ -20,7 +20,7 @@ $$
 \Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2 .
 $$
 
-The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quantity that multiplies the field in the c-explicit equation; for the analytic parts the article uses natural units $\hbar=c=1$, as the companion article *The Feynman Propagator in Biquaternionic Form* does, and states the restoration of $c$ where a kernel is quoted. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and the $ict'$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$. No Clifford metric is used anywhere in this article.
+The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quantity that multiplies the field in the c-explicit equation; for the analytic parts the article uses natural units $\hbar=c=1$, as the companion article *The Feynman Propagator in Biquaternionic Form* does, and states the restoration of $c$ where a kernel is quoted. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and the $ict'$ metric $g_{\mu\nu}[\mathbb{M}_-]$. No Clifford metric is used anywhere in this article.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the equation, its mass term, and the central scalar d'Alembertian.
 - Companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
@@ -452,7 +452,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\langle\tilde P\rangle_{\natural}=-\mu^2$ | Mass shell |
 | $J_1,K_1$ | Bessel and modified Bessel functions |
 | $\theta(t'),\mathrm{sgn}(t')$ | Heaviside step and sign functions |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$-coordinate metric (level 2) |
+| $g_{\mu\nu}[\mathbb{M}_-]$ | $ict'$-coordinate metric (level 2) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading
