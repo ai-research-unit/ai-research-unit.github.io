@@ -452,7 +452,7 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
@@ -462,15 +462,15 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-**The body's cells under their gamma names.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality cell of the body is the gamma-five cell itself. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu[\mathbb{M}_-]$, so the vector current of the body is $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\gamma_\mu[\mathbb{M}_-]\psi$, and the Dirac adjoint is $\psi^{\dagger}\gamma_0[\mathbb{M}_-]$, since $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$. The axial current's cell is a product of two frame cells, and the reduction $i\cdot(-i)=+1$ of the body is exactly that product:
+**The body's cells under their gamma names.** Because $L_{e_t}^{\mathrm{pau}}$ is the identity, $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$: the chirality cell of the body is the gamma-five cell itself. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu[\mathbb{M}_-]$, so the vector current of the body is $\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\gamma_\mu[\mathbb{M}_-]\psi$, and the Dirac adjoint is $\psi^{\dagger}\gamma_0[\mathbb{M}_-]$, since $\gamma_0[\mathbb{M}_-]=iR_{\vec e_x}^{\mathrm{pau}}$. The axial current's cell is a product of two frame cells, and the reduction $i\cdot(-i)=+1$ of the body is exactly that product:
 
 $$
 \bigl(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\bigr)\bigl(-iR_{\vec e_z}^{\mathrm{pau}}\bigr)
 = L_{e_\mu}^{\mathrm{pau}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{pau}}
-= \gamma_\mu[\mathbb{M}_-]\gamma_5[\mathbb{M}_-] ,
+= \gamma_\mu[\mathbb{M}_-]\gamma_5 ,
 $$
 
 In the axis-free display:
@@ -478,10 +478,10 @@ In the axis-free display:
 $$
 \bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\bigr)\bigl(-iR_{\vec e_z}^{\mathrm{axf}}\bigr)
 = L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z\vec e_{\tau(\mu)}}^{\mathrm{axf}}
-= \gamma_\mu[\mathbb{M}_-]\gamma_5[\mathbb{M}_-] ,
+= \gamma_\mu[\mathbb{M}_-]\gamma_5 ,
 $$
 
-so the two imaginary units the body cancels are the two that the gamma names carry, and $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\gamma_\mu[\mathbb{M}_-]\gamma_5[\mathbb{M}_-]\psi$. The single collapse behind it, and behind every simplification of the frame, is
+so the two imaginary units the body cancels are the two that the gamma names carry, and $j_{5\mu}=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\gamma_\mu[\mathbb{M}_-]\gamma_5\psi$. The single collapse behind it, and behind every simplification of the frame, is
 
 $$
 i\,\gamma_\mu[\mathbb{M}_-] = -L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}} ,
@@ -493,9 +493,9 @@ $$
 i\,\gamma_\mu[\mathbb{M}_-] = -L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}} ,
 $$
 
-by $i^2=-1$: multiplying a generator cell by $i$ trades it for a plain one, which is why a product of four generator cells carries $i^4=+1$ and no residual unit. Under the same identity the mass term of the two-sided equation, $-mi\,\bar F\vec e_z$ in the body, is $m\,\bar F\gamma_5[\mathbb{M}_-]$ in the frame: right multiplication by $\vec e_z$ is the cell $i\gamma_5[\mathbb{M}_-]$, so $(-mi)(i\gamma_5[\mathbb{M}_-])\bar F=-m\,i^2\gamma_5[\mathbb{M}_-]\bar F=+m\,\gamma_5[\mathbb{M}_-]\bar F$.
+by $i^2=-1$: multiplying a generator cell by $i$ trades it for a plain one, which is why a product of four generator cells carries $i^4=+1$ and no residual unit. Under the same identity the mass term of the two-sided equation, $-mi\,\bar F\vec e_z$ in the body, is $m\,\bar F\gamma_5$ in the frame: right multiplication by $\vec e_z$ is the cell $i\gamma_5$, so $(-mi)(i\gamma_5)\bar F=-m\,i^2\gamma_5\bar F=+m\,\gamma_5\bar F$.
 
-**The central grading.** The cell $\gamma_5[\mathbb{M}_-]$ is not the grading itself. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi_{\mathrm{ad}}$ as a central sign, while the mass of the two-sided equation is a right multiplication by the chirality cell, and the cell is the representative of the sign on the module.
+**The central grading.** The cell $\gamma_5$ is not the grading itself. The central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$ and so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module. That is how the two Dirac equations meet: the one-sided pair carries $\chi_{\mathrm{ad}}$ as a central sign, while the mass of the two-sided equation is a right multiplication by the chirality cell, and the cell is the representative of the sign on the module.
 
 **The identities of the frame.** With $\varepsilon=(1,-1,-1,-1)$,
 
@@ -504,12 +504,12 @@ $$
 \qquad
 (\gamma_k[\mathbb{M}_-])^2=-I_4,
 \qquad
-\gamma_5[\mathbb{M}_-]^2=I_4,
+\gamma_5^2=I_4,
 \qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0 ,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0 ,
 $$
 
-the anticommutation with $\gamma_5[\mathbb{M}_-]$ being what makes the chirality cell the axial insertion. The first relation is the quaternion multiplication table in the frame: a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, and the central $i$ of each generator flips the sign, so the timelike cell squares to $+I_4$ and the three spatial ones to $-I_4$. The frame's metric is $g=-\eta$, and the reason is again $i^2$: each $\gamma_\mu[\mathbb{M}_-]$ is $i$ times the plain cell $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$, whose own Clifford bracket is $2g_{\mu\nu}[\mathbb{M}_-]I_4$, so the two factors of $i$ inside the bracket turn $2\eta$ into $-2\eta$.
+the anticommutation with $\gamma_5$ being what makes the chirality cell the axial insertion. The first relation is the quaternion multiplication table in the frame: a cell that pairs $e_t$ with a spatial unit squares to the square of that unit, and the central $i$ of each generator flips the sign, so the timelike cell squares to $+I_4$ and the three spatial ones to $-I_4$. The frame's metric is $g=-\eta$, and the reason is again $i^2$: each $\gamma_\mu[\mathbb{M}_-]$ is $i$ times the plain cell $L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}$, whose own Clifford bracket is $2g_{\mu\nu}[\mathbb{M}_-]I_4$, so the two factors of $i$ inside the bracket turn $2\eta$ into $-2\eta$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the plain cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$, the two Clifford algebras that differ by that relative $i$.
 

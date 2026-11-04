@@ -316,7 +316,7 @@ With $L_a\psi=a\psi$ and $R_b\psi=\psi b$ the left and right multiplications, an
 $$
 \gamma_0[\mathbb{M}_-]=c_0=iR_{\vec e_x}^{\mathrm{pau}},\qquad
 \gamma_k[\mathbb{M}_-]=c_k=iL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5[\mathbb{M}_-]=c_5=-iR_{\vec e_z}^{\mathrm{pau}},
+\gamma_5=c_5=-iR_{\vec e_z}^{\mathrm{pau}},
 $$
 
 The same in the axis-free display:
@@ -324,14 +324,14 @@ The same in the axis-free display:
 $$
 \gamma_0[\mathbb{M}_-]=c_0=iR_{\vec e_x}^{\mathrm{axf}},\qquad
 \gamma_k[\mathbb{M}_-]=c_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5[\mathbb{M}_-]=c_5=-iR_{\vec e_z}^{\mathrm{axf}},
+\gamma_5=c_5=-iR_{\vec e_z}^{\mathrm{axf}},
 $$
 
 with $c_5$ the fifth cell, the one that anticommutes with the four and squares to $+I_4$. A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
 ### The Chirality
 
-$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality operator; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 ### The Real Forms
 
@@ -343,8 +343,8 @@ In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0\ (\mu=0,1,2,3),
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0\ (\mu=0,1,2,3),
 $$
 $$
 [\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
@@ -353,7 +353,7 @@ S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])

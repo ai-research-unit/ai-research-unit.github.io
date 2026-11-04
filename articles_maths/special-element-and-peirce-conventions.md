@@ -281,7 +281,7 @@ $$
 $$
 for a declared unit imaginary direction $\vec u$, and each part is an elementary spinor of complex dimension two.
 
-**The two parts carry the chirality letters.** The decomposition is a decomposition into the two values of the chirality: the cell $-iR_{\vec u}$ is $-1$ on $S_+(\vec u)$ and $+1$ on $S_-(\vec u)$, so $\tilde\Psi_L\in S_+(\vec u)$ is the $L$ part and $\tilde\Psi_R\in S_-(\vec u)$ the $R$ part, in the letters of §*The Slot Label, Which Is the Chirality* of *Operator Family Conventions*. At $\vec u=\vec e_z$ the cell is $\gamma_5[\mathbb{M}_-]$. Exchanging the two letters is the substitution $\vec u\mapsto-\vec u$, because $\tilde\Pi_+(\vec u)=\tilde\Pi_-(-\vec u)$; the pair is unordered and the definition orders it only to name the parts.
+**The two parts carry the chirality letters.** The decomposition is a decomposition into the two values of the chirality: the cell $-iR_{\vec u}$ is $-1$ on $S_+(\vec u)$ and $+1$ on $S_-(\vec u)$, so $\tilde\Psi_L\in S_+(\vec u)$ is the $L$ part and $\tilde\Psi_R\in S_-(\vec u)$ the $R$ part, in the letters of §*The Slot Label, Which Is the Chirality* of *Operator Family Conventions*. At $\vec u=\vec e_z$ the cell is $\mathsf{V}^{\mathrm{vol}}$. Exchanging the two letters is the substitution $\vec u\mapsto-\vec u$, because $\tilde\Pi_+(\vec u)=\tilde\Pi_-(-\vec u)$; the pair is unordered and the definition orders it only to name the parts.
 
 **What the three words do not name.** No Clifford relation, no gamma cell, no Pauli array, no volume element and no second rotation triple. The elementary spinor names the axis that selects its carrier, the Dirac spinor names one axis and nothing else, and a change of axis changes the decomposition and nothing beside it.
 

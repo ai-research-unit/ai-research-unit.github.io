@@ -261,31 +261,31 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The body of the article is written in the cells $L_aR_b$ of the Dirac module, $L_a\psi=a\psi$, $R_b\psi=\psi b$, so $L_aR_b\psi=a\psi b$. The gamma matrices are the same operators under their Clifford names. They are collected here so that a reader who comes from the matrix literature can translate, and they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu[\mathbb{M}_-]$.
 
-**The frame and the signs.** The names below are the $\mathbb{M}_-$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu[\mathbb{M}_-]$, and $\gamma_5[\mathbb{M}_-]$ is the chirality cell:
+**The frame and the signs.** The names below are the $\mathbb{M}_-$ frame, $\varepsilon=(1,-1,-1,-1)$, with the index low and $\epsilon_{0123}=+1$. The generator cell of the coordinate $x_\mu$ is $\gamma_\mu[\mathbb{M}_-]$, and $\gamma_5$ is the chirality cell:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\chi .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\chi .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=\chi .
 $$
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The cell of the charged-current vertex of this article is $\gamma_\mu[\mathbb{M}_-]$, and the projector is
 
 $$
-P_L=\tfrac12\big(I_4-\gamma_5[\mathbb{M}_-]\big),\qquad I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
+P_L=\tfrac12\big(I_4-\gamma_5\big),\qquad I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}},
 $$
 
 In the axis-free display:
 
 $$
-P_L=\tfrac12\big(I_4-\gamma_5[\mathbb{M}_-]\big),\qquad I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+P_L=\tfrac12\big(I_4-\gamma_5\big),\qquad I_4=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
-because $iR_{\vec e_z}^{\mathrm{pau}}=-\gamma_5[\mathbb{M}_-]$: this is the $P_L$ of the section on the flavour-factor operator, written in gamma names.
+because $iR_{\vec e_z}^{\mathrm{pau}}=-\gamma_5$: this is the $P_L$ of the section on the flavour-factor operator, written in gamma names.
 
 **The squares.** Every square is a cell square, with $L_aR_bL_cR_d=L_{ac}R_{db}$, and the only sources of a sign are $i^2=-1$ and the squares of the imaginary units, $\vec e_k^2=-e_t$ and $e_t^2=e_t$:
 
@@ -313,13 +313,13 @@ $$
 
 so a square spends $i^2=-1$ once, and it spends one quaternion square for $\gamma_0[\mathbb{M}_-]$ against two for $\gamma_k[\mathbb{M}_-]$: two minus signs give $(\gamma_0[\mathbb{M}_-])^2=+I_4$, three give $(\gamma_k[\mathbb{M}_-])^2=-I_4$.
 
-**The chirality cell and the central grading.** $\gamma_5[\mathbb{M}_-]$ is the chirality cell $\chi$ of the module, so the fifth gamma and the body's chirality cell are one object in two readings. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; its representative on the Dirac module is $\gamma_5[\mathbb{M}_-]$.
+**The chirality cell and the central grading.** $\gamma_5$ is the chirality cell $\chi$ of the module, so the fifth gamma and the body's chirality cell are one object in two readings. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; its representative on the Dirac module is $\gamma_5$.
 
 **The identities.** In the frame declared above, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0 ,
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0 ,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
 $$
@@ -330,7 +330,7 @@ $$
 
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
@@ -350,10 +350,10 @@ $$
 
 These are not transportable term by term to the $\mathbb{M}_-$ frame, because the sum runs over index values and the metric is in the terms. With every index low, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4$, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_0[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=+4\gamma_0[\mathbb{M}_-]$, and the spatial sums vanish, $\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=0$.
 
-**Closure.** The sixteen products — $I_4$, the four $\gamma_\mu[\mathbb{M}_-]$, the six $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]$ with $\mu<\nu$, the four $\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]$ and $\gamma_5[\mathbb{M}_-]$ — are a basis of $M_4(\mathbb{C})=\mathrm{Cl}_{1,3}(\mathbb{C})$, so no product of gammas leaves the algebra and the dictionary closes. The real algebras are smaller. The sixteen cells $L_aR_b$, whose product is again a cell, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ over $\mathbb{R}$; the products of the gammas alone span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$. Both are sixteen-dimensional, and both complexify to $M_4(\mathbb{C})$. The chirality cell is not among the products with real coefficients:
+**Closure.** The sixteen products — $I_4$, the four $\gamma_\mu[\mathbb{M}_-]$, the six $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]$ with $\mu<\nu$, the four $\gamma_5\gamma_\mu[\mathbb{M}_-]$ and $\gamma_5$ — are a basis of $M_4(\mathbb{C})=\mathrm{Cl}_{1,3}(\mathbb{C})$, so no product of gammas leaves the algebra and the dictionary closes. The real algebras are smaller. The sixteen cells $L_aR_b$, whose product is again a cell, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ over $\mathbb{R}$; the products of the gammas alone span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$. Both are sixteen-dimensional, and both complexify to $M_4(\mathbb{C})$. The chirality cell is not among the products with real coefficients:
 
 $$
-\gamma_5[\mathbb{M}_-]=i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-] ,
+\gamma_5=i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-] ,
 $$
 
 so it enters with the central $i$, and the real algebra generated by the four $\gamma_\mu[\mathbb{M}_-]$ does not contain it. The chirality grading is the one place where the dictionary needs more than the four gammas.
@@ -375,7 +375,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
 | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
 | $\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+iR_{\vec e_z}^{\mathrm{axf}})=\tfrac12(I_4-\chi)$ | Chirality cell; left projector, rank two |
-| $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5[\mathbb{M}_-]=\chi$ | The frame cells under their gamma names (§ The Legacy Pauli Gamma Formulation) |
+| $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5=\chi$ | The frame cells under their gamma names (§ The Legacy Pauli Gamma Formulation) |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
 | $I_\Delta\otimes V$, $V\in \mathrm{U}(N_g)$ | The CKM matrix as a flavour-factor operator |

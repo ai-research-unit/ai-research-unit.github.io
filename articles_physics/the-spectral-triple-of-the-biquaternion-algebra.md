@@ -108,7 +108,7 @@ $$
 $$
 with the mass acting on the right through conjugation. The dictionary between the two-sided field and the chiral pair is $\tilde\Psi_R=-i\overline{F}\,\vec e_z$, so the three displays describe one physics: the first is the chirality form, the second the pair operator written once, and the third the two-sided form. The spectral triple's candidate operator is $\mathcal{D}=i\tilde\nabla+D_F$: the gradient in the same chirality basis, with the chirality-odd mass added.
 
-**The chirality.** The chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign of the double,
+**The chirality.** The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign of the double,
 $$
 \chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-,
 \qquad
@@ -460,7 +460,7 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
@@ -470,14 +470,14 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-They satisfy $\gamma_0[\mathbb{M}_-]^2=I_4$, $\gamma_k[\mathbb{M}_-]^2=-I_4$, $\gamma_5[\mathbb{M}_-]^2=I_4$, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0$, and $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-]$; $\gamma_0[\mathbb{M}_-]$ and $\gamma_5[\mathbb{M}_-]$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
+They satisfy $\gamma_0[\mathbb{M}_-]^2=I_4$, $\gamma_k[\mathbb{M}_-]^2=-I_4$, $\gamma_5^2=I_4$, $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$, $\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0$, and $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5$; $\gamma_0[\mathbb{M}_-]$ and $\gamma_5$ are Hermitian and the three vector generators anti-Hermitian, and the pattern of squares is the signature $(+,-,-,-)$ of the corpus.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}$ is the reference-frame cell of the chirality, and it is the chirality cell $\chi$ of the body; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$, the difference of the two central idempotents of the complexified algebra, so that $\chi^2=e_t$ while $\tilde\Xi_{\mathrm{ad}}$ itself is the root of $-1$ — that is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
+$\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ is the reference-frame cell of the chirality, and it is the chirality cell $\chi$ of the body; the central grading $\chi=i\tilde\Xi_{\mathrm{ad}}=e_+-e_-$, the difference of the two central idempotents of the complexified algebra, so that $\chi^2=e_t$ while $\tilde\Xi_{\mathrm{ad}}$ itself is the root of $-1$ — that is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear. The four generators of the Euclidean frame all square to $+1$, so over $\mathbb{R}$ they generate $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The real cells of *The Majorana Equation in Biquaternionic Form* are $c_0=R_{\vec e_x}^{\mathrm{pau}}$ and $c_k=L_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$, one of square $-1$ and three of square $+1$, and those generate $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$; the Euclidean frame is $E_4=ic_0$ and $E_k=-c_k$, that is the Majorana frame with the time cell multiplied by $i$ and the three spatial cells negated. The corpus's $\mathrm{Cl}_{1,3}$ generators are $ic_\mu$, with the opposite pattern of squares, and $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$. The gammas are the same cells with the powers of $i$ collected — $\gamma_0[\mathbb{M}_-]=E_4$ and $\gamma_k[\mathbb{M}_-]=-iE_k$ — so they carry the Minkowski pattern of squares: this is the frame of the body's $\chi$, not a second algebra.
 

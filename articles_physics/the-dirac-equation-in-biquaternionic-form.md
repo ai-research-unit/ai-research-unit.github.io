@@ -735,7 +735,7 @@ $$
 \begin{aligned}
 \gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
 \gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\[2pt]
-\gamma_5[\mathbb{M}_-] &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5 &= -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 \end{aligned}
 $$
 
@@ -745,13 +745,13 @@ $$
 \begin{aligned}
 \gamma_0[\mathbb{M}_-] &= iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, &\gamma_1[\mathbb{M}_-] &= iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
 \gamma_2[\mathbb{M}_-] &= iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, &\gamma_3[\mathbb{M}_-] &= iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\[2pt]
-\gamma_5[\mathbb{M}_-] &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5 &= -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 \end{aligned}
 $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone of rank at most one, and a general element is a sum of at most four.
 
-$\gamma_5[\mathbb{M}_-]$ is the fifth cell of the frame, the operator the maths article calls the chirality operator (*Operator Chirality on the Biquaternion Algebra*): the volume cell, $-iL_{e_t}R_{\vec e_z}$, which is the pure right multiplier $-iR_{\vec e_z}$ on the algebra. The two arrays above are its arrays in the two displays. The operator is neither array. It is the side, and the side is what the fifth cell of the frame adds to the four generators: the four multiply on the left, and the fifth multiplies on the right by the third direction.
+$\gamma_5$ is the fifth cell of the frame, the operator the maths article calls the chirality operator (*Operator Chirality on the Biquaternion Algebra*): the volume cell, $-iL_{e_t}R_{\vec e_z}$, which is the pure right multiplier $-iR_{\vec e_z}$ on the algebra. The two arrays above are its arrays in the two displays. The operator is neither array. It is the side, and the side is what the fifth cell of the frame adds to the four generators: the four multiply on the left, and the fifth multiplies on the right by the third direction.
 
 The cell dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -802,7 +802,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q}_L$, $\tilde{Q}_R$ | An element with the value $L$ and with the value $R$; the subscript takes two values and only the zero element carries both |
-| $\gamma_5[\mathbb{M}_-]$ | The fifth cell of the frame, the chirality cell; its array is printed in *The Legacy Pauli Gamma Formulation* |
+| $\gamma_5$ | The fifth cell of the frame, the chirality cell; its array is printed in *The Legacy Pauli Gamma Formulation* |
 | $i_1,i_2,i_3$ | The source's symbols for the quaternion units $\vec e_x,\vec e_y,\vec e_z$; the scalar imaginary is its $i$ as here |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |

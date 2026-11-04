@@ -540,15 +540,15 @@ $$
 \gamma_t[\mathbb{M}_-]=R_u,\qquad
 \gamma_k[\mathbb{M}_-]=L_{\vec e_k}G\quad(k=x,y,z),
 \qquad
-\gamma_5[\mathbb{M}_-]=i\gamma_t[\mathbb{M}_-]\gamma_x[\mathbb{M}_-]\gamma_y[\mathbb{M}_-]\gamma_z[\mathbb{M}_-]=iL_{e_t}R_{\vec e_y},
+\gamma_5=i\gamma_t[\mathbb{M}_-]\gamma_x[\mathbb{M}_-]\gamma_y[\mathbb{M}_-]\gamma_z[\mathbb{M}_-]=iL_{e_t}R_{\vec e_y},
 $$
-with $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I$ and $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0$.
+with $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I$ and $\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0$.
 
 The physics twin writes another frame,
 $$
 \gamma_0[\mathbb{M}_-]=iL_{e_t}R_{\vec e_x}=iR_x,\qquad
 \gamma_k[\mathbb{M}_-]=iL_{\vec e_k}R_{\vec e_y},\qquad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z},
+\gamma_5=-iL_{e_t}R_{\vec e_z},
 $$
 related to the frame above by a similarity $\gamma_\mu[\mathbb{M}_-]'=S\gamma_\mu[\mathbb{M}_-] S^{-1}$.
 
@@ -558,8 +558,8 @@ Over $\mathbb{R}$ the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\c
 $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
@@ -568,7 +568,7 @@ S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])

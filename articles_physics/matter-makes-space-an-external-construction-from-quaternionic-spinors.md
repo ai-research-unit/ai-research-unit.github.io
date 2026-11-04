@@ -421,23 +421,23 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the five cells are
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-They are the frame cells and the chirality cell of the sections above under their Clifford names, $\gamma_\mu[\mathbb{M}_-]=C_\mu$ and $\gamma_5[\mathbb{M}_-]=\chi$, and each single one is invertible with determinant one, because $L_a$ and $R_b$ with $\lvert a\rvert=\lvert b\rvert=1$ are invertible and each factor $i$ multiplies the determinant by $i^4=+1$. The sixteen products of the five span $\mathrm{Cl}_{1,3}(\mathbb{C})$. $\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality operator; the corpus's central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
+They are the frame cells and the chirality cell of the sections above under their Clifford names, $\gamma_\mu[\mathbb{M}_-]=C_\mu$ and $\gamma_5=\chi$, and each single one is invertible with determinant one, because $L_a$ and $R_b$ with $\lvert a\rvert=\lvert b\rvert=1$ are invertible and each factor $i$ multiplies the determinant by $i^4=+1$. The sixteen products of the five span $\mathrm{Cl}_{1,3}(\mathbb{C})$. $\gamma_5$ is the reference-frame cell of the chirality operator; the corpus's central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear. The bare cells $\beta_\mu=L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ are real $4\times4$ matrices with $\beta_t^2=-I_4$ and $\beta_k^2=+I_4$, so they span a real Clifford algebra, and the factor $i$ flips both signs: the $\gamma_\mu[\mathbb{M}_-]=i\beta_\mu$ have the signature $(+,-,-,-)$, and their products span $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$. The $\mathbb{B}$ frame of the corpus is the one in which the right multiplier repeats the left, $\nu(\mu)=\mu$, so that every cell squares to $+I_4$; the passage between the two frames is a different choice of $\nu$, and the passage between the real cells and the gammas is the factor $i$. The identities used in what follows, with $\epsilon_{0123}=+1$ and $\varepsilon=(1,-1,-1,-1)$, are
 $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
 $$
 
 $$
@@ -449,14 +449,14 @@ where $S_{cd}$ is the standard bivector, half of the $\sigma_{cd}$ used for the 
 
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The trace of the previous section is the same identity with the bivector written out, $\sigma_{\mu\nu}=\tfrac12[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]$ and $\chi=\gamma_5[\mathbb{M}_-]$,
+The trace of the previous section is the same identity with the bivector written out, $\sigma_{\mu\nu}=\tfrac12[\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]$ and $\chi=\gamma_5$,
 $$
 \mathrm{tr}\bigl[\chi\gamma_\rho[\mathbb{M}_-]\gamma_\lambda[\mathbb{M}_-]\sigma_{\mu\nu}\bigr]=-4i\,\epsilon_{\rho\lambda\mu\nu} .
 $$
@@ -464,18 +464,18 @@ $$
 **The duality the spin section cites.**
 $$
 \operatorname{Alt}\bigl[\gamma_\lambda[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\bigr]
-=i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\gamma_\rho[\mathbb{M}_-]\gamma_5[\mathbb{M}_-]
-=-\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\gamma_5[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-] ,
+=i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\gamma_\rho[\mathbb{M}_-]\gamma_5
+=-\,i\,\epsilon_{\lambda\mu\nu\rho}\,\varepsilon_\rho\,\gamma_5\gamma_\rho[\mathbb{M}_-] ,
 $$
-with the normalised antisymmetrisation of the spin section. The weight $\varepsilon_\rho$ is what carries the raised index of the natural form into the all-low index of the display, $\gamma^\rho[\mathbb{M}_-]=\varepsilon_\rho\gamma_\rho[\mathbb{M}_-]$; the two forms are equal because $\{\gamma_5[\mathbb{M}_-],\gamma_\rho[\mathbb{M}_-]\}=0$, and the second is the one the appendix chain of the source uses, where $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\gamma_5[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\Psi$ is $A_\rho$.
+with the normalised antisymmetrisation of the spin section. The weight $\varepsilon_\rho$ is what carries the raised index of the natural form into the all-low index of the display, $\gamma^\rho[\mathbb{M}_-]=\varepsilon_\rho\gamma_\rho[\mathbb{M}_-]$; the two forms are equal because $\{\gamma_5,\gamma_\rho[\mathbb{M}_-]\}=0$, and the second is the one the appendix chain of the source uses, where $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\gamma_5\gamma_\rho[\mathbb{M}_-]\Psi$ is $A_\rho$.
 
 **Three contractions**, all exact in this frame:
 $$
 \sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2I_4,\qquad
 \sum_\mu\varepsilon_\mu\,\gamma_\mu[\mathbb{M}_-]\gamma_\alpha[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-2\gamma_\alpha[\mathbb{M}_-],\qquad
-\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=+2\gamma_5[\mathbb{M}_-] .
+\sum_\mu\gamma_\mu[\mathbb{M}_-]\gamma_5\gamma_\mu[\mathbb{M}_-]=+2\gamma_5 .
 $$
-All three follow from one fact and one sum: $\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=\varepsilon_\mu I_4$ with $\varepsilon_t=+1$ and $\varepsilon_k=-1$, and $\sum_\mu\varepsilon_\mu=-2$. In the first the four signs are summed directly. In the third, $\gamma_\mu[\mathbb{M}_-]\gamma_5[\mathbb{M}_-]=-\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]$ gives $\gamma_\mu[\mathbb{M}_-]\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_5[\mathbb{M}_-]$, and the four signs give $+2\gamma_5[\mathbb{M}_-]$; the weight is absent there because the sign is already carried by the product. In the second the free index $\alpha$ is not summed, and the weight is what makes the four terms add: the term with $\mu=\alpha$ is $+\gamma_\alpha[\mathbb{M}_-]$ and each of the other three is $-\gamma_\alpha[\mathbb{M}_-]$. All three are frame statements and read as such, because a cell's square is: in the $\mathbb{B}$ frame every cell squares to $+I_4$ and the first sum is $+4I_4$, and the metric enters only where the cells are the $\mathbb{M}_-$ ones above.
+All three follow from one fact and one sum: $\gamma_\mu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=\varepsilon_\mu I_4$ with $\varepsilon_t=+1$ and $\varepsilon_k=-1$, and $\sum_\mu\varepsilon_\mu=-2$. In the first the four signs are summed directly. In the third, $\gamma_\mu[\mathbb{M}_-]\gamma_5=-\gamma_5\gamma_\mu[\mathbb{M}_-]$ gives $\gamma_\mu[\mathbb{M}_-]\gamma_5\gamma_\mu[\mathbb{M}_-]=-\varepsilon_\mu\gamma_5$, and the four signs give $+2\gamma_5$; the weight is absent there because the sign is already carried by the product. In the second the free index $\alpha$ is not summed, and the weight is what makes the four terms add: the term with $\mu=\alpha$ is $+\gamma_\alpha[\mathbb{M}_-]$ and each of the other three is $-\gamma_\alpha[\mathbb{M}_-]$. All three are frame statements and read as such, because a cell's square is: in the $\mathbb{B}$ frame every cell squares to $+I_4$ and the first sum is $+4I_4$, and the metric enters only where the cells are the $\mathbb{M}_-$ ones above.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
@@ -521,7 +521,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $q_5=ijk$ | in the source, "the imaginary unit"; in fact the central scalar $-1$ |
 | $\tau=\mathrm{Arg}_{\mathbb{H}}\Psi$ | the source's Kozyrev time field |
 | $J_{S\mu}$ | the source's torsion entropy pseudo-vector |
-| $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5[\mathbb{M}_-]$ | the Clifford names of $C_\mu$ and $\chi$, used in *The Legacy Pauli Gamma Formulation* only |
+| $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5$ | the Clifford names of $C_\mu$ and $\chi$, used in *The Legacy Pauli Gamma Formulation* only |
 | $\mathcal{T}$ | the axial pseudo-vector $\epsilon_{ijk}T_{jk0}$ on which the source's Pauli limit and torsional phases are built |
 
 ## Further Reading

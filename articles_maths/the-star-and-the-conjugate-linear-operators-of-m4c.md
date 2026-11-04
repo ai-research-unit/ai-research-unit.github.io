@@ -355,15 +355,15 @@ The gammas are the five generators of the two frames above, written as matrices;
 $$
 \gamma_0[\mathbb{M}_-]=\bar{\cdot},\quad
 \gamma_k[\mathbb{M}_-]=\bar{\cdot}L_{-i \vec e_k}^{\mathrm{axf}},\quad
-\gamma_5[\mathbb{M}_-]=R_{-i \vec e_z}^{\mathrm{axf}}
+\gamma_5=R_{-i \vec e_z}^{\mathrm{axf}}
 $$
 for the real-linear frame, and
 $$
 \gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad
 \gamma_k[\mathbb{M}_-]=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}
 $$
-for the complex-linear frame, with $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ in the latter.
+for the complex-linear frame, with $\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ in the latter.
 
 The difference between the frames is the difference between the bar and the cell: the first is antilinear with even part $L(\mathbb{B})$, the second is linear with even part $M_2\oplus M_2$. Over $\mathbb{R}$ the first spans $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the second spans $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ on the same carrier.
 

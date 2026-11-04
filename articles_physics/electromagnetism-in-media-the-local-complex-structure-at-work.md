@@ -911,7 +911,7 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
@@ -921,7 +921,7 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 Cells compose by composing their factors, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, and in that product the four satisfy the cell relation of the Minkowski metric while the fifth closes the frame on the chirality cell,
@@ -933,18 +933,18 @@ $$
 $$
 
 $$
-\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-],
+\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-],
 \qquad
-\gamma_5[\mathbb{M}_-]^2=I_4 .
+\gamma_5^2=I_4 .
 $$
 
-The product of the four is taken in the order in which the cells stand, and the single $i$ outside it is what makes $\gamma_5[\mathbb{M}_-]$ the chirality cell rather than its negative.
+The product of the four is taken in the order in which the cells stand, and the single $i$ outside it is what makes $\gamma_5$ the chirality cell rather than its negative.
 
 **Cells are pure tensors; gammas are not.** A cell is a single product $a\otimes b^{\mathrm{opp}}$, so the cells form a seven-dimensional cone inside the sixteen-dimensional algebra, and a general element is a sum of at most four of them. The least number required is the rank of the coefficient matrix $c(M)$, the matrix of $M$ in the basis of the sixteen products. A decomposition into cells is therefore not unique in general; it is unique only in the rank-one case, when the operator is a single cell. That is the reason the article prints a two-sided operator as a cell only when it is one, and writes the others as sums.
 
-**One-sided and two-sided, in this frame.** The two Dirac equations of the section *Arbitrary Inhomogeneous Media* separate here into the two kinds of cell the algebra allows. The chiral pair acts by left multiplication only, so each of its members is a single one-sided cell, and the grading that separates the halves is the cell $\gamma_5[\mathbb{M}_-]$; this is the sense in which that equation's dividing line is chirality. Kravchenko's equation is a left cell together with a right multiplication in the mass term, $\tilde{\nabla}^{\natural}$ acting from the left and $\vec e_z$ from the right, hence the two-sided cell $L_{\tilde{\nabla}^{\natural}}$ with the mass term carried by $R_{\vec e_z}^{\mathrm{pau}}$. The distinction drawn in words in the inhomogeneous section is thus, in the printing, the distinction between $L$ and $LR$.
+**One-sided and two-sided, in this frame.** The two Dirac equations of the section *Arbitrary Inhomogeneous Media* separate here into the two kinds of cell the algebra allows. The chiral pair acts by left multiplication only, so each of its members is a single one-sided cell, and the grading that separates the halves is the cell $\gamma_5$; this is the sense in which that equation's dividing line is chirality. Kravchenko's equation is a left cell together with a right multiplication in the mass term, $\tilde{\nabla}^{\natural}$ acting from the left and $\vec e_z$ from the right, hence the two-sided cell $L_{\tilde{\nabla}^{\natural}}$ with the mass term carried by $R_{\vec e_z}^{\mathrm{pau}}$. The distinction drawn in words in the inhomogeneous section is thus, in the printing, the distinction between $L$ and $LR$.
 
-**The chirality cell and the central grading.** $\gamma_5[\mathbb{M}_-]$ is the cell of the chirality operator: $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ on the Dirac module, which acts on the algebra alone as $-iR_{\vec e_z}^{\mathrm{pau}}$, the cell the chiral-fermion articles write as $\chi$. The central grading of the complexified algebra — the difference of its two central idempotents, whose square is $e_t$ — is a different object: $\gamma_5[\mathbb{M}_-]$ represents it on the module, and the two must not be identified as elements of the algebra.
+**The chirality cell and the central grading.** $\gamma_5$ is the cell of the chirality operator: $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ on the Dirac module, which acts on the algebra alone as $-iR_{\vec e_z}^{\mathrm{pau}}$, the cell the chiral-fermion articles write as $\chi$. The central grading of the complexified algebra — the difference of its two central idempotents, whose square is $e_t$ — is a different object: $\gamma_5$ represents it on the module, and the two must not be identified as elements of the algebra.
 
 **Why the cells stay primary.** The dictionary is complex-linear, and the two real forms behind it are not the same: over $\mathbb{R}$ the gamma products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, while the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The biquaternion algebra is the complex one, so both readings are available in it, but only the cells are defined without a choice of frame. The article keeps the cells for that reason, and uses the gammas as the frame in which the fermion articles are written.
 

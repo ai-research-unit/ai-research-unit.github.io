@@ -113,7 +113,7 @@ $$
 
 both signs using $i^2=-1$. The $2\times2$ image is the left action alone and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$; the cell acts from both sides and carries both.
 
-The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}^{\mathrm{axf}}$. Since $R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}}$, and $R_{\vec e_z}^{\mathrm{axf}}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplication; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, and on the Dirac module the two agree up to an overall sign. The relation is recorded in *The Legacy Pauli Gamma Formulation* below.
+The two carriers are the algebra's two minimal left ideals, both copies of the spinor module $S$. The sign that separates them is the Peirce sign $P=R_{i\vec e_z}^{\mathrm{axf}}$. Since $R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}}$, and $R_{\vec e_z}^{\mathrm{axf}}$ is $-i$ on $S_+$ and $+i$ on $S_-$, the Peirce sign is $+1$ on $S_+$ and $-1$ on $S_-$. It is a copy index, not the chirality. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplication; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra, and on the Dirac module the two agree up to an overall sign. The relation is recorded in *The Legacy Pauli Gamma Formulation* below.
 
 The one-site identification is exact inside the algebra, and its $2\times2$ image is exact as well:
 
@@ -292,7 +292,7 @@ is the product of the on-site parities and commutes with $H_{XY}$; the two secto
 - *The one-site identity.* The parents' $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ is the one-site Jordan–Wigner map, an identity inside $\mathbb{B}$; the transformation has a one-site fixed point.
 - *The string as the product of one-site parities.* $\prod_{k<j}(\sigma_z)_{k}=\prod_{k<j}(-1)^{F_k}$, with $(-1)^F=i\vec e_z$ the parent's algebra element. The string is the tensor product of the algebra's parities, and its non-diagonality is the external grading the spin–statistics companion records.
 - *The grading statement.* The parity is available on both sides, $(-1)^{F}=\prod_j(\sigma_z)_{j}$, and the map respects it: $(\sigma_z)_{j}$ is even, the transverse spins are odd, the modes are odd. What the map does not preserve is the site structure, since a one-site spin operator becomes a string-laden fermion operator.
-- *The two readings.* The $2\times2$ image is one-sided and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$, while the cell $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ acts on the two Peirce carriers with opposite signs, $-\sigma_k$ on one and $+\sigma_k$ on the other. The difference is right multiplication by $i\vec e_z$, the Peirce copy index; the chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$, and the two agree on the Dirac module up to an overall sign.
+- *The two readings.* The $2\times2$ image is one-sided and carries one sign, $\mathsf M_2(i\vec e_k)=\sigma_k$, while the cell $L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ acts on the two Peirce carriers with opposite signs, $-\sigma_k$ on one and $+\sigma_k$ on the other. The difference is right multiplication by $i\vec e_z$, the Peirce copy index; the chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, and the two agree on the Dirac module up to an overall sign.
 
 **Open.**
 
@@ -304,7 +304,7 @@ is the product of the on-site parities and commutes with $H_{XY}$; the two secto
 
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder identified here with the one-site spin, and the parity $(-1)^F=i\vec e_z$.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the identification $i\vec e_k\mapsto L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ and the $2\times2$ image $\mathsf M_2$ that fixes the one-site map.
-- Companion article *Biquaternion Physical Interpretation of Operator Chirality*, for the definition of chirality as the side on which an operator multiplies, the identification of $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}$ as a pure right multiplier, and the coincidence $P=-\gamma_5[\mathbb{M}_-]$ for the aligned root.
+- Companion article *Biquaternion Physical Interpretation of Operator Chirality*, for the definition of chirality as the side on which an operator multiplies, the identification of $\gamma_5=-iR_{\vec e_z}$ as a pure right multiplier, and the coincidence $P=-\gamma_5$ for the aligned root.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -337,7 +337,7 @@ The fifth gamma is not a fifth frame vector but their product, and $i^2=-1$ fixe
 $$
 \gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 \qquad
-\gamma_5[\mathbb{M}_-]:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=i\bigl(-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\bigr)=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=i\bigl(-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}\bigr)=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 In the axis-free display:
@@ -345,7 +345,7 @@ In the axis-free display:
 $$
 \gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 \qquad
-\gamma_5[\mathbb{M}_-]:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=i\bigl(-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\bigr)=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5:=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=i\bigl(-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\bigr)=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The four gammas carry $i^4=1$, so the single $i$ of the definition survives, and no second factor of $i$ is left over: the cell that results is $-iR_{\vec e_z}^{\mathrm{pau}}$, in which the left multiplier is the identity and the cell has collapsed to a right multiplication.
@@ -353,7 +353,7 @@ The four gammas carry $i^4=1$, so the single $i$ of the definition survives, and
 That right multiplication is the one the one-site section met, up to the factor $i$: the Peirce sign of the two carriers is $P=R_{i\vec e_z}^{\mathrm{pau}}=iR_{\vec e_z}^{\mathrm{pau}}$, so
 
 $$
-\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{pau}}=-P ,
+\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}=-P ,
 \qquad
 P^2=I_4 ,
 $$
@@ -361,28 +361,28 @@ $$
 The same identities in the axis-free display:
 
 $$
-\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}=-P ,
+\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=-P ,
 \qquad
 P^2=I_4 ,
 $$
 
-and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra.
+and the two differ only by the overall sign that the frame fixes. The Peirce sign is a copy index inside $\mathbb{B}$; the chirality is not. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexified algebra.
 
 The frame is Clifford, with $\varepsilon=(1,-1,-1,-1)$ and $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity cell:
 
 $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4 ,
 \qquad
-\gamma_5[\mathbb{M}_-]^2=I_4 ,
+\gamma_5^2=I_4 ,
 \qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0 ,
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0 ,
 \qquad \varepsilon=(1,-1,-1,-1),$$
 
 all three checked cell by cell.
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$. The central grading is a different object and carries its own factors: $\tilde\Xi_{\mathrm{ad}}$ is the central root of the double with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so $\chi=i\tilde\Xi_{\mathrm{ad}}$ has
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$. The central grading is a different object and carries its own factors: $\tilde\Xi_{\mathrm{ad}}$ is the central root of the double with $\tilde\Xi_{\mathrm{ad}}^2=-e_t$, so $\chi=i\tilde\Xi_{\mathrm{ad}}$ has
 
 $$
 \chi^2=i^2\tilde\Xi_{\mathrm{ad}}^2=(-1)(-e_t)=e_t ,

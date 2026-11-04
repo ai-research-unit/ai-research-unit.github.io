@@ -715,13 +715,13 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 Each is a unit multiple of one cell of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
 $$
 \gamma_0[\mathbb{M}_-]=\sigma_1\otimes\mathrm I_2,\qquad
 \gamma_k[\mathbb{M}_-]=i\,\sigma_2\otimes\sigma_k,\qquad
-\gamma_5[\mathbb{M}_-]=-\sigma_3\otimes\mathrm I_2.
+\gamma_5=-\sigma_3\otimes\mathrm I_2.
 $$
 
 **The values.** In the frame,
@@ -734,7 +734,7 @@ $$
 \gamma_3[\mathbb{M}_-]=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
 $$
 $$
-\gamma_5[\mathbb{M}_-]=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
+\gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
 Each has trace $0$, determinant $1$ and rank $4$. The five are unit multiples of five cells of the table of §*The Table in Four Families*; the choice of the five is the choice of a frame.
 
@@ -751,11 +751,11 @@ $$
 \gamma_0[\mathbb{M}_-]=iL(e_t)R(\delta),\qquad
 \gamma_k[\mathbb{M}_-]=iL(\vec e_k)R(\beta),\qquad k=x,y,z.
 $$
-For the reference frame $(\beta,\delta)=(\vec e_y,\vec e_x)$, the five are the cells of §*The Five Cells*; in that frame $\beta\delta=-\vec e_z$ and $\gamma_5[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}$.
+For the reference frame $(\beta,\delta)=(\vec e_y,\vec e_x)$, the five are the cells of §*The Five Cells*; in that frame $\beta\delta=-\vec e_z$ and $\gamma_5=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}$.
 
 **The normal form.** Every pair $(\beta,\delta)$ gives a frame with the anticommutation relations of §*The Clifford Relations*, and the five operators determine the pair: $\delta$ is the right factor of $\gamma_0[\mathbb{M}_-]$, and $\beta$ is the right factor of $\gamma_1[\mathbb{M}_-]$. Distinct pairs give distinct frames, not two descriptions of one frame.
 
-**The free parameter.** Nothing selects the pair. The relations use only $\beta^2=\delta^2=-e_t$ and $\beta\delta=-\delta\beta$; no Clifford relation mentions $\beta$ or $\delta$. The three spatial directions enter in three roles: $\beta$ as the common right factor of the three spatial generators, $\delta$ as the right factor of the time generator, and $\beta\delta$ as the right factor of the pseudoscalar. The algebra assigns no direction to any role. What changes with the pair is the list of operators, whether they are cells, the sign of $\gamma_5[\mathbb{M}_-]$, and the grade table.
+**The free parameter.** Nothing selects the pair. The relations use only $\beta^2=\delta^2=-e_t$ and $\beta\delta=-\delta\beta$; no Clifford relation mentions $\beta$ or $\delta$. The three spatial directions enter in three roles: $\beta$ as the common right factor of the three spatial generators, $\delta$ as the right factor of the time generator, and $\beta\delta$ as the right factor of the pseudoscalar. The algebra assigns no direction to any role. What changes with the pair is the list of operators, whether they are cells, the sign of $\gamma_5$, and the grade table.
 
 **Cells only for axes.** If $\beta$ is not one of $\vec e_x,\vec e_y,\vec e_z$, the spatial generators are not cells:
 $$
@@ -774,12 +774,12 @@ This is the matrix of an inner automorphism, and it carries frames to frames. It
 **Theorem (the anticommutation relations).** For the normal form of §*The Normal Form and the Pair $(\beta,\delta)$*,
 $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm I_4,\qquad
-(\gamma_5[\mathbb{M}_-])^2=\mathrm I_4,\qquad
-\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=-\gamma_\mu[\mathbb{M}_-]\gamma_5[\mathbb{M}_-],
+(\gamma_5)^2=\mathrm I_4,\qquad
+\gamma_5\gamma_\mu[\mathbb{M}_-]=-\gamma_\mu[\mathbb{M}_-]\gamma_5,
 $$
 with $\varepsilon=(1,-1,-1,-1)$, and
 $$
-\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}.
+\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}.
 $$
 
 *Proof.* $(\gamma_0[\mathbb{M}_-])^2=-R(\delta^2)=\mathrm I_4$; $(\gamma_k[\mathbb{M}_-])^2=-L(\vec e_k^2)R(\beta^2)=-\mathrm I_4$; $\gamma_0[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]+\gamma_k[\mathbb{M}_-]\gamma_0[\mathbb{M}_-]=-L(\vec e_k)(R(\delta\beta)+R(\beta\delta))=0$; $\gamma_j[\mathbb{M}_-]\gamma_k[\mathbb{M}_-]+\gamma_k[\mathbb{M}_-]\gamma_j[\mathbb{M}_-]=-L(\vec e_j\vec e_k+\vec e_k\vec e_j)R(\beta^2)=0$. For the pseudoscalar, the left factor is $L(e_t\vec e_x\vec e_y\vec e_z)=L(-e_t)$ and the right factor is $R(\beta^3\delta)=R(-\beta\delta)$; the two signs cancel, so the product is $L_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}$.
@@ -819,19 +819,19 @@ which are again cells: $\Sigma^{01}=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\m
 
 **The pseudoscalar.** In the frame,
 $$
-\gamma_5[\mathbb{M}_-]=\operatorname{diag}(-1,-1,1,1).
+\gamma_5=\operatorname{diag}(-1,-1,1,1).
 $$
 Its two eigenspaces are the two chiral blocks, each of complex dimension two. The four generators exchange them; the pseudoscalar is their sign.
 
 **The projectors.** The chirality projectors are
 $$
-P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5[\mathbb{M}_-])=\tfrac12\bigl(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\pm iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}\bigr)=L_{e_t/2}^{\mathrm{pau}}R_{e_t\pm i\beta\delta}^{\mathrm{pau}}.
+P_\pm=\tfrac12(\mathrm I_4\pm\gamma_5)=\tfrac12\bigl(L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}\pm iL_{e_t}^{\mathrm{pau}}R_{\beta\delta}^{\mathrm{pau}}\bigr)=L_{e_t/2}^{\mathrm{pau}}R_{e_t\pm i\beta\delta}^{\mathrm{pau}}.
 $$
 In the frame $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$. Both have rank two, and the second parameter has quaternionic norm zero. They are single two-sided operators, but not cells: a single product can be singular, and a single product need not be a cell.
 
 **The two Weyl blocks.** The frame is block diagonal for the left family, $L(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$, so the left image preserves the two chiral blocks. The four generators are not in the left image: they exchange the blocks. The Dirac algebra needs the two-sided operators; the left regular model cannot hold it.
 
-**Types.** In the reference frame, $\gamma_0[\mathbb{M}_-]$ and $\gamma_5[\mathbb{M}_-]$ lie in the right family $\mathbb{B}_R$, because their left factor is $e_t$; the three spatial generators lie in neither one-sided family. The distinction is a property of the pair, not of the anticommutation relations.
+**Types.** In the reference frame, $\gamma_0[\mathbb{M}_-]$ and $\gamma_5$ lie in the right family $\mathbb{B}_R$, because their left factor is $e_t$; the three spatial generators lie in neither one-sided family. The distinction is a property of the pair, not of the anticommutation relations.
 
 Over $\mathbb{R}$ the dictionary is complex-linear: the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

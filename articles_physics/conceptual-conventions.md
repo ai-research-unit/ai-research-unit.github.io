@@ -10,25 +10,7 @@
 
 **Two ways of using a concept that passes.** A concept that passes both conditions is used in one of two ways. It is **preferred** when the algebra already contains it. It is **unpreferred** when it is a working tool that brings something the algebra does not contain: a chosen frame, a basis, a root, or a piece of the algebra printed as though it were the whole. An unpreferred concept is not false. It is used only when the article says what it brings.
 
-**The two lists.** The next two sections give the lists. The first is the set of concepts the corpus writes by default. The second is the set it writes only under a declaration, with the defect named, the replacement given and the cost stated. The summary states the result in a few lines.
-
-## Preferred Concepts
-
-These concepts are the algebra and its two sectors, written down. Each one can be read from an element or a form, and none of them needs a frame, a root, a basis or a name borrowed from another formalism.
-
-- **The field as an element.** $\tilde\Psi\in\mathbb{B}$. One object, one glyph, and the sentence that says what the field is says so in one word.
-- **The slot as the chirality.** Operator chirality is the side on which an operator multiplies. $cL_{\tilde Q}$ is left, $cR_{\tilde P}$ is right, and a cell with two multipliers is both. The cell carries the label, and no root, ideal, axis or Clifford algebra is needed.
-- **The two sectors as the reading.** The anti-Hermitian subspace $\mathbb{M}_-$ carries the four-vectors and the interval. The Hermitian subspace $\mathbb{M}_+$ carries the observables and the states. The algebra supplies the subspaces and the forms on them. The identification is the programme's step, and it is stated at every use.
-- **The norm as the dynamics.** The d'Alembertian is the quaternionic norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}$, and on the material sector this gives $\Delta-c^{-2}\partial^{2}/\partial t'^{2}$. The preferred form of the wave equation names the norm it comes from and not the array that displays it.
-- **The channel as the update.** $\Phi(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$. A measurement is a map of elements, and the preferred form names the operators and the map. No postulate about observers is added, and none is needed.
-- **The declared frame and the declared axis.** A frame is declared before it is used, and an axis $\vec u$ is part of the symbol of a spin statement. A datum that is declared is not a defect. The defect is the datum that is not declared.
-- **The conjugate pair.** $\tilde\Pi_+(\vec u)=\tilde\Pi_-(-\vec u)$, so that the pair is unordered and the definition orders it only to name the two parts.
-
-**Chirality, as the model case.** Operator chirality is the clearest example of a preferred concept. The cell says on which side an operator multiplies, and that answer needs no root, no idempotent, no ideal, no axis and no Clifford algebra. The chirality operator of a frame is its volume cell, $\gamma_5[\mathbb{M}_-]=-iR^{\mathrm{axf}}_{\vec e_z}$, and the physics adds one sentence to the algebra and no third.
-
-Each rival adds something. A gamma subscript adds an axis, and the axis is the frame's. A Clifford product adds a dimension and a signature, and the algebra needs neither in order to have sides. A projector keeps four corners where the definition has two halves. A Peirce sign adds a root, and the root is a direction. An idempotent adds a point of a projective line. All of them are correct objects, and each fails as a definition of chirality because it answers with a datum as well as with a side.
-
-Two limits are recorded with the model case. The first is the algebra's. The two chiral halves of $\mathbb{B}$ are copies of one Lorentz module, so the splitting is **vector-like**: both halves are left-handed in the Lorentz sense, and the inequivalent pair $S\oplus S^{\mathrm{c}}$ of the Standard Model is not in $\mathbb{B}$. That is a limit of the algebra and not a defect of a display. The second is a naming convention. Which half is called $L$ follows the sign in $\gamma_5[\mathbb{M}_-]=-iR^{\mathrm{axf}}_{\vec e_z}$, and exchanging the name changes nothing.
+**The two lists.** The next two sections give the lists, the one the corpus avoids first and the one it writes by default second. The first list holds the concepts the corpus writes only under a declaration, with the defect named, the replacement given and the cost stated. The second holds the concepts it writes with no comment at all. The order is the order of the work: the reader meets the problem before the solution. The summary states the result in a few lines.
 
 ## Unpreferred Concepts
 
@@ -36,13 +18,8 @@ Each concept below is used somewhere in the corpus, and each one brings somethin
 
 - **The Pauli matrices $\sigma_k$.** *The defect:* the array fixes an axis that the sentence does not name, and it fixes a Peirce frame with it. *Write instead:* the axis-free cell, or $\sigma_k[\vec u]$ with the axis in the symbol. *The cost:* a direction enters every formula and cannot be subtracted, and the fact that the three directions are one orbit is not on the page.
 - **The gamma matrices $\gamma_\mu$.** *The defect:* the five cells belong to a frame that is not named, and they carry a dimension and a signature that the algebra does not fix. *Write instead:* the five cells of a declared frame. *The cost:* a frame and a signature are printed as though the algebra fixed them.
-- **A column spinor.** *The defect:* one minimal left ideal is printed and the other half is dropped, and the ideal fixes an axis of its own. *Write instead:* the element $\tilde\Psi$ with its two parts. *The cost:* the two halves look inequivalent, which is exactly what the algebra does not supply.
 - **A Clifford algebra as a foundation.** *The defect:* the anticommutator is asserted, and with it a dimension and a signature. *Write instead:* the five cells, with the anticommutator computed from them. *The cost:* a result is presented as an axiom, and the axiom then appears to explain what it presupposes.
-- **A preferred frame.** *The defect:* the direction is used in every formula and named nowhere. *Write instead:* the frame, declared, with the rotation of the statement checked. *The cost:* the theory appears to predict a direction. This is the failure that is not formal, because isotropy is measured.
-- **A projector used as the collapse.** *The defect:* an involution is read as a projector, and a postulate about observers is added to a map of elements. *Write instead:* the channel, with its operators. *The cost:* an extra postulate where a two-line computation already answers.
-- **A tensor product for one system.** *The defect:* compositeness is what a tensor product is for, and one system is one element. *Write instead:* the element and its parts. *The cost:* one object is read as two, and the difference between a system and a composite is lost.
-- **The metric tensor, and $\eta$.** *The defect:* a signature is placed inside the algebra before a sector is named. *Write instead:* the interval as a form value, or the frame with its tuple. This one is not admitted at all. *The cost:* the Lorentzian signature is asserted everywhere, and the two sectors are pre-empted.
-- **The bare norm.** *The defect:* one word covers four norms, so the reader cannot tell which one is meant. *Write instead:* the letter, $P$, $N$, $H$ or $K$. *The cost:* a sign error that looks like a convention and is not.
+- **The Wick rotation, $t'\mapsto-i\tau$.** *The defect:* it is a relabelling of one coefficient, $ict'\mapsto c\tau$, so the object changes in the relabelling: a point of $\mathbb{M}_-$ becomes a point of $\mathbb{H}_{\mathbb{B}}$, the signature goes from $(3,1)$ to $(4,0)$, and the light cone disappears. It is a computational trick and not an identification of two objects of the algebra. *Write instead:* the change of sector, declared, with the loss stated, or the real-time object left alone. *The cost:* the transferred problem is a different problem, so nothing that depends on causality, on the phase or on the light cone carries over.
 
 **A frame that the physics supplies is not on this list.** The rule is the corpus's own. A frame is a defect when the problem does not supply it and the notation supplies it anyway. A frame is legitimate when the apparatus supplies it: a Stern-Gerlach axis, a beam axis, a scattering plane, or the direction of a background field. In that case the practice is to name the axis, use it, and say that the result is about that frame.
 
@@ -54,7 +31,7 @@ The second is **a part printed as the whole**. A half, an ideal, a column or a s
 
 The third is **two kinds under one name**: an operator and an element, an involution and a projector, a form and a metric. The test is a question about the subject. What kind of object is the subject, and can a predicate of that kind be true of it? An involution squares to the identity and a projector squares to itself.
 
-A concept that passes all three tests is a preferred concept. That is why the first list is short: the algebra supplies it.
+A concept that passes all three tests is a preferred concept, and the short list of them is the one the algebra supplies by itself.
 
 **Three statements that look like defects and are not.** A reader arriving from the standard literature will meet three places where the corpus appears to break a convention. The rule above lets all three through, and the reason is the same in each. A datum sits in a different object from the one the reader expects.
 
@@ -62,11 +39,24 @@ A concept that passes all three tests is a preferred concept. That is why the fi
 - The d'Alembertian has the opposite sign. It follows from $\Box=\tilde\nabla\tilde\nabla^{\natural}$ and the signature of the sector, and it is a consequence rather than a preference.
 - The time coordinate carries the $i$. $Q_t=ict'$ is a substitution on the material sector. A reader who moves the $i$ back into the metric has changed the frame and kept the coordinate.
 
+## Preferred Concepts
+
+These concepts are the algebra and its two sectors, written down. Each one can be read from an element or a form, and none of them needs a frame, a root, a basis or a name borrowed from another formalism.
+
+- **The slot as the chirality.** Operator chirality is the side on which an operator multiplies. $cL_{\tilde Q}$ is left, $cR_{\tilde P}$ is right, and a cell with two multipliers is both. The cell carries the label, and no root, ideal, axis or Clifford algebra is needed.
+- **The two sectors as the reading.** The anti-Hermitian subspace $\mathbb{M}_-$ carries the four-vectors and the interval. The Hermitian subspace $\mathbb{M}_+$ carries the observables and the states. The algebra supplies the subspaces and the forms on them. The identification is the programme's step, and it is stated at every use.
+
+**Chirality, as the model case.** Operator chirality is the clearest example of a preferred concept. The cell says on which side an operator multiplies, and that answer needs no root, no idempotent, no ideal, no axis and no Clifford algebra. The chirality operator of a frame is its volume cell of the axis-free frame, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, and the physics adds one sentence to the algebra and no third.
+
+Each rival adds something. A gamma subscript adds an axis, and the axis is the frame's. A Clifford product adds a dimension and a signature, and the algebra needs neither in order to have sides. A projector keeps four corners where the definition has two halves. A Peirce sign adds a root, and the root is a direction. An idempotent adds a point of a projective line. All of them are correct objects, and each fails as a definition of chirality because it answers with a datum as well as with a side.
+
+Two limits are recorded with the model case. The first is the algebra's. The two chiral halves of $\mathbb{B}$ are copies of one Lorentz module, so the splitting is **vector-like**: both halves are left-handed in the Lorentz sense, and the inequivalent pair $S\oplus S^{\mathrm{c}}$ of the Standard Model is not in $\mathbb{B}$. That is a limit of the algebra and not a defect of a display. The second is a naming convention. Which half is called $L$ follows the sign in $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ of the axis-free frame, and exchanging the name changes nothing.
+
 ## Summary
 
 A concept is used in this corpus only when it agrees with mathematics and no result of experiment contradicts it. Both conditions bite here, because these articles make physical claims.
 
-The concepts that pass are used in one of two ways. Preferred concepts are the algebra and its sectors: the field as an element, the slot as the chirality, the two sectors as the reading, the norm as the dynamics, the channel as the update, the declared frame and axis, and the conjugate pair. Unpreferred concepts are working tools that bring a frame, a basis, a root or a part of the algebra: the Pauli matrices, the gamma matrices, the column spinor, the Clifford algebra as a foundation, a preferred frame, the projector used as the collapse, the tensor product for one system, the metric tensor and the bare norm. Each is admitted only with the missing piece declared, except the metric tensor, which is not admitted at all. A frame that the apparatus supplies is preferred and not unpreferred.
+The concepts that pass are used in one of two ways. Unpreferred concepts are working tools that bring a frame, a signature or a dimension: the Pauli matrices, the gamma matrices, the Clifford algebra as a foundation and the Wick rotation. Each is admitted only with the missing piece declared. Preferred concepts are the algebra itself: the slot as the chirality and the two sectors as the reading.
 
 Every defect is one of three: a missing datum, a part printed as the whole, or two kinds under one name. Operator chirality passes all three, which is why it is written as a slot and not as a gamma subscript, a Clifford product, a projector, a Peirce sign or an idempotent. The one limit that belongs to the algebra and not to the notation is recorded with it: the two halves of $\mathbb{B}$ are copies of one Lorentz module, so the splitting is vector-like.
 

@@ -244,7 +244,7 @@ The cells are those of the setup, $L_aR_b$ with $x\mapsto axb$ and the right fac
 $$
 \begin{aligned}
 \gamma_0[\mathbb{M}_-]&=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}, & \gamma_1[\mathbb{M}_-]&=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, & \gamma_2[\mathbb{M}_-]&=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\\
-\gamma_3[\mathbb{M}_-]&=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, & \gamma_5[\mathbb{M}_-]&=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_3[\mathbb{M}_-]&=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}, & \gamma_5&=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 \end{aligned}
 $$
 
@@ -253,7 +253,7 @@ The same in the axis-free display:
 $$
 \begin{aligned}
 \gamma_0[\mathbb{M}_-]&=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}, & \gamma_1[\mathbb{M}_-]&=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, & \gamma_2[\mathbb{M}_-]&=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\\
-\gamma_3[\mathbb{M}_-]&=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, & \gamma_5[\mathbb{M}_-]&=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_3[\mathbb{M}_-]&=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}, & \gamma_5&=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 \end{aligned}
 $$
 
@@ -263,7 +263,7 @@ Every gamma is a single cell. The single cells are the pure tensors; they form t
 $$
 \begin{aligned}
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}&=2\varepsilon_\mu\delta_{\mu\nu}I_4, & \gamma_0[\mathbb{M}_-]^2&=I_4, & \gamma_1[\mathbb{M}_-]^2=\gamma_2[\mathbb{M}_-]^2=\gamma_3[\mathbb{M}_-]^2&=-I_4,\\
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}&=0, & \gamma_5[\mathbb{M}_-]^2&=I_4.
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}&=0, & \gamma_5^2&=I_4.
 \end{aligned},
 \qquad \varepsilon=(1,-1,-1,-1),$$
 Each entry is the cell rule with $i^2=-1$ and $\vec e_k^{\,2}=-e_t$. The first pair, for instance,
@@ -285,23 +285,23 @@ $$
 
 since $e_t$ is the unit and $R_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=R_{-\vec e_z}^{\mathrm{pau}}$ while $R_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=R_{\vec e_z}^{\mathrm{pau}}$, the two right multiplications themselves anticommuting; the signs come from $i^2=-1$ in each product.
 
-**Chirality.** $\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell of *The Two Dirac Equations*, and the product of the four frame cells returns it,
+**Chirality.** $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$ is the chirality cell of *The Two Dirac Equations*, and the product of the four frame cells returns it,
 $$
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{axf}},\qquad\text{so}\qquad i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}=\gamma_5[\mathbb{M}_-] ,
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{axf}},\qquad\text{so}\qquad i\,\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}=\gamma_5 ,
 $$
-with the four factors carrying $i^4=1$ and the left and right products evaluated as in *Two rungs, two volume elements*. The cell and the corpus's abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ are different objects, and the two must not be confused: $\chi_{\mathrm{ad}}$ is the difference $\Pi_1-\Pi_2$ of the two central idempotents, so $\chi_{\mathrm{ad}}=\omega$ and $\chi_{\mathrm{ad}}^2=e_t$, while $\tilde\Xi_{\mathrm{ad}}$ is the central root of $-e_t$ itself, $\tilde\Xi_{\mathrm{ad}}=-i\,\omega$, since $(-i\omega)^2=(-i)^2\omega^2=(-1)(+1)=-e_t$. So $\omega$, $\tilde\Xi_{\mathrm{ad}}$ and $\gamma_5[\mathbb{M}_-]$ are three different objects: a central element, its root, and the cell that carries it on the module. $\gamma_5[\mathbb{M}_-]$ represents $\chi_{\mathrm{ad}}$ on the Dirac module, as $\pm1$ on the two chiral halves, and the sign of the representation — hence which summand is called left — is the only freedom left.
+with the four factors carrying $i^4=1$ and the left and right products evaluated as in *Two rungs, two volume elements*. The cell and the corpus's abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ are different objects, and the two must not be confused: $\chi_{\mathrm{ad}}$ is the difference $\Pi_1-\Pi_2$ of the two central idempotents, so $\chi_{\mathrm{ad}}=\omega$ and $\chi_{\mathrm{ad}}^2=e_t$, while $\tilde\Xi_{\mathrm{ad}}$ is the central root of $-e_t$ itself, $\tilde\Xi_{\mathrm{ad}}=-i\,\omega$, since $(-i\omega)^2=(-i)^2\omega^2=(-1)(+1)=-e_t$. So $\omega$, $\tilde\Xi_{\mathrm{ad}}$ and $\gamma_5$ are three different objects: a central element, its root, and the cell that carries it on the module. $\gamma_5$ represents $\chi_{\mathrm{ad}}$ on the Dirac module, as $\pm1$ on the two chiral halves, and the sign of the representation — hence which summand is called left — is the only freedom left.
 
 **Traces.** With $\epsilon_{0123}=+1$,
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma}.
+\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma}.
 $$
 
 **The dictionary.** It is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
-**A remark on the idempotent construction.** A display labelled *Peirce* in this section is a frame, a choice of basis for the arrays; a Peirce decomposition is what a primitive idempotent produces on the algebra. The two are different kinds of object, and it is the second that this remark is about. The source builds its isospin mechanism from two choices, and the corpus keeps them in view because they are easy to mistake for structure. The first is a primitive idempotent of the right-action factor, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$; a primitive idempotent is a point of the projective line of $\mathbb{B}$, so choosing one chooses a direction in the algebra. The second is the axis $\tau_3=1-2N$ of the ladder factor, which is what makes *interchange* and *annihilate* meaningful for a pair of states. With those two choices the source writes the isospin triple $\tau_a$, the totally isotropic elements $\beta_1=\tfrac12(-\vec e_x+i\vec e_y\tau_3)$ and $\beta_2=\Omega_L^{\dagger}i\vec e_y$, and the four states $V_R$, $V_L$, $e^-_R$, $e^-_L$ built from them, and obtains its statement that the generators annihilate the right-handed pair and interchange the left-handed one. Every step of it is correct and none of it is adopted here, because a Peirce basis is a coordinate choice attached to one idempotent: change the root and the four states change, while the chirality splitting of *Operator Chirality on the Biquaternion Algebra* does not. The rule that follows is that chirality is a side, read from the frame, and that a Peirce decomposition is a coordinate system laid on top of it. The two agree at exactly one root, up to sign: the one aligned with the volume cell, where the Peirce sign is $P=R_{i\vec e_z}=iR_{\vec e_z}=-\gamma_5[\mathbb{M}_-]$ and the projector on the ideal is $\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-])$, the projector on the $L$ half. That agreement is a coincidence of arrays at one root out of the projective line, and it is the origin of every statement that a Peirce idempotent *is* a chirality.
+**A remark on the idempotent construction.** A display labelled *Peirce* in this section is a frame, a choice of basis for the arrays; a Peirce decomposition is what a primitive idempotent produces on the algebra. The two are different kinds of object, and it is the second that this remark is about. The source builds its isospin mechanism from two choices, and the corpus keeps them in view because they are easy to mistake for structure. The first is a primitive idempotent of the right-action factor, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$; a primitive idempotent is a point of the projective line of $\mathbb{B}$, so choosing one chooses a direction in the algebra. The second is the axis $\tau_3=1-2N$ of the ladder factor, which is what makes *interchange* and *annihilate* meaningful for a pair of states. With those two choices the source writes the isospin triple $\tau_a$, the totally isotropic elements $\beta_1=\tfrac12(-\vec e_x+i\vec e_y\tau_3)$ and $\beta_2=\Omega_L^{\dagger}i\vec e_y$, and the four states $V_R$, $V_L$, $e^-_R$, $e^-_L$ built from them, and obtains its statement that the generators annihilate the right-handed pair and interchange the left-handed one. Every step of it is correct and none of it is adopted here, because a Peirce basis is a coordinate choice attached to one idempotent: change the root and the four states change, while the chirality splitting of *Operator Chirality on the Biquaternion Algebra* does not. The rule that follows is that chirality is a side, read from the frame, and that a Peirce decomposition is a coordinate system laid on top of it. The two agree at exactly one root, up to sign: the one aligned with the volume cell, where the Peirce sign is $P=R_{i\vec e_z}=iR_{\vec e_z}=-\gamma_5$ and the projector on the ideal is $\tfrac12(\mathrm I-\gamma_5)$, the projector on the $L$ half. That agreement is a coincidence of arrays at one root out of the projective line, and it is the origin of every statement that a Peirce idempotent *is* a chirality.
 
 ## Summary
 

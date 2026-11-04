@@ -455,16 +455,16 @@ $$
 $$
 
 $$
-\gamma_5[\mathbb{M}_-] = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_5 = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 In the axis-free display:
 
 $$
-\gamma_5[\mathbb{M}_-] = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_5 = \Gamma = i\,C_tC_xC_yC_z = -iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-The volume cell is the product of the four, $C_tC_xC_yC_z = -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$: the four $i$'s of the product reduce as $i^4 = +1$, so the product is a real cell, and the one further $i$ that turns it into $\gamma_5[\mathbb{M}_-]$ is the $i$ displayed.
+The volume cell is the product of the four, $C_tC_xC_yC_z = -L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$: the four $i$'s of the product reduce as $i^4 = +1$, so the product is a real cell, and the one further $i$ that turns it into $\gamma_5$ is the $i$ displayed.
 
 A cell is a pure tensor, and the coefficient matrix $c(M)$ of an element $M$ in the basis of the sixteen products has rank at most four, so a general element is a sum of at most four cells; the cells alone are the cone $\operatorname{rank}c(M)\le1$, of dimension seven. The dictionary between the cell reading and the gamma reading is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -474,8 +474,8 @@ $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\} = 2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 \gamma_0[\mathbb{M}_-]^2 = I_4,\qquad
 (\gamma_k[\mathbb{M}_-])^2 = -I_4,\qquad
-\gamma_5[\mathbb{M}_-]^2 = I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\} = 0,
+\gamma_5^2 = I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\} = 0,
 $$
 
 $$
@@ -486,7 +486,7 @@ $$
 
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]) = 4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-]) = -4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-]) = -4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 
 $$

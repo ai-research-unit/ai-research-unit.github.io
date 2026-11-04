@@ -362,7 +362,7 @@ $$
 -iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
 $$
 
-so the pseudoscalar mass reads $\mu R_{\vec e_z}^{\mathrm{axf}}=i\mu(-iR_{\vec e_z}^{\mathrm{axf}})\leftrightarrow i\mu\chi$ in the biquaternion dictionary; here $i\cdot(-i)=-i^2=+1$ is what cancels the two imaginary units. The chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$; the central element $\chi$ is its central form, and the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative in the reference frame.
+so the pseudoscalar mass reads $\mu R_{\vec e_z}^{\mathrm{axf}}=i\mu(-iR_{\vec e_z}^{\mathrm{axf}})\leftrightarrow i\mu\chi$ in the biquaternion dictionary; here $i\cdot(-i)=-i^2=+1$ is what cancels the two imaginary units. The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; the central element $\chi$ is its central form, and the cell $-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ is its representative in the reference frame.
 
 The term is parity-odd. A parity-odd mass is not the mass of the Dirac equation, and it is not the mass the Standard Model generates. The single root exists, but it is not the physical one.
 
@@ -493,7 +493,7 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
@@ -503,23 +503,23 @@ $$
 \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
 \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
-They satisfy $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $(\gamma_0[\mathbb{M}_-])^2=+I_4$, $(\gamma_k[\mathbb{M}_-])^2=-I_4$, $\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0$ and $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$. The product of the first four is $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}}$, and $i$ times it is $\gamma_5[\mathbb{M}_-]$; the corpus's volume element $-iR_{\vec e_z}^{\mathrm{pau}}$ is $\gamma_5[\mathbb{M}_-]$ itself.
+They satisfy $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$, $(\gamma_0[\mathbb{M}_-])^2=+I_4$, $(\gamma_k[\mathbb{M}_-])^2=-I_4$, $\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0$ and $\gamma_5=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$. The product of the first four is $\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-R_{\vec e_z}^{\mathrm{pau}}$, and $i$ times it is $\gamma_5$; the corpus's volume element $-iR_{\vec e_z}^{\mathrm{pau}}$ is $\gamma_5$ itself.
 
 In the tensor frame the same five are the images under $L_{a}R_{b}\mapsto\mathsf M_2(b)^{\mathsf T}\otimes\mathsf M_2(a)$,
 $$
 \gamma_0[\mathbb{M}_-]=\sigma_1\otimes I_2,\qquad
 \gamma_k[\mathbb{M}_-]=i\sigma_2\otimes\sigma_k,\qquad
-\gamma_5[\mathbb{M}_-]=-\sigma_3\otimes I_2,
+\gamma_5=-\sigma_3\otimes I_2,
 $$
 and the split between the two sides is the cell table of §*Four Generators*.
 
 The root and the mass conditions read in gammas as
 $$
 \mathsf D=i\sum_\mu\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu}=i\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu},\qquad
-\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5[\mathbb{M}_-]=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{pau}},\qquad
+\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{pau}},\qquad
 \mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I,
 $$
 
@@ -527,20 +527,20 @@ In the axis-free display:
 
 $$
 \mathsf D=i\sum_\mu\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu}=i\gamma_\mu[\mathbb{M}_-]\frac{\partial}{\partial x_\mu},\qquad
-\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5[\mathbb{M}_-]=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{axf}},\qquad
+\mathsf D_{\mathrm{ps},\pm}=\mathsf D\pm i\mu\gamma_5=\mathsf D\pm\mu R_{\vec e_z}^{\mathrm{axf}},\qquad
 \mathsf D_{\mathrm{sc},\pm}=\mathsf D\pm\mu I,
 $$
 
-The only single-square mass term is $B=c\gamma_5[\mathbb{M}_-]$ with $c=\pm i\mu$; the second equality for $\mathsf D_{\mathrm{ps},\pm}$ uses $i\gamma_5[\mathbb{M}_-]=R_{\vec e_z}^{\mathrm{pau}}$.
+The only single-square mass term is $B=c\gamma_5$ with $c=\pm i\mu$; the second equality for $\mathsf D_{\mathrm{ps},\pm}$ uses $i\gamma_5=R_{\vec e_z}^{\mathrm{pau}}$.
 
-The checks of §*Verification*, transcribed into these symbols, are $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}-2g_{\mu\nu}I_4$, $\gamma_5[\mathbb{M}_-]^2-I_4$, $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}$, $\gamma_5[\mathbb{M}_-]-i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ and $(\sum_\mu \gamma_\mu[\mathbb{M}_-] k_\mu)^2-g_{\mu\nu}k_\mu k_\nu I_4$; the first and the last are polynomial identities in the symbol $k$, so they hold for every $k$, not only on shell.
+The checks of §*Verification*, transcribed into these symbols, are $\{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}-2g_{\mu\nu}I_4$, $\gamma_5^2-I_4$, $\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}$, $\gamma_5-i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ and $(\sum_\mu \gamma_\mu[\mathbb{M}_-] k_\mu)^2-g_{\mu\nu}k_\mu k_\nu I_4$; the first and the last are polynomial identities in the symbol $k$, so they hold for every $k$, not only on shell.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the cells,
 $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
@@ -549,7 +549,7 @@ S_{cd}=\tfrac14[\gamma_c[\mathbb{M}_-],\gamma_d[\mathbb{M}_-]],
 $$
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])

@@ -360,13 +360,13 @@ $$
 $$
 
 $$
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 In the axis-free display:
 
 $$
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The factors of $i$ in a product are reduced by $i^2=-1$; the five cells satisfy, for $k=1,2,3$,
@@ -380,14 +380,14 @@ $$
 with $\varepsilon=(1,-1,-1,-1)$ and $\mu,\nu=0,1,2,3$, and
 
 $$
-\gamma_5[\mathbb{M}_-]^2=e_t,\qquad
-\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0\quad(\mu=0,1,2,3),\qquad
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-] .
+\gamma_5^2=e_t,\qquad
+\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0\quad(\mu=0,1,2,3),\qquad
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5 .
 $$
 
 A single product is a pure tensor: $c(M)$ has rank one. The rank-one elements form a cone of complex dimension seven, every general element is a sum of at most four of them, and the length is $\ell(M)=\operatorname{rank}c(M)$.
 
-The cells of the cell equation are these gammas: $G_\mu=\gamma_\mu[\mathbb{M}_-]$, since $L_{e_t}^{\mathrm{pau}}$ acts as the identity on the module, and the chirality cell is $\Gamma=\gamma_5[\mathbb{M}_-]$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, is the difference of the two central idempotents, so $\chi^2=e_t$. It is a different object: on the module the two act through the same $4\times4$ matrix, and only the algebra keeps them apart.
+The cells of the cell equation are these gammas: $G_\mu=\gamma_\mu[\mathbb{M}_-]$, since $L_{e_t}^{\mathrm{pau}}$ acts as the identity on the module, and the chirality cell is $\Gamma=\gamma_5$. The central grading $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$ in the complexification, is the difference of the two central idempotents, so $\chi^2=e_t$. It is a different object: on the module the two act through the same $4\times4$ matrix, and only the algebra keeps them apart.
 
 The dictionary is complex-linear. Over $\mathbb{R}$ the sixteen words in $\gamma_0[\mathbb{M}_-],\dots,\gamma_3[\mathbb{M}_-]$ span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$, and the sixteen cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$. The two are distinct real forms of the same $M_4(\mathbb{C})$, the first of quaternionic type and the second of real type; that is why $i$ times a cell is not again a cell.
 

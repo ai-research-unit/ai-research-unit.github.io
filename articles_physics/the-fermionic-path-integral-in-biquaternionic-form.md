@@ -38,7 +38,7 @@ $$
 \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-two equations because there are two chiral halves. Both gradients act from the left, the field is the module-valued $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, the mass pairs the two chiral halves, and chirality is the cell $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$, the central grading of the complexified algebra being that operator's central form. The Lagrangian above is the spinor-module representative of this pair, not a second dynamics.
+two equations because there are two chiral halves. Both gradients act from the left, the field is the module-valued $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, the mass pairs the two chiral halves, and chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, the central grading of the complexified algebra being that operator's central form. The Lagrangian above is the spinor-module representative of this pair, not a second dynamics.
 
 **Its module form.** On the module the pair becomes one equation, because the single cell operator $\mathbb{D}$ carries both gradients. The gradient operator is odd under the chirality grading — it carries each chiral half into the other — while the mass is a multiple of the identity on the pair and so is even; in the chiral basis $\mathbb{D}-m$ is therefore the block matrix with $-m$ on the diagonal and the two gradients off it,
 
@@ -323,16 +323,16 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are written with the left and right multiplications of the module, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on it:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-They obey the anticommutation relations of the frame — $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]+\gamma_\nu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2g_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$ — and $\gamma_5[\mathbb{M}_-]^2=I_4$ with $\{\gamma_5[\mathbb{M}_-],\gamma_\mu[\mathbb{M}_-]\}=0$. The relations were checked on the cells, so the frame is the body's cell algebra in another notation, not a larger one.
+They obey the anticommutation relations of the frame — $\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]+\gamma_\nu[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]=2g_{\mu\nu}I_4$ with $\varepsilon=(1,-1,-1,-1)$ — and $\gamma_5^2=I_4$ with $\{\gamma_5,\gamma_\mu[\mathbb{M}_-]\}=0$. The relations were checked on the cells, so the frame is the body's cell algebra in another notation, not a larger one.
 
 The pair operator of the body is the same cell operator, written in gammas:
 
@@ -344,7 +344,7 @@ $$
 
 Each term $i\gamma_\mu[\mathbb{M}_-]=i\,(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}})=i^2L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ has already spent the product $i^2=-1$, so the cell form has no imaginary unit left. The collapse removes the $i$, not the cell: $i\gamma_0[\mathbb{M}_-]=-R_{\vec e_x}^{\mathrm{pau}}\neq-I_4$, so the time derivative is multiplied by the right multiplication by $\vec e_x$, not by a number.
 
-$\gamma_5[\mathbb{M}_-]$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5[\mathbb{M}_-]$ on the Dirac module.
+$\gamma_5$ is the reference-frame cell of the chirality $\Gamma$; the central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

@@ -224,13 +224,13 @@ The gammas are the frame cells of the body, written as single letters; they form
 Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
 The Euclidean frame of the lattice sections is built from these cells, with a factor of $i$ on the three spatial legs:
@@ -251,13 +251,13 @@ $$
 
 The four cells anticommute, so moving $\gamma^E_4$ to the right past the other three flips the sign:
 $$
-\gamma^E_1\gamma^E_2\gamma^E_3\gamma^E_4=-\gamma^E_5=\gamma_5[\mathbb{M}_-] .
+\gamma^E_1\gamma^E_2\gamma^E_3\gamma^E_4=-\gamma^E_5=\gamma_5 .
 $$
-In particular $\gamma^E_5=-\gamma_5[\mathbb{M}_-]$, and a right-chiral projector written with the Euclidean chirality reads $P_R=\tfrac12(I_4-\gamma^E_5)=\tfrac12(I_4+\gamma_5[\mathbb{M}_-])$.
+In particular $\gamma^E_5=-\gamma_5$, and a right-chiral projector written with the Euclidean chirality reads $P_R=\tfrac12(I_4-\gamma^E_5)=\tfrac12(I_4+\gamma_5)$.
 
-The sixteen graded products of the five cells — the unit, the four cells, the six products of two, the four products of three and $\gamma_5[\mathbb{M}_-]$ — form a basis of $M_4(\mathbb{C})$, so every two-sided operator is a complex combination of them.
+The sixteen graded products of the five cells — the unit, the four cells, the six products of two, the four products of three and $\gamma_5$ — form a basis of $M_4(\mathbb{C})$, so every two-sided operator is a complex combination of them.
 
-$\gamma_5[\mathbb{M}_-]$ is the reference-frame representative of the chirality operator. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5[\mathbb{M}_-]$.
+$\gamma_5$ is the reference-frame representative of the chirality operator. The abstract central grading $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, with $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; on the Dirac module it is represented by the cell $\chi=-iR_{\vec e_z}^{\mathrm{pau}}=\gamma_5$.
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -273,7 +273,7 @@ On the spinor module the pair reduces to the single cell equation $(\mathbb{D}-m
 The pair and the cell equation are the same statement in two readings. The two lines of the pair are the two chiral halves of $\psi$: with
 
 $$
-P_R=\tfrac12(I_4+\gamma_5[\mathbb{M}_-]),\qquad P_L=\tfrac12(I_4-\gamma_5[\mathbb{M}_-]),\qquad \psi_R=P_R\psi,\qquad \psi_L=P_L\psi,
+P_R=\tfrac12(I_4+\gamma_5),\qquad P_L=\tfrac12(I_4-\gamma_5),\qquad \psi_R=P_R\psi,\qquad \psi_L=P_L\psi,
 $$
 
 the projections of the cell equation are
@@ -283,14 +283,14 @@ i\gamma\cdot\partial\,\psi_R=m\psi_L,\qquad
 i\gamma\cdot\partial\,\psi_L=m\psi_R .
 $$
 
-The gradient anticommutes with $\gamma_5[\mathbb{M}_-]$, so it carries each chirality into the other, and the mass couples the two lines. At $m=0$ each line stands alone, $\tilde{\nabla}\tilde\Psi_R=0$ and $\tilde{\nabla}^{\natural}\tilde\Psi_L=0$, and the two chiralities decouple.
+The gradient anticommutes with $\gamma_5$, so it carries each chirality into the other, and the mass couples the two lines. At $m=0$ each line stands alone, $\tilde{\nabla}\tilde\Psi_R=0$ and $\tilde{\nabla}^{\natural}\tilde\Psi_L=0$, and the two chiralities decouple.
 
 **The identities of the frame.** In the $\gamma$ reading the indices run over $\mu=0,1,2,3$, so the lattice direction $\mu=4$ of the previous sections is $\mu=0$ here. With $\epsilon_{0123}=+1$,
 $$
 \{\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
 (\gamma_k[\mathbb{M}_-])^2=-I_4,\qquad
-\gamma_5[\mathbb{M}_-]^2=I_4,\qquad
-\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0,
+\gamma_5^2=I_4,\qquad
+\{\gamma_\mu[\mathbb{M}_-],\gamma_5\}=0,
 $$
 $$
 [\gamma_\mu[\mathbb{M}_-],\gamma_\nu[\mathbb{M}_-]]=2\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\quad(\mu\ne\nu),\qquad
@@ -299,7 +299,7 @@ $$
 $$
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-])=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{tr}(\gamma_5[\mathbb{M}_-]\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
+\mathrm{tr}(\gamma_5\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])=-4i\,\epsilon_{\mu\nu\rho\sigma},
 $$
 $$
 \mathrm{tr}(\gamma_\mu[\mathbb{M}_-]\gamma_\nu[\mathbb{M}_-]\gamma_\rho[\mathbb{M}_-]\gamma_\sigma[\mathbb{M}_-])

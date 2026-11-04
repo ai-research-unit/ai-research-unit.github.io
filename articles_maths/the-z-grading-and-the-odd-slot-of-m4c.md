@@ -179,22 +179,22 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the cells.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}},
 $$
 
-with $\gamma_\mu[\mathbb{M}_-]=v_\mu$ and $\gamma_5[\mathbb{M}_-]=i\omega$ in the matrix representation.
+with $\gamma_\mu[\mathbb{M}_-]=v_\mu$ and $\gamma_5=i\omega$ in the matrix representation.
 
 The grade table in the gamma basis is
 $$
 \begin{array}{c|cccc}
  & t & x & y & z\\ \hline
-t & I & -i\gamma_0[\mathbb{M}_-] & i\gamma_{123}[\mathbb{M}_-] & i\gamma_5[\mathbb{M}_-]\\
+t & I & -i\gamma_0[\mathbb{M}_-] & i\gamma_{123}[\mathbb{M}_-] & i\gamma_5\\
 x & \gamma_{23}[\mathbb{M}_-] & -i\gamma_{023}[\mathbb{M}_-] & -i\gamma_1[\mathbb{M}_-] & \gamma_{01}[\mathbb{M}_-]\\
 y & -\gamma_{13}[\mathbb{M}_-] & i\gamma_{013}[\mathbb{M}_-] & -i\gamma_2[\mathbb{M}_-] & \gamma_{02}[\mathbb{M}_-]\\
 z & \gamma_{12}[\mathbb{M}_-] & -i\gamma_{012}[\mathbb{M}_-] & -i\gamma_3[\mathbb{M}_-] & \gamma_{03}[\mathbb{M}_-]
 \end{array}
 $$
-with the correspondence $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, $\vec e_y\mapsto\gamma_3[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$, $\vec e_z\mapsto\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ and $i\mapsto i\gamma_5[\mathbb{M}_-]$.
+with the correspondence $e_t\mapsto I$, $\vec e_x\mapsto\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, $\vec e_y\mapsto\gamma_3[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]$, $\vec e_z\mapsto\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]$ and $i\mapsto i\gamma_5$.
 
 Over $\mathbb{R}$ the dictionary is complex-linear: the products of the five span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 

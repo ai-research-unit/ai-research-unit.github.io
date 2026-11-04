@@ -4,15 +4,15 @@
 
 **The question.** What does the operator chirality of the biquaternion algebra predict, and what does it leave to physics?
 
-**The answer in one line.** The chirality operator of a frame is a pure right multiplier, $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}$ in the axis-free frame; the Dirac operator is a pure left multiplier; the two commute because they sit on opposite sides; and the mass is the one term of the equation that has no side at all.
+**The answer in one line.** The chirality operator of a frame is a pure right multiplier, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$ in the axis-free frame; the Dirac operator is a pure left multiplier; the two commute because they sit on opposite sides; and the mass is the one term of the equation that has no side at all.
 
-**What this article does.** It restates the mathematics in the form a physicist reads, identifies the operator with the $\gamma_5[\mathbb{M}_-]$ of the Dirac equation, and states what the algebra does not supply. The proofs are in *Operator Chirality on the Biquaternion Algebra*, one click away, and nothing here is proved twice.
+**What this article does.** It restates the mathematics in the form a physicist reads, identifies the operator with the $\gamma_5$ of the Dirac equation, and states what the algebra does not supply. The proofs are in *Operator Chirality on the Biquaternion Algebra*, one click away, and nothing here is proved twice.
 
 **What it does not do.** It does not derive a gauge group, a matter content or a mass value. It does not claim that the sides are two inequivalent representations of the Lorentz group: they are not, and §*What the Algebra Does Not Supply* states that limit in full.
 
 **The order of the article.** Section §*Operator Chirality in One Page* gives the definition and the dimensions. Section §*The Chirality Operator Is Gamma Five* identifies the operator and its four properties. Section §*The Dirac Equation Reads the Sides* shows what the sides do to the equation and where the mass sits. Section §*The Eight Objects the Physics Does Not Need* takes the list of unrelated mathematical objects and states, for each, the physical reason it is not needed. Section §*What the Earlier Reading Adjoined* records the route this article replaces, and §*What the Algebra Does Not Supply* records the one thing the replacement does not buy.
 
-**Conventions.** The algebra, the cells and the two slots are those of *Algebra and Element Conventions* and *Operator Family Conventions*; the frame cells $\gamma_0[\mathbb{M}_-],\dots,\gamma_3[\mathbb{M}_-]$, the gradient and the array rule are those of *Matrix Representations Conventions* and *Operator and Calculus Conventions*, and none is redefined here. This article's own glyph is the chirality cell of the axis-free frame, $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}$, printed as $\gamma_5[\mathbb{M}_-]$ throughout.
+**Conventions.** The algebra, the cells and the two slots are those of *Algebra and Element Conventions* and *Operator Family Conventions*; the frame cells $\gamma_0[\mathbb{M}_-],\dots,\gamma_3[\mathbb{M}_-]$, the gradient and the array rule are those of *Matrix Representations Conventions* and *Operator and Calculus Conventions*, and none is redefined here. This article's own glyph is the chirality cell of the axis-free frame, $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$, printed as $\mathsf{V}^{\mathrm{vol}}$ throughout.
 
 ## The Results It Uses
 
@@ -50,34 +50,34 @@
 
 **The identification.** The product of the four generators is a cell, and it is the chirality operator:
 $$
-\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
+\mathsf{V}^{\mathrm{vol}}=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z},
 $$
-the last equality because $L_{e_t}=\mathrm I$. It is the cell that the Dirac literature calls $\gamma_5[\mathbb{M}_-]$, written with no matrix.
+the last equality because $L_{e_t}=\mathrm I$. It is the cell that the Dirac literature calls $\gamma_5$, written with no matrix.
 
 **Its properties.** Four, each verified by multiplying cells:
 
 | Property | Value | Physical reading |
 | --- | --- | --- |
-| square | $\gamma_5[\mathbb{M}_-]^2=\mathrm I$ | an involution, so a chirality |
-| trace | $\operatorname{tr}\gamma_5[\mathbb{M}_-]=0$ | the two chiral halves are of equal size |
+| square | $(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$ | an involution, so a chirality |
+| trace | $\operatorname{tr}\mathsf{V}^{\mathrm{vol}}=0$ | the two chiral halves are of equal size |
 | spectrum | $+1$ and $-1$, two dimensions each | two chiral components, two states each |
-| with the frame | $\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0$ | the frame is odd under the right multiplication by $\vec e_z$ |
+| with the frame | $\{\gamma_\mu[\mathbb{M}_-],\mathsf{V}^{\mathrm{vol}}\}=0$ | the frame is odd under the right multiplication by $\vec e_z$ |
 
-**The side, which is the point of the article.** $\gamma_5[\mathbb{M}_-]$ multiplies on the **right**. The gradient multiplies on the **left**. This is not a detail of notation: it is the reason the two operators commute,
+**The side, which is the point of the article.** $\mathsf{V}^{\mathrm{vol}}$ multiplies on the **right**. The gradient multiplies on the **left**. This is not a detail of notation: it is the reason the two operators commute,
 $$
 L(a)\,R(b)=R(b)\,L(a)\quad\text{for all }a,b,
 $$
 so that
 $$
-[\,L(\tilde\nabla),\gamma_5[\mathbb{M}_-]\,]=0 .
+[\,L(\tilde\nabla),\mathsf{V}^{\mathrm{vol}}\,]=0 .
 $$
 A left multiplier and a right multiplier never fail to commute. The chirality operator and the Dirac operator are the two sides of the same algebra, and their commutation is a consequence of the sides, not a computation about gammas.
 
-**The chirality of a field.** Since $\gamma_5[\mathbb{M}_-]$ is an operator on $\mathbb{B}$, every biquaternion splits into two chiral halves,
+**The chirality of a field.** Since $\mathsf{V}^{\mathrm{vol}}$ is an operator on $\mathbb{B}$, every biquaternion splits into two chiral halves,
 $$
-\tilde\Psi=\tilde\Psi_++\tilde\Psi_-,\qquad \gamma_5[\mathbb{M}_-]\tilde\Psi_\pm=\pm\tilde\Psi_\pm,
+\tilde\Psi=\tilde\Psi_++\tilde\Psi_-,\qquad \mathsf{V}^{\mathrm{vol}}\tilde\Psi_\pm=\pm\tilde\Psi_\pm,
 $$
-with $\tilde\Psi_\pm=\tfrac12(\mathrm I\pm\gamma_5[\mathbb{M}_-])\tilde\Psi$. The two halves are two-dimensional over $\mathbb{C}$ and each is closed under left multiplication, so each is a copy of the simple left module $S$. That sentence is the whole physical content and the whole physical limit of the construction: the halves exist, and they are copies. §*What the Algebra Does Not Supply* takes it up.
+with $\tilde\Psi_\pm=\tfrac12(\mathrm I\pm\mathsf{V}^{\mathrm{vol}})\tilde\Psi$. The two halves are two-dimensional over $\mathbb{C}$ and each is closed under left multiplication, so each is a copy of the simple left module $S$. That sentence is the whole physical content and the whole physical limit of the construction: the halves exist, and they are copies. §*What the Algebra Does Not Supply* takes it up.
 
 ## The Dirac Equation Reads the Sides
 
@@ -91,9 +91,9 @@ $$
 $$
 so the conjugate member of the pair is the same operator read on the other side. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal. This is the point recorded where the corpus separates its three forms of the equation — the pair written on the algebra holds without any choice of module.
 
-**The massless case, and the chirality split.** At $m=0$ the pair decouples into $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $\gamma_5[\mathbb{M}_-]$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each chirality**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under $\gamma_5[\mathbb{M}_-]$, so a solution of definite chirality can be chosen.
+**The massless case, and the chirality split.** At $m=0$ the pair decouples into $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$. For a null gradient the solution space of either member is two-dimensional over $\mathbb{C}$, and $\mathsf{V}^{\mathrm{vol}}$ acts on it with the two eigenvalues $+1$ and $-1$, one state each. So a massless biquaternion Dirac field carries **one state of each chirality**, which is the standard statement that a massless Dirac fermion has both helicities. The mechanism is the commutation above: the solution space is stable under $\mathsf{V}^{\mathrm{vol}}$, so a solution of definite chirality can be chosen.
 
-**Why the two displays do not conflict.** In the Clifford display the Dirac operator anticommutes with $\gamma_5[\mathbb{M}_-]$; in the cell display it commutes, because a left multiplier commutes with a right one. The two are consistent and they say the same physical thing from opposite sides. Anticommutation means the operator exchanges the two halves of the space it acts on; commutation means it preserves the two halves of $\mathbb{B}$. In both displays the conclusion for a solution is identical: if $\tilde\Psi$ is a massless solution then $\gamma_5[\mathbb{M}_-]\tilde\Psi$ is one too, so the solution space is stable under the chirality operator and the two signs are available on it. The physical statement is therefore independent of the display, which is what the operator reading is for.
+**Why the two displays do not conflict.** In the Clifford display the Dirac operator anticommutes with $\mathsf{V}^{\mathrm{vol}}$; in the cell display it commutes, because a left multiplier commutes with a right one. The two are consistent and they say the same physical thing from opposite sides. Anticommutation means the operator exchanges the two halves of the space it acts on; commutation means it preserves the two halves of $\mathbb{B}$. In both displays the conclusion for a solution is identical: if $\tilde\Psi$ is a massless solution then $\mathsf{V}^{\mathrm{vol}}\tilde\Psi$ is one too, so the solution space is stable under the chirality operator and the two signs are available on it. The physical statement is therefore independent of the display, which is what the operator reading is for.
 
 **The mass is the term with no side.** The mass term multiplies the field by the scalar $m$, and a central scalar is the one operator that is simultaneously a left multiplier and a right multiplier. It is therefore the only term of the equation that has no side, and it is exactly the term that couples the two sides. The algebra says this without any computation: a term that couples the sides cannot itself belong to one of them.
 
@@ -110,17 +110,17 @@ so the conjugate member of the pair is the same operator read on the other side.
 | Object | What a physicist might expect it to do | Why the physics does not need it |
 | --- | --- | --- |
 | a root | supply the axis along which chirality is defined | the axis is the frame's third direction, declared with the frame |
-| an idempotent | supply a state or a superselection sector | the chirality operator is an involution, $\gamma_5[\mathbb{M}_-]^2=\mathrm I$, not a projector |
+| an idempotent | supply a state or a superselection sector | the chirality operator is an involution, $(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$, not a projector |
 | a Peirce decomposition | supply the two chiral halves | the halves are the eigenspaces of one operator, not four corners of two idempotents |
 | a Peirce basis | supply the working basis | a basis is a display; the side is read without one |
 | a spinor | supply the object that carries chirality | the operator is defined before any ideal is chosen |
-| a Pauli matrix | supply $\gamma_5[\mathbb{M}_-]$ | the same operator is the single cell $-iR_{\vec e_z}$ |
+| a Pauli matrix | supply $\mathsf{V}^{\mathrm{vol}}$ | the same operator is the single cell $-iR_{\vec e_z}$ |
 | an ideal | supply the state space | the state space is $\mathbb{B}$ itself, and no point of a projective line is chosen |
-| a Clifford algebra | supply the anticommutation $\{\gamma_\mu[\mathbb{M}_-],\gamma_5[\mathbb{M}_-]\}=0$ | the anticommutation holds for five cells; it is computed, not postulated |
+| a Clifford algebra | supply the anticommutation $\{\gamma_\mu[\mathbb{M}_-],\mathsf{V}^{\mathrm{vol}}\}=0$ | the anticommutation holds for five cells; it is computed, not postulated |
 
-**No root.** A root $\tilde\Xi$ with $\tilde\Xi^2=e_t$ is a direction chosen in the algebra, and it is needed when a Peirce decomposition is wanted. The frame's third direction already fixes the operator, so nothing further is chosen. A change of root changes the Peirce data and leaves $\gamma_5[\mathbb{M}_-]$ untouched.
+**No root.** A root $\tilde\Xi$ with $\tilde\Xi^2=e_t$ is a direction chosen in the algebra, and it is needed when a Peirce decomposition is wanted. The frame's third direction already fixes the operator, so nothing further is chosen. A change of root changes the Peirce data and leaves $\mathsf{V}^{\mathrm{vol}}$ untouched.
 
-**No idempotent.** An idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, and it is the algebraic form of a projection, hence of a state-preparation. $\gamma_5[\mathbb{M}_-]$ satisfies $\gamma_5[\mathbb{M}_-]^2=\mathrm I$ and is not a projection: it is a sign, and a sign is not a state. The projectors $\tfrac12(\mathrm I\pm\gamma_5[\mathbb{M}_-])$ are built from it when a projection is wanted, and they are derived objects.
+**No idempotent.** An idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, and it is the algebraic form of a projection, hence of a state-preparation. $\mathsf{V}^{\mathrm{vol}}$ satisfies $(\mathsf{V}^{\mathrm{vol}})^2=\mathrm I$ and is not a projection: it is a sign, and a sign is not a state. The projectors $\tfrac12(\mathrm I\pm\mathsf{V}^{\mathrm{vol}})$ are built from it when a projection is wanted, and they are derived objects.
 
 **No Peirce decomposition and no Peirce basis.** A Peirce decomposition needs two idempotents and returns four lines. The chiral splitting is one operator and returns two halves. Four lines and two halves are not the same partition, and the difference is measurable: the Peirce lines are one-dimensional corners of $\mathbb{B}$, and the chiral halves are two-dimensional left modules.
 
@@ -128,9 +128,9 @@ so the conjugate member of the pair is the same operator read on the other side.
 
 **No Pauli matrix.** The Pauli display is the tensor factorisation $\mathbb{C}^2\otimes\mathbb{C}^2$, and the Pauli matrices are the arrays of the cells in that display. The operator exists in the axis-free frame as the single cell $-iR_{\vec e_z}$ and looks the same in the Pauli frame. The display is a convenience for printing; the side is not.
 
-**No ideal.** The minimal left ideals of $\mathbb{B}$ are indexed by the points of a projective line, and no point is distinguished. An operator that multiplied on one side and selected a point would be an ideal in disguise. $\gamma_5[\mathbb{M}_-]$ selects nothing: it multiplies, and its eigenspaces exist in every frame.
+**No ideal.** The minimal left ideals of $\mathbb{B}$ are indexed by the points of a projective line, and no point is distinguished. An operator that multiplied on one side and selected a point would be an ideal in disguise. $\mathsf{V}^{\mathrm{vol}}$ selects nothing: it multiplies, and its eigenspaces exist in every frame.
 
-**No Clifford algebra.** This deserves a paragraph of its own, because the Clifford reading is the one a physicist is most likely to reach for. A Clifford algebra is generated by vectors with $\{e_i,e_j\}=2g_{ij}$, and in it $\gamma_5[\mathbb{M}_-]$ is the product of the generators by construction. In the biquaternion algebra the relation holds as an identity of five cells, verified by multiplying them, and it is not an axiom. What it fixes is squares and anticommutators; what operator chirality needs is the side, and the relation says nothing about sides. A Clifford algebra also fixes a dimension and a signature, while the sides exist in every dimension. So the Clifford reading is a display of the same algebra, and it is a correct display; it is not a foundation, and nothing in the physics is derived from it that the cells do not already give.
+**No Clifford algebra.** This deserves a paragraph of its own, because the Clifford reading is the one a physicist is most likely to reach for. A Clifford algebra is generated by vectors with $\{e_i,e_j\}=2g_{ij}$, and in it $\mathsf{V}^{\mathrm{vol}}$ is the product of the generators by construction. In the biquaternion algebra the relation holds as an identity of five cells, verified by multiplying them, and it is not an axiom. What it fixes is squares and anticommutators; what operator chirality needs is the side, and the relation says nothing about sides. A Clifford algebra also fixes a dimension and a signature, while the sides exist in every dimension. So the Clifford reading is a display of the same algebra, and it is a correct display; it is not a foundation, and nothing in the physics is derived from it that the cells do not already give.
 
 **Why no anticommutation can give the sign.** It is worth stating the reason, because it explains why the side is the right notion and not merely an available one. If the chirality operator were characterised by anticommuting with the frame, it would have to anticommute with $L(e_t)$, which is the identity, and an operator anticommuting with the identity is zero. There is no such operator. The sign in this algebra is not produced by an anticommutator; it is produced by the side.
 
@@ -144,15 +144,15 @@ and reads $\chi$ on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operat
 
 **What it got right.** The array. The operator chirality is the same cell,
 $$
-\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
+\mathsf{V}^{\mathrm{vol}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
 $$
 whose Peirce array is $\operatorname{diag}(-I_2,I_2)$ — the section that reads it in that display is §*The Legacy Pauli Gamma Formulation* — and whose axis-free array is a signed permutation. The two readings agree on every number they print.
 
 **What it cost.** Three structures that the physics does not need: an adjoined root, a complexification of the real algebra, and a declaration of a module. Each of them is a choice, and each of them is invisible in the array, which is why the two readings were taken for one another for as long as they were.
 
-**The relation between them.** The Peirce sign of the root aligned with the third axis is $P=R_{i\vec e_z}=-\gamma_5[\mathbb{M}_-]$, and the projector of the aligned Peirce idempotent is
+**The relation between them.** The Peirce sign of the root aligned with the third axis is $P=R_{i\vec e_z}=-\mathsf{V}^{\mathrm{vol}}$, and the projector of the aligned Peirce idempotent is
 $$
-R(\tilde\Pi_+)=\tfrac12(\mathrm I+P)=\tfrac12(\mathrm I-\gamma_5[\mathbb{M}_-]),
+R(\tilde\Pi_+)=\tfrac12(\mathrm I+P)=\tfrac12(\mathrm I-\mathsf{V}^{\mathrm{vol}}),
 $$
 so for that one root the Peirce projector and the chiral projector are the same operator. For any other root they are not. The coincidence is a coincidence of arrays for one root out of a projective line, and stating it as a coincidence rather than as an identity is what removes the need for the root.
 
@@ -162,9 +162,9 @@ so for that one root the Peirce projector and the chiral projector are the same 
 
 **What the physics needs instead.** The Standard Model chirality distinguishes two **inequivalent** Lorentz modules: the left-handed Weyl spinor $S$ and its conjugate $S^{\mathrm{c}}$. Those two are not two copies of one module, and the biquaternion algebra contains only the first. The distinction is a property of the pair $S\oplus S^{\mathrm{c}}$, and it is the content of *The Unpolarized Module of the Biquaternion Algebra*.
 
-**So what has been gained.** The operator chirality supplies, without adjoining anything, the object that the physics calls $\gamma_5[\mathbb{M}_-]$: an involution of the algebra, of trace zero, with two equal halves, commuting with the Dirac operator and anticommuting with the frame. That is what a Lagrangian needs in order to write a chiral projector, a chiral current or an axial anomaly coefficient. What it does not supply is the inequivalence of the two halves, and no operator of $\mathbb{B}$ can supply it, because every operator of $\mathbb{B}$ grades copies.
+**So what has been gained.** The operator chirality supplies, without adjoining anything, the object that the physics calls $\mathsf{V}^{\mathrm{vol}}$: an involution of the algebra, of trace zero, with two equal halves, commuting with the Dirac operator and anticommuting with the frame. That is what a Lagrangian needs in order to write a chiral projector, a chiral current or an axial anomaly coefficient. What it does not supply is the inequivalence of the two halves, and no operator of $\mathbb{B}$ can supply it, because every operator of $\mathbb{B}$ grades copies.
 
-**A biquaternion field.** A field $\tilde\Psi\in\mathbb{B}$ therefore does carry a chirality, in the precise sense that $\gamma_5[\mathbb{M}_-]\tilde\Psi_\pm=\pm\tilde\Psi_\pm$; and both halves are left-handed in the Lorentz sense, since both are copies of $S$. A reader who wants the Standard Model pair must pass to $\Delta=S\oplus S^{\mathrm{c}}$, where the same array grades two inequivalent modules and the same operator does the physical work.
+**A biquaternion field.** A field $\tilde\Psi\in\mathbb{B}$ therefore does carry a chirality, in the precise sense that $\mathsf{V}^{\mathrm{vol}}\tilde\Psi_\pm=\pm\tilde\Psi_\pm$; and both halves are left-handed in the Lorentz sense, since both are copies of $S$. A reader who wants the Standard Model pair must pass to $\Delta=S\oplus S^{\mathrm{c}}$, where the same array grades two inequivalent modules and the same operator does the physical work.
 
 ## Limits
 
@@ -173,8 +173,8 @@ so for that one root the Peirce projector and the chiral projector are the same 
 - **No matter content and no generations.** The number of copies is an input.
 - **No mass value and no spectrum.** The algebra fixes the slot of the mass term, which is the centre, and the number $m$ is dynamical.
 - **No dynamics.** Nothing here says how a field moves between the sides.
-- **The left/right naming is a convention.** Which half is called left is fixed by the sign in $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}$; exchanging the name changes nothing.
-- **The frame is still a choice.** $\gamma_5[\mathbb{M}_-]$ is the volume cell of a declared frame; a different frame gives a different fifth cell and the same algebra.
+- **The left/right naming is a convention.** Which half is called left is fixed by the sign in $\mathsf{V}^{\mathrm{vol}}=-iR_{\vec e_z}$; exchanging the name changes nothing.
+- **The frame is still a choice.** $\mathsf{V}^{\mathrm{vol}}$ is the volume cell of a declared frame; a different frame gives a different fifth cell and the same algebra.
 - **No claim that the Clifford reading is wrong.** It is a correct display of the same operators, and the article says where it stops being a foundation.
 
 ## The Legacy Pauli Gamma Formulation
@@ -185,7 +185,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 | Statement | In cells | In the gamma frame |
 | --- | --- | --- |
-| the chirality operator | $-iR_{\vec e_z}$ | $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
+| the chirality operator | $-iR_{\vec e_z}$ | $\mathsf{V}^{\mathrm{vol}}=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$ |
 | its side | right | the fifth generator of the frame |
 | the Dirac operator | $L(\tilde\nabla)$ | $i\gamma^\mu[\mathbb{M}_-]\,\partial/\partial x_\mu$ in the Clifford display |
 | their relation | commutation, because the sides differ | anticommutation in the Clifford display |
@@ -195,9 +195,9 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 ## Summary
 
-Operator chirality is the side on which an operator multiplies. The chirality operator of a frame is its volume cell, $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}$, a pure right multiplier, while the Dirac operator is the pure left multiplier $L(\tilde\nabla)$; the two commute, because a left multiplier never fails to commute with a right one, and that commutation is why a massless field carries states of both chiralities. The mass is the central scalar, the one term of the equation with no side, and therefore the term that couples the two.
+Operator chirality is the side on which an operator multiplies. The chirality operator of a frame is its volume cell, $\mathsf{V}^{\mathrm{vol}}=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}$, a pure right multiplier, while the Dirac operator is the pure left multiplier $L(\tilde\nabla)$; the two commute, because a left multiplier never fails to commute with a right one, and that commutation is why a massless field carries states of both chiralities. The mass is the central scalar, the one term of the equation with no side, and therefore the term that couples the two.
 
-The construction needs none of the eight objects that usually carry the name: no root, no idempotent, no Peirce decomposition, no Peirce basis, no spinor, no Pauli matrix, no ideal and no Clifford algebra. Each of them enters the older route as a choice, and each of them is invisible in the array, which is why the arrays were mistaken for the notion. The array of $\gamma_5[\mathbb{M}_-]$ is the same in every reading; the structures that were adjoined to obtain it are not needed to obtain it.
+The construction needs none of the eight objects that usually carry the name: no root, no idempotent, no Peirce decomposition, no Peirce basis, no spinor, no Pauli matrix, no ideal and no Clifford algebra. Each of them enters the older route as a choice, and each of them is invisible in the array, which is why the arrays were mistaken for the notion. The array of $\mathsf{V}^{\mathrm{vol}}$ is the same in every reading; the structures that were adjoined to obtain it are not needed to obtain it.
 
 The limit is stated once and it is not small: the two chiral halves of $\mathbb{B}$ are copies of one Lorentz module, so the grading of the algebra is vector-like, and the inequivalence of $S$ and $S^{\mathrm{c}}$ that the Standard Model uses is a property of the conjugate module rather than of $\mathbb{B}$.
 
@@ -210,13 +210,13 @@ The limit is stated once and it is not small: the two chiral halves of $\mathbb{
 | left slot, right slot, both slots | operator chirality |
 | $\tilde\nabla$ | the biquaternion gradient, acting by left multiplication |
 | $\tilde\nabla^{\natural}$ | its natural conjugate, related to the other side by $\mathsf C L(a^{\natural})\mathsf C=R(a)$ |
-| $\gamma_5[\mathbb{M}_-]=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$ | the chirality operator of the frame, a pure right multiplier |
-| $\tfrac12(\mathrm I\pm\gamma_5[\mathbb{M}_-])$ | the chiral projectors, derived from the sign |
+| $\mathsf{V}^{\mathrm{vol}}=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$ | the chirality operator of the frame, a pure right multiplier |
+| $\tfrac12(\mathrm I\pm\mathsf{V}^{\mathrm{vol}})$ | the chiral projectors, derived from the sign |
 | $\tilde\Psi_\pm$ | the two chiral halves of a biquaternion field |
 | $S$ | the simple left module; both halves of $\mathbb{B}$ are copies of it |
 | $S^{\mathrm{c}}$ | the conjugate module, inequivalent to $S$ over $\mathbb{C}$ |
 | $\Delta=S\oplus S^{\mathrm{c}}$ | the Dirac module, where the same array grades two inequivalent modules |
-| $P=R_{i\vec e_z}=-\gamma_5[\mathbb{M}_-]$ | the Peirce sign of the aligned root, a coincidence of arrays |
+| $P=R_{i\vec e_z}=-\mathsf{V}^{\mathrm{vol}}$ | the Peirce sign of the aligned root, a coincidence of arrays |
 | $m$ | the mass, the central scalar of the equation |
 | $\mathrm{pau}$, $\mathrm{axf}$ | the Peirce and axis-free displays of the same operators |
 

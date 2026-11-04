@@ -18,7 +18,7 @@ $$
 \Gamma_t:=iR_{\vec e_x}^{\mathrm{axf}},\qquad \Gamma_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad \chi:=-iR_{\vec e_z}^{\mathrm{axf}}=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
 
-the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame, so the display label is written at first mention and dropped. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\chi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu[\mathbb{M}_-]=\Gamma_\mu$ and $\gamma_5[\mathbb{M}_-]=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
+the label $\mathrm{axf}$ naming the axis-free frame of the regular representation as in *Matrix Representations Conventions*. **The coordinate frame is $\mathbb{M}_-$ throughout**, the material frame with $x_0=ct'$, and no formula below crosses into the $\mathbb{B}$ frame, so the display label is written at first mention and dropped. In that frame $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ and $\chi^2=I_4$, with $\varepsilon=(1,-1,-1,-1)$ and $\chi$ anticommuting with every $\Gamma_\mu$. The projectors are $P_L=\tfrac12(I_4-\chi)$ and $P_R=\tfrac12(I_4+\chi)$, and the Dirac adjoint is $\psi^{\dagger}iR_{\vec e_x}$. Where the Dirac matrices are named they are these same cells in this same frame, $\gamma_\mu[\mathbb{M}_-]=\Gamma_\mu$ and $\gamma_5=\chi$. Every identity stated below was checked by exact matrix multiplication on the Dirac module, on eight pairs $(g_V,g_A)$ and all four values of $\mu$, to a maximum deviation of $2.3\times10^{-16}$.
 
 ## The Process, the Contact and the Rates
 
@@ -27,7 +27,7 @@ the label $\mathrm{axf}$ naming the axis-free frame of the regular representatio
 The weak charged current carries one unit of charge and one unit of the weak isospin ladder. In the standard notation, read in the frame declared above, with $u$ the upper and $d$ the lower member of a doublet,
 
 $$
-J^{+}_\mu=\psi^{\dagger}iR_{\vec e_x}_{\mathrm u}\,\gamma_\mu[\mathbb{M}_-](1-\gamma_5[\mathbb{M}_-])\psi_{\mathrm d},
+J^{+}_\mu=\psi^{\dagger}iR_{\vec e_x}_{\mathrm u}\,\gamma_\mu[\mathbb{M}_-](1-\gamma_5)\psi_{\mathrm d},
 $$
 
 and the interaction Lagrangian is $\mathcal{L}_{\mathrm{cc}}=-\frac{g}{2\sqrt2}\sum_\mu\varepsilon_\mu\big(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\big)$, with $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. Eliminating the W at momenta small against its mass replaces the propagator by $-g_{\mu\nu}/M_W^2$ and leaves a contact,
@@ -229,7 +229,7 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
 | $L_aR_b$ | Cell, $L_aR_b\psi=a\psi b$; applying it twice gives $a^2\psi b^2$ |
 | $\Gamma_t=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$ | Frame cells, $\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ |
-| $\chi=-iR_{\vec e_z}$ | Chirality cell, $\chi^2=I_4$, the image of $\gamma_5[\mathbb{M}_-]$ |
+| $\chi=-iR_{\vec e_z}$ | Chirality cell, $\chi^2=I_4$, the image of $\gamma_5$ |
 | $P_L=\tfrac12(I_4-\chi)$, $P_R=\tfrac12(I_4+\chi)$ | Chiral projectors, $P_LP_R=0$ |
 | $\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$ | Peirce nilpotents, $\vec\Upsilon_a^2=0$; they are the canonical frame's $\vec\Upsilon_-$ and $\vec\Upsilon_+$ |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)=\vec\Upsilon_1\vec\Upsilon_2$ | Hermitian idempotent of the algebra |

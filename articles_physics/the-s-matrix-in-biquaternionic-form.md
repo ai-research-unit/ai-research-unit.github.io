@@ -336,13 +336,13 @@ The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a
 Here $L_a\Psi=a\Psi$ and $R_b\Psi=\Psi b$ are the left and right multiplications, and $L_{a}R_{b}$ is a cell: the two-sided operator of *Two-Sided Operators on the Biquaternion Algebra*. A single left multiplication is not enough — it would keep the frame inside the four-dimensional algebra, and $\mathrm{Cl}_{1,3}(\mathbb{C})$ needs the pair.
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}.
 $$
 
 The same in the axis-free display:
 
 $$
-\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
+\gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}.
 $$
 
 The squares follow from $i^2=-1$ and $\vec e_k^2=-e_t$:
@@ -370,20 +370,20 @@ $$
 $$
 and
 $$
-\gamma_5[\mathbb{M}_-]^2=(-i)^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_z}^{\mathrm{pau}})^2=(-1)(1)(-1)=e_t,
+\gamma_5^2=(-i)^2(L_{e_t}^{\mathrm{pau}})^2(R_{\vec e_z}^{\mathrm{pau}})^2=(-1)(1)(-1)=e_t,
 \qquad
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-],
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5,
 $$
 
 The same identities in the axis-free display:
 
 $$
-\gamma_5[\mathbb{M}_-]^2=(-i)^2(L_{e_t}^{\mathrm{axf}})^2(R_{\vec e_z}^{\mathrm{axf}})^2=(-1)(1)(-1)=e_t,
+\gamma_5^2=(-i)^2(L_{e_t}^{\mathrm{axf}})^2(R_{\vec e_z}^{\mathrm{axf}})^2=(-1)(1)(-1)=e_t,
 \qquad
-\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5[\mathbb{M}_-],
+\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-i\gamma_5,
 $$
 
-The chirality cell is therefore $\gamma_5[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the representative of chirality that the solutions article uses. The signs are those of the cell products, not a separate convention.
+The chirality cell is therefore $\gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, the representative of chirality that the solutions article uses. The signs are those of the cell products, not a separate convention.
 
 The cell $L_{a}R_{b}$ is the primitive: a pair of multipliers, with $L_{a}R_{b}\,L_{c}R_{d}=L_{ac}R_{db}$. The Feynman contraction is a sum of four cells, one per component, not a single cell:
 $$
