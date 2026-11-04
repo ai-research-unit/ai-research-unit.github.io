@@ -308,7 +308,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $Ϙ = ϙ_LP_L+ϙ_RP_R = \mathrm{diag}(ϙ_L,ϙ_L,ϙ_R,ϙ_R)$ | Charge operator on the module; $ϙ_L,ϙ_R$ unfixed parameters |
 | $D_\mu = \partial/\partial Q_\mu+\tfrac{i}{\hbar}A_\mu Ϙ$ | Covariant derivative of the chiral charge; $[D_\mu,D_\nu]=\tfrac{i}{\hbar}F_{\mu\nu}Ϙ$ |
 | $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
-| $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
+| $\Psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\Psi$ | Dirac bilinear, chirality-odd; $\psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ where the timelike cell swaps the chiral blocks |
 | $\mathcal{N}F = (i\partial/\partial t'+D_3)F - m_n i\,\overline{F}\,\vec e_z$ | Two-sided Dirac equation, $F\in\mathbb{B}$; bar is the coefficientwise conjugation |
 | $\gamma_\mu[\mathbb{M}_-]$, $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ | Nishijima's two-parameter group of the doubled Lanczos system |

@@ -389,7 +389,7 @@ a_1\longmapsto\lambda_+a_1,
 \qquad
 a_2\longmapsto\lambda_-a_2.
 $$
-A general element $Q_2=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
+A general element $Q_2=\xi_++\xi_-$ is not a spinor of one Peirce copy: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
 
 **Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $a_1,a_2\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
 $$

@@ -34,12 +34,12 @@ The gammas are a frame of this algebra. They appear once, in §The Legacy Pauli 
 
 $G_\mu$ is the Dirac field in the vector representation, the **s-vector**: a complex four-vector with the bilinears of the companion article,
 $$
-\Psi^{\dagger}C_0\Psi=-\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu+G^*_\nu G^*_\nu\bigr),\qquad
-\Psi^{\dagger}C_0\,iC_\mu\Psi=\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,G_\lambda\,c_{\lambda\mu\nu}\,G^*_\nu,
+\Psi^{\dagger}iC_0\Psi=-\tfrac12\sum_\nu\epsilon_\nu\bigl(G_\nu G_\nu+G^*_\nu G^*_\nu\bigr),\qquad
+\Psi^{\dagger}iC_0\,iC_\mu\Psi=\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,G_\lambda\,c_{\lambda\mu\nu}\,G^*_\nu,
 \qquad
-\Psi^{\dagger}C_0\,\Gamma\,iC_\mu\Psi=\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,G_\lambda\,\check c_{\lambda\mu\nu}\,G^*_\nu,
+\Psi^{\dagger}iC_0\,\Gamma\,iC_\mu\Psi=\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,G_\lambda\,\check c_{\lambda\mu\nu}\,G^*_\nu,
 $$
-with $\Psi$ the companion's Dirac spinor, $\Psi^{\dagger}$ its conjugation and $C_0$ the timelike cell, so that $\Psi^{\dagger}C_0$ is the Dirac adjoint. The three sit in the companion's slot order — $G$ in the first slot, $G^*$ in the last — and the axial one by $\Gamma\,iC_\mu=(-iC_5)(iC_\mu)=-i^2C_5C_\mu=C_5C_\mu$, one factor of $i$ spent on $i^2=-1$.
+with $\Psi$ the companion's Dirac spinor, $\Psi^{\dagger}$ its conjugation and $iC_0$ the timelike generator cell, so that $\Psi^{\dagger}iC_0$ is the Dirac adjoint. The three identities sit in the companion's slot order — $G$ in the first slot, $G^*$ in the last — and the axial one by $\Gamma\,iC_\mu=(-iC_5)(iC_\mu)=-i^2C_5C_\mu=C_5C_\mu$, one factor of $i$ spent on $i^2=-1$.
 
 The opposite attachment, $\sum\epsilon\epsilon\,G^*_\nu\check c_{\nu\mu\lambda}G_\lambda$, is a different sum, and the difference is exact — verified:
 $$
@@ -214,7 +214,7 @@ $$
 \qquad\Longrightarrow\qquad
 \tilde\nabla^{\natural}F=m\,\Gamma\,\overline F ,
 $$
-one factor of $i$ spent on $i^2=-1$. The mass therefore acts by right multiplication by the **chirality cell**, on the conjugate field, and it is the same cell that appears in $\Psi^{\dagger}C_0\,\Gamma\,iC_\mu\Psi$ above. $\Gamma$ is a pure right multiplication, and right multiplications by orthogonal units anticommute, so it anticommutes with all four generators: it is the chirality, not a fifth generator.
+one factor of $i$ spent on $i^2=-1$. The mass therefore acts by right multiplication by the **chirality cell**, on the conjugate field, and it is the same cell that appears in $\Psi^{\dagger}iC_0\,\Gamma\,iC_\mu\Psi$ above. $\Gamma$ is a pure right multiplication, and right multiplications by orthogonal units anticommute, so it anticommutes with all four generators: it is the chirality, not a fifth generator.
 
 **Which one the parent action uses.** The first-order Dirac equation of the parent action is the single compact equation of the s-vector carrier,
 $$
@@ -235,7 +235,7 @@ The conjugation on the first line is what makes the mass phase of $R$ the conjug
 
 $K_\mu$ is built from the two chiral halves, as in the source's Eq. (100):
 $$
-K_\mu=\frac{\Psi_R^{\dagger}C_0\,iC_\mu\Psi_R}{2\Psi_R^{\dagger}C_0\Psi_L}+\frac{\Psi_L^{\dagger}C_0\,iC_\mu\Psi_L}{2\Psi_L^{\dagger}C_0\Psi_R},
+K_\mu=\frac{\Psi_R^{\dagger}iC_0\,iC_\mu\Psi_R}{2\Psi_R^{\dagger}iC_0\Psi_L}+\frac{\Psi_L^{\dagger}iC_0\,iC_\mu\Psi_L}{2\Psi_L^{\dagger}iC_0\Psi_R},
 $$
 two currents weighted by the two chiral cross-norms. The source's normalisation is $K\cdot K=\sum_\mu\epsilon_\mu K_\mu K_\mu=1$ (Eq. 93), and its ground is the algebra's normed condition (Eq. 90), which equates the norm of the spinor to the norm of its current; a unit $K$ exists because the two are the same number. That normalisation is quoted here and not recomputed: the corpus's metric weights on the bilinears fix the direction of $K$ through the two terms of Eq. (100), and a numerical check of the normalisation in those weights did not reproduce the value one, so the statement is recorded as the source's.
 
@@ -247,7 +247,7 @@ R_\mu=R^0_\mu\exp\Bigl(-i\!\int\bigl(eA_\nu+mK_\nu\bigr)^*dx_\nu\Bigr),
 \qquad
 L_\mu=L^0_\mu\exp\Bigl(i\!\int\bigl(eA_\nu+mK_\nu\bigr)dx_\nu\Bigr),
 $$
-which depends on the path from a fixed initial point, and $K$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\Psi^{\dagger}C_0\Psi$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a gauge transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the spinor are the two halves of one complex vector.
+which depends on the path from a fixed initial point, and $K$ is form-invariant under the map: it is the same function of the mapped fields as of the original ones, so the map is invertible and the massless and massive solutions correspond one to one. This is the source's **non-integrable phase**: the mass is not a scalar multiplying $\Psi^{\dagger}iC_0\Psi$ but a unit complex vector, a direction in the complexified tangent space, and the phase it generates is path-dependent and is not removable by a gauge transformation of the s-vector. Its real part is the vector current and its imaginary part the axial current, so the phase and the "scale" of the spinor are the two halves of one complex vector.
 
 The topological mass of the gauge field and the phase mass of the Dirac field are then the same object read in the two reductions: in both, the mass is a first-order coupling carried by a direction that the algebra supplies and that no gauge transformation removes. In the gauge reduction that direction is the neutral spacelike $j$, on which the Chern–Simons symbol is built; in the Dirac reduction it is the complex unit vector $K$, on which the phase is built. Both are directions the algebra fixes, not parameters put in by hand.
 
@@ -351,7 +351,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $H_{\mu\nu}=\sum_\lambda\epsilon_\lambda G^*_\lambda\check c_{\lambda\mu\nu}$ | Two-form of the s-vector; $H_{(\mu\nu)}=-\phi^*g_{\mu\nu}$ and $H_{[\mu\nu]}$ anti-self-dual |
 | $\phi^*=G^*\cdot j$ | Trace of the two-form, $\phi^*=\sum_\mu\epsilon_\mu G^*_\mu j_\mu$; the complex scalar $\phi=G\cdot j$ with a star |
 | $F_{\mu\nu}=\partial B_\nu/\partial x_\mu-\partial B_\mu/\partial x_\nu+iaj_\mu B^*_\nu-iaj_\nu B^*_\mu$ | Field strength of the dual potential |
-| $\Psi^{\dagger}C_0\Psi=\sum_\nu\epsilon_\nu(N_\nu N_\nu-B_\nu B_\nu)$ | Dirac bilinear |
+| $\Psi^{\dagger}iC_0\Psi=\sum_\nu\epsilon_\nu(N_\nu N_\nu-B_\nu B_\nu)$ | Dirac bilinear |
 | $K_\mu$ | Complex vector of Eq. (100) carrying the mass as a non-integrable phase; normalised to $K\cdot K=1$ in the source |
 | $\varepsilon_{\mu\nu\lambda\rho}$ | Totally antisymmetric symbol, $\varepsilon_{0123}=1$ |
 | $m$, $a$ | Fermion mass (equated to the topological gauge mass) and the auxiliary real constant $a\ne m$ |

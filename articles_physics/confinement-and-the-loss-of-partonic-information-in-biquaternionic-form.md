@@ -118,12 +118,12 @@ The model of the next subsection does not use colour at all. It uses the framewo
 
 ### The Restricted State and the Vanishing Relative Entropy
 
-The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let the charge along the axis $\vec u$ be the Hermitian element $\tilde S_{\vec u}=\tfrac12\,i\,u_k\vec e_k$ of $\mathbb{M}_+$, in the units $\hbar=c=1$ used throughout, so that the charge rotation is rotor conjugation,
+The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let the charge along the axis $\vec u$ be the Hermitian element $\vec u\cdot\vec S=u_k\tilde S_k=\tfrac12\,i\,u_k\vec e_k$ of $\mathbb{M}_+$, in the units $\hbar=c=1$ used throughout, so that the charge rotation is rotor conjugation,
 
 $$
 \tilde{Ϛ}\;\longmapsto\;U\tilde{Ϛ}\,U^{*},
 \qquad
-U=\exp\!\left(-i\theta\,\tilde S_{\vec u}\right)=\exp\!\left(\frac{\theta}{2}\,u_k\vec e_k\right),
+U=\exp\!\left(-i\theta\,\vec u\cdot\vec S\right)=\exp\!\left(\frac{\theta}{2}\,u_k\vec e_k\right),
 $$
 
 where the second form uses $i^2=-1$: the two imaginary factors multiply to $-1$, and $U=\cos(\theta/2)+\sin(\theta/2)\,u_k\vec e_k$ is the corpus's rotation rotor, a real unit quaternion with $U^{*}=U^{-1}$. The **accessible** state is the restriction of $\tilde{Ϛ}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
@@ -562,7 +562,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $I(C) = -\log|\langle W(C)\rangle|$ | Information cost of the loop |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $\vec r\cdot\vec u$ | Component along the charge axis; accessible content |
-| $\tilde S_{\vec u}=\tfrac12\,i\,u_k\vec e_k$, $U=\exp(-i\theta\tilde S_{\vec u})=\exp(\tfrac{\theta}{2}u_k\vec e_k)$ | Charge along $\vec u$ and its rotation; $U^{*}=U^{-1}$ |
+| $\vec u\cdot\vec S=u_k\tilde S_k=\tfrac12\,i\,u_k\vec e_k$, $U=\exp(-i\theta\,\vec u\cdot\vec S)=\exp(\tfrac{\theta}{2}u_k\vec e_k)$ | Charge along $\vec u$ and its rotation; $U^{*}=U^{-1}$ |
 | $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$ | Relative entropy; monotone under channels |
 | $E(\tilde{Q}) = \int_G dU\, U\tilde{Q}U^{-1}$ | Colour-singlet conditional expectation; idempotent channel |
 | $\beta_g = -(g^3/16\pi^2)b_0$, $b_0 = 11 - \tfrac{2}{3}N_f$ | One-loop running (transcribed) |

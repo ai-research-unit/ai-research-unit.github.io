@@ -694,7 +694,7 @@ The general statement is in *The Polarized Module of the Biquaternion Algebra*, 
 
 ### The Two Spinor Spaces
 
-**Definition (spinor space).** A **spinor space** of $\mathbb{B}$ is a minimal non-zero left ideal. The two spinor spaces attached to $\tilde Q$ are
+**Definition (spinor space).** A **spinor space** is a minimal non-zero left ideal of $\mathbb{B}$; it is what the corpus calls the **carrier** (*Special Element and Peirce Conventions*, §*The Spinor Convention*), and an **elementary spinor** is an element of one (*Spinors and Dirac Spinors in the Biquaternion Algebra*). The two spinor spaces attached to $\tilde Q$ are
 
 $$
 S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
@@ -702,7 +702,7 @@ S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
 S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-.
 $$
 
-A **spinor of the first Peirce copy** is an element of $S_+$; a **spinor of the second Peirce copy** is an element of $S_-$. Each spinor space has complex dimension two, and
+A **spinor of the first Peirce copy** is an element of $S_+$, that is an elementary spinor on the carrier $S_+$; a **spinor of the second Peirce copy** is an element of $S_-$. Each spinor space has complex dimension two, and
 
 $$
 \mathbb{B}=S_+\oplus S_-.
@@ -716,7 +716,7 @@ S_+\longrightarrow S_-,\quad \xi_+\longmapsto \xi_+\vec\Upsilon_-,
 S_-\longrightarrow S_+,\quad \xi_-\longmapsto \xi_-\vec\Upsilon_+.
 $$
 
-The two maps are inverse because $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ and $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. They are distinct subspaces of $\mathbb{B}$ nevertheless. Chirality is therefore not an invariant of the left module; it is a property of the embedding of the module in the algebra.
+The two maps are inverse because $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ and $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. They are distinct subspaces of $\mathbb{B}$ nevertheless. The copy index is therefore not an invariant of the left module; it is a property of the embedding of the module in the algebra.
 
 ### The Left Action on a Spinor
 
@@ -763,7 +763,7 @@ $$
 \xi_-\tilde Q=\lambda_-\xi_-\quad(\xi_-\in S_-).
 $$
 
-Thus $S_+$ is the $\lambda_+$-eigenspace of $R_{\tilde Q}$ and $S_-$ the $\lambda_-$-eigenspace. The Peirce index is the eigenvalue of the right multiplication, in the same way that the spectral label is the eigenvalue of the left multiplication. The two statements are different: the left action carries both eigenvalues on each Peirce copy, and the right action carries one eigenvalue on each. In particular, chirality is the eigenvalue of the involution $R_{\vec\Xi}$: it is $+1$ on $S_+$ and $-1$ on $S_-$.
+Thus $S_+$ is the $\lambda_+$-eigenspace of $R_{\tilde Q}$ and $S_-$ the $\lambda_-$-eigenspace. The Peirce index is the eigenvalue of the right multiplication, in the same way that the spectral label is the eigenvalue of the left multiplication. The two statements are different: the left action carries both eigenvalues on each Peirce copy, and the right action carries one eigenvalue on each. In particular the cell of the frame is $-R_{\vec\Xi}=-iR_{\vec u}$ with $\vec u=-i\vec\Xi$, so it is $-1$ on $S_+$ and $+1$ on $S_-$ (*Operator Chirality on the Biquaternion Algebra*), and the two letters $L$ and $R$ name its two values. The values separate the copies, and they are the values of a copy index: they are not a chirality of the module, because the two halves are the same module (*The Polarized Module of the Biquaternion Algebra*).
 
 **Proposition (the two gradings).** The following two decompositions coexist:
 
@@ -815,7 +815,7 @@ Q_{2,21}&0
 \end{pmatrix}.
 $$
 
-A general element is therefore not a spinor: it has one spinor component of each Peirce copy. Left multiplication by any $\tilde P\in\mathbb{B}$ acts on both columns by the same matrix $\mathsf M_2^{Q}(\tilde P)$,
+A general element is therefore not an elementary spinor but a Dirac spinor: it has one elementary spinor in each Peirce copy. Left multiplication by any $\tilde P\in\mathbb{B}$ acts on both columns by the same matrix $\mathsf M_2^{Q}(\tilde P)$,
 
 $$
 \tilde P\,\tilde Q_2\longmapsto
@@ -838,7 +838,7 @@ It therefore does not act inside the Peirce decomposition: the two Peirce copies
 
 ### Physical Interpretation
 
-In the language of physics, the pair of columns is two copies of one Weyl spinor, not a Dirac spinor: the two Peirce copies carry the same left-handed module. The two eigenvalues $\lambda_\pm$ play the role of two mass or energy labels inside each copy. A spinor in a definite Peirce copy has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves the Peirce copy; a copy-flip coupling, such as the right multiplication by one of the nilpotents, couples the two copies and is therefore not a left multiplication by an element. That coupling is not the chiral mass: the chiral mass pairs $S$ with the conjugate module $S^{\mathrm{c}}$, as in *The Unpolarized Module of the Biquaternion Algebra*. The general element of $\mathbb{B}$, which has off-diagonal entries, is a pair of spinors, one of each Peirce copy, and its off-diagonal entries mix the two spectral components inside each Peirce copy rather than the two Peirce copies.
+In the language of physics, the element whose two columns these are is a Dirac spinor: an element of one Peirce copy is an elementary spinor, and the general element is the pair. What the arithmetic above adds is the structure of that pair. The two parts are two copies of one elementary spinor and not two different ones, so the decomposition is a multiplicity and the index that separates the copies is a copy index, not a chirality (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*; *The Polarized Module of the Biquaternion Algebra*). The two eigenvalues $\lambda_\pm$ play the role of two mass or energy labels inside each copy. An elementary spinor of a definite Peirce copy has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves the Peirce copy; a copy-flip coupling, such as the right multiplication by one of the nilpotents, couples the two copies and is therefore not a left multiplication by an element. That coupling is not the chiral mass: the chiral mass pairs $S$ with the conjugate module $S^{\mathrm{c}}$, as in *The Unpolarized Module of the Biquaternion Algebra*. The off-diagonal entries of a general element mix the two spectral components inside one Peirce copy, and never the two Peirce copies.
 
 ## Summary
 
@@ -900,12 +900,13 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotents and the origin.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
-- [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf D_Q$ and the 4×4 regular matrices.
+- [$M_2(\mathbb{C})$ Defining Representation](m2c-defining-representation.html), for the fixed model $\mathsf M_2$ used in the displays and for its four basis images.
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the gauge of the general Peirce basis and its torsor.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the codes $\tilde Q_1\wedge_{*}\tilde Q_2$ and $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ and the values of the two sesquilinear antisymmetric parts at the diagonal.
 - [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), for the identification of the minimal left ideals with the spinor spaces and the two Peirce copies.
+- [Spinors and Dirac Spinors in the Biquaternion Algebra](spinors-and-dirac-spinors-in-the-biquaternion-algebra.html), for the two definitions used here, the pair as a multiplicity, and the right multiplier whose axis doubles.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the spectral decomposition in the wider theory.

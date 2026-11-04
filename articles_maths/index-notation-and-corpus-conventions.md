@@ -6,7 +6,7 @@ This article closes the series with the marks that are read on a glyph rather th
 
 The superscripts come first because the tokens are two and their labels are an index of three letters; the subscripts next, because their rule depends on the derivation convention fixed in *Operator and Calculus Conventions*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
 
-The article is the last of the nine and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Algebra and Element Conventions* collects the glyphs of the algebra.
+The article is the ninth of the ten and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Algebra and Element Conventions* collects the glyphs of the algebra.
 
 ## The Upper and Low Marks
 
@@ -253,7 +253,7 @@ Beyond the table the slot takes any expression: an upright word, ${}_{\mathrm{to
 
 The corpus has a small number of working conventions that are not mathematical.
 
-**The menus.** Every article is registered in exactly one menu: `maths.md` for the mathematical corpus and `physics.md` for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with the category *Introduction and Conventions*, placed outside the parts. It has two subcategories: *Introduction to Mathematics*, which holds *Introduction to the Mathematical Corpus* and *AI Maths Review*, and *Algebra and Element Conventions*, which holds this article and its six companions. An entry that begins with `+` is a **planned** article, one that is registered in the menu and not yet written; an entry without the marker has its article on disk.
+**The menus.** Every article is registered in exactly one menu: `maths.md` for the mathematical corpus and `physics.md` for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with the category *Introduction and Conventions*, placed outside the parts. It has two subcategories: *Introduction to Mathematics*, which holds *Introduction to the Mathematical Corpus* and *AI Maths Review*, and *Algebra and Element Conventions*, which holds this article and its nine companions. An entry that begins with `+` is a **planned** article, one that is registered in the menu and not yet written; an entry without the marker has its article on disk.
 
 **The groups inside a category.** A category of Parts I to IV lists its articles in four groups, each of which adds one thing to the group before it. The group `- Theory` holds the structure itself, read with the product of its elements. The group `- Operator Theory` holds the operators on that structure — the left and right multiplications, the derivations, the automorphisms, the actions and the sandwich — and adds an operator layer and nothing else. The group `- * Theory` holds the same structure read with an involution on its **elements**. The group `- * Operator Theory` holds the operators built from the **involution**, of which the adjoint is the archetype. The front-matter category *Introduction and Conventions* is the exception: it lists two subcategories and no group.
 

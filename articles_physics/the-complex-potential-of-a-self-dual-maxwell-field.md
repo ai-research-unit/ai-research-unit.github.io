@@ -10,11 +10,11 @@ Three results follow, one sharp, one limiting, one clarifying. The scalar family
 
 Three conventions are load-bearing, and the second is the one the source's displayed equations turn on.
 
-- The field strength is $\vec{\tilde E}=-\partial\vec C/\partial t-\nabla\Pi$, $\vec{\tilde H}=\nabla\times\vec C$ with complex $\Pi$ and $\vec C$, and the entries $C_u,C_v,C_w,C_{\bar w}$ below are the **covariant** components, as in the source's own display of the potential matrix. With these definitions the Coulomb solution has $\vec{\tilde H}$ purely imaginary with $\vec{\tilde H}=i\vec{\tilde E}$, so the duality condition reads $\vec{\tilde E}+i\vec{\tilde H}=0$: the residual of that combination is of order $10^{-11}$ at a generic point, while the opposite combination does not vanish: because $\vec{\tilde H}=i\vec{\tilde E}$ it equals $2\vec{\tilde E}$ identically, here $1.21$ at the test point, where $\lvert\vec{\tilde E}\rvert=0.60$.
-- The sign of $i$ in the source's printed equations is the opposite one, for a reason it flags in passing: the spatial potential in its field-strength definition is the contravariant vector, $C_a=-C^a$. Flipping the sign of the spatial potential flips $\vec{\tilde H}$ and leaves the gradient term of $\vec{\tilde E}$ alone, so the two readings are one equation.
-- In the corpus's naming, with $\vec{\tilde H}$ read as $c\vec B$, the condition $\vec{\tilde E}+i\vec{\tilde H}=0$ is the **anti-self-dual** sign, since the corpus calls $\vec E-ic\vec B=0$ self-dual. The source's adjectives are not uniform — its section title says complex self-dual, its text at (11) says antiself-duality — so formulas rather than adjectives are what is carried over.
+- The field strength is $\vec E=-\partial\vec C/\partial t-\nabla\Pi$, $\vec H=\nabla\times\vec C$ with complex $\Pi$ and $\vec C$, and the entries $C_u,C_v,C_w,C_{\bar w}$ below are the **covariant** components, as in the source's own display of the potential matrix. With these definitions the Coulomb solution has $\vec H$ purely imaginary with $\vec H=i\vec E$, so the duality condition reads $\vec E+i\vec H=0$: the residual of that combination is of order $10^{-11}$ at a generic point, while the opposite combination does not vanish: because $\vec H=i\vec E$ it equals $2\vec E$ identically, here $1.21$ at the test point, where $\lvert\vec E\rvert=0.60$.
+- The sign of $i$ in the source's printed equations is the opposite one, for a reason it flags in passing: the spatial potential in its field-strength definition is the contravariant vector, $C_a=-C^a$. Flipping the sign of the spatial potential flips $\vec H$ and leaves the gradient term of $\vec E$ alone, so the two readings are one equation.
+- In the corpus's naming, with $\vec H$ read as $c\vec B$, the condition $\vec E+i\vec H=0$ is the **anti-self-dual** sign, since the corpus calls $\vec E-ic\vec B=0$ self-dual. The source's adjectives are not uniform — its section title says complex self-dual, its text at (11) says antiself-duality — so formulas rather than adjectives are what is carried over.
 
-Two further readings are fixed once. **The units are the source's**, Gaussian ones with $c=1$ and $\mu=1$, so that $\vec B$ and $\vec H$ coincide and both carry the dimension of $\vec E$; the corpus's $\vec B=\mu\vec H$ and the factor $c$ return wherever a comparison with $\vec N=\vec E+ic\vec B$ is made, and the charge $ϙ$ is a pure number in these units, rescaled to coulomb by the coupling. **The tilde on $\vec{\tilde E}$ and $\vec{\tilde H}$ is the source's mark for the complex-valued field of this construction**, not the corpus's biquaternion mark: the biquaternion of the corpus is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, built from the *real* field, and it is not what is complexified here.
+Two further readings are fixed once. **The units are the source's**, Gaussian ones with $c=1$ and $\mu=1$, so that $\vec B$ and $\vec H$ coincide and both carry the dimension of $\vec E$; the corpus's $\vec B=\mu\vec H$ and the factor $c$ return wherever a comparison with $\vec N=\vec E+ic\vec B$ is made, and the charge $ϙ$ is a pure number in these units, rescaled to coulomb by the coupling. **The field glyphs are the corpus's, and they carry no extra mark.** In this article $\vec E$ and $\vec H$ are complex, as a complex potential requires; the corpus's real field appears only in cited formulas, and each citation says so. The combination $\vec E+i\vec H$ is the corpus's $\vec N$, so the duality-purity condition reads $\vec N=0$ and the pair needs no second glyph. No field glyph carries a tilde: a field is pure, and an arrowed glyph is written without one (*Algebra and Element Conventions*, §*The Centre and the Vector Subspace*).
 
 The coordinate $z$ below is the Cartesian $z$, in the source's notation $z=(u-v)/2$, and the null coordinates are $u,v,w,\bar w$ — the algebrodynamics article writes the same four as $\upsilon,v,w,p$, so its $\upsilon$ is this $u$ and its $p$ is this $\bar w$.
 
@@ -23,11 +23,11 @@ The coordinate $z$ below is the Cartesian $z$, in the source's notation $z=(u-v)
 Let $\Pi$ and $\vec C$ be complex functions on complexified Minkowski space, and define
 
 $$
-\vec{\tilde E}=-\frac{\partial \vec C}{\partial t}-\nabla\Pi,
+\vec E=-\frac{\partial \vec C}{\partial t}-\nabla\Pi,
 \qquad
-\vec{\tilde H}=\nabla\times\vec C,
+\vec H=\nabla\times\vec C,
 \qquad
-\tilde P:=\vec{\tilde E}+i\vec{\tilde H} .
+\vec N:=\vec E+i\vec H .
 $$
 
 The homogeneous Maxwell equations for a complex field are equivalent to the single complex vector equation
@@ -39,7 +39,7 @@ $$
 which is three complex conditions on four complex unknowns, and they are equivalent again to
 
 $$
-\vec{\tilde E}+i\vec{\tilde H}=0,
+\vec E+i\vec H=0,
 $$
 
 the **duality-purity** condition of the complex field, the anti-self-dual sign in the corpus's naming. The system is gauge invariant, with an arbitrary smooth complex gauge function, so one further condition may be imposed; the useful one is the complex Lorentz gauge
@@ -61,7 +61,7 @@ This is the one place where the construction is easy to misread. The split is **
 
 The count is the one that matters later: three conditions plus one gauge condition on four complex components. The field strength is quadratic in the derivatives of the potential and is not affected by the gauge; the charge is read from it by Gauss's theorem.
 
-**Duality invariance, and what the condition costs.** Duality rotation multiplies $\tilde P$ by a phase, and $\tilde P=0$ is preserved by it, so the condition is duality invariant in the sense the invariants article records. It is *not* a condition a real field can meet: with real $\vec E$ and $\vec H$, $\vec{\tilde E}+i\vec{\tilde H}=0$ forces both to vanish, six real equations on six real components. That is the reality obstruction of the split article, and it is the reason the potential here is complex at the outset and not a real potential with a complex field strength.
+**Duality invariance, and what the condition costs.** Duality rotation multiplies $\vec N$ by a phase, and $\vec N=0$ is preserved by it, so the condition is duality invariant in the sense the invariants article records. It is *not* a condition a real field can meet: with real $\vec E$ and $\vec H$, $\vec E+i\vec H=0$ forces both to vanish, six real equations on six real components. That is the reality obstruction of the split article, and it is the reason the potential here is complex at the outset and not a real potential with a complex field strength.
 
 ## Null Coordinates
 
@@ -119,17 +119,17 @@ The pair is therefore not a differential system to be solved: one of its equatio
 
 ## The Superpotential, and the Field It Generates
 
-The field strengths are the second derivatives of the same scalar. With the gauge above,
+The field strengths are the second derivatives of the same scalar, read on the components $E_{k}$ of $\vec E$. With the gauge above,
 
 $$
-\tilde E_3=-\frac{\partial C_v}{\partial u},
+E_{3}=-\frac{\partial C_v}{\partial u},
 \qquad
-\tilde E_+:=\tilde E_1+i\tilde E_2=\frac{\partial C_{\bar w}}{\partial u},
+E_{+}:=E_{1}+iE_{2}=\frac{\partial C_{\bar w}}{\partial u},
 \qquad
-\tilde E_-:=\tilde E_1-i\tilde E_2=-\frac{\partial C_v}{\partial \bar w} ,
+E_{-}:=E_{1}-iE_{2}=-\frac{\partial C_v}{\partial \bar w} ,
 $$
 
-that is, $\tilde E_3=-\partial^2G/\partial u\,\partial\bar w$, $\tilde E_+=\partial^2G/\partial u^2$, $\tilde E_-=-\partial^2G/\partial\bar w^2$, and the symmetric triple $(\tilde E_+,\tilde E_3,\tilde E_-)$ is the spinor of the field strength. The spinorial content is the reason the reduction works: a duality-pure two-form is a symmetric two-spinor, three complex components, and after the gauge is fixed the potential has exactly three, which the single scalar supplies through its second derivatives.
+that is, $E_{3}=-\partial^2G/\partial u\,\partial\bar w$, $E_{+}=\partial^2G/\partial u^2$, $E_{-}=-\partial^2G/\partial\bar w^2$, and the symmetric triple $(E_{+},E_{3},E_{-})$ is the spinor of the field strength. The spinorial content is the reason the reduction works: a duality-pure two-form is a symmetric two-spinor, three complex components, and after the gauge is fixed the potential has exactly three, which the single scalar supplies through its second derivatives.
 
 The assignment of the three second derivatives to the three components is the source's, and it is the *contravariant* reading of the spatial potential that makes it come out; with the covariant entries used here the first of the three reads $\partial C_v/\partial v$ instead of $-\partial C_v/\partial u$, and the two agree for static fields. What does not depend on the reading is the count: three components, one scalar, second derivatives.
 
@@ -152,14 +152,14 @@ $$
 and the field is
 
 $$
-\vec{\tilde E}=-i\vec{\tilde H}=\frac{1}{4}\,\frac{\vec x}{r^3} :
+\vec E=-i\vec H=\frac{1}{4}\,\frac{\vec x}{r^3} :
 \qquad
-\tilde E_3=\frac{z}{4r^3},\quad
-\tilde E_+=\frac{\bar w}{4r^3},\quad
-\tilde E_-=\frac{w}{4r^3},
+E_{3}=\frac{z}{4r^3},\quad
+E_{+}=\frac{\bar w}{4r^3},\quad
+E_{-}=\frac{w}{4r^3},
 $$
 
-the Coulomb field of a charge $\tfrac14$, with $\vec{\tilde H}$ purely imaginary and $\vec{\tilde E}$ purely real, so that the real part is the ordinary Coulomb field of a point charge and the imaginary part is the dual field of a magnetic monopole of the same modulus. This was recomputed here from the potential by finite differences: the self-duality condition and the Lorentz gauge both hold to order $10^{-11}$, and the field components agree with $\vec x/(4r^3)$ to the same accuracy.
+the Coulomb field of a charge $\tfrac14$, with $\vec H$ purely imaginary and $\vec E$ purely real, so that the real part is the ordinary Coulomb field of a point charge and the imaginary part is the dual field of a magnetic monopole of the same modulus. This was recomputed here from the potential by finite differences: the self-duality condition and the Lorentz gauge both hold to order $10^{-11}$, and the field components agree with $\vec x/(4r^3)$ to the same accuracy.
 
 **A printed factor.** The source writes the same solution with its charge parameter and gives $G=4ϙ\bar w/(z+r)$ together with $C_{\bar w}=-2ϙ\bar w/(z+r)$. Differentiating the printed $G$ gives
 
@@ -175,22 +175,22 @@ The source remarks in passing that "complex fields do not possess any energy", a
 
 **The corpus's tensor is sesquilinear, and the bilinear is a different object.** *The Electromagnetic Energy–Momentum Tensor* builds $\Pi_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$ from the Hermitian form $\tilde F(\,\cdot\,)\tilde F^{*}$, whose scalar part is $2W$ with $W=\tfrac12(\epsilon E^2+\mu H^2)$ and whose vector part carries $\vec S=\vec E\times\vec H$. The plain bilinear is **not** the same object, and the difference does not wait for complex fields. Its scalar part is the invariant, $\langle\tilde F\rangle_{\natural}=-\epsilon\,(I_1+2ic\,I_2)$, with $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$. The two therefore already disagree on a **real** field: at $\vec E=(0.3,-0.2,0.5)$ and $\vec B=(0.1,0.4,-0.2)$ the bilinear scalar is $-0.17+0.30i$ while $2W=0.59$; and on a real *null* field, $\vec B\perp\vec E$ with $\lvert\vec B\rvert=\lvert\vec E\rvert=0.616$, the bilinear vanishes to $8\times10^{-17}$ while $2W=0.76$. The bilinear is the invariant form; the energy is sesquilinear by construction.
 
-**The source's remark is about the bilinear.** Take the same combinations without conjugation and impose duality purity, $\vec{\tilde H}=i\vec{\tilde E}$. Every bilinear combination vanishes, the invariant and the stress alike:
+**The source's remark is about the bilinear.** Take the same combinations without conjugation and impose duality purity, $\vec H=i\vec E$. Every bilinear combination vanishes, the invariant and the stress alike:
 
 $$
-\tilde E_j\tilde E_j+\tilde H_j\tilde H_j=\tilde E_j\tilde E_j-\tilde E_j\tilde E_j=0,
+E_{j}E_{j}+H_{j}H_{j}=E_{j}E_{j}-E_{j}E_{j}=0,
 \qquad
-\vec{\tilde E}\times\vec{\tilde H}=i\,\vec{\tilde E}\times\vec{\tilde E}=0,
+\vec E\times\vec H=i\,\vec E\times\vec E=0,
 $$
 
-and the same cancellation kills every entry of the bilinear analogue of the stress, $\tilde E_j\tilde E_k+\tilde H_j\tilde H_k=0$ — so it vanishes component by component and not merely in its trace. Checked here at the Coulomb solution and at a generic complex self-dual field: the scalar part is $5.5\times10^{-17}$ at the first and exactly zero at the second, and the Poynting vector and all nine entries $\tilde E_j\tilde E_k+\tilde H_j\tilde H_k$ are exactly zero at both.
+and the same cancellation kills every entry of the bilinear analogue of the stress, $E_{j}E_{k}+H_{j}H_{k}=0$ — so it vanishes component by component and not merely in its trace. Checked here at the Coulomb solution and at a generic complex self-dual field: the scalar part is $5.5\times10^{-17}$ at the first and exactly zero at the second, and the Poynting vector and all nine entries $E_{j}E_{k}+H_{j}H_{k}$ are exactly zero at both.
 
-**In the corpus's own element the same fact is one line, and the corpus has already recorded it.** *Null Electromagnetic Fields and the Shear-Free Congruence* states in its caution on the carrier that $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,(\vec E+ic\vec B)$ vanishes identically on a duality-pure field of the $+i$ sign, so that on that sign the field is carried by the pair $(\vec E,\vec B)$ and by no element of $\mathbb{B}$ at all. That is the same statement, and with $c=1$ and $\mu=1$ the complexified field here obeys it: written with the complexified pair, $\tilde F=i\sqrt{\epsilon}\,(\vec{\tilde E}+i\vec{\tilde H})=0$ exactly when the field is duality pure. Every density built from it, $\tilde W=\tfrac12\tilde F\tilde F^{*}$ included, vanishes with it — not as a small residual but as an identity, because the object is zero. Checked here: $\lvert\tilde F\rvert=0$ and $\mathrm{Sc}(\tilde F\tilde F^{*})=0$ at both test fields, as they must be.
+**In the corpus's own element the same fact is one line, and the corpus has already recorded it.** *Null Electromagnetic Fields and the Shear-Free Congruence* states in its caution on the carrier that $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,(\vec E+ic\vec B)$ vanishes identically on a duality-pure field of the $+i$ sign, so that on that sign the field is carried by the pair $(\vec E,\vec B)$ and by no element of $\mathbb{B}$ at all. That is the same statement, and with $c=1$ and $\mu=1$ the complexified field here obeys it: written with the complexified pair, $\tilde F=i\sqrt{\epsilon}\,(\vec E+i\vec H)=0$ exactly when the field is duality pure. Every density built from it, $\tilde W=\tfrac12\tilde F\tilde F^{*}$ included, vanishes with it — not as a small residual but as an identity, because the object is zero. Checked here: $\lvert\tilde F\rvert=0$ and $\mathrm{Sc}(\tilde F\tilde F^{*})=0$ at both test fields, as they must be.
 
-**What survives, and what it is.** Energy returns when the complex field is split into its real and imaginary parts, and the split is the corpus's material–informational division. Writing $\vec{\tilde E}=\vec E_r+i\vec E_i$ and $\vec{\tilde H}=\vec H_r+i\vec H_i$, the sesquilinear density of the complex field is exactly the sum of the densities of the two parts,
+**What survives, and what it is.** Energy returns when the complex field is split into its real and imaginary parts, and the split is the corpus's material–informational division. Writing $\vec E=\vec E_r+i\vec E_i$ and $\vec H=\vec H_r+i\vec H_i$, the sesquilinear density of the complex field is exactly the sum of the densities of the two parts,
 
 $$
-\tfrac12\bigl(\epsilon\lvert\vec{\tilde E}\rvert^2+\mu\lvert\vec{\tilde H}\rvert^2\bigr)
+\tfrac12\bigl(\epsilon\lvert\vec E\rvert^2+\mu\lvert\vec H\rvert^2\bigr)
 =\tfrac12\bigl(\epsilon\lvert\vec E_r\rvert^2+\mu\lvert\vec H_r\rvert^2\bigr)
 +\tfrac12\bigl(\epsilon\lvert\vec E_i\rvert^2+\mu\lvert\vec H_i\rvert^2\bigr),
 $$
@@ -241,40 +241,40 @@ G=\exp\,i(\vec k\cdot\vec x-\omega t),
 \omega^2=\vec k\cdot\vec k ,
 $$
 
-satisfies the pair exactly, since it is $\Box G=0$ together with an identity; the potential built from it, however, does not satisfy the duality-purity condition, and the failure is of the order of the field itself: checked here at five wave vectors, $\lvert\vec{\tilde E}+i\vec{\tilde H}\rvert$ is between $1.1$ and $1.3$ times $\lvert\vec{\tilde E}\rvert$, and $\lvert\vec{\tilde E}-i\vec{\tilde H}\rvert$ between $0.86$ and $0.96$ times it, so neither combination vanishes. The failure is not a small deformation to be removed by a better gauge, and the field is not a null field either: $\lvert\vec{\tilde E}\rvert/\lvert\vec{\tilde H}\rvert$ is between $2.0$ and $3.6$ across the same five wave vectors, where nullness would put it at $1$. It is a plain non-duality-pure complex field, and the ratio drifts without bound as $\vec k$ approaches the third axis, where the potential degenerates and both fields vanish. This is the source's own remark that the corresponding Maxwell field is charge-free: it belongs to the other solution class, not to a deformation of this one. The wave equation is therefore not sufficient; the self-duality of the field is an extra condition on the scalar, and in the programme's construction that extra condition is the pair above together with the twistor, which is nonlinear.
+satisfies the pair exactly, since it is $\Box G=0$ together with an identity; the potential built from it, however, does not satisfy the duality-purity condition, and the failure is of the order of the field itself: checked here at five wave vectors, $\lvert\vec E+i\vec H\rvert$ is between $1.1$ and $1.3$ times $\lvert\vec E\rvert$, and $\lvert\vec E-i\vec H\rvert$ between $0.86$ and $0.96$ times it, so neither combination vanishes. The failure is not a small deformation to be removed by a better gauge, and the field is not a null field either: $\lvert\vec E\rvert/\lvert\vec H\rvert$ is between $2.0$ and $3.6$ across the same five wave vectors, where nullness would put it at $1$. It is a plain non-duality-pure complex field, and the ratio drifts without bound as $\vec k$ approaches the third axis, where the potential degenerates and both fields vanish. This is the source's own remark that the corresponding Maxwell field is charge-free: it belongs to the other solution class, not to a deformation of this one. The wave equation is therefore not sufficient; the self-duality of the field is an extra condition on the scalar, and in the programme's construction that extra condition is the pair above together with the twistor, which is nonlinear.
 
 This is the linear face of induced nonlinearity. The linear equations of the potential — the wave equation — admit far more solutions than the self-dual fields, and what restricts them is a nonlinear condition on the generating function, imposed not for convenience but as the definition of the admissible class. The corpus records the same phenomenon from the other side in *The Algebrodynamical Programme*: there the primary equation is nonlinear and the Maxwell equations are its consequence; here the Maxwell equation is linear and the nonlinearity is what selects its self-dual sector.
 
 ## Summary
 
-The complex potential of a self-dual Maxwell field is a $2\times2$ complex matrix whose entries are the four null-coordinate components $C_u=\Pi+C_z$, $C_w=C_x-iC_y$, $C_{\bar w}=C_x+iC_y$, $C_v=\Pi-C_z$. Duality purity, $\vec{\tilde E}+i\vec{\tilde H}=0$ with $\vec{\tilde E}=-\partial\vec C/\partial t-\nabla\Pi$ and $\vec{\tilde H}=\nabla\times\vec C$, together with the complex Lorentz gauge, is four complex first-order conditions on four complex unknowns; no real field can satisfy it, since the condition forces a real field to vanish. In the gauge $C_u=C_w=0$ the system reduces to $\partial C_{\bar w}/\partial \bar w=\partial C_v/\partial u$, $\partial C_{\bar w}/\partial v=\partial C_v/\partial w$, and with $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ the first equation is the equality of mixed partials and the second is $\Box G=0$: the reduced system is solved by one complex harmonic scalar, and the field strengths are its second derivatives.
+The complex potential of a self-dual Maxwell field is a $2\times2$ complex matrix whose entries are the four null-coordinate components $C_u=\Pi+C_z$, $C_w=C_x-iC_y$, $C_{\bar w}=C_x+iC_y$, $C_v=\Pi-C_z$. Duality purity, $\vec E+i\vec H=0$ with $\vec E=-\partial\vec C/\partial t-\nabla\Pi$ and $\vec H=\nabla\times\vec C$, together with the complex Lorentz gauge, is four complex first-order conditions on four complex unknowns; no real field can satisfy it, since the condition forces a real field to vanish. In the gauge $C_u=C_w=0$ the system reduces to $\partial C_{\bar w}/\partial \bar w=\partial C_v/\partial u$, $\partial C_{\bar w}/\partial v=\partial C_v/\partial w$, and with $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ the first equation is the equality of mixed partials and the second is $\Box G=0$: the reduced system is solved by one complex harmonic scalar, and the field strengths are its second derivatives.
 
-The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec{\tilde E}=-i\vec{\tilde H}=\vec x/(4r^3)$, the Coulomb field of a charge $\tfrac14$ with a magnetic partner of the same modulus. The family $G_\zeta=\zeta\bar w/(z+r)$ satisfies the wave equation and the eikonal for every $\zeta$ and the programme's two first-order constraints only at $\zeta=1$, because those constraints are linear on one side and quadratic on the other; that mismatch is the mechanism of charge quantisation, and it fixes $|ϙ|=\tfrac14$. The constraints admit $\bar w/(z+r)$ and $\bar w/(z-r)$ but not the programme's second eikonal solution $f^-=w/(r-z)$, which the quadratic eikonal cannot distinguish from its conjugate. The reduced system is strictly weaker than duality purity — a plane-wave scalar satisfies it and produces a field that is not duality pure — so the linear construction does not by itself characterise the physical class; the nonlinear condition does. One printed component of the source, $C_{\bar w}=-2ϙ\bar w/(z+r)$, is missing a factor $1/r$.
+The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\vec x/(4r^3)$, the Coulomb field of a charge $\tfrac14$ with a magnetic partner of the same modulus. The family $G_\zeta=\zeta\bar w/(z+r)$ satisfies the wave equation and the eikonal for every $\zeta$ and the programme's two first-order constraints only at $\zeta=1$, because those constraints are linear on one side and quadratic on the other; that mismatch is the mechanism of charge quantisation, and it fixes $|ϙ|=\tfrac14$. The constraints admit $\bar w/(z+r)$ and $\bar w/(z-r)$ but not the programme's second eikonal solution $f^-=w/(r-z)$, which the quadratic eikonal cannot distinguish from its conjugate. The reduced system is strictly weaker than duality purity — a plane-wave scalar satisfies it and produces a field that is not duality pure — so the linear construction does not by itself characterise the physical class; the nonlinear condition does. One printed component of the source, $C_{\bar w}=-2ϙ\bar w/(z+r)$, is missing a factor $1/r$.
 
-**Energy.** The bilinear density of a duality-pure complex field vanishes identically — invariant, Poynting vector and bilinear stress: $\tilde E_j\tilde E_j+\tilde H_j\tilde H_j=0$, $\vec{\tilde E}\times\vec{\tilde H}=0$, $\tilde E_j\tilde E_k+\tilde H_j\tilde H_k=0$, checked to $5.5\times10^{-17}$. The bilinear is the invariant form and is not the energy even for real fields, where its scalar part is $-\epsilon(I_1+2icI_2)$ while $2W=\epsilon E^2+\mu H^2$. In the corpus's element the same fact is $\tilde F=i\sqrt{\epsilon}(\vec{\tilde E}+i\vec{\tilde H})=0$, so duality purity is the vanishing of the field-strength biquaternion and the corpus's carrier measures departure from purity. The sesquilinear density does not vanish; it is the sum of the densities of the real and imaginary parts, $0.182+0.182=0.364$ at the Coulomb solution, and each part is a real Maxwell field with ordinary conservation laws. The corpus's $T_{\mu\nu}$ is the tensor of such a part.
+**Energy.** The bilinear density of a duality-pure complex field vanishes identically — invariant, Poynting vector and bilinear stress: $E_{j}E_{j}+H_{j}H_{j}=0$, $\vec E\times\vec H=0$, $E_{j}E_{k}+H_{j}H_{k}=0$, checked to $5.5\times10^{-17}$. The bilinear is the invariant form and is not the energy even for real fields, where its scalar part is $-\epsilon(I_1+2icI_2)$ while $2W=\epsilon E^2+\mu H^2$. In the corpus's element the same fact is $\tilde F=i\sqrt{\epsilon}(\vec E+i\vec H)=0$, so duality purity is the vanishing of the field-strength biquaternion and the corpus's carrier measures departure from purity. The sesquilinear density does not vanish; it is the sum of the densities of the real and imaginary parts, $0.182+0.182=0.364$ at the Coulomb solution, and each part is a real Maxwell field with ordinary conservation laws. The corpus's $T_{\mu\nu}$ is the tensor of such a part.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\Pi$, $\vec C$ | Complex scalar and vector potentials, four complex components |
-| $\vec{\tilde E}=-\partial\vec C/\partial t-\nabla\Pi$ | Complex electric field |
-| $\vec{\tilde H}=\nabla\times\vec C$ | Complex magnetic field; opposite in sign to the source's printed definition, see the Introduction |
-| $\vec{\tilde E}+i\vec{\tilde H}=0$ | Duality purity of the complex field; the corpus's anti-self-dual sign |
+| $\vec E=-\partial\vec C/\partial t-\nabla\Pi$ | Complex electric field |
+| $\vec H=\nabla\times\vec C$ | Complex magnetic field; opposite in sign to the source's printed definition, see the Introduction |
+| $\vec N=\vec E+i\vec H$, $\vec N=0$ | The complex field as one vector and its duality purity; the corpus's anti-self-dual sign |
 | $\partial\Pi/\partial t+\nabla\cdot\vec C=0$ | Complex Lorentz gauge |
 | $u,v,w,\bar w$ | $u=t+z$, $v=t-z$, $w=x-iy$, $\bar w=x+iy$ |
 | $C_u,C_v,C_w,C_{\bar w}$ | $\Pi+C_z$, $\Pi-C_z$, $C_x-iC_y$, $C_x+iC_y$; entries of the potential matrix |
 | $\Box=4(\partial^2/\partial u\,\partial v-\partial^2/\partial w\,\partial\bar w)$ | Wave operator in these coordinates |
 | $G$ | Superpotential: complex scalar with $\Box G=0$ generating the potential |
-| $\vec{\tilde E},\vec{\tilde H}$ | Complex field strengths of the construction, the source's tilde; $c=1$ throughout |
+| $\vec E,\vec H$ | Complex field strengths of the construction, the source's tilde; $\mathbb C$-valued, and the corpus's real field is cited only where the text says so; $c=1$ throughout |
 | $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ | The two surviving components in the gauge $C_u=C_w=0$ |
 | $\partial G/\partial w=G\,\partial G/\partial u$, $\partial G/\partial v=G\,\partial G/\partial\bar w$ | First-order constraints; they make $G$ come from the twistor |
-| $\tilde E_+,\tilde E_3,\tilde E_-$ | $\tilde E_1+i\tilde E_2$, $\tilde E_3$, $\tilde E_1-i\tilde E_2$; the spinor of the field strength |
+| $E_{+},E_{3},E_{-}$ | $E_{1}+iE_{2}$, $E_{3}$, $E_{1}-iE_{2}$; the spinor of the field strength |
 | $ϙ$ | Electric charge; the Coulomb family has $\zeta=4ϙ$ |
 | $G_\zeta=\zeta\bar w/(z+r)$ | The Coulomb family; $\zeta=1$ gives the elementary charge $\lvertϙ\rvert=\tfrac14$ |
 | $r=\sqrt{x^2+y^2+z^2}$ | Radial coordinate |
-| $\vec E_r,\vec E_i$ | Real and imaginary parts of $\vec{\tilde E}$; each is a real Maxwell field carrying its own energy |
-| $\vec{\tilde E}\cdot\vec{\tilde E}+\vec{\tilde H}\cdot\vec{\tilde H}$ | The bilinear density, without conjugation; it is the invariant combination and vanishes on a duality-pure field |
+| $\vec E_r,\vec E_i$ | Real and imaginary parts of $\vec E$; each is a real Maxwell field carrying its own energy |
+| $\vec E\cdot\vec E+\vec H\cdot\vec H$ | The bilinear density, without conjugation; it is the invariant combination and vanishes on a duality-pure field |
 | $I_1,I_2$ | The two invariants, $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$; the bilinear's scalar part is $-\epsilon(I_1+2icI_2)$ |
 
 ## Further Reading

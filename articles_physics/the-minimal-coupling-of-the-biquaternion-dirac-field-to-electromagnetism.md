@@ -46,7 +46,7 @@ $$
 
 The right-chiral member is then identical in form to the source-free biquaternion Maxwell equation obeyed by the field-strength biquaternion $\tilde{F}$; the difference is the representation, the Maxwell field living in the vector part of the algebra and the Dirac field in the full algebra. The two are the two representations of the same Clifford algebra, as the parent article records.
 
-**The two halves.** The splitting is by the chirality, which is the central sign of the complexification and not a Clifford matrix (*The Dirac Equation in Biquaternionic Form*, §*Chirality and the Central Sign*). With $\tilde{\Xi}_{\mathrm{ad}}$ the adjoined central root of $-1$, the two central idempotents and the chirality are
+**The two halves.** The splitting is by the two values of the subscript, which the parent article states without any construction (*The Dirac Equation in Biquaternionic Form*, §*The Two Values of the Subscript*). Read in the double, the same grading has a central form, and that is the form used here: with $\tilde{\Xi}_{\mathrm{ad}}$ the adjoined central root of $-1$, the two central projections and the grading are
 
 $$
 e_{\pm} = \tfrac12\left(1 + i\tilde{\Xi}_{\mathrm{ad}}\right), \qquad

@@ -56,7 +56,7 @@ so that $[\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k$. The tilde distingui
 **Spin.** For a unit $\vec u\in\mathfrak{g}$, $uu^*=e_t$, the **spin** of an irreducible carrier is the real number
 
 $$
-s=\max\operatorname{spec}\bigl(\vec u\cdot\vec{\tilde S}\bigr).
+s=\max\operatorname{spec}\bigl(\vec u\cdot\vec S\bigr).
 $$
 
 It lies in $\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector. The value does not depend on $\vec u$: any two unit elements of $\mathfrak{g}$ are conjugate in $G$, and conjugate operators have the same spectrum.

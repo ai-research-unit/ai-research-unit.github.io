@@ -71,13 +71,13 @@ $$
 \tilde S_k=\tfrac12 i\vec e_k\in\mathbb{M}_+,\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,\qquad \tilde S_k^*=\tilde S_k.
 $$
 
-They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form.
+They are related by $\tilde S_k=-ig_k$. The bracket of the $\tilde S_k$ is the standard angular-momentum relation with $\hbar=1$; the bracket of the $g_k$ is its anti-Hermitian form. The triple is read as one vector, $\vec S$ with components $\tilde S_k$, so that $\vec u\cdot\vec S=u_k\tilde S_k$ for a unit $\vec u$; the glyph is arrowed and carries no tilde, because each component is a pure element (*Algebra and Element Conventions*, §*The Centre and the Vector Subspace*).
 
 **Proposition (the exponential).** For a unit $\vec u\in\mathfrak{g}$ and real $\theta$,
 
 $$
 \exp(\theta\,\vec u\cdot\vec g)=\cos\tfrac{\theta}{2}\,e_t-\sin\tfrac{\theta}{2}\,\vec u\cdot\vec e
-=\exp(i\theta\,\vec u\cdot\vec{\tilde S}),
+=\exp(i\theta\,\vec u\cdot\vec S),
 $$
 
 and the result is a unit real quaternion.
@@ -106,17 +106,17 @@ $$
 
 *Proof.* $\sum_i[\tilde S_i^2,\tilde S_l]=\sum_i\bigl(\tilde S_i[\tilde S_i,\tilde S_l]+[\tilde S_i,\tilde S_l]\tilde S_i\bigr)=\sum_i\bigl(i\epsilon_{ilj}\tilde S_i\tilde S_j+i\epsilon_{ilj}\tilde S_j\tilde S_i\bigr)$, which is antisymmetric under $i\leftrightarrow j$ and vanishes.
 
-**Definition (spin).** Let $(W,\rho)$ be an irreducible unitary carrier. For a unit $\vec u\in\mathfrak{g}$, the operator $\rho(\vec u\cdot\vec{\tilde S})$ is self-adjoint. The **spin** of the carrier is
+**Definition (spin).** Let $(W,\rho)$ be an irreducible unitary carrier. For a unit $\vec u\in\mathfrak{g}$, the operator $\rho(\vec u\cdot\vec S)$ is self-adjoint. The **spin** of the carrier is
 
 $$
-s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec{\tilde S})\bigr),
+s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr),
 $$
 
 the maximum being independent of $\vec u$. The spin is a real number in $\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector.
 
-**Proposition (independence of the axis).** The spectrum of $\rho(\vec u\cdot\vec{\tilde S})$ does not depend on the unit vector $\vec u$.
+**Proposition (independence of the axis).** The spectrum of $\rho(\vec u\cdot\vec S)$ does not depend on the unit vector $\vec u$.
 
-*Proof.* For $u\in G$, $\rho(u)\rho(\vec u\cdot\vec{\tilde S})\rho(u)^{-1}=\rho\bigl(\operatorname{Ad}_u(\vec u\cdot\vec{\tilde S})\bigr)=\rho\bigl((R\vec u)\cdot\vec{\tilde S}\bigr)$, with $R$ the rotation. The map $G\to SO(3)$ is surjective, so all unit vectors are conjugate, and conjugate operators have the same spectrum.
+*Proof.* For $u\in G$, $\rho(u)\rho(\vec u\cdot\vec S)\rho(u)^{-1}=\rho\bigl(\operatorname{Ad}_u(\vec u\cdot\vec S)\bigr)=\rho\bigl((R\vec u)\cdot\vec S\bigr)$, with $R$ the rotation. The map $G\to SO(3)$ is surjective, so all unit vectors are conjugate, and conjugate operators have the same spectrum.
 
 **Theorem (the Casimir value and the dimension).** Let $(W,\rho)$ be an irreducible unitary carrier of spin $s$. Then
 
@@ -209,11 +209,11 @@ Each $S_\pm(\vec u)$ is a minimal left ideal, and $\mathbb{B}=S_+(\vec u)\oplus 
 **Proposition (the states in a copy).** In $S_+(\vec u)$,
 
 $$
-(\vec u\cdot\vec{\tilde S})\tilde\Pi_+(\vec u)=+\tfrac12\tilde\Pi_+(\vec u),\qquad
-(\vec u\cdot\vec{\tilde S})\tilde\Pi_-(\vec u)=-\tfrac12\tilde\Pi_-(\vec u).
+(\vec u\cdot\vec S)\tilde\Pi_+(\vec u)=+\tfrac12\tilde\Pi_+(\vec u),\qquad
+(\vec u\cdot\vec S)\tilde\Pi_-(\vec u)=-\tfrac12\tilde\Pi_-(\vec u).
 $$
 
-*Proof.* $(\vec u\cdot\vec{\tilde S})\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.
+*Proof.* $(\vec u\cdot\vec S)\tilde\Pi_+(\vec u)=\tfrac12(i\vec u)\tfrac12(e_t+i\vec u)=\tfrac12\tilde\Pi_+(\vec u)$, because $(i\vec u)^2=+e_t$ and $i\vec u$ commutes with $\tilde\Pi_+(\vec u)$. The other sign is the same computation with $\vec u$ replaced by $-\vec u$.
 
 The idempotent $\tilde\Pi_+(\vec u)$ is the weight $+\tfrac12$ vector of $S_+(\vec u)$, and $\tilde\Pi_-(\vec u)$ is the weight $-\tfrac12$ vector of $S_-(\vec u)$: each is a vector of its own copy, and they are not two vectors of one module. In $S_+(\vec e_z)$ the weight $-\tfrac12$ vector is $w_-$, which is nilpotent, $w_-^2=0$. The distinction is the reason the two signs label two copies and not a doublet.
 
@@ -345,7 +345,7 @@ $$
 The last term is the spin–orbit operator,
 
 $$
-\vec L\cdot\vec{\tilde S}=\sum_k L_k^{\mathrm{orb}}\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
+\vec L\cdot\vec S=\sum_k L_k^{\mathrm{orb}}\otimes \tilde S_k=\tfrac12\bigl(C_{\mathrm{tot}}-C_L\otimes1-1\otimes C_S\bigr).
 $$
 
 **Theorem (the addition of angular momenta).** For $l\ge1$,
@@ -361,7 +361,7 @@ and for $l=0$ it is $\mathcal{V}_1$. The total spin is $s_{\mathrm{tot}}=l\pm\tf
 **Corollary (the spin–orbit eigenvalues).** On the summand of total spin $s_{\mathrm{tot}}$,
 
 $$
-\vec L\cdot\vec{\tilde S}=\frac12\Bigl[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34\Bigr],
+\vec L\cdot\vec S=\frac12\Bigl[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34\Bigr],
 $$
 
 that is, $+\tfrac{l}{2}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\tfrac{l+1}{2}$ for $s_{\mathrm{tot}}=l-\tfrac12$.

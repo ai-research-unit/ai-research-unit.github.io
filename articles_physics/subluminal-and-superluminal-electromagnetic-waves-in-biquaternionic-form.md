@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article records an external programme, that of Waldyr Alves Rodrigues Jr. and Jayme Vaz Jr. as presented in *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* (arXiv:hep-th/9607231, 1996). It works in the **Clifford bundle of differential forms** $C\ell(M)$ and studies the single equation
+This article records an external programme, that of Waldyr Alves Rodrigues Jr. and Jayme Vaz Jr. as presented in *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* (arXiv:hep-th/9607231, 1996). It works in the **bundle of differential forms** over Minkowski spacetime and studies the single equation
 
 $$
 \partial F = 0
@@ -10,35 +10,45 @@ $$
 
 for a 2-form field $F$, together with the spinor sector of the same algebra. From that starting point it claims two things. The first is that the free Maxwell equation has **subluminal and superluminal** solutions that are **undistorted progressive waves** and carry **non-null field invariants** and longitudinal field components — a family larger than the transverse plane waves of the textbook account. The second is that, writing the field as a **spinor bilinear** $F=-\psi\vec e_z\psi^{\natural}$, the free Maxwell equation is equivalent to a **non-linear Dirac–Hestenes equation** for $\psi$, and that this non-linear equation **linearises**: its two coefficients collapse into one real coefficient once the source's constraints hold, and that coefficient is a constant mass when the current is conserved; the same section shows the massless Dirac equation to be a Maxwell equation with an **axial (magnetic) current**.
 
-A third claim follows, and it is the other half of the paper's title. The projector family attached to the **Takabayasi angle** is what produces the **lepton mass spectrum**: at $\beta=\pi/2$ the muon mass comes out of the fine-structure constant and a magnetic quantum number, with no adjustable parameter left except that number itself.
+A third claim follows, and it is the other half of the paper's title. The family of projections attached to the **Takabayasi angle** is what produces the **lepton mass spectrum**: at $\beta=\pi/2$ the muon mass comes out of the fine-structure constant and a magnetic quantum number, with no adjustable parameter left except that number itself.
 
 The corpus records the programme and does not endorse it. Its value here lies in the structural part: the spinor representation of the field, the criterion that selects the linear equation, and the axial-current form of the massless equation. That part is **rigorous and checkable**, and it bears directly on questions the corpus states elsewhere: the invariant classification of *The Field-Strength Biquaternion and Its Invariants*, which classifies the field by its two invariants and notes that they are not conserved by the free evolution, but does not exhibit the family of free solutions that carry non-null invariants; the Dirac–Hestenes formulation of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, which already carries the Yvon–Takabayasi angle as an "angle zero for a pure electron state" but not the criterion that makes the equation linear; and the axial-current form of the massless equation, which the spinor bilinear reproduces.
 
-The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The source works in the **Clifford bundle** $C\ell(M)$ with the signs $\varepsilon=(1,-1,-1,-1)$, which is the corpus's own convention for its frame cells. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for the left and the right multiplication of a spinor $\psi$; the units are $e_t$, the identity of the algebra, and $\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-1$; and $i$ is the central unit. Two rules of sign recur in every display below and are fixed once here: $i^2=-1$, and $\vec e_x\vec e_y=\vec e_z$, which makes the quaternion units anticommute. The corpus's five frame cells are $iR_{\vec e_x}^{\mathrm{axf}}$, the three $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ for $k=x,y,z$, and $-iR_{\vec e_z}^{\mathrm{axf}}$; on a spinor they act as $iR_{\vec e_x}^{\mathrm{axf}}\psi=i\psi\vec e_x$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi=i\vec e_k\psi\vec e_y$, and $-iR_{\vec e_z}^{\mathrm{axf}}\psi=-i\psi\vec e_z$.
+The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The units, the central $i$ and the sign vector $\varepsilon=(1,-1,-1,-1)$ are those of *Conventions in the Biquaternion Universe*; the field $F$, the spinor $\psi$ and the volume element $\omega$ are elements of the biquaternion algebra $\mathbb{B}$.
 
-The source's **volume element** is the product of the four generators,
+The source writes its whole calculus with one letter, $\partial$, the Dirac operator of its bundle of forms, $d-\delta$, with $d$ the exterior derivative and $\delta$ the coderivative. That letter is not a symbol of the series, and the article says exactly what it buys before using it, because it is the one place where the two notations meet.
+
+**It is not one of the series' operators, and it cannot be replaced by one.** The series' derivative operators are the gradient $\tilde\nabla$ and the d'Alembertian $\Box$ (*Operator and Calculus Conventions*). The gradient is a single left multiplication, $\tilde\nabla\psi=-\frac{i}{c}\frac{\partial\psi}{\partial t'}+\sum_k\vec e_k\frac{\partial\psi}{\partial x_k}$ on the material sector, and the d'Alembertian is its norm, second order and scalar. The source's $\partial$ is first order and **two-sided**: its time term multiplies the differentiated field on the right by $\vec e_x$, and its three spatial terms multiply on the left by $\vec e_k$ and on the right by $\vec e_y$. No left multiplication by the gradient, composed with one right multiplier, gives it, and the check is two lines. On $\psi=\vec e_x t'$ both sides are constant, and the right multiplier is forced to be $-\vec e_x$; on $\psi=\vec e_y x$ the operator gives $i\vec e_x$ and the forced multiplier gives $-\vec e_y$. One multiplier cannot serve, because the source's operator carries two.
+
+**Written out, it is the four frame cells of the Pauli display.** Its four terms are four cells: the time term multiplies on the right by $\vec e_x$ alone; each spatial term multiplies on the left by the spatial unit of its own coordinate and on the right by $\vec e_y$. The right multiplier $\vec e_y$ is therefore common to the three spatial terms, and $\vec e_x$ is the right multiplier of the time term — which is exactly the pair of jobs the closing block's five frame cells give to $\vec e_y$ and to $\vec e_x$ (§*The Legacy Pauli Gamma Formulation*). The symbol therefore does not buy an operator: it buys back the defect of the display, and the body does not compute with it.
+
+**So the article splits its uses.** The four field equations are the series' own, and are written as such: the free field equation is $\tilde\nabla\tilde F=0$; the potential equation $\partial^2\pi=0$ is $\Box\pi=0$, since $\partial^2=-\Box$; the sourced equation $\partial F=J$ is $\tilde\nabla\tilde F=\tilde J$; and the contractions $\partial\cdot j$, $\partial\cdot g$, $\partial\cdot J$ are the series' contractions of the gradient with the three currents. The one equation that stays in the source's letter is the spinorial one of §*The Field as a Spinor Bilinear*, $\partial\psi\,\omega=\ldots$, because there the operator is the subject: it is two-sided, and its right factor is the whole content of the equation. Even there the letter is read through the cells above, never as a black box.
+
+For the record, its action on an element is the four products, one per coordinate. With the time coordinate written $t'$ — the source's $t$ — and in units $c=1$,
 
 $$
-\omega=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=R_{-\vec e_z}^{\mathrm{axf}},
+\psi\mapsto i\,\frac{\partial\psi}{\partial t'}\vec e_x-\sum_k i\,\vec e_k\frac{\partial\psi}{\partial x_k}\vec e_y ,
 $$
 
-and the bookkeeping is short. The four $i$'s are central and give $i^4=+1$, so only the units matter. The left units multiply in their printed order to $\vec e_x\vec e_y\vec e_z=\vec e_z\vec e_z=-1$, and the right units, which compose in the reverse order, to $\vec e_y\vec e_y\vec e_y\vec e_x=-\vec e_y\vec e_x=+\vec e_z$. The cell is therefore $(-1)\,R_{\vec e_z}^{\mathrm{axf}}=R_{-\vec e_z}^{\mathrm{axf}}$, a pure right multiplication with no scalar left over. That is the **pseudoscalar cell**, and its square is a number:
+the spatial terms multiplying on both sides and the time term on the right. That the four right multipliers are the two just named is the whole of the check that the operator is two-sided.
+
+The source's **volume element** is the product of its four generators, and the bookkeeping is short. The four $i$'s are central and give $i^4=+1$, so only the units matter. The left factors multiply in their printed order to $\vec e_x\vec e_y\vec e_z=\vec e_x\vec e_x=-e_t$, and the right factors, which compose in the reverse order, to $\vec e_y\vec e_y\vec e_y\vec e_x=-\vec e_y\vec e_x=+\vec e_z$. The two pieces give $-\vec e_z$, with no scalar left over, so the volume element is the element
 
 $$
-\omega^2=R_{(-\vec e_z)^2}^{\mathrm{axf}}=R_{-1}=-1 .
+\omega=-\vec e_z,\qquad \omega^2=\vec e_z^2=-e_t ,
 $$
 
-With the anticommutation with each of the four generator cells, that is the pair of signs that makes it the volume element of $\mathrm{Cl}_{1,3}$; the check is in *The Legacy Pauli Gamma Formulation*. The source sets $i\equiv\omega$, so the "$i$" of its electric–magnetic notation $F=\vec E+i\vec B$ is that operator — the **duality operator** — and not a second imaginary number: the two obey the one rule $i^2=-1$. Every $\exp(\omega\beta)$ below is the exponential of that cell, $\cos\beta+\omega\sin\beta$, that is, a duality rotation.
+the **pseudoscalar** of the source's display, and a root of $-e_t$. Its signs against the units are fixed here once: it anticommutes with $\vec e_x$ and $\vec e_y$ and commutes with $\vec e_z$ and $e_t$. Multiplied on the right, it anticommutes with each of the four terms of $\partial$: the right factors there are $\vec e_x$ once and $\vec e_y$ three times, and $\omega$ anticommutes with both. The source sets $i\equiv\omega$, so the "$i$" of its electric–magnetic notation $F=\vec E+i\vec B$ is that element — the **duality** — and not a second imaginary number: the two obey the one rule $i^2=-1$. Every $\exp(\omega\beta)$ below is the exponential of that element, $\cos\beta+\omega\sin\beta$, that is, a duality rotation.
 
-The source's fixed bivector is $-\vec e_z$, the product of its second generator with its first, and it is the **spin plane**: the role played in the corpus's Dirac–Hestenes equation $\nabla\psi\,\omega\sigma_3$ by the fixed bivector $\omega\sigma_3$, and it multiplies the spinor on the **right** as it does there. The cell for that right multiplication is $R_{-\vec e_z}^{\mathrm{axf}}$, which is the volume element $\omega$ displayed just above: the spin plane and the duality generator are the same cell, which is why one symbol does both jobs in the source.
+The source's fixed bivector is $-\vec e_z$, the product of its second generator with its first, and it is the **spin plane**: it plays in the source's equation the role the corpus's Dirac–Hestenes equation gives to its own fixed bivector, and it multiplies the spinor on the **right**, as it does there. As an element it *is* the volume element $\omega$ displayed just above, so the spin plane and the duality generator are one element, which is why one symbol does both jobs in the source.
 
-The even subalgebra $C\ell^+(M)$, in which the spinor $\psi$ lives, is the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary. The source's route is nevertheless the **Clifford-bundle** one, and the corpus records it as a different technical road to the same structural equivalences, cross-referencing rather than merging.
+The spinor $\psi$ is an element of the biquaternion algebra $\mathbb{B}$, which is the corpus's own algebra. The source reaches the same structural equivalences from its bundle of forms, and the corpus records it as a different technical road to them, cross-referencing rather than merging.
 
-## Maxwell's Equations in the Clifford Bundle
+## Maxwell's Equation in the Bundle of Forms
 
-### The plane wave and the duality operator
+### The plane wave and the duality
 
-The free equation $\partial F=0$ is solved by the plane wave
+The free equation $\tilde\nabla\tilde F=0$ — the source's $\partial F=0$ — is solved by the plane wave
 
 $$
 F = f\,\exp(\omega kx),
@@ -72,11 +82,11 @@ $$
 F = f\cos kx + \omega f\sin kx .
 $$
 
-Writing $F=\vec E+\omega\vec B$ and $f=\mathbf e$, this is $\vec E+\omega\vec B=\mathbf e\cos kx+\omega\mathbf e\sin kx$: the electric and magnetic parts are **out of phase by a quarter period**, and the "$i$" of the standard complex formulation is precisely the $\omega$ that produces that phase, not a formal device. The source calls this the "secret" that the complex notation hides, and it is the observation on which the rest of its plane-wave discussion is built. That $\omega$ is the duality operator is also why the **duality rotation** $F\mapsto \exp(\omega\beta)F$ of *Exercise: Duality Rotation and the Riemann–Silberstein Vector* appears below as the parameter that governs the non-linear equation.
+Writing $F=\vec E+\omega\vec B$ and $f=\mathbf e$, this is $\vec E+\omega\vec B=\mathbf e\cos kx+\omega\mathbf e\sin kx$: the electric and magnetic parts are **out of phase by a quarter period**, and the "$i$" of the standard complex formulation is precisely the $\omega$ that produces that phase, not a formal device. The source calls this the "secret" that the complex notation hides, and it is the observation on which the rest of its plane-wave discussion is built. That $\omega$ is what carries the duality is also why the **duality rotation** $F\mapsto \exp(\omega\beta)F$ of *Exercise: Duality Rotation and the Riemann–Silberstein Vector* appears below as the parameter that governs the non-linear equation.
 
 ### The Hertz potential
 
-The solutions of the next two sections are generated by a **Hertz potential**. The source's theorem is that if a 2-form $\pi$ satisfies the wave equation $\partial^2\pi=0$ and the vector potential is taken as $A=-\delta\pi$ with $\delta$ the coderivative, then $F=\partial A$ solves the Maxwell equation $\partial F=0$. The proof is one line. The Dirac operator is $d-\delta$, so $\partial F=\partial^2A$, and $\partial^2(-\,\delta\pi)=-\delta\,\partial^2\pi=0$; the wave equation on $\pi$ is the only input. It is the technical device that converts a scalar solution of the wave equation into an electromagnetic field with the desired properties.
+The solutions of the next two sections are generated by a **Hertz potential**. The source's theorem is that if a 2-form $\pi$ satisfies the wave equation $\partial^2\pi=0$ and the vector potential is taken as $A=-\delta\pi$ with $\delta$ the coderivative, then $F=\partial A$ solves the free field equation. In the series' notation that wave equation is $\Box\pi=0$ and that field equation is $\tilde\nabla\tilde F=0$, because $\partial^2=-\Box$. The proof is one line: $\partial F=\partial^2A$, and $\partial^2(-\,\delta\pi)=-\delta\,\partial^2\pi=0$, so the wave equation on $\pi$ is the only input. It is the technical device that converts a scalar solution of the wave equation into an electromagnetic field with the desired properties.
 
 ## Subluminal Solutions
 
@@ -84,7 +94,7 @@ The solutions of the next two sections are generated by a **Hertz potential**. T
 
 Throughout, the time coordinate is written $t'$ — the source's $t$ — for the frame in which a given solution is written.
 
-The source takes the Hertz potential to be $\pi=\Phi\,\vec e_z$, printed as the pair of cells $iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, which composes to $L_{\vec e_z}^{\mathrm{axf}}$ — left multiplication by the bivector $\vec e_z$. The scalar part is separated as
+The source takes the Hertz potential to be $\pi=\Phi\,\vec e_z$, printed as a product of two of the generators of $\partial$; composed, the pair acts on the **left** by the bivector $\vec e_z$, and $\Phi$ is a function of the phase $\omega\Omega t'$ alone, so it commutes with the bivector and the left and the right readings of $\pi$ agree. The scalar part is separated as
 
 $$
 \Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,\exp(\omega\Omega t'),
@@ -98,7 +108,7 @@ $$
 
 with $\vec W(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ a fixed vector field, given explicitly in the source in terms of $\alpha=\Omega r\cos\Omega r-\sin\Omega r$ and $\beta=3\alpha+\Omega^2r^2\sin\Omega r$, with the angular dependence of the lowest spherical harmonics.
 
-Three of its properties are the point of the construction. First, the invariant $I_1=\vec E_0^2-c^2\vec B_0^2$ and the pseudo-invariant $I_2=\vec E_0\cdot\vec B_0$ of *The Field-Strength Biquaternion and Its Invariants* are **not zero**. Here $\vec E_0^2$ is the sum of squared components, as in that article: the source's $\vec E$ and $\vec B$ are Pauli vectors, living in $C\ell_{3,0}$ whose units square to $+1$, not in the corpus's spatial units $\vec e_k$, which square to $-1$. Both fields are parallel to $\vec W$ and a quarter period apart, so in the source's units $c=1$
+Three of its properties are the point of the construction. First, the invariant $I_1=\vec E_0^2-c^2\vec B_0^2$ and the pseudo-invariant $I_2=\vec E_0\cdot\vec B_0$ of *The Field-Strength Biquaternion and Its Invariants* are **not zero**. Here $\vec E_0^2$ is the sum of squared components, as in that article: the source's $\vec E$ and $\vec B$ are three-vectors whose units square to $+1$, as in the vector calculus, not spatial units $\vec e_k$, which square to $-1$. Both fields are parallel to $\vec W$ and a quarter period apart, so in the source's units $c=1$
 
 $$
 I_2=-\tfrac12|\vec W|^2\sin 2\Omega t',\qquad I_1=-|\vec W|^2\cos 2\Omega t',
@@ -110,7 +120,7 @@ $$
 \mathrm{rot}\,\vec W = -\Omega\,\vec W,
 $$
 
-so that the configuration is a helical force-free field, the object that appears in plasma physics and in the earlier "force-free" literature the source cites. The sign is convention-laden and worth one warning: the four generator cells inside $\partial$ carry a raised index, so the spatial part of $\partial$ is the negative of the Cartesian $\nabla$ and the curl it defines is the negative of the Cartesian one. Checked in Cartesian components, the printed $\vec W$ returns $\mathrm{curl}\,\vec W=+\Omega\vec W$; the minus in (3.21) is what this convention produces. The energy integral of $F_0$ alone diverges, and the source notes that finite-energy wave packets over a distribution of frequencies can be formed instead.
+so that the configuration is a helical force-free field, the object that appears in plasma physics and in the earlier "force-free" literature the source cites. The sign is convention-laden and worth one warning: the four generators of $\partial$ carry a raised index, so the spatial part of $\partial$ is the negative of the Cartesian $\nabla$ and the curl it defines is the negative of the Cartesian one. Checked in Cartesian components, the printed $\vec W$ returns $\mathrm{curl}\,\vec W=+\Omega\vec W$; the minus in (3.21) is what this convention produces. The energy integral of $F_0$ alone diverges, and the source notes that finite-energy wave packets over a distribution of frequencies can be formed instead.
 
 ### The moving subluminal solution
 
@@ -132,7 +142,7 @@ That relation is what the word "subluminal" means here. Since $\varpi^2-q^2>0$, 
 
 ### Purely electromagnetic particles
 
-The subluminal solutions bear on a question older than the formalism. Einstein, following Poincaré and Ehrenfest, asked whether a **purely electromagnetic particle** can exist: a field configuration $F_p$ with current $J_p$ obeying $\partial F_p=J_p$ and the subsidiary condition $J_p\cdot F_p=0$. The contraction $J_p\cdot F_p$ is a vector. With the field written $F_p=\vec E_p+\omega\vec B_p$ and the current split into charge density and spatial current, its vanishing has one time component and three spatial ones:
+The subluminal solutions bear on a question older than the formalism. Einstein, following Poincaré and Ehrenfest, asked whether a **purely electromagnetic particle** can exist: a field configuration $F_p$ with current $J_p$ obeying $\tilde\nabla\tilde F_p=\tilde J_p$ — the source's $\partial F_p=J_p$ — and the subsidiary condition $J_p\cdot F_p=0$. The contraction $J_p\cdot F_p$ is a vector. With the field written $F_p=\vec E_p+\omega\vec B_p$ and the current split into charge density and spatial current, its vanishing has one time component and three spatial ones:
 
 $$
 J_p\cdot F_p=0
@@ -148,11 +158,11 @@ $$
 \rho_p\vec E_p=0,\qquad \vec j_p\cdot\vec E_p=0,\qquad \vec j_p\times\vec B_p=0,
 $$
 
-the first being the electric force density, the second the power density, and the third the magnetic force density on the current. The triple implies the pair above, but not conversely, so the source's implication runs the wrong way; the two forms coincide in each of the frames the argument goes on to use. For a **time-like** $J_p$ the frame is the rest frame, $\vec j_p=0$, where the condition reduces to $\rho_p\vec E_p=0$ and hence $\vec E_p=0$; then the time component of $\partial F_p=J_p$, which is $\operatorname{div}\vec E_p=\rho_p$, forces $\rho_p=0$. No time-like configuration survives, and that is Einstein's conclusion. What carries the argument is the rest-frame form, not the printed triple.
+the first being the electric force density, the second the power density, and the third the magnetic force density on the current. The triple implies the pair above, but not conversely, so the source's implication runs the wrong way; the two forms coincide in each of the frames the argument goes on to use. For a **time-like** $J_p$ the frame is the rest frame, $\vec j_p=0$, where the condition reduces to $\rho_p\vec E_p=0$ and hence $\vec E_p=0$; then the time component of $\tilde\nabla\tilde F_p=\tilde J_p$, which is $\operatorname{div}\vec E_p=\rho_p$, forces $\rho_p=0$. No time-like configuration survives, and that is Einstein's conclusion. What carries the argument is the rest-frame form, not the printed triple.
 
-For a **space-like** $J_p$ there is a frame with $\rho_p=0$ and $\vec j_p\ne0$, and the condition reduces to the remaining two components. A current parallel to the magnetic field, $\vec j_p=kC\,\vec B_p$ with $k=\pm1$ a chirality and $C$ real, satisfies both: $\vec j_p\times\vec B_p=0$ because $\vec B_p$ is parallel to itself, and $\vec j_p\cdot\vec E_p=0$ provided $\vec E_p\cdot\vec B_p=0$.
+For a **space-like** $J_p$ there is a frame with $\rho_p=0$ and $\vec j_p\ne0$, and the condition reduces to the remaining two components. A current parallel to the magnetic field, $\vec j_p=kC\,\vec B_p$ with $k=\pm1$ a sign and $C$ real, satisfies both: $\vec j_p\times\vec B_p=0$ because $\vec B_p$ is parallel to itself, and $\vec j_p\cdot\vec E_p=0$ provided $\vec E_p\cdot\vec B_p=0$.
 
-The connection with the subluminal family is that the free stationary field $F_0$ can be **split** as a field plus a current, $\partial F_0=0$ being equivalent to $\partial F_p=J_p$ for a suitable space-like $J_p$; the free equation then models a standing purely electromagnetic particle. This is the source's route into the older programme of Waite, Barut and Zeni, which it cites; it is recorded here as a programme item, not as an established particle model.
+The connection with the subluminal family is that the free stationary field $F_0$ can be **split** as a field plus a current, $\tilde\nabla\tilde F_0=0$ being equivalent to $\tilde\nabla\tilde F_p=\tilde J_p$ for a suitable space-like $J_p$; the free equation then models a standing purely electromagnetic particle. This is the source's route into the older programme of Waite, Barut and Zeni, which it cites; it is recorded here as a programme item, not as an established particle model.
 
 ## Superluminal Solutions: the X-Wave
 
@@ -176,23 +186,23 @@ The superluminality must be read with the corpus's usual care, and the source's 
 
 ### Two constraints, six degrees of freedom
 
-The structural heart of the paper is the representation of the field as a **spinor bilinear**. With $\psi$ a Dirac–Hestenes spinor, an element of the even subalgebra $C\ell^+(M)$, the field is written
+The structural heart of the paper is the representation of the field as a **spinor bilinear**. With $\psi$ an element of $\mathbb{B}$ — a Dirac–Hestenes spinor in the source's terms — the field is written
 
 $$
 \boxed{\;F = -\psi\,\vec e_z\,\psi^{\natural}\;}
 $$
 
-where $\psi^{\natural}$ is the **reverse** of $\psi$: reversion, written $\natural$ in the corpus and with a tilde, $\tilde\psi$, in the source. It is a reversion and not the coefficient conjugation, which the corpus writes with $\mathcal C$. The counting matters: a general even spinor has **eight** real degrees of freedom, while the field $F$ has **six**, so two constraints must be imposed on $\psi$ for the correspondence to be one-to-one up to a normalisation. The source chooses them as $\partial\cdot j=0$ and $\partial\cdot g=0$, where $j$ and $g$ are the vector and axial-vector currents it builds from the derivative of $\psi$. This is the same eight-versus-six counting the corpus records in its Dirac–Hestenes article, which reaches it through the parameters of the rotor decomposition; the constraints are the source's extra data.
+where $\psi^{\natural}$ is the **reverse** of $\psi$: the corpus's natural conjugation $\natural$, which the source writes $\tilde\psi$. The counting matters: a general $\psi$ has **eight** real degrees of freedom, while the field $F$ has **six**, so two constraints must be imposed on $\psi$ for the correspondence to be one-to-one up to a normalisation. The source chooses them as $\partial\cdot j=0$ and $\partial\cdot g=0$, where $j$ and $g$ are the vector and axial-vector currents it builds from the derivative of $\psi$. This is the same eight-versus-six counting the corpus records in its Dirac–Hestenes article, which reaches it through the parameters of the rotor decomposition; the constraints are the source's extra data.
 
-Substituting $F=-\psi\vec e_z\psi^{\natural}$ into the generalised Maxwell equation $\partial F=J$ and using the canonical decomposition $\psi=\rho^{1/2}\exp(\omega\beta/2)R$ — the rotor $R$, the density $\rho$, and the **Takabayasi angle** $\beta$ — turns the field equation into a spinorial equation for $\psi$, with two scalar coefficients:
+Substituting $F=-\psi\vec e_z\psi^{\natural}$ into the generalised Maxwell equation $\tilde\nabla\tilde F=\tilde J$ — the source's $\partial F=J$ — and using the canonical decomposition $\psi=\rho^{1/2}\exp(\omega\beta/2)R$ — the rotor $R$, the density $\rho$, and the **Takabayasi angle** $\beta$ — turns the field equation into a spinorial equation for $\psi$, with two scalar coefficients:
 
 $$
-\partial\psi\,R_{-\vec e_z}^{\mathrm{axf}}
-=\left(\Lambda+\omega K\right)\psi\,iR_{\vec e_x}^{\mathrm{axf}}\exp(\omega\beta)
+\partial\psi\,\omega
+=\left(\Lambda+\omega K\right)\psi\,i\vec e_x\exp(\omega\beta)
 +\frac{1}{2\rho}\exp(\omega\beta)J\,\psi ,
 $$
 
-with $\Lambda=\Omega\cdot S$ and $K=\Omega\cdot(\omega S)$ built from the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ and the spin bivector $S=-\tfrac12\psi\vec e_z\psi^{-1}=-\tfrac12R\vec e_zR^{-1}$, in which the phase cancels. The bivectors $\Omega_\mu$ are those of the rotor's derivative, $\partial \psi/\partial x_\mu=\tfrac12(\partial/\partial x_\mu\ln\rho+\omega\,\partial \beta/\partial x_\mu+\Omega_\mu)\psi$ with $\Omega_\mu=2(\partial R/\partial x_\mu)R^{-1}$, so $\Omega$ is the directional derivative of the rotor along the four-velocity. The source prints the two scalar terms separately; they are one, because both multiply the same cell, and they add into the single coefficient $\Lambda+\omega K$, a complex number in $\omega$.
+with $\Lambda=\Omega\cdot S$ and $K=\Omega\cdot(\omega S)$ built from the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ and the spin bivector $S=-\tfrac12\psi\vec e_z\psi^{-1}=-\tfrac12R\vec e_zR^{-1}$, in which the phase cancels. The bivectors $\Omega_\mu$ are those of the rotor's derivative, $\partial \psi/\partial x_\mu=\tfrac12(\partial/\partial x_\mu\ln\rho+\omega\,\partial \beta/\partial x_\mu+\Omega_\mu)\psi$ with $\Omega_\mu=2(\partial R/\partial x_\mu)R^{-1}$, so $\Omega$ is the directional derivative of the rotor along the four-velocity. The source prints the two scalar terms separately; they are one, because both multiply the same product on the right, and they add into the single coefficient $\Lambda+\omega K$, a complex number in $\omega$.
 
 The source also carries the pair $(\lambda,\kappa)$, with $\lambda=\Lambda\cos\beta+K\sin\beta$ and $\kappa=K\cos\beta-\Lambda\sin\beta$, and writes the same equation with it and no phase in front: the phase-free display is the same equation, because
 $$
@@ -200,18 +210,18 @@ $$
 $$
 Both spellings are used below; $(\Lambda,K)$ carries the geometry, since the two numbers are projections of $\Omega$ on the spin bivector, and $(\lambda,\kappa)$ is the pair that the free-field constraints act on.
 
-The spin-plane factor needs a second look, because the source prints it in a form that reads as a product of two cells. It writes $iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and composed that pair is $L_{-\vec e_z}^{\mathrm{axf}}$: **left** multiplication by the fixed bivector $-\vec e_z$. The equation applies the bivector on the **right**, $\psi\mapsto-\psi\vec e_z$, and the cell of that right multiplication is $R_{-\vec e_z}^{\mathrm{axf}}$ — the volume element $\omega$ of the introduction. The two are different operators carrying the same bivector on opposite sides; only the right one is used below, because it is the one that anticommutes with the spin cell $iR_{\vec e_x}^{\mathrm{axf}}$.
+The spin-plane factor needs a second look, because the source prints it as a product of two of its generators and the side is easy to mistake. Composed, that pair acts on the **left** by the fixed bivector $-\vec e_z$, that is $\psi\mapsto-\vec e_z\psi$. The equation applies the bivector on the **right**, $\psi\mapsto-\psi\vec e_z$, which is the volume element $\omega$ of the introduction. The two are different: one bivector on opposite sides, and only the right one is used below, because it is the one that anticommutes with $\vec e_x$.
 
-The phase cell carries the two signs of $\omega$ against the algebra: as the pseudoscalar it **commutes with every even element** — with the spin plane $R_{-\vec e_z}^{\mathrm{axf}}$ and with its own half-rotation — and **anticommutes** with the odd spin cell $iR_{\vec e_x}^{\mathrm{axf}}$, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$:
+The element $\omega$ carries the two signs of the phase against the algebra: it **commutes** with every function of itself, its half-rotation included, and it **anticommutes** with $\vec e_x$, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$; the central $i$ passes through on both sides:
 
 $$
-\omega\,iR_{\vec e_x}^{\mathrm{axf}}=-iR_{\vec e_x}^{\mathrm{axf}}\,\omega .
+\omega\,\vec e_x=-\vec e_x\,\omega .
 $$
 
 The free case $J=0$ is therefore
 
 $$
-\partial\psi\,R_{-\vec e_z}^{\mathrm{axf}}=\left(\Lambda+\omega K\right)\psi\,iR_{\vec e_x}^{\mathrm{axf}}\exp(\omega\beta),
+\partial\psi\,\omega=\left(\Lambda+\omega K\right)\psi\,i\vec e_x\exp(\omega\beta),
 $$
 
 which has the shape of the Dirac–Hestenes equation but with a coefficient that is a **complex number in $\omega$** rather than a mass.
@@ -234,7 +244,7 @@ $$
 $$
 The $\omega$-part is gone and the coefficient is a real scalar. For the free field,
 $$
-\boxed{\;\partial\psi\,R_{-\vec e_z}^{\mathrm{axf}}=\lambda\,\psi\,iR_{\vec e_x}^{\mathrm{axf}}\;}
+\boxed{\;\partial\psi\,\omega=\lambda\,\psi\,i\vec e_x\;}
 $$
 which has the **shape** of the Dirac–Hestenes equation, with a single real coefficient $\lambda$ — in units of inverse length, since restoring $\hbar$ and $c$ gives $\lambda=mc/\hbar$. The coefficient has become real; whether it is a **mass** is the next question. In the unrotated pair the same coefficient reads $\Lambda+\omega K=\lambda\exp(\omega\beta)$, the real coefficient times the duality phase, which is why the phase-carrying display and this one are one equation.
 
@@ -246,25 +256,25 @@ $$
 
 The source states it that way round: the current $J$ is not conserved unless $\lambda$ is constant, so it assumes $\partial\cdot J=0$ explicitly. That assumption is the third condition, and it is the one that turns a Dirac–Hestenes-shaped equation into a Dirac–Hestenes equation with a mass. Without it the display above is exact but its coefficient drifts from point to point.
 
-**The rescaling step.** The same content reads as a statement about the spinor. Put $\psi=\varphi\exp(\omega\beta/2)$ with $\varphi=\sqrt\rho\,R$ and $\beta$ constant. The half rotation commutes with the even algebra, so it moves to the right of the derivative on the left side, and the anticommutation with the spin cell merges the two phases on the right side into the same half rotation:
+**The rescaling step.** The same content reads as a statement about the spinor. Put $\psi=\varphi\exp(\omega\beta/2)$ with $\varphi=\sqrt\rho\,R$ and $\beta$ constant. The rotation $\exp(\omega\beta/2)$ does not depend on $x$, so it passes through the derivative on the left side, and the anticommutation with $i\vec e_x$ merges the two phases on the right side into the same half rotation:
 $$
-\partial\psi\,R_{-\vec e_z}^{\mathrm{axf}}=\Bigl(\partial\varphi\,R_{-\vec e_z}^{\mathrm{axf}}\Bigr)\exp(\omega\beta/2),
+\partial\psi\,\omega=\partial\varphi\,\omega\exp(\omega\beta/2),
 $$
 $$
-\left(\Lambda+\omega K\right)\psi\,iR_{\vec e_x}^{\mathrm{axf}}\exp(\omega\beta)
-=\left(\Lambda+\omega K\right)\varphi\,iR_{\vec e_x}^{\mathrm{axf}}\exp(\omega\beta/2).
+\left(\Lambda+\omega K\right)\psi\,i\vec e_x\exp(\omega\beta)
+=\left(\Lambda+\omega K\right)\varphi\,i\vec e_x\exp(\omega\beta/2).
 $$
 The common right factor cancels — it is the **last** factor on both sides, and it is invertible — leaving the same equation with the phase gone,
 
 $$
-\partial\varphi\,R_{-\vec e_z}^{\mathrm{axf}}=\lambda\,\varphi\,iR_{\vec e_x}^{\mathrm{axf}},
+\partial\varphi\,\omega=\lambda\,\varphi\,i\vec e_x,
 $$
 
 with $\Lambda$ and $K$ unchanged, since the phase cancels in the spin bivector. A constant angle is thus not a parameter of the dynamics but a phase carried by the spinor, and solutions with different constant $\beta$ are the same solution multiplied on the right.
 
-The half angle is not a convention. The source prints the full one in one place, where its (5.15) is said to follow from $\psi=\varphi\exp(\beta\omega)$. With that exponent the phase does not cancel: the left side of the source's (5.7) carries one power of it, the right side none. The reason is that on the right the phase enters twice — once from $\psi$ and once from the equation itself — and the two annihilate after the inner one passes the odd factor, $\exp(\omega\beta)\,i\vec e_x=i\vec e_x\exp(-\omega\beta)$. What follows with the full exponent is $\partial\varphi R_{-\vec e_z}^{\mathrm{axf}}=m\varphi\,iR_{\vec e_x}^{\mathrm{axf}}\exp(-\omega\beta)$, with the phase moved to the other side rather than removed. The rest of the paper uses the half angle: the solutions (5.16) and (5.17) carry $\exp(\beta\omega/2)$, and the mass-spectrum decomposition (6.6) is $\psi=\exp(\omega\beta/2)\varphi$.
+The half angle is not a convention. The source prints the full one in one place, where its (5.15) is said to follow from $\psi=\varphi\exp(\beta\omega)$. With that exponent the phase does not cancel: the left side of the source's (5.7) carries one power of it, the right side none. The reason is that on the right the phase enters twice — once from $\psi$ and once from the equation itself — and the two annihilate after the inner one passes the odd factor, $\exp(\omega\beta)\,i\vec e_x=i\vec e_x\exp(-\omega\beta)$. What follows with the full exponent is $\partial\varphi\,\omega=m\varphi\,i\vec e_x\exp(-\omega\beta)$, with the phase moved to the other side rather than removed. The rest of the paper uses the half angle: the solutions (5.16) and (5.17) carry $\exp(\beta\omega/2)$, and the mass-spectrum decomposition (6.6) is $\psi=\exp(\omega\beta/2)\varphi$.
 
-**The narrower case $J=0$, $K=0$.** With the constraints imposed the two displays are one equation, the coefficient $\Lambda+\omega K=\lambda\exp(\omega\beta)$ being the real coefficient times the phase. The source also studies this narrower case, where the coefficient is $\Lambda$ alone and the phase stands in front; it notes that this form was studied extensively by Daviau. It is non-linear as it stands, it reduces to the Dirac–Hestenes equation by the rescaling above at every constant $\beta$, and it is *identical* to that equation only at $\beta=0$ and $\beta=\pi$ — the two angles the source assigns to the electron and the positron, through the projectors of the next section.
+**The narrower case $J=0$, $K=0$.** With the constraints imposed the two displays are one equation, the coefficient $\Lambda+\omega K=\lambda\exp(\omega\beta)$ being the real coefficient times the phase. The source also studies this narrower case, where the coefficient is $\Lambda$ alone and the phase stands in front; it notes that this form was studied extensively by Daviau. It is non-linear as it stands, it reduces to the Dirac–Hestenes equation by the rescaling above at every constant $\beta$, and it is *identical* to that equation only at $\beta=0$ and $\beta=\pi$ — the two angles the source assigns to the electron and the positron, through the family of the next section.
 
 The plane-wave solutions of *The Dirac Equation in Biquaternionic Form* have a constant spinor coefficient, so their $\beta$ is constant, and *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form* calls $\beta=0$ the pure electron state. They therefore sit on this linearisable class, and the source supplies the general reason why.
 
@@ -276,66 +286,93 @@ $$
 T=m\,\bigl\langle\psi\,\psi^{\natural}\exp(-\omega\beta)\bigr\rangle_0=m\rho ,
 $$
 
-positive for every solution, so every solution has positive energy; the linear equation gives $T_{\mathrm{Dirac}}=m\rho\cos\beta$, and the two differ by the factor $\cos\beta$, coinciding only at the two endpoints. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12 F\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}} F$. The overall sign is not fixed by the print: a 2-form reverses to minus itself, $\tilde F=-F$, so the same object written with the reverse in the middle differs only in that sign.
+positive for every solution, so every solution has positive energy; the linear equation gives $T_{\mathrm{Dirac}}=m\rho\cos\beta$, and the two differ by the factor $\cos\beta$, coinciding only at the two endpoints. The source adds one structural remark that the corpus records as a curiosity: the Tetrode energy–momentum one-form is a kind of **square root** of the Maxwell energy–momentum one-form $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\nu(\mu)}$. The overall sign is not fixed by the print: a 2-form reverses to minus itself, $\tilde F=-F$, so the same object written with the reverse in the middle differs only in that sign.
 
-Here $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the generator cell of the coordinate $x_\mu$, with $\nu(t)=x$ and $\nu(k)=y$.
+Here $e_\mu$ and $\vec e_{\nu(\mu)}$ are the unit of the coordinate $x_\mu$ and its partner, with $\nu(t)=x$ and $\nu(k)=y$, and the two act on the middle factor of $F$.
 
 ### The projection operators
 
-The projector family is what carries the mass spectrum, so it is stated precisely, including the one printed relation that cannot hold.
+The family that carries the mass spectrum is a family of projections on the algebra, and it is stated precisely here, including the one printed relation that cannot hold.
 
-The source's projectors are built from the **conjugation** by its time vector — in this article's frame cells, by the unit $i\vec e_x$,
-
-$$
-\Lambda_\pm(\psi)=\tfrac12\left(\psi\pm i\vec e_x\,\psi\,i\vec e_x\right),
-$$
-
-and they are genuine. The sign rule of the introduction settles the square of the conjugating element: $(i\vec e_x)^2=i^2\vec e_x^2=(-1)(-1)=+1$. Conjugation by an element that squares to $+1$ is an **involution**, so with $P\psi=i\vec e_x\,\psi\,i\vec e_x$ one has $P^2=1$, and $\tfrac12(1+P)$ is idempotent for that reason alone:
+**The pair.** The source builds it from the **conjugation** by its time vector, which in the algebra is the element $i\vec e_x$: an element $\psi$ is carried to $i\vec e_x\,\psi\,i\vec e_x$. The two members of the pair are the two values
 
 $$
-\Lambda_+^2=\Lambda_+,\qquad \Lambda_-\Lambda_+=\Lambda_+\Lambda_-=0,\qquad \Lambda_++\Lambda_-=1 .
+\psi_+=\tfrac12\left(\psi+i\vec e_x\,\psi\,i\vec e_x\right),\qquad
+\psi_-=\tfrac12\left(\psi-i\vec e_x\,\psi\,i\vec e_x\right),
 $$
 
-**The conjugation is not the identity.** It is an involution, and on the even subalgebra it has both eigenvalues, each on half of it, so the two projectors are that split of the eight real dimensions into two fours. The corpus's Dirac–Hestenes article splits the same algebra by a **minimal ideal** instead, with an idempotent applied on one side; that is a different split, and the source uses the conjugation.
-
-The one-parameter family is the same projector seen from a rotated frame. With the volume cell $\omega=R_{-\vec e_z}^{\mathrm{axf}}$,
+so that $\psi=\psi_++\psi_-$ is the same element written as their sum. The conjugating element squares to $+e_t$, $(i\vec e_x)^2=i^2\vec e_x^2=(-1)(-1)=+1$ by the sign rule of the introduction, so conjugating twice returns every element,
 
 $$
-\Lambda_\beta(\psi)=\tfrac12\left(\psi+\exp(\omega\beta)\,i\vec e_x\,\psi\,i\vec e_x\right)
-=\exp\!\left(\tfrac{\omega\beta}{2}\right)\Lambda_+\!\left(\exp\!\left(-\tfrac{\omega\beta}{2}\right)\psi\right),
+i\vec e_x\left(i\vec e_x\,\psi\,i\vec e_x\right)i\vec e_x=\psi .
 $$
 
-that is, the plain projector applied in a duality-rotated frame: rotate the spinor, project it, rotate the result back. The phase here is the algebra element $\cos\beta+\omega\sin\beta$, not the right-multiplication cell of the introduction, and the half-phases add into the full $\exp(\omega\beta)$ because the inner one passes the odd factor with a change of sign, $\exp(-\tfrac{\omega\beta}{2})\,i\vec e_x=i\vec e_x\exp(\tfrac{\omega\beta}{2})$. That is the source's (5.28) as printed. The identity on the right settles the whole list the source prints: a conjugate of a projector is a projector, so $\Lambda_\beta^2=\Lambda_\beta$ for every $\beta$; the shift $\beta\mapsto\beta+\pi$ complements it, so $\Lambda_\beta+\Lambda_{\beta+\pi}=1$ and $\Lambda_\beta\Lambda_{\beta+\pi}=0$; and $\Lambda_\beta$ returns to $\Lambda_+$ only at $\beta\equiv0$ modulo $2\pi$. On the two eigenspaces of $P$ the action is
+Two consequences follow, one line each. The conjugated value of $\psi_+$ is $+\psi_+$ and that of $\psi_-$ is $-\psi_-$,
 
 $$
-\Lambda_\beta\psi_+=\cos\tfrac{\beta}{2}\,\exp\!\left(\tfrac{\omega\beta}{2}\right)\psi_+,\qquad
-\Lambda_\beta\psi_-=-\omega\sin\tfrac{\beta}{2}\,\exp\!\left(\tfrac{\omega\beta}{2}\right)\psi_-,\qquad P\psi_\pm=\pm\psi_\pm,
+i\vec e_x\,\psi_+\,i\vec e_x=+\psi_+,\qquad i\vec e_x\,\psi_-\,i\vec e_x=-\psi_- ,
 $$
 
-which is where the cosine and sine weights of the family come from, and it is why $\psi_\pm$ are eigenspinors of $\Lambda_\beta$ only at the endpoints: at $\beta=\pi$ the second line returns $\psi_-$, because $\exp(\omega\pi/2)=\omega$ and $\omega^2=-1$.
+and each of the two values is fixed by its own map and annihilated by the other, because the second term of the map then reproduces the first term or cancels it.
 
-**The printed relation that cannot hold is the middle one of the three.** The source lists $\Lambda_\beta^2=\Lambda_\beta$, $\Lambda_\beta=\Lambda_{\beta+\pi}$ and $\Lambda_\beta\Lambda_{\beta+\pi}=0$. The first two make the third read $\Lambda_\beta^2=\Lambda_\beta=0$, which no non-zero projector satisfies. The relation that holds, and the one the printed line must be a slip for, is the sum
+**The conjugation is not the identity, and it is not an idempotent.** It takes both values on the algebra, each on four of the eight real dimensions, so the pair splits the algebra into two fours. The corpus's Dirac–Hestenes article splits the same algebra by an **idempotent applied on one side**, an idempotent built from a unit that article declares; that is a different split. The source uses no idempotent here, and the element it conjugates by is the time vector of its own frame.
+
+**The one-parameter family.** The family is the same projection seen from a duality-rotated frame. With the volume element $\omega$,
 
 $$
-\Lambda_\beta+\Lambda_{\beta+\pi}=1 .
+\psi_\beta=\tfrac12\left(\psi+\exp(\omega\beta)\,i\vec e_x\,\psi\,i\vec e_x\right)
+=\exp\!\left(\tfrac{\omega\beta}{2}\right)\tfrac12\left(\xi+i\vec e_x\,\xi\,i\vec e_x\right),
+\qquad
+\xi=\exp\!\left(-\tfrac{\omega\beta}{2}\right)\psi ,
 $$
 
-That is the correction the corpus records: the printed $=$ is missing a $+$ and a $1$.
+that is, rotate the element, project it, rotate the result back. The right-hand display holds for two reasons. The inner half phase passes the conjugating element with a change of sign,
+
+$$
+\exp\!\left(-\tfrac{\omega\beta}{2}\right)i\vec e_x=i\vec e_x\exp\!\left(\tfrac{\omega\beta}{2}\right),
+$$
+
+because $\omega$ anticommutes with $\vec e_x$; and the two half phases add into the full $\exp(\omega\beta)$, both being powers of the one element $\omega$. That is the source's (5.28) as printed.
+
+**The family projects for every $\beta$.** The conjugating element of the family is $K=\exp(\omega\beta)\,i\vec e_x$, and
+
+$$
+K^2=\exp(\omega\beta)\,i\vec e_x\,\exp(\omega\beta)\,i\vec e_x=(i\vec e_x)^2=+1 .
+$$
+
+The inner $\exp(\omega\beta)$ passes $\vec e_x$ with a change of sign and cancels the outer one. So conjugating twice by $K$ returns every element, and every member of the family is a projection, not only the two ends.
+
+The list the source prints is then read on the values. The value at $\beta$ put through the map at $\beta$ again is the same value; the map at $\beta+\pi$ complements it, so $\psi_\beta+\psi_{\beta+\pi}=\psi$ and the map at $\beta+\pi$ applied to $\psi_\beta$ gives zero; and $\psi_\beta$ is $\psi_+$ for every element only at $\beta\equiv0$ modulo $2\pi$. On the two values of the split the family reads
+
+$$
+\psi_+\longmapsto\cos\tfrac{\beta}{2}\,\exp\!\left(\tfrac{\omega\beta}{2}\right)\psi_+,\qquad
+\psi_-\longmapsto-\omega\sin\tfrac{\beta}{2}\,\exp\!\left(\tfrac{\omega\beta}{2}\right)\psi_-,
+$$
+
+which is where the cosine and sine weights of the family come from, and it is why the family returns $\psi_\pm$ to itself only at the endpoints: at $\beta=\pi$ the second line returns $\psi_-$, because $\exp(\omega\pi/2)=\omega$ and $\omega^2=-1$.
+
+**The printed relation that cannot hold is the middle one of the three.** The source lists that the family is a projection, that the angle $\beta+\pi$ gives the same map as $\beta$, and that the two maps at $\beta$ and $\beta+\pi$ have zero product. The first two make the third say that the value at $\beta$ is zero for every element, which no projection gives. The relation that holds, and the one the printed line must be a slip for, is the sum
+
+$$
+\psi_\beta+\psi_{\beta+\pi}=\psi .
+$$
+
+That is the correction the corpus records: the printed $=$ is missing a $+$ and a $\psi$.
 
 ## The Lepton Mass Spectrum
 
-The projector family is introduced for the mass spectrum, and the construction is short. The **electron** is the free field, $\partial F_e=0$ with $F_e^2\ne0$, written $F_e=-\psi_e\vec e_z\psi_e^{\natural}$; by the linearisation above, $\psi_e$ obeys the Dirac–Hestenes equation with the electron mass at $\beta=0$, and the positron sits at $\beta=\pi$. The source prints the spin plane in both terms of its (6.2); as printed that equation is $(\partial\psi_e+m\psi_e)\vec e_z=0$, which is not a Dirac–Hestenes equation, and the mass term must carry the time vector, as in the linearised form above. The **muon** is taken to be that free field **plus the positive-parity field**, $F=F_e+F^\uparrow$ — the field of a massless spinor with a magnetic current, the object of the next section.
+The family of the previous section is introduced for the mass spectrum, and the construction is short. The **electron** is the free field, $\tilde\nabla\tilde F_e=0$ with $F_e^2\ne0$, written $F_e=-\psi_e\vec e_z\psi_e^{\natural}$; by the linearisation above, $\psi_e$ obeys the Dirac–Hestenes equation with the electron mass at $\beta=0$, and the positron sits at $\beta=\pi$. The source prints the spin plane in both terms of its (6.2); as printed that equation is $(\partial\psi_e+m\psi_e)\vec e_z=0$, which is not a Dirac–Hestenes equation, and the mass term must carry the time vector, as in the linearised form above. The **muon** is taken to be that free field **plus the field of the $+$ branch**, $F=F_e+F_+$ — the field of a massless spinor with a magnetic current, the object of the next section.
 
 The magnetic current re-enters the sourced spinorial equation, and for the phase-free spinor the equation keeps the Dirac form with two coefficients — masses in inverse-length units, hence the $c/\hbar$:
 
 $$
-\partial\varphi\,R_{-\vec e_z}^{\mathrm{axf}}=\frac{Mc}{\hbar}\,\varphi\,iR_{\vec e_x}^{\mathrm{axf}}+\omega\,\frac{Nc}{\hbar}\,\varphi\,iR_{\vec e_x}^{\mathrm{axf}},
+\partial\varphi\,\omega=\frac{Mc}{\hbar}\,\varphi\,i\vec e_x+\omega\,\frac{Nc}{\hbar}\,\varphi\,i\vec e_x,
 \qquad
-M=m+3m\,\frac{q_m}{e}\sin\beta,\qquad
-N=-3m\,\frac{q_m}{e}\cos\beta ,
+M=m+3m\,\frac{q_{\mathrm{m}}}{e}\sin\beta,\qquad
+N=-3m\,\frac{q_{\mathrm{m}}}{e}\cos\beta ,
 $$
 
-with $q_m$ the magnetic charge. The $3$ carries the normalisation, and the source does not display the step: it fixes $F=-k\,(e\hbar/mc)\,\psi\vec e_z\psi^{\natural}$ with $k=2\pi/3$ and states only that (6.5) follows "as in section 4". The natural reading is the Gaussian $4\pi/c$ on the current, with the $\tfrac12$ of the spinorial Maxwell equation, against $k$: $4\pi/(2k)=3$. That reconstruction is not printed, so the coefficient stands or falls with (6.5) as it appears. What $k$ does **not** do is fix the dimensions — $[F]=QL^{-2}$ and $[e\hbar/mc]=QL$ already force $[\psi]=L^{-3/2}$ — so its value is chosen for the spectrum. The equation is a Dirac–Hestenes equation exactly when $N=0$, that is at $\beta=\pi/2$ and $\beta=3\pi/2$ — the two values of the projector family that the source assigns to the muon and the antimuon. Then $M=m+3mq_m/e$, and the Dirac quantisation condition for a monopole, $eq_m/\hbar c=n/2$, gives $q_m=en/2\alpha$ with $\alpha=e^2/\hbar c$ the fine-structure constant, so
+with $q_{\mathrm{m}}$ the magnetic charge. The $3$ carries the normalisation, and the source does not display the step: it fixes $F=-k\,(e\hbar/mc)\,\psi\vec e_z\psi^{\natural}$ with $k=2\pi/3$ and states only that (6.5) follows "as in section 4". The natural reading is the Gaussian $4\pi/c$ on the current, with the $\tfrac12$ of the spinorial Maxwell equation, against $k$: $4\pi/(2k)=3$. That reconstruction is not printed, so the coefficient stands or falls with (6.5) as it appears. What $k$ does **not** do is fix the dimensions — $[F]=QL^{-2}$ and $[e\hbar/mc]=QL$ already force $[\psi]=L^{-3/2}$ — so its value is chosen for the spectrum. The equation is a Dirac–Hestenes equation exactly when $N=0$, that is at $\beta=\pi/2$ and $\beta=3\pi/2$ — the two angles of the family that the source assigns to the muon and the antimuon. Then $M=m+3mq_{\mathrm{m}}/e$, and the Dirac quantisation condition for a monopole, $eq_{\mathrm{m}}/\hbar c=n/2$, gives $q_{\mathrm{m}}=en/2\alpha$ with $\alpha=e^2/\hbar c$ the fine-structure constant, so
 
 $$
 M=m\left(1+\frac{3n}{2\alpha}\right),\qquad n=1:\quad M=206.55\,m_e=105.5\ \mathrm{MeV},
@@ -372,25 +409,25 @@ Two entries of the table are unreadable rather than wrong, and the table carries
 
 ## Maxwell and the Massless Dirac Equation
 
-The equivalence runs in the other direction as well, and that direction carries the axial current. The **massless** Dirac equation $\partial\psi=0$ for $\psi$ in the even subalgebra is equivalent to a **generalised Maxwell equation**
+The equivalence runs in the other direction as well, and that direction carries the axial current. The **massless** Dirac equation $\partial\psi=0$ for an element $\psi$ of $\mathbb{B}$ is equivalent to a **generalised Maxwell equation**, $\tilde\nabla\tilde F=\tilde J$ with the current written out:
 
 $$
-\partial F = J_e - \omega J_m = J ,
+\tilde\nabla\tilde F = \tilde J_{\mathrm{e}} - \omega \tilde J_{\mathrm{m}} = \tilde J ,
 $$
 
-with both an electric current $J_e$ and an **axial (magnetic) current** $-\omega J_m$. For the positive-parity eigenstate $\psi^\uparrow$ the electric current vanishes, $j_e=0$, and the equivalent Maxwell equation reads
+with both an electric current $J_{\mathrm{e}}$ and an **axial (magnetic) current** $-\omega J_{\mathrm{m}}$. For $\psi_+$, the $+$ branch of the split by $i\vec e_x$, the electric current vanishes, $j_{\mathrm{e}}=0$, and the equivalent Maxwell equation reads
 
 $$
-\boxed{\;\partial F^\uparrow = -\omega J_m\;}
+\boxed{\;\tilde\nabla\tilde F_+ = -\omega\tilde J_{\mathrm{m}}\;}
 $$
 
-that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The current is not external. It is read off the spinor's own components: decomposing the left-handed half as $\psi_-=-S+F-\omega P$, the source finds $\partial F^\uparrow=-\omega\,\partial P$, so $J_m=\partial P$ and the Maxwell equation is **self-sourced**. The mechanism is the parity split: the source shows that $\psi^\uparrow$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi^\uparrow_+ + g\omega B\psi^\uparrow_+=0$ and $\partial\psi^\uparrow_- - g\omega B\psi^\uparrow_-=0$ — the spin-plane factor absorbed in each by the Weyl condition — so that a single $\psi^\uparrow$ coupled to a potential carries a particle of charge $+g$ and a particle of charge $-g$ at once. This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations.
+that is, a **massless Dirac field is a Maxwell field with a magnetic current and no electric current**. The current is not external. It is read off the spinor's own components: writing the $L$ value of the $+$ branch as $s+F-\omega p$, with $s$ and $p$ real and $F$ the field bivector, the source finds $\tilde\nabla\tilde F_+=-\omega\,\tilde\nabla p$, so $J_{\mathrm{m}}=\partial p$ and the Maxwell equation is **self-sourced**. The mechanism is the split by $i\vec e_x$: the source shows that $\psi_+$ decouples into a pair of Weyl fields of opposite charge, $\partial\psi_{+R}+g\omega B\psi_{+R}=0$ and $\partial\psi_{+L}-g\omega B\psi_{+L}=0$ — the spin-plane factor absorbed in each by the Weyl condition, and the subscript naming the value, $L$ the minus value and $R$ the plus one — so that a single $\psi_+$ coupled to a potential carries a particle of charge $+g$ and a particle of charge $-g$ at once. This is a further route in the corpus by which a magnetic current appears in a spinorial or quaternionic reformulation of Maxwell's equations.
 
 ### One Dirac Equation or Two
 
 The corpus has two spellings of the massive Dirac equation, and the source's equation is the second of them.
 
-**The one-sided pair.** Two equations, one per chirality, both gradients acting from the left:
+**The one-sided pair.** Two equations, one per value of the subscript, both gradients acting from the left:
 
 $$
 \tilde\nabla\tilde\Psi_R=m\tilde\Psi_L
@@ -400,32 +437,32 @@ $$
 \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R .
 $$
 
-The second gradient is the quaternion conjugate of the first, and it is the conjugation, not a side, that distinguishes them. The mass is the only term that couples the two chiralities, and at $m=0$ the pair splits into $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one Weyl equation per chirality.
+The second gradient is the quaternion conjugate of the first, and it is the conjugation, not a side, that distinguishes them. The mass is the only term that couples the two values, and at $m=0$ the pair splits into $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one Weyl equation per value.
 
 **The two-sided single equation.** The same physics has a representation on the whole algebra, as one equation for one field:
 
 $$
-\tilde\nabla^{\natural}F=m\,\chi\bar F,\qquad \chi=-iR_{\vec e_z}^{\mathrm{axf}},
+\tilde\nabla^{\natural}F=m\,\bar F\,i\omega ,
 $$
 
-with the derivative on the left and the mass on the right through the chirality cell, applied to the coefficient conjugate $\bar F$. The pair is the definition; the two-sided form is the representation in which the mass is a right multiplication, and it is antilinear in that term.
+with the derivative on the left and the mass on the right through the element $i\omega=-i\vec e_z$ that exchanges the two values, applied to the coefficient conjugate $\bar F$. The pair is the definition; the two-sided form is the representation in which the mass is a right multiplication, and it is antilinear in that term.
 
 **The source's equation has that shape.** Its Dirac–Hestenes equation
 
 $$
-\partial\psi\,R_{-\vec e_z}^{\mathrm{axf}}=m\,\psi\,iR_{\vec e_x}^{\mathrm{axf}}
+\partial\psi\,\omega=m\,\psi\,i\vec e_x
 $$
 
-acts with the derivative on the left and multiplies on the right by the fixed bivector and by the mass — a left action and two right factors, no second field. That is the shape of the corpus's own Dirac–Hestenes equation too, $\nabla\psi\,\omega\sigma_3-eA\psi=m\psi v_0$, in which the mass also multiplies on the right; the chiral pair is a different spelling of the same physics, and the two-sided form is the one both the corpus's equation and the source's take. What it does not have is a second equation for a second chirality. The two chiralities are the two halves of the one spinor under the source's **Weyl conditions**, which pair the volume element on one side with the fixed bivector on the other. Written as a condition on the one spinor it is $\omega\psi_\pm=\pm L_{-\vec e_z}^{\mathrm{axf}}\psi_\pm$, that is $\psi_\pm\vec e_z=\pm\vec e_z\psi_\pm$: the bivector enters twice, once as a right multiplication and once as a left one. The condition is therefore a genuine constraint, and its two branches are the two four-dimensional halves of the even algebra — the spinors commuting with $\vec e_z$ and those anticommuting. The operator effecting the split is the **pseudoscalar**, not a second field; and because in this frame the volume element and the spin plane are written with the one bivector, the source needs the single symbol $i$ for both jobs. The symbols are written out in *The Legacy Pauli Gamma Formulation*.
+acts with the derivative on the left and multiplies on the right by the fixed bivector and by the mass — a left action and two right factors, no second field. That is the shape of the corpus's own Dirac–Hestenes equation too, in which the mass also multiplies on the right, at a fixed bivector; the pair of values is a different spelling of the same physics, and the two-sided form is the one both the corpus's equation and the source's take. What it does not have is a second equation for the other value. The two values are the two halves of the one spinor under the source's **Weyl conditions**, which pair the volume element on one side with the fixed bivector on the other. Written as a condition on the one spinor it is $\psi_{L}\omega=-\omega\psi_{L}$ and $\psi_{R}\omega=+\omega\psi_{R}$, that is $\psi_{L}\vec e_z=-\vec e_z\psi_{L}$ and $\psi_{R}\vec e_z=+\vec e_z\psi_{R}$: the bivector enters twice, once as a product on the right and once as a product on the left. The condition is therefore a genuine constraint, and its two branches are the two four-dimensional halves of the algebra — the spinor commuting with $\vec e_z$ and the one anticommuting. What effects the split is the **pseudoscalar**, not a second field; and because in this frame the volume element and the spin plane are written with the one bivector, the source needs the single symbol $i$ for both jobs. The symbols are written out in *The Legacy Pauli Gamma Formulation*.
 
-**Where the two presentations diverge.** They agree at $m=0$, each giving Weyl equations, and part ways once a mass is present. The corpus's mass couples two chiral fields and is antilinear; the source's mass is linear and multiplies the one spinor on the right by a fixed cell with a scalar coefficient. That is why the coefficient of the sourced equation is a complex number in $\omega$ rather than a real mass — a mass times a duality phase — and why its linearisation needs both of the steps of *Linearisation* above: the constraints, which turn the imaginary part into a pure phase, and the rescaling, which removes it.
+**Where the two presentations diverge.** They agree at $m=0$, each giving Weyl equations, and part ways once a mass is present. the corpus's mass couples the two values, in two fields, and is antilinear; the source's mass is linear and multiplies the one spinor on the right by a fixed element with a scalar coefficient. That is why the coefficient of the sourced equation is a complex number in $\omega$ rather than a real mass — a mass times a duality phase — and why its linearisation needs both of the steps of *Linearisation* above: the constraints, which turn the imaginary part into a pure phase, and the rescaling, which removes it.
 
 
 ## Status, Contrasts, and Boundaries
 
 What the programme establishes is the **structural half**. That the free Maxwell equation has solutions with non-null invariants is true and is a genuine correction to the reflex that "free electromagnetic waves are null transverse plane waves"; the classification of *The Field-Strength Biquaternion and Its Invariants* admits such fields but does not exhibit them, and the subluminal construction here supplies the missing example. That the field is a spinor bilinear and that the Maxwell equation for the field is a non-linear Dirac–Hestenes equation which linearises, under its two constraints, to a single real coefficient — and to one real mass once the current is conserved — is likewise a clean structural statement, and it explains from a second direction why the corpus's plane-wave Dirac solutions are simple. That the massless Dirac equation is a Maxwell equation with an axial current is the third, and it reproduces the corpus's axial-current form.
 
-The boundaries are these. The Clifford-bundle route is an **external formalism**; the corpus's own treatment is the biquaternion one, and the two are related through the even-subalgebra dictionary rather than identified. The "superluminal" of the X-wave is a pattern speed of a localised solution, not a signalling speed, and must not be read otherwise. The **purely electromagnetic particle** is a programme item revived from Einstein and Waite, not a constructed particle. The **mass spectrum** is a proposal, not a derivation. The muon comes out of one algebra with the monopole quantum number $n=1$; nothing in the algebra fixes that number; the tau needs a further hypothesis on it; and the arithmetic of the states beyond the muon, as the mass-spectrum section shows, does not close.
+The boundaries are these. The source's route through the bundle of forms is an **external formalism**; the corpus's own treatment is the biquaternion one, and the two are related through the dictionary between the forms and the algebra rather than identified. The "superluminal" of the X-wave is a pattern speed of a localised solution, not a signalling speed, and must not be read otherwise. The **purely electromagnetic particle** is a programme item revived from Einstein and Waite, not a constructed particle. The **mass spectrum** is a proposal, not a derivation. The muon comes out of one algebra with the monopole quantum number $n=1$; nothing in the algebra fixes that number; the tau needs a further hypothesis on it; and the arithmetic of the states beyond the muon, as the mass-spectrum section shows, does not close.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -489,40 +526,39 @@ so the pair the source prints composes to left multiplication by $-\vec e_z$, wh
 
 The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
-**The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
+**The display.** Every cell in this section is written twice: in the Peirce display first, labelled $\mathrm{pau}$, which is the display the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. A frame label is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free form is the conjugate. The label names the display and not the operator.
 
 ## Summary
 
-The programme of Rodrigues and Vaz works in the Clifford bundle and presses the free Maxwell equation $\partial F=0$ in two directions. It exhibits **subluminal and superluminal undistorted progressive wave solutions with non-null invariants and longitudinal components**, built from a Hertz potential and a spherical Helmholtz solution, and connects the free stationary solution to the old question of purely electromagnetic particles. It represents the field as the **spinor bilinear** $F=-\psi\vec e_z\psi^{\natural}$ and shows the Maxwell equation to be a **non-linear Dirac–Hestenes equation**, with the **Takabayasi angle** as the knob: the two constraints collapse its two coefficients into a single real one for every $\beta$, a conserved current makes that coefficient the mass, and $0$ and $\pi$ then give the electron and the positron, while $\pi/2$ and $3\pi/2$ make it the muon and the antimuon once a magnetic current is added, with $M=m(1+3n/2\alpha)$ at $n=1$. In the other direction the **massless Dirac equation is a Maxwell equation with an axial (magnetic) current**, which is the route by which a magnetic current appears.
+The programme of Rodrigues and Vaz works in a bundle of differential forms and presses the free Maxwell equation — $\partial F=0$ in the source's letter, $\tilde\nabla\tilde F=0$ in the series' — in two directions. It exhibits **subluminal and superluminal undistorted progressive wave solutions with non-null invariants and longitudinal components**, built from a Hertz potential and a spherical Helmholtz solution, and connects the free stationary solution to the old question of purely electromagnetic particles. It represents the field as the **spinor bilinear** $F=-\psi\vec e_z\psi^{\natural}$ and shows the Maxwell equation to be a **non-linear Dirac–Hestenes equation**, with the **Takabayasi angle** as the knob: the two constraints collapse its two coefficients into a single real one for every $\beta$, a conserved current makes that coefficient the mass, and $0$ and $\pi$ then give the electron and the positron, while $\pi/2$ and $3\pi/2$ make it the muon and the antimuon once a magnetic current is added, with $M=m(1+3n/2\alpha)$ at $n=1$. In the other direction the **massless Dirac equation is a Maxwell equation with an axial (magnetic) current**, which is the route by which a magnetic current appears.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $C\ell(M)$ | Clifford bundle of differential forms over Minkowski spacetime |
-| $C\ell^+(M)$ | Its even subalgebra; the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary |
-| $\varepsilon=(1,-1,-1,-1)$ | sign vector; the corpus's frame-cell convention |
-| $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ | Frame cells, $iR_{\vec e_x}^{\mathrm{axf}}=R_{i\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{i\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
-| $L_a$, $R_b$ | Left and right multiplication of a spinor, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ |
-| $\omega=iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=R_{-\vec e_z}^{\mathrm{axf}}$ | Volume element, the cell of the pseudoscalar; $\omega^2=-1$ and $\omega$ anticommutes with the generator cells; the source's "$i$", the duality operator |
-| $-\vec e_z$ | Fixed spin-plane bivector, the source's product of its second generator with its first; the pair of frame cells that prints it composes to $L_{-\vec e_z}^{\mathrm{axf}}$ (left multiplication), while the right multiplication the source applies is $R_{-\vec e_z}^{\mathrm{axf}}=\omega$ |
-| $\partial=iR_{\vec e_x}^{\mathrm{axf}}\partial/\partial x_0-\sum_k iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\partial/\partial x_k$ | Dirac operator, one cell per coordinate with derivative coefficients; $\delta$ the coderivative, $d$ the exterior derivative |
-| $F$, $F_0$, $F_e$, $F^\uparrow$ | Field 2-form; the stationary subluminal solution; the electron field; the positive-parity field |
+| $\mathbb{B}$ | The biquaternion algebra, of which the field and the spinor are elements |
+| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the layer |
+| $\omega=-\vec e_z$ | Volume element, the pseudoscalar; $\omega^2=-e_t$; the source's "$i$", the duality |
+| $-\vec e_z$ | Fixed spin-plane bivector, the source's product of its second generator with its first; as the element $\omega$ it multiplies the spinor on the right |
+| $\partial$ | The source's letter for the Dirac operator $d-\delta$ of its bundle of forms, $d$ the exterior derivative and $\delta$ the coderivative. Not one of the series' two derivative operators: first order, and two-sided, its time term multiplying on the right by $\vec e_x$ and its three spatial terms on the left by $\vec e_k$ and on the right by $\vec e_y$. Its square is the wave operator, $\partial^2=-\Box$. Used below for the spinorial equation only; the field equations are written $\tilde\nabla\tilde F=\tilde J$ |
+| $F$, $F_0$, $F_e$, $F_+$ | Field 2-form; the stationary subluminal solution; the electron field; the field of the $+$ branch |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |
 | $\vec E_0,\vec B_0,\vec W$ | Fields of the stationary solution and their common vector, $\mathrm{rot}\,\vec W=-\Omega\vec W$ in the source's raised-index convention |
 | $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\nabla^2\varphi+\Omega^2\varphi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ of the spinorial section |
 | $\varpi,\ q,\ \xi_<$ | Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\xi_<$ is its oblate radial coordinate |
 | $\Phi_{X_n},\ \Phi_{XBB_n}$ | Scalar X-wave seed and its closed form, with $\eta$ the axicon angle and $a_0$ the constant that regularises the seed |
-| $\psi$, $\psi^{\natural}$ | Dirac–Hestenes spinor (even element) and its reverse, the corpus's $\natural$ reversion; the source writes the reverse $\tilde\psi$ |
+| $\psi$, $\psi^{\natural}$ | The spinor, an element of $\mathbb{B}$, and its reverse, the corpus's $\natural$ conjugation; the source writes the reverse $\tilde\psi$ |
+| $\psi_\pm$ | The two values of the split by $i\vec e_x$, $i\vec e_x\,\psi_\pm\,i\vec e_x=\pm\psi_\pm$, with $\psi=\psi_++\psi_-$ |
+| $\psi_{L}$, $\psi_{R}$ | The two values of the subscript, $L$ the minus value and $R$ the plus one; $\psi_{+L}$ and $\psi_{+R}$ are the two values of the $+$ branch |
 | $\psi=\rho^{1/2}\exp(\omega\beta/2)R$ | Canonical decomposition: rotor $R$, density $\rho$, angle $\beta$; the letter $\rho$ is reused in the X-wave for the cylindrical radius |
 | $\beta$ | Takabayasi (Yvon–Takabayasi) angle; $0,\pi$ electron/positron, $\pi/2,3\pi/2$ muon/antimuon |
 | $\varphi$ | Spinor with the phase divided out, $\psi=\varphi\exp(\omega\beta/2)$; the linear Dirac equation is for $\varphi$ |
-| $m$, $M$, $N$ | Electron mass; the two coefficients of the sourced equation, $M=m+3mq_m\sin\beta/e$ and $N=-3mq_m\cos\beta/e$, the second vanishing at $\beta=\pi/2$ and $3\pi/2$; the letter $M$ is reused, as in the source, for the radial factor of the X-wave |
-| $q_m$, $\alpha$ | Magnetic charge, $q_m=en/2\alpha$ from the Dirac quantisation condition $eq_m/\hbar c=n/2$; $\alpha=e^2/\hbar c$ the fine-structure constant |
-| $j$, $g$, $J=J_e-\omega J_m$ | Vector current, axial current, total current with electric and magnetic parts |
-| $\Lambda_\pm,\ \Lambda_\beta$ | Projectors of the source, $\tfrac12(\psi\pm i\vec e_x\,\psi\,i\vec e_x)$, a conjugation by $i\vec e_x$; $\Lambda_\beta(\psi)=e^{\omega\beta/2}\Lambda_+(e^{-\omega\beta/2}\psi)$ is the same projector in a duality-rotated frame, and $\Lambda_\beta+\Lambda_{\beta+\pi}=1$ replaces the printed $\Lambda_\beta=\Lambda_{\beta+\pi}$ |
-| $S=-\tfrac12\psi\vec e_z\psi^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12 F\,iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}} F$ the Maxwell energy–momentum one-form |
+| $m$, $M$, $N$ | Electron mass; the two coefficients of the sourced equation, $M=m+3mq_{\mathrm{m}}\sin\beta/e$ and $N=-3mq_{\mathrm{m}}\cos\beta/e$, the second vanishing at $\beta=\pi/2$ and $3\pi/2$; the letter $M$ is reused, as in the source, for the radial factor of the X-wave |
+| $q_{\mathrm{m}}$, $\alpha$ | Magnetic charge, $q_{\mathrm{m}}=en/2\alpha$ from the Dirac quantisation condition $eq_{\mathrm{m}}/\hbar c=n/2$; $\alpha=e^2/\hbar c$ the fine-structure constant |
+| $j$, $g$, $J=J_{\mathrm{e}}-\omega J_{\mathrm{m}}$ | Vector current, axial current, total current with electric and magnetic parts; the source's contractions $\partial\cdot j$ and $\partial\cdot g$ are the series' contractions of the gradient with the two currents |
+| $\psi_\beta$ | The family of the source, $\tfrac12(\psi+e^{\omega\beta}i\vec e_x\,\psi\,i\vec e_x)$, which is the projection at $\beta$ in a duality-rotated frame; $\psi_\beta+\psi_{\beta+\pi}=\psi$ replaces the printed $\Lambda_\beta=\Lambda_{\beta+\pi}$ |
+| $S=-\tfrac12\psi\vec e_z\psi^{-1}$ | Bivector of the canonical analysis; $S_\mu=\tfrac12\,i\,Fe_\mu F\vec e_{\nu(\mu)}$ the Maxwell energy–momentum one-form, $e_\mu$ the unit of the coordinate $x_\mu$ |
 | $\Lambda,\ K$ | The two scalars of the spinorial Maxwell equation, $\Lambda=\Omega\cdot S$ and $K=\Omega\cdot(\omega S)$, projections of $\Omega$ on the spin bivector; they add into the single coefficient $\Lambda+\omega K=\lambda e^{\omega\beta}$ |
 | $\lambda,\ \kappa$ | The source's rotated pair, $\lambda=\Lambda\cos\beta+K\sin\beta$ and $\kappa=K\cos\beta-\Lambda\sin\beta$, with $\lambda+\omega\kappa=(\Lambda+\omega K)e^{-\omega\beta}$; the constraints force $\kappa=0$ and $\lambda=\Lambda/\cos\beta$ real, and $\partial\cdot J=0$ then makes $\lambda$ a constant mass |
 

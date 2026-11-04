@@ -114,8 +114,10 @@ The framework's Dirac module is $\Delta = S\oplus\bar{S}$, the two chiral halves
 The two mass terms of a single fermion species, written on the spinor module with $\psi = (\psi_L,\psi_R)$ and $\psi^c$ the charge conjugate of $\psi$, are
 
 $$
-\mathcal{L}_{\text{Dirac}} = -m_D\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi = -m_D\big(\psi_L^{\dagger}\psi_R + \psi_R^{\dagger}\psi_L\big),
+\mathcal{L}_{\text{Dirac}} = -m_D\,\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\psi ,
 $$
+
+where the cell is the timelike frame cell: it carries one chiral half into the other, so the term pairs each half with the other and never a half with itself.
 
 $$
 \boxed{\;\mathcal{L}_{\text{Majorana}} = -\tfrac12 m_M\big(\psi_L^{T}C\psi_L + \text{h.c.}\big)\;},

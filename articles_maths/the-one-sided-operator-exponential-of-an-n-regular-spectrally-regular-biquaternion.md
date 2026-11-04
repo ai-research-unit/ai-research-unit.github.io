@@ -149,7 +149,7 @@ that is $(\theta,0,0,-\theta)$. For the boost, both slots carry $e^{\mp\psi/2}$ 
 $$
 \operatorname{spec}L_{\tilde u_{\mathrm r}}=\{e^{i\theta/2},e^{i\theta/2},e^{-i\theta/2},e^{-i\theta/2}\},
 $$
-each weight twice. The one-sided operator is $2\rho$ as a left module: two copies of the Weyl spinor, not the Dirac spinor $\rho\oplus\bar\rho$. One Peirce column is one Weyl spinor; the whole of $L$ is two of them. The precise phrase is therefore: the one-sided operator, restricted to one Peirce component, is the half-spin.
+each weight twice. The one-sided operator is $2\rho$ as a left module: two copies of the Weyl module, not the Dirac module $\rho\oplus\bar\rho$. One Peirce column is one elementary spinor, a Weyl spinor in the language of physics; the whole of $L$ is a pair of them, which is a Dirac spinor (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*). The precise phrase is therefore: the one-sided operator, restricted to one Peirce component, is the half-spin.
 
 **The two Peirce copies are not the two Lorentz chiralities.** Both $S_+$ and $S_-$ carry the same representation $\rho$; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the two tensor factors $S$ and $S^{*}$, that is the left and right slots.
 

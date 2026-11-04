@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A spinor is not a column of a matrix, and it is not every irreducible Peirce carrier. It is a coordinate vector on a subspace that one idempotent singles out inside an algebra, **when that subspace carries the highest-weight-$\tfrac12$ weight of the frame root**. The idempotent fixes the subspace, its companion corner supplies the extra coordinate directions, and the diagonal corner supplies the coefficients. This article states that definition in a general finite-dimensional algebra, proves when the subspace is irreducible, identifies the weight condition that makes it a spinor space, and separates the algebraic object from the pictures that a matrix model provides.
+A spinor is not a column of a matrix, and it is not every irreducible Peirce carrier. It is a coordinate vector on a subspace that one idempotent singles out inside an algebra, **when that subspace carries the highest-weight-$\tfrac12$ weight of the frame root**. The idempotent fixes the subspace, its companion corner supplies the extra coordinate directions, and the diagonal corner supplies the coefficients. This article states that definition in a general finite-dimensional algebra, proves when the subspace is irreducible, identifies the weight condition that makes it a spinor space, and separates the algebraic object from the pictures that a matrix model provides. It closes by fixing the two names built on the condition: the **elementary spinor**, the two-dimensional object itself, and the **Dirac spinor**, the pair of elementary spinors that the chirality operator of a declared frame separates.
 
 The subspace is the **Peirce carrier**
 
@@ -67,6 +67,33 @@ When the weight condition fails, $C(e)$ is a **Peirce carrier** and its coordina
 **Remark (why the whole carrier, not one corner).** The diagonal corner $D$ alone is not the spinor space. In $M_2(k)$ with $e=E_{11}$, $D=kE_{11}$ is a single coefficient, and the spinor also needs the companion direction $E_{21}$; without it there is no second coordinate. The companion corner alone is not the spinor space either: its elements are nilpotents, and a nilpotent is a direction, not a state. The spinor is an element of their sum, with one diagonal coordinate and $s$ companion coordinates.
 
 **Remark (coordinates over $D$, not over $k$).** The entries of the coordinate vector are elements of $D=eAe$, not scalars. When $D$ is a division ring, this is a vector of $1+s$ entries over a division ring, and $1+s$ is its dimension over $D$. When $D$ is a matrix algebra, an entry is itself a matrix; the coordinate vector is a block vector, and $1+s$ counts blocks, not scalars.
+
+## The Elementary Spinor and the Dirac Spinor
+
+The condition of the previous section isolates one object. Two names are built on it, and the second is the first taken twice.
+
+**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{i\theta\vec u\cdot\vec S}$.
+
+**Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
+
+$$
+\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-,\qquad
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u),
+$$
+
+for a declared unit imaginary direction $\vec u$, and each part is an elementary spinor of complex dimension two.
+
+**Proposition.** The two parts are closed under left multiplication, and each is an elementary spinor.
+
+*Proof.* For $x\in\mathbb{B}\tilde\Pi_+$ and $a\in\mathbb{B}$, the product $ax=(a)(x\tilde\Pi_+)=(ax)\tilde\Pi_+$ lies in $\mathbb{B}\tilde\Pi_+$, because $\tilde\Pi_+^2=\tilde\Pi_+$; the same for $\tilde\Pi_-$. So the summands are left-invariant and the decomposition is a decomposition into left submodules. Each summand is $\mathbb{C}^2$ over $\mathbb{C}$, and on it the half-root $\tfrac12iL_{\vec u}$ has the weights $+\tfrac12$ and $-\tfrac12$, each once, so each is a carrier of the elementary type. The two summands are the two columns of the algebra, $\mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ and $\mathbb{C}E_{12}\oplus\mathbb{C}E_{22}$ for $\vec u=\vec e_z$.
+
+**Remark (the multiplicity, and why the pair is not a repetition).** As a left module $\mathbb{B}\cong\mathbb{C}^2\otimes\mathbb{C}^2$, and left multiplication acts on the first factor alone. The first factor is the spin; the second, of dimension two, is a multiplicity. The idempotent multiplies on the right, so it acts on the second factor only, and its two summands are the two lines of that factor tensored with the whole spin space. The Dirac spinor is therefore a carrier of spin $\tfrac12$ with multiplicity two, and the pair of elementary spinors is the two lines of the multiplicity, not two copies of one state. This is what the definition buys and what a definition by "a pair of spinors" alone would miss.
+
+**Remark (the declared direction).** The direction $\vec u$ inside $\tilde\Pi_\pm$ is the only datum of the second definition, and it is declared, not derived. A change of $\vec u$ changes the decomposition; it changes neither the dimension, nor the spin, nor the number of parts. The definition of the elementary spinor names no direction at all, so the two definitions differ in exactly one respect: the second names the direction that selects its two parts.
+
+**Remark (what the two definitions do not use).** No Clifford relation, no Pauli array, no gamma matrix, no gamma cell, no volume element and no second rotation triple. The two parts are the two summands of a decomposition into left ideals, and that is the operator chirality of *Operator Chirality on the Biquaternion Algebra*: the parts differ by a multiplication on one side, not by the sign of a generator that both parts share. A triple cannot separate them, because every left multiplier commutes with every right multiplier and therefore acts on the two summands in the same way.
+
+**Remark ($N=4$).** The same two definitions cover the four-dimensional case. There the Peirce carrier is of dimension four and of spin $\tfrac32$ under the chain, while the volume element splits it $2+2$ into two half-spin modules of spin $\tfrac12$ (*Spinors as Coordinates in $M_4(\mathbb{C})$*, §*The Clifford reading*). The elementary spinor is the half-spin module of dimension two; the Dirac spinor is the module that splits into the two halves.
 
 ## Irreducibility
 
@@ -145,6 +172,8 @@ with two simple components, the two chiralities; a primitive idempotent of eithe
 
 A spinor is an element of the Peirce carrier $C(e)=Ae=eAe\oplus fAe$ of an idempotent $e$ when the half-root $\tfrac12h$, with $h=2e-1_A$, acts on $C(e)$ by left multiplication with the weights $+\tfrac12$ and $-\tfrac12$, each once over $D$. In coordinates over $D=eAe$ it is the vector $(d_0;d_1,\dots,d_s)$ with one diagonal entry and one entry for each of the $s$ companion directions. The definition uses an idempotent, a subspace, a square-zero corner and the weight condition; it does not use a matrix model or a column.
 
+Two names are built on it. An **elementary spinor** is an element of a complex two-dimensional carrier on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{i\theta\vec u\cdot\vec S}$. A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$ whose two parts are its two components in the decomposition into minimal left ideals, with $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$ for a declared direction $\vec u$, and each part is an elementary spinor of complex dimension two. The two parts are the two lines of the multiplicity in $\mathbb{B}\cong\mathbb{C}^2\otimes\mathbb{C}^2$; the idempotent multiplies on the right, so no triple of left multipliers can tell the two parts apart, and the side of the multiplication is what does. The elementary spinor names no direction; the Dirac spinor names the direction that selects its two parts.
+
 In a semisimple algebra the primitive idempotents are exactly the idempotents with irreducible carriers, and $D$ is a division ring, so the carrier is $D^{1+s}$. Without semisimplicity the equivalence fails: the upper triangular algebra has a primitive idempotent with a reducible carrier. Irreducibility is not the spinor condition; the weight string is. In $M_N(k)$ with a primitive idempotent, $s=N-1$ and the carrier has $N$ coordinates. The weight condition holds only for $N=2$, so the biquaternion is the only matrix case in which those coordinates are spinor coordinates; for $N>2$ the carrier is the spin-$(N-1)/2$ module and the coordinates are Peirce coordinates.
 
 ## Summary of Notation
@@ -163,6 +192,9 @@ In a semisimple algebra the primitive idempotents are exactly the idempotents wi
 | $(\nu_1,\dots,\nu_s)$ | A companion frame |
 | $(d_0;d_1,\dots,d_s)$ | The coordinates of a spinor |
 | $\tfrac12h$ with weights $\pm\tfrac12$ | The condition that makes $C(e)$ a spinor space |
+| elementary spinor | an element of a two-dimensional carrier satisfying that condition |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$ | the idempotents of the declared direction $\vec u$, the two parts of a Dirac spinor |
+| Dirac spinor | an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, its two parts the two minimal left ideals |
 
 ## Further Reading
 

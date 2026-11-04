@@ -362,7 +362,7 @@ A_1\longmapsto\lambda_+A_1,
 \qquad
 A_2\longmapsto\lambda_-A_2.
 $$
-A general element $\breve Q_2=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
+A general element $\breve Q_2=\xi_++\xi_-$ is not a spinor of one Peirce copy: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
 
 **One complex component per Peirce copy.** The base field is $\mathbb{C}$, so each spinor space is a one-dimensional complex vector space, of real dimension two. A spinor has a single complex component, not a pair: the two components displayed above belong to the two different chiralities. The biquaternion case is the one in which a single spinor space is two-dimensional over $\mathbb{C}$ and therefore carries a pair of complex components. The extra dimension there is supplied by the nilpotent direction $\vec\Upsilon_\pm$, which is absent here.
 

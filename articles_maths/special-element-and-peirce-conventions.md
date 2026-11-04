@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A root, an idempotent and a nilpotent are not new kinds of object: each is an element of the algebra, and the glyph records what the element is known to be at the point of use. This article fixes those glyphs, their case rule, their coordinates and their subscripts, and then the Peirce convention, which fixes the words and the glyphs of the decomposition that a complete family of idempotents generates.
+A root, an idempotent and a nilpotent are not new kinds of object: each is an element of the algebra, and the glyph records what the element is known to be at the point of use. This article fixes those glyphs, their case rule, their coordinates and their subscripts, and then the Peirce convention, which fixes the words and the glyphs of the decomposition that a complete family of idempotents generates, and finally the three words of a spinor: the spin, the elementary spinor and the Dirac spinor.
 
-The special elements are read after the base because their case rule is the case rule of the elements, and before the representations because the canonical frame of the matrix model is the Peirce frame of the standard pair. The order is: the root, the idempotent, the nilpotent, then the general Peirce convention and its biquaternion reading.
+The special elements are read after the base because their case rule is the case rule of the elements, and before the representations because the canonical frame of the matrix model is the Peirce frame of the standard pair. The order is: the root, the idempotent, the nilpotent, then the general Peirce convention and its biquaternion reading, and then the spin and the two spinors, which are read on the carriers the convention produces.
 
 The article assumes *Algebra and Element Conventions*, whose §*The Conjugations* fixes the star that the Hermitian idempotent uses, and it is assumed by *Matrix Representations Conventions*, whose §*The 4×4 Regular Representation* writes the canonical frame in the standard pair and its mixed units.
 
@@ -141,7 +141,7 @@ $$
 \psi=(\psi_1,\dots,\psi_n),\qquad \psi_j=Q_{ij}\ \text{for fixed } i .
 $$
 
-When a spinor is treated as an object of its own, its entries are written $\psi_j$; they are the coordinates $Q_{ij}$ of one row. The gauge acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$, which is its overall phase. The word **spinor** belongs to this level only: it is never used for an element of $A$ at the two levels above.
+When a spinor is treated as an object of its own, its entries are written $\psi_j$; they are the coordinates $Q_{ij}$ of one row. The gauge acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$, which is its overall phase. The word at this level names the tuple and never an element of $A$; the carrier element is the elementary spinor of §*The Spinor Convention*, and the tuple is its coordinate form.
 
 **Glyphs of the units.**
 
@@ -154,9 +154,9 @@ When a spinor is treated as an object of its own, its entries are written $\psi_
 
 $E_{ij}$ is written only when the objects are matrices. In an abstract algebra the generic letter $E$ is not used.
 
-**What is not a Peirce notion.** A root of unity, an eigenvalue, a grading, a weight, a Cartan subalgebra. A root may produce a family, through its Lagrange idempotents; the family is then a Peirce family like any other, and the root adds nothing to the Peirce vocabulary. Neither is an ordered or nested reading of the family: an order on the indices, a sequence of cuts, a cumulative sum of the members. When an article reads the family step by step, it says so there, and the reading is called there what it is.
+**What is not a Peirce notion.** A root of unity, an eigenvalue, a grading, a weight, a Cartan subalgebra. A root may produce a family, through its Lagrange idempotents; the family is then a Peirce family like any other, and the root adds nothing to the Peirce vocabulary. Nor is a chirality a Peirce notion: the chirality of an operator is the side on which it multiplies (*Operator Family Conventions*, §*The Slot Label, Which Is the Chirality*); the Peirce sign of the third axis, $iR_{\vec e_z}$, is minus the chirality cell of the frame, a coincidence of arrays at that one root and not an identity of notions (*Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*). Neither is an ordered or nested reading of the family: an order on the indices, a sequence of cuts, a cumulative sum of the members. When an article reads the family step by step, it says so there, and the reading is called there what it is.
 
-**Excluded vocabulary.** Left ideal, right ideal, minimal left ideal, carrier, module and representation are not used at the levels of the family and of the decomposition, and are not used to define a spinor. A sum $\bigoplus_jA_{ij}$ or $\bigoplus_iA_{ij}$ is a **row** or a **column** of the Peirce table, never a component and never a carrier. If another article needs an ideal, it names it there, under its own name, with an explicit pointer.
+**Excluded vocabulary.** Left ideal, right ideal, minimal left ideal, carrier, module and representation are not used at the levels of the family and of the decomposition, and are not used to define a spinor here; the one place where a spinor is defined through an ideal is §*The Spinor Convention*, and it says so. A sum $\bigoplus_jA_{ij}$ or $\bigoplus_iA_{ij}$ is a **row** or a **column** of the Peirce table, never a component and never a carrier. If another article needs an ideal, it names it there, under its own name, with an explicit pointer.
 
 **Symbols.**
 
@@ -236,7 +236,7 @@ No generic $E$ is written outside the matrix model, and no tilde on a pure eleme
 
 **What is not a Peirce notion.** A root of unity, an eigenvalue, a grading, a weight, a Cartan subalgebra. Neither is an ordered or nested reading of the family: an order on the indices, a sequence of cuts, a cumulative sum of the members.
 
-**Excluded vocabulary.** Left ideal, right ideal, minimal left ideal, carrier, module, representation and spinor plane. The sums $A_{11}\oplus A_{12}$ and $A_{11}\oplus A_{21}$ are a row and a column of the Peirce table, never a component.
+**Excluded vocabulary.** Left ideal, right ideal, minimal left ideal, carrier, module, representation and spinor plane, except in §*The Spinor Convention*, whose subject is the carrier and not the Peirce array. The sums $A_{11}\oplus A_{12}$ and $A_{11}\oplus A_{21}$ are a row and a column of the Peirce table, never a component.
 
 **Symbols.**
 
@@ -251,6 +251,40 @@ No generic $E$ is written outside the matrix model, and no tilde on a pure eleme
 
 **The summary sentence.** The family gives the four components, the decomposition is canonical, the two mixed units are chosen, the gauge is their freedom, and the spinor is a pair of coordinates in one row.
 
+## The Spin and Spinor Convention
+
+**Three words.** A **spin** is a scalar label of a carrier; an **elementary spinor** is an element of a carrier; a **Dirac spinor** is an element of $\mathbb{B}$ read as a pair of elementary spinors. The three words are fixed here, as names with their glyphs. The theorems that produce the carriers, that fix the weights and the dimension, and that separate the two parts are *Angular Momentum and Spin in the Biquaternion Algebra* and *Spinors and Dirac Spinors in the Biquaternion Algebra*.
+
+### The Spin Convention
+
+**The definition.** Let $(W,\rho)$ be an irreducible unitary carrier of the rotation algebra generated by $\tilde S_k=\tfrac12 i\vec e_k$. For a unit $\vec u$ the operator $\rho(\vec u\cdot\vec S)$ is self-adjoint and its spectrum does not depend on $\vec u$. The **spin** of the carrier is its largest eigenvalue,
+$$
+s=\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr)\in\tfrac12\mathbb{Z}_{\ge0},
+$$
+a scalar label and not a vector. The generator is $\tilde S_k$, the label $s$, the projection $s_z$; a total of several parts carries the role subscript $s_{\mathrm{tot}}$ (*Index, Notation and Corpus Conventions*, §*The Subscripts*).
+
+**The two carriers of $\mathbb{B}$.** The minimal left ideals are
+$$
+S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+$$
+for a unit real vector $\vec u$; each is a complex two-dimensional space on which the left multiplications act irreducibly, and $\vec u\mapsto S_+(\vec u)$ is a bijection from the unit sphere onto the minimal left ideals. Each carries spin $\tfrac12$, Casimir $\tfrac34$ and dimension $2s+1=2$. The idempotents are the sign pair $\tilde\Pi_\pm$ of §*The Idempotent Convention* at the declared axis.
+
+### The Spinor Convention
+
+**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $e^{i\theta\vec u\cdot\vec S}$. In $\mathbb{B}$ such a space is a minimal left ideal $S_+(\vec u)$ or $S_-(\vec u)$, and the axis $\vec u$ is part of the datum.
+
+**The coordinates.** An element of $S_+(\vec u)$ is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$ and $\nu$ the companion nilpotent, so an elementary spinor is a pair $(d_0;d_1)$. A column of two components is that pair written in a chosen carrier and is not a second definition; the tuple of Peirce coordinates is its form at the array level, §*The General Peirce Convention*.
+
+**Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
+$$
+\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+$$
+for a declared unit imaginary direction $\vec u$, and each part is an elementary spinor of complex dimension two.
+
+**The two parts carry the chirality letters.** The decomposition is a decomposition into the two values of the chirality: the cell $-iR_{\vec u}$ is $-1$ on $S_+(\vec u)$ and $+1$ on $S_-(\vec u)$, so $\tilde\Psi_L\in S_+(\vec u)$ is the $L$ part and $\tilde\Psi_R\in S_-(\vec u)$ the $R$ part, in the letters of §*The Slot Label, Which Is the Chirality* of *Operator Family Conventions*. At $\vec u=\vec e_z$ the cell is $\gamma_5[\mathbb{M}_-]$. Exchanging the two letters is the substitution $\vec u\mapsto-\vec u$, because $\tilde\Pi_+(\vec u)=\tilde\Pi_-(-\vec u)$; the pair is unordered and the definition orders it only to name the parts.
+
+**What the three words do not name.** No Clifford relation, no gamma cell, no Pauli array, no volume element and no second rotation triple. The elementary spinor names the axis that selects its carrier, the Dirac spinor names one axis and nothing else, and a change of axis changes the decomposition and nothing beside it.
+
 ## Summary
 
 A **root** of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2=1$, and a root of a central value $\lambda$ is an element with $\tilde\Xi^2=\lambda e_t$; the square is read in a named product, the algebra product unless the statement names another. The glyph is split by the case rule: $\Xi$ in the tilde-free layers, $\tilde\xi$ in the quaternion and split-quaternion layers, $\tilde\Xi$ in the biquaternion and split-biquaternion layers, the reduced biquaternion layer writing the sign pair $\Xi_\pm$. The coordinates carry the letter of the root, and the subscript counts when it only distinguishes occurrences and names when it is a role label.
@@ -260,6 +294,8 @@ An **idempotent** is an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$. An ide
 A **nilpotent** is an element whose square vanishes, $\tilde\nu^2=0$, the square again read in a named product. The glyph is $\Upsilon$ in the tilde-free layers, $\tilde\nu$ in the quaternion and split-quaternion layers and $\tilde\Upsilon$ in the biquaternion and split-biquaternion layers; a pure nilpotent carries the arrow and no tilde. The nilpotents have no classification of the idempotent kind, because the square-zero set depends on the product.
 
 The **Peirce convention** fixes the four levels of a Peirce decomposition — the family, the components, the multiplication rule and the array — for an associative algebra with unit and then for $\mathbb{B}$. A complete, orthogonal and idempotent family $\tilde\Pi_1,\dots,\tilde\Pi_n$ gives $\mathbb{B}=\bigoplus_{ij}A_{ij}$ with $A_{ij}=\tilde\Pi_i\mathbb{B}\tilde\Pi_j$, the left index first, and the components multiply by $A_{ij}A_{jq}\subseteq A_{iq}$, with $A_{ij}A_{pq}=0$ when $j\neq p$. The decomposition depends on the family and on nothing else, and the canonical frame of the matrix model is the Peirce frame of the standard pair.
+
+The **spin** of an irreducible unitary carrier is the largest eigenvalue of $\vec u\cdot\vec S$ on it, a scalar in $\tfrac12\mathbb{Z}_{\ge0}$ independent of the axis; the carriers of $\mathbb{B}$ are the minimal left ideals $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, of spin $\tfrac12$ and complex dimension two. An **elementary spinor** is an element of such a carrier, with weights $\pm\tfrac12$, and a **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, the two parts being its components in $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for a declared axis $\vec u$. The cell $-iR_{\vec u}$ is $-1$ on the first part and $+1$ on the second, so the letters $L$ and $R$ are the chirality values; the axis is the only datum the definitions cost.
 
 ## Summary of Notation
 
@@ -274,9 +310,17 @@ The **Peirce convention** fixes the four levels of a Peirce decomposition — th
 | $\tilde\Pi_1,\dots,\tilde\Pi_n$ | A complete, orthogonal and idempotent family |
 | $A_{ij}=\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ | A Peirce component; the left index first |
 | $A_{ij}A_{jq}\subseteq A_{iq}$ | The multiplication rule of the components |
+| $\tilde S_k=\tfrac12 i\vec e_k$ | The generator of the rotation algebra |
+| $\vec S$ | The generator read as one vector, $\vec u\cdot\vec S=u_k\tilde S_k$; pure, so arrowed and without the tilde |
+| $s$, $s_z$, $s_{\mathrm{tot}}$ | The spin, its projection and the total of several parts |
+| $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The two carriers, minimal left ideals of complex dimension two |
+| $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The idempotents of the two carriers, at the declared axis $\vec u$ |
+| $\tilde\Psi$, $\tilde\Psi_L$, $\tilde\Psi_R$ | A Dirac spinor and its two parts, the $L$ part in $S_+$ and the $R$ part in $S_-$ |
 
 ## Further Reading
 
 - Benjamin Peirce, "Linear Associative Algebra", *American Journal of Mathematics* **4** (1881) 97–229. The original Peirce decomposition, from which the components and the multiplication rule of §*The General Peirce Convention* take their name.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
+- [Angular Momentum and Spin in the Biquaternion Algebra](angular-momentum-and-spin-in-the-biquaternion-algebra.html). The rotation algebra, the Casimir, the definition of spin and the classification of the carriers.
+- [Spinors and Dirac Spinors in the Biquaternion Algebra](spinors-and-dirac-spinors-in-the-biquaternion-algebra.html). The two definitions, the weights, the dimension and the multiplicity of the two parts.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution, the first and the second kind, and the classification of their involutions.

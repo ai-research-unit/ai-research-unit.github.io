@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This article belongs to the nine conventions articles of the mathematical corpus. It follows *Operator and Calculus Conventions* and precedes *Index, Notation and Corpus Conventions*. It fixes the vocabulary of the operator families: the four letters, the two slots and the index of a basis operator, the names of the four sets, the units of the algebra and of the operator space, the matrix and its frame, the four strata and the two halves, the three words, and the four adjoint signs.
+This article belongs to the ten conventions articles of the mathematical corpus. It follows *Operator and Calculus Conventions* and precedes *Index, Notation and Corpus Conventions*. It fixes the vocabulary of the operator families: the four letters, the two slots, the index of a basis operator and the slot label, which is the chirality, the names of the four sets, the units of the algebra and of the operator space, the matrix and its frame, the four strata and the two halves, the three words, and the four adjoint signs.
 
 **The article names, and it does not prove.** No dimension is stated here, no closure, no inclusion, no properness and no property of a family. A name is fixed once, so that the article which proves a property can write it once. Where a sentence below reads like a theorem, it is a rule for reading a glyph: it says what the symbol denotes, not what the object is.
 
 The order follows the dependence. The family letters come first, because the names of the sets and the subscripts of the matrices are built from them. The slots follow, because a name carrying a subscript is read through its slots. The names of the sets follow the slots; the units and the frame follow the names; and the strata, the words and the adjoint signs close, because the operator articles read a family on a stratum with the words and the signs fixed last.
 
-**Boundaries.** The element, its subspaces and its marks are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the norms and the unitary convention are *Norm and Unitary Conventions*; the root, the idempotent and the nilpotent are *Special Element and Peirce Conventions*; the frames are *Frame Conventions*; the two matrix models and their regular representation are *Matrix Representations Conventions*; the operator that is its element, the dagger and the array rule are *Operator and Calculus Conventions*; and the superscripts and the typography are *Index, Notation and Corpus Conventions*. Every citation in this article is to one of these eight.
+**Boundaries.** The element, its subspaces and its marks are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the norms and the unitary convention are *Norm and Unitary Conventions*; the root, the idempotent and the nilpotent are *Special Element and Peirce Conventions*; the frames are *Frame Conventions*; the two matrix models and their regular representation are *Matrix Representations Conventions*; the operator that is its element, the dagger and the array rule are *Operator and Calculus Conventions*; and the superscripts and the typography are *Index, Notation and Corpus Conventions*. Every citation in this article is to one of these eight, except those that name *Operator Chirality on the Biquaternion Algebra*, which proves the properties of the label fixed in §*The Slots*.
 
 ## The Four Families and Their Letters
 
@@ -44,6 +44,24 @@ In $L_{\tilde Q}R_{\tilde P}$ the first subscript is the left multiplier and the
 ### The Index of a Basis Operator
 
 A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the subscript names the element and never a matrix entry, so $L_{e_\mu}$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_{4L}(e_\mu)$.
+
+### The Slot Label, Which Is the Chirality
+
+**Two slots, three labels.** The cell $L_{\tilde Q}R_{\tilde P}$ has a left slot and a right slot, and an operator is read on them with three labels:
+
+| Label | The operator |
+|---|---|
+| left slot | a pure left multiplier, $c\,L_{\tilde Q}$ |
+| right slot | a pure right multiplier, $c\,R_{\tilde P}$ |
+| both slots | a cell whose two multipliers are both occupied |
+
+**The label is the operator chirality.** Those three labels are what the corpus calls the **chirality** of an operator: the label says on which side the operator multiplies. It is read from the cell, and the article that proves the properties of the two one-sided families and of the label is *Operator Chirality on the Biquaternion Algebra*. No root, no idempotent, no subspace, no carrier and no Clifford relation enters the definition.
+
+**The chirality operator of a frame is a glyph.** A product of left multipliers is a left multiplier and a product of right multipliers is a right multiplier, so the product of the four multipliers of a frame is again a cell. With the phase $i$ it is the **volume cell** of the frame, written $\gamma_5[\mathbb{M}_-]$ and called the **chirality operator** of that frame; in the axis-free frame it is the pure right multiplier $-iR_{\vec e_z}^{\mathrm{axf}}$. The five cells and their two displays are fixed in *Matrix Representations Conventions*, §*The Clifford Structure*.
+
+**The name carries no grading.** The three labels are not the values of a linear functional on the algebra, and the chirality is not a $\mathbb{Z}/2$-grading. As for the four families above, the label asserts no dimension, no closure and no properness; those are stated by the article that proves them.
+
+**The two letters in a third use.** $L$ and $R$ name the multipliers $L_{\tilde Q}$ and $R_{\tilde P}$ and the regular matrices $\mathsf M_{4L}$ and $\mathsf M_{4R}$. They also name the two values of the subscript on an element, $\tilde Q_L$ and $\tilde Q_R$, and that use belongs to the element and to the declared frame, not to a cell. Position tells the three uses apart, and the third is fixed in *Operator Chirality on the Biquaternion Algebra*, §*The Subscript on an Element*.
 
 ## The Names of the Sets
 
@@ -171,7 +189,7 @@ The four adjoints of the four pairings of *Product and Form Conventions* are wri
 
 ## Summary
 
-The four families are written $L$, $R$, $LR$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The two subscripts of $L$ and $R$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index inside the subscript names a basis element, $L_{e_\mu}$ and $R_{e_\nu}$, and $L_{e_\mu}R_{e_\nu}$ is read in that order, the first index belonging to the left slot, and it never names a matrix entry.
+The four families are written $L$, $R$, $LR$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The two subscripts of $L$ and $R$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index inside the subscript names a basis element, $L_{e_\mu}$ and $R_{e_\nu}$, and $L_{e_\mu}R_{e_\nu}$ is read in that order, the first index belonging to the left slot, and it never names a matrix entry. The two slots carry one label: an operator has the left slot when it is a pure left multiplier, the right slot when it is a pure right multiplier, and both slots otherwise, and that label is the operator chirality. The chirality operator of a frame is its volume cell, $\gamma_5[\mathbb{M}_-]$, which in the axis-free frame is the pure right multiplier $-iR_{\vec e_z}^{\mathrm{axf}}$; the properties of the two families and of the label are *Operator Chirality on the Biquaternion Algebra*.
 
 The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR\ast}(\mathbb{B})$, named from the four families, with the ambient written $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. A named family's matrix carries its size and the family's letters in one subscript, $\mathsf M_{4L}$, $\mathsf M_{4R}$, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$; a general operator's matrix is written with the bracket $[F]_{\mathcal{B}}$. The names assert no dimension, no closure, no inclusion and no properness, and a name of two letters is one name, not a sum of sets.
 
@@ -186,7 +204,9 @@ The strata are labelled by two bits, the norm first and the square of the vector
 | $L_{\tilde Q}$, $R_{\tilde P}$ | The left and the right multiplier |
 | $L_{\tilde Q}R_{\tilde P}$ | The two-sided operator, left multiplier first |
 | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\ast}}$ | The sandwich, with one free slot |
-| $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. T$, $\Theta_{e_\mu}$ | The basis operators, $L_{e_\mu}$ and $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. T=L_{e_\mu}R_{e_\nu}$ |
+| $L_{e_\mu}$, $R_{e_\nu}$, $L_{e_\mu}R_{e_\nu}$, $\Theta_{e_\mu}$ | The basis operators, read in that order, the first index belonging to the left slot |
+| left slot, right slot, both slots | The operator chirality: the side on which an operator multiplies, read from the cell |
+| $\gamma_5[\mathbb{M}_-]$ | The volume cell of a frame, the chirality operator; $-iR_{\vec e_z}^{\mathrm{axf}}$ in the axis-free frame |
 | $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | The ambient operator space |
 | $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$ | The sets of the left and the right multipliers |
 | $\operatorname{End}_{LR}(\mathbb{B})$, $\operatorname{End}_{LR\ast}(\mathbb{B})$ | The sets of the two-sided operators and of the sandwiches |
@@ -212,3 +232,4 @@ The strata are labelled by two bits, the norm first and the square of the vector
 - [Matrix Representations Conventions](matrix-representations-conventions.html). The $2\times2$ isomorphism and the $4\times4$ regular representation with its two copies.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html). The operator that is its element, the named operators and the dagger.
 - [Index, Notation and Corpus Conventions](index-notation-and-corpus-conventions.html). The superscripts, the subscript rules and the typography of the source.
+- [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html). The two one-sided families, the chirality operator of a frame, the swap and the conjugation that exchange the sides, and the objects the notion does not need.

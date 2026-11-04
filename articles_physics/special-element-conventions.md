@@ -2,7 +2,7 @@
 
 ## Introduction
 
-These are the conventions of the central map and of the special elements. The central map is the restriction of multiplication by the scalar imaginary $i$ to the remarkable subspaces, and the series reads it in four places under four names. The special glyphs — root, idempotent, nilpotent and spin — are notational, and the article fixes what each glyph promises about the element that carries it.
+These are the conventions of the central map and of the special elements. The central map is the restriction of multiplication by the scalar imaginary $i$ to the remarkable subspaces, and the series reads it in four places under four names. The special glyphs — root, idempotent, nilpotent, chirality, spin and the two spinors — are notational, and the article fixes what each glyph promises about the object that carries it.
 
 The article assumes the base and the subspaces of *Algebra and Element Conventions* and the norms of *Norm and Pairing Conventions*, where a class is defined by a norm.
 
@@ -41,7 +41,7 @@ A **root of $1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2
 
 **It is allowed to add subscripts when several roots are used.** **The subscript of a root is numeric when it counts and a role label when it names.** Where more than one occurs the roots are numbered, $\tilde\Xi_1, \tilde\Xi_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §*The Idempotent Convention*; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
-**The adjoined generator of the double carries the root glyph.** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$; it is written $\tilde\Xi_{\mathrm{ad}}$, the biquaternion root glyph with the role subscript $\mathrm{ad}$ of the paragraph above. It is a root of the double, not an element of $\mathbb{B}$. The chirality is the operator $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $\chi^2=e_t$. No other letter is used for it.
+**The adjoined generator of the double carries the root glyph.** The double $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$ carries a central root of $-1$ outside $\mathbb{B}_{\mathbb{R}}$; it is written $\tilde\Xi_{\mathrm{ad}}$, the biquaternion root glyph with the role subscript $\mathrm{ad}$ of the paragraph above. It is a root of the double, not an element of $\mathbb{B}$. The chirality is the cell $\gamma_5[\mathbb{M}_-]$ of §*The Chirality Convention*; its central form is $\chi=i\tilde\Xi_{\mathrm{ad}}$ with $\chi^2=e_t$. No other letter is used for it.
 
 The root glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
@@ -106,9 +106,47 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 **The standard pair carries the arrow, not the tilde.** The two Peirce units are pure, $\vec{\Upsilon}_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec{\Upsilon}_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by *Algebra and Element Conventions*, §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec{\Upsilon}_1, \vec{\Upsilon}_2$ and never $\tilde{\Upsilon}_1, \tilde{\Upsilon}_2$. The tilde is kept for the general nilpotent $\tilde{\Upsilon}$, which may carry a scalar part and is not pure.
 
+### The Chirality Convention
+
+**The word, on an operator.** Operator chirality is the side on which an operator multiplies: the left slot for a pure left multiplier, $c\,L_{\tilde Q}$; the right slot for a pure right multiplier, $c\,R_{\tilde P}$; both slots for a cell whose two multipliers are both occupied. The label is read from the cell and from nothing else: no root, no idempotent, no ideal, no spinor and no Clifford relation enters it. The vocabulary is *Operator Family Conventions*, §*The Slot Label, Which Is the Chirality*, and the properties of the two one-sided families and of the label are *Operator Chirality on the Biquaternion Algebra*, both in the mathematical corpus.
+
+**The chirality cell of a frame.** The chirality operator of a frame is its volume cell, the product of the four frame cells with the phase $i$,
+$$
+\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
+$$
+a pure right multiplier of the axis-free frame. The cell is not an element of the algebra, and the phrase *the chirality is the cell* is the whole of the convention: the sides are the slots of an operator, and no element carries them by itself. The five cells are fixed in *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*, and the cell is written $\gamma_5[\mathbb{M}_-]$, the gamma index low and the frame in brackets, as *Frame Conventions*, §*The Rules*, fixes.
+
+**The subscript on an element.** The cell acts on an element by $\gamma_5[\mathbb{M}_-]\tilde Q=-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$, so the subscript of the element takes the two values $L$ and $R$: $\tilde Q_L$ is the $-1$ part and $\tilde Q_R$ the $+1$ part, in the letters of the Dirac literature. A product takes the letter of its right factor, left multiplication keeps the letter, and the subscript is a function of the element and of the declared frame. The rule, with the three uses of the two letters, is *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*.
+
+**What the word does not name.** The central form of the chirality is the sign of the double, fixed in §*The Root Convention*; it is a different object, and it is represented by this cell on the Dirac module. A Peirce sign is a third object: $R_{i\vec e_z}^{\mathrm{axf}}=iR_{\vec e_z}^{\mathrm{axf}}$ is a copy index of the two ideals and not a chirality, and the single axis on which its projector agrees with a chiral projector is recorded as a coincidence in *Operator Chirality on the Biquaternion Algebra*, §*What Operator Chirality Is Not*.
+
 ### The Spin Convention
 
-**Spin is the intrinsic angular momentum of a particle.** In the rest frame the one-particle states satisfy $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar m_s$, with $s$ an integer or half-integer and $m_s=-s,\dots,s$; relativistically $s$ labels the little-group $SU(2)$ representation, and for a massless particle the label is helicity. The algebra supplies the rotation action and the weights of its generator on a carrier, but neither the rest-frame one-particle space nor the unit $\hbar$: those are physical inputs. The half-angle is the exponential coordinate of the rotor; the Peirce index is a copy label; and the chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$, whose central form is $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexification. A classical vector is a **spin vector**, or intrinsic angular momentum, and the continuous $2+1$ parameter is a **statistics parameter**; neither is a second definition.
+**Spin is the intrinsic angular momentum of a particle.** In the rest frame the one-particle states satisfy $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar s_z$, with $s$ an integer or half-integer and $s_z=-s,\dots,s$; relativistically $s$ labels the little-group $SU(2)$ representation, and for a massless particle the label is helicity. The algebra supplies the rotation action and the weights of its generator on a carrier, but neither the rest-frame one-particle space nor the unit $\hbar$: those are physical inputs. A classical vector is a **spin vector**, or intrinsic angular momentum, and the continuous $2+1$ parameter is a **statistics parameter**; neither is a second definition.
+
+**The algebraic definition, on a carrier.** Let $(W,\rho)$ be an irreducible unitary carrier of the rotation algebra generated by $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$. For a unit $\vec u$ the operator $\rho(\vec u\cdot\vec S)$ is self-adjoint and its spectrum does not depend on $\vec u$, so the carrier has one spin and not one per axis:
+$$
+s=\hbar^{-1}\max\operatorname{spec}\bigl(\rho(\vec u\cdot\vec S)\bigr)\in\tfrac12\mathbb{Z}_{\ge0},
+$$
+a scalar label and not a vector. The two sentences agree on every carrier the corpus uses, and the algebraic one is the sentence an article computes with (*Angular Momentum and Spin in the Biquaternion Algebra*, §*The Casimir and the Definition of Spin*, in the mathematical corpus). The label is $s$ and the projection $s_z$. The half-angle is the exponential coordinate of the rotor, the Peirce index is a copy label, and the chirality is the cell of §*The Chirality Convention*, whose central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ of the complexification.
+
+### The Spinor Convention
+
+**Definition (elementary spinor).** An **elementary spinor** is an element of a complex two-dimensional space on which the left multiplications act irreducibly with weights $+\tfrac12$ and $-\tfrac12$, so that a rotation through $\theta$ about $\vec u$ multiplies it by $\exp(-i\theta\,\vec u\cdot\vec S/\hbar)$. In $\mathbb{B}$ the carrier is a minimal left ideal,
+$$
+S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+$$
+with $\vec u$ a unit real vector; each is of complex dimension two and of spin $\tfrac12$, and the axis $\vec u$ is part of the datum. An element of $S_+(\vec u)$ is $d_0\tilde\Pi_+(\vec u)+d_1\nu(\vec u)$ with $d_0,d_1\in\mathbb{C}$, so an elementary spinor is a pair of complex numbers in a chosen carrier.
+
+**Definition (Dirac spinor).** A **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, the two parts being its two components in the decomposition of $\mathbb{B}$ into minimal left ideals,
+$$
+\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u),\qquad \tilde\Pi_\pm(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),
+$$
+for a declared unit imaginary direction $\vec u$, and each part is an elementary spinor of complex dimension two. Every element of the algebra is a Dirac spinor and only the zero element has both parts zero, so the definition costs one declared axis and nothing else.
+
+**The two parts carry the chirality letters.** The decomposition is the decomposition into the two values of the chirality: the cell $-iR_{\vec u}$ of §*The Chirality Convention* is $-1$ on $S_+(\vec u)$ and $+1$ on $S_-(\vec u)$, so $\tilde\Psi_L\in S_+(\vec u)$ is the $L$ part and $\tilde\Psi_R\in S_-(\vec u)$ the $R$ part, and at $\vec u=\vec e_z$ the cell is $\gamma_5[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$. Exchanging the two letters is the substitution $\vec u\mapsto-\vec u$, because $\tilde\Pi_+(\vec u)=\tilde\Pi_-(-\vec u)$: the pair is unordered, and the definition orders it only to name the two parts.
+
+**A column is a writing, not a definition.** A column of two components is an elementary spinor written in a chosen carrier, and a column of four is a Dirac spinor written in a matrix model, one pair per part. The count $4=2\times2$ multiplies the spin dimension by the number of parts, and the two factors have different origins. Neither column is a second definition, and the definitions need no Clifford relation, no gamma cell and no extra rotation triple.
 
 ## Summary
 
@@ -116,7 +154,11 @@ Multiplication by $i$ is one map. On the centre it is the global phase; on the c
 
 The special glyphs are notational: a root $\tilde\Xi$, an idempotent $\tilde\Pi$ and a nilpotent $\tilde\nu$ or $\tilde\Upsilon$ are generic elements whose glyph records what they are known to be. A root is a root in the product the statement names; an idempotent squares to itself; a nilpotent squares to zero. The case rule applies to each, the coordinates carry the letter of the glyph, and several occurrences take subscripts by the rule of *Unit, Index and Notation Conventions*. The standard Peirce pair carries the arrow and not the tilde, because its members are pure.
 
-Spin is defined once, as the intrinsic angular momentum of a particle: $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar m_s$ in the rest frame, with $s$ an integer or half-integer, and helicity for the massless case. The algebra supplies the rotation action and the weights of its generator; it supplies neither the one-particle space nor the unit $\hbar$.
+The chirality is the cell of a frame and not an element of the algebra. Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The chirality operator of a frame is its volume cell, $\gamma_5[\mathbb{M}_-]=i\gamma_0[\mathbb{M}_-]\gamma_1[\mathbb{M}_-]\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]=-iR_{\vec e_z}^{\mathrm{axf}}$, a pure right multiplier of the axis-free frame, of spectrum $+1,+1,-1,-1$ on the elements. The subscript of an element takes the two values $L$ and $R$, read from that cell and from the declared frame. The central form of the chirality is the sign of the double, and a Peirce sign is neither the cell nor its central form.
+
+Spin is defined once, on a carrier: it is the largest eigenvalue of $\vec u\cdot\vec S$ in units of $\hbar$, a scalar in $\tfrac12\mathbb{Z}_{\ge0}$ that does not depend on the axis, and physically it is the intrinsic angular momentum of a particle, with $\tilde S^2=\hbar^2s(s+1)$, $\tilde S_z=\hbar s_z$ and helicity in the massless case. The algebra supplies the rotation action and the weights of its generator; it supplies neither the one-particle space nor the unit $\hbar$.
+
+An **elementary spinor** is an element of a carrier, a minimal left ideal $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ of complex dimension two with weights $\pm\tfrac12$; a **Dirac spinor** is an element $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ of $\mathbb{B}$, its two parts being the components in $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$ for a declared axis $\vec u$. The two parts are the two values of the chirality, $\tilde\Psi_L$ in $S_+$ and $\tilde\Psi_R$ in $S_-$, and a column of two or of four components is a carrier element written in a basis and not a second definition.
 
 ## Summary of Notation
 
@@ -127,7 +169,15 @@ Spin is defined once, as the intrinsic angular momentum of a particle: $\tilde S
 | $\tilde\Pi$ | An idempotent, $\tilde\Pi^2=\tilde\Pi$; in the reduced layer written $\Pi_\pm$ |
 | $\tilde\nu$, $\tilde\Upsilon$ | A nilpotent, $\tilde\nu^2=0$; the biquaternion layer writes $\tilde\Upsilon$ |
 | $\vec\Upsilon_1,\vec\Upsilon_2$ | The standard Peirce pair, $\tfrac12(i\vec e_x\mp\vec e_y)$, pure and written with the arrow |
-| $s$, $m_s$ | Spin and its projection, $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar m_s$ |
+| $s$, $s_z$ | Spin and its projection, $\tilde S^2=\hbar^2s(s+1)$ and $\tilde S_z=\hbar s_z$; $s_{\mathrm{tot},z}$ for a total |
+| left slot, right slot, both slots | Operator chirality: the side on which an operator multiplies, read from the cell |
+| $\gamma_5[\mathbb{M}_-]$ | The chirality cell of a frame, $-iR_{\vec e_z}^{\mathrm{axf}}$ in the axis-free frame, a pure right multiplier |
+| $\tilde Q_L$, $\tilde Q_R$ | The two values of the subscript: the $-1$ and the $+1$ part of an element under the chirality cell |
+| $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | The generator of the rotation algebra |
+| $\vec S$ | The generator read as one vector, $\vec u\cdot\vec S=u_k\tilde S_k$; pure, so arrowed and without the tilde |
+| $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | An elementary spinor's carrier, a minimal left ideal of complex dimension two |
+| $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ | The idempotents of the two carriers, at the declared axis $\vec u$ |
+| $\tilde\Psi$, $\tilde\Psi_L$, $\tilde\Psi_R$ | A Dirac spinor and its two parts, the $L$ part in $S_+$ and the $R$ part in $S_-$ |
 
 ## Further Reading
 
@@ -135,3 +185,6 @@ Spin is defined once, as the intrinsic angular momentum of a particle: $\tilde S
 - [Conventions of the Norms and the Pairings](norm-and-pairing-conventions.html), for the norms that define the regular elements.
 - [Conventions of the Units, the Indices and the Notation](unit-index-and-notation-conventions.html), for the subscript rules these glyphs use.
 - [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](../articles_maths/the-operators-of-the-peirce-decomposition-of-m4c.html), for the Peirce family these elements generate.
+- [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the two one-sided families, the properties of the chirality cell, and the objects the notion does not need.
+- [Angular Momentum and Spin in the Biquaternion Algebra](../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html), for the rotation algebra, the Casimir and the definition of spin.
+- [Spinors and Dirac Spinors in the Biquaternion Algebra](../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html), for the two definitions, the weights and the multiplicity of the two parts.
