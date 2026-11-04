@@ -72,11 +72,11 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the representation theory of the split complex algebra. The goal is to define representations precisely, classify them, and describe the structure of the representation ring.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The split complex algebra is assumed from the article on split complex algebra, and the idempotent decomposition is used throughout. No physics is invoked.</p>
-<h2 id="representations-of-math0">Representations of $\mathbb{D}$</h2>
+<h2 id="representations-of-math0">Representations of $\mathbb{C}^{\mathrm{spl}}$</h2>
 <h3 id="definition">Definition</h3>
-<p>A <strong>representation</strong> of $\mathbb{D}$ is a real vector space $V$ together with a bilinear map</p>
+<p>A <strong>representation</strong> of $\mathbb{C}^{\mathrm{spl}}$ is a real vector space $V$ together with a bilinear map</p>
 <p>$$
-\rho : \mathbb{D} \times V \to V, \qquad \rho(Q, v) = Q \cdot v,
+\rho : \mathbb{C}^{\mathrm{spl}} \times V \to V, \qquad \rho(Q, v) = Q \cdot v,
 $$</p>
 <p>satisfying</p>
 <p>$$
@@ -84,9 +84,9 @@ Q \cdot (B \cdot v) = (QB) \cdot v, \qquad 1 \cdot v = v.
 $$</p>
 <p>Equivalently, a representation is an algebra homomorphism</p>
 <p>$$
-\rho : \mathbb{D} \to \operatorname{End}(V).
+\rho : \mathbb{C}^{\mathrm{spl}} \to \operatorname{End}(V).
 $$</p>
-<p>Since $\mathbb{D}$ is commutative, the image of $\rho$ is a commutative subalgebra of $\operatorname{End}(V)$.</p>
+<p>Since $\mathbb{C}^{\mathrm{spl}}$ is commutative, the image of $\rho$ is a commutative subalgebra of $\operatorname{End}(V)$.</p>
 <h3 id="the-idempotent-action">The Idempotent Action</h3>
 <p>The idempotents $\Pi_+$ and $\Pi_-$ act as projection operators. For any representation $V$,</p>
 <p>$$
@@ -100,24 +100,24 @@ $$</p>
 <p>$$
 \boxed{\;V = V_+ \oplus V_-, \qquad V_+ = \Pi_+ \cdot V, \quad V_- = \Pi_- \cdot V\;}.
 $$</p>
-<p>This is the <strong>idempotent decomposition</strong> of the representation. It is the fundamental structural fact about representations of $\mathbb{D}$.</p>
+<p>This is the <strong>idempotent decomposition</strong> of the representation. It is the fundamental structural fact about representations of $\mathbb{C}^{\mathrm{spl}}$.</p>
 <h3 id="the-regular-representation">The Regular Representation</h3>
-<p>The <strong>regular representation</strong> of $\mathbb{D}$ is $\mathbb{D}$ acting on itself by left multiplication:</p>
+<p>The <strong>regular representation</strong> of $\mathbb{C}^{\mathrm{spl}}$ is $\mathbb{C}^{\mathrm{spl}}$ acting on itself by left multiplication:</p>
 <p>$$
-\rho^{\mathrm{reg}}(Q) B = Q B, \qquad Q, B \in \mathbb{D}.
+\rho^{\mathrm{reg}}(Q) B = Q B, \qquad Q, B \in \mathbb{C}^{\mathrm{spl}}.
 $$</p>
-<p>This is the representation $\rho^{\mathrm{reg}} : \mathbb{D} \to \operatorname{End}(\mathbb{D})$ given by $\rho^{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{D}$ on a two-dimensional real vector space.</p>
+<p>This is the representation $\rho^{\mathrm{reg}} : \mathbb{C}^{\mathrm{spl}} \to \operatorname{End}(\mathbb{C}^{\mathrm{spl}})$ given by $\rho^{\mathrm{reg}}(Q) = Q$. It is the representation of $\mathbb{C}^{\mathrm{spl}}$ on a two-dimensional real vector space.</p>
 <p>Under the idempotent decomposition,</p>
 <p>$$
-\mathbb{D} = \mathbb{D} \Pi_+ \oplus \mathbb{D} \Pi_-,
+\mathbb{C}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \Pi_+ \oplus \mathbb{C}^{\mathrm{spl}} \Pi_-,
 $$</p>
-<p>where $\mathbb{D} \Pi_+$ and $\mathbb{D} \Pi_-$ are the two ideals of $\mathbb{D}$, each isomorphic to $\mathbb{R}$. The regular representation decomposes as</p>
+<p>where $\mathbb{C}^{\mathrm{spl}} \Pi_+$ and $\mathbb{C}^{\mathrm{spl}} \Pi_-$ are the two ideals of $\mathbb{C}^{\mathrm{spl}}$, each isomorphic to $\mathbb{R}$. The regular representation decomposes as</p>
 <p>$$
 \rho^{\mathrm{reg}} = \rho_+ \oplus \rho_-,
 $$</p>
-<p>where $\rho_+$ is the representation on $\mathbb{D} \Pi_+ \cong \mathbb{R}$ and $\rho_-$ is the representation on $\mathbb{D} \Pi_- \cong \mathbb{R}$.</p>
+<p>where $\rho_+$ is the representation on $\mathbb{C}^{\mathrm{spl}} \Pi_+ \cong \mathbb{R}$ and $\rho_-$ is the representation on $\mathbb{C}^{\mathrm{spl}} \Pi_- \cong \mathbb{R}$.</p>
 <h3 id="the-one-dimensional-representations">The One-Dimensional Representations</h3>
-<p>The two one-dimensional representations of $\mathbb{D}$ are:</p>
+<p>The two one-dimensional representations of $\mathbb{C}^{\mathrm{spl}}$ are:</p>
 <p><strong>The $+$ representation.</strong> On $\mathbb{R}$, defined by</p>
 <p>$$
 \rho_+(Q) = Q_+ = q + q', \qquad Q = q + jq'.
@@ -128,10 +128,10 @@ $$</p>
 \rho_-(Q) = Q_- = q - q', \qquad Q = q + jq'.
 $$</p>
 <p>This is the representation that sends $j$ to $-1$.</p>
-<p>Both are algebra homomorphisms $\mathbb{D} \to \mathbb{R}$, and they are the only ones. Indeed, if $\rho : \mathbb{D} \to \mathbb{R}$ is an algebra homomorphism, then $\rho(1) = 1$ and $\rho(j)^2 = \rho(j^2) = \rho(1) = 1$, so $\rho(j) = \pm 1$. These are exactly $\rho_+$ and $\rho_-$.</p>
+<p>Both are algebra homomorphisms $\mathbb{C}^{\mathrm{spl}} \to \mathbb{R}$, and they are the only ones. Indeed, if $\rho : \mathbb{C}^{\mathrm{spl}} \to \mathbb{R}$ is an algebra homomorphism, then $\rho(1) = 1$ and $\rho(j)^2 = \rho(j^2) = \rho(1) = 1$, so $\rho(j) = \pm 1$. These are exactly $\rho_+$ and $\rho_-$.</p>
 <h2 id="classification">Classification</h2>
 <h3 id="the-classification-theorem">The Classification Theorem</h3>
-<p><strong>Theorem.</strong> Every finite-dimensional real representation of $\mathbb{D}$ is isomorphic to a direct sum of copies of $\rho_+$ and $\rho_-$:</p>
+<p><strong>Theorem.</strong> Every finite-dimensional real representation of $\mathbb{C}^{\mathrm{spl}}$ is isomorphic to a direct sum of copies of $\rho_+$ and $\rho_-$:</p>
 <p>$$
 \boxed{\;V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}\;},
 $$</p>
@@ -150,25 +150,25 @@ Q \cdot v = (q - q') v, \qquad v \in V_-,
 $$</p>
 <p>so $V_-$ is a direct sum of copies of $\rho_-$.</p>
 <h3 id="irreducible-representations">Irreducible Representations</h3>
-<p><strong>Theorem.</strong> The irreducible real representations of $\mathbb{D}$ are exactly $\rho_+$ and $\rho_-$, up to isomorphism.</p>
+<p><strong>Theorem.</strong> The irreducible real representations of $\mathbb{C}^{\mathrm{spl}}$ are exactly $\rho_+$ and $\rho_-$, up to isomorphism.</p>
 <p><strong>Proof.</strong> Any irreducible representation is a quotient of the regular representation, hence a direct sum of copies of $\rho_+$ and $\rho_-$. Since it is irreducible, it must be a single copy of one of them.</p>
 <h3 id="schurs-lemma">Schur's Lemma</h3>
-<p><strong>Theorem (Schur).</strong> Every $\mathbb{D}$-linear endomorphism of an irreducible real representation of $\mathbb{D}$ is a scalar multiple of the identity.</p>
-<p><strong>Proof.</strong> Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{D}$-linear. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{R}$, $T$ is multiplication by a non-zero scalar.</p>
+<p><strong>Theorem (Schur).</strong> Every $\mathbb{C}^{\mathrm{spl}}$-linear endomorphism of an irreducible real representation of $\mathbb{C}^{\mathrm{spl}}$ is a scalar multiple of the identity.</p>
+<p><strong>Proof.</strong> Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{C}^{\mathrm{spl}}$-linear. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{R}$, $T$ is multiplication by a non-zero scalar.</p>
 <p><strong>Corollary.</strong> The endomorphism ring of each irreducible representation is $\mathbb{R}$.</p>
 <h2 id="the-representation-ring">The Representation Ring</h2>
 <h3 id="definition_1">Definition</h3>
-<p>The <strong>representation ring</strong> $R(\mathbb{D})$ is the Grothendieck ring of finite-dimensional real representations of $\mathbb{D}$. As an abelian group, it is generated by the isomorphism classes $[\rho_+]$ and $[\rho_-]$, with the relation</p>
+<p>The <strong>representation ring</strong> $R(\mathbb{C}^{\mathrm{spl}})$ is the Grothendieck ring of finite-dimensional real representations of $\mathbb{C}^{\mathrm{spl}}$. As an abelian group, it is generated by the isomorphism classes $[\rho_+]$ and $[\rho_-]$, with the relation</p>
 <p>$$
 [\rho_+] + [\rho_-] = [\rho^{\mathrm{reg}}].
 $$</p>
 <p>Since every representation is a direct sum of copies of $\rho_+$ and $\rho_-$, we have</p>
 <p>$$
-\boxed{\;R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}\;},
+\boxed{\;R(\mathbb{C}^{\mathrm{spl}}) \cong \mathbb{Z} \oplus \mathbb{Z}\;},
 $$</p>
 <p>with generators $[\rho_+]$ and $[\rho_-]$.</p>
 <h3 id="ring-structure">Ring Structure</h3>
-<p>The product in $R(\mathbb{D})$ is given by the tensor product of representations:</p>
+<p>The product in $R(\mathbb{C}^{\mathrm{spl}})$ is given by the tensor product of representations:</p>
 <p>$$
 [V] \cdot [W] = [V \otimes_{\mathbb{R}} W].
 $$</p>
@@ -178,7 +178,7 @@ $$</p>
 $$</p>
 <p>This is the multiplication rule of the group ring $\mathbb{Z}[\mathbb{Z}/2]$, where $\rho_+$ corresponds to the trivial character and $\rho_-$ to the sign character. So</p>
 <p>$$
-R(\mathbb{D}) \cong \mathbb{Z}[\mathbb{Z}/2].
+R(\mathbb{C}^{\mathrm{spl}}) \cong \mathbb{Z}[\mathbb{Z}/2].
 $$</p>
 <h2 id="representations-and-the-idempotent-decomposition">Representations and the Idempotent Decomposition</h2>
 <h3 id="the-projection-operators">The Projection Operators</h3>
@@ -192,22 +192,22 @@ P_+^2 = P_+, \qquad P_-^2 = P_-, \qquad P_+ P_- = P_- P_+ = 0, \qquad P_+ + P_- 
 $$</p>
 <p>So $V = V_+ \oplus V_-$ with $V_+ = \operatorname{im} P_+$ and $V_- = \operatorname{im} P_-$.</p>
 <h3 id="the-action-on-each-component">The Action on Each Component</h3>
-<p>On $V_+$, the action of $Q = q + jq'$ is multiplication by $q + q'$. On $V_-$, the action is multiplication by $q - q'$. So the representation is completely determined by the pair of scalars $(q + q', q - q')$, which is exactly the image of $Q$ under the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.</p>
-<p>This is the representation-theoretic content of the isomorphism: a representation of $\mathbb{D}$ is the same thing as a pair of real vector spaces, one for each idempotent.</p>
+<p>On $V_+$, the action of $Q = q + jq'$ is multiplication by $q + q'$. On $V_-$, the action is multiplication by $q - q'$. So the representation is completely determined by the pair of scalars $(q + q', q - q')$, which is exactly the image of $Q$ under the isomorphism $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$.</p>
+<p>This is the representation-theoretic content of the isomorphism: a representation of $\mathbb{C}^{\mathrm{spl}}$ is the same thing as a pair of real vector spaces, one for each idempotent.</p>
 <h2 id="indecomposable-representations">Indecomposable Representations</h2>
 <h3 id="definition_2">Definition</h3>
 <p>A representation $V$ is <strong>indecomposable</strong> if it cannot be written as a direct sum of two non-zero subrepresentations. Every irreducible representation is indecomposable, but the converse fails in general.</p>
-<p><strong>Theorem.</strong> Every finite-dimensional representation of $\mathbb{D}$ is a direct sum of indecomposable representations, and the indecomposable representations are exactly $\rho_+$ and $\rho_-$.</p>
+<p><strong>Theorem.</strong> Every finite-dimensional representation of $\mathbb{C}^{\mathrm{spl}}$ is a direct sum of indecomposable representations, and the indecomposable representations are exactly $\rho_+$ and $\rho_-$.</p>
 <p><strong>Proof.</strong> By the classification theorem, $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$. Each summand is indecomposable because it is one-dimensional and any non-zero subrepresentation is the whole thing. Conversely, any indecomposable representation is a single copy of $\rho_+$ or $\rho_-$.</p>
-<p>So $\mathbb{D}$ is a <strong>semisimple</strong> algebra: every representation is a direct sum of irreducibles, and the indecomposables coincide with the irreducibles. This is a special feature of the split complex algebra, and it is the reason its representation theory is so simple.</p>
+<p>So $\mathbb{C}^{\mathrm{spl}}$ is a <strong>semisimple</strong> algebra: every representation is a direct sum of irreducibles, and the indecomposables coincide with the irreducibles. This is a special feature of the split complex algebra, and it is the reason its representation theory is so simple.</p>
 <h2 id="comparison-with-the-complex-case">Comparison with the Complex Case</h2>
-<p>The representation theory of $\mathbb{D}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, regarded as a real algebra, there is exactly one irreducible representation, of real dimension two: $\mathbb{C}$ acting on itself by multiplication. For $\mathbb{D}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(Q) = q \pm q'$ on $\mathbb{R}$.</p>
-<p>The reason is that $\mathbb{C}$ is a division algebra, so it has exactly one irreducible representation, whereas $\mathbb{D}$ is not a division algebra: its two irreducible representations are the two homomorphisms $\mathbb{D} \to \mathbb{R}$.</p>
+<p>The representation theory of $\mathbb{C}^{\mathrm{spl}}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, regarded as a real algebra, there is exactly one irreducible representation, of real dimension two: $\mathbb{C}$ acting on itself by multiplication. For $\mathbb{C}^{\mathrm{spl}}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(Q) = q \pm q'$ on $\mathbb{R}$.</p>
+<p>The reason is that $\mathbb{C}$ is a division algebra, so it has exactly one irreducible representation, whereas $\mathbb{C}^{\mathrm{spl}}$ is not a division algebra: its two irreducible representations are the two homomorphisms $\mathbb{C}^{\mathrm{spl}} \to \mathbb{R}$.</p>
 <h2 id="the-dual-representation">The Dual Representation</h2>
 <h3 id="definition_3">Definition</h3>
 <p>The <strong>dual</strong> (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{R}}(V, \mathbb{R})$ defined by</p>
 <p>$$
-(\rho^*(Q) f)(v) = f(\rho(Q) v), \qquad Q \in \mathbb{D}, \; f \in V^*, \; v \in V.
+(\rho^*(Q) f)(v) = f(\rho(Q) v), \qquad Q \in \mathbb{C}^{\mathrm{spl}}, \; f \in V^*, \; v \in V.
 $$</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$.</p>
@@ -244,27 +244,27 @@ $$</p>
 <h3 id="definition_5">Definition</h3>
 <p>A <strong>homomorphism</strong> of representations $V$ and $W$ is a linear map $T : V \to W$ such that</p>
 <p>$$
-T(Q \cdot v) = Q \cdot T(v), \qquad Q \in \mathbb{D}, \; v \in V.
+T(Q \cdot v) = Q \cdot T(v), \qquad Q \in \mathbb{C}^{\mathrm{spl}}, \; v \in V.
 $$</p>
-<p>The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{D}}(V, W)$.</p>
+<p>The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(V, W)$.</p>
 <h3 id="basic-properties_2">Basic Properties</h3>
-<p><strong>Composition.</strong> If $T \in \operatorname{Hom}_{\mathbb{D}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{D}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{D}}(V, U)$.</p>
-<p><strong>Schur's lemma.</strong> If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{D}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{D}}(V, V) \cong \mathbb{R}$.</p>
+<p><strong>Composition.</strong> If $T \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(V, U)$.</p>
+<p><strong>Schur's lemma.</strong> If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(V, V) \cong \mathbb{R}$.</p>
 <p><strong>Dimension count.</strong> For $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$ and $W \cong \mathbb{R}^{\oplus r} \oplus \mathbb{R}^{\oplus s}$,</p>
 <p>$$
-\dim \operatorname{Hom}_{\mathbb{D}}(V, W) = pr + qs.
+\dim \operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(V, W) = pr + qs.
 $$</p>
 <p><strong>Proof.</strong> A homomorphism must preserve the idempotent decomposition, so it is determined by its action on each isotypic component. On $V_+ \cong \mathbb{R}^{\oplus p}$, a homomorphism to $W_+ \cong \mathbb{R}^{\oplus r}$ is an $r \times p$ real matrix, of dimension $pr$. Similarly for the minus components, of dimension $qs$.</p>
 <h3 id="the-endomorphism-ring">The Endomorphism Ring</h3>
-<p>The <strong>endomorphism ring</strong> of a representation $V$ is $\operatorname{End}_{\mathbb{D}}(V) = \operatorname{Hom}_{\mathbb{D}}(V, V)$. For $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$,</p>
+<p>The <strong>endomorphism ring</strong> of a representation $V$ is $\operatorname{End}_{\mathbb{C}^{\mathrm{spl}}}(V) = \operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(V, V)$. For $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$,</p>
 <p>$$
-\operatorname{End}_{\mathbb{D}}(V) \cong M_p(\mathbb{R}) \oplus M_q(\mathbb{R}),
+\operatorname{End}_{\mathbb{C}^{\mathrm{spl}}}(V) \cong M_p(\mathbb{R}) \oplus M_q(\mathbb{R}),
 $$</p>
 <p>the direct sum of the matrix rings of sizes $p$ and $q$. This is a semisimple ring.</p>
 <h2 id="summary">Summary</h2>
-<p>A representation of $\mathbb{D}$ is a real vector space $V$ together with a bilinear action of the algebra on it. The classification theorem states that every finite-dimensional real representation is isomorphic to a direct sum of copies of the two one-dimensional representations $\rho_+$ and $\rho_-$, so the representation theory is completely determined by the algebra itself.</p>
+<p>A representation of $\mathbb{C}^{\mathrm{spl}}$ is a real vector space $V$ together with a bilinear action of the algebra on it. The classification theorem states that every finite-dimensional real representation is isomorphic to a direct sum of copies of the two one-dimensional representations $\rho_+$ and $\rho_-$, so the representation theory is completely determined by the algebra itself.</p>
 <p>The idempotent decomposition gives the theory its shape. In any representation the idempotents act as projection operators $P_+ = \rho(\Pi_+)$ and $P_- = \rho(\Pi_-)$, with $P_+ + P_-$ the identity and $P_+P_- = 0$, so every representation splits as the direct sum of its two idempotent components. This is the mechanism by which the algebra behaves as $\mathbb{R} \oplus \mathbb{R}$, and it is the essential difference from the complex case.</p>
-<p>The article also records the representation ring $R(\mathbb{D})$, the indecomposable representations and their relation to the irreducible ones, the dual or contragredient representation on $V^*$, the tensor product with its diagonal action, and the homomorphisms, the linear maps intertwining the two actions. The final comparison with the complex case isolates the difference between an algebra with two idempotents and one that is a field.</p>
+<p>The article also records the representation ring $R(\mathbb{C}^{\mathrm{spl}})$, the indecomposable representations and their relation to the irreducible ones, the dual or contragredient representation on $V^*$, the tensor product with its diagonal action, and the homomorphisms, the linear maps intertwining the two actions. The final comparison with the complex case isolates the difference between an algebra with two idempotents and one that is a field.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -275,7 +275,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D}$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
 <td>Split complex algebra</td>
 </tr>
 <tr>
@@ -291,7 +291,7 @@ $$</p>
 <td>Negative idempotent</td>
 </tr>
 <tr>
-<td>$\rho : \mathbb{D} \to \operatorname{End}(V)$</td>
+<td>$\rho : \mathbb{C}^{\mathrm{spl}} \to \operatorname{End}(V)$</td>
 <td>Representation</td>
 </tr>
 <tr>
@@ -331,15 +331,15 @@ $$</p>
 <td>Tensor product</td>
 </tr>
 <tr>
-<td>$\operatorname{Hom}_{\mathbb{D}}(V, W)$</td>
+<td>$\operatorname{Hom}_{\mathbb{C}^{\mathrm{spl}}}(V, W)$</td>
 <td>Space of homomorphisms</td>
 </tr>
 <tr>
-<td>$\operatorname{End}_{\mathbb{D}}(V)$</td>
+<td>$\operatorname{End}_{\mathbb{C}^{\mathrm{spl}}}(V)$</td>
 <td>Endomorphism ring</td>
 </tr>
 <tr>
-<td>$R(\mathbb{D})$</td>
+<td>$R(\mathbb{C}^{\mathrm{spl}})$</td>
 <td>Representation ring</td>
 </tr>
 </tbody>

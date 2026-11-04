@@ -70,8 +70,8 @@
       <div class="article-body">
         <h1 id="shears-and-parabolic-rotations"><strong>Shears and Parabolic Rotations</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article develops the one-parameter group theory of the infinitesimal extension of the real line, that is, the group theory of the dual numbers. It follows <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{D}' = \mathbb{D}'_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$ and the group of units $(\mathbb{D}')^\times$. The subject is the geometry of multiplication by a unit, treated, as in <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>, as a one-parameter transformation group and as a Lie group, not as a motion in any physical sense.</p>
-<p>The three two-dimensional commutative unital real algebras give three kinds of rotation. For the complex numbers $\mathbb{C}$ the norm-one group is the circle $\mathrm{U}(1)$, compact, and its one-parameter group is the elliptic rotation. For the split complex numbers $\mathbb{D} = \mathbb{R}[j]$, $j^2 = +1$, the norm-one group is the hyperbola and its identity component is the hyperbolic rotation group, with the rapidity as additive parameter. For the dual numbers $\mathbb{D}'$ the norm is degenerate and the norm-one group degenerates to a pair of parallel lines; its identity component is the <strong>shear group</strong>, a one-parameter group whose elements are unipotent linear maps of the dual plane. The purpose of this article is to describe that group, its generator, its Lie algebra, its action, and its relation to the elliptic and hyperbolic cases as the common degenerate limit.</p>
+<p>This article develops the one-parameter group theory of the infinitesimal extension of the real line, that is, the group theory of the dual numbers. It follows <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{C}^{\mathrm{dua}} = \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$ and the group of units $(\mathbb{C}^{\mathrm{dua}})^\times$. The subject is the geometry of multiplication by a unit, treated, as in <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em>, as a one-parameter transformation group and as a Lie group, not as a motion in any physical sense.</p>
+<p>The three two-dimensional commutative unital real algebras give three kinds of rotation. For the complex numbers $\mathbb{C}$ the norm-one group is the circle $\mathrm{U}(1)$, compact, and its one-parameter group is the elliptic rotation. For the split complex numbers $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the norm-one group is the hyperbola and its identity component is the hyperbolic rotation group, with the rapidity as additive parameter. For the dual numbers $\mathbb{C}^{\mathrm{dua}}$ the norm is degenerate and the norm-one group degenerates to a pair of parallel lines; its identity component is the <strong>shear group</strong>, a one-parameter group whose elements are unipotent linear maps of the dual plane. The purpose of this article is to describe that group, its generator, its Lie algebra, its action, and its relation to the elliptic and hyperbolic cases as the common degenerate limit.</p>
 <p>The central objects are these. Multiplication by the unit $u = 1 + s\varepsilon$ is the linear map</p>
 <p>$$
 S(s) : q + \varepsilon q' \longmapsto q + (s q + q')\varepsilon,
@@ -81,12 +81,12 @@ $$</p>
 <p>Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$; $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$; $\bar Q = q - \varepsilon q'$; $\langle Q\rangle_{*} = Q\bar Q = q^2$; $q^2 + q'^2$ the Euclidean form; $\mathrm{M} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(q + \varepsilon q') = q$ the augmentation.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="units-and-the-maximal-ideal">Units and the Maximal Ideal</h3>
-<p><strong>Proposition.</strong> The element $q + \varepsilon q' \in \mathbb{D}'$ is a unit if and only if $q \neq 0$, and then</p>
+<p><strong>Proposition.</strong> The element $q + \varepsilon q' \in \mathbb{C}^{\mathrm{dua}}$ is a unit if and only if $q \neq 0$, and then</p>
 <p>$$
 (q + \varepsilon q')^{-1} = \frac{1}{q} - \frac{1}{q^2}\,\varepsilon q'.
 $$</p>
 <p><strong>Proof.</strong> The product $(q_1+\varepsilon q'_1)(q_2+\varepsilon q'_2) = q_1q_2 + (q_1q'_2 + q'_1q_2)\varepsilon$ equals $1$ exactly when $q_1q_2 = 1$ and $q_1q'_2 + q'_1q_2 = 0$; the first equation is solvable in $\mathbb{R}$ exactly when $q_1 \neq 0$, and then $q_2 = q_1^{-1}$ and $q'_2 = -q_1^{-2}q'_1$.</p>
-<p>So the non-units are the elements of the maximal ideal $\mathrm{M}$, and $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$. The subgroup</p>
+<p>So the non-units are the elements of the maximal ideal $\mathrm{M}$, and $(\mathbb{C}^{\mathrm{dua}})^\times = \mathbb{C}^{\mathrm{dua}} \setminus \mathrm{M}$. The subgroup</p>
 <p>$$
 1 + \mathrm{M} = \{1 + s\varepsilon : s \in \mathbb{R}\}
 $$</p>
@@ -94,7 +94,7 @@ $$</p>
 <h3 id="the-unit-group-as-a-direct-product">The Unit Group as a Direct Product</h3>
 <p><strong>Theorem.</strong> Let $R$ be a commutative ring. The map</p>
 <p>$$
-\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{D}'_R)^\times, \qquad \Theta(q, s) = q + qs\varepsilon = q(1 + s\varepsilon),
+\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{C}^{\mathrm{dua}}_R)^\times, \qquad \Theta(q, s) = q + qs\varepsilon = q(1 + s\varepsilon),
 $$</p>
 <p>is an isomorphism of groups.</p>
 <p><strong>Proof.</strong> $\Theta$ is bijective: given $q + \varepsilon q'$ with $q \in R^\times$, the unique preimage is $(q, q^{-1}q')$. It is a homomorphism, because</p>
@@ -104,24 +104,24 @@ $$</p>
 <p>using $\varepsilon^2 = 0$.</p>
 <p><strong>Corollary.</strong> For $R = \mathbb{R}$, the group of units is</p>
 <p>$$
-\boxed{\; (\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R} \;},
+\boxed{\; (\mathbb{C}^{\mathrm{dua}})^\times \cong \mathbb{R}^\times \times \mathbb{R} \;},
 $$</p>
 <p>with the two factors the nonzero scalars and the shear group. The unit group is abelian, has exactly two connected components, distinguished by the sign of the real part, and each is contractible.</p>
-<p><strong>Proof.</strong> The isomorphism is the theorem. The sign of the real part is a continuous homomorphism $(\mathbb{D}')^\times \to \{\pm1\}$ and $\mathbb{R}^\times$ has two components, so the two groups have the same component count; the component of the identity is $\{q > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}$, which is contractible.</p>
+<p><strong>Proof.</strong> The isomorphism is the theorem. The sign of the real part is a continuous homomorphism $(\mathbb{C}^{\mathrm{dua}})^\times \to \{\pm1\}$ and $\mathbb{R}^\times$ has two components, so the two groups have the same component count; the component of the identity is $\{q > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}$, which is contractible.</p>
 <p>The algebra article records that the unit group is an extension of $R^\times$ by the additive group $R$; for commutative $R$ the extension splits and, the group being abelian, the extension is in fact a direct product, which is the content of the theorem above.</p>
 <h3 id="the-norm-one-group">The Norm-One Group</h3>
 <p>The norm $\langle Q\rangle_{*} = Q\bar Q = q^2$ of <em>Dual-Numbers Norm and Invertibility</em> is multiplicative, $\langle uv\rangle_{*} = \langle u\rangle_{*}\langle v\rangle_{*}$, and its radical is $\mathrm{M}$: it vanishes on $\mathrm{M}$ and is nonzero off it. The <strong>norm-one group</strong> is</p>
 <p>$$
-H = \{Q \in \mathbb{D}' : \langle Q\rangle_{*} = 1\}.
+H = \{Q \in \mathbb{C}^{\mathrm{dua}} : \langle Q\rangle_{*} = 1\}.
 $$</p>
 <p><strong>Proposition.</strong> $H = \{q + \varepsilon q' : q = \pm 1\}$ is the union of the two parallel lines of real part $\pm1$; its identity component is $H_0 = 1 + \mathrm{M}$, the shear group.</p>
 <p><strong>Proof.</strong> $\langle q + \varepsilon q'\rangle_{*} = q^2 = 1$ gives $q = \pm1$ and leaves $q'$ free; the two lines meet the real axis at $1$ and $-1$, and the component through $1$ is the line $q = 1$, which is $1 + \mathrm{M}$.</p>
 <p>The three norm-one sets of the three two-dimensional algebras are therefore a circle, a hyperbola and a pair of parallel lines. The degeneration is the visible form of $\varepsilon^2 = 0$: the quadratic form has lost its non-degenerate directions, and its level set is no longer a curve of curvature but a flat pair of lines.</p>
 <h2 id="multiplication-by-a-unit-as-a-shear">Multiplication by a Unit as a Shear</h2>
 <h3 id="multiplication-by-a-unit-as-a-linear-map">Multiplication by a Unit as a Linear Map</h3>
-<p>Multiplication by a unit $u \in \mathbb{D}'$ is the $R$-linear map</p>
+<p>Multiplication by a unit $u \in \mathbb{C}^{\mathrm{dua}}$ is the $R$-linear map</p>
 <p>$$
-M_u : \mathbb{D}' \to \mathbb{D}', \qquad M_u(Q) = uQ,
+M_u : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}, \qquad M_u(Q) = uQ,
 $$</p>
 <p>which is bijective with inverse $M_{u^{-1}}$ and satisfies $M_{uv} = M_u \circ M_v$. In the coordinates $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2$ it acts by</p>
 <p>$$
@@ -140,15 +140,15 @@ $$</p>
 <p>$$
 S(s) = I + sE = \begin{pmatrix} 1 & 0 \\ s & 1 \end{pmatrix}, \qquad S(s)(q + \varepsilon q') = q + (q' + s q)\varepsilon.
 $$</p>
-<p>It is an elementary shear matrix, or transvection: it fixes the line $\mathrm{M}$ pointwise, acts as the identity on the quotient $\mathbb{D}'/\mathrm{M} \cong \mathbb{R}$, and displaces every point by a vector parallel to $\mathrm{M}$.</p>
-<p>Thus multiplication by the unit $u = q(1+s\varepsilon)$ is the composition of the scalar dilation $q$ with the shear $S(s)$: the group of units acts on the dual plane by dilations and shears, and the shear parameter is the coordinate of the quotient $(\mathbb{D}')^\times/\mathbb{R}^\times$.</p>
+<p>It is an elementary shear matrix, or transvection: it fixes the line $\mathrm{M}$ pointwise, acts as the identity on the quotient $\mathbb{C}^{\mathrm{dua}}/\mathrm{M} \cong \mathbb{R}$, and displaces every point by a vector parallel to $\mathrm{M}$.</p>
+<p>Thus multiplication by the unit $u = q(1+s\varepsilon)$ is the composition of the scalar dilation $q$ with the shear $S(s)$: the group of units acts on the dual plane by dilations and shears, and the shear parameter is the coordinate of the quotient $(\mathbb{C}^{\mathrm{dua}})^\times/\mathbb{R}^\times$.</p>
 <p><strong>Remark (the degenerate perpendicular).</strong> In terms of the Euclidean inner product, the displacement produced by $S(s)$ is</p>
 <p>$$
 S(s)(Q) - Q = s\,\langle Q, 1\rangle\,\varepsilon, \qquad Q = q + \varepsilon q',
 $$</p>
 <p>since $\langle Q, 1\rangle = q$. The displacement is proportional to the component of $Q$ along the real axis and points along the nilpotent axis, which is the Euclidean orthogonal complement of the real axis; so $S(s)$ is the elementary shear, or transvection, that displaces each point of the plane along the nilpotent direction by an amount proportional to its real part. In the notation of the other articles on the two-dimensional algebras this is the description of multiplication by a unit as the map $Q \mapsto Q + s\,Q_\perp$, with $Q_\perp = \langle Q, 1\rangle\,\varepsilon = \operatorname{Re}(Q)\,\varepsilon$: the "perpendicular" component is read off by the augmentation and displaced into the maximal ideal. The norm registers none of this displacement. Its bilinear form is $B(Q_1, Q_2) = \operatorname{Re}(Q_1)\operatorname{Re}(Q_2)$, for which the nilpotent axis is the radical, $B$-orthogonal to the whole plane; the shear leaves $N$ invariant for that reason, and not because the displacement is small.</p>
 <h3 id="orbits-and-the-fixed-fibre">Orbits and the Fixed Fibre</h3>
-<p><strong>Theorem.</strong> The shear group acts on $\mathbb{D}'$ with the following orbits.</p>
+<p><strong>Theorem.</strong> The shear group acts on $\mathbb{C}^{\mathrm{dua}}$ with the following orbits.</p>
 <ol>
 <li>The maximal ideal $\mathrm{M} = \pi^{-1}(0)$ is fixed pointwise.</li>
 <li>Every fibre $\pi^{-1}(q)$ with $q \neq 0$ is a single orbit, and the action on it is free: the map $s \mapsto S(s)(q + \varepsilon q')$ is a bijection of $\mathbb{R}$ onto the fibre.</li>
@@ -162,7 +162,7 @@ $$</p>
 \boxed{\; (\mathbb{R}, +) \longrightarrow G, \qquad S(s)S(t) = S(s+t), \qquad S(0) = I, \qquad S(s)^{-1} = S(-s) \;}.
 $$</p>
 <p><strong>Proof.</strong> $S(s) = I + sE$ and $E^2 = 0$, so $(I+sE)(I+tE) = I + (s+t)E + stE^2 = I + (s+t)E$.</p>
-<p>The subgroup $G$ is exactly the image of $1 + \mathrm{M}$ under multiplication by units, and it is a subgroup of the group of linear automorphisms of the plane $\mathbb{D}'$. It is <strong>not</strong> a subgroup of the algebra automorphism group: left multiplication by a unit is an algebra homomorphism only when the unit is the identity, since $(uQ_1)(uQ_2) = u^2 Q_1Q_2$ equals $u(Q_1Q_2)$ only when $u^2 = u$, which for a unit forces $u = 1$. The shears are symmetries of the plane that commute with multiplication, not algebra automorphisms.</p>
+<p>The subgroup $G$ is exactly the image of $1 + \mathrm{M}$ under multiplication by units, and it is a subgroup of the group of linear automorphisms of the plane $\mathbb{C}^{\mathrm{dua}}$. It is <strong>not</strong> a subgroup of the algebra automorphism group: left multiplication by a unit is an algebra homomorphism only when the unit is the identity, since $(uQ_1)(uQ_2) = u^2 Q_1Q_2$ equals $u(Q_1Q_2)$ only when $u^2 = u$, which for a unit forces $u = 1$. The shears are symmetries of the plane that commute with multiplication, not algebra automorphisms.</p>
 <h3 id="the-exponential-map">The Exponential Map</h3>
 <p>The generator of the one-parameter group is</p>
 <p>$$
@@ -195,10 +195,10 @@ $$</p>
 <h3 id="the-group-of-units-modulo-scaling">The Group of Units Modulo Scaling</h3>
 <p><strong>Theorem.</strong> The quotient of the unit group by the subgroup of nonzero scalars is the shear group, and it is identified with the additive line by the logarithm:</p>
 <p>$$
-(\mathbb{D}')^\times / \mathbb{R}^\times \cong 1 + \mathrm{M} \cong (\mathbb{R}, +), \qquad u = q(1+s\varepsilon) \longmapsto 1 + s\varepsilon \longmapsto s.
+(\mathbb{C}^{\mathrm{dua}})^\times / \mathbb{R}^\times \cong 1 + \mathrm{M} \cong (\mathbb{R}, +), \qquad u = q(1+s\varepsilon) \longmapsto 1 + s\varepsilon \longmapsto s.
 $$</p>
 <p><strong>Proof.</strong> The subgroup of scalars is $\mathbb{R}^\times = \{q + 0\varepsilon : q \neq 0\}$, and $q(1+s\varepsilon) \equiv 1 + s\varepsilon \pmod{\mathbb{R}^\times}$. The map $u \mapsto q^{-1}u$ is a homomorphism onto $1+\mathrm{M}$ with kernel $\mathbb{R}^\times$, and $1+\mathrm{M} \cong (\mathbb{R},+)$ by the group law of the shear group.</p>
-<p>So every unit is a scalar multiple of a unique shear, and the two factors of the direct product $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$ are the scaling part and the parabolic angle. The quotient by scaling is the additive line of angles.</p>
+<p>So every unit is a scalar multiple of a unique shear, and the two factors of the direct product $(\mathbb{C}^{\mathrm{dua}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ are the scaling part and the parabolic angle. The quotient by scaling is the additive line of angles.</p>
 <h3 id="the-three-angles">The Three Angles</h3>
 <p>The three two-dimensional algebras have three angle parameters; in each case the angle is the coordinate on the connected component of the unit group modulo scaling, and in each case the composition is addition of the coordinate.</p>
 <div class="table-scroll"><table>
@@ -220,14 +220,14 @@ $$</p>
 <td>compact</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$, $j^2 = +1$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$, $j^2 = +1$</td>
 <td>hyperbola $a^2-a'^2=1$</td>
 <td>hyperbolic angle (rapidity) $t$</td>
 <td>additive on $\mathbb{R}$</td>
 <td>non-compact</td>
 </tr>
 <tr>
-<td>$\mathbb{D}'$, $\varepsilon^2 = 0$</td>
+<td>$\mathbb{C}^{\mathrm{dua}}$, $\varepsilon^2 = 0$</td>
 <td>lines $q = \pm1$</td>
 <td>parabolic angle $s$</td>
 <td>additive on $\mathbb{R}$</td>
@@ -251,27 +251,27 @@ $$</p>
 \mathrm{G} = \mathbb{R}E \subset \mathrm{GL}_2(\mathbb{R}), \qquad E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix},
 $$</p>
 <p>It is abelian, $[E,E] = 0$, and the generator is nilpotent of index two: $E \neq 0$ and $E^2 = 0$. So $\mathrm{G}$ is a nilpotent Lie algebra of index two and $G = \exp(\mathrm{G})$ is a <strong>unipotent</strong> group: every element is unipotent, of the form identity plus a nilpotent endomorphism, and the only eigenvalue of every element is $1$.</p>
-<p>Under the identification of the endomorphism $E$ with the element $\varepsilon$, the Lie algebra of the shear group is the line $\mathbb{R}\varepsilon = \mathrm{M}$ inside $\mathbb{D}'$, with the trivial bracket; the generator is $\varepsilon$ itself. This is the same square-zero endomorphism that generates the fibre direction, and its nilpotence is the same $\varepsilon^2 = 0$.</p>
+<p>Under the identification of the endomorphism $E$ with the element $\varepsilon$, the Lie algebra of the shear group is the line $\mathbb{R}\varepsilon = \mathrm{M}$ inside $\mathbb{C}^{\mathrm{dua}}$, with the trivial bracket; the generator is $\varepsilon$ itself. This is the same square-zero endomorphism that generates the fibre direction, and its nilpotence is the same $\varepsilon^2 = 0$.</p>
 <h3 id="derivations-and-automorphisms">Derivations and Automorphisms</h3>
 <p>The shear generator must be distinguished from the derivations of the algebra, which generate a different one-parameter group.</p>
-<p><strong>Proposition.</strong> The derivations of $\mathbb{D}'$ are the multiples of the single derivation</p>
+<p><strong>Proposition.</strong> The derivations of $\mathbb{C}^{\mathrm{dua}}$ are the multiples of the single derivation</p>
 <p>$$
 \varepsilon\,\partial(1)/\partial\varepsilon = 0, \qquad \varepsilon\,\partial(\varepsilon)/\partial\varepsilon = \varepsilon, \qquad \partial^{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q',
 $$</p>
-<p>so $\operatorname{Der}(\mathbb{D}')$ is one-dimensional over $\mathbb{R}$, spanned by $\partial^{\mathrm{nil}}$. This derivation is idempotent, $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$, and it is not nilpotent.</p>
-<p><strong>Proof.</strong> Let $\delta$ be a derivation. Then $\delta(1) = \delta(1\cdot 1) = 2\delta(1)$, so $\delta(1) = 0$, and $\delta$ is determined by $\delta(\varepsilon) = p + c\varepsilon$. From $\varepsilon^2 = 0$ and the Leibniz rule, $0 = \delta(\varepsilon^2) = 2\varepsilon\,\delta(\varepsilon) = 2p\varepsilon$, so $p = 0$ and $\delta(\varepsilon) \in \mathbb{R}\varepsilon$. Hence $\delta = c\,\partial^{\mathrm{nil}}$ with $c$ the coefficient of $\varepsilon$ in $\delta(\varepsilon)$, and $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\,\partial^{\mathrm{nil}}$ is one-dimensional. This is the derivation statement of <em>Dual-Numbers Algebra</em>, and it settles the general form; finally $\partial^{\mathrm{nil}}(\varepsilon q') = \varepsilon q'$, so $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$.</p>
-<p><strong>Proposition.</strong> Every unital algebra endomorphism of $\mathbb{D}'$ is $\varphi_c(\varepsilon) = c\varepsilon$ for some $c \in \mathbb{R}^\times$, and $\varphi_c$ is an automorphism. Hence $\operatorname{Aut}(\mathbb{D}') \cong \mathbb{R}^\times$, with identity component $\{c > 0\} \cong \mathbb{R}_{>0}$ and Lie algebra $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\,\partial^{\mathrm{nil}}$. The exponential of the derivation is $\exp(t\,\partial^{\mathrm{nil}})(\varepsilon) = \exp(t)\varepsilon$.</p>
+<p>so $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}})$ is one-dimensional over $\mathbb{R}$, spanned by $\partial^{\mathrm{nil}}$. This derivation is idempotent, $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$, and it is not nilpotent.</p>
+<p><strong>Proof.</strong> Let $\delta$ be a derivation. Then $\delta(1) = \delta(1\cdot 1) = 2\delta(1)$, so $\delta(1) = 0$, and $\delta$ is determined by $\delta(\varepsilon) = p + c\varepsilon$. From $\varepsilon^2 = 0$ and the Leibniz rule, $0 = \delta(\varepsilon^2) = 2\varepsilon\,\delta(\varepsilon) = 2p\varepsilon$, so $p = 0$ and $\delta(\varepsilon) \in \mathbb{R}\varepsilon$. Hence $\delta = c\,\partial^{\mathrm{nil}}$ with $c$ the coefficient of $\varepsilon$ in $\delta(\varepsilon)$, and $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$ is one-dimensional. This is the derivation statement of <em>Dual-Numbers Algebra</em>, and it settles the general form; finally $\partial^{\mathrm{nil}}(\varepsilon q') = \varepsilon q'$, so $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$.</p>
+<p><strong>Proposition.</strong> Every unital algebra endomorphism of $\mathbb{C}^{\mathrm{dua}}$ is $\varphi_c(\varepsilon) = c\varepsilon$ for some $c \in \mathbb{R}^\times$, and $\varphi_c$ is an automorphism. Hence $\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}}) \cong \mathbb{R}^\times$, with identity component $\{c > 0\} \cong \mathbb{R}_{>0}$ and Lie algebra $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$. The exponential of the derivation is $\exp(t\,\partial^{\mathrm{nil}})(\varepsilon) = \exp(t)\varepsilon$.</p>
 <p><strong>Proof.</strong> A unital endomorphism is determined by $\varphi(\varepsilon) = p + c\varepsilon$ and must satisfy $\varphi(\varepsilon)^2 = p^2 + 2pc\varepsilon = 0$, so $p = 0$; then $\varphi(q + \varepsilon q') = q + q'c\varepsilon$, which is bijective exactly when $c \neq 0$, which is the stated form. For the last statement, $(\partial^{\mathrm{nil}})^k(\varepsilon) = \varepsilon$ for every $k \geq 1$, so the exponential series of the derivation gives $\exp(t\,\partial^{\mathrm{nil}})(\varepsilon) = \sum_{k \geq 0} t^k \varepsilon/k! = \exp(t)\varepsilon$; the exponential of a derivation of a finite-dimensional real algebra is an automorphism.</p>
 <p>The sharp contrast is now visible. The derivations fix the real axis pointwise and scale the maximal ideal by $\varepsilon \mapsto \exp(t)\varepsilon$, generating the automorphism group $\mathbb{R}^\times$; the shears act on $\mathrm{M}$ by the identity, fix it pointwise, and commute with multiplication without being algebra automorphisms. Their generators are the idempotent $\partial^{\mathrm{nil}}$ and the nilpotent $E$ respectively. The shear group is therefore <strong>not</strong> the exponential of the derivation algebra; it is the exponential of the square-zero direction of the algebra itself.</p>
 <h3 id="the-lie-algebra-of-the-unit-group">The Lie Algebra of the Unit Group</h3>
-<p>The unit group $(\mathbb{D}')^\times$ is a two-dimensional abelian Lie group, and its Lie algebra at the identity is $\mathbb{D}'$ itself, with the zero bracket, by <em>Dual-Numbers Algebra</em>: the commutator on $\mathbb{D}'$ vanishes identically. In the direct-product decomposition $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$ the Lie algebra decomposes as $\mathbb{R} \oplus \mathbb{R}$, with the first factor the infinitesimal dilations and the second factor the infinitesimal shears. The shear group is the one-parameter subgroup generated by the element $\varepsilon \in \mathrm{M}$, and its Lie algebra is the line $\mathrm{G} = \mathbb{R}\varepsilon \subset \mathbb{D}'$.</p>
+<p>The unit group $(\mathbb{C}^{\mathrm{dua}})^\times$ is a two-dimensional abelian Lie group, and its Lie algebra at the identity is $\mathbb{C}^{\mathrm{dua}}$ itself, with the zero bracket, by <em>Dual-Numbers Algebra</em>: the commutator on $\mathbb{C}^{\mathrm{dua}}$ vanishes identically. In the direct-product decomposition $(\mathbb{C}^{\mathrm{dua}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ the Lie algebra decomposes as $\mathbb{R} \oplus \mathbb{R}$, with the first factor the infinitesimal dilations and the second factor the infinitesimal shears. The shear group is the one-parameter subgroup generated by the element $\varepsilon \in \mathrm{M}$, and its Lie algebra is the line $\mathrm{G} = \mathbb{R}\varepsilon \subset \mathbb{C}^{\mathrm{dua}}$.</p>
 <h2 id="the-degeneration-at-math260">The Degeneration at $\varepsilon^2 = 0$</h2>
 <h3 id="the-degenerate-norm-and-its-orthogonal-group">The Degenerate Norm and Its Orthogonal Group</h3>
 <p>The shear is an "orthogonal" transformation of the degenerate norm, in the following sense.</p>
 <p><strong>Proposition.</strong> A linear map $T = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ satisfies $\langle TQ\rangle_{*} = \langle Q\rangle_{*}$ for all $Q$ if and only if $a = \pm 1$ and $b = 0$; the coefficients $c$ and $d$ are then free. Such a $T$ is invertible, and hence an isometry of the form, exactly when $d \neq 0$.</p>
 <p><strong>Proof.</strong> $\langle T(q+\varepsilon q')\rangle_{*} = (a\,q + b\,q')^2$ must equal $q^2$ for all $q, q'$; comparing coefficients of $q^2$, $q\,q'$ and $q'^2$ gives $a^2 = 1$, $ab = 0$, $b^2 = 0$, hence $a = \pm1$ and $b = 0$. The determinant is then $\det T = ad = \pm d$, so $T$ is invertible exactly when $d \neq 0$.</p>
 <p>The group of isometries of the form is therefore $T = \begin{pmatrix} \pm 1 & 0 \\ c & d \end{pmatrix}$ with $d \neq 0$, and its identity component is $\left\{\begin{pmatrix} 1 & 0 \\ c & d \end{pmatrix} : c \in \mathbb{R},\ d > 0\right\}$, of dimension two; the shear group $S(s) = \begin{pmatrix}1&0\\ s&1\end{pmatrix}$ is its unipotent subgroup with $d = 1$.</p>
-<p>So the stabiliser of the form is larger than in the non-degenerate cases, because the radical $\mathrm{M}$ may be rescaled and sheared without changing $N$: its identity component is two-dimensional, whereas the identity components of the isometry groups in the non-degenerate cases are one-dimensional. The Euclidean orthogonal group $O(2)$ is compact; the group $O(1,1)$ of the split complex form is non-compact with a one-dimensional identity component; the stabiliser here is non-compact and two-dimensional, and the shear group is the distinguished unipotent one-parameter subgroup that preserves the flag $0 \subset \mathrm{M} \subset \mathbb{D}'$ and acts trivially on both the submodule $\mathrm{M}$ and the quotient.</p>
+<p>So the stabiliser of the form is larger than in the non-degenerate cases, because the radical $\mathrm{M}$ may be rescaled and sheared without changing $N$: its identity component is two-dimensional, whereas the identity components of the isometry groups in the non-degenerate cases are one-dimensional. The Euclidean orthogonal group $O(2)$ is compact; the group $O(1,1)$ of the split complex form is non-compact with a one-dimensional identity component; the stabiliser here is non-compact and two-dimensional, and the shear group is the distinguished unipotent one-parameter subgroup that preserves the flag $0 \subset \mathrm{M} \subset \mathbb{C}^{\mathrm{dua}}$ and acts trivially on both the submodule $\mathrm{M}$ and the quotient.</p>
 <h3 id="the-norm-one-set">The Norm-One Set</h3>
 <p>The norm-one set $\langle Q\rangle_{*} = 1$ is the pair of parallel lines $q = \pm1$. The identity component of the group of units, $\{q > 0\}$, meets this set in the single line $q = 1$, which is the shear group $1 + \mathrm{M}$. So the shear group is exactly the connected "rotation group" of the degenerate form, and the passage from the circle to the hyperbola to the pair of parallel lines is the passage from $\mathrm{U}(1)$ to $SO(1,1)_0$ to $G$.</p>
 <h3 id="the-contraction-from-the-elliptic-and-hyperbolic-cases">The Contraction from the Elliptic and Hyperbolic Cases</h3>
@@ -290,14 +290,14 @@ $$</p>
 <h3 id="no-compact-rotation-group-and-no-periodic-orbits">No Compact Rotation Group and No Periodic Orbits</h3>
 <p>Two consequences make the parabolic case the degenerate end of the trichotomy.</p>
 <ul>
-<li><strong>No compact rotation group.</strong> The shear group $G \cong \mathbb{R}$ is non-compact and has no nontrivial compact subgroup; the only compact subgroup of the full unit group $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$ is the central $\{\pm 1\}$. There is no analogue of the circle group $\mathrm{U}(1)$.</li>
+<li><strong>No compact rotation group.</strong> The shear group $G \cong \mathbb{R}$ is non-compact and has no nontrivial compact subgroup; the only compact subgroup of the full unit group $(\mathbb{C}^{\mathrm{dua}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ is the central $\{\pm 1\}$. There is no analogue of the circle group $\mathrm{U}(1)$.</li>
 <li><strong>No periodic orbits.</strong> The orbit of a point in a fibre $\pi^{-1}(q)$ with $q \neq 0$ is the whole fibre, a non-compact line on which the shear acts by translation, so no orbit other than a fixed point is periodic; in the elliptic case every orbit is a circle and the action is periodic. The shear also does not preserve the Euclidean metric: writing $Q = q + \varepsilon q'$ one has $S(s)Q = q + (q'+s q)\varepsilon$, and $q^2+q'^2$ is preserved for every $Q$ only when $s = 0$. So $S(s)$ is an isometry of the degenerate form $N$ but not of the Euclidean metric of the plane. A compact subgroup of $GL_2(\mathbb{R})$ preserves some positive-definite form, obtained by averaging any form over the group; $G$ is non-compact, so it preserves none, and the computation above is the instance of that failure for the Euclidean form itself.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The <strong>group of units</strong> of $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. For commutative $R$ it is the direct product $(\mathbb{D}'_R)^\times \cong R^\times \times (R,+)$ via $q + qs\varepsilon \leftrightarrow (q,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm $\langle Q\rangle_{*} = q^2$ is degenerate with radical $\mathrm{M}$, and its norm-one set is the pair of parallel lines $q = \pm1$, whose identity component is the shear group $1 + \mathrm{M}$.</p>
+<p>The <strong>group of units</strong> of $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{C}^{\mathrm{dua}})^\times = \mathbb{C}^{\mathrm{dua}} \setminus \mathrm{M}$, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. For commutative $R$ it is the direct product $(\mathbb{C}^{\mathrm{dua}}_R)^\times \cong R^\times \times (R,+)$ via $q + qs\varepsilon \leftrightarrow (q,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm $\langle Q\rangle_{*} = q^2$ is degenerate with radical $\mathrm{M}$, and its norm-one set is the pair of parallel lines $q = \pm1$, whose identity component is the shear group $1 + \mathrm{M}$.</p>
 <p>Multiplication by a unit is a <strong>dilation composed with a shear</strong>: in the basis $(1, \varepsilon)$ the matrix of multiplication by $q + \varepsilon q'$ is $[q + \varepsilon q'] = q(I + (q'/q)E)$ with $E = \begin{pmatrix}0&0\\1&0\end{pmatrix}$ the matrix of multiplication by $\varepsilon$, $E^2 = 0$. The <strong>shear</strong> $S(s) = I + sE$ acts by $q + \varepsilon q' \mapsto q + (q'+s q)\varepsilon$; it fixes $\mathrm{M}$ pointwise, acts as the identity on the quotient, and its orbits are the fibres of the augmentation, with the fibre over the origin fixed.</p>
-<p>The shears form a <strong>one-parameter group</strong> $G = \{S(s)\} \cong (\mathbb{R},+)$ with $S(s)S(t) = S(s+t)$ and generator $E$. The <strong>exponential</strong> is the polynomial map $\exp(s\varepsilon) = 1 + s\varepsilon$, a group isomorphism and homeomorphism onto $G$, inverse to the dual logarithm; on the projective chart $\{q \neq 0\}$ with coordinate $t = q'/q$ the shear is the translation $t \mapsto t+s$, so $G$ is the unipotent one-parameter subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes the class of $\varepsilon$, a transformation with a double fixed point. The parameter is the <strong>parabolic angle</strong>; it is additive, globally defined and without period, and $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1+\mathrm{M} \cong (\mathbb{R},+)$.</p>
-<p>The <strong>Lie algebra</strong> of the shear group is the line $\mathrm{G} = \mathbb{R}E = \mathbb{R}\varepsilon$ inside $\mathbb{D}'$, abelian, with nilpotent generator $E^2 = 0$; the group is unipotent and every element has the single eigenvalue $1$. The <strong>derivations</strong> $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\,\partial^{\mathrm{nil}}$ are spanned by the idempotent $\varepsilon\,\partial(\varepsilon)/\partial\varepsilon = \varepsilon$, which generates the automorphism group $\operatorname{Aut}(\mathbb{D}') \cong \mathbb{R}^\times$ by $\varepsilon \mapsto \exp(t)\varepsilon$; the shear group is not the exponential of the derivations but of the square-zero direction of the algebra. Finally, the <strong>degeneration</strong> at $\varepsilon^2 = 0$ is visible in the contraction $J_\sigma^2 = -\sigma I \to 0$, whose limit sends the elliptic and hyperbolic rotation groups to the shear group, in the collapse of the norm-one set from a circle and a hyperbola to a pair of parallel lines, and in the absence of any compact rotation group or periodic orbit.</p>
+<p>The shears form a <strong>one-parameter group</strong> $G = \{S(s)\} \cong (\mathbb{R},+)$ with $S(s)S(t) = S(s+t)$ and generator $E$. The <strong>exponential</strong> is the polynomial map $\exp(s\varepsilon) = 1 + s\varepsilon$, a group isomorphism and homeomorphism onto $G$, inverse to the dual logarithm; on the projective chart $\{q \neq 0\}$ with coordinate $t = q'/q$ the shear is the translation $t \mapsto t+s$, so $G$ is the unipotent one-parameter subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes the class of $\varepsilon$, a transformation with a double fixed point. The parameter is the <strong>parabolic angle</strong>; it is additive, globally defined and without period, and $(\mathbb{C}^{\mathrm{dua}})^\times/\mathbb{R}^\times \cong 1+\mathrm{M} \cong (\mathbb{R},+)$.</p>
+<p>The <strong>Lie algebra</strong> of the shear group is the line $\mathrm{G} = \mathbb{R}E = \mathbb{R}\varepsilon$ inside $\mathbb{C}^{\mathrm{dua}}$, abelian, with nilpotent generator $E^2 = 0$; the group is unipotent and every element has the single eigenvalue $1$. The <strong>derivations</strong> $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}}) = \mathbb{R}\,\partial^{\mathrm{nil}}$ are spanned by the idempotent $\varepsilon\,\partial(\varepsilon)/\partial\varepsilon = \varepsilon$, which generates the automorphism group $\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}}) \cong \mathbb{R}^\times$ by $\varepsilon \mapsto \exp(t)\varepsilon$; the shear group is not the exponential of the derivations but of the square-zero direction of the algebra. Finally, the <strong>degeneration</strong> at $\varepsilon^2 = 0$ is visible in the contraction $J_\sigma^2 = -\sigma I \to 0$, whose limit sends the elliptic and hyperbolic rotation groups to the shear group, in the collapse of the norm-one set from a circle and a hyperbola to a pair of parallel lines, and in the absence of any compact rotation group or periodic orbit.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -308,11 +308,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
+<td>$\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$</td>
 <td>Dual number algebra, $\varepsilon^2 = 0$</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
 <td>Split complex algebra, unit $j$, $j^2 = +1$</td>
 </tr>
 <tr>
@@ -336,7 +336,7 @@ $$</p>
 <td>Augmentation, kernel $\mathrm{M}$</td>
 </tr>
 <tr>
-<td>$(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$</td>
+<td>$(\mathbb{C}^{\mathrm{dua}})^\times = \mathbb{C}^{\mathrm{dua}} \setminus \mathrm{M}$</td>
 <td>Group of units</td>
 </tr>
 <tr>
@@ -373,10 +373,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\partial^{\mathrm{nil}}(q + \varepsilon q') = \varepsilon q'$, matrix $\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$</td>
-<td>Generator of $\operatorname{Der}(\mathbb{D}')$, idempotent $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$</td>
+<td>Generator of $\operatorname{Der}(\mathbb{C}^{\mathrm{dua}})$, idempotent $(\partial^{\mathrm{nil}})^2 = \partial^{\mathrm{nil}}$</td>
 </tr>
 <tr>
-<td>$\operatorname{Aut}(\mathbb{D}') \cong \mathbb{R}^\times$</td>
+<td>$\operatorname{Aut}(\mathbb{C}^{\mathrm{dua}}) \cong \mathbb{R}^\times$</td>
 <td>Unital automorphisms, $\varepsilon \mapsto c\varepsilon$</td>
 </tr>
 <tr>

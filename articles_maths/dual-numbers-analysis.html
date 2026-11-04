@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces dual numbers analysis as the study of differentiable functions of a dual variable. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The analytic content — topology, limits, continuity, differentiation, integration — is stated over the real numbers, where the Euclidean modulus is available; the purely algebraic statements hold over an arbitrary commutative ring $R$ in which $2$ is invertible, and no finiteness assumption is made unless stated.</p>
-<p>Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and the split complex algebra is denoted $\mathbb{D}$. The unit of $\mathbb{D}'$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
+<p>Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dua}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dua}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
 <h2 id="the-dual-number-plane">The Dual Number Plane</h2>
 <h3 id="points-and-distance">Points and Distance</h3>
 <p>A dual number is written</p>
@@ -84,32 +84,32 @@ $$</p>
 <p>$$
 \|Q\|_E = \sqrt{q^2 + q'^2},
 $$</p>
-<p>which is the ordinary Euclidean norm on the underlying module $\mathbb{D}' \cong R^2$, defined when $R$ is an ordered ring. It is not multiplicative with respect to the dual product.</p>
+<p>which is the ordinary Euclidean norm on the underlying module $\mathbb{C}^{\mathrm{dua}} \cong R^2$, defined when $R$ is an ordered ring. It is not multiplicative with respect to the dual product.</p>
 <p>The <strong>dual distance</strong> between two dual numbers $Q_1$ and $Q_2$ is</p>
 <p>$$
 d(Q_1, Q_2) = \|Q_1 - Q_2\|_E.
 $$</p>
-<p>This makes $\mathbb{D}'$ a metric space when $R = \mathbb{R}$, isometric to $\mathbb{R}^2$. The topology of $\mathbb{D}'$ is the ordinary Euclidean topology of the plane.</p>
+<p>This makes $\mathbb{C}^{\mathrm{dua}}$ a metric space when $R = \mathbb{R}$, isometric to $\mathbb{R}^2$. The topology of $\mathbb{C}^{\mathrm{dua}}$ is the ordinary Euclidean topology of the plane.</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
 <p>The <strong>open ball</strong> of radius $r > 0$ centred at $Q_0$ is</p>
 <p>$$
-B(Q_0, r) = \{Q \in \mathbb{D}' : \|Q - Q_0\|_E < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C}^{\mathrm{dua}} : \|Q - Q_0\|_E < r\}.
 $$</p>
-<p>It is an open disk in the dual plane, exactly as in the complex plane. The topology of $\mathbb{D}'$ is the ordinary Euclidean topology, because the algebra is two-dimensional over $\mathbb{R}$ and the Euclidean norm is a genuine norm on the underlying real vector space.</p>
+<p>It is an open disk in the dual plane, exactly as in the complex plane. The topology of $\mathbb{C}^{\mathrm{dua}}$ is the ordinary Euclidean topology, because the algebra is two-dimensional over $\mathbb{R}$ and the Euclidean norm is a genuine norm on the underlying real vector space.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $\Omega \subseteq \mathbb{D}'$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
-<p>A set $F \subseteq \mathbb{D}'$ is <strong>closed</strong> if its complement $\mathbb{D}' \setminus F$ is open.</p>
+<p>A set $\Omega \subseteq \mathbb{C}^{\mathrm{dua}}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
+<p>A set $F \subseteq \mathbb{C}^{\mathrm{dua}}$ is <strong>closed</strong> if its complement $\mathbb{C}^{\mathrm{dua}} \setminus F$ is open.</p>
 <p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
 <h3 id="connectedness-and-domains">Connectedness and Domains</h3>
-<p>A set $\Omega \subseteq \mathbb{D}'$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{D}'$, connectedness and path-connectedness are equivalent.</p>
-<p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{D}'$. Domains are the natural setting for dual numbers analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.</p>
+<p>A set $\Omega \subseteq \mathbb{C}^{\mathrm{dua}}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{C}^{\mathrm{dua}}$, connectedness and path-connectedness are equivalent.</p>
+<p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{C}^{\mathrm{dua}}$. Domains are the natural setting for dual numbers analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.</p>
 <h3 id="compactness">Compactness</h3>
-<p>A set $K \subseteq \mathbb{D}'$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
-<p><strong>Theorem (Heine–Borel).</strong> A subset of $\mathbb{D}'$ is compact iff it is closed and bounded in the Euclidean norm.</p>
+<p>A set $K \subseteq \mathbb{C}^{\mathrm{dua}}$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
+<p><strong>Theorem (Heine–Borel).</strong> A subset of $\mathbb{C}^{\mathrm{dua}}$ is compact iff it is closed and bounded in the Euclidean norm.</p>
 <p><strong>Theorem.</strong> A continuous dual-valued function on a compact set is bounded and attains its maximum and minimum Euclidean modulus.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
-<p>A sequence $(Q_n)$ of dual numbers <strong>converges</strong> to $L \in \mathbb{D}'$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ of dual numbers <strong>converges</strong> to $L \in \mathbb{C}^{\mathrm{dua}}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
 n \geq N \implies \|Q_n - L\|_E < \epsilon.
 $$</p>
@@ -125,15 +125,15 @@ $$</p>
 <p>$$
 Q_{1,n} + Q_{2,n} \to L_1 + L_2, \qquad Q_{1,n} Q_{2,n} \to L_1 L_2.
 $$</p>
-<p>There is no quotient rule in general, because $\mathbb{D}'$ has zero divisors.</p>
+<p>There is no quotient rule in general, because $\mathbb{C}^{\mathrm{dua}}$ has zero divisors.</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
 <p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
 m, n \geq N \implies \|Q_m - Q_n\|_E < \epsilon.
 $$</p>
-<p><strong>Theorem.</strong> In $\mathbb{D}'$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{D}'$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and infinitesimal parts.</p>
+<p><strong>Theorem.</strong> In $\mathbb{C}^{\mathrm{dua}}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}^{\mathrm{dua}}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and infinitesimal parts.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
-<p>Let $f : D \to \mathbb{D}'$ with $D \subseteq \mathbb{D}'$, and let $Q_0$ be a limit point of $D$. We say</p>
+<p>Let $f : D \to \mathbb{C}^{\mathrm{dua}}$ with $D \subseteq \mathbb{C}^{\mathrm{dua}}$, and let $Q_0$ be a limit point of $D$. We say</p>
 <p>$$
 \lim_{Q \to Q_0} f(Q) = L
 $$</p>
@@ -145,7 +145,7 @@ $$</p>
 <p><strong>Sequential criterion.</strong> $\lim_{Q \to Q_0} f(Q) = L$ iff for every sequence $(Q_n)$ in $D \setminus \{Q_0\}$ with $Q_n \to Q_0$, we have $f(Q_n) \to L$.</p>
 <p><strong>Algebra of limits.</strong> Sums and products of limits are the limits of the sums and products.</p>
 <h3 id="continuity">Continuity</h3>
-<p>A function $f : D \to \mathbb{D}'$ is <strong>continuous at</strong> $Q_0 \in D$ if</p>
+<p>A function $f : D \to \mathbb{C}^{\mathrm{dua}}$ is <strong>continuous at</strong> $Q_0 \in D$ if</p>
 <p>$$
 \lim_{Q \to Q_0} f(Q) = f(Q_0).
 $$</p>
@@ -158,19 +158,19 @@ $$</p>
 <p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
 <p><strong>Componentwise continuity.</strong> Write $f(Q) = u(q, q') + v(q, q') \varepsilon$. Then $f$ is continuous at $Q_0 = q_0 + \varepsilon q'_0$ iff $u$ and $v$ are continuous at $(q_0, q'_0)$. This reduces dual continuity to real continuity of two functions of two variables.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
-<p>A function $f : D \to \mathbb{D}'$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{C}^{\mathrm{dua}}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
 Q_1, Q_2 \in D, \; \|Q_1 - Q_2\|_E < \delta \implies \|f(Q_1) - f(Q_2)\|_E < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="dual-differentiability">Dual Differentiability</h2>
 <h3 id="the-derivative">The Derivative</h3>
-<p>Let $f : \Omega \to \mathbb{D}'$ with $\Omega$ open, and let $Q_0 \in \Omega$. The <strong>derivative</strong> of $f$ at $Q_0$ is</p>
+<p>Let $f : \Omega \to \mathbb{C}^{\mathrm{dua}}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The <strong>derivative</strong> of $f$ at $Q_0$ is</p>
 <p>$$
 \frac{df}{dQ}(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
 $$</p>
 <p>provided the limit exists. If it does, $f$ is <strong>dual differentiable</strong> at $Q_0$, or <strong>holomorphic</strong> at $Q_0$ in the dual sense.</p>
-<p>The limit is taken in the dual plane, so $h$ can approach $0$ from any direction. But because $\mathbb{D}'$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.</p>
+<p>The limit is taken in the dual plane, so $h$ can approach $0$ from any direction. But because $\mathbb{C}^{\mathrm{dua}}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.</p>
 <p><strong>Theorem.</strong> Dual differentiability implies continuity. The converse fails.</p>
 <h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
 <p>Write $f(Q) = u(q, q') + v(q, q') \varepsilon$, where $Q = q + \varepsilon q'$ and $u, v : \Omega \to R$.</p>
@@ -213,7 +213,7 @@ $$</p>
 $$</p>
 <h2 id="the-infinitesimal-direction">The Infinitesimal Direction</h2>
 <h3 id="the-maximal-ideal">The Maximal Ideal</h3>
-<p>The <strong>maximal ideal</strong> of $\mathbb{D}'$ is</p>
+<p>The <strong>maximal ideal</strong> of $\mathbb{C}^{\mathrm{dua}}$ is</p>
 <p>$$
 \mathrm{M} = (\varepsilon) = \{\varepsilon q' : q' \in R\}.
 $$</p>
@@ -225,18 +225,18 @@ $$</p>
 <h3 id="the-infinitesimal-part">The Infinitesimal Part</h3>
 <p>The <strong>infinitesimal part</strong> of a dual number $Q = q + \varepsilon q'$ is the component $\varepsilon q'$ in the maximal ideal. The projection</p>
 <p>$$
-\pi : \mathbb{D}' \to R, \qquad \pi(q + \varepsilon q') = q,
+\pi : \mathbb{C}^{\mathrm{dua}} \to R, \qquad \pi(q + \varepsilon q') = q,
 $$</p>
-<p>is the <strong>augmentation map</strong>, and its kernel is the maximal ideal. The augmentation is a ring homomorphism, and it is the unique one from $\mathbb{D}'$ to $R$.</p>
+<p>is the <strong>augmentation map</strong>, and its kernel is the maximal ideal. The augmentation is a ring homomorphism, and it is the unique one from $\mathbb{C}^{\mathrm{dua}}$ to $R$.</p>
 <h3 id="the-infinitesimal-translation">The Infinitesimal Translation</h3>
 <p>For $h \in \mathrm{M}$, the map</p>
 <p>$$
-T_h : \mathbb{D}' \to \mathbb{D}', \qquad T_h(Q) = Q + h,
+T_h : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}, \qquad T_h(Q) = Q + h,
 $$</p>
-<p>is the <strong>infinitesimal translation</strong> by $h$. It is a bijection of $\mathbb{D}'$ onto itself, and it preserves differences: $T_h(Q_1) - T_h(Q_2) = Q_1 - Q_2$. The infinitesimal translations form a group isomorphic to the additive group of the maximal ideal.</p>
+<p>is the <strong>infinitesimal translation</strong> by $h$. It is a bijection of $\mathbb{C}^{\mathrm{dua}}$ onto itself, and it preserves differences: $T_h(Q_1) - T_h(Q_2) = Q_1 - Q_2$. The infinitesimal translations form a group isomorphic to the additive group of the maximal ideal.</p>
 <h2 id="integration">Integration</h2>
 <h3 id="contour-integrals">Contour Integrals</h3>
-<p>Let $\gamma : [a, b] \to \mathbb{D}'$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
+<p>Let $\gamma : [a, b] \to \mathbb{C}^{\mathrm{dua}}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
 <p>$$
 \int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \frac{d\gamma}{dt} \, dt.
 $$</p>
@@ -264,7 +264,7 @@ $$</p>
 <h3 id="definition">Definition</h3>
 <p>A <strong>power series</strong> centred at $Q_0$ is</p>
 <p>$$
-\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{D}'.
+\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{C}^{\mathrm{dua}}.
 $$</p>
 <p>The <strong>radius of convergence</strong> is</p>
 <p>$$
@@ -375,7 +375,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D}'$</td>
+<td>$\mathbb{C}^{\mathrm{dua}}$</td>
 <td>Dual number algebra</td>
 </tr>
 <tr>
@@ -415,7 +415,7 @@ $$</p>
 <td>Maximal ideal</td>
 </tr>
 <tr>
-<td>$\pi : \mathbb{D}' \to R$</td>
+<td>$\pi : \mathbb{C}^{\mathrm{dua}} \to R$</td>
 <td>Augmentation map</td>
 </tr>
 <tr>

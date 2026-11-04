@@ -101,7 +101,7 @@ $$</p>
 <p>is the swap, $J^{2}=I_2$, of eigenvalues $+1$ and $-1$ and of determinant $-1$. It is the model's name for $j$, and the identity $J^{2}=I_2$ is the matrix form of $j^{2}=1$. Its two eigenlines are the diagonal and the anti-diagonal, which are the <strong>two null directions</strong>: the eigenvectors of $J$ are $v_+=(1,1)$ and $v_-=(1,-1)$, and they are exactly the null vectors of the split form, and exactly the coordinate lines of the Peirce frame. This coincidence is the content of the whole article, and it is the reason the split model is diagonalised by a single matrix whereas the complex model needs a complex change of basis.</p>
 <p><strong>The image.</strong> The image is</p>
 <p>$$
-M_2(\mathbb{D})=\left\{\begin{pmatrix}q&q'\\ q'&q\end{pmatrix}:q,q'\in\mathbb{R}\right\}=\mathbb{R}[J],
+M_2(\mathbb{C}^{\mathrm{spl}})=\left\{\begin{pmatrix}q&q'\\ q'&q\end{pmatrix}:q,q'\in\mathbb{R}\right\}=\mathbb{R}[J],
 $$</p>
 <p>of dimension two, commutative, with $I_2$ and $J^{2}=I_2$; it is $\mathbb{R}[x]/(x^{2}-1)\cong\mathbb{R}\times\mathbb{R}$. So the image is a <strong>split semisimple</strong> algebra: it is a product of two copies of $\mathbb{R}$, not a field, and the two factors are the two idempotents. This is the first place where the series produces an algebra with a nontrivial Peirce frame at the smallest possible size.</p>
 <p><strong>Theorem (the image is the centraliser of $J$).</strong> For $C=\begin{pmatrix}p&n\\ s&t\end{pmatrix}$,</p>
@@ -130,7 +130,7 @@ $$</p>
 <li>The matrix $H$ is <strong>orthogonal</strong>, hence an isometry of the Euclidean plane, and it is <strong>not</strong> in the image: its diagonal entries are $\pm1/\sqrt2$, unequal. So the Peirce frame is not reached by a conformal map of the split form; it is reached by a Euclidean reflection. The reflection axis is the line at $\pi/8$, half of the quarter turn between the frame and the null lines. That is the only place in the category where a half angle appears, and it is an angle of the plane and not a weight of a representation.</li>
 </ul>
 <p><strong>The two readings of the frame.</strong> The basis $(1,j)$ is the <strong>element frame</strong>: its coordinates are the coefficients of $Q$, and the matrix in it is the Cayley matrix. The basis $(\Pi_+,\Pi_-)$ is the <strong>spectral frame</strong>: its coordinates are the idempotent coordinates $\lambda_\pm$, and the matrix in it is diagonal. The first frame is the same for every element, and so is the second: the algebra is commutative, so the two frames do not depend on $Q$. This is the sharpest operational difference from the matrix algebras of the block, where the spectral frame moves with the element.</p>
-<p><strong>The complexified model of size four, as a closing subsection.</strong> Extending scalars to $\mathbb{C}$ gives $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}[j]/(j^{2}-1)\cong\mathbb{C}\times\mathbb{C}$, of real dimension four, and its real regular representation in the basis $1,i,j,ij$ is</p>
+<p><strong>The complexified model of size four, as a closing subsection.</strong> Extending scalars to $\mathbb{C}$ gives $\mathbb{C}^{\mathrm{spl}}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}^{\mathrm{spl}}\cong\mathbb{C}[j]/(j^{2}-1)\cong\mathbb{C}\times\mathbb{C}$, of real dimension four, and its real regular representation in the basis $1,i,j,ij$ is</p>
 <p>$$
 \mathsf{M}_4(X)=\begin{pmatrix}a&-b&c&-d\\ b&a&d&c\\ c&-d&a&-b\\ d&c&b&a\end{pmatrix},\qquad X=q+jq',\quad q=a+ib,\quad q'=c+id,
 $$</p>
@@ -138,7 +138,7 @@ $$</p>
 <p>$$
 \operatorname{tr}\mathsf{M}_4(X)=4a,\qquad \det\mathsf{M}_4(X)=\lvert q^{2}-q'^{2}\rvert^{2}=\lvert\lambda_+\lambda_-\rvert^{2},
 $$</p>
-<p>and the four real eigenvalues $\lambda_+,\overline{\lambda_+},\lambda_-,\overline{\lambda_-}$. This is <strong>not a second model of $\mathbb{D}$</strong>: it is the regular representation of the complexification, which is the reduced biquaternion algebra $\mathbb{C}\times\mathbb{C}$, and the $2\times2$ model of this article is the model of $\mathbb{D}$ itself. It is recorded here as a section because the determinant is a square, $N_{\mathbb{C}}^{2}$, exactly as in the quaternion regular model, and because it shows the pattern of the series: realifications square the determinant and double the size.</p>
+<p>and the four real eigenvalues $\lambda_+,\overline{\lambda_+},\lambda_-,\overline{\lambda_-}$. This is <strong>not a second model of $\mathbb{C}^{\mathrm{spl}}$</strong>: it is the regular representation of the complexification, which is the reduced biquaternion algebra $\mathbb{C}\times\mathbb{C}$, and the $2\times2$ model of this article is the model of $\mathbb{C}^{\mathrm{spl}}$ itself. It is recorded here as a section because the determinant is a square, $N_{\mathbb{C}}^{2}$, exactly as in the quaternion regular model, and because it shows the pattern of the series: realifications square the determinant and double the size.</p>
 <h2 id="the-left-and-the-right-matrices">The Left and the Right Matrices</h2>
 <p><strong>The two families coincide.</strong> The algebra is commutative, so</p>
 <p>$$
@@ -147,7 +147,7 @@ $$</p>
 <p>and there is one copy of the algebra in the ambient, of dimension two.</p>
 <p><strong>The double centraliser, in its degenerate form.</strong> By the centraliser theorem the centraliser of the image is the image, so</p>
 <p>$$
-C\bigl(\mathsf{M}_2(\mathbb{D})\bigr)=\mathsf{M}_2(\mathbb{D}),
+C\bigl(\mathsf{M}_2(\mathbb{C}^{\mathrm{spl}})\bigr)=\mathsf{M}_2(\mathbb{C}^{\mathrm{spl}}),
 $$</p>
 <p>and the image is a <strong>maximal commutative subalgebra</strong> of $M_2(\mathbb{R})$: no larger commutative subalgebra contains it, because anything commuting with it is already in it. So the algebra, its centraliser and its bicommutant are one subspace of dimension two, and the double centraliser theorem holds with all three terms equal.</p>
 <p><strong>Why the collapse.</strong> The map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{R}}(A)$, $(a,b)\mapsto L_aR_b$, has for its image the two-sided family and for its domain a space of dimension four. Here the map factors through the multiplication $A\otimes A\to A$ because the algebra is commutative, so its image is the product of the family with itself, which is the family: dimension two, not four. The general theorem — the map is an isomorphism exactly when $A$ is central simple — fails here at the first hypothesis, since $\mathbb{R}\times\mathbb{R}$ is commutative and therefore has a nontrivial centre. The operator article draws the consequence.</p>
@@ -190,7 +190,7 @@ $$</p>
 <p><strong>Proof.</strong> Both diagonal entries are $q$.</p>
 <p><strong>The scalar part.</strong> It is recovered as $\tfrac12\operatorname{tr}$, and</p>
 <p>$$
-\operatorname{tr}\mathsf{M}_2(Q)=0\iff Q\in j\mathbb{R}_{\mathbb{D}},
+\operatorname{tr}\mathsf{M}_2(Q)=0\iff Q\in j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}},
 $$</p>
 <p>so the trace projects onto the real line and its kernel is the $j$-line. In the spectral frame the trace is the sum of the two eigenvalues, which is the general statement; in the complex case the same formula held, with complex eigenvalues.</p>
 <p><strong>The trace form.</strong> With $P=p+jp'$,</p>
@@ -217,7 +217,7 @@ $$</p>
 <td>Minkowski, $(1,1)$</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
 <td>Minkowski, $(1,1)$</td>
 <td>Euclidean, $(2,0)$</td>
 </tr>
@@ -273,7 +273,7 @@ $$</p>
 <p>the two null directions, orthonormal for the Euclidean trace form and both null for the split form. The diagonalising matrix has them for columns, and it is $H$.</p>
 <p><strong>The two spinor lines.</strong> The two eigenspaces are the two minimal ideals</p>
 <p>$$
-S_+=\mathbb{D}\Pi_+=\mathbb{R}\Pi_+,\qquad S_-=\mathbb{D}\Pi_-=\mathbb{R}\Pi_-,\qquad \mathbb{D}=S_+\oplus S_-\cong\mathbb{R}\oplus\mathbb{R},
+S_+=\mathbb{C}^{\mathrm{spl}}\Pi_+=\mathbb{R}\Pi_+,\qquad S_-=\mathbb{C}^{\mathrm{spl}}\Pi_-=\mathbb{R}\Pi_-,\qquad \mathbb{C}^{\mathrm{spl}}=S_+\oplus S_-\cong\mathbb{R}\oplus\mathbb{R},
 $$</p>
 <p>each of dimension one, and the algebra is the direct sum of them. In the model they are the two coordinate axes of the spectral frame, and they are also the two null lines of the split form. So the algebraic decomposition and the geometric null structure are the same pair of lines, which is the identity that the whole split-complex story rests on.</p>
 <h2 id="the-adjugate-and-the-inverse">The Adjugate and the Inverse</h2>
@@ -297,11 +297,11 @@ $$</p>
 $$</p>
 <p><strong>The reading.</strong> Every matrix of the image is <strong>conformal for the split form</strong>, with conformal factor the norm. It is the exact analogue of the complex identity $M^{\mathsf T}M=NI_2$, and it is the statement that the image lies in the conformal group of the Minkowski plane:</p>
 <p>$$
-\mathsf{M}_2(\mathbb{D}^{\times})\subset CO(1,1),\qquad \mathsf{M}_2(\{Q:\langle Q\rangle_{*}=\pm1\})=O(1,1).
+\mathsf{M}_2({\mathbb{C}^{\mathrm{spl}}}^{\times})\subset CO(1,1),\qquad \mathsf{M}_2(\{Q:\langle Q\rangle_{*}=\pm1\})=O(1,1).
 $$</p>
 <p><strong>The four components.</strong> The unit group is</p>
 <p>$$
-\mathbb{D}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
+{\mathbb{C}^{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
 $$</p>
 <p>with components labelled by the pair of signs of the two idempotent coordinates $(\operatorname{sgn}\lambda_+,\operatorname{sgn}\lambda_-)$; in the matrix picture they are the four components of $O(1,1)$, distinguished by the sign of the determinant and by the timelike or spacelike nature of the two columns. The identity component is</p>
 <p>$$
@@ -369,13 +369,13 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>real line $\mathbb{R}_{\mathbb{D}}$</td>
+<td>real line $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$</td>
 <td>$q'=0$</td>
 <td>$qI_2$, scalar</td>
 <td>$1$</td>
 </tr>
 <tr>
-<td>$j$-line $j\mathbb{R}_{\mathbb{D}}$</td>
+<td>$j$-line $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$</td>
 <td>$q=0$</td>
 <td>$q'J$, the swap</td>
 <td>$1$</td>
@@ -418,18 +418,18 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The count.</strong> The involution group of $\mathbb{D}$ has two elements, so it produces the pair of subspaces $\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$, of dimensions one each; but the algebra also carries two <strong>idempotent lines</strong> and two <strong>null lines</strong>, which the complex algebra does not have at all. So the distinguished-subspace count is four rather than two, and the two extra subspaces are the ones the Peirce frame creates. Against the six of the biquaternion algebra the count is still smaller, but the structure is no longer trivial.</p>
+<p><strong>The count.</strong> The involution group of $\mathbb{C}^{\mathrm{spl}}$ has two elements, so it produces the pair of subspaces $\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$, of dimensions one each; but the algebra also carries two <strong>idempotent lines</strong> and two <strong>null lines</strong>, which the complex algebra does not have at all. So the distinguished-subspace count is four rather than two, and the two extra subspaces are the ones the Peirce frame creates. Against the six of the biquaternion algebra the count is still smaller, but the structure is no longer trivial.</p>
 <p><strong>The image inside the symmetric matrices.</strong> The image is a two-dimensional subspace of the three-dimensional space of symmetric matrices; the missing direction is the traceless diagonal line</p>
 <p>$$
 \left\{\begin{pmatrix}a&0\\ 0&-a\end{pmatrix}:a\in\mathbb{R}\right\}=\mathbb{R}\,g,
 $$</p>
 <p>spanned by the split form. So</p>
 <p>$$
-\operatorname{sym}_2(\mathbb{R})=M_2(\mathbb{D})\oplus\mathbb{R}g,
+\operatorname{sym}_2(\mathbb{R})=M_2(\mathbb{C}^{\mathrm{spl}})\oplus\mathbb{R}g,
 $$</p>
 <p>and the complement is exactly the matrix of the norm. The ambient then splits as</p>
 <p>$$
-M_2(\mathbb{R})=\underbrace{M_2(\mathbb{D})}_{\text{hyperbolic, dim }2}\oplus\underbrace{\mathbb{R}g}_{\text{traceless diagonal}}\oplus\underbrace{\mathfrak{so}(2)}_{\text{skew, dim }1},
+M_2(\mathbb{R})=\underbrace{M_2(\mathbb{C}^{\mathrm{spl}})}_{\text{hyperbolic, dim }2}\oplus\underbrace{\mathbb{R}g}_{\text{traceless diagonal}}\oplus\underbrace{\mathfrak{so}(2)}_{\text{skew, dim }1},
 $$</p>
 <p>of dimensions $2+1+1$, and the three summands are the conformal part, the norm and the rotation. In the complex model the corresponding split was conformal plus anti-conformal; here there is a third piece, and it is the one that carries the sign of the determinant.</p>
 <p><strong>The units.</strong> The level set $\langle Q\rangle_{*}=\pm1$ is the hyperbola pair, of dimension one, and its image is $O(1,1)$; the level set $\langle Q\rangle_{*}=1$ has two components, the future and past branches, and its identity component is the boost group. The model realises $O(1,1)$ as an equality of matrix sets, exactly as the complex model realised $SO(2)$, and the difference of topology — one component against four — is the difference of signature.</p>
@@ -459,7 +459,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathsf{M}_2$</td>
-<td>the hyperbolic Cayley map $\mathbb{D}\to M_2(\mathbb{R})$</td>
+<td>the hyperbolic Cayley map $\mathbb{C}^{\mathrm{spl}}\to M_2(\mathbb{R})$</td>
 <td>this article</td>
 </tr>
 <tr>

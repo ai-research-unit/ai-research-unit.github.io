@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="worked-examples-in-the-split-quaternion-algebra"><strong>Worked Examples in the Split-Quaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article collects explicit computations in the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, in the order in which the theory is built: the basis products; the three involutions and their eigenspaces; the idempotents and the two minimal left ideals; explicit pairs of zero divisors; and the unit criterion. Every number below is computed from the multiplication table of <em>Split-Quaternion Algebra</em>.</p>
+<p>This article collects explicit computations in the split-quaternion algebra $\mathbb{H}^{\mathrm{spl}}$, in the order in which the theory is built: the basis products; the three involutions and their eigenspaces; the idempotents and the two minimal left ideals; explicit pairs of zero divisors; and the unit criterion. Every number below is computed from the multiplication table of <em>Split-Quaternion Algebra</em>.</p>
 <p>The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of <em>Split-Quaternion Algebra</em>, <em>Split-Quaternion Idempotents and Projections</em>, <em>Split-Quaternion Zero Divisors</em>, <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
 <h2 id="the-basis-products">The Basis Products</h2>
 <p>The multiplication table, whose entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$, is</p>
@@ -188,7 +188,7 @@ $$</p>
 </table></div>
 <p><strong>Example (the common eigenspaces).</strong> Since $\alpha$ and $\rho$ commute, they are simultaneously diagonalisable, and the common eigenspaces of the pair $(\alpha, \rho)$ are</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x, \vec e_y\} \oplus \mathbb{R} \vec e_z,
+\mathbb{H}^{\mathrm{spl}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x, \vec e_y\} \oplus \mathbb{R} \vec e_z,
 $$</p>
 <p>on which the sign pair $(\alpha, \rho)$ is $(+,+)$, $(-,+)$ and $(+,-)$ respectively. The plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ is not split further: on it the conjugation also acts as $-1$, so no eigenspace of any of the three involutions cuts it. This is the finest decomposition produced by the involutions, and it is recorded in <em>Split-Quaternion Subspaces and the Involutions</em>.</p>
 <h2 id="the-idempotents-and-the-two-minimal-left-ideals">The Idempotents and the Two Minimal Left Ideals</h2>
@@ -205,13 +205,13 @@ $$</p>
 <p>They are not central, since $\vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z)$ while $\tilde\pi_1 \vec e_x = \tfrac{1}{2}(\vec e_x - \vec e_z)$.</p>
 <p><strong>Example (the two minimal left ideals).</strong> The reductions $\vec e_y \tilde\pi_1 = \tilde\pi_1$ and $\vec e_z \tilde\pi_1 = \tfrac{1}{2}(\vec e_z + \vec e_x) = \vec e_x \tilde\pi_1$ give</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + \vec e_y),\, \tfrac{1}{2}(\vec e_x + \vec e_z)\big\},
+\mathbb{H}^{\mathrm{spl}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + \vec e_y),\, \tfrac{1}{2}(\vec e_x + \vec e_z)\big\},
 $$</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - \vec e_y),\, \tfrac{1}{2}(\vec e_x - \vec e_z)\big\},
+\mathbb{H}^{\mathrm{spl}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - \vec e_y),\, \tfrac{1}{2}(\vec e_x - \vec e_z)\big\},
 $$</p>
-<p>each of real dimension $2$, with $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$. The four spanning elements are the vectors $\tilde\pi_1$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$, $\tilde\pi_2$, $-\tilde q = \tfrac{1}{2}(\vec e_x-\vec e_z)$ of the matrix-unit basis $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ of <em>Split-Quaternion Ideals and Peirce Decomposition</em>.</p>
-<p><strong>Example (the split-complex subalgebra).</strong> The idempotents lie in the subalgebra $\operatorname{span}\{1, \vec e_y\} \cong \mathbb{D}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{s}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$.</p>
+<p>each of real dimension $2$, with $\mathbb{H}^{\mathrm{spl}} = \mathbb{H}^{\mathrm{spl}} \tilde\pi_1 \oplus \mathbb{H}^{\mathrm{spl}} \tilde\pi_2$. The four spanning elements are the vectors $\tilde\pi_1$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$, $\tilde\pi_2$, $-\tilde q = \tfrac{1}{2}(\vec e_x-\vec e_z)$ of the matrix-unit basis $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ of <em>Split-Quaternion Ideals and Peirce Decomposition</em>.</p>
+<p><strong>Example (the split-complex subalgebra).</strong> The idempotents lie in the subalgebra $\operatorname{span}\{1, \vec e_y\} \cong \mathbb{C}^{\mathrm{spl}}$, and in that commutative algebra they are central; in $\mathbb{H}^{\mathrm{spl}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$.</p>
 <h2 id="explicit-zero-divisor-pairs">Explicit Zero-Divisor Pairs</h2>
 <p><strong>Example (two split-complex pairs).</strong> Let $\lambda, \mu$ be real. Then</p>
 <p>$$
@@ -246,7 +246,7 @@ $$</p>
 <p>The action of a unit on the vector subspace by conjugation, the elliptic and hyperbolic one-parameter subgroups it produces, and the classification of the vectors of $V$ by their orbits, use the multiplication table above and nothing else; they are computations of the Geometry group and are carried out in <em>Split-Quaternion Rotations and the Lorentz Group</em>. They are not repeated here, and the multiplication table of §<em>The Basis Products</em> is what they consume.</p>
 <h2 id="summary">Summary</h2>
 <p>The basis products are collected in one table, and the multiplication table determines the algebra. The three involutions — conjugation, the principal involution $\alpha$ and the reversal $\rho$ — are diagonalisable; their individual eigenspaces and their common refinement $\mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$ are listed, and the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ does not split further.</p>
-<p>The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2} = \operatorname{span}\{\tilde\pi_{1,2}, \vec e_x \tilde\pi_{1,2}\}$. Explicit zero-divisor pairs are $(1+\vec e_y)(1-\vec e_y) = 0$, $(1+\vec e_z)(1-\vec e_z) = 0$, the nilpotent $(\vec e_x+\vec e_z)^2 = 0$, and the mixed pair $(1+\vec e_y)\tilde\pi_2 = 0$. The unit criterion is carried through on four elements: $2+\vec e_x$ (positive norm), $1+\vec e_x+\vec e_y$ (norm one), $\vec e_y$ (negative norm), and the non-unit $1+\vec e_z$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
+<p>The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2} = \operatorname{span}\{\tilde\pi_{1,2}, \vec e_x \tilde\pi_{1,2}\}$. Explicit zero-divisor pairs are $(1+\vec e_y)(1-\vec e_y) = 0$, $(1+\vec e_z)(1-\vec e_z) = 0$, the nilpotent $(\vec e_x+\vec e_z)^2 = 0$, and the mixed pair $(1+\vec e_y)\tilde\pi_2 = 0$. The unit criterion is carried through on four elements: $2+\vec e_x$ (positive norm), $1+\vec e_x+\vec e_y$ (norm one), $\vec e_y$ (negative norm), and the non-unit $1+\vec e_z$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -258,7 +258,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>$\mathbb{H}^{\mathrm{spl}}$</td>
 <td>the split-quaternion algebra</td>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>
@@ -278,7 +278,7 @@ $$</p>
 <td><em>Split-Quaternion Idempotents and Projections</em></td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$</td>
+<td>$\mathbb{H}^{\mathrm{spl}} \tilde\pi_{1,2}$</td>
 <td>the two minimal left ideals</td>
 <td><em>Split-Quaternion Idempotents and Projections</em></td>
 </tr>

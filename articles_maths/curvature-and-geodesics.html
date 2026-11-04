@@ -222,10 +222,10 @@ $$</p>
 <p>The sphere is compact, its diameter is $\pi r$, and every pair of geodesics meets, so there are no parallel lines: the elliptic geometry is the one in which the parallel postulate fails in the direction of no parallels. In dimension two it is the geometry of the algebra $\mathbb{C}$ with $\omega^2 = -1$, whose rotation group $SO(2)$ is the elliptic rotation group.</p>
 <h3 id="the-euclidean-model">The Euclidean Model</h3>
 <p><strong>Definition.</strong> Euclidean space $\mathbb{R}^n$ with the standard metric has $K = 0$ on every plane, its geodesics are the straight lines, and its isometry group is the Euclidean group $E(n) = \mathbb{R}^n \rtimes O(n)$ acting transitively.</p>
-<p>It is the geometry in which the parallel postulate holds: through each point outside a given line there is exactly one line not meeting it, and the angle sum of a triangle is $\pi$. In dimension two it is the geometry of the algebra $\mathbb{D}'$ with $\omega^2 = 0$, whose rotation group is the transvection group, the parabolic rotation group.</p>
+<p>It is the geometry in which the parallel postulate holds: through each point outside a given line there is exactly one line not meeting it, and the angle sum of a triangle is $\pi$. In dimension two it is the geometry of the algebra $\mathbb{C}^{\mathrm{dua}}$ with $\omega^2 = 0$, whose rotation group is the transvection group, the parabolic rotation group.</p>
 <h3 id="the-hyperbolic-model">The Hyperbolic Model</h3>
 <p><strong>Definition.</strong> <strong>Hyperbolic space</strong> $\mathbb{H}^n_r$ is the complete simply connected Riemannian manifold of constant sectional curvature $-1/r^2$; a concrete model is the upper half-space with the metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$, whose geodesics are the vertical lines and the semicircles orthogonal to the boundary.</p>
-<p>Hyperbolic space is non-compact, its geodesics diverge exponentially, and through each point outside a given geodesic there are infinitely many geodesics not meeting it: the parallel postulate fails in the direction of too many parallels, and the angle sum of a triangle is less than $\pi$. In dimension two it is the geometry of the algebra $\mathbb{D}$ with $\omega^2 = +1$, whose identity component of the rotation group is $SO(1,1)_0$, the hyperbolic rotation group. The metric is developed.</p>
+<p>Hyperbolic space is non-compact, its geodesics diverge exponentially, and through each point outside a given geodesic there are infinitely many geodesics not meeting it: the parallel postulate fails in the direction of too many parallels, and the angle sum of a triangle is less than $\pi$. In dimension two it is the geometry of the algebra $\mathbb{C}^{\mathrm{spl}}$ with $\omega^2 = +1$, whose identity component of the rotation group is $SO(1,1)_0$, the hyperbolic rotation group. The metric is developed.</p>
 <h3 id="the-comparison-table">The Comparison Table</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -256,7 +256,7 @@ $$</p>
 <td>exactly one parallel</td>
 <td>$= \pi$</td>
 <td>$\mathbb{R}^n \rtimes O(n)$</td>
-<td>$\mathbb{D}'$</td>
+<td>$\mathbb{C}^{\mathrm{dua}}$</td>
 </tr>
 <tr>
 <td>Hyperbolic $\mathbb{H}^n_r$</td>
@@ -265,7 +265,7 @@ $$</p>
 <td>infinitely many parallels</td>
 <td>$< \pi$</td>
 <td>$O(n,1)$</td>
-<td>$\mathbb{D}$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -291,7 +291,7 @@ $$</p>
 <p>On a Riemannian manifold the metric defines a length for each curve and a distance for each pair of points, whose topology is the topology of the manifold. The fundamental theorem of Riemannian geometry gives a unique metric and torsion-free connection, the Levi-Civita connection, determined by the Koszul formula and read in a chart from the Christoffel symbols. The connection defines parallel transport, an isometry of tangent spaces along each curve, whose path-dependence is the curvature; the holonomy group consists of the transports around loops and its Lie algebra is spanned by the curvature.</p>
 <p>A geodesic is a curve whose velocity is parallel along itself; it satisfies the second-order geodesic equation, and it is exactly the locally length-minimising curve. The metric exponential map sends a tangent vector to the endpoint of the geodesic it generates, and it is a local diffeomorphism whose derivative at the origin is the identity; the Gauss lemma makes the radial geodesics orthogonal to the geodesic spheres. Normal coordinates make the metric Euclidean to first order at a point, with the curvature appearing in the second order. The metric exponential agrees with the Lie-algebra exponential exactly for a bi-invariant metric; the general relation is the Euler–Arnold equation.</p>
 <p>The curvature tensor has the algebraic symmetries of a curvature form and satisfies the first and second Bianchi identities. The sectional curvature of a plane is the Gaussian curvature of the surface it sweeps out and measures the convergence or divergence of geodesics in that plane; the Ricci tensor is its average over the directions orthogonal to a given vector and controls the growth of the volume element; the scalar curvature is the trace of the Ricci tensor and is the weakest of the three. The contraction of the second Bianchi identity says that the Einstein tensor $\operatorname{Ric} - \frac{1}{2}Sg$ has vanishing divergence.</p>
-<p>The complete simply connected manifolds of constant curvature are the round sphere ($K = 1/r^2$), Euclidean space ($K = 0$) and hyperbolic space ($K = -1/r^2$), the three model geometries whose two-dimensional cases are the geometries of the algebras $\mathbb{C}$, $\mathbb{D}'$ and $\mathbb{D}$. The Gauss–Bonnet theorem integrates the curvature of a compact oriented surface to $2\pi$ times its Euler characteristic and, in its generalised form, identifies the integral of the Pfaffian of the curvature form with the Euler characteristic in every even dimension; it is the first instance of the principle that an integral of curvature is a topological invariant, and it shows that the topology constrains, while the metric realises, the geometry.</p>
+<p>The complete simply connected manifolds of constant curvature are the round sphere ($K = 1/r^2$), Euclidean space ($K = 0$) and hyperbolic space ($K = -1/r^2$), the three model geometries whose two-dimensional cases are the geometries of the algebras $\mathbb{C}$, $\mathbb{C}^{\mathrm{dua}}$ and $\mathbb{C}^{\mathrm{spl}}$. The Gauss–Bonnet theorem integrates the curvature of a compact oriented surface to $2\pi$ times its Euler characteristic and, in its generalised form, identifies the integral of the Pfaffian of the curvature form with the Euler characteristic in every even dimension; it is the first instance of the principle that an integral of curvature is a topological invariant, and it shows that the topology constrains, while the metric realises, the geometry.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

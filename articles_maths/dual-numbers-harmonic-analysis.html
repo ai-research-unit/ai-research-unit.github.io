@@ -71,13 +71,13 @@
         <h1 id="dual-numbers-harmonic-analysis"><strong>Dual-Numbers Harmonic Analysis</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces harmonic analysis on the dual plane as the study of the Fourier transform, convolution, and the function spaces on which they act, with the nilpotent structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The analytic content is stated on the dual plane over $\mathbb{R}$, the locally compact abelian group $\mathbb{D}' \cong \mathbb{R}^2$ underlying every transform below.</p>
-<p>Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and the split complex algebra is denoted $\mathbb{D}$. The unit of $\mathbb{D}'$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The analytic content is stated on the dual plane over $\mathbb{R}$, the locally compact abelian group $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}^2$ underlying every transform below.</p>
+<p>Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dua}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dua}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
 <h2 id="the-dual-plane-as-a-locally-compact-abelian-group">The Dual Plane as a Locally Compact Abelian Group</h2>
 <h3 id="additive-structure">Additive Structure</h3>
-<p>The dual plane $\mathbb{D}'$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:</p>
+<p>The dual plane $\mathbb{C}^{\mathrm{dua}}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{C}^{\mathrm{dua}}$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:</p>
 <p>$$
-\chi_\xi(Q) = \exp(2\pi i \langle \xi, Q \rangle), \qquad \xi \in \mathbb{D}',
+\chi_\xi(Q) = \exp(2\pi i \langle \xi, Q \rangle), \qquad \xi \in \mathbb{C}^{\mathrm{dua}},
 $$</p>
 <p>where the exponential is the ordinary complex exponential, and the pairing is</p>
 <p>$$
@@ -86,25 +86,25 @@ $$</p>
 <p>The pairing is the ordinary Euclidean pairing on $\mathbb{R}^2$: it pairs the real coordinate $u$ with $q$ and the infinitesimal coefficient $v$ with $q'$. It is <strong>not</strong> $\operatorname{Re}(\bar{\xi} Q)$: for dual numbers $\operatorname{Re}(\bar{\xi} Q) = u q$, because the term $-v q'\,\varepsilon^2$ vanishes since $\varepsilon^2 = 0$. The dual conjugation acts as the identity on the real part and negates the infinitesimal part, and it cannot supply the pairing of the two real coordinates that the additive characters require.</p>
 <p>So at the level of the additive group, dual harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a degenerate pairing.</p>
 <h3 id="the-dual-characters">The Dual Characters</h3>
-<p>The <strong>dual characters</strong> are the homomorphisms into the multiplicative monoid of $\mathbb{D}'$:</p>
+<p>The <strong>dual characters</strong> are the homomorphisms into the multiplicative monoid of $\mathbb{C}^{\mathrm{dua}}$:</p>
 <p>$$
-\chi_\xi(Q) = \exp(\langle \xi, Q \rangle \varepsilon), \qquad \xi \in \mathbb{D}',
+\chi_\xi(Q) = \exp(\langle \xi, Q \rangle \varepsilon), \qquad \xi \in \mathbb{C}^{\mathrm{dua}},
 $$</p>
 <p>where the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
 <p>$$
 \chi_\xi(Q) = 1 + \langle \xi, Q \rangle \varepsilon.
 $$</p>
-<p>These characters take values in the affine line $1 + \mathbb{D}' \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, Q \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.</p>
+<p>These characters take values in the affine line $1 + \mathbb{C}^{\mathrm{dua}} \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, Q \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.</p>
 <p>So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the affine line $1 + \mathrm{M}$, so their deviation from the identity lies in the nilpotent maximal ideal.</p>
 <h2 id="the-dual-fourier-transform">The Dual Fourier Transform</h2>
 <h3 id="definition">Definition</h3>
-<p>The <strong>dual Fourier transform</strong> of a function $f : \mathbb{D}' \to \mathbb{D}'$ is</p>
+<p>The <strong>dual Fourier transform</strong> of a function $f : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$ is</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{\mathbb{D}'} f(Q) \exp(- \langle \xi, Q \rangle \varepsilon) \, dQ,
+(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{dua}}} f(Q) \exp(- \langle \xi, Q \rangle \varepsilon) \, dQ,
 $$</p>
-<p>where $dQ$ is Lebesgue measure on $\mathbb{D}' \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
+<p>where $dQ$ is Lebesgue measure on $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{\mathbb{D}'} f(Q) (1 - \langle \xi, Q \rangle \varepsilon) \, dQ.
+(\mathcal F f)(\xi) = \int_{\mathbb{C}^{\mathrm{dua}}} f(Q) (1 - \langle \xi, Q \rangle \varepsilon) \, dQ.
 $$</p>
 <p>So the dual Fourier transform is the ordinary two-dimensional Fourier transform of the real part, plus an infinitesimal correction given by the first moment of the function.</p>
 <h3 id="the-structure-of-the-transform">The Structure of the Transform</h3>
@@ -188,11 +188,11 @@ $$</p>
 <p>This is the fundamental limitation of dual harmonic analysis: the nilpotence of $\varepsilon$ means that the characters are too simple to resolve the function, and the transform is a moment map rather than a true Fourier transform.</p>
 <h2 id="convolution">Convolution</h2>
 <h3 id="definition_2">Definition</h3>
-<p>The <strong>convolution</strong> of $f, g : \mathbb{D}' \to \mathbb{D}'$ is</p>
+<p>The <strong>convolution</strong> of $f, g : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$ is</p>
 <p>$$
-(f * g)(Q_1) = \int_{\mathbb{D}'} f(Q_1 - Q_2) g(Q_2) \, dQ_2,
+(f * g)(Q_1) = \int_{\mathbb{C}^{\mathrm{dua}}} f(Q_1 - Q_2) g(Q_2) \, dQ_2,
 $$</p>
-<p>whenever the integral converges. This is the convolution on the additive group $\mathbb{D}' \cong \mathbb{R}^2$.</p>
+<p>whenever the integral converges. This is the convolution on the additive group $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}^2$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Commutativity.</strong> $f * g = g * f$.</p>
 <p><strong>Associativity.</strong> $(f * g) * h = f * (g * h)$.</p>
@@ -219,33 +219,33 @@ $$</p>
 $$</p>
 <p>So the zeroth moment of the convolution is the product of the zeroth moments, and the first moment is the sum of the cross terms. This is the algebraic content of the convolution theorem in the dual case.</p>
 <h3 id="approximate-identities">Approximate Identities</h3>
-<p>A sequence $(\phi_n)$ in $L^1(\mathbb{D}')$ is an <strong>approximate identity</strong> if</p>
+<p>A sequence $(\phi_n)$ in $L^1(\mathbb{C}^{\mathrm{dua}})$ is an <strong>approximate identity</strong> if</p>
 <p>$$
-\int_{\mathbb{D}'} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Q\|_E > \delta} |\phi_n(Q)| \, dQ \to 0
+\int_{\mathbb{C}^{\mathrm{dua}}} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|Q\|_E > \delta} |\phi_n(Q)| \, dQ \to 0
 $$</p>
 <p>for every $\delta > 0$.</p>
-<p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{D}')$ for $1 \leq p < \infty$, then</p>
+<p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 \leq p < \infty$, then</p>
 <p>$$
 \|f * \phi_n - f\|_p \to 0.
 $$</p>
-<p>This is the same as in the real case, because the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$.</p>
+<p>This is the same as in the real case, because the additive group of $\mathbb{C}^{\mathrm{dua}}$ is just $\mathbb{R}^2$.</p>
 <h2 id="distributions">Distributions</h2>
 <h3 id="definition_3">Definition</h3>
-<p>A <strong>tempered distribution</strong> on $\mathbb{D}'$ is a continuous linear functional on the Schwartz space $\mathcal{S}(\mathbb{D}')$. The space of tempered distributions is denoted $\mathcal{S}'(\mathbb{D}')$. It includes all functions in $L^{n}(\mathbb{D}')$ for $1 \leq p \leq \infty$, all finite measures, and all derivatives of such objects.</p>
+<p>A <strong>tempered distribution</strong> on $\mathbb{C}^{\mathrm{dua}}$ is a continuous linear functional on the Schwartz space $\mathcal{S}(\mathbb{C}^{\mathrm{dua}})$. The space of tempered distributions is denoted $\mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$. It includes all functions in $L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 \leq p \leq \infty$, all finite measures, and all derivatives of such objects.</p>
 <h3 id="operations-on-distributions">Operations on Distributions</h3>
-<p><strong>Differentiation.</strong> For $T \in \mathcal{S}'(\mathbb{D}')$ and $\phi \in \mathcal{S}(\mathbb{D}')$,</p>
+<p><strong>Differentiation.</strong> For $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$ and $\phi \in \mathcal{S}(\mathbb{C}^{\mathrm{dua}})$,</p>
 <p>$$
 \langle \partial/\partial q T, \phi \rangle = -\langle T, \partial/\partial q \phi \rangle, \qquad \langle \partial/\partial q' T, \phi \rangle = -\langle T, \partial/\partial q' \phi \rangle.
 $$</p>
-<p><strong>Multiplication by a function.</strong> For $f \in C^\infty(\mathbb{D}')$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{D}')$,</p>
+<p><strong>Multiplication by a function.</strong> For $f \in C^\infty(\mathbb{C}^{\mathrm{dua}})$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$,</p>
 <p>$$
 \langle f T, \phi \rangle = \langle T, f \phi \rangle.
 $$</p>
-<p><strong>Dual Fourier transform.</strong> For $T \in \mathcal{S}'(\mathbb{D}')$ and $\phi \in \mathcal{S}(\mathbb{D}')$,</p>
+<p><strong>Dual Fourier transform.</strong> For $T \in \mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$ and $\phi \in \mathcal{S}(\mathbb{C}^{\mathrm{dua}})$,</p>
 <p>$$
 \langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle.
 $$</p>
-<p>Because the transform truncates to a moment map, it is <strong>not</strong> a bijection on $\mathcal{S}'(\mathbb{D}')$: its real part is constant, its infinitesimal part is affine in $\xi$, and it is therefore far from injective.</p>
+<p>Because the transform truncates to a moment map, it is <strong>not</strong> a bijection on $\mathcal{S}'(\mathbb{C}^{\mathrm{dua}})$: its real part is constant, its infinitesimal part is affine in $\xi$, and it is therefore far from injective.</p>
 <h3 id="the-delta-distribution">The Delta Distribution</h3>
 <p>The <strong>delta distribution</strong> $\delta$ is the tempered distribution</p>
 <p>$$
@@ -265,14 +265,14 @@ $$</p>
 Hf(q) = \frac{1}{\pi} \, \text{p.v.} \int_{\mathbb{R}} \frac{f(t)}{q - t} \, dt,
 $$</p>
 <p>where p.v. denotes the Cauchy principal value. This is the ordinary real Hilbert transform, and it acts on the real part of the dual function.</p>
-<h3 id="the-dual-hilbert-transform-on-math112">The Dual Hilbert Transform on $\mathbb{D}'$</h3>
-<p>For $f : \mathbb{D}' \to \mathbb{D}'$, the dual Hilbert transform is defined by</p>
+<h3 id="the-dual-hilbert-transform-on-math112">The Dual Hilbert Transform on $\mathbb{C}^{\mathrm{dua}}$</h3>
+<p>For $f : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$, the dual Hilbert transform is defined by</p>
 <p>$$
 Hf(Q) = Hf_r(q) + Hf_i(q) \varepsilon,
 $$</p>
 <p>where $f_r$ and $f_i$ are the real and infinitesimal parts of $f$. So the dual Hilbert transform is the ordinary real Hilbert transform applied to each component separately.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
-<p><strong>Boundedness.</strong> $H$ is bounded on $L^{n}(\mathbb{D}')$ for $1 < p < \infty$, with</p>
+<p><strong>Boundedness.</strong> $H$ is bounded on $L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 < p < \infty$, with</p>
 <p>$$
 \|Hf\|_p \leq C_p \|f\|_p.
 $$</p>
@@ -283,31 +283,31 @@ $$</p>
 <p>where $\operatorname{sgn}$ is the sign function on the real part.</p>
 <h2 id="maximal-functions">Maximal Functions</h2>
 <h3 id="the-dual-maximal-function">The Dual Maximal Function</h3>
-<p>The <strong>dual Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{D}')$ is</p>
+<p>The <strong>dual Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{C}^{\mathrm{dua}})$ is</p>
 <p>$$
 Mf(Q_1) = \sup_{r > 0} \frac{1}{|B(Q_1, r)|} \int_{B(Q_1, r)} \|f(Q_2)\|_E \, dQ_2,
 $$</p>
 <p>where $B(Q_1, r)$ is the Euclidean ball of radius $r$ centred at $Q_1$, and $|B(Q_1, r)|$ is its area.</p>
 <h3 id="the-maximal-inequality">The Maximal Inequality</h3>
-<p><strong>Theorem (Hardy–Littlewood, dual version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{D}')$ and every $\lambda > 0$,</p>
+<p><strong>Theorem (Hardy–Littlewood, dual version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{C}^{\mathrm{dua}})$ and every $\lambda > 0$,</p>
 <p>$$
 \boxed{\;
 |\{Q : Mf(Q) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1
 \;}.
 $$</p>
-<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{D}')$ for $1 < p \leq \infty$.</p>
+<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 < p \leq \infty$.</p>
 <p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
 <p>$$
 \boxed{\; \|Mf\|_p \leq C_p \|f\|_p \;}.
 $$</p>
 <p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation.</p>
 <h3 id="the-structure-of-the-maximal-function">The Structure of the Maximal Function</h3>
-<p>Because the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the maximal function theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.</p>
+<p>Because the additive group of $\mathbb{C}^{\mathrm{dua}}$ is just $\mathbb{R}^2$, the maximal function theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.</p>
 <h2 id="the-calderonzygmund-theory">The Calderón–Zygmund Theory</h2>
 <h3 id="singular-integrals">Singular Integrals</h3>
-<p>A <strong>dual Calderón–Zygmund operator</strong> is a bounded operator $T : L^2(\mathbb{D}') \to L^2(\mathbb{D}')$ with a kernel $K : \mathbb{D}' \times \mathbb{D}' \to \mathbb{D}'$ such that</p>
+<p>A <strong>dual Calderón–Zygmund operator</strong> is a bounded operator $T : L^2(\mathbb{C}^{\mathrm{dua}}) \to L^2(\mathbb{C}^{\mathrm{dua}})$ with a kernel $K : \mathbb{C}^{\mathrm{dua}} \times \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$ such that</p>
 <p>$$
-Tf(Q_1) = \int_{\mathbb{D}'} K(Q_1, Q_2) f(Q_2) \, dQ_2
+Tf(Q_1) = \int_{\mathbb{C}^{\mathrm{dua}}} K(Q_1, Q_2) f(Q_2) \, dQ_2
 $$</p>
 <p>for $Q_1 \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
 <p>$$
@@ -317,14 +317,14 @@ $$</p>
 \|K(Q_1, Q_2) - K(Q_3, Q_2)\|_E \leq C \frac{\|Q_1 - Q_3\|_E^\delta}{\|Q_1 - Q_2\|_E^{1+\delta}}, \qquad \|Q_1 - Q_3\|_E < \frac{1}{2} \|Q_1 - Q_2\|_E,
 $$</p>
 <p>and the analogous estimate in the second variable, for some $\delta > 0$.</p>
-<p><strong>Theorem (Calderón–Zygmund, dual version).</strong> Every dual Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{D}')$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
+<p><strong>Theorem (Calderón–Zygmund, dual version).</strong> Every dual Calderón–Zygmund operator is bounded on $L^{n}(\mathbb{C}^{\mathrm{dua}})$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
 <p><strong>Examples.</strong> The dual Hilbert transform, the dual Riesz transforms, and the Beurling–Ahlfors transform are dual Calderón–Zygmund operators.</p>
 <h3 id="the-structure-of-the-theory">The Structure of the Theory</h3>
-<p>Because the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the Calderón–Zygmund theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the theory, because the kernel estimates are in terms of the Euclidean norm, which does not see the algebra structure.</p>
+<p>Because the additive group of $\mathbb{C}^{\mathrm{dua}}$ is just $\mathbb{R}^2$, the Calderón–Zygmund theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the theory, because the kernel estimates are in terms of the Euclidean norm, which does not see the algebra structure.</p>
 <p>So the dual Calderón–Zygmund theory is the real theory on $\mathbb{R}^2$, stated in dual notation. This is a general phenomenon: whenever the analysis depends only on the additive group structure and the Euclidean norm, the dual case is identical to the real case. The nilpotence of $\varepsilon$ only matters when the algebra structure enters, as in the Fourier transform and the convolution theorem.</p>
 <h2 id="the-mellin-transform">The Mellin Transform</h2>
 <h3 id="definition_5">Definition</h3>
-<p>The <strong>dual Mellin transform</strong> of a function $f : (0, \infty) \to \mathbb{D}'$ is</p>
+<p>The <strong>dual Mellin transform</strong> of a function $f : (0, \infty) \to \mathbb{C}^{\mathrm{dua}}$ is</p>
 <p>$$
 \mathcal{M} f(s) = \int_0^\infty t^{s-1} f(t) \, dt,
 $$</p>
@@ -341,7 +341,7 @@ $$</p>
 <p>where $g(a) = \exp(\sigma a) f(\exp(a))$. So the Mellin transform is the dual Fourier transform in logarithmic coordinates.</p>
 <h2 id="the-radon-transform">The Radon Transform</h2>
 <h3 id="definition_6">Definition</h3>
-<p>The <strong>dual Radon transform</strong> of a function $f : \mathbb{D}' \to \mathbb{D}'$ is</p>
+<p>The <strong>dual Radon transform</strong> of a function $f : \mathbb{C}^{\mathrm{dua}} \to \mathbb{C}^{\mathrm{dua}}$ is</p>
 <p>$$
 Rf(\theta, t) = \int_{L(\theta, t)} f(Q) \, ds,
 $$</p>
@@ -379,7 +379,7 @@ $$</p>
 <h3 id="the-dual-wavelet-transform">The Dual Wavelet Transform</h3>
 <p>In the dual setting, the wavelet $\psi$ is allowed to be dual-valued, and the transform becomes</p>
 <p>$$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{D}'} f(Q) \overline{\psi\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in (\mathbb{D}')^\times, \; b \in \mathbb{D}'.
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}^{\mathrm{dua}}} f(Q) \overline{\psi\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in (\mathbb{C}^{\mathrm{dua}})^\times, \; b \in \mathbb{C}^{\mathrm{dua}}.
 $$</p>
 <p>The dual wavelet transform is used in infinitesimal signal processing, where it provides both the value and the derivative information.</p>
 <h2 id="the-structure-principle">The Structure Principle</h2>
@@ -393,7 +393,7 @@ $$</p>
 </ul>
 <p>This is the fundamental limitation of dual harmonic analysis: the nilpotence of $\varepsilon$ means that the characters are too simple to resolve the function, and the transform is a moment map rather than a true Fourier transform. The theory is useful in the cases where the additive group structure is all that matters, and degenerate in the cases where the algebra structure enters.</p>
 <h2 id="summary">Summary</h2>
-<p>Harmonic analysis on the dual plane $\mathbb{D}'$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the nilpotent structure in an essential role. The dual plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters are the exponentials built from $\varepsilon$.</p>
+<p>Harmonic analysis on the dual plane $\mathbb{C}^{\mathrm{dua}}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the nilpotent structure in an essential role. The dual plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters are the exponentials built from $\varepsilon$.</p>
 <p>The dual Fourier transform is defined by a kernel that truncates in the infinitesimal direction, and it is developed both on the full plane and on a bounded interval, together with convolution, the Schwartz space and its tempered distributions, the Hilbert transform, the Hardy–Littlewood maximal function, and the Calderón–Zygmund theory of singular integrals. The transform is then extended to the Mellin transform on the multiplicative half-line, the Radon transform along lines, and the continuous wavelet transform.</p>
 <p>The section on the structure principle states what organises the subject: whenever the analysis depends only on the additive group structure and the Euclidean norm, the dual case agrees with the real case on $\mathbb{R}^2$, and the nilpotent structure contributes exactly the first-order term in the infinitesimal direction.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -406,7 +406,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D}'$</td>
+<td>$\mathbb{C}^{\mathrm{dua}}$</td>
 <td>Dual number algebra</td>
 </tr>
 <tr>

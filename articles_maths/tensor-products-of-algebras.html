@@ -142,11 +142,11 @@ $$</p>
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H},
 $$</p>
 <p>of real dimension $2 \cdot 4 = 8$. The copy of $\mathbb{C}$ given by $\mathbb{C} \otimes 1$ is the central scalar imaginary $i$ with $i^2 = -1$, and it commutes with the quaternion units $1 \otimes e_\mu$. This is the definition of $\mathbb{B}$ used in <em>Biquaternion Algebra ($\mathbb{B}$)</em>.</p>
-<p><strong>Example (the split biquaternions).</strong> With $A = \mathbb{D}$ and $B = \mathbb{H}$ over $R = \mathbb{R}$,</p>
+<p><strong>Example (the split biquaternions).</strong> With $A = \mathbb{C}^{\mathrm{spl}}$ and $B = \mathbb{H}$ over $R = \mathbb{R}$,</p>
 <p>$$
-\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H},
+\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H},
 $$</p>
-<p>the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central, so the algebra decomposes as a direct sum of two ideals; the algebra and its decomposition are the subject of <em>Split-Biquaternion Algebra</em>, and the ideals and the Peirce decomposition of <em>Split-Biquaternion Ideals and Peirce Decomposition</em>.</p>
+<p>the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{C}^{\mathrm{spl}}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ are central, so the algebra decomposes as a direct sum of two ideals; the algebra and its decomposition are the subject of <em>Split-Biquaternion Algebra</em>, and the ideals and the Peirce decomposition of <em>Split-Biquaternion Ideals and Peirce Decomposition</em>.</p>
 <p><strong>Example (matrix algebras).</strong> For a commutative ring $R$ and positive integers $m, n$, there is an isomorphism of $R$-algebras</p>
 <p>$$
 M_m(R) \otimes_R M_n(R) \;\cong\; M_{mn}(R),
@@ -174,7 +174,7 @@ $$</p>
 <p>$$
 (a,b)_F = F\langle i,j\rangle\big/\bigl(i^2 - a,\; j^2 - b,\; ij + ji\bigr),
 $$</p>
-<p>so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_\mu$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes; the Brauer group, Wedderburn's theorem and the examples are in <em>Central Simple Algebras and the Brauer Group</em>.</p>
+<p>so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{C}^{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_\mu$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes; the Brauer group, Wedderburn's theorem and the examples are in <em>Central Simple Algebras and the Brauer Group</em>.</p>
 <h2 id="functoriality-and-base-change">Functoriality and Base Change</h2>
 <p><strong>Functoriality.</strong> A pair of algebra homomorphisms $f : A \to A'$, $g : B \to B'$ induces</p>
 <p>$$
@@ -186,7 +186,7 @@ $$</p>
 A_S = A \otimes_R S,
 $$</p>
 <p>an $S$-algebra with product $(a \otimes s)(a' \otimes s') = aa' \otimes ss'$. Every $R$-algebra homomorphism $A \to B$ induces an $S$-algebra homomorphism $A \otimes_R S \to B \otimes_R S$, so base change is a functor from $R$-algebras to $S$-algebras. It is left adjoint to the functor from $S$-algebras to $R$-algebras that regards an $S$-algebra as an $R$-algebra along $R \to S$.</p>
-<p><strong>Example.</strong> Over $\mathbb{R}$, complexification sends $\mathbb{H}$ to $\mathbb{B} = \mathbb{H} \otimes_\mathbb{R} \mathbb{C}$ and $\mathbb{D}$ to $\mathbb{D} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$; the second is a splitting of the split complex numbers into two copies of $\mathbb{C}$, and it is the complex analogue of $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$.</p>
+<p><strong>Example.</strong> Over $\mathbb{R}$, complexification sends $\mathbb{H}$ to $\mathbb{B} = \mathbb{H} \otimes_\mathbb{R} \mathbb{C}$ and $\mathbb{C}^{\mathrm{spl}}$ to $\mathbb{C}^{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$; the second is a splitting of the split complex numbers into two copies of $\mathbb{C}$, and it is the complex analogue of $\mathbb{C}^{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$.</p>
 <p><strong>Proposition (base change commutes with quotients).</strong> Let $I \subseteq A$ be a two-sided ideal and let $R \to S$ be a ring homomorphism. Then the image of $I \otimes_R S$ in $A \otimes_R S$ is a two-sided ideal, and</p>
 <p>$$
 (A/I) \otimes_R S \;\cong\; (A \otimes_R S)\big/\operatorname{im}\bigl(I \otimes_R S \to A \otimes_R S\bigr).
@@ -233,7 +233,7 @@ $$</p>
 <p><strong>Example.</strong> For $A = \mathbb{H}$, the tensor powers $\mathbb{H}^{\otimes n}$ are algebras of real dimension $4^n$, and $S_n$ permutes the factors. The invariant subalgebra of $\mathbb{H} \otimes_\mathbb{R} \mathbb{H}$ under the swap $a \otimes b \mapsto b \otimes a$ is the fixed space of a linear involution, of real dimension $(16 + 4)/2 = 10$; it is spanned by the four tensors $e_\mu \otimes e_\mu$ and the six sums $e_\mu \otimes e_\nu + e_\nu \otimes e_\mu$ with $0 \leq \mu < \nu \leq 3$, and it is a subalgebra because the fixed points of an algebra automorphism always are.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>tensor product of algebras</strong> $A \otimes_R B$ is the module tensor product with the componentwise product $(a\otimes b)(a'\otimes b') = aa' \otimes bb'$. It is associative and unital when its factors are, commutative when its factors are, and its centre contains $Z(A) \otimes_R Z(B)$, with equality when $R$ is a field. Its universal property is that algebra homomorphisms $A \otimes_R B \to C$ correspond to pairs of homomorphisms $A \to C$, $B \to C$ with commuting images; for commutative algebras this makes $\otimes_R$ the coproduct, not the product, and in general $A \otimes B$ is the quotient of the free product $A \sqcup B$ by the relations $ab = ba$. Over a common algebra $A$ the tensor product of two quotients is the pushout of the diagram $A/I \leftarrow A \rightarrow A/J$ in commutative $A$-algebras, with $(A/I) \otimes_A (A/J) \cong A/(I+J)$.</p>
-<p>The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ and $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, both of real dimension $8$; $M_m(R) \otimes_R M_n(R) \cong M_{mn}(R)$; $R[x] \otimes_R R[y] \cong R[x,y]$; $(A/I) \otimes_A (A/J) \cong A/(I+J)$ and $\mathbb{Z}/m \otimes_\mathbb{Z} \mathbb{Z}/n \cong \mathbb{Z}/\gcd(m,n)$; and $\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$, showing that a tensor product of fields need not be a field. Base change $A \mapsto A \otimes_R S$ is a functor commuting with quotients, and the tensor product of central simple algebras is central simple; their similarity classes form the Brauer group $\mathrm{Br}(F)$, and the class of a quaternion algebra has order dividing $2$, so $(a,b)_F \otimes_F (a,b)_F \cong M_4(F)$.</p>
+<p>The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ and $\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$, both of real dimension $8$; $M_m(R) \otimes_R M_n(R) \cong M_{mn}(R)$; $R[x] \otimes_R R[y] \cong R[x,y]$; $(A/I) \otimes_A (A/J) \cong A/(I+J)$ and $\mathbb{Z}/m \otimes_\mathbb{Z} \mathbb{Z}/n \cong \mathbb{Z}/\gcd(m,n)$; and $\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \times \mathbb{C}$, showing that a tensor product of fields need not be a field. Base change $A \mapsto A \otimes_R S$ is a functor commuting with quotients, and the tensor product of central simple algebras is central simple; their similarity classes form the Brauer group $\mathrm{Br}(F)$, and the class of a quaternion algebra has order dividing $2$, so $(a,b)_F \otimes_F (a,b)_F \cong M_4(F)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -280,7 +280,7 @@ $$</p>
 <td>Biquaternions</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_\mathbb{R} \mathbb{H}$</td>
+<td>$\mathbb{B}^{\mathrm{spl}} = \mathbb{C}^{\mathrm{spl}} \otimes_\mathbb{R} \mathbb{H}$</td>
 <td>Split biquaternions</td>
 </tr>
 <tr>

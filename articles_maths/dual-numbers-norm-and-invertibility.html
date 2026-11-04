@@ -70,12 +70,12 @@
       <div class="article-body">
         <h1 id="dual-numbers-norm-and-invertibility"><strong>Dual-Numbers Norm and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article studies the norm of the dual-number algebra and the invertibility of its elements. It follows the base article <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the two conjugations, the two distinguished submodules and the maximal ideal $\mathrm{M} = (\varepsilon)$. The goal here is to define the norm and the Euclidean form, to establish the criterion for invertibility, to describe the group of units and its structure, and to record the three-way classification of the elements.</p>
-<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, the algebra is $\mathbb{D}'_R$, and $\mathbb{D}$ denotes the split complex algebra $\mathbb{R}[j]$, $j^2 = +1$. A general dual number is written</p>
+<p>This article studies the norm of the dual-number algebra and the invertibility of its elements. It follows the base article <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$, the two conjugations, the two distinguished submodules and the maximal ideal $\mathrm{M} = (\varepsilon)$. The goal here is to define the norm and the Euclidean form, to establish the criterion for invertibility, to describe the group of units and its structure, and to record the three-way classification of the elements.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, the algebra is $\mathbb{C}^{\mathrm{dua}}_R$, and $\mathbb{C}^{\mathrm{spl}}$ denotes the split complex algebra $\mathbb{R}[j]$, $j^2 = +1$. A general dual number is written</p>
 <p>$$
 Q = q + \varepsilon q', \qquad q, q' \in R,
 $$</p>
-<p>with real part $q = \operatorname{Re} Q$ and infinitesimal part $q' = \operatorname{Inf} Q$. Dual conjugation is written $\bar Q = q - \varepsilon q'$ and the identity conjugation $\operatorname{id}(Q) = Q$. When $R = \mathbb{R}$ we write $\mathbb{D}'$ for $\mathbb{D}'_{\mathbb{R}}$, and $\mathrm{M} = \varepsilon\mathbb{R}$ is the maximal ideal. Every numerical value displayed below was recomputed in exact rational arithmetic.</p>
+<p>with real part $q = \operatorname{Re} Q$ and infinitesimal part $q' = \operatorname{Inf} Q$. Dual conjugation is written $\bar Q = q - \varepsilon q'$ and the identity conjugation $\operatorname{id}(Q) = Q$. When $R = \mathbb{R}$ we write $\mathbb{C}^{\mathrm{dua}}$ for $\mathbb{C}^{\mathrm{dua}}_{\mathbb{R}}$, and $\mathrm{M} = \varepsilon\mathbb{R}$ is the maximal ideal. Every numerical value displayed below was recomputed in exact rational arithmetic.</p>
 <p>The base is the commutative ring, not the field: the criterion for invertibility is stated for an arbitrary commutative $R$, and the places where a field, or invertibility of $2$, is needed are flagged. The default specialisation for the geometric statements is $R = \mathbb{R}$.</p>
 <h2 id="the-norm">The Norm</h2>
 <h3 id="definition">Definition</h3>
@@ -83,7 +83,7 @@ $$</p>
 <p>$$
 \langle Q\rangle = Q\bar Q = (q + \varepsilon q')(q - \varepsilon q') = q^2.
 $$</p>
-<p>It is an element of $R$, and it takes its value in the real submodule $R_{\mathbb{D}'}$.</p>
+<p>It is an element of $R$, and it takes its value in the real submodule $R_{\mathbb{C}^{\mathrm{dua}}}$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Proposition.</strong> Let $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2$.</p>
 <ul>
@@ -93,7 +93,7 @@ $$</p>
 <li><strong>Vanishing locus.</strong> Over a field, $\langle Q_1\rangle = 0$ if and only if $Q_1 \in \mathrm{M} = (\varepsilon)$.</li>
 </ul>
 <p><strong>Proof.</strong> The first two are immediate from $\langle Q_1\rangle = q_1^2$. For the third, $q_1^2 \ge 0$ in an ordered ring and $q_1^2 = 0$ forces $q_1 = 0$ in a domain. For the fourth, $q_1^2 = 0$ with $q_1$ in a field gives $q_1 = 0$, that is $Q_1 = \varepsilon q'_1 \in \mathrm{M}$.</p>
-<p>The norm is <strong>degenerate</strong>: it is a quadratic form of rank one on the two-dimensional free module $\mathbb{D}'_R$, and its radical is the line $\mathrm{M} = \varepsilon R_{\mathbb{D}'}$. Degeneracy in this article always means that the associated bilinear form has nonzero radical, and the radical is the maximal ideal.</p>
+<p>The norm is <strong>degenerate</strong>: it is a quadratic form of rank one on the two-dimensional free module $\mathbb{C}^{\mathrm{dua}}_R$, and its radical is the line $\mathrm{M} = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$. Degeneracy in this article always means that the associated bilinear form has nonzero radical, and the radical is the maximal ideal.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The norm is multiplicative:</p>
 <p>$$
@@ -108,7 +108,7 @@ $$</p>
 <p>The identity $(q_1 q_2)^2 = q_1^2q_2^2$ holds in every commutative ring.</p>
 <p><strong>Corollary.</strong> If $\langle Q_1\rangle \neq 0$ and $\langle Q_2\rangle \neq 0$, then $\langle Q_1 Q_2\rangle \neq 0$.</p>
 <p><strong>Corollary.</strong> If $\langle Q_1\rangle = 0$ or $\langle Q_2\rangle = 0$, then $\langle Q_1 Q_2\rangle = 0$. In particular the product of an element of the maximal ideal with any dual number lies in the maximal ideal, since $\mathrm{M}$ is a two-sided ideal.</p>
-<p><strong>Remark.</strong> Multiplicativity is the reason for the name, and it survives the degeneracy: the norm is a <em>ring homomorphism</em> from $\mathbb{D}'_R$ to the multiplicative monoid of $R$, whose kernel is the maximal ideal. It is the degenerate analogue of the modulus of a complex number.</p>
+<p><strong>Remark.</strong> Multiplicativity is the reason for the name, and it survives the degeneracy: the norm is a <em>ring homomorphism</em> from $\mathbb{C}^{\mathrm{dua}}_R$ to the multiplicative monoid of $R$, whose kernel is the maximal ideal. It is the degenerate analogue of the modulus of a complex number.</p>
 <h3 id="the-norm-as-a-degenerate-form">The Norm as a Degenerate Form</h3>
 <p>The word <em>norm</em> is used here only in a qualified sense, and it is worth recording which of the usual axioms survive.</p>
 <ul>
@@ -119,7 +119,7 @@ $$</p>
 </ul>
 <p>So the norm is a degenerate multiplicative quadratic form, homogeneous of degree two, whose vanishing locus is the maximal ideal. It fails to be a norm in the analytic sense, and the Euclidean form of the next section supplies that analytic quantity.</p>
 <h3 id="the-reduction-of-the-scale-to-math72">The Reduction of the Scale to $|q|$</h3>
-<p>There is nevertheless a genuine real size function on the units, singled out by the norm. Let $\rho : (\mathbb{D}'_{\mathbb{R}})^\times \to \mathbb{R}_{>0}$ be a continuous multiplicative function, normalised on the real scalars by</p>
+<p>There is nevertheless a genuine real size function on the units, singled out by the norm. Let $\rho : (\mathbb{C}^{\mathrm{dua}}_{\mathbb{R}})^\times \to \mathbb{R}_{>0}$ be a continuous multiplicative function, normalised on the real scalars by</p>
 <p>$$
 \rho(\lambda) = |\lambda| \qquad \text{for } \lambda \in \mathbb{R}^\times.
 $$</p>
@@ -155,7 +155,7 @@ $$</p>
 <p>$$
 \|Q\|_E = \sqrt{q^2 + q'^2}.
 $$</p>
-<p>Over $R = \mathbb{R}$ this is the ordinary Euclidean structure of the plane $\mathbb{D}' \cong \mathbb{R}^2$ in dual coordinates.</p>
+<p>Over $R = \mathbb{R}$ this is the ordinary Euclidean structure of the plane $\mathbb{C}^{\mathrm{dua}} \cong \mathbb{R}^2$ in dual coordinates.</p>
 <h3 id="properties">Properties</h3>
 <p><strong>Proposition.</strong> The Euclidean form is positive-definite over an ordered ring and satisfies $\langle Q_1, Q_1 \rangle = \mathfrak{Q}(Q_1)$. It is <strong>not</strong> multiplicative with respect to the dual product:</p>
 <p>$$
@@ -209,14 +209,14 @@ $$</p>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
 <p><strong>Definition.</strong> A dual number $Q_1$ is <strong>invertible</strong> if there exists $Q_2$ with $Q_1 Q_2 = Q_2 Q_1 = 1$. The element $Q_2$, if it exists, is the <strong>inverse</strong> of $Q_1$ and is denoted $Q_1^{-1}$.</p>
-<p>Since $\mathbb{D}'_R$ is commutative there is no distinction between left, right and two-sided inverses.</p>
+<p>Since $\mathbb{C}^{\mathrm{dua}}_R$ is commutative there is no distinction between left, right and two-sided inverses.</p>
 <h3 id="criterion-for-invertibility">Criterion for Invertibility</h3>
-<p><strong>Theorem.</strong> Let $Q = q + \varepsilon q' \in \mathbb{D}'_R$. The following are equivalent.</p>
+<p><strong>Theorem.</strong> Let $Q = q + \varepsilon q' \in \mathbb{C}^{\mathrm{dua}}_R$. The following are equivalent.</p>
 <ol>
 <li>$Q$ is invertible.</li>
 <li>$q$ is a unit of $R$.</li>
 <li>$\langle Q\rangle = q^2$ is a unit of $R$.</li>
-<li>The residue class of $Q$ in the quotient ring $\mathbb{D}'_R/\mathrm{M} \cong R$ is a unit of $R$.</li>
+<li>The residue class of $Q$ in the quotient ring $\mathbb{C}^{\mathrm{dua}}_R/\mathrm{M} \cong R$ is a unit of $R$.</li>
 </ol>
 <p>Over a field, the criterion reads: $Q$ is invertible if and only if $q \neq 0$, that is, if and only if $\langle Q\rangle \neq 0$.</p>
 <p><strong>Proof.</strong> If $q \in R^\times$, set $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Then</p>
@@ -236,18 +236,18 @@ $$</p>
 <p><strong>Proof.</strong> Direct from the formula.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="definition_3">Definition</h3>
-<p><strong>Definition.</strong> The <strong>group of units</strong> of $\mathbb{D}'_R$ is</p>
+<p><strong>Definition.</strong> The <strong>group of units</strong> of $\mathbb{C}^{\mathrm{dua}}_R$ is</p>
 <p>$$
-(\mathbb{D}'_R)^\times = \{q + \varepsilon q' : q \in R^\times\}.
+(\mathbb{C}^{\mathrm{dua}}_R)^\times = \{q + \varepsilon q' : q \in R^\times\}.
 $$</p>
 <p>It is a group under multiplication with identity $1$.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
-<p><strong>Proposition.</strong> Over a field, the group of units is the complement of the maximal ideal, $(\mathbb{D}'_k)^\times = \mathbb{D}'_k \setminus \mathrm{M}$, and over $R = \mathbb{R}$ it is an open, dense subset of the plane $\mathbb{D}'$ with exactly two connected components, distinguished by the sign of the real part.</p>
+<p><strong>Proposition.</strong> Over a field, the group of units is the complement of the maximal ideal, $(\mathbb{C}^{\mathrm{dua}}_k)^\times = \mathbb{C}^{\mathrm{dua}}_k \setminus \mathrm{M}$, and over $R = \mathbb{R}$ it is an open, dense subset of the plane $\mathbb{C}^{\mathrm{dua}}$ with exactly two connected components, distinguished by the sign of the real part.</p>
 <p><strong>Proof.</strong> Over a field the complement statement is the invertibility criterion $q \neq 0$. Over a general commutative ring the unit group is the smaller set $\{q + \varepsilon q' : q \in R^\times\}$, the preimage of $R^\times$ under $\operatorname{Re}$. Openness and density over $\mathbb{R}$ follow from $\{q \neq 0\}$ being the complement of a line. The map $Q \mapsto \operatorname{sgn}(q)$ is a continuous surjection onto $\{\pm 1\}$ that is multiplicative, so there are at least two components; $\{q > 0\}$ and $\{q < 0\}$ are each homeomorphic to a half-plane and hence connected.</p>
 <h3 id="the-structure-as-a-semidirect-product">The Structure as a Semidirect Product</h3>
 <p><strong>Theorem.</strong> Let $R$ be a commutative ring with $2$ invertible. The map</p>
 <p>$$
-\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{D}'_R)^\times, \qquad \Theta(q, s) = q(1 + s\varepsilon),
+\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{C}^{\mathrm{dua}}_R)^\times, \qquad \Theta(q, s) = q(1 + s\varepsilon),
 $$</p>
 <p>is an isomorphism of groups.</p>
 <p><strong>Proof.</strong> Every unit is $q(1 + s\varepsilon)$ with $q \in R^\times$ and $s = q^{-1}q'$, uniquely, so $\Theta$ is a bijection. It is a homomorphism because</p>
@@ -255,24 +255,24 @@ $$</p>
 \Theta(q_1,s)\Theta(q_2,t) = q_1(1 + s\varepsilon)\,q_2(1 + t\varepsilon) = q_1 q_2\bigl(1 + (s + t)\varepsilon\bigr) = \Theta\bigl(q_1 q_2,\, s + t\bigr),
 $$</p>
 <p>using $\varepsilon^2 = 0$ and the commutativity of $R$.</p>
-<p>So the group of units is the <strong>direct product</strong> $R^\times \times (R, +)$. Read as a semidirect product $R^\times \ltimes (R, +)$, the action of $R^\times$ on $(R, +)$ is trivial — because $\mathbb{D}'_R$ is commutative, the conjugation action of the first factor on the shear group $1 + \mathrm{M}$ is trivial — so the semidirect structure degenerates to the direct product:</p>
+<p>So the group of units is the <strong>direct product</strong> $R^\times \times (R, +)$. Read as a semidirect product $R^\times \ltimes (R, +)$, the action of $R^\times$ on $(R, +)$ is trivial — because $\mathbb{C}^{\mathrm{dua}}_R$ is commutative, the conjugation action of the first factor on the shear group $1 + \mathrm{M}$ is trivial — so the semidirect structure degenerates to the direct product:</p>
 <p>$$
 \boxed{\;
-(\mathbb{D}'_R)^\times \cong R^\times \times (R, +)
+(\mathbb{C}^{\mathrm{dua}}_R)^\times \cong R^\times \times (R, +)
 \;}.
 $$</p>
 <p>The extension</p>
 <p>$$
-1 \longrightarrow (1 + \mathrm{M}) \longrightarrow (\mathbb{D}'_R)^\times \longrightarrow R^\times \longrightarrow 1
+1 \longrightarrow (1 + \mathrm{M}) \longrightarrow (\mathbb{C}^{\mathrm{dua}}_R)^\times \longrightarrow R^\times \longrightarrow 1
 $$</p>
 <p>is split by $q \mapsto q$, and its kernel $1 + \mathrm{M} = \{1 + s\varepsilon\}$ is the <strong>shear group</strong>, isomorphic to $(R, +)$ through $s \mapsto 1 + s\varepsilon$. Over $\mathbb{R}$ the group of units is $\mathbb{R}^\times \times \mathbb{R}$: abelian, two-dimensional, with two contractible components.</p>
 <h3 id="the-norm-one-group">The Norm-One Group</h3>
-<p><strong>Definition.</strong> The <strong>norm-one group</strong> is $H = \{Q \in \mathbb{D}'_{\mathbb{R}} : \langle Q\rangle = 1\}$.</p>
+<p><strong>Definition.</strong> The <strong>norm-one group</strong> is $H = \{Q \in \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}} : \langle Q\rangle = 1\}$.</p>
 <p><strong>Proposition.</strong> $H = \{q + \varepsilon q' : q = \pm 1\}$ is the union of the two parallel lines of real part $\pm 1$; its identity component is $H_0 = 1 + \mathrm{M}$, the shear group.</p>
 <p><strong>Proof.</strong> $\langle q + \varepsilon q'\rangle = q^2 = 1$ gives $q = \pm 1$ and leaves $q'$ free; the line $q = 1$ is $1 + \mathrm{M}$, the component through the identity.</p>
 <h2 id="the-three-way-classification">The Three-Way Classification</h2>
 <h3 id="the-table">The Table</h3>
-<p>Over a field $k$, combining the criterion for invertibility with the vanishing of the norm, the elements of $\mathbb{D}'_k$ fall into exactly three classes.</p>
+<p>Over a field $k$, combining the criterion for invertibility with the vanishing of the norm, the elements of $\mathbb{C}^{\mathrm{dua}}_k$ fall into exactly three classes.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -301,14 +301,14 @@ $$</p>
 </table></div>
 <p>The third class is exactly $\mathrm{M} \setminus \{0\}$; its elements are studied in <em>Dual-Numbers Zero Divisors</em>, and the ideals that organize the classification are studied in <em>Dual-Numbers Ideals and the Maximal Ideal</em>.</p>
 <h3 id="the-algebra-is-not-a-division-algebra">The Algebra Is Not a Division Algebra</h3>
-<p>By definition, a <strong>division algebra</strong> is an algebra in which every nonzero element is invertible; for a finite-dimensional algebra this is equivalent to the absence of zero divisors. The dual algebra contains the nonzero nilpotent $\varepsilon$, which is a zero divisor; hence $\mathbb{D}'_R$ is <strong>not</strong> a division algebra whenever $\mathrm{M} \neq 0$ (that is, whenever $\varepsilon \neq 0$ in the algebra).</p>
+<p>By definition, a <strong>division algebra</strong> is an algebra in which every nonzero element is invertible; for a finite-dimensional algebra this is equivalent to the absence of zero divisors. The dual algebra contains the nonzero nilpotent $\varepsilon$, which is a zero divisor; hence $\mathbb{C}^{\mathrm{dua}}_R$ is <strong>not</strong> a division algebra whenever $\mathrm{M} \neq 0$ (that is, whenever $\varepsilon \neq 0$ in the algebra).</p>
 <p>This is in contrast to $\mathbb{R}$ and $\mathbb{C}$, which are fields; the dual algebra is a two-dimensional commutative associative real algebra, and it is not a field.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
-<p>The two distinguished submodules of $\mathbb{D}'_R$ behave oppositely with respect to invertibility.</p>
+<p>The two distinguished submodules of $\mathbb{C}^{\mathrm{dua}}_R$ behave oppositely with respect to invertibility.</p>
 <h3 id="the-real-submodule">The Real Submodule</h3>
-<p>An element of $R_{\mathbb{D}'}$ is $Q = q$ with $q' = 0$, and $\langle Q\rangle = q^2$. Over a field, every nonzero element of $R_{\mathbb{D}'}$ is invertible, and $R_{\mathbb{D}'}$ is a subalgebra isomorphic to the field; it is the unique subalgebra of $\mathbb{D}'_R$ that is a division algebra.</p>
+<p>An element of $R_{\mathbb{C}^{\mathrm{dua}}}$ is $Q = q$ with $q' = 0$, and $\langle Q\rangle = q^2$. Over a field, every nonzero element of $R_{\mathbb{C}^{\mathrm{dua}}}$ is invertible, and $R_{\mathbb{C}^{\mathrm{dua}}}$ is a subalgebra isomorphic to the field; it is the unique subalgebra of $\mathbb{C}^{\mathrm{dua}}_R$ that is a division algebra.</p>
 <h3 id="the-infinitesimal-submodule">The Infinitesimal Submodule</h3>
-<p>An element of $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is $Q = \varepsilon q'$ with $q = 0$, and $\langle Q\rangle = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-unit; the invertible elements meet $\mathrm{M}$ in the empty set, and the zero divisors are exactly $\mathrm{M} \setminus \{0\}$.</p>
+<p>An element of $\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \mathrm{M}$ is $Q = \varepsilon q'$ with $q = 0$, and $\langle Q\rangle = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-unit; the invertible elements meet $\mathrm{M}$ in the empty set, and the zero divisors are exactly $\mathrm{M} \setminus \{0\}$.</p>
 <h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
 <p>Over a field $k$ the distribution is as follows, the units being read off from $R^\times = k^\times$ and the zero-divisor column from the criterion of <em>Dual-Numbers Zero Divisors</em>.</p>
 <div class="table-scroll"><table>
@@ -323,14 +323,14 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$R_{\mathbb{D}'}$</td>
+<td>$R_{\mathbb{C}^{\mathrm{dua}}}$</td>
 <td>$q$, $q \in R$</td>
 <td>$q^2$</td>
 <td>all $q \in R^\times$</td>
 <td>none</td>
 </tr>
 <tr>
-<td>$\varepsilon R_{\mathbb{D}'} = \mathrm{M}$</td>
+<td>$\varepsilon R_{\mathbb{C}^{\mathrm{dua}}} = \mathrm{M}$</td>
 <td>$\varepsilon q'$, $q' \in R$</td>
 <td>$0$</td>
 <td>none</td>
@@ -342,26 +342,26 @@ $$</p>
 <h2 id="relation-to-the-conjugate-decomposition">Relation to the Conjugate Decomposition</h2>
 <p>The criterion is stated in terms of the norm and the real part. In the conjugate decomposition</p>
 <p>$$
-\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Q = q + \varepsilon q',
+\mathbb{C}^{\mathrm{dua}}_R = R_{\mathbb{C}^{\mathrm{dua}}} \oplus \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}, \qquad Q = q + \varepsilon q',
 $$</p>
-<p>the norm reads $\langle Q\rangle = (\operatorname{Re} Q)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
+<p>the norm reads $\langle Q\rangle = (\operatorname{Re} Q)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{C}^{\mathrm{dua}}_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
 <h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
 <p>The three norms of the family are</p>
 <p>$$
 \langle A\rangle_{*} = a^2 + a'^2 \ \text{ in } \mathbb{C}, \qquad
-\langle A\rangle_{*} = a^2 - a'^2 \ \text{ in } \mathbb{D}, \qquad
-\langle Q\rangle_{*} = q^2 \ \text{ in } \mathbb{D}',
+\langle A\rangle_{*} = a^2 - a'^2 \ \text{ in } \mathbb{C}^{\mathrm{spl}}, \qquad
+\langle Q\rangle_{*} = q^2 \ \text{ in } \mathbb{C}^{\mathrm{dua}},
 $$</p>
-<p>for the complex numbers, the split complex numbers $\mathbb{D} = \mathbb{R}[j]$ and the dual numbers. They are the three real binary quadratic forms of rank two, two and one respectively: positive-definite, indefinite non-degenerate, and degenerate.</p>
+<p>for the complex numbers, the split complex numbers $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]$ and the dual numbers. They are the three real binary quadratic forms of rank two, two and one respectively: positive-definite, indefinite non-degenerate, and degenerate.</p>
 <ul>
 <li>In $\mathbb{C}$ the norm never vanishes away from the origin, and every nonzero element is a unit; the norm-one group is the circle.</li>
-<li>In the split complex $\mathbb{D}$ the norm is indefinite, its null set is the pair of linear null directions on which the zero divisors live, and the norm-one group is a hyperbola, with two branches.</li>
-<li>In $\mathbb{D}'$ the norm is degenerate, its null set is the maximal ideal, a whole line, and the norm-one group is a pair of parallel lines.</li>
+<li>In the split complex $\mathbb{C}^{\mathrm{spl}}$ the norm is indefinite, its null set is the pair of linear null directions on which the zero divisors live, and the norm-one group is a hyperbola, with two branches.</li>
+<li>In $\mathbb{C}^{\mathrm{dua}}$ the norm is degenerate, its null set is the maximal ideal, a whole line, and the norm-one group is a pair of parallel lines.</li>
 </ul>
 <p>The three cases form the family of the two-dimensional real algebras: complex, split complex, dual. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the signature and the value ring of that form.</p>
 <h2 id="summary">Summary</h2>
 <p>The norm $\langle Q\rangle = Q\bar Q = q^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $q^2 + q'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |q|\exp(c\,q'/q)$.</p>
-<p>A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $q \neq 0$, equivalently if and only if $\langle Q\rangle \neq 0$. The inverse is $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.</p>
+<p>A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $q \neq 0$, equivalently if and only if $\langle Q\rangle \neq 0$. The inverse is $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over a field the group of units is $\mathbb{C}^{\mathrm{dua}}_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{C}^{\mathrm{dua}}_k)^\times \to k^\times \to 1$, and since $\mathbb{C}^{\mathrm{dua}}_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{C}^{\mathrm{dua}}_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -372,15 +372,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$</td>
+<td>$\mathbb{C}^{\mathrm{dua}}_R = R[\varepsilon]/(\varepsilon^2)$</td>
 <td>Dual-number algebra over $R$; $\varepsilon^2 = 0$</td>
 </tr>
 <tr>
-<td>$\mathbb{D}' = \mathbb{D}'_{\mathbb{R}}$</td>
+<td>$\mathbb{C}^{\mathrm{dua}} = \mathbb{C}^{\mathrm{dua}}_{\mathbb{R}}$</td>
 <td>Dual-number algebra over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
 <td>Split-complex algebra, unit $j$, $j^2 = +1$</td>
 </tr>
 <tr>
@@ -424,23 +424,23 @@ $$</p>
 <td>The normalised multiplicative size functions; $r = \rho_0$</td>
 </tr>
 <tr>
-<td>$\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$</td>
+<td>$\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}^{\mathrm{dua}}}$</td>
 <td>Maximal ideal, kernel of $\langle\cdot\rangle$</td>
 </tr>
 <tr>
-<td>$R_{\mathbb{D}'}$</td>
+<td>$R_{\mathbb{C}^{\mathrm{dua}}}$</td>
 <td>Real submodule</td>
 </tr>
 <tr>
-<td>$(\mathbb{D}'_k)^\times = \mathbb{D}'_k \setminus \mathrm{M}$</td>
+<td>$(\mathbb{C}^{\mathrm{dua}}_k)^\times = \mathbb{C}^{\mathrm{dua}}_k \setminus \mathrm{M}$</td>
 <td>Group of units, over a field $k$</td>
 </tr>
 <tr>
 <td>$1 + \mathrm{M}$</td>
-<td>Shear group, kernel of $(\mathbb{D}'_R)^\times \to R^\times$</td>
+<td>Shear group, kernel of $(\mathbb{C}^{\mathrm{dua}}_R)^\times \to R^\times$</td>
 </tr>
 <tr>
-<td>$\Theta : R^\times \times (R,+) \to (\mathbb{D}'_R)^\times$</td>
+<td>$\Theta : R^\times \times (R,+) \to (\mathbb{C}^{\mathrm{dua}}_R)^\times$</td>
 <td>Unit-group isomorphism, $\Theta(q,s) = q(1 + s\varepsilon)$</td>
 </tr>
 <tr>

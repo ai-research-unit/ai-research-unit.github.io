@@ -83,33 +83,33 @@ $$</p>
 <p><strong>Remark (The Corpus Convention).</strong> The characters and the transform are taken with the sign convention of <em>Quaternion Harmonic Analysis</em>, §<em>The Quaternion Characters</em>, so that the pairing is the Euclidean one on $\mathbb{R}^4$ and the transform of a derivative carries the factor $-2\pi\mathrm{i}$. In the quaternion case the algebra-valued characters $\exp(2\pi\omega\langle \tilde q,\xi\rangle)$ with $\omega^2 = -1$ lie on the unit sphere and are bounded; here the corresponding kernel $\exp(-\tilde q\xi)$ is bounded only when $\operatorname{Sc}(\tilde q\xi) = 0$, and its split-quaternion norm is $\exp(-2\operatorname{Sc}(\tilde q\xi))$ in general, because the form is indefinite. The boundedness of the characters in the definite case and its failure in the split case is the same dichotomy as the definiteness of the form.</p>
 <p><strong>Corollary (The Space of Functions).</strong> The algebra-valued functions with square-integrable components form the Hilbert space</p>
 <p>$$
-L^2(\mathbb{H}_{\mathrm{s}}, \mathbb{H}_{\mathrm{s}}) \cong \big(L^2(\mathbb{R}^4)\big)^4 ,
+L^2(\mathbb{H}^{\mathrm{spl}}, \mathbb{H}^{\mathrm{spl}}) \cong \big(L^2(\mathbb{R}^4)\big)^4 ,
 $$</p>
 <p>with the inner product $\langle f,g\rangle = \int \operatorname{Sc}(f g^{\natural})$, and the algebra acts pointwise on it by left and right multiplication.</p>
 <p><strong>Proof.</strong> The identification is componentwise, and the scalar product is that of four real functions expressed in the basis.</p>
 <h2 id="the-fourier-transform-of-the-group">The Fourier Transform of the Group</h2>
-<p><strong>Definition.</strong> For $f \in L^1(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ the <strong>Fourier transform</strong> is</p>
+<p><strong>Definition.</strong> For $f \in L^1(\mathbb{H}^{\mathrm{spl}},\mathbb{H}^{\mathrm{spl}})$ the <strong>Fourier transform</strong> is</p>
 <p>$$
-(\mathcal F f)(\xi) = \int_{\mathbb{H}_{\mathrm{s}}} f(\tilde q)\, \exp(2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\tilde q \ \in \mathbb{H}_{\mathrm{s}} ,
+(\mathcal F f)(\xi) = \int_{\mathbb{H}^{\mathrm{spl}}} f(\tilde q)\, \exp(2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\tilde q \ \in \mathbb{H}^{\mathrm{spl}} ,
 $$</p>
 <p>the transform of the four scalar components of $f$.</p>
 <p><strong>Theorem (Inversion and Plancherel).</strong> For $f$ in the Schwartz class of algebra-valued functions,</p>
 <p>$$
 \boxed{\;
-f(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} (\mathcal F f)(\xi)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\xi
+f(\tilde q) = \int_{\mathbb{H}^{\mathrm{spl}}} (\mathcal F f)(\xi)\, \exp(-2\pi \mathrm{i}\langle \tilde q,\xi\rangle)\,\mathrm{d}\xi
 \;},
 $$</p>
-<p>the transform extends to a $*$-unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.</p>
+<p>the transform extends to a $*$-unitary operator on $L^2(\mathbb{H}^{\mathrm{spl}},\mathbb{H}^{\mathrm{spl}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.</p>
 <p><strong>Proof.</strong> The scalar theory of <em>Fourier Analysis on Euclidean Spaces</em> applies componentwise; the unitarity is the Plancherel theorem in each component.</p>
 <p><strong>Corollary (The Non-Commutativity Plays No Role Here).</strong> The group transform sees only the abelian additive structure of the algebra: the non-commutativity of the product and the zero divisors do not enter the statements of inversion and Plancherel, because the characters are scalar and commute with everything. They enter as soon as a product of algebra-valued functions is taken, that is in the next two sections.</p>
 <p><strong>Proof.</strong> The characters are central; the transform is componentwise.</p>
 <h2 id="convolution-and-the-convolution-theorem">Convolution and the Convolution Theorem</h2>
 <p><strong>Definition.</strong> The <strong>convolution</strong> of two algebra-valued functions is</p>
 <p>$$
-(f * g)(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} f(\tilde q_2)\,g(\tilde q-\tilde q_2)\,\mathrm{d}\tilde q_2 ,
+(f * g)(\tilde q) = \int_{\mathbb{H}^{\mathrm{spl}}} f(\tilde q_2)\,g(\tilde q-\tilde q_2)\,\mathrm{d}\tilde q_2 ,
 $$</p>
 <p>with the product of the algebra inside the integral.</p>
-<p><strong>Theorem (The Convolution Theorem).</strong> For $f, g \in L^1(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ the convolution is well defined almost everywhere, and</p>
+<p><strong>Theorem (The Convolution Theorem).</strong> For $f, g \in L^1(\mathbb{H}^{\mathrm{spl}},\mathbb{H}^{\mathrm{spl}})$ the convolution is well defined almost everywhere, and</p>
 <p>$$
 \boxed{\;
 \widehat{f * g}(\xi) = (\mathcal F f)(\xi)\,(\mathcal F g)(\xi)
@@ -131,7 +131,7 @@ $$</p>
 <p>The transform that uses the algebra itself as the kernel is the analogue of the quaternionic and Clifford transforms; it is not the group transform, and its inversion is where the zero divisors appear.</p>
 <p><strong>Definition.</strong> For a suitable function $f$ the <strong>algebra-kernel transform</strong> is</p>
 <p>$$
-\mathcal{F}f(\xi) = \int_{\mathbb{H}_{\mathrm{s}}} \exp(-\tilde q\xi)\, f(\tilde q)\,\mathrm{d}\tilde q , \qquad \tilde q\xi \text{ the algebra product},
+\mathcal{F}f(\xi) = \int_{\mathbb{H}^{\mathrm{spl}}} \exp(-\tilde q\xi)\, f(\tilde q)\,\mathrm{d}\tilde q , \qquad \tilde q\xi \text{ the algebra product},
 $$</p>
 <p>the exponential being that of <em>Split-Quaternion Elementary Functions</em>.</p>
 <p><strong>Theorem (The Kernel Is Never Singular).</strong> The kernel $\exp(-\tilde q\xi)$ is invertible for all $\tilde q$ and all $\xi$, with</p>
@@ -175,8 +175,8 @@ $$</p>
 <tr>
 <th></th>
 <th>$\mathbb{H}$</th>
-<th>$\mathbb{H}_{\mathrm{s}}$</th>
-<th>$\mathbb{D}$</th>
+<th>$\mathbb{H}^{\mathrm{spl}}$</th>
+<th>$\mathbb{C}^{\mathrm{spl}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -218,7 +218,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The quaternion column is the content of <em>Quaternion Harmonic Analysis</em> and the split-complex column that of <em>Split-Complex Harmonic Analysis</em>. The decisive difference is that the quaternion norm vanishes only at the origin, so its symbol is invertible at every nonzero frequency and the quaternionic transform has no vanishing-determinant problem; in the split case the split-quaternion norm vanishes on a cone, of real dimension two in $V$, and the transformed fundamental solution is supported there. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.</p>
+<p>The quaternion column is the content of <em>Quaternion Harmonic Analysis</em> and the split-complex column that of <em>Split-Complex Harmonic Analysis</em>. The decisive difference is that the quaternion norm vanishes only at the origin, so its symbol is invertible at every nonzero frequency and the quaternionic transform has no vanishing-determinant problem; in the split case the split-quaternion norm vanishes on a cone, of real dimension two in $V$, and the transformed fundamental solution is supported there. The eight-dimensional relative $\mathbb{B}^{\mathrm{spl}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.</p>
 <h2 id="summary">Summary</h2>
 <p>The additive group of the split-quaternion algebra is a locally compact abelian group, identified with $\mathbb{R}^4$, with dual $\mathbb{R}^4$ and scalar characters $\chi_\xi(\tilde q) = \exp(2\pi\mathrm{i}\langle \tilde q,\xi\rangle)$. The Fourier transform of the group is the fourfold scalar transform applied to the components, with inversion and Plancherel; the convolution theorem holds with the algebra product, because the characters are scalar, so the transform is an isomorphism of the convolution algebra onto the pointwise product algebra; the convolution is associative because the algebra product is, and it is not commutative, because the algebra product is not.</p>
 <p>The algebra-kernel transform uses the exponential of the algebra as kernel. The kernel is never a zero divisor, since $\langle \exp(\tilde q)\rangle_{\natural} = \exp(2\operatorname{Sc}\tilde q) > 0$, but it is not a character, and the inversion formula requires the reciprocal of the difference variable, which exists exactly off the null cone; the transform degenerates there. For the vector operator the symbol is the frequency vector $\xi$, invertible exactly when $\langle \xi\rangle_{\natural}\neq0$; the singular frequencies form the null cone, which is the characteristic variety of the operator and the zero divisor set. The transformed fundamental solution is $\mathcal F E_D = -(2\pi\mathrm{i}\xi)^{-1} = \xi/(2\pi\mathrm{i}\langle \xi\rangle_{\natural})$, a distribution whose singular support is exactly the null cone, and the vanishing determinant is thus the frequency-space explanation of the cone-supported fundamental solution and of the failure of the elliptic theory. The symbol is the frequency $\xi$ itself, and it is singular exactly on the null cone.</p>

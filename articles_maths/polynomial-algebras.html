@@ -121,7 +121,7 @@ $$</p>
 <p><em>Proof.</em> The quotient $k[x]/(f)$ is an integral domain if and only if $(f)$ is prime, and a field if and only if $(f)$ is maximal; in a principal ideal domain the two notions coincide, and $k[x]/(f)$ is a domain exactly when $f$ is irreducible, since a factorisation $f = gh$ with both factors of lower degree produces zero divisors. The dimension statement is that the images of $1, x, \dots, x^{d-1}$ form a basis, by the division algorithm.</p>
 <p><strong>Example (the two-dimensional algebras).</strong> The three two-dimensional commutative unital real algebras are quotients by a quadratic:</p>
 <p>$$
-\mathbb{C} = \frac{\mathbb{R}[x]}{(x^2+1)}, \qquad \mathbb{D} = \frac{\mathbb{R}[x]}{(x^2-1)}, \qquad \mathbb{D}' = \frac{\mathbb{R}[x]}{(x^2)} .
+\mathbb{C} = \frac{\mathbb{R}[x]}{(x^2+1)}, \qquad \mathbb{C}^{\mathrm{spl}} = \frac{\mathbb{R}[x]}{(x^2-1)}, \qquad \mathbb{C}^{\mathrm{dua}} = \frac{\mathbb{R}[x]}{(x^2)} .
 $$</p>
 <p>The first is a field because $x^2+1$ is irreducible over $\mathbb{R}$; the second is $\mathbb{R}\times\mathbb{R}$ because $x^2-1 = (x-1)(x+1)$ is a product of distinct linear factors; the third has a nilpotent because $x^2$ is a square. These are the three cases, and they exhaust the two-dimensional cases by the same discriminant argument.</p>
 <p><strong>Theorem (Chinese remainder, standard).</strong> If $f = f_1\cdots f_r$ with the $f_i$ pairwise coprime, then</p>
@@ -129,7 +129,7 @@ $$</p>
 \frac{k[x]}{(f)} \cong \prod_{i=1}^{r} \frac{k[x]}{(f_i)}
 $$</p>
 <p>as $k$-algebras. In particular, $k[x]/(f)$ is a product of field extensions of $k$ if and only if $f$ is squarefree; the factors are then the fields $k[x]/(f_i)$ for the distinct irreducible factors $f_i$ of $f$.</p>
-<p>The decomposition of $\mathbb{D}$ into $\mathbb{R}\times\mathbb{R}$ is the case $f = x^2 - 1 = (x-1)(x+1)$, and the failure of $\mathbb{D}'$ to decompose is the case $f = x^2$, where the two factors coincide.</p>
+<p>The decomposition of $\mathbb{C}^{\mathrm{spl}}$ into $\mathbb{R}\times\mathbb{R}$ is the case $f = x^2 - 1 = (x-1)(x+1)$, and the failure of $\mathbb{C}^{\mathrm{dua}}$ to decompose is the case $f = x^2$, where the two factors coincide.</p>
 <h2 id="several-variables">Several Variables</h2>
 <p><strong>Definition.</strong> The <strong>polynomial algebra in $n$ variables</strong> $k[x_1,\dots,x_n]$ is the commutative $k$-algebra with $k$-basis the monomials $x_1^{\alpha_1}\cdots x_n^{\alpha_n}$, $\alpha_i \geq 0$, and multiplication by adding exponent vectors. Its elements are finite sums</p>
 <p>$$

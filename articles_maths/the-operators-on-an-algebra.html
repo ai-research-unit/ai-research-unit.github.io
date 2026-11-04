@@ -403,7 +403,7 @@ $$</p>
 $$</p>
 <p>a one-dimensional subspace of the four-dimensional ambient space. This is the sharpest of the statements for this example: the nonzero skew operator is exactly multiplication by the imaginary unit, up to scale. The transposition is the one of the trace pairing, and the pairing is used only to define the subspace. The reading of this line as the orthogonal group of the plane, with its rotations and its unit circle, needs the norm and belongs to Part IV, where the distance is available, and is named only.</p>
 <h2 id="the-three-two-dimensional-algebras">The Three Two-Dimensional Algebras</h2>
-<p>The pattern that decides the derivation space is visible by running the same computation over the three commutative unital two-dimensional algebras $\mathbb{C}$, $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ and $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$. All three have the same ambient space $M_2(\mathbb{R})$, and the classes separate as follows.</p>
+<p>The pattern that decides the derivation space is visible by running the same computation over the three commutative unital two-dimensional algebras $\mathbb{C}$, $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}[j]/(j^2-1)$ and $\mathbb{C}^{\mathrm{dua}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$. All three have the same ambient space $M_2(\mathbb{R})$, and the classes separate as follows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -425,16 +425,16 @@ $$</p>
 <td>$\mathbb{Z}/2$</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$</td>
-<td>$\mathbb{D}$, 2</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$, 2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>$\mathbb{Z}/2$</td>
 </tr>
 <tr>
-<td>$\mathbb{D}'$</td>
-<td>$\mathbb{D}'$, 2</td>
+<td>$\mathbb{C}^{\mathrm{dua}}$</td>
+<td>$\mathbb{C}^{\mathrm{dua}}$, 2</td>
 <td>0</td>
 <td>0</td>
 <td><strong>1</strong></td>
@@ -443,9 +443,9 @@ $$</p>
 </tbody>
 </table></div>
 <p>All three algebras are commutative, so each equals its own centre and $\dim Z(A) = 2$ in every row; equivalently, every inner derivation vanishes in all three rows, since $\mathrm{ad}_a = 0$ when the algebra is commutative.</p>
-<p>The formula $\dim \operatorname{Der} = n - \dim Z(A)$ therefore holds in the first two rows but <strong>fails in the third</strong>: it predicts $0$ for $\mathbb{D}'$, where the derivation space is one-dimensional. The failure is exactly the statement that the single derivation of $\mathbb{D}'$ is <strong>outer</strong>. So the formula is not a consequence of dimension counting alone; it holds precisely when every derivation is inner, which is a property of the algebra and not of its dimension. The automorphism group is finite in the first two rows and one-dimensional in the third, matching the dimension of the derivation space in every row, so the exponential link between the two rungs is unaffected by the failure of the formula.</p>
+<p>The formula $\dim \operatorname{Der} = n - \dim Z(A)$ therefore holds in the first two rows but <strong>fails in the third</strong>: it predicts $0$ for $\mathbb{C}^{\mathrm{dua}}$, where the derivation space is one-dimensional. The failure is exactly the statement that the single derivation of $\mathbb{C}^{\mathrm{dua}}$ is <strong>outer</strong>. So the formula is not a consequence of dimension counting alone; it holds precisely when every derivation is inner, which is a property of the algebra and not of its dimension. The automorphism group is finite in the first two rows and one-dimensional in the third, matching the dimension of the derivation space in every row, so the exponential link between the two rungs is unaffected by the failure of the formula.</p>
 <p>This also separates the two quantities that the notation invites one to confuse. The centre $Z(A)$ is a subspace of $A$, of dimension $2$ for each of these commutative algebras. The centralizer of $L(A)$ inside $\operatorname{End}_{\mathbb{R}}(A)$ is the <em>right multiplications</em> $R(A)$, also of dimension $2$, and the two are different objects that happen to share a dimension here. Only the centre enters the derivation dimension.</p>
-<p><strong>What the derivations detect.</strong> The distinction between the rows is the presence of a nilpotent. For $\mathbb{D}$ the generator satisfies $j^2 = 1$, and $0 = \delta(j^2) = 2j\,\delta(j)$ with $j$ invertible forces $\delta(j) = 0$, so $\delta$ vanishes. For $\mathbb{D}'$ the generator satisfies $\varepsilon^2 = 0$, and the Leibniz rule imposes no such obstruction; the space is one-dimensional, spanned by the derivation with</p>
+<p><strong>What the derivations detect.</strong> The distinction between the rows is the presence of a nilpotent. For $\mathbb{C}^{\mathrm{spl}}$ the generator satisfies $j^2 = 1$, and $0 = \delta(j^2) = 2j\,\delta(j)$ with $j$ invertible forces $\delta(j) = 0$, so $\delta$ vanishes. For $\mathbb{C}^{\mathrm{dua}}$ the generator satisfies $\varepsilon^2 = 0$, and the Leibniz rule imposes no such obstruction; the space is one-dimensional, spanned by the derivation with</p>
 <p>$$
 \delta(\varepsilon) = \varepsilon, \qquad \delta(a + b\varepsilon) = b\varepsilon .
 $$</p>
@@ -477,7 +477,7 @@ $$</p>
 <p>Fixing a $k$-algebra $A$ with $n = \dim_k A$ places every linear operator on $A$ in the one ambient space $\operatorname{End}_k(A) \cong M_n(k)$, of dimension $n^2$, and the classes of operators worth naming are subspaces and groups inside it. A condition linear in the operator defines a subspace: the derivations by the Leibniz rule, the $A$-linear operators as the centralizer of the left multiplications, and the skew operators. A condition nonlinear in the operator defines a set that is not a subspace, and a group once invertibility is added: the algebra automorphisms, which are the units of the endomorphism monoid. The derivations are the tangent space of the automorphism group at the identity, so the dimension of the one equals the dimension of the other.</p>
 <p>The ladder for the biquaternion algebra inside $M_4(\mathbb{C})$ has the all-operators rung of dimension $16$, the skew-operator rung of dimension $6$, the derivations and the pure left multiplications of dimension $3$ each, the left and right multiplication spaces of dimension $4$ each, and the scalars of dimension $1$. The two three-dimensional pieces satisfy $\mathfrak{skew}_4(\mathbb{C}) = L(\text{pure}) \oplus \operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the left multiplication space is $\mathbb{C}\cdot I$ plus the pure part. The automorphism group $PSL_2(\mathbb{C})$ sits inside the ambient space as a group.</p>
 <p>The worked case of $\mathbb{C}$ over $\mathbb{R}$ exhibits the whole scheme in the smallest nontrivial dimension. The ambient space $M_2(\mathbb{R})$ has dimension $4$ and splits as $L(\mathbb{C}) \oplus \{\text{conjugate-linear maps}\}$, of dimensions $2 + 2$; the derivations are zero, because $0 = \delta(i^2) = 2i\,\delta(i)$ kills the generator; the automorphisms are $\mathbb{Z}/2$, generated by a reflection; and the skew operators span the one-dimensional subspace generated by $L(i)$.</p>
-<p>Running the same computation over the three two-dimensional algebras shows the derivation dimension to be the invariant that separates them: it is $0$ for $\mathbb{C}$ and $\mathbb{D}$ and $1$ for $\mathbb{D}'$, and the asymmetry is caused by the nilpotent generator of $\mathbb{D}'$, which the Leibniz rule does not obstruct. These three algebras are commutative, so all their inner derivations vanish and $\dim Z(A) = n$ for each; the one-dimensional derivation space of $\mathbb{D}'$ is therefore entirely outer, and it is the case in which the formula $\dim \operatorname{Der} = n - \dim Z(A)$ fails, since it predicts $0$. The formula holds for $\mathbb{H}$ over $\mathbb{R}$ and for $\mathbb{B}$ over $\mathbb{C}$, where it gives $\dim \operatorname{Der} = 3$, and over $\mathbb{R}$ the biquaternion derivation space is six-dimensional. The orthogonal and Lorentz readings of these spaces need a form and belong to Part II and Part IV, where the form and the distance are available.</p>
+<p>Running the same computation over the three two-dimensional algebras shows the derivation dimension to be the invariant that separates them: it is $0$ for $\mathbb{C}$ and $\mathbb{C}^{\mathrm{spl}}$ and $1$ for $\mathbb{C}^{\mathrm{dua}}$, and the asymmetry is caused by the nilpotent generator of $\mathbb{C}^{\mathrm{dua}}$, which the Leibniz rule does not obstruct. These three algebras are commutative, so all their inner derivations vanish and $\dim Z(A) = n$ for each; the one-dimensional derivation space of $\mathbb{C}^{\mathrm{dua}}$ is therefore entirely outer, and it is the case in which the formula $\dim \operatorname{Der} = n - \dim Z(A)$ fails, since it predicts $0$. The formula holds for $\mathbb{H}$ over $\mathbb{R}$ and for $\mathbb{B}$ over $\mathbb{C}$, where it gives $\dim \operatorname{Der} = 3$, and over $\mathbb{R}$ the biquaternion derivation space is six-dimensional. The orthogonal and Lorentz readings of these spaces need a form and belong to Part II and Part IV, where the form and the distance are available.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -552,7 +552,7 @@ $$</p>
 <td>Real, complex, quaternion and biquaternion algebras</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$, $\mathbb{D}'$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$, $\mathbb{C}^{\mathrm{dua}}$</td>
 <td>Split complex numbers and dual numbers</td>
 </tr>
 </tbody>

@@ -79,15 +79,15 @@ $$
 \lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangledown}\bar Q_{\blacktriangledown}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}
 \;}
 $$
-is a norm on $\mathbb{B}_{\mathrm{r}}$: it is non-negative and vanishes only at $\breve Q=0$, it is homogeneous, $\lVert\lambda \breve Q\rVert=\lvert\lambda\rvert\lVert \breve Q\rVert$ for real $\lambda$, and it satisfies the triangle inequality.</p>
+is a norm on $\mathbb{B}^{\mathrm{red}}$: it is non-negative and vanishes only at $\breve Q=0$, it is homogeneous, $\lVert\lambda \breve Q\rVert=\lvert\lambda\rvert\lVert \breve Q\rVert$ for real $\lambda$, and it satisfies the triangle inequality.</p>
 <p><em>Proof.</em> $\langle \breve Q\rangle_{\mathrm{ts}*}=Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangledown}\bar Q_{\blacktriangledown}$ is a sum of four squares of real numbers, non-negative and vanishing only when all four vanish, which is $\breve Q=0$; homogeneity is the homogeneity of a square root of a sum of squares under real scaling; and the square root of a positive definite quadratic form is the Euclidean norm of the coordinate quadruple, for which the triangle inequality is the Cauchy–Schwarz inequality.</p>
 <p><strong>Corollary (only $\langle\cdot\rangle_{\mathrm{ts}*}$ gives a topological norm).</strong> Of the four algebraic norms, only $\langle\cdot\rangle_{\mathrm{ts}*}$ is positive definite, so only $\langle\cdot\rangle_{\mathrm{ts}*}$ yields a topological norm; the complex-valued $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\mathrm{ts}}$ and the indefinite $\langle\cdot\rangle_{*}$ do not. Their moduli $\lvert B\rvert,\lvert N\rvert,\lvert H\rvert$ are real and non-negative but vanish on non-zero elements, so no square root of them is a norm; the metric question is taken up in <em>Topology and Metric for Each of the Operations</em>.</p>
 <p><em>Proof.</em> $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\mathrm{ts}}$ take complex values and vanish on the isotropic sets of the two bilinear forms; $\langle\cdot,\cdot\rangle_{*}$ is indefinite of signature $(2,2)$ and vanishes on its null set; a norm must vanish only at the origin, which none of the three does.</p>
 <h2 id="the-topological-norm-equivalence-and-uniqueness">The Topological Norm: Equivalence and Uniqueness</h2>
 <p><strong>All norms on the finite-dimensional space are equivalent, so the topology they give is unique.</strong></p>
-<p><strong>Theorem (equivalence).</strong> Any two norms on $\mathbb{B}_{\mathrm{r}}$ are equivalent: there are constants such that each is bounded by a constant multiple of the other, so they define the same open sets, the same convergent sequences and the same continuous functions.</p>
+<p><strong>Theorem (equivalence).</strong> Any two norms on $\mathbb{B}^{\mathrm{red}}$ are equivalent: there are constants such that each is bounded by a constant multiple of the other, so they define the same open sets, the same convergent sequences and the same continuous functions.</p>
 <p><em>Proof.</em> On a finite-dimensional real vector space every norm is equivalent to the Euclidean one, by the compactness of the unit sphere; the space here is $\mathbb{R}^{4}$ through the coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$.</p>
-<p><strong>Corollary (the topology is the standard one).</strong> The topology of $\mathbb{B}_{\mathrm{r}}$ is the standard topology of $\mathbb{R}^{4}$, independent of the norm chosen; it is metrisable, and the metric of $\langle\cdot\rangle_{\mathrm{ts}*}$,
+<p><strong>Corollary (the topology is the standard one).</strong> The topology of $\mathbb{B}^{\mathrm{red}}$ is the standard topology of $\mathbb{R}^{4}$, independent of the norm chosen; it is metrisable, and the metric of $\langle\cdot\rangle_{\mathrm{ts}*}$,
 $$
 \boxed{\;
 d(\breve Q_{1},\breve Q_{2})=\lVert \breve Q_{1}-\breve Q_{2}\rVert=\sqrt{\langle \breve Q_{1}-\breve Q_{2}\rangle_{\mathrm{ts}*}}
@@ -96,14 +96,14 @@ $$
 is one of the compatible metrics. The space is complete and locally compact.</p>
 <p><em>Proof.</em> The coordinate map $\breve Q\mapsto(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ is an isomorphism of real vector spaces onto $\mathbb{R}^{4}$, and it is a homeomorphism for the two Euclidean norms; the completeness and the local compactness are those of $\mathbb{R}^{4}$.</p>
 <h2 id="the-topology">The Topology</h2>
-<p><strong>Definition.</strong> The <strong>Euclidean topology</strong> of $\mathbb{B}_{\mathrm{r}}$ is the topology induced by the norm $\lVert\cdot\rVert$; the <strong>open ball</strong> of centre $\breve Q$ and radius $r>0$ is $B(\breve Q,r)=\{\breve Q_{2}:\lVert \breve Q-\breve Q_{2}\rVert<r\}$, and the <strong>closed ball</strong> is its closure.</p>
+<p><strong>Definition.</strong> The <strong>Euclidean topology</strong> of $\mathbb{B}^{\mathrm{red}}$ is the topology induced by the norm $\lVert\cdot\rVert$; the <strong>open ball</strong> of centre $\breve Q$ and radius $r>0$ is $B(\breve Q,r)=\{\breve Q_{2}:\lVert \breve Q-\breve Q_{2}\rVert<r\}$, and the <strong>closed ball</strong> is its closure.</p>
 <p><strong>Theorem (the basic properties).</strong> The space is connected and path-connected, indeed contractible, as a real vector space; it is not compact; and it is homeomorphic to $\mathbb{R}^{4}$, hence to the open ball and to the open four-dimensional cube.</p>
 <p><em>Proof.</em> Every vector space is contractible by the straight-line homotopy to the origin, hence connected and path-connected; the space is unbounded, so it is not compact; and the norm gives a homeomorphism with $\mathbb{R}^{4}$ by the coordinate map.</p>
 <p><strong>Corollary (the one-point compactification).</strong> The one-point compactification of the space is the four-sphere $S^{4}$; the spheres and the balls of the norm are the images of the standard ones under the coordinate homeomorphism.</p>
 <p><em>Proof.</em> The one-point compactification of $\mathbb{R}^{n}$ is $S^{n}$, here $n=4$; and the norm balls are the standard Euclidean balls read in the coordinates.</p>
 <h2 id="the-algebra-structure">The Algebra Structure</h2>
 <p><strong>The four products are continuous, and the three conjugations are isometries.</strong></p>
-<p><strong>Theorem (continuity of the products).</strong> The four general products, as maps $\mathbb{B}_{\mathrm{r}}\times\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}}$, are continuous; so is the addition, and so is the multiplication by a scalar. The algebra is a topological algebra for the Euclidean topology.</p>
+<p><strong>Theorem (continuity of the products).</strong> The four general products, as maps $\mathbb{B}^{\mathrm{red}}\times\mathbb{B}^{\mathrm{red}}\to\mathbb{B}^{\mathrm{red}}$, are continuous; so is the addition, and so is the multiplication by a scalar. The algebra is a topological algebra for the Euclidean topology.</p>
 <p><em>Proof.</em> Each product is bilinear or sesquilinear over $\mathbb{C}$ with constant coordinates, hence a continuous map of the finite-dimensional space, by the continuity of the polynomial and conjugate-polynomial coordinate functions; the addition is continuous as the addition of $\mathbb{R}^{4}$.</p>
 <p><strong>Theorem (the involutions are isometries).</strong> The bar, the tessarine sign and the star preserve the norm and the metric,
 $$
@@ -111,13 +111,13 @@ $$
 \lVert\bar{\breve Q}\rVert=\lVert \breve Q_{\mathrm{ts}}\rVert=\lVert \breve Q^{*}\rVert=\lVert \breve Q\rVert
 \;},
 $$
-so each is an isometry of $\mathbb{B}_{\mathrm{r}}$ onto itself, and the three form a Klein four-group of isometries.</p>
+so each is an isometry of $\mathbb{B}^{\mathrm{red}}$ onto itself, and the three form a Klein four-group of isometries.</p>
 <p><em>Proof.</em> $\langle \breve Q\rangle_{\mathrm{ts}*}=Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangledown}\bar Q_{\blacktriangledown}$; the bar replaces $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ by their conjugates, leaving the two moduli; the tessarine sign negates $Q_{\blacktriangledown}$, leaving the two moduli; the star is their composite, so it too preserves them. The metric is $\lVert \breve Q-\breve Q_{2}\rVert$, and each involution is linear or antilinear and preserves the norm, hence the metric; the Klein group is <em>The Two Involutions and the Group of Involutions</em>.</p>
-<p><strong>Corollary (the unit group is open and the zero divisors closed).</strong> The unit group $\mathbb{B}_{\mathrm{r}}^{\times}$ is open, and its complement, the zero-divisor set, is closed; the zero-divisor set has empty interior, so the unit group is dense.</p>
+<p><strong>Corollary (the unit group is open and the zero divisors closed).</strong> The unit group ${\mathbb{B}^{\mathrm{red}}}^{\times}$ is open, and its complement, the zero-divisor set, is closed; the zero-divisor set has empty interior, so the unit group is dense.</p>
 <p><em>Proof.</em> The zero-divisor set is $\{\langle \breve Q\rangle_{\mathrm{ts}}=0\}=\{Q_{+}=0\}\cup\{Q_{-}=0\}$, the union of two real planes through the origin, which is closed as the vanishing set of the continuous functions $Q_{+}$ and $Q_{-}$; a plane has empty interior, and a finite union of sets of empty interior has empty interior, so the unit group is dense. The openness is the complement of a closed set.</p>
 <h2 id="the-relation-to-the-four-products">The Relation to the Four Products</h2>
 <p><strong>Each product is continuous and induces the same topology, the Euclidean one.</strong></p>
-<p><strong>Theorem.</strong> For each of the four products $\circ$, the operation $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ is a homeomorphism of $\mathbb{B}_{\mathrm{r}}$ onto itself when $\breve Q$ is a unit, and the topology attached to the product is the Euclidean topology; the four products give one and the same topology.</p>
+<p><strong>Theorem.</strong> For each of the four products $\circ$, the operation $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ is a homeomorphism of $\mathbb{B}^{\mathrm{red}}$ onto itself when $\breve Q$ is a unit, and the topology attached to the product is the Euclidean topology; the four products give one and the same topology.</p>
 <p><em>Proof.</em> A continuous bijection of $\mathbb{R}^{4}$ whose inverse is the multiplication by $\breve Q^{-1}$, also continuous, is a homeomorphism; and the topology is the unique vector-space topology, so all four agree. The differences between the four are in the metric-like quantities they carry, not in the topology, as <em>Topology and Metric for Each of the Operations</em> records.</p>
 <p><strong>Corollary (the product degenerates exactly at the zero divisors).</strong> For a zero divisor $\breve Q$ the map $\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ is continuous but not injective and not surjective, its image being one of the two idempotent lines for the plain product; so the failure of the product is concentrated on the closed zero-divisor set.</p>
 <p><em>Proof.</em> Multiplication by a zero divisor has a non-trivial kernel and an image of dimension smaller than four; the extreme case is an element of an idempotent line, whose image is that line.</p>
@@ -145,7 +145,7 @@ so each is an isometry of $\mathbb{B}_{\mathrm{r}}$ onto itself, and the three f
 <td>the open ball of centre $\breve Q$ and radius $r$</td>
 </tr>
 <tr>
-<td>$\mathbb{B}_{\mathrm{r}}^{\times}$</td>
+<td>${\mathbb{B}^{\mathrm{red}}}^{\times}$</td>
 <td>the unit group, open and dense</td>
 </tr>
 <tr>

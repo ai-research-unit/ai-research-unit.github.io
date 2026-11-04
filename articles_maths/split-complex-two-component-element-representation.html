@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="split-complex-two-component-element-representation"><strong>Split-Complex Two-Component Element Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The split-complex algebra $\mathbb{D}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of <strong>two real coefficients</strong>, $Q = q + j q' \leftrightarrow (q, q')$. This article presents that <strong>two-component realization</strong> in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the last of the three Representation articles, after <em>Split-Complex Element Representations</em> and <em>Split-Complex Regular Element Representation</em>.</p>
+<p>The split-complex algebra $\mathbb{C}^{\mathrm{spl}}$ is two-dimensional over $\mathbb{R}$, so a split-complex number is read off as its list of <strong>two real coefficients</strong>, $Q = q + j q' \leftrightarrow (q, q')$. This article presents that <strong>two-component realization</strong> in full: the coefficient space, the column and the dual row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces as coordinate conditions, and the norm with its two signs. It is the last of the three Representation articles, after <em>Split-Complex Element Representations</em> and <em>Split-Complex Regular Element Representation</em>.</p>
 <p>The word <em>representation</em> is used here in the sense of a concrete realization of the algebra as computable objects, not in the technical sense of a vector space carrying an algebra homomorphism into its endomorphisms. The technical sense is the subject of <em>Split-Complex Element Representations</em>, and the matrix of the action on this coefficient space is the subject of <em>Split-Complex Regular Element Representation</em>; this article supplies the coordinate space on which that operator is written.</p>
 <p>The article owns the coefficient space $\mathbb{R}^2$, the column and the row, the component form of the product, the conjugation in coordinates, the two fixed-point subspaces and the norm with its two real restrictions. It does not treat the matrix of multiplication on this space, which belongs to <em>Split-Complex Regular Element Representation</em>; it does not treat the polar forms, which belong to <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> and its two companion articles; and it introduces no physical vocabulary. The comparison throughout is with the complex field, whose two-component realization is the <strong>definite</strong> one and whose product rule differs from the present one in a single sign.</p>
 <h2 id="the-coefficient-space">The Coefficient Space</h2>
@@ -79,9 +79,9 @@
 Q_\mu = (Q_0, Q_1), \qquad Q_0 = q, \quad Q_1 = q'.
 $$</p>
 <p>The coefficient of the unit is written $Q_0$ and the coefficient of $j$ is written $Q_1$; the component $Q_0$ is the <strong>real component</strong> and $Q_1$ the <strong>imaginary component</strong>. These are the honest names, because they are the coefficients of the real and imaginary parts of $Q$ and nothing else.</p>
-<p><strong>Proposition.</strong> The map $Q \mapsto Q_\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{D}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.</p>
+<p><strong>Proposition.</strong> The map $Q \mapsto Q_\mu$ is an $\mathbb{R}$-linear isomorphism from $\mathbb{C}^{\mathrm{spl}}$ onto $\mathbb{R}^2$. Consequently the coefficient space has real dimension $2$ and no other dimension: a split-complex number is entirely real, so its coefficient space is $\mathbb{R}^2$ and there is no splitting of each coordinate into real and imaginary parts.</p>
 <p><strong>Proof.</strong> The map sends the basis $1, j$ to the standard basis of $\mathbb{R}^2$ and is extended by linearity; it is bijective on bases. The algebra is a real vector space of dimension $2$, matched by the dimension of $\mathbb{R}^2$.</p>
-<p>The coefficient space $\mathbb{R}^2$ <strong>is</strong> the algebra itself, seen as a coordinate space, and it is also the simple module of $\mathbb{D}$: the algebra is two-dimensional, its two idempotent components are one-dimensional, and the regular module is the direct sum of the two one-dimensional simple modules. So the numbers $2$, $2$, $2$ appearing as the dimension of the algebra, the size of the regular matrix of <em>Split-Complex Regular Element Representation</em>, and the dimension of the coefficient space are the same number for the same reason.</p>
+<p>The coefficient space $\mathbb{R}^2$ <strong>is</strong> the algebra itself, seen as a coordinate space, and it is also the simple module of $\mathbb{C}^{\mathrm{spl}}$: the algebra is two-dimensional, its two idempotent components are one-dimensional, and the regular module is the direct sum of the two one-dimensional simple modules. So the numbers $2$, $2$, $2$ appearing as the dimension of the algebra, the size of the regular matrix of <em>Split-Complex Regular Element Representation</em>, and the dimension of the coefficient space are the same number for the same reason.</p>
 <h3 id="coordinates-in-the-idempotent-basis">Coordinates in the Idempotent Basis</h3>
 <p>The coefficient pair $(q, q')$ in the basis $\{1, j\}$ and the idempotent pair $(Q_+, Q_-)$ in the basis $\{\Pi_+, \Pi_-\}$ are related by</p>
 <p>$$
@@ -106,7 +106,7 @@ $$</p>
 QB = (q b + q' b') + (q b' + q' b) j, \qquad B = b+j b',
 $$</p>
 <p>so the two components of the product are the two entries of the matrix product $\mathsf{M}_2(Q)B$.</p>
-<p><strong>Remark (the row is the dual).</strong> The row $Q^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{D}, \mathbb{R})$ associated with $Q$ by the standard pairing $\langle Q^{\mathsf{T}}, B\rangle = q b + q' b'$, and it is <strong>not</strong> a further realization of the algebra. The dual of a left module is a right module, carrying the <em>right</em> action $(\varphi\cdot Q)(B) = \varphi(QB)$. Because $\mathbb{D}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(Q)$ is $\mathsf{M}_2(Q)$ itself, since the regular matrix is symmetric.</p>
+<p><strong>Remark (the row is the dual).</strong> The row $Q^{\mathsf{T}}$ is the element of the dual space $\operatorname{Hom}_{\mathbb{R}}(\mathbb{C}^{\mathrm{spl}}, \mathbb{R})$ associated with $Q$ by the standard pairing $\langle Q^{\mathsf{T}}, B\rangle = q b + q' b'$, and it is <strong>not</strong> a further realization of the algebra. The dual of a left module is a right module, carrying the <em>right</em> action $(\varphi\cdot Q)(B) = \varphi(QB)$. Because $\mathbb{C}^{\mathrm{spl}}$ is commutative, the right action is the action of the same element, and the row picture and the column picture are interchanged by transposition without a conjugate: the transpose of $\mathsf{M}_2(Q)$ is $\mathsf{M}_2(Q)$ itself, since the regular matrix is symmetric.</p>
 <h2 id="multiplication-in-two-component-form">Multiplication in Two-Component Form</h2>
 <p><strong>Proposition (the product in components).</strong> Let $Q, B$ have two-component vectors $(q, q')$ and $(b, b')$. Then the two-component vector of the product has components</p>
 <p>$$
@@ -189,15 +189,15 @@ $$</p>
 <p>The conjugation splits the coefficient space into its fixed and anti-fixed subspaces.</p>
 <p><strong>Fixed subspace.</strong> The condition $(q,-q') = (q,q')$ gives $q' = 0$, so</p>
 <p>$$
-\mathbb{R}_{\mathbb{D}} = \{(q, 0)\},
+\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{(q, 0)\},
 $$</p>
 <p>the real axis, of real dimension $1$. It is the set of real components.</p>
 <p><strong>Anti-fixed subspace.</strong> The condition $(q,-q') = (-q,-q')$ gives $q = 0$, so</p>
 <p>$$
-j\mathbb{R}_{\mathbb{D}} = \{(0, q')\},
+j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{(0, q')\},
 $$</p>
 <p>the split imaginary axis, of real dimension $1$. Its elements are the pure imaginary components.</p>
-<p>So $\mathbb{D} = \mathbb{R}_{\mathbb{D}}\oplus j\mathbb{R}_{\mathbb{D}}$ as a direct sum of coordinate axes, and each coordinate $q, q'$ is the projection onto the corresponding axis:</p>
+<p>So $\mathbb{C}^{\mathrm{spl}} = \mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}\oplus j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ as a direct sum of coordinate axes, and each coordinate $q, q'$ is the projection onto the corresponding axis:</p>
 <p>$$
 q = \tfrac12(Q + \bar Q), \qquad q' = \tfrac12 j^{-1}(Q - \bar Q).
 $$</p>
@@ -241,7 +241,7 @@ $$</p>
 <h3 id="the-two-real-restrictions">The Two Real Restrictions</h3>
 <p>Restricted to the two fixed-point subspaces the norm is definite:</p>
 <p>$$
-\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{D}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{D}}}(q') = -q'^2 \quad (\text{negative definite}) \;},
+\boxed{\; \langle\cdot\rangle_{*}\big|_{\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}}(q) = q^2 \quad (\text{positive definite}), \qquad \langle\cdot\rangle_{*}\big|_{j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}}(q') = -q'^2 \quad (\text{negative definite}) \;},
 $$</p>
 <p>so the real axis is positive definite and the split imaginary axis negative definite. This is the coordinate statement, made in <em>Norm and Invertibility in the General Split-Complex Algebra</em>, that the null cone meets each eigenspace only at the origin. In the idempotent coordinates the same form is the product $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when one coordinate vanishes.</p>
 <p><strong>Comparison with the complex case.</strong> For $\mathbb{C}$ the norm is</p>
@@ -256,7 +256,7 @@ $$</p>
 <tr>
 <th>feature</th>
 <th>$\mathbb{C}$ ($i^2 = -1$)</th>
-<th>$\mathbb{D}$ ($j^2 = +1$)</th>
+<th>$\mathbb{C}^{\mathrm{spl}}$ ($j^2 = +1$)</th>
 </tr>
 </thead>
 <tbody>
@@ -278,7 +278,7 @@ $$</p>
 <tr>
 <td>fixed / anti-fixed subspaces</td>
 <td>$\mathbb{R}$ and $i\mathbb{R}$</td>
-<td>$\mathbb{R}_{\mathbb{D}}$ and $j\mathbb{R}_{\mathbb{D}}$</td>
+<td>$\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$ and $j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}}$</td>
 </tr>
 <tr>
 <td>norm</td>
@@ -321,7 +321,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D}$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
 <td>Split complex algebra</td>
 </tr>
 <tr>
@@ -357,11 +357,11 @@ $$</p>
 <td>Matrix of the conjugation</td>
 </tr>
 <tr>
-<td>$\mathbb{R}_{\mathbb{D}} = \{(q,0)\}$</td>
+<td>$\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{(q,0)\}$</td>
 <td>Fixed subspace, real axis</td>
 </tr>
 <tr>
-<td>$j\mathbb{R}_{\mathbb{D}} = \{(0,q')\}$</td>
+<td>$j\mathbb{R}_{\mathbb{C}^{\mathrm{spl}}} = \{(0,q')\}$</td>
 <td>Anti-fixed subspace, split imaginary axis</td>
 </tr>
 <tr>

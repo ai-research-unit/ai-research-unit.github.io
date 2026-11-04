@@ -74,16 +74,16 @@
 <p>Throughout the basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$ and $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$; the idempotent coordinates are $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, and $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle \breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$, and a general function is written $f$ or $\Phi$.</p>
 <h2 id="the-variable-and-its-structure">The Variable and Its Structure</h2>
 <p><strong>The algebra carries two commuting complex structures, and the two idempotent coordinates are the two independent complex variables of the theory.</strong></p>
-<p><strong>Definition.</strong> On the real algebra $\mathbb{B}_{\mathrm{r}}$ define the two real-linear maps
+<p><strong>Definition.</strong> On the real algebra $\mathbb{B}^{\mathrm{red}}$ define the two real-linear maps
 $$
 J_{i}(\breve Q)=i\breve Q,\qquad J_{ij}(\breve Q)=ij\breve Q .
 $$
 They are the <strong>two complex structures</strong> of the algebra, and they commute.</p>
-<p><strong>Theorem (the coordinate structure).</strong> $J_{i}$ and $J_{ij}$ are real-linear, satisfy $J_{i}^{2}=J_{ij}^{2}=-\mathrm{id}$, and commute, so each makes $\mathbb{B}_{\mathrm{r}}$ a two-dimensional complex vector space. The maps $\breve Q\mapsto Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\breve Q\mapsto Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ are complex-linear isomorphisms onto $\mathbb{C}$, and
+<p><strong>Theorem (the coordinate structure).</strong> $J_{i}$ and $J_{ij}$ are real-linear, satisfy $J_{i}^{2}=J_{ij}^{2}=-\mathrm{id}$, and commute, so each makes $\mathbb{B}^{\mathrm{red}}$ a two-dimensional complex vector space. The maps $\breve Q\mapsto Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\breve Q\mapsto Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ are complex-linear isomorphisms onto $\mathbb{C}$, and
 $$
 \breve Q\longmapsto(Q_{+},Q_{-})
 $$
-is a complex-linear isomorphism $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}^{2}$ under which the multiplication is componentwise and the norm is $K=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$.</p>
+is a complex-linear isomorphism $\mathbb{B}^{\mathrm{red}}\to\mathbb{C}^{2}$ under which the multiplication is componentwise and the norm is $K=\tfrac12(\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2})$.</p>
 <p><em>Proof.</em> $i^{2}=-1$ and $(ij)^{2}=i^{2}j^{2}=-1$, and the two multiplications commute because the algebra is commutative. The coordinates $Q_{+},Q_{-}$ are the two characters $\lambda_+,\lambda_-$, and the idempotents $\Pi_+,\Pi_-$ diagonalise the product, $(Q_{+}\Pi_++Q_{-}\Pi_-)(Q_{+}'\Pi_++Q_{-}'\Pi_-)=Q_{+}Q_{+}'\Pi_++Q_{-}Q_{-}'\Pi_-$; the norm statement is $K=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$ with $Q_{\blacktriangle}=\tfrac12(Q_{+}+Q_{-})$ and $Q_{\blacktriangledown}=\tfrac12(Q_{+}-Q_{-})$.</p>
 <h2 id="the-cauchyriemann-operator-and-its-conjugate">The Cauchy–Riemann Operator and Its Conjugate</h2>
 <p><strong>Definition (Wirtinger derivatives).</strong> On the complex coordinates $Q_{+},Q_{-}$, equivalently $Q_{\blacktriangle},Q_{\blacktriangledown}$, the <strong>Wirtinger derivatives</strong> are
@@ -122,7 +122,7 @@ $$</p>
 <p><strong>Theorem (the symbol and the characteristic set).</strong> The principal symbol of $\partial/\partial\bar Q_{+}$ at a covector $(\xi_{a},\xi_{a'},\xi_{b},\xi_{b'})$ is $\tfrac14[(\xi_{a}+\xi_{b})+i(\xi_{a'}+\xi_{b'})]$, which vanishes exactly on the two-plane $\xi_{a}+\xi_{b}=0$, $\xi_{a'}+\xi_{b'}=0$; the symbol of $\partial/\partial\bar Q_{-}$ vanishes on the two-plane $\xi_{a}-\xi_{b}=0$, $\xi_{a'}-\xi_{b'}=0$. The characteristic set of the operator is the union of the two two-planes, and the operator is elliptic at no point.</p>
 <p><em>Proof.</em> The symbols are read off the real-coordinate forms above, and a complex expression $p+iq$ vanishes exactly when both real functions vanish; the two conditions are each two independent real linear equations, hence a two-plane, and the characteristic set is the zero set of the product of the two symbols.</p>
 <h2 id="regular-functions-and-the-system-of-equations">Regular Functions and the System of Equations</h2>
-<p><strong>Definition.</strong> Let $\Omega$ be a domain and $f:\Omega\to\mathbb{B}_{\mathrm{r}}$ of class $C^{1}$. Then $f$ is <strong>regular</strong> if $\bar\partial f=0$ on $\Omega$. Because the algebra is <strong>commutative</strong>, the right operator equals the left one, $f\bar\partial=\bar\partial f$, so no distinction of left and right regularity arises.</p>
+<p><strong>Definition.</strong> Let $\Omega$ be a domain and $f:\Omega\to\mathbb{B}^{\mathrm{red}}$ of class $C^{1}$. Then $f$ is <strong>regular</strong> if $\bar\partial f=0$ on $\Omega$. Because the algebra is <strong>commutative</strong>, the right operator equals the left one, $f\bar\partial=\bar\partial f$, so no distinction of left and right regularity arises.</p>
 <p><strong>Theorem (the regularity system).</strong> Writing $f=g_{1}\Pi_++g_{2}\Pi_-$, the function $f$ is regular if and only if
 $$
 
@@ -183,7 +183,7 @@ so the regular functions form a commutative algebra over $\mathbb{C}$. They are 
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$</td>
+<td>$\mathbb{B}^{\mathrm{red}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$</td>
 <td>Reduced biquaternion algebra</td>
 </tr>
 <tr>

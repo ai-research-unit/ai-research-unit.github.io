@@ -88,7 +88,7 @@ $$</p>
 <p><em>Proof.</em> The characteristic polynomial of $L_q$ is $X^2-2tX+t^2-b^2$, and its roots are $t\pm b$. The product and the difference of the roots give the displayed identities.</p>
 <p><strong>Corollary.</strong> The split norm vanishes exactly when one eigenvalue is zero; the spectral condition vanishes exactly when the eigenvalues coincide.</p>
 <p><em>Proof.</em> The product is $q\bar q$, and the difference is $\lambda_+-\lambda_-=2b$.</p>
-<p><strong>Proposition (multiplicativity).</strong> For $q_1,q_2\in\mathbb{D}$, $(q_1q_2)\overline{(q_1q_2)}=(q_1\bar q_1)(q_2\bar q_2)$.</p>
+<p><strong>Proposition (multiplicativity).</strong> For $q_1,q_2\in\mathbb{C}^{\mathrm{spl}}$, $(q_1q_2)\overline{(q_1q_2)}=(q_1\bar q_1)(q_2\bar q_2)$.</p>
 <p><em>Proof.</em> The conjugation is an automorphism and the algebra is commutative: $(q_1q_2)\overline{(q_1q_2)}=q_1q_2\bar q_2\bar q_1=q_1\bar q_1q_2\bar q_2$.</p>
 <p><strong>Proposition (the spectral condition is not multiplicative).</strong> The elements $q_1=2+j$ and $q_2=-2+j$ have $b^2=1$, and $q_1q_2=-3$ has $b^2=0$.</p>
 <p><em>Proof.</em> Direct computation: $(2+j)(-2+j)=-4+2j-2j+1=-3$.</p>
@@ -111,7 +111,7 @@ $$</p>
 \Sigma_{10}=\{q\bar q\neq0,\ b=0\},\quad
 \Sigma_{00}=\{q\bar q=0,\ b=0\}
 $$</p>
-<p>are all non-empty, and $\mathbb{D}$ is their disjoint union.</p>
+<p>are all non-empty, and $\mathbb{C}^{\mathrm{spl}}$ is their disjoint union.</p>
 <p><em>Proof.</em> The witnesses lie in the first three, and $0$ lies in the fourth. Each element has one truth value for each condition, so it lies in one combination. The first index is the split norm, $1$ for non-vanishing and $0$ for vanishing; the second is the spectral condition, with the same convention.</p>
 <h2 id="the-null-lines">The Null Lines</h2>
 <p><strong>The null lines are $t=\pm b$; away from the origin their elements are zero divisors with distinct eigenvalues.</strong></p>
@@ -189,7 +189,7 @@ m_q^2, & \deg m_q=1.
 $$</p>
 <p>Consequently the minimal polynomial separates exactly the four sectors and adds no stratum.</p>
 <p><em>Proof.</em> The coefficients $2t$ and $q\bar q$ give $t$ and $b^2=t^2-q\bar q$; the eigenvalues $t\pm b$ follow up to order. If $b\neq0$, the minimal polynomial is $p_q$; if $b=0$, it is $X-t$ and its square is $p_q$. The four root patterns are two distinct non-zero roots, two distinct roots with one zero, a double non-zero root, and a double root at zero; they are the four sectors.</p>
-<p>In the biquaternion algebra, as <em><a href="the-spectrum.html">The Spectrum</a></em> proves, the minimal polynomial refines the degenerate cone into a scalar, a nilpotent and a unipotent stratum, and the last two are defective. In $\mathbb{D}$ no refinement exists, because the algebra is reduced and every element is semisimple.</p>
+<p>In the biquaternion algebra, as <em><a href="the-spectrum.html">The Spectrum</a></em> proves, the minimal polynomial refines the degenerate cone into a scalar, a nilpotent and a unipotent stratum, and the last two are defective. In $\mathbb{C}^{\mathrm{spl}}$ no refinement exists, because the algebra is reduced and every element is semisimple.</p>
 <h2 id="the-place-of-the-case-among-the-algebras-of-the-corpus">The Place of the Case Among the Algebras of the Corpus</h2>
 <p><strong>The plane is the only algebra of the table in which the conditions are independent and neither creates a defect.</strong></p>
 <div class="table-scroll"><table>
@@ -211,7 +211,7 @@ $$</p>
 <td>no</td>
 </tr>
 <tr>
-<td>$\mathbb{D}$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}$</td>
 <td>$t^2-b^2$, indefinite</td>
 <td>real axis</td>
 <td>none</td>
@@ -225,7 +225,7 @@ $$</p>
 <td>no</td>
 </tr>
 <tr>
-<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>$\mathbb{H}^{\mathrm{spl}}$</td>
 <td>indefinite</td>
 <td>the cone $\langle\vec v\rangle_{\natural}=0$</td>
 <td>non-zero null vector part</td>
@@ -240,8 +240,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>In $\mathbb{C}$ and $\mathbb{H}$ the norm is positive definite and vanishes only at the origin; $\Sigma_{01}$ is empty and the picture has three non-empty cells, with $\Sigma_{00}=\{0\}$. In $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ the mixed sectors are non-empty, but the degenerate locus is a cone carrying defective elements. In $\mathbb{D}$ the norm is indefinite, the conditions are independent, the degenerate locus is a line, and every element is semisimple. The plane is therefore the unique algebra with four non-empty sectors and no defective stratum; the geometry of the sectors is <em>The Four Sectors of the Split-Complex Algebra</em>.</p>
-<p>The sign of $j^2$ separates the definite norm and complex spectrum of $\mathbb{C}$ from the indefinite norm and real spectrum of $\mathbb{D}$.</p>
+<p>In $\mathbb{C}$ and $\mathbb{H}$ the norm is positive definite and vanishes only at the origin; $\Sigma_{01}$ is empty and the picture has three non-empty cells, with $\Sigma_{00}=\{0\}$. In $\mathbb{H}^{\mathrm{spl}}$ and $\mathbb{B}$ the mixed sectors are non-empty, but the degenerate locus is a cone carrying defective elements. In $\mathbb{C}^{\mathrm{spl}}$ the norm is indefinite, the conditions are independent, the degenerate locus is a line, and every element is semisimple. The plane is therefore the unique algebra with four non-empty sectors and no defective stratum; the geometry of the sectors is <em>The Four Sectors of the Split-Complex Algebra</em>.</p>
+<p>The sign of $j^2$ separates the definite norm and complex spectrum of $\mathbb{C}$ from the indefinite norm and real spectrum of $\mathbb{C}^{\mathrm{spl}}$.</p>
 <h2 id="summary">Summary</h2>
 <p>The split norm $q\bar q=t^2-b^2$ is the determinant of $L_q$ and the product of the eigenvalues; it decides invertibility. The spectral condition $b^2$ is a quarter of the discriminant; it decides whether the spectrum is separated. Both sit in $p_q(X)=X^2-2tX+q\bar q$: the norm as constant term, $4b^2$ as discriminant.</p>
 <p>The conditions are independent: $1+j$ has zero norm and eigenvalues $2,0$; $2$ has non-zero norm and repeated eigenvalue $2$. The null lines $t=\pm b$ are the zero divisors; the real axis minus the origin is the group of units with repeated eigenvalue $t$; the origin is the unique element degenerate for both and is not a zero divisor.</p>
@@ -256,7 +256,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D}=\mathbb{R}[j]/(j^2-1)$</td>
+<td>$\mathbb{C}^{\mathrm{spl}}=\mathbb{R}[j]/(j^2-1)$</td>
 <td>the split-complex algebra</td>
 </tr>
 <tr>

@@ -73,12 +73,12 @@
 <p>This article treats the integration of split-quaternion-valued functions. It fixes the orientation of the vector subspace, proves integration by parts and the divergence theorem for the algebra, derives Green's formulas for the vector operator, constructs the fundamental solution, and explains what replaces the Cauchy integral formula and what fails in its place, comparing the situation with the quaternion and split-complex cases.</p>
 <p>The split-quaternion algebra, its split-quaternion norm, its conjugation and its subspaces are assumed from <em>Split-Quaternion Algebra</em>; the Lorentzian geometry of the vector subspace, including the sign convention of the form $q_x^2-q_y^2-q_z^2$ as three-dimensional Lorentzian space, from <em>Split-Quaternion Rotations and the Lorentz Group</em>, §<em>The Lorentz Group of Signature $(2,1)$</em>, and <em>Split-Quaternion Geometry</em>; the operators, the metric structure and the failure of the naive derivative from <em>Split-Quaternion Analysis</em>, and the operators of the subspaces from <em>Split-Quaternion Analysis</em>. The theory of distributions and fundamental solutions is that of <em>Distributions and Fundamental Solutions</em>, the quaternion case that of <em>Quaternion Integration</em>, and the two-dimensional hyperbolic case that of <em>Split-Complex Integration</em>. Nothing physical is invoked.</p>
 <h2 id="volume-integrals-and-the-orientation">Volume Integrals and the Orientation</h2>
-<p><strong>Definition.</strong> Let $\Omega \subset \mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ be a domain with piecewise smooth boundary. The <strong>volume integral</strong> of a split-quaternion-valued function $f$ on $\Omega$ is defined componentwise in the basis $1, \vec e_x, \vec e_y, \vec e_z$:</p>
+<p><strong>Definition.</strong> Let $\Omega \subset \mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^4$ be a domain with piecewise smooth boundary. The <strong>volume integral</strong> of a split-quaternion-valued function $f$ on $\Omega$ is defined componentwise in the basis $1, \vec e_x, \vec e_y, \vec e_z$:</p>
 <p>$$
 \int_\Omega f = \Big(\int_\Omega f_t\Big) + \Big(\int_\Omega f_x\Big) \vec e_x + \Big(\int_\Omega f_y\Big) \vec e_y + \Big(\int_\Omega f_z\Big) \vec e_z ,
 $$</p>
 <p>and it is the Bochner integral of a function with values in the finite-dimensional normed space with the Euclidean norm of <em>Split-Quaternion Analysis</em>, §<em>The Metric Structure</em>.</p>
-<p><strong>Definition (Orientation).</strong> The algebra $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ is oriented by the frame $(1, \vec e_x, \vec e_y, \vec e_z)$, so the volume element is $\mathrm{d}q_t\,\mathrm{d}q_x\,\mathrm{d}q_y\,\mathrm{d}q_z$. The vector subspace $V$ with the coordinates $(q_x,q_y,q_z)$ is oriented by $(\vec e_x,\vec e_y,\vec e_z)$; the form restricted to it is $q_x^2-q_y^2-q_z^2$, and this is the three-dimensional Lorentzian space whose Lorentz group is $\mathrm{SO}^{+}(2,1)$ by <em>Split-Quaternion Rotations and the Lorentz Group</em>, §<em>The Lorentz Group of Signature $(2,1)$</em>. Both orientations are fixed once and for all; no factor of $i$ or of any other non-real element is introduced into any integral in this article.</p>
+<p><strong>Definition (Orientation).</strong> The algebra $\mathbb{H}^{\mathrm{spl}} \cong \mathbb{R}^4$ is oriented by the frame $(1, \vec e_x, \vec e_y, \vec e_z)$, so the volume element is $\mathrm{d}q_t\,\mathrm{d}q_x\,\mathrm{d}q_y\,\mathrm{d}q_z$. The vector subspace $V$ with the coordinates $(q_x,q_y,q_z)$ is oriented by $(\vec e_x,\vec e_y,\vec e_z)$; the form restricted to it is $q_x^2-q_y^2-q_z^2$, and this is the three-dimensional Lorentzian space whose Lorentz group is $\mathrm{SO}^{+}(2,1)$ by <em>Split-Quaternion Rotations and the Lorentz Group</em>, §<em>The Lorentz Group of Signature $(2,1)$</em>. Both orientations are fixed once and for all; no factor of $i$ or of any other non-real element is introduced into any integral in this article.</p>
 <p><strong>Theorem (The Boundary and the Normal).</strong> Let $\partial\Omega$ be a piecewise smooth hypersurface with outward unit normal $(n_{q_t},n_{q_x},n_{q_y},n_{q_z})$ in the Euclidean metric of $\mathbb{R}^4$, and let</p>
 <p>$$
 n = n_{q_t} + n_{q_x} \vec e_x + n_{q_y} \vec e_y + n_{q_z} \vec e_z
@@ -233,8 +233,8 @@ $$</p>
 <tr>
 <th></th>
 <th>$\mathbb{H}$</th>
-<th>$\mathbb{H}_{\mathrm{s}}$</th>
-<th>$\mathbb{D}$</th>
+<th>$\mathbb{H}^{\mathrm{spl}}$</th>
+<th>$\mathbb{C}^{\mathrm{spl}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -276,7 +276,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The quaternion column is the content of <em>Quaternion Integration</em> and the split-complex column that of <em>Split-Complex Integration</em>. The single cause of the difference is again the indefiniteness of the form, equivalently the presence of the zero divisors: the characteristic cone of the operator is the zero divisor set, and the fundamental solution must be singular along it. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.</p>
+<p>The quaternion column is the content of <em>Quaternion Integration</em> and the split-complex column that of <em>Split-Complex Integration</em>. The single cause of the difference is again the indefiniteness of the form, equivalently the presence of the zero divisors: the characteristic cone of the operator is the zero divisor set, and the fundamental solution must be singular along it. The eight-dimensional relative $\mathbb{B}^{\mathrm{spl}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.</p>
 <h2 id="summary">Summary</h2>
 <p>The integration of split-quaternion-valued functions is componentwise, with the orientation of the algebra fixed by the frame $(1,\vec e_x,\vec e_y,\vec e_z)$ and the orientation of the vector subspace by $(\vec e_x,\vec e_y,\vec e_z)$, the form $q_x^2-q_y^2-q_z^2$ being the three-dimensional Minkowski form of the system. The divergence theorem holds on every domain with piecewise smooth boundary, with the Euclidean normal; on a boundary tangent to the null cone the normal is a zero divisor and the boundary term degenerates.</p>
 <p>The vector operator is formally self-adjoint, $D^* = D$, and Green's formula reads $\int_\Omega[\operatorname{Sc}((Df)g) + \operatorname{Sc}(f(\bar Dg))] = \int_{\partial\Omega}\operatorname{Sc}(fgn)$, with the classical Green identities for the wave operator as corollaries; the two-sided form is forced by the failure of the two-term Leibniz rule in the non-commutative algebra. The wave operator $\Box_{(2,1)} = D^2$ has a fundamental solution supported in the closed future cone with singular support the null cone, and the vector operator has the fundamental solution $D E$; the propagation is at speed one, and the sharp Huygens principle fails, as in every two-spatial-dimensional wave problem.</p>

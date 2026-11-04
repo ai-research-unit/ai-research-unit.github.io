@@ -72,10 +72,10 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the dual numbers special functions as a collection of named functions that arise in dual numbers analysis, in the deformation theory of algebras, and in the infinitesimal geometry of the dual plane. The goal is to define each function precisely, establish its basic properties, and describe the relations among them.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. No specific dimensions. Dual numbers analysis is assumed from the preceding article, and the maximal ideal is used throughout. The functions are defined over the real numbers $\mathbb{R}$, where the exponential, logarithmic and trigonometric series converge and the structure theorem for dual differentiable functions applies; the polynomial identities they satisfy hold over any commutative $\mathbb{Q}$-algebra.</p>
-<p>Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and the split complex algebra is denoted $\mathbb{D}$. The unit of $\mathbb{D}'$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
+<p>Throughout this article, the dual number algebra is denoted $\mathbb{C}^{\mathrm{dua}}$, and the split complex algebra is denoted $\mathbb{C}^{\mathrm{spl}}$. The unit of $\mathbb{C}^{\mathrm{dua}}$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
 <h2 id="preliminary-the-structure-of-dual-functions">Preliminary: The Structure of Dual Functions</h2>
 <p>Before defining any special function, it is worth recalling the structural theorem from dual numbers analysis, because it determines the shape of every function in this article.</p>
-<p><strong>Theorem (Structure of dual differentiable functions).</strong> A dual differentiable function $f : \Omega \to \mathbb{D}'$ on a domain $\Omega \subseteq \mathbb{D}'$ is of the form</p>
+<p><strong>Theorem (Structure of dual differentiable functions).</strong> A dual differentiable function $f : \Omega \to \mathbb{C}^{\mathrm{dua}}$ on a domain $\Omega \subseteq \mathbb{C}^{\mathrm{dua}}$ is of the form</p>
 <p>$$
 f(q + \varepsilon q') = u(q) + \left( q' u'(q) + c(q) \right) \varepsilon,
 $$</p>
@@ -88,7 +88,7 @@ $$</p>
 </ul>
 <h2 id="the-dual-exponential">The Dual Exponential</h2>
 <h3 id="definition">Definition</h3>
-<p>The <strong>dual exponential</strong> is defined for $Q \in \mathbb{D}'$ by</p>
+<p>The <strong>dual exponential</strong> is defined for $Q \in \mathbb{C}^{\mathrm{dua}}$ by</p>
 <p>$$
 \exp(Q) = \sum_{n=0}^\infty \frac{Q^n}{n!}.
 $$</p>
@@ -161,7 +161,7 @@ $$</p>
 <p>There is no dual analogue of the argument of a complex number, because the dual algebra has no compact group of units. The group of units is the set of dual numbers with non-zero real part, which is not compact. So there is no argument function with values in a compact group: the dual algebra admits no phase, and the dual logarithm of a unit is a real multiple of $\varepsilon$, with no angular part.</p>
 <h2 id="the-dual-power-function">The Dual Power Function</h2>
 <h3 id="definition_2">Definition</h3>
-<p>For $Q_1$ in the domain of the dual logarithm and $Q_2 \in \mathbb{D}'$, the <strong>dual power</strong> is</p>
+<p>For $Q_1$ in the domain of the dual logarithm and $Q_2 \in \mathbb{C}^{\mathrm{dua}}$, the <strong>dual power</strong> is</p>
 <p>$$
 Q_1^{Q_2} = \exp(Q_2 \log Q_1).
 $$</p>
@@ -419,7 +419,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{D}'$</td>
+<td>$\mathbb{C}^{\mathrm{dua}}$</td>
 <td>Dual number algebra</td>
 </tr>
 <tr>
