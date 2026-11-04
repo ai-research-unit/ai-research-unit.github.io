@@ -361,9 +361,17 @@ $$</p>
 <p>$$
 \gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}.
 $$</p>
+<p>The same in the axis-free display:</p>
+<p>$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+$$</p>
 <p>The fifth gamma is not a fifth frame vector but their product. The four cells in the product carry $i^4=1$, so the single $i$ of the definition survives and fixes the sign,</p>
 <p>$$
 \gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-iR_{\vec e_z}^{\mathrm{pau}},
+$$</p>
+<p>In the axis-free display:</p>
+<p>$$
+\gamma_5:=i\gamma_0\gamma_1\gamma_2\gamma_3=iC_0C_1C_2C_3=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
 $$</p>
 <p>and $\gamma_5$ is the reference-frame cell of the chirality operator. The central grading $\chi=e_+-e_-$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.</p>
 <p>The pair operator is the same cell operator written in gammas,</p>
@@ -375,6 +383,12 @@ $$</p>
 <p>with $p_0=E_{\vec p}$. Each term carries its own collapse, $i\gamma_\mu=iC_\mu=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\kappa(\mu)}}^{\mathrm{pau}}$, so the operator has no imaginary unit left:</p>
 <p>$$
 \mathbb{D}=-R_{\vec e_x}^{\mathrm{pau}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}\frac{\partial}{\partial Q_k},
+\qquad
+\mathbb{D}_p^2=p^2 .
+$$</p>
+<p>The same identities in the axis-free display:</p>
+<p>$$
+\mathbb{D}=-R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k},
 \qquad
 \mathbb{D}_p^2=p^2 .
 $$</p>
@@ -413,7 +427,7 @@ $$</p>
 \sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha.
 $$</p>
 <p>The raised index is not decoration. With the index down on the summed gamma, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ but $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=4\gamma_0$ for $\alpha=0$ and $0$ for spatial $\alpha$, because $\gamma_0^2=+I_4$ while $\gamma_k^2=-I_4$; the four sums above are the ones that are covariant.</p>
-<p><strong>The display.</strong> Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.</p>
+<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>The quantized biquaternion Dirac field is the operator-valued field whose module representative is the parent article's expansion in plane-wave spinors, with mode anticommutators and the parent's spin sums. Lifted from the classical field, it takes values in $\mathcal{A}\otimes\Delta$ (equivalently $\mathcal{A}\otimes\mathbb{B}$ in the other transcription), it satisfies the free field equation as an operator identity, and its four conjugations act with the operator ordering included: the particle–antiparticle exchange is Hermitian conjugation, $\psi^{\mathrm{fop}}\leftrightarrow\psi^{\mathrm{fop}\dagger}$, and not the algebra's real structure.</p>
 <p>The field is odd under fermion parity,</p>

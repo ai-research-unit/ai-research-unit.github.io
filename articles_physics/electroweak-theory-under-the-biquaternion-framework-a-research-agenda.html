@@ -359,7 +359,11 @@ $$</p>
 <p>The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.</p>
 <p>Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.</p>
 <p>$$
-\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{e_x}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{e_y}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{e_z}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
+$$</p>
+<p>The same in the axis-free display:</p>
+<p>$$
+\gamma_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$</p>
 <p>Each dictionary entry carries one factor of $i$, and every product of two entries spends $i^2=-1$. The collapse that removes the factor is</p>
 <p>$$
@@ -367,9 +371,19 @@ i\gamma_5=i\bigl(-iR_{\vec e_z}^{\mathrm{pau}}\bigr)=R_{\vec e_z}^{\mathrm{pau}}
 \qquad
 i\gamma_\mu=i\bigl(iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\bigr)=-L_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\tau(\mu)}}^{\mathrm{pau}}\quad(\mu=0,1,2,3),
 $$</p>
+<p>In the axis-free display:</p>
+<p>$$
+i\gamma_5=i\bigl(-iR_{\vec e_z}^{\mathrm{axf}}\bigr)=R_{\vec e_z}^{\mathrm{axf}},
+\qquad
+i\gamma_\mu=i\bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\bigr)=-L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\tau(\mu)}}^{\mathrm{axf}}\quad(\mu=0,1,2,3),
+$$</p>
 <p>with $\tau(t)=x$ and $\tau(k)=y$, so no residual phase is carried through a product. The volume cell is the product of the four generators,</p>
 <p>$$
 \gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=-i\gamma_5,
+$$</p>
+<p>The same identities in the axis-free display:</p>
+<p>$$
+\gamma_0\gamma_1\gamma_2\gamma_3=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-i\gamma_5,
 $$</p>
 <p>the second equality being $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$ read once.</p>
 <p>A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.</p>
@@ -396,7 +410,7 @@ $$
 =4\bigl(g_{\mu\nu}g_{\rho\sigma}-g_{\mu\rho}g_{\nu\sigma}+g_{\mu\sigma}g_{\nu\rho}\bigr).
 $$
 The four contraction sums — $\sum_\mu\gamma_\mu\gamma_\mu$, $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu$, $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu$, and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\delta\gamma_\mu$ — are frame statements, because a cell's square is. In the Euclidean frame, where every cell squares to $+I_4$, they are $4I_4$, $-2\gamma_\alpha$, $4\delta_{\alpha\beta}I_4$ and $-2\gamma_\delta\gamma_\beta\gamma_\alpha$. In the $\mathbb{M}_-$ frame the metric enters and $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$.</p>
-<p><strong>The display.</strong> Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.</p>
+<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>This article is a research agenda for electroweak theory inside the biquaternion framework. Its finding is that the framework reaches the general machinery of a non-abelian gauge theory on a compact algebra of the right dimension, together with an exact chiral structure on the spinor module, and stops before any chiral gauge theory, any hypercharge assignment, or any scalar sector.</p>
 <p>What is established is recalled: the abelian gauge principle, with a canonical central $\mathrm{U}(1)$, the connection $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, the covariant derivative, the abelian curvature, and the linear chiral mass — in its one-sided algebra pair and its two-sided cell equation — with its conserved vector $\mathrm{U}(1)$ and broken axial symmetry; the non-abelian construction, with a connection transforming inhomogeneously, a curvature transforming in the adjoint and containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$, of real dimension four; the chiral structure on the Dirac module, with exact projectors, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; and the vector-like character of the centre.</p>

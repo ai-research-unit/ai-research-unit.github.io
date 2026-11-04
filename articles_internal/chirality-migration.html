@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chirality Migration — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="chirality-migration"><strong>Chirality Migration</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The decision.</strong> Operator chirality is the side on which an operator multiplies: the left slot, the right slot, or both. The definition is stated and proved in <a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html"><em>Operator Chirality on the Biquaternion Algebra</em></a>, and its physical reading is in <a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html"><em>Biquaternion Physical Interpretation of Operator Chirality</em></a>. It replaces every earlier reading of the word in the two corpora.</p>
+<p><strong>The question this article answers.</strong> How many articles does that decision reach, and which of them decide the meaning of the word? The word <em>chiral</em> appears in 309 of the 2,772 mathematics and physics articles, 4,930 times. It is defined in 41 of them, asserted in 26, used in another sense in 9, and merely cited in the remaining 233. This article is the census, with that split, so that the review can be planned rather than improvised.</p>
+<p><strong>Why the split is the point.</strong> An article that says what chirality <em>is</em> sets the meaning for every article that uses the word after it. An article that only uses the word inherits whatever the defining article said. So the review is not 309 rewrites. It is 41 definitions to settle, 26 claims to check, and a substitution elsewhere.</p>
+<p><strong>What this article is not.</strong> It is not a proof and it contains no new mathematics. It does not rewrite any article; it measures them. The only claim it makes beyond arithmetic is the classification, and that classification is the working list for the review.</p>
+<p><strong>Method, stated so the numbers can be checked.</strong> A count is the literal, case-insensitive occurrences of the string <code>chiral</code> in the file, which necessarily includes <code>chirality</code>, <code>chiralities</code>, <code>amphichiral</code> and <code>chiral</code> inside a compound. The counts are of the files as they stand on 2026-11-03 and include the tables, the displays and the link texts. The class of an article is decided by two mechanical tests, and then by reading one sentence: the tests are in §<em>The Two Classes</em>, and the sentence that decides each core article is quoted in the tables of §<em>The Core</em>.</p>
+<h2 id="the-two-classes">The Two Classes</h2>
+<p><strong>Core.</strong> The article says what chirality is. Two mechanical tests, either of which is enough.</p>
+<ul>
+<li><strong>The predication test.</strong> The word is the subject of a copula: a sentence matches <code>chirality is</code>, <code>chirality are</code>, <code>chirality means</code>, <code>chirality denotes</code>, <code>the chirality operator is</code>, or asks what chirality is or means.</li>
+<li><strong>The title test.</strong> The word stands in the title of the article.</li>
+</ul>
+<p><strong>Periphery.</strong> Neither test passes. The word appears only as a modifier (<code>chiral fermion</code>, <code>chiral projector</code>), as the name of a parameter, as a formula label, or inside a citation of another article.</p>
+<p><strong>Three letters inside the core.</strong> A core article is not automatically an article to rewrite, so it gets one of three letters, assigned by reading the sentence that the predication test found.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Meaning</th>
+<th>Audit action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D</strong></td>
+<td><strong>defines</strong> the notion: the sentence names the object, as "chirality is the central sign" or "the chirality operator is the cell $\chi=-iR_{\vec e_z}$"</td>
+<td>rename or rewrite the definition</td>
+</tr>
+<tr>
+<td><strong>A</strong></td>
+<td><strong>asserts</strong> a claim about it without naming the object: "chirality is not visible to the algebra", "chirality is protected", "chirality is not a scalar"</td>
+<td>check the claim, then delete it or re-derive it</td>
+</tr>
+<tr>
+<td><strong>O</strong></td>
+<td>names the chirality of <strong>another field or category</strong>: amphichirality, the chiral medium, the chiral Lagrangian, the Hodge star of the Clifford category</td>
+<td>no action</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The result.</strong> Core is 76 articles and 2,579 occurrences, 52.3 per cent of the word's use. Periphery is 233 articles and 2,351 occurrences.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th style="text-align: right;">Articles</th>
+<th style="text-align: right;">Mathematics</th>
+<th style="text-align: right;">Physics</th>
+<th style="text-align: right;">Occurrences</th>
+<th style="text-align: right;">Share of occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>D</strong> defines</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">1,483</td>
+<td style="text-align: right;">30.1 per cent</td>
+</tr>
+<tr>
+<td><strong>A</strong> asserts</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">767</td>
+<td style="text-align: right;">15.6 per cent</td>
+</tr>
+<tr>
+<td><strong>O</strong> other sense</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">329</td>
+<td style="text-align: right;">6.7 per cent</td>
+</tr>
+<tr>
+<td><strong>P</strong> periphery</td>
+<td style="text-align: right;">233</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">2,351</td>
+<td style="text-align: right;">47.7 per cent</td>
+</tr>
+<tr>
+<td>Total</td>
+<td style="text-align: right;">309</td>
+<td style="text-align: right;">133</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">4,930</td>
+<td style="text-align: right;">100 per cent</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the table says.</strong> Forty-one articles hold 30.1 per cent of the occurrences and fix the meaning for all of them. The physics corpus owns the assertions — 21 of the 26 — which is where the inherited claims live. The mathematics corpus owns the other senses — 7 of the 9 — because the Clifford and knot articles are mathematical. The periphery is large and light: 233 articles, 2,351 occurrences, a mean of 10.1 each.</p>
+<p><strong>The asymmetry that matters.</strong> An article in the periphery cannot be wrong about chirality on its own. It can only repeat what a core article said. That is why the order is core first, and it is why the two reference articles sit in the core and need no action.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The totals.</strong> 309 articles carry the word, 4,930 occurrences: 133 mathematics articles with 1,278 and 176 physics articles with 3,652. The physics corpus is the heavier user by a factor of nearly three, and it is the smaller corpus, 410 articles against 2,362.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Corpus</th>
+<th style="text-align: right;">Articles using the word</th>
+<th style="text-align: right;">Articles in the corpus</th>
+<th style="text-align: right;">Share</th>
+<th style="text-align: right;">Occurrences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mathematics</td>
+<td style="text-align: right;">133</td>
+<td style="text-align: right;">2,362</td>
+<td style="text-align: right;">5.6 per cent</td>
+<td style="text-align: right;">1,278</td>
+</tr>
+<tr>
+<td>Physics</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">410</td>
+<td style="text-align: right;">42.9 per cent</td>
+<td style="text-align: right;">3,652</td>
+</tr>
+<tr>
+<td>Both</td>
+<td style="text-align: right;">309</td>
+<td style="text-align: right;">2,772</td>
+<td style="text-align: right;">11.1 per cent</td>
+<td style="text-align: right;">4,930</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The shape.</strong> The median article carries 7 occurrences and the mean 16.0, so the distribution has a short head and a long tail. The largest single count is 148, in <em>Chiral Fermions in the Biquaternion Framework</em>, which is also the sharpest core article: it both defines the word and denies that the algebra can carry it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Occurrences in the article</th>
+<th style="text-align: right;">Articles</th>
+<th style="text-align: right;">Occurrences held</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50 or more</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">2,063</td>
+</tr>
+<tr>
+<td>20 to 49</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">1,462</td>
+</tr>
+<tr>
+<td>10 to 19</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">799</td>
+</tr>
+<tr>
+<td>fewer than 10</td>
+<td style="text-align: right;">174</td>
+<td style="text-align: right;">606</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the shape implies.</strong> The 174 articles with fewer than ten occurrences hold 12.3 per cent of the total. Only fourteen of them are core articles. In the other 160 the review is a word-level substitution. The 78 articles with twenty or more hold 71.5 per cent, and they contain 48 of the 76 core articles.</p>
+<h2 id="the-core">The Core</h2>
+<p><strong>The 41 that define the word.</strong> Each row quotes the sentence that the predication test found, or the title or use that supplies the definition. This is the table that matters: every other article in the corpus uses one of these definitions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th style="text-align: right;">Count</th>
+<th>The sentence that defines it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html"><em>Chiral Fermions in the Biquaternion Framework</em></a></td>
+<td style="text-align: right;">148</td>
+<td>chirality is a Lorentz-invariant label; chirality is not visible to the algebra alone</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html"><em>The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">89</td>
+<td>the chirality is the pure right multiplication $\Gamma=-iR_{\vec e_z}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-chiralities-of-m4c.html"><em>The Two Chiralities of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">88</td>
+<td>each chirality is a two-dimensional space; the chirality is an involution, not a grading by the root</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html"><em>The Dirac Equation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">83</td>
+<td>the two chiralities are the two helicities</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html"><em>The Reflection and the Rotation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">75</td>
+<td>chirality is what the reflection changes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html"><em>Biquaternion Physical Interpretation of Operator Chirality</em></a></td>
+<td style="text-align: right;">71</td>
+<td>operator chirality is the slot: the left slot for a pure left multiplier, the right slot for a pure right multiplier</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html"><em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">67</td>
+<td>the chirality is the root $H=\operatorname{diag}(1,-1)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html"><em>Supersymmetric Quantum Physics in the Biquaternion Framework</em></a></td>
+<td style="text-align: right;">65</td>
+<td>chirality is the central sign $\chi_{\mathrm{ad}}=i\tilde\Xi_{\mathrm{ad}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html"><em>Bosonization in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">62</td>
+<td>the two-dimensional chirality is their product</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html"><em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em></a></td>
+<td style="text-align: right;">56</td>
+<td>chirality is the two lines; the Weyl chirality is the sign of the Peirce component</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-chiralities-of-m6c.html"><em>The Two Chiralities of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">56</td>
+<td>the same split in six dimensions</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html"><em>The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">50</td>
+<td>the mass block is the space of maps from the right chirality to the left chirality</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/chirality-the-conjugate-pair.html"><em>Chirality: The Conjugate Pair</em></a></td>
+<td style="text-align: right;">45</td>
+<td>chirality is the grading of the conjugate pair</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html"><em>Exercise: Chirality and the Weyl Spinors</em></a></td>
+<td style="text-align: right;">39</td>
+<td>chirality is a Lorentz-invariant label; chirality is a real-structure notion</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html"><em>Operator Chirality on the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">37</td>
+<td>operator chirality is the side on which an operator multiplies</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html"><em>The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">36</td>
+<td>the two-dimensional chirality is the cell $L_{\vec e_x}R_{\vec e_z}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html"><em>The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">34</td>
+<td>the same block form in six dimensions</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html"><em>The Gauge Principle in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">32</td>
+<td>the chirality operator is the cell $\chi=-iR_{\vec e_z}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html"><em>The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">32</td>
+<td>the gauge acts by $M\mapsto U_LMU_R^{-1}$ on the block</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html"><em>The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">31</td>
+<td>chirality is the central sign; its chirality is the volume cell</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-and-the-three-elementary-carriers.html"><em>Spin and the Three Elementary Carriers</em></a></td>
+<td style="text-align: right;">29</td>
+<td>the two Lorentz chiralities are $S$ and $S^{\mathrm{c}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html"><em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em></a></td>
+<td style="text-align: right;">29</td>
+<td>on the Dirac module the chirality is $\operatorname{diag}(-I_2,I_2)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html"><em>The Daviau Map and the Space Clifford Formulation of the Dirac Equation</em></a></td>
+<td style="text-align: right;">25</td>
+<td>chirality is the split of the biquaternion into left and right ideals</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-rank-two-split-of-m4c.html"><em>The Rank-Two Split of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">25</td>
+<td>the two chiralities are the coordinate planes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html"><em>The Fermionic Path Integral in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">24</td>
+<td>chirality is the central grading of the complexified algebra</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-unpolarized-module-of-m4c.html"><em>The Unpolarized Module of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">22</td>
+<td>$R_{\vec e_z}=i\gamma_5$, so the chirality operator is the swap of a rotation generator</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html"><em>Thomson and Compton Scattering: The Biquaternion Polarization Algebra</em></a></td>
+<td style="text-align: right;">20</td>
+<td>its chirality is the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-action-on-a-clifford-module.html"><em>The Signed Action on a Clifford Module</em></a></td>
+<td style="text-align: right;">19</td>
+<td>the identification with the chirality is the definition of the chirality operator</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-four-uses-of-spin-in-the-biquaternion-algebra.html"><em>The Four Uses of Spin in the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">17</td>
+<td>the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html"><em>The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</em></a></td>
+<td style="text-align: right;">16</td>
+<td>the two rulings of the Segre quadric are the two chiralities</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html"><em>The Jordan–Wigner Transformation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">12</td>
+<td>the chirality is the central sign, and the two agree up to sign</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html"><em>The Trace Anomaly in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">10</td>
+<td>chirality is the right multiplication</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-peirce-coordinates-in-n-dimensions.html"><em>Spinors as Peirce Coordinates in $n$ Dimensions</em></a></td>
+<td style="text-align: right;">8</td>
+<td>a chirality is a choice of signs, one per line</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html"><em>The Eigenbasis of a Spectrally Regular Biquaternion</em></a></td>
+<td style="text-align: right;">7</td>
+<td>chirality is the eigenvalue of the involution $R_{\vec\Xi}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/paravectors-and-the-geometry-of-spacetime.html"><em>Paravectors and the Geometry of Spacetime</em></a></td>
+<td style="text-align: right;">6</td>
+<td>the chirality is the volume cell $-L_{e_t}R_{\vec e_z}$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-regular-biquaternion.html"><em>The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion</em></a></td>
+<td style="text-align: right;">5</td>
+<td>the two Lorentz chiralities are the two tensor slots</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/triality-and-spin8-with-inner-conjugation.html"><em>Triality and Spin(8) with Inner Conjugation</em></a></td>
+<td style="text-align: right;">4</td>
+<td>chirality is a matter of the choice of a leg</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operators-of-an-n-regular-spectrally-regular-biquaternion.html"><em>The One-Sided Operators of an N-Regular, Spectrally Regular Biquaternion</em></a></td>
+<td style="text-align: right;">3</td>
+<td>the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/special-element-conventions.html"><em>Special Element Conventions</em></a></td>
+<td style="text-align: right;">2</td>
+<td>the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html"><em>The Anomalous Magnetic Moment in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">2</td>
+<td>the reference-frame cell of the chirality operator is $\gamma_5$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-exponential-of-an-n-regular-spectrally-regular-biquaternion.html"><em>The Sandwich Exponential of an N-Regular, Spectrally Regular Biquaternion</em></a></td>
+<td style="text-align: right;">2</td>
+<td>the two Lorentz chiralities are the left and right slots</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The 26 that assert a claim.</strong> These articles say something about chirality without naming the object. Some of the claims are true and become theorems of the decision — "chirality is a cell", "chirality is the right multiplication". Some are false and are the real work — "chirality is not visible to the algebra alone", "chirality is not an element of the algebra".</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th style="text-align: right;">Count</th>
+<th>The claim it makes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html"><em>Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</em></a></td>
+<td style="text-align: right;">73</td>
+<td>chirality is an object of the cell equation only</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html"><em>The CPT Theorem in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">66</td>
+<td>chirality is invisible here</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html"><em>Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</em></a></td>
+<td style="text-align: right;">60</td>
+<td>chirality is the outer index, spin the inner one</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html"><em>The Neutrino and Majorana Fermions in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">60</td>
+<td>its chirality is protected</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html"><em>The Spectral Triple of the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">54</td>
+<td>the chirality is itself a right multiplication</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html"><em>The Electron in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">52</td>
+<td>chirality is not the same as the sector split</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-weak-interaction-in-biquaternionic-form.html"><em>The Weak Interaction in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">41</td>
+<td>a field of definite chirality is massless</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html"><em>The First-Order Root of the Biquaternion Klein–Gordon Operator</em></a></td>
+<td style="text-align: right;">32</td>
+<td>only the relative sign of the mass and the chirality is meaningful</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html"><em>The Spinor Representation of the Lorentz Group in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">32</td>
+<td>the conjugate chirality requires the real structure</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html"><em>The SO(4) Route to the Euclidean Frame: An Alternative to the Imaginary Time Coordinate</em></a></td>
+<td style="text-align: right;">31</td>
+<td>chirality is not imposed on a module that does not have it</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-particle-roster-of-the-complex-octonionic-chain-algebra.html"><em>The Particle Roster of the Complex Octonionic Chain Algebra</em></a></td>
+<td style="text-align: right;">30</td>
+<td>their chirality is due to the weak factor</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html"><em>Noether's Theorem in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">27</td>
+<td>chirality is a cell</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html"><em>The LSZ Reduction Formula in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">27</td>
+<td>the chirality is the cell that anticommutes with $\mathcal{D}(p)$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html"><em>The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">25</td>
+<td>chirality is the one place where the correspondence needs a word</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html"><em>The Majorana Equation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">23</td>
+<td>the two chiralities are exchanged</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html"><em>The Index Theorem and the Zero-Mode Count in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">22</td>
+<td>the zero modes of one chirality</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html"><em>Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">21</td>
+<td>the two chiralities are complex conjugates</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html"><em>What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</em></a></td>
+<td style="text-align: right;">19</td>
+<td>anything that must exchange the two chiralities is carried by the module</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-determinant-in-biquaternionic-form.html"><em>The Functional Determinant in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">17</td>
+<td>the two chiralities are coupled</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/twistor-theory-and-biquaternions.html"><em>Twistor Theory and Biquaternions</em></a></td>
+<td style="text-align: right;">17</td>
+<td>the two chiralities are the two isotypic components</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-vector-and-the-axial-traces-of-m4c.html"><em>The Vector and the Axial Traces of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">14</td>
+<td>the chirality is the article of that name</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html"><em>The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">8</td>
+<td>the chirality is not in the left factor</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/frames-rotations-and-the-lorentz-group.html"><em>Frames, Rotations and the Lorentz Group</em></a></td>
+<td style="text-align: right;">7</td>
+<td>chirality is not an element of the algebra</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m4r-h-l-regular-representation-operators.html"><em>$M_4(\mathbb{R})_{\mathbb{H}_L}$ Regular Representation : Operators</em></a></td>
+<td style="text-align: right;">4</td>
+<td>the chirality is absent, a division algebra has no matrix units</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html"><em>The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">4</td>
+<td>the chirality is not a scalar</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-matrix-algebra-m4c.html"><em>The Matrix Algebra $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">1</td>
+<td>the chiralities are structures on the algebra</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The 9 of another sense.</strong> These name a chirality that is not the chirality of the biquaternion algebra: the Hodge star of the Clifford category, the knot-theoretic mirror, the chirality of a medium, the chiral Lagrangian of the pion field. They are core in their own field and outside the migration, and the only thing to check is that no cross-reference imports their sense into the biquaternion one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th style="text-align: right;">Count</th>
+<th>The sense it belongs to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html"><em>The Pion and the Chiral Lagrangian in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">81</td>
+<td>the chiral Lagrangian of the pion field</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/amphichiral-knots-and-the-orientation-reversing-involution.html"><em>Amphichiral Knots and the Orientation-Reversing Involution</em></a></td>
+<td style="text-align: right;">76</td>
+<td>chirality is the generic behaviour, amphichirality the exception</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html"><em>Maxwell's Equations in Chiral Media — The Quaternionic Reformulation</em></a></td>
+<td style="text-align: right;">59</td>
+<td>the chirality of the medium, switched off by $\beta=0$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-adjoint-of-the-signature-operator.html"><em>The Adjoint of the Signature Operator</em></a></td>
+<td style="text-align: right;">39</td>
+<td>the chirality is the normalized Hodge star</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-graded-action-on-a-module-over-a-clifford-algebra.html"><em>The Graded Action on a Module over a Clifford Algebra</em></a></td>
+<td style="text-align: right;">18</td>
+<td>the parity of the Cauchy–Riemann operator identified with the chirality</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signature-operator.html"><em>The Signature Operator</em></a></td>
+<td style="text-align: right;">16</td>
+<td>the chirality is the Hodge star</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-clifford-multiplication-operator.html"><em>The Clifford Multiplication Operator</em></a></td>
+<td style="text-align: right;">15</td>
+<td>the chirality is the Hodge star grading</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-dirac-operator-on-a-manifold.html"><em>The Dirac Operator on a Manifold</em></a></td>
+<td style="text-align: right;">15</td>
+<td>the anticommutation with the chirality operator of the manifold</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signature-operator-and-the-involution.html"><em>The Signature Operator and the Involution</em></a></td>
+<td style="text-align: right;">10</td>
+<td>the chirality is the normalized Hodge star</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the core shows at a glance.</strong> Two rival families dominate. The <strong>central sign</strong> $\chi=i\tilde\Xi_{\mathrm{ad}}$ is named in eight articles, five of them in those words: the conjugate pair, the four uses of spin, supersymmetry, the fermionic path integral, Jordan–Wigner, Thomson–Compton, Dirac–Hestenes and special elements. The <strong>splitting of a carrier into two halves</strong> is named in six: "the chirality is the root $H=\operatorname{diag}(1,-1)$" in the Peirce $\mathrm{SU}(2)$ article, the two halves of $M_4$ and $M_6$, the coordinate planes of the rank-two split, the maps from the right chirality to the left in the mass block, and the left and right ideals of the Daviau map. The two families are not compatible with one another, and <em>The Two Chiralities of $M_4(\mathbb{C})$</em> says so in its own words: "the chirality is an involution, not a grading by the root". The decision's own sense, the side, is already present in twelve articles: the reference pair, and ten that name a cell, a slot or a right multiplication.</p>
+<h2 id="the-mathematics-first">The Mathematics First</h2>
+<p><strong>The premise corrected.</strong> The eighteen mathematics core articles are not spread over Part I and Part IV. Sixteen are in Part VI, <em>Synthetic Studies</em>, and two are in Part I, <em>Algebra</em>: <em>The Signed Action on a Clifford Module</em> and <em>Triality and Spin(8) with Inner Conjugation</em>. Part IV holds none of them.</p>
+<p><strong>The second test, applied to the eighteen.</strong> A count does not say whether an article talks about the same subject, so the eighteen were read. Each was put to one question: is the object that the article calls <em>chirality</em> a structure of the biquaternion algebra and its carrier, or a structure of another category? There are three outcomes.</p>
+<ul>
+<li><strong>Same subject.</strong> The word names a grading of the algebra, of its carrier or of $M_n(\mathbb{C})$: the root involution $\Gamma=H^2$, the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, the $2+2$ split of $\mathbb{C}^4$, the mass block between the halves, the sign function on the Peirce lines. The decision applies and the word must change.</li>
+<li><strong>Already the decision.</strong> The article says that the chirality is the side, the slot or the cell. No change.</li>
+<li><strong>Another category.</strong> The word names the Clifford volume element acting on a Clifford module, or a leg of the triality triple. The decision does not reach it; at most one cross-reference line.</li>
+</ul>
+<p><strong>The verdict.</strong> Eleven articles talk about the same subject and need the word changed; seven do not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th style="text-align: right;">Count</th>
+<th>Part</th>
+<th>The subject it treats</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/the-two-chiralities-of-m4c.html"><em>The Two Chiralities of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">88</td>
+<td>VI</td>
+<td>the root involution $\Gamma=H^2$ and the $2+2$ split of $\mathbb{C}^4$</td>
+<td>rename: the root grading</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html"><em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$</em></a></td>
+<td style="text-align: right;">67</td>
+<td>VI</td>
+<td>"the chirality is the root $H=\operatorname{diag}(1,-1)$"</td>
+<td>rename: the root grading</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-chiralities-of-m6c.html"><em>The Two Chiralities of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">56</td>
+<td>VI</td>
+<td>the $3+3$ split by $\Gamma=H^2$ in six dimensions</td>
+<td>rename; its own <em>Remark (the name chirality)</em> is the place to cite the decision</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html"><em>The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">50</td>
+<td>VI</td>
+<td>the block of maps from the right chirality to the left</td>
+<td>rename the two halves</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/chirality-the-conjugate-pair.html"><em>Chirality: The Conjugate Pair</em></a></td>
+<td style="text-align: right;">45</td>
+<td>VI</td>
+<td>the central sign $\chi=i\tilde\Xi_{\mathrm{ad}}$ and the conjugate module</td>
+<td>rename: the conjugate grading; this is the strongest rival</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html"><em>Operator Chirality on the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">37</td>
+<td>VI</td>
+<td>the decision itself</td>
+<td>none</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html"><em>The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">34</td>
+<td>VI</td>
+<td>the same block in the $3+3$ split</td>
+<td>rename the two halves</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html"><em>The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">32</td>
+<td>VI</td>
+<td>the labels "chirality $+$" and "chirality $-$" of the root split</td>
+<td>rename the labels</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-rank-two-split-of-m4c.html"><em>The Rank-Two Split of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">25</td>
+<td>VI</td>
+<td>"the two chiralities are the coordinate planes"</td>
+<td>rename: the root grading</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-unpolarized-module-of-m4c.html"><em>The Unpolarized Module of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">22</td>
+<td>VI</td>
+<td>the swap, already read as an operator</td>
+<td>none: "chirality becomes an operator" is the decision</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-signed-action-on-a-clifford-module.html"><em>The Signed Action on a Clifford Module</em></a></td>
+<td style="text-align: right;">19</td>
+<td>I</td>
+<td>the Clifford volume element $\Gamma_S=\omega\lvert_S$ on a Clifford module</td>
+<td>one cross-reference: it is the left-slot instance</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-four-uses-of-spin-in-the-biquaternion-algebra.html"><em>The Four Uses of Spin in the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">17</td>
+<td>VI</td>
+<td>"the chirality is $\chi=i\tilde\Xi_{\mathrm{ad}}$"</td>
+<td>rename: the central sign</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-peirce-coordinates-in-n-dimensions.html"><em>Spinors as Peirce Coordinates in $n$ Dimensions</em></a></td>
+<td style="text-align: right;">8</td>
+<td>VI</td>
+<td>"a chirality is a choice of signs $\varepsilon_1,\dots,\varepsilon_n$, one per line"</td>
+<td>rename: a sign function, a copy label</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html"><em>The Eigenbasis of a Spectrally Regular Biquaternion</em></a></td>
+<td style="text-align: right;">7</td>
+<td>VI</td>
+<td>the Peirce sign $R_{\vec\Xi}$ and its eigenvalue</td>
+<td>one sentence: see below</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-regular-biquaternion.html"><em>The One-Sided Operator Exponential of an N-Regular Biquaternion</em></a></td>
+<td style="text-align: right;">5</td>
+<td>VI</td>
+<td>"the two Lorentz chiralities are the left and right slots"</td>
+<td>none</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/triality-and-spin8-with-inner-conjugation.html"><em>Triality and Spin(8) with Inner Conjugation</em></a></td>
+<td style="text-align: right;">4</td>
+<td>I</td>
+<td>"chirality is a matter of the choice of a leg"</td>
+<td>none: a leg of the triple, not a side</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operators-of-an-n-regular-spectrally-regular-biquaternion.html"><em>The One-Sided Operators of an N-Regular Biquaternion</em></a></td>
+<td style="text-align: right;">3</td>
+<td>VI</td>
+<td>a copy label, explicitly "not a Lorentz chirality"</td>
+<td>none</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-exponential-of-an-n-regular-spectrally-regular-biquaternion.html"><em>The Sandwich Exponential of an N-Regular Biquaternion</em></a></td>
+<td style="text-align: right;">2</td>
+<td>VI</td>
+<td>"the two Lorentz chiralities are the two tensor slots"</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The arithmetic.</strong> Eleven articles and 429 occurrences need the word changed; seven articles and 92 occurrences do not. The mathematics core is 521 occurrences, so 82.3 per cent of it is work and 17.7 per cent is already right.</p>
+<p><strong>Why seven articles escape, and for three different reasons.</strong> One is the reference. Four — the unpolarized module, the two one-sided articles and the sandwich — already say that the chirality is a slot, a tensor factor or an operator, so they were written after the decision or in its spirit. Two — the signed action and triality — are about another category, and changing them would be a mistake: the Clifford volume element and the triality leg are not the side.</p>
+<p><strong>Two findings from the reading.</strong></p>
+<ul>
+<li><strong>The eigenbasis article contradicts itself inside two sections.</strong> In its section <em>Spinors and the Peirce Index</em> it says "The Peirce index is the right index, not the left one; it is not a chirality." In its section <em>The Two Gradings</em> it says "chirality is the eigenvalue of the involution $R_{\vec\Xi}$: it is $+1$ on $S_+$ and $-1$ on $S_-$." Both sentences describe the same operator. Under the decision the operator is a chirality operator and its eigenvalue is the Peirce index, so the fix is one sentence, not a rewrite.</li>
+<li><strong>The six-dimensional article has already conceded the point.</strong> Its <em>Remark (the name chirality)</em> says "The involution is a $\mathbb{Z}/2$ grading, and the word records that. It does not by itself produce chiral spinors." That remark is where the decision should be cited, and the renaming needs no argument there.</li>
+</ul>
+<p><strong>The order inside the mathematics.</strong> <em>The Two Chiralities of $M_4(\mathbb{C})$</em> first, because it holds two rival senses at once and the five articles that build on the $2+2$ split — the Peirce $\mathfrak{su}_2$, the rank-two split, the two mass blocks, the three-parameter gauge — inherit its labels. Then <em>Chirality: The Conjugate Pair</em>, because the central sign is the rival that recurs most across the physics corpus. Then <em>The Four Uses of Spin</em>, which is the article that ranks the labels and will carry the new ranking. The remaining eight are small edits.</p>
+<h2 id="the-periphery">The Periphery</h2>
+<p><strong>The 233 that cite.</strong> Sorted by count in three bands. The band of twenty or more is the one that repays a substitution pass; the bands below it need a spot check only.</p>
+<p><strong>Twenty or more: 30 articles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html"><em>Electroweak Theory under the Biquaternion Framework — A Research Agenda</em></a></td>
+<td style="text-align: right;">92</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html"><em>The Standard Model under the Biquaternion Framework — A Research Agenda</em></a></td>
+<td style="text-align: right;">92</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html"><em>Electromagnetism in Media — The Local Complex Structure at Work</em></a></td>
+<td style="text-align: right;">91</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html"><em>Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</em></a></td>
+<td style="text-align: right;">67</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html"><em>The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">63</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html"><em>Anomalies and Anomaly Cancellation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">59</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html"><em>Klein–Gordon from the Dirac Square in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">56</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html"><em>The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</em></a></td>
+<td style="text-align: right;">52</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html"><em>Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">46</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html"><em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html"><em>The Proton in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">43</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html"><em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em></a></td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html"><em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em></a></td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html"><em>The First-Order Root of the Biquaternion D'Alembertian</em></a></td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutron-in-biquaternionic-form.html"><em>The Neutron in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html"><em>The Foldy–Wouthuysen Transformation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">33</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html"><em>The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">33</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-dirac-operator-and-its-adjoint.html"><em>The Dirac Operator and Its Adjoint</em></a></td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html"><em>The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</em></a></td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-exponential-polar-decomposition-of-m6c.html"><em>The Exponential Polar Decomposition of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html"><em>The W and Z Bosons in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html"><em>Parra's Four Options of the Dirac Equation and the Discrete Symmetries</em></a></td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html"><em>Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</em></a></td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html"><em>The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</em></a></td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html"><em>The Dirac Path Integral in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/moller-scattering-in-biquaternionic-form.html"><em>Møller Scattering in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html"><em>Custodial Symmetry and the Rho Parameter in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html"><em>The Nonlinear Sigma Model in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html"><em>The Superalgebra Reading and the Odd Extension in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html"><em>Zitterbewegung in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Ten to nineteen: 43 articles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/element-and-operator-representations-the-three-actions.html"><em>Element and Operator Representations: The Three Actions</em></a></td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html"><em>Matter Makes Space — An External Construction from Quaternionic Spinors</em></a></td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-m4c.html"><em>Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html"><em>The CKM Matrix and CP Violation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html"><em>The Seesaw Mechanism and Majorana Mass in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html"><em>The Theta Parameter and Strong CP in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html"><em>Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html"><em>Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html"><em>The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html"><em>The Number of Generations and the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html"><em>The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html"><em>Canonical Quantization of the Biquaternion Rarita–Schwinger Field</em></a></td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html"><em>The Roots of a General Element: Mass, Frames and the Mass Shell</em></a></td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-scattering-in-biquaternionic-form.html"><em>Bhabha Scattering in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html"><em>Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.html"><em>The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral</em></a></td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html"><em>Confinement and the Loss of Partonic Information in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-spinors-and-reality-conditions-with-inner-conjugation.html"><em>Real Spinors and Reality Conditions with Inner Conjugation</em></a></td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html"><em>The Dirac Oscillator in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-exponential-polar-decomposition-of-m4c.html"><em>The Exponential Polar Decomposition of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html"><em>The Gordon Decomposition of the Dirac Current in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html"><em>Exercise: The Non-Relativistic Limit and the Pauli Equation</em></a></td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/reduced-biquaternion-spin-geometry.html"><em>Reduced Biquaternion Spin Geometry</em></a></td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-m6c.html"><em>Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spin-geometry.html"><em>Spin Geometry</em></a></td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-clifford-decomposition-of-the-split-biquaternion-fractals.html"><em>The Clifford Decomposition of the Split-Biquaternion Fractals</em></a></td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-lie-algebra-gl4c-and-sl4c-of-m4c.html"><em>The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html"><em>The Skyrme Model and the Topological Baryon in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html"><em>Canonical Quantization of the Biquaternion Dirac Field</em></a></td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/pin-representations-and-hermitian-modules-with-signed-hermitian-adjoint.html"><em>Pin Representations and Hermitian Modules with Signed Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html"><em>The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html"><em>The Higgs Mechanism in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-paradox-in-biquaternionic-form.html"><em>The Klein Paradox in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html"><em>Curved Spacetime and the Biquaternion Framework</em></a></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/free-involutions-and-lens-spaces.html"><em>Free Involutions and Lens Spaces</em></a></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/involutions-of-the-twistor-operator.html"><em>Involutions of the Twistor Operator</em></a></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/pin-representations-and-clifford-modules-with-signed-inner-conjugation.html"><em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em></a></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-field-strength-biquaternion-and-its-invariants.html"><em>The Field-Strength Biquaternion and Its Invariants</em></a></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-rank-two-and-rank-three-splits-of-m6c.html"><em>The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/scattering-for-the-quaternionic-dirac-operator-the-lippmann-schwinger-equation-the-radiation-condition-and-faddeevs-greens-function.html"><em>Scattering for the Quaternionic Dirac Operator: The Lippmann–Schwinger Equation, the Radiation Condition and Faddeev's Green's Function</em></a></td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.html"><em>Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html"><em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html"><em>Why AXF Matrices instead of Pauli and Gamma Matrices</em></a></td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Fewer than ten: 160 articles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/m4c-pauli-representation-operators.html"><em>$M_4(\mathbb{C})$ Pauli Representation : Operators</em></a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/dirac-differential-operators.html"><em>Dirac Differential Operators</em></a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/dirac-operators-with-hermitian-adjoint.html"><em>Dirac Operators with Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-clifford-structures.html"><em>Hermitian Clifford Structures</em></a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html"><em>Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-spinor-operator.html"><em>The Spinor Operator</em></a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html"><em>The Spin–Statistics Theorem in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-zero-divisor-cone-and-the-massless-spectrum.html"><em>The Zero-Divisor Cone and the Massless Spectrum</em></a></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html"><em>Maxwell's Equations in the Biquaternionic Formulation</em></a></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html"><em>The Fierz–Kofink Identities and the Classification of Spinors</em></a></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html"><em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-theta-vacuum-in-biquaternionic-form.html"><em>The Theta Vacuum in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-pairings-and-the-index.html"><em>Hermitian Pairings and the Index</em></a></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spectral-triples-and-noncommutative-geometry.html"><em>Spectral Triples and Noncommutative Geometry</em></a></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html"><em>The Biquaternion Basis of a Unified-Field Fibre Bundle</em></a></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html"><em>The Conformal Group in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html"><em>The Quantized Dirac Field in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html"><em>The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</em></a></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html"><em>Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html"><em>Linearized Gravity in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/nonlinear-maxwell-equations-in-biquaternionic-form.html"><em>Nonlinear Maxwell Equations in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/peirce-carriers-and-inner-conjugation.html"><em>Peirce Carriers and Inner Conjugation</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/peirce-carriers-and-signed-hermitian-adjoint.html"><em>Peirce Carriers and Signed Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spin-representations-and-clifford-modules-with-inner-conjugation.html"><em>Spin Representations and Clifford Modules with Inner Conjugation</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spin-representations-of-the-orthogonal-lie-algebra-with-inner-conjugation.html"><em>Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.html"><em>Spin-1/2 Quantum Physics in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html"><em>The Feynman Propagator in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-grading-fermion-parity-and-the-two-sectors-in-biquaternionic-form.html"><em>The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html"><em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.html"><em>The Quantum–Relativity Tension and the Biquaternion Framework</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-two-sided-operators-method-to-build-m4c.html"><em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html"><em>Torsion, Contorsion and the Spin Connection in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/angular-momentum-and-spin-in-the-biquaternion-algebra.html"><em>Angular Momentum and Spin in the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-retarded-potentials-and-the-greens-function.html"><em>Exercise: The Retarded Potentials and the Green's Function</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/grand-unification-and-the-biquaternion-algebra-ceiling.html"><em>Grand Unification and the Biquaternion Algebra Ceiling</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-peirce-coordinates-in-the-reduced-biquaternion-algebra.html"><em>Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-peirce-coordinates-in-the-split-complex-algebra.html"><em>Spinors as Peirce Coordinates in the Split-Complex Algebra</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-m3-m3-and-m2-m4-corners-of-m6c.html"><em>The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html"><em>The Functional Integral in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-pin-group-of-the-gamma-frame.html"><em>The Pin Group of the Gamma Frame</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html"><em>The Relativistic Quadrupole in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html"><em>The S-Matrix in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-helicity-formalism-and-biquaternions.html"><em>The Spinor-Helicity Formalism and Biquaternions</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html"><em>Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/ai-physics-review.html"><em>AI Physics Review</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.html"><em>Complex Split Biquaternions and the Clifford Algebra Cl(3)</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/knot-theory.html"><em>Knot Theory</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/list-of-clifford-algebras-and-spin-groups.html"><em>List of Clifford Algebras and Spin Groups</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/peirce-carriers-and-signed-inner-conjugation.html"><em>Peirce Carriers and Signed Inner Conjugation</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/relativistic-mechanics-in-biquaternionic-form.html"><em>Relativistic Mechanics in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-coordinates-in-m3c.html"><em>Spinors as Coordinates in $M_3(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-coordinates-in-m4c.html"><em>Spinors as Coordinates in $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-coordinates-in-m5c.html"><em>Spinors as Coordinates in $M_5(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-coordinates-in-m6c.html"><em>Spinors as Coordinates in $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-clifford-group-and-the-frame-stabiliser.html"><em>The Clifford Group and the Frame Stabiliser</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-effective-optical-metric-of-the-local-complex-structure.html"><em>The Effective Optical Metric of the Local Complex Structure</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-graded-adjoint-action-on-a-module-over-a-clifford-algebra.html"><em>The Graded Adjoint Action on a Module over a Clifford Algebra</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-physical-interpretation-of-the-12-products.html"><em>The Physical Interpretation of the 12 Products</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-polar-decomposition-of-m4c.html"><em>The Polar Decomposition of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html"><em>The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/clifford-modules-and-the-twisted-cauchy-riemann-operator.html"><em>Clifford Modules and the Twisted Cauchy–Riemann Operator</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/congruence-twistors-and-the-fields-they-generate.html"><em>Congruence Twistors and the Fields They Generate</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/derivatives-fields-and-transforms.html"><em>Derivatives, Fields and Transforms</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/equivariant-knot-theory.html"><em>Equivariant Knot Theory</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-modules-over-the-biquaternion-algebra-with-hermitian-adjoint.html"><em>Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matrix-representations-conventions.html"><em>Matrix Representations Conventions</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html"><em>Non-Abelian Gauge Fields in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/operator-and-calculus-conventions.html"><em>Operator and Calculus Conventions</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html"><em>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html"><em>The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-empirical-status-of-the-biquaternion-framework.html"><em>The Empirical Status of the Biquaternion Framework</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html"><em>The Generating Functional and the Effective Action in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-graded-action-on-a-module-over-a-lie-algebra.html"><em>The Graded Action on a Module over a Lie Algebra</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-grading-of-the-clifford-algebra-with-signed-inner-conjugation.html"><em>The Grading of the Clifford Algebra with Signed Inner Conjugation</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html"><em>The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-klein-gordon-equation-in-biquaternionic-form.html"><em>The Klein–Gordon Equation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html"><em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.html"><em>The Lorentz Group as Biquaternion Norm Automorphisms</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-modules-and-the-minimal-left-ideals-of-m6c.html"><em>The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-n-regular-spectrally-regular-sector-mass-in-motion.html"><em>The N-Regular, Spectrally Regular Sector: Mass in Motion</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-action-and-the-spin-representation.html"><em>The One-Sided Action and the Spin Representation</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-one-sided-operators-of-an-n-degenerate-spectrally-regular-biquaternion.html"><em>The One-Sided Operators of an N-Degenerate, Spectrally Regular Biquaternion</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pauli-correspondence-and-the-matrix-image.html"><em>The Pauli Correspondence and the Matrix Image</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-polar-decomposition-of-m6c.html"><em>The Polar Decomposition of $M_6(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-keldysh-formalism-in-biquaternionic-form.html"><em>The Schwinger–Keldysh Formalism in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html"><em>The Yang–Mills Equation in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2r-cayley-representation-operators.html"><em>$M_2(\mathbb{R})$ Cayley Representation : Operators</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html"><em>Biquaternion Rotations and Lorentz Transformations</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-propagation-in-a-medium.html"><em>Exercise: Plane-Wave Propagation in a Medium</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/infinite-dimensional-hermitian-operators-and-car-with-hermitian-adjoint.html"><em>Infinite-Dimensional Hermitian Operators and CAR with Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/introduction-to-the-biquaternion-physical-interpretation-of-mathematics.html"><em>Introduction to the Biquaternion Physical Interpretation of Mathematics</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/left-multiplication-and-the-clifford-module-structure.html"><em>Left Multiplication and the Clifford Module Structure</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.html"><em>Null Electromagnetic Fields and the Shear-Free Congruence</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.html"><em>The Biquaternion D'Alembertian and Its Green's Functions</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html"><em>The Centre of the Biquaternion Algebra as the Classical Sector</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.html"><em>The Determination of the Possible Spins in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html"><em>The Fermionic Fock Space in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html"><em>The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-geometry-of-the-idempotents-of-m4c.html"><em>The Geometry of the Idempotents of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-graded-adjoint-action-on-a-module-over-a-lie-algebra.html"><em>The Graded Adjoint Action on a Module over a Lie Algebra</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-grading-of-a-hermitian-algebra-with-signed-hermitian-adjoint.html"><em>The Grading of a Hermitian Algebra with Signed Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-hodge-laplacian.html"><em>The Hodge Laplacian</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html"><em>The Sandwich of an N-Regular, Spectrally Regular Biquaternion</em></a></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/m2c-defining-representation.html"><em>$M_2(\mathbb{C})$ Defining Representation</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/adjoints-on-a-clifford-module.html"><em>Adjoints on a Clifford Module</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/algebra-and-element-conventions.html"><em>Algebra and Element Conventions</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/biquaternion-regular-functions.html"><em>Biquaternion Regular Functions</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/biquaternion-versors-and-the-orthogonal-group.html"><em>Biquaternion Versors and the Orthogonal Group</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html"><em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/clifford-analysis.html"><em>Clifford Analysis</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html"><em>Conformal Invariance and the Massless Limit in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html"><em>Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/hermitian-spin-geometry-and-the-twistor-correspondence.html"><em>Hermitian Spin Geometry and the Twistor Correspondence</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html"><em>Instantons and Solitons in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/introduction-to-the-biquaternion-universe.html"><em>Introduction to the Biquaternion Universe</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html"><em>Lattice Gauge Theory and the Biquaternion Path Integral</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/magnetic-resonance-and-rabi-oscillations-in-biquaternionic-form.html"><em>Magnetic Resonance and Rabi Oscillations in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/matrix-representations-conventions.html"><em>Matrix Representations Conventions</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/operator-and-calculus-conventions.html"><em>Operator and Calculus Conventions</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/operators-on-a-clifford-module.html"><em>Operators on a Clifford Module</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-gates-and-circuits-in-biquaternionic-form.html"><em>Quantum Gates and Circuits in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/right-multiplication-and-the-opposite-algebra.html"><em>Right Multiplication and the Opposite Algebra</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinor-adjoints-and-the-dirac-adjoint-with-hermitian-adjoint.html"><em>Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-peirce-coordinates.html"><em>Spinors as Peirce Coordinates</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html"><em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/split-quaternion-other-algebraic-element-representations.html"><em>Split-Quaternion Other Algebraic Element Representations</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-m1-m3-corner-of-m4c.html"><em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html"><em>The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-analytic-structure-of-fields-regularity-propagation-and-the-contour.html"><em>The Analytic Structure of Fields: Regularity, Propagation and the Contour</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html"><em>The Biquaternion Space, the Group of Involutions and the Six Subspaces</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-complex-displaced-singularity-and-the-circle-electron.html"><em>The Complex-Displaced Singularity and the Circle Electron</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-dirac-kahler-equation.html"><em>The Dirac–Kähler Equation</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html"><em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-graded-multiplication-operators.html"><em>The Graded Multiplication Operators</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-hermitian-index-theorem-and-the-signature-operator.html"><em>The Hermitian Index Theorem and the Signature Operator</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-involution-on-the-space-of-connections.html"><em>The Involution on the Space of Connections</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html"><em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-low-dimensional-spin-groups-and-the-exceptional-isomorphisms-with-inner-conjugation.html"><em>The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-modular-hamiltonian-in-biquaternionic-form.html"><em>The Modular Hamiltonian in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-modules-and-the-minimal-left-ideals-of-m4c.html"><em>The Modules and the Minimal Left Ideals of $M_4(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html"><em>The Native Qubit and the Defining Module of the Biquaternion Algebra</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-number-systems-as-clifford-algebras.html"><em>The Number Systems as Clifford Algebras</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.html"><em>The Parabolic Dirac Operator and the Fourier Reformulation of Maxwell's Equations</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-peirce-decomposition-of-m3c.html"><em>The Peirce Decomposition of $M_3(\mathbb{C})$</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-photon-in-biquaternionic-form.html"><em>The Photon in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html"><em>The Polar Decomposition and Remarkable Subspaces</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html"><em>The Polar Decomposition of an N-Regular Biquaternion</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-degenerate-biquaternion.html"><em>The Sandwich of an N-Degenerate, Spectrally Degenerate Biquaternion</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-sandwich-of-an-n-degenerate-spectrally-regular-biquaternion.html"><em>The Sandwich of an N-Degenerate, Spectrally Regular Biquaternion</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html"><em>The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-spectra-of-self-adjoint-operators-with-hermitian-adjoint.html"><em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-split-biquaternion-iterated-function-systems.html"><em>The Split-Biquaternion Iterated Function Systems</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-twistor-operator.html"><em>The Twistor Operator</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unit-group-the-cone-and-the-orders.html"><em>The Unit Group, the Cone and the Orders</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html"><em>The Unstable State and the Complex Energy Pole in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-volume-element-duality-and-the-hodge-star.html"><em>The Volume Element, Duality and the Hodge Star</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wick-theorem-in-biquaternionic-form.html"><em>The Wick Theorem in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html"><em>The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/twistor-spaces-and-the-hermitian-structure-of-a-conformal-manifold.html"><em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html"><em>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em></a></td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the periphery looks like.</strong> It is not noise. The heavy end is the applied physics of the series — the Standard Model and electroweak agendas, the media article, the Fujikawa and anomaly articles, the Klein–Gordon and Foldy–Wouthuysen articles. Those inherit the central sign from the core and use it hard. They are where a renamed core would leave a wrong word behind, and they are the reason the substitution pass is needed at all.</p>
+<h2 id="the-nine-senses">The Nine Senses</h2>
+<p><strong>The list.</strong> The corpus uses the word in nine senses. One is the decision, five are rival definitions of the same object, three are words of other fields. Each rival sense has an owner in the D table, and that owner is the article to change first.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sense</th>
+<th>What the text says</th>
+<th>Owner, with count</th>
+<th>Letter</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the side</td>
+<td>the slot on which an operator multiplies</td>
+<td><em>Operator Chirality on the Biquaternion Algebra</em>, 37</td>
+<td>D</td>
+<td>the decision</td>
+</tr>
+<tr>
+<td>the central sign</td>
+<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$ on the double, $\operatorname{diag}(-I_2,I_2)$ on $\Delta$</td>
+<td><em>Chirality: The Conjugate Pair</em>, 45</td>
+<td>D</td>
+<td>a grading of a module; rename</td>
+</tr>
+<tr>
+<td>the Peirce sign</td>
+<td>$R_{i\vec e_z}$, called a chirality or a copy index</td>
+<td><em>The Four Uses of Spin</em>, 17</td>
+<td>D</td>
+<td>a copy index; keep demoted, and add $P=-\gamma_5$</td>
+</tr>
+<tr>
+<td>the root</td>
+<td>$\Gamma=H^2$ for a root of order four, the $\mathbb{Z}/2$ quotient of a $\mathbb{Z}/4$ grading</td>
+<td><em>The Two Chiralities of $M_4(\mathbb{C})$</em>, 88</td>
+<td>D</td>
+<td>a matrix-model grading; rename</td>
+</tr>
+<tr>
+<td>a subspace of the carrier</td>
+<td>"the chirality is a subspace of the carrier, not an ideal"</td>
+<td><em>The Two Chiralities of $M_4(\mathbb{C})$</em>, 88</td>
+<td>D</td>
+<td>the <em>eigenspace</em> is the subspace; rewrite</td>
+</tr>
+<tr>
+<td>a sign per line</td>
+<td>"a chirality is a choice of signs $\varepsilon_1,\dots,\varepsilon_n$"</td>
+<td><em>Spinors as Peirce Coordinates in $n$ Dimensions</em>, 8</td>
+<td>D</td>
+<td>an $n$-dimensional copy label; rename</td>
+</tr>
+<tr>
+<td>the split into ideals</td>
+<td>"chirality is the split of the biquaternion into left and right ideals"</td>
+<td><em>The Daviau Map</em>, 25</td>
+<td>D</td>
+<td>a module splitting; rename</td>
+</tr>
+<tr>
+<td>the Hodge star</td>
+<td>"the chirality is the star", the $\mathbb{Z}/2$ of a Clifford grading</td>
+<td><em>The Adjoint of the Signature Operator</em>, 39</td>
+<td>O</td>
+<td>a different object, in the manifold category; keep</td>
+</tr>
+<tr>
+<td>amphichirality, medium, Lagrangian</td>
+<td>an orientation-reversing symmetry, optical activity, $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td><em>Amphichiral Knots</em>, 76</td>
+<td>O</td>
+<td>standard words of other fields; keep</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The five that migrate.</strong> The central sign, the Peirce sign, the root, the sign per line and the splitting into ideals are rival definitions of the chirality of the biquaternion algebra. Under the decision they are not wrong mathematics, they are wrong words: each names an object that exists, and none of them is the side. The migration renames them.</p>
+<p><strong>The one that is rewritten, not renamed.</strong> "The chirality is a subspace of the carrier" makes the chirality a thing rather than a side. The subspace exists, and it is the eigenspace of the operator; the sentence is rewritten in that form.</p>
+<h2 id="the-review-order">The Review Order</h2>
+<p><strong>Four tiers, by class.</strong> The class decides the work, and the count decides the order inside the class.</p>
+<p><strong>Tier one: the 41 definitions.</strong> The mathematics half is read already: §<em>The Mathematics First</em> settles eleven of the eighteen mathematics articles and clears seven. Every D article needs its definition sentence read and, where it names a rival object, rewritten. Two of them need no action, and they are the reference pair: <em>Operator Chirality on the Biquaternion Algebra</em> and <em>Biquaternion Physical Interpretation of Operator Chirality</em>. Where to start: <em>Chiral Fermions</em> (148, the largest and the one that denies the algebra), then <em>The Two Chiralities of $M_4(\mathbb{C})$</em> (88, two rival senses in one article), then <em>Chirality: The Conjugate Pair</em> (45, the strongest rival).</p>
+<p><strong>Tier two: the 26 assertions.</strong> Each is a claim to check against the decision. The claims that survive say the chirality is a cell, a right multiplication or a grading of the complexification; those become citations of the reference. The claims that fail say the chirality needs the algebra to be extended, needs a module, or is not an element of the algebra at all. That group is short and it is where a wrong sentence propagates farthest.</p>
+<p><strong>Tier three: the 30 periphery articles with twenty or more occurrences.</strong> A substitution pass: the word is already the right word in most places, and the passages that call a grading a chirality are the ones to change. The rewrite shapes are in §<em>The Three Rewrite Shapes</em>.</p>
+<p><strong>Tier four: the 203 periphery articles below twenty.</strong> A spot check, one pass, with the same three shapes as the only criterion.</p>
+<p><strong>No action: the 9 of another sense.</strong> Their word is not this word. The only check is that a cross-reference does not import it.</p>
+<p><strong>The arithmetic of the plan.</strong> 41 + 26 = 67 articles carry the decision, and they hold 2,250 occurrences, 45.6 per cent of the total. The remaining 242 articles hold the rest and need no reading of the definition.</p>
+<h2 id="what-the-decision-does-not-touch">What the Decision Does Not Touch</h2>
+<p><strong>Three uses that keep their word.</strong> The migration is about the chirality of the biquaternion algebra. It is not about the word.</p>
+<ul>
+<li><strong>Amphichirality.</strong> A knot is amphichiral when it is isotopic to its mirror image, which is the existence of an orientation-reversing involution. The word is standard, the definition is unrelated, and 76 occurrences in one article rest on it.</li>
+<li><strong>The chiral medium.</strong> Optical activity, the constitutive relations of a medium that distinguishes left- from right-circular polarization. Standard, unrelated, 91 occurrences in <em>Electromagnetism in Media</em> and 59 in the chiral-media Maxwell article.</li>
+<li><strong>The chiral Lagrangian and chiral symmetry breaking.</strong> $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ acting on the pion field, the chiral condensate, chiral perturbation theory. Standard, unrelated, and among the heaviest users of the word in the corpus.</li>
+</ul>
+<p><strong>One borderline.</strong> The chiral anomaly, and $\gamma_5$ in the Fujikawa measure, sit on the chirality operator of the frame and are therefore in scope for the <em>statement</em> of what $\gamma_5$ is, while the name of the anomaly is standard.</p>
+<h2 id="the-three-rewrite-shapes">The Three Rewrite Shapes</h2>
+<p><strong>One test.</strong> A sentence fails when its subject is <em>chirality</em> and its predicate names an element of $\mathbb{B}$, a root, an idempotent, a subspace, a module or an ideal. Chirality is a slot of an operator, and none of those is a slot.</p>
+<p><strong>Shape one: the definition sentence.</strong> "Chirality is the central sign" becomes "the central sign is the nontrivial grading of the double; the chirality operator is the side on which it multiplies". The old sentence is not deleted, it is moved one level down: the object stays, the name changes.</p>
+<p><strong>Shape two: the sentence that asserts a need.</strong> "Chirality is not visible to the algebra alone", "chirality needs a module", "the chirality requires a root". Each is now false and is deleted outright, with one replacement sentence: the chirality operator is a cell, $\gamma_5=-iR_{\vec e_z}$.</p>
+<p><strong>Shape three: the coincidence.</strong> "The Peirce sign is the chirality." It becomes: the Peirce sign equals $-\gamma_5$ for the root aligned with the volume direction, and for no other root. The statement keeps its content and loses the identification.</p>
+<p><strong>What not to do.</strong> Do not replace the word mechanically. A blind substitution turns "the chirality is the Peirce sign" into "the side is the Peirce sign", which is false, and it turns "a chirality is a choice of signs" into a sentence with no meaning. Every one of the 41 D articles needs the sentence read before the word is changed.</p>
+<h2 id="limits">Limits</h2>
+<ul>
+<li><strong>The class is a reading of one sentence.</strong> The two tests find the article; the letter comes from the first sentence the predication test returns. An article whose first such sentence is incidental, and whose real definition is elsewhere, would be mislettered. The tables quote that sentence, so the error is visible and cheap to correct.</li>
+<li><strong>The counts are of the file, not of the mathematics.</strong> A formula that prints $\gamma_5$ does not carry the word and is not counted, so an article can hold much more chirality than its row shows.</li>
+<li><strong>The predication test has a blind spot.</strong> An article can define the word by use alone — "the mass block is the space of maps from the right chirality to the left chirality" defines both halves without a copula. Four articles were caught by the title test and one by reading; others may be missed.</li>
+<li><strong>The tiers are a plan, not a measurement of error.</strong> A periphery article can still contain the one sentence that matters, and the spot check exists for that.</li>
+<li><strong>The letters rank the work, not the importance of the article.</strong> A two-occurrence D article outranks a hundred-occurrence P article in the queue.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The decision defines chirality as the side on which an operator multiplies. It reaches 309 articles and 4,930 occurrences: 133 mathematics articles with 1,278 and 176 physics articles with 3,652.</p>
+<p>The corpus splits in two. <strong>Core</strong>, 76 articles and 2,579 occurrences, is where the article says what chirality is. <strong>Periphery</strong>, 233 articles and 2,351 occurrences, is where the word is only used. Inside the core, 41 articles define the word, 26 assert a claim about it, and 9 name the chirality of another field.</p>
+<p>Of the 41 definitions, the eighteen mathematics articles were read first: eleven need the word changed and seven do not, the seven being the reference, four that already say the chirality is a slot, and two that belong to another category.</p>
+<p>The audit is therefore 41 definitions to settle, 26 claims to check, and a substitution pass over 30 heavy periphery articles with 203 to spot check. The nine senses reduce to five rival definitions to rename and one sentence to rewrite; the other three senses are other words and stay.</p>
+<p>The criterion is one line: a sentence fails when it makes chirality a thing of the algebra rather than a side of an operator.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\gamma_5=-iL_{e_t}R_{\vec e_z}=-iR_{\vec e_z}$</td>
+<td>the chirality operator of the frame, a pure right multiplier</td>
+</tr>
+<tr>
+<td>$L(\tilde\nabla)$</td>
+<td>the Dirac operator, a pure left multiplier</td>
+</tr>
+<tr>
+<td>$\chi=i\tilde\Xi_{\mathrm{ad}}$</td>
+<td>the central sign of the double, the rival sense of <em>chirality</em></td>
+</tr>
+<tr>
+<td>$P=R_{i\vec e_z}$</td>
+<td>the Peirce sign of the third axis, equal to $-\gamma_5$ for the aligned root</td>
+</tr>
+<tr>
+<td>$\Gamma=H^2$</td>
+<td>the matrix-model grading by a root of order four</td>
+</tr>
+<tr>
+<td><strong>D</strong>, <strong>A</strong>, <strong>O</strong>, <strong>P</strong></td>
+<td>defines, asserts, other sense, periphery</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/operator-chirality-on-the-biquaternion-algebra.html"><em>Operator Chirality on the Biquaternion Algebra</em></a>, for the definition, the dimensions, the swap, the conjugation and the eight objects the notion does not need.</li>
+<li><a href="../articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html"><em>Biquaternion Physical Interpretation of Operator Chirality</em></a>, for the physical reading, the identification of the operator with $\gamma_5$ and the limit that both halves of $\mathbb{B}$ are copies of $S$.</li>
+<li><a href="../articles_maths/chirality-the-conjugate-pair.html"><em>Chirality: The Conjugate Pair</em></a>, for the strongest of the rival senses, the central sign and the conjugate module.</li>
+<li><a href="../articles_maths/the-two-chiralities-of-m4c.html"><em>The Two Chiralities of $M_4(\mathbb{C})$</em></a>, for the root grading and the comparison with the biquaternion case.</li>
+<li><a href="the-pau-label-in-the-physics-corpus-counted.html"><em>The Pau Label in the Physics Corpus, Counted</em></a>, for the method: a literal census of a word over a corpus, with the same conventions of counting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

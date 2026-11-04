@@ -645,13 +645,25 @@ $$
 \gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
-They satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$. In the Pauli form the same five are
+In the Pauli form the same five are
 $$
 \gamma_0=\sigma_1\otimes I_2,\qquad
 \gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
 \gamma_5=-\sigma_3\otimes I_2 .
+$$</p>
+<p>In the axis-free display, which is the display of the body and of the corpus, the same five are
 $$
-<strong>The display, and the relation to the axis-free one.</strong> This section keeps the Peirce arrays, and the reason is the one that keeps them at all: its arrays are the ones the literature prints, $\gamma_0=\sigma_1\otimes I_2$ and $\gamma_k=i\sigma_2\otimes\sigma_k$, so a reader who compares with a textbook compares arrays and not only operators. The body of this article and of the corpus writes the same five in the axis-free display, and the two arrays of one operator are conjugates,
+\gamma_0=\begin{pmatrix}0&-i&0&0\\i&0&0&0\\0&0&0&i\\0&0&-i&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&-i&0&0\\i&0&0&0\end{pmatrix},
+$$
+$$
+\gamma_2=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+\gamma_5=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix}.
+$$
+These are the cells themselves, $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_{\nu(k)}}^{\mathrm{axf}}$, and no entry marks them out from the other eleven cells.</p>
+<p>In both displays the five satisfy $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4$, $(\gamma_k)^2=-I_4$ and $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$.</p>
+<p><strong>The display, and the relation to the axis-free one.</strong> Both arrays of each of the five are printed above: the Peirce ones first, because they are the ones the literature prints, $\gamma_0=\sigma_1\otimes I_2$ and $\gamma_k=i\sigma_2\otimes\sigma_k$, so a reader who compares with a textbook compares arrays and not only operators; the axis-free ones after them, because they are the display of the body and of the corpus. The two arrays of one operator are conjugates,
 $$
 \gamma_\mu^{\mathrm{axf}}=C_{\Pi}\,\gamma_\mu^{\mathrm{pau}}\,C_{\Pi}^{-1},\qquad
 \gamma_\mu^{\mathrm{pau}}=C_{\Pi}^{-1}\,\gamma_\mu^{\mathrm{axf}}\,C_{\Pi},
@@ -664,8 +676,9 @@ with $C_{\Pi}$ the change of §<em>The 4×4 Matrix Representation</em>, $\det C_
 <tr>
 <th>grade</th>
 <th>$\gamma$-product</th>
-<th>cell</th>
-<th>equality</th>
+<th>Peirce cell</th>
+<th>Peirce equality</th>
+<th>axis-free cell</th>
 </tr>
 </thead>
 <tbody>
@@ -674,96 +687,112 @@ with $C_{\Pi}$ the change of §<em>The 4×4 Matrix Representation</em>, $\det C_
 <td>$1$</td>
 <td>$L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 <td>$L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=I_4$</td>
+<td>$L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$1$</td>
 <td>$\gamma_0$</td>
 <td>$L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$</td>
 <td>$L_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0$</td>
+<td>$L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$1$</td>
 <td>$\gamma_1$</td>
 <td>$L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_1$</td>
+<td>$L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$1$</td>
 <td>$\gamma_2$</td>
 <td>$L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_2$</td>
+<td>$L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$1$</td>
 <td>$\gamma_3$</td>
 <td>$L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=-i\,\gamma_3$</td>
+<td>$L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$2$</td>
 <td>$\gamma_0\gamma_1$</td>
 <td>$L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0\gamma_1$</td>
+<td>$L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$2$</td>
 <td>$\gamma_0\gamma_2$</td>
 <td>$L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0\gamma_2$</td>
+<td>$L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$2$</td>
 <td>$\gamma_0\gamma_3$</td>
 <td>$L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=\gamma_0\gamma_3$</td>
+<td>$L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$2$</td>
 <td>$\gamma_1\gamma_2$</td>
 <td>$L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_z}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\gamma_1\gamma_2$</td>
+<td>$L_{\vec e_z}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$2$</td>
 <td>$\gamma_1\gamma_3$</td>
 <td>$L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_y}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=-\gamma_1\gamma_3$</td>
+<td>$L_{\vec e_y}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$2$</td>
 <td>$\gamma_2\gamma_3$</td>
 <td>$L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_x}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}=\gamma_2\gamma_3$</td>
+<td>$L_{\vec e_x}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$3$</td>
 <td>$\gamma_0\gamma_1\gamma_2$</td>
 <td>$L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_z}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0\gamma_1\gamma_2$</td>
+<td>$L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$3$</td>
 <td>$\gamma_0\gamma_1\gamma_3$</td>
 <td>$L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_y}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=i\,\gamma_0\gamma_1\gamma_3$</td>
+<td>$L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$3$</td>
 <td>$\gamma_0\gamma_2\gamma_3$</td>
 <td>$L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}$</td>
 <td>$L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=-i\,\gamma_0\gamma_2\gamma_3$</td>
+<td>$L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$3$</td>
 <td>$\gamma_1\gamma_2\gamma_3$</td>
 <td>$L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$</td>
 <td>$L_{e_t}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}=i\,\gamma_1\gamma_2\gamma_3$</td>
+<td>$L_{e_t}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$</td>
 </tr>
 <tr>
 <td>$4$</td>
 <td>$\gamma_0\gamma_1\gamma_2\gamma_3$</td>
 <td>$L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$</td>
 <td>$L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}=i\,\gamma_5=-\gamma_0\gamma_1\gamma_2\gamma_3$</td>
+<td>$L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$</td>
 </tr>
 </tbody>
 </table></div>

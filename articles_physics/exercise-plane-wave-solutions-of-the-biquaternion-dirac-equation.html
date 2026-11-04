@@ -607,7 +607,18 @@ $$
 \gamma_2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
 \gamma_3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
 \gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
-$$</p>
+$$
+These are the Peirce arrays, the ones the literature prints. In the axis-free display, which is the display of the body, the same five are
+$$
+\gamma_0=\begin{pmatrix}0&-i&0&0\\i&0&0&0\\0&0&0&i\\0&0&-i&0\end{pmatrix},\qquad
+\gamma_1=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&-i&0&0\\i&0&0&0\end{pmatrix},
+$$
+$$
+\gamma_2=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+\gamma_3=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+\gamma_5=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
+$$
+the signed permutations $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$ and $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_{\nu(k)}}^{\mathrm{axf}}$, carried into the Peirce arrays by $C_{\Pi}$. The block forms and the Dirac basis below stay in the Peirce display.</p>
 <p><strong>The Dirac basis.</strong> It is the same set after $U=\frac1{\sqrt2}\begin{pmatrix}I_2&I_2\\-I_2&I_2\end{pmatrix}$:
 $$
 \gamma_0^d=\begin{pmatrix}I_2&0\\0&-I_2\end{pmatrix}=
@@ -633,8 +644,14 @@ $$
 \gamma_0=c_0=R_{i\vec e_x}^{\mathrm{pau}},\qquad
 \gamma_k=c_k=L_{i\vec e_k}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\qquad
 \gamma_5=i\Omega=R_{-i\vec e_z}^{\mathrm{pau}},
-$$
-with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$. The volume element is $\Omega=\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}$, so $i\Omega=i\bigl(-R_{\vec e_z}^{\mathrm{pau}}\bigr)=R_{-i\vec e_z}^{\mathrm{pau}}=\gamma_5$: the factor $i$ is what turns the real $\vec e_z$ into $-i\vec e_z$, and $i^2=-1$ is what makes $\Omega^2=-1$ and $\gamma_5^2=+1$.</p>
+$$</p>
+<p>The same in the axis-free display:</p>
+<p>$$
+\gamma_0=c_0=R_{i\vec e_x}^{\mathrm{axf}},\qquad
+\gamma_k=c_k=L_{i\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\qquad
+\gamma_5=i\Omega=R_{-i\vec e_z}^{\mathrm{axf}},
+$$</p>
+<p>with $\{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}$. The volume element is $\Omega=\gamma_0\gamma_1\gamma_2\gamma_3=-R_{\vec e_z}^{\mathrm{pau}}$, so $i\Omega=i\bigl(-R_{\vec e_z}^{\mathrm{pau}}\bigr)=R_{-i\vec e_z}^{\mathrm{pau}}=\gamma_5$: the factor $i$ is what turns the real $\vec e_z$ into $-i\vec e_z$, and $i^2=-1$ is what makes $\Omega^2=-1$ and $\gamma_5^2=+1$.</p>
 <p><strong>The identities the bodies cite.</strong> In the $\gamma$ reading, with $\epsilon_{0123}=+1$,
 $$
 \{\gamma_\mu,\gamma_\nu\}=2g_{\mu\nu}I_4,\qquad
@@ -665,7 +682,7 @@ $$</p>
 \sum_\mu\gamma_\mu\gamma_\delta\gamma_\beta\gamma_\alpha\gamma_\mu=+2\gamma_\delta\gamma_\beta\gamma_\alpha .
 $$</p>
 <p>The four are one rule: a sum of this shape returns $(-1)^k(4-2k)$ times the $k$-vector it surrounds, for $k=0,1,2,3$. For $k=2$ the factor vanishes unless the two indices coincide, where the inside is the identity and the sum is $4I_4$; for $k=3$ the factor is $+2$ and not $-2$, and that sign is the one most easily lost. In the $\mathbb{M}_-$ frame the metric enters, only the first keeps its shape, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, and the others acquire metric factors: $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(g_{\alpha\alpha}+1)\gamma_\alpha$, which is $4\gamma_0$ for the time index and $0$ for a spatial one.</p>
-<p><strong>The display.</strong> Where this section prints a matrix it prints the Peirce display, labelled $\mathrm{pau}$, because these are the arrays the literature prints; the body of the article writes the same operators in the axis-free display, $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant. The label names the array and not the operator.</p>
+<p><strong>The display.</strong> Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{e_\mu}^{\mathrm{axf}}=C_{\Pi}L_{e_\mu}^{\mathrm{pau}}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a cell named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.</p>
 <h2 id="summary">Summary</h2>
 <p>The seven problems test the parent's plane-wave solutions and confirm them in the algebra.</p>
 <ol>
