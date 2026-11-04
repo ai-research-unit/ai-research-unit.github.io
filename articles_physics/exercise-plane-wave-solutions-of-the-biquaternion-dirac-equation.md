@@ -7,15 +7,15 @@ This is a worked exercise on the biquaternion Dirac equation, written in the biq
 **One equation, written out.** The symbol is a two-sided action, and it is written out rather than named by its factors,
 
 $$
-\slashed p:\ \tilde\Psi\longmapsto iE\,\tilde\Psi\,\vec e_x-i\sum_k p_k\,\vec e_k\,\tilde\Psi\,\vec e_y,\qquad p_0=E,
+\mathcal D(p):\ \tilde\Psi\longmapsto iE\,\tilde\Psi\,\vec e_x-i\sum_k p_k\,\vec e_k\,\tilde\Psi\,\vec e_y,\qquad p_0=E,
 $$
 
-so that the Dirac equation is $\slashed p\,\tilde\Psi=m\tilde\Psi$. One term carries a right factor alone, the other three a left factor $\vec e_k$ beside a right factor $\vec e_y$. Each cell replaces one coordinate derivative: the time cell the derivative in $t'$, and the three space cells the derivatives in $x_k$; the cells themselves are named in the next section.
+so that the Dirac equation is $\mathcal D\,\tilde\Psi=m\tilde\Psi$. One term carries a right factor alone, the other three a left factor $\vec e_k$ beside a right factor $\vec e_y$. Each cell replaces one coordinate derivative: the time cell the derivative in $t'$, and the three space cells the derivatives in $x_k$; the cells themselves are named in the next section.
 
-**One equation on the two values.** The field carries the chirality subscript of *Special Element and Peirce Conventions*, §*The Chirality Convention*, and its two parts are the two values of the chirality cell: $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, the value $-1$ written $L$ and the value $+1$ written $R$. A left multiplication keeps the value, a product takes the value of its right factor, and a scalar multiple keeps the value. Each of the four terms of the symbol carries a right factor $\vec e_x$ or $\vec e_y$, and right multiplication by either unit exchanges the two values, so the symbol exchanges them: the equation is the pair
+**One equation on the two values.** The field carries the chirality subscript of *Special Element Conventions*, §*The Chirality Convention*, and its two parts are the two values of the chirality cell: $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$, the value $-1$ written $L$ and the value $+1$ written $R$. A left multiplication keeps the value, a product takes the value of its right factor, and a scalar multiple keeps the value. Each of the four terms of the symbol carries a right factor $\vec e_x$ or $\vec e_y$, and right multiplication by either unit exchanges the two values, so the symbol exchanges them: the equation is the pair
 
 $$
-\slashed p\,\tilde\Psi_R=m\,\tilde\Psi_L,\qquad \slashed p\,\tilde\Psi_L=m\,\tilde\Psi_R,
+\mathcal D\,\tilde\Psi_R=m\,\tilde\Psi_L,\qquad \mathcal D\,\tilde\Psi_L=m\,\tilde\Psi_R,
 $$
 
 one equation on each part, coupled by the mass and by nothing else.
@@ -24,7 +24,7 @@ one equation on each part, coupled by the mass and by nothing else.
 
 ## The Cells of the Frame
 
-**The composition law.** A cell is a two-sided multiplication $L_aR_b$, composed with the three laws of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Operators on an Algebra*, whose reversal of the right indices is the only subtlety: a product of two cells comes out with its indices interchanged, and $Q\mapsto aQb$ is therefore unambiguous. Every computation below is a use of those laws on the four units, and none of them is restated here.
+**The composition law.** A cell is a two-sided multiplication $L_aR_b$, composed with the three laws of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Two Regular Representations*, whose reversal of the right indices is the only subtlety: a product of two cells comes out with its indices interchanged, and $Q\mapsto aQb$ is therefore unambiguous. Every computation below is a use of those laws on the four units, and none of them is restated here.
 
 **The scalar $i$ is central**, so multiplication by $i$ on the left and on the right are one operator, and a factor $i$ in front of a cell is pushed into its argument: $iR_{\vec e_x}=R_{i\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}=L_{i\vec e_k}R_{\vec e_y}$, $-iR_{\vec e_z}=R_{-i\vec e_z}$. With $i^2=-1$ and $\vec e_k^2=-e_t$ a product of two cells then collapses in one line:
 
@@ -42,7 +42,7 @@ $$
 c_\mu=L_{i e_\mu}R_{\vec e_{\nu(\mu)}},\qquad \nu(t)=x,\quad \nu(k)=y ,
 $$
 
-that is $c_0=R_{i\vec e_x}$ and $c_k=L_{i\vec e_k}R_{\vec e_y}$, the scalar unit $e_t$ multiplying as the identity. Each cell is a left multiplication times a right one, and the time cell is a pure right multiplication. The index $\mu$ is the coordinate index: the cell is the one paired with $\partial/\partial x_\mu$ in the $\mathbb{M}_-$ frame, and the derivative is taken with respect to $x_\mu=(t',x,y,z)$, not with respect to $Q_\mu$. That is the precise sense in which the cells align with the coordinates.
+that is $c_0=R_{i\vec e_x}$ and $c_k=L_{i\vec e_k}R_{\vec e_y}$, the scalar unit $e_t$ multiplying as the identity, the five cells of *Matrix Representations Conventions*, §*The Clifford Structure*. Each cell is a left multiplication times a right one, and the time cell is a pure right multiplication. The index $\mu$ is the coordinate index: the cell is the one paired with $\partial/\partial x_\mu$ in the $\mathbb{M}_-$ frame, and the derivative is taken with respect to $x_\mu=(t',x,y,z)$, not with respect to $Q_\mu$. That is the precise sense in which the cells align with the coordinates.
 
 **What each cell is.**
 
@@ -55,10 +55,10 @@ that is $c_0=R_{i\vec e_x}$ and $c_k=L_{i\vec e_k}R_{\vec e_y}$, the scalar unit
 
 The right factor $\vec e_y$ of the three space cells is not a spatial axis of the frame: it is the unit on which the value is read, and the axis enters through the left factor $\vec e_k$ alone. The unit $\vec e_y$ is what makes the three space cells square to $-1$ while the time cell squares to $+1$, and that asymmetry belongs to the pair of units $(e_t,\vec e_y)$, not to the triad.
 
-**The other display.** The display is changed by right multiplication by the unit element $\tilde W=(e_t+\vec e_y)/\sqrt2$, with $\tilde W^{-1}=\tilde W^{\natural}=(e_t-\vec e_y)/\sqrt2$, so that $\tilde W^{-1}\vec e_y\tilde W=\vec e_y$ and
+**The other display.** The display is changed by right multiplication by the unit element $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, with $\tilde Q_{\mathrm{disp}}^{-1}=\tilde Q_{\mathrm{disp}}^{\natural}=(e_t-\vec e_y)/\sqrt2$, so that $\tilde Q_{\mathrm{disp}}^{-1}\vec e_y\tilde Q_{\mathrm{disp}}=\vec e_y$ and
 
 $$
-\tilde W^{-1}(i\vec e_x)\tilde W=i\vec e_z,\qquad \tilde W^{-1}(-i\vec e_z)\tilde W=i\vec e_x .
+\tilde Q_{\mathrm{disp}}^{-1}(i\vec e_x)\tilde Q_{\mathrm{disp}}=i\vec e_z,\qquad \tilde Q_{\mathrm{disp}}^{-1}(-i\vec e_z)\tilde Q_{\mathrm{disp}}=i\vec e_x .
 $$
 
 In that display the cells read
@@ -87,13 +87,11 @@ by the rule of Problem 5. The spatial cells do not change, and the temporal cell
 
 ## Frame Covariance and the Volume Cell
 
-**Frame covariance.** The cells are written in a frame, and no direction is privileged. Let $(t_1,t_2,t_3)$ be an orthonormal triad and $(u,w)$ an orthogonal pair of unit vectors; then
-
+**Frame covariance.** The cells are written in a frame, and no direction is privileged. Let $(t_1,t_2,t_3)$ be an orthonormal triad and $(u,w)$ an orthogonal pair of unit vectors. The two kinds of cell,
 $$
-R_{iw}\qquad\text{and}\qquad L_{it_k}R_u
+R_{iw},\qquad L_{it_k}R_u ,
 $$
-
-satisfy the same relations for every such choice: the two squares are $R_{e_t}$ and $L_{e_t}R_{-e_t}$, because $w^2=u^2=-e_t$ and $i^2=-1$, and the cross term between a time cell and a space cell carries the right factor $iwu+uiw$, which vanishes because $u$ and $w$ are orthogonal and therefore anticommute. The exercise takes $t_k=\vec e_k$, $u=\vec e_y$, $w=\vec e_x$. A change of the triad is a spatial rotation; a change of the pair is a change of the value, and neither changes the physics.
+obey the same relations for every such choice: the two squares are $R_{e_t}$ and $L_{e_t}R_{-e_t}$, because $w^2=u^2=-e_t$ and $i^2=-1$, and the cross term between a time cell and a space cell carries the right factor $iwu+uiw$, which vanishes because $u$ and $w$ are orthogonal and therefore anticommute. The exercise takes $t_k=\vec e_k$, $u=\vec e_y$, $w=\vec e_x$. A change of the triad is a spatial rotation; a change of the pair is a change of the value, and neither changes the physics.
 
 **The volume cell.** Since left and right multiplications commute, the product of the four coordinate cells is
 
@@ -117,13 +115,13 @@ L_{i\vec e_j}R_{\vec e_y}\,L_{i\vec e_k}R_{\vec e_y}+L_{i\vec e_k}R_{\vec e_y}\,
 =L_{i^2(\vec e_j\vec e_k+\vec e_k\vec e_j)}=0,
 $$
 
-because $i$ is central and the quaternion units anticommute. So $\{c_\mu,c_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$, and the sign vector is the one the products give and not a metric chosen in advance.
+because $i$ is central and the quaternion units anticommute. So $\{c_\mu,c_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}$, with $\varepsilon$ the plain weight of the product: $+1$ on the time cell, $-1$ on each space cell, the weight the products give and not a metric chosen in advance.
 
 ## The Field and the Equation
 
 **The field.** The field is one element $\tilde\Psi$ of $\mathbb B$ with its two values $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ (§*The Chirality Convention*). Nothing further is needed to state the field: the two values are the two values of one operator, and the field is the element itself.
 
-**The equation.** For a plane wave of four-momentum $(E,\vec p)$ each cell is contracted with the momentum of the coordinate it is paired with, and the two-sided Dirac equation is the eigenvalue problem $\slashed p\,\tilde\Psi=m\tilde\Psi$, written on the element as
+**The equation.** For a plane wave of four-momentum $(E,\vec p)$ each cell is contracted with the momentum of the coordinate it is paired with, and the two-sided Dirac equation is the eigenvalue problem $\mathcal D\,\tilde\Psi=m\tilde\Psi$, written on the element as
 
 $$
 E\,\tilde\Psi\,i\vec e_x-i\,(\vec p\cdot\vec e)\,\tilde\Psi\,\vec e_y=m\,\tilde\Psi .
@@ -132,16 +130,16 @@ $$
 The symbol carries the two-sided character: one term is a pure right multiplication, the other three are left times right. The symbol exchanges the two values and the mass keeps them, so the equation is the pair of the introduction,
 
 $$
-\slashed p\,\tilde\Psi_R=m\,\tilde\Psi_L,\qquad \slashed p\,\tilde\Psi_L=m\,\tilde\Psi_R .
+\mathcal D\,\tilde\Psi_R=m\,\tilde\Psi_L,\qquad \mathcal D\,\tilde\Psi_L=m\,\tilde\Psi_R .
 $$
 
-**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The time cell squares to $+1$ and the three space cells to $-1$, so the sign vector of the squares is $(1,-1,-1,-1)$ and the symbol is the contraction with the flat metric of the $\mathbb{M}_-$ gradient. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\Xi=i\vec u_p$, a root of the central value $+1$, $\Xi^2=e_t$. The Hermitian conjugation $^{*}$ is the coefficient conjugation composed with the quaternion conjugation, $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$.
+**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The frame is the $\mathbb{M}_-$ frame of *Frame Conventions*, §*The $\mathbb{M}_-$ Frame*, and the five cells are its cells. The time cell squares to $+1$ and the three space cells to $-1$; that sign vector $(1,-1,-1,-1)$ belongs to the product of the units and is not the frame metric, which carries the opposite signs. The helicity direction is $\vec u_p=\vec p/\lvert\vec p\rvert$, and the helicity element is $\tilde\Xi=i\vec u_p$, a root of the central value $+1$, $\tilde\Xi^2=e_t$. The Hermitian conjugation $^{*}$ is the one of *Algebra and Element Conventions*, §*The Conjugations*, and the contraction of the cells with a momentum is written out rather than slashed, as *Index Notation and Corpus Conventions* requires: hence the plain glyph $\mathcal D$ for the operator and no slash anywhere in the article.
 
 ## Problem 1: The solutions at rest and at general momentum
 
-**Statement.** Solve $\slashed p\,\tilde w=m\tilde w$ and $\slashed p\,\tilde v=-m\tilde v$ explicitly at rest and at general momentum, in the two displays.
+**Statement.** Solve $\mathcal D\,\tilde w=m\tilde w$ and $\mathcal D\,\tilde v=-m\tilde v$ explicitly at rest and at general momentum, in the two displays.
 
-**Solution.** Eliminating the right part of the pair gives $\slashed p\,\slashed p\,\tilde\Psi_L=m^2\tilde\Psi_L$; the symbol squares to the interval, as Problem 3 shows, so the pair is soluble exactly on the mass shell
+**Solution.** Eliminating the right part of the pair gives $\mathcal D\,\mathcal D\,\tilde\Psi_L=m^2\tilde\Psi_L$; the symbol squares to the interval, as Problem 3 shows, so the pair is soluble exactly on the mass shell
 
 $$
 E^2=\vec p^{\,2}+m^2 .
@@ -150,10 +148,10 @@ $$
 On the shell the right part is free and the left part is determined by the action of the symbol:
 
 $$
-\boxed{\;\tilde\Psi_L=\frac1m\,\slashed p\,\tilde\Psi_R=\frac1m\Bigl(iE\,\tilde\Psi_R\,\vec e_x-i(\vec p\cdot\vec e)\,\tilde\Psi_R\,\vec e_y\Bigr)\;}
+\boxed{\;\tilde\Psi_L=\frac1m\,\mathcal D\,\tilde\Psi_R=\frac1m\Bigl(iE\,\tilde\Psi_R\,\vec e_x-i(\vec p\cdot\vec e)\,\tilde\Psi_R\,\vec e_y\Bigr)\;}
 $$
 
-The right part is two-complex-dimensional, so the space of positive-frequency solutions at fixed momentum is two-dimensional, and it carries no further label. The label is the helicity, and it is the two values of the helicity element: $\Xi$ commutes with the symbol, as Problem 7 shows, so its two eigenspaces cut the space into two one-dimensional pieces, one for each value.
+The right part is two-complex-dimensional, so the space of positive-frequency solutions at fixed momentum is two-dimensional, and it carries no further label. The label is the helicity, and it is the two values of the helicity element: $\tilde\Xi$ commutes with the symbol, as Problem 7 shows, so its two eigenspaces cut the space into two one-dimensional pieces, one for each value.
 
 **The amplitudes.** Along a helicity eigenstate the two parts have unequal size, and the ratio is fixed. Writing $\langle\tilde Q\rangle_{*}$ for the Hermitian norm,
 
@@ -166,10 +164,10 @@ with the upper sign for helicity $+1$ and the lower for helicity $-1$: the left 
 **The negative-frequency branch.** The same construction with $m$ replaced by $-m$:
 
 $$
-\boxed{\;\tilde v_L=-\frac1m\,\slashed p\,\tilde v_R\;}
+\boxed{\;\tilde v_L=-\frac1m\,\mathcal D\,\tilde v_R\;}
 $$
 
-so that $\slashed p\,\tilde v=-m\tilde v$. The two branches together give the two frequency signs, and the two helicity values within each branch give the four-dimensional complex solution space of the parent.
+so that $\mathcal D\,\tilde v=-m\tilde v$. The two branches together give the two frequency signs, and the two helicity values within each branch give the four-dimensional complex solution space of the parent.
 
 **At rest.** With $\vec p=0$ and $E=m$ the symbol is the time cell alone, and the equation reads
 
@@ -185,11 +183,11 @@ $$
 
 with the two signs exchanged for the negative-frequency space. The rest frame supplies no direction, so the unit on which the condition is read is a choice of frame and not a physical axis; it is the unit the time cell carries.
 
-**The other display.** Right multiplication by $\tilde W$ carries a solution of one display to a solution of the other, because the cells are conjugated and the element is the same element: if $\slashed p\,\tilde\Psi=m\tilde\Psi$ then the symbol of the other display sends $\tilde\Psi\tilde W$ to $m\tilde\Psi\tilde W$. In that display the temporal cell carries the unit $\vec e_z$, whose two right eigenspaces are the two values, so the rest solutions read
+**The other display.** Right multiplication by $\tilde Q_{\mathrm{disp}}$ carries a solution of one display to a solution of the other, because the cells are conjugated and the element is the same element: if $\mathcal D\,\tilde\Psi=m\tilde\Psi$ then the symbol of the other display sends $\tilde\Psi\tilde Q_{\mathrm{disp}}$ to $m\tilde\Psi\tilde Q_{\mathrm{disp}}$. In that display the temporal cell carries the unit $\vec e_z$, whose two right eigenspaces are the two values, so the rest solutions read
 
 $$
-\tilde w(0)\,\tilde W\,\vec e_z=-i\,\tilde w(0)\,\tilde W,\qquad
-\tilde v(0)\,\tilde W\,\vec e_z=+i\,\tilde v(0)\,\tilde W .
+\tilde w(0)\,\tilde Q_{\mathrm{disp}}\,\vec e_z=-i\,\tilde w(0)\,\tilde Q_{\mathrm{disp}},\qquad
+\tilde v(0)\,\tilde Q_{\mathrm{disp}}\,\vec e_z=+i\,\tilde v(0)\,\tilde Q_{\mathrm{disp}} .
 $$
 
 At rest each branch therefore sits in a single value in that display — the $L$ value for the positive branch and the $R$ value for the negative branch — while in the first display both branches are right-eigenvectors of $\vec e_x$ and carry no value at all. The two values are mixed again as soon as the momentum is not zero. That is the biquaternion content of the parent's statement that the large component of the rest solution is a single component: the large component is the value the temporal cell does not mix.
@@ -230,7 +228,7 @@ $$
 \langle\tilde w_\pm,\tilde v_\pm\rangle_{\mathrm D}=0,
 $$
 
-and opposite helicities are orthogonal for the same reason, $\langle\tilde w_+,\tilde w_-\rangle_{\mathrm D}=0$, since the two right parts are eigenvectors of $\Xi$ with opposite values.
+and opposite helicities are orthogonal for the same reason, $\langle\tilde w_+,\tilde w_-\rangle_{\mathrm D}=0$, since the two right parts are eigenvectors of $\tilde\Xi$ with opposite values.
 
 **The Hermitian products.** The untwisted product is the positive one and does not cancel:
 
@@ -246,11 +244,11 @@ The bilinear is a Lorentz scalar and its value $2m$ is the covariant normalisati
 **Statement.** Verify that for every element $\tilde\Phi$,
 
 $$
-\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\tilde\Phi\rangle_{\mathrm D}=\slashed p\,\tilde\Phi+m\,\tilde\Phi,\qquad
-\sum_{\pm}\tilde v_\pm\,\langle\tilde v_\pm,\tilde\Phi\rangle_{\mathrm D}=\slashed p\,\tilde\Phi-m\,\tilde\Phi .
+\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\tilde\Phi\rangle_{\mathrm D}=\mathcal D\,\tilde\Phi+m\,\tilde\Phi,\qquad
+\sum_{\pm}\tilde v_\pm\,\langle\tilde v_\pm,\tilde\Phi\rangle_{\mathrm D}=\mathcal D\,\tilde\Phi-m\,\tilde\Phi .
 $$
 
-**Solution.** The left-hand side is a sum of two products of elements, one per helicity, and it is a rank-two operator read as a product: each term is the solution multiplied by the number its pairing with $\tilde\Phi$ returns. The two solutions at fixed momentum are the two helicity eigenstates, and their right parts span the right part of the carrier, so the sum reproduces $\tilde\Phi$ on the right and, through the action, on the left. Written out on the right-hand side,
+**Solution.** The left-hand side is a sum of two products of elements, one per helicity, and read as an operator it has rank two: each term is the solution multiplied by the number its pairing with $\tilde\Phi$ returns. The two solutions at fixed momentum are the two helicity eigenstates, and their right parts span the right part of the carrier, so the sum reproduces $\tilde\Phi$ on the right and, through the action, on the left. Written out on the right-hand side,
 
 $$
 \sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\tilde\Phi\rangle_{\mathrm D}
@@ -262,20 +260,20 @@ which is the symbol plus the mass. The negative-frequency sum is identical in st
 **The on-shell identity.** The two sums are complementary, and their product is the interval minus the mass squared:
 
 $$
-(\slashed p+m)(\slashed p-m)=\slashed p^2-m^2 .
+(\mathcal D+m)(\mathcal D-m)=\mathcal D^2-m^2 .
 $$
 
 The symbol squares to a multiple of the identity. Each term of the square is a product of two cells, and the collapse rule gives
 
 $$
-\slashed p^2=E^2R_{(i\vec e_x)^2}+p_jp_k\,L_{i\vec e_j}R_{\vec e_y}L_{i\vec e_k}R_{\vec e_y}
+\mathcal D^2=E^2R_{(i\vec e_x)^2}+p_jp_k\,L_{i\vec e_j}R_{\vec e_y}L_{i\vec e_k}R_{\vec e_y}
 =E^2+p_jp_k\,L_{-\vec e_j\vec e_k}R_{-e_t}
 =E^2-\vec p^{\,2},
 $$
 
-with the plus in front of the double sum because the square of the minus of the space term is plus, and with the cross terms vanishing because the time cell and a space cell anticommute. The result is the interval times the identity, $\slashed p^2=p^2$ with $p^2=E^2-\vec p^{\,2}$, and on the mass shell $\slashed p^2=m^2$, so $(\slashed p+m)(\slashed p-m)=0$ and the two branches close the solution space.
+with the plus in front of the double sum because the square of the minus of the space term is plus, and with the cross terms vanishing because the time cell and a space cell anticommute. The result is the interval times the identity, $\mathcal D^2=p^2$ with $p^2=E^2-\vec p^{\,2}$, and on the mass shell $\mathcal D^2=m^2$, so $(\mathcal D+m)(\mathcal D-m)=0$ and the two branches close the solution space.
 
-**The trace.** Each cell carries the right factor $\vec e_x$ or $\vec e_y$, and right multiplication by either unit exchanges the two values, so every cell is off-diagonal in the value and its trace vanishes. The identity on the carrier has trace four, so the trace of $\slashed p+m$ is $4m$: the mass is the only term the trace sees, which is the algebraic statement that the symbol has no scalar part.
+**The trace.** Each cell carries the right factor $\vec e_x$ or $\vec e_y$, and right multiplication by either unit exchanges the two values, so every cell is off-diagonal in the value and its trace vanishes. The identity on the carrier has trace four, so the trace of $\mathcal D+m$ is $4m$: the mass is the only term the trace sees, which is the algebraic statement that the symbol has no scalar part.
 
 ## Problem 4: The massless limit and the locking of helicity to the value
 
@@ -284,14 +282,14 @@ with the plus in front of the double sum because the square of the minus of the 
 **Solution.** At $m=0$ the mass term is gone and the pair decouples into two independent equations, one on each value:
 
 $$
-\slashed p\,\tilde\Psi_R=0,\qquad \slashed p\,\tilde\Psi_L=0 .
+\mathcal D\,\tilde\Psi_R=0,\qquad \mathcal D\,\tilde\Psi_L=0 .
 $$
 
 For $m=0$ the dispersion is $E=\lvert\vec p\rvert$, the action on each value loses rank, and each kernel is one-dimensional, spanned by a helicity eigenstate:
 
 $$
-\Xi\,\tilde\Psi_R=+\tilde\Psi_R\ \ \text{and}\ \ \tilde\Psi_L=0,\qquad
-\Xi\,\tilde\Psi_L=-\tilde\Psi_L\ \ \text{and}\ \ \tilde\Psi_R=0 .
+\tilde\Xi\,\tilde\Psi_R=+\tilde\Psi_R\ \ \text{and}\ \ \tilde\Psi_L=0,\qquad
+\tilde\Xi\,\tilde\Psi_L=-\tilde\Psi_L\ \ \text{and}\ \ \tilde\Psi_R=0 .
 $$
 
 The two labels are locked: **positive helicity goes with right-handedness and negative helicity with left-handedness.** The mass is the only term that couples the two values, and setting it to zero decouples them; at fixed momentum each equation selects one complex helicity state, and the two together give the two massless states.
@@ -335,19 +333,19 @@ $$
 
 These are the two facts the whole exercise rests on, and they are read from the multiplication table of the four units: right multiplication by $\vec e_x$ or by $\vec e_y$ carries each value into the other, and left multiplication keeps the value.
 
-**The change of the display.** Right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$ is a unit element, and it sends one display to the other:
+**The change of the display.** Right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ is a unit element, and it sends one display to the other:
 
 $$
-\tilde\Psi_d=\tilde\Psi_c\,\tilde W .
+\tilde\Psi_d=\tilde\Psi_c\,\tilde Q_{\mathrm{disp}} .
 $$
 
-The cells transform by conjugation with $\tilde W$: a right multiplication goes to $R_a\mapsto R_{\tilde W^{-1}a\tilde W}$, and a left multiplication is unchanged, because the left factor stands against the argument in both displays. Since $\tilde W^{-1}(i\vec e_x)\tilde W=i\vec e_z$, $\tilde W^{-1}(-i\vec e_z)\tilde W=i\vec e_x$ and $\tilde W^{-1}\vec e_y\tilde W=\vec e_y$,
+The cells transform by conjugation with $\tilde Q_{\mathrm{disp}}$: a right multiplication goes to $R_a\mapsto R_{\tilde Q_{\mathrm{disp}}^{-1}a\tilde Q_{\mathrm{disp}}}$, and a left multiplication is unchanged, because the left factor stands against the argument in both displays. Since $\tilde Q_{\mathrm{disp}}^{-1}(i\vec e_x)\tilde Q_{\mathrm{disp}}=i\vec e_z$, $\tilde Q_{\mathrm{disp}}^{-1}(-i\vec e_z)\tilde Q_{\mathrm{disp}}=i\vec e_x$ and $\tilde Q_{\mathrm{disp}}^{-1}\vec e_y\tilde Q_{\mathrm{disp}}=\vec e_y$,
 
 $$
 (R_{i\vec e_x})^{d}=R_{i\vec e_z},\qquad (L_{i\vec e_k}R_{\vec e_y})^{d}=L_{i\vec e_k}R_{\vec e_y},\qquad (R_{-i\vec e_z})^{d}=R_{i\vec e_x}.
 $$
 
-The spatial cells are unchanged because the right factor $\vec e_y$ is fixed by $\tilde W$; only the time cell and the chirality cell change, and they exchange their parts. In the new display the time cell is diagonal on the two values and the chirality cell exchanges them, which is why that display separates the large and the small part in the non-relativistic limit. The change is a right multiplication of the element and not a linear map of something other than the element: it moves the display, and the element is the same element.
+The spatial cells are unchanged because the right factor $\vec e_y$ is fixed by $\tilde Q_{\mathrm{disp}}$; only the time cell and the chirality cell change, and they exchange their parts. In the new display the time cell is diagonal on the two values and the chirality cell exchanges them, which is why that display separates the large and the small part in the non-relativistic limit. The change is a right multiplication of the element and not a linear map of something other than the element: it moves the display, and the element is the same element.
 
 **The Lorentz generators.** In the algebra they are the commutators of the cells, $S_{\mu\nu}=\frac i4[c_\mu,c_\nu]$, and they are again two-sided multiplications; the $i$'s inside the cells cancel first:
 
@@ -365,7 +363,7 @@ S_{0k}=\frac i2\,L_{\vec e_k}R_{\vec e_z},\qquad
 S_{jk}=\frac i2\,L_{\vec e_j\vec e_k},
 $$
 
-with one $i$ left in each and no $i$ inside a unit. Both keep the two values, since a left multiplication commutes with every right multiplication and a right multiplication by $\vec e_z$ commutes with the chirality cell, so $[S_{\mu\nu},R_{-i\vec e_z}]=0$ for every pair. The generators are the cell commutators read as operators, and each is a two-sided multiplication; nothing in them is a matrix.
+with one $i$ left in each and no $i$ inside a unit. Both keep the two values, since a left multiplication commutes with every right multiplication and a right multiplication by $\vec e_z$ commutes with the chirality cell, so $[S_{\mu\nu},R_{-i\vec e_z}]=0$ for every pair. The generators are the cell commutators read as operators, each a two-sided multiplication of the algebra.
 
 ## Problem 6: The biquaternionic mass-shell condition
 
@@ -403,28 +401,28 @@ The two roots $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$ are the two frequenc
 
 **Statement.** Show that the symbol commutes with the helicity element, that the carrier splits into two two-dimensional pieces, one per helicity, compute the determinant of the symbol on each, and read the mass shell as the vanishing of that determinant.
 
-**Solution.** The symbol is $\slashed p$ of §*The Field and the Equation*, and the massive symbol is $\mathcal D(p)=\slashed p-m$.
+**Solution.** The symbol is $\mathcal D$ of §*The Field and the Equation*, and the massive symbol is $\mathcal D-m$.
 
-**The symbol squares to the interval.** The square is the interval, $\slashed p^2=p^2$ with $p^2=E^2-\vec p^{\,2}$, by the collapse rule and the anticommutation of Problem 3.
+**The symbol squares to the interval.** The square is $E^2-\vec p^{\,2}$ times the identity, by the collapse rule and the anticommutation of Problem 3.
 
 **The helicity grading.** For $\vec p\neq0$ put
 
 $$
-\Xi=i\,\vec u_p,\qquad \Xi^2=i^2\,\vec u_p^{\,2}=(-1)(-e_t)=e_t ,
+\tilde\Xi=i\,\vec u_p,\qquad \tilde\Xi^2=i^2\,\vec u_p^{\,2}=(-1)(-e_t)=e_t ,
 $$
 
-so that left multiplication by $\Xi$ has eigenvalues $\pm1$, each twice, and its two eigenspaces are two-dimensional. The symbol commutes with it. The time term multiplies on the right alone, and a left multiplication passes through a right one; the mass is a scalar and passes too; the space terms multiply on the left by $\vec p\cdot\vec e$ and on the right by $\vec e_y$, and $\Xi$ commutes with $\vec p\cdot\vec e$ because the two elements are proportional, and with $\vec e_y$ because one factor acts on the left and the other on the right. Hence the symbol keeps the two eigenspaces of $\Xi$, and each carries a two-dimensional piece of the carrier.
+so that left multiplication by $\tilde\Xi$ has eigenvalues $\pm1$, each twice, and its two eigenspaces are two-dimensional. The symbol commutes with it. The time term multiplies on the right alone, and a left multiplication passes through a right one; the mass is a scalar and passes too; the space terms multiply on the left by $\vec p\cdot\vec e$ and on the right by $\vec e_y$, and $\tilde\Xi$ commutes with $\vec p\cdot\vec e$ because the two elements are proportional, and with $\vec e_y$ because one factor acts on the left and the other on the right. Hence the symbol keeps the two eigenspaces of $\tilde\Xi$, and each carries a two-dimensional piece of the carrier.
 
-**The piece determinant.** On a piece the symbol obeys $\slashed p_\pm^2=p^2$ and is not a multiple of the identity for $\vec p\neq0$, so for $p^2>0$ its two eigenvalues are $\pm\sqrt{p^2}$ and
+**The piece determinant.** On a piece the symbol obeys $\mathcal D_\pm^2=p^2$ and is not a multiple of the identity for $\vec p\neq0$, so for $p^2>0$ its two eigenvalues are $\pm\sqrt{p^2}$ and
 
 $$
-\det\bigl(\slashed p_\pm-m\bigr)=\bigl(\sqrt{p^2}-m\bigr)\bigl(-\sqrt{p^2}-m\bigr)=m^2-p^2=\tilde P\tilde P^{\natural}+m^2,
+\det\bigl(\mathcal D_\pm-m\bigr)=\bigl(\sqrt{p^2}-m\bigr)\bigl(-\sqrt{p^2}-m\bigr)=m^2-p^2=\tilde P\tilde P^{\natural}+m^2,
 $$
 
 using $\tilde P\tilde P^{\natural}=-p^2$ of Problem 6. The same number comes from the eigenvalues. Since $\tilde P=iE+\vec p\cdot\vec e$, the left multiplication by $\tilde P$ has the two eigenvalues $\lambda_\pm=i\bigl(E\mp\lvert\vec p\rvert\bigr)$, each twice, and one more $i^2=-1$ gives $\lambda_+\lambda_-=i^2\bigl(E^2-\vec p^{\,2}\bigr)=-(E^2-\vec p^{\,2})=\tilde P\tilde P^{\natural}$. The determinant on a piece is $\lambda_+\lambda_-+m^2$. The mass term is a multiple of the identity, so it shifts the two piece eigenvalues equally and enters each piece determinant once, and the determinant of the whole symbol is the product of the two,
 
 $$
-\boxed{\;\det\mathcal D(p)=\bigl(m^2-p^2\bigr)^2\;},
+\boxed{\;\det\bigl(\mathcal D-m\bigr)=\bigl(m^2-p^2\bigr)^2\;},
 $$
 
 the square of the Klein–Gordon symbol. The two pieces carry the same pair of eigenvalues: they are isospectral, and their common determinant is the frame-independent datum a single piece carries.
@@ -435,9 +433,9 @@ the square of the Klein–Gordon symbol. The two pieces carry the same pair of e
 
 **Worked case, on the shell.** For $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$ the energy is $E=\sqrt{m^2+\vec p^{\,2}}=1.774824$. Each piece determinant is zero, each piece spectrum is $\{-2m,\,0\}=\{-2.6,\,0\}$, and the whole symbol has rank two, with a one-dimensional kernel per helicity.
 
-**Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\Xi$ was at most $6.7\times10^{-16}$; the piece determinant from $m^2-p^2$, $8.0\times10^{-15}$; the two piece spectra from each other, $4.0\times10^{-15}$; $\slashed p^2$ from $p^2$, $1.8\times10^{-15}$; the eigenvalues of left multiplication by $\tilde P$ from $i(E\mp\lvert\vec p\rvert)$, $2.7\times10^{-15}$, and their product $\lambda_+\lambda_-$ from $\tilde P\tilde P^{\natural}$, $7.1\times10^{-15}$; the determinant of the symbol from $(m^2-p^2)^2$, $8.7\times10^{-14}$.
+**Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde\Xi$ was at most $6.7\times10^{-16}$; the piece determinant from $m^2-p^2$, $8.0\times10^{-15}$; the two piece spectra from each other, $4.0\times10^{-15}$; $\mathcal D^2$ from $p^2$, $1.8\times10^{-15}$; the eigenvalues of left multiplication by $\tilde P$ from $i(E\mp\lvert\vec p\rvert)$, $2.7\times10^{-15}$, and their product $\lambda_+\lambda_-$ from $\tilde P\tilde P^{\natural}$, $7.1\times10^{-15}$; the determinant of the symbol from $(m^2-p^2)^2$, $8.7\times10^{-14}$.
 
-**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\Xi$ is undefined: the symbol is the mass plus the time cell and the carrier splits into the two eigenspaces of $\vec e_x$, the rest-frame split of Problem 1, so the label is a rest-frame value and not the helicity. For a spacelike momentum $p^2<0$ the two eigenvalues $\pm\sqrt{p^2}$ are imaginary and the piece determinant $m^2+\lvert p^2\rvert$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the identity still holds, but the massless piece is nilpotent there and the massive piece keeps the determinant $m^2$: this is the exceptional case of the massless wall.
+**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde\Xi$ is undefined: the symbol is the mass plus the time cell and the carrier splits into the two eigenspaces of $\vec e_x$, the rest-frame split of Problem 1, so the label is a rest-frame value and not the helicity. For a spacelike momentum $p^2<0$ the two eigenvalues $\pm\sqrt{p^2}$ are imaginary and the piece determinant $m^2+\lvert p^2\rvert$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the identity still holds, but the massless piece is nilpotent there and the massive piece keeps the determinant $m^2$: this is the exceptional case of the massless wall.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -541,15 +539,15 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 
 The seven problems test the parent's plane-wave solutions and confirm them in the algebra.
 
-1. **The solutions.** Eliminating the right part gives the mass shell $E^2=\vec p^{\,2}+m^2$; on it the right part is free and the left part is $\frac1m\slashed p\,\tilde\Psi_R$, the two parts standing in the norm ratio $(E\mp\lvert\vec p\rvert):(E\pm\lvert\vec p\rvert)$ for helicity $\pm1$. At rest the solutions are the right-eigenspaces of $\vec e_x$, with basis $e_t+i\vec e_x$ and $\vec e_z+i\vec e_y$; in the other display each branch is a single value.
+1. **The solutions.** Eliminating the right part gives the mass shell $E^2=\vec p^{\,2}+m^2$; on it the right part is free and the left part is $\frac1m\mathcal D\,\tilde\Psi_R$, the two parts standing in the norm ratio $(E\mp\lvert\vec p\rvert):(E\pm\lvert\vec p\rvert)$ for helicity $\pm1$. At rest the solutions are the right-eigenspaces of $\vec e_x$, with basis $e_t+i\vec e_x$ and $\vec e_z+i\vec e_y$; in the other display each branch is a single value.
 2. **Normalisation.** The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$ and from the geometric mean $\sqrt{E^2-\vec p^{\,2}}=m$; the Hermitian products are $2E$.
-3. **Spin sums.** For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\slashed p+m$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\slashed p-m$ read as products of elements; $\slashed p^2=p^2$, and $(\slashed p+m)(\slashed p-m)=0$ on shell.
+3. **Spin sums.** For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\mathcal D+m$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\mathcal D-m$ read as products of elements; $\mathcal D^2=p^2$, and $(\mathcal D+m)(\mathcal D-m)=0$ on shell.
 4. **Massless limit.** The pair decouples, each value keeps one helicity, and the two labels are locked: positive helicity with the right value and negative helicity with the left one.
-5. **Cells.** The anticommutation relations are the multiplication table of the four units; the chirality cell is $R_{-i\vec e_z}$; the change of the display is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $R_{i\vec e_x}$ to $R_{i\vec e_z}$ and $R_{-i\vec e_z}$ to $R_{i\vec e_x}$ and leaves the space cells alone; the Lorentz generators are $S_{0k}=\frac i2L_{\vec e_k}R_{\vec e_z}$ and $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$.
+5. **Cells.** The anticommutation relations are the multiplication table of the four units; the chirality cell is $R_{-i\vec e_z}$; the change of the display is right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, which sends $R_{i\vec e_x}$ to $R_{i\vec e_z}$ and $R_{-i\vec e_z}$ to $R_{i\vec e_x}$ and leaves the space cells alone; the Lorentz generators are $S_{0k}=\frac i2L_{\vec e_k}R_{\vec e_z}$ and $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$.
 6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the quaternionic-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^{\,2}c^2+m^2c^4$.
-7. **Helicity pieces.** The symbol squares to the interval, $\slashed p^2=p^2$, and commutes with left multiplication by $\Xi=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of determinant $m^2-p^2=\lambda_+\lambda_-+m^2$; the pieces are isospectral, $\det\mathcal D(p)=(m^2-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
+7. **Helicity pieces.** The symbol squares to the interval, $\mathcal D^2=p^2$, and commutes with left multiplication by $\tilde\Xi=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of determinant $m^2-p^2=\lambda_+\lambda_-+m^2$; the pieces are isospectral, $\det(\mathcal D-m)=(m^2-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
 
-Two objects are needed by the exercise and are not displayed in the parent: the negative-frequency solutions $\tilde v$ (Problem 1) and the change-of-display element $\tilde W$ (Problem 5). The constructions above reproduce the parent's stated results.
+Two objects are needed by the exercise and are not displayed in the parent: the negative-frequency solutions $\tilde v$ (Problem 1) and the change-of-display element $\tilde Q_{\mathrm{disp}}$ (Problem 5). The constructions above reproduce the parent's stated results.
 
 ## Summary of Notation
 
@@ -564,17 +562,17 @@ Two objects are needed by the exercise and are not displayed in the parent: the 
 | $R_{-i\vec e_z}$ | Chirality cell; $-1$ on $\tilde Q_L$, $+1$ on $\tilde Q_R$ |
 | $\Omega=c_0c_1c_2c_3=-R_{\vec e_z}$ | Volume cell; $\Omega^2=-1$, and $i\Omega=R_{-i\vec e_z}$ |
 | $\tilde\Psi=\tilde\Psi_L+\tilde\Psi_R$ | The Dirac field and its two chirality values |
-| $\slashed p=E\,R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$ | Momentum-space symbol; $\slashed p\,\tilde\Psi=iE\tilde\Psi\vec e_x-i(\vec p\cdot\vec e)\tilde\Psi\vec e_y$ |
+| $\mathcal D\,\tilde\Psi=iE\tilde\Psi\vec e_x-i(\vec p\cdot\vec e)\tilde\Psi\vec e_y$ | Momentum-space symbol, the cell sum written out on the element |
 | $\langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde\Psi^{*}\tilde\Phi\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the time cell |
-| $\tilde W=(e_t+\vec e_y)/\sqrt2$ | Change of the display |
+| $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ | Change of the display |
 | $S_{0k}=\frac i2L_{\vec e_k}R_{\vec e_z}$, $S_{jk}=\frac i2L_{\vec e_j\vec e_k}$ | Lorentz generators, $S_{\mu\nu}=\frac i4[c_\mu,c_\nu]$ |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion |
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Mass-shell condition |
 | $p^2=E^2-\vec p^{\,2}$ | Interval of the four-momentum, $\hbar=c=1$ |
-| $\mathcal D(p)=\slashed p-m$ | Massive symbol; $\slashed p$ is the massless one |
-| $\Xi=i\vec u_p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ | Helicity element, $\Xi^2=e_t$; its two values grade the carrier |
+| $\mathcal D-m$ | Massive symbol; $\mathcal D$ is the massless one |
+| $\tilde\Xi=i\vec u_p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ | Helicity element, $\tilde\Xi^2=e_t$; its two values grade the carrier |
 | $\lambda_\pm=i(E\mp\lvert\vec p\rvert)$ | Eigenvalues of left multiplication by $\tilde P$; $\lambda_+\lambda_-=\tilde P\tilde P^{\natural}$ |
-| $\det\mathcal D(p)=(m^2-p^2)^2$ | Piece determinant $m^2-p^2$ per helicity, squared in the symbol |
+| $\det(\mathcal D-m)=(m^2-p^2)^2$ | Piece determinant $m^2-p^2$ per helicity, squared in the symbol |
 
 ## Further Reading
 

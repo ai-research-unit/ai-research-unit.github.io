@@ -6,51 +6,32 @@
 
 This article treats Møller scattering in the biquaternion framework. The framework's contribution is structural. Its minimal-coupling and quantization articles supply the ingredients — a $\mathrm{U}(1)$ coupling localised in the centre, a quantized Maxwell field, a Fock space with creation and annihilation operators, and a propagator — and the Møller amplitude is then a product of **two material-sector currents** contracted by the photon propagator. The **relative minus sign** between the two diagrams is the antisymmetry of fermion exchange, which the framework's canonical quantization already carries as the identity $(a^{\mathrm{fop}\dagger})^2=0$ on the mode algebra. And **crossing symmetry** is the framework's charge conjugation on the doubled module, read backwards. What the framework does not do is evaluate loops: the corpus's scattering content is tree-level, and the present article stays there.
 
-Every vertex below is written with the two-sided cells $L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$. The five Clifford generators appear only in *The Legacy Pauli Gamma Formulation*, where they are identified with five of those cells; the body uses only the cells. Throughout, $i^2=-1$ is the central imaginary of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, so every $i$ in a cell is that one central unit and no separate matrix imaginary enters.
+**Every vertex below is one action, written out.** A vertex acts on an element $Q$ of $\mathbb{B}$ by $Q\mapsto aQb$, with $a$ and $b$ elements of the algebra, and each action is printed in full where it enters. The five actions the amplitude uses are written out in §*Kinematics*; the closing section writes the same five in the older display, for comparison only, and nothing in the body depends on it. Throughout, $i^2=-1$ is the central imaginary of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, so every $i$ in an action is that one central unit and no separate imaginary of a display enters.
 
-The article is organised as follows. The next section sets up the two diagrams, the kinematics and the minus sign. The third computes the spin-summed matrix element. The fourth gives the cross section and its two limits. The fifth treats the weak correction and the parity-violating asymmetry. The sixth is the biquaternion interpretation. The seventh collects the Clifford dictionary that the traces use. The closing sections are the open questions, the summary, the notation table and the literature.
+The article is organised as follows. The next section sets up the two diagrams, the kinematics, the mass equation of the external elements and the minus sign. The third computes the spin-summed matrix element. The fourth gives the cross section and its two limits. The fifth treats the weak correction and the parity-violating asymmetry. The sixth is the biquaternion interpretation. The seventh is the closing comparison, and the remaining sections are the open questions, the summary, the notation table and the literature.
 
 ## The Process and Its Two Diagrams
 
 ### Kinematics
 
-Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electrons $p_3,p_4$, with $p_i^2=m^2$ and $m=m_e$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central imaginary $i$, $i^2=-1$. A two-sided multiplication is a **cell**,
+Let the incoming electrons carry four-momenta $p_1,p_2$ and the outgoing electrons $p_3,p_4$, with $p_i^2=m^2$ and $m=m_e$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t=1$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central imaginary $i$, $i^2=-1$.
+
+**The four insertions.** The four vertex insertions are the four actions
 
 $$
-L_a\psi=a\psi,\qquad R_b\psi=\psi b,\qquad L_aR_b\psi=a\psi b,\qquad L_aR_bL_cR_d=L_{ac}R_{db}.
+\Phi_t:\ Q\mapsto iQ\vec e_x,\qquad
+\Phi_k:\ Q\mapsto i\vec e_kQ\vec e_y\quad(k=1,2,3),
 $$
 
-The four frame cells of the current are
+with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each insertion carries exactly one factor of the central $i$, so each square spends $i^2=-1$ once, and the remaining signs come from $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$: $\Phi_t^2$ is the identity, $\Phi_k^2$ is minus the identity, and $\Phi_\mu\Phi_\nu+\Phi_\nu\Phi_\mu$ is $2\varepsilon_\mu\delta_{\mu\nu}$ times the identity, with $\varepsilon=(1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The time insertion multiplies on the right alone, while the three spatial insertions multiply on both sides. The fifth action, the **chirality action**, is the right multiplication $Q\mapsto-iQ\vec e_z$; it also multiplies on the right alone and anticommutes with the four insertions.
+
+**The momentum insertion.** The insertion of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is the action
 
 $$
-\Gamma_t:=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}},\qquad
-\Gamma_k:=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=1,2,3),
+P(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{k=1}^3 p_k\,i\vec e_kQ\vec e_y ,
 $$
 
-with $(\vec e_1,\vec e_2,\vec e_3)=(\vec e_x,\vec e_y,\vec e_z)$. Each $\Gamma_\mu$ carries exactly one factor of the central $i$, so each square spends $i^2=-1$ once, and the remaining signs come from $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$:
-
-$$
-\Gamma_t^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
-\Gamma_k^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad
-\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
-$$
-
-with $\varepsilon=(1,-1,-1,-1)$; the anticommutator is the quaternion rule $\vec e_j\vec e_k=-\vec e_k\vec e_j$ for $j\ne k$. The cells are two-sided: $\Gamma_t$ has the central left multiplier $e_t$ and is therefore a pure right multiplication, while the three spatial cells $\Gamma_k$ have a non-central left multiplier and use both sides. The fifth frame cell, the **chirality cell**, is $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}$; it is also a pure right multiplication and anticommutes with the four cells.
-
-The **momentum cell** of a four-momentum $p=(p_0,p_1,p_2,p_3)$ is
-
-$$
-P:=p_0\Gamma_t-\sum_{k=1}^3 p_k\Gamma_k
-=p_0\,iR_{\vec e_x}^{\mathrm{axf}}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
-$$
-
-which is the slashed momentum read in these cells, $P=p_\mu\Gamma^\mu$ with $p_\mu=(p_0,p_1,p_2,p_3)$ and $\Gamma^k=-\Gamma_k$. Its square is central,
-
-$$
-P^2=(p_0^2-\vec p^2)\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
-$$
-
-and the mass-shell condition is $P^2=m^2L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, that is $p_0^2-\vec p^2=m^2$.
+which is the four-momentum contracted with the insertions of the preceding paragraph. Its square is $(p_0^2-\vec p^2)$ times the identity, and the mass-shell condition is $p_0^2-\vec p^2=m^2$.
 
 The **Mandelstam variables** are
 
@@ -89,7 +70,7 @@ Both $-t$ and $-u$ are positive and vanish at one end of the angular range, $-t$
 
 ### The two Dirac equations of the external states
 
-The external spinors satisfy the massive Dirac equation, but in the biquaternion algebra that equation is not a single line.
+The external elements satisfy the massive Dirac equation, but in the biquaternion algebra that equation is not a single line.
 
 **The chiral pair.** It is first a pair of one-sided equations
 
@@ -99,37 +80,35 @@ $$
 \tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
 $$
 
-where $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ is its quaternion conjugate. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each chirality. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**.
+where $\tilde\nabla=e_t\partial/\partial Q_t+\sum_k\vec e_k\partial/\partial Q_k$ is the biquaternionic gradient and $\tilde\nabla^{\natural}$ is its quaternion conjugate. The two subscripts are the two values of the chirality of the declared frame: $\tilde\Psi_L$ is the part of value $L$, the minus one, and $\tilde\Psi_R$ the part of value $R$, the plus one, and only the zero element carries both. A product takes the letter of its right factor, and a left multiplication keeps it. At $m=0$ the two lines decouple into the two Weyl equations $\tilde\nabla\tilde\Psi_R=0$ and $\tilde\nabla^{\natural}\tilde\Psi_L=0$, one for each value. The mass is the only term that couples them, and it couples them off the diagonal. Both gradients act from the left, so this pair is **one-sided**.
 
-**The two-sided form.** Read on the whole algebra rather than on the module, the same physics is the single equation
-
-$$
-L_{\tilde\nabla^{\natural}}F=m\,L_{e_t}^{\mathrm{axf}}R_{-i\vec e_z}^{\mathrm{axf}}\bar F=m\,\chi\bar F,
-\qquad
-\chi:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}},
-$$
-
-with $\bar F$ the coefficient conjugate and $\chi$ the **chirality cell**, the two-sided multiplier by $e_t$ on the left and by $-i\vec e_z$ on the right. The derivative acts on the left, the mass acts on the right, and the conjugation supplies the antilinear part; the second field of the pair is the conjugate of the first, $-i\bar F\vec e_z$. The two forms are related by a change of representation but they are different operators: the pair is linear in the field, the two-sided form is antilinear in $F$ because the mass term carries $\bar F$. The pair is what the external spinors below solve; the two-sided form is the algebra's own reading of the same mass.
-
-**The four-component form.** In the frame cells, with $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ and the mass read as the central cell $m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, the pair is written as the single four-component equation
+**The mass on the right.** Read on the whole algebra rather than on the carrier of the field, the same physics is the single equation
 
 $$
-\bigl(P-m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}\bigr)w=0,
+\tilde\nabla^{\natural}F=-i\,m\,\bar F\vec e_z ,
 $$
 
-and the spin sum below is the sum over its two positive-frequency solutions. This is the pair written once; its two lines are the two chiral halves. It is not the two-sided equation: there the mass is a right multiplication by the chirality cell, here it is the central multiplier $m$. The two agree on the module, where the right multiplication by $-i\vec e_z$ separates the two chiralities, as the chiral grading of the four-component spinor does.
+with $\bar F$ the coefficient conjugate. The derivative acts on the left, the mass acts on the right, and the conjugation supplies the antilinear part; the second element of the pair is the conjugate of the first, $-i\bar F\vec e_z$. The two readings differ in kind: the pair is linear in the field, this equation is antilinear in $F$ because the mass term carries $\bar F$. The pair is what the external elements below solve; this equation is the algebra's own reading of the same mass.
+
+**The momentum-space form.** In momentum space the pair is the single action equation
+
+$$
+P(p)\psi=m\psi
+$$
+
+on an element of momentum $p$: the insertion $P(p)$ applied to $\psi$ gives back $m\psi$. It is the pair written once, its two lines being the two parts $\tilde\Psi_L$ and $\tilde\Psi_R$, and the mass is here the scalar $m$ and not a right multiplication. The two positive-frequency elements of a momentum are written $\psi^{(1)}$ and $\psi^{(2)}$, and their spin sum is the action $D(p)$ of §*The Spin-Summed Matrix Element*.
 
 ### The two amplitudes and the minus sign
 
-The vertex current of an electron of incoming momentum $p_{\mathrm{in}}$ and outgoing momentum $p_{\mathrm{out}}$ is
+The vertex current of an electron of incoming momentum $p_{\mathrm{in}}$ and outgoing momentum $p_{\mathrm{out}}$ is the scalar
 
 $$
-J_\mu(p_{\mathrm{out}},p_{\mathrm{in}}):=\bar w(p_{\mathrm{out}})\,\Gamma_\mu\,w(p_{\mathrm{in}}),
+J_\mu(p_{\mathrm{out}},p_{\mathrm{in}}):=\mathrm{Sc}\bigl(\bar\psi(p_{\mathrm{out}})\,\Phi_\mu\psi(p_{\mathrm{in}})\bigr),
 \qquad
-\bar w:=w^\dagger iR_{\vec e_x}^{\mathrm{axf}},
+\bar\psi:=\psi^{*}i\vec e_x,
 $$
 
-with $\Gamma_\mu$ the cell of the Lorentz index $\mu$ and $\bar w$ the Dirac adjoint, whose factor $iR_{\vec e_x}^{\mathrm{axf}}=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ is the Clifford-odd cell outside $\mathbb{B}$. The contraction is the Hermitian pairing of two module elements, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
+with $\Phi_\mu$ the insertion of the Lorentz index $\mu$ and $\bar\psi$ the Dirac adjoint, the product of the star of the element with the fixed element $i\vec e_x$, the one factor of the adjoint that lies outside $\mathbb{B}$. The product $\bar\psi\,\Phi_\mu\psi$ is an element of $\mathbb{B}$ and its scalar part is a single complex number, so every $J_\mu$ is a single complex number and the brackets below are ordinary complex products. With this notation the $t$-channel and $u$-channel brackets are
 
 $$
 \mathcal M_t=\frac{e^2}{t}\Bigl[J_t(p_3,p_1)J_t(p_4,p_2)-\sum_{k=1}^3 J_k(p_3,p_1)J_k(p_4,p_2)\Bigr],
@@ -149,47 +128,57 @@ where the amplitude $\mathcal M$ is the invariant matrix element, normalised so 
 
 ## The Spin-Summed Matrix Element
 
-Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives the following. With the spin-sum cell
+Squaring and averaging over the two initial spins and summing over the two final spins — a factor $\tfrac14$ — gives the following.
+
+**The spin sum.** The two positive-frequency elements of a momentum $p$ satisfy the operator identity
 
 $$
-D(p):=P+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}
-=p_0\,iR_{\vec e_x}^{\mathrm{axf}}-\sum_{k=1}^3 p_k\,iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
+\sum_{r=1}^{2}\psi^{(r)}(p)\,\bar\psi^{(r)}(p)=D(p),
 $$
 
-the spin sum is
+the sum of the two rank-one products being the action
 
 $$
-\sum_{r=1}^{2} w^{(r)}(p)\,\bar w^{(r)}(p)=D(p),
+D(p):\ Q\mapsto p_0\,iQ\vec e_x-\sum_{k=1}^3 p_k\,i\vec e_kQ\vec e_y+m\,Q ,
 $$
 
-and the three trace combinations are
+that is, the momentum insertion $P(p)$ plus the scalar $m$. The mass term is a scalar multiple of the unit and therefore acts on the right and on the left alike. This identity is what turns a sum over the spins of a product of two vertex currents into a trace of the corresponding composite, and it is the only place where the two external elements enter the squared amplitude.
+
+**The trace.** The traces below are the traces of composites of these actions on the carrier of the field, in the normalisation in which the identity action has trace four. Let $\Phi_i$ be the action $Q\mapsto a_iQb_i$. The trace of the composite $\Phi_1\Phi_2\cdots\Phi_n$ is four times the product of the scalar parts of the two multiplier strings,
 
 $$
-L_t:=\mathrm{Tr}\bigl[\Gamma^\mu D(p_1)\Gamma^\nu D(p_3)\bigr]\,
-\mathrm{Tr}\bigl[\Gamma_\mu D(p_2)\Gamma_\nu D(p_4)\bigr],
+\operatorname{Tr}\bigl[\Phi_1\Phi_2\cdots\Phi_n\bigr]
+=4\,\mathrm{Sc}\bigl(a_1a_2\cdots a_n\bigr)\,\mathrm{Sc}\bigl(b_n\cdots b_2b_1\bigr),
+$$
+
+the left string read in the order of the factors and the right string in reverse, and the trace is additive over sums of actions. With $\Phi^t=\Phi_t$ and $\Phi^k=-\Phi_k$, the three trace combinations are
+
+$$
+L_t:=\operatorname{Tr}\bigl[\Phi^\mu D(p_1)\Phi^\nu D(p_3)\bigr]\,
+\operatorname{Tr}\bigl[\Phi_\mu D(p_2)\Phi_\nu D(p_4)\bigr],
 $$
 
 $$
-L_u:=\mathrm{Tr}\bigl[\Gamma^\mu D(p_2)\Gamma^\nu D(p_3)\bigr]\,
-\mathrm{Tr}\bigl[\Gamma_\mu D(p_1)\Gamma_\nu D(p_4)\bigr],
+L_u:=\operatorname{Tr}\bigl[\Phi^\mu D(p_2)\Phi^\nu D(p_3)\bigr]\,
+\operatorname{Tr}\bigl[\Phi_\mu D(p_1)\Phi_\nu D(p_4)\bigr],
 $$
 
 $$
-L_{tu}:=\mathrm{Tr}\bigl[D(p_3)\Gamma^\mu D(p_1)\Gamma^\nu D(p_4)\Gamma_\mu D(p_2)\Gamma_\nu\bigr],
+L_{tu}:=\operatorname{Tr}\bigl[D(p_3)\Phi^\mu D(p_1)\Phi^\nu D(p_4)\Phi_\mu D(p_2)\Phi_\nu\bigr],
 $$
 
-where $\Gamma^t=\Gamma_t$ and $\Gamma^k=-\Gamma_k$, and $\mathrm{Tr}$ is the trace on the four-dimensional complex module $\mathbb{B}$ that the cells act on, so no gamma enters the body. Then
+with the sum over the two repeated Lorentz indices, and the trace of an odd number of insertions vanishes. Then
 
 $$
 \frac14\sum_{\mathrm{spins}}|\mathcal M|^2
 =\frac{e^4}{4}\left(\frac{L_t}{t^2}+\frac{L_u}{u^2}-\frac{2L_{tu}}{tu}\right).
 $$
 
-The traces are evaluated with the standard four-dimensional identities, which follow from the anticommutation relations of the frame cells alone,
+The traces are evaluated with the standard four-dimensional identities, which follow from the anticommutation relations of the insertions alone,
 
 $$
-\mathrm{Tr}(\Gamma_\mu\Gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
-\mathrm{Tr}(\Gamma_\mu\Gamma_\nu\Gamma_\rho\Gamma_\sigma)
+\operatorname{Tr}(\Phi_\mu\Phi_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\operatorname{Tr}(\Phi_\mu\Phi_\nu\Phi_\rho\Phi_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr),
 $$
 
@@ -253,7 +242,7 @@ $$
 
 where $\sigma_L$ and $\sigma_R$ are the cross sections for left- and right-handed incident electrons.
 
-The $Z$ couples to the electron with $g_V^e=-\tfrac12Q_W^e$ and $g_A^e=-\tfrac12$. At $Q^2\ll M_Z^2$ its propagator collapses to $-1/M_Z^2$, so the $Z$ amplitude is $-\sqrt2G_{\mathrm F}$ times the same two currents with $\Gamma_\mu\to\Gamma_\mu(g_V^e-g_A^e\chi)$, the axial part being the vector current with the chirality cell $\chi$ inserted. The asymmetry is twice the interference of the $Z$ amplitude with the photon amplitude, divided by the photon amplitude squared. Three facts follow at once, and they are the anatomy of the boxed result below: the interference carries exactly one power of $G_{\mathrm F}$ and one factor $1/\alpha$ from the two photon vertices; it is proportional to the product $g_V^eg_A^e=\tfrac14Q_W^e$, so a parity-symmetric $Z$ coupling would give nothing; and the kinematic factor is $Q^2$, which in a fixed-target experiment is $Q^2=2m_eE_{\mathrm{beam}}y$, hence the $m_eE_{\mathrm{beam}}$ in front and the $y$-dependence behind.
+The $Z$ couples to the electron with $g_V^e=-\tfrac12Q_W^e$ and $g_A^e=-\tfrac12$. At $Q^2\ll M_Z^2$ its propagator collapses to $-1/M_Z^2$, so the $Z$ amplitude is $-\sqrt2G_{\mathrm F}$ times the same two currents with the insertion replaced by the combination $g_V^e\Phi_\mu$ minus $g_A^e$ times the same insertion followed by the chirality action $Q\mapsto-iQ\vec e_z$: the vector term keeps both values of the chirality, and the axial term carries one value into the other. The asymmetry is twice the interference of the $Z$ amplitude with the photon amplitude, divided by the photon amplitude squared. Three facts follow at once, and they are the anatomy of the boxed result below: the interference carries exactly one power of $G_{\mathrm F}$ and one factor $1/\alpha$ from the two photon vertices; it is proportional to the product $g_V^eg_A^e=\tfrac14Q_W^e$, so a parity-symmetric $Z$ coupling would give nothing; and the kinematic factor is $Q^2$, which in a fixed-target experiment is $Q^2=2m_eE_{\mathrm{beam}}y$, hence the $m_eE_{\mathrm{beam}}$ in front and the $y$-dependence behind.
 
 At tree level the asymmetry is therefore
 
@@ -281,15 +270,15 @@ It was measured at SLAC (E158), which finds $A_{\mathrm{PV}}=-131\pm14\pm10$ par
 
 ### The amplitude as a product of two material-sector currents
 
-The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the spinor-module bilinear
+The framework's minimal-coupling article writes the electromagnetic coupling of the biquaternion Dirac field through the four-potential and identifies the conserved current as the pairing
 
 $$
-j_\mu=\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}}\,\Gamma_\mu\,\psi,
+j_\mu=\mathrm{Sc}\bigl(\psi^{*}i\vec e_x\,\Phi_\mu\psi\bigr),
 \qquad
-\psi^\dagger iR_{\vec e_x}^{\mathrm{axf}},
+\bar\psi=\psi^{*}i\vec e_x,
 $$
 
-where $\Gamma_\mu$ are the four frame cells of the Kinematics, $\Gamma_t=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$ and $\Gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. The current is a material-sector object, $\tilde J=ic\,j_0e_t+\vec j\in\mathbb M_-$, but its Dirac adjoint uses the Clifford-odd cell $iR_{\vec e_x}^{\mathrm{axf}}$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $\bar w(p_{\mathrm{out}})\Gamma_\mu w(p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
+where $\Phi_\mu$ are the four insertions of §*Kinematics*. The current is a material-sector object, $\tilde J=ic\,j_0e_t+\vec j\in\mathbb M_-$, but its Dirac adjoint uses the fixed element $i\vec e_x$, which lies outside $\mathbb{B}$; the naive product $i\tilde\Psi\tilde\Psi^{*}$ is in $\mathbb M_-$ and is not conserved. The Møller amplitude is the second-quantized version of that structure. Each vertex $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})$ is one electron current, and the two currents are contracted by the photon propagator $1/t$ or $1/u$. The framework's Maxwell field supplies the photon line: its canonical-quantization article constructs the quantized Maxwell field, and the photon propagator $1/t$ or $1/u$ is the standard two-point function of that field. The amplitude is the framework's current, twice, joined by the framework's photon. Nothing in this is a new prediction; it is the identification of the components.
 
 ### The relative minus sign is the mode algebra's antisymmetry
 
@@ -297,25 +286,25 @@ The single structural feature the framework owns here is the exchange sign. The 
 
 ### Crossing symmetry is charge conjugation
 
-The Møller and Bhabha amplitudes are related by **crossing symmetry**: moving an incoming electron to an outgoing positron, with reversed four-momentum, changes one process into the other. In the framework this operation is the **charge conjugation** real structure $\mathcal C$ on the doubled module $\Delta = S\oplus\bar S$ of the companion article *Real Spinors and Reality Conditions with Inner Conjugation*; a particle line is replaced by an antiparticle line, and the amplitude's analytic continuation in the Mandelstam variables is the momentum-space face of the same relabelling. The numerical check reported in the companion Bhabha article — the two amplitudes agreeing once the Mandelstam roles are permuted — is therefore a check of the framework's particle–antiparticle relabelling as much as of the algebra of the frame cells. The companion Bhabha article states the correspondence from the other side.
+The Møller and Bhabha amplitudes are related by **crossing symmetry**: moving an incoming electron to an outgoing positron, with reversed four-momentum, changes one process into the other. In the framework this operation is the **charge conjugation** real structure $\mathcal C$ on the doubled module $\Delta = S\oplus\bar S$ of the companion article *Real Spinors and Reality Conditions with Inner Conjugation*; a particle line is replaced by an antiparticle line, and the amplitude's analytic continuation in the Mandelstam variables is the momentum-space face of the same relabelling. The numerical check reported in the companion Bhabha article — the two amplitudes agreeing once the Mandelstam roles are permuted — is therefore a check of the framework's particle–antiparticle relabelling as much as of the algebra of the insertions. The companion Bhabha article states the correspondence from the other side.
 
 ### What the framework supplies and what it does not
 
-The framework supplies the two vertex currents, the photon propagator, the Fock space in which the external states live, and the exchange sign as the antisymmetry of its mode algebra. It does **not** supply the numerical evaluation of the traces as a derivation from its own structure — the trace algebra is the cell dictionary of *The Legacy Pauli Gamma Formulation* — nor does it supply the $Z$-exchange diagrams, which belong to the framework's electroweak research agenda rather than to its established content. The parity-violating asymmetry above is quoted as the experimental fact that motivates the left-handed coupling; the corpus's chiral-fermion article discusses the framework's treatment of handedness, and the electroweak article collects the open questions. No framework-specific prediction is claimed.
+The framework supplies the two vertex currents, the photon propagator, the Fock space in which the external states live, and the exchange sign as the antisymmetry of its mode algebra. It does **not** supply the numerical evaluation of the traces as a derivation from its own structure — the trace algebra is the dictionary of *The Legacy Pauli Gamma Formulation* — nor does it supply the $Z$-exchange diagrams, which belong to the framework's electroweak research agenda rather than to its established content. The parity-violating asymmetry above is quoted as the experimental fact that motivates the left-handed coupling; the corpus's chiral-fermion article discusses the framework's treatment of handedness, and the electroweak article collects the open questions. No framework-specific prediction is claimed.
 
 ## Open Questions
 
-1. **The traces as algebra.** Can the three trace combinations be reorganised as products of the framework's own currents in $\mathbb M_-$, so that neither the frame cells nor the module trace appear — and does the $\mathbb M_-$ restriction of the currents reproduce the standard results identically?
+1. **The traces as algebra.** Can the three trace combinations be reorganised as products of the framework's own currents in $\mathbb M_-$, so that neither the insertions nor the trace appear — and does the $\mathbb M_-$ restriction of the currents reproduce the standard results identically?
 
 2. **The exchange sign from first principles.** The corpus obtains Pauli exclusion on the mode algebra. Is there a corresponding statement on the **classical** biquaternion field (a graded-commutativity of the field's components) from which the momentum-space minus sign follows without quantizing?
 
-3. **Crossing and $\mathcal C$.** Is the Mandelstam analytic continuation of the framework's amplitude literally the action of $\mathcal C$ on the external states, or only the same relabelling at the level of the on-shell spinors?
+3. **Crossing and $\mathcal C$.** Is the Mandelstam analytic continuation of the framework's amplitude literally the action of $\mathcal C$ on the external states, or only the same relabelling at the level of the on-shell elements?
 
 4. **The weak asymmetry.** The corpus's electroweak agenda lists the framework's internal $SU(2)\times \mathrm{U}(1)$ questions; the Møller $A_{\mathrm{PV}}$ is a concrete target. Does the framework's left-handed coupling reproduce the $(1/4-\sin^2\theta_{\mathrm W})$ coefficient, or only the general form?
 
 5. **Loops.** The corpus's Ward–Takahashi and Schwinger–Dyson articles treat the identities a loop computation must satisfy, but no loop amplitude is evaluated. Whether Møller scattering at one loop can be organised in the framework without new structure is open.
 
-6. **The two chiral sums.** The spin sum $D(p)=P+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ is the four-component reading of the chiral pair. Can the positive- and negative-frequency sums be written as two separate cell sums, one for each chiral half, without passing through the four-component spinor?
+6. **The two chiral sums.** The spin sum $D(p)$ is the momentum-space reading of the chiral pair. Can the positive- and negative-frequency sums be written as two separate actions, one for each value of the chirality, without passing through the momentum-space equation?
 
 7. **Empirical contact.** The tree-level result is standard electrodynamics in the framework's variables; the parity-violating asymmetry is the one place the framework meets a measured number, and it is not a framework-specific prediction.
 
@@ -325,7 +314,7 @@ The Pauli and gamma formulation is legacy: the reasons are explained in the arti
 
 This section fixes the dictionary that the traces above use, and nothing here is needed outside it.
 
-The five $\gamma$'s are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, so they are elements of the same algebra as the cells, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+The five $\gamma$'s are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, so they are elements of the same algebra as the insertions, not of a larger one. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}},\quad \gamma_5=-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}} .
@@ -337,11 +326,11 @@ $$
 \gamma_0[\mathbb{M}_-]=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}},\quad \gamma_1[\mathbb{M}_-]=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_2[\mathbb{M}_-]=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_3[\mathbb{M}_-]=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}} .
 $$
 
-The body's cells are the same objects: $\Gamma_t=\gamma_0[\mathbb{M}_-]$, $\Gamma_k=\gamma_k[\mathbb{M}_-]$ for $k=1,2,3$, and the chirality cell is $\gamma_5$.
+The body's five actions are these: the time insertion is $\gamma_0[\mathbb{M}_-]$, the three spatial insertions are $\gamma_1[\mathbb{M}_-]$, $\gamma_2[\mathbb{M}_-]$ and $\gamma_3[\mathbb{M}_-]$, and the chirality action is $\gamma_5$.
 
 A single product is a pure tensor; in the sixteen-dimensional coefficient space the products form the seven-dimensional cone of coefficient rank at most one. A general element is a sum of at most four products; its **length** $\ell(M)$ is the least number of products in such a sum. The **matrix rank** of $M$ on the regular module is a different number: for a single cell $L_QR_P$ it is $\operatorname{rank}\mathsf M_2(Q)\operatorname{rank}\mathsf M_2(P)$, and it lies in $\{0,1,2,4\}$. The two numbers are independent.
 
-$\gamma_5$ is the chirality cell itself, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, so the fifth cell and the fifth gamma are one object seen in two readings. The central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; it merely has the same representative $\gamma_5$ on the Dirac module, so that the two central idempotents correspond to the two chiral projectors and $\chi$ is the module representative of $\chi_{\mathrm{ad}}$.
+$\gamma_5$ is the chirality action itself, $-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, so the fifth action and the fifth gamma are one object seen in two readings. The central grading $\chi_{\mathrm{ad}}:=i\tilde\Xi_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi_{\mathrm{ad}}^2=e_t$ — is a different object; it merely has the same representative $\gamma_5$ on the Dirac module, so that the two central idempotents correspond to the two chiral projectors and $\chi$ is the module representative of $\chi_{\mathrm{ad}}$.
 
 The dictionary $M\mapsto c(M)$ is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
@@ -392,7 +381,7 @@ In the Lorentzian frame the metric enters, and the first sum is $\sum_\mu\gamma_
 
 Møller scattering, $e^-e^-\to e^-e^-$, is the tree-level exchange of a photon between two electrons, contributing through $t$-channel and $u$-channel diagrams that combine with the relative minus sign of identical-fermion exchange. The Mandelstam variables satisfy $s+t+u=4m^2$; the spin-summed matrix element is three terms, two of them products of traces over the photon propagators and one the interference, whose sign flips from destructive to constructive at $p^2=m^2/2$; the unpolarized cross section reduces to the Rutherford-like $(1+3\cos^2\theta)/\sin^4\theta$ law at low energy and to $(3+\cos^2\theta)^2/\sin^4\theta$ at high energy. The electroweak $Z$-exchange adds a parity-violating asymmetry of order one hundred parts per billion, measured at SLAC and used to extract the weak mixing angle.
 
-In the biquaternion framework the amplitude is the contraction of two material-sector currents — the same current the minimal-coupling article identifies — by the framework's quantized photon propagator. The two structures the framework genuinely owns are the exchange sign, which is the antisymmetry of the mode algebra established by the canonical-quantization article as $(a^{\mathrm{fop}\dagger})^2=0$ and the $\mathbb Z/2$ grading, and crossing symmetry, which is the charge-conjugation real structure $\mathcal C$ on the doubled module. The body uses no gamma: every vertex is a two-sided cell, and the massive external states satisfy a chiral pair of one-sided equations — the same physics whose two-sided reading is a single equation with the mass as a right multiplication by the chirality cell, and whose four-component reading is the ordinary Dirac equation solved by the spinors below. The framework does not evaluate loops, does not supply $Z$ exchange, and makes no framework-specific prediction; the parity-violating asymmetry is quoted as the experimental target that the framework's left-handed coupling must ultimately meet.
+In the biquaternion framework the amplitude is the contraction of two material-sector currents — the same current the minimal-coupling article identifies — by the framework's quantized photon propagator. Every vertex is one action written out, $Q\mapsto aQb$; the five actions are the four insertions and the chirality action, and the chirality takes the two values $L$ and $R$, which the external elements carry as subscripts. The mass is a scalar multiple of the unit in the momentum-space equation, and a right multiplication by $-i\vec e_z$ on the conjugate when the same physics is read on the whole algebra. The two structures the framework genuinely owns are the exchange sign, which is the antisymmetry of the mode algebra established by the canonical-quantization article as $(a^{\mathrm{fop}\dagger})^2=0$ and the $\mathbb Z/2$ grading, and crossing symmetry, which is the charge-conjugation real structure $\mathcal C$ on the doubled module. The body uses no array: the traces are traces of composites of the actions, computed from the two multiplier strings, and the older display appears once, at the end, with the dictionary and no derivation. The framework does not evaluate loops, does not supply $Z$ exchange, and makes no framework-specific prediction; the parity-violating asymmetry is quoted as the experimental target that the framework's left-handed coupling must ultimately meet.
 
 ## Summary of Notation
 
@@ -403,28 +392,29 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $s,t,u$ | Mandelstam variables; $s+t+u=4m^2$ |
 | $E_{\mathrm{CM}}=2E$ | Centre-of-momentum energy |
 | $\theta$ | Centre-of-mass scattering angle |
-| $\Gamma_t=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{axf}}$, $\Gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Four frame cells of the current |
-| $\Gamma^t=\Gamma_t$, $\Gamma^k=-\Gamma_k$ | Raised-index cells |
-| $L_aR_b$ | Two-sided multiplication, $L_aR_b\psi=a\psi b$ |
-| $P=p_0\Gamma_t-\sum_kp_k\Gamma_k$ | Momentum cell; $P^2=(p_0^2-\vec p^2)L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
-| $D(p)=P+m\,L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ | Spin-sum cell of the momentum shell |
-| $w^{(r)}(p)$, $\bar w=w^\dagger iR_{\vec e_x}^{\mathrm{axf}}$ | Positive-frequency spinor and its Dirac adjoint |
+| $\Phi_t:\ Q\mapsto iQ\vec e_x$, $\Phi_k:\ Q\mapsto i\vec e_kQ\vec e_y$ | The four insertions: the time insertion and the three spatial ones |
+| $\Phi^t=\Phi_t$, $\Phi^k=-\Phi_k$ | Raised insertions |
+| $Q\mapsto-iQ\vec e_z$ | Chirality action |
+| $P(p):\ Q\mapsto p_0iQ\vec e_x-\sum_kp_ki\vec e_kQ\vec e_y$ | Momentum insertion; its square is $p_0^2-\vec p^2$ times the identity |
+| $D(p)=P(p)+m$ | Spin-sum action of the momentum shell |
+| $\psi^{(r)}(p)$, $\bar\psi=\psi^{*}i\vec e_x$ | Positive-frequency element and its Dirac adjoint |
+| $\tilde\Psi_L,\tilde\Psi_R$ | The two values of the chirality: $L$ the minus one, $R$ the plus one |
+| $J_\mu(p_{\mathrm{out}},p_{\mathrm{in}})=\mathrm{Sc}(\bar\psi_{\mathrm{out}}\Phi_\mu\psi_{\mathrm{in}})$ | Vertex current |
 | $\mathcal M_t,\mathcal M_u$ | $t$- and $u$-channel amplitudes |
 | $\mathcal M=\mathcal M_t-\mathcal M_u$ | Total amplitude with the exchange sign |
 | $\overline{|\mathcal M|^2}$ | Spin-averaged squared matrix element, factor $\tfrac14$ included |
-| $\mathrm{Tr}$ | Trace on the four-dimensional complex module of the cells |
+| $\operatorname{Tr}$ | Trace of a composite of actions on the carrier of the field |
 | $L_t,L_u,L_{tu}$ | Trace combinations of the spin sum |
 | $\alpha=e^2/4\pi$ | Fine-structure constant |
 | $A_{\mathrm{PV}}$ | Parity-violating asymmetry; $\theta_{\mathrm W}$ the weak mixing angle |
 | $E_{\mathrm{beam}}$ | Beam energy in the laboratory, as in $m_eE_{\mathrm{beam}}$ |
 | $y=Q^2/s=-t/s$ | Inelasticity; equals $\sin^2(\theta/2)$ up to $m^2/E^2$ |
-| $\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell of the two-sided Dirac equation; $\chi^2=e_t$ |
 | $G_{\mathrm F}$ | Fermi constant |
 | $g_V^e=-\tfrac12Q_W^e$, $g_A^e=-\tfrac12$ | Vector and axial $Z$ couplings of the electron |
 | $Q_W^e=1-4\sin^2\theta_{\mathrm W}$ | Weak charge of the electron |
 | $\tilde J\in\mathbb M_-$ | Framework's conserved material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
-| $\varepsilon=(1,-1,-1,-1)$ | sign vector of the frame cells |
+| $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the insertions |
 
 ## Further Reading
 

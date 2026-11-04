@@ -67,6 +67,11 @@ Two superscript tokens run beside the marks of the elements and the marks of the
 |---|---|---|
 | $^{\mathrm{fop}}$ | a Fock-operator glyph | an operator on the Fock space, the Fock-operator mark |
 | $^{\mathrm{opp}}$ | an algebra name, or an element naming a tensor factor | the opposite algebra, the algebra with the reversed product |
+| $^{\mathrm{spl}}$ | an algebra name | the split variant, $\mathbb{C}^{\mathrm{spl}}$, $\mathbb{H}^{\mathrm{spl}}$, $\mathbb{B}^{\mathrm{spl}}$ |
+| $^{\mathrm{red}}$ | an algebra name | the reduced variant, $\mathbb{B}^{\mathrm{red}}=\mathbb{C}\oplus\mathbb{C}$ |
+| $^{\mathrm{dua}}$ | an algebra name | the dual numbers, $\mathbb{C}^{\mathrm{dua}}=\mathbb{R}[\varepsilon]/(\varepsilon^{2})$ |
+
+**Four qualifiers name a variant of an algebra.** They sit on the caret, three lowercase letters each, above the glyph and before any index: $\mathrm{spl}$ on a split variant, $\mathbb{C}^{\mathrm{spl}}$ the split-complex numbers, $\mathbb{H}^{\mathrm{spl}}$ the split-quaternions and $\mathbb{B}^{\mathrm{spl}}$ the split-biquaternions; $\mathrm{red}$ on the reduced biquaternions, $\mathbb{B}^{\mathrm{red}}$; and $\mathrm{dua}$ on the dual numbers, $\mathbb{C}^{\mathrm{dua}}$. Italic on the caret is a power and upright is a name, so $\mathbb{C}^{\mathrm{spl}}$ is never a power of $\mathbb{C}$. **$\mathrm{dua}$ is not $\mathrm{dual}$**: $\mathrm{dual}$ marks the Hodge dual of a field, $F^{\mathrm{dual}}$, and the two tokens are never exchanged. **$\mathbb{B}^{\mathrm{red}}$ is not a part of $\mathbb{B}$.** The reduced biquaternions are $\mathbb{C}\oplus\mathbb{C}$, of real dimension four, and the biquaternions are of real dimension eight; the qualifier names a different algebra and not a subalgebra of $\mathbb{B}$.
 
 **The mark, and its one use.** The marks of the elements say what a glyph **is**, not that it is an **operator** (*Operator and Calculus Conventions*, §*The Operators*). The single exception is the **Fock layer**, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph and read as part of it:
 
@@ -92,7 +97,7 @@ In a bilinear the cell multiplies the one that follows, $\psi^{\dagger}\bigl(iR_
 
 ## The Subscripts
 
-A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.
+A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\tilde Q_{\mathrm{f}t}$, because a bare underscore would take the first character alone.
 
 **A subscript is never a partial derivative.** The subscript is an index or a label, a partial derivative is written with $\partial$, and the rule is fixed in *Operator and Calculus Conventions*, §*Conventions for Derivation*.
 
@@ -100,7 +105,7 @@ A subscript is written with the underscore, `_`, inside the math delimiters, and
 
 **It is allowed to add subscripts when several elements of the same kind are used.** The permission covers the general elements, the units, the roots, the idempotents and the nilpotents alike: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.
 
-**A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm r}$.
+**A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\tilde Q_{\mathrm{f}t}$ and $\tilde U_{\mathrm r}$.
 
 **A role-labelled element carries its label in its coefficients.** The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.
 
@@ -118,7 +123,7 @@ The forms a subscript takes are these.
 | a letter | $Q_k$, $Q_\mu$ |
 | two indices | $Q_{ab}$ |
 | a sign | $\tilde\Pi_\pm$ |
-| an upright word | $\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$ |
+| an upright word | $\tilde Q_{\mathrm{f}t}$, $\tilde U_{\mathrm r}$ |
 | a grouped expression | $Q_{n+1}$ |
 
 **The letter $\iota$ is not used.** No physics article uses $\iota$, in any spelling. The comparison of the biquaternion algebra with the even Clifford algebra is written by its values, $e_t\mapsto I_4$ and $\vec e_x\mapsto\gamma_2[\mathbb{M}_-]\gamma_3[\mathbb{M}_-]$, or by the words "the Clifford image", and never by a symbol. An interior product is written as the pairing it is, $\omega(X_f,\,\cdot\,)=df$, and an inner automorphism in words. The letter is not reserved for a third object: it carries no meaning in the series, and a display that introduces it is a defect.
@@ -143,7 +148,7 @@ A subscript is written with the underscore and one token. It is a component or a
 | $^{\mathrm{opp}}$ | The opposite algebra, written on an algebra name or on an element that names a tensor factor |
 | $\mathrm{orb}$, $\mathrm{inc}$, $\mathrm{out}$, $\mathrm{lor}$, $\mathrm{rgs}$, $\mathrm{tpl}$, $\mathrm{prm}$, $\mathrm{dfc}$, $\mathrm{obf}$, $\mathrm{adg}$ | The three-letter labels of a construction or a variant, the last six separating two spellings; the index is *Index, Notation and Corpus Conventions*, §*The Three-Letter Labels* |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | The four general products, written by their two slots and their conjugations, never by a code; with $\bullet$ their symmetric parts and with $\wedge$ their antisymmetric parts, the class carried by the subscript |
-| $Q_{\mathrm{f}t}$, $Q_{n+1}$, $\tilde\Pi_\pm$, $\mathbb{B}_{\mathrm{r}}$ | The subscript forms: letter index, grouped expression, sign, upright word |
+| $Q_{\mathrm{f}t}$, $Q_{n+1}$, $\tilde\Pi_\pm$, $\tilde Q_{\mathrm{f}t}$ | The subscript forms: letter index, grouped expression, sign, upright word |
 | $s_{\mathrm{tot}}$, $s_{\mathrm{tot},z}$, $\tilde S_{\mathrm{tot},k}$ | Total angular-momentum label, its projection, and the operator, which carries the vector index $k$ |
 
 ## Further Reading

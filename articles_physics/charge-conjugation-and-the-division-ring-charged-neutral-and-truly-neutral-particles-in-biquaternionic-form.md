@@ -2,221 +2,193 @@
 
 ## Introduction
 
-Charge conjugation is the discrete operation that exchanges a particle with its antiparticle. In the companion article *The CPT Theorem in Biquaternionic Form* it is built explicitly on the spinor module, $C[\psi]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi^{*}$, and its internal factor is found to be an **odd** Clifford element with no representative in the biquaternion algebra. The present article asks the question that computation cannot answer: **when is $C$ trivial?** A symmetry that acts as the identity on a representation exchanges nothing there; the class of particles on which charge conjugation acts trivially has a name — the **truly neutral** particles — and a place in physics: the photon, the $Z$ boson, and the neutral mesons $\pi^0$, $\eta$, $\phi$.
+Charge conjugation is the discrete operation that exchanges a particle with its antiparticle. On the biquaternion algebra it is written on the element, $Q^{\mathrm c}=-e_y\bar Qe_y$: the coefficient conjugation, followed by a two-sided product by a fixed product of units. The companion article *The CPT Theorem in Biquaternionic Form* builds the same operation and finds that its internal factor is a product of an odd number of units, so it lies outside the Hermitian sector $\mathbb{M}_+$. The present article asks the question that computation cannot answer: **when is $C$ trivial?** A symmetry that acts as the identity on the algebra exchanges nothing there; the class of particles on which charge conjugation acts trivially has a name — the **truly neutral** particles — and a place in physics: the photon, the $Z$ boson, and the neutral mesons $\pi^0$, $\eta$, $\phi$.
 
-The classification of the algebra literature answers the question with a single algebraic datum. Charge conjugation is the **pseudoautomorphism** of the complex Clifford algebra $\mathbb{C}\mathrm{l}_{n+m}$ induced by a real form $\mathrm{Cl}_{n,m}\subset\mathbb{C}\mathrm{l}_{n+m}$, $A^{\mathrm c}=\Pi\bar A\Pi^{-1}$, where $\bar A$ is the coefficient conjugation and $\Pi$ is a product of generators. The matrix $\Pi$ is fixed by the **division ring** $K$ of the real form: over a real division ring $K\cong\mathbb{R}$ it is proportional to the identity, so the map is trivial; over a quaternionic division ring $K\cong\mathbb{H}$ it is a genuine product of generators, so the map is the particle–antiparticle interchange; over the complex division ring $K\cong\mathbb{C}$ it relates a representation to its conjugate. The division ring, in other words, is what decides whether a particle can be its own antiparticle. (The literature writes the same map with $A^{*}$; here the star is reserved for the Hermitian conjugation of the corpus, and $\bar{\cdot}$ is the coefficient conjugation.)
+The classification of the algebra literature answers the question with a single algebraic datum. The field of the article is valued in a module, and a module has a **division ring** of scalars, which is $\mathbb{R}$, $\mathbb{H}$ or $\mathbb{C}$ and nothing else. Over a real division ring the fixed product that implements the conjugation is central, so the conjugation reduces to the coefficient conjugation and exchanges no two states. Over a quaternionic or a complex division ring it is a genuine product of units and moves an element to a distinct one. The division ring, in other words, is what decides whether a particle can be its own antiparticle. (The literature writes the operation with a star on the element; here the star is reserved for the Hermitian conjugation of the corpus, and the bar is the coefficient conjugation.)
 
-The article is organised as follows. A first section states the pseudoautomorphism, its matrix and its action on spinors. A second states the division-ring trichotomy and computes $C^{2}$. A third reads the trichotomy as the three classes of particles. A fourth places the three classes in the biquaternion algebra. A fifth separates what the framework supplies from what it transcribes. The article closes with the open questions, a reference section on the frame cells and their identities, and the summary.
+The article is organised as follows. A first section writes the conjugation on the algebra and fixes the two values of the subscript. A second states the division-ring trichotomy. A third reads the trichotomy as the three classes of particles, and a fourth places the three classes in the biquaternion algebra. A fifth separates what the framework supplies from what it transcribes. The article closes with the open questions, the legacy section on the gamma formulation, and the summary.
 
-- Companion article *The CPT Theorem in Biquaternionic Form*, for the explicit $C[\psi]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi^{*}$ and for the Clifford classification of the operations as the fundamental automorphisms and the charge-conjugation pseudoautomorphism.
+- Companion article *The CPT Theorem in Biquaternionic Form*, for the explicit form of the conjugation and for the classification of the discrete operations.
 - The mathematics articles *Division Rings*, *Central Simple Algebras and the Brauer Group* and *The Brauer Wall Group and the Eightfold Way*, for the division ring as an isomorphism invariant of a real or complex algebra.
-- The mathematics article *List of Clifford Algebras and Spin Groups*, for the classification of $\mathrm{Cl}_{n,m}$ by $d=n-m\bmod 8$ that the trichotomy below uses.
 - Companion article *Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint*, for reality conditions and real structures on the algebra.
 - Companion articles *The Neutron in Biquaternionic Form* and *The Proton in Biquaternionic Form*, for the two charge states of one isospin doublet.
 
-## The Pseudoautomorphism and Its Matrix
+## The Conjugation of the Algebra
 
-The discrete operations $P$, $T$, $PT$ are the three non-trivial **fundamental automorphisms** of a real Clifford algebra $\mathrm{Cl}_{n,m}$ — the grade involution, the reversion and their composite, the Clifford conjugation — and they act on each graded piece by a sign. Charge conjugation is not of this kind. On the complexification $\mathbb{C}\mathrm{l}_{n+m}$ it is the **pseudoautomorphism**
-
-$$
-\boxed{\;A\;\longmapsto\;A^{\mathrm c}=\Pi\,\bar A\,\Pi^{-1}\;},
-$$
-
-the coefficient conjugation of the algebra element followed by the inner automorphism by a matrix $\Pi$. Two features distinguish it from the fundamental automorphisms. First, it is **conjugate-linear**: it contains $\bar A$, and no complex-linear automorphism does. Second, it is not an automorphism in the category of $\mathbb{C}$-algebras, only a *semilinear* one: it preserves products, $(AB)^{\mathrm c}=A^{\mathrm c}B^{\mathrm c}$, but it reverses the scalar, $(\lambda A)^{\mathrm c}=\bar\lambda\,A^{\mathrm c}$. That reversal is what the prefix records, and it is why $C$ cannot be counted among the three untwisted operations.
-
-Throughout, $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that a cell is $L_aR_b\psi=a\psi b$. The four **generator cells**, one for each coordinate $t,x,y,z$, are:
+The three discrete operations $P$, $T$ and $PT$ act on each graded piece of the algebra by a sign. Charge conjugation is not of that kind, and two features separate it from them. It is **conjugate-linear**: it contains the coefficient conjugation and it reverses the scalar, so that
 
 $$
-G_0=iR_{\vec e_x}^{\mathrm{axf}},\quad
-G_1=iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-G_2=iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},\quad
-G_3=iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}.
+(\lambda Q)^{\mathrm c}=\bar\lambda\,Q^{\mathrm c},
 $$
 
-The factor $i$ belongs to the cell, and products use $i^2=-1$: $(iR_{\vec e_x}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, while $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ because $\vec e_k^{2}=-1$.
-
-The map is the algebra-level form of the module operation $C[\psi]=\eta_C\psi^{*}$. The algebra-level matrix is $\Pi$, and the module representative is the cell
+which no untwisted operation does. And it preserves products,
 
 $$
-\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}},
+(QX)^{\mathrm c}=Q^{\mathrm c}X^{\mathrm c},
 $$
 
-determined up to a phase. Because $\Pi$ is fixed only up to a nonzero scalar, the phase of $\eta_C$ is free, exactly as the CPT article's explicit verification found.
+so it is an automorphism of the algebra read over the reals and only a semilinear map over the complex numbers. The reversal of the scalar is what the name *pseudoautomorphism* records.
 
-### The Action on Spinors
-
-On spinors the pseudoautomorphism acts through the invariant antisymmetric matrix $\Pi$. Let $\xi$ be a two-component spinor of the fundamental representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, and let $\bar\xi$ be its coefficient conjugate. The charge-conjugated spinor is:
+The fixed product supplies the rest. On this algebra it is $-e_y$, and it is a root of $-1$, since $(-e_y)^2=-e_t$. Written on an element, the conjugation is
 
 $$
-\xi^{\mathrm c}=\Pi\,\bar\xi,
-\qquad\text{that is,}\qquad
-\xi^{\mathrm c}_{\dot\alpha}=\sum_\alpha\Pi_{\dot\alpha\alpha}\bar\xi_\alpha .
+Q^{\mathrm c}=-e_y\,\bar Q\,e_y .
 $$
 
-Conjugating twice:
+That is a derived form: the coefficient conjugation, followed by the two-sided product by the fixed product. The two factors are one object used twice, and the product is fixed only up to a nonzero scalar, so the only freedom in the operation is the choice of that scalar, exactly as the companion article's verification found.
+
+**The multiplier alone.** The two-sided product by the fixed product is written out,
 
 $$
-(\xi^{\mathrm c})^{\mathrm c}=\Pi\,\overline{\Pi\,\bar\xi}=\Pi\bar\Pi\,\xi,
-\qquad\text{that is,}\qquad
-(\xi^{\mathrm c})^{\mathrm c}_\alpha=\sum_\beta(\Pi\bar\Pi)_{\alpha\beta}\xi_\beta=\pm\,\xi_\alpha .
+Q\mapsto-e_y\,Q\,e_y ,
 $$
 
-The sign is that of $\Pi\bar\Pi$ — the product of $\Pi$ with its coefficient conjugate — so the relation between a particle and its antiparticle is controlled entirely by $\Pi$. This is the first appearance of the division ring: the allowed matrices $\Pi$ are not arbitrary, and which ones occur is fixed by the algebra's division ring.
+and it is linear, an automorphism, and its square is the identity: the two factors multiply to $e_y^2=-e_t$ on the left and on the right, and the two signs cancel. The conjugation is that multiplier preceded by the coefficient conjugation, and the two behave differently on the two values of the subscript.
 
-The module form of the same operation is the cell $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$. Its defining property is the intertwining condition:
+### The Two Values of the Subscript
 
-$$
-\eta_C^{-1}G_\mu\,\eta_C=-G_\mu^{*},
-$$
+An element is written $Q=Q_L+Q_R$. The part $Q_L$ is the part of value $L$, the minus one, and $Q_R$ the part of value $R$, the plus one. That is the whole definition, and the values are exactly two. Every element is a sum of one part of each, only the zero element has both parts zero, a product takes the value of its right factor, and left multiplication keeps the value.
 
-where $G_\mu^{*}$ is the module conjugate of the generator cell. In the chiral-basis realization of the CPT article the module conjugation is componentwise complex conjugation of the spinor components, and it gives
+**The exchange sits on the fixed product.** Three computations fix where.
 
-$$
-G_0^{*}=G_0,\qquad G_1^{*}=G_1,\qquad G_2^{*}=-G_2,\qquad G_3^{*}=G_3 .
-$$
+- Right multiplication by $e_t$ and by $e_z$ keeps the value, and right multiplication by $e_x$ and by $e_y$ exchanges it.
+- The multiplier is a left multiplication by $-e_y$, which keeps the value, followed by a right multiplication by $e_y$, which exchanges it. So it exchanges the two values, carrying $Q_L$ to an $R$ element and $Q_R$ to an $L$ element.
+- The coefficient conjugation exchanges the two values as well. The conjugation, which is the multiplier and the coefficient conjugation together, therefore keeps them: the conjugate of an $L$ element is an $L$ element.
 
-In the cell frame the condition reads:
+The oddness of the internal factor is the second line. It belongs to the fixed product, and the conjugation of the coefficients adds no second exchange.
 
-$$
-\eta_C^{-1}G_0\eta_C=-G_0,\quad
-\eta_C^{-1}G_1\eta_C=-G_1,\quad
-\eta_C^{-1}G_2\eta_C=+G_2,\quad
-\eta_C^{-1}G_3\eta_C=-G_3 .
-$$
-
-The plus sign on $G_2$ is not an exception: it is exactly what $-G_2^{*}=+G_2$ requires, since the module conjugation negates that generator. So $\eta_C$ anticommutes with the three generators that the module conjugation fixes and commutes with the one it negates. It is odd, and it anticommutes with the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$. This is the precise form of the statement that charge conjugation flips chirality. The condition is also what makes the operation compatible with the free equation: if $\psi$ solves the free equation then $C[\psi]$ solves it as well, which is the CPT article's explicit verification.
-
-The free equation has two lines, one for each chirality. In the notation of *The Dirac Equation in Biquaternionic Form*,
+**The two squares.** The conjugation squares to the identity: the coefficient conjugation is applied twice and the multiplier is applied twice, and each pair returns its argument.
 
 $$
-\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L,
-\qquad
-\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R,
+(Q^{\mathrm c})^{\mathrm c}=Q .
 $$
 
-On the spinor module the same statement is the single pair equation $(\mathbb{D}-m)\psi=0$, with $\psi=(\psi_L,\psi_R)$. Charge conjugation meets the two readings alike: because $\eta_C$ anticommutes with the chirality cell, $C$ exchanges the two lines, and the intertwining condition is what keeps the pair a solution.
+The transposed form of the operation is a single right multiplication, $\eta(Q)=Qe_x$, and its square is minus the identity, since $\eta^2(Q)=Qe_x^2=-Q$. The two signs are the two units: the two-sided product uses $-e_y$ twice on each side, so its square is $e_y^4=+e_t$, and the one-sided product uses $e_x$ twice, so its square is $e_x^2=-e_t$.
+
+**The two lines.** The free equation of the series has two lines, one for each value of the subscript; the pair is fixed in *Operator and Calculus Conventions*, §*The Gradient*, and is not restated here. The multiplier exchanges the two values, so it carries an element of one line to an element of the other, and the conjugation carries the field to its charge conjugate. That a solution is carried to a solution is the companion article's explicit verification.
 
 ## The Division-Ring Trichotomy
 
-The classification is a theorem of the Clifford-algebra literature and is transcribed here. Let $\mathbb{C}\mathrm{l}_{n+m}$ be the complex Clifford algebra of an $(n+m)$-dimensional non-degenerate complex quadratic form, and let $\mathrm{Cl}_{n,m}\subset\mathbb{C}\mathrm{l}_{n+m}$ be a real form, with $n$ positive and $m$ negative squares. Write $d=n-m\bmod 8$.
+The classification is a theorem of the algebra literature and is transcribed here. The field is valued in a module, and the module has a **division ring** $K$ of scalars. Only three occur, and the form of the fixed product follows $K$:
 
-The **division ring** $K$ of the real form — the ring of scalars of its irreducible module — is fixed by $d$ alone:
+| division ring $K$ | the fixed product | the conjugation |
+|---|---|---|
+| $\mathbb{R}$ | central | the coefficient conjugation alone; no state is carried to a distinct one |
+| $\mathbb{H}$ | a product of units, not central | the particle is interchanged with a distinct partner |
+| $\mathbb{C}$ | a product of units | the module is related to its conjugate |
 
-| $d=n-m\bmod8$ | $0,2$ | $4,6$ | $3,7$ | $1$ | $5$ |
-|---|---|---|---|---|---|
-| $K$ | $\mathbb{R}$ | $\mathbb{H}$ | $\mathbb{C}$ | $\mathbb{R}\oplus\mathbb{R}$ | $\mathbb{H}\oplus\mathbb{H}$ |
+**One test decides the case: whether the fixed product is central.** When it is, the inner automorphism it defines is the identity, the conjugation is the coefficient conjugation alone, and it fixes every element of the real form pointwise. When it is not, the inner automorphism is genuine, and an element outside its fixed set is carried to a different one.
 
-The form of the charge-conjugation matrix follows $K$:
-
-| division ring $K$ | $d$ | matrix $\Pi$ | map $C$ |
-|---|---|---|---|
-| $\mathbb{R}$ | $0,2$ | $\Pi\propto I$ | identity at the algebra level |
-| $\mathbb{H}$ | $4,6$ | a product of generators, $\Pi\bar\Pi=\pm I$ | particle–antiparticle interchange |
-| $\mathbb{C}$ | $3,7$ | a product of generators | conjugation to the conjugate representation |
-
-For even $n+m$ the integer $d$ is even, so only $K\cong\mathbb{R}$ and $K\cong\mathbb{H}$ occur; the complex row needs odd $n+m$, and $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$ at $d=3$ is the standard example. The two sum rows belong to odd $n+m$ and behave on each summand as the corresponding simple case.
-
-This is the first structural fact of the trichotomy: the three cases are not three real forms of one even algebra. Two of them are real forms of real and of quaternionic type, and the third is the complex module itself, taken before any real form is imposed on it.
+**The three cases are not three real forms of one real algebra.** Two of them are real subalgebras of the complex algebra, and the third is the complex algebra itself, read before any reality condition is imposed.
 
 ### The Three Cases
 
-**Real division ring.** $\Pi\propto I$. On the real form the coefficient conjugation $\bar A$ is the identity, so $A^{\mathrm c}=\Pi A\Pi^{-1}=A$: the operation is trivial at the algebra level, and every representation carried by the algebra is its own conjugate. The particles are their own antiparticles in the strongest sense — not a neutral particle equal to its conjugate, but a particle on which the conjugation exchanges nothing. A real representation may still carry the sign $-1$; for a boson that sign is the charge-conjugation parity, $-1$ for the photon and the $\phi$ and $+1$ for the $\pi^0$ and the $\eta$, and it does not make the antiparticle a distinct state.
+**Real division ring.** $K\cong\mathbb{R}$. The fixed product is central and the conjugation is the coefficient conjugation, so every element of the real form is its own conjugate. The particles are their own antiparticles in the strongest sense — not a neutral particle equal to its conjugate, but a particle on which the conjugation exchanges nothing. A real form may still carry the sign $-1$; for a boson that sign is the charge-conjugation parity, $-1$ for the photon and the $\phi$ and $+1$ for the $\pi^0$ and the $\eta$, and it does not make the antiparticle a distinct state.
 
-**Quaternionic division ring.** $\Pi$ is a product of generators with $\Pi\bar\Pi=\pm I$. The coefficient conjugation is not the identity on the complexification, and the pseudoautomorphism acts inside the real representation, exchanging the particle with its antiparticle: the state is its own charge-conjugate only up to a distinct partner. This is the neutral case.
+**Quaternionic division ring.** $K\cong\mathbb{H}$. The fixed product is a product of units and is not central. The conjugation acts inside the real form and exchanges an element with a distinct one: the state is its own conjugate only up to a distinct partner. This is the neutral case.
 
-**Complex division ring.** $\Pi$ is a product of generators, and the map relates a representation to its conjugate. The two charge states $\pm1$ are the two members of the conjugate pair, and $C$ maps one to the other. No state of the pair is its own antiparticle. This is the charged case.
+**Complex division ring.** $K\cong\mathbb{C}$. The conjugation relates the module to its conjugate. The two charge states $\pm1$ are the two members of the conjugate pair, and the conjugation maps one to the other. No state of the pair is its own antiparticle. This is the charged case.
 
-## The Meaning of $C^{2}$
+## The Meaning of the Square
 
-The square of charge conjugation is the product $\Pi\bar\Pi$, and both signs occur in practice. The section therefore separates what the division ring fixes from what the representation fixes.
+The square of the operation is the identity on the algebra, and two signs are in circulation in the literature. The section separates what the division ring fixes from what the representation fixes.
 
-**What the division ring fixes.** Only the form of $\Pi$. A real division ring makes it a scalar, and the map is the identity, so $C^{2}=\mathrm{id}$ trivially; the sign $-1$ that the photon carries is then a phase on the state, not a property of the map. A quaternionic or a complex division ring makes it a product of generators, and the sign of $\Pi\bar\Pi$ is then left open.
+**What the division ring fixes.** Only the form of the fixed product: central, or not. It fixes no sign on a state. Over a real division ring the conjugation is the coefficient conjugation and its square is the identity for that reason; over the other two the square is the identity because the fixed product is used twice and its square is central. In neither case does the division ring supply a minus sign.
 
-**A single chiral half squares to $-1$.** The invariant matrix is $\Pi=\epsilon=i\sigma_2$, which is real. Hence $\bar\Pi=\Pi$ and
+**The one-sided square.** The transposed form of the operation is the right multiplication $\eta(Q)=Qe_x$, and its square is minus the identity, because $e_x^2=-e_t$. A report of a minus sign on a single half of the field is reporting this one: the sign is the square of the unit, and it belongs to the one-sided reading.
 
-$$
-\Pi\bar\Pi=\Pi^{2}=-I,
-\qquad\text{so}\qquad
-(\xi^{\mathrm c})^{\mathrm c}=-\xi .
-$$
+**The two-sided square.** The multiplier and the conjugation square to the identity, because the two factors of $e_y$ multiply to a central value twice. On the algebra, therefore, the conjugation is an involution, $(Q^{\mathrm c})^{\mathrm c}=Q$, which is the standard statement for a Dirac field. The pair, and not the half, is what the algebra carries, and the two computations do not conflict: one is a one-sided multiplier and the other is the two-sided one.
 
-The transposed form of the same map, $\psi_c=\eta\,(\psi^{\dagger}iR_{\vec e_x}^{\mathrm{axf}})^{T}$, is the CPT article's second formula; its cell is $\eta=R_{\vec e_x}^{\mathrm{axf}}$, with $\eta^{2}=R_{\vec e_x^{2}}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, and the minus sign of $\Pi^{2}$ is carried by $\vec e_x^{2}=-1$. On a two-component spinor, charge conjugation is a map of order four, not an involution.
-
-**The Dirac module squares to $+1$.** The biquaternion module carries both chiral halves, and there the internal cell satisfies $\eta_C^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, the identity operator. The map on the module is therefore an involution, $C^{2}=\mathrm{id}$, and this is the standard statement $(\psi^{\mathrm c})^{\mathrm c}=\psi$ for a Dirac field.
-
-The two computations are not in conflict. The sign $-1$ of a single chiral half is absorbed when the second half is present: the pair, not the half, is what the Dirac field carries. The corpus meets both signs in other places: the Euclidean charge conjugation of *The Spectral Triple of the Biquaternion Algebra* is a cell that squares to $-I_4$, and the real structure of *Bosonization in Biquaternionic Form* is an involution. The moral for the classification is that the sign of $\Pi\bar\Pi$ belongs to the representation and not to the division ring, and that neither sign changes the class of the particle.
+The corpus meets both signs elsewhere: the Euclidean charge conjugation of *The Spectral Triple of the Biquaternion Algebra* is a cell that squares to $-I_4$, and the real structure of *Bosonization in Biquaternionic Form* is an involution. The moral for the classification is that the sign of a square belongs to the representation and not to the division ring, and that neither sign changes the class of a particle.
 
 ## The Three Classes of Particles
 
-The trichotomy of the previous section is the algebraic form of the three classes of charge states, labelled by the charge symbol $Ϙ$.
+The physics uses the trichotomy, not the other way round. Three classes of particle are distinguished by the charge states they carry, and the classes are exactly the three division rings.
+
+**Charged particles.** Electron, proton, muon, the charged $W$ bosons, the charged mesons: at least one of their charge states is non-zero, $Ϙ=\pm1$. The two states $\pm1$ are related by the conjugation and they are distinct, so neither state is its own antiparticle. This is the case $K\cong\mathbb{C}$.
+
+**Neutral particles.** Neutron, neutrino, the neutral kaon $K^0$: a charge state $Ϙ=0$ but a non-vanishing field. The particle is neutral — the conjugation carries it to a state of the same charge, $Ϙ=0$ — but that state is still distinct from it, and it has its own name, the antiparticle. This is the case $K\cong\mathbb{H}$.
+
+**Truly neutral particles.** Photon, $Z$ boson, $\pi^0$, $\eta$, $\phi$: a charge state $Ϙ=0$ and a field that is its own antiparticle at the level of states, not only of charges. The diagram $Z$ decays to an electron-positron pair, so its fields couple to charge, and its self-conjugacy is not the statement that it carries no charge; it is the statement that the conjugation is trivial on the module that carries it. This is the case $K\cong\mathbb{R}$.
 
 ### The Dictionary
 
-**Charged particles.** The field is valued in a **complex** module, $K\cong\mathbb{C}$; the pseudoautomorphism is non-trivial and maps the module to its conjugate. The charge states $Ϙ=\pm1$ are the module and its conjugate, and $C$ exchanges them, so $C$ maps the particle to a different state, its antiparticle. The electron, the proton and the charged mesons are of this class.
+| the notion | the framework's image |
+|---|---|
+| a particle | a state, an element of the module that carries the field |
+| its antiparticle | the state obtained by the conjugation |
+| a charge state | $Ϙ=\pm1$ for the two members of a conjugate pair, $0$ for a neutral state |
+| the charge-conjugation parity | $\pm1$, the sign of the conjugation on a truly neutral state |
+| truly neutral | the conjugation acts trivially on the module |
 
-**Neutral particles.** The field is valued in a module over the **quaternionic** division ring, $K\cong\mathbb{H}$; the pseudoautomorphism is non-trivial, but it acts *within* the module and interchanges the particle with a distinct partner. The neutron is of this class, a state that is neutral ($Ϙ=0$) yet distinct from its conjugate. Whether the neutrino belongs here or to the truly neutral class is the Majorana question, open question 2 below.
+The dictionary is coarse and it is adequate. It says what the division ring is for: a particle can be its own antiparticle exactly when the module that carries it does not notice the conjugation, and that is exactly the case $K\cong\mathbb{R}$.
 
-**Truly neutral particles.** The field is valued in a **real** module, $K\cong\mathbb{R}$; the photon's four-vector is one of them. The pseudoautomorphism is trivial at the algebra level, so the particle and its antiparticle are the same state. The operation may still act as the sign $-1$ on that state — the photon and the $\phi$ both carry $C=-1$ — but the sign is a charge-conjugation parity, not a distinction between two states. The photon is the paradigm; the $\pi^{0}$, the $\eta$ and the $\phi$ — the neutral mesons in the class — are the hadronic examples. Following the companion article's notation, this charge state is written $\bar{0}$ to distinguish it from the neutral state $0$.
+**The criterion is the division ring, not the reality of the Lorentz field.** The Dirac field of $\mathrm{Spin}^{+}(1,3)$ is quaternionic for the electron as much as for the neutron, so the field alone does not separate the classes. What separates them is the ring of scalars of the module that carries it. Two particles with the same kind of field can therefore sit in different classes, and two with different fields can sit in the same one; the class is a property of the module and not of the representation.
 
-The criterion is the division ring of the module and not the reality type of the Lorentz spinor. The Dirac spinor of $\mathrm{Spin}^{+}(1,3)$ is quaternionic for the electron as much as for the neutron, so the spin representation alone does not separate the classes; what separates them is the scalars of the module, that is, the algebra the field is valued in.
-
-The three classes are collected in one table:
-
-| class | module | action of $C$ | examples |
-|---|---|---|---|
-| charged | complex, $K\cong\mathbb{C}$ | conjugation to the conjugate module; exchanges $Ϙ=\pm1$ | electron, proton, charged mesons |
-| neutral | quaternionic, $K\cong\mathbb{H}$ | particle–antiparticle interchange within the module; $Ϙ=0$ | neutron |
-| truly neutral | real, $K\cong\mathbb{R}$ | identity at the algebra level, possibly the sign $-1$; $Ϙ=\bar{0}$ | photon, $\pi^{0}$, $\eta$, $\phi$, $Z$ |
-
-A note on the last row. The $Z$ is its own antiparticle, but it couples to vector and axial currents at once, so its interactions are not $C$-invariant and the sign it would carry is not an observable. The class assignment stands; the parity does not.
-
-The three classes are exactly the split of the charge values $\{+1,-1,0,\bar{0}\}$ that the companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form* uses to organise the charge multiplets. The present article supplies the reason the split is threefold and not twofold: a particle can be neutral and still not truly neutral precisely when the division ring of its module is quaternionic rather than real.
+**The elimination is complete for fermions and carries no information for neutral bosons.** A Dirac field is neutral exactly when the conjugation is trivial on its module, and the division ring decides that. For a real boson field the conjugation acts on the field without acting on a charge, so the division-ring criterion returns $K\cong\mathbb{R}$ and adds nothing to the statement that the field is real.
 
 ## The Biquaternion Reading
 
-The biquaternion algebra has two readings, and the trichotomy uses both. As a **complex** algebra it is $\mathbb{C}\mathrm{l}_{2}$, the complexification of the quaternionic real algebra $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, and its real forms are $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and $\mathrm{Cl}_{2,0}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$. As a **real** algebra it is $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})\cong\mathrm{Cl}_{3,0}$, the identification the corpus records in *The Number Systems as Clifford Algebras*, and there $d=3$, so the division ring is $\mathbb{C}$: the framework's own algebra is the charged case, by the table itself. 
+The biquaternion algebra has two readings, and the trichotomy uses both. Read as a **complex** algebra, its centre is the complex line $\mathbb{C}_{\mathbb{B}}$, so its division ring is $\mathbb{C}$: the charged case, by the table itself. Read as a **real** algebra, it carries two real subalgebras of real dimension four, and they carry the other two cases.
+
+- **The coefficient conjugation** fixes the subspace of real coefficients, $\mathbb{H}_{\mathbb{B}}$. That subspace is a division ring, isomorphic to $\mathbb{H}$, so its division ring is $\mathbb{H}$: the neutral case.
+- **The charge conjugation** fixes the elements whose time and $y$ coefficients are real and whose $x$ and $z$ coefficients are imaginary. That set is a real subalgebra of real dimension four; it is not a division ring, since $\tfrac12(e_t+i\vec e_x)$ is neither zero nor the unit and its square is itself; and its scalars are $\mathbb{R}$: the truly neutral case.
+
+**The third subalgebra is read off the conjugation.** It is written here as a fixed set and not as a list of units, because the conjugation is the datum the article is about and the subalgebra is what that datum leaves alone. The two real forms are the two conjugations the algebra carries, one for each.
+
+### The Axis Is a Property of the Basis
+
+A display that singles out a direction does so through its basis, and the test is a property of the basis alone: an operator is diagonal when each basis element is carried into a multiple of itself.
+
+- In the coefficient basis the diagonal cells are the four squares, $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$, $\vec e_z\vec e_z$. The set is unchanged by any permutation of the three spatial units, because the four squares name the four directions and nothing else.
+- In a frame built on a declared spatial unit $u$ the diagonal cells are four others: $e_te_t$, $e_tu$, $ue_t$, $uu$. The declared unit appears twice, time appears twice, and the other two spatial units appear in none. The set changes when the units are permuted, and it is written with $u$ so that no unit is privileged by the notation.
+
+That is the whole of the axis. The change from one display to the other is the conjugation by $C_{\Pi}$, which keeps the trace, the determinant, the spectrum, the rank and every product; the four diagonal cells are not among the things it keeps, and no argument of this article depends on which of the two displays is written.
 
 ### Choosing the Algebra
 
-The three cases of the trichotomy are realised by choosing whether the field is valued in the complex algebra or in one of its two real forms:
+The three cases are realised by the choice of the module the field is valued in.
 
-- **Charged fields** are carried by the complex algebra $\mathbb{B}$ itself, or by a complex module built on it. Their charge conjugation is the conjugate-linear $\eta_C$-twisted complex conjugation, and it maps the field to the conjugate representation. This is the framework's default, and it is why the companion articles treat charged fermions and the charged gauge fields directly.
-- **Neutral fields** are carried by the real form $\mathrm{Cl}_{0,2}\cong\mathbb{H}\subset\mathbb{B}$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, which is a division ring. Its charge conjugation is the non-trivial particle–antiparticle interchange.
-- **Truly neutral fields** are carried by a real form of real type, isomorphic to $\mathrm{Cl}_{2,0}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, which occurs in $\mathbb{B}$ as a real subalgebra. On it the charge conjugation is trivial at the algebra level, and the field is its own antiparticle; the sign $-1$ may remain as a parity.
+- **Charged fields** are carried by the algebra itself, read over $\mathbb{C}$. Their conjugation is the conjugate-linear map of the first section, and it relates the field to its conjugate.
+- **Neutral fields** are carried by the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, which is a division ring. Their conjugation is the non-trivial exchange of a particle with a distinct partner.
+- **Truly neutral fields** are carried by the fixed set of the conjugation. On it the conjugation is the identity, and the field is its own antiparticle, with the sign $\pm1$ allowed as a parity.
 
-The interpretation is not a derivation, and it does not add a new field content to the framework. Its value is that it locates the three charge classes in the *same* algebra: the complexification carries the charged case, and its real forms carry the two neutral cases. The photon article's finding that the free photon is a real, self-conjugate field is the case $K\cong\mathbb{R}$; the neutron article's finding that the neutron is neutral but distinguishable from the antineutron is the case $K\cong\mathbb{H}$.
+The interpretation is not a derivation, and it adds no field content. Its value is that it locates the three charge classes in the same algebra: the complex algebra carries the charged case, and its two real subalgebras of real dimension four carry the two neutral cases. The photon article's finding that the free photon is a real, self-conjugate field is the case $K\cong\mathbb{R}$; the neutron article's finding that the neutron is neutral but distinguishable from the antineutron is the case $K\cong\mathbb{H}$.
 
 ## What the Framework Establishes, Transcribes, and Does Not
 
-**Established, and recomputed.**
+### Established, and recomputed
 
-- The algebra-level pseudoautomorphism is $A^{\mathrm c}=\Pi\bar A\Pi^{-1}$; it is conjugate-linear on the complexification and is not one of the three fundamental automorphisms. On the module its representative is the odd cell $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the intertwining condition is $\eta_C^{-1}G_\mu\eta_C=-G_\mu^{*}$, which reads $-,-,+,-$ for $\mu=0,1,2,3$. This is the algebra-level form of the CPT article's finding that $C$'s internal factor is odd.
-- The twice-conjugated spinor is $(\xi^{\mathrm c})^{\mathrm c}=\Pi\bar\Pi\,\xi$. For the invariant matrix $\Pi=\epsilon=i\sigma_2$ the product is $-I$, so a chiral half squares to $-1$; the module cell satisfies $\eta_C^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, so the Dirac module squares to the identity. Both signs are recomputed, and the pair of them is the statement that charge conjugation is a map of order four on a chiral half and an involution on the module.
-- Over a real division ring $\Pi\propto I$ and the pseudoautomorphism is the identity at the algebra level; the corresponding particles are truly neutral. The three charge classes are the modules over $\mathbb{C}$, over $\mathbb{H}$ and over $\mathbb{R}$.
+Each statement below is a computation and not an analogy.
 
-**Transcribed, not derived.**
+- **The conjugation on the element.** $Q^{\mathrm c}=-e_y\bar Qe_y$ is conjugate-linear, preserves products, and squares to the identity.
+- **The multiplier and the values.** The two-sided product $-e_yQe_y$ exchanges the two values of the subscript, the coefficient conjugation exchanges them as well, and the conjugation keeps them.
+- **The two signs.** The transposed form is the right multiplication by $e_x$ and its square is minus the identity; the two-sided product squares to the identity. The sign is the square of the unit.
+- **The two fixed sets.** The fixed set of the coefficient conjugation is the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$; the fixed set of the conjugation is a real subalgebra of real dimension four that is not a division ring.
 
-- The classification theorem itself: that the form of $\Pi$ is governed by the division ring of the real form, and the Bott correspondence $d=n-m\bmod 8\to K$, with $\mathbb{R}$ at $0,2$, $\mathbb{H}$ at $4,6$ and $\mathbb{C}$ at $3,7$.
-- The physical identifications of the three classes — electron and proton charged, neutron neutral, photon and $\pi^{0}$ and $\eta$ and $\phi$ truly neutral. These are the standard assignments of particle physics.
-- The biquaternion realisation: that the framework's algebra is $\mathbb{C}\mathrm{l}_{2}$ as a complex algebra and $\mathrm{Cl}_{3,0}$ as a real one, and that it contains the real forms $\mathrm{Cl}_{2,0}$, $\mathrm{Cl}_{1,1}$ and $\mathrm{Cl}_{0,2}$, is the corpus's own Clifford-structure result; reading the three charge classes through them is the present article's organisation, not a theorem the algebra forces.
+### Transcribed, not derived
 
-**Gap, left visible.**
+- **The classification theorem.** The form of the fixed product is governed by the division ring of the module, and the three division rings give the three cases. The theorem is the algebra literature's, and the article organises the charge classes by it.
+- **The physical identifications.** The assignments — charged for $K\cong\mathbb{C}$, neutral for $K\cong\mathbb{H}$, truly neutral for $K\cong\mathbb{R}$ — are the standard reading of the classification. Their translation into the framework's presentation is the present article's contribution; the physics itself is not.
+- **The biquaternion realisation.** That the algebra is complex with $\mathbb{C}_{\mathbb{B}}$ for centre, and that it carries a real-quaternion subspace and a real subalgebra of real type, is the corpus's own structure. Reading the three classes through those subalgebras is the article's organisation, not a theorem the algebra forces.
 
-- No derivation that a *given* physical particle's real form is the one assigned to it. The classification says which class each algebra's representations fall into; it does not, by itself, say that the neutron is quaternionic and the photon real. That identification is transcribed from the spin and charge assignments and is where a stronger framework would have to act.
-- No $\mathbb{B}$-intrinsic form of the pseudoautomorphism, for the same reason the CPT article leaves $C$ external: $\Pi$ is a product of generators, and the generators needed for it include odd ones outside $\mathbb{B}$; in the module realization $\eta_C$ is odd. The division-ring classification locates $C$ among the intrinsic maps of $\mathbb{C}\mathrm{l}_{n+m}$; it does not bring $C$ inside $\mathbb{B}$.
-- No treatment of the charge-conjugation phase for composite or mixed states, and no statement about $K^{0}$–$\bar{K}^{0}$ mixing, where the truly-neutral interpretation of a neutral meson requires the superposition language the framework does not yet carry.
+### Gap, left visible
+
+- **The conjugation is not intrinsic.** The operation needs the fixed product, and the fixed product is fixed only up to a scalar. The construction therefore does not derive the existence of charge conjugation from the division ring; it uses the division ring to classify a conjugation that is put in by hand.
+- **No intrinsic form of the conjugation inside the algebra.** The conjugation is the coefficient conjugation composed with the multiplier, and the multiplier is outside the Hermitian sector. A reading in which the operation were intrinsic to the algebra would need an element that the algebra supplies, and there is none.
+- **The dictionary between classes and division rings is structural, not functorial.** It says that the modules over the three rings realise the three cases. It does not give a map from a given state to its division ring.
 
 ## Open Questions
 
-1. **Is the framework's own $\mathbb{B}$ the charged case?** The charged case is the complex module, so a field that uses the full complex structure of $\mathbb{B}$ sits in it by default. Is the neutrality of a field then always the statement that its real form is $\mathrm{Cl}_{0,2}$ or $\mathrm{Cl}_{2,0}$, and can that be read off an equation rather than assigned?
+**Is the neutrality of a field always the statement that its module is fixed by one of the two conjugations?** The neutron's neutrality is $K\cong\mathbb{H}$, which here is the statement that the module is fixed by the coefficient conjugation. The photon's self-conjugacy is $K\cong\mathbb{R}$, the statement that it is fixed by the charge conjugation. Whether every neutral field is of one of the two kinds, or whether a third kind exists that the division-ring classification does not see, is not settled by the theorem.
 
-2. **Which real form does the mass term select?** The Dirac mass term is the linear chiral pair, and the Majorana question of the neutrino article is exactly the question of a real form. Does the anti-Hermitian map $\flat=-{}^{*}$ pick out the quaternionic real form $\mathrm{Cl}_{0,2}$, and is the neutrino's neutrality thus the $K\cong\mathbb{H}$ case?
+**The conjugation and massive neutral fermions.** A Majorana field is neutral but carries mass. In the framework, the mass term couples the two values of the subscript, and the conjugation keeps them, so a Majorana mass and a Dirac mass are distinguished by which values the mass term joins. The companion computation stops at the free field, and the massive case is not done.
 
-3. **Neutral mesons and the truly neutral class.** $K^{0}$ has charge $0$ but is not truly neutral: $K^{0}\ne\bar{K}^{0}$, and the two mix. The classification must therefore place it in the quaternionic class. Does the corpus's assignment of the neutral pseudoscalars follow the same rule, and at which charge-conjugation phase?
+**The charge-conjugation parity of truly neutral particles.** The $\pi^0$ has $C=+1$ and the $\phi$ has $C=-1$ despite both being $Ϙ=0$. In the algebra the sign is a sign of the fixed set — the identity on the module up to $\pm1$ — and where such a sign comes from is open.
 
-4. **The sign of $C^{2}$ in higher-spin fields.** A chiral half has $\Pi\bar\Pi=-I$ and the Dirac module has $C^{2}=\mathrm{id}$; the corpus's higher-spin fields live in tensor powers and in the Rarita–Schwinger construction. Does the module sign stay $+1$ there, or does it change with the spin, as it does in some standard conventions?
+**The two squares in higher-spin fields.** A one-sided multiplier squares to minus the identity and a two-sided one to the identity. The corpus's higher-spin fields live in tensor powers of the algebra. Whether the distinction survives the tensor power, or whether the sign changes with the spin, is a test: take the two squares on a two-fold tensor power and compare.
 
-5. **Truly neutral composites.** A truly neutral field is one on which $C$ acts without exchanging two states. Is the same true of a *composite* colour singlet, such as a quark–antiquark state in the framework's gauge-invariant sector, and does the division-ring criterion survive the composition?
+**Coupling to gauge fields.** A gauge field adds a connection to the field, and the conjugated field is charged under the conjugated connection. In the real-division-ring case a connection and its conjugate are the same connection; in the other two they are not. The consequence for the classification is that a truly neutral field can carry no charge under a connection that its own conjugate does not share, which is a constraint on which fields can be truly neutral in a gauged theory. The constraint is known in the physics and is not derived here.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -303,29 +275,30 @@ No identity in this list is used in the body of the article. They are recorded s
 
 ## Summary
 
-Charge conjugation is the pseudoautomorphism $A^{\mathrm c}=\Pi\bar A\Pi^{-1}$ of the complex Clifford algebra $\mathbb{C}\mathrm{l}_{n+m}$ induced by a real form $\mathrm{Cl}_{n,m}\subset\mathbb{C}\mathrm{l}_{n+m}$, and the matrix $\Pi$ that implements it is fixed by the algebra's division ring. Over a real division ring $K\cong\mathbb{R}$ it is proportional to the identity and the conjugation is trivial at the algebra level; over a quaternionic ring $K\cong\mathbb{H}$ it is a genuine product of generators and the conjugation interchanges particle and antiparticle; over the complex division ring $K\cong\mathbb{C}$ it is a conjugation between conjugate representations. The three cases are the three charge classes: charged states at $Ϙ=\pm1$, neutral particles with antiparticles at $Ϙ=0$, and truly neutral particles at $Ϙ=\bar{0}$. The twice-conjugated spinor is $(\xi^{\mathrm c})^{\mathrm c}=\Pi\bar\Pi\,\xi$. The sign of the product belongs to the representation and not to the division ring: for the invariant matrix $\Pi=\epsilon=i\sigma_2$ it is $-I$, so a single chiral half obeys $\xi^{\mathrm{cc}}=-\xi$, while the Dirac module, where $\eta_C^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, obeys $C^{2}=\mathrm{id}$.
+Charge conjugation is the conjugate-linear map $Q^{\mathrm c}=-e_y\bar Qe_y$ of the biquaternion algebra: the coefficient conjugation, followed by the two-sided product by a fixed product of units. It preserves products and reverses the scalar. The multiplier alone, $-e_yQe_y$, exchanges the two values of the subscript; the coefficient conjugation exchanges them as well, so the conjugation keeps them; and the conjugation is an involution. The transposed one-sided form is the right multiplication by $e_x$, whose square is minus the identity, and the sign of that square is the square of the unit, not a property of the division ring.
 
-The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}\mathrm{l}_{2}$, and read as a real algebra it is $\mathrm{Cl}_{3,0}$, whose division ring is $\mathbb{C}$: the charged case, by the table itself. Its real forms $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$ carry the neutral and the truly neutral cases. The division ring therefore places the three charge classes in one algebra: the photon's real self-conjugacy is the case $K\cong\mathbb{R}$, the neutron's neutrality is the case $K\cong\mathbb{H}$, and the charged fields are the complexification. What is transcribed is the classification and the physical assignments; what is recomputed here is the algebra-level form of the pseudoautomorphism, the identity case over a real division ring, and the involution property $\eta_C^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$.
+The three charge classes are the three division rings of the module. Over $\mathbb{R}$ the fixed product is central, the conjugation is the coefficient conjugation, and no element of the real form moves: the truly neutral particles, at $Ϙ=\bar0$, with the parity $-1$ for the photon and the $\phi$ and $+1$ for the $\pi^0$ and the $\eta$. Over $\mathbb{H}$ the fixed product is not central and an element is carried to a distinct partner: the neutral particles, at $Ϙ=0$, the neutron among them. Over $\mathbb{C}$ the conjugation relates the module to its conjugate: the charged particles, at $Ϙ=\pm1$.
+
+The biquaternion framework's algebra is complex, its centre is $\mathbb{C}_{\mathbb{B}}$, so its division ring is $\mathbb{C}$: the charged case, by the table itself. Its two real subalgebras of real dimension four carry the other two cases: the real-coefficient subspace $\mathbb{H}_{\mathbb{B}}\cong\mathbb{H}$ is the fixed set of the coefficient conjugation and carries the neutral case, and the fixed set of the charge conjugation is a real subalgebra of real type and carries the truly neutral case. The division ring therefore places the three classes in one algebra: the photon's self-conjugacy is the case $K\cong\mathbb{R}$, the neutron's neutrality is the case $K\cong\mathbb{H}$, and the charged fields are the complex algebra itself. What is transcribed is the classification and the physical assignments; what is recomputed here is the conjugation on the element, its two squares, and the two fixed sets.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{C}\mathrm{l}_{2}\cong\mathrm{Cl}_{3,0}$ | Biquaternion algebra; complex Clifford algebra generated by two elements (complex dimension four), and $\mathrm{Cl}_{3,0}$ as a real algebra, so $d=3$ |
-| $\mathrm{Cl}_{n,m}$, $d=n-m$ | Real Clifford algebra with $n$ positive and $m$ negative squares, a real form of $\mathbb{C}\mathrm{l}_{n+m}$; $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
-| $K$, $d=n-m\bmod8$ | Division ring of the real form: $\mathbb{R}$ at $d\equiv0,2$, $\mathbb{H}$ at $d\equiv4,6$, $\mathbb{C}$ at $d\equiv3,7$, $\mathbb{R}\oplus\mathbb{R}$ at $d\equiv1$, $\mathbb{H}\oplus\mathbb{H}$ at $d\equiv5$ |
-| $A^{\mathrm c}=\Pi\bar A\Pi^{-1}$ | Charge-conjugation pseudoautomorphism; $\bar{\cdot}$ is coefficient conjugation |
-| $\Pi$ | Charge-conjugation matrix; a product of frame cells, fixed only up to a scalar |
-| $G_0=iR_{\vec e_x}^{\mathrm{axf}}$, $G_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Four generator cells, one per coordinate, $k=x,y,z$; $(iR_{\vec e_x}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ and $(iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})^2=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
-| $L_a\psi=a\psi$, $R_b\psi=\psi b$, $L_{a}R_{b}$ | One-sided multipliers and two-sided cells; $L_{a}R_{b}\psi=a\psi b$; $i^2=-1$ |
-| $\xi^{\mathrm c}=\Pi\bar\xi$ | Conjugated spinor of the fundamental representation; $(\xi^{\mathrm c})^{\mathrm c}=\Pi\bar\Pi\,\xi$ |
-| $\Pi\bar\Pi=\pm I$ | The square on a chiral half: $-I$ for $\Pi=\epsilon=i\sigma_2$, so $\xi^{\mathrm{cc}}=-\xi$; the Dirac module obeys $C^{2}=\mathrm{id}$ |
-| $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Module representative of charge conjugation; odd, $\eta_C^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
-| $C[\psi]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi^{*}$ | Module form of charge conjugation (CPT article) |
-| $\gamma_\mu[\mathbb{M}_-]$, $\Gamma=\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ | Frame cells of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$; they appear only in *The Legacy Pauli Gamma Formulation* |
-| $\eta=R_{\vec e_x}^{\mathrm{axf}}$ | Cell of the transposed (CPT) form of the map; $\eta^{2}=R_{\vec e_x^{2}}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
+| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; complex dimension four, complex centre $\mathbb{C}_{\mathbb{B}}$ |
+| $K$ | Division ring of the module that carries the field: $\mathbb{R}$, $\mathbb{H}$ or $\mathbb{C}$ |
+| $Q^{\mathrm c}=-e_y\bar Qe_y$ | Charge conjugation on the element; $\bar{\cdot}$ is the coefficient conjugation |
+| $-e_y$ | The fixed product; a root of $-1$, since $(-e_y)^2=-e_t$, fixed only up to a scalar |
+| $Q\mapsto-e_yQe_y$ | The two-sided multiplier; exchanges the two values of the subscript; its square is the identity |
+| $\eta(Q)=Qe_x$ | The one-sided transposed form; $\eta^2=-e_t$ |
+| $Q_L$, $Q_R$ | The two values of the subscript, the minus one and the plus one |
+| $\tilde\Psi_L$, $\tilde\Psi_R$ | The two lines of the free equation, one per value |
+| $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathbb{H}$; fixed set of the coefficient conjugation |
+| $Q_t,Q_y$ real, $Q_x,Q_z$ imaginary | The fixed set of the charge conjugation; a real subalgebra of real dimension four, not a division ring |
 | $Ϙ=\pm1,0,\bar{0}$ | Charged (either sign), neutral, truly neutral charge states |
-| $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathrm{Cl}_{0,2}$, the quaternionic real form |
+| $C_{\Pi}$ | The change of display; keeps trace, determinant, spectrum, rank and products |
+| $\mathrm{pau}$, $\mathrm{axf}$ | The labels of the two displays of an array |
+| $\gamma_\mu[\mathbb{M}_-]$, $\Gamma=\gamma_5$ | The frame cells of the closing section; they appear only in *The Legacy Pauli Gamma Formulation* |
 
 ## Further Reading
 

@@ -20,13 +20,13 @@ The source writes its whole calculus with one letter, $\partial$. It is a cell o
 
 **What the conventions hold, and what they do not.** The four cells are corpus objects. *Matrix Representations Conventions* introduces $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$ as the replacement for matrices, one left and one right multiplication per unit, and their signs follow from that definition alone: $iR_{\vec e_x}$ squares to $+1$, each $iL_{\vec e_k}R_{\vec e_y}$ squares to $-1$, and any two distinct cells anticommute. The operator made by contracting those four cells with the four derivatives is not in the conventions. The article *Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form* builds it and calls it $\mathbb{D}$.
 
-**The name is overloaded, and neither meaning is this operator.** *Operator and Calculus Conventions* uses $\mathbb{D}$ for the pair operator on $\mathbb{B}\oplus\mathbb{B}$,
+**The letter was overloaded, and neither meaning is this operator.** *Operator and Calculus Conventions* uses $\mathbb{D}$ for the pair operator on $\mathbb{B}\oplus\mathbb{B}$,
 
 $$
 \mathbb{D}\Psi=\bigl(\tilde\nabla\Psi_R,\ \tilde\nabla^{\natural}\Psi_L\bigr),\qquad \mathbb{D}^2=\Box I,
 $$
 
-and describes it there as one-sided, with no matrix generator. *Product and Form Conventions* uses $\mathbb{D}$ for the split-complex numbers $q+jq'$. So $\mathbb{D}$ in the conventions is either the pair or the split-complex line, and neither is the cell contraction.
+and describes it there as one-sided, with no matrix generator. *Product and Form Conventions* uses $\mathbb{C}^{\mathrm{spl}}$ for the split-complex numbers $q+jq'$. So the conventions carry two glyphs, $\mathbb{D}$ for the pair and $\mathbb{C}^{\mathrm{spl}}$ for the split-complex line, and neither is the cell contraction.
 
 **The operator.** With $x_0=ct'$,
 
