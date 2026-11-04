@@ -14,7 +14,7 @@ Five problems are worked:
 
 **On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t'\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
 
-**The cells.** The article is written in the cells of the frame, and the gamma symbols appear only in *The Gamma Formulation*. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_aR_b\psi=a\psi b$, with $L_aR_bL_cR_d=L_{ac}R_{db}$. The four coordinate cells are
+**The cells.** The article is written in the cells of the frame, and the gamma symbols appear only in *The Legacy Gamma Formulation*. Write $L_a\psi=a\psi$ and $R_b\psi=\psi b$, so that $L_aR_b\psi=a\psi b$, with $L_aR_bL_cR_d=L_{ac}R_{db}$. The four coordinate cells are
 
 $$
 c_0=iR_{\vec e_x}^{\mathrm{axf}},\qquad c_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=x,y,z),
@@ -462,7 +462,7 @@ is not Hermitian: its first term lies in $\mathbb M_+$ and its second in $\mathb
 
 The pattern is informative. The leading terms ($\vec\pi^2/2m$, $ϙ\Phi$, the spin term) carry no power of $c$; the three corrections each carry $c^{-2}$, which is the statement that they are relativistic corrections of order $v^2/c^2$. The spin term carries one power of $\hbar$ in its coefficient, while the leading kinetic and electrostatic terms carry none. Written with $\vec S=\tfrac\hbar2\boldsymbol\sigma$, it is $-(ϙ/m)\vec S\cdot\vec B$, the classical coupling of a magnetic moment; the power of $\hbar$ is the conversion between the dimensionless $\boldsymbol\sigma$ and the spin. The Darwin term carries $\hbar^2$ and has no classical counterpart. The spin–orbit term carries one power of $\hbar$ in its coefficient, but it is quadratic in the angular momenta once $\vec S$ and $\vec L=\vec r\times\vec p$ are used, so it becomes the classical Thomas-precession coupling when $\vec S$ and $\vec L$ are classical.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb C)=M_4(\mathbb C)$, not a different algebra. This is the only section of the article that names them.
 

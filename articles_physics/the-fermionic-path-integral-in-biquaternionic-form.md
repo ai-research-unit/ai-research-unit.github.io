@@ -80,7 +80,7 @@ $$
 \mathbb{D}=-L_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\frac{\partial}{\partial t'}-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\frac{\partial}{\partial Q_k}.
 $$
 
-The operator is the same dynamics, written once; the five frame cells are named in §*The Gamma Formulation*. Contractions below carry the frame's sign vector: with $\varepsilon_\mu=g_{\mu\mu}$ and $\varepsilon=(+1,-1,-1,-1)$, a contraction of two lower indices carries $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=R_{\vec e_x}^{\mathrm{axf}}E-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$. The sign is not decoration: the plane wave produces it. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
+The operator is the same dynamics, written once; the five frame cells are named in §*The Legacy Gamma Formulation*. Contractions below carry the frame's sign vector: with $\varepsilon_\mu=g_{\mu\mu}$ and $\varepsilon=(+1,-1,-1,-1)$, a contraction of two lower indices carries $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu L_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}p_\mu=R_{\vec e_x}^{\mathrm{axf}}E-\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}p_k$. The sign is not decoration: the plane wave produces it. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
 
 ### Properties of the Action
 
@@ -316,7 +316,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 - Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the imaginary-time direction and the Euclidean formulation.
 - Companion article *The KMS Condition and the Biquaternion Framework*, for the antiperiodic boundary condition and the Matsubara structure that the fermionic measure carries.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are written with the left and right multiplications of the module, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and with $I_4=L_{e_t}^{\mathrm{pau}}R_{e_t}^{\mathrm{pau}}$ the identity on it:
 

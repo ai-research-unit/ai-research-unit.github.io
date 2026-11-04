@@ -218,7 +218,7 @@ The interpretation is not a derivation, and it does not add a new field content 
 
 5. **Truly neutral composites.** A truly neutral field is one on which $C$ acts without exchanging two states. Is the same true of a *composite* colour singlet, such as a quark–antiquark state in the framework's gauge-invariant sector, and does the division-ring criterion survive the composition?
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 This section is the only place in the article where the gamma matrices appear. They are not a different algebra and no formula above needs them: they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and each gamma *is* one of the five frame cells, the factor $i$ included, so the dictionary below carries no extra phase.
 
@@ -320,7 +320,7 @@ The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}
 | $\Pi\bar\Pi=\pm I$ | The square on a chiral half: $-I$ for $\Pi=\epsilon=i\sigma_2$, so $\xi^{\mathrm{cc}}=-\xi$; the Dirac module obeys $C^{2}=\mathrm{id}$ |
 | $\eta_C=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Module representative of charge conjugation; odd, $\eta_C^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $C[\psi]=-L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\psi^{*}$ | Module form of charge conjugation (CPT article) |
-| $\gamma_\mu$, $\Gamma=\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ | Frame cells of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$; they appear only in *The Gamma Formulation* |
+| $\gamma_\mu$, $\Gamma=\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ | Frame cells of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$; they appear only in *The Legacy Gamma Formulation* |
 | $\eta=R_{\vec e_x}^{\mathrm{axf}}$ | Cell of the transposed (CPT) form of the map; $\eta^{2}=R_{\vec e_x^{2}}^{\mathrm{axf}}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $Ϙ=\pm1,0,\bar{0}$ | Charged (either sign), neutral, truly neutral charge states |
 | $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathrm{Cl}_{0,2}$, the quaternionic real form |

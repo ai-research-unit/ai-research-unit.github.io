@@ -6,7 +6,7 @@
 
 Bhabha scattering is the workhorse of electron–positron colliders: because its small-angle cross section is large, exactly calculable and dominated by the $1/t^2$ photon propagator, it is used as the **luminosity monitor** of the machine. This is the counterpart of the companion article *Møller Scattering in Biquaternionic Form*, and the biquaternion interpretation is largely shared: the amplitude is a product of material-sector currents joined by the framework's photon propagator, and the two structural features the framework owns are the **fermion sign** — here appearing as the relative sign between exchange and annihilation — and **crossing symmetry**, which is the framework's charge conjugation $\mathcal C$ on the doubled spinor module.
 
-The article is organised as follows. The next section sets up the kinematics, the frame cells and the two Dirac equations of the external states, then the two amplitudes with their relative sign. The section after that gives the spin sum, the traces and the cross section with its small-angle behaviour. Then comes the crossing relation to Møller, with the exact check, followed by the biquaternion interpretation, including the annihilation channel's relation to charge conjugation and to bound-state physics. The open questions come next; *The Gamma Formulation* records the Clifford dictionary that the traces use, and the summary, the notation table and the literature close the article.
+The article is organised as follows. The next section sets up the kinematics, the frame cells and the two Dirac equations of the external states, then the two amplitudes with their relative sign. The section after that gives the spin sum, the traces and the cross section with its small-angle behaviour. Then comes the crossing relation to Møller, with the exact check, followed by the biquaternion interpretation, including the annihilation channel's relation to charge conjugation and to bound-state physics. The open questions come next; *The Legacy Gamma Formulation* records the Clifford dictionary that the traces use, and the summary, the notation table and the literature close the article.
 
 ## The Process and Its Two Amplitudes
 
@@ -216,7 +216,7 @@ $$
 =\frac{e^4}{4}\left(\frac{T_t}{t^2}+\frac{T_s}{s^2}-\frac{2T_{ts}}{ts}\right).
 $$
 
-The traces are evaluated from the frame-cell Clifford relations together with the massless on-shell conditions; *The Gamma Formulation* records the identities and the dictionary. The three results are
+The traces are evaluated from the frame-cell Clifford relations together with the massless on-shell conditions; *The Legacy Gamma Formulation* records the identities and the dictionary. The three results are
 
 $$
 \frac14 T_t=2(s^2+u^2),\qquad
@@ -307,7 +307,7 @@ The $s$-channel also connects the free scattering problem to **bound states**. T
 
 ### What the framework supplies and what it does not
 
-The framework supplies the two vertex currents, the photon propagator, the external Fock states, the fermion sign as the antisymmetry of its mode algebra, and charge conjugation as the real structure $\mathcal C$ that relates the exchange and annihilation channels. The trace evaluation is the cell algebra recorded in *The Gamma Formulation*, not a new dynamical input. It does **not** supply the $Z$-exchange contribution or the positronium spectrum. As always, the tree-level result is standard electrodynamics expressed in the framework's variables, and no framework-specific prediction is claimed.
+The framework supplies the two vertex currents, the photon propagator, the external Fock states, the fermion sign as the antisymmetry of its mode algebra, and charge conjugation as the real structure $\mathcal C$ that relates the exchange and annihilation channels. The trace evaluation is the cell algebra recorded in *The Legacy Gamma Formulation*, not a new dynamical input. It does **not** supply the $Z$-exchange contribution or the positronium spectrum. As always, the tree-level result is standard electrodynamics expressed in the framework's variables, and no framework-specific prediction is claimed.
 
 ## Open Questions
 
@@ -323,7 +323,7 @@ The framework supplies the two vertex currents, the photon propagator, the exter
 
 6. **Empirical contact.** The article carries the standard cross section and no framework-specific prediction; the standing disclaimer applies.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 This section fixes the dictionary that the traces above use, and nothing here is needed outside it.
 
@@ -386,7 +386,7 @@ Read over $\mathbb{R}$ rather than $\mathbb{C}$, the cells generate a real Cliff
 
 Bhabha scattering, $e^+e^-\to e^+e^-$, is the tree-level electron–positron process with two diagrams, $t$-channel scattering and $s$-channel annihilation, contributing with a relative negative sign. Its spin-averaged cross section is $(\pi\alpha^2/s)[u^2(1/s+1/t)^2+(t/s)^2+(s/t)^2]$ below the $Z$ scale, equal to $(\pi\alpha^2/s)[(s^2+u^2)/t^2+(t^2+u^2)/s^2+2u^2/(st)]$; the interference term is negative because $st<0$. At small angles the $1/t^2$ term dominates, $d\sigma/d(\cos\theta)\sim2\pi\alpha^2s/t^2$, which is why the process is the luminosity monitor of electron–positron colliders. By crossing symmetry it is the same amplitude as Møller scattering in the permuted Mandelstam variables, term for term.
 
-In the biquaternion framework the amplitude is the contraction of material-sector currents by the quantized photon propagator, in the exchange and annihilation channels. The external states solve the one-sided chiral pair; the two-sided reading replaces the mass by the chirality cell, and the four-component reading is the momentum-cell equation. The two structures the framework owns are the **fermion sign**, which is the antisymmetry of the mode algebra established by the canonical-quantization article, and **charge conjugation**, the real structure $\mathcal C$ on the doubled module that relates the annihilation channel to the exchange channel and the Bhabha process to the Møller process. The $s$-channel annihilation current is the doorway to positronium, which the corpus does not yet treat. The framework supplies the components and the symmetries; the trace evaluation is the cell algebra of *The Gamma Formulation*, while the $Z$ exchange and the bound-state spectrum remain outside its established content, and no framework-specific prediction is claimed.
+In the biquaternion framework the amplitude is the contraction of material-sector currents by the quantized photon propagator, in the exchange and annihilation channels. The external states solve the one-sided chiral pair; the two-sided reading replaces the mass by the chirality cell, and the four-component reading is the momentum-cell equation. The two structures the framework owns are the **fermion sign**, which is the antisymmetry of the mode algebra established by the canonical-quantization article, and **charge conjugation**, the real structure $\mathcal C$ on the doubled module that relates the annihilation channel to the exchange channel and the Bhabha process to the Møller process. The $s$-channel annihilation current is the doorway to positronium, which the corpus does not yet treat. The framework supplies the components and the symmetries; the trace evaluation is the cell algebra of *The Legacy Gamma Formulation*, while the $Z$ exchange and the bound-state spectrum remain outside its established content, and no framework-specific prediction is claimed.
 
 ## Summary of Notation
 

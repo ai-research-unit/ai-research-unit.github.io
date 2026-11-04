@@ -250,7 +250,7 @@ The duality is the exact reason the two-dimensional model has one coupling, and 
 
 5. **The exact solutions.** Closed-form solutions of the Soler model exist, and the massive Thirring model is Bethe-ansatz solvable. Neither has been transcribed into the framework's notation, and it is not known whether the biquaternion form of the equations makes either more transparent.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 This section writes the same cells in the $\gamma$ notation, so that each formula the sources state can be checked against the cell it names. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -352,7 +352,7 @@ The biquaternion interpretation places the channels. The scalar density is the m
 | $\chi_{\mathrm{2D}} = L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell of two dimensions, the product of the two generators |
 | $\sum_\mu\varepsilon_\mu J_\mu K_\mu$ | Metric contraction of two currents |
 | $T_{\mu\nu} = \bar\psi\sigma_{\mu\nu}\psi$ | Tensor bilinear; $\sigma_{0k}\psi = i \vec e_k\psi \vec e_z$, $\sigma_{jk}\psi = i \vec e_j \vec e_k\psi$ for $j\ne k$, and $\sigma_{\mu\mu}=0$ |
-| $\sigma_{\mu\nu}$, $S_{cd}$ | Generators of the Lorentz algebra, $\sigma_{\mu\nu}=2iS_{\mu\nu}$; their commutator form is in *The Gamma Formulation* |
+| $\sigma_{\mu\nu}$, $S_{cd}$ | Generators of the Lorentz algebra, $\sigma_{\mu\nu}=2iS_{\mu\nu}$; their commutator form is in *The Legacy Gamma Formulation* |
 | $\varepsilon_\mu = g_{\mu\mu}$ | Signature sign of the index $\mu$ |
 | $g$ | Self-coupling of the Thirring and Soler models |
 | $\kappa = 8\pi G/c^4$ | Einstein gravitational constant |

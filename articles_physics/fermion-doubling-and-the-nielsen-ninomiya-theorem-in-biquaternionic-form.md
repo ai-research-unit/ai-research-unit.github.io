@@ -210,7 +210,7 @@ The framework supplies a continuum equation and a multivector structure whose na
 
 6. **Empirical contact.** As everywhere, the doubling is a lattice artefact without continuum signature; any framework-level claim must respect that.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are the frame cells of the body, written as single letters; they form a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

@@ -189,7 +189,7 @@ with the signs fixed by $u^{2}=1$. The conjugation $\theta$ is not the identity:
 
 **The physical interpretation.** The Dirac spinor is a vector of the four-dimensional module of $M_4(\mathbb{C})$, not of the biquaternion algebra. The biquaternion algebra carries the even part of the Clifford action, which is the Lorentz transformation of the spinor; the odd part, the frame cells themselves, is what the Dirac equation uses. The biquaternion alone does not carry the Dirac spinor as a Clifford module: its simple left module is two-dimensional over $\mathbb{C}$, while the Dirac spinor is four-dimensional and splits into two copies of it, with the odd cells supplying the maps between the copies. This is the point of the odd sector of the inventory: the missing half is the odd slot, and it is a copy of the biquaternion algebra, not a second algebra.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

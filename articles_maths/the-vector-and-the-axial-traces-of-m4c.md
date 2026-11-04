@@ -186,7 +186,7 @@ $$
 $$
 The axial trace of an element $b$ is not the trace of $L_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$; it is the trace of the product $(-iL_{e_t}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}})\mathsf{M}_4(b)$. For $b=I$ it vanishes; for $b=i$ it is $4i$. The distinction is the reason the axial trace can be nonzero while the trace of the chirality is zero.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

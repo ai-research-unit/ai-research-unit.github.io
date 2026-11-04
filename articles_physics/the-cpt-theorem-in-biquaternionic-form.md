@@ -29,7 +29,7 @@ Each carries one factor of $i$, and naming them $G_\mu$ is what keeps that facto
 $$
 G_0^{2}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad G_1^{2}=G_2^{2}=G_3^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},\qquad G_\mu G_\nu=-G_\nu G_\mu\quad(\mu\ne\nu),
 $$
-which are the Clifford relations of the metric $g=\operatorname{diag}(+1,-1,-1,-1)$. A product of two generators is where $i^{2}=-1$ is spent: the two factors of $i$ give $-1$, and that sign combines with $\vec e_k^{2}=-e_t$ and with $\vec e_j\vec e_k=\pm\vec e_l$ so that the product is again a single cell, this time with no $i$ in it. This is used repeatedly below: the generators themselves are not written out again, only $G_\mu$ and the plain cells $L_aR_b$ that the internal factors need. The section The Gamma Formulation is the only place this article writes gamma symbols, and it uses them for exactly these four cells.
+which are the Clifford relations of the metric $g=\operatorname{diag}(+1,-1,-1,-1)$. A product of two generators is where $i^{2}=-1$ is spent: the two factors of $i$ give $-1$, and that sign combines with $\vec e_k^{2}=-e_t$ and with $\vec e_j\vec e_k=\pm\vec e_l$ so that the product is again a single cell, this time with no $i$ in it. This is used repeatedly below: the generators themselves are not written out again, only $G_\mu$ and the plain cells $L_aR_b$ that the internal factors need. The section The Legacy Gamma Formulation is the only place this article writes gamma symbols, and it uses them for exactly these four cells.
 
 The chirality cell and the volume element are
 $$
@@ -360,7 +360,7 @@ the **complex conjugation** of the algebra element followed by the inner automor
 
 7. **Does the Clifford classification derive the module maps?** The three non-trivial fundamental automorphisms of $\mathrm{Cl}_{n,m}$ are the algebra's three conjugations, and the classification assigns $P$, $T$ and $PT$ to them. On the spinor module the same operations are implemented by the internal cells $\eta_P=G_0$ and $\eta_T=G_1G_3=-L_{\vec e_y}^{\mathrm{axf}}$, of which only the second is even. Whether the module maps can be *read off* the automorphism classification — so that $\eta_P$ and $\eta_T$ are derived rather than matched — is the representation-theoretic step this article does not take. If it can be taken, the correspondences $P\leftrightarrow\star$, $T\leftrightarrow\sim$ become a derivation; if it cannot, the classification remains a structural companion rather than a source.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article that uses them; the bodies above and below are written in the cells. In this frame the generators are the same four cells, with the $i$ written out rather than carried in the name:
 $$

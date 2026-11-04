@@ -124,25 +124,25 @@ c_0=L_{e_t}^{\mathrm{axf}}R_{\,i\vec e_x}^{\mathrm{axf}},\qquad
 c_k=L_{i\vec e_k}^{\mathrm{axf}}R_{\,\vec e_y}^{\mathrm{axf}},\qquad
 i\Omega=L_{e_t}^{\mathrm{axf}}R_{\,-i\vec e_z}^{\mathrm{axf}},
 $$
-that is the pairs $(a,b)=(e_t,i\vec e_x)$, $(i\vec e_k,\vec e_y)$ and $(e_t,-i\vec e_z)$: four coordinate cells and the chirality, which is not a coordinate cell and so carries no index $\mu$. In matrix form $L_{a}R_{b}=\mathsf M_4^L(a)\mathsf M_4^R(b)$, so each of the five is a product of a left regular matrix with a right one. The corpus's $M_4(\mathbb C)_{\mathbb{B},L}$ model supplies the left factor; the right factor is its transposed mirror.
+that is the pairs $(a,b)=(e_t,i\vec e_x)$, $(i\vec e_k,\vec e_y)$ and $(e_t,-i\vec e_z)$: four coordinate cells and the chirality, which is not a coordinate cell and so carries no index $\mu$. In matrix form $L_{a}R_{b}=\mathsf M_{4L}(a)\mathsf M_{4R}(b)$, so each of the five is a product of a left regular matrix with a right one. The corpus's $M_4(\mathbb C)_{\mathbb{B},L}$ model supplies the left factor; the right factor is its transposed mirror.
 
 **Comparison with the corpus's $M_4(\mathbb C)_{\mathbb{B},L}$ tables.** On the coefficient basis the corpus tabulates the left regular matrices
 $$
-\mathsf M_4^L(b)=\bigl(b e_t,\ b \vec e_x,\ b \vec e_y,\ b \vec e_z\bigr)_{\text{columns}},
+\mathsf M_{4L}(b)=\bigl(b e_t,\ b \vec e_x,\ b \vec e_y,\ b \vec e_z\bigr)_{\text{columns}},
 $$
 which are real for real $b$. None of the five is one of them. The Peirce basis shows why. There
 $$
-\mathsf M_4^L(b)=\mathrm{diag}\bigl(\mathsf M_2(b),\mathsf M_2(b)\bigr),
+\mathsf M_{4L}(b)=\mathrm{diag}\bigl(\mathsf M_2(b),\mathsf M_2(b)\bigr),
 $$
 so the left action preserves the two chiral planes and acts by the same block on each. $iR_{\vec e_x}^{\mathrm{axf}}$ and $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ exchange the two planes, and $-iR_{\vec e_z}^{\mathrm{axf}}$ acts on them with opposite signs. The left regular image cannot contain them.
 
 The five use the right factor:
 $$
-iR_{\vec e_x}^{\mathrm{axf}}=i\mathsf M_4^R(\vec e_x),\qquad
-iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i\mathsf M_4^L(\vec e_k)\mathsf M_4^R(\vec e_y),\qquad
--iR_{\vec e_z}^{\mathrm{axf}}=-i\mathsf M_4^R(\vec e_z).
+iR_{\vec e_x}^{\mathrm{axf}}=i\mathsf M_{4R}(\vec e_x),\qquad
+iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i\mathsf M_{4L}(\vec e_k)\mathsf M_{4R}(\vec e_y),\qquad
+-iR_{\vec e_z}^{\mathrm{axf}}=-i\mathsf M_{4R}(\vec e_z).
 $$
-The time and chirality cells are pure right matrices; the spatial ones are products. The factor $i$ is the scalar of $\mathbb B$, which multiplies the matrix. In the Peirce basis the contrast is one line: $\mathsf M_4^L(i\vec e_x)=\mathrm{diag}(\sigma_x,\sigma_x)$ acts on each chiral plane separately, while $iR_{\vec e_x}^{\mathrm{axf}}$ exchanges the two blocks. Both are $4\times4$ and both use $\sigma_x$.
+The time and chirality cells are pure right matrices; the spatial ones are products. The factor $i$ is the scalar of $\mathbb B$, which multiplies the matrix. In the Peirce basis the contrast is one line: $\mathsf M_{4L}(i\vec e_x)=\mathrm{diag}(\sigma_x,\sigma_x)$ acts on each chiral plane separately, while $iR_{\vec e_x}^{\mathrm{axf}}$ exchanges the two blocks. Both are $4\times4$ and both use $\sigma_x$.
 
 **The matrix replacement.** The block action displayed at the top is already the matrix formulation. Because $\mathbb B\cong\mathsf M_2(\mathbb C)$, each entry $e_t$ or $i\vec e_k$ is a $2\times2$ complex matrix, and the $2\times2$ block matrix over $\mathbb B$ is a $4\times4$ complex matrix with blocks $I_2$ and $\sigma_k$. This uses the $M_2(\mathbb C)$ model as the entry. The $M_4(\mathbb C)_{\mathbb{B},L}$ model is a different embedding of the same algebra: the left regular image, block diagonal in the Peirce basis. The five cells live in the full $M_4(\mathbb C)$, not in that image. So the replacement is possible on one condition: it must use both regular representations. The $2\times2$ block form over $\mathsf M_2(\mathbb C)$ is the full $M_4(\mathbb C)$, which contains both.
 
@@ -666,7 +666,7 @@ the two blocks identical, each with determinant $m^2-(E+B)(E-B)=m^2-p^2$ and eig
 
 **What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity blocks with equal spectra and unequal contents. The entries of a block depend on the choice of basis inside an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the operator $\Xi$ is undefined: the symbol is $E R_{i\vec e_x}^{\mathrm{axf}}-m$, the spin label is the fixed Peirce index and not the helicity, and the block decomposition is that of Problem 5. For a spacelike momentum $p^2<0$ the two eigenvalues $\pm\sqrt{p^2}$ are imaginary and the block determinant $m^2+|p^2|$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the determinant identity still holds, but the massless block $\slashed p_\pm$ is nilpotent there and the massive block keeps the determinant $m^2$: this is the exceptional case of the massless wall.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are the five cells written as matrices; the body writes the cells themselves.
 

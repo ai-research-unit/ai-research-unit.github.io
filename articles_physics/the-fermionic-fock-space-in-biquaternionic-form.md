@@ -14,7 +14,7 @@ $$
 
 and that this is not an extra assumption but the reflection in the state space of two facts already fixed by the parents: the one-particle space is a module of complex dimension two, and the bracket is the anticommutator, which the spin–statistics companion fixes by the spin. The two together force the exterior algebra, occupation numbers $0$ and $1$, and the Lorentz decomposition $0\oplus\tfrac12\oplus 0$ over the two spin states of one momentum.
 
-**Notation, once.** The imaginary unit is central and has $i^2=-1$; it is the only imaginary unit in the article, and wherever two of them meet in a product they are reduced before the formula is read. The scalar part $\mathrm{Sc}\,\tilde Q=Q_t$ is the coefficient of $e_t$, and $\operatorname{Tr}$ is the trace of the $2\times2$ image, with $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q$. The natural conjugation $\tilde Q^{\natural}$ reverses the order of a product and keeps $i$ fixed, so $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$; the star is the full conjugation, natural and coefficient conjugation together. The body writes operators on $S$ as left multiplications $L_{\tilde Q}\psi=\tilde Q\psi$; the two-sided cells $L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, enter only where a right action is needed. The gamma symbols are frame names of the same cells and appear only in the closing section *The Gamma Formulation*.
+**Notation, once.** The imaginary unit is central and has $i^2=-1$; it is the only imaginary unit in the article, and wherever two of them meet in a product they are reduced before the formula is read. The scalar part $\mathrm{Sc}\,\tilde Q=Q_t$ is the coefficient of $e_t$, and $\operatorname{Tr}$ is the trace of the $2\times2$ image, with $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q$. The natural conjugation $\tilde Q^{\natural}$ reverses the order of a product and keeps $i$ fixed, so $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$; the star is the full conjugation, natural and coefficient conjugation together. The body writes operators on $S$ as left multiplications $L_{\tilde Q}\psi=\tilde Q\psi$; the two-sided cells $L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, enter only where a right action is needed. The gamma symbols are frame names of the same cells and appear only in the closing section *The Legacy Gamma Formulation*.
 
 The article develops five things.
 
@@ -291,7 +291,7 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$ on $\mathb
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the fermionic bracket and the external grading that force the antisymmetric state space.
 - Companion article *The KMS Condition and the Biquaternion Framework*, for the thermal state and the passage of the finite-algebra form to the field's Fock space.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gamma symbols are used only in this section; every other section writes the same objects as cells. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$; on the regular module a left multiplication is the cell $L_aR_{e_t}^{\mathrm{pau}}$, so the body's $L_{\tilde Q}$ are the cells whose right factor is the unit. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
 

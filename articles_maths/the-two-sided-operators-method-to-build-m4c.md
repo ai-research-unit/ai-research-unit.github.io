@@ -494,7 +494,7 @@ $$
 
 **The full computation.** *The Coefficient Matrix of a Two-Sided Operator: A Worked Computation* carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gamma frame is one choice inside the method's basis; the body writes the cells.
 

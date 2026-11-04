@@ -435,7 +435,7 @@ the curvature constant and the surface umbilic at every point, and the latitude 
 
 **Proof.** The frame is the sandwich of the generators by the displayed rotor, which is the composition of a rotation of $\phi$ about $\vec e_z$ and one of $\theta$ about the moved second axis; the connection is $2r^{\dagger}\mathrm dr$ expanded in the two parameters; the two curvatures follow from the formulas of the Gaussian and mean curvature with $\Delta_0=R^2\sin\theta$; the geodesic curvature is the third component of the connection along the curve, as in the geodesic theorem.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are the grade-one units of the biquaternion algebra written as Clifford generators in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\gamma_\mu=i\vec e_\mu$, not a different algebra; the body writes $i\vec e_\mu$.
 

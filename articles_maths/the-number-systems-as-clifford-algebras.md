@@ -184,7 +184,7 @@ the constructions of the complex octonionic chain algebra and of the split bioct
 
 **Remark (the pattern).** The first and third examples are the same statement at the two rungs $\mathbb{C}\mathrm{l}_2$ and $\mathbb{C}\mathrm{l}_6$: a split system has an odd complex chain dimension, and its chain algebra doubles, whereas the definite system's chain algebra is even-dimensional and simple. The doubling is the algebraic content of a pair of chiralities, and it is the reason the split systems, rather than the biquaternion algebra, are the natural carriers of such a pair.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
 

@@ -444,7 +444,7 @@ The transformation, the generator $S_1$, the leading Hamiltonian $iR_{\vec e_x}^
 
 The transformation was constructed here with the large term being the mass. If an external potential dominates, the same algorithm is applied with a different even large term, and the generator changes accordingly; the algebra reads this as a different choice of frame. The choice of frame is the physical input, and the rest is the rotation that aligns the odd part with it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article that uses them; every other statement is written in cells.
 
@@ -598,7 +598,7 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $iL_{\vec e_l}^{\mathrm{axf}}$ | Spin cell: left multiplication by $i\vec e_l$; $(iL_{\vec e_l}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, block-wise $\sigma_l$ |
 | $-iR_{\vec e_z}^{\mathrm{axf}}=i\,\omega$, $\omega=(iR_{\vec e_x}^{\mathrm{axf}})(iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})(iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}})=-L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Chirality cell; $(-iR_{\vec e_z}^{\mathrm{axf}})^2=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ |
 | $ϙ$ | Charge of the field; $A_\mu=(A_0,-\vec A)$ |
-| $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric; used only in *The Gamma Formulation* |
+| $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric; used only in *The Legacy Gamma Formulation* |
 | $\mathcal{D}=i\sum_\mu\bigl(iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}\bigr)\partial/\partial x_\mu$ | Dirac operator; $\mathcal{D}^2=\Box$ |
 | $H = iR_{\vec e_x}^{\mathrm{axf}}mc^2 + O + \mathcal{E}$ | Dirac Hamiltonian, odd/even split |
 | $O = c\sum_kL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}\pi_k$ | Odd (frame-anticommuting) part |

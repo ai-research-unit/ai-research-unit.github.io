@@ -245,7 +245,7 @@ What survives is a relation of *scale and phase*, not of identity. The mass sets
 
 The Zitterbewegung is usually introduced as a property of the electron, and a [companion article on the electron in biquaternionic form](the-electron-in-biquaternionic-form.html) has since been written in this group. Nothing in the present article depends on it. If the sector decomposition is to acquire physical content, the electron article is the natural place to look: the electron's rest energy is the scale of both the sector rotation and the trembling, so any attempt to identify an observable with the informational sector would have to pass through that scale. The present negative result is a constraint on that attempt, not a substitute for it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of the cell algebra $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are recorded here for comparison with the standard Dirac notation; the derivation above uses only the cells $\beta$ and $\alpha_k$.
 

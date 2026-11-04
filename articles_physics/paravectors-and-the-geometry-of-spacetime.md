@@ -334,7 +334,7 @@ For **non-collinear** boosts the product $\tilde V_{\mathrm p,BA}\tilde V_{\math
 
 The one genuinely new object in the source's programme is not a change of basis at all: the **electromagnetic plane wave as a rotation and a dilation**, an identity of the null cone treated in its own article (*The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*). The paravector reading is what makes that identity one line of algebra.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas of this section are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and they are **cells**, not elements. The section of the same name in *The Number Systems as Clifford Algebras* uses the word for the **elements** $i\vec e_k$; here it names the cells that represent those elements on the Dirac module. The module is what tells the two apart, and the cells act on it while the elements are multiplied. In the corpus's notation they are
 

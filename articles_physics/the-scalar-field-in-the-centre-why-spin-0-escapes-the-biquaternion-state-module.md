@@ -364,7 +364,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 6. **Why the algebra admits only spin $0$ and one-half.** The module carries spin $\tfrac{1}{2}$ and the algebra under rotations carries spin $0$ and $1$; there is no simple module of higher spin. The general question — which spins the biquaternion algebra admits as elementary representations — is the subject of a separate article in the series and is not answered here.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The body writes no $\gamma$: the letter appears only in this closing dictionary.
 
@@ -408,7 +408,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of $\bar{\cdot}$ |
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Primitive Hermitian idempotent, $\vec u$ a unit pure real quaternion |
-| $L_a,\,R_b$ | Left and right multipliers, $L_a\psi=a\psi$ and $R_b\psi=\psi b$; the cells of *The Gamma Formulation* |
+| $L_a,\,R_b$ | Left and right multipliers, $L_a\psi=a\psi$ and $R_b\psi=\psi b$; the cells of *The Legacy Gamma Formulation* |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module (minimal left ideal) |
 | $\psi$ | Spinor, an element of the state module |
 | $\tilde S_\mu=\tfrac{i}{2}\vec e_\mu$ | Rotation generators; $\tilde S_1^2+\tilde S_2^2+\tilde S_3^2=\tfrac{3}{4}e_t$ on the module |

@@ -14,7 +14,7 @@ $$
 
 so that the tensor product of the material vector with the spinor contains a spin-$\tfrac32$ piece and a spin-$\tfrac12$ piece, and the trace constraint removes the latter. The same pattern appears for the graviton, where the symmetric square of the material triplet decomposes as $0\oplus2$ with $6=1+5$, and the trace-free part is the spin-two carrier of dimension five. In both cases the antisymmetrized kinetic structure carries the top spin and a trace removes the lower component; for the half-integer field the trace is taken with the frame cells, and it is the constraint that makes the field irreducible.
 
-The article is organized as follows. The field and its cell are fixed first, and every display is written in the cells as their two multipliers; three composites are then named once — the pair operator, its Fourier symbol, and the trace spinor — so that no display of the body repeats a sum. The gamma dictionary is collected once, in *The Gamma Formulation* at the end, so that no display of the body needs a gamma. The chiral pair, the constraint, and the consequence that transversality follows from the two are stated next, and the projector onto the traceless part is constructed and verified. The gauge structure of the massless case and the second-class structure of the massive case are contrasted. The canonical quantization is then carried out: momenta, Dirac brackets, anticommutators, the mode expansion, and the fermionic Fock space. The propagator and its gauge fixing are recorded, the biquaternion interpretation of the decomposition is developed, and the article closes with the accounting of what the algebra supplies and what is imported.
+The article is organized as follows. The field and its cell are fixed first, and every display is written in the cells as their two multipliers; three composites are then named once — the pair operator, its Fourier symbol, and the trace spinor — so that no display of the body repeats a sum. The gamma dictionary is collected once, in *The Legacy Gamma Formulation* at the end, so that no display of the body needs a gamma. The chiral pair, the constraint, and the consequence that transversality follows from the two are stated next, and the projector onto the traceless part is constructed and verified. The gauge structure of the massless case and the second-class structure of the massive case are contrasted. The canonical quantization is then carried out: momenta, Dirac brackets, anticommutators, the mode expansion, and the fermionic Fock space. The propagator and its gauge fixing are recorded, the biquaternion interpretation of the decomposition is developed, and the article closes with the accounting of what the algebra supplies and what is imported.
 
 - Companion article *The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form*, for the classical equation, the chiral pair, and the rest-frame reduction.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the spinor carrier as a left ideal and the Clifford structure.
@@ -83,7 +83,7 @@ $$
 \bigl(\mathbb{D}-m\bigr)\psi_\mu=0 ,
 $$
 
-with the operator of the preceding paragraph. The two imaginary units — the one of the frame cell and the one the Dirac operator carries — are already multiplied to $-1$ inside $\mathbb{D}$, so the display carries no double $i$; the minus sign of $\mathbb{D}$ *is* that product. What remains is a plain two-sided contraction. The single equation is the transcription of the pair, not a second equation: the operator multiplies on both sides, and its action on the two chiral halves is the pair above. The companion article states the same equivalence from the classical side, and *The Gamma Formulation* reads $\mathbb{D}$ as $i\gamma\cdot\partial$.
+with the operator of the preceding paragraph. The two imaginary units — the one of the frame cell and the one the Dirac operator carries — are already multiplied to $-1$ inside $\mathbb{D}$, so the display carries no double $i$; the minus sign of $\mathbb{D}$ *is* that product. What remains is a plain two-sided contraction. The single equation is the transcription of the pair, not a second equation: the operator multiplies on both sides, and its action on the two chiral halves is the pair above. The companion article states the same equivalence from the classical side, and *The Legacy Gamma Formulation* reads $\mathbb{D}$ as $i\gamma\cdot\partial$.
 
 The field is irreducible only with the **trace constraint**
 
@@ -320,7 +320,7 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 6. **Empirical content.** As everywhere, whether any of this yields a prediction distinguishing the framework from standard higher-spin theory. The transcription given here does not.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are the frame cells of the body written as single letters; they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -445,7 +445,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=(\mathbb{D}_p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
 | $G_{\mu\nu}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level 3); the $ict'$ metric is $\eta=-g$ |
-| $\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | The gammas of *The Gamma Formulation*: the same frame cells written as letters; $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
+| $\gamma_\mu:=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, $\gamma_5:=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | The gammas of *The Legacy Gamma Formulation*: the same frame cells written as letters; $\gamma_0=iR_{\vec e_x}^{\mathrm{axf}}$, $\gamma_k=iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ |
 
 ## Further Reading
 

@@ -327,7 +327,7 @@ The interpretation is labeled and its boundary is stated. The S-matrix of this a
 
 7. **Empirical content.** As with the rest of the framework, whether any of this yields a prediction distinguishing it from standard quantum field theory is the unanswered question. Nothing in the S-matrix construction changes that.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 

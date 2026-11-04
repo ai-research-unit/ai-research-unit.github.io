@@ -157,7 +157,7 @@ The differential-geometric self-adjointness is the analytic shadow of the algebr
 
 **Example (the twisted operator and the vanishing).** For a line bundle $L$ of negative degree over a Riemann surface of genus $g$ the twisted operator has vanishing kernel, and its index is by Riemann–Roch the Euler characteristic $\deg L+1-g$; the adjoint's kernel is therefore of dimension $g-1-\deg L$. The example shows the chiral asymmetry of the two kernels and the role of the adjoint in computing the index.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

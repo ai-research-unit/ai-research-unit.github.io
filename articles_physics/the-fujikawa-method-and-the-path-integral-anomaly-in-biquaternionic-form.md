@@ -301,7 +301,7 @@ so the axial charge transported in a background is twice the index. The index is
 
 4. **The $\theta$ dependence and the vacuum.** The anomaly makes the vacuum energy depend on a topological angle, and the resolution of the $\mathrm{U}(1)_A$ problem and the strong-CP problem involve that angle. Both belong to the general gauge apparatus and to the spin-$0$ subcategory; this article states the fermion-sector divergence and stops.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The body of this article is written in cells. This section is the only place where the $\gamma$ frame is used; the gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

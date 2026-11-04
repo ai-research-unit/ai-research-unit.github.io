@@ -2,7 +2,7 @@
 
 ## Introduction
 
-One biquaternion can be written in five standard matrix-shaped ways, and the five divide into two kinds. The **element representations** answer what the element is: the four-vector of complex coefficients, the $2\times2$ complex matrix $\mathsf{M}_2(\tilde Q)$, and the $4\times4$ left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$. The **operator representations** answer what the element does: the $2\times2$ congruence $X\mapsto \mathsf{M}_2(\tilde Q)X\mathsf{M}_2(\tilde Q)^{\dagger}$ and the $4\times4$ sandwich. The first kind is linear in the element; the second is quadratic. That difference is the whole content of the article.
+One biquaternion can be written in five standard matrix-shaped ways, and the five divide into two kinds. The **element representations** answer what the element is: the four-vector of complex coefficients, the $2\times2$ complex matrix $\mathsf{M}_2(\tilde Q)$, and the $4\times4$ left regular matrix $\mathsf{M}_{4L}(\tilde Q)$. The **operator representations** answer what the element does: the $2\times2$ congruence $X\mapsto \mathsf{M}_2(\tilde Q)X\mathsf{M}_2(\tilde Q)^{\dagger}$ and the $4\times4$ sandwich. The first kind is linear in the element; the second is quadratic. That difference is the whole content of the article.
 
 The physical stake is a distinction that is easy to lose. A state is carried by an element representation, a transformation by an operator representation. A spinor is a coordinate on a Peirce carrier, which in the $2\times2$ matrix model is a two-component column on which the $2\times2$ matrix acts; a four-vector is an element of the material sector on which the sandwich acts. Reading the determinant of the regular matrix as the norm, or the sandwich as a linear map of its parameter, or the doubled regular picture as two particles, are the three standard errors that the distinction prevents.
 
@@ -36,7 +36,7 @@ The five pictures are five images of the same eight real numbers. The table reco
 | --- | --- | --- | --- | --- |
 | Four-vector | the column $Q$ | $\mathbb{C}^4$ | linear, the identity | the coordinates and the sectors |
 | $2\times2$ element | $\mathsf{M}_2(\tilde Q)$ | $\mathbb{C}^2$ | linear | the spinor, the trace and the determinant |
-| $4\times4$ left regular | $\mathsf{M}_4^{L}(\tilde Q)$ | $\mathbb{B}$ | linear | the element acting on the algebra |
+| $4\times4$ left regular | $\mathsf{M}_{4L}(\tilde Q)$ | $\mathbb{B}$ | linear | the element acting on the algebra |
 | $2\times2$ operator | $X\mapsto M X M^{\dagger}$ | $M_2(\mathbb{C})$ | quadratic | the rank, the positivity and the collapse |
 | $4\times4$ operator | $X\mapsto \tilde Q X\tilde Q^{*}$ | $\mathbb{B}$ | quadratic | the spectrum, the determinant and the rank |
 
@@ -105,26 +105,26 @@ The matrix acts on a two-component column. That column is the **spinor**, and th
 
 ### The $4\times4$ Left Regular Element
 
-The left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the axis-free frame of *Matrix Representations Conventions*, §*The 4×4 Matrix Representation*. Its invariants are the doubled invariants:
+The left regular matrix $\mathsf{M}_{4L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the axis-free frame of *Matrix Representations Conventions*, §*The 4×4 Matrix Representation*. Its invariants are the doubled invariants:
 
 $$
-\det\mathsf{M}_4^{L}(\tilde Q)=N^2, \qquad \operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t.
+\det\mathsf{M}_{4L}(\tilde Q)=N^2, \qquad \operatorname{Tr}\mathsf{M}_{4L}(\tilde Q)=4Q_t.
 $$
 
 In that frame the matrix has two equal blocks,
 
 $$
-\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),
+\mathsf{M}_{4L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),
 $$
 
 and the two diagonal blocks are the same $\mathsf{M}_2(\tilde Q)$, each with trace $2Q_t$ and determinant $N$. The two blocks are the two column indices; left multiplication preserves each of them, which is why the two blocks are equal and not merely block-diagonal.
 
 The determinant is a **volume**, not the norm. On a four-position it is $s^4$, on a four-velocity $c^4$, on an on-shell four-momentum $m^4c^4$, and on a lightlike four-vector it vanishes. The square does not change the zero set, so the light-cone statement survives the doubling, but it changes the degree: an identity that holds to the first power of $N$ in the $2\times2$ picture holds to the second power here.
 
-The right regular matrix $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix of $X\mapsto X\tilde Q$. In the same frame
+The right regular matrix $\mathsf{M}_{4R}(\tilde Q)$ is the matrix of $X\mapsto X\tilde Q$. In the same frame
 
 $$
-\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2,
+\mathsf{M}_{4R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2,
 $$
 
 so it is not the transpose of the left matrix, which is $I_2\otimes\mathsf{M}_2(\tilde Q)^{\mathsf T}$; the two are related by the transpose followed by the flip of the two factors. The left copy preserves the two column indices and the right copy is the only one that can move between them. This is the structural reason the mass term is a right multiplication, and it is read in the operator article.
@@ -142,7 +142,7 @@ $$
 It is linear in the argument $X$ and quadratic in the parameter $\tilde Q$. In the $2\times2$ picture it is the congruence $X\mapsto M X M^{\dagger}$; in the $4\times4$ picture it is the product of the two regular maps,
 
 $$
-\boxed{\;\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\,\mathsf{M}_4^{R}(\tilde Q^{*})\;}.
+\boxed{\;\operatorname{H}_{\tilde Q}=\mathsf{M}_{4L}(\tilde Q)\,\mathsf{M}_{4R}(\tilde Q^{*})\;}.
 $$
 
 The sandwich is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but it is not linear, and on the unit group it is not faithful: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, so every central phase of modulus one gives the same operator. It is a quadratic map that descends to a faithful representation of the unit group modulo its central phase circle, not a linear one.
@@ -161,7 +161,7 @@ The congruence is a completely positive map with a single Kraus operator. It is 
 
 ### The $4\times4$ Operator
 
-On the algebra the same sandwich is the matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$. If $\mathsf{M}_2(\tilde Q)$ has eigenvalues $\lambda_1,\lambda_2$, the operator has the four eigenvalues
+On the algebra the same sandwich is the matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_{4L}(\tilde Q)\mathsf{M}_{4R}(\tilde Q^{*})$. If $\mathsf{M}_2(\tilde Q)$ has eigenvalues $\lambda_1,\lambda_2$, the operator has the four eigenvalues
 
 $$
 \lambda_1\bar\lambda_1,\quad \lambda_1\bar\lambda_2,\quad \lambda_2\bar\lambda_1,\quad \lambda_2\bar\lambda_2,
@@ -345,7 +345,7 @@ so that $R_J$ exchanges the two columns and $R_J^2=\mathrm I$. The element has t
 
 | Named object | Four-vector | $2\times2$ element | $4\times4$ left regular | Sandwich operator |
 | --- | --- | --- | --- | --- |
-| The element | $Q\in\mathbb{C}^4$ | $M\in M_2(\mathbb{C})$ | $M_4^{L}\in M_4(\mathbb{C})$ | $\operatorname{H}_{\tilde Q}\in\operatorname{End}\mathbb{B}$ |
+| The element | $Q\in\mathbb{C}^4$ | $M\in M_2(\mathbb{C})$ | $M_{4L}\in M_4(\mathbb{C})$ | $\operatorname{H}_{\tilde Q}\in\operatorname{End}\mathbb{B}$ |
 | Identity | $(1,0,0,0)$ | $\mathrm{I}_2$ | $\mathrm{I}_4$ | $\mathrm{id}$ |
 | Scalar part | $Q_t$ | $\tfrac12\operatorname{Tr}$ | $\tfrac14\operatorname{Tr}$ | — |
 | Weight | — | — | — | $\tfrac14\operatorname{Tr}=\lvert Q_t\rvert^2$ |
@@ -400,8 +400,8 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 | $Q_\mu$, $Q_t$, $\vec Q$ | the four complex coefficients, the scalar coefficient and the vector part |
 | $N=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm, central and multiplicative |
 | $\mathsf{M}_2(\tilde Q)$ | the $2\times2$ matrix, $\operatorname{Tr}=2Q_t$, $\det=N$ |
-| $\mathsf{M}_4^{L}(\tilde Q)$ | the left regular matrix, $\operatorname{Tr}=4Q_t$, $\det=N^2$ |
-| $\mathsf{M}_4^{R}(\tilde Q)$ | the right regular matrix |
+| $\mathsf{M}_{4L}(\tilde Q)$ | the left regular matrix, $\operatorname{Tr}=4Q_t$, $\det=N^2$ |
+| $\mathsf{M}_{4R}(\tilde Q)$ | the right regular matrix |
 | $\operatorname{H}_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}$ | the sandwich, the two-sided operator |
 | $L_{\tilde Q}(X)=\tilde Q X$, $R_{\tilde Q}(X)=X\tilde Q$ | the left and right multiplications |
 | $T^{\approx}$ | the associate, the adjoint for $\langle X,Y\rangle=\operatorname{Sc}(XY)$ |

@@ -87,7 +87,7 @@ C_t(\psi_L,\psi_R)=(\psi_R,\psi_L), \qquad
 C_k(\psi_L,\psi_R)=(\sigma_k\psi_R,\,-\sigma_k\psi_L),
 $$
 
-where $\sigma_k=\mathsf{M}_2(i\vec e_k)$; the block arrays of the five cells are recorded in *The Gamma Formulation*.
+where $\sigma_k=\mathsf{M}_2(i\vec e_k)$; the block arrays of the five cells are recorded in *The Legacy Gamma Formulation*.
 
 **The chiral pair.** The dynamics is the **one-sided** chiral pair of the parent article: two equations, one per chirality,
 
@@ -159,7 +159,7 @@ $$
 \left(i\frac{\partial}{\partial t'}+D_3\right)F - mi\,\bar F\,\vec e_z = 0, \qquad D_3=\sum_k\vec e_k\frac{\partial}{\partial Q_k},
 $$
 
-in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by $\vec e_z$. The two are related by the dictionary and are not the same operator: the mass of the pair is a scalar coupling of $S$ to $\bar S$; the mass of the two-sided equation is a conjugation together with a spatial direction. Chirality is why the second side is needed at all: left multiplication preserves each chiral half, so no left multiplication, and no sum of left multiplications, carries one chirality into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression. The chirality of the two-sided equation is the chirality cell of the frame, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which represents the central grading of the complexification on $\Delta$; the cell is recorded in *The Gamma Formulation*.
+in which the derivative acts from the left, the coefficient conjugation $\bar{\cdot}$ acts with no side, and the mass term ends in a right multiplication by $\vec e_z$. The two are related by the dictionary and are not the same operator: the mass of the pair is a scalar coupling of $S$ to $\bar S$; the mass of the two-sided equation is a conjugation together with a spatial direction. Chirality is why the second side is needed at all: left multiplication preserves each chiral half, so no left multiplication, and no sum of left multiplications, carries one chirality into the other. The pair is the definition; the two-sided equation is its single-field compression, and the conjugation is the price of that compression. The chirality of the two-sided equation is the chirality cell of the frame, $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, which represents the central grading of the complexification on $\Delta$; the cell is recorded in *The Legacy Gamma Formulation*.
 
 Three conjugations must not be confused. The coefficient conjugation $\tilde{\Psi}\mapsto\bar{\tilde{\Psi}}$ is the antilinear map that relates the defining module $S$ to its conjugate $\bar{S}$; the Hermitian star $\tilde{\Psi}^{*}=\bar{\tilde{\Psi}}^{\,\natural}$ is its composition with the quaternion conjugation; and the parent's anti-Hermitian conjugation $\tilde{\Psi}^{\flat} = -\tilde{\Psi}^{*}$ is the algebra's real structure, with fixed space $\mathbb{M}_-$. None of the three is the mass. The exercise therefore treats the mass term in the explicit Dirac module, where it is unambiguous.
 
@@ -416,7 +416,7 @@ Three points arose where the parent either leaves a definition to convention or 
 
 A fourth point, the biquaternion (ideal) form of the symplectic pairing, is the parent's open question 3; the exercise uses the matrix-coordinate form throughout, which is the form the parent defines.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

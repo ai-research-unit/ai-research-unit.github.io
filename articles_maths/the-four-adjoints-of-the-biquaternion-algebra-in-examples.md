@@ -129,7 +129,7 @@ $F^{\ast}$ being the adjoint for the positive definite Hermitian form $\langle\c
 The example works one operator $F=L_{\tilde Q_6}R_{\tilde Q_3}$ with $\tilde Q_6=e_t+2\vec e_x$ and $\tilde Q_3=e_t+i\vec e_z$ through all four adjoints. The matrices are written in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the columns being the images of the four units.
 
 $$
-F=\mathsf{M}_4(\tilde Q_6)\mathsf{M}_4^{R}(\tilde Q_3)=
+F=\mathsf{M}_{4L}(\tilde Q_6)\mathsf{M}_{4R}(\tilde Q_3)=
 \begin{pmatrix}
 1&-2&-2i&-i\\
 2&1&i&-2i\\
@@ -137,7 +137,7 @@ F=\mathsf{M}_4(\tilde Q_6)\mathsf{M}_4^{R}(\tilde Q_3)=
 i&-2i&2&1
 \end{pmatrix},
 \qquad
-F^{\approx}=\mathsf{M}_4(\tilde Q_3)\mathsf{M}_4^{R}(\tilde Q_6)=
+F^{\approx}=\mathsf{M}_{4L}(\tilde Q_3)\mathsf{M}_{4R}(\tilde Q_6)=
 \begin{pmatrix}
 1&-2&2i&-i\\
 2&1&-i&-2i\\
@@ -146,7 +146,7 @@ i&-2i&-2&1
 \end{pmatrix},
 $$
 $$
-F^{\natural}=\mathsf{M}_4(\tilde Q_6^{\natural})\mathsf{M}_4^{R}(\tilde Q_3^{\natural})=
+F^{\natural}=\mathsf{M}_{4L}(\tilde Q_6^{\natural})\mathsf{M}_{4R}(\tilde Q_3^{\natural})=
 \begin{pmatrix}
 1&2&-2i&i\\
 -2&1&-i&-2i\\
@@ -154,7 +154,7 @@ F^{\natural}=\mathsf{M}_4(\tilde Q_6^{\natural})\mathsf{M}_4^{R}(\tilde Q_3^{\na
 -i&-2i&-2&1
 \end{pmatrix},
 \qquad
-F^{\ast}=\mathsf{M}_4(\tilde Q_6^{\ast})\mathsf{M}_4^{R}(\tilde Q_3^{\ast})=
+F^{\ast}=\mathsf{M}_{4L}(\tilde Q_6^{\ast})\mathsf{M}_{4R}(\tilde Q_3^{\ast})=
 \begin{pmatrix}
 1&2&2i&-i\\
 -2&1&i&2i\\
@@ -163,7 +163,7 @@ i&2i&-2&1
 \end{pmatrix},
 $$
 $$
-F^{\natural\ast}=\mathsf{M}_4(\bar{\tilde Q_3})\mathsf{M}_4^{R}(\bar{\tilde Q_6})=
+F^{\natural\ast}=\mathsf{M}_{4L}(\bar{\tilde Q_3})\mathsf{M}_{4R}(\bar{\tilde Q_6})=
 \begin{pmatrix}
 1&-2&-2i&i\\
 2&1&i&2i\\

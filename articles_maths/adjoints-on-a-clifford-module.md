@@ -283,7 +283,7 @@ more, the symbol of the differential operator and not the operator itself; the p
 to the other is the spectral theorem, and the two adjoints distinguished in this article are the two
 senses in which that symbol is self-adjoint.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

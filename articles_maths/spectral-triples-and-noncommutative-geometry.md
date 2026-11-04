@@ -181,7 +181,7 @@ is a spectral triple, the **almost commutative** geometry. Its dimension spectru
 
 **Remark.** The finite examples show that the theory is non-vacuous in degree zero and that the metric information can be entirely discrete. They also exhibit the two roles of the operator: as the metric datum through the distance formula, and as the $K$-homology class through the index pairing. In the almost commutative case both roles are combined, and the operator is the sum of the geometric operator of $M$ and the internal operator of the finite factor.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

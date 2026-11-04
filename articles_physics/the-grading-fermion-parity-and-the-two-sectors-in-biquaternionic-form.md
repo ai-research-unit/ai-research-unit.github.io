@@ -220,7 +220,7 @@ $$
 
 the Hermitian sandwich by the bosonic element $\vec e_z=L_{\vec e_z}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$: two fermionic steps have composed to a bosonic one, the reflection signs have cancelled in the product, and no correction factor is needed because the sign was never in the operator. The composite is a rotation by a quaternion unit, and the parity of the number of factors is the $\mathbb{Z}/2$ behind the split of $O(1,3)$ from $SO(1,3)$.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

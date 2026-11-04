@@ -148,7 +148,7 @@ and off the slice the two differ.
 
 **What an object of the algebra can and cannot hold.** The objects of the algebra are the elements of $\mathbb{B}$ and the groups and sets built from them by multiplication, conjugation and the sandwich. The orthogonal group is such an object, read on the Hermitian sector. The Pin group is not, because it contains the odd versors, which are the reflections; the only part of it that is an object of the algebra is the even cover $\mathbb{B}^{\times}_1\cong\mathrm{Spin}(1,3)$.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

@@ -280,7 +280,7 @@ $$
 \tilde\nabla\tilde\nabla^\natural=\tilde\nabla^\natural\tilde\nabla=\Box .
 $$
 
-The gradient acts by left multiplication, the mass is the off-diagonal pairing of the two chiral halves, The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, and the frame cell is where that sign is read. $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, not a frame cell; its frame representative is named only in the section *The Gamma Formulation* of this article. At $m=0$ the pair decouples into
+The gradient acts by left multiplication, the mass is the off-diagonal pairing of the two chiral halves, The chirality is the cell $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$; its central form is the sign $\chi=i\tilde\Xi_{\mathrm{ad}}$, with $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, and the frame cell is where that sign is read. $\tilde\Xi_{\mathrm{ad}}$ the central root of $-e_t$, not a frame cell; its frame representative is named only in the section *The Legacy Gamma Formulation* of this article. At $m=0$ the pair decouples into
 
 $$
 \tilde\nabla\tilde\Psi_R=0,
@@ -479,7 +479,7 @@ That is the shape of the result: a linear bag model becomes a **boundary singula
 
 8. **The zero-divisor branch.** The bag's parameter $\alpha$ lies in the zero-divisor set $\mathcal Z$ exactly on the mass shell, so the relevant branch of $T_\alpha$ and $K_\alpha$ is the one where the parameter has no inverse. Does the on-shell degeneracy of the shift have an interpretation of its own — the mass shell as a locus where the function theory changes character — or is it only the algebraic form of the dispersion relation? The zero-divisor articles treat the cone as a physical locus for a *field*; here it is the *parameter* that is singular, which is a different interpretation.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The whole article is written in the cells, without gammas. This section writes the same objects in the gamma frame once, so that the correspondence with the standard notation is on record. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and this is the only section in which they are named.
 

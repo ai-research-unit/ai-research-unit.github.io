@@ -373,7 +373,7 @@ Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent 
 - Companion article *The Electron in Biquaternionic Form*, for the one-particle sector interpretation of the spin bilinear.
 - *The Dirac Equation in Biquaternionic Form*, for the one-sided chiral pair and the two-sided dictionary that separates the two equations.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gamma symbols appear only in this section; everywhere else the same operators are written as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

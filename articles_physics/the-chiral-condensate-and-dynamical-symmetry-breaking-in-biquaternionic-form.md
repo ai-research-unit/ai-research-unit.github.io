@@ -398,7 +398,7 @@ which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldst
 
 **Not supplied.** The colour gauge dynamics that produces the condensate in nature; the value of the coupling $G$; the scale $\Lambda$; and therefore the numerical value of $\langle\bar{\psi}\psi\rangle$ and of the constituent mass. The framework is scale-free until these are supplied, exactly as the companion articles record for the masses elsewhere. No biquaternion prediction distinguishes this account from the standard one.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

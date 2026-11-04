@@ -48,9 +48,9 @@ Because $\mathbb{H}$ is not commutative, there are two distinct regular represen
 
 **Left regular representation.** $\mathsf{M}_4(\tilde q) r = \tilde q r$.
 
-**Right regular representation.** $\mathsf{M}_4^{R}(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\mathsf{M}_4^{R}(\tilde q_1) \mathsf{M}_4^{R}(\tilde q_2) = \mathsf{M}_4^{R}(\tilde q_2 \tilde q_1)$.
+**Right regular representation.** $\mathsf{M}_{4R}(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\mathsf{M}_{4R}(\tilde q_1) \mathsf{M}_{4R}(\tilde q_2) = \mathsf{M}_{4R}(\tilde q_2 \tilde q_1)$.
 
-Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q}^{\natural}$ gives a left representation $\mathsf{M}_4^{R}(\tilde q) r = r \tilde{q}^{\natural}$, and the map $r \mapsto \bar{r}$ intertwines it with $\mathsf{M}_4$, so the two regular representations are isomorphic.
+Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q}^{\natural}$ gives a left representation $\mathsf{M}_{4R}(\tilde q) r = r \tilde{q}^{\natural}$, and the map $r \mapsto \bar{r}$ intertwines it with $\mathsf{M}_4$, so the two regular representations are isomorphic.
 
 ## Representations of the Algebra
 
@@ -289,7 +289,7 @@ The category of representations is abelian and semisimple, and the representatio
 | $\mathbb{H}$ | Quaternion algebra |
 | $\rho : \mathbb{H} \to \operatorname{End}_F(V)$ | Representation |
 | $\rho^{\mathrm{reg}}$ | Regular representation |
-| $\mathsf{M}_4, \mathsf{M}_4^{R}$ | Left and right regular representations |
+| $\mathsf{M}_4, \mathsf{M}_{4R}$ | Left and right regular representations |
 | $V^*$ | Dual representation |
 | $V \otimes W$ | Tensor product |
 | $\operatorname{Hom}_{\mathbb{H}}(V, W)$ | Space of homomorphisms |

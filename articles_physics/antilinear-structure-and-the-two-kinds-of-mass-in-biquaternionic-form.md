@@ -13,7 +13,7 @@ The framework carries several conjugations, and they are easy to conflate becaus
 
 - **Gap, left visible.** The framework does not derive the values of either mass, and it does not decide which kind a given fermion carries; that is empirical input, as the neutrino companion states. What the framework supplies is the algebraic distinction and the reality structure each kind is built on.
 
-The article is organised as follows. A section fixes what antilinear means in this algebra and tabulates the involutions. A section gives the argument that a mass is a pairing with a conjugate. A section distinguishes the two conjugates and the two masses. A section separates the two real structures, on the algebra and on the module, which is where the retired equation went wrong, and fixes the four levels at which the name "charge conjugation" is used. A section places charge conjugation in its group-theoretic setting, the $\mathrm{Spin}^c$ structure, and reads off which spinors can carry the algebra's central $\mathrm{U}(1)$. A section exhibits the dispersion failure in full, for the retired equation and for all four involutions. A section records what the antilinear structure is genuinely for. A closing section, *The Gamma Formulation*, is the dictionary: it is the only place in the article where the gammas appear, because they are a frame of the cell algebra and not a separate structure.
+The article is organised as follows. A section fixes what antilinear means in this algebra and tabulates the involutions. A section gives the argument that a mass is a pairing with a conjugate. A section distinguishes the two conjugates and the two masses. A section separates the two real structures, on the algebra and on the module, which is where the retired equation went wrong, and fixes the four levels at which the name "charge conjugation" is used. A section places charge conjugation in its group-theoretic setting, the $\mathrm{Spin}^c$ structure, and reads off which spinors can carry the algebra's central $\mathrm{U}(1)$. A section exhibits the dispersion failure in full, for the retired equation and for all four involutions. A section records what the antilinear structure is genuinely for. A closing section, *The Legacy Gamma Formulation*, is the dictionary: it is the only place in the article where the gammas appear, because they are a frame of the cell algebra and not a separate structure.
 
 ## What Antilinear Means Here
 
@@ -368,7 +368,7 @@ so the $\flat$ pairing is the negative of the Euclidean inner product of $\mathb
 
 In every one of these uses the coupling pairs the field with its conjugate, and in every one of them the pairing is a **constraint or a symmetry**, not the mass of the Dirac equation. That is the pattern the retired equation violated, and stating it positively is the content of this article: an antilinear pairing is not thereby a mass, and a mass is not thereby antilinear.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

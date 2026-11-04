@@ -452,7 +452,7 @@ The conventions are those of three companion articles:
 - Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, for the translation of the frame cells and their antisymmetrized products into the algebra's units.
 - Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, for the vector part of the algebra and the four-vector representation from which the vector-spinor is built.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and the transcription introduces no new symbol: the $\gamma_\mu$ and $\gamma_5$ of the literature are the cells declared in the conventions, $\gamma_\mu=iL_{e_\mu}^{\mathrm{pau}}R_{\vec e_{\nu(\mu)}}^{\mathrm{pau}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{pau}}$, the same cells in the axis-free display being $\gamma_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ and $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$. The two vocabularies therefore name the same five objects in one chosen frame of the cell algebra, and no translation between two algebras is needed; what the literature adds is the matrix representation of those objects, not a second set of generators.
 

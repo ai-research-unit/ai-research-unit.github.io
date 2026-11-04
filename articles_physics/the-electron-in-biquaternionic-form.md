@@ -334,7 +334,7 @@ Two structural points and two cautions.
 
 Two gaps are structural and cannot be closed by better notation: the mass value and the charge value are inputs, and the anomaly is outside the classical equation. Three further gaps belong to the programme rather than to this article. **Quantization** has been carried out on the spinor module, but the $\mathbb{B}$-intrinsic form — the operator-valued biquaternion field, its Lagrangian, its Fock space, and the embedding of the fermionic $\mathbb{Z}/2$ grading in $\mathbb{B}$ — remains open, so the electron as a quantum field is only partly inside the framework. **Empirical contact** is absent: nothing here distinguishes the framework from standard relativistic quantum physics for the electron. And the framework is **not electron-specific**: it represents the electron, the muon, and any other structureless spin-$\tfrac{1}{2}$ field by the same objects, with no reason in the algebra to prefer one mass or charge over another. These are labelled gaps, not a closed account.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The sections above are written in cells; this section writes the same cells as gamma matrices, for readers who want the standard notation. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

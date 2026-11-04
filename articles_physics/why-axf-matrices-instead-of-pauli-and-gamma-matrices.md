@@ -36,8 +36,8 @@ are the off-diagonal halves, and they raise and lower the eigenvalue of $\sigma_
 
 **The Pauli representation doubles the choice.** The regular matrix in the Pauli display is the $2\times2$ image taken once per tensor factor,
 $$
-\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q),\qquad
-\mathsf M_4^{R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2 ,
+\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q),\qquad
+\mathsf M_{4R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2 ,
 $$
 and the second display of *Matrix Representations Conventions* assembles it from the two blocks. The axis enters twice: inside each $2\times2$ block, as the diagonal Pauli matrix, and in the block structure itself, which is the split into the two chiral halves. A $4\times4$ array in this display therefore marks a direction twice over.
 
@@ -144,7 +144,7 @@ and a conjugation preserves every product, every anticommutator, every trace, ev
 | link | where it enters | policy in the corpus |
 |---|---|---|
 | $\sigma_1,\sigma_2,\sigma_3$ and the image $\mathsf M_2$ | the $2\times2$ display | one dictionary entry in *Matrix Representations Conventions*; never in a physical formula |
-| $\mathsf M_4^{L},\mathsf M_4^{R}$, the $4\times4$ Pauli arrays | the second display | the gamma section of an article and the conventions; printed in $\mathrm{pau}$ beside $\mathrm{axf}$, never alone |
+| $\mathsf M_{4L},\mathsf M_{4R}$, the $4\times4$ Pauli arrays | the second display | the gamma section of an article and the conventions; printed in $\mathrm{pau}$ beside $\mathrm{axf}$, never alone |
 | $\gamma_0,\dots,\gamma_5$ | the Clifford reading | one closing section per article, five cells and no array in the body |
 | the root $\vec\Xi=i\vec e_z$ | the Peirce frame, the chirality array | named where the root is the subject; never a silent default |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the Peirce decomposition, the state module | only where the idempotent is the object — *Roots, Idempotents and Observables*, the quantum-information articles |

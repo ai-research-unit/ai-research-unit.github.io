@@ -186,7 +186,7 @@ of complex dimension $32$ and with a two-dimensional centre.
 
 The theorem shows that the two-sided structure of the algebra has two rungs. On the biquaternion algebra alone the left and the right actions generate $\mathbb{B}^{\mathrm{e}}\cong\mathrm{Cl}(4)_{\mathbb{C}}$, of dimension $16$; enlarging the left action from $\mathbb{B}$ to $\mathrm{Cl}(3)$ and keeping the right action of $\mathbb{B}$ raises the generated algebra to $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}(5)_{\mathbb{C}}$, of dimension $32$. The right action of $\mathbb{B}$ alone is four-dimensional and is the Clifford algebra $\mathrm{Cl}(2)$; it is the pair of actions together that produces the next complex Clifford algebra. Both rungs were recorded by the source of the companion physics article, which writes the first as "the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathbb{C}\otimes\mathbb{H}$ gives $\mathrm{Cl}(4)$" and the second as "the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathrm{Cl}(3)$ gives $\mathrm{Cl}(5)$"; the source's reading of the second — that the enlargement supplies the parity-reversal operator that $\mathrm{Cl}(3)$ does not contain, and that $\mathrm{Cl}(5)\cong\mathrm{Cl}(6)^+$ is the second of the two complex octonionic chain algebras of the division-algebra approach, one carrying $\mathrm{SO}(4)$ and one carrying $\mathrm{SU}(3)\times\mathrm{U}(1)$ — belongs to the companion physics article and is not an algebraic statement of this one.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, not a different algebra.
 

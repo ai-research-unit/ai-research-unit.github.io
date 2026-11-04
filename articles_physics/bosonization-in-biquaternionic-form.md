@@ -29,7 +29,7 @@ $$
 \{iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}},iL_{e_\rho}^{\mathrm{axf}}R_{\vec e_{\nu(\rho)}}^{\mathrm{axf}}\}=2g_{\mu\rho}L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 \qquad \mu,\rho\in\{t,x\},
 $$
-and the four-cell product is in the section *The Gamma Formulation*.
+and the four-cell product is in the section *The Legacy Gamma Formulation*.
 
 The chirality cell is
 $$
@@ -47,7 +47,7 @@ P_R=\tfrac12\bigl(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+L_{\vec e_x}^{\ma
 $$
 project onto the two components; on the two-dimensional module each has trace $1$, while on the four-dimensional carrier the same cells have trace $2$, the carrier carrying each half twice.
 
-**The square of the chirality.** Both chirality cells are involutions: the two-dimensional $L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, and so does the four-dimensional $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ of the section *The Gamma Formulation*. The two dimensions differ in the bare product of the frame's generators, not in the square. In two dimensions the product of the two generators is the chirality cell itself, $iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i^2R_{\vec e_x}^{\mathrm{axf}}L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ with $i^2=-1$; in four dimensions the product of the four is
+**The square of the chirality.** Both chirality cells are involutions: the two-dimensional $L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ squares to $+L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, and so does the four-dimensional $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ of the section *The Legacy Gamma Formulation*. The two dimensions differ in the bare product of the frame's generators, not in the square. In two dimensions the product of the two generators is the chirality cell itself, $iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=i^2R_{\vec e_x}^{\mathrm{axf}}L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ with $i^2=-1$; in four dimensions the product of the four is
 $$
 iR_{\vec e_x}^{\mathrm{axf}}\,iL_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\,iL_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
 = i^4\, R_{\vec e_x}^{\mathrm{axf}}L_{\vec e_x}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}L_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}L_{\vec e_z}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}
@@ -302,7 +302,7 @@ The non-abelian extension is stated and its status fixed.
 - The precise operator-algebraic isomorphism between the module's current algebra and the centre's exponentiated algebra is stated but not proved; the article gives the correspondence and the counting, and cites the standard construction for the identity itself.
 - Whether the coefficient conjugation $\mathcal C=\overline{\cdot}$ is forced by the reduction or is one of several equivalent real structures, and whether the framework's sector structure selects it, is not resolved here.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gamma symbols are used only in this section; every other section writes the same objects as cells. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{e_t}^{\mathrm{pau}}R_{\vec e_x}^{\mathrm{pau}}=iR_{\vec e_x}^{\mathrm{pau}}$ and $\gamma_1=iL_{\vec e_x}^{\mathrm{pau}}R_{\vec e_y}^{\mathrm{pau}}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the cell $L_{\vec e_x}^{\mathrm{pau}}R_{\vec e_z}^{\mathrm{pau}}$, not the four-dimensional $\gamma_5$.
 

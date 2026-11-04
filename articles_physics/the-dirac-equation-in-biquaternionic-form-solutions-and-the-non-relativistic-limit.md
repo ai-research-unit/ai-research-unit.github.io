@@ -525,7 +525,7 @@ $$
 
 select the two components; on the four-component carrier they act as the Peirce right multiplications $R_{\tilde\Pi_+}$ and $R_{\tilde\Pi_-}$. The algebraic counterparts of $P_L$ and $P_R$ are the central idempotents $e_\pm=\tfrac12(1\pm\chi)$ of the complexification, with $\chi=i\tilde\Xi_{\mathrm{ad}}$ the central grading of the Gamma section; the Peirce idempotents $\tilde\Pi_\pm$ are not central, and the two pairs are different objects. The Weyl spinors are thus the $m \to 0$ limit of the solutions constructed above, and the biquaternionic Dirac operator reduces in that limit to the pair of Weyl operators.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

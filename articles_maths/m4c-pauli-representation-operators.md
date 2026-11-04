@@ -93,12 +93,12 @@ Its image is the four-dimensional subalgebra $\mathbb{B}_L$. The composition law
 
 **The four left matrices.** Each is the image of a unit under the left matrix map, in the canonical frame,
 $$
-L_{e_t}^{\mathrm{pau}}=\mathsf{M}_4^{L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-L_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+L_{e_t}^{\mathrm{pau}}=\mathsf{M}_{4L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 $$
-L_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
+L_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_{4L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_{4L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
 $$
 and a general element is $L(\tilde Q)=Q_tL_{e_t}^{\mathrm{pau}}+Q_xL_{\vec e_x}^{\mathrm{pau}}+Q_yL_{\vec e_y}^{\mathrm{pau}}+Q_zL_{\vec e_z}^{\mathrm{pau}}$. In the Pauli form $L_{e_t}^{\mathrm{pau}}=\mathrm I_2\otimes\mathrm I_2$ and $L_{\vec e_k}^{\mathrm{pau}}=-i\,\mathrm I_2\otimes\sigma_k$.
 
@@ -111,12 +111,12 @@ a block matrix whose four blocks are scalar multiples of $\mathrm I_2$. Its imag
 
 **The four right matrices.** Each is the image of a unit under the right matrix map,
 $$
-R_{e_t}^{\mathrm{pau}}=\mathsf{M}_4^{R}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-R_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+R_{e_t}^{\mathrm{pau}}=\mathsf{M}_{4R}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+R_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_{4R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-R_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
+R_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_{4R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+R_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_{4R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
 $$
 In the Pauli form $R_{e_t}^{\mathrm{pau}}=\mathrm I_4$, $R_{\vec e_x}^{\mathrm{pau}}=-i\,\sigma_1\otimes\mathrm I_2$, $R_{\vec e_y}^{\mathrm{pau}}=+i\,\sigma_2\otimes\mathrm I_2$ and $R_{\vec e_z}^{\mathrm{pau}}=-i\,\sigma_3\otimes\mathrm I_2$. The signs differ from those of the left family because the transpose exchanges $\sigma_2$ with $-\sigma_2$ and fixes $\sigma_1,\sigma_3$.
 
@@ -701,7 +701,7 @@ is an isomorphism of complex algebras. The sixteen elementary tensors $e_\mu\oti
 - The Segre length in physics: the matrices of length at most $r$ are the locus $\operatorname{rank}c\le r$, cut out by the $(r+1)\times(r+1)$ minors; what is not known is which physical operators have length two or three, and why.
 - The two-sided Dirac operator against the left gradient: the dictionary at the level of differential operators, not only of matrices.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells.
 

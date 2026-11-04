@@ -20,7 +20,7 @@ The article is organised as follows. The results it borrows are stated with thei
 
 ## The Results It Uses
 
-**The conventions.** The notation, the Clifford dictionary and the sector splitting are those of *Algebra and Element Conventions*. The algebra and its two sectors are those of *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*. Operator statements are written in cells: $L_aR_b$ acts by $\psi\mapsto a\psi b$. The cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, the convention of *Operator and Calculus Conventions*. The scalar imaginary satisfies $i^2=-1$ throughout; the two simplifications that recur are $(-i)^2=+1$ and $(i\vec e_z)^2=+e_t$. The gammas of the reference frame appear only in §*The Gamma Formulation*; the body is written in cells.
+**The conventions.** The notation, the Clifford dictionary and the sector splitting are those of *Algebra and Element Conventions*. The algebra and its two sectors are those of *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*. Operator statements are written in cells: $L_aR_b$ acts by $\psi\mapsto a\psi b$. The cells compose by $L_aR_b\,L_cR_d=L_{ac}R_{db}$, with the right factors in reverse order, the convention of *Operator and Calculus Conventions*. The scalar imaginary satisfies $i^2=-1$ throughout; the two simplifications that recur are $(-i)^2=+1$ and $(i\vec e_z)^2=+e_t$. The gammas of the reference frame appear only in §*The Legacy Gamma Formulation*; the body is written in cells.
 
 **The algebra.** The one-mode canonical anticommutation relations in $\mathbb{B}$, the pair $\vec\Upsilon_x,\vec\Upsilon_y$, the rungs $\tilde\Pi_\pm$, the inner parity $(-1)^F=i\vec e_z$, the capacity count and the bosonic obstruction are those of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the roots of $+1$, the idempotents and the halving map are those of *Roots, Idempotents and Observables*; the vacuum idempotent, its zero-divisor property and the Peirce corner at the vacuum are those of *The Biquaternion Vacuum as a Minimal Idempotent*; the Peirce decomposition, the matrix units and the Peirce coordinates are those of *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$* and *The Polarized Module of the Biquaternion Algebra*.
 
@@ -339,7 +339,7 @@ $$
 
 where $\bar F$ is the coefficient conjugation. The derivative is a left multiplier. The mass acts by the right multiplier $\chi_{\mathrm{cell}}$ together with $\bar{\cdot}$, so the left and right multipliers commute; the conjugation is the antilinear part. This is the form in which the two-sided operator algebra acts by cells. It is not the same operator as the one-sided pair: the price of the single equation is the antilinear conjugation. The two forms are compared in *The Dirac Equation in Biquaternionic Form*, §*The One-Sided and the Two-Sided Equation*.
 
-The two-sided form exhibits the point of the taxonomy. The derivative is chirality-blind, and the mass is the chirality-carrying term. The chirality cell is the same object as the fifth frame cell of §*The Gamma Formulation*; it is a cell, not an element of $\mathbb{B}$.
+The two-sided form exhibits the point of the taxonomy. The derivative is chirality-blind, and the mass is the chirality-carrying term. The chirality cell is the same object as the fifth frame cell of §*The Legacy Gamma Formulation*; it is a cell, not an element of $\mathbb{B}$.
 
 The two forms are set side by side once, in cells:
 
@@ -602,7 +602,7 @@ The taxonomy covers the corpus's uses of $X^2=0$; it does not claim to exhaust t
 
 The article adds no dynamics, no mass, no coupling and no empirical prediction. It gives the nilpotent, the ladder and the pairing, but no field content: a field is a collection of modes, and the qutrit is outside $\mathbb{B}$. The lattice interpretations are topological and model-dependent; the algebra is not a lattice. The WKB interpretation is leading order; the exact solution, the caustics and the tunneling lie outside it. The contraction is a limit, not a process. The physical interpretations it compares are the corpus's, and the comparison does not make them more or less empirical. The sharpest limit is the distinction of §*The Excluded Case: The Physical Null Momentum*: the physical null momentum is a zero divisor with a nonzero square, and the nilpotent is a pure displacement with a zero square.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; the rest of the article is written in cells.
 

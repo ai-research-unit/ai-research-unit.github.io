@@ -28,7 +28,7 @@ $$
 $$
 because the vector part of $a$ contributes only to the imaginary part of $\bar\Psi a\Psi$. It is verified on random pairs to machine precision, and it is why so many of the source's bilinears are either a fixed multiple of $\bar\Psi\Psi$ or zero. Real coefficients matter: a biquaternion $a$ with complex ones does contribute a real part through its vector part, and none of the source's displays has that feature.
 
-**Where the gammas are.** The Clifford names $\gamma_\mu$ of these cells are used in one section only, *The Gamma Formulation*; nothing before it needs them, because the cells are written out directly. The only earlier places a $\gamma$ appears are the source's own Eq. (1) and the two lines of block arithmetic that test it, kept in the source's letters because those displays are themselves the object under review.
+**Where the gammas are.** The Clifford names $\gamma_\mu$ of these cells are used in one section only, *The Legacy Gamma Formulation*; nothing before it needs them, because the cells are written out directly. The only earlier places a $\gamma$ appears are the source's own Eq. (1) and the two lines of block arithmetic that test it, kept in the source's letters because those displays are themselves the object under review.
 
 ## The Source's Aims
 
@@ -347,7 +347,7 @@ This $\mathrm{Tr}$ is the plain trace of the $4\times4$ product and **not** its 
 $$
 \boxed{\;\mathrm{Tr}\bigl[\chi\,C_\rho\,C_\lambda\,\sigma_{\mu\nu}\bigr]=-\,4i\,\epsilon_{\rho\lambda\mu\nu}\;}
 $$
-with the four indices all low and $\epsilon_{0123}=+1$, verified at residual exactly zero over all index quadruples: the trace takes the two values $\pm4i$ on the twenty-four quadruples with four distinct indices and vanishes on all others. Its $\epsilon_{\rho\lambda}{}^{\mu\nu}$ also carries two raised indices, each of which costs a sign on the standing conventions, and the chain built on the display inherits both defects. It is the same trace of the chirality cell with two frame cells and a bivector recorded for the corpus in *The Gamma Formulation* below, with the chirality cell in the first slot.
+with the four indices all low and $\epsilon_{0123}=+1$, verified at residual exactly zero over all index quadruples: the trace takes the two values $\pm4i$ on the twenty-four quadruples with four distinct indices and vanishes on all others. Its $\epsilon_{\rho\lambda}{}^{\mu\nu}$ also carries two raised indices, each of which costs a sign on the standing conventions, and the chain built on the display inherits both defects. It is the same trace of the chirality cell with two frame cells and a bivector recorded for the corpus in *The Legacy Gamma Formulation* below, with the chirality cell in the first slot.
 
 The second error is structural. The appendix evaluates $B_{\lambda\mu\nu}=\bar\Psi C_\lambda\sigma_{\mu\nu}\Psi$, finds that "the only nonzero contribution comes from the axial-vector channel", and concludes that $B_{\lambda\mu\nu}$ is $\epsilon_\rho{}_{\lambda\mu\nu}$ times the axial bilinear $A_\rho=\bar\Psi\chi C_\rho\Psi$. On the twenty-four triples with three distinct indices that conclusion is exact, $B_{\lambda\mu\nu}=-i\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho A_\rho$. For the six of them whose first index is the time index the arithmetic is even transparent, because $C_tC_\lambda=C_0^2=I$ collapses the product to the bare bivector and a bivector bilinear is by construction the epsilon-dual of the axial one,
 $$
@@ -415,7 +415,7 @@ It is worth stating what the source would have to show for the corpus to record 
 
 None of these is a philosophical objection, and none requires the corpus's conventions. They are the arithmetic and index checks that any construction of this kind has to pass, and on this pass it does not.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the five cells are
 $$
@@ -503,7 +503,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $C_\mu$ | the frame cell $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$ |
 | $\chi$ | the chirality cell $-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ |
 | $\sigma_{\mu\nu}$ | the bivector $\tfrac12[C_\mu,C_\nu]$, the source's $\tfrac12[q_\mu,q_\nu]$ |
-| $S_{cd}$ | the standard bivector $\tfrac14[\gamma_c,\gamma_d]$, half of $\sigma_{cd}$, used only in the commutator identity of *The Gamma Formulation* |
+| $S_{cd}$ | the standard bivector $\tfrac14[\gamma_c,\gamma_d]$, half of $\sigma_{cd}$, used only in the commutator identity of *The Legacy Gamma Formulation* |
 | $\operatorname{Alt}$ | the normalised antisymmetrisation, the average over the six permutations with signs |
 | $\varepsilon_\mu$ | the sign vector $\varepsilon_t=+1$, $\varepsilon_k=-1$, which writes a raised index low |
 | $\kappa=8\pi G$ | the source's single coupling, used both as $\kappa$ and as $\kappa^{-1}$ |
@@ -519,7 +519,7 @@ What the source does supply is a reminder, in a form the corpus's own articles s
 | $q_5=ijk$ | in the source, "the imaginary unit"; in fact the central scalar $-1$ |
 | $\tau=\mathrm{Arg}_{\mathbb{H}}\Psi$ | the source's Kozyrev time field |
 | $J_{S\mu}$ | the source's torsion entropy pseudo-vector |
-| $\gamma_\mu$, $\gamma_5$ | the Clifford names of $C_\mu$ and $\chi$, used in *The Gamma Formulation* only |
+| $\gamma_\mu$, $\gamma_5$ | the Clifford names of $C_\mu$ and $\chi$, used in *The Legacy Gamma Formulation* only |
 | $\mathcal{T}$ | the axial pseudo-vector $\epsilon_{ijk}T_{jk0}$ on which the source's Pauli limit and torsional phases are built |
 
 ## Further Reading

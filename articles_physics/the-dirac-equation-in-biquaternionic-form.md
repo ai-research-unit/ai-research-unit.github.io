@@ -881,7 +881,7 @@ This interpretation is the origin of the *triality construction* recorded in the
 
 These questions are open.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

@@ -12,7 +12,7 @@ The plan is the basis, then the operations on it, then the representation, then 
 
 ## The Chiral Algebra
 
-**Notation, once.** The central imaginary unit is $i$, and $i^2=-1$. It is the only imaginary unit in the body: wherever two of them meet in a product they are reduced before the formula is read, $i\,i=-1$, and no formula below carries an unreduced $i^2$. Two elements of the algebra in one statement are numbered, $\mathcal{B}_1$ and $\mathcal{B}_2$, so the coordinates $\alpha_1,\beta_1,\xi_1,\eta_1$ and $\alpha_2,\beta_2,\xi_2,\eta_2$ always name the two factors and never a second component of one factor. The gammas are named once, in *The Gamma Formulation*; the body works in the algebra and in the cells $L_aR_b$, with $L_aR_b\,\psi=a\psi b$.
+**Notation, once.** The central imaginary unit is $i$, and $i^2=-1$. It is the only imaginary unit in the body: wherever two of them meet in a product they are reduced before the formula is read, $i\,i=-1$, and no formula below carries an unreduced $i^2$. Two elements of the algebra in one statement are numbered, $\mathcal{B}_1$ and $\mathcal{B}_2$, so the coordinates $\alpha_1,\beta_1,\xi_1,\eta_1$ and $\alpha_2,\beta_2,\xi_2,\eta_2$ always name the two factors and never a second component of one factor. The gammas are named once, in *The Legacy Gamma Formulation*; the body works in the algebra and in the cells $L_aR_b$, with $L_aR_b\,\psi=a\psi b$.
 
 ### The Scalar-Vector Biquaternion and the Corpus Dictionary
 
@@ -591,7 +591,7 @@ The remaining physical items are recorded as the author's claims. The boost, the
 
 **The two versions.** The corpus holds v2 (March 2025, *Cyclic representation of the Dirac equation*) and v3 (February 2026, *Chiral algebra of Dirac equation*), and they were compared word by word. The differences are seven and all small: the title; one clause of the abstract; the replacement of the Russian cross-reference placeholders ("source not found") by references to Appendix 1 and 2; the display of the Hadamard matrix, written for the Cartesian point coordinates in v2 and for the wave-function components in v3 (the same $H_4$ in both); the deletion of a stray clause; a change of e-mail address; and the map of the Appendix's second isomorphism, changed from $\left(\begin{smallmatrix}\xi & \alpha\\ -\beta & -\eta\end{smallmatrix}\right)$ to $\left(\begin{smallmatrix}\alpha & -\eta\\ \xi & -\beta\end{smallmatrix}\right)$. The last of these is the only mathematical change, and since both forms fail the same test it is a correction that did not repair the claim.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The body is written in the cells $L_aR_b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the frame names are attached to the cells here and nowhere else:
 

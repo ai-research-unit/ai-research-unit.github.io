@@ -8,7 +8,7 @@ This article records the equations, the spin chains they live on, and the third 
 
 It is worth separating this article from the companion that shares the name Bhabha. *Bhabha Scattering in Biquaternionic Form* is about the elastic scattering of an electron and a positron; the present article is about Bhabha's *wave equations*, a different piece of work by the same author. The two are cross-referenced and not merged.
 
-**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$. Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, the three squaring to $-e_t$. The two-sided cells act by $L_aR_b\psi=a\psi b$, and the **generator cell** of the coordinate $x_\mu$ is $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$. The gammas are the frame names of the same cells and appear only in the section *The Gamma Formulation*; no gamma-matrix is used before it.
+**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$. Displayed formulae are written with their imaginary units reduced whenever the algebra allows it; where the source's own conventions leave a reduction undecided, the display is transcribed as printed and the undecided step is flagged rather than silently repaired. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with units $e_t=1$ and $\vec e_x,\vec e_y,\vec e_z$, the three squaring to $-e_t$. The two-sided cells act by $L_aR_b\psi=a\psi b$, and the **generator cell** of the coordinate $x_\mu$ is $G_\mu=iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$, with $\nu(t)=x$ and $\nu(k)=y$ for $k=x,y,z$; the chirality cell is $-iR_{\vec e_z}^{\mathrm{axf}}$. The gammas are the frame names of the same cells and appear only in the section *The Legacy Gamma Formulation*; no gamma-matrix is used before it.
 
 **The order of the article.** A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction and settles its metric and its index order. A fourth works the proton chain and writes the Dirac limit in its two forms, the one-sided chiral pair and the two-sided cell equation. A fifth states the biquaternion interpretation and separates what is established from what is transcribed; the gammas are collected in a section of their own before the summary.
 
@@ -375,7 +375,7 @@ Third, the **equations** themselves are the corpus's Dirac–Maxwell package in 
 
 6. **The Maxwell–Dirac package.** The corpus's *Bispinor Fields* article derives the Maxwell–Dirac solution in the corpus's form. Does the programme's massless limit coincide with it exactly, including the conventions of the axial current?
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the four generator cells and the chirality cell of the body become
 

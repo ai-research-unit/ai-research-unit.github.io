@@ -267,7 +267,7 @@ The Hermitian condition has a grade reading. The biquaternion star fixes the rea
 
 **Remark (normality and the rate).** Normality constrains the vector part alone. It makes $\vec U$ real and the root $\vec\Xi$ purely imaginary, but it does not make $B$ real: the element $(1+i)\vec e_x$ is normal, has the real root $\vec e_x$ and the complex rate $B=1+i$, and its flow has Hermitian norm $\cosh2\theta$. Normality therefore gives an orthogonal eigenbasis and no more. It does not make the flow unitary, and it does not make the norm constant. The exact criteria are in *Biquaternion Elementary Functions*, §*The Hermitian Norm and the Unitary Flow*.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
 

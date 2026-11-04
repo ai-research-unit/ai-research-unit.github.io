@@ -382,7 +382,7 @@ The **mass enters as the one external scale**: the Klein–Nishina function depe
 
 What the framework does **not** supply is the dynamics. The Thomson cross-section and the Klein–Nishina formula are consequences of the Maxwell–Dirac action and its quantisation, not of the algebra; the algebra organises the polarization bookkeeping and exhibits the states, the observables, and the geometric factors as elements of one structure, but the $r_e^2$ and the $(\omega_{\mathrm{out}}/\omega)^2$ come from the field theory. This is the same boundary the photon article draws: the framework transcribes the standard physics faithfully, and the specific facts attached to the photon and the electron are supplied from outside.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products. Each generator is one cell,
 $$
@@ -537,7 +537,7 @@ Compton scattering shifts the frequency to $\omega_{\mathrm{out}} = \omega/[1+(\
 $$
 D_s(p)=\tfrac12 D(p)\Bigl(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+s_{0}R_{\vec e_y}^{\mathrm{axf}}+\sum_k s_{k}L_{\vec e_k}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}\Bigr) ,
 $$
-which sum back to $D(p)$; the asymmetry is the part of the cross-section linear in the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$, the same axial factor that carries the photon's circular polarization. The electron's spin biquaternion is a Hermitian element with the same cone structure as the beam's coherence biquaternion. The Gamma Formulation names the frame in which all of this is written, and separates the two Dirac equations of the series: the one-sided chiral pair that the scattering uses, and the two-sided equation that belongs to the dictionary.
+which sum back to $D(p)$; the asymmetry is the part of the cross-section linear in the chirality cell $-iR_{\vec e_z}^{\mathrm{axf}}$, the same axial factor that carries the photon's circular polarization. The electron's spin biquaternion is a Hermitian element with the same cone structure as the beam's coherence biquaternion. The Legacy Gamma Formulation names the frame in which all of this is written, and separates the two Dirac equations of the series: the one-sided chiral pair that the scattering uses, and the two-sided equation that belongs to the dictionary.
 
 ## Summary of Notation
 

@@ -30,7 +30,7 @@ $$
 \nu(t)=x,\quad \nu(k)=y ,
 $$
 
-so $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the frame cell of the coordinate $x_\mu$. The frame carries the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$ and is fixed in §*The Gamma Formulation*.
+so $iL_{e_\mu}^{\mathrm{axf}}R_{\vec e_{\nu(\mu)}}^{\mathrm{axf}}$ is the frame cell of the coordinate $x_\mu$. The frame carries the Clifford relations of $g=\operatorname{diag}(+1,-1,-1,-1)$ and is fixed in §*The Legacy Gamma Formulation*.
 
 **The structural statement.** The biquaternion framework places the EDM operator in a definite half of its algebra. The insertion $\sigma_{\mu\nu}(-iR_{\vec e_z}^{\mathrm{axf}})$ is **anti-Hermitian** in the field components that couple to $\vec E$, and it therefore belongs to the framework's material, anti-Hermitian sector $\mathbb{M}_-$; the magnetic-moment insertion $\sigma_{ij}$, which couples to $\vec B$, is Hermitian and belongs to the informational sector $\mathbb{M}_+$. The two are Hodge duals of each other: the EDM insertion is $i$ times the dual of the tensor, and that $i$ is what carries the dual back into the anti-Hermitian class. The article establishes this and states what it does and does not buy.
 
@@ -380,7 +380,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 
 4. **The duality at the level of the action.** The Hodge duality relates the EDM and magnetic insertions with a factor of $i$; whether the framework's action can be written so that the duality is manifest, pairing the two observables in a single Hermitian structure, is a question of the action's algebraic form.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

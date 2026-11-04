@@ -116,7 +116,7 @@ so the slice acts on the covariants by the conjugation $\Gamma\mapsto \tilde{Q}_
 
 **A null spinor.** A nonzero spinor $s$ with $\langle s,s\rangle_{\natural}=0$ — a zero divisor of the algebra — has a **nonzero** scalar covariant, $\mathfrak{b}_0(s,s)=s^{\dagger}s>0$. The covariants of this article are built from the positive definite module form and not from the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, which is the distinction between the two forms of *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; a spinor is null for the module form only when it vanishes, and the null cone of the algebra lives in the vector part of $\mathbb{M}_+$ and not on the spinor.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})\cong\mathbb{B}$, not a different algebra.
 

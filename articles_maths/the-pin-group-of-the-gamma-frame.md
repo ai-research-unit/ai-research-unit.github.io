@@ -178,7 +178,7 @@ $$
 $$
 and its image lies in $SL_4(\mathbb{C})$ because every frame element has determinant $1$ in the complex-linear description. The determinant of the spinor matrix is not the determinant of the Lorentz transformation; the latter is the parity of the word. The two-to-one cover is visible in the spinor matrices, not in their determinants.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

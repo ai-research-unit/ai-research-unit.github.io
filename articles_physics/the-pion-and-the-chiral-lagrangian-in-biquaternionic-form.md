@@ -378,7 +378,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 6. **Empirical contact.** As everywhere, the open question is whether the framework's chiral Lagrangian differs from the standard one with the same field content; the framework's contribution is geometric and normalisational, and no deviation has been exhibited.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -489,8 +489,8 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\langle0\vert j_{5\mu a}(0)\vert\pi_b(p)\rangle = if_\pi p_\mu\delta_{ab}$ | Defining matrix element of $f_\pi$ |
 | $\langle\tilde\nabla,\tilde J_{5a}\rangle_{\natural} = f_\pi m_\pi^2\pi_a$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1)$, $g=-\eta$ | $ict'$ metric for index contractions; the $\gamma$ identities of *The Gamma Formulation* use $g=\mathrm{diag}(+1,-1,-1,-1)$ |
-| $\mathrm{Tr} = 2\,\mathrm{Sc}$; $\mathrm{tr}$ | Algebra trace, and the matrix trace of the representation in use — $2\times2$ for $\mathbb{B}$, $4\times4$ on the spinor module in *The Gamma Formulation* |
+| $\eta = \mathrm{diag}(-1,+1,+1,+1)$, $g=-\eta$ | $ict'$ metric for index contractions; the $\gamma$ identities of *The Legacy Gamma Formulation* use $g=\mathrm{diag}(+1,-1,-1,-1)$ |
+| $\mathrm{Tr} = 2\,\mathrm{Sc}$; $\mathrm{tr}$ | Algebra trace, and the matrix trace of the representation in use — $2\times2$ for $\mathbb{B}$, $4\times4$ on the spinor module in *The Legacy Gamma Formulation* |
 | $a,b,c$ | Isospin indices, written low; every contraction over them is an explicit sum |
 
 ## Further Reading

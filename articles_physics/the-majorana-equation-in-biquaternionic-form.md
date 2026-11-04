@@ -429,7 +429,7 @@ because $c_{0}^{2}=-L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $c_{k}^{2}=+L
 
 5. **Empirical contact.** The decisive experiment is neutrinoless double beta decay, and the framework offers no rate and no prediction. Whether the eigenstructure above can be brought into contact with a rate is open, and is recorded in the neutrino article as an open question of the corpus.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

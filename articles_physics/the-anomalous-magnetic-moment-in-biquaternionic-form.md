@@ -12,7 +12,7 @@ This article is the worked radiative application of the spin-$\tfrac12$ subcateg
 - **The one-loop value, transcribed and its integral verified.** The standard Feynman-parameter representation of the magnetic form factor reduces at $k^2=0$ to an integral whose value is exactly $1$; that reduction was verified, so that $a=\alpha/2\pi$ follows from the standard representation.
 - **What the algebra does not supply.** It does not produce $\alpha$, and it does not by itself remove the divergence. The finiteness of the anomaly rests on the Ward identity, that is, on gauge invariance; the framework writes the vertex in its own tensor language and does not replace that argument.
 
-**The cells.** The computation is written in cells, and the gamma matrices appear in one place only, §*The Gamma Formulation*, as a matrix realisation of the cells and not as a second algebra. With $L_aR_b$ the two-sided multiplication, $L_aR_b\psi=a\psi b$, the four generator cells are the timelike $iR_{\vec e_x}^{\mathrm{axf}}$ and the three spacelike $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the identity cell is $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4$. Cells multiply by multiplying the left multipliers together and the right multipliers together, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right pair in reverse order.
+**The cells.** The computation is written in cells, and the gamma matrices appear in one place only, §*The Legacy Gamma Formulation*, as a matrix realisation of the cells and not as a second algebra. With $L_aR_b$ the two-sided multiplication, $L_aR_b\psi=a\psi b$, the four generator cells are the timelike $iR_{\vec e_x}^{\mathrm{axf}}$ and the three spacelike $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$, and the identity cell is $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}=I_4$. Cells multiply by multiplying the left multipliers together and the right multipliers together, $L_aR_b\,L_cR_d=L_{ac}R_{db}$, the right pair in reverse order.
 
 **The factor $i$ and the two signs.** Every generator cell carries one factor $i$, so a product of two of them carries two, and $i^2=-1$ is the whole origin of the Clifford signs. The squares are
 
@@ -223,7 +223,7 @@ $$
 
 Reading the factors: $i^3=-i$, the left multipliers give $L_{\vec e_x}^{\mathrm{axf}}L_{\vec e_y}^{\mathrm{axf}}=L_{\vec e_z}^{\mathrm{axf}}$, and the right ones give $R_{\vec e_y}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}=R_{-\vec e_t}=-R_{e_t}^{\mathrm{axf}}$, so the two minus signs cancel and one factor $i$ survives. The same matrix is the left multiplication by the biquaternion of the spin generator, $iL_{\vec e_z}^{\mathrm{axf}}=L_{i\vec e_z}^{\mathrm{axf}}$, twice $\tilde S_3/\hbar$ of the companion *Angular Momentum and Spin in Biquaternionic Form*; the bivector acts on the module as the doubled spin generator itself. Two sectors, one bivector algebra, and the anomaly's structure is the informational one.
 
-**The Clifford reduction.** The algebraic work behind the loop computation is the reduction of the numerator, and it rests on the four contraction identities of §*The Gamma Formulation*, re-evaluated in the cell basis with residual $0$. With $c_\mu$ the frame cell of the direction $\mu$ and the plain weight $\varepsilon$ in the sum, they are
+**The Clifford reduction.** The algebraic work behind the loop computation is the reduction of the numerator, and it rests on the four contraction identities of §*The Legacy Gamma Formulation*, re-evaluated in the cell basis with residual $0$. With $c_\mu$ the frame cell of the direction $\mu$ and the plain weight $\varepsilon$ in the sum, they are
 
 $$
 \sum_\mu\varepsilon_\mu\,c_\mu c_\mu=4I_4 ,
@@ -366,7 +366,7 @@ The on-shell spinors were built as $w=(iR_{\vec e_x}^{\mathrm{axf}}p_0-\sum_k iL
 - Companion article *Matrix Representations Conventions*, §*The Clifford Structure and the Frame*, for the identification of $\vec e_\mu$ and $i\vec e_\mu$ with the spacelike and timelike bivectors and $i\mapsto L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the field operators whose electromagnetic three-point function is the vertex.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -507,7 +507,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric, the level-3 metric of the Dirac module |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | The two sectors, and the split $i\mathbb{M}_\pm=\mathbb{M}_\mp$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the index rule |
-| Four contraction identities of §*The Gamma Formulation* | Contraction identities (residual $0$) |
+| Four contraction identities of §*The Legacy Gamma Formulation* | Contraction identities (residual $0$) |
 | $\sigma_{12}=L_{i\vec e_z}^{\mathrm{axf}}=\Sigma^3$ | Magnetic bivector is the spin matrix, $\mathrm{diag}(\sigma^3,\sigma^3)$ in the Peirce display |
 | $\vec e_\mu\mapsto L_{e_\mu}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$, $i\vec e_\mu\mapsto L_{e_\mu}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $i\mapsto L_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ | Dictionary (verified) |
 | $\sigma_{12}\mapsto i\vec e_z\in\mathbb{M}_+$, $\sigma_{01}\mapsto-\vec e_x\in\mathbb{M}_-$ | Sectors of the magnetic and electric structures, and so on cyclically |

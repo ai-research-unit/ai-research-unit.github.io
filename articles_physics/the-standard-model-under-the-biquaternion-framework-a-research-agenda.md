@@ -274,7 +274,7 @@ and the distinction between them is the whole content of the gauge statement: $C
 
 **The evidential tier.** Both items are recorded in the lowest tier the corpus uses, and the reason is the medium rather than the authors. Gsponer and Hurni are careful workers on Lanczos's electrodynamics, and the corpus already cites their *Foundations of Physics* paper; but a four-page conference abstract asserting a replacement for the Dirac equation, the quark–lepton spectrum, the absence of a Higgs, and a non-local strong interaction contains **no derivation**, and the paper's own title is a **question**. The register is therefore correct in the source, and the corpus matches it: **claims reported, derivations not available in this source**, pointer to a programme with a history. The "parton" terminology is also historically loaded — the paper's two families are quarks and leptons, the modern interpretation — and "baryonic charge" is the paper's own term.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

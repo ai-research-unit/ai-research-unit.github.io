@@ -19,7 +19,7 @@ We therefore make no claim that the extension is canonical in the biquaternion f
 
 The article is organized as follows. The next section fixes the classical field and its conjugate momentum, and identifies the constraint that forces the canonical structure to be imposed rather than assumed. The following section states the equal-time anticommutation relations and the reasons they, rather than commutators, are the consistent choice. The next section carries out the expansion in the parent article's plane-wave solutions. The section after that derives the anticommutators of the mode operators and builds the Fock space.
 
-The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which the companion article *The Spin–Statistics Theorem in Biquaternionic Form* treats on its own. A section relates the result to the KMS thermal-state framework. The article then gives an explicit accounting of what is standard and what is open, followed by a reference section, *The Gamma Formulation*, that records the gamma-matrix dictionary; the body itself is written in cells, and the gammas appear only there. It closes with the summary, the notation table, and further reading.
+The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which the companion article *The Spin–Statistics Theorem in Biquaternionic Form* treats on its own. A section relates the result to the KMS thermal-state framework. The article then gives an explicit accounting of what is standard and what is open, followed by a reference section, *The Legacy Gamma Formulation*, that records the gamma-matrix dictionary; the body itself is written in cells, and the gammas appear only there. It closes with the summary, the notation table, and further reading.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -511,7 +511,7 @@ Because the question addressed here is itself an open question of the framework,
 
 The extension attempted here is therefore **not canonical** in the framework: the part that works is the standard canonical quantization of the Dirac field, expressed in the parent article's plane-wave solutions and the material- and informational-sector notation; the part that is genuinely biquaternionic is not yet fixed. This article is the first attempt at the companion article's second-quantization question, and it should be read as delimiting the problem rather than closing it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body:
 

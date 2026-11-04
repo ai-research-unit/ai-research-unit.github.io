@@ -8,7 +8,7 @@ $$
 \boxed{\;\tilde\Xi^2=\tilde Q\;}.
 $$
 
-**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$; every double $i$ is reduced before a formula is read. The star is the Hermitian conjugation, $\tilde\Xi^{*}=\bar\Xi_t e_t-\bar{\vec\Xi}$, and the natural conjugation is $\tilde\Xi^{\natural}=\Xi_t e_t-\vec\Xi$. The two-sided cells act on a field $\psi$ by $L_aR_b\psi=a\psi b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$; the chirality cell is $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, and the Dirac adjoint is $\bar\psi=\psi^*iR_{\vec e_x}^{\mathrm{axf}}$. The gamma names of the cells are collected in *The Gamma Formulation* and are not used before it. For a radicand with vector part $\vec Q$, write $B^2=(\vec Q,\vec Q)$.
+**Notation, once.** The imaginary unit is the central $i$ of $\mathbb{B}$, with $i^2=-1$; every double $i$ is reduced before a formula is read. The star is the Hermitian conjugation, $\tilde\Xi^{*}=\bar\Xi_t e_t-\bar{\vec\Xi}$, and the natural conjugation is $\tilde\Xi^{\natural}=\Xi_t e_t-\vec\Xi$. The two-sided cells act on a field $\psi$ by $L_aR_b\psi=a\psi b$, with $L_a\psi=a\psi$ and $R_b\psi=\psi b$; the chirality cell is $\Gamma=-iR_{\vec e_z}^{\mathrm{axf}}$, and the Dirac adjoint is $\bar\psi=\psi^*iR_{\vec e_x}^{\mathrm{axf}}$. The gamma names of the cells are collected in *The Legacy Gamma Formulation* and are not used before it. For a radicand with vector part $\vec Q$, write $B^2=(\vec Q,\vec Q)$.
 
 The answer depends on the product, and the first job of the article is to keep the products apart. The **plain square** $\tilde\Xi^2$ has a finite root set for a non-scalar radicand, generically four elements, falling to two or to none. The **natural square** $\tilde\Xi\tilde\Xi^{\natural}=\langle\tilde\Xi\rangle_{\natural}e_t$ has the level set of the interval as its root set, and on the material sector that level set is the mass shell. The **Hermitian square** $\tilde\Xi\tilde\Xi^{*}$ produces a positive semidefinite value; the eigenvalues of the mass operator are the mass-squareds of a doublet. The three squares are three root problems, not one.
 
@@ -335,7 +335,7 @@ The article derives no mass, no coupling and no dynamics. The mass field is an i
 
 The bands must be kept apart. The plain root set of a nonzero central value is a finite set together with a four-parameter family; the natural root set is the shell; the Hermitian root set is the mass operator's family. A reader who applies the plain classification to the mass shell will look for a finite root set where there is a hyperboloid, and a reader who applies the natural level set to the plain problem will lose the multiplicity. The distinction is the first result of the article and the boundary of the other four.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The body names cells — $L_a$, $R_b$, $\Gamma=-iR_{\vec e_z}^{\mathrm{pau}}$ — without naming an algebra for them. This closing section supplies the dictionary and nothing in the body depends on it.
 

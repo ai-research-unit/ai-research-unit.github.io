@@ -388,7 +388,7 @@ None of this is derived by the framework. The hyperboloid models are a standard-
 
 6. **Empirical contact.** The decisive experiment is neutrinoless double beta decay. The framework offers no rate and no prediction; the question of whether it can be brought into contact with one is open.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. In cells they are
 

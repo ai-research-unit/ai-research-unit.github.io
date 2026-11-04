@@ -255,7 +255,7 @@ the same expression with the leptonic angles and phase. The framework's structur
 
 4. **The strong CP problem.** The CKM phase is not the only CP-odd parameter; the $\theta$ parameter is another, and its smallness is the strong CP problem. The $\theta$ parameter belongs to the corpus's general gauge apparatus; the fermion-sector statement is that the two phases are independent inputs in the framework.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The body of the article is written in the cells $L_aR_b$ of the Dirac module, $L_a\psi=a\psi$, $R_b\psi=\psi b$, so $L_aR_b\psi=a\psi b$. The gamma matrices are the same operators under their Clifford names. They are collected here so that a reader who comes from the matrix literature can translate, and they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
 
@@ -373,7 +373,7 @@ The framework's definite structural contribution is the location of the phase. T
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
 | $iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}$, $iL_{\vec e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}$ | Frame cells on the Dirac module; $L_{a}R_{b}\psi=a\psi b$ |
 | $\chi=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$, $P_L=\tfrac12(L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}+iR_{\vec e_z}^{\mathrm{axf}})=\tfrac12(I_4-\chi)$ | Chirality cell; left projector, rank two |
-| $\gamma_\mu$, $\gamma_5=\chi$ | The frame cells under their gamma names (§ The Gamma Formulation) |
+| $\gamma_\mu$, $\gamma_5=\chi$ | The frame cells under their gamma names (§ The Legacy Gamma Formulation) |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) factor |
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
 | $I_\Delta\otimes V$, $V\in \mathrm{U}(N_g)$ | The CKM matrix as a flavour-factor operator |

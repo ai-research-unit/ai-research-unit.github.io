@@ -4,7 +4,7 @@
 
 The left regular representation reads the algebra acting on itself. In the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, the matrix of left multiplication is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$, and the natural conjugation ${}^{\natural}$ is the signed reversal of the four Peirce coordinates,
 $$
-\mathsf M_4^{L}(\tilde Q^{\natural})=C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1},\qquad C=-\sigma_2\otimes\sigma_2,
+\mathsf M_{4L}(\tilde Q^{\natural})=C\,\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1},\qquad C=-\sigma_2\otimes\sigma_2,
 $$
 not the plain transpose. This article is the companion of *$M_2(\mathbb C)$ Representation : The General Quaternionic Algebra of Biquaternions*, and it reads the group on the regular matrices: the quaternionic product becomes $C X_1^{\mathsf T}C^{-1}X_2$, and the general quaternionic bilinear form becomes the trace pairing with the same carrier.
 
@@ -20,28 +20,28 @@ The involution $C$ is $C=-\sigma_2\otimes\sigma_2$; it satisfies $C^2=I_4$ and $
 
 ## The Representation
 
-**Definition.** The **left regular matrix** $\mathsf M_4^{L}(\tilde Q)$ is the matrix of $x\mapsto\tilde Qx$ in the canonical frame; its $j$-th column is the coordinate column of $\tilde QP_j$, with $(P_1,P_2,P_3,P_4)=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. Because the frame is the Peirce frame, the matrix is block diagonal:
+**Definition.** The **left regular matrix** $\mathsf M_{4L}(\tilde Q)$ is the matrix of $x\mapsto\tilde Qx$ in the canonical frame; its $j$-th column is the coordinate column of $\tilde QP_j$, with $(P_1,P_2,P_3,P_4)=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. Because the frame is the Peirce frame, the matrix is block diagonal:
 $$
-\boxed{\;\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)
+\boxed{\;\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)
 =\begin{pmatrix}A&0\\0&A\end{pmatrix},\qquad A=\mathsf M_2(\tilde Q)\;}
 $$
 The **right regular matrix** is the matrix of $x\mapsto x\tilde Q$,
 $$
-\mathsf M_4^{R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2 .
+\mathsf M_{4R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2 .
 $$
 The two families commute, $L_aR_b=R_bL_a$, because both send $x$ to $a\,x\,b$. The image $\mathbb B_L=\rho_L(\mathbb B)$ is a four-dimensional subalgebra of $M_4(\mathbb C)$ isomorphic to $\mathbb B$.
 
 **The two involutions.** The natural conjugation is the carrier $C$ acting on the transpose, and the Hermitian conjugation is the conjugate transpose:
 $$
-\mathsf M_4^{L}(\tilde Q^{\natural})=C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1},\qquad
-\mathsf M_4^{L}(\tilde Q^{*})=\mathsf M_4^{L}(\tilde Q)^{\dagger}.
+\mathsf M_{4L}(\tilde Q^{\natural})=C\,\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1},\qquad
+\mathsf M_{4L}(\tilde Q^{*})=\mathsf M_{4L}(\tilde Q)^{\dagger}.
 $$
 The first formula is the difference from the coefficient frame, where the natural conjugation is the plain transpose. The two frames are related by the Peirce change $C_{\Pi}$ of *Matrix Representations Conventions*, and $C_{\Pi}$ does not preserve transposition, only the operator.
 
 **The invariants.** The trace and the determinant read
 $$
-\operatorname{Tr}\mathsf M_4^{L}(\tilde Q)=4Q_t,\qquad
-\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}.
+\operatorname{Tr}\mathsf M_{4L}(\tilde Q)=4Q_t,\qquad
+\det\mathsf M_{4L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}.
 $$
 The trace is twice the trace $2Q_t$ of the block, and the determinant is the square of the determinant $\langle\tilde Q\rangle_{\natural}$ of the block, because the block occurs twice.
 
@@ -49,39 +49,39 @@ The trace is twice the trace $2Q_t$ of the block, and the determinant is the squ
 
 **Theorem (the carried product).** For all biquaternions,
 $$
-\boxed{\;\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)
-=C\,\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\,\mathsf M_4^{L}(\tilde Q_2)\;}
+\boxed{\;\mathsf M_{4L}(\tilde Q_1\star\tilde Q_2)
+=C\,\mathsf M_{4L}(\tilde Q_1)^{\mathsf T}C^{-1}\,\mathsf M_{4L}(\tilde Q_2)\;}
 $$
 where $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$.
 
-*Proof.* The representation is multiplicative and carries ${}^{\natural}$ to $C(\cdot)^{\mathsf T}C^{-1}$, so $\mathsf M_4^{L}(\tilde Q_1^{\natural}\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$.
+*Proof.* The representation is multiplicative and carries ${}^{\natural}$ to $C(\cdot)^{\mathsf T}C^{-1}$, so $\mathsf M_{4L}(\tilde Q_1^{\natural}\tilde Q_2)=C\mathsf M_{4L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_{4L}(\tilde Q_2)$.
 
 **The square.** At $\tilde Q_1=\tilde Q_2=\tilde Q$ the theorem gives
 $$
-\mathsf M_4^{L}(\tilde Q\star\tilde Q)=C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}\,\mathsf M_4^{L}(\tilde Q)
-=\mathsf M_4^{L}(\tilde Q^{\natural})\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}I_4,
+\mathsf M_{4L}(\tilde Q\star\tilde Q)=C\,\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1}\,\mathsf M_{4L}(\tilde Q)
+=\mathsf M_{4L}(\tilde Q^{\natural})\mathsf M_{4L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}I_4,
 $$
-because $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$. The square of the product is therefore the scalar matrix of the norm, and taking determinants gives $\det\mathsf M_4^{L}(\tilde Q)^2=\langle\tilde Q\rangle_{\natural}^{4}$, in agreement with $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$.
+because $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$. The square of the product is therefore the scalar matrix of the norm, and taking determinants gives $\det\mathsf M_{4L}(\tilde Q)^2=\langle\tilde Q\rangle_{\natural}^{4}$, in agreement with $\det\mathsf M_{4L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$.
 
-**The two-sided structure.** The right multiplications commute with the left ones, so the sixteen products $L_{\mu}R_{\nu}=\mathsf M_4^{L}(e_\mu)\mathsf M_4^{R}(e_\nu)$ need no ordering convention. In the canonical frame the left copy is the block-diagonal family $I_2\otimes A$ and the right copy the block-scalar family $A^{\mathsf T}\otimes I_2$; they are mutual commutants, and their intersection is the scalars.
+**The two-sided structure.** The right multiplications commute with the left ones, so the sixteen products $L_{\mu}R_{\nu}=\mathsf M_{4L}(e_\mu)\mathsf M_{4R}(e_\nu)$ need no ordering convention. In the canonical frame the left copy is the block-diagonal family $I_2\otimes A$ and the right copy the block-scalar family $A^{\mathsf T}\otimes I_2$; they are mutual commutants, and their intersection is the scalars.
 
 ## The General Quaternionic Bilinear Form in the Regular Representation
 
 **Theorem (the trace pairing).** For all biquaternions,
 $$
-\boxed{\;\tfrac12\operatorname{Tr}\bigl(\mathsf M_4^{L}(\tilde Q_1)\,C\,\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1}\bigr)
+\boxed{\;\tfrac12\operatorname{Tr}\bigl(\mathsf M_{4L}(\tilde Q_1)\,C\,\mathsf M_{4L}(\tilde Q_2)^{\mathsf T}C^{-1}\bigr)
 =2\,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}\;}
 $$
 so the trace pairing with the carrier in the second slot is twice the general quaternionic bilinear form of the algebra.
 
-*Proof.* The carrier identity gives $C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1}=\mathsf M_4^{L}(\tilde Q_2^{\natural})$, hence the left-hand side is $\tfrac12\operatorname{Tr}\mathsf M_4^{L}(\tilde Q_1\tilde Q_2^{\natural})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. The scalar part is symmetric under ${}^{\natural}$ and cyclic, so $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$.
+*Proof.* The carrier identity gives $C\mathsf M_{4L}(\tilde Q_2)^{\mathsf T}C^{-1}=\mathsf M_{4L}(\tilde Q_2^{\natural})$, hence the left-hand side is $\tfrac12\operatorname{Tr}\mathsf M_{4L}(\tilde Q_1\tilde Q_2^{\natural})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. The scalar part is symmetric under ${}^{\natural}$ and cyclic, so $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$.
 
 **The diagonal.** At $\tilde Q_1=\tilde Q_2=\tilde Q$,
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf M_4^{L}(\tilde Q)\,C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}\bigr)
+\tfrac12\operatorname{Tr}\bigl(\mathsf M_{4L}(\tilde Q)\,C\,\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1}\bigr)
 =2\langle\tilde Q\rangle_{\natural}=2\det\mathsf M_2(\tilde Q),
 $$
-while $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$. The factor two is the dimension of the module: the regular trace is four times the scalar part, where the $2\times2$ trace is twice it.
+while $\det\mathsf M_{4L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$. The factor two is the dimension of the module: the regular trace is four times the scalar part, where the $2\times2$ trace is twice it.
 
 **The Gram matrix and the signature.** In the coefficient basis the Gram matrix of the form is $I_4$; in the canonical frame it is the congruent matrix $C_{\Pi}^{\mathsf T}I_4C_{\Pi}$, and the signature of the realification is unchanged, $(4,4)$. The form is indefinite and non-degenerate.
 
@@ -91,14 +91,14 @@ while $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$. The
 
 ## Worked Examples
 
-**The identity.** For $\tilde Q=e_t$, $\mathsf M_4^{L}(e_t)=I_4$ and $\tfrac12\operatorname{Tr}(I_4)=2=2\langle e_t\rangle_{\natural}$; also $\det\mathsf M_4^{L}(e_t)=1=\langle e_t\rangle_{\natural}^{2}$.
+**The identity.** For $\tilde Q=e_t$, $\mathsf M_{4L}(e_t)=I_4$ and $\tfrac12\operatorname{Tr}(I_4)=2=2\langle e_t\rangle_{\natural}$; also $\det\mathsf M_{4L}(e_t)=1=\langle e_t\rangle_{\natural}^{2}$.
 
 **A basis element.** For $\tilde Q=\vec e_x$,
 $$
-\mathsf M_4^{L}(\vec e_x)=-i\,I_2\otimes\sigma_1
+\mathsf M_{4L}(\vec e_x)=-i\,I_2\otimes\sigma_1
 =\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
-and $C\mathsf M_4^{L}(\vec e_x)^{\mathsf T}C^{-1}=-\mathsf M_4^{L}(\vec e_x)$. The product theorem at $\vec e_x\star\vec e_x=\vec e_x^{\natural}\vec e_x=-\vec e_x^{2}=e_t$ reads
+and $C\mathsf M_{4L}(\vec e_x)^{\mathsf T}C^{-1}=-\mathsf M_{4L}(\vec e_x)$. The product theorem at $\vec e_x\star\vec e_x=\vec e_x^{\natural}\vec e_x=-\vec e_x^{2}=e_t$ reads
 $$
 C\,X^{\mathsf T}C^{-1}X=(-X)X=-X^{2}=I_4,
 $$
@@ -110,16 +110,16 @@ and $\langle\vec e_x\rangle_{\natural}=1$.
 
 **The generators.** In the canonical frame the four units go to
 $$
-\mathsf M_4^{L}(e_t)=I_4,\qquad
-\mathsf M_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+\mathsf M_{4L}(e_t)=I_4,\qquad
+\mathsf M_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 $$
-\mathsf M_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-\mathsf M_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
+\mathsf M_{4L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+\mathsf M_{4L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
 $$
 A general element is the block matrix
 $$
-\mathsf M_4^{L}(\tilde Q)=\begin{pmatrix}A&0\\0&A\end{pmatrix},\qquad
+\mathsf M_{4L}(\tilde Q)=\begin{pmatrix}A&0\\0&A\end{pmatrix},\qquad
 A=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix},
 $$
 with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$.
@@ -132,18 +132,18 @@ and the involution is the trace complement
 $$
 C\,X^{\mathsf T}C^{-1}=2Q_tI_4-X,
 $$
-because $X+\mathsf M_4^{L}(\tilde Q^{\natural})=\mathsf M_4^{L}(\tilde Q+\tilde Q^{\natural})=2Q_tI_4$. At the unit $\vec e_x$ the matrix is symmetric and the involution returns its negative, $C X^{\mathsf T}C^{-1}=-X=\mathsf M_4^{L}(\vec e_x^{\natural})$.
+because $X+\mathsf M_{4L}(\tilde Q^{\natural})=\mathsf M_{4L}(\tilde Q+\tilde Q^{\natural})=2Q_tI_4$. At the unit $\vec e_x$ the matrix is symmetric and the involution returns its negative, $C X^{\mathsf T}C^{-1}=-X=\mathsf M_{4L}(\vec e_x^{\natural})$.
 
 **The product, entry by entry.** At the pair $\vec e_x,\vec e_y$,
 $$
-\mathsf M_4^{L}(\vec e_x\star\vec e_y)=C\,X_x^{\mathsf T}C^{-1}X_y=(-X_x)X_y=-X_xX_y=-\mathsf M_4^{L}(\vec e_z),
+\mathsf M_{4L}(\vec e_x\star\vec e_y)=C\,X_x^{\mathsf T}C^{-1}X_y=(-X_x)X_y=-X_xX_y=-\mathsf M_{4L}(\vec e_z),
 $$
 which is $\vec e_x\star\vec e_y=-\vec e_z$. The square is the scalar matrix of the norm,
 $$
 C\,X_x^{\mathsf T}C^{-1}X_x=(-X_x)X_x=-X_x^{2}=I_4=\langle\vec e_x\rangle_{\natural}I_4 .
 $$
 
-**The four words.** The four general products are four words in $X=\mathsf M_4^{L}(\tilde Q_1)$ and $Y=\mathsf M_4^{L}(\tilde Q_2)$:
+**The four words.** The four general products are four words in $X=\mathsf M_{4L}(\tilde Q_1)$ and $Y=\mathsf M_{4L}(\tilde Q_2)$:
 
 | product | first slot | second slot | the word |
 |---|---|---|---|
@@ -167,18 +167,18 @@ the plain, the quaternionic, the Hermitian and the Krein form. The factor is $\t
 
 ## Summary
 
-The left regular representation in the canonical frame is $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is the signed reversal $\mathsf M_4^{L}(\tilde Q^{\natural})=C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the conjugate transpose. The quaternionic product is the carried product $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$, whose square is the scalar matrix $\langle\tilde Q\rangle_{\natural}I_4$. The general quaternionic bilinear form is the trace pairing $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; its diagonal is twice the algebraic norm, its realification has signature $(4,4)$, its null set is the zero-divisor cone of real dimension $6$, and its isometry group is $O_4(\mathbb C)$, of realification $O(4,4)$.
+The left regular representation in the canonical frame is $\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is the signed reversal $\mathsf M_{4L}(\tilde Q^{\natural})=C\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the conjugate transpose. The quaternionic product is the carried product $\mathsf M_{4L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_{4L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_{4L}(\tilde Q_2)$, whose square is the scalar matrix $\langle\tilde Q\rangle_{\natural}I_4$. The general quaternionic bilinear form is the trace pairing $\tfrac12\operatorname{Tr}(\mathsf M_{4L}(\tilde Q_1)C\mathsf M_{4L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; its diagonal is twice the algebraic norm, its realification has signature $(4,4)$, its null set is the zero-divisor cone of real dimension $6$, and its isometry group is $O_4(\mathbb C)$, of realification $O(4,4)$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$ | the $4\times4$ left regular matrix, $\operatorname{Tr}=4Q_t$, $\det=\langle\tilde Q\rangle_{\natural}^{2}$ |
-| $\mathsf M_4^{R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$ | the right regular matrix, the commuting partner |
+| $\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$ | the $4\times4$ left regular matrix, $\operatorname{Tr}=4Q_t$, $\det=\langle\tilde Q\rangle_{\natural}^{2}$ |
+| $\mathsf M_{4R}(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes I_2$ | the right regular matrix, the commuting partner |
 | $C=-\sigma_2\otimes\sigma_2$ | the carrier of the natural conjugation, $C^2=I_4$, $C=C^{\dagger}$ |
-| $\mathsf M_4^{L}(\tilde Q^{\natural})=C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ | the natural conjugation |
-| $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$ | the quaternionic product |
-| $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | the general quaternionic bilinear form |
+| $\mathsf M_{4L}(\tilde Q^{\natural})=C\mathsf M_{4L}(\tilde Q)^{\mathsf T}C^{-1}$ | the natural conjugation |
+| $\mathsf M_{4L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_{4L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_{4L}(\tilde Q_2)$ | the quaternionic product |
+| $\tfrac12\operatorname{Tr}(\mathsf M_{4L}(\tilde Q_1)C\mathsf M_{4L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | the general quaternionic bilinear form |
 | $O_4(\mathbb C)$, $O(4,4)$ | the isometry group and its realification |
 
 ## Further Reading

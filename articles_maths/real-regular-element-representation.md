@@ -62,7 +62,7 @@ $$
 R : \mathbb{R} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{R}), \qquad R_{q}(b) = b q .
 $$
 
-**Proposition.** $\mathsf{M}_1^{R} = \mathsf{M}_1$.
+**Proposition.** $\mathsf{M}_{1R} = \mathsf{M}_1$.
 
 **Proof.** The algebra is commutative, so $b q = q b$ for all $b$, hence the two endomorphisms agree on every element.
 

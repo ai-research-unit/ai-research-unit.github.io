@@ -110,7 +110,7 @@ The minimal faithful matrix model of the eight algebras climbs from the scalars 
 | symbol | meaning |
 |---|---|
 | $M_n(F)$ | the algebra of $n\times n$ matrices over $F$ |
-| $\mathsf{M}_4,\mathsf{M}_4^{R}$ | the left and right regular representations |
+| $\mathsf{M}_{4L},\mathsf{M}_{4R}$ | the left and right regular representations |
 | $L_q,R_q$ | the Cayley matrices of left and right quaternion multiplication |
 | $\det\mathsf{M}_4$ | the determinant of the Cayley matrix |
 | $N$ | the norm of the algebra |

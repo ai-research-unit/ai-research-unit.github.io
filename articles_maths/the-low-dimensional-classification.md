@@ -278,7 +278,7 @@ The table is stated for a field of characteristic not $2$ in which $-1$ is not a
 
 Echoing the one-dimensional case, one has $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and $\mathrm{Cl}_{0,1}\cong\mathbb{C}$ when $F=\mathbb{R}$; $\mathrm{Cl}_{3,0}\cong\mathbb{C}\mathrm{l}_2\cong M_2(\mathbb{C})\cong\mathbb{B}$, the biquaternion algebra; $\mathrm{Cl}_{1,1}$ is the four-dimensional algebra called the split quaternions in the classical literature; and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ is the quaternion algebra. The entries with centre larger than $F$ are exactly those of odd rank $n$, in agreement with the general rule that the volume element is central and nontrivial when $n$ is odd.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are the generators of the $\mathrm{Cl}_{3,0}$ reading of the biquaternion algebra, the literature frame of $\mathbb{B}\cong M_2(\mathbb{C})$, not a different algebra.
 

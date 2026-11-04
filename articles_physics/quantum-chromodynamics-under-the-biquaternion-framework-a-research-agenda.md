@@ -265,7 +265,7 @@ With those two settled, the rest of the agenda becomes ordinary work: construct 
 
 Finally, the genre's standing caution applies here in its strongest form. *The Empirical Status of the Biquaternion Framework* records that on every domain developed, the framework is so far empirically equivalent to the standard theory it reformulates. A biquaternionic colour theory, if one is ever constructed, would inherit that position unless it makes a prediction standard QCD does not; and a theory whose colour group, matter content, coupling, and confinement mechanism are all imported has no prospect of doing so. The agenda's most useful output may be to make that consequence visible early, rather than to produce a construction that appears to answer QCD while assuming all of it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame names of the five cells used above, and they are used in this section and nowhere else in the article.
 

@@ -94,7 +94,7 @@ so $D_{\mathrm{alg}}$ is a skew-adjoint operator with purely imaginary spectrum 
 
 **Example (the biquaternion algebra).** In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$ with the frame $\vec e_x,\vec e_y,\vec e_z$ of square $-1$, the Dirac element $D_{\mathrm{alg}} = L_{\vec e_x}+L_{\vec e_y}+L_{\vec e_z}$ is skew-adjoint with $D_{\mathrm{alg}}^{2} = -3\,\mathrm{id}$ and $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}} = 3\,\mathrm{id}$; the real operator $iD_{\mathrm{alg}}$ is self-adjoint with spectrum $\{\pm\sqrt3\}$ and the eigen-spinors form an orthonormal basis of $\mathbb{B}$ for the form $\mathrm{Sc}(x^{\dagger}y)$. This is the smallest definite model with a non-abelian spin group, and it realises the spectral gap explicitly.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

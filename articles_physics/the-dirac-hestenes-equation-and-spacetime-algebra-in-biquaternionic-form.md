@@ -309,7 +309,7 @@ with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\
 
 6. **Empirical contact.** As everywhere, an equivalent rewriting carries no prediction. The question is whether the identification of $i$ with $\omega$ lets the framework import any of STA's structural results, and if so whether any of them is testable.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb C)=M_4(\mathbb C)$, not a different algebra. They are single cells $L_aR_b$, and a general element of $M_4(\mathbb C)$ is a sum of at most four such cells. The four generator cells $G_\mu$ and the chirality cell are:
 

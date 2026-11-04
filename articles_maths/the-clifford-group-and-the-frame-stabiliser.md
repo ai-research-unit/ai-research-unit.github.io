@@ -197,7 +197,7 @@ and its kernel is $\{\pm I\}$. Every element has determinant $1$, so $G\subset S
 
 **The biquaternion reading.** The spin group is the norm-one biquaternion group; the Clifford group adds the scalars; the frame stabiliser is the scalars alone. The two chiral factors of the complex spin group are the left and right copies of $\mathbb{B}$; the mass block is the off-diagonal mixing. The finite extraspecial group is the discrete skeleton of the two-sided basis.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

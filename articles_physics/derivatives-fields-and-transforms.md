@@ -96,13 +96,13 @@ The other operator is the plain bilinear and the Krein norm. On the material sec
 
 ### The Determinant of the First-Order Operator
 
-The left regular matrix $\mathsf M_4^L(\tilde Q)$ has determinant $\langle\tilde Q\rangle_{\natural}^2$. Read on the gradient, with $\langle\tilde\nabla\rangle_{\natural}=\Box$, the same formula gives
+The left regular matrix $\mathsf M_{4L}(\tilde Q)$ has determinant $\langle\tilde Q\rangle_{\natural}^2$. Read on the gradient, with $\langle\tilde\nabla\rangle_{\natural}=\Box$, the same formula gives
 
 $$
-\det\mathsf M_4^L(\tilde\nabla)=\Box^2.
+\det\mathsf M_{4L}(\tilde\nabla)=\Box^2.
 $$
 
-The matrix is block diagonal with two equal blocks in the Peirce display, $\mathsf M_4^L(\tilde\nabla)=I_2\otimes A_+(\tilde\nabla)$; the two blocks are equal, and each carries one factor:
+The matrix is block diagonal with two equal blocks in the Peirce display, $\mathsf M_{4L}(\tilde\nabla)=I_2\otimes A_+(\tilde\nabla)$; the two blocks are equal, and each carries one factor:
 
 $$
 \boxed{\;\det A_+(\tilde\nabla)=\Box\;}.

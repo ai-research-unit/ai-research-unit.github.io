@@ -172,7 +172,7 @@ up to the scalar $i$; its even part is the complexified even Clifford algebra $M
 
 **The invariant statement.** The correct invariant statement is: the sixteen two-sided operators are a Clifford basis up to scalars; the five cells are a frame inside it; the grade table is the matrix of the change of basis between the two-sided basis and the Clifford basis. The table above is one such matrix, for the frame of the corpus.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are the frame $v_\mu$ of the Clifford algebra written as $4\times4$ matrices; the body writes the cells.
 

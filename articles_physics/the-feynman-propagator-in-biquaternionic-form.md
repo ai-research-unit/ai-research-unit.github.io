@@ -28,7 +28,7 @@ $$
 
 That display is the whole relation between the two equations, and it says three things. The leading term is the $\natural$-member of the pair, not a new operator. The mass sits on the far side, and it reaches the field only through its conjugate: comparing $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$ with $\mathcal{N}F=0$ reads the second field as $\tilde\Psi_R=-i\overline{F}\,\vec e_z$, a conjugation and a fixed direction and nothing else. The price is that $\mathcal{N}$ is not left multiplication by an element of $\mathbb{B}$, which is why the two forms are not the same operator. The dictionary $A$ is a real-linear bijection, so the two forms describe the same field; what changes is the shape of the operator, not the physics. The conjugation in the mass term pairs $F$ with $\overline{F}$, so a solution carries both frequency branches at once; in the time-harmonic case the parent article exhibits exactly that, as a sum of two exponentials of opposite sign.
 
-Everything below is written for the one-sided pair, whose spinor-module representative is the ordinary $(\slashed p-m)\psi=0$. That is the form written on the chiral halves $S$ and $S^{\mathrm{c}}$, which is the decomposition the chirality grading of section *The Gamma Formulation* labels.
+Everything below is written for the one-sided pair, whose spinor-module representative is the ordinary $(\slashed p-m)\psi=0$. That is the form written on the chiral halves $S$ and $S^{\mathrm{c}}$, which is the decomposition the chirality grading of section *The Legacy Gamma Formulation* labels.
 
 This article is about the next object in that quantization: the **two-point function** of the quantized field on the spinor-module representative, the Feynman propagator
 
@@ -96,7 +96,7 @@ $$
 \qquad g=\mathrm{diag}(+1,-1,-1,-1),\qquad \mathbf{1}=L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}},
 $$
 
-with $\mathbf{1}$ the identity cell. The body is written in these cells; section *The Gamma Formulation* gives their standard names.
+with $\mathbf{1}$ the identity cell. The body is written in these cells; section *The Legacy Gamma Formulation* gives their standard names.
 
 The mode operators obey
 
@@ -365,7 +365,7 @@ At finite temperature the time-ordered two-point function is not given by a vacu
 - **The meaning of the $\mathbb{M}_-$ location.** That the deformation lies along the $ict'$ direction may be a genuine structural fact — the same direction as the KMS strip — or an artifact of writing $\epsilon$ as a scalar. The alternative reading above, in which the same shift appears as a Hermitian displacement of $\tilde P$, is the concrete form of the doubt: the sector depends on whether one deforms the scalar or the momentum. We have not distinguished the two readings.
 - **Empirical content.** As with the rest of the framework, whether any of this yields a prediction distinguishing it from standard quantum field theory is open, and the present article changes nothing about it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

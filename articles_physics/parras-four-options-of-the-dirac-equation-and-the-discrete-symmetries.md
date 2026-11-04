@@ -8,7 +8,7 @@ The four options are not four theories. They are four **inequivalent rewritings*
 
 Two conventions frame everything below.
 
-- **The article is written in cells.** A two-sided multiplication is a cell, and every operator of the body is a cell or a sum of cells. The Clifford names of the same five cells are collected once, in the closing section *The Gamma Formulation*, and none of those names is used before it.
+- **The article is written in cells.** A two-sided multiplication is a cell, and every operator of the body is a cell or a sum of cells. The Clifford names of the same five cells are collected once, in the closing section *The Legacy Gamma Formulation*, and none of those names is used before it.
 - **The corpus carries two Dirac equations, not one:** the one-sided chiral pair on the spinor module, and the two-sided single equation on the algebra. Parra's options belong to the second family. The section *The Two Dirac Equations* states both and places the options, and the placement is what joins Parra's spin bivector to the corpus's chirality cell.
 
 The article is an **equivalent rewriting**, as everywhere in this series: the four options are four forms of the standard equation, and nothing new is predicted. What is new to the corpus is the object: the discrete symmetries organising the four spinor types, and the algebraic datum that keeps them apart. The construction is taken from Parra as reported by Fauser; the corpus reproduces the report and does not claim to have consulted Parra's papers, which are unpublished or difficult to obtain.
@@ -114,7 +114,7 @@ $$
 R_{e_{21}}=-i\,\chi,\qquad (R_{e_{21}})^2=(-i)^2\chi^2=-I_4,\qquad \chi^2=I_4 .
 $$
 
-The first identity is the dictionary of *The Gamma Formulation*: the spin bivector is the frame product $e_2e_1=-\vec e_z$, and the cell of a product is the composition of the cells, $R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}}$. The two squares are the second point. Right multiplication by the spin bivector is a **complex structure** on the module, and right multiplication by the chirality cell is an **involution**; the two differ by a factor $i$, and $i^2=-1$ is the whole of the difference. The corpus's Hestenes article separates the same two objects by the same test, giving the phase to the spin plane, $(\omega\sigma_3)^2=-1$, and not to the chirality; in the cell language the test is the square, $-I_4$ against $I_4$. That is the precise sense in which the options join the two-sided operator theory to chirality: the object Parra multiplies on the right and the object the two-sided equation multiplies on the right are the same cell up to the central sign.
+The first identity is the dictionary of *The Legacy Gamma Formulation*: the spin bivector is the frame product $e_2e_1=-\vec e_z$, and the cell of a product is the composition of the cells, $R_{e_{21}}=R_{-\vec e_z}^{\mathrm{axf}}=-R_{\vec e_z}^{\mathrm{axf}}$. The two squares are the second point. Right multiplication by the spin bivector is a **complex structure** on the module, and right multiplication by the chirality cell is an **involution**; the two differ by a factor $i$, and $i^2=-1$ is the whole of the difference. The corpus's Hestenes article separates the same two objects by the same test, giving the phase to the spin plane, $(\omega\sigma_3)^2=-1$, and not to the chirality; in the cell language the test is the square, $-I_4$ against $I_4$. That is the precise sense in which the options join the two-sided operator theory to chirality: the object Parra multiplies on the right and the object the two-sided equation multiplies on the right are the same cell up to the central sign.
 
 **The odd velocity.** Parra's mass term multiplies by the velocity $e_0$, an odd element, and an even field multiplied on the right by an odd element leaves the even carrier, so the term sits in the odd sector of the algebra. The corpus writes the same structure inside the even carrier as the chirality cell acting on the conjugated field, $m\chi\bar\Psi$: the conjugation absorbs the oddness, and the fixed direction plays the part of the velocity — a conjugation and a fixed direction, and nothing else. Daviau's $m\varphi^{*}$ is the same replacement in the space Clifford algebra. The two mass terms are one structure in two carriers, and the article writes the corpus's representative throughout. What the passage costs is linearity: Parra's mass term is linear in the field and the corpus's is antilinear, which is the difference the companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* records between the two kinds of mass.
 
@@ -230,7 +230,7 @@ Fauser draws a structural conclusion from the four options. In the geometric-alg
 
 7. **Empirical contact.** None is claimed. The options are equivalent rewritings; the question, as everywhere, is whether isolating them makes a structural fact of the framework easier to see.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The left and right multiplications act by $L_a\psi=a\psi$ and $R_b\psi=\psi b$, and the four frame cells and the chirality cell of the body become
 

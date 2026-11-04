@@ -4,7 +4,7 @@
 
 The $2\times2$ image is the one in which the algebra looks like the quantum mechanics of a two-state system. The reason is a single line: the three Hermitian units of the algebra map to the three Pauli matrices, and the three vector units map to $-i$ times them. Everything else follows from that line: the observables as Hermitian matrices, the states as positive trace-one matrices, the spin as a triple of commutators, the Bloch ball as the trace-one slice of a cone.
 
-The matrix has two uses, and the article keeps them apart. The **element image** $\mathsf M_2(\tilde Q)$ is the element acting on the spinor module; it carries the data an object acts on. The **map image** $\mathsf M_4^{L}(\tilde Q)$ is the element acting on the algebra itself; it carries the objects. The sandwich is a third matrix, quadratic in the element. The three have different traces, different determinants and different spectra, and only the vanishing set is common. The doubling is the dimension of the module, not a physical factor.
+The matrix has two uses, and the article keeps them apart. The **element image** $\mathsf M_2(\tilde Q)$ is the element acting on the spinor module; it carries the data an object acts on. The **map image** $\mathsf M_{4L}(\tilde Q)$ is the element acting on the algebra itself; it carries the objects. The sandwich is a third matrix, quadratic in the element. The three have different traces, different determinants and different spectra, and only the vanishing set is common. The doubling is the dimension of the module, not a physical factor.
 
 The article states the correspondence and reads its invariants: the trace as the weight, the determinant as the norm and the mixedness, the eigenvalues as the doubled rapidity, the phase as the fibre of the Hopf bundle. It proves nothing: the identities are proved in the mathematics articles named in the source table. What it adds is the reading, and the separation between what the reading says and what it does not.
 
@@ -15,7 +15,7 @@ The article states the correspondence and reads its invariants: the trace as the
 | The assignment $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, the isomorphism and the inverse map | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | The Hermitian subspace $\mathbb M_+$ as the Hermitian matrices, the anti-Hermitian $\mathbb M_-$ as the anti-Hermitian matrices, and $\mathbb M_-=i\mathbb M_+$ | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$, $\det\mathsf M_2(\tilde Q)=N$, and the norm on each subspace | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
-| The regular image $\mathsf M_4^{L}(\tilde Q)$, its trace and determinant, and the block splitting | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
+| The regular image $\mathsf M_{4L}(\tilde Q)$, its trace and determinant, and the block splitting | [The $M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) |
 | The sandwich operator, its spectrum $\lambda_i\bar\lambda_j$, its determinant and trace | [Two-Sided Operator and the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-an-n-regular-spectrally-regular-biquaternion.html) |
 | Hermitian conjugation ${}^{*}$ as the conjugate transpose, and the four involutions as four matrix operations | [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html) |
 | The rank-one matrices, the two strata of the null cone and the trace-one idempotents | [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](../articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html) |
@@ -83,15 +83,15 @@ The algebra is isomorphic to $M_2(\mathbb{C})$, and the regular representation g
 $$
 \mathsf M_2(\tilde Q)\in M_2(\mathbb{C}),
 \qquad
-\mathsf M_4^{L}(\tilde Q)\in M_4(\mathbb{C}).
+\mathsf M_{4L}(\tilde Q)\in M_4(\mathbb{C}).
 $$
 
 The first is the matrix of the element as it acts on the spinor module $S\cong\mathbb{C}^2$. The second is the matrix of the element as it acts on the algebra, taken as a module over itself, in the axis-free frame of *Matrix Representations Conventions*, §*The 4×4 Matrix Representation*.
 
-The two are the same object seen through two kinds of data. $\mathsf M_2(\tilde Q)$ is the matrix of an element acting on the data an object acts on; $\mathsf M_4^{L}(\tilde Q)$ is the matrix of an element acting on the objects themselves. The regular module is $S\oplus S$, split by the two minimal left ideals, which are the two column chiralities. In that frame the regular image is block diagonal with two equal blocks, $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, and
+The two are the same object seen through two kinds of data. $\mathsf M_2(\tilde Q)$ is the matrix of an element acting on the data an object acts on; $\mathsf M_{4L}(\tilde Q)$ is the matrix of an element acting on the objects themselves. The regular module is $S\oplus S$, split by the two minimal left ideals, which are the two column chiralities. In that frame the regular image is block diagonal with two equal blocks, $\mathsf M_{4L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, and
 
 $$
-\mathsf M_4^{L}\;\cong\;\mathsf M_2\oplus\mathsf M_2 .
+\mathsf M_{4L}\;\cong\;\mathsf M_2\oplus\mathsf M_2 .
 $$
 
 The map-data image is the element-data image taken twice, one copy per chirality.
@@ -107,7 +107,7 @@ The boundary is that the two pictures are one representation taken twice, not tw
 The sandwich is a third matrix,
 
 $$
-\operatorname{H}_{\tilde Q}=\mathsf M_4^{L}(\tilde Q)\mathsf M_4^{R}(\tilde Q^{*}),
+\operatorname{H}_{\tilde Q}=\mathsf M_{4L}(\tilde Q)\mathsf M_{4R}(\tilde Q^{*}),
 $$
 
 quadratic in the parameter and a congruence rather than a similarity. Its spectrum is $\lambda_i\bar\lambda_j$: the squares of the element's eigenvalues, with the two transverse directions fixed. The element stores half of the frame change; the congruence stores the whole of it.
@@ -377,7 +377,7 @@ The correspondence does not say that nature is complex, and it does not derive t
 | symbol | meaning |
 | --- | --- |
 | $\mathsf M_2(\tilde Q)$ | the element image; $\det=N$, $\operatorname{Tr}=2Q_t$ |
-| $\mathsf M_4^{L}(\tilde Q)$ | the left regular image; $\det=N^{2}$, $\operatorname{Tr}=4Q_t$ |
+| $\mathsf M_{4L}(\tilde Q)$ | the left regular image; $\det=N^{2}$, $\operatorname{Tr}=4Q_t$ |
 | $\operatorname{H}_{\tilde Q}$ | the sandwich; $\det=\lvert N\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a trace-one state of the Bloch ball |
 | $\det\mathsf M_2(\tilde{Ϛ})=\tfrac14(1-r^{2})$ | the mixedness |

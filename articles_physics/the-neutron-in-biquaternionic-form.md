@@ -216,7 +216,7 @@ Two further gaps are the article's own, and they are narrower. The **neutrality 
 
 Finally, the standing **empirical-contact** gap applies with full force. Nothing here distinguishes the framework's neutron from the Standard Model's, because the framework reaches only the generic fermion structure they share; the neutron-specific content is imported. The article therefore makes no prediction, claims no prediction, and leaves the neutron's structure exactly where standard physics found it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame cells of the body written as letters, and this section is the only place in the article where they appear: every section above is written in cells.
 
@@ -308,7 +308,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $Ϙ\psi=0$ | Neutrality constraint; kernel trivial unless $ϙ_L=0$ or $ϙ_R=0$ |
 | $\bar{\Psi}\Psi = \psi_L^{\dagger}\psi_R+\psi_R^{\dagger}\psi_L$ | Dirac bilinear, chirality-odd |
 | $\mathcal{N}F = (i\partial/\partial t'+D_3)F - m_n i\,\overline{F}\,\vec e_z$ | Two-sided Dirac equation, $F\in\mathbb{B}$; bar is the coefficientwise conjugation |
-| $\gamma_\mu$, $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Gamma Formulation* |
+| $\gamma_\mu$, $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}=P_R-P_L$ | Gamma frame of $\mathrm{Cl}_{1,3}(\mathbb{C})$; used only in §*The Legacy Gamma Formulation* |
 | $G_N = \sigma\exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |
 | $m_n$, $\mu_n = -1.9130427\,\mu_N$ | Neutron mass (input) and measured magnetic moment (outside) |

@@ -26,7 +26,7 @@ and $\mathcal{D}(w)=\sum_\mu w_\mu\,iC_\mu$ contracts the four generators with t
 $$
 \Gamma=-iC_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},\qquad \Gamma^2=e_t,\qquad \Gamma\,C_\mu=-C_\mu\Gamma,\qquad \Gamma=iC_0C_1C_2C_3 .
 $$
-The gammas are a frame of this algebra. They appear once, in §The Gamma Formulation, and nowhere in the body.
+The gammas are a frame of this algebra. They appear once, in §The Legacy Gamma Formulation, and nowhere in the body.
 
 ## The Parent Action
 
@@ -273,7 +273,7 @@ The topological mass of the gauge field and the phase mass of the Dirac field ar
 
 These questions are open.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

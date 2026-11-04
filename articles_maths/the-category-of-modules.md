@@ -264,7 +264,7 @@ P\xi=\begin{pmatrix}az+b\\ cz+d\end{pmatrix},
 z'=\frac{az+b}{cz+d},
 $$
 
-which is the Möbius transformation attached to $P$. A nonzero scalar multiple of $P$ gives the same transformation, so the formula depends only on the class $[P]\in PGL_2(\mathbb{C})$, and composition of transformations is multiplication of matrices. In this chart the idempotent $\tilde\Pi_-$ sits at $z=0$ and $\tilde\Pi_+$ at $z=\infty$; the point at infinity is the line of the first basis vector.
+which is the Möbius transformation attached to $P$. A nonzero scalar multiple of $P$ gives the same transformation, so the formula depends only on the class $[P]\in PGL_2(\mathbb{C})$, and composition of transformations is multiplication of matrices. In this chart the idempotent $\tilde\Pi_+$ sits at $z=0$ and $\tilde\Pi_-$ at $z=\infty$, since $\ker\tilde\Pi_+=\operatorname{span}(e_2)$ and $\ker\tilde\Pi_-=\operatorname{span}(e_1)$; the point at infinity is the line of the first basis vector.
 
 **Transitivity and stabilisers.** The action is transitive, since any line can be sent to any other by an invertible matrix, and it is simply transitive on ordered triples of distinct points. The stabiliser of $z=0$ is the set of matrices with $b=0$,
 

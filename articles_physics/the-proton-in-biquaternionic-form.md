@@ -281,7 +281,7 @@ The table sorts the proton's properties by the status they have in the framework
 
 7. **Empirical contact.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard physics. The construction above is a reformulation, and a reformulation that must import the proton's mass, charge and compositeness has no prospect of doing so.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 No gamma appears in the sections above, and this section is where it does. Its purpose is to give the same cells their standard names, for a reader who wants the Dirac notation, and to state once the identities that notation carries. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

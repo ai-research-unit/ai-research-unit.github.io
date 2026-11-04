@@ -8,7 +8,7 @@ In four-dimensional Minkowski space the three spaces do have dimensions four, fo
 
 The construction is a companion to the corpus's spinor-module articles. There, the Dirac field lives in a minimal left ideal of $\mathbb{B}$ and the Lorentz group acts on the left; here, a *different* linear representation of the same group — on a complex four-vector $G_\mu$ — carries the same field, and the two representations are related by fixed neutral elements. What is gained is a dictionary in which every Dirac bilinear becomes a bilinear in $G$ and its conjugate; what is paid is a preferred timelike direction, the neutral element $k_\mu$, which the dictionary needs and the metric does not supply.
 
-The conventions are those of the companion articles and of *The Dirac Equation in Biquaternionic Form*: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, the quaternion relations $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$ cyclically, and the central scalar imaginary $i$, with $i^2=-1$. The article is written in the **cell algebra**: a generator is the cell $C_\mu=iL_{a_\mu}R_{b_\mu}$, acting by $C_\mu\Psi=i a_\mu\Psi b_\mu$, and the gamma matrices are a frame of that algebra, displayed once in §The Gamma Formulation. The source's four-vector indices $\mu = 0,1,2,3$ are ordinary Minkowski indices with metric
+The conventions are those of the companion articles and of *The Dirac Equation in Biquaternionic Form*: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, the quaternion relations $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$ cyclically, and the central scalar imaginary $i$, with $i^2=-1$. The article is written in the **cell algebra**: a generator is the cell $C_\mu=iL_{a_\mu}R_{b_\mu}$, acting by $C_\mu\Psi=i a_\mu\Psi b_\mu$, and the gamma matrices are a frame of that algebra, displayed once in §The Legacy Gamma Formulation. The source's four-vector indices $\mu = 0,1,2,3$ are ordinary Minkowski indices with metric
 
 $$
 g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1),
@@ -202,7 +202,7 @@ The charge current is $e\,\pi_\mu = e\sum_{\rho,\sigma}\epsilon_\rho\epsilon_\si
 $$
 \Gamma=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}},
 $$
-and it anticommutes with each $C_\mu$, so it separates the two chiral halves of every spinor. Its representative on the reference frame, written in §The Gamma Formulation, is the usual fifth gamma. The source further rewrites the mass form as
+and it anticommutes with each $C_\mu$, so it separates the two chiral halves of every spinor. Its representative on the reference frame, written in §The Legacy Gamma Formulation, is the usual fifth gamma. The source further rewrites the mass form as
 
 $$
 \bar\Psi\Psi = \sum_\mu\epsilon_\mu\, K_\mu\,\bar\Psi\, C_\mu\Psi
@@ -466,7 +466,7 @@ so the preferred frame is not put in by hand in the final form, it is the algebr
 
 These questions are open.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The four gammas are the generator cells of the body, $\gamma_\mu=C_\mu$, and together they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

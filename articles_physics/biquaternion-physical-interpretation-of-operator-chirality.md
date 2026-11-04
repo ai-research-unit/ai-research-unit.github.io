@@ -153,7 +153,7 @@ and reads $\chi$ on the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ as $\operat
 $$
 \gamma_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}=-iR_{\vec e_z}^{\mathrm{axf}}=\rho(\chi),
 $$
-whose Peirce array is $\operatorname{diag}(-I_2,I_2)$ — the section that reads it in that display is §*The Gamma Formulation* — and whose axis-free array is a signed permutation. The two readings agree on every number they print.
+whose Peirce array is $\operatorname{diag}(-I_2,I_2)$ — the section that reads it in that display is §*The Legacy Gamma Formulation* — and whose axis-free array is a signed permutation. The two readings agree on every number they print.
 
 **What it cost.** Three structures that the physics does not need: an adjoined root, a complexification of the real algebra, and a declaration of a module. Each of them is a choice, and each of them is invisible in the array, which is why the two readings were taken for one another for as long as they were.
 
@@ -184,7 +184,7 @@ so for that one root the Peirce projector and the chiral projector are the same 
 - **The frame is still a choice.** $\gamma_5$ is the volume cell of a declared frame; a different frame gives a different fifth cell and the same algebra.
 - **No claim that the Clifford reading is wrong.** It is a correct display of the same operators, and the article says where it stops being a foundation.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 **What the frame is.** The gammas are a frame of the algebra, five cells of the sixteen, and not a different algebra. In that frame the chirality operator, the side and the split read as follows.
 

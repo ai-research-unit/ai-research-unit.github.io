@@ -148,7 +148,7 @@ an eight-real-dimensional algebra whose two Peirce carriers, minimal left ideals
 
 This containment does not turn the Dirac–Kähler equation into a biquaternion equation. The operator $d-\delta$ is **odd**: the exterior derivative raises the degree and the codifferential lowers it, so $(d-\delta+m)\Phi=0$ couples the even and odd parts of $\Phi$ and does not restrict to either. A biquaternion-valued field alone does not satisfy the Dirac–Kähler equation; one must carry the odd components too. What the containment does give is a natural statement of *why* the framework's equation and the Dirac–Kähler equation are two readings of one geometric object: both are square roots of a Laplacian, and both are built from $\mathrm{Cl}_{1,3}$; the framework takes the Peirce carrier of the even part at a primitive idempotent, a minimal left ideal there, and calls it the Dirac field, while the Dirac–Kähler construction takes the whole multivector and recovers four Dirac fields from it by the basis change $Z$. The corpus's statement that spinors are elements of Peirce carriers, minimal left ideals in this case, and the Dirac–Kähler decomposition into four copies are the two extremes of the same Clifford structure, and their precise dictionary — which of the four Dirac–Kähler copies corresponds to the framework's field — is not fixed in the corpus and is collected among the open questions.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

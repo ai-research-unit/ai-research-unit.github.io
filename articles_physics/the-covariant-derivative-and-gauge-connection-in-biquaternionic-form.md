@@ -362,7 +362,7 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 7. **Empirical contact.** As everywhere in the framework, the open question is whether any of this yields a prediction distinguishing it from standard gauge theory. The construction above is a reformulation; the question of empirical contact is untouched by it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

@@ -386,7 +386,7 @@ The Feynman propagator, the proper-time representation, the worldline supersymme
 
 The worldline and the checkerboard are complementary descriptions of the same object, and the algebra shows why both work: a first-order operator can be realised as a sum over directed paths, the checkerboard, which builds in the chirality, or as a second-order path integral dressed by the Clifford-valued spin factor, the worldline, which builds in the square. The two agree because the odd variable and the mass term are the two faces of the same off-diagonal structure.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra; here $L_aR_b$ is the two-sided multiplication $\psi\mapsto a\psi b$. The five are the generator cells under the gammas' own letters, $\gamma_\mu = G_\mu$ and $\gamma_5 = G_5$, so that the dictionary between the two writings is the identity on the operators:
 

@@ -6,7 +6,7 @@ This article belongs to the nine conventions articles of the mathematical corpus
 
 **The article names, and it does not prove.** No dimension is stated here, no closure, no inclusion, no properness and no property of a family. A name is fixed once, so that the article which proves a property can write it once. Where a sentence below reads like a theorem, it is a rule for reading a glyph: it says what the symbol denotes, not what the object is.
 
-The order follows the dependence. The family letters come first, because the names of the sets and the superscripts of the matrices are built from them. The slots follow, because a name carrying a subscript is read through its slots. The names of the sets follow the slots; the units and the frame follow the names; and the strata, the words and the adjoint signs close, because the operator articles read a family on a stratum with the words and the signs fixed last.
+The order follows the dependence. The family letters come first, because the names of the sets and the subscripts of the matrices are built from them. The slots follow, because a name carrying a subscript is read through its slots. The names of the sets follow the slots; the units and the frame follow the names; and the strata, the words and the adjoint signs close, because the operator articles read a family on a stratum with the words and the signs fixed last.
 
 **Boundaries.** The element, its subspaces and its marks are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the norms and the unitary convention are *Norm and Unitary Conventions*; the root, the idempotent and the nilpotent are *Special Element and Peirce Conventions*; the frames are *Frame Conventions*; the two matrix models and their regular representation are *Matrix Representations Conventions*; the operator that is its element, the dagger and the array rule are *Operator and Calculus Conventions*; and the superscripts and the typography are *Index, Notation and Corpus Conventions*. Every citation in this article is to one of these eight.
 
@@ -43,7 +43,7 @@ In $L_{\tilde Q}R_{\tilde P}$ the first subscript is the left multiplier and the
 
 ### The Index of a Basis Operator
 
-A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the subscript names the element and never a matrix entry, so $L_{e_\mu}$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_4^{L}(e_\mu)$.
+A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_\nu}$. A Greek pair on $L$ and $R$ is the pair of the slots, $L_{e_\mu}R_{e_\nu}$, read in that order, the first index belonging to the left slot. The sandwich carries the index of its one free slot, $\Theta_{e_\mu}$. A roman letter stands for a general element and a Greek letter for a basis element; the subscript names the element and never a matrix entry, so $L_{e_\mu}$ is the left multiplication by $e_\mu$ and its matrix is written $\mathsf M_{4L}(e_\mu)$.
 
 ## The Names of the Sets
 
@@ -62,16 +62,16 @@ A Greek index inside the subscript names a basis element: $L_{e_\mu}$ and $R_{e_
 
 ### The Four Matrix Letters
 
-A matrix of a named family carries the family's letters in the superscript, and its arguments are the parameters in the order of the slots:
+A matrix of a named family carries its size and the family's letters in one subscript, the size first, and its arguments are the parameters in the order of the slots:
 
 | Matrix | Family | Arguments |
 |---|---|---|
-| $\mathsf M_4^{L}$ | left | the element |
-| $\mathsf M_4^{R}$ | right | the element |
-| $\mathsf M_4^{LR}$ | two-sided | the left and the right multiplier |
-| $\mathsf M_4^{LR\ast}$ | sandwich | the parameter |
+| $\mathsf M_{4L}$ | left | the element |
+| $\mathsf M_{4R}$ | right | the element |
+| $\mathsf M_{4LR}$ | two-sided | the left and the right multiplier |
+| $\mathsf M_{4LR\ast}$ | sandwich | the parameter |
 
-The superscript is written as a letter or a pair of letters, never as a second subscript: $\mathsf M_4^{L}$, not $\mathsf M_{4,L}$. A matrix of a general operator carries no family superscript and is written with the bracket of §*The Matrix and Its Frame*. A matrix of the $2\times2$ model is written $\mathsf M_2(\tilde Q)$ and belongs to no family of this article.
+The subscript holds the size and the family as one field, with no separator: $\mathsf M_{4L}$ and $\mathsf M_{4R}$, and a family of two letters is written as one word, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$. The caret is kept for the frame label, $\mathsf M_{4L}^{\mathrm{pau}}$ and $\mathsf M_{4R}^{\mathrm{axf}}$, and it carries no family letter. A matrix of a general operator carries no family letter either and is written with the bracket of §*The Matrix and Its Frame*. A matrix of the $2\times2$ model is written $\mathsf M_2(\tilde Q)$ and belongs to no family of this article.
 
 ### What the Names Do Not Assert
 
@@ -101,7 +101,7 @@ The units of the operator space are the matrix units $E_{ij}$ of *Special Elemen
 
 The matrix of an operator $F$ in a basis $\mathcal{B}$ is written $[F]_{\mathcal{B}}$. The frame is the subscript of the bracket, it is always written, and it is never inherited from a preceding display: a matrix written without its frame is the matrix of no operator.
 
-**The two writings are distinct.** The bracket carries an operator; the sans-serif $\mathsf M$ carries a family or the $2\times2$ model. Thus $[F]_{\mathcal{B}}$ is the matrix of a general operator in the frame $\mathcal{B}$, $\mathsf M_4^{L}(\tilde Q)$ is the matrix of a left multiplier, and $\mathsf M_2(\tilde Q)$ is the image of an element in the $2\times2$ model. The three glyphs are not interchangeable: the bracket on an operator gives a matrix, the bracket on an element gives a coordinate column.
+**The two writings are distinct.** The bracket carries an operator; the sans-serif $\mathsf M$ carries a family or the $2\times2$ model. Thus $[F]_{\mathcal{B}}$ is the matrix of a general operator in the frame $\mathcal{B}$, $\mathsf M_{4L}(\tilde Q)$ is the matrix of a left multiplier, and $\mathsf M_2(\tilde Q)$ is the image of an element in the $2\times2$ model. The three glyphs are not interchangeable: the bracket on an operator gives a matrix, the bracket on an element gives a coordinate column.
 
 ### The Change $C_{\Pi}$
 
@@ -173,7 +173,7 @@ The four adjoints of the four pairings of *Product and Form Conventions* are wri
 
 The four families are written $L$, $R$, $LR$ and $\Theta$: left multiplication, right multiplication, the two-sided operator and the sandwich. The letter is an upright capital and names the family; the parameter is in the subscript and keeps its own mark. The two subscripts of $L$ and $R$ are positional, the left multiplier first and the right multiplier second, and the argument is never a subscript. The sandwich has one free slot, because its second subscript is the star of the first. A Greek index inside the subscript names a basis element, $L_{e_\mu}$ and $R_{e_\nu}$, and $L_{e_\mu}R_{e_\nu}$ is read in that order, the first index belonging to the left slot, and it never names a matrix entry.
 
-The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR\ast}(\mathbb{B})$, named from the four families, with the ambient written $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. A named family's matrix carries the family's letters in the superscript, $\mathsf M_4^{L}$, $\mathsf M_4^{R}$, $\mathsf M_4^{LR}$ and $\mathsf M_4^{LR\ast}$; a general operator's matrix is written with the bracket $[F]_{\mathcal{B}}$. The names assert no dimension, no closure, no inclusion and no properness, and a name of two letters is one name, not a sum of sets.
+The four sets are $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$, $\operatorname{End}_{LR}(\mathbb{B})$ and $\operatorname{End}_{LR\ast}(\mathbb{B})$, named from the four families, with the ambient written $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. A named family's matrix carries its size and the family's letters in one subscript, $\mathsf M_{4L}$, $\mathsf M_{4R}$, $\mathsf M_{4LR}$ and $\mathsf M_{4LR\ast}$; a general operator's matrix is written with the bracket $[F]_{\mathcal{B}}$. The names assert no dimension, no closure, no inclusion and no properness, and a name of two letters is one name, not a sum of sets.
 
 The units of the algebra are $e_t,\vec e_x,\vec e_y,\vec e_z$ and its identity is $e_t$; the units of the operator space are the matrix units $E_{ij}$ and its identity is $\mathrm{I}_4$. The two alphabets are never exchanged. The bracket carries its frame and never omits it, and the Peirce change is $C_{\Pi}$, written with its inverse. Every display declares its frame.
 
@@ -190,7 +190,7 @@ The strata are labelled by two bits, the norm first and the square of the vector
 | $\operatorname{End}(\mathbb{B})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ | The ambient operator space |
 | $\operatorname{End}_L(\mathbb{B})$, $\operatorname{End}_R(\mathbb{B})$ | The sets of the left and the right multipliers |
 | $\operatorname{End}_{LR}(\mathbb{B})$, $\operatorname{End}_{LR\ast}(\mathbb{B})$ | The sets of the two-sided operators and of the sandwiches |
-| $\mathsf M_4^{L}$, $\mathsf M_4^{R}$, $\mathsf M_4^{LR}$, $\mathsf M_4^{LR\ast}$ | The matrices of the four families |
+| $\mathsf M_{4L}$, $\mathsf M_{4R}$, $\mathsf M_{4LR}$, $\mathsf M_{4LR\ast}$ | The matrices of the four families |
 | $[F]_{\mathcal{B}}$ | The matrix of a general operator in the frame $\mathcal{B}$ |
 | $C_{\Pi}$ | The change from the Peirce frame to the coefficient frame |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | The units of the algebra; $e_t$ is its identity |

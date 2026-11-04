@@ -14,7 +14,7 @@ The article is organised as follows. The next section fixes the conventions: the
 
 ### The Algebra and the Cells
 
-A **cell** is the two-sided operator $L_{a}R_{b}$, with $L_a\psi = a\psi$ and $R_b\psi = \psi b$; $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ is the identity and $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$, and the dictionary $\mathsf{M}_2$ of the companion articles. A frame cell is written as its two multipliers and never as a single letter; the article stays in that spelling throughout, and the standard Greek names of the four generators are collected in §*The Gamma Formulation* and used nowhere else.
+A **cell** is the two-sided operator $L_{a}R_{b}$, with $L_a\psi = a\psi$ and $R_b\psi = \psi b$; $L_{e_t}^{\mathrm{axf}}R_{e_t}^{\mathrm{axf}}$ is the identity and $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$, and the dictionary $\mathsf{M}_2$ of the companion articles. A frame cell is written as its two multipliers and never as a single letter; the article stays in that spelling throughout, and the standard Greek names of the four generators are collected in §*The Legacy Gamma Formulation* and used nowhere else.
 
 ### The Generators
 
@@ -449,7 +449,7 @@ What the algebra does supply is the location of the two terms: the convection te
 
 6. **Berry's spin for light.** The electromagnetic analogue identifies the intrinsic spin density with a curl of an $E$–$B$ cross product. The framework's field-strength biquaternion and its Riemann–Silberstein partner are the natural place to test whether this spin is the same object as the photon's helicity in the framework.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 This section, and only this section, names the generator cells and the chirality cell by their standard Greek letters. Nothing above depends on the names: they are a change of typography for a reader who knows the Clifford notation, and every formula of the article is stated in the cell spelling.
 

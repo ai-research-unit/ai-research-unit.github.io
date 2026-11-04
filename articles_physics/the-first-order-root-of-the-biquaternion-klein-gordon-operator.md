@@ -424,7 +424,7 @@ The corpus records two determinant identities for the gradient:
 $$
 \det A_+(\tilde\nabla)=\Box,
 \qquad
-\det\mathsf M_4^L(\tilde\nabla)=\Box^2,
+\det\mathsf M_{4L}(\tilde\nabla)=\Box^2,
 $$
 
 where $A_+(\tilde\nabla)$ is the chiral block of the left regular matrix. These are identities of the **even** face: a second-order scalar operator is the determinant of a first-order matrix. They are not a square root in the matrix sense. The determinant is a product of eigenvalues; a massless root is a single operator $D$ with
@@ -483,7 +483,7 @@ The identities were recomputed before they were written. The cell frame was buil
 
 The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The five are the frame cells written as matrices:
 $$

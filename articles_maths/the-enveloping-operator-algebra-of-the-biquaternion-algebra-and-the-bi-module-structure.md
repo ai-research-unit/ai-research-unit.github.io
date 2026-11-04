@@ -219,7 +219,7 @@ $$
 
 *Proof.* $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(\tilde Q_3)\bigr)=a\,c\,\tilde Q_3\,d\,b=(ac)\tilde Q_3(db)$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.
 
-**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_4(e_n)\mathsf{M}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *$M_4(\mathbb{C})$ Axis-Free Representation*.
+**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_{4L}(e_n)\mathsf{M}_{4R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *$M_4(\mathbb{C})$ Axis-Free Representation*.
 
 ### The Three Classical Functions
 
@@ -309,7 +309,7 @@ The enveloping algebra is a **luxury of the associative unital case**. The const
 
 5. **Comparison with the universal enveloping algebra.** The corpus's *Universal Enveloping Algebras* is the Lie-theoretic $U(\mathfrak g)$ of a Lie algebra. The two "enveloping algebras" are different constructions sharing a name; the corpus should keep them apart and cross-link them, which this article does.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

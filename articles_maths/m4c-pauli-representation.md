@@ -158,12 +158,12 @@ The matrix is block diagonal with two equal blocks. The first block acts on the 
 
 **The four left matrices.** The four matrices are the images of the units under the left matrix map,
 $$
-L_{e_t}^{\mathrm{pau}}=\mathsf{M}_4^{L}(e_t)=\mathrm I_4,\qquad
-L_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+L_{e_t}^{\mathrm{pau}}=\mathsf{M}_{4L}(e_t)=\mathrm I_4,\qquad
+L_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 $$
-L_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
+L_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_{4L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_{4L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
 $$
 Each is $\mathrm I_2\otimes\mathsf M_2(\vec e_k)$ with $\mathsf M_2(\vec e_k)=-i\sigma_k$. The matrices are not signed permutations; their entries are $0,\pm1,\pm i$. Each has determinant $1$; the identity has trace $4$, and the three vector matrices have trace $0$. Since $\rho_L$ is injective and the four units are a basis of $\mathbb{B}$, the four matrices are linearly independent and span $\mathbb{B}_L$: they are a basis of the left copy.
 
@@ -227,12 +227,12 @@ The two identities are the two ways of reading the associative law: the first is
 
 **The four right matrices.** The four matrices are the images of the units under the right matrix map,
 $$
-R_{e_t}^{\mathrm{pau}}=\mathsf{M}_4^{R}(e_t)=\mathrm I_4,\qquad
-R_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+R_{e_t}^{\mathrm{pau}}=\mathsf{M}_{4R}(e_t)=\mathrm I_4,\qquad
+R_{\vec e_x}^{\mathrm{pau}}=\mathsf{M}_{4R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-R_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-R_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_4^{R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
+R_{\vec e_y}^{\mathrm{pau}}=\mathsf{M}_{4R}(\vec e_y)=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+R_{\vec e_z}^{\mathrm{pau}}=\mathsf{M}_{4R}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
 $$
 Each is $\mathsf M_2(\vec e_k)^{\mathsf T}\otimes\mathrm I_2$. Each has determinant $1$ and trace $4\delta_{\mu t}$; the four are a basis of $\mathbb{B}_R$. The two bases are bases of two different four-dimensional subspaces of $M_4(\mathbb{C})$, not two bases of one space.
 

@@ -14,7 +14,7 @@ The word "electroweak" occurs in the corpus only where standard theory is being 
 
 The discipline this forces on the article is the one the genre requires: **an agenda that quietly assumes hypercharge or chirality has fabricated its own premise.** Both are therefore carried as **open items throughout**, never as working assumptions. Wherever a standard electroweak statement is written down — the group, the hypercharge values, the Weinberg angle, the Higgs doublet, the $W$ and $Z$ masses — it is flagged as standard input, not as a framework result.
 
-**Two notations, and where the Clifford frame lives.** The algebra's own objects are written as elements — $\tilde{\Psi}$, $\tilde{A}$, $\mathcal{A}_\mu$ — and operators on the spinor module are written as **cells**, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for $a,b\in\mathbb{B}$, with $L_aR_b\,\psi=a\psi b$ and the composition $L_aR_b\,L_cR_d=L_{ac}R_{db}$. Chirality, the mass bilinear and the axial current are statements in the cells, and the cells are the notation of the sections that treat them. The Clifford frame is a dictionary for the same algebra, not a second framework, and it appears in this article only in *The Gamma Formulation*. Every factor of $i$ in a product is spent with $i^2=-1$, so no product of cells carries an unspent power of $i$.
+**Two notations, and where the Clifford frame lives.** The algebra's own objects are written as elements — $\tilde{\Psi}$, $\tilde{A}$, $\mathcal{A}_\mu$ — and operators on the spinor module are written as **cells**, $L_a\psi=a\psi$ and $R_b\psi=\psi b$ for $a,b\in\mathbb{B}$, with $L_aR_b\,\psi=a\psi b$ and the composition $L_aR_b\,L_cR_d=L_{ac}R_{db}$. Chirality, the mass bilinear and the axial current are statements in the cells, and the cells are the notation of the sections that treat them. The Clifford frame is a dictionary for the same algebra, not a second framework, and it appears in this article only in *The Legacy Gamma Formulation*. Every factor of $i$ in a product is spent with $i^2=-1$, so no product of cells carries an unspent power of $i$.
 
 **The three-way classification.** The article sorts every item into one of three categories, and the distinction is the point of the agenda.
 
@@ -294,7 +294,7 @@ With those settled, the rest of the agenda becomes ordinary work: build the scal
 
 Finally, the genre's standing caution applies here in its strongest form. *The Empirical Status of the Biquaternion Framework* records that on every domain developed, the framework is so far empirically equivalent to the standard theory it reformulates. A biquaternionic electroweak sector, if one is ever constructed, would inherit that position unless it makes a prediction standard electroweak theory does not; and a sector whose gauge group, hypercharge assignments, scalar potential, and gauge fixing are all imported has no prospect of doing so. The agenda's most useful output may be to make that consequence visible early, rather than to produce a construction that appears to answer electroweak theory while assuming all of it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

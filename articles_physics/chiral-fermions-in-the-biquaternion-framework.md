@@ -333,7 +333,7 @@ The chiral projectors and the Peirce projectors are both right multiplications o
 
 8. **Empirical contact.** Does any of the chiral structure above yield a prediction distinguishing the framework from standard chiral gauge theory? As always, this is the central unresolved question.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra. In cell notation,
 

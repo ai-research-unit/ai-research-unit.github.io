@@ -304,7 +304,7 @@ so that the one-particle term reproduces $D_F=Z/(m^2-p^2-i\epsilon)$ and the res
 - The reduction of the **two-sided** Dirac equation is not written. Its mass is a right multiplication together with the conjugation $\overline{F}$, so the amputation would have to be applied on the right and the conjugation carried through every leg; whether that produces the same residue as the one-sided pair is not settled here.
 - Whether the component-wise structure of the scalar reduction has observable consequences lies outside this article, which only identifies it.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the cells directly.
 

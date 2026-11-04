@@ -132,7 +132,7 @@ c_0=iL_{e_t}^{\mathrm{axf}}R_{\vec e_x}^{\mathrm{axf}}=iR_{\vec e_x}^{\mathrm{ax
 c_k=iL_{e_k}^{\mathrm{axf}}R_{\vec e_y}^{\mathrm{axf}}\quad(k=x,y,z),
 $$
 
-and they obey $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair of indices, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and no sum implied. The index of $c_\mu$ is the coordinate index: with $x_0=t'$ the material time, $c_0$ is the cell paired with $\partial/\partial t'$ and $c_k$ the cell paired with $\partial/\partial x_k$. The same objects are the frame of *The Gamma Formulation* below, where they carry the gamma names, and where the fifth cell $c_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ joins them; only there are they called gammas.
+and they obey $\{c_\mu,c_\nu\}=2g_{\mu\nu}I_4$ for each pair of indices, with $g=\mathrm{diag}(+1,-1,-1,-1)$ and no sum implied. The index of $c_\mu$ is the coordinate index: with $x_0=t'$ the material time, $c_0$ is the cell paired with $\partial/\partial t'$ and $c_k$ the cell paired with $\partial/\partial x_k$. The same objects are the frame of *The Legacy Gamma Formulation* below, where they carry the gamma names, and where the fifth cell $c_5=-iL_{e_t}^{\mathrm{axf}}R_{\vec e_z}^{\mathrm{axf}}$ joins them; only there are they called gammas.
 
 The field satisfies the corpus's Dirac equation in cells,
 
@@ -303,7 +303,7 @@ The table also displays what the framework does and does not explain. The *spin 
 
 **6. Empirical content.** The construction reproduces standard field theory. Any deviation would have to appear where the algebra is used beyond transcription — for example in a modification of the one-mode identification or in the coupling to the material sector; none is visible at the level developed here.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})\cong M_4(\mathbb{C})$, not a different algebra, and this section is the only place where they are named: in the body the cells do the work, and the five symbols below are the same five objects.
 

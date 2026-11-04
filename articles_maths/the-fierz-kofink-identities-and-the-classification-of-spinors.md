@@ -159,7 +159,7 @@ $$
 
 4. **The fifteen-dimension count.** The covariants span the sixteen-dimensional space of sesquilinear forms; the classification is a statement about the image of the spinor under the sixteen covariants modulo the FPK relations. Is there a corpus statement about the dimension of that image — sixteen minus the number of independent FPK relations — that the classification would sharpen?
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 

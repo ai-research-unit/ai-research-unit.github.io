@@ -465,7 +465,7 @@ $$
 At $\lambda=0$ this is $\det\mathsf D=\Box^2$. The same expression is the determinant of the left regular matrix of the gradient,
 
 $$
-\det\mathsf M_4^{L}(\tilde\nabla)=\langle\tilde\nabla\rangle_{\natural}^2=\Box^2 ,
+\det\mathsf M_{4L}(\tilde\nabla)=\langle\tilde\nabla\rangle_{\natural}^2=\Box^2 ,
 $$
 
 read on the symbol, because the determinant of the left regular matrix of an element is the square of its quaternionic norm (*The Polarized Module of the Biquaternion Algebra*). The agreement is a consistency check, not a construction: the determinant sees the square of the shifted d'Alembertian, while the kernel of the single root is a chiral half. A determinant identity is not a square root.
@@ -531,7 +531,7 @@ $$
 
 the square of the symbol of $\Box$, the same expression as the determinant of the left regular matrix of the gradient. At $\lambda\ne0$ the determinant is $\bigl((g^{-1})_{\mu\nu}q_\mu q_\nu-\lambda\bigr)^2$.
 
-## The Gamma Formulation
+## The Legacy Gamma Formulation
 
 The generators of the body are the gammas of the matrix frame,
 $$

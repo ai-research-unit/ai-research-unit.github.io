@@ -181,7 +181,7 @@ $$
 
 with $\gamma_5^2=I_4$. The central sign $\chi$ is the *central form* of that cell and not its definition: the cell is what acts, and $\chi$ is what the cell becomes when the algebra is complexified and split. This is why chirality is a Lorentz-invariant label that survives the mass term, while the Peirce index is a copy index that names no chirality at all.
 
-**The two eigenspaces and the mass.** On $\Delta$ the cell has the two eigenspaces $S$ and $S^{\mathrm{c}}$, of opposite eigenvalue. On the regular module it acts on the right, and a right multiplication is not an operation of the left module, so the label is carried by the module equation and not by the algebra element alone. The mass is the off-diagonal invariant pairing between the two halves, $\bar\Psi\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ in the Dirac reading: it couples the halves, and it is neither an element of the algebra nor a Peirce nilpotent. Because $\gamma_5$ anticommutes with each $C_\mu$, the massless equation separates on the two halves and the mass is exactly the term that joins them.
+**The two eigenspaces and the mass.** On $\Delta$ the cell has the two eigenspaces $S$ and $S^{\mathrm{c}}$, of opposite eigenvalue. On the regular module the same cell is the right multiplication $R_{\vec e_z}$: it commutes with every $L_{\tilde Q}$ and is therefore an endomorphism of the left module, but it is not $L_{\tilde Q}$ for any element of the algebra. That inequality is the no-go theorem above in another form, and it is why the label is carried by an operator on the module and not by an element of the algebra. There its eigenspaces are instead the two Peirce planes, $-1$ on $S_+$ and $+1$ on $S_-$, so the two readings agree on the signs and not on the objects: $S_+$ and $S_-$ are isomorphic copies of $S$, while $S$ and $S^{\mathrm{c}}$ are not isomorphic over $\mathbb{R}$. The mass is the off-diagonal invariant pairing between the two halves, $\bar\Psi\Psi=\psi_L^\dagger\psi_R+\psi_R^\dagger\psi_L$ in the Dirac reading: it couples the halves, and it is neither an element of the algebra nor a Peirce nilpotent. Because $\gamma_5$ anticommutes with each $C_\mu$, the massless equation separates on the two halves and the mass is exactly the term that joins them.
 
 ## What the Absence Costs
 
@@ -226,7 +226,7 @@ The absence of a splitting costs the Weyl projectors, the $2+2$ partial trace an
 | $\sigma$ | the swap $\sigma(L_aR_b)=L_bR_a$ |
 | $\operatorname{Sym}^2V$, $\Lambda^2V$ | the self-adjoint and skew-adjoint parts, of dimensions $10$ and $6$ |
 | $\chi=i\tilde\Xi_{\mathrm{ad}}$ | the central sign of the complexification, $\chi^2=e_t$, $\chi\notin\mathbb{B}$; the central form of $\gamma_5$ |
-| $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ | the chirality cell, $\gamma_5^2=I_4$, with eigenspaces $S$ and $S^{\mathrm{c}}$ |
+| $\gamma_5=-iR_{\vec e_z}^{\mathrm{axf}}$ | the chirality cell, $\gamma_5^2=I_4$; eigenspaces $S$ and $S^{\mathrm{c}}$ on $\Delta$, $S_+$ and $S_-$ on the regular module |
 | $\mathrm{axf}$, $\mathrm{pau}$ | the labels of the two frames |
 
 ## Further Reading
